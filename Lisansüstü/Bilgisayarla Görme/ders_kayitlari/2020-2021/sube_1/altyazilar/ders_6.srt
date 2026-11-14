@@ -1,0 +1,3131 @@
+1
+00:05:48,915 --> 00:05:51,076
+Evet arkadaşlar, sesim geliyor mu?
+
+2
+00:05:53,656 --> 00:05:54,555
+Geliyor hocam.
+
+3
+00:05:55,336 --> 00:05:58,336
+Peki. Günaydın, nasılsınız? İyisiniz?
+
+4
+00:05:59,896 --> 00:06:02,336
+Günaydın hocam.
+
+5
+00:06:04,776 --> 00:06:16,276
+Geçen dersimizde Interest Region detektörlerine bakmıştık.
+
+6
+00:06:18,132 --> 00:06:20,331
+Nereye gitti bu Zoom?
+
+7
+00:06:21,232 --> 00:06:22,271
+Share your screen.
+
+8
+00:06:38,548 --> 00:07:00,235
+Evet, bu konuda bir şey var.
+
+9
+00:07:04,627 --> 00:07:13,887
+Repeatability'yi bakış açısına göre çizdirmiş.
+
+10
+00:07:24,372 --> 00:07:33,412
+Bakış açısı 0 dereceden 50 dereceye doğru arttıkça tabii şey düşüyor.
+
+11
+00:07:34,912 --> 00:07:50,091
+Buradaki Viewpoint Angle şey, imgenin kendi imge düzlemi üzerinde çevrilmesi değil de bizim bakanın ne kadar yandan bakıyor o.
+
+12
+00:07:52,660 --> 00:07:56,660
+Ne kadar dik, yani yüzeye ne kadar dik bakıyor.
+
+13
+00:07:58,500 --> 00:08:11,240
+Kenardan baktıkça, iki resim arasındaki o bakış açısı değiştikçe, yavaş yavaş lokasyon ve ölçüm eşlemesi düşüyor.
+
+14
+00:08:18,771 --> 00:08:29,271
+Tarifçinin şeyi düşüyor. Başarısı, repeatability'si düşüyor. Tekrar edilebilirliği.
+
+15
+00:08:32,851 --> 00:08:38,532
+Correct nearest descriptor percent with and of descriptor.
+
+16
+00:08:40,371 --> 00:08:44,371
+Evet, böyle ayrıntıları var. Tabii burayı tam hatırlayamıyorum.
+
+17
+00:08:48,500 --> 00:08:58,799
+Veri tabanındaki key point'lerin sayısına göre repeatability'yi çizdirmiş.
+
+18
+00:09:02,379 --> 00:09:10,600
+Genel olarak sabit. Çok büyük bir fark görülmüş. Yani şurada bin, şurada on bin var.
+
+19
+00:09:13,139 --> 00:09:14,980
+Log scale galiba.
+
+20
+00:09:15,572 --> 00:09:19,771
+Bu alt taraf. Dolayısıyla bu 2000'lerde falan.
+
+21
+00:09:21,652 --> 00:09:25,971
+Aşırı kullandığında key point sayısını biraz düşüyor esasen başarı diyor.
+
+22
+00:09:28,471 --> 00:09:31,052
+Eşlenecek çok fazla şey olacağı için.
+
+23
+00:09:39,508 --> 00:09:44,508
+Evet, yani bir nokta bulucusu ne için gerekli?
+
+24
+00:09:44,508 --> 00:09:51,508
+Eğer mükemmel bir lokalizasyon istiyorsanız Paris'i kullanın.
+
+25
+00:09:51,508 --> 00:09:58,508
+Ölçekte iyi bir lokalizasyon istiyorsanız Difference of Gaussian'ı kullanın.
+
+26
+00:09:58,508 --> 00:10:07,276
+Flexible Region Shape istiyorsanız Mimser'i kullanın gibi böyle bir tavsiyesi var.
+
+27
+00:10:10,100 --> 00:10:15,100
+Bunlar değişmiş olabilir yıllar içerisinde ama genel fikir vermesi açısından.
+
+28
+00:10:18,100 --> 00:10:22,940
+En iyi seçenek genelde uygulama bağımlı oluyor.
+
+29
+00:10:26,100 --> 00:10:31,600
+Haris, Hessey & Laplace, DOC birçok doğal kategori için iyi çalışıyor.
+
+30
+00:10:35,471 --> 00:10:37,791
+Basılmış şeyler için iyi çalışıyor.
+
+31
+00:10:40,311 --> 00:10:51,371
+Veya şu da yapılabilir. Birden fazla detektör de seçip kullanabilirsiniz. İlla bir tanesini kullanmak zorunda değilsiniz.
+
+32
+00:10:53,451 --> 00:10:56,411
+Bu Mikolajlik diye bir tane araştırmacı var.
+
+33
+00:10:58,004 --> 00:11:22,183
+Bunlar hakkında bunların ciddi değerlendirme karşılaştırmaları falan var idi. Daha sonra da devam etmişlerdir benzer karşılaştırmalara sanırım. 15 yıllık bir çalışma. O tarz bir evaluation comparison okuyup seçilebilirsiniz.
+
+34
+00:11:24,947 --> 00:11:42,167
+Mikolaj Zik'in 2008'de yaptığı bir yayın yine. Tüyle tarzıyla. Karşılaştırmışlar çeşitli açılardan bu nokta bulucuları.
+
+35
+00:11:45,812 --> 00:11:52,872
+Ne tür buluyor? Kornul köşeler mi buluyor? Bloblar mı? Yoksa bölgeler mi buluyor?
+
+36
+00:11:55,331 --> 00:12:03,951
+Hemen hemen hepsi rotasyon invariant. Hepsi. Bir kısmı ölçek invariant, bir kısmı affine invariant.
+
+37
+00:12:06,152 --> 00:12:07,872
+Affine demek yani şöyle...
+
+38
+00:12:09,812 --> 00:12:14,612
+Eliptik bölgeler de birbiriyle match edilebiliyor.
+
+39
+00:12:17,011 --> 00:12:21,612
+Repeatability'ye yıldız vermişler.
+
+40
+00:12:23,211 --> 00:12:34,011
+Location Accuracy'ye yıldız vermişler. Robustness Efficiency gibi. Dört ayrı şeyde de sınıflandırmışlar.
+
+41
+00:12:35,572 --> 00:12:39,672
+Buraya koymadıkları tabi hız bunlar.
+
+42
+00:12:42,964 --> 00:12:50,124
+Bu EFIN'lar çok yavaş çalışıyor. Mesela Harris EFIN, HSEAN EFIN yavaş çalışıyor.
+
+43
+00:12:51,163 --> 00:12:54,044
+DogSurf oldukça hızlı çalışıyor.
+
+44
+00:12:55,724 --> 00:13:04,923
+EFIN yapabilmesi için orada bayağı bir işler yapıyor çünkü. Zaten mesela Harris'e, Harris tabanlı.
+
+45
+00:13:05,764 --> 00:13:10,764
+Harris'ten Harris Laplace'a, Harris Laplace'ten Harris EFIN'e geçiyorsun.
+
+46
+00:13:10,799 --> 00:13:13,019
+Gitgide yöntemi iyileştiriyorlar.
+
+47
+00:13:20,467 --> 00:13:21,067
+Evet.
+
+48
+00:13:27,059 --> 00:13:41,139
+Tek bir tane seçmek zorunda değilsiniz. Ama tabii birden fazla kullanmak istediğinizde onları yazmak veya uygulamaları adapte etmeniz gerekiyor kendi uygulamanıza.
+
+49
+00:13:48,851 --> 00:14:07,491
+Eğer nesne instansı tanımak istiyorsanız veya stitching yapmak istiyorsanız, farklı resimleri bir araya getirmek, birleştirmek istiyorsanız, sift ya da bir benzeri kullanılabilir diyor.
+
+50
+00:14:13,235 --> 00:14:21,195
+Noktaları seçerken tekrar edilebilir ve ayırt edici noktalar veren bir sistem kullanmanız gerekiyor.
+
+51
+00:14:23,195 --> 00:14:30,015
+Bu noktaları seçtikten sonra da o noktaların etrafında bir tarif edici çalıştırmanız gerekiyor.
+
+52
+00:14:32,015 --> 00:14:37,855
+Sift mesela burada oldukça başarılı ve benzerleri.
+
+53
+00:14:42,772 --> 00:14:44,716
+Evet.
+
+54
+00:14:47,796 --> 00:14:51,556
+Bu geçen hafta yaptığımız sunumun sonlarıydı.
+
+55
+00:14:54,855 --> 00:14:58,336
+Bu hafta ne yapalım? Bu haftaya da devam edelim.
+
+56
+00:15:04,947 --> 00:15:16,807
+Bu haftaki sunum Feature Matching and Robust Fitting diye geçiyor. ZLISC 4.1'i okuyabilirsiniz.
+
+57
+00:15:32,019 --> 00:15:34,259
+Yani bunları nasıl match edeceğiz?
+
+58
+00:15:46,100 --> 00:16:01,960
+Şimdi ne oluyor? Key point'lerin, anahtar noktaların eşlemesini gözden geçirdiğimizde önce bir kısım noktalar bulmamız gerekiyor.
+
+59
+00:16:01,960 --> 00:16:10,100
+Ayırt edici noktalar. Her bir nokta etrafında bir bölge tanımlamamız gerekiyor.
+
+60
+00:16:15,028 --> 00:16:39,567
+Sonra o bölgenin içeriğini çıkarmamız ve normalize etmemiz gerekiyor. Oradan bir lokal bir tanımlayıcı, lokal deskriptör hesap etmemiz gerekiyor. Sonra da bu lokal deskriptörleri ne yapmamız lazım? Birbiriyle eşlememiz gerekiyor. Genel gidişat böyle.
+
+61
+00:16:41,779 --> 00:16:49,879
+Şöyle bir soru sormuş. Neden bu kadar işleri komplikeleştiriyoruz?
+
+62
+00:16:52,439 --> 00:17:03,019
+Neden X ve Y'de gradyan değişimi çok olan bölgeleri kontrol edemiyoruz?
+
+63
+00:17:09,779 --> 00:17:12,619
+X ve Y'de büyük gradyantlar olabiliyor.
+
+64
+00:17:16,359 --> 00:17:19,779
+Aris'i de tek türü ayrıntısıyla incelemiştik.
+
+65
+00:17:23,859 --> 00:17:30,219
+X yönündeki türevler ve Y yönündeki türevleri içeren bir second moment matrixten yararlanıyor.
+
+66
+00:17:31,900 --> 00:17:33,339
+Ödev olarak da yapmıştınız.
+
+67
+00:17:34,996 --> 00:17:46,536
+Bu second moment matrisinin determinant ve trace'ini içeren bir köşegenlik ölçütü tanımlamış.
+
+68
+00:17:48,216 --> 00:17:56,496
+Bu ölçütte maksimum değerler verenlere non-max suppression uygulayarak buluyorsunuz.
+
+69
+00:18:02,324 --> 00:18:11,084
+Buradaki Structure Matrix nasıl bir şey? C-C-C şeklinde demiş.
+
+70
+00:18:14,463 --> 00:18:20,824
+Yani şu tarz bir bölge varsa, matriz bu tarz bir şey oluyor.
+
+71
+00:18:24,824 --> 00:18:29,663
+Eğer tek bir edge varsa, Structure Matrix'i bu tarz bir şey oluyor.
+
+72
+00:18:33,364 --> 00:18:37,463
+Şu tarz bir şey varsa Structure matrisi böyle oluyor.
+
+73
+00:18:46,675 --> 00:18:49,675
+Efein parlaklık değişikliğinde
+
+74
+00:18:50,175 --> 00:18:53,175
+Parşalı invariant olduğunu görmüştük.
+
+75
+00:18:56,531 --> 00:19:07,451
+Yani parlaklık değişikliklerinde nispeten Harris detektörü, Harris nokta bulucusu invariant.
+
+76
+00:19:12,180 --> 00:19:31,240
+Lokasyonu, köşelerin lokasyonu, Shift-Invariant. Dolayısıyla, Lokasyon Covariant oluyor. Yani Translation ile Lokasyon da beraber Translate oluyor.
+
+77
+00:19:38,771 --> 00:19:41,831
+Köşelerin yerleri kovaryant yine.
+
+78
+00:19:47,028 --> 00:19:53,048
+Ama Scaling'de Koaryant olmadığını görmüştük. Bunu yaptık mı biz?
+
+79
+00:20:01,395 --> 00:20:02,336
+Yaptım, çiz.
+
+80
+00:20:07,155 --> 00:20:09,315
+Bu konular daha önceki slide'larda da vardı.
+
+81
+00:20:09,315 --> 00:20:31,715
+Evet, bir tekrar yapıyor. Tekrar etmiş slide içerisinde. Köşeleri tabii ölçek değişiminde sıkıntı var. Ölçek değişince böyle küçük bir karesel alanda bakmış oluyor.
+
+82
+00:20:32,692 --> 00:20:43,311
+Yani Harris Detektörü'nün komşuluğu küçük oluyor. O küçük komşuluk ölçek büyüdüğünde aynı yeri göremiyor.
+
+83
+00:20:50,311 --> 00:20:55,451
+Key Point Detection'dan bahsettik. Bunlara bugün de baktık.
+
+84
+00:20:58,612 --> 00:21:06,372
+Descripturlara baktık. Yani o bölgeden çıkarılan özellikler, tanımlayıcılar.
+
+85
+00:21:12,852 --> 00:21:14,211
+Geçen haftalarda
+
+86
+00:21:18,420 --> 00:21:25,460
+Zeniski 4.1.3'te ilgili bölümler var diyor. Okuyabilirsiniz.
+
+87
+00:21:35,347 --> 00:21:39,807
+Şimdi bunları nasıl match edeceğiz? Yani özelliklerin match edilmesi.
+
+88
+00:21:42,387 --> 00:21:45,427
+Basit bir kriter olarak şöyle düşünebilirsiniz.
+
+89
+00:21:48,708 --> 00:22:01,648
+Mesela bir özellik diğer bir özelliğe ne zaman match ediyor? Yakın komşuysa, nearest yani kainen gibi bir şey düşünebilirsiniz.
+
+90
+00:22:02,771 --> 00:22:17,112
+Ve işte uzaklık da belirli bir treşoltuğun değerin eşiğin altındaysa. Mesela meş ediyor diye düşünebilirsiniz. Basitçe ilk öyle böyle düşünmek geliyor insanın aklına.
+
+91
+00:22:18,451 --> 00:22:26,791
+Buradaki uzaklık fiziksel uzaklık değil de tanımlayıcıların öklü tuzaklığı gibi.
+
+92
+00:22:28,819 --> 00:22:52,019
+Burada problem ne oluyor? Eşeği ne belirleyeceksin? Bir de ayırt edici olmayan özellikler birçok yakın eşeğe eşlemeye sahip olabiliyor diyor. Bunlardan sadece bir tanesi doğru olabiliyor.
+
+93
+00:22:54,708 --> 00:23:11,728
+Bunu da geçen haftalarda görmüştük. Mesela bunun kırmızı karenin, şuradaki 3 kırmızı kareye olan uzaklıklarını vermiş. 0.34, 0.30, 0.40.
+
+94
+00:23:19,604 --> 00:23:33,543
+İki farklı noktaya olan benzerlik uzaklığını vermiş. 0.61, 1.22. Hangisinin eşleneceğine nasıl karar vereceğiz?
+
+95
+00:23:46,036 --> 00:24:00,615
+David Lowe şöyle bir çözüm önermiş. Bir numaralı en yakın uzaklığı, iki numaralı en yakın uzaklığa bölün ve bunu kullanın diyor.
+
+96
+00:24:05,556 --> 00:24:11,536
+Bunu biraz daha iyi nasıl getiririz? Daha iyi bir hali nasıl getirebiliriz?
+
+97
+00:24:17,715 --> 00:24:41,395
+Bu soru var. Fitting bir model var elinizde. Daha doğrusu bir data var. Veri var. Veriye bir de model var. Ama modelin parametreleri belli değil. O model parametrelerini o veriye uygun bir şekilde nasıl fit edebilirsiniz?
+
+98
+00:24:47,316 --> 00:25:11,244
+Alignment'da hizalama. Yani eşleşen noktaların transformasyon parametrelerini bulma. Yani diyelim ki burada şununla şu birbirine match etti diyorsun ama bu match için...
+
+99
+00:25:12,147 --> 00:25:26,827
+Bir transformasyon düşünmen lazım. Yani şurası transform olup buraya gelmiş. O zaman bunların, o transformasyonun parametrelerini bulmak lazım.
+
+100
+00:25:29,827 --> 00:25:31,427
+Olabiliyor en azından.
+
+101
+00:25:34,067 --> 00:25:37,847
+Burada bir tasarım yapıyorsunuz sonuç olarak.
+
+102
+00:25:39,092 --> 00:25:43,592
+Bu tasarımın sonucu ne? Yani algoritma tasarımı veya sistem tasarımı.
+
+103
+00:25:45,552 --> 00:25:51,992
+Önce güzel bir goodness of fit ölçüsü tasarlamanız gerekiyor.
+
+104
+00:25:55,512 --> 00:25:59,092
+Buradaki benzerlik uygulama amaçlarını yansıtmalı.
+
+105
+00:26:07,092 --> 00:26:15,772
+Karşı, haricilere diyelim, istatistikte outlier'ı bilirsiniz. Ortalamadan çok uzakta olanlar.
+
+106
+00:26:17,172 --> 00:26:19,632
+Ya da gürültüye karşı nasıl gürbüz olacak?
+
+107
+00:26:21,332 --> 00:26:22,912
+Buna enkode etmeniz gerekiyor.
+
+108
+00:26:24,172 --> 00:26:28,932
+Bir de optimizasyon metodu tasarımlamanız gerekiyor.
+
+109
+00:26:31,059 --> 00:26:44,959
+Lokal Optima'dan uzak durmak lazım. Optimizasyonda genel bir problemdir bu. Ve hız tabii o. Optimize ettiğiniz parametrelerin uygun değerlerini hızlıca bulabilmeniz gerekiyor.
+
+110
+00:26:52,180 --> 00:27:12,120
+Şimdi burada genel yöntemlerine global optimizasyon ya da parametre araştırması için least scarce fit diye bir yöntem var.
+
+111
+00:27:14,867 --> 00:27:24,048
+Robust Least Squares ve Iterative Closest Point'de Least Squares Fit üzerine bina edilmiş daha ileri yöntemler.
+
+112
+00:27:29,267 --> 00:27:37,467
+Hipotez ve test etmek için de genelleştirilmiş half transformu ve ransack gibi yöntemler var.
+
+113
+00:27:45,172 --> 00:27:47,172
+Örneğin bir...
+
+114
+00:27:51,092 --> 00:28:16,412
+Çizgi fit edeceksiniz. Elimizde bir kısım data var. Data işte x1, y2, x2, y3, x3, y3, xn, yn'e kadar gidiyor. Yani x1, y1 bu olabilir, x2, y2 bu olabilir, x3, y3 bu olabilir.
+
+115
+00:28:20,084 --> 00:28:23,164
+Şimdi ne yapmak istiyorsunuz?
+
+116
+00:28:28,788 --> 00:28:30,987
+Evet, şuna nasıl gidiyor bir bakayım da.
+
+117
+00:28:44,372 --> 00:28:49,372
+Şey nasıl çıkmış? PDF nasıl çıkmış?
+
+118
+00:28:49,372 --> 00:28:50,372
+Buna bir bakayım.
+
+119
+00:29:06,483 --> 00:29:07,500
+Teknik Üniversitesi Bilgisayar Mühendisliği
+
+120
+00:29:44,788 --> 00:29:47,847
+Evet, buradan devam etmeye çalışalım.
+
+121
+00:29:51,539 --> 00:29:53,000
+Tableti açayım ben.
+
+122
+00:30:02,516 --> 00:30:03,576
+Zaten geçmiş.
+
+123
+00:31:12,627 --> 00:31:15,288
+Evet, Least Squares Line Fitting'e bakıyoruz.
+
+124
+00:31:23,028 --> 00:31:27,127
+Şimdi elimizde data var. Şu şekilde.
+
+125
+00:31:43,539 --> 00:32:01,480
+X1, Y1, X2, Y2 gibi data var. Ve biliyoruz ki buraya biz bir çizgi uyduracağız. Bir doğru uydurmak istiyoruz buraya. Modelimiz bir doğru modeli.
+
+126
+00:32:13,971 --> 00:32:22,471
+M ve B. Dolayısıyla M'yi ve B'yi bulmak istiyoruz.
+
+127
+00:32:26,516 --> 00:32:28,516
+Model parametrelerimiz bunlar.
+
+128
+00:32:31,516 --> 00:32:33,516
+Burada ne yapacağız?
+
+129
+00:32:39,796 --> 00:32:44,596
+E gibi bir fonksiyon tanımlıyoruz.
+
+130
+00:32:53,652 --> 00:33:13,392
+Fikir şu burada. Şu uzaklıkları minimize edeceğiz. X bağımsız değişken X değişiyor. Bu X karşılığında X değişirken Y ne olur?
+
+131
+00:33:20,084 --> 00:33:45,384
+Y'nin olacağı değer ile gerçek değer. Yani bizim hesap edeceğimiz modelimizde M ve B ise parametre değerleri. Aradaki fark ne oluyor? Şuradaki gerçek Y'yi eksi bizim modelimizin hesap edeceği
+
+132
+00:33:48,211 --> 00:34:13,092
+Şu eksiyi artı olarak düşünebilirsin. Şöyle parantez içine alırsak. Bizim modelimizin hesap edeceği şey, bizim modelimiz diyelim ki bu noktayı hesap edecek. Ne olacak? M, X, Y, artı, B'de bizim doğrumuzun bize vereceği Y noktası.
+
+133
+00:34:16,788 --> 00:34:33,007
+Bu nokta için hatayı veriyor, error'e. Toplam hatayı, toplam error'e ne yapabiliriz? Tüm noktalar üzerinden bu hatayı toplayarak bulabiliriz.
+
+134
+00:34:33,307 --> 00:34:43,387
+Burada tabii bir karesini alma durumu var. Karesini neden alıyoruz? İki nedenden dolayı.
+
+135
+00:34:43,956 --> 00:34:56,155
+X karenin türevini almak kolay oluyor. Dolayısıyla X karenin türevini aldığınızda 2 buraya geliyor. 2 çarpı X oluyor. Bu türev kolay.
+
+136
+00:34:57,636 --> 00:35:06,456
+Onun yerine Absolute Value kullansanız, Absolute Value X'in türevini aldığınız zaman bu biraz daha gıcık bir şey veriyor.
+
+137
+00:35:07,572 --> 00:35:26,672
+Neden Absolute Value'u almamız lazım veya karesini almamız lazım? Çünkü bu fark bazen negatif, bazen pozitif çıkabilir. Toplayabilmemiz için, topladığımızda negatif ve pozitiflerin birbirini götürmemesi için böyle bir şey yapmamız lazım. Hepsini pozitife çevirmemiz lazım.
+
+138
+00:35:32,980 --> 00:35:50,760
+Dolayısıyla böyle bir hata tanımlanıyor. Başka hatalar da tanımlanıyor. O Neral Networklerle falan ilişkili çalışmış olanınız varsa aranızda, farklı hata şeyleri de tanımlanabiliyor.
+
+139
+00:36:09,427 --> 00:36:20,307
+Şimdi dolayısıyla toplam hatamız var bu şekilde. Nasıl devam ediyor bakalım.
+
+140
+00:36:20,307 --> 00:36:36,927
+Şimdi bunu matriz çarpımlarına getirecek. Matriz çarpımlarına getirmek için de
+
+141
+00:36:37,844 --> 00:36:49,284
+Buradaki işlemi matrislere çevirip, matrisler çarpımlarıyla bu işlemi yaptırmaya çalışacak.
+
+142
+00:36:52,692 --> 00:36:54,851
+Öncelikle şu kısmı bakalım.
+
+143
+00:36:57,492 --> 00:37:00,715
+Burada mesela M ve B'yi bir...
+
+144
+00:37:04,884 --> 00:37:28,783
+Sütun maddesi yapsak, yanına da x, y ve birden oluşan bir satır maddesi koysak, ne oluyor? Çarpım şunu veriyor, değil mi? Maddes çarpıma. Dolayısıyla şu kısım bu şekilde maddese çevrilmiş hali. Eksi yi zaten bu eksi yi.
+
+145
+00:37:30,324 --> 00:37:45,724
+Bunların sırasının önemi yok. Zaten karesini alıyoruz. Dolayısıyla negatifler pozitif olacak her şekilde. Dolayısıyla bunu nasıl yi eksi bu da yapabilirdiniz veya şu anda matriz çarpımı eksi yi yapmış.
+
+146
+00:37:56,884 --> 00:37:58,884
+Şuradaki toplama işlemini
+
+147
+00:38:05,172 --> 00:38:32,431
+Şurada sadece vektörler var. Vektör çarpımı yapıp sonra dışarıda toplama yapıyoruz. Ama matriz çarpımına çevirirsek toplama işlemini ne yapabiliyoruz? Matriz çarpımı ile ifade edebiliyoruz. Nasıl ifade ediyor bu? Tüm datayı şu şekilde ayarladığımızda.
+
+148
+00:38:33,396 --> 00:38:55,695
+Her bir veri için şu vektör bu satırla çarpılacak. Sonra da şu satırdaki değer ondan çıkarılacak. Dolayısıyla elimizde nasıl bir matriz oluyor?
+
+149
+00:39:09,300 --> 00:39:14,560
+X, yani şunların her biri bir satırda.
+
+150
+00:39:21,331 --> 00:39:25,331
+Bunlar değer. Dolayısıyla elimizde
+
+151
+00:39:29,331 --> 00:39:33,331
+mx1 artı
+
+152
+00:39:35,331 --> 00:39:39,331
+y artı b mi diyeceğiz?
+
+153
+00:39:40,331 --> 00:39:42,331
+mx1 artı b
+
+154
+00:39:43,331 --> 00:39:45,331
+eksi y1
+
+155
+00:39:46,164 --> 00:39:59,744
+MX2 artı B, Eksi Y2 gibi böyle değerlerden oluşan şu çarpımı yaptığımızda bir tane vektör oluşuyor.
+
+156
+00:40:02,504 --> 00:40:08,224
+Şimdi şu işaret ne? Bu vektör normu işareti değil mi?
+
+157
+00:40:09,664 --> 00:40:11,324
+Vektör normu nedir?
+
+158
+00:40:12,500 --> 00:40:16,780
+Bir vektörün normunu aldığınızda ne olur?
+
+159
+00:40:20,460 --> 00:40:25,640
+A, B gibi bir vektörünüz var. Bunun normu nasıl hesaplanır?
+
+160
+00:40:29,220 --> 00:40:35,579
+A kare artı B kare. Artık başka komponentler varsa onları da alıyorsunuz değil mi?
+
+161
+00:40:36,280 --> 00:40:39,159
+Sonra kare kökünü alıyorsunuz. Vektör normu.
+
+162
+00:40:40,563 --> 00:40:53,364
+Dolayısıyla burada ne var? A kare artı B kare gibi bir şey var. Üzerine şu kareyi de koyunca onun ne oluyor? Şu şey gidiyor. Kare kök alma gidiyor.
+
+163
+00:40:55,224 --> 00:41:05,423
+Dolayısıyla şu toplama işlemini şu norm işlemiyle gerçekleştirmiş oluyor.
+
+164
+00:41:06,996 --> 00:41:12,416
+Normal vektörün boyutunu almak o toplamaya eşdeğer olmuş oluyor.
+
+165
+00:41:18,099 --> 00:41:43,960
+Şimdi buradaki şeylere isim vermiş. Yani şu şeye A demiş. Bu bir matriz sonuçta. Bulmak istediğimiz M ve B vektörüne, M ve B'yi içeren vektöre P demiş. Parametreler.
+
+166
+00:41:45,588 --> 00:41:50,628
+A1 matriz, P1 parametre listesi.
+
+167
+00:41:52,068 --> 00:41:55,748
+Y de sonuç değerler.
+
+168
+00:41:57,068 --> 00:42:01,288
+Yani gerçek Y değerleri.
+
+169
+00:42:03,288 --> 00:42:09,507
+Dolayısıyla şunlara isim vermiş. Bu noktada artık matriz ve vektörlere geçmiş oldu.
+
+170
+00:42:12,755 --> 00:42:38,175
+Matris ve vektörlere geçmiş oldu. Matris ve vektörlere geçmenin avantajlarından bir tanesi, uzun uzun yazmak yerine daha kolay bir şekilde yazılabiliyor. Bir de elimizde Matlab gibi veya Python'un kütüphaneleri gibi matrislerle çok hızlı çalışan kütüphaneler var.
+
+171
+00:42:38,708 --> 00:42:40,648
+Onları kullanabiliyoruz artık.
+
+172
+00:42:42,188 --> 00:42:43,127
+Bir şey sorabilir miyim?
+
+173
+00:42:43,507 --> 00:42:44,488
+Tabii buyurun.
+
+174
+00:42:45,148 --> 00:42:48,867
+Büyük harf, küçük harf ayrımı matriz ve vektör anlamına mı geliyor?
+
+175
+00:42:51,387 --> 00:43:03,108
+Bu, tabii şeye göre değişir. Okuduğunuz kitaba göre değişir. Şu anda baktığımız slide'da kalın fontla olanlar matriz ya da vektör.
+
+176
+00:43:03,860 --> 00:43:08,860
+Kalın fontlu olmayanlar, Skalar gibi gözüküyor.
+
+177
+00:43:11,860 --> 00:43:18,860
+Değişik kaynaklar değişik yaklaşıyor. Biliyorsunuz bazı kaynaklar vektörlerin üzerine bir ok koyar.
+
+178
+00:43:20,860 --> 00:43:25,860
+Burada koymamış, yani kalın ile göstermiş. Bir şey birisi söylüyor.
+
+179
+00:43:25,860 --> 00:43:29,860
+Büyük harf olarak yazılmış.
+
+180
+00:43:30,260 --> 00:43:41,940
+Evet, dediğiniz gibi sanki matrislerle vektörleri de büyük harf küçük harfle ayırmış gibi. Evet, evet. Yani bu konvensiyon yani şey.
+
+181
+00:43:44,260 --> 00:43:44,700
+Değişken.
+
+182
+00:43:45,260 --> 00:43:56,320
+Evet, evet. Farklı yazarlar, farklı yaklaşımlar kullanabilir. Ama sanırım bu geçerli dediğiniz çok kullanılan bir yaklaşım. Evet, muhtemelen büyük harf.
+
+183
+00:43:56,724 --> 00:44:18,724
+Şeyler için. Matrisler için. Şimdi buradan ne yapmak lazım? Parametre optimizasyonunda ne yapılır? O parametreye göre türev alınır ve sıfıra eşitlenir. Değil mi?
+
+184
+00:44:24,047 --> 00:44:29,987
+İçerisinde P'ye göre türev alıp sıfıra eşitlememiz gerekiyor.
+
+185
+00:44:55,059 --> 00:45:17,979
+Şimdi burada aslında lineer sistem çözümüne geleceğiz. Şurada. Buraya nasıl geldiğimize bakalım. Şunu nasıl elde etmiş şu anda direkt göremiyorum. Ama anladığım kadarıyla şunu buraya getirmiş.
+
+186
+00:45:18,996 --> 00:45:27,016
+Bu tarz şeyler biraz düşünme gerektirebiliyor. Ne yapmış?
+
+187
+00:45:27,556 --> 00:45:28,676
+Binom açılımı değil mi?
+
+188
+00:45:31,316 --> 00:45:32,655
+A eksi B'nin karesi.
+
+189
+00:45:32,836 --> 00:45:38,655
+Bravo, evet. Birincinin karesi. Şurada da şu Y kare değil mi?
+
+190
+00:45:41,155 --> 00:45:45,235
+Y kareye benziyor. Şu kısmı A, P'nin karesi gibi değil mi?
+
+191
+00:45:46,804 --> 00:46:09,903
+Şurası da iki çarpı, birinci çarpı, ikinci gibi. O kareyi almış yani. Kareyi almış. Bu tür şeyler tabii, hani bunu yapın desem yazmak çok zor. Bunları Liner Cebir'de falan gördünüz mü bunu? Aldığınız bir derste tak diye bunu görmüşlüğünüz var mı?
+
+192
+00:46:15,411 --> 00:46:39,831
+Bunlar işte lineer cebirli uğraşarak vesaire bir şekilde bulunuyor. Kitaplarda falan da vardır. Yoksa da işte bunu ilk ortaya çıkaran bilim adamı üzerinde çabalamıştır, çalışmıştır. Bunun bu şekle getirilebileceğini bulmuştur. Bunları verifay etmek de çok zor olmuyor esasen.
+
+193
+00:46:40,980 --> 00:46:58,980
+Bu tarz bir denklem doğru mu diye bakmak istediğinizde tüm yapmanız gereken tekrar şu şekilde yazmak. Tekrar bu şekilde komponentler ile yazarsanız çarpım doğru mu diye görebiliyorsunuz.
+
+194
+00:47:01,980 --> 00:47:07,659
+Dolayısıyla artık bu slide'a güveneceğim ben.
+
+195
+00:47:08,755 --> 00:47:13,996
+Hani şurada çünkü ne gelecek? Aslında biraz bakabiliriz de.
+
+196
+00:47:25,876 --> 00:47:39,756
+Mesela şu Y'nin transpozunun kendisiyle çarpımı. Y bu. Dolayısıyla buradan ne geliyor? Y1'in karesi artı Y2'nin karesi artı Y3'ün karesi gibi şeyler geliyor değil mi?
+
+197
+00:47:41,896 --> 00:47:47,836
+Y1'in karesi artı Y2'nin karesi artı gibi şeyler geliyor.
+
+198
+00:47:52,980 --> 00:48:00,420
+Şuradan da geliyor. AP'nin transpozu. Yani şu çarpımın transpozunu alıyor. AP ne?
+
+199
+00:48:06,420 --> 00:48:15,380
+MX1 artı B, MX2 artı B gibi şeyler.
+
+200
+00:48:18,164 --> 00:48:39,524
+Bunun transpozunu alıyor, y ile çarpıyor. Dolayısıyla buralara, bir de y ile çarpmış oldu bunları şimdi. Yani şuraları y ile çarpmış oldu. Şuradan. Dolayısıyla buradan ymx1 artı yb'ler geliyor. Doğru gidiyor muyum sizce?
+
+201
+00:48:45,844 --> 00:48:47,003
+Şuradaki şeyler.
+
+202
+00:48:48,324 --> 00:48:54,023
+Burada da bu MX artı B'lerin kendisiyle çarpımları vardır.
+
+203
+00:48:54,023 --> 00:49:05,963
+Yani MX1 artı B'nin karesi artı MX2 artı B'nin karesi artı gibi şeyler vardır.
+
+204
+00:49:07,123 --> 00:49:10,123
+Bunları toparladığımızda şuraya gitmemiz lazım.
+
+205
+00:49:11,123 --> 00:49:23,423
+Muhtemelen gidiyoruzdur. Dolayısıyla burada bırakacağım. Yani evde bunu deneyebilirsiniz. Bence evde bu doğru çıkıyor muyum bir bakabilirsiniz. Daha sonra diyeyim.
+
+206
+00:49:25,563 --> 00:49:32,603
+Şimdi ne yaptı? Türev aldı şimdi. P'ye göre türev aldı.
+
+207
+00:49:35,043 --> 00:49:38,723
+Burada bir vektöre göre türev aldı.
+
+208
+00:49:39,507 --> 00:49:59,667
+Vektöre göre Trev almayı da yine bulabilirsiniz. Ne kaldı geriye? Şurada P yok. Sanırım bu sıfırlandı. P'ye göre Trev alınca. Şunu buraya yazmış gibi gözüküyor.
+
+209
+00:50:06,547 --> 00:50:26,427
+Burada bende çok kullandığım bir şey değil. Vektör kalkulusu deniliyor buna. Onu pek kullanmadım. O yüzden bende çok iyi bilmiyorum. Ama dediğim gibi yani şu şekilde esasen hepsi tekrar buraya dönüp check edilebilir.
+
+210
+00:50:32,115 --> 00:50:41,076
+Şunu da buraya almış gibi gözüküyor. Buradan P'ye göre türev alınca şu P'ye gidiyor gibi düşünebilirsiniz. Çok benziyor zaten.
+
+211
+00:50:43,516 --> 00:50:47,876
+Şurada ise P'nin karesi durumu var. Dolayısıyla bir tane P'ye kalıyor.
+
+212
+00:50:51,735 --> 00:50:58,396
+O P'nin karesindeki iki buraya geliyor. Şurada P'kare gibi bir durum var çünkü.
+
+213
+00:51:00,692 --> 00:51:20,891
+A transpose A da yine orada. Eşittir 0 diyor. Eşittir 0 diyor. Sonra ne yapıyor? Şu eşitlik oldu. Bir tanesini öbür tarafa attı bu iki tanesinden bir tanesini. Amacı tabii P'yi yalnız bırakmak.
+
+214
+00:51:21,780 --> 00:51:45,900
+P'yi yalnız bırakmak için de bunun inversüyle soldan çarparsa her iki tarafı ne olacak? P'yi yalnız bırakacak. Bu şekilde ne yapmış oldu? Matriz çarpımları ile tak diye sonucu bulmuş oldu.
+
+215
+00:51:57,331 --> 00:51:58,571
+Öğ...
+
+216
+00:52:04,500 --> 00:52:06,500
+Şu notu niye düşmüşüz?
+
+217
+00:52:13,460 --> 00:52:15,460
+Şimdi...
+
+218
+00:52:19,092 --> 00:52:41,951
+Bu linear sistem çözümü MATLAB'da least squares diye bir yöntem de var galiba direkt. Yani şu least squares hesaplamasını NumPy'daki bir fonksiyon direkt yapıyor. Belki şunları da tabii bunu bilmemiz lazım akademisyen olarak.
+
+219
+00:52:47,860 --> 00:52:57,019
+Muhtemelen direkt çözüm verecek fonksiyonlar da var. Bu fonksiyona bakabilirsiniz tanımına.
+
+220
+00:53:08,563 --> 00:53:31,383
+Sonuçta şu şeyi elde ediyoruz. Burayı elde ediyoruz. Bu da gördüğünüz gibi çok basit bir şey. A'nın transpozuyla kendisini çarptınız. Tersini aldınız. A'nın transpozuyla tekrar çarpıyorsunuz. Z ile çarpıyorsunuz. Pat diye size tahmini parametreleri veriyor.
+
+221
+00:53:33,139 --> 00:53:58,599
+Bu tarz işlerde şu eksi bir inversünü alma sorunu olabiliyor. Tuhaf, singular matrisler falan çıkabiliyor. Elinizdeki verinin durumuna göre tabii bu matrisin inversünü almak meselesi.
+
+222
+00:54:01,844 --> 00:54:03,844
+Sorumlu olabiliyor.
+
+223
+00:54:06,844 --> 00:54:07,764
+Evet.
+
+224
+00:54:17,235 --> 00:54:30,675
+Şimdi burada bir ara verelim. Gelince devam ederiz. Saat 9.54. Onu 5 geçeye kadar 10 dakikalık bir ara verelim arkadaşlar.
+
+225
+01:05:03,987 --> 01:05:07,847
+Evet, ben geldim arkadaşlar. Sesim geliyor ama.
+
+226
+01:05:10,767 --> 01:05:11,927
+Geliyor hocam.
+
+227
+01:05:16,788 --> 01:05:33,807
+Şimdi derse başlamadan önce biraz konuşalım. Bu projeyi ne yapacağız, nasıl yapacağız? Bir proje dedik, bir sınav dedik değil mi bu derste?
+
+228
+01:05:37,715 --> 01:05:42,516
+Öyle konuştuk değil mi? Bir proje, bir sınav.
+
+229
+01:05:46,291 --> 01:05:49,931
+Sınavı şimdi 6. haftadayız.
+
+230
+01:05:55,251 --> 01:05:58,471
+Altıncı haftadayız. Sekizinci hafta sınav yapacağız.
+
+231
+01:06:04,724 --> 01:06:07,924
+Yani önümüzdeki hafta değil, sonraki hafta sınavsınız.
+
+232
+01:06:10,984 --> 01:06:12,904
+Nasıl olacak hocam sınav?
+
+233
+01:06:15,324 --> 01:06:22,604
+Bilmiyorum. Herhalde test tarzı bir şey yapmaya çalışacağım. Okuması kolay oluyor.
+
+234
+01:06:25,184 --> 01:06:27,204
+Şey açısından da avantajları var.
+
+235
+01:06:31,891 --> 01:06:38,851
+Bizim buradaki sistem toparlanırsa onu kullanabilirim veya Google Forms falan kullanabilirim belki.
+
+236
+01:06:47,476 --> 01:07:14,076
+Matematiksel gördüğümüz kısımlara çalışın. Ne bileyim, Harris detektörü. Bugün gördüğümüz şeyler. Least Square Estimation. Bu tarz şeylere çalışın. Slide'ları falan ciddi bir gözden geçirin. Kitaptan sorma.
+
+237
+01:07:15,284 --> 01:07:24,124
+Yani kitaptan okuduğunuz konulardan sormayacağım. Ama slide'lara iyi çalışın.
+
+238
+01:07:26,544 --> 01:07:28,604
+Python'dan bir soracak mısınız hocam?
+
+239
+01:07:28,604 --> 01:07:29,604
+Buyurun.
+
+240
+01:07:29,604 --> 01:07:31,924
+Python kodlarından.
+
+241
+01:07:32,684 --> 01:07:34,684
+Python kodu...
+
+242
+01:07:35,964 --> 01:07:40,684
+Şimdiye kadar sormadım. Hiç aklıma da gelmedi ama...
+
+243
+01:07:41,300 --> 01:07:53,860
+Aslında böyle basit Python kodları da mı sorsak ya? Olabilir aslında. Hani basit NumPy çalışımı ile ilgili şeyler belki sorabilirim. Kesin bir şey demeyeyim bu konuda.
+
+244
+01:07:57,820 --> 01:08:07,579
+Normalde şimdiye kadar onu sormadım ama normalde sormuyorum.
+
+245
+01:08:10,420 --> 01:08:11,440
+Tamam hocam.
+
+246
+01:08:12,340 --> 01:08:18,979
+Şimdi sınav projeyle ilgili şöyle bir şey yaptım.
+
+247
+01:08:21,880 --> 01:08:30,380
+Sizinle paylaştığım o dizinde proje konuları diye bir link var.
+
+248
+01:08:41,363 --> 01:08:52,983
+Google Spreadsheet'ine götürüyor. Burada benim orada burada rastladığım veya aklıma gelen şeyleri şimdiye kadar yazdım ben buraya.
+
+249
+01:08:55,123 --> 01:09:04,743
+Konuları. Bunların bir kısmı işte birçoğu YouTube videolarında falan. Bunlar paper'ı anlatan YouTube videoları.
+
+250
+01:09:06,323 --> 01:09:31,983
+O paperı esasen anlatmanızı istiyoruz. Bu şeklinde bir durum var. Yani YouTube videosu değil de paperı okuyup, anlayıp, mümkünse implemente edip veya implementasyonunu bulup bir şekilde o paperı bize tanıtacaksınız. Şeklinde bir amaç var burada.
+
+251
+01:09:34,355 --> 01:09:42,715
+Bunun yanında mesela Truba TR Grid sisteminin derinlik öğrenme için kullanımı mesela. Burada şey şartı yok.
+
+252
+01:09:44,315 --> 01:09:51,315
+Hani o sisteme girip sistemi çalıştırma değil de sistemi dışarıdan araştırma olabilir.
+
+253
+01:09:53,215 --> 01:09:59,435
+Bonus 10 puan yazmışım. Yani bunu çok istekli yok gibi. O yüzden buna bir 10 puan bonus vereceğim.
+
+254
+01:10:02,547 --> 01:10:24,987
+Daha da ileriye gidip oradaki insanlarla yazışıp falan olayı çözebilen birisi olursa daha da süper olur. [öğrenci]... Buradayım hocam. O hemen olayı çözmüş, yazmış ismini. Şöyle düşünüyoruz burada. Şurada kişiler isimlerini yazacak.
+
+255
+01:10:28,756 --> 01:10:44,596
+Her konuyu en fazla iki kişilik gruplar alabilir dedim. İlk ismini yazan konuyu alır. İzinsiz yanına yeni isim yazılmaz ya da eski isim yerine yeni isim yazılmaz. Böyle bir olaya gitmezsiniz zaten herhalde.
+
+256
+01:10:47,155 --> 01:11:13,376
+Hocam bir şey sorabilir miyim? Tabii. Şimdi benim projede bir paper yazmamışsınız. Ben araştırmamda da sadece bir tane paper buldum. Ama o da Conditional Gun ile yapıyor. Yani ben daha farklı yapmayı düşünmüştüm. Ben yine bir paper, hani o paperı mı anlatayım yoksa bir proje implement edip bunun bir raporunu mu hazırlayayım?
+
+257
+01:11:14,996 --> 01:11:18,076
+[öğrenci] sen konuşuyor. [öğrenci] kim konuştu?
+
+258
+01:11:19,136 --> 01:11:21,156
+[öğrenci], ben konuştum hocam.
+
+259
+01:11:21,476 --> 01:11:24,096
+[öğrenci] var, bir de [öğrenci] var. Aynı mı?
+
+260
+01:11:24,556 --> 01:11:25,076
+Aynı, aynı.
+
+261
+01:11:25,076 --> 01:11:25,976
+Aynı.
+
+262
+01:11:27,896 --> 01:11:32,576
+Şimdi, tabii burada bir araştırma durumu var değil mi? Paper yok.
+
+263
+01:11:33,268 --> 01:12:00,368
+Evet. Var bu konuyla ilgili bir paper çıkmış Conditional Gun kullanılarak yapılan. Ben Image Translation ile yapmayı düşünüyordum. Olabilir. Yani burada eğer böyle kendiniz bir şey yapabiliyorsanız o da olabilir. Güzelce açıklarsınız. Olabilir.
+
+264
+01:12:01,076 --> 01:12:01,796
+Tamamdır.
+
+265
+01:12:02,855 --> 01:12:09,015
+Şimdi tabii burada 35 tane kayıtlı öğrenci var anladığım kadarıyla.
+
+266
+01:12:09,015 --> 01:12:13,015
+30-35 tane. Burada bir 10 tane falan var.
+
+267
+01:12:15,376 --> 01:12:16,056
+Konu.
+
+268
+01:12:17,256 --> 01:12:19,156
+Şimdi gerisini nasıl yapacağız?
+
+269
+01:12:21,676 --> 01:12:24,756
+Hani en azından 18 tane konu lazım.
+
+270
+01:12:27,539 --> 01:12:47,000
+Bu durumda siz kendiniz de yazabilin diye düşünüyorum. Buraya yazın, sonra derste açıklayın paper ne değildir. Yine anlaşalım. Buraya yazmanız kabul olduğu anlamına gelmiyor ama isminizi yazıp yanına da bir paper vs. yazıp.
+
+271
+01:12:47,859 --> 01:13:10,579
+Ben bu paperı anlatmak istiyorum, implemente etmek istiyorum. Hocam dersiniz, beraber bakarız. Kabul edersem yaparsınız, etmezsem yeni bir şey ararsınız. Böyle düşünüyorum. Nasıl? Bir iki hafta içerisinde bu işi bitirelim. Konularınız belli olsun. Birinci vizelerden itibaren.
+
+272
+01:13:11,283 --> 01:13:17,923
+Buna bakabilirsiniz diye düşünüyorum. Bakabilin diye düşünüyorum. Nasıl?
+
+273
+01:13:22,771 --> 01:13:33,172
+Konularda öncelikle GAN'ları tutmuştum ama zaten yeterince buraya GAN tarzı şeyler yazdım diye düşünüyorum.
+
+274
+01:13:33,172 --> 01:13:45,572
+Dolayısıyla modern Computer Vision uygulamalarının hemen hepsi olabilir. Yeni paperlar.
+
+275
+01:13:46,163 --> 01:13:55,823
+Düzgün yerlerde çıkmış yeni paperları kabul ederim. İlla bir şey oluşturma diye bir şart da yok şu anda.
+
+276
+01:14:00,503 --> 01:14:04,683
+Bu tarz araştırma yapanlarınız oldu mu veya daha önce?
+
+277
+01:14:08,343 --> 01:14:10,963
+Ben Google Scholar'ı çok kullanıyorum.
+
+278
+01:14:13,108 --> 01:14:15,988
+Mesela Google Scholar.
+
+279
+01:14:22,515 --> 01:14:39,456
+Burada mesela ilgilendiğiniz konuyla ilgili keywordleri yazıyorsunuz. Mesela Efficient Gun demişim. Efficient Gun Based Animal Detection.
+
+280
+01:15:00,564 --> 01:15:02,564
+Mersi, ben de bu da kreinlensiyon sürüyorum.
+
+281
+01:15:06,547 --> 01:15:22,427
+Tabi burada şu mesela Computer Vision değil galiba. Bunları falan iyi kötü anlayabilmeniz lazım. Ama şu sanki bizim işler gibi.
+
+282
+01:15:26,644 --> 01:15:42,003
+Mesela ne diyor? Yeterince veri vermezsen ganların başarısı azalıyor diyor. Bu NIPS çok popüler bir şey, önemli bir konferans.
+
+283
+01:15:44,404 --> 01:15:53,844
+NIPS 2020'de çıkmış. NIPS 2020'nin direkt hatta ne var ne yok diye ona bile bakabiliriz.
+
+284
+01:15:56,435 --> 01:15:58,435
+Mesela bu güzel bir şeye benziyor.
+
+285
+01:16:14,644 --> 01:16:39,104
+Nips'in direkt web sitesine götürdü. Nips'te tabii çok miktarda yayın var. Bunlardan Nips'teki şeylerden seçebilirsiniz. Nips şey, prestijli bir konferans ve tabii Computer Vision ile ilgili olanları seçmeniz daha mantıklı.
+
+286
+01:16:42,996 --> 01:16:48,996
+Computer Vision ile ilgili olmayan birçok şey de var gördüğüm kadarıyla.
+
+287
+01:16:54,260 --> 01:16:57,840
+Konulara göre falan bölmemişler mi?
+
+288
+01:17:02,612 --> 01:17:08,912
+Bu Neural Information Processing, yani Neural Networklerle ilgilidir genel olarak ama
+
+289
+01:17:19,155 --> 01:17:23,155
+Nips olabilir. Bunun yanında dediğim gibi...
+
+290
+01:17:26,612 --> 01:17:34,752
+Efficient olayı biraz önemli çünkü elimizde bizim güçlü ne yazık ki hardware yok.
+
+291
+01:17:41,076 --> 01:17:50,556
+Güçlü hardware yok olduğu için, olmadığı için ben çıkıp burada işte deep learning yapacağım. İyi yap. Nasıl yapacaksın?
+
+292
+01:18:00,659 --> 01:18:07,879
+Mesela Efficient Deep Learning for Stereo Matching. Bu da güzel bir şeye benziyor.
+
+293
+01:18:16,340 --> 01:18:20,079
+İtalya'nın ödediği hocam, iki farklı kameranın görüntüsünü birleştirilmesi mi?
+
+294
+01:18:22,180 --> 01:18:33,480
+Öyle olması lazım. Yani iki kamera görüntüsünü birleştirip derinlik bilgisi elde etme gibi şeyler. Birçok uygulaması var tabii ki.
+
+295
+01:18:51,667 --> 01:18:58,847
+Tensor Layer Aversatile Library for Efficient Deep Learning Development diye kütüphane tanıtmışlar.
+
+296
+01:19:05,108 --> 01:19:06,060
+Kobi...
+
+297
+01:19:13,203 --> 01:19:21,203
+A parameter-efficient deep learning approach to predict conversion from mild cognitive impairment to Alzheimer's disease.
+
+298
+01:19:23,203 --> 01:19:31,203
+Scalable and energy efficient deep learning with smart memory cubes. Neurostream.
+
+299
+01:19:39,764 --> 01:19:46,384
+Bunların tabii şöyle bir bakın, mantıklı mı değil mi? Yine bir siz de görün.
+
+300
+01:19:56,724 --> 01:19:58,264
+Mesela Efficient
+
+301
+01:19:58,264 --> 01:20:01,584
+Ne yapabiliriz?
+
+302
+01:20:06,292 --> 01:20:08,292
+Training.
+
+303
+01:20:11,292 --> 01:20:12,292
+Diyelim.
+
+304
+01:20:15,923 --> 01:20:20,703
+Bu mesela çok eski. 1991'de yayınlanmış.
+
+305
+01:20:25,555 --> 01:20:30,435
+Efficient training of giant neural networks using pipeline parallelism.
+
+306
+01:20:36,083 --> 01:20:36,644
+Test.
+
+307
+01:20:38,884 --> 01:20:44,283
+Konjugut Gradient Algorithm for Efficient Training of ANS.
+
+308
+01:20:45,423 --> 01:20:51,264
+Bugün 992. Böyle çok eski şeylere bakmayın. Yani bir veya iki yıllık şeyler yapalım.
+
+309
+01:20:54,739 --> 01:20:59,260
+Flex Point, an Adaptive Numerical Format for Efficient Training.
+
+310
+01:21:00,879 --> 01:21:05,299
+Adaptive Numerical Format, o neymiş öyle? Bunu geçelim.
+
+311
+01:21:06,340 --> 01:21:08,219
+Unions and Efficient Training.
+
+312
+01:21:13,716 --> 01:21:16,596
+Bu ne? 2000'li yıllardan geçelim, geçelim.
+
+313
+01:21:21,684 --> 01:21:36,304
+Başka ne olabilir? Efficient, deep diyelim. Learning. Bunu zaten görmüştük.
+
+314
+01:21:54,547 --> 01:21:56,547
+Şuna bakabilirsiniz.
+
+315
+01:22:10,100 --> 01:22:13,760
+Multi-source private data üzerinden diyor. Neymiş ki?
+
+316
+01:22:15,340 --> 01:22:20,320
+Memory-efficient deep learning on a spin-laker 2 prototype demiş.
+
+317
+01:22:25,587 --> 01:22:26,347
+Bu da olabilir.
+
+318
+01:22:40,564 --> 01:22:50,564
+Açıkı ne olabilir? Generation dedik. Run ve Generation.
+
+319
+01:22:55,636 --> 01:22:58,556
+Kokogun Generation By Parts.
+
+320
+01:23:01,556 --> 01:23:03,916
+We are conditional coordinating.
+
+321
+01:23:09,684 --> 01:23:11,684
+Logo Generation
+
+322
+01:23:34,868 --> 01:23:42,368
+Logo, Synthesis, and Manipulation with Clustering Cluster Generative Adversarial Networks.
+
+323
+01:23:52,275 --> 01:23:52,916
+Paste.
+
+324
+01:24:06,739 --> 01:24:16,819
+GAN-based Synthetic Medical Image Augmentation for Increased CNN Performance in Diver Lesion Classification.
+
+325
+01:24:18,260 --> 01:24:19,059
+Bu neymiş böyle?
+
+326
+01:24:21,579 --> 01:24:24,100
+Synthetic Medical Image Augmentation.
+
+327
+01:24:25,219 --> 01:24:25,699
+Kopyalı.
+
+328
+01:24:29,524 --> 01:24:30,203
+İsteyelim.
+
+329
+01:24:42,420 --> 01:24:46,380
+Style transfer falan gibi şeylerin en son durumu ne acaba?
+
+330
+01:24:49,971 --> 01:25:02,951
+Image Style Transfer Using CNN Yılını mesela bu yılı ayarlayalım.
+
+331
+01:25:05,951 --> 01:25:08,891
+Estetik Aware Image Style Transfer
+
+332
+01:25:17,811 --> 01:25:23,412
+Optical flow distillation towards efficient and stable video style transfer.
+
+333
+01:25:26,612 --> 01:25:30,811
+Adversarial training for fast admitted style transfer.
+
+334
+01:25:42,676 --> 01:25:43,816
+Dijital Patoloji.
+
+335
+01:25:58,707 --> 01:26:01,007
+Bunların hepsi de güzele benziyor.
+
+336
+01:26:04,692 --> 01:26:22,871
+Şeyler de var. Mesela recognition diyelim. Vision. Computer vision. Recognition'da en son neler oluyor ona bakalım.
+
+337
+01:26:25,684 --> 01:26:37,684
+Svm-Based Image Partitioning for Vision Recognition of AGV Guide Paths under Complex Elimination Conditions gibi bir şeyler.
+
+338
+01:26:39,684 --> 01:26:41,684
+Image Partitioning neymiş ki?
+
+339
+01:26:50,452 --> 01:27:01,172
+Sensör-based and vision-based human activity recognition, a comprehensive survey. Tabii, survey'i size anlattırmanın bir anlamı yok.
+
+340
+01:27:04,112 --> 01:27:09,332
+Vision-based grasping target recognition for upper limb prosthesis.
+
+341
+01:27:15,891 --> 01:27:17,531
+Papaya Deez Recognition
+
+342
+01:27:21,908 --> 01:27:27,308
+Medikal uygulamalar tabii önemli oluyor.
+
+343
+01:27:29,087 --> 01:27:33,468
+Recognition of Plant Leaf Diseases Based on Computer Vision.
+
+344
+01:27:35,587 --> 01:27:42,988
+Yaprak hastalıklarının anlanılması.
+
+345
+01:27:45,332 --> 01:27:49,692
+Hand gesture recognition using electroniographic signals.
+
+346
+01:27:50,792 --> 01:27:51,391
+Bu neymiş?
+
+347
+01:27:58,612 --> 01:28:05,612
+Transportation mode recognition fusing variable motion sound and vision sensors.
+
+348
+01:28:05,612 --> 01:28:09,292
+Transportation mode recognition.
+
+349
+01:28:26,579 --> 01:28:31,079
+De-cognition and localization notice for vision-based fruit picking robots.
+
+350
+01:28:33,699 --> 01:28:40,319
+Şunun yılını şöyle 2016'dan beri yapalım da biraz daha önemli şeyler çıksın.
+
+351
+01:28:59,444 --> 01:29:06,584
+Başka, yani Vision, tabii Computer Vision'da Recognition direkt akla gelen bir numaralı problem.
+
+352
+01:29:10,579 --> 01:29:18,059
+Mesela şu Gesture Recognition Based On Binocular Vision 43 tane paper tarafından sahip edilmiş.
+
+353
+01:29:28,467 --> 01:29:30,467
+Tabi bunun yanında
+
+354
+01:29:32,467 --> 01:29:35,467
+tracking falan gibi problemler de var.
+
+355
+01:29:38,467 --> 01:29:40,467
+Vision tracking diyelim.
+
+356
+01:29:46,452 --> 01:29:51,731
+Computer Vision and Deep Learning Techniques for Pedestrian Detection and Tracking a Survey.
+
+357
+01:29:52,932 --> 01:30:01,231
+Survey tabii size 3D Object and Ego Motion Tracking for Autonomous Driving.
+
+358
+01:30:01,692 --> 01:30:06,131
+Otonom sürücü, araba sürüşü de popüler bir şey şu sıralar.
+
+359
+01:30:07,731 --> 01:30:08,852
+Bunu kopyalayalım.
+
+360
+01:30:13,779 --> 01:30:22,399
+3D tracking of multiple on-site workers based on stereo vision. Buna da bakalım.
+
+361
+01:30:33,939 --> 01:30:40,879
+Vision Based Fatigue Crack Detection of Steel Structures Using Video Feature Tracking.
+
+362
+01:30:42,099 --> 01:30:50,679
+Yani demir yapılarda çatlama takibi diyor galiba. O da enteresan olabilir.
+
+363
+01:30:57,140 --> 01:31:03,700
+Matching Construction Workers Across Views for Automated 3D Vision Tracking on Site.
+
+364
+01:31:05,260 --> 01:31:11,320
+Matching Construction Work. Bunlar iş takibi. Yani insanlar çalışıyor mu? Bu mu?
+
+365
+01:31:13,920 --> 01:31:15,720
+Bunu da kopyalayalım.
+
+366
+01:31:22,003 --> 01:31:25,003
+Viz Drone 2019
+
+367
+01:31:28,003 --> 01:31:34,003
+The Vision meets Drone Multiple Object Tracking Challenge Results
+
+368
+01:31:35,003 --> 01:31:42,827
+Yani böyle bir yarışma yapılmış, bunun sonuçlarını göstermişler. Olabilir.
+
+369
+01:31:46,228 --> 01:31:53,128
+Yani bu aslında drone'larla ilgili, robotikle ilgili.
+
+370
+01:32:01,652 --> 01:32:15,452
+Başka mesela, stereo ile ilgili görmüştük bir iki uygulama. En azından bir tane vardı.
+
+371
+01:32:18,811 --> 01:32:21,032
+Makalelere ücreti mi erişilebiliyor acaba?
+
+372
+01:32:22,068 --> 01:32:40,128
+Makaleleri arkadaşlar, bir kısmını direkt bizim üniversitenin sitesinden indirebiliyorsunuz. Ama onun tabii üniversiteye gelmeniz lazım. Üniversitenin içerisinden girmeniz lazım.
+
+373
+01:32:50,612 --> 01:33:10,252
+Ayarlarını değiştiriyorsunuz. Bizim burada bir proxy var. Üniversite proksisi üzerinden bağlandığınız zaman birçok kaynağı indirebiliyorsunuz. Yani evden indiremediğiniz birçok kaynağı indirebilirsiniz.
+
+374
+01:33:20,243 --> 01:33:28,283
+Onun haricinde burada All Seven Versions diyor. Mesela burada yedi farklı versiyonu var diyor. Bunlardan bir tanesini indirebilirsiniz.
+
+375
+01:33:30,583 --> 01:33:34,843
+Ya araştırırsanız falan birçoğunu ben bir şekilde buldum geçmişte.
+
+376
+01:33:34,843 --> 01:33:46,224
+Öyle bulunmayan, hiç indiremediğimiz şeyler de olabiliyor ama çoğunu indirebiliyoruz bir şekilde.
+
+377
+01:33:48,724 --> 01:33:53,184
+Paylaşım siteleri falan filan oluyor, bir şeyler oluyor ve indiriliyor en kötü ihtimali.
+
+378
+01:33:56,435 --> 01:33:57,935
+Stereo Vision Based.
+
+379
+01:34:01,524 --> 01:34:08,524
+Evet, ne yapıyorduk? Başka ne problemler var? Temel...
+
+380
+01:34:14,036 --> 01:34:27,876
+Structure from Motion mesela. Yani 3 boyutlu yapıyı toparlama. Nasıl arattırabiliriz onu?
+
+381
+01:34:32,435 --> 01:34:36,835
+Structure from Motion.
+
+382
+01:34:41,908 --> 01:34:47,528
+Yani hareket yoluyla şeyi toparlama. Üç boyutlu.
+
+383
+01:34:53,288 --> 01:34:58,328
+Mesela SFMNet, Learning of Structure and Motion from Video.
+
+384
+01:35:00,388 --> 01:35:03,128
+Bu mesela çok exciting almış.
+
+385
+01:35:13,171 --> 01:35:18,551
+Deleted Search siteye bir şey çıkıyormuş. Structure from Motion Photogrammetry.
+
+386
+01:35:32,692 --> 01:35:40,891
+Video. Deep non rigid structure from motion. Copy link address.
+
+387
+01:35:50,484 --> 01:35:54,984
+Learning 3D human pose from structure and motion.
+
+388
+01:36:06,323 --> 01:36:31,503
+Canonical 3D Pose Networks for Non-Rigid Structure from Motion. Evet, başka ne var? Önemli problemler. Mesela şey de çok geliyor. Mesela Edge Detection'ını normalde görüntü işleme diye düşünebilirsiniz veya Edge Detection'ı Neural Network'e yaptırıyorlar. Bu tarz şeyler de var. Mesela Edge Detection.
+
+389
+01:36:34,260 --> 01:36:38,260
+3D destek.
+
+390
+01:36:40,260 --> 01:36:43,052
+3D from.
+
+391
+01:36:59,188 --> 01:36:59,688
+Hmm.
+
+392
+01:37:06,260 --> 01:37:15,000
+Storio, Vision Based, Semantic, 3D Objects and Ego Motion Tracking for Autonomous. Bunu daha önce görmüş müydük?
+
+393
+01:37:21,844 --> 01:37:26,203
+Yani üç boyutlu nesnelerin oluşturulması ile ilgili şeyler mesela.
+
+394
+01:37:35,731 --> 01:37:39,832
+Can 3D pose be learned from 3D projections alone?
+
+395
+01:37:40,951 --> 01:37:51,032
+Bazen şöyle de yapabiliyorsunuz. Mesela beğendiğiniz bir şey varsa, yani olabilecek bir paper, onu site edenlere gidebiliyorsunuz.
+
+396
+01:37:51,032 --> 01:37:59,032
+Esasen Google'da bu tarzda çalışılabiliyor. Mesela...
+
+397
+01:38:04,500 --> 01:38:05,219
+Öğ...
+
+398
+01:38:08,948 --> 01:38:27,368
+Stereo Vision Based Semantic 3D Object and Ego Motion Tracking for Autonomous Driving dedi. Burada bir Related Articles diye bir şey var. Bunu açabiliyorsunuz. Bir de Cited By var. Yani bunu cite edenler ne demek oluyor?
+
+399
+01:38:36,819 --> 01:38:55,819
+Ne demek? Ya bunun omuzlarında yükseliyor, yani bunun yaptığı işi devam ettirmiş, ya buna bir bunu kullanmış, ya bunun rakibi değil mi? Bu tarz ilgili paperlara da bu şekilde ulaşabiliyorsunuz.
+
+400
+01:38:58,804 --> 01:39:20,443
+Mesela Stereo, burada bizi daha çok autonomous driving'e doğru götürüyor. Mesela şu. Stereo RCNN-based 3D Object Detection for Autonomous Driving. Joint Monocular 3D Vehicle Detection and Tracking. Visual Inertial Navigation, Cube Slum.
+
+401
+01:39:24,243 --> 01:39:27,243
+Mesela...
+
+402
+01:39:31,283 --> 01:39:39,283
+GAN'lara GENERATİV desek. GENERATİV MODELS
+
+403
+01:39:41,283 --> 01:39:43,283
+MODELS yazdım.
+
+404
+01:39:46,804 --> 01:39:51,963
+Deep Learning, Deep Generative Models of Graphs diye bir şey.
+
+405
+01:40:01,684 --> 01:40:03,144
+Copy link adres.
+
+406
+01:40:08,500 --> 01:40:09,340
+Taht.
+
+407
+01:40:12,467 --> 01:40:20,868
+Boosting Generative Models, Learning Representation and Generative Models for 3D Point Clouds.
+
+408
+01:40:23,747 --> 01:40:31,127
+Yani üç boyutlu nokta kümelerinden reprezentasyon üretme ve model üretme gibi bir şey oluyor.
+
+409
+01:40:32,127 --> 01:40:33,987
+Bu da ilgili.
+
+410
+01:40:39,220 --> 01:40:51,500
+Klasifikasyon Akrisi Skor. Şu neydi? Şuradan mesela gidelim biraz buna benzeyelim.
+
+411
+01:40:51,500 --> 01:41:02,159
+SONET, Self-Organizing Network for Point Cloud Analysis. Learning 3D Reconstruction in Function Space. Bu neymiş?
+
+412
+01:41:13,235 --> 01:41:22,956
+Unsupervised Learning of Rotation Variant 3D Local Descriptors. Şu anda baktığımız konuyla ilgili bunu da şey yapabiliriz.
+
+413
+01:41:29,908 --> 01:41:35,668
+uh point compilation network pcn
+
+414
+01:41:48,447 --> 01:41:56,811
+Bu ne?
+
+415
+01:41:47,891 --> 01:41:56,412
+Yani nokta bulutlarından şey yapmayla ilgili bir çalışmaya, bir araştırma alanına girdik.
+
+416
+01:42:02,780 --> 01:42:16,780
+Bu ne?
+
+417
+01:42:02,644 --> 01:42:16,184
+Related Articles ne yapıyor? Onu çok kullanmadım ben. Daha çok Citing'e bakmışımdır. Mining Point Cloud Local Structures by Kernel Correlation and Graph Pooling.
+
+418
+01:42:17,463 --> 01:42:25,504
+Spider CNN Deep Learning On Point Sets with Parameterized Convolutional Filters.
+
+419
+01:42:28,083 --> 01:42:31,083
+Deep KD networks for the recognition.
+
+420
+01:42:39,796 --> 01:42:48,636
+Şöyle desek 3D Generation veya 2D Generation. Image Generation desek.
+
+421
+01:42:54,355 --> 01:42:58,355
+Conditional Image Generation with Pixel CNN Decoders.
+
+422
+01:43:04,467 --> 01:43:14,368
+Copy, paste. A recurrent neural network for image generation. Copy.
+
+423
+01:43:27,731 --> 01:43:31,931
+Unsupervised cross-domain image generation.
+
+424
+01:43:42,292 --> 01:43:45,132
+Pose Guided Person Image Generation.
+
+425
+01:43:49,235 --> 01:44:13,716
+Bunları şey yapmak zorunda da değilsiniz arkadaşlar. Yani burada ben tak tak işaretledim. Bu böyle bir paperdan çıkıp mesela Pose Guided Persona Mit Generation'ı ben buraya kopyaladım. Yine bununla ilgili şeyler var. Yani bu paperları almak zorunda değilsiniz. Hala onu söyleyeyim.
+
+426
+01:44:15,283 --> 01:44:35,863
+Ona tıkladığımda mesela Video to Video Synthesis'e götürdü beni. Cited By'a tıkladığımda Semantic Image Synthesis with Special Adaptive Normalization 2019'lara geldi. Bu Cited By'ın güzelliği şu, ona atıf verdiğine göre daha yeni.
+
+427
+01:44:41,492 --> 01:44:45,252
+Daha yeni paperlara getiriyor sizi.
+
+428
+01:44:52,307 --> 01:44:56,788
+A few short video to video sentences video to video sentences.
+
+429
+01:44:59,507 --> 01:45:03,907
+Mesela semantics in which sentences with special adaptive normalization.
+
+430
+01:45:17,908 --> 01:45:27,847
+Gun Dissection, Visualization and Understanding Generative Adversarial Networks. Mesela bunu birileri alırsa güzel olabilir. İsmi çok güzel.
+
+431
+01:45:41,140 --> 01:45:46,779
+Bu biraz ismi hoşuma gitti. Birileri şu gri şeyi alırsa güzel olur.
+
+432
+01:45:52,243 --> 01:46:00,203
+Animating Arbitrary Objects with Deep Motion Transfer. Bak bu da güzel. Animasyon nesneleri anime ettiriyorlar.
+
+433
+01:46:08,851 --> 01:46:10,851
+Burada rengini böyle yapayım.
+
+434
+01:46:14,579 --> 01:46:22,079
+Seeing what a gun cannot generate. Yani gunların neler geliştiremeyeceğini de görebiliyoruz diyor. Bu da hoşuma gitti.
+
+435
+01:46:41,268 --> 01:46:46,268
+Animasyona biraz girelim.
+
+436
+01:46:46,268 --> 01:46:52,268
+Veya Related'de mi vardır animasyon?
+
+437
+01:46:52,268 --> 01:46:55,851
+Related Articles diye açayım.
+
+438
+01:47:11,604 --> 01:47:16,104
+Image Animation. Evet, Related'dan Image Animation'a geçebildik sanırım.
+
+439
+01:47:18,104 --> 01:47:20,944
+First Order Motion Model for Image Animation.
+
+440
+01:47:26,387 --> 01:47:28,387
+Öyle yapalım.
+
+441
+01:47:28,387 --> 01:47:29,036
+Paste.
+
+442
+01:47:32,979 --> 01:47:48,519
+3D Guided Fine Graded Face Manipulation. Yani yüz değiştirme diyor. Bu da enteresan bir şey. Yani yüzünü manipüle ediyor. Bu da enteresan.
+
+443
+01:47:58,484 --> 01:48:08,484
+Unsupervised learning of object landmarks through conditional image generation. Ne diyor?
+
+444
+01:48:08,484 --> 01:48:16,108
+Object landmarks through conditional image generation. Object landmarks neymiş?
+
+445
+01:48:25,332 --> 01:48:30,032
+Landmark Guided Diverse Smile Generation. Enteresan neymiş ki bunlar?
+
+446
+01:48:38,355 --> 01:48:52,395
+DVNet, Dance Rob-based Network for Pose Guided Human Video Generation. Yani insan videosu generate ediyor.
+
+447
+01:48:56,148 --> 01:48:57,036
+Paste.
+
+448
+01:49:03,796 --> 01:49:06,016
+Animasyona biraz daha gidelim.
+
+449
+01:49:10,868 --> 01:49:17,448
+Related'tan mı gelmiştik? Related'ın en başında kendisi oluyor galiba.
+
+450
+01:49:22,003 --> 01:49:25,623
+Multi-domain Image-to-Image Generation ne demek istiyor?
+
+451
+01:49:35,636 --> 01:49:41,216
+Hocam bir şey soracaktım da. Bir konuyu iki kişi alabiliyor muyuz?
+
+452
+01:49:42,315 --> 01:49:42,716
+Alabiliyorsunuz.
+
+453
+01:49:43,436 --> 01:49:49,476
+Tamamdır. Orada ikinci sırada şey yazıyor ya, ilk ismini yazan konuyu alır, izinsiz yanına isim yazılmaz diyor ya, orada biraz kafam karıştı açıkçası.
+
+454
+01:49:50,556 --> 01:49:56,956
+Yani şöyle, iki kişiyseniz birisi yazsın, değeri de ondan izin alsın, o da ismini yazsın.
+
+455
+01:49:57,356 --> 01:49:57,956
+Tamam o zaman.
+
+456
+01:50:00,000 --> 01:50:08,220
+İtal olmadıktan sonra zaten kim önceki yazmış etmiş bir kavga olayı olmadıktan sonra araştırmanın bir anlamı yok. Araştırmam.
+
+457
+01:50:08,920 --> 01:50:10,480
+Tamamdır. Teşekkürler hocam. Sağ olun.
+
+458
+01:50:19,412 --> 01:50:31,292
+Hocam ben bir soru sorabilemeyeyim. Burada beklenti daha çok teknik olarak bunu sağlayabilmek mi yoksa bir tür sunum mu? Ne tarafa daha çok ağırlık vermemiz gerekecek?
+
+459
+01:50:36,051 --> 01:50:47,351
+Sunum diyelim. Yani hepsini şimdi yapmanızı beklemiyorum. Yani %80 sunum, %20 gerçekleştirme diyeyim.
+
+460
+01:50:48,180 --> 01:51:06,159
+Peki, gerçekleştirmede doğrudan yapılan şeyin aynısı demeyeyim de benzeri mi bekleniyor yoksa orada bazen şöyle açık kapılar bırakılabiliyor. Aslında şu konuya da değinilebilirdi gibi en sonunda yer alabilirsiniz. Bu tarz kısımları da acaba gerçeklemeye çalışsak sizin için uygun olur mu?
+
+461
+01:51:07,260 --> 01:51:08,460
+Sorunu tam anlamadım.
+
+462
+01:51:09,319 --> 01:51:14,380
+Şöyle ki, neleri daha iyi yapabilirdik şeklinde bir kısım olur çoğu zaman makalelerin sonunda.
+
+463
+01:51:14,836 --> 01:51:20,036
+Orada mesela şu parametrelerle çalışılsaydı belki daha farklı sonuçlar olabilirdik.
+
+464
+01:51:21,036 --> 01:51:21,595
+Efendim?
+
+465
+01:51:22,036 --> 01:51:23,076
+Futureworks gibi.
+
+466
+01:51:23,675 --> 01:51:30,576
+Evet, aynen. Bu tarz değinilmemiş, yapılmamış kısımlara da bakma şansımız olur mu acaba bu kapsamda?
+
+467
+01:51:30,576 --> 01:51:35,235
+Tabii tabii. Aslında bire bir aynısını yapmak zorunda değilsiniz.
+
+468
+01:51:35,496 --> 01:51:40,296
+Yani bunların, mesela bundan ilhamet aldım, şunu yaptım hocam da diyebilirsiniz.
+
+469
+01:51:41,332 --> 01:51:42,092
+Anladım hocam.
+
+470
+01:51:42,752 --> 01:51:54,771
+Yani oldukça şey, yani getirip bana kendinizi ve beni tatmin eden bir şey sunduktan sonra şu an için oldukça geniş bırakıyorum kapıyı.
+
+471
+01:51:56,271 --> 01:51:56,912
+Tamamdır hocam.
+
+472
+01:51:56,932 --> 01:52:01,012
+Ne yapacağımızı ama konuşalım. Yani tamamen sürpriz olmasın bana.
+
+473
+01:52:02,132 --> 01:52:06,032
+Hocam ben şöyle bir şey yapmak istiyorum falan gibi. Bir iki hafta içinde karar verin.
+
+474
+01:52:06,612 --> 01:52:18,592
+Mesela sınavdan sonraki derste konuşalım. Nasıl olur? Sınavdan sonraki derste veya hemen sonrakindeki derste konuşalım.
+
+475
+01:52:24,932 --> 01:52:30,311
+Peki hocam, sunumların slide sayısı ve sunum olarak uzunluğu kaç dakika?
+
+476
+01:52:30,963 --> 01:52:42,963
+Güzel bir soru. Şimdi 35 kişi var. 3 hafta ayırırsak buna veya 2 hafta ayırırsak.
+
+477
+01:52:50,292 --> 01:52:51,492
+3 saatten
+
+478
+01:52:55,188 --> 01:53:03,188
+60 dakikadan 20 dakika versek adam başı.
+
+479
+01:53:03,188 --> 01:53:10,188
+Bir haftada 9 kişi sunar değil mi?
+
+480
+01:53:10,188 --> 01:53:14,188
+Evet hocam.
+
+481
+01:53:14,188 --> 01:53:18,155
+2 hafta olsa 18 kişi sunar.
+
+482
+01:53:19,796 --> 01:53:31,715
+3 hafta olsa 27 kişi sonar. Çok fazlasınız ya. Niye bu kadar fazlalaştınız anlamıyorum arkadaşlar. Eskiden şöyle bir 20 kişi falan oluyordu en fazla. 20'den azdı yani.
+
+483
+01:53:39,891 --> 01:53:47,492
+15 dakika desek, yani 3 haftayı geçirmememiz lazım. Esasen 2 haftaya sığdırabilsek daha iyi olurdu.
+
+484
+01:53:49,931 --> 01:53:56,431
+Sunumları önden hazırladığımız video şeklinde yapma şansımız olur mu? Bu belki süreden de bize avantaj sağlayabilir.
+
+485
+01:54:00,180 --> 01:54:08,880
+Olabilir. Olabilir. Yalnız onları kim izleyecek? Ben mi izleyeceğim?
+
+486
+01:54:10,420 --> 01:54:13,420
+Sizin zamanınızı alacağız gibi gözüküyor hocam yine de.
+
+487
+01:54:13,420 --> 01:54:17,420
+Evet. Yani...
+
+488
+01:54:18,387 --> 01:54:29,728
+Videoda daha kısa tutabiliriz hocam. 15 dakika değil de 10 dakikaya sığdırabiliriz diye düşünüyorum. Yani tabii opsiyonel olabilir bu durum çünkü video hazırlamak zor olabiliyor. Sizin tercihinizle.
+
+489
+01:54:30,948 --> 01:54:43,887
+Evet, esasen yani video hazırlayın. 10 dakika dediğin gibi tak tak izleyebiliriz. Şimdi öbür türlü sunum hadi bakalım. Tabii ama paralel olarak video mu izleyeceğiz?
+
+490
+01:54:48,212 --> 01:54:51,792
+sorular falan sorulabilecek mi? Nasıl olacak?
+
+491
+01:54:52,912 --> 01:54:56,231
+Doğru hocam. O kısımda var. İnteraktivite eksikliği olur o durumda da.
+
+492
+01:55:00,731 --> 01:55:02,891
+Ama video mantıklı.
+
+493
+01:55:05,771 --> 01:55:09,212
+Videoya çektirirsek sonra...
+
+494
+01:55:13,171 --> 01:55:22,711
+Aslında derse herkes de takip etmiyor. Herkes de yapabilecek mi onu da bilmiyorum. Sonuçta kaç kişi var şu anda derse gelen?
+
+495
+01:55:26,211 --> 01:55:38,072
+15 hocam. Sizin de 15 hatta hocam. 15 falan. Ödev falan veren de 10-15 kişi var. Bunlar yapacaklar mı acaba bilmiyorum.
+
+496
+01:55:39,444 --> 01:56:04,344
+35 tane, iki beraber alanlar da olabilir. Grup halinde alanlar. Biz bunu iki haftaya bir şekilde sığdıralım. Olmazsa biraz dersi uzatabiliriz. Son iki haftayı dörder saat yapsak falan olabilir mi? Bu tarz bir şey.
+
+497
+01:56:07,091 --> 01:56:09,151
+Hocam benim saat 1'de dersim var.
+
+498
+01:56:10,051 --> 01:56:11,831
+O kadar falan katılabiliyor.
+
+499
+01:56:15,431 --> 01:56:19,111
+Yani katılabilenler katılır gibi.
+
+500
+01:56:23,412 --> 01:56:42,051
+Yani tahmini mesela 20 kişi olsa, 4 saat yapsak, 20'şer dakikadan 4 saatte 60 çarpı 3 kere 4 12 olur.
+
+501
+01:56:43,891 --> 01:56:49,871
+12, 12, 24 olur. Evet yani 1 saat uzatsak 20'şer dakikadan.
+
+502
+01:56:50,323 --> 01:56:55,483
+24 tanesini izleyebiliriz.
+
+503
+01:56:58,996 --> 01:57:18,295
+15 dakika yapsak saat başı 4 olur. 4 köle 4 16 olur. 16 16 32 eder. O da yeter. O zaman 15 dakikalık yapalım biz bunu. 15 dakikalık sunumlar.
+
+504
+01:57:21,779 --> 01:57:27,219
+Son iki haftayı mesela dört saat yapalım. Nasıl olur? Katılabilenler katılsa falan.
+
+505
+01:57:30,219 --> 01:57:31,059
+Olabilir hocam.
+
+506
+01:57:33,079 --> 01:57:34,079
+Olur hocam.
+
+507
+01:57:34,819 --> 01:57:35,759
+Antıklı görünüyor hocam.
+
+508
+01:57:35,759 --> 01:57:49,219
+Evet. Zaten bu sayı sanırım ne zaman belli olur? Bunu mesela sınavlardan önceki haftalarda bunun raporunu isteyeyim ben sizden.
+
+509
+01:57:50,323 --> 01:58:05,083
+O raporu verenler zaten sunar. Bu sunumları son iki hafta yapacağımızı varsayarsak, sondan üçüncü haftada sunumlarınızı vermenizi isteyeceğim.
+
+510
+01:58:05,083 --> 01:58:15,083
+Raporlarınızı. Dolayısıyla raporu verenler sunumu da yapmış olur. Dolayısıyla orada da bir eleme...
+
+511
+01:58:15,956 --> 01:58:28,775
+Olmuş olur, görmüş oluruz tam olarak sayıyı. Nasıl, iyi mi? Öyleyse şöyle yapalım. Buraya da yazayım.
+
+512
+01:58:34,899 --> 01:58:42,279
+Sondan üçüncü hafta proje raporu verilecektir.
+
+513
+01:58:46,068 --> 01:58:54,528
+Proje raporu vermeyen sunum yapamaz ve sıfır alır.
+
+514
+01:58:57,728 --> 01:58:59,848
+Nasıl? Burada okey miyiz arkadaşlar?
+
+515
+01:59:00,148 --> 01:59:01,828
+Hocam, sondan ikinci haftaya kadar olsa.
+
+516
+01:59:03,288 --> 01:59:06,008
+Ama onu ne zaman planlayacağız, nasıl planlayacağız?
+
+517
+01:59:07,608 --> 01:59:10,168
+Ders başına kadar herkes gelmiş olur.
+
+518
+01:59:10,768 --> 01:59:12,168
+Sondan ikinci haftanın başına kadar.
+
+519
+01:59:12,756 --> 01:59:31,676
+Ders başladığı zaman kaç kişi gelmişse ona böyle 5-10 dakikada... Anlık o an şey yaparız diyorsunuz. Zor olur ya. Şu olabilir, sondan ikinci haftadan bir iki gün önce olabilir. Yani son hafta hangi hafta?
+
+520
+01:59:36,020 --> 01:59:44,360
+Şimdi 6. haftadayız. 7. 8. 9. 10.
+
+521
+01:59:53,811 --> 02:00:09,091
+11. 12. 13. 14. 14. hafta son değil mi arkadaşlar? O zaman 25 Aralık sondan 3. hafta, 1 Aralık sondan 2. hafta oluyor.
+
+522
+02:00:20,404 --> 02:00:22,904
+Bir Ocak oluyor.
+
+523
+02:00:54,420 --> 02:00:57,200
+Duruma göre aslında sonuç haftayı da ayırabiliriz ya.
+
+524
+02:01:06,836 --> 02:01:19,396
+Yani kaç haftanız var? Son üçüncü hafta desek, ayın 23'üne desek mesela, 23 Aralık desek, 3 hafta oradan var.
+
+525
+02:01:23,283 --> 02:01:24,763
+4-5 hafta mı oluyor?
+
+526
+02:01:44,851 --> 02:01:58,632
+Ayın 23'üne diyelim olması. Yani ders saatinin dışına çıkacağımıza bir haftayı daha verelim olması.
+
+527
+02:01:58,632 --> 02:02:01,771
+23.
+
+528
+02:02:12,020 --> 02:02:14,180
+Bugün Cuma 25'e 25.
+
+529
+02:02:17,908 --> 02:02:19,628
+23 Aralık diyelim.
+
+530
+02:02:37,844 --> 02:02:44,923
+23 Aralık 2020 tarihinde proje raporu verilecektir. Proje raporu vermeyen sunum yapamaz ve sıfır alır.
+
+531
+02:02:45,923 --> 02:02:50,604
+Yani duruma göre 3 haftaya da çıkartabiliriz sunumları.
+
+532
+02:02:53,344 --> 02:02:58,963
+Bu şekilde hepimiz de ders programı çünkü farklı olan arkadaşlar da olabilir.
+
+533
+02:03:05,300 --> 02:03:25,319
+23 Aralık'ta belli olur. Bir iki gün içerisinde ben de iyi kötü toparlarım. Ne olacak, ne yapılacak? Bir gün içerisinde haber versem, arkadaşlar da bir gün içerisinde bir sunum hazırlarlar herhalde. Rapor zaten olacağı için hızlıca bir sunum hazırlanabilir.
+
+534
+02:03:27,460 --> 02:03:30,880
+Değil mi? 25'ine de ders var.
+
+535
+02:03:32,819 --> 02:03:33,880
+Ön...
+
+536
+02:03:41,811 --> 02:03:58,671
+Sırayı da şimdiden belli yapalım. Kimin önce olacağı belli olsun. Bir rastgele olsun ama hemen şimdiden belli olsun yani. Dolayısıyla ilk hafta sunum yapacak olanlar da hazırlıklı olmuş olur.
+
+537
+02:04:00,652 --> 02:04:05,671
+Siz şimdi isminizi yazın. Sonra ben burada bir randomizasyon yaparım. Burayı bir karıştırırım.
+
+538
+02:04:09,332 --> 02:04:18,792
+O randomizasyon sonucunda bir ilk yapacak kişiler belli olur.
+
+539
+02:04:25,792 --> 02:04:26,752
+Buyurun.
+
+540
+02:04:32,012 --> 02:04:36,332
+Ben dediğinizi anlayamıyorum. İsterseniz chat ekranına yazın.
+
+541
+02:04:40,500 --> 02:04:42,600
+Ne yaptım ben? Nereye açtım?
+
+542
+02:04:48,435 --> 02:04:50,975
+Ekranı kapattın mı ben? Ne yaptım arkadaşlar?
+
+543
+02:04:53,716 --> 02:04:55,756
+Bizde zoom ekranı açtık hocam.
+
+544
+02:04:56,515 --> 02:04:57,775
+Paylaşılan bir örgüt yok hocam.
+
+545
+02:04:58,695 --> 02:05:00,296
+Ekranı görmüyorsunuz.
+
+546
+02:05:00,435 --> 02:05:00,735
+Aynen.
+
+547
+02:05:03,176 --> 02:05:08,036
+Hocam bir de ben şey soracağım. Bu raporda neleri yazmamız gerekiyor?
+
+548
+02:05:11,315 --> 02:05:11,947
+Raporda...
+
+549
+02:05:12,243 --> 02:05:22,043
+Paper'ı bir tanıtın. Bir de temel. Yani aslında paper'ın küçük bir özetini koyabilirsiniz.
+
+550
+02:05:22,043 --> 02:05:32,803
+Hani öncelikle temel hangi metodu kullanmış? Amacı ne?
+
+551
+02:05:39,028 --> 02:06:01,468
+Sonuçlar ne? Yani önemli bir tablosu varsa onu koyabilirsiniz. Birçok şimdi görüntüler falan var. O görüntülerden koyabilirsiniz. Bunları bastırmayacağımız için rapora koyabilirsiniz onları.
+
+552
+02:06:10,868 --> 02:06:14,008
+Şuraya şunu diyeyim.
+
+553
+02:06:20,243 --> 02:06:31,884
+Buradaki konular harici konularla alınabilir.
+
+554
+02:06:31,884 --> 02:06:44,923
+Hoca ile konuyu konuşumuz diyelim.
+
+555
+02:06:49,555 --> 02:07:10,996
+Beş, hangi tarihe kadar konuyu belirlettirelim size? Onun tarihini de yazalım. Bugün 13'ü, 20'si, 27'sinde sınav olacağız zaten. Sınavdan sonraki hafta dördüncü, dört, dört aralık.
+
+556
+02:07:12,372 --> 02:07:18,212
+4 Aralık'a aslında önümüzdeki hafta belirleyin ya, değil mi? Bu hafta belirleyin işte.
+
+557
+02:07:21,212 --> 02:07:22,492
+Değil mi arkadaşlar?
+
+558
+02:07:30,771 --> 02:07:35,251
+Yani bir haftada bir konu belirlenir.
+
+559
+02:07:55,988 --> 02:07:56,868
+Devam ediyoruz.
+
+560
+02:08:00,564 --> 02:08:01,903
+Ne yapalım o konuyu?
+
+561
+02:08:05,003 --> 02:08:12,484
+Yani konuyu bu hafta içinde belirleyene 10 puan bir bonus vereyim.
+
+562
+02:08:16,692 --> 02:08:19,192
+O şekilde daha iyi oldu hocam. Hangisi?
+
+563
+02:08:20,231 --> 02:08:26,051
+Bu hafta belli yerine 10 puan olsun. Sınavdan sonraki hafta tam tarih olsun.
+
+564
+02:08:26,051 --> 02:08:30,051
+Peki. Konuyu...
+
+565
+02:08:38,836 --> 02:08:39,856
+20
+
+566
+02:08:45,876 --> 02:09:02,356
+Kasım tarihi, tarihli derse kadar belirleyenlere 10 puan bonus verilecektir.
+
+567
+02:09:14,868 --> 02:09:39,808
+4 Aralık 2020 tarihli derste, ders başında, derse başlamadan önce belirlenmiş olmalıdır.
+
+568
+02:09:42,003 --> 02:09:45,944
+0 alınacaktır.
+
+569
+02:09:50,323 --> 02:09:50,764
+Tamam.
+
+570
+02:09:53,083 --> 02:09:57,163
+Hocam, trubayı seçen o zaman 20 puan direkt hayatına önde başlıyor.
+
+571
+02:09:57,963 --> 02:09:58,304
+Evet.
+
+572
+02:10:00,543 --> 02:10:05,963
+Yani onu, trubayı istemiyor insanlar. O yüzden ona bir şey yapıyorum, kıyak geçiyorum.
+
+573
+02:10:08,183 --> 02:10:12,583
+Hocam, biraz bilinmeyen alan gibi kalıyor. Açıkçası o yüzden çekindim ben.
+
+574
+02:10:14,023 --> 02:10:17,943
+Aslında şöyle, orada şöyle bir önemli bir durum var.
+
+575
+02:10:18,387 --> 02:10:25,068
+Yani böyle şimdi günümüzde makine öğrenmesi çalışmak için kuvvetli bilgisayarlar lazım.
+
+576
+02:10:26,648 --> 02:10:34,247
+Truba sistemi de Türkiye'deki araştırmacılar için kuvvetli bilgisayarlar sağlayan bir sistem.
+
+577
+02:10:34,667 --> 02:10:43,068
+Tüm Türkiye'ye hizmet veriyor. O sistemin çözülmesi çok önemli. Yani oraya 10 puan bence az bile bonus.
+
+578
+02:10:45,684 --> 02:10:52,384
+Hocam o sistemde bir şey çalıştırmamızı istiyor musunuz peki? Ya da bizim oraya seçsek erişim şansımız olabilecek mi?
+
+579
+02:10:52,384 --> 02:11:12,464
+Ya ona duruma göre bakarız. Diyelim ki sizden bir şey istedi. Adam dedi ki, yani hocanızdan bir şey olursa, okey olursa sizi kaydedebilirim dedi. O zaman kaydolursunuz, araştırırsınız. Yok eğer hayır derse.
+
+580
+02:11:13,076 --> 02:11:22,735
+Yani kaydolamıyorsanız o zaman kaydolamıyorsunuzdur. Gereği de yoktur yani. Duruma bakarız yani orada.
+
+581
+02:11:25,735 --> 02:11:31,815
+Biraz onlarla işte o sistemi dokümentasyonuna bakmak işte.
+
+582
+02:11:38,963 --> 02:11:45,963
+TR Grid Tuba Kim Üye Olabilir?
+
+583
+02:11:53,460 --> 02:11:54,740
+Kimler kullanabilir?
+
+584
+02:12:00,948 --> 02:12:16,188
+GRID üzerinde çalışabilir uygulamalara sahip, Türkiye'deki tüm üniversite araştırma kurumu ve enstitülerden araştırmacılar, öğretim üyeleri, öğrenciler, truba kaynaklarını kullanmak üzere truba kullanıcısı olabilir.
+
+585
+02:12:17,948 --> 02:12:20,208
+Siz bu tanıma giriyorsunuz diye düşünüyorum.
+
+586
+02:12:22,788 --> 02:12:25,368
+Yıldız Teknik Üniversitesi'nden bir öğrencisiniz.
+
+587
+02:12:26,260 --> 02:12:49,840
+Benim üyeliğim var ama çok oldu. Bu dağıtık sistem programlamayı falan da bilmiyorum. Bu OpenMP ile falan filan bir şeyler yapılıyor. Yani kendi dokümentasyonu o şekilde. C ve OpenMP ile yapmışlardı ta o zaman.
+
+588
+02:12:51,667 --> 02:13:15,227
+Nereden baksan 6-7 yıl önceki bir durumdan bahsediyorum. Ondan beri takip etmedim. OpenMP vs. de iyi bilmiyorum. C programlamayı falan da çok keyif almıyorum. Dolayısıyla orada kaldı o. Ama şimdi bu TensorFlow'un falan hep C arka planları var.
+
+589
+02:13:16,467 --> 02:13:37,907
+O MX Net'in falan da mesela C, Direk C'de, C++'da. PyTorch'u bilmiyorum ama TensorFlow'un C, yani motoru C ya da C++. Dolayısıyla onların orada çalıştırılabilmesi lazım.
+
+590
+02:13:38,836 --> 02:13:51,376
+Bu işte bilgisayar bölümü mezunu, paralel programlama ya da dağıtık programlama dersine almış bir öğrenci bu işe girse bence güzel olur.
+
+591
+02:13:55,636 --> 02:13:58,076
+Başvuru ve hesap açılma prosedürü.
+
+592
+02:14:03,315 --> 02:14:16,815
+Henüz öğrenci durumundaki araştırmacıların hesaplarının açılabilmesi için birlikte çalıştıkları akademik personelden başvuranın kendisiyle çalıştığına dair bir onay e-postası göndermesi gerekmektedir.
+
+593
+02:14:21,140 --> 02:14:23,100
+Tabii Linux işletim sistemi bu.
+
+594
+02:14:26,868 --> 02:14:31,967
+Şu adresten başvuru şey yapıyorsun.
+
+595
+02:14:39,444 --> 02:14:40,364
+Ön...
+
+596
+02:14:58,260 --> 02:15:17,980
+Evet, yani böyle bir şey. Yani sisteme girmeseniz bile, bunu güzelce anlatsanız bile, bu bile büyük bir artı diye düşünüyorum. Ama hani bir de sisteme kaydolabilirseniz, sisteme girip orada bir TensorFlow'u çalıştırabilirseniz falan, o zaten harika bir iş olur.
+
+597
+02:15:27,667 --> 02:15:29,087
+Tamamdır hocam. Teşekkürler.
+
+598
+02:15:29,547 --> 02:15:29,807
+Güzel.
+
+599
+02:15:35,147 --> 02:15:37,527
+Evet. Başım ağrıdı benim.
+
+600
+02:15:39,107 --> 02:15:41,187
+Hocam, ödevlerle ilgili bir soru soracaktım ama.
+
+601
+02:15:41,567 --> 02:15:46,887
+Evet. Çok da vaktimiz de kalmamış. Artık ara vermeden bitiririz.
+
+602
+02:15:48,567 --> 02:15:51,687
+Canlı derste itirazlarınızı yapın demişsiniz de.
+
+603
+02:15:52,212 --> 02:16:04,671
+Ders sonunda dedim. Yani ders sonunda değiliz daha. Ders sonunda bitirelim dediğim andan itibaren isteyenler çıkabilir. İsteyenler o ödevle ilgili itirazlarını söyleyebilir.
+
+604
+02:16:04,671 --> 02:16:05,891
+Tamam hocam.
+
+605
+02:16:08,391 --> 02:16:17,811
+Tamam. Bu konuda baya bir paper yazdık buraya. Başka paperlar da olabilir yine dediğim gibi. Konuşuruz.
+
+606
+02:16:19,220 --> 02:16:20,619
+Öğrenç
+
+607
+02:16:25,524 --> 02:16:35,644
+Şunları ben Gilsis'ten bir de e-mail olarak katılmayan arkadaşlar için göndereyim. Derse gelemeyen arkadaşlar için.
+
+608
+02:16:42,388 --> 02:17:05,128
+Şimdi nerede kaldık? Saat 11.20. 11.50'de bitecek. Yarım saatlik bir müddet var. Bir 10 dakika ara verelim. Benim başım ağrıdı. 11.20. 11.30'da geliriz. Bir 15-20 dakika daha bir şeyler yapar, bitiririz. Tamam? 10 dakika ara verelim arkadaşlar.
+
+609
+02:31:31,603 --> 02:31:34,683
+Evet, ben geldim arkadaşlar. Sesim geliyor mu?
+
+610
+02:31:40,564 --> 02:31:41,884
+Evet, geliyorum hocam.
+
+611
+02:31:42,224 --> 02:31:45,783
+Tamam. Biraz daha bugünkü derse devam edelim.
+
+612
+02:31:52,819 --> 02:31:54,760
+Ekran paylaşımım var mı?
+
+613
+02:33:00,435 --> 02:33:27,396
+Least Squares Fitting. Buna baktık. Least Squares Line Fitting. Yani sadece bir çizgi uydurma. Tabii daha karmaşık bir model uyguladığınızda, uydurmak istediğinizde veriye. Buradaki parametreler sadece M ve B olmayacak. Daha fazla parametreniz olacak ama genel mantığınız bu.
+
+614
+02:33:28,051 --> 02:33:44,151
+Bu linear regresyondaki yönteme benziyor zaten. Evet bu linear regresyon zaten yanılmıyorsam haklısınız.
+
+615
+02:33:49,203 --> 02:34:12,283
+Bu x'ye tek boyutlu değil de işte x1, x2, x3 gibi çok boyutlu da olabiliyor. Yani bu formülasyon ona da uyuyor esasen. Burada tek x var ama x1, x2, x3 gibi birden fazla x'iniz de olabilir. Onlara da uyuyor.
+
+616
+02:34:18,515 --> 02:34:24,435
+Şimdi neden iyi, neden kötü bununla ilgili konuşmuş.
+
+617
+02:34:33,139 --> 02:34:41,540
+Vertical Least Squares neden problemli? Rotasyon invariant değil demiş.
+
+618
+02:34:43,819 --> 02:34:53,319
+Ve dikey çizgi varsa burada başarısız oluyor diyor. Yani çizginin kendisi dikeyse bu yöntem çalışmıyor diyor.
+
+619
+02:34:55,020 --> 02:34:58,279
+Noktalar dikey bir şeyse çalışmıyor diyor.
+
+620
+02:35:01,139 --> 02:35:03,539
+Bu ne?
+
+621
+02:35:06,479 --> 02:35:08,579
+Totally Squares demiş.
+
+622
+02:35:16,531 --> 02:35:30,072
+Burada direkt şey yapmaya çalışmış. Gördüğünüz gibi noktanın çizgiye, dik uzaklığını bu sefer bulmaya çalışmış.
+
+623
+02:35:32,771 --> 02:35:41,072
+Unit normal, önce normali buluyor. Sonra da o normalden yararlanarak...
+
+624
+02:35:41,492 --> 02:36:03,311
+Dik uzaklık değil de, y'deki uzaklık değil de, baya baya noktanın çizgiye uzaklığını bulmaya çalışmış. Daha ayrıntılı bir least squares oluyor buradan anladığım kadarıyla. Distance between point, x, y and line olması lazım. Yani çizgiyle nokta arasındaki uzaklık.
+
+625
+02:36:03,680 --> 02:36:14,319
+AXI artı BYI artı C şeklinde. Bu sefer parametre sayısı 2 değil de 3 oluyor. Amacınız ne? A, B, C'yi bulmak bu sefer.
+
+626
+02:36:18,940 --> 02:36:26,000
+Bu şekilde Total Lease Squares denilen bir yöntemden bahsediyor. Daha ayrıntılı bilgi şurada varmış.
+
+627
+02:36:31,603 --> 02:36:48,403
+Bu ne diyor? Find ABC to minimize the sum of squared perpendicular distances. Yani şu uzunlukların toplamını minimize edecek bir hata ifadesi yazıyor.
+
+628
+02:36:51,144 --> 02:36:58,563
+Ondan sonraki mantık nasıl gidiyor? Bakalım.
+
+629
+02:37:06,484 --> 02:37:08,724
+Ne oldu? Bunlar pdf'e çıkmamış.
+
+630
+02:37:09,923 --> 02:37:10,583
+Enteresan.
+
+631
+02:37:19,059 --> 02:37:21,180
+O kısım pdf'e çıkmamış, enteresan.
+
+632
+02:37:23,540 --> 02:37:26,500
+Şöyle bir bakalım ne oluyor, anlamaya çalışalım.
+
+633
+02:37:37,683 --> 02:37:45,523
+Şu Türev alınmış hali C'ye göre Türev almış burada. Sıfıra eşitlemiş.
+
+634
+02:37:45,523 --> 02:37:49,523
+Buradan...
+
+635
+02:37:54,420 --> 02:37:57,420
+C'yi çıkartmış.
+
+636
+02:37:59,020 --> 02:38:01,979
+Gördüğüm kadarıyla. Doğru mu gidiyorum?
+
+637
+02:38:03,760 --> 02:38:05,420
+Sonra...
+
+638
+02:38:12,564 --> 02:38:13,123
+Hmm.
+
+639
+02:38:42,835 --> 02:38:43,627
+Şimdi...
+
+640
+02:38:51,283 --> 02:38:54,043
+C'yi yok mu etmiş burada? Ne yapmış arkadaşlar?
+
+641
+02:38:56,623 --> 02:39:01,324
+Şu ortalama x, şu ortalama x, x'in miyini yani.
+
+642
+02:39:04,903 --> 02:39:17,324
+Toplayıp n'e bölünce, c eksi a çarpı x'lerin ortalaması ve eksi...
+
+643
+02:39:18,415 --> 02:39:45,515
+B çarpı yerlerin ortalaması olarak çıkıyor. Şuradan önce Y'yi optimize etmiş. Parça parça gidiyor. Sonra onu bu C'ye yerine yazarsa ve A'lara ve B'lere dağıtırsa da bu oluyor. Yani C'ye önce tek başına bir C'ye göre türevi alıp sıfıra eşitleyip çözmüş. Demek ki kolay bir çözümü var onun.
+
+644
+02:39:45,904 --> 02:40:12,684
+C'yi bulmuş, tekrar buraya yazıyor. Sonra tekrar bu sefer A'yı ve B'yi bulması lazım. O bizim bildiğimiz, bu sefer ne yapıyor? Şurayı A yapıyor. Burası araştırdığımız parametreler. Yine karesini alıyor. Yukarıdaki gibi mi oldu bu?
+
+645
+02:40:22,579 --> 02:40:26,540
+Şurada yine şu kareli versiyona getirdi.
+
+646
+02:40:31,636 --> 02:40:54,756
+Eşittir bu çıktı. Bunu minimize etmek için P'ye göre TREV alacak. Bunun çözümü diyor A çarpı A'nın, A'nın transpozu çarpı A'nın en küçük eigen values'una denk gelen eigen vektördür diyor.
+
+647
+02:40:56,884 --> 02:41:00,723
+Tabi burada Linear C1 vs. bilmek gerekiyor.
+
+648
+02:41:05,268 --> 02:41:21,567
+Şöyle bir baktığımızda iki farklı optimizasyon problemi görüyoruz. Problem ifadesi AX-B'nin karesini minimize et. AX ve B burada matrisler. X araştırdığımız şey.
+
+649
+02:41:33,043 --> 02:41:46,043
+Çözüm şuradan çıkıyor. Matlab'da da şöyle bir denklem var. Bununla da tak diye bulabiliyorsunuz. Matlab'daki şey zaten muhtemelen bunu yapıyordur.
+
+650
+02:41:47,043 --> 02:41:54,744
+Veya bilemiyorum. Belki daha matrisin yapısına göre iteratif yöntemler falan da kullanılıyor olabilir.
+
+651
+02:42:01,907 --> 02:42:28,167
+L-square solution'a denk düşüyor. Bir başka problem daha gördük. Burada x'in transpozu a, a çarpı x'i minimize edeceğiz. Ama x ve x'in çarpımı 1 eşit olacak. Yani bu ne oluyor? Bir birim daire, birim çember üzerinde tanımlanmış olması lazım.
+
+652
+02:42:29,108 --> 02:42:35,407
+X'in, değil mi? Karelerinin toplamı 1 neyi verir arkadaşlar?
+
+653
+02:42:35,407 --> 02:42:39,747
+1
+
+654
+02:42:46,579 --> 02:42:53,540
+Hiper-hiper çemberi ya da hiper kürenin yüzeyini verir diye düşünüyorum.
+
+655
+02:42:59,316 --> 02:43:02,516
+Bunu buna bölüp minimize etmemiz lazım demiş.
+
+656
+02:43:04,516 --> 02:43:08,796
+Ix eşittir sıfıra non-triviyel bir solution gerekiyor.
+
+657
+02:43:08,796 --> 02:43:12,316
+Solution'da eigenvektörleri buluyorsunuz.
+
+658
+02:43:14,316 --> 02:43:15,716
+Oradan çıkıyor diyor.
+
+659
+02:43:17,316 --> 02:43:20,716
+List squares'i iki farklı şekilde kullanmış oldu.
+
+660
+02:43:25,396 --> 02:43:27,716
+Bu bir global optimizasyon yöntemi.
+
+661
+02:43:29,596 --> 02:43:31,396
+İyi tarafı...
+
+662
+02:43:34,739 --> 02:43:44,459
+Açık bir şekilde belirlenmiş bir objektifi var. Optimizasyonu gördüğünüz gibi kolay. Tak tak matriz çarpımlarıyla buluyoruz. Analitik çözümü var bir nevi.
+
+663
+02:43:47,659 --> 02:43:58,340
+B ne demiş? Optimize etmek istediğiniz şey bu olmayabilir demiş. Outliers'lara sensitive demiş. Bu önemli.
+
+664
+02:43:59,059 --> 02:44:09,579
+Yani ortalamadan çok farklı değerler varsa da verinizde ona sensitive, o sonucu çok değiştirebiliyor demiş.
+
+665
+02:44:11,819 --> 02:44:17,739
+Birden fazla iyi fit alternatifi vermiyor. Yani size bir tane fit veriyor.
+
+666
+02:44:18,739 --> 02:44:20,555
+Halbuki belki...
+
+667
+02:44:21,139 --> 02:44:31,439
+5-10 tane farklı fit alternatifi verse, hipotezi verse, siz onu farklı fitlerle farklı şekilde test etseniz, seçseniz belki daha iyi olabilir.
+
+668
+02:44:35,559 --> 02:44:42,119
+Burada bu gürültüye ya da harici durumlara robustness'tan bahsedecek.
+
+669
+02:44:42,959 --> 02:44:48,099
+Mesela mavi çizgi, kırmızı noktalara least squares fit olmuş.
+
+670
+02:44:48,979 --> 02:45:15,119
+En az kareler fit yöntemiyle. Araya bir tane şu gelince, outlier yani şunlardan çok uzak bir değer gelince gördüğünüz gibi fit çok bozuluyor. Problem ne? Kareli hata bu outliers'ları outliers'lardan çok etkileniyor.
+
+671
+02:45:17,940 --> 02:45:28,940
+Burada Robustly Squares diye bir yöntem var. Bu robust yani outlier'lardan o kadar fazla etkilenmiyor.
+
+672
+02:45:28,940 --> 02:45:37,940
+Buna nasıl bir şey buna bakalım.
+
+673
+02:45:42,708 --> 02:45:47,108
+Genel approach minimize diyor.
+
+674
+02:45:52,404 --> 02:45:56,404
+Bu kareyi tanımlamış şu şekilde. Standart bildiğimiz o...
+
+675
+02:46:00,180 --> 02:46:01,500
+Hata mesajı.
+
+676
+02:46:07,636 --> 02:46:13,015
+Rho bir robust fonksiyon, scale parametresi var sigma.
+
+677
+02:46:21,012 --> 02:46:27,792
+Ui X i Theta Residual of I'd Point with Respect to Model Parameters V.
+
+678
+02:46:30,612 --> 02:46:40,231
+Evet, bunu bilmiyorum. Bunu tekrar araştırabilirsiniz ama burada temel bir giriş yapmış.
+
+679
+02:46:42,312 --> 02:46:47,772
+Bunu kullandığınızda gördüğünüz gibi burada kırmızı bir harici nokta var.
+
+680
+02:46:48,884 --> 02:47:05,203
+Buna rağmen outlier'lar var fakat yine de onun etkisi minimize edilmiş. Robustly Square Fitting deniliyor buna.
+
+681
+02:47:07,684 --> 02:47:15,043
+Burada sanırım bir Scale seçmeniz lazım. O Scale'i düzgün seçmezseniz ama düzgün cevap vermiyor.
+
+682
+02:47:15,188 --> 02:47:22,667
+Sigma Scale'i var galiba. Scale Parameter Sigma diyor. Onu düzgün seçmeniz lazım anladığım kadarıyla.
+
+683
+02:47:26,195 --> 02:47:30,015
+Birisi bu Robustly Squares'i de araştırıp bize anlatabilir.
+
+684
+02:47:32,956 --> 02:47:36,095
+Şuraya yazayım onu, şeylerin arasına.
+
+685
+02:47:46,932 --> 02:47:50,551
+Robustly Squares'i de araştırıp anlatabilirsiniz bize.
+
+686
+02:48:05,299 --> 02:48:16,700
+İşte o scale'i düzgün bir şekilde bulmanız gerekiyor. Büyük scale'de de problemli. Dolayısıyla scale bulma derdi var burada.
+
+687
+02:48:18,299 --> 02:48:28,599
+Robust estimations. Robust fitting is a non-linear optimization problem that must be solved iteratively. Burada iteratif yöntemler çözmeniz gerekiyor diyor.
+
+688
+02:48:30,291 --> 02:48:45,891
+Least Square Solution'dan başlıyorsunuz. Sonra iteratif optimizasyon algoritmaları kullanabilirsiniz. Newton gibi veyahut Steepest Descent gibi.
+
+689
+02:48:48,031 --> 02:48:52,291
+Burada ama bir Scale bulma derdiniz var.
+
+690
+02:48:54,851 --> 02:48:56,587
+Bu düğü...
+
+691
+02:48:56,819 --> 02:49:01,959
+Median Residual'ına göre adaptif olarak scale bulunabilir diyor.
+
+692
+02:49:07,252 --> 02:49:13,031
+Burada bırakalım. Gelecek hafta artık buradan devam ederiz.
+
+693
+02:49:17,683 --> 02:49:36,523
+Şimdi bir telefon geldi. O telefona cevap vereceğim. Sonra geri döneceğim. Ondan sonra da ödevle ilgili itirazı olan arkadaşımızla konuşabilirim. Geri döneceğim yani. Ama otomatikman kapanıyor mu acaba bu toplantı?
+
+694
+02:49:39,423 --> 02:49:40,984
+Hocam kapanmıyor diye biliyorum.
+
+695
+02:49:42,423 --> 02:49:42,683
+Tamam.
+
+696
+02:49:43,476 --> 02:49:47,675
+Başka bir derste 10 geçe kadar yapmıştık çünkü kapanmamıştı sanki.
+
+697
+02:49:48,436 --> 02:49:58,936
+Tamam. Ben bir telefon edip geleceğim. Aksi halde işi olmayan arkadaşlar çıkabilirler. Yani dersimiz bitmiştir.
+
+698
+02:49:58,936 --> 02:50:01,636
+Hocam bu son yazdığınız da proje konusu mu?
+
+699
+02:50:02,695 --> 02:50:06,736
+Evet, o da proje konusu. Bunu da öğrenip bize anlatabilirsiniz.
+
+700
+02:51:21,587 --> 02:51:29,367
+Evet, telefonla konuşamadım, karşı taraf açmadı. Biz bakalım, şimdi [öğrenci] senin mi söyleyeceğin şeyleri?
+
+701
+02:51:29,367 --> 02:51:36,507
+Evet hocam. Birinci ödevde, üç tane maddede puan alamamışım ama ben yaptığımı düşünüyordum.
+
+702
+02:51:39,007 --> 02:51:43,207
+Şimdi açalım. Puanlama.
+
+703
+02:51:45,492 --> 02:51:49,652
+Onları sorular üzerinden geçtim. Acaba düzelttim mi?
+
+704
+02:51:51,152 --> 02:51:55,592
+Robbox'ta hala boş görünüyor orası. En altta hocam.
+
+705
+02:51:56,192 --> 02:52:00,531
+[öğrenci]. Minbox sayısını ben yaptım diyorsun.
+
+706
+02:52:01,531 --> 02:52:01,832
+Evet.
+
+707
+02:52:02,672 --> 02:52:03,051
+Tamam.
+
+708
+02:52:12,308 --> 02:52:13,508
+Bu ikinci ödev galiba.
+
+709
+02:52:14,087 --> 02:52:14,348
+Evet.
+
+710
+02:52:19,667 --> 02:52:20,619
+[öğrenci]...
+
+711
+02:52:23,956 --> 02:52:25,495
+Buna bakalım.
+
+712
+02:52:37,299 --> 02:52:55,399
+OnRank, farklı kalır mı map? Ha, MinMax burada mıydı? Evet, o. Tamam, bu gözümden kaçmış herhalde. Nerede MinMax? Ha, şurada. MinMax Unique. Tamam. [öğrenci].
+
+713
+02:52:59,636 --> 02:53:01,015
+Min, max,
+
+714
+02:53:02,015 --> 02:53:03,015
+tamam mı?
+
+715
+02:53:03,676 --> 02:53:05,476
+İkinci ödevle ilgili bir şey söyleyeceğim hocam.
+
+716
+02:53:07,036 --> 02:53:07,355
+Tamam.
+
+717
+02:53:07,676 --> 02:53:09,656
+Onu notladım mı senin ikinci ödevine?
+
+718
+02:53:10,275 --> 02:53:11,716
+Yok henüz daha notlamadınız ama
+
+719
+02:53:11,716 --> 02:53:13,896
+notladıktan sonra mı söyleyeyim?
+
+720
+02:53:15,695 --> 02:53:16,376
+Söyle.
+
+721
+02:53:17,336 --> 02:53:19,716
+Ben hem Jüpiter'de yaptım
+
+722
+02:53:19,716 --> 02:53:21,636
+hem de kolab ile
+
+723
+02:53:21,636 --> 02:53:22,476
+gönderdim size.
+
+724
+02:53:24,615 --> 02:53:25,536
+Jüpiter'dekini
+
+725
+02:53:25,536 --> 02:53:26,996
+kolaba çevirirken
+
+726
+02:53:27,540 --> 02:53:35,540
+Pardon, Spider'dakini Jüpiter'e çevirirken, yani Colab'a çevirirken bazı hatalar, imge yüklemeyi unutmuşum.
+
+727
+02:53:37,540 --> 02:53:42,340
+Yani imge yüklemeyle ilgili problem yapmamaya çalışıyorum.
+
+728
+02:53:42,340 --> 02:53:52,340
+Yani Python, Spider kodlarına bakarsanız onu da gönderdim yedek olarak. O tam çalışıyor ama Colab üzerindeki tam çalışmıyor.
+
+729
+02:53:53,299 --> 02:54:15,299
+Tamam, artık bakarız ona. Onlardan puan kesmedim şimdiye kadar. İmge yüklemeden puan kesmedim. Ama prezentasyondan puan kestim bir kişiden. O da hani IPNB'yi ne istiyoruz? Şeyi güzel, yani...
+
+730
+02:54:15,540 --> 02:54:20,700
+Açıklama eklenebiliyor. Açıklama yani parça parça benim açımdan okunması kolay.
+
+731
+02:54:20,700 --> 02:54:28,700
+Evet. Ama mesela bir arkadaşınız script'i tek bir hücreye paste etmiş göndermiş.
+
+732
+02:54:28,700 --> 02:54:34,300
+Oradan puan kırdım çünkü o güzel bir prezentasyon değil.
+
+733
+02:54:37,556 --> 02:54:45,556
+Tamamen kabul etmemezlik de yapmadım. Çünkü onu açıkça söylememiştim size ama biraz puan kırdım. Sende de öyle bir durum varsa kırabilirim.
+
+734
+02:54:46,336 --> 02:54:46,756
+Tamam hocam.
+
+735
+02:54:46,756 --> 02:54:46,936
+Tamam.
+
+736
+02:54:47,656 --> 02:54:48,556
+Tamam hocam.
+
+737
+02:54:49,136 --> 02:54:52,796
+Peki. Haftaya görüşürüz arkadaşlar.
+
+738
+02:54:52,816 --> 02:54:54,496
+Hocam benim de bir sorum olacaktı da.
+
+739
+02:54:54,536 --> 02:54:55,336
+Tamam. Söyle.
+
+740
+02:54:55,716 --> 02:54:56,776
+Benim de ilk ödevle ilgili.
+
+741
+02:54:56,776 --> 02:54:57,596
+Tamam.
+
+742
+02:55:04,948 --> 02:55:13,828
+Hatta size mail de atmıştım da sanırım gözünüzden kaçmış olabilir ya da. Düzelttim onları ben ama düzeltmemiş miyim seninkini [öğrenci]?
+
+743
+02:55:14,067 --> 02:55:14,427
+Merhaba.
+
+744
+02:55:15,747 --> 02:55:16,427
+Şunu mu?
+
+745
+02:55:16,427 --> 02:55:17,648
+Evet, sadece evet o.
+
+746
+02:55:18,988 --> 02:55:25,968
+Ama sen burada şimdi onları gösterememiştin ki [öğrenci]. Kapkara bir ekran vardı seninkinde. Cevap da verdim ben senin sorunu.
+
+747
+02:55:27,059 --> 02:55:52,139
+Mail gelmedi de hocam. Öyle mi? Ya da ben hatırlıyorum. Öyleydi değil mi? Evet evet biraz karanlık bir imge vardı orada. Evet yani onu kabul etmedim prezentasyon açısından kabul etmedim. Çünkü o imge olarak yanlış mıydı peki hocam o düşündüğüm şey? Yöntem olarak yanlış mıydı?
+
+748
+02:55:52,819 --> 02:55:55,260
+Bakayım. [öğrenci].
+
+749
+02:55:58,540 --> 02:55:59,739
+I-PyMD.
+
+750
+02:56:01,979 --> 02:56:03,420
+PY'de aynısı mı?
+
+751
+02:56:04,340 --> 02:56:05,180
+Evet, aynısı o da.
+
+752
+02:56:19,252 --> 02:56:32,252
+Nerede o? Sadece 10 farklı renk ile gösterme. Lower range ve upper range'e iyi vererek aradaki 10 farklı renge...
+
+753
+02:56:37,523 --> 02:56:39,863
+10 farklı rengi sabitledim diyorsun.
+
+754
+02:56:41,703 --> 02:56:42,863
+Evet hocam.
+
+755
+02:56:44,443 --> 02:56:46,943
+Sen açıkla ne yaptın burada ben anlamadım.
+
+756
+02:56:47,103 --> 02:56:48,623
+In range'i bilmiyorum çünkü.
+
+757
+02:56:49,623 --> 02:56:52,523
+In range'i o range'in dışındakileri...
+
+758
+02:56:55,316 --> 02:57:02,976
+Sadece o iki renk içindekileri alıyor renk olarak. Oradaki on farklı rengi sabitliyor resmi.
+
+759
+02:57:03,236 --> 02:57:09,776
+Bence doğru bir yaklaşım değil. Düşünürsen rengi özetleyen bir on renge indirme değil bu.
+
+760
+02:57:10,876 --> 02:57:18,376
+Orada belki çok iyi açıklamadım ama yine imgeye bakan imgeyi iyi kötü anlayacak.
+
+761
+02:57:19,376 --> 02:57:21,796
+Ama sen sadece on renk kullanacaksın.
+
+762
+02:57:22,208 --> 02:57:23,308
+İstediğim buydu.
+
+763
+02:57:24,608 --> 02:57:26,348
+Anladım. Ya ben de tam emindeydim de yaptım.
+
+764
+02:57:26,708 --> 02:57:30,188
+Senin yaptığın, şimdi sen ne yaptın?
+
+765
+02:57:30,648 --> 02:57:35,768
+170 ile 180 arası renkleri mi kullandın?
+
+766
+02:57:36,188 --> 02:57:36,848
+Evet hocam.
+
+767
+02:57:38,988 --> 02:57:45,828
+Öyle yapınca sadece gri bir rengi bıraktın, gerilerini attın.
+
+768
+02:57:45,927 --> 02:57:46,848
+Bunlar da tabii...
+
+769
+02:57:47,188 --> 02:58:05,907
+İmge'deki birçok nesneyi çöpe atmış oldun sen. Yani sen renklendirseydin bile, düzgün görünseydi bile senin şeyin. Mesela Color Map falan kullanıp, burada gerçi yapmışsın Color Map hat ile göstermişsin. Buna rağmen mi siyah gözükmüş?
+
+770
+02:58:06,048 --> 02:58:13,268
+Yok, o bir sonraki yaşamaydı. Benim üstte CV2 İm Show var. Orada göstermiştim. Orada Color Map olmadığı için.
+
+771
+02:58:13,631 --> 02:58:41,031
+Evet, burada da bir kalırmak gösterseydim. Mesela o zaman bile düzgün bir resim çıkmayacaktı. Çünkü sen çok fazla şeyi atıyorsun. Özetlemiyorsun yani, atıyorsun. Aslında tabii güzel açıklayamadım belki ödevde ama oradaki amacım şeyi görsün, yine resim görünsün. Resimde ne olduğu gözüksün yani.
+
+772
+02:58:41,327 --> 02:58:44,647
+Yani görünmediği için aslında yanlış çalış.
+
+773
+02:58:45,887 --> 02:58:58,108
+Aslında iki bakımdan da yanlış. Zaten hiçbir şey görünmüyor. Kapkara bir şey. Bir color map koyman lazımdı en az. İkincisi de göreceğimiz şey de muhtemelen resimde, orijinal resimde çok alakasız bir şey olacaktı.
+
+774
+02:58:59,007 --> 02:59:01,047
+Anladım hocam. Tamamdır. Teşekkür ederim.
+
+775
+02:59:01,047 --> 02:59:01,687
+Güzel.
+
+776
+02:59:04,547 --> 02:59:06,187
+Başka var mı arkadaşlar?
+
+777
+02:59:07,379 --> 02:59:09,439
+Ödevlerle ilgili söyleyeceği olan.
+
+778
+02:59:10,579 --> 02:59:13,520
+Hocam daha ikinci ödevlerin tamamını okumadınız değil mi?
+
+779
+02:59:14,319 --> 02:59:15,419
+Okumadım, okumadım.
+
+780
+02:59:15,419 --> 02:59:16,099
+Tamam.
+
+781
+02:59:19,924 --> 02:59:23,884
+Tamam. O zaman haftaya görüşürüz arkadaşlar.
+
+782
+02:59:24,904 --> 02:59:26,443
+Görüşürüz hocam.
+
+783
+02:59:26,984 --> 02:59:28,264
+Görüşürüz hocam. Teşekkür ederim.

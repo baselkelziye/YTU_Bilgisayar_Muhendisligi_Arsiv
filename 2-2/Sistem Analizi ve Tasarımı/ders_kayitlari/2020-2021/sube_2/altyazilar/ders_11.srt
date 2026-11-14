@@ -1,0 +1,2119 @@
+1
+00:04:55,028 --> 00:04:56,108
+İyi günler arkadaşlar.
+
+2
+00:04:58,948 --> 00:05:10,388
+Katılım 25. Evet, dönemin sonuna geldikçe azalıyoruz. Neyse, kayıtlardan izliyorsunuzdur diye ümit ediyorum katılmayan arkadaşlar.
+
+3
+00:05:12,228 --> 00:05:17,367
+Evet, geldik 12. haftamıza sistem analize ve tasarımında.
+
+4
+00:05:19,891 --> 00:05:33,831
+Teorik olarak sizlere ders anlatacağım. Aslında son haftadayız. Önümüzdeki iki hafta biliyorsunuz sizler projelerinizi sunacaksınız, sunum yapacaksınız. Ve zaten önümüzdeki haftada ders saatine kadar.
+
+5
+00:05:34,288 --> 00:05:46,148
+Daha doğrusu ders saatinden önce belirleyeceğimiz bir saate kadar ki bunun için zaten bu hafta sistemde ödev diye bir yeni assignment açacağım, bir görev açacağım.
+
+6
+00:05:46,828 --> 00:06:01,108
+Oraya yüklemeniz yeterli olacak. Hem raporunuzu hem uygulamanızı yani kodlarınızı ve sunumunuzu hatta videoda eğer çekerseniz ekip olarak bu da olabilir. Bunu da yükleyebilirsiniz.
+
+7
+00:06:02,288 --> 00:06:07,288
+Şimdi son dediğim gibi 12. haftaki dersimizde başlık olarak...
+
+8
+00:06:07,795 --> 00:06:16,276
+Nelere eğileceğiz? İlk olarak kodlamayla alakalı ve özellikle de yazılım kalitesi bağlantılarıyla alakalı başlıklara bakacağız.
+
+9
+00:06:16,836 --> 00:06:25,855
+Yazılım kalitesini de sonrasında yine kalite unsurlarını karşılamayı daha iyi hale getirmek için test teknikleri nelerdir?
+
+10
+00:06:26,315 --> 00:06:33,115
+Ve bir bilgi sisteminde ne gibi testler yapılır, neden yapılır, hangi test neyi karşılar? Bunlara bakacağız.
+
+11
+00:06:35,764 --> 00:07:03,543
+Artık ön incelemesini, fizibilitesini yaptığımız, analizini yaparak problemi modellediğimiz, sonrasında çözüm önerimizi tasarım ile gösterdiğimiz ve kodlayarak gerçekleştirdiğimiz, test ederek de sınayarak belirli gereksinimleri ve beklentileri düzgün karşıladığını onayladığımız artık bir bilgi sistemimiz var elimizde.
+
+12
+00:07:03,764 --> 00:07:13,564
+Bu nasıl kullanılacak? Nasıl devreye alınabilir bir bilgi sistemi? Yani yeni bir sisteme geçiş nasıl yapılır? Ne gibi geçiş türleri vardır? Bunlara bakacağız.
+
+13
+00:07:14,303 --> 00:07:27,504
+Sonrasında da artık devreye alınmış, yani çalışmakta olan bir bilgi sistemi üzerinde ne gibi aksiyonlar alınabilir? Bunlar da genelde bakım başlığı, yani bakım safhası adını veriyoruz.
+
+14
+00:07:27,803 --> 00:07:31,764
+Bakım ne demektir? Ne gibi bakımlar yapılır bir bilgi sistemine? Bunlara bakacağız.
+
+15
+00:07:31,764 --> 00:07:53,764
+Sonrasında da çok basit olsa dahi en azından bir problemi ele alıp da nasıl analizini ve modellemesini yaparızı küçücük bir örnekle, basit bir projeyle üzerinden geçerek dediğim gibi teorik anlatacağım konu başlıklarını tamamlamış olacağız bu hafta.
+
+16
+00:07:55,091 --> 00:08:14,091
+Evet, şimdi geldik. Sistem analizini yaptık, tasarımı yaptık dediğim gibi artık gerçekleştirme yani kodlama aşamasına geliyoruz. Ne zaman kodlamaya geçilir? Hocam biz direkt oturup başlıyoruz kodlamaya diyebilirsiniz. Belki küçük problemlerde ya da ödevlerde bunları yapıyor olabilirsiniz ama...
+
+17
+00:08:14,255 --> 00:08:26,175
+Büyük ölçekli bir bilgi sistemi geliştiriyorsanız, maalesef tabii ki bunu böyle pat, küt, hadi başlayın yazmaya, sen şu modülü yazarsın, sen bunu böyle bağlarsın, şu sınıflar sende olsun diyemezsiniz.
+
+18
+00:08:26,175 --> 00:08:34,076
+İlla ki ortalıkta bir tasarım olması, yani bir çözüm önerisinin formal halde ifade edilmiş bir çözüm önerisinin olması gerekir.
+
+19
+00:08:35,412 --> 00:08:49,772
+Bu da yeterli değil. Hani geçen derslerde tasarımı tamamlarken görmüştük. İşte ardışıl diagramları çizerek, mesela nesnelerimizin bir arada çalışarak nasıl bir sorumluluğu yerine getirmeleri gerektiğini göstermiştik.
+
+20
+00:08:49,772 --> 00:09:03,412
+Fakat bunun içinde hala algoritmalarımız yoktu. İşte bunlar için belki akış diyagramları, algoritmaları anlatmak için, belki sözde kodlar, psodokodlar yazacağız. Bununla beraber pek çok diagram da çizeceğiz. İşte bunlardan sonra...
+
+21
+00:09:03,412 --> 00:09:08,092
+Sonra artık biz gerçekleştirme yani kodlama aşamasına geçebiliriz.
+
+22
+00:09:08,812 --> 00:09:22,292
+Kodlama konusunda yine nesne yönelik olarak düşündüğümüzde işte en az bağlıdan başlayıp en çok bağlıya yani en karmaşa doğru gidin şeklinde bir yaklaşımın daha doğru olacağından da bahsetmiştik.
+
+23
+00:09:22,292 --> 00:09:28,372
+Burada kodlamanın çok içine girmeyeceğiz çünkü programlama dilleri, apayrı ders konuları biliyorsunuz.
+
+24
+00:09:31,412 --> 00:09:40,812
+Aslında bakım yapılabilirliğin ve sürdürülebilirliğin sağlanması için kodlamada dikkat edilmesi gereken bazı başlıklar var.
+
+25
+00:09:40,971 --> 00:09:53,792
+Şimdi, ilki spesifikasyonlar. Ne demektir? Yani kod yazım şekil tanımları. Kodlamayla alakalı bir şirket politikası olabilir ya da işte ISO ya da IEEE gibi standartları takip ediyor olabilirsiniz.
+
+26
+00:09:59,412 --> 00:09:59,892
+Daha kolay.
+
+27
+00:10:00,000 --> 00:10:13,579
+İletişimi olanak veren hem de sonrasında hani bugün varız yarın yokuz başkası geldiğinde ve o kod üzerine bir şeyler yapması gerektiğinde daha kolay çalışmasını sağlayacak, bunu garanti edecek şekilde bir formal tanımlardır.
+
+28
+00:10:13,879 --> 00:10:17,639
+Spesifikasyonlara uyarsak kodlama kalitemiz doğal olarak artar.
+
+29
+00:10:18,379 --> 00:10:26,339
+Kodlamada paldır küldür yazmak yerine okunaklı ve düzenlenebilir şekilde kod yazmak daha doğrudur.
+
+30
+00:10:28,000 --> 00:10:52,259
+Hemen yazayım, günü kurtarayım, benden 3 saat sonraya buradaki modülüm ya da birimin tamamlanması isteniyor, şu menüyü tamamlamalıyım, onu hemen bilmem ne servisine bağlamalıyım, 5 saat içinde de şunu tamamlamalıyım diye paldır küldür yazabilirsiniz ama mümkünse ondan sonra bunu bir elden geçirmekte fayda var. Okunaklı kod ve düzenlenebilir kod yazmak önemli.
+
+31
+00:10:56,000 --> 00:11:00,819
+Ve sonrasında dediğim gibi başkaları tarafından da değiştirilebilir olmaları esas.
+
+32
+00:11:01,395 --> 00:11:07,056
+Bunlara dikkat ederseniz daha kaliteli ürünler ortaya çıkartabiliriz.
+
+33
+00:11:08,015 --> 00:11:15,535
+Kodlama standartlarına şimdi dediğim gibi girmeyeceğim ama çeşitli bir iki tane farklı kodlama standartı var.
+
+34
+00:11:15,836 --> 00:11:24,895
+Bunlarda da en çok dikkat edilmesi gereken yani uyarsanız daha iyi olacak olan kurallar şunlardır.
+
+35
+00:11:25,268 --> 00:11:35,067
+Birincisi, genellikle atladığımız, yapmadığımız ya da savsakladığımız diyelim, açıklama satırları yani koment yazmak.
+
+36
+00:11:35,888 --> 00:11:40,327
+Aslında bakarsanız bir satır kod için 10 satır koment bazen yazılabilir.
+
+37
+00:11:40,468 --> 00:11:52,368
+Oradaki kodun ne yaptığını, neye bağlandığını, tasarımın neresiyle alakalı olduğunu, ne aldığını, ne verdiğini, kimin yaptığını, hangi versiyonda olduğunu bile ekleyebilirsiniz.
+
+38
+00:11:52,368 --> 00:11:53,268
+Eklerseniz de çok.
+
+39
+00:11:53,268 --> 00:12:03,888
+Çok daha iyi olur. Eğer açıklama satırlarını düzgün bir şekilde mesela kullanır bir paterne, bir yazım desenine uygun olarak da bunları hazırlarsanız.
+
+40
+00:12:04,467 --> 00:12:19,067
+Günümüzde pek çok uygulama, işte .NET tarafı da olsun, Java tarafı da olsun, diğer diller de olsun, Python falan, direkt olarak kodunuzun dokümentasyonunu, yani API dokümentasyonlarınızı otomatik olarak da oluşturabilirsiniz.
+
+41
+00:12:19,067 --> 00:12:32,467
+Direkt bu tanımları, bu komentleri düzgün bir şekilde yaparsanız, böylece ikinci bir dokümentasyon yazma veya bunu oluşturma ve bunun bakımını üstlenme ya da devam ettirme gibi ayrı bir sorumluluktan da.
+
+42
+00:12:32,467 --> 00:12:43,967
+Aslında kurtulmuş olursunuz. İkisi bir arada bir çözüm olur. Açıklamalı, satırlı ama düzgün bir şekilde standartlara ve desenlere uygun yazılmış açıklama satırlarına sahip olan kodlar ile.
+
+43
+00:12:43,967 --> 00:12:56,147
+Yine kod yazım desenlerine dikkat etmek ve mümkün olduğunca bir projede, bir sistemde her birimde aynı şekilde, aynı standartlardaki deseni kullanmak esas.
+
+44
+00:12:56,387 --> 00:12:59,947
+Mesela değişkenleri Türkçe mi isimlendiriyorsunuz, İngilizce mi?
+
+45
+00:13:00,467 --> 00:13:09,707
+Camel Style mı yazıyorsunuz yoksa işte Jason Style mı yazıyorsunuz gibi farklı farklı şeyler olabilir ama bir tutarlılık olması esastır.
+
+46
+00:13:10,267 --> 00:13:18,528
+Bütün kodun, bütün projenin, bütün sistemin parçalarının aynı şekilde aynı standartlarda üretilmesi daha doğru olacaktır.
+
+47
+00:13:18,528 --> 00:13:28,467
+Bir de isimlendirme yaparken özellikle hani fonksiyon isimleri, nesne isimleri yine bir derece anlamlı oluyor ama genellikle hem metot içinde ya da hem de işte
+
+48
+00:13:28,467 --> 00:13:54,927
+İşte bir fonksiyon içinde diyelim. İlla ki nesne yönelik olmak zorunda değil. Doğal olarak pek çok değişken kullanıyoruz. Pek çok veri yapısı kullanıyoruz, dizi kullanıyoruz. Bunlara bazen anlamlı isimler vermiyoruz. A, B, C dizileri. İyi de ne o acaba? Yani A dizisinin neyi tuttuğunu, B dizisinde ne gibi hizmet sunduğunu ya da C dizisinde nelerin saklandığını yazdığınızda hemen hatırlayabilirsiniz.
+
+49
+00:13:56,467 --> 00:14:08,767
+Baktığınızda belki hatırlayabilirsiniz. Hadi hadi 15 gün sonra baktığınızda biraz düşünüp bulabilirsiniz ama daha bir uzun süre geçerse ya da başkasının yazdığı bir kodu incelemek ya da çözmek zorunda kalırsanız o zaman patlarsınız.
+
+50
+00:14:09,527 --> 00:14:14,267
+Bu A ne, B ne, C ne, X, Y, Z nedir ki acaba diye kalırsınız.
+
+51
+00:14:14,267 --> 00:14:20,687
+Burada mülk değişkenlerimize, fonksiyonlarımıza, bloklarımıza yani hem verilerimize.
+
+52
+00:14:21,427 --> 00:14:29,307
+Hem de işte nesnelerimize mesela ve bunların iç yapılarına anlamlı isimlendirmeler yapmak daha doğru bir yaklaşım olacaktır.
+
+53
+00:14:29,707 --> 00:14:32,267
+Genellikle işte hız yüzünden bunlar atlanıyor.
+
+54
+00:14:32,807 --> 00:14:37,187
+Fakat bunların hepsi nihayetinde dönüyor, dolaşıyor, kaliteye bağlanıyor.
+
+55
+00:14:37,668 --> 00:14:44,427
+Eğer kaliteyi sağlamak istiyorsak ya da kalite kriterlerini yeni getirmek istiyorsak bunlara dikkat edersek daha iyi olur.
+
+56
+00:14:44,427 --> 00:14:49,407
+Bir de ekstradan fazladan emek sarf etmek zorunda kalmayız bu işleri.
+
+57
+00:14:49,427 --> 00:14:53,807
+kodlama işini düzgün yaparsak ve söylediklerime uygun olarak çalışırsak.
+
+58
+00:14:55,668 --> 00:15:05,788
+Şimdi tabii kodlamayı yapacağız da nerede yapacağız? Doğal olarak bir dil kullanmamız ya da birden fazla dil kullanmamız, belki de birden fazla ortam kullanmamız yani IDE kullanmamız da gerekebilir.
+
+59
+00:15:05,788 --> 00:15:15,788
+Biz bunları nerede seçmiştik hatırlıyor musunuz? Fizibilite. Teknik fizibilite yaparken yazılımda programlama dilimizi, ortamımızı aslında seçmiştik, karşılaştırmıştık.
+
+60
+00:15:16,888 --> 00:15:22,908
+Bize neden uygun olduğunu, bu projeye neden uygun olduğunu anlatmış ya da ispatlamıştık.
+
+61
+00:15:23,668 --> 00:15:29,088
+Bu tasarımda da bunları kesinleştirmiştik. Gerekiyorsa alımlarını yapmıştık, kurulumlarını yapmıştık gibi.
+
+62
+00:15:30,067 --> 00:15:38,408
+İşte burada kesinleştirilen programlama dili ve ortamında aslında seçerken dikkat etmemiz gereken faktörler nelerdir? Bunlara bakalım.
+
+63
+00:15:38,868 --> 00:15:45,728
+Bir, bu programlama dili genel olarak hangi uygulama alanlarında daha çok kullanılıyor?
+
+64
+00:15:45,728 --> 00:15:48,927
+Belli diller mesela web ortamlarına daha uygundur.
+
+65
+00:15:49,248 --> 00:16:09,208
+Belli diller matematik hesapları için çok daha uygundur. Belli diller veri ile böyle veri depolama, veri sorgulama gibi uygulamalar için ya da işte işlem bazlı, transaction processing bazlı çalışmalar için daha uygun olabilir. Bunlara dikkat etmekte fayda var. Yani zor olacak.
+
+66
+00:16:10,611 --> 00:16:17,391
+Amacına uygun olmayacak ya da uygulama alanına uygun olmayacak bir dil seçimi sizi doğal olarak zorlayacaktır.
+
+67
+00:16:17,571 --> 00:16:20,971
+Ya da fizibilitesini düzgün yapmadığınızı göstermektedir.
+
+68
+00:16:22,067 --> 00:16:43,867
+Algoritmaların uyarlanabilir olmaları, veri yapıları mesela algoritmalarda kullanıyoruz. Bu veri yapıları o programlama dillerinde var mı? Kütüphaneleri var mı? Yoksa oturup bazı şeyleri benim sıfırdan yazmam mı gerekecek? Bunların karmaşıklığı nedir? Ne kadarını hazır hizmetler ya da kütüphaneler olarak kullanabiliyorum? Bu da yine dil seçiminde önemli bir faktör olarak karşımıza çıkıyor.
+
+69
+00:16:50,067 --> 00:16:53,048
+Ama yazılımın kullanılacağı ortam da önemli burada.
+
+70
+00:16:53,467 --> 00:16:56,647
+Şimdi siz mesela bir bankacılık uygulaması yazıyorsunuz diyelim.
+
+71
+00:16:56,727 --> 00:16:58,327
+Çok fazla transeksiyon ve veri var.
+
+72
+00:16:59,347 --> 00:17:12,027
+Artık günümüzde çok farklı alternatifleri olsa dahi, mesela COBOL dili hala böyle transeksiyon ve kayıt bazlı işlemlerde çok efektif çalışıyor.
+
+73
+00:17:12,027 --> 00:17:15,367
+Çünkü direkt olarak bu uygulama alanı için tasarlanmış bir dil.
+
+74
+00:17:15,728 --> 00:17:18,067
+Ama şimdi siz onunla gidip de mobil bir şey çalıştığınız.
+
+75
+00:17:18,067 --> 00:17:44,387
+Ya da mobil ortam uygulaması yapamazsınız. Ya da mainframe'de çalışmak için tasarlanmış bir transaction processing sistemde çalışması için, üretimlisi için pardon, tasarlanmış bir dil olduğunu düşünün. Siz onu gidip de mesela bir normal Intel işlemcili ya da ARM işlemcili mimariye sahip bir bilgisayarda çalıştıramazsınız, kullanamazsınız. O yüzden yazılımı kullanacağı ortam da yine dil seçiminde önemli.
+
+76
+00:17:46,067 --> 00:18:04,288
+Böyle cross platform, ondan sonra işte bir virtual machine üzerinde yani bir sanal makine üzerinde çalışan programlama kodları, dilleri, ara kod üreten işte Java gibi, .NET gibi şeyler daha fazla bir popülerliği doğal olarak arttı.
+
+77
+00:18:04,288 --> 00:18:07,147
+Ama her zaman native ile ihtiyaç duyabiliyoruz.
+
+78
+00:18:14,067 --> 00:18:26,067
+RIN olsun, ondan sonra işte FLUTTER olsun gibi pek çok böyle hibrit ortam hem iOS ortamına uygun hem de Android ortamına uygun. Mesela kod üretmenizi sağlayan ortamlar var ama...
+
+79
+00:18:26,387 --> 00:18:52,907
+Onların da bir sınırı var. Belirli işlemleri, mesela telefondaki, mobil cihazdaki diyelim belli sensörlerin belli özelliklerini manipüle etmeniz falan gerekirse doğal olarak o kadar derin şeyleri yapamayabiliyorsunuz. O zaman native bir dil kullanmanız, işte ne bileyim kotlin ne bir şeyler yazmanız falan gerekiyor olabilir. O yüzden bu ortamda, kullanılacak ortamda yine programlı dillerini seçerken önemli bir faktör olarak karşımıza çıkıyor.
+
+80
+00:18:54,387 --> 00:19:03,487
+çalışma koşulları, kullanım koşulları olarak düşünebilirsiniz. Bununla beraber programlamayı gerçekleştirecek olan personelin bilgi düzeyi.
+
+81
+00:19:03,827 --> 00:19:24,728
+Hani çok böyle efektif bir dil buldunuz ama kimse bilmiyor bunu yazmayı. E ne olacak? Doğal olarak biz zorlanacağız. Hem belki eğitim ihtiyacımız olacak. Ondan sonrasında bir öğrenme sürecimiz olacak. Sonrasında da belki iyi bildiğimiz bir dil kadar onu etkin kullanamayacağız. O yüzden personelin bilgi düzeyi de önemli.
+
+82
+00:19:31,220 --> 00:19:51,099
+Lisans bedeli kullanıcı başına, uygulama geliştirici başına bilmem kaç bin dolar. Ne yapacaksınız? Bir sürü yatırım yapmak zorunda kalacaksınız. Ekonomik fizibiliteniz değişecek belki ya da sarsılacak diyelim kar noktanız. Bu nedenle yine bu da başka bir seçim kriteri olarak karşımıza çıkıyor.
+
+83
+00:19:59,220 --> 00:20:10,280
+Böyle bir yerde çalışıyorsunuz diyelim. Siz dediniz ki, ooo biz bunu çok güzel, önceden de yaptığımız projeler vardı, işte .net core ile yazmıştık, onları şakır şakır kullanırız dediniz ama adam diyor ki,
+
+84
+00:20:10,932 --> 00:20:34,432
+Ben sadece sunucu tarafında PHP kullanıyorum, başka hiçbir şey kullanmıyorum. Kullanamazsınız, bunu mutlaka buna entegre edecek şekilde yazmalısınız, PHP ile yazacaksınız dedi. Ne yapacağız? O zaman tabii ki pek çok başka kriteri boş verip, direkt müşterinin gereksinimlerini karşılayacak şekilde bir programlama dili seçebiliriz.
+
+85
+00:20:35,155 --> 00:20:41,655
+Gördüğünüz gibi kodlamayı yapalım, en uygununu seçelim diyoruz ama bu en uygun her zaman en uygun olamayabiliyor.
+
+86
+00:20:41,655 --> 00:20:49,435
+Farklı kriterler hepsi bir arada etki ederek de bu dil seçimlerini ya da ortam seçimlerini etkileyebiliyor.
+
+87
+00:20:49,556 --> 00:20:59,955
+Doğal olarak kodlamayı da bunlar değiştirebilir. Bunlara dikkat etmek seçerken mümkün olunca bizim için optimum olanları seçmek daha doğru olacaktır.
+
+88
+00:21:00,852 --> 00:21:14,472
+Şimdi biz bunlara niye dikkat edelim, niye özenelim diyoruz hep kaliteyi arttırmak için aslında. Peki kalite ne demek? Özellikle yazılım kalitesi ne demek? Formal tanımı şu şekilde.
+
+89
+00:21:20,723 --> 00:21:36,183
+Geliştirme standartlarına ve beklenen tüm özelliklere tamamen uygun yazılım. Oh maşallah nasıl ya? Her şeye uygun olacak. İşlevsel gereksinimlere uygun olacak. Yani bunları karşılayacak. İstediğim her şeyi yapacak. Geliştirme standartlarına uygun olacak.
+
+90
+00:21:47,347 --> 00:22:07,927
+Tüm özelliklere de tamamen uygun bir yazılıma kaliteli yazılım diyoruz. İşlevsel olmayan özellikler ne? İşte performans, toplam kullanıcı sayısı ya da birim zamanda yapılan işlem garantisi gibi ya da birim zamanda okunan yazılan veri miktarının garanti edilmesi gibi pek çok işlevsel olmayan gereksinim.
+
+91
+00:22:09,407 --> 00:22:30,247
+Yazılım kalitesi dediğinizde tam olarak anlamanız gereken şey işlevsel olmayan gereksinimlerin kendisi. Tamamı. Tasarımı da zaten işlevsel olmayan gereksinimler etkiler ve değiştirir demiştik. Ben çok basit, tek sunuculu, güzel güzel çalışan bir tane uygulama geliştirebilirim. Bir business katmanı geliştirebilirim ama...
+
+92
+00:22:31,124 --> 00:22:48,583
+Mesela aynı anda bilmem kaç tane streaming yapabilecek kapasiteye sahip olması bekleniyorsa, bir video server gibi bir şey yaptığınızı düşünün, o zaman bütün tasarım değişir. Bir şekilde bunu dağıtmanız, paralelleştirmeniz falan gerekecek. Çok detayına oralara girmiyorum şu anda.
+
+93
+00:22:59,124 --> 00:23:04,683
+Bunu işte dağıtık bir mimarda falan kurgulamanız, tasarımını bu şekilde yapmanız gerekebilecek.
+
+94
+00:23:05,023 --> 00:23:11,443
+Bu nedenle aslında işlevsel olmayan gereksinimler bunları dediğim gibi kalite faktörlerine etkiliyor.
+
+95
+00:23:12,263 --> 00:23:14,683
+Bir dakikanızı rica ediyorum, kusura bakmayın.
+
+96
+00:24:40,084 --> 00:24:53,663
+Kusura bakmayın. Şimdi dediğim gibi yazılım kalitesi işlevsel olmayan gereksinimlerle biri bir ilişkili ve direkt onlardan etkileniyor ve onları karşılamak için aslında yaptığımız bütün eylemler ya da bütün başlıklar karşıladığımız.
+
+97
+00:24:54,364 --> 00:25:02,783
+Nedir bu kalite faktörleri? Bir yazılım kalitesi dediğimizde neler düşünmeliyiz ya da hangi neleri karşılamalıyız? Bir doğruluk.
+
+98
+00:25:03,571 --> 00:25:16,371
+Ne demektir doğruluk? Doğru çalışması, işlevsel gereksinimleri beklediğimiz gibi yapabilmesi, doğru girdiği aldığında doğru çıktığı üretebilmesi, yanlış çalışmaması.
+
+99
+00:25:17,011 --> 00:25:22,151
+İşte burada hata olmaması, bug olmaması gibi düşünebilirsiniz.
+
+100
+00:25:22,911 --> 00:25:30,291
+Ya da hata olacaksa da bunların düzgün bir şekilde kontrol edilip hatalı işlemlerin engellenmesi olarak da bağlayabiliriz.
+
+101
+00:25:31,571 --> 00:25:53,211
+Bir diğeri güvenilirlik, reliability. İşte sisteme ne kadar güvenebiliriz? Hangi stres altında bu çalışmaya devam edebilir? Bizim stres beklentilerimiz mesela bir T anında kaç öğrenci aynı anda ders seçebilir ya da kaç ders seçimine kadar güvenilir bir şekilde hizmet sunmaya devam eder?
+
+102
+00:25:53,599 --> 00:26:07,699
+Bir diğeri verimlilik, hizmeti sunarken ne kadar arkayı har vurup harmanzı vuruyor, mesela ne kadar bellek harcıyor, ne kadar CPU harcıyor ya da başka şeyler, başka kaynakları ne kadar harcıyor, bunların da mümkün olunca verimli olmaları beklenir.
+
+103
+00:26:07,699 --> 00:26:21,599
+Bir diğeri güvenlik, security, çok fazla bir şey söylemeye gerek yok. Yetkisiz işlem yapılmaması gerekir, ondan sonra yasal olmayan yollarla erişen.
+
+104
+00:26:21,599 --> 00:26:25,379
+İzin vermemesi gerekir gibi kullanışlılık.
+
+105
+00:26:25,824 --> 00:26:43,844
+Kendini açıklıyor. Saçma sapan kontroller ya da girdilerde bilmem nelerde acayip hareketler yapmam gerekmemesi gerekir. Hızlı bir şekilde, efektif bir şekilde girdileri benim ya da hizmetimi alabilmem, girdilerimi verebilmem ve hizmetimi alabilmem gerekir.
+
+106
+00:26:44,324 --> 00:26:53,784
+İşin sadece kullanıcı tarafı değil, teknik personel tarafı için de kalite faktörleri doğal olarak var. Bunlardan bir tanesi hata bulmak.
+
+107
+00:26:53,824 --> 00:27:08,163
+Biraz önce söylediğimiz o kodlama kriterlerine ne kadar uyarsanız, kıstasları ne kadar yerine getirirseniz bu kalite faktörünü o kadar aslında iyi karşılamış olursunuz. Bir hata oluştuğunda onun bulunması daha kolay olabilir.
+
+108
+00:27:08,163 --> 00:27:09,723
+Esneklik.
+
+109
+00:27:10,291 --> 00:27:20,151
+Değişen koşullara uyum sağlayabilme ve farklı koşullar altında, farklı şartlar altında da hizmet vermeye devam etmem olarak tanımlanır.
+
+110
+00:27:20,611 --> 00:27:27,231
+Sınama kolaylığı test, test etme. Bir testi yapabilmek için 40 liradan su getirmemeliyiz.
+
+111
+00:27:27,591 --> 00:27:35,131
+Tabi test otomasyon uygulamaları var, hani bu regresyon testlerini falan yapan özellikle. Bunlara uygun bir yazılım, daha kaliteli demektir.
+
+112
+00:27:38,451 --> 00:27:42,211
+Hem bir yazılımın farklı ortamlarda çalışması olarak da düşünebilirsiniz.
+
+113
+00:27:42,352 --> 00:27:44,011
+Farklı ortamlarda hizmet vermesi.
+
+114
+00:27:44,592 --> 00:27:51,632
+Hem de benim mesela oradaki bir modülü, oradaki bir birimi tekrar kullanılabilirdik de aslında bunu söyleyeceğim ama
+
+115
+00:27:51,632 --> 00:27:59,812
+hani bir API'yi mesela başka bir servisimde de kullanabilmem, başka bir uygulamamda da kullanabilmem, oraya bunu taşıyabilmem.
+
+116
+00:28:00,412 --> 00:28:06,272
+Tekrar kullanılabilirdik de yazılımın içindeki parçaların bu şekilde alınıp kullanılabilmesi.
+
+117
+00:28:06,451 --> 00:28:13,231
+Mesela bir sınıf var ya da işte bir adaptör grubunuz var. Onları alıp başka bir uygulamada da kullanmak.
+
+118
+00:28:14,692 --> 00:28:15,564
+Bağlanabilirlikte...
+
+119
+00:28:15,635 --> 00:28:38,855
+Ben dış sistemlere ne kadar ve hangi koşullarda bağlanabiliyorum, hangi kriterler gerekiyor bana bağlanabilmeleri için. Eğer çok nazlanıyorsam, şu olacak, bu olacak, bilmem ne protokolü olacak, port bilmem nesi şöyle olacak, ıvırı kıvırı bu olacak, 50 tane şey söylüyorsanız çok nazlanıyorsunuz.
+
+120
+00:28:43,635 --> 00:28:53,816
+API ile işte bilmem ne protokolü ile konuşuyoruz gibi sadece şunu şu formatta yolla yeter dediğinizde daha kolay bağlanabiliyorsunuz ve daha esnek oluyorsunuz.
+
+121
+00:28:53,816 --> 00:28:59,915
+İşte bunlar da sizi daha kaliteli bir yazılım, bir bilgi sistemi olduğunuzu gösteriyor.
+
+122
+00:29:00,296 --> 00:29:02,235
+Tabii ki bu başlıklar açısından.
+
+123
+00:29:11,635 --> 00:29:28,675
+Dendiğinde akla gelir. Hızlıca neler olduklarından da bahsettik. Zaten yazılım kalitesi ayrı bir ders konusu. O yüzden şu anda sadece deyip geçiyoruz. Böyle bir şey ve biz şu işlemleri düzgün yaparsak işte böyle kaliteli oluruz demeye çalışıyoruz sadece.
+
+124
+00:29:36,415 --> 00:29:50,336
+Özellikle ekiplerce geliştirilen bilgi sistemlerinde herkes ayrı telden çalabilir. Bunun homojen hale getirilmesi ve bunların kontrolü, yönetimi, denetimi zor olabilir.
+
+125
+00:29:50,875 --> 00:29:59,995
+Peki o zaman ben ne yapacağım? Mümkün olduğunca burada da tanımlı ve formal bir şekilde kitabına uygun olarak ve bunları da raporlayarak, belgeleyerek yürümekte fayda.
+
+126
+00:30:00,000 --> 00:30:27,859
+Ne yapacağız? Şöyle, daha uygulamayı, bilgi sistemini geliştirmeden bile önce, daha planlarken, yani bu ön inceleme safhasında bile aslında bizim bir yandan da özellikle yönetim kademesi olarak proje yöneticisi ya da işte ekip lideri, hani yönetici dediğimiz bir bilgi sistemi tarafı vardı ya, işte o taraf bir şey geliştirmesi lazım.
+
+127
+00:30:28,000 --> 00:30:44,700
+kalite kontrol yöntemi belirlemesi lazım. Yani ben bu sistem projesinde, bu bilgi sistemini geliştirme projesinde şu şu şu kalite kriterlerini biraz önce söylediğimiz faktörlerden işte şunları şu şekilde karşılamamızı garanti etmek için
+
+128
+00:30:45,107 --> 00:31:03,147
+Şöyle kontroller yapacağım. Bunun yordamı şu olacak diye bunu baştan yazması gerekir. Eğer kullanacaksa kalite kontrolü ile alakalı izleme ve takip metrik mesela ölçüm araçları bunların neler olacağında daha en başta planlarken belirlemesi gerekir.
+
+129
+00:31:03,147 --> 00:31:12,927
+Şimdi bunu belirlemeden zaten kalitenin kontrolü olmaz. Kaliteyi kontrol etmiyorsanız da zaten ölçemezsiniz. Yani kaliteli miyim değil miyim bunun hakkında bir yorum yapamazsınız.
+
+130
+00:31:13,107 --> 00:31:21,587
+Bu nedenle mutlaka kalite kontrol planınızın olması gerekiyor. Nasıl yapılacağını belirlemeniz gerekiyor.
+
+131
+00:31:22,036 --> 00:31:50,036
+Bu dediğim gibi yönetim kademesinin aslında derdi. Teknik personelin derdi değil çok fazla. Bunun dışında şimdi böyle bir planımız var diyelim. Kalite kontrolünü takip ediyoruz diyelim. Bilgi sistemini geliştirirken, yani böyle analizini yaparken, tasarımını yaparken, gerçekleştirmesini yaparken milestone dediğimiz şeyler tanımlamıştık ya. Kilometre taşları, durak noktaları. İşte böyle milestone'lar aslında tanımlanması gerekiyor. Kalite kontrol, gözden geçirme.
+
+132
+00:31:50,036 --> 00:32:17,715
+Gözden geçirme milestone'ları diyelim bunlara ve orada durup bir gözden geçirme, bir review yapmakta fayda var. Ne oldu? Ben adım adımda kalitenin sağlanıp sağlanmadığını, risklerin oluşup oluşmadığını ya da oluşup oluşamayacağını bir şekilde gözden geçirmeliyim ve eğer kötüye doğru giden bir şeyler olacaksa ya da ben bunu fark edebiliyorsam o andaki gözlemlerimle o zaman belki
+
+133
+00:32:18,036 --> 00:32:23,875
+Bazı şeyleri değiştirmem gerekebilir, revizyonlar yapmam, belki eklemeler, belki çıkarmalar yapmam gerekebilir.
+
+134
+00:32:24,235 --> 00:32:29,915
+Yani kaliteyi sağlamak için de süreç içinde de bunları kontrol etmeye devam etmek gerekiyor.
+
+135
+00:32:29,915 --> 00:32:39,135
+Bir diğer kalite sağlanması için gerekli unsur test. Bunu zaten test başlığında kısaca anlatmıştım.
+
+136
+00:32:40,852 --> 00:32:54,572
+Özellikle source koddan, yani kaynak kodlarından başlayarak modüller, bütün program, bütün uygulama, birlikte çalışması mutlaka değişik kademelerde test edilmesi gerekir.
+
+137
+00:32:56,932 --> 00:33:00,672
+Ve, evet, kodumuz doğru çalışıyor.
+
+138
+00:33:01,491 --> 00:33:10,451
+Yani şuradaki doğruluk kalite faktörünü mesela, belki verimlilik kalite faktörünü karşılayacak şekilde bu testlerden sonuçlarımızı aldık diyelim.
+
+139
+00:33:10,971 --> 00:33:20,511
+Ama hala acaba gerçekten benim istediğim şeyi yapıyor mu? Yani benim gereksinimlerimi karşılıyor mu, karşılamıyor mu? Bunları da mutlaka gözden geçirmek gerekiyor.
+
+140
+00:33:20,511 --> 00:33:29,491
+İşte bu da mesela UAT dediğimiz bir kabul testiyle yapılır. Gereksinimleri karşılıyor mu? Beklentilerimi yerine getiriyor mu?
+
+141
+00:33:29,491 --> 00:33:37,511
+Bunların da özellikle müşteri gözüyle ya da kullanıcı gözüyle gözden geçirilmeleri, bu testlerin sınavalarında yapılmaları gerekir.
+
+142
+00:33:38,003 --> 00:33:45,503
+Bunların hepsinde kafamıza göre değil, belirli önceden belirdiğiniz plan dahilinde yapmamız gerekir.
+
+143
+00:33:45,884 --> 00:33:57,303
+Dediğim gibi işte mesela ben süreci nasıl izleyeceğim, bu milestone'larda neler yapacağım, hangi milestone'larım olacak, risk oluşursa ne gibi önlemleri alacağım ya da ne gibi aksiyonlar yapacağım.
+
+144
+00:33:57,463 --> 00:34:01,644
+Böyle şeyleri yazdığım yere yazılım inceleme planı adı veriliyor.
+
+145
+00:34:01,743 --> 00:34:05,864
+Yani süreci incelediğim, geliştirme sürecinin tamamına baktığım plan.
+
+146
+00:34:06,003 --> 00:34:18,724
+Şöyle yapılacak, şu tarihlerde ya da şu zamanlarda, şu aşama bittiğinde, şu ekip şunu başardığında ya da şu ekip şunu sunduğunda gibi böyle milestone'lar tanımlayabilirsiniz. İnceleme planında da neler yapılacağını belirlemelisiniz.
+
+147
+00:34:19,923 --> 00:34:47,923
+Test planınız mutlaka olmalı. Bir yazılımın test planı olmadan yola çıkarsınız. Neyi nasıl test edeceğinizi ya da bir testin sonucunda belli şeyler olduğunda nasıl aksiyonlar alacağınızı bilemezsiniz. Kafası kesik tavuk gibi ortalarda dolaşırsınız. O yüzden bütün testlerinizin de bir plan dahilinde, bir sınama planı dediğimiz plan dahilinde yapabilirsiniz.
+
+148
+00:34:47,923 --> 00:35:07,623
+Yapılmaları gerekiyor. Bu da yine aslına bakarsanız yönetici tarafından takip edilmesi gereken başka bir iş. Son olarak da kabul muayene planı vardır. Bu da şey, ürün bitti, bilgi sistemini geliştirdik, müşteriye gösteriyoruz son halini.
+
+149
+00:35:08,083 --> 00:35:26,603
+Gerçekten gereksinimleri karşılıyor mu, karşılamıyor mu? Bunları gözden geçirdiğimiz kısım. Bu da kabul muayene planı. Yani aslında kabul testinin nasıl olacağı, hangi kriterlerde kabul edileceği, edilmeyeceği de yine bir plan dahilinde yazılıp formal hale getirilmesi gerekir.
+
+150
+00:35:32,211 --> 00:35:51,431
+Ahtapot gibi diyelim, çok kollu, 8 kollu değil de çok 11 kollu bir yaratık ve bütün kollular birbirine bir şekilde dolanmış durumda. Yani birini yaptığınızda tamam diyemiyorsunuz. Çünkü başka faktörler, başka başlıklar da yine o kalite başlığını bir şekilde olumluydu, olumsuz etkileyebiliyor.
+
+151
+00:35:52,596 --> 00:36:05,056
+Geldik şimdi teste. Kabul planlarından falan bahsettik. Yani bir yazılım kalitesinin sağlanması için atılması gereken adımlardan ya da çalışma şeklinin nasıl olması gerektiğinden bahsettik.
+
+152
+00:36:05,336 --> 00:36:08,836
+Şimdi de yazılımı nasıl test edeceğiz ya da niye test ediyoruz bunlara bakalım.
+
+153
+00:36:09,435 --> 00:36:14,096
+Doğal olarak testler aslında hatalarımızı bulmak için, ortaya çıkartmak için yapılır.
+
+154
+00:36:16,096 --> 00:36:17,336
+Ne gibi testler yaparız?
+
+155
+00:36:18,336 --> 00:36:18,935
+Şimdi.
+
+156
+00:36:19,795 --> 00:36:31,615
+Fonksiyonel testler yapabiliriz. Yani işlev testleri yapabiliriz. Ne yapar bu işlev testleri? Input, process, output döngümüz var ya, bunun doğru olup olmadığını test eder.
+
+157
+00:36:31,615 --> 00:36:42,455
+Ve uç değer analizde yapabilir. İşte mesela negatif sayılarda kök alabiliyor mu alamıyor mu mesela bunları kontrol ediyorsanız işlevsel bir test ya da fonksiyonel bir test yapmış olursunuz.
+
+158
+00:36:43,335 --> 00:36:45,315
+Performans testleri yapabilirsiniz.
+
+159
+00:36:46,099 --> 00:36:59,239
+Özellikle işte tepki süresi, bellek kullanımı, iletişim hızı gibi dar boğazları belirlemeye ve buradaki kaliteyi bozabilecek faktörleri ortaya çıkartmak için yapılan testlere de performans testleri deriz.
+
+160
+00:36:59,939 --> 00:37:04,679
+Dayanıklık testleri de yine belli, yazılım kalite kriterleri için aslında yapılır.
+
+161
+00:37:05,439 --> 00:37:08,819
+Aşırı bir yüklenme olduğunda sistem nasıl davranıyor, nasıl tepki veriyor?
+
+162
+00:37:11,248 --> 00:37:27,668
+Mesela network'ün band genişliği çok düştü. Ne oluyor? Bunu kompansiye edebiliyor mu? Yoksa yıkılıp gidiyor mu sistem? Kullanıcılar aşırı yüklendiğinde ne oluyor gibi stres testlerine de dayanıklılık testi, yani stres test adını veriyoruz.
+
+163
+00:37:28,244 --> 00:37:54,604
+Bir de yapısal testlerimiz var. Bunlar tamamen iç işletim testleri aslında. Burada bütünleme testi falan diyeceğiz bunlara şimdi. Fonksiyonel test gibi ama bütün parçaların, bütün birimlerin, bütün modüllerin mantıksal çalışma yolları, senaryolar düzgün işliyor mu, oradaki sorumluluklar düzgün şekilde yerine getirilip getirilmiyor mu bunları test ettiğimiz başlığa da yapısal testler adını veriyoruz.
+
+164
+00:37:58,195 --> 00:38:10,295
+Yani bunlar farklı farklı test çeşitleri ama esasen ben bir bilgi sistemini test ediyorsam, sınamasını gerçekleştiriyorsam hangi testleri yaparım?
+
+165
+00:38:10,695 --> 00:38:15,775
+İşte bu bahsettiğimiz mesela performans dayanıklılık gibi testler aslında sistem testleridir.
+
+166
+00:38:15,775 --> 00:38:18,815
+Tamam, esas başlıklar bunlardır.
+
+167
+00:38:18,996 --> 00:38:20,775
+Şimdi temelde...
+
+168
+00:38:21,652 --> 00:38:41,072
+Bu yapmamız gereken, mutlaka yapmamız gereken, proje olsun olmasın, bilgi sistemi olsun olmasın, aslında yazdığımız bütün kodlar için yapmamız gereken olmazsa olmaz bir test var. Bu da birim testi ya da ünite testi, unit testi. Bunu ilk önce mutlaka yapmalıyız bütün kodlar için.
+
+169
+00:38:41,619 --> 00:39:06,699
+Sonrasında bir bilgi sisteminde bütünleme testi yapılır. Bu şuradaki yapısal testler aslında düşünebilirsiniz. Hani bu şekilde düşünebilirsiniz. Hem yapısal hem fonksiyonel şurada karışık. Onaylama testi yapılır. Acceptance test, user acceptance test olarak da bilinir. Ve sistem testleri işte performans, dayanıklık gibi testler de sistem testi olarak burada son aşamı da karşımıza çıkar.
+
+170
+00:39:07,072 --> 00:39:18,872
+Bunu böyle bir spiralle genellikle gösteririz. Bunlar hangi safayı karşılıyor acaba? Yani biz neyi test ediyoruz bu testi yaptığımızda? Bunu şu şekilde böyle bir salyangoz gibi ifade edebiliriz.
+
+171
+00:39:18,872 --> 00:39:29,711
+Şimdi önce sistem geliştirme sürecinin tamamı NTPD. Gereksinimler, tasarım ve kodlama yani analiz, tasarım, kodlama diye gidiyor.
+
+172
+00:39:31,699 --> 00:39:44,019
+Ben ortada, en içten başlayalım. Kodlamayı aslında virim testleriyle karşılıyorum. Yani ben kodlamanın sınamasını buradaki unit testlerle gerçekleştiriyorum.
+
+173
+00:39:45,139 --> 00:39:57,659
+Eğer tasarımımı bir şekilde onaylamam gerekiyorsa, sınamam gerekiyorsa o zaman yaptığım test bütünleme testidir. Yani bir arada benim parçalar düzgün çalışacak mı çalışmayacak mı?
+
+174
+00:39:58,068 --> 00:40:07,488
+Benim ortaya koyduğum çözüm düzgün bir çözüm mü? Gerçekten işlevsel bir çözüm mü? Yoksa saçma sapan bir çözüm mü? Bunu bütünleme testiyle ortaya çıkartmış olurum.
+
+175
+00:40:07,488 --> 00:40:14,488
+Sanki şey gibi düşünün, bir araba motoru yapıyorsunuz, önce her bir elemanı, her bir parçayı...
+
+176
+00:40:14,960 --> 00:40:28,739
+Kendi içinde test ediyorsunuz. Baskısını, sıcaklık dayanımını, sıvı dayanımını, patlama şeyini, germe, çekme, streslerini falan. Bunları birim testinde gerçekleştiriyorsunuz.
+
+177
+00:40:29,440 --> 00:40:35,619
+Ama ne zamanki o motorun bütün parçalarını bir araya getirdiniz, ilk çalıştırmayı yapıyorsunuz diyelim.
+
+178
+00:40:35,619 --> 00:40:42,639
+Acaba bu parçalar bir arada düzgün çalışıyor mu? Buna bakıyoruz. Benim de yazdığım sınıflar, modüller.
+
+179
+00:40:42,960 --> 00:40:52,320
+Servisler düzgün bir şekilde bir arada çalışıyor mu çalışmıyor mu bütünleştiğinde doğru oluyor mu olmuyor mu buna bakarım. Bütünleme testiyle.
+
+180
+00:40:54,980 --> 00:41:02,099
+Gerçekten tamam hadi diyelim ki düzgün çalışıyorlar yani düzgün bir tasarım yapmışım. O zaman şunu test etmem gerekir sırada. Ben
+
+181
+00:41:02,496 --> 00:41:11,875
+Düzgün çalışan bir ürün ortaya koydum da, yani bunu test ettim de, acaba ürünü doğru yaptım mı? Doğru ürünü yaptım mı acaba?
+
+182
+00:41:12,320 --> 00:41:22,400
+Ne demek bu? Gereksinimleri karşılayan, beklentileri yerine getiren bir ürün yaptım mı, yapmadım mı? İşte bunu da kullanıcı onay testi, onaylama testiyle karşılarız.
+
+183
+00:41:22,400 --> 00:41:39,400
+Bu da tam olarak sistem gereksinimlerine karşılık gelir. Yani ben gereksinimlerimi, işte use case'lerimi mesela ya da business requirement dokümanımda yazdıklarımı, oradaki işte proseslerimi acaba gerçekten...
+
+184
+00:41:40,211 --> 00:41:48,771
+Beklentiyi karşılayacak şekilde yapabildim mi, yapamadım mı? Hizmetim düzgün mü, değil mi? Bunu Acceptance Test ile sınarım.
+
+185
+00:41:49,471 --> 00:41:58,831
+Ve sistemin geliştirme sürecinin tamamı içinde, geri kalan yazılım kalite kriterlerini mesela test etmek için de sistem testlerini gerçekleştiririm.
+
+186
+00:41:59,251 --> 00:42:02,731
+İşte dayanıklılık testi olsun, performans testi olsun gibi.
+
+187
+00:42:04,436 --> 00:42:14,016
+Bunlar da sistem geliştirme sürecinin tamamını kapsayan ya da tamamının ısınlanmasını sağlayan test tipimiz, test adımımız.
+
+188
+00:42:15,636 --> 00:42:25,976
+Tamam, burada tekrar yazmışız, işte birim testi her modüle, her birime ayrı ayrı uygulanır, kod doğruluğu test edilir dedik. Uzun uzun anlattık.
+
+189
+00:42:26,387 --> 00:42:46,528
+modüller bağlanarak sistem bir araya geldiğinde bütünleme testi yapılır. Bunu bütün parçalar bir araya geldikten sonra bir bütün olarak bir kerede de yapabilirsiniz ama çok zor. Genellikle artımlı olarak yapmak, modüller geliştikçe, bir araya geldikçe bu testi yapmak daha doğru olabilir.
+
+190
+00:42:47,251 --> 00:43:00,192
+Onaylama testinde gereksinimleri ne kadar karşılıyoruz, bunlara bakıyoruz dedik ve sistem testinde de bütün üyeler hep birlikte test ediliyor. Mesela hatalar için düzeltme yapılacaksa bunlar ortaya çıkmış oluyor.
+
+191
+00:43:00,608 --> 00:43:09,688
+Güvenlik testleri, dayanıklılık testleri, performans testleri, darboğaz analizi gibi testlerin hepsi de genel sistem testleri olarak isimlendiriliyor.
+
+192
+00:43:09,688 --> 00:43:24,887
+Bu dört adım ve içinde yaptığım çeşitli testler benim sürecimin tamamını, bütün adımlarını karşılamak için, bunların hepsinde doğru şeyler ürettik mi bunları görebilmek için yaptığımız testler.
+
+193
+00:43:27,360 --> 00:43:38,059
+Gerçekleştirdik, kodladık. Bir yandan testlerimizi, hem birim testlerimizi, hem birim bütünleme testlerimizi yaptık. Sonrasında ortaya çıkan üründeki acceptance testleri de yaptık.
+
+194
+00:43:38,452 --> 00:44:03,332
+Bazı hatalar bulundu, bazı hatalar sadece kodda vardı, onlar düzeltildi. Bazı hatalar tasarımsal hatalardı, tasarım güncellendi, gerçekleştirme güncellendi, bir daha test edildi. Tamam dendi ya da değil dendi. Değilden ise bir daha revizyon gibi. Böyle böyle iteratif bir şekilde tekrar tekrar tekrar testler ile ya da işte bir acceptance test yapıldı.
+
+195
+00:44:06,452 --> 00:44:21,692
+Notları aslında böyle hesaplamıyoruz. Burada şunu unutmuşuz. Dönem bazlı bilmem ne yapmamız lazım. O kötü. Niye? Çünkü bizim analize kadar geri gidip problemde değişiklik yapmamız, problem uzayında değişiklik yapmamız gerekecek. Bunun maliyeti her zaman için daha fazla olacak.
+
+196
+00:44:21,692 --> 00:44:32,952
+Bundan sonra dön başa işte analizleri değiştir, tasarımı ona göre değiştir, kodlamaları gerçekleştirmeleri ona göre güncelle, tekrar bütün hepsinin testlerini yap. Doğal olarak değiştiyse bir daha test etmelisiniz.
+
+197
+00:44:33,327 --> 00:44:47,627
+kabul görene kadar, kullanıcı kabul edene kadar da bu testler gerçekleştirildi ve nihayetinde beklenen proje sonucu bilgi sistemi, hizmeti sağlayacak bilgi sistemi geliştirildi.
+
+198
+00:44:48,052 --> 00:45:15,192
+Tamam, çok güzel. Artık elimizde nur topu gibi yeni bir sistem var. Testlerden de başarıyla çıktı. Dediğim gibi hani düzeltilecek, eklenecek, çıkarılacak şeyler de yapıldı ve nur topu gibi bir yeni sistemimiz oldu. Hadi bakalım bunu çalıştıracağız. Nasıl çalıştıracağız? Biz bunu nasıl geçeceğiz? Nasıl devreye alacağız acaba? Bu da böyle lap diye genellikle olmuyor. Yani hani indir, egzeyi, bas şeye, çift tıkla.
+
+199
+00:45:16,052 --> 00:45:33,892
+Next, Next'de ondan sonra Run'de her şey bu kadar basit ve kolay olmuyor tabii ki. Yeni sisteme geçişinde çeşitli adımları var. Şimdi öncelikle ben ön tasarımda donanımları falanları falanları kesinleştirdim ya fizibiliteden gene. Bunların hepsinin kurulumlarının bir kere yapılması lazım.
+
+200
+00:45:35,603 --> 00:45:53,103
+Artık geliştirme değil, işletim ortamındayız. Yani production dediğimiz ortamdayız. Bu donanımların kurulması, hatta bunların da testlerinin yapılması lazım. İletişim altyapısının oluşturulması lazım. Network ve belki başka bağlı sistemler. Bunların testleriyle birlikte yapılması lazım.
+
+201
+00:46:01,460 --> 00:46:18,500
+Ya da başka ortamlarda tuttuğumuz veriler var. Bu verileri bir şekilde yeni sisteme de tanıtmamız, aktarmamız lazım. Bu işlemde başlı başına başka bir bazen proje olarak ele alınabiliyor. Data Migration Projesi olarak isimlendiriliyor bunlar da.
+
+202
+00:46:18,500 --> 00:46:27,340
+İşte mesela eski sistemdeki veri tabanının yeni sisteme bir şekilde entegre edilmesi, aktarılması. Bunlar çok dertli işlerdir aslında.
+
+203
+00:46:29,396 --> 00:46:36,215
+Hakikaten bazen bu dönüşümler için bile yeni bilgi sistemleri, geçiş projeleri yaratılması gerekebiliyor.
+
+204
+00:46:36,456 --> 00:46:42,255
+Büyük özellikle iş yerlerinde ya da holding boyutundaki yerlerde.
+
+205
+00:46:42,255 --> 00:46:47,235
+Ve bununla birlikte eğitim çalışmalarının yapılması lazım.
+
+206
+00:46:48,635 --> 00:46:51,396
+Pardon. Nedir eğitim?
+
+207
+00:46:53,115 --> 00:46:53,936
+Bir kere...
+
+208
+00:46:53,936 --> 00:46:59,255
+Bu sistemi kimler kullanacaksa onları eğitmeliyiz. Bunlara uç kullanıcılar, son kullanıcılar adını veriyoruz.
+
+209
+00:47:00,536 --> 00:47:06,096
+Yani sistemin operatörlerine eğitim, nasıl kullanacaklarına, neyi nasıl yapacaklarına dair eğitim vermeliyiz.
+
+210
+00:47:06,896 --> 00:47:15,755
+Yetmez, yönetime de eğitim vermeliyiz. Hani yönetim ne gibi raporlar alabiliyor, ne sorgulamalar yapabiliyor, ne gibi dashboardları var gibi düşünelim.
+
+211
+00:47:16,851 --> 00:47:24,552
+Hani roller nelerdir, güvenlik nedir, falandır, filandır diye üst yönetimi de bilgilendirmemiz lazım, eğitmemiz lazım.
+
+212
+00:47:25,108 --> 00:47:48,168
+Ve sistemin ayakta kalması ve devrede kalması için teknik personel yani destek personeli kimse bunları da eğitmemiz lazım. Yani nasıl destek vereceklerini biliyor olmaları lazım. Gördüğünüz gibi tek bir kullanıcıya değil, sisteme değen bütün taraflara da bu konuda yeni bilgi sistemi hakkında eğitimler planlanması ve bunların tanımlanarak yapılması gerekiyor.
+
+213
+00:47:49,012 --> 00:48:01,952
+Artık bunlar bittiğinde, bu kadar işi yapabildiysek eğer, nihayetinde yeni sistemi geçip kullanmaya başlayabiliriz ve yeni sistemden hizmet almaya başlayabiliriz.
+
+214
+00:48:02,331 --> 00:48:06,472
+Peki, nasıl geçeceğiz biz bu yeni sisteme? Ne gibi yöntemler, ne gibi yaklaşımlar var?
+
+215
+00:48:06,472 --> 00:48:14,092
+Şimdi bunlara bakalım. Temelde 5 farklı geçiş yöntemi tanımlanmıştır.
+
+216
+00:48:14,400 --> 00:48:19,980
+Şimdi bunların ne olduklarını, artılarıyla, eksileriyle bir üzerinden geçelim.
+
+217
+00:48:19,980 --> 00:48:21,880
+Nedir? Önce isimlerini tanıyalım.
+
+218
+00:48:21,960 --> 00:48:33,139
+Bir, doğrudan geçiş, iki, paralel geçiş, üç, dereceli geçiş, dört, prototip geçiş ve beş, dağıtılmış geçiş diye beş tane yeni sisteme geçiş yöntemimiz var.
+
+219
+00:48:33,740 --> 00:48:37,940
+Şimdi bunları elimden geldiğince böyle şeklen çizmeye çalıştım. Anlatalım.
+
+220
+00:48:38,483 --> 00:48:58,304
+Burası zaman. Tamam mı? Şöyle kalemimizi alalım elimizde. Ve şuradan böyle ok çizelim. Tamam mı? Zaman ekseni bu. Şuraya da T yazalım. Tamam mı? Şurası sıfır diyelim. Şurası da işte T'ye doğru gidiyor.
+
+221
+00:48:59,027 --> 00:49:06,567
+Şimdi ben burada eski sistemi kullanıyorum, kullanıyorum. Bütün işlerimi eski sistemle yapıyorum gördüğünüz gibi. Yeni sistemde geliştiriliyor bir yerlerde burada.
+
+222
+00:49:06,567 --> 00:49:24,527
+Ve tam olarak şurada, bunu da kalın çizelim. Tam olarak şu anda şöyle ben pat diye eski sistemin şalterini indiriyorum, kapatıyorum, devreden çıkartıyorum.
+
+223
+00:49:24,831 --> 00:49:46,532
+Mesela 24 Mayıs akşamı mesai bitiminde eski sistemin fişini çekiyorum, yeni sistemin fişini takıyorum ve 25 Mayıs sabah işe geldiğimizde artık bütün işlerimizi bundan sonra yeni sistemle yapıp çalışmaya devam ediyorum.
+
+224
+00:49:46,532 --> 00:49:49,512
+Şimdi bunun güzelliği ne? Yani iyi yanı ne?
+
+225
+00:49:49,871 --> 00:50:02,811
+Eski sistemle artık uğraşmak zorunda değilim. Artık tamamen yeni sistemle muhatap. Bir işi iki kere falan yapmak zorunda kalmayacağım. İki ayrı kayıt tutmak zorunda kalmayacağım. Bu güzel bir şey ama tabii bu da riskli.
+
+226
+00:50:03,731 --> 00:50:14,571
+Yeni sistemde ne kadar test edilmiş olursa olsun belki yanlış çalışan bir şeyler var, hatalar var ya da gerçekten gözden kaçmış noktalar var.
+
+227
+00:50:15,443 --> 00:50:43,264
+Fark edilmemiş eksikler var. Böyle şeyler varsa ve bir de sizin bilgi sisteminde mesela işinizi etkileyecek derecede önemli bir şey çıkarsa o zaman patlarsınız. Değil mi? Yani hiçbir eski sisteme dönüşünüz de yok. Ne yapacaksınız? Yeni sistemde bir şekilde o hataların düzelmesini ya da o yanlış çalışmanın düzeltilmesini sağlayacaksınız. O zamana kadar da işleriniz ya bozuk olacak ya sekte yoruyacak, çalışamayacaksınız gibi.
+
+228
+00:50:43,443 --> 00:51:09,923
+Sıkıntılar yaşanabilir. Yani böyle küt diye geçmek biraz tehlikeli olabilir. E o zaman ne yapalım? Direkt geçmeyelim, paralel geçelim hocam diyebiliriz. Nasıl olacak bu? Şimdi burada da yine aslına bakarsanız bir zaman çizelgesi şöyle var, gidiyor ve burada fark ne? Fark şu, ben şöyle şurayı tarayalım.
+
+229
+00:51:11,347 --> 00:51:33,887
+T0 anından bir T1 anına kadar, yani şu kadar bir kısımda, şuraya T0 yazalım, şuraya da T1 yazalım, T0'dan T1'e kadar, işte mesela atıyorum, işte 1 Haziran'dan 30 Temmuz'a kadar, 31 Temmuz'a kadar her neyse,
+
+230
+00:51:37,523 --> 00:51:42,103
+Hem de yeni sistemi aynı anda eş zamanlı olarak kullanırım.
+
+231
+00:51:42,643 --> 00:51:46,763
+Bu neyi getirir? Bakın burası aslında benim bir backup alanım.
+
+232
+00:51:47,092 --> 00:51:57,252
+Ben bu kadar süre içinde yeni sistemde yanlışlar, eksikler falanlar filanlar bulabilirim. Bunları bulursam da etkilenmem çünkü eski sistemde de aynı işleri yapmaya devam ediyorum.
+
+233
+00:51:57,952 --> 00:52:05,572
+Ve ne zaman artık T1'e kadar bunların hepsini bitirdim, tamamlattırdım ve yeni sistem gerçekten düzgün çalışmaya başladığını biliyorum.
+
+234
+00:52:05,572 --> 00:52:15,092
+O zaman ben burada eski sistemi sonlandırabilirim, fişini çekebilirim. Yeni sistem zaten bir süredir kullanılıyordu. Buradan böyle hayatını tamamen saygı.
+
+235
+00:52:15,092 --> 00:52:17,792
+Sadece yeni sistemle devam edebilirim.
+
+236
+00:52:18,452 --> 00:52:20,532
+Bunun güzelliği bir şeyiniz var.
+
+237
+00:52:20,832 --> 00:52:24,052
+Tampon bölgeniz var ve kendinizi koruma altında tutuyorsunuz.
+
+238
+00:52:24,403 --> 00:52:44,184
+Aynı işler eski sistemde de bir süre daha yapılıyor. Bu şekilde yeni sistem patlarsa, çatlarsa, eksiği, yediği varsa da ben eski sistemle şuradaki T1'i biraz daha öteleyerek belki devam edip hizmetimde aksatma yaşamadan bir şekilde bilgi sistemi kullanabilirim.
+
+239
+00:52:48,032 --> 00:52:52,112
+Aynı işi iki kere yapacaksınız. Mesela işte sipariş gireceksiniz sisteme.
+
+240
+00:52:52,735 --> 00:52:55,336
+Hem eski sisteme hem yeni sisteme gireceksiniz.
+
+241
+00:52:55,635 --> 00:52:59,036
+İşte ne bileyim kargo bilmem nesini yapacaksınız bilgisini.
+
+242
+00:52:59,576 --> 00:53:02,036
+Hem eski sistemde hem yeni sistemde yapmalısınız gibi.
+
+243
+00:53:02,036 --> 00:53:08,516
+Tabi bunlardan bir tanesinin hangisinin aslında gerçek hizmet veren sistem olduğunu da seçmeniz gerekecek.
+
+244
+00:53:08,675 --> 00:53:10,115
+Genellikle eski sistem yaşatılır.
+
+245
+00:53:10,615 --> 00:53:16,856
+Yani burası bir çeşit test, canlı test, saha testi alanı gibi düşünebilirsiniz.
+
+246
+00:53:17,356 --> 00:53:19,836
+Bu geçişe de paralel geçiş adını veriyoruz.
+
+247
+00:53:21,108 --> 00:53:29,688
+Şimdi bu yorucu tabii bu kadar süre herkes iki iş yapacak, aynı işi iki kere yapacak, iki kat yapacak diyelim.
+
+248
+00:53:30,248 --> 00:53:34,927
+Bunun yerine biraz daha bunu iyileştiremez miyiz? İyileştirebiliriz, dereceli geçiş yapabiliriz.
+
+249
+00:53:34,927 --> 00:53:44,548
+Yakında bir yaklaşım vardır. Nedir dereceli geçiş? Şöyle ben şurayı yine şöyle çizelim.
+
+250
+00:53:45,844 --> 00:53:47,944
+Tarayalım şu alanı şöyle.
+
+251
+00:53:48,744 --> 00:53:50,044
+Tamam mı? Evet.
+
+252
+00:53:50,604 --> 00:53:53,064
+Ve yine bunun bir tarafına işte T0 yazalım.
+
+253
+00:53:54,004 --> 00:53:54,464
+Pardon.
+
+254
+00:53:57,364 --> 00:53:58,544
+Kalemi alamadık.
+
+255
+00:53:59,044 --> 00:54:01,164
+T0 yazalım. Şuraya da T1 yazalım.
+
+256
+00:54:02,144 --> 00:54:06,184
+Şimdi bakın. Şu anda en çok, yani bütün her şey ile eski sistem kullanılıyor.
+
+257
+00:54:06,364 --> 00:54:08,104
+Tamam mı? Böyle çizgiler çizeyim.
+
+258
+00:54:08,604 --> 00:54:08,944
+Şuraya.
+
+259
+00:54:10,444 --> 00:54:11,844
+Bunlar da aslında benim mesela...
+
+260
+00:54:12,563 --> 00:54:18,083
+Hizmet noktalarım olsun, servislerim olsun, birimlerim olsun, modüllerim olsun. Tamam.
+
+261
+00:54:18,496 --> 00:54:32,896
+Fatura kesme, siparişi bilmem ne yapma, üretimi planlama, bordroları hazırlama, ıvırı kıvır yapma, her neyse makine kontrolleri, izin takibi ne varsa aklınıza gelen bilgi sistemlerinde neler varsa bunlar.
+
+262
+00:54:32,896 --> 00:54:40,776
+Şimdi ben T0 anında yeni sistemin belirli mesela modüllerini ya da belirli özelliklerini devreye alıyorum.
+
+263
+00:54:41,072 --> 00:55:01,731
+Tamam, sadece onları kullanıyorum. Şöyle bir şey çizeyim şöyle. Tamam, şöyle bir şey kullanmaya başladım. Bu büyük bir ihtimalle en basit, en risksiz, en fazla bağlantısı olmayan, tek başına hizmet verebilen bir parça. Artık ben o hizmetimi, o mesela servisimi sadece yeni sistemle ama geri kalan her şeyi eski sistemle yaparım.
+
+264
+00:55:02,228 --> 00:55:09,248
+Sonra, bir zaman daha sonra yeni sistemde başka yeni özellikleri kullanmaya başlayıp eski sisteminin o özelliklerini kapatırım.
+
+265
+00:55:10,088 --> 00:55:13,288
+Böyle böyle böyle, adım adım adım adım.
+
+266
+00:55:13,684 --> 00:55:32,684
+Artık birim birim, modül modül diyeyim, yeni sistemi daha fazla kullanmaya başlarım ve eski sistemi de devreden çıkartırım. Ne zamana kadar? Şuradaki T1'e kadar. Ben bu ana geldiğimde artık şuradan sonra tamamen yeni sistemimle bütün hizmetlerimi sunmaya ve bunun bütün modüllerini kullanmaya başlarım.
+
+267
+00:55:32,960 --> 00:55:36,899
+Ve o anda da artık eski sistemin fişini çekmiş olurum.
+
+268
+00:55:37,339 --> 00:55:49,439
+Böyle biraz daha en az riskliden en çok riskliye doğru eski sistemi yavaş yavaş terk etmek şeklinde bir geçişte dereceli geçiş olarak karşımıza çıkar.
+
+269
+00:55:49,807 --> 00:56:15,807
+Bunun artısı en azından aynı işi iki kere yapmak zorunda kalmıyoruz o birim için. Fakat eksisi de şu, iki sistemin bir şekilde birbirleriyle uyumlu olmaları gerekiyor. Yani ben siparişi eski sisteme girerken faturayı yeni sistemden kesebiliyor olmam lazım. Bunların bir şekilde hani belki bir ortak veritabanı, belki birbirinin veritabiliyorsa görebilme ya da erişebilme, kullanabilme gibi yeteneklerinin olması gerekebilir.
+
+270
+00:56:16,208 --> 00:56:27,268
+Bu da belki ekstra geliştirme gerektirecektir. Yani her zaman bunu direkt olarak yapamayabiliriz. Eğer böyle bir uygunluk varsa, evet dereceli geçiş gerçekten güzel bir geçiş olarak karşımıza çıkar.
+
+271
+00:56:28,868 --> 00:56:42,208
+Dördüncü yeni sisteme geçiş yöntemimiz, prototip geçiştir. Bu da şudur, aslına bakarsanız doğrudan ve paraleli biraz birleştirebilir miyiz acaba? Doğrudan ve dereceliği böyle bir araya...
+
+272
+00:56:42,452 --> 00:56:45,711
+Hibrit bir şekilde getirebilir miyiz acaba yaklaşımıdır?
+
+273
+00:56:46,231 --> 00:56:51,412
+Şimdi burada yine şurada bir T anı görüyorsunuz.
+
+274
+00:56:52,632 --> 00:56:55,552
+Hemen okumuzu çizelim. Şurada bir T anımız var.
+
+275
+00:56:56,632 --> 00:56:59,112
+Bu ana kadar her şeyimizi eski sistemle yapıyoruz.
+
+276
+00:57:00,372 --> 00:57:03,831
+Bu arada aslında şunu şöyle çizmesek daha doğru olur.
+
+277
+00:57:05,172 --> 00:57:06,992
+Şöyle çizmek istiyorum.
+
+278
+00:57:06,992 --> 00:57:08,372
+Bunu.
+
+279
+00:57:09,139 --> 00:57:32,980
+Sanki şu sıfırdan başlayıp şöyle bir şey yapsak daha doğru olabilir. Tamam. Yani bu kadar abartmayalım. Prototipimiz şeyde kalsın. Şöyle bir şey olsun olduğunu düşünsek daha doğru aslında düz çizgi yerine. Hiçbir şeyden başlayıp yavaş yavaş prototip artıyor. Yani prototip son ürüne doğru evriliyor diyelim. Tamam mı?
+
+280
+00:57:33,331 --> 00:57:40,271
+Ben bu kadar süre içinde aslında bütün yine gerçek işimi, hizmetimi eski sistemimle yapmaya devam ederim.
+
+281
+00:57:40,871 --> 00:57:51,132
+Fakat bir yandan da eş zamanlı olarak, aynı şurada hani T0'dan T1'e kadar her işi çarpı iki yapmıştım ya, bir yandan da buradaki benzer bir şekilde belli işleri,
+
+282
+00:57:51,132 --> 00:57:59,371
+hem eski sistemde zaten yapıyorum, bunu kesinlikle yapıyorum, fakat prototip üzerinde de yapmaya başlıyorum.
+
+283
+00:57:59,699 --> 00:58:04,079
+İtki de daha fazla. Yani şuradaki eğriyi şuraya şöyle yaydığımızı düşünelim.
+
+284
+00:58:04,755 --> 00:58:24,955
+Şuraya uyguladığımızı düşünelim ya da tamam. Ne olmuş oluyor böylece? Ben bu prototipi evrimleştiriyorum, evrimleştiriyorum. En sonunda bu T anına geldiğimde artık bunun bütün her şeyiyle eski sistemdeki bütün gereksinimlerimi daha iyi bir şekilde beklentilerimle birlikte karşıladığını görüyorum ve ikna oluyorum.
+
+285
+00:58:24,955 --> 00:58:31,955
+Ya da böyle bir aşamaya geldiğim zaman artık diyorum ki ben prototipimi yeterince olgunlaştırdım.
+
+286
+00:58:32,884 --> 00:58:36,824
+Varsa hataları bilmem neleri de bu prototip üzerinde gördüm ve giderdim.
+
+287
+00:58:37,284 --> 00:58:49,163
+Aynı burada olduğu gibi çat diye eski sistemin fişini çekip, şuraya çarpıyı koyup artık bundan sonra yeni sistem ile bütün işlevselliği gerçekleştiririm.
+
+288
+00:58:49,163 --> 00:58:57,643
+Yani şuradaki paralel geçişteki iki işi aynı anda yapma eş zamanlı hem yenide hem eskide yapma ile.
+
+289
+00:58:58,195 --> 00:59:12,815
+Dereceli geçişin böyle modül modül birim birimini bir araya getirip onu eski sistemin doğrudan geçişinin sonuna kadar dediğim gibi işte burada şöyle arttırarak kullanmak ya da bunu buraya yaymak olarak düşünebilirsiniz.
+
+290
+00:59:13,248 --> 00:59:34,807
+Prototip geçişte bu bir prototiptir. Dediğim gibi şu T anına kadar aslında eski sistem esas o olandır. Eski sistemi kullanmaya bu şekilde hizmet vermeye devam ederiz ama bir angarya olarak diyelim bir yük olarak da yeni sistemin prototipini evrimleştirip en sonunda gerçekten olgunlaştığında yeni sistem olarak yolumuza devam etmemiz gerekir.
+
+291
+00:59:35,668 --> 00:59:56,867
+Sonuncusu da dağıtılmış geçiş. Bu biraz diğerleri kadar, aslında bu ilk dördü temel geçiş yöntemleri. Bu biraz uydurulmuş bir geçiş yöntemi. Ne demek bu? Aslında şuradaki dereceli geçişi merdiven haline getirmişiz. Görüyor musunuz böyle? Bu ne demek biliyor musunuz? Şu, bunları birimlerim olarak, iş birimlerim olarak düşünün.
+
+292
+01:00:00,000 --> 01:00:22,780
+Ne bileyim, insan kaynakları yeni sisteme geçecek. Ondan sonra sipariş ya da pazarlama yeni sisteme geçecek. Ondan sonra satışçılar yeni, satış işlemlerimi yeni sisteme alacağım. Böyle şey, departman departman. Sonrasında ne bileyim depo. Sonra üretim. İşte en son muhasebe geçsin gibi.
+
+293
+01:00:23,347 --> 01:00:31,927
+Benim ayrı iş birimlerimi, ayrı departmanlarımı teker teker yeni sisteme alıyorsam buna da dağıtılmış geçiş adı veriliyor.
+
+294
+01:00:32,047 --> 01:00:40,188
+Tabii yine dereceli geçişte olduğu gibi eski sistem ve yeni sistemlerin bir şekilde uyumlu olarak bir süre birlikte çalışabilmeleri gerekecek.
+
+295
+01:00:40,188 --> 01:00:48,047
+Hani dedim ya insan kaynaklarındaki elemanlar yeni sistemi kullanıyor ama işte stokçular eski sistemde.
+
+296
+01:00:48,128 --> 01:01:04,827
+Şimdi stokçu şey yapacak ya hani izin girecek mesela ya da hastalık raporu girecek onu nasıl yapacak? Bunların ikisinin birlikte bir şekilde çalışabiliyor olmaları esas. Yani ben buraya girdiğimde buradaki yeni sistemde insan kaynaklarının o hizmetleri düzgün bir şekilde sürdürebilmesi gerekir.
+
+297
+01:01:04,827 --> 01:01:13,467
+Burada da yine şu bölgede bir arada çalışma problemi doğacaktır ama fark şu dediğim gibi.
+
+298
+01:01:14,164 --> 01:01:40,864
+Departman departman geçelim. Böylece en azından her departman kendi içinde bir kere de geçtiğinde biraz daha departman içi sıkıntılar ya da iki iş yapma problemi ortadan kaldırılmış olur. Böyle şey departman bazında doğrudan geçiş diyelim. Şurada bir doğrudan geçiş var, şurada bir doğrudan geçiş var, şurada bir doğrudan geçiş var gibi düşünebilirsiniz bunu.
+
+299
+01:01:42,771 --> 01:01:50,891
+Evet, bunlar da yeni sistemin nasıl devreye alınacağıyla alakalı yeni sisteme geçiş çeşitleri, yöntemleri.
+
+300
+01:01:51,731 --> 01:01:55,831
+Peki, şimdi artık neredeyiz? Tamamen yeni sistem, yeni sistem.
+
+301
+01:01:56,311 --> 01:01:59,311
+Bir şekilde yeni sistem, o T anından sonra kullanılıyor.
+
+302
+01:01:59,891 --> 01:02:04,351
+Eski sistem diye bir şey yok. Nurttopu gibi yeni evladımız bize hizmet veriyor.
+
+303
+01:02:05,396 --> 01:02:27,556
+Peki, bitti mi? Hayır, bitmedi. Neden bitmedi? Çünkü bir de karşımızda bir bakım süreci var. Yazılım, bilgi sistemleri yaşayan bir süreçtir aslına bakarsanız. Zaman içinde yaşadıkça evrimleşirler, değişirler. Bu değişimler kaçınılmazdır. Mutlaka olur, olmaları gerekir.
+
+304
+01:02:28,148 --> 01:02:45,988
+Devreye aldıktan sonra, yani yeni sisteme geçiş aşamasını gerçekleştirdikten sonra, sistemimizdeki, yazılımımızdaki, uygulamadaki, koddaki, tasarımdaki, aklınıza gelen her şeydeki değişikliklere biz bakım adını veriyoruz.
+
+305
+01:02:46,508 --> 01:02:50,927
+Yani kullanıma geçtikten sonraki bütün işlemlerimiz bakım işlemleridir.
+
+306
+01:02:50,927 --> 01:02:54,088
+Peki, ne gibi bakımlar vardır?
+
+307
+01:02:54,547 --> 01:03:04,067
+Temelde 3 çeşit bakım yapılır bilgi sistemlerine. Birincisi iyileştirici bakımdır. İkincisi uyarlayıcı bakım. Üçüncüsü de düzeltici bakımdır.
+
+308
+01:03:04,067 --> 01:03:17,547
+Şimdi, diyelim ki ben bu sistemi kullanmaya, yeni sistemi kullanmaya başladım. Fakat zaman içinde ihtiyaçlarım değişti.
+
+309
+01:03:18,228 --> 01:03:44,807
+Mesela bilgi sistemini devreye aldım. Notlar A, B, B, B, C, C gibi notlarım vardı. Ama zaman içinde bir yönetmelik değişti, bir kanun çıktı, bir şey oldu ve benim artık bu notları A, A, B, A, B, B, C, B, C, C gibi şeylerle tutmam gerekti. Artılı eksilden iki harflıya geçmem gerekti.
+
+310
+01:03:45,103 --> 01:03:57,043
+İhtiyaç değişti. Yani özetle. Benim bu değişikliğe bir şekilde adapte olmam, bilgi sistemi değiştirerek adapte olmam gerekiyor. İşte bunlara biz iyileştirici bakım adını veriyoruz.
+
+311
+01:03:58,423 --> 01:04:11,303
+Şey çıktı, yeni bir güvenlik kanunu çıktı ve dedi ki siz işte şifrelerinizi bilmem ne algoritmasıyla işte şu kadar bitti anahtarla böyle böyle kodlayarak şu ortamda saklamalısınız.
+
+312
+01:04:11,860 --> 01:04:26,739
+İhtiyaç değişti. O zaman ben bunu iyileştirici bakım kapsamında alıp, gerçekleştirip, düzeltip ya da hani yenileyip, iyileştirerek hizmetini sunmasına, bilgi sisteminin çalışmaya devam etmesini sağlarım.
+
+313
+01:04:28,019 --> 01:04:37,340
+İkinci bakım uyarlayıcı bakımdır. Çeşitli altyapı değişimleri olabilir. İşte bu aslında biraz sıkıntılı şeylerde yaşanabiliyor burada.
+
+314
+01:04:39,891 --> 01:04:54,111
+Dikey ölçeklendirme yine nispeten kolay ama yatay ölçeklendirmeye uygun bir şekilde tasarımın olması gerekir. Eğer altyapıyı yatayda ölçeklendireceksiniz. Yani mesela işte paralel bilgisayarlar ya da sunucular koyacaksınız.
+
+315
+01:04:54,111 --> 01:05:00,844
+Ya da bunların senkronizasyonu ya da işte orkestrasyon nasıl olacak problemi ortaya çıkabiliyor burada da. Ya da...
+
+316
+01:05:01,139 --> 01:05:28,639
+Bugün işte siz dediğim gibi bir data center'da bilmem kaç tane şeyden o moddan oluşan bir cluster tasarladınız ve o altyapı üzerinde bilgi sistemine hizmet veriyor. Fakat sonrasında altyapı değişimi yaşandı. Ne oldu? İşte Amazon Cloud bilmem nesine web servislerine taşıması istendi. Aslında bu da değişen bir ihtiyaçla doğabilir. Ama bir şekilde altyapınız değişti. Ne oldu? Sizin bir şekilde bambaşka bir ortamda hizmet vermeye devam etmeniz gerekecek.
+
+317
+01:05:29,139 --> 01:05:37,799
+Buna kendinizi uyarlamanız gerek. Bilgi sistemini buna uyarlamak için yapılan değişikliklere de uyarlayıcı bakım adı veriliyor.
+
+318
+01:05:39,899 --> 01:05:50,639
+Bunlar bizim için iyi noktalar. Hele iyileştirici bakım en çok böyle işin şeyi, tereyağlı ekmek kadayıfı, neyse ekmeğin yağlı kısmı.
+
+319
+01:05:50,639 --> 01:05:56,219
+Biz buradan para kazanırız. Çünkü değişiklik isteği iş bittikten sonra geldi.
+
+320
+01:05:56,692 --> 01:06:15,712
+Hem altyapı hem de istek değil olabilir, ihtiyaç değişimi olabilir. Siz bunu işte saati 100 euro artı KDV'den adam saat cinsine çevirip toplamda işte bu değişiklik için 36 adam saatlik bir çalışma yapmamız gerekiyor sayın müşteri.
+
+321
+01:06:15,712 --> 01:06:24,552
+3.600 euro artı KDV şeklinde bir fatura şey yapıyoruz, charge ediyoruz şeklinde. Ya da işte daha fazla.
+
+322
+01:06:24,692 --> 01:06:51,872
+Neyse, bir şey yaparsınız. Buradan hani dediğim gibi para kazanırsınız. Ama üçüncü ve son bakım çeşidi olan düzeltici bakım da tam tersidir. Aslında bizim kendi yanlışımız, eksiğimiz olabilir. Bugımızdır ve bunu bizim kendimizin düzeltmesi gerekir. Testlerde fark edilmeyen ortaya çıkan yeni hatalar varsa bunları gidermek için yapılan bakım çalışmalarına da düzeltici bakım adını veririz. Buraya fatura kesemiyoruz.
+
+323
+01:06:52,403 --> 01:07:07,184
+Bunu adam, şey, müşteri memnuniyeti kapsamında fazla da cırlatmadan müşteriyi bir şekilde halletmemiz ve hataları gidererek normal bir şekilde hizmet sunmasını sağlamamız gerekir.
+
+324
+01:07:07,184 --> 01:07:14,864
+Dediğim gibi, iyileştirici ve uyarlayıcı bakımlar güzeldir bizim açımızdan. Para kazandırır ama düzeltici bakımlar tehlikelidir.
+
+325
+01:07:15,164 --> 01:07:20,184
+Boşu boşuna aslında önceden yapıp bitirmiş olmamız gereken fakat bir şekilde...
+
+326
+01:07:20,403 --> 01:07:22,664
+Hatalı yaptığımız bir işi düzeltmemiz gerekir.
+
+327
+01:07:23,484 --> 01:07:26,064
+İşte bu da düzeltici bakım olarak isimlendirilir.
+
+328
+01:07:26,624 --> 01:07:33,704
+Temelde 3 farklı bakım dediğim gibi bilgi sistemlerinde özellikle yazılım tarafında gerçekleştirilir.
+
+329
+01:07:35,084 --> 01:07:36,403
+Peki bu da bakım.
+
+330
+01:07:36,964 --> 01:07:37,584
+Ne oldu şimdi?
+
+331
+01:07:38,264 --> 01:07:38,544
+Bitti.
+
+332
+01:07:39,284 --> 01:07:40,384
+Sürecin sonuna geldik.
+
+333
+01:07:41,184 --> 01:07:43,784
+Artık yazılımlı yeni bilgi sistemimiz devrede.
+
+334
+01:07:44,115 --> 01:08:05,715
+Gerekiyorsa da bakımları yapıldı, bakımları yapılıyor ve bu şekilde kullanıma, hayatına devam ediyor. Ne zamana kadar? İhtiyaçları artık karşılayamayacağı ya da işlevsel olmayan gereksinimlerin daha da artmasıyla birlikte onları yerine getiremeyeceği noktaya kadar. O zaman ne olacak? Yeni bir bilgi sistemi tasarlanacak.
+
+335
+01:08:06,804 --> 01:08:28,404
+Aynı süreç, sil baştan artık yeni bir fizibilite, yeni bir analiz, yeni bir tasarım, yeni bir gerçekleştirme, yeni bir sınama silsilesi, sonrasında da yeni bir devreye alma, yeni bir geçiş ve yeni bakım süreci olarak devam eder. Bu hayat böyle.
+
+336
+01:08:34,644 --> 01:08:58,283
+En eskiden bilgi sistemi yoktu, karteleler vardı, böyle karne denen şey, kartondan yapılma. Almakla hükümlü olduğunuz dersler kayıt esnasında oraya kaydedilir. Sonrasında da böyle bir matriz şeklinde düşünün, her dönem bir sütuna karşılık geliyor. O işte sorumluluğunuzu hangi dönemde hangi notla yerine getirdiğiniz oradaki tabelaya elle işlenir.
+
+337
+01:08:58,676 --> 01:09:06,216
+Sonrasında bittiğinde, bütün satırları tamamladığınızda da diploması alır devam edersiniz gibi bir takip söz konusuydu.
+
+338
+01:09:08,340 --> 01:09:35,100
+Sonrasında ne oldu? İşte ARAS denen bir bilgi sistemine geçildi. Yıllarca o kullanıldı. Onda şeyi yetmedi gücü. Çünkü CGI teknolojisiyle çalışıyordu. Yükü kaldırabilecek bir altyapısı yoktu. Sonrasında USIS ortaya çıktı. 2003'ten beri yanlış hatırlamıyorsam. Evet, USIS var. Ama tabii USIS'te kendi içinde o kadar çok değişti ki artık USIS, USIS değil. Sadece adı USIS.
+
+339
+01:09:36,340 --> 01:09:40,239
+Bir kere majör değişiklik, yani iki tane bilgi sistemi geçişi yaşadı kendi içinde.
+
+340
+01:09:41,720 --> 01:09:49,360
+Sonrasında da işte önümüzdeki dönem büyük bir ihtimalle başka bir bilgi sistemiyle yolumuza devam edeceğiz gibi görünüyor.
+
+341
+01:09:49,360 --> 01:09:59,659
+Evet, bu şekilde bir bilgi sisteminin ömrü diyelim, hikayesi budur.
+
+342
+01:10:00,000 --> 01:10:10,579
+Ve her adımda ne yapmamız lazım? Ne çıktıları neden üretmemiz lazım? Bunları nasıl yapmamız lazım? Dilimiz döndüğünce sizlere bunları aktarmaya çalıştığım.
+
+343
+01:10:11,180 --> 01:10:19,819
+Aslında bitti bu noktada. Fakat bir de dediğim gibi basit bir örnek sizinle paylaşmak istedim.
+
+344
+01:10:20,659 --> 01:10:38,319
+Bu şey muhteşem bir örnek değil, baştan söyleyeyim. Tamamen bitmiş bir örnek de değil. Sadece belli adımlarda bakın şunlar şöyle şöyle diye göstermek adına ucundan göstererek, koklatarak diyelim oluşturulmuş bir örnek vaka çalışması.
+
+345
+01:10:38,920 --> 01:10:48,479
+Derdimiz şu olsun, spor salonu, pandemi mandemi olmadığı zamanları düşünelim. Spor salonu için bir bilgi sistemi.
+
+346
+01:10:48,659 --> 01:10:51,559
+Geliştirilmesi için bize bir istek gelmiş.
+
+347
+01:10:52,859 --> 01:10:55,600
+Tabii önce oturmuşuz, konuşmuşuz değil mi?
+
+348
+01:10:56,180 --> 01:11:00,539
+Ve şöyle bir problem tanımı ile karşı karşıya kalmışız.
+
+349
+01:11:00,659 --> 01:11:02,159
+Bir tane spor salonu var.
+
+350
+01:11:02,899 --> 01:11:06,340
+Bu spor salonunun işleri yolunda gitmiş, müşteri sayısı artıyor.
+
+351
+01:11:07,180 --> 01:11:13,819
+Böyle özel dersleri var, grup dersleri falan, pilates, milates, böyle şey, dans, aerobik.
+
+352
+01:11:14,228 --> 01:11:25,688
+İşte ne bileyim kürek gibi böyle değişik dersleri var ve bunlar sürekli genişliyor. Farklı farklı yeni dersler, jujitsu dersleri falan ortaya çıkartılıyor.
+
+353
+01:11:26,256 --> 01:11:50,695
+Ve bunları takip etmek tabii ki gitgide zorlaşmış. Bunlar için yeni bir yönetim sistemine ihtiyaç duyuyorlar. Normalde ne oluyor? Biz hani gittik gözleme tekniğimizle yerinde gözleme yaparak müşterilerin spor salonuna gittiğini, oradan bilgi aldığını, spor salonuna kayıt olduğunu, para ödediğini, kayıt kayıtında işte bir şekilde yönetim tarafından yerel olarak depolandığını görmüşüz.
+
+354
+01:11:51,091 --> 01:11:55,011
+Bu hacim arttıkça takip edilemez bir hal almaya başlamış.
+
+355
+01:11:56,072 --> 01:11:58,731
+Şimdi ne istiyorlar bizden?
+
+356
+01:11:59,031 --> 01:12:03,311
+Dediğim gibi şu andaki mevcut durumu bir şekilde bir bilgi sistemine taşımayı istiyorlar.
+
+357
+01:12:04,671 --> 01:12:08,791
+Diyorlar ki kişiler, yani bizim müşterilerimiz online olarak üye olabilsinler.
+
+358
+01:12:11,631 --> 01:12:13,031
+Hemen bir üyelik.
+
+359
+01:12:14,231 --> 01:12:15,751
+Ondan sonra kişisel bilgiler.
+
+360
+01:12:16,467 --> 01:12:41,448
+Ödeme, bakın takır takır takır aklıma gelmeye başlıyor bunlar olması lazım diye. Demişler ki, işte çeşitli de bizim derslerimiz var dediğim gibi. O derslerin işte sınıfları var, bunların belli bir eğitim takvimleri var ve doğal olarak hocaları var. Bunları işte üyelerimiz görebilsin. Mesela arayabilsin ya da listeleyebilsin.
+
+361
+01:12:41,971 --> 01:12:56,492
+Sonrasında istediklerine kayıt olabilsinler. Ne var diyoruz ders? İşte aerobik var, step var, pilates var, dans var. Başka var mı? İşte şunlar şunlar. Peki bunlar zaman içinde değişiklik gösterecek mi? Evet artıyor. Zaten arttığını söyledik.
+
+362
+01:12:57,492 --> 01:13:03,652
+İşte o su değişebilir mi? Bu su değişebilir mi? Şöyle olur mu? Böyle olur mu? Bütün detayları bir şekilde sorularak öğrendik.
+
+363
+01:13:04,979 --> 01:13:20,219
+Diyorlar ki bunları biz oluşturuyoruz. Talebe göre ya da kafamıza göre. Derslerimizin tarif ve saatleriyle oluşturuyoruz. Sınıflarında kapasiteleri var. Bunları üyeler görebilmeli ve istedikleri şekilde bunlara katılabilmeliler.
+
+364
+01:13:20,219 --> 01:13:30,779
+Tabii bunlar paralı olacak tabii ki. Sonrasında bir de hocalarımız var, eğitimciler var. Bunlar da trainer.
+
+365
+01:13:31,699 --> 01:13:36,899
+Bunlar da şey yapabilsin, login olabilsinler ve kendi bilgilerini değiştirebilsinler.
+
+366
+01:13:38,039 --> 01:13:50,479
+Ayrıca mesela pilates dersini veren hoca, ilgili dersin katılımcılarını bilmem nelerini bilgilerini görebilsin, görüntüleyebilsin, listeleyebilsin. Böyle istekler var.
+
+367
+01:13:51,779 --> 01:13:52,699
+Bunun dışında...
+
+368
+01:13:52,851 --> 01:14:20,591
+Diyoruz, peki ödeme müdeme dedik, yani üyelik dedik, bu nasıl oluyor? Dediler ki, bizde şey yok, standart, aylık ücret alıyoruz. Aylık ücreti ödedirseniz o ay çalışırız, bizim şeylerimizi kullanabiliyorsunuz, limitsiz salonumuzu kullanabiliyorsunuz. Eğer böyle ekstra derslere katılmak istiyorsanız, o zaman onlara şey, farklı ücretlendirmesi var. İşte Pilates kursuna katılacaksanız, onun parasını ayrıca vereceksiniz diyor. Peki.
+
+369
+01:14:21,747 --> 01:14:39,688
+Ayrıca diyor, bir de biz böyle özel ders diye bir şey yaptık. Grup dersi evet var. Normalde bir ay grup dersi 200 lira diyelim. Ama isterseniz siz birebir özel ders talebinde de bulunabilirsiniz. O zaman tabii doğal olarak farklı bir ücret olacak. Kursa göre, zamana göre değişebilir.
+
+370
+01:14:49,747 --> 01:15:15,747
+Ahtayı 200 lira verirken grupta böyle bir şey de ona göre ücretlendiriyoruz falan diyor. Bunları da müşteriye bildirebilmeliyiz. Bunları da görebilmeli. Böyle konuştuk ettik, beklentileri bir şekilde görmeye başladık. Böyle bir problemimiz var. Bunları doğal olarak bir formal hale getireceksin. Ne yapıyorduk? Bunu yapmanın iki tane yolu vardı hatırlayacak olursanız. Birincisi, eğer böyle...
+
+371
+01:15:16,399 --> 01:15:25,460
+işlevsel bir çözümlemeyle yola çıkacaksanız, business requirementları, business requirement document yani BRD ile oluşturmanız beklenir.
+
+372
+01:15:25,460 --> 01:15:28,235
+Ve bunlar için de...
+
+373
+01:15:29,235 --> 01:15:49,855
+Burada mesela bir iki ufak tefek örneği vereceğim ama ne dedim? Gözlem yaptık, yerine gittik, inceledik, bilmem ne. Sonucunda ben bu işlevleri, beklentileri bir işte tablo halinde yarattım. Bir yandan rollerimi de bulmaya başladım. Bir yönetim var, bir üyeler var, bir eğitmenler var. Ne yapıyor yönetim? İşte üyelik başvurusunu onaylıyor.
+
+374
+01:15:50,484 --> 01:15:58,764
+Sınıf oluşturuyor, eğitmen ya da tarih saat belirliyor, güncelleme yapıyor, başka şeyler de var kısa olsun diye bu kadarını yazdık.
+
+375
+01:15:59,464 --> 01:16:11,564
+Üyeler ne yapıyor? Kendileri üyelik yapabiliyor bilgilerini girip. Sonrasında sınıf görüntüleyebiliyor, kayıt olabiliyor, özel ders talebinde bulunabiliyor gibi.
+
+376
+01:16:12,020 --> 01:16:35,620
+Böyle şeyler. Eğitmenler ne yapıyordu? Trainerlarımız. Bunlar da bilgilerini güncelleyebiliyordu, listeleri görüntüleyebiliyordu. Bunların problemin tanımından ve bilgi toplama yöntemleriyle elde ettiğim gerçekleri bir business requirement document halinde bir tabloya dönüştürerek ortaya koydum.
+
+377
+01:16:38,195 --> 01:16:46,155
+Bir use case diagramı çizdim ve use case diagramında aktörlerimi ve buradaki senaryolarımı ortaya koydum.
+
+378
+01:16:46,615 --> 01:16:51,235
+Hangi aktör hangi senaryoyla ya da hangi senaryo hangi senaryoyla nasıl ilişki içinde bunları gösterdim.
+
+379
+01:16:51,235 --> 01:16:58,316
+Ve sonrasında bu işlerin nasıl yapıldıklarını use case dokümanları halinde, senaryolar halinde yazdım.
+
+380
+01:16:58,956 --> 01:17:00,115
+Böyle bir şey de yapabilirdim.
+
+381
+01:17:00,467 --> 01:17:05,767
+Ya o ya o ikisinden biri. Dediğim gibi birini yapmamız gerekiyor.
+
+382
+01:17:07,107 --> 01:17:12,487
+Burada fizibiliteyi falan filan öncelemeyi geçtik. Şu anda o kadar da vaktimiz de yok zaten.
+
+383
+01:17:14,727 --> 01:17:17,447
+Mümkün olunca sadece analiz ve tasarıma odaklanmayı gayret edelim.
+
+384
+01:17:18,547 --> 01:17:26,167
+Ön inceleme ve fizibiliteyi doğal olarak yapıyoruz, yaptığımızı biliyoruz ve buradan elde ettiğimiz bilgilerle oluşturduğumuz raporları inceliyoruz.
+
+385
+01:17:26,467 --> 01:17:32,268
+Mevcut kaynakları gözden geçiriyoruz. Görüşmelerimiz, toplantılarımız yerinde gözlemlerimiz sonucu.
+
+386
+01:17:33,300 --> 01:17:46,079
+Belki başka türlü veri toplamalarımız sonucunda ihtiyaçları belirliyoruz. Sonrasında da modellemeyi yapıyoruz. Bu da tasarımın temelini oluşturuyor. Yani çözüm önerimizin temelini oluşturacak problemi anlamayışımız.
+
+387
+01:17:46,899 --> 01:17:58,399
+Mesela biz burada ne yaptık? Yerinde gözlem yaptık. Peki başka ne yapabiliriz? Mesela diyelim ki bir anket yaptık. Niye anket yapıyoruz? Çünkü bu spor salonunun üyeleri var. Son kullanıcı gibiler.
+
+388
+01:17:58,768 --> 01:18:13,608
+Pek çok insan olabilir, pek çok farklı insan olabilir. Bunların beklentileri, istekleri farklı olabilir. O zaman bu spor salonu bilgi sistemini onlara bir şekilde anlayıp o gereksinimleri de belli ölçütlerde karşılayabiliyor olması gerekir.
+
+389
+01:18:22,355 --> 01:18:27,055
+Bizim için anlamlı olacak ve gereksinimleri ortaya çıkacak verileri toplayabiliriz.
+
+390
+01:18:27,195 --> 01:18:31,215
+Mesela bu çok çok basit. Bu kadar değil zaten. Sadece bir 3-4 soru.
+
+391
+01:18:33,195 --> 01:18:35,275
+Var olan sistemde sorun yaşıyor musunuz?
+
+392
+01:18:35,815 --> 01:18:44,015
+Evet, hayır. Evet ise sonraki şeyler sorulabilir. Hayır ise teşekkür ederiz, devam edelim diye bir şeyle devam edebiliriz.
+
+393
+01:18:44,015 --> 01:18:45,375
+Hani bir go-to ile.
+
+394
+01:18:46,655 --> 01:18:49,215
+Online sisteme geçmek sizin bu sorunlarınızı çözer mi?
+
+395
+01:18:49,844 --> 01:18:55,083
+İhtiyaç duyduğunuz modüller nelerdir ya da bunları önceliklendirin.
+
+396
+01:18:55,183 --> 01:19:00,423
+Hani 1, 2, 3, 4 gibi. Burada tabii bu çok basit. 3 tane var. Normalde daha fazla olması beklenir.
+
+397
+01:19:01,003 --> 01:19:03,743
+Bunun dışında biraz da böyle hani hep kapalı uçlu değil.
+
+398
+01:19:04,043 --> 01:19:12,943
+Biraz da insanın kendini daha rahat hissedebileceği seçenekler arasında bulamasa dahi kendini ifade etmesini sağlayacağı açık uçlu sorular da koyduk.
+
+399
+01:19:13,300 --> 01:19:41,300
+Mesela rakipleriniz tarafından kullanıldığını gördüğünüz sistemlerde dikkatinizi çeken özellikler nelerdir? Burada rakipleriniz de bu şeye karşı olmuş soru. Biraz yönetime uygun bir soru olmuş ama bunu üyelere yaptığınızı düşündüğünüzde işte farklı deneyimlerinizden, online üyelik deneyimlerinizden dikkat çeken ya da olmazsa olmaz dediğiniz özellikler nelerdir gibi sorular ile biraz daha böyle özel kendini...
+
+400
+01:19:41,300 --> 01:20:00,000
+İfade etmelerini sağlayabilirsiniz. Böyle en tane soruyla bir anketle bir veri toplamışız. Dediğim gibi gözlem yaptık, toplantılar yaptık, anladık yerinde incelemelerle. Böyle yine tanımadığımız insanlar müşteri olarak geleceği için onların beklentilerini bir şekilde modellememiz gerekiyor. Bunun için de bir an...
+
+401
+01:20:00,000 --> 01:20:09,199
+Anketle veri topladık mesela. Bunun sonucunda işte dediğim gibi bir BR dokümanı ya da bir use case çözümlemesi ortaya koymamız gerekir.
+
+402
+01:20:09,199 --> 01:20:19,779
+Sonrasında ne yapacağız? Şimdi BR'dan devam edelim. Benim buradaki işlevsel çözümlemeyi de yerine getirmem lazım. Yani functional specification'ları yazabiliyor, yaratabiliyor olmam lazım.
+
+403
+01:20:20,144 --> 01:20:28,704
+Bunun için ne kullanıyorduk? Veri akış diyagramları. Yani analiz modelini, problem uzayını bir şekilde işlevsel yaklaşımla modellemek istersem.
+
+404
+01:20:30,004 --> 01:20:39,564
+Bunun için işte iki tane notasyon vardı. Gainser son notasyonuyla mesela bir konteks diyagramı yani ya da level 0 dediğimiz diyagramı oluşturalım.
+
+405
+01:20:39,564 --> 01:20:47,484
+Hemen oturduk çizdik. Nedir? Ortada sistem vardı hatırlayacaksınız. Sistemin bunlar neleriydi? Hatırlayan var mı?
+
+406
+01:20:52,148 --> 01:20:53,028
+Varlıkları.
+
+407
+01:20:54,248 --> 01:20:54,528
+Peki.
+
+408
+01:20:55,488 --> 01:20:58,068
+Burada da akışlar var, veri akışları var.
+
+409
+01:20:58,507 --> 01:21:08,047
+Üyeler bilgilerini verebilecek, sınıf seçebilecek, sınıf bilgilerini alabilecek, ücret ödeyebilecek, yönetim sınıf bilgisine girebilecek, raporları alabilecek.
+
+410
+01:21:08,568 --> 01:21:10,387
+Bunlar değişebilir, biliyorsunuz.
+
+411
+01:21:10,547 --> 01:21:12,828
+Şu anda gördüklerimizi yazmışız.
+
+412
+01:21:13,203 --> 01:21:22,823
+Eğitmenler bilgilerini güncelleyebilecek, onun için bilgi veriyorlar ve katılımcı listelerini işte liste olarak bu sistemden bekliyorlar, alıyorlar.
+
+413
+01:21:22,823 --> 01:21:32,983
+Böyle taraflarını ve bilgi sistemini temel veri akışlarıyla birlikte, en sağladıkları esemel faydalarla birlikte bir konteks diagramda gösterebiliriz.
+
+414
+01:21:34,123 --> 01:21:34,844
+Sonra ne yapacağız?
+
+415
+01:21:35,463 --> 01:21:36,652
+Sonrasında...
+
+416
+01:21:36,659 --> 01:21:42,079
+Burada şeyleri tekrar üzerinden geçmişiz. Üzerini bir daha okumayayım.
+
+417
+01:21:44,479 --> 01:21:48,699
+Diagramın açıklaması yani zaten ne olduğunu hızlıca bahsettik.
+
+418
+01:21:49,099 --> 01:21:54,559
+Sonrasında ben işte business requirementlarımı karşılamak üzere proseslerimi ortaya çıkarmalıyım.
+
+419
+01:21:55,000 --> 01:22:02,920
+Bu proseslerde de işte mesela üye olma, ödeme yapma, sınıfa kayda olma, sınıf oluşturma, katılımcıları görüntüleme, bilgi güncelleme gibi.
+
+420
+01:22:04,148 --> 01:22:15,828
+Bunlar işte hangi şeyden nasıl veri akacak, hangi veri deposuna neler kaydedilecek gibi gibi gibi böyle resmettiğimde bu diagramı ortaya koyduğumda ne yapmış olmuştum?
+
+421
+01:22:16,368 --> 01:22:23,048
+Ben analiz modelimi yani bir problemimi işlevsel çözümleme ile ortaya koymuş durumdayım.
+
+422
+01:22:23,048 --> 01:22:25,888
+Bu bazen yeterli olmuyordu hatırlayacak olursanız.
+
+423
+01:22:26,128 --> 01:22:31,428
+İşte mesela belli işlemlerin içindeki alt prosesleri de bir şekilde göstermemiz gerekebiliyordu.
+
+424
+01:22:32,148 --> 01:22:52,868
+İkinci seviyeli veri akış diyagramını kullanıyoruz. Mesela 3. 3 neydi? Burada ödeme prosesi. Ödeme prosesinin içinde bakın mesela toplam ücretin hesaplanması ayrı bir alt proses. Ödemenin alınması ayrı bir alt proses. Kalan borç hesabı ayrı bir proses gibi. Gerekiyorsa ikinci seviyeleri de.
+
+425
+01:22:53,844 --> 01:23:02,604
+Kaç tane için gerekiyorsa bunları da çizerek biz modelimizin biraz daha detaylı bir şekilde alt süreçlerinin de tanımlanmalarını sağlamalıyız.
+
+426
+01:23:03,347 --> 01:23:20,608
+Yetiyor muydu? Hayır. Sonrasında biliyorsunuz işte bunlar için süreç formlarımız vardı, proses formlarımız. Onların doldurulması ve içinde neler yapılması beklendiğinin kaba kod, pseudokod ya da işte karar tablolarıyla onlarla bunlarla bir şekilde ifade edilmeleri gerekiyordu.
+
+427
+01:23:20,608 --> 01:23:31,328
+Bu sayede ben işte o işlevsel gereksinim nasıl yerine getirilecek, onunla ilgili yönergeyi ya da yolu yordamı da problemin nasıl çözülmesi gerektiğiyle alakalı direktifleri de.
+
+428
+01:23:31,347 --> 01:23:32,988
+tanımlamış olacaktım.
+
+429
+01:23:33,555 --> 01:23:57,735
+Yetiyor muydu? Hayır. Bilişim maddelerinin tamamını benim bir yerde depolamam gerekiyordu. Buna da veri sözlüğü adını vermiştik. Her bir veri akışı, veri deposu, veri yapısı, kompozitler, tekil elemanlar gibi şeyler için sözlük girdilerini oluşturmamız gerekiyordu. Şimdi biz burada hepsini teker teker yapmayacağız tabii ama bir tane veri akışı ve bir tane veri deposu ile alakalı iki tane sözlük girdisi gösterelim.
+
+430
+01:24:01,555 --> 01:24:11,275
+Kişisel bilgiler oku, yani öyle söyleyeyim. Bunun tanımı neymiş? Bakalım, işte at, soyat, yaş, boy, kilo ve iletişim bilgilerinden oluşuyormuş bu veri akışı.
+
+431
+01:24:11,835 --> 01:24:19,335
+Nereden geliyor? Üyeden geliyor. Nereye gidiyor? Üye olma prosesine gidiyor. Hangi veri yapıları burada kullanılıyor?
+
+432
+01:24:19,475 --> 01:24:27,715
+İşte üye detayları dediğimiz kompozit veri yapısı kullanılıyor. Üye detayları da başka bir veri sözlüğünde aslında sözlük girdisinde tanımlanmış olacak.
+
+433
+01:24:28,979 --> 01:24:43,439
+Bir veri deposu örneği de yapalım. Verinin saklandığı ortamlar. İsmi neymiş? Sınıf bilgileriymiş. Tanımı neymiş? Ve işte miktarı neymiş? Günde ortalama 10 tane giriş bekleniyormuş gibi. Bunlar arttırılabilir. Bu da çok basit bir örnek.
+
+434
+01:24:43,439 --> 01:24:55,499
+Böylece ben analiz modelindeki dünyanın bütün bileşenlerini de bir veri sözlüğünde tanımlayarak bir model ortaya koyabilirim.
+
+435
+01:24:56,115 --> 01:25:06,015
+Eş zamanlı olarak proseslerimizi buluyoruz ama bir yandan da veri nesnelerimizi, yani varlıklarımızı ve bunların arasındaki ilişkileri de ortaya çıkartmamız gerekiyordu.
+
+436
+01:25:06,495 --> 01:25:18,135
+Veriyi de modellememiz gerekiyordu hatırlarsanız. Bunun için de yine aslında analiz modelinden yola çıkarak varlıklarımızı ve bunların arasındaki ilişkileri tanımlıyoruz.
+
+437
+01:25:18,655 --> 01:25:24,115
+Üyelerimiz var, sınıflar var, eğitmenler var, yönetimler var, yönetim varlık hükümeti.
+
+438
+01:25:24,115 --> 01:25:39,536
+Aslında bu bir tabii ki. Bir de işte muhasebe var. Görünen özellikle burada şeylerini falan koymamışız. ID'leri, benzersiz tanımlayıcılar, birinci anahtarları burada yok ama onları siz eklersiniz.
+
+439
+01:25:41,844 --> 01:26:00,643
+Şey olarak da düşünülebilir, analiz safhasında ben bunları buldum ama tasarıma geçtiğimde veriyi tasarlarken bunların daha detaylarını hani o işte birinci anahtar, yabancı anahtar, şuradaki çoğullamalar, belki buradaki yeni varlıklar, olmayan ama olması gereken varlıklar da eklenerek son haline de getirebilirim.
+
+440
+01:26:00,643 --> 01:26:01,503
+Peki.
+
+441
+01:26:02,739 --> 01:26:30,719
+Varlık ilişki diagramıyla veriyi de modelledik. Ne oldu? Artık biz işlevsel olarak analiz modelinin sonuna gelmiş olduk. Peki ben bunu acaba işlevsel yapmasaydım? Hani anketimi yaptım, gözleme yaptım, konuştum, toplantılar yaptım. Bu gibi şeylerle verileri topladım ve ben bunu mesela nesne yönelik olarak analizini yapmak isteseydim ne yapacaktım? O zaman bir use case model.
+
+442
+01:26:30,739 --> 01:26:36,979
+Egellemesi ve sonrasında da işte bir class diagramı oluşturmam beklenirdi.
+
+443
+01:26:38,039 --> 01:26:44,319
+Şimdi sadece class diagramı şeyde göstereceğim, son halini, sonda olmasa da sona yakın halini tasarımda.
+
+444
+01:26:44,839 --> 01:26:47,299
+O yüzden burada use case'lere odaklanalım.
+
+445
+01:26:47,839 --> 01:26:51,079
+Ne yapıyorduk? İşte aktörleri ve senaryoları buluyorduk.
+
+446
+01:26:51,379 --> 01:26:54,099
+Tekrar böyle business requirement'lere geri gittiğimizi düşünün.
+
+447
+01:26:55,220 --> 01:26:59,960
+Böyle bir use case senaryo diagramı çizebilirsiniz.
+
+448
+01:27:00,159 --> 01:27:07,940
+İşte nedir? Mesela sınıfa kaydolma ama isterseniz bunu özel ders şeklinde böyle extend edebilirsiniz.
+
+449
+01:27:07,940 --> 01:27:15,539
+Ya da işte sınıfa kaydolma aynı zamanda sınıf bilgisini görüntüleme senaryosunu da içermelidir gibi.
+
+450
+01:27:16,115 --> 01:27:28,655
+Eğitmen zaten belli iki tane şeyi var. Yönetim, sınıf oluşturma. Burada eksik fazla olabilir. Çok takılmayın. Maksat şey, burada örnek olarak size bunun böyle yapılması gerekir diye göstermek.
+
+451
+01:27:30,003 --> 01:27:37,623
+Sonra yetiyor muydu? Hayır. Buradaki hepsi için, bütün senaryolarımız için senaryo dokümanlarımızı yazmamız gerekiyordu.
+
+452
+01:27:37,623 --> 01:27:46,403
+Hangi senaryo, kodu ne, birinci aktörü ne, ilgilileri, beklentileri, destek aktörleri kimler, ön koşullar, son koşullar, ana akış.
+
+453
+01:27:46,563 --> 01:27:51,263
+Bakın burada etken cümlelerle ifade edilmiş.
+
+454
+01:27:52,443 --> 01:27:53,323
+Ve alternatif akış.
+
+455
+01:27:53,716 --> 01:28:20,336
+İşte mesela kredi kartı bilgileri, fatura bilgilerini girer demişiz. Burada işte yanlışlık var, bilgilerde yanlış var. O zaman hata mesajı verecekmişiz gibi alternatif akışları da burada vermişiz. Burada sadece tek bir senaryo için, şuradaki ödeme için bir basit örnek. Fakat dediğim gibi bunların her biri için ayrı ayrı dökümanlar yazılması gerekir. Bunlar bir araya geldiğinde de işte sizin aslında SRS dökümanınızın çatısını oluşturmuş olacak.
+
+456
+01:28:22,644 --> 01:28:31,783
+Peki, sonrasında da bir kavramsal sınıf diyagramı oluşturmamız gerekiyor. Şuradan şöyle bir şey göstereyim.
+
+457
+01:28:32,323 --> 01:28:42,583
+Hani bu şu anda tabii şeyler falan eklenmiş biraz ama eklenmediğini düşündüğümüzde en azından işte üye var, sınıf var, eğitmen var, yönetim var, ders var.
+
+458
+01:28:42,923 --> 01:28:49,243
+Bu dersler böyle böyle aerobik dans pilates falan gibi derslerdir diye kavramsal bir sınıf diyagramı çizebilirim.
+
+459
+01:28:49,243 --> 01:28:49,863
+Tamam.
+
+460
+01:28:50,355 --> 01:28:57,195
+Şimdi geldik, artık analiz modelimizi iki yönlü olarak hem nesneyin yönelik hem de işlevsel olarak yaptık.
+
+461
+01:28:57,956 --> 01:29:02,716
+Artık tasarımı ifade etmemiz lazım. Yani bir çözüm önerisi üretmemiz lazım.
+
+462
+01:29:03,796 --> 01:29:15,315
+Bunu da işte önce yine fonksiyonel çözümleme üzerinden devam edecek olursak yapı diagramlarıyla göstermiştik hatırlarsanız.
+
+463
+01:29:16,340 --> 01:29:22,779
+Gerekirse burada ana modül, alt modül, böyle modüller bazında da yapı diagramları oluşturabilirsiniz.
+
+464
+01:29:23,319 --> 01:29:31,519
+Mesela burada bakın bir spor salonu kontrol şeyi var, modülü. Bunun üye olma, üye girişi yapma, sınıf oluşturma gibi alt modülleri var.
+
+465
+01:29:32,159 --> 01:29:37,859
+Üye girişi yapmanın altında sınıf bilgisini görüntüleme, sınıf bilgisinin görüntülemesinin içinde sınıfa kaydolma.
+
+466
+01:29:38,292 --> 01:29:44,012
+Sınıfa kayda olmadığı ya grup dersi ya özel ders şeklinde böyle seçimlik falan şeyler tanımlanabilir.
+
+467
+01:29:44,512 --> 01:29:56,332
+Değişebilir bunlar. Şuralarda eksikler kalmış. Ne, veri akış olduğu, kontrol olduğu falan. Kontrol değil de hangi mesaj olduğu burada ifade edilmemiş sonunda.
+
+468
+01:29:56,892 --> 01:30:02,552
+Atlamışız onu. Neyse, eksikleri de burada görmüş olun. En azından böyle bırakırsanız eksik olur.
+
+469
+01:30:04,851 --> 01:30:15,652
+Yapı diagramı ve gerekiyorsa bu yapı diagramındaki modüller için input, process, output kartlarıyla birlikte siz bu tasarımı işlevsel olarak ifade etmiş olabilirsiniz.
+
+470
+01:30:16,751 --> 01:30:24,211
+Eğer use case ve kavramsal sınıf diagramı üzerinden devam ediyorsanız, nesten yönelik bir çözümleme yapıyorsanız da,
+
+471
+01:30:24,532 --> 01:30:29,192
+O zaman sınıf diyagramları ve etkileşim diyagramlarını çizmeniz gerekiyor.
+
+472
+01:30:29,291 --> 01:30:32,411
+Tabii biz burada mesela sadece sequence diyagramı göstereceğiz.
+
+473
+01:30:32,871 --> 01:30:38,171
+Ardışıl diyagramlarla da iletişimleri ve birlikte çalışmayı modellemeniz gerekir.
+
+474
+01:30:39,751 --> 01:30:44,771
+Burada amaç şey, birlikte nasıl çalışılacağını, sorumluluğun nasıl yerine getirileceğini göstermek.
+
+475
+01:30:44,871 --> 01:30:48,411
+Algoritma değil. Bunu tekrar üzerine basa basa söyleyeyim.
+
+476
+01:30:48,411 --> 01:30:49,471
+Burada da.
+
+477
+01:30:49,971 --> 01:31:08,211
+İşte mesela, bunu aslında daha sonra söylesek daha iyi olur ama, hani senaryolardan yola çıkarak, senaryolarda bizim yapmamız gerekenler, sorumluluklarımız yerine getirmemiz gerekenleri bularak fiillerden yola çıkıp, sonrasında bunu kim yapacak, hani grasp kalıpları falan demiştik hatırlarsanız.
+
+478
+01:31:09,332 --> 01:31:37,152
+İşin uzmanı kim? İyi uyumu nasıl sağlarım? Az bağımlı olmayı nasıl sağlarım? Değişimlerden kendimi nasıl koruyabilirim? Çok şekilde davranışları nasıl modellemeliyim gibi gibi böyle şeyleri düşünüp düşünüp demişiz ki mesela işte borç öğrenme sorumluluğu spor salonundadır. Sınıf kendi bilgisini vermekle yükümlüdür. İşte her dersin bir saat ücreti vardır. O saat ücretinin ne olduğunu ders bilmelidir gibi gibi.
+
+479
+01:31:37,332 --> 01:31:46,432
+Bir işte üye, üye olabilmelidir. Bunun için üyelik diye ayrı bir şey tanımlamışız. Büyük bir ihtimalle üye gittiğinde de üye bilgileri kalsın diye.
+
+480
+01:31:47,072 --> 01:31:58,531
+Böyle bir şey tanımlanmış. Neydi bu? Hatırlayan var mı? Yapay sınıf. Pure Fabrication hatırlarsınız. Product Specification gibi düşünebilirsiniz bunu.
+
+481
+01:31:59,072 --> 01:32:07,251
+Bakın burada bir bağımlılık varmış falan. Bir şekilde herhalde buradan gidiyor. Bilmiyorum şu anda. Tam ben de hatırlamıyorum bu çözümü.
+
+482
+01:32:07,731 --> 01:32:12,411
+Tam bir çözüm değil zaten şu anda. Dediğim gibi öyle ara ara ufak parçalar şeklinde.
+
+483
+01:32:13,007 --> 01:32:36,207
+Böyle bir diagramda görebildiğimiz bütün özellikler, öz nitelikler, bunların tipleri, görünürlükleri, metotlar, ondan sonra kim kimi hangi yönde kullanıyor gibi bağlantılarla birlikte ifade ederek, bakın bu benim bir yazılım sınıf çözümümdür, yazılım tasarım çözümümdür, önerim budur şeklinde ifade etmiş olursunuz.
+
+484
+01:32:36,207 --> 01:32:41,007
+Sonrasında bütün sorumluluklar için ayrı ayrı ardışlı diagramlar çiziyordu.
+
+485
+01:32:41,007 --> 01:32:59,407
+Burada yer darlığından dolayı üçünü bir arada gösterdik. Şöyle yani şu dikdörtgen aslında ayrı bir artificial diagram. Tamam üye olma. Sadece onay geliyormuş. İşte sınıf bilgisini al, kayıt ol. Üye ile sınıf arasında.
+
+486
+01:32:59,823 --> 01:33:26,463
+Ondan sonra işte üye spor salonundan borcunu öğreniyormuş. Borcunu öğrenmesi için sınıftan ödenecek tutarları alması gerekiyormuş. Ödenecek tutarları için sınıfların da derslerden saat ücretlerini alması gerekiyormuş. Sonra ne kadar süre katıldığını alması gerekiyormuş. Ve burada saat ücreti çarpı katılım süresi şeklinde bir geri dönüş değerini buraya veriyormuş. Bu spor salonunda borç öğreninin cevabı olarak borcu üyeye söylüyormuş.
+
+487
+01:33:27,823 --> 01:33:35,183
+T çalışma, böyle 4 tane nesne bir arada çalışarak toplam borç tutarının hesaplanmasıyla alakalı sorumluluğu yerine getirmiş.
+
+488
+01:33:35,683 --> 01:33:39,723
+Dediğim gibi bunlar ayrı ayrı diagramlar olarak düşünün.
+
+489
+01:33:40,143 --> 01:33:45,304
+Sadece slide'daki yer darlığı yüzünden 3'ünü tek bir timeline üzerinde gösterdik.
+
+490
+01:33:45,723 --> 01:33:49,203
+Normalden bunları esasen ayrı ayrı göstermek daha doğru olacaktır.
+
+491
+01:33:50,260 --> 01:34:10,400
+Ve tabii sadece 3 tane değil, dediğim gibi n tane sorumluluk var. Toplamda işte k tane senaryo var. İçinde işte n büyüktür k olacak şekilde sorumluluklar var. Buradaki n tane sorumluluk içinde ardışıl diagramları çizmemiz gerekir.
+
+492
+01:34:18,260 --> 01:34:28,000
+O zaman biz ardışıl diagramlarda bunu açıkça göstermek, ifade etmek durumundayız ki tasarımımızı başkalarının anlayacağı şekilde ifade edebilelim.
+
+493
+01:34:28,119 --> 01:34:33,300
+Teknik diğer personelin anlayacağı şekilde ifade edebilelim.
+
+494
+01:34:34,300 --> 01:34:36,260
+Evet, bu şekilde.
+
+495
+01:34:38,899 --> 01:34:50,079
+Bir süreçle de hani nesne yönelik olarak da sınıf diyagramı ve ardıçlı diyagramları en temelinde üreterek bir yazılımın nasıl olması, çözümünün nasıl olması gerektiğini ifade edebilirsiniz.
+
+496
+01:34:50,259 --> 01:34:56,259
+Yani tasarımla ortaya koyduğunuz çözümü ya da size ait olan çözüm önerisini oluşturabilirsiniz.
+
+497
+01:34:56,259 --> 01:35:02,219
+Sonrasında ne olacak? İşte kodlayacağız, kodladıktan sonra sınayacağız, sınadıktan sonra devreye alacağız. Pardon.
+
+498
+01:35:03,123 --> 01:35:11,263
+Devreyi alacağız. Devreyi aldıktan sonra da bakım aşamasında bunu işler tutacağız, hayatta tutacağız şeklinde yolumuza devam edeceğiz.
+
+499
+01:35:11,763 --> 01:35:15,123
+Bu vaka çalışmasında case'daki çizimler için...
+
+500
+01:35:41,876 --> 01:36:02,816
+Ne oluyor? Tamam, peki o zaman. Önümüzdeki iki hafta dediğim gibi benim anlatacaklarım temel olarak bitti. Önümüzdeki iki hafta sizler projelerinizi sunacaksınız. Her hafta sekiz grup sunacak. Ben programı yapıp bu hafta sizinle paylaşmış olacağım. Dersin duvarına yine koyarım.
+
+501
+01:36:03,220 --> 01:36:18,880
+Bu bilgileri rastgele olarak atıyorum. İlk 8 grup, ilk hafta, ikinci 8 grup, ikinci hafta falan olmuyor. Karışık, Excel'de random yazarak onları karıştırıp, shuffle edip sıralıyorum.
+
+502
+01:36:21,480 --> 01:36:26,260
+Sunarken grup olarak, ekip olarak katılım sağlamanız esas.
+
+503
+01:36:26,720 --> 01:36:52,020
+Bir yine PowerPoint gibi bir sunum hazırlayabilirsiniz ama toplamda maksimum 10 dakikanız var. 10 dakika içinde bütün her şeyi yapmanız gerekir. Evet, sunumlarınızda kamera rica edeceğiz. Bu şey gibi düşünün. Yani bir sınıf ortamında sunum yaptığınızı göz önüne alın. Bu nedenle sunum yapan arkadaşları görsek iyi olur. Şey yapalım.
+
+504
+01:36:52,500 --> 01:37:15,420
+Bir şey halinde, ne derler, ekip halinde çalışmanızı gösterebilin. Bir alternatifi de şey olabilir, siz önceden bunu bir Zoom sesini şeklinde kayıt altına alıp paylaşabilirsiniz. O da bir yol olur, video şekline getirmek.
+
+505
+01:37:15,775 --> 01:37:43,115
+O zaman derste o videoyu birlikte izlemiş oluruz ya da benimle de paylaşırsınız, bana yollarsınız, Drive'dan falan paylaşabilirsiniz. Linkini yollasanız yeterli olur yani. Maksimum 10 dakika olacak şekilde hem sunumunuz, yani bir süreçte neler yaşadınız, neyi nasıl çözdünüz, analiz modeliniz ne, neden öyle oluştu, tasarım modeliniz ne, niye öyle oluştu, gerçekleştirdiğinizde ortaya çıkan çıktı, ne hale geldi.
+
+506
+01:37:43,600 --> 01:37:55,980
+Ve hızlıca işletip, temel modüllerinizdeki beklentileri karşılayıp karşılamadığını ya da nasıl yaptığını, çalışmasını nasıl gerçekleştirdiğini bilgi sisteminin göstermenizi bekliyorum.
+
+507
+01:37:56,800 --> 01:38:04,940
+Dediğim gibi, sadece programı ya da uygulamayı açıp da bakın tıklıyoruz, üye oluyoruz, tıklıyoruz, bilmem ne oluyor değil.
+
+508
+01:38:05,328 --> 01:38:18,728
+Bizim için önemli olan problemi nasıl modellediniz? Buradaki case study'de hızlıca onu göstermeye çalıştım. Bilgiyi nasıl topladınız? Fizibiliteniz nedir? Ondan sonra ne sonuçlar elde ettiniz?
+
+509
+01:38:19,184 --> 01:38:47,184
+Problem uzayınızı, yani analizinizi nasıl yaptınız? Problem uzayınızı nasıl modellediniz? Oradan nasıl bir tasarımla çözüm önerisi ürettiniz? Nasıl gerçekleştirdiniz? Hani niyet neydi, akıbet ne oldu, ne çıktı ortaya? Gerçekten ne kadar sizi tatmin etti? Yani baştaki gereksinimleri ne kadar iyi karşılayabildiniz? Bunları tartışmanızı, yorumlamanızı bekliyoruz. Bunları da bize aktarırken doğal olarak işte bu diagramlarla falan konuşmanızı ya da use case...
+
+510
+01:38:51,539 --> 01:38:59,759
+Mümkün olduğunca hepimiz aynı dilden aynı şekilde konuşabilelim ve dediğim gibi yine 16 farklı projeyi görelim.
+
+511
+01:39:00,479 --> 01:39:19,380
+Kendimiz haricinde 15 farklı projenin de başına neler geldiğini, ne gibi süreçlerden geçtiğini görüp doğrusuyla yanlışıyla, eğrisiyle doğrusuyla diyelim ya da bir şekilde 15 kat deneyim kazanmaya tek bir iş yapıp çarpı 15 tane deneyim sahibi.
+
+512
+01:39:19,539 --> 01:39:23,079
+Olmayı planlıyoruz önümüzdeki iki hafta boyunca.
+
+513
+01:39:25,380 --> 01:39:31,039
+Evet, dersimizin sonuna geldik ve dediğim gibi teorik kısmının da sonuna geldik.
+
+514
+01:39:31,460 --> 01:39:33,500
+Son iki haftada sözü size bırakacağım.
+
+515
+01:39:34,179 --> 01:39:39,759
+Süre olarak da zaten saat 14.40 olmuş tam tamına saatimizi de tamamladık.
+
+516
+01:39:40,420 --> 01:39:41,939
+Sorularınız varsa alayım.
+
+517
+01:39:41,939 --> 01:39:46,840
+Beni sabırla dinlediğiniz için dönem boyunca sizlere teşekkür ediyorum.
+
+518
+01:39:47,380 --> 01:39:50,539
+Evet, var mı soru? Şimdi oraya geçelim.
+
+519
+01:39:55,796 --> 01:39:57,456
+Hocam, ben bir şey sorabilir miyim?
+
+520
+01:39:57,756 --> 01:39:58,076
+Sor.
+
+521
+01:39:58,896 --> 01:40:02,276
+Şey, bizden rapor, yanlış hatırlamıyorsam raporla yollayabilirsiniz.
+
+522
+01:40:02,636 --> 01:40:04,116
+Olabiliriz, inanaydı sanırsam.
+
+523
+01:40:04,556 --> 01:40:10,776
+Onu direkt size mail olarak mı atalım, yoksa bir sistem ve modül açacak mısınız? Oraya mı yutlayacağız?
+
+524
+01:40:11,116 --> 01:40:13,936
+Şey açacağım, ödev modülü açacağım dedim ya.
+
+525
+01:40:14,452 --> 01:40:33,452
+Oraya ödev, proje şeyi açacağım online yıldızda. Oraya upload edeceksiniz. Eğer sığmıyorsa da link koyabiliyorsunuz ya, Drive linki falan, SharePoint falan. Öyle bir link koyabilirsiniz. Hani uygulamanız çok büyüktür, sığmıyordur kodları falan. Oradan o şekilde de bir paylaşım yapabilirsiniz.
+
+526
+01:40:42,452 --> 01:40:53,492
+5 kod birden, yani 5 tane ödev birden yüklemesin. Tamam mı? Gerek yok ama tabii yüklendiğinden emin olun. Ondan sonra aa biz yüklememiş miyiz diye gelmeyin bana. Tamam.
+
+527
+01:40:57,452 --> 01:41:09,591
+Chatten bir soru var. Slide'ları paylaşacak mısınız? Paylaşacak mı? Paylaşmadım mı ben slide'ları ya? Hiç paylaşmadım mı sizinle? Niye öyle oldu? Bir dakika.
+
+528
+01:41:10,515 --> 01:41:11,795
+verdiğim
+
+529
+01:41:18,068 --> 01:41:41,248
+Evet, paylaşmamışım. Tamam. Ne yapacaksınız slide'ları? Ders çalışmak için. Öyle mi? Tamam. Vakit olursa onları bir araya paketleyip dersin duvarından onları da paylaşmaya gayret ederiz. Diyelim. Tamam. Peki. Tablolara bakarsınız.
+
+530
+01:41:44,148 --> 01:42:03,087
+Okey, o zaman arkadaşlar bu haftalık bu kadar. Dediğim gibi ben planı programı yapıp proje sunumları için sizleri haftaya dinlemeye başlayacağız. Teşekkür ediyorum tekrardan katılımlarınız için. Kendinize iyi bakın, iyi günler. Haftaya görüşürüz.

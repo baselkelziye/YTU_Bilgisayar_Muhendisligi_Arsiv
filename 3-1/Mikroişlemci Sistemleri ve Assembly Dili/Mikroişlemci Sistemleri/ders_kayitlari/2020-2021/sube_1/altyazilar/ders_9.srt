@@ -1,0 +1,2583 @@
+1
+00:00:47,539 --> 00:00:49,036
+Arkadaşlar, merhaba.
+
+2
+00:01:09,652 --> 00:01:29,652
+Geçen hafta hatırlayacak olursanız arkadaşlar, 8255'in tanımlamasıyla ilgili ilerlemiştik. Pin diagramından bahsetmiştik. İçerideki portların erişimi nasıl olacak ondan bahsetmiştik.
+
+3
+00:01:34,611 --> 00:02:00,611
+İç yapısına bakmıştık. 16 bitlik bir veri yoluna sahip 8086'ya, 8255'in nasıl bir arayüzde bağlanması gerektiğini görmüştük. Burada üç yapımız vardı. Bunlardan birincisi ardışık çift adreslere 8255'i yerleştirmek, diğeri ardışık tek adreslere, son alternatif de dersimizin konusu olmayacak şekilde ardışık adreslere yerleştirmek şeklindeydi.
+
+4
+00:02:01,555 --> 00:02:21,156
+Burada hatırlayacak olursanız, hem de laboratuvara da katkısı olması açısından, ardışık çift adreslere yerleştirdiğimizde, bu durumda A0 her zaman için 0 oluyordu hatırlayacak olursanız. Bu arada duyabiliyorsunuz değil mi? Herhangi bir sıkıntı yok.
+
+5
+00:02:33,460 --> 00:02:36,319
+Ekranı paylaştım, onu da görebiliyorsunuz umarım.
+
+6
+00:02:42,195 --> 00:02:47,795
+Bu haftaki labın özellikle de konusu olması açısından hemencik bir üzerinden geçelim tekrar.
+
+7
+00:02:48,555 --> 00:02:54,396
+Ardışık çift adreslere yerleştirme ve ardışık tek adreslere yerleştirme aslında temel olarak nereden çıkıyordu?
+
+8
+00:02:54,876 --> 00:02:58,435
+8086 mikroişlemcinin 16 bitlik veri yolu vardı.
+
+9
+00:02:59,915 --> 00:03:05,195
+Bizim kullandığımız I.O. cihazları 8 bitlik bir arayüze sahip, yani 8 tane data ucu var.
+
+10
+00:03:05,747 --> 00:03:16,548
+V8086'nın desteklediği üç tane veri transferi var. Bunlar bir ClockCycle'da bunu yapabiliyor. Bir okuma yazma ClockCycle'da bu söyleyeceklerimi yapabiliyor.
+
+11
+00:03:16,752 --> 00:03:40,872
+Çift adresten 8 bitlik okumayı bir seferde yapabiliyor. Tek adresten 8 bitlik okumayı bir seferde destekliyor ve yine çift adresten 16 bitlik okumayı destekliyor. Bu durumda mikroişlemcinin 20 tane adres ucuyla 1M çarpı 8 adet hafızayı aslında adresleyebilirken, mikroişlemci karşısında 512K çarpı 16'lık bir hafıza arayüzü görmek istiyor.
+
+12
+00:03:42,195 --> 00:03:59,595
+Benzer şekilde bunu I.O arayüzü için düşündüğümüzde de toplamda 64K çarpı 8'lik bir I.O arayüzü varken, interfejimiz varken, kapasite varken, mikroişlemci karşısında 32K çarpı 16'lık bir arayüz görmek istiyorum. Maksimum kapasiteden bahsediyorum tabii.
+
+13
+00:03:59,595 --> 00:04:07,635
+Çarpı 16'yı sağlayacak şekilde veya çarpı 8 ise bunun da ardışık çift veya ardışık tek adreslerde olması
+
+14
+00:04:07,792 --> 00:04:14,792
+Mikroişlemci açısından daha verimli bir veri akışı sağlıyordu, hatırlayacak olursanız.
+
+15
+00:04:14,792 --> 00:04:22,792
+Dolayısıyla burada da gördüğümüz ilk durum, adres çift adreslere yerleştirilen bir 8255 ile karşılaşmış oluyoruz.
+
+16
+00:04:22,792 --> 00:04:27,792
+Adres çift adreslere yerleştirilmişse A0'ının 0 olması gerekiyordu.
+
+17
+00:04:29,136 --> 00:04:35,896
+Ardışık çift adresler için 4 farklı kombinasyonu mikroişlemciden gelen A1 ve A2 adres uçları oluşturuyordu.
+
+18
+00:04:35,896 --> 00:04:43,656
+Ve bir de veriyi mikroişlemci çift adresden 8 bitik işlem olduğu için veri yolunun düşük anlamlı byte'ından bekliyordu.
+
+19
+00:04:43,656 --> 00:04:52,016
+Dolayısıyla 80255'in data uçlarını mikroişlemcinin D0, D7'si arasına bağlamamız gerekiyordu hatırlayacak olursanız.
+
+20
+00:04:57,492 --> 00:05:14,532
+Dolayısıyla bu birinci yapıydı. Bunun aynı zamanda burada bir takım eş değerlilikler vardı. A0'ın 0 olarak aranması aynı zamanda arkadaşlar, bus high enable dediğimiz ucun da ne olarak aranmasıydı? 1 olarak aranmasıydı. Bu ikisi birbirine eş değerdi. 8 bit.
+
+21
+00:05:14,863 --> 00:05:21,983
+Shift adresten eşdeğerdi. Dolayısıyla bu ikisini birbiriyle yer değiştirebiliyorduk. Şuradaki durum önemliydi.
+
+22
+00:05:22,623 --> 00:05:34,504
+Hatırlayacak olursanız, in veya out komutları için mesela al, p8 veya p8, al gibi bir komut kullandığımızda
+
+23
+00:05:34,963 --> 00:05:49,963
+Şurada portun 8 bitlik adresi eğer fix bir sayı olarak, imediat bir değer olarak verebiliyorsak, adres çözümlemeyi de bu 8 tane adres ucuyla yani A7, A0 arasındaki uçlardan yapmak kabuldü.
+
+24
+00:05:49,963 --> 00:05:59,692
+A8 ile A15 arasındaki uçlarla ilgili bir adres çözümleme yapmanıza gerek yoktu. Bunu böyle kabul etmiştik. Dolayısıyla bizim burada görmüş olduğumuz adres çözümleme devresi
+
+25
+00:06:00,500 --> 00:06:20,980
+3x8 dekoder üzerinden olmuştu. Bunun özelliği neydi? 3 tane enable ucu var. Bunlardan ikisi aktif 0, bir tanesi aktif 1. Dolayısıyla bu uçlara 0, 0, 1 gelmiş ise çıkışlardan bir tanesi 0 oluyor, diğerleri 1 oluyor.
+
+26
+00:06:27,668 --> 00:06:48,628
+1 oluyordu. Hiçbirisi seçim yaptırmıyordu. Uygun enable değerlerini vermişsek, yani 001 değerini vermişsek, şuraya yazmış olduğumuz sayının binary karşılığı yani A2, A1 ve A0 uçlarına, şuradaki anlam sırasına göre yazmış olduğumuz binary sayının decimal karşılığı kaçsa,
+
+27
+00:06:49,843 --> 00:06:59,144
+10 numaralı çıkışımız 0 oluyor, diğerleri 1 oluyor. 0 bizim için anlamlı çünkü bizim kullandığımız chip select ucumuz da aktif 0-1 uc.
+
+28
+00:06:59,144 --> 00:07:11,444
+Dolayısıyla seçim için mantıklı oluyordu. Toplamda 3 tane seçim ucu, 3 enable ucu, yani toplamda 6 tane kontrol ucumuz var.
+
+29
+00:07:16,339 --> 00:07:43,139
+Toplamda 8 tane adres ucu var, bir de EMAI ucu var. Toplam 9 tane adres çözümleme ucu yapıyordu. Bunlardan 2 tanesi doğrudan 82.55'e bağlı olduğu için eksi 2 dedik. Geriye 7 tane uç kalıyor dekodere bağlamamız gereken. Dolayısıyla 2 tane ucu uygun şekilde birleştirmemiz gerekiyordu. Bunu da burada görüyorsunuz. Bu yapı çerçevesinde gerçekleşiyordu bu.
+
+30
+00:07:44,564 --> 00:07:49,163
+Bu birinci örneğimizdi. Şimdi ikinci örneğimiz nasıldı? Ona bakalım.
+
+31
+00:07:50,704 --> 00:07:54,163
+İkinci örneğimiz ardışık tek adreslere yerleştirmeydi.
+
+32
+00:07:54,803 --> 00:08:03,764
+Ardışık tek adreslere yerleştirildiği vakit mikroişlemci veriyi D8-D15 arasında bekliyor. Dolayısıyla veri uçlarının bağlantısında değişiklik yapacağız.
+
+33
+00:08:09,492 --> 00:08:14,092
+Biz A0'ın 1 olmasını şuna eşdeğer olarak düşünebiliriz.
+
+34
+00:08:14,872 --> 00:08:18,792
+Bus I enable ucunun da 0 olmasıyla eşdeğer.
+
+35
+00:08:18,892 --> 00:08:28,392
+Dolayısıyla buradaki bağlantıyı çıkartıp bunun yerine doğrudan Bus I enable ucunu getirip şuradan bağlayabilirdik.
+
+36
+00:08:28,492 --> 00:08:29,312
+Bu da aynı şeydi.
+
+37
+00:08:30,132 --> 00:08:31,832
+Aynı meseleler burada da geçerli.
+
+38
+00:08:31,832 --> 00:08:36,832
+Ardışık tek adreslere yerleştirildiği için 4 farklı kombinasyon A1, A2 adresleri sağlıyor.
+
+39
+00:08:37,268 --> 00:08:42,268
+Adres çözümleme için 3x8 dekoder kullandık. Dolayısıyla 8 bitik adresi yeterli.
+
+40
+00:08:42,268 --> 00:08:49,268
+I.O işlemi olduğu için M.I.O'nun 0 olduğu durumu arıyoruz gibi durumlar burada söz konusuydu hatırlayacak olursanız.
+
+41
+00:08:49,268 --> 00:08:54,268
+Son durumumuz ise, ardışık adreslere yerleştirmeydi.
+
+42
+00:08:54,268 --> 00:08:59,268
+Ardışık adreslere yerleştirme biraz karmaşık bir donanımla birlikte sağlanabiliyor.
+
+43
+00:08:59,268 --> 00:09:03,211
+Çünkü eğer çalıştırdığımız adres tek ise,
+
+44
+00:09:03,412 --> 00:09:20,211
+8255'i veri yolunun yüksek anlamlı byte'ına, eğer ki tek adreste, eğer ki sıradaki adresimiz çift ise veya kullandığımız adres çift ise, veri yolunun düşük anlamlı kısmını aktarması lazım. Bunun içinde bir leç mantığı kullanmıştık.
+
+45
+00:09:20,951 --> 00:09:25,532
+Gelen adrese göre çift ise veya tek ise, sadece bunlardan bir tanesi aktif olarak,
+
+46
+00:09:26,067 --> 00:09:38,367
+8255 verilerini yüksek anlamlı veya düşük anlamlı kısma aktarabiliyorduk. Burada 4 farklı kombinasyonu bu sefer A0 ve A1 uçları oluşturuyordu. Buna da dikkat edecektik.
+
+47
+00:09:38,367 --> 00:09:48,567
+Dediğim gibi bu çok dersimiz kapsamında olan bir durum. Örnek olarak hatırlamış olalım sadece. Daha sonrasında mod 0 için kontrol yazmacını incelemiştik.
+
+48
+00:09:48,820 --> 00:09:59,820
+Burada ayarlar nasıl yapılabilir diye bitset reset modunun konfig bitlerini incelemiştik. Daha sonra mod 0 ile ilgili olarak örnekler yapmıştık. Bu örneklere bakacak olursak da
+
+49
+00:10:04,724 --> 00:10:07,724
+İşte bu örneklerimiz ne olmuştu?
+
+50
+00:10:09,724 --> 00:10:12,724
+8255 nasıl chip select yaparız?
+
+51
+00:10:12,724 --> 00:10:15,724
+Buton ve led nasıl süreriz?
+
+52
+00:10:15,724 --> 00:10:20,724
+Ondan sonra 7 segment display nasıl süreriz?
+
+53
+00:10:20,724 --> 00:10:24,724
+4 tane 7 segment display'i bir arada nasıl süreriz?
+
+54
+00:10:25,139 --> 00:10:35,139
+Ondan sonra son olarak da keypad 4x4, 3x4 herhangi bir matriz formatındaki keypad yapısını nasıl süreriz bunları görmüştük.
+
+55
+00:10:35,139 --> 00:10:39,139
+Şimdi dolayısıyla geçen hafta yaptıklarımızı hatırladık. Bu hafta için de...
+
+56
+00:10:39,892 --> 00:11:06,392
+Eğer yapabiliyorsanız, vakit ayırabilirseniz iyi olur dediğim, zorunlu olmayan ödevlerimiz vardı açıkçası hatırlayacak olursanız. Bunlardan bir tanesi, dersteki örneklerde biz 4 tane 7 segment display'in hepsinde de aynı değeri yakıyorduk ama size zorunlu olmayan ev ödevi olarak hatırlayacak olursanız, 4 tane 7 segment display'de 1, 2, 3, 4 değerlerini yakmanız için bir...
+
+57
+00:11:06,740 --> 00:11:11,240
+zorunlu olmayan ödev şeklinde bunu tanımlamıştım. Bunu yapan var mı arkadaşlar?
+
+58
+00:11:17,587 --> 00:11:43,787
+Peki, şöyle bir şey rica edeceğim. Yapmış olduğunuz uygulamayı, ekran paylaşımı da var, [öğrenci] yapmışsın. Bunu çalıştırarak bir örneğini gösterebilir misin ve kısacık bir açıklamasını rica etsek senden olur mu? Eğer bilgisayar başındasın ve müsaitse ses paylaşımı ve ekran paylaşımı bundan rica edebilir miyiz?
+
+59
+00:11:46,131 --> 00:11:51,131
+Kısacık sadece çalıştırıp nasıl yaptığını anlatmanı rica edeceğim.
+
+60
+00:12:05,716 --> 00:12:23,316
+Benzer şekilde yine şeyi de sormuş olayım. Bir de matris yapısında keypad için de bir zorunlu olmayan ödev vermiştim. Orada da aslında bizim derste yaptığımız örnek tek bir sütunun tek bir satırını taramak şeklindeydi. Sadece o tuşa basıldığında biz anlayabiliyorduk.
+
+61
+00:12:23,316 --> 00:12:32,316
+Herhangi bir tuşa basıldığında bu tuşun hangisi olduğunu anlayacak şekilde kodu genişletmenizi istemiştim. Onunla ilgili de eğer...
+
+62
+00:12:33,375 --> 00:12:39,975
+Yapmış olan varsa, onunla ilgili de bir arkadaştan, yani yapan kişiden yine rica edeceğim.
+
+63
+00:12:39,975 --> 00:12:51,975
+Kısacık bir şekilde uygulamayı göstersin ve çok kısa bir şekilde açıklamasını yapabilirse, hep birlikte bunu değerlendirmiş olalım.
+
+64
+00:12:51,975 --> 00:12:58,375
+Daha sonrasında da, zaten bunlar bu haftanın lab konusu aynı zamanda.
+
+65
+00:12:58,484 --> 00:13:06,284
+Daha sonrasında da bu haftanın konusu olan 8255'in mod 1 ve mod 2 örneklerine bakıyor olacağız.
+
+66
+00:13:23,028 --> 00:13:40,028
+Böyle sözler anlatma imkanı yoksa, o zaman sadece bir çalıştırarak göstersen, gözden kaçan birtakım noktalar varsa onları bir değerlendirsek iyi olabilir. Çünkü burada özellikle şöyle bir durum oluyor.
+
+67
+00:13:48,755 --> 00:13:52,155
+Birisinde yakmak istediğimiz değer diğerinde de görülüyor.
+
+68
+00:13:52,155 --> 00:13:58,555
+Kod tarafından ziyade direkt uygulama tarafını da açabilirsin [öğrenci] istersen.
+
+69
+00:13:58,555 --> 00:14:00,555
+Evet, burada çalıştıralım.
+
+70
+00:14:00,555 --> 00:14:04,555
+Evet, doğrudan bir 2-3-4 değerini görebiliyoruz. Herhangi bir sıkıntısı yok.
+
+71
+00:14:04,555 --> 00:14:08,155
+Burada çıkabilecek sıkıntılar genel olarak şöyle oluyordu.
+
+72
+00:14:08,155 --> 00:14:12,555
+Yeterli bir güncelleme frekansı sağlayamamışsak...
+
+73
+00:14:12,916 --> 00:14:25,516
+Bu tarama bütün segmentlerde bütün 1-2-3-4 değerinin hepsini de sanki yanıyormuş gibi bir etki oluşturacaktı. O da hepsinde sanki 8 varmış gibi görmemize sebep olacaktı.
+
+74
+00:14:25,516 --> 00:14:37,756
+Birincisi çıkabilecek problem buydu. Bunu da aşmışsın. İkinci olarak da aynı anda iki segment aktif kalırsa, yani segment geçişini güzel yapamazsak,
+
+75
+00:14:40,288 --> 00:15:00,788
+4 yanardı. 2 yanması gereken yerde 1 ve 2 aynı anda yanabilirdi kısa bir süre. O da görüntü kalitesini, display kalitesini bozabilirdi. Onunla da ilgili bir problem yok genel olarak. Sesle ilgili açamayacağım dediğin için o zaman bu noktada bırakabiliriz öyleyse. Teşekkür ederim.
+
+76
+00:15:05,299 --> 00:15:12,299
+Peki, teşekkür ederiz tekrardan. Peki, keypad ile ilgili uygulama örneği var mı? Yapan var mı?
+
+77
+00:15:19,347 --> 00:15:21,347
+Tamam, keypad örneğini de görelim.
+
+78
+00:15:25,011 --> 00:15:26,211
+Benzer şekilde.
+
+79
+00:15:27,111 --> 00:15:33,211
+Tabi buradaki keypad örneğimizde 4x4 tuş tarama mantığımızda bir varsayımımız var arkadaşlar.
+
+80
+00:15:33,711 --> 00:15:34,731
+O da şu.
+
+81
+00:15:35,511 --> 00:15:42,671
+Aynı anda iki tuşa birden basmadığımızı varsayıyoruz. Aynı anda iki tuşa birden bastığımız bir durum söz konusu olmuş olsaydı
+
+82
+00:15:43,191 --> 00:15:44,471
+burada
+
+83
+00:15:46,011 --> 00:15:49,591
+tuş tarama takımını diyotlarla korumamız gerekecekti.
+
+84
+00:15:56,371 --> 00:16:03,871
+Evet, parmağımızı çektiğimizde mesela tuştan çektiğimizde sönüyor. O neden öyle acaba?
+
+85
+00:16:12,052 --> 00:16:15,451
+Var mı onunla ilgili bir fikri? Neden öyle olmuş olabilir?
+
+86
+00:16:25,779 --> 00:16:28,779
+Evet, genel olarak çalışma mantığı bu şekilde olacaktı.
+
+87
+00:16:28,779 --> 00:16:31,779
+Bu her bir satırın...
+
+88
+00:16:34,779 --> 00:16:35,779
+Tamam, peki.
+
+89
+00:16:39,155 --> 00:16:41,155
+Bununla ilgili de teşekkür ederiz [öğrenci].
+
+90
+00:16:45,395 --> 00:16:51,096
+Şimdi burada normalde şunu bekliyorduk. Olması gereken durum şuydu.
+
+91
+00:16:52,096 --> 00:16:58,995
+Herhangi bir tuşa bastıktan sonra bu tuş değerinin yazılımsal veya mantıksal olarak leçlenmesi lazım.
+
+92
+00:16:58,995 --> 00:17:02,795
+Herhangi bir tuşa başka basmadığım süre boyunca bunun kalması lazımdı.
+
+93
+00:17:03,795 --> 00:17:07,295
+Lazım ya daha doğrusu böyle bir uygulama daha iyi olabilir.
+
+94
+00:17:07,892 --> 00:17:22,292
+Onun dışında ama genel olarak mantığımız bu şekilde. Dediğim gibi iki tuşa birden basılma durumu varsa, o zaman tabii birden fazla tuşa basıldığını anlayıp, ona göre bunları diskart edebiliriz.
+
+95
+00:17:22,292 --> 00:17:30,692
+Ama donanım olarak mutlaka ilgili diyotlarla bunların kısa devrelerinin engellenmesi lazım. Şunun için diyorum.
+
+96
+00:17:30,736 --> 00:17:41,456
+Örneğin bir tane sütun aktif 0, bir başka sütun aktif 1, iki sütundan aynı anda tuşlara bastığım zaman sürülme sırasına göre bunlar birbiriyle kısa devre olabilir.
+
+97
+00:17:41,456 --> 00:17:52,216
+O yüzden aynı anda basılan tuşlar varsa diyotlarla keypadin korunması lazım. Bu da zaten 8255'inde korunmasına karşılık geliyor.
+
+98
+00:17:52,216 --> 00:17:54,216
+Tamam, genel olarak...
+
+99
+00:17:54,867 --> 00:18:00,268
+Bu şekilde bir sonuç elde etmeyi bekliyoruz zaten. Şimdi şöyle devam edelim.
+
+100
+00:18:01,827 --> 00:18:06,268
+Bu haftanın konusuyla ilgili olarak devam edelim. Sunumu açayım ben.
+
+101
+00:18:09,027 --> 00:18:16,227
+Peki buna da geçmeden önce şunu da soralım. Hani bu haftada ney var? Netice itibariyle siz de bakmışsınızdır.
+
+102
+00:18:16,707 --> 00:18:20,707
+Takıldığınız, aklınıza takılan konular var mı?
+
+103
+00:18:21,268 --> 00:18:24,188
+Yoksa genel olarak yapabilir durumda mıyız?
+
+104
+00:18:39,731 --> 00:18:40,851
+Evet, genel için.
+
+105
+00:18:44,512 --> 00:18:50,092
+Genel bir şeyse [öğrenci], söylersen birlikte değerlendirmeye çalışalım.
+
+106
+00:18:50,771 --> 00:18:59,771
+Ama çok spesifik bir noktaysa, yani işte ilgili segment şöyle yanıyor, böyle yanmıyor veyahut da çok kısa yanıyor.
+
+107
+00:18:59,771 --> 00:19:06,652
+Çok spesifik bir şeyse değerlendiremeyebiliriz ama genel bir şeyse sorarsan.
+
+108
+00:19:07,380 --> 00:19:08,380
+Tamam.
+
+109
+00:19:13,011 --> 00:19:18,011
+İkinci butonu engellemek derken, bu keypad ile ilgili miydi acaba?
+
+110
+00:19:25,395 --> 00:19:27,395
+İstersen örnek üzerinden göstermek istersen.
+
+111
+00:19:27,395 --> 00:19:28,395
+Hocam, beni duyabiliyor musunuz?
+
+112
+00:19:28,395 --> 00:19:29,395
+Evet, duyabiliyorum.
+
+113
+00:19:29,395 --> 00:19:42,395
+Ödevde şey verilmiş de, birinci buton basıldıktan sonra ikinci veya üçüncü butona basılırsa, yalnızca ilk batılan buton dikkate alınsın. Ondan sonrakiler dikkate alınmasın olarak istenmiş.
+
+114
+00:19:42,395 --> 00:19:53,395
+Ama yani ben bir taneyi argılıyorum, onu yazdırabiliyorum sorunsuz şekilde. İkinci butona basılırsa, ikisinin toplamı şekilde yazdırıyorum. O şekilde bir sıkıntı.
+
+115
+00:19:53,395 --> 00:20:04,395
+Yine iki farklı basılan, aynı anda basılan iki tuşun toplam olduğu için ikisinin farkına varmış oluyoruz aslında öyle mi?
+
+116
+00:20:04,395 --> 00:20:15,395
+Yok, yani benimki onun farkına varamıyor işte. Yani mesela ikinci butona bastığı zaman sadece iki yazması gerekirken hem birinci hem ikinci butona basılıysa eğer ki, üç yazıyor.
+
+117
+00:20:16,564 --> 00:20:22,564
+Anladım. Orada maskelemeyi uygun şekilde yapmamış olabiliriz belki. Evet, sanırım.
+
+118
+00:20:22,564 --> 00:20:31,564
+Mesela birinci satırla ilgili bir değişim algıladıktan sonra sadece o birinci satır maskesini korumak gerekebilir belki.
+
+119
+00:20:31,564 --> 00:20:41,564
+Sadece her seferinde, örneğimiz şu şekilde değil mi? Dört tane seven segment olan örnek değil mi bu? Evet.
+
+120
+00:20:42,000 --> 00:20:45,000
+Kuş tuş darama takımı nasıldı?
+
+121
+00:20:45,000 --> 00:20:55,000
+Dört tane buton mevcut. Birinci butona basıldığı zaman bir yanacak, ikinci butona basıldığı zaman iki, üçüncü butonda dört, dördüncü butonda sekiz yanacak.
+
+122
+00:20:55,071 --> 00:21:15,551
+Tamam. Aslında burada maskeleme ininin de ipucu burada var fark ettiysen. Bitlerin ilgili binary sırasıyla ağırlıklandırılmış bir yapıda. Dolayısıyla maskeyi ne şekilde uygulaman gerektiğini kabaca fark etmen gerekiyor diye söyleyeyim. İpucunu böyle verin. Tamam mı? Tamam. Tamam. Teşekkürler.
+
+123
+00:21:19,911 --> 00:21:21,551
+Bir başka sorumuz var.
+
+124
+00:21:22,900 --> 00:21:41,060
+Şimdi bus high enable temel olarak şuydu hatırlayacak olursanız. Şimdi iki tane kolon şeklinde çarpı 16 şeklinde ifade ediyoruz ya hafıza ve IO cihazlarını. Bunlardan düşük anlamlı olanı veyahut da çift adreste olanlarını A0'ın 0 olmasıyla seçiyoruz.
+
+125
+00:21:41,471 --> 00:21:55,552
+Yüksek anlamlı olanı veya tek adreste olanları bus high enable'ın 0 olmasıyla seçiyoruz. Dolayısıyla aslında A0 dediğimiz uç, adres ucu olmasına rağmen bus low enable olarak da çalışıyor. Bir diğer ismi de bus low enable.
+
+126
+00:21:56,211 --> 00:22:02,812
+Dolayısıyla verinin yüksek anlamlı veri yolunda olduğunu anlamak için Basaya Nable'ı kullanıyoruz.
+
+127
+00:22:02,812 --> 00:22:09,251
+Mesela şöyle söyleyeyim, 80, 386 ve 486'larda 32 bitlik veri yolu var.
+
+128
+00:22:09,251 --> 00:22:17,332
+Her bir hafıza gözümüz 8 bit olduğuna göre, bunlar hafızayı çarpı 32 olarak görmek istiyor. Bu ne demek?
+
+129
+00:22:17,332 --> 00:22:20,132
+4 tane hafıza bloğu yan yana gelmesi demek.
+
+130
+00:22:20,256 --> 00:22:28,716
+Bu da aslında A0 ve A1'lerin ikisinin birden 0 olduğu bir blok var. Bus Enable 0 olarak geçiyor.
+
+131
+00:22:28,716 --> 00:22:38,256
+A0'ın 1, A1'in 0 olduğu bir bloğu var. Yani 4'e bölündüğünde bir kalanlar bloğu diyebiliriz buna. O Bus Enable 1 bloğu.
+
+132
+00:22:45,428 --> 00:22:59,428
+2 ve son olarak da 4'e bölündüğünde 3 kalanı veren bütün adreslerin oluşturduğu bir kolon var. Burası da bus enable 3 kolonu. Dolayısıyla bunların her birisi ayrı bir fiziki uç olarak mevcut orada.
+
+133
+00:22:59,428 --> 00:23:09,312
+8086'da ise bus enable ayrı bir uç olarak mevcut. Bus love enable olan ise A0 ile eşdeğer gibi düşünüyoruz. Dolayısıyla
+
+134
+00:23:09,311 --> 00:23:19,831
+Çift adreslere yerleştirirsek 8255'i, bunun anlamı şudur, A0'ın 0 olduğu durumlardır veya bus, I enable'ın 1 olduğu durumlardır.
+
+135
+00:23:19,831 --> 00:23:26,791
+A0'ın 0 olduğu durumu adres çözümleme devresinden çıkartıp bus, I enable'ın 1 olduğu durumu koyarsam aynı şeyi yapmış olurum.
+
+136
+00:23:27,551 --> 00:23:31,432
+Veya bir başka örnek, ardışık tek adreslere yerleştirmişsek,
+
+137
+00:23:31,743 --> 00:23:39,923
+Bu durumda da A0'ın 1 olduğu durumu arıyoruz demektir. Bunun bir başka anlamı da şu, bus I enable'ın 0 olduğu durumu arıyoruz demektir.
+
+138
+00:23:40,063 --> 00:23:47,923
+A0'ın 1 olduğu durumu çıkartıp bus I enable'ın 0 olduğu durumu adres çözümleme devresine koyarsak gene aynı sonuca varmış oluruz.
+
+139
+00:23:48,723 --> 00:23:56,843
+Bus I enable'ın asıl önemi nerede? Çift adresten 8, 16 bitlik işlem yaptığımızda adres çift, A0 zaten 0.
+
+140
+00:23:57,299 --> 00:24:14,299
+16 bitlik işlem yaptığım için bus I enable değerinde de mikroişlemci 0 değeri üretiyor. Dolayısıyla hem iki bloğumuz vardı ya, hem çift adresler hem de tek adreslerdeki aynı satır aktif olmuş oluyor. Bu durumda da mikroişlemci bir seferde 16 bitlik veriyi okumuş oluyor.
+
+141
+00:24:14,299 --> 00:24:20,299
+Bus I enable'ın kullanımını tekrar bu şekilde ifade etsem yeterli olur herhalde.
+
+142
+00:24:26,483 --> 00:24:36,243
+Bir de şeyi göreceğiz, tam net olarak biraz daha orada netleşecek. Hafıza arayüzünü gördüğümüz zaman orada 16 bitlik bir arayüzü nasıl yaptığımızı da göreceğiz.
+
+143
+00:24:36,243 --> 00:24:45,843
+Orada iki farklı yaklaşım var. Bunlardan bir tanesi Basai Enable ile birlikte blokları seçtirmek üzerine daha bir farklı versiyonu da orada göreceğiz.
+
+144
+00:24:45,843 --> 00:24:52,163
+Ama bu söylediklerim çerçevesinde yine o konuda gelişecek. Bundan farklı bir şey değil yani.
+
+145
+00:24:58,291 --> 00:25:04,691
+Net olmuştur umarım. Başka sormak istediğiniz bir şey varsa bakalım. Yoksa bu haftanın konusuna geçeceğiz arkadaşlar.
+
+146
+00:25:11,028 --> 00:25:17,028
+Tamam, ben konu paylaşımını başlatıyorum. Arada bir şey olursa tekrar sorarsınız.
+
+147
+00:25:23,859 --> 00:25:36,039
+Başlıyor olursa. Şimdi devam ettiğimiz noktada arkadaşlar bir sonraki konumuz. Bu haftanın sunumunu daha koymadım. Hemen dersten sonra koyarım.
+
+148
+00:25:43,347 --> 00:25:53,548
+Şimdi biz bu noktada mod 0 ile ilgili olarak LED buton, 7 parçalı gösterge ve 3x4 tuş tarama takımlarını görmüştük. Şimdi kaldığımız yerden devam edeceğiz.
+
+149
+00:25:53,548 --> 00:26:09,147
+Genel bir gösterim ile arkadaşlar şunu söyleyebiliriz. 8255'te 3 tane haberleşme modu var. Bunlardan bir tanesi mod 0 dediğimiz mod. Bu basic I.O, simple I.O olarak geçiyor.
+
+150
+00:26:09,364 --> 00:26:34,563
+Burada bizim üç tane portumuz vardı. Bunlar şöyleydi. Port A ve port B'miz bu tek başına giriş veya çıkış olarak ayarlanabilirdi ve 8 bit olarak ayarlanabilirdi. Benzer şekilde çıkışta 8 bit ayarlanabilirdi. Port B'miz giriş 8 bit, yine çıkış 8 bit olarak ayarlanabilirdi.
+
+151
+00:26:35,380 --> 00:26:42,100
+Port C'nin low kısmı ve Port C'nin high kısmı ise arkadaşlar, ayrı ayrı her birisi.
+
+152
+00:26:43,620 --> 00:26:56,500
+4 bit olmak üzere, işte giriş, çıkış, giriş, çıkış olarak kullanılabiliyordu. Her birisi de 4 bit şeklinde ifade edilebiliyordu.
+
+153
+00:26:56,500 --> 00:26:59,940
+Mod 0'ın temel özelliği şuydu.
+
+154
+00:27:00,339 --> 00:27:26,759
+Dış dünyaya veri gönderirken veya dış dünyadan veri alırken bunun bir kontrolü yok. Ben gönderiyorum, mikroişlemci olarak gönderiyorum. Dış dünyaya bu ulaşmıştır diye varsayıyorum. Tekrar veri alındı mı, ekne oluş geldi mi diye bir kontrol yapmıyorum. Benzer şekilde dış dünyadan bir veri okurken de ben burada valid veri var mı yok mu diye kontrol etmiyorum. Burada valid verinin her zaman hazır olduğunu varsayıyorum.
+
+155
+00:27:27,124 --> 00:27:52,184
+Dolayısıyla böyle bir mantık. Öyleyse bunu nerede kullanmak mantıklı? Herhangi bir veri kontrolü gerektirmeyen, mesela LED bağlayacaksam, buton bağlayacaksam, bunun gibi tekil değer çıkacaksam dış dünya veya dış dünyadan tekil değer okuyacaksam ve bunun o anda doğruluğunu kontrol etme ihtiyacım yoksa, bunu doğru kabul edebiliyorsam,
+
+156
+00:27:52,819 --> 00:28:05,819
+Bu durumda mod 0'ı kullanacağız. Mod 0'ı temel olarak önceki örneklerimizde de hatırlayacak olursanız, LED, buton, 7 segment, display, 4x4 tuşlar arama takımı gibi durumlar için kullanmıştık.
+
+157
+00:28:05,819 --> 00:28:16,819
+Mod 1 dediğimiz durum ise şu şekilde çalışıyor. Mod 1 aslında 8255 içerisindeki grup A ve grup B üzerinden çalışıyor.
+
+158
+00:28:19,743 --> 00:28:26,223
+Bir de port C'nin yüksek anlamlı kısmıydı zannedersem. Hemen şuradan bir kontrol edeceğim.
+
+159
+00:28:27,923 --> 00:28:30,503
+Port C'nin yüksek anlamlı kısmıymış, evet.
+
+160
+00:28:32,483 --> 00:28:39,663
+Grup B ise port B ve port C'nin düşük anlamlı kısmından oluşan iki grup.
+
+161
+00:28:40,243 --> 00:28:46,023
+Burada mod 1 dediğimiz şey aslında handshaking temelli bir veri alışveriş mantığı.
+
+162
+00:28:46,612 --> 00:29:12,852
+Burada veriyi gönderirken karşı tarafa bir strob işareti gönderiyoruz. Bu karşı tarafa verinin hazır olduğunun bir işareti oluyor. Karşı taraf veriyi kendi içerisine okuduğu zaman da bize ekne oluş gönderiyor. Bu da karşı tarafın veriyi aldığı anlamına geliyor. Dolayısıyla böyle bir hand-shaking mantığı var. Mod 1'in mod 2'den farkı mod 1'de veri yönü tek.
+
+163
+00:29:15,028 --> 00:29:37,428
+Veri yönü tek ve baştan ayarlanıyor. Başta belli, öyle söyleyelim. Dolayısıyla burada grup A veya grup B ya giriş yönünde çalışabilir, baştan ayarlamışsam, veyahut da çıkış yönünde çalışabilir. Benzer şekilde grup B de giriş veya çıkış yönünde olarak çalışabilir.
+
+164
+00:29:44,147 --> 00:29:49,048
+Port.ch'da ise, Control ve Handshaking işaretleri oluyor.
+
+165
+00:29:55,380 --> 00:30:10,620
+Handshake işaretleri oluyor. Yine grup B mod 1'de çalışırsa, burada port B dediğimiz yapı veri taşıyor. Port C'nin düşük anlamlı kısmı ise bu durumda kontrol ve Handshaking içeriyor.
+
+166
+00:30:13,120 --> 00:30:22,620
+Kontrol ve Handshaking'e ilişkin kontrol bitlerini ve kontrol uçlarını içeren bir yapı olmuş oluyor. Dolayısıyla mod 1 dediğimiz yapı bir Handshake modu.
+
+167
+00:30:23,827 --> 00:30:44,687
+Grup A ve grup B için ayrı ayrı tanımlanıyor. Bakın mod 0, port A, port B, port JLOW ve port CH için, HIGH için tanımlanırken mod 1, grup A ve grup B için tanımlanabiliyor. Ama burada dikkat edeceğimiz bir nokta daha var. Ben mesela grup A'yı mod 1'de kullanırken
+
+168
+00:30:45,364 --> 00:30:54,364
+Grup B'deki portları mod 0'da kullanabilirim. Böyle bir alternatifim de var. Yani burada bir çeşitlilik söz konusu. Ona dikkat edelim.
+
+169
+00:30:54,364 --> 00:31:09,364
+Bir de mod 2'miz vardı. Mod 2 ne işe yarıyor? Mod 2 arkadaşlar bidirectional bir handshaking yöntemi veya handshaking mantığı.
+
+170
+00:31:13,332 --> 00:31:20,132
+Yürüttüğümüz komuta göre mod 2'de ayarlamış olduğumuz port buna göre uygun şekilde çalışabiliyor.
+
+171
+00:31:20,132 --> 00:31:22,532
+Mod 2'de sadece arkadaşlar...
+
+172
+00:31:28,980 --> 00:31:41,579
+Grup A diyeceğim. Grup A tarafı kullanılabiliyor. Dolayısıyla port C'nin bütün bitleri de burada handshaking ve kontrol işaretleri için ayrılmış durumda oluyor.
+
+173
+00:31:41,579 --> 00:31:55,480
+Dolayısıyla port B'ye sadece mod 0 veya mod 1'de kullanım imkanı kalmış oluyor. Dolayısıyla burada grup C ve pardon grup A ve port C'nin tamamı. Hatta bunu şöyle söylersek daha toplu olmuş olur.
+
+174
+00:31:57,364 --> 00:32:10,923
+Port A ve Port C birlikte Handshaking mod 2 için kullanılıyor. Port B boşta kalıyor. Port B'yi istersek mod 0 veya mod 1'de kullanma imkanımız olmuş oluyor.
+
+175
+00:32:11,443 --> 00:32:21,163
+Burada dediğim gibi, Directional modda vermiş olduğumuz komuta göre, Out komutunu kullanmışsam, portun yönü çıkış yönünü olarak ayarlanıyor.
+
+176
+00:32:21,236 --> 00:32:34,996
+Eğer in komutunu kullanmışsam, portun yönü giriş yönlü olarak ayarlanmış oluyor. Verdiğim komuta göre bu belirlenmiş olacak. Dolayısıyla üç farklı modumuz bu şekilde tanımlanmış oluyor.
+
+177
+00:32:37,476 --> 00:32:43,316
+Şimdi mod 0 ile ilgili durumu kontrol yazmacındaki durumu tekrar hatırlayalım.
+
+178
+00:32:43,476 --> 00:32:49,476
+Toplam 8 bitlik bir tane kontrol yazmacımız vardı. Bu kontrol yazmacına erişebilmek için,
+
+179
+00:32:51,476 --> 00:33:02,556
+8255'teki A1 ve A0 adres uçlarına 1 ve 1 değerleri geldiği halde, chip select ucuna da 0 gelmiş ise,
+
+180
+00:33:02,556 --> 00:33:10,556
+benim yapmış olduğum write işlemi sonucunda veri yolundaki değer bunun kontrol yazmacına aktarılıyor.
+
+181
+00:33:12,660 --> 00:33:14,660
+Yani koşullarımız şunlar.
+
+182
+00:33:16,660 --> 00:33:27,660
+8255'in adres uçlarına 1-1 değerini sağlayacak bir adres değeriyle ben yazma işlemi yaparsam bu durumda kontrol yazmacına veri yazmış oluyorum.
+
+183
+00:33:27,660 --> 00:33:36,660
+Kontrol yazmacına veri yazarken en yüksek anlamlı bitine eğer ki ben 0 yazmışsam ve 1 yazmışsam iki farklı durum oluyordu.
+
+184
+00:33:50,740 --> 00:33:52,240
+Şimdi bir soru var, bakıyorum.
+
+185
+00:33:55,240 --> 00:33:58,240
+IN ile okuduğumuz değer anlamsız değerlerdir.
+
+186
+00:33:59,539 --> 00:34:01,440
+Onları dikkate almamamız lazım.
+
+187
+00:34:01,440 --> 00:34:05,940
+Yani oradaki registerdaki geçici değerleri okumuş olabiliriz.
+
+188
+00:34:05,940 --> 00:34:07,740
+Anlamlı değerler değil onlar.
+
+189
+00:34:08,239 --> 00:34:09,739
+Onları dikkate almamamız lazım.
+
+190
+00:34:09,739 --> 00:34:17,239
+Zaten hatırlayacak olursanız, 4 düğmeli ve 4 ledli örnekte
+
+191
+00:34:17,364 --> 00:34:38,963
+Output portundan okuma yapmış olduğumuz zaman onları maskeleyerek atmıştık. Hatırlayabildik mi? Hani port C'nin düşük anlamlı kısmında LED'ler vardı, yüksek anlamlı kısmında butonlar vardı. Biz port C'den okuma yaptığımız zaman LED'leri süren uçları maskeleyerek atıyorduk. Dolayısıyla onları dikkate almamak bizim sorumluluğumuzda diyebilirim.
+
+192
+00:34:45,235 --> 00:35:04,235
+Yaptığımız işlemle ilgili olarak devam edelim. Eğer ki ben en yüksek anlamda 0 yazmışsam, bu kontrol yazmacı, 8255'in bit set, reset modda bir fonksiyon göstereceği anlamına geliyordu. Eğer 1 yazmışsam, burada bir mod ayarı yani mod 0, mod 1 veya mod 2 den birini kullanacağım anlamına geliyordu.
+
+193
+00:35:05,235 --> 00:35:12,172
+Daha sonraki 2 bitimiz bizim grup A'nın modlarını belirliyordu. Eğer ben buraya 0, 0 yazmışsam,
+
+194
+00:35:12,211 --> 00:35:35,891
+Grup A mod 0'da çalışıyor. Eğer 0, 1 yazmışsam mod 1'de çalışıyor grup A. Bakın 1, 1'e don't care yazmışsam yani 1, 1'de ve 1, 0'da da mod 2'de çalışıyor. Fakat dikkat edecek olursanız grup B tarafında herhangi bir mod 2 yapısı yok. Ya 0 ya 1 var. Buna dikkat edelim. Sadece grup A mod 2'de çalışabiliyor.
+
+195
+00:35:36,659 --> 00:35:53,659
+Daha sonrasında eğer ben mod 0'da ayarlamışsam bu arkadaşı veya mod 1'de de ayarlamışsam aynı şekilde mod 0 ve mod 1'de burada port A'nın veri yönü bir sonraki D4 numaralı bitimizde belirleniyor. Bu hangi durumlardaydı?
+
+196
+00:35:53,659 --> 00:36:01,643
+Mod 0'da ve mod 1'de port A'nın hangi yönlü olarak çalışacağı ilgili bitle sağlanıyordu.
+
+197
+00:36:01,780 --> 00:36:21,579
+Daha sonrasında ise port C'nin mod 0'daki yön bilgisi var. Bu port C'nin mod 0'daki yön bilgisini içeren bir konfig bitimiz. Daha sonrasında gelen bit ise grup B'nin hangi modda çalışacağını belirtiyor. Ya 0 ya 1 olabilir.
+
+198
+00:36:29,972 --> 00:36:54,512
+Port B'nin yönünü belirlemek için kullanılıyor. Son olarak da en düşük anlamlı bitimiz C'nin düşük anlamlı 4 bitinin mod 0'daki yönünü belirlemek için kullanılan ayarları içeriyor. Bunlar 8255'in mod 0 ve mod 1'ine ilişkin ayarları içeren örneklerdi. Bir de hatırlayacak olursanız geçen haftadan bir de bit set reset modu vardı.
+
+199
+00:36:54,960 --> 00:37:12,440
+Biz set reset modu temelde ne işe yarıyordu? Port C'nin herhangi bir i numaralı ucunda 0 veya 1 değeri oluşturmak için.
+
+200
+00:37:17,876 --> 00:37:30,876
+Bu ne demek? Bit set reset moduna değer oluşturduğumuza göre bit set reset modu aslında port C'nin i numaralı ucunun output olarak ayarlandığı bir duruma karşılık geliyor gibi düşünebilirsiniz bunu.
+
+201
+00:37:30,876 --> 00:37:40,876
+Bu hangi amaçla kullanılıyor? Şurada söylediğimiz gibi herhangi bir bitte output yönlü olarak 1.0 değerleri oluşturmak için kullanılabilir.
+
+202
+00:37:46,483 --> 00:37:49,683
+Bazı ayarları açıp kapatmak için de kullanılıyor.
+
+203
+00:37:52,503 --> 00:37:56,163
+Ayarlama için de bit set reset modu kullanılmış olacak.
+
+204
+00:37:56,963 --> 00:38:01,923
+Buna baktığımız zaman en yüksek anlamlı bitin 0 olması gerektiğini söylemiştik.
+
+205
+00:38:02,043 --> 00:38:04,563
+Daha sonraki 3 bit don't care olarak çalışıyor.
+
+206
+00:38:05,103 --> 00:38:08,563
+Sonrasında oluşturmuş olduğumuz 3 bitlik binary sayı.
+
+207
+00:38:08,916 --> 00:38:29,316
+Port C'nin hangi numaralı ucuyla ilgili işlem yapacağımızı belirtiyor. Son olarak da en düşük anlamlı bitimiz de bu Port C'nin iyi numaralı seçmiş olduğumuz bitine karşılık o uçta bir değerimi oluşturacağım, sıfır değerimi oluşturacağım. Bunu belirleyen bit olarak ortaya çıkmış oluyor. Temel mantığı da bu şekilde.
+
+208
+00:38:33,331 --> 00:38:52,672
+Bitset reset mantığını kullanarak küçük bir örnek yapmaya çalışalım. Burada 8255 için yerleştirilmiş olduğu bir adres aralığı verilmiş. Bu adres aralığı 80H'dan itibaren artışık çift adresler olarak verilmiş. O zaman bizim kontrol word'ümüzün adresi ne olmuş olacak?
+
+209
+00:38:57,172 --> 00:39:05,951
+Ne olacak? Port A'nın adresine, Port B'nin adresine, Port C'nin adresine ve kontrolördün adresine.
+
+210
+00:39:09,684 --> 00:39:18,404
+80H, 82H, 84H, 86H oluyor değil mi? 88 değil.
+
+211
+00:39:18,900 --> 00:39:44,840
+Control Word 86, H'da olmuşmuş oluyor. Dolayısıyla ben bunu bit set reset moduyla port C'nin iki numaralı ucunda lojik bir seviye oluştururken veyahut da bu A şıkkı, bu da B şıkkı bu arada, port C'nin altı numaralı ucunda değişen bir değer oluşturmak istersen bunu bit set reset moduyla yapacağım. Tek bir bit de değer oluşturuyorum ya. Dolayısıyla bu bit set reset mod örneği olduğunu anladık burada.
+
+212
+00:39:45,311 --> 00:39:49,991
+Dolayısıyla benim yapacağım yazma işlemleri, kontrol vörde bir takım işlemleri içerecek.
+
+213
+00:39:49,991 --> 00:39:54,631
+Adresleri bulduk, öncülden gelen değeri. Şimdi A şıkkına bakalım.
+
+214
+00:39:54,631 --> 00:39:59,751
+Port C2'yi lojik bir olacak şekilde ayarlayan kod bloğunu yazalım.
+
+215
+00:39:59,751 --> 00:40:07,631
+Şimdi port C2'yi lojik bir de ayarlayabilmek için kontrol vörde yazacağımız bit dizisini şöyle oluşturalım.
+
+216
+00:40:07,631 --> 00:40:12,991
+7 numaralı 6, 5, 4, 3, 2, 1, 0.
+
+217
+00:40:13,235 --> 00:40:31,435
+Burada 6, 5 ve 4 numaralı bitler don't care olarak çalışıyordu. Bit set reset modunu verebilmem için en yüksek anlamlı bitin 0 olması gerekiyordu. Daha sonra bakın, PC2, yani 2 numaralı uç, 2 numaralı ucu binary olarak yazdığımız zaman 0, 1, 0 değeridir.
+
+218
+00:40:32,211 --> 00:40:55,371
+Evet, son olarak da bir değeri oluşturmak istediğimiz için bu. Bunu biraz daha basitleştirmek istersek, buradaki değerimiz bizim 0,5H olarak okuyabileceğimiz bir değer. Bakın şuradan böldüm. X'leri, don't key'leri 0 verse 0,5H değeri yapmış oldu. Şimdi bizim yapmamız gereken o zaman bu aşamada kod ile yapacağımız işlem.
+
+219
+00:40:55,764 --> 00:41:01,443
+Alt taraftaki bağlantı ve adres çözümlemelerinin yapıldığını varsayıyoruz tabi. Kodla yapacağımız işlem şuna dönüştü.
+
+220
+00:41:01,443 --> 00:41:09,124
+Öyleyse, 86H adresine 05 değerini yazmam gerekiyor. Bunu nasıl yapacağım? Bir seferde yapabilir miyiz bunu?
+
+221
+00:41:10,704 --> 00:41:20,903
+Ne yaptık yani şu anda? A şıkkının 86H portuna 05H değerini yazmak olarak sonuçlandığını bulduk. Bunu bir seferde yapabilir miyiz?
+
+222
+00:41:33,876 --> 00:41:34,876
+Yapalım.
+
+223
+00:41:43,284 --> 00:41:47,044
+Yani yapamama ihtimalimiz hiç mi yok yani? O kadar mı emin?
+
+224
+00:41:49,604 --> 00:41:51,924
+Nasıl yapıyoruz? Söyleyebilir miyiz?
+
+225
+00:42:00,628 --> 00:42:01,628
+Bir satırla...
+
+226
+00:42:04,628 --> 00:42:07,628
+Bir satırla olmuyor [öğrenci].
+
+227
+00:42:07,628 --> 00:42:13,628
+Çünkü hatırlayacak olursan, out komutunun template'inde şu vardı.
+
+228
+00:42:13,628 --> 00:42:20,628
+Out komutunda, ben buraya port 8 kullanabilirim ama burada ya al olacak ya ax olacak.
+
+229
+00:42:20,628 --> 00:42:24,628
+Dolayısıyla göndereceğim veriyi önceden şunlarda ayarlamam gerekiyor.
+
+230
+00:42:24,755 --> 00:42:29,356
+Öyleyse tek seferde yapmamız mümkün olmayacak bu işlemi.
+
+231
+00:42:32,436 --> 00:42:34,476
+Nasıl yapacağız öyleyse?
+
+232
+00:42:34,735 --> 00:42:38,316
+A şıkkı için cevabımız [öğrenci]'nın yazdığı gibi olacak.
+
+233
+00:42:38,576 --> 00:42:41,135
+move al, 05h
+
+234
+00:42:41,396 --> 00:42:45,235
+Bunun karşılığında mutlaka şu şekilde yazmanız uygun olur.
+
+235
+00:42:45,755 --> 00:42:48,556
+bsr mod ile
+
+236
+00:42:49,336 --> 00:42:50,356
+c2
+
+237
+00:42:51,635 --> 00:42:52,396
+set
+
+238
+00:42:52,659 --> 00:43:19,659
+Bu şekilde bir açıklama yazmanızı bekliyorum mutlaka. Daha sonrasında da bunun için, set için, control word değerimiz bu. Bu değeri oluşturduk. Daha sonrasında da out 86H, al dedik. Bunun açıklamasında şöyle yazabilirsiniz. İşte CV değeri yazıldı şeklinde. Bu ifadeyi de...
+
+239
+00:43:20,244 --> 00:43:33,804
+Yorumunu yapabilirsiniz. Mutlaka bu yorumları siz de yazmaya çalışın. Şimdi B şıkkındaki örneğe gelelim. B şıkkındaki örneğimiz arkadaşlar, port C'nin altı numaralı bitiyle ilgili olarak bir işlem yaptırıyor ve bir de
+
+240
+00:43:34,260 --> 00:43:48,739
+%66'lık duty cycle'a görev çevrimine sahip bir kare dalga oluşturmamız isteniyor. Şimdi duty cycle dediğimiz şey ne? Önce onu bir oluşturalım. Bir kere bu bir kare dalgaymış. Tamam. Periyodik bir kare dalga oluşturalım şurada.
+
+241
+00:43:51,619 --> 00:43:59,139
+Periyodik yapmaya çalışıyorum ama çok mükemmel olmadı. Şimdi periyodik olduğunu varsayalım. Dolayısıyla
+
+242
+00:43:59,539 --> 00:44:08,539
+Bu periyodik işaretle bu başlangıç noktasından nereye kadar gidersem bir periyodu tamamlarım. Şurası bir periyodun bitişi midir?
+
+243
+00:44:12,307 --> 00:44:25,608
+Burası değildir değil mi? Tekrar aynı şekilde hareketin başladığı noktadır. Dolayısıyla şu işaretlemiş olduğum iki aralık bizim bir periyodumuz. Periyod T ile gösteriliyordu hatırlayacak olursanız.
+
+244
+00:44:25,608 --> 00:44:40,108
+Dolayısıyla şuradaki alanlar çok ölçekli çizemedim ama siz ölçekli çizdiğimi varsayın şimdilik. Bunların her birisi bir periyodluk alanlar. Şimdi duty cycle dediğimiz şey ise şu arkadaşlar.
+
+245
+00:44:40,307 --> 00:44:51,588
+Bu periyodik kare dalganın birde kalma süresi, buna da D diyelim, duty değeri diyelim. Bu duty değerinin periyoda bölünmesiyle bulunan değer.
+
+246
+00:44:55,123 --> 00:45:18,463
+Aslında baktığınız zaman nerelerde kullanılıyor? İşte PVM işaretiyle motor sürmede kullanılabiliyor veyahut da modülasyonlarda falan kullanılıyor. Ama temel olarak mantığımız bu. Bir tane kare dalgamız var. Bu kare dalganın 1'de kalma süresi 2x ise 0'da kalma süresi x olacak. Yani %66 duty cycle bunu gerektiriyor.
+
+247
+00:45:21,364 --> 00:45:38,364
+3x oldu. D dediğimiz değer 2x. Dolayısıyla %66'lık duty cycle'ı elde ettik. Dolayısıyla yapmamız gereken işlem, bu mantık çerçevesinde bir kare dalga oluşturmak. PC6'da BSR modla, bit set reset moduyla.
+
+248
+00:45:38,739 --> 00:45:58,839
+2 birim zaman 1'de, 1 birim zaman 0'da kalacak şekilde bir kare dalga oluşturmak. Bunu nasıl yapabiliriz? Bu bir kere sonsuz döngüde kalarak yapacağımız bir şey olduğunu görüyorsunuz zaten değil mi? Çünkü eğer ki ben C6'ya bir değer yazdım, 1 olarak set ettim diyelim. Eğer bunu tekrar 0'a çekmezsem 1'de kalır bu.
+
+249
+00:46:01,331 --> 00:46:13,331
+Tekrar 1'e çekmezsem 0 da kalır. O zaman sürekli olarak 1, 0, 1, 0 şeklinde bunu çekmem lazım. 0'a veya 1'e çekmem lazım. Dolayısıyla bir sonsuz döngü içerisinde bunu yapmak lazım.
+
+250
+00:46:13,331 --> 00:46:25,331
+Onu da şöyle diyelim. L1 diye bir etiketimiz olsun. Burada çıkışımız CMP L1 şeklinde olacak. Dolayısıyla bir sonsuz döngü içerisinde kalacağız.
+
+251
+00:46:25,972 --> 00:46:42,972
+Bizim laboratuvardaki örneklerimizde de buna benzer yapılar olacak arkadaşlar. Sonsuz döngüler olacak. Çünkü mikroişlemci üzerinde bir işletim sistemi yüklü değil. Mikroişlemci başladığı zaman, ilk reset aldığı zaman şu adresten başlıyor.
+
+252
+00:46:44,884 --> 00:47:11,643
+F, F, F, F, F, H değeri yükleniyor. Instruction pointer'a da 0, 0, 0, 0, 0, H değeri yükleniyor. Bu bir fiziki adrese karşılık geliyor. İşte o fiziki adreste de bizim yazmış olduğumuz kodun programda yerleştirildiği hafızaya bir jump komutu var. Öyle düşünün. Dolayısıyla direkt sistem resetlenir, resetlenmez. Bizim yazdığımız kod işlemeye başlıyor. Böyle düşünebilirsiniz yapıyı.
+
+253
+00:47:12,148 --> 00:47:23,148
+Böyle olduğu için de sonsuz döngülerle karşılaşma durumumuz var. Zaten yapmış olduğumuz işlemlere bakalım. Sürekli olarak Seven Segment Display'de bir değer yakıyorum.
+
+254
+00:47:23,148 --> 00:47:37,771
+Veyahut da keypadleri tarayarak herhangi bir tuşa basılmış mı diye kontrol ediyorum veya bunları birleştiriyorum. Keypadleri tarıyorum, bir tuşa basılmışsa Seven Segmentlerde değer yakıyorum. Sonra tekrar keypadleri tarıyorum ve sonsuz döngü içerisinde tekrarlıyorum.
+
+255
+00:47:37,940 --> 00:47:45,660
+Bu tür durumlarla karşılaşacağız. Bizim mikroişlemciler dersi için bu gayet normal bir durum olarak ortaya çıkıyor.
+
+256
+00:47:45,660 --> 00:47:52,980
+Normalde genel amaçlı bir bilgisayarda böyle sonsuz döngülü işlemler oluşturmayız genel olarak.
+
+257
+00:47:52,980 --> 00:47:58,940
+Ama mikroişlemci tarafında genel olarak böyle I.O işlemleri var. Onu söylemiş olayım.
+
+258
+00:47:58,940 --> 00:48:01,940
+Şimdi burada hatırlayacak olursanız...
+
+259
+00:48:05,076 --> 00:48:21,276
+2 birim 1'de kalacak, 1 birim 0'da kalacak. Şimdi bu iki değeri hesaplamaya çalışalım. Yani bit set reset modunda C6'yı 1 yapacak olan control word değerimiz ne? Bunu bilmeye çalışalım.
+
+260
+00:48:21,276 --> 00:48:32,276
+Az önce yapmıştık. En yüksek anlamlı bit 0 olacak. Daha sonraki gelen 3 tanesi don't care. Gdeki sıradaki 3 bit ile 6 yazmamız lazım.
+
+261
+00:48:32,884 --> 00:48:42,884
+Ve son olarak da bir reset edebilmek için bu değeri verdik. Binary olarak bu değer. Bunun hex karşılığı ne arkadaşlar? Bakın. 0DH olarak ortaya çıkıyor değil mi?
+
+262
+00:48:43,884 --> 00:48:57,884
+C, D, H olarak ortaya çıkıyor. Bir başka durumda C6'da 0 değeri üretebilmek için kontrolörde ne yazmalıyım? O da 0, 0, 0, 0. Daha sonrasında da
+
+263
+00:48:58,483 --> 00:49:08,043
+6 yazacağız, 1, 1, 0 ve son olarak da 0 binary değerini oluşturacağız. Bu da 0c hexadexamal değerine karşılık geliyor. Demek ki ben... Efendim?
+
+264
+00:49:10,863 --> 00:49:11,623
+Sorum var mı?
+
+265
+00:49:18,260 --> 00:49:20,700
+Tamam, soru varsa arada kesip sorabilirsiniz yine.
+
+266
+00:49:23,260 --> 00:49:30,300
+Demek ki kontrol wordlerde ben 0DH gönderdiğimde 86H, 86H da port adresimizdi.
+
+267
+00:49:31,700 --> 00:49:35,540
+86H'a 0DH'ı gönderdiğimde 1'e çıkacak.
+
+268
+00:49:36,340 --> 00:49:39,540
+86H'a 0C'ye gönderdiğimde 0'a düşecek.
+
+269
+00:49:40,100 --> 00:49:41,900
+O zaman şöyle yapıyoruz arkadaşlar.
+
+270
+00:49:44,420 --> 00:49:45,060
+Move
+
+271
+00:49:45,460 --> 00:50:12,920
+AL, önce 1'e çıkartalım. 0DH, out, 86H, AL. Şu anda 1'e çıktı bakın, değer 1'e çıktı. Bunun 2 birim boyunca 1'de kalması lazım. Bunu şöyle sağlayabiliriz. Bizim bir birim bekleme sağlayan bir tane boş döngü fonksiyonumuz olduğunu varsayalım. Bunu iki kere çağırsam,
+
+272
+00:50:14,675 --> 00:50:20,175
+2x1'im beklemiş oldum. Daha sonrasında ne yapacağız? Şunu şuradan silelim.
+
+273
+00:50:25,076 --> 00:50:50,635
+Daha sonrasında ne yapacağız? Daha sonrasında ise bu sefer ucu sıfıra düşürmemiz lazım. Bunu da move al, 0ch daha sonrasında da out 86h, al ile yapabiliriz. Bu sefer sıfırda da bir bir zaman birim beklemesi lazım. Bunu da call delay ile sağlayabiliriz.
+
+274
+00:50:52,340 --> 00:51:17,460
+Delay bizim tanımlamış olduğumuz, daha önceden tanımlamış olduğumuz bizim kendimizin implemente ettiği bir fonksiyon. İçerisinde noplar olabilir, hiç önemli değil. İçerisinde boş bir döngü de olabilir. Sadece hiçbir işlem yapmıyor, sadece boş döngü yapıyor. Bunu iki kere çağırdığım zaman iki zaman birimi bekler, bir kere çağırdığımda bir zaman birimi bekler. Daha sonrasında da bekledik, bir zaman birimi bekledik. Son olarak da tekrar.
+
+275
+00:51:17,952 --> 00:51:37,952
+CMPL1 diyerek başa döndük. İşlem nasıl yürüyor? Uç 1'e çıktı. Daha sonrasında iki zaman birimi kadar bekledim, kol kol. Sonra uç değeri 0'a düştü. Bir zaman birimi bekledim ve daha sonra tekrarlıyorum. Tekrar yukarı çıktım yani.
+
+276
+00:51:39,952 --> 00:51:45,676
+Proteosta BSL örneği yok galiba. Laboratuvarda yok.
+
+277
+00:51:46,164 --> 00:51:48,464
+Ama bsr'yi kullanacağız.
+
+278
+00:51:49,244 --> 00:51:52,304
+Bsr'yi şöyle kullanacağız. Mod 1'de falan
+
+279
+00:51:52,564 --> 00:51:57,164
+ilgili interrupt enable ayarları var. Biraz sonra anlatacağım.
+
+280
+00:51:57,424 --> 00:52:03,064
+Onları set etmek için kullanacağız ama buna benzer bir output örneği için kullanmadık. Öyle bir örneğim yoktu.
+
+281
+00:52:04,084 --> 00:52:05,104
+Onu kastediyorsam.
+
+282
+00:52:06,904 --> 00:52:07,664
+Dolayısıyla
+
+283
+00:52:08,444 --> 00:52:13,044
+%66 duty cycle'lı bir sonucu elde etmek için yapacağımız işlemlerde
+
+284
+00:52:13,492 --> 00:52:21,372
+Bunlar olmuş oluyor. Burayla ilgili bir sorumuz var mı arkadaşlar bu örnekle ilgili yoksa bir sonraki örneğe geçeceğim.
+
+285
+00:52:30,068 --> 00:52:34,148
+Arada olursa sorarsınız tekrar. Soru yok herhalde.
+
+286
+00:52:37,940 --> 00:52:44,119
+Tamam, geçtim. Burada bunlara ilişkin örnekleri görüyorsunuz zaten.
+
+287
+00:52:48,275 --> 00:52:59,795
+Şimdi bit set reset modu sonrasında mod 1'den bahsedelim. Mod 1 dediğimiz yapı arkadaşlar,
+
+288
+00:53:02,355 --> 00:53:15,675
+iki tane terminalin veya iki tane 8255 de diyebiliriz bunu veya bir tanesi 8255 olur bir tanesi printer olabilir mesela printer örneği buna örnek veya keyboard olabilir veya tuş tarama entegreleri var.
+
+289
+00:53:15,956 --> 00:53:42,700
+Veyahut da Seven Segment Display tarama örnekleri var. Bunlar Handshaking'i destekliyor. Dolayısıyla 8255 de bu şekildeki bir dış birimin haberleşmesini Handshaking sinyalleri üzerinden kontrollü bir şekilde yapan modlardan birisi Mod1. Mod1'de veri yönümüz tek. Dolayısıyla Mod1'de eğer ki ben ilgili grubu, yani bu gruplar, grup...
+
+290
+00:53:42,739 --> 00:54:01,859
+grup A veya B olabilirdi. Grup A veya B'yi tek bir yönlü olarak ayarlıyorum ya girişe çıkış olacak şekilde. Daha sonrasında ben değiştirmediğim sürece bu mantıkla çalışıyor. Eğer giriş yönünü ayarlamışsam out komutlarını discard ediyor veyahut da onlar anlamsız değerler üretebiliyor diye düşünebilirsiniz.
+
+291
+00:54:02,356 --> 00:54:11,155
+Mod 2'deki durum ne? Mod 2'deki durum ise arkadaşlar, Mod 2'de bir directional veri akışı var. Yani çift yönlü bir veri aktarımı var.
+
+292
+00:54:11,155 --> 00:54:18,996
+Burada yönü baştan belirlemiyoruz. Yönü vermiş olduğumuz komut otomatik olarak belirliyor. Böyle bir önemli özelliği var.
+
+293
+00:54:18,996 --> 00:54:27,715
+Mod 1'de veriler grup A için, grup A için port B'de taşınır.
+
+294
+00:54:28,884 --> 00:54:34,764
+Grup B için ise port B'de taşınır. Mod 1'de veriler bu şekilde bu uçlarda yer alır.
+
+295
+00:54:35,543 --> 00:54:42,204
+Port C'nin uçları ise Handshaking ve kontrol işaretleri amacıyla kullanılır.
+
+296
+00:54:42,963 --> 00:54:49,104
+Dolayısıyla grup A'da kullanılan port C uçlarımız belliydi. Hangileriydi onlar? Bakın şurada.
+
+297
+00:54:49,364 --> 00:54:51,664
+Port C'nin yüksek anlamlı kısmı.
+
+298
+00:54:51,923 --> 00:54:56,023
+Dolayısıyla grup A için port A artı
+
+299
+00:54:56,275 --> 00:55:05,275
+Port C'nin yüksek anlamlı kısmı, grup B için Port B artı Port C'nin düşük anlamlı kısmı şeklinde düşünebiliriz.
+
+300
+00:55:05,275 --> 00:55:11,715
+Şimdi bu uçlar programlama için nasıl bir yol izleyeceğiz?
+
+301
+00:55:11,715 --> 00:55:22,275
+Grup A ve grup B ayrı ayrı programlanabilir. Dolayısıyla ben istersen grup A'yı mod 1'de ve bundan tamamen bağımsız bir şekilde grup B'yi de mod 1'de ayarlayabilirim.
+
+302
+00:55:22,643 --> 00:55:33,043
+Ama istersem de şunu yapabilirim. Grup A mod 1'de çalışırken port B'yi ve boşta kalan port C uçlarını mod 0'da kullanabilirim.
+
+303
+00:55:33,043 --> 00:55:44,619
+Veya tersi de söz konusu. Grup B'yi mod 1'de kullanırken port A'yı ve port C'nin yüksek anlamlı 4 bitini mod 0'da kullanabilirim. Buna imkan var.
+
+304
+00:55:44,980 --> 00:55:51,180
+Dolayısıyla yine 8255'in mod 1'ine dönecek olursak, grup A'yı nasıl tanımlayabiliriz?
+
+305
+00:55:51,180 --> 00:56:03,180
+Grup A'da 8 adet veri biti var, 4 tane de kontrol biti var. Veri bitleri port A'da, kontrol bitleri de port C'nin yüksek anlamlı kısmında.
+
+306
+00:56:03,180 --> 00:56:12,180
+Yine grup B için konuştuğumuzda da port B'nin tamam verileri oluşturuyor. Port C'nin low kısmı da
+
+307
+00:56:12,351 --> 00:56:15,151
+Burada kontrol işaretlerini oluşturmuş oluyor.
+
+308
+00:56:17,551 --> 00:56:18,551
+Burada
+
+309
+00:56:19,951 --> 00:56:22,551
+8255'i mod 1'de
+
+310
+00:56:22,751 --> 00:56:27,951
+grup A ve grup B'yi ayarlayabileceğimiz bütün alternatifleri görüyoruz arkadaşlar. Bakın,
+
+311
+00:56:28,151 --> 00:56:33,351
+burada her bir ucun yerine getirmiş olduğu fonksiyonları da görmüş olacağız. Şöyle başlayalım.
+
+312
+00:56:34,643 --> 00:57:00,583
+Öncelikli olarak bunların isimlerini, onları bir belirleyelim. Burası arkadaşlar, grup A'nın input, hatta mod 1 input olarak çalıştığı durum. Bu alttaki örnek, grup B'nin mod 1'de input olduğu örnek.
+
+313
+00:57:01,588 --> 00:57:09,588
+Hemen bu tarafa geçecek olursak, burası grup A'nın mod 1'de output olduğu örnek.
+
+314
+00:57:09,588 --> 00:57:19,588
+En sonuncu olarak da alttaki de grup B'nin mod 1'de output olduğu örneği içeriyor.
+
+315
+00:57:19,588 --> 00:57:24,556
+Şimdi şurada görmüş olduklarınız arkadaşlar bunlar.
+
+316
+00:57:25,012 --> 00:57:45,351
+Control Word'a yazacağımız değerleri belirtiyor. Şuradaki değerler, Control Word'a aktaracağımız değerleri belirtiyor. Eğer ki ben grup A'yı mod 1'de input olarak ayarlamak istersem, Control Word'a atacağım değer bu olmalı. Nasıldı bakalım? En yüksek anlamlı bitimiz mod select içindi. Sonraki 2 bit.
+
+317
+00:57:46,132 --> 00:58:07,132
+Ne diyor? Grup A mod 1 diyor değil mi arkadaşlar? Grup A mod 1. Bir sonraki örneğimizin 1 olması ise port A input demekti. Dolayısıyla şu 4 biti yazdığımız vakit, 4 bitin karşılığı grup A mod 1'de input yönlü olarak ayarlandı anlamına geliyor.
+
+318
+00:58:07,284 --> 00:58:25,284
+Şuradaki D3 bitinin anlamı biraz farklı bir anlamı var. Bakın, şekilden inceleyelim. Şekilden incelediğimiz zaman, 8255'in port uçlarıyla ilgili olarak, port C'nin 6 ve 7 numaralı bitlerinin boşta kaldığını görüyoruz bu yapıda.
+
+319
+00:58:30,483 --> 00:58:51,483
+Mod 1'de ayarlanacak olsa, port C'nin 6 ve 7 numaralı uçları boşta kalıyor. Bunları arkadaşlar burada mod 0'da sanki birer I.O ucuymuş gibi, basic mod veya mod 0 I.O uçlarıymış gibi input veya output yönlü olarak ayarlayıp, bu teker bitler üzerinden okuma yazma yapabiliriz.
+
+320
+00:58:55,572 --> 00:59:08,771
+Mod 1'de grup A'yı ayarladığım zaman boşta kalacak olan C6 ve C7 numaralı bitlerin input veya output yönlü olarak kullanılmasını sağlayan uçlar olarak ortaya çıkıyor.
+
+321
+00:59:08,771 --> 00:59:21,372
+Aşağı iki örneğe gelelim. Aşağı iki örnekte, şuradaki don't care'ler ne ile ilgiliydi? Bunlar zaten grup B ile ilgiliydi. Dolayısıyla biz sadece grup A'yı mod 1 input yapmak istiyorsak
+
+322
+00:59:21,440 --> 00:59:26,440
+Yüksek anlamlı D7'den D3'e kadar olan bitler ayarlamak için bize yeterli.
+
+323
+00:59:26,440 --> 00:59:36,440
+Şu örneğe gelelim, şuradaki örneğe. Burada arkadaşlar yine en yüksek anlamlı bite 1 yazmadığımız haliyle mod ayarı yapacağım anlamına geliyor.
+
+324
+00:59:36,440 --> 00:59:46,440
+Şuradaki bitimiz grup B mod 1'de kullanılsın anlamına geliyor. Şuradaki bitimiz ise
+
+325
+00:59:48,179 --> 00:59:51,259
+Port B'nin input olduğunu gösteriyor.
+
+326
+00:59:52,779 --> 00:59:56,379
+Dolayısıyla bu yazmış olduğumuz ayarla birlikte
+
+327
+00:59:56,619 --> 01:00:00,219
+Grup B mod 1'de input olarak ayarlanmış olacak.
+
+328
+01:00:01,499 --> 01:00:05,839
+Şimdi uçlarına biraz sonra tekrar geleceğim ama şimdi sadece ayarlamasını konuşalım.
+
+329
+01:00:08,019 --> 01:00:14,019
+Grup A'nın mod 1'de output olabilmesi için şuradaki örnekten farklı olarak ne yapmamız lazım?
+
+330
+01:00:14,019 --> 01:00:19,019
+Buradaki bitin arkadaşlar sıfır olarak set edilmesi lazım farklı olarak.
+
+331
+01:00:19,019 --> 01:00:25,019
+Output yönlü çalışıldığında ise bu sefer port C'nin 4 ve 5 numaralı bitleri boşta kalıyor.
+
+332
+01:00:25,019 --> 01:00:30,860
+Onların Basic IOMod'da input output olabilmesi D3 numaralı bitten ayarlanıyor.
+
+333
+01:00:30,931 --> 01:00:46,931
+Son olarak eğer ki ben grup B'yi output yönlü olarak mod 1'de ayarlamak istersem, şurada görmüş olduğumuz örnekten farklı olarak sadece D1 bitinin 0 olarak set edilmesi bunun output yönlü olarak belirlenmesini sağlıyor.
+
+334
+01:00:46,931 --> 01:00:58,431
+Şimdi buradaki gösterimi birazcık ben size anlatmak istiyorum arkadaşlar. Uç tanımlarına ilişkin olarak şöyle gelelim. Uç tanımları için bakın burada
+
+335
+01:00:58,900 --> 01:01:02,220
+Her bir satır, mesela şunu bir satır olarak düşünün.
+
+336
+01:01:04,280 --> 01:01:11,960
+Bu interrupt enable A isimli bir tane iç kontrol bitine karşılık geliyor. Şuradaki bitimiz bizim.
+
+337
+01:01:18,195 --> 01:01:24,435
+Interrupt Enable A diye düşünebileceğimiz bir kontrol biti ve bu bir iç bit.
+
+338
+01:01:26,595 --> 01:01:30,595
+Dışarıdan doğrudan erişemiyoruz fiziki uç olarak mevcut değil.
+
+339
+01:01:30,595 --> 01:01:38,435
+Ama ben eğer ki C portunun 4 numaralı biti ne? Aynı satırda olduğu için bu anlama geliyor.
+
+340
+01:01:38,435 --> 01:01:40,755
+C'nin 4 numaralı biti ne?
+
+341
+01:01:41,555 --> 01:01:43,635
+Haa şöyle güzel olmadı ama şöyle.
+
+342
+01:01:45,619 --> 01:01:57,219
+C'nin 4 numaralı bitine eğer ki ben B, S, R modunda 1 yazarsam, bunun anlamı Interrupt Enable A'ya da 1 yazmış oluyorum.
+
+343
+01:01:58,299 --> 01:02:06,719
+Eğer ki ben C4'e bit set reset modunda 0 yazarsam, bu da anlamı Interrupt Enable A'ya 0 yazdığım anlamına geliyor.
+
+344
+01:02:07,860 --> 01:02:09,960
+Interrupt Enable A ne işe yarıyor?
+
+345
+01:02:10,547 --> 01:02:23,947
+Interrupt Enable A daha üst seviyeden bir kontrol işareti olan Interrupt Request A değerinin üretilmesine yarıyor. Normalde ben bu kontrolü nasıl sağlayacağım? Hemen o akışı size anlatmaya çalışayım.
+
+346
+01:02:23,947 --> 01:02:37,547
+Normalde Interrupt kısmını karıştırmadan bahsetmek gerekirse, 8255 dış dünyadan bir veri almak istiyorsa, Handshaking mantığında, dış dünyadaki cihazın
+
+347
+01:02:38,420 --> 01:02:58,420
+Öncelikli olarak şu veri bağlantısını, strop ve bu bağlantıları yapmış olması lazım. Bu bağlantılar elimizde mevcutken, bu dış cihaz, bu bir klavye olabilir. Klavye öncelikli olarak verisini veri hattına koyuyor.
+
+348
+01:02:59,603 --> 01:03:08,603
+Tabii, 8255 uçları poling mantığında şu anda kontrol etmiyor. Çünkü Handshaking mantığında çalışacak. Ne bekliyor? Bir tetikleme sinyali bekliyor.
+
+349
+01:03:08,603 --> 01:03:22,603
+Dolayısıyla klavye veri hattına veriyi koyduktan sonra şurada strop işaretimiz var arkadaşlar. Bakın. Şöyle göstereyim. Strop isimli bir sinyalimiz var.
+
+350
+01:03:22,735 --> 01:03:35,235
+Strop ucunda sıfır değeri oluşturuyor. Bunun anlamı nedir? Karşı taraf için veri uçlarında veri hazır bu veriyi okuyabilirsin. Bir tetikleme, address slash enable'da olduğu gibi bir tetikleme gibi düşünün.
+
+351
+01:03:35,235 --> 01:03:42,335
+Veri uçlarını okuyup içerideki yazmaca kopyalamasını sağlıyor. Tabi bu kopyalama işlemi biraz vakit alan bir şey.
+
+352
+01:03:42,579 --> 01:04:01,079
+Bu işlem bittiği zaman, tabii çok nanosaniyelerden bahsediyor olsak bile, vakit alan bir durum. Bu örnekliyor çünkü tek tek. Bu veri kopyalama işi bittikten sonra da, içerideki port A'ya ilişkin olarak buffer yazmacı dolduğu için, input buffer full isimli bir acknowledge gönderiyor.
+
+353
+01:04:02,079 --> 01:04:09,579
+Burada gönderdiği IBF dediğimiz uç, input buffer full.
+
+354
+01:04:13,331 --> 01:04:35,931
+Tamam, input buffer full isimli bir uç aslında bu. Buradaki stroop işareti 8255'in C4'ünde verilmesi lazım. Port G'nin 5 numaralı biti de input buffer full sinyalini göndermek için kullanılıyor. Dolayısıyla klavye için aslında IBF ucu bir ekno oluş ucu. Bu bir ekno oluş ucu.
+
+355
+01:04:38,000 --> 01:04:50,000
+Veri hazır, ready ucu gibi düşünebilirsiniz bunu. Ready ucu gibi düşünebilirsiniz. Dolayısıyla klavye önce verisini veri uçlarına koyuyor. Daha sonra strobe işareti gönderiyor.
+
+356
+01:04:50,000 --> 01:05:01,500
+8255 bu veriyi kendi iç bufferına kopyalıyor. Kopyalama işlemi bitince de input buffer full diyerek karşı tarafa veriyi aldığını ifade ediyor.
+
+357
+01:05:01,599 --> 01:05:06,199
+Bu acknowledge gitmeli ki klavyeye, klavye bir sonraki karakteri de gönderebilsin.
+
+358
+01:05:06,199 --> 01:05:17,679
+Yoksa acknowledge gelmeden sonraki karakteri göndermeye çalışırsa bir öncekini ezme ihtimali var. Handshaking'de bu sıra ve kontrol çok önemli.
+
+359
+01:05:17,779 --> 01:05:22,339
+Eğer sıra ve kontrol yoksa kayıp olma ihtimali mevcut. Dolayısıyla burada.
+
+360
+01:05:23,092 --> 01:05:32,852
+Dolayısıyla bizim yapabileceğimiz işlemlerden bir tanesi mikroişlemci açısından. Bir mikroişlemci de burada 8255'e bağlı data uçları üzerinden.
+
+361
+01:05:32,852 --> 01:05:48,852
+8255 bunun port ağasındaki şey 8086 port ağayı okuyacak. Klavyeden basılan tuşu okumak istiyor ya. Bunun için ne yapması lazım? Port G'nin 5 numaralı bitini kontrol edecek. Eğer ki bu bit 1'e çıkmışsa
+
+362
+01:05:49,204 --> 01:06:12,244
+İçeride veri hazır demektir. İşte o zaman okuyabilir. Demek ki üç tane aslında bizim burada olaya dahil olan birimimiz var. Bunlardan bir tanesi 8086, bir tanesi 8255, bir tanesi de klavye örneğiyle vermiş olduğumuz dış birim. Amacımız ne? 8086'ya basılan klavye tuşunu aktarabilmek.
+
+363
+01:06:12,692 --> 01:06:30,692
+Bunun için 8255'i 8086 mod 1'de ayarladı input yönlü olarak grup A'yı. Dolayısıyla port A'ya klavyenin data uçlarını bağladık. Port C4'e ready ucunu bağladık klavyenin ve bu 8255'te strob ucu olarak değerlendiriliyor.
+
+364
+01:06:30,692 --> 01:06:37,324
+İçeri okuma işlemi bittiğinde de input buffer full işaretiyle bunu karşı tarafa göndermiş oluyoruz.
+
+365
+01:06:38,452 --> 01:06:47,452
+Input Buffer Full'ü yakaladığımız anda 8086 tarafında veriyi okuyabiliriz. Ama okuyabilmek için ne yapması lazım 8086'nın?
+
+366
+01:06:47,452 --> 01:07:02,452
+Sürekli olarak port C5'i örnekleyip IBF'ye bir oldu mu olmadı mı diye polling mantığında kontrol etmesi lazım işte. Dolayısıyla burada yine bir polling var. Handshaking bir aşamada var ama 8086 tarafında yine bir polling var.
+
+367
+01:07:04,719 --> 01:07:19,219
+Port J'nin 3 numaralı bitinden kesme isteği uyumlu bir tane çıkış üretiyoruz. Bu çıkışı açıp kapatmak için de, üretip üretmemeyi enable etmek için de interrupt enable A isimli bir tane kontrol bitimiz var.
+
+368
+01:07:19,219 --> 01:07:30,719
+Dediğim gibi bunu açabilmek için Port J 4 ile yan yana ya bu oradan aklımızda kalsın, Port J'nin 4 numaralı bitinde biz set reset modunda bir yazmamız gerekiyor.
+
+369
+01:07:31,092 --> 01:07:45,291
+Eğer bunu yazmışsak, input buffer full olduğunda, yani içeri veri alındığında, bu kopyalama işi bittiğinde, kesme isteğiyle uyumlu bir tane intre ucumuzla ilgili anlamlı değer oluşuyor.
+
+370
+01:07:45,291 --> 01:07:56,791
+Bu uçta zaten 8086'ını kesme istek ucuna bağlı. İşte bu durumda 8086 gidip sürekli olarak Polink mantığında 8255'i okumak zorunda değil.
+
+371
+01:07:57,268 --> 01:08:05,268
+Kesme isteğe geldiğinde o sırada devam eden işini bırakıp gidip 8255'in port arasındaki veriyi okuyabilir hale geliyor.
+
+372
+01:08:05,268 --> 01:08:10,268
+Dolayısıyla buradaki veri okuma mantığını bu şekilde düşünebiliriz.
+
+373
+01:08:11,268 --> 01:08:16,268
+Aynı şeyi grup B içinde söyleyebiliriz.
+
+374
+01:08:16,268 --> 01:08:23,268
+Grup B içinde dış çevre biriminden veriyi okumak adına port B kullanılıyor demiştik.
+
+375
+01:08:26,931 --> 01:08:39,931
+Dış çevre birimin bir tane strob işareti var, bir tane de Eknol ucu var. Bunlar 8255'in, eğer grup B'yi kullanıyorsam, port C1 ucuna bağlı ki IBF sinyali oradan geliyor.
+
+376
+01:08:39,931 --> 01:08:51,931
+Veyahut da ready ucu, bunun ready ucu, ready ucumuz port C2'ye bağlı. Yine aynı şey burada da geçerli. Yine klavye örneğini verebiliriz burada da.
+
+377
+01:08:51,931 --> 01:08:53,931
+Klavye örneğini verebiliriz.
+
+378
+01:08:54,608 --> 01:09:12,788
+Klavyede bir tuşa bastığımız zaman veriyi burada port B'ye bağlı uçlara koyuyor. Daha sonra bir tetikleme strob işareti gönderiyor. Bu strob işaretini 8255 aldığında uçlardaki, pinlerdeki değeri alıp kendi port B yazmacına kopyalıyor. Artık içeri aldı.
+
+379
+01:09:16,912 --> 01:09:38,112
+Klavye örneğinde olduğu gibi bir ekno oluş işareti gönderiyor ki bu dış çevre birim bir sonraki karakterini veya bir sonraki verisini gönderebilsin. Burada yine grup B için verinin hazır olduğunu anlayabilmek adına input buffer full B bitine veyahut da port C1'e bakmam yeterli. Ama bunu yaparken sürekli olarak
+
+380
+01:09:38,479 --> 01:09:48,319
+Poling yapmam gerekiyor. İşte bunu aşabilmek için yine burada bir enable bitimiz var. Interrupt enable bitimiz var.
+
+381
+01:09:48,319 --> 01:10:03,039
+Bunu bir yaparsam, nasıl bir yapıyorum? Bakın aynı satırda oldukları için port aklımızda kalsın diye söylüyorum. Normalde bunun hangi bitte olduğu data sheet'te yazılı ama size görsel bir hatırlatma olması açısından böyle söylüyorum.
+
+382
+01:10:04,275 --> 01:10:17,675
+Port-C'nin iki numaralı bitine bit set reset modunda bir yazarsam, artık Port-C'nin sıfırında 8255 için kullanabileceğim bir interrupt istek ucu oluşmuş oluyor.
+
+383
+01:10:17,908 --> 01:10:34,908
+Bunu da işte mikroişlemcinin kesme istek ucuna bağlarsam veri akışını kesme temelli olarak yapabiliyorum. Mikroişlemci intre ucunda değer gördüğünde, lojik bir değer gördüğünde, o anda yapmakta olduğu işi bitirdikten sonra gidip direkt port B'yi okuyabilir. Bu şekilde bir sonuç elde etmemiz mümkün.
+
+384
+01:10:34,908 --> 01:10:43,908
+Şimdi benzer şeyleri output için de söyleyebiliriz. Burada output'tan kasıt ne olabilir mesela buraya bağlayabileceğimiz cihaz?
+
+385
+01:10:44,144 --> 01:10:50,984
+Buraya bağlayabileceğimiz cihaz bir printer olabilir mesela arkadaşlar. Yani şurada bir printer vardır.
+
+386
+01:10:55,699 --> 01:10:58,899
+Bu yazdığım şeyler bir garip olmaya başladı bir saniye şöyle.
+
+387
+01:11:10,387 --> 01:11:11,387
+Şöyle devam edelim.
+
+388
+01:11:21,043 --> 01:11:23,644
+Buradaki örneğimiz bir tane printer olabilir.
+
+389
+01:11:25,363 --> 01:11:28,043
+Biz printer'a karakterler göndereceğiz.
+
+390
+01:11:28,844 --> 01:11:35,884
+Ama bu karakterleri üst üste gönderirsek, printerdaki o ana kadar göndermiş olduğumuz karakterleri ezebiliriz.
+
+391
+01:11:35,884 --> 01:11:40,844
+Dolayısıyla her bir karakteri printer eşledikten sonra göndermek daha anlamlı.
+
+392
+01:11:45,076 --> 01:12:06,275
+Bağlantıları bu şekilde yaptığımızı varsayalım. Şimdi buradaki amaç, genel senaryo ne? 8086 mikroişlemcisi printer'a bir takım değerler gönderecek ki bunlar işte kağıda basılsın örneğin. Bunun için öncelikli olarak 8086 dış dünyaya göndermek istediği veriyi port A'nın iç yazmacına, port A yazmacına aktarıyor.
+
+393
+01:12:07,828 --> 01:12:22,228
+Bu aynı zamanda yazma işlemi bittiği anda uçlarda değer oluştu ve bu yazma işlemi bittiği anda da port C'nin 7 numaralı bitinde output buffer full isimli bir uçta logic 0 değeri oluştu.
+
+394
+01:12:28,435 --> 01:12:34,675
+Bu şekilde isimlendirilen bir uç. Bu uç printer için aynı zamanda strob işareti gibi de görev görebilir.
+
+395
+01:12:34,675 --> 01:12:41,275
+Dolayısıyla 8086 portaya yazmaca değerleri yazma komutunu gönderdi.
+
+396
+01:12:41,555 --> 01:12:56,555
+Yazma işlemiyle birlikte veri uçlarına çıktı, port I'ye çıktı. Aynı zamanda da yazma işlemi bittiğinde port C7'de 0 değerini oluşturuyor 8255. Bu uçlar printer tarafında output buffer full ucu strobe'a karşılık geliyor.
+
+397
+01:12:56,555 --> 01:13:05,555
+Printer'ın strobe ucuna karşılık geliyor. Strobe ucu ne yapıyordu? Veri uçlarına, bu uç 0'a geldiğinde veri uçlarını okuyup içeri alıyordu bunu.
+
+398
+01:13:06,292 --> 01:13:14,492
+Almaya başladı, kopyalamaya başladı. Alma işlemi bittiğinde de bu ne anlama gelir? Ben artık bunu hafızama aldım, yazdırdım anlamına gelir.
+
+399
+01:13:15,332 --> 01:13:26,172
+Printer örneği için konuşacak olursak. Bu veri işlemi bittiği için de 8255'e bir tane ekno oluş gönderiyor. Bakın, printer bir tane ekno oluş göndermiş oldu.
+
+400
+01:13:30,260 --> 01:13:42,500
+Ecnology'da sonlandırmış olduk. Şimdi bu durumda ben Ecnology'i kontrol ederek veya evet Ecnology'i kontrol ederek ne yapabilirim burada?
+
+401
+01:13:42,500 --> 01:13:55,039
+Verinin gönderildiğinden emin olabilirim. Ama burada sürekli olarak ilgili biti poling ile kontrol etmem lazım. Alternatif ne olabilir? Yine port C'nin 6 numaralı bitiyle
+
+402
+01:13:55,247 --> 01:14:14,507
+bitset reset modunda açıp kapatabildiğim bir tane konfig var. Interrupt Enable A isimli. Eğer bunu açarsam da bu sefer port.gn'in 3 numaralı bitinden bir tane kesme isteğiyle uyumlu değer çıkartabiliyorum. Bunu mikroişlemcinin kesme istek ucuna da bağlarsam bu durumda kesme isteklerini
+
+403
+01:14:14,895 --> 01:14:39,735
+O andaki mevcut işlerimi yapıp kesme isteği geldiğinde ona yönelilecek şekilde veya bir sonraki karakteri göndermek üzere kesme alt programıyla değerlendirebiliriz. Aynı şey grup B içinde geçerli. Grup B'de interrupt, enable, B bitini açabilmek için ise farklı olarak port genin iki numaralı bitini bit set reset modunda bir reset etmemiz gerekiyor. Onun dışındaki bütün meseleler aynı.
+
+404
+01:14:41,171 --> 01:14:48,171
+Tekrar etmek gerekirse, mikroişlemci port mesela ilgili port yazmacına veriyi right'la gönderdi.
+
+405
+01:14:48,171 --> 01:14:56,751
+Veri uçlara çıktı, port ağ uçlarına çıktı ve veri yazma işi biter bitmezdi. Output buffer full sıfıra düştü.
+
+406
+01:14:56,752 --> 01:15:03,952
+Bu karşı tarafta veride strop işaretini tetikledi printerda ve veri uçlarının içeri örneklenmesini sağladı.
+
+407
+01:15:03,952 --> 01:15:16,952
+Bu örnekleme işi bittiğinde ve yazdırma işlemi bununla ilgili yürütme işlemi bittiğinde de tekrar 8255'e ekne oluş üzerinden bana bir sonraki karakteri gönder anlamında bir doğrulama göndermiş oluyoruz.
+
+408
+01:15:16,952 --> 01:15:20,352
+Akışımız da kabaca bu şekilde olmuş oluyor.
+
+409
+01:15:23,412 --> 01:15:28,212
+Evet, ekme oluş ucumuz aktif 0,1 uç. Dolayısıyla orada 0 değeri oluşuyor.
+
+410
+01:15:29,612 --> 01:15:34,612
+Burada aktif etmekten bahsediyorsak, mesela veri
+
+411
+01:15:36,311 --> 01:15:39,811
+porta yazıldığında örneğin output işlemi için, output buffer
+
+412
+01:15:40,083 --> 01:15:55,083
+Bu şekilde full'de 0 değeri oluşuyor. Karşı taraf printer veriyi işlediği vakit ekne oluşucunda 0 değeri oluşturuyor. Bu aktif 0 uçlar aktif olduğunda değeri 0 olarak set ediliyor anlamında düşünebilirsiniz bunu.
+
+413
+01:16:01,108 --> 01:16:06,988
+Şimdi burada uçların daha formal bir şekilde tanımları var. Onlara bakalım isterseniz.
+
+414
+01:16:07,768 --> 01:16:16,468
+Bu input modu için strob işareti ne anlama geliyor? Strob ucunun fonksiyonu ne? Strob ucunda logic 0 değeri arkadaşlar.
+
+415
+01:16:16,560 --> 01:16:25,780
+Verinin port uçlarından içerideki leçe veya ilgili port yazmacına okunmasını sağlayan bir kontrol işareti gibi düşünebilirsiniz bunu.
+
+416
+01:16:25,780 --> 01:16:31,840
+Yani strobüç ucunda 0 görüyorsak bu verinin içeri okunacağı anlamına gelir.
+
+417
+01:16:40,819 --> 01:16:55,940
+İçeride veri kopyalama işlemi bittiği zaman yani port uçlarından içeriye veri kopyalama işlemi bittiği vakit input buffer full ucunda lojik bir değeri oluşuyor. Aktif bir uç olduğu için.
+
+418
+01:16:58,612 --> 01:17:05,372
+Bir nevi verinin içeri okunduğunu doğrulayan bir uç olarak bunu değerlendirebiliriz.
+
+419
+01:17:05,372 --> 01:17:08,412
+Peki bu uç tekrar ne zaman sıfıra düşer?
+
+420
+01:17:08,412 --> 01:17:15,572
+Input buffer full ucu yani bufferımız ne zaman artık boş dur diye düşünebiliriz bu akış içerisinde.
+
+421
+01:17:15,572 --> 01:17:17,412
+Ne oldu bakın düşünelim.
+
+422
+01:17:17,492 --> 01:17:44,492
+Dış çevre birim bize veriyi göndermek için, port tuşlarında veriyi hazırladı, strop işareti gönderdi. Biz veriyi okuduk, içerideki ilgili ya rejisterimizde veri duruyor. Bu akış içerisinde IBF ne zaman tekrar 0'a düşer? 8086 mikroişlemci gelip de o buffer'ı okursa artık IBF'de çöp veri vardır ve dolayısıyla input buffer full 0 değerine düşebilir.
+
+423
+01:17:44,659 --> 01:18:03,500
+O zaman şunu söyleyeceğiz. IBF biti verinin okunmasıyla birlikte 1'e çıkarken veyahut da strop işaretinin düşük olduğu bir anda tetiklenerek 1'e çıkarken read işaretiyle tekrar 0'a düşüyor diye bunu da ortaya koyabiliriz.
+
+424
+01:18:03,891 --> 01:18:22,712
+Interrupt Request ucu ne? Interrupt Request ucu arkadaşlar, kesme istekleriyle uyumlu olacak şekilde seviye tetiklemeli bir kesme istek ucu. Interrupt Request ucunun fonksiyon gösterebilmesi için Interrupt Enable bitlerinin 1 olarak set edilmesi lazım.
+
+425
+01:18:23,188 --> 01:18:33,988
+Bunu da az önce de söylemiştim. Bit set reset modunda ilgili görsel olarak hemen yanına yazmış olduğumuz C port biti ile bunu yapmamız gerekiyor.
+
+426
+01:18:35,588 --> 01:18:39,988
+Interrupt request ucu nasıl ayarlanıyor?
+
+427
+01:18:41,188 --> 01:18:45,788
+Strop işaretinin 1 olmasıyla ve IBF'nin 1 olmasıyla
+
+428
+01:18:46,420 --> 01:18:58,920
+Eğer ki interrupt enable ucumuzda bir ise bir oluyor. Bunun anlamı ne? Strop işareti bitmiş. Yani veriyi okuması için 8255'i tetiklemişiz ve okuma işlemi bitmiş.
+
+429
+01:18:59,819 --> 01:19:13,039
+Aktarım işlemi tetiklemesi bitmiş. Veriyi içeri okuma işlemi de bitmiş. IBF'nin bir olmasıyla da bunu anlıyoruz. Bu ikisi bir ise ve interrupt enable da bir ise interrupt request ucu bire çıkıyor.
+
+430
+01:19:13,492 --> 01:19:33,092
+Ne zaman sıfıra düşer? Şimdi interrupt request oluşturduk mikroişlemcide. Dolayısıyla kesme isteği oluşturduk. Mikroişlemci o sırada yaptığı işlemi bitirip, ilgili porttan, bufferdan değeri okuyacak. Okuma işlemiyle, yani read işlemiyle birlikte de interrupt request ucu tekrar sıfıra düşmüş olacak.
+
+431
+01:19:33,264 --> 01:19:45,744
+Interrupt Enable A ve Interrupt Enable B ise BitSet Reset modunda sırasıyla PortJ'nin 4'ü ve PortJ'nin ikisiyle birlikte set edilen bitler olarak ortaya çıkmış oluyor.
+
+432
+01:19:46,364 --> 01:19:53,264
+Burada arkadaşlar az önce anlattığımıza dair bir dalga şeklini görüyorsunuz. Bu dalga şeklini şöyle değerlendirelim.
+
+433
+01:19:54,744 --> 01:19:58,504
+Dış çevre birimi öncelikli olarak, şundan yapayım daha iyi olacak.
+
+434
+01:20:00,000 --> 01:20:07,420
+Dış çevre birimi öncelikli olarak kendi veri uçlarında ve dolayısıyla 8255'in port uçlarında veriyi oluşturdu.
+
+435
+01:20:08,700 --> 01:20:13,820
+Daha sonra bir strop işareti gönderdi. Bu strop işareti kim tarafından veriliyor?
+
+436
+01:20:14,840 --> 01:20:23,300
+Sorumuz şöyle olsun. Bu strop işaretini 8086 mı sürüyor, 8255 mi sürüyor yoksa klavye mi sürüyor?
+
+437
+01:20:24,819 --> 01:20:30,579
+Klavye mi sürüyor? Kim sürüyor bu ucu? Burada sürmek demek, burada değeri oluşturan kim?
+
+438
+01:20:36,627 --> 01:20:47,427
+Konunun anlaşılması açısından buna doğru cevap vermeniz çok önemli. Evet, çevre birimi sürüyor. Dolayısıyla klavye sürüyor. Evet, buradaki değeri klavye oluşturmuş oluyor.
+
+439
+01:20:47,427 --> 01:21:02,927
+Peki, IBF için IBF'deki değeri kim oluşturuyor? 8086, 8255 veya klavye bu ucu kim sürüyor? Bunu da 8255 sürüyor. Evet, dolayısıyla bunu da zaten nasıl anlayacağız? Bakın burada.
+
+440
+01:21:03,539 --> 01:21:23,539
+IBF ucu, IBF ucu, 8255'den çıkan bir uç. Dolayısıyla bunu 8255 sürüyor diyebiliriz. Benzer şekilde, interrupt request ucunu, 8255, read işini de 8086 kontrol ediyor diyebiliriz.
+
+441
+01:21:23,539 --> 01:21:26,539
+Tamam. Şimdi akışımızı incelemeye çalışalım.
+
+442
+01:21:28,756 --> 01:21:50,756
+Dış çevre birim, yani klavye veriyi koydu. Daha sonra strop işareti gönderdi. Strop işaretinin düşen kenarı verinin okunmasını başlatıyor. Artık bu noktadan itibaren veri 8255'e okunmaya başlanıyor. Veri nerede okundu? Şu süre zarfı sonucunda verinin okunması tamamlanmış oldu.
+
+443
+01:21:50,899 --> 01:22:00,500
+Verinin okunması tamamlandıktan sonra strop işaretini klavye hattan kaldırıyor. Hattan kaldırdıktan belirli bir süre sonra da veriyi kaldırıyor.
+
+444
+01:22:01,140 --> 01:22:24,360
+Dolayısıyla artık 8255'in içerisinde veri okunmuş durumda ve IBF değerimiz 1'e çıkmış durumda. Strop işaretinde kalkmasıyla hem Strop işareti 1'de hem IBF ucumuz 1'de. Interrupt Enable'ı da 1 olarak set etmişsek bu 2 koşul, 3 koşul daha doğrusu, 3 koşul sağlandıktan sonra Interrupt Request ucumuz 1'e çıkıyor. Bunun anlamı ne?
+
+445
+01:22:24,851 --> 01:22:39,251
+Artık mikroişlemcide bir kesme isteği oluşturduk. Kesme isteği oluşturduktan belirli bir süre sonra mikroişlemci yapmakta olduğu işlemi tamamlayıp kesme isteğiyle ilgili görevine artık dönmüş olabilir.
+
+446
+01:22:39,251 --> 01:22:43,251
+O belirli bir süre gerektiriyor. Şu süre belki biraz daha uzun olabilir.
+
+447
+01:22:43,251 --> 01:22:51,251
+İşte bu kesme alt programı içerisinde de gidip burada 8255'in ilgili portunu okuyor.
+
+448
+01:22:51,764 --> 01:22:57,963
+Okuma işlemini verdiği vakit yürütmek istediği zaman read işareti zaten sıfıra düşmüş oluyor, aktif 0, 1 uçtu.
+
+449
+01:22:58,963 --> 01:23:07,764
+Okuma işlemiyle birlikte interrupt request ucu aktivasyonunu kaybediyor. Okuma işlemi bitince de
+
+450
+01:23:08,051 --> 01:23:23,051
+Tekrar IBF ucu sıfıra düşerek, şuradan bakın bu yol ile tetikleniyor. IBF ucu tekrar sıfıra düşerek bir sonraki verinin okunması için hazır hale gelmiş oluyoruz.
+
+451
+01:23:24,115 --> 01:23:37,675
+Dolayısıyla dalga şeklini bu şekilde okumamız gerekiyor. Burada dikkat edecek olursanız, kim kimi tetikliyor, hangi koşullarda hangi ucun değeri oluşuyor bunlar burada verilmiş durumda.
+
+452
+01:23:37,675 --> 01:23:42,956
+Şimdi aynı işlemi output işlemi output için de tanımlayabiliriz.
+
+453
+01:23:50,899 --> 01:24:09,659
+Kim tarafından sürülüyor? 8255 tarafından sürülüyor. Dolayısıyla mikroişlemci, 8255'in registerlarından birine bir veri gönderdiği vakit, output buffer full ucu, logic 0'a düşüyor. Bunun anlamı ne? Örneğin printer için bir strop işareti.
+
+454
+01:24:09,659 --> 01:24:18,140
+Tamam. Dolayısıyla mikroişlemci write işlemi yapıp, write işleminden sonra OBF'nin 0'a düşmesini sağladı.
+
+455
+01:24:18,771 --> 01:24:43,091
+Karşı taraf, output buffer full işaretini kendisi açısından bir strob işareti olarak değerlendirip, port uçlarındaki değeri kendi içerisine okudu. Bununla ilgili, veriyle ilgili hangi işlemi yapacaksa bunu yaptıktan sonra da, 8255'e bir tane Ecnology gönderdi. Ecnology'in aktif olması bu uçta lojik sıfır görünmesiyle birlikte sağlanıyor. Ecnology işareti gönderdi.
+
+456
+01:24:43,475 --> 01:25:05,735
+Acknowledge işareti de karşı tarafın veriyi değerlendirdiği anlamına gelir. Eğer ki ben burada mikroişlemciden yeni bir veri göndermek istiyorsam bunu ya Acknowledge işaretinin kontrolüyle yapacağım ve yahut da neyle yapmam lazım? InterApp üzerinden de yapabilirim. Bunun içinde InterApp Request ucuyla ilgileniyoruz. InterApp Request ucuda...
+
+457
+01:25:08,176 --> 01:25:22,176
+acknowledge 1 iken, yani bana gelen acknowledge bitti, veriyi aldım dedi çevre birim ve hala dolayısıyla output buffer'ımda artık sıfırdan 1'e çıktı.
+
+458
+01:25:28,127 --> 01:25:41,247
+Pardon, interrupt enable ucu da 1 ise interrupt request ucumuz 1'e çıkıyor. Ne zaman tekrar sıfırlanacak bu? Yeni bir yazma işlemi yaptığımda da tekrar sıfırlanmış olacak.
+
+459
+01:25:42,515 --> 01:25:57,756
+Böyle bir akışı mevcut olacak. Yine burada output yönlü olarak port C'nin 6 numaralı bitiyle interrupt enable A ve port C'nin 2 numaralı ucuyla da interrupt enable B uçları kontrol edilmiş oluyor.
+
+460
+01:25:57,756 --> 01:26:02,855
+Buradaki dalga şekline bakacak olursak da arkadaşlar şöyle bir yapımız var.
+
+461
+01:26:05,235 --> 01:26:15,235
+Öncelikli olarak mikroişlemci, 8255'e bir veri gönderdi ki, amacımız, 8255'den bu veriyi dış dünyaya aktarmak.
+
+462
+01:26:17,235 --> 01:26:30,159
+Bununla ilgili olarak, öncelikli olarak, şuradaki right ucu ile birlikte, bunu 8086 sürüyordu, 8255'e veri gönderdik. Amacımız ne?
+
+463
+01:26:30,159 --> 01:26:33,880
+8255 den bunu dış dünyaya printer'a aktarmak.
+
+464
+01:26:37,939 --> 01:26:50,139
+Bu işlem sonrasında, tetiklenen işlemlerimiz neler? Bakalım arkadaşlar. Veriyi yazdık. Bu veriyi yazma işlemi bittikten belirli bir süre sonra, bakın şuradaki tetiklemeyi takip edin.
+
+465
+01:26:50,139 --> 01:27:02,139
+Output buffer ucumuz sıfıra düştü. Yani bu mikroişlemci yazma işini başlattı. Yazma işlemiminin bitmesiyle birlikte artık port uçlarında, portlarda...
+
+466
+01:27:02,292 --> 01:27:23,592
+8255'in registerlarında değerlerimiz oluştuğu anda Output Buffer ucumuz sıfıra düşmüş oluyor. Bu Output Buffer fullü 8255 sürüyor bu arada, onu da unutmayalım. Daha sonrasında neyi arıyoruz hemen onu da bir göstereyim.
+
+467
+01:27:27,507 --> 01:27:31,087
+Daha sonra dış çevre birimi veriyi aldı ve işledi.
+
+468
+01:27:32,367 --> 01:27:40,307
+Bunu da şurada acknowledge işareti ile birlikte gösteriyor bize. Şurada acknowledge işareti ile birlikte gösteriyor.
+
+469
+01:27:40,827 --> 01:27:50,547
+Dış birim printer veriyi aldı, işledi, bunu gösteriyor. Dolayısıyla artık bu noktadan itibaren output buffer full bitimiz tekrar 1'e çıkmış oluyor.
+
+470
+01:27:51,067 --> 01:27:51,827
+Bu
+
+471
+01:27:51,967 --> 01:28:09,367
+İki değerinde birde olduğu bir anda yani acknowledge ve output buffer'ın birde olduğu bir anda da biz interrupt request ucunun tekrar bire çıkmasıyla kesme temelli olarak veri okumayı sağlamış oluyoruz.
+
+472
+01:28:10,195 --> 01:28:22,195
+Bu noktada mikroişlemci veriyi gönderildiğini anlıyor ve yeni verinin gönderilmesi için süreci tekrar write işlemiyle birlikte tekrarlamaya başlıyor.
+
+473
+01:28:30,100 --> 01:28:37,100
+Dolayısıyla mantığımız bu şekilde. Yani akışı tekrar etmek gerekirse, şunun üzerinden gösterelim.
+
+474
+01:28:37,100 --> 01:28:57,868
+Akışı tekrar etmek gerekirse arkadaşlar, dış dünyadan veri okuyabilmek için öncelikli olarak dış birim bu klavye olsun, veriyi hatta koyuyor, daha sonra strob işareti gönderiyor, veri okunmaya başlıyor. Okunma bitince IBF ucumuz 1'e çıkıyor.
+
+475
+01:28:58,899 --> 01:29:03,299
+Belirli bir süre sonra strobe işaretini dış klavye kaldırıyor.
+
+476
+01:29:03,299 --> 01:29:14,763
+Strobe işaretini 1'de, IBF'de 1'de, interrupt enable'da 1 ise bu sefer interrupt request 1'e çıkıyor ve mikroişlemci de bir kesme isteği oluşturuyor.
+
+477
+01:29:15,028 --> 01:29:30,708
+Mikroişlemci artık verinin hazır olduğunu anlıyor. Gidiyor veriyi okuyor. Veriyi okunduğu anda da interrupt request ucumuz tekrar sıfıra düşerek bütün değerler okuma saykılının ilk initial değerleriyle ayarlanmış oluyor. Okuma işlemin bitmiş oluyor yani.
+
+478
+01:29:39,439 --> 01:30:02,619
+8255'in port yazmacına ilgili register'ına değer gönderdi. Bu değeri gönderdikten sonra Outlook Buffer Full ucumuz sıfıra düşüyor. Bu karşı tarafta Strobe olarak algılanıyor. Dolayısıyla veri uçları okunup içeri alındı. İşleme, buna ilişkin veri işlemesini yaptık. Bu veri işlemesi bittikten sonra EcNolage 0 olarak verinin işlendiği karşı tarafa bildiriliyor.
+
+479
+01:30:02,963 --> 01:30:21,363
+Bu bildirimden sonra, belirli bir süre sonra, acknowledge işaretini printer kaldırdı. OBF şu anda sıfırdaydı, o da kalktı. İkisinin bir olduğu anda, interrupt enable'da bir ise, bu durumda interrupt request isteği oluşuyor.
+
+480
+01:30:21,363 --> 01:30:30,363
+Bunun anlamı da ne? Bir sonraki write işlemi için hazırız. Mikroişlemci yeni write işlemini yaptığı anda da interrupt request ucu tekrar sıfıra düşerek,
+
+481
+01:30:30,448 --> 01:30:38,688
+Bütün cycle'ı baştan itibaren yürütür hale gelmiş oluyoruz. Dolayısıyla bu iki akışı bu şekilde düşünmemiz gerekiyor.
+
+482
+01:30:40,688 --> 01:30:42,688
+Şimdi, az önce...
+
+483
+01:30:43,091 --> 01:30:50,591
+İki farklı yöntemden bahsetmiştik hatırlayacak olursanız. Bunlardan bir tanesi verinin okunduğunu anlamak için ne yapabiliriz demiştik.
+
+484
+01:30:50,591 --> 01:30:58,091
+IBF'ye bakabiliriz demiştik. Diğerisi için de OBF'ye veya Ecnoloji'ye bakabiliriz diye konuşmuştuk.
+
+485
+01:30:58,091 --> 01:31:06,591
+Bunlardan farklı olarak da bu birinci yöntemdi. İkinci yöntem ise interrupt request uçlarına bakmak da olabilir.
+
+486
+01:31:06,591 --> 01:31:09,091
+Ya bu fiziki uç olarak da mevcut zaten.
+
+487
+01:31:09,203 --> 01:31:35,223
+Veyahut da port.j'nin ilgili bitleri olarak da mevcut. Bunları da okuyabiliriz. Bu okuma işlemini nasıl yapacağız? Bu okuma işlemini arkadaşlar, status word üzerinden yapacağız. Bu status word ne? Port.j'den yapılan okumalar, yani 8255 mod 1'de ayarlanmışsa, port.j adresinden yaptığımız okumalar status word'u veriyor. Bu status word'ün bitlerine bakacak olursak,
+
+488
+01:31:37,268 --> 01:32:03,667
+Eğer ki 8255 mod 1'de input yönlü olarak ayarlanmışsa, ben 8255'in port c'sinden yapmış olduğum, okumada almış olduğum değerler bunlar. Bakın, IBF'yi doğrudan buradan karşılaştırabilirim. Veya interrupt request a'yı buradan karşılaştırabilirim. Veya b grubu için IBFB ve interrupt request b bitlerini buradan kontrol edebilirim.
+
+489
+01:32:03,988 --> 01:32:17,988
+Interrupt Request A ve Interrupt Request B'ye bakmak ne zaman anlamlı? Interrupt Enable A veya Interrupt Enable B'yi aktif yapmışsam anlamlı. Eğer kesme isteğiyle kullanmayacaksam IBF'lere bakmam yeterli olabiliyor.
+
+490
+01:32:17,988 --> 01:32:28,988
+Yine aynı işlemi, 8255, mod 1'de output yönlü olarak ayarlanmışsa da yapabiliriz.
+
+491
+01:32:28,988 --> 01:32:29,988
+Pardon.
+
+492
+01:32:31,444 --> 01:32:54,044
+Yine 8255 mod 1'de output yönlü olarak ayarlanmışsa, burada yine port C adresinden yapacağım okuma bana bu bit dizisini veriyor. Bu bit dizisine bakacak olursak, OBFA, OBFB, interrupt request B ve interrupt request A uçlarını burada kullanıp polling mantığında kontrol edebilirim.
+
+493
+01:32:59,283 --> 01:33:09,884
+Interrupt Request ucunda değer oluşsa bile onu ilgili status word'tan polling yaparak kullanmak durumundayız şu an için. Daha interapları görmediğimiz için.
+
+494
+01:33:16,884 --> 01:33:19,644
+Şimdi burada bir tane örnek sorumuz var.
+
+495
+01:33:27,220 --> 01:33:37,820
+Evet, aslında her birisinden birer tane bit boşak geliyor. Grup A'dan ve grup B'den birer port C biti boşak kalmış oluyor. Dolayısıyla 3 bit demek mantıklı olabilir.
+
+496
+01:33:41,235 --> 01:33:44,836
+Şimdi şöyle bir sorumuz var arkadaşlar bakın.
+
+497
+01:33:46,555 --> 01:33:50,456
+2 tane 8255'imiz, pardon bir tane 8255'imiz var.
+
+498
+01:33:51,135 --> 01:34:01,336
+Bu 8255'in grup A'sını ve grup B'sini mod 1'de ayarlayıp birisi input, birisi output yönünde olup bunları birbirine bağlamak istersek nasıl bir bağlantı yapmamız gerekiyor?
+
+499
+01:34:01,336 --> 01:34:02,536
+Yani şöyle bir durum var.
+
+500
+01:34:07,475 --> 01:34:09,256
+Port A output.
+
+501
+01:34:12,819 --> 01:34:21,139
+Daha sonra burada neler olacaktı? Output dediğimiz için burada OBF olacak.
+
+502
+01:34:23,859 --> 01:34:34,419
+Çıkış. Bir tane ekne oluş, girişim olacak. Bunlar port A'ya ilişkin kontrol. İşte port B'de ne olacaktı? Port B'ye input olacakmış.
+
+503
+01:34:35,619 --> 01:34:39,619
+Ondan sonra input olduğu için bunun bir tane strop girişi olması lazım.
+
+504
+01:34:40,212 --> 01:34:59,072
+Bir tane de bunun IBF, input buffer full çıkışı olması lazım. Sorumuz şu, bu 8255'in grup A'sıyla grup B'sini birbirine mod 1'de, hand-checking modunda bağlamak istesem ne yapmam lazım? Sorumuz bu.
+
+505
+01:35:05,140 --> 01:35:08,720
+Port B uçlarına bağlamamız gerekiyor bir kere, bu kesin.
+
+506
+01:35:09,239 --> 01:35:11,279
+Şunu da biliyoruz herhalde,
+
+507
+01:35:11,279 --> 01:35:14,359
+Strop hangisiydi o?
+
+508
+01:35:15,119 --> 01:35:17,180
+Buradaki output buffer full ucu,
+
+509
+01:35:17,420 --> 01:35:20,239
+bu taraf için Strop işareti olarak çalışabilir.
+
+510
+01:35:21,020 --> 01:35:22,039
+Son olarak,
+
+511
+01:35:22,539 --> 01:35:27,920
+Eccnol uçla input buffer full arasında bir şey var, onda nasıl birisi aktif birisi aktif sıfır ya.
+
+512
+01:35:28,180 --> 01:35:30,739
+Bir tane NAT işareti ile birlikte
+
+513
+01:35:31,220 --> 01:35:37,619
+Bu bağlantıyı yaptığımızda kendi içerisine bir loopback ile bu bağlantıyı yapmış oluyoruz arkadaşlar.
+
+514
+01:35:38,640 --> 01:35:46,579
+Dolayısıyla iki tane farklı 8255'im olsa bunların grup ağlarını da bağlamak istesen birisi input, birisi output benzer bir mantık.
+
+515
+01:35:46,840 --> 01:35:50,159
+Burada da geçerli oluyor. Bu yapıya dikkat edin.
+
+516
+01:35:50,939 --> 01:35:54,519
+Uçlar input output yönlü olarak birbirlerine bağlanıldı.
+
+517
+01:35:54,739 --> 01:36:02,940
+Biri bir tane 8255 mod 1 output buffer full kontrolü karşı tarafın strob işaretine denk geliyor.
+
+518
+01:36:03,699 --> 01:36:11,340
+Yine output yönlü tarafın eknolucu da input yönlü tarafın input buffer fullüne karşılık geliyor.
+
+519
+01:36:11,340 --> 01:36:19,440
+Ama birisi aktif 0, birisi aktif 1 olduğu için bunu belki bir NAT kapısından geçirerek vermemiz gerektiği ortaya çıkıyor.
+
+520
+01:36:24,979 --> 01:36:36,979
+Şimdi bir de mod 2 var ama bir de örneğimiz vardı. Hangisi yetişir herhalde? Bir kontrol edeyim. Çok örneğimiz yetişmeyebilir eğer mod 2'ye geçer. Şimdi mod 2 tarafını bırakıyorum arkadaşlar.
+
+521
+01:36:37,979 --> 01:36:41,979
+Mod 1 ile ilgili bir tane örneğimiz var. O örneğe bakacağız.
+
+522
+01:36:45,395 --> 01:36:46,395
+Onu açayım.
+
+523
+01:36:59,347 --> 01:37:15,008
+Evet, bu örneği de sizinle paylaşacağım arkadaşlar. Burada yapmak istediğimiz şu, 8255'in grup A'sını ve grup B'sini her ikisini de mod 1'de kullanarak
+
+524
+01:37:15,412 --> 01:37:25,412
+4x4 tuş tarama takımında basmış olduğum tuşa karşılık, bunun 7 segment karşılığını display'de göstermek istiyorum.
+
+525
+01:37:25,412 --> 01:37:35,412
+Bunun için iki tane yardımcı devrem var burada bakın. Bunlardan bir tanesi tuş tarama kontrolcüsü. Bu tuş tarama kontrolcüsü şöyle çalışıyor.
+
+526
+01:37:35,412 --> 01:37:40,268
+X ve Y uçlarından satır ve sütunlara karşılık geliyor bunlar.
+
+527
+01:37:40,275 --> 01:38:00,515
+X'lerden sütun sürüyor, Y'lerden satır okuyor. Kendi içerisindeki lojik mantıkla birlikte herhangi bir tuşa basılmış ise buna karşılık, mesela ben bunu yaparken şu 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 diye gelecek, denk gelecek şekilde bağlamışım.
+
+528
+01:38:00,815 --> 01:38:11,815
+Dolayısıyla buradaki 16 tane farklı değere karşılık 0 ile F arasında 4 bitlik bir değeri D, C, B, A uçlarında ilgili aynı anlam sırasında çıkartıyor.
+
+529
+01:38:11,815 --> 01:38:15,815
+Örneğin burası 0 tuşuydu. Ben 0'a bastığımda, bakın şöyle göstereyim.
+
+530
+01:38:15,815 --> 01:38:25,739
+Ben burada 0'a bastığımda A, B, C, D uçlarında binary olarak 0 yandı. Bu bir ucu 1 okuttu.
+
+531
+01:38:25,811 --> 01:38:38,811
+2 okuttu. Şurada bakın, 2 tane kırmızı var. 17 ve 16 numaralı uçlarda birer kırmızı var. Bunların anlamı düşük 2 bit 1, yüksek anlamda 2 bit 0 anlamına geliyor. Dolayısıyla 0, 0, 1, 1 çıkartıyor.
+
+532
+01:38:39,811 --> 01:38:49,112
+Benzer şekilde 0, 1, 2, 3, 4, 5, 6, 7, 8 numaralı tuş bu. 8 numaralı tuşa bastığımda binary olarak 8 okutmuş oluyor.
+
+533
+01:38:49,427 --> 01:38:56,667
+Bu entegrenin çalışabilmesi için oscilatör girişine bir takım değerler bağlamak lazım. Bu bağlantıyı fix olarak düşünün.
+
+534
+01:38:57,768 --> 01:39:07,847
+Asıl burada önemli olanlar arkadaşlar ise şu, ben burada herhangi bir tuşa basmadığımda, bakın herhangi bir tuşa basmadığımda, data enable ucunda 0 var.
+
+535
+01:39:07,847 --> 01:39:12,847
+Buna dikkat edin. Herhangi bir tuşa basmadığımda, data enable ucunda 0 var.
+
+536
+01:39:13,108 --> 01:39:37,108
+Ben bir tuşa bastığımda, data enable'dan, data available daha doğrusu, data available'da anlık olarak bir değeri oluşuyor. Bu tıpkı neye benziyor? Klavyeden strob işareti göndermeye benziyor. Tamam, strob ucundan, klavyeden, strob sinyaliyle birlikte veri göndermeye benziyor. Ama buradaki data available aktif bir şekilde çalışıyor. Dikkat edin.
+
+537
+01:39:37,427 --> 01:39:39,827
+Bir de output enable ucumuz var.
+
+538
+01:39:39,827 --> 01:39:43,827
+Output enable da şu şekilde çalışıyor. Ben buradan bir tuşa bastım.
+
+539
+01:39:43,827 --> 01:39:46,827
+Datanın available olduğunu gördük.
+
+540
+01:39:46,827 --> 01:39:53,028
+Ama ben buradan verinin kontrollü bir şekilde veri yoluna çıkmasını istiyorum. Ne zaman veri çıkacak?
+
+541
+01:39:53,028 --> 01:39:59,427
+Output enable ucuna 0 verdiğimde bastığım tuşun karşılığı A, B, C, D uçlarına çıkacak.
+
+542
+01:39:59,427 --> 01:40:04,228
+Dolayısıyla buradaki tuş tarama yardımcı entegresinin yapmış olduğu işlem bu.
+
+543
+01:40:04,819 --> 01:40:30,819
+Tekrar etmek gerekirse çok hızlı. Ben buradan herhangi bir tuşa bastığımda, otomatik olarak satır ve sütun taramayı bu kendisi yapıyor zaten. Ben herhangi bir tuşa bastığımda, data available'da 0 değeri oluşuyor. Eğer output enable ucunda da 0 değeri varsa, bastığım tuşun binary karşılığı, d, c, b, a uçlarından çıktı olarak veriliyor. Ben buradaki tuş tarama mantığını hazır bu...
+
+544
+01:40:31,412 --> 01:40:54,752
+74920 entegresinin yardımıyla, 8255 üzerinde tuş tarama yapmadan direkt okuyacağım, mod 1'de okuyacağım. Diğer tarafa gelelim. Diğer tarafta da bir 7 segment display sürücü var. Bu 7 segment display'imizin hangi tipte olduğunu söyleyebilir misiniz şu anda bakarak? Bakın, ortak uç sıfıra bağlı.
+
+545
+01:40:55,007 --> 01:41:00,768
+Dolayısıyla yakabilmek için bir vermemiz gerekiyor diğer data uçlarını.
+
+546
+01:41:04,819 --> 01:41:23,819
+Dolayısıyla burada ortak ucumuz katod yani eksi uçları ortaklayıp bağlamışız. Yakabilmek için de her bir data ucuna bir değeri vermemiz gerekiyor. Evet, cevap doğru. Şimdi burada bu sistem nasıl çalışıyor? Bu sistem arkadaşlar A, B, C'de uçlarımız var. Bunlar inputlar.
+
+547
+01:41:32,724 --> 01:41:44,323
+Ona karşılık Seven Segment Display değeri de işte A'dan G'ye kadar olan Seven Segment Display'ye ilişkin her bir segment kontrolücünde oluşturulmuş oluyor.
+
+548
+01:41:44,323 --> 01:41:55,123
+Örneğin burada da 0, 0, 0, 0 olmuş olsaydı Seven Segment Display'de 0 yakabilmek için A'nın yanık olması lazım, B'nin yanık olması lazım. Dolayısıyla A, B bir.
+
+549
+01:41:55,123 --> 01:41:59,923
+C'nin yanık olması lazım, C de bir olacaktı. Hemen şurada isterseniz gösterelim.
+
+550
+01:42:00,064 --> 01:42:01,064
+0'a basayım.
+
+551
+01:42:02,564 --> 01:42:15,564
+0 yakabilmek için sadece G'nin 0 olması lazım. Ona ilişkin değeri 0, binary sayısına karşılık, ortak katot seven segment display değerini üretmiş oluyor.
+
+552
+01:42:16,064 --> 01:42:24,564
+Burada LT ve BI uçlarının fix olarak verildiğini varsayalım. Burada latch enable isimli bir uç var. Bunun anlamı şu.
+
+553
+01:42:25,844 --> 01:42:31,724
+veya strobe olarak da kullanılıyormuş. Bakın ben buraya bir binary değer gönderdiğimde,
+
+554
+01:42:31,724 --> 01:42:44,764
+belirli bir süre boyunca bunun burada yanmasını istiyorsam veya bu değerin içeride binary değer olarak saklanmasını ve sürekli olarak bu değerin yanmasını istiyorsam,
+
+555
+01:42:44,764 --> 01:42:49,963
+latch enable sinyalini de buraya göndermem lazım. Latch enable sinyalini gönderdiğimde,
+
+556
+01:42:50,079 --> 01:43:02,000
+ABCD uçlarında da uygun değerler varsa bu göndermiş olduğum değer içeri kopyalanıyor ve QA'dan QG'ye kadar olan uçlarda istediğim segment göstergesini yakıyor.
+
+557
+01:43:02,000 --> 01:43:12,560
+Let's Enable'ı kaldırdıktan sonra ise giriş uçlarındaki değer ne kadar değişirse değişsin, benim buradaki göstergem bozulmuyor, değişmiyor. Dolayısıyla böyle bir mantık var.
+
+558
+01:43:12,692 --> 01:43:36,492
+Dolayısıyla yapmak istediğimiz neymiş öyleyse, 4x4 tuş tarama mantığından değeri okuyup, yardımcı devre yardımıyla okuyup, mod 1'de bunu alıp, bunun tam karşılığı olan 7 segment display göstergesinde değeri yakmak için de bir başka yardımcı entegre kullanarak bunu yapmak istiyoruz. Bunları da mod 1'de yapacağız. Amacımız bu.
+
+559
+01:43:37,555 --> 01:43:47,956
+Şimdi tuş tarama tarafının donanım kısmını inceleyelim. Ben bir tuşa bastığımda data available 1 oluyordu. Bu data available'ı ben ne olarak düşünebilirim?
+
+560
+01:43:47,956 --> 01:43:53,956
+Mod 1 için hangi sinyale karşılık gelir? Bu dış çevre biriminden gelen hangi sinyale karşılık gelir?
+
+561
+01:43:53,956 --> 01:44:04,756
+4x4 tuş tarama mantığımızın data available'ı 8255 açısından. Bir kere öncelikle şunu düşünelim.
+
+562
+01:44:05,108 --> 01:44:17,408
+Port A bizim için ne olacak? Port A veya grup A nasıl çalışacak? Bir bastığımız tuştan okumak istiyoruz ya. Port A veya grup A input yönlü olarak çalışacak.
+
+563
+01:44:17,408 --> 01:44:26,347
+Input yönlü olarak çalışan mod 1 uçlarında OBF yoktur dolayısıyla. O zaman tekrar geri gelelim.
+
+564
+01:44:26,804 --> 01:44:39,524
+Burada ben bir tuşa bastığımda, 74922'nin data available da logic 1 olması, 8255 mod 1 tarafında hangi mod 1 input ucuna karşılık gelecek?
+
+565
+01:44:42,804 --> 01:44:53,204
+Şunu hatırlayın. Mod 1 input için strobe ve input buffer full uçları vardı. İkisinden birisi yani.
+
+566
+01:44:54,644 --> 01:44:56,404
+Strobe'a karşılık gelecek, evet.
+
+567
+01:44:56,963 --> 01:45:03,444
+Dolayısıyla bunu v-strop işareti olarak kullanabilmek için bir dönüşüm yapmam lazım. O da şu.
+
+568
+01:45:03,604 --> 01:45:09,604
+DataAway ile bulucu aktif 1 olarak çalışıyor. Ama benim strob ucum yani port G4'ündeki
+
+569
+01:45:09,728 --> 01:45:17,328
+Grup A'nın strob işareti aktif sıfır olarak çalışıyordu. O zaman bir tane değil kapısından geçirmem lazım.
+
+570
+01:45:17,328 --> 01:45:28,328
+Artık bunu yaptığım vakit, ben bir tuşa bastığımda, 8255, grup A, mod 1 input'tan strob işareti göndermiş oluyorum.
+
+571
+01:45:37,395 --> 01:45:42,595
+Sonrasında da input buffer full değeri olarak da bir değer çıkacağım karşıya.
+
+572
+01:45:44,195 --> 01:45:52,995
+Bu da bakın tuşa bastığım anda, tuşa bastığım süre boyunca input buffer full değeri output enable'ı aktif yapıyor.
+
+573
+01:45:52,995 --> 01:45:58,595
+Yani burada bastığım tuşun değeri portaya kadar aktarılmış olacak mantık olarak.
+
+574
+01:45:58,595 --> 01:46:04,995
+Ama yine burada da bir aktif 0 dönüşümü yapmam lazım. Çünkü input buffer full aktif 1 olarak çalışıyordu.
+
+575
+01:46:05,332 --> 01:46:15,332
+Bu tuş tarama devrimizin output enable ise aktif 0. Dolayısıyla yine bir NAT kapısından geçirerek buradaki mod 1 input tarafını halletmiş oluyoruz.
+
+576
+01:46:15,332 --> 01:46:26,332
+Dolayısıyla mod 1 input'a baktığımızda bunun hem strobe işareti için karşı tarafta uç var hem de input buffer için karşı tarafta uç var. Küçük bir dönüşüm yapmamız gerekli.
+
+577
+01:46:26,332 --> 01:46:32,332
+7 segment display'e gelelim. 7 segment display'de arkadaşlar
+
+578
+01:46:32,627 --> 01:46:43,127
+Şu yok. Öncelikli olarak bu Seven Segment Display nereye bağlı bakalım. Port B'ye bağlı yani grup B'ye bağlı mod 1'de çalışacak.
+
+579
+01:46:43,127 --> 01:46:50,127
+Öyleyse birtakım ledleri yakmak istediğimize göre ben grup B'yi hangi mod 1 yapısında ayarlamışım?
+
+580
+01:46:50,127 --> 01:46:54,127
+Input mu output mu? Led yakacağıma göre output yönünde ayarlamışım.
+
+581
+01:46:54,355 --> 01:47:00,956
+Output yönünde ayarladığım için Output için kontrol işaretlerimiz Output Buffer Full ve Ec-Nollage işaretleri.
+
+582
+01:47:01,755 --> 01:47:09,155
+Dolayısıyla buradaki Output Buffer Full işaretine karşılık gelen Latch Enable ucumuz var.
+
+583
+01:47:09,555 --> 01:47:15,355
+Ama Ec-Nollage'a karşılık gelen buradaki yardımcı devrenin bir ucu yok.
+
+584
+01:47:15,655 --> 01:47:18,355
+Onu nasıl sağladım? Onu da şöyle sağladım.
+
+585
+01:47:18,579 --> 01:47:43,800
+Output buffer full işareti buraya geldiği vakit, bunu iki tane NAT kapısından geçirerek, biraz zaman gecikmesi sağlayarak tekrar acknowledge işaretiymiş gibi bunu kullandım. Bunun sebebi de şu, buradaki 4511 7-segment display tarayıcı entegre için bir acknowledge çıkışımız mevcut değil. Onun için bunu bu şekilde kullanmış olduk.
+
+586
+01:47:44,112 --> 01:47:48,212
+Dolayısıyla burada Handshaking tam anlamıyla kontrol edilmiş durumda değil.
+
+587
+01:47:48,212 --> 01:47:56,912
+Econology tarafının doğru çalıştığını veya belirli bir süre bekledikten sonra Seven Segment Display'de yanacağını varsayarak gönderdiğimiz değerin,
+
+588
+01:47:56,912 --> 01:48:01,212
+buradaki Econology otomatik olarak kendimiz üretmiş oluyoruz.
+
+589
+01:48:01,212 --> 01:48:03,212
+Öyleyse tekrar gelelim.
+
+590
+01:48:03,212 --> 01:48:09,212
+8255, grup B, mod 1'de çalışırken, bunun output buffer full ucu,
+
+591
+01:48:09,971 --> 01:48:32,332
+Latch Enable'a bağlı. İki tane NAT kapısından geçirdikten sonra da bunu alıp tekrar acknowledge olarak kullanıyoruz. Yapımız bu şekilde, bağlantılarımız bu şekilde. Şimdi sistemin nasıl çalıştığını source code üzerinden inceleyelim. Bir de tabi adres çözümleme devrimize bakalım. Bakın arkadaşlar, burada
+
+592
+01:48:32,479 --> 01:48:48,079
+A15'ler falan da var. Dolayısıyla aslında burada vermiş olduğumuz adres değeri 8 bite sığmıyor. 16 bit ile ifade edilebilen bir adres değeri. Bu yüzden dolayı adres değerlerini, port adreslerini DX üzerinden aktarmamız lazım.
+
+593
+01:48:54,452 --> 01:49:01,932
+A8'den A0'a kadar olan uçların belirli kombinasyonları için devre yine de çalışacaktır.
+
+594
+01:49:01,932 --> 01:49:12,292
+Ama siz bu şekilde yapmıyorsunuz. Siz eğer 16 bit fix bir adres gerekiyorsa, sadece o adreste çalışılacak şekilde adres çözümleme devresini özelleştiriyorsunuz.
+
+595
+01:49:12,292 --> 01:49:20,612
+Ama ben anlatırken bu şekilde ilerleyeceğim şimdi. Bu durumda şuna bakalım, bu cihaz hangi adrese yerleştirilmiş?
+
+596
+01:49:20,800 --> 01:49:29,079
+I.O.1 adresine yerleştirilmiş. Gelelim I.O.1'den çıkış alabilmek için ne yapmamız lazım? Onu inceleyelim.
+
+597
+01:49:31,120 --> 01:49:42,800
+I.O.1 ucundan çıkış alabilmek için şuraya yazacağımız değerin ne olması gerekiyor? 1, 0, 0, 0 olması lazım. Emo'ya zaten 0.
+
+598
+01:49:43,247 --> 01:50:05,487
+Burada da OR kapısı var. Dolayısıyla burada A13 0, A14 0, A15 0. O zaman bu adresi 15, 14, 13, 12'miz nerede? 12'de 0, 11, 12, pardon 11, 10, 9 şeklinde düşünebiliriz. Bunları da don't key'leri de böyle verelim.
+
+599
+01:50:07,283 --> 01:50:20,404
+Dolayısıyla bu cihazın adres uçlarını da şöyle bir kontrol etmemiz lazım yalnız. Hangileri bağlanmış? A1 ve A2 bağlanmış. O zaman onu da şöyle getirelim.
+
+600
+01:50:28,627 --> 01:50:52,387
+Şuradaki iki tane uç için bunların şunların kombinasyonları olacak. Demek ki biz 82.55'i 0, 2, 0, 0, H değerinden arzışçı çifte adreslere yerleştirdiğimiz için.
+
+601
+01:50:52,884 --> 01:51:09,644
+0, 2, 0, 6, h'a kadar olan çift adresleri. Yani 200h, 202h, 204h ve 206h adreslerine yerleştirmişiz. 206h'da kontrol word'ümüz var. Bunu anlamış oluyoruz.
+
+602
+01:51:12,144 --> 01:51:19,304
+Bu kod tarafına gelelim. Öncelikli olarak ilk yapacağımız iş şu olması lazım.
+
+603
+01:51:21,619 --> 01:51:30,140
+Grup A'yı, grup A mod 1 input olacak, grup B mod 1 output olacak. Bunları ayarlamamız lazım.
+
+604
+01:51:32,100 --> 01:51:36,180
+Şimdi şuradaki kodların ne yaptığını inceleyelim.
+
+605
+01:51:36,539 --> 01:51:46,180
+206H'a DX'e atayarak ne yapmış olduk? Burada control word adresini belirledik. Değil mi? Şurası.
+
+606
+01:51:49,908 --> 01:51:51,908
+Control Word adresimiz.
+
+607
+01:51:53,908 --> 01:51:58,908
+Peki bu Control Word'e atacağımız değerleri nasıl belirleyeceğiz? Ne yapmamız lazımdı?
+
+608
+01:51:59,908 --> 01:52:03,908
+Grup A, mod 1, input olacak.
+
+609
+01:52:03,908 --> 01:52:05,908
+Bakın şurada,
+
+610
+01:52:07,908 --> 01:52:10,908
+Control Word'e bir değer atıyoruz. Attığımız değer 0.9.
+
+611
+01:52:10,908 --> 01:52:11,908
+Şimdi bunu...
+
+612
+01:52:11,923 --> 01:52:37,263
+Belirleyelim, 09 neydi? 0000, 1001, bu nedir? BitSet Reset Mode, Don't Care, şu 4'e karşılık geliyor, 1. Port.cn'in 4'ünü 1 yap. Port.cn'in 4'ünü 1 yapmak ne demek? Interrupt Enable A'yı 1 yap demek. Daha sonra bir başka değer daha atıyoruz. Yine Control Word'e, bu değere bakalım.
+
+613
+01:52:37,939 --> 01:52:55,599
+0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, bit set reset mode, don't care, 2, bu sefer de PC2'yi 1 yap diyoruz. Bunun anlamı da interrupt enable B'yi 1 yap demek. Tamam.
+
+614
+01:52:56,499 --> 01:53:02,799
+Dolayısıyla interrupt enable A ve interrupt enable B'yi 1 yaptık. Şuradaki değere bakalım.
+
+615
+01:53:03,764 --> 01:53:30,404
+AL'ye BC değerini atıyoruz. Şimdi BC değerinizi yazalım, binary olarak. 1, 0, 1, 1, 1, 1, 0, 0. Attığımız değer bu. Bunu nereye atıyoruz? Tekrar, control word değerini atıyoruz. Çünkü DX'de 206 vardı, hala değiştirmedik onu. Bir kere mod ayarı yapıyoruz. Grup A mod 1'de.
+
+616
+01:53:30,931 --> 01:53:57,931
+Port A input, Port C'nin high kısmı input, Port B mod 1, pardon, grup B mod 1, grup B output, Port C'nin low'u output. Değil mi? Buna karşılık geliyor. Bizim için önemli olanlar şu mod 1 ayarlamak, input yapmak.
+
+617
+01:53:58,323 --> 01:54:18,604
+mod 1 ayarlamak, output yapmak. Bizim için en önemli olanlar bunlar. Daha sonrasında, d-202 adresini yükledik. 202 adresinde ne var? 200'de port A vardı, 202'de port B var. Değil mi? Burada da port B var.
+
+618
+01:54:22,771 --> 01:54:25,591
+Onu kullanmamışız zaten, o önemli değil.
+
+619
+01:54:29,140 --> 01:54:30,923
+Şimdi şunu silelim.
+
+620
+01:54:35,028 --> 01:54:50,807
+Şimdi sonsuz döngü içerisinde ne yapıyoruz? Bakın burada şurası bizim port c'miz, port c adresimiz. Port c'yi okuyoruz. Port c'yi 08h ile endliyoruz ve 0 mı diye kontrol ediyoruz.
+
+621
+01:54:50,807 --> 01:55:00,288
+Şimdi port c'yi okuduğumuz zaman ne almış oluyoruz? Bakalım port c'yi okuduğumuzda şu şeyi tekrar açalım.
+
+622
+01:55:20,372 --> 01:55:21,972
+Status Word'e bakın.
+
+623
+01:55:22,972 --> 01:55:25,372
+Porsche'den okuma yaptığımız vakit
+
+624
+01:55:29,747 --> 01:55:36,907
+Grup A'mız bizim ne yönlü ayarlanmıştı? Input yönlü olarak ayarlanmıştı. O zaman şuradaki bitler geçerli, grup A için.
+
+625
+01:55:37,947 --> 01:55:46,907
+Neye bakıyoruz burada bakın? 8 ile entlediğime göre aslında ben int ra'nın 1 olup olmadığını bakmak istiyorum. Diğerlerini sıfırladım.
+
+626
+01:55:47,147 --> 01:55:55,867
+Sadece int ra 1 mi diye bakıyorum aslında. Dolayısıyla bu kod parçasında int ra 1 olana kadar dönüyorum burada.
+
+627
+01:55:55,984 --> 01:56:20,644
+int, RA, 1 olduğunda ne demek bu? Artık ben bir tuşa basmışım ve o tuş 8255'in içerisinde okunmuş demek. Eğer bu okuma işlemi bitmişse ben gidip port A'dan okuma yapacağım. Bidiyorum, port A adresi, o adresten okuma yapıyorum AL'ye ve geçici olarak bunu BL'ye saklıyorum. Şimdi tekrar port C'den okuma yapacağım. Bu sefer ne için okuma yapacağım?
+
+628
+01:56:21,076 --> 01:56:38,716
+Bu sefer grup B müsait mi diye anlamak için okuma yapıyorum. Gidiyorum, port C'yi okudum, yani status word'ı okudum. Bunu 0,1 ile entliyorum. Şimdi bakın 0,1 ile entlediğimiz zaman port B output yönlü olarak kullanıldığında bu sefer de bakın int R'e B'ye bakıyormuşum.
+
+629
+01:56:39,060 --> 01:56:52,460
+Yani o sırada ben daha önceden grup B'ye bir veri göndermişsem, onun alışverişi daha bitmemişse orada bekleyeceğim. Ama bu alışveriş bitmişse artık grup B yeni veriyi almak için hazırdır anlamına gelir.
+
+630
+01:56:52,460 --> 01:57:04,300
+Dolayısıyla şurada grup B hazır olana kadar bekledim. Grup B hazırsa ne yapıyorum? Gidiyorum, port A'dan okumuş olduğum değeri port B'ye yazıyorum.
+
+631
+01:57:04,564 --> 01:57:13,264
+Bunu yazdığım zaman zaten ne elde etmiş oldum? Benim klavye tuş tarayıcım zaten bastığım tuşun binary karşılığını bana veriyordu.
+
+632
+01:57:13,264 --> 01:57:22,744
+Ben aynı binary karşılığı Seven Segment Display sürücüye gönderdiğimde de bastığım tuşa karşılık Seven Segment değerini ekranda görmüş oluyorum.
+
+633
+01:57:22,744 --> 01:57:27,864
+Bunu da sonsuz döngüde tekrarladığımız vakit her bastığım tuşa karşılık...
+
+634
+01:57:28,047 --> 01:57:39,327
+Mod 1'de input yapıp, Mod 1'de output yapıp, bastım tuşa karşılık gelen seven segment değerini display'de görmüş oluyoruz. Tekrar çalıştıracak olursak da.
+
+635
+01:57:39,327 --> 01:57:49,167
+Yalnız şuna dikkat edin, ben burada kodlarken bu sıfır numaralı tuş, bir numaralı iki, üç, dört, beş, altı, yedi, sekiz, dokuz diye gidiyor.
+
+636
+01:57:50,323 --> 01:57:59,323
+9'dan sonraki basamaklar için bu implemente edilmemiş şunun içerisinde. O yüzden boş, decimal bir tarayıcı olduğu için burada kalmış oluyor.
+
+637
+01:57:59,323 --> 01:58:06,323
+Bastığım her tuşa karşılık 0, 1, 2, 3, 4, 5, 6, 6 değerini ekranda görmüş oluyorum.
+
+638
+01:58:06,323 --> 01:58:16,323
+Tamam. Dolayısıyla bu örneğimiz böyle. Bu örneği ve sunumu paylaşacağım arkadaşlar. Bu noktaya kadar sormak istediğiniz bir şey var mı?
+
+639
+01:58:16,500 --> 01:58:25,979
+Çünkü bir sonraki deneyimizde 8255 mod 1 ile ilgili olacak. Önce iki hafta boyunca mod 0 yapılacak. Daha sonra da mod 1 deneyi yapılacak.
+
+640
+01:58:25,979 --> 01:58:38,500
+Var mı sormak istediğiniz bir şey? Yoksa iki dakika sonra lab session'ını başlatacağım. Tekrar oraya bu hafta kimler deneye girecekse katılsınlar.
+
+641
+01:58:44,564 --> 01:58:51,564
+2 saat boyunca da lab işlemi yürüyecek. Var mı sormak istediğiniz tekrar soruyorum.
+
+642
+01:58:51,564 --> 01:59:06,564
+Hocam listedeki sıraya göre mi gidecek? Evet, listedeki sıraya göre gidecek. Lab'ı olmayanlar girmesin. Lab 2'deki sorumlu olacağımız kısım mod 1'e kadar, evet.
+
+643
+01:59:11,412 --> 01:59:20,171
+Bir kontrol edeyim ama, yani hatırımda kaldığı kadarıyla mod 1 olması lazım. Evet, buraya kadar olması lazım.
+
+644
+01:59:28,372 --> 01:59:37,051
+Arkadaşlar, başka bir sorunuz yoksa ben diğer sesiyonu başlatayım. Asistan arkadaşlarımız da katılacak zaten. Orada da lab'ı yürütürüz.
+
+645
+01:59:39,471 --> 01:59:50,592
+Yine bir sorunuz olursa mail üzerinden de sorabilirsiniz. Bu şekilde deney sorularını takip edip bir hafta boyunca yaparak ilerleyerek lab'larımızı gerçeklemeye çalışacağız.
+
+646
+01:59:50,783 --> 02:00:04,983
+Şimdi sorununuz yoksa ben bu session'ı kapatıyorum. Lab session'ını açacağım. Oraya tekrar lab'a gelecek olanlar login olarak katasınlar. Herkese iyi günler diliyorum şimdi.

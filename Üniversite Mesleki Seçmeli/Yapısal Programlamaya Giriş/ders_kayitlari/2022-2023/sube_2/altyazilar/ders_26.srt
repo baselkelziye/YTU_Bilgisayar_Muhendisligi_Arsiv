@@ -1,0 +1,2731 @@
+1
+00:04:01,139 --> 00:04:02,795
+Günaydın arkadaşlar.
+
+2
+00:04:33,588 --> 00:04:43,588
+Şimdi, bugünkü konularımız, biraz böyle yine örnek çözerek, hem de bazıları ufak tefek detaylar anlatarak devam edeceğiz.
+
+3
+00:04:45,588 --> 00:04:54,588
+Şu ana kadar, işte laboratuvarda ağaçlarla alakalı örnekler yaptığımız, linkli listeleri gördüğümüz.
+
+4
+00:04:55,588 --> 00:05:00,588
+Bunlar, structure kullanmayı gerektiren şeyler. Tabii biz bu derslerde structure anlatmayacağız.
+
+5
+00:05:01,684 --> 00:05:18,484
+Bu, yapsal Programlamaya Giriş dersinin kapsamında bir şey değil. Structure'lığı veya normal değişkenleri oluşturduğumuzda, Belli'in Stake bölgesinde saklanıyor dedik.
+
+6
+00:05:18,484 --> 00:05:29,444
+Dönem başından beri bunu farklı şekillerde konuşuyoruz. Bu Stake bölgesi dediğimiz yer arkadaşlar, belli bir kapasitesi var.
+
+7
+00:05:29,747 --> 00:05:39,228
+Bir yerden sonra çok fazla kapasitede yer sağlamaya gidiyor. İstediğiniz kadar yeri elde edemeyebiliyorsunuz.
+
+8
+00:05:39,228 --> 00:05:55,947
+Örneğin şöyle bir şey yapalım. Return 0 diyelim. Programın normal kapandığını görmek adına. Şöyle bir dizi oluşturayım. Biz de diyelim ki şu kadar eleman olsun.
+
+9
+00:05:56,016 --> 00:06:04,256
+Program sadece şimdilik bu. Hatta şöyle diyelim, birazdan belki kullanacağız.
+
+10
+00:06:12,500 --> 00:06:15,060
+Bu programı derleyip çalıştırdığımızda ne oluyor?
+
+11
+00:06:26,612 --> 00:06:28,612
+Ne yapacak bu program?
+
+12
+00:06:28,612 --> 00:06:32,612
+Bölgesinde bilintecirlik yer mi ayırıyoruz hocam?
+
+13
+00:06:32,612 --> 00:06:34,612
+Yer ayırıyoruz, evet. Sonra ne oluyor?
+
+14
+00:06:38,067 --> 00:06:42,067
+Sonra da program bittiği için geri bırakılıyor galiba.
+
+15
+00:06:42,067 --> 00:06:50,067
+Evet, yani program kapandığında sizin programınız, aslında çalışık durumdaki programa proses diyoruz.
+
+16
+00:06:50,067 --> 00:06:58,067
+Şununla birlikte programın işi bitti, yani prosesin işi bittiğinde ne olacak? Orası temizlenecek.
+
+17
+00:07:00,019 --> 00:07:09,620
+Şimdi bu sıfırı görmüş olmamızın sebebi program şuradan başladı, şuraya kadar sağlıklı bir şekilde devam etti, geldi.
+
+18
+00:07:09,620 --> 00:07:27,819
+Ama ben şunu çok fazla değerlerle artırsam, ne bileyim dokuz desem, şöyle şeyler desem, şu an kaç oldu milyon olduk mu? Yani milyon veya milyar milyon olma milyonmuşuz mesela diye bir şey daha koyalım.
+
+19
+00:07:28,755 --> 00:07:42,755
+Derlemede yine hiçbir sıkıntı yok. Bakın ne oldu, program çalışıyor gibi bir şeyler var ama şu an return 0'ı göremedik.
+
+20
+00:07:46,612 --> 00:07:48,427
+Mesela bir daha çalıştıralım.
+
+21
+00:07:51,540 --> 00:08:08,740
+Bakın ne oldu? Şöyle bir hata ile, değer ile döndü. Yani işletim sistemi bize şu satırdan ötesini koşturtmadı. Programımızı tamamen kapatalım. Mesela test diyelim.
+
+22
+00:08:14,548 --> 00:08:21,548
+Hiçbir zaman bu test satırına gelemeden program ne oluyor? IOP ediliyor mesela. Şunu biraz küçültelim.
+
+23
+00:08:26,387 --> 00:08:29,387
+Bu da mümkün değilmiş, onu anlıyoruz.
+
+24
+00:08:30,387 --> 00:08:35,387
+Yani, sistem engellik veriyor. Şöyle biraz daha küçültelim.
+
+25
+00:08:41,652 --> 00:08:44,652
+Çocuklar.
+
+26
+00:08:48,307 --> 00:08:54,408
+Masa üstündeki, şimdi buraya bir exe dosyası oluşturduğu için onu da temizlemek gerekiyor.
+
+27
+00:08:54,908 --> 00:09:05,607
+Aynı exe'yi tekrar kullanalım. Hatta bakın şu an program Task Manager'ı açarsam, Dinamik Dizi isimli program çalıştığı için silemiyorum.
+
+28
+00:09:06,807 --> 00:09:09,707
+Böyle isme göre nasıl sileyeceğiz?
+
+29
+00:09:11,956 --> 00:09:27,316
+Şu an öldüyse öldü. İşletim sistemi de hemen yani onu şey yapamadı, öldüremedi. Şu an silebiliyorum. Biraz önce hala yani kapattım ama belleği daha böyle şey yapamadı, tam serbest bırakamadı.
+
+30
+00:09:27,316 --> 00:09:38,516
+Şimdi mesela bu mümkün. Zaten kaç on binler verdim yani 98 bin. Şöyle biraz da artırdınız var. Şimdi bu stake bölgesi arkadaşlar.
+
+31
+00:09:39,635 --> 00:09:52,635
+Birkaç açıdan sıkıntılı kullanmak. Birincisi, çok fazla yer vermek. İkincisi, biz bir fonksiyon yazdığımızda, bu fonksiyonla alakalı işte parametre vermek.
+
+32
+00:09:52,635 --> 00:10:00,000
+Ne oluyordu? Stek bölgesinde aktarıyor. Şimdi gelecek dönem Assemble dersi gördüğünüzde bir fonksiyon...
+
+33
+00:10:00,000 --> 00:10:10,399
+Bu konusunun çağrısı yaptığınızda gönderdiğiniz argümanlar veya şurada aldığınız parametreler stek bölgesinde yerleştirilir. Bunun daha detayını assembly programında göreceksiniz.
+
+34
+00:10:10,399 --> 00:10:23,600
+Stek bölgesi bu işlerle uğraşıyor. Böyle lokal tanımlı değişkenleri alıyor. Bir de ne sıkıntısı var? Fonksiyon tamamlandığında, bu fonksiyon tamamlandığında
+
+35
+00:10:23,827 --> 00:10:33,827
+Artık oradaki değişkene erişme hakkınız yok. Yani A değişkeni olsun, C değişkeni olsun, ne olmuş oluyor? Bir başkası tarafından kullanılabilir hale gelir.
+
+36
+00:10:33,827 --> 00:10:44,779
+Ama şuna ihtiyaç diyebiliriz, işte burada tanımladığımız bir değişken program kapanana kadar yaşamına devam etsin. Buna duration diyoruz.
+
+37
+00:10:44,947 --> 00:10:52,548
+Bir değişkenlerin scope özelliği vardır. İşte şu aralıkta D değişkenine ancak burada erişiriz. Mesela buradan D'ye erişemeyiz.
+
+38
+00:10:52,548 --> 00:11:02,347
+Ama eğer o değişkenin yaşadığından eminse pointer ile veya başka bir yolla erişebiliriz. Oradan ismiyle erişmeyeceğiz de başka bir yolla erişebiliriz.
+
+39
+00:11:02,347 --> 00:11:10,347
+Veya şuradaki A değişkeni, buradaki C değişkeni, bunlar lokal değişkenler. Fonksiyon tamamlandığında ömürleri bitiyor.
+
+40
+00:11:10,644 --> 00:11:18,644
+Hiçbir şekilde erişemiyorum ama bunları alıcı ömürlü yapma imkanında var.
+
+41
+00:11:18,644 --> 00:11:24,644
+Bu iş için Belleğin HEEP dediğimiz bölgesini kullanıyoruz.
+
+42
+00:11:24,644 --> 00:11:29,644
+HEEP bölgesinden faydalanmak için özellikle diziler açısından buna bakacağız.
+
+43
+00:11:29,644 --> 00:11:35,563
+Normal klasik değişkenler için farklı şeyler var. Önce diziler açısından bakalım.
+
+44
+00:11:35,923 --> 00:11:55,644
+Diziler açısından baktığımızda bizim işletim sisteminden izin alarak bu işi yapmaması gerek. İşletim sisteminden izin almanın da bir tane çağrısı var, fonksiyonu var. Malloc dediğimiz fonksiyonu. İşte bunun birkaç tane farklı versiyonu var. Ama bu dersin konusu değil tam olarak. Sadece birkaç bazı yerlerini anlatacağım.
+
+45
+00:11:55,644 --> 00:12:02,803
+Şimdi ona güvenmeden önce biz bu pointerları tekrar hatırlayalım. İşte bir pointer değişkeni tanımladığınızda
+
+46
+00:12:03,091 --> 00:12:05,652
+Bunu bir yere göstertebiliyorduk.
+
+47
+00:12:06,172 --> 00:12:13,331
+Bir değişkenin adresi burada tutulursa, bu pointer değişkenin üzerinden o değişkene ulaşabiliriz.
+
+48
+00:12:13,331 --> 00:12:16,152
+Şimdi elimizde dizimiz var. Şöyle bir dizi olsun.
+
+49
+00:12:16,912 --> 00:12:19,731
+Hatta ne diyeyim, yani yüz bulalım, çok karışık olmasın.
+
+50
+00:12:20,251 --> 00:12:23,572
+Diyorum ki, P, bundan sonra neyi göstersin?
+
+51
+00:12:23,831 --> 00:12:25,372
+D'yi göstersin diyebilirim.
+
+52
+00:12:25,372 --> 00:12:28,692
+D zaten kendisi bir pointer gibiydi, hatırlarsınız.
+
+53
+00:12:29,011 --> 00:12:35,611
+Bu şekilde yaptığımda, P üzerinden de dizinin elemanlarına erişip sağlayabilirim arkadaşlar.
+
+54
+00:12:35,611 --> 00:12:40,411
+Mesela şöyle bir şey yapalım, ilk birkaç elemanı yazalım.
+
+55
+00:12:42,411 --> 00:12:49,611
+Böyle bir şey yaptığımda ne olacak? İlk 7 eleman bu olacak, geri kalan bütün elemanlar 0 olacak. Printf diyelim.
+
+56
+00:12:52,851 --> 00:13:17,836
+Şimdi, bir videolara diyelim. Mesela, B'nin 0. elemanına erişsin. Bir de şimdi bu P'nin gösterdiği yerdeki elemanın değerine git eriş demekti. Şu hatırlarsanız D referansı yapacaktır. Şimdi bir değerleyelim bakalım. Ne oldu? B kendisi pointer olduğu için bunu sağladı. Şimdi aynı şunu şöyle yapacağım.
+
+57
+00:13:25,587 --> 00:13:34,587
+D'nin sıfırıncısının adresine yazılıyor. Ne olacak? Hiçbir şey fark etmeyecek. İkisi de aynı değerleri bize yazdıracak.
+
+58
+00:13:34,587 --> 00:13:44,587
+İşte birebir, birebir şeklinde devam ediyoruz. Şimdi pointer'lar referans etme ve dereferans etme bu şekilde. Mesela biz...
+
+59
+00:13:46,004 --> 00:13:57,004
+D'nin dizinin üçüncü elemanına pointer yoluyla erişmek istesek ne yapacağız? O zaman dizinin üçüncü elemanı mesela yine şunun üzerinden yapalım.
+
+60
+00:13:58,004 --> 00:14:07,004
+P, D'nin sıfırını göstersin ama ben D'nin üçüncü elemanına P üzerinden erişmek istiyorum. O zaman diyeceğiz ki pointer aritmetiği yapar gibi.
+
+61
+00:14:07,504 --> 00:14:13,004
+Aslında zaten şu arka planda size bir pointer aritmetiği yapan bir işlem bu kareli parantası.
+
+62
+00:14:13,440 --> 00:14:25,940
+Görün ki, P'den itibaren 3 adım ileriye gitti. 3 adım ileriye git demek, 3 ekle demek değil. 3 çarpı kullandığın değişken türü neyse, işte integer ise 4, 3 çarpı 4 kadar ileriye git demek.
+
+63
+00:14:25,940 --> 00:14:36,940
+3 çarpı 4 kadar ileriye git ve oradaki değeri getiriyoruz. Şuraya bir tane daha paranda koyacağız. Ne olacak? Üçüncü değerimiz neyse, bunu göreceğiz.
+
+64
+00:14:37,491 --> 00:14:45,111
+Bu pointer aritmetiğinin üçüncü değerimiz tabi burada şuna karşı değil.
+
+65
+00:14:45,111 --> 00:14:55,671
+Mesela bunu şöyle yapalım, bir de for döngüsü diyelim. Max'a kadar gitmesin de mesela 10'a kadar gitsin, Max biraz fazla.
+
+66
+00:14:55,671 --> 00:15:04,111
+Dizinin belli bir kısmını yazalım. Şurada printf görürüm. Mesela adres yazalım. Yüzde p. Bakalım bu adresleri nasıl?
+
+67
+00:15:04,820 --> 00:15:27,820
+%p. Diyorum ki, ilk yazabileceğim adres türüne de D'nin i incisinin adresini ekrana bastırır. Önce D'nin 0'nın adresini gelecek, daha sonra D'nin. Bir de bunu pointer ile yap. Şöyle altı sıfırla inelim. Pointer ile yaparken şuna dikkat ediyoruz. Şimdi P'yi...
+
+68
+00:15:28,532 --> 00:15:33,132
+Doğrudan yazdırabilirim. Çünkü P nereyi gösteriyor? D'nin 0. adresini gösteriyor.
+
+69
+00:15:33,132 --> 00:15:40,532
+Şimdi bir sonraki adımda P'nin güncellenmesi için ya şurada P'yi arttıracak, 1 arttırabilirim. O olabilir.
+
+70
+00:15:40,532 --> 00:15:49,532
+Ya da diyeceğim ki P artı i'nin değerini yazdır. Bunlar ikisi baş başa hani şeylerde gidecekler.
+
+71
+00:15:51,532 --> 00:15:52,532
+Şuraya...
+
+72
+00:15:52,884 --> 00:15:57,283
+En sonunda bir backslash anı daha koyalım, farklılık olsun.
+
+73
+00:15:57,283 --> 00:15:59,683
+Efendim, iyi tanımlayacağız.
+
+74
+00:15:59,683 --> 00:16:04,283
+P'nin, pointer'ın gösterdiği yerdeki değeri arttırmak istediğimizi nasıl yapıyorduk?
+
+75
+00:16:06,283 --> 00:16:13,683
+Pointer'ın gösterdiği yerdeki, yani P'nin üçüncü adresindeki değerin kendisini arttırmak istiyoruz, doğru mu?
+
+76
+00:16:13,683 --> 00:16:14,484
+Evet.
+
+77
+00:16:14,484 --> 00:16:16,084
+Dur, ona da şimdi geleceğiz.
+
+78
+00:16:16,884 --> 00:16:20,084
+Oradaki değere müdahale etmek istiyorsak ayrıca bir şey yapalım.
+
+79
+00:16:20,403 --> 00:16:34,003
+Şimdi sıfırıncı eleman, bakın Fc'ye yetmiş değilmiş, ondan sonra yetmiş dört değilmiş. Burada little and dine dediğimiz yani aşağıdan yukarıya doğru bir artış görüyoruz. İkisi ne oldu? Birbirinin aynı değerleri.
+
+80
+00:16:34,003 --> 00:16:47,203
+Şimdi arkadaşınızın dediğini yapalım. Mesela elemanları bir arttıralım. Elemanları bir arttırırken de mesela ne yapalım? D'nin iyisini artı artı yapalım. Bu bir.
+
+81
+00:16:47,604 --> 00:17:08,604
+Bunu muadili nasıl olacak? Şimdi elimizde P var. Şuraya hatta şöyle geleyim. Tekrar baştan yapalım. Elimizde P var. Bu P ilk elemanın adresini gösteriyor. Ben o adresteki değere erişeceksem, o adresteki değere erişmenin yolu bir kere yıldız yap.
+
+82
+00:17:16,692 --> 00:17:41,291
+i'ye i kadar ötele. Şimdi burada şu operatör ile şu operatör arasında bir anlaşmazlık çıkıyor. Bir de ne var? Bunu bir arttırır. Böyle bir şey yazamak. O zaman bunları parantezde önceliklendireceğiz şuradakinde olduğu gibi. Şimdi bu asterik yani çarpma işlemi değil. Bakın dereferans operatörü. Diğerlerine göre biraz daha öncelikli. Neye göre öncelikli? Şuradaki artıya göre öncelikli. Onun için şurayı yine artıyorum.
+
+83
+00:17:42,804 --> 00:18:08,284
+Parantez içerisine alıyorum ki, önce artı yap. Yani i'nin değeri sıfırken önce p'nin i'sine git, daha sonra bu p'nin i'sinin gösterdiği yerdeki değere bir artı yap. Hani bu biraz kata karışık olabilir olabilir, o zaman şöyle yazarsınız. P'nin i'sindeki değeri, p'nin i'sindeki değeri alıp üzerine bir ekle. Denet bilir, tamam mı?
+
+84
+00:18:09,011 --> 00:18:17,011
+Şimdi burada ne göreceğiz? Tabi D'nin iyisindeki değeri ve P'nin iyisindeki değerin sayısal halini görelim.
+
+85
+00:18:19,011 --> 00:18:28,011
+O zaman şöyle bir şey yapacağız. Bunlar da %d, %d olacak. En son şuraya bir, neyse, orada direkt görürüz.
+
+86
+00:18:29,907 --> 00:18:44,307
+Tabi ne oldu? 1 arttırdık 2 oldu, 1 arttırdık 3 oldu. Bundan sonra 2'şer arttırmış olduk. 3, 3, 4, 4, 5, 5. Şuradakiler de 0'dı. 9'dan sonraki. Onlar da 2, 2 olmaya devam ediyor.
+
+87
+00:18:45,907 --> 00:18:56,707
+Şimdi burada şunu da yapabiliriz arkadaşlar. P'ye i kadar eklemek yerine diyorum ki P'nin gösterdiği yerdeki değeri şöyle 1 arttır.
+
+88
+00:18:57,236 --> 00:19:09,636
+Ama bu işi yaptıktan sonra, hatta P'deki değeri yazdır. Bunu yapar hep P sabit. P'yi bir arttırarak, Aynı sonucu görürüz.
+
+89
+00:19:11,636 --> 00:19:19,336
+Ama burada artık P ne oldu? Bu döngü bittiğinde P dizinin başlangıç adresini göstermiyor.
+
+90
+00:19:19,571 --> 00:19:27,011
+İşte şu 10. adresi gösterilir duruma geliyor. Yani P'yi biraz bir anlamda hani orijinal değerini kaybetmiş oluyoruz.
+
+91
+00:19:27,011 --> 00:19:31,371
+Hangisi artık senaryoya hangisi uygunsa onu kullanacağız.
+
+92
+00:19:31,371 --> 00:19:39,811
+Şimdi bunlar temel pointer aritmeti ile alakalı bu ders kapsamında bilmemiz faydalı olan şeyler.
+
+93
+00:19:39,811 --> 00:19:46,971
+Farklı operatörlerle bakın şu şekilde de, bu şekilde de, biraz önce bahsettiğim şekilde de dizi elemanlarına
+
+94
+00:19:47,056 --> 00:19:49,056
+erişim sağlayabiliyoruz.
+
+95
+00:19:51,056 --> 00:19:57,056
+Burada illegal erişim durumları olabilir mi?
+
+96
+00:19:57,056 --> 00:19:59,056
+Şimdi mesela,
+
+97
+00:20:00,056 --> 00:20:06,056
+Dizinin 100 elemanı olduğunu söyledik.
+
+98
+00:20:06,056 --> 00:20:09,056
+Şimdi bizim şöyle bir printfimiz olsun.
+
+99
+00:20:10,056 --> 00:20:13,932
+%B yapalım mesela.
+
+100
+00:20:14,324 --> 00:20:33,844
+Bu yüzde D'yi yaparken dizinin 103. elemanına erişti. Bunu bir de pointer ile yaparsak, şimdi P burada kaybedildi, o zaman P'yi şurada tekrar D yapabilirim veya D'nin 0'ını elemanına alabilirim.
+
+101
+00:20:42,324 --> 00:21:08,124
+Elemanla Eş. Hatta size bir trik göstereyim. Yani şu köşeli parantez işleminin pointer aritmetiyle olduğunu göstermek dizinin 103'ü değil de 103'ün B'si desem ne olacak acaba? Yani bunu 103 değil de belki binler elemanlar üzerinden yapalım, 3 diyelim.
+
+102
+00:21:13,044 --> 00:21:38,544
+Üçüncü elemanımız şu an ne? Altı, altı, altı, altı, altı. Arkada asıl olan şey, şuradaki veri ile şu veri arasında şu işlemin yapıldığı ve bu işlem ne yapıyor? Bir elemana erişmek demek. Bir de arkada şu yapıldığı. Mesela şunu desek, bu ne olur? Bu.
+
+103
+00:21:39,380 --> 00:21:42,980
+İkisi adres yazacaktır. O zaman bunu kaldırmak gerekiyor.
+
+104
+00:21:44,980 --> 00:21:49,980
+Bak ne olur, onlarda aynı şey, arkadaki pointer aritmetinin mantığı, tamam mı?
+
+105
+00:21:50,380 --> 00:21:56,780
+Şimdi bizim amacımız, 100 elemanlı dizinin dışına çıktığımızı düşünüyoruz.
+
+106
+00:21:57,080 --> 00:21:59,980
+Şu test kodumuzu açıyorum şimdi tekrarla.
+
+107
+00:22:01,652 --> 00:22:10,851
+Şimdi ne oldu? Bunu yaptı, bunu yaptı. Test yazı 0, program sorunsuz bitti. Yani 100 elemanlı dizimiz var, biz 103 elemanlı 103. şeye gidiyoruz.
+
+108
+00:22:10,851 --> 00:22:16,851
+Ne yapıyor? Dizinin başlangıç adresinden itibaren 103 birim uzağa gidiyor.
+
+109
+00:22:16,851 --> 00:22:27,052
+Peki şunu şöyle biraz arttırsak, 1003 desek, bunu da yaptı.
+
+110
+00:22:27,284 --> 00:22:35,084
+Hatta değerleri de yazdı. Yani ben o zaman dizilerin dışına C ile çok rahat bir şekilde taşabiliyorum.
+
+111
+00:22:35,084 --> 00:22:39,284
+Ama bu her zaman böyle olacak mı acaba? Bakın ne yaptı şu an? Taşamadık.
+
+112
+00:22:39,284 --> 00:22:45,284
+Orada dedi ki, dur bakalım dedi işletmişti. Şimdi 103'e geri geliyorum arkadaşlar.
+
+113
+00:22:45,284 --> 00:22:54,176
+Bu kodu alıp bir başka bilgisayarda çalıştırın veya bu bilgisayarda başka bir program çalışırken çalıştırın.
+
+114
+00:22:54,175 --> 00:23:06,775
+Yani size verilen ayrılan stek bölgesi eğer kısıtlı bir şekilde ise, erişime kapatıldıysa işletim sistemi tarafından stek bölgesinin belli bir limitten fazlası.
+
+115
+00:23:06,775 --> 00:23:17,415
+Yani sana şurada 100 elemanlı yer verdim diyor ama 101. elemana ulaşmama durumumuz var. Ulaşmamamız da gerekiyor. Çünkü orası bize ait değil.
+
+116
+00:23:18,099 --> 00:23:29,899
+Bunun için bunlara da dikkat etmek lazım. Bunlar illegal durumlardır. Çok fazla dizinin dışına taş bulmak lazım. Başka illegal, yani şunlara illegal diyelim.
+
+117
+00:23:33,399 --> 00:23:37,899
+Peki hocam, şimdi hem P hem de D aynı adresleri tutuyor.
+
+118
+00:23:39,263 --> 00:23:43,063
+Biz burada P'yi köşeli parantezlerle birlikte kullanabilir miyiz?
+
+119
+00:23:43,063 --> 00:23:49,263
+Hayır. Dizi değişkeni olarak tanımlandığında ancak köşeli parantez kullanırsınız.
+
+120
+00:23:49,263 --> 00:23:58,263
+P, bir pointer değişken türü olduğu için o pointer değişkenine yapılacak operasyonlar ancak bu şekilde parantezlerle söylüyor.
+
+121
+00:23:59,263 --> 00:24:03,263
+Yani P'nin üzerinde şey yok, P bir dizi değişkeni değil.
+
+122
+00:24:04,307 --> 00:24:14,188
+Diziler arka planda pointer aritmetiği elbette kullanıyorlar ama dizi değişkeni olarak tanımlamak başka bir şey, pointer değişkeni olarak tanımlamak başka bir şey.
+
+123
+00:24:14,188 --> 00:24:26,059
+Pointer değişkenlerini de dizi olarak tanımlarsınız. Mesela beş dediğinizde ne olur? Beş tane pointer değişkeni tutan bir dizi tanımlamış olsun. Beş tane eleman değil bak.
+
+124
+00:24:26,324 --> 00:24:32,564
+5 tane adres tutan bir pointer tanım. Bu dersin konusunda buraya şimdilik girmeyelim, kafanız kaçmaz.
+
+125
+00:24:33,864 --> 00:24:42,203
+Şimdi, peki bizim arkadaşlar amacımız bellekten... Ha bir de şu sorun var.
+
+126
+00:24:42,203 --> 00:24:49,884
+Şimdi ben max kadar yer ayırıyorum, işte 100 tane. Ama diyorum ki bir tane n sayımı okundum.
+
+127
+00:24:52,948 --> 00:25:02,948
+printf dediniz, enter n dediniz, scanf dediniz, n sayısına girdiniz.
+
+128
+00:25:05,548 --> 00:25:11,948
+Sonra diyorsunuz ki, mintager dizi 2 n diye bir şey yapıyorsunuz.
+
+129
+00:25:12,948 --> 00:25:20,716
+Şimdi bir de buna bakalım. Bunu şu ana kadar yapmayın diyorduk. Öyle değil mi yani? Bu iyi bir şey değil, yapılmıyor.
+
+130
+00:25:21,236 --> 00:25:43,236
+Enter, end edilip, 25 dedik. Program sorunsuz bitti. Normalde şu an için çalıştığını görüyoruz ama çalışmama olasılığı var. Çünkü CD'li bu şeye her zaman izin vermiyor. Mesela şöyle, çok büyük olmayan yine bakın 100 binler mertebesinde 200 bin gibi bir şey yaptı. Bunu da çalıştırdım.
+
+131
+00:25:43,236 --> 00:25:48,236
+Hani şu an aslında bir dizi oluşuyor ama bu garanti değil.
+
+132
+00:25:48,500 --> 00:25:55,899
+Hatta biz diyoruz ki C'de dizileri bütün değişken tanımlamalı değişken fonksiyonun başında yapmak.
+
+133
+00:25:55,899 --> 00:26:01,299
+Onun için şunu en başta yapmamız lazım ama şöyle yaptığımız düşünün.
+
+134
+00:26:04,299 --> 00:26:05,699
+Bu bile sıkıntılı.
+
+135
+00:26:05,699 --> 00:26:07,699
+Niye sıkıntılı?
+
+136
+00:26:07,699 --> 00:26:13,500
+Çünkü zaten şu diziler biliyoruz ki stack bölgesinde yer verecek program çalışırken
+
+137
+00:26:13,715 --> 00:26:23,015
+Stake bölgesinde ne kadar yer olacağını bilemiyoruz. Oradan emin değiliz. Onun için bu da doğru bir kullanım değil.
+
+138
+00:26:23,015 --> 00:26:40,776
+Onun için şuraya da gelip diyelim ki illegal array allocation. Niye? Stake bölgesinden keyfimize göre bir yer verilemiyor her zaman.
+
+139
+00:26:41,011 --> 00:26:49,671
+Hocam, yaptım çalıştı. Yaptım çalıştı olur, sıkıntı yok. Ama bu çalışması her zaman çalışacağı anlamına gelmez.
+
+140
+00:26:49,671 --> 00:26:57,511
+Ki biz bunu ödevlerde çok yaşıyoruz. İşte laboratuvardaki bilgisayarlar, RAM açısından daha sınırlı 2 GB RAM'i var.
+
+141
+00:26:57,511 --> 00:27:01,511
+Geldiğinde mesela o bilgisayar belki 16 GB RAM.
+
+142
+00:27:01,728 --> 00:27:11,228
+Daha düşük bir üreme geldiğinde ne oluyor? Hocam, evde çalışıyordu, bilmem, yani olmuyor. Niye olmuyor? Çünkü bu şöyle yanlış bir kullanım var.
+
+143
+00:27:11,928 --> 00:27:18,028
+Aynı şekilde şunları da illegal dedik de bundan niye kapandı?
+
+144
+00:27:19,928 --> 00:27:22,028
+Peki bunun legal yolu ne demiş?
+
+145
+00:27:24,728 --> 00:27:29,028
+Legal yolu arkadaşlar, pointerlarla beraber
+
+146
+00:27:29,364 --> 00:27:40,163
+Şuraya bir tane daha pointer koyacağım. Rray diyelim, böyle adı Rray olan bir pointer olsun. İşletim sisteminizin gözetiminde bu işi yapmak demek.
+
+147
+00:27:40,163 --> 00:27:54,860
+Ve siz programın içerisinde herhangi bir yerde istediğiniz kadar dizi tanımlayabiliyorsunuz. Hatta işletim sistemini zorlayarak bu...
+
+148
+00:27:54,867 --> 00:28:04,867
+Tanımlayacağınız alanın limitlerini çok çok arttırabiliyorsunuz. Ha bu arada bir sorular varmış.
+
+149
+00:28:04,867 --> 00:28:13,867
+Hocam diziyi tanımdıktan sonra n değeri değişirse ne olur? İşte n değerinin değişmesi de bir başka ayrı problem. Ben burada n açtım.
+
+150
+00:28:13,867 --> 00:28:18,867
+n'i mesela iki n yaptım aşağıda bir yerde. Yani şu kadarlık yer açtım.
+
+151
+00:28:19,028 --> 00:28:29,028
+Bu da bir problem. İki en kadar yere ulaşamama ihtimaliniz var. Onu zaten şurada dizinin dışına taşarak aynı durum gibi düşünebilirsiniz. O da bir problem.
+
+152
+00:28:29,028 --> 00:28:38,028
+Recursive Function demek Recursive Function diye bir fonksiyon türü yok. Recursive Function'un algoritması arkadaşlar.
+
+153
+00:28:38,028 --> 00:28:45,028
+Fonksiyon fonksiyondur. Yani sen bunun içinde P'yi çağırtın fonksiyonun çağırtını Recursion haline getirmiş oluyorsun.
+
+154
+00:28:45,715 --> 00:28:51,155
+Her fonksiyon çağrısında bu değişkenler yeniden tanımlanmış oluyor.
+
+155
+00:28:51,155 --> 00:29:01,955
+[öğrenci] senin sorununda şey, yani rekürsif olarak bir fonksiyon diye ayrıca bir şeyimiz yok. O rekürsif bir algoritma geliştirme tarzı, problemi küçültme tarzı.
+
+156
+00:29:01,955 --> 00:29:10,515
+Yine her bir fonksiyon, yeni bir fonksiyon oluşuyormuş gibi o bellekten yer ayıracaktır size. Hiçbir farkı yoktur onların.
+
+157
+00:29:11,124 --> 00:29:16,364
+Evet, amacımız istediğimiz kadar yer. Yani şu kısmı alalım.
+
+158
+00:29:19,955 --> 00:29:41,955
+N sayısını aldık. Artık bizim en elemanlı bir dizi oluşturmak için elimizde bir aracımız var. Bu dizi belleğin heap bölgesinde oluşacak. Bakın stake doldurulma mantığıyla şuradaki adresleri gördük ya, heap'in doldurma mantığı birbirinden farklı. Biri yukarıdan aşağıysa öbürü aşağıdan yukarıya doğru.
+
+159
+00:29:42,324 --> 00:30:02,124
+Tamamen sistemle alakalı şey. Bu fonksiyonun adı arkadaşlar, memory allocation dediğimiz, allocate etmek demek bir yeri tahsis etmek, rezerve etmek gibi düşünebilirsiniz. Mallock fonksiyonu diyoruz. Bu fonksiyonun şöyle protokine bakarsak, gerçi bu stdlib'in içinde onu da ekleyelim.
+
+160
+00:30:12,372 --> 00:30:34,912
+Doğrudan söylemiyor, neyse. Şimdi diyor ki, bu, buraya bir size bilgisi. Evet, bakın şimdi göründüm. Şu size alttan tıra t dediği şey, buraya tam sayı türünde bir boyut bilgisi verdi. Şimdi bir şeyin boyutu. Integer kaç byte? 4 byte. Float kaç byte? İşte 8 byte veya o da 4 byte. Double 8 byte. Karakter 1 byte.
+
+161
+00:30:35,539 --> 00:30:46,039
+Ben kaç elemanla yer istiyorum? n elemanla yer istiyorum. O zaman diyorum ki n çarpı, size of diye bir operatörüm var. Bu fonksiyon değil, operatördür.
+
+162
+00:30:46,039 --> 00:30:55,539
+Diyorum ki integer'ın size'ı bu bilgisayarda işte 2 bytes ise 2 byte, 4 bytes ise 4 byte. Kaçsa onu getir, onu n ile çarp.
+
+163
+00:30:56,307 --> 00:31:03,988
+Bu diyor ki sana ben bu kadarlık yer tahsis etmeyi, bu da gerçek garanti etmiyor ama işletim sisteminden istiyor.
+
+164
+00:31:03,988 --> 00:31:09,107
+Eğer işletim sistemi size yeterli yeri verirse, ne yapıyor?
+
+165
+00:31:09,107 --> 00:31:16,468
+Buraya sizin dizinizin aynı şurada olduğu gibi, şu D'lerde olduğu gibi dizinizin başlangıç adresini veriyor.
+
+166
+00:31:16,468 --> 00:31:19,668
+Dizinin başlangıç adresini, bu bir pointer'dı.
+
+167
+00:31:19,892 --> 00:31:34,892
+Bu da pointer. Aslında burada şöyle bir typecasting yapabiliriz. Çünkü bu her türden dizi oluşturmak için kullanılıyor. Zaten bunun orijinali void pointer'dır. Yani generic pointer'dır ama buna girmeyelim şimdilik.
+
+168
+00:31:34,892 --> 00:31:44,892
+Ne yapacak? N elemanlı yer açmaya çalışacak. Açtığı yerin başlangıç adresini şuradaki dizi değişkenimize getireceğiz. Artık elimizde ne var?
+
+169
+00:31:45,491 --> 00:31:51,251
+Array pointer'ında ne var arkadaşlar? Aynı şunlarda olduğu gibi, p dizinin başlangıcı adresi.
+
+170
+00:31:51,251 --> 00:31:59,491
+Bundan sonra ne yapılabilir? For, i eşittir, sıfır, i küçüktür, n, i plus plus.
+
+171
+00:32:01,491 --> 00:32:09,491
+Ali senin soruna dolaylı bir cevap şöyle gelebilir. Bu array bir pointer olduğu için ama nasıl bir pointer?
+
+172
+00:32:09,748 --> 00:32:15,028
+Malloc ile oluşturulmuş bir alanın pointer olduğu için burada şöyle bir şey yapabilirsiniz.
+
+173
+00:32:15,748 --> 00:32:18,868
+R-Ray'in i'si diyebilirsiniz.
+
+174
+00:32:19,988 --> 00:32:22,868
+Tamam mı? Şunlarda böyle bir şey olmaz.
+
+175
+00:32:22,868 --> 00:32:29,508
+Ama burada hani bu şeyle, Malloc ile oluşturulmuş bir alan olduğu için yani bir dizi tuttuğu için
+
+176
+00:32:29,828 --> 00:32:33,748
+bunu normal diziler gibi kullanabiliriz. Mesela ne olsun? R-Ray'in i'si i olsun.
+
+177
+00:32:34,036 --> 00:32:44,276
+Veya scanf yapacaksınız. Scanf yaparken ne yapıyoruz? %d diyoruz. Arrayin i'sinin adresi diyebilirsiniz.
+
+178
+00:32:44,276 --> 00:32:57,036
+Veya bunu doğrudan pointer değişkeni üzerinden yapalım dersek, bakın üçü de geçerli, yani legal işlemler. Yine %d okuyacağız.
+
+179
+00:32:58,579 --> 00:33:05,579
+i kadar uzağındaki adrese bu işi gerçekleştir dediğimizde, hatta bir şöyle parantez alabiliriz.
+
+180
+00:33:05,579 --> 00:33:16,579
+Array artı i inci adrese git, şuradaki %d'yi oku. Mesela biz şöyle yapalım.
+
+181
+00:33:16,579 --> 00:33:24,579
+Burada da printf karşılıklarını yazalım, mesela ekrana yardıralım. %d diyelim.
+
+182
+00:33:25,907 --> 00:33:32,127
+Arkadaşlar, sorularınızı mümkünse mikrofonla sorarsanız göremiyorum çünkü.
+
+183
+00:33:34,127 --> 00:33:35,387
+Bir saniye.
+
+184
+00:33:36,667 --> 00:33:43,307
+Şimdi şu Erreyn i'inci değerini ekrana yazdık demek. Normal dizilerden bakın kullanım açısından hiçbir farkı yok.
+
+185
+00:33:43,307 --> 00:33:44,087
+Tamam mı?
+
+186
+00:33:44,180 --> 00:34:01,420
+Ama isterseniz böyle okuyayım. Mesela şunu alalım, şunları kapatalım. Burada değerleri okuyoruz. Mesela eni de çok büyük yapmayalım. Eni bizim işte büyük bir değer olarak alalım da mesela dört tane değer okuyalım diye. Dördüncü değerlere kadar şey yapalım.
+
+187
+00:34:01,420 --> 00:34:10,740
+Evet, bu bana istediğim kadar yarar. Tamam, burada şöyle bir olasılık var. İşletim sisteminiz size
+
+188
+00:34:11,860 --> 00:34:24,860
+Talep ettiğiniz yeri her zaman vermeyi de garanti etmiyor. Örneğin 4 GB RAM'iniz var. Bu arada sadece sizin programınız çalıştırılmıyor, başka programlar da söz konusu.
+
+189
+00:34:24,860 --> 00:34:37,860
+E ne olacak şimdi siz mesela 4 GB RAM'den 2 GB yer istediniz. 2 GB RAM işletim sistemi size vermeyebilir. Şu işlem sonrasında eğer buraya
+
+190
+00:34:38,068 --> 00:34:51,828
+Dönen değer, bir bellek adresi ise dizi oluşturulmuş demektir. Dizinin oluşturulmadığını anlamak için de buraya null değeri döndürülüyor. Eğer diyorsunuz ki, mesela şöyle bir kontrol yapabiliriz.
+
+191
+00:34:51,828 --> 00:35:02,708
+Eğer gelen değer null değerden farklıysa, printf, memory, allo, hate diyebiliriz.
+
+192
+00:35:05,492 --> 00:35:12,731
+Böyle bir şey yazabiliriz. Bu kontrolü de bazen yapmak gerekiyor. Hani oluşturulmamışsa mesela ne yap? Programı kapat.
+
+193
+00:35:13,492 --> 00:35:21,612
+İşte burası null ise direkt programdan çık denebilir gibi gibi farklı kontroller yapılabilir. Hatta biz şu if'in
+
+194
+00:35:22,291 --> 00:35:33,532
+Şu şartını nereye alalım, şuraya alalım, niye buraya alalım? Çünkü bellekte yer açıldıysa diğerlere belleğe erişmem gerek. Açılmadıysa, oraya erişirsem programım ne olur? Kreş eder.
+
+195
+00:35:33,532 --> 00:35:41,131
+Şimdi şu nal büyük nal olacak arkadaşlar. Bazı diğer dillerde küçük yazıyoruz.
+
+196
+00:35:41,684 --> 00:36:04,083
+Mesela şöyle bir şey girelim. Yine ne oldu? Milyon falan oldu. Milyon merkezinde bir şey. Bakın bellek değer oluşturuyordu. Sonra ne yapıyor? İşte benden belleğe ne derler? Şurada veri girmemi istiyor. Veriyi girelim. İşte bir girelim, iki girelim, üç girelim, dört girelim. Sonra ne oldu? Girdiğim verileri okuyabilirim.
+
+197
+00:36:04,436 --> 00:36:14,336
+Bakın bazen pointer aritmeti ile veri yazmak, veri okumak gerekebilir. Yani onu da kullanabiliriz. Ama bu iç işte birbirinin ekvivalentidir. Yani birbirinin eşlenidir.
+
+198
+00:36:14,336 --> 00:36:23,235
+Zorlanmamak için şunu tavsiye ederim. Ama bunun da ne olduğunu bilelim. Burada da ne yaptık? Array'in iyisine ulaştık. Aynı şeyi şöyle de yapabildik.
+
+199
+00:36:29,811 --> 00:36:39,811
+Bir dizi, oradan ilk kadar öpeye git, oradaki elemanı getir yazdır. Yani oradaki elemana ulaş, onu da şurada yazdır. Bunu da diyebiliriz.
+
+200
+00:36:39,811 --> 00:36:48,811
+Şimdi bu allocation yapıldıktan sonra eğer bu bellek bölgesi ile işiniz bittiyse
+
+201
+00:36:49,204 --> 00:36:58,443
+İşinizin bittiği yerde bunu sisteme geri iade etmeniz gerekiyor. Eğer iade etmezseniz memory leak dediğimiz bellek sızıntısı dediğimiz bir şey olur. Bu da free ile yapılıyor.
+
+202
+00:36:58,443 --> 00:37:11,443
+Diyor ki buraya bir pointer ver. Her türden pointer verebilirsin. Bellek bölgesinin pointer. Yani şu oluşturduğun array için tahsis edilen alanı belleğe bu şekilde iade etmiyoruz.
+
+203
+00:37:12,563 --> 00:37:19,563
+Şimdi Mallot'un şöyle bir yan etkisi var. Mesela biz 4 eleman değil de 40 eleman bastıralım.
+
+204
+00:37:19,563 --> 00:37:27,563
+Pardon, 4 eleman okuyalım, 40 eleman bastıralım. Çünkü zaten 100 eleman falan olacak, biraz fazladan yerimiz var.
+
+205
+00:37:27,563 --> 00:37:33,563
+Bir görelim bakalım ne oluyormuş. Dizileri oluşturduğumuzda, ilklendirme yaptığımızda mesela ne yapıyorduk?
+
+206
+00:37:33,563 --> 00:37:37,563
+İşte şuraya bir 7 yazdıysak geri kalan elemanlar 0 oluyordu.
+
+207
+00:37:37,619 --> 00:38:02,380
+Mallock'ta mesela diyelim ki şöyle biraz büyük bir dizi olsun. Bellek ayrılmış. Bir girelim, iki girelim, üç girelim, dört girelim. Burada denk geldi, diğer elemanlar sıfırlandı. Mesela hiç veri girişi yapmayalım bile. Şu kısmı es geçelim. Doğrudan kırk tane elemana ek, hatta kırk değildi belki dört yüz elemanı ekrana yazdıralım.
+
+208
+00:38:08,403 --> 00:38:20,703
+Cansımıza hep sıfırlanmış halde geliyor, normalde gelmemesi, gelmediği durumlar vardır. Bakın mesela şu, görüyor musunuz? Burada sıfırlanmamış durum var.
+
+209
+00:38:20,703 --> 00:38:32,103
+Şimdi bu nedir arkadaşlar? Şimdi memory allocated dedi, sonra belleğin bazı hücrelerini yazdırmaya başladı. Mallock fonksiyonu çalıştırıldığında
+
+210
+00:38:32,371 --> 00:38:43,572
+sizin, size verilen bellek bölgesini olduğu gibi bırakıyor çöp değerlerini. Bunun eş değeri ama şey yaparak ne derler?
+
+211
+00:38:43,572 --> 00:38:55,771
+Belleyi temizleyerek size tahsisat yapan, bunun biraz daha gelişmiş versiyonu Clear Allification dediğimiz şey. Bu da diyor ki, bu iki parametre alıyor, şöyle görelim. Diyor ki,
+
+212
+00:38:55,891 --> 00:39:05,091
+Önce diyor number of elements'i gir, yani n tane eleman olsun ama her bir elemanın size'ını gir, her bir elemanın size ve size of integer kadar olsun.
+
+213
+00:39:05,091 --> 00:39:11,891
+Aynı şey, hiçbir şey değişmiyor. Sadece araya bir virgül koyduk çarpmayan. O arkada zaten kendisi çarpacak.
+
+214
+00:39:11,891 --> 00:39:21,091
+Bunu çalıştırdığınızda, malloc'tan farklı olarak, artık bu tamamen size garanti edecektir yani bütün elemanları.
+
+215
+00:39:21,280 --> 00:39:45,960
+Sıfırlama işlemi yapacaktık. Amacımız allocation yaptık, daha sonra free ettik. Şimdi, koranın sorusuydu. İleride mesela bizim n değerimiz var. n değerimizi fazla yer tahsis ettik. Mesela n eşittir, n bölü 2 yaptım. Yani bir kısım yeri fazla kullandığımı düşünüyorum.
+
+216
+00:39:46,612 --> 00:39:56,612
+Dizimin, istersem arkadaşlar, boyutunu küçültebilirim veya büyütebilirim. Yani n eşittir n çarpı iki, n eşittir n artı beş yüz yapılabilirim.
+
+217
+00:39:56,612 --> 00:40:13,612
+Burada da allocation işlemini yeniden yapmamızı söyleyen realloc fonksiyonumuz var. Realloc fonksiyonu diyor ki, hali hazırda sizin sahip olduğunuz yeri söyleyin. Yani bizim sahip olduğumuz yer array ile gösterilen yer. Bakın bir pointer verin diyor burada.
+
+218
+00:40:14,132 --> 00:40:27,132
+Ona diyor ki, yeni boyutu ver. Yeni boyutumuz ne olsun? n kadar. n çarpı diyor. Yine side of integer. Mecburen burası byte cinsinden olmak zorunda arkadaşlar. Side of integer gibi bir şey kullanmanız lazım.
+
+219
+00:40:27,132 --> 00:40:37,099
+Buradan geriye bir değer dönecek. Geriye dönen değeri ne yapabilirsiniz? Yine array üzerinde kullanabilirsiniz. Boyutu küçüklüğümüz için. Artık bizim...
+
+220
+00:40:37,364 --> 00:40:50,764
+Şurada bahsettiğimiz en elemanlı oluşturduğumuz dizi işletim sistemi tarafından yarısı tahsis edilecek şekilde, yani yarısı serbet bırakılmış şekilde kullanılabiliyor. Gerisi aynı. Bu da reallocation işlemi.
+
+221
+00:40:50,764 --> 00:40:56,164
+Mesela şöyle yapsak, neyse.
+
+222
+00:40:58,324 --> 00:41:06,864
+Önce yazdı, daha sonra ne yaptı? Bütün değerleri ekrana yazladı. Ondan sonra bakın ne yaptı? Dizi yarıladı, test yazdı, çıktı, bitti.
+
+223
+00:41:07,864 --> 00:41:13,864
+Evet, bu dört tane fonksiyonumuz, mallog ve callog dinamik olarak yer açıyor.
+
+224
+00:41:13,864 --> 00:41:20,084
+Açtığınız yeri büyütmek veya küçültmek isterseniz şunu kullanıyorsunuz. Bunun bir arızası var, şimdi söyleyeceğim.
+
+225
+00:41:20,084 --> 00:41:23,584
+Açtığımız yeri tamamen iade etmek istiyorsak,
+
+226
+00:41:24,019 --> 00:41:39,019
+Tamamen iade etmek ne demek? Oradaki değerleri sıfırlamıyoruz. O bellek bölgesi bir başka proses tarafından veya aynı proseste başka bir yerde tekrar ihtiyaç olursa doğrudan kullanılabilir hale geliyor.
+
+227
+00:41:39,019 --> 00:41:49,675
+Bir okuldaki oturacak sandalye gibi düşünün. Şu an siz oturuyorsanız bir başkası oturamaz. Siz kalktığınızda free etmiş oluyorsunuz.
+
+228
+00:41:49,684 --> 00:41:59,684
+Bir başkası gelip orayı kullanabiliyor. Tamam mı? Mesele bu. Şimdi burada da şöyle bir durum var. n bölü 2'de değil de mesela ben bunu n çarpı 2 yapsaydım.
+
+229
+00:41:59,684 --> 00:42:12,652
+Nasıl ki malloc veya calloc yer açılamadığında size nal döndürüyorsa, burada da boyutu arttırdığınızda yeni oluşacak yer
+
+230
+00:42:13,427 --> 00:42:24,427
+Oluşturulamayabilir. Hatta şurada integer pointer var diyebiliriz. Niye oluşturulmaz? Yani siz 1 milyon yer istediğiniz 2 milyona çıkarıyorsunuz. Belki 2 milyon tane bellik işletim sistemi size izin vermeyecek.
+
+231
+00:42:24,427 --> 00:42:41,420
+Vermediğinde ne oluyor? Null dönüyor değil mi? Biraz önce null döndüğünü söyledik. Şimdi null döndüğünde yeni istediğiniz yeri de kaybettiniz. Eski yeri de kaybediyorsunuz artık. Çünkü array null olacak. Şurada oluşturduğunuz array'in
+
+232
+00:42:41,492 --> 00:42:55,811
+Artık değerini kaybettiniz. Buradaki bellek bölgesi hala yaşıyor ama yerini kaybettiniz. İşte bunun için bir tane geçici değişken kullanılır. Mesela temp array diyelim.
+
+233
+00:42:55,811 --> 00:43:08,211
+T array. Ve bu reallog operasyonlarında elde edilen yer geçici olarak t array'de saplanır. Sonra dersiniz ki, İp.
+
+234
+00:43:09,108 --> 00:43:31,188
+T, R, R alanı NAL'dan farklıysa, yani bir yer oluşturuluyorsa, R, R dediğimiz yer artık ne olsun? T, R, R olsun. Bu niye böyle şimdi? Hem NAL'dan korunduk, NAL ihtimalinde karşı orijinal yerimizi kaybetmedik, hem de bir başka şey daha oldu.
+
+235
+00:43:31,668 --> 00:43:57,807
+Şimdi linkli listeleri anlatırken size dedik ki bellekte bitişik olarak istediğiniz kadar yer olmayabilir. Şimdi sizin yeni oluşturduğunuz bellek bölgesi, eski bellek bölge, yani başlangıç adresi, pardon, eski adresi göre farklılaşabiliyor. Örneğin dizi önceden 1000 adresinden başlıyordu ama siz iki en istediğinizde 1000 adresinden sonra iki en yer yok.
+
+236
+00:43:58,228 --> 00:44:04,228
+İşletim sistemi size örneğin 3000 adresinden başlayarak bir yer tahsis edebilir.
+
+237
+00:44:04,228 --> 00:44:15,228
+Dolayısıyla şu orijinal dizi, ilk başta oluşturduğum orijinal dizi, reallog fonksiyonu ile başka bir yere nakledilebilir.
+
+238
+00:44:15,827 --> 00:44:23,827
+Bu bunu da sağlıyor arkadaşlar. Real-log öyle bir şey yapıyor ki eski değerleri alıyor, tamamen yeni yere kopyalıyor. Eğer bir yer bulduysa.
+
+239
+00:44:23,827 --> 00:44:31,827
+Orijinal yerindeyse orijinal yerinde kalır. Orijinal yerden başka bir yerden nakledilecekse o kopyalama işini arka planda yapıyor.
+
+240
+00:44:31,827 --> 00:44:39,500
+İşte bu sayede şöyle bir kontrol sayesinde ne yapıyorsunuz? Eğer bu null bir değer yoksa demek ki bir yer var, oluşturuldu.
+
+241
+00:44:39,699 --> 00:44:49,299
+Orijinal dizimi ne yapıyorum? Şu pointer ataması yoluyla. Çünkü bu da bir pointer, şu da bir pointer. Ne yaptım? Artık yeni yer devam edip kullanabiliriz.
+
+242
+00:44:49,299 --> 00:44:56,099
+İşte burada artık form yapacaksınız, scanf'i yapacaksınız, algoritmamı çalıştıracaksınız. Ne yaparsınız yaparsınız. Tamam mı?
+
+243
+00:44:57,400 --> 00:45:04,299
+Evet, bunlar gelecek dönem daha detaylı olarak sizlere yapısal programlama dersinde anlatılacak şeyler. Burada bir sorumuz var mı?
+
+244
+00:45:06,516 --> 00:45:22,016
+Biz structure'ları kullandığımız için structure'larda ne yapmıştık mesela? Şöyle basit bir structure tanımlayalım. TypeDep, struct diyelim. Point mesela. İki noktalı bir structure. X ve Y değişkenlerine oluşan.
+
+245
+00:45:22,016 --> 00:45:30,216
+Buraya da işte Point diyelim. Siz normalde malloc ile n tane integer dizisi oluştururken burada da
+
+246
+00:45:30,771 --> 00:45:41,771
+n tane point dizisi oluşturabiliyoruz. Tabii şurada bütün intleri point yapmak gerekiyor. Tabii şunun da türünü olacak, point türünde bir array olacak.
+
+247
+00:45:41,771 --> 00:45:57,771
+Ne yaparsınız? n tane noktayı tutan dinamik bir dizi, structure dizisi oluşturabiliyorsunuz. Ona bu derste çok yine girmeyeceğiz ama intlerin yerine istediğiniz tipi yazabileceğini söyleyebilirim. Yani int yerine illa float karakter değil.
+
+248
+00:45:58,356 --> 00:46:02,656
+Bu şekilde bir structure türünü de yazabiliyorsunuz.
+
+249
+00:46:04,456 --> 00:46:05,856
+Bir sorunuz var mı?
+
+250
+00:46:09,139 --> 00:46:24,739
+Şimdi bu bize başka başka yerlerde lazım olacak. Yani bunu biraz hani üzerinde çalışırsınız hani yaz boyunca hani bir şeyler yapalım derseniz mallokları falan veya pointerları daha detaylı çalışmanızı tavsiye ederim. Şimdi geldik başka bir konuya.
+
+251
+00:46:25,940 --> 00:46:30,340
+Şimdi şu ders notumuzdan ilerleyelim.
+
+252
+00:46:37,300 --> 00:46:48,300
+Biraz olasılıksal algoritmalara döndük. P olasılıkla 1 TL para kazanıyormuş. Şimdi P olasılıkla kazanıyorsa 1-P olasılıkla da kaybeder.
+
+253
+00:46:48,300 --> 00:46:58,300
+Şimdi olasılıklar toplamı P ve P'nin değili nedir? 1'dir. Elinde N TL'si olan bir kişi
+
+254
+00:46:58,996 --> 00:47:07,456
+M artı N TL'ye ulaşırsa oyunu kazanacak ya da tamamen bütün parasını kaybedip 0 TL'ye ev ödemeyecek.
+
+255
+00:47:07,456 --> 00:47:15,136
+Bu kişinin M artı N TL'yi kazanma olasılığı nedir? Buna bakacağız.
+
+256
+00:47:15,136 --> 00:47:18,556
+Problemi anladık mı önce?
+
+257
+00:47:18,556 --> 00:47:23,836
+Örneğin elimde 100 lira param var.
+
+258
+00:47:24,980 --> 00:47:29,579
+Bu 100 lirayı 200 lira yapma olasılığım nedir? Oyun oynayacağız.
+
+259
+00:47:31,740 --> 00:47:34,700
+Şimdi bakalım, yani mevzu bu.
+
+260
+00:47:35,700 --> 00:47:40,860
+Örneğin diyoruz ki, bir oyunda kazanma ihtimalimiz, yeterince deney yaptık.
+
+261
+00:47:40,860 --> 00:47:45,460
+İşte örneğin bir oyun salonu artık, kumarhanem neyse, oraya gittimiz.
+
+262
+00:47:46,420 --> 00:47:53,420
+Kazanma olasılıklarını, şu ana kadar 1 milyon tane oyun üzerinde kazanma olasılıklarına baktınız.
+
+263
+00:47:53,420 --> 00:47:57,420
+%47'si yaklaşık o, 47.3'ü kazanıyormuş.
+
+264
+00:47:58,420 --> 00:48:06,420
+Diyorum ki elimde de 100 lira param var. Ben bunu 200 lira yapmak istiyorum. Yani hedefim 100 artı 100'den 200 olacak.
+
+265
+00:48:07,420 --> 00:48:09,420
+O zaman bakarız şimdi.
+
+266
+00:48:10,164 --> 00:48:23,484
+Bir de her seferinde elde ettiğim para nedir? Yani bu bilgiyi bir dizide tutayım. Yani mevcut param ne oldu? 100 liram vardı, 105 mi oldu? Şimdi gireceğiz oyuna.
+
+267
+00:48:25,403 --> 00:48:36,284
+Şimdi bir kere random diyerek, oyun oynamak burada random olarak geçiyor. Yani bir sıfırla bir arasında sayı üretiyoruz. Diyoruz ki bu eğer bir eksi P'den büyükse
+
+268
+00:48:36,788 --> 00:48:40,788
+Şimdi şu kaybetme olasıydı, bu büyükse aslında kazandı demektir.
+
+269
+00:48:40,788 --> 00:48:45,788
+Ya bunu tersten nasıl yazılır? Random, küçükse P ile kaybetti demektir.
+
+270
+00:48:45,788 --> 00:48:52,788
+Şimdi 1 TL kazanma olasılığın gerçekleşmişse param ne olur? En eşittir, en artı bir olur.
+
+271
+00:48:52,788 --> 00:48:57,788
+Eğer 1 TL kaybetme olasılığı gerçekleşse, en eşittir, en eksi bir olur.
+
+272
+00:48:57,788 --> 00:49:03,788
+Ve bu bir oyun yaptık, işte elde ettiğim şeyi bir dizide tutuyorum, şu bir dizi sembolü.
+
+273
+00:49:03,987 --> 00:49:20,487
+Yani dizinin T artı birinci elemanına git, mevcut parayı yazdır. Şimdi bu oyun ne zaman biter? Ya kişi hedefine ulaşınca biter. Yani orijinal paramız, n dediğimiz para, hedef dediğimiz paraya ulaşınca biter ya da para bitince biter.
+
+274
+00:49:20,487 --> 00:49:27,987
+Onun dışında bu oyun devam edecek. Yani n kaçtan küçükse ve n sıfırdan büyükse bu oyun devam edecek.
+
+275
+00:49:30,003 --> 00:49:42,003
+İşlem sırasında işte R'de mevcut paramızın değerini tutuyoruz. Şöyle çizdir diye bir fonksiyonumuz olsun. Yani bu farklı dillerde yapılabilen bir şey. Sadece burada sözde kod olarak yazıyoruz.
+
+276
+00:49:42,003 --> 00:49:54,003
+Adamın parasının ilerlemesi bakın burada şöyleymiş. Ha burada başka senaryolar da olabilir. İlla böyle bir yani bu bir tane örnek. Başka ne olabilir mesela?
+
+277
+00:49:54,900 --> 00:50:03,460
+Şöyle bir şey çizebilir miyim? Yani grafik tablet yok da elini çizmeye çalışsam. Ne olur? Mesela 100 liradan başladı, işte şöyle gider.
+
+278
+00:50:03,460 --> 00:50:13,300
+Şöyle şöyle şöyle, işte 200 liraya ulaşabilir. Yani o zaman da bitebilir değil mi? Şu durumda mesela parası gitmiş adamın. Tamamen kaybetmiş. Yani şurada 200'e ulaşabiliriz.
+
+279
+00:50:13,300 --> 00:50:18,660
+Başka ne olabilir? İşte buradan başlarsınız, böyle böyle böyle, gidersiniz gidersiniz.
+
+280
+00:50:19,027 --> 00:50:24,027
+Şöyle olur, en son direkt tam kazanma aşamasına gelince sıfırlanabilirsiniz. Bu da olabilir.
+
+281
+00:50:24,027 --> 00:50:34,027
+Ne olabilir? Bir yukarı, bir aşağı, bir yukarı, bir aşağı, bir yukarı, bir aşağı. Mesela o zaman sonsuz defa bu oyun devam edebilir. Yani bir kazandınız bir kaybettiniz. O da olabilir.
+
+282
+00:50:34,027 --> 00:50:46,027
+0.473 yani %50'ye yakın bu oran. Hani kazanma olasılığı var gibi. Tamam mı? Şimdi. Peki.
+
+283
+00:50:46,996 --> 00:51:09,932
+Ben şunu istiyorum. Yani biraz daha hani böyle deneysel tek bir deneye bağlı olarak değil de şu an bir kişi geldi oynadı. Acaba bu deneyi çok sayıda yapsam? Yani şurada çalışan işleri çok sayıda yapsam? Elimde genelleştirilmiş bir veri var mı? Ona baksam.
+
+284
+00:51:10,291 --> 00:51:32,791
+Ne demek genelleştirme işveri? Yani burada oynayan 1 milyon tane kişinin yüzde şu kadarı hedeflediği paraya ulaşıyor, yüzde bu kadarı ulaşamıyor gibisinden bir yargıya varabiliriz. Amacımız bu. Bunu nasıl yapacağız? Şuradaki kodu nasıl değiştirebiliriz?
+
+285
+00:51:39,251 --> 00:51:52,251
+Hocam, bunu da bir döngüye alırız. Kaç kişi oynayacaksa o kadar döndürürüz. Her turun sonunda da kazandı veya kaybettiği şeyini tutarız. Ona göre de bir sonuç çıkar.
+
+286
+00:51:52,251 --> 00:52:01,931
+Diyor ki arkadaşımız, başlangıç paramız var, hedef paramız var, olasılığımız var. Döngü kaçıncı defa döndü.
+
+287
+00:52:01,972 --> 00:52:08,371
+Yani bir kişi kaçıncı defa oynadı o var. Daha sonra işte şurada döngüyü çeviririz, işte çizdiririz. Bu bir kişinin oyunu.
+
+288
+00:52:09,972 --> 00:52:15,572
+Peki biz bunu K tane kişi için veya çok sayıda oynamak istersek o zaman deriz ki bir tane daha döngü olsun.
+
+289
+00:52:15,972 --> 00:52:17,972
+O zaman şu aşağıya ne yapalım?
+
+290
+00:52:20,972 --> 00:52:25,371
+Şu kısım şuraya gelecek. Şunu silelim.
+
+291
+00:52:25,588 --> 00:52:30,588
+K tane oyun oynayacağız. K'yi de mesela şöyle deneme sayısını arttırdık.
+
+292
+00:52:32,588 --> 00:52:42,588
+Bir kere bizim şu ne dediğimiz orijinal paramızı, başlangıç paramızı bir yerde saklamamız gerekiyor. Çünkü her oyunda 100 liradan tekrar başlayacağız.
+
+293
+00:52:42,588 --> 00:52:47,588
+Hedef paramız da mesela ne olsun şu an için 10 diyelim mesela, 100 de diyebiliriz.
+
+294
+00:52:47,588 --> 00:52:52,588
+Olasılığımız var, işte K diyebiliriz var. Şimdi kazananların sayısı bize lazım.
+
+295
+00:52:53,715 --> 00:53:08,115
+Burada on bin kişi oynamış, acaba kaç kişi hedefine ulaşmış? Bize çünkü önemli olan hedefe ulaşanlar. Yani onu zaten on binden çıkartırsak hedefe ulaşamayanlar biliriz. Hedefe ulaşanları saymak için de böyle bir değişkeniz var.
+
+296
+00:53:08,115 --> 00:53:20,672
+Birden K'ya kadar önce orijinal paramızı, yani başlangıç paramızı yedekledik, en değişkenini aldık. Yani şu söyleyiş olarak ifade edilen en de şuradaki en birine yedeklendi.
+
+297
+00:53:20,672 --> 00:53:46,992
+Bakın aynı şeyi çalıştırıyorum, arttımı, azaldımımı. Eğer dedim ki, eğer m eşittir h olduysa, bir kişi kazanmıştır. Bir kişi daha kazandı. Sonra bir daha oynadık, bir daha oynadık ve bunları yazdırıyorum. Şimdi yazdırdığımda ne uygun ne gelecek ki? Ortaya bir oran gelecek. Yüzde cinsinden 0-1 aralığına normalize edilmiş bir şey göreceğiz. 500 kişi kazandı, 500 bölü.
+
+298
+00:53:47,219 --> 00:53:51,219
+10.000 gibi bir sayı göreceğiz. Şimdi şöyle sonuçlara baktığımızda
+
+299
+00:53:56,579 --> 00:54:02,419
+Şu sonuçlara bakalım arkadaşlar, aşağıdaki sonuçlara. Şu sayfa denen şey sizi engelliyorum şu an.
+
+300
+00:54:04,419 --> 00:54:14,819
+Niyeyse o çıktı da. Bakarsak arkadaşlar, 0.33 %33 ile, bakın parametreler ne burada? P var.
+
+301
+00:54:14,992 --> 00:54:21,132
+Başlangıç param neye var? Bir de bitiş param neye var? K zaten burada tekrar sayısı o bir parametre değil.
+
+302
+00:54:22,412 --> 00:54:29,832
+0.33 olarak kazananlar varmış veya 34 diyelim. Kazanma oranımız 0.47 ise,
+
+303
+00:54:30,612 --> 00:54:35,212
+başlangıç paramız 100 ise, bitiş paramız 10 ise böyle bir şey geliyormuş.
+
+304
+00:54:35,472 --> 00:54:36,752
+Başlangıç paramız
+
+305
+00:54:38,032 --> 00:54:38,792
+Bin ise
+
+306
+00:54:39,312 --> 00:54:40,852
+Bakın başlangıç paramız bin
+
+307
+00:54:41,172 --> 00:54:49,172
+Hedef paramız aynı. Ne oldu? 0.341 ay. Hemen hemen aynı durumda kaldı. Çok böyle değişmedi.
+
+308
+00:54:49,172 --> 00:55:04,172
+Şeyi sabit tutuyorum. Şunu aynı tutuyorum. Bu sefer hedef paramı arttırdığımda ne oluyor? Olasılık düşüyor. Bakın başlangıç paramı yine arttırdım.
+
+309
+00:55:05,523 --> 00:55:31,523
+Hedef paramı 20 yapıyorum, yine olasılık düşüyor. Sonra şunu 1000 yapıyorum, hedef paramı yine 20, yine olasılık düşüyor. Demek ki şu hedef parayla bir ters orantılı bir durum var. Bu arttıkça, hedeflenen para, yani mevcut paranın üzerine konulacak paranın miktarı arttıkça bir olasılıkta düşme var kazanılma olasılığının.
+
+310
+00:55:32,179 --> 00:55:43,179
+Bir de nedir zaten bu kazanma olasılığını değiştirirseniz şey. Mesela hedef parayı 100 yapmışız. Başlamış paramız çok çok fazla. Yani başlığı şuna göre.
+
+311
+00:55:43,179 --> 00:55:58,179
+Ama olasılık iyice düşmüş bakın. Bu kazanma olasılığı böyle bir şey ki arkadaşlar, p bölü 1-p çarpı m gibi bir formülle modellenmiş. Bu olasılıkçıların elde ettiği bir şey.
+
+312
+00:55:59,347 --> 00:56:06,107
+Gemlink Dilemma, öyle bir ismi vardı, kumarhane, kumar lemması deniyor.
+
+313
+00:56:06,107 --> 00:56:07,907
+Lemma mıydı, neydi işte?
+
+314
+00:56:07,907 --> 00:56:14,707
+Bununla buluyor. Ve bu başlangıç miktarının, yani başlangıç parasına bağlı olmayan bir şey.
+
+315
+00:56:14,707 --> 00:56:22,907
+Buradan ne çıkarıyorsunuz sonuç olarak? Bir kumarhanede kasa, her zaman kazanan olan şey kasadır.
+
+316
+00:56:23,188 --> 00:56:31,748
+Ama kazananlar, oyuncular açısından bakarsan bir kısmı kesinlikle kaybeder, bir kısmı da kesinlikle kazanır.
+
+317
+00:56:31,748 --> 00:56:36,907
+İşte o kazananların oranı, bakın ne oldu? Şu durumda çok çok azaldı.
+
+318
+00:56:36,907 --> 00:56:42,387
+Yani böyle bir oyun oynayacak olsanız, kazanma olasınız çok çok düşük oluyor.
+
+319
+00:56:42,387 --> 00:56:44,947
+Mesela bunun kodunu şöyle yazmıştım.
+
+320
+00:56:44,947 --> 00:56:48,188
+Bir bakalım nerede bu?
+
+321
+00:56:48,188 --> 00:56:49,036
+Bak.
+
+322
+00:57:09,460 --> 00:57:31,660
+İşte şurada 10.000 oyun dedik, random şeyler üreteceğiz. N ve M değerlerini alıyoruz, probability değerlerini alıyoruz. Sonra şu değerleri yazıyoruz. K tane mesela burada K'yı 5 demişti. Yani çok böyle belki aynı şeyi 5 defa gerçekleştirecek. Girelim.
+
+323
+00:57:34,612 --> 00:57:40,492
+100 olsun, ne bileyim 20 olsun, 0.470.
+
+324
+00:57:44,492 --> 00:57:47,692
+Şöyle 5 tane değerler.
+
+325
+00:57:48,532 --> 00:57:53,371
+Mesela bunu biraz daha arttıralım, 20'yi aynı 50 yapalım.
+
+326
+00:58:01,268 --> 00:58:09,708
+Çok ciddi oranda, yani para belki 30 miktar şey oldu, ciddi oranda ne oldu? Olasılık düştü.
+
+327
+00:58:10,487 --> 00:58:17,648
+Hatta bunun bir de olasılığın güzel bir uygulaması var. Börd de paradoks duydunuz mu arkadaşlar?
+
+328
+00:58:18,807 --> 00:58:21,487
+Şimdi gelecek dönem ayrık matematikte anlatacağım da.
+
+329
+00:58:23,547 --> 00:58:25,327
+Şimdi kaç kişiyiz burada?
+
+330
+00:58:26,608 --> 00:58:28,907
+30-32 kişiyiz.
+
+331
+00:58:29,715 --> 00:58:38,155
+Acaba bu 32 kişi içinde doğum günü aynı olan kişi olasılığı kaçtır? Aynı olma olasılığı kaçtır?
+
+332
+00:58:40,755 --> 00:58:54,155
+Var mıdır sizce aynı doğan aramızda herhangi iki kişi var mıdır? İkiz kardeşleri varsa onu ayrı tutalım da. Çünkü aramızda bir ikiz kardeş var, bildiğim gibi. Yoktur. Emin misin?
+
+333
+00:58:58,452 --> 00:59:01,772
+Yılın aynı günü doğma olasılığımız.
+
+334
+00:59:05,172 --> 00:59:09,672
+Bence ihtimal 1 bölü 2'den daha, 32'den daha küçüktür. Öyle mi diyorsun?
+
+335
+00:59:12,672 --> 00:59:13,672
+Şimdi mesela...
+
+336
+00:59:16,172 --> 00:59:19,172
+Dur yazdıracağız da öyle yapmayalım.
+
+337
+00:59:19,672 --> 00:59:20,672
+Şimdi...
+
+338
+00:59:22,172 --> 00:59:27,672
+N tane kişi düşünün. Bu N kişinin aynı günde doğma olasılığını...
+
+339
+00:59:28,340 --> 00:59:53,940
+modelleyecek olursak, bir eksi, n kişinin farklı günde doğma olasılığı şeklinde desek, n kişi farklı günde ne olur? n kişinin aynı günde doğma olasılığını buluruz değil mi? Olasılığı birden çıkartıyoruz. Şimdi o zaman, çünkü aynı günde doğma olasılığını yazmak çok zor.
+
+340
+00:59:54,260 --> 00:59:59,260
+Diyorum ki, bir kişi olsun, 365 günü, 365 gününde doğmuş olabilir.
+
+341
+01:00:02,643 --> 01:00:29,364
+İkinci kişi ne olacak? 364. Çünkü aynı günde doğabilecek. 365. Üçüncü kişi 363. 365. Bu nokta nokta nokta en tane kişi ise nereye kadar gerek? 365. Eksi 10'a kadar gelecek. Böyle 365.
+
+342
+01:00:30,771 --> 01:00:56,771
+Şurayı genellersek ne olur? 1-365 x 364 x 363...365 x n bölü...
+
+343
+01:00:57,715 --> 01:01:06,715
+360, 5 üzeri n değil midir? Şöyle bir şey bulduk değil mi? Şimdi Excel açalım.
+
+344
+01:01:12,436 --> 01:01:15,036
+Faktöryel cizmine yazabiliriz.
+
+345
+01:01:16,036 --> 01:01:18,036
+Nereyi Faktöryel cizmine?
+
+346
+01:01:18,036 --> 01:01:19,835
+Üst tarafta.
+
+347
+01:01:19,835 --> 01:01:22,436
+365 faktöryel bölü.
+
+348
+01:01:22,436 --> 01:01:26,835
+364 eksi n faktöryel.
+
+349
+01:01:26,835 --> 01:01:30,835
+365 faktöryel bölü.
+
+350
+01:01:30,835 --> 01:01:36,835
+Ne diyeceğiz? 364 eksi n faktöryel.
+
+351
+01:01:36,835 --> 01:01:40,036
+Faktöryel çarpı 365 üzeri n.
+
+352
+01:01:43,411 --> 01:01:53,411
+Şimdi şuraya baktığınızda, şu orana baktığınızda, şurası küçük bir oran çıkıyor, n'in büyük değerleri için. Onu çizdirmeye çalışayım. Mesela Excel'de hesaplamaya çalışalım.
+
+353
+01:01:53,411 --> 01:02:05,411
+Ne yapacağız? Mesela n değerini şöyle n için farklı değerler üretelim. İşte 1 olsun, 2 olsun, 3 olsun.
+
+354
+01:02:08,947 --> 01:02:10,947
+Bilebilirim, S değerini doğrusu.
+
+355
+01:02:12,947 --> 01:02:13,947
+Şimdi burada...
+
+356
+01:02:17,947 --> 01:02:21,947
+Ama 365 faktör ile hesaplamak zor. Onun için yapacağımız şey şurada şu olur.
+
+357
+01:02:22,947 --> 01:02:28,947
+Hatta n'i 1 almayalım da, n'i 2'den başlatalım. Çünkü bir kişinin zaten doğumundasılacak.
+
+358
+01:02:29,947 --> 01:02:34,947
+Nedir bu? Eşittir. 365 çarpı 364.
+
+359
+01:02:38,420 --> 01:02:45,019
+Bunu belki bir programla formülize edilebilir de ayrı. 365 x 365.
+
+360
+01:02:45,920 --> 01:02:50,220
+Tabi bu olasılık... Şuradan gelecek, şöyle bakalım.
+
+361
+01:02:51,920 --> 01:02:57,119
+Bu aynı günde doğum olası. Bir eksi dersek ve şunları şöyle yaparsak,
+
+362
+01:02:58,619 --> 01:03:03,320
+şimdi aradığınız sonuca ulaşırsın, ne olduğu bir yerde parantezi yanlış yapışırsın.
+
+363
+01:03:04,980 --> 01:03:09,260
+Bu şöyle 0.002, iki kişi olunca böyleymiş.
+
+364
+01:03:09,260 --> 01:03:15,420
+Şunu kopyalıyorum. Mecbur kopyalayacağım arkadaşlar, biraz böyle hardcode yazar gibi olacak.
+
+365
+01:03:15,420 --> 01:03:21,220
+Sadece sonucu. 365x364x363
+
+366
+01:03:21,220 --> 01:03:25,619
+Şurası tam olacak, 365x365x365
+
+367
+01:03:29,012 --> 01:03:36,012
+Hatta şurayı 365'in power'ı desek kuvvet miydi bu?
+
+368
+01:03:36,012 --> 01:03:37,012
+Kuvvet pardon, evet.
+
+369
+01:03:39,012 --> 01:03:45,012
+365 virgül şu diyelim.
+
+370
+01:03:46,012 --> 01:03:49,012
+Virgül değil miymiş, nokta mı virgül?
+
+371
+01:03:52,244 --> 01:04:19,564
+Şunu diyelim. Bakın ne oldu? Olasılık 3'e çıkınca 0.002'den 0.00 şeye geldi. Şunu kopyalıyorum. Buraya aldım. Buraya bir 3.62 ekleyeceğim. Artıyor. Peki bunu 5 değil de 10 falan yapsak?
+
+372
+01:04:22,003 --> 01:04:23,003
+Şöyle yapalım.
+
+373
+01:04:27,123 --> 01:04:52,763
+Kod olarak, çarpı 361 çarpı, 3060 çarpı, 509 çarpı, 358 çarpı, 257 çarpı, 256 çarpı, 255 çarpı, 34 çarpı, 253 çarpı, 52. Kaç tane yazdık? 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.
+
+374
+01:04:54,900 --> 01:05:20,160
+Şurası, 365 üzeri 14. Bakın oluyor, %22. Yani 4'ten 14'e çıkarttığımızda çok ciddi bir sıçrama oldu. Bunu arttırırsanız, belki kodla falan yapmak daha kolay veya [öğrenci]'in söylediği şekilde, işte faktöriyelle, hani bilmiyorum, faktöriyel olarak burada hesaplayabilir miyiz ya da deneyelim.
+
+375
+01:05:20,724 --> 01:05:27,124
+Çünkü Excel 365!! hesaplamayabilir. Onun için endişeliyim.
+
+376
+01:05:27,124 --> 01:05:33,043
+Şey diyeceğiz, 1-1-1.
+
+377
+01:05:33,043 --> 01:05:39,604
+Neydi bu? Çarpımım diye Excel'de yazılmış.
+
+378
+01:05:39,604 --> 01:05:42,483
+Çarpımım.
+
+379
+01:05:46,931 --> 01:06:08,931
+İlginç bir şey var yani tütçe var. Bölü, çarpının, 365 eksi mesela ne diyelim, n'e 40-30 diyelim. Biraz önce şeyi hesapladık. Çarpı kuvvet.
+
+380
+01:06:21,139 --> 01:06:38,859
+365 üzeri 30 diyeceğiz. Şimdi şu parantezler önemli. Onun dıştaki parantez de şu. Şimdi sayı hatası verdi. Niye? Çünkü bunu şey yapamadı. Excel 365'i bulamadı.
+
+381
+01:06:39,155 --> 01:06:49,556
+Onun faktörünü alma, belki şunu biraz daha kodla falan yaparsak, artık kodunu kendinize yazın. Bu artık gidiyor.
+
+382
+01:06:49,556 --> 01:06:56,756
+30'a falan yaklaştığında bu oran, Birdte paradoks olarak mesela araştıralım.
+
+383
+01:07:03,476 --> 01:07:12,835
+Evet, bakın 23'ten 23'e kadar yaklaşık olarak şeymiş. Nereye gitti o?
+
+384
+01:07:21,907 --> 01:07:40,907
+Bakın, onlarda falan yine çok küçük de, 23'e ulaştığında %50 ihtimal. Şu an biz de mesela %50, 30'larda falan, 33'üz. Yani %60 ihtimalle birileri burada şey... Deneyelim mesela, Ocak ayında doğanlar kimler günlerini yazsınlar.
+
+385
+01:07:45,427 --> 01:07:47,427
+Ocak ayında doğanlar.
+
+386
+01:07:49,427 --> 01:07:52,427
+Yok muyuz Ocak'ta? Şubat'ta doğanlar. 29 Ocak.
+
+387
+01:07:56,851 --> 01:07:59,771
+Şubat, 24 Şubat.
+
+388
+01:08:03,476 --> 01:08:11,796
+Herkes şey... Tabi bir de hani fiilen burada olmayan arkadaşlarım var. Resmen burada vardı. Hani Mart'ta var mı?
+
+389
+01:08:16,627 --> 01:08:41,827
+12 Mart, 14 Mart, Nisan'da var mı? 22 Nisan'da var mı? Burası da böyle çok şey. Mayıs var mı? 6. Benim de mesela Mayıs 13. Haziran.
+
+390
+01:08:43,828 --> 01:08:49,068
+Geçen sene bir ders de denemiştik, bulmuştuk yani, Hazirayı, Temmuz.
+
+391
+01:08:54,420 --> 01:08:57,739
+İllaki birileri var da muhtemelen yazmıyor arkadaşlar. Neyse.
+
+392
+01:08:58,260 --> 01:09:05,420
+Yani bunu şuradaki şeklinde yazarsanız, bakarsanız arkadaşlar, bu olasılık bir yerden sonra,
+
+393
+01:09:05,940 --> 01:09:13,699
+yani 30'u falan geçince bakın, 30'da %70'e, 50 kişilik bir grupta %97.
+
+394
+01:09:15,420 --> 01:09:22,059
+60 olunca neredeyse %99, yani bir yer daha. 200 olunca çok büyük bir ilgize de.
+
+395
+01:09:22,420 --> 01:09:32,420
+Garanti edebiliyorsunuz. Tabi burada şey önemli, yani herkesin doğma günlerinin üniform şey olacağını düşüneceksiniz.
+
+396
+01:09:32,420 --> 01:09:46,420
+Mesela bir bölge vardır ki, herkes işte evlenme durumuna göre yazın doğma oranları şey, biraz daha fazladır ama biz herkesin aynı günde doğma oranına bakarak tanışı yapılıyor, kabul de yapılıyor.
+
+397
+01:09:46,899 --> 01:10:00,659
+Bu açıdan olasılıksal şeyler, bilgi çıkarmada, tahmin yapmada, özellikle bilgisayar bilimlerinde çok işimize yarıyor. Bu olasılık dersini de alacaksınız. İleride çok çok lazım olacak. Şimdi ara verelim.
+
+398
+01:10:00,659 --> 01:10:11,659
+Geldiğimizde bir başka problem üzerinden, görüntü işlemi problem üzerinden bir uygulama yapacağız. Saat 6 geçiyor. 16 geçe görüşmek üzere.
+
+399
+01:21:19,252 --> 01:21:20,252
+Evet, arkadaşlar.
+
+400
+01:21:31,859 --> 01:21:37,359
+Şu matriz çarpımlarıyla alakalı bir şeyimiz var da onu ayrıca konuşacağız.
+
+401
+01:21:38,260 --> 01:21:42,359
+Buradan biraz hani bunu gelecek haftaya bırakacağım gerekirse.
+
+402
+01:21:43,500 --> 01:21:44,920
+Şimdi yeni bir problem.
+
+403
+01:21:54,868 --> 01:22:00,188
+Görüntüyü görüyorsunuz. Bu görüntüde bir sıkıntı var mı? Resimde.
+
+404
+01:22:00,188 --> 01:22:02,668
+Aşkanda biz klasörü görüyoruz hocam.
+
+405
+01:22:02,668 --> 01:22:04,068
+Neyi görüyoruz?
+
+406
+01:22:04,068 --> 01:22:05,668
+Klasörü.
+
+407
+01:22:05,668 --> 01:22:07,068
+Klasörü mü?
+
+408
+01:22:07,068 --> 01:22:09,468
+Resimde gözüküyor hocam.
+
+409
+01:22:09,468 --> 01:22:13,068
+Tamam. Resimde bir problem var mı arkadaşlar?
+
+410
+01:22:13,068 --> 01:22:15,068
+Var hocam, nokta.
+
+411
+01:22:15,068 --> 01:22:17,068
+Noktalar var değil mi?
+
+412
+01:22:17,068 --> 01:22:20,668
+Noktaların rengi bir beyaz var, böyle bir de siyahlar var.
+
+413
+01:22:21,939 --> 01:22:36,340
+Buna gürültü diyoruz, salt ve paper. Salt olanlar beyaz tuzlar, paper da siyah, biber gürültüsü. Bunu gidermek istiyoruz. Bu bir problem.
+
+414
+01:22:36,340 --> 01:22:48,739
+Veya yine bu resmi alalım, boyutunu küçültelim, interpolasyonu da veya boyutunu da büyütebilirsiniz. Böyle şeyler yapalım. Şimdi basit bir...
+
+415
+01:22:49,235 --> 01:23:04,716
+Aslında matriz operasyon. Bu resmin datasına baktığımızda, bu da oradan anlaşılan bir data değil. İçine baktığımızda kaç piksel olduğu falan şurada yazıyordu. Sonra bakın böyle kodlanmış bir resim datası.
+
+416
+01:23:04,716 --> 01:23:13,235
+Şimdi bunu okuyan bir hazır fonksiyonumuz var. Çünkü bu neymiş? pgm dosyası.
+
+417
+01:23:13,619 --> 01:23:21,020
+Yani bunu okuma işiyle ilgilenmiyoruz. Resmi bir şekilde okuyacağız. Şimdi şuradan alalım.
+
+418
+01:23:23,020 --> 01:23:37,020
+Burada pikseldeki ilk yapacağımız şey şu olsun, pikselleri o siyah ve beyazları gidermek için komşuluklarına göre işlem yapsak.
+
+419
+01:23:37,020 --> 01:23:40,020
+Mesela nasıl bir işlem yapabiliriz komşuluğa göre?
+
+420
+01:23:40,627 --> 01:23:48,627
+Şöyle alırsak, desem ki mesela ben bu siyahları ve beyazları kaldırmak için piksel değerlerini...
+
+421
+01:23:48,627 --> 01:23:59,627
+Bu arada siyahın kodu 0, beyazın kodu 255 arkadaşlar. Yani nasıl bir çözüm üretebiliriz? Bu siyah ve beyazları yok etmek isterseniz.
+
+422
+01:23:59,627 --> 01:24:04,627
+Photoshop kullanmak dışında, Photoshop da arkada algoritma kullanıyor. Biz algoritma ilk çözümü düşünüyoruz.
+
+423
+01:24:05,427 --> 01:24:12,028
+Ben söyleyeyim mi hocam, çözüm? Dört komşusuna bakıp ortalamasını alıp yazdırabiliriz.
+
+424
+01:24:12,028 --> 01:24:17,028
+Ortalama alalım diyorsun. Dört komşu tamam olur.
+
+425
+01:24:17,028 --> 01:24:22,427
+Yani siz dört dediğiniz için, yani komşularına bakarak. Sağ sol, yukarı aşağı komşular.
+
+426
+01:24:22,427 --> 01:24:28,227
+Burada sekiz komşuluk da bakabiliriz. Diğer yönlere de bakabiliriz.
+
+427
+01:24:30,228 --> 01:24:34,228
+Her bir pikselin 4 komşusuna bakınca ortalamasını alacağız.
+
+428
+01:24:35,728 --> 01:24:39,728
+Peki mesela şu şeyde ortalama çok başarılı olur mu acaba?
+
+429
+01:24:39,728 --> 01:24:41,228
+Buradan göreceğiz de sonucunu.
+
+430
+01:24:42,728 --> 01:24:45,228
+Mesela şurada şöyle baktığımızda şöyle bir siyah var.
+
+431
+01:24:45,228 --> 01:24:51,228
+Şimdi bu siyahın ortalaması, siyah burada 0, öbür taraflar biraz böyle gri gibi.
+
+432
+01:24:51,228 --> 01:24:54,188
+Hani onlar da mesela 100 falan diyelim.
+
+433
+01:24:54,292 --> 01:25:00,292
+100 artı 100 artı 0, işte 4'e böldüğümüzde ne oluyor? 40'larda falan bir şey çıkıyor değil mi?
+
+434
+01:25:01,292 --> 01:25:06,292
+Yani 100 artı 100 artı 100 artı 0 desek 300, 175 oluyor.
+
+435
+01:25:06,292 --> 01:25:14,292
+Dolayısıyla hani tam bir gri değil ama siyahtan uzaklaşmış bir gri. Biraz böyle bulanık bir şey olur.
+
+436
+01:25:14,292 --> 01:25:18,292
+Veya beyaz açısından baktığımızda, beyazda 255 dedik.
+
+437
+01:25:18,707 --> 01:25:24,707
+İşte şurada 100 artı 100 artı 255. 4, komşuya baktığımda ne oluyor?
+
+438
+01:25:24,707 --> 01:25:31,707
+555 bölü 4, işte ne oluyor? 125 desek, 130 falan.
+
+439
+01:25:31,707 --> 01:25:39,707
+Yani orada da 100'den 130'a çıktık. Yani 100 olan değerler 130'a yaklaştı. Şuradaki 100 olan değerler de 70'e yaklaştı.
+
+440
+01:25:39,707 --> 01:25:41,451
+Yani tam bir...
+
+441
+01:25:41,908 --> 01:25:47,308
+Temizlenme olmayacak gibi. Birazcık görüntü bozulacak ama şey yapacağız.
+
+442
+01:25:47,308 --> 01:25:53,507
+Şimdi bu işlem arkadaşlar matriz üzerinde piksel komşuluklarıyla yapılan bir operasyon.
+
+443
+01:25:53,507 --> 01:25:59,908
+Önce bunun mantığını anlatalım. Şu sizin görüntünüz, orijinal görüntünüz.
+
+444
+01:25:59,908 --> 01:26:07,908
+Beyaz gridlerle gösterilen görüntünüz. Yataydaki piksel sayısı, düşeğindeki piksel sayısı.
+
+445
+01:26:08,243 --> 01:26:25,123
+Basit bir matriz. Şimdi bu matriz üzerinde, şuradaki gibi üçe üçlük bir matriz gezdireceğim. Bakın ne oluyor? N şu şeyden başlıyor. Ve gezdirdiğim işlem de o üçe üçlük alanda, hatta şöyle çizelim.
+
+446
+01:26:29,619 --> 01:26:41,380
+Şurada bir ortalama alıyorum. Bu aldığın ortalama şu ortadaki noktaya karşı, yani şu ilk piksel. Sonra bunu bir kaydırıyorum.
+
+447
+01:26:43,659 --> 01:26:51,380
+Şu üçlük, şu dokuzuna bakıyorum. Çünkü üçe üç ekranda dokuz tane olacak. O da şuna karşı. Burada nedir mesela yapacağım ilk şey?
+
+448
+01:26:51,380 --> 01:26:55,180
+Şu küçük matriz, bir, bir, bir.
+
+449
+01:26:55,891 --> 01:27:02,371
+İçi 1'lerle dolu olsun. Ve ben bu 1'lerle şuradaki değerleri çarpayım.
+
+450
+01:27:02,931 --> 01:27:13,171
+Bununla bunu çarptım, 1 ile onu çarptım ve bu çarpımları toplayayım. Sonra bunu 1 bölü 9'a, yani 9'a bölerim.
+
+451
+01:27:13,171 --> 01:27:20,131
+Ne olur? Bu 9'un ortalamasını almış oluruz değil mi arkadaşlar? O 9'un ortalamasını getirip şuraya yazıyorum.
+
+452
+01:27:20,467 --> 01:27:25,467
+Sonra aynısını da buraya yapıyorum. Bütün bir maddesi geziyorum. Dolayısıyla ne var?
+
+453
+01:27:26,467 --> 01:27:33,467
+Bulduğum maddesin bütün piksellerini gezmek için iki tane zaten döngü gerekiyor dıştaki orijinal resim için.
+
+454
+01:27:33,467 --> 01:27:39,467
+Bir de gerekirse, yani şu 3'e 3 olabilir, 5'e 5 olabilir veya ne bileyim 8'e 8 olabilir.
+
+455
+01:27:39,467 --> 01:27:46,336
+Bu içeride 9 tane artık ne kadar işlemiyor? Örneğin 9 tane olduğu için 9 tane.
+
+456
+01:27:46,336 --> 01:28:13,536
+33'e 33 olsaydı 33 çarpı 33 diyecektik şurada. 33 tane gezecektik. Dolayısıyla bir de küçük maddis için gezmem gerekiyor. Bakın iç içe toplam 4 tane döngü içeren bir çözüm üreteceğiz. Daha sonra ne yapıyoruz? Toplayıp çıkarıp ortalamasını alıyoruz. Basit bir ortalama işlemi. Buna average filtre deniyor arkadaşlar. Şu yaptığınız işlem filtreleme işlemi. Mesela bir de şurada bakalım. Örneğin şunu sileyim.
+
+457
+01:28:14,260 --> 01:28:18,100
+Hani sayısal değerler üzerinde bakalım bir olaya.
+
+458
+01:28:19,900 --> 01:28:26,800
+Bakın ne oldu? Şu üçe üçlük gezecek. Yok, üçe üçlük değil. Bu biraz daha. Ha, üçe üç geziyormuş, evet.
+
+459
+01:28:26,800 --> 01:28:31,420
+Şuranın ortalamasını aldığınızda nedir? Bu sıfırdır. Getirdi buraya sıfır yazdı.
+
+460
+01:28:32,180 --> 01:28:35,760
+Sonra bunu bir kaydırıyoruz. Şuraya bakıyoruz.
+
+461
+01:28:36,948 --> 01:28:43,548
+Buranın ortalamasını aldık, hepsini 1 ile çarpın, toplayın, ne olur? 90, 90 bölü 9, 10'dur. 10 olacakmış.
+
+462
+01:28:44,848 --> 01:28:52,348
+Ondan sonra şurayı aldığımızda, evet herhalde 90 artı 90 artı 90 bölü 9, 30 şey oluyormuş.
+
+463
+01:28:52,748 --> 01:28:59,648
+İşte orada bir tane iki tane 90'lık kısım var, o da ne oluyor? 90 artı 90 bölü 9, o da 20 olurmuş. Şöyle bir şey olur.
+
+464
+01:29:00,148 --> 01:29:02,948
+Bunu bütün matzisi uygulayacağız. Şimdi gelelim koda.
+
+465
+01:29:04,532 --> 01:29:05,532
+Yani matiz...
+
+466
+01:29:05,532 --> 01:29:09,532
+Biz bu örneği birinci dönemde ödev olarak yapmıştık.
+
+467
+01:29:09,532 --> 01:29:11,532
+Ne şey...
+
+468
+01:29:11,532 --> 01:29:14,532
+Hocam ne konvolisyon adı altında.
+
+469
+01:29:14,532 --> 01:29:15,532
+Aynen konvolisyon.
+
+470
+01:29:15,532 --> 01:29:22,532
+İşte buna konvolisyon veya korelasyon deniyor. Aslında işlem konvolisyondur. Hani üç a üçlük, bilmiyorum kim verdi ödevi.
+
+471
+01:29:22,532 --> 01:29:27,532
+Tabi orada görüntü okunma durumu var. Bakalım.
+
+472
+01:29:30,484 --> 01:29:49,484
+Görüntüyü dediğim gibi okuma işi size ait değil. Elimizde hazır bir okunmuş görüntü var. Diyorum ki resim oku diye bir fonksiyonum var. Ben burada resmin adını bulunduğum klasörde Lena diye bir dosyam var. Bu dosyayı okuyorum.
+
+473
+01:29:49,619 --> 01:30:11,019
+Okuduktan sonra şu resim içerisinde bir matriz aslında bu iki pointer olmasına bakmayın dikkat etmeyin. Elimde böyle bir matrizim var. Bu matrizim kaç satır, kaç üstün olduğu, bir de kaç çeşit renk desteklediği quantization level dediğim şey var. Çünkü bunu okuyacağım, işleyeceğim, yeniden dosya olarak yazacağım, görüntü olarak görmem lazım.
+
+474
+01:30:11,019 --> 01:30:16,419
+Yapacağım işlem dedik ki ortalama filtresi. Şimdi gelelim ortalama filtresi.
+
+475
+01:30:17,427 --> 01:30:21,787
+Benim orijinal resmim var, bir de burada yeni resmim olacak.
+
+476
+01:30:21,787 --> 01:30:31,387
+Çünkü bu bir main filter, yeni resmi de dosyaya yazdıracağız. Çünkü doğrudan yazdırmak gerekiyor.
+
+477
+01:30:31,387 --> 01:30:34,387
+Evet, şimdi...
+
+478
+01:30:35,891 --> 01:30:45,492
+Orijinal resmin, resminin boyutları var. Şu quantization bizimle alakalı diye yazdırırken kullanıyorum. Şimdi bizim bir tane ortalama filtremiz olsun. 3'e 3'lük içinde 1'ler 4'lük.
+
+479
+01:30:45,492 --> 01:30:53,492
+Bu ağırlıklı olmayan, bu doğrudan aritmetik ortalama mı oluyor? Evet, aritmetik ortalama hesaplayacağız.
+
+480
+01:30:53,492 --> 01:30:58,092
+Diyorum ki bir kere resmin sıfırıncısından başlayacağız.
+
+481
+01:30:58,323 --> 01:31:18,323
+Ama sonuna kadar gitmeyeceğiz. Yani çünkü filtre boyutumuz var, o resmin dışına taşmamamız gerekiyor. Bu da nedir? N-filtre artı bir kadar. Bu filtrenin boyutu da şu an 3'e 3 olduğu için, bu üç değerine göre N tane satırımız, N tane sütunumuz var. Resmin sınırlarını buna göre ayarladım.
+
+482
+01:31:18,323 --> 01:31:25,067
+Sonra dedim ki, eğer ilk başta yapacağımız değer mesela şu olabilir ortalama filtresinde.
+
+483
+01:31:25,140 --> 01:31:31,740
+Şuna bakmaya, bir dakika şunu önce kapatalım bunu. Niye koymuşuz ki buraya? Şöyle yapayım.
+
+484
+01:31:36,435 --> 01:31:48,435
+Direkt ortalama hesaplayalım bakın, körü körüne ortalama hesaplayacağım. Diyorum ki daha sonra şu filtrem var. Buna da küçük m'den başlattım. Yani 0'dan 3'e kadar gidecek değerler.
+
+485
+01:31:48,435 --> 01:31:55,435
+Diyorum ki resmin j artı m'si ile i artı n'sini al, o aradaki bütün değerleri al, bunları topla.
+
+486
+01:31:56,819 --> 01:32:21,079
+Toplam dediğimiz şey ne olacak? Bir sayısal değer. Daha sonra bu işte kaç tane? Dokuz tane olacak. İşte zaten doğrudan C demişiz ama doğrudan buraya dokuz da diyebiliriz. Dokuza bölüyorum. Ve bunu daha sonra işte sayıya çevirip yeni resim isimli matris de kaydediyoruz. Şu else'i de kapatalım. Hatta şu... Evet. Else de işim diyor.
+
+487
+01:32:22,292 --> 01:32:27,792
+Daha sonra toplamı sıfırladık, tekrar diğer pikseller için bu döngüler 4 tane döngü dönüyor.
+
+488
+01:32:28,692 --> 01:32:30,292
+Bakın kod gayet basit.
+
+489
+01:32:30,292 --> 01:32:33,792
+Yani 4 tane, o biraz önce bahsettiğimiz animasyonu şey yaptım.
+
+490
+01:32:33,792 --> 01:32:35,792
+Sonra diyorum ki yeni resmi yazdır.
+
+491
+01:32:36,392 --> 01:32:43,792
+Yeni resminin işte bilgileri burada matris olarak şu matris gidiyor, dosyaya yazdırma yapıyor, resim yazıldı diyecek.
+
+492
+01:32:43,792 --> 01:32:47,292
+Şimdi mesela diyelim ki Lena mean filter
+
+493
+01:32:49,011 --> 01:33:07,011
+versiyon 1 diyeyim. 3'e 3'lük bir şey. Çalışacak program, minfilter konfisyonu çalışacak ve program tamamlanıyor. Şimdi execute compile diyelim. C++ kodlarıyla çok ilgilenmiyoruz. Hani şey değil.
+
+494
+01:33:09,011 --> 01:33:10,011
+Niye olmadı?
+
+495
+01:33:14,868 --> 01:33:21,268
+Resim yazıldı, program tamamlandırıldı. Şimdi gelelim. Ortalama yaptık biliyorsunuz.
+
+496
+01:33:21,268 --> 01:33:31,868
+Orijinal bozulmuş resmimiz buydu. Bakın ortalama alınca biraz böyle iyileşme var gibi ama ne oldu?
+
+497
+01:33:31,868 --> 01:33:36,844
+Biraz önce bahsettiğimiz matematiksel operasyonu olduğu gibi yani sıfırlar...
+
+498
+01:33:37,524 --> 01:33:44,324
+Ortalamayı neye yaklaştırdı? 70'e yaklaştırdı. Örneğin gri noktalardan bahsediyoruz. İşte 100 civarı bir pikseldi.
+
+499
+01:33:44,324 --> 01:33:52,164
+255'lerde 130'a yaklaştırdı. Dolayısıyla bakın o beyazlıklar ve siyahlıklar tam istediğimiz şekilde kaybolmadılar.
+
+500
+01:33:52,164 --> 01:33:57,284
+Başka ne yapılabilir? Yani tam bir çözüm olmadı. Ortalama yapacağız ama.
+
+501
+01:34:00,948 --> 01:34:07,148
+Burada sorsam, merkezin ağırlığı geri kalanlarla eşitti. Merkezin ağırlığını sıfıra indirebiliriz.
+
+502
+01:34:07,148 --> 01:34:14,148
+Ama merkezin ağırlığı, ondan emin olamayız ki. Merkezde ise o siyah veya beyaz nokta.
+
+503
+01:34:16,500 --> 01:34:18,500
+Şöyle bir iyileştirme yapmışım.
+
+504
+01:34:18,500 --> 01:34:22,500
+Siyah ve beyaz noktadan kurtulmak istediğimiz için belki yapabiliriz diye düşünmüştüm.
+
+505
+01:34:22,500 --> 01:34:32,500
+İşte merkez dediğimiz noktayı tam bilmiyoruz. Merkezde eğer siyah beyaz varsa yine aynı noktaya takılıyoruz. Onun için tam bir şey olmayayım.
+
+506
+01:34:32,500 --> 01:34:34,500
+Şimdi şunu düşünün arkadaşlar.
+
+507
+01:34:36,500 --> 01:34:40,500
+Eğer bu noktadaki yani ilgilendiğim resim...
+
+508
+01:34:41,332 --> 01:35:01,532
+0 ya da 255 ise, o etrafta bir bakalım. Orada bir inceleme yapalım, şu diğer versiyonu bir diyelim. 0 ya da 255 ise çalıştıracağız. Niye? Çünkü orada o zaman bir şey var. Bakalım şimdi böyle deneyelim.
+
+509
+01:35:04,275 --> 01:35:10,036
+yazıldı, program tamamlandı dedi. Yes diyelim. Bu versiyon 2 olarak.
+
+510
+01:35:11,796 --> 01:35:15,155
+Bir dakika. Evet, main filter versiyon 2.
+
+511
+01:35:16,595 --> 01:35:18,595
+İki tane açmışız da.
+
+512
+01:35:19,315 --> 01:35:24,595
+Şu şöyle. Bakın ne oldu, bu biraz daha toparladı değil mi?
+
+513
+01:35:27,764 --> 01:35:30,084
+Ama dikkat ederseniz hala şeyler var.
+
+514
+01:35:31,724 --> 01:35:35,684
+Bakın şu mouse'un olduğu yerde hala temiz olmayan bölgeler var.
+
+515
+01:35:37,444 --> 01:35:53,404
+Hatta şuralarda bakın, yani normal şapkanın beyazı, işte kişinin göz renginin beyazlığından kaynaklı veya işte saçın siyah olduğu yerlerde siyahlıktan kaynaklı. Tamam, güzel biraz fark etti öncekine göre.
+
+516
+01:35:53,716 --> 01:35:56,216
+Ama tam çözüme ulaşamadı.
+
+517
+01:35:58,015 --> 01:36:03,716
+Şimdi bu ortalama filtresi arkadaşlar, ortalama ne demek? Bütün değerleri al, topla, böl.
+
+518
+01:36:03,716 --> 01:36:07,216
+Şimdi biz bütün değerleri alınca gürültüyü de dahil ediyoruz.
+
+519
+01:36:07,216 --> 01:36:14,216
+Yani gürültüyü de, hani onu da adamdan sayıyoruz derler ya, hani onu da hani insandan sayıyoruz diyelim biz.
+
+520
+01:36:14,216 --> 01:36:16,716
+Gürültüyü de işin içine kalktığımız için
+
+521
+01:36:18,131 --> 01:36:30,611
+Ondan tam anlamıyla kurtulamadık. Çünkü orada şunu yaparak 0 ise 0 da dahil olacak, 255 ise 255 de dahil olacak. Bu mean filter çok işe yaramıyor.
+
+522
+01:36:30,611 --> 01:36:35,291
+Şimdi bizim median diye bir istatistikte ölçüsümüz var değil mi? Medyan.
+
+523
+01:36:35,291 --> 01:36:46,011
+Mesela elimizde bir veri grubu var. 3, 4, 8, 6, 1 diyelim.
+
+524
+01:36:46,515 --> 01:36:52,115
+Bunun medyanı nedir? Nasıl bulunur? Ortanca diye biliniyor.
+
+525
+01:36:52,115 --> 01:36:56,115
+İp-lükten büyüğe sıralayıp ortasına bakıyoruz hocam.
+
+526
+01:36:56,115 --> 01:37:00,115
+Önce ne yapıyoruz? Bunu ıp-lükten büyüğe sıralayalım. Sıralayalım. Ne var burada?
+
+527
+01:37:00,115 --> 01:37:08,115
+İşte bir var, iki var, üç var, dört var, dört bir daha var. Hadi olsun. Beş var, altı var, dokuz mu var?
+
+528
+01:37:08,884 --> 01:37:18,884
+Sıraladıktan sonra, kaç tane verimiz var? 3, 6, 8, hatta bir tane daha veri oluşturalım. Diyelim ki şurada da 7 olsun.
+
+529
+01:37:21,884 --> 01:37:29,868
+Ne oluyor? İşte burada 9 tane veri var. İşte tam ortadaki verimiz bizim medyanımız oluyor.
+
+530
+01:37:30,036 --> 01:37:43,636
+Ne yaptık? Önce veriyi aldık, sıraladık ve gittik ortadakini aldık. Şimdi ortadakini alırken uçtaki veriler veya şunlar hiçbir şekilde hesaba katılmadı.
+
+531
+01:37:43,636 --> 01:37:56,636
+Dolayısıyla bizim bir görüntümüzde 0 en uç nokta, 255 öbür 3 nokta. Eğer o bölgede 0 ve 255'ler outlier olan ARG değerlerse
+
+532
+01:37:57,108 --> 01:38:05,347
+Ne olacaktır? Onlar uçlarda kalacaktır. Yani orada mesela bir gözünün bebeğini düşünün, hep beyazların olduğu yeri düşünün.
+
+533
+01:38:06,608 --> 01:38:12,347
+E orada zaten 255'ler fazladır. Orada ortalama da alsan, medyan da alsan sıkıntı olmuyor.
+
+534
+01:38:12,347 --> 01:38:17,108
+Ama işte öyle bir nokta var ki... Şöyle yaklaşalım.
+
+535
+01:38:18,771 --> 01:38:28,131
+Mesela şurada öyle bir nokta var ki, bakın şu beyazın olduğu noktayı düşünün. Orada genellikle siyahlar hakim. O beyaz orada fazladan duruyor. O ne olacak?
+
+536
+01:38:28,131 --> 01:38:37,811
+Medyan hesabı yaptığınızda beyaz en dışta kalacak. Yani dizinin en sonunda kalacak. Tam ortadaki değer, siyahlardan bir şey olacak. Ortancı değermiz.
+
+537
+01:38:37,811 --> 01:38:43,171
+Onun için medyan filtre burada biraz daha başarılı sonuç veriyor. Şimdi gelelim.
+
+538
+01:38:44,627 --> 01:38:50,027
+Orada median filtreyi alacağız. Medyan filtre yapmak için yine 3'e 3'lük bölgeyi tarıyorum.
+
+539
+01:38:50,627 --> 01:38:57,827
+O 3'e 3'lük bölgeden 9 tane değer alacağız. Yine resmimiz yeni resmimiz olacak. 9 değeri sıralayacağız.
+
+540
+01:38:58,427 --> 01:39:09,827
+Sıraladıktan sonra o tam ortadaki değer için, şurada gösterdi. Tam şu ortadaki değer yerine ortalamayı değil de ortanca değeri yazacağım.
+
+541
+01:39:10,827 --> 01:39:11,595
+Tamam mı?
+
+542
+01:39:11,988 --> 01:39:15,228
+Mesela şuradaki sayısal örnek üzerinden bakacak olursak,
+
+543
+01:39:20,180 --> 01:39:32,180
+Şimdi ne var? Örneğin şuraya bakalım. Buranın ortancası nedir? Şu bölgenin 9'un ortancası 0'dır. Ne var burada? Çünkü 0, 0, 0, 0, 0, en sonunda bir tane 90 var.
+
+544
+01:39:33,180 --> 01:39:40,180
+Burası şey, mesela şuranın ortancasına bakalım. Burada da tam hepsi eşit oldu. Şimdi 90 çıkıyor.
+
+545
+01:39:40,819 --> 01:39:50,819
+Dolayısıyla tam ortanca değeri alıp, ilgili yere, yani şu hücreye normalde ortancanın tekrar 90 yazmak gibi düşünüyoruz. Öyle bir operasyon yapacağız.
+
+546
+01:39:52,819 --> 01:39:53,819
+Gelelim.
+
+547
+01:39:53,819 --> 01:39:57,612
+Şimdi şu silinmesi gerekirse, oya o almayalım.
+
+548
+01:40:03,347 --> 01:40:07,948
+Şimdi medium filter, burada da ertiğim bir diyorum.
+
+549
+01:40:08,648 --> 01:40:16,648
+Diyorum ki filtremin boyutu mesela önce 3 olsun. Şimdi filtremin boyutu 3 ise 3x3'lük alanda 9 tane elemanım olacak.
+
+550
+01:40:16,648 --> 01:40:20,748
+Bu 9 elemanın ortalamasını alacağım. Filtreyi biraz daha genişletiriz şimdi.
+
+551
+01:40:21,347 --> 01:40:23,748
+Şimdi ne yapıyorum? Yine diziyi dolaşıyorum.
+
+552
+01:40:24,212 --> 01:40:32,612
+filtre ile dolaşıyorum ama yedek bir dizim var. O üçe üçlük bölgedeki dokuz tane şeyi dizinin içerisinde kaydediyorum.
+
+553
+01:40:33,612 --> 01:40:38,712
+Sonra ne yapacağım? Bu diziyi sıralayacağım. Sort fonksiyonun şurada basit bir sıralama algoritması var.
+
+554
+01:40:39,512 --> 01:40:41,212
+Sıraladığım dizinin
+
+555
+01:40:42,036 --> 01:40:55,355
+Tam ortadaki eleman, burada dördüncü elemandır ortadaki eleman değil mi? Şimdi filtremiz 3 ise 9 elemanlı, 9 elemanlı bir dizinin ortanca elemanı sıralanmış bir dizide, dördüncü elemandır.
+
+556
+01:40:55,355 --> 01:41:00,216
+Bunu yeni resme kaydediyorum. Başka hiçbir şey yaptığımız yok, yani çok basit bir kod.
+
+557
+01:41:00,216 --> 01:41:07,895
+Photoshop'taki o Salt & Pepper'ın şey de bu medyan filtre üzerinden çalışıyor.
+
+558
+01:41:08,627 --> 01:41:16,007
+Yine aynı şekilde gezdik bütün maddesi. İşte filtre boyutumuz kadar gezdik. Filtremizin boyutu falan şurada parametrik olarak belirlik.
+
+559
+01:41:16,507 --> 01:41:21,347
+Devam. Burada bakın ortalama hesabı falan yok. Tabi burada ne var? Bir sıralama maliyeti var.
+
+560
+01:41:22,627 --> 01:41:27,307
+Şimdi şöyle çalıştıralım. Medyan filtri dedik.
+
+561
+01:41:27,988 --> 01:41:31,787
+Göreceğimiz şey Medyan filtrin versiyon 1'i.
+
+562
+01:41:34,547 --> 01:41:37,748
+yazılım tamamlandı dedi.
+
+563
+01:41:38,948 --> 01:41:41,347
+Şunun birini kapatayım yani.
+
+564
+01:41:49,140 --> 01:42:01,140
+Evet, şimdi bizim mean filterımız buydu. Şu ikinci mean filterımız. Şurada bakın üçüncü mean filter. Yani bu medyan filter.
+
+565
+01:42:01,140 --> 01:42:07,140
+Bakın medyan filtreye baktığımızda biraz önceki aksaklıkların, sıkıntıların hiçbirini göremiyorsunuz.
+
+566
+01:42:07,140 --> 01:42:15,140
+Basit bir sıralama operasyonu ve medyan işlemiyle, istatistik işleminin hiçbirini göremiyorsunuz. Sadece şu köşelerdekiler var.
+
+567
+01:42:15,152 --> 01:42:21,652
+Çünkü o köşelere dokunmadık arkadaşlar. Dokunmadığım için oradaki değerler öyle kalıyor. Tamam mı?
+
+568
+01:42:24,851 --> 01:42:32,851
+Mediam filtreyi...
+
+569
+01:42:38,387 --> 01:42:49,547
+3'e 3'lük değil de mesela 13'e 13'lük yapalım. 13 olunca ne oluyor? 13 x 13, 169 mu oluyor? Veya 13 olmasında 11 falan diyelim ya.
+
+570
+01:42:49,547 --> 01:42:59,147
+Veya ne desek. 9 diyelim hadi. 9 olunca 81 olur. Yani 9'a 9 alanında 81 tane pikseli gezeceğiz.
+
+571
+01:42:59,147 --> 01:43:05,627
+Şimdi 81 pikselin tam ortamları 40. pikseldir. Yani bunu parametrik olarak da yapılabilir, problem değil.
+
+572
+01:43:06,131 --> 01:43:13,131
+Şurada da versiyon diyelim. Bu sefer medyanı birazcık bozmuş oluyoruz arkadaşlar.
+
+573
+01:43:18,899 --> 01:43:31,579
+Bakın ne oldu? Karmaşıklık arttı, program geç gidiyor. Niye? Çünkü M çarpı, N çarpı, ne oldu? 9 çarpı 9 kadar bir matriz gezdiriyorsunuz Median filtre de.
+
+574
+01:43:31,579 --> 01:43:43,819
+Yani şuranın karmaşıklığı N tane, buranın karmaşıklığı N tane, burada 9 çarpı 9 o kadar çok döngü gezecek. Dolayısıyla biraz daha şey uzadı.
+
+575
+01:43:45,427 --> 01:43:57,728
+Şimdi şuna gelelim, Median Filter versiyon bu bir değil. Bakın ne oldu? Median ala ala iyice resmi blurlaştırdık. Yani bunu genellikle 3 veya 5 yaparlar.
+
+576
+01:43:57,728 --> 01:44:07,127
+Ama bakın 3 bile bizim için çözüm oldu. Genellikle tek sayılar kullanılıyor. Evet bu basit bir bakın matris operasyonu.
+
+577
+01:44:13,043 --> 01:44:18,043
+İş gören yapılar arkadaşlar, onun için boşuna değil.
+
+578
+01:44:20,043 --> 01:44:22,859
+Şimdi bir şey daha yapalım.
+
+579
+01:44:26,739 --> 01:44:53,619
+Örneğin resmimizi shrink yapmak istiyoruz. Ne yapıyoruz shrink? Küçürtmek istiyoruz. M'e enlik bir resminiz var. Şimdi resmi küçültmek kolay, büyütmek biraz zor. Onu birazdan konuşacağız. Ne yaparız? M'e enlik bir resmimiz varsa, mesela %50 oranında küçültmek istiyorsak, bir kere bizim M ve N için yeni matrisde yer açmamız gerekiyor. Şurayı hiç dikkate almayın.
+
+580
+01:44:54,000 --> 01:45:01,199
+Bunlar sadece yeni maddisin boyutları için M ve N'in değerlerini yeniden oluşturmak adına kullanılan şeyler.
+
+581
+01:45:01,199 --> 01:45:09,479
+Örneğin 300'e 300 ise 150'ye 150 maddis oluşturulur. Şimdi bu maddiste yeni maddis nasıl oluşturulur?
+
+582
+01:45:09,479 --> 01:45:17,319
+Birer atlaya atlaya, sıfıra sıfıra alırsınız, sonra sıfıra biri almazsınız, sıfıra ikiyi alırsınız, sonra sıfıra dörde alırsınız.
+
+583
+01:45:17,319 --> 01:45:19,319
+Birer atlaya atlaya...
+
+584
+01:45:20,051 --> 01:45:40,051
+Yeni maddesi oluşturabilirsiniz. Bu bir yöntem. Veya ne olur? 0'a 0'la, 0'a 1, 1'e 0, 1'e 1. Bu 4 pikseli alırsınız, bunların ortalamasını alırsınız. Dolayısıyla tam komşulukları alarak bir resim küçültme yaparsınız.
+
+585
+01:45:40,051 --> 01:45:46,799
+Şimdi komşuları dikkate almadan, birer atlaya atlaya aldığınızda resim bazen bozulabiliyor. Yani kötü sonuçlar çıkabiliyor ama
+
+586
+01:45:46,800 --> 01:45:51,800
+Burada ne yaptık? Küçültülmüş bir resim oluşturduk, şirink yaptık.
+
+587
+01:45:52,800 --> 01:45:56,800
+Normalde B madresinde olacak olan şey nedir?
+
+588
+01:45:56,800 --> 01:46:01,800
+Şöyle bir başka versiyon yazalım buraya.
+
+589
+01:46:01,800 --> 01:46:05,800
+Yeni madresimizin değerleri şunlar olmasın.
+
+590
+01:46:06,800 --> 01:46:08,800
+Resmin...
+
+591
+01:46:13,268 --> 01:46:26,867
+İ'sinin, J'sini alayım yeter desek, şunlara gerek yok. M ve N'yi de bir arttırıyorum. Bunlar küçülerek gidecek. İki tane döngü ile bunu çözeriz.
+
+592
+01:46:26,867 --> 01:46:35,667
+Ama ne oluyor? Şimdi İ ve J ikişer ikişer artacağı için atlaya atlaya gidiyoruz. Shrinked versiyon 1 diyelim mesela.
+
+593
+01:46:48,851 --> 01:46:56,171
+Tabii bu en son Salt & Pepper orijinal resimden aldığımız bir şey. Ne oldu? Bu şekilde küçülttük.
+
+594
+01:46:56,171 --> 01:47:05,331
+Fenada olmadı değil mi? Şöyle yaklaşırsak bayağı iyi küçülttük bir şey.
+
+595
+01:47:05,331 --> 01:47:08,652
+Mesela şunu okuyalım, bunu küçültelim.
+
+596
+01:47:11,051 --> 01:47:15,051
+Medyan filter yapılmış halini küçültelim, daha net görelim hatta.
+
+597
+01:47:16,180 --> 01:47:25,900
+Pozner, odakşını, adı, yapan, lena, nez, çirin, bir.
+
+598
+01:47:31,123 --> 01:47:33,123
+Uzantıyı yazmadınız hocam.
+
+599
+01:47:33,123 --> 01:47:36,011
+PGM konularını okuyamadım.
+
+600
+01:47:40,532 --> 01:47:41,484
+Evet.
+
+601
+01:47:44,692 --> 01:48:02,092
+Şu, fena değil. Yani şu tabi şeyle karşılaştım. Bu medyan filtri uygulanmış hali, bu da onun küçültülmüş hali. Güzel. Ama burada sadece birer atlay atlay. Şimdi şurada yapacağımız şey şu operasyon.
+
+602
+01:48:06,644 --> 01:48:15,044
+Etraftaki 4 yani sağ, top, aşağı, yukarı gibi pikselleri de hesaba katıp bunu yaparsak.
+
+603
+01:48:16,184 --> 01:48:18,184
+Burada biraz daha maliyet artıyor tabi.
+
+604
+01:48:26,387 --> 01:48:38,387
+Bu da şöyle bir şey. Tabi bunu görsel olarak değerlendirmek lazım. Ne bileyim başka. Şu ikisi arasında bir fark var mıdır mesela ona bakmak lazım. Ufak tefek farklılıkta illerki vardır.
+
+605
+01:48:39,887 --> 01:48:48,887
+Evet, bu resmi küçültmek. Mesela resmi büyütmek istesek ne yaparız? Bir kere m'e enlik bir resm ise, 2 m'e 2 enlik bir resim olacak.
+
+606
+01:48:49,387 --> 01:48:53,887
+İşte burada olaya arkadaşlar işin içine interpolasyon giriyor sayısız anladığımızda gördüğünüz.
+
+607
+01:48:54,228 --> 01:49:10,228
+Interpolasyonu nasıl yapabilirsiniz? Bulunduğunuz bir i ve j. pikseli alırsınız, m'e n'e yazarsınız. Şimdi bundan bir sonra iki katına çıkacağı için piksel sayısı, i ve j'yi iki defa yazabilirsiniz.
+
+608
+01:49:10,228 --> 01:49:18,228
+İki defa yazınca ne olacak? Mesela şurada deneyelim. Manbob burada n bölü 2 ile 2 çarpı n diyeceğiz.
+
+609
+01:49:19,188 --> 01:49:22,268
+Şurada iki çarpan diyeceğiz, iki çarpan diyeceğiz.
+
+610
+01:49:23,028 --> 01:49:26,608
+Şimdi bunlar artık birer birer artacak.
+
+611
+01:49:28,407 --> 01:49:29,688
+Birer birer artacak.
+
+612
+01:49:30,707 --> 01:49:31,988
+B'nin m'sinin
+
+613
+01:49:33,007 --> 01:49:36,347
+n'sine resmin i virgül c'sini alalım. Bir de
+
+614
+01:49:39,667 --> 01:49:46,827
+B'nin m artı bir virgül, n artı birine mesela. Artık burada kullanacağın interpolasyon yöntemini
+
+615
+01:49:47,412 --> 01:49:59,412
+verileyip ona göre şurada değişiklikler yani bir pikseli aldım iki tane noktaya yerleştik. Gerçi çok sağlıklı değilim. M, M artı bir diyelim. Yani yanına yazalım bunları.
+
+616
+01:49:59,412 --> 01:50:07,912
+Şunu versiyon üç olarak diyeceğim. Tabii yazdırırken de iki çarpı n.
+
+617
+01:50:11,283 --> 01:50:14,283
+İki çarapla M diye dosyayı yazacağız.
+
+618
+01:50:16,283 --> 01:50:18,283
+Yeni dediğimiz şey neymiş?
+
+619
+01:50:20,283 --> 01:50:21,283
+B'yi yazdır, tamam.
+
+620
+01:50:26,612 --> 01:50:31,291
+Burada bir şey patladı, ne patladı muhtemelen max'ın dışına çıktık.
+
+621
+01:50:32,371 --> 01:50:38,331
+2n, 2n dedik. Ha şurada 2xn kadar diyeceğiz.
+
+622
+01:50:39,612 --> 01:50:41,411
+Bundan olabilir.
+
+623
+01:50:43,411 --> 01:50:44,411
+Evet.
+
+624
+01:50:47,011 --> 01:50:49,612
+Tabii buna versiyon 3 dedik de...
+
+625
+01:50:52,211 --> 01:50:53,612
+Niye böyle oldu bu?
+
+626
+01:50:55,444 --> 01:50:59,204
+Dosya ismini mi yanlış yazdık? Yoversiyon 3 demişiz.
+
+627
+01:51:00,204 --> 01:51:08,204
+Küçüktüğümüz mesela lena.sppgm'i alalım. Bunun üzerinden gidelim.
+
+628
+01:51:16,404 --> 01:51:44,003
+Bakın, şey olarak, muhtemelen bir yerde ufak bir hatamız var. Resmi büyütüyor. Resmin boyutu 1024'e 1024 ama şuraları hep siyahlarla doldurdu. Muhtemelen... Şurada peki şunu desek... Tabi döngü yeterince dönmeyeceği için... Bor buradan oraya kadar, buradan oraya kadar B, M, N artı bir sıfırdan başladık. Buraya doğru gittik.
+
+629
+01:51:44,435 --> 01:52:05,275
+Resmin i, birbirgül cisi dedik. Ha şöyle yapabiliriz. B'nin m'sine bunu al. B'nin m birbirine artı birine. Mesela şunu al. Resmin i, birbirgül cisi artı birine al. Mesela şöyle bir şey yapacak. Aynı şeyi kopyalamıyorum da.
+
+630
+01:52:10,228 --> 01:52:12,228
+Bak bu yerde birkaç anı var.
+
+631
+01:52:12,228 --> 01:52:15,228
+Yani burada arkadaşlar şuna da bakmak gerekiyor.
+
+632
+01:52:15,228 --> 01:52:23,228
+Şimdi i'inci piksel, i'birgül, i'birgül, i'inci piksel, i'birgül, i'artı birinci piksel, i'birgül, i'i artı ikinci piksel.
+
+633
+01:52:23,228 --> 01:52:34,228
+Bunların arasındaki değişime bakarak interpolasyon fonksiyonunu mesela kuadratik interpolasyon, kubik interpolasyon veya doğrusal interpolasyon, şu yaptığımız doğrusal interpolasyon.
+
+634
+01:52:35,475 --> 01:52:40,475
+Doğrudan olduğu değeri almak ama her zaman yeterli olmuyor.
+
+635
+01:52:40,475 --> 01:52:51,475
+İşte orada, nasıl ki şurada küçültürken ortalama hesabı yapıyorsak, büyütürken de bir interpolasyonla ne yapacağız? Şeyi değiştireceğiz aralı.
+
+636
+01:52:51,475 --> 01:52:55,475
+Bu Resimim Resize diye opsiyonlar vardır.
+
+637
+01:52:55,475 --> 01:52:58,155
+Bak şurada, bulurabilirsek.
+
+638
+01:52:59,188 --> 01:53:03,788
+In-reside, mesela in-matlab diyelim, veya Python'da da var benzer şekilde.
+
+639
+01:53:06,488 --> 01:53:09,888
+Resmin boyutunu büyütürken, arttırırken,
+
+640
+01:53:12,088 --> 01:53:17,488
+şu nearest dediğimiz en yakın nokta interpolasyonu, nearest neighbor interpolation dediğimiz şey.
+
+641
+01:53:18,188 --> 01:53:22,188
+O bilgiyi vererek, buna göre arkada algoritmik olarak bir çözüm üretiyorsunuz.
+
+642
+01:53:22,188 --> 01:53:24,488
+İşte ne var mesela, şurada başka...
+
+643
+01:53:25,300 --> 01:53:28,300
+Interpolation Function olarak.
+
+644
+01:53:30,300 --> 01:53:32,300
+Scale language.
+
+645
+01:53:35,539 --> 01:53:56,020
+Mesela bir kubik interpolasyon, ondan sonra bir lineer interpolasyon, farklı yöntemler var. Bu yöntemlere göre, kubik bir kernel kullanarak, yani üçüncü dereceden bir şey üreterek ona göre değiştiriyor. Bunlar farklı farklı argümanlar, parametreler. Hesaplama da ona göre değişiyor.
+
+646
+01:53:56,020 --> 01:53:59,860
+Tabi bu konu, hani görüntü işlemenin konusu olduğu için daha fazla.
+
+647
+01:54:00,051 --> 01:54:09,851
+Detayına girmiyoruz. İşte burada mesela farklı örnekler var. Örneğin bir görüntüye şöyle bir filtre uygularsak, yani ortalama filtresi birbiriyle de duydu.
+
+648
+01:54:09,851 --> 01:54:15,451
+Böyle bir şey uygularsak, ne yapıyorsunuz? Görüntüyü bir piksel kaydırmış oluyorsunuz. Çünkü her şeyi sıfırlıyorsunuz.
+
+649
+01:54:15,451 --> 01:54:22,851
+Şu sadece bir piksel kaydırıyor, şu zaten ortalama dedik. Şu ne yapıyor? Herhangi bir şey yapma. Yani olduğu gibi kalsın.
+
+650
+01:54:23,347 --> 01:54:28,147
+Niye? Çünkü her şey 0 ile çarpacak, ortadaki piksel 1 ile çarpılacak, o olduğu gibi kalacak.
+
+651
+01:54:28,547 --> 01:54:30,547
+Şu ortalama almak demek ki.
+
+652
+01:54:31,187 --> 01:54:40,747
+Mesela burada smooting yap. Mesela şöyle bir şey yaptığınızda, görüntünün orijinalinden smooth edilmişini çıkarttığınızda kenarlarını bulmuş oluyorsunuz kısmen.
+
+653
+01:54:42,227 --> 01:54:47,547
+Tamam mı? Bunlar temel matematiksel operasyonlarla gerçekleştirilen şeyler.
+
+654
+01:54:47,743 --> 01:54:58,143
+Şununla, görüntünün orijinali ile bulduğunuz şu çizgileri topladığınızda görüntüdeki kenar bilgilerini keskinleştirmiş oluyorsunuz.
+
+655
+01:54:58,143 --> 01:55:10,143
+Orijinal resminiz var, kenar bilgileri var, bunları topladınız, iki maddesi topladınız, sharpen ettiniz, yani buna enhancement yöntemi de deniyor.
+
+656
+01:55:10,143 --> 01:55:15,307
+Detayları özellikle kenar bilgilerini daha belirginleştirmiş oluyorsunuz.
+
+657
+01:55:16,787 --> 01:55:22,087
+Şunun farklı uygulamaları var. Bunlar konvolüsyon operasyonları diye geçiyor.
+
+658
+01:55:22,087 --> 01:55:28,087
+Sinyal işleme, görüntü işleme dersi ilerleyen zamanlarda aldığınızda farklı farklı şeyler kullanacaksınız.
+
+659
+01:55:28,087 --> 01:55:31,087
+Hocam, linkini atabilir misiniz?
+
+660
+01:55:31,087 --> 01:55:40,587
+Atabilir miyim? Tam kapattım. Atersiz dur. Stampert neydi? Şu olabilir herhalde.
+
+661
+01:55:45,268 --> 01:56:01,268
+Evet, bugünlük burada bitirelim arkadaşlar. Haftaya böyle yine saat 10'da başlayıp farklı uygulamalar anlatacağız. Yine ders notumuzda kalan şu kısımlar var. Kısaca özetleyeyim de.
+
+662
+01:56:02,268 --> 01:56:11,268
+Biraz kombinatorik tarafına gireceğiz. Yani maddis çarpımından başlayacağız. Daha sonra işte external merge sort var. Yani kısa bir konu.
+
+663
+01:56:11,859 --> 01:56:30,939
+Sonra kombinatorik ve NP-tür problemler dediğimiz bir problem ailesi var. Gezgin satıcılar, sensistel algoritmalar, alt küme problemleri. Bunları iki saatlik dersimizde tamamlayıp dönemli son dersini yapmış oluruz. Sınav hakkında da gelecek hafta konuşuyoruz. Var mı sormak istediğiniz bir şey?
+
+664
+01:56:34,836 --> 01:56:38,836
+Peki, hepinize iyi günler, haftaya görüşmek üzere.
+
+665
+01:56:40,836 --> 01:56:45,836
+Hocam, analiz dersine sadece sunum yapacaklar mı girecek?
+
+666
+01:56:46,836 --> 01:56:53,836
+Evet, oradaki size paylaşılan, tabii benim grubundansanız onun için söylüyorum, diğer grupta bilmem.
+
+667
+01:56:54,836 --> 01:57:01,836
+Sınav o programa göre sunumdan beş dakika önce derse katılıyorsunuz, sunumunuzu yapıyorsunuz ve ayrılıyorsunuz.
+
+668
+01:57:02,579 --> 01:57:04,579
+Tamamdır hocam. Teşekkür ederim.
+
+669
+01:57:04,579 --> 01:57:10,579
+Hocam bir de galiba şey, Classroom'da yorum özelliğimiz kapalı kalmış.
+
+670
+01:57:10,579 --> 01:57:19,579
+Neden kapalı kaldı? Şey çünkü, bundan sonrası için ödevlerle alakalı herhangi bir soru almıyoruz.
+
+671
+01:57:19,579 --> 01:57:25,355
+Hani varsa programlamayla alakalı sorularınız, Asistan Hocalarınızla veya bizle görüşebilirsiniz.
+
+672
+01:57:25,587 --> 01:57:33,587
+Onun dışında bir de sınav zamanı yaklaştığı için sınav sürelerinde böyle bir provokasyon olmasın diye ben kapatıyordum.
+
+673
+01:57:33,587 --> 01:57:39,587
+Sorunuz varsa bizlere iletebilirsiniz ama şu an için orada çok fazla duyuru da yapmayacağım.
+
+674
+01:57:39,587 --> 01:57:44,587
+Orası da misyonunu hemen hemen tamamlamış üzere dönem sonuna geldiğimiz için.
+
+675
+01:57:45,939 --> 01:57:49,939
+Sağ olun hocam, teşekkürler. Sınavdan sonra açılacak deyince unutuldu mu acaba diye.
+
+676
+01:57:49,939 --> 01:57:57,139
+Sınavdan sonra açtık, daha sonra bu Discord meselesinden dolayı ben tamamen kapatma kararı aldım.
+
+677
+01:57:57,139 --> 01:58:02,939
+Grubu kapatmayacağım ama orayı şu an inaktif olarak kullanıyorum.
+
+678
+01:58:03,939 --> 01:58:05,939
+Sağ olun hocam, teşekkürler.
+
+679
+01:58:05,939 --> 01:58:06,939
+Rica ederim.
+
+680
+01:58:06,939 --> 01:58:08,683
+Ve Z2 kesin iptal mi oldu?
+
+681
+01:58:08,884 --> 01:58:26,884
+Yok, onu kendi dersinde söyleyecektim. İlgili arkadaşların hepsi tespit edildi. Onların notları, isimlerini söylemiyoruz. Notları onların sıfır oldu. Diğer arkadaşlarımızın notları neyse o kalacak. Ekstra bir sınav iptali veya ayrıca bir sınav yapılmayacak.
+
+682
+01:58:26,884 --> 01:58:28,811
+Tamamdır hocam, sağ olun.
+
+683
+01:58:32,500 --> 01:58:34,475
+Peki, iyi günler, görüşmek üzere.

@@ -1,0 +1,2351 @@
+1
+00:01:01,652 --> 00:01:31,531
+and
+
+2
+00:02:04,980 --> 00:02:06,980
+Yes, is coming from the chat?
+
+3
+00:02:08,419 --> 00:02:10,980
+Yes, it is coming from the chat.
+
+4
+00:03:22,324 --> 00:03:46,324
+We have been working on families of families of discrete distributions. And we have seen binomial distribution. Now we will see geometric distribution.
+
+5
+00:04:03,699 --> 00:04:07,699
+Geometric distribution
+
+6
+00:04:11,860 --> 00:04:22,860
+models, number of independent Bernoulli trials.
+
+7
+00:04:27,124 --> 00:04:30,403
+needed to
+
+8
+00:04:32,660 --> 00:04:39,660
+to get the first success.
+
+9
+00:04:43,923 --> 00:04:45,923
+So,
+
+10
+00:04:49,492 --> 00:05:16,611
+probability distribution or PMF is given by probability of X, X equal to one minus P, X to the minus one times P, where X is from one to infinity.
+
+11
+00:05:16,611 --> 00:05:35,271
+Here, P lowercase p is probability of success of any Bernoulli trial.
+
+12
+00:05:43,795 --> 00:05:46,995
+and
+
+13
+00:05:49,716 --> 00:05:53,955
+the expected value
+
+14
+00:05:59,444 --> 00:06:05,803
+expected value of this random variable is one over P.
+
+15
+00:06:11,956 --> 00:06:14,355
+and variance is.
+
+16
+00:06:16,555 --> 00:06:17,055
+Sorry.
+
+17
+00:06:22,324 --> 00:06:23,324
+one minus P divided by P squared. I will not prove this. So these are. Exercises for you. So find this. You will need to use geometric series here.
+
+18
+00:07:06,355 --> 00:07:12,115
+Another distribution is negative binomial distribution.
+
+19
+00:07:24,211 --> 00:07:24,711
+So.
+
+20
+00:07:41,396 --> 00:08:00,835
+Negative binomial distribution models. Number of trials needed to obtain case accesses. Number of trials.
+
+21
+00:08:01,684 --> 00:08:05,823
+needed to obtain
+
+22
+00:08:09,012 --> 00:08:18,892
+key successes. In a sequence of independent Bernoulli trials.
+
+23
+00:08:38,611 --> 00:08:56,611
+here. This is like a sum of geometric series. So, so you have. Geometric. Plus geometric.
+
+24
+00:08:56,403 --> 00:09:06,164
+you have K geometric series. And.
+
+25
+00:09:07,220 --> 00:09:11,779
+The probability distribution is given by
+
+26
+00:09:22,323 --> 00:09:39,323
+x minus 1 choose k minus 1 1 minus p to the x minus k p to the k.
+
+27
+00:09:54,740 --> 00:09:59,459
+its expected value.
+
+28
+00:10:03,764 --> 00:10:04,764
+is given as K over P and variance is given as K times one minus P divided by P squared. Here P is again probability of success, success probability of a
+
+29
+00:10:33,764 --> 00:10:36,764
+single Bernoulli trial.
+
+30
+00:10:42,388 --> 00:10:51,388
+Again, I will not do the proof of this. So this is an exercise for you.
+
+31
+00:10:52,884 --> 00:10:55,884
+to solve at home.
+
+32
+00:10:59,668 --> 00:11:04,887
+Another distribution is Poisson distribution.
+
+33
+00:11:36,052 --> 00:11:54,211
+Poisson distribution models number of rare events occurring within a fixed period of time. So this models models.
+
+34
+00:11:53,043 --> 00:12:09,043
+number of, let's say, rare events, you can say number of successes here. Number of rare. Events, you can say if you want successes again.
+
+35
+00:12:10,772 --> 00:12:30,772
+But this time we are talking about time number of rare events. In a given time within. Fixed. Period of time.
+
+36
+00:12:35,316 --> 00:12:45,316
+and the Poisson distribution has a
+
+37
+00:12:48,052 --> 00:12:49,052
+probability distribution. Like this, P to the X is equal to the E to the minus lambda. Times lambda over X divided by. X factorial. Where X can be 0, 1, up to infinity.
+
+38
+00:13:18,052 --> 00:13:27,052
+expected value is lambda and its variances again.
+
+39
+00:13:31,412 --> 00:13:33,412
+lambda.
+
+40
+00:13:35,988 --> 00:13:46,988
+Here lambda, this parameter lambda, it is a...
+
+41
+00:13:49,076 --> 00:13:59,076
+Average number of events is the frequency actually. So you can read this as frequency.
+
+42
+00:13:59,316 --> 00:14:13,635
+or average number of events.
+
+43
+00:14:18,292 --> 00:14:23,292
+Ray Evans, in this case might be
+
+44
+00:14:23,292 --> 00:14:29,292
+things like
+
+45
+00:14:37,812 --> 00:14:51,812
+A rare event is an event that has very low probability to happen twice in the same in very close time.
+
+46
+00:14:53,139 --> 00:15:03,739
+So for example, hitting of meteors
+
+47
+00:15:05,971 --> 00:15:06,971
+onto the earth. This is a rare event or more usefully in call centers.
+
+48
+00:15:24,211 --> 00:15:34,931
+A new customer call coming. A new call. Customer.
+
+49
+00:15:36,851 --> 00:15:54,851
+These kind of things are called rare events and their probability is distributed by Poisson distribution.
+
+50
+00:15:54,851 --> 00:16:00,052
+Hocam pardon, kolay gelsin bu arada
+
+51
+00:16:00,052 --> 00:16:06,251
+Şimdi nadir olaylara meteor çarpması tamam da
+
+52
+00:16:06,251 --> 00:16:08,571
+Yani o mi İngilizce miydi?
+
+53
+00:16:08,751 --> 00:16:11,372
+Concentral'ın aranması o da mı nadir bir olay?
+
+54
+00:16:12,491 --> 00:16:13,651
+Varsaydı evet
+
+55
+00:16:13,651 --> 00:16:16,731
+Yani zaman süresi
+
+56
+00:16:16,731 --> 00:16:19,231
+Belli olmayan
+
+57
+00:16:19,231 --> 00:16:20,331
+Zaman şey ya
+
+58
+00:16:20,331 --> 00:16:22,252
+Zaman real ya
+
+59
+00:16:22,252 --> 00:16:23,532
+Dolayısıyla
+
+60
+00:16:23,532 --> 00:16:27,252
+Tabi bağımsız
+
+61
+00:16:27,252 --> 00:16:39,532
+Zaman real olduğu için tam olarak aynı anda aranmazsa arada büyük bir fark var varsayabilirsiniz
+
+62
+00:16:39,532 --> 00:16:44,731
+Çünkü her iki sayı arasında sonsuz farklı real sayı vardır
+
+63
+00:16:44,731 --> 00:16:50,671
+Dolayısıyla onu rare event olarak kabul edebilirsiniz
+
+64
+00:16:50,671 --> 00:16:52,331
+Eyvallah
+
+65
+00:16:52,331 --> 00:17:01,331
+So, let's do an example here.
+
+66
+00:17:04,692 --> 00:17:10,871
+So there is an internet service provider.
+
+67
+00:17:17,107 --> 00:17:36,868
+like TT net or super online, I guess. And they initiate a new account. They initiate new accounts at the average rate of 10 10 accounts per day. So they
+
+68
+00:17:38,579 --> 00:17:41,339
+get new customers
+
+69
+00:17:46,699 --> 00:17:48,059
+at the average of
+
+70
+00:17:59,380 --> 00:18:28,380
+10 per day. So they get 10 new customers per day. A, what is the probability that more than eight new accounts will be initiated today? So what is the probability of
+
+71
+00:18:29,380 --> 00:18:31,380
+More than 8
+
+72
+00:18:37,715 --> 00:18:45,715
+new customers today.
+
+73
+00:18:47,251 --> 00:19:08,731
+B. What is the probability of more than 16 new customers?
+
+74
+00:19:13,203 --> 00:19:19,843
+in two days, within two days.
+
+75
+00:19:26,067 --> 00:19:33,067
+Now, first let's look at the A.
+
+76
+00:19:37,460 --> 00:20:07,439
+This is obviously Poisson. So we have a Poisson distribution. We can model this problem with Poisson distribution. And now, then we want probability of random variable x being greater than eight. Okay.
+
+77
+00:20:11,251 --> 00:20:24,871
+eight new customers. And what is the distribution P here? P of x is equal to, what is the equation we have?
+
+78
+00:20:27,539 --> 00:20:55,199
+e to the minus. Now, what is lambda? e to the minus lambda. But what is lambda here? Lambda is 10. So because we know that we have 10 customers per day and lambda is that. So the frequency of new events.
+
+79
+00:20:55,199 --> 00:21:06,199
+So e to the minus lambda lambda to the X divided by X factorial.
+
+80
+00:21:06,199 --> 00:21:10,199
+Okay.
+
+81
+00:21:10,199 --> 00:21:25,199
+Now, normally, if you think about it, you cannot calculate this directly because number of customers
+
+82
+00:21:25,199 --> 00:21:27,600
+can be potentially infinite.
+
+83
+00:21:28,560 --> 00:21:37,559
+So you would need to find P of nine plus P of 10 plus up to infinity,
+
+84
+00:21:41,019 --> 00:21:42,760
+which is not calculatable.
+
+85
+00:21:42,760 --> 00:21:44,980
+You cannot calculate this.
+
+86
+00:21:44,980 --> 00:21:50,319
+What we can do is one minus, right?
+
+87
+00:21:50,319 --> 00:21:53,840
+The other side, probability of zero,
+
+88
+00:21:55,199 --> 00:22:07,199
+let's put a parenthesis there probability of 1 up to probability of 8.
+
+89
+00:22:18,228 --> 00:22:38,228
+So one thing you can one way you can do is now you can calculate probability of zero using this equation. This should be one. Probability of one, probability of two, probability of eight, you can sum them subtract from one and you can find it.
+
+90
+00:22:38,228 --> 00:22:47,228
+But this is still kind of problematic because you have to do a lot of calculations here because of that.
+
+91
+00:22:47,228 --> 00:22:55,228
+Statistics books give these tables.
+
+92
+00:22:55,228 --> 00:23:02,228
+That help you for this kind of situation so you can look at.
+
+93
+00:23:02,228 --> 00:23:09,228
+look at table A3
+
+94
+00:23:13,172 --> 00:23:15,672
+in Baron's book.
+
+95
+00:23:19,443 --> 00:23:31,443
+And in table three, table A3, they have the cumulative.
+
+96
+00:23:37,076 --> 00:23:47,395
+cumulative probability values. For Poisson distribution.
+
+97
+00:23:50,420 --> 00:24:19,059
+And notice that this here actually is just cumulative probability of eight, right? This here is just F of eight. Because we are talking about probabilities, some of the probabilities of all values less than or equal to eight. So that's cumulative probability.
+
+98
+00:24:19,059 --> 00:24:36,059
+So we can just take a look at that table and you will see that that's just 0.333.
+
+99
+00:24:38,059 --> 00:24:39,059
+Okay.
+
+100
+00:24:43,955 --> 00:24:45,955
+from that you have
+
+101
+00:24:50,067 --> 00:25:20,047
+1 minus 0.333, which is 0.667. So the probability of 10 or, sorry, eight or more new customers is 0.668. And take a look at this table.
+
+102
+00:25:20,067 --> 00:25:27,067
+So we have tables for, sorry.
+
+103
+00:25:33,395 --> 00:25:34,395
+Take a look at tables at the end of baron. You have cumulative distribution tables for for
+
+104
+00:26:02,067 --> 00:26:03,067
+for binomial distribution, Poisson distribution, normal distribution, and some others. So a lot of these distribution values, since they have this, sorry, they have this calculated, these calculated mass functions,
+
+105
+00:26:32,067 --> 00:26:54,067
+It's hard to calculate them by hand so you can use these tables at the end of statistic books or somewhere else. Another alternative is using programming. So since we are programmers, instead of these tables,
+
+106
+00:26:56,067 --> 00:26:58,067
+or
+
+107
+00:27:03,476 --> 00:27:16,795
+use programming, for example, in Python or MATLAB.
+
+108
+00:27:17,907 --> 00:27:41,907
+I don't remember function name, but you can search in the internet, but you can just write the value and it will give you Poisson cumulative distribution. So you can just search for it in the internet if you want. So normally since we are programmers, we should be actually doing this.
+
+109
+00:27:41,907 --> 00:27:51,907
+Now let's continue to the example. So let's look at B.
+
+110
+00:27:56,564 --> 00:27:58,564
+What was Bayes asking for?
+
+111
+00:28:06,579 --> 00:28:07,579
+probability of X being greater than 16. Right. Now, the thing is. The approach we can use is almost same, but there is a huge, huge important thing to notice here. The lambda is different. For this case, lambda was. For a lambda was 10.
+
+112
+00:28:36,579 --> 00:29:00,819
+Okay. Because we are asking today in this day, but in B, we are asking the number of events in two days. In two days, average number of events is 20. So here, the new lambda we will use
+
+113
+00:29:00,819 --> 00:29:28,059
+will be 20, not 10. Okay, that's very important. So you need to consider how much time I am thinking of. If I am thinking of two days, in two days, what is the average number of events normally? And that's 20 years. Then again,
+
+114
+00:29:28,059 --> 00:29:53,739
+you can just use table A3 but now your probability distribution will be probability of X is equal to E to the minus 20 to the X divided by X square, sorry X factorial and you set up the problem like this and at the end you should get
+
+115
+00:29:53,739 --> 00:30:23,719
+Let me write here 0.779. So this is an exercise, do the rest yourself. But notice that the probability is not twice. So in one day, having eight probability of eight new customers is 0.6, something.
+
+116
+00:30:23,740 --> 00:30:35,180
+something in two days, of having 16 new customers is 0.7 something.
+
+117
+00:30:35,180 --> 00:30:37,579
+So be careful about this lambda.
+
+118
+00:30:37,579 --> 00:30:39,779
+The purpose is this.
+
+119
+00:30:39,779 --> 00:30:50,900
+The purpose of this exercise is this lambda thing to give you this warning of about lambda.
+
+120
+00:30:56,147 --> 00:31:00,147
+So this was Poisson distribution.
+
+121
+00:31:11,028 --> 00:31:17,028
+Let's look at Poisson approximation of binomial distribution.
+
+122
+00:31:37,715 --> 00:31:41,715
+So calculating
+
+123
+00:31:41,715 --> 00:31:44,715
+binomial
+
+124
+00:31:44,715 --> 00:31:48,715
+Probabilities
+
+125
+00:31:48,715 --> 00:31:51,715
+may be hard
+
+126
+00:31:51,715 --> 00:31:54,715
+is tough
+
+127
+00:31:54,715 --> 00:31:57,715
+when
+
+128
+00:31:57,715 --> 00:32:00,715
+n is large
+
+129
+00:32:00,715 --> 00:32:02,715
+large
+
+130
+00:32:05,172 --> 00:32:26,172
+because you will have n factorial in the expression. And if you think about thousand factorial, that's a huge, huge, huge number. So one way to calculate binomial probabilities is using Poisson distribution and
+
+131
+00:32:26,172 --> 00:32:35,051
+the this approximation says that
+
+132
+00:32:38,836 --> 00:32:41,836
+Baino Melo.
+
+133
+00:32:43,859 --> 00:32:44,859
+distribution value with parameters and NP. Can be approximated by Poisson distribution. Of lambda. When.
+
+134
+00:33:03,059 --> 00:33:31,059
+We have enough n. So first n must be large enough. So here large enough is greater than or equal to 30. So if n is larger than 30 or equal to 30, we can use n. This probability probability of a single success must be small. So it's less than 0.05. We can use it.
+
+135
+00:33:31,059 --> 00:33:56,059
+If that is the case, lambda is calculated by n times p. So you can just write n times p as lambda in Poisson distribution and then you can get the binomial probability value.
+
+136
+00:34:11,443 --> 00:34:22,443
+With this, we finished the discrete distributions and we are starting continuous distributions.
+
+137
+00:34:23,731 --> 00:34:28,731
+Let me start a new notebook.
+
+138
+00:35:18,931 --> 00:35:19,931
+continuous distributions. So continuous random variables can take values from, so,
+
+139
+00:35:40,179 --> 00:35:42,179
+their range will be
+
+140
+00:35:44,179 --> 00:35:48,179
+range set will be real numbers.
+
+141
+00:35:48,179 --> 00:35:50,179
+Ne yaptım ben?
+
+142
+00:36:10,228 --> 00:36:11,228
+So range of real numbers. Now, these can be times so for things like weights, weight of a human or like height or things like distances. So physical
+
+143
+00:36:40,228 --> 00:36:45,228
+physical quantities like distances, temperature
+
+144
+00:36:48,980 --> 00:37:07,619
+So these kinds of things can be modeled with real numbers. So we call these continuous distributions. Now, so, so far,
+
+145
+00:37:19,123 --> 00:37:46,123
+We have been working with this probability mass function. So probability mass function was written with a capital P. And then you write the lowercase x value to it. And it gives you a, so we had some equations as we just saw. Now in continuous distributions, probability mass functions are always zero.
+
+146
+00:37:46,123 --> 00:38:03,123
+So the probability of a single point is always zero. Now, because of that, instead of probability mass function, we will use something called probability density.
+
+147
+00:38:17,139 --> 00:38:26,459
+Now, the probability density is first obtained from cumulative distribution function.
+
+148
+00:38:26,459 --> 00:38:33,859
+So. We already know what cumulative distribution function is.
+
+149
+00:38:33,859 --> 00:38:47,099
+Cumulative distribution function or we use capital F in this course of value X is
+
+150
+00:38:47,099 --> 00:38:56,099
+is probability of. Random variable X having value less than or equal to X.
+
+151
+00:38:59,099 --> 00:39:10,099
+Now for continuous probabilities. The equality here doesn't mean anything because.
+
+152
+00:39:10,099 --> 00:39:35,099
+the probability of X is zero. So we can actually also write this as probability of X, random variable X having value less than X. These two are equal to each other because probability of a single point is zero.
+
+153
+00:39:35,099 --> 00:39:44,099
+We know this cumulative function or CDF.
+
+154
+00:39:44,099 --> 00:39:52,099
+Now probability density function is the derivative of this.
+
+155
+00:39:52,099 --> 00:39:54,099
+Okay.
+
+156
+00:39:54,099 --> 00:39:56,099
+So.
+
+157
+00:40:03,027 --> 00:40:06,027
+probability,
+
+158
+00:40:07,891 --> 00:40:14,891
+density function
+
+159
+00:40:15,699 --> 00:40:44,699
+A lot of times we will use PDF for this as an abbreviation. And we will use lowercase f for it. So lowercase f, f of x. This is defined as the derivative of cumulative probability. So remember this is derivative.
+
+160
+00:40:44,699 --> 00:40:52,299
+So that is d of fx divided by d of x
+
+161
+00:40:56,884 --> 00:40:57,884
+So in cumulative probabilities, we start with cumulative probabilities and take the derivative of cumulative to get probability densities. Now, using this density. We can calculate probabilities.
+
+162
+00:41:51,027 --> 00:41:52,027
+So. Now you need to calculate probabilities using probability density function. In continuous distributions, what you need to do is. Probability of let's say, random variable X having value between A and B. Is. Integral from A to B.
+
+163
+00:42:21,027 --> 00:42:31,027
+density, PDF density times the X.
+
+164
+00:42:31,027 --> 00:42:42,027
+And this is this really looks like the area under the curve, right? So if you have a.
+
+165
+00:42:48,307 --> 00:42:53,307
+graph of this density.
+
+166
+00:42:56,467 --> 00:42:57,467
+And if your range is from a to b. The probability of the area between a and b is this value.
+
+167
+00:43:25,427 --> 00:43:55,407
+and it's the area here, right? And as you know, the area under the curve is calculated by an integral, right? So we have this situation where we have continuous graphs and we can use integrals to calculate the area and those areas will be equal to the probabilities.
+
+168
+00:43:55,427 --> 00:44:03,187
+in those ranges. And notice that.
+
+169
+00:44:06,804 --> 00:44:07,804
+We still can use cumulative probabilities here. So the same thing also is equal to cumulative probability of B minus cumulative probability of A. Right. The same thing. Okay. We can just we would we are able to use cumulative probabilities to calculate this.
+
+170
+00:44:36,804 --> 00:44:42,804
+As you might expect.
+
+171
+00:44:47,380 --> 00:44:52,380
+Why is this the case? Because first of all,
+
+172
+00:44:54,260 --> 00:44:56,260
+We can calculate
+
+173
+00:45:11,891 --> 00:45:12,891
+cumulative probability again from density now. Let's say for a value B here as. Now, what is the cumulative probability? Remember FB is probability of random variable X having value less than or equal to B, right? That's the cumulative probability. Now that means less than B. What is the minimum value less than B?
+
+174
+00:45:41,891 --> 00:46:04,891
+can be here, it can be minus infinity. And be up to be okay, we are saying up to be fx dx. So if we find the area under the whole curve.
+
+175
+00:46:15,603 --> 00:46:16,603
+up to be.
+
+176
+00:46:23,923 --> 00:46:24,923
+This will give us this cumulative probability. And from that you can now subtract. This part. Which will be the. Area from minus infinity to a if you subtract that you get this area again, which is the probability between a and b.
+
+177
+00:46:53,923 --> 00:46:55,923
+and
+
+178
+00:46:59,860 --> 00:47:07,860
+As you might expect this probability must sum to one.
+
+179
+00:47:07,860 --> 00:47:19,860
+So. The whole probability must be one.
+
+180
+00:47:21,780 --> 00:47:39,780
+And when we say who, what does that mean? From minus infinity to positive infinity. So if you integrate from minus infinity to positive infinity, what will you get? You will get one.
+
+181
+00:47:49,268 --> 00:48:13,028
+Okay, so these are the very basics of continuous probabilities. Let's have a 10 minute break, 10 minutes break. And when we come, we will talk, we will, we will continue with an example. Before that, let's talk about the upcoming exams.
+
+182
+00:48:13,028 --> 00:48:28,028
+So, so let me write it here. You will have a second midterm.
+
+183
+00:48:37,235 --> 00:48:38,235
+with term. On the 17th. Of. December. So this means we will have a class this week, we will have a class next week and the next week after that, you will have an exam. So I will also do a lesson in that week. So one one hour will be for exam.
+
+184
+00:49:07,235 --> 00:49:34,235
+probably and something like that. The next two hours will be class, normal class. So there will be both a midterm and a class that day. Second important announcement is
+
+185
+00:49:34,235 --> 00:50:03,676
+is second quiz. Will be. On surprise. Time. So we will not tell you when the second quiz will be. It may be any time from next week up to the end of semester.
+
+186
+00:50:08,628 --> 00:50:09,628
+and also there is this exercise about look at your chat. There is this exercise that can also send me. Let me
+
+187
+00:50:34,708 --> 00:50:36,708
+find it.
+
+188
+00:51:03,860 --> 00:51:06,860
+So there's an.
+
+189
+00:51:11,443 --> 00:51:16,924
+So there is this question I pasted to the chat window.
+
+190
+00:51:18,063 --> 00:51:19,323
+This is an exercise.
+
+191
+00:51:19,323 --> 00:51:21,623
+So do that exercise.
+
+192
+00:51:23,803 --> 00:51:26,203
+So I will repeat these things in Turkish
+
+193
+00:51:26,203 --> 00:51:27,643
+since they are very important.
+
+194
+00:51:30,403 --> 00:51:35,643
+Birincisi, ikinci vizeniz ayın on yedisinde olacak.
+
+195
+00:51:38,023 --> 00:51:41,043
+Yani bugün ayın üçü.
+
+196
+00:51:41,443 --> 00:51:48,443
+The next week of the year, the 17th year, will be second.
+
+197
+00:51:51,443 --> 00:51:55,443
+The 17th year, the normal day of the year, will be done.
+
+198
+00:51:55,443 --> 00:52:00,443
+If I will be done with the year of the year, I will be done with the year of the year.
+
+199
+00:52:00,443 --> 00:52:06,443
+Or if I will be done with the year of the year, I will be done with the year of the year.
+
+200
+00:52:06,443 --> 00:52:16,204
+I think this is a surprise.
+
+201
+00:52:16,283 --> 00:52:36,063
+This is a surprise.
+
+202
+00:52:36,063 --> 00:52:40,463
+We have to be ready to be ready.
+
+203
+00:52:41,763 --> 00:52:44,463
+I have a problem that I have to put on.
+
+204
+00:52:44,463 --> 00:52:48,463
+I will be able to solve this problem.
+
+205
+00:52:48,463 --> 00:52:51,463
+If you have a question about this,
+
+206
+00:52:51,463 --> 00:52:53,463
+what do you think about this?
+
+207
+00:52:59,092 --> 00:53:07,092
+So let's have a break till...
+
+208
+00:53:16,436 --> 00:53:20,436
+break till 14.05
+
+209
+00:53:20,436 --> 00:53:28,436
+Olam bu chatte ki quiz'in, chatte ki exercise'in herhangi bir şeyi var mı? Zamanın herhangi bir şeyi?
+
+210
+00:53:28,436 --> 00:53:30,436
+Yok. Tamamdır.
+
+211
+00:53:30,436 --> 00:53:32,436
+Kendiniz bununla uğraşın.
+
+212
+00:53:35,539 --> 00:53:38,539
+Okay, friends, 10 minutes later, see you soon.
+
+213
+01:03:56,563 --> 01:03:59,763
+Yes, my name is the name of the person.
+
+214
+01:04:18,675 --> 01:04:20,675
+Okay, okay.
+
+215
+01:04:23,795 --> 01:04:25,235
+Now...
+
+216
+01:04:29,076 --> 01:04:34,076
+So let's continue with the
+
+217
+01:04:45,972 --> 01:04:49,171
+with the continuous distributions.
+
+218
+01:04:54,068 --> 01:05:02,068
+There is an example. So we are talking about
+
+219
+01:05:04,403 --> 01:05:10,403
+Lifetime in years of some electronic component.
+
+220
+01:05:10,403 --> 01:05:13,403
+Life time.
+
+221
+01:05:13,403 --> 01:05:15,403
+Of.
+
+222
+01:05:15,403 --> 01:05:19,403
+And electronic.
+
+223
+01:05:19,403 --> 01:05:23,403
+Component.
+
+224
+01:05:26,164 --> 01:05:27,164
+and that is given in years. And it's given as its probability density is given as this piecewise function. It is K to the X. Over three. K over X to the three for. X larger than.
+
+225
+01:05:56,164 --> 01:05:59,923
+or equal to one, zero otherwise
+
+226
+01:06:03,284 --> 01:06:04,284
+So a. What is K. Be. Draw the graph. Of. Curative function. And see. What is the probability of lifetime exceeding five years?
+
+227
+01:06:33,284 --> 01:06:36,284
+in more than five years.
+
+228
+01:06:36,284 --> 01:06:37,284
+Okay.
+
+229
+01:06:45,396 --> 01:07:15,375
+For a, we know that the integration from minus infinity to plus infinity of fx dx for continuous distributions is equal to one. Now in this case, we need to be careful. So when we, if you say from minus infinity to plus infinity, k to the x cube,
+
+230
+01:07:15,396 --> 01:07:41,396
+the x equals to one, there will be a problem. And what is that? Well, because the fx is zero up to one. So up to one, it is zero. And then it is this function. I guess it's something like that. So
+
+231
+01:07:45,396 --> 01:07:54,396
+So instead of minus one here as the lower bound, you need to use one because up to one.
+
+232
+01:07:54,396 --> 01:08:12,396
+The piece, the piecewise function is different, right? The function is defined different up to there. And since it is just zero, it's integral will be zero, two. So let's just don't bother working with it.
+
+233
+01:08:12,396 --> 01:08:40,556
+with it. So then we should say from one to infinity, one over, so this should be k, k over x cube, dx is equal to one. And so if you do this calculation, you need to do, you need to take the integral,
+
+234
+01:08:40,555 --> 01:08:53,556
+integral, you will find that K is two. Okay, so this is an exercise to do at home. Now, what is the graph of this cumulative function?
+
+235
+01:08:58,355 --> 01:09:00,355
+So let's do that.
+
+236
+01:09:03,891 --> 01:09:30,891
+First of all, what is cumulative function? It is defined as from minus infinity to X. Now, here, if you write FX DX, it will be kind of confusing because we are using X in the boundary too. So instead of FX DX, we will write something else. For example, we can write FY DY.
+
+237
+01:09:30,891 --> 01:09:37,612
+because this y variable will be eliminated after integral.
+
+238
+01:09:37,612 --> 01:09:40,331
+So we can write any name for it.
+
+239
+01:09:41,972 --> 01:09:46,972
+And so if you do that, also the integral is zero up to one.
+
+240
+01:09:51,572 --> 01:09:57,211
+So instead of minus infinity here, we should use one.
+
+241
+01:09:57,211 --> 01:09:58,732
+From one to x,
+
+242
+01:09:58,732 --> 01:09:59,732
+2 over x instead of x we were saying y so 2 over y squared d y, y cubed. This is y cubed. And that is your, that is your cumulative distribution equation. And if you do this integral,
+
+243
+01:10:28,731 --> 01:10:58,711
+We should get one over one minus one over x squared. Again, this is homework for you to do. And if you do this graph, if you if you graph this, what will be what will we see? First of all, up to one, everything is zero, we already know.
+
+244
+01:10:58,731 --> 01:11:27,931
+from that right so we are graphing the cumulative distribution. And up to one this is just zero. From one on if you look at this and if you try some calculations, you will see that we have a graph like this and graph is approaching to one.
+
+245
+01:11:32,659 --> 01:11:37,659
+So graph will be approaching to one.
+
+246
+01:11:46,452 --> 01:12:14,452
+And what is C? C asked for probability of random variable having value greater than one. Now we can easily calculate this using cumulative distribution because we can say that this is one minus probability of X being less than or equal to five.
+
+247
+01:12:18,228 --> 01:12:19,228
+This guy here is a cumulative distribution for five cumulative probability for five. And then that is now we already have a nice formula for that. So one minus one minus one to the five square. Okay. So this should be 0.04.
+
+248
+01:12:48,228 --> 01:13:01,228
+Okay, so this was an example about continuous distributions.
+
+249
+01:13:10,804 --> 01:13:15,563
+Let's look at the joint and marginal densities.
+
+250
+01:13:37,332 --> 01:13:38,332
+So we are talking about joint probabilities. Now in continuous distributions, we start from cumulative distribution. So let's first define that cumulative joint distribution of random variables X and Y. Having value X and Y. Is. Probability of.
+
+251
+01:14:07,332 --> 01:14:28,332
+So this is a double integral. So this is a partial integral here. First you need to derive O over X and then you derive over Y.
+
+252
+01:14:33,747 --> 01:14:34,747
+Sorry, I kind of messed up this so that that's this that's. So this is first somehow you need to define this. This is probability of. Random value X. Being less than or equal to lowercase x and. Random variable y. Being less than or equal to lowercase y.
+
+253
+01:15:03,747 --> 01:15:04,747
+Okay, somehow you need to find this cumulative distribution. Now using this cumulative distribution, you can find joint density. Joint density, probability density. And we can write it like this. This density is now double.
+
+254
+01:15:33,747 --> 01:15:48,747
+integral double derivative. So you take partial derivative with respect to X and partial derivative with respect to Y of the cumulative.
+
+255
+01:15:53,716 --> 01:15:55,716
+You have a few years.
+
+256
+01:16:02,163 --> 01:16:13,163
+So if you can define a joint cumulative distribution, you can easily get a joint density.
+
+257
+01:16:23,923 --> 01:16:34,603
+Now, when you talk about joint densities, individual densities become marginal density.
+
+258
+01:16:36,115 --> 01:16:43,115
+So, marginal densities.
+
+259
+01:16:48,595 --> 01:16:52,996
+So if you have this. Joint distribution.
+
+260
+01:17:04,916 --> 01:17:09,515
+This is density. So, joint density,
+
+261
+01:17:12,948 --> 01:17:16,948
+Now, you can calculate
+
+262
+01:17:18,948 --> 01:17:22,948
+individual densities from this.
+
+263
+01:17:34,323 --> 01:17:35,323
+individual densities from this. So, for example, the density of X will be now you will integrate over all possible values of Y. Okay. And when we say over all possible values of Y here we mean from minus infinity to positive infinity. So basically
+
+264
+01:18:04,323 --> 01:18:09,204
+You will integrate from minus infinity to positive infinity.
+
+265
+01:18:09,204 --> 01:18:10,204
+Why?
+
+266
+01:18:11,844 --> 01:18:12,844
+The.
+
+267
+01:18:14,323 --> 01:18:17,083
+You'll integrate this joint density.
+
+268
+01:18:17,643 --> 01:18:19,643
+This joint density here.
+
+269
+01:18:25,300 --> 01:18:26,300
+and
+
+270
+01:18:30,515 --> 01:18:58,515
+overall possible values of y. Okay, so we are talking about y being from minus infinity to positive infinity. And similarly, you can obtain marginal density for y. So this time x will be from minus infinity to positive infinity.
+
+271
+01:18:58,515 --> 01:19:02,515
+you will integrate this joint density.
+
+272
+01:19:07,220 --> 01:19:08,220
+the x.
+
+273
+01:19:11,764 --> 01:19:18,764
+We also have
+
+274
+01:19:27,283 --> 01:19:30,283
+independence,
+
+275
+01:19:35,475 --> 01:19:45,715
+So we say that x, let me write in the way, we say that x is equal to 0.
+
+276
+01:19:52,787 --> 01:19:57,787
+x and y are independent.
+
+277
+01:20:02,515 --> 01:20:07,515
+if the joint density is equal to the same.
+
+278
+01:20:11,283 --> 01:20:17,283
+is equal to multiplication of individual densities.
+
+279
+01:20:20,051 --> 01:20:23,051
+for all possible values of X and Y.
+
+280
+01:20:46,036 --> 01:21:04,515
+And now if you have a joint density to calculate the probability, now you need to have double integral. So when you need to calculate probabilities,
+
+281
+01:21:14,931 --> 01:21:43,931
+Again, the probability of a single point is zero. So you talk about or we will talk about the ranges. So you can say, for example, probability of X being between A and B and Y being between C and D.
+
+282
+01:21:43,931 --> 01:22:13,911
+And then now you will need to do a double integration. So for x you will integrate from a to b and for y you will integrate from c to d. And what will you do? You will integrate joint density f of x y.
+
+283
+01:22:13,931 --> 01:22:36,931
+X, Y, DX, since Y is inside, I think first I should write Y here. So I think it doesn't really matter, order should not matter here. But, so let me write this way, DY DX.
+
+284
+01:22:36,931 --> 01:22:43,931
+So you can first do the inner integral and then do the outer integral.
+
+285
+01:22:43,931 --> 01:22:52,931
+So you need to take the integration over two ranges.
+
+286
+01:23:04,051 --> 01:23:11,051
+expectation is similar. If you notice.
+
+287
+01:23:13,332 --> 01:23:21,332
+The equations we are using in continuous distributions
+
+288
+01:23:23,155 --> 01:23:29,155
+usually have an integration.
+
+289
+01:23:36,051 --> 01:23:45,051
+The discrete versions of these used to have these sums.
+
+290
+01:23:48,083 --> 01:23:49,083
+And usually, any rule you know in discrete distributions, most of them can be transferred to continuous distributions by changing this summation into an integration. So you should have noticed that so far. So, for example, expectation, when we want to calculate expectation,
+
+291
+01:24:18,083 --> 01:24:48,063
+Thank you
+
+292
+01:24:26,547 --> 01:24:54,107
+So expected value of a random variable X. We also show that as mu or expected value of X. And in this case, we are talking about an integration now over all possible values of X, which means from minus infinity to positive infinity. And
+
+293
+01:24:56,547 --> 01:25:08,547
+the density now f of x dx right. Sorry, I have forgotten x ish. So you need to also call multiply with x.
+
+294
+01:25:16,148 --> 01:25:30,148
+x, f of x dx. More generally, if you have some function g x,
+
+295
+01:25:31,796 --> 01:25:36,355
+So let's say you have a function.
+
+296
+01:25:42,131 --> 01:25:43,131
+g of x. Okay. And you can calculate the expected value for this function. And how do you do that? This is sometimes written as expected value of g of x. Okay. Now, in this case, you will
+
+297
+01:26:12,131 --> 01:26:15,812
+again integrate from minus infinity to plus infinity.
+
+298
+01:26:16,931 --> 01:26:20,512
+Instead of x now, you will write g of x.
+
+299
+01:26:26,676 --> 01:26:27,676
+Here we are using lowercase x, G of x. Because we are, we have x values now. For each, for each x, we will calculate G of x and multiply with the density f of x. The x. So in general,
+
+300
+01:26:57,076 --> 01:26:58,076
+You can calculate expected value for any. Any random variable like this, if you have a joint density now. If you have a joint density in your hands. So let's say. How you say. How should we say.
+
+301
+01:27:27,076 --> 01:27:51,076
+If we have joint distributions of x and y, then let's say we have a function of this x and y.
+
+302
+01:27:54,195 --> 01:27:55,195
+So let's say this, like this. If we have a joint distribution of X and Y. Expected value of. G of X, Y. Is. It might be expected value of. G of X, Y is.
+
+303
+01:28:24,195 --> 01:28:43,195
+Now we have two random variables here. Because of that, we will have two integrals double integral. So for all possible values of x.
+
+304
+01:28:48,180 --> 01:29:15,180
+which means from minus infinity to positive infinity. For all possible values of y. From minus infinity to positive infinity. We will write this G of x, y, then the cumulative then the joint density F of x, y.
+
+305
+01:29:15,180 --> 01:29:41,580
+Then dy and then dx. So in general, you might have more than two variables. What you do is you write the function you want the expectation for, then write the density, then take the integrals. That gives you this joint density.
+
+306
+01:29:41,579 --> 01:29:44,579
+As an example
+
+307
+01:29:56,307 --> 01:29:57,307
+What is the expected value of x times y? Right? x times y, you are multiplying random value, random variable x with random variable y. Well, that is, we have double integrals from minus infinity to positive infinity from minus infinity to positive infinity.
+
+308
+01:30:26,307 --> 01:30:45,507
+What is the function we have here x times y so x y and then the joint density f of x y and then dy dx or dx dy. Okay.
+
+309
+01:30:57,524 --> 01:31:25,524
+So as you see, these are very similar to what we have seen so far. Only on the differences. You need to you need to substitute some with integration and substitute PMF with density. So let's look at some families of these distributions.
+
+310
+01:31:54,931 --> 01:31:58,412
+First of all, we will see uniform distribution.
+
+311
+01:32:18,260 --> 01:32:27,180
+In uniform distribution, the density is constant. So if you graph it,
+
+312
+01:32:38,452 --> 01:32:39,452
+If you graph it. Usually you need to define the range. So it is a constant value between a and b. So you will see this.
+
+313
+01:33:13,524 --> 01:33:38,124
+So it's some constant value between a and b and everywhere, everywhere else it's zero. Now, what is that constant value? Well, we know that this area must be one, right? The area under the curve is one.
+
+314
+01:33:38,124 --> 01:33:54,123
+So to make this area one this constant value must be one over B minus A. If you look at the geometry here, when you multiply Bayes with the height, you should get one.
+
+315
+01:33:54,123 --> 01:34:03,123
+So. With the uniform density effects is one minus B.
+
+316
+01:34:03,123 --> 01:34:06,123
+One over B minus A.
+
+317
+01:34:06,123 --> 01:34:11,123
+where x is between a and b.
+
+318
+01:34:23,859 --> 01:34:44,939
+Let us write this distribution uniform. A B so A and B are the parameters of the uniform distribution. We will say that X is distributed by uniform A B. Let me divide this in this.
+
+319
+01:34:53,811 --> 01:35:09,811
+Now, if you set a as zero and set B as one, we call this standard uniform distribution.
+
+320
+01:35:27,188 --> 01:35:42,427
+So standard uniform distribution is just uniform distribution. Well, a is zero, b is one. So its graph is like this.
+
+321
+01:35:55,347 --> 01:36:22,827
+So it was from zero to one. This should be x. This is density of f of x. And the value to make the area one, obviously this constant value is one because one times one is one, right? So in the standard uniform distribution f of x is just one.
+
+322
+01:36:22,827 --> 01:36:52,807
+when x is between 0 and 1, right? Otherwise it's 0. So let's not forget that between 0 and 1 the density is 1 otherwise it's 0. And notice that you can convert a uniform distribution to standard uniform distribution or convert
+
+323
+01:36:52,827 --> 01:37:03,987
+or standard uniform distribution to uniform distribution, non-standard uniform distribution.
+
+324
+01:37:03,987 --> 01:37:14,748
+Let's make this distinction clear by using the random variable name y instead of x.
+
+325
+01:37:14,748 --> 01:37:22,807
+So let me write here x, then instead of x, let me write here y.
+
+326
+01:37:22,827 --> 01:37:46,827
+And let me say, y is distributed by uniform 01. So it's again uniform distribution, but a is zero, b is one. And let us say, y is standard uniform distribution, x is uniform distribution.
+
+327
+01:37:46,827 --> 01:37:57,827
+So you can standardize How you can standardize X.
+
+328
+01:37:57,827 --> 01:37:59,827
+Why.
+
+329
+01:38:03,220 --> 01:38:33,199
+by x minus a divided b minus a. So if you have a uniform distribution, you can convert that into a standard distribution. And then if you rearrange this equation, if you take the x to this side, x will be a plus x.
+
+330
+01:38:33,220 --> 01:39:02,019
+plus B minus A times Y. And so if you have standard distribution, you can get to the other one. How do you use this? This is helpful when, for example, in C, let's say,
+
+331
+01:39:03,220 --> 01:39:09,800
+or in Python, let's say, in some programming.
+
+332
+01:39:13,619 --> 01:39:16,819
+programming language,
+
+333
+01:39:18,996 --> 01:39:19,996
+There is. So in other programming languages, there is or there are these functions called runt. And if you call runt, it gives you a value between zero and one. Okay. R, let's say, is runt and R is in
+
+334
+01:39:50,292 --> 01:39:51,292
+So you can say. R equals to runt. And here. R is distributed by. Uniform distribution. Zero one, so it's distributed by standard distribution.
+
+335
+01:40:20,292 --> 01:40:44,512
+So the values are, the values that you can get are in between zero and one. And let's say you want values between what? 10 and 20, right? You need values between 10 and 20. What you do? You say that, okay, I will say my x value is
+
+336
+01:40:44,511 --> 01:41:02,851
+plus 10 plus 20 minus 10 times R. And this will give you values between 10 and 20, right?
+
+337
+01:41:04,931 --> 01:41:14,491
+So this kind of converting the random variables to each other actually helps us in getting a random number.
+
+338
+01:41:14,512 --> 01:41:29,071
+in that distribution. So you have a random number in standard distribution, you want a random number in non-standard uniform distribution, you can use this equation.
+
+339
+01:41:34,131 --> 01:41:42,131
+So what is the expectation and variance of this.
+
+340
+01:41:44,212 --> 01:41:46,212
+So expectation.
+
+341
+01:41:50,836 --> 01:41:51,836
+and variance. For uniform distribution so for.
+
+342
+01:42:08,884 --> 01:42:37,884
+Let's say x is distributed by uniform. A B. Then expected value of x is a plus b divided by two. And variance of x is b minus a square divided by 12.
+
+343
+01:42:37,884 --> 01:42:41,884
+Again, these are exercises for you to do at home.
+
+344
+01:42:43,884 --> 01:42:50,884
+And for the standard distribution, you can just put zero and one there.
+
+345
+01:42:51,884 --> 01:42:58,884
+So I will not say anything about that.
+
+346
+01:42:59,884 --> 01:43:03,884
+Another one is exponential distribution.
+
+347
+01:43:08,340 --> 01:43:14,499
+Another important distribution is exponential distribution.
+
+348
+01:43:31,060 --> 01:44:00,060
+exponential distribution is used for modeling time. So a lot of time we use it to model. It models time. A lot of time you can have some other time some other stuff but at least in this course we will mostly use it to model time. This can be waiting times.
+
+349
+01:44:02,996 --> 01:44:13,235
+or in a call center inter-arrival times.
+
+350
+01:44:13,043 --> 01:44:18,323
+So in a call center time between phone calls
+
+351
+01:44:23,796 --> 01:44:49,796
+So now density for this. Is density for exponential distribution is. Lambda e to the minus lambda X. Where. X is greater than zero.
+
+352
+01:44:49,844 --> 01:44:56,844
+its expected value is given as
+
+353
+01:44:56,844 --> 01:44:59,844
+the
+
+354
+01:45:00,115 --> 01:45:03,115
+one over lambda
+
+355
+01:45:05,235 --> 01:45:06,235
+variance is given as. One over lambda square. And it's a cumulative distribution has a nice. Equation, it is given as one minus. E to the minus lambda X. Where X is greater than zero.
+
+356
+01:45:39,956 --> 01:45:43,956
+Again, these are exercises for you.
+
+357
+01:45:59,539 --> 01:46:14,039
+You need to do integrations here. So you need to integrate to get these values. But they are doable. You will need to use integration by parts.
+
+358
+01:46:26,292 --> 01:46:44,371
+So you will need to use integration by parts. Once or twice. Now, what is the meaning of lambda here.
+
+359
+01:46:47,636 --> 01:46:49,636
+Lambda is a
+
+360
+01:46:54,036 --> 01:47:03,036
+It's called frequency parameters, number of events per time unit.
+
+361
+01:47:17,939 --> 01:47:19,079
+So
+
+362
+01:47:35,764 --> 01:47:37,803
+Let's look at an example.
+
+363
+01:47:50,612 --> 01:48:02,612
+jobs are sent to a printer at an average rate of three jobs per hour. So there is this shared printer.
+
+364
+01:48:10,579 --> 01:48:37,579
+So people can send jobs to, from their personal computers, they can send jobs to their, this is some kind of office, printing jobs. So jobs are sent to the,
+
+365
+01:48:44,979 --> 01:48:46,359
+to the.
+
+366
+01:48:46,359 --> 01:48:47,200
+Printers.
+
+367
+01:48:53,079 --> 01:48:54,759
+At an average rate of.
+
+368
+01:49:04,275 --> 01:49:06,275
+Three jobs per hour
+
+369
+01:49:14,260 --> 01:49:19,260
+So what is the expected time between jobs?
+
+370
+01:49:23,891 --> 01:49:29,891
+A. What is the expected time between jobs?
+
+371
+01:49:40,467 --> 01:50:02,228
+B. What is the probability that next job is sent within five minutes? So probability of X being less than or equal to five minutes.
+
+372
+01:50:02,804 --> 01:50:03,804
+So what is S here actually in this case though? X is the time for next job. So waiting, waiting, waiting time for next job. So how much the printer will wait for the next job? That is, let's say,
+
+373
+01:50:32,804 --> 01:50:37,283
+x and then we are saying
+
+374
+01:50:49,939 --> 01:51:13,459
+What is its probability being less than five? First of all, Venus, we need to note something. I didn't write that but times between real events are exponential. So
+
+375
+01:51:15,444 --> 01:51:18,643
+times between
+
+376
+01:51:20,819 --> 01:51:22,819
+rare events.
+
+377
+01:51:28,595 --> 01:51:29,935
+exponential.
+
+378
+01:51:35,155 --> 01:51:47,395
+So we need we can use exponential distribution to model time between rare events.
+
+379
+01:51:47,395 --> 01:51:50,595
+So it turns out
+
+380
+01:51:53,908 --> 01:51:54,908
+If you have these. Let's say this is T or time. If you have these events. Rear events going on. Now, if you consider starting time T zero just after the just after an event happens. Now,
+
+381
+01:52:23,908 --> 01:52:28,908
+First of all, number of events in time t
+
+382
+01:52:34,452 --> 01:52:37,452
+number of events.
+
+383
+01:52:45,779 --> 01:52:59,779
+is poison, we just saw that. Okay. Now, time between each such event is exponential.
+
+384
+01:53:02,131 --> 01:53:29,331
+Let's say this is T1. T1. And so let's say this is, let me say number of events is, let's say X. And let T be, let's say X. And let T be, let's say X.
+
+385
+01:53:32,467 --> 01:53:33,467
+Time between. Events. Okay, so. You can consider this as being t two. This being t three.
+
+386
+01:53:55,636 --> 01:54:12,636
+this being etc. So time between events is exponential, we can use exponential distribution to model that.
+
+387
+01:54:26,996 --> 01:54:31,396
+So you can use exponential distribution for that.
+
+388
+01:54:39,891 --> 01:54:58,051
+Now, the time for multiple events, they say time for four events. Let me call that a. So, uh,
+
+389
+01:55:06,387 --> 01:55:08,387
+So let me call why.
+
+390
+01:55:21,684 --> 01:55:28,164
+If Y is time for key events.
+
+391
+01:55:30,963 --> 01:55:33,443
+So how much time is needed for.
+
+392
+01:55:35,684 --> 01:55:38,364
+So what is the probability of time.
+
+393
+01:55:39,923 --> 01:55:45,524
+Or how can we say what is the probability of sixth call.
+
+394
+01:55:47,483 --> 01:55:50,843
+In a call center being in 10 minutes.
+
+395
+01:55:51,684 --> 01:56:16,684
+happening in 10 minutes. That is gamma distribution. So we will see gamma in a minute. So you have these three distributions working together. Okay. When you have these rare events happening one after another.
+
+396
+01:56:16,684 --> 01:56:40,684
+So times between rare events are exponential. So now we can use that information here because we are talking about time between printing jobs. So this exponential.
+
+397
+01:56:47,859 --> 01:57:16,859
+And if you look at the exponential distribution, it has this parameter lambda. So what is the value of lambda? If you know the lambda, we know everything because everything is given by these equations. So what is lambda in this case? It says that average rate of three jobs per hour.
+
+398
+01:57:16,859 --> 01:57:23,859
+So, Lambda is three jobs per hour
+
+399
+01:57:29,939 --> 01:57:50,939
+So that's important in these cases. What is lambda? Now, after we find that expected time between jobs, where expected value is one over lambda. So we can just find that.
+
+400
+01:57:56,083 --> 01:57:57,083
+one over lambda. So that means one over three jobs. Our will go up there. So one hour per three, three jobs. So we have one over three. Our jobs. So in a way we expect 20 minutes per job.
+
+401
+01:58:26,083 --> 01:58:56,063
+to happen to come. And what is the B now? Probability of X being less than five minutes. That's just cumulative distribution, right? So cumulative distribution of F. But we need to be careful about this hour and minute thing, right? So five minutes or lambda is in hour.
+
+402
+01:58:56,083 --> 01:59:06,083
+So we can either convert minutes to lambda or minutes to hours or convert hours to minutes.
+
+403
+01:59:06,083 --> 01:59:15,083
+It doesn't really matter. So let's say five minutes. Let's convert that.
+
+404
+01:59:15,083 --> 01:59:22,083
+Therefore, five minutes is how many hours?
+
+405
+01:59:22,083 --> 01:59:25,083
+five over six dollars.
+
+406
+01:59:28,787 --> 01:59:29,787
+right because we have 60 minutes per hour. So that is then we can just use now this equation here. One minus E to the minus lambda is three jobs per hour.
+
+407
+01:59:58,787 --> 02:00:25,787
+and the time we discuss here is 5 over 60 hours. So if you do this calculation, we should find the right value. And it should be 0, 22, 12. So you can check this at home.
+
+408
+02:00:32,180 --> 02:00:44,180
+We will continue with exponential distribution. Let's have a 10 minutes break.
+
+409
+02:11:51,315 --> 02:11:53,315
+Yes, I'm getting ready to go.
+
+410
+02:12:04,948 --> 02:12:05,827
+Peki sağ olun
+
+411
+02:12:16,851 --> 02:12:36,411
+Okay, so we talked about exponential distribution. One thing interesting about exponential distribution is this property called memoryless property.
+
+412
+02:12:40,275 --> 02:12:43,275
+So it says that
+
+413
+02:12:54,963 --> 02:12:55,963
+This property says that geometry, exponential distribution does not have memory. So let's write it first. It says that probability of T greater than lowercase t plus lowercase x given T is greater than lowercase t.
+
+414
+02:13:24,963 --> 02:13:34,963
+is equal to probability of t being greater than x.
+
+415
+02:13:34,963 --> 02:13:47,843
+So this equation is memoryless property and here t lowercase t is already the elapsed portion
+
+416
+02:13:47,843 --> 02:13:49,843
+of waiting time.
+
+417
+02:14:25,235 --> 02:14:35,875
+because we have x here too. So t is the waiting time for an event.
+
+418
+02:14:39,731 --> 02:14:44,231
+So capital T is a random variable.
+
+419
+02:14:47,444 --> 02:15:01,843
+random variable. And it is a waiting time.
+
+420
+02:15:04,564 --> 02:15:06,963
+and distributed by exponential.
+
+421
+02:15:21,587 --> 02:15:26,587
+t is distributed by exponential.
+
+422
+02:15:33,332 --> 02:15:47,332
+So if T, if capital T is a is waiting time and let's say we are waiting for a job, print job, we are next to a printer and
+
+423
+02:15:50,051 --> 02:16:02,931
+the fact that 10 minutes past does not really matter. Probability of waiting more than five minutes is still same.
+
+424
+02:16:03,332 --> 02:16:16,332
+how much time passed when we start from waiting doesn't change the fact that probability of waiting more than given time is this or that.
+
+425
+02:16:16,332 --> 02:16:27,332
+So these two are equal. This is a memory memoryless property.
+
+426
+02:16:27,332 --> 02:16:43,332
+In continuous distributions we have with exponential, we have this with exponential distribution. In discrete distributions, we have the same property for geometric distribution.
+
+427
+02:17:01,043 --> 02:17:06,803
+So now we can move to the gamma distribution.
+
+428
+02:17:21,427 --> 02:17:41,028
+when you have alpha independent steps. So let's say you have this. So this is time axis. And you have these steps. Of alpha.
+
+429
+02:17:45,747 --> 02:18:03,907
+and statistics, alpha steps, they are independent. So alpha independent steps, and the time between each event is exponential.
+
+430
+02:18:05,332 --> 02:18:10,712
+Then the total time
+
+431
+02:18:15,059 --> 02:18:16,059
+for alpha steps. Is a gamma distribution.
+
+432
+02:18:26,548 --> 02:18:33,827
+and gamma distribution has two parameters.
+
+433
+02:18:35,092 --> 02:19:03,092
+which are alpha and lambda. So lambda comes from the exponential distribution. Remember exponential distribution has a lambda. So we are talking about that lambda. And alpha is the number of steps. Now, gamma distribution has this.
+
+434
+02:19:08,628 --> 02:19:10,628
+Let's write this way.
+
+435
+02:19:14,131 --> 02:19:19,131
+Let's say is distributed by gamma here.
+
+436
+02:19:23,316 --> 02:19:28,316
+And now what is the density for this?
+
+437
+02:19:31,731 --> 02:19:32,731
+density for gamma distribution is given by lambda over alpha divided by gamma of alpha x to the alpha x or minus one e to the minus alpha x where x is greater than zero.
+
+438
+02:20:01,731 --> 02:20:30,731
+Here this function, lambda function, so this gamma function is given as integration of 0 to infinite x to the alpha minus 1 e to the minus x dx
+
+439
+02:20:31,731 --> 02:20:35,112
+where alpha is greater than zero.
+
+440
+02:20:37,392 --> 02:20:40,011
+Now this gamma function,
+
+441
+02:20:43,352 --> 02:20:48,351
+normally gamma or alpha here does not need to be an integer.
+
+442
+02:20:50,151 --> 02:20:50,971
+So,
+
+443
+02:20:53,032 --> 02:20:57,272
+normally alpha can be,
+
+444
+02:21:00,500 --> 02:21:02,500
+non-vinteger.
+
+445
+02:21:05,940 --> 02:21:14,940
+So it doesn't have to be an integer. But if it is an integer,
+
+446
+02:21:15,540 --> 02:21:22,540
+if alpha is an integer
+
+447
+02:21:23,731 --> 02:21:24,731
+and we already know. And alpha is greater than one. Then we have. Gamma of alpha. Equals to. Alpha one alpha minus one factorial. So. If alpha is greater than one. And if alpha is integer.
+
+448
+02:21:53,731 --> 02:22:06,731
+You can assume this is just this here is just alpha minus ones factorial.
+
+449
+02:22:06,731 --> 02:22:15,731
+But again, you have these ifs, if alpha is an integer and if alpha is greater than one.
+
+450
+02:22:28,500 --> 02:22:33,500
+As you see, this is quite a complicated equation.
+
+451
+02:22:37,500 --> 02:22:44,500
+And gamma, as you see, have two parameters. So we say that.
+
+452
+02:22:44,500 --> 02:22:49,500
+X, if X is distributed by gamma.
+
+453
+02:22:49,500 --> 02:22:55,500
+We say that there is an alpha and lambda parameter to set.
+
+454
+02:22:55,500 --> 02:23:07,500
+So the distribution changes by alpha and gamma. And the shape of the distribution really changes a lot.
+
+455
+02:23:13,332 --> 02:23:14,332
+So if you draw the graph. Of density. Based on lambda and alpha. Especially based on alpha. The graph changes, for example. If you have alpha equals to one, you have a graph like this.
+
+456
+02:23:43,332 --> 02:23:45,332
+exponential graphically.
+
+457
+02:23:49,587 --> 02:24:13,587
+So if you said I for one this complicated expression. This. Complicated equation here becomes exponential equation, you can try that. And. If I find is greater than one.
+
+458
+02:24:19,412 --> 02:24:23,412
+You have a graph like this.
+
+459
+02:24:23,412 --> 02:24:27,412
+So something like this.
+
+460
+02:24:30,868 --> 02:24:37,187
+So here alpha is greater than one and if alpha is less than one.
+
+461
+02:24:39,907 --> 02:24:45,187
+Then you have something like this.
+
+462
+02:24:55,059 --> 02:25:25,039
+This is alpha is less than one. So based on the alpha parameters, this this this distribution change its shape. And we say that we will use it for time, but in really, really in engineering, they use this for other things for different for a lot of different things.
+
+463
+02:25:25,059 --> 02:25:34,059
+So it may be used for very different things because it has a very flexible shape.
+
+464
+02:25:34,059 --> 02:25:42,059
+But for all proposals, let us assume we are talking about time.
+
+465
+02:25:42,059 --> 02:25:47,059
+Now, what is its expectation and variance?
+
+466
+02:26:08,724 --> 02:26:09,724
+its expectation is. Alpha divided by lambda. And variances. Alpha divided lambda square. And again, these are. These come from the fact that gamma is sum of exponentials. So from the fact that
+
+467
+02:26:38,724 --> 02:26:48,323
+Gamma distribution is sum of exponential
+
+468
+02:26:51,860 --> 02:27:16,860
+distributions. So you have alpha exponential distributions, each of which have one over alpha expectation. And here alpha is sometimes shape set by the way.
+
+469
+02:27:20,659 --> 02:27:23,859
+She param yitir.
+
+470
+02:27:26,355 --> 02:27:34,355
+because it changes the shape a lot. So let's write here actually alpha is the shape parameter.
+
+471
+02:27:37,907 --> 02:27:41,867
+and Lambda is the frequency parameters.
+
+472
+02:27:59,028 --> 02:28:23,028
+So remember I told you that gamma, Poisson and exponential are related to each other. You can in fact use Poisson to calculate gamma probabilities.
+
+473
+02:28:23,028 --> 02:28:40,028
+So, how I do that? Using Poisson to calculate gamma.
+
+474
+02:28:43,731 --> 02:28:50,851
+And let's say you have a variable called x.
+
+475
+02:28:51,851 --> 02:28:54,431
+x is distributed by Poisson.
+
+476
+02:28:56,471 --> 02:29:00,311
+With parameter lambda equals to lambda t.
+
+477
+02:29:03,912 --> 02:29:10,251
+And time t is distributed by gamma.
+
+478
+02:29:10,251 --> 02:29:15,691
+with parameters alpha and lambda.
+
+479
+02:29:18,011 --> 02:29:24,051
+Now, we have these nice two equations.
+
+480
+02:29:24,051 --> 02:29:33,391
+One says that probability of t being greater than lowercase t
+
+481
+02:29:33,391 --> 02:29:41,151
+is equal to probability of X being less than alpha.
+
+482
+02:29:42,691 --> 02:29:48,852
+And probability of T being less than or equal to T
+
+483
+02:29:48,852 --> 02:29:59,711
+is equal to probability of X being greater than or equal to alpha.
+
+484
+02:29:59,711 --> 02:30:04,711
+So you need to calculate these things.
+
+485
+02:30:07,011 --> 02:30:11,311
+You need to calculate some gamma probabilities,
+
+486
+02:30:11,311 --> 02:30:16,311
+but the gamma's equation is really tough
+
+487
+02:30:16,611 --> 02:30:20,391
+and it's cumulative distribution
+
+488
+02:30:20,391 --> 02:30:22,791
+does not have a nice equation.
+
+489
+02:30:22,791 --> 02:30:26,131
+So you can just use poison for them.
+
+490
+02:30:26,131 --> 02:30:33,811
+okay uh based on the idea that we have talked here so
+
+491
+02:30:33,811 --> 02:30:35,891
+uh
+
+492
+02:30:39,956 --> 02:31:04,956
+This year we said that in a given time number of events is Poisson. Time needed for K events is gamma. So you can think in the inverse way for the same problem and get to this equation.
+
+493
+02:31:07,636 --> 02:31:13,395
+So let's move to normal distribution.
+
+494
+02:31:35,316 --> 02:31:42,635
+Normal distribution is used for modeling.
+
+495
+02:31:44,979 --> 02:31:45,979
+Averages, sums. That's very important. We can model sums and averages. Sometimes it's used for errors. In errors, usually there is some. So also it is used for modeling things like weights, temperatures,
+
+496
+02:32:14,979 --> 02:32:15,979
+etc.
+
+497
+02:32:18,963 --> 02:32:29,443
+So it has a lot of usages actually it's used widely. Its density is
+
+498
+02:32:30,835 --> 02:32:45,415
+given like this. F of X is given. One over. Sigma. Square root of two pi.
+
+499
+02:32:50,451 --> 02:32:51,451
+into the. Minus. X minus means square divided by. Two Sigma square. Tier X is between minus infinity and positive infinity.
+
+500
+02:33:14,451 --> 02:33:24,451
+Now here notice that we have two parameters. One parameter is this Mu.
+
+501
+02:33:25,268 --> 02:33:30,268
+This is expected value, by the way.
+
+502
+02:33:34,355 --> 02:33:43,355
+And the other parameter is Sigma Sigma is standard deviation.
+
+503
+02:33:44,659 --> 02:33:54,859
+So when we say a random variable is distributed by normal variable,
+
+504
+02:33:57,396 --> 02:34:07,396
+usually we give its mean and standard deviation.
+
+505
+02:34:10,291 --> 02:34:23,971
+and I and as I said, I will write here expected value is this mu and variance is. This sigma square.
+
+506
+02:34:28,852 --> 02:34:43,971
+Now there is a standard version of this too. So standard version has mu zero and mu zero.
+
+507
+02:34:46,868 --> 02:34:55,868
+So we have a standard normal distribution.
+
+508
+02:35:00,371 --> 02:35:01,371
+and it's just a normal distribution. But mu is zero and standard deviation is one. Okay. So,
+
+509
+02:35:28,275 --> 02:35:29,275
+When we talk about standard normal variable, usually we use Z actually. Let me change this to Z. This is used a lot. So it has a special symbol. Usually it's used as Z. Z is usually used for standard normal distribution. And probability density
+
+510
+02:35:58,275 --> 02:36:21,275
+The PDF of it is instead of phi, instead of f, you have usually phi. Did I write phi up there? No. So usually when we say phi x, phi of x.
+
+511
+02:36:26,004 --> 02:36:27,004
+So it's just the density up there, but instead of new, we will write zero and instead of Sigma will write one. Then what will happen to it? It will be one over two pi square. E to do minus X square divided by two. Okay, so this is the
+
+512
+02:36:56,004 --> 02:37:04,004
+is the density of standard.
+
+513
+02:37:08,884 --> 02:37:24,884
+normal distribution. And instead of capital F. We will say so cumulative distribution.
+
+514
+02:37:29,139 --> 02:37:48,419
+is written as this capital fee. So this is capital fee. For other distributions usually we used F right so this is used instead of F, instead of capital F.
+
+515
+02:37:56,628 --> 02:38:07,827
+cumulative distribution of standard normal distribution is written like that. And you can actually convert one to each other.
+
+516
+02:38:10,291 --> 02:38:11,291
+So,
+
+517
+02:38:12,611 --> 02:38:13,391
+um,
+
+518
+02:38:20,468 --> 02:38:21,468
+If you have random variable X distributed by normal distribution. Between mu and standard deviation Sigma. Then. It's a normal version shape. Sorry, it's standard versions that can be obtained by X minus Mu divided by Sigma.
+
+519
+02:38:50,468 --> 02:39:07,468
+And obviously you can take the X to the other side and you have what X will be cool to mu plus sigma Z right.
+
+520
+02:39:07,468 --> 02:39:13,468
+Right. So you can convert between these two.
+
+521
+02:39:17,716 --> 02:39:22,716
+Now it has a graph, well known graph.
+
+522
+02:39:22,716 --> 02:39:25,716
+So.
+
+523
+02:39:37,427 --> 02:39:45,707
+This is also called bell shaped. So it's something like this, it's symmetrical.
+
+524
+02:39:51,796 --> 02:40:02,796
+and on the center you have Mu. And usually we write sigma here a lot of times. This is symmetrical.
+
+525
+02:40:06,260 --> 02:40:09,859
+and if you have standards.
+
+526
+02:40:12,359 --> 02:40:13,859
+You have.
+
+527
+02:40:17,780 --> 02:40:21,520
+and standard deviation one.
+
+528
+02:40:25,492 --> 02:40:27,492
+Um
+
+529
+02:40:39,924 --> 02:40:47,924
+Again, calculating probabilities for this is quite complicated.
+
+530
+02:40:49,172 --> 02:40:50,172
+There is no nice, nice equation for cumulative probabilities. Nice cumulative probability equation. So again, you can use table A4 in Barron's book. Or you can use programming language.
+
+531
+02:41:19,172 --> 02:41:49,151
+and the average.
+
+532
+02:41:28,948 --> 02:41:30,948
+language, functions.
+
+533
+02:41:35,443 --> 02:41:43,443
+So you need to learn to use those tables, take a look at them.
+
+534
+02:41:43,443 --> 02:41:49,443
+Let's, let's make an example here.
+
+535
+02:42:16,435 --> 02:42:31,675
+So the example says that there is this country. It's a game country probably. It's a country in a game.
+
+536
+02:42:34,100 --> 02:42:47,100
+and average household income. So in that country, average household income.
+
+537
+02:42:48,180 --> 02:42:55,180
+income is 900 coins.
+
+538
+02:42:56,819 --> 02:43:07,099
+and standard deviation for that is, so standard deviation,
+
+539
+02:43:08,628 --> 02:43:18,428
+for the average household income is 200 coins.
+
+540
+02:43:21,268 --> 02:43:37,427
+And so let's say incomes are distributed. So X models incomes and X is distributed by normal distribution.
+
+541
+02:43:39,347 --> 02:43:58,347
+Now compute the proportion of the middle class. So what is the probability of people whose income is between 600 and 900?
+
+542
+02:44:00,948 --> 02:44:01,948
+coins.
+
+543
+02:44:15,188 --> 02:44:28,747
+Now. Let's think about this. So X is distributed by a normal distribution.
+
+544
+02:44:36,371 --> 02:44:50,371
+mean is 900. And standard deviation is 200. OK. And now.
+
+545
+02:44:53,172 --> 02:45:20,491
+If you draw the. Bell shape for this, we are asked for the people between 600. Queens or incomes between 600 points. 600 coins and 900 coins.
+
+546
+02:45:24,468 --> 02:45:53,468
+So you can see them. Out to use the bin ikiz arasını soruyorlar. So we want to find the portion of the population between that has income between 600 and 1200 coins. So here we have 1200.
+
+547
+02:45:56,115 --> 02:46:05,115
+and mean is 900 and standard deviation is 200.
+
+548
+02:46:05,115 --> 02:46:15,115
+So basically we are asked for this part.
+
+549
+02:46:15,115 --> 02:46:16,115
+this part. Now we can actually find that by F cumulative distribution value of 100, 1200 minus cumulative distribution value of 600. Right? And now all we need to do
+
+550
+02:46:45,115 --> 02:47:13,615
+Now we can calculate that, we cannot calculate that as we said there is not a nice equation for this. Instead of that we need to use tables and in the back of the table there is a table for standard cumulative probabilities.
+
+551
+02:47:13,615 --> 02:47:37,796
+So we need to convert this capital F to this capital phi. And how do we convert that? Well, we convert with this equation, z is equal to x minus mu divided by sigma. We just learned that. So we will just use that here.
+
+552
+02:47:37,796 --> 02:48:04,556
+So that means we are talking about phi of 1200 that's our x here, right? x minus mu so we will subtract 900 mu and divide by 200
+
+553
+02:48:04,556 --> 02:48:18,776
+minus, again capital V, 600 minus 900 divided by 200.
+
+554
+02:48:29,683 --> 02:48:55,683
+Now if we do this, what do we have? This is 300 divided by 200, 1.5. This one is minus 300 divided by 200, that's minus 1.5. Let me write phi here.
+
+555
+02:49:06,835 --> 02:49:25,356
+And now, as I said, at this point, you can either for these, you can either look to the table A4, I think. Table A4 of Barun.
+
+556
+02:49:26,804 --> 02:49:55,804
+and you will notice that this is a negative here. This value is 0.0668 and this value here is 0.9332. So that is 0.8664.
+
+557
+02:49:56,804 --> 02:50:17,804
+So do this at home, try this at home. This should give you, so this is the proportion of the people. So 87% is the middle class in this population.
+
+558
+02:50:21,971 --> 02:50:22,971
+With this we finished. Normal distribution next. Next week we will see central limit theorem.
+
+559
+02:50:38,484 --> 02:50:38,984
+soon.
+
+560
+02:50:59,763 --> 02:51:09,763
+Okay. And I'll see you then. Any questions?
+
+561
+02:51:15,603 --> 02:51:17,603
+Okay, so
+
+562
+02:51:19,603 --> 02:51:41,603
+we went quite fast this week. We did quite a bit. Next week we will again move very fast. So you should be working, you should be studying. We are almost at the end of chapter four. So
+
+563
+02:51:41,603 --> 02:51:50,504
+study chapter 3 and chapter 4 exercises from Barone.
+
+564
+02:51:52,504 --> 02:51:55,324
+Vize ve quiz sonuçlarınızı açıkladım.
+
+565
+02:52:05,876 --> 02:52:11,876
+One is a link to the link to the link.
+
+566
+02:52:11,876 --> 02:52:15,876
+You can find it on the link to the link.
+
+567
+02:52:18,579 --> 02:52:21,040
+What is the name of the link?
+
+568
+02:53:04,691 --> 02:53:06,691
+This is a very important question.
+
+569
+02:53:10,868 --> 02:53:14,868
+Puanlar Excel Xe, Excel Xe bakarsanız
+
+570
+02:53:14,868 --> 02:53:17,868
+Pardon
+
+571
+02:53:17,868 --> 02:53:24,868
+Vize ve quiz notlarınızı bulabilirsiniz.
+
+572
+02:53:27,868 --> 02:53:30,868
+Dediğim gibi iki hafta sonra ikinci vize var.
+
+573
+02:53:33,868 --> 02:53:37,868
+Hemen şu anda ona çalışmaya başlamanız lazım. Bu hafta çok hızlı gittik.
+
+574
+02:53:37,868 --> 02:54:05,548
+Gittik, gelecek haftalarda da hızlı gideceğiz. Bitirmemiz gereken bölümü bitirebilmemiz için hızlı gitmemiz gerekiyor. İlk haftalarda biraz yavaş gittik. Bir haftada kaybımız oldu tatilden dolayı. Bir haftada yılbaşından önceki perşembe öğleden sonrayı tatil yaparlarsa bir haftada öyle gidecek.
+
+575
+02:54:05,548 --> 02:54:11,527
+Dolayısıyla hızlı gitmemiz gerekiyor konuları bitirebilmek için
+
+576
+02:54:11,527 --> 02:54:22,107
+Dolayısıyla çok fazla örnek yapmadım, çok çok önemli örnekleri yaptım sadece
+
+577
+02:54:22,107 --> 02:54:26,787
+Kitaptan kendinizin çalışması gerekiyor
+
+578
+02:54:26,787 --> 02:54:31,048
+Orada atladığım birçok örnek var, o örneklere bakmanız gerekiyor
+
+579
+02:54:31,048 --> 02:54:43,507
+Bölüm sonlarındaki egzersizleri gerek Baron'dan gerek işte aynı konuları Pichronik'in kitabından da çalışabilirsiniz
+
+580
+02:54:43,507 --> 02:54:47,327
+Oradaki örnekleri yapmanız gerekiyor acilen
+
+581
+02:54:47,327 --> 02:54:53,768
+Quiz'de dediğim gibi sürpriz olacak, ikinci quiz sürpriz olacak
+
+582
+02:54:53,768 --> 02:54:59,088
+Dolayısıyla her hafta, önümüzdeki hafta da dahil quiz olabilir
+
+583
+02:54:59,088 --> 02:55:04,607
+O zamana kadar işlediğimiz konulardan
+
+584
+02:55:04,607 --> 02:55:11,868
+Dolayısıyla bu ders için çalışmayı hiç bırakmamanız lazım bence
+
+585
+02:55:11,868 --> 02:55:16,808
+Bu önümüzde kalan bir aylık, bir buçuk aylık süre zaten bir şey kalmadı
+
+586
+02:55:16,808 --> 02:55:20,088
+Tamam arkadaşlar
+
+587
+02:55:29,043 --> 02:55:32,343
+Peki o zaman kapatıyorum, haftaya görüşürüz.
+
+588
+02:55:33,843 --> 02:55:35,043
+İyi günler.

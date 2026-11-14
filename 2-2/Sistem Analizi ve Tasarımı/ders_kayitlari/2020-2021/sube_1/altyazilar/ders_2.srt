@@ -1,0 +1,2147 @@
+1
+00:00:48,179 --> 00:00:56,399
+Evet, merhabalar. Biraz daha derse katılanların sayısı artsın diye bekliyorum. Bu hafta ikinci dersimizi yapacağız.
+
+2
+00:01:03,316 --> 00:01:21,656
+Öncelikle şunu sorayım. Geçen hafta bir sistem örneği örneklemenizi istemiştim. Hiç etrafına bakıp bir sistem örneğini tanımdaki elemanlarına göre izleyen oldu mu?
+
+3
+00:01:31,731 --> 00:01:46,771
+[öğrenci], evet. [öğrenci] bir şey oluşturdun mu? Yani bir çizim üstünde bir taslak oluşturdun mu? Yoksa konuşarak mı anlatmak istersin?
+
+4
+00:01:50,932 --> 00:02:02,872
+Tamam. [öğrenci], peki şu anda bizimle paylaşabileceğin bir grafik mi yoksa sözlü olarak mı konuşacaksın [öğrenci]?
+
+5
+00:02:10,580 --> 00:02:20,780
+Konuşabilirim hocam. Sesim geliyor. Sesin geliyor. Şey soracaktım, ekranını paylaşmak ister misin? Çizimin var mı yoksa?
+
+6
+00:02:22,840 --> 00:02:25,160
+Elimde var fotoğraf ama.
+
+7
+00:02:25,840 --> 00:02:28,500
+Tamam, tamam. Paylaşabilir misin?
+
+8
+00:02:29,960 --> 00:02:31,960
+Anlatarak yapsam daha iyi olur sanki.
+
+9
+00:02:31,960 --> 00:02:35,960
+Olur, olur. Tamam. O zaman seni dinliyoruz. Birkaç...
+
+10
+00:02:36,948 --> 00:02:39,828
+Evet, [öğrenci]'yi düşünmüşsün.
+
+11
+00:02:42,448 --> 00:02:44,788
+Ben araba kiralama sistemini yapmıştım.
+
+12
+00:02:45,668 --> 00:02:46,548
+Kim?
+
+13
+00:02:47,228 --> 00:02:48,568
+Araba kiralama sistemi.
+
+14
+00:02:49,367 --> 00:02:50,627
+[öğrenci] mi?
+
+15
+00:02:50,968 --> 00:02:51,247
+Evet.
+
+16
+00:02:51,247 --> 00:02:52,008
+Tamam.
+
+17
+00:02:53,307 --> 00:02:58,088
+Tamam, o zaman bir dakika ben kaydedeyim.
+
+18
+00:03:01,620 --> 00:03:03,560
+Önce [öğrenci]'yı dinleyelim.
+
+19
+00:03:05,240 --> 00:03:18,220
+Öncelikle alt sistemleri belirledim. Rezervasyon ekibi var, satıcı, kiralayıcı ekip, envanter kontrolcü ekip, tüketiciyi bilgilendiren ekip, sipariş oluşturan ekip, bir de ödemeyi son kontrol yapan ekip.
+
+20
+00:03:25,587 --> 00:03:28,108
+Başka bir şeyin var mı?
+
+21
+00:03:30,367 --> 00:03:35,447
+Aradaki ilişkileri söyleyecek, yani ekiplerin ne iş yaptığını söyleyecektim.
+
+22
+00:03:38,127 --> 00:03:48,687
+Rezervasyon ekibi, ilk önce tüketicinin rezervasyon için ilk ulaştığı ekip. Satıcı kiralayıcı ekip de ödemeyi, rezervasyonu ve faturayı düzenliyor.
+
+23
+00:03:49,268 --> 00:04:01,568
+Envanter kontrolcü ekip de istenilen aracın envanterde bulunup bulunmadığını kontrol ediyor. Tüketici bilgilendirme ekibi arabanın olup olmadığını tüketiciye söylüyor. İstediğiniz araba var veya yok şeklinde.
+
+24
+00:04:03,568 --> 00:04:11,927
+Ödeme kontrolcü ekip de ödemeyi doğruluyor. Bu şekilde araç kiralama şirketinin geri dönüş yapmasını sağlıyor tüketiciye.
+
+25
+00:04:12,627 --> 00:04:19,687
+En son olarak da siparişi oluşturan, tüm kontrolleri tamamlayan ve tüketiciyi en son bilgilendiren ekip var.
+
+26
+00:04:20,687 --> 00:04:26,867
+Aslında şöyle, yani bu sistemin tanımını biraz daha...
+
+27
+00:04:28,531 --> 00:04:43,651
+Şimdi nasıl mesela üniversite sistemini elemanları şunlar şunlardır, sınırı budur, çevresinde işte diğer üniversiteler vardır, yok vardır diye tanıtmıştık ya.
+
+28
+00:04:52,276 --> 00:04:57,756
+sınırını, çevresini düşünerek bir tanıtım yapabilir misin?
+
+29
+00:04:59,860 --> 00:05:21,160
+Şimdi mesela alt elemanlarını söyledin, alt sistemlerini söyledin, şunları şunları yapacaktır diye. Aralarındaki ilişkilerden bahsettin. Şimdi bunu biraz daha böyle daha hani benim üniversite sistemindeki sistem alt elemanlarını tanıttığım gibi tanıtabilir misin?
+
+30
+00:05:22,379 --> 00:05:25,360
+Aralarında nasıl bir alt üst ilişkisi olduğunu pek bilmiyorum ama.
+
+31
+00:05:25,843 --> 00:05:34,103
+O önemli değil. Yani özellikle sınırı budur, elemanları budur şeklinde.
+
+32
+00:05:36,984 --> 00:05:43,524
+Şöyle ben grafik üzerinden okuduğum için çok dediğiniz gibi yapabileceğimi sanmıyorum.
+
+33
+00:05:43,723 --> 00:05:46,843
+Tamam, tamam. Teşekkürler. En azından düşünmüşsün.
+
+34
+00:05:46,863 --> 00:05:48,704
+Girdileri ve çıktılar da beklemiştim.
+
+35
+00:05:49,235 --> 00:06:00,315
+Efendim? Çıktıları. Evet, evet. Yani sistemde biz girdiler nelerdir, çıktılar nelerdir, elemanlar nelerdir? Bir feedback var mı mesela geri besleme?
+
+36
+00:06:01,035 --> 00:06:10,195
+Evet, girdilerde kiralama isteği, ödeme ve rezervasyon olarak düşündüm. Çıktılar olarak fatura, araç, stok bilgisi ve müşteriye en son geri bildirim olarak yazmıştım.
+
+37
+00:06:10,215 --> 00:06:11,435
+Evet, evet.
+
+38
+00:06:12,692 --> 00:06:26,612
+Tamam. O zaman başka sistemler üzerinde düşünenler de vardı. Bir dakika çete yazanlardan bakıyorum. [öğrenci], motor kontrol sistemi için anlat.
+
+39
+00:06:26,612 --> 00:06:30,492
+Bir doküman hazırladım, ben onu ekran paylaşımıyla gösterebilirim.
+
+40
+00:06:30,552 --> 00:06:30,831
+Tamam.
+
+41
+00:06:32,411 --> 00:06:37,072
+Bir saniye sanırım şunu seçersem gözüküyor olması lazım şu an.
+
+42
+00:06:37,252 --> 00:06:37,531
+Evet.
+
+43
+00:06:38,259 --> 00:06:54,899
+Tamamdır. Ben burada sistemin bir tablosunu çizmeye çalıştım. Şimdi motor sistemi dedim. Yani yakıta alıp bunu güce çevirmeye yarayan bir sistem şeklinde düşünebiliriz. Burada bir elektrik, mouse'u görüyorlar mı acaba yoksa bir şey?
+
+44
+00:06:54,899 --> 00:06:57,219
+Görünüyor görünüyor. Gayet güzel görünüyor.
+
+45
+00:06:57,663 --> 00:07:19,584
+Tamam, bir şeye gerek yok. Burada bir elektronik kontrol ünitesi var. Bu ünite çevre birimlerden, işte burada çeşitli sensörler var ama bunlar daha detaylı. Önemli olan burada beş tane falan faktör var. Hava sıcaklığı, motor sıcaklığı, gaz pedalının konumu, manifold basıncı ve motor devri.
+
+46
+00:07:19,584 --> 00:07:20,563
+Evet.
+
+47
+00:07:21,103 --> 00:07:22,584
+Beş tane...
+
+48
+00:07:23,252 --> 00:07:26,252
+Çevre sensörü değerlendirerek...
+
+49
+00:07:26,516 --> 00:07:32,675
+Bu elektronik kontrol ünitesinin yakıt enjeksiyon sistemi ve ateşleme sistemine veri yollaması lazım.
+
+50
+00:07:33,295 --> 00:07:36,256
+Bunu da interrelationship demiştik.
+
+51
+00:07:36,435 --> 00:07:43,156
+Buradaki bunu belirleyen look-up table denilen çeşitli tablolar var bu ECU'nun içinde.
+
+52
+00:07:43,756 --> 00:07:46,495
+Mesela burada bir tane look-up table örneği görüyoruz.
+
+53
+00:07:47,435 --> 00:07:48,576
+Üç boyutlu bir tablo bu.
+
+54
+00:07:48,576 --> 00:07:53,576
+Bir tarafında devirler gözüküyor, diğer tarafında gaz pedalının pozisyonu.
+
+55
+00:07:54,675 --> 00:08:11,375
+Bunların kesiştiği noktaya gittiğimizde mesela, fuel injection system için gerekli yakıt mikserinin nasıl olması gerektiği burada yazılmış, daha önceden belirlenmiş, bu araba için en efektif şekilde çalışacağı değerleri.
+
+56
+00:08:11,827 --> 00:08:33,803
+Deneyle bulmuşlar, bu şekilde look-up table'lara işlemişler. Bu ECU aldığı sensör verilerini look-up table'dan bakaraktan mesela yakıt enjeksiyon sistemine gerekli oranı gönderiyor. Aynı zamanda ateşleme de gerçekleştirmesi lazım. Doğru zamanda ateşlemesi için de ateşleme sistemine...
+
+57
+00:08:33,812 --> 00:08:47,812
+Şu zaman ateşte diye mesela sürekli veri gönderiyor. O da doğru zamanda ateşleme yapıyor. Çıktılar olarak da mesela aracı çalıştırmaya yarayacak güç üretir diye düşündüm ben. Hani bu bir çıktı olduğunu emin değilim ama.
+
+58
+00:08:49,852 --> 00:08:50,932
+Olabilir aslında.
+
+59
+00:08:51,700 --> 00:08:54,120
+Yani bir güç çıktısı var sonuçta.
+
+60
+00:08:54,580 --> 00:08:54,740
+Evet.
+
+61
+00:08:54,740 --> 00:08:58,040
+Mesela tekerlekleri döndürecek bir tork oluşturuyor.
+
+62
+00:08:58,060 --> 00:08:58,720
+Evet, evet.
+
+63
+00:08:58,840 --> 00:09:00,460
+Tabii bu da bir çıktı sonuçta.
+
+64
+00:09:01,000 --> 00:09:02,220
+Motorun yaptığı bir çıktı.
+
+65
+00:09:03,160 --> 00:09:03,420
+Değil mi?
+
+66
+00:09:03,519 --> 00:09:04,480
+Yani zaten amacı o.
+
+67
+00:09:04,620 --> 00:09:04,840
+Tabii.
+
+68
+00:09:04,840 --> 00:09:07,320
+Belki amaç olarak da düşündüğü de ama çıktı olarak da düşündüğü de.
+
+69
+00:09:07,320 --> 00:09:09,360
+Yani bu sistemin hedefi ne?
+
+70
+00:09:10,323 --> 00:09:14,524
+İşte bu sistemin hedefi mesela aracı çalıştırmak, buna güç sağlamak.
+
+71
+00:09:14,644 --> 00:09:19,903
+Aynı zamanda çeşitli aksesuarları klima gibi bunlara güç sağlamak.
+
+72
+00:09:19,903 --> 00:09:27,743
+Ve bu elektronik kontrol ünitesinin bir diğer olayı da boştaki aracın hızını da kontrol ediyor.
+
+73
+00:09:27,864 --> 00:09:29,743
+Onu da çeşitli olarak yazılma.
+
+74
+00:09:30,563 --> 00:09:33,463
+Belki hedefler içine şunu da koyabilirsin.
+
+75
+00:09:33,923 --> 00:09:37,144
+Mümkün olduğu kadar az yakıt harcayarak bunları yapmak.
+
+76
+00:09:37,144 --> 00:09:38,104
+Evet, evet, doğru.
+
+77
+00:09:38,323 --> 00:09:50,744
+Mesela sonunda diğer başka sistemler de var mesela ele almadığım vites mesela yakıt harcamasını çok etkileyen bir sistem. O mesela yan bir sistem olarak belki değerlendirilebilir ama çok güzeldi diye düşündüm.
+
+78
+00:09:50,744 --> 00:10:00,563
+Buradaki inputları kısaca değerlendirirsek işte hava sıcaklığı, motor sıcaklığı. Buradaki iki input gaz pedalının konumuyla manifold basıncı.
+
+79
+00:10:01,011 --> 00:10:18,691
+Motor üzerindeki yükü belirleyen inputlar, motor devri de motorun ne kadar hızlı döndüğünü söylüyor. Entities olarak da sensörler var sistemde, bir hava almıyor oksijen, yakıt var ve motor var olarak düşündüm. Sanırım atladığım bir şey yok.
+
+80
+00:10:18,691 --> 00:10:20,931
+Evet, teşekkürler.
+
+81
+00:10:21,351 --> 00:10:22,251
+Ben teşekkür ederim.
+
+82
+00:10:24,771 --> 00:10:25,651
+Başka?
+
+83
+00:10:26,419 --> 00:10:35,000
+[öğrenci]'ın aile sistemi. Biraz bahset o zaman.
+
+84
+00:10:35,860 --> 00:10:44,259
+Hocam ben arkadaşım gibi tablo oluşturamadım. Düşünürken daha basit geliyordu ama aile biraz düşündükçe daha karmaşık gelmeye başladı.
+
+85
+00:10:44,259 --> 00:10:45,019
+Evet, evet.
+
+86
+00:10:45,620 --> 00:10:56,100
+Aile sistemine de ben alt parçaları olarak işte bireylerini düşündüm. Baba, anne, çocuk. Sonra konaklama yapılacak yer yani evi şey yaptım.
+
+87
+00:10:56,719 --> 00:10:57,059
+Evet.
+
+88
+00:11:03,759 --> 00:11:17,059
+O içerideki topluluğa deniyor. Bir de ilişkilerini düşündüm o interrelation'ı aralarındaki. Bunlar da ahlaki ve yazılı kanun olarak ikiye ayırdım.
+
+89
+00:11:17,392 --> 00:11:21,232
+Bazı yazıl olmayan ve yazıl olan diye.
+
+90
+00:11:21,772 --> 00:11:22,052
+Evet.
+
+91
+00:11:22,512 --> 00:11:29,872
+Girdileri de yani artık aile, ben genel aile portresi olarak açıklayacağım çünkü çok değişik aileler de olabiliyor.
+
+92
+00:11:30,512 --> 00:11:38,992
+Çocuğu düşündüm ilk girdi olarak ve bu sistemin amacı dünyaya ve kendisine daha yararlı bireyler.
+
+93
+00:11:39,539 --> 00:11:41,919
+Çıkarmak olduğunu düşündüm aileden büyüken.
+
+94
+00:11:42,120 --> 00:11:44,419
+Evet, yani çıktı ve hedef.
+
+95
+00:11:45,120 --> 00:11:47,320
+Aynen, hedefin böyle bir şey olduğunu düşündüm.
+
+96
+00:11:48,980 --> 00:11:55,840
+Amacım da işte dediğim gibi dünyaya yani daha yararlı birini yetiştirmek olduğunu düşündüm bu aile sistemi.
+
+97
+00:11:56,340 --> 00:11:58,320
+Evet, tamam. Teşekkürler.
+
+98
+00:11:58,919 --> 00:11:59,279
+Rica ederim.
+
+99
+00:11:59,796 --> 00:12:07,236
+Bir de [öğrenci] için bir düşüncesi varmış. Sonra bir de [öğrenci]'den alacağım.
+
+100
+00:12:09,875 --> 00:12:10,495
+[öğrenci].
+
+101
+00:12:10,495 --> 00:12:24,035
+Hocam, merhaba. Hocam, ben de hastaneyi düşündüm bir sistem olarak. İçindeki övgeleri işte gelen hastalar, doktorlar, hemşireler, teknisyenler, güvenlikler veya stajyerler olarak düşündüm.
+
+102
+00:12:24,435 --> 00:12:36,795
+Hastaneye gelen insanlar doktorlarla randevu alıp görüşebiliyorlar veya fizik tedavi gibi tedavi olabiliyorlar, muayene, ameliyat, tahlil gibi yaptırabiliyorlar. Bunları fonksiyon olarak düşündüm.
+
+103
+00:12:37,395 --> 00:12:44,576
+Alt sistemleri de mesela MRXR gibi görüntüleme sistemleri, görüntüleme odaları falan var.
+
+104
+00:12:45,255 --> 00:12:46,975
+Veya laboratuvarlar.
+
+105
+00:12:47,360 --> 00:13:04,539
+Evet, yani üniversite sisteminde de demiştik, sadece canlı sistemler değil, bu canlı sistemlerin işlerini yapabilmesi için kullanılan diğer elemanlar da var diye, sınıflar falan gibi.
+
+106
+00:13:06,360 --> 00:13:08,700
+Sonra yönetim birimi var.
+
+107
+00:13:09,587 --> 00:13:10,527
+Evet.
+
+108
+00:13:11,127 --> 00:13:19,067
+Veya bazı hastanelerde ilaç geliştirmek için yapılan çalışmalar oluyor. Onlar için özel laboratuvarlar oluyor. Onları düşünün.
+
+109
+00:13:20,387 --> 00:13:27,587
+Bu da üniversite gibi yönetmeliklerle, tüzüklerle aralarındaki ilişki sağlanıyor hastanede de.
+
+110
+00:13:28,371 --> 00:13:36,351
+Çıktığı olarak da mesela iyileşmiş hasta veya herhangi bir konu hakkında bilgilenmiş hasta olarak düşündüm.
+
+111
+00:13:36,692 --> 00:13:43,211
+Veya meslek yüksek okulundan gelen sağlık öğrencileri buradan mezun olabiliyorlar.
+
+112
+00:13:43,796 --> 00:13:51,176
+Peki, hedef burada belli değil mi? Hastaları sağlıkla gönderebilmek.
+
+113
+00:13:51,256 --> 00:13:56,516
+Evet, hastaları sağlık konusunda bilgilendirmek, toplumun sağlık ihtiyaçlarını karşılamak.
+
+114
+00:13:56,996 --> 00:13:57,296
+Evet.
+
+115
+00:13:57,296 --> 00:13:58,276
+Bu şekilde.
+
+116
+00:13:59,572 --> 00:14:17,732
+Evet, peki yani bir hastanenin amacı olarak mesela belli periyotlar içinde mümkün olan en fazla iyileşmiş hasta çıkarımını yapmak, en az kayıp hasta çıkarmak diyebiliriz.
+
+117
+00:14:19,331 --> 00:14:24,472
+Evet, [öğrenci] öğrenci kulübü için konuşsun.
+
+118
+00:14:25,107 --> 00:14:27,527
+Merhaba hocam. İstiyorsanız ekran paylaşabilirim.
+
+119
+00:14:28,207 --> 00:14:32,667
+Ha, olur. Olur. Ekran paylaşımı yaparsam. [öğrenci].
+
+120
+00:14:33,395 --> 00:14:42,735
+Böyle bir şeme oluşturdum. Girde olarak öğrenciler ve verdikleri üyelik ücreti olarak düşündüm. Bizim okulda zaten bu hali hazırda olan bir sistemdi zaten.
+
+121
+00:14:43,275 --> 00:14:45,575
+Evet. Üyelik ücreti var mı öğrencilerin?
+
+122
+00:14:45,875 --> 00:14:58,435
+Normalde var. Online'da kaldırdılar ama hani normalde olan bir şey. Öğrenciler içeriye girdikleri üye oluyorlar. Yani sistemin içinde aslında üyeler ve daha sonra eğer üyeler yükselirse kulüp yönetimine dahil olabiliyorlar.
+
+123
+00:14:58,435 --> 00:14:58,875
+Evet.
+
+124
+00:15:01,395 --> 00:15:11,395
+kulüp bütçesi oluyor. Bu da yine sistemin bir partası. Aslında şey de eklemeyi düşündüm. Üniversitedeki gibi burada da tüzüklerle belirlenen kurallar var ama bunu eklemedim. Neden bilmiyorum.
+
+125
+00:15:11,395 --> 00:15:17,215
+Evet, yani iç ilişkiler bu tüzüklere göre belirleniyor.
+
+126
+00:15:18,351 --> 00:15:30,372
+Sonrasında çıktı olarak da yapılan etkinlikler ve eğitimleri düşündüm. Aynı şekilde kulüp bütçesi bu etkinliklere ve eğitimlere yarar sağlıyor. Etkinlikler ve eğitimlerden kulüp bütçesine de yarar sağlanabiliyor. O yüzden bir ilişki var burada.
+
+127
+00:15:30,836 --> 00:15:48,096
+Kulüp yönetimi düzenlediği için burada tek taraflı bir ilişki var. Üyeler de katılabiliyor zaten. Bunların sonucunda hem üyelerden hem de etkinlik ve eğitimlerden geri bildirim alınıyor. Ve bu da geri beslemeyle kulüp yönetimine geri bildirim oluyor aslında. Kulüp yönetimi de etkinlikleri ve eğitimleri iyileştiriyor gibi düşünüyorum.
+
+128
+00:15:48,096 --> 00:15:49,395
+Evet, evet.
+
+129
+00:15:51,764 --> 00:16:04,843
+Yani geri besleme, işte dönemsel toplantılar yapıp veya öğrenci üyeleriniz üzerinde anketler yapıp bir değerlendirme yapıyorsunuz mesela.
+
+130
+00:16:04,843 --> 00:16:10,703
+Bunun sonucuna göre üyelerinizi daha farklı alabilirsiniz.
+
+131
+00:16:12,323 --> 00:16:19,063
+İşte kurallarınızı, kendi koyduğunuz kurallarınızı genel tüzükler dışında değiştirebilirsiniz.
+
+132
+00:16:19,764 --> 00:16:35,563
+Yaptığınız işlere yenilerini ekleyebilirsiniz. Bu şekilde geri besleme yani feedback sistemini de bu sisteminde örneklemişsin. Teşekkürler senin de çalışman güzeldi.
+
+133
+00:16:35,823 --> 00:16:36,364
+Teşekkürler.
+
+134
+00:16:36,364 --> 00:16:40,644
+Şimdi bir kişi daha vardı. Dengi.
+
+135
+00:16:42,355 --> 00:16:43,435
+Buradayım hocam.
+
+136
+00:16:43,815 --> 00:16:47,456
+[öğrenci] sen de doğadaki besin zincirini anlat.
+
+137
+00:16:47,995 --> 00:16:51,255
+Evet, hatta ekran paylaşımını da yapabilirsem.
+
+138
+00:16:51,295 --> 00:16:52,096
+Tamam, tamam.
+
+139
+00:16:54,635 --> 00:16:55,975
+Görünüyor herhalde.
+
+140
+00:16:56,575 --> 00:16:56,855
+Evet.
+
+141
+00:16:57,683 --> 00:17:07,284
+Şöyle düşündüm hocam ben de, bu besin zincirini genel bir sistem olarak düşünürsek, bu hayvanların yaşadığı çevreyi de sistemin sınırları olarak düşündüm.
+
+142
+00:17:07,483 --> 00:17:07,744
+Evet.
+
+143
+00:17:08,264 --> 00:17:14,403
+Sistemin amacı da işte doğal döngüyü devam ettirebilmek ve hayatta kalmak diye düşündüm.
+
+144
+00:17:15,764 --> 00:17:18,683
+Sistemin birbiri arasındaki ilişkilerde...
+
+145
+00:17:19,124 --> 00:17:22,644
+Yeme veya yenilme şeklinde devam ediyor.
+
+146
+00:17:22,644 --> 00:17:25,884
+İmput olarak da üreticileri düşündüm.
+
+147
+00:17:26,003 --> 00:17:30,044
+Çünkü üreticiler olmadan, girdiğimiz olmadan devam edemeyecek bir sistem.
+
+148
+00:17:30,903 --> 00:17:33,403
+Geri beslemeyi, feedback'i de şöyle düşündüm.
+
+149
+00:17:34,604 --> 00:17:40,044
+Biz hayvan sayısının artışıyla diğerinin etkilenmesini geri besleme olarak düşündüm.
+
+150
+00:17:40,164 --> 00:17:44,164
+Mesela karganın artmasıyla beraber çekirge sayısının azalması gibi.
+
+151
+00:17:45,044 --> 00:17:45,284
+Evet.
+
+152
+00:17:46,132 --> 00:17:46,852
+Bu şekilde.
+
+153
+00:17:47,251 --> 00:17:49,711
+Bu ara İstanbul'da da bayağı arttı kargalar değil mi?
+
+154
+00:17:51,652 --> 00:17:55,032
+Evet, insan var mı bunun içinde bu düzende?
+
+155
+00:17:55,692 --> 00:18:00,992
+İnsan, hocam hepsini neredeyse yiyebileceği için onu çok koyamadım hocam.
+
+156
+00:18:00,992 --> 00:18:10,872
+Evet, evet. Tamam, bir de geri besleme olabilir mi? Ama bu buraya pek kimsenin karışması mümkün değil.
+
+157
+00:18:11,248 --> 00:18:19,008
+Bir takım şeyler olabilir belki. İnsan tarafından koyulan avlanma yasakları falan gibi şeyler.
+
+158
+00:18:19,008 --> 00:18:23,887
+Evet, evet. Tür sayısının azaltılması gibi. Bu kadar hocam.
+
+159
+00:18:24,168 --> 00:18:25,268
+Tamam, teşekkürler.
+
+160
+00:18:25,528 --> 00:18:26,367
+Ben teşekkür ederim.
+
+161
+00:18:28,276 --> 00:18:37,556
+Şimdi bir de [öğrenci] boyacı bir sistem düşünmüş. Genel olarak arabayı, diğer arkadaşınız arabanın motorunu anlatmıştı.
+
+162
+00:18:37,836 --> 00:18:45,395
+Evet hocam, acaba dedim, yani o arabayı anlattığı için ben şey de anlatabilirim, akıllı telefon da aklıma gelmişti, akıllı telefonun fiziksel yapısı aklıma gelmişti.
+
+163
+00:18:45,415 --> 00:18:52,096
+Yani ikisi de olabilir veya şey de olabilir, yani sen arabanın genelini düşündüysen o da olabilir. Hangisini istersen.
+
+164
+00:18:52,676 --> 00:18:56,276
+Arabanın inputu olarak, doğal olarak petrol ya da...
+
+165
+00:18:56,276 --> 00:19:02,415
+İzalya'da yakın zamanda başlayan elektrikli arabaların yapısında elektrik diye düşündüm.
+
+166
+00:19:02,816 --> 00:19:09,216
+Output olarak enerji ve aynı zamanda egzozdan çıkan gazları düşündüm.
+
+167
+00:19:10,216 --> 00:19:13,956
+Amacı aracın hareket etmesi ve taşıma sağlanması.
+
+168
+00:19:16,256 --> 00:19:21,496
+Onun dışında bunlar geldi aklıma hocam.
+
+169
+00:19:22,016 --> 00:19:22,276
+Evet.
+
+170
+00:19:23,220 --> 00:19:25,360
+Evet, tamam. Teşekkürler.
+
+171
+00:19:25,920 --> 00:19:36,340
+Evet, yani genel olarak geçen hafta size özellikle bir şey düşünün diye bir ödev tanımı yaptım.
+
+172
+00:19:38,120 --> 00:19:43,100
+Bu, burada benim de ödevi vermekteki hedefim.
+
+173
+00:19:43,508 --> 00:19:51,248
+Sistem kavramını anlayabilmeniz ve etrafınıza bakıp birkaç örnek belirleyebilmeniz de.
+
+174
+00:19:52,147 --> 00:19:58,488
+Şimdi derse devam edebiliriz bu haftanın dersine.
+
+175
+00:19:59,548 --> 00:20:08,387
+Yine önce bu haftanın dersine devam etmeden önce, geçen hafta olmayan arkadaşlarınız belki vardır.
+
+176
+00:20:09,683 --> 00:20:14,183
+Tekrar şu çizergemiz üzerinden.
+
+177
+00:20:16,103 --> 00:20:16,663
+Bir dakika.
+
+178
+00:20:20,663 --> 00:20:25,683
+Evet, görebiliyorsunuz değil mi Excel tablosunu haftalara göre?
+
+179
+00:20:27,503 --> 00:20:28,283
+Görünüyor hocam.
+
+180
+00:20:28,763 --> 00:20:29,003
+Tamam.
+
+181
+00:20:30,067 --> 00:20:50,607
+Geçen hafta ders planını verdik. Genel bilgiler, sistem analizi nedir? Başka hangi bölümlerde vardır? Bu dersin diğer bölümlerdeki derslerden farklılığı nedir? Bir de sistem tanımını yaptık.
+
+182
+00:20:51,092 --> 00:21:02,312
+Şimdi 16 Mart'taki ikinci haftamızda da sistem tipleri, bilgi sistemi tarafları, sistem geliştirme süreci üzerinde duracağız.
+
+183
+00:21:02,312 --> 00:21:12,692
+Tabii ki geçen hafta bahsettiğimiz için bizim dersimiz çerçevesinde bir bilgi sisteminin geliştirme sürecinden bahsediyoruz.
+
+184
+00:21:13,632 --> 00:21:17,232
+Sistem geliştirme süreci içinde.
+
+185
+00:21:17,844 --> 00:21:34,624
+Bu noktada örneğiyle bu derste başlayacağız. Yazılım mühendisliğinde bu bilgi sistemi, yazılım sistemi geliştirme sürecini daha detaylı modellerle anlatacağız.
+
+186
+00:21:57,268 --> 00:22:02,888
+Evet, bu ekran paylaşımını takip ediyorsunuz değil mi şu anda?
+
+187
+00:22:06,740 --> 00:22:07,539
+Evet hocam.
+
+188
+00:22:07,980 --> 00:22:11,080
+Tamam. Bir dakika istediğim yere getiremedim henüz.
+
+189
+00:22:33,587 --> 00:22:35,587
+Bu arada bir kişi daha bir şey yazmış.
+
+190
+00:22:38,448 --> 00:22:40,468
+Evet, tamam.
+
+191
+00:22:42,428 --> 00:22:58,539
+Şimdi, sistem analizi dediğimiz zaman, bu dersin kapsamında sistem analizi ve tasarımında önce analiz...
+
+192
+00:22:58,675 --> 00:23:05,076
+Sonra tasarım gerçekleştiriyoruz ve daha sonra da sistemimizi oluşturuyoruz.
+
+193
+00:23:10,355 --> 00:23:14,015
+İslam analizinin anlamı nedir?
+
+194
+00:23:50,324 --> 00:23:54,304
+Evet, bir ses gitti. Şimdi devam ediyorum.
+
+195
+00:23:56,344 --> 00:24:09,624
+Sistem analizi aşaması, bilgi sistemini, neyin bilgi sistemini yaptığımızı ayrıntılı olarak anlamak ve tanımlamak sürecidir sistem analizi.
+
+196
+00:24:09,624 --> 00:24:13,163
+Sistemin çözümlenmesi, sistemin analizi.
+
+197
+00:24:14,932 --> 00:24:36,352
+Yani kısaca biz analiz sırasında ne yapıyoruz? Bizim kuracağımız, tasarlayacağımız sistem aslında ne yapıyor? Bunu doğru yapalım, doğru anlayalım ki sistemimizi doğru kuralım. Bunu ifade etmek üzere geliştiriliyor bu süreçteki işlemler.
+
+198
+00:24:38,900 --> 00:24:52,080
+Gerçekleştireceğimiz bilgi sisteminin nasıl oluşturulacağını ayrıntılı olarak belirtme işlemi.
+
+199
+00:25:01,299 --> 00:25:14,599
+Nasıl gerçekleştirirsek, parçalarını nasıl belirlersek daha başarılı olacağını tasarlamak sistem tasarımındaki işimiz.
+
+200
+00:25:15,599 --> 00:25:19,500
+Sistem analisti kavramı var burada bir de.
+
+201
+00:25:26,132 --> 00:25:49,711
+İşletmecilik problemlerini, tabii ki biz genel olarak daha çok işletmecilik problemlerine çözüm aradığımız için diyorum ama bir sürü mühendislik problemi, teknik problem, işletmecilik problemi, her türlü problemi çözmek üzere.
+
+202
+00:25:50,420 --> 00:26:09,500
+Analiz ve tasarım tekniklerini kullanan uzmandır. Yani burada esas olarak sistem analistinin gerçekleştirdiği işi belirlemek üzere şunu söyleyebiliriz.
+
+203
+00:26:14,387 --> 00:26:20,607
+kolaylaştıracak, çözecek bir bilgi sistemi yaratmak isteniyor.
+
+204
+00:26:20,607 --> 00:26:29,007
+İşte bu bilgi sistemini yaratabilmek için önce bu sistem gerçekte, gerçek hayatta ne yapıyor, nasıl çalışıyor?
+
+205
+00:26:29,107 --> 00:26:33,247
+Bunu anlıyoruz analiz aşamasında. Tasarım aşamasında da.
+
+206
+00:26:34,099 --> 00:26:51,499
+Biz bu sistemi çözecek bilgisayar yazılımını ve bütün bilgi sistemini geliştirmek üzere tasarımlar yapıyoruz.
+
+207
+00:26:51,499 --> 00:27:01,179
+Önce bu işin modelini oluşturuyoruz ve bu model üzerinde denemeler yaparak.
+
+208
+00:27:01,428 --> 00:27:08,448
+gerçek çalışan yazılımımızı nasıl üreteceğimize karar veriyoruz.
+
+209
+00:27:09,567 --> 00:27:14,628
+İşte bu analiz ve tasarım işlemlerini sistem analisti olarak
+
+210
+00:27:16,723 --> 00:27:20,483
+gerçekleştiren uzman için sistem analizi diyebiliriz.
+
+211
+00:27:20,604 --> 00:27:30,384
+Tabii ki günümüzde işte bu tasarım sırasındaki yapılara karar vermek üzere yazılım mimarları.
+
+212
+00:27:31,124 --> 00:27:55,163
+Veri tabanı, tasarımı gerçekleştirenler, network tasarımını gerçekleştirenler gibi, yani daha büyük firmalarda, daha kurumsal firmalarda sadece sistem analisti değil bu isimleri de görebiliyoruz uzmanlık alanlarını.
+
+213
+00:27:55,700 --> 00:28:19,080
+Ve nin hedefi de etkin bilgi sistemlerini geliştirmek üzere bilgisayar programı yazmaktan çok
+
+214
+00:28:21,107 --> 00:28:29,188
+Bilgi sistemlerini daha etkin geliştirmek üzere çalışmalar yapılmasını sağlamak.
+
+215
+00:28:30,928 --> 00:28:36,748
+Yani sadece ilk anladığımız şekliyle bilgisayar programını yazmak değil, hedef.
+
+216
+00:28:37,548 --> 00:28:47,387
+Problemi doğru anlamak, bilgisayar teknolojisini bilmek ve bunları birbirine uydurmak geliyor hedefler arasında.
+
+217
+00:28:50,132 --> 00:28:59,312
+Şimdi bilgi sistemi tarafları dediğimizde biz geçen hafta sistem kavramı üzerinde durduk.
+
+218
+00:28:59,327 --> 00:29:11,028
+Sistemin bilgi sisteminin ne olduğunu gördük. Sistem içindeki karakteristikleri gördük. Sistem özelliklerini gördük buradan devam edersek.
+
+219
+00:29:12,228 --> 00:29:24,048
+Sistem örneği verdik, süpersistem, alt sistemler gibi bir sistem ortamının yapısını gördük.
+
+220
+00:29:26,163 --> 00:29:38,423
+Bilgi sistemi dediğimizde nedir ve bu bilgi sistemi tiplerinden bahsedeceğiz. Daha sonra da sistem analistinin
+
+221
+00:29:42,963 --> 00:29:53,284
+Düşünce şekli nedir? Sistem analisti nasıl çalışır? Anlama aşamasında bunu göreceğiz.
+
+222
+00:30:00,000 --> 00:30:03,000
+Bilgi sistemi tipleri üzerinde duralım.
+
+223
+00:30:03,000 --> 00:30:16,579
+Yani bilgi sistemi şu yapıyı görürsek, bir sistem örneklerini bugün gördük.
+
+224
+00:30:18,240 --> 00:30:21,680
+Bir sistem, sistem sınırları var.
+
+225
+00:30:25,299 --> 00:30:43,119
+Çevre ile sınırları var ve bir de bu sistemdeki işlerin daha rutin olan işlerin daha hızlandırılmış olarak ve daha doğru yapılmasını sağlayan bilgi sistemleri var.
+
+226
+00:30:48,403 --> 00:30:53,024
+Kurumlarda nasıl görüyoruz? Hangi tiplerde görüyoruz?
+
+227
+00:30:55,284 --> 00:30:58,364
+Şimdi buna giriyoruz.
+
+228
+00:30:59,784 --> 00:31:08,903
+Bir defa en temel, en birinci sırada, en alt seviyede olan sistem tipi Transaction Processing System.
+
+229
+00:31:08,903 --> 00:31:15,163
+Bunu Türkçe'de kullanırsak,
+
+230
+00:31:15,476 --> 00:31:17,676
+İşlemsel bilgi sistemleri.
+
+231
+00:31:18,676 --> 00:31:22,736
+İşlemsel bilgi sistemleri ne tip sistemler?
+
+232
+00:31:25,276 --> 00:31:37,976
+Bilgiyi yakalayan, toplayan, kaydeden ve bunun üzerinde işlemler yapan kurumlardaki bir takım hareketleri.
+
+233
+00:31:39,476 --> 00:31:51,236
+gerçekleştiren sistemler. Mesela bir ATM'den para çekme işlemi, mesela bir bordro hazırlanması,
+
+234
+00:31:51,955 --> 00:32:17,735
+Bir muhasebe fişinin hazırlanması. Bunlar tek tek, hepsi birer işlemsel bilgi sistemi. Nedir? Bir bordro sistemi, bir kurumda çalışanların alacakları aylık maaşı her ay hesaplanmasını sağlayan ve çok sayıda kişi için, çok sayıda kayıt için çalışan sistem.
+
+235
+00:32:20,564 --> 00:32:42,144
+Yönetim bilgi sistemleri ise burada bu işlemsel bilgi sistemlerinden alınan bilgiyi kullanan ve
+
+236
+00:32:42,511 --> 00:32:52,211
+Yönetime ihtiyaç duyduğu raporları üreten bilgi sistemi.
+
+237
+00:32:52,432 --> 00:32:58,471
+Tabii ki bu yönetim bilgi sisteminde hedef, Management Information System'de.
+
+238
+00:32:59,028 --> 00:33:17,208
+Kurumun daha iyi planlanması ve kontrol etmesi, iş süreçlerini daha iyi planlaması ve kontrol etmesi için kurulan bir sistem. Hedefi bu. O zaman bütün firmayı toparlaması gerekiyor.
+
+239
+00:33:26,740 --> 00:33:41,440
+Aynı havuzdan bilgi alan ya da birbiriyle uyumlu olan veri tabanlarından bilgi alarak yönetime raporlayan bir sistem.
+
+240
+00:33:41,440 --> 00:33:54,640
+Tabii ki bu da bütün yönetim kademelerinin daha iyi planlama yapmasını, daha iyi kontrol yapmasını, izlemesini sağlayan bir bilgi sistemi.
+
+241
+00:33:54,740 --> 00:34:02,680
+Başka bilgi sistem tipleri nelerdir? Şunu biraz büyütmemişim.
+
+242
+00:34:08,884 --> 00:34:13,764
+Executive Information System, Decision Support System.
+
+243
+00:34:15,104 --> 00:34:36,423
+Şimdi kurumlarda üst yönetimin bilgi almasını ve üst yönetimin daha hızlı ve anlık sorularına cevap verecek şekilde bilgiyi erişmesini sağlayan sistemler.
+
+244
+00:34:36,831 --> 00:34:57,072
+Tabii ki bunlar kurumsal veri tabanlarından ve şirketin kurumsal veri tabanlarından ve kurumun dışındaki yerlerden de bilgi alarak çalışılmasını sağlayacaklar.
+
+245
+00:34:57,715 --> 00:35:23,735
+Karar destek sistemleri ise insanların karar vermesini sağlamak üzere burada karar veya bazı seçeneklerden en uygun onanını sağlamaya
+
+246
+00:35:24,275 --> 00:35:36,895
+Yardımcı olacak sistemler diyebiliriz, karar destek sistemlerini. İşte burada en çok what if analizleri, goal seeking analizleri gibi analizler kullanılabilir.
+
+247
+00:35:37,895 --> 00:35:52,275
+Ayrıca bu karar destek sistemlerinin perspektifi çok geniş. Yani bir Excel tablosundan what if senaryosunu kullanarak bir karar mekanizmasını işletmek de bir karar destek.
+
+248
+00:35:52,275 --> 00:36:10,275
+Karar destek sistemidir. Bir büyük veri üzerinde uzman sistem yapısı kurmak da karar destek sistemidir. Bu noktada karar destek sisteminin farklı örneklerini görebiliriz.
+
+249
+00:36:11,860 --> 00:36:25,780
+Şimdi bilgi sistemleri arasındaki şeyler arasında da, farklılıklar, benzerlikler arasında da daha sonra duracağız.
+
+250
+00:36:25,940 --> 00:36:30,380
+Şimdi sadece bu bilgi sistemi tanımlarını vermek istedim.
+
+251
+00:36:38,452 --> 00:36:48,652
+Örneklerimizi arttırınca bu bilgi sistemleri arasındaki farklılıklar, hepsi hangi tip veri kullanır?
+
+252
+00:36:50,771 --> 00:36:57,372
+Mesela veri tabanını yönetim bilgi sistemi, Transaction Processing Sistemi kullanırken,
+
+253
+00:37:04,851 --> 00:37:18,851
+Daha çok yöneticiler kullanır. Yöneticilerin doğrudan kullanacağı şekilde gerçekleştirilir. Karar destek sistemlerini yöneticiler doğrudan kullanabilir ya da...
+
+254
+00:37:18,992 --> 00:37:32,371
+yardımcı danışmanları kullanabilir gibi kullanım yerleri, kullandıkları araçlar, hedefler, yaptıkları işlemler açısından farklılık var.
+
+255
+00:37:32,371 --> 00:37:43,172
+Şu anda biz bilgi sistemi dediğimiz zaman Transaction Processing Sistem yapısında ne görüyoruz?
+
+256
+00:37:45,695 --> 00:37:59,115
+Günlük hayatımızdaki rutin işleri daha hızlı, daha güvenli, daha hatasız yapabilmek için, tek bir işlemi gerçekleştirebilmek için kullandığımız bilgi sistemleri.
+
+257
+00:37:59,115 --> 00:38:05,755
+En basiti, işte bir bordro örneği verdik, bir muhasebe fişi verdik.
+
+258
+00:38:09,811 --> 00:38:28,411
+Transaction Processing System. Yönetim bilgi sistemi dediğimiz zaman bu Transaction Processing sistemlerin bir arada toplandığı sistemlerden bahsediyoruz. Bunların hepsi birleşerek yönetime daha doğru ve daha akılcı kararlar verdirmeyi sağlıyor.
+
+259
+00:38:30,612 --> 00:38:43,311
+Burada da veri tabanı kullanıyoruz ve burada çıktılarımız, raporlarımız daha çok önceden tanımlanmış sorgulara cevap veriyor.
+
+260
+00:38:43,632 --> 00:39:05,071
+Önceden tanınanmış, yani müşteri tarif ediyor önceden. Ben işte her ay maaş borcularını çıkartmak üzere raporları istiyorum ve bu raporları yönetime göndermek istiyorum. Bu Transaction Processing Sistem.
+
+261
+00:39:05,523 --> 00:39:28,243
+Yönetim bilgi sisteminde yönetici bu raporları her aylık ayrıntı raporlarını değil de çalışanların aldıkları maaşları departmanlara göre bölümlenmesini istiyor.
+
+262
+00:39:33,360 --> 00:40:00,000
+Örneğin, bu maaş raporlarından sadece satış temsilcilerini, çalışanlar içinde sadece satış temsilcilerini ayırt ederek, bu satış temsilcilerinin hangi satışları gerçekleştirdiğini, dolayısıyla bu bordro programından çıkıp satışlar müşterilerini,
+
+263
+00:40:00,000 --> 00:40:11,519
+İsterilerle ilişkilere geçmiş oluyoruz. Hangi satışları yaptıklarını ve bu satışlardan ne kadar şirketin kar sağladığını görmek istiyoruz.
+
+264
+00:40:12,880 --> 00:40:20,320
+Ve buna göre yöneticilere bir kıyaslamalı liste gidiyor. Yöneticiler de karar vermek için bunları kullanıyorlar.
+
+265
+00:40:20,460 --> 00:40:25,960
+Ama önceden böyle bir liste isteyeceklerini belirtiyorlar bilgi sistemi kurulurken.
+
+266
+00:40:28,000 --> 00:40:30,440
+sistemi kapsamında yürüyecek işler.
+
+267
+00:40:31,000 --> 00:40:35,880
+Peki, pardon, burada bir şey açtık.
+
+268
+00:40:43,219 --> 00:40:49,499
+Executive Information System dediğimizde üst yönetim bilgi sistemleri.
+
+269
+00:40:49,499 --> 00:41:01,919
+Bu üst yönetim bilgi sistemlerinde üst yöneticinin başka arada aracıya bir iş vermeden kendisinin bilgisayardan baktığında
+
+270
+00:41:02,400 --> 00:41:20,760
+Anlık bazı sorularına cevap alabilmesi. O zaman bizim bu şeyimizin hazırladığımız bilgi sistemimizin bu duruma göre hazırlanmış daha esnek bir bilgi sistemi olması gerekiyor.
+
+271
+00:41:22,760 --> 00:41:30,139
+Yani daha tanımsız olan sorulara da cevap verecek gibi olması.
+
+272
+00:41:30,400 --> 00:41:47,240
+Bu da tabii ki bilgi sistemimizi hazırlarken altta kullandığımız veri tabanının daha ayrıntılı bir veri ambarı şeklinde, arşiv verisini de tutacak şekilde olmasını gerektirecek bir yapı arz ediyor.
+
+273
+00:41:47,240 --> 00:41:58,360
+Ayrıca daha sonra göreceğiniz veri madenciliği dersindeki daha esnek sorgulamalara cevap verecek tarzda olması bekleniyor.
+
+274
+00:41:58,400 --> 00:42:15,480
+Evet, o zaman bu sistemler arasındaki farklılığa daha sonra geleceğimizi bildireyim.
+
+275
+00:42:15,480 --> 00:42:19,880
+Şimdi şey üzerinde duracağız.
+
+276
+00:42:21,980 --> 00:42:23,860
+Bizim analiz, tasarım.
+
+277
+00:42:24,275 --> 00:42:38,395
+Aşamamız, özellikle bilgi sistemi geliştirme sürecinde hangi işlemleri gerçekleştiriyoruz?
+
+278
+00:42:39,415 --> 00:42:41,536
+Sistem geliştirme.
+
+279
+00:42:43,115 --> 00:42:51,576
+Sistem geliştirme projesi bir planlanmış, bir başlangıcı sonu olan bir proje.
+
+280
+00:42:52,532 --> 00:43:06,472
+Bir bilgi sistemi geliştirmek, önceden tanımlanan sonuçlar ya da ürünler var. Bunu gerçekleştirmek üzere başı ve sonu belli olan bir çalışma süresi bir proje.
+
+281
+00:43:14,003 --> 00:43:39,563
+Üretmek üzere planlı işler gerçekleştirme, yeni sistem geliştirmenin ana aktiviteleri, temel aktiviteleri, analiz, analizi, ihtiyaçlarımızı anlamak, tasarım, sistem mimarisini tanımlamak, implementation, gerçeklemede.
+
+282
+00:43:40,115 --> 00:44:02,895
+Sistemin gerçek halini, yani bilgi sistemi, yazılım sistemini oluşturmak. Bir bilgi sistemi geliştirme projesindeki aktiviteler bunlar. Biz buna sistem geliştirme yaşam döngüsü, Software Development Life Cycle diyoruz.
+
+283
+00:44:06,387 --> 00:44:21,807
+Yeni bir bilgi sistemini geliştirme süreci için kullanılan bir genel terimdir sistem geliştirme yaşam döngüsü.
+
+284
+00:44:21,807 --> 00:44:32,887
+Burada bazı projeler oluşturulur.
+
+285
+00:44:33,427 --> 00:44:43,127
+Hangi yapıda, hangi metotlarla, hangi kontrolla gerçekleştirecek bu yeni bilgi sistemi geliştirme süreci.
+
+286
+00:44:43,127 --> 00:44:55,547
+Şimdi burada aşamalarına bakalım. Proje planlama aşaması, analiz aşaması, tasarım aşaması, gerçekleme aşaması ve destek aşaması.
+
+287
+00:44:56,083 --> 00:45:02,483
+Bu adımlar bilgi sistemi geliştirme süreci adımları.
+
+288
+00:45:03,123 --> 00:45:22,403
+Burada biz bu dersin konuları arasında bu haftaya düşen bilgi sistemi geliştirme sürecini tanımlayacağız dediğimizde waterfall'a göre tanımlayacağız diyoruz.
+
+289
+00:45:22,403 --> 00:45:23,123
+Bu ne demek?
+
+290
+00:45:23,539 --> 00:45:34,160
+Yani bu iş adımlarının proje planlama, analiz, tasarım, gerçekleştirme ve destek aşaması bunların biri bittiğinde diğeri başlayacak.
+
+291
+00:45:34,260 --> 00:45:38,940
+Biri bittiğinde diğeri başlayacak. Şöyle şu şekilden de görebiliriz.
+
+292
+00:45:38,940 --> 00:45:45,660
+Proje planlama, analiz, tasarım, gerçekleştirme ve destek.
+
+293
+00:45:50,996 --> 00:45:57,235
+Görelim, bu adımların her birinde ne yapıyoruz? Şunlar.
+
+294
+00:46:00,436 --> 00:46:14,775
+Yalnız, bu adımların her birini görmeye başlamadan önce bir 10 dakika ara veriyorum. Ondan sonra analiz, proje planlama, tanımlamaya başlayacağım.
+
+295
+00:46:16,820 --> 00:46:18,660
+Hocam iki slide öncesine geçebilir misin?
+
+296
+00:46:19,559 --> 00:46:21,240
+Şu mu? Şu mu?
+
+297
+00:46:22,120 --> 00:46:23,380
+Evet, teşekkür ederim.
+
+298
+00:46:25,620 --> 00:46:26,420
+İlerleyeyim mi?
+
+299
+00:46:27,420 --> 00:46:29,340
+Yok yok hocam, teşekkür ederim burası.
+
+300
+00:46:30,019 --> 00:46:30,940
+Tamam, oldu.
+
+301
+00:46:32,880 --> 00:46:36,160
+O zaman şuraya da yazayım.
+
+302
+00:47:02,708 --> 00:47:05,108
+Evet, 10 dakika ara verdik şimdiden itibaren.
+
+303
+00:58:50,900 --> 00:58:53,239
+Evet, derste devam edebiliriz şimdi tekrar.
+
+304
+00:58:59,347 --> 00:59:15,027
+Software Development Lifecycle veya bunu yazılım geliştirme değil de sistem analizi dersinde bütün bilgi sistemi diye ele alıyoruz.
+
+305
+00:59:16,788 --> 00:59:23,387
+Geliştirme yaşam döngüsü, bilgi sistemi geliştirme yaşam döngüsü diye ifade edebiliriz.
+
+306
+00:59:23,887 --> 00:59:36,788
+Önce proje planlama aşaması, sonra analiz aşaması, sistem analizi aşaması, sonra tasarım, gerçekleştirme ve destek yani hayata geçiriş sistemi.
+
+307
+00:59:40,851 --> 00:59:49,471
+Çarsak şekil üzerinde proje planlama, analiz, tasarım, gerçekleştirme ve destek aşaması.
+
+308
+00:59:50,172 --> 00:59:59,011
+Şimdi ilk aşamamız planlama aşaması. Planlamada ne yapıyoruz? Problemi tanımlıyoruz. Neyin sistemini oluşturacağız?
+
+309
+01:00:00,000 --> 01:00:22,079
+Nedir? Proje fizibilitesini oluşturuyoruz. Proje iş listesini, yani hangi işler yapılacak bu bilgi sistemi geliştirme aşamasında? Projede çalışanlar kimler olacak? Projenin başlangıcı nasıl olacak?
+
+310
+01:00:27,603 --> 01:00:51,603
+Proje planlamadan sonra analiz aşaması. Analiz aşamasında ne yapıyoruz? Sistem analizi adımı. Temel hedef nedir? Bizim yeni sistemimizin bilgi gereksinimi.
+
+311
+01:00:52,947 --> 01:01:00,648
+ve işlem gereksinimin belgelenmesi, anlaşılması.
+
+312
+01:01:02,327 --> 01:01:08,008
+Bu sistemde tamam biz bir bilgi sistemi, mesela hastane bilgi sistemi geliştireceğiz.
+
+313
+01:01:08,508 --> 01:01:10,947
+Yeni sistemimiz hastane bilgi sistemi.
+
+314
+01:01:19,123 --> 01:01:39,523
+Alınıyor hastalardan. Hastalara hangi raporlar veriliyor? Hangi işlemler gerçekleşiyor? Hasta geliyor, randevu alıyor, sonra kayıt oluyor, sonra istediği doktora gidiyor gibi hangi işlemler gerçekleşiyor? Analizin hedefi budur.
+
+315
+01:01:39,824 --> 01:01:53,523
+Bunun için analiz aşamasında neler yapılıyor? Bilgi toplanıyor, işte görüşmeler yapılarak, gözlem yapılarak. Sistem gereksinimleri tanımlanıyor, diagramlarla modelleniyor.
+
+316
+01:02:01,523 --> 01:02:20,563
+Müşterilerden bu alınmaya çalışılıyor ve gereksinimler öncelikleniyor, çözüm ulaştırılıyor analiz aşamasında. Tasarımda ne yapılıyor? Tasarımda amaç çözümün tasarlanması.
+
+317
+01:02:21,023 --> 01:02:42,083
+Yani gerçekleme değil. Yani bizim alanımızı uygularsak programın yazılması değil de programı nasıl yazacağımızın tasarlanması. Burada network nasıl bütünleşeceğini tasarlayalım.
+
+318
+01:02:42,804 --> 01:03:07,124
+Ara birimleri, kullanıcı ara birimlerinin yani ekran yapılarının nasıl olacağını tasarlamak, sistem ara birimlerini tasarlamak, veri tabanı yapısını tasarlamak, tasarım ayrıntıları için bir prototip yapmak ve sistem kontrollerini da bu prototip üzerinde tanımlamak.
+
+319
+01:03:07,124 --> 01:03:08,824
+Tasarım aşamasının hedefi.
+
+320
+01:03:09,231 --> 01:03:10,991
+Ve aktiviteleri bunlar.
+
+321
+01:03:12,672 --> 01:03:15,311
+Gerçekleme aşamasında ne yapıyoruz?
+
+322
+01:03:15,451 --> 01:03:21,251
+Gerçekleme aşamasında bilgi sistemini test ediyoruz ve kuruluşunu yapıyoruz.
+
+323
+01:03:21,411 --> 01:03:23,491
+Yani gerçek bir programı yazıyoruz.
+
+324
+01:03:24,731 --> 01:03:28,291
+Bu programı test ediyoruz doğru çalışıyor mu diye.
+
+325
+01:03:29,012 --> 01:03:45,231
+Ve bunu kuruluşunu yapıyoruz. Burada yazılım komponentlerini yapılandırıyoruz, testleri oluşturuyoruz, prototiplerle uyumluluğunu sağlıyoruz, veri dönüşümünü yapıyoruz.
+
+326
+01:03:53,588 --> 01:04:07,988
+Üzenliyoruz, belgeleri hazırlıyoruz, kullanıcı belgelerini ve kullanıcılara eğitim veriyoruz ve kuruluşunu yapıyoruz sistemin. Bu da implementasyon aşaması. Bir de destek aşaması var.
+
+327
+01:04:10,968 --> 01:04:17,327
+Buraya kadar bu adımlar anlaşıldı mı? Bu adımların üzerinde biraz daha durmamıza gerek var mı?
+
+328
+01:04:24,755 --> 01:04:36,536
+Evet, bilgi sistemi geliştirme yaşam döngüsü içindeki beşinci adımdayız şimdi, destek adımında.
+
+329
+01:04:37,536 --> 01:04:49,355
+Buraya kadar sanki biraz hızlı geçtim gibi bütün adımlarda ne yaptığımız, her bir adımın hedefi ve aktiviteleri anlaşıldı mı?
+
+330
+01:05:03,507 --> 01:05:04,827
+Sorusu olan var mı?
+
+331
+01:05:08,340 --> 01:05:10,120
+[öğrenci]
+
+332
+01:05:10,120 --> 01:05:13,340
+Buyurun hocam.
+
+333
+01:05:15,200 --> 01:05:25,440
+Sana sorayım, analiz aşamasının hedefi ve analiz aşamasında gerçekleştirilen aktiviteler nelerdir?
+
+334
+01:05:30,099 --> 01:05:31,299
+Anlızı yaşamıyorsun.
+
+335
+01:05:32,619 --> 01:05:39,319
+Yani hocam, ben büyük ihtimalle cevap duyamayacağım. Tam aklımda kalmadı yani açıkçası.
+
+336
+01:05:40,659 --> 01:05:41,059
+Tamam.
+
+337
+01:05:43,799 --> 01:05:45,759
+[öğrenci].
+
+338
+01:05:57,268 --> 01:05:58,547
+[öğrenci].
+
+339
+01:06:00,987 --> 01:06:09,947
+Hocam, analiz aşamasında projenin gereksinimlerini saptıyoruz ve bunlarla ilgili planlama yapıyoruz.
+
+340
+01:06:10,987 --> 01:06:14,647
+Tamam. Peki burada yani hedef nedir?
+
+341
+01:06:17,167 --> 01:06:18,587
+Gereksinimler derken?
+
+342
+01:06:19,407 --> 01:06:24,087
+Proje sürecini daha rahat ilerleyebilmesi için baştan gereksinimleri belirlemek gerekiyor.
+
+343
+01:06:24,563 --> 01:06:29,403
+İşte gereksinimler derken neden bahsetmiş oluyoruz burada?
+
+344
+01:06:31,443 --> 01:06:37,163
+Yani projenin hedefleri ve içermesi gereken ögeler gibi.
+
+345
+01:06:38,603 --> 01:06:45,684
+Yani analiz aşamasında bu sistem ne yapıyor? Bu sistemin gerçekleştirdiği iş nedir?
+
+346
+01:06:46,324 --> 01:06:56,923
+Mesela, öğrenci bilgi sistemi dediğimiz zaman, bu öğrenci bilgi sisteminin genel olarak kapsamı nedir?
+
+347
+01:06:56,923 --> 01:07:00,923
+Ve bunun altındaki tek tek bütün işlerin…
+
+348
+01:07:02,387 --> 01:07:18,507
+Yapısı hangi veriyi kullandığı, hangi raporları çıkarılmasını istediği, yani bilgisayar yazılımını, bilgisayar sistemini düşünmeden bir öğrenci sisteminde ne işler oluyor?
+
+349
+01:07:19,367 --> 01:07:23,208
+Öğrenci işlerinde ne yapılıyor? Bunların anlaşılması.
+
+350
+01:07:23,679 --> 01:07:33,599
+Analiz edilmesi, analizde kısıt bu. Bunu anlayalım ki bunun bilgi sistemini doğru oluşturalım. Analizde hedef bu.
+
+351
+01:07:36,079 --> 01:07:37,679
+Evet, teşekkürler.
+
+352
+01:07:44,532 --> 01:07:46,811
+[öğrenci]
+
+353
+01:07:55,188 --> 01:07:56,627
+[öğrenci]
+
+354
+01:07:56,627 --> 01:08:00,147
+Evet hocam, dinliyorum.
+
+355
+01:08:01,688 --> 01:08:03,027
+Tasarımda ne yapıyoruz?
+
+356
+01:08:06,268 --> 01:08:07,567
+Bu analiz kasız mıydın?
+
+357
+01:08:08,027 --> 01:08:09,067
+Tasarımda.
+
+358
+01:08:15,956 --> 01:08:31,015
+Mesela elde etmek istediğiniz ürünler için, yani onların mesela G doğulu mu olacak? Yani doğal mu olacak? Onun gibi şeyler var.
+
+359
+01:08:34,036 --> 01:08:38,056
+Bir yazılım sisteminin modellemesini gerçekleştiriyoruz.
+
+360
+01:08:38,056 --> 01:08:40,695
+Yazılım sistemini gerçeklemiyoruz.
+
+361
+01:08:41,076 --> 01:08:51,896
+Sistem analizinde anladığımız şekliyle acaba bu işlerin yazılımını nasıl hazırlamamız gerekiyor?
+
+362
+01:08:52,836 --> 01:08:55,515
+Bunu anlıyoruz yazılım sisteminde.
+
+363
+01:08:55,956 --> 01:09:00,036
+Evet, şimdi bu aşamaları görmüş olduk.
+
+364
+01:09:00,036 --> 01:09:10,036
+Destek aktivitesi dediğimiz, destek aşaması dediğimiz aşamada da bilgi sisteminin kuruluştan sonra...
+
+365
+01:09:10,292 --> 01:09:38,292
+Çalışan bilgi sistemini çalışır durumda tutmaktır. Yani kullanıcıları yetiştirmek, kullanıcılara yardım programları hazırlamak, hata düzeltme işlemlerini gerçekleştirmek ve bakımını yapmak, upgrade etmek programları, bakım ve sistemin zenginleştirilmesi de bu destek aşamasına girmektir.
+
+366
+01:09:38,292 --> 01:09:43,292
+Evet, o zaman şimdi...
+
+367
+01:09:58,420 --> 01:10:01,059
+Evet, destek aşaması mı anlaşılır?
+
+368
+01:10:04,724 --> 01:10:06,283
+Yoksa bütün aşamalar mı?
+
+369
+01:10:13,555 --> 01:10:17,275
+Aşaması mı yoksa tüm aşamalar mı anlaşılmadı?
+
+370
+01:10:22,804 --> 01:10:26,944
+Hocam, baştan kısaca bir hızlı bir şekilde tekrar edebiliriz sanki.
+
+371
+01:10:27,324 --> 01:10:27,584
+Tamam.
+
+372
+01:10:51,859 --> 01:10:53,420
+Şöyle şu şekilden gidelim.
+
+373
+01:10:54,420 --> 01:11:01,859
+Proje planlama aşaması, ön inceleme, fizibilite analizi, bunları önümüzdeki...
+
+374
+01:11:15,091 --> 01:11:31,891
+Analiz aşamasında esas hedef yeni sistemin gereksinimleri nelerdir, hangi bilgi ihtiyaçları ve işlem gereksinimleri vardır, bunu anlamak ve bunu belgelemek.
+
+375
+01:11:33,652 --> 01:11:42,091
+Bilgi topluyoruz, sistem gereksinimlerini tanımlıyoruz, prototip hazırlıyoruz ve bu bilgileri topluyoruz.
+
+376
+01:11:45,652 --> 01:12:09,912
+Hedef, problemin çözümünün tasarlanması. Yani gerçekleme, program yazma değil. Aralarındaki acaba nasıl bir network gerekecek? Uygulamalar arasında nasıl bir ağ kurulacak?
+
+377
+01:12:16,020 --> 01:12:22,480
+tasarlanması, kullanıcı ara birimlerinin, sistem ara birimlerinin, veri tabanının
+
+378
+01:12:26,323 --> 01:12:29,903
+Sistem için bir prototip hazırlanması.
+
+379
+01:12:31,263 --> 01:12:33,583
+Hedeflenen bu tasarım aşamasında.
+
+380
+01:12:34,423 --> 01:12:37,363
+Gerçekleme, implementation aşaması.
+
+381
+01:12:38,644 --> 01:12:41,563
+Artık bu tasarımda ortaya çıkan yapının
+
+382
+01:12:49,363 --> 01:12:51,503
+Bu sistemin kuruluşunun yapılması.
+
+383
+01:12:55,604 --> 01:13:02,604
+Destek aşamasında da bu bilgi sistemi...
+
+384
+01:13:09,747 --> 01:13:17,827
+Eğitim programları, help mekanizmaları yapılması eğer bir hata çıkarsa
+
+385
+01:13:25,171 --> 01:13:26,851
+Ses kesilmesi mi oldu?
+
+386
+01:13:27,451 --> 01:13:33,211
+Evet, ben o yüzden elini kaldımıştım hocam. Bayağı 5 dakikadır falan bir tek bende sandım ama sanırım herkes de kesiliyor.
+
+387
+01:13:34,251 --> 01:13:34,691
+Evet.
+
+388
+01:13:34,691 --> 01:13:36,492
+Cümle yarısı en azından gidiyor yani.
+
+389
+01:13:37,031 --> 01:13:38,891
+Evet. Bir dakika.
+
+390
+01:14:06,195 --> 01:14:16,796
+Peki bu slide'larla da bilgi sistemi adımlarını anlayabildiniz mi?
+
+391
+01:14:21,235 --> 01:14:27,235
+Bilgi sistemi geliştirme sürecindeki temel adımlar.
+
+392
+01:14:37,684 --> 01:14:44,884
+Şimdi bir örnek vereceğim. Analiz aşamasının ne kadar gerekli olduğu ile ilişkili.
+
+393
+01:14:57,363 --> 01:15:00,543
+Bir örnek üzerinde duracağım.
+
+394
+01:15:01,724 --> 01:15:03,363
+Bir dakika şu anda biraz...
+
+395
+01:15:36,884 --> 01:15:39,603
+Evet, sesi biraz daha iyileştirmeye çalıştım.
+
+396
+01:15:40,744 --> 01:15:41,703
+Şimdi
+
+397
+01:15:53,844 --> 01:16:04,844
+Sistem analizi ve tasarımı kavramlarında sistem analizi bilgi sisteminin ne olduğunu anlaşılıyor.
+
+398
+01:16:05,844 --> 01:16:13,844
+Gerçekleştirilecek bilgi sisteminin bütün parçalarının nasıl hazırlanılacağının,
+
+399
+01:16:15,923 --> 01:16:25,503
+Tasarlanması, sistem tasarımı aşamasında. Bu aşamalar neden önemli? Sistem analizi ve tasarımı neden önemli?
+
+400
+01:16:41,332 --> 01:16:51,811
+Bir sistem geliştirirsek, o zaman sonuçta hazırlanan yazılım da daha hatalı olacaktır.
+
+401
+01:16:52,712 --> 01:16:57,132
+Şimdi bir örnek üzerinden gidelim.
+
+402
+01:16:58,471 --> 01:17:05,032
+Bir müşterinin istediği işi doğru anlatması lazım.
+
+403
+01:17:07,956 --> 01:17:30,136
+Kişiler yapısı var. Müşterinin istediğini doğru açıklaması lazım, kullanıcının. Proje yöneticisinin bir proje doğru anlaması gerekecek.
+
+404
+01:17:30,676 --> 01:17:57,275
+Analistin bu anlatılan işi doğru tasarlaması gerekecek. Programcı da istenilen işi tasarımdaki gibi yazmak, tasarımdaki işleri sağlayacak şekilde programı yazmak durumunda.
+
+405
+01:17:58,452 --> 01:18:06,220
+Eğer bir proje iyi dokümante edilmemişse daha sonra bunun...
+
+406
+01:18:07,572 --> 01:18:35,492
+Değişiklik ve bakım işlemi yapılamaz. O yüzden eğer projede belgeleme yapılmamışsa, yani analiz nasıl yapıldı, tasarım nasıl yapıldı, bu anlatılmamışsa ve kullanıcılara doğru bir yönerge verilmemişse, o zaman burada hiçbir iş yapılmamış varsayılır. Daha sonra üzerinde bakım yapılması da güçleşecektir.
+
+407
+01:18:35,572 --> 01:18:54,032
+Burada müşterinin gerçekte istediği şudur aslında ama o kadar ayrıntılı ilk başta anlatmıştır ki istediğini.
+
+408
+01:18:54,528 --> 01:19:14,827
+Müşterinin istediği tamamen yanlış anlaşılmıştır. Yani müşterinin aslında alacağı hizmet şu şekilde basit bir çocukların sallanacağı bir yapı olmasını istiyor.
+
+409
+01:19:18,579 --> 01:19:45,859
+Müşteri o kadar fazla açıklamalar yapıyor ki istediği işlem yanlış anlaşılıyor ve proje lideri bunu biraz daha derli toplu bir şekilde anlaşsa bile analist analizi ve tasarımı gerçekleştirirken
+
+410
+01:19:46,323 --> 01:20:00,000
+Tamamen hatalı gerçekleştirip tasarlayabilir. Programcı da onun anlattığı şekilden daha hatalı yapabilir.
+
+411
+01:20:00,000 --> 01:20:18,520
+Hiçbiri belgeleme yapmamışsa burada düzeltmeleri de nasıl yapacakları anlaşılmayabilir. Burada müşterinin gerçekte istediği de anlaşılmayabilir.
+
+412
+01:20:19,028 --> 01:20:36,888
+Bunların doğru yapılması için bütün bu ara katmanlarda çalışan kişilerin birbiriyle koordineli iletişim içinde çalışması gerekir.
+
+413
+01:20:45,684 --> 01:21:05,043
+Analiz ve tasarım sırasında ve sistem analizi ve tasarım sırasındaki bütün kademelerde çalışanların birbiriyle iletişimli olarak özellikle müşteriyle de iletişimli olarak çalışması gerekecek.
+
+414
+01:21:07,043 --> 01:21:09,283
+Bu anlaşıldı mı?
+
+415
+01:21:18,260 --> 01:21:19,720
+Burada sorunuz var mı?
+
+416
+01:21:30,068 --> 01:21:52,088
+Evet, o zaman şimdi gündeme şey geliyor. Bilgi sistemi tarafları dediğimizde bunlar kimlerdir? Bilgi sistemi tarafları, bilgi sistemi geliştirmesi sırasında çalışan kişiler kimlerdir?
+
+417
+01:21:57,716 --> 01:22:18,996
+Sistem Analizi, bunlar aynı küçük projelerse aynı kişiler olabilir ama eğer büyük projeler ve büyük bir kurumsal bir şirketse o zaman burada daha fazla kişi çalışacaktır.
+
+418
+01:22:19,572 --> 01:22:25,832
+Yani bütün görevlere tanımlı çalışanlar olacaktır.
+
+419
+01:22:31,412 --> 01:22:47,432
+Burada sistem analistinin öncelikle görevleri üzerinde duracağız. Sistem analistinin hangi yeteneklerinin olması gerekir?
+
+420
+01:22:58,420 --> 01:23:03,159
+En önemli grup müşteriler.
+
+421
+01:23:24,787 --> 01:23:39,787
+Parasal karşılığı sağlayacak olan grup. Mesela bir yazılım firması, bu yazılım firması bankaya yazılım hazırlıyorsa, banka yazılım firmasının müşteri tarafıdır.
+
+422
+01:23:40,847 --> 01:23:50,787
+Bir de kullanıcılar var. Kullanıcılar da bu bankada çalışan ve bu bilgisayar yazılımını kullanacak olan kişiler.
+
+423
+01:23:51,823 --> 01:24:13,703
+İşte banka memurları veya bankanın müşterileri. Bunlar da kullanıcılar olacak. Müşteriler ve kullanıcılar bazen aynı kişiler, aynı gruplar olabilir. Yine başka bir örnek verelim.
+
+424
+01:24:14,079 --> 01:24:29,239
+Bir kurumun mesela bir iletişim şirketi Vodafone, Türksel. Bu kurumda bir kurumsal firma, bir de yazılım geliştirme birimi var.
+
+425
+01:24:31,039 --> 01:24:39,979
+Tabii ki yazılım geliştirme biriminden başka muhasebe birimi var, insan kaynakları birimi var gibi farklı departmanlar var şirkette.
+
+426
+01:24:40,595 --> 01:24:52,395
+Bu şirketteki departmanlardan yazılım birimi hangisine yazılım geliştiriyorsa, mesela muhasebe birimine geliştiriyor.
+
+427
+01:24:52,995 --> 01:25:03,555
+Muhasebe biriminin yöneticisi bu yazılım projesi ekibinin müşterisi.
+
+428
+01:25:04,404 --> 01:25:24,084
+Ve aynı zamanda sponsoru. Bu iş vermiş oluyor, bu birim iş vermiş oluyor. Bu birimde, işte muhasebe birimindeki hangi program yazılıyorsa o programı kullanacak olan çalışanlar da bu yazılımın kullanıcısı.
+
+429
+01:25:26,804 --> 01:25:50,564
+Bir kullanıcı ve müşteri var bilgi sistemi tarafları içinde. Sistem analisti var, proje yöneticisi var. Bazen proje yöneticisi aynı zamanda sistem analisti de olabilir küçük uygulamalar için. Yazılım geliştiriciler var, teknik çalışanlar.
+
+430
+01:25:51,028 --> 01:26:15,268
+Bir de kullanıcılardan seçilmiş olan veya kullanıcıyı sembolize edecek gruplardan seçilmiş olan testerler var. Bu kullanımcı açısından yapılan testleri, kullanıcı testlerini gerçekleştiren testerler. Bunlar da olabilirler.
+
+431
+01:26:17,296 --> 01:26:36,016
+Burada, şimdi biz en fazla ağırlıklı bu dersin kapsamıyla ağırlıklı olan sistem analistlerinin ve burada şeyi de düşünüyoruz, sistem analisti küçük bir kurumda, proje yöneticiliği de yapıyor.
+
+432
+01:26:37,695 --> 01:26:42,876
+Sistem analistinin gerekli yetenekleri üzerinde duracağız.
+
+433
+01:26:43,347 --> 01:27:03,728
+Bir defa genel olarak bilgisayarlar konusunda, programlama dilleri konusunda, bilgisayarlarla etkileşim konusunda, networkler konusunda, veri tabanı konusunda, işletim sistemleri konusunda bilgi ve deneyim sahibi olmalılar.
+
+434
+01:27:04,207 --> 01:27:10,667
+Burada kullanılacak tool'lar konusunda da bilgi sahibi olmaları gerekir.
+
+435
+01:27:11,699 --> 01:27:32,020
+Başka, şimdi bu sistem analistleri aynı zamanda genellikle işletmecilik alanında çalışıldığına göre işletmecilik bilgi ve deneyime sahibi olmalı.
+
+436
+01:27:32,532 --> 01:27:56,292
+Bu neye yarar? İşte muhasebeyle ilgili bir uygulama anlatıldığında biraz işletmecilik biliyorsa burada müşterilerin anlattığını daha kolay anlayabilir. En azından böyle bir eğitimi yoksa bile başlayacağı işle ilişkili terim çalışması yapması gerekir. Aynı dili konuşabilmeleri için.
+
+437
+01:27:57,011 --> 01:28:22,851
+Organizasyonlarda yapılandırma nasıldır? Organizasyonlar nasıl yönetilir? Hangi iş tipleri gerçekleştirilir? Ve hangi aktörler, hangi aktiviteleri gerçekleştirirler? Bu da işletmecilik alanında bilgi ve deneyim sahibi olmalarını gerektirir.
+
+438
+01:28:25,268 --> 01:28:45,228
+Burada sistem analizi bir kurumda belirli bir organizasyon ne yapar, başarılı olması için ne gerekir, stratejileri, planları nelerdir kurumun.
+
+439
+01:28:45,536 --> 01:29:04,815
+Ve işte bir şirket kültürü diye bir şey var. Biraz o konuda da bilgi sahibi olması için hangi kuruma bilgi sistemi geliştirecekse özellikle bu konuda bilgi sahibi olmaya çalışması gerekir.
+
+440
+01:29:14,868 --> 01:29:29,268
+Sistem analistinin en önemli, daha doğrusu, şimdi bu üçüncü şey oluyor, yetenek oluyor.
+
+441
+01:29:43,091 --> 01:29:57,551
+İnsan ilişkileri, bilgi ve deneyimi, insanların düşünce şekli, nasıl kolay öğreneceği, nasıl daha kolay dinleneceği gibi iletişim.
+
+442
+01:30:00,000 --> 01:30:09,600
+İlişkisi gerekli ve bir ekip çalışması içinde de bulunduğu için, yani proje yöneticisi tarafını da düşünürsek,
+
+443
+01:30:11,475 --> 01:30:26,376
+Ekip yönetimi, değişime karşı reaksiyonlar, müşteri tarafını düşünürsek, iletişim kurma, yönetimle iletişim kurma bunlar konusunda bilgi ve deneyim sahibi olmalıdır.
+
+444
+01:30:33,684 --> 01:30:49,604
+Görüşmeler yapma, dinleme, gözlem yapma konusunda yetenek sahibi olması gerekir. Yazılı ve sözlü sunum yapabilmeli ve ekip çalışmasına da uygun olabilmeli.
+
+445
+01:30:54,707 --> 01:31:07,907
+Başka bir kavramı daha var, sistem analistinin olması gereken olayları problem çözme yaklaşımı.
+
+446
+01:31:09,747 --> 01:31:25,087
+Analitik düşünce yeteneği, problemler üzerinde analitik düşünce yeteneği. Bu da yine sistem analistinde olması gereken yeteneklerden bir tanesi.
+
+447
+01:31:48,020 --> 01:31:57,340
+Burada bakalım, problem çözmeye analistin yaklaşımı nasıl olmalı?
+
+448
+01:31:59,420 --> 01:32:06,720
+Öncelikle problemi anlaması ve araştırması gerekiyor.
+
+449
+01:32:07,860 --> 01:32:13,920
+Bunun için analitik düşünceye ihtiyacı var, problemi daha kolay anlama.
+
+450
+01:32:14,771 --> 01:32:25,251
+Ve problemin çözümüyle nasıl bir fayda sağlanacak bunu kanıtlaması gerekiyor.
+
+451
+01:32:26,131 --> 01:32:34,251
+Mümkün çözümler nelerdir, alternatif çözümler nelerdir bunları ortaya çıkarabilmesi gerekiyor.
+
+452
+01:32:36,391 --> 01:32:42,131
+Çözüm en iyi çözüm hangisidir?
+
+453
+01:32:42,576 --> 01:32:46,215
+Buna karar verebilmesi gerekir.
+
+454
+01:32:48,415 --> 01:33:01,895
+Ve seçilen çözüm hangisiyse, en iyi çözüm hangisiyse, bunun ayrıntılarını vererek tasarlaması gerekiyor.
+
+455
+01:33:02,495 --> 01:33:05,015
+Çözümün programını yazması gerekiyor.
+
+456
+01:33:06,880 --> 01:33:18,600
+İstenen sonuçları elde ettik mi? Yani bu nedir? Test. İstediğimiz sonuçlar elde edildi mi? Bunun da test edilmesi gerekiyor.
+
+457
+01:33:34,528 --> 01:33:47,388
+Yetenekleri ve deneyimleri hangi konuda olmalı? Bir defa analitik düşünce problemi çözmek için analitik düşünce silsilesi.
+
+458
+01:33:56,340 --> 01:33:59,920
+Teknik bilgi ve yetenekler
+
+459
+01:34:01,779 --> 01:34:12,479
+Sistem analizinin doğru çözümler üretebilmesi için hangi programlama dilini seçeceğiz diye düşündüğünde bu konuda bilgi sahibi olması gerekiyor.
+
+460
+01:34:13,159 --> 01:34:16,159
+Network konusunda bilgi sahibi olması gerekiyor.
+
+461
+01:34:16,299 --> 01:34:26,319
+Tabii ki günümüzde bunlar network, programlama dilleri, veritabanı yönetimi hepsi.
+
+462
+01:34:26,804 --> 01:34:48,144
+Donanım seçimi hepsi bir kişi çok genel bilecektir ama burada da bir sistem analisti grubu içinde bütün bu uzmanlardan destek alarak doğru kararı bunların bilgisiyle verdirebilmekte yatıyor.
+
+463
+01:34:48,756 --> 01:34:57,316
+Bu uzmanların toplu bilgisini kullanıp seçim yaptırabilecek şekilde.
+
+464
+01:34:58,163 --> 01:35:21,743
+İşletmecilik bilgi ve deneyimin olması gerekiyor. Özellikle işletmecilik ortamında yazılım bilgi sistemleri geliştiriliyorsa o zaman organizasyon yapısı, organizasyon yönetimi, aktiviteler konusunda bilgi sahibi olması gerekiyor.
+
+465
+01:35:21,743 --> 01:35:25,203
+Yani işletmecilik bilgisinin olması gerekiyor.
+
+466
+01:35:26,163 --> 01:35:39,243
+Her zaman tabii ki mühendislik alanında yazılımlar da yazılabilir veya işletmecilik alanında kullanılacak diye bir koşul yok.
+
+467
+01:35:39,363 --> 01:35:48,343
+O zaman alan konusunda biraz bilgi ve deneyim sahibi olması gerekir ya da tecrübe sahibi olması gerekir.
+
+468
+01:35:48,723 --> 01:35:51,863
+O konuda başka yazılımlar yapmış olarak.
+
+469
+01:35:56,275 --> 01:36:03,055
+İnsan bilgi ve yetenekleri konusunda bilgi sahibi olması gerekiyor.
+
+470
+01:36:04,895 --> 01:36:15,595
+Nasıl düşünür, nasıl öğrenir, nasıl iletişim kurulur, görüşme nasıl yapılır, gözlem nasıl yapılır?
+
+471
+01:36:16,635 --> 01:36:23,795
+Bunlar da yine sistem analistinin doğrudan sahip olması gereken.
+
+472
+01:36:24,176 --> 01:36:37,996
+Bu yetenekler. Çünkü siz kendiniz sadece gözlem yaparak değil, insanlarla konuşarak, sorular sorarak, doğru soruyu sormak, doğru cevabı kavramak gibi
+
+473
+01:36:40,047 --> 01:36:59,307
+Yeteneklerin olması gerekecek ya da bazen anket yapmak gerekebilir doğru değerlendirme yapabilmek için. Bütün bunlar bir sistem analistinin sahip olması gereken bilgi ve deneyimdir.
+
+474
+01:37:06,420 --> 01:37:31,199
+işletme sistem analisti, uç kullanıcı analisti gibi sistem mimarı, software engineer gibi bunlar değişik şekillerde firmalarda iş teklifi olarak çıkabilir.
+
+475
+01:37:31,923 --> 01:37:40,324
+Burada bir örnek üzerinde de durmak istiyordum ama onu önümüzdeki hafta yapacağım.
+
+476
+01:37:41,203 --> 01:37:45,844
+Şimdi dersle ilişkili sorunuz var mı?
+
+477
+01:37:50,963 --> 01:37:57,804
+Hocam, ders bittiyse ben aynen soru sorabilirim. Konularla alakalı değil de ders ve proje hakkında.
+
+478
+01:37:57,804 --> 01:37:58,503
+Evet.
+
+479
+01:37:59,384 --> 01:38:01,804
+Biz bir konu seçtik, bu aşamada...
+
+480
+01:38:02,224 --> 01:38:12,024
+Yani size konuyu sorup başlayalım mı falan diye. Çünkü şey var, bizim bu dönem 4-5 tane dersimiz proje verdi. Başlamak istiyoruz falan. Ne tavsiye edersiniz?
+
+481
+01:38:12,024 --> 01:38:26,024
+Şöyle, şimdi 6 kişi olacak demiştim proje gruplarınız. Öncelikle siz geçen hafta bir...
+
+482
+01:38:27,283 --> 01:38:38,463
+Grup iletişim adresi bu sınıfta yazmış mıydınız? Hani birbirinizle iletişim kurmanız için şimdi yüz yüze derste değiliz ya.
+
+483
+01:38:38,663 --> 01:38:43,583
+Evet hocam, insanlar grup oluşturuyorlar ben gördüm işte boşta grup var mı falan diye.
+
+484
+01:38:53,876 --> 01:38:58,735
+Bana vereceğiniz teklif de ne olacak?
+
+485
+01:38:59,895 --> 01:39:04,576
+Önce grup üyeleri, sonra grubunuzun konusu nedir?
+
+486
+01:39:06,175 --> 01:39:10,015
+Ve bu konu içinde hangi alt başlıklar var?
+
+487
+01:39:12,020 --> 01:39:15,180
+Bizim bu hazır mesela hocam. Size mail mi atalım?
+
+488
+01:39:16,140 --> 01:39:36,460
+Mail atın. Mail atın. Şeyi de vereyim ben yalnız. Bazen kalipsiz etyıldız edüter dolabiliyor. Proje teklifleri de var çünkü. Şey olabilir. O kalipsiz. Chatten yazayım.
+
+489
+01:39:36,460 --> 01:39:38,260
+Yazarsanız daha kalıyor olur yani. Sağ olun hocam.
+
+490
+01:39:45,043 --> 01:39:46,644
+Hocam ben de bir şey sorabilir miyim?
+
+491
+01:39:47,064 --> 01:39:47,324
+Evet.
+
+492
+01:39:49,604 --> 01:40:07,264
+Size ileteceğiniz teknik ne kadar detaylı olduğu? Mesela burada bahsetmediğiniz herhalde bazı konular var, diagramlar vs. Hani o değerlendirmek istediğiniz, yapmak istediğiniz projenin ne kadar detayına inmemiz gerekiyor? Sadece genel başlıkları iletsek yeterli olur mu? Yoksa farklı bir şey mi istiyorsunuz?
+
+493
+01:40:12,532 --> 01:40:27,671
+Mesela diyelim ki, çok klişe bir şey söyleyeyim, otel bilgi sistemi. Konunuz bu. Konunuzu yazıyorsunuz.
+
+494
+01:40:28,115 --> 01:40:43,115
+O konunun hedefi nedir? Oteldeki tüm işlemler mi yoksa otelde sadece ön büro işlemlerinin yapılması mı? Altında da...
+
+495
+01:40:43,252 --> 01:41:04,271
+hedefi yazdıktan sonra bu işi yapabilmek için işte beş tane modül var. Bu modülleri yazmanız gerekiyor. Bu modüllerin her birisi için de bir cümlelik, açıklama vermeniz yeterli.
+
+496
+01:41:07,764 --> 01:41:09,064
+Tamamdır, teşekkür ederim.
+
+497
+01:41:09,104 --> 01:41:09,284
+Tamam.
+
+498
+01:41:11,284 --> 01:41:19,764
+Başka? Yalnız konularınızı biraz daha şey seçin, daha orijinal konular seçin. Hani her sene...
+
+499
+01:41:20,275 --> 01:41:22,155
+Yapılan şeyler olmasın.
+
+500
+01:41:22,256 --> 01:41:26,936
+Şey var mı hocam, pardon bu konuya hemen gelmişken, bir database içermek zorunda mı?
+
+501
+01:41:27,115 --> 01:41:30,056
+Yani böyle bu konu olmaz diyeceğiniz bir şey var mı?
+
+502
+01:41:30,235 --> 01:41:33,076
+Yani bir database içersin aslında.
+
+503
+01:41:33,396 --> 01:41:43,195
+Ben mesela şimdi size söylesem, çok basit özetleyerek bir oylama, bir işte şey yapıp, teklif yapıp onu oylama gibi bir mantıkla bir şey yapsak mesela.
+
+504
+01:41:43,735 --> 01:41:46,216
+Genel olarak herhalde bu dersin dahilinde olur değil mi?
+
+505
+01:41:46,579 --> 01:41:52,000
+Bir database olacak, verilen oylar, sonuçlar falan filan. Onun ayrıntısını zaten yazarım size de.
+
+506
+01:41:52,351 --> 01:41:56,032
+Ama yani onun içinde bir takım işlemler filan da olmalı.
+
+507
+01:41:56,231 --> 01:41:57,032
+Bayağı da var.
+
+508
+01:41:58,311 --> 01:42:05,912
+Özel seçim metodu falan bulduk onunla ilgili. Ben tamam mailde size yazarım. Olmadı, kullanamazsınız derseniz değiştiririz.
+
+509
+01:42:05,931 --> 01:42:09,792
+Yani onu genişletmek için biraz daha şey vereceğiz.
+
+510
+01:42:10,011 --> 01:42:14,572
+Biz çok geniş olmasın diye şey yaptık çünkü zaman yetişmez falan.
+
+511
+01:42:14,572 --> 01:42:17,931
+Evet ama sonuçta 6 kişisiniz.
+
+512
+01:42:18,072 --> 01:42:18,292
+Tamam.
+
+513
+01:42:20,351 --> 01:42:22,971
+şeyinizi yapacaksınız programınıza.
+
+514
+01:42:24,979 --> 01:42:48,479
+Yani bunu bana yazmayacaksınız şimdi. Belki daha sonraki toplantılarınızda ancak ortaya çıkar. Ama daha sonra da yapmanız gereken şey, işte proje yönetimi işleri, proje planlama işlemleri, fizibilite, Gant diagramı falan onların yapımında şu kişi çalışacak, analizde bu çalışacak, tasarımda bu çalışacak diye.
+
+515
+01:42:48,479 --> 01:42:49,779
+İş dağılımı yapacağız yani.
+
+516
+01:42:49,960 --> 01:42:50,779
+Evet, evet.
+
+517
+01:42:51,199 --> 01:42:52,019
+Tamam, sağ olun hocam.
+
+518
+01:42:52,979 --> 01:43:15,399
+Anlatırken de, hani onu hep vurguluyorum, anlatırken de hepinizin olması gerekiyor sunumda ve bu sunum sırasında da hem herkes olacak hem de herkes yaptığı işi ya da genel olarak projeyle ilgili bilmeniz gerekenleri cevaplayacak nitelikte olacak.
+
+519
+01:43:16,460 --> 01:43:19,199
+Yani herkes aynı notu almayacak aynı projede.
+
+520
+01:43:22,355 --> 01:43:25,056
+Anladım hocam, hatırladım söylemiştiniz. Tamamdır, sağ olun.
+
+521
+01:43:25,216 --> 01:43:28,036
+Evet, tamam. Teşekkürler. Başka sorunuz var mı?
+
+522
+01:43:29,296 --> 01:43:31,836
+Hocam, slide'ları paylaşacak mısınız acaba?
+
+523
+01:43:32,355 --> 01:43:40,015
+Slide'ları biraz daha şey yaparak, bazılarını küçülterek, bazılarını büyülterek paylaşacağım.
+
+524
+01:43:40,796 --> 01:43:41,836
+Tamam, teşekkür ediyorum.
+
+525
+01:43:44,056 --> 01:43:48,475
+Hocam, gruplar 6 kişi olmak zorunda mı? 4-5 kişi de olabiliyor mu?
+
+526
+01:43:49,140 --> 01:44:05,659
+Yani beş kişi olabilir de dört kişiye düşmeseniz iyi olur. Hani her yapılan işi paylaşacak şekilde beş kişi olsa daha iyi olur. Ama hiçbir araya gelemiyorsanız bakarız artık.
+
+527
+01:44:09,716 --> 01:44:11,456
+Başka sorunuz var mı?
+
+528
+01:44:18,804 --> 01:44:26,844
+Bu dersle ilişkili kaynakları da önümüzdeki hafta vereceğim.
+
+529
+01:44:28,904 --> 01:44:31,984
+Yani slide'lar dışında kullanacağınız kaynakları.
+
+530
+01:44:35,044 --> 01:44:37,444
+Evet, şimdilik bu kadar.
+
+531
+01:44:40,204 --> 01:44:41,564
+Önümüzdeki hafta.
+
+532
+01:44:42,195 --> 01:44:53,535
+Hem biraz daha bu bilgi sistem tarafları üzerinde duracağız ve ön inceleme ve fizibilite aşaması üzerinde de devam edeceğiz.
+
+533
+01:44:58,163 --> 01:45:03,223
+Evet, o zaman dersi bitirebiliriz. Başka sorunuz var mı?
+
+534
+01:45:25,747 --> 01:45:27,207
+Teşekkürler hocam, iyi günler.
+
+535
+01:45:27,387 --> 01:45:28,027
+İyi günler.
+
+536
+01:45:29,227 --> 01:45:30,487
+İyi günler hocam.
+
+537
+01:45:30,927 --> 01:45:31,667
+İyi günler.

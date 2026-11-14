@@ -1,0 +1,2247 @@
+1
+00:00:29,588 --> 00:00:33,987
+Merhaba arkadaşlar, birazcık kalabalık olsun diye bekledim. Sanırım
+
+2
+00:00:33,987 --> 00:00:39,588
+Bağlanan sayısı arttığına göre şu anda başlayabiliriz.
+
+3
+00:00:40,915 --> 00:00:45,855
+Şimdi, geçen hafta hatırlarsanız dinamik programlamadan bahsetmiştik.
+
+4
+00:00:45,855 --> 00:00:56,435
+Ve demiştik ki aslında dinamik programlamada bizim yaptığımız şey, yine şeyde olduğu gibi, böyle yönet algoritmalarda olduğu gibi,
+
+5
+00:00:57,375 --> 00:01:08,396
+bir problemi çözmek için bir problemin alt problemini belirleyebiliyorsak ve bunu tekrar ederek çözebiliyorsak aslında
+
+6
+00:01:08,915 --> 00:01:20,915
+ana çözüme ulaşabiliriz. Yani küçük bir parçasının çözümünü tekrar ederek ana problemi çözebiliriz.
+
+7
+00:01:20,915 --> 00:01:36,140
+Şimdi bunun rekürsif programlama mantığından farkı, elde ettiğimiz sonuçları bir yerde saklayıp, daha sonra bu sonuçları kullanarak devam etmek.
+
+8
+00:01:36,308 --> 00:01:42,528
+Örnek olarak da şeyi yapmıştık geçen hafta, MAPSEC problemini yapmıştık.
+
+9
+00:01:43,168 --> 00:02:01,488
+İşte bir hırsız var, hırsız evdeki eşyalardan olabildiğince değeri yüksek olan ama sırtındaki sırt çantasını taşıyabileceği kadar miktarda bilgiyi almak istiyor, eşyayı almak istiyor.
+
+10
+00:02:01,488 --> 00:02:04,068
+Şimdi bunu nasıl yapabilir normalde?
+
+11
+00:02:04,308 --> 00:02:26,228
+post yaklaşımına. Ekran paylaşımı yok mu? Paylaştım. Belki hiç kimse de mi yok? İyi ki uyardın. Yok hocam, şu anda gözükmüyor. Tamam, peki. Teşekkür ederim uyardığınız için. Paylaştım aslında ama oradan oraya geçerken kayboldu galiba. Bir dakika. Şu anda görüyor musunuz?
+
+12
+00:02:26,611 --> 00:02:27,812
+Evet hocam geldi şimdi.
+
+13
+00:02:28,111 --> 00:02:29,211
+Tamam, teşekkürler.
+
+14
+00:02:31,012 --> 00:02:38,491
+Şeyden bahsetmiştik, işte Nemsek'te sırt çantasına eşyaları yükleyecek ama sırt çantası belli bir ağırlıkta eşya alabiliyor.
+
+15
+00:02:38,591 --> 00:02:43,231
+O yüzden en pahalılardan optimum bir çözüm yapması gerekiyor.
+
+16
+00:02:43,951 --> 00:02:51,031
+Bunun için de şeyi konuşmuştuk, yani ya bütün olasılıkları deneyecek, o zaman eksponansiyel bir durum söz konusu,
+
+17
+00:02:51,031 --> 00:02:54,591
+brute force yaklaşırsak, işte birinci eşyaya aldım.
+
+18
+00:02:54,611 --> 00:03:03,651
+Birinciyle birlikte ikinciyi alıp, üçüncüyü alamıyorsam, dördüncüyü alsam, ikiyle üçü alsam falan, bütün olasılıkları denemeniz gerekecek.
+
+19
+00:03:03,651 --> 00:03:14,412
+Onun yerine, eğer biz bunu önceki bilgilerimizi tutup onlardan faydalanarak yapabilirsek, problemi böyle çözebilirsek,
+
+20
+00:03:14,867 --> 00:03:31,747
+o zaman eksponansiyel olmadan çözüme ulaşabiliriz demiştik ve gerçekten de NEPSEC'de bu şekilde bütün olasılıkları, yani örneğin 3. item'a kadar burada, 1, 2 ve 3 için,
+
+21
+00:03:32,243 --> 00:03:59,604
+her kilo için, 3 item varken, 1 kilo için kazancım nedir, 2 kilo için kazancım nedir, 3 kilo için, yani toplam sırt cantasındaki yük miktarı toplam 3 kiloyken kazancım nedir gibi, aslında bu şekilde bir tabloyu doldurarak bütün olasılıkları görebiliyorum ve burada en son adım, 4. item, 4 kilo maksimum taşıyabileceğim kilo.
+
+22
+00:04:00,243 --> 00:04:04,243
+Bu konuda bana maksimum kazancımın ne olacağını veriyor.
+
+23
+00:04:04,243 --> 00:04:07,243
+Dinamik programlama da yaptığımız şey bu.
+
+24
+00:04:07,243 --> 00:04:11,243
+Yani ana problemi çözülebilir alt problemlere bölüyoruz.
+
+25
+00:04:11,243 --> 00:04:17,244
+Ondan sonra bu problemleri sonuçlarını saklayıp kullanarak...
+
+26
+00:04:18,387 --> 00:04:45,687
+şey hale getiriyoruz. Çözülebilir bir bütün haline getiriyoruz. Burada da o zaman ana problemi alt problemlere bölmek aslında bizim Rikörjinde de yaptığımız iş buydu. Fakat orada biz sonuçları yani çağırdığımız esnada oluşan sonuçları tutuyorduk ama işte bir yerde belirliğim bir şekilde tutup kullanmak gibi bir özelliğimiz yoktu.
+
+27
+00:04:46,387 --> 00:05:04,387
+Şimdi bunu yapıyoruz. Bir matris örneğin burada nefsek problemini çözerken bir matriste sonuçlarımızı tutuyoruz ve mutlaka bir rekürans bağıntısı ile problemimizi çözüyoruz. Rekürans bağıntısı farklı durumlar için işte ne bileyim...
+
+28
+00:05:04,884 --> 00:05:32,404
+item yokken, ağırlık sıfırken, işte yani initial durumda ne olmalı, işte eklediğim item taşınabilecek ağırlığı geçiyorsa ne olmalı gibi farklı durumlar için geneli gösteren bir rekürans bağlantısı hazırlayıp bu rekürans bağlantısıyla alt problemleri çözerek ana sonuca ulaşıyoruz. Yaktığımız şey buydu. Şimdi bakın buna devam edeceğiz.
+
+29
+00:05:32,884 --> 00:05:57,684
+programlamayla ilgili kullanım örneklerini anlatmaya devam edeceğim. Şimdi örneklerden birisi, güzel dinamik programlamanın iyi örneklerinden birisi edit distance problemi. Edit distance dediğim şey, şimdi
+
+30
+00:05:58,740 --> 00:06:05,500
+Bu mesela şeylerin kullandığı spellchecking de kullanılan bir şey.
+
+31
+00:06:05,960 --> 00:06:12,080
+Mesela siz elma yazacağınız yerde el mi yazıyorsunuz?
+
+32
+00:06:12,560 --> 00:06:15,580
+O size soruyor, elma mı demek istedim diye?
+
+33
+00:06:16,960 --> 00:06:20,980
+Veya işte şey mi demek istedim diye?
+
+34
+00:06:21,640 --> 00:06:23,920
+Ne bileyim, elim mi demek istedim?
+
+35
+00:06:24,307 --> 00:06:42,927
+diye size bir takım şeyler öneriyor. Olabilecek kelimeler öneriyor. Çünkü aslında bu kelime sözlükte yok. Sözlükte olan ve sizin yanlış yazdığınızı düşündüğü için doğru olabilecek kelimeler öneriyor.
+
+36
+00:06:42,927 --> 00:06:51,648
+Mesela siper çekerler şu anda bütün Word prosesörlerde, işte çeşitli WhatsApp vesaire şeylerde yazı yazdığınız ortamlarda.
+
+37
+00:06:52,307 --> 00:07:00,487
+Google Search'ta vesaire pek çok yerde bu tür şeylerle sizin yazdığınız şeyi düzeltmeye çalışıyor.
+
+38
+00:07:00,487 --> 00:07:10,168
+Biyoinformatik'te şeylerde o DNA skonslarında birebir aynı iki sekvensi olmayabilir.
+
+39
+00:07:10,268 --> 00:07:13,947
+Aralarda kopukluklar veya dönüşümler olmuş olabilir.
+
+40
+00:07:14,108 --> 00:07:15,487
+Ama size...
+
+41
+00:07:16,403 --> 00:07:22,284
+ve büyük sekanslar bunları gözle, değerlendirip aynılıklarını anlamak mümkün değil.
+
+42
+00:07:23,084 --> 00:07:35,384
+Sizinize bu DNA dizilimlerinin en çok benzeyen, mesela sorgulanan bir DNA dizilimlerin birebir aynısı olmayan ama en çok benzeyeni önerebiliyor.
+
+43
+00:07:44,403 --> 00:07:48,764
+Search konusunu çok işlemiştik veri yapılır ve algoritmalar dersinde.
+
+44
+00:07:49,304 --> 00:07:58,528
+Orada yaptığımız şey zaten doğru olan bir kelimeyi veya bir yazı parçasını bir başka...
+
+45
+00:07:58,528 --> 00:08:21,308
+yazı parçasının içerisinde aramaktı. Yani, o da bir stringin match etmesi söz konusuydu. Ama gerçek dünyada tam birebir match etmeyen bilgileri de aslında şey yapabilmemiz gerekiyor, kullanabilmemiz gerekiyor. Dediğim gibi Google'da siz search yaparken yanlış da yazsanız, o size diyor ki, işte sen bilmem neyi sordun ama, pardon.
+
+46
+00:08:22,932 --> 00:08:28,672
+Mesela İngilizce olduğu için yazarken mesela algoritma yazacaksınız.
+
+47
+00:08:29,352 --> 00:08:39,112
+Şöyle bir şey yazıyorsunuz. O diyor ki, ben bunu değil de sana diyor, şu kelime için search'leri getirdim diyor.
+
+48
+00:08:39,572 --> 00:08:43,572
+Arada bir H'yi unuttuğunuzu anlıyor mesela.
+
+49
+00:08:45,172 --> 00:08:49,251
+Veya işte ne bileyim, şöyle yazarsanız da.
+
+50
+00:08:51,988 --> 00:09:02,827
+O zaman da diyor ki herhalde yani A fazla hey de unutmuşsun ondan sonra herhalde bunu demek istedim diyor.
+
+51
+00:09:03,908 --> 00:09:07,988
+Dolayısıyla edit business bu gibi şeylerde...
+
+52
+00:09:08,788 --> 00:09:13,587
+Tamamen aynı olmayan iki şeyin kelimenin benzerliğini bulma.
+
+53
+00:09:13,967 --> 00:09:23,827
+Yani mesela kelime bir Dijkstra'daki doğru kelime, biri de bizim yazdığımız yanlış kelime veya biri düzgün DNA dizilimi,
+
+54
+00:09:23,987 --> 00:09:32,548
+diğeri de sorgulanan, benzeri bulunmaya çalışan DNA dizilimi gibi veya işte ses tanımada aynı şekilde kelime anlamı,
+
+55
+00:09:36,788 --> 00:09:52,947
+Belki doğru telaffuz edilmediği için, belki tanıma sistemi tam yakalayamadığı için yakalayamasa da en benzer olası kelimeyi size göstermek için kullanılan yöntemlerden birisi edit distance yöntemi.
+
+56
+00:09:52,947 --> 00:10:00,000
+Edit distance'ın yaptığı şey, soluklanan iki kelimenin birbirine.
+
+57
+00:10:00,083 --> 00:10:11,243
+birbirine benzerliğini ölçmek. Şimdi ben size bugün Levenstein kaybolmasını anlatacağım. Bunun üzerinden.
+
+58
+00:10:12,179 --> 00:10:31,459
+Şimdi bizim yapmaya çalıştığımız şey aslında edit distance dediğiniz zaman iki kelimeyi karşılaştırdığınızda, yani karşılaştırdığınız kelimeye bağlı olarak mesafede farklı olacaktır. Mesela şöyle düşünelim.
+
+59
+00:10:36,148 --> 00:10:48,768
+Mesela Snowy kelimesiyle, Path of Distance diyelim, Snowy kelimesiyle, Sunny kelimesini karşılaştırdığımızı düşünelim.
+
+60
+00:10:48,768 --> 00:10:51,528
+Bu bir şöyle olabilir, mesela.
+
+61
+00:10:58,004 --> 00:11:25,004
+Yani şuraya bir U silinmiştir şurada. Şu bir distance. Şurada bir harf değişmiştir. Bu ikinci distance. Burada bir fazladan W eklenmiş. Bu üçüncü yani şu X stringimiz, şurada Y stringimiz. Şurada bir şey var. Delete var. Şurada bir...
+
+62
+00:11:25,427 --> 00:11:32,228
+Change var. Ondan sonra burada da bir Insert var, x açısından bakarsanız.
+
+63
+00:11:32,436 --> 00:11:58,855
+Yani burada bir x'in bir harfi silinmiş birincide, ikincide iki harf birbirine eşit değil, change var, change ve şey var. Üçüncüde de şey var, nedir, insert var yani olmayan bir, y'de olmayan bir harf eklermiş ise. O zaman buradaki şey, distance 3. Şöyle desen,
+
+64
+00:12:12,083 --> 00:12:31,043
+Şöyle desem, şimdi şurada bir tane şey var. Dur, önce yapayım. Farklılığı işaretliyim, sonra yapayım. 2 burada var, 3 burada var, 4 burada var, 5 de burada var.
+
+65
+00:12:32,947 --> 00:12:50,227
+Şimdi burada olan şeyde, yani bu da olabilirdi, bu da doğru. Şurada bir tane delete olmuş, burada bir tane, şöyle ayırayım, change olmuş, burada insert olmuş, burada insert olmuş, burada delete olmuş. Bunun da distance'ı 5.
+
+66
+00:12:50,355 --> 00:12:59,176
+Şimdi ikisi de doğru aslında ama yani iki türde de bu Snowy'den Sunny'e geçiş olmuş olabilir.
+
+67
+00:12:59,836 --> 00:13:07,755
+Ama bizim yapmamız gereken şey ne? İki kelime arasındaki minimum edit distance'ı bulmak.
+
+68
+00:13:08,755 --> 00:13:10,056
+Şimdi burada da böyle bir şey var.
+
+69
+00:13:10,056 --> 00:13:11,056
+Çünkü...
+
+70
+00:13:12,063 --> 00:13:40,063
+Yani birden fazla dönüşüm olabilir. Snowy'dan Sunny'e giderken biz şimdi Snowy ile Sunny arasındaki benzerliği, distance'ı daha doğrusu, distance'ı yap dediğimiz şey, farkı ölçmeye çalışıyoruz. Yani bu Snowy'dan Sunny'e dönüşürken bu dönüşmenin birden fazla yolu olabilir. Bizim istediğimiz minimum olanını bulmaya çalışıyoruz.
+
+71
+00:13:40,063 --> 00:14:07,980
+çalışmak, dönüşümün minimum olanını bulmaya çalışmak. O zaman bu da aslında dönüşümün nasıl olabileceğini görüyorsunuz. Mesela bir delete olmuş olabilir. Mesela şurada x su iken pardon şöyle yaparsam x şöyle en başına bakıyoruz y de böyle şurada bir
+
+72
+00:14:08,884 --> 00:14:18,484
+delete var yani y'de x'de olmayan bir harp var. O harp x'den silinmiş. Bir insert olabilir.
+
+73
+00:14:21,812 --> 00:14:23,812
+Şöyle bakarsak.
+
+74
+00:14:29,235 --> 00:14:30,235
+Snob.
+
+75
+00:14:36,052 --> 00:14:56,908
+Şöyle, şurada olmayan bir şey var, W harfi var. Burada bir insert olmuş olabilir veya mesela o ile neyi karşılaştırdık? Bunlar da aynı değil. O zaman burada bir change olmuş olabilir. Dördüncü durumda ne?
+
+76
+00:14:58,868 --> 00:15:09,948
+Olabilecek dördüncü durum ne? Yani iki harfi karşılaştırdığınızda bir delete olmuş olabilir, bir insert olmuş olabilir, bir change olmuş olabilir. Dördüncü durum ne?
+
+77
+00:15:17,427 --> 00:15:18,607
+Hocam aynı olması mı?
+
+78
+00:15:19,467 --> 00:15:24,427
+Evet, kesinlikle. Dördüncü durum aslında bizim istediğimiz şey...
+
+79
+00:15:29,203 --> 00:15:48,923
+yıldızlarla süslüyüp karşılaştırdığımız iki harfin birbirine eşit olması. Aslında dördüncü durum o. Yani mesela şurada S ile S aynı, N ile N aynı, Y ile Y aynı. Dördüncü durum ikisinin birbirine eşit olması.
+
+80
+00:15:51,764 --> 00:15:57,524
+Peki, buraya kadar bir sıkıntı var mı? Dört tane durum var. Şimdi nasıl çözeceğimize bakmamız lazım.
+
+81
+00:15:58,724 --> 00:16:03,916
+Buraya kadar problemi anladı mı herkes? Sormak istediğiniz bir şey var mı?
+
+82
+00:16:11,059 --> 00:16:28,819
+Peki, o zaman devam ediyorum. Lütfen sorunuz olursa kesin ve sorun. Çünkü aslında şöyle bir şey vardı. Ben eskiden şeyde anlatırdım daha önceki yıllarda.
+
+83
+00:16:29,299 --> 00:16:41,299
+Programlama dilleri, C falan anlatırdım. Orada hep şey görürdüm, öğrencilerin recursive code yazmaya alışması zaman aradı. Çünkü şeye alıştıkları için böyle...
+
+84
+00:16:43,155 --> 00:16:48,435
+iteratif çözmeye alıştırılır için Recursion mantığına oturtmaları zaman alır.
+
+85
+00:16:48,435 --> 00:16:50,995
+Dinamik programlama da benziyor aslında.
+
+86
+00:16:50,995 --> 00:16:59,635
+Recursion'a benziyor ama o rekürans bağıntısını oluşturmayı anlamak birazcık başta gelebilir.
+
+87
+00:17:00,528 --> 00:17:11,288
+yabancı gelebilir ama hep benzer tarzda oluşturulduğu için zaman içerisinde önleyip kendi kendinize iyi bir şekilde rekranspanslarını çıkarabilir hale geliyorsunuz.
+
+88
+00:17:11,327 --> 00:17:26,208
+Şimdi problemi düşünelim. Diyelim ki bir x kelimemiz var. N tane karakterden oluşuyor. Bir de y kelimemiz var. M tane karakterden oluşuyor. Biz bunların distance'ını bulmak istiyoruz.
+
+89
+00:17:28,723 --> 00:17:32,884
+X ile Y arasındaki listansı bulmak.
+
+90
+00:17:33,940 --> 00:17:57,700
+Unutmayacağız, bizim bulacağımız distance minimum olanı olmalı. Çünkü zaten büyük olan bir distance bizi çok ilgilendirmiyor. Biz sonuçta şunu yapıyoruz aslında. Şimdi siz el yazdınız, bu da el dikşiniride olmadığını görüyor, size bir şey önerecek. Size ne önermesi lazım? Distance'ı küçük olan kelimeleri önermesi lazım.
+
+91
+00:18:01,940 --> 00:18:14,400
+Elinle diyelim ki kalem arasındaki mesafeyi ölçüyorsa
+
+92
+00:18:15,443 --> 00:18:28,403
+Size el ile kalem arasındaki minimum mesafeyi bulmalı ki? Mesela demeli ki el ile kalem arasında ne bileyim beştir mesafe tamamen atıyorum öyle bakmadım şimdi ne olduğuna.
+
+93
+00:18:32,915 --> 00:18:59,555
+kelime arasındaki mesafede üçtür. O zaman size kalemi değil, kelimeyi önermeli. Dolayısıyla her distans hesapladığı kelime için o iki kelime arasındaki minimum distansı vermeli. Daha sonra size önereceği kelimeleri de minimum distansların içerisinden seçmeli. O yüzden şimdi biz minimum distansı bulma peşindeyiz. Bizim hedefimiz ne?
+
+94
+00:19:01,044 --> 00:19:07,724
+Hedefimiz, iki kelime arasındaki
+
+95
+00:19:12,211 --> 00:19:20,231
+M. harfe gelindiğindeki minimum distance'ı bulmak, yani o zaman toplam minimum distance'ı buluyoruz.
+
+96
+00:19:20,751 --> 00:19:24,991
+Şimdi ben bunu alt probleme bölersem nasıl bölerim?
+
+97
+00:19:25,431 --> 00:19:30,491
+Yani bu şey işini alt probleme bölersem nasıl bölerim?
+
+98
+00:19:30,491 --> 00:19:39,551
+Diyelim ki x kelimemiz exponential olsun, l kelimemiz de polinomial olsun,
+
+99
+00:19:42,932 --> 00:19:59,892
+Alt probleme bölmek demek, bunu böyle en baştan başlayarak, yani E'ye karşılık P'nin durumu, işte E'ye karşılık P'nin durumu falan gibi parçalara bakarak, yani baştan başlayıp parçalara bakarak gitmek.
+
+100
+00:20:00,000 --> 00:20:14,639
+Yani alt problem dediğim şey bu. O zaman yani nedir bu? x birinci karakterden ininci karaktere kadar giderken y birinci karakterden j'inci karaktere kadar giderken
+
+101
+00:20:18,259 --> 00:20:41,163
+x'in ilk i karakterine, y'nin de ilk j karakterine bakacağım. Benim alt problemim aslında edit distance, i, j, x'in i'inci, y'nin de j'inci karaktere kadar olan distance'sı.
+
+102
+00:20:55,347 --> 00:21:20,347
+Oldu mu? Yani edit eg dediğim şey, x'in yinci karakterine kadar, yani şu mesela, diyelim ki edit distance, expo'nun pole mesafesi, polinom yani şu ilk dört karakteri,
+
+103
+00:21:21,364 --> 00:21:27,364
+Şu üç karaktere mesafesi, buraya kadar olan mesafe.
+
+104
+00:21:27,964 --> 00:21:32,423
+Dolayısıyla alt problemlerim benim aslında bu şekilde.
+
+105
+00:21:33,423 --> 00:21:40,163
+Yani, değil mi? Bunu böyle çöze çöze gidersem, en sonunda nereye ulaşmış olurum?
+
+106
+00:21:41,744 --> 00:21:45,364
+Edit Distance, NM dediği...
+
+107
+00:21:45,811 --> 00:21:54,251
+Bu, x'in 1'den n'e kadar olan karakteriyle y'nin 1'den j'ye kadar olan karakterlerinin
+
+108
+00:21:55,923 --> 00:22:11,903
+Birbirlerine göre distance'ına erişmiş olurum. O zaman demek ki benim ed-inji dediğim şey, bir alt problem, yinci karaktere, x'de yinci karaktere kadar, y'de ve j'inci karaktere kadar olan karakterler için distance hesabı.
+
+109
+00:22:11,963 --> 00:22:23,903
+Şimdi hemen buradan neyi anlıyorum ben? Ben burada, hani hep konuşuyoruz ya, burada sonucu nerede saklamam gerekir? Bu nedir? x satırları gösterirken.
+
+110
+00:22:23,923 --> 00:22:45,403
+y'de sütunları gösterirken ben sonucu bir matrisde saklayabilirim. Bu add matrisde. İşte bu birden n'e kadar değişen, şu da birden m'e kadar değişen. Şurası da edit distance nm bana minimum distance'ı verir.
+
+111
+00:22:46,003 --> 00:22:52,483
+Buraya kadar sormak istediğiniz bir şey var mı? Şimdi hazırlığı anladınız mı? Ne yaptığımı? Alt problem ne aslında?
+
+112
+00:22:52,483 --> 00:23:03,683
+Alt problem dediğim şey, benim bir n elemanlı bir de m elemanlı iki stringim varsa bunların herhangi bir karakterine kadar olan durum alt problemimi veriyor bana.
+
+113
+00:23:03,683 --> 00:23:14,003
+Yani x'de işte x boyu y'de de polü aldığında durum bana alt problemi veriyor. Onların da alt problemi ne bileyim x'de xp aldığında
+
+114
+00:23:14,003 --> 00:23:25,283
+yedi pol aldığındaki durum, onun bir alt problemi aslında gibi böyle böyle gidiyor. O zaman alt problemin tanımını yaptığımıza göre şeyi nasıl yapacağımıza bakalım.
+
+115
+00:23:28,468 --> 00:23:30,428
+İşlemi nasıl yapacağımıza bakalım.
+
+116
+00:23:30,827 --> 00:23:34,168
+Şimdi az önce biz case'leri konuşmuştuk şurada.
+
+117
+00:23:34,508 --> 00:23:35,528
+Case'lerimiz neler?
+
+118
+00:23:36,827 --> 00:23:39,188
+Ya iki karakter aynıdır zaten.
+
+119
+00:23:40,208 --> 00:23:44,708
+Copy, yani SS, iki karakteri de karşılaştırdığım aynıdır.
+
+120
+00:23:45,147 --> 00:23:46,788
+Farklıysa da üç durum olabilir.
+
+121
+00:23:47,048 --> 00:23:51,288
+Ya birindeki silinmiştir, o yüzden farklıdır.
+
+122
+00:23:51,387 --> 00:23:56,107
+Ya birindeki eklenmiştir, şurada olduğu gibi.
+
+123
+00:23:56,468 --> 00:24:01,067
+Bir taraftan bakınca ekleme, öbür taraftan bakınca insert çıkarma aslında.
+
+124
+00:24:01,627 --> 00:24:06,127
+Mesela şurada X açısından bakarsanız, X'in bir harfi silinmiş çünkü X'de U yok.
+
+125
+00:24:06,908 --> 00:24:12,768
+Burada yine X açısından bakarsanız, X'de bir harf eklenmiş çünkü Y'de öyle bir karşılık yok.
+
+126
+00:24:13,867 --> 00:24:21,788
+Üçüncü farklılıkta, yani iki karakter aynı olmadığı zaman, bunlar belki de sadece değiştirildi.
+
+127
+00:24:21,788 --> 00:24:24,468
+Yani aslında buradaki soru...
+
+128
+00:24:24,468 --> 00:24:34,367
+Bunun, şu üçü de, şunda da x'i eşittir y,g değil, bunda da x'i eşittir y,g değil, bunda da x'i eşittir y,g değil.
+
+129
+00:24:34,908 --> 00:24:40,847
+Ama üç sebep olabilir. Ya araya bir karakter eklenmiştir, o yüzden x'i y,g'ye eşittir.
+
+130
+00:24:40,847 --> 00:24:46,847
+Yani şunu demek istiyorum. Burada snow yazarken, burada mesela...
+
+131
+00:24:50,675 --> 00:25:05,644
+Şöyle bir şey olmuş. Şurada araya neye eklendiği için bu ikisi eşit olmuyor. Bu olmasaydı sınav olacaktı o kelimede. Mesela, bu şu.
+
+132
+00:25:07,155 --> 00:25:20,155
+Şu durum, aradaki N, X'te yok, Y'de var aslında mesela. Anlatabildim mi? İki karakteri karşılaştırdığımızda aynı olmamasının sebebi bu üç durumdan birisi olabilir. Burada bir sıkıntı var mı?
+
+133
+00:25:26,644 --> 00:25:33,783
+Peki, o zaman bir problem yoksa şuna bakacağız, nasıl olduğuna bakacağız.
+
+134
+00:25:36,364 --> 00:25:46,743
+Diyelim ki o zaman birinci keizimiz x'in karşısının boş olması.
+
+135
+00:25:54,324 --> 00:26:16,523
+Sat problemimiz, bir önceki sat problemimiz aslında x'in birden i-1'e kadar y'nin de birden j'ye kadar olan durumuna bağlı bizim şu anki durumumuz.
+
+136
+00:26:16,788 --> 00:26:33,407
+Dolayısıyla yani bu bir şu durum, insertion durumu, yani şöyle bir şey olmuş, diyelim ki burası böyle sunny, ondan sonra
+
+137
+00:26:34,420 --> 00:26:58,420
+Şurası böyle. Diyelim ki şurada bir N eklenmiş şöyle. Bir insertion durumu var. İvinci karakterde eklenen bir insertion durumu var. Burada X, İ eşit değildir, Y, J ise. O zaman ben benim E, İ, J'yi hesaplarken E, İ eksi bir J'yi...
+
+138
+00:26:58,463 --> 00:27:10,223
+Şuna bağlıyım yani ben, e, i, eksi bir j'ye bağlıyım. Yani şuradan geliyor, bir önceki alt problemim, sağ problemim, e, i, eksi bir j'den geliyor.
+
+139
+00:27:10,863 --> 00:27:19,443
+İkinci durumda, şu olabilir, burası boş, burada bir y, j var. Bu da bilişim.
+
+140
+00:27:24,847 --> 00:27:35,087
+Aslında bilet ettiğiniz zaman, aslında şöyle bir şey var mesela, diyelim ki burada da
+
+141
+00:27:51,412 --> 00:28:08,412
+Şöyle bir şey olmuş. Şöyle karşılaştırıyorsunuz mesela. Aslında burada fazladan bir U var Y'de. Aradaki U X'de yok diyelim ki. Öyle bir şey olabilir mesela.
+
+142
+00:28:09,743 --> 00:28:33,903
+uyuşmazlık oradan çıkıyor olabilir. O zaman bu durumda sap probleminiz, yani çözmeniz gereken problem ne olmuş oluyor? Aslında E, I, J-1. Buraya çünkü şeyden geldiniz. Yani X, 1, I, Y, 1.
+
+143
+00:28:34,259 --> 00:28:49,460
+j eksi bir ile karşılaştırıldı. Çünkü orada bir fazladan y, j var ya bizim için. O ana kadarki durumdan geldik biz buraya. O zaman bu sap probleme bakmam gerekiyor.
+
+144
+00:29:00,435 --> 00:29:02,155
+X'i eşit değildir.
+
+145
+00:29:02,215 --> 00:29:09,715
+Y'e J ise bunun sebeplerinden birisi oradaki X'i yine fazladan eklenmiş bir karakter olması olabilir.
+
+146
+00:29:09,875 --> 00:29:11,135
+Yani insertion durumu.
+
+147
+00:29:11,715 --> 00:29:16,215
+O zaman oraya gelene kadar ki bir önceki duruma bakmam lazım.
+
+148
+00:29:16,775 --> 00:29:17,855
+X'i yok zaten.
+
+149
+00:29:17,975 --> 00:29:21,555
+Bir önceki durum o zaman E'i eksi bir J'den.
+
+150
+00:29:21,555 --> 00:29:24,096
+Yani edit D'yi unutmayın şurada.
+
+151
+00:29:24,576 --> 00:29:28,275
+Edit J'i eksi bir J'den.
+
+152
+00:29:28,435 --> 00:29:53,435
+görlemektir. İkinci durumda x, y ve y, j eşit değilse bunun sebebi y'de fazla bir karakter olması gerekir. O zaman da bir önceki duruma bakmam gerekiyor. Bir önceki durumda j'nin olmadığı yani e, i, j eksi bir durumudur. Üçüncü durum x, y, j'ye eşit değilken, üçüncü durum
+
+153
+00:29:57,556 --> 00:30:18,516
+gerçekten de X'inin YG'den farklı olduğu durumdur. Yani orada ne olmuş? Diyelim ki işte yine bu şeye bakacak olurken olursanız Sunny'de şöyle Sony olmuş mesela. Şu alt probleme bakıyorsunuz şu anda. Şurada şu iki harf.
+
+154
+00:30:19,955 --> 00:30:26,515
+Birbirine eşit değil yani orada herhangi bir fazlalıklık veya eksiklik yok. Birbirine eşit değil.
+
+155
+00:30:26,955 --> 00:30:31,255
+O zaman bir önceki durum nedir aslında bizim için? Bunun sak problemi.
+
+156
+00:30:34,315 --> 00:30:38,596
+Her şey doğal gelişiyor. Bir önceki durum x'ye eksidir.
+
+157
+00:30:40,211 --> 00:30:50,612
+Yani burada bir sıkıntı yok çünkü bir i ile y, bir j bunlar birbirine karşılaştırılmış.
+
+158
+00:30:51,152 --> 00:31:00,991
+Bir önceki alt problemimiz i-1 ile j-1'dir. Yani bir önceki karakterlerin karşılaştırıldığı durumdur.
+
+159
+00:31:02,592 --> 00:31:04,092
+Aynı şekilde
+
+160
+00:31:05,587 --> 00:31:15,208
+x, i, y, j, y eşitse de o zaman da aynı şekilde bir önceki sap probleminiz
+
+161
+00:31:19,412 --> 00:31:22,652
+Yine i-1, j-1'den gelir.
+
+162
+00:31:22,652 --> 00:31:34,291
+Şimdi buralarda bu subproblemlere göre edit distance i, j neye eşit olur?
+
+163
+00:31:34,851 --> 00:31:42,331
+Edit distance i-1, j artı mesela şeyin kostu.
+
+164
+00:31:42,720 --> 00:31:49,439
+Nedir? Insertion'un costu. Diyelim ki biz costu hepsinde bir alalım şu anda.
+
+165
+00:31:49,748 --> 00:32:15,567
+Yani distance oluşturuyor. Yani bir farklılık oluştu. İsterseniz mesela şunu diyebilirsiniz. İşte insertion benim için çok daha önemliydi. Onun kost'unu iki yaptım dersiniz. Bizim için bir distance oluşturuyorsa bir puan diye düşünebiliriz. O zaman burada da aynı şekilde edit distance eg, edit distance eg-1 artı 1.
+
+166
+00:32:23,284 --> 00:32:35,943
+Aynı şekilde bir harf değiştiği için artı bir. Bir tek bunda neye eşit olacak? Bir kost yok yani kelime, karşılaştırdığım harfler aynı.
+
+167
+00:32:36,468 --> 00:32:47,288
+i eksi bir, j eksi bir eşit olacak. Yani şunda bir distance oluşmadığı için bir bedel yok burada değil mi?
+
+168
+00:32:47,288 --> 00:32:58,368
+i'inci harf, j'inci harf eşitse bir önceki costumuz neyse bizim o geçerli. Yani burada bir distance oluşmadığı için bir şey yok.
+
+169
+00:32:58,644 --> 00:33:07,644
+Şimdi o zaman mesela az önceki Exponential polynomial'da varsayalım ki şeyi karşılaştırıyoruz.
+
+170
+00:33:07,644 --> 00:33:14,644
+X, i de expo da şu o'ya gelmişiz.
+
+171
+00:33:16,115 --> 00:33:32,115
+Polinomiyal'da şu L'ye gelmişiz. Bunları karşılaştırıyoruz. Şimdi bu iki harfi karşılaştırdığımızda ne olmuş olabilir? İkisi farklı. X, Y, Y, J'den farklı. Sebebi ne olmuş olabilir? Birincisi...
+
+172
+00:33:32,788 --> 00:33:57,387
+Bu tarafa O'yu eklemişsinizdir. Fazladan eklenmiş bir O olabilir. İkincisi Y'ye eklenmiş fazladan bir O olabilir. Üçüncüsü de O ile L'yi karşılaştırmışsınızdır. Ondan öncesinden yani bu da eklenmiş falan bir şey yoktur. Sadece bu iki karakter farklı olabilir. Yani insert olabilir, delete olabilir.
+
+173
+00:33:59,443 --> 00:34:06,183
+Change olabilir. Peki şimdi size sorumu soruyorum. Bu üçünden hangisi olduğunu bilebilir misiniz?
+
+174
+00:34:07,943 --> 00:34:13,443
+Hocam, karakter uzunlukların farkı önemli bizim için. Bir de ikinci kısımda siz delete O yazdınız da L olacak orası.
+
+175
+00:34:15,564 --> 00:34:17,244
+Pardon, özür dilerim. Doğru.
+
+176
+00:34:20,844 --> 00:34:26,443
+Karakter uzunlukları bizim için önemli değil. Yani baş tarafta...
+
+177
+00:34:26,931 --> 00:34:39,692
+Bozulun olmuş olabilir. Sen sadece bu karaktere bakarak farkın yani O eşit değildir, L ya. Arada bir insert mi oldu, delete mi oldu, change mi oldu anlayabilir misin?
+
+178
+00:34:43,539 --> 00:34:45,319
+Sadece oraya bakarak anlayamıyorum.
+
+179
+00:34:46,000 --> 00:34:47,539
+Evet, sadece oraya bakarak anlayamıyorum.
+
+180
+00:34:47,599 --> 00:35:15,279
+Bu karakter anlayamazsınız. Yani oraya kadar olanlara aslında bakarak bir şey yapmanız lazım. Sadece bu karaktere bakarak veya karakter uzunluklarına bakarak da aslında anlayamazsınız. Çünkü yani karakter uzunluklarına bağlı olarak da şeyi çıkartmak çok zor. Mesela ikisinde eşit sayıda karakter vardır. Mesela X burası olsun.
+
+181
+00:35:15,599 --> 00:35:26,380
+Burası olsun. Ama ne bileyim, buradan buraya gelene kadar aslında şey oluyordur. Yani tam şöyle göstereyim size. Exponential burası.
+
+182
+00:35:32,403 --> 00:35:53,644
+Polonancial da burası. Burada ileride başlıyor bir şeyler falan. Yani şeyi kestirmeniz sadece o harflere bakarak insertion mu olmuş, dilition mu olmuş, change mi olduğunu kestirmeniz mümkün değil. Peki bilmem önemli mi? Hangisi olduğunu bilmem önemli mi?
+
+183
+00:35:59,699 --> 00:36:01,980
+Yazı Truat'ın %50 şansınız var.
+
+184
+00:36:06,291 --> 00:36:12,152
+Önemli değil sadece aynı olması mı? Yani aynı değil diye bakabiliriz o zaman.
+
+185
+00:36:12,952 --> 00:36:25,532
+Kesinlikle. Bizim için önemli olan şeyi seçmek aslında. Minimum costu seçmek.
+
+186
+00:36:32,403 --> 00:36:54,463
+Yani insertion da olmuş olabilir, deletion da olmuş olabilir, change da olmuş olabilir. Bizim için önemli olan minimum costu seçmek. O zaman bir i'inci, x kelimesinde i'inci harfe, y kelimesinde de j'inci harfe gelene kadar
+
+187
+00:36:57,652 --> 00:36:59,452
+şey ise nedir?
+
+188
+00:37:03,072 --> 00:37:04,332
+Aa, söyleyemedim.
+
+189
+00:37:04,792 --> 00:37:10,092
+Cost'u hesaplamak istiyorsak, distance'ı hesaplamak istiyorsak, biz şuna bakacağız.
+
+190
+00:37:10,232 --> 00:37:12,212
+Yani nereden geldiğimin önemi yok.
+
+191
+00:37:13,844 --> 00:37:40,963
+Diyeceğiz ki E-1J artı 1, yani E-1J şeyi gösteriyordu, insertion olması durumunu gösteriyordu. Ondan sonra E-I-J-1 artı 1, bu deletion olması durumunu gösteriyor. Ondan sonra da
+
+192
+00:37:41,331 --> 00:37:49,011
+e i-1 j-1 artı
+
+193
+00:37:55,188 --> 00:38:11,268
+Şu da substitute, substitute deniyor aslında buna. Yani copy veya change herhangi bir şekilde şey yok, ekleme veya çıkarma yok. Sadece harflerin aynı olmaması. O da şu şekilde.
+
+194
+00:38:16,052 --> 00:38:22,052
+Eğer x, i, y, j'ye eşitse lif sıfıra eşittir.
+
+195
+00:38:22,052 --> 00:38:30,052
+Değilse de 1'e eşittir. O zaman eğer...
+
+196
+00:38:31,443 --> 00:38:39,644
+şey ise, x'i, y, j'i, y, j'den farklıysa, bu da şeyimiz, costumuz şurada 1 olacak demektir.
+
+197
+00:38:40,063 --> 00:38:48,403
+Orada da bir önceki durumdan, yani x'i, y, j, y, j, 1. durumdaki distance neyse, oradan geleceğiz.
+
+198
+00:38:48,844 --> 00:38:53,063
+Şurada d'yi hep unutuyorum. Şurada bir saniye şunu düzelteyim şöyle.
+
+199
+00:38:55,188 --> 00:39:03,348
+Edit distance'ın kısaltılmışını yazmaya çalıştım ama hep unuttum onu. Başka yerde olmamışımdır umarım. Bu şekilde.
+
+200
+00:39:03,552 --> 00:39:12,552
+yapmam gereken şey bu. E tabi bir de mutlaka bir initialization'ın olması lazım. Çünkü biz üzerine ekleye ekleye geliyorsak,
+
+201
+00:39:12,552 --> 00:39:25,552
+değil mi? Yani diyoruz ki işte i-1. durumdan gelsin diyoruz. Bir initialization'ımızın olması lazım. O da bir tarafta hiç kelime yokken öbür tarafta kelimenin olduğu durum.
+
+202
+00:39:31,552 --> 00:39:46,872
+X'de diyelim ki elma yazıyor, Y'de kelime hiçbir şey yoksa o zaman E harfi için distance bir, el için iki, M eklendiğinde el için üç, elma için dört distance olacak demektir.
+
+203
+00:39:46,872 --> 00:39:59,552
+İkinci durumda X'de kelime olmayıp Y'de kelime olması durumu o da şu şekilde distance ne olmalı?
+
+204
+00:39:59,552 --> 00:40:09,772
+O zaman J. harfe kadar olan distance, J olacak değil mi? Yani karşılaştırdığımız zaman J tane farklı şey olmuş olacak.
+
+205
+00:40:10,132 --> 00:40:26,552
+Neye kadar sorunuz var mı? Sonu ki sizleriniz bir şey var mı? Peki örneğini çözüp öyle ara vermek istiyorum. Sizin için de uygunsa. Dayanabilir misiniz? Çözebilir mi?
+
+206
+00:40:26,552 --> 00:40:27,072
+Olur hocam.
+
+207
+00:40:27,440 --> 00:40:36,099
+Tamam, peki. Şimdi o zaman bu benim neyim oldu? Şurada, rekürans relation'ı bu oldu.
+
+208
+00:40:39,315 --> 00:40:44,435
+Yani size hani hep böyle sınavlarda soruyoruz ya, rekürans, dilation yazın falan dediğiniz şey bu.
+
+209
+00:40:44,575 --> 00:41:00,455
+Yani bakın görüyorsunuz, at EG alt problemi, işte insertion yapıyorsanız E-1J alt problemine bağlı, dilation yapıyorsanız buna bağlı, change veya işte copy de E-1J-1'e bağlı.
+
+210
+00:41:00,455 --> 00:41:07,095
+Ama ben şuradaki konuştuğumuz şeyden ötürü, yani hangisinden ötürü buraya geldiğimi bilemediğim için,
+
+211
+00:41:07,315 --> 00:41:23,035
+Diyorum ki sen bak hangisinin şeyi daha az ise, distansı daha az ise oradan ilerleyelim. Çünkü ben de minimum distans bulmak peşindeyim. Onu o şekilde yapalım diyoruz.
+
+212
+00:41:23,655 --> 00:41:30,135
+Şimdi o zaman hemen örnek üzerinde göstereceğim. Şimdi bunlarla ilgili sıkıntı biraz zor oluyor gerçekten.
+
+213
+00:41:34,164 --> 00:41:48,464
+sözde anlatması zor oluyor. Benim size tavsiyem olayı anlamak için çok fazla örnek çözün. Örnek çözdüğünüz zaman daha şey olacak, kolaylaştığını göreceksiniz. Şimdi iki tane kelimem olsun.
+
+214
+00:41:59,284 --> 00:42:02,043
+Şu anda şunu bulmak istiyorum.
+
+215
+00:42:02,043 --> 00:42:03,523
+Max kelimesiyle
+
+216
+00:42:07,443 --> 00:42:17,523
+Art kelimesinin distance'ını bulmak istiyorum. Yine konuştuğumuz gibi aslında ben bir minimum distance peşindeyim. Şimdi bakalım.
+
+217
+00:42:17,523 --> 00:42:21,603
+A, R, T, S
+
+218
+00:43:10,164 --> 00:43:11,443
+Şimdi öncelikle
+
+219
+00:43:11,443 --> 00:43:15,704
+şuralar sıfır.
+
+220
+00:43:20,211 --> 00:43:32,612
+Şu benim X stringim, şu da Y stringim. Şuralar değil tabii. Ben böyle sıfır diye atladım birdenbire. Değil. Nasıl? Şuralar. Ne olmalı buralar?
+
+221
+00:43:32,692 --> 00:43:45,571
+1, 2, 3, 4, şurası da 1, 2, 3, 4, 5. Neden? Çünkü baktığınız zaman mesela şurada M harfini eklemişim, karşısı boş, distance 1 demektir.
+
+222
+00:43:45,692 --> 00:43:50,951
+A harfini eklemişim, yani MA var, Y'de bir şey yok, distance 2 demektir.
+
+223
+00:43:51,351 --> 00:43:55,791
+MAT'ı eklemişim, Y'de bir şey yok, distance 3 demektir. Bu şimdi initial durum.
+
+224
+00:44:00,692 --> 00:44:15,371
+Eğer şeyse, şimdi bu tarafta mat varken, bu tarafta kimse yoksa şuraya kadar olan distance 3 demektir. Tamam mı? Yani artı artı gidiyor. Aynı şekilde bu tarafta x yok.
+
+225
+00:44:16,019 --> 00:44:24,339
+y, d, a var. Demek ki bir delete olmuş burada. Distance 1 demektir. r var. Buraya kadar olan distance 2 demektir gibi.
+
+226
+00:44:24,339 --> 00:44:34,339
+Yani aslında şöyle, şuradan bir tanecik şey çıkayım, şöyle. Şurası herhangi bir x, y...
+
+227
+00:44:35,219 --> 00:45:02,019
+ve Y, J için Edit Distance, E, J bana şeyi gösteriyor. X birden İ'ye kadar değişirken, Y'de birden J'ye kadar değişirkenki mesafeyi gösteriyor. Buradaki bütün harfler için, X'de yani bu sap problem için birden İ'ye kadar olan harfler ve Y'de de birden J'ye kadar olan harfler için
+
+228
+00:45:03,219 --> 00:45:15,460
+gösteriyor, distance'ı gösteriyor. Peki, şimdi başlıyorum hemen. Şimdi şuraya şeyi yazacağım çünkü birlikte bakalım. Aklımızda olsun.
+
+229
+00:45:16,148 --> 00:45:39,488
+Edit Distance Ej eşittir, minimum, buna bakarak seçeceğiz çünkü. Edit Distance E-1J artı 1, E-J-1 artı 1, E-1, J-1 artı difference.
+
+230
+00:45:40,115 --> 00:45:54,115
+x, y, y, y demiştik burada, değil mi? Bunlardan alacağız biz şeyimizi. Şimdi başladık. Şimdi m ile a'yı karşılaştırdık. Şurada m ile a'yı karşılaştırdık. m ile a farklı
+
+231
+00:46:04,436 --> 00:46:09,876
+Şu satırı, bir saniye. Şöyle geçeyim, şöyle başlayayım. Tamam.
+
+232
+00:46:10,996 --> 00:46:18,655
+Meyla farklı, bir dakika. Şöyle kalemle yazmak istedim de tamam, şimdi başlayabilirim.
+
+233
+00:46:19,175 --> 00:46:24,655
+O zaman şuradan geliyorum. Nereden geliyorum? Şöyle geliyorum.
+
+234
+00:46:24,655 --> 00:46:29,175
+Neden? Çünkü şimdi şöyle bakıyorum. Ya yukarıdan geleceğim.
+
+235
+00:46:29,519 --> 00:46:37,519
+Burası neresi? x, y, eksi bir, y, j şurası değil mi? Ya soldan gireceğim, burası neresi?
+
+236
+00:46:37,775 --> 00:46:47,775
+x, y, y, j, 1 ya da diagonalden geleceğim x, y, j, 1 den geleceğim.
+
+237
+00:46:47,775 --> 00:46:55,775
+Bunun minimumunu alacağıma göre şimdi bir kere iki harf farklı olduğuna göre kost bir bir kere farklı var çünkü.
+
+238
+00:46:55,775 --> 00:47:04,556
+Minimum olan neresi? Diagonalden gelen. Tamam mı? Bu anlaşıldı mı? Ne anladınız mı? Devam ediyorum.
+
+239
+00:47:05,172 --> 00:47:09,112
+Bakın cevap vermediğinizde anladığınızı varsayalım. İnşallah anlıyorsunuzdur.
+
+240
+00:47:10,271 --> 00:47:15,332
+Şimdi M, L, R farklı. Bu sefer nereden gelebilirim?
+
+241
+00:47:15,432 --> 00:47:17,812
+Hadi siz biriniz söyleyin, çok sevineyim ben de.
+
+242
+00:47:27,476 --> 00:47:32,336
+Hani anladığınız zil, ses çıkmamıştı. M'ler, R'ye farklıysa ne olmuş olabilir?
+
+243
+00:47:42,612 --> 00:47:46,052
+i-1 j'den mi geleceğiz hocam? Yanlış mı anladım?
+
+244
+00:47:47,672 --> 00:47:52,412
+Yok, kendine güven. Doğru. Birincisi bu. Buradan gelmiş olabilir. Başka olamaz mı?
+
+245
+00:47:55,792 --> 00:47:56,932
+Diğeri ne bilmiyorum.
+
+246
+00:47:57,472 --> 00:47:59,032
+Diagonalden de gelebilir sanki.
+
+247
+00:47:59,612 --> 00:48:04,672
+Aynen öyle. Diagonalden de gelir. Dur şuraya sileyim. Bu birazdan bizi karıştıracak. Şöyle.
+
+248
+00:48:07,452 --> 00:48:08,132
+Şimdi bakın.
+
+249
+00:48:08,596 --> 00:48:30,876
+Üç yerden gelebilirsiniz. Bak, şuraya yazayım. i-1, j'den gelmek demek ne demek? Yukarıdaki satırdan aynı sütundan gelmek demek. Değil mi? Şöyle gelmiş olabilirsiniz. i-j-1'den gelmek ne demek? Aynı satırdan yan sütundan gelmek demek.
+
+250
+00:48:31,764 --> 00:48:41,164
+Şu i-1, j-1 ne demek? Aynı şey hiçbir yerden değil, diagonalden gelmek demek. Tamam mı? Bunların minimumunu almamız isteniyor.
+
+251
+00:48:41,556 --> 00:49:09,496
+Şimdi, önce şuradakine bakalım. Şunlar aslında neydi? Öyle yaparsam daha doğru. Şurada hep soldan geliyorsunuz. Çünkü, burada bir şey var. Delete var. Yani, burada A, güya, X'deki A harfi silinmiş, distance 1 olmuş. R'de silinmiş, distance 2 olmuş. Aynı şekilde burada da bir insert var. M eklemişsiniz, A eklemişsiniz falan. Bu initial durum böyle. Burada zaten onu bekliyoruz. Çünkü, değil mi? Yani.
+
+252
+00:49:09,556 --> 00:49:23,896
+x'de maths var, iniş yol durumda, burası boş. Burası için de x boş, y'de arts var. Şimdi burada ne ile ağır karşılaştırdığınızda bakacaksınız. Soldan mı geleyim, yukarıdan mı geleyim, diadonalden mi geleyim?
+
+253
+00:49:23,987 --> 00:49:41,467
+Hangisi minimum? Diagonal minimum. O zaman m ile eşit olmadığına göre costum 1, o zaman bir önceki durum edit i-1, j-1 durumu orada cost 0'mış buna 1 ekleyeceğim. Tamam mı? Şimdi m ile r'yi karşılaştırdım.
+
+254
+00:49:41,523 --> 00:49:59,523
+Birbirinden farklı bir kere bir kost var elimde, bir olan bir kost var. Nereden gelmiş olabilirim? Soldan da gelmiş olabilirim, yukarıdan da gelmiş, bir benayden de gelmiş olabilirim. Ama şuradan gelmiş olabilir miyim? Hayır. Çünkü bunun kostu iki, yani tabii ki gelmiş olabilirim ama ben...
+
+255
+00:50:00,340 --> 00:50:07,740
+Bilevumu istediğim için buna hiç bakmama bile gerek yok. Bu gereksiz, fazla olacak benim için. O yüzden bunlara bir ekledim.
+
+256
+00:50:07,740 --> 00:50:15,539
+Şimdi bu mantıkla o zaman M ile T'yi karşılaştırdığımda nereden gelmiş olabilirim? Hızla söyleyebilir misiniz ve ne olur misiniz?
+
+257
+00:50:20,436 --> 00:50:25,816
+Şu üç olur. Harika. Nereden gelmiş olabilirim? Dur, kalemimi bozmuşum.
+
+258
+00:50:25,816 --> 00:50:29,316
+Soldan da gelmiş olabiliriz. Diyagenel'den de gelmiş olabiliriz.
+
+259
+00:50:30,036 --> 00:50:34,536
+Aynen öyle. Şimdi soldan da gelmiş olabilirim, diagonalden de gelmiş olabilirim.
+
+260
+00:50:34,775 --> 00:50:43,175
+M, L, S, Y, K. Artık çözdüğümüz olayı. M, L, S'yi karşılaştırdığında da aynı şekilde soldan da gelmiş olabilirim, diagonalden de gelmiş olabilirim.
+
+261
+00:50:43,235 --> 00:50:48,275
+Çünkü ben minimum distance neyse onu alacağım. Neden bunu yapıyorum? Bunu konuştuk.
+
+262
+00:50:48,576 --> 00:50:55,355
+Çünkü şeyi bilmiyorum aslında. Yani bu ikisi birbirine eşit değil ama neden değil? Bunu bilmeme imkan yok benim.
+
+263
+00:50:57,715 --> 00:51:02,416
+Bunu anlamaya çalışmak yerine o noktadaki minimum distance'a bakarak ilerlerim.
+
+264
+00:51:02,776 --> 00:51:07,195
+Peki şimdi geldik. Şimdi burada da bir cevap bekliyorum.
+
+265
+00:51:07,376 --> 00:51:13,195
+A'la A birbirine, hatta hadi biraz sıkıldım birbirine sorayım ben mesela partisi kundlardan.
+
+266
+00:51:14,936 --> 00:51:18,695
+[öğrenci], burada mısın? Ama [öğrenci]'in kamerası yok. Niye kamerası yok?
+
+267
+00:51:19,456 --> 00:51:20,236
+Buradayım hocam.
+
+268
+00:51:20,916 --> 00:51:23,336
+Kamera yap ama beni görüyorsun değil mi?
+
+269
+00:51:23,891 --> 00:51:25,072
+Evet, evet, [öğrenci] bölüm.
+
+270
+00:51:25,491 --> 00:51:27,711
+Tamam, [öğrenci]. Şimdi o zaman sana soruyorum.
+
+271
+00:51:28,211 --> 00:51:30,652
+AA'ya eşit nereden gelmiş olabilirim?
+
+272
+00:51:32,331 --> 00:51:34,391
+Sol üstten gelmemiz mantıklı.
+
+273
+00:51:34,911 --> 00:51:35,532
+Nereden nereden?
+
+274
+00:51:35,532 --> 00:51:36,172
+Farkları da olmadığı için.
+
+275
+00:51:36,692 --> 00:51:37,072
+Efendim?
+
+276
+00:51:37,092 --> 00:51:38,692
+Sol üsttekinden, diagonalden.
+
+277
+00:51:39,271 --> 00:51:40,971
+Harikasın. Aynen öyle.
+
+278
+00:51:43,132 --> 00:51:46,391
+AA'ya eşitse diagonalden geldim. Çok güzel.
+
+279
+00:51:47,251 --> 00:51:54,251
+Şimdi, hadi bize tam anlat o zaman. AR'ye eşitse, distance ne olacak?
+
+280
+00:51:54,251 --> 00:51:59,251
+Yerleri eşit olmadığı için en küçüğü seçebiliriz yani 2.
+
+281
+00:51:59,251 --> 00:52:04,251
+Tamam, şöyle. AT' çok güzel.
+
+282
+00:52:04,251 --> 00:52:09,771
+Hocam, oraya diğer yönelden gelince 2 olması gerekmiyor muydu ilk AA'nın?
+
+283
+00:52:10,387 --> 00:52:14,947
+Evet, bu soruyu sana soruyorum. AA'ya eşitse niye iki olmuyor da bir oluyor?
+
+284
+00:52:17,347 --> 00:52:20,947
+Çünkü ne dedik? Bak şurada dedik ki, eğer...
+
+285
+00:52:22,900 --> 00:52:34,059
+şeyse nedir? x, y, y, y eşitse cost 0 dedik. Diagonalden geliyor ama artı 0 diyorsun. Costun 0 çünkü. Değil mi?
+
+286
+00:52:34,319 --> 00:52:36,219
+Evet, difference'dan dolayı 0 oluyor.
+
+287
+00:52:36,440 --> 00:52:48,739
+Aynen öyle, difference'dan dolayı 0 oldu. Farklı olsalarda 1 olacaktı costu ama a, a'ya eşit olduğu için cost 0 oldu. O yüzden diagonalden geldik ama bir şey eklemedik üzerine.
+
+288
+00:52:50,996 --> 00:52:52,135
+Efendim, duyamadım.
+
+289
+00:52:52,615 --> 00:52:54,655
+Bilgisayam ben geliyorum, yukarıdan da gelemez mi?
+
+290
+00:52:55,699 --> 00:53:21,880
+Şimdi yukarıdan gelirse, güzel, ona da bakalım. Yukarıdan gelirse cost eklemek zorundasın. 1 artı 1, 2 yukarıdan gelirse, şimdi bir tek diagonalden geldiğinde, çünkü niye o da? Diyor ki, eğer şeyse diyor, bak şuraya geri geleyim, x'ye y, j'ye eşitse diyor, bir önceki durum x'ye eksi 1, y, j'ye eksi 1'deki durumdur diyor.
+
+291
+00:53:22,387 --> 00:53:42,587
+Yani x'i y'ye eşitse bir tek oradan gelebilirsin sen. Bu diğer kezlerden gelemezsin. Buradan gelebilirsin. O yüzden x'i y'ye eşitse diyorsun ki a'ya eşitse bir yagona neden geçeceğim ve kostum da olmayacak diyorsun. Eşit çünkü. Tamam mı?
+
+292
+00:53:43,315 --> 00:53:58,535
+Zaten buradan gelmeye kalksan, o zaman kosteklemek zorundaydın. Yani zaten gelemezsin de, gelmeye kalksan kosteklerdin. Çünkü eşit olduklarında mutlaka diagonalden gelmen lazım. Çünkü niye diagonalden gelmen lazım?
+
+293
+00:54:04,403 --> 00:54:16,043
+birden j-1'e kadar olan durumdur. Yani ij'ye eşitse bir önceki durum şu durumdur. Tamam mı? O yüzden diagonalden gelmek zorundasın. Orada başka çaren yok.
+
+294
+00:54:16,307 --> 00:54:32,648
+Devam ediyorum. Şimdi bu sefer ne olacak? Bakın görüyorsunuz. Ta'dan farklı. Ne yapacaksınız? Yukarıdan geleceksiniz. Tr'den farklı. O zaman şuradan gelirim. 2'ye. Değil mi? Şimdi görüyorsunuz. Evet. T, T'ye eşit. Şimdi ne olmalı?
+
+295
+00:54:35,608 --> 00:54:37,568
+Diagonalden gelceğiz hocam. Değişmeyecek.
+
+296
+00:54:38,088 --> 00:54:43,367
+2 olacak. Çok güzel. T, S'den farklı. O zaman buradan geleceksiniz. 3 olacak.
+
+297
+00:54:45,204 --> 00:54:58,463
+HA'dan farklı 3 oldu, HR'dan farklı 3 oldu. Bakın şimdi mecbur yukarıdan geliyorsunuz çünkü bir cost var bir. Yani cost olduğuna göre
+
+298
+00:54:58,771 --> 00:55:18,592
+Şurada da şöyle de var yalnız onu da yazayım, pardon özür dileyerek, değil mi? Oradan da gelebilirim çünkü. Ama şurada sadece, yani şuraya sadece yukarıdan gelebilirim. Neden? Çünkü 2 artı 1, 3 buradan gelirsem 4 olur, buradan gelirsem 5 olur. Oldu mu? Şimdi HT'den farklı.
+
+299
+00:55:19,572 --> 00:55:22,971
+Ona da şöyle geldi, diagonalden geldi.
+
+300
+00:55:22,971 --> 00:55:28,572
+H, S'den farklı, diagonalden geldi.
+
+301
+00:55:28,572 --> 00:55:31,532
+S, A'dan farklı.
+
+302
+00:55:31,956 --> 00:55:54,795
+Yukarıdan geldim, SR'den farklı, yukarıdan ve çaprazdan geldim. Lütfen atlarsam uyarım çünkü çok yakında bakınca şey olabiliyor. Beni uyarın öyle bir şey olursa. ST'den farklı, şöyle geldim ve SS'ye eşit. Nasıl geldin?
+
+303
+00:55:56,436 --> 00:56:07,656
+Diagonal'dan geldim. O zaman Edit Distance, şurada yazıyor aslında, metin artı Distance'ı 3'müş, bunu bulduk.
+
+304
+00:56:07,656 --> 00:56:08,756
+Şimdi,
+
+305
+00:56:10,643 --> 00:56:38,523
+3 olduğunu bulduk. Mesela diyelim ki şöyle bir şeyiniz vardı. Spellchaker'ınız olmayan bir kelime buldu. Diktioner dedi, dediniz ki bu kelimeye distance'ı maksimum 4 olan kelimeleri bize öner dediniz. O zaman ne olacaktı? Bunun distance'ı 3 olduğu için hiç şeyle ilgilenmeden, yani harfi unutmuş, eklemiş mi ne yapmış ilgilenmeden.
+
+306
+00:56:38,643 --> 00:56:49,303
+hemen size kelimeyi önerecekti. Sen bunu mu demek istedin diye önerecekti. Anlatabildim mi? Edit distance bu iki kelimenin ne kadar benzediğini gösteriyor.
+
+307
+00:56:49,703 --> 00:57:01,283
+Mesela böyle bir şey yapabilirsiniz. Dersiniz ki trash oldu belirlersiniz. İşte trash oldu, üç belirledim. Distance'ı, üçten küçük olan kelimeleri kullanıcıya öner dersiniz mesela.
+
+308
+00:57:02,063 --> 00:57:05,143
+Şimdi birinci çözüm bu. İkincisi ise...
+
+309
+00:57:05,143 --> 00:57:06,643
+Hocam, üç nereden geldi?
+
+310
+00:57:06,643 --> 00:57:12,643
+Anlamadım ben de. Bak şuradan geldi. Bu artık...
+
+311
+00:57:12,800 --> 00:57:22,940
+1'den N'e kadar ve 1'den M'e kadar. Şimdi X kelimem en uzunluklu bir kelimeydi, Y kelimem de en uzunluklu bir kelimeydi.
+
+312
+00:57:22,940 --> 00:57:36,620
+Şimdi şunu anlamıştın değil mi? Şurası ne demek aslında? X'de 1'den Y'inci harfe kadar, Y'de de 1'den J'inci harfe kadar olan distance demek.
+
+313
+00:57:36,860 --> 00:57:40,200
+Yani Y'inci, Y'inci, distance.
+
+314
+00:57:40,800 --> 00:57:52,620
+Dediğin şey buraya kadar olan distance. Yani ma ile, şurası öyle ya, şurası ma şöyle, şurası da art. Ma ile artı karşılaştırdı.
+
+315
+00:57:53,420 --> 00:58:03,500
+Ma ile artı karşılaştırdı. Bunun distance'ı 3 demek. Ma ve artı karşılaştırdı. Bunun distance'ı 3 demek.
+
+316
+00:58:06,739 --> 00:58:27,379
+Metz ile arts'ı karşılaştırdım. Tamam mı? Metz ile arts'ı karşılaştırdım. Bu iki kelimenin distansı üç demek. Çünkü artık burası N'e M noktası değil mi? N'e M noktası iki kelimenin tamamının distansı demek. Üç oradan geldi. Oldu mu?
+
+317
+00:58:28,148 --> 00:58:35,088
+Tamam. O zaman bir kere bunu şeyini sorayım. Zaman karmaşıklığı nedir bunun?
+
+318
+00:58:39,315 --> 00:58:43,315
+Böyle bir algoritmanın zaman karmaşıklığı nedir bu matrisi doldurmanın?
+
+319
+00:58:43,895 --> 00:58:45,115
+M çarpan değil mi?
+
+320
+00:58:45,492 --> 00:58:47,672
+Tarika, N çarpı N.
+
+321
+00:58:48,352 --> 00:58:54,032
+N de N gibi büyüklükte bir şeyse aslında N kare olur.
+
+322
+00:58:54,032 --> 00:59:03,751
+Yani eğer N de büyükse ki genelde iki kelimeden bahsettiğimize göre genelde iki kelime birbirine benzeyecektir.
+
+323
+00:59:04,992 --> 00:59:07,012
+Yer karmaşıklığınız ne?
+
+324
+00:59:13,043 --> 00:59:16,344
+Aşk olsun, çok basit ya. Ne yer karmaşıklığı?
+
+325
+00:59:17,384 --> 00:59:18,763
+N-Carp-M olaydı.
+
+326
+00:59:19,699 --> 00:59:35,139
+En çarpı, en moda. Peki, tamam. Şimdi sadece 5 dakika bir ara vereceğim. Çünkü şöyle, bugün için şu plan şu, 3. derste uygulama yapacak asistan arkadaşlar bu geçen ödevleşikliği ilgili.
+
+327
+00:59:35,699 --> 00:59:45,259
+Orada şuna hepiniz katılmaya çalışın. Çünkü 20 tane random öğrenci seçildi. O 20 öğrencinin de ödevlerine paralel olarak bakılacak.
+
+328
+00:59:45,684 --> 01:00:09,404
+Onu kaçırmamaya çalışın. Oldu mu? Ha, ödevlerinizi de hazırlayın. Yani onlar ne yaptılar bilmiyorum. Onlar mı ödevleri, yani seçtikleri ödev sizinle paylaşacaklar, sizin paylaşacaksınız bilmiyorum. Ödevlere bu şekilde paralel bakılacak. Şimdi iki geçiyor, beş dakika ara verelim, yedi geçe geri gelin. Çünkü ancak yetişir gibi bir hisse kapıldı. Yedi geçe görüşürüz.
+
+329
+01:05:56,659 --> 01:06:22,019
+Evet, şimdi kaldığımız yerden devam edelim. Şeyi bir daha çizdim ben. Şuradan da şeyi göstermek istiyorum size. Şimdi Edit Distance i j'de eğer Edit Distance i-1 j-1'den geldiyseniz, diagonal'dan gelmişsiniz demektir.
+
+330
+01:06:24,211 --> 01:06:36,911
+şey yükleyin, yani şöyle diyeyim şuraya, bir demeyeyim de, pardon şuraya, artı cost diyeyim, cost'un sıfır da olabilir, bir de olabilir.
+
+331
+01:06:37,531 --> 01:06:39,871
+Diagonalden gelmesini izlemektir.
+
+332
+01:06:41,192 --> 01:06:45,871
+EG eğer edit distance, E...
+
+333
+01:06:46,003 --> 01:07:03,003
+j-1'e bağlıysa, artı cost öyleyse, ig-1'e bağlıysa, i'inci satır, j-1'inci tutun şöyle gelmişsiniz demektir. Bu, breed olduğunu gösterir.
+
+334
+01:07:07,891 --> 01:07:18,891
+EditDistance i-1j'den geldiyse, artı cost, bu insertion olduğunu gösterir.
+
+335
+01:07:20,179 --> 01:07:42,759
+Ve yukarıdan gelmişsiniz demektir. Şimdi iki kelime arasındaki distance'ın üç olduğunu bulduk. Edit distance, maths ile arts arasındaki distance'ın üç olduğunu bulduk. Eğer bu değişikliğin neden oluştuğunu bulmak istiyorsak o zaman yapmamız gereken şey şu.
+
+336
+01:07:43,264 --> 01:07:53,824
+Şu başlangıç noktası son şey çünkü minimum distance'ın oluştuğu yer en son NM noktası.
+
+337
+01:07:54,483 --> 01:07:59,543
+Oradan geriye doğru geldiğimiz yol üzerinden gitmek.
+
+338
+01:08:00,884 --> 01:08:02,963
+Burada iki türlü davranabilirsiniz.
+
+339
+01:08:02,963 --> 01:08:03,963
+Birincisi...
+
+340
+01:08:04,820 --> 01:08:25,819
+geldiğiniz yolu tutarak gidebilirsiniz. İkincisi, o tabii daha manzraflı, hesap anında nereden geldiğinizi hesaplayarak gidebilirsiniz. Yani nedir? Şeye bakacaksınız, eğer
+
+341
+01:08:26,387 --> 01:08:44,707
+Burada, sizin de bildiğiniz gibi, yukarıdan veya soldan geliyor olsaydı şey olması gerekirdi. Buradaki değerin, yukarıdaki değerin veya soldaki değerin bir fazlasına eşit olması gerekirdi. Demek ki yukarıdan veya soldan gelmiş olamaz.
+
+342
+01:08:46,487 --> 01:08:52,868
+Diagonaldeki değere de ya kendisine eşit olacak ya bir fazlasına eşit olacak. Demek ki diagonalden geldi.
+
+343
+01:08:53,055 --> 01:09:19,915
+Şimdi bakın, burada geldiği yere bakarak şeyi bulmaya çalışalım. Nedir? Kelimeyi bulmaya çalışalım. Şimdi, S ve S aynı burada. Dolayısıyla son harfler S ve S. Ondan sonra buraya
+
+344
+01:09:20,819 --> 01:09:44,519
+şeyden gelmiş, buradan gelmiş. Bir yol bakacağım. Bakın dikkat ederseniz aslında birden fazla yol var ama ben bir tanesini seçeceğim. Siz de bir diğerini yaparsınız. O şekilde ilerleyebiliriz. Diagonalden gelmiş. S ile S aynı olduğu için. Şimdi burada H ve T'deyiz aslında. Diagonalden mi gideyim, şeyden mi gideyim?
+
+345
+01:09:45,844 --> 01:10:11,564
+Yukarıdan mı gideyim? Bakın burada iki seçenek de var. Diagonal'dan da gidebilirsiniz, yukarıdan da gidebilirsiniz. İki yerden birinden gelmiş. Hadi şeyden gidin, değişiklik olsun. Yukarıdan geleyim. Yukarıdan gelmesi ne demekti? Insursion olması demekti. Demek ki burada bir insursion olmuş.
+
+346
+01:10:12,627 --> 01:10:23,987
+Şöyle, şurada H var, burada bir insertion olmuş. Dolayısıyla H ile T'yi karşılaştırmışsınız, farklı çıkmışlar.
+
+347
+01:10:24,907 --> 01:10:30,387
+Şimdi buraya nereden geldiğine bakıyoruz. Nedir? Bir dakika.
+
+348
+01:10:31,444 --> 01:10:39,043
+Şöyle şunu bulayım, tamam buldum. Nereden geldiğine bakıyoruz. Diagonalden gelmiş buraya.
+
+349
+01:10:39,043 --> 01:10:48,043
+Diagonalden gelmesi ve puanının değişmemesi ne demek? İkisi aynıymış. Bakın gerçekten T, şöyle bakın T ile T aynı.
+
+350
+01:10:48,043 --> 01:10:58,244
+Diagonalden geldi, demek ki ikisi aynıymış. Şimdi buraya da diagonalden gelmiş ya da çaprağı, şu soldan gidebilirim isterseniz.
+
+351
+01:11:00,372 --> 01:11:01,532
+Soldan gittim.
+
+352
+01:11:02,676 --> 01:11:08,195
+Soldan gidersen, soldan gelmesi ne demek? Delete demek.
+
+353
+01:11:08,195 --> 01:11:13,316
+Soldan, ikiye soldan gelmesi demek, şöyle demek.
+
+354
+01:11:13,316 --> 01:11:18,355
+Burada bir tane delete olmuş, burada da R var demek.
+
+355
+01:11:18,355 --> 01:11:24,516
+Yani şurada A ile R'yi karşılaştırdım, aynı değil, bir fark oluşmuş.
+
+356
+01:11:24,516 --> 01:11:30,115
+Soldan geldiysem eğer buraya, bu şu demek, soldan geldiğinde delete ya.
+
+357
+01:11:30,676 --> 01:11:43,676
+Burada bir harf silinmiş, burası R olmuş demek. Şimdi buna yukarıdan geldim, zaten başka bir şey yok, yukarıdan geldim, AA, yukarıdan geldim. Dolayısıyla...
+
+358
+01:11:44,180 --> 01:12:08,000
+A, A eşit birbirine. Şimdi buraya da yine yukarıdan geldim. Yukarıdan gelmesi demek ne demek? Aslında insertion olmuş demek. Yani M insert edilmiş, karşısı boş demek. Anlaşıldı mı? Bir kere daha üzerinden geçebilirim.
+
+359
+01:12:09,200 --> 01:12:11,700
+Hocam bir kere daha kısa anlatabilir misiniz? Ben tamamlamadım ben.
+
+360
+01:12:11,984 --> 01:12:39,884
+Tamam, bir daha anlatıyorum. Şimdi bak, öncelikle nereden geldiğine bakalım. Edit Distance EG'yi hesaplarken, eğer diagonalden geldiysen Edit Distance E-1, E-1 artı cos. Yani cos 0 olabilir, iki harf birbirine eşit olabilir, cos 1 olabilir, iki harf birbirinden farklı olabilir. Delete ettiysen EG-1'den gelmişimdir. Bunu şuralarda anlattım zaten, uzun uzun anlattık.
+
+361
+01:12:39,984 --> 01:12:47,844
+ve cost1 zaten bu da bizim costumuz. Insert ettiysem yani yukarıdan geldiysem insert ettim demektir.
+
+362
+01:12:47,844 --> 01:12:58,224
+Insert etme şu, insertion x'in harfi insert edilmiş. Delete x'in kisilinmiş tamam mı? x'e göre bakıyoruz.
+
+363
+01:12:58,676 --> 01:13:26,556
+Şimdi bu mantıkla bakıyorum. Ben nasıl oluşturduğumu oluştururken oklarla işaretlemiştim zaten. Ama dedim ki ben size bunu ya kodunuzu yazarken oluşturma anında nereden geldiğinizin bütün şeylerini yazarsınız. İşte diagonalden geldiğim bilmem ne falan onları yazarak yaparsınız. Ya da o anda hesaplayabilirsiniz. İkisi de mümkün. Ben olsam ne yapardım? Ben yazardım açıkçası.
+
+364
+01:13:26,676 --> 01:13:45,896
+Yani şu matrisi oluştururken ben şu nereden geldim? Yani şu noktaya, şu diagonalden geldim. Bu noktaya soldan veya diagonalden gelmiş olurum diye bir şey tutardım.
+
+365
+01:13:47,195 --> 01:13:54,275
+Kilekler tutardım yani onu ben öyle yapardım. Ama şu anda nasıl yapıldığına bakıyoruz. Şimdi şu üçe nereden geldim?
+
+366
+01:13:54,739 --> 01:14:08,119
+Diagonalden geldim. Neden? Çünkü 3-3'e eşit. Diagonalden geldim. Belli. Şimdi 3-3'e eşit olduğuna göre demek ki aynı harf var. S ve S. Tamam mı? Aynı harf var.
+
+367
+01:14:08,243 --> 01:14:14,843
+Şimdi buraya nereden geldim? Buraya ya yukarıdan gelmiş olabilirim ya diagonalden gelmiş olabilirim.
+
+368
+01:14:15,143 --> 01:14:22,043
+Ben örnek olması açısından yani bunu seçtim. Siz buradan giderseniz ikinci bir çözüm bulacaksınız.
+
+369
+01:14:23,263 --> 01:14:27,043
+Yukarıdan gelinmiş olduğunu seçtim. Yukarıdan gelmek demek ne demek?
+
+370
+01:14:27,583 --> 01:14:30,903
+X'de bir harf insert edilmiş demek. Bu da şu demek.
+
+371
+01:14:31,463 --> 01:14:36,043
+H ve T eşit değil, H burada insert edilmiş bir harf demek.
+
+372
+01:14:36,243 --> 01:14:41,804
+Karşılığı yok demek. O yüzden böyle yaptım. H var, karşılığı yok. Tamam mı?
+
+373
+01:14:42,384 --> 01:14:49,884
+Şimdi şuradayım. T ve T birbirine eşit. Diagonalden geldim demektir. T ve T birbirine eşit.
+
+374
+01:14:50,503 --> 01:14:55,003
+Şimdi buna diagonalden geldim, buradayım. A ve R birbirinden farklı.
+
+375
+01:15:00,123 --> 01:15:01,963
+Diyagonalden gelmişim buraya.
+
+376
+01:15:02,463 --> 01:15:29,423
+Bir dakika, pardon, evet, diagonalden de gelmiş olabilirim, şeyden de soldan da ben sol seçmişim örnek olsun diye. Siz yukarıdan da gidip yeni bir çözüm bulabilirsiniz. Soldan gelmek demek, bilit oldu demek. O yüzden bakın ne yapacağım, A ile R birbirinden farklı. Burası boşluk, burada bir eklenmiş R harfi var. X'teki silinmiş çünkü, burada bir R harfi var.
+
+377
+01:15:29,811 --> 01:15:37,931
+Şimdi buna sona geldim. Şurada duruyorum şu anda. A eşittir A. Buna zaten yukarıdan gelmem gerekir. A eşittir A.
+
+378
+01:15:37,931 --> 01:15:48,291
+Şimdi yukarı gittim. A eşittir A'dan yukarı gittim. Burada fark var.
+
+379
+01:15:54,260 --> 01:16:10,020
+düzeltiyorum. Buraya yukarıdan gelmişim. Yukarıdan gelmişsen bakıyorum ne demek? Insertion demek. O yüzden mail'in karşısını boş yapıyorum. Şimdi anladın mı? Faydası oldu mu?
+
+380
+01:16:11,315 --> 01:16:14,135
+Anladım hocam, evet teşekkürler. Rica ederim.
+
+381
+01:16:14,456 --> 01:16:17,296
+Hocam, mesela, pardon. Buyurun.
+
+382
+01:16:17,635 --> 01:16:20,695
+Siz yukarı çıktınız ya, diğer diyagona'ya da gidebilirsiniz demiştiniz.
+
+383
+01:16:20,835 --> 01:16:25,155
+Öyle oraya gitseydik, bu sağ alttakinden farklı bir çıktığıma elde edecektik.
+
+384
+01:16:25,235 --> 01:16:29,755
+Hayır, hep üç elde edeceksin ama oluşma şekli farklı olacak.
+
+385
+01:16:29,915 --> 01:16:32,315
+Mesela bir tanesi, ben buraya çözümleri yazayım.
+
+386
+01:16:32,815 --> 01:16:37,615
+Siz o matriz üzerinde geri gidişlerde seçim yaparak bunu elde edin.
+
+387
+01:16:37,615 --> 01:16:39,095
+Mesela bir çözüm bu.
+
+388
+01:16:39,315 --> 01:16:58,695
+Bunun da distance'ı 3. Şurası farklı, şurası farklı, şurası farklı. Dur bir daha yazayım, orası çok karıştı. Mesela bak çözümlerden birisi şu, maths, arts, birisi şu, maths.
+
+389
+01:17:03,155 --> 01:17:22,835
+Şimdi bir örnek olarak göstereyim. Çözmeyeceğim ama göstereceğim. Siz yapın sonrasında. Mesela şöyle ya. Şimdi bak yeşil de yapıyorum şu anda. Şöyle, böyle geldi. Ben yukarı gitmiştim. Diyelim ki siz çözerken şöyle gidebilirsiniz. Çünkü neden?
+
+390
+01:17:24,627 --> 01:17:30,207
+Bu üçe yukarıdan da gelmiş olabilir, buradan da gelmiş olabilir. İkisi de doğru çözüm.
+
+391
+01:17:30,587 --> 01:17:35,147
+Dolayısıyla buradan devam ederseniz farklı bir çözüm bulacaksınız.
+
+392
+01:17:36,007 --> 01:17:38,147
+Mesela orada bunu bulacaksınız büyük bir ihtimalle.
+
+393
+01:17:38,147 --> 01:17:40,147
+Çünkü T...
+
+394
+01:17:41,140 --> 01:18:01,960
+Dur, burası. HLT farklı, diagonalden gelmesi demek iki harf farklı olduğu için, yani şurası, iki harf farklı olduğu için şey oluştu demek. Anlatabildim mi? Yani sonuç her zaman, sonuç hiçbir zaman değişmiyor ama burada ne yöre gideceğiniz önemli. Oldu mu?
+
+395
+01:18:03,444 --> 01:18:23,804
+Mesela bak burada böyle gidersin. Yani çözümü de göstermiş oldun da ne olduğunu göstermedin. Burada mecbur bunu böyle yapacağım. Ondan sonra böyle yapacağım, böyle yapacağım. Mesela bir çözüm bu. İkinci çözüm bu mesela. Bir tane daha var işte. Üçüncüsü de şöyle oluyor. Oldu mu bu şu anda?
+
+396
+01:18:24,864 --> 01:18:25,544
+Anladım hocam.
+
+397
+01:18:26,164 --> 01:18:28,664
+Tamam. Çok teşekkürler. Peki. Şimdi.
+
+398
+01:18:29,119 --> 01:18:36,119
+Buraya kadar sormak istediğiniz bir şey yoksa şeyi anlatacağım. Acele etmem gerekmiyor aslında.
+
+399
+01:18:36,119 --> 01:18:44,119
+Olmadı şey yapabilirim. Haftaya da devam edebilirim ama yapabiliyorsak bugün yapmaya çalışalım.
+
+400
+01:18:44,119 --> 01:18:52,119
+Çok kullanılan, gerçekten çok kullanılan, biz bunu görüntü işlemede kullandık şey için nedir?
+
+401
+01:18:54,068 --> 01:19:05,068
+hareket benzerliği bulmak için falan. Long-Scan-us-Sup-Sequence diye bir yöntem daha var bu tür işlerde kullanılan.
+
+402
+01:19:06,036 --> 01:19:13,216
+Özellikle şeylerde çok kullanılıyor Long-Squid, Subseconds, Bioinformatik'te çok kullanılıyor.
+
+403
+01:19:13,216 --> 01:19:29,096
+Aslında burada yaptığımız şey, iki stringde ardışık gelen şeylerden, harflerden benzer olan bir alt grup bulmaya çalışma.
+
+404
+01:19:34,036 --> 01:19:38,536
+Birinci, duşelizim.
+
+405
+01:19:46,963 --> 01:19:59,844
+ACGT'lerden oluşuyor mesela. Diyelim ki şöyle bir X-stringimiz var, ATCTGAT diye. Şöyle bir Y-X-stringimiz var, TGCATA falan.
+
+406
+01:20:00,000 --> 01:20:19,980
+diye bunun şeyini bulmaya çalışıyorsunuz. Ortak en uzun grubunu bulmaya çalışıyorsunuz. Burada şeylerden fark, yani aralarda eklemeler, çıkarmalar, bilmem ne falan olabilir ama arka arkaya devam eden en uzun benzer grubu yakalamaya çalışıyorsunuz.
+
+407
+01:20:26,228 --> 01:20:42,468
+Mesela TCTA oluyormuş, TGAT oluyormuş. Baktığınız zaman, şöyle göstereyim, TCTA. Bunlar şimdi arka arkaya gelecekler. Yani sıra bozulmayacak.
+
+408
+01:20:43,608 --> 01:20:51,888
+Yani bir önden bir arkadan falan değil. Resmen şöyle gidiyor işte. T'yi aldınız, C'yi aldınız, T'yi aldınız, A'yı aldınız.
+
+409
+01:20:54,228 --> 01:21:18,528
+T, C, T, A şeklinde bir ortak en uzun sequence gibi. Yani burada genelde şu anlaşılmaya çalışıyor. Aslında elinizde uzun bir bilgi var. Aralarda o bilgiyi bozan bir şeyler var. Ben o uzun bilginin ortak en uzun olduğu bölümünü bulmaya çalışıyorum.
+
+410
+01:21:18,528 --> 01:21:21,528
+Şimdi ben bunu brute force bir yaklaşımla yap...
+
+411
+01:21:22,228 --> 01:21:47,828
+Bilgiyi brute force bir yaklaşımla bulmaya çalışırsam, yani şey yapmak zorundayım, işte bir X stringim var, bir de Y stringim varsa, X'in bütün şeylerini, sub-sequence'larını Y ile karşılaştırmaya kalkarsam, her karşılaştırma en adım olsa,
+
+412
+01:21:48,595 --> 01:21:51,455
+Aslında brute force yaparsan
+
+413
+01:21:54,003 --> 01:22:09,884
+Yine eksponansiyel 2 üzeri m eğer x en uzunluklu bir string ise şeyi bulmaya çalıştığımda y ile x'in Long-Gus-Cum'un Subsequence'ini bulmaya çalıştığımda böyle bir eksponansiyel sonuç elde edelim.
+
+414
+01:22:10,324 --> 01:22:20,623
+O da tabii çok mantıklı değil. Yani böyle bir problemi brute force yaklaşımla çözmek çok mantıklı değil. O zaman başka bir çözüm bulmam gerekecek.
+
+415
+01:22:20,895 --> 01:22:48,895
+Şimdi tahmin edersiniz ki çözümümüz ne? Dinamik programlama kullanmak. Çünkü dinamik programlamada artık bunu anladınız herhalde. Ben alt şeylerle, alt çözümler aslında hepsi kendisinden önce gelen çözümlerde elde edilen sonuçlardan faydalanıyor. Yani burada bunun iki üzeri M olmasının sebebi her seferinde farklı şeyleri deneyip denerken bir önceki denediği çözümlerden bir şey.
+
+416
+01:22:48,895 --> 01:23:06,895
+tecrübesinden hiç faydalanmaması. Yani biri aldım, ikiye aldım, üçü aldım, beşi aldım, ne olacak diyor. Sonra beşi çıkarttım, dördü koydum. Üçle beşi çıkarttım dediğinizde falan bir önceki tecrübenizi kaybetmeye başlıyorsunuz. O yüzden de eksponansiyel bir çözümümüz oluyor.
+
+417
+01:23:07,055 --> 01:23:22,355
+Ama ben bunu bir şeyde tutarsam, yine bir memoriyle tutup da, yani artık bu dizimi olur, matrisimi olur bir yerde tutarsam önceki sonuçları, o zaman yine aynı mantıkla ne olacak?
+
+418
+01:23:23,435 --> 01:23:28,795
+N çarpı N karmaşıklıkla problemi çözebilir hale gelmiş olacağım. Olay bu.
+
+419
+01:23:30,015 --> 01:23:31,795
+Peki, o zaman önce...
+
+420
+01:23:32,595 --> 01:23:36,035
+Subsequence'ın ne olduğundan başlayalım.
+
+421
+01:23:40,948 --> 01:23:46,948
+Bir kelimenin sub-sequence diye anlatılan yani alt…
+
+422
+01:23:48,020 --> 01:24:13,380
+Alt dizilim aslında bu. Çünkü sıranın da bozulmaması gerekiyor. Yani üçüncü harften sonra birinci harf gelemez. Bunun da sağlanıyor olması gerekiyor. Örneğin yakamoz diye bir kelimeniz varsa bundan şeyler çıkartabilirsiniz. İşte yak dediğimiz de bir subseqüonstür. Yaka işte yama.
+
+423
+01:24:14,707 --> 01:24:26,707
+yaz böyle gider bu. Yani bir sürü sub-sequence çıkartabilirsiniz. Bu şey nedir? Bir kelimenin kendi şeyi.
+
+424
+01:24:28,659 --> 01:24:56,439
+Sequence. Ama ben şunu dersen, benim bir x kelimem var. İşte x1, x2, xm, m karakterden oluşan. Bir de y kelimem var. y1, y2, ym, m karakterden oluşan. Bunun sequence'ını dersen, bunun sequence'ı şöyle bir şey olmalı. Önce şuradakini söyleyeyim.
+
+425
+01:24:56,659 --> 01:25:20,659
+Bu da şöyle olması gerekiyor harfler için. Seçtiğiniz harflere Y1, İ2, İ3, İK dersek bunların artan sırada olması gerekiyor. Yani şöyle, yama dediğimiz zaman Y birinci harf, A ikinci harf, M bir, iki, üç, dört, beşinci harf.
+
+426
+01:25:21,524 --> 01:25:47,104
+A'da 6. harf. Yani şöyle bir şey mümkün değil sequence dediğimizde. Birinci harf, üçüncü harf, ikinci harf, yedinci harf, ondan sonra dördüncü harf. Böyle bir şey mümkün değil. Mutlaka seçtiğiniz kelimeyi oluşturan harflerin orijinal stringte bulunma sıralarının küçükten büyüye olması gerekiyor. Bu önemli yani. Buna dikkat edin.
+
+427
+01:25:47,104 --> 01:25:49,104
+Subsequence denme de o yani.
+
+428
+01:25:49,524 --> 01:25:58,524
+nasıl oluşturması gerekiyor? O zaman benim en uzunluklu bir X-stringim varsa, şey uzunluklu da...
+
+429
+01:25:58,804 --> 01:26:20,804
+En uzunluklu da bir y-stringim varsa, benim istediğim şey, bu ikisinin longest common sub-sequence, ikisinin ortak olan harflerinden oluşan bir sequence oluşturmak aslında, yapmak istediğim şey bu.
+
+430
+01:26:21,460 --> 01:26:31,460
+Yani şunu istiyorum ben, ikisinin orta kalplerinden oluşan bir en uzun grubu bulmak istiyorum.
+
+431
+01:26:31,460 --> 01:26:41,460
+Peki, şimdi o zaman bunun nasıl yapılacağını bulalım. Şimdi diyelim ki benim iki tane stringim olsun.
+
+432
+01:26:42,420 --> 01:27:02,380
+x'im a, c, g, t olsun, y'im de g, t olsun. Şimdi ben burada şu t harflerine gelmiş olayım. Şurası benim x, i'm, burası da benim y, j'm.
+
+433
+01:27:06,804 --> 01:27:22,144
+Burada durum ne? X'i eşittir, y, j. Yani birinci durum, az önceki gibi hareket ediyoruz aslında. X'i eşittir, y, j olması durumu.
+
+434
+01:27:22,144 --> 01:27:28,903
+Şimdi X'i, y, j'ye eşitse o zaman nedir?
+
+435
+01:27:29,652 --> 01:27:42,111
+Longus common subsequence eg neye eşittir? Bu alt problem neye eşittir? Bir önceki durumda ne olduysa, değil mi? Ay bir türlü yapamadım.
+
+436
+01:27:45,171 --> 01:28:01,511
+Buraya ben nereden geldim? i-1, j-1 durumuna geldim. Yani i'inci karakterle j'inci karakteri karşılaştırıp bunların eşitliğine bakıyorsam, bundan bir önce de mantıken i-1. ile j-1.yi karşılaştırmışımdır, değil mi?
+
+437
+01:28:01,991 --> 01:28:08,271
+Buraya buradan gelmişimdir. x'den önce i-1 var, x'i'den önce, y'j'den önce de y'j-1 var.
+
+438
+01:28:13,171 --> 01:28:27,171
+y karaktere kadar x'de, jinci karaktere kadar y'de, longus common subsequs neye eşittir? Bir önceki durumda elde ettiğim sonuca bir eklerim değil mi?
+
+439
+01:28:30,260 --> 01:28:35,859
+Çünkü burada bir ekleme sebebi ortak bir karakter daha var.
+
+440
+01:28:43,315 --> 01:29:07,695
+ve ortak olan grubun uzunluğunu bir arttırdım demek. Tamam mı? Case değil bu. X'in y, j'ye eşit olmasıdır. Şimdi bir de şu olabilir diyelim ki, X'iniz A, C, G, T, Y'iniz de G, C ve siz şu anda şuradasınız. Şurası X, Y'niz.
+
+441
+01:29:08,756 --> 01:29:23,516
+Şurası da Y, J, Nes ve ikinci keyzinizde X'i'nin burada gördüğümüz gibi Y, J'ye eşit olmama durumu.
+
+442
+01:29:24,976 --> 01:29:30,416
+Şimdi X, Y, J'ye eşit değilse bunun anlamı ne?
+
+443
+01:29:31,176 --> 01:29:32,716
+Bunun anlamı
+
+444
+01:29:34,323 --> 01:29:59,943
+Şöyle bir şey olabilir, ya X'i şeyin bir parçası değil, G, J'nin bir parçası değil, şey, aman özür dilerim, ya X'i bu subsequence'ın bir parçası değil, ya G, J'yi bir parçası değil ya da ikisi birden değil. Yani şunu demek istiyorum, ya T yok, ortak stringte, ya C yok.
+
+445
+01:30:00,692 --> 01:30:02,692
+Belki de ikisi birden yok değil mi?
+
+446
+01:30:04,452 --> 01:30:05,731
+Üç tane seçenek var.
+
+447
+01:30:07,171 --> 01:30:08,311
+Şimdi eğer
+
+448
+01:30:08,311 --> 01:30:09,532
+x'i
+
+449
+01:30:09,532 --> 01:30:11,351
+yoksa
+
+450
+01:30:11,351 --> 01:30:14,692
+ortak
+
+451
+01:30:14,692 --> 01:30:16,771
+yani common subsecondsda
+
+452
+01:30:28,819 --> 01:30:29,739
+Öğrenç
+
+453
+01:30:38,068 --> 01:31:03,008
+Bakacağımız alt problem, x'in i-1. y'nin j'incisinin durumu neyse, çünkü x'i yok yani, bu ortak stringin bir parçası değil, x'i-1 y'j'den gelmişim demektir.
+
+454
+01:31:13,939 --> 01:31:25,499
+Y, J bu ortak parçanın içinde olmayabilir. O zaman da Y, J yoksa da şeyden gelmişim demektir.
+
+455
+01:31:30,163 --> 01:31:39,983
+x, y, y, j, pardon, y, j, y-1'den gelmişim demektir.
+
+456
+01:31:40,043 --> 01:31:47,523
+y, j yok işin içinde. Yani buradaki durumda bu şekilde düşünmemiz gerekir.
+
+457
+01:31:47,523 --> 01:31:51,064
+Yani y, j şeyin ortak grubun parçası değil.
+
+458
+01:31:53,395 --> 01:32:08,395
+Şimdi o zaman demek ki aslında bu durumlara göre yani şimdi şeyleri anladım. İki tane durum var ya iki harf birbirine eşitse ikisi de bu ortak kelimenin bir parçası olacaklar.
+
+459
+01:32:08,724 --> 01:32:17,724
+Eğer farklılarsa ya biri yok o şey ortak kelimede, ya öbürü yok ya da ikisi birden yok.
+
+460
+01:32:18,884 --> 01:32:24,104
+X yoksa, x'i eksi bir y, j'deki durum neyse oradan gelmişiz demektir.
+
+461
+01:32:24,564 --> 01:32:28,984
+Y yoksa da x'i y, j, eksi birdeki durum neyse oradan gelmişiz demektir.
+
+462
+01:32:29,083 --> 01:32:30,123
+Belki de ikisi de yok.
+
+463
+01:32:31,704 --> 01:32:33,100
+O zaman...
+
+464
+01:32:36,979 --> 01:32:52,659
+Bu şu demek, x'de i'inci, y'de j'inci karaktere kadar olan ortak alt string.
+
+465
+01:32:59,155 --> 01:33:07,796
+n-uzunluğu. Biz uzunluk hesaplıyoruz, sonra stringi bulacağız. Ne olduğunu bulacağız. Ah, stringin uzunluğu.
+
+466
+01:33:07,796 --> 01:33:22,355
+Neye eşittir? Eğer i eşittir 0 veya j eşittir 0 ise ortak bir şey yok. Orası 0. O yine klasik bir initialization durumu.
+
+467
+01:33:30,484 --> 01:33:39,984
+i de j de sıfırdan büyükse ve x i y j ye eşitse, o zaman i-1 j-1 anındaki duruma 1 ekliyorum.
+
+468
+01:33:43,444 --> 01:33:54,064
+Eğer birbirlerinden farklıysa, ya i j-1'den ya da i-1 j'den gelmişimdir.
+
+469
+01:33:54,663 --> 01:34:08,123
+Ama bunların maksimumunu alacağım. Neden? Çünkü şimdi ortak en uzun alt kelimeyi bulmaya çalıştığına göre bunların maksimumunu almam gerekir.
+
+470
+01:34:09,076 --> 01:34:11,315
+Rekürans bantımı bu şekilde kuruyorum.
+
+471
+01:34:20,595 --> 01:34:28,996
+Şimdi buraya kadar tamamsa, yine bir örnek üzerinden anlatayım. Sorunuz varsa sorunuzu alayım.
+
+472
+01:34:29,435 --> 01:34:41,335
+Şöyle olsun, x'iniz B, A, C, D, B gibi bir string olsun. Y'niz de B, D, C, B gibi bir string olsun.
+
+473
+01:34:45,460 --> 01:34:50,580
+İsterseniz bunları bir bakarak ilerleyelim. Ondan sonra konuşalım.
+
+474
+01:35:32,627 --> 01:35:38,467
+Şimdi burası ilk durum, i'nin 0, j'nin 0 olduğu durum. Ortak bir şey olmaması sebebiyle.
+
+475
+01:35:39,007 --> 01:35:44,427
+Yani şurada x'in karşısında kimse yok, burada da y'nin karşısında kimse yok.
+
+476
+01:35:44,907 --> 01:35:50,207
+O yüzden initial üzerine ekleyerek gittiğimiz için mutlaka bu initial duruma dikkat etmemiz gerekir.
+
+477
+01:35:50,807 --> 01:35:53,887
+O da nasıl oluyor? Yani nereden geliyor o zaman?
+
+478
+01:35:54,887 --> 01:35:56,947
+Buradan böyle geliyor, şöyle.
+
+479
+01:35:58,707 --> 01:35:59,847
+Şu da şöyle geliyor.
+
+480
+01:36:02,323 --> 01:36:05,183
+Ortak olmadığı için öyle geliyor.
+
+481
+01:36:05,923 --> 01:36:07,283
+Şimdi başladık.
+
+482
+01:36:08,023 --> 01:36:09,023
+B ile B aynı.
+
+483
+01:36:09,223 --> 01:36:11,803
+B ile B aynıysa ne olacak?
+
+484
+01:36:12,843 --> 01:36:14,423
+Şu durum geçerli.
+
+485
+01:36:15,223 --> 01:36:16,983
+X'i eşittir, Y, J.
+
+486
+01:36:17,103 --> 01:36:19,863
+Yani i-1, J-1'den geleceğim artı 1.
+
+487
+01:36:19,863 --> 01:36:23,223
+Yani bir önceki durum neyse.
+
+488
+01:36:25,108 --> 01:36:49,728
+x'in i-1, y'nin de j-1. karakterleri için durum neyse ki o ilk durum olduğu için hiçbir şey aslında. Oradan geleceğim. 1. Şimdi B ile D farklı. B ile D farklı olduğunda sequence'ın uzunluğu değişmeyecek. Yani farklılar çünkü. Hangisi büyükse onu olacağından buradan geleceğim.
+
+489
+01:36:53,108 --> 01:37:01,807
+Bakın, aslında şu satır için şunu yapıyorum. X'de B var, Y'de de BD var. Şu anda bakın şu nokta.
+
+490
+01:37:02,420 --> 01:37:14,420
+Burada B var, burada da BD var. Bu ikisinin sub-sequence'na baktığınızda nedir? B'dir zaten. Uzunluğu da 1'dir. Soldan geldim o yüzden.
+
+491
+01:37:14,420 --> 01:37:21,420
+Aynı şekilde B ile şimdi BDC'yi karşılaştırıyorsunuz aslında burada. Düşünürüm.
+
+492
+01:37:24,851 --> 01:37:50,112
+Şunu bir yapayım, şöyle de renkler karışmasın. O da bir, o da soldan geldi. Neden? Çünkü B ile BDC'yi karşılaştırdığınızda bunun da en uzun ortak stringi B'dir. Aynı mantıkla şimdi bakın B ile B'yi karşılaştırdık. O zaman bunu diyagonalden almanız gerekiyor. Şöyle.
+
+493
+01:37:50,771 --> 01:38:03,511
+Bu da şu demek, neden öyle? Çünkü B ile B'de C, B'yi karşılaştırıyorsunuz. X, B şu anda. Y'de de B'de C, B'yi karşılaştırıyorsunuz.
+
+494
+01:38:03,511 --> 01:38:09,711
+Bir tane B var, ya budur o ya da budur. Diyagonalden geldik, yani ilk B'miş gibi.
+
+495
+01:38:10,531 --> 01:38:18,251
+Bir, yani soldan gelemezsiniz çünkü eşitse diyagonalden geliyorsunuz bir önceki durum, diyagonaldeki durum. O yüzden o, o şekilde.
+
+496
+01:38:18,771 --> 01:38:31,771
+A ile B'yi karşılaştırdık. Orada ne yapacağım? Yukarıdan alıyorum. A ile D'yi karşılaştırdım. Şimdi A ile D'yi karşılaştırdığımda...
+
+497
+01:38:39,347 --> 01:38:42,347
+A ile D'yi karşılaştırdığında
+
+498
+01:38:42,347 --> 01:38:47,748
+Şöyle, pardon
+
+499
+01:38:54,163 --> 01:39:04,163
+Bir, şeyden alıyorum, yani ya soldan alıyorsunuz aslında A ile D'yi karşılaştırdığında ya da yukarıdan alıyorsunuz.
+
+500
+01:39:05,443 --> 01:39:09,143
+Yani soldan da alabilirsiniz, yukarıdan da alabilirsiniz.
+
+501
+01:39:10,263 --> 01:39:12,903
+A ile C'yi karşılaştırdığında
+
+502
+01:39:13,684 --> 01:39:22,684
+Yine aynı şekilde maksimum mesafeniz bir. Yani şu anda BA ile...
+
+503
+01:39:22,944 --> 01:39:42,744
+B, D, C'yi karşılaştırdım. B, A ile B, D, C'yi karşılaştırdım. O yüzden distance aslında bir tek B'ler uygun olduğu için bir. A ile B'yi karşılaştırdım. Yine bir.
+
+504
+01:39:47,828 --> 01:40:14,228
+K ile B'yi karşılaştırdım, bine bir. Burada da şöyle yapayım. Süreye şey olacağı için şeyi size göstermeyeceğim aslında şu anda. Şöyle inc-1 veya şuradan şöyle geldim, ikisi de uygun. C ile B'yi karşılaştırdım, bir. C ile D'yi karşılaştırdım, bir. C ile C'yi karşılaştırdım, şimdi iki oldu.
+
+505
+01:40:15,507 --> 01:40:28,247
+C ile B'yi karşılaştırdım, 2. Çünkü şu anda B, A, C ile B, D, C, D'yi karşılaştırdınız. B, C, B, C, 2 oldu şu anda.
+
+506
+01:40:29,127 --> 01:40:40,328
+D ile B'yi karşılaştırdım, 1. D ile D'yi karşılaştırdım, şimdi 2 oldu. Neden? Çünkü ortak bir harf daha oluştu.
+
+507
+01:40:43,507 --> 01:40:46,627
+İki, yani şuradan veya şuradan geldim.
+
+508
+01:40:47,127 --> 01:40:49,268
+B ile B'yi karşılaştırdım.
+
+509
+01:40:49,507 --> 01:40:51,887
+İki, şuradan veya şuradan geldi.
+
+510
+01:40:52,568 --> 01:40:54,528
+B ile B'yi karşılaştırdım.
+
+511
+01:40:54,787 --> 01:40:55,127
+Bir.
+
+512
+01:40:59,768 --> 01:41:02,587
+B ile D'yi karşılaştırdım.
+
+513
+01:41:02,887 --> 01:41:03,307
+İki.
+
+514
+01:41:04,047 --> 01:41:06,167
+B ile C'yi karşılaştırdım.
+
+515
+01:41:07,688 --> 01:41:08,448
+İki.
+
+516
+01:41:09,619 --> 01:41:37,612
+B ile B'yi karşılaştırdım, 3. Şimdi buradan şunu gördüm. İki stringin ortak en uzun stringinin uzunluğu 3. Bunlar işte şeyler olabilir. Mesela
+
+517
+01:41:38,323 --> 01:41:40,323
+B...
+
+518
+01:41:44,979 --> 01:41:57,059
+B, C, B olabilir. Ortak substring ikisinde de geçen. B, D, B olabilir. Ortak ikisinde de geçen. Bu stringler olabilir.
+
+519
+01:41:57,059 --> 01:42:10,859
+Şimdi burada keseceğim çünkü şeye geçmeniz gerekecek. Öbür tarafa geçmeniz gerekecek. O yüzden şey yapacağım, keseceğim ama
+
+520
+01:42:11,444 --> 01:42:27,123
+Önümüzdeki hafta bunun algoritmasını anlatmayı istiyorum. Önümüzdeki hafta nasıl oluşturulduğunu anlatacağım size olur mu?
+
+521
+01:42:27,444 --> 01:42:55,444
+Geriye dönmenin, şimdi bu üç, Longus Camus Abseqlansımızın uzunluğu üç. En fazla üç harfli kelimelerden oluşturulur. Ama hangi harfleri aldığınızı, nasıl bulacağınızı, yani onun nasıl bulunduğunu önümüzdeki hafta anlatayım. Şu anda beş dakikada anlatmak mümkün olmayacağı için. Çünkü onu bu sefer harfleri seçerken daha ilk başta hangi yoldan gidecek?
+
+522
+01:42:55,444 --> 01:43:05,444
+işeceğinize karar verirken işaretlemeniz gerekiyor. Onun için onu önünüze kâta anlatacağım. Bu haliyle buraya kadar sormak istediğiniz bir şey var mı?
+
+523
+01:43:10,068 --> 01:43:12,468
+Buraya kadar sormak isteniz bir şey var mı?
+
+524
+01:43:16,435 --> 01:43:17,435
+Pitch mi oku.
+
+525
+01:43:21,492 --> 01:43:47,652
+Peki, o zaman şimdi şöyle, 4 dakika sonra, ha yok ara veriyoruz, pardon doğru ya, şimdi 10 dakika ara olacak. Ben size Yersiz üzerinden link göndereceğim. Çünkü geçen seferki uygulamada benim grubun üzerinden gidilmişti. Şimdi Amaç Bey'in grubunun üzerinden gidilecek. Ben size link vereceğim. O link üzerinden uygulama sınıfına bağlanmış olacaksınız.
+
+526
+01:43:49,492 --> 01:43:52,892
+İki sınıftan onar tane random kişi seçildi.
+
+527
+01:43:53,731 --> 01:44:00,592
+Yirmi kişinin ödevine çağrılarak bakılacak.
+
+528
+01:44:00,852 --> 01:44:05,532
+Yani Zoom üzerinden karşılıklı soru sorularak bakılacak.
+
+529
+01:44:06,032 --> 01:44:15,832
+O yüzden katılıp takip edin ki eğer sizin isminiz var ise o şeyi kaçırmayın, değerlendirmeyi kaçırmayın.
+
+530
+01:44:15,832 --> 01:44:16,771
+Sorunuz var mı?
+
+531
+01:44:18,868 --> 01:44:22,648
+Hocam, diğer ödev ve vize açıklandı mı? Ben kaçırdım.
+
+532
+01:44:22,667 --> 01:44:29,887
+Haa, doğru söyledin, evet. O ödev için de şey dedik, cumartesi sabahı vereceğiz, dinamik programlama ile ilgili bir ödev vereceğiz dedik.
+
+533
+01:44:32,248 --> 01:44:36,507
+Notlar açıklandı mı diye sormuştum aslında, ilk ödevin ve vizenin notları.
+
+534
+01:44:37,627 --> 01:44:43,587
+Vize açıklanmadı, ödevler de açıklanmadı. Ödevi zaten çarşamba vermediniz mi? İkinci ödevi.
+
+535
+01:44:44,884 --> 01:44:49,203
+Birinci ödev de açıklanmadı diyebiliyorum ama onu mu kaçırdın?
+
+536
+01:44:49,423 --> 01:44:54,763
+Hayır, birinci ödev de açıklanmadı çünkü birinci ödev için şeyi beklemek zorunda kaldık.
+
+537
+01:44:55,884 --> 01:45:00,323
+Biliyorsunuz sistemde ödevler dağınık bir şekilde duruyordu.
+
+538
+01:45:00,443 --> 01:45:03,384
+Bütün ödevleri birlikte indirmek mümkün olmuyordu.
+
+539
+01:45:03,844 --> 01:45:05,703
+Bir de isimler de karışık duruyordu.
+
+540
+01:45:05,703 --> 01:45:10,703
+O yüzden asistanların onları toparlaması...
+
+541
+01:45:12,884 --> 01:45:22,583
+İlerişim hakkımız olduğu için her ödev ayrı isimde, yani siz bizim uyarılarımıza rağmen herkes kafasına göre verdiği için falan çok zordu.
+
+542
+01:45:23,443 --> 01:45:27,243
+Şeyle konuştuk, üzenle şey olacağını bildirdiler bize.
+
+543
+01:45:27,683 --> 01:45:34,943
+Toplan indirme aktif olacak diye bildirdiler. Onu bekledik. Ondan ötürü bir zaman kaybetti asistan arkadaşlar başlamak için.
+
+544
+01:45:35,344 --> 01:45:40,884
+Şeyi de biz rica ettik. Bu ödevin bu şekilde şey değerli...
+
+545
+01:45:40,884 --> 01:45:53,583
+değerlendirilmesini rica ettik. Canlı değerlendirilmesine, random öğrenci. Herkese, şimdi orada onu açıklayayım. İki sınıfta yaklaşık 150 kişi olduğu için hesapladık.
+
+546
+01:45:53,623 --> 01:46:05,384
+150 kişiyi eskiden geçen yıllarda yaptığımız gibi, size de geçen senelerde, veri yapılarında da yapmıştık mesela. İlk başlarda sanıyorum yapabildiğimiz labo oldu gibi geliyor bana.
+
+547
+01:46:06,323 --> 01:46:08,884
+Herkesi laboratuvarda tek tek kontrol ediyoruz.
+
+548
+01:46:08,884 --> 01:46:10,323
+Söyleyordu arkadaşlar işte.
+
+549
+01:46:10,847 --> 01:46:38,307
+Soru sorarak vs. Fakat hesapladık, bu da çok zor. 150 kişiyi Zoom'da tek tek gruplara da ayırsalar, çok ciddi zaman gerekiyor. O yüzden dedik ki random kişi seçerek yapalım. 20 kişi seçtiler, onar onar. Şimdi onun için de önce ikinci ödevi okuyun dedik, zaman kaybetmemek için. Yani hem biri okusalar, hem ikiyi okusalar yetiştiremeyecekler.
+
+550
+01:46:38,847 --> 01:46:55,847
+İkiyi de genel okuttuk, o da ayrı bir şey. İkiyi genel okuyun, oradan 20 kişi seçin, şey olarak, random olarak. Genel problemleri belirleyin, dersi anlatmak için dedik. Yani nelerde sıkıntı yaşanıyor falan. Dolayısıyla önüne ikiyi aldılar, arkada bir var.
+
+551
+01:46:56,659 --> 01:47:23,779
+Öyle yani, hani bir süre sonra öğrenirsiniz notlarınızı. Şey çok kolay değil arkadaşlar. Burada gerçekten şey daha zor oluyor. Her şeyi değerlendirmesi daha zor oluyor. Yani gelen kağıtları bilgisayar ortamında, yani bir kağıdın üzerinde hataları yaza yaza gidip de puanlamak ayrı. Burada böyle tek tek şey çıkartıyorsun. Öğrencinin kağıdında gördükçe hataları.
+
+552
+01:47:24,659 --> 01:47:32,420
+Onlar da biz de bayağı bir sıkıntı çekiyoruz işleri yaparken. Neyse, özet olarak daha açıklanan bir şey yok.
+
+553
+01:47:32,819 --> 01:47:37,680
+Peki, şimdi size ben Yusiz üzerinden göndereceğim. Haftaya görüşmek üzere.
+
+554
+01:47:37,699 --> 01:47:39,039
+Hocam bir soru sorabilir miyim ben?
+
+555
+01:47:39,460 --> 01:47:39,819
+Doğru.
+
+556
+01:47:40,640 --> 01:47:47,500
+Benim bundan sonraki bu lap saatinde bir toplantma olacağı için katılamayacağım da değerlendirilmeyecek mi katılmayanların ödevleri?
+
+557
+01:47:47,500 --> 01:47:50,500
+E maalesef yani eğer şeyse...
+
+558
+01:47:50,996 --> 01:47:55,996
+Yani toplantı, sen öğrencisin, ders saatinde de olmaması gerekiyor toplantının.
+
+559
+01:47:56,536 --> 01:48:02,036
+Eğer kurağada sen çıktıysan ve sen yoksan, notum ona göre değerlendirecek.
+
+560
+01:48:02,195 --> 01:48:03,836
+Yani o konuda yapacak bir şeyimiz yok.
+
+561
+01:48:04,315 --> 01:48:05,376
+Tamam, teşekkürler.
+
+562
+01:48:05,636 --> 01:48:06,336
+Rica ederim.

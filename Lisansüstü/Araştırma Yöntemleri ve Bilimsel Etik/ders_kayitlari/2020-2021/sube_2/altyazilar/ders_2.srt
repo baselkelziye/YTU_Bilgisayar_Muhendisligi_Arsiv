@@ -1,0 +1,1195 @@
+1
+00:02:38,515 --> 00:02:40,615
+Evet, merhaba arkadaşlar.
+
+2
+00:02:46,804 --> 00:02:47,884
+Sesim geliyor değil mi?
+
+3
+00:02:50,364 --> 00:02:51,764
+Evet hocam geliyor.
+
+4
+00:02:52,264 --> 00:02:53,463
+Tamam, teşekkürler.
+
+5
+00:02:54,984 --> 00:03:01,683
+Şimdi, bugün sizinle bilgiye erişim kısmını konuşacağız.
+
+6
+00:03:01,683 --> 00:03:07,723
+Yani bilimsel bir araştırma yapacağınız zaman neye ihtiyacınız var?
+
+7
+00:03:07,924 --> 00:03:10,604
+En azından bir literatür taraması yapmaya ihtiyacınız var.
+
+8
+00:03:10,743 --> 00:03:12,804
+Dolayısıyla bu literatüre nasıl ulaşacaksınız?
+
+9
+00:03:13,231 --> 00:03:32,932
+Ulaştığınız bu literatür taraması sonucunda ulaştığınız bu bilgi ve belgelerin doğruluğunu, kalitesini nasıl tartacaksınız? Bunları konuşacağız. Bu yapı içerisinde, bu erişim kanalları içerisinde önemli rol oynayan indekslerden biraz bahsedeceğiz. Nedir, ne değildir, ne işe yarar, ne farkı vardır vs. gibi.
+
+10
+00:03:40,243 --> 00:03:57,223
+Bikiracağız. Bir saat gibi bir sürede toparlamamız gerekecek. Maalesef bu online sistemde çok fazla toplantı ve çok fazla görüşme olduğu için zamanlar birbiriyle çakışıyor derslerle de.
+
+11
+00:03:57,783 --> 00:04:00,364
+Bu yüzden biraz hızlı yapmaya çalışacağım.
+
+12
+00:04:01,075 --> 00:04:10,995
+Ama şey konusunda takılmayın. Kapınıza takılan, anlamadığınız, aklınıza yakmayan bir yerler olduğunda lütfen sorun. Rahat rahat konuşuruz, şey yapmayın.
+
+13
+00:04:11,656 --> 00:04:15,795
+Şimdi bilgiye erişim için bizim temel kaynağımız kütüphane.
+
+14
+00:04:16,660 --> 00:04:43,480
+Kütüphane dediğimiz zaman aklımıza aslında birkaç şey geliyor. En temel geleni kitaplar tabii ki. Kütüphanemizde 2015'teki raporlarına göre, daha güncel bir rapor yayınlanmış oldukça ben takip etmemiştim. Her son o zamankine bakmıştım. 130 bin kitaplar. Her sene yeni kitaplar alınıyor bir şekilde. İstekler doğrusu da öğretim yönenin ve öğrencilerin istekleri doğrusu da. Her zaman birebir tutmasa da.
+
+15
+00:04:43,855 --> 00:05:05,716
+Bir eforları var. Bunun dışında da yakın zamanda bir toplantı sözlü ifade edilmişti. O yüzden buradaki rakamı onu güncelleyebilirim. 15 bine yakın tez var yapılmış o anda. Yüksek lisans ve doktora tezi. Bu tezlere aslında başka kanallardan online olarak erişebiliyorsunuz. Ama bunların bir kısmı tarihi itibariyle geçmiş tarihi olabilir.
+
+16
+00:05:10,675 --> 00:05:13,436
+Aslında biz normal şartlar gibi araştırma yapak.
+
+17
+00:05:14,548 --> 00:05:34,268
+Dönüp de 1950'lere, 1980'lere pek bakmıyoruz. Daha az bakıyoruz. Geriye doğru bir tarama yaparken her zaman için bulduğumuz yayınların kalitesine ve kabul edilebilirliğine bağlı olarak da son 5-10 yıllık range'in dışına çok fazla gitmiyoruz aslında.
+
+18
+00:05:34,268 --> 00:05:42,528
+Ama belli olmuyor. Baten daha öncesinde de çok güzel ya da çok önemli şeyler çıkabiliyor. Dolayısıyla araştırma yapacağınız zaman bu da aklınızda.
+
+19
+00:05:42,548 --> 00:06:01,548
+Bunlar aslında kütüphanenin size sunduğu fiziksel imkanlar. Yani gidip orada birebir bir kitap okumanız, bir tezi aramanız, bulmanız, okumanız gibi şeyler mümkün. Bunun dışında kütüphanenin elektronik olarak üye olduğu, subscription'ların olduğu başka...
+
+20
+00:06:03,028 --> 00:06:10,028
+İndeksler, rakitmaneler var. Bunlardan da faydalanabiliyorsunuz. Gerçi bunların temel faydalanma prensibi...
+
+21
+00:06:11,536 --> 00:06:25,355
+Kampüsün içerisindeyken bundan faydalanmak, yani bir öğrenci, üniversite öğrencisi, bizim üniversitemizin bir öğrencisi bu kaynaklara erişmeye kalktığı zaman onun üniversite içerisinde olup olmadığı sorgulanıyor.
+
+22
+00:06:26,436 --> 00:06:36,255
+Üniversite içerisinde olmadığı da genelde üniversitenin kullandığı belli bir IP range var, IP adres aralığı var. O adres aralığı içerisinde bir adresden bağlanmadığına bakıyorlar.
+
+23
+00:06:39,536 --> 00:06:49,255
+Şeyinin, kütüphanesinin, sizlerin böyle dışarıdan, evinizden, işyerinizden vesaire, den de buraya bağlanabilmek için bir kullandığım mekanizma var.
+
+24
+00:06:49,716 --> 00:06:53,516
+Reverse proxy diyoruz bu mekanizmaya. Normalde proxy nedir?
+
+25
+00:06:57,300 --> 00:07:06,780
+Kurum içinden, kurumun dışına internete doğru yapılan erişimin denetlenmesi ve hızlandırılması için kurulmuş olan bir mekanizmidir.
+
+26
+00:07:06,939 --> 00:07:18,040
+Misal, siz içerideki kullanıcılardan herhangi bir X sitesine ulaştığı zaman bunun bir kopyasını proxide kaydedersiniz.
+
+27
+00:07:18,040 --> 00:07:23,920
+Böylece başka bir aynı siteye eriştiği zaman bunu lokalden servis edersiniz. Böylece hız kazanırsınız.
+
+28
+00:07:25,076 --> 00:07:37,036
+Bunun dışında da içerideki kişilerin internet üzerindeki erişimlerini günlük, saatlik, ulaştığı yer vs. anlamında kısıtlamak ya da kapatmak gibi özellikleri de sağlar size.
+
+29
+00:07:37,196 --> 00:07:44,036
+Şimdi reverse proxy ise aslında dışarıdaki birini kampüs içerisine almak için kullandığımızı yapılır.
+
+30
+00:07:44,256 --> 00:07:52,196
+Bu şekilde aslında siz kampüs dışında olsanız da trafiğiniz o proxy'ye yönleniyor, o proxy üzerinden dönüp tekrar internete çıkıyor.
+
+31
+00:07:53,076 --> 00:08:04,116
+Böylece sanki kampüs içerisindeymişsiniz. Bununla ilgili ayarları kütüphanenin kendi sayfasında var. Bunun üzerinden erişebiliyorsunuz.
+
+32
+00:08:04,116 --> 00:08:10,116
+Ama kütüphane son zamanda şeyle ilgili...
+
+33
+00:08:12,307 --> 00:08:29,100
+Kaynaklara erişimle ilgili farklı bir sistem de, VETIS adında farklı bir sistem de kullanmaya başladı. Dolayısıyla onu da benzer şekilde, kütüphanenin kendi sayfasında var, nasıl kullanılacağıyla ilgili bir dokumentasyon da var. Oradaki adımları izleyerek...
+
+34
+00:08:30,324 --> 00:08:50,084
+Kütüphanenin bu dijital ortamdaki, elektronik ortamdaki üye olduğu bütün şeylere, bilimsel kaynaklara erişme şansınız var. Onları burada adım adım izlemeyceğiz. Dediğim gibi şey noktasında kütüphanenin dokumentasyonundan faydalanabilirsiniz. Peki.
+
+35
+00:08:52,083 --> 00:08:59,983
+Ne var bu kaynakların içerisinde? Aslında üniversite içerisinde olan tüm bölümleri ilgilendiren birçok kaynak var.
+
+36
+00:09:00,947 --> 00:09:19,867
+Bizim tarafımızdan baktığınız zaman, yani Computer Science tarafından, bilgisayar mühendisliği tarafından baktığınız zaman da özellikle Springer'in bilgisayarla ilgili kısımları var, ESG'nin indeksleri var, jörnalları var, IT-LOKLIN'in jörnalları var.
+
+37
+00:09:28,947 --> 00:09:46,947
+Mimariyle ilgili de var, bol miktarda sağlıkla ilgili yapı da var. Dövise hepsine bir şekilde erişme şansınız var. Kullanabilirsiniz. Şimdi bu erişimler genellikle indeksler üzerinden gerçekleşiyor. Bir indeks kavramı vardır. İndeks nedir?
+
+38
+00:09:51,635 --> 00:10:00,576
+Aslında birebir kitap indeksi neyse burada belirttiğimiz indeks de onun gibi bir şeydir. Bir kitabın indeksinde ne olur?
+
+39
+00:10:00,576 --> 00:10:07,576
+Şurada duran kapatam ne var? Computer Networks kitabı var. Computer Networks kitabına baktığınız zaman...
+
+40
+00:10:08,148 --> 00:10:32,708
+In Table of Contents, index yani. Birinci bölüm Introduction, ikinci bölüm Physical Layer, 89. sayfa, üçüncü kısım Data Link Layer, 193. sayfa, dördüncü kısım Medium Access Control Sublayer, 257. sayfa falan şeklinde hangi bildiğinin nerede olduğunu söylüyor. Ben de böylece çok hızlı bir şekilde yarışabiliyorum. Buradaki indexler de journalları, yani dergileri indexliyor.
+
+41
+00:10:33,268 --> 00:10:35,927
+Bu sayede neye sahip oluyoruz?
+
+42
+00:10:37,107 --> 00:11:05,107
+Aslında bu indeks, journalların kendisine üye olması ve kendi kapsamını alması, kullanıcıların da bu indekse üye olması ve burada tarama yapmasını sağlıyor. Yani aradaki merkez buluşma noktası. Bu merkez buluşma noktası, kullanıcı tarafından baktığınız zaman daha fazla yayını bir hamlede aramanızı sağlıyor. Dergi tarafından baktığınızda, yayıncı tarafından baktığınızda daha çok insana ulaşılıyor.
+
+43
+00:11:05,107 --> 00:11:27,107
+Bunlar sadece aslında şeyle de sınırlı değil. İndeksleme servisi. Sadece şu yayınlar var, bunları içeriyorum. Bunlar içerisinde arama yapabilirsiniz. Sınırlı değil. Daha farklı özellikleri de var zaman zaman. Bu farklı özellikleri zaten...
+
+44
+00:11:27,539 --> 00:11:55,220
+Ayrıca birazdan tekrar konuşacağız. Şimdi baktığımız zaman bol miktar bir indeks var. Yani indeks sadece belli şeye özel değil. Yani tek bir indeks var. Tüm farklı konulardaki her şey indeksle ilgili bir durum yok. Aslında spesifik başlıklar için özel indeksler var. Mesela mühendislik alanıyla ilgili olabilir. Sağlık alanıyla medikal anlamda ilgili olabilir.
+
+45
+00:11:55,539 --> 00:12:05,159
+İşte ne bileyim, sadece mimariyle ilgili olabilir. Bazen bunlar bir ana başlık ya da bazı alt başlıklar şeklinde ayrılıyor olabilir.
+
+46
+00:12:06,220 --> 00:12:15,159
+Şey noktasında baktığımız zaman mesela en bilinen indekslerden, PubMed, Biosys, Embase, bunlar hep sağlıkla ilgilidir.
+
+47
+00:12:15,159 --> 00:12:19,159
+Çünkü bunun temel nedeni de, sağlıkla ilgili olmalarının temel nedeni de,
+
+48
+00:12:21,172 --> 00:12:23,172
+Aslında bilimsel çalışmaların...
+
+49
+00:12:24,724 --> 00:12:31,444
+Özellikle de 2. Dünya Savaşı sonrası ki burada detayını daha sonra bilimsel yazımda konuşacağız.
+
+50
+00:12:32,504 --> 00:12:35,684
+Sağlıkla ilgili kısımda patlama yapmış olması.
+
+51
+00:12:36,204 --> 00:12:40,084
+Çünkü savaş doğrudan insan hayatıyla ilgili bir konu.
+
+52
+00:12:40,164 --> 00:12:51,904
+Dolayısıyla savaş sırasında yapılabilen ya da yapılacak işlemlerle ilgili geliştirilen ilaç, malzeme ve şeyle alakalı bol miktarda
+
+53
+00:12:52,336 --> 00:13:15,256
+Yayın ortaya çıkmış. O yayınların düzenlenmesi ve yazılması ve istiflenmesi ya da tasnif edilmesi diyeyim. Ve ilgili de indeks yapısında da çok farklı adımlar atılmış. Dolayısıyla bu bilinen en eski indeksler, bilinen en eski yanlış olduk, bilinen eski ve önemli indekslerin birçoğu sağlıkla ilgili.
+
+54
+00:13:16,467 --> 00:13:44,287
+Ancak bilahatmen bizim çalışmalarımızla, yani mühendislikle ilgili olan Science Citation Index, Science Citation Index Expanded ve Scopus diye üç tane indeks var. Önemli olarak gördüğümüz, saydığımız. Bunları önemli görüyor ve sayıyor olmamızın çeşitli nedenleri var. Bir tanesi mesela akademik atama ve yükseltme kriterlerinde önemli rol oynuyor olması.
+
+55
+00:13:44,467 --> 00:13:56,767
+Bunun dışında özellikle Science Citation Index'in, SCU'nun yani eski bir indeks olması, bir temele dayanıyor olması önemli kılıyor.
+
+56
+00:13:57,587 --> 00:14:05,127
+Bu indeksler, hani üç tane indeksten bahsedince otomatikman mesela diğer grupta hemen soruldu. Ben daha anlatmaya başlamadan.
+
+57
+00:14:05,847 --> 00:14:14,907
+Hani hocam bunların birbiri arasında bir önemi var mı? Hangisi daha iyi, hangisi daha kötü? Aslında öyle bir şey yok. Yani hani teknik olarak bu indeks ondan daha iyidir ya da daha kötudur.
+
+58
+00:14:15,507 --> 00:14:25,147
+Bu üçü arasında çok net bir şekilde söyleyemezsiniz. Hani bazı indeksler var. İçerisindeki dergiler arasında doğru düzgün olanı yok.
+
+59
+00:14:25,587 --> 00:14:44,747
+Kaliteli yayınlar yok vs. yok. O indekste kötü bir indeks diyebilirsiniz ama bu indekslerin her birinde farklı açılardan önemli, popüler ve güzel dergiler var. Dolayısıyla bunları değerlendirirken bu ondan daha iyi, bu bundan daha kötü demek çok mümkün değil.
+
+60
+00:14:49,268 --> 00:15:10,668
+Şey demiştim, aslında bir kullanıcı tarafı var, bir de dergi tarafı var bakış açısı olarak. Farklı farklı özellikleri de var. Evet, bir taraftan siz bir yayın yaptığınız zaman gönderdiğiniz derginin üye olduğu indeks, eğer çok fazla kullanıcıya erişiyorsa sizin yanınızda çok fazla insana erişebiliyor. Güzel bir şey.
+
+61
+00:15:10,668 --> 00:15:17,208
+Tek kendi başına bir dergiye gönderdiğiniz zaman da birilerinin indagini o dergide sizin yayınınızı bulması gibi.
+
+62
+00:15:17,268 --> 00:15:24,488
+Bir durum var. Dolayısıyla indeks bu açıdan önemli. Ama bunun dışında indekslerin farklı şeyleri de olur.
+
+63
+00:15:27,860 --> 00:15:50,120
+Hizmetleri, servisleri olur. Yayınlar arasında nasıl bir ilişki kuruyoruz genelde? Bir iş yapacağımız zaman bununla ilgili bir literatür taraması yapıyoruz ve o literatür taraması sonucunda diyoruz ki bak bu böyle yapmış, şu şöyle yapmış, şu şunu yapmış, bu bunu yapmış, bu burasını çalışmış, şu şurasını çalışmış. Biz de aslında şuradaki şu problemi bu noktaya taşıyacağız.
+
+64
+00:15:50,120 --> 00:15:55,840
+Şimdi bunu söylediğimiz zaman aslında ne yapıyorsunuz? O diğer çalışmaların her dine birer atıf.
+
+65
+00:15:55,860 --> 00:16:15,259
+yapıyorsunuz. Bu atıfın nereden nasıl yapıldığı, kaç kişinin size atıf yaptığı vesaireyi hesaplamak da indekslerin size sunduğu hizmetlerden biri. Böylece birkaç tane artınız var. Bir, yaptığınız yayın ne kadar kabul gördü, kimler bunu okudu, değerlendirdi ve kullandı, bunu görebiliyorsunuz.
+
+66
+00:16:16,179 --> 00:16:34,799
+Bir diğer şey, yaptığınız çalışmaya bir atıf görüyorsa, normal şartlar altında, o atıfın üzerine şey yapıyor olması lazım. O konu üzerine bir çalışma yapıyor olması lazım. Dolayısıyla sizi referans gösteren daha güncel çalışmaları arama tarama zahmetinden kutulup bir anda önünüze konuyor.
+
+67
+00:16:36,959 --> 00:16:44,179
+Dergiler tarafından baktığımız zaman, tek tek son kullanıcıya ulaşma çabası yerine bir indeks.
+
+68
+00:16:44,179 --> 00:16:59,179
+İndeks'e dair olarak o indeksin tüm kullanıcılarına ulaşma şansımız var. Yani aslında bir yayın kuruluşu, bir dergi niye var? Yaptığı yayınları, onun üzerinden yapılan yayınların mümkün olduğu kadar çok kişiye eriştirilebilmesi için var.
+
+69
+00:16:59,179 --> 00:17:03,019
+Dolayısıyla indeks bu açıdan önemli bir rol.
+
+70
+00:17:05,971 --> 00:17:31,652
+Bu arada indekslerin bir güzelliği daha. Sizin, yani bir yazarın değerlendirilmesi noktasında farklı bilgiler kullanılıyor. Edge indeks bunlardan bir tanesi. Sizin yayınlarınızın olduğu indekslerde sizin haş indeks değerinizin bulunması, hesaplanması da.
+
+71
+00:17:32,531 --> 00:17:35,291
+Size sunulan servislerden bir tanesi.
+
+72
+00:17:36,276 --> 00:17:44,695
+Ancak bu hash indeks sizin hangi indeksteki yayınlarınızın kullanılarak hesaplandığına bağlı olarak çok değişiklik gösterebilir.
+
+73
+00:17:45,215 --> 00:17:53,416
+Bazı indeks mekanizmaları aslında birden fazla farklı indeksi de bir araya toplayan mekanizmalardır.
+
+74
+00:17:53,416 --> 00:18:04,056
+Dolayısıyla mesela scholar.google'dan bakarsanız farklı bir hash indeks görürsünüz ama gidip Web of Science'dan bakarsanız farklı bir hash indeks göre.
+
+75
+00:18:04,276 --> 00:18:05,155
+Bilirsiniz.
+
+76
+00:18:06,996 --> 00:18:17,067
+Şeyi söylemiştim, yani bu journallar, bu indeksler arasında nasıl bir fark var, nedir, ne bildir, nasıl karşılaştırılır noktasında aslında...
+
+77
+00:18:17,491 --> 00:18:28,291
+Teknik olarak indeksler arasındaki farkı söyleyebilmek için o indeksler içerisinde yer alan dergileri karşılaştırmak lazım.
+
+78
+00:18:29,011 --> 00:18:33,172
+SCI ve SCI Expanded genel olarak birçok ülkede farklı değerlendirilir.
+
+79
+00:18:33,652 --> 00:18:37,791
+Şöyle ki SCI daha kaliteli, daha önemli olarak bakılır.
+
+80
+00:18:37,892 --> 00:18:41,412
+SCI Expanded ise biraz daha zayıf olarak düşündür.
+
+81
+00:18:41,412 --> 00:18:44,612
+Ama aslında gerçek tam olarak öyle değildir.
+
+82
+00:18:45,491 --> 00:18:54,092
+Olay şudur, ilerleyen slide'larda kanıtıyla anlatacağım gerçi ama SCA daha köklü bir indekstir. Çünkü ilk çıkan indekstir.
+
+83
+00:18:54,092 --> 00:19:04,451
+Daha sonra teknolojinin değişimi ve gelişimiyle beraber SCA'daki dergi sayısının da çok artması dolayısıyla SCA Expanded'i kurmuşlar.
+
+84
+00:19:04,552 --> 00:19:13,192
+SCA Expanded'da da SCA'nın tersine basılı, yazılı CD ve DVD üzerinden yapmak yerine bu işi.
+
+85
+00:19:13,491 --> 00:19:23,351
+İnternet ortamında yapalım demişler. Son geldiğimiz noktada her iki indekste zaten internet ortamında takır takır erişime açık kullanabileceğiniz şekilde çalışıyor.
+
+86
+00:19:24,271 --> 00:19:37,491
+Bunu ben demiyorum. Bunu Thompson-Roters'in, yani bu indekslerin sahibi olan firmanın üst düzey demeyeyim de Simier.
+
+87
+00:19:37,971 --> 00:19:58,011
+Bölge müdürü söylüyor. Biri zamanında şeyi yazmış, bunların arasındaki fark nedir diye yazmış. 2010 yılında arkadaş da bölge müdürü de oturmuş cevap vermiş. Öldeki fark bunların kullandığı medya türüdür diye. Şu an öyle bir fark da kalmadı.
+
+88
+00:20:02,355 --> 00:20:15,339
+Yöntemizde bilimsel çalışma durumunuz var. Ne için var? Bilimsel çalışma yaptınız, bununla ilgili yayın yapacaksınız. O zaman da journalı aramanız gerekiyor. Hangi journalda yayın yapsın? Bunun için birkaç tane araç var. Mesela...
+
+89
+00:20:16,180 --> 00:20:34,259
+Birincisi Thompson Reuters'ın Master Journal List'i var. Journal'ların isimleri, ne hakkında oldukları, impact factorleri vesaire gibi bilgiler geçiyor. Impact factori birazdan konuşacağız ama bir journal'ın etkisini ölçmek için kullandığımız kriterlerden biri.
+
+90
+00:20:34,259 --> 00:20:40,440
+Gene Thompson Reuters'taki bir çalışan tarafından ortaya atılmış bir mekip. Çok başarılı mı ya da sağlık mı? Bence değil.
+
+91
+00:20:40,832 --> 00:20:46,152
+Zaten bu haftaki slide'larımız arasında onu nasıl manipüle ederseniz de konuşacağız.
+
+92
+00:20:47,512 --> 00:20:52,252
+Manipüle edin değil, manipüle edildiğini bilin diye, edilebildiğini bilin diye tabii ki.
+
+93
+00:20:53,752 --> 00:20:57,032
+Bunun dışında IEEE'nin mesela Explore diye bir indeksi var.
+
+94
+00:20:57,432 --> 00:21:00,512
+Hem konferansların hem dergilerin olduğu.
+
+95
+00:21:01,792 --> 00:21:05,512
+Elsevier ve Springer gibi yayıncıların kendi indeksleri var.
+
+96
+00:21:05,971 --> 00:21:10,763
+Dolayısıyla o indeksler içerisinde de şeyleri bulmak için...
+
+97
+00:21:11,539 --> 00:21:34,699
+Dergileri bulmak için tool'ları var. Mesela Elsevier'de Journal Finder diye geçiyor. Springer'de Journal Suggester diye geçiyor. Bu arada Journal Suggester diğer tool'lara göre biraz daha farklı çalışıyor. Benim o anlamda hoşuma gitti. Yazdığınız bir makale için uygun dergi arıyorsanız makalenin başlığını ve özetini veriyorsunuz.
+
+98
+00:21:35,092 --> 00:21:47,032
+Ona göre arıyor. Sadece kategorilere vs. falan değil. Böyle bir ek özenlik koymuşlar. Fakat her zaman çok başarılı değil. Onu söyleyebilirim. Ama gene de bir başlangıç noktasıdır.
+
+99
+00:21:48,272 --> 00:21:56,412
+Şimdi temel olarak bir join alarken kullanabileceğiniz araçlar bunlar. Ama bence izlemeniz gereken yol bu değil.
+
+100
+00:22:01,652 --> 00:22:10,491
+İkiye ayrılıyor. Bir, şimdi eğer bir çalışma yaptıysanız ve sonuçlarınızı yayınlayacaksanız, bu çalışmayla ilgili bir literatür taraması da yapmışsınızdır.
+
+101
+00:22:11,132 --> 00:22:20,832
+Literatür taramasında sizin çalışmanızla ilgili çalışmaları buldunuz. Bu çalışmalar da dergilerde yayınlanıyor. Hangi dergilerde yayınlanmış bir yolla bakmanız lazım.
+
+102
+00:22:21,511 --> 00:22:26,572
+O dergiler de sizin için potansiyel yayın yeri. Bence asıl yöntem bu, bulmak için.
+
+103
+00:22:26,928 --> 00:22:49,648
+Böyle bir şey yapmadınız, tool'lar üzerinden gittiniz. Belki yeni ya da daha güncel, daha farklı dergileri de görmek istediniz. Okey. Bu iki yolun hangisini isterseniz izleyin, sonrasında yapmanız gereken adımlar var. Yani bir araç bana bu journal'ı önerdi diye, bu dergi önerdi diye yayınımı oraya göndermem.
+
+104
+00:22:50,003 --> 00:22:55,043
+Ne zaman, nasıl gönderirim, nasıl karar veririm? Basit. Her derginin kendi sayfası var.
+
+105
+00:22:55,603 --> 00:23:00,083
+İşte amacının ne olduğunu, kapsamının ne olduğunu anlatan.
+
+106
+00:23:00,183 --> 00:23:03,043
+Eymel Scope diye bir kısmı var orada. Uzun uzun yazarlar.
+
+107
+00:23:03,483 --> 00:23:09,583
+Şu tip çalışmalar, bu tip çalışmalar, böyle çalışmalar, bu konudaki çalışmaları şuraya taşımak, böyle yapmak vs. diye.
+
+108
+00:23:10,083 --> 00:23:16,143
+Dolayısıyla bir ana başlık olarak yaptığımız çalışma orayı içine düşüyor mu, kapsıyor mu, buna bakıyor mu?
+
+109
+00:23:16,928 --> 00:23:38,788
+Kapsayıp kapsamadığından emin olamadınız ya da emin oldunuz ama daha da emin olmak istiyorsunuz. O zaman bir adım ileri gideceksiniz. Ne yapacaksınız? O dergide daha önce yayınlanmış yayınlar arasında sizin yaptığınız çalışmaya benzer kaç tane yayın var onlara bakacaksınız. Bunlara da baktıktan sonra o journal'a gönderip göndermemeye karar verebilirsiniz.
+
+110
+00:23:40,019 --> 00:23:46,380
+Bu kadar inceleyip sık dokunmaya gerek var mı? Var. Çünkü aslında journal'a süreçlerini ayrıca konuşacağız.
+
+111
+00:23:46,460 --> 00:23:52,500
+Bir journal'a yayın gönderdiğiniz zaman birkaç adımdan geçiyorsunuz. Bunlardan ilki yayını gönderiyorsunuz.
+
+112
+00:23:53,160 --> 00:24:00,480
+Editörün önüne düşüyor bu yayın. Ve editör diyor ki, bunun bizimle alakası yok. Hadi iyi günler.
+
+113
+00:24:02,180 --> 00:24:05,980
+Siz de hani yayını gönderiyorsunuz, şeyinizden bir yudum alıyorsunuz.
+
+114
+00:24:07,700 --> 00:24:19,460
+İçeride bitiyor, kalkıyor, gidiyorsunuz doldurmaya, bir geri geliyorsunuz, mail gelmiş. Sizin yayınınızı reddetmişler. Bunları yaşamamak için bu adımları mutlaka yapıyor olmanız lazım.
+
+115
+00:24:19,460 --> 00:24:29,259
+Şimdi bunları yaparken dikkat etmeniz gereken bir grup başka nokta da var. Bunlardan bir tanesi de şu, maalesef...
+
+116
+00:24:29,491 --> 00:24:43,872
+Bilimsel araştırma ve bu bilimsel araştırma sonucusu yapılan bilimsel yayınlarda son 10 yılda ciddi anlamda ticarileşti.
+
+117
+00:24:45,312 --> 00:24:48,832
+Eskiden bu iş genelde şöyle dönerdi.
+
+118
+00:24:49,779 --> 00:24:56,940
+Mesela I-Tropi, E-SVR ve Dünya gibi yerler ki I-Tropi hala öyle devam ediyor.
+
+119
+00:24:57,420 --> 00:25:08,220
+Bir yayın gönderdiğiniz zaman, bir makale gönderdiğiniz zaman özellikle de bir üniversiteyseniz, araştırmacıysanız, üniversitede araştırmacıysanız şey derdi.
+
+120
+00:25:08,852 --> 00:25:28,052
+Herhangi bir şey ödemenize gerek yok ve fakat bu proje kapsamında bir destek aldıysanız bu yayının aslında maliyeti bin dolar farzunsel. Bunu bu destek kapsamında ödeyebilirsiniz, seviniriz. Ödeyemezseniz de bizim deyimimizle canınız sağ olsun der geçerlilerdi.
+
+121
+00:25:35,455 --> 00:25:59,015
+Atama yükseltme kriteri olarak kabul gördükten ve bunun üzerine her şey dönmeye başladıktan sonra çok fazla sayıda dergi, indeks ve şey ortaya çıktı, yapı ortaya çıktı ve bu sistematiği abuse ediyorlar. Yani kötüye kullanıyorlar. Nasıl kullanıyorlar?
+
+122
+00:26:02,163 --> 00:26:19,564
+Yani insanların böyle hızlı yükselmek vesaire için aslında bir yayının süreci, işte araştırma, çalışmanın yapılması, sonuçların elde edilmesi ve yayının hazırlanıp gönderilmesi, gönderme sonrasında değerlendirme süreci de işte 3 ile 6 ay araktan başlayan bir süre.
+
+123
+00:26:22,903 --> 00:26:25,036
+Bu uzun ve...
+
+124
+00:26:25,268 --> 00:26:32,347
+Sancılı bir süreç olduğu için insanlara mail atıyor bazı yerler.
+
+125
+00:26:32,347 --> 00:26:44,867
+İşte çalışmalarınızı bugün gönderin. Hızlı, rapid ya da bilmem ne bir değerlendirme süreci, hızlı bir değerlendirme süreci ile hemen yayınlayalım.
+
+126
+00:26:45,067 --> 00:26:48,347
+Gönderiyorsun. Tamam deyip sonra...
+
+127
+00:26:49,364 --> 00:26:54,804
+İşte duruma göre 500 dolar, 1000 dolar, 1000 euro. Allah yürüyü aklım dedi. Euro.
+
+128
+00:26:55,796 --> 00:27:13,375
+Durumu. Paralar isteniyor, paralar ödeniyor ve aslında bilimsel değeri oldukça düşük ya da sıkıntılı ya da tartışmalı olan yayınlar bir anda yayınlanmaya başlıyor. Böyle bir sistematik oluştu. Bunun dışında bunun daha da ebiyöz edildiği daha farklı durumlar var.
+
+129
+00:27:23,796 --> 00:27:49,076
+Hiçbir bilimsel değeri olmayan yayınları kabul edip yayınlayan mekanizmalar oluştu. Mesela Waset bunlardan bir tanesi. [öğrenci] diye birinin orada 46 tane yayını var. Hala da akademisyendi ben son baktığım sırada. Ama şimdi o yayınlara ya da o konferanslara bakarsanız şunu görecek misiniz?
+
+130
+00:27:50,960 --> 00:28:01,579
+Ovaset'in sayfasına girin, konferanslara girin. Bu ay, farz-ı misal, İstanbul'da yapılan konferans, önümüzdeki ay birebir aynısı.
+
+131
+00:28:01,579 --> 00:28:10,640
+İşte Fransa'da, Paris'te, bir ay sonra Avustralya'da, Sydney'de, bir ay sonra Yunanistan'da, Atina'da.
+
+132
+00:28:11,124 --> 00:28:27,344
+Birebir aynı metin, aynı tekst, aynı font. Sadece şehrin resimleri değişiyor. Sitenin arka sayfasındaki resimler değişiyor. O konferans yapılmıyor bile. O konferans için katılımcılardan 500'er dolar.
+
+133
+00:28:27,731 --> 00:28:49,151
+ya da biner dolar neyse artık toplanıyor. Para çok güzel eziliyor ve hani insanların da hiçbir akademik değeri olmayan, bilimsel değeri olmayan çalışmaları yayınlanıyor. Bu çalışmaları yayınlanan insanlar da işte yeri geliyor, doçent oluyor, yeri görünüyor, profesör oluyor, hayatlarına devam ediyor. Böyle bir sistematik var.
+
+134
+00:28:49,584 --> 00:29:05,224
+Dolayısıyla bunun bize etkisi, ben zaten profesör olmayacağım ki buna ihtiyacım yok diyebilirsiniz. Bu sistem sadece akademik yapılanmayı kirletmiyor, aynı zamanda bilgi kirliliği oluşturuyor.
+
+135
+00:29:09,844 --> 00:29:17,784
+Bir ortamda asıl ihtiyacınız olan ya da değerli olan bilgiyi, makaleyi arıyorsunuz.
+
+136
+00:29:18,944 --> 00:29:24,164
+Dolayısıyla bulduğunuz makalenin nerede yayınlandığı, nasıl yayınlandığı da sizin için önemli oluyor.
+
+137
+00:29:24,164 --> 00:29:34,424
+Yani özellikle böyle hedef göstererek şey yapmak istemem ama bazı Çinli makaleler tam böyle Çin'den sipariş edilen araç gereç gibidir.
+
+138
+00:29:34,832 --> 00:30:00,000
+Resimler çok güzel, başlık çok güzel, özet çok güzel. İçine girdiğiniz zaman hiçbir detay yok. Hiçbir şey çalışmıyor. Bazı şeyler yalan yanlış. Ya da Hintlilerin bazı çalışmaları öyle olur. Bunlar sadece Hintlilerle, şeylerle sınırlı değil. Her milletten, her yerden böyle insanlar olabiliyor. Böyle çalışmalar olabiliyor ama orada biraz daha fazla olur.
+
+139
+00:30:00,000 --> 00:30:09,119
+Böyle gibi hissediyorum. Bana denk gelenlere bakınca, yıllarca okuyunca öyle bir hissiyat gelişiyor.
+
+140
+00:30:10,059 --> 00:30:19,399
+Bunun dışında, makalelerin yayınlandığı dergilerle ilgili dikkat edilmesi gereken şeylerden bir tanesi de bunların açık yarışım olması.
+
+141
+00:30:19,519 --> 00:30:20,699
+Açık yarışım güzel bir şey.
+
+142
+00:30:21,556 --> 00:30:36,655
+Ama açık yarışım şu demek, normalde indeksler dergileri indeksleyip, yani o dergilerde yayınlanan makale bir araya toplayıp bunları üyelikle, yani parayla, üyelikle kendilerine üye olan insanlara sunuyorlar.
+
+143
+00:30:36,655 --> 00:30:43,836
+Dolayısıyla bir üyelik mekanizmasından para kazanıyorlar ki bu sistemi yönetebilsinler, devamını getirebilsinler.
+
+144
+00:30:46,548 --> 00:31:02,008
+Bazı canlar şuna geçti. Ben Open Access'im. Ben bunu yönetmek için gerekli olan parayı buraya, dergiler buna geçti. Ben burayı yönetmek için gerekli olan parayı yazardım isterim.
+
+145
+00:31:02,740 --> 00:31:20,180
+Yani şöyle ki, şimdi ben burada herhangi bir makaleyi yayınlayacaksam, bunun bedeli, bana maliyeti vesairesi 500 dolardır. Ödersin, öyle yayınlarım, open access olur. Bunu ödemezsen de sadece üyelerin bakabileceği bir yayın olur.
+
+146
+00:31:29,907 --> 00:31:31,467
+Faydalı olur.
+
+147
+00:31:32,147 --> 00:31:35,707
+Dolayısıyla insanlar da parasını verip Open Access olmasını tercih edebiliyor.
+
+148
+00:31:35,707 --> 00:31:44,707
+Ama mesela şeyde Open Access Journal'larda özellikle yine bu...
+
+149
+00:31:45,875 --> 00:31:53,715
+İnsan hırsını sömüren, onu kullanarak güzel paralar kazanmayı hedefleyen insanların oyunları var.
+
+150
+00:31:53,855 --> 00:32:10,215
+Farsın bir tane test yapılmış, bir makale, şu an ismini hatırlayamıyorum makalenin ama içerisinde ciddi anlamda hem İngilizcesi, hem ortaya koyduğu bilgiler, hem de sistematik açısından sıkıntı olan bir şey.
+
+151
+00:32:11,539 --> 00:32:26,819
+Makale, 304 tane Open Access dergiye gönderiliyor. Yarısından fazlası kabul ediyor. Yarısından fazlası derken, yalan olmasın, 180 tanemiz isim mi, 184 tanemiz isim mi, öyle bir şeydir hakkım yanlış hatırlamıyorsam.
+
+152
+00:32:26,819 --> 00:32:33,819
+Tamamen sallıyor da olabilirim. Şu an kendi hafızama güvenmiyorum çünkü. Dolayısıyla...
+
+153
+00:32:34,771 --> 00:32:46,291
+Open Access güzel bir şey ama Open Access dediği zaman herhangi bir dergiyle ilgili, önceden özellikle bilmiyorsanız, etmiyorsanız bir böyle hani durup falan diye bir düşünüyor olmanız lazım.
+
+154
+00:32:57,748 --> 00:33:25,528
+İstihal konuların kalitesini ya da geçerliliğini ölçmenin farklı yolları var insanların o şey yaptığı demiştim. Misal bir tanesi Eugene Garfield'ın aktığı. Zaten East Thompson'da çalışıyor. SCO ve SCO Expanded'in içerisinde bir adam. Zaten oradaki dertte bu journalları bir sınıflandırsak, bir kalite, bir mekanizma, bir değerlendirmeye tutsak şeyi. Bunun için de impact factor diye bir şey ortaya atıyor. Impact factor dediğimiz şey aslında normal şartlarda.
+
+155
+00:33:25,748 --> 00:33:35,687
+Bu yıl yayınlanan makalelerden son iki yılda yayınlanmış olan makalelere verilen atıf sayısı.
+
+156
+00:33:39,412 --> 00:33:52,611
+Bu sayıyı o yıldaki, son iki yılda yayınlanmış olan makale sayısına bölüyorsunuz. Yani makale başına ortalama kaç atıf alıyorsunuz? Bunu hesaplıyorsunuz aslında. Tek yapılan şey bu. Daha böyle formalize olmadan düz söylenecek.
+
+157
+00:33:53,076 --> 00:34:21,076
+Bunu normal şartlarda 2 senelik için yapıyorsunuz. Impact factor bu. Ama bunun sonra bir 5 yıllık olabını yapalım şeklinde bir kafa ortaya çıktı. Dolayısıyla 5 yıllık impact factor diye de bir yapı var. Olay sadece son 2 yıl değil, son 5 yıla bakmak şeklinde. 5 yıldaki ortalama atıf sayısına bakmak. Biraz daha uzun vadede olunca en azından stabilitesini de görmek. Çünkü bazı dergilere bakıyorsunuz, bu yıl 5, ertesi yıl 1, sonra 3.
+
+158
+00:34:21,076 --> 00:34:32,755
+3, sonra 0,5, sonra 7 falan diye böyle pıt pıt pıt gidiyor impact factor. Çünkü impact factor zaten doğası gibi, üzerinde çokça manipüle yapabileceğiniz bir yapı.
+
+159
+00:34:34,755 --> 00:34:45,715
+Bu arada, bir derginin kalitesini anlayamakla ilgili şey yapabilirsiniz.
+
+160
+00:34:46,324 --> 00:34:54,204
+Başka raporlardan faydalanabilirsiniz. Journal Citation Reports vardı. Thompson Reuters'ın yayınladığı bir şeydi.
+
+161
+00:34:55,104 --> 00:35:02,364
+Fakat sonra Thompson Reuters bu işin bir kısmını Clarivate diye bir firmaya devretti. Orada bir bölünme oldu, bir şeyler oldu.
+
+162
+00:35:03,344 --> 00:35:10,244
+Eskiden bizim üniversitenin subscription'a dahil değildi bu servis. Bunun için ayrı bir şey gerekiyordu.
+
+163
+00:35:11,583 --> 00:35:14,324
+Üyelik, ekstra bir para ödenmesi falan gerekiyordu.
+
+164
+00:35:14,324 --> 00:35:40,564
+Citation Reports'a bakabilmek için. Ki Citation Reports aslında indeksteki bütün dergilerin ne kadar yayın yaptığı, nerelere ne kadar referans verildiği, ne kadar site alındığı, öylesi böylesi incik incik baya detaylı bir rapor. Zaten genelde hazırlanması da biraz uzun sürüyor. Ve yıllık değil galiba. Birkaç yılda bir çıkıyordu diye hatırlıyorum. Emin değilim, yalan olmasın.
+
+165
+00:35:41,748 --> 00:36:00,887
+Bunun dışında dediğim şeylerden bir tanesi, impact factor'ın manipüle edilebileceği. Nasıl manipüle edebilirsiniz? Çok basit. Olay ne? Impact factor'ın hesabında bu yıl yapılan atıfların son iki seneye ne kadar yansıdığı.
+
+166
+00:36:01,231 --> 00:36:27,931
+Doğru mu? Yani ben bugün bir yayın yapıyorsam, bunun 2020 ya da 2019'daki yayınların kaçına referans verdi? O zaman en basiti, ben bu suyun başındaki adamsam, yani derginin başındaki editörsem, diyorum ki, siz bir yayın gönderdiğiniz zaman. Arkadaşım, çok güzel yazmışsın, bravo, tebrikler. Ama bu konuyla ilgili bizim journal'ımızda bazı paperlar var, sen bunların referansını vermemişsin. Bence verirsen iyi olur.
+
+167
+00:36:28,320 --> 00:36:53,159
+Yani editör olarak senin yayınlanıp yayınlanmayacağına karar veren bir adam böyle bir yorum yaptığı zaman çoğu insan doğal olarak peki ağam paşam deyip ilgili referans veriyor. Böyle her paper gönderene bu şekilde bir telkinde bulunursanız ne olur? Sizin son iki yıldaki yayınlarınıza olan atıflar coşar. Bir diğer şey ne olabilir?
+
+168
+00:36:54,132 --> 00:37:20,992
+Popüler insanlar var. Bu popületrisi şeyden dolayı değil, magazin popületrisi değil. Adam bu konuda çalışan, uzman, önemli kişi, otorite olarak görülüyor bütün dünyada. Bu adamı çağırıp dergiye, dersen ki, yani böyle böyle bir gelen upcoming, volüm falan diye, hani bizim yeni oluşacak, yeni çıkacak bir cildimiz var, sayımız var. Burada hani sizin yayınlarınızı görmek isteriz, gönderin deyip.
+
+169
+00:37:21,780 --> 00:37:43,500
+İstiyorsun, adam da uyup sana gönderiyor, hiç değerlendirmeye bile tabi tutmana çat çat çat yayınlıyorsun. Sonra bekliyorsun ki o komünite, o komünite çalışan insanların hepsi bu adamın bu yayınlarına tak tak tak atıf versin. Böylece ben de alıldığım atıf sayısını patlatayım. Uçsun bitsin.
+
+170
+00:37:46,483 --> 00:38:03,304
+Ya da ne olabilir? Farklı dergiler genellikle belli alanlara odaklanıyor. Misal, bilgisayar mühendisliğindeki bütün konular tek bir dergide toplanmaz. Ne olur? Biraz daha alt kömülere gidersiniz. Farz misal.
+
+171
+00:38:03,956 --> 00:38:09,056
+Computer Networks'e gidersiniz ya da daha da altın bir başlığa gidersiniz.
+
+172
+00:38:09,576 --> 00:38:14,896
+Intervehicle Communication'e gidebilirsiniz ya da Ad-Hoc Networks diyebilirsiniz. Daha da taraltabilirsiniz.
+
+173
+00:38:14,896 --> 00:38:22,796
+Ama özellikle başlığı daha geniş olan dergilerde şu olabilir.
+
+174
+00:38:23,411 --> 00:38:41,731
+Bu sene ne popüler? Deep Learning, ver Deep Learning çalışmaları. Ömrümüzdeki sene ne popüler? Görüntü işleme, ver görüntü işleme çalışmaları. Bu şekilde devamlı popüler olan genel ya da at başlıklarda devamlı popüler konularda mümkün olduğu kadar fazla yayın yapayım kafasıyla gönderilen yayınları.
+
+175
+00:38:42,291 --> 00:38:55,751
+Bu kriterlere göre seçen yerler, yani yayının kendi kriterisinden, kalitesinden öte, popülerliği üzerinden seçen yerlerde gene impact factor'ı manipüle edebilir.
+
+176
+00:38:55,751 --> 00:39:01,631
+Bunun bütün detayına bakmak isterseniz, burada mesela 10 tane farklı bir yöntem saymışlar.
+
+177
+00:39:03,956 --> 00:39:25,516
+Yayın, yani oturup okuyabilirsiniz uzun uzun, 2008'de yapılmış bir çalışma. Burada belirtilen şeyler zaten bir şekilde, yanlış hatırlamıyorsam, dergilerin ortaya koyduğu, yaptığı hareketler sonucu belirtilmiş şeyler. Dolayısıyla gerçek hayat durumları aslında.
+
+178
+00:39:26,835 --> 00:39:43,995
+Dediğim gibi, bugünü biraz hızlı bitireceğim demiştim. O yüzden biraz hızlı hızlı anlattım. Ama kafanıza takılan, aklınıza yatmayan, sormak istediğiniz bir şeyler varsa onları alayım. Hala biraz vaktimiz var. Sonrasında kapatacağım dersi. Buyurun.
+
+179
+00:39:46,815 --> 00:39:50,915
+Hocam merhabalar. Ders notlarıyla ilgili paylaşım yapacak mısınız?
+
+180
+00:39:51,476 --> 00:40:01,876
+Gerek var mı? Yani zaten slide'lar üzerinden anlatıyorum ve slide'larda, videoda var. Erişebiliyorsunuz kayıt altında. Daha sonra dönüp izleme şansınız da var.
+
+181
+00:40:02,216 --> 00:40:06,956
+Hocam şöyle bir şey de soracağım da. Mesela bir sonraki derslerin slide'ını paylaş...
+
+182
+00:40:06,956 --> 00:40:13,876
+Sormak bir saniye. Önce diğer soruyu bir bitirmiş olalım. Bir şey diyecek miydi, demeyecek miydi bilemiyorum.
+
+183
+00:40:13,916 --> 00:40:18,456
+Onunla ilgili aslında ben bir sonraki dersleri de paylaşma durumumuz olur mu not almak adına?
+
+184
+00:40:19,956 --> 00:40:22,695
+Yok, gerek olduğunu sanırım.
+
+185
+00:40:23,115 --> 00:40:24,355
+Tamam, teşekkür ederim hocam.
+
+186
+00:40:25,135 --> 00:40:32,416
+Yani bu noktada direkt slide'lar üzerinde yazanlar zaten yeterli değil.
+
+187
+00:40:32,516 --> 00:40:37,416
+Benim anlattıklarımla beraber dinliyor ya da izliyor olmanız çok daha efektif.
+
+188
+00:40:37,416 --> 00:40:40,115
+Dolayısıyla zaten elinizin altında böyle bir kaynak var.
+
+189
+00:40:40,655 --> 00:40:43,076
+Yani video olarak, ses kaydı olarak.
+
+190
+00:40:43,496 --> 00:40:45,615
+Bunun üzerinden gidiyor olmak daha mantıklı geliyor.
+
+191
+00:40:46,735 --> 00:41:06,916
+Lisans dersi olmadığı ya da çok hesaplamalı, kitaplamalı bir örnekli vesaire bir şey olmadığı için hızlı geçeceğimiz slide'lar falan da yok. Genelde hepsinin üzerinde durup uzun uzun konuşuyorum. Zaten bu ders kapsamında yeterli olacaktır. Öyle.
+
+192
+00:41:07,835 --> 00:41:08,815
+Teşekkür ederim hocam.
+
+193
+00:41:09,300 --> 00:41:10,060
+Ne demek ki?
+
+194
+00:41:10,840 --> 00:41:19,260
+Hocam, anlattığınız notlardan Türkçe olabilir mi acaba? Bugün anlattığınız İngilizceydi ama ders notları.
+
+195
+00:41:20,460 --> 00:41:22,960
+Orada yazının Türkçesini ben zaten söylüyorum.
+
+196
+00:41:25,620 --> 00:41:31,960
+Yani ders kapsamında genellikle, özellikle de şey tarafında...
+
+197
+00:41:34,068 --> 00:42:02,068
+Gündüz eğitimi tarafındaki programda zaman zaman yabancı ürklu arkadaşlar da oluyor. Aslında zaman zaman değil, çoğu zaman galiba bu dersi açtığından beri her dönem oluyor. Onlar da dersin İngilizce olmasını istiyorlar. Dolayısıyla ben öyle bir orta yol buldum. Ben Türkçe konuşuyorum ama slide'lar İngilizce. Zaten burada da böyle bir ahım şahım İngilizce yok. Artı zaten yazın İngilizce'nin de Türkçesini ben bir şekilde zaten size...
+
+198
+00:42:02,068 --> 00:42:14,768
+İfade ediyorum. O noktada anlamadığınız, kafanıza takılan bir şeyler olduğunda lütfen sorun. Bu tam olarak ne demek ya da niye öyle diyorsunuz vesaire şeklinde ki herhangi bir soru işareti kalmasın.
+
+199
+00:42:17,788 --> 00:42:21,668
+Hocam ben yoklama var mı? Onu öğrenmek istiyorum acaba.
+
+200
+00:42:29,204 --> 00:42:29,804
+Sebep?
+
+201
+00:42:31,184 --> 00:42:36,424
+Geçen hafta maalesef katılamadım da. Acaba yoklama vesaire var mı?
+
+202
+00:42:37,104 --> 00:42:41,944
+Sistem şeyi veriyor, kimin ne kadar katılıp ne kadar katılmadığı bilgisini veriyor.
+
+203
+00:42:42,708 --> 00:42:48,568
+Yani, atıyorum, belli bir kaçırmamamız gereken düzey var mı?
+
+204
+00:42:48,568 --> 00:42:55,008
+Tabii, bunun için şey yapmanızı bilmiyorum, bu dönem mi başladığınızda?
+
+205
+00:42:55,208 --> 00:42:57,108
+Bu dönem başladım, daha bu dönem, o yüzden soruyorum.
+
+206
+00:42:57,208 --> 00:43:02,568
+Yani size bir oryantasyon yapılmadı o zaman, korkarım. Bu maalesef bizim...
+
+207
+00:43:02,943 --> 00:43:04,823
+Üniversitede ciddi bir şey.
+
+208
+00:43:04,823 --> 00:43:11,864
+Yok, yapıldı ama hocam çok karmaşa oldu. Bütün bölümleri toplamışlar. Hem tezli hem doktora hem tezsiz.
+
+209
+00:43:13,143 --> 00:43:15,844
+Bir saniye o zaman bir müsaade edeyim, bitireyim.
+
+210
+00:43:16,463 --> 00:43:17,083
+Yapayım oradan hocam.
+
+211
+00:43:18,823 --> 00:43:28,463
+Bütün bölümlerin bir arada olması olmaması bir şey değiştirmiyor aslında teknik olarak. Çünkü yönetmelik hepinizi kapsıyor.
+
+212
+00:43:29,684 --> 00:43:44,844
+Yani devam zorunluluğu da üniversite senatosunun aldığı karar gereği bütün üniversiteyi tabluluyor. Yani bilgisayar mühendisliği bölümünün şu programında devam budur, bu programında budur vesaire şeklinde değil. Oradaki tek ayrım lisans ve lisans üstüdür.
+
+213
+00:43:50,943 --> 00:44:09,423
+Başka bir güncelleme ya da değişiklik yapılmadıysa, çünkü zaman zaman exceptional işler yapılabiliyor ama literatür der ki, normal daha doğrusu literatür bir kural, %70 devam zorunluluğu var, %30 devamsızlık hakkınız var, 14 hafta %30 dediğiniz zaman 4,2 ediyor.
+
+214
+00:44:09,423 --> 00:44:18,423
+4,2 hafta gibi bir şey olmadığı için 4 hafta devamsızlık hakkınız var, 5. hafta gelmediğinizde yanıyor gibi düşünebilirsiniz.
+
+215
+00:44:18,943 --> 00:44:43,364
+Ama bunun dışında bazen rektörlüğün, mesela şu an pandemi sürecinde olduğumuz vs. için ek kararları olabiliyor. Örneğin eskiden alttan ders alan öğrencilerin öncelikle alttan aldıkları dersi yapmaları vs. gerekiyordu. Şimdi o derslere devam zorunluluğunu kaldırtılar.
+
+216
+00:44:43,791 --> 00:45:08,532
+Halktan alınan derslere. Lisans üstünde başka bir exception yaratılmadı bildiğim kadarıyla. Oysa siz hala ona tabi olmanız lazım. Ancak ve lakin bunun için de üniversitenin sayfasındaki yönetmekler kısmına bakarsanız, hani kulaktan kullan vesaire olmasın, orası üzerinden girebilirsiniz. Ama devam zorunluluğu olmasa bile dersleri takip etme zorunluluğu var şu an.
+
+217
+00:45:08,980 --> 00:45:28,740
+Yani derse gelmeseniz bile gelmediğiniz dersi izlemek zorundasınız. Sizler zaten daha aklı başında insanlarsınız. Onu atlayacağınızı sanmıyorum ama lisans öğrencilerinde çok yaşıyoruz. Ben dersin ilk üç haftası bir şeylere anons ediyorum, ediyorum, o öyle olacak, bu böyle olacak, şu şöyle olacak vs. diye.
+
+218
+00:45:29,619 --> 00:45:53,299
+14. hafta o dersin o faaliyetinden sıfır aldığını öğrenince, hocam ama biz bilmiyorduk falan gibi, bizim zaten devam zorunlığımız yok gibi geliyorlar. Ben de kendilerini konuya ayıyorum. O yüzden benim sizlere tavsiyem bu noktada bütün yönetmelikler üniversitenin sahipalarında sizlerin erişimine, bizlerin erişimine açık.
+
+219
+00:45:55,668 --> 00:46:12,447
+Yani bana bile sormanız yerine kendinizin bakıp kontrol ediyor olması her zaman için daha güvenlidir. Çünkü dediğim gibi bazen senatumun bir kararı bize gelmesi çok daha uzun sürebiliyor.
+
+220
+00:46:12,980 --> 00:46:31,340
+Bu konuları gelmediği için de ben gidip onu kontrol etmiyorum periyodik olarak. Bugün senata ne karar aldı, benle ilgili bir şey aldım mı diye. Zaten öyle bir vakit de yok. O yüzden de güncel bilgi her zaman için sayfalarda var. Oradan takip etmeniz daha iyi olur. Ama benim bildiğim şu an %70 devam zorunluluğunuz var.
+
+221
+00:46:32,960 --> 00:46:37,420
+Anladım hocam. Ben de öyle okumuştum da. Bir daha emin olmak için sordum.
+
+222
+00:46:42,356 --> 00:46:45,156
+O zaman başka sorunuz var mı arkadaşlar?
+
+223
+00:46:48,371 --> 00:47:05,191
+Başka sorunuz yoksa, şeyi söylemiştim ilk hafta ama hala izlememiş, izleyememiş vesaire olan varsa, çünkü anladığım kadarıyla G-Sys'te yapılan seçimlerin buraya yansıması da, yani online sisteme yansıması da biraz gecikmeli oluyor.
+
+224
+00:47:13,268 --> 00:47:31,588
+Proje yazımı, daha doğrusu destek projesi yazımı yapacaksınız. Bir de onunla ilgili sunum yapacaksınız. Dönem içi değerlendirmeniz bu ikisiyle olacak. Dönem içi değerlendirmeniz, genel değerlendirmenin %60'ı, sene sonu final değerlendirmenizde genelin %40'ını oluşturacak. Ayrı bir karar çıkmadığı sürece.
+
+225
+00:47:32,211 --> 00:47:50,211
+Aklınızda olsun. Destek projeleriyle ilgili proje konusunun seçme konutasında serbestsiniz. Ama destek programını bu sefer ben seçeceğim. Yani şu destek programı kapsamında başvuru hazırlamanızı istiyorum diye belirteceğim. Aklınızda olsun. Bununla ilgili duyuruyu da...
+
+226
+00:47:51,380 --> 00:48:06,380
+Önümüzdeki hafta destek programlarını konuşacağız zaten. İlk derste anlatmıştım, bir araştırma yapacaksanız ilk olarak ihtiyacınız olan şeyin tamamen duygusal motivasyon olduğunu anlatmıştım. O duygusal motivasyonu da...
+
+227
+00:48:07,092 --> 00:48:22,192
+Biz bulmak için bir destek başvurusuna ihtiyacımız olduğunu konuşmuştuk. Dolayısıyla önce onları üzerine konuşacağız. Sonra da o destek başvurusu sürecini başlatıyor olacağız. Aklınızda olsun. O da siz sormadan ben söyleyeyim.
+
+228
+00:48:25,152 --> 00:48:27,112
+Hocam bir soru sorabilir miyim?
+
+229
+00:48:27,112 --> 00:48:27,612
+Tabii.
+
+230
+00:48:28,175 --> 00:48:42,516
+Bu dersle alakalı değil de bölümle alakalı. Şimdi Cuma günü bizim iki tane ders alabiliyoruz ve iki dersle birbiriyle çakışmıyor. Normalde alternatifi olan dersler birbiriyle çakışıyor ve birini seçebiliyorduk.
+
+231
+00:48:42,516 --> 00:48:49,916
+Şimdi Cuma günü iki tane ders alırsam, bu dönem de benim ikinci dönemim, o derslerden birini geçmem.
+
+232
+00:48:50,356 --> 00:48:55,655
+Benim için yeterli mi? Yoksa iki dersi aldığım için de iki dersi de geçmem mi gerekir?
+
+233
+00:48:56,096 --> 00:48:58,036
+İlk dönemde kaç dersten geçtiniz?
+
+234
+00:48:59,275 --> 00:49:07,576
+Geçen dönem beş ders. Bu dönemde beş dersten geçersem yeterli midir? Yoksa o cuma günü iki ders aldığım için o derste geçmem gerekir mi?
+
+235
+00:49:08,336 --> 00:49:17,856
+Cuma günü, bir saniye ben şeyi kaçırdım. Cuma günü iki ders alıyorsunuz, o iki ders bu dönem aldığınız toplam beş derse dahil değil mi zaten?
+
+236
+00:49:18,420 --> 00:49:21,920
+Şöyle oluyor, onunla birlikte 6 oluyor. Her gün bir ders.
+
+237
+00:49:22,300 --> 00:49:25,420
+Bu dersi sayıyor musun 5 ders içine?
+
+238
+00:49:25,780 --> 00:49:26,920
+Yok, saymıyorum.
+
+239
+00:49:27,259 --> 00:49:35,480
+Çünkü biliyorsun, orijinal programda 10 ders ama sonra eklenince 10 artı 1 oldu.
+
+240
+00:49:35,780 --> 00:49:36,920
+Evet, onu biliyorum.
+
+241
+00:49:37,539 --> 00:49:40,360
+Şimdi 6 tane ders alıyorsun o zaman.
+
+242
+00:49:40,900 --> 00:49:41,259
+Evet.
+
+243
+00:49:42,059 --> 00:49:46,159
+Geçen dönem 5 dersten başarılıydın. Toplamda 11 ders oluyor.
+
+244
+00:49:46,420 --> 00:49:50,300
+Hepsinden başarılı olursan, mezun olur muyum? Bunu soruyorsun.
+
+245
+00:49:51,079 --> 00:49:58,739
+Yani şunu aslında soruyorum. Cuma günü aldığım iki dersten herhangi birini geçersem mezun olabiliyor muyum?
+
+246
+00:49:58,739 --> 00:50:05,539
+Herhangi birini geçiyor olmak demek, bir tanesinden başarısız olmak demek.
+
+247
+00:50:05,900 --> 00:50:06,159
+Evet.
+
+248
+00:50:06,820 --> 00:50:10,159
+Yani ben öyle bir riske girmezdim.
+
+249
+00:50:10,835 --> 00:50:26,395
+Çünkü teknik olarak başarısız olan dersin replace edilmesi lazım. Ancak ve lakin bu sorduğun biraz fazla teknik detaya girer. Yani fen bilimleri bunu nasıl değerlendirir emin değilim.
+
+250
+00:50:27,027 --> 00:50:51,547
+Lisans öğrencilerinde farklı yaklaşımlar olduğunu gördüm. Bayağı da sıkıntı çıktığını gördüm. Zamanında mezun etmedikleri öğrenci olduğunu da gördüm bu yüzden. Ama fen bilimleri konusunda çok net emin değilim. Ama BT programının bölümde bir sorumlusu var. [öğrenci].
+
+251
+00:50:52,179 --> 00:51:08,539
+O hocanızla iletişime geçip detayı sorabilirsiniz. İşleyişi biliyordur diye tahmin ediyorum. Detaya daha vakıf olabilir. Ondan bir yanıt alamıyorsanız fen bilimlerine bunu sormak iyidir ama bunu bir an önce yapmanız lazım.
+
+252
+00:51:08,920 --> 00:51:10,619
+Biliyorum. Yarın son gün.
+
+253
+00:51:11,347 --> 00:51:23,947
+Yarın son günden öte, aslında son günü geçtik galiba ama emin değilim. 16-19'da sadece ekleme yapılabiliyor galiba. 16-19'da silme yapamıyor olabilirsiniz. 16-19 Mart'ta.
+
+254
+00:51:23,947 --> 00:51:31,107
+Evet, ben zaten şu an onu sildim birini o riski almamak adına. Ama eğer olabiliyorsa tekrar eklemeyi düşünüyorum.
+
+255
+00:51:32,188 --> 00:51:33,907
+Sonuna kadar her şey zorlanır.
+
+256
+00:51:36,211 --> 00:51:39,891
+Yani dediğim gibi ben şu an yanıltıcı bir şey söylemek istiyorum.
+
+257
+00:51:39,891 --> 00:51:41,192
+Tamam hocam, teşekkür ediyorum.
+
+258
+00:51:41,411 --> 00:51:43,271
+Biraz fazla teknik detay o.
+
+259
+00:51:43,491 --> 00:51:51,831
+Çünkü son BT programının yönergesinde ya da yönergede bile olmayacaktır büyük ihtimalle bu.
+
+260
+00:51:52,551 --> 00:51:56,391
+Aslında fen bilimlerinin bu işi uygulama yani.
+
+261
+00:51:56,980 --> 00:51:59,659
+Alışkanlığı ya da şeyiyle alakalı olacaktır.
+
+262
+00:51:59,960 --> 00:52:05,199
+Zaten hocam normal şartlarda cuma günü iki ders alamamamız gerekiyor.
+
+263
+00:52:05,559 --> 00:52:05,780
+Niye?
+
+264
+00:52:05,780 --> 00:52:10,480
+Ama açıldığı için, saatlerde birbirine çakışmadığı için alabiliyoruz.
+
+265
+00:52:10,719 --> 00:52:15,579
+Cuma günü, bu programın kapsamında cuma günü iki ders alırsınız, alamazsınız diye bir kural yok.
+
+266
+00:52:16,039 --> 00:52:24,980
+Eğer derslerin saatleri çakışmıyorsa, ister cuma olsun, istersen pazar olsun, açıldıysa o gün o ders ve sizin alanınızda da...
+
+267
+00:52:24,980 --> 00:52:45,019
+Alabilirsiniz. Öyle bir kısıt yok. Dolayısıyla onu boşuna söylüyorsun. Normalde almamız, almamız falan. Hiç öyle bir şey yok. İki ders çakışmıyorsa ve alabiliyorsanız alırsınız. Bu kadar. Ama senin sorun zaten ya da problemin bu değil. Bu problemi böyle tariflersen daha çok kafa karıştırırsın. Senin problemin şu.
+
+268
+00:52:45,588 --> 00:53:03,568
+Geçen dönem 5 ders almıştım. Bu dönemde BLM 5004 hariç, yani araştırma yöntemleri ve Bilimsel Etik hariç 6 ders aldım. Olur da bunlardan birinden kalırsam, benim mevzuniyetimde problem olur mu? Sorum bu kadar basit aslında.
+
+269
+00:53:03,967 --> 00:53:18,907
+Öyle basitleştirerek sorarsan daha net cevap alabilirsin özellikle fen bilimleri noktasında. Çünkü fen bilimlerinde bazen muhatap olmanız gereken kişiler bizler gibi olmuyor. Öyle söyleyeyim.
+
+270
+00:53:19,411 --> 00:53:21,331
+Yaklaşımları bambaşka olabiliyor.
+
+271
+00:53:22,591 --> 00:53:25,591
+Hocam ekstra ben bunun üzerine bir soru sorabilir miyim?
+
+272
+00:53:25,731 --> 00:53:36,231
+Şimdi totalde biz 10 ders artı araştırma sizin dersiniz olacak ama biz 11 ders olarak, yani mesela bu [öğrenci] arkadaşımız şimdi o dersi verdi diyelim 6 tane de.
+
+273
+00:53:36,871 --> 00:53:40,731
+O zaman hani 11 derste mezuniyetin bir sıkıntısı olacak mıdır?
+
+274
+00:53:41,131 --> 00:53:45,291
+Şöyle bak, oradaki temel sıkıntı şu, 11 derste mezun olmazsın zaten.
+
+275
+00:53:46,420 --> 00:54:00,179
+Senin alman gereken kadar dersle mezun olursun. Ama bu ikinci dönem aldığım altı dersin altısından da başarılı olursan, en kötü ihtimal fazla olan dersi geçen dönemki bir dersin üstüne sayarlar ve geçerler sistematik olarak.
+
+276
+00:54:00,179 --> 00:54:07,279
+Tamam mı? Yani ya da bu kötü durum, iyi durum.
+
+277
+00:54:08,019 --> 00:54:34,599
+Toplam 11 tanesini de yazarlar, transkriptinde de gözükür, hiçbirini de bir şeyin üzerine saymazlar ve böyle mezun oldu derler. Bu olasılıklardan birkaçı. Ama buradaki sıkıntı şu, bu dönem aldığın 6 ders var ya, bunlardan birinden fail ettin, başarısız olur. Normalde yönetmelik temel olarak şunu der, bir adam bir dersten başarısızsa bunu replace etmesi gerekir. Başarılı hale getirmen gerekir.
+
+278
+00:54:35,123 --> 00:54:43,223
+Ama sen zaten son döneminde bunu aldın ya da bu döneminde aldın. Dolayısıyla sana bu sefer bir sonraki dönem zorla ders aldırtmak gibi bir durum oluşabilir.
+
+279
+00:54:44,523 --> 00:54:54,543
+Ya da daha başka sıkıntı, komplike olabilir. Çünkü ilk döneme aldığın başarısız dersin üzerine bu döneme aldığın başarılı dersi sayıp geçebilirsin.
+
+280
+00:54:54,663 --> 00:54:57,603
+Ama bu dönem başarısız olursan bir şeyden problemdir bu.
+
+281
+00:54:58,900 --> 00:55:08,519
+Anladım hocam. Şimdi ben de altı dersi aldım ama benim ilk dönemim, ikinci dönemimde de dört tane alırım. En kötü o şekilde de halledebilirim. Benim olasılığım var ama...
+
+282
+00:55:08,519 --> 00:55:18,519
+En kötü demiz. Yani altı taneden bir tanesinden kalsam bile telafi hakkında var. Çünkü bir sonraki dönem alıp onun dört değil beş alırsın, onu da ona sayarsın, bitirirsin gene. Muhtemel.
+
+283
+00:55:19,300 --> 00:55:20,660
+Anladım hocam, sağ olun.
+
+284
+00:55:23,476 --> 00:55:28,016
+O zaman başka sorunuz yoksa arkadaşlar bir saniye bir çekelim.
+
+285
+00:55:28,016 --> 00:55:29,635
+Ben bir şey sorabilir miyim hocam size?
+
+286
+00:55:31,896 --> 00:55:32,536
+Efendim?
+
+287
+00:55:33,135 --> 00:55:36,476
+Aslında bu dersler değil de, Yedideki dersle ilgili bir şey soracaktım.
+
+288
+00:55:36,516 --> 00:55:40,436
+Linux'le ilgili bir şeyler indirmemiz gerekecek ve önden haber vereceğini söylemiştiniz ama.
+
+289
+00:55:40,956 --> 00:55:47,856
+Özellikle vermedim. Çünkü şeye karar verdim, bir şeylerle uğraşmak yerine benim yaptıklarımı izlemeniz daha mantıklı olacak.
+
+290
+00:55:48,436 --> 00:55:58,876
+Daha akışkın olacak. Zaten videoda kayıt altına alınıyor. Dolayısıyla daha sonra oturup tekrar izleyebilirsiniz. Benim yaptıklarımı aynen yaparak kendi başımıza daha sakin bir anda.
+
+291
+00:55:59,596 --> 00:56:09,896
+Çünkü şu şöyle bir sıkıntı olacağına karar verdim. Sonradan aklıma geldi bu. Şimdi benle beraber bir şey yapmaya çalışırken benim söylediklerime mi konsantre olacaksın?
+
+292
+00:56:09,896 --> 00:56:16,376
+Ekrandaki mesajı mı konsantre olacaksın? Başka bir şeye mi konsantre olacaksın? O karışacak. Onun yerine ben anlatayım size.
+
+293
+00:56:16,436 --> 00:56:25,115
+adım adım. Siz de izleyin. Ona konsantre olun. Sonra zaten izleyerek tekrar aynısını yaparsınız. Daha temiz olacağım herhalde. O yüzden öyle yapacağız.
+
+294
+00:56:25,775 --> 00:56:29,996
+Bence çok doğru düşünmüşsünüz hocam. Daha efektif olacaktır yani.
+
+295
+00:56:29,996 --> 00:56:40,876
+Aslında benim sormak istediğim şey şuydu. Sanal makine falan da kurursak daha efektif. Sizin altınızdan sonra tekrardan hep ben yapacağım en azından.
+
+296
+00:56:41,496 --> 00:56:42,876
+Akşam ben daha tekrar...
+
+297
+00:56:44,436 --> 00:57:06,275
+durumunda canınız çok yanar. Yani yapacağım zaten. Çünkü bundan sonraki derslerde de gene uygulamaları o makine üzerinde kurduğumuz işletim sistemi üzerinde yapmaya devam edeceğiz. Sonrasında da vereceğim ödev, proje ve benzeri şeyleri de o makine üzerinde yapıyor ve çalıştırıyor olmanız lazım. Aksi taktirde zaten bir şey olmaz. Fail ederiz yani.
+
+298
+00:57:06,771 --> 00:57:18,392
+Evet, neyse. O zaman bu dersle ilgili ya da genelle ilgili bir sorunumuz yoksa ben müsaadenizi istiyorum. Bölümün toplantısına gideyim. Görüşmek üzere arkadaşlar.
+
+299
+00:57:19,612 --> 00:57:24,352
+Teşekkürler hocam.

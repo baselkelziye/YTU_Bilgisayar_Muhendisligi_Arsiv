@@ -1,0 +1,2683 @@
+1
+00:02:01,236 --> 00:02:02,236
+Merhaba arkadaşlar.
+
+2
+00:02:08,403 --> 00:02:10,403
+Ses geliyor mu acaba?
+
+3
+00:02:10,403 --> 00:02:12,403
+Geliyor hocam.
+
+4
+00:02:12,403 --> 00:02:16,403
+Net herhalde değil mi? Başka bilgisayardayım da.
+
+5
+00:02:26,419 --> 00:02:27,243
+İmle.
+
+6
+00:02:32,692 --> 00:02:41,492
+Son derste fonksiyonlarla alakalı konuşmuştuk. Bugün yeni bir konuyla başlayacağız. Çarşamba kalanını bitiririz, devam ederiz.
+
+7
+00:02:41,492 --> 00:02:46,475
+Şimdi bu konu geçen konunun devamı olduğu için kısaca hatırlayalım şöyle.
+
+8
+00:02:50,963 --> 00:03:13,463
+Bir fonksiyon tanımı yapmadan önce ne konuşmuştuk? Programımız yazıldıktan sonra bellekte bize bir yer ayrılıyordu. Bu ayrılan yer gelişigüzel, rastgele bir yer değildi. Programımızın kodları, instructionlarımız şu instruction denen bölgede bulunuyordu. Şurada.
+
+9
+00:03:14,388 --> 00:03:22,628
+Sabit datalarımız, statik datalarımız, mesela global değişkenler falan, onlar ayrı yerde tutuluyor. Bunları geri gelince ayrıca konuşacağız zaten.
+
+10
+00:03:23,388 --> 00:03:34,068
+Programlamayla alakalı şeyler, bunlar algoritma ile alakalı değil. Şunlar şöyle. Dinamik verilerimiz. Şimdi bunu bu dönem belki yetiştirirsek anlatırız da.
+
+11
+00:03:34,355 --> 00:03:42,675
+Şimdi hep soruyorsunuz, hocam en elemanlı bir diziyi gerçek olarak nasıl oluştururum? Yani Max gibi bir şey tanımlamadan, işte onu burada tanımlayacağız.
+
+12
+00:03:42,675 --> 00:04:00,675
+O dinamik veriler burada tutuluyor, statik olan veriler ve geçici değişkenlerimiz, işte bir fonksiyonun açılınca tanımlanan parametreler, fonksiyonun değişkenleri, oradaki diziler, işte sabit uzunluklu dizilerimiz, stek bölgesinde tutuluyordu.
+
+13
+00:04:00,915 --> 00:04:10,915
+Bu stake bölgesinin özelliği neydi? Kendi içerisinde her bir fonksiyon tanımlandığında değişkenleri tutuyor. İşlemcinin state bilgilerini tutuyordu.
+
+14
+00:04:10,915 --> 00:04:19,915
+Hatta bu değişkenleri de gelişigüzel tutmuyor arkadaşlar. Siz main içerisinde bir değişken tanımladığınızda önce A değişkenini tanımladığınızda önce siteye A'yı yazıyor.
+
+15
+00:04:19,915 --> 00:04:24,779
+Sonra B'yi tanımladığınızda B'yi yazıyor, sonra C'yi yazıyor. İşte bir tanesi integer olsun.
+
+16
+00:04:24,884 --> 00:04:34,184
+Bir tanesi car olsun, bir tanesi float olsun, bunları peş peşe yazıyor. Yani bir şey yok, sizin yazma sıranıza göre belleğe yerleştirecektir dedik.
+
+17
+00:04:34,184 --> 00:04:47,584
+Sonra, şimdi program açılınca bir kere bizim main fonksiyonunu çalıştırıyoruz. F1 fonksiyonu çağrıldığında ne oluyordu? F1 fonksiyonu stag memory'e yükleniyordu.
+
+18
+00:04:48,115 --> 00:05:02,515
+F1 fonksiyonun program kodu ile alakalı değişkenler falan burada yükleniyor. Sonra ne olmuş? İkinci satırda hemen bir fonksiyonu çağırsa gelmiş. Bu ikiyi buraya yedekliyorduk.
+
+19
+00:05:02,515 --> 00:05:14,716
+Çünkü kaldığımız yerden bu fonksiyon tanımlanca geri geliyoruz. Pardon iki diyorum. F1'e gitmiş olduk. İkiyi şuraya yedekliyoruz. Ben yanıp söyledim. İki buraya yedekleniyor.
+
+20
+00:05:15,028 --> 00:05:23,307
+Sonra f3 fonksiyonun içerisine geldiğimizde bir şeyler yapıldı, yapıldı, 10. satırdayız. 11. satırda f3 fonksiyonu çağrıldı.
+
+21
+00:05:23,307 --> 00:05:31,228
+Şimdi f3 fonksiyonunu siteye yükleyeceğiz. Programın içerisindeki bu fonksiyon içerisinde neler varsa onlar yapılacak.
+
+22
+00:05:31,228 --> 00:05:39,228
+Ve tekrar geri geldiğimizde kaldığımız yerden devam ettiğiniz için 10 bilgisini buraya yüklüyoruz, yedekliyoruz f3 içerisinde.
+
+23
+00:05:40,084 --> 00:05:53,884
+Sonra F3'ün içerisine geldiğimizde 31. satırda F4 fonksiyonu çağrılmış. F4 fonksiyonu çağrılacak buraya yüklenecek. Şunun içerisinde de nerede kaldığımızı tekrar söylemek için 11. satırı yüklüyoruz.
+
+24
+00:05:54,884 --> 00:05:58,484
+Doğru mu yaptık bir dakika? F3'ün içinden 11 dedik.
+
+25
+00:06:00,484 --> 00:06:05,283
+F1'in içinden F3'ü çağırdık. F3'ün içine, pardon şuraya 31 diyeceğiz arkadaşlar.
+
+26
+00:06:06,899 --> 00:06:14,899
+Sonra bunun içerisinden f4 çağrıldı, f4'e gittik. F4 bakın bir program, hiçbir şekilde bir fonksiyon çağrısı yapılmıyor.
+
+27
+00:06:14,899 --> 00:06:21,899
+F4 tamamlanıyor. F4 tamamlandıktan sonra f4'e ait her şey ne oluyor? Bellekten siliniyor.
+
+28
+00:06:21,899 --> 00:06:26,899
+Sonra önce şuraya gidiyoruz, diyoruz ki en son burada kalmıştım diyoruz.
+
+29
+00:06:26,899 --> 00:06:33,899
+31. satırdan sonraki satır 32, 33, 34 ne yapıyor? Bu fonksiyon tamamlanıyor. Bakın başka bir fonksiyon çağrısı yok.
+
+30
+00:06:34,867 --> 00:06:40,267
+Sonra 31. satır, yani bu f3 fonksiyonu da tamamlandıktan sonra burası da temizleniyordu.
+
+31
+00:06:43,168 --> 00:06:53,067
+Sonra işte, nerede kalmışız? 10'da kalmışız. 11. satırdan devam ediyoruz. İşte 11. satırdan devam edip f1'i tamamlandı. Ondan sonra 2. satırda kalmışız.
+
+32
+00:06:53,467 --> 00:06:58,268
+Ne yapıyoruz? 3. satıra geldik. 3. satırda bu sefer yeniden bir fonksiyon çağrısı yapılıyor.
+
+33
+00:06:58,268 --> 00:07:01,867
+Bu böyle devam ediyor. Yani bu bir dolacak bir boşalacak şeklinde.
+
+34
+00:07:02,675 --> 00:07:17,675
+Bakın bu önemli bir detay. Bunu bu derste kullanacaksınız. Gelecek dönem Asamli Dili dersinde çok aktif bir şekilde bu yapıyı kullanacaksınız. Push, işte stack operasyonları diye. Veri yapılarını da kullanacaksınız.
+
+35
+00:07:17,675 --> 00:07:25,675
+İşte algoritma analizinde, yani 5-6 derste bu mekanizma sizin karşında gelecek. Özellikle işletim sistemleri tasarımında çok çok kullanılan bir şey.
+
+36
+00:07:26,867 --> 00:07:32,867
+Şimdi bakın buradaki fonksiyonlarımız F1 fonksiyonu olsun, F2 fonksiyonu olsun şu yapıda.
+
+37
+00:07:32,867 --> 00:07:38,867
+F2'den F3 çağrılıyor, F3'den F4 çağrılıyor, F4 bitiyor geri geliyoruz.
+
+38
+00:07:38,867 --> 00:07:45,867
+Nereye geri geliyoruz? Önce F4'den F3'e, sonra F3'den F1'e, sonra F1'den main'e geliyor.
+
+39
+00:07:45,867 --> 00:07:51,851
+Sonra F2 çağrılıyor, F2 kendi içinden F3'ü çağırıyor, F3'ü F4'e, F4 geri geri geliyor.
+
+40
+00:07:52,755 --> 00:07:57,755
+Dikkat ederseniz şöyle bir yapı var arkadaşlar. Şöyle yazayım veya şuraya sığdırmaya çalışayım.
+
+41
+00:07:58,755 --> 00:08:01,755
+F1'den F3'e diyelim.
+
+42
+00:08:02,755 --> 00:08:12,755
+Ok şartılarının yönüne dikkat edelim. F3'den F4'e geldik. F4'ten geriye, geriye, geriye.
+
+43
+00:08:16,596 --> 00:08:31,596
+Hiçbir şekilde bizi tekrar şöyle geriye getirtmedi. Yani en son işlem tamamlandı. Burası işte dead end diyelim mesela, bitiş noktası. Bunun içinden herhangi bir fonksiyon çağrılmadı. Böyle gittik ve gittiğimiz yoldan geri gelmek.
+
+44
+00:08:31,596 --> 00:08:42,508
+Şimdi yeni bir fonksiyon tasarım mantığıyla bunu yapacağız. Acaba şöyle bir şey olsa, mesela f1'den f3'e gitsem, f3'den f1'e gitsem ne olur?
+
+45
+00:08:42,995 --> 00:08:45,796
+Şimdi kod olarak yazmak istedik, nasıl kod yazarız?
+
+46
+00:08:51,860 --> 00:09:01,059
+F1 fonksiyonuna F3'e gidiyorum, F3 fonksiyonuna F1'e gidiyorum. Kod olarak nasıl bir kod yazabiliriz? Söyleyin mesela, bilin. İlla C kod olması zorunda değil.
+
+47
+00:09:06,611 --> 00:09:19,011
+Veya chat ekranına izlebilirsiniz. Bakın F1'in içinden F3'ü çağırmışız. Şurada şundan bahsediyoruz. Şöyle de bir kodu var. F1'den F3'e, F3'den F1'e nasıl bir kod yazacağız?
+
+48
+00:09:26,484 --> 00:09:28,484
+Hiç fikir olan yok mu?
+
+49
+00:09:30,484 --> 00:09:32,484
+Yanlış da olsa, buyurun.
+
+50
+00:09:32,484 --> 00:09:36,484
+F1'in içinde F3'ü çağırıp, F3'ün içinde de F1'i çağırsak?
+
+51
+00:09:37,484 --> 00:09:40,484
+Heh, işte bu kadar, aynen. Void F1 dedik.
+
+52
+00:09:41,484 --> 00:09:46,484
+Burada bir şeyler yaptık, F3'ü çağırdık. Teşekkür ediyorum. Şöyle.
+
+53
+00:09:47,484 --> 00:09:51,484
+Sonra Void F3 dedik.
+
+54
+00:09:52,484 --> 00:09:54,220
+Buradan da F1'i çağırdık.
+
+55
+00:09:56,052 --> 00:10:01,552
+Bakın ne oluyor? F1'de main'i de şöyle yazalım, main diyelim.
+
+56
+00:10:04,251 --> 00:10:16,052
+F1'de buradan tetikletelim. İster F1'i çağırsam, ister F3'ü çağırsam ne olacak? F1 çağrılıyor, F3'ü çağırıyor, F3 bunu çağırıyor, o içinden tekrar F3'ü çağırıyor.
+
+57
+00:10:16,052 --> 00:10:21,852
+Bu şekilde fonksiyon çağrıları birbirini çağırıyor. İşte buna arkadaşlar rekürsif.
+
+58
+00:10:22,227 --> 00:10:34,627
+Kendini yineleyen, özünü yineleyen bir şey diyoruz. Peki soru olarak şunu sorsam, şöyle bir fonksiyon olsa, bir f-iki fonksiyonum olsun, f-iki kendi kendine şartlı. Bunu nasıl yazarız?
+
+59
+00:10:43,508 --> 00:10:50,508
+Hocam, şey yapabilir miyiz, yine aynı şekilde gibi efik fonksiyonu tanımlayıp, onun için de yeniden efik fonksiyonu...
+
+60
+00:10:50,508 --> 00:10:56,508
+Aynen, bu kadar. Bir şeyler yapacağız. Bu bir şeylerin içinde fonksiyon çağrısını tekrar yapıyoruz.
+
+61
+00:10:56,508 --> 00:11:04,508
+Bakın, main fonksiyonu içerisinde, hatta sayısal analizlerle kalan bir soru vardı, o soru herhalde diğer bir gruptan, bilmiyorum ama.
+
+62
+00:11:04,508 --> 00:11:09,508
+Şimdi, main içerisinde fonksiyon çağrısı yapıyoruz. Bakın, şunlar hep fonksiyon çağrıları.
+
+63
+00:11:10,227 --> 00:11:17,347
+Ama fonksiyonları tanımlamışız. Tanımladığımız fonksiyonların biri içerisinde f2'ye bir fonksiyon var.
+
+64
+00:11:17,347 --> 00:11:23,508
+f2'nin içerisinde hem fonksiyonu çağırıyoruz hem de fonksiyon tanımı zaten yapılmış oluyor. Bakın bu da mümkün.
+
+65
+00:11:23,508 --> 00:11:32,627
+Bunlar arkadaşlar rekürsif senaryolar. Genel olarak ders notlarımızda da özünü yineleyen, kendini yineleyen dediğimiz.
+
+66
+00:11:32,627 --> 00:11:34,867
+Recurrence ne demek İngilizce'de?
+
+67
+00:11:37,076 --> 00:11:41,076
+Ricör diye ifade ediliyor olabilirsiniz ama, telafsını bilmiyorum.
+
+68
+00:11:44,884 --> 00:11:48,004
+Recurrent normalde bunun...
+
+69
+00:11:52,115 --> 00:11:58,115
+Bir şeyin nüks etmesi olarak özellikle tıpta çok kullanılıyor. Yani kendi kendini yenirlemesi şeklinde.
+
+70
+00:11:58,115 --> 00:12:09,115
+Burada iki farklı yolumuz var. Bir F fonksiyondan kendisini çağırabiliriz. İşte F'den G'yi, G'den H'yi, H'tan bilmem neyi, o da sonra tekrar başa dönebiliyoruz.
+
+71
+00:12:09,115 --> 00:12:13,067
+F'den G'yi, G'den F'yi mesela burada olduğu gibi.
+
+72
+00:12:13,716 --> 00:12:36,716
+Şimdi bu bizim bazı algoritmalarımızı daha hızlı çözmemizi mümkün koduyor bu yaklaşım. Şu ana kadar gördüğümüz algoritmalar iteratif algoritmalar var. Şurada iterasyonlar var. Önce F1 çalışacak. Sonra F1'e gideceğiz. Şuradaki işler yapılacak. Sonra F3 çalışacak. F3'e gideceğiz. Şuradaki işler yapılacak. F4 tamamlanacak ve geri geleceğiz.
+
+73
+00:12:41,491 --> 00:12:47,631
+Ama artık bundan sonra yazdığımız fonksiyonlar kendi kendisine çağırabilir durumunda olacaklar.
+
+74
+00:12:48,412 --> 00:12:50,451
+Peki gelin bunu bir kodlayalım önce.
+
+75
+00:12:52,251 --> 00:13:05,292
+Bakalım ilk, burada bir sıkıntı var ama dikkat edersin. O sıkıntı ne olur arkadaşlar? Şuradaki senaryoyla birlikte değerlendirin. Şu bellek yapısıyla rekürsifi birlikte değerlendirdiğinizde ne gibi sıkıntı olabilir?
+
+76
+00:13:09,491 --> 00:13:11,491
+Hafızayı doldurabilir.
+
+77
+00:13:12,491 --> 00:13:23,491
+Yani, bellek dediğimiz şey, burada fonksiyon yazdığımızda sonsuz defa çağrılıyor. Bakın, F2 dedik, F2 kendini çağıracak, o onu çağıracak, o onu çağıracak.
+
+78
+00:13:23,491 --> 00:13:30,491
+Yani, bunu şöyle yazacak olursam, F2 çağırdı, sonra F2 çağırdı, sonra F2 çağırdı, böyle girecek.
+
+79
+00:13:30,491 --> 00:13:34,315
+Bu sonsuz kadar, teorik olarak sonsuza kadar gidiyor ama…
+
+80
+00:13:34,580 --> 00:13:42,580
+Teorikte sonsuz olan şey, pratikte maalesef sonsuz değil çünkü bizim tepemizde bizi denetleyen bir yazılım var. Nedir o yazılım?
+
+81
+00:13:45,580 --> 00:13:47,580
+Programımızı denetleyen bir yazılım var.
+
+82
+00:13:49,580 --> 00:13:50,580
+İşletim sistemi?
+
+83
+00:13:50,580 --> 00:14:01,388
+Heh işletim sistemin gözetimi altındayız. Diyor ki, ya kardeş diyor sen belleği doldurdun diyor. O stek bölgesi. Şimdi nasıl olacağını göstereceğim de.
+
+84
+00:14:01,460 --> 00:14:28,100
+Şunun üzerinde bakalım. Şu bellek senaryosunu, şuradaki senaryoyu, şurada şöyle bir kod yazayım. Void F2 diyelim hadi. F2'yi çağıralım. Şöyle fonksiyonun tanımını yapalım. Main'den de dinamitin fitilini ateşleyelim şöyle. F2'yi çağıralım.
+
+85
+00:14:28,211 --> 00:14:33,012
+Bellek üzerinde stack bölgesine baktığında nasıl bir şey olacak? Main geldi.
+
+86
+00:14:34,572 --> 00:14:41,211
+Kabul edelim ki burası 101. satır olsun veya 100. satır olsun. 100. satırı buraya yazdık. Sonra F2'yi çağırdı.
+
+87
+00:14:41,572 --> 00:14:50,572
+Şurası da ne olsun? 180. satır olsun. F2'yi çağırdık. Bir şeyler yapıldı. F2 kendi içinden tekrar bunu çağırdı.
+
+88
+00:14:51,316 --> 00:14:58,356
+F2 180. O tekrar çağırdı 180. Tekrar çağırdı. Bu sonsuza kadar gidiyor bakın arkadaşlar.
+
+89
+00:14:59,476 --> 00:15:07,796
+Şimdi bunun bellekte belli bir limiti vardır. Yani bilgisayarınızın RAM'ine ve işletim sisteminin size ayırdığı yere göre bu değişir.
+
+90
+00:15:07,796 --> 00:15:17,076
+Bu böyle sonsuza kadar çalışmaz. İşletim sistemi der ki, senin programını sonlandırıyorum. Aykırı bir iş yaptım.
+
+91
+00:15:17,364 --> 00:15:27,364
+Bütün belleği mahvedeceksin. Çünkü işletim sisteminin bir görevi de kaynakları yönetmek, koordine etmek. O koordinasyonu sağlamak için sizin programınızın tepesine vuracak.
+
+92
+00:15:27,364 --> 00:15:43,852
+Şimdi F2 fonksiyonunu çağıralım. Basit olarak şuradaki gibi yazalım. Void F2 dedik. F2'yi tekrar çağıralım. Hatta fonksiyonunu çağrıldım göstermek için şöyle bir ekrına yazalım.
+
+93
+00:15:44,083 --> 00:15:48,779
+fonksiyon, çağır.
+
+94
+00:16:00,916 --> 00:16:01,916
+İzhan yakın.
+
+95
+00:16:19,028 --> 00:16:26,028
+Şimdi şöyle hafta, hafta kaç oldu? Hafta 9 oldu değil mi? Yok, hafta 8 miyiz? Haftalarda şaşırdık.
+
+96
+00:16:27,528 --> 00:16:29,028
+Neyse, şöyle yazalım.
+
+97
+00:16:32,692 --> 00:16:36,692
+Bir de.
+
+98
+00:16:44,052 --> 00:16:48,512
+Şimdi bakın ne oluyor, şunu alt alt yazalım.
+
+99
+00:16:51,592 --> 00:16:56,252
+Programın normal bitmesi için return 0 gerekiyor değil mi arkadaşlar?
+
+100
+00:16:56,951 --> 00:17:00,092
+Bakalım nasıl bitirilir, return 0 görebilecekmiş.
+
+101
+00:17:02,951 --> 00:17:08,211
+Sanki sonsuza gidecekmiş gibi bir his var ilk başta, insanların öyle görünüyor.
+
+102
+00:17:08,751 --> 00:17:09,751
+Bakın şu...
+
+103
+00:17:09,983 --> 00:17:26,784
+scroll bar aşağıya doğru bayağı bir çağrım yaptı. Birazdan kaç tane çağrım yaptığını da hesaplarız. Bakın dedi ki şöyle bir değerle, şimdi bu değeri hatırlarsanız bu şuna benziyor.
+
+104
+00:17:26,784 --> 00:17:29,784
+intmax mıydı?
+
+105
+00:17:35,827 --> 00:17:44,627
+Sıfırla bitmedi ve bu bir yerde dedi ki durduruldu. Gerçi o değere yaklaşmıyor daha ağzı değer.
+
+106
+00:17:45,427 --> 00:17:56,228
+Şu kadar tane ekrana muhtemelen yani yazan printf sayısı kadar bir şey yaptı. Bunu işletim sistemi durdurdu. Yani tamamen bir şey mümkün değil.
+
+107
+00:17:56,228 --> 00:18:01,228
+Peki şöyle bir şey yapalım. Acaba kaç defa...
+
+108
+00:18:01,940 --> 00:18:12,440
+Çağrım yapılacak. Şimdi kaç defa çağrım yapılacaksa, buraya bir değişken tanımlasak, fonksiyon kaçıncı defa çağrıldı desek şey olur. Mesela integer x eşittir 1 diyorum.
+
+109
+00:18:12,440 --> 00:18:26,940
+Diyorum ki, şuraya x'i gönder. O zaman buraya x geliyorsa, integer x diyelim. Önce birinci fonksiyon, %d.inci kez çağrıldı diyelim.
+
+110
+00:18:30,003 --> 00:18:35,603
+Peki buna ne yapacağız? Şimdi bunu nasıl tanımladıysak ona göre çağırmalıdır. O zaman buraya da aynı şey yazıyoruz.
+
+111
+00:18:35,603 --> 00:18:44,603
+Bunu bir arttıralım. Mesela şurada arttırabiliriz veya artı arttırabiliriz. Bu böyle kendini çağırsın. Acaba nereye kadar gidecek? Bir de onu görelim.
+
+112
+00:19:04,915 --> 00:19:28,915
+Bu bilgisayarda bayağı iyi yani. Daha küçük bir RAM olan bilgisayarda bu kadar tutmuyor. Bakın 43.178 defa çağrıldı bu işlem, bitti. Çünkü artık şeyi doldurmuş oluyoruz. Şimdi bunu biraz daha azaltmanın yolu var aslında. Ne olabilir? Bunu biraz daha azaltmak istersek, şu anlattığım mekanizmayı biraz böyle düşünecek olursak biraz daha az çağırsın.
+
+113
+00:19:29,140 --> 00:19:33,539
+İşletim sistemi daha erken tepemize vursun dersek ne yapabiliriz?
+
+114
+00:19:35,140 --> 00:19:37,140
+Yerel değişken tanımlayabiliriz.
+
+115
+00:19:37,140 --> 00:19:42,140
+Çok güzel. Yerel değişken, hatta yerel değişken de şöyle dizimizi tanımlayalım değil mi?
+
+116
+00:19:43,140 --> 00:19:47,140
+Mesela bin elemanlı dizi destek. 43.000 küsür değil mi biraz önce arkadaşlar?
+
+117
+00:19:47,140 --> 00:19:54,140
+Şimdi bu ne yapıyor? Her bir F2 çağrısında bir bin tane bin elemanlı dizi tanımlıyor.
+
+118
+00:19:57,076 --> 00:20:08,076
+Bir bin tane daha çalışır. Bakın tamamlanmış olsa, hani bu fonksiyon böyle bir şey olmasa, bin tane tamamlasil, tamamlasil, tamamlasil, tamamlasil yapar hiçbir sıkıntı olmadı. Sonsuz defa çağırabilirsin.
+
+119
+00:20:08,076 --> 00:20:20,576
+Ama rekürsif olduğu için, şimdi 43 bin küsür taneydi, şimdi yaklaşık olarak daha belki binde biri kadar, evet yaklaşık işte 43 bini 51 bine kadar geldi.
+
+120
+00:20:20,576 --> 00:20:23,576
+Binde biri kadar küçülttük. Mesela 100 yapalım.
+
+121
+00:20:25,779 --> 00:20:34,779
+Çünkü o size ayrılan, programınıza ayrılan stack bölgesini dolduruyorsunuz arkadaşlar. 100 yapınca 5000 küsur'e falan yaklaşacak.
+
+122
+00:20:36,779 --> 00:20:46,779
+Bunun tabi şeyi var, işletim sistemi daha erken uyarı veriyor falan, illa kesin bir şey olacaktı değil, yaklaşık olarak aynı derecede yapıyoruz.
+
+123
+00:20:46,779 --> 00:20:49,779
+Evet, recursive fonksiyonun mantığı bu arkadaşlar.
+
+124
+00:20:50,779 --> 00:20:51,779
+Peki...
+
+125
+00:20:52,084 --> 00:21:11,683
+Ben bir tane f1 fonksiyonum olsa, bu f1 fonksiyonunu mesela diyelim ki şurada for x eşittir 1, x küçüktür, int diye bir tane değişkenim olsun, infinitivden gelsin. x plus plus.
+
+126
+00:21:19,347 --> 00:21:24,347
+F1 fonksiyonunu çağırıyorum. F1 fonksiyonunu da şuraya yazıyorum.
+
+127
+00:21:27,539 --> 00:21:29,779
+Şurada sadece diziyi tanımlayayım.
+
+128
+00:21:33,715 --> 00:21:59,115
+ve istediğim diğer şeyleri de yapabilirim ama gerek yok. Bakın şurada sonsuz defa, yani sonsuzluğu tabi burada böyle sözde kod gibi yazdım. Sonsuz defa P1 çağırmanın hiçbir etkisi olmaz. Gider, işini yapar, geri gelir, tekrar gider. Yani döngü kaç defa dönüyorsa P1'e git, geri gel. Yani stek bölgesini bir doldur, bir boşalt, bir doldur, bir boşalt yaparsın.
+
+129
+00:21:59,827 --> 00:22:02,387
+Tamam, reküstif ile şeyin farkı bu.
+
+130
+00:22:02,387 --> 00:22:11,987
+Tamam, burada farklı dolaylı reküstif dediğimiz bir yaklaşım var. Ben f2'den bu x, f3 diye bir şey arayayım.
+
+131
+00:22:18,804 --> 00:22:25,804
+Bakın, buradan f2'yi çağırıyorum. Şunu şuraya alacağım. Şuradan da f3'ü çağıralım.
+
+132
+00:22:25,804 --> 00:22:34,804
+X şeklinde. Şu da dolaylı refus. F2'den f3'e gidiyoruz. F3'ten, tabii ki tane parametre alacağız.
+
+133
+00:22:34,804 --> 00:22:39,804
+F3'ten f2'yi çağırıyorum. Şu f'lerin olduğu yeri kapatalım.
+
+134
+00:22:49,907 --> 00:23:03,107
+Şurayı da şöyle yapalım. Hiçbir şey fark etmez. Biraz önceki de hemen hemen aynısıdır. Bazen rekürtik fonksiyonları bu şekilde yazmak gerekiyor. Tabi şuraya interviyonası yazacağız.
+
+135
+00:23:05,607 --> 00:23:15,407
+Bu şekilde kullanmak, tasarım yapmak gerekiyor. Yine yaklaşık olarak 5000 civarında bir yer alacağız. Daha az oğularda.
+
+136
+00:23:15,599 --> 00:23:25,599
+Niye daha az oldu? Çünkü siteye biraz daha fazladan bir şeyler bastırıyorsunuz. Şuna göre çok çok daha az oluyor. Yani belki bin taneye yakın fark etti.
+
+137
+00:23:25,599 --> 00:23:42,411
+Evet, recursive şey bu arkadaşlar. Şimdi bilinen bazı örnekler var. Recursive kullanmayan normalde gerek yok da, konunun özünü anlamak için, recursive düşünme mantığını anlamak için bu örnekler çok işe yarıyor.
+
+138
+00:23:42,900 --> 00:23:46,900
+Halbuki verimlilik açısından çok anlamlı örnekler değiller.
+
+139
+00:23:46,900 --> 00:23:52,900
+Ama biz burada bunu özellikle anlatıyoruz. Örneğin bir sayının taktörlerinin bulunması.
+
+140
+00:23:52,900 --> 00:23:57,900
+Bu arada sonsuza gitmemesi için ne yapmamız gerekiyor arkadaşlar?
+
+141
+00:24:01,428 --> 00:24:13,928
+Break kullanabilir miyiz? Ya da continue? Break döngülerden çıkmak için kullandı. Veya continue, continue döngünün o adımını pas geçmek için. Burada olmaz.
+
+142
+00:24:13,928 --> 00:24:18,928
+Fonksiyonda işe yaramıyor yani? Fonksiyonda işe yaramaz, evet.
+
+143
+00:24:19,731 --> 00:24:28,051
+Fonksiyondan çıkmak için ne kullanılır arkadaşlar? Return kullanıyoruz değil mi? Fonksiyondan değer döndürmek için de return kullanabiliriz, çıkmak için de return kullanabiliriz.
+
+144
+00:24:28,051 --> 00:24:36,932
+Yani ben return diye bir şey yazarsam, boş bırakırsam, bakın değerleme ile alakalı herhangi bir hata yok.
+
+145
+00:24:36,932 --> 00:24:45,172
+Ama bunun yanında 5 gibi bir şey, 6 gibi bir şey döndür dersem, o zaman burada bana bu değeri yapıyorsun, bu hatalı der.
+
+146
+00:24:45,460 --> 00:25:01,340
+O zaman, öyle bir şey yapacağım ki, bu fonksiyonlar, sonsuz defa birbirini çağırmayacak. Bir yere gelince, o sonsuz çağrıdan kurtulacağız. Peki, bu sonsuz çağrıdan kurtulmamız için, return tek başına yeterli mi?
+
+147
+00:25:04,819 --> 00:25:15,819
+Yani durduk yere return yazarsam ne olur? Mesela bu ne yapar? F2, F3'e gidiyor. F3, F2'yi çağırıyor. F2 tekrar F3'e gidiyor. Hiçbir şekilde şu return satırına düşmüyorum değil mi?
+
+148
+00:25:20,756 --> 00:25:31,556
+Return satırını göremeyeceğiz mesela. Şunu çalıştıralım. Yani şu an f2'ye return yazmış olmamız hiçbir işe yaramadı. Acaba return'ı yanlış bir yere mi yazdık?
+
+149
+00:25:31,556 --> 00:25:36,995
+Çağırmadan önce condition'da bir return yazabiliriz.
+
+150
+00:25:36,995 --> 00:25:47,955
+Heh, çok güzel. Yani return'ı öyle bir yere yazalım ki işe yarasın değil mi arkadaşlar? Yani f2'nin içerisinde f3 çağrılıyor, f3 kendi içinde f2'yi çağırıyor.
+
+151
+00:25:48,175 --> 00:25:57,776
+Bu return hiçbir zaman çalıştırılmıyor. Çalıştırılmadan da program bitiyor. Arkadaşımız dedi ki, o zaman şunu şöyle şey yapalım, şu ikinci rekültif var.
+
+152
+00:26:04,372 --> 00:26:18,172
+Burada öyle bir durum yapalım ki bu rekürsif işlemi bir yerde durduralım. Mesela diyelim ki bizim rekürsif çağrımız en fazla kaç defa olsun? 5 defa olsun.
+
+153
+00:26:18,172 --> 00:26:26,172
+Bize x diye bir şey geliyor. Hatta şunu üzerinden anlatayım. Direkt f2 üzerinden anlatılmaktadır.
+
+154
+00:26:29,172 --> 00:26:36,172
+Önce şu gelen x değeri acaba 5'e eşit mi değil mi? Şu dizi tamamlamasını da kaldırayım artık.
+
+155
+00:26:36,172 --> 00:26:43,172
+Benim için burada çok anlamlı ifade etmiyor. Diyorum ki, if x eşittir eşittir 5.
+
+156
+00:26:43,172 --> 00:26:49,172
+Şimdi eğer 5'e eşit olduysa direkt return yapalım. Doğrudan çık.
+
+157
+00:26:49,172 --> 00:26:54,892
+If değilse, 5'e eşit değilse ne yapacak? Fonksiyonu bir daha çağıracak.
+
+158
+00:26:56,372 --> 00:27:06,772
+Sonra ne yapacak? İşte bir de açığında tekrar, tabi şurada art artı gideceğiz. Tekrar tekrar açar. Dolayısıyla bakın burada ne oluyor bu yaklaşımda?
+
+159
+00:27:08,132 --> 00:27:21,572
+Bir, iki, üç, dört defa. Tabi şurada biz bir defa eksik çağırıyoruz. İşte şunu ne bileyim, küçüktür, eşittir, yani küçüktür, beşte return diyelim veya ne bileyim büyüktür, beş olduğunda return diyelim.
+
+160
+00:27:22,355 --> 00:27:27,355
+6. defaya gelince çıksın, en fazla 5 defa şart.
+
+161
+00:27:27,355 --> 00:27:33,355
+Bakın arkadaşlar, şu önemli bir anahtar kelimedi, buna base case diyoruz.
+
+162
+00:27:33,355 --> 00:27:38,355
+Şuna da recursive case diyoruz.
+
+163
+00:27:38,355 --> 00:27:42,059
+Şurada onu ifade edeyim.
+
+164
+00:27:46,740 --> 00:27:56,740
+Şunları sileyim hatta. Bu pdf'i, ppt'yi yükleyeceğim arkadaşlar. Birincisi bayağı bir doldu, açınca çok zorluyor.
+
+165
+00:27:56,740 --> 00:28:02,740
+Onun için ikinci bir dosya olarak ders notlarının olduğu yere yükliyorum. Oradan edinebileceksiniz.
+
+166
+00:28:14,420 --> 00:28:27,420
+Recurseive function. Şimdi bir void diyelim. İlla void olmak zorunda da değil. Yani non-void bir tip de olabilir. Ben void yazıyorum ama şey bu. Function name.
+
+167
+00:28:27,420 --> 00:28:32,420
+Buraya isterseniz parametre alabilirsiniz.
+
+168
+00:28:35,539 --> 00:28:41,100
+Önce arkadaşlar, burada bir kere Base Case'i kodlamanız gerekiyor.
+
+169
+00:28:43,900 --> 00:28:46,820
+Bu Base Case genellikle if içeren bir şey olur.
+
+170
+00:28:47,580 --> 00:28:51,420
+Şuraya özel olarak yazayım, if gibi bir şey yazarsınız.
+
+171
+00:28:52,059 --> 00:28:54,940
+Bu ifin içinde bir şeyler yaparsınız.
+
+172
+00:28:55,340 --> 00:28:58,140
+Kontroller ife bağlı mesela bir şeyler.
+
+173
+00:28:58,483 --> 00:29:03,083
+Bu bir şeyler yapıldıktan sonra buradan mutlaka bir return yaparsınız.
+
+174
+00:29:03,083 --> 00:29:09,083
+Void olduğu için return'e bir şey yazmak gerekiyor ama mesela integer olur, return x gibi bir şeyler yapabilir.
+
+175
+00:29:10,083 --> 00:29:24,483
+Şimdi bu işlem return etmezse artık burada da recursive case dediğimiz kısımlar yapılacaktır.
+
+176
+00:29:24,948 --> 00:29:38,948
+Burada yine bir şeyler yaparsınız, yaparsınız function name ile fonksiyonu tekrar çıkarsınız. Burada gönderilenler argümanlar olacaktı.
+
+177
+00:29:38,948 --> 00:29:50,948
+Burada alınanlar parametre, gönderilenler argüman. Ondan sonra bu bitiyor. Bakın bunu tersten yazarsanız hiçbir işe yaramadır. Önce de kristik kez, sonra base kez yazarsanız onsuz defa çalışır.
+
+178
+00:29:51,188 --> 00:30:05,587
+Önce mutlaka birinci adımda şurası yazılacak, sonra gerekli işlemler yapılıp diğer kodlar yazılır, recursive case gerçekleştirilir. Mesela arada isterseniz şurada for döngüsü yazılın, başka şeyler yazılın, hiç önemli değil.
+
+179
+00:30:05,587 --> 00:30:16,087
+Ama mühim olan şurada bir tane çağrının yapılacak olması. Mesela üç tane parametre tanımladıysanız, burada üç tane parametre göndermek zorundasınız. Ondan mesela bir şey yok.
+
+180
+00:30:16,087 --> 00:30:18,380
+Fonksiyon çağrılarıyla durum aynı oluyor.
+
+181
+00:30:18,579 --> 00:30:42,579
+O zaman yapacağımız şey, şuradakine benzer şekilde bizim neyi yapmamız gerekiyor? Eğer bir şartımız sağlanmışsa, hatta şunu düzgün yazalım. Şart doğruysa çıkılacak, şart bozulmamışsa, base case'e ulaşmalıysak, recursive char'lara devam edeceğiz. Şunu tabii kaldırmam gerekiyor.
+
+182
+00:30:42,579 --> 00:30:44,579
+Şimdi şöyle yapalım.
+
+183
+00:30:46,836 --> 00:30:49,155
+Fonksiyonu 5 defa çağırmak istiyoruz.
+
+184
+00:30:49,155 --> 00:30:51,955
+Veya mesela fonksiyon n defa çağırılsın.
+
+185
+00:30:51,955 --> 00:30:55,395
+Buraya diyelim ki 6 defa çağırılsın.
+
+186
+00:30:55,395 --> 00:30:58,836
+Buraya bir tane n diye değer alacağız.
+
+187
+00:30:58,836 --> 00:31:01,796
+İşte ilk büyük tüm n olduğu sürece diyeceğiz.
+
+188
+00:31:01,796 --> 00:31:05,155
+O zaman ne yapacağız? Şurayı sürekli göndermemiz gerek.
+
+189
+00:31:05,155 --> 00:31:07,875
+Yani hiç değişmeden sürekli çağırılacak.
+
+190
+00:31:10,516 --> 00:31:12,516
+6 kez çağırıldı. Tamam mı?
+
+191
+00:31:14,067 --> 00:31:15,692
+Mantığı anladık mı?
+
+192
+00:31:18,932 --> 00:31:29,932
+Şimdi şey var, ben size ayrıca paylaşacağım da, CS106'ların bir dersi var. Bunu bir kuleyim bir saniye.
+
+193
+00:31:33,844 --> 00:31:38,844
+Bir ara onu slide'lar üzerinden de bu recursive işlemleri anlatırız, konuşuruz.
+
+194
+00:31:40,844 --> 00:31:48,844
+Tabi burada C++ anlatıyor ama şurada coercion ile alakalı slide'lar yani kodlar çok önemli değil de.
+
+195
+00:31:48,844 --> 00:31:58,508
+Burada farklı towers'a pano'yu falan var. Bunları ayrıca gelecek dönemki derslerinizde de recursive işlemler, algoritması tasarlanır.
+
+196
+00:31:58,579 --> 00:32:02,579
+Veri yapıları, algoritmaları, algoritmaları derslerinde ayrıca indirebileceksiniz.
+
+197
+00:32:02,579 --> 00:32:08,579
+Ama buradaki ders konularına da bakmanızı tavsiye ederim. Yani bu kapsamlı bir konu.
+
+198
+00:32:08,579 --> 00:32:14,579
+Tasarım, iyi algoritma tasarlamak için olmazsa olmaz bunların bir tanesi.
+
+199
+00:32:14,579 --> 00:32:21,579
+Şimdi gelelim bunu bir örnekte hani yazalım artık. Örneğin bizim en çok bilinen örneğimiz faktöriyel örneği.
+
+200
+00:32:21,579 --> 00:32:25,579
+Şimdi faktöriyelde temel durum nedir arkadaşlar?
+
+201
+00:32:29,683 --> 00:32:31,683
+En küçük faktörler hangisidir?
+
+202
+00:32:35,988 --> 00:32:39,208
+1 faktoriyel mi acaba? 0 faktoriyel mi?
+
+203
+00:32:39,208 --> 00:32:41,708
+Aynı değil mi hocam sonucu?
+
+204
+00:32:41,708 --> 00:32:43,208
+Efendim?
+
+205
+00:32:43,208 --> 00:32:45,208
+İkisinin sonucu aynı değil mi hocam?
+
+206
+00:32:45,208 --> 00:32:48,567
+Ali çok az geldi sesin ya, kusura bakma.
+
+207
+00:32:48,567 --> 00:32:50,788
+İkisinin sonucu aynı değil mi hocam?
+
+208
+00:32:50,788 --> 00:32:56,788
+İkisinin sonucu aynı ama en temel durumdan bahsedeceğimizi bulursak, yani 0 faktoriyel 1.
+
+209
+00:32:56,788 --> 00:33:03,188
+O zaman ben bir faktoriyel hesabı yapan, my faktoriyel diyelim.
+
+210
+00:33:03,859 --> 00:33:06,859
+Belki my...
+
+211
+00:33:10,459 --> 00:33:15,859
+Bir tane sayı alacağız, n sayısı. Bu n sayısının faktörlerini hesaplayacağız ve return ediyoruz.
+
+212
+00:33:16,559 --> 00:33:28,779
+Şimdi bakın, bu örnek üzerinde, şimdi şeyi de çizeceğim, swipede nasıl yapıldığını çizeceğiz. Stake memory nasıl çalışacak? Çünkü faktörüel örneği, güzel bir örnek.
+
+213
+00:33:28,884 --> 00:33:41,564
+Bütün recursive işlemler, recursive fonksiyonlar tersten çalışır. Böyle bir şey yaparsınız ki, F'den F'yi çağırdınız, ondan tekrar çağırdınız, bir daha çağırdınız, bir daha çağırdınız.
+
+214
+00:33:41,564 --> 00:33:55,564
+Sonra return edecekseniz, bu return edi ede, geriye gele gele bütün ilk fonksiyonu. Yani önce en son çağırılan fonksiyon tamamlanmış, sonra ondan önceki, sonra ondan önceki. Niye? Çünkü stack memory var.
+
+215
+00:33:55,955 --> 00:34:07,955
+Yani ben bir f'i çağırdım, sonra bir daha f'i çağırdım, sonra bir daha f'i çağırdım, sonra bir daha f'i çağırdım. Dolayısıyla ne olacak? Geriden toparlaya toparlaya geldik. Bunu da unutmayın.
+
+216
+00:34:07,955 --> 00:34:22,956
+Şimdi, faktöryelde temel durumumuz bizim nedir? 0 faktöryelde. O zaman şöyle diyelim, if diyelim. n eşittir eşittir 0 ise ne yap? Return bilyam.
+
+217
+00:34:23,188 --> 00:34:29,587
+Bu kadar. Bunu Python stilinde genelde yanılıyorlardı, ben C stilinde yazayım arkadaşlar.
+
+218
+00:34:29,587 --> 00:34:37,188
+Peki, n sıfıra eşit değilse, o zaman yapacağım şey my factorial'i çağıracağım.
+
+219
+00:34:37,188 --> 00:34:49,188
+My factorial'i çağıracağım.
+
+220
+00:34:49,780 --> 00:35:01,380
+Eksi eksi n değilim. Ama n'in bir eksi ile çağırırken ne yapmam gerekiyor? Mevcut n değeri ile şundan gelecek sonucu çarpmam gerekiyor.
+
+221
+00:35:01,380 --> 00:35:12,579
+O zaman diyorum ki n çarpı. Mevcut n değerimi şunun sonucu, sonuçta bu da bir değer döndürecektir. Şunun çağrısını yapıyoruz. Bunun bir eksi ile çağırıyoruz.
+
+222
+00:35:12,815 --> 00:35:31,815
+Bunu ne yapacağım? Bunu en son return ettiğimde ana programda nereden bu myFactor.yel'i çağırıyorsam orada kullanacağım. O zaman printf %d sonuç diyelim veya %d e eşittir %d.
+
+223
+00:35:33,815 --> 00:35:38,815
+Burada da ne bileyim 5 Factor.yel'i kopyalayalım.
+
+224
+00:35:46,228 --> 00:35:50,828
+Bakın bu Re'ye return edecek olan değer aslında şuradan gelecek.
+
+225
+00:35:51,347 --> 00:35:54,927
+Şimdi nasıl çağıracağımızı önce şu kodları kopyalayalım.
+
+226
+00:35:56,208 --> 00:35:58,268
+Slide üzerinde inceleyelim.
+
+227
+00:36:08,884 --> 00:36:21,443
+Main ile bunu çağırdığımızı kabul edelim. Mesela for döngüsü olan veya iteratif bir algoritmayı trace etmek, takip etmek, analiz etmek kolaydır.
+
+228
+00:36:21,443 --> 00:36:30,644
+Recursive algoritmaları analiz etmek, mesela debug yapmak çok zor. Niye zor? Çünkü kendi içinden kendi kendini çağırıyor. Fonksiyon yeniden başlarmış gibi oluyor.
+
+229
+00:36:33,887 --> 00:36:43,487
+Stake kullanmak, analiz size bir kod verildiğinde, bu kodun çıktısı nedir dediğinde yapacağınız şey eğer takip edemiyorsanız Stake kullanacaksınız. En temiz çözüm bu.
+
+230
+00:36:43,487 --> 00:36:57,887
+Şimdi mesela my factory ile bir factory geldi. Mesela 4 için çağıralım, çok uzaklayalım. Şimdi 4 olarak buraya geldi. My F diyeceğim.
+
+231
+00:36:59,315 --> 00:37:26,595
+4 ile bu fonksiyonu çağırdık. Tabii onun öncesinde de ne var? Main var. Kaçıncı satırda çağırdım mesela mühim değil. Myfey'i 4'ü çağırdık. Şimdi 4 sıfıra eşit mi? Değil. Değil olduğu için ne yapıyoruz? Şurada 4 çarpı bir şey diyoruz. Bir şey olmadan önce Myfey 3'ü çağırıyoruz. Bakın şurası daha tamamlanmadı.
+
+232
+00:37:27,251 --> 00:37:30,331
+Tamamlanacak, gelecek, şuraya bu değer yazılacak.
+
+233
+00:37:31,091 --> 00:37:34,411
+Şimdi bu, hatta şuraya çizgi yapmayalım arkadaşlar.
+
+234
+00:37:34,931 --> 00:37:48,492
+MyF3'ün içinde ne var? 3 çarpı bir şey var, onun öncesinde MyF2'yi çağırıyoruz.
+
+235
+00:37:49,011 --> 00:37:52,331
+Bu kendi içinde 2 çarpı bir şey yapıyor.
+
+236
+00:37:54,516 --> 00:38:20,427
+Evet, sonra MyF1'i çağırıyor. Bu kendi içine 1x bir şey yapıyor. En son geldik MyF0'a. MyF0 çalıştığında ne oluyor? Return 1 yapılıyor. Return 1 yapılınca, dikkat, nereye yazılacak?
+
+237
+00:38:24,851 --> 00:38:26,851
+Nereye?
+
+238
+00:38:26,851 --> 00:38:31,851
+Pardon, bir üstündeki bölgeye yerleştirilecek.
+
+239
+00:38:31,851 --> 00:38:32,851
+Şuraya yazılacak değil mi?
+
+240
+00:38:32,851 --> 00:38:35,851
+Buraya return edilecek. Çünkü ben bunu buradan çağırdım.
+
+241
+00:38:35,851 --> 00:38:41,851
+Aslında şurada ne var? Bir tane return var. O zaman 1x1 return edilince nereye yazılacak?
+
+242
+00:38:41,851 --> 00:38:48,851
+Şuraya yazılacak. Buradan da 2x1 return edilecek, buraya yazılacak. Buradan da 3x2 return edilecek, buraya yazılacak.
+
+243
+00:38:49,204 --> 00:38:58,204
+4x6 artık bunu kim return iti çağırdıysa 24 de buraya gelmiş olacak. Main'den bunu çağırdığımız düşünün. Şuraya bir x değişkeni koydum.
+
+244
+00:38:58,204 --> 00:39:05,204
+x'in ucunu burada elde ediyoruz. Şöyle yazacak olsak genelde bunu kitaplarda şöyle görürsünüz.
+
+245
+00:39:15,668 --> 00:39:36,288
+Mayf 1'i çağırır, o da kendi içinden 1 çarpı Mayf 0'ı çağırır. Bu artık duracağı için, yani şurada döndüreceği için, buradan 1 çarpı 1 döner, buradan dönen 1 çarpı 1 şuraya 1 olur, buradan 2 buraya gelir, buradan da ne gelir? 6 gelir deyip sonucu 6 bulursunuz.
+
+246
+00:39:37,715 --> 00:39:44,315
+Çağırmalar ileri yönlü, hesaplamalar işlemleri tamamlaması geri yönlü. Çünkü stack dediğimiz yapı çalışıyor.
+
+247
+00:39:44,315 --> 00:39:54,876
+Mesela buraya önce bu stack boşalacak, hatta biz biraz önce silmedik de, bu return 1 yaptıktan sonra bu 1 buraya kopyalanıyor, şurası zaten yok ediliyor artık.
+
+248
+00:39:54,876 --> 00:40:04,715
+Sonra 1x1 buraya return ediliyor, şuraya, artık burası yok ediliyor. Bu şekilde devam ediliyor. Ben şimdi silmeyeyim de dersimi tutalım.
+
+249
+00:40:05,043 --> 00:40:19,284
+Bu şeye doğru boşalıp gidecek. Aslında stackten ne yapıyor? Buna pop diyoruz. Şuraya doğru stay push yaptık önce, bu birinci aşama. Sonra pop yapa yapa stackten ala ala gidiyoruz.
+
+250
+00:40:21,284 --> 00:40:24,244
+Şimdi gelelim kodumuzu çalıştıralım.
+
+251
+00:40:42,516 --> 00:40:44,516
+Eş-faktüriális frolü, ne frolü.
+
+252
+00:40:52,019 --> 00:40:56,019
+Bir yerde bir şey mi unuttuk? Şurada 5 dedik.
+
+253
+00:40:57,019 --> 00:40:59,019
+L eşittir 0 ise...
+
+254
+00:41:01,019 --> 00:41:02,987
+...x-x...
+
+255
+00:41:18,643 --> 00:41:25,123
+Şurada bir şey var, %d, %d diyoruz. Şöyle yapalım, breakpoint payalım.
+
+256
+00:41:25,123 --> 00:41:26,643
+Efendim?
+
+257
+00:41:26,643 --> 00:41:29,443
+If'teki n'i 1 eşit desek?
+
+258
+00:41:29,443 --> 00:41:40,643
+Neden? Yani sıfıra eşit olması da bizim için bir engel değil.
+
+259
+00:41:40,643 --> 00:41:41,419
+Hocam...
+
+260
+00:41:42,291 --> 00:41:46,791
+Altta n ile çarpıyoruz ya, sıfıra düştüğünde sıfır çarpı oluyor.
+
+261
+00:41:46,791 --> 00:41:49,291
+Evet, doğru diyoruz.
+
+262
+00:41:50,291 --> 00:42:00,291
+Doğru, en son sıfır olacağı için, yani sıfır çarpı sıfır deyip götürüyor.
+
+263
+00:42:00,291 --> 00:42:05,099
+O zaman şöyle diyelim, eşittir demesek, mesela büyüktür.
+
+264
+00:42:09,172 --> 00:42:17,672
+Ne diyebiliriz? Eşit eşit sıfır dediğimizde bir dakika arkadaşlar. Şunu post increment yapalım.
+
+265
+00:42:20,172 --> 00:42:22,172
+Gerçi bir şey fark etmeyecek de.
+
+266
+00:42:26,003 --> 00:42:26,795
+Mundo.
+
+267
+00:42:31,155 --> 00:42:33,155
+Bu da sonsuz vefa çağırıyor.
+
+268
+00:42:34,155 --> 00:42:37,155
+Burada önce en'i gönderip sonra azaltmıyor mu?
+
+269
+00:42:38,155 --> 00:42:39,155
+Eksik.
+
+270
+00:42:40,155 --> 00:42:46,155
+Yani en'in değerini gönderiyor, aynen. Sonra azaltıyor.
+
+271
+00:42:47,155 --> 00:42:54,155
+Şuna çare bulmamız lazım. Şimdi şuradaki satırı değiştirmek için bir yol düşünüyorum.
+
+272
+00:42:55,315 --> 00:43:00,515
+En eşit eşittir bir diyelim, hadi şimdilik. Böyle bir çözüm olsun.
+
+273
+00:43:02,515 --> 00:43:07,715
+5!24. Yalnız burada bir tane eksi şey var, 120 olacak.
+
+274
+00:43:09,715 --> 00:43:11,515
+Bir tane eksik çağırıyoruz.
+
+275
+00:43:11,915 --> 00:43:15,115
+Şimdi nasıl yapabiliriz? En eşit eşittir bir ise...
+
+276
+00:43:18,115 --> 00:43:20,315
+şey yap, return bir yap.
+
+277
+00:43:20,884 --> 00:43:23,884
+D ise bir çarpı bir çarpı görüyorum.
+
+278
+00:43:24,884 --> 00:43:27,884
+Şöyle bir debug yapalım arkadaşlar.
+
+279
+00:43:32,467 --> 00:43:46,967
+N'i aldım. N çarpımaya faktöriyel... Neyse, nex diyelim. O kendi içinden 4'ü çağırdı, kendi içinden 2'yi çağırdı, daha sonra 1'i çağırdı.
+
+280
+00:43:47,967 --> 00:43:53,967
+Azaltıp başlattığımız için 5'i almıyor muhtemelen. N eksi eksi yapmamız gerekiyor sanırım.
+
+281
+00:43:56,467 --> 00:43:57,967
+Ama şurada önce...
+
+282
+00:43:58,132 --> 00:44:00,632
+Şöyle yapabiliriz, bir dakika.
+
+283
+00:44:03,032 --> 00:44:04,132
+Tarpmaya Diyelim.
+
+284
+00:44:08,019 --> 00:44:10,019
+Valla, bunu nakalıyız.
+
+285
+00:44:11,519 --> 00:44:16,019
+Hocam, galiba N1 olduğunda direkt çıkıyor ya, o yüzden olabilir.
+
+286
+00:44:17,019 --> 00:44:22,019
+1 olduğu anda direkt, hani return 1 gidiyor, direkt iniyor aşağıya, bir daha çarpmıyor.
+
+287
+00:44:25,619 --> 00:44:38,739
+Evet ama return 1 dediğinde geleceği yer, şuraya geldik. Yani 1x şey diyeceğiz. Şunun çok farkı olmadı yani şunda.
+
+288
+00:44:42,452 --> 00:44:43,452
+Bakayım.
+
+289
+00:44:45,452 --> 00:44:52,952
+Ders notumda, bu C'ye özel bir durum da olabilir. Faktöriyel n çarpı n-1'yi çağıracağız.
+
+290
+00:44:52,952 --> 00:44:54,452
+Veya şunu diyebiliriz.
+
+291
+00:44:58,452 --> 00:45:01,452
+Doğrudan return diyeceğiniz için çok bir şey fark etmez.
+
+292
+00:45:01,952 --> 00:45:07,452
+Temporary değişken tanımlayayım, p diyelim.
+
+293
+00:45:08,692 --> 00:45:28,192
+Pardon hocam, n çarpı, main, factorial, eksi eksi n dediğimiz zaman, mesela burada beşinci adımdayken, beş çarpı, bu factorial dört mü yapıyor yoksa, dört çarpı, main, factorial dört mü yapıyor? Orada bir sıkıntı çıkıyor olabilir mi?
+
+294
+00:45:28,192 --> 00:45:32,692
+Şimdi beş ile çağırdığımızda, beş çarpı, main, factorial dördü çağıracak.
+
+295
+00:45:33,692 --> 00:45:36,268
+Şimdi daha, lütfen e diyelim.
+
+296
+00:45:37,748 --> 00:45:46,447
+Şöyle diyeyim şimdi. Hala aynı durum. Neyse ama şurayı bir debug yapma imkanımız var.
+
+297
+00:45:52,436 --> 00:46:12,436
+Şimdi T'ye, el uç diyorum, T'nin değeri sıfırmış. Buradan 5 çarpı, 4'ü çağıracak, sonra 3'ü çağıracak, sonra 2'yi çağıracak, şu T'nin sonra 1'i çağıracak.
+
+298
+00:46:21,780 --> 00:46:34,740
+Peki, burada n1, t1 oldu. Sonra t2 oldu, tamam. Sonra t6 oldu. Sonra 24 oldu.
+
+299
+00:46:40,020 --> 00:46:47,700
+Ya o zaman, şurada şunu, 0'da yazmamamız gerekiyor ya, mesela t1 yapsa veya ne bileyim.
+
+300
+00:46:48,532 --> 00:46:52,532
+Şimdi şöyle yapacak, bu sefer de direk sıfıra gidiyor.
+
+301
+00:47:00,532 --> 00:47:04,532
+Hocam, eksi eksi en yerine n-1 yazsak doğrudan olmaz mı?
+
+302
+00:47:04,532 --> 00:47:08,532
+n-1 olabilir, doğru diyorsun.
+
+303
+00:47:08,532 --> 00:47:10,532
+Daha mankıda.
+
+304
+00:47:10,532 --> 00:47:13,132
+[öğrenci] şimdi gördüm.
+
+305
+00:47:14,804 --> 00:47:27,804
+Daha mantıklı çünkü şurada n'i azaltınca arkadaşlar, tamam ya, n'i azaltınca bu fonksiyona dair şuradaki n de azalıyor. Yani n'in bir eksiğini çağırırsak çözülür. Şimdi olur.
+
+306
+00:47:30,804 --> 00:47:41,804
+Tabii şu an, aynen. n-eksi yapınca, şimdi şöyle diyelim. Aslında bunu yaptığımızda iyi oldu. Şimdi şunu alayım şöyle bir saniye.
+
+307
+00:47:57,172 --> 00:48:02,672
+Önce şuradaki yanlış üzerinden gidelim hatta. Şunu biraz güncelleyeceğim.
+
+308
+00:48:13,907 --> 00:48:20,147
+MyFactory 3 diye çağırayım. Bu kadar şey almışım. Şöyle toplayalım.
+
+309
+00:48:23,891 --> 00:48:33,091
+Mail'den çağırdığımızda myf!3'e geldik. Bunun içinde ne var? Bir tane n değişkeni var. n'nin değeri ne arkadaşlar? Şu an 3.
+
+310
+00:48:34,091 --> 00:48:42,491
+0'a eşit değil. Burada 3 çarpı. 3 çarpı demeden önce yalnız şey vardır. n çarpı diyor ya.
+
+311
+00:48:43,491 --> 00:48:49,692
+Önce fonksiyon çağrısı gerçekleştirileceği için, şurada bunu 2 yaptığı için burada 2 çarpı oluyor.
+
+312
+00:48:50,900 --> 00:48:56,460
+Biraz önceki sıkıntımız bu. Çünkü şunu güncelleyince, çarpımdan önce şu işlem yapılacak.
+
+313
+00:48:56,460 --> 00:49:04,180
+Çünkü fonksiyon çağrısının işlem önceliği çarpmadan önce, rekürstik de olsa, normal fonksiyon da olsa önce bu yapılacak.
+
+314
+00:49:04,180 --> 00:49:09,180
+Dolayısıyla çarpma işlemi yapmadan önce şunu yapıyoruz. Dolayısıyla burada 2 oldu.
+
+315
+00:49:09,180 --> 00:49:12,820
+Dolayısıyla yanlışımız burada oluyor. Şimdi geldiğimizde şuraya bakalım.
+
+316
+00:49:12,820 --> 00:49:17,460
+n-1 dedik. Mesela my f...
+
+317
+00:49:23,827 --> 00:49:51,108
+MyF3'ü çağırdığımda, main diyeyim. MyF3 çağırıldı. Şunu biraz daha geniştireyim. Ne var? İşte T değişkenim var. T'nin içerisinde 3 çarpı, şu an MyF2 çağırıldı. Burada MyF2 çağırıldığında, bu da 2 çarpı MyF.
+
+318
+00:49:52,659 --> 00:50:17,059
+1 oluyor, tamam. Buradan myf1 çağırılıyor. Burada 1 çarptı, myf0 olacak. Şurada myf0 dili, bu 1 return edilince şuraya geldi. Bu return edilince bu buraya geldi. Ne oldu? 1 çarptı 1.
+
+319
+00:50:17,139 --> 00:50:24,139
+Burası 2x1, şurası 3x2'den, buradan hani geldi, 6'ı da diğerini elde edelim.
+
+320
+00:50:24,139 --> 00:50:35,139
+Şurada n-x-x'i yapınca işlem önceliğini atlamış olduk. Normalde başka bir sıkıntı yok. Şurada da n-1 yapacakmışız.
+
+321
+00:50:43,699 --> 00:50:47,099
+İfadelerin yazılışı arkadaşlar şu şekilde.
+
+322
+00:50:47,099 --> 00:50:53,099
+Şimdi biz geçen derste algoritmaları analiz etmiştik, iteratif algoritmaları analiz etmiştik hatırlarsınız.
+
+323
+00:50:53,099 --> 00:50:58,699
+Ne yapacağız? Bir de recursive algoritmaları analiz edeceğiz.
+
+324
+00:50:58,699 --> 00:51:04,699
+Şimdi şuna arkadaşlar şu şekilde yazalım. Bakın bizim biraz önce yazdığımız fonksiyonu çok benziyor.
+
+325
+00:51:04,699 --> 00:51:06,699
+Recurrence Relation diyoruz.
+
+326
+00:51:09,300 --> 00:51:30,300
+Relation Bounty demek. Bir fonksiyon gibi ama fonksiyonundan biraz daha basit bir yapı. Bağıntı. Bu bağıntıların çözümünde algoritmanın karmaşıklığını anlamak için, yani hesaplamak için kullandığım farklı yöntem var. Mesela şimdi diyelim f n-1 çarpı n.
+
+327
+00:51:36,851 --> 00:51:44,051
+Biz neyi biliyoruz? F0 dediğimiz şey biraz önce 1 idi. Temel durum base case'imizdi.
+
+328
+00:51:44,051 --> 00:51:51,172
+Şimdi fn de ne yapılıyormuş? n çarpı fn-1. Şimdi n yerine n-1 koyarsam ne olur burada?
+
+329
+00:51:51,172 --> 00:52:01,652
+Şurası fn-2 çarpı n-1, bir de dışarıdaki n geliyor. Bunun yerine fn-3 koyarsak,
+
+330
+00:52:01,760 --> 00:52:12,760
+Yani n yerine n-2 koyduğumda, f n-3 çarpı n-2 çarpı n-1 çarpı n olacak. Bu böyle devam edecek.
+
+331
+00:52:26,804 --> 00:52:36,304
+Bir dakika, n-k artı 1 olur değil mi? Artı 1. Artı çarpı n-k artı 2.
+
+332
+00:52:36,304 --> 00:52:43,804
+Taki bu nereye kadar akışacak? n'e kadar gelir. Peki k değerimiz ne olsun ki burayı toparlayalım?
+
+333
+00:52:43,804 --> 00:52:48,492
+n-k eşittir sıfır olursa ben temel durumu biliyorum demektir.
+
+334
+00:52:48,980 --> 00:52:57,480
+n-k'yı 0 yapma yani n eşittir k olduğu durum bizim için temel durum olacak demektir. O zaman şurası 1 olacak.
+
+335
+00:52:57,748 --> 00:53:12,268
+çarpı diyeceğiz, n-k, n ve k birbirine eşit. Ne olacak? Şunlar birbirini götürecek. Yani şurada n-k'nın 0 olduğu durum 0 diyeceğiz. Bunları açtığımız zaman algoritmayı çözeceğiz.
+
+336
+00:53:12,268 --> 00:53:22,748
+Burada özet olarak şunu söyleyebilirim, yine n defa algoritma dönüyor. Yani bir for döngüsü ile hesaplama yaptığınızda n defa faktörer hesabı yapacaksınız, onda bir şey yok.
+
+337
+00:53:22,748 --> 00:53:25,748
+Ama yine rekürtif işlemlerde de bu n defa gel.
+
+338
+00:53:25,748 --> 00:53:46,748
+Sadece biraz daha farklı bir şekilde yazdık. Recursive algoritmaları öğrenmek için en basit örneklerden bir tanesi. Biraz daha karmaşıklaştıracağız. Asıl işimize yarayacak şeyler önümüzdeki konularda gelecek. Hatta gelecek çarşamba günü bunlardan bir tanesini göreceğiz.
+
+339
+00:53:46,748 --> 00:53:50,748
+Evet, burada anlaşılmayan bir şey var mı?
+
+340
+00:53:56,148 --> 00:54:13,548
+Mesela x'in n'inci kuvvetini hesaplayan bir şeyi hesaplaysak. Power. Power mesela x to the power of n. X to n diyelim.
+
+341
+00:54:22,132 --> 00:54:25,132
+x'in eninci dereceden kuvvetini hesaplayacağım. Bunu da yapalım.
+
+342
+00:54:26,332 --> 00:54:27,732
+Bundan sonra bir ara vereyim.
+
+343
+00:54:29,132 --> 00:54:34,132
+Peki, x'in eninci dereceden kuvvetini hesaplarken temel durum ne olur sizce?
+
+344
+00:54:37,523 --> 00:54:39,523
+X üzeri 0.
+
+345
+00:54:39,523 --> 00:54:43,523
+X üzeri 0 yani 1.
+
+346
+00:54:43,523 --> 00:54:45,523
+Tabi ikisi burada...
+
+347
+00:54:51,987 --> 00:55:12,527
+Doğrudan return eksi 1 yap. Yani sıfırın veya burada şunu diyebiliriz, sıfırın sıfırıncı kuvveti dışında veya şöyle diyelim, sıfırsa ve aynı zamanda en büyükse birden doğrudan ne yapıp return 0 yapabiliriz. Bu Bayes bildiğimiz algoritm.
+
+348
+00:55:13,667 --> 00:55:19,267
+Sıfırın her türlü kuvveti, sıfırdan farklı her türlü kuvveti şeydir. If diyelim.
+
+349
+00:55:21,619 --> 00:55:29,619
+Veya şu şekilde desek daha güzel arkadaşlar. x eşittir 0 iken iki tane farklı olasılık var.
+
+350
+00:55:29,619 --> 00:55:39,619
+If n eşittir eşittir 0 ise burada 0 üzeri 0 tanımsız dediğim için return mesela eksi 1 gibi bir şey diyor.
+
+351
+00:55:39,619 --> 00:55:43,619
+Yani veya burada return anlamsız bir şey gönderebiliriz.
+
+352
+00:55:49,588 --> 00:56:15,588
+Return 0 diyelim. Temel durumumuz bu şekilde yazılabilir. Şimdi temel durumun dışında kalan durumlarımız neler? Ben x üzeri n'i hesaplamak için, şimdilik arkadaşlar x üzeri n bölü 2'ye girmeyelim. x üzeri n nedir? x çarpı x üzeri n-1'dir değil mi? Peki x üzeri n-1 nedir? O da x çarpı x üzeri n-2'dir.
+
+353
+00:56:16,083 --> 00:56:24,523
+Bunu bu şekilde nereye kadar götüreceğim? x çarpı x üzeri n-k'ya yani şurası 0 olana kadar götüreceğim.
+
+354
+00:56:24,523 --> 00:56:42,187
+Onu zaten biraz önce yazdık. O zaman diyelim ki, bu da değilse return x çarpı power x to n x virgül n-1 diyorum.
+
+355
+00:56:44,115 --> 00:56:53,836
+Niye x ile çarpıyorum? Çünkü şu ifade, rekürans bağıntısı dediğimiz şu şey bana bunu söylüyor. Yani bir çarpma, üst alma işlemi bu şekilde yapılıyor.
+
+356
+00:56:54,996 --> 00:57:03,675
+Burada eksiğimiz var mı? Gözünüze takılan bir şey var mı? Bu arada arkadaşlar, şurada şunu yazdım da, faktörü geldi neredeydir?
+
+357
+00:57:05,396 --> 00:57:11,516
+Yani şurada t'yi yazmadan da olur. Direkt buraya return destek de olur. Hani t'yi sadece trace edelim diye.
+
+358
+00:57:12,244 --> 00:57:17,844
+kullanmıştık. Şimdi çalıştırayım, yani hiçbir şey fark etmeyecek.
+
+359
+00:57:21,364 --> 00:57:26,564
+Burada şu algoritmada bir sıkıntımız var mı?
+
+360
+00:57:28,564 --> 00:57:35,844
+0 üzeri 0 için eksi 1 gelecek, 0 üzeri bir şey için 0 gelecek. Bunun dışında
+
+361
+00:57:37,043 --> 00:57:46,043
+Bir şey gelirse, yani tabi burada şimdi şurada sıfır değil de mesela eksi iki gelse veya başka bir şekilde onları birazdan konuşuruz.
+
+362
+00:57:46,043 --> 00:57:52,043
+N'in de birden büyük olduğu duruma bakıyoruz. Hani burada da bunu söyleyebiliriz.
+
+363
+00:57:55,923 --> 00:57:58,923
+Yalnız burada bir şey daha var, bir eksiğimiz daha var arkadaşlar.
+
+364
+00:58:00,923 --> 00:58:03,923
+Basic yazı yazarken bir eksik yazdık. Nedir o?
+
+365
+00:58:07,635 --> 00:58:13,436
+Şimdi x sıfıra eşitken bunu döndüreceğiz. Eğer x sıfıra eşit değilse
+
+366
+00:58:17,108 --> 00:58:23,508
+Yani x'in sıfıra eşit olmadığı durum işte 1, 3, 5 neyse herhangi bir sayı. O zaman neye bakacağız arkadaşlar?
+
+367
+00:58:23,508 --> 00:58:39,908
+If n eşittir eşittir sıfırsa, hatta birse diyelim, temel durumu gönderelim. n eşittir eşittir birse, return x diyeceğiz bakın burada da. Bunu unutmamamız gerekiyor.
+
+368
+00:58:40,884 --> 00:58:50,184
+Çünkü x, x üzeri n-1'i çağıracak, o n-2, n-3, n-4'ü ta ki n eşittir 1'e kadar gelecek, o kendi içinden x'i gönderecek.
+
+369
+00:58:50,184 --> 00:58:57,184
+Dolayısıyla x çarpı x çarpı x, n tane aslında şurayı açtığımız zaman x çarpanı gelecektir.
+
+370
+00:58:57,184 --> 00:59:08,484
+Şunu şöyle yazalım, ben şöyle yapayım, printf. Bunları test edelim.
+
+371
+00:59:08,543 --> 00:59:13,043
+%d üzeri %d
+
+372
+00:59:14,043 --> 00:59:17,043
+Bu ne olsun mesela? Bir tanesi 0 üzeri 0 olsun.
+
+373
+00:59:18,043 --> 00:59:22,043
+Tabii 0 üzeri 0 deyince power
+
+374
+00:59:24,543 --> 00:59:26,043
+Şunu çağıracağız.
+
+375
+00:59:26,043 --> 00:59:28,043
+Eşittir %d diyelim.
+
+376
+00:59:29,543 --> 00:59:32,043
+0 üzeri 0,
+
+377
+00:59:33,043 --> 00:59:36,043
+0, 0 şöyle çağırıyorum.
+
+378
+00:59:47,827 --> 00:59:56,327
+0 üzeri 5'i çağıralım veya 6'yı çağıralım. Şurada da mesela 5 üzeri 3'ü çağıralım.
+
+379
+01:00:03,219 --> 01:00:07,219
+Şimdi şurada fazladan yazdığımız bir kural var mı arkadaşlar? Ona bakmak istiyorum.
+
+380
+01:00:07,219 --> 01:00:11,219
+Sıfır geldiğinde eğer x sıfırsa, n de sıfırsa, eksi bir döndürdük.
+
+381
+01:00:13,219 --> 01:00:17,219
+Eğer n birden büyükse sıfır döndürdük. Tamam burada sıkıntımız yok.
+
+382
+01:00:17,219 --> 01:00:24,219
+Eğer if, şu ipe geldiğimize göre şunlardan kurtulduk demektir. Yani x sıfırdan...
+
+383
+01:00:24,500 --> 01:00:32,380
+Farklı bir sayı demektir eğer şuraya gelsek. Eğer n artık 1'e eşitse x'i döndür diyorum. Yani birinci kuvvete kadar geleceğiz.
+
+384
+01:00:32,380 --> 01:00:39,259
+Bu da değilse x çarpı bu fonksiyonu 1-1 kadar çağır diyoruz.
+
+385
+01:00:42,387 --> 01:00:51,387
+5 üzeri 3, şunun tanımsız olduğunu söyledik, 0 üzeri 5'i söyledik, 5 üzeri 3, bakımında böyle.
+
+386
+01:00:53,387 --> 01:00:59,387
+4 falan diyelim, şimdi şunu çağıracağız.
+
+387
+01:01:04,211 --> 01:01:13,811
+Peki soru şu, biz hatırlarsanız ilk derslerde kuvvet alma işleminin daha kısa yoldan yapılabileceğini söylemiştik.
+
+388
+01:01:13,811 --> 01:01:16,811
+Orada neyi kullanmıştık arkadaşlar?
+
+389
+01:01:16,811 --> 01:01:25,211
+x üzeri n'i bulmak için ben x üzeri n bölü 2'yi bulsam ve kendisiyle çarpsam aynısını bulurum.
+
+390
+01:01:29,876 --> 01:01:40,056
+Memorization dediğimiz bir teknik var RegiOS işlemlerde. Ben burada x'i çağırmak yerine x üzeri n bölü 2'yi çağırsam diyeceğim.
+
+391
+01:01:40,056 --> 01:01:50,056
+O n bölü 2'yi çağırdığımda elde ettiğim sonucu ne yapacağım? Bir yerde saklayacağım ve o sakladığım sonucu kendisiyle çarptığımda
+
+392
+01:01:50,228 --> 01:02:02,228
+Gerçek üstü daha kısa sürede n defaya gerek kamudan bulacağım. Bakın bu ne kadar da buluyor? Yine n defa. Çünkü x, n-1'i çağırıyor, o n-2'yi çağırıyor, o n-3'i çağırıyor.
+
+393
+01:02:02,228 --> 01:02:17,228
+Ta ki n eşittir 1'e gelene kadar. n eşittir 1'e geldiğimizde neyi buluyoruz? Tekrardan 1 çarpı x, ondan sonra 1 çarpı x çarpı x, 1 çarpı x çarpı x, böyle x kare x küp, ta ki x üzeri n'in sonucunu bulabiliyoruz.
+
+394
+01:02:18,483 --> 01:02:21,123
+Burada anlaşılmayan bir şey var mı arkadaşlar?
+
+395
+01:02:26,963 --> 01:02:29,463
+Şuradan birkaç bir şey göstereyim.
+
+396
+01:02:33,043 --> 01:02:44,643
+Bakın, factorial 5'i çağırdığımızda kod içerisinde 5 çarpı factorial 4, sonra 5 çarpı 4 çarpı factorial 4, sonra en son işte şuraya kadar geliyor, factorial 1.
+
+397
+01:02:44,643 --> 01:02:52,803
+Bana bunu return ettiği için buradan 1 return oldu, daha sonra 1 ile 2'yi çarpıyoruz, sonra 1 ile 10 ile 3'i çarpıyoruz, sonra 4'ü, sonra 5'i çarpıyoruz.
+
+398
+01:02:52,803 --> 01:02:57,283
+120 bu şekilde elde ediliyor, çünkü arada şey var.
+
+399
+01:02:58,164 --> 01:03:11,164
+İşte bu Stack Overflow dediğimiz meşhur bir site var. Aslında bu sonsuz defa çağırılırsa göreceğimiz hata Stack Overflow hatası. O siteyi taşırıyorsunuz.
+
+400
+01:03:12,164 --> 01:03:16,164
+Peki, acaba factorial-3 dersek şu kodda ne olur?
+
+401
+01:03:18,164 --> 01:03:26,028
+Şurada, x-3 diyorum. Tabii, x-3'ün factoriali tanımlı değil ama şimdi biz onu kodumuzda kontrol etmedik.
+
+402
+01:03:26,547 --> 01:03:29,248
+Bakalım şimdi buraya geldiğimizde bu kod ne olur?
+
+403
+01:03:38,452 --> 01:03:40,452
+Ne dersiniz?
+
+404
+01:03:40,452 --> 01:03:44,452
+Sonsuza kadar gider sanırım.
+
+405
+01:03:44,452 --> 01:03:46,452
+Neden?
+
+406
+01:03:46,452 --> 01:03:50,452
+Eksi 3'ü gönderdiğimizde kim konuştu? Ben göremedim de.
+
+407
+01:03:50,452 --> 01:03:52,452
+[öğrenci].
+
+408
+01:03:52,452 --> 01:03:58,452
+Eksi 3, buraya gelecek, eksi 3 neyi çağıracak? Tabii çarpmadan önce eksi 2'yi çağıracak.
+
+409
+01:03:58,452 --> 01:04:00,452
+Eksi 4'ü çağıracak.
+
+410
+01:04:00,452 --> 01:04:06,060
+Eksi 4'ü çağıracak, doğru diyorsun. Sonra o eksi 5'i çağıracak. Yani eksi sonuza kadar giden bir durum var bak.
+
+411
+01:04:06,612 --> 01:04:22,931
+Bizim kod bakın şurada patladı, yani bu olmadı. O zaman diyeceğiz ki, şurada bir kural daha, if, n gelen sayı küçükse sıfırdan, çünkü sıfırdan küçük sayıların şeyi yok, doğrudan return yap. Hatta return eksilir de.
+
+412
+01:04:24,391 --> 01:04:25,771
+Basit bir çözüm.
+
+413
+01:04:34,579 --> 01:04:40,980
+Bunu yazmıyoruz. Onun için 0'dan küçükse, direkt eksi 1 dersek şimdi o problemi çözeriz.
+
+414
+01:04:41,779 --> 01:04:49,980
+Şimdi eksi 3 faktör eksi 1. Eksi 1'leri de inf gibi, tanımsız gibi şeylerle ifade etmek mümkün.
+
+415
+01:04:51,179 --> 01:05:00,179
+Ara verelim mi arkadaşlar? 17.30'da bitireceğim. Yani yorulduysanız bir ara verebiliriz 5 dakika. Yorulmadıysanız çok az bir kısım daha kaldı.
+
+416
+01:05:02,771 --> 01:05:04,771
+blok yapalım, tamam.
+
+417
+01:05:04,771 --> 01:05:06,771
+blok yapalım.
+
+418
+01:05:06,771 --> 01:05:07,659
+şimdi
+
+419
+01:05:10,900 --> 01:05:20,900
+Sequential factorial algoritmasını yazmadık. Niye yazmadım? Bir dakika. Şurada recursive factorial yazdık.
+
+420
+01:05:22,900 --> 01:05:29,900
+Şöyle bir şey yaptığınızda bakın ne oluyor? factorial infinity'e gidiyor. Sonsuza kadar gidiyor. Onun için bunu zaten söyledik.
+
+421
+01:05:29,900 --> 01:05:36,900
+Sequential factorial ile karmaşıklık olarak, adım sayısı olarak hiçbir farkı yok. Bakın şu iki kod üzerinde.
+
+422
+01:05:37,780 --> 01:05:54,540
+karşılaştırma yaptığımızda, şu kod da en defa çalışacak, soldaki yazdığımız rekürsif kod da en defa çalışacak. Hatta sağdaki kod daha az maliyetli. Neden daha az maliyetli olabilir?
+
+423
+01:05:59,731 --> 01:06:06,132
+Berlek'ten tasarruf ediyoruz sağda. Çünkü solucu ekle siteyi dolduruyoruz fonksiyonu çağıra çağıra belki onda olabilir.
+
+424
+01:06:06,132 --> 01:06:18,931
+He, çok güzel. Şimdi ben şu iteratif kodda recursive fonksiyonunu bir defa çağırıyorum. Sonra ne oluyor? İçeride for döngüsü deniyor. Ama burada...
+
+425
+01:06:19,668 --> 01:06:29,148
+n tane yazılmış bir şey için n-1 yani n defa faktoryel çağırdı. Dolayısıyla iç içe fonksiyon çağırları çok fazla oluyor.
+
+426
+01:06:30,668 --> 01:06:43,108
+Yani bir şey kazandırmadı hatta bazı şeyleri de kaybettirdi. Biraz daha geç biter. Bunun süre ölçümünü mesela çok büyük faktoryel için yaparsanız Recursive'in biraz daha geç bittiğini görürsünüz.
+
+427
+01:06:43,411 --> 01:07:07,891
+Recursive'in asıl işimize yarayacağı yerler var. Onu gördüğümüzde, mesela bu sıralama algoritmalarından bahsediyorduk. Hani n-kare demiştik Bubble Sword için, ondan sonra diğer şeyler için. Yeri geldiğinde konuşacağız arkadaşlar, diyeceğiz ki bu algoritmalar n-logan'e indirgenebiliyor. İşte o n-logan'lik algoritmalardan Merge Sword ve Quick Sword Recursive'i kullanıyor.
+
+428
+01:07:11,795 --> 01:07:26,795
+Peki, şu üst ile alakalı şey için, şuradaki üst almayı konuştuk. 4 üzeri, eksi 4 üzeri 2 dersek ne olur demişiz. Şurada mesela deneyelim.
+
+429
+01:07:32,179 --> 01:07:36,179
+Eksi 5 üzerinde 4 olsun nasıl? Aynı sonucu elde eder miyiz?
+
+430
+01:07:45,235 --> 01:07:50,995
+Sanırım tek yada çift olmasına göre değişecek. İğnelimi sayıp uzun.
+
+431
+01:07:50,995 --> 01:07:58,355
+Tek olursa zaten şeydir, yani şu negatif olduğu için tek olursa sonuç negatif olacak, öyle değil mi?
+
+432
+01:07:58,355 --> 01:07:59,355
+Evet.
+
+433
+01:07:59,355 --> 01:08:12,755
+Yani sonucumuz yine aynı. Çift olursa teklik çiftlik için bir sonuç değişmez bildirim. Yani şuradaki ile eksi 5 üzeri 4 için mesela çalıştıralım. 625.
+
+434
+01:08:14,356 --> 01:08:15,896
+Şunu üç yapalım.
+
+435
+01:08:21,011 --> 01:08:45,072
+Eksi 125. Bakın burada fark yok arkadaşlar, sıkıntı yok bunda. Çünkü ne oluyor? Bir tek defa çağırırsak tek tane çarpacak, tek çarpınca sonuç negatif olacak. Çift defa çağırırsak çift kadar çarpacak, o kadar sayıda. Sonuç o zaman pozitif olacak. Bunda bir sıkıntı olmuyor. Şuna dikkat edelim. Kuvveti negatif verirsek.
+
+436
+01:08:46,868 --> 01:08:48,868
+Kuvvetin negatif olması ne demek?
+
+437
+01:08:53,140 --> 01:08:55,140
+5 üzeri eksi 3
+
+438
+01:08:59,123 --> 01:09:00,623
+Bu kod nasıl çalışır?
+
+439
+01:09:07,380 --> 01:09:11,880
+Mesela şöyle yapayım. Tek fark etmenimi göstermek için.
+
+440
+01:09:15,315 --> 01:09:17,315
+Sonsuz döngüye girmez mi?
+
+441
+01:09:17,315 --> 01:09:18,315
+Efendim?
+
+442
+01:09:18,315 --> 01:09:20,315
+Sonsuz döngüye girmez mi?
+
+443
+01:09:20,315 --> 01:09:22,315
+Şimdi bakalım, sonsuz döngüye girmez mi?
+
+444
+01:09:22,315 --> 01:09:33,315
+5-5 ve eksi 3 geliyor. Şimdi, 0'a eşit mi? x değil. n 1'e eşit mi? Değil. 1'e eşit olmadığını gördük.
+
+445
+01:09:33,315 --> 01:09:35,315
+O andan sonra ne yaptı?
+
+446
+01:09:35,315 --> 01:09:41,867
+Eksi 3, eksi 4'ü çağırdı. Eksi 4, eksi 5'i çağırdı. Bakın, [öğrenci]'ın söylediği gibi sonsuz döngüye giriyor.
+
+447
+01:09:42,195 --> 01:09:43,695
+Ne yapabiliriz burada?
+
+448
+01:09:49,395 --> 01:09:53,695
+Yani şey olarak mı, direkt tanımsız mı yaptıracağız yoksa hani tersi...
+
+449
+01:09:53,695 --> 01:09:55,976
+Yok, gerçek sonucu bulalım mesela.
+
+450
+01:09:56,835 --> 01:10:03,235
+Eğer n sıfırdan küçükse başka işlemler yapsın, yani tersiyle çarpsın, yani bir bölüsünü alıp çarpsın mesela.
+
+451
+01:10:03,235 --> 01:10:04,015
+Büyük.
+
+452
+01:10:04,615 --> 01:10:13,435
+Veya şimdi şöyle desek ki mesela birden büyük eşitse, şey bire eşitse dedik ki bunu yap, değilse bunu yap.
+
+453
+01:10:14,420 --> 01:10:41,619
+Ama bunun öncesinde, yani şurada ayrı bir şey koyacağız. Yani else de diyeceğiz, if de edemiz, en büyüktür birse, bunu yap. Bu da değilse negatiftir. Yani else if diyebiliriz, işte en küçüktür bir, if'e gerek yok da. Burada yapacağımız şey ne olur?
+
+454
+01:10:45,011 --> 01:10:47,011
+Bölme işlemi yapacağız.
+
+455
+01:10:47,011 --> 01:10:59,011
+Bir bölü, aynen. Burada da tam bölme olduğunu göstermek için 1.0 bölü x çarpı power x to n işte şunun aynısı.
+
+456
+01:10:59,011 --> 01:11:07,011
+Ama dikkat edelim, burada ne diyeceğiz? n-1 demeyeceğiz. Artı yapmamız lazım. Artı 1 diyeceğiz, aynen.
+
+457
+01:11:11,859 --> 01:11:16,859
+Şöyle biraz düzeltelim arkadaşlar. Yani item stili gibi olmasın.
+
+458
+01:11:18,559 --> 01:11:20,559
+En eşittir bir se, ikisi döndür.
+
+459
+01:11:20,559 --> 01:11:24,359
+Hocam, fonksiyonumuzun int döndürmesi buna etki eder mi?
+
+460
+01:11:24,859 --> 01:11:32,359
+Şimdi bir de böyle bir sorun çıktı. Yani burası double bir şey, biz buradan integer döndürürüz. O zaman ne yapacağız burayı?
+
+461
+01:11:32,359 --> 01:11:35,359
+Double veya float gibi bir şey içeriye almamız lazım.
+
+462
+01:11:37,359 --> 01:11:38,559
+Mesela şimdi
+
+463
+01:11:38,899 --> 01:11:47,899
+Genellikle şeylere, math kütüphanesine bakarsanız arkadaşlar, math kütüphanesindeki power fonksiyonun double tanımlandığını görürsünüz. Asıl sorun budur işte.
+
+464
+01:11:47,899 --> 01:11:57,899
+Negatif bir şey verildiğinde de, bunun sonucunu yaklaşık olarak bulmak için bunu yaparlar. Yani şu çözümümüz de ortaya, burada return diyeceğiz.
+
+465
+01:12:07,412 --> 01:12:12,971
+1 bölü, 1.0'ya x çarpı x üzeri n artı 1'i çağıracağız.
+
+466
+01:12:12,971 --> 01:12:16,252
+Ayrı ayrı fonksiyon olarak yapabilirdik bunları.
+
+467
+01:12:16,252 --> 01:12:27,212
+Mesela bir normal pozitif üstler için veya bir genel bir fonksiyon yazıp power fonksiyonu yazıp x üzeri n fonksiyonu yazıp
+
+468
+01:12:27,212 --> 01:12:32,652
+diğer şu alt aşamaları diğer reküstif fonksiyonlara bölebilirdik.
+
+469
+01:12:32,819 --> 01:12:40,020
+Mesela onu şimdi düzeltelim, yani en genel halini yazalım. Ama bakın, şu negatif üstler için bir çözüm olabilir.
+
+470
+01:12:40,020 --> 01:12:44,020
+5 üzeri eksi 3, şimdi baktığımız zaman 1 bölü...
+
+471
+01:12:44,020 --> 01:12:49,619
+Hocam, o sondaki işlem 1 bölü x'i bulup sonra o değer de çarpmaz mı?
+
+472
+01:12:49,619 --> 01:12:55,219
+Bakalım. Şöyle, işlem önceliği aklımızda değilse...
+
+473
+01:12:55,219 --> 01:12:58,020
+Evet, işlem önceliği çarpımda mı oluyor?
+
+474
+01:12:58,612 --> 01:13:12,612
+İşlem önceliği aslında bölme ile çarpma aynıdır. Sadece önce bölmeyi yapar, sonra çarpmayı yapar. Çünkü aynı öncelikte associative küyü vardı hatırlarsanız. Soldan sağa doğru gerçekleşiyor.
+
+475
+01:13:12,612 --> 01:13:13,612
+O yüzden söyledim.
+
+476
+01:13:13,612 --> 01:13:20,395
+Biz önce şurayı hesaplayıp daha sonra böldürebiliriz. Bu biraz daha mantıklı olur.
+
+477
+01:13:22,260 --> 01:13:33,659
+Bakalım şimdi, bu arada ne diyor, provis declaration. Şuradaki power to x'ler artık şey ya, double bir artışlar. Bunları long float gibi bir şey dememiz lazım.
+
+478
+01:13:35,500 --> 01:13:39,260
+Çünkü %d ile bunlar çağrılmaz.
+
+479
+01:13:50,899 --> 01:13:52,899
+Neye konflikt ediyor?
+
+480
+01:13:54,199 --> 01:13:58,099
+Herhalde şunu yazmadığımız için, prototip yazmadığımız için böyle.
+
+481
+01:14:05,332 --> 01:14:15,731
+500 dere x 3. Şunlar doğru da. 500 dere x 3, 5 nokta küsur olmaz. Şurada bir hatamız mı var?
+
+482
+01:14:16,731 --> 01:14:21,932
+Hocam, işlem önceliğini 1 bölü x'ten yana kullansak daha doğru olabilir.
+
+483
+01:14:24,932 --> 01:14:31,332
+Ama şimdi şöyle, 1 bölü x çarpı şurası, yani şu işlem tamamlanacak.
+
+484
+01:14:33,332 --> 01:14:34,332
+Bir dakika.
+
+485
+01:14:37,332 --> 01:14:40,332
+Yani en son 1'e bölünce 1 bölü x üzeri...
+
+486
+01:14:41,832 --> 01:14:46,332
+Böyle her seferinde 1'e bölüyoruz aslında. 1 bölü, 1 bölü, 1 bölü şeklinde ilerliyor.
+
+487
+01:14:46,832 --> 01:14:48,332
+Doğru diyorsun.
+
+488
+01:14:49,832 --> 01:14:51,332
+Şöyle yaparsak...
+
+489
+01:14:54,332 --> 01:14:55,332
+Tamam.
+
+490
+01:14:55,832 --> 01:14:59,332
+1 bölü x çarpı şu şu devam edelim.
+
+491
+01:15:02,579 --> 01:15:06,579
+Yaklaşık şu, mesela şunu 2 üzeri bildiğimiz bir sayı diyelim.
+
+492
+01:15:08,079 --> 01:15:13,579
+2 üzeri eksi 3 desek, 1 bölü 8, 1 bölü 8'de 0.125 mi diyordum?
+
+493
+01:15:15,079 --> 01:15:16,579
+Ama şuradan da değiştireceğiz.
+
+494
+01:15:24,979 --> 01:15:37,979
+Evet, şimdi mesela bunu parçalayalım. Double power diye bir fonksiyonum olsun. Yani sarmalayıcı fonksiyon diyoruz o da.
+
+495
+01:15:41,203 --> 01:15:46,963
+Siz normalde mat.power'ı kullanırsanız belki arkada tek bir tane şey var ama aşağıda diğerlerine çağırlayın.
+
+496
+01:15:46,963 --> 01:15:57,603
+Şimdi ilk yapacağımız şey nedir arkadaşlar? Base case'imiz. Mesela x sıfıra eşitse ve n sıfıra eşitse x'i bir döndür.
+
+497
+01:15:57,603 --> 01:16:06,963
+Ondan sonra n birden büyükse, yani şunu alıyorum. Bu base case olarak kalacak. Bundan kaçarımız yok.
+
+498
+01:16:07,923 --> 01:16:22,923
+Hatta bunu şöyle de yazabiliriz, yani biraz daha okunaklı olsun dersek, n eşit eşittir 0 ise, return-1 yapalım. Şöyle yazabiliriz.
+
+499
+01:16:37,716 --> 01:16:47,036
+Büyükse sıfırdan, pardon büyükse sıfırdan büyükse diyebiliriz. Burada return sıfır diyeceğiz.
+
+500
+01:16:48,836 --> 01:16:56,036
+Bir tane base case'imiz var. Yani burada başka bir durum yok. Şimdi n eşittir birse, bu da bir base case.
+
+501
+01:16:56,956 --> 01:17:03,836
+Yani her durum için n'in bir olması durumu bizim x'i return etmemiz anlamına geliyor.
+
+502
+01:17:03,872 --> 01:17:12,372
+Bakın şu return'lerden sonra else yazmama hiçbir şekilde gerek yok. Çünkü return'lerden birinden çıktıysa diğerinden ne yapacak? Devam edip gidecek.
+
+503
+01:17:12,372 --> 01:17:14,372
+Şimdi geldik diğer durumlara.
+
+504
+01:17:14,372 --> 01:17:28,872
+if diyorum, and büyükse birden. Şurada bir fonksiyon yazalım. Bu fonksiyonun sonucu gelsin buraya, kopyalansın.
+
+505
+01:17:32,851 --> 01:17:37,851
+En büyük sepirden Power 1 diyelim.
+
+506
+01:17:44,435 --> 01:17:51,195
+Buraya ne yapacağız? Gerçi Power 1 desek olur mu? Olur.
+
+507
+01:17:54,644 --> 01:18:03,043
+Hocam, aynı fonksiyonu kullanıp, bir durumda x'i, diğer durumda 1 bölü x'i göndersek olur mu? Double olarak?
+
+508
+01:18:03,043 --> 01:18:19,820
+Olabilir. Mantıklı. Yani şuraya x virgül şey demek yerine, tabii yine n artı 1 diyeceğiz değil mi? Orada.
+
+509
+01:18:22,612 --> 01:18:32,912
+Mantıklı, evet. Tamam, öyle diyelim. n mesela birden büyükse yapacağımız şey ne olacak? Mesela power bir fonksiyonu o zaman yazmaya gerek var mı? Neyse, önce normal yazalım.
+
+510
+01:18:32,912 --> 01:18:46,512
+Diyelim ki return x çarpı power x çarpı power x, n-e x'idir.
+
+511
+01:18:50,195 --> 01:18:59,496
+if-bu da değilse aslında else-stabius. Yani yazalım en küçük seviyeden.
+
+512
+01:19:05,300 --> 01:19:11,300
+Return x çarpı diyeceğiz. x çarpı mı diyeceğiz burada? 1 bölü x çarpı diyeceğiz ama.
+
+513
+01:19:13,699 --> 01:19:19,300
+1 bölü x çarpı, şurada 1 bölü x diyeceğiz. Şurada da n artı 1 diyeceğiz.
+
+514
+01:19:21,699 --> 01:19:23,564
+Herhalde seni demek istediğim buydu.
+
+515
+01:19:30,579 --> 01:19:38,979
+[öğrenci] sen mi söylemiştin? Evet hocam. Tamam. Şimdi şunu, isimleri değiştirmeyelim şu şekilde.
+
+516
+01:19:51,028 --> 01:19:56,028
+Niye kızdı, neye deplayedilmedi dedi. Şurada neye var? Deplayedilmemiş.
+
+517
+01:20:04,532 --> 01:20:08,532
+Yalnız burada patladık. Niye patladı?
+
+518
+01:20:11,532 --> 01:20:14,532
+En büyükse birden şunu yap.
+
+519
+01:20:16,532 --> 01:20:23,532
+En küçükse birden 1 bölü x çarpı. Şuraya bir nokta sıfır diyelim.
+
+520
+01:20:27,412 --> 01:20:30,412
+Hocam, parametre olarak da double alması gerekebilir.
+
+521
+01:20:32,412 --> 01:20:36,412
+Soruyorsun tabi, şurayı böyle gönderince bunda double olması gerekir.
+
+522
+01:20:37,412 --> 01:20:42,412
+Yani gizli bir casting yapılacak arkada, o değiştirmek bir anlam ifade etmez bakalım.
+
+523
+01:20:43,412 --> 01:20:45,412
+Tabi bunun prototipini değiştireceğiz.
+
+524
+01:20:54,899 --> 01:20:56,899
+2 üzeri eksi 3, 2 olduğuna.
+
+525
+01:21:01,076 --> 01:21:03,020
+1 bölük
+
+526
+01:21:07,091 --> 01:21:18,192
+Şununla şunu çarpmamız gerekiyor. Bir bölü x çarpı. Şunu bir defa çarpacağız. Şurası bir bölü x olacak.
+
+527
+01:21:22,899 --> 01:21:35,619
+Bir de şurası 1.0 bölü x olacak. Çünkü 1 bölü x yaptığımızda kabul etmez. Ama hala niye eksi 2?
+
+528
+01:21:38,963 --> 01:21:46,463
+Galiba baştan 1.0 bölü x ile çarptığımız için içeriye tekrar x göndermemiz gerekiyor.
+
+529
+01:21:48,463 --> 01:21:50,463
+Şuraya x göndereceğiz.
+
+530
+01:21:52,463 --> 01:21:54,463
+Yok, x'i değiştirmiyoruz ama.
+
+531
+01:21:57,163 --> 01:22:03,463
+Burada 1.0 bölü x ile 1.0 bölü x'in bir fazlasını çarpmış oluyoruz.
+
+532
+01:22:12,500 --> 01:22:14,500
+Hani bunu parantezi kaldırsam...
+
+533
+01:22:20,467 --> 01:22:21,899
+Genekli swish.
+
+534
+01:22:25,844 --> 01:22:34,043
+Bunun trace etmesi de zor da, hani... Neyse şimdi şu haliyle bırakalım, bakayım onun üzerinde bir daha bir şey yapabilir miyiz?
+
+535
+01:22:34,043 --> 01:22:41,083
+Hocam, bir x gönderip deneseniz. Efendim? Bir x gönderip denesek, orada... Şurada x gönder.
+
+536
+01:22:41,083 --> 01:22:52,043
+Eber tekrar bölüyoruz çünkü. Aynen hocam, burada üst sorun var. Heh, tamam. Bir şey fark etmedi ama önceki denen, değil mi?
+
+537
+01:22:53,524 --> 01:22:56,324
+Yani göz önündekin aynısını yapmış olduk.
+
+538
+01:22:57,524 --> 01:23:04,324
+1 bölü x, 1 bölü x göndermek, gönderdiğimizde tabi şurada şey oluyor yani o zaman şurada 1 bölü...
+
+539
+01:23:04,824 --> 01:23:08,524
+Ama bir defaya mahsus yani şey, şurada sadece x olacak.
+
+540
+01:23:10,524 --> 01:23:18,324
+Burada 1 bölü x, 1 bölü x gönderince bir tane 1 bölü x'ten dolayı sıkıntı, şurayı 1.0 diyeyim hatta.
+
+541
+01:23:24,500 --> 01:23:28,820
+Şurada takılıyor. Yani bunun ilk gelen x ile...
+
+542
+01:23:28,820 --> 01:23:40,820
+Veya şu olabilir, eğer şurada bir ön işlem yapıp, yani n birden küçükse x eşittir 1 bölü x deyip önce...
+
+543
+01:23:40,820 --> 01:23:51,780
+x eşittir 1.0 bölü x deyip sonra şunun aynısını yazıp...
+
+544
+01:23:52,756 --> 01:23:53,756
+Ctrl C
+
+545
+01:23:54,756 --> 01:24:01,756
+Tabi burada da aslında yok, yine olmaz. Çünkü şey, orada sürekli 1 bölü x'i de 1 bölü x'e böldürür. Bu da olmaz.
+
+546
+01:24:02,756 --> 01:24:04,756
+Sonraki adımda orada da bor var.
+
+547
+01:24:05,256 --> 01:24:09,756
+Neyse, şimdi bu haliyle aslında farklı çözümler üretilir.
+
+548
+01:24:10,756 --> 01:24:15,756
+Genellikle arkadaşlar, şunları tek bir fonksiyonda yazarlar, alt fonksiyonlara bölerler.
+
+549
+01:24:16,256 --> 01:24:17,256
+Buna ayrıca bakarız.
+
+550
+01:24:17,939 --> 01:24:23,539
+Şu çalışan halini bir daha kontrol edeyim de, size paylaştığım şeylerden sıkıntı olmasın.
+
+551
+01:24:27,667 --> 01:24:42,467
+Şimdi, mesela bu iç süzleri Embry 2'li çözme ayrıca geleceğiz. Recursive Power dediğimiz, onun farklarında var. Şimdi sadece bir de dizilerle alakalı bir örnek yapayım, ondan sonra bitireceğim.
+
+552
+01:24:42,467 --> 01:24:46,067
+Şunu kapatalım.
+
+553
+01:24:46,067 --> 01:24:50,067
+İyiyim bir şey açayım.
+
+554
+01:24:50,067 --> 01:24:53,675
+Mesela dizinin elemanlarını toplamak istiyoruz.
+
+555
+01:24:54,612 --> 01:24:59,211
+Tars pratikler yapmak gerekiyor, bunu öğrenmek için, sevdiğe dair olarak, hiç şey.
+
+556
+01:25:02,899 --> 01:25:28,899
+Bizim en elemanlı bir dizimiz olsun. Dizi üzerindeki elemanları veya bazı işlemleri yapalım. Hani bunları bir konuşalım. Mesela diyelim ki integer toplam 1 diyelim. Buraya iki tane sayı alayım. Şu ders butlarımızda olan bir şeydi galiba bu.
+
+557
+01:25:32,020 --> 01:25:46,020
+Şimdi şunu A ve B ile iki tane sayı alıyorum. Şimdi diyorum ki if B eşittir eşittir 0 ise return A yap.
+
+558
+01:25:51,315 --> 01:26:17,115
+Toplam diyelim, a artı bir, virgül b eksidir diyelim. Sizce bu fonksiyon ne işe yarar? Yüzde d diyorum. Mesela toplam bir diyelim, 2 virgül 6 diyelim.
+
+559
+01:26:20,564 --> 01:26:31,264
+Ne görürüz bu sonucunda? Mesela böyle bir soru verdik. Bu işin sonrasında mesela sonucumuz ne olabilir?
+
+560
+01:26:43,091 --> 01:26:47,471
+else'deki toplam fonksiyonu da toplam 1 mi hocam? Aynı fonksiyon mu?
+
+561
+01:26:48,471 --> 01:26:50,471
+Evet, toplam 1.
+
+562
+01:26:58,260 --> 01:27:13,740
+2-6'yı çağırıyoruz. B sıfıra eşitse A'yı return et diyor. Değilse ne yap? 3-5'i çağır. Sonra o kendi içinden… Var mı cevap?
+
+563
+01:27:13,740 --> 01:27:17,220
+Sanırım yine 2 ile 6'nın toplumu olmayacak mı?
+
+564
+01:27:17,220 --> 01:27:24,660
+Bakalım. 2 ile 6'nın toplumu… Yani 8 mi edeceğiz?
+
+565
+01:27:26,131 --> 01:27:27,131
+Evet.
+
+566
+01:27:40,148 --> 01:27:54,148
+Birinci sayıyla evet ikinci sayı topluyorsunuz arkadaşlar. Yani 6'yı ikiye yüklüyorsunuz, ekliyorsunuz. 6 nereye düşüyor? 0'a kadar düşüyor. 0'a kadar düştüğünde ikisinin toplamı A'da birikmiş oluyor. Öyle değil mi?
+
+567
+01:27:54,148 --> 01:28:04,811
+İki sayıyı böyle hani dolaylı bir yoldan hani belki uzak bir yoldan toplamış oluyoruz. Şimdi bu bir basit bir örnek.
+
+568
+01:28:06,963 --> 01:28:12,403
+Toplam 2 diyelim. Bu sefer ben bu toplam 2'ye bir tane dizi göndereceğim.
+
+569
+01:28:15,283 --> 01:28:20,884
+Bu dizinin mesela pointer'ını gönderebiliriz ama dizinin şöyle dizi diyelim.
+
+570
+01:28:23,923 --> 01:28:30,243
+Ve buraya dizinin kaç tane elemanı olduğunu gönderelim. B olsun bu da.
+
+571
+01:28:30,963 --> 01:28:33,923
+N sayısı veya doğrudan N diyelim.
+
+572
+01:28:35,252 --> 01:28:37,196
+Şöyle bir kod yazacağım burada.
+
+573
+01:28:41,427 --> 01:28:49,927
+if-and eşit-reşit-ter stoforsa return.
+
+574
+01:28:53,011 --> 01:29:00,011
+Return dizinin n-1.sine örnek.
+
+575
+01:29:00,011 --> 01:29:07,011
+Değilse, return dizinin n-1.sine örnek.
+
+576
+01:29:19,859 --> 01:29:24,359
+Diziyi gönder ve en eksi biri gönder diyeceğim.
+
+577
+01:29:27,891 --> 01:29:29,891
+Şurada bir tanımlayalım.
+
+578
+01:29:31,891 --> 01:29:35,891
+Bizi mesela 5 elemanlı olsun.
+
+579
+01:29:47,475 --> 01:29:48,475
+Bu ne?
+
+580
+01:29:50,475 --> 01:29:51,339
+Dede.
+
+581
+01:29:55,315 --> 01:29:57,315
+Toplam 2.
+
+582
+01:29:59,315 --> 01:30:03,315
+Diziyi gönderiyorum. Dizimiz 5 elemanı olduğu için 5'i gönderiyorum.
+
+583
+01:30:08,659 --> 01:30:14,159
+Şimdi, bu dizi, şunu yukarıya alalım, daha rahat yollayın.
+
+584
+01:30:17,908 --> 01:30:22,508
+Bu dizi, şuraya parametre geçişi ile aktarılıyor ve 5 değeri aktarılıyor.
+
+585
+01:30:22,508 --> 01:30:33,908
+Diyor ki, n eşittir 0 ise, yani dizinin eleman sayısı 0 ise, şeyi gönder.
+
+586
+01:30:33,908 --> 01:30:36,908
+Veya burada şunu diyebiliriz, bir dakika.
+
+587
+01:30:36,908 --> 01:30:42,908
+Şimdi 5 göndereceğim için, bunu 5 ile çağırmayalım, 4 diyelim. Dizinin en son elemanı 4. eleman yap.
+
+588
+01:30:43,123 --> 01:30:52,123
+n eşittir 0 ise dizinin n inci elemanını döndür. Değirse, şöyle yazayım, korudu düzelteyim.
+
+589
+01:30:52,123 --> 01:31:04,123
+Dizinin n inci elemanı artı bir şey. Bu ne yapıyor arkadaşlar? Şöyle daha düzgün yazmış olalım. Burada ne yapmış oluyoruz?
+
+590
+01:31:08,595 --> 01:31:10,595
+Dizideki elemanların toplamı?
+
+591
+01:31:10,595 --> 01:31:12,595
+Dizideki elemanların toplamı, aynen.
+
+592
+01:31:12,595 --> 01:31:21,595
+Yani, önce dizi bir kere referansıyla gittiği için, ne oluyor? Burada defalarca ilk elemanın adresiyle.
+
+593
+01:31:21,595 --> 01:31:33,595
+Şurada da dizinin en son kaçıncı elemanı tuttuğunu, indisini gönderiyorum. Dördüncü eleman çünkü bu. Dördü gönderdim. Dört sıfıra eşit mi değil.
+
+594
+01:31:37,140 --> 01:31:47,760
+Sonra onun içinden ikinci elemanı çağır, sonra birinci elemanı, sonra sıfırıncı elemanı çağır. Sıfırıncı eleman önce bir olacak. Sonra ona ikiye ekleyecek, sonra üçe ekleyecek, sonra dört, sonra beşe ekleyecek.
+
+595
+01:31:47,760 --> 01:31:55,140
+Yani burada ekleme sırası bakın sondan geriye yaptığımız için aslında baştan sona doğru toplama. Bir artı iki artı üç artı dört artı beş.
+
+596
+01:31:55,140 --> 01:31:59,640
+Sitekte en son bir ekleneceği için burada bunu göreceğiz.
+
+597
+01:32:01,844 --> 01:32:09,844
+15. Hatta aradaki işlemleri yazalım dersek, mesela else dediğimde şöyle bir şey yapayım.
+
+598
+01:32:11,844 --> 01:32:13,844
+Bir de bir tepki diyelim.
+
+599
+01:32:14,844 --> 01:32:18,844
+%d artı gibi bir şey oluyor değil mi arkadaşlar burada?
+
+600
+01:32:19,844 --> 01:32:22,507
+Burada dilinin n'i diyelim.
+
+601
+01:32:26,484 --> 01:32:32,083
+Buraya mı yazacağım sizce yoksa diğerine mi yazmam gerekiyor? Bundan sonra mı yazmam gerekiyor arkadaşlar? Şöyle.
+
+602
+01:32:35,083 --> 01:32:36,684
+Bu yaptığım şey doğru mu?
+
+603
+01:32:41,043 --> 01:33:02,804
+Şimdi işlem önceliğine göre toplama işleminden önce şunun yapılması lazım. Dolayısıyla bunu ben burada yazarsam dizinin ilk son elemanı yapılacak demektir. Dolayısıyla bunu sona alıyoruz. Şurayı alıyorum. Bundan sonra yazıyorum. Önce dizinin son elemanına kadar gideceğiz.
+
+604
+01:33:03,380 --> 01:33:12,579
+Son eleman dediğimiz aslında baştaki eleman olacak. Çünkü son baş oldu, başta son oldu burada. Bu şekilde ilerliyoruz.
+
+605
+01:33:14,579 --> 01:33:15,699
+15.
+
+606
+01:33:16,500 --> 01:33:18,260
+Tabii niye yazmadı burada?
+
+607
+01:33:29,363 --> 01:33:35,363
+Return yaptıktan sonra, şurada şunu yazıyorum. Return'den sonra arkadaşlar şunu da yazmam gerekiyor.
+
+608
+01:33:36,363 --> 01:33:38,363
+Şöyle olması lazım.
+
+609
+01:33:40,363 --> 01:33:44,363
+Allah Allah, hiç çevirmedi buraya girmedi.
+
+610
+01:33:44,363 --> 01:33:47,363
+Hocam direkt çünkü fonksiyondan return yapıyor.
+
+611
+01:33:47,363 --> 01:33:52,907
+Return yaptığımız için evet, yani orada geçici bir şey yapsak da faydası yok.
+
+612
+01:33:53,747 --> 01:34:02,747
+Bakın, return edip bir önceki satıra geldiğimizde, return edeceği için arada işlem yapmadık. Yani burada ekstra bir if-sharp gibi bir şey koyup öyle yazabiliriz.
+
+613
+01:34:03,747 --> 01:34:12,747
+Neyse, dizinin bütün elemanlarını toplamış olduk. Bir tane daha dizide eleman arayalım ve elemanın yerini bulalım son olarak.
+
+614
+01:34:14,747 --> 01:34:18,747
+Mesela int ara diyelim.
+
+615
+01:34:19,699 --> 01:34:23,699
+Buraya yine dizinin eleman sayısı ve dizinin kendisi yersin.
+
+616
+01:34:27,764 --> 01:34:29,764
+İyi diyelim bu yıl aranan eleman.
+
+617
+01:34:33,235 --> 01:34:39,556
+Şimdi, ne yapmamız gerekiyor? Bir kere dizimizin eleman sayısı azalıp azalıp gelecek.
+
+618
+01:34:39,556 --> 01:34:44,916
+Ta ki nereye kadar azalacak? Sıfıra kadar. Peki bulamama ihtimali mi var?
+
+619
+01:34:44,916 --> 01:34:54,355
+Şimdi sıfırdan önce ne var? Eksi bir var. O zaman diyorum ki if, şu n sayısı biraz öncekinin aynısını düştü.
+
+620
+01:34:54,355 --> 01:35:00,355
+Sıfırın altına düştüyse, demek ki bulamadık. Return eksi bir yap. Not found.
+
+621
+01:35:01,619 --> 01:35:16,619
+Değilse, diyeceğiz ki burada if dizinin değilse demek ki var arada bir yerde. Dizinin eninci elemanı aradığımız eleman olabilir veya olmayabilir.
+
+622
+01:35:16,619 --> 01:35:22,619
+Eğer şu aradığım elemana eşitse bu eninci elemandır, yeni döndür.
+
+623
+01:35:29,043 --> 01:35:41,043
+ara fonksiyonunu çağıracağız. Dizi gönder diyeceğiz. M sayımız bir tane azalacak. Ve Q olduğu gibi göndereceğiz.
+
+624
+01:35:43,043 --> 01:35:52,043
+Bakın bu en son nereye dönecek? Ya şurada ya da şurada aradığımız elemanı bulabileceğiz.
+
+625
+01:35:52,043 --> 01:35:54,043
+Şimdi şöyle diyelim.
+
+626
+01:36:03,188 --> 01:36:05,188
+Toplam şey değil, yukarı.
+
+627
+01:36:10,452 --> 01:36:17,452
+Dizinin elemanı 4 eleman, mesela 3'ü arayalım. Şurada da eksi 3'ü arayalım.
+
+628
+01:36:28,148 --> 01:36:29,387
+Evet, de başka bir şey yok.
+
+629
+01:36:33,300 --> 01:36:44,300
+Birincisinde 2D bulduk, evet şurada, öbüründe de bulamadık. Zaten 4 tane çıktığımız vardı. Şunu da şöyle yapalım arkadaşlar.
+
+630
+01:36:47,828 --> 01:36:57,307
+Bu tarz örnekler şey oluyor, rekürsif algoritmaların mantığını anlarken böyle basit de olsa şey ediyor arkadaşlar, biraz bunlara çalışın.
+
+631
+01:36:57,307 --> 01:37:07,547
+Bu örnek burada yetsin. Mesela şey vardır, fraktallar vardır. Bunu belki şeyde gördüğünüz fraktal.
+
+632
+01:37:10,612 --> 01:37:15,932
+Bu mantıkla yapılıyor. Şurada bir iki tane bir şey bulmuştum da, bir saniye gösterebilirsek.
+
+633
+01:37:17,212 --> 01:37:19,212
+Sadece onlardan da bahsedeyim.
+
+634
+01:37:33,908 --> 01:37:39,507
+Bu Recurge işlemlerin, bu linke bakabilirsiniz, okuyabilirsiniz.
+
+635
+01:37:44,180 --> 01:37:46,180
+Neyiang, kodla göreceğiz.
+
+636
+01:37:54,836 --> 01:37:56,836
+Şu değini de şu ordudur.
+
+637
+01:38:03,220 --> 01:38:05,619
+CS 106B'deymiş bakın buna.
+
+638
+01:38:09,652 --> 01:38:15,652
+Bir şeyin palindromu olup olmadıya mesela. Güzel bir örneğin.
+
+639
+01:38:21,395 --> 01:38:32,655
+Temelde sizin yapacağınız şey mesela bir tane kök çizmek daha sonra o köke dallar eklemek. Bu proktallar rekürsif mantıkla mesela şuradaki örnekler.
+
+640
+01:38:33,935 --> 01:38:40,335
+Mesela şurada bir alfigen çiziyorsunuz, o alfigenin köşelerine alfigenler çiziyorsunuz veya bakın şurada beşgenler var.
+
+641
+01:38:41,115 --> 01:38:44,695
+Bu beşgenin her ucuna bir beşgen çiziliyor, çizme kodları.
+
+642
+01:38:45,072 --> 01:39:01,271
+Burada üçgen var, üçgenin içine üçgen, kenarına kare, ekleye ekleye şu güzel bir örnek, kare, işte dört tane kare ekledim, onların içlerine dört tane kare, siyah beyaz renklerde farklı kareler üretip, böyle şekiller üretilebilir. Bunlar farklı örnekler.
+
+643
+01:39:02,472 --> 01:39:08,672
+Bakın bu şeyde, bildiğim kadarıyla bu örnek, Requestrı Polygoitman ile üretilmiş düzgün bir ağaç.
+
+644
+01:39:10,931 --> 01:39:14,132
+Bildiğiniz ağaçlardan bir ağaç, gerçek bir ağaç değil.
+
+645
+01:39:15,931 --> 01:39:20,931
+Cs106, bu link'e bakarsın, şurada bir şey daha vardı, onu da gösterip, köşem hemen.
+
+646
+01:40:09,908 --> 01:40:10,988
+Bu ne yapalım şey.
+
+647
+01:40:45,332 --> 01:40:47,332
+Demonstrations.
+
+648
+01:40:48,332 --> 01:40:49,228
+Veil.
+
+649
+01:41:27,667 --> 01:41:31,268
+Şuradaki sayfada çok güzel.
+
+650
+01:41:34,931 --> 01:41:43,811
+Şimdi mesela Quicksort ve MergeSort, burada algoritması var. MergeSort diziyi ikiye böyle böyle. Şunu adım adım çalıştırırsanız arkadaşlar bakın.
+
+651
+01:41:44,391 --> 01:41:48,652
+Kodun kendisi MergeSort, başlangıç ve şey burada.
+
+652
+01:41:49,031 --> 01:41:50,531
+Şimdi biraz küçülteyim.
+
+653
+01:41:52,731 --> 01:41:54,731
+Şöyle adım adım ilerletelim.
+
+654
+01:41:56,031 --> 01:41:59,431
+Bakın şimdi yeni bir fonksiyon çağrısı geldi.
+
+655
+01:41:59,731 --> 01:42:02,131
+Bu o açıdan güzel, 0 ve 3 için.
+
+656
+01:42:03,315 --> 01:42:07,315
+Şimdi bir daha fonksiyon çağrısı geldi. 0 ve 1.
+
+657
+01:42:08,315 --> 01:42:16,315
+Şimdi bir daha geldi 0 ve 0. Bakın 0 ve 0 tamamlandı. Biraz önceki fonksiyon çağrımıza geri geldik. Şimdi bir sonraki satıra geçiyor.
+
+658
+01:42:16,315 --> 01:42:23,315
+Bakın Recursive kodu iki defa çağırmış. Bunlar yapılabilir. Biz biraz önce yapmıştık farklı örneklerini.
+
+659
+01:42:23,315 --> 01:42:30,315
+Bu güzel bir sayfa. Burada hem Quicksort'u hem de Merge Sort'u inceleyebilirsiniz animasyon olarak.
+
+660
+01:42:31,252 --> 01:42:33,252
+Taş şeylere bakın.
+
+661
+01:42:36,252 --> 01:42:37,252
+Zaten paylaşacağız.
+
+662
+01:42:39,252 --> 01:42:47,252
+Evet, sınav formatı sınav büyük ihtimalle test olacak arkadaşlar da. Çarşamba günü derste açıklayacağız. O gün daha net konuşuruz.
+
+663
+01:42:47,252 --> 01:42:52,252
+Sayısal olmamız için de, yapısal programlamaya giriş için de test düşünüyoruz.
+
+664
+01:42:53,171 --> 01:43:01,331
+Bugün de bu kadar yeter. Çarşamba günü saat 10'da derse başlayacağız. Mail de özellikle söyledim. Sizin sorunuz var mı?
+
+665
+01:43:04,211 --> 01:43:07,331
+Hocam, deneme sınavı yapılacaktı gibi bir şey demiştiniz.
+
+666
+01:43:07,331 --> 01:43:19,331
+Deneme sınavı da şey, çarşamba günü test olarak bir tane sınav tanımlayacağız. Yani şu an bir de bilgilendirme videosu koymuşlar online yıldız giriş sayfasına.
+
+667
+01:43:19,507 --> 01:43:31,507
+Bir de devre teorisinde görmüşsünüz, deneme sınavından kastımız şeydi, örnek sorular değil, sadece sınav sistemini görün diye, dummy, anlamsız sorulardan oluşan bir şey olacaktı.
+
+668
+01:43:31,507 --> 01:43:40,507
+Onu da çarşamba günü saat 9'da, ben tanımlarım, ders saatine kadar tanımlanmış olur, gün içerisinde onu bir bakarsınız.
+
+669
+01:43:40,507 --> 01:43:44,139
+Tamam mı? Başka sorumuz var mı?
+
+670
+01:43:47,028 --> 01:43:51,028
+Peki, görüşmek üzere arkadaşlar. Hepinize iyi akşamlar, hoşçakalın.
+
+671
+01:43:52,028 --> 01:43:53,484
+İyi akşamlar.

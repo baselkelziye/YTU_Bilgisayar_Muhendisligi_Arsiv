@@ -1,0 +1,1887 @@
+1
+00:04:34,548 --> 00:04:35,747
+Evet arkadaşlar, merhaba.
+
+2
+00:04:43,603 --> 00:04:51,043
+Bu dönem mikroişlemciler dersini birlikte yürüteceğiz. Birinci grup dersin birinci grubu. Diğer grubu da Hamza hocanız yürütüyor.
+
+3
+00:04:54,043 --> 00:04:59,043
+Genel olarak ses duyulmasıyla ilgili bir problem var mı yok öncelikli olarak onu sormuş olayım.
+
+4
+00:04:59,843 --> 00:05:01,603
+Sesiniz geliyor hocam, sıkıntı yok.
+
+5
+00:05:02,403 --> 00:05:03,603
+Tamam, peki.
+
+6
+00:05:04,403 --> 00:05:11,243
+Şimdi arkadaşlar şöyle ilerleyeceğiz. Bu ilk hafta için laboratuvar olmadığından dolayı
+
+7
+00:05:11,507 --> 00:05:38,507
+Bu hafta biliyorsunuz 2 saat artı 2 saat şeklinde 4 saatlik bloklarımız var. Bu hafta özelinde 1,5 saat bir ders yapacağız blok, sonra bir ara vereceğiz yarım saat. Daha sonra yine yaklaşık 1 saat kadar daha veya 1,5 saat kadar daha devam edeceğiz. Yani bu haftaki dersimiz yaklaşık 3 saat gibi olacak. Daha sonraki haftalarda ise artık yavaş yavaş laboratuvarlar ve laboratuvarlar da...
+
+8
+00:05:38,576 --> 00:05:44,796
+kullanacağımız tool'ları tanıtarak lab kısmını bu şekilde kullanıyor, değerlendiriyor olacağız.
+
+9
+00:05:44,796 --> 00:05:50,296
+Ama bu hafta için yaklaşık olarak böyle bir yol izliyor olacağız.
+
+10
+00:05:50,296 --> 00:05:57,376
+Şimdi ben sizinle öncelikli olarak bir ders tanıtım formumuz var, onu bir paylaşayım.
+
+11
+00:05:57,376 --> 00:06:00,176
+Evet, şöyle.
+
+12
+00:06:00,176 --> 00:06:03,776
+Şurası eskisi gibi kalmış.
+
+13
+00:06:07,795 --> 00:06:21,795
+Evet arkadaşlar, yani ders içeriğimiz kabaca bu şekilde. Şimdi neler olduğundan bahsedeceğim. Temelde arkadaşlar dersin konusu 8086 mikroişlemcisi. Bunun iç yapısı.
+
+14
+00:06:34,100 --> 00:06:36,660
+Diğer arkadaşları yakalaması gerekiyor.
+
+15
+00:06:39,220 --> 00:06:41,020
+Evet, bir soru var bakalım.
+
+16
+00:06:43,320 --> 00:06:51,000
+Şimdi, U-SYS'ten de kontrol edebilir misiniz acaba? Siz diğer grupta mısınız? Grup 1'de misiniz, grup 2'de misiniz?
+
+17
+00:06:51,091 --> 00:07:08,331
+Eğer bu şekilde bir problem varsa, bunu online Yıldız Edü TR içindeki iletişim kanalları üzerinden bildirmeniz daha uygun olacak. Şimdilik bir kontrol edin o sistem. Ben de Hamza Hocanıza sorayım bir yandan öğrenciler geldi mi diye.
+
+18
+00:07:30,740 --> 00:07:37,540
+Hamza Hocanıza da ondan da cevap gelsin. Belki onun grubu tanımlı olmayabilir. Öğrenmiş olalım.
+
+19
+00:07:42,355 --> 00:07:48,355
+Grup 2'ler. Olmadı, takılırsınız biraz ne yapalım. Yaklaşık aynı konular zaten.
+
+20
+00:07:53,300 --> 00:07:56,860
+Herhalde Hamza hocanız da derse başladı, görmedi mesajı.
+
+21
+00:07:58,539 --> 00:07:59,939
+Burası grup 1.
+
+22
+00:08:04,019 --> 00:08:07,259
+Dur, ben bir kontrol edeyim. Acaba ben mi yanlış şey yaptım?
+
+23
+00:08:08,860 --> 00:08:11,099
+Allah Allah, bir saniye.
+
+24
+00:08:15,060 --> 00:08:19,159
+Hemen bir kontrol edeyim. Az önce ders öğrenci listesine bakmıştım ama.
+
+25
+00:08:31,411 --> 00:08:37,652
+Evet, grup 1, benim yürüteceğim grup arkadaşlar, grup 1.
+
+26
+00:08:41,748 --> 00:08:54,748
+Evet, çoğunluğun grup 1 olması lazım. Başka geçen, geçen derste de daha gruplar tam atanmamıştı. Oradan bir problem olmuştu benzer şekilde.
+
+27
+00:08:55,748 --> 00:09:08,748
+Grup 2'deki olan arkadaşlar da ilk hafta itibariyle takip edebilirler. Bir sıkıntı yok. Burada kalabilirler. Ama arada kontrol ederlerse diğer gruba yönlendirme var mı yok mu diye iyi olur.
+
+28
+00:09:10,515 --> 00:09:14,915
+Şimdi tekrar ders içeriğini paylaşarak ilerleyelim.
+
+29
+00:09:17,915 --> 00:09:31,975
+Şimdi söylediğim gibi arkadaşlar, ders içeriğimiz temel olarak 8086 mikroişlemcisi. Bunun iç yapısı, çalışma mantığı, assembly ile bağlantısı. Daha sonrasında ise çevre birimleri inceliyor olacağız.
+
+30
+00:09:32,135 --> 00:09:37,635
+Grup 2'dekilerin çıkmasına gerek yok arkadaşlar. İlk hafta itibariyle zaten genel bir tanıtım olacak, benzer konu olacak.
+
+31
+00:09:38,131 --> 00:09:52,371
+Ama ara verdiğimiz zaman veya kendi istediğiniz zaman diğer grubu kontrol edin. Eğer oraya yönlendiriyorsa sistem oraya katılabilirsiniz. Ama şu anda öyle bir problem yok. İlla çıkmanız gerekmiyor.
+
+32
+00:10:10,484 --> 00:10:17,484
+Şimdi şöyle, ben U-SIST'en kontrol ettiğim zaman, mikroişlemci sistemleri, grup 1 benim üzerime açılmış durumda.
+
+33
+00:10:17,484 --> 00:10:26,484
+Bu ders bu şekilde. Eğer online Yıldız Edü TR'den kaynaklı bir problem varsa, mesela [öğrenci]'e bakalım.
+
+34
+00:10:30,323 --> 00:10:33,823
+Evet, [öğrenci] benim grubumda değil. Öyle görüyorum.
+
+35
+00:10:37,812 --> 00:10:39,812
+Ama problem değil.
+
+36
+00:10:41,812 --> 00:10:46,812
+Evet, teşekkür ederiz. Bunu açıklığa kavuşturduğun için [öğrenci].
+
+37
+00:10:51,220 --> 00:10:59,720
+Yani bu grupla ilgili problemler başlarda oluyor. Dediğim gibi bu hafta için sıkıntı yok. Burada kalınmanızda hiçbir sıkıntı yok. Zaten genel bir tanıtım yapacağız.
+
+38
+00:11:00,720 --> 00:11:12,019
+Arada kontrol edersiniz. Diğer gruba yönlendiriyorum online Yıldız Edyo. Eğer yönlendirmiyorsa da ilgili iletişim birimine mail atarak durumunuzu bildirirseniz iyi olur.
+
+39
+00:11:12,519 --> 00:11:16,019
+Benzer şekilde zaten eğer bir problem varsa amca hocanızla.
+
+40
+00:11:16,211 --> 00:11:20,571
+İlgili iletişimi online izleditare ile kuruyor olacak.
+
+41
+00:11:22,611 --> 00:11:39,511
+Şimdi eğer ki SM'li tarafıyla ilgili bir sıkıntımız varsa arkadaşlar, SM'li dersini daha önce almadıysak, SM'li tarafıyla ilgili olarak eksiğimizi tamamlamamız gerekiyor. Bunun için özellikle mikroişlemci tarafında kullanılacak SM'li komutları ve yaklaşımlarını ben dersin başında anlatmaya çalışacağım.
+
+42
+00:11:39,583 --> 00:11:46,983
+Ama bunlar yeterli olmayabilir. Bir takviye ile birlikte bunu tamamlamakta fayda var.
+
+43
+00:11:46,983 --> 00:11:58,983
+Gerekirse eğer ayarlarız, ders dışı saatlerde de belki bir düzenleme ile bu eksik olan arkadaşlar için bir şeyler yapmak söz konusu olabilir.
+
+44
+00:11:58,983 --> 00:12:04,583
+Ama temel olarak SM'li dersi ön koşul değil ama SM'li dersini almış olmak.
+
+45
+00:12:04,768 --> 00:12:14,368
+Bu konuda avantajlı oluyor, faydalı oluyor. Eğer hiç almadıysak, bunu ayrıyeten bana bildirirseniz, genelde göre bir şeyler yapmaya çalışırız.
+
+46
+00:12:15,807 --> 00:12:25,807
+Şimdi konularımız neler diye bakacak olursak, hatırlatmayı yapacağım ama hiç almayanlar varsa onların yakalaması biraz daha zor olabilir.
+
+47
+00:12:27,316 --> 00:12:43,316
+Hiç almayanlar için özel olarak bakabiliriz ama şöyle bir durum da var. Zaten SM'li dersinin bir grubunu yine ben veriyorum. Eğer programınız uygunsa o tarafta da derse misafir öğrenci olarak dahi davet edebiliriz. Öyle bir şeyler de olabilir.
+
+48
+00:12:47,124 --> 00:12:50,124
+Mail üzerinden bildirebilirsiniz, daha pratik olur.
+
+49
+00:12:50,124 --> 00:12:53,004
+euslu.et.yildiz.edü.tr'den
+
+50
+00:12:58,067 --> 00:12:59,447
+Buradan mail atarsınız.
+
+51
+00:12:59,700 --> 00:13:18,700
+Şimdi temel olarak 8086'yı görmekle birlikte arkadaşlar, biz birtakım mikroişlemcilere ilişkin genel kavramları da göreceğiz dersimiz boyunca. Bu kavramların neler olduğunu anlatmaya çalışacağız. Dolayısıyla sadece 8086 mimarisinin değil, 286 ve daha sonraki mimarilerin de ne şekilde birbirlerinden farklılaştıklarını inceliyor olacağız.
+
+52
+00:13:27,700 --> 00:13:30,040
+olacağız veya görmüş olacağız öyle söyleyeyim.
+
+53
+00:13:31,020 --> 00:13:31,780
+Daha sonrasında
+
+54
+00:13:31,780 --> 00:13:34,220
+80-86'ya ilişkin olarak SM tarafında
+
+55
+00:13:34,220 --> 00:13:35,660
+adresleme modlarına bakacağız.
+
+56
+00:13:37,259 --> 00:13:40,060
+Genel olarak SM tarafına
+
+57
+00:13:40,060 --> 00:13:41,600
+da bu noktada değinmiş olacağız.
+
+58
+00:13:42,600 --> 00:13:43,980
+Daha sonraki haftalarda ise
+
+59
+00:13:43,980 --> 00:13:45,840
+ilerleyen haftalarda da şöyle bir
+
+60
+00:13:45,840 --> 00:13:47,259
+yol izliyor olacağız.
+
+61
+00:13:48,220 --> 00:13:50,160
+Dediğim gibi sadece 80-86'yı
+
+62
+00:13:50,160 --> 00:13:51,960
+tanıyarak kalmayacağız. Bununla birlikte
+
+63
+00:13:52,596 --> 00:14:01,836
+giriş çıkış birimleri üzerine de uygulamalar yapıyor olacağız. Bu giriş çıkış birimleri programlanabilir, çevre birimleri olabilir.
+
+64
+00:14:01,836 --> 00:14:09,936
+Fakat bunların en genel anlamda kendimizin custom olarak özel olarak geliştirdiğimiz bir takım entegrelerle çalıştırabildiğimiz
+
+65
+00:14:10,192 --> 00:14:27,312
+Oluşturabildiğimiz giriş çıkış birimleri de var. Dolayısıyla ikinci hafta itibariyle kendimizin oluşturmuş olduğu, custom olarak oluşturmuş olduğumuz giriş çıkış birimlerinin nasıl programlanabileceğini, bunların 8086 ile nasıl interfej edileceğini veya arayüz bağlantısı sağlanabileceğini göreceğiz.
+
+66
+00:14:27,567 --> 00:14:43,567
+Daha sonraki haftalarda ise artık programlanabilir. Yani yine piyasada vakti zamanında mevcut olan bir takım entegrelerle, yardımcı devrelerle, çevre birimleriyle 8086'nın birlikte nasıl çalışacağını inceleyeceğiz.
+
+67
+00:14:43,567 --> 00:14:50,567
+Bunlardan ilki arkadaşlar paralel interfej, paralel arayüz olacak. Bu paralel arayüz temel olarak...
+
+68
+00:14:51,764 --> 00:15:13,764
+Temel giriş çıkış işlemleri için, paralel giriş çıkış işlemleri için kullanılıyor. Burada pratik uygulamaları da yapacağız. Örneğin, buton, led, seven segment, dot matrix veyahut da keypad gibi uygulamalarda, 8255 dediğimiz programlanabilir paralel arayüzün nasıl kullanabileceğini işliyor olacağız, görüyor olacağız.
+
+69
+00:15:19,251 --> 00:15:43,532
+Modları olarak onlara bakıyor olacağız. Mod 0 dediğimiz arayüz herhangi bir hand shaking olmayan bir yapı. Mod 1 ve mod 2 ise hand shaking sinyalleri içeren bir yapı olacak. Bunları ilerleyen haftalarda yine dediğim gibi daha detaylı bir şekilde inceliyor ve görüyor olacağız. Daha sonra ikinci bir çevre birimimiz var. Bu ise seri haberleşme için kullanacağımız bir çevre birimi.
+
+70
+00:15:43,956 --> 00:16:06,496
+Bu 8251 entegresini kullanarak 8086'nın dış dünyaya seri bir port üzerinden veri çıkmasını sağlayacağız. Dış dünyadan gelen seri verinin 8086'ya aktarılmasının nasıl gerçekleşiyor olduğunu inceliyor olacağız temel olarak. Genel olarak bir tanıtımını vereceğiz. Daha sonra da uygulamalarına bakıyor olacağız.
+
+71
+00:16:07,220 --> 00:16:16,760
+Yine 8086 ile uyumlu programlanabilir bir başka entegremiz. Zamanlayıcı ve sayıcı entegresi yani 8254.
+
+72
+00:16:16,760 --> 00:16:21,260
+8254 ile ilgili olarak da benzer şekilde öncelikli olarak tanımlarını vereceğiz.
+
+73
+00:16:21,260 --> 00:16:33,560
+Tanımdan kasıt şu, fiziki olarak uç tanımları neler, fonksiyonel olarak uçları neler, içerisindeki yazmaçlar ve görevleri neler, bunları programlamak için takip etmemiz gereken.
+
+74
+00:16:33,744 --> 00:16:40,244
+Akışlar neler? Bunları veriyor olacağız. Daha sonra da örnekler üzerinden bunların çalışmasını inceliyor olacağız.
+
+75
+00:16:40,244 --> 00:16:50,244
+Bir tane vizemiz var. Vize için kabaca bir hafta yazdım. Fakat bu yine fakülteden gelen bildirime göre değişebilir.
+
+76
+00:16:50,244 --> 00:16:56,244
+Çünkü fakülte çapında ortak bir vize haftası yapıyoruz biliyorsunuz. Buna göre değişebilir.
+
+77
+00:16:56,244 --> 00:17:00,744
+Ben bununla ilgili olarak güncellemeleri de size iletiyor olacağım. Siz de takip ediyor olursunuz.
+
+78
+00:17:00,980 --> 00:17:28,440
+Bir başka yardımcı entegremiz arkadaşlar, analog değerleri dijital değerlere çeviren veyahut da bir başkası da dijital değerleri analog değere çeviren bir yardımcı programlanabilir entegre. Bunlar ADC ve DAC olarak geçen entegreler. Temel olarak bunları niçin kullanıyoruz? Fiziki dünyamız bizim analog bir dünya. Her sıcaklık değeri, basınç değeri gibi bir takım değerler, gerilim değerleri gibi değerler bunlar analog değerler.
+
+79
+00:17:29,299 --> 00:17:56,980
+Bu analog değerleri okumak, kontrol etmek ve bunları değerlendirmek istiyorsak mikroişlemciyle dijitale çevirmemiz gerekiyor. Bu dijitale çevirme işlemini de ADC entegresiyle yapıyor olacağız. Dijitale çevirdik, aldık bir takım hesaplamalar yaptık. Daha sonra bunu bir kontrol işareti olarak motoru sürmek için veyahut da IRFAN'ı sürmek için kullanacağız. Tekrar bir analog değer üretmemiz gerekiyor. Dolayısıyla bunu da DAC tarafıyla gerçekleştiriyor olacağız.
+
+80
+00:17:57,299 --> 00:18:22,319
+Şimdi laboratuarla ilgili olarak toplamda 5 tane laboratuvarımız olacak bu dönem. Kalabalık olduğumuz için dönüşümlü olarak yani 2 haftada bir laboratuvar yapıyor olacağız. Bununla ilgili olarak asistan arkadaşlarımız sizlere duyuru yapacak. Ben de biraz sonra size bir piyaza linki paylaşacağım. Sizden bu piyaza linkine kayıt olarak laboratuarla ilgili duyuruları oradan takip edebileceksiniz.
+
+81
+00:18:22,771 --> 00:18:40,771
+Biraz sonra paylaşacağım bu linki. ADC ve DAC ile ilgili genel tanım ve durum bu şekilde. Bir başka yardımcı entegremiz ise arkadaşlar, 8259 entegresi. 8259 entegresi bir kesme kontrolcüsü, yani interrupt kontrolür.
+
+82
+00:18:48,531 --> 00:19:15,552
+Eğer kontrol etmek istiyorsak, bunu yazılımla yapıyorsak, örneğin bir tane kontrol biti üzerinden de bu işlemin gerçekleşip gerçekleşmediğini okuyabiliyoruz. Bu şekilde bir varsayımımız olsun. Ne yapacağız? Gideceğiz o kontrol register'ını okuyacağız. İlgili biti istediğimiz değere ulaşmış mı diye bakacağız. Eğer ulaşmamışsa tekrar gidip ilgili register'dan ve ilgili biti kontrol ederek o değer istediğimiz değere ulaşana kadar bir boş aktif döngüde beklememiz gerekiyor.
+
+83
+00:19:15,988 --> 00:19:26,148
+Bu tür yapılar arkadaşlar mikroişlemciyi aktif olarak yoran ve işlem yükünü oluşturan bazı durumlar olarak ortaya çıkıyor.
+
+84
+00:19:26,148 --> 00:19:34,228
+Dolayısıyla bu tür poling olarak isimlendirdiğimiz bu durumlar aslında çok istenen durumlar değil. Bunun alternatifi ne?
+
+85
+00:19:34,228 --> 00:19:39,988
+Bunun alternatifi kesme tabanlı olarak bir takım işlemlerin yürütülmesi. Kesme tabanlı işlemler nasıl yürütülüyor?
+
+86
+00:19:40,211 --> 00:20:00,000
+Özellikle fiziki ve donanımsal birimler için nasıl yürüyor bu? Mikroişlemciyi şu şekilde ayarlıyoruz. Bir kesme istek ucundan, istek geldiği vakit, kesme isteği geldiği vakit, o anda devam ettiğin işlem neyse bunu kes, kesme ile ilgili alt programı yürüt, bitir, daha sonra yarıda bırak.
+
+87
+00:20:00,000 --> 00:20:08,800
+Kıraktığın işleme devam et şeklinde bir mantık uygulanıyor. Bunun için dış dünyadan kesme isteği oluşturacak bir arayüz oluşturmamız lazım.
+
+88
+00:20:08,800 --> 00:20:15,400
+8259 bunu sağlıyor. Yine bunu custom bir takım arayüzlerle oluşturarak biz kendimiz de yapabiliyoruz. Bunları göreceğiz.
+
+89
+00:20:15,400 --> 00:20:24,000
+8259 entegresinin yine iç yapısı, tanımları, registerları nasıl kullanıldığına ilişkin bir...
+
+90
+00:20:26,836 --> 00:20:29,715
+bir yapı üzerinden bu değerlendirme yapıyor olacağız.
+
+91
+00:20:32,948 --> 00:20:38,648
+Evet, [öğrenci]'in son dakika olarak bildirdiği haberi ben de size aktarmak istiyorum.
+
+92
+00:20:40,347 --> 00:20:44,948
+Hamza hocanız herhalde grupla ilgili olarak online yıldız editeyore de bir problem çıkmış.
+
+93
+00:20:45,948 --> 00:20:50,948
+Hamza hocanızın grubunda olan arkadaşlar, bir mailinizi kontrol edin.
+
+94
+00:20:50,948 --> 00:20:57,948
+Eğer Zoom linki gelmiş ise diğer grubun dersine katılabilirsiniz oradan. Ama dediğim gibi...
+
+95
+00:20:58,544 --> 00:21:01,024
+Bu hafta için burada da kalsanız bir problem yok.
+
+96
+00:21:01,024 --> 00:21:01,903
+Tamam.
+
+97
+00:21:03,344 --> 00:21:14,864
+Daha sonra ise arkadaşlar, son iki haftamızda ise mikroişlemcilerin çalışabilmesi için temel yapı taşlarından ve yardımcı devrelerden birisi daha olan bellek yapılarını görüyor olacağız.
+
+98
+00:21:15,004 --> 00:21:18,664
+Bellek yapılarının temel tipleri neler onlara bakacağız.
+
+99
+00:21:19,544 --> 00:21:25,724
+Daha sonrasında ise bunların 8086 mikroişlemcisiyle interfejisi, arayüzü nasıl oluyor onu inceleyeceğiz.
+
+100
+00:21:26,355 --> 00:21:36,275
+Son olarak da bunların belirli adres aralıklarına yerleştirilebilmesi için adres çözümleme devresi dediğimiz yapı nasıl kurulmalı buna ilişkin uygulamalar yapıyor olacağız.
+
+101
+00:21:36,855 --> 00:21:40,615
+Kabaca bu şekilde derslerimiz ilerleyecek.
+
+102
+00:21:41,895 --> 00:21:49,556
+Şimdi kaynak olarak daha çıkmadı ama yakın zamanda çıkması muhtemel.
+
+103
+00:21:52,339 --> 00:21:58,400
+Önerebilirim, öneriyorum. Yani bu kitabı takip edeceğiz. Temel olarak örneklerimiz orada mevcut.
+
+104
+00:21:58,400 --> 00:22:16,400
+Daha önceden hatırlayacak olursanız Tevfik Hoca'nın Esamli Dili isimli bir kitabı vardı. Bu kitabı genişleterek, pdf'i var ama veremem. Bu kitabı genişleterek 8086...
+
+105
+00:22:17,332 --> 00:22:25,332
+Bu kitabı da çevre birimlerini dahil ederek, bunların çevre birim etkileşimlerini ortaya koyarak kitabı genişlettik.
+
+106
+00:22:25,332 --> 00:22:32,332
+Bu kitap aslında hem assembly hem de mikroişlemci tarafını kapsayacak şekilde genişlemiş oldu.
+
+107
+00:22:32,332 --> 00:22:39,332
+Dolayısıyla assembly tarafında zaten dersi alanlar için de aynı şekilde kitabı tavsiye ediyor olacağım.
+
+108
+00:22:39,667 --> 00:22:58,487
+Bu bizim temel kitabımız olacak. Bunun dışında oldukça yaygın bir şekilde kullanılan Barry'nin kitabı var. 8086 mikroişlemcileri anlattı. Yine burada da assembly ve donanım taraflarına değinilmiş durumda. Üçüncü kitapta daha çok 8088 mikroişlemcisi.
+
+109
+00:23:00,403 --> 00:23:14,403
+Üzerine işleyen bir kitap ama örnekler yakın. Dediğim gibi birinci sıradaki kitap daha çıkmadı ama zannedersem yakın bir zamanda basımı gerçekleşecek. Ben o zaman tekrar size bilgi veririm.
+
+110
+00:23:14,403 --> 00:23:18,403
+Bir de bu dördüncü kitabı internetten de bulabiliyorsunuz.
+
+111
+00:23:21,395 --> 00:23:29,395
+Şimdi bir numaralı kitapta, dediğim gibi eskiden hatırlayacak olursanız, bu kitapta sadece SM'li dili anlatılıyordu almış olanlar için.
+
+112
+00:23:29,395 --> 00:23:40,395
+Yeni versiyonda bütün çevre birimleri dahil olmak üzere, burada derste anlattıklarımızı, bütün çevre birimleri, bunların interfejsi nasıl oluyor, örnek uygulamalar,
+
+113
+00:23:40,395 --> 00:23:46,395
+yani derste de göreceğimiz şekliyle hepsi mevcut. Yani bu birinci kitap çıktığında ondan faydalanabilirsiniz.
+
+114
+00:23:46,900 --> 00:24:03,900
+Son olarak da bu dördüncü sıradaki kitaptan bahsedecek olursam, bu Elektrik Mühendisleri Odası tarafından basılan bir kitap. Temel olarak temel seviyede örnekler var. Faydalı olacağını düşünüyorum. Onu da internetten edinebilirsiniz, bulabiliyorsunuz.
+
+115
+00:24:05,900 --> 00:24:11,900
+Şimdi değerlendirme nasıl olacak arkadaşlar? Değerlendirmeniz bir tane ara sınavımız var. Yüzde 30 katkısı olacak.
+
+116
+00:24:12,852 --> 00:24:26,852
+Laboratuvarlarımız toplamda 5 tane laboratuvar var. Her birisinin katkısı yüzde 6 oluyor. Bir de final sınavımız var. Yüzde 40 katkısı olacak. Bu yönetmelik gereği yüzde 40 katkı oluyor.
+
+117
+00:24:39,092 --> 00:25:00,092
+Yürütüyor olacağız, laboratuvar tarafını yürütüyor olacağız ama orada bir problem yaşanmasına veyahut da herhangi bir ikinci duyuru kaynağı olarak da asistan arkadaşlarımızın Avesis'teki duyurularını takip edebilirsiniz. Şimdi ben size şunu ileteyim. Piyaza linkimizi bir bulayım hemen.
+
+118
+00:25:21,044 --> 00:25:30,644
+Evet arkadaşlar, laboratuvar tarafıyla ilgili olarak herkesin vermiş olduğum piyaza dersine kayıt olmaları gerekiyor.
+
+119
+00:25:30,644 --> 00:25:38,424
+Buraya kayıt olurken bir derse giriş koduna ihtiyaç duyuluyor. Bu kodda arkadaşlar şu, göndermiş olduğum kod.
+
+120
+00:25:38,804 --> 00:25:44,304
+Herkesin bu piyaza kaydını tamamlaması gerekiyor.
+
+121
+00:25:44,304 --> 00:25:54,104
+Dersle ilişkin olarak bütün duyurular, laboratuvarların işleyişi, takvim hep buradan duyuruluyor olacak.
+
+122
+00:25:54,104 --> 00:25:59,804
+Varsayılan olarak burayı kullanıyor olacağız. Dolayısıyla sizler de bu kaydınızı tamamlayın.
+
+123
+00:26:00,276 --> 00:26:18,276
+Kabaca arkadaşlar, dersin işleyişi bu şekilde. Buraya kadar sormak istediğiniz bir şey var mı? Değerlendirme, içerik, laboratuvarın yürütülüş şekliyle ilgili? Genel olarak sormak istediğiniz bir şey varsa, buyurun. Yoksa bu haftanın dersine başlayacağım.
+
+124
+00:26:28,564 --> 00:26:33,684
+Class Access kodu, şu aşağıda yazdım işte, mikro 2020, ünlem işareti.
+
+125
+00:26:42,708 --> 00:27:04,708
+Şimdi arkadaşlar, bir de şunu sorayım. Derse katılımla ilgili olarak özel durumu olan birtakım arkadaşlar varsa, bunlar bana durumlarını baştan bildirmeleri uygun olur. Eğer ki böyle senenin sonuna, dönemin sonuna doğru yaklaştığımız durumda,
+
+126
+00:27:04,799 --> 00:27:30,759
+Herhangi bir laboratuvar notu yok iken, herhangi bir sınav notu yok iken, devamla veya dersle ilgili özel durumunu belirten arkadaşlar olursa, onlar için bir şey yapacak durum kalmıyor. Fakat önceden bildirirlerse, bunlarla ilgili olarak ne yapabileceğimizi konuşuruz. Dolayısıyla önceden bildirmenizde fayda var. Yani şimdi ilk haftadan bildirirsiniz.
+
+127
+00:27:31,571 --> 00:27:49,311
+Sınavların nasıl olacağını biraz işleyişe göre bakacağız. Şu anda varsayılan olarak klasik sınav gibi düşünebilirsiniz bunları. Ama eğer klasik sınav yürütmekte sıkıntı yaşarsak farklılaştırmayı deneriz. Ama varsayılan olarak klasik bir sınav olacak.
+
+128
+00:27:52,564 --> 00:28:01,564
+Evet, yine sormak istediğiniz bir şey varsa şu aşamada sorabilirsiniz. Dersin işleyişi konular, laboratuvar ve benzeri konularla ilgili. Eğer yoksa...
+
+129
+00:28:06,516 --> 00:28:13,355
+Evet, [öğrenci]. Yani dediğim gibi özel durumunu bildirirsen ona göre bir şeyler yapmaya çalışırız.
+
+130
+00:28:22,771 --> 00:28:33,271
+Tamam, yani herhalde bir soru yok genel olarak dersin işleyişi ile ilgili herhangi bir soru yok. Dolayısıyla ben bu haftanın konusuna devam ediyorum.
+
+131
+00:28:53,236 --> 00:29:15,716
+Evet. Şimdi arkadaşlar, bu slide'ları da yine paylaşıyor olacağım ama benim Avesist'teki sayfamda da yine duyuruları falan takip edebilirsiniz. Oradan bakabilirsiniz. Şimdi genel olarak dersin konusu ne? Ondan bahsedelim. Yani dersten ters tanıtım formunda da bahsetmiştik kabaca.
+
+132
+00:29:21,044 --> 00:29:29,044
+Biz mikroişlemcilere ilişkin genel bir takım kavramlardan ve karşılaştırmalardan da bahsedeceğiz ki buna ilişkin olarak bir okuryazarlık oluşsun.
+
+133
+00:29:29,044 --> 00:29:37,044
+Daha sonra 8086 mikroişlemcisinin, şu mikroprosesörün kısa yazılmış hali, 8086 mikroişlemcisinin...
+
+134
+00:29:37,715 --> 00:29:59,715
+Biz minimum modda kullanacağız. Yani dersimiz boyunca minimum modda kullanacağız. Minimum mod nedir? Onu söyleyeyim. Eğer ihtiyaç duyulursa 8086 mikroişlemcisi yardımcı bir matematik koprocesörle birlikte kullanılabilir. Yani 8087 yardımcı matematik işlemcisiyle birlikte kullanılabiliyor. Bu durumda birden fazla mikroişlemci...
+
+135
+00:30:00,000 --> 00:30:26,440
+8086'ın yolları hakim olması gerekecek. Bu durumda 8086 yol kontrolünü diğerine devredecek falan gibi. Dolayısıyla burada daha fazla karmaşık bir durum söz konusu. Fakat biz dersimiz boyunca sadece bir tek mikroişlemcimiz olacak devrelerimizde ve bu şekilde inceliyor olacağız. Bu da 8086 mikroişlemcinin kendisi olacak ve dersimiz boyunca minimum modda işlemlerimizi yapıyor olacağız.
+
+136
+00:30:28,000 --> 00:30:49,720
+İlişkin neleri göreceğiz arkadaşlar? 8086'ın iç yapısı, uç tanımları ve yardımcı devrelerini göreceğiz. Burada yardımcı devreler önemli. Şundan dolayı önemli. Bir mikroişlemciye tanım gereği arkadaşlar, enerji verildiğinde fonksiyon gösterebilir bir durumda değil. Bunun fonksiyon gösterebilmesi için bir takım yardımcı devrelere ihtiyaç var.
+
+137
+00:30:50,163 --> 00:31:16,203
+Nelere var mesela örneğin 8086 üzerinden düşünürsek, saat darbesi üretici bir yardımcı devreye ihtiyacı var. Daha sonra aynı uçtan farklı zamanlarda farklı fonksiyonda değerler çıkıyor. Zaman çoğullamalı uçlar var. Ne olduğunu biraz sonra tekrar bahsedeceğim. Dolayısıyla farklı fonksiyonların tutularak sisteme aktarılması lazım. Dolayısıyla birtakım tutucu devrelere, latch dediğimiz devrelere ihtiyaç var.
+
+138
+00:31:16,660 --> 00:31:23,420
+Başka birtakım çevre birimlerine ihtiyaç var. Giriş çıkış çevre birimlerine ihtiyaç var.
+
+139
+00:31:23,420 --> 00:31:35,059
+Neticede mikroişlemcinin bir kullanıcısı var. Dolayısıyla bu kullanıcıyla iletişim halinde olması gerekiyor, bir etkileşim halinde olması gerekiyor. Dolayısıyla çevre birimlerine ihtiyaç var.
+
+140
+00:31:35,231 --> 00:31:47,231
+Program ve verinin saklandığı birtakım hafıza birimlerine ihtiyaç var. Programı nereden çalıştıracağız? Mikroişlemci içerisinde herhangi bir hafıza yok. Dolayısıyla mikroişlemcinin uçlarına birtakım hafıza elemanlarını da bağlamak gerekecek.
+
+141
+00:31:47,231 --> 00:31:58,187
+Dolayısıyla yardımcı devreler var iken enerjisini verdiğimizde fonksiyon gösterilbilir bir yapı mikroişlemci. Biraz sonra farklı kavramları birlikte inceliyor olacağız.
+
+142
+00:32:05,203 --> 00:32:28,203
+Biraz sonra inceliyor olacağız farklı kavramları. Fakat dersin yine konusundan bahsetmek gerekirse, biz az önce bahsettiğim sırayla paralel veri alışverişi, seri veri alışverişi, zamanlayıcı, dijital analog çevirici, analog dijital çevirici ve kesme kontrolcüsü olmak üzere birtakım programlanabilir çevre birimlerine bakacağız ve bunların...
+
+143
+00:32:28,980 --> 00:32:40,259
+Yine custom bir şekilde oluşturulmuş hallerini inceleyeceğiz. Son haftalara doğru da hafıza elemanlarının 8086 ile etkileşim nasıl oluyor ona bakıyor olacağız.
+
+144
+00:32:40,819 --> 00:32:47,819
+Şimdi genel olarak bir mikroişlemci tarihsel gelişimden bahsedeceğim ama bu birazcık gerilere doğru da gidiyor diye düşünebilirsiniz.
+
+145
+00:32:47,819 --> 00:32:58,819
+Temelde arkadaşlar mikroişlemcinin günümüze kadar geldiği noktada mikroişlemci yapısının atası kabul edilebilecek pek çok yapı mevcut, pek çok alet mevcut.
+
+146
+00:32:58,819 --> 00:33:05,819
+Bunlar aslında temel hesaplama birimleri olarak değerlendirirsek mikroişlemci ile ilişkili olarak düşünebiliriz.
+
+147
+00:33:06,420 --> 00:33:23,660
+Dolayısıyla şimdi başlayacağımız noktada birtakım temel hesaplama birimleri olacak. Bu bir hesaplama işlemlerini otomatize eden mekanik, daha sonrasında elektrikli, daha sonra elektromanyetik, daha sonrasında elektronik.
+
+148
+00:33:24,019 --> 00:33:35,700
+Yapılar üzerinden ve son olarak da işte yarı iletken teknolojisiyle mikroişlemcilerin üretilmesine kadar geçen bir süreçten bahsetmeye çalışan biraz sonraki slide grubunda.
+
+149
+00:33:35,700 --> 00:33:45,180
+Dolayısıyla şöyle başlayabiliriz. Temelde ne olarak bakmamız lazım? Demek ki bu işe bir işlem birimi veyahut da hesaplama birimi.
+
+150
+00:33:45,359 --> 00:33:52,359
+Hesaplama birimi olarak baktığımız zaman arkadaşlar, temel olarak aklımıza gelecek en basit, en ilkel araç bir abaküs.
+
+151
+00:33:52,359 --> 00:34:04,359
+Abaküs ile ilgili olarak işte Babil'ler tarafından kullanıldığı, zaten ilkokullarda da hani kullandığımız boncuklu abaküs yapısını ters ediyoruz.
+
+152
+00:34:04,359 --> 00:34:07,359
+Yapı bu, hatırladığınız üzere.
+
+153
+00:34:08,019 --> 00:34:30,699
+Şekilde gördüğünüz abaküs ise arkadaşlar, Çinlilerin kullanmış olduğu 16 tabanında bir abaküs. Sizce bu 16 tabanındaki abaküs için basamaklar nasıl hesaplanıyordur? Bir fikri olan var mı? Şekil şemal bu. Gördüğünüz şekil. Bu 16 tabanında kullanılıyor. Sizce buradaki her bir boncuğun değeri nasıl hesaplanıyordur?
+
+154
+00:34:48,947 --> 00:35:05,207
+Yani işte bana diyeceksiniz ki şu boncuk şu değerde, şu boncuk şu değerde. Ben de ona göre doğru yanlış diyeceğim. Bitlerle hesaplanması, yani burada her biri iki farklı değer. Bit dediğimiz zaman aslında binary digit. Bit dediğimiz şey binary digit.
+
+155
+00:35:05,207 --> 00:35:12,067
+Binary digit için ise iki farklı değer alabilen ve bu değerleri değiştirebildiğimiz bir durum söz konusu. Burada
+
+156
+00:35:12,436 --> 00:35:20,436
+Şurada görmüş olduğunuz her bir çubuk, hexadecimal bir basamak. Tamam mı? Görmüş olduğunuz her çubuk, bir hexadecimal basamak.
+
+157
+00:35:20,436 --> 00:35:28,436
+Benim size sormak istediğim ise, bu çubukta 16 tabanına göre, bu abaküsü kullandıklarına göre değerler nasıl oluşturuluyor?
+
+158
+00:35:28,436 --> 00:35:37,324
+Mesela ben burada 15 değerini üretebilir miyim bir basamakta veya f değerini üretebilir miyim bizim bildiğimiz anlamda?
+
+159
+00:35:38,931 --> 00:35:46,531
+Evet, mantık olarak yukarıdakilerin her birisi 5 kuvvetinde boncuk, alttakiler ise birer kuvvetinde boncuk.
+
+160
+00:35:46,531 --> 00:35:52,931
+Dolayısıyla şuradaki boncuyu orta sıraya getirdiğim vakit bu basamağın değeri 5 oluyor.
+
+161
+00:35:52,931 --> 00:35:59,931
+Alttan yapmış olduğum her bir ekleme 1 olarak etki ediyor. Toplamda bunun değeri 15'e kadar çıkabiliyor.
+
+162
+00:35:59,931 --> 00:36:03,931
+Değil mi? Mantık olarak bu şekilde. Yani şu enteresan olan...
+
+163
+00:36:04,371 --> 00:36:08,131
+16 tabanında bu abegüsü kullanıyor olmaları.
+
+164
+00:36:12,131 --> 00:36:22,612
+Bir başka yapı ise arkadaşlar, temel hesaplama birimi açısından çok mekanik bir hesaplama hesap makinesi aslında.
+
+165
+00:36:22,612 --> 00:36:27,171
+Bu hesap makinesi dişlilerden oluşan bir yapı.
+
+166
+00:36:27,376 --> 00:36:52,856
+Şekil olarak şurada gösterebilirim. Az önceki slide'da da bunun linki vardı. Bir animasyon olarak izlemek isterseniz de linkten takip edersiniz. Tek tek basamaklar sağdan sola doğru basamaklar giriliyor. Örneğin 28-35 toplanmak isteniyorsa iki değeri, beş değeri slide'ları paylaşabiliriz.
+
+167
+00:36:53,235 --> 00:37:16,235
+Daha sonra bunu 35 ile toplamak istediğimiz için 3 birim bu öteleniyor. Eğer bir elde oluşmuşsa, bu elde dişli yapısından dolayı bir sonraki basama otomatik olarak bir birim daha öteliyor. Dolayısıyla içerideki dişli yapısı bu elde aktarımını sağlayan bir yapı. Dolayısıyla bu bir mekanik hesap makinesi aslında.
+
+168
+00:37:20,307 --> 00:37:27,927
+Pascal tarafından üretilmiş, geliştirilmiş bir yapı, bir hesap makinesi, mekanik bir hesap makinesi.
+
+169
+00:37:33,012 --> 00:37:47,012
+Şimdi bir başka mikroişlemci geçmişiyle veya tarihçesiyle ilgili olarak bir başka yapıysa arkadaşlar, delikli dokuma kartlarının dokuma makinelerinde kullanımı.
+
+170
+00:37:47,012 --> 00:38:00,012
+Bu aslında şöyle çalışan bir yapı. Normalde burada resmi görüyorsunuz. Bu resimde de göreceğiniz üzere desen, şurada delikli bir takım kartlar üzerinden
+
+171
+00:38:00,436 --> 00:38:17,936
+Aslında makineye bildiriliyor. Makine üzerindeki şurada görmüş olduğunuz iğneler eğer ki ilgili deliğe denk gelirse, delikten düşerek oradaki ilmeğin oluşmasını sağlıyor. Eğer düşmezse orada ilmek oluşmuyor. Dolayısıyla bir desen oluşturuluyor. Bu şu anlama geliyor.
+
+172
+00:38:18,047 --> 00:38:39,847
+Dışarıdan bir programlanabilir interfeis ile bu delikli kart olarak verilmiş burada. Bu delikli kart ile makinenin nasıl çalışacağını kontrol edebiliyor olmak. Buradaki ortaya çıkan nokta bu. Bu dokumalarda deseni oluşturan bir yapı. Dolayısıyla aslında bu noktasıyla önemli.
+
+173
+00:38:40,916 --> 00:39:02,916
+Bir başka mikroişlemci geçmişinde önemli nokta ise arkadaşlar, Charles Babbage'in üretmekle görevlendirilmiş olduğu Analytical Engine. Bu aslında kavramsal olarak mekanik bir genel amaçlı bilgisayarı karşılıyor. Tam olarak bunu karşılıyor, konsept olarak bunu karşılıyor.
+
+174
+00:39:03,380 --> 00:39:16,300
+Fakat teknik sıkıntılardan dolayı çağında tamamlanamamış bir yapı. Ama baktığımız zaman mekanik ve genel amaçlı bir bilgisayarı ifade ediyor. Tam olarak buna karşılık geliyor.
+
+175
+00:39:16,300 --> 00:39:25,100
+Charles Babbage tarafından geliştirilmiş olan belirli bir noktaya kadar. Analytical Engine bununla görevli.
+
+176
+00:39:25,331 --> 00:39:35,511
+Daha sonrasında ise arkadaşlar, artık yavaş yavaş elektrik ve motor kullanımı ortaya çıkıyor.
+
+177
+00:39:35,511 --> 00:39:40,511
+Ve Pascal'ın hesap makinesinin motorlu versiyonları geliştiriliyor.
+
+178
+00:39:43,476 --> 00:40:01,076
+Şimdi bunlarla birlikte en önemli nokta ise Amerikan 1890 seçimlerindeki veyahut da nüfus sayımındaki daha doğrusu nüfus sayımındaki bilgilerin işlenmesine ilişkin olarak Hollerith tarafından bir cihaz geliştiriliyor.
+
+179
+00:40:01,248 --> 00:40:16,748
+Bu cihaz yine delikli kart mantığıyla çalışıyor. Örneğin nüfus sayımında neler soruluyor? Yaşınız nedir? Cinsiyetiniz nedir? Aylık geliriniz nedir? Kaç çocuk var? Falan filan gibi birtakım bilgiler soruluyor. Bu bilgiler delikli kartlara işleniyor.
+
+180
+00:40:17,043 --> 00:40:33,043
+Daha sonrasında ise bu delikli kartlar, Holerit'in geliştirmiş olduğu cihaz tarafından, veri işleme amaçlı olarak geliştirmiş olduğu cihaz tarafından ki bu cihaz elektrik motorlarını kullanarak geliştirilmiş elektromekanik bir yapı.
+
+181
+00:40:33,043 --> 00:40:35,043
+Elektriksel ve mekanik bir yapı.
+
+182
+00:40:41,972 --> 00:40:57,271
+Kaç sene olarak bahsediliyordu? 5 seneden daha uzun süre sonucunda değerlendirilebilecek verileri, bunun yarısı sürede değerlendirmeyi başarmasıyla oldukça ön plana çıkıyor.
+
+183
+00:40:57,271 --> 00:41:07,271
+Dolayısıyla yine bu da dışarıdan bir inputu vererek veri analizinde, elektriksel ve mekanik bir cihaz üzerinde bunların işlendiği duruma bir örnek.
+
+184
+00:41:13,396 --> 00:41:36,996
+Daha sonra ise bu Hollerit'in geliştirmiş olduğu cihazı üretmek ve tekrar dizayn etmek için Tabulating Machine isimli bir firma kuruyor. Bu firma günümüzde IBM olarak bildiğimiz uluslararası firmanın temelini oluşturuyor. Dolayısıyla bu gelişimin günümüze yansımasını da bu şekilde görüyoruz aslında.
+
+185
+00:41:38,228 --> 00:41:42,228
+Yine elektromekanik çağ ile ilgili olarak...
+
+186
+00:41:44,724 --> 00:42:05,924
+İlerleyecek olursak, artık biraz daha genel amaçlı programlanabilir, daha hızlı cihazlar geliştirilmeye başlanıyor 1940'lı yıllarda. Ki bu yıllar savaş yılları. Burada artık röle mantığıyla bir switch durumu oluşuyor. Röle mantığı aslında açarsanız ve kapatırsanız iki farklı değer alabilir.
+
+187
+00:42:12,724 --> 00:42:39,692
+Bu, elektriksel ve mekanik bir şekilde rölelerle yapılmış halini karşılıyor bu. Konrad Züze tarafından geliştirilmiş bir elektromekanik bilgisayardan bahsedebiliriz. Bu bilgisayar genel amaçlı bir bilgisayar ve röleler kullanılarak gerçeklenmiş durumda ve aslında bu Z3 olarak isimlendirilmiş olan yapı, günümüz modern bilgisayarların temelini oluşturan ilk genel amaçlı bilgisayar olarak değerlendirilebilir.
+
+188
+00:42:44,916 --> 00:42:48,516
+Yine Z3'ün öncülerinin de gelişlerini söyleyebiliriz.
+
+189
+00:42:48,755 --> 00:43:06,956
+Şimdi bir sonraki aşamada ise artık arkadaşlar cihazların sadece elektriksel ve mekanik bileşenlerden oluşması yanında artık yavaş yavaş elektronik bir takım komponentlerin de geliştirildiği ve bunların da kullanıldığı görülüyoruz.
+
+190
+00:43:06,956 --> 00:43:16,315
+Temelde neydi? Bakın bir röle var veya bir motor var. Motorla bir takım veya dişlilerle bir takım binary değerler oluşturulabiliyordu.
+
+191
+00:43:16,755 --> 00:43:24,755
+Röle ile Baino değerleri oluşturulabiliyordu. Bunların elektronik komponentlerle gerçekleştirilebileceği de görülüyor.
+
+192
+00:43:24,755 --> 00:43:32,755
+Bu seviyede bahsedeceğimiz ilk elektronik komponent vakum küpleri. Elektronik devreler dersinde de belki görmüşsünüzdür.
+
+193
+00:43:32,755 --> 00:43:39,755
+Temel olarak daha diyotlara başlamadan, yani yarı iletkenlere başlamadan önce elektronik haberleşmede en azından...
+
+194
+00:43:41,076 --> 00:44:08,635
+Elektronik haberleşme bölümünün elektronik giriş derslerinde bu şekilde başlıyor. Vakum tüpleriyle başlıyor dersler. En temel elektronik komponentler vakum tüpleri. Bunlar da yine kontrol edilebilir sivişler ama ne şekilde elektronik olarak kontrol edilebilir sivişler. Dolayısıyla artık daha az yer kaplayan, daha uzun süre çalışma imkanı bulan, daha az bozulan bir yapı olarak elektronik bilgisayarlar ortaya çıkmış oluyor arkadaşlar.
+
+195
+00:44:10,420 --> 00:44:20,420
+Bunlardan ilki Alan Turing tarafından geliştirilmiş olan Colossus isimli cihaz. Bu ilk elektronik bilgisayar olarak ortaya çıkıyor.
+
+196
+00:44:23,420 --> 00:44:35,184
+Colossus'un temel kullanım amacı ise zaten 2. Dünya Savaşı sırasında Almanların şifre sistemlerinin çözülmesi üzerine kullanılmış durumda.
+
+197
+00:44:35,184 --> 00:44:42,544
+Bu özel bir yapıdaydı ve sadece bu iş için geliştirilmişti. Başka problemler de kullanılamıyordu.
+
+198
+00:44:42,544 --> 00:44:47,984
+Ve özel amaçlı bir bilgisayar olarak değerlendirebiliyoruz bunu.
+
+199
+00:44:53,139 --> 00:45:15,139
+Tabii bu özel amaçlı bir bilgisayardı. Bir de bunun genel amaçlı ama yine elektronik komponentlerle üretilmiş bir versiyonu, bir benzeri vardı. Bu ise ENIAC olarak geçen cihaz. Bir oda büyüklüğünde, dev bir bilgisayar aslında ve genel amaçlı bir bilgisayar. Yapabildiği işlem saniyede 100 bin işlem.
+
+200
+00:45:15,476 --> 00:45:25,476
+Ağırlığı 30 tonluk bir yapı. Temel olarak yine vakum tüplerinden oluşuyor. Yani elektronik bir switch yapısına sahip olan genel amaçlı bir bilgisayar yapısı.
+
+201
+00:45:25,476 --> 00:45:38,476
+Burada çeşitli hesaplamalar gerçekleştiriliyor ve bu yapı aslında temel olarak bir elektronik bilgisayar olarak, genel amaçlı elektronik bilgisayar olarak değerlendirebileceğimiz bir yapı.
+
+202
+00:45:41,652 --> 00:45:58,652
+Burada ENIAC tarafındaki programlama, eski filmlerde görmüşsünüzdür. Telefon operatörleri bir switchi çekip başka bir sokete takarak hat aktarımı yapıyor. Tıpkı buna benzer şekilde de ENIAC'ın programlanması bu mantık çerçevesinde gerçekleşiyor.
+
+203
+00:45:59,088 --> 00:46:11,807
+CAK'ı bir yerden çıkartıp bir başka noktaya taktığınız zaman program bakışını yönlendirmiş oluyorsunuz veya bu programı cihazın programlanmasını sağlamış oluyorsunuz.
+
+204
+00:46:13,043 --> 00:46:39,583
+Dev bir cihaz olduğu için görece artık vakum tüplerinin de ömrünün de artık bu dev cihaz içerisinde yetersiz gelmeye başladığı da görülüyor. Bu noktada ise artık teknolojideki gelişmelerle birlikte düşünüldüğünde farklı bir yola doğru dallanmış olunuyor. Bu noktada ise arkadaşlar artık
+
+205
+00:46:39,775 --> 00:46:48,375
+Yarı iletken teknolojisinin geliştirilmeye başlandığını veyahut da öncelikli olarak keşfedildiğini ve daha sonra geliştirilmeye başlandığını görüyoruz.
+
+206
+00:46:49,375 --> 00:46:57,835
+Burada artık öncelikli olarak transistörler bulunuyor. Transistörler de temelde düşündüğümüz zaman elektronik olarak kontrol edilebilir.
+
+207
+00:46:58,435 --> 00:47:03,775
+Switchler aslında bunlarda. Açıp kapatma yapabiliyoruz bunlarda. Fakat bunların boyutları...
+
+208
+00:47:04,340 --> 00:47:25,340
+Çekmiş olduğu enerji, çalışma süreleri, durabiliteleri vakum tüplerine göre oldukça yüksek. Daha sonrasında ise tek bir tekil transistör yanında entegre devreler şeklinde transistörlerin bir araya getirildiği daha bütünleşik devreler geliştirilmeye başlıyor. Bu entegre devre dediğimiz yapı.
+
+209
+00:47:29,139 --> 00:47:39,739
+Bizim mikroişlemciler açısından ilk mikroişlemci olarak değerlendirebileceğimiz Intel firması tarafından geliştirilmiş olan 4004 mikroişlemcisini görüyoruz.
+
+210
+00:47:39,739 --> 00:47:45,139
+4004 mikroişlemcisi temel olarak TTL yapısında.
+
+211
+00:47:45,427 --> 00:47:59,927
+Transistörlerden oluşan, daha çok hesap makinesi tarzındaki karmaşıklıktaki işlemlerde kullanılabilecek bir mikroişlemci. İlk yarı iletken temelli mikroişlemci olarak ortaya çıkıyor.
+
+212
+00:48:00,927 --> 00:48:11,427
+4004 mikroişlemcisinin özelliklerine baktığımız zaman bu vatandaşın 4 bitlik bir mikroişlemci olduğunu görüyoruz. Şimdi mikroişlemcinin 4 bitlik olmasından neyi kastediyoruz?
+
+213
+00:48:11,668 --> 00:48:24,668
+Şunu kastediyoruz. Mikroişlemci içerisinde birtakım registerlar, yaz maçlar var. Bu yaz maçlar işlemlerin operantları olarak kullanıldıkları gibi işlem sonuçlarının saklandığı birer.
+
+214
+00:48:24,880 --> 00:48:38,880
+Temel hafıza birimleri, yine mikroişlemcinin dış dünyayla veya hafıza birimleriyle haberleşmek için kullandığı veri uçları var. Bu veri uçlarının sayısı da mikroişlemcinin tipini belirlemekte önemli.
+
+215
+00:48:38,880 --> 00:48:50,880
+4004 mikroişlemcisi için 4 adet veri ucu var. İçerisindeki yazmaçlar da 4 bitlik. Bu sebeplerden dolayı bu mikroişlemci 4 bitlik bir mikroişlemci olarak isimlendiriliyor.
+
+216
+00:48:52,880 --> 00:49:03,880
+Adresleme kapasitesi bakın ne olarak verilmiş arkadaşlar? 4096 x 4 olarak verilmiş. Bu ne anlama geliyor? Bu mikroişlemci toplamda...
+
+217
+00:49:11,188 --> 00:49:18,807
+Toplamda bir hafıza birimiyle haberleşeceği vakit bunu 4 tane adres ucu üzerinden yapıyor.
+
+218
+00:49:18,807 --> 00:49:29,307
+Yine karşı taraftaki hafıza biriminin de 4 tane data ucu olduğunu varsayacak olursak, demek ki bu hafıza biriminin her bir gözünde 4 bitlik veri saklanıyormuş.
+
+219
+00:49:29,307 --> 00:49:31,807
+O zaman size sormak istediğim soru şu.
+
+220
+00:49:32,403 --> 00:49:45,964
+4004 mikroişlemcisi toplamda kaç farklı 4096 adet hafıza gözü adres diyebildiğine göre 4004 mikroişlemcisinin kaç adet adres ucu vardır arkadaşlar?
+
+221
+00:49:47,004 --> 00:49:52,004
+4004 mikroişlemcisinin kaç adet adres ucu vardır ve data ucu vardır?
+
+222
+00:50:00,179 --> 00:50:12,659
+Şimdi hesabımızı nasıl yapmalıyız? Toplamda her bir gözü 4 bitten oluşan hafıza birimlerine erişebilecek ve bunlardan 4096 tanesine erişebiliyor. Şunu arayacağız.
+
+223
+00:50:12,659 --> 00:50:22,940
+4096 farklı durumu kaç bit ile oluşturabiliriz? Dolayısıyla şunla oluşturabiliyor. 4096'nın ikiye göre
+
+224
+00:50:23,956 --> 00:50:30,356
+Logunu aldığımız vakit bu bize aradığımız cevabı verecek. Bu da neye karşılık geliyor arkadaşlar?
+
+225
+00:50:30,356 --> 00:50:35,956
+4 çarpı 1024'e mi karşılık geliyor?
+
+226
+00:50:35,956 --> 00:50:50,076
+Bunu da şöyle yazabiliriz. 2 üzeri 2 çarpı 2 üzeri 10 şeklinde yazabiliriz. Yani 2 üzeri 12 şeklinde verebiliriz. Demek ki burada
+
+227
+00:50:50,543 --> 00:51:05,543
+Log2'sini de aldığım zaman 12. 12 adet adres ucu varmış. Bu ortaya çıkıyor. 4096 farklı göze erişebilmek için, 4096 farklı adres değeri üretebilmek için benim 12 adet adres ucuna ihtiyacım varmış.
+
+228
+00:51:06,036 --> 00:51:18,715
+Peki, 12 adet adres ucunu bulduk. Kaç adet veri ucu var? 4 adet de veri ucu var. Demek ki 4096, 4004 mikroişlemcisinin 12 adet adres ucu, 4 adet veri ucu mevcutmuş.
+
+229
+00:51:18,715 --> 00:51:28,976
+Bakın arkadaşlar, özellik olarak belirtilmiş burada. Toplamda 45 farklı unique komuttan oluşuyormuş. 45 farklı komutu varmış.
+
+230
+00:51:30,228 --> 00:51:40,728
+Günümüzdeki mikroişlemcilere baktığımız zaman varyasyonlarıyla birlikte binlere, on binlere varan komut sayısı mevcut.
+
+231
+00:51:40,728 --> 00:51:53,528
+Şimdi şöyle sorumuz şu, veri ucu neden 4? 2 değil. Şundan dolayı ben bir seferde 4 adet bitlik veri gönderiyorum. Bir seferde 4 tane veri gönderiyorum.
+
+232
+00:51:54,483 --> 00:52:18,443
+Buradaki yazım 4096 x 4 şeklindeki yazım. Bu kadar 4096 tane adres gözü, her biri de 4 bit değerinde. Dolayısıyla ben bir hafıza gözüne eriştiğimde oradan bana 4 tane bit gelecek. Ben bunları iki uç üzerinden aktaramam. 4 tane veri ucuna ihtiyacım var. Bundan dolayı adres ucu sayısı 12, veri ucu sayısı ise 4.
+
+233
+00:52:21,235 --> 00:52:41,735
+Bu şekilde cevap verebilirim. Tamam. 45 adet komut varmış. Şimdi şunu düşünelim arkadaşlar. Bu 4004 mikroişlemcisi için makine kodu karşılıklarını alıp incelediğim vakit 45 farklı komut üretebilmek istiyorsam, buradaki her bir komut kelimesinin kaç bitten oluşması gerekir sizce?
+
+234
+00:52:42,099 --> 00:52:49,599
+Şunu varsayıyorum, bu 45 komutun tamamı birbirinden farklı. Her bir komut unique komutlar, birbirinin varyasyonu değil.
+
+235
+00:52:49,599 --> 00:52:58,599
+Bu durumda 4004 mikroişlemcisi için bu varsayım çerçevesinde komut kelimesinin genişliği ne olmalı?
+
+236
+00:53:00,599 --> 00:53:08,099
+45 tane farklı komut olduğuna göre. Evet. 6 bit doğru cevap. Şundan dolayı 6.
+
+237
+00:53:08,307 --> 00:53:17,027
+6 tane bit değerim olsa elimde toplam 2 üzeri 6 yani 64 farklı komut üretebilirim buradan.
+
+238
+00:53:17,396 --> 00:53:29,796
+Eğer 5 tane olsaydı 32 farklı komut üretebiliyorum. Bu yeterli gelmiyor. 64 tane uygun. Fakat ne olmuş oldu? 19 tanesini de kullanmamış oluyorum. Kabaca bu şekilde.
+
+239
+00:53:29,796 --> 00:53:37,236
+Tabii bu sormuş olduğum soru 45 tane komut birbirinin varyasyonu olmayan birbirine göre farklı komutlar olduğu durumunda.
+
+240
+00:53:37,236 --> 00:53:38,956
+Sessiz gidiyor mu?
+
+241
+00:53:38,956 --> 00:53:40,556
+Evet, ses geliyor.
+
+242
+00:53:42,756 --> 00:53:43,756
+Soru mu var?
+
+243
+00:53:51,219 --> 00:53:53,219
+Soru varsa alabiliriz arkadaşlar.
+
+244
+00:54:04,244 --> 00:54:05,443
+Yok herhalde.
+
+245
+00:54:12,307 --> 00:54:19,987
+Temel olarak bu şekilde bahsedebileceğimiz bir mikroişlemci. Temel kullanım alanında hesap makinesi fonksiyonelitesinde durumlar.
+
+246
+00:54:20,748 --> 00:54:27,407
+Daha sonra 8008 mikroişlemcisi çıkıyor. Bu 8008'in özelliğine 8 bitlik bir mikroişlemci. Demek ki ne oluyor?
+
+247
+00:54:27,668 --> 00:54:31,248
+İçerisindeki yazmaçları 8 bitlik ve 8 bitlik veri yoluna sahip.
+
+248
+00:54:32,027 --> 00:54:36,108
+Toplamda 16 kilobyte'lik bir adresleme kapasitesine sahip.
+
+249
+00:54:36,367 --> 00:54:38,927
+Şimdi arkadaşlar, bu noktadan itibaren
+
+250
+00:54:39,251 --> 00:54:47,532
+Aksi belirtilmediği sürece, hafıza birimlerimizin her birinin 8 bitlik veri saklama kapasitesinde olduğunu varsayacağız.
+
+251
+00:54:47,532 --> 00:54:58,411
+Tamam mı? Bu noktadan itibaren tekrar söylüyorum. Hafıza birimlerinin 8 bitlik, yani 1 byte'lık veri saklama kapasitesinde olduğunu varsayacağız.
+
+252
+00:54:58,411 --> 00:55:05,411
+Öncekinde neydi? Özel bir hafıza birimi olarak düşünmüştük. Her bir göz 4 biti saklıyordu, 4004 mikroişlemcisi.
+
+253
+00:55:05,492 --> 00:55:21,092
+Ama burada her bir hafıza gözünün artık 8 bitlik veri saklayabildiğini varsayıyoruz. Bu durumda 16 kilobyte'lık veri adresleme kapasitesine sahip olan 8008 mikroişlemcisi için kaç adet adres ucundan bahsedebiliriz arkadaşlar?
+
+254
+00:55:34,099 --> 00:55:58,099
+Evet, aynı işlemi yapacağız. 16 kilobyte toplam adreslenebilecek, evet doğru cevaplar arkadaşlar, toplam adreslenebilecek hafıza kapasitesi. Ben burada kaç tane hafıza gözü olduğunu bulmaya çalışıyorum burada. Her bir hafıza gözün 1 byte kapasitesinde olduğuna göre toplamda 16k adet hafıza gözü var demektir.
+
+255
+00:55:59,027 --> 00:56:07,527
+Yani mikroişlemci veya bilgisayar tarafında eğer biz K gibi birtakım terimlerden bahsediyorsak, K terimi...
+
+256
+00:56:12,980 --> 00:56:34,480
+sunumları pdf olarak vereceğim. Evet. K dediğimiz terim arkadaşlar aslında 1024'e karşılık geliyor veyahut da 2 üzeri 10'a karşılık geliyor. Mega dediğimiz değer 2 üzeri 20'ye karşılık geliyor. Ciga dediğimiz değer 2 üzeri 30'a karşılık geliyor.
+
+257
+00:56:35,347 --> 00:56:49,027
+Dolayısıyla burada 16K dediğimize göre 16K adet hafıza gözü varsa bu ne demek? 2 üzeri 4 çarpı 2 üzeri 10. Yani 2 üzeri 14 ile ifade edebildiğimiz bir kapasite.
+
+258
+00:56:49,556 --> 00:57:05,096
+Toplamda 16k adet farklı adres değeri üretebilmek için benim kaç adet adres ucuna ihtiyacım var? 14 adet adres ucuna ihtiyacım var. Eğer elimde 14 tane bit olmuş olsa ben her birine 0 veya 1 yazarak
+
+259
+00:57:05,427 --> 00:57:15,427
+En yüksek anlamlı basamak için iki farklı değer üretebilirim. Bir sonraki basamak için yine 0 ve 1 yazarak iki farklı değer. Nokta, nokta, nokta, her bir basamak için iki farklı değer üretebilirim.
+
+260
+00:57:15,427 --> 00:57:29,427
+Yani 2x2x2x toplam 2 üzeri 14 farklı değer üretebilirim. Bu yüzden dolayı 14 adet yer veya bit ile, adres biti ile toplamda 16k adet alan adres diyebiliyoruz.
+
+261
+00:57:30,643 --> 00:57:39,323
+Baktığımız zaman bunun 48 adet farklı komutu varmış. Daha karmaşık, biraz daha genele yönelik işlemler için kullanılmış.
+
+262
+00:57:39,323 --> 00:57:48,523
+Daha sonra 8080 mikroişlemcisi var. 64 kilobayt kapasitedeymiş.
+
+263
+00:57:48,980 --> 00:58:03,980
+Tabii bu noktada sadece Intel firmasının ürettiği mikroçipler veya mikroişlemciler yok. Zamanla farklı firmalar uç uyumlu olarak bir takım mikroişlemciler de üretmişler.
+
+264
+00:58:03,980 --> 00:58:14,980
+İşte görmüş olduğunuz firmalar bunların bir kısmı hala bir şekilde hayatta ve farklı işler yapıyorlar.
+
+265
+00:58:18,867 --> 00:58:34,867
+Burada hani bir başka noktada 88 çift sıfır mikroişlemcisi yine Intel ailesinin bu aşamada bu sıralarda geliştirmiş olduğu mikroişlemcilerle uç uyumlu bir mikroişlemci. Altayir firmasının...
+
+266
+00:58:38,452 --> 00:58:50,452
+Altair 88 çift sıfır için, işte Bilgeys'in belki hayatından okumuşsanız, böyle geliştirmiş olduğu basic programlama diliyle de karşılaşmış oluyoruz.
+
+267
+00:58:50,452 --> 00:59:05,452
+Daha sonrasında işte farklı mikroişlemciler var, farklı entegre yapıları var ve sonrasında ise arkadaşlar 8086 ve bir yıl sonra da 8088 mikroişlemcileri piyasaya sürülüyor.
+
+268
+00:59:05,876 --> 00:59:20,876
+Burada her iki mikroişlemci de 16 bitlik mikroişlemciler. Biz dersimiz boyunca 8086 mikroişlemcisi üzerinde duruyor olacağız ama 8088'de bunun aslında kardeşi olarak niyetelendirebileceğimiz bir mikroişlemci.
+
+269
+00:59:20,876 --> 00:59:32,876
+Bu ikisi arasındaki temel fark şu, 8086 mikroişlemcisinde arkadaşlar toplamda 16 adet veri ucu ve 20 adet adres ucu var.
+
+270
+00:59:33,684 --> 00:59:46,284
+8088 mikroişlemcisinde ise 8 adet veri ucu var, 20 adet adres ucu var. Dolayısıyla ikisinin adres genişlikleri aynı, 1 MB'lik bir alan adres diyebiliyorlar.
+
+271
+00:59:46,284 --> 00:59:54,684
+Fakat 8088 mikroişlemcisi 16 bitlik bir veriye erişmek isterse bunu ancak iki çevrimde yapabiliyor.
+
+272
+01:00:00,000 --> 01:00:09,239
+8086'nın da yaz maçları 16 bitlik. Şimdi burada 8086'ya doğrudan 16 bitlik bir mikroişlemci demek kolay.
+
+273
+01:00:09,239 --> 01:00:17,000
+Herhangi bir sıkıntı yok ama 8088 için veri yolu 8 bitlik, 8 bitlik bir mikroişlemci olarak değerlendirilebilir.
+
+274
+01:00:17,000 --> 01:00:24,299
+İçerisindeki yaz maçlar 16 bitlik, 16 bitlik bir mikroişlemci olarak değerlendirilebilir diye söyleyebiliriz.
+
+275
+01:00:24,299 --> 01:00:26,099
+Ama temel aralarındaki fark bu.
+
+276
+01:00:26,356 --> 01:00:42,556
+Şimdi 8086 mikroişlemcisi için 16 bitlik bir mikroişlemci, toplam adresleme kapasitesi 1 megabyte yani 20 adet adres ucu var. Bu mikroişlemci ile bir komut kuyruğu geliş, komut kuyruğu mantığı da entegre edilmiş durumda.
+
+277
+01:00:44,056 --> 01:00:49,556
+8086 mikroişlemcisi çarpma ve bölme gibi karmaşık komutları içeren bir yapı.
+
+278
+01:00:49,711 --> 01:00:57,311
+Ve temel komutlarının yanında 20.000'i bulan, varyasyonlarıyla 20.000'i bulan komutları mevcut.
+
+279
+01:00:58,031 --> 01:01:06,411
+Şimdi bu noktada size şunu sormak istiyorum. Komut kuyruğu kavramı ile ilgili olarak. Komut kuyruğu kavramı şu şekilde çalışıyor.
+
+280
+01:01:06,411 --> 01:01:15,911
+Bir mikroişlemci açısından en fazla zaman alan işlerden birisi de şudur. Program hafızasına gidip, sıradaki komutu alıp,
+
+281
+01:01:15,920 --> 01:01:43,920
+Mikroişlemcinin içine getirmek. Buraya getirdikten sonra hangi işlemler yapılacak? İşte gelen bit dizisi alınacak, çözümlenecek. Buna göre hangi kontrol komutlarının yürütülmesi gerektiği çözülecek ve bunlar yürütülecek. Ama en yüksek maliyetli olan hafızaya gidip, program hafızasına gidip oradan ilgili komutları çekmek, mikroişlemcinin içerisine çekmek. İşte buradaki maliyeti azaltabilmek adına Intel tarafından şu komut kuyruğu mantığı geliştiriliyor. Komut kuyruğu mantığında ne?
+
+282
+01:01:43,920 --> 01:02:09,340
+Bir kere ben program hafızasına gitmişsem, oradan tek bir byte'i alıp dönmek yerine, çünkü bu yola çıkmak, o ilgili hafıza birimini aktif etmek biraz overhead. Bunlar ekstra işler. Dolayısıyla bir kere bunları yapmışken, oradan gidip 4 veya 6 byte'lık komutu bir seferde okuyayım ve bunu mikroişlemcinin içerisinde kuyruğa atayım şeklinde bir yaklaşım var. Bu mantık baktığınız zaman,
+
+283
+01:02:13,204 --> 01:02:36,524
+Hayır, bir bakayım. Komut kuyruğu Instruction Cache mi bu arada? Hayır, tam olarak böyle değil. Sadece sıralı olarak komutları alıyor. Instruction Cache ayrı bir yapı, komut kuyruğu ayrı bir yapı. Benzer bir fonksiyoneliteye sahip olabilirler ama bunların ikisi de yani komut kuyruğuyla Instruction Cache birlikte de bulunabilir.
+
+284
+01:02:41,460 --> 01:03:04,460
+Şimdi 8086 neden önemli? Günümüzde kullanmış olduğumuz Intel tabanlı mikroişlemcilerin geriye yönelik desteği, 8086'ya olmasak bile bu aile içerisinde desteği var. Yani şunu demek istiyorum, masa üstünde kullanmış olduğum i9 işlemcinin geçmişe yönelik komut desteği var.
+
+285
+01:03:04,724 --> 01:03:19,544
+Onun da aslında baktığın zaman 8086'ya kadar dayanan bir süreç var. Eğer 8086'yı anlarsak, bunun işleyiş mantığını öğrenirsek, genel anlamda mikroişlemcileri anlamış oluruz.
+
+286
+01:03:19,544 --> 01:03:30,524
+Fakat bununla birlikte günümüzdeki mikroişlemcilerin iç yapısı çok karmaşık. Bunları incelemek, analiz etmek, ders kapsamında vermek çok zor.
+
+287
+01:03:30,708 --> 01:03:48,347
+Dolayısıyla altyapıyı 8086 ile vermek daha uygun oluyor. Örneğin günümüzde kullanılmış olan bilgisayarlar için benzer şekilde çevre birimi analizi de yapılabilir ama bunlar biraz daha ileri konular olarak ortaya çıkıyor. Önemi bundan kaynaklı.
+
+288
+01:03:53,588 --> 01:03:55,988
+Şimdi sırayla bakmaya çalışıyorum sorulara.
+
+289
+01:04:01,780 --> 01:04:20,780
+Şimdi şöyle bir durum var. Sorumuz şu. 8086'da 20 tane adres ucu var, 16 tane veri ucu var ama daha sonraki mikroişlemcilerde, örneğin 32 bitik mikroişlemcilerde 32 adet adres ucu, 32 adet veri ucu var. Neden burada? Farklılaşmıyor da 8086'da farklı.
+
+290
+01:04:20,780 --> 01:04:27,780
+Şöyle diyebiliriz, artık 32 tane adres ucuyla adresleyebileceğin hafıza kapasitesi o kadar büyük ki o zamanki tek...
+
+291
+01:04:28,639 --> 01:04:53,240
+Hafıza kapasiteleri için yeterli kalıyor. Dolayısıyla bunu ileri geçmesine gerek kalmıyor. Baktığın zaman işte 32 bitlik mikroişlemcilerde 32 bitlik bir veriyi adres yoluna veya veri yoluna çıkmak daha kolay. Zor olan örneğin 16 bitlik bir mikroişlemcide 20 bitlik veriyi adres yoluna çıkmak, adres değeri çıkmak. Bu durumda ne yapman lazım?
+
+292
+01:04:54,132 --> 01:05:05,132
+İki tane yazmacı birlikte kullanarak 20 bitlik değer oluşturman lazım. Ama 32 bitlik bir adres yolu ve veri yolu varsa, 32 bitlik bir adres yazmacın vardır, onu direkt adres yoluna gönderirsin.
+
+293
+01:05:05,132 --> 01:05:12,132
+32 bitlik bir veri yazmacın vardır, bunu doğrudan veri uçlarına gönderebilirsin. Tasarım olarak daha kolay olur.
+
+294
+01:05:12,132 --> 01:05:13,840
+Dediğim gibi zor olan...
+
+295
+01:05:13,840 --> 01:05:25,000
+Register genişliğinden daha yüksek bir genişliğe sahip adres değeri üretmek. 8086 da bu şekilde. Bunun nasıl olduğunu da biraz sonra dersimiz içerisinde bir miktar değiniyor olacağız zaten.
+
+296
+01:05:29,619 --> 01:05:38,380
+Geriye yönelik destek nereye kadar gidiyor tam olarak bilmemekle birlikte 486'ya kadar kesin gittiğini düşünüyorum.
+
+297
+01:05:38,380 --> 01:05:45,819
+Yani destekten kasıt şu, 486 için tanımlanmış komutlar günümüz bilgisayarlarında da çalışıyor.
+
+298
+01:05:45,819 --> 01:05:48,819
+Instruction'lar, assembly komutları.
+
+299
+01:05:50,420 --> 01:05:55,619
+Çünkü şu var, günümüz bilgisayarlarında biz 64 bitlik ve 32 bitlik programlar yazabiliyoruz.
+
+300
+01:05:55,619 --> 01:06:02,420
+32 bitlik mikroişlemciler 486 veya 386 ile başlıyor. O noktaya kadar gidiyor.
+
+301
+01:06:02,420 --> 01:06:11,403
+Ama 8086, 8286 gibi 16 bitlik ve real mode kullanan
+
+302
+01:06:11,411 --> 01:06:36,251
+İşlemciler artık desteklenmiyor. Çünkü real mode kullanmak demek ne demek? Hafızanın tamamına erişebilmek demek. Günümüzde artık buna tabii ki müsaade edilmiyor. Her bir programın çalışacağı belirli bir hafıza alanı var, tanımlanmış. Buraya yetkiler tanımlanmış. Bu alan dışarısına çıkamıyor. Dolayısıyla 8086 için geliştirmiş olduğum bir program günümüzdeki bu güvenlik ve kısıtlamaları desteklemiyor.
+
+303
+01:06:38,324 --> 01:06:48,324
+Evet, şu an nerede kalmıştık? Komut kuyruğundan bahsediyorduk. Gidiyor, hazır hafıza birimini aktif etmişken oradan bir seferde...
+
+304
+01:06:49,043 --> 01:06:57,563
+4 veya 6 adet byte komutu alıp kendi mikroişlemci içerisine kopyalıyor. Bu mantık düşündüğümüz vakit anlamlı bir mantık.
+
+305
+01:06:57,563 --> 01:07:07,923
+Hangi durumda benim yazmış olduğum fonksiyonel bir kod varsa, yapısal bir kod varsa, peş peşe ardışık olarak gelecek instrakşınları çalıştıracaksam süper bir mantık.
+
+306
+01:07:08,384 --> 01:07:13,703
+Zaten bir sonraki adımda sıradaki komutu çalıştıracaktım. Onu da zaten alıp mikroişlemci içerisine koymuşum.
+
+307
+01:07:14,123 --> 01:07:16,764
+Peki bu komut kuyruğunda almış olduğum komutlar...
+
+308
+01:07:17,043 --> 01:07:24,423
+Instruction'lar ne zaman çöp olur? Bunları kullanamam. Hangi durum için bu söz konusu olur? Hangi durumda bundan faydalanamam?
+
+309
+01:07:26,043 --> 01:07:33,743
+Evet, temel olarak eğer sıradaki komut bir cam komutuysa, koşulsuz dallanma komutuysa veya bir koşullu dallanma komutuysa,
+
+310
+01:07:33,743 --> 01:07:43,723
+bu durumda benim kuyruğa çekmiş olduğum komutlar çöpe gidecek demektir. Çünkü sıradaki komuta değil, hemen bir sonraki adresteki komuta değil,
+
+311
+01:07:43,983 --> 01:07:50,983
+Farklı bir bölgedeki komuta dallanacağım demek. Dolayısıyla kuyruğa almış olduğum komutlar çöpe gitmiş oluyor.
+
+312
+01:07:50,983 --> 01:08:01,983
+Günümüzde özellikle mikroişlemciler için çalışılan konulardan bir tanesi de koşullu dallanma durumlarının gerçekleşip gerçekleşmeyeceğinin tahmini.
+
+313
+01:08:02,900 --> 01:08:09,900
+Branch Prediction olarak isimlendirdiğimiz bir çalışma alanı var ve bu mikroişlemcilerle de implemente ediliyor.
+
+314
+01:08:09,900 --> 01:08:20,899
+Buradaki amaç, kod çalıştığı sırada ilgili dallanma komutuna geldiğinde dallanacak mı dallanmayacak mı? Bu niçin önemli?
+
+315
+01:08:20,899 --> 01:08:26,828
+Kuyruğa çektiğim komutlar açısından önemli veyahut da cache açısından önemli.
+
+316
+01:08:26,931 --> 01:08:50,332
+Bu gibi durumlardan dolayı önem arz ediyor. Yine bir başka kavram ise arkadaşlar, incelersiniz, internetten bakarsınız. Dallanmasız kod yazımı. Değişik bir konu. Dallanmasız kod yazımı. Bir takım kontroller var. Ama burada şey komutu yok mesela. Koşullu dallanma komutu yazılmadan.
+
+317
+01:08:52,239 --> 01:08:57,739
+Program yazılmaya çalışılıyor. Bununla ilgili olarak da ilgisi olan internetten baksın.
+
+318
+01:08:58,739 --> 01:09:09,039
+Yine 8086 ve 8088 ile ilgili olarak devam edecek olursak, bu iki yapıda arkadaşlar Complex Instruction Set Computer mimarisindedir. Ne demek bu?
+
+319
+01:09:09,439 --> 01:09:20,039
+Complex Instruction Set Computer'ın karşılığı ne? Onun karşılığı da arkadaşlar Risk mimarisi. Bu da Reduced Instruction Set Computer olarak geçiyor.
+
+320
+01:09:27,475 --> 01:09:50,975
+Resist Instruction Set Compute. Ters yazmışım, onu düzeltmiş olun. Bu ikisi birbiriyle karşılıklı gelen iki farklı mimari. Sisk mimarisindeki mantık ne? Sisk mimarisindeki mantık, karmaşık komutlarımız var burada. Yani çarpma bölme gibi karmaşık işlemler var. Bunları destekleyen dolayısıyla donanımlar da var.
+
+321
+01:09:51,380 --> 01:10:15,140
+Bunu söyleyebiliriz. İkincisi, SIS mimarisinde komutların gerçeklenme süreleri birbirinden farklı. Örneğin, bir toplama işlemi 2 clock cycle'da gerçekleşirken, bir çarpma işlemi 10 clock cycle'da gerçeklenebilir. Bundan yana bir sıkıntı yok. Bu şekilde tasarlanmış zaten. Ve bir başka özellik ise şu olarak ortaya çıkıyor.
+
+322
+01:10:15,536 --> 01:10:21,896
+Komutların yürütülme süreleri birbirinden farklı ve komutların boyutları birbirinden farklı.
+
+323
+01:10:21,896 --> 01:10:37,896
+Örneğin, AX ve BX yazmaçlarını toplamayı tanımladığımız bir komut, 2 byte yer kaplarken, hafızanın belirli bir bölgesindeki veriyi okumaya ilişkin MOV komutu 5 byte yer kaplayabilir.
+
+324
+01:10:37,896 --> 01:10:41,336
+Dolayısıyla komutların boyutları da birbirinden farklı.
+
+325
+01:10:41,716 --> 01:10:51,636
+Baktığımız zaman böyle karmaşık komutlar, karmaşık süreler, karmaşık boyutlar ortaya çıktığı vakit adının kompleks olması normal.
+
+326
+01:10:51,636 --> 01:11:00,756
+Altta yatan durum ise şu, kontrol devresi, yani bu mikro işlemci içerisindeki kontrol devreleri daha karmaşık bir şekilde tasarlanmak durumunda.
+
+327
+01:11:01,043 --> 01:11:27,863
+Reduce Instruction Set, Risk mimarisinde nasıl? Risk mimarisindeyse arkadaşlar, her bir komutun yürütülme süresi bir veyahut da çok özel durumlarda iki clock cycle. Her bir komutun genişliği eşit. Yani burada toplama, çarpma olmuyor genelde ama toplama işleminin de, shift işleminin de, lojik işlemlerinde boyutu ve işleme süreleri eşit.
+
+328
+01:11:28,692 --> 01:11:35,592
+Baktığımız zaman SISK mimarisi daha çok genel amaçlı mikroişlemciler için kullanılıyor.
+
+329
+01:11:35,592 --> 01:11:42,731
+RISK mimarisi ise daha temel seviyede, mikrodenetleyici seviyesinde daha düşük seviyeli işler için tanımlanmış.
+
+330
+01:11:43,551 --> 01:11:47,471
+8086 mikroişlemcisinin SISK mimarisinde olduğunu söylemiştik.
+
+331
+01:11:47,572 --> 01:11:52,891
+Peki RISK mimarisinde örnek olarak verebileceğiniz bir mikroişlemci veya mikrodenetleyici var mı?
+
+332
+01:11:55,092 --> 01:11:56,311
+Biliyor muyuz?
+
+333
+01:12:01,939 --> 01:12:24,339
+Evet, dolayısıyla bizim cep telefonlarında kullanmış olduğumuz mikro denetleyiciler veya Sistem On Chip olarak da geçiyor onlar. Bunlar temelde RISK mimarisinde. İncelediğiniz vakit buradaki komut genişliklerinin, komut yürütme sürelerinin, komut karmaşıklıklarının SISK mimarisine göre daha düşük seviyede olduğunu görebiliyoruz.
+
+334
+01:12:25,555 --> 01:12:40,555
+Temel olarak devam edecek olursak bu noktadan. Bu özelliklerden bahsetmiştik. Önemli olan nokta 8088'in 8 adet veri ucu var. 8086'nın 16 adet veri ucu olmakla birlikte her ikisinde de yaz maçlar 16 bitir.
+
+335
+01:12:42,555 --> 01:12:48,555
+Daha sonrasında çıkan mikroişlemciler 8286 mevcut.
+
+336
+01:12:52,243 --> 01:13:05,884
+Artık erişilebilir kapasite 16 MB'a çıkıyor. Dolayısıyla 8086 ile benzer komutlarla 16 MB'lik bir alana erişebilmek için komutlarda ve yaz maçlarda birtakım farklılıklar oluşması gerekiyor.
+
+337
+01:13:06,579 --> 01:13:14,579
+Daha sonra 80386 var, 32 bitlik bir mikroişlemci. Toplamda 4 GB'lık bir adresleme kapasitesine sahip.
+
+338
+01:13:14,579 --> 01:13:25,579
+32 adet adres ucu olduğuna göre 2 üzeri 32, 2 üzeri 30 GB'ydı, 2 üzeri 2 daha kaldı, 4 GB'lık bir kapasiteye ifade etmiş oluyor.
+
+339
+01:13:33,235 --> 01:13:44,515
+Core işlemciler, Core-E işlemciler olmak üzere günümüze kadar gelen yapıyı oluşturmuş oluyor bu mikroişlemci ailesi.
+
+340
+01:13:44,515 --> 01:13:58,556
+Şimdi bu noktada genel bir takım mikroişlemci tanımları var arkadaşlar. Bunları karşılaştırmalı olarak vereceğiz ve sizden de bunların tanımlarını isteyeceğim.
+
+341
+01:13:59,347 --> 01:14:07,307
+Öncelikli olarak alü diye bir kavram var. Alü dediğimiz kavram nedir? Geniş halini biliyor muyuz?
+
+342
+01:14:10,707 --> 01:14:23,707
+Evet, aritmetik, lojik, unit. Yaptığı işlem demek ki bunun neymiş? Bir takım aritmetik ve lojik işlemler. Peki bunun CPU'dan veyahut da mikroişlemciden bir farkı var mı? Kim kimi kapsıyor sizce?
+
+343
+01:14:30,387 --> 01:14:35,948
+Evet, CPU içerisinde bir veya mikroişlemci içerisinde alü birimi var.
+
+344
+01:14:35,948 --> 01:14:40,087
+Alü birimi işlemlerin gerçekleyendiği birim.
+
+345
+01:14:40,188 --> 01:14:45,148
+Peki, mikroişlemci veya CPU dediğimiz yapının içerisindeki alt birimler neler?
+
+346
+01:14:46,247 --> 01:14:47,188
+Onları söyleyebilirim.
+
+347
+01:14:47,268 --> 01:14:52,907
+Yani bir mikroişlemcinin içinde neler var dediğimizde 3-4 temel birimi söylememiz gerekiyor.
+
+348
+01:14:53,548 --> 01:14:55,608
+Bunlardan birisinin alü olduğunu söyledik.
+
+349
+01:14:59,220 --> 01:15:15,220
+Bir kontrol birimi var. Evet. Kontrol birimi var. ALU var. Başka ne var? Burada işlemlere operant olarak giren bir takım hafıza elemanları vardı. Bunlara yazmaç veya register deniyor. Bunlar var.
+
+350
+01:15:17,220 --> 01:15:23,220
+Instruction decoder dediğimiz yapıyı aslında kontrol birimin içerisinde dahil edebiliriz.
+
+351
+01:15:24,307 --> 01:15:28,188
+Ve son olarak da arkadaşlar, bunları birbirine bağlayan yollar var.
+
+352
+01:15:29,228 --> 01:15:35,868
+Temel olarak bu dört kavramın bir mikroişlemci veya CPU yapısı içerisinde olduğunu söylememiz gerekiyor.
+
+353
+01:15:37,247 --> 01:15:47,868
+Dolayısıyla ALU dediğimiz yapı işlemlerin, aritmetik veya lojik işlemlerin gerçekleştiği lojik birimler, lojik yapılar, devreler olduğunu söyleyebiliriz.
+
+354
+01:15:48,720 --> 01:16:06,120
+Register dediğimiz yapı, yani yazmaçlar neler? Yazmaçlar, hafıza hiyerarşisinde işlem birimine veyahut da mikroişlemci içerisinde olup, en küçük kapasiteli, en yüksek hızlı hafıza birimleri olarak ortaya çıkıyorlar.
+
+355
+01:16:15,024 --> 01:16:28,304
+Yine bunlar birtakım işlem sonuçlarının saklanması için kullanılan hafıza birimleri. Bu mikroişlemci içerisinde yer alan hafıza birimleri bunlar. Bu noktayla, bu itibarla önemli.
+
+356
+01:16:28,304 --> 01:16:42,344
+Peki, yine bir register tipi olan akümülatörden bahsedebiliriz. Şurada akümülatör kavramı var. Akümülatör kavramıyla register kavramı birbirine hangi noktada yaklaşıyor ve uzaklaşıyor? Bunu söyleyebilir miyiz?
+
+357
+01:16:42,868 --> 01:16:51,048
+Mesela daha önceden SM'li dili alan arkadaşlar için 8086 açısından akümülatör olan yazmacın adı nedir?
+
+358
+01:16:57,747 --> 01:17:10,247
+Evet, ax olarak isimlendirdiğimiz yazmaç 8086 için akümülatör yazmacı. Peki akümülatörle herhangi bir genel amaçlı yazmaç birbirinden nasıl ayrılıyor? Hangi noktada ayrılıyor?
+
+359
+01:17:12,247 --> 01:17:13,747
+Fikri olan var mı?
+
+360
+01:17:15,747 --> 01:17:17,747
+Hız olarak baktığımızda...
+
+361
+01:17:18,323 --> 01:17:27,623
+Yani her ikisine de veri yazma, yani veriyi okuma veya veriyi yola çıkma hızlarının eşit olduğunu söyleyebilirim kabaca.
+
+362
+01:17:29,323 --> 01:17:32,823
+Evet, aradığımız cevap bu.
+
+363
+01:17:33,323 --> 01:17:44,323
+Şimdi mikroişlemci, 8086 mikroişlemcinin instruction setine baktığımız zaman bazı özel durumlar var. Mesela aynı işlemi ben BX yazmacı üzerinden gerçeklemeye çalışsam.
+
+364
+01:17:44,724 --> 01:17:57,963
+İşlemin clock cycle süresine bakıyorum. 5 clock cycle sürüyor. Aynı işlemi AX'de gerçekleyebileceğim özel bir komut daha var. Ona bakıyorum, o 3 clock cycle da gerçekleştiriyor.
+
+365
+01:17:57,963 --> 01:18:07,484
+Baktığım zaman BX'de gerçekleştirmeye çalıştığım komut 2 byte yer kaplıyor. AX'de yapmak istediğim komut 1 byte yer kaplıyor.
+
+366
+01:18:07,604 --> 01:18:27,604
+Dolayısıyla akümülatör özel bir yazmaçtır. Akümülatörün özelliği şuurdan ortaya çıkıyor. Akümülatöre ilişkin olarak özel bir takım komutlar var. Bunun kendine özel bir takım donanımları var ki bu işlemleri daha hızlı gerçekleyebiliyoruz akümülatör kullanırsak.
+
+367
+01:18:28,372 --> 01:18:35,372
+Böyle bir durum ortaya çıkmış oluyor. 8086 içinde akümülatör olarak kullanılan yazmaç AX yazmaç.
+
+368
+01:18:35,372 --> 01:18:48,172
+Yani eğer ki ben yapmış olduğum işlemleri SM'li komutuyla belirlemiş olduğum işlemleri mümkün olduğunca akümülatör yazmacı üzerinden gerçekleştirirsem daha hızlı çalışan bir program yazmış olurum.
+
+369
+01:18:49,076 --> 01:18:58,076
+Peki arkadaşlar, bir başka kavram grubuna geldik. Bu kavram grubu ise CPU, mikroişlemci, mikrodenetleyici ve sistem on chip.
+
+370
+01:18:58,076 --> 01:19:05,076
+Sistem on chip'i belki sona bırakabiliriz ama CPU, mikroişlemci ve mikrodenetleyici arasındaki farkı nasıl ortaya koyabiliriz?
+
+371
+01:19:27,412 --> 01:19:29,412
+Var mı? Fikri Allah.
+
+372
+01:19:36,148 --> 01:19:38,148
+Temel olarak o zaman şöyle bahsedelim.
+
+373
+01:19:39,148 --> 01:19:45,148
+CPU dediğimiz yapıyla mikroişlemci kavramını şöyle birbirleriyle karşılaştırarak verelim.
+
+374
+01:19:45,148 --> 01:19:50,148
+Mikroişlemci dediğimiz yapı, yarı iletken teknolojisinin kullanımıyla birlikte
+
+375
+01:19:50,148 --> 01:20:01,148
+CPU içerisinde görev alan ayrık lojik devrelerin, ayrık entegrelerin tek bir chip içerisinde sunulmuş hali.
+
+376
+01:20:01,460 --> 01:20:17,239
+Yani CPU mikroişlemcinin dağınık hali. Öyle düşünebiliriz. Yani bir anakart üzerinde işte alü birimi ayrı bir entegre olarak var, yazmaçlar ayrı birer entegre olarak var gibi düşündüğümüz vakit bu CPU'yu karşılıyor.
+
+377
+01:20:21,716 --> 01:20:24,976
+Cevap olarak bir şey, bir cevap var bakalım.
+
+378
+01:20:29,427 --> 01:20:52,667
+Öncelikli olarak şöyle ilerleyelim. CPU ile mikroişlemciyi karşılaştıralım. Daha sonra da mikroişlemci ile kontrolörü karşılaştırırız. Demeye çalıştığım gibi mikroişlemci bir merkezi işlem biriminin bütün fonksiyonel gruplarının, birimlerinin tek bir entegre içerisinde sunulmuş hali. Tek bir çipte sunulmuş hali.
+
+379
+01:20:53,171 --> 01:21:10,411
+CPU ise daha genel bir kavram. CPU aslında daha ilkel. ALU'nun, register'ların, ilgili yolların, kontrolcülerin ayrık entegreler olarak bir kart üzerinde, anakart üzerinde bulunduğu durumu da kapsıyor. Teknik olarak böyle düşünebiliriz.
+
+380
+01:21:10,771 --> 01:21:30,172
+Peki ne demiştik? Mikroişlemci tek başına enerji verdiğimizde çalışır halde olmaz. Bunun bir takım yardımcı devrelere ihtiyacı var. Neler? Saat darbesi üreteci, yolları kontrol eden bir takım yardımcı devreler, çevre birimleri, hafıza birimleri gibi yardımcı devrelere ihtiyacı vardı, entegrelere ihtiyacı vardı.
+
+381
+01:21:30,868 --> 01:21:39,268
+İşte mikro denetleyici dediğimiz yapı ise bütün bu çevre birimlerini tek bir çip içerisinde sunan yapı olarak ortaya çıkıyor.
+
+382
+01:21:39,268 --> 01:21:43,668
+Mikro denetleyici ile mikro işlemciyi kabaca şöyle karşılaştırabiliriz.
+
+383
+01:21:43,668 --> 01:21:48,268
+Mikro işlemci daha genel geçer bir işlem birimi.
+
+384
+01:21:48,467 --> 01:22:15,467
+Mikrodenetleyici ise daha basit işlemleri, daha günlük ve tekrarlı işleri gerçeklemek için kullanılan bir birim. Genel olarak bu şekilde düşünebiliriz. Mikroişlemciye örnek olarak işte Motorola'nın 6800'ünü, 8086, Intel 8086'yı, Core-E işlemcileri verebiliriz. Bir mikrodenetleyici örneği biliyor musunuz isim olarak? Şu anda günümüzde de kullanabileceğimiz.
+
+385
+01:22:15,796 --> 01:22:24,656
+Mesela Atmel bir mikro denetleyici çip üreticisi ve bunun çeşitli mikro denetleyicileri mevcut.
+
+386
+01:22:24,656 --> 01:22:34,036
+Yine Arduino'yu duymuşsunuzdur. Arduino'da da bir kart olarak sunulmakla birlikte burada da bir mikro denetleyici yapısı kullanılıyor.
+
+387
+01:22:34,036 --> 01:22:43,096
+Mesela Atmega mikro denetleyicileri de kullanılıyor burada. Yine bilenler için PIK mikro denetleyicileri mevcut.
+
+388
+01:22:43,539 --> 01:22:55,840
+Bunlar daha çok şekil şemal olarak da hatırlayacak olursanız, daha çok tekrarlı, günlük ve daha basit işleri yürütmek adına kullanabileceğimiz daha düşük kapasiteli işlem birimleri.
+
+389
+01:22:55,840 --> 01:23:01,539
+Genel amaçlı bir mikroişlemci ile karşılaştırırken kabaca gözümüzde bu şekilde canlanması uygun.
+
+390
+01:23:01,615 --> 01:23:14,815
+Peki System on Chip ne? System on Chip aslında bizim cep telefonlarımızda kullandığımız yapının genel ismi. System on Chip neler içeriyor? Bir mikro denetleyici yapısı var. Şöyle düşünelim.
+
+391
+01:23:15,636 --> 01:23:31,116
+Bir telefonun fonksiyon gösterebilmesi için mikro denetleyicinin olması lazım, Wi-Fi modülünün olması lazım, GSM modülünün olması lazım, ekran sürme modülünün olması lazım gibi dokunmatik kontrol biriminin olması lazım.
+
+392
+01:23:31,116 --> 01:23:35,116
+Bunların özellikle işlemci birimi...
+
+393
+01:23:35,347 --> 01:23:44,747
+Wi-Fi, işte haberleşme modülü ve GSM modüllerinin tek bir çip içerisinde bir sistem olarak sunulduğu durumlar System on Chip olarak isimlendiriliyor.
+
+394
+01:23:45,707 --> 01:23:51,127
+Kavram olarak bu şekilde, yani mikro denetleyiciden biraz daha kapsamlı bir yapıyı ifade ediyor.
+
+395
+01:23:52,567 --> 01:23:58,287
+Bir sonraki kavram, iki tane kavram peş peşe geliyor arkadaşlar.
+
+396
+01:23:58,287 --> 01:24:01,767
+Bakın, Harvard mimarisi ve von Neumann mimarisi.
+
+397
+01:24:02,292 --> 01:24:15,292
+Bu iki mimari temel olarak bir mikroişlemcinin program hafızasının veri hafızasıyla ayrı veya birleşik olmasıyla alakalı.
+
+398
+01:24:16,292 --> 01:24:20,292
+Şöyle ifade edebiliriz, burada çizimle ilgili bir şey var mı bakayım.
+
+399
+01:24:29,268 --> 01:24:32,487
+Tam ekrandan çıkınca kayboluyor ama şunu tekrar kala.
+
+400
+01:24:40,467 --> 01:25:04,127
+Temel olarak şöyle düşünebiliriz arkadaşlar. Şurada bir mikroişlemcimiz var. Bu mikroişlemci için bir veri hafızası var. Bunu data olarak isimlendiriyoruz. Bir de burada program hafızası var. D ile P birbirine benzedi ama şu program hafızası, burası veri hafızası. Eğer mikroişlemci için, bu da mikroişlemcimiz, hiç güzel yazamadım buraya ama.
+
+401
+01:25:04,724 --> 01:25:14,384
+Mikroişlemci program hafızasıyla ayrı bir yol üzerinden, veri hafızasıyla ayrı bir yol üzerinden haberleşiyorsa, bu mimarinin adı arkadaşlar Harvard Mimarisi.
+
+402
+01:25:16,484 --> 01:25:23,203
+Dolayısıyla burada ayrı bir program adres ucu olması lazım, ayrı bir veri adres ucunun da olması lazım.
+
+403
+01:25:23,203 --> 01:25:29,923
+Bu yapı kontrol açısından daha karmaşık bir yapı. İki farklı yol grubu için ayrı kontrolcüler içermesi lazım.
+
+404
+01:25:30,195 --> 01:25:36,695
+Ama baktığınızda vakit veri hafızasıyla program hafızası birbiriyle karışmıyor. Böyle bir avantajı var.
+
+405
+01:25:46,612 --> 01:25:47,307
+Nasılsın?
+
+406
+01:25:51,444 --> 01:26:07,844
+Diğer bir grup ise arkadaşlar, Von Neumann mimarisi. Bu mimaride ise program hafızasıyla veri hafızası aynı yolları kullanıyor. Bunun kabaca şekline bakacak olursak, bir adet mikroişlemcim var.
+
+407
+01:26:17,743 --> 01:26:28,743
+Aynı yol üzerinden mikroişlemci ile haberleşiyorlar. Dolayısıyla aynı kontrol yolu üzerinden de veya adres ve veri uçları üzerinden de kontrol ediliyor oluyorlar.
+
+408
+01:26:28,743 --> 01:26:36,863
+Bunun özelliği ne? Faydası ne? Kontrol birimleri daha az sayıda fakat veri hafızasıyla
+
+409
+01:26:37,296 --> 01:26:49,696
+Program hafızası birbiriyle karışabilir. Zaten düşündüğünüz zaman program RAM'de çalışıyor, veri de RAM'de. Dolayısıyla birbirleriyle etkileşim haline girebilirler bazı dikkatsiz durumlarda.
+
+410
+01:26:49,696 --> 01:26:58,776
+Böyle bir durum var. Peki, 8086 mikroişlemci hangisine dahil? 8086 von Neumann mimarisinde.
+
+411
+01:27:06,420 --> 01:27:14,020
+Veyahut da PIK mikro denetleyicisi demiştik. Bunlar da Harvard mimarisindeki mikroişlemci örnekleri.
+
+412
+01:27:14,020 --> 01:27:22,260
+Bir sonraki kavram grubumuz arkadaşlar, RISC, SISC ve EPIC şeklindeki mikroişlemci mimarileri.
+
+413
+01:27:22,260 --> 01:27:26,980
+SISC ve RISC'ten bahsetmiştik. Bir de EPIC mimarisinden bahsedelim.
+
+414
+01:27:26,980 --> 01:27:34,100
+EPIC mimarisi paralel olarak bir takım komutların hızlı bir şekilde yürütülmesine özelleşmiş komutlar.
+
+415
+01:27:34,239 --> 01:27:47,440
+Risk ve SISK mimarilerinde temel olarak birden fazla kor olsa bile bu korlarda hangi komutların yürütüleceği, paralel bir şekilde yürütülebileceği donanım tarafından belirleniyor.
+
+416
+01:27:47,731 --> 01:28:03,211
+Epic mimarisinde ise paralel olarak yürütülebilecek komutlar yazılım seviyesinde compiler tarafından, compiler seviyesinde belirlendiği için birbiriyle paralel yürütülebilecek komutlar, komut yürütülmeden önce belli olmuş oluyor.
+
+417
+01:28:03,211 --> 01:28:12,811
+Temel örneği, İtanyum mimarisi vardı. Intel'in İtanyum mimarisi vardı. Bu İtanyum Epic mimarisinde onu örnek olarak verebiliriz.
+
+418
+01:28:13,300 --> 01:28:18,880
+Bir başka karşılaştırma grubu arkadaşlar, Little Indian ve Big Indian.
+
+419
+01:28:35,283 --> 01:28:48,283
+Şimdi burada basitlik bizim temel olarak hareket etme kaynağımızı belirlemiyor. Soru üzerine söylemeye çalışıyorum bunu.
+
+420
+01:28:48,283 --> 01:29:01,283
+Neticede karmaşık bir kompleks instruction seti gerçeklemen lazım. Bunun arka taraftaki basit bir mikrokoda dönüşüyor olması bile bunların peş peşe yürütülmesiyle gerçekleşiyor.
+
+421
+01:29:02,448 --> 01:29:13,448
+Ama riskte böyle bir yapı zaten kendiliğinden var. Basit bir yapı. Dolayısıyla çalışma alanları veyahut da çalışma mantıkları birbirinden bu noktada farklılaşmış oluyorlar.
+
+422
+01:29:13,448 --> 01:29:23,448
+Tam olarak hiç cevap veremedim herhalde ama soruyu da tam anlayamadığımı da düşünüyorum.
+
+423
+01:29:33,524 --> 01:29:39,524
+Yani yürüttükleri kod ve instruction set kapsamları falan birbirlerinden farklılar yani.
+
+424
+01:29:40,524 --> 01:29:42,524
+Kabaca bu şekilde söyleyebilirim.
+
+425
+01:29:49,268 --> 01:29:56,268
+Bir başka tanım grubumuz ise arkadaşlar, Little Endian ve Big Endian mantıkları.
+
+426
+01:29:56,268 --> 01:30:08,268
+Little Endian ve Big Endian mantıklarını şöyle tanımlayalım. Normalde ne demiştik? Her bir hafıza biriminin, her hafıza gözünün 8 bitlik veri kapsadığını biliyoruz, varsaymıştık.
+
+427
+01:30:12,560 --> 01:30:28,560
+16 bitlik, 32 bitlik veya 64 bitlik veri tipleri tanımlayabiliyoruz. Tanımlamış olduğumuz 32 bitlik bir veriyi eğer ki ben 8086 mikroişlemcide hafızaya yerleştirmek istersem şöyle bir durumla karşılaşıyorum.
+
+428
+01:30:28,560 --> 01:30:32,560
+Örneğin elimdeki veri şu olsun.
+
+429
+01:30:38,547 --> 01:30:44,188
+Böyle bir hexadecimal değer olsun. Tamam mı? Bu kaç basamaklı bir değer? Kaç bitlik bir değer?
+
+430
+01:30:45,967 --> 01:30:52,107
+İşte 4 bit, her birisi 4 bit. Dolayısıyla 8 tane basamak olduğuna göre 32 bitlik bir değer var burada.
+
+431
+01:30:52,367 --> 01:30:56,728
+Ve ben bu değeri eğer ki 100h adresinden itibaren saklamak istersem...
+
+432
+01:30:59,787 --> 01:31:01,067
+Burası 100h...
+
+433
+01:31:03,127 --> 01:31:04,407
+Şurada şey yok muydu ya?
+
+434
+01:31:06,612 --> 01:31:08,395
+Burası 101H.
+
+435
+01:31:15,507 --> 01:31:34,507
+Şurası 102 adresi, burası da 103 adresi. Eğer bu şekilde hafıza yerleşimim varsa ve ben 8086'da çalışıyorsam 100H adresine verimizin en düşük anlamlı byte'ı yerleşecek. Yani 78H değeri yerleşecek.
+
+436
+01:31:40,880 --> 01:32:01,880
+3-4H değeri yerleşecek, 103 değerine de 1-2H değeri yerleşecek. Yani eğer ki birden çok byte'dan oluşan bir veri tanımım varsa, bunun hafızada saklanma şekli, eğer düşük anlamlı byte düşük adrese yerleşecek şekilde oluyorsa, bunun adı arkadaşlar little andian mantığı oluyor.
+
+437
+01:32:01,880 --> 01:32:03,307
+Tamam mı? Little andian mantığı.
+
+438
+01:32:03,667 --> 01:32:11,347
+8086 Little Ending'in mantığında çalışıyor. Yani şunu örnek olarak verecek olursak, 8086 Little Ending'in mantığında çalışıyor.
+
+439
+01:32:11,347 --> 01:32:17,667
+Peki Big Ending'in mantığı nasıl? Big Ending'in mantığını da yine şekil olarak çizmeye çalışalım.
+
+440
+01:32:22,484 --> 01:32:24,884
+bir hafıza bölgemiz var.
+
+441
+01:32:29,524 --> 01:32:41,884
+Yine bunun adreslerine baktığımız vakit adres değerlerimiz yine 100H, 101H, 102H ve 103H şeklinde gitsin.
+
+442
+01:32:42,323 --> 01:32:58,323
+Ve ben bu sefer Big End'in mantığında çalışan bir mikroişlemcide 1, 2, 3, 4, 5, 6, 7, 8, 8, 32 bitlik verisini saklamak istiyorsam, bu durumda en yüksek anlamlı veriminin en yüksek anlamlı byte'ı en düşük adreste saklanıyor.
+
+443
+01:33:10,452 --> 01:33:23,452
+Gelir bilirse eğer, 7, 8H değeri gelmiş oluyor. Bu da arkadaşlar Big End'in mantığında çalışan bir mikroişlemci veri saklama mantığını oluşturmuş oluyor.
+
+444
+01:33:27,060 --> 01:33:52,992
+Son olarak da şu buslara değinip ondan sonra araya gireriz. Şimdi bir mikroişlemci içerisinde veri yolu, mikroişlemcinin uçlarıyla kullanabileceğimiz veri yolu, adres yolu ve kontrol yolu var. Bunlar mikroişlemcinin uçlarından fiziki olarak dış dünyaya çıkan uçlar. Bu uçların hepsi arkadaşlar bütün çevre birimlerine, bütün hafıza birimlerine ulaştırılıyor.
+
+445
+01:33:52,992 --> 01:34:02,172
+Düşündüğümüz zaman bütün çevre birimleri aynı yola bağlı olduğuna göre bunların aynı anda hatta veri çıkması bir çakışmaya sebebiyet verecek.
+
+446
+01:34:02,172 --> 01:34:13,172
+Dolayısıyla temel olarak bir mikroişlemci yapısı düşündüğümüz vakit, mikroişlemcinin her seferinde sadece tek bir cihaz, çevre birimi veya hafıza birimiyle konuşabiliyor olması lazım.
+
+447
+01:34:13,332 --> 01:34:21,532
+Bunu da vermiş olduğum adres değerine göre sadece o cihazı aktif eden adres çözümleme devreleriyle sağlıyoruz.
+
+448
+01:34:21,532 --> 01:34:32,731
+Örneğin ben bir komut yürüttüm. Bu komut yürüttüğümde bir adres değeri çıktı. Bu adres değerine göre adres çözümleme devresi hangi cihazla ilgili konuşmak istediğimi belirleyip,
+
+449
+01:34:38,547 --> 01:34:52,547
+Disable yapıyor. Bu şekilde mikroişlemci sadece o cihazla konuşabiliyor. Ama dediğim gibi, mikroişlemciden çıkan veri, adres ve kontrol işlerinin hepsi bütün cihazlara eriştiriliyor. Hepsine gitmiş oluyor.
+
+450
+01:34:55,547 --> 01:35:01,452
+Şimdi arkadaşlar, bu noktada dersin başında söylediğim gibi bir ara verelim.
+
+451
+01:35:01,524 --> 01:35:26,204
+Yarım saatlik bir ara olsun. Daha sonra tekrar saat 4'te devam edeceğiz. Ama saat 4'te devam edebilmek için buradan değil de dersin yine online Yıldız Edü TR'de şu var arkadaşlar. Laboratuvar dersi için ayrı bir online sınıf var. Oradan bağlanmamız gerekiyor. Tamam mı? Dersin ikinci bölümüne oradan devam edeceğiz.
+
+452
+01:35:46,899 --> 01:35:50,220
+Sonradan gelen arkadaşlar için tekrar hatırlatmış olalım.
+
+453
+01:35:54,319 --> 01:36:01,500
+Mutlaka piyazaya giriyorsunuz, derse kayıt alıyorsunuz. Laboratuvarlarla ilgili bütün duyurular buradan yürüyecek.
+
+454
+01:36:01,500 --> 01:36:05,079
+Derse katılım için aktivasyon kodunu da yazdım.
+
+455
+01:36:05,079 --> 01:36:10,460
+Ders saat 4'te devam edecek arkadaşlar fakat 4'teki ders için...
+
+456
+01:36:10,707 --> 01:36:19,207
+Tekrar online Yıldız Edüter'e girip laboratuvar için oluşturulmuş olan online derste katılmanız gerekiyor. Tamam mı?
+
+457
+01:36:24,404 --> 01:36:26,404
+Bununla ilgili herhangi bir sorusu olan var mı?
+
+458
+01:36:33,363 --> 01:36:40,403
+Akkivasyon kodu şurada. Mikro 2020 ünlem işareti şu. Tekrar atıyorum.
+
+459
+01:36:46,355 --> 01:36:51,355
+Tamam. Peki, saat 4'te tekrar görüşmek üzere diyorum.
+
+460
+01:36:55,475 --> 01:37:05,475
+Sormak istediğiniz bir şey varsa şu an için sorabilirsiniz. Yoksa bu kaydı durduracağım. Daha sonra saat 4'teki kaydı başlatacağım.
+
+461
+01:37:15,444 --> 01:37:17,764
+PDF falan paylaşmayacağız arkadaşlar.
+
+462
+01:37:27,891 --> 01:37:29,420
+Başka soru var mı?
+
+463
+01:37:33,332 --> 01:37:39,832
+Valla şu anda herhalde basım aşamasında yakın zamanda çıkması lazım. Basıldığı zaman duyuracağım sizi.
+
+464
+01:37:51,475 --> 01:38:00,195
+Evet, başka soru yok herhalde. Saat 4'te laboratuvar dersinin grubuna, hayır, Piazza'dan katılmayacağız.
+
+465
+01:38:00,915 --> 01:38:10,735
+Piazza dersin, şöyle, daha sonraki haftalarda laboratuvarlarımız olacak. Laboratuvarlar için duyuruları Piazza'dan takip edeceksiniz. Onun için o linki verdim.
+
+466
+01:38:11,735 --> 01:38:18,155
+Tamam, Piazza laboratuvar duyurularını takip etmek için. Bugünkü dersimizde ise şu şekilde yapıyoruz.
+
+467
+01:38:18,576 --> 01:38:35,496
+Normal ders saatinde bir buçuk saat kadar ders yaptık onu. Yarım saat ara vereceğiz. Daha sonra tekrar dersin, bu sefer laboratuvar saatini de ders için kullanacağız bugünlük. Onun için de tekrar online Yıldız Edü TR'ye gireceksiniz. Ben dersi sonlandırdıktan sonra saat dörtte.
+
+468
+01:38:39,028 --> 01:38:55,028
+Saat 4'te tekrar Google Classroom'a gireceksiniz. Oradan da bu sefer saat 4'te başlayan laboratuvar sınıfına katılacaksınız.
+
+469
+01:38:59,315 --> 01:39:10,115
+Şimdi size göndermiş olduğum Piyaza linkine tıklıyorsunuz. Bir de aktivasyon kodu verdim yine duyuruda. Aktivasyon kodunda giriyorsunuz. Piyazaya kayıt oluyorsunuz.
+
+470
+01:39:10,115 --> 01:39:21,115
+Piyaza ders duyurularının yapılacağı yer. Özellikle laboratuvar duyuruları, laboratuvar planlaması ve takvimi oradan duyurulacak. Dolayısıyla Piyazaya mutlaka kayıt oluyorsunuz.
+
+471
+01:39:21,587 --> 01:39:30,547
+Daha önceki senelerde asistan arkadaşlar piyazayı kullanmışlar, memnun kalmışlar. Dolayısıyla bu dönemde piyazayla devam ediyoruz.
+
+472
+01:39:36,819 --> 01:39:44,180
+Saat 4'te yine online Yıldız Edi.tr'den görüşmek üzere. Şimdilik bu dersi sonlandırdım.

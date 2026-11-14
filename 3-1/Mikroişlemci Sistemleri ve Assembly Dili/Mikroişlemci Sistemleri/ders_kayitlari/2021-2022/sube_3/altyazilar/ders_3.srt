@@ -1,0 +1,2039 @@
+1
+00:02:26,548 --> 00:02:29,548
+Merhaba arkadaşlar. Ses geliyor mu?
+
+2
+00:02:30,548 --> 00:02:31,548
+Geliyor hocam.
+
+3
+00:02:31,548 --> 00:02:33,548
+Tamam.
+
+4
+00:02:34,548 --> 00:02:39,548
+Bir an önce başlayacağız. Soru gelmiş. Ne zaman başlayacağız diye. Hemen başlıyoruz.
+
+5
+00:02:45,395 --> 00:02:47,795
+Şimdi şurada kalmıştık.
+
+6
+00:03:41,587 --> 00:03:58,587
+Arkadaşlar, Classroom kuruldu bir. Classroom'un linkini siz de paylaştın mı hatırlamıyorum ama paylaşmamışım. Şimdi paylaşacağım Classroom'un linkini. Classroom'a iyi olalım, Classroom'da paylaşacağız sonları.
+
+7
+00:03:58,587 --> 00:04:02,587
+Şimdi kodunu gönderiyorum size.
+
+8
+00:04:10,771 --> 00:04:19,171
+Evet, Classroom'a girelim, bu konuda sınıfa üye olalım. O sınıfın duvarında paylaşılacak sunumlar zaten.
+
+9
+00:04:24,500 --> 00:04:27,500
+Geldi mi? İtiriş yapabiliyor musunuz?
+
+10
+00:04:46,708 --> 00:04:53,108
+Tamam, Classroom'a katılabiliyorsanız, oradan sunumlar paylaşılacak.
+
+11
+00:04:57,843 --> 00:05:04,843
+Evet, derse başlayalım arkadaşlar. Geçen hafta bir giriş yaptık zaten tarihi süreci vesaire anlattık.
+
+12
+00:05:04,843 --> 00:05:13,843
+İşte normalde mikroişlemci mimarilerindeki 8 bit, 4 bit, 16 bit veya veri yolu, adres yolu nedir ne değildir bunlara bakmıştık.
+
+13
+00:05:13,843 --> 00:05:21,771
+Bu haftada artık daha spesifik olarak bu dersin tapsamında kullanacağımız 8086'nın...
+
+14
+00:05:21,843 --> 00:05:33,843
+İç yapısına bakacağız. İç yapısındaki portları analiz edeceğiz. Portların ne aşamada kullanacağımız şu an üstünden böyle çok detaya inmeden, değinmeden yani çok fazla bahsedeceğiz.
+
+15
+00:05:33,843 --> 00:05:45,843
+Çünkü yeri geldiğinde zaten ileriki haftalarda şey yapacağız ya uygulamalar vesaire yaparken o portlara ait daha detaylı bilgi verilecek.
+
+16
+00:05:58,228 --> 00:06:06,228
+Şimdi 8086 bir 16 bitlik, mikroişlemci demiştik hatırlarsanız. 16 bit olmasında...
+
+17
+00:06:38,708 --> 00:06:42,708
+Arkadaşlar, sonunda bir donmak söz konusu. Bir saniye.
+
+18
+00:07:39,060 --> 00:07:57,060
+8086'ın bir 16 bitlik mikroişlemci olduğundan bahsettik. Ne demekti 16 bitlik mikroişlemci? Aslında iç yapısındaki kaydediciler, yani register'lar, register'ların 16 bitlik veriyi tutabildiğinden bahsediyoruz.
+
+19
+00:07:57,060 --> 00:08:03,060
+Ayrıca ne dedik? 16 bitlik bir mikroişlemci ama 20 bit de adresleme...
+
+20
+00:08:03,423 --> 00:08:16,903
+modu var. Yani adresleyebildiği bit sayısı 20 bit. Bu ne demekti? 250 den bizim aslında 1 megabayt mı oluyordu arkadaşlar? Neydi tam olarak?
+
+21
+00:08:16,903 --> 00:08:26,024
+2 üzeri 11 kaydı, 250 de 1 megabayt'i söylüyordu.
+
+22
+00:08:26,259 --> 00:08:41,740
+1 MB'lik bir adreslemeye, 1 MB'lik bir depolama birimine adresleyebileceğini söylüyorduk. Bunu da izah etmiştik. Bunları izah etmiş miydik arkadaşlar? Dekoder mantığını anlatmış mıydık?
+
+23
+00:08:42,611 --> 00:08:57,611
+Şimdi hem yüz yüze hem online olunca şimdi orada yüz yüzeyken anlattık mı yoksa burada mı anlattık, orada mı anlatmadık biraz karışıyor. O noktalarda gene geri dönük verirseniz iyi olur.
+
+24
+00:08:57,611 --> 00:09:10,611
+Yani 20 bitin aslında bir dekoder mantığıyla 20'ye 1 milyon dekoder, 20 çarpı 1 milyon. Nasıl 3 çarpı 8 dekoder varsa, yani 3 bit ile aslında 8 tane farklı yeri adresli.
+
+25
+00:09:10,611 --> 00:09:28,611
+20 bitli bir adresleme bacağıyla da, 20 tane adresleme girişiyle de, 250 tane, yani 1 megabyte, 1 milyar tane, 1 milyon tane hücre blonu adres edebileceğimizi anlatmıştık.
+
+26
+00:09:28,611 --> 00:09:31,611
+16 bitlik register ne demekti?
+
+27
+00:09:34,272 --> 00:09:44,272
+0, 0, 0, 0, her biri 16, yani hexadesimal olduğunu düşünürsek, evet, 2 üzeri 20, 1 megabyte.
+
+28
+00:09:44,272 --> 00:09:49,272
+Megabyte, yani megabit deyip duruyorum, megabyte oluyoruz.
+
+29
+00:09:49,272 --> 00:09:54,272
+Baktığımızda, 4 bit, yani normalde 16 bit.
+
+30
+00:09:58,196 --> 00:09:59,196
+Ve selama.
+
+31
+00:10:08,436 --> 00:10:12,996
+Mikrofonun yok mu [öğrenci]? Yani şu an yazdıkların nedir, ne değildir hiç.
+
+32
+00:10:20,244 --> 00:10:47,423
+Hocam şimdi 2 üzeri 17 byte 1 megabyte'a eşit değil hesaplarıma göre. Hani 2 üzeri 20 bit, 2 üzeri 17 byte'a eşit, o da 2 üzeri 10 çarpı 2 üzeri 7. 1024 byte 1 kilobyte eşit, 2 üzeri 7 kilobyte geliyor benim hesabıma göre. Yaklaşık olarak.
+
+33
+00:10:48,500 --> 00:11:12,619
+Yani, 2 üzeri 10'un 1K olduğunu biliyoruz değil mi? Evet. 2 üzeri 20 nedir? 1M'dir değil mi? Ama bit, megabyte. Bir saniye, 2 üzeri 21M midir? Evet. Tamam. Byte kısmı nereden geliyordu?
+
+34
+00:11:15,892 --> 00:11:41,471
+Biz demiştik ya hatırlarsan, Memori bloğunun her bir hanesi byte, yani 8 bit bilgi içerdiğini düşünerek, biz aslında 1 milyon tane adres bloğunu adresliyoruz. Yani 350'den 1 milyon tane enable ucu var. Yani 1 milyon satır çarpı 8 bit, yani 1 byte, 1 megabyte elde ediyoruz. Değil mi?
+
+35
+00:11:41,908 --> 00:12:05,548
+2 üzeri 20'nin 1 megabyte olduğunu söylemiyorum. 2 üzeri 20'nin 20'sinin 1 M'ye tekabül geldiğini, her bir hücrenin de, geçen hafta bunu söylemiştik, her bir hücrenin de şu etapta, normalde 16 bitlik bir mikroişlemcide 2 byte de yapılabilirdi ama donanımlı olarak bunun mümkün olmadığını ama her bir hücrenin byte yapısında olduğundan dolayı,
+
+36
+00:12:05,759 --> 00:12:14,939
+Çünkü mikroişlemci bunu destekliyor. Bizim için 1 milyon çarpı byte, yani 1 megabyte'lık bir adresleme söz konusu demiştik.
+
+37
+00:12:20,019 --> 00:12:35,220
+Yani burada byte ve bit mevzusu tamamen bizim vücudu bloğunun. Çünkü bizim adresleme uzayımız bu. Yani tutta mikroişlemcinin bir byte ile hesabı yok. Mikroişlemcinin byte hesabı, memorisinin byte ile alakalı.
+
+38
+00:12:35,220 --> 00:12:38,220
+O bitler sadece byte'ların...
+
+39
+00:12:38,368 --> 00:12:42,968
+Adresi nereden başladığına tekabül ediyor.
+
+40
+00:12:42,968 --> 00:12:45,968
+Evet, adreslemi yolu zaten.
+
+41
+00:12:45,968 --> 00:12:49,968
+Aynen. Tamam, ben, tamam, haklısınız.
+
+42
+00:12:50,768 --> 00:12:59,568
+Adres uzayından bahsetmiştik geçen hafta ve 20 bitin olduğundan dolayı ve dekoderin 20 bit, yani şöyle bir dekoder düşünürsek...
+
+43
+00:13:03,220 --> 00:13:17,900
+0'dan 19'a kadar bir bit, bit sayısı 20x1M'lik bir dekoderden bahsediyoruz burada değil mi? Yani 1 milyon tane farklı hücrenin adreslenebileceğini söylüyordu bize 20 bitlik adres bacağının olması.
+
+44
+00:13:24,436 --> 00:13:52,436
+Adres uzayı, yani bu boyutla alakasını ben hiç bahsetmedim. Zaten de adres uzayı demek. Yani adresleyebileceğimiz bit sayısı 20 tane, o da bize 1 milyon tane farklı noktanın adreslenebileceğini söylüyor. Her bir nokta 1 byte olduğu için de 1 megabaytlık adres uzayını desteklediğini söyler. Bu aynı bilgisayarlarda da var. 32 bitlik işlemci 4 gigabaytten fazla desteklemez. Çünkü neden? 2 üzeri 32 tane farklı lokal.
+
+45
+00:13:52,436 --> 00:14:06,276
+Her bir lokasyonun byte değeri olduğunu düşünürsek 4 GB yapar. Neyse konumuza dönelim. 16 bitlik bir register olduğunu ve bu 16 bitin ne olduğunu söylemiştik.
+
+46
+00:14:06,276 --> 00:14:16,276
+0, 0, 0'dan F, F, F, F verilerini alabilecek ki bunların her biri zaten 4 bitlik olduğunu düşünürsek yine yazdığımızda.
+
+47
+00:14:17,908 --> 00:14:45,908
+16 bitlik bir register'dan bahsediyoruz. Yani F, F, F, F verisini saklayabileceğimiz register'lara sahip maksimum. Minimumda da 0, 0, 0, 0, normal binary karşılığı zaten hep 0, 16 tane dijitin 0 olduğu bir sayıyı saklayabilen, iç yapısındaki register'larda, kaydedicilerde bunları saklayan mimari olduğunu söylemiştik. 16 bitlik register'ları da.
+
+48
+00:14:45,908 --> 00:14:50,908
+16 bitki müşter işlemcinin bu demek olduğunu bahsetmiştik.
+
+49
+00:14:50,908 --> 00:14:52,908
+Şimdi iç yapısına baktığımızda...
+
+50
+00:14:52,908 --> 00:14:58,908
+Şimdi bu... şu gitmiyor mu ya? Şu ekranın şu...
+
+51
+00:14:58,908 --> 00:15:06,908
+Şimdi şu tarafa baktığımızda burası iç yapısındaki register'ları gösteriyor.
+
+52
+00:15:06,908 --> 00:15:08,748
+Şu üst kısım...
+
+53
+00:15:08,755 --> 00:15:15,755
+AL, AH, EL, BH vs. Bunlar genel amaçlı registerlar diye tabir edeceğimiz register buluyor.
+
+54
+00:15:15,755 --> 00:15:21,755
+Şimdi bunlar normalde 16 bit ama biz 16 biti gösterirken AX diyeceğiz.
+
+55
+00:15:21,755 --> 00:15:28,755
+Ama 8086 bize şunu da söylüyor, sen illa 16 bitin hepsini adreslemene gerek yok.
+
+56
+00:15:28,755 --> 00:15:34,755
+Eğer ki A register'ının ilk 8 bitini kullanmak istiyorsan, direkt AL,
+
+57
+00:15:35,087 --> 00:15:44,087
+Son 8 bit, yani en yüksek anlamlı MSB'ye ait olan 8 biti kullanmak istiyorsan AH'yı kullanabilirsin diyor.
+
+58
+00:15:44,087 --> 00:15:53,087
+Yani ayrı ayrı 8 bit, 8 bit, toplamda da AX'i kullanarak 16 bitlik bir register adreslemesi yapabilirsin diyor.
+
+59
+00:15:53,087 --> 00:16:02,087
+Yani mesela ben bir değer atacağım, değerin değeri 0.0.23 diye bir değer, bir register'a atacağım.
+
+60
+00:16:03,220 --> 00:16:18,899
+İşte bunu atarken tutup da bütün register'ı adreslemene gerek yok diyor. Sadece AL veya BL veya CL ile, ki 8 biti sadece anlamda belli, diğeri 00. Bunu oraya gönderebilirim anlamında.
+
+61
+00:16:18,899 --> 00:16:31,220
+Ayrı ayrı değer atamam mümkün. Yani adres kısa yolum AL ve BL veya AH, BH, yüksek anlamlı, düşük anlamlı diye ayrı 8'er bitten adres...
+
+62
+00:16:31,220 --> 00:16:58,220
+Bu ayrım. Başka 4 tane de pointer ve index registerlarım var. Bunları step step anlatacağız ne olduğunu. Bir de bu tarafta hani normal mikroişlemcinin execution uniti dışında bir ekstra uniti daha var. Gene burası da mikroişlemci ama burada segment registerları var. Segment registerları önemli.
+
+63
+00:16:58,676 --> 00:17:11,155
+Neden önemli? Şimdi biz şunu dedik. Burada bir çelişki var. 20 bit adres yolum var. Aha, şurada gözüktüğü gibi. Ama 16 bit veri, yani rejistörlerim 16 bit.
+
+64
+00:17:11,155 --> 00:17:25,875
+Yani ben bir adres yazmak istiyorum. Örnek veriyorum. Şöyle, F3E diye bir adres. Yani böyle bu adresi olan memori de bu adrese bir şey yazmak istiyorum. Şurada da main memory olsun. Tamam mı?
+
+65
+00:17:25,887 --> 00:17:38,788
+Yani sonuçta bunlar 20 bit şu an değil mi? Bunun nasıl 20 bit olduğu ile alakalı bir soru var mı? Her biri 4 bitten, 5 çarpı 4'ten 20 bitlik bir nümerik değer bu. Binary'ye karşılık gelen.
+
+66
+00:17:38,788 --> 00:17:46,288
+1 ve sıfırladığım için 20 tane bitin bulunduğu bir değer. Ben bunu adres yoluna gömebilirim. Evet, doğru. Ama...
+
+67
+00:17:46,708 --> 00:17:56,708
+Nasıl gömeceğim ki? Adres yoluna gömmem demek ki, benim registerdan adres yoluna veri yazmam. Çünkü işlemci ilk registerdaki değeri adres yoluna yazabilir.
+
+68
+00:17:56,708 --> 00:18:05,708
+Ama registerim benim 16 bitmiş. İşte bu noktada şöyle bir yaklaşım yapılmış, memory segmentlere ayrılmış.
+
+69
+00:18:07,763 --> 00:18:21,023
+İşte kod segment diyeceğiz. Şu alana kod segment diyeceğiz. İlk gönderdiğim 4 bit kod segmentin, yani segment verisini verecek. Sonradan bir daha göndereceğim veri.
+
+70
+00:18:22,163 --> 00:18:40,163
+16 bit daha, 4 dijit daha gönderdiğinde, ilk 16 bit benim için segmenti belli edecek. Sonra bir daha gönderdim. 16 bit de bu segmentin içerisindeki offseti, yani bu segmentin şu kadar satılıncı bilgisi diyeceğim ve öyle adresi edeceğim.
+
+71
+00:18:50,163 --> 00:19:09,923
+ekstra segment dediğimiz noktamızı oluşturacak. Bu bizim birinci 16 bitlik. Registerdaki verimi oluşturacak. Sonra ben bunların içerisine girdikten sonra o başlama noktasından itibaren kaç offset'e kaydırdığımı ikinci bir 16 bit veriyle tanımlayacağım.
+
+72
+00:19:10,548 --> 00:19:25,048
+İşte buraya AX diyebilirim, BX diyebilirim, CX diyebilirim. Hani bizim tanımlayabileceğimiz 20 bit, 2 cycle'da 16 bitlik register'lar kullanarak tanımlanabilecek.
+
+73
+00:19:26,548 --> 00:19:37,048
+Çünkü 16 bitlik, yani şöyle 5 haneli bir sayı yazamıyorum. İlk başta kod segmenti gönderip data segmenti veya hangi segment ait olduğunu belirtiyorum.
+
+74
+00:19:37,299 --> 00:19:51,099
+Sonra buna bir summation işlemiyle, burada bir modül var, bu ilk gönderdiğimi 10'la çarpıyorum, sonraki gönderdiğimi üstüne ekliyorum. Böyle bir algoritması var.
+
+75
+00:19:51,099 --> 00:19:59,900
+İleride değineceğiz, sadece burada bir segment mimarisinin neden oluştuğunu, şu anlık anlayalım, neden oluştuğu bize bir 4.
+
+76
+00:20:00,000 --> 00:20:21,387
+16 bitlik registerlarımızda 20 bit oluşturulamaz tek saykıda. İlk başta bir segment verimiz oluşur, onu bekletiriz. Sonraki 16 bit ile segmentin içerisinde kaç basamak ilerleyeceğimiz verisi gelir. İkisini toplar, adres yolumuzu böyle oluştururuz.
+
+77
+00:20:23,955 --> 00:20:34,955
+Burada başka hani şu anlık bahsetmemiz gereken bayraklar var. Bu bayraklar bizim için çok önemli olacak kod yazarken. Bu haftada... Evet, buyurun.
+
+78
+00:20:34,955 --> 00:20:40,955
+Bu ilk 20 bit gönderirken ilk 16 bitini gönderiyoruz. Sonra da 4 bit gönderiyoruz ya...
+
+79
+00:20:40,955 --> 00:20:43,955
+4 bit değil. Sonra da 16 bit gönderiyoruz.
+
+80
+00:20:45,491 --> 00:20:48,572
+Yani 2 kere 16 bit gönderiyoruz. Evet buyurun.
+
+81
+00:20:48,572 --> 00:20:54,971
+Ama toplamda aslında 20 bit göndermek için 2 tane 16 cycle şeklinde yani 2 cycle şeklinde.
+
+82
+00:20:54,971 --> 00:21:03,412
+Evet, evet. Yani şuradaki summation işleminde ilk gönderdiğimiz 16 biti hexadesimal veya dismal diye...
+
+83
+00:21:03,680 --> 00:21:16,080
+Düşünmeyin, hexadesimal 10 ile, 2.16 ile olur. Çarpılıyor, işlemine geleceğiz biraz sonra. Çarpıldıktan sonra bu aslında, bu 4 hane bir hane sola kaydırılıyor.
+
+84
+00:21:16,080 --> 00:21:23,280
+Ya bu bizim için 5 şey, 20 bitin ilk 16 hanesini sola kaydırarak...
+
+85
+00:21:23,508 --> 00:21:27,748
+Sonraki 16'yı buna ekleyerek şuradaki biti oluşturmamızı sağlıyor.
+
+86
+00:21:27,748 --> 00:21:42,628
+Ben şeyi soracaktım. Normalde rejistirler 16 bitlik olduğu için iki kere 16 biti yolluyoruz ya, onun yerine ikinci göndereceğimizi 16 bit yerine 8 bitle yollasak, hani AXBX yerine AHBH'yi kullansak.
+
+87
+00:21:42,963 --> 00:21:55,563
+Ama o zaman da şu olmaz mı? Normalde sen bir segmenti 16 bit ile tanımladın. Yani ilk 16 biti gönderdin. 16 bitin değeri nedir? 0 ile 64K.
+
+88
+00:21:56,963 --> 00:22:06,563
+Değil mi? Yani ilk benim için segment aralığım bu. Bunun içerisinde, tamamen bunun içerisinde kullanabilecek. Yani nasıl anlatalım?
+
+89
+00:22:09,875 --> 00:22:28,476
+Sıfırıncı segment diyelim, verisi, adresi şu. Birinci segment, sen diyorsun ki 8 bit göndereyim, birinci segmentin adresi 8 bit, sadece alayı gönderdiğimde ve bunu full kullanırsam, burası ff kadar olacak. Yani ikincinin başlangıcı şu olacak.
+
+90
+00:22:37,460 --> 00:22:55,680
+Şu 1.00'dan başlamasını sağlamamız lazım. Yani burası mesela 0.00, birinci sekmek 1.00'dan başlaması için içerisindeki offset, yani şu 4'ünün F, F, F, F'e kadar ikinci seferde adreslenebiliyor olması lazım.
+
+91
+00:22:56,276 --> 00:23:10,276
+Yani bu da aslında 16 bitlik bir sayının ikinci sayı kılda da gitmesine. Daha doğrusu şöyle anlatalım, segmentleri minimize ederek içeriyi ufaltabiliriz, AL'ler o zaman kullanılabilir.
+
+92
+00:23:10,276 --> 00:23:20,276
+Ama dezavantajı ne? Sekmentleri ufalttığımız için bu sefer de işte 4 bitin yani o almaz yani boş kalır buralar.
+
+93
+00:23:20,627 --> 00:23:31,127
+Daha erken biter adreslenmemiz. Ama işte tam olarak 16 bit, 16 bit, 2 cycle yaparsak bu şu demek oluyor.
+
+94
+00:23:47,119 --> 00:23:59,119
+veya 0 yazalım. Şuradaki şu alanı full kullanabilmem için ikinci cycle'da 16 bit göndermem gerekiyor. Bu birinci segment, segment 1.
+
+95
+00:23:59,119 --> 00:24:12,971
+Segment 2 için de, burası 0 oldu artık, bir sonraki segmente geçtim. 1, f, f, f, f olması lazım. Yani yine tam file kullanabilmem için 16 biti göndermem lazım ikinci cycle'da.
+
+96
+00:24:13,652 --> 00:24:23,152
+Anlaşılabildi mi? Bir de neden peki segmentleri bu kadar ayırıyoruz? Çünkü 21, yani buranın bir...
+
+97
+00:24:23,859 --> 00:24:32,619
+Yani bir milyon tane satırın segmentlere tam oturabilmesi için yani en sondaki segmenti yazalım şuraya.
+
+98
+00:24:32,619 --> 00:24:44,939
+E, F, F, F, F, F oldu. Sonra en sondaki segment F, 0, 0, 0, 0 ile geldi. Son segment de F, F, F, F olacak değil mi? Şurası da son segment.
+
+99
+00:24:50,804 --> 00:24:56,124
+15 tane, yani aslında 16 bitlik ilk haneyi göndermem lazım.
+
+100
+00:24:57,587 --> 00:25:20,907
+Birazcık daha belki ileride oturacak ama segmentlerin tam olarak memori'yi cover etmesi yani kaplayabilmesi ve her bir segmentin içerisindeki adresin offseti yani işte şu segmentte başlayacak ve şu satılınca adres diyebilmemiz için iki tane 16 bitin arka arkaya gitmesi en efektif çözü.
+
+101
+00:25:20,991 --> 00:25:30,672
+Çünkü ötek türlü, eğer ki segmentlerin aralarını bu kadar, işte 16 bit değil de 8 bit gönderseydik, o zaman segment header'ım buradan başlayacaktı.
+
+102
+00:25:30,672 --> 00:25:38,591
+Yani artık şöyle olacaktı, örnek verelim. Bununla başladım. Sonraki segmentim, hani sen diyorsun ya, 8 bit gitsin.
+
+103
+00:25:38,591 --> 00:25:47,151
+Şuraya kadar geldi, önceki, bitti burası bir segment. Segment 1, sonra segment 2 buradan başladı. Şurayı...
+
+104
+00:25:47,279 --> 00:25:52,799
+Kaplatamayacaktım. Çünkü adres, blom yetmeyecekti. Anlatabildim mi?
+
+105
+00:25:52,799 --> 00:25:56,319
+Evet hocam, gayet net, teşekkür ederim.
+
+106
+00:25:56,319 --> 00:25:57,319
+Tamam.
+
+107
+00:25:57,683 --> 00:26:20,683
+Yani tam tamına kaplayabilmesi için bizim 20 adresin 1 MB'lık veya 1 milyon tane satırı 2 kere 4'e 4 gideceğim ki ilk 4'ün maksimumu yani 1 satır kaydırımı, desimalde 10 katı bir sonraki segmente tekabül edecek ve en son segmentim benim hafıza bloğumda son satırı oluşturacak.
+
+108
+00:26:21,428 --> 00:26:30,428
+gibi bir ayarlamayla böyle bir yapı yapılmış. Yani aslında 20 bit data, 20 bit adres olsa bunlara hiç gerek yok.
+
+109
+00:26:30,428 --> 00:26:39,980
+Ama işte 16 bitlik bir register ve 20 bitlik bir adresleme buluyor olması, böyle bir ayarlamanın yapılmasını gerekli kılıyor diyoruz.
+
+110
+00:26:40,756 --> 00:26:48,756
+Bayraklardan bahsettik. Bu bayrakların bir 8-10 tanesine değineceğiz. Daha da fazlalar. 16'ya yakın bayrak var ama hepsine değinmeyeceğiz.
+
+111
+00:26:48,756 --> 00:27:07,628
+14 tane vardı herhalde 8086'da. Hepsine değinmeyeceğiz. Bunlara kısaca bakacağız ve program yazarken de bu bayraklarda bazı şeyleri kontrol ederek tabur almasını, hesabın yapılmasını sağlamamız için o bayrağı okumamız gerekecek.
+
+112
+00:27:08,596 --> 00:27:10,996
+Yaz maçlardan bahsettik zaten.
+
+113
+00:27:11,596 --> 00:27:17,596
+Birinci register'ımız bizim en çok kullandığımız ki ismi akumülatör diye geçer genel olarak.
+
+114
+00:27:17,596 --> 00:27:23,596
+AX register'ı. Dediğimiz gibi AL ve AHI bunu da ayrı ayrı kullanabiliyoruz.
+
+115
+00:27:23,596 --> 00:27:29,503
+Low, Akumülatör, Height olarak 8 bitlik olarak kullanabiliyoruz.
+
+116
+00:27:29,503 --> 00:27:42,963
+Veri transferlerini de çok kullanacağız. Zaten bu biraz da transfer işlemleri için kullanılan bir register. Ayrıca çarpma ve bölme işlemlerini de elde operandı için kullanacağız, gizli operandı için kullanacağız.
+
+117
+00:27:42,963 --> 00:27:51,963
+Ve giriş çıkış komutlarında da yani bir porttan data okumak için de D-registeri ile beraber bunu da kullanacağız.
+
+118
+00:27:53,715 --> 00:28:01,635
+B register'ı genelde yani dizi şeklindeki bir veri bloğu varsa kullanacağımız bir register olacak.
+
+119
+00:28:01,635 --> 00:28:06,915
+Base register diye geçiyor zaten. Bunda da 8255 olarak kullanabiliyoruz.
+
+120
+00:28:07,316 --> 00:28:22,675
+C-Registry count'tan aklınıza gelebilir. Hani sayma, öteleme için kullanacağımız şey. Aslında ötelemeden kastığımızda şu, mesela bunu iki kere sağ ötele demek aslında iki kereden dolayı bir countlama işlemi oluyor.
+
+121
+00:28:22,675 --> 00:28:35,316
+Onun için aslında iki kere sağ ötele dediğimde ve normal sıfır veren bir veride şöyle bir şey elde edeceğiz mesela örnek verelim. Hani bunu aslında iki kere sağ ötele olayında iki kere...
+
+122
+00:28:35,316 --> 00:28:45,675
+Core bir loop döngüsünde kaydırma yaptığımızdan ötürü kullanacağız. Yani aslında bir loop döngüsünde bir counting işlemi varsa işte...
+
+123
+00:28:46,451 --> 00:28:49,251
+Normal programlarda for döngüleri var.
+
+124
+00:28:49,251 --> 00:28:57,751
+Diyelim işte for'u 1'den 5'e kadar bilmem ne saydır vs. dediğimizde CX register üzerinden increment, decrement yapacağız.
+
+125
+00:28:57,751 --> 00:29:09,652
+Ve bu CX register'ın 0 olduğu durumda bizim için veya 5 olduğu durumda neyse işte top nokta döngüden çık diyebileceğimiz kontrol register'ımız olacak.
+
+126
+00:29:09,652 --> 00:29:13,152
+Bu yüzden önemli bir register bizim kullanacağımız bir register olacak.
+
+127
+00:29:15,892 --> 00:29:21,211
+D register'ı biraz daha data register'ı olarak da akılda kalabilir.
+
+128
+00:29:21,211 --> 00:29:28,291
+İşte yine bir port numaraları yani port, o porttan veri oku dediğimiz durumlarda kullanacağımız register olacak.
+
+129
+00:29:28,291 --> 00:29:33,771
+Ve bölme çarpmalarda bölünen sayıyı tutmak için kullanacağımız register olacak.
+
+130
+00:29:34,996 --> 00:29:54,336
+SP, Stack Pointer'dan geliyor. Yani, yağın yazmacı. Yağın, zaten biraz sonra bir daha geleceğiz konu ama zaten en son girenin ilk çıktığı yapılar, en üst işareti yani orada en son dediğimiz konseptte neyin en son olduğunu tutan register bu aslında Stack Pointer.
+
+131
+00:29:54,336 --> 00:30:00,000
+Ve segment olarak şimdi şöyle bir ayarlama yapmışlar.
+
+132
+00:30:00,000 --> 00:30:13,500
+adrese ulaşmak istiyorsanız, aslında ilk başta o 16 bit ilk göndereceğiniz registerlardan gönderilecek değer, SS dediğimiz Stag Segment'e adresleyecek.
+
+133
+00:30:13,500 --> 00:30:26,500
+Sonraki gönderileceğimiz de zaten SS adres dediğimiz için Stag Pointer'ı gösterecek. Yani SS ile kullanılan spesifik bir adresleme yazmacı.
+
+134
+00:30:29,844 --> 00:30:39,844
+Her zaman çift değeri gösterir. Bu da önemli. Çünkü şöyle, bahsetmiştik hatırlarsanız, bizim 16 bitlik registerlarımız olmasına rağmen,
+
+135
+00:30:39,844 --> 00:30:48,844
+her bir satır hücre buluyor, 8 bitlik, yani 1 byte'lik veri tutuyor. Öyle olunca, hani biz bütün register'ın içerisindekini S'ye atmak istediğimizde,
+
+136
+00:30:49,587 --> 00:31:02,067
+Bir kere stack pointer arttırmıyoruz, iki kere arttırmamız gerekiyor. Çünkü işte ilki AL'yi yazdık, sonra AH'yi yazdık, sonra stack pointer gösterecek en son eklenen yere.
+
+137
+00:31:02,067 --> 00:31:09,788
+Öyle olduğu için de iki kere arttırma veya azaltma, yani popta arttırma, pushta azaltma yapmamız gerekecek.
+
+138
+00:31:12,372 --> 00:31:21,971
+Base pointer'larımız normalde bu da SS ile kullanılıyor, stack üzerindeki yani stack segment kısmındakilerle.
+
+139
+00:31:21,971 --> 00:31:29,771
+Bunu da genelde işte bir indekslerde de kullanacağız, bir pointer olsun hani bir indeksten sonra yazılsın diye.
+
+140
+00:31:29,771 --> 00:31:33,971
+Parametre aktarırken de kullanacağız, örneklerimiz olacak.
+
+141
+00:31:35,796 --> 00:31:45,596
+Source Index ve Destination Index, iki tane aslında indeks dizi komutlarında kaynak ve hedef indesini tutan yazmaçlar.
+
+142
+00:31:45,596 --> 00:31:57,096
+Bunlar da işte örnek verelim, işte bir dizinin birinci ile beşinci elemanını aldıracaksınız sadece. Bunlar Source ile Destination Index şeklinde yazılabilecek.
+
+143
+00:31:59,892 --> 00:32:25,672
+Segmentler, kod segmentimiz var, stack segmentimiz bahsettik zaten. Bir de dataları hani sakladığımız memori de sadece datalar için ayrılmış data segment kısmımız olacak. Data segmentin iç yapısında biz BX ile SEVAD ile yani Source Index veya Destination Index ile datalarımızı aslında adreslemiş olacağız data segmentte.
+
+144
+00:32:26,291 --> 00:32:34,291
+Ekstra segment de data segmentin yan olarak kullanacağımız kısmı. Şimdi hesaplamayı da adres bloğunda şöyle yapılıyor.
+
+145
+00:32:34,291 --> 00:32:48,291
+İlk, mesela biz yazmaca yani AX'e 1230 değerini yazdık ve bunu adres yoluna gönderdik. Bu gönderdiğimiz veri bizim için data segment. Bunu mikroişlemci kendi içerisinde data segment olarak tuttu.
+
+146
+00:32:54,195 --> 00:33:03,915
+Yani ilk segmenti belirlediğimiz adresin içerisinde 45 offset aşağı veya yukarı nasıl yerleşebilir sağlamdaysa git demek olacak.
+
+147
+00:33:03,915 --> 00:33:08,955
+Bunu mikroişlemci kendi içerisinde tabi tek bir adres formatına getirecek. Nedir o da?
+
+148
+00:33:09,332 --> 00:33:19,332
+segment mimarisini hexadesimal 16 ile, ki bu şey, hexadesimal 10 ile, ki bu şey de decimalde 16'ya takalım gelir.
+
+149
+00:33:19,332 --> 00:33:36,940
+Yani aslında dijitli bir tane sola kaydırmak, yani bir basamak daha eklemek ve ikinci gönderdiğimiz source index verisini de buna ekleyerek bizim 5, yani 5 hanelik 20 bitli adres yolumuzu oluşturmuş olacak.
+
+150
+00:33:37,395 --> 00:33:43,796
+Fiziki adresimiz bu şekilde oluşacak. Bir segment verisi ve bir source index verisi.
+
+151
+00:33:45,836 --> 00:33:56,956
+Biz size tabii örneklerde veya lafta bir şablon paylaşacağız ve o şablonda veri okuma yazma işleminde data segmenti zaten adreslemiş olacağız.
+
+152
+00:33:56,956 --> 00:34:02,236
+Hani bunun için ekstra bir adreslemeniz gerekmiyor. En azından ilk örnekler öyleydi.
+
+153
+00:34:03,519 --> 00:34:21,920
+Siz sadece data segment zaten header'da yani kodun başında belirlendiği, adreslendiği için, siz sadece tek bir cycle'da 16 bitlik akumulatörlerden, şeyden, register'lardan veri gönderdiğinizde, aslında tanımladığımız data segmentin içerisindeki o offset'e gitmiş olacaksınız.
+
+154
+00:34:25,523 --> 00:34:43,523
+Instruction pointer önemli bir kavram. Bu şunu söylüyor bize, komutun normalde bizim komutlarımız da memori'de, memori'de bir yerde, adresleri var. Yani biz ADD veya MOV, bir yerden taşı dediğimizde mikroişlemci bu MOV komutunun normalde...
+
+155
+00:34:43,936 --> 00:34:53,536
+bir memori de instruction'ını gösterip o instruction'ı yürütmesi lazım adresi. İşte bu komutun adresini tutan bir register, instruction pointer.
+
+156
+00:34:53,536 --> 00:35:05,536
+Bu da CS dediğimiz özel bir kod segmenti ile çalışıyor. Bunun da efektif hani bir instruction'ın memori de nerede olduğunu öğrenmek istediğimizde kod segment çarpı 10.
+
+157
+00:35:05,652 --> 00:35:09,251
+Artı, IP ile öğreniyoruz.
+
+158
+00:35:09,251 --> 00:35:12,052
+Yani, IP instruction pointer'ın gösterdiği yer.
+
+159
+00:35:19,635 --> 00:35:41,547
+Yazmaçlara bakalım. Soruları en son bakalım. Şimdi ders bölmeden çünkü uzuyor yoksa. Bayrak yazmaçı işte bayrakların, flaglerin durumunu görebileceğimiz, bizim için statüsleri yani durum, statüs diagramını çıkarabileceğimiz bayrak yazmacımız. Burada Kerry bayrağı işte...
+
+160
+00:35:41,684 --> 00:35:52,923
+Toplama işleminde taşma olduğu durumlarda ama overflow olmayan yani normal taşma yani aşım değil taşma olduğu durumlarda bir derine alan register.
+
+161
+00:35:53,204 --> 00:36:12,404
+Parati iki tarz var. Tekil parati, çift parati. Burada açıklanan paratiden farklı bir versiyonda kullanılabilir. Bu tamamen nasıl bir parati flag tanımlandı o yazmaçta ona göre değişir. Ama genelde burada yazılan şekliyle kullanılır. Nedir bu?
+
+162
+00:36:15,188 --> 00:36:21,427
+Şöyle bir sonuç elde ettik. Yani bir toplama veya bir çıkarma işlemi yapıldı registerlarda ve böyle bir sonuç elde edildi.
+
+163
+00:36:21,427 --> 00:36:32,427
+Bu tabii şimdi 16'sını birden yazmadım da yani gidiyor böyle bir şey veya 16'sını birden yazalım.
+
+164
+00:36:32,427 --> 00:36:41,164
+Veya yazmıyor. Yani normalde böyle bir sonuç elde edildi. Bu sonucun içerisindeki birilerin adediyle alakalı bir bayraktır.
+
+165
+00:36:41,364 --> 00:36:53,043
+Misal, 1 olan bitlerin sayısı tek ise, ki şu an burada çift, tek ise benim parit bayrağım 0 olur, çift ise parit bayrağım 1 olur.
+
+166
+00:36:54,604 --> 00:37:01,503
+Yani bu işlem sonucunda şu an burası çift, benim için bu işlem sonucunda paritifleck 1 değerini alacak.
+
+167
+00:37:03,347 --> 00:37:15,827
+Öyle bir durum bayrağı. Bunun nedeni şu esasında, belki bu networkten hatırlarsanız, bir veri karşı tarafa gittiğinde parity bayrağı da gönderilir.
+
+168
+00:37:15,827 --> 00:37:24,708
+Eğer ki işte gönderen tarafta verinin içerisindeki birilerin sayısı, örnek verinin bu örnekte tek olsun.
+
+169
+00:37:25,012 --> 00:37:30,392
+ve parit-i bayram da gönderen taraftan karşıya sıfır olarak gidecek bu durumda.
+
+170
+00:37:30,392 --> 00:37:39,092
+Ama karşıda bakacak ki, ya parit-i bayrağı bunun sıfır ama benim, bana gelen veride içerisindeki dillerin adeti çift.
+
+171
+00:37:39,092 --> 00:37:45,231
+Ama parit-i bayram sıfır geldi karşıdan. O zaman diyecek ki karşı taraf bu gönderen tarafa,
+
+172
+00:37:45,231 --> 00:37:51,892
+sen, yani yolda bir sıkıntı yaşandı, sen normalde dedin ki bu birilerinin işi ya, bu bitlerin...
+
+173
+00:37:52,052 --> 00:38:05,652
+İçerisindeki birilerin adilinin tek olduğunu söylüyorsun ama bende çip gözüküyor, veriyi tekrar gönder diyebileceğimiz bir verinin doğruluğuyla alakalı bilgi veren bir bayrak olarak kullanacağız bizde.
+
+174
+00:38:07,652 --> 00:38:12,652
+Axelor flag, 4 bitlik kısımların toplama çıkarma sonucu elde edilir.
+
+175
+00:38:12,652 --> 00:38:19,252
+Yani aslında şöyle bir yapı olsun, siz bir toplama işlemi yaptınız.
+
+176
+00:38:20,115 --> 00:38:39,435
+Şöyle iki sayıyı topladınız. Normalde işte 4 ve 1, 5 ama şurada misal ne olacak? Bir taşma yaşayacağız değil mi? Yani daha doğrusu toplama işlemi sonucunda bir tane sola kayacak. 4-bit anlamında, nibble analizi anlamında. Öyle olunca da burada auxiliary flame 1 olacak şu 4-bit için.
+
+177
+00:38:40,563 --> 00:38:56,323
+Zero Flake, işlem sonucu 0 ise Zero Flake'in 1 olduğunu söyleyeceğiz. Bunun da kontrolünü yapacağız. Bazı örneklerimizde kullanacağımız bir bayrak olacak. İşaret bayrağı da işlem sonucu negatif ise 1 olacak olan bir bayrak olacak.
+
+178
+00:38:57,076 --> 00:39:03,076
+Trap flag kesme haftası, 8 veya 9. haftada geleceğiz herhalde o konuya.
+
+179
+00:39:03,076 --> 00:39:10,076
+Kesme oluşmasını sağlayan bayrak. Eğer ki ben bu bayrağı sıfırlarsam kesme oluşmasını önleyeceğim.
+
+180
+00:39:10,387 --> 00:39:26,627
+Yani bu bayrak benim için her bir kesme oluştuktan ve kesmeye bir dönük oluşturduktan yani işte USB'yi taktım, drink diyor öttüm. Misal o drink öttükten sonra USB'yi çıkarttığımda da drink ötmesini sağlamak için resetleyeceğim bir bayrak olacak.
+
+181
+00:39:26,627 --> 00:39:38,387
+Çünkü öteki türlü işte aksiyonu sıfırlamazsam bu bayrak yanık kalacak ve kesmeye cevap döndürülmediğini söyleyecek ve yeni kesme kabul etmeyecek. Bunların önüne geçmek için.
+
+182
+00:39:38,387 --> 00:39:57,547
+İçin kullanacağımız bir bayrak olacak. İkinci bayrak da aynı şekilde aslında. Bu biraz daha debug işlemi için kullanacağımız bayrak. Bu da direkt demin anlattığım metodoloji ile kullanacağımız bayrak. Ama içi sırasında çok ufak bir mıyans var. Bu debug inti yapacağız. Bunu da normal kesmeyi kontrol edeceğiz.
+
+183
+00:40:00,000 --> 00:40:15,619
+Biz dizi işlemlerinde normalde artarak mı, yani adreslemede adreslerin artarak mı dizinin düzgünce oluşturulacağını veyahut da azalarak mı göze alacağız, bir dizi oluşturacağız bilgisini vereceğimiz bayrak olacak.
+
+184
+00:40:16,340 --> 00:40:40,340
+Overflow işaretli işlemlerde taşma dediğimiz, yani artık dijitin dışına çıkma durumu. Yani deminki örnekte şurada mıydı örnek? Misal şurada. Buradan bir tane elde gitince ne olacak burası? Artık elde değil, bu artık bir taşma moduna girdi. Çünkü artık 16 bitin fazla bir biti var. Bu durumlar için kontrol edeceğimiz biti olacak.
+
+185
+00:40:42,867 --> 00:40:55,867
+Sorumuz var mı? Bakalım bir daha. Fizikli adresine ikili adrese geçebiliyor muyuz? Fizikli adres zaten ikili bir adres. Onu anlayamadım tam. Normalde...
+
+186
+00:40:58,036 --> 00:40:59,036
+Efendim?
+
+187
+00:40:59,036 --> 00:41:06,036
+Eee hocam, normalde eee bir dijit kaydırıp ardından da pointer ekliyorduk ya.
+
+188
+00:41:06,036 --> 00:41:07,036
+Evet.
+
+189
+00:41:07,036 --> 00:41:20,036
+Öyle fiziksel adrese ulaşıyoruz. Fiziksel adresten eee işte segmenti ve pointer değerine ulaşabilmemiz için tekrar hani bölme çıkartma yapıp eee ikili adrese erişebilir miyiz onu sormak istemiştim.
+
+190
+00:41:20,036 --> 00:41:26,036
+Erişilebilir. Hani şunu soruyoruz. Bir, iki, üç, dört diye kod segmentim olsun. Ben bir de...
+
+191
+00:41:26,036 --> 00:41:35,355
+İşte, yani şunu, 00005 diye bir şey gönderdim. İkinci şeyde, yani beşinci offset'e, 1234'den beşinci offset'e geç dedim.
+
+192
+00:41:35,355 --> 00:41:43,355
+Ne olacak bu? 12345 nolu adrese geçecek. Ulaşılabilir, şöyle, geri...
+
+193
+00:41:43,440 --> 00:41:52,440
+12.345'den yine aynı 10'a bölerekten ilk başta segmentin oluşup sonra da bunu çıkartabiliriz.
+
+194
+00:41:52,440 --> 00:42:01,440
+Pointer değeri büyük olunca sıkıntı çıkıyor sanırım. Pointer'ı küçük verdiğimiz zaman öyle oluyor ama büyük verdiğimiz zaman...
+
+195
+00:42:02,547 --> 00:42:27,827
+Yani karışırsa, evet, karışırsa sıkıntı olur, geri dönetemeyiz. Evet, yani şunu diyorsun, 1221 ile 0034 dedim. Hani bu senaryoda, pardon 40, ne oldu? 1, 2, 3 olsun, şurası 1 olsun. Şöyle bir senaryoda, şurası da 45 gelecek tabii. Şöyle bir senaryoda, şurası da 35 olacak.
+
+196
+00:42:28,532 --> 00:42:33,132
+Bunu geri dönütmek belki sıkıntı. İkisi de aynı yeri gösteriyor şu an.
+
+197
+00:42:33,132 --> 00:42:35,132
+Değil mi?
+
+198
+00:42:35,132 --> 00:42:36,132
+Evet.
+
+199
+00:42:37,523 --> 00:42:55,103
+Evet, burada geri dönüşü zor. Evet, olmaz. Hiç yapmadık da, çünkü fiziksel adres dediğim şey aslında bizim memördeki yeri gösteren kısım. Geri tarafı biz mikroişlemcide koddan gönderdiğimiz için biliyoruz. Hani nereye gitmesini istediğimizi biliyoruz.
+
+200
+00:43:05,523 --> 00:43:13,963
+Yazma işlemi yaptığımız için hani fiziksel adresi bilinen bir noktanın içeride nereye tekadü geldiğini düşünmüyoruz.
+
+201
+00:43:15,244 --> 00:43:20,364
+Ben şeyi anlamadım, fiziksel adresi biz nerede kullanıyoruz? Bir işe yarıyor mu?
+
+202
+00:43:20,788 --> 00:43:23,788
+Bir de ardından bayraklarla ilgili bir sorun olacak.
+
+203
+00:43:23,788 --> 00:43:33,788
+Fiziksel adres bir memori'de yazacağımız yeri söylüyor bizim için. Yani şurası data segment, tamam mı?
+
+204
+00:43:33,788 --> 00:43:43,788
+Data segmenti ben kodun başında tanımladım. Dedim ki data segmentin adresi şu, ya başlangıç adresini veriyoruz zaten segmentlerin ya, şu 1234 aslında.
+
+205
+00:43:45,268 --> 00:44:08,467
+12.340 ile başlayan, şuradan başlayıp, işte 64 kilobayt kadar gidecek. Ne olur 64 kilobayt hesaplamak lazımdır? Şurası kod segment, mesela 12.340 ile başlayan kısım. Data segmentinde 0 ile başlayacak, 64K'ya kadar gidecek olan kısım. 64.000 tane satırı içerecek.
+
+206
+00:44:08,512 --> 00:44:19,512
+Şimdi biz kodun başında data segmentin başlangıç adresini verdiğimiz için bizi ilgilendiren buradan kaç offset aşağı inecek adresi.
+
+207
+00:44:19,512 --> 00:44:31,512
+Diyorsan ki işte sen bu başlangıç adresinden 1, 2, 3, 4 adresine, pardon burası belli oldu, şurası 1, 2, 3, 4 noktasına kadar in.
+
+208
+00:44:32,052 --> 00:44:37,532
+Yani aslında bu 10'luk tabanda şuna tekabül gelecek tabii 5 bit de.
+
+209
+00:44:37,532 --> 00:44:47,292
+Yani biz aslında data segment kod başında belirledikten sonra data segmentin başlangıç noktasından kaç satır aşağı ineceğimizi söylüyoruz.
+
+210
+00:44:47,292 --> 00:44:49,772
+Fiziksel adres de onu oluşturuyor.
+
+211
+00:44:49,772 --> 00:44:56,612
+Kod segment başlangıç adresini verdikten sonra biz kodda kaç satır buradan aşağı ineceksin onu söylüyoruz.
+
+212
+00:44:56,612 --> 00:44:59,572
+Burası fiziksel adres oluyoruz.
+
+213
+00:45:01,492 --> 00:45:18,492
+Yani aslında biz fiziksel adrese yazma işlemi yapıyoruz. Ki biz şu an birazdan değil diyeceğim, real ve virtual mode var. Biz real mode'da, gerçek mode'da adresle mi yapıyoruz? O da fiziksel adresi kullandığımız demek. Fiziksel adresi kullanıyoruz.
+
+214
+00:45:18,492 --> 00:45:24,492
+Hocam, bayraklarla ilgili de bu pet flag sadece güvenlik amacıyla mı kullanılıyor?
+
+215
+00:45:25,076 --> 00:45:33,576
+Perity Flake genellikle mikroişlemcinin çevre birimlerine gönderdiği verinin doğru gidip gitmediğini kontrol eder.
+
+216
+00:45:33,576 --> 00:45:44,576
+Misal, bu hafta yetişmeyecek belli ki de haftaya, biz ilk entegremiz olan çevre birimi porttan veri okuma yazma entegresini işleyeceğiz.
+
+217
+00:45:44,576 --> 00:45:53,076
+Orada da porta bir şey göndereceğiz veri ve porttan gönderdiğimiz verinin karşı o entegreden doğru ulaşacağını...
+
+218
+00:45:53,076 --> 00:46:04,756
+çalışıp ulaşmadığı için paritibiti de göndereceğiz. Öyle bir çalışma olabilir. Yani şöyle, mikroişlemcimiz, burada da bir entegremiz var.
+
+219
+00:46:04,756 --> 00:46:12,195
+Mikroişlemci buraya 8 bitlik olur. 8 bitlik data yolundan veri gönderdi.
+
+220
+00:46:12,244 --> 00:46:23,764
+Bir de parity verisini göndereceğim. Diyecek ki mikroişlemci ben sana parity flag'ten bir verisi gönderiyorum. Ne demekti bu? İçerisindeki verilerin çift sayı.
+
+221
+00:46:23,936 --> 00:46:32,936
+Karşı taraf bu biri okuduktan sonra, tabi burada da bir sıkıntılar yaşanırsa o da zaten bu iletişimi sağlıklı kılmayacak ama,
+
+222
+00:46:32,936 --> 00:46:36,936
+velev ki parati bitinde hiçbir sıkıntı olmadan karşıya gitti.
+
+223
+00:46:36,936 --> 00:46:48,936
+Ve karşı taraf bu parati bitine bakarak bunun içerisindeki, yani entegre, illa network olarak düşünmeyin, entegreler arasındaki bitlerin sağlıklı ulaşıp ulaşmadığını da söyler bize bu.
+
+224
+00:46:48,936 --> 00:46:50,936
+Yani bunu da kullanacağız bazı örneklerde.
+
+225
+00:46:51,635 --> 00:46:58,955
+Bu 8 bitti ki iki tane 1, 2, 0'a dönüşse yine hani peritfilek değişmiyor.
+
+226
+00:46:58,955 --> 00:47:13,355
+Ha tabii tabii yani şey advanced bir kontrol sağlamıyor. Bu en basit anlamda tek bitli hataların işte 1, 3, 5 neyse işte değişme durumunu.
+
+227
+00:47:13,684 --> 00:47:18,483
+Doğru, yani bu çok basit bir kontrol mekanizması zaten, parity flag.
+
+228
+00:47:18,483 --> 00:47:26,164
+Şey değil yani, advanced CRC gibi bir işte networkta gördünüz belki işte neler vardı orada başka?
+
+229
+00:47:26,164 --> 00:47:36,963
+Ne vardı? Ha, şey vardı değil mi? Dur, ne sum'du? Unuttum bak. Check sum.
+
+230
+00:47:37,139 --> 00:47:46,319
+CheckSum'lar var. Bunlar bayağı polinomiyel işlem yapan, üst sellerle işlem yapıp kontrol sağlayan algoritmalar var.
+
+231
+00:47:46,319 --> 00:47:57,399
+Ama şu an Entegra bazında bu sadece şu an tasarlanmış bir bayrak. Böyle de bir kontrol mevcut. Ama dediğim gibi 2 bit değişirse hiçbir işe yaramaz.
+
+232
+00:47:57,399 --> 00:47:59,399
+Teşekkür ederim.
+
+233
+00:48:05,492 --> 00:48:18,492
+Şimdi, bunun fiziksel adreslerini nasıl kullanıyoruz? Aslında RealMode ve VirtualMode'nin iki modu var bizim mikroişlemci 8086'da.
+
+234
+00:48:18,492 --> 00:48:29,492
+RealMode'da 1 megabaytlık alan adresini biliyor. Yani 1 milyon tane satırın her biri satırda byte olan bir verinin bulunduğu adres bloğunu biz adresleyebiliyoruz.
+
+235
+00:48:30,228 --> 00:48:48,228
+Ama şimdi 20 adres ucumuz var. İşte bunun 16 bitlik bir registerlar nasıl olduğunu segment mimarisiyle anlatmaya çalıştık. Biz de genelde hani uygulamalarda real modu kullanacağız. Yani fiziksel adresler üzerinde işlem yapacağız.
+
+236
+00:48:54,739 --> 00:49:05,739
+Segment ve offset durumundan bahsettik. İşte bir segment değeri 64 KB'lik alını gösterir. Neden diye bir daha soralım. Neden arkadaşlar?
+
+237
+00:49:07,739 --> 00:49:09,739
+Neden 64 KB?
+
+238
+00:49:15,251 --> 00:49:22,571
+Veya ikincisiyle beraber okuyalım. Offset değeri 64 kb olan alan üstüne bir geri gösterir. Neden?
+
+239
+00:49:30,099 --> 00:49:32,099
+Evet, neden arkadaşlar?
+
+240
+00:49:32,099 --> 00:49:33,387
+Neden altmış?
+
+241
+00:49:48,211 --> 00:49:56,831
+Yani şunu diyor, benim memory block'um var aşağı doğru iniyor ama ben bunu segmentler ayırdım diyor.
+
+242
+00:50:00,019 --> 00:50:13,779
+İlla hani bir tane CS, bir tane DS, bir tane ES olacak diye bir şey yok. Ama dalosu var. Yani bu segmentlerin içerisindeki alan 64 kilobay. Neden?
+
+243
+00:50:14,579 --> 00:50:19,859
+Mesela burası CS, burası DS, burası ES olsun.
+
+244
+00:50:20,148 --> 00:50:29,868
+Bu CS'nin içerisi 64 kilobayt tıklıyor ve bunun içerisinde ufak ufak alanlarım var benim, fizikte adreslerim mevcut.
+
+245
+00:50:31,928 --> 00:50:40,108
+Bu 64 kilobaytın her biri yani 64 bin tane satır olduğunu söylüyor. Neden 64 bin tane satır var bir sekmette?
+
+246
+00:50:48,820 --> 00:50:59,220
+Evet, 16 bit offset olduğundan dolayı 64 kb'lık alanı gösteriyor. Neden 16 bit offsetimiz var? Çünkü 16 bit mikroişlemcimiz olduğu için değil mi?
+
+247
+00:50:59,220 --> 00:51:09,920
+Yani registerlarda ben AX dediğim değeri en fazla 0, 0, 0, 0 ile FFFF arasında değer alabilirim.
+
+248
+00:51:16,340 --> 00:51:43,559
+0, 0, 0, 0, 0'dan FFFF kadar bir değer gönderebiliyorum. Offset için. Ama kod segmenti, bir kod segmenti yapısıyla bunu aldarda yapabiliyorum. Yani buradan bir daha 0, 0, 0, 0, da FFFF arasına gönderebilirim. Ama 5. bit olan, hani 20 bitlik yapıda şu, baştaki bit neyse, bu bit aslında benim.
+
+249
+00:51:45,940 --> 00:51:52,980
+Benim offset verimi, offset bilgimi gösteren yapıyı oluşturur. 64 kB olmasının nedeni bu.
+
+250
+00:51:52,980 --> 00:52:05,059
+Offset'im, yani register'larım 16 kB olduğundan dolayı tek seferde adresleyebileceğim 0 ile FFFF adresi fiziksel adresine kadar olacak.
+
+251
+00:52:05,059 --> 00:52:09,219
+O da FFFF dediğimiz şey zaten 64 kB yapar.
+
+252
+00:52:09,327 --> 00:52:22,327
+64 çarpı 24 yapar. 0000 da zaten 0. adres boyutunu gösterir ve segmentlerin, yani data segment, core segment olarak ayılmamız da bu neden.
+
+253
+00:52:23,923 --> 00:52:31,524
+Örnek aşağıda, segment değeri 1000H, offset değeri 2000H, mikroişlemci, erişilen fiziksel adres ne olur?
+
+254
+00:52:31,524 --> 00:52:38,923
+12000 olur. Normalde benim için 12000 fiziksel adresini mikroişlemci kendi çıkaracak.
+
+255
+00:52:38,923 --> 00:52:51,467
+Ben register'dan sadece, eğer ki bu tanımlandıysa, tanımlıysa yukarıda bulun, sadece bunu göndererek 12000'i adreslediğimi, fiziksel olarak adreslendiğimi söyleyeceğim.
+
+256
+00:52:51,539 --> 00:53:02,539
+Tamamınız herhalde anlaşılmıştır. Örnekleri de yapmayınca daha önce yanlış.
+
+257
+00:53:11,860 --> 00:53:19,860
+Evet, burada segmentlerin tabi belli başlı strefik segmentler var. İşte stack pointer ve base pointerlar için SS segmenti tanımlıdır.
+
+258
+00:53:19,860 --> 00:53:27,860
+Kod segmenti, yani kodların bulunduğu bölüm, havza altı uzayında kodların bulunduğu bölüm için kod segmenti tanımlıdır.
+
+259
+00:53:27,860 --> 00:53:37,420
+Datalar için de DS ve ES'nin kullandığımız, hatta ES'yi bir tık daha string işlemlerde kullanacağımız segmentler de tanımlıydı.
+
+260
+00:53:39,987 --> 00:54:00,987
+Bir de protected mode var, şu yıldan başka. Daha geniş havzı da adresini kullanıyoruz. Biz bunu kullanmayacağız. Öncelikle bu kadar. Ama gerekirse 1 MB'den fazla, hani bir işareti de oluyor ya, remisiyet mevcut. Yani bu yapılar mevcut. Burada da yine mikroişlemci bazı tablolar var.
+
+261
+00:54:01,023 --> 00:54:12,023
+Tabloların tabi kurduğu yer yine main memory ama işte o tablolar bazı başka yerlere atıklanarak bu tablolarla şey yapacağız.
+
+262
+00:54:12,023 --> 00:54:20,683
+Şu an nasıl gürültüm geldi demedim. Herhalde iyidir. Şöyle elimle tutayım.
+
+263
+00:54:21,396 --> 00:54:27,856
+Şimdi bunları SMD'de zaten bir tık hatırlıyoruz belki, adresleme modlarına da seriden bakacağız.
+
+264
+00:54:27,856 --> 00:54:38,276
+Yani bir adresleme modu bize şunu söylüyor genel olarak, fiziksel olarak o adresten ya veri okuyacağım ya o adrese veri yazacağım.
+
+265
+00:54:38,276 --> 00:54:46,636
+Ama adresin nasıl bulunacağıyla alakalı modlardır bunlar. Programın hafıza adresleme modlarıdır yani.
+
+266
+00:54:47,411 --> 00:55:04,331
+Örnek verelim, genel olarak hep kullanacağımız şey zaten MOV komutu. MOV AX, BX bize şunu söyleyecek, bir source kaynağımızdan ki burada B register'ı, veriyi A register'ına alalım, akımiyatörü alalım dediğimiz bir kodumuz var.
+
+267
+00:55:07,059 --> 00:55:09,799
+Normalde AX'de 1, 2, 3, 4 verimiz olsun.
+
+268
+00:55:09,920 --> 00:55:11,199
+BX'de A, B, C'de
+
+269
+00:55:11,199 --> 00:55:12,920
+bir de şuradaki H'ler
+
+270
+00:55:12,920 --> 00:55:15,360
+neyi söylüyor bize bunu da hemen söyleyelim.
+
+271
+00:55:15,519 --> 00:55:17,440
+Hexadismal bir sayı olduğunu söylüyor bunun.
+
+272
+00:55:18,159 --> 00:55:19,179
+Bunu unutmayalım.
+
+273
+00:55:20,139 --> 00:55:21,480
+Ya BX'deki veriyi
+
+274
+00:55:21,480 --> 00:55:23,279
+AX'e move dediğimizde
+
+275
+00:55:23,279 --> 00:55:25,420
+tabii artık AX'in içerisi BX'deki
+
+276
+00:55:25,420 --> 00:55:26,320
+veriyi de dolacak.
+
+277
+00:55:27,119 --> 00:55:29,239
+AX'deki veriyi kaybetmiş olacağız.
+
+278
+00:55:31,360 --> 00:55:32,239
+Adreslemede
+
+279
+00:55:32,239 --> 00:55:34,259
+ilk
+
+280
+00:55:34,708 --> 00:56:01,288
+Yazmaç adresleme en çok kullanacağımız şey, yani yazmaçlar arası bir veri transferinin sağlandığı adresleme modu. Burada tabii 8 bitlik de kullanabiliriz ama tabii bir taraf 16, bir taraf 8 olmaması lazım. Daha doğrusu destination 16 bit olabilir ama source'un 16, destination'ın 8 bit olduğu durumlar olamaz. Uyumlu olmalıdır yani yazmaç genişlikleri.
+
+281
+00:56:05,204 --> 00:56:20,564
+Hemen adreslemede de normalde bir al içerisine biz bir decimal de verebiliriz şu şekilde, hexa da verebiliriz veya binary de verebiliriz. Bu BL register'ın iç yapısında bu değeri yazmak olacak.
+
+282
+00:56:20,564 --> 00:56:33,204
+Yani bizim için register'ın içerisine değer yazmaya hemen adresleme diye tabir edeceğiz. Yani işte şu durumda 0f2 bir de kodlarda uygulamada arkadaşlar
+
+283
+00:56:33,204 --> 00:56:58,104
+Hexa disimali de ilk hane, eğer ki alfabetik işte A, B, C, D, E, F'yi biliyorsunuz zaten Hexa'daki 10, 11, 12, 13, 14, 15 değerleri olduğunda başına 0 koymanız gerekiyor. Aksi takdirde compile etmiyor. Bu yüzden 0 koymuş ama normalde bu misal 8 bitlik bir sayı. Değil mi? Zaten AL'ye.
+
+284
+00:56:58,496 --> 00:57:02,216
+yazmış. Halenin içeriği F2 olarak yazıldı.
+
+285
+00:57:02,516 --> 00:57:07,196
+CX'in ki 100, işte bu da decimal olduğunu gösteriyor, hiçbir şey yazmamak.
+
+286
+00:57:07,196 --> 00:57:15,756
+Desimal bir sayı olduğunu söylüyor. Binary olarak yazılmış bir sayı da BL'ye 8 bit olduğunu görüyoruz zaten.
+
+287
+00:57:15,756 --> 00:57:29,756
+Şimdi normalde işte asci karakterleri 8 bitlik karakterler ve sadece AH yazmaçından yazabileceğimiz karakterler ki bu A, büyük A herhalde 65'e tekabül geliyor zannedersem.
+
+288
+00:57:30,516 --> 00:57:41,316
+Ufaka mıydı 65 tam hatırlayamadım ama bu A karakterini binary olarak bir ve sıfırların olduğu yapıyı A-H'ye atadığını gösteriyor.
+
+289
+00:57:44,628 --> 00:57:58,628
+Doğrudan adreslemede adres bizim için register'a veri yazma durumu söz konusu değil. Biz buradaki 1, 2, 3, 4 normalde fiziksel olarak bulunan...
+
+290
+00:57:58,896 --> 00:58:19,896
+ki data segmentin içerisinde tanımlanmış, 1, 2, 3, 4, h içerisindeki veriyi bx'e yazıyoruz. Burası önemli. Hani 1, 2, 3, 4'ü bx'e yazmıyoruz. Data segmentin içerisindeki 1, 2, 3, 4 offsetine ait gözün içerisindeki veriyi bx'e yazıyoruz. Yani bir etiket oluyor bu.
+
+291
+00:58:24,532 --> 00:58:50,052
+Yazmaç dolaylı adresleme bir tık daha dolaylandırılmış. Adresleme ne demek oluyor bu? Misal bizim data segmentimiz 0-100 olarak belirlenmiş. İşte bu normal kod hesaplamasında 1000'e tekabül geliyor. BX'in içerisindeki değerin, şu yazmaç dolaylı bunu söylüyor bize, BX yazmacının içerisindeki değer benim için adres verisi.
+
+292
+00:58:50,463 --> 00:59:12,268
+Yani BX'in içerisinde 1000 var. Bu benim için data segmentin üzerine koyacağım bir 1000 olacak. Data segment yüzlü, bir tane kaydırdım 1000 yaptım. Bu summing yaptım normal BX'in içerisindeki 1000 ile 2000 fiziksel adresinin içerisindeki veriyi AX'e yaz demek.
+
+293
+00:59:12,340 --> 00:59:40,059
+Şimdi burada sıkıntı demeyelim de yapılan demin anlattığım şey o uyumlu olma durumu. Normalde memoryde burası 8 bit yani 1 byte. Şu 2000 adresi 1 byte yani 8 bitlik bir veri. Ben bunu ax dediğimde 16 bitlik bir veri yazmam gerektiği için otomatikman hem 12'yi alır sonra adresi 1 arttırır.
+
+294
+00:59:40,467 --> 00:59:49,467
+34'ü yazar. İkisini de bu şekilde yazar otomatik bir şekilde. 2000 ve 2001 nolu adresleri alıp,
+
+295
+00:59:49,467 --> 01:00:03,467
+işte Little Indian veya Big Indian konseptinde ilk önce Little Indian ise 12'yi yazar, sonra 34'ü yazar. Tam tersi ise ilk başta 12'yi AH'ya yazar, 34'ü AL'ya yazar.
+
+296
+01:00:10,931 --> 01:00:27,251
+Bir başka adresleme, base index adreslemesi. Bunda tek farkımız şu, bir destination index veriyoruz ve burada bx'in üzerine kattığı noktadaki adresin içerisindeki adres verisindeki veriyi alıyor.
+
+297
+01:00:27,507 --> 01:00:40,827
+Yani burada aslında çift dolaylama var, şurada olduğu gibi. Aynı bunun sadece bir offset koyduğumuz örneği. Bx'in içerisindeki veri benim için adresti, o adresin içerisindeki veriyi ax'e atıyordum.
+
+298
+01:00:40,827 --> 01:00:48,947
+Bunda da aynı şekilde bx artı d ın içerisindeki veri benim için adres, oradan da dx'e atıyoruz.
+
+299
+01:00:55,891 --> 01:00:58,971
+Ses geliyor ama arkadaşlar, soru mu var?
+
+300
+01:01:01,771 --> 01:01:04,691
+Soru yoksa kapatıyorum, mute ediyorum.
+
+301
+01:01:06,511 --> 01:01:09,011
+Başka bir adresleme modumuz daha mevcut.
+
+302
+01:01:09,571 --> 01:01:19,191
+Bununla da direkt artık bir şuradan farkı şu, birinde DEI dediğimiz, bir dizi yazmacındaki indeksi verebiliriz burada.
+
+303
+01:01:19,731 --> 01:01:29,332
+Ama burada direkt normal bir offset, yani numerik bir değer verilebilir. İkisi de aynı mantıkla çalışan iki farklı adresleme.
+
+304
+01:01:29,332 --> 01:01:38,532
+Bir de bunların hepsinin üçünün kırıldığı, hani bx normal resistance değeri, s-i source index'in gösterdiği değer,
+
+305
+01:01:38,532 --> 01:01:45,172
+bir de dışarıdan normal bir numerik bir değerle iki boyutlu veri adreslemesi yapılabilir.
+
+306
+01:01:49,076 --> 01:02:15,916
+Havıza adreslemede de doğrudan göreli veya dolaylı olmak üzere 3 tane yaklaşım var. Havıza adresleme modlarında, yani program havıza adreslemede mikilere ek olarak. Program havıza adreslemedeki kastımız şu, biz IP dedik, CS ve IP yapısı var. Yani biz bir komutu çalıştırdığımızda aslında kod segmentin içerisinde IP register'ının gösterdiği yerdeki komutu çalıştır diyoruz değil mi?
+
+307
+01:02:17,076 --> 01:02:25,556
+jump gibi veya call gibi komutlarla bu IP register'ı, yani IP'nin gösterdiği
+
+308
+01:02:26,003 --> 01:02:39,003
+Başka bir adrese dallanmayı söylüyoruz. Bunu da program hafızası dediğimiz o kısmında da adresleme yaparken doğrudan göreli veya dolaylı olarak yapacağımız adreslemeler mümkün.
+
+309
+01:02:39,003 --> 01:02:47,003
+Doğrudan adresleme direkt CS'ye bir değer, IP'ye bir değer atıyıp da işte campla o yere ızıklamamız demek.
+
+310
+01:02:54,003 --> 01:03:16,003
+CSA segmentinin başlangıç noktası 200 olan ve içerisinde 300 offset daha aşağı kaydır dediğimiz o konumdaki kodu çalıştır diyoruz biraz daha. O konuma git diyoruz. Bu direkten bir IP'nin içerisini değiştirmek, Instruction Pointer'ın içerisini değiştirmek demek. Bu da doğrudan programı...
+
+311
+01:03:16,340 --> 01:03:42,340
+Yani bu koşulacak programın doğrudan hafıza adresine zıplamak demek. Bu bir yaklaşım. Bir diğeri göreli, yani mevcut IP'nin içerisinden 100 aşağıya kay demek. Mesela yani mevcut IP'nin ne olduğunu bilmiyorum ama Jump 100 dediğimde o IP'de şu anki mevcut konumdan 100 ilerisine zıplıyoruz. Böyle bir göreli adreslemesi mevcut. Bir de dolaylı var. Normal işte bizim...
+
+312
+01:03:42,643 --> 01:03:53,983
+Rejister adresleme de dolaylıydı hatırlarsanız. Ona baktığımızda normal bir rejisterin içerisindeki adresin gösterdiği yere git dediğimiz adresleme modu.
+
+313
+01:03:59,923 --> 01:04:12,644
+Arkadaşlar, bir 10 dakika ara verelim. Ben de bir mola vereyim. Sonra tekrardan gelelim. Saatimiz 2'ye 10 geçiyor, 2'ye 20 geçe devam edelim.
+
+314
+01:16:21,587 --> 01:16:23,563
+Evet arkadaşlar, başlayalım.
+
+315
+01:16:33,332 --> 01:16:38,332
+Evet, yığın adresleme modlarımız da var. Ses geliyor mu? İlk kontrol edelim.
+
+316
+01:16:39,332 --> 01:16:40,332
+Evet hocam.
+
+317
+01:16:40,332 --> 01:16:48,332
+Tamam. Yığın adresleme dediğimizde zaten stek dediğimiz, o yığınların oluşturulduğu bölge,
+
+318
+01:16:48,332 --> 01:16:54,332
+ki buna biz SS dedik, stek segment, o stek segmenti içerisindeki adreslerin oluşturulması.
+
+319
+01:16:54,963 --> 01:17:03,363
+İki kod da zaten biz yığınları adres, yani bir veriyi yığını atıp veya yığından çekiyoruz. Bunlar push ve pop komutları.
+
+320
+01:17:03,363 --> 01:17:15,363
+CS için yani kod segmentin o anki adres verisini push ile yığını atabiliriz ama pop kod segment ile çekemeyiz.
+
+321
+01:17:15,363 --> 01:17:22,163
+Yani o anki stackteki veriyi kod segment ile çekemiyoruz. Bu bir assembly hatası vermek zorunda söz konusu.
+
+322
+01:17:22,676 --> 01:17:33,716
+LFO mantığıyla çalıştığını zaten biliyoruz. Ne demek? Bu Lasting in, first out, yani son atılan ilk çıkar.
+
+323
+01:17:33,716 --> 01:17:44,704
+Yığına bir şey atmak için push ve popları kullanacağımızı söyledik. Push yığına veri koymak, pop da yığından veri çekmek için kullandığımız şey.
+
+324
+01:17:44,703 --> 01:17:55,984
+Burada önemli nokta şu, word bir veri yazıyoruz. Word dediğimiz, biliyorsunuz ki 2 byte demek. Yani 16 bitten oluşan 2 byte'lık bir veri.
+
+325
+01:17:56,435 --> 01:18:09,735
+Şimdi aslında bu bizim şeye tam uyuyor. Yani 16 bitik register'ın, register'ın bütün hepsinin verisini tek push'la veya tek pop'la işleme tabi tutabiliyoruz.
+
+326
+01:18:09,735 --> 01:18:23,735
+Ama burada işte push BL dediğimizde bu işlem çalışmayacak. Çünkü BL 8 bit olduğundan dolayı ve push yaptığımızda biz iki step hareket ettiği için stack pointer'ım...
+
+327
+01:18:24,435 --> 01:18:30,576
+Hata verecek, yani tek bir step hareket ettir. Sadece 8 biti çek gibi bir ayarlama yapmamız mümkün değil.
+
+328
+01:18:31,095 --> 01:18:40,315
+O yüzden de Word çeker ve Word basar demişiz. Yani 16 bit çeker, 16 bit basar. Yani 2 byte çeker, 2 byte basar diyebiliriz.
+
+329
+01:18:40,815 --> 01:18:44,655
+Stack segment ile beraber kullanılıyor demiştik zaten.
+
+330
+01:18:48,083 --> 01:19:06,083
+Her push işleminde stack pointer, yani sp'nin gösterdiği değer, eksi 1 ve eksi 2 adreslerine 2 byte veri yazar. Burada eksi 1, eksi 2 önemli çünkü adresin aslında ufaltarak gittiğini söylüyoruz. Yani stack pointer'ın gösterdiği noktadan aşağı inerek adres yazıyor.
+
+331
+01:19:06,083 --> 01:19:08,907
+sp değeri de 2 azaltılıyor doğal olarak.
+
+332
+01:19:08,916 --> 01:19:20,515
+Eğer pop işlemi yapacaksak, yani bir veri çekeceksek de, stack pointer'ın gösterdiği değer ve onun bir üst, yani gösterdiği değerinin üstü ve onun iki üstünü biz okuyoruz.
+
+333
+01:19:20,515 --> 01:19:28,515
+Ve stack pointer'ın iki arttırılır. Şurada bir grafı var. Bakalım bu bir push işlemi değil mi? Yani bir veriyi yazıyoruz.
+
+334
+01:19:28,756 --> 01:19:34,756
+Push işleminde dediğimiz gibi, ilk başta AH, sonra AL'yı yazdık.
+
+335
+01:19:34,756 --> 01:19:42,756
+Stack pointer önceden şurayı gösteriyordu, 2 aşağıya indirdi ve burada şu an, yani en son yazılan veriyi göstermesi lazım.
+
+336
+01:19:42,756 --> 01:19:49,756
+Yani tutup da işte burayı gösteriyor, 2 aşağıya kaydedim, şu an boşu gösteriyor değil, burası biraz karışıyor.
+
+337
+01:19:49,756 --> 01:19:54,756
+Stack pointer'ın gösterdiği en son yazılan veriyi göstermesi lazım ki okuyabilelim.
+
+338
+01:19:55,123 --> 01:20:06,763
+Şu an misal 34'ü gösteren bir stack pointer var. Eğer pop yapmak istediğimizde ise, işte normalde verimizi okuruz, sonra üste geçiririz.
+
+339
+01:20:06,763 --> 01:20:14,323
+Yani çektiğimiz en son veriyi, yine burada bir başka veriyi gösteririz. Yani sonuçta Word okuyacağımız için 2 byte'i okur.
+
+340
+01:20:14,323 --> 01:20:21,963
+Akümatör veya işte ne? CX register'ıymış burada. CX register'ına yazarız ve sonraki veri gösterilir.
+
+341
+01:20:22,260 --> 01:20:26,659
+Dediğim gibi popta 2 arttırılır, pushta 2 azaltılır.
+
+342
+01:20:30,515 --> 01:20:37,315
+Evet, tekten sonra şimdi gelelim bacak bağlantıları. Şurayı bir sileyim. Herhalde sizde de gözüküyor muhtemelen.
+
+343
+01:20:40,884 --> 01:20:50,183
+Aynen. Şimdi, 8086, 40 pin olan bir kılıfı bulunan yani 40 adet bacağı bulunan bir entegre.
+
+344
+01:20:51,188 --> 01:20:57,587
+Ve bunun tabi işte bacaklarını her birini kullanmasak da mümkün olduğunca bilmek lazım.
+
+345
+01:20:57,587 --> 01:21:03,987
+Tek tek bundan sonraki slide'larda açıklamalarını da tekrar deneyeceğim ama burada ana şematik üzerinde bir anlatmak istiyorum.
+
+346
+01:21:03,987 --> 01:21:09,987
+Birinci, en öncelikli bilmemiz gereken adres ve veri yolları bacakları.
+
+347
+01:21:09,987 --> 01:21:13,387
+Dur bir dakika, niye gelmedi bu?
+
+348
+01:21:13,387 --> 01:21:17,387
+Allah Allah, gelsene ya.
+
+349
+01:21:20,627 --> 01:21:39,827
+Evet, şimdi şunu biliyoruz ki biz adres bacağımız 20 bit, yani 20 tane pinin olması gerekiyor. Data ise 16 bit, yani 16 adet pinin olması gerekiyor.
+
+350
+01:21:46,463 --> 01:22:01,463
+Ayrı ayrı tasarlandığında 36 adet bacağın olmasına neden oluyordu. Bunun yerine sistem şöyle yapılmış. 16 tane bit ikisinde de ortak olduğu için ortak bacak yapılmış.
+
+351
+01:22:11,475 --> 01:22:25,595
+Şurayı şöyle yapayım, şurayı da şöyle alalım. Bacak diyeceğiz. Bu mimari, bu bacaklar bizim için ortak adres ve veri yolu bacaklarımız olacak. Yani ortak kullanacağız.
+
+352
+01:22:25,840 --> 01:22:44,840
+Neye göre bunları change edeceğiz? Yani neye göre biz adres mi gönderiyoruz yoksa veri mi gönderiyoruz? Bunu nasıl bir sinyalizasyon sağlayacağız? Aynı trafik ışıkları sinyalizasyonu gibi bir sinyalizasyon lazım. Adres mi gönderiyorsun, veri mi gönderiyorsun? Neden? Çünkü veri gönderiyorsan daha önceden...
+
+353
+01:22:45,300 --> 01:23:07,239
+Adresin nereye gideceğini mikroişlemciye söylemiş olman lazım. Yoksa veri yerine, yani veri gönderiyorum diye adres bilgisi aldılar mikroişlemci ve aslında sen veri okuyacaksan, veri okumamış olursun, bambaşka bir adresten bir veri okumuş olursun. Yani ilk başta adresi belli edeceğiz, o adres tutulacak.
+
+354
+01:23:07,604 --> 01:23:14,604
+ve ikinci 16 bit de ben o adresten veriyi data yoluna koy diyeceğim mesela okumak için.
+
+355
+01:23:14,604 --> 01:23:19,604
+Veyahut da işte o adrese veri yaz diye data yoluna veriyi koy diyeceğim.
+
+356
+01:23:20,604 --> 01:23:27,604
+Böyle bir to-stage bir yapı yapmamız lazım çünkü ortak bir adres veri yolu entegrasyonu var.
+
+357
+01:23:27,604 --> 01:23:33,604
+Şimdi burada bunun hangisini kullanacağını belirleyeceğimiz yer Alebaca.
+
+358
+01:23:35,028 --> 01:23:51,028
+Ale bacağı eğer ki 1 ise, yani ben buradan 1 verisi verirsem, bu artık ben buradaki ilk 16 bitim, yani 16 pinim, benim artık adres verisini içeriyor demek olacak 8086'ya.
+
+359
+01:23:51,028 --> 01:23:59,828
+Ama Ale verisi 0 ise, benim için buradaki verinin data olduğunu anlatacağım 8086'ya.
+
+360
+01:24:01,108 --> 01:24:25,487
+Tamam, birinci belki burada bahsetmemiz gereken şey bu. Tabii 15, 16, 17, 18 ve 19 normal adres. Bunlar data kompozisyonu yok. Yani bir veri yolu yok çünkü 16 bit olduğu için. Ama bunların da bir ek durumu var. Status diye tabir ettiğimiz S, yani işte buradaki bazı özel durumları okuyabileceğimiz S bilgisi içeriyor.
+
+361
+01:24:27,731 --> 01:24:53,971
+Sonra burada başka bahsedeceğimiz, BHE, yani bus height enable diye tabir ettiğimiz bir yapı. Bu bacak ise bize şunu söylüyor. Eğer ki bu bacak sıfırsa, yani ben buradan sıfır verirsem, data yolunun, 16 bitlik veri yolun var ya, yüksek anlamlı 8 bitini gönderir.
+
+362
+01:24:54,260 --> 01:25:05,260
+Diğer, düşük anlamlı 8 bitine veri yazmaz. Ama BHE 1 ise, düşük anlamlı 8 bitine veri yazar, yüksek anlamlı benim için önemsizdir.
+
+363
+01:25:05,260 --> 01:25:16,260
+Bunu ne için kullanacağız? Biz entegreleri dışarıda, 8 bitli entegreler kullanacağız bazen. Yani 16 bit verimiz var, 8'ini bağlayalım hocam yeter.
+
+364
+01:25:20,148 --> 01:25:32,868
+Sıfırladığını düşün bir şekilde, oraya, o entegreye gidecek olan, düşük anlamlı 8 bit, yani ilk sıfırdan 8'e kadar bağladığını düşünelim, benim istediğim veri olmayacak.
+
+365
+01:25:32,868 --> 01:25:44,987
+Çünkü BHE'ye sıfırlanırsa, yüksek anlamlı 8 bitin gitmesi sağlanır gibi bir kontrol mekanizması sağlıyor. Yani, bus, high, enable, yüksek anlamlı 8 bitin,
+
+366
+01:25:45,104 --> 01:25:57,644
+verilip verilmeyeceğinin kontrolünü veren bacak. Başka, non-maskeable interrupt bacağı. Bunun 8. veya 9. hafta interruptları geldiğimizde çokça geleceğiz.
+
+367
+01:25:57,644 --> 01:26:09,904
+Buradan, bu maskelenemez interrupt bacağı demek. Yani ben buradan bir veri verirsem, işlemci içerisinde, hatırlarsanız bir bayraktan bahsettik, interrupt flag vardı.
+
+368
+01:26:09,920 --> 01:26:22,920
+Yani kesme bayrağı. Bu kesme bayrağı benim aslında kesmeleri kabul et veya etmeme diye seçim yapabileceğim bir bayraktı. Bu bayrağın durumuna bakılmaksızın
+
+369
+01:26:22,963 --> 01:26:31,963
+Bu NMA'dan verdiğimiz interruptlar 8086'da interrupt seksiyonuna sokar. Yani interrupt kodunun çağrılmasını sağlar.
+
+370
+01:26:31,963 --> 01:26:39,963
+Burası birinci önceliği olan, yüksek önceliği olan bir interrupt bacağı.
+
+371
+01:26:39,963 --> 01:26:47,963
+Interruptlar dediğimiz şey kesme. Yani buradan bir sinyal geldiğinde işlemci kendi işini bırakıp o interruptı çalıştıracak.
+
+372
+01:26:49,300 --> 01:26:58,979
+R bacağı ise engellenebilen başka bir intervap. Şu anlık bu kadarını desek yeter. Hani haftası geldiğinde detaylıca anlatacağız bu ikisini.
+
+373
+01:27:00,083 --> 01:27:09,083
+Clock zaten ClockPiles'i herhangi bir mikroişlemcinin çalışma prensibi, yani çalışmasını sağlayan bacakta hatırlarsanız.
+
+374
+01:27:09,083 --> 01:27:28,083
+Yani normalde bir CPU, bilgisayarlardaki CPU'lar vs. her birinin bir ClockPiles'i var ki kendisini o megahertz'ler, o gigahertz'ler neyse hızı refresh edecek ve işte o stepleri, işlemleri o kadar hızlı yapabileceğini gösteren bir parametreydi. Bunun da ClockPiles'i buradan.
+
+375
+01:27:28,083 --> 01:27:48,484
+Sound'ı var, Ready Reset, işte Reset'e sokma, işte mikroişlemci hazır deme bacakları, test bacağımız var. Burada iki modumuz var, hani bazı ortak şeylerde, pinlerde. Maximum ve Minimum mod. Bunu sağlayan bacak size şurası, hani işte burada çıkmamış ama şu önündeki slash aslında bunun...
+
+376
+01:27:49,555 --> 01:28:08,355
+Şununu kastediyor, üstünde şöyle olduğunu kastediyor. Yani sıfır da aktif, bir de aktif demek. Eğer ben bu bacağa sıfır verirsem, Maximum Mode'daki bacaklar aktif olacak. Eğer ki bu bacağa bir verirsem, Minimum Mode'daki şu bacaklar aktif olacak diyoruz.
+
+377
+01:28:09,939 --> 01:28:20,739
+Yani verini okunup write'da yazıldığı sinyalini üreten bacak, karşı tarafa işte ben senin verini okuyorum diyor, bu da ben sana veri yazacağım sinyali gönderiyor.
+
+378
+01:28:20,739 --> 01:28:23,939
+Yeri geldiğinde portlarda bunları kullanacağız zaten.
+
+379
+01:28:23,939 --> 01:28:31,915
+Input output ile main memory yani memory bacağı, bu şuradaki slash gene şu anlama geliyor.
+
+380
+01:28:32,787 --> 01:28:45,787
+Buradan sıfır verisiyle, yani bu sıfır verisi üretiyorsa main memory'e yazacağını, eğer bir verisi üretiyorsa bir dış verime input output'a yazacağını söyleyen bacak olacak benim için.
+
+381
+01:28:46,787 --> 01:28:53,787
+Direction, yani data transmit veyahut da receive yaptığının bacağı, yani eğer ki ben memoriden...
+
+382
+01:28:54,163 --> 01:29:01,483
+İşte işlemciye bir veri alıyorsam, aslında bu data receive olduğunu, yani aslında buradan bir sıfır verisi üreteceğini söyleyecek.
+
+383
+01:29:01,483 --> 01:29:12,923
+İşte eğer ki ben mikroişlemciden memoriye bir veri yazıyorsam, bu data transmit dediğim, yani aslında buradan bir verisini üreteceğim, bir kontrol sinyalim olacak.
+
+384
+01:29:14,036 --> 01:29:22,235
+int a da yine int a rap ile alakalı. Şu anlık hani şu şemada bu kadarını anlatsak yeterli gelir.
+
+385
+01:29:22,235 --> 01:29:25,635
+Sorumuz var mı bu şemayla alakalı arkadaşlar?
+
+386
+01:29:30,612 --> 01:29:31,612
+Yok herhalde.
+
+387
+01:29:31,612 --> 01:29:39,612
+Şimdi bu bacakları tek tek burada izahına değindik ama hızlıdan bir daha yapalım.
+
+388
+01:29:39,612 --> 01:29:53,612
+İşte ortak adres ve veri yolu bacakları, ale 1 ise eğer burasının adres bit olduğunu, eğer ale 0 ise bunların bir data yolu olduğunu söyleyen bacak.
+
+389
+01:29:53,612 --> 01:29:57,612
+Şu yandaki I ve O, input mu output mu olduğunu söyler.
+
+390
+01:29:58,292 --> 01:30:04,252
+Adresler bildiğiniz üzere input, datalar da bildiğiniz üzere output olduğunu söyleyebiliriz.
+
+391
+01:30:07,891 --> 01:30:21,891
+Burada da adres ve statüs, bunları bahsettik zaten. Read dediğimiz okuduğunu söyleyen sinyal, yani ne zaman bir veri okuyorsa read sinyalim benim sıfır olacak.
+
+392
+01:30:21,891 --> 01:30:35,724
+Ready sinyalin mikroişlemcinin hazır olduğunu söyleyen, 1'deyken hazır, 0'dayken, wait'e yani herhangi bir işlem yapmama durumuna soktuğu pinimiz olacak.
+
+393
+01:30:39,283 --> 01:30:48,884
+Test sinyalimiz de normalde hani mikroişlemciyi sıfırla test ettiğimiz, yani bekleme durumuna geçirip geçirmediğini test ettiğimiz bacağımız.
+
+394
+01:30:48,884 --> 01:30:59,884
+Non-maskable interrupt bacağı girişi işte maskelenemez ki biz buna vektör 2 diyeceğiz. Yani buna değineceğiz zaten interrupt haftasında.
+
+395
+01:31:01,395 --> 01:31:11,496
+Maske Enemez olan interruptların giriş yapılacağı bacağımız olacak. Reset pinimizden bahsettik. Minimum, Maximum moddan bahsettik.
+
+396
+01:31:11,496 --> 01:31:21,796
+B, H, Y, Bus, High Enable dediğimiz yapı. Database'ın 8 ile 15. pinlerini kullanıp kullanmama durumunu belirlediğimiz bacak.
+
+397
+01:31:27,471 --> 01:31:34,471
+Eğer ki bir input output dediğimiz yapı bir entegre olabilir, memori dediğimiz yapı da bir hafıza modülü.
+
+398
+01:31:34,471 --> 01:31:39,471
+İşte bir input output'a mı gidiyor yoksa memoriye mi gidiyor bunu belirleyeceğimiz.
+
+399
+01:31:39,471 --> 01:31:42,471
+Örneklerde bu bacağı çok süce kullanacağız zaten.
+
+400
+01:31:42,471 --> 01:31:46,471
+İşte bir entegre portlardan veri okuyacağız.
+
+401
+01:31:46,471 --> 01:31:50,411
+Bunu o zaman input output olarak ayarlamamız gerekecek.
+
+402
+01:31:50,452 --> 01:31:57,131
+write için hani bir memoriye bir veri yazma durumunda oluşturacağımız sinyal olacak.
+
+403
+01:32:00,787 --> 01:32:03,967
+Ali'den bahsettik zaten, adres ile çenable ediyor.
+
+404
+01:32:06,355 --> 01:32:20,635
+Diğerlerini de bahsettik. Şimdi biraz da hani clock palsi ile alakalı bir entegra var dedik. Bu neden önemliydi? Çünkü benim için 8086 gibi herhangi bir mikroişlemcinin çalışabilmesi clock palsi ile mümkün.
+
+405
+01:32:20,635 --> 01:32:28,836
+Şeyde hatırlarsınız, lojik devrelerdeki son steady state flip-floplarla alakalı bir deney yapmışsınız, belki hatırlarsınız.
+
+406
+01:32:31,188 --> 01:32:44,188
+Ben girişteki inputları değiştiriyordum o deneyde ama ne zaman kulağa bassam o zaman o girişteki inputlar output'a yani flip-flop dediğimiz o yapıların çıkışına aktarılıyordu.
+
+407
+01:32:44,188 --> 01:32:53,068
+Bunda da aynı şekilde biz içeride ne kadar işlem yaparsak yapalım o işlemin aktive olabilmesi için bir clock paysiyle tetiklenmesi lazım.
+
+408
+01:32:53,427 --> 01:33:02,748
+Ve bu clock price'i, tabii fiziksel olarak ben buraya 5 MHz dedim, hocam biz bunu 5 GHz yapamaz mıydık, daha hızlı tetiklenirdi, daha çok işlem yapardı.
+
+409
+01:33:02,748 --> 01:33:10,748
+İşte orada fiziksel olarak 8086'nın yapabileceği maksimum 5 MHz'lik bir clock price ile çalışması, yoksa hiçbir işlemi yapmaz.
+
+410
+01:33:10,748 --> 01:33:21,427
+Yani daha hızlı clock price'ini desteklemiyor. İşte 3 GHz'lik bir CPU'nuz var, siz bunu overclock ile dörtlere falan çıkartıyorsunuz belki hani, overclock mıydı?
+
+411
+01:33:21,427 --> 01:33:49,427
+Neydi o bir tabir vardı? Hani daha hızlandırmak, sınırları zorlamak diye tabir ettiğimiz. Sınırları zorluyordunuz ama ne dezavantajlar vardı? Yanma, soğutmak gerekliliği gibi bin bir şeyler vardı. Hani o riskler tabii o CPU'nun kabiliyetlerini maksimize etmek için kullanılıyordu ama burada zaten 8086'nın maksimum bir çalışma frekansında biz bir osyasyon devresiyle bunu...
+
+412
+01:33:49,427 --> 01:34:15,427
+Bunu gerçekleştireceğiz. 5 MHz'lik bir giriş devresi olacak. Zaten Proteus, yani simülasyon ortamında yapacağımız için deneyleri, Proteus'ta böyle bir devre tasarımını yapmıyoruz. Normalde bu 8086'ya chip tıkladığımızda arka planda 5 MHz, 4 MHz'le vesaire işte ne kadar kullanacaksak bunun ayarını normalde yazılımsız olarak gerçekleştiriyoruz.
+
+413
+01:34:17,652 --> 01:34:26,971
+Buna da gerek yok. Şimdi, en büyük problem, hani donanımsal olarak 8086'yı kullanmadaki en büyük problem şu esasında.
+
+414
+01:34:27,572 --> 01:34:33,492
+Veri ve adres yolunun ortak olmasından dolayı bir senkronizasyon yapılması lazım.
+
+415
+01:34:33,492 --> 01:34:39,532
+Yani ben ilk başta adresi belirleyeceğim, sonra o adresten verimi okuyacağım, data yoluna koyacağım.
+
+416
+01:34:40,608 --> 01:34:54,608
+Veri okumayacağım, veri yazacağım o adrese, o veriyi mi data yoluna koyacağım, bunu belirlemek lazım. Bunun için latch devreleri, ki işte buffer ve latch, latch tutma demek herhalde, böyle bir askıda tutma gibi bir anlamı var zannedersem.
+
+417
+01:34:54,608 --> 01:35:04,492
+Hani havada o adres verisinin kaybolmamasını sağlamam lazım. Çünkü ortak yol. Bir saniye ben işte o portlara bir değer yazdım.
+
+418
+01:35:05,011 --> 01:35:12,471
+Adres değeri bu. Şimdi bir daha değer yazarsam o mevcut olan adres değeri kaybolacak, üstüne yazacak.
+
+419
+01:35:12,884 --> 01:35:21,503
+Onu engellemek için o daha önceden yazmış olduğum adres verisinin o güzergahta, o adres pinler üzerinde tutulması lazım.
+
+420
+01:35:21,503 --> 01:35:30,003
+Bunun içinde kullandığımız entegreler var. Biz zaten Proteus'ta şematik de bunu hazır olarak vereceğiz ama mantığını bilmemiz lazım.
+
+421
+01:35:30,003 --> 01:35:33,264
+Bunlara leç devreleri diyeceğiz. Mesela bir tanesi...
+
+422
+01:35:33,652 --> 01:35:51,935
+Bir entegremiz bu. 74, L, S, 373 entegresi. Bu bir leç devresi. Bakalım şimdi şurada D0, 1, 2, 3, 4,
+
+423
+01:35:51,935 --> 01:36:06,935
+5, 6, 7. Yani 8 bitlik data ile girişle 8 bitlik output'un bulunduğu bir latch devresi. Şimdi şuradaki doğruluk tablosu hatırlarsanız bu lojikten bize çalışma prensibini anlatacak tabloydu.
+
+424
+01:36:14,336 --> 01:36:27,136
+Bu da output'um, yani çıktım, ne olursa olsun en verisi. Lechim hike'taysa, yani şuradaki LE uzan şeyime bir verirsem, ben girişi çıkışta görüyorum.
+
+425
+01:36:28,416 --> 01:36:36,096
+Girişi low yaptım, lechim hike, çıkışımda low oldu. Yani şu an tutma yaşanmadı.
+
+426
+01:36:36,256 --> 01:36:46,176
+Yani verinin tutması için buradaki verinin dışarıda devam etmesi lazım. Yani girişteki değişse bir de dışının devam etmesi lazım.
+
+427
+01:36:47,056 --> 01:36:59,196
+Onun nasıl latch devresi o zaman aktif oluyor? Latch'e low verisi 0 verirsem, output enable'a da 0 verirsem, şurada output enable var, üstü çizilmemiş.
+
+428
+01:37:03,667 --> 01:37:09,787
+Çıkış, bir önceki çıkışın aynısı olacak. Yani latch yapmış olacak, tutmuş olacağız.
+
+429
+01:37:10,868 --> 01:37:33,868
+Onun dışındakiler giriştekileri direkt dışarıya aktarıyor. Bu da giriş değiştiğinde, ki değişecek mesela ben bir adres verisi gönderdim, sonra data verisi gönderdiğimde önceki adres verisinin bir yerde tutulmasını istemem lazım. İşte o devre, bu devre. Buradaki outputların değişmemesini sağladığım low-low vergem senaryoda bir önceki durumu tuttuğunu gösteriyor.
+
+430
+01:37:35,507 --> 01:37:44,247
+Bu entegra var, bir tane daha var. Şimdi bir problem de tamam, adresleri tuttuk bir yerde, yani havada leç ettik.
+
+431
+01:37:44,247 --> 01:37:51,967
+Bir de datanın yönünü belirlemem lazım. Misal, ben memory'den mikroişlemciye veri okuyorum.
+
+432
+01:37:52,467 --> 01:38:05,748
+E, data bus'ta bir şeyler de var, hani kalmış. Ama okumak istiyorum. Okumak istediğim için bu yöneylemi, yani o main memory'deki verilerin data yoluna konmasını istemem lazım.
+
+433
+01:38:06,387 --> 01:38:31,887
+Bunun içinde bir entegremiz var, 74LS245. Bu da şunu yapıyor, yanındaki doğrult tablosundan geçelim. İki tane kontrol ucu var zaten, bir enable ucumuz var. Zaten bu enable low olması lazım. Ne zaman bir oldu, yani height oldu, zaten isolation, yani çalışmıyor. Ne zaman bu enable ucuna sıfır verisi verdim, bu entegre çalışacak. Nasıl çalışacak? Direction pinine göre.
+
+434
+01:38:32,500 --> 01:38:58,699
+Direction pinim şurada. Direction'ım 0 verilirse benim için B yolundan, yani şuradaki A ve B portları var ya, B'den A'ya doğru, eğer ki Direction'ım height olursa A'dan B'ye doğru. Verinin transferi söz konusu. Yani örnek verelim, ben A'ya memory'i bağladım, memori'deki uçları.
+
+435
+01:38:59,604 --> 01:39:14,604
+B'ye de 8086'ya bağlı. Şimdi bu entegre olmasa, 8086'ın datasında bir şeyler dururken, buradan bir veri okumak istediğimde bunun üzerine koyarım. Ama işte...
+
+436
+01:39:14,804 --> 01:39:30,684
+Adres verisiyle bunlar çakışabilir. Onu önlemek için bir adresi latch yaptım, birinci çözüm bu. İkinci çözüm ise direction bak sen memori'den bir şey okumak istiyorsun diye 8086'nın bu entegreye direction verisi vermesi lazım.
+
+437
+01:39:30,752 --> 01:39:41,152
+Ben memory'den veri okumak istiyorum. Ne demesi lazım? A'dan B'ye transfere ayarla demesi lazım. Yani benim için şuraya entegre bir verisini göndermesi lazım.
+
+438
+01:39:41,152 --> 01:39:51,551
+8086 buraya bir gönderecek ki, memory'den 8086'ya bir data akışını tetiklemiş olacağım. Adresi leç ettikten sonra.
+
+439
+01:39:54,771 --> 01:40:04,771
+Bir bufferlama entegremiz daha var. Bu da aynı mantıkla çalışıyor aslında. Yani işte D dediğimiz girişler...
+
+440
+01:40:05,171 --> 01:40:17,671
+L iken, L olan, yani 1G ile 2G'yi low verdiğimde, girişi dışarıya direk veren entegre. Bunu da sadece statüs bitleri için kullanacağız.
+
+441
+01:40:17,671 --> 01:40:23,171
+Burada genel olarak bir gösterim var. Bunu izah edelim. Burada daha net anlaşılacak.
+
+442
+01:40:23,171 --> 01:40:31,115
+Şimdi, 373 entegremiz, hatırlarsanız ki adresi latch eden devreydi.
+
+443
+01:40:31,220 --> 01:40:45,980
+Ne demek bu? Ben AD pinlerinden ve 16'sının ortak olduğu için şimdi bunlara örnek verelim. Şöyle bir veri veriyorum. Pinlerde böyle bir veri geldi.
+
+444
+01:40:48,275 --> 01:41:12,268
+Şurası da 0 olsun. Yani ikinci pinle, en sonunda pin, pardon, ilk D0'la, A0'la A14'ün 0 olduğu bir data verdi. İkisine de gitti. 245'e de gitti, 373'e de gitti. 373, Lach devresiydi, 245'te Direction'ı belirleyen entegreydi. Şimdi ikisine de gitti. Bu veri...
+
+445
+01:41:12,564 --> 01:41:22,564
+Şimdi burada da mevcut ve ben şunu biliyorum. Mikroişlemci eğer ki adres verisi göndereceksem, alesini 1 yapmam lazım diyor.
+
+446
+01:41:22,564 --> 01:41:26,564
+Ben bunu aley 1 yaptığımda...
+
+447
+01:41:26,804 --> 01:41:34,404
+Şu pini doğruluk tablosunda hatırlarsanız leçleyen pindi. O leçleyen pinini aktif etmiş oluyorum.
+
+448
+01:41:34,404 --> 01:41:45,604
+Ve aktif ettiğim için şu an şu veri bunun içerisinde sabit. Bu girişteki değer değişse bile ben artık burada bu veriyi...
+
+449
+01:41:45,604 --> 01:41:48,003
+Hatta şöyle yazalım buraya da...
+
+450
+01:41:55,315 --> 01:42:12,315
+Buraya kaydettim. Yani askıladım, tuttum, neyse, leç ettim. Burası artık adresi tutuyor. Ben aleyi sıfıra düşürdüğüm anda bu giriş değişse bile bunlar güncellenmeyecek. Entekresiydi bunlar. Doğruluk tablosundan hatırlarsak.
+
+451
+01:42:12,315 --> 01:42:19,315
+Şimdi ben bu aleyi sıfırladım. Ne demek bu? Artık benim buraya göndereceğim veri ki şunlar da dahil.
+
+452
+01:42:20,467 --> 01:42:26,467
+Zaten buraya bir şey gitmeyecek. Adres verisi değil, data verisi olacak diyor.
+
+453
+01:42:26,467 --> 01:42:31,403
+Yeni bir veri gönderdim. Bu seferki verimizde şöyle bir şey olsun.
+
+454
+01:42:35,891 --> 01:42:39,671
+Şimdi, alem 0 olduğu için bunun data verisi olduğunu biliyoruz.
+
+455
+01:42:40,591 --> 01:42:44,451
+Ve alemi 0 yapınca bunlar da entegre adres verisini tuttu.
+
+456
+01:42:44,451 --> 01:42:48,851
+Bir önceki stepte adres olarak buraya yazdı.
+
+457
+01:42:48,971 --> 01:42:51,271
+Yani şu an bunlar adresi işaretliyor.
+
+458
+01:42:51,431 --> 01:42:53,511
+O ilgili gözeneği aktif etti.
+
+459
+01:42:54,051 --> 01:42:56,131
+Mememory'de ve değişmedi. Hala aktif.
+
+460
+01:42:56,391 --> 01:42:58,851
+Yani enable edilmiş bir memori var.
+
+461
+01:42:59,171 --> 01:43:02,211
+Neyi bekliyoruz? O enable edilmiş yere ne yapacağımızı.
+
+462
+01:43:02,836 --> 01:43:10,076
+Data yoluna koydum, yani verimi koydum. Artık 245 entegresine ben Direction belirleyeceğim.
+
+463
+01:43:10,452 --> 01:43:22,452
+Şu ikisiyle. Ne demek Direction? Ben bu veriyi oraya mı yazacağım? Yoksa bu bir önceki stepte enable ettiğim veriden buraya veri mi yazacağım?
+
+464
+01:43:22,452 --> 01:43:32,452
+Yani mikroişlemciyi okuma mı yapacağım? Yoksa mikroişlemcinin şu anki AD portlarındaki ki D'yi ilgilendiriyor, ale sıfır olduğu için, D portunun
+
+465
+01:43:32,884 --> 01:43:44,483
+yazmasını mı yapacağım? Bunun kararı. Bunu da hatırlarsanız bu entegrenin the ucuyla yapıyorduk. Bir de enable ucu vardı. Şimdi enable ucu sıfır. Bir kere buraya sıfır gelmemiz lazım.
+
+466
+01:43:44,483 --> 01:43:57,683
+Ve then dediğimiz data enable, mikroişlemci tarafından sıfır yapıldığında bu entegreler aktif olacak. Çünkü data enable, data var diyor mikroişlemci. Kodla bunu yapıyoruz.
+
+467
+01:43:57,844 --> 01:44:10,844
+Ve ikinci pin, datayı ben transmit mi edeceğim, yani içeriden main memory'i mi alacağım, yoksa main memory'deki, o şuradaki bufferladığım adresteki veriyi mi okuyacağım diyorum.
+
+468
+01:44:10,844 --> 01:44:22,380
+Receive yaparsam, dirim artık şuradaki, yani şuraya hatta adreslediği noktayı, işte şunların hepsi şuradaki gözeneği aktif etti misal, şu an.
+
+469
+01:44:22,771 --> 01:44:32,132
+Buradaki gözenekteki 1, 2, 3, 4 verisini okumak istiyorum. Tamam mı? Veya 8 bit yapalım, kafa karışmasın.
+
+470
+01:44:36,756 --> 01:44:47,756
+Burayı okumak istiyorum. Buradaki 8 tane pinin buraya bağlı olduğunu düşünün. Yani şunların hepsinin yukarıdan bütün hücrelere bağlı olduğunu düşünün.
+
+471
+01:44:47,756 --> 01:45:03,532
+Kartezyen gibi böyle şey ne derler? Alttan bütün D1, D2, D3'ler bu şeylere bağlı. Enable edildiği yer, adresteki enable olan hücre bu datayoluna konmuş olacak ve dir...
+
+472
+01:45:03,828 --> 01:45:09,208
+Data Receive olduğu için buradaki veri DataBus'lardan okunacak.
+
+473
+01:45:12,028 --> 01:45:14,828
+245 yöneylem belirtir.
+
+474
+01:45:15,088 --> 01:45:23,548
+Mikroişlemciden main memory'e data mı yazılacak veya data mı okunacak mikroişlemci tarafına bunu belirtir.
+
+475
+01:45:23,788 --> 01:45:31,228
+Bunu da mikroişlemci içerisinden kodla DTR'nin enable, disable edilmesiyle ve data enable ile belirleriz.
+
+476
+01:45:31,667 --> 01:45:49,927
+Bu ikisini neden kullanırız? Çünkü 245 entegresini enable ve direction'ı belirlemek için. Öteki taraftan ale ucu bildiğimiz gibi birse adres yolunu söylüyordu. O da 373 entegresini latch'lemek için kullanacağımız pini oluşturuyor.
+
+477
+01:45:50,387 --> 01:45:58,068
+1373 de burada var. Neden? Çünkü 15 tanesi ortak, bir tanesi farklı. Bu da şu yüzden kullanılıyor.
+
+478
+01:45:58,068 --> 01:46:03,507
+Yani burada hiç kullanmadan direkt veremez miydik? Bunların da hatırlarsanız statüs bitleri vardı.
+
+479
+01:46:03,507 --> 01:46:12,467
+S3, S4, S5, S6. Gerekirse bu statüsleri okumak belki gerekebilir diye buraya da konabilir, konmuş zaten.
+
+480
+01:46:12,467 --> 01:46:17,836
+244 entegresi de Direction ile alakalı ama bu çok önemli değil şimdilik.
+
+481
+01:46:18,484 --> 01:46:22,984
+Bununla alakalı sorumuz var mı arkadaşlar?
+
+482
+01:46:27,123 --> 01:46:28,523
+Sorumuz var mı?
+
+483
+01:46:33,140 --> 01:46:47,900
+Yok herhalde. Anlaşıldıysa güzel. Başka bir leçleme devresi aslında aynı şeyleri söylüyor bize. Yani bizim 373 ile 240, yani ezberlemenize gerek yok tabii de.
+
+484
+01:46:48,127 --> 01:46:57,127
+200 kaçtı? 245 miydi? Aynen. 373 entegresiyle 245 entegresi. 245 entegresi transceiver dediğimiz entegre esasında.
+
+485
+01:46:57,127 --> 01:47:04,627
+Yani RAM'den, EPROM'dan okuma mı yapacağız, yazma mı yapacağız ki? Misal peri yapılılara hem okuma hem yazma yapılabilir.
+
+486
+01:47:04,627 --> 01:47:11,627
+RAM'e hem okuma hem yazma yapılabilir. EPROM'a sadece okuma yapılabilir. Belki yazma da yapılan durumlar olabilir.
+
+487
+01:47:16,127 --> 01:47:36,427
+Öteki leç entegresi, adresi ale ile belirleyeceğimiz entegre. Bu da dır ile. Yani şuradaki dır, şu ikisiyle dırın kombinasyonu. Bu kuloğa bağlanmış ama tam kuloğ değil bunun ucu. Burada bir yanlışlık var herhalde ama yani ale'nin normalde leç devresini aktif ettiğini söyleyebiliriz.
+
+488
+01:47:37,460 --> 01:47:52,460
+Ad, BH ile, işte Bust High Enable ile belki de Lechi de Enable edebiliriz. Böyle bir şematik gösterimi, yani genel bütün sistemi 8086'nın çalışabilmesi için gerekli olan şeyler bunlar.
+
+489
+01:47:52,595 --> 01:48:09,355
+Biz size sunacağımız o örneklerde vs. zaten bu şablonu hazır veriyoruz. Siz latch devresi tasarlamıyorsunuz ama adres datının ayrımını latch ile nasıl yapıldığını, transceiver'ın önemini kavramamız lazım.
+
+490
+01:48:12,115 --> 01:48:14,355
+Tamam mıyız? Tamamız herhalde.
+
+491
+01:48:16,948 --> 01:48:21,948
+Burası çok önemli değil. Bus timingler çok önemli değil arkadaşlar.
+
+492
+01:48:25,876 --> 01:48:30,076
+Aynen. Sorumuz var mı arkadaşlar genel olarak?
+
+493
+01:48:33,716 --> 01:48:36,056
+Hocam, ben bir soruden soracaktım.
+
+494
+01:48:36,756 --> 01:48:37,476
+Evet, buyurun.
+
+495
+01:48:38,036 --> 01:48:45,115
+Siz ilk başta dediniz ki, 20 bitlik adresleme ve 16 bitlik rezistirler var 8086 için.
+
+496
+01:48:45,115 --> 01:48:49,556
+Ve işte biri 16, biri 20 olduğu için belli handikaplar var.
+
+497
+01:48:50,036 --> 01:48:56,416
+Ama 16 bitlik rezistir yerine 20 bitlik rezistir olsaydı bunlarla hiç uğraşmak zorunda kalmazdık falan dediniz.
+
+498
+01:48:56,876 --> 01:48:58,476
+Segment mimarisiyle, evet.
+
+499
+01:48:58,975 --> 01:49:05,975
+Neden 20 bitlik register kullanmıyoruz, 16 bitlik register kullanıyoruz o zaman?
+
+500
+01:49:06,579 --> 01:49:34,519
+Yani zamanında öyle tasarlandı, şimdi step by step, ondan sonraki register şeyler, işlemcilerde mesela 80 kaç da hatırlamıyorum ama 300 müydü, 286 mıydı ne? Register boyutu 32, adres boyutu 32'ye çıkarılmış. Hani daha optimize edilmiş duruma geliyor yavaş yavaş. Ama o dönem 8086'ın çıkartıldığında bir önceki stepte 8 bit register, 16 bit adres yolu varmış, 16 bit adres registers.
+
+501
+01:49:34,579 --> 01:49:39,960
+21 bit adres yolu genişlemesi yapılmış. Bunlar yavaş yavaş geliştirilen mimariler.
+
+502
+01:49:39,960 --> 01:49:52,759
+Ama 8086'yı niye günümüzde popüler kılan şey ne? 20 bit adres 16 bit register da olsa o aradaki leç devreleriyle bir çözüm olduğu için çok problem değil.
+
+503
+01:49:52,759 --> 01:49:59,339
+Ama tabii şu an 32-32'de bunlara gerek yoktu vesaire. Ortak bacaklarda gene leç devresi kullanmak gerekirdi.
+
+504
+01:50:00,051 --> 01:50:14,651
+bir ayrı kenara ama 16'ya 20 bit olması çok böyle, çok problematik bir senaryo değil yani. O yüzden öyle üretilmiş, öyle kullanılmış. Sonrakiler 32'ye 32 olmuş zaten. V64'ye 64 olmuş.
+
+505
+01:50:14,651 --> 01:50:17,651
+Anladım. Teşekkür ederim.
+
+506
+01:50:23,188 --> 01:50:49,587
+Evet arkadaşlar, Classroom'a üye olduk diye düşünüyorum. Grubunuz varsa WhatsApp'da ve sahip paylaşırsanız sevinirim. Classroom'da çünkü sunumları orada olacak, asistanların duyuruları orada olacak, çoğu şey orada olacak. Classroom'u takip etmek faydalı olur. Zaten etmeniz gerekir bence. Onun dışında laflarla alakalı işte size duyurular yapılır zaten ama online olması çok daha yüksek olasılık muhtemel.
+
+507
+01:50:51,028 --> 01:51:12,876
+Bu şekilde ilerleyeceğiz. Sorumuz yoksa zaten süremiz de herhalde bitiyor. Baktım evet hakikaten bitmiş. Haftaya aslında bu hafta biraz geçmek istiyordum ama periapollara çevre birimleri ama artık vaktimiz çok kalmadı. Geçmeye gerek yok. Haftaya artık ilk dış birim entegresiyle başlayacağız.
+
+508
+01:51:15,028 --> 01:51:24,028
+Tamam mıyız? Var mı sorumuz? Yoksa dersimiz bu kadar arkadaşlar. Teşekkürler. Sağlıklı günler diliyorum. İyi çalışmalar.
+
+509
+01:51:24,028 --> 01:51:26,028
+İyi günler.
+
+510
+01:51:26,028 --> 01:51:28,028
+Sağ olun hocam.

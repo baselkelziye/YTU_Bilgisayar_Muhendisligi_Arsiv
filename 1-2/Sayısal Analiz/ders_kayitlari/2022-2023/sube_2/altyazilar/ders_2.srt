@@ -1,0 +1,3459 @@
+1
+00:03:07,379 --> 00:03:08,780
+Arkadaşlar merhabalar.
+
+2
+00:03:28,467 --> 00:03:30,867
+Sesim geliyor mu sizlere?
+
+3
+00:03:32,947 --> 00:03:34,067
+Geliyor hocam.
+
+4
+00:03:38,611 --> 00:03:48,012
+[öğrenci], sen sabah da vardın değil mi? İki [öğrenci] da bizim kılıkta kalmış. Yavaş yavaş öğreniyoruz.
+
+5
+00:04:05,843 --> 00:04:10,163
+Sabah nereye kadar geldiniz Fatih Hoca'da? En son ne gördünüz?
+
+6
+00:04:11,043 --> 00:04:13,924
+Bakalım biz geri kaldık mı? Onu bir merak ettim ya.
+
+7
+00:04:16,483 --> 00:04:18,163
+Bir arkadaşım soruyorlar size.
+
+8
+00:04:25,459 --> 00:04:29,659
+Hocam, Fibonacci ile alakalı bir örnek falan çözmüştük en son.
+
+9
+00:04:29,659 --> 00:04:32,060
+Ondan sonra, oradan bitirdiniz.
+
+10
+00:04:32,060 --> 00:04:33,060
+Hıhı.
+
+11
+00:04:35,459 --> 00:04:36,620
+Devam var mıydı?
+
+12
+00:05:09,427 --> 00:05:11,427
+Nun fatto bir alan matura.
+
+13
+00:05:20,019 --> 00:05:26,620
+Hocam en son A üzeri 4, artı B üzeri 4, artı C üzeri 4, işte D üzeri 4 önermesi doğru mu değil, bu anı şu yaptık.
+
+14
+00:05:26,620 --> 00:05:32,620
+Tamam, onun devamını konuşmadınız veya [öğrenci]'ya konuştuğunuz iyi. Çok yakın gitmişiz.
+
+15
+00:05:32,620 --> 00:05:37,219
+Hani ben sabah hem kod yazdım hem şey yaptım, böyle biraz geciktik ama...
+
+16
+00:05:37,219 --> 00:05:39,819
+Yok, biz kod hiç yazmadık hocam da.
+
+17
+00:05:39,819 --> 00:05:44,219
+Ya Parti Hoca, o şart üzerinden yapar genelde.
+
+18
+00:05:46,004 --> 00:05:49,684
+Yani bizimki şey, bizde de flowchart yok, kod var öyle söyleyeyim.
+
+19
+00:05:49,684 --> 00:05:51,684
+Sonuçta hemen hemen aynı şey.
+
+20
+00:06:09,684 --> 00:06:17,684
+Şimdi yazdığım, karaladığım şeyleri görüyor musunuz? Görüyoruz hocam.
+
+21
+00:06:17,684 --> 00:06:18,684
+Evet.
+
+22
+00:06:19,684 --> 00:06:26,684
+Evet, [öğrenci], A'yı Zorut. Teşekkür ederim arkadaşlar. Çok iyileşmişiz.
+
+23
+00:06:26,684 --> 00:06:36,652
+Şimdi geçen dersimizde sayısal analizin ne olduğunu, hangi problemler üzerinde çalışacağımızı, onu başlattığımızı konuştuk.
+
+24
+00:06:37,396 --> 00:07:04,364
+Bugün analitik çözüm nedir, nümerik çözüm nedir? Bunları anlatmakta. Bazı anlamlı basamahtar, sayı tabanları, basit şeyler. Şu ikisini Roundation ve Truncation biridirisi yuvarlama. Yuvarlama da kural nedir? Bir önceki basamak büyüktür, eşittir, beş ise, beş ile dokuz arasındaysa, bir sonra bir üst basamağı.
+
+25
+00:07:04,372 --> 00:07:08,052
+yuvarlayabiliyoruz. Yoksa hani olduğu gibi kalıyor.
+
+26
+00:07:08,052 --> 00:07:11,812
+Şunu yaptık diye hatırlıyorum.
+
+27
+00:07:11,812 --> 00:07:14,692
+Anlamlı basamaklar.
+
+28
+00:07:14,692 --> 00:07:19,891
+Accuracy ve precision kavramlarını konuşmuştuk. Hata nedir dedik, buna baktık.
+
+29
+00:07:19,891 --> 00:07:24,611
+Floating point işlemlerini konuştukların hata ve çeşitleri.
+
+30
+00:07:25,747 --> 00:07:51,148
+Evet, uygun bu chapter'ı bitirip yeni konuya geçiş yapacağız. Şimdi, burada bu chapter'u dediğimde çok algoritmik bir şey olmadığı için, bir de Vanu Öze'ye hazırlarken, bir sayfadan bu ders diye belki kullananımız vardır. Youtube'da böyle bir kanal var. Bazı kavramları buradan almış. Normalde biz bunu, önceki yıllarda bu dersi tahtaya böyle yaza yaza her şeyi anlatıyorduk.
+
+31
+00:07:51,379 --> 00:08:11,779
+Pandemi dönemi ile beraber slide yapma gereği duyduk. Çünkü ani bir şekilde yine bahar döneminde başlamıştı. Onun için böyle slide'lar bir şekilde toparladık. Bir kısmı bizim kendi slide'larımız, bir kısmı dışarıdan eklentilerimiz var. Bu kanalı da böyle takip edebilirsiniz. Güzel kısa videoları var.
+
+32
+00:08:11,983 --> 00:08:20,983
+Tabii her şey ile doğrudur veya bizim ders ile doğrudan alternatiftir diyemem. Oradaki konuların bazıları bizde var, bizde olanların bazıları orada yok.
+
+33
+00:08:20,983 --> 00:08:25,983
+Ama merak ettiğiniz şeyler için faydalı bir kanaldır diyebilirim.
+
+34
+00:08:25,983 --> 00:08:36,983
+Şimdi hata nedir? Bizim için hata diye niye böyle bir başlık var? Arkadaşlar, algoritmalarımız geçen hafta söylediğimizde yaklaşım yöntemleri.
+
+35
+00:08:37,107 --> 00:08:41,707
+Yaklaşım yöntemlerinden kastımız da genellikle core veya while döngüleri olacak.
+
+36
+00:08:41,707 --> 00:08:45,307
+Bu döngüleri durdurmak için bir şeye, kritere ihtiyacımız var.
+
+37
+00:08:45,307 --> 00:08:47,907
+Sonsuza kadar bu döngüler devam etmeyecek.
+
+38
+00:08:47,907 --> 00:08:56,107
+Durum böyle olunca durdurma kriteri olarak veya adım sayısı olarak biz hatadan çok çok faydalanıyoruz.
+
+39
+00:08:56,107 --> 00:09:01,507
+Zaten genel hayatın kendisinde de olan bir şey.
+
+40
+00:09:02,292 --> 00:09:12,692
+Herhangi bir konuya başladığınızda ilk zamanlar böyle çok yüksek hatalar yaparsınız. Bu hatalarınız zamanla azalır, azalır, azalır. Belli bir şeye durur. Belki hiçbir zaman sıfır olmaz.
+
+41
+00:09:12,692 --> 00:09:27,492
+Belli bir limite şu epsilon diyoruz veya durdurma kaliteyi diyoruz. Böyle bir şekilde yani farklı şekillerde azalabilir hatalar. İşte bir ara böyle çok fazla artır. Bir yerden sonra stabil hale gelir bu düzen. İşte bu normal bir eğitimdir.
+
+42
+00:09:28,019 --> 00:09:36,019
+Bir algoritmanın training dediğimiz aşamalar da böyle oluyor. Yapay zeka da aslında bu mantıkla eğitiliyor.
+
+43
+00:09:37,019 --> 00:09:46,019
+Şu an hepiniz check-chipit devicilerinde, belki fikir sahibisiniz veya kullanıyorsunuz. Orada bir eğitilmiş model var, yapay model.
+
+44
+00:09:46,899 --> 00:09:59,899
+Bu eğitim önce çok yüksek hatalarla başlıyor. Bu hata minimize edilerek yavaş yavaş, azaltılır, azaltılır, iterasyonlarla belli bir düzene oturuyor.
+
+45
+00:09:59,899 --> 00:10:05,899
+Bunun en güzel örneği aslında Google Translate veya çeviri sistemleri.
+
+46
+00:10:14,323 --> 00:10:23,323
+İngilizce, Türkçe veya herhangi dil arasında kelimesi kelimesine çeviri yapılıyordu.
+
+47
+00:10:23,323 --> 00:10:29,323
+Yani hep söylenen şey tavuk çevirme, chicken translate gibi oluyor.
+
+48
+00:10:29,323 --> 00:10:34,323
+Niye? Çünkü kelimeleri doğrudan sözlük mantığıyla eşleştirilir.
+
+49
+00:10:34,323 --> 00:10:36,323
+Tamamen semantik anlam yok.
+
+50
+00:10:36,323 --> 00:10:40,323
+Zamanla ne yaptılar? Kitaplardan.
+
+51
+00:10:41,235 --> 00:10:51,735
+Onun dışında farklı bloklardan, internetteki bütün metinsel kaynakları aldıklarında, işte tavuk çevirmenin geçtiği bir metin düşünün, işte muhtemelen yemekle alakalı bir şey.
+
+52
+00:10:51,735 --> 00:10:59,735
+Buna uygun düşecek kelime İngilizce'de daha rahat tahmin edilebilir oldu bu translate yapan motor sayesinde.
+
+53
+00:10:59,735 --> 00:11:05,644
+O motorun işte translate motorunun ilk zamanlarki hataları bu, bu hatayı...
+
+54
+00:11:06,323 --> 00:11:15,003
+göz ağrıdı etmedi, hatayı bilerek ortaya çıkardı ve bunu minimize ede ede belli bir düzen ortadır. Yapay zekanın eğitimi de bu şekilde oluyor.
+
+55
+00:11:15,003 --> 00:11:22,003
+Bu işin içinde optimizasyon var, başka başka konular var. Zamanla bunları öğreneceksiniz gelecek derslerimizde.
+
+56
+00:11:22,003 --> 00:11:31,443
+Örneğin şu sürenin kısalması mümkün, evet mümkün. Bazen öyle bir şey oluyor ki bu süreye çok daha kısa sürede tutabiliyorsunuz.
+
+57
+00:11:32,275 --> 00:11:41,275
+Bunlar tamamen training. Onun için bizim için hata, üstü örtülmesi gereken bir şey değil, gerçek hayatta da öyle.
+
+58
+00:11:41,275 --> 00:11:48,275
+Ders çıkarılması ve insanın kendini her anlamda geliştirmesine fırsat veren bir kavram.
+
+59
+00:11:48,275 --> 00:11:53,275
+İşin sosyal boyutu, şimdi gelelim nümerik analiz ve matematik boyutuna.
+
+60
+00:11:53,275 --> 00:11:59,275
+Hata dediğim şey, gerçek değerden hesaplanan, elde edilen değerin farkı.
+
+61
+00:11:59,572 --> 00:12:05,971
+Genellikle biz bu farkı böyle alacağımız gibi mutlak değerli veya karesel hata gibi farklı formlar da alacağız.
+
+62
+00:12:05,971 --> 00:12:11,971
+Buna işte mesela ne denir? Actual value denebiliyor İngilizce olarak.
+
+63
+00:12:11,971 --> 00:12:16,971
+Sonra real value denebiliyor gibi farklar.
+
+64
+00:12:16,971 --> 00:12:22,971
+Hesaplananlar da predicted, tahmin edilen, ölçülen, estimated olabilir.
+
+65
+00:12:22,971 --> 00:12:25,971
+Yani bunların fiziksel olarak...
+
+66
+00:12:26,355 --> 00:12:38,355
+Anlamsal olarak ufak tefek farklılıkları var. Bunları da şimdilik gibi mesela forecasted dediğimiz tahmin edilen veya calculated dediğimiz bir şey ölçüyoruz.
+
+67
+00:12:38,355 --> 00:12:46,355
+Bir de bunun gerçek değeri var, boyutu arasındaki farkı. Bu dönem devre teorisi dersi alıyorsunuz. Tabii fiziksel deney yapabilecek misiniz?
+
+68
+00:12:46,355 --> 00:12:53,355
+İşte bir devre oluşturduğunuz, çok basit bir devre yapayım ben. Çok bilmem de, şurada beş durum diyelim.
+
+69
+00:12:53,460 --> 00:12:56,160
+Şurada şöyle bir direnç olsun.
+
+70
+00:12:57,160 --> 00:13:00,860
+Onların üstüne, mesela bu ne kadar? 2.0 olsun.
+
+71
+00:13:01,360 --> 00:13:04,460
+Bunun üzerinden geçen akım nedir? V eşittir, I çarpı R.
+
+72
+00:13:04,460 --> 00:13:13,060
+On kanununa göre, işte 5 volt eşittir. 2.0 çarpı U dediğimizde akım ne oluyor? 2.5.
+
+73
+00:13:13,360 --> 00:13:17,860
+Bu volt, bu ohm, herhangi bir megası, milisi yok. Bu da ne olacak? Amper olacak.
+
+74
+00:13:18,196 --> 00:13:38,676
+Bu gerçek olması gereken değerimiz. Siz elinizde bir ölçü haleti aldınız. Bunu simülasyonda da ölçüseniz, simülasyon programlarını anlatacaklar size. Orada da iki buçuk amper olarak simülasyon size bu sonucu verir. Ama burada ne var? Gerçek hayata dönünce bir hel var.
+
+75
+00:13:38,899 --> 00:13:46,499
+üretebinin içerisinde bir direnç var. Bu direnç 2.10 mu ne kadar 2.10 onu da bilmiyoruz. Belki bunun artısı, eksisi var, toleransı var.
+
+76
+00:13:46,499 --> 00:13:59,299
+Dolayısıyla şuradan ölçeceğiniz şey, akım değeri, ampermekre falan bağlanıyor ya, 2.5 amper belki olmayacak. 2.49 olacak, belki 2.51 olacak.
+
+77
+00:13:59,443 --> 00:14:12,443
+Gerçek hayatta bu ünvan sonuç illaki matematiksel algoritmayla değil, herhangi bir deneyle elde ettiğiniz sonuç da sizin için bir hatadır ve üzerinde işlem yapılması gereken bir değerdir.
+
+78
+00:14:13,443 --> 00:14:27,147
+Evet, mesela x kare fonksiyonumuz varmış. Biz normalde 25 gerçek değeri ama öyle bir hata yaptınız ki, hatanın sonunda bunu buldunuz. Böyle bir hata elde etmiş oluyoruz.
+
+79
+00:14:27,155 --> 00:14:32,155
+Ve bizim için önemli olan şey toplam hatadır. Bunu şöyle göstereceğiz.
+
+80
+00:14:32,155 --> 00:14:44,155
+Y eşittir epsilon küçük e harfi ile y eşittir sıfırdan sonsuza kadar bir sistem varsa evimizde, bu bir denklem olabilir, başka bir şey olabilir veya en defa dönecek por döngüsü olabilir.
+
+81
+00:14:44,155 --> 00:14:50,155
+Bu döngünün elde ettiği toplam hata bizim için minimize edilmesi gereken bir şeydir.
+
+82
+00:14:50,155 --> 00:14:54,155
+Bunu da şöyle düşünün, gerçek hayatta bu şöyle ifade ediliyor.
+
+83
+00:14:55,283 --> 00:15:04,884
+Yani şu an siz 20 yaşlardasınız. Şu ana kadarki hatalarınızı bir bilgi birikimi olarak düşünürseniz, hasta hatalarınızı topluyorsunuz.
+
+84
+00:15:04,884 --> 00:15:16,484
+Ve o topladığınız hatalardan geleceğe yönelik tahminler yapıyorsunuz. Tecrübe dediğimiz şey, hatalarınızın birleşkesi diyebiliriz. Burada da aynı mantığı kullanacağız.
+
+85
+00:15:17,331 --> 00:15:23,331
+Hatayı biz bu derste dört kısma ayırıyoruz. Pickle birimi aslında sabah incelediniz.
+
+86
+00:15:23,331 --> 00:15:30,331
+Frankation, yani Rhoff, kesmeden kaynaklı hata, bağıl hata, mutlak hata, bir de yuvarlama hatası. Bunları şimdi tek tek inceliyoruz.
+
+87
+00:15:30,331 --> 00:15:41,331
+Şimdi trans kesme hatası ile alakalı şey, herhangi bir açılımı yapıyorsunuz. Bu açılım ne demek? Bir fx fonksiyonumuz var, çok karmışık bir fonksiyon.
+
+88
+00:15:42,035 --> 00:16:06,435
+Bunun daha basit fonksiyonlar cinsinden yazılması gerekebilir. Basit fonksiyonlar dediğimizde aslında üniversite sınavında fonksiyonları genelde beş gruba ayırıyoruz. Bu beş grubu söyleyebilecek anlamlar mı? Bunun bir kelimesi var. Hatta integral alırken o kelimeden yola çıkarak kolaylık sağlamaya birazcık.
+
+89
+00:16:07,923 --> 00:16:09,923
+Lapte hocam.
+
+90
+00:16:09,923 --> 00:16:33,740
+Lapte. Logaritmik, arktan, arktan, polinom, trigonometri ve üstte, eksponansı. Bunlar için de logaritmik, polinom ve üstel kontrolünün çok temiz bir kontrol. Hele logaritmayla polinom, hatta polinom çok çok temiz, çok güzel bir kontrol. Türevini almak kolay, integralini almak kolay değil mi?
+
+91
+00:16:33,844 --> 00:16:38,204
+polinom dereceyi arttırıyorsun, azaltıyorsun, paydayı arttırıyorsun, ilgili.
+
+92
+00:16:38,204 --> 00:16:43,884
+Hangi fx fonksiyon olursa olsun, ben bunu polinom cinsinden yazabilirsem
+
+93
+00:16:43,884 --> 00:16:49,964
+çok rahat bir şekilde bunun diğer matematiksel işlemlerini hesaplayabilirim. Mantığımız bu.
+
+94
+00:16:49,964 --> 00:16:56,364
+Bunu yaparken de seri açılımları, decomposition dediğimiz aslında, bu açılımdan kastımız.
+
+95
+00:16:56,364 --> 00:17:01,244
+Bunu kullanacağız. Polinom bir açılımdır.
+
+96
+00:17:01,312 --> 00:17:05,311
+Şimdi trigonometrik de aslında çok işimize eriyor. Özellikle kosünüs ve sinüs.
+
+97
+00:17:05,311 --> 00:17:18,311
+Kosünüs ve sinüs nerede? Mümanist olarak nerede yarayacak? Biz sinyal işleme üzerinde çalışacağız aslında çoğu konuda. Siz de ikinizden itibaren bu konulara daha çok yatkınlık kazanacaksınız.
+
+98
+00:17:18,311 --> 00:17:26,311
+Sinyal dediğimiz şey bir işaret, yani bir fonksiyon aslında. Bu fonksiyonların en doğal hali de doğada bulunan hali kosünüs ve sinüs.
+
+99
+00:17:27,092 --> 00:17:31,771
+Bunu şöyle görebilirsiniz, mikrofonla hoparlörü birbirine yaklaştırırsanız ne olur?
+
+100
+00:17:37,523 --> 00:17:39,523
+Neyle karşılaşırsınız?
+
+101
+00:17:39,523 --> 00:17:41,523
+Yankı sesiyle mi?
+
+102
+00:17:41,523 --> 00:17:42,523
+Ya da yankı.
+
+103
+00:17:42,523 --> 00:17:46,523
+Yankı, böyle böyle rahatsız edici bir ciyaklama sesi.
+
+104
+00:17:46,523 --> 00:17:51,523
+Yaklaştırdıkça iyice artar, frekansı artar çünkü uzaklaştırdıkça biraz azalır.
+
+105
+00:17:51,523 --> 00:17:57,515
+Bu şeye sesin dalga formuna bakarsanız, cosinus veya sinuse benzer bir şey görürsünüz.
+
+106
+00:17:58,228 --> 00:18:07,228
+Kosinüsün ve sinüsün türevini, integralini almak da kolay değil mi? Sonsuz defa bir kere istediğiniz kadar türevini alabiliyorsunuz. Mesela polinomun sonsuz defa türevi alınamıyor.
+
+107
+00:18:07,228 --> 00:18:14,228
+Bir yerden sonra sabit fonksiyon sıfıra geliyorsunuz değil mi? Ama trigonomik bir fonksiyonlar bu açıdan daha faydalı olabilir.
+
+108
+00:18:14,228 --> 00:18:22,228
+Herhangi bir fonksiyonu eğer sonsuz defa türevlenebiliyorsa seri haline getireceğiz. Buradaki sonsuzluktan kastımız da
+
+109
+00:18:22,483 --> 00:18:28,123
+Mutlak sonsuzluk değil, fonksiyonun kendisine göre göreceli sonsuzluktan bahsediyoruz. Bunun sonsuzluğu nedir?
+
+110
+00:18:28,123 --> 00:18:35,283
+Bir derece türevini alırsın, ikinci dereceye düşer. Bir daha alırsın, birinci dereceye düşer. Bir daha alırsın, sıfır önce dereceye sabitliklerini. Bir daha alamazsın.
+
+111
+00:18:35,283 --> 00:18:42,203
+Yani görde kadar gibi. Bunun üzerinden herhangi bir fonksiyonu daha basit fonksiyonlar değilsinden yazacağız.
+
+112
+00:18:42,203 --> 00:18:48,283
+Gerek polinom, gerek trigonometrik, geri geldiğinde logaritmik, üstüme üstte, arttanca bizim burada çok fazla işimiz yok.
+
+113
+00:18:48,980 --> 00:18:54,740
+Bu işi yaparken, tabii gerçek var, konfisyonun aslı var, bir de onun yaklaşımı var.
+
+114
+00:18:54,740 --> 00:19:01,140
+İşte bu gerçeğe ne kadar yaklaştığımızı döngülerle ifade edeceğiz, döngüle.
+
+115
+00:19:01,140 --> 00:19:06,980
+Durduğumuz yerden sonrası, yani gerçekten yaklaştığımız yere kadar ki olan fark,
+
+116
+00:19:06,980 --> 00:19:13,980
+sonsuz mesela, diyoruz da, siz burada başladınız, buraya kadar geldiniz, şu kadar yaklaşım yaptınız, döngüle.
+
+117
+00:19:16,180 --> 00:19:27,680
+Epsilon bir kesme hatasıdır. Örnekleri gelecek. Bunun için önce hazırlıklar var. İşte Taylor-McLawin serilerinin açılımları, bunları kalkıp da gördüm. Bir de hızlıca tekrar edelim.
+
+118
+00:19:27,680 --> 00:19:36,680
+Fonksiyonu türevi nasıl almıyor? Bu bir kolinom fonksiyonu olduğu için çok kolay azaltıp türevi alabiliyorsunuz. Tabii bir yerde bu duruyor.
+
+119
+00:19:36,680 --> 00:19:43,052
+Şöyle bir fonksiyon olsa, e üzeri bir şeyin türevi nasıl almıyor? Önce üstün türevini alıyorsunuz.
+
+120
+00:19:43,380 --> 00:19:59,380
+iki üzeri isim türevi iki. Sonra üstünüze kendisini aynı yazıyorsunuz. Sonra işte iki var. Bu bu şekilde hani başka bir şey. E olduğu için bir de Elene var da Elene biridir bu böylen kılıyor. Sonra tekrar bir daha uzatayım. Bu şekilde devam ediyor.
+
+121
+00:19:59,380 --> 00:20:09,380
+Ve tükkanı derseniz bakın bunun türevi sonsuza kadar artabilir. Aslında e üzeri x dediğimiz fonksiyon neden sonsuza gider?
+
+122
+00:20:10,355 --> 00:20:18,955
+Bunun bir şeyi var. Türevi neden sonsuz tane alınabilir? Çünkü bu aslında şeydir arkadaşlar, cos artı sinist gibi fonksiyonudur.
+
+123
+00:20:18,955 --> 00:20:28,556
+Buna e üzeri j x de çarparsak cos x artı y çarpı sinist şeklindedir. Cos'in de sonsuz tane türevi var, sinist'in de sonsuz tane türevi var.
+
+124
+00:20:28,556 --> 00:20:33,155
+Bu türevi de sonsuza kadar ilerleyebilir. Bunu da söylemiş olalım.
+
+125
+00:20:33,299 --> 00:20:44,699
+Dolayısıyla böyle bir durumda da biz herhangi bir fonksiyonu e-li fonksiyonlar türünden, dolayısıyla bir anlamda da kosinüs ve sinüsler türünden ne yapabiliyoruz? Açabiliyoruz.
+
+126
+00:20:44,699 --> 00:20:53,900
+Bu fonksiyon dediğim şey karmaşık. Yani bilmediğimiz farklı bir fonksiyon. Buradaki böyle güzel bir fonksiyon değil. Dersin ilk slide'larında vardı ya böyle karmaşık fonksiyon.
+
+127
+00:20:53,900 --> 00:20:59,299
+Bunun şeyini getireceğiz. İşte buna da seriler diyoruz. Taylor-Mectorn serisi.
+
+128
+00:21:01,364 --> 00:21:12,963
+Şimdi, McLaurin açılımı Taylor'ın özel bir hali. Eğer bu açılımı x eşittir 0 noktasında yapıyorsanız, bu McLaurin'ı diyor, x eşittir k gibi bir noktada yapıyorsanız, bu da Taylor açılımı oluyor.
+
+129
+00:21:12,963 --> 00:21:29,164
+Yani burada x0 demişiz miyim değil, x0'ı 0 alırsanız, bu McLaurin diyeceğiz. Genel formülü şudur arkadaşlar, herhangi bir fx fonksiyonunun f'in x0 noktasındaki değerini yazıyoruz. Artı f'in türevinin x0 noktasındaki değeri çarpı x-x0.
+
+130
+00:21:29,460 --> 00:21:40,460
+Şimdi, hocam fonksiyon zorsa türevini nasıl alacağız diyebilirsiniz. Bunun da yolu var. Bunun da nümerik yolları gelecek. Zor olan bir fonksiyon, türevi de bazen zor alınabilir.
+
+131
+00:21:40,460 --> 00:21:48,460
+Ama bunun da kolayı var, algoritmiz olarak. Bu şekilde açılımlar Taylor açılım diyor. Ben bu açılımı herhangi bir yerden kestim.
+
+132
+00:21:48,460 --> 00:21:56,268
+8. dereceden olana kadar yazalım, sonrasını yazmayabilirim. Önce kısım kesmemesan da olacak bu kadar.
+
+133
+00:21:56,339 --> 00:22:03,339
+Bunu MacBorre's için yaptığımızda, şimdi x0 noktasının yerine 0 verirsek ne olacak? Şurası x olacak.
+
+134
+00:22:03,339 --> 00:22:14,339
+E burası ne olacak? x'in karesi olacak. Yani bu fonksiyonun 0'daki değeri, türevinin 0'daki değeri, 2. derecenin türevinin 0'daki değeri, artı x kare.
+
+135
+00:22:14,339 --> 00:22:20,907
+Sabahki şeye çok benziyor bakın. Hani sadece şuraya bir şey gelmiş. Biz sabah neye baktık? e üzeri x'e mi baktık?
+
+136
+00:22:21,971 --> 00:22:40,211
+Bakın ikili ders yapıyoruz, evde de ikisi bakmıştık arkadaşlar. Burada herhangi bir fx fonksiyonu için bunu yaptığımızda yanında bir türev bilgisiyle geliyor. Bunların nereden türediği, McDoor'un ve Taylor serilerinin açılımlarının nereden geldiğini ispatlarına ayrıca bakarıştığında bizim burada çok fazla işimiz yok.
+
+137
+00:22:41,107 --> 00:22:56,107
+Şimdi, yine şu örnekle başlayalım. e'lere x'in x'eşit bir noktasındaki Taylor açılımının ilk 4 türevinin yazılması. Şimdi bir fonksiyonun kendi değeri var. Sonra türevindeki değeri var. Ve x-1 değeri var.
+
+138
+00:22:56,107 --> 00:23:08,107
+İkinci türevindeki değeri var. x-1'in karesi bölü 2 faktörü. Aslında şurada 0 faktörüel, 1 faktörüel var da. Onlar 1 olduğu için yazılmıyor. Şurada 3. dereceden türevinin
+
+139
+00:23:08,692 --> 00:23:30,692
+Bunlar hep böyle zaten aynı değerler. Bakın ne oldu? Ben bu fonksiyonu x eşittir bir noktasındaki değerini bulmak için yani e üzeri biri hesaplamak için eğer elimde e sayısının ne olduğuna dair bir şey yoksa, gerçi burada hani yine e sayısına ihtiyacımız var da, bu format halinde yazabiliyoruz. Gerçeğe bu şekilde yaklaşabiliyoruz.
+
+140
+00:23:36,819 --> 00:23:49,819
+e üzeri x yani e üzeri birin gerçek değeri belli. Bundan da şu elde ettiğimiz f x'i çıkartırsak, işte buna kesme hatası diyeceğiz.
+
+141
+00:23:49,819 --> 00:24:00,819
+Şurada da cos'ünün açılımı var. Bu sizin şeyde zaten ödeviniz, yapısalın ödev dediğim, yani çalışma sorusu olarak bulunuyor. Burada da analitik kısım var bakın.
+
+142
+00:24:01,428 --> 00:24:08,148
+Türevlerini alıyoruz. İlk üç terim dediği için, ilk üç terimi dördüncü dereceden türeve kadar geçeceğiz.
+
+143
+00:24:08,148 --> 00:24:12,468
+Sıfırdan farklı ilk üç terim dediği için sıfırdan farklı olanları atıyoruz.
+
+144
+00:24:12,468 --> 00:24:17,268
+Bu sıfırdan sıfır, şu da sıfır. O zaman beşinci terime kadar gideceğiz demektir.
+
+145
+00:24:17,268 --> 00:24:24,308
+F'in sıfırdaki değeri, f'in türevinin sıfırdaki değeri çarpı x-0. Yani burası böyle. O zaman bunu da atıyoruz.
+
+146
+00:24:24,915 --> 00:24:32,155
+Türevinin ikinci sıfırdaki değeri çarpı x kare bölü 2 faktörü yer, o şu geldi.
+
+147
+00:24:32,155 --> 00:24:46,915
+Sonra bu bu geldi, bu da bu diğeri geldi. Ne oldu bizim için? 1 artı eksi, şöyle diyelim, 1 eksi x kare bölü 2 artı x üzeri 4 bölü 20.
+
+148
+00:24:48,468 --> 00:24:56,468
+Lise zamanını hatırlarsanız tek ve çift fonksiyonlardan bahsetmiştik değil mi? Bahsettiğim gibi öğrendiğimiz gibi sanki ordaymışım değilim.
+
+149
+00:24:56,468 --> 00:25:00,468
+Tek çift fonksiyon neydi arkadaşlar?
+
+150
+00:25:02,468 --> 00:25:05,468
+Ya bunu kalkıp usta da geçen dönemde görmüştüm.
+
+151
+00:25:05,468 --> 00:25:08,468
+Orijinaliyorum, y-e göre simetrik olan fonksiyonlar.
+
+152
+00:25:08,468 --> 00:25:13,196
+Öyle de bir de matematiksel olarak söyleyelim hani bunu eşitlik olarak.
+
+153
+00:25:13,683 --> 00:25:16,683
+fx eşittir f eksi x olunca...
+
+154
+00:25:16,683 --> 00:25:20,683
+Evet, fx eşittir f eksi x olunca...
+
+155
+00:25:20,683 --> 00:25:26,683
+Yani, siz cos 90 ile cos eksi 90'ı aynı değere olduğunu görüyorsunuz.
+
+156
+00:25:26,683 --> 00:25:29,324
+Bunu da görmek için ne yapacağız? Birim çember kullanacağız.
+
+157
+00:25:30,099 --> 00:25:40,259
+Şurası cos-ekseni, burası sin-ekseni. 90 burada cos-90'ın değerine 0. cos-90'ın değeri de 0.
+
+158
+00:25:40,259 --> 00:25:56,259
+Şurası 90 ise falan değil. Buradan çıkarmı yapabiliriz. Şimdi burada açılıma dikkat ederseniz, terimlerin derecede bu x üzeri 0'lı terim, x üzeri 2'li terim, x üzeri 4'lü terim, bakın çift bir fonksiyon.
+
+159
+00:25:56,288 --> 00:26:22,888
+terimleri hep çift dereceli terimlerle ilgili. Bu rastlansal bir şey değil. Sinüsü de açtığımızda tek dereceli terimleri görürsünüz. Tamam mı? Bunu da burada hani böyle şey üzerinde göstermiş olabilir. Evet. Bu açılım bu şekilde. Şimdi üçüncü dereceden Taylor polinomunu açmak istediğinizde eğer böyle bir elimizde şey varsa içeri küfe kadar açamıyorsunuz.
+
+160
+00:26:23,923 --> 00:26:28,003
+Eğer dördüncü derecesi x üzeri 4. Eğer sonsuzsa sonsuza kadar açabilirsiniz.
+
+161
+00:26:28,003 --> 00:26:35,803
+Şimdi dördüncü dereceden bir Taylor açılımında kesme hatası olabilir mi? Olabilir. İkinci dereceye kadar açarsınız.
+
+162
+00:26:35,803 --> 00:26:41,923
+Üç ve dördüncü derecelerin hatalarını dahil etmezsiniz terimini. Oradan bir kesme hatası bulursunuz.
+
+163
+00:26:41,923 --> 00:26:48,923
+Ama genellikle biz bunu sonsuza uzayan durumlarda söylüyoruz. Yani üç beş tane terim olduğunda zaten o hesaplamalı bir ilişki.
+
+164
+00:26:50,836 --> 00:27:09,483
+Serilerin genel formülde şu şekilde herhangi bir fonksiyon, bu fonksiyonun türevleri ve türevlerin x eşittir sıfır noktasındaki değerli bir çarpımı bölü m faktüriyel, çarpı x eksi x eksi sıfır noktasındaki enicilerinden bir polinomla hesaplanıyor.
+
+165
+00:27:17,844 --> 00:27:45,740
+Mikrofonlarımıza dikkat edelim arkadaşlar. Şimdi fonksiyon karmaşıksa bakın şurası arkadaşlar tam bir polinom fonksiyonu. Yani çok temiz bir fonksiyon olarak elimize gelir. Biraz şurası sıkıntılı ama burada da fonksiyonun elinci mertebeden türevin x0 noktasındaki sayısal değeri lazım. Bize bir fonksiyon gelmiyor. Yani bu bir kat sayı.
+
+166
+00:27:46,132 --> 00:27:53,852
+Şimdi burada fonksiyonun türevini alıp orada yerine sıfır koymamıza gerek yok. Yani zor bir fonksiyon dedik ya, onun için türevi de zor.
+
+167
+00:27:53,852 --> 00:28:04,731
+Bunu yine nümerik yöntemlerle elde edip, dolayısıyla şuradaki katsayı, daha sonra n! de bir katsayı, alıp şurada polinomsal bir ifade elde ediyoruz.
+
+168
+00:28:04,731 --> 00:28:11,731
+Yani bunu en genel haliyle yazacak olursam, a0 çarpı x üzeri 0.
+
+169
+00:28:11,955 --> 00:28:21,955
+artı A1 çarpı x üzeri 1 artı A2 çarpı x üzeri 2 gibi ifadeler göreceğiz. Yani bu polinoması.
+
+170
+00:28:21,955 --> 00:28:34,955
+Tamam mı? Şu A0'lar nereden geliyor? Yani şunların hepsi A0'dan, yani şöyle diyelim, şu A n diyeceğiz artık buraya göre, n'e göre değişen farklı katsayılar. Şuradaki kesirsel ifade.
+
+171
+00:28:36,948 --> 00:29:03,388
+McLaur'un serisi olduğunda da işte yani en genel hali işte şuraya x-0 yazmanın bir anlamı yok. Ne oluyor? Doğrudan burası x'leri n şeklindir. Bunun genel hali de işte a, yani şöyle diyeyim, şöyle yapalım. n eşittir 0'dan sonsuza kadar a0 çarkı x'leri n'dir. Şu fx konsüminin yaklaşık hali.
+
+172
+00:29:06,003 --> 00:29:14,703
+Şimdi artık bunun türevini almak da kolay, integralini almak da kolay veya köklerini bulmak mesela o da çok kolay. Kolinom kökleri çok rahat bulunabilir.
+
+173
+00:29:14,703 --> 00:29:19,703
+Algoritmik yöntemlerle daha temiz bir hale dönüştürmüş oluyoruz.
+
+174
+00:29:21,703 --> 00:29:31,884
+Evet, mesela şu örneğe baktığımızda işte fx eşittir e-vdere x fonksiyonu varmış. Yani basit fonksiyonlar üzerinden gidiyorum. x eşittir dört noktasındaki Taylor serisini buluyoruz.
+
+175
+00:29:32,115 --> 00:29:36,635
+Bu e üzeri x'e sonsuza kadar türevlerini kullanacağız.
+
+176
+00:29:36,635 --> 00:29:44,836
+Daha sonra bunu bir f n formatında yazıp yerine gireceğiz, dört değerini koyacağız.
+
+177
+00:29:44,836 --> 00:29:46,915
+Bir de bunun gerçek değeri var, e üzeri dört.
+
+178
+00:29:46,915 --> 00:29:51,875
+Bundan bunu çıkarttığımızda elbette sonuçta ne olacak? Kesme hatası olacak.
+
+179
+00:29:51,875 --> 00:29:55,996
+e üzeri x yaklaşık olarak nedir?
+
+180
+00:30:00,000 --> 00:30:25,000
+x üzeri x eksi dördün en ince kuvveti bölü en ufak bir. Bunu bir algoritmayla kaça kadar, sabah mesela biz on beşe kadar açmıştık bir şeyi, on tane açarsınız, on tane açtıktan sonra elbette gelen şeyle şunun arasındaki gerçek farkla bakarsınız, o sürü kesim hatanız olur. Anlaşılmayan bir şey var mı burada? Gayet lise seviyesinde bir masa matematikle gidiyoruz aslında.
+
+181
+00:30:30,228 --> 00:30:31,228
+Devam edelim.
+
+182
+00:30:33,228 --> 00:30:41,228
+İkinci dereceden Taylor polinomunu yazalım demiş. İkinci dereceden o zaman ne olacak? x kareli terime kadar açacağız demektir.
+
+183
+00:30:41,228 --> 00:30:53,228
+Burada e zeri 4 çarpı x eksi 0'ın 0. kuvveti değil yani e zeri 4 var. Sonra x eksi 4'ün birinci kuvveti çarpı e zeri 4 var.
+
+184
+00:30:53,652 --> 00:31:00,372
+e üzeri dört karpı x eksi dördünün karesi var. Bu ne oluyor? Bu hale geliyor. İşte burdan da bir kesme hafızı elde edilir.
+
+185
+00:31:01,331 --> 00:31:07,051
+Tabi bu fonksiyon böyle e var, burada da e var. Çok anlamsız görünebiliyor ama mesela şöyle bir fonksiyon olsa.
+
+186
+00:31:07,531 --> 00:31:09,484
+Bir bölüksinin türevi neydi?
+
+187
+00:31:12,564 --> 00:31:14,564
+Bir bölü x'in türevi.
+
+188
+00:31:14,564 --> 00:31:16,564
+Bir bölü x kare.
+
+189
+00:31:16,564 --> 00:31:20,564
+Eksi bir bölü x kare. Bu türevi var. Integral nasıl almıyor?
+
+190
+00:31:20,564 --> 00:31:22,564
+Elenik.
+
+191
+00:31:22,564 --> 00:31:38,412
+Elenik, tamam. Elenik mesela aklımıza gelmese. Ben mesela fx'in integralinin x eşittir işte belli aralıktaki alan hesabını yapacak olsam aklıma gelmedi mesela. Ne diyeyim, bulamadım. Veya çok daha karmaşıklı. O zaman...
+
+192
+00:31:38,644 --> 00:31:49,364
+Bunu Taylor serilerini açıp, polinom şeklinde dönüştürüp, o polinomun belirlenen aralıkta integralini alırsam aynı hesabı 3 aşağı 5 şukarı yapmış oluyoruz.
+
+193
+00:31:49,364 --> 00:31:57,164
+Evet, yani yapacağımız şey ikinci x-axis'in iki noktasındaki Taylor serisi deyince genel hali şudur.
+
+194
+00:31:57,164 --> 00:32:05,964
+Hap'in türevlerindeki iki değerlerini bulacağım. Bu bir katsay olacak. x-axis'in ikinin de eninci dereceden kuvvetlerine bakacağız.
+
+195
+00:32:06,228 --> 00:32:21,228
+kolinomsal olarak yazacağız. Şöyle bir baktığında birinci dereceden türevi şudur, ikinci dereceden türevi budur, üçüncü dereceden türevi budur. Bakın ne oluyor? Bir artılı bir eksili gidiyor. Sabahki örneklerden birine benziyor.
+
+196
+00:32:21,228 --> 00:32:34,188
+En genel hali şu şekilde yazılır. İşte bunun nereden türevini alındığını şurada söylemişiz. Px'in en ince dereceden türevinin en genel hali şu zaman bunları yerine koyduğumuzda
+
+197
+00:32:34,579 --> 00:33:02,379
+Neyi buluyoruz? Eksi bir üzeri n. Neden eksi bir görüyorum? Bir artılı bir eksili gittiği için. Sonra iki üzeri eksi n eksi bir, bunlar farklı türevlerde verdiğimiz değerler. Bir de x eksi ikinin n'inci dereyden kuvvetli. Şu n'in 0, 1, 2, 3 değerlerine göre buradan artılı eksili bakın katsayılar gelecek. Aynı pi sayısı örneğinde olduğu gibi sabah içinde. Bu katsayılarla şu polinomsal ifadeleri çarpacağız. Devam edelim.
+
+198
+00:33:03,028 --> 00:33:05,427
+Buradan açılımı bulmuş olacağız.
+
+199
+00:33:08,692 --> 00:33:17,011
+e üzeri 2x'in McTorne serisi, bu daha kolay. Türevlerini alıp alıp gidiyoruz. Bakın türevlerini aldığımızda şöyle genel bir ifade oluyor.
+
+200
+00:33:17,011 --> 00:33:25,491
+Burada bize şu ifadeyi açarken kolaylık sağlıyor bakın. Genel ifade nedir? e üzeri 2x n eşittir 0 iken,
+
+201
+00:33:25,491 --> 00:33:32,692
+birinci mertebeden türevi aldığında 2 çarpı e üzeri 2x, ikinci mertebeden türevi aldığında 4 çarpı e üzeri 2x. Yani bu,
+
+202
+00:33:33,203 --> 00:33:42,443
+iki üzeri k çarpı e üzeri iki x şeklinde giden ve en genel haliyle n'e bağlayabilecek olursak, iki üzeri n çarpı e üzeri iki x şeklinde bir
+
+203
+00:33:43,203 --> 00:33:47,124
+genelleştirilmiş türev fonksiyonu var. O zaman bunu e üzeri iki x'i
+
+204
+00:33:47,524 --> 00:33:50,524
+sıfırdan sonsuza iki üzeri n çarpı
+
+205
+00:33:51,483 --> 00:33:57,644
+e üzeri iki x'in de burada tabii şeyini alakıyordur, x'in elineceği derinden kuvveti değiliz ama
+
+206
+00:34:01,152 --> 00:34:07,152
+Renfaktör yerliye ifade edeceğiz. Ve bakın ne oldu? Bu nasıl açılır? Şöyle açalım bir tane.
+
+207
+00:34:07,152 --> 00:34:20,152
+En eşittir 0 verdiğimizde burası 1. Şu 0 üzeri x üzeri 0 da x'dir. Şu da 1'dir. Yani sadece x geldi. Değil mi? Pardon 1 geldi.
+
+208
+00:34:20,152 --> 00:34:26,152
+Artı 1 verdiğimizde 2. Aşağıda da 1 var. Ne olacak? 2 çarpı.
+
+209
+00:34:26,420 --> 00:34:52,059
+x üzeri 1, artı, 2 verdiğimizde, 2'nin karesi 4, aşağıda da 2 var, yine 2 çarpı x'in karesi, artı, 3 verdiğimizde 8, 8 bölü 6, 4 bölü 3, yanlış yapmıyorsam, x üzeri 3 böyle devam edip gidiyor. Hiçbir şekilde eksisi falan yok. Ne oldu? Bakın bildiğimiz güzel bir polinom. Bunun üzerinden işlem yapmak çok çok daha kolay. Ama hata var mı? Elbette var.
+
+210
+00:34:53,396 --> 00:35:04,796
+Evet, geldik hani şeye, açıklamasına. Bir değerin hesaplanması için sonsuz sayıda terim alınması gerekirken, sonlu sayıda terim alınıyorsa oluşan hataya kesme hatası deniyor.
+
+211
+00:35:04,796 --> 00:35:16,796
+Yani biz burada sonsuz defa türev almak yerine bunu bir yerde durduralım. Belli bir hassasiyet bizim için yeterlidir diyebiliyorsak, işte bu durdurduğumuz yerden sonraki şey bizim için kesme hatası olacak.
+
+212
+00:35:18,099 --> 00:35:38,899
+yeni terimler ekleyerek iteratif olarak elde ettiğimiz, yaklaşmak istediğimiz sonucu burada buluyoruz. Taylor serisi bir fonksiyonun herhangi bir x noktasındaki değerini, fonksiyonun ve türevlerinin o x noktasındaki değerleri değilsinden fahmin edilmesine olanak sağlar. İşte bak, şu fahminin meselesi zaten size kesme hatası olduğunu söyleyebilmesi lazım.
+
+213
+00:35:39,123 --> 00:35:47,123
+ne yapıyoruz? Oraya yaklaşıyoruz. Yaklaştığımız için de bir yerde durmamız gerekiyor. İşte oturduğumuz yerden sonrası hatamız olacak.
+
+214
+00:35:49,123 --> 00:35:57,123
+Evet, şimdi mesela bunun McLaurin serisi açılımını yaptık biraz önce. Şunu hızlıca anlatayım. E'lizleri x'i böyle bulduk.
+
+215
+00:35:58,123 --> 00:36:05,123
+Siz herhangidir e değerini bulmak istiyorsanız. E'lizleri 100. Bunun gerçekliğini hesaplayabilirsiniz.
+
+216
+00:36:05,972 --> 00:36:22,872
+e üzeri 20'de, işte diyorsunuz ki şuradan x üzeri 4'e kadar açayım. 1 artı x yerine 100 koyacağım. 100 artı 100'ün karesi bölü 2 artı 100'ün küpü bölü 6 artı 100'ün 4. kuvveti bölü 24.
+
+217
+00:36:34,099 --> 00:36:36,099
+Tamam, bu bence.
+
+218
+00:36:36,099 --> 00:36:38,099
+Onlar şimdi yanlıyor.
+
+219
+00:36:45,176 --> 00:36:46,668
+Hata analizy.
+
+220
+00:36:44,532 --> 00:36:46,532
+Şurada daha detaylı olarak görebiliyorsunuz.
+
+221
+00:36:50,643 --> 00:36:52,983
+Bu 5-6 artık nereye kadar gidiyorsa
+
+222
+00:36:52,983 --> 00:36:55,163
+belli bir kriter olur.
+
+223
+00:36:55,403 --> 00:36:58,023
+O kriterye göre mesela terim eklersiniz gibi.
+
+224
+00:37:00,883 --> 00:37:04,703
+E üzeri 1.5 değerini tahmin edelim demişiz.
+
+225
+00:37:04,903 --> 00:37:05,803
+Yaklaşık değerini.
+
+226
+00:37:05,923 --> 00:37:08,323
+O zaman ne yapacağız? Şuradakine göre gideceğiz.
+
+227
+00:37:09,263 --> 00:37:10,803
+Kaçıncı dereceden? Üçüncü dereceden.
+
+228
+00:37:10,943 --> 00:37:12,243
+O zaman şuraya kadar alacağız.
+
+229
+00:37:13,763 --> 00:37:14,683
+Bunları yerine koyacağız.
+
+230
+00:37:15,003 --> 00:37:16,803
+Bir de E üzeri 1.5'ün gerçek değeri var.
+
+231
+00:37:18,452 --> 00:37:20,452
+Şurası bizim kesme hata.
+
+232
+00:37:25,876 --> 00:37:33,476
+e üzeri bir buçuğun gerçek değeri hesap makinesinden veya bir yerden aldığımız günü buldunuz. Hesapladığımız değer de şuydu.
+
+233
+00:37:33,476 --> 00:37:42,676
+Bu algoritmik olarak hesaplanabilir bir şey. Sabah gördük, kodlarla yapılabilir. Sonra bunu hata olarak bulabiliriz.
+
+234
+00:37:42,676 --> 00:37:50,076
+Şimdi bu hafta olmaz da belki gelecek hafta şey yapacağım. Bu fonksiyonların laf tü dedik ya biraz önce.
+
+235
+00:37:52,403 --> 00:38:17,403
+Projenizi de yapabilmek için C dilinde veya C'de öğrenirseniz diğer dillerde de kolay aslında. Nasıl modellenebileceğini konuşuyoruz. Bu hafta belki yetiştiremeyelim ama gelecek hafta böyle bir yer mesaj dilinde konuşacağız. Yani C'den örnekler yaparak kullanacağım. Mantığı öğrendikten sonra yani bu bu kadar kolay bir işleyip artık bu dersin projesine şimdiden bile başlayabileceksiniz.
+
+236
+00:38:21,492 --> 00:38:28,912
+Şimdi size bir fonksiyon verilmiş, böyle bir fx fonksiyonu verilmiş ve şu başlangıç değerleri verilmiş.
+
+237
+00:38:29,692 --> 00:38:43,512
+Şimdi bu x eşittir sıfır noktasından başlayarak h eşittir bir, yani x i artı bir artı h değeri alarak f1 değerini dördüncü dereceye kadar açan Taylor serileri de yaklaşık hesabını yapacağız.
+
+238
+00:38:44,012 --> 00:38:45,811
+Yani ne diyor burada söylediği şey?
+
+239
+00:38:46,547 --> 00:38:54,547
+Bu fonksiyonun dördüncü dereceden Taylor serilerini al ve f'teki f1 değerini bul gibi.
+
+240
+00:38:54,547 --> 00:39:02,547
+Şimdi f'in 1'deki değeri ve f'in 0'daki değeri yerine koyduğunuzda f0 ve f1 yaklaşık olarak 1.2'miş.
+
+241
+00:39:02,547 --> 00:39:08,547
+Sonra bunların türevini alıp Taylor serisi açımına koyduğunuzda
+
+242
+00:39:08,784 --> 00:39:23,384
+f1 ne oldu? f0 artı, f'nin türevinde 0 çarpı x. Buradan böyle bir şey buluyoruz bakın. Sonra ikinci dereceden f'in 1'deki değerini bulduğumuzda böyle bir şey geldi. Bunu yerine koyduğumuzda 0.95.
+
+243
+00:39:23,384 --> 00:39:31,384
+İkinci dereceden bulurken, bu sefer ikinci dereceden türev de işin içine giriyor. İkinci dereceden türev işin içine girince şurayı bulduk bakın.
+
+244
+00:39:31,539 --> 00:39:58,940
+Yani yukarıdakine 1.2-0.25x'e ne geldi? 0.5x² geldi. Burada yerine koyduğumuzda türev değerlerini 0.45 gibi bir şeye bulmuşuz. Sonra bir terim daha ekliyoruz. Neyi ekledik? Eksi 0.15x4, buradan 0.3'ü bulduk. Bir daha eklediğimizde, şöyle genel halini söyleyecek olursak, 0.1-0.1.
+
+245
+00:39:59,184 --> 00:40:26,784
+x'leri dördü biliyoruz. Bunun sonucu da 0.2'ymiş. Nihai olarak bulduğumuz sonuç 0.2. Ondan önce 0.3. Ondan önce tablo şeklinde eksi 1 var, 0.25 var. Gerçek değerimiz ne? f1 0.2'ymiş. Yani şunu fonksiyonu yerine koyduğumuzda bir yazınız 0.2'yi buluyorsunuz. Peki, neyi gördük? 0.2'ye
+
+246
+00:40:27,539 --> 00:40:51,939
+Birebir eşleşen dördüncü derecede ne kadar geldiğinde bir şey bulduk. Niye dördüncü derecede bulduk? Çünkü zaten kendisi dördüncü derecede. Sonsuza kadar gitmeye, yani sonsuzu bunun dört. Burada biraz göreceli bir sonsuz var, tamam mı? Tam hatasız hale getirdik. Zaten dikkat ederseniz, şurada da dikkat ederseniz, aslında ifadenin kendisini elde etmiş oluyoruz bir anlamda.
+
+247
+00:40:52,916 --> 00:41:17,916
+Sadece bilgimi sağlamış olduk. Burada dördüncü dereceden ne kadar aştığımızda kesme hatasını sıfır olduğunu görüyoruz. Şimdi kesme hatası bir öncekinde işte iki nokta dört eksi sıfır nokta iki dediğinizde veya sıfır nokta iki iki eksi sıfır nokta dört dediğinizde bir şey çıkıyor. Ondan öncekinde bir başka bir şey çıkıyor. Böyle yalpalan veya yalpalan, değişe dalgalan da bir şey var. Ama sonuncuda tam bir yerini bulmuş oluyorsunuz.
+
+248
+00:41:19,987 --> 00:41:29,587
+Evet, bir başka sorumuz. Cosinus pi bölü 5. Şimdi pi dediğimiz şey ne? 180 derece. 180'i 5'e bölersek 36 mı oluyor? Cosinus 36.
+
+249
+00:41:30,587 --> 00:41:42,587
+Bunun değerini trigonometri cihazlarından bulabiliriz. Ama ekranın serileriyle açılıp yapabiliriz. O zaman bunu yazacağız.
+
+250
+00:41:43,572 --> 00:42:00,572
+Şimdi birinci terim ne olacak? Cos x çarpı x eşittir 0 noktasındaki değer. Yani f'in içerisine 0 değeri verdi. Buradan elde ettiği şey 1. Sonra bunun birinciden türevini alıyorsunuz. Cos'un türevi eksi sinüstür. Bunu da şöyle hatırlatalım.
+
+251
+00:42:08,880 --> 00:42:25,880
+Kosinus, şöyle giderseniz türev almış olasınız. Sinüsten kosinuse, kosinusten sinuse, işte bu türevdir. Tersi yönde yani bu türev ise tersi yönde integral olacak. Kosinusten eksi sinuse. Yerine sıfır koyduğunuzda işte bu sıfır değerini aldı.
+
+252
+00:42:25,880 --> 00:42:36,684
+İkinci dereceden türevi aldık. Eksi kosinus x çarpı türevi. Türevde sıfır değerini verdiğinizde bu değer gibi ne olacak? Kosinus sıfırın.
+
+253
+00:42:36,755 --> 00:42:45,755
+değerini yazacaksın, o da zaten sıfır. Önündeki eksiden dolayı şuraya bir eksi, şuraya da x-0'in karesi, x kare geliyor, aşağıda 2 geliyor.
+
+254
+00:42:45,755 --> 00:42:58,755
+Bu yaptığım şeyi anlayamam mı var mı arkadaşlar, anlaşılmayan bir şey? Hızlı mıyım, yavaş mıyım? Yani sizden geri birbirim gelirse, bazen ben çok daha hızlı anlatabiliyorum. Anlaşılmayan bir şey varsa arada söyleyin.
+
+255
+00:43:01,012 --> 00:43:11,012
+Üçüncü dereceden açtığımızda, işte üçüncü dereceden açtığımızda sinüs ne koyacağız? Yerine sıfır koyacağız. Sinüs sıfırın değeri sıfırdır. Zaten bu gider bakın.
+
+256
+00:43:11,012 --> 00:43:22,012
+Bakın yine aynı şeye geldi. Kosünüs çift fonksiyondu ya, tek dereceli türevlerin olduğu yerde hep sıfır katsayıları geliyor. Çiftlerden gidersek bir şeyler buluyoruz.
+
+257
+00:43:22,012 --> 00:43:25,012
+x'leri görüntü, zaten örnek benzer.
+
+258
+00:43:25,300 --> 00:43:52,700
+Yaklaşık olarak şuymuş, bakın, cos x'in genel hali buymuş. Bunu arttırabiliriz. Artık bu x yerine getirip şu pi bölü 5'i yazarsak, buradaki pi arkadaşlar şey zannediyorum, 36 değil de 3.14 şey radyal olarak yazdığımızda olan şey, çok bir şey fark etmez. Şunu buluyormuşuz. Bir de bunun şeyde karşılığı var. Nedenler?
+
+259
+00:43:52,884 --> 00:44:16,284
+hesap makinesinde karşılığı veya trigonometri cetlerinde karşılığı var. O da şuymuş, bundan bunu çıkarttığımızda elde edilen sonuçta neymiş kesme hatası olarak karşımıza geliyor. İşin özü bu. Şimdi gelelim bir başka hataya. Şimdi arkadaşlar, hata bazen...
+
+260
+00:44:18,036 --> 00:44:23,416
+Pozitif bir sayısal sunucu, bazen negatif sayısal sunucu neden olabilir.
+
+261
+00:44:24,176 --> 00:44:30,076
+Gerçek değer beklediğinizden küçükse, sonuç ne oluyor? Hatanız negatif olacak.
+
+262
+00:44:30,576 --> 00:44:32,876
+Beklediğinizden büyükse tam tersi olacak.
+
+263
+00:44:33,656 --> 00:44:40,556
+Bu her zaman tam bilgi vermeyebiliyor, yan upucu olabiliyor.
+
+264
+00:44:42,867 --> 00:45:06,623
+Yapay zekada yapay sınır alır diye bir şey vardır. Orada hatalar mutlak değer olarak toplanır, ucuca eklenir. Niye? Artı hata eksi, yani artı hata değeri, eksi hata değerini götürmesinde. İşte bir yerde hatanız artı iki geldi, bir yerde de eksi iki geldi. Bunları toplarsanız hata sıfır. Sanki hiçbir kusur yokmuş gibi görür. Halbuki...
+
+265
+00:45:06,623 --> 00:45:12,123
+Dört birimlik bir yanlış var, onu gidermek gerekir. İşte bunun yollarından bir tanesi bağl hata.
+
+266
+00:45:13,123 --> 00:45:20,123
+Gerçek değer ile hesaplanan değer arasındaki farkı alıp gerçek değeri oranladığınızda bağl hata ediyorsunuz.
+
+267
+00:45:20,123 --> 00:45:32,623
+Bir de bunun mutlak hata diye gelecek ama mutlak bağl hata diye bir şey vardır. Şuranın mutlak değerini alıp gerçek değeri oranlarsanız ve bunu yüzde ile çarparsanız, yüzde çarparsanız
+
+268
+00:45:32,916 --> 00:45:44,916
+% cinsinden mutlak değeri alınmış, dola tayin edilmiş. İşte %50 gibi. Yani ben 50 bekliyordum, 25 geldi veya 50 bekliyordum, 75 geldi.
+
+269
+00:45:44,916 --> 00:45:57,916
+Gerçek değerinde 50, ne oluyor? 25 geldiğinde de %50'lik bir sapma, dediğim gibi, 75 geldiğinde de %50'lik bir sapmayla karşı karşıyayım diyebiliriz.
+
+270
+00:45:58,996 --> 00:46:04,675
+Herhalde doğru yaptık. Yirmi beş buçuk. Evet, değil. Tamam mı? Bu, doğal hatamız.
+
+271
+00:46:06,195 --> 00:46:11,476
+Şöyle, hani en basit örneklerden gidelim. fx eşittir, x küp gibi fonksiyonumuz var.
+
+272
+00:46:11,476 --> 00:46:15,876
+Biz doğrudan hani böyle fonksiyon verip de hani bunun gerçek hatasını, bu al hatasını bunu demeyiz.
+
+273
+00:46:15,876 --> 00:46:21,876
+İlerleyen algoritmalarda bunları kullanacağız. Onun için çok basit şeyler bunlar. Hani hızlıca geçiyorum.
+
+274
+00:46:22,068 --> 00:46:45,188
+iki üzeri üç, bu gerçek değer. Siz bunu hesapladınız, altı bölüm. Zaman ne olacak? Altı eksi sekiz bölü sekiz diyeceksiniz. Buradan ne geldi? Eksi iki bölü sekiz, yani eksi bir bölü dört. Bu bağıl hatamız. Eğer bunu mutlak değer üzerinden yapacak olursak, sekiz eksi altı, pardon, niye altı eksi sekiz dedi ki? Sekiz eksi altı diyeceğiz. Sekiz eksi altı bölü, şurası iki olacak, burası daha bir bölü.
+
+275
+00:46:45,423 --> 00:46:57,423
+Mutlak değer alsak da yine 1,4 yani %25'lik bir hata elde edeceğiz. Ama gerçek değerimiz bundan küçük de olabilir. İşte buradası 6 olur. Siz 8 hesapladınız. O zaman negatif bir değer elde edebiliyorsunuz.
+
+276
+00:46:57,423 --> 00:47:07,423
+Yüzde cinsinden bu bağlı hatayı yazabiliyoruz. E sayısının yaklaşık değerini bir algoritmanız şu kadar bulmuş. Bunun bağlı hatası nedir?
+
+277
+00:47:13,492 --> 00:47:26,771
+Şundan çıkarttınız, açtınız, deyelde böldünüz. Örnek olarak şu. Bakın, 1.0.36x10x4 gibi bir sonuç elde edebiliyoruz bağıl hata olarak.
+
+278
+00:47:26,771 --> 00:47:34,771
+Bu kavramda bu. Şimdi, bağıl hata bize ne için önemli? Yüzde cinsinden bir şey veriyor dedik ya.
+
+279
+00:47:37,076 --> 00:47:50,476
+Hatalar arasında eğer birden fazla hatayı kontrol ediyorsa sizin algoritmolarınız, işte bir Px fonksiyonunun bir hatası var, bir de Gx fonksiyonunun bir hatası var.
+
+280
+00:47:50,476 --> 00:48:00,076
+Örneğin buradan gelen hata, yani normal hatadan bahsetmiyorum, on bin geldi. Şuradan gelen hata, ne bileyim, işte bin geldi.
+
+281
+00:48:00,724 --> 00:48:05,404
+Bu ikisinin birbiriyle karşılaştırılması her zaman doğru değil.
+
+282
+00:48:05,924 --> 00:48:09,604
+Burada genelde şöyle örnekleme yapabiliriz.
+
+283
+00:48:12,324 --> 00:48:23,524
+Mesela insan boy bilgisi santimetrecisinden veya işte metrecisinden 1.7, 1.8, 1.6, en fazla 2.5 gibi bir şeyler olsun.
+
+284
+00:48:25,523 --> 00:48:52,523
+Burada mesela bir hata ölçümü yapacak olsak ne oluyor? 0.8 gibi bir küçük küçük hatalar gelir değil mi? Kilo üzerinden yapacak olsak belki bunu ne bileyim 5 kilo, 6 kilo yani şu 0-1 arasında veya işte belki daha küçük sayılar ama burada çok çok daha büyük sayılar. Şimdi bu ikisi arasındaki orantısızlığı hata üzerinden karşılaştırmak biraz sıkıntılı. Yani çok doğru bilgi vermiyor onun için.
+
+285
+00:48:52,692 --> 00:49:05,411
+Yüze cinsinden bakmak gerekir. Ekonomide bu çok yapılıyor. Yani bir şeyin değişimine bakılıyor. İşte o değişime göre kararlılıyor ve bu bavul hata üzerinden yapılan bir şey. Örneğimiz güzel.
+
+286
+00:49:05,411 --> 00:49:19,972
+Veya şöyle düşünelim. Tahta kesiyorsunuz. Herhangi bir tahta böyle milimetrik olması gerekiyor. Bir santim fazla kesmişsiniz, az kesmişsiniz, çok bir şey fark etmez.
+
+287
+00:49:20,115 --> 00:49:46,915
+Öyle değil mi? Yani gerekirse zımparayla bilmem nere şey yapar. Ama altın kestiğini düşünün. Bir santim altın yani gramından yola çıkarsak, belki bunun gramı bin liraysa diyelim mesela. O bir santim fazla kesmek, yani kumpaslarla falan bu şey yapıyordu zaten. Çok daha hassas falan. Dikkat edilmesi gereken bir şeydi. Bundan bahsediyoruz. Şimdi sorumuz şu, köprü var. Köprü, yani böyle bir şey.
+
+288
+00:49:47,731 --> 00:49:55,731
+Şöyle. Bu köprünün üzerinde de perçinler var. Yani köprü ne kadar maksimum bir şeyse perçin de onun üzerinde minimum bir şey.
+
+289
+00:49:55,731 --> 00:50:12,684
+Bunları ölçmek için görevlendirme yapmışız ve bunları sırasıyla birisi 9.999 cm. Aslında şey 9.999 yani 9 virgül değil de 9 nokta arkadaşlar. Bu Türkçe notasyonda.
+
+290
+00:50:13,300 --> 00:50:28,619
+nine thousand diyelim, öyle söyleyelim veya İngilizce karşıtı. Şu dokuz santri. Biri maksimum, biri minimum bir şey. Böyle ölçüm yapılmış. Gerçek değerlerde on bin ila on santri. Şimdi şunun hatası ne kadar?
+
+291
+00:50:28,619 --> 00:50:38,300
+0.001 bolu. Bir tane sıfır fazla yazdık. 0.01 olacak. Bununki de bir santri.
+
+292
+00:50:40,916 --> 00:50:50,516
+Burada niye böyle bir şey var? Hocam, dediğiniz gibi yapmadınız. 10.000 santim dedik, bunda da 10 santim gibi aldık.
+
+293
+00:50:50,516 --> 00:50:54,412
+Bir dakika.
+
+294
+00:50:57,652 --> 00:51:06,532
+Santimetre, tamam tamam. Ben doğrudan santimetre üzerinden, birim üzerinden yanlış olduk.
+
+295
+00:51:06,532 --> 00:51:13,892
+10.000 santim ve 9.999 santim diyelim.
+
+296
+00:51:13,892 --> 00:51:18,731
+Buradan ne oluyor? Şunu çıkarttığım zaman 1 santimlik bir hata var.
+
+297
+00:51:18,731 --> 00:51:22,652
+10'dan 9'u çıkardık, burada da 1 santimlik bir hata var.
+
+298
+00:51:22,996 --> 00:51:49,715
+Şimdi köprünün maksimum bir şeydeki bir santimlik sapmayla minimum ufacık bir şeyin üzerindeki bir santimlik sapma büyük bir problem. Mesela dün telefon bataryası ile alakalı ufak bir sıkıntı yaşamıştım. Telefonun modelinin iki çeşit bataryası varmış. İlk bataryayı getirdik taktık, arkada şey oldu böyle, sığmadı. Çok küçük bir şey ama orayı zorlayamazsın. Zorlarsan telefona zarar verir. Aynı şekilde burada da eğer köprünün...
+
+299
+00:51:50,003 --> 00:51:54,083
+yapısını, mimarisine aykırı bir iş yaparsak başımıza iş açarız.
+
+300
+00:51:54,083 --> 00:51:57,963
+Şimdi bir santim bir santimden bir şey olmaz diyemiyoruz. Ama bunlar
+
+301
+00:51:57,963 --> 00:52:05,763
+yüzde olarak düşünüldüğünde, yani köprüdeki sapmayla, perçindeki sapmanın oranlarına baktığımızda, o zaman
+
+302
+00:52:05,763 --> 00:52:08,363
+şeye bakacağız, 10.000-
+
+303
+00:52:08,363 --> 00:52:13,763
+Şurada gerek bir nokta varmış, şunu çıkarttığımızda böyle 10.000 dediğimizde, ya da yüzde çarptığımızda yüzde şu kadarlık bir
+
+304
+00:52:13,763 --> 00:52:15,755
+sapmadan bahsediyoruz.
+
+305
+00:52:15,764 --> 00:52:40,764
+Bu yıl %10'luk bir sapmadan bahsediyoruz. Hangisi daha fazla sapmış? Şimdi perçin üzerinde oluşan sapma çok çok daha fazla olmuş. İşte bu fikir vereceği bir örnek oluyor. Şurayı gerekirse ben bunu yapalım da üzeriniyorum arkadaşlar. Biraz daha şey şöyle bir şey. Slide başladı. Bir köprü örneği diyelim ya.
+
+306
+00:52:47,668 --> 00:53:07,427
+Devam. Şimdi bu, biraz önceki bağıl hatanın mutlak değerce ifade edilmesi mutlak hata diye ifade ediliyor. Yaptığın şeyi mutlak değere alıyorsunuz. Çünkü şu negatiflik pozitiflikten kurtulmuş oluyorsunuz. Negatif olarak.
+
+307
+00:53:07,507 --> 00:53:17,507
+Hatağın yorumlanması, yani literatürde, bilimsel literatürde çok fazla karşılaşmadık. Onun için bunu daha çok kullanıyoruz. Şimdi muklak hatanın bir formülü daha var.
+
+308
+00:53:18,507 --> 00:53:27,507
+Bu bağlamda değerlendirilecek ikinci formül. Onu da şuraya yazın. Normalde biz muklak hata deyince sınavda soru sorarsak bunu isteriz.
+
+309
+00:53:27,507 --> 00:53:35,455
+Ama bazı örneklerde şunu da kullanıyoruz. Hangisini yaparsanız o kabuldür ama özellikle belirtiriz. Yani yüzde cinsinden
+
+310
+00:53:35,456 --> 00:53:40,256
+mutlak hatayı yazın deriz. O zaman bu formülü kullanırsın. Mutlak hata şöyle bir söylenir.
+
+311
+00:53:41,256 --> 00:53:49,456
+Buna Absolut Error diyoruz. Bu gerçek değer.
+
+312
+00:53:50,456 --> 00:53:53,456
+Gerçek değerinden mesela Actual Value diyelim.
+
+313
+00:53:53,456 --> 00:53:55,456
+Eksi Predicates.
+
+314
+00:53:58,675 --> 00:54:14,675
+elde ettiğiniz hatayı hiç böyle bölmeden gerçek değerden hesaplanan değeri çıkarttığınız veya kalkıla gittiği değerini çıkarttığınız elde edilen şey böyle bir söylenebilir. Eğer siz de şunu üzerinden hesapladan yapın dersek bunu kullanırsınız, değilse bunu kullanırsınız. Onu sorularla açıkça belirtiriz.
+
+315
+00:54:18,099 --> 00:54:37,299
+Birisi böyle bir hata yapmış. Bunun mutlak hatası nedir demiş. İşte nedir? Bu f2'yi hesaplarsak, 4-6 ne oluyor? Eksi 2 oluyor. Nasıl olduysa, eksi 2 yerine eksi 10 duymuş. Böyle eksi 2 diyeceğiz. Aslında şurayı şöyle alacağız.
+
+316
+00:54:41,012 --> 00:54:46,612
+Yerine yazdığımızda 6 birimlik bir mutlak hata el yapış oluyor.
+
+317
+00:54:46,612 --> 00:54:53,612
+Bunu yüzde çarparsanız yüzde 6 edersiniz. Satmanın o değerli olduğunu bulabilirsiniz.
+
+318
+00:54:53,612 --> 00:55:04,612
+Bir dakika yüzde çarparsak ne olur? Eksi iki, eksi on, eksi on iki, altı. Yüzde çarparsak, yüz böyle altı, on beş nokta küsür o kadarlık birinciye tekabül ediyor.
+
+319
+00:55:06,483 --> 00:55:12,483
+Diğer hatamız yuvarlama hatası da çok az kaldı, denediyorum. Bunu da bitireyim, ara vereceğim.
+
+320
+00:55:12,983 --> 00:55:28,483
+Şimdi yaptığımız yuvarlama işleminde bir gülle alakalı bir hata yaptıysanız ortaya çıkan hata yuvarlama hatası. Mesela bu 27.35'tir. Eğer bu ikinci basamağa kadar alacaksak bunu normalde şu üç şey beş ve üzeri olurdu.
+
+321
+00:55:28,483 --> 00:55:31,483
+Ama siz bunu böyle yapmadığınızda böyle aldınız.
+
+322
+00:55:31,583 --> 00:55:36,384
+İşte ne oluyor? Burada bir yuvarlama işlemiyle kaynaklanan hata meydana geliyor.
+
+323
+00:55:36,384 --> 00:55:39,783
+Bunu nerede dikkate alın diye geliyor. Program yazarken,
+
+324
+00:55:39,783 --> 00:55:48,983
+şimdi bir gerçek değerimiz var, bir de prediktive değerimiz var. Bu ikisi arasında birbirine eşit mi diye kontrol yapacaksınız.
+
+325
+00:55:48,983 --> 00:55:55,783
+Bu ikisi arasındaki farka bakmak daha doğru. Geçen dersi de gösterdiğim bir açıklama.
+
+326
+00:55:55,903 --> 00:56:00,903
+n-p'ye bakıp, bu n-p'nin değeri küçüktür, eşit, hatta bunun mutlak değeri,
+
+327
+00:56:00,903 --> 00:56:05,903
+şuraya absürüt varı olacaksınız, bu mutlak değer 0.0001.
+
+328
+00:56:05,903 --> 00:56:12,903
+Şu 0.001 de şu yuvarlamaya karşılık gelecek. Yani 3 basama kadar, 4 basama kadar yuvarlayalım.
+
+329
+00:56:12,903 --> 00:56:20,903
+Bu yuvarlamayla elde edilen sunacağı bakalım, eğer böyle bir şey yeterliyse, bizim için kabul edilebilir, çözümdür deriz.
+
+330
+00:56:23,635 --> 00:56:33,635
+Elde edilen gerçek değerimiz var. Yuvarlama yaptığımızda 27.35'i bulmuşuz. Buradan kalan 3'i değerde bizim yuvarlama hatamız oluyor.
+
+331
+00:56:35,635 --> 00:56:49,163
+Şunun 3 basamak için yuvarlatma hatası şöyle aldığımızda 352, şuraya baktığımızda 0.24 olacak. Bundan bunu çıkarttığımızda şöyle bir değer bulacağız.
+
+332
+00:56:49,811 --> 00:56:51,811
+Bu da böyle bir yer duyuruz.
+
+333
+00:56:51,811 --> 00:56:55,811
+Evet, bunlar temel kavramlar arkadaşlar.
+
+334
+00:56:55,811 --> 00:56:56,811
+Sorumuz var mı?
+
+335
+00:56:58,811 --> 00:57:00,811
+50 dakikada yayın tutmuş olduk.
+
+336
+00:57:01,811 --> 00:57:04,811
+Şimdi ara verelim, 10 dakika ara verelim.
+
+337
+00:57:04,811 --> 00:57:11,811
+Geldiğimizde birinci chapter denklemlerin çözümleriyle alakalı chapter üzerinden devam edeceğiz.
+
+338
+00:57:12,811 --> 00:57:14,347
+Beş geçe görüşürüz.
+
+339
+01:07:45,396 --> 01:07:46,892
+Merhabalar.
+
+340
+01:07:53,652 --> 01:08:04,152
+Mikrofonum kapalı, evet şu an şey, şey yazmıyorum. Hazırlık olsun diye hatırlayayım diye yazdım da. Şu an geliyor değil mi ses mi arkadaşlar?
+
+341
+01:08:04,152 --> 01:08:21,152
+Evet hocam geliyor. Tamam. Şimdi arkadaşlar, bu konuya girmeden önce kısa bir şey yapalım. Doğru denklemi, eğim nedir? Bunlar hani analitik geometreden hatırlayacağımız şeyler.
+
+342
+01:08:21,844 --> 01:08:33,344
+Ne için bunu anlatıyoruz? Karmaşık olan denklemlerin kökünü bulurken, türev ve o türevi de eğim üzerinden hesaplamamız gerekecek ilerleyen aşamalarda.
+
+343
+01:08:33,344 --> 01:08:38,344
+Y6 tane falan algoritmamız var, onun için bu larlık.
+
+344
+01:08:38,344 --> 01:08:45,344
+Doğru denkleme, en genel halde nasıl yazıyor? Y eşittir, nx artı n şeklinde ifade edilebilir.
+
+345
+01:08:49,652 --> 01:09:05,891
+eğimi slope, bir de ne var ya? Bir İngilizce karşılığı da var. Hatırlayamadım şu an. Gradient olması lazım. Bir kontrol edebilirsiniz. Slope.
+
+346
+01:09:05,891 --> 01:09:14,772
+Bu eğimi biliyorsak, doğru denklemini yazabiliriz. İki farklı şekilde söylenebiliyor biliyorsunuz doğru denklemi.
+
+347
+01:09:15,028 --> 01:09:42,028
+Birinci denklem formatımız y-y2 bölü y-y1 eşittir x-x2 bölü x2-x1. Burada x1, y1 ile x2, y2 couple of points yani noktalarımızın iki tane noktamız var.
+
+348
+01:09:42,515 --> 01:10:08,755
+Koordinattaki şeyleri uygun olarak yerine koyarsanız uygun olabilirsiniz. Aslında şurası, yani şuna gerek kalmadan şuradan da çıkabilir. Eğimi ve bir noktası bilinen doğru denklem diye söylerler ya. Eğimi yazacak olursak, şöyle önce bir çizim yapalım. Burada bir noktam var. Spire Y1 diyelim. Şurada bir noktam var.
+
+349
+01:10:09,492 --> 01:10:36,891
+y2y, x2 diyelim. Buradaki eğim nedir? y'ler farklı, x'ler farklı. y2-y1 bölü x2-x'tir. Genel olarak bu böyle. Peki, y2-y1 bölü x bunu biliyorsam ben şurada y eşittir m çarpı x artı yeni bulurum. Buna geçiş yapalım.
+
+350
+01:10:37,171 --> 01:10:45,171
+Herhangi bir x noktamdan yola çıkarak, çünkü burada n'i bulduk kolay sayısal olarak bulmalıyız. n'i bulmamız lazım doğru denklem için.
+
+351
+01:10:45,171 --> 01:10:50,171
+Herhangi bir x noktasını doğrun üzerine koyduğunuzda onu sağlaması lazım.
+
+352
+01:10:50,171 --> 01:10:59,171
+Buradan n eşittir ikisinden birisi için ne yapabiliriz? n'i olabilir? Mesela şöyle hesaplıyız yaparsak y'e bir eşittir.
+
+353
+01:10:59,731 --> 01:11:10,971
+m sabit sayı x1 artı n dersek, bu n'i yalnız bıraktığımızda y1 eksi m çarpı x1 değerini alderiyoruz.
+
+354
+01:11:10,971 --> 01:11:18,091
+Yani basit matematiksel işlemlerle doğru denklemini çıkartırız. Doğru denklemini çıkarttığımızda bunun türevini almak da kolay.
+
+355
+01:11:18,091 --> 01:11:22,971
+Bunun türevini y'nin türevi eşitleri aslında yine m'e karşı etkiliyor, birinci dereceden olduğu için.
+
+356
+01:11:23,315 --> 01:11:29,075
+Burada sayısal bir değer olarak 3, 5, 10 neyse geri gelince kullanacağız.
+
+357
+01:11:29,075 --> 01:11:37,755
+Şu bir doğru denklem yöntemi, iki noktası bilinen doğru denklemiydi galiba. Adı öyle söyleniyor.
+
+358
+01:11:37,755 --> 01:11:41,915
+Şuradan eğimi ve bir noktası bilinen doğru denklemini çıkartabiliyoruz.
+
+359
+01:11:41,915 --> 01:11:47,755
+Başka bir şey var. Veya şöyle de çıkıyordu. Eğimi ve bir noktası bilinen doğru denklemi.
+
+360
+01:11:48,435 --> 01:12:09,115
+y2-y1 bölü x2-x1 aslında aynı şey eşittir. Yani şöyle yazmadan y-y2 bölü x-x2 dersek veya y1 veya x1 aslında şuradakinin aynı mantığını getirebiliriz. Gerek yok. Nasıl biliyorsanız, kolayınıza nasıl geliyorsa öyle yapın.
+
+361
+01:12:09,363 --> 01:12:17,363
+Eksenleri kesen doğrunun denklemi nasıl oldu? Şuraya a edersek, buraya d edersek x bölü a artı y bölü b eşittir bir miydi?
+
+362
+01:12:17,363 --> 01:12:27,363
+Herhalde bir olacaktı veya eksi birdir neyse. Bunları kullanacağız birazdan. Bu hatırlatmalı önce yapmış olalım.
+
+363
+01:12:34,387 --> 01:13:01,387
+Şimdi, doğrusal cevir biraz önce söylediğimiz şey. Doğrusal olmayan cevir ne demek? Yani buradaki eşitlikler çizdirildiğinde bir doğru çıkmıyor. Genelde eğriler çıkıyor. Bu eğrilerin çözümünden kastım ne? İşte bir y eşittir fx fonksiyonumuz var. Karmaşıklı fonksiyonu ne olduğunu biliyoruz. Bunun köklerini bulacağız. Şimdi bu köklerinden kastımız da real.
+
+364
+01:13:02,163 --> 01:13:14,963
+roots. Gerçek kökleri bulmaktan bahsedeceğiz. İmajinlerle burada çok fazla uğraşmayız. Gerçek kök dediğimiz şey nedir? fx'e gidersiniz, normalde sıfıra eşitlersiniz.
+
+365
+01:13:14,963 --> 01:13:26,963
+Sıfır noktasına ait olan şeyler y eşittir sıfırdaki değerler sizin köklerindedir. Şöyle bir grafik çizecek olursak, şöyle bir şey çizelim. Şu bir köktür.
+
+366
+01:13:27,028 --> 01:13:39,827
+Şurada bir tane kök vardır, burada bir tane kök vardır, burada bir tane kök vardır. Bunları bulursunuz. Ama her zaman bunları dediğim gibi analitik yollarla bulabilmek mümkün değil. İşlerini aktörsüz nümerik yollara başvuracağız.
+
+367
+01:13:39,827 --> 01:13:50,628
+Şimdi analitik çözümü olmayan, lüner olmayan denklemler aslında birkaç gruba ayrılıyor. Birincisi diferansiyel denklemler.
+
+368
+01:13:51,155 --> 01:14:12,275
+Burada hani bu dersin son konusu, şimdi buna baktığım, belirli integraller, lineer olmayan iki bilimlerini denklenenler. Bunların analitik çözümleri maalesef hani doğrudan yapılanıyor. Bunların bilinmeyen sayısını arttırabiliriz. Bir bilimden, iki bilimden, üç bilimden. Arttıkça problem daha güçleniyor ama algoritmalarla yaklaşım yapıyoruz.
+
+369
+01:14:13,300 --> 01:14:23,300
+Şimdi, bir bilinmeyenin nerede eklenenlerin çözümünde uyguladığımız yöntem nedir? Bilinenler bir tarafa, bilinmeyenler bir tarafa atılır. Ortaokuldan veya ilkokuldan belki bir bölümümüz.
+
+370
+01:14:23,300 --> 01:14:38,028
+Sonra işte bilinmeyen değişkenin yanındaki sabit katsayılar sadeleştirme yapılarak bire indirilir. İşte ne yaptık bunu dörde böldük, dörde böldük. Ondan sonra ne yaptık, işte x eşittir, dördelik çıktır.
+
+371
+01:14:38,387 --> 01:15:04,387
+Bu bilinen bir yöntem. Veya bunu biraz daha zorlaştıracak olsa iki bilinen bir denklem. İşte ne yapabiliriz? Bildiğimiz çarpanlara ayırma var. Onun dışında diskriminat denklemi var. Üçüncü bir dereceden polinomlarda da bunlara benzer yaklaşımlar var. Kısmen analitik olarak çözülebiliyor. İşte ne yaptık? Burada ortak çarpan parantezini alırsak şu ifadeyi, ikinci denklemin. Yani bu başka bir denklem, bu başka bir denklem.
+
+372
+01:15:04,532 --> 01:15:10,931
+Ne yapıyoruz? Ortak çarpım parantininde bu iki bilin ikinci dereceden olduğu için bir kere iki tane kökü olacağı belli.
+
+373
+01:15:10,931 --> 01:15:16,051
+Bunlardan bir tanesi sıfır, bir tanesi de dört olacak değil. Böyle bir çözüm yapabiliriz.
+
+374
+01:15:17,332 --> 01:15:29,811
+Bunlar bildiğiniz şeyler. Ama iş biraz daha üç, dört, beş, altı diye polinomlar olursa veya daha böyle karmaşık fonksiyonların, şu laptun'un kendi içinde çarpımlarını düşünün.
+
+375
+01:15:30,036 --> 01:15:52,235
+Logaritmik bir fonksiyonla polinom fonksiyonu çarpıyorsunuz. Onun da trigonometrik üstünü alıyorsunuz. Logaritma iki tabanında x çarpı, polinom x küpü çarpıyorum. İşte bu ifadenin de sinüs x'inci kuvvetini alıyorum. Olabilir mi? Olabilir. Atraksiyonlar farklı şekillerde yapılabilir.
+
+376
+01:15:52,435 --> 01:15:58,435
+İşte bunun da kökleri var mıdır araştırılabiliyor arkadaşlar. İşte bunlara böyle yöntemler uygulamak biraz zor.
+
+377
+01:15:58,435 --> 01:16:08,435
+Yaklaşık çözümleri bulacağız. Mesela şu veya bu. Hani bilinenler bir tarafa, bilinmeyenler bir tarafa falan yapamıyoruz.
+
+378
+01:16:08,435 --> 01:16:16,435
+Başka bildiğimiz lise hayatımızı hatırlayın, başka bir yöntem de yok. Mecbur çözüme yaklaşmaya çalışacağız.
+
+379
+01:16:17,043 --> 01:16:26,043
+Bir de mesela şöyle bir durum var. Burada iki bilim yani x ve y var. Hem x'i bulacağız hem y'yi bulacağız. İyice karışık. Bakalım neler yapacağız.
+
+380
+01:16:26,043 --> 01:16:38,043
+Şimdi burada bazı teoremlerden faydalanacağız. Şimdi bir epiks fonksiyonu. a ve b aralığında sürekli ise? a ve b aralığında süreklilik ne demek? Hiçbir şekilde kopma yok.
+
+381
+01:16:38,043 --> 01:16:42,043
+Yani tanımsız olmayan herhangi bir şey yok. Sağdan limit, soldan limit eşit.
+
+382
+01:16:42,355 --> 01:16:50,675
+Böyle elinizi çizdiğimizde A noktasından B noktasından elinizi kaldırmadan çizim yapabiliriz. Bu bildiğim bir şey.
+
+383
+01:16:50,675 --> 01:17:07,075
+O zaman A ve B aralığında sürekli bu fonksiyon için eğer FA değeri ile FB değeri zıt işaretliyse buna literatürde zero crossing gidiyor, sıfır geçişim.
+
+384
+01:17:08,051 --> 01:17:13,451
+Böyle bir durum varsa A-B aralığında en az bir tane gerçek kök vardır. Bu bir kökler.
+
+385
+01:17:15,751 --> 01:17:27,051
+En az bir tane demek ne demek? Belki şöyle bir şey de olabilir. Yani burada A-B aralığında bakın, sıfır geçişi var mı? Var. Yani A'nın değeri negatif, B'nin değeri pozitif.
+
+386
+01:17:27,051 --> 01:17:34,851
+Birden fazla olabilir. Bakın böyle bir dalgalanma yapmış bir fonksiyon görüyoruz. Birden fazla da kök olabilir.
+
+387
+01:17:35,123 --> 01:17:59,523
+Süreklilik olması şart. Size vereceğimiz fonksiyonlarda A-B arasında fonksiyon süreklidir deriz veya sürekli olacağını bildiğimiz, çok rahat test edebileceğimiz fonksiyonlar veririz. Uçuk açı fonksiyonlarla sınavda verilmez. Bu konuyu anlayıp anlamadığınız için. Ama mesela şöyle bir süreksizlik durumu olsa, şimdi A burada, B burada.
+
+388
+01:17:59,764 --> 01:18:06,564
+süreklilik durumu olmadığı için işte A'yı böyle çiziyoruz, elimizi kaldırdık ve A'yı buradan devam ettiriyoruz.
+
+389
+01:18:06,564 --> 01:18:13,363
+Süreklilik olmadığı için burada böyle bir kök arayışına giremeyiz. Kök arayışına başka noktalardan giriyoruz.
+
+390
+01:18:13,363 --> 01:18:20,564
+Yani fonksiyonun devamı olacak. İşte B noktasından öteye ne bileyim bir C noktası olsa, B, C aralarında bakın burada bir kök var.
+
+391
+01:18:20,564 --> 01:18:26,764
+Belki bunun gerisini bilsek ki orada bir kök varsa onu tespit edebiliriz. Ama A, B aralarında
+
+392
+01:18:27,796 --> 01:18:37,036
+kökün olmadığını garanti edeceğiz. Bir taraf A yukarıya doğru gidiyor, öbür taraf aşağıdan yukarıya doğru gidiyor. A ile B arasında bir kök yoktur diyeceğiz.
+
+393
+01:18:38,676 --> 01:18:41,676
+Burada kullanılacak genel stratejimiz şu.
+
+394
+01:18:42,316 --> 01:18:46,996
+Verilen denklem veya denklem takımı. Şimdi şu ki denklem takımı detaylandıracağım.
+
+395
+01:18:47,516 --> 01:18:55,404
+Bir kökü veya birden fazla kökü bulunacak. Şimdi denklem dediğimiz bir tane bir örgütü fx. Denklem takımı da birden fazla.
+
+396
+01:18:55,475 --> 01:19:23,075
+fonksiyon olacak. Bir fx verilecek, bir gx verilecek. Yani iki tane, iki bilinmeyenli denklemde nasıl ortak çözüm yapıyorsak, doğrusal olmayan fonksiyonların da birden fazlasını vererek çözüm yapabiliriz. Bunların köklerini bulacağız. Bir tane olabilir, birden fazla. Kökler gerçek veya sanal mı? Ona bakacağız. Kökler için yaklaşık değer var mıdır, yok mudur buna göre?
+
+397
+01:19:23,859 --> 01:19:43,059
+yöntem seçeceğiz. Yani her durumda her yöntem bazen seçilmeyebiliyor. Bazı yöntemler tek bir denklem çözümüne imkan tanırken, bazıları denklem takımlarının çözümüne daha uygun oluyor. Ama hepsi doğrusal olmayan şeyler olacak ve bunları göreceğiz.
+
+398
+01:19:47,667 --> 01:19:52,667
+Denklem takımı ve denklem takımı söyleyeceğimiz şeyler iki ana gruba ayrılıyor algoritma olarak.
+
+399
+01:19:52,667 --> 01:20:01,667
+Kapalı yöntemler, işte bunlar bracket yöntemleri ve açık yöntemler diye söyleniyor. Burada bakın altı tane yöntemler var.
+
+400
+01:20:01,667 --> 01:20:10,667
+Kapalı yöntemler neymiş? Bir alt ve bir üst sınırla belirlenen bir arazon içerisinde yer alır. Yani sizin bir fonksiyonunuz var.
+
+401
+01:20:12,051 --> 01:20:19,731
+Bir alt sınır belirlediniz, bir üst sınır belirlediniz. Bu iki sınır arasına boğarak çözüme yaklaşıyor.
+
+402
+01:20:21,771 --> 01:20:29,211
+Adımları tekrar ede ede ede, yani döngüyle, while ile, for ile çözüme yaklaşıyor. Nasıl yaklaşacağımızı göreceğiz.
+
+403
+01:20:29,711 --> 01:20:38,859
+Ve tahmin yapıyoruz. Ne kadar çok iterasyon, for döngüsü, while döngüsü çalıştırırsanız o kadar çok çözüme yaklaşırsınız. Yani yakınsak yöntemler görürsünüz.
+
+404
+01:20:39,155 --> 01:20:57,155
+Burada dikkat etmemiz gereken şey şu. İterasyon i ile iterasyon i artı bir arasındaki değişim hep i'ye doğru olması lazım. Yani ben gerçek köke daha daha gittikçe yaklaşıyorsam çözüme doğru yolda indim.
+
+405
+01:20:57,492 --> 01:21:02,492
+Bazen yöntemlerde raksama meydana geliyor, çözümden uzaklaşıyoruz.
+
+406
+01:21:02,492 --> 01:21:10,492
+İ inci adındaki çözümle, İ artı birinci adındaki çözüm arasında kötüye doğru gidiş varsa buna dikkat edelim.
+
+407
+01:21:11,492 --> 01:21:16,492
+Açık yöntemlerde, şimdi burada iki nokta alt ve üst sınır yok,
+
+408
+01:21:16,492 --> 01:21:23,492
+bir başlangıç değerine göre, bu kökü, yani başlangıç değerinden başlayarak,
+
+409
+01:21:24,431 --> 01:21:44,431
+Tarayan bir bölge seçiyoruz ve burada formüller kullanıyoruz. Hesaplama sürecinde bıraksama olabiliyor, gerçekteğerden uzaklaşabiliyor. Çünkü bir iki aralık yok, sıkıntısı biraz bundu. Ama algoritmik olarak daha hızlı sonuca yaklaşabiliyoruz.
+
+410
+01:21:45,108 --> 01:21:54,427
+dikkat etmemiz gereken özellikle şu pixel point çok güzel bir yöntem ama uygulamasında raksama varsa başka başka şeyler, çareler özetmemiz gerekecek.
+
+411
+01:21:55,148 --> 01:21:58,148
+Tamam mı? Birinde sadece tek bir başlangıç değeri var.
+
+412
+01:21:59,028 --> 01:22:01,347
+Öbüründe alt ve üst sınır değeri var.
+
+413
+01:22:01,908 --> 01:22:09,548
+Mesela şimdi siz bunun ileride kodlarını da yazacaksınız. Gelecek tersten itibaren artık kodları yazmaya başlayabilir hale gelirsiniz.
+
+414
+01:22:11,155 --> 01:22:17,155
+Ben açık yöntemlerden Newton-Raphson'u kodla dediğimde bir tane başlangıç diyere almamız gerekiyor.
+
+415
+01:22:17,155 --> 01:22:22,155
+Ama bisection yöntemini kodla dediğimde iki tane aralık diyere almamız gerekiyor.
+
+416
+01:22:22,155 --> 01:22:24,155
+Yani kullanıcıdan alacağınız input var.
+
+417
+01:22:24,155 --> 01:22:28,155
+X eşittir 3 ile X eşittir 10 arasında kök arayalım diyeceksiniz.
+
+418
+01:22:28,155 --> 01:22:32,155
+Orada birinde iki tane input var, diğerinde bir tane input var.
+
+419
+01:22:32,155 --> 01:22:38,060
+Şimdi burada bazı yardımcı teoremlerle bakalım.
+
+420
+01:22:38,579 --> 01:23:02,579
+Bir tanesi ortalama değer teoremi. Diyor ki bu ortalama değer teoremi, bir fx fonksiyonu a-b aralığında sürekli ise, bunun ortalama değeri aslında bir şeydir. Fb'den f-a'ya, b'den a'ya, yani bu bir eğim değeri değil mi arkadaşlar? Ortalama değer diyoruz. Bunun ortası bir...
+
+421
+01:23:03,028 --> 01:23:08,028
+değer içerisinde, fonksiyonun pardon, bir türevini alıp bir C noktası seçiyoruz.
+
+422
+01:23:08,028 --> 01:23:15,028
+fonksiyonun türevinde bir C noktası seçiyoruz. Bu C noktası, bu A-B aralığında bir şey olacak.
+
+423
+01:23:15,028 --> 01:23:20,028
+Şurada, bu eşitliği sağlamasına bakıyoruz, sağlamasını kontrol ediyoruz.
+
+424
+01:23:20,028 --> 01:23:27,948
+Eğer burada seçtiğimiz C noktasına göre, mesela şu, şöyle bir şey elde edebiliriz, şu türevde.
+
+425
+01:23:28,627 --> 01:23:53,868
+Veya işte bu türev şöyle bir şeye karşılık gelebilir. Şuradaki eğrilenin örgüt veya işte min-max tepe değerlerini gösteriyor. Mesela baktım burada ne var? İki tane maksimum değer var, bir tane minimum değer var. Yani lokal ve global minimum maksimumlar açısından. Şurada mesela bir tane lokal maksimum var. Bu bize bu bilgiyi veriyor.
+
+426
+01:23:54,195 --> 01:23:56,755
+Örneği var, örneği de daha güzel anlaşılır.
+
+427
+01:24:00,075 --> 01:24:18,515
+Yani burada işte A ile B arasında bir C değeri seçtik, fonksiyonun türevini aldık, C değerine koyduk, böyle bir şey oldu. Bu size mesela bir doğru verirse, tek bir tane bunun kökü vardır, o zaman bu tek bir minimum maksimum değeri olan şeydir. Eğer iki tane olsaydı şu şeyin kökü iki tane minimum maks değeri olacaktır.
+
+428
+01:24:19,283 --> 01:24:27,003
+Mesela fx eşittir, x² artı 5 fonksiyonunun 1, 5 aralığında ortalama değer teorinini sağlayan değerleri bulunduruz.
+
+429
+01:24:27,003 --> 01:24:35,804
+Ne yapacağız? Şurada yerine koyacağız. Bir de f'in türevinde bir c değeri bulacağız. Ve bu c değerini şurayla sağlatacağız.
+
+430
+01:24:35,804 --> 01:24:46,363
+Şimdi f1'i yazalım. f1 nedir? 1'in karesi 1 artı 5 artı f5'i yazalım. Bu da 30 mu oluyor?
+
+431
+01:24:46,899 --> 01:24:58,099
+30-6 derse, işte ne oluyor? 24. 5-4, 6. Yani eşitliğin bu tarafı 6. Çözüm gelecek şurada.
+
+432
+01:25:02,163 --> 01:25:06,523
+Şimdi f'in türevini alıyoruz ve türevde yerine c koyuyoruz.
+
+433
+01:25:07,023 --> 01:25:09,083
+f'in türevi nedir? f türevi x
+
+434
+01:25:11,123 --> 01:25:11,884
+2x'tir
+
+435
+01:25:12,923 --> 01:25:17,523
+c koyduğumuzda 2c. Şimdi 2c eşittir 6 ise c eşittir 3.
+
+436
+01:25:18,043 --> 01:25:19,323
+Buradan çizilen
+
+437
+01:25:20,344 --> 01:25:21,363
+Demek ki bu
+
+438
+01:25:21,884 --> 01:25:25,203
+tek bir tane şey var. Birinci dereceden
+
+439
+01:25:25,311 --> 01:25:45,311
+şöyle olan bir min veya max noktası şöyle olan bir eğri çizilebiliyor. Pek örgüçlü diyelim. Eğer bu üç tane t noktası için c değeri eğer üç tane çıksaydı o zaman şöyle bir şey olabilirdi. Farklı farklı bunların tahmin edilmesi şimdiden müdür değil.
+
+440
+01:25:51,923 --> 01:26:05,923
+Sekiz olsun. O zaman bunun türevi iki üç x kare olacak. O zaman bunun kökleri iki tane olacak. O zaman ikinci dereceden bir şey göreceğiz. İki tane minimum maksimum olan şey göreceğiz. Bu bilgileri buradan elde edebiliriz.
+
+441
+01:26:08,979 --> 01:26:25,880
+Mesela bir örnek daha. Bu fonksiyonun ortalama değer teorimini sağlayan noktaları. Şimdi bunun türevini almadan önce değerlerini yerine koyalım. Eksi bir koyduk ve bir koyduk. Eksi bir koyduk. Eksi bir koyduk. Eksi bir koyduk. Eksi bir koyduk değer ikiymiş. Bunların farkını aldık. Sonuç üç geldi.
+
+442
+01:26:26,380 --> 01:26:33,039
+F'in türevini alıp üçe eşitlediğimizde 3x kare artı iki eşittir üç. C buradan ne geliyor?
+
+443
+01:26:33,555 --> 01:26:54,443
+1 bölü köküç veya eksi 1 bölü köküç geliyor. Orada iki tane min ve max noktası olduğunu anlıyoruz. Bu ortalama değer. Ara değer teoremi bizim çözümü bulmamızı sağlayan bir teorem. Şöyle, eğer bir fx fonksiyonu a b aralığında sürekli ise,
+
+444
+01:26:54,836 --> 01:27:17,156
+FA, FB'den farklıysa, ya FA, FB'den küçüktür ya da FA, FB'den büyüktür. İki farklı durumumuz var. Basit bir şey. O zaman A ile B arasındaki ilişki, yani burası A küçük değer, B büyük değer, o zaman ne olacak şu duruma göre? Arada seçilen bir C noktası FA ile FB arasında.
+
+445
+01:27:17,300 --> 01:27:27,300
+Dolayısıyla ben bir yerde kök arıyorsam, FA ile FB arasında bir adımda kök arıyorsam, bir sonraki adımda ya FA, FC arasında ya da FC, FB arasında arayacağım bu durumunu.
+
+446
+01:27:27,300 --> 01:27:35,300
+Eğer bu durum tam tersse, yani fonksiyon artan bir fonksiyon görüyordunuz. Bu aralıkta azalan bir fonksiyonsa şöyle bir görüntü.
+
+447
+01:27:35,988 --> 01:27:40,988
+O zaman buradaki eşitsizlik de, yani büyüklük-küçüklük ilişkisi de buna dönecek.
+
+448
+01:27:40,988 --> 01:27:43,387
+Aradığım kökler ya burada olacak, ya burada olacak.
+
+449
+01:27:43,387 --> 01:27:49,788
+İşte A ve B noktalarını böyle sürekli güncelleye güncelleye, kapalı yöntemlerde özellikle ne yapacağım?
+
+450
+01:27:49,788 --> 01:27:54,988
+Köke yaklaşa yaklaşa kökün olduğu yeri iyice kıskaca almış olacağım.
+
+451
+01:27:56,988 --> 01:28:03,500
+Ara değer teoreminde kökün varlığını hesaplarken yaptığımız şey temel olarak zero crossing arkadaşlar.
+
+452
+01:28:03,539 --> 01:28:09,260
+Başka bir şey değil. Bütün yöntemler bunun etrafında dönüyor. Özellikle kapalı yöntemlerde söyleyelim.
+
+453
+01:28:09,260 --> 01:28:21,420
+Konfisyonumuz var. Çok karmaşık bir konfisyon olabilir. İki tane aralık belirliyoruz. Bu aralık içerisinde zero crossing varsa, o arada mutlaka en az bir tane kök var diyoruz.
+
+454
+01:28:21,420 --> 01:28:25,659
+Bu aralığı daralta daralta daralta nereye gidiyoruz? Köke yaklaşıyoruz.
+
+455
+01:28:28,564 --> 01:28:53,564
+İşte bu aralığın şey olması için iki ihtimal var. Yani FA çarpı FB, yani AB aralığında fonksiyon görüntülerinin çarpımlarının sonucu sıfırdan küçülse yani negatifse, ya FA tarafı negatiftir, FB tarafı pozitif ya da tam terstir burada olduğu gibi. O zaman bu arada bir yerde bir yerlerde kök vardır, en az bir tane kök vardır diyeceğiz. O kökü de işte bulacağız.
+
+456
+01:28:53,971 --> 01:29:03,572
+Bazı yöntemler var ki bunları paralel olarak arayıp birden fazla kök bulabiliyorsunuz. Bazı yöntemler var ki bir tane kök bulabiliyorsunuz. Onları inceleyelim.
+
+457
+01:29:04,771 --> 01:29:11,372
+Demiş ki en az bir tane kök olduğunu ispatlayalım. O zaman neye bakacağım? F1'e bakacağım. F3'e bakacağım.
+
+458
+01:29:11,771 --> 01:29:20,172
+Bana diyeceğim ki F1 çarpı F3 acaba küçük müdür 0'dan? Eğer böyle küçükse doğru döküleceğiz.
+
+459
+01:29:20,448 --> 01:29:45,047
+Yerine yazdığımızda, hani bunları geçelim. Burada tabii neye bakacağız? Herhangi bir tanımsızlık noktası var mı bu fonksiyonu? Yok. Bu bir kolinom. Parçalı bu fonksiyonu o da değil. Yani kritik noktayla alakalı bir şeyimiz yok. Bunlar değerleri yerine koyduğumuzda birisinde x3 bulmuşuz, birisinde 13 bulmuşuz. İşte ne oluyor? Biri pozitif, bir negatif. O zaman bir tane kök en az vardır diyebiliriz. Şöyle bir şey.
+
+460
+01:29:45,619 --> 01:29:49,900
+Burada bir C noktası var ki bu bizim kökümüz. Bunu daha sonra bulacağız.
+
+461
+01:29:49,900 --> 01:29:55,020
+Eğer bir parçalı fonksiyonundan bahsediyorsak, o zaman iş sıkıntılığı.
+
+462
+01:29:55,020 --> 01:30:01,539
+Şimdi x eşittir 3 noktasında ne oluyor? 3'ten küçük ve eşit olduğu durumlarda böyle bir şey var.
+
+463
+01:30:01,539 --> 01:30:06,860
+Yani bunu şöyle çizecek olursak x kare artı bir nasıldır? Şöyle bir fonksiyonudur.
+
+464
+01:30:06,860 --> 01:30:07,860
+Hatta...
+
+465
+01:30:08,467 --> 01:30:22,867
+üç noktasından şöyle bir şeydir. Buraya gelene kadar da işte x pardon şöyledir. Yanlış yaptım. Şöyledir. Sonra da iki x artı bir gibi gidiyor. Şöyle gidiyor.
+
+466
+01:30:22,867 --> 01:30:34,867
+Kavaca böyle bir şey. Tam şu üç noktasından. O zaman şimdi burada sıfır geçiş noktalarına baktığımda çok dikkat etmemiyizdir. Sıfırdan dörde. Sıfır nerede? Burada.
+
+467
+01:30:35,007 --> 01:30:43,007
+Şu burada, 4 burada, arada kritik nokta var. Kritik noktanın olduğu yerde 1 ve 9 var. Burada zaten çok bulamayacağız.
+
+468
+01:30:43,007 --> 01:30:50,007
+Süreklilik şartları işte her noktasında sürekli olacak. Şu bir noktada süreksiz var, şu da süreksiz var.
+
+469
+01:30:50,007 --> 01:30:57,003
+Parçalı fonksiyonlar, tanımsız yapan değerler burada denk gelirse bunları dikkate almamız gerekiyor.
+
+470
+01:30:57,011 --> 01:31:03,411
+Limitle alakalı sağdan limit, soldan limit birbirine eşit olacak. Bunlar da zaten bildiğimizi biliyoruz, gördünüz.
+
+471
+01:31:03,411 --> 01:31:12,371
+Bu özelliklere bakmadık. Yani bakmamız yeterli. Ufak tefek hatırlatmalar var. Detaylarına girmeyen çok fazla bence gerek yok.
+
+472
+01:31:16,051 --> 01:31:38,811
+Mesela şurada bu bir parçalı fonksiyon değil. Süreksizlik değeri var mı? Yok. Rasyonel bir fonksiyon olsa süreksizlik araştırabiliriz. Her yerde sürekli 2x-1 nasıl bir şey? İşte x eşittir 0 noktasında eksi 1'den geçiyormuş. O zaman bu 0 noktasında eksi 1'den geçiyorsa şöyle bir şey. Şuradan geçiyor. x eşittir.
+
+473
+01:31:38,899 --> 01:31:46,899
+Nerede sıfıra geliyor? İşte bir noktasında sıfıra gelecek. Şuradan şöyle giden bir fonksiyon. Zaten doğrusu aldık fonksiyon gibi.
+
+474
+01:31:46,899 --> 01:31:51,899
+İşte köklünün tamam buradan doğrudan doğru. Zaten sıfıra eşitleyince de bulabiliyoruz.
+
+475
+01:31:51,899 --> 01:31:59,899
+Sıfıra eşitlediğimizde sıfır yaptık. Bir bölü iki noktası olacak şurası. Şuradan doğrudan çıkar.
+
+476
+01:31:59,899 --> 01:32:01,099
+Şimdi...
+
+477
+01:32:01,235 --> 01:32:07,956
+Bütün algoritmalar dediğim gibi böyle iki nokta arasında başlıyor özellikle kafalı yöntem. Burada şunu belirlememiz gerekiyor.
+
+478
+01:32:08,916 --> 01:32:10,956
+Algoritmalarımızı nasıl durdurabiliriz?
+
+479
+01:32:13,015 --> 01:32:21,716
+Eğer gerçek kök size verildiyse, hocam gerçek kök verildiyse niye boş boşuna kök alıyor diyebilirsiniz. Yani bu sadece algoritmayı test etmek için kullanılır.
+
+480
+01:32:22,735 --> 01:32:28,376
+Belli bir hata değerine ulaşana kadar bu en ince iterasyonda bir şey hesapladınız.
+
+481
+01:32:29,140 --> 01:32:54,140
+ve gerçek kök bilginiz var. Bir de hata epsilon değeriniz var. İşte nedir? 0.00101. Bu hatanın altına düşene kadar iterasyonu tekrar edebilirsiniz. Bu bir yöntem. Eğer size bağıl hata verilirse, işte eninci iterasyonu elde edeceğiniz değer şu bağıl hatanın altında olsun o zamana kadar devam ederse böyle bir hata verilmen işlem yapabilirsiniz. Gerçek kökü biliyorsak.
+
+482
+01:32:54,515 --> 01:33:18,715
+Gerçek kök yoksa, asıl işimize yarayan şey bu. Gerçek kök yoksa arkadaşlar, algoritma bir yerden sonra oturacaktır. Yani buna Convergence diyoruz. Convergence. Ne demek? İşte hata artıyor, artıyor, artıyor. Böyle hatayı takip ediyorsun, bir yerde böyle oturuyor gidiyor. Artık diyorsun ki tamam, bu daha iyi, iyi diye gitmez.
+
+483
+01:33:19,220 --> 01:33:23,500
+Bu ileriye gitmemenin şartlarından bir tanesi de şu, mesela burada bir tane vermiş.
+
+484
+01:33:24,779 --> 01:33:31,939
+Elinci iterasyondaki üst sınırımız var, işte bir B gibi üst sınırımız var, bir de alt sınırımız var. Bu ikisi arasındaki farka bakıyorsunuz.
+
+485
+01:33:32,340 --> 01:33:40,859
+Ve iki üzeri n'e bölüyorsunuz. Bu kabul edilebilir bir ε diye meşhurda olduğu gibi ulaşıyorsa, bunun altında kalıyorsa bunu kullanabiliriz.
+
+486
+01:33:40,859 --> 01:33:44,380
+Veya şudur, bu daha güzel bir konusyon, yani şu biraz detaylı da.
+
+487
+01:33:45,011 --> 01:33:54,411
+n-artı birinci iterasyonda bir değer elde ettiniz. Yani çözüm değeri, kök değeri. N-inci iterasyonda da bir değerimiz vardı. Bu ikisi arasındaki farka baktınız.
+
+488
+01:33:54,411 --> 01:34:06,211
+Yani kök dediğimiz şey ne oluyor? 2.8888 diye böyle gidiyor. Öbüründe 2.898 gibi oluyor. Artık bu civarda kaldınız. Daha ileri gitmiyorsunuz.
+
+489
+01:34:11,347 --> 01:34:22,628
+Şöyle bir sayı değeri vereceksiniz. Bakın bunu bir while bölgüsü içerisinde yazarsanız while. Alın size durmak yeter. Burada anlaşılmayan bir şey var mı?
+
+490
+01:34:28,595 --> 01:34:54,875
+Peki, geldik yöntemlere. Şimdi birincisi grafik yöntemi. Böyle uzun bir şey var da, hani, prosedürüne geçince gayet kolay olduğunu gördük. Şimdi diyorsunuz ki bir tane, aslında bu bir açık yöntemdir ama kapalı bir yöntemdir. Ben bir yerde kök arayışı yapıyorum. Şöyle bir şeyim olsun. Bir x0 noktası seçtim. Şurası.
+
+491
+01:34:55,956 --> 01:35:07,956
+x0'dan itibaren delta x kadar uzaklıkta değer araması yapayım diyorum. Şimdi x0'ın delta x kadar uzaklıkta neresi olsun? Mesela şurası olsun.
+
+492
+01:35:07,956 --> 01:35:20,956
+Şurası x0 artı delta x. Az önceki zero crossing'ı hatırlayın. x0'ın fonksiyonundaki değerini bulurum. x0 artı delta x'in değerini bulurum.
+
+493
+01:35:24,500 --> 01:35:32,899
+sıfır geçişi varsa, biri pozitif, biri negatifse, o zaman bu aralıkta x0 ile x0 artı delta x arasında bir kök vardır.
+
+494
+01:35:33,899 --> 01:35:41,899
+Sonra şu delta x'i biraz güncellerim. Delta x'i neye güne göre günceleyeceğim? Genellikle ikiye bölünerek güncelliyorum.
+
+495
+01:35:41,899 --> 01:35:49,899
+Yani x0 artı delta x bölü ikiye bakacağım. O ne demek? Biraz daha geriye gel. Fazla kaçırmışım, biraz geriye gelmemiş.
+
+496
+01:35:50,420 --> 01:36:14,764
+Antara'nın dolu fazla karşılaşıyor. Biraz geriye gelince ne oluyor? İşte belki şurada oluyor. Baktınız yine aynı durumda. Bu geriye gele gele ne oluyor? Bir yerde sıfır geçişi olmuyor. Olmayınca da ne yapıyorsun? Hah diyorsun tam orada dur. Belki biraz bazen fazla geri geldiniz. O zaman biraz geriye gidiyorsunuz. Bu sıfır geçişi olmayana kadar veya şu delta x'in
+
+497
+01:36:15,636 --> 01:36:40,036
+değişimine bakacağız. Delta X'in değişimine. Mesela Delta X bu noktadaydı, bu noktaya geldi. Buraya alfa diyeyim. Bir sonraki şeyinde biraz daha az değişti. Sonra biraz daha az değişti. Bu değişim, çok küçük değerlere ulaşınca algoritmayı yürütüzeceğiz. Neyin değişimi? Delta X'in değişimi. Bakın X0'ı değiştirmeyiz dışkı olarak. Yapısı bu şekilde algoritma.
+
+498
+01:36:40,819 --> 01:36:45,179
+Bunun sayısal örneğini görünce çok rahat, hani bu muymuş diyebileceğiniz bir durum var.
+
+499
+01:36:46,699 --> 01:36:55,420
+Şimdi burada Banu hocanın bir videosu var. Ben o videoyu siz izlersiniz diye slide'a koydum. Ben bunu şey yapacağım. Şöyle şurada elle çözerek.
+
+500
+01:36:55,920 --> 01:37:00,779
+Örnek basit ama bütün durumlarda çalışabilir bir örnek yok.
+
+501
+01:37:01,819 --> 01:37:06,420
+Fonksiyonumuz neymiş? x²-6x
+
+502
+01:37:08,979 --> 01:37:15,739
+6x artı 5. Bu bizim fx'miz. Şöyle düzgün yazalım.
+
+503
+01:37:19,764 --> 01:37:39,963
+Şimdi arama yaparken bu bir kere iterasyonlarla devam edeceğiz dedik. X0 noktamızı, başlangıç noktamızı 1.5 vermiş. Burada bir de girdi olarak ne almamız gerekiyor? Delta X almamız gerekiyor. Yani 1.5'den ne kadar ileriye gideceğiz? 0.5.
+
+504
+01:37:41,043 --> 01:37:47,704
+75'e almam gerekiyor. Slide'da da bunun video çözümü var ya, ayrıca oradan da takip eden şeyi daha sonra tekrar edebilirsiniz.
+
+505
+01:37:47,704 --> 01:38:00,604
+O zaman ben, ha bir de ne gerekiyor? Bana durma kriteri lazım. Mesela epsilon eşittir, burada çok böyle uzatmayayım diye 0.0235 diye durma kriteri vermiş.
+
+506
+01:38:00,604 --> 01:38:05,704
+Yani şu delta x'lerin değişimi bu değerin altına düşerse algoritmayı durabiliriz.
+
+507
+01:38:05,704 --> 01:38:07,704
+Şimdi birinci iterasyon.
+
+508
+01:38:08,564 --> 01:38:10,508
+Şöyle diyelim.
+
+509
+01:38:14,739 --> 01:38:19,739
+Ne gerekiyor bana? X değerim var. Buna karşı bir fx'im olacak.
+
+510
+01:38:20,739 --> 01:38:26,739
+x'imizin değeri 1.5. fx'i yerine koyduğunuzda, burada şeye biraz mecbursunuz,
+
+511
+01:38:28,739 --> 01:38:32,739
+hesap makinesi kullanmaya, fx'in değeri eksi 1.75'miş.
+
+512
+01:38:34,739 --> 01:38:40,652
+Yerine koyduk, çıkarttık. Şimdi, buna delta x kadar değer ekliyorum.
+
+513
+01:38:40,948 --> 01:38:44,268
+Ne oluyor? Delta x kadar değer ettiğince 2.25 mi oluyor?
+
+514
+01:38:45,807 --> 01:38:50,168
+2.25 ekleminde ne olmuş? Eksi 3.43 olmuş.
+
+515
+01:38:50,928 --> 01:38:55,288
+Demek ki, biraz önceki şuradaki şeye çizmedik ama,
+
+516
+01:38:55,548 --> 01:39:04,748
+yani öyle bir kökümüz var ki, şuradan başladık şuraya kadar gelmişiz. Demek ki yeterli bir miktarda öseleme yapmamışız. Biraz daha gideceğiz.
+
+517
+01:39:06,068 --> 01:39:15,668
+Bu 0.75'i muhafaza ediyoruz. Çünkü 0.75'i güncellerken sadece ikiye bölerek arttırarak şey yapmıyoruz. Yani bu 0.75 hala devam ediyor.
+
+518
+01:39:15,668 --> 01:39:19,068
+Şimdi devam ediyorum bir daha.
+
+519
+01:39:19,068 --> 01:39:22,468
+2.25'e bunu ekledim, 3 oldu.
+
+520
+01:39:22,468 --> 01:39:26,468
+3'ü yerine koyduğumuzda ne olur? Burada eksi 4 olduğunu görürsünüz.
+
+521
+01:39:26,468 --> 01:39:30,412
+Bakın ne oluyor? Hep başlangıç noktama göre.
+
+522
+01:39:31,380 --> 01:39:41,580
+Hep negatifteyim, yani hala şuradan şuraya geçtim belki çok bir şey fark etmeli. Bir kök bulamadık, 0-7 olmadık. Bir daha arttırdık, 3.75.
+
+523
+01:39:43,880 --> 01:39:54,680
+3.75'teki değer de eksi 3.43'müş. Dikkat ederseniz önce bir arttı, sonra tekrar azaldı. 4.5 yaptığımızda...
+
+524
+01:39:56,372 --> 01:40:20,372
+1.1.75 geliyormuş. Arttırıyoruz, arttırıyoruz 0.75. 5.25 yakıyoruz en son. Buradan ne geliyor? 1.0625. Şimdi ne oldu? 0.625. 1.5 taki görüntüm burada negatifte.
+
+525
+01:40:25,524 --> 01:40:52,724
+Burada pozitifi buldum. O zaman bir buçuk ile beş nokta yirmi beş arasında bir şey var diye düşünüyoruz. Ama bu nereye kadar gitti? Bir buçuktan başladık, ilerledik, beş nokta yirmi beşi geçtik. O zaman beş nokta yirmi beşten biraz geriye geleceğiz. Bir buçuğa kadar da geriye gelmeme gerek yok çünkü zaten dört buçuğa kadar ne var? Hep eksi eksi eksi diye gidiyor. O zaman kök nerede arkadaşlar?
+
+526
+01:40:53,076 --> 01:41:00,576
+Burada hep eksi, eksi, eksi, eksi diye gidiyor ya. Kök nerede olabilir, hangi aralıktadır tahmin edin.
+
+527
+01:41:05,587 --> 01:41:07,587
+Hangi x değeri aralığında kök?
+
+528
+01:41:08,988 --> 01:41:10,587
+Şeritten yazan var.
+
+529
+01:41:10,587 --> 01:41:12,587
+4.5 ile 5.25 arası.
+
+530
+01:41:12,587 --> 01:41:16,587
+Aynen, 4.5 da negatifti. 5.25'e geçince ne oldu?
+
+531
+01:41:16,587 --> 01:41:20,587
+Şey oldu, o zaman birazcık geriye gelmeyi düşünüyoruz.
+
+532
+01:41:20,587 --> 01:41:22,587
+Şimdi ikinci iterasyonu şuraya sileceğim.
+
+533
+01:41:28,243 --> 01:41:29,804
+Dört kuçuk...
+
+534
+01:41:37,971 --> 01:41:38,971
+Niye?
+
+535
+01:41:39,471 --> 01:41:40,971
+Kale mi analiz?
+
+536
+01:41:42,271 --> 01:41:43,971
+Şey, akıllı.
+
+537
+01:41:45,171 --> 01:41:47,471
+Kiliklendi arkadaşlar, bir dakika bekleyelim.
+
+538
+01:41:49,171 --> 01:41:51,471
+Çok yoğun kullanınca PowerPoint'te dayanamıyor.
+
+539
+01:42:06,515 --> 01:42:20,515
+Şimdi 4.5 ile 5.25 arasında ise o zaman diyoruz ki biz burada delta x'imizi güncelleyelim. Yeni delta x eşittir, delta x bölü 2 olsun. Yani ne olacak? 0.75'te 0.375 olacak.
+
+540
+01:42:22,015 --> 01:42:32,491
+Biz 4.5'tan ileriye doğruyce de 4.5'ü tekrar bir alalım. 4.5'e karşılık gelen neydi? 1.x'i 1.75'ti.
+
+541
+01:42:32,787 --> 01:42:52,587
+Diyom ki 4.5'a bunu eklediğinde 4.875. Bunun değerine baktığında eksi 0.48 yetmedi. Biraz daha arttırıyorum. Artık yeni delta istedik. Burada ne oluyor? 5.25 oluyor. Yine şeye geldik.
+
+542
+01:43:00,979 --> 01:43:12,979
+eksi diye gitti, eksi diye gitti, burada artıyı gördük. O zaman bu kök, nasıl şurada şu kanıya vardıysa, burada root var dedik, burada da bu root'un olduğunu görüyoruz.
+
+543
+01:43:12,979 --> 01:43:23,979
+1.5'dan 5.25'e kadar önce arama yapmıştık, biraz daha ne oldu? İterasyonu arttırdıkça, 4.5'dan 5.25'e arama yapmamız gerektiğini anladık.
+
+544
+01:43:23,979 --> 01:43:27,723
+Artık şimdiki adımdan sonra ne yapıyoruz? İkinci adımdan sonra?
+
+545
+01:43:27,859 --> 01:43:55,099
+4.875'ten 5.25'e yaklaşmamız gerektiğini anlıyoruz. Gelelim şimdi üçüncü iterasyon. Şimdi ne yapacağız? Delta x eşittir. Delta x bölü 2. 0.375'i de bölersek 0.1875. Bu gelecek şimdi. 4.875'in karşılığı neydi?
+
+546
+01:43:55,539 --> 01:44:15,539
+eksi 0.48. Şimdi buna delta x'in yeni delta x'i eklediğinde ne oluyormuş? 5.0625. 5.0625. Yani şuradaki 5.25'ten daha geride bir noktayız. Bunun karşılığı neymiş? 0.2539.
+
+547
+01:44:17,203 --> 01:44:24,523
+Bakın ne oldu? Önce de burada 3-6 defa denedik. Şurada 6 defa denedik, burada 3 defa denedik, burada biraz daha az deneyelim.
+
+548
+01:44:24,523 --> 01:44:32,323
+Ne yaptık? Burada bir sıfır geçişi yine gördük. O zaman ne yapacağız? Dördüncü iterasyonda tekrar bunu böleceğiz.
+
+549
+01:44:34,963 --> 01:44:43,203
+Delta x eşittir, delta x bölü 2. Buradan ne geliyor? 0 nokta 0, 94.
+
+550
+01:44:43,347 --> 01:44:56,148
+Bakın 0.02'ye kadar düşmemiz gerekiyor. Daha devam etmemiz lazım. Buradan aradığımızda 4.875'te en son kalmıştık.
+
+551
+01:44:56,148 --> 01:45:10,547
+4.875'te eksi 0.48'di. Buna 0.094 eklediğimde 4.969 oluyormuş. Bunun karşılığı eksi 0.
+
+552
+01:45:10,752 --> 01:45:12,192
+12 oluyormuş.
+
+553
+01:45:13,712 --> 01:45:15,712
+0.12.30
+
+554
+01:45:16,512 --> 01:45:18,512
+0.408
+
+555
+01:45:19,712 --> 01:45:22,752
+48.44 şöyle gidiyor arkadaşlar, şunları da yazalım.
+
+556
+01:45:24,351 --> 01:45:26,351
+Yani detaylı olarak yazabiliriz.
+
+557
+01:45:27,152 --> 01:45:33,391
+Hala buradan o zaman negatif gördüğüm için pozitif görmem lazım. Biraz daha ilerleme gidiyor. 5.063
+
+558
+01:45:33,912 --> 01:45:35,592
+Biraz daha delta x ekledim.
+
+559
+01:45:36,275 --> 01:45:41,395
+Biraz daha delta eksek dedim burada. Yani şunları da delta eksek diyorum. Bakın arada yazmıyoruz ama.
+
+560
+01:45:41,395 --> 01:45:54,515
+5.0.60 işte. Ne olacak? Eksi artı 0.25.59. Burada bakın bir cross daha oldu. O zaman şu ikisi arasında.
+
+561
+01:45:54,515 --> 01:45:56,835
+Beşinci iterasyon.
+
+562
+01:45:57,716 --> 01:46:04,316
+yapılacak, 6. iterasyon yapılacak, yani orayı yazmıyorum artık aynı şeyle. 6. iterasyonda
+
+563
+01:46:04,316 --> 01:46:15,716
+delta x'imiz 0.0235 oluyormuş yenisi ve kökü artık sıfır geçişlerini bulduğum için durduruyoruz.
+
+564
+01:46:16,500 --> 01:46:24,420
+Şöyle baştan alayım, genel halini izah edeyim, onun üstüne bir ara verelim, ona diğer yöntemi geçeceğiz.
+
+565
+01:46:24,420 --> 01:46:31,500
+Ne yaptım? Bir başlangıç noktası seçtim. Başlangıç noktasından gidebileceğim maksimum nokta değerini buldum.
+
+566
+01:46:31,500 --> 01:46:39,212
+1.5'dan 2.25'e kadar. 1.5'dan 2.25'e kadar iterasyon yaptığımda negatifim hala negatif.
+
+567
+01:46:39,347 --> 01:46:48,347
+Sonra o zaman bir o kadar daha gideyim dedim, işte hala nebatif, biraz daha gittik, biraz daha gittik. En son 5.25'e geldiğimizde pozitif edildik.
+
+568
+01:46:48,347 --> 01:47:00,347
+O zaman dedik ki bu kadar ilerlediğimiz göre en son kaldığımız yani 4.5'da kaldığımız noktaya şu noktayla 5.25 arasında mutlaka bir kök vardır. Yani sıfır geçiyor.
+
+569
+01:47:00,347 --> 01:47:06,271
+Bakın bu kök gerçek kök. İmajiner kök olsa sıfır kök olmaz.
+
+570
+01:47:06,271 --> 01:47:14,832
+İşte şöyle x kare artı iki diyelim mesela buna. Bunun gerçek kökü yoktur çünkü sıfır geçiş hiçbir zaman yoktur. Gerçek kökten bahsediyoruz.
+
+571
+01:47:14,832 --> 01:47:26,032
+Zaten çarpanları ayırdığımızda da bu ne oluyor? Biri beş oluyor, biri de artı bir oluyor köklerin. Biz burada beşe yaklaşıyoruz. Sonra...
+
+572
+01:47:26,420 --> 01:47:52,420
+Şeyi güncelledik, DeltaX'i güncelledik. Dedik ki 4.5 ile 5.25 arasında ise 4.5'tan biraz daha, yeni DeltaX'e göre biraz daha şey yapayım, geriden alıp acaba fazla mı bitip diye bakıyoruz. 4.875. Biraz daha ilerledik, 5.25'e geri geldi. O zaman şu ikisi arasındadır dedik ki. Sonra ne yaptık? DeltaX'i tekrar güncelledik. Böyle devam ederek gidiyoruz. Şimdi şu slide üzerinde.
+
+573
+01:47:54,515 --> 01:47:58,515
+İlerleyişi de öyle gösterelim. Bir de bunun videosu var, ona da bakarsınız.
+
+574
+01:47:58,515 --> 01:48:03,515
+Vakat çok böyle döngüyle halledilebilecek bir basit bir şey.
+
+575
+01:48:10,739 --> 01:48:20,340
+Birinci iterasyon, ikinci iterasyon, yani kök yani Delta X demirinin farkları şu şekilde. Üçüncü iterasyonunda böyleyiz.
+
+576
+01:48:21,939 --> 01:48:26,340
+Dördüncü iterasyonunda bu kadar artacağız. Beşinci iterasyonunda buraya kadar geldik.
+
+577
+01:48:27,939 --> 01:48:35,340
+Yani burada zamana göre veya iterasyona göre Delta X'in değişimini inceleyecek olursak, örneğin 0.375'teydik.
+
+578
+01:48:36,115 --> 01:48:42,716
+0.18 küsuraya düştük, yarılana yarılana neredeyse şöyle gelip belli bölgelerine oturuyoruz.
+
+579
+01:48:42,716 --> 01:48:46,716
+En son 6. iterasyonda 0.02.35 olmuş.
+
+580
+01:48:46,716 --> 01:48:51,916
+6. iterasyonda bakalım, en son burada 4.969'da kalmış.
+
+581
+01:48:51,916 --> 01:48:59,916
+Buna 0.02.35 şeklinde 4.99.25'e geliyor. Bu negatif, bu negatif. O zaman biraz daha ilerliyoruz.
+
+582
+01:49:00,083 --> 01:49:21,083
+4.9925'e bir delta x eklediğimizde 0.92 eklediğimizde şunu buluyoruz. Bu ikisinin görüntüsü bir pozitif bir nöbet olduğu için bu zaman burada bir kök vardır diyoruz. Şu bizim epsilon değerimize, şurada verdiğimiz şeye yakın olduğu için, şuna yakın olduğu için artık bunu durdurabiliriz.
+
+583
+01:49:21,555 --> 01:49:34,155
+Burada ne oldu? Kökü yaklaşık olarak burada. İşte burada da zaten kökünün işte eğer tam sayı değerini verin dersek, bunu tam sayıya yuvarlıyorsunuz. İşte yuvarladığınızda yaklaşık olarak beş dediği algoritma yitireceğiz.
+
+584
+01:49:35,155 --> 01:49:43,155
+Şimdi soru şu, siz bu soruyu kodlayacak olsanız, order ünlüsünü kullanırsınız, while ünlüsünü kullanırsınız.
+
+585
+01:49:49,171 --> 01:49:51,171
+Why döngüsü kullanırız hocam.
+
+586
+01:49:51,171 --> 01:50:00,171
+Why, niye? Ne zaman biteceği belli değil. Bir de bitme kriterine Delta X'in değişimi en güzel why döngüsü de çözülebilir.
+
+587
+01:50:00,171 --> 01:50:10,171
+Bakın, burada çözüm ararken, şöyle çizelim, bir noktadan başladık, x0, buraya bir Delta X kadar dedik.
+
+588
+01:50:10,171 --> 01:50:13,707
+Bir şeyleri gereksiz yapıyoruz. Yani diyoruz geriye gelelim.
+
+589
+01:50:14,068 --> 01:50:24,188
+Acaba ileri mi gitsek, geriye mi gitsek? Tekrar bulunduğumuz noktada aynı şeyleri tekrar ediyoruz. Bakın bazı sıfırlar tekrar yapıyor. Şurada dört buçuğa baktık. Şurada dört buçuğa tekrar bakıyoruz.
+
+590
+01:50:24,188 --> 01:50:31,307
+Bu birazcık böyle algoritmayı yavaşlatıyor. Hocam ne olacak? 6 iterasyonu da bulduk diyebilirsiniz de.
+
+591
+01:50:31,307 --> 01:50:40,748
+Şimdi sonsuz bir uzayda geziyoruz arkadaşlar. Yani sıfır ve bir arasında sonsuz tane sayı var. Bu sonsuz uzay arasında böyle...
+
+592
+01:50:41,011 --> 01:50:50,011
+0.75'lik ne bileyim 0.1'lik şeyler, ayarlamalar gecikmeye sebep olabilir. Algorithmanın geç yanık vermesine sebep olabilir.
+
+593
+01:50:50,011 --> 01:51:05,003
+Bunun üstesinden gelmek için iki farklı kapalı yöntem daha önermişler. Bunlardan bir sayısız bisection yöntemi, bir de regular falsi yöntemi, interpolasyon yöntemi. Bunların mantığına bakacağız. Saatimiz geldi.
+
+594
+01:51:05,140 --> 01:51:10,140
+Tam elini geçiyor. On dakikasına geldiğinde kaldığımız yerden devam ederiz.
+
+595
+02:01:57,492 --> 02:01:59,083
+Evet arkadaşlar.
+
+596
+02:02:04,051 --> 02:02:05,331
+Ses geliyor herhalde.
+
+597
+02:02:12,659 --> 02:02:15,659
+Bir şey sormak istiyorum. Duyuyor musunuz?
+
+598
+02:02:15,659 --> 02:02:17,659
+Duyuyoruz hocam.
+
+599
+02:02:17,659 --> 02:02:20,659
+Sabahki ders mi kolay, giders mi kolay?
+
+600
+02:02:20,659 --> 02:02:27,659
+Ne dersiniz?
+
+601
+02:02:27,659 --> 02:02:37,659
+Özellikle sabah çok sessiz, şimdi de böyle şey yok. Yani her şey güzel mi anlaşılıyor? Yoksa ne bileyim...
+
+602
+02:02:39,380 --> 02:02:54,139
+Soru sorunlardan da çok çekinmeyin arkadaşlar. Yanlış yaptım, hoca kızar, ondan sonra yanlış bir şey söylersen, sorunluğa almak istedim, daha öyle şeyler düşünmeyin.
+
+603
+02:02:54,139 --> 02:03:02,139
+Bakın, hataları azaltarak öğretiyoruz. Siz de hatalarınızı azaltarak, görerek üstünü örtmene göreceksiniz.
+
+604
+02:03:02,139 --> 02:03:06,139
+Evet, düşüncenizi alınmak istiyorum. Sabahki dersin kolay, sizce bunu kolay.
+
+605
+02:03:11,315 --> 02:03:14,115
+Ondan bir yere getireceğim. Bir işe aldı.
+
+606
+02:03:14,115 --> 02:03:20,115
+Hocam sabahki dersi daha çok şey öğrenmedik. Biz temel gidiyoruz. O yüzden bence daha şu anlık için sabahki ders daha kolay.
+
+607
+02:03:20,115 --> 02:03:22,676
+Fatih Hoca da en azından.
+
+608
+02:03:22,676 --> 02:03:26,515
+Tamam. Sabahki [öğrenci] da yazmış.
+
+609
+02:03:26,515 --> 02:03:31,716
+Peki kolaylığın ölçüsü sizce nedir? Yani neye göre kolay diyorsunuz?
+
+610
+02:03:34,771 --> 02:03:42,452
+Burada ne yapıyoruz, orada ne yapıyoruz? Bundan yola çıkarak bu düşüncelerinizi tartsanız ne dersiniz?
+
+611
+02:03:48,916 --> 02:03:58,675
+[öğrenci], sana göre kolaylık, ne açıdan kolay sabahki ders? Anlaşılabilirlik. Bu ders daha mı anlaşılmaz?
+
+612
+02:03:58,675 --> 02:04:03,555
+Bence de anlaşılabilirlik olarak sabahki daha iyi.
+
+613
+02:04:03,555 --> 02:04:13,715
+Yani bu dersin anlaşılabilirliği şöyle, matematiksel şeylerin üzerinden gittiğimiz için haklısınız. Biraz daha böyle solüt gelebilir.
+
+614
+02:04:13,939 --> 02:04:39,739
+Sabahkiinde işte böyle biraz daha kod yazacak şeye geliyoruz. İşin açıkçası sabahki ders daha zor. Çünkü karşınızda bir problem var, siz o problemi algoritma üretmeniz gerekiyor. Burada hazır üretilmiş algoritmalar var. Yani burada algoritmik bir şey yapmıyoruz. Dolayısıyla bu açıdan baktığınızda bu ders daha kolay.
+
+615
+02:04:40,435 --> 02:04:45,835
+Ve toplama, çıkarma, çatma bölme, bir de for döngüsü, bilmem ne işte wire döngüsü, is falan kullanacağız.
+
+616
+02:04:47,635 --> 02:04:54,036
+Bu düşüncenizi dönem sonunda incelediğinizde, ki genelde bu dersin ortalaması o derse göre daha yüksek oluyor.
+
+617
+02:04:54,835 --> 02:05:02,036
+Hep bu ders daha aslında kolaymış ya diyebileceğiniz durum. Hele bir de kendiniz kodlamaya başladıkça şu algoritmaları,
+
+618
+02:05:02,335 --> 02:05:04,335
+öğrendiğinizi hissedeceksiniz.
+
+619
+02:05:05,135 --> 02:05:07,335
+İşin zor tarafı şudur arkadaşlar.
+
+620
+02:05:08,180 --> 02:05:13,579
+Bir ürün tasarlayıp, bir problem ortaya atmak en zor şey.
+
+621
+02:05:14,380 --> 02:05:26,380
+Düşünün chat GPT veya derin öğrenme gibi şeyler üzerinde çok kafa yorulması gereken problem olarak, baya uğraşılması gereken şeyler.
+
+622
+02:05:26,380 --> 02:05:33,980
+Sonra ona bir çözüm üretiyorsunuz. Çözüm de biraz daha zor. Sonra o çözümü test ediyorsunuz.
+
+623
+02:05:34,355 --> 02:05:39,795
+Aslında işin sonuna vardıkça, algoritmayı anlama noktasına geldikçe, iş kolaylaşıyor.
+
+624
+02:05:39,795 --> 02:05:44,755
+Ki buradaki yöntemler çok kolay algoritma var. Ama sıfırdan bir problem tasarlayıp,
+
+625
+02:05:44,755 --> 02:05:50,195
+veya bir problem üretip, o problemi algoritma üretmek işin önünde daha zor.
+
+626
+02:05:51,315 --> 02:05:58,275
+Yani onu söyleyeyim. Şimdi belki kavramlar, bu dersleri hiç darbe almadığımız için...
+
+627
+02:05:58,771 --> 02:06:07,211
+Böyle farklı geliyor olabilir ama şöyle bir 5-6 hafta sonra iyice alışınca diyeceksiniz ki ya bu yapısal biraz daha zormuş.
+
+628
+02:06:07,211 --> 02:06:12,331
+Özünde iki derste kolay mı? Kolay. Ben sadece ikisini böyle karşılaştırmak amacıyla söyledim.
+
+629
+02:06:12,331 --> 02:06:14,891
+Ama bu ders daha kolay, öyle söyleyeyim.
+
+630
+02:06:14,891 --> 02:06:21,411
+Şimdi geldik grafik yönteminden sonra bisection yöntemine.
+
+631
+02:06:21,411 --> 02:06:24,371
+Çünkü bisection yönteminin çıkış noktası aslında...
+
+632
+02:06:26,036 --> 02:06:28,256
+bildiğinizi düşündüğüm bir algoritma.
+
+633
+02:06:31,256 --> 02:06:34,055
+binary search algoritması.
+
+634
+02:06:36,355 --> 02:06:38,355
+Geçen dönem gördünüz mü bunu?
+
+635
+02:06:39,155 --> 02:06:40,355
+Gördük hocam.
+
+636
+02:06:40,595 --> 02:06:42,916
+Evet. Ne yapıyon bu binary search?
+
+637
+02:06:49,811 --> 02:06:54,411
+Nasıl bir mantığı vardır? Böyle hani detaylı değil de böyle kabaca ne söyleyebiliriz?
+
+638
+02:06:55,192 --> 02:07:02,091
+Gördüğünüzü söylediğiniz için sizden cevap bekliyorum. Hani görmedik deseniz ben direkt hani anlatmaya başlarım. Yani soru sorarken
+
+639
+02:07:02,351 --> 02:07:05,931
+bildiklerinizden yola çıkarak bilmediklerinize gitmeye çalışıyorum.
+
+640
+02:07:06,971 --> 02:07:11,311
+Eğer bir şeyler biliyorsanız sizinle beraber etkileşimi arttırabiliriz sayede.
+
+641
+02:07:14,131 --> 02:07:15,152
+Binary Search
+
+642
+02:07:17,652 --> 02:07:26,152
+İkili arama. Alttan üstten değer seçip ortada istenilen değeri bulmaya çalışıyoruz. Dizinin her seferinde yarayabilen arama yapıyoruz.
+
+643
+02:07:27,152 --> 02:07:34,152
+Her seferinde yarayabilen. Elimizde bir dizi eleman olacak. Bu illa sayı olmak zorunda değil.
+
+644
+02:07:35,751 --> 02:07:42,652
+Bu dizideki elemanların bir özelliği olması lazım. Bunlar sıralı. Sorted element.
+
+645
+02:07:44,020 --> 02:07:52,780
+Neye göre sıralı? İşte karakterlere göre sıralı olabilir, alfabetik sıralı veya sayısal sıralı, sayı doğrusuna göre sıralı olabilir.
+
+646
+02:07:52,780 --> 02:08:03,420
+Ben diyorum ki tek tek arama yapmak istediğimde örneğin bir x elemanını arıyorum, şuradaki x. elemanını arıyorum. Linear search ne yapıyor?
+
+647
+02:08:03,420 --> 02:08:11,020
+Veya sequential search. Buna bak, var mı, yok, buna bak, buna bak, buna bak, tek tek bakıyor. Ama bu sıralıysa
+
+648
+02:08:11,636 --> 02:08:20,036
+Tam ortaya baksam, aradığım eleman ortadakinden büyükse bu tarafa bakarım. Ortadakinden küçükse bu tarafa bakarım.
+
+649
+02:08:20,036 --> 02:08:29,236
+Dolayısıyla tek bir adımda, tek bir orta noktaya bakarak neyi bulmuş olurum? Dizinin yarısını dışarıya atmış oluyorum.
+
+650
+02:08:29,236 --> 02:08:35,236
+Gereksiz aramadan kurtulmuş oluyorum. Sonra diyorum ki...
+
+651
+02:08:35,796 --> 02:09:02,316
+Örneğin aradığım eleman burada olsun. Şurayla şuranın tam ortasına bak, o da şurada olsun desene. Bu sefer arayacağım yerin burada olduğunu, bir yarı daha gitti. Böyle yarıla yerle zaten log 2n karmaşıklıklı bir algoritmadır. Eğer elimizde sonlu bir uzay varsa, sonlu sayıda element varsa binary search algoritması diyoruz buradaki arama işleminde. Bunu sonsuz
+
+652
+02:09:02,452 --> 02:09:06,051
+sayı doğrusu üzerindeki sonsuz aralıkta da uygulayabiliyoruz.
+
+653
+02:09:08,351 --> 02:09:09,851
+Şey mi söyleyecektim [öğrenci]?
+
+654
+02:09:16,819 --> 02:09:28,811
+Eğer ki bunu sonsuz aralıkta yapacaksak, bunun adı da burada bisection ikiye bölme yöntemi. Mantık aynı. Evet, [öğrenci].
+
+655
+02:09:32,275 --> 02:09:33,275
+Sorumlar.
+
+656
+02:09:38,195 --> 02:09:40,195
+[öğrenci], şey mi diyeceksin?
+
+657
+02:09:46,963 --> 02:09:49,963
+Bekleme odasında beklesin o zaman bir arkadaş arkadaşımız.
+
+658
+02:09:49,963 --> 02:10:07,963
+Şimdi, algoritmanın mantığına bakalım. Bu bir kere lineer olmayan yöntemlerde kullanılır. Analitik çözümü olmayan denklemlerde kullanılabilir.
+
+659
+02:10:07,963 --> 02:10:13,612
+Kapalı yöntemdir. AB kapalı aralığında eğer bir kök varsa,
+
+660
+02:10:14,100 --> 02:10:41,932
+Bu aralıkta arama yapacağız demektir. Çözüm olduğunu göstererek işe başlıyoruz. Örneğin bu üçüncü dereceden bir polinom. Bu polinomun 0-1 aralığında köküne bakacaksak, ne yapmamız gerekiyor? 0-1 arasında en az bir kök olduğunu göstermemiz gerekir. Eğer en az bir kök varsa, bundan sonra bu iki noktanın tam ortasına bakacağız.
+
+661
+02:10:42,579 --> 02:10:54,979
+Binary Search ile tamamen aynı. Binary Search algoritmasında dizi üzerinde bunu yaparken bir left point, bir de right point veya big and where start dediğiniz zaman bir de mid point vardır.
+
+662
+02:10:54,979 --> 02:11:06,179
+Aradığınız eleman eğer if dersiniz, işte x elemanı büyükse midpointten yani buradan büyükse o zaman l eşittir m artı bir yaparsınız.
+
+663
+02:11:09,747 --> 02:11:34,747
+aradığınız eleman küçükse m'den, bu sefer r eşittir m-1 yaparsınız. O da değilse zaten aradığınız eleman tam şurada olabilir, if hatta bunu önce yazalım, if x eşitti orta noktadaki elemansa o zaman direkt buldum dersiniz, true dersiniz. Bu da değilse
+
+664
+02:11:35,091 --> 02:11:56,591
+Zaten aramaya devam etmeniz gerek. O zaman orta noktayı Left artı mid bölü 2 yapıp hüccellersiniz. Şu Left artı mid bölü 2 aslında şudur arkadaşlar. Left artı m çarpı 1 bölü 2. Bunu unutmayın. Bunu neden unutmayın diyorum. Birazdan bir yöntem daha gelecek. Şu 1 bölü 2 yerine başka bir şey yazarak iş yapacağız.
+
+665
+02:11:57,747 --> 02:12:03,987
+algoritmanın doğasında hani yarılaya yarılaya gidiyoruz ama bu yarılamanın matematiksel karşılığı bir bölü kire çarpmak denir.
+
+666
+02:12:03,987 --> 02:12:09,427
+Let ve ortayı çarpmak. Şimdi bakalım, örnek üzerinden anlatalım. Mantığı bu başka bir şey değil.
+
+667
+02:12:09,427 --> 02:12:16,779
+Ha bu arada şunu söyleyeyim. Şurada durdurma kriteri olarak başka ne verebilir miyorduk?
+
+668
+02:12:25,779 --> 02:12:30,699
+Burada durdurma kriteri epsilon, delta x'in değişimi. Başka ne olabilirdi?
+
+669
+02:12:39,923 --> 02:12:45,923
+Evet, yorum bekliyorum. Neyin değişimine bakarak durdurabiliriz başka burada arkadaşlar?
+
+670
+02:12:47,923 --> 02:12:50,923
+Hangi bölmeyi neyin değişimine bakarak durdurabiliriz?
+
+671
+02:12:51,923 --> 02:12:56,923
+Hocam, en son bulduğumuz değeri yuvarlayıp fonksiyonda denesek?
+
+672
+02:12:57,923 --> 02:13:05,923
+Fonksiyonda denesek olabilir mi? Olabilir. Yani bulduğumuz kökü güzel, fonksiyonda yerine koyarım diyor arkadaşım.
+
+673
+02:13:06,003 --> 02:13:10,003
+sıfıra ne kadar yaklaşıyorsa bir de epsilon değeri veririz.
+
+674
+02:13:10,003 --> 02:13:23,003
+sıfıra 0.001 kadar yaklaştığını görelim. Çünkü bir değer bir fonksiyonun kökü ise onu sağlaması lazım. Dolayısıyla sıfıra ulaşmam gerekiyor.
+
+675
+02:13:23,003 --> 02:13:29,003
+sıfıra belli bir uzaklığa bakarız. Mesela şurada kökü ne bulmuşuz?
+
+676
+02:13:30,195 --> 02:13:36,795
+Pardon, 5.0625. Bunu giderim yerine koyarım. Güzel. Başka ne olabilir? Buna çok yakın bir şey daha var.
+
+677
+02:13:42,452 --> 02:13:45,891
+Denklemde yerine koymadan da aslında bunu yapabilmemiz mümkün olabilir.
+
+678
+02:13:49,908 --> 02:14:16,348
+Şimdi delta x'in değişimini şurada yazayım. 0.75'ten ne yaptık? Bunu birazdan kullanacağız çünkü. 0.375 yaptık. Ondan sonra ne yaptık? 0.1875, sonra 0.094, sonra 0.047, sonra 0.0245 diye böyle gittik ve durdurduk.
+
+679
+02:14:16,404 --> 02:14:21,724
+Bakın değişim böyle bunu çizdirirseniz böyle azalan şuna yakın bir şey var.
+
+680
+02:14:21,724 --> 02:14:26,884
+Aynısını delta x için yaptığımızda bir de şu kökün değişimine bakalım.
+
+681
+02:14:26,884 --> 02:14:37,204
+Biz mesela önce kökü 1.5 demiştik. Sonra ne oldu? Şurada 4.5 falan dedik. 4.5.
+
+682
+02:14:37,204 --> 02:14:44,003
+Sonra 5.25 olmadı. Ne oldu? 4.875 oldu.
+
+683
+02:14:45,108 --> 02:14:49,108
+Sonra şurada 4.969 oldu.
+
+684
+02:14:50,608 --> 02:15:12,684
+Yani bir önceki kökle bir sonraki kök arasında, yani delta x değil, x'in i inci iterasyonuyla, x'in i artı birinci veya i eksi birinci iki iterasyon arasındaki kökün farkının mutlak değerini alıp küçüktür, eşittir, işte 0.0001 gibi bir şey desek, bu da durdurabilir değil mi arkadaşlar?
+
+685
+02:15:14,195 --> 02:15:27,796
+Burada da bunu durdurma kriterini kök üzerinden verebiliriz. İsterseniz farklı durdurma kriterleri de söyleyebilirsiniz, tarif edebilirsiniz.
+
+686
+02:15:27,796 --> 02:15:35,395
+Örneğimize bakalım. Böyle bir denklem var. Bunun kökünü bulacağız. 0, 1 arasında kök var mı? Buna bakacağız.
+
+687
+02:15:35,395 --> 02:15:40,195
+Şimdi 0 verdiğimizde bu değer eksi 6'ymiş, 1 verdiğimizde 2'ymiş fonksiyonunu da yerine koyduk.
+
+688
+02:15:40,756 --> 02:15:51,756
+F0 negatif, bu pozitif, demek ki bu aralıkta bir kök, en az bir tane var. Şimdi ne yapacağım? 0 ile 1000 arasındaki tam orta nokta 0,5'e bakacağız.
+
+689
+02:15:51,756 --> 02:16:07,756
+0,5'e baktıktan sonra diyeceğiz ki örneğin 0,5'e de baktık, bakalım. 0,5'in karşılığı ne olsun? İşte birinde 6, birinde şey, mesela burada 1 olsun.
+
+690
+02:16:07,792 --> 02:16:18,591
+Ben salladım sadece, yerine koydum. O zaman ne diyeceğiz? 0 ile 0.5 arasındadır. 1 ile 0.5 arasında değildir. Aradığımız kök diyebiliriz.
+
+691
+02:16:18,591 --> 02:16:32,391
+Şunlalık şunu çizeyim de devamlıyorum. Grafiksel olarak baktığımızda bir A1 noktası seçtim, bir B1 noktası seçtim. A1 pozitif, B1 evet. O zaman diyorum ki
+
+692
+02:16:32,852 --> 02:16:42,452
+Aradığım kökte tam şurada kırmızı olan yok. O zaman diyorum ki ben şu B1'i şuraya orta noktaya getireyim. Bu tarafa çekeyim.
+
+693
+02:16:42,452 --> 02:16:54,852
+Sonra B2'ye baktım, A2'ye baktım. O zaman burada A2'yi yaklaştırıyorum. Bir A2'yi bir B2'yi yani bu taraftan iki tarafta iki ucu birbirine yaklaştırarak yaklaştırarak aynı binary search mantığında olduğu gibi devam ediyoruz.
+
+694
+02:16:54,852 --> 02:17:00,652
+Şimdi A1 çarpı FB1 sıfır ise bu aralıkta kök var. B2 diye bir şey bulduk.
+
+695
+02:17:01,108 --> 02:17:08,708
+A1'i ve B1'i topladık, yeni bir B2 noktası elde ettik. A1 çarpı B2'ye bakıyorum artık burada.
+
+696
+02:17:08,708 --> 02:17:28,108
+İşte bu aralıkta bir şey varsa, kök varsa, negatif varsa A2'yi biliyorum. Yani bir oradan bir buradan, hangi taraftan yaklaşacağımı noktalar arasındaki duruma göre karar veriyorum. Yani orta noktaya baktım, 0 ile 1000'in orta noktası neresi? 0.5. Eğer 0.5 pozitifse
+
+697
+02:17:28,244 --> 02:17:40,244
+Ne yapacağım? Şu üstteki ucu bir noktasını ortaya doğru çekeceğim. Veya aşağıdaki ucu yukarıya doğru çekileceğim. Böyle birbirine kökler yaklaşacak.
+
+698
+02:17:40,244 --> 02:17:54,244
+Şimdi burada durma kriteri olarak şunu sunabiliriz. Şu iki uçtaki yani bir buradan bakıyoruz, bir buradan bakıyoruz ya. İkisinin de değişimi belli bir epsilon değerinin altına düşerse durdurabiliriz. Bu olabilir.
+
+699
+02:17:54,835 --> 02:18:09,235
+Veya orta noktanın değişimi, yani bu ikisinin tam ortasının değişimi, belli bir düzenine oturursa, belli bir ε değerinin altına düşerse orada da durdurabiliriz. İkisinden de istediğimiz sonuca ulaşmak mümkün olabilirsin.
+
+700
+02:18:09,235 --> 02:18:19,036
+Bakın burada, hani şunun çözümü şey olarak var, hani uzunluğunu anlatmayalım, yani direk üzerinden gideyim. Sıfıra baktık, bira baktık, bir de...
+
+701
+02:18:19,603 --> 02:18:28,603
+Burada durdurma kriteri olarak, hani bizim slide'daki durdurma kriterimi göstermiş hocam. Mühimliğin hangisi olduğu? Şimdi bir de 0.5'e bakacağız.
+
+702
+02:18:28,603 --> 02:18:47,403
+Şimdi 0.5'teki değer neredeymiş burada yazıyor mu? 0.5625'miş. Şimdi bu negatif, burası pozitif, burası pozitif. O zaman kökümüz nerede olacak? 0.0 ile 0.5 arasında bir yerde olmasını bekliyoruz.
+
+703
+02:18:47,924 --> 02:19:01,724
+Anlaşılır ise, 0.5'teki değer 0.625'miş arkadaşlar, ben yanlış söyledim. O zaman bu negatifse 0.5 ile 1 arasında kökümüz olacak.
+
+704
+02:19:01,724 --> 02:19:09,724
+0 ile 0.5 arasında değil, şurayı çünkü tamamen negatif. Şimdi burada 0.5'in değerine bakıyorum.
+
+705
+02:19:14,260 --> 02:19:21,260
+Ne yapıyorum? Bir de bu ikisinin arasına bakıyorum. Bu ikisinin arası 0.75, bunun değer de 0.098.
+
+706
+02:19:21,260 --> 02:19:39,260
+O zaman ne ile neyin arasında? Bakın burada 0.5 diyelim, şurada 1 diyelim. Bu ikisinin arasında 0.75 var. 0.5'teki kök negatif, 1'deki kök pozitif, 0.75'teki kök de pozitif. O zaman 0.
+
+707
+02:19:39,840 --> 02:20:06,840
+75 ile 0.5 arasındaki ökaryayı. Yani şu noktayı ne yapacağım? Buraya getireceğim. Yeni noktalarımız 0.75 ile 0.5 idi. Bunlar zaten hesap vardı. Şimdi bunun orta noktası 0.625 oluyor. Bunun değer de neymiş? 0.025. Yani pozitif. O zaman
+
+708
+02:20:06,963 --> 02:20:12,963
+0.625 ile 0.5 arasında bir arama yapacağım.
+
+709
+02:20:14,164 --> 02:20:19,963
+Biraz önceki böyle bir geriye gittim, fazla ileri gitmişim, biraz geriye geleyim, böyle şeyler yok.
+
+710
+02:20:19,963 --> 02:20:28,963
+Algoritma Stable'du şekilde, kökler birbirine, şeyler iki uç birbirine yaklaşıyor. Biraz fazla almışız, biraz geri gidelim, böyle bir şey mümkün değil.
+
+711
+02:20:28,963 --> 02:20:30,963
+Burada doğrudan yaklaşıyoruz.
+
+712
+02:20:30,963 --> 02:20:31,727
+Şimdi...
+
+713
+02:20:31,727 --> 02:20:40,127
+Bunun orta noktasına baktığınızda 0.05625, 5625, bu nevetmiş? Yani şu arada bir nokta var.
+
+714
+02:20:40,127 --> 02:20:49,487
+O zaman buna şunun arasında olacak. Artık burada 0.5625 ile 0.60625'in arasına bakabiliriz.
+
+715
+02:20:49,487 --> 02:20:56,927
+Bakmamış, gerek duymamış. Artık demiş ki durma kriterine geldik. Yani şu 0.56.
+
+716
+02:20:57,236 --> 02:21:22,796
+Sonra 0.6. Bu aralıkta dikkat ederseniz çok fazla bir değişim yok. Veya şu durma kriterinde elde edeceğimiz durma kriteri iterasyona göre böyle azalıp gidiyor ya, eksponansiyel olarak burada böyle şey var zaten, azalma durumu var. Kök artık şu aralığa oturdu deyip 0.5625 bizim kökümüz yaklaşıktır, yaklaşık köklerimizden bir tanesi diyebiliriz.
+
+717
+02:21:22,959 --> 02:21:42,959
+Hocam öbür kök değerini nasıl bulacağız? Bu zaman başta bir aralık seçeceksiniz. Mesela biz burada 0 ile 1 dedik, ne bileyim 1 ile 2'yi seçersiniz veya 1 ile 10'u seçersiniz. Bu 1 ile 10 arasında bir tane kök varsa onlar yaklaşır. Bu sefer farklı bir kök değerine yaklaşırsınız. Ve bu şekilde algoritma sonucunu üretir.
+
+718
+02:21:46,131 --> 02:22:06,131
+Anlaşılır herhalde değil mi? Bu daha çok zor olmasa gerek. Binary Search algoritmasına çok çok benziyor. Binary Search'ü yapısal programlama girişte ayrıca anlatacağız. Orada ayrı bir veriler üzerinde yapıyoruz. Burada sürekli veriler üzerinde yapacağız. Yapıyoruz. Bu algoritmanın da bir sıkıntısı var.
+
+719
+02:22:14,195 --> 02:22:23,195
+iki nokta arasında sonsuz tane sayısal değer olduğu için bunu istediğiniz kadar yarılayın. Bir yerden sonra çözüme çok geç ulaşabiliyorsunuz.
+
+720
+02:22:24,195 --> 02:22:26,195
+Şimdi burada da şunu düşünmüşler.
+
+721
+02:22:28,195 --> 02:22:36,195
+Şimdi şöyle, bunu ayrı bir dataset üzerinde anlatayım. Şimdi bu bizim sıfırıncı verimiz, bu da bizim eninci verimiz. Aradığımız veri de şurada.
+
+722
+02:22:37,195 --> 02:22:39,084
+Şimdi biz ne yapıyoruz?
+
+723
+02:22:39,796 --> 02:22:45,796
+Bunlar sıralı veriler olduğu için ortadaki verinin ne olduğunu biliyoruz. Değer olarak biliyoruz.
+
+724
+02:22:45,796 --> 02:22:52,796
+Biz diyoruz ki, tahminli bir şey yaparak diyoruz ki eğer benim aradığım yeri ortadakiden büyükse şu arada bir yerde.
+
+725
+02:22:52,796 --> 02:22:59,796
+Bu arada bir yere bakmak için şunu şuraya çekiyorduk. Bunu buraya çekerken yaptığımız şey yetmiyor.
+
+726
+02:22:59,796 --> 02:23:05,796
+Orta noktayı yeni bir orta nokta tayini gerçekleştiriyoruz. Bu orta nokta tayini M eşittir.
+
+727
+02:23:06,959 --> 02:23:13,199
+Left pointer, buraya right pointer diyelim. Left artı right, çarpı 1 bölü 2 demiştim ben önce.
+
+728
+02:23:14,000 --> 02:23:20,039
+Şimdi burada diyoruz ki, şu 1 bölü 2 ile çarpmak yerine, acaba böyle daha güzel bir sayı ile çarpsam,
+
+729
+02:23:20,039 --> 02:23:26,039
+şuradaki verilerin dağılımına göre, buradan başka bir değer uydursam
+
+730
+02:23:26,039 --> 02:23:30,039
+ve bu uydurduğum değer, acaba beni daha hızlı sonuca götürür mü?
+
+731
+02:23:31,079 --> 02:23:33,079
+Uydurduğumuz değer ne olacak?
+
+732
+02:23:34,036 --> 02:23:39,036
+Şimdi şöyle bir örnek yapalım. Bir saniye bir kitap getireyim mi?
+
+733
+02:23:39,036 --> 02:23:42,036
+Kitaba gerek yok.
+
+734
+02:23:42,036 --> 02:23:46,036
+Kitabın mesela 300 sayfası olsun.
+
+735
+02:23:46,036 --> 02:23:51,036
+300 sayfalık bir kitapta siz 280. sayfayı bulmak istiyorsunuz.
+
+736
+02:23:51,036 --> 02:24:00,940
+Linear search, yapısal programlarda göreceğiniz linear search nedir? Birden başlarsınız 280 değil, 280 değil. Böyle tek tek bakar şimdi.
+
+737
+02:24:01,620 --> 02:24:20,020
+binary search'ını yapar, tam orta noktayı gösterir size. İşte belki 300 sayfaysa 150 sayfada, o zaman 150 ile 300 arasına bakayım. Sonra 150 ile 300 arasında ne var? 320 var, neyse artık. Pardon, 220 var. 220'ye falan bakayım. Sonra biraz daha ileri bakayım. Böyle yarılaya yarılaya gidersiniz.
+
+738
+02:24:20,224 --> 02:24:34,224
+Biz kitap ararken bakarız da aradan bir sayfanın numarasını görmeye çalışıyoruz ya, aradığımız sayfa 3 aşağı 5-3 aşağı orada, biraz geri git, biraz geri git bu şekilde hızlı bir gerçek hayatta böyle bir şey yapıyoruz.
+
+739
+02:24:34,224 --> 02:24:46,224
+Bu yaptığımız şey aslında bir interpolasyon işlemi. Araya değer uyduruyoruz. Çünkü biliyoruz ki kitapların sayfaları her bir sayfa numarasından bir tane var.
+
+740
+02:24:46,675 --> 02:25:06,675
+Ve bu sıralı bir şekilde gidiyor. Doğrudan orta noktaya bakmak yerine bakacağım yer şu 1 bölü 2 yerine başka bir fonksiyon olacak, değer olacak. İşte buna x bölü y diyelim. Örneğin mesela 1 bölü 2 değil de 3 bölü 4 olsaydı daha belki hızlı gidecek. Öyle düşünelim, tamam mı?
+
+741
+02:25:06,675 --> 02:25:14,572
+Bu yönteme Regula falsi, false position, yanlış nokta, doğrusal interpolasyon yöntemi diyoruz.
+
+742
+02:25:15,028 --> 02:25:38,028
+Yani aslında yapacağımız şey şu, şu noktayla şu nokta arasında işte orta nokta burasını bulmak yerine herhangi bir nokta bulurken iki noktası bilinen doğru denkleminden dola çıkarak o bir bölü iki yerine başka bir sayısal değer aramak. O sayısal değer doğru denkleminden üretilecek ve şu iki noktayı biz
+
+743
+02:25:38,388 --> 02:25:51,388
+Noktanın iki ucuymuş gibi değerlendireceğiz ve bununla göre çözüm üreteceğiz. Çünkü biliyoruz ki biz burada iki boyutlu çözüm yaparken burası x0, y0 noktası, burası x1, y1 noktası.
+
+744
+02:25:51,388 --> 02:26:01,388
+Aynısı dizilerde de var. Yani dizilerde indis mesela x0'a karşılık, dizinin o indis'in içerisindeki sayı da y0'a karşılık gibi. Yani burayı şöyle düşünüyorum.
+
+745
+02:26:02,515 --> 02:26:12,515
+Bu x0, bu y0, bu x1, bu y1, şu x2, bu y2. Zaten bunu kodlarsanız da biziyle böyle kodlanır. Başka türlü kodlanmaz.
+
+746
+02:26:12,515 --> 02:26:16,515
+xn, yn diye ifade edip gideceğiz.
+
+747
+02:26:16,515 --> 02:26:27,515
+Şimdi özelliklerine baktığımızda yine lineer olmayan, analitik çözümü olmayan denklemler de aynı hikaye. Kapalı yöntem yine aynı hikaye. AB aralığında.
+
+748
+02:26:27,924 --> 02:26:36,364
+Bir tane A-B aralığında kök olduğunu ispat etmemiz gerekiyor. Yani sıfır geçişine bakacağız. A ve D arasında negatif bir durum var mı çarpımda?
+
+749
+02:26:37,404 --> 02:26:45,404
+Burada kökün konumunu doğru belirlemek için yanlış nokta anlamına gelen bu bir nokta tayini yapacağız.
+
+750
+02:26:46,283 --> 02:26:52,484
+Bu şeye göre bisection yöntemiyle biraz daha hızlı çalışıyor. Çünkü o 1 bölü 2 yerine daha güzel bir şey yapıyorsunuz.
+
+751
+02:26:53,364 --> 02:26:55,084
+Burada da bakarken arkadaşlar...
+
+752
+02:26:56,084 --> 02:27:20,084
+fx fonksiyonun ab aralığındaki kökünü hesaplarken a virgül f a ve b virgül f b noktalar arasında bir doğru çiziyoruz. Ne demek? Birazdan çizim var da şöyle bir şey yapalım. Biz şu a noktasındayız, şurada da b noktasındayız. Bakın burada orta nokta falan yok. Bu a'nın karşılığı f a var.
+
+753
+02:27:23,123 --> 02:27:34,523
+B'nin karşılığı FB var. Biz bu A virgül FA dediğimiz nokta şurası, B virgül FB dediğimiz nokta da şurası, buradan buraya bir doğru çiziyoruz.
+
+754
+02:27:34,523 --> 02:27:48,923
+Ve orta noktaya gitmektense bu doğrunun bizim şu fonksiyonla kesiştiği noktaya geçiş yapıyoruz. Orta nokta mesela şurası ise biraz daha ileri bir noktadan bağlantı kurabiliyoruz.
+
+755
+02:27:50,131 --> 02:27:57,131
+İşte o 1 bölü 2 yerine gelecek bağlantı buradan geliyor. Yani arada bir iki nokta üretmek.
+
+756
+02:27:57,131 --> 02:28:05,131
+Şimdi burada tabii ne var? Üçgenlerde benzerlik var. Şöyle baktığınızda benzer iki tane üçgen karşılığına geliyor.
+
+757
+02:28:05,131 --> 02:28:16,131
+İşte şöyle şu alanı boyayacak olursak, üçgenlerde benzerlikten çıkar, doğru renkleminden çıkar. Sadece bulacağımız yeni orta nokta.
+
+758
+02:28:16,915 --> 02:28:25,415
+Bulacağımız orta noktamız ne olacak?
+
+759
+02:28:25,415 --> 02:28:32,915
+A ve B noktasının toplamının yarısı değil de A artı B.
+
+760
+02:28:35,347 --> 02:28:46,347
+çarpı x bölü y gibi şey olacak. Bu x bölü y veya şöyle ilk x bölü y demeyeyim alfa bölü beta gibi bir kesir olacak. Bu kesiri de şu doğrudan tahmin edeceğiz, uyduracağız.
+
+761
+02:28:46,347 --> 02:29:02,283
+Bu doğrudan tahmin edeceğimiz şey de şu olacak. C'ye fc noktası, herhangi bir C'ye fc noktası olacak. Eğer bu C'ye fc noktası arasında sıfır geçişi ab arası ac arasında ise kök bu tarafta.
+
+762
+02:29:02,484 --> 02:29:12,644
+Yani şuraya A dedik, buraya B dedik. Bir de burada C olsun. A, C arasında ise kök bu tarafta. C, B arasında ise kök bu tarafta. Sonra bir daha doğru üreteceğiz.
+
+763
+02:29:12,644 --> 02:29:20,484
+Ta ki şu işlemler, aradığımız kökler veya bu orta noktanın değişimi belli bir noktaya ulaşan kadar.
+
+764
+02:29:20,484 --> 02:29:23,084
+Şimdi şekil olarak buna bakalım.
+
+765
+02:29:24,404 --> 02:29:32,404
+A ile B'nin orta noktası örneğin nerede olsun, şurada olsun. Biz orta nokta olsaydı direkt buradan yürüyecektik. Bunu yapmıyoruz.
+
+766
+02:29:32,404 --> 02:29:40,404
+A ile B'nin arasında FA ve FB görüntüleri itibariyle birisi negatif, birisi pozitif, kök var mı? Var. İşte o da burada.
+
+767
+02:29:40,404 --> 02:29:50,316
+Diyoruz ki C noktamız şuna göre olsun. Şimdi ben FA ve FB'den geçen, şöyle bir filmin çizgi çizebilir miyim?
+
+768
+02:29:51,507 --> 02:29:56,507
+Pardon, yani şu iki noktadan geçen bir doğru çizim. Burası nedir?
+
+769
+02:29:56,507 --> 02:29:59,507
+A'ya F'a noktası.
+
+770
+02:30:03,379 --> 02:30:25,379
+Şurası nedir? B'ye F, B'ye noktası. Tamamen lise matematik. Bakın hiçbir şey yok. Bana şu nokta lazım. Burası C. Tamam mı? C'yi bulmak için ne yapmam gerekiyor? C'yi bulmak için bu doğrunun denklemini yazarım. Doğrunun denkleminde yerine C'yi koyarım. C'yi koyduğumda F, C'yi bulurum. Eğer F, C...
+
+771
+02:30:26,579 --> 02:30:36,579
+FA ile FC'ye bakarım. İkisi de negatifse o zaman kök nerededir? FC ile şu noktayla şu nokta arasındadır. Böyle yaklaşım yok.
+
+772
+02:30:36,579 --> 02:30:46,579
+Sonra burayı ne yapacağım? Burası yeni A olacak. Buradan tekrardan bir C üreteceğim. Tekrar bir doğru üreteceğim. Sürekli böyle doğru ürete ürete şeye gideceğiz.
+
+773
+02:30:46,579 --> 02:30:53,579
+Peki doğru denklemini nasıl üreteceğiz? Hemen yazalım. İki noktası bilinen doğru denklemi.
+
+774
+02:30:54,515 --> 02:31:22,115
+y eksi y2 bölü y2 eksi y1, biraz önce yazmıştım. x eksi x2 bölü, pardon, şöyleydi. x eksi x2 şöyle. y2 eksi y1 bölü x2 eksi x1. Şimdi burada şuraya x dersem, x1 dersem, şuraya x2 dersem, şurası y1 olur, şurası y2 olur. Bunları yerine koyalım.
+
+775
+02:31:22,772 --> 02:31:25,772
+y-y2'ne fb
+
+776
+02:31:26,772 --> 02:31:34,772
+İstersek tersinden de yazalım. Yani şuraya x1 yerine x2, buraya y2, buraya x1, buraya da y1 yazabiliriz.
+
+777
+02:31:34,772 --> 02:31:41,772
+y-fb bölü x-b eşittir. y2 dediğimiz
+
+778
+02:31:41,772 --> 02:31:49,388
+y2fb idi. fb eksi f a bölü b eksi a
+
+779
+02:31:49,971 --> 02:32:16,572
+Buradan biz C noktasına karşılık F, C'yi bulacağız ya, X yerine C dersek, Y'de ne olacak? F, C olacak. Şu şey bize bunu söylüyor. C'nin yeni yeri buradan böyle gelecek gibi. Doğru denklemini yazdık, elimizde bu sayılar var çünkü. Bu sayıları yerine koyduk. Doğru denkleminin daha sonra bir C noktası...
+
+780
+02:32:16,948 --> 02:32:40,547
+tayin etmek için ne yapıyoruz? Şu fonksiyonu da değerleri yerine yazdığımızda elde ettiğim sonuç direkt ortaya çıkıyor. Tamam mı? Tabi bu C noktasının, orta noktanın iterasyonlar boyunca değişimine bakarak, işte belli bir, işte i. iterasyondaki C ile
+
+781
+02:32:41,427 --> 02:32:56,827
+i artı birinci iterasyondaki c'nin değişimini belli bir epsilondan küçük tuttuğumuzda, bunu bir döngü durdurma şartı olarak sunarsanız, burada da algoritmayı durdurabilirsiniz. Çok kısa bekleteceğim.
+
+782
+02:32:58,427 --> 02:33:07,027
+Anlaşılmayan bir şey var mı burada? Bakın algoritma çok basit. Aslında şu yaptığımız şey, 1 bölü 2 hesabı yerine bakın şurada
+
+783
+02:33:08,180 --> 02:33:13,459
+1 bölü 2 yerine x bölü y gibi farklı bir c noktası aynı.
+
+784
+02:33:26,995 --> 02:33:40,195
+Bu işlem ne zamana kadar gidiyor? C, F, C ile şu duruma bakıyoruz. F, A ile F, C'ye bakacağız. F, C ile F, B'ye bakacağız. Mesela burada yeni C noktası ne olacak? Belki şuraya kayacak. Daha sonra bu tarafa kayacak.
+
+785
+02:33:40,195 --> 02:33:48,995
+Böyle doğrular çizerek yeni C noktalarının bulunabilirini gösteriyoruz. Burada doğru denklemi değil de üçgen benzerliğinden demiş. Aynı şey.
+
+786
+02:33:49,139 --> 02:33:56,699
+Yani oradan da üçgen benzerliği, denklemini de yazsanız şuna karşılık gelecektir. Başka bir esprisi yok.
+
+787
+02:33:56,699 --> 02:34:05,139
+Şimdi şöyle çizelim, silelim, bir adırdaki şeyi görelim. Bakın burada bir animasyon da var kısmen.
+
+788
+02:34:05,139 --> 02:34:11,379
+Bunu çizdik, C1 noktası dedik. Burada ben Cİ dedim, Cİ artı bir dedim, böyle ilerliyor.
+
+789
+02:34:11,379 --> 02:34:15,379
+Sonraki seferde ne yapıyoruz? C2 noktasını biliyoruz çünkü...
+
+790
+02:34:15,476 --> 02:34:21,476
+Yeni A noktamız burası oluyor. A ile B arasında bu sefer şurada bir yeni C noktası buluyoruz.
+
+791
+02:34:21,476 --> 02:34:31,476
+Sonrakinde biraz daha ilerliyoruz. Bakın burada benim yazdıklarımı böyle biraz daha farklı şekilde benzerlikle falan yazmaya çalışmış.
+
+792
+02:34:31,476 --> 02:34:42,476
+Gayet aslında kolay. Bunun kodunu yazacaksınız mesela. Bisection yöntemiyle regula falsi. Geçen dönem projede yazılmıştır. İkisinden bir tanesi yine projemizde olacak.
+
+793
+02:34:43,092 --> 02:34:53,492
+Taylor'ı birkaç hafta, onu yine konuşuyoruz. Herhangi bir C1 noktasını bulmanın yolu, biraz önceki denklemde bilinenler bir tarafa, bilinenler bir tarafa atarsanız,
+
+794
+02:34:53,492 --> 02:35:02,092
+bakın B elimde var mı? Var. Başlangıçta bize veriliyor. FB zaten fonksiyonu yerine koyuyoruz. A elimde var mı? Var. FI'yı da koyuyoruz.
+
+795
+02:35:02,092 --> 02:35:09,036
+Hepsini şuraya koyduğumuzda bulduğumuz yeni C1 noktası bu. Bu C1'den FC1'i bulup,
+
+796
+02:35:09,299 --> 02:35:12,899
+Pozitif negatif durumuna göre algoritmayı sürekli güncelliyoruz.
+
+797
+02:35:16,099 --> 02:35:18,299
+Evet, bu güzel bir örnek.
+
+798
+02:35:19,299 --> 02:35:24,299
+Bundan sonraki şey 30'un geçiyor. Şöyle bir bakımda anlatayım da.
+
+799
+02:35:24,299 --> 02:35:27,299
+Açık yöntemlerde kalalım. Bundan atlayalım.
+
+800
+02:35:29,299 --> 02:35:36,299
+2-3 aralığında kök var mı? Bunu incelememiz gerekiyor. F2'nin değeri eksi 5'miş.
+
+801
+02:35:36,852 --> 02:35:38,852
+F3'ün değeri dörtmüş.
+
+802
+02:35:39,852 --> 02:35:43,852
+İsterseniz bundan sonra kimden yazarak ilerleyin, biraz da adım adım göstereyim.
+
+803
+02:35:50,611 --> 02:35:52,611
+Teşekkürler.
+
+804
+02:36:01,108 --> 02:36:09,108
+x³-2x²-5 eşittir 0.
+
+805
+02:36:09,108 --> 02:36:16,108
+2 ila 3 kafalı aralığında hatamızı 0.01 olarak biliriz.
+
+806
+02:36:16,108 --> 02:36:18,108
+Şimdi f2'ye baktık.
+
+807
+02:36:19,108 --> 02:36:22,108
+f2'nin karşılığı eksi 5'miş.
+
+808
+02:36:24,435 --> 02:36:49,195
+F5'e bakıyorum, F3'e bakıyorum. F3'e baktığımda bunun karşılığı da 4. Bu aralıkta kök var mı? Var. O zaman benim neyi bulmam gerekiyor? Aradaki bir noktayı bulmam gerekiyor. Yani şöyle baktığımda, 2'deyim, burada da 3'deyim. Yeni ara noktayı bulacağım, C noktamı.
+
+809
+02:36:49,683 --> 02:36:53,683
+Yeni ara noktam, biraz önceki formülleri şöyle söyleyeyim.
+
+810
+02:36:53,683 --> 02:37:01,683
+a çarpı fb eksi b çarpı fa, iki noktası birinden doğru denkle.
+
+811
+02:37:01,683 --> 02:37:05,683
+fb eksi fa.
+
+812
+02:37:05,683 --> 02:37:12,683
+Şimdi bunu şeyde de uygulayabiliriz, iyileştirmenin ne kadar iyi olacağını söyleyeyim.
+
+813
+02:37:18,036 --> 02:37:32,036
+dizilerde, programlamada, n defa arama yapar. Yani for ile başlarsınız, i eşittir sıfırdan, i küçüktür, n'e ulaşana kadar, i plus plus. Bu n defa arama yapar.
+
+814
+02:37:32,036 --> 02:37:44,036
+Binary Search, bu while döngüsüyle genellikle kullanılıyor. Logaritma iki tabanında m artı bir. Artı birine bulamama durumumuzda hiçbir şey bulamadık demektir.
+
+815
+02:37:45,747 --> 02:37:53,747
+Buna programlamada bu regula falsi'ye karşılık olarak interpolation search diyoruz.
+
+816
+02:37:55,047 --> 02:38:03,747
+Kodu çok her yerde var, C kodunu bulabilirsiniz. Bunun karmaşıklığı ne olabilir sizce? Çok çok daha yaklaşıyor dikkat ederseniz.
+
+817
+02:38:05,148 --> 02:38:08,716
+Log2n'den daha iyi olan algoritmamız ne var?
+
+818
+02:38:15,987 --> 02:38:19,587
+şeyde sabah anlatılmıştır diye düşünüyorum.
+
+819
+02:38:21,987 --> 02:38:33,387
+Şimdi algoritmalar bir, o bir zaman veya işte bir diyelim, birim zaman, logaritmik zaman, lineal logaritmik n-log n, sonra n kare n küt diyor.
+
+820
+02:38:33,387 --> 02:38:42,387
+Log n'den daha iyi olan, aslında çok böyle söylenmeyen, logaritma, logaritma iki tabanında n bir algoritma.
+
+821
+02:38:43,028 --> 02:38:48,907
+Mesela, elinizde iki yüzere on altı tane elemandan oluşan bir dizi var.
+
+822
+02:38:49,948 --> 02:38:56,907
+Diner, Söcce, şey yaparsanız, 65536 defa kontrol yapmanız gerekiyor dizinin içerisinde eleman arasında.
+
+823
+02:38:57,868 --> 02:39:03,148
+Herhalde o kadar. Şurada iki yüzere on altı tane bakarken burada on yedi defa oluyor.
+
+824
+02:39:04,028 --> 02:39:09,148
+Şuradan olacak, logaritma iki tabanında, logaritma iki tabanında iki yüzere on altı.
+
+825
+02:39:09,299 --> 02:39:15,439
+Şu ne yapacak? 16 buraya gelecek. Logaritma 2 tabanında 2 üzeri 4 olacak. Yani 4 seferde
+
+826
+02:39:16,459 --> 02:39:21,340
+Interpolasyon search yaparak bulabiliyorsunuz. Yaptığınız iyileştirme Left Art Mid
+
+827
+02:39:22,099 --> 02:39:24,139
+1 bölü 2 ile çarpmak yerine
+
+828
+02:39:24,659 --> 02:39:26,459
+1 bölü 2 yerine sadece şu
+
+829
+02:39:27,219 --> 02:39:30,540
+Slide'ımızdaki veya işte şuradan şurada da söyleyeyim
+
+830
+02:39:31,092 --> 02:39:40,092
+Şu interpolasyon fonksiyonunu elinizde var olan datalardan şu bölme işlemini yaparak yeni bir nokta üretmek. Yani o kadar iyileştirme sağlayabiliyorsunuz.
+
+831
+02:39:41,092 --> 02:39:45,092
+Bunu da özellikle ifade edeyim. Şimdi devam edelim.
+
+832
+02:39:46,092 --> 02:39:49,092
+Şimdi C noktamızı bulacağız.
+
+833
+02:39:53,363 --> 02:40:21,164
+C noktamız nedir? A çarpı FB. Yani iki çarpı F3, iki çarpı F3, iki çarpı 4, eksi, B çarpı, B 3 çarpı, eksi, 5, bölü FB eksi, FA, 4 eksi, eksi, 5. Ne oluyor? 15, 8 daha 23, bölü 9.
+
+834
+02:40:22,420 --> 02:40:26,420
+Bu da neye karşılık görmüş? 2.556.
+
+835
+02:40:26,420 --> 02:40:33,420
+Bakın, 2 ile 3'ün toplamı normalde 2.5 edecekken artık burada 2.556'ya göre bakıyoruz.
+
+836
+02:40:34,420 --> 02:40:39,244
+2.556. Şimdi 2.556'ya karşılık gelen...
+
+837
+02:40:42,579 --> 02:40:47,340
+Görüntüye bakıyorum. Bunun karşılığı da eksi 1.36 imiş.
+
+838
+02:40:51,572 --> 02:40:55,932
+Peki, eksi 1.36 ise kök ne ile neyin arasında?
+
+839
+02:40:56,932 --> 02:40:58,932
+Bunu siz söyleyebilirsiniz doğrudan.
+
+840
+02:41:07,540 --> 02:41:20,340
+2'deki kökümüz negatif, 2'nin karşılığı negatif, 2.556 negatif, 3'deki pozitif. O zaman 2.556 ile 3 arasında. Güzel. Şimdi ne yapacağız? Bir sonraki adımda
+
+841
+02:41:21,620 --> 02:41:34,940
+Artık bizim yeni x değerimiz, yani şu iki noktamız yerine artık şurası şey olacak. Yani bizim bu değerimiz var. Ondan sonra f3 değerimiz de var. İşte 4.
+
+842
+02:41:35,188 --> 02:41:58,948
+Yeni x değerimiz a çarpı f, yani şurası a oldu. Bunun f a'sı da zaten belli. Şuna a dersek, bu da f a demektir. Şu zaten b idi, bu da f b. Yeni değerde şunları yerine koyduğumuzda ne oluyormuş onu doğrudan söylüyorum. 2.669 oluyormuş.
+
+843
+02:41:59,603 --> 02:42:04,043
+Bu iki nokta altı yüz altmış dokuda, bakın bizi biraz daha şuraya yaklaştırıyor, şöyle geliyor.
+
+844
+02:42:04,043 --> 02:42:09,843
+Bunun görüntüsü neymiş iki nokta altı yüz altmış altın görüntüsü?
+
+845
+02:42:09,843 --> 02:42:14,203
+Eksi sıfır nokta yirmi üçmüş.
+
+846
+02:42:14,203 --> 02:42:20,907
+F iki nokta altı yüz altmış dokuz, pardon. Eksi sıfır nokta yirmi üçmüş.
+
+847
+02:42:22,932 --> 02:42:43,432
+Slide'da daha detaylı var. O zaman nerede olacak? Şimdi burada da negatifse, o zaman 2.669 ile 3 arasında bir yerde olacak. Yeni bir kök daha bakacağız. Orada da 2.69'a gidiyor. Artık orada durma çok çok yavaşlıyor, iyice azalıyor arkadaşlar. Orada algoritmayı durdurabiliriz. Mantık bu şekilde.
+
+848
+02:42:44,020 --> 02:42:57,020
+Çok küçük bir dokunuşla ve bu dokunuş da böyle bakın kompleks bir şey değil. Sadece hani 1 bölü 2 ile çarpmak yerine ne yaptık şurada? Algoritmanın fonksiyonunu açalım.
+
+849
+02:42:57,020 --> 02:43:09,020
+İşte elimizde olan sayılar bir tane çarpma, bir tane fonksiyon değeri işte iki, bir tane çıkarma, bir daha çarpma, yaklaşık 5-6 tane operasyon yaparak algoritmik olarak çok çok daha hızlandırabiliyoruz ki
+
+850
+02:43:09,600 --> 02:43:15,600
+Log n'den log log n'e indirgenmiş olması çok çok da fayda sağlıyor.
+
+851
+02:43:15,600 --> 02:43:27,435
+En sonunda burada durdurma kriterini kök olarak vermiş, kökün değişimi olarak veya diğer durdurma kriterlerini de kullandığında yaklaşık olarak kökün değerini 2.69 bulabiliyoruz.
+
+852
+02:43:28,884 --> 02:43:40,884
+Şimdi burada kalalım. Bu kapalı yöntemlerden başka yöntemler de var ama genellikle bu ikisinin modifikasyonları arkadaşlar. Farklı algoritmik iyileştirmeler yapılmış, üzerinde değişiklikler yapılmış.
+
+853
+02:43:41,075 --> 02:43:59,355
+Amaç iki aralıkta kökü kısıtlamak, boğmak ve köke yaklaşmak. Durdurma kriterini düzgün belirlediğimizde, ilgili değişkenlerin ve değerlerin yerine koyduğumuzda bakın gayet toplama, çıkarma, çarpma, bölmeden başka herhangi bir şey yapmıyoruz.
+
+854
+02:43:59,567 --> 02:44:22,768
+algoritmanın çıkış noktasında elbette kafi göründe teorik işlemler var ama biz kullanıcıdan a'yı aldık, fa'yı hesapladık, b'yi aldık, fb'yi hesapladık. Ona göre mesela orta noktayı a artı b bölü 2 diyerek hesaplayabiliriz veya şuradaki şeye göre b çarpı fa eksi a çarpı fb bölü fa eksi fb diyerek hesaplayıp böyle adım adım
+
+855
+02:44:23,156 --> 02:44:50,156
+orta noktanın değişimi kontrol ederek ilerleyebiliyoruz. Bu yöntemlerin çoğunda yakınsama söz konusu. Yani bir yerden sonra köke yaklaşmak çok çok olası. İstisnai bazı bulimler var, onları ayrıca gerekirse konuşacağız. Fakat bu yöntemlerin böyle kolaylığıyla birlikte, düşüncen olarak kolay, sıkıntısı şu, çözüme çok çok geç ulaşabiliyorlar.
+
+856
+02:44:50,675 --> 02:44:56,876
+zor bir fonksiyonsa ve belli bir aralıkta 0.0 ile 1 aralığında takıldınız kaldınız.
+
+857
+02:44:56,876 --> 02:45:01,076
+Bu aralıkta öyle bir sürekli hesaplama yapılıyor ki neredeyse bazen...
+
+858
+02:45:01,076 --> 02:45:07,876
+Bugün sabah mesela ben bir örnek çözerken çok geç hesaplama yapmıştı. Burada da öyle şeyler söz konusu olabiliyor.
+
+859
+02:45:07,876 --> 02:45:14,275
+Her ne kadar klasik datalarda yani bizim programlamadaki diziler üzerinde hızlandırsa da
+
+860
+02:45:14,275 --> 02:45:18,275
+nümerik problemlerin çözümünde yakınlama yöntemleri birazcık böyle...
+
+861
+02:45:18,708 --> 02:45:43,108
+geç kalabilirler. Bunun üstesinden gelmek için daha farklı çözümler üreten Newton-Raphson, Sekand ve birbirinden türeyen yöntemler. Bunları göreceğiz. Şimdi burada bir şeyden bahsedeceğiz gelecek derste. Diyeceğiz ki bunun bir sıkıntısı var, o sıkıntıyı şununla çözelim. Bunun da bir sıkıntısı var, biraz daha ilerletip şununla çözelim. Kendine göre bunun da sıkıntısı var, buna da alternatifler üretilmiş.
+
+862
+02:45:43,379 --> 02:45:50,819
+Ama bu dersin algoritmik olarak bakış açısını anlamak için bu üç yöntem de yeterli olacaktır.
+
+863
+02:45:50,819 --> 02:45:57,619
+Benim anlaşacaklarım bugünlük bu kadar. Daha fazla bu konuya girip yormayalım sizi. Var mı sormak istediğiniz bir şey?
+
+864
+02:46:05,620 --> 02:46:14,620
+Evet, katıldığınız için teşekkür ederim. Hepinize şimdiden iyi haftalar. Gelecek hafta derste görüşmek üzere arkadaşlar. Kendinize iyi bakın.
+
+865
+02:46:14,620 --> 02:46:17,516
+Görüşürüz hocam.

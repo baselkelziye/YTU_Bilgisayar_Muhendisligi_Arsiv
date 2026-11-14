@@ -1,0 +1,4807 @@
+1
+00:00:21,652 --> 00:00:24,652
+Merhaba gençler. Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:24,652 --> 00:00:26,652
+Evet hocam ses geliyor.
+
+3
+00:00:26,652 --> 00:00:28,652
+Merhaba hocam, geliyor.
+
+4
+00:00:28,652 --> 00:00:40,652
+Evet, şimdi ayın 26'sında sınavımız var. Hazırsınız değil mi? Önümüzde iki hafta.
+
+5
+00:00:48,531 --> 00:00:50,531
+Hazır mısınız gençler?
+
+6
+00:00:50,531 --> 00:00:58,531
+Hazırız hocam. Peki bir sorun var. Sınav tam olarak nereye kadar bir bilgi var mı?
+
+7
+00:00:58,531 --> 00:01:02,531
+Sonuna kadar, işlediğimiz konuların sonuna kadar.
+
+8
+00:01:02,531 --> 00:01:04,531
+Tamamdır hocam, teşekkürler.
+
+9
+00:01:04,531 --> 00:01:08,531
+Hocam, bu hafta QIIS çözümlerini yapacak mısınız hocam?
+
+10
+00:01:08,531 --> 00:01:11,531
+Hayır, yapmayacağım.
+
+11
+00:01:16,531 --> 00:01:18,531
+Krizi çözemeyenler mi?
+
+12
+00:01:21,231 --> 00:01:25,531
+Hocam, geçen hafta çözümü bu hafta yapacağını söylemiştiniz de, o yüzden sordum açıkçası.
+
+13
+00:01:25,531 --> 00:01:27,531
+Yok, yapmayacağım.
+
+14
+00:01:33,492 --> 00:01:40,492
+Yapmayacağım. Yani şu quiz çok basit ki partition ile ilgiliydi. Değil mi?
+
+15
+00:01:54,548 --> 00:01:56,548
+Şimdi kaç sayfa yazmışız?
+
+16
+00:01:59,956 --> 00:02:10,956
+Hocam, bir de benim bir sorum daha olacak. Bu quiz ve ödevlerin puanlaması ne zaman açıklanır takribi? Veya açıklanır mı?
+
+17
+00:02:11,956 --> 00:02:25,956
+Yani ben onu sınıfın durumuna göre açıklamak istiyorum. Yani maksimize edecek şekilde, çok sayıda öğrencinin geçeceği şekilde ayarlamak istiyorum ama önceden ayarlayalım diyorsanız olur ama genel olarak şöyleydi.
+
+18
+00:02:26,771 --> 00:02:44,771
+Vizeler %30, vizeler kaçtı? %20, %20. Qizler de %10, %20 diyor. Toplamda %60. Finalda %40, %100 olmuş olarak.
+
+19
+00:02:55,604 --> 00:03:09,604
+Ödev, ne yaptık şimdi? İki tane vize var, yüzde 40 etmiş oluyor, toplamda yüzde 60. Bir yüzde 40 da final, yüzde 100 olmuş oluyor. Yani kaba taslak bu şekilde.
+
+20
+00:03:15,604 --> 00:03:16,604
+Teşekkürler.
+
+21
+00:03:16,604 --> 00:03:21,604
+Tamam. Şimdi Çebişev İnerkuleti. Buna bakalım biraz.
+
+22
+00:03:22,271 --> 00:03:25,271
+Hocam bu kitapta hangi çeptırda var?
+
+23
+00:03:26,271 --> 00:03:27,271
+Çebişev mi?
+
+24
+00:03:27,271 --> 00:03:31,271
+Evet. Ben bulamadım da kitapta.
+
+25
+00:03:31,271 --> 00:03:41,271
+Kitapta içinde bantlardadır. Kitapta var. Bir daha bak. Markov belki yoktur ama Çebişev vardır.
+
+26
+00:03:41,271 --> 00:03:42,271
+Tamamdır.
+
+27
+00:03:42,271 --> 00:03:48,271
+Şimdi bir bakalım geçen hafta ne yaptık? Markov İneikuleti, Çebişev İneikuleti.
+
+28
+00:03:50,132 --> 00:03:56,132
+Kitapta olmayan şeyleri de anlatabilirim. Sonuçta bu derste gördüğünüz her şeyden son olmasını...
+
+29
+00:03:57,132 --> 00:04:04,108
+Bir bakayım bir daha şunun indeksine arkadaşlar. Marko İnequility, Çevişevi İnequility.
+
+30
+00:04:07,795 --> 00:04:12,955
+3-3-7'de var Çebişev'de, Markov'u bulamamıştım o yüzden söyledim. Sağ olun efendim.
+
+31
+00:04:14,555 --> 00:04:21,795
+Çebişev, Markov'in el kuleti önemli. Markov'in el kuleti kullanarak Çebi Çebi ispatlayabiliriz.
+
+32
+00:04:23,795 --> 00:04:32,795
+Tamam. Teorem, bunu nasıl yaptık burada? Burada, tamam. Çebişev'in el kuleti.
+
+33
+00:04:36,435 --> 00:04:40,435
+Let's say for an arbitrary random variable.
+
+34
+00:04:46,579 --> 00:04:48,579
+Arbitrary random variable.
+
+35
+00:04:58,324 --> 00:05:03,004
+let's say the random variable x and a constant.
+
+36
+00:05:07,636 --> 00:05:31,980
+let's say d, okay? And this is of course the positive cost, okay? Chebyshev inequality say that probability, the random variable, okay let's say this is the random variable y, not x. The random variable y,
+
+37
+00:05:32,596 --> 00:05:36,256
+Minus expected value of that random variable.
+
+38
+00:05:40,755 --> 00:06:07,275
+absolute value greater than some certain value d is always less than or equal to variance of y divided by d squared. Okay, so this is called, we have, let me write, we have,
+
+39
+00:06:08,468 --> 00:06:10,468
+Bu, Çebişev iniquileti.
+
+40
+00:06:12,468 --> 00:06:15,068
+When you look at this Çebişev iniquileti,
+
+41
+00:06:17,468 --> 00:06:19,208
+let me write in blue,
+
+42
+00:06:21,208 --> 00:06:23,468
+the left side of this iniquileti,
+
+43
+00:06:32,372 --> 00:06:33,812
+Inequality
+
+44
+00:06:37,651 --> 00:06:39,651
+is always
+
+45
+00:06:42,803 --> 00:06:48,303
+between 0 and 1.
+
+46
+00:06:50,303 --> 00:06:55,103
+The right side, the right side,
+
+47
+00:07:01,812 --> 00:07:03,723
+bu özgürlüğü
+
+48
+00:07:07,764 --> 00:07:08,884
+Kurt bir
+
+49
+00:07:12,115 --> 00:07:13,555
+Greater than
+
+50
+00:07:20,052 --> 00:07:23,020
+1. Therefore,
+
+51
+00:07:26,132 --> 00:07:29,532
+Çebişef inerikuleti is useful.
+
+52
+00:07:39,891 --> 00:07:51,084
+is useful when variance of y less than
+
+53
+00:07:57,235 --> 00:08:15,980
+...
+
+54
+00:08:15,987 --> 00:08:25,487
+The left side is always 0 and 1. So, when this inequality becomes very meaningful, logical, the right side is also less than 1.
+
+55
+00:08:25,487 --> 00:08:42,788
+How could you make the right side less than 1? Is to increase the denominator. It means that denominator, pi da, denominator must be greater than the numerator pi. Okay?
+
+56
+00:08:42,879 --> 00:08:55,679
+Bu konusunda bu konusunda, Çebişev's ineviyatı oluşturmaktadır.
+
+57
+00:08:55,679 --> 00:08:59,259
+Çebişev's ineviyatı oluşturmaktadır.
+
+58
+00:09:18,388 --> 00:09:21,388
+This is the distributions, PMF.
+
+59
+00:09:30,227 --> 00:09:31,227
+Okay?
+
+60
+00:09:35,731 --> 00:09:49,011
+This is the PMF. Let's say this is the value that, let me write, so this is the value that, one second,
+
+61
+00:09:55,731 --> 00:10:13,131
+Okay, this is the value that expected value y plus d. And this is another value that expected y minus d.
+
+62
+00:10:16,947 --> 00:10:20,307
+Ok, so what we have
+
+63
+00:10:25,139 --> 00:10:36,379
+These are the probabilities related to this interval probability. Probability...
+
+64
+00:10:40,403 --> 00:10:42,403
+Bu, bu, probabilisinizde
+
+65
+00:10:44,403 --> 00:10:46,403
+bu, çebi-şebi iniquilite.
+
+66
+00:10:46,403 --> 00:10:47,403
+Tamam.
+
+67
+00:10:48,403 --> 00:10:51,275
+Bu, bu, probabilisinizde
+
+68
+00:10:57,587 --> 00:11:01,947
+Absolute value, greater than or equal to d.
+
+69
+00:11:02,947 --> 00:11:03,947
+Okay?
+
+70
+00:11:12,371 --> 00:11:15,131
+These probabilities are related to this.
+
+71
+00:11:18,131 --> 00:11:22,971
+Okay, let us make the proof. Proof of Chebyshev inequality. Proof.
+
+72
+00:11:29,652 --> 00:11:56,292
+Let me define a new random variable. This is the x, the new random variable is equal to, let me say, 1 minus expected value of x. Sorry, 1 minus expected value minus expected value of y square. And what you see, x is a random variable.
+
+73
+00:11:57,587 --> 00:12:00,487
+And what kind of random variable?
+
+74
+00:12:00,607 --> 00:12:01,668
+It is non-negative.
+
+75
+00:12:01,908 --> 00:12:02,267
+Why?
+
+76
+00:12:04,827 --> 00:12:06,587
+It is non-negative.
+
+77
+00:12:07,467 --> 00:12:08,687
+Random variable.
+
+78
+00:12:08,807 --> 00:12:09,028
+Why?
+
+79
+00:12:09,127 --> 00:12:12,747
+Because X always takes positive values.
+
+80
+00:12:13,668 --> 00:12:14,327
+Look at here.
+
+81
+00:12:14,427 --> 00:12:16,007
+Because of square here.
+
+82
+00:12:16,727 --> 00:12:18,528
+Because of this square,
+
+83
+00:12:18,528 --> 00:12:21,627
+the values of X is always positive.
+
+84
+00:12:22,727 --> 00:12:24,447
+Now we can apply.
+
+85
+00:12:26,644 --> 00:12:28,644
+Marco inekuleti.
+
+86
+00:12:35,539 --> 00:12:47,019
+2x, random variable x, then what we have, probability y minus,
+
+87
+00:12:53,491 --> 00:12:57,091
+This is the square, is greater than C.
+
+88
+00:13:00,467 --> 00:13:12,467
+This is equal to, this is less than or equal to, I applied the Marconian expected value of.
+
+89
+00:13:19,700 --> 00:13:23,020
+Divided by C.
+
+90
+00:13:24,020 --> 00:13:26,460
+So, from here, what I have?
+
+91
+00:13:37,268 --> 00:13:43,508
+varansı y, bu varansı y, yi, yi, c.
+
+92
+00:13:45,508 --> 00:13:50,707
+So, nice. Now, what I have, I have this.
+
+93
+00:13:54,676 --> 00:13:55,676
+Probabiliteli,
+
+94
+00:14:04,371 --> 00:14:08,771
+bu probabilite bu probabilite bu probabilite.
+
+95
+00:14:17,076 --> 00:14:43,956
+Why? Because we know that this term is always positive. So, square is always positive. So, I do square root of the left side and also right side. The inequality doesn't change. So, this probability, both probabilities are equal. From here, from here, what I can, this is also equal to what?
+
+96
+00:14:45,652 --> 00:14:58,475
+Bu ne?
+
+97
+00:15:02,259 --> 00:15:04,259
+Divided by c.
+
+98
+00:15:05,259 --> 00:15:06,259
+Okay?
+
+99
+00:15:09,259 --> 00:15:11,259
+Now, what I will do?
+
+100
+00:15:12,259 --> 00:15:13,259
+Where?
+
+101
+00:15:16,947 --> 00:15:17,947
+ve
+
+102
+00:15:23,764 --> 00:15:30,764
+Hocam? Let c equals d square. Yes.
+
+103
+00:15:30,764 --> 00:15:38,764
+Denklinin başlangıcında probability'nin içinde y vardır ama yukarı çıkabilir misiniz?
+
+104
+00:15:38,764 --> 00:15:40,764
+Nerede?
+
+105
+00:15:40,764 --> 00:15:47,764
+Denklinin başlangıcında y eksi y var, orada e y olması gerekmiyor.
+
+106
+00:15:47,764 --> 00:15:48,764
+Ne de c?
+
+107
+00:15:49,491 --> 00:15:51,491
+Profun başlangıcında.
+
+108
+00:15:56,500 --> 00:15:59,060
+Söyle durduğum yere zaman kaybediyoruz.
+
+109
+00:16:00,340 --> 00:16:02,139
+Bundan aşağıya söylemeyim.
+
+110
+00:16:02,639 --> 00:16:04,180
+Nereden sonrası?
+
+111
+00:16:04,940 --> 00:16:08,019
+Proof yazdınız ya, apply Marko Inequity dediniz.
+
+112
+00:16:08,019 --> 00:16:08,780
+Tamam.
+
+113
+00:16:09,560 --> 00:16:15,700
+Orada TR dediniz mutlak değer içinde y- bir y daha var.
+
+114
+00:16:15,700 --> 00:16:16,980
+Yok ama.
+
+115
+00:16:16,980 --> 00:16:19,280
+Gösterebilir miyim [öğrenci]? Şurası.
+
+116
+00:16:20,060 --> 00:16:22,860
+Proof x hatır mı? Hangisi?
+
+117
+00:16:24,628 --> 00:16:25,628
+Güzel söyleyeyim.
+
+118
+00:16:26,827 --> 00:16:33,028
+Yani bence, tamam, y eksi, square, tamam.
+
+119
+00:16:33,827 --> 00:16:38,028
+Y eksi, y denmiş ama, ey olması gerekmiyor orasını.
+
+120
+00:16:39,628 --> 00:16:43,628
+Tamam, doğru yani. Neye yanlış olsun ki? Y eksi, ey işte.
+
+121
+00:16:44,028 --> 00:16:45,427
+Onun yukarısı hocam.
+
+122
+00:16:45,427 --> 00:16:50,427
+Tamam, şunu diyorsun. Unutmuşuz onu. Ya bu kadar basit şeyler bunlar gençler.
+
+123
+00:16:51,028 --> 00:17:03,628
+Bunlar imda hatası olabilir. Bu burada yanlış olduğu anlamına gelmiyor. Bunları siz toplayacaksınız, yapacaksınız, anlayacaksınız. Ben de insanım. Yazarken yanlış yazabilirim yani.
+
+124
+00:17:05,028 --> 00:17:15,028
+Okey, so, we obtain, what we obtain? We obtain probability.
+
+125
+00:17:18,451 --> 00:17:20,951
+Minus expected value of y.
+
+126
+00:17:24,531 --> 00:17:37,515
+greater than or equal to d is always less than or equal to variance y divided by d square. Okay, this is the
+
+127
+00:17:41,683 --> 00:17:43,627
+Çebişev in Euclidia
+
+128
+00:17:56,531 --> 00:17:58,531
+Okay, this is the Chebyshev inequality.
+
+129
+00:18:00,531 --> 00:18:01,531
+What is more?
+
+130
+00:18:02,531 --> 00:18:03,531
+If
+
+131
+00:18:16,211 --> 00:18:39,092
+Okay, if d is equal to k times sigma. Okay, where sigma square is variance of y. Okay, let me say y. Okay.
+
+132
+00:18:39,827 --> 00:19:06,347
+Sigma yi is square root of variance of y. Okay, sigma yi is the standard deviation. Then, what we have, probability, the random variable y minus expected value of y, absolute value, greater than,
+
+133
+00:19:07,059 --> 00:19:34,923
+or equal to k times sigma y is less than or equal to 1 over k square. This is another point. Alternative, this is also Chebyshev.
+
+134
+00:19:38,644 --> 00:19:41,963
+Inequal, okay?
+
+135
+00:19:43,644 --> 00:19:46,324
+Further, we have 3Sigma rule.
+
+136
+00:19:47,764 --> 00:19:49,523
+We have 3Sigma rule.
+
+137
+00:19:52,164 --> 00:20:01,884
+Another one, 3Sigma rule.
+
+138
+00:20:04,915 --> 00:20:06,915
+Bu, alternatif, if...
+
+139
+00:20:12,500 --> 00:20:13,500
+Yüz.
+
+140
+00:20:17,715 --> 00:20:20,715
+K-EasyCulto 3
+
+141
+00:20:24,147 --> 00:20:28,147
+ve obten,
+
+142
+00:20:34,932 --> 00:21:01,132
+Probabiliteli, 1 minus expected value of y, less than or equal to 3 sigma, is always greater than or equal to 8 over 9. Meaning that,
+
+143
+00:21:09,011 --> 00:21:13,511
+88.8%
+
+144
+00:21:17,875 --> 00:21:20,655
+Person, of the absolute devoluşu.
+
+145
+00:21:26,740 --> 00:21:28,332
+deviations,
+
+146
+00:21:32,627 --> 00:21:38,379
+VARİABLİ
+
+147
+00:21:44,596 --> 00:21:48,096
+Why do not exist?
+
+148
+00:21:53,587 --> 00:21:56,387
+do not exist, 3 sigma.
+
+149
+00:21:58,387 --> 00:22:00,387
+Okay, this is the 3 sigma rule.
+
+150
+00:22:01,748 --> 00:22:07,987
+Okay, now we have learned what Chebyshev inequality and what 3 sigma rule.
+
+151
+00:22:08,387 --> 00:22:16,788
+For this Chebyshev inequality, if you know the variance of the random variable, you can compute this probability. This is the rule.
+
+152
+00:22:17,427 --> 00:22:19,987
+You don't need to know the PDF and CDF.
+
+153
+00:22:20,980 --> 00:22:31,980
+If you know the PDF, if you know the CDF, okay, you can find the, you can try to compute this probability. But if you don't have the PDF and CDF,
+
+154
+00:22:33,011 --> 00:22:58,652
+or PMF and CDF. And then you can do what? You can try to, you can, you can, you may have the variance. If you know the variance, you can obtain some bumps, this probability. This is very good. If you have mean, if you have average information, you can use Marconian inequality. If you have variance,
+
+155
+00:22:59,796 --> 00:23:10,955
+You can use Chebyshev inequality. This is the rule. Okay? Now, let us look at the families of discrete distributions.
+
+156
+00:23:34,067 --> 00:23:36,168
+Femilis of discrete distributions.
+
+157
+00:23:36,168 --> 00:23:40,067
+The first distribution is Bernoulli.
+
+158
+00:23:45,943 --> 00:23:53,004
+Bu ne?
+
+159
+00:23:45,268 --> 00:23:47,268
+Bernoulli
+
+160
+00:23:49,268 --> 00:23:51,268
+Bir second, Bernoulli
+
+161
+00:23:51,268 --> 00:23:53,004
+Distribution
+
+162
+00:23:57,523 --> 00:23:58,523
+Ok?
+
+163
+00:24:05,076 --> 00:24:06,956
+A Bernoulli trial
+
+164
+00:24:17,523 --> 00:24:19,523
+Bu, bir experiment.
+
+165
+00:24:27,380 --> 00:24:30,380
+sadece iki adıcı bir ışıklar.
+
+166
+00:24:36,147 --> 00:24:41,147
+2 possible outcomes.
+
+167
+00:24:44,347 --> 00:24:52,147
+For example, throwing, flipping a coin is a Bernoulli experiment, Bernoulli try.
+
+168
+00:24:52,947 --> 00:25:01,147
+Okay, so it has two outcomes labeled 0 and
+
+169
+00:25:01,907 --> 00:25:03,907
+1, respectively.
+
+170
+00:25:07,763 --> 00:25:15,763
+Okay, it has two outcomes, 0 and 1 labels are used to represent these two outcomes.
+
+171
+00:25:19,763 --> 00:25:23,659
+Again, Bernoulli random variable.
+
+172
+00:25:37,748 --> 00:25:41,228
+This is the Bernal random variable with parameter
+
+173
+00:25:46,387 --> 00:26:03,307
+Let's say parameter p, p is the probability and it is between 0 and 1. Okay. It is between 0 and 1. Takes the value.
+
+174
+00:26:10,644 --> 00:26:25,964
+0. Let's say this is failure or tail with the probability.
+
+175
+00:26:35,988 --> 00:26:42,988
+1-P, ve
+
+176
+00:26:42,988 --> 00:26:44,988
+takes the
+
+177
+00:26:47,988 --> 00:26:48,988
+value
+
+178
+00:26:48,988 --> 00:26:50,988
+1
+
+179
+00:26:52,988 --> 00:26:53,988
+this is the success
+
+180
+00:26:55,988 --> 00:26:58,988
+so this is the success also this is the
+
+181
+00:26:58,988 --> 00:27:02,988
+head of hat out of
+
+182
+00:27:04,428 --> 00:27:11,428
+Bu ne?
+
+183
+00:27:03,988 --> 00:27:05,988
+Filippin coin.
+
+184
+00:27:07,488 --> 00:27:10,412
+Bu birçok, ve probabilizden birçok.
+
+185
+00:27:18,451 --> 00:27:20,451
+bir, respectively.
+
+186
+00:27:26,804 --> 00:27:35,564
+Ok, so actually here, this is the probability of
+
+187
+00:27:38,996 --> 00:27:52,076
+of success. Okay, what is the, so what is my, let's say x is the random variable. Bernoulli.
+
+188
+00:27:56,019 --> 00:28:01,660
+Let's say this is the P, it means that the random variable X follows Bernoulli distribution.
+
+189
+00:28:03,220 --> 00:28:05,019
+So, it means
+
+190
+00:28:09,299 --> 00:28:18,251
+The random variable x follows Bernoulli.
+
+191
+00:28:21,523 --> 00:28:23,523
+Distribution,
+
+192
+00:28:26,023 --> 00:28:27,523
+with the parameter
+
+193
+00:28:34,483 --> 00:28:36,483
+ve, and here,
+
+194
+00:28:38,483 --> 00:28:52,884
+what is this outcomes? The outcomes of this Bernoulli is 0 and 1. Okay, so the size of the outcomes is 2.
+
+195
+00:28:55,364 --> 00:28:55,864
+Good.
+
+196
+00:28:58,163 --> 00:29:00,804
+Then, what is this?
+
+197
+00:29:03,800 --> 00:29:04,800
+Bu ne?
+
+198
+00:29:03,284 --> 00:29:10,584
+This is x1, this is x0 and this is x1 or x1 or x2.
+
+199
+00:29:10,584 --> 00:29:14,484
+Okay, so what is the expected value of x?
+
+200
+00:29:16,284 --> 00:29:19,784
+Expected value of the Bernoulli distribution.
+
+201
+00:29:20,384 --> 00:29:29,484
+Let me write the definition for all xk, xk probability
+
+202
+00:29:30,548 --> 00:29:53,107
+random variable x is equal to xk. So I have only the two. So what is this? x0 probability x is equal x0 plus x1 probability x is equal x1.
+
+203
+00:29:53,779 --> 00:30:18,187
+What is x0? x0 means 0, times probability, random variable x is equal to 0. Plus x1 is 1, times probability, random variable x is equal to 1. So this cancels. So the result is?
+
+204
+00:30:22,132 --> 00:30:39,723
+Probabiliteli X is equal 1. So what is this value? It is P. So expected value of the Bernoulli distribution is? P. What about the second moment?
+
+205
+00:30:43,059 --> 00:30:48,059
+Do you know that? How can we find the second moment?
+
+206
+00:30:48,059 --> 00:30:49,059
+P-square?
+
+207
+00:30:49,059 --> 00:31:03,059
+Yes, first we have to, it is square. So we need to find, this is the, okay, let me write the explanation. This is the mean or average.
+
+208
+00:31:06,804 --> 00:31:15,304
+of the Bernoulli random variable.
+
+209
+00:31:20,147 --> 00:31:47,748
+x, okay? This is the average of the variable random variable x. This is, now what I will write is, this is the, the second moment of random variable x, correct?
+
+210
+00:31:48,819 --> 00:31:50,819
+Ok, let us find it.
+
+211
+00:31:52,259 --> 00:32:04,259
+Overall summations, for all xk, xk squared, probability, xk.
+
+212
+00:32:04,259 --> 00:32:06,259
+Ok.
+
+213
+00:32:08,259 --> 00:32:14,980
+So, what is this? Let me write, x0 squared, probability,
+
+214
+00:32:18,548 --> 00:32:21,948
+plus x1 square probability,
+
+215
+00:32:26,291 --> 00:32:41,891
+So, this is zero times probability, zero plus one square times probability, and then this cancels.
+
+216
+00:32:44,980 --> 00:33:06,763
+So, this is also, okay. What about the variance of the Bernoulli? The variance of Bernoulli, the second moment minus, the first moment, square. So, what is the second moment? P minus,
+
+217
+00:33:06,867 --> 00:33:18,268
+P2, this is P times 1 minus P. Look at this, P is, this is always greater than and equal to zero. Why? Because since,
+
+218
+00:33:23,731 --> 00:33:27,031
+Okay, so varianz cannot be negative, so this is correct.
+
+219
+00:33:28,031 --> 00:33:31,231
+After this variance, what about the CDF?
+
+220
+00:33:32,031 --> 00:33:34,231
+Let's say, let us
+
+221
+00:33:35,932 --> 00:33:36,932
+now
+
+222
+00:33:40,019 --> 00:33:55,220
+find the CDF of the random variable, okay? Bernoulli. CDF of Bernoulli random variable.
+
+223
+00:34:03,412 --> 00:34:05,412
+Bernoulli random
+
+224
+00:34:10,260 --> 00:34:36,260
+variable x with parameter p. Okay, let us define the, this is the CDF. CDF of what? For certain value. So this is, by definition, this is the probability the random variable x is less than or equal to x.
+
+225
+00:34:37,780 --> 00:34:41,780
+ve nasıl bulabilirsiniz?
+
+226
+00:34:52,275 --> 00:34:54,275
+Let me find the...
+
+227
+00:35:00,340 --> 00:35:21,340
+Ok, by definition, let me write the definition, for all xk less than or equal to x plus probability x is equal to xk.
+
+228
+00:35:28,884 --> 00:35:40,884
+Yani, nasıl yazabiliriz? Step fonksiyonunu gördünüz mü, matematik dersinde?
+
+229
+00:35:40,884 --> 00:35:42,884
+Step fonksiyonu.
+
+230
+00:35:45,884 --> 00:35:47,884
+Evet hocam, gördük.
+
+231
+00:35:47,884 --> 00:35:49,884
+Nasıl bir şey? Açıklar mısın?
+
+232
+00:35:50,884 --> 00:35:54,884
+Hocam, 1'e geldiğinde direktlik bir şekilde 1 yapıyor, daha sonra devam ediyor yani.
+
+233
+00:35:55,507 --> 00:36:00,507
+Yani unit step fonksiyonu şöyle bir şey değil mi? Hangi dersi gördünüz?
+
+234
+00:36:00,507 --> 00:36:04,507
+Hocam, yani şeyden falan görmüştük aslında, makine öğrenmesi dersi.
+
+235
+00:36:04,507 --> 00:36:05,507
+Sistemde gördük.
+
+236
+00:36:05,507 --> 00:36:08,507
+Aynen, sistemde de görmüştük hocam.
+
+237
+00:36:08,507 --> 00:36:16,507
+O zaman siz yukarıdan alıyorsunuz dersi. Yani ikinci sınıflardan, birinci sınıfta gördükleriniz var mı?
+
+238
+00:36:18,291 --> 00:36:41,291
+Birinci sınıftaki dersleri gördünüz mü gençler hiç? Devre teorisinde sanki geçmişti diye hatırlıyorum ben. Nasıl bir şeydi? Yine belli bir zamana kadar sinyal yoktu. Belli bir zamandan sonra sinyal geldiği zaman 1 olup o şekilde devam ediyordu. Aynen. Mesela şurada çizeyim. Mesela bir a olsun tamam mı? Şöyle sıfır oluyor. Tamam mı?
+
+239
+00:36:41,811 --> 00:36:56,811
+Tam bu nokta geldiğinde, şuradan birdenbire çıkıyor. Şöyle daire çizeyim. Burası boş daire. Sonra devam ediyor. Böyle sonsuza kadar devam ediyor. Şurası x olsun.
+
+240
+00:37:00,563 --> 00:37:04,884
+Bu da mesela U'yla mı göstermiştiniz?
+
+241
+00:37:08,467 --> 00:37:10,467
+O şekilde hatırlıyorum.
+
+242
+00:37:10,467 --> 00:37:13,467
+Değil mi? Bu şekilde göstermiştiniz.
+
+243
+00:37:13,467 --> 00:37:17,467
+Şimdi o zaman ne olacak? Bu da eşittir.
+
+244
+00:37:19,467 --> 00:37:28,467
+Birden küçükse o zaman ne olacak? Toplam, bütün k'lar üzerinden.
+
+245
+00:37:34,164 --> 00:37:35,364
+Less than x
+
+246
+00:37:42,579 --> 00:37:55,980
+Şimdi şöyle yapabiliriz. Bakın, şurada bir toplam var. Buraya çok dikkat edin. Bu toplamı şöyle gösterebiliriz.
+
+247
+00:38:10,036 --> 00:38:31,376
+çarpı, unit step fonksiyonu, x ne olacak? Büyüktür, x eksi x kan. Bunu bu şekilde yapabiliriz. Hatta şunu da şu şekilde, şöyle yapalım. Şu şekilde yazabiliriz.
+
+248
+00:38:36,179 --> 00:38:48,579
+Hımm nerede bunu? Bütün xk'lar üzerinden. Bakın şu iki toplam birbirine eşit. Buna çok dikkat edin, bunu iyi anlayın tamam mı? Şu ikisi birbirine eşit.
+
+249
+00:38:54,387 --> 00:38:57,387
+Yani ben şurada ux'in tanımını vereyim.
+
+250
+00:38:58,387 --> 00:39:02,387
+ux'in tanımı şu, pardon ux eksi a.
+
+251
+00:39:03,387 --> 00:39:05,387
+ux eksi a.
+
+252
+00:39:07,387 --> 00:39:10,387
+ux eksi a olacak.
+
+253
+00:39:10,387 --> 00:39:13,996
+Şimdi ux'in tanımı şu, gençler yazıyorum buraya.
+
+254
+00:39:17,364 --> 00:39:34,523
+x büyük eşittir 0 ise, 1, x küçüktür 0 ise 0 anlamına geliyor. Tamam mı? Bunun buradan hareketler nedir? Bütün x'ler üzerinden.
+
+255
+00:39:42,612 --> 00:40:08,832
+x eşittir x0, u x eksi x0 artı probability, random variable x1, u x eksi x1. Dolayısıyla, neydi bu x0 olmalısılık? 1 minus p times u x minus x.
+
+256
+00:40:10,228 --> 00:40:25,228
+x plus p times u x minus 1. So this is the CDF. Can we plot this? Yes, we can plot this.
+
+257
+00:40:28,532 --> 00:40:29,532
+Bu, X.
+
+258
+00:40:34,420 --> 00:40:57,880
+ve bu, x, x, bu, yi'l plot, let me use blue, so it will become zero, when it is zero, now it goes to 1-P, 1-P, 1-P,
+
+259
+00:41:00,019 --> 00:41:03,619
+ve devam edelim.
+
+260
+00:41:07,731 --> 00:41:13,532
+Bu 0, bu 1, bu 1, bu 1, bu 1.
+
+261
+00:41:26,483 --> 00:41:27,340
+ok?
+
+262
+00:41:30,643 --> 00:41:33,963
+It goes to 1. What is this distance?
+
+263
+00:41:38,132 --> 00:42:01,291
+Bu, bu
+
+264
+00:42:08,563 --> 00:42:11,403
+Bernal Edistribution binomyalı istiyormuşum.
+
+265
+00:42:23,764 --> 00:42:29,043
+Okay, this is binom. Consider now, consider
+
+266
+00:42:32,403 --> 00:42:37,403
+bir süreçte, bir süreçte, bir süreçte.
+
+267
+00:42:40,947 --> 00:42:42,923
+ve independen,
+
+268
+00:42:47,795 --> 00:42:49,795
+Bernal-Lit Trials
+
+269
+00:42:57,364 --> 00:43:10,163
+So, we have n Bernoulli trials with a constant probability of success, with a constant probability.
+
+270
+00:43:14,003 --> 00:43:24,923
+of success. Okay, so my question is this, total
+
+271
+00:43:31,699 --> 00:43:34,199
+Let me write the total.
+
+272
+00:43:37,748 --> 00:43:44,556
+...
+
+273
+00:43:49,032 --> 00:43:55,032
+Numer'ı,
+
+274
+00:43:48,340 --> 00:43:53,500
+Let's say, rung x, okay? Is a discrete random variable.
+
+275
+00:43:59,987 --> 00:44:04,067
+random variable
+
+276
+00:44:04,067 --> 00:44:09,627
+that has a binomial distribution.
+
+277
+00:44:16,115 --> 00:44:18,115
+Birleşmiş birleşmiş birleşmiş.
+
+278
+00:44:23,715 --> 00:44:24,171
+Numer'ı,
+
+279
+00:44:22,739 --> 00:44:23,739
+Distribution
+
+280
+00:44:32,127 --> 00:44:33,107
+Numer'ı,
+
+281
+00:44:40,755 --> 00:44:49,755
+...the probability of success, the number of trials n and the probability of success p.
+
+282
+00:44:49,755 --> 00:45:03,723
+And we generally denote that, like we say binomial np, or sometimes we denote it binomial...
+
+283
+00:45:06,420 --> 00:45:29,740
+np. Or sometimes we say, binom, binomial np. Okay, these are the representations. If you see this representation that you understand, the random variable x follows binomial distribution with the parameters n np.
+
+284
+00:45:31,347 --> 00:45:34,667
+PMF, Probabilit Mass Function,
+
+285
+00:45:35,947 --> 00:45:37,907
+Probabilit
+
+286
+00:45:41,300 --> 00:45:42,923
+mass function
+
+287
+00:45:46,739 --> 00:45:54,659
+I mean the PMF of the random variable of random variable.
+
+288
+00:45:59,092 --> 00:46:01,092
+X, Yüz
+
+289
+00:46:04,947 --> 00:46:31,819
+Bu, bu
+
+290
+00:46:34,387 --> 00:46:37,387
+K, what is this probability?
+
+291
+00:46:37,387 --> 00:46:41,387
+NK,
+
+292
+00:46:41,387 --> 00:46:45,387
+K,
+
+293
+00:46:45,387 --> 00:46:49,387
+number of success, K times number of success and
+
+294
+00:46:49,387 --> 00:46:53,387
+fail, number of fail, N minus K.
+
+295
+00:46:53,387 --> 00:46:55,387
+4,
+
+296
+00:46:57,748 --> 00:47:24,748
+ol, k is equal to 0, 1, 2, 3, this goes to n. The number of success cannot be larger than n because the number of independent Bernoulli trials is n. So the number of success cannot be greater than n. So this is the PMF. Okay? What about its expected value?
+
+297
+00:47:30,420 --> 00:47:42,740
+So, it's expected value, let us write the definition, for all xk, xk times probability, the random variable x is equal to xk.
+
+298
+00:47:44,019 --> 00:47:56,340
+What is my xk? What is x1? x0, x0 is 0, x1 is 1, x2 is 2.
+
+299
+00:47:58,708 --> 00:48:05,028
+xn is n. So, expected value of
+
+300
+00:48:11,923 --> 00:48:32,923
+x, the random variable x is equal to, k is equal to 1 to 0 to n, k times probability, random variable x is equal to k. Let us substitute the PMF.
+
+301
+00:48:37,748 --> 00:48:46,087
+n key, p power key, 1 minus p, n minus key.
+
+302
+00:48:48,487 --> 00:48:51,507
+So, how can we simplify this?
+
+303
+00:48:52,967 --> 00:48:53,947
+How can we simplify?
+
+304
+00:48:55,788 --> 00:48:57,168
+Do you have any idea?
+
+305
+00:49:00,168 --> 00:49:00,768
+Huh?
+
+306
+00:49:03,411 --> 00:49:06,411
+Ok, let me show you something.
+
+307
+00:49:13,411 --> 00:49:16,411
+The key can be written like this.
+
+308
+00:49:24,628 --> 00:49:39,268
+Why? Because the differentiation k times e power k minus 1. So this is equal to k. So I substitute expected value.
+
+309
+00:49:42,675 --> 00:49:55,675
+k is equal to zero to n, nk. What else? One second, let me write like this.
+
+310
+00:50:03,251 --> 00:50:04,452
+This is key.
+
+311
+00:50:12,947 --> 00:50:20,947
+Okay, so differentiation is a linear operation and the summation is a linear operation. You can change their order.
+
+312
+00:50:38,068 --> 00:50:40,468
+A equals 1.
+
+313
+00:50:44,340 --> 00:51:08,940
+This term is equal to, this is the binomials expansion, binomial series. So this is equal to what? AP plus 1 minus P power n. So,
+
+314
+00:51:11,059 --> 00:51:12,844
+I have this one.
+
+315
+00:51:21,619 --> 00:51:25,619
+So, this is the result. You obtain the expected value.
+
+316
+00:51:34,195 --> 00:51:37,056
+You can differentiate n times.
+
+317
+00:51:41,940 --> 00:51:43,940
+Can you do that?
+
+318
+00:51:45,940 --> 00:51:47,940
+Bu türevi alamayacak var mı aranızda?
+
+319
+00:51:52,940 --> 00:51:55,940
+Türevi biliyorsunuz değil mi? Bilmek zorundasınız zaten.
+
+320
+00:51:55,940 --> 00:51:56,940
+End Times
+
+321
+00:52:07,251 --> 00:52:09,251
+İçinin türevi de P.
+
+322
+00:52:14,739 --> 00:52:16,739
+Dolayısıyla,
+
+323
+00:52:17,940 --> 00:52:19,940
+n times p bulunur.
+
+324
+00:52:23,155 --> 00:52:24,155
+Tamam.
+
+325
+00:52:26,155 --> 00:52:32,155
+Varyansını nasıl bulacağız? Second momentini, ikinci momentini nasıl bulacağız?
+
+326
+00:52:33,155 --> 00:52:38,155
+O da toplam k eşitliği sıfırdan n'ye kadar k kare.
+
+327
+00:52:41,155 --> 00:52:44,155
+Probability x equal k.
+
+328
+00:52:46,155 --> 00:52:49,036
+Peki burada k kareyi nasıl ifade edebilirim gençler?
+
+329
+00:52:51,731 --> 00:53:00,491
+Kim söyleyecek? Türev cinsinden nasıl ifade edebilirim? Evet.
+
+330
+00:53:05,108 --> 00:53:08,428
+Hocam, 1.3 çarpı k üzeri 3.
+
+331
+00:53:08,428 --> 00:53:09,428
+Ne?
+
+332
+00:53:09,428 --> 00:53:13,548
+1.3 çarpı k üzeri 3.
+
+333
+00:53:13,548 --> 00:53:28,108
+Bak şöyle, yukarıdaki gibi mantıkta bak, şöyle k'yı bak türevler cinsinden ifade ettik. Şuraya bir bak. Bu mantıkta nasıl yaparız?
+
+334
+00:53:31,507 --> 00:53:36,507
+Şöyle yaparız, iki tane k'nın çarpımını demek bu. Bu da nedir?
+
+335
+00:53:38,007 --> 00:53:45,007
+Türev hem a'ya göre hem b'ye göre ikinci değerden türev, b üzeri k'dır değil mi?
+
+336
+00:53:46,007 --> 00:53:49,507
+ve a'nın değeri ne? 1, b'nin değeri de 1'dir.
+
+337
+00:53:51,107 --> 00:53:55,007
+Eğer bunu da yaparsanız, bunu bu şekilde kullanırsanız,
+
+338
+00:53:56,467 --> 00:54:17,467
+İkinci momentinin de ne olduğunu bulacağız. Şöyle bulacağız. İkinci momente, n çarpı p çarpı 1 eksi p artı n kare p kare. Böyle bulacağız. Peki varyansı ne oluyor bu durumda?
+
+339
+00:54:19,731 --> 00:54:30,351
+Binom yılın varyansı, ikinci momenti eksi, birinci momentin karesi, dolayısıyla
+
+340
+00:54:37,300 --> 00:54:45,300
+Eksi, moment ortalaması np idi, karesi. Buradan da ne çıkıyor? Şu ikisi birbirini götürür.
+
+341
+00:54:48,788 --> 00:54:52,627
+Bu, binom,
+
+342
+00:54:58,867 --> 00:55:07,508
+the variance of binomial distribution.
+
+343
+00:55:11,219 --> 00:55:14,099
+Ok, very good. I have a question.
+
+344
+00:55:15,980 --> 00:55:17,139
+What is this?
+
+345
+00:55:21,204 --> 00:55:25,932
+Bu nedir? Neye eşit bu?
+
+346
+00:55:30,452 --> 00:55:32,452
+Evet gençler, evet.
+
+347
+00:55:32,452 --> 00:55:38,452
+Hocam, n! bolu, n! k! çarpı k!
+
+348
+00:55:38,452 --> 00:55:42,452
+Evet, adı neydi bunun?
+
+349
+00:55:42,452 --> 00:55:44,452
+Combination.
+
+350
+00:55:44,452 --> 00:55:48,452
+Evet, evet. Combination.
+
+351
+00:56:20,019 --> 00:56:22,019
+Bu ne zaman? Oh, ok.
+
+352
+00:56:22,019 --> 00:56:24,876
+Biz de 10-minutunda birkaç.
+
+353
+00:56:44,659 --> 00:56:46,659
+10 dakika sonra görüşürüz.
+
+354
+01:08:18,707 --> 01:08:41,707
+Ok, let us continue. We have studied the binomial distribution. Ok, now it's about the geometric distribution. Geometric distribution.
+
+355
+01:08:57,811 --> 01:09:00,811
+Sekles,
+
+356
+01:09:00,811 --> 01:09:01,811
+of
+
+357
+01:09:05,731 --> 01:09:08,612
+independent Bernoulli trials.
+
+358
+01:09:19,891 --> 01:09:26,652
+Ok, we have independent Bernoulli trials with a constant probability of success.
+
+359
+01:09:31,667 --> 01:09:49,643
+Probabilty of success. Let's say, here, okay. Geometrik distribution is defined as the number of
+
+360
+01:09:56,659 --> 01:10:06,380
+Trials up to and including...
+
+361
+01:10:12,851 --> 01:10:18,412
+ilk gelişim
+
+362
+01:10:27,188 --> 01:10:29,548
+İndepanet Bernoulli trials.
+
+363
+01:10:40,115 --> 01:10:45,804
+ve
+
+364
+01:10:50,868 --> 01:11:03,948
+Probability of success, let's say p is a discrete random variable.
+
+365
+01:11:11,923 --> 01:11:24,363
+This is a diskizyonda variable x with a, let me write in blue, with a geometric distribution.
+
+366
+01:11:33,716 --> 01:11:35,468
+Wid parameter
+
+367
+01:11:42,771 --> 01:11:47,771
+Parameter, Bayes, B.
+
+368
+01:11:47,771 --> 01:11:53,771
+We generally say, okay, we have the trials, okay, independent Bernoulli trials.
+
+369
+01:11:53,771 --> 01:12:05,771
+For example, flipping a coin, you flip the coin until you find the first hat. You flip the coin, it is tail. You repeat, you flip a coin again, it is tail.
+
+370
+01:12:10,452 --> 01:12:24,012
+hat, okay? So, this is the geometric, this is the definition of the geometric distribution. Let's say, we can, if you see like this,
+
+371
+01:12:28,627 --> 01:12:33,612
+Let's say, like this. If you see like this, or...
+
+372
+01:12:38,996 --> 01:13:02,636
+You understand that it is a geometric distribution. The probability mass function of the random vary geometric distribution x is given by, so this is the probability,
+
+373
+01:13:07,252 --> 01:13:34,452
+random variable x is equal to k. k is the number of trials to find the first success. The number of trials to find this first success is equal to the number of, this is the probability k minus one, this is the probability that the first k minus one trials are failures.
+
+374
+01:13:34,836 --> 01:13:37,596
+times probability of success.
+
+375
+01:13:39,076 --> 01:13:39,876
+So,
+
+376
+01:13:43,891 --> 01:13:57,291
+the number of trials to find the first success.
+
+377
+01:14:01,908 --> 01:14:03,268
+What is this?
+
+378
+01:14:07,923 --> 01:14:09,676
+Probabiliter
+
+379
+01:14:13,939 --> 01:14:31,539
+of that, the first the n-1 trials, the first n-1 trials are failure.
+
+380
+01:14:41,171 --> 01:14:42,412
+Ne bu?
+
+381
+01:14:48,083 --> 01:14:50,251
+bu dağılık, bu dağılık,
+
+382
+01:14:54,484 --> 01:15:04,811
+Bu son sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda, sonunda
+
+383
+01:15:09,140 --> 01:15:12,076
+Yani k'ın var?
+
+384
+01:15:17,043 --> 01:15:23,043
+Ok, who will tell me? The values of key. K can be?
+
+385
+01:15:23,043 --> 01:15:25,043
+Positive.
+
+386
+01:15:25,043 --> 01:15:29,043
+Positive. Can be 0 or can be 0?
+
+387
+01:15:29,043 --> 01:15:33,043
+If 0, then probability is 0.
+
+388
+01:15:33,043 --> 01:15:35,043
+What is the minimum value of key?
+
+389
+01:15:35,043 --> 01:15:39,043
+It cannot be 0 because 0 minus 1 is not true.
+
+390
+01:15:39,043 --> 01:15:44,043
+So count cannot be less than 1, so it will start by 1. Thank you.
+
+391
+01:15:45,363 --> 01:15:50,363
+2, 3, 4, koşullu, infinity.
+
+392
+01:15:52,363 --> 01:16:00,363
+All the numbers, in other words, k is element of all natural numbers except zero.
+
+393
+01:16:05,971 --> 01:16:12,451
+Okay, very good. What is the expected value of geometric mean distribution? Expected value of this?
+
+394
+01:16:15,731 --> 01:16:27,451
+This is equal to 1 over P and the variance of this distribution is equal to 1 minus P minus P square. Okay?
+
+395
+01:16:30,092 --> 01:16:32,731
+And so you can find them.
+
+396
+01:16:33,268 --> 01:17:00,811
+You will use r0, r1, r2, rn. What is this? This is equals to 1 minus rn divided by 1 minus r. If r is less than 1, then limit n goes to infinity.
+
+397
+01:17:04,020 --> 01:17:06,020
+is equal to 1 minus r.
+
+398
+01:17:12,948 --> 01:17:34,948
+So r0 plus r1 plus r square plus r3 plus goes to infinity is equals to 1 minus r if absolute value of r is less than 1. Okay, you will use this to find the expected value and variance.
+
+399
+01:17:37,395 --> 01:17:45,395
+We have another distribution, negative distribution, negative binomial distribution.
+
+400
+01:17:52,692 --> 01:17:54,692
+Başarı soru olana kadar mı?
+
+401
+01:17:54,692 --> 01:18:06,692
+Okay, yes. Let me define, okay. The total number of trials
+
+402
+01:18:10,963 --> 01:18:16,724
+TOTAL NUMBER
+
+403
+01:18:18,263 --> 01:18:20,263
+TRIALS
+
+404
+01:18:22,763 --> 01:18:25,263
+UP TO AND INCLUDING
+
+405
+01:18:34,836 --> 01:18:35,724
+2
+
+406
+01:18:39,188 --> 01:18:41,188
+Art, let me write.
+
+407
+01:18:50,739 --> 01:19:08,739
+r'ninci, art, success. Geometrikte neydi? İlk başarıydı değil mi? Bunda ise ne? r'ninci başarı. Art, success in a sequence of...
+
+408
+01:19:14,963 --> 01:19:16,203
+İndepanel
+
+409
+01:19:21,716 --> 01:19:26,115
+Bernoulli trials,
+
+410
+01:19:28,216 --> 01:19:41,316
+with a constant probability of success,
+
+411
+01:19:44,015 --> 01:19:46,916
+okay, is it
+
+412
+01:19:48,916 --> 01:20:00,916
+Discrete random variable, width, let me write here blue, negative.
+
+413
+01:20:04,692 --> 01:20:05,692
+Binomial
+
+414
+01:20:05,692 --> 01:20:09,792
+Distribution
+
+415
+01:20:15,048 --> 01:20:18,048
+Binomial
+
+416
+01:20:14,612 --> 01:20:16,587
+Width biometres
+
+417
+01:20:24,115 --> 01:20:29,115
+P and R.
+
+418
+01:20:31,115 --> 01:20:33,115
+Tamam.
+
+419
+01:20:33,115 --> 01:20:38,115
+Generally, we say like this, we represent like this.
+
+420
+01:20:38,115 --> 01:20:43,115
+The random variable is like this.
+
+421
+01:20:43,115 --> 01:20:47,115
+NB negative binomial.
+
+422
+01:20:47,115 --> 01:20:49,115
+Okay.
+
+423
+01:20:49,115 --> 01:20:50,923
+NB PR.
+
+424
+01:20:51,475 --> 01:20:57,815
+Sometimes we say, Neck, Bayneum,
+
+425
+01:21:02,292 --> 01:21:29,804
+Or, sometimes, one second, we say only the neck, negative distribution, okay? So, when you see these notations, you understand that the random variable x follows negative binomial distribution. The probability mass function,
+
+426
+01:21:31,155 --> 01:21:36,655
+PMF, negatif random variables.
+
+427
+01:21:40,756 --> 01:22:07,736
+is, okay, so, this is the probability, the random variable x is equal to k. Şimdi ne oluyor? Elinde bir sürü, elin, mesela ne yapıyorsun? Havaya, paraya atıyorsun, atıyorsun, sonuca bakıyorsun, turaysa işte sayıyorsun.
+
+428
+01:22:08,532 --> 01:22:19,532
+Şimdi attığın yazı geldi, yok bir şey, attığın tura geldi, bir. Attığın yazı geldi, bir şey yok. Attığın ikinci tura geldi, iki. Üçüncü tura geldi, üç. Sayıyorsun, turaları sayıyorsun.
+
+429
+01:22:20,532 --> 01:22:28,532
+Turaların sayısı R olana kadar atıyorsun değil mi? İşte bu şu demek.
+
+430
+01:22:34,707 --> 01:22:46,707
+Re'nin inci başarının olasılığı ne? Havaya yazı türü atıyorsun. Re'nin inci başarının olma olasılığı nedir? Tamam mı?
+
+431
+01:22:48,707 --> 01:22:53,228
+This is equal to, this is the binomial.
+
+432
+01:22:56,307 --> 01:23:23,467
+R minus 1, k minus 1, 1 minus k minus r. This is the number of failures and this is the number of success, probable number of success. 4 k is r.
+
+433
+01:23:24,435 --> 01:23:40,363
+plus r plus 1, r plus 2, r plus 3, goes to infinity. Because the number of success, okay? And what is the expected value?
+
+434
+01:23:44,916 --> 01:23:46,916
+Nexpected value is r over.
+
+435
+01:23:50,707 --> 01:23:52,683
+ve varans konuları,
+
+436
+01:23:57,300 --> 01:24:03,699
+R'ı, 1-P'ı, p².
+
+437
+01:24:08,659 --> 01:24:13,659
+Okay, this is the negative binomial distribution. And we have also Poisson distribution.
+
+438
+01:24:31,188 --> 01:24:32,988
+Poisson Distribution
+
+439
+01:24:46,228 --> 01:24:52,228
+Poisson distribution is related to rare events.
+
+440
+01:24:57,619 --> 01:24:59,372
+Rörel, evans.
+
+441
+01:25:10,228 --> 01:25:15,268
+Ok, et cetera. Yıvan, stet.
+
+442
+01:25:21,524 --> 01:25:23,372
+are extremely
+
+443
+01:25:31,828 --> 01:25:32,828
+Unlikely
+
+444
+01:25:40,851 --> 01:25:43,731
+ekstremely unlikely to occur.
+
+445
+01:25:48,884 --> 01:25:50,884
+Bütün a short period of time.
+
+446
+01:26:07,731 --> 01:26:19,172
+Errors, such as arrivals of jobs. Let me give you an example. Arrivals of jobs.
+
+447
+01:26:22,931 --> 01:26:36,332
+Such as, Telephone calls, Such as, E-mail messages,
+
+448
+01:26:41,619 --> 01:26:46,619
+such as, Bayes virus attacks,
+
+449
+01:26:50,003 --> 01:26:52,652
+ve, trafikir, evlendirme,
+
+450
+01:26:58,676 --> 01:27:00,676
+ve net olarak bilaccouts,
+
+451
+01:27:06,963 --> 01:27:09,523
+ve softfair,
+
+452
+01:27:15,731 --> 01:27:22,731
+such as floods, such as earthquakes.
+
+453
+01:27:28,307 --> 01:27:45,484
+et cetera. Okay? These are the examples where you can use Poisson distribution. So you see the Poisson distribution has many applications in the literature. The number of
+
+454
+01:27:50,163 --> 01:27:51,363
+Rar events
+
+455
+01:27:55,220 --> 01:27:56,220
+Ocurring,
+
+456
+01:27:59,020 --> 01:28:01,340
+within a fixed period of time,
+
+457
+01:28:05,971 --> 01:28:16,331
+Fixed, sabitlenmiş, period of time has
+
+458
+01:28:19,956 --> 01:28:21,739
+Poisson distribution.
+
+459
+01:28:28,659 --> 01:28:53,931
+Okay, it has the Poisson distribution. Notation, we use this notation, look, Poisson, Lambda, or sometimes we say Poisson, Lambda, okay? These are the notation, where,
+
+460
+01:28:56,467 --> 01:29:07,467
+Lamna, is the average number of events.
+
+461
+01:29:12,404 --> 01:29:23,404
+events, in other words, frequency, average frequency. The probability mass function,
+
+462
+01:29:29,492 --> 01:29:36,252
+Probabilit, mass function of Poisson random variable,
+
+463
+01:29:44,340 --> 01:30:07,620
+is given by, Edmund Wright, this is the probability PMF, probability x is equal to k, this is equal to lambda power k divided by k factorials e power minus lambda.
+
+464
+01:30:08,880 --> 01:30:09,880
+For,
+
+465
+01:30:11,444 --> 01:30:29,292
+K is equal to zero, one, two, three, infinity. So K is element of all natural numbers. Okay? What about the expected value of this?
+
+466
+01:30:32,659 --> 01:30:57,323
+Can we find? Yes. By definition, overall xk, xk times probability x is equal xk. So what I have, all my values, k is from 0 to infinity, k times probability x is equal to k. Again, now,
+
+467
+01:30:58,739 --> 01:31:11,219
+I substitute all the values k equal to infinity k times lambda k divided by k factorial e power minus lambda.
+
+468
+01:31:13,379 --> 01:31:23,239
+How can I simplify this series? Look at this term. This term doesn't depend on the variable key, so I can get it out.
+
+469
+01:31:23,859 --> 01:31:48,859
+ve also, now I have also what I have, I have also d over d a, a power k, a equals one. I have also this one. So expected value of x can be written like this, e power minus lambda summation, zero to infinity, e power k,
+
+470
+01:31:49,779 --> 01:31:55,219
+Lambda power k, k factorial, and a is equal to 1. 1 second.
+
+471
+01:32:05,171 --> 01:32:12,171
+Okay, now I can change the order of summation and the differentiation.
+
+472
+01:32:24,467 --> 01:32:45,467
+0 to infinity, and a equals 1. What is this summation? Who will tell me? This summation equals to what? Bakın gençler, sınavda bu tür şeylere hazır olun. Tamam? What is this summation?
+
+473
+01:32:52,467 --> 01:32:53,467
+Ok.
+
+474
+01:32:59,315 --> 01:33:04,435
+Bu eşitlik neye eşit? Bu seri toplamı neye eşit? Plan var mı aranızda?
+
+475
+01:33:06,235 --> 01:33:09,036
+[öğrenci]
+
+476
+01:33:10,716 --> 01:33:12,115
+[öğrenci]
+
+477
+01:33:16,627 --> 01:33:22,507
+Gençler bakın, kızıyorum ama şu anda derse katılmanız lazım. Bir soru soruyorum, cevap veriyor olmanız lazım.
+
+478
+01:33:22,507 --> 01:33:29,707
+Cevap vermezseniz sınavı daha zor yaparım. Ne kadar böyle dersten kopuk olursanız, ders sınav daha da zor olacak.
+
+479
+01:33:29,707 --> 01:33:30,707
+Hocam?
+
+480
+01:33:30,707 --> 01:33:43,547
+Dersten ben ne kadar mutlu olursam, sınavda da siz o kadar çok mutlu olursunuz. Karşılıklı her şey. Sevgiler karşılıklı. Dersi sevmeyen sınavdan kalır, onu söyleyeyim.
+
+481
+01:33:44,051 --> 01:33:49,731
+Ben dersten hoşlanmazsam sınavdan çok düşük not alırsınız. Bunu söylüyorum. Evet [öğrenci].
+
+482
+01:33:49,731 --> 01:33:55,011
+Hocam burada basitleştiğim şahı mı söylüyorsunuz yoksa böyle işte kalayı yerine koyduğumuz zaman oluşacak?
+
+483
+01:33:55,011 --> 01:34:00,051
+Bu toplam neye yakın sert? Nedir bu toplam? Neyin açılımı bu?
+
+484
+01:34:00,051 --> 01:34:01,451
+Bir düşüneyim hocam.
+
+485
+01:34:07,060 --> 01:34:12,060
+Hocam, bu sıfıra yakın, sıfı gibi geliyor. Hani k faktörüleri daha büyük aşağıda.
+
+486
+01:34:12,060 --> 01:34:18,060
+Şimdi gençler bakın, matematik olarak sana, sözüm sana değil [öğrenci], bütün sınıflar.
+
+487
+01:34:18,060 --> 01:34:19,060
+Tamam hocam.
+
+488
+01:34:19,060 --> 01:34:33,060
+Şimdi sizlerin matematik olarak bir enkazsınız, yani enkaz. Bildiğiniz enkazsınız. Matematik olarak hiçbir bilginiz yok mu? Ben anlamıyorum. Nasıl geçtiniz siz matematik dersine?
+
+489
+01:34:33,268 --> 01:34:43,768
+Siz yarın bir gün veri bilim adamı olacaksınız. Olasılık teorisini bilmeden çivi bile olamazsınız. Çivi çivi, binadaki çivi bile olamazsınız.
+
+490
+01:34:46,768 --> 01:34:57,268
+Olasılık teorisini bilmek için de matematik lazım. Siz hangi dünyada yaşıyorsunuz? Ne zaman siz anlayacaksınız bu işin sizin ekmeğiniz olduğunu?
+
+491
+01:35:00,435 --> 01:35:24,331
+Hiç mi aklınız çalışmıyor? Burada para kazanacaksın. Yarın bir gün iş başvurusu yaptığında sana bu soruları soracaklar. Ya sen mezun olana kadar 3-4 sene geçecek. 3 sene geçecek. O zaman her şey yapay zeka, makine öğrenmesi üzerine olacak. Sen olasılık teorisini bilmeden ne yapacaksın? Yazılım yaparak sanki köşen para mı kazanacaksın?
+
+492
+01:35:26,868 --> 01:35:49,768
+Gençler, 40 yaşına kadar çalışacaksınız. 40 yaşından sonra işsizsiniz. Bilgisayar mühendisleri bu şekildedir. Staj yapanlarınız var mı aranıza? Gittiğiniz, staj yaptığınız firmalara bakın. 40 yaşından daha yaşlı bir çalışan var mı? Görürseniz 40 yaşından daha yaşlı birisi, o nedir? O şirketin sahibidir büyük ihtimal.
+
+493
+01:35:51,859 --> 01:35:59,859
+Bir firmada çalışacaksanız, kırk yaşınıza kadar çalışacaksınız. Kırk yaşınıza kadar paranızı kazandınız, kazanamadınız.
+
+494
+01:35:59,859 --> 01:36:10,859
+Ya sen bu dünyaya niye geldin o zaman? Sürünmek için mi geldin? Gençler, sürünmek için mi geldiniz bu dünyaya?
+
+495
+01:36:10,859 --> 01:36:16,859
+Başarılı olmak için değil mi? Hepiniz başarılı olmak istiyorsunuz. Başarılı olmak istemezseniz,
+
+496
+01:36:17,024 --> 01:36:39,244
+Üniversite sınavına girmezdiniz. Üniversite sınavına girdiniz, başardınız. Şu anda bu başarınızı devam ettirme zamanı. Yani şimdi bu serinin, bu seri açılımının neye eşit olduğunu bilmiyorsanız, ben şaşıyorum size. Nasıl sınavdan yüksek not alıp geçeceksiniz? Kusura bakmayın. Geçen seneye göre bu ders o kadar kolay olmayacak.
+
+497
+01:36:42,260 --> 01:36:47,760
+Ben derste mutlu olmazsam sınavda o kadar zor olur. Kusura bakmayın yani her şey karşılıklı.
+
+498
+01:36:50,760 --> 01:36:58,760
+Ya bu sizin ekmeğiniz, ekmeğiniz ya bu, 3-4 yıl sonra bunu kullanarak, bu bilgileri kullanarak para kazanacaksınız.
+
+499
+01:36:59,260 --> 01:37:06,760
+Yarın bir gün makine öğrenmesi, mesela veri dersinde, veri bilimi dersinde, data miningde.
+
+500
+01:37:07,667 --> 01:37:22,987
+Naive Bayes'i göreceksiniz, entropi hesabını kullanarak decision trileri hesaplayacaksınız. Her şey olasılık üzerinde kurulu. El insaf ya, bu derse çalışmayacaksın, hangi derse çalışacaksın? En önemli ders bu.
+
+501
+01:37:40,404 --> 01:37:48,404
+Bunları kendiniz elde edersiniz. Bundan sonra olduğu gibi şey yapıyorum. Evde kendiniz çalışarak elde edin.
+
+502
+01:37:50,084 --> 01:38:00,004
+Expected value is equal to lambda and the variance of the Poisson random variable is also lambda. You can find this atom.
+
+503
+01:38:08,095 --> 01:38:11,295
+We can also show that.
+
+504
+01:38:18,515 --> 01:38:31,515
+X is the Poisson random variable, lambda, and the Y is Poisson random variable, lambda, such that,
+
+505
+01:38:37,844 --> 01:38:47,844
+We can show that if, Poisson such that, if then,
+
+506
+01:38:54,195 --> 01:38:59,195
+If then, z is equal to
+
+507
+01:39:03,988 --> 01:39:12,988
+x plus y, sum of these two Poisson random variable. This is lambda. One second.
+
+508
+01:39:14,988 --> 01:39:24,988
+Sinirlendirdiniz beni ya. Derse katılmıyorsunuz, çalışmıyorsunuz. Ve artık quizin zamanını da söylemeyeceğim.
+
+509
+01:39:32,979 --> 01:39:34,979
+Poisson distribution.
+
+510
+01:39:36,579 --> 01:39:37,879
+Distribution.
+
+511
+01:39:41,684 --> 01:39:44,463
+Width Parameter
+
+512
+01:39:47,859 --> 01:39:58,359
+Lambda plus nu. In other words, Poisson, Lambda plus nu. Show this.
+
+513
+01:40:10,484 --> 01:40:20,984
+Okay? Poisson distribution, another conclusion, Poisson distribution.
+
+514
+01:40:30,003 --> 01:40:30,804
+isen
+
+515
+01:40:34,203 --> 01:40:35,443
+approximation of
+
+516
+01:40:44,372 --> 01:40:46,372
+binomiyo
+
+517
+01:40:50,068 --> 01:41:01,568
+distribution. Okay? What does it mean? Look at this is the PMF of, what is the PMF of binomial distribution?
+
+518
+01:41:07,988 --> 01:41:33,988
+This is the PMF of binomial distribution limit. And the number of trials goes to infinity and the probability goes to what? Zero. While n times p is always constant. Lambda. This is equal to lambda power k divided by k factorial.
+
+519
+01:41:34,676 --> 01:41:50,060
+e-Lambda. You see? Here is PMF of binomial. What is this? PMF of?
+
+520
+01:41:58,163 --> 01:42:22,023
+Poisson. So, in order to generate the Poisson random variable, you can do what? You can generate the binomial distributions, where the number of trials goes to infinity, while the probability goes to zero, such that their product is always constant. This is constant.
+
+521
+01:42:28,659 --> 01:42:29,659
+Okay?
+
+522
+01:42:31,659 --> 01:42:33,659
+Hypergeometrik distribution
+
+523
+01:42:36,787 --> 01:43:02,219
+I will pass it for hypergeometric distribution. Hypergeometric distribution. You are responsible for this. You are.
+
+524
+01:43:03,220 --> 01:43:17,219
+responsible for this. In the book of the course,
+
+525
+01:43:30,707 --> 01:43:47,507
+It is well explained and exemplified. It is very simple. After you learn...
+
+526
+01:43:47,520 --> 01:44:10,520
+Geometric ve negatif binominal distribuye. Çünkü you know the binominal distribuye, you know the negative binominal distribuye. And then hypergeometric distribution is easy to understand. Okay? We have also multinomial distribution. Multinomial distribution.
+
+527
+01:44:24,243 --> 01:44:29,099
+multinomial distribution, okay? Consider a sequence of
+
+528
+01:44:32,979 --> 01:44:57,979
+consider a sequence of, let's say consider a sequence of n independent trials, n independent trials, okay, where each individual trial can be key outcomes, where each,
+
+529
+01:44:59,539 --> 01:45:22,039
+individual trial can have key outcomes. So each trial has key outcomes, okay, or more. Or we say key outcomes that occur.
+
+530
+01:45:26,163 --> 01:45:28,163
+ve probabiliteler.
+
+531
+01:45:35,891 --> 01:45:44,891
+P1, P2, P3,
+
+532
+01:45:47,291 --> 01:45:48,891
+P3,
+
+533
+01:45:50,891 --> 01:45:51,891
+OK?
+
+534
+01:45:56,180 --> 01:46:03,380
+P1 plus P2 plus P3 plus Pk is equal to 1.
+
+535
+01:46:04,380 --> 01:46:04,979
+Okay?
+
+536
+01:46:08,948 --> 01:46:13,948
+Now, the random variables.
+
+537
+01:46:19,028 --> 01:46:27,028
+Let's say x1, x2, xk.
+
+538
+01:46:30,484 --> 01:46:33,743
+Bu, neler dekürençler,
+
+539
+01:46:48,180 --> 01:46:49,680
+herkese outcome.
+
+540
+01:46:56,756 --> 01:47:05,595
+Let's say, each outcome have a, have a or follow,
+
+541
+01:47:09,011 --> 01:47:12,411
+Multinomial Distribution.
+
+542
+01:47:23,412 --> 01:47:32,412
+Bu, eksempel, you are throwing a coin, ok, you are flipping a coin, the result is true or false, ok, this is Bernoulli.
+
+543
+01:47:32,412 --> 01:47:44,412
+So, now you have three coin, for example, you have two coins, you throw two coins at the same time, you flip two coins at the same time, now it is multinomial.
+
+544
+01:47:44,412 --> 01:47:50,412
+If you throw n coins at the same time, it is multinomial, ok?
+
+545
+01:47:50,963 --> 01:48:18,203
+So, but in such case, in the multinomials, each trial has key outcomes, okay? And then PMF is given like this. Probability to joint, we will talk about the joint probability because the number of variables is more than one, the joint PMF.
+
+546
+01:48:20,884 --> 01:48:21,884
+İzgilen
+
+547
+01:48:25,332 --> 01:48:39,948
+Bayes, what is that? Probability, the random variable x1 is equal to n1, and x2 is equal to n2, and
+
+548
+01:48:43,444 --> 01:49:08,884
+And the random variable xk is equal to nk, is equal to n factorial divided by n1 factorial n2 factorial nt factorial multiplied by p1 power n1, p2 power n2.
+
+549
+01:49:11,155 --> 01:49:13,956
+pk power nk.
+
+550
+01:49:15,235 --> 01:49:15,996
+Okay, where
+
+551
+01:49:15,996 --> 01:49:26,376
+n1 plus n2 plus n3 plus all nk is equal to n.
+
+552
+01:49:28,775 --> 01:49:37,836
+Okay, so the expected value of xi, okay, i is 1, 2,
+
+553
+01:49:38,355 --> 01:49:46,515
+K. So this is equal to, this is one case. So this is binomial distribution, nPi.
+
+554
+01:49:47,635 --> 01:49:53,547
+What about the variance of Xi? This is also binomial distribution.
+
+555
+01:49:59,667 --> 01:50:05,667
+What is that? n Pi times 1 minus Pi.
+
+556
+01:50:08,067 --> 01:50:09,483
+One second.
+
+557
+01:50:27,539 --> 01:50:28,479
+This is equal to.
+
+558
+01:50:41,235 --> 01:50:41,996
+Not that
+
+559
+01:50:48,819 --> 01:50:50,359
+The random variables
+
+560
+01:50:56,851 --> 01:50:58,851
+X1, X2
+
+561
+01:51:06,899 --> 01:51:13,260
+xk are not independent.
+
+562
+01:51:18,355 --> 01:51:36,595
+Okay, if they are independent, then it is the product of the PMF of binomial distributions, but now it is not independent in this case. Okay, so this is the multinomial distribution. Now we need to have 10 minute break.
+
+563
+01:51:47,507 --> 01:52:10,307
+Yeni birçok, in the next lecture, we will learn the continuous random variables and the distributions, okay? So 10 minute break, time is 14.54. Okay, after 10 minutes, we can continue. Okay, see you after 10 minutes.
+
+564
+02:03:31,859 --> 02:03:35,859
+Ok, let us continue. Ok.
+
+565
+02:03:37,059 --> 02:03:41,859
+We start a new chapter.
+
+566
+02:03:43,460 --> 02:03:46,859
+This chapter is continuous.
+
+567
+02:03:49,359 --> 02:03:54,795
+We finished the discrete random variables, now we will focus on continuous.
+
+568
+02:04:15,667 --> 02:04:21,547
+ve distribisyon, or we can say, contuse random variables and
+
+569
+02:04:28,979 --> 02:04:29,979
+Dizd...
+
+570
+02:04:35,828 --> 02:04:39,328
+Test ve patients.
+
+571
+02:04:44,115 --> 02:04:50,115
+Okay, this is the chapter four in the book, Michael Baran book, chapter four.
+
+572
+02:04:52,115 --> 02:05:01,115
+And probability density, let us focus on the probability density first. Probability.
+
+573
+02:05:17,876 --> 02:05:19,876
+Probabiliteti döneminde,
+
+574
+02:05:21,316 --> 02:05:22,596
+A random variable
+
+575
+02:05:27,731 --> 02:05:31,192
+Let's say x is cold.
+
+576
+02:05:37,555 --> 02:05:39,531
+Continuous random variable.
+
+577
+02:05:45,203 --> 02:05:48,503
+random variable,
+
+578
+02:05:50,303 --> 02:05:50,903
+then
+
+579
+02:05:54,263 --> 02:05:57,743
+when it is called continuous random variable,
+
+580
+02:05:59,783 --> 02:06:00,323
+if
+
+581
+02:06:02,843 --> 02:06:03,843
+it takes
+
+582
+02:06:13,971 --> 02:06:19,771
+Eğer bir değer var,
+
+583
+02:06:23,347 --> 02:06:25,323
+ve ayrıla,
+
+584
+02:06:31,412 --> 02:06:44,051
+What does it mean? It means that a continuous, one second, a continuous random variable,
+
+585
+02:06:51,828 --> 02:06:58,708
+random variable is a random variable that takes
+
+586
+02:07:04,884 --> 02:07:10,644
+Continuous random variable is a random variable that takes
+
+587
+02:07:13,876 --> 02:07:22,876
+İnfinite, countably, uncountably, uncountably,
+
+588
+02:07:29,587 --> 02:07:38,587
+Infinite, Number of, of values.
+
+589
+02:07:44,307 --> 02:07:48,807
+What does it mean? X is a continuous random variable.
+
+590
+02:07:52,212 --> 02:07:54,212
+İçin bir nombor.
+
+591
+02:07:55,212 --> 02:07:57,212
+Continuous random variable.
+
+592
+02:07:59,212 --> 02:08:01,212
+Ok, a continuus random variable.
+
+593
+02:08:01,212 --> 02:08:03,212
+X is the continuous random variable.
+
+594
+02:08:03,212 --> 02:08:06,212
+The sample space, the size of the sample.
+
+595
+02:08:06,212 --> 02:08:11,212
+What is this?
+
+596
+02:08:11,212 --> 02:08:12,972
+This is the sample space.
+
+597
+02:08:18,131 --> 02:08:20,131
+X, ok?
+
+598
+02:08:20,131 --> 02:08:23,131
+What is the size of this?
+
+599
+02:08:27,444 --> 02:08:54,316
+is infinite. Okay? So, countably, infinite number of values is the indication that the random variable is continuous. Okay? And then what is the probability for continuous random variables? This distribution function is defined as?
+
+600
+02:08:54,899 --> 02:08:58,460
+ve distribisyonu,
+
+601
+02:09:07,764 --> 02:09:18,264
+distribution function, this is the CDF, Cumulative Distribution Function, in other words, Cumulative Distribution Function.
+
+602
+02:09:22,387 --> 02:09:43,148
+Function is function of random variable x, random variable of the continuous random variable x.
+
+603
+02:09:51,891 --> 02:09:57,891
+X is defined as, is defined as,
+
+604
+02:10:04,180 --> 02:10:28,579
+So actually this is probability, the random variable x is less than or equal to x. Define it as and which is also, let me write in blue, which is, is continuous.
+
+605
+02:10:32,115 --> 02:10:43,996
+Not in a staircase shape.
+
+606
+02:10:43,996 --> 02:10:52,636
+Yani basamak şeklinde değil, continuous, okay? Something like this.
+
+607
+02:10:54,636 --> 02:10:56,235
+Let me, do you remember?
+
+608
+02:11:00,083 --> 02:11:03,083
+Let me have two discrete random variables.
+
+609
+02:11:07,347 --> 02:11:11,347
+Ok, good.
+
+610
+02:11:11,347 --> 02:11:17,347
+Look at this distribution, let me look, ok, like this, here.
+
+611
+02:11:31,699 --> 02:11:32,492
+Tamam, tamam.
+
+612
+02:11:37,427 --> 02:11:39,427
+bu bir tane, ok?
+
+613
+02:11:40,927 --> 02:11:42,380
+bir tane
+
+614
+02:12:02,003 --> 02:12:18,699
+Bu bir
+
+615
+02:12:34,868 --> 02:12:43,868
+Which one is continuous? It is not about the shape of the signal, it is about the values, the number of values it may take.
+
+616
+02:12:43,868 --> 02:12:48,868
+Bu CDF'e baktığınızda kaç tane farklı değer alabilir y?
+
+617
+02:12:48,868 --> 02:12:55,868
+Y'nin alabileceği değer sayısı kaç? Şu CDF'e bakın bakalım.
+
+618
+02:12:55,868 --> 02:12:58,868
+3 tane. 3 tane, doğru.
+
+619
+02:12:58,868 --> 02:13:01,552
+Let's say this is y1.
+
+620
+02:13:01,551 --> 02:13:04,551
+y2 ve y3. Okay?
+
+621
+02:13:05,152 --> 02:13:09,152
+What is the number of values the random variable x may have?
+
+622
+02:13:09,952 --> 02:13:10,952
+Infinit.
+
+623
+02:13:10,952 --> 02:13:14,452
+Infinit, you see it is continuous. So,
+
+624
+02:13:16,551 --> 02:13:21,751
+the random variable y is a
+
+625
+02:13:24,551 --> 02:13:26,551
+is a discrete
+
+626
+02:13:28,243 --> 02:13:49,839
+random variable since the number of values the random variable y can take is only 3.
+
+627
+02:13:49,840 --> 02:14:07,600
+Bu, it is less than in finance. That is why y is discrete random variables. The random variable x is a continuous random variable.
+
+628
+02:14:12,948 --> 02:14:14,948
+Ok, continuous random variable.
+
+629
+02:14:16,948 --> 02:14:17,948
+Since,
+
+630
+02:14:18,948 --> 02:14:20,948
+the number of
+
+631
+02:14:36,180 --> 02:14:37,836
+It can take
+
+632
+02:14:41,619 --> 02:14:45,179
+is uncountably
+
+633
+02:14:48,467 --> 02:14:49,467
+İnfinite.
+
+634
+02:14:53,876 --> 02:15:02,876
+It means, random variable is, element may take values between 0 and infinity.
+
+635
+02:15:06,963 --> 02:15:15,224
+But the random variable y may have the values y1, y2 and y3.
+
+636
+02:15:19,475 --> 02:15:35,795
+Okay? So this is the CDF of continuous random variable. So this is the continuous, this is the CDF of continuous random variable. This is the CDF of discrete random variable.
+
+637
+02:15:44,787 --> 02:15:50,387
+This is the CDF of the script.
+
+638
+02:15:56,180 --> 02:16:08,180
+Rundum vera, okay? These are the difference. Okay, very good. Now, what is the probability density function?
+
+639
+02:16:11,667 --> 02:16:16,167
+Probabiliteti dönüştürülü.
+
+640
+02:16:26,612 --> 02:16:28,612
+In short is PDF.
+
+641
+02:16:32,211 --> 02:16:33,652
+is defined
+
+642
+02:16:43,188 --> 02:16:52,308
+as the differentiation of the CDF.
+
+643
+02:16:52,308 --> 02:17:02,988
+So, we say this is the, this is equal to differentiation.
+
+644
+02:17:08,628 --> 02:17:12,780
+Tamam, bu da bu da
+
+645
+02:17:18,131 --> 02:17:34,452
+The PDF of random variable x. What is this? The CDF of random variable x.
+
+646
+02:17:39,412 --> 02:17:40,412
+Ok?
+
+647
+02:17:53,427 --> 02:18:01,427
+From here what we have, look at now, this is the CDF.
+
+648
+02:18:07,860 --> 02:18:09,860
+Let me pull up the pdf.
+
+649
+02:18:11,860 --> 02:18:12,844
+One second.
+
+650
+02:18:17,523 --> 02:18:18,523
+Tamam.
+
+651
+02:18:20,324 --> 02:18:22,324
+Düşünüm, bu,
+
+652
+02:18:29,332 --> 02:18:32,332
+Let me write like this.
+
+653
+02:18:39,476 --> 02:18:53,132
+Bu, bu
+
+654
+02:18:57,268 --> 02:18:58,587
+Delta x.
+
+655
+02:18:58,587 --> 02:19:00,868
+What is this area?
+
+656
+02:19:07,028 --> 02:19:30,308
+This is the area. How can I compute this area? Integral from x to x plus delta x, f x dx. This is equal to area. Shaded area.
+
+657
+02:19:38,131 --> 02:19:39,131
+Okay?
+
+658
+02:19:40,932 --> 02:19:42,432
+What does it mean?
+
+659
+02:19:42,831 --> 02:19:46,831
+It means that it is equal to the probability that
+
+660
+02:19:49,031 --> 02:19:50,531
+the random variable
+
+661
+02:19:52,131 --> 02:19:56,031
+x is greater than and less than
+
+662
+02:20:00,244 --> 02:20:02,244
+Okay, this is also equal to
+
+663
+02:20:15,636 --> 02:20:32,636
+Okay? So, look, limit, delta x goes to zero. Okay, goes to zero, this integral.
+
+664
+02:20:41,203 --> 02:20:44,484
+turns into this one.
+
+665
+02:20:56,628 --> 02:21:13,628
+Neden? Çünkü, baktığınızda değerini bakın, fx'ın yaklaşık aynı, gördüğünüz gibi. Burada fx fonksiyonu sabit gibi, delta x çok çok küçük olunca buradaki fx sabit olacak değil mi? İntegralden dışarıya çıkar sabit olduğu için. Dolayısıyla bu da neye eşit?
+
+666
+02:21:23,283 --> 02:21:36,164
+Buradan birinci denklem şu, ikinci denklem bu, bu iki denklemden, gördüğünüz gibi bunlardan ne yazabilirim?
+
+667
+02:21:39,379 --> 02:21:42,319
+ve normalde yazabiliriz.
+
+668
+02:21:46,227 --> 02:21:47,687
+ve Obdain
+
+669
+02:21:51,412 --> 02:21:59,912
+Okay, limit delta x goes to zero integral.
+
+670
+02:22:05,940 --> 02:22:16,420
+is equal to fx delta, kank delta x, this is equal to fx,
+
+671
+02:22:20,852 --> 02:22:21,852
+Delta X
+
+672
+02:22:29,172 --> 02:22:54,972
+minus f x x. What we have? So f x x is equal to limit delta x goes to zero, correct? f x x plus delta x minus f x.
+
+673
+02:22:55,347 --> 02:23:16,547
+x divided by delta x. What is this? This is the differentiation of cdf with respect to x. So finally, f x, x is equal to d over dx, f x, x.
+
+674
+02:23:23,796 --> 02:23:24,796
+Ok?
+
+675
+02:23:26,796 --> 02:23:33,796
+The properties of PDF.
+
+676
+02:23:42,291 --> 02:23:43,291
+PDF.
+
+677
+02:23:45,811 --> 02:23:48,291
+PDF and CDF, yeah.
+
+678
+02:23:56,275 --> 02:24:22,716
+Okay, the first one, fx is always greater and positive for all x. Bütün x'in değerleri için ne olmak zorunda? Pozitif olmak zorunda aldı değer. Değil mi?
+
+679
+02:24:23,028 --> 02:24:26,028
+Birincisi bu. İkincisi
+
+680
+02:24:33,332 --> 02:24:43,332
+f x is defined as the probability x is less than x. This is in terms of integral.
+
+681
+02:24:50,131 --> 02:24:53,592
+Sorry, it must start from x.
+
+682
+02:24:56,592 --> 02:24:57,711
+The x
+
+683
+02:24:57,711 --> 02:25:04,931
+is
+
+684
+02:25:04,931 --> 02:25:06,131
+increasing
+
+685
+02:25:10,772 --> 02:25:13,692
+İng, reusing,
+
+686
+02:25:16,972 --> 02:25:18,772
+it is an increasing function,
+
+687
+02:25:21,172 --> 02:25:21,772
+since,
+
+688
+02:25:26,708 --> 02:25:28,708
+is always positive.
+
+689
+02:25:30,708 --> 02:25:32,587
+The second property,
+
+690
+02:25:35,731 --> 02:25:40,412
+Probabiliti A x b.
+
+691
+02:25:42,031 --> 02:26:00,780
+This is also equal to probability A x b.
+
+692
+02:26:04,884 --> 02:26:14,204
+ve bu, fxb times fx.
+
+693
+02:26:18,131 --> 02:26:27,131
+A, okay? This is another property. What is this? This is equal to integral A to B.
+
+694
+02:26:31,763 --> 02:26:32,763
+tx.
+
+695
+02:26:32,763 --> 02:26:35,763
+Another property.
+
+696
+02:26:39,092 --> 02:26:55,132
+X is a continuous random variable, then probability X equals C is 0.
+
+697
+02:26:57,852 --> 02:27:03,952
+Let me rewrite. Continuous random variable and
+
+698
+02:27:05,780 --> 02:27:08,180
+c is a constant.
+
+699
+02:27:11,180 --> 02:27:18,540
+Then, probability, the random variable x is equal to c is zero.
+
+700
+02:27:20,680 --> 02:27:29,380
+Tamam mı? Her zaman sabit bir sayı eşit olma olasılığı her zaman sıfırdır.
+
+701
+02:27:29,380 --> 02:27:30,360
+Niçin?
+
+702
+02:27:31,443 --> 02:27:56,883
+Çünkü sample space'te kaç tane elemanı vardı? Sonsuz bir tane değil değil mi? O zaman şey nedir? Her biri eşit olasılıklı olsa mesela öyle kabul edelim. Probability x dediğim zaman eşittir, c dediğim zaman ne olacak? Bu bir bölü sample space değil mi? Bu da sıfır olmuş oluyor zaten. Sıfıra gidiyor hemen.
+
+703
+02:27:59,507 --> 02:28:00,507
+Doğru mu?
+
+704
+02:28:03,507 --> 02:28:04,507
+Evet hocam.
+
+705
+02:28:06,507 --> 02:28:08,507
+Biz bunu geçen hafta anlattım mı bunu size?
+
+706
+02:28:13,459 --> 02:28:25,479
+Hmm? Yok hocam, anlatmadınız. Anlatmadım değil mi? Tamam. Kaç sayfa yazmışız ya? 140 sayfa yazmışız şu ana kadar. Neyse.
+
+707
+02:28:27,619 --> 02:28:35,899
+Okay, so this is the conclusion. These are the properties. We have also joint and marginal densities.
+
+708
+02:28:41,587 --> 02:28:45,948
+Let me write, joint and marginal densities.
+
+709
+02:29:03,252 --> 02:29:05,252
+ve marginal dağılım,
+
+710
+02:29:09,075 --> 02:29:13,075
+The joint cumulative distribution function of a random vector
+
+711
+02:29:28,275 --> 02:29:30,155
+distribution function
+
+712
+02:29:36,915 --> 02:29:41,515
+In other words, joint CDF.
+
+713
+02:29:43,515 --> 02:29:45,015
+Of a random vector.
+
+714
+02:29:51,924 --> 02:30:07,244
+So, this is, let's say, x and y. Bunu ayrı, diskrette görmüştük, değil mi? Random vector and joint distribution. Kontinüste de aynı tanıma sahip. Görmüştük.
+
+715
+02:30:07,244 --> 02:30:11,244
+Hmm? Görmüştük hocam.
+
+716
+02:30:19,827 --> 02:30:45,827
+ve y, x over y, y is, y is equal to probability, the random variable x is less than or equal to x and the random variable y is less than or equal to y. Okay? So this is the joint CDF.
+
+717
+02:30:46,579 --> 02:30:48,979
+The joint probability density function
+
+718
+02:31:06,579 --> 02:31:12,579
+We say, joint PDF.
+
+719
+02:31:12,579 --> 02:31:15,468
+Okay, is defined.
+
+720
+02:31:18,515 --> 02:31:19,515
+Fine.
+
+721
+02:31:19,515 --> 02:31:20,515
+How?
+
+722
+02:31:20,515 --> 02:31:27,515
+You will differentiate the joint CDF with respect to x and y.
+
+723
+02:31:27,515 --> 02:31:39,515
+So this is joint PDF is equal to differentiation.
+
+724
+02:31:39,515 --> 02:31:42,507
+Okay.
+
+725
+02:31:49,683 --> 02:31:50,443
+Like this.
+
+726
+02:31:54,291 --> 02:32:00,651
+ve here, we can find the marginal distributions, the marginal density of x.
+
+727
+02:32:13,876 --> 02:32:15,876
+is obtained as
+
+728
+02:32:20,147 --> 02:32:22,147
+bu pdf
+
+729
+02:32:22,147 --> 02:32:24,147
+x
+
+730
+02:32:24,147 --> 02:32:26,147
+bu pdf
+
+731
+02:32:26,147 --> 02:32:28,147
+x
+
+732
+02:32:28,147 --> 02:32:29,804
+yasak
+
+733
+02:32:33,012 --> 02:32:35,912
+ve joint PDF.
+
+734
+02:32:46,899 --> 02:32:49,220
+Marginal density of y
+
+735
+02:33:02,355 --> 02:33:07,675
+is obtained as
+
+736
+02:33:18,260 --> 02:33:23,860
+Minus, infinity, plus infinity, you integrate overall.
+
+737
+02:33:30,548 --> 02:33:34,508
+İntekler, bu, all x-dimension.
+
+738
+02:33:35,648 --> 02:33:36,648
+Further,
+
+739
+02:33:37,948 --> 02:33:40,208
+we can compute the probability,
+
+740
+02:33:40,208 --> 02:33:42,148
+for example, we say that
+
+741
+02:33:45,747 --> 02:33:47,148
+the probability,
+
+742
+02:33:47,388 --> 02:33:49,348
+computing probabilities,
+
+743
+02:33:58,004 --> 02:34:18,004
+Let's say probability, this is the vector, is element of a space. Let's say this one. This is equal to the integration.
+
+744
+02:34:22,451 --> 02:34:27,307
+Bu, bu
+
+745
+02:34:39,412 --> 02:34:41,412
+So, double integration.
+
+746
+02:34:43,092 --> 02:34:45,891
+These are the general formulas.
+
+747
+02:34:47,811 --> 02:34:52,051
+And what about the marginal CDF?
+
+748
+02:34:52,772 --> 02:34:54,772
+How can I find the marginal CDF?
+
+749
+02:35:08,500 --> 02:35:30,700
+So, look now, this is the marginal CDF, this is equal to integral minus infinity to x integral minus infinity to plus infinity.
+
+750
+02:35:35,796 --> 02:35:50,436
+dxdy, it means that, this is the joint CDF, this is x and the y is infinite.
+
+751
+02:35:54,611 --> 02:35:57,011
+What about the marginal CDF-05?
+
+752
+02:36:04,371 --> 02:36:24,131
+is obtained as, so this is the y, is equal to minus infinity to plus infinity and minus infinity to y.
+
+753
+02:36:28,531 --> 02:36:30,932
+x, y, d, x
+
+754
+02:36:35,572 --> 02:37:01,012
+dx dy, and this is equal to, from joint mgf, you put in infinite x and y. Okay, so it is easier to find, if you know the joint cdf, you can find the joint, you can find the marginal cds very easily by substituting the values, by substituting the infinite values.
+
+755
+02:37:01,492 --> 02:37:05,992
+to the variables you want to get rid of, okay?
+
+756
+02:37:08,992 --> 02:37:10,492
+What about this one?
+
+757
+02:37:16,628 --> 02:37:18,316
+Bu ne?
+
+758
+02:37:23,412 --> 02:37:24,363
+Huh?
+
+759
+02:37:27,412 --> 02:37:34,796
+Bir, evet, çok iyi. Teşekkürler. Çok iyi bir konclusiyon. Bu değerlerden ne?
+
+760
+02:37:45,620 --> 02:37:47,620
+Bu bir şeyin?
+
+761
+02:37:48,620 --> 02:37:49,620
+0.
+
+762
+02:37:49,620 --> 02:37:51,372
+0, evet.
+
+763
+02:38:17,587 --> 02:38:19,587
+Bu dağda izleliyiz?
+
+764
+02:38:21,587 --> 02:38:24,587
+İş, nabiliyum, indir ve varansı.
+
+765
+02:38:28,755 --> 02:38:32,755
+Bu, bu, 0'e 0'e 0'e?
+
+766
+02:38:32,755 --> 02:38:37,755
+1'e 1'e?
+
+767
+02:38:37,755 --> 02:38:40,755
+Hayır, 0'e 0'e.
+
+768
+02:38:52,020 --> 02:38:56,020
+ve bu 0
+
+769
+02:39:01,971 --> 02:39:15,971
+Yani bir rastgele değişkenin, what is this? This is the probability that the random variable x is less than minus infinity.
+
+770
+02:39:15,971 --> 02:39:27,971
+Yani x rastgele değişkeninin eksi sonsuzdan küçük olma olasılığı nedir? Olamaz, sıfır. Bu da y rastgele değişkeninin eksi sonsuzdan küçük olma olasılığı. Eksi sonsuzdan küçük olabilir mi bir şey?
+
+771
+02:39:29,268 --> 02:39:35,268
+Zaten eksi sonsuz en küçük olan şey. Dolayısıyla onun olasılıklısı. Tamam?
+
+772
+02:39:36,268 --> 02:39:37,268
+Good.
+
+773
+02:39:41,332 --> 02:39:43,932
+Expectation, varian, covarian,
+
+774
+02:39:43,932 --> 02:39:48,092
+Expectation,
+
+775
+02:39:53,907 --> 02:39:55,627
+expectece...
+
+776
+02:40:01,268 --> 02:40:02,763
+Bayes,
+
+777
+02:40:06,131 --> 02:40:14,131
+Sizle de soru seti paylaşmıştım, hatırlıyorsunuz değil mi?
+
+778
+02:40:16,131 --> 02:40:17,131
+Evet.
+
+779
+02:40:17,131 --> 02:40:30,131
+O soru seti çözmeye çalışın, mümkün olduğunca. Çözün çünkü sınavda aksiyalda yapamazsınız. Çünkü soru sayısı fazla, zaman çok az olacak.
+
+780
+02:40:33,780 --> 02:40:38,780
+Çok fazla soru olacak. Yani her bir soruyu 30 saniye içinde çözeceksin.
+
+781
+02:40:43,924 --> 02:41:06,924
+Bilmiyorum, öyle düşünüyorum ben. Sorular zor olabilir. Yani 30 saniyede çözebiliyor olmanız lazım. Çözüp bir sonrakine geçeceksin, çözüp bir sonrakine geçeceksin ve ondan sonra çözümlerinizi de PDF'e yazıp göndereceksiniz. Sorular da kullanıcı numarasıyla değişiyor olacak.
+
+782
+02:41:08,275 --> 02:41:14,275
+soruların parametreleri değişiyor kullanıcılarla. Öyle düşünüyorum.
+
+783
+02:41:16,275 --> 02:41:17,275
+Tamam.
+
+784
+02:41:35,219 --> 02:41:36,876
+Of your continuous.
+
+785
+02:41:43,443 --> 02:41:45,420
+Rundam variable X.
+
+786
+02:41:53,427 --> 02:41:55,027
+is defined by
+
+787
+02:42:01,139 --> 02:42:09,779
+or given by, okay? So this is the expectation. Random variable is equal to.
+
+788
+02:42:14,995 --> 02:42:30,455
+Overall values, x time, probably f, x time cdf, dx. Do you remember this discrete version?
+
+789
+02:42:32,595 --> 02:42:34,935
+Integral yerini sigma kullanmıştık.
+
+790
+02:42:34,935 --> 02:42:37,555
+Yes, so it was like this.
+
+791
+02:42:43,540 --> 02:42:50,140
+Overall, xk, all the values, xk times probability.
+
+792
+02:42:53,459 --> 02:42:54,411
+Ok?
+
+793
+02:43:06,036 --> 02:43:26,316
+Bu, bu
+
+794
+02:43:26,451 --> 02:43:33,971
+ve probability of x is equal to xk, here is the possibility of x, so the pdf of x.
+
+795
+02:43:34,931 --> 02:43:37,171
+And then this is the expectation, okay?
+
+796
+02:43:40,051 --> 02:43:41,331
+The variance of
+
+797
+02:43:45,427 --> 02:43:49,788
+ve varyans
+
+798
+02:43:56,628 --> 02:44:02,727
+of a continuous, random variable.
+
+799
+02:44:08,084 --> 02:44:15,463
+x is given by, okay?
+
+800
+02:44:15,463 --> 02:44:23,524
+We say that the variance of x
+
+801
+02:44:27,028 --> 02:44:29,028
+So this is equal to,
+
+802
+02:44:34,227 --> 02:44:36,227
+expected value of,
+
+803
+02:44:37,988 --> 02:44:41,028
+x minus expected value of x,
+
+804
+02:44:42,227 --> 02:44:43,227
+square.
+
+805
+02:44:44,508 --> 02:44:46,788
+So I can write this,
+
+806
+02:44:47,668 --> 02:44:49,828
+minus infinity to plus infinity,
+
+807
+02:44:50,548 --> 02:44:54,188
+small x minus expected value of x,
+
+808
+02:44:55,507 --> 02:45:03,507
+ve pdf'in kısımları, ve pdf'in kısımları, ve pdf'in kısımları, ok?
+
+809
+02:45:05,268 --> 02:45:11,507
+So x minus expected value of x can be expanded.
+
+810
+02:45:22,708 --> 02:45:28,468
+Ok, when you substitute it here, what you will have, you will obtain this one.
+
+811
+02:45:37,172 --> 02:45:38,172
+Minus
+
+812
+02:45:44,051 --> 02:45:46,051
+So, what is this?
+
+813
+02:45:47,051 --> 02:45:48,051
+Expected value.
+
+814
+02:46:00,531 --> 02:46:09,531
+You see, the variance has the same definition, similar to the discrete random variable.
+
+815
+02:46:09,531 --> 02:46:18,123
+But summation is replaced by integration. That is almost similar. What about the covariance?
+
+816
+02:46:24,308 --> 02:46:25,868
+Bu, covaliyence.
+
+817
+02:46:33,427 --> 02:46:35,468
+ve ayrıca, bu iki
+
+818
+02:46:41,172 --> 02:46:44,011
+of two continuous random variables.
+
+819
+02:46:54,227 --> 02:47:00,547
+let's say x and y is defined by
+
+820
+02:47:05,108 --> 02:47:10,427
+HAL, like covariance, x and y.
+
+821
+02:47:21,907 --> 02:47:37,907
+covalence x and y. This is equal to expected of x minus expected value of x, y minus expected value of y.
+
+822
+02:47:41,556 --> 02:47:43,556
+And this is equal to...
+
+823
+02:47:47,700 --> 02:48:03,540
+This is equal to what? Expected value of x times y minus expected value of x times expected value of y.
+
+824
+02:48:03,540 --> 02:48:14,260
+In terms of integral minus infinity to plus infinity, minus infinity to plus infinity x y.
+
+825
+02:48:15,028 --> 02:48:29,028
+And this is the joint PDF dx dy, ok?
+
+826
+02:48:30,028 --> 02:48:37,028
+Minus expected value of x times expected value of y.
+
+827
+02:48:41,652 --> 02:48:57,011
+Okay? So here if x and y are two independent.
+
+828
+02:49:00,788 --> 02:49:16,788
+random variable continues, random variables, then what we have,
+
+829
+02:49:22,131 --> 02:49:23,755
+Bu yüzeyde.
+
+830
+02:49:27,188 --> 02:49:34,387
+This is equal to product of marginal densities.
+
+831
+02:49:39,731 --> 02:49:40,652
+Tamam.
+
+832
+02:49:43,891 --> 02:49:45,451
+Bu durumda
+
+833
+02:49:49,523 --> 02:50:14,403
+Covariance x y simplifies more such that, ok, Covariance x y is equal to,
+
+834
+02:50:30,067 --> 02:50:31,067
+Minus
+
+835
+02:50:31,067 --> 02:50:34,067
+One second
+
+836
+02:51:10,963 --> 02:51:12,876
+Okay, minus.
+
+837
+02:51:21,587 --> 02:51:26,587
+ve bu integralı, bu integralı, bu iki integralı, bu iki integralı,
+
+838
+02:51:57,299 --> 02:51:58,859
+So, this is equal to?
+
+839
+02:52:12,404 --> 02:52:14,404
+Result is 0.
+
+840
+02:52:15,764 --> 02:52:16,804
+Means,
+
+841
+02:52:18,004 --> 02:52:19,204
+mean stat,
+
+842
+02:52:21,764 --> 02:52:23,204
+x and y is,
+
+843
+02:52:27,123 --> 02:52:32,523
+are to uncorrelated,
+
+844
+02:52:36,915 --> 02:52:39,475
+Random, Continuous Random, velay olsun.
+
+845
+02:52:48,724 --> 02:52:49,548
+Ok?
+
+846
+02:52:54,804 --> 02:52:58,404
+Bir de üniversiteye girişimler var.
+
+847
+02:53:04,275 --> 02:53:12,595
+Any questions you know? Do you know the correlation coefficient? Hmm?
+
+848
+02:53:16,435 --> 02:53:19,155
+We already know that correlation coefficient
+
+849
+02:53:21,396 --> 02:53:30,515
+is defined as covariance of x and y divided by square root variance of x
+
+850
+02:53:32,084 --> 02:53:34,084
+varansı y.
+
+851
+02:53:36,084 --> 02:53:46,084
+So, this is the correlation coefficient, and it is between minus 1 and plus 1.
+
+852
+02:53:46,084 --> 02:53:47,084
+Okay?
+
+853
+02:53:48,084 --> 02:53:49,084
+Then,
+
+854
+02:53:57,363 --> 02:54:11,923
+When Rho xy is equal 0, then x and y are uncorrelated.
+
+855
+02:54:17,780 --> 02:54:19,436
+Uncorrelation
+
+856
+02:54:24,468 --> 02:54:25,368
+Doz not.
+
+857
+02:54:29,108 --> 02:54:34,308
+does not mean independence.
+
+858
+02:54:38,067 --> 02:54:39,659
+İndependence
+
+859
+02:54:43,476 --> 02:54:44,855
+Menos
+
+860
+02:54:48,852 --> 02:54:52,172
+İndependence means, and correlation.
+
+861
+02:54:56,211 --> 02:54:57,211
+Tamam mı?
+
+862
+02:54:59,811 --> 02:55:03,211
+If, çok önemli bir note, if...
+
+863
+02:55:09,332 --> 02:55:27,072
+Very important note, I have to write in red. If the continuous random variable is a Gaussian, in other words, normal.
+
+864
+02:55:32,084 --> 02:55:36,783
+random variable, or we say follows.
+
+865
+02:55:43,924 --> 02:55:45,924
+follows
+
+866
+02:55:47,924 --> 02:55:48,924
+caution
+
+867
+02:55:52,340 --> 02:55:56,340
+Normal, Distribution,
+
+868
+02:56:02,675 --> 02:56:13,275
+Random variables. Kafam karıştı ya, bunu bu şekilde yazalım. Delete. Random variables x and y.
+
+869
+02:56:21,811 --> 02:56:35,811
+Follow Gaussian normal distribution, then uncorrelation means,
+
+870
+02:56:40,340 --> 02:56:44,620
+İndependence,
+
+871
+02:56:48,468 --> 02:56:52,067
+ve independeniz.
+
+872
+02:56:58,195 --> 02:57:01,396
+means uncorredation.
+
+873
+02:57:04,755 --> 02:57:25,835
+Anlaşıldı mı? X ve Y rastgele değişkenleri Gauss dağılımlıysa, şöyle dedik, X ve Y uncorrelated sinyal, aynı zamanda ne oluyor X ve Y? Independent, bağımsız oluyor. Çünkü X ve Y Gauss dağılımlı. X ve Y Gauss dağılımlıysa,
+
+874
+02:57:26,260 --> 02:57:48,380
+X ve Y uncorrelated ise, bu aynı zamanda X ve Y'nin bağımsız olduğunu, independent olduğunu söylemek. Ama, altını çiziyorum, X ve Y veya işlerinden herhangi bir tanesi, Gauss değilse, tamam mı? X ve Y, X ve Y'den herhangi biri Gauss değil ise,
+
+875
+02:57:49,843 --> 02:58:15,263
+X ve Y uncorrelated, yani ilişkisiz ise X ve Y bağımsızdır diyemezsiniz. Ama her zaman X ve Y ne olursa olsun bağımsızsa X ve Y uncorrelated, yani ilişkisizdir diyebilirsiniz. Bu çok önemli. Bu da kim tekrarlayacak? Evet, hemen bir şanslı seçelim. [öğrenci]. Evet, [öğrenci].
+
+876
+02:58:24,788 --> 02:58:28,288
+Sen cevap gelmedi. [öğrenci].
+
+877
+02:58:32,948 --> 02:58:34,948
+[öğrenci], derste misin?
+
+878
+02:58:34,948 --> 02:58:36,948
+Evet hocam, buyurun.
+
+879
+02:58:36,948 --> 02:58:47,948
+Söyle bakayım, benim tekrarladığımı yap bakayım. Konu neydi? X ve Y rastgele değişkenleri, kaos dağılımlıysa ve bunlar ilişkisizse aynı zamanda ne oluyor?
+
+880
+02:58:47,948 --> 02:58:50,948
+Anlamadım.
+
+881
+02:58:55,379 --> 02:58:56,379
+Can I say?
+
+882
+02:58:57,379 --> 02:58:58,379
+Yes.
+
+883
+02:58:58,379 --> 02:58:59,379
+Hocam şey de…
+
+884
+02:58:59,379 --> 02:59:02,379
+Bir saniye, [öğrenci]'ı üretmez.
+
+885
+02:59:02,379 --> 02:59:03,379
+Evet hocam.
+
+886
+02:59:03,379 --> 02:59:19,379
+Sen kurallara uymuyorsun, tamam mı? Bak kurallara uyman lazım. Kurallara uymazsan puan alamazsın. Ne ödevlerinde, ne başka şeyde, ne sınavda. Kurala uyacaksın, öğreneceksin bu kurallara uymayı, tamam mı? Evet, kim söyleyecekti?
+
+887
+02:59:19,379 --> 02:59:21,379
+Ben söyleyecektim hocam.
+
+888
+02:59:21,379 --> 02:59:22,379
+Dinliyorum.
+
+889
+02:59:23,152 --> 02:59:30,652
+Hocam, eğer independence oluyorsa, bunun uncorrelation olduğunu kesin söylüyoruz. Eğer bu ikisi, Gauss'un distribüsünü takip etmiyorsa her ikisi de.
+
+890
+02:59:30,652 --> 02:59:32,152
+Evet, ama uncorrelation…
+
+891
+02:59:32,152 --> 02:59:37,031
+Teşke de etmese de söylüyoruz. Yani independence, yani bağımsızlık demek, ilişkisiz demek.
+
+892
+02:59:37,391 --> 02:59:41,511
+Evet, ama bunun tersi doğru olmuyor hocam, eğer ikisi de Gauss'un distribüsünü takip etmiyorsa.
+
+893
+02:59:42,191 --> 02:59:44,292
+Kesinlikle. Çok güzel. Teşekkür ederim.
+
+894
+02:59:44,912 --> 02:59:50,511
+Şimdi gençler, şu an itibariyle dersi bitirdik.
+
+895
+02:59:51,028 --> 02:59:59,028
+Örnek yapardım, isterseniz yapabilirim. Uniform Distribution ile ilgili bir PDF, CDF varyans hesabı yapabilirim.
+
+896
+02:59:59,028 --> 03:00:01,028
+Hocam, bir faryans varsa.
+
+897
+03:00:01,028 --> 03:00:04,028
+Çok iyi olur hocam.
+
+898
+03:00:04,028 --> 03:00:05,028
+He?
+
+899
+03:00:05,028 --> 03:00:07,028
+Çok iyi olur hocam, örnek yaparsanız.
+
+900
+03:00:07,028 --> 03:00:08,028
+Tamam mı?
+
+901
+03:00:08,028 --> 03:00:09,028
+Tamam.
+
+902
+03:00:09,028 --> 03:00:10,028
+Efendim?
+
+903
+03:00:11,347 --> 03:00:14,747
+Daha iyi olur hocam, oturur bir iki örnek daha yaparsak.
+
+904
+03:00:14,747 --> 03:00:19,148
+Yani şöyle yapalım, bir tane uniform dağılımla ilgili bir örnek yapalım.
+
+905
+03:00:21,148 --> 03:00:26,347
+Hocam, şimdi benim dörtte dersim başladı da çıksan herhangi bir sene.
+
+906
+03:00:26,347 --> 03:00:27,948
+Tamam, sen dörtteki dersine git o zaman.
+
+907
+03:00:27,948 --> 03:00:28,948
+Teşekkürler hocam.
+
+908
+03:00:28,948 --> 03:00:32,347
+Dörtteki dersine git, videodan izlersin artık.
+
+909
+03:00:32,347 --> 03:00:34,548
+Tamam hocam, teşekkürler, iyi günler.
+
+910
+03:00:34,548 --> 03:00:35,548
+İyi günler.
+
+911
+03:00:35,548 --> 03:00:38,148
+Gençler, ders olanlar gidebilir.
+
+912
+03:00:40,244 --> 03:00:46,644
+Tamam? Mesela şuradan bir örnek yapayım. Örnek yapalım.
+
+913
+03:00:46,644 --> 03:00:54,044
+Families of Continuous
+
+914
+03:00:59,188 --> 03:01:07,188
+random variables, okay? Uniform or distributions, it is good to use distributions.
+
+915
+03:01:17,907 --> 03:01:19,691
+Uniform distribution.
+
+916
+03:01:28,020 --> 03:01:30,020
+Hiç duydunuz mu onu daha önceden?
+
+917
+03:01:38,548 --> 03:01:40,708
+Bir ara bahsetmiştik galiba ama.
+
+918
+03:01:49,459 --> 03:02:07,459
+Uniform Distribution şöyle bir şey, bir tane rastgele değişken var. Bu rastgele değişken A ve B aralığında dağılıyor ve A ile B aralığındaki her bir değerin,
+
+919
+03:02:16,244 --> 03:02:31,244
+İşitti galiba. Probabilis olasılık da, possibility. Mümkün, alabileceği mümkünlik, nasıl? Olabilirliği, olabilirliği, evet. Olabilirliği aynı.
+
+920
+03:02:31,244 --> 03:02:42,244
+Hocam bu aslında Equally Likely Outcomes. Evet, yes. Equally Likely Outcomes. Yani olabilirliği aynı. Tamam mı?
+
+921
+03:02:42,515 --> 03:02:53,515
+Yani posibilitenin tam Türkçe karşılığı olabilirlilik, probability de olasılık. Şimdi uniform rastgele değişken, let,
+
+922
+03:02:59,603 --> 03:03:05,423
+Let x be a uniform
+
+923
+03:03:09,587 --> 03:03:11,307
+random variable
+
+924
+03:03:15,763 --> 03:03:16,763
+Varayval.
+
+925
+03:03:20,915 --> 03:03:33,995
+representing, present, representing, the outcome of an experiment.
+
+926
+03:03:47,412 --> 03:03:49,812
+seçeneği,
+
+927
+03:03:58,036 --> 03:04:10,756
+choosing a real number at random.
+
+928
+03:04:15,156 --> 03:04:33,656
+Or, randomly, at random, bazen at random deriz, bazen randomly, tamam mı? At random or randomly. At random adverb, randomly, we can use also randomly, randomly from the interval.
+
+929
+03:04:37,299 --> 03:05:00,099
+İnter, let's say a and b. Okay, you choose randomly, but how you choose? Equally likely you choose, okay? Equally likely you choose. Actually, it means that the probability density function is like this.
+
+930
+03:05:11,667 --> 03:05:14,467
+Bu A ve B'ye bu.
+
+931
+03:05:21,427 --> 03:05:32,147
+Here is equal to what? 1 over e minus a. What is the area here?
+
+932
+03:05:44,084 --> 03:06:09,676
+Bu, bu
+
+933
+03:06:11,540 --> 03:06:25,860
+A to B, 1 over B minus A, Bx, is equal to x divided by B minus A, from A to B.
+
+934
+03:06:25,860 --> 03:06:35,380
+So this is equal to B over B minus A minus A over B minus A.
+
+935
+03:06:35,380 --> 03:06:37,140
+And then,
+
+936
+03:06:38,644 --> 03:06:39,644
+Result is
+
+937
+03:06:43,924 --> 03:06:48,164
+B minus a divided by b minus a, and this is equal to 1.
+
+938
+03:06:50,244 --> 03:06:52,004
+Okay, so the area is 1.
+
+939
+03:06:53,123 --> 03:06:54,164
+What we know...
+
+940
+03:06:57,587 --> 03:07:07,788
+The total area under the PDF.
+
+941
+03:07:13,236 --> 03:07:14,412
+maski
+
+942
+03:07:17,587 --> 03:07:19,587
+Yeni, bir şey.
+
+943
+03:07:25,683 --> 03:07:27,683
+bu çok önemli
+
+944
+03:07:27,683 --> 03:07:28,683
+ok
+
+945
+03:07:28,683 --> 03:07:29,683
+yazık fx
+
+946
+03:07:29,683 --> 03:07:31,683
+in terms of piecewise function
+
+947
+03:07:31,683 --> 03:07:32,683
+yes
+
+948
+03:07:32,683 --> 03:07:34,683
+so this is the fx
+
+949
+03:07:35,683 --> 03:07:36,683
+look at
+
+950
+03:07:36,683 --> 03:07:38,155
+is equal to
+
+951
+03:07:43,219 --> 03:07:45,219
+This is the PDF.
+
+952
+03:07:47,860 --> 03:07:49,860
+This is equal to what?
+
+953
+03:07:51,860 --> 03:08:02,899
+1 over b minus a if x is element of ab.
+
+954
+03:08:04,180 --> 03:08:05,539
+Otherwise,
+
+955
+03:08:08,659 --> 03:08:12,659
+0. Bu, bu pdf.
+
+956
+03:08:21,556 --> 03:08:46,667
+Marginal PDF, PDF of Uniform X. Ok, what about the CDF? The CDF, X is, so I said like this, by definition this is the probability.
+
+957
+03:08:48,852 --> 03:08:53,852
+ve bu, integral, minus infinity to x.
+
+958
+03:08:53,852 --> 03:08:55,852
+What else? Integral.
+
+959
+03:08:55,852 --> 03:08:56,852
+Integral.
+
+960
+03:09:01,620 --> 03:09:14,620
+Ok, when we substitute this function here, we obtain this one. Can you tell me?
+
+961
+03:09:15,620 --> 03:09:18,620
+Doğrusal bir çizgi oluyor galiba.
+
+962
+03:09:20,620 --> 03:09:27,620
+Yes, it must be like that.
+
+963
+03:09:29,363 --> 03:09:50,664
+So, CDF is equal to, when I integrate if x is less than a, it is zero, because the integration from minus infinity to some value, it is less than a, it is zero.
+
+964
+03:09:56,051 --> 03:10:00,000
+So, it is 0. If it is between a and b,
+
+965
+03:10:13,587 --> 03:10:17,087
+Bu, bazı değerlerden de var.
+
+966
+03:10:23,636 --> 03:10:38,036
+This is integral from a to x, 1 over b minus a dx. Okay? Or du, we can say.
+
+967
+03:10:45,523 --> 03:10:47,523
+du. Ok?
+
+968
+03:10:48,523 --> 03:10:55,523
+So, if x is greater than b,
+
+969
+03:11:00,852 --> 03:11:04,051
+So, this is equal to integral from a to b.
+
+970
+03:11:23,987 --> 03:11:25,451
+ne var?
+
+971
+03:11:28,852 --> 03:11:54,700
+The first one is zero, the second one is x minus a divided by b minus a and the last one is one. So this is if x is less than a if x is between a and b and if
+
+972
+03:11:54,963 --> 03:11:57,184
+x is greater than b.
+
+973
+03:11:59,524 --> 03:12:03,904
+So this is the CDF of uniform distribution.
+
+974
+03:12:05,704 --> 03:12:07,684
+What about the expected value?
+
+975
+03:12:12,788 --> 03:12:16,667
+Bakın, bu bir expecti value.
+
+976
+03:12:17,628 --> 03:12:19,988
+Bu, bu bir sümmetrik.
+
+977
+03:12:19,988 --> 03:12:21,608
+Bu, bir expecti value.
+
+978
+03:12:21,608 --> 03:12:23,828
+A plus B divided by 2.
+
+979
+03:12:23,948 --> 03:12:25,968
+Bu, an ve a and b.
+
+980
+03:12:26,927 --> 03:12:27,528
+Let's see.
+
+981
+03:12:29,288 --> 03:12:30,507
+By definition.
+
+982
+03:12:39,092 --> 03:12:41,092
+Okay? This is equal to...
+
+983
+03:12:47,827 --> 03:12:58,147
+This is from a to b, x. What is the value? x minus a divided by b minus a, dx.
+
+984
+03:13:01,587 --> 03:13:29,027
+Okay, and this is equal to 1 minus BA times x squared, 1 second. I wrote something wrong, 1 second. This is not, this, the PDF is this.
+
+985
+03:13:33,332 --> 03:13:42,452
+So, this is equal to 1 minus b minus a integral a to b x dx. So, the result is
+
+986
+03:13:46,004 --> 03:14:13,404
+1 over b minus a, x squared divided by 2, a to b. So this is b squared minus a squared divided by 2 times b minus a. You can simplify a plus b divided by 2. So this is the expected value of x, uniform distribution.
+
+987
+03:14:36,724 --> 03:14:55,948
+X squared, okay? And f, so this is equal to 1 minus b minus a integral a to b x squared dx. So the result is?
+
+988
+03:15:10,868 --> 03:15:11,948
+A to B
+
+989
+03:15:18,739 --> 03:15:37,739
+What is this result? A minus B times A squared plus AB minus plus B squared divided by three times. Sorry, it must be B minus.
+
+990
+03:15:52,115 --> 03:15:57,675
+Tamam mı? Ve variyansı,
+
+991
+03:16:38,164 --> 03:16:57,364
+Okay, the variance is expected value of x squared minus, so from here you will find it, b minus a squared divided by 12. Okay, you can find it.
+
+992
+03:16:59,923 --> 03:17:03,684
+This is one result, this is another result.
+
+993
+03:17:05,139 --> 03:17:07,299
+So, this is another result.
+
+994
+03:17:09,059 --> 03:17:10,500
+This is another result.
+
+995
+03:17:10,899 --> 03:17:12,099
+And this is another one.
+
+996
+03:17:12,659 --> 03:17:15,939
+So, these are the very good results
+
+997
+03:17:16,899 --> 03:17:22,340
+to find mean variance, PDF and CDF
+
+998
+03:17:22,340 --> 03:17:24,819
+of uniform random variables, okay?
+
+999
+03:17:28,420 --> 03:17:31,139
+We have also the exponential random variable.
+
+1000
+03:17:31,731 --> 03:17:41,531
+Bu da bir örneğin için bir örnek yapabiliriz. Ama burada duracağım. Tamam mı gençler?
+
+1001
+03:17:41,531 --> 03:17:50,531
+Güzel bir başlangıç oldu, integral olarak. Tamam mı? Şimdi buradan...
+
+1002
+03:17:52,932 --> 03:17:54,531
+Buradan...
+
+1003
+03:17:57,231 --> 03:17:59,131
+Bir şey yapalım.
+
+1004
+03:17:59,252 --> 03:18:01,992
+Şimdi WhatsApp grubuna üye olmayanlar kimler?
+
+1005
+03:18:02,992 --> 03:18:04,211
+Hocam ben varım.
+
+1006
+03:18:06,211 --> 03:18:09,891
+[öğrenci] sen misin? Başka var mı senden başka?
+
+1007
+03:18:09,891 --> 03:18:10,891
+Bilmiyorum.
+
+1008
+03:18:11,612 --> 03:18:14,112
+Tamam bana WhatsApp'tan mesaj at.
+
+1009
+03:18:15,792 --> 03:18:18,112
+Numaranızı arkadaştan alıyorum zaten.
+
+1010
+03:18:18,891 --> 03:18:23,051
+Tamam alabilirsin. Bana WhatsApp'tan mesaj atarsın, okul numaranı atarsın.
+
+1011
+03:18:23,507 --> 03:18:38,907
+Veya bunun gibi başka arkadaşlarınız varsa WhatsApp'tan atsınlar bana mesaj ama benim dersi almak zorundalar. Benim dersi almayanları kontrol edeceğim bugün. Herkes gruba okul numarasını yazsın lütfen. Tamam mısın?
+
+1012
+03:18:38,907 --> 03:18:40,907
+Tamam mısın?
+
+1013
+03:18:40,907 --> 03:18:51,308
+Yani herkes, ben bugün akşam isteyeceğim, herkes WhatsApp grubunda okul numarasını yazacak. Bakalım.
+
+1014
+03:18:51,443 --> 03:19:01,943
+Herkes yazacak, ben onları konsol edeceğim. Burada durduruyorum, önümüzdeki hafta sınav var. Whatsapp grubundan istediğiniz soruları sorabilirsiniz.
+
+1015
+03:19:01,943 --> 03:19:08,943
+Anlamadığınız noktalar olursa sorabilirsiniz, elimden geldiğince cevap vermeye çalışırım arkadaşlar.
+
+1016
+03:19:08,943 --> 03:19:13,943
+Lütfen iyi hazırlanın sınava.
+
+1017
+03:19:15,156 --> 03:19:22,156
+Bilgi ölçen bir sınav olacak. Eğer çalışmadıysanız, konuları anlamadıysanız yapamazsınız. Dikkat edin. Tamam?
+
+1018
+03:19:23,156 --> 03:19:32,156
+Hocam, ben bir şey soracaktım. Mesela sınav modülünde soruları arda döküleceksiniz. Biz de bakıp çözümlü kağıda yapıp o kağıtları toplu bir şekilde döküleceğiz değil mi hocam?
+
+1019
+03:19:32,156 --> 03:19:40,156
+Ben, yani şöyle bir şey, şöyle de olabilir sınav. Soruları veririz. Çözeceksiniz.
+
+1020
+03:19:41,203 --> 03:20:03,203
+Fotoğrafını çekip göndereceksiniz. Öyle de olabilir. Tamam. Ama tek bir PDF olarak göndereceksiniz. Birden fazla PDF, şu bu falan gönderirseniz, kesinlikle değerlendirmiyorum. Sıfır almış olursunuz. Sınava girmiş sayılmazsınız, onu söyleyeyim. Kurallara uymanız lazım. Bu dersi ben anlatıyorum, bu dersin kurallarını ben koyuyorum. Tamam mı?
+
+1021
+03:20:09,299 --> 03:20:35,299
+Yani, quizde ismini yazmayan arkadaşlarınız var. Biz dedik bunu. Whatsapp grubunda uyardım. Usus ile mail attım, uyardım. Sınavdan önce derste uyardım. Süre az diye uyardım. Bakın hemen yükleyin. Gerçi süre çok boldu da. Hemen yapın, gönderin dedim. Demek ki yapıp zamanında gönderemiyorsan büyük ihtimal arkadaşından aldın da yaptın.
+
+1022
+03:20:35,924 --> 03:20:55,924
+Ve o yüzden zaman yetmedi. Ve şunu söyleyeceğim, quizlerde bazı hatalar tekrarlanmış bazı kişilerde. Bu kopya çektiği anlamına gelir o arkadaşlarınızın. Onunla ilgili özel inceleme yapacağım, onu da söyleyeyim bakın. Ben hiç sevmem kopya çekenleri. Hiç sevmem.
+
+1023
+03:21:02,100 --> 03:21:09,600
+Demek ki hırsızlık yapacaksınız. Ben size söylemiyorum, kopya çekenlere söylüyorum. Hoş bir şey değil yani.
+
+1024
+03:21:14,299 --> 03:21:19,100
+O yüzden kopya çekmeyin. Kopya çekmek doğru bir şey değil, yanlış bir şey.
+
+1025
+03:21:19,100 --> 03:21:28,971
+Sakın ha, şöyle aynı zamanda siz mühendis olacaksınız, helalinden mühendis olun.
+
+1026
+03:21:30,131 --> 03:21:44,131
+Yani kazandığınız paralar helal olsun. Değil mi? Kopya çekerek harama bulaşmayın. Başkasının hakkını yemeyin yani. Çünkü günün sonunda çanayelisi yapacağız. Kopya çekenler diğer arkadaşlarının hakkına geçmiş oluyor.
+
+1027
+03:21:44,131 --> 03:21:53,119
+Yani şöyle bir şey, alması gereken notunun üzerinden daha yüksek alınca belki diğer arkadaşı kalacak onun yüzünden. Kopya çektiği için.
+
+1028
+03:21:53,120 --> 03:21:58,680
+Kendisi kalacakken diğer arkadaşı kalıyor. Bu da kul hakkı demek. Tamam? Buna dikkat edin.
+
+1029
+03:21:58,680 --> 03:22:10,120
+Ondan sonra sorularınız olursa WhatsApp grubundan yazın, çekinmeyin. Bak bizler arkadaşız, sizler mühendis olacaksınız. Amacımız ne? Sizleri daha iyi yetiştirmek.
+
+1030
+03:22:10,548 --> 03:22:24,048
+ve olasılık teorisine çok önem verin. Bu hayatınızın en önemli dersi. Yani bilgisayar mühendisi olmak istiyorsanız, olasılık teorisini çok iyi bileceksiniz, istatistik teorisini çok iyi bileceksiniz.
+
+1031
+03:22:24,048 --> 03:22:36,548
+Ondan sonra yazılımını geliştir, işte makine öğrenmesi, algoritmalarını öğren, işte Naive Bios'u öğren, Decision Tree'i öğren, Reinforcement Learning'i öğren.
+
+1032
+03:22:36,783 --> 03:23:01,783
+O algoritmaları öğren, deep learning'i öğren, yapay zekayı öğren ama öncesinde olasılık ve istatistik çok iyi bilmen lazım. Bunları bilmiyorsan zaten onları da anlayamazsın. Artı bir de çok iyi yazılımcı olman lazım değil mi? C'de kodlayabilmen lazım, Matlab'de kodlayabilmen lazım, Java'da kodlayabilmen lazım, Python'da kod yazabilmen lazım.
+
+1033
+03:23:02,515 --> 03:23:20,515
+Yani hepsinde bunları yapabiliyor olman lazım. Bu kodları yazabiliyor olman lazım. Sadece o değil, yani dilden bağımsız kod geliştirme yeteneğinize sahip olmanız lazım. Ondan sonra mezun olduğunuzda başvuracaksınız şirketlere,
+
+1034
+03:23:26,804 --> 03:23:40,103
+Canavar projelerde çalışırsınız. Yok, ben olasılık, istatistik bilmiyorum. Ben işte makine öğrenmesi, şu bu falan anlamam derseniz, böyle günü geçiren eleman olursunuz.
+
+1035
+03:23:40,103 --> 03:23:49,804
+Ve aldığınız maaş 5 lira olur. Senin olasılık, istatistik bilen, çok iyi yazılım yapan arkadaşın da 15 lira maaş alır.
+
+1036
+03:23:50,324 --> 03:23:57,824
+Senin üç katın, dört katın maaş alır. Kırk yaşına kadar çalışacaksınız zaten. Yani piyasa öyle, dünya genelinde öyle.
+
+1037
+03:23:57,824 --> 03:24:14,324
+Gidiyorsun bir şirkete bakıyorsun çalışanlara, yaş ortalamasını 28-30, 40 geçmiyor yani. Staj yapanlarınız var mı aranızda? Staj yapan var mı?
+
+1038
+03:24:14,324 --> 03:24:16,324
+Ben yaptım hocam.
+
+1039
+03:24:16,324 --> 03:24:17,324
+Nerede yaptın?
+
+1040
+03:24:18,963 --> 03:24:21,963
+Oredata'da yaptım, Big Data ürünü.
+
+1041
+03:24:21,963 --> 03:24:28,963
+Oredata, biliyorum. Benim arkadaşın şirketi orası. Kaç kişi var da çalışan?
+
+1042
+03:24:28,963 --> 03:24:39,963
+Ben ofis kısmındaydım, ofis kısmında 10 kişi vardı ama normalde diğer müşterilerin yerine gidip de çalışanlar da var.
+
+1043
+03:24:39,963 --> 03:24:41,963
+30-40 kişi oluyor yani hepsini görmedim.
+
+1044
+03:24:41,963 --> 03:24:44,963
+Peki en yaşlı olanı kaç yaşındaydı?
+
+1045
+03:24:46,448 --> 03:24:52,848
+Ali Kurt vardı galiba, o da herhalde 30 yaşlarındaydı.
+
+1046
+03:24:52,848 --> 03:24:55,448
+Tamam, yani 40 yaşında yoktu, doğru mu?
+
+1047
+03:24:55,448 --> 03:24:59,448
+Vardı bir tane ama o da CTO'ydu.
+
+1048
+03:24:59,448 --> 03:25:03,448
+Yani yöneticidir zaten, yöneticidir yani.
+
+1049
+03:25:03,448 --> 03:25:08,064
+Yani demek ki, anladınız mı? Yani çalışan 40 yaşındayı insan göremezsiniz, bu şu demek.
+
+1050
+03:25:08,064 --> 03:25:20,783
+24 yaşında mezun olacaksınız değil mi? 23 yaşında. Bazılarınız 30 yaşında mezun oluyor, geciktiriyor, 7 senede okulu bitiriyor. Zannediyor ki kar. Sinemaya gidiyor, geziyor, tozuyor, okulunu bitirmiyor.
+
+1051
+03:25:20,783 --> 03:25:26,864
+6 senede bitiriyor, 7 senede bitiriyor. Her sene zarar ediyor. Tamam mı?
+
+1052
+03:25:26,864 --> 03:25:32,864
+Ondan sonra 40 yaşına kadar çalıştık. 40 yaşından sonra iş bulması çok zor.
+
+1053
+03:25:33,332 --> 03:25:46,332
+O yüzden gençler, şunu bilin, 40 yaşına kadar kazanacaksınız. Ne kazanacaksınız? Maaşınızı, evinizi, arabanızı, değil mi? 40 yaşına kadar alacaksınız. 40 yaşından sonra çok zor.
+
+1054
+03:25:47,636 --> 03:26:15,404
+İşte 40 yaşına kadar da iyi para kazanmak için olasılık ve istatistik teorisini çok iyi bileceksiniz, yazılımı çok iyi yapıyor olacaksınız, hesaplama kuramını çok iyi bileceksiniz, Signal and Processing dersini çok iyi bileceksiniz. Bunları bilin, ondan sonra hayata, herkesten önde başlarsınız. Şimdi bunu düşünerek bu derse çalışın. Yani bunu düşünerek, bu ders çok çok önemli. En önemli derslerinizden birisi bu. Tamam mı?
+
+1055
+03:26:16,500 --> 03:26:44,500
+Hocam, derse ilgili bir şey söyleyebilir miyim? Tabii. Hocam, siz yazarken ben de not alıyorum ve sorduğunuz soruları cevaplamakta zorlanıyoruz. Zaten yazarken konuyu çok iyi anlayamıyorum. Mesela haftaya sorsanız ve çalıştıktan sonra daha rahat cevap verebiliyoruz ama burada yazarken siz sıradaki şeyi sorunca ne olabilir diye o zaman cevap vermek zor oluyor. Etman diyorsun yavaş düşüyor hocam ben de diyorsun. Hocam hem yazıyoruz hem ders İngilizce hem de sorun.
+
+1056
+03:26:44,500 --> 03:26:46,500
+sorunuzu cevaplamaya çalışıyorsunuz. Zor oluyor bizim içinde.
+
+1057
+03:26:46,500 --> 03:26:59,500
+Yani şimdi şöyle yapalım. O zaman şöyle bir şey gençler. Benim size tavsiyem soru çözün. Tamam mı? Bakın ben size soru örnekleri attım grupta PDF. Hatırlıyorsunuz değil mi?
+
+1058
+03:26:59,500 --> 03:27:01,500
+Evet hocam.
+
+1059
+03:27:01,500 --> 03:27:09,500
+Onu atmıştım. Eğer aranızda birinde varsa yeniden grupta paylaşabilir. Onu çözün içindeki sorulara.
+
+1060
+03:27:10,644 --> 03:27:25,644
+Onun içindeki soruları çözün, o zaman daha iyi anlayacaksınız. Ve ben size ağabey tavsiyesi, hoca tavsiyesinden ziyade ağabey tavsiyesi, tamam mı? Şimdi biz ağabey kardeş gibiyiz. Aynı meslekten olur. Bilgisayar mühendisiyiz.
+
+1061
+03:27:25,644 --> 03:27:37,452
+Şimdi ağabey tavsiyesi, sınava girmeden önce o soruları çözerseniz sınavda çok başarılı olursunuz. Çok hızlı bir şekilde yaparsınız, konuları anlarsınız yani.
+
+1062
+03:27:37,652 --> 03:27:47,252
+ve o pdf'in içinde çözümleri var zaten. Amacınız şu olsun, derste gördüklerinizi o çözümlerde bulmaya çalışın, anlamaya çalışın. Tamam?
+
+1063
+03:27:48,452 --> 03:27:52,851
+O şekilde yaparsan sen de [öğrenci] miydi ismin?
+
+1064
+03:27:53,652 --> 03:27:54,851
+[öğrenci] hocam.
+
+1065
+03:27:54,851 --> 03:27:59,652
+[öğrenci]. [öğrenci], sen de o şekilde o soruları çözersen daha iyi oturacak.
+
+1066
+03:28:00,340 --> 03:28:06,100
+Evet hocam, zaten çalışıyorum. Yok, sadece bu güncel konularda yazdırdığınız anda cevaplamak zorunda.
+
+1067
+03:28:06,119 --> 03:28:20,340
+Olabilir, yani geç kalabilirsiniz. Ama bakın, ben bir şey söyleyeyim size. Bazı şeyler var, matematikte bazı temel bilgiler var. Mesela e üzeri x eşittir neydi işte toplam?
+
+1068
+03:28:30,004 --> 03:28:32,844
+Tyler serisi.
+
+1069
+03:28:32,844 --> 03:28:42,004
+Tyler serisi, neyini? Exponation'ın sıfırdaki Tyler serisi değil mi? Yani şimdi bunu bilmek lazım. Bunun gibi temel şeyleri bilmek gerekiyor.
+
+1070
+03:28:42,004 --> 03:28:57,004
+Ya da seri summation'ları, işte k sıfırdan n'ye kadar, r üzeri k, n artı bir bölü, bir eksi r. Bunları bilmen gerekiyor.
+
+1071
+03:28:57,747 --> 03:29:10,147
+Ne zaman? R'nin mutlak değeri birden küçük olunca, bir eşit olunca ırak sar. Değil mi? Ya da sonsuza doğru gidersem?
+
+1072
+03:29:13,876 --> 03:29:23,876
+Bu da ne oluyor? 1 bölü 1 eksi r. Bunları bilmen gerekiyor. Böyle şeyleri hatırlayın. Matematik çok çok önemli.
+
+1073
+03:29:23,876 --> 03:29:32,652
+Şimdi biz, ben sizin yaşlarınızdayken üniversiteden mezun olunca bana şey demişlerdi, yazılım çok önemli. C'yi öğren.
+
+1074
+03:29:32,788 --> 03:29:41,788
+İşsiz kalmazsın gibi söylemişlerdi. Birinci sınıfta, bir tane asistan abim vardı. O da şu anda Amerika'da, Arizona Üniversitesi'nde.
+
+1075
+03:29:41,788 --> 03:29:54,788
+Sağolsun hocam, asistan hocam, yani abiydi yani benim için. Bana yol gösterdi. İşte şu şekilde çalış, bu şekilde çalış diye, lisanstayken.
+
+1076
+03:30:00,244 --> 03:30:26,244
+Linker yazılım kurulumunu verdi. 11 tane HD disk aldım onu, kurdum, daha birinci sınıftayım. Dedim, o zaman söylemiştim, CE'yi kaç günde öğrenirim demiştim. İki ayda öğrenebilir miyim? Bana döndü, bakmıştı hocam. Araştırma görevlisiydi yani o zaman. Hocam döndü, bana baktı. İki ay mı dedim. Çok zor, dört yılda ancak öğrenirsin demişti.
+
+1077
+03:30:26,355 --> 03:30:32,355
+Ben birinci sınıftan dördüncü sınıfa kadar hep her gün C çalıştım.
+
+1078
+03:30:32,355 --> 03:30:42,355
+Her gün C çalıştım. Mezun oldum. Ondan sonra TÜBİTAK'ta işe girdim. TÜBİTAK beni davet etti. TÜBİTAK'ta işe girdim.
+
+1079
+03:30:42,355 --> 03:30:53,324
+Ve TÜBİTAK'ta Türkiye'nin ilk Virtual Private Network yani seküritesini implement edenlerden, gerçekleştirenlerden birisi bendim. O grubun içindeydim.
+
+1080
+03:30:53,683 --> 03:31:20,683
+Ve gruptaki günde bin satır kod yazıyorduk, yani öyle söyleyeyim. Düşünün, o kadar ağır bir yazılım ve IP stack var ya, işte alıyorsun HDLC'den, Low Level'dan, yukarıya çıkartıyorsun IP katmanını, onun üzerinde UTP ve yanında TCP var, onun üzerinde application'lar var, protokol implementasyonları, soket bağlantılar, bunların hepsini
+
+1081
+03:31:20,819 --> 03:31:46,819
+C'de yazmıştık yani, düşün yani, bu kadar büyük bir kod, kaç bin satırlık kod yani. Bunu yaptık ve ülkemize kazandırdık. Ondan sonra ülkemizin milli TCP IP siteyi oldu. Bu çok önemli bir şeydi işte. Yarın bir gün siz de burada bu konularda kendinizi geliştireceksiniz, yarın bir gün bir şeye faydanız olacak. Bir şeyin elinden tutacaksınız. Yani ülkeye faydanız olacak. Yani yarın bir gün...
+
+1082
+03:31:47,763 --> 03:32:04,763
+Yani ben şöyle düşünüyorum, ben ölüp gitsem, bu devlet var olduğu sürece benim bu devlet için yapmış olduğum o küçük bir program, o proje, yapmış olduğum o işler, benim amel defterimi dolduracak yani bu şekilde düşünün her şeyi.
+
+1083
+03:32:04,763 --> 03:32:11,563
+Yani güzel işler yapmak için de olasılığı çok iyi bilmek gerekiyor, istatistiği çok iyi bilmek gerekiyor.
+
+1084
+03:32:11,667 --> 03:32:16,667
+Ya da güzel bir firmada çalışmak için olasılığı ve istatistiği çok iyi bilmek gerekiyor.
+
+1085
+03:32:16,667 --> 03:32:29,667
+Ve şunu unutmayın, Amerika'ya gitmek isteyebilirsiniz, Avrupa'ya gitmek isteyebilirsiniz. Oralara gittiğinizde buradan farklı bir şey yok. Gerçekten yok.
+
+1086
+03:32:29,667 --> 03:32:37,667
+Yani Türkiye'de sıkıntılar varsa orada hayla ile daha fazla sıkıntılar var. O yüzden...
+
+1087
+03:32:38,548 --> 03:33:03,548
+Bu konuları çok iyi bilirseniz, burada daha büyük işler yapma imkanınız var. Daha güzel işler yapma imkanınız var. Mesela az önce Oredata dedin, sen orada çalıştığını söyledin. O benim arkadaşım mesela. Çok güzel işler başardı, şirketini kurdu, geliştirdi, büyüttü, müşterilerini ayarladı ve şirket kendi kendine dönüyor. Bu hoş bir şey. Sizin de o şekilde bir şeyler yapabilmeniz için öncesinde...
+
+1088
+03:33:03,968 --> 03:33:25,648
+Olasılık, istatistik bu konularda uzmanlaşmanız ve ondan sonra işte Big Data konusundaysa Big Data üzerine çalışacaksın. Oredata Big Data üzerine çalışıyor. Big Data üzerinde çalışacaksın. Makine öğrenmesi algoritmaları, işte Deep Learning. Bunlarla problemleri çözeceksin, müşteriler kazanacaksın. Bakarsınız yarın bir gün şirket sahibi de olursunuz.
+
+1089
+03:33:26,420 --> 03:33:49,420
+Yok, ben bu derse hiç önem vermiyorum. Bu ders nedir ki? Ne zaman karşıma çıkacak derseniz, o zaman kaybedersiniz. Maçı kaybedersiniz. Tamam mı? Hani diyor ya, Kerem Alışık'ın babasının adı neydi? Sadri Alışık mıydı o?
+
+1090
+03:33:50,835 --> 03:34:05,235
+Bu da mı gol? Hani soruyor ya, işte o zaman gol atacaksınız. Bu da mı gol değil diyor ya, işte bu dersi çok iyi öğrenirseniz o golü atmış olacaksınız. Bu şekilde çalışın. Sevin yani.
+
+1091
+03:34:07,235 --> 03:34:12,835
+Ve WhatsApp grubunda da arkadaşlar soru sorabilirsiniz her zaman, tamam?
+
+1092
+03:34:13,835 --> 03:34:16,435
+Çok sağ olun hocam, iyi bir motivasyon oldu.
+
+1093
+03:34:16,435 --> 03:34:17,835
+Teşekkürler hocam.
+
+1094
+03:34:18,484 --> 03:34:42,604
+Amacım sizlere motivasyon kazandırmak değil yani, amacım sizlerin gözünüzü açmak. Motivasyon bu gibi, şimdi alırsınız, kaybedersiniz. O önemli değil. Amaç ne? Bilmek, gözünüzü açmak. Yani zaman çabuk geçiyor. Birden bir bakarsınız, aa ben bunları neden öğrenmedim dersiniz. Zaman çok çabuk geçiyor.
+
+1095
+03:34:43,379 --> 03:34:54,379
+Bunları çok iyi öğrenirseniz, bakın yarın bir gün çok değişkenli veri analizi dersi var, Nizamettin hocamız anlatıyor. O derste çok başarılı olursunuz.
+
+1096
+03:34:54,379 --> 03:35:06,379
+Songül hocamız veri madenciliği dersini anlatıyor. O derste çok başarılı olursunuz. Yine Sırma hocamız Deep Learning anlatıyor. O dersi aldığınızda çok başarılı olursunuz.
+
+1097
+03:35:06,379 --> 03:35:11,083
+Niye? Çünkü olasılık ve istatistik teorisini biliyorsunuz sizler.
+
+1098
+03:35:12,819 --> 03:35:19,940
+Tamam mı? Hatta hocayı bile sıkıştırabilirsiniz. Yani hocaya dersin, hocam bu böyle olursa ne olur, şöyle olursa ne olur? Çünkü biliyorsun.
+
+1099
+03:35:20,659 --> 03:35:28,060
+Daha böyle ilginç sorular sorabilirsin, hocaları sıkıştırabilirsin. Yani bu çok güzel bir şey, bu çok güzel, hoş bir duygu. Bunu neden yapmayasınız?
+
+1100
+03:35:28,060 --> 03:35:41,060
+Ve ondan sonra mezun olduğunuzda o konuda ilerleyebilirsiniz. En basiti veri madenciliğinde Naive Bayes Classification'ı duyunca arkasındaki matematiği biliyorsunuz.
+
+1101
+03:35:48,659 --> 03:35:52,340
+yapmanıza gerek yok. Kendi kodunu hemen Python'da kendin yazarsın.
+
+1102
+03:35:52,340 --> 03:35:57,820
+Hocam hatta, ben verim adancili dersini alıyorum şu an. İlk ödev olarak onu verdiler.
+
+1103
+03:35:57,820 --> 03:36:01,579
+Naebi Bayes Classifier Matematiği ile kodlamat verdiler.
+
+1104
+03:36:01,579 --> 03:36:02,579
+Öyle mi?
+
+1105
+03:36:02,579 --> 03:36:03,579
+Evet hocam.
+
+1106
+03:36:03,579 --> 03:36:05,940
+Yapabildin mi peki?
+
+1107
+03:36:05,940 --> 03:36:09,620
+Yaptım hocam. Önceden de bildiğim vardı bir yaz.
+
+1108
+03:36:09,620 --> 03:36:14,980
+İyi, aferin. Peki, şey yaptın mı? Bana niye sormadın hiç?
+
+1109
+03:36:16,659 --> 03:36:19,659
+Hocam, meşgulsünüzdur falan.
+
+1110
+03:36:19,659 --> 03:36:30,659
+Tamam. Mesela şu anda conditional pdf'leri biz daha görmedik gerçi, continuous'lere. Sen şimdi şöyle bir şey yapıyorsun, [öğrenci], [öğrenci]'di değil mi?
+
+1111
+03:36:30,659 --> 03:36:33,659
+Evet hocam. Ben yaptım zaten hocam.
+
+1112
+03:36:33,659 --> 03:36:36,659
+Şöyle bir şey, sen bu dersi ikinci bir defa alıyorsun değil mi?
+
+1113
+03:36:36,659 --> 03:36:37,659
+Evet.
+
+1114
+03:36:37,659 --> 03:36:40,659
+Şimdi, kaçla geçmiştin bu dersi?
+
+1115
+03:36:41,843 --> 03:36:43,843
+CB ile geçmiştim.
+
+1116
+03:36:43,843 --> 03:36:52,843
+Mesela CB ile geçmiştim, inşallah şimdi A ile geçeceksin. Bir de bu ders almanın amacı ne? Notunu mu yükseltmek yoksa başka bir şey mi?
+
+1117
+03:36:52,843 --> 03:36:59,843
+Notunu yükseltmek de var tabii de. Yani istatistiği yeniden bir gözden geçirmem gerekiyor diye düşünüyorum.
+
+1118
+03:36:59,843 --> 03:37:04,747
+Evet, işte bu. Bakın arkadaşlar.
+
+1119
+03:37:04,915 --> 03:37:14,415
+[öğrenci] size güzel bir örnek. [kişisel bilgi] Niye? Çünkü bu konuları öğrenmek istiyor, daha iyi öğrenmek istiyor.
+
+1120
+03:37:16,215 --> 03:37:20,615
+[öğrenci].
+
+1121
+03:37:21,415 --> 03:37:22,415
+Burada mısın?
+
+1122
+03:37:23,415 --> 03:37:23,915
+Hocam.
+
+1123
+03:37:24,531 --> 03:37:36,531
+Şu an ben araçtayım, yoldayım. Ben sizi takip ediyorum. [kişisel bilgi] Size mail atmıştım.
+
+1124
+03:37:36,531 --> 03:37:39,531
+Ben duymadım. Sen WhatsApp grubunda mısın benim?
+
+1125
+03:37:39,531 --> 03:37:43,531
+Hocam yokum işte. Ben şimdi arkadaşlara da yazıyorum.
+
+1126
+03:37:43,531 --> 03:37:47,531
+Bana WhatsApp grubunda arkadaşlardan şey al, benim telefon numaramı al. Bana atlama.
+
+1127
+03:37:47,531 --> 03:37:48,395
+Tamam.
+
+1128
+03:37:48,564 --> 03:38:11,363
+Tamam hocam, ben size mail atmıştım aslında, durumu izah edilen şekilde. Sizin eski videolarınızı izlemem lazım. [kişisel bilgi]
+
+1129
+03:38:11,363 --> 03:38:16,164
+Şimdi o zaman şöyle yapalım, sen arkadaşlardan var mı sınıfta tanıdığın birileri?
+
+1130
+03:38:16,308 --> 03:38:20,468
+Geçen seneden başlayan bir arkadaşım var.
+
+1131
+03:38:20,468 --> 03:38:21,588
+Tamam, ondan.
+
+1132
+03:38:21,588 --> 03:38:25,268
+Ondan sizin numaranızı bulacağım hocam, çok teşekkür ederim.
+
+1133
+03:38:25,268 --> 03:38:26,308
+Tamam, oldu.
+
+1134
+03:38:26,308 --> 03:38:28,308
+Çok teşekkürler hocam, çok sağ olun.
+
+1135
+03:38:28,308 --> 03:38:35,932
+[öğrenci].
+
+1136
+03:38:35,932 --> 03:38:37,932
+Hocam sesim gelmiyor mu?
+
+1137
+03:38:37,932 --> 03:38:41,932
+Geliyor, şu anda geldi. [öğrenci], senin düşüncen ne?
+
+1138
+03:38:41,932 --> 03:38:51,932
+Yani ben dersleri biraz takip etmekte açıkçası zorlanıyorum da, bu derslerden sonra tekrarlarını izliyorum bir de. O şekilde devam ediyorum. Bir sıkıntım yok şu an hocam.
+
+1139
+03:38:51,932 --> 03:38:57,932
+Tamam. Olasılık ve istatistik hakkında düşüncen ne?
+
+1140
+03:38:58,995 --> 03:39:10,995
+Yani ben de zaten arkadaşlar gibi yapay zeka konusunda falan çok net olması da yönelmeyi düşünüyorum. O yüzden dediğiniz gibi önemli bir ders kaçırmamaya çalışıyorum. Yani olabildiğince yüksek bir notla geçebilmek hedefim.
+
+1141
+03:39:10,995 --> 03:39:22,995
+Çok güzel. Şimdi gençler şunu da söyleyeceğim. Eğer makine öğrenmesi, yapay zeka konusunda çalışmak istiyorsanız benimle iletişime de geçebilirsiniz. Hepinize söylüyorum.
+
+1142
+03:39:26,131 --> 03:39:45,131
+boş zamanınızda çalışıp makale yazmak istiyorsanız lisanstayken ya da benim size vermiş olduğum projede çalışarak ara proje ve bitirme projenizi şimdiden alıp ilerlemek istiyorsanız benimle iletişime geçin.
+
+1143
+03:39:45,131 --> 03:39:50,131
+Benim uzmanlık alanım olasılık ve istatistik.
+
+1144
+03:39:51,123 --> 03:40:15,323
+Yani belli bir şey vardır, ölçüt vardır. Ben yani bunu uzmanlık alanım derken ben bu işi biliyorum yani, temelini biliyorum, tarihini biliyorum. Artık benim en fazla yayın yapmış olduğum alan olasılık ve istatistik üzerine. Yani en çok yayın yapmış olduğum alan olasılık ve istatistik. Ve olasılık ve istatistiği nerede nasıl kullanabileceğinizi size öğretebilirim.
+
+1145
+03:40:15,763 --> 03:40:34,163
+Eğer ara proje ve bitirme projesi düşünüyorsanız, şimdiden başlamak istiyorsanız, çünkü şöyle bir şey, 4 senenin sonunda mezun olacaksınız. Bazı arkadaşlarınız 4 senede okulu bitiriyor, bazılarınız okulu uzatıyor, 5-6 sene oluyor.
+
+1146
+03:40:34,399 --> 03:40:44,800
+Okulu uzamasının sebebi şu, ara ve bitirme projesinde daha önceden çalışmaya başlamıyor. İşte bir dönemde yapmaya çalışıyor, onu da yapamıyor. Dolayısıyla haliyle okul uzuyor.
+
+1147
+03:40:44,800 --> 03:40:58,000
+Güzel olan şu, ara ve bitirme projelerinizden bir konferans makalesi yapıp, SUYDA, Sinyal İşleme Uygulamaları Kurultayı'nda ya da bir uluslararası ya da
+
+1148
+03:40:58,195 --> 03:41:21,195
+Ulusal bir konferansta sunum yapmak, yayın yapmak, sunum yapmak, bir şeyler geliştirip bulmak. Eğer bu konularda meraklıysanız, istekliyseniz, bu işi öğrenmek istiyorsanız, benimle iletişime geçebilirsiniz. Sorularınız olursa hiç çekinmeyin, benimle iletişime geçebilirsiniz. Biliyorsunuz ben WhatsApp grubunu kurdum.
+
+1149
+03:41:21,620 --> 03:41:31,620
+Amacım şu, öğrenci, sizlere daha çok faydalı olmak. Tek sevmediğim şey şu, çalışmayan tembel öğrencileri hiç sevmiyor.
+
+1150
+03:41:31,620 --> 03:41:38,347
+Çünkü vakit kaybı. Eğer gerçekten çalışmak istiyorsanız, bir şeyler öğrenmek istiyorsanız…
+
+1151
+03:41:38,388 --> 03:42:01,388
+Kana kana bu işi öğrenip içmek istiyorsanız, bak kana kana içmek istiyorsanız bu olasılık ve istatistiği ve bunu çok güzel bir şekilde uygulamak istiyorsanız, makine öğrenip veri işlemenin, veri madenciliğini,
+
+1152
+03:42:01,523 --> 03:42:22,523
+Veri işlemenin, makine öğrenmeleri algoritmalarının, derin öğrenme algoritmalarının, derinliğine ulaşmak, çok iyi öğrenmek istiyorsanız ve ileride master veya doktora yapmak istiyorsanız, benimle iletişime geçin, hazırlayalım sizi, geleceğe hazırlayalım. Tamam?
+
+1153
+03:42:23,523 --> 03:42:26,523
+Yani bu konuda hiç çekince olmasın. Amaç...
+
+1154
+03:42:27,379 --> 03:42:47,559
+Kendinizi geliştirmek, istemek. Çünkü bizim meslek bu. Eğer çok merak ediyorsanız, Ferkan Hocamız ne tür çalışmalar yapmış diye, adımı Google Scholar'a yazın, Ferkan Yılmaz diye ya da benim web sayfama gidin, web sayfamda yapmış olduğum yayınların içini açın.
+
+1155
+03:42:47,935 --> 03:43:11,935
+Orada bazı yayınların pdf'leri doğru olmayabilir. Web sayfamdaki yayınları açın, bir içini inceleyin, yapmış olduğum çalışmaları bir görün. Ondan sonra karar verin. Gerçekten bu işi öğrenmek istiyorsanız, bak ben hocanız olarak buradayım. Gelin benden faydalanın. İstifade edin yani. Tamam? Anlaştık mı?
+
+1156
+03:43:11,935 --> 03:43:13,935
+Tamam hocam.
+
+1157
+03:43:14,479 --> 03:43:23,479
+Tamam, içinizde çekinmeyin. Çekingen insanlar her zaman kaybeder. Sormaktan korkan insanlar her zaman kaybeder.
+
+1158
+03:43:23,479 --> 03:43:37,479
+En güzel öğrenci, en çok soru soran öğrencidir. En güzel insan, en çok soru soran insandır. Soru sormak demek, okumak demek. Okumak demek, soru sormak demek.
+
+1159
+03:43:37,479 --> 03:43:41,479
+Okuyan insan soru sorar, soru soran insan okur.
+
+1160
+03:43:41,587 --> 03:43:56,587
+Bu ikisi birdir yani. Tamam? Yani bol okuyan olun, bol soru soran insan olun. O yüzden mümkünse sorularınızı gönderin, beraber bakalım, size bir ara proje, bir bitirme projesi belirleyelim şimdiden.
+
+1161
+03:43:56,587 --> 03:44:07,587
+Ve o konuda uzmanlaşın. Yani o konunun ekmeği sizde olsun. Tamam? Ve yarın sizler iş hayatınıza...
+
+1162
+03:44:08,211 --> 03:44:18,371
+Başladığınızda, kardeşim diyeceksin. Bakın, ben makine öğrenmesini biliyorum, data, veri madenciliğini biliyorum. Bak bu da benim yapmış olduğum makale, yayın.
+
+1163
+03:44:21,371 --> 03:44:29,371
+Tamam mı? Bu benim yapmış olduğum makalem, yayınım. Dedin mi? Vodafone diyecek ki, bakacak senin CV'ine Vodafone.
+
+1164
+03:44:31,700 --> 03:44:56,480
+Ahmet, Mehmet, Ayşe, Fatma, çok güzel. Hadi o zaman tamam bu arkadaşı alalım biz işe. Çünkü işi biliyor. Yazılım da var, artı arka planda olasılık ve istatistik de biliyor. Bu çok güzel çalışır. Tamam mı? Yani bu güzel bir şey. CV'nizi zengin değiştirmek çok hoş bir şey. Bir de şunu tavsiye ediyorum size.
+
+1165
+03:44:56,755 --> 03:45:05,255
+Makine öğrenmesi olsun, Deep Learning olsun, tabii olasılık ve istatistik kesinlikle, çok yüksek not almaya çalışın.
+
+1166
+03:45:05,255 --> 03:45:23,211
+Tamam? İletişimde olalım. Biliyorsunuz WhatsApp grubu var, benim amacım şu, normalde hiçbir hoca, bilmiyorum, var mı bilmiyorum, telefon numarasını öğrencilerle çok paylaşan hoca yok yani, ama yurt dışında öyle değil.
+
+1167
+03:45:23,252 --> 03:45:47,692
+Yurt dışındaki öğrenciler, hocalar ile istediği zaman iletişime geçebiliyorlar. Ben de aynı kanaatteyim. Erişilebilir olmak lazım. Öğrenci sorabiliyor olmak lazım ama sizler çok alışkın değilsiniz böyle bir şeye. Çünkü ilkokulda, ortaokulda, lisede ya da üniversitede hocalarınızın telefon numaralarına erişmek o kadar kolay değildi sizler için. Dolayısıyla alışık değilsiniz.
+
+1168
+03:45:48,564 --> 03:45:59,564
+Ama alışık olun yani böyle konulara. Tamam mı? Yani iletişime geçip sorun sorabilirsiniz. Arap ve bitirme projelerinizi şimdiden belirleyebiliriz ve o alanda ilerleyebilirsiniz.
+
+1169
+03:46:02,564 --> 03:46:04,564
+Anlaştık mı gençler, arkadaşlar?
+
+1170
+03:46:04,564 --> 03:46:06,564
+Anlaştık hocam.
+
+1171
+03:46:06,564 --> 03:46:13,564
+Tamam. Burada bitiriyorum dersi. Biraz uzattık, çok uzattık.
+
+1172
+03:46:13,780 --> 03:46:17,780
+Bayağı bir 50 dakika oldu, bir ekstradan ders yapmış gibi olduk.
+
+1173
+03:46:19,780 --> 03:46:25,780
+Bir tekrardan hatırlatıyorum, o sizlerle paylaşmış olduğum soruları lütfen çözün.
+
+1174
+03:46:25,780 --> 03:46:34,780
+Bir bu, ikincisi ders kitabımız var, Barun. Onun içinde chapter'lar var. Chapter 1, chapter 2, chapter 3 ve chapter 4.
+
+1175
+03:46:34,780 --> 03:46:38,764
+Bu 4 chapter'ın sonundaki soruları da çözmeye çalışın.
+
+1176
+03:46:39,156 --> 03:47:01,156
+Zaten bir konuyu öğrenince soruları çözmeye başlıyorsunuz. Yani olasılık ve istatistikte başarının sırrı çok soru çözmekte. Bakın bir daha söylüyorum. Olasılık ve istatistik teorisinde başarının sırrı çok soru çözmekte. Tamam? Hatta bunu yazayım şöyle.
+
+1177
+03:47:03,283 --> 03:47:10,563
+Dur, başka bir renk alalım. Hatta şöyle yapalım.
+
+1178
+03:47:12,183 --> 03:47:14,183
+Hops, çok oldu.
+
+1179
+03:47:21,268 --> 03:47:41,268
+Olasılık ve Statistik dersini öğrenmek için çok soru çözmek.
+
+1180
+03:47:45,299 --> 03:47:47,739
+Nedir? Çok zor çözmek.
+
+1181
+03:47:51,347 --> 03:47:53,347
+Gerekçer hocam.
+
+1182
+03:47:53,347 --> 03:47:56,347
+Gerekçer.
+
+1183
+03:47:56,347 --> 03:47:58,347
+Tamam.
+
+1184
+03:47:58,347 --> 03:48:00,347
+Çok önemli.
+
+1185
+03:48:00,347 --> 03:48:06,347
+Ne kadar çok soru çözerseniz o kadar çok bu işi öğrenirsiniz.
+
+1186
+03:48:07,987 --> 03:48:15,307
+Hocam, ben bir soru söyleyecektim. Michael Barnum, çepti sonlarının cevapları yok. Bunu nereden bulabiliriz acaba?
+
+1187
+03:48:15,307 --> 03:48:20,987
+Bende o soruların cevapları var bildiğim kadarıyla. Yani şöyle bir şey. Satıl almıştım da parayla.
+
+1188
+03:48:20,987 --> 03:48:28,987
+Hani onları paylaşabilirim. Hani bakayım ben, bende kimleri yapmıyordum ben. Sonuçta backup'ların içinde birinde.
+
+1189
+03:48:32,340 --> 03:48:34,340
+Senin hatırına paylaşayım.
+
+1190
+03:48:34,340 --> 03:48:41,340
+Teşekkür ederim hocam. Hocam eğer bulamazsanız, aldığınız linki atarsanız belki biz de böyle arkadaşlar toplanıp alabiliriz aslında hocam.
+
+1191
+03:48:41,340 --> 03:48:46,340
+Ya öğrencilere satılmıyor. Üniversitede hoca olman lazım.
+
+1192
+03:48:46,340 --> 03:48:47,340
+Ha öyle mi hocam?
+
+1193
+03:48:47,340 --> 03:48:55,340
+Aynen. Yani şöyle bir şey. Üniversitedeki hoca olman lazım ve üniversite e-mailini kullanman gerekiyor.
+
+1194
+03:48:58,515 --> 03:49:12,955
+Adam şöyle düşündü, şimdi o kitabın sahibi soruların cevapları dolaşırsa ortalıkta, o kitabı hiçbir hoca ders kitabı olarak kullanmaz çünkü soruların çözümleri var.
+
+1195
+03:49:12,955 --> 03:49:14,955
+Evet hocam.
+
+1196
+03:49:14,955 --> 03:49:19,955
+O yüzden paylaşmıyorlar ama ben bakayım eğer varsa bir şeyler.
+
+1197
+03:49:20,724 --> 03:49:27,123
+Bakayım yani, bütün chapter'lar olmayabilir ama birkaç tane chapter'ım olabilir. Onları bakayım, eğer bulabilirsem paylaşın.
+
+1198
+03:49:27,123 --> 03:49:28,724
+Tamam hocam, çok teşekkür ederim.
+
+1199
+03:49:28,724 --> 03:49:32,123
+Ben bana başlamada, yine söylerim, sen WhatsApp grubunda hatırlatırsın, tamam mı?
+
+1200
+03:49:32,123 --> 03:49:33,324
+Tamam hocam, sağ olun.
+
+1201
+03:49:33,324 --> 03:49:46,724
+Tamam gençler, burada bitiriyorum, çok oldu. Hepinize iyi bir hafta diliyorum, çok güzel çalışmalar diliyorum, sınavlarınızda başarılar diliyorum. Haftaya sınavda görüşürüz.
+
+1202
+03:49:47,059 --> 03:49:53,059
+İyi çalışın lütfen, kendinize iyi bakın. İyi günler. İyi günler hepimize, görüşürüz.

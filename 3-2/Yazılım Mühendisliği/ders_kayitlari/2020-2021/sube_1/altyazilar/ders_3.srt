@@ -1,0 +1,2131 @@
+1
+00:00:10,163 --> 00:00:21,484
+Günaydın. Bir beş dakika arkadaşlarınızın bağlanmasını bekleyeceğim. Ondan sonra bu hafta ecel süreçlerle devam edeceğiz.
+
+2
+00:04:26,132 --> 00:04:26,992
+Günaydın.
+
+3
+00:04:31,764 --> 00:04:40,704
+Günaydın. Biraz bekledim ama yine 35 kişiyle kaldı devam edenler. Derse başlıyorum artık.
+
+4
+00:04:43,572 --> 00:04:54,932
+Geçen hafta yazılım geliştirme süreç modellerini görmüştük ve bu modellerden klasik süreç modelleri üzerinde durmuştuk.
+
+5
+00:04:55,451 --> 00:05:01,331
+Klasik süreç modellerinden hangilerini gördük? Şöyle bir hatırlayalım.
+
+6
+00:05:01,747 --> 00:05:25,228
+Waterfall'ı zaten biliyoruz demiştik. Waterfall model ile başladık. Waterfall'ın diğer isimleri lineer model ve şelale modeli. Bu modelde bir aşamayı bitirdiğimizde diğer aşamaya geçiyorduk.
+
+7
+00:05:25,504 --> 00:05:50,484
+Bunun dışında prototip modeli gördük. Prototip modelde özellikle analiz tasarım aşamasında üzerinde denemeler yapacak bir prototip, bir ön model oluşturuyorduk, ön ürün oluşturuyorduk ve daha sonra bunun üzerinde müşteriyle beraber denemeler yapıp
+
+8
+00:05:50,708 --> 00:06:04,168
+Son ürünü geliştiriyorduk. İkisinin karışımı olacak şekilde ve özellikle risk analizini de süreç içine katacak şekilde.
+
+9
+00:06:08,168 --> 00:06:15,828
+Spiral modelin alt adımları, altı alt adımı vardı.
+
+10
+00:06:19,252 --> 00:06:27,752
+Bu spiral modelin ve waterfall modelinin olduğu slide'ı açmadım. Sadece sözlü olarak bunları tekrarlıyorum.
+
+11
+00:06:29,492 --> 00:06:46,252
+Bu modelde bu altı alt adımı prototip geliştirme için, ürün oluşturma için, ürünü zenginleştirme için ve bakım sırasında hep...
+
+12
+00:06:48,211 --> 00:07:03,991
+Adımı tekrarlayarak götürüyorduk. Bu spiral modelin kullanımı daha çok hata kritik ürün geliştirirken kullanılan bir model olarak tanımlamıştık.
+
+13
+00:07:06,451 --> 00:07:16,692
+RAD model üzerinde durduk. Spray modeli benzer şekilde VW model üzerinde durduk ama onun özel bir model olduğunu söyledi.
+
+14
+00:07:21,588 --> 00:07:28,988
+RAD modelde yine IBM tarafından geliştirilmiş ve kullanılmış olan
+
+15
+00:07:30,483 --> 00:07:47,644
+Özellikle rekabete dayalı hızlı geliştirilmesi gereken bir ürün varsa ve kurumun olanakları varsa aynı anda ikiden fazla ekip kurarak hızlı geliştirme yapmak üzere.
+
+16
+00:07:58,483 --> 00:08:04,483
+Rapid Application Development modeli kullanabiliriz demiştim. Bir de...
+
+17
+00:08:04,660 --> 00:08:24,660
+Yine özel modeller içinde Unified Process'ten bahsettik. Unified Process modelde de yine iletişim, planlama, modelleme, construction ve dağıtım aşaması, uygulamaya koyma aşaması gerçekleştiriliyor.
+
+18
+00:08:32,659 --> 00:08:58,579
+Bu konumlarında görmüştük. Bu proses de mesela özel olarak, unified proses de özel olarak bir Rational Rose ürünü IBM'in daha sonra satın aldığı bir case aracı ya da bir platform şeklinde
+
+19
+00:08:59,059 --> 00:09:15,220
+Bu ürün kullanılarak yazılım geliştirildiğinde altta Unified Process'e uygun süreç modeli kullanmak daha yatkındır diye tanıtılıyor.
+
+20
+00:09:15,220 --> 00:09:19,700
+Bu Unified Process modelin
+
+21
+00:09:20,884 --> 00:09:31,064
+İşte inception faz, elaboration faz, construction faz, transition faz diye dört adımında her birinde neler yapılıyor?
+
+22
+00:09:38,067 --> 00:09:55,048
+Bu nesne yönelik uygulamalarda daha uyum sağlayabileceğimiz bir ürün. Vizyon dökümanı oluşturuluyor. Use case başlangıç modeli çıkartılıyor ilk başlangıç aşamasında.
+
+23
+00:10:00,000 --> 00:10:02,519
+İlimiz ortaya çıkarılıyor.
+
+24
+00:10:02,519 --> 00:10:12,399
+Ve işletmecilik açısından study gerçekleşti. Yani nasıl bir case?
+
+25
+00:10:12,399 --> 00:10:15,519
+İşletmecilik...
+
+26
+00:10:16,436 --> 00:10:37,556
+İş analizi, işletmecilik yapısı deniyor burada ama gerçekleştirilen bir iş analizi ve bir başlangıç risk değerlendirmesi. Bu projenin riskleri nelerdir? Buna göre proje planının oluşturulması ve iş modelinin çıkarılması ilk başlangıç aşamasında.
+
+27
+00:10:45,139 --> 00:10:51,139
+UZCASE modeli bu sefer tasarım analiz ve tasarım olarak gerçekten...
+
+28
+00:10:52,628 --> 00:11:20,587
+Model oluşturuluyor ve yazılım mimarisi tanımı yapılıyor. Geliştirilecek ürünün. Mimari prototip oluşturuluyor. Ön tasarım modeli geliştiriliyor. Risk listesi yeniden düzenleniyor. İlk başta tahmin edilen riskler geçerleme. Bunların olasılıklarında bir değişiklik.
+
+29
+00:11:20,628 --> 00:11:40,567
+Var mı? Şu anda risk dediğim zaman biz henüz yazılım mühendisliği dersi içinde de bunu göreceğiz daha sonra ama şu anda bilmiyoruz yazılım risk analizini. Proje planı gözden geçiriliyor, değişiklik yapıyoruz.
+
+30
+00:11:40,659 --> 00:12:02,339
+Üçüncü aşama Construction Fast. Construction Fast, spiral modelde de vardı. Tasarım modeli, yani ayrıntılı tasarım oluşturuluyor. Yazılım elemanları birbiriyle bütünleştiriliyor. Test yazılım geliştiriliyor.
+
+31
+00:12:02,831 --> 00:12:28,731
+Kodlama yapılıyor ve testler gerçekleştiriliyor, construction fazla. Transition geçiş aşamasında ise artık yazılım artımları, software increment, yazılım artım dediğimiz şey, yazılım ürününün bitmiş ve dağıtılacak parçaları.
+
+32
+00:12:30,035 --> 00:12:44,375
+Kullanıma alınacak elemanları, beta test raporları oluşturuluyor ve kullanıcı geri beslemelerinin değerlendirilmesi yapılıyor.
+
+33
+00:12:44,375 --> 00:12:55,515
+Yani kullanıma alınan yazılımın, kullanıma alınan yazılımın geri bildirimlerinin yapılması aşaması.
+
+34
+00:12:57,107 --> 00:13:04,727
+Böylece geçen hafta en son Unified Process tanımlanmıştı.
+
+35
+00:13:04,727 --> 00:13:19,667
+Şimdi, agile yaklaşım, üzerinde duracağımız modeller hangileri olacak?
+
+36
+00:13:29,331 --> 00:13:40,331
+Agile modelde en fazla ilk kullanım olan Extreme Programming ve daha sonra Scrum ve bir de bazı özel uygulamalar.
+
+37
+00:13:40,563 --> 00:13:48,863
+Kanban da kullanılıyor ticari uygulamalarda daha çok. Kanban üzerinde de biraz bir miktar duracağız.
+
+38
+00:13:48,863 --> 00:14:06,863
+Şimdi önce biz böyle yazılım geliştirme süreçlerini şimdi kadar tanıttıklarımı kullanıyorduk. Ne oldu da çevik süreçler geldi yazılım geliştirme hayatına.
+
+39
+00:14:07,347 --> 00:14:22,067
+2000'li yılların başında, 1999-2000 yıllarında bir manifesto sonucunda ortaya çıktı.
+
+40
+00:14:22,067 --> 00:14:27,827
+Çevik prensipler, çevik yaklaşım çalışmaları.
+
+41
+00:14:34,548 --> 00:14:47,107
+Yazılımın mümkün olduğunca erken müşteriye ulaştırılması bizim birinci önceliğimiz dendi.
+
+42
+00:14:48,107 --> 00:15:00,527
+Burada işte 12 tane bu manifestodan gelen çevik prensipler var.
+
+43
+00:15:01,524 --> 00:15:07,963
+Bunlar da ecay süreçlere geçilmesinin nedenleri aslında bir yerde.
+
+44
+00:15:09,963 --> 00:15:20,683
+Demek ki yazılım geliştiriciler bizim bu deadline'lara uyarak…
+
+45
+00:15:22,131 --> 00:15:35,331
+Hızlı yazılım geliştirmemiz birinci önceliğimiz ve geliştirme sürecinde gereksinimlerde değişiklikler olabiliyor.
+
+46
+00:15:44,179 --> 00:15:55,939
+Sık sık çalışan yazılımın uygun olacak.
+
+47
+00:15:55,939 --> 00:16:10,939
+Özellikle işletmelerde kullanılan yazılımlar ve bunların kullanıcıları olan işletmede...
+
+48
+00:16:14,644 --> 00:16:21,451
+Developerlar, yazılım geliştiriciler projede bir arada çalışıyor.
+
+49
+00:16:24,532 --> 00:16:30,111
+İkinci maddeyi de dördüncü madde bütünleştirmiş oluyor.
+
+50
+00:16:32,991 --> 00:16:43,312
+Ürünü verdiğiniz zaman burada değiştirme azalmış oluyor.
+
+51
+00:16:44,192 --> 00:16:50,532
+Günlük çalışmalar için de bir arada çalışmaları daha uygun olacak.
+
+52
+00:16:53,364 --> 00:17:14,364
+Projelerde çalışanlara motivasyon verilmesi ve yaptıkları işlere güvenilmesi, yine ÇEVİK prensibin başka bir maddesi.
+
+53
+00:17:23,539 --> 00:17:24,039
+Ot.
+
+54
+00:17:27,476 --> 00:17:32,476
+Geliştirme ekibinin yüz yüze...
+
+55
+00:17:35,859 --> 00:17:45,819
+Tasarımı gerçekleştiren, kodlamayı yapan, testi yapan evreler halinde birinin işi bittiğinde başkası işe devraldığında,
+
+56
+00:17:45,819 --> 00:17:52,259
+sonradan sorular, kağıt üzerinden ilerlerken sorular sormak çok verimli.
+
+57
+00:17:53,659 --> 00:18:03,440
+Ekip içinde hep bir arada çalışması verimliliği arttıracak bir çalışma biçimidir.
+
+58
+00:18:08,500 --> 00:18:30,480
+Bir de bu özellikle spiral modele kadar gelindiğinde çok sıkı standartlarla belgeleme kurallarının olması yedinci maddede bizim temel ölçüsü çalışan yazılımdır maddesi var.
+
+59
+00:18:33,971 --> 00:18:54,351
+Hem sponsorlar, hem developerlar, hem kullanıcılar geliştirilen ürünü sürekli yaşayacak hale ve sürekli bakımlayacak hale.
+
+60
+00:18:59,923 --> 00:19:11,644
+sürekli çalışabilir halde tutmaya ve teknik mükemmelliyetle.
+
+61
+00:19:17,683 --> 00:19:41,884
+Teknik mükemmelliyetle iyi bir tasarım, çevik, başka bir madde de basitliktir. Basitliktir çalışması önemli yazılımın ve mümkün olduğu kadar basit bir tasarımla işe başlayalım.
+
+62
+00:19:42,271 --> 00:19:53,831
+Burada çok ayrıntıya girmeyi sonraki evrelerle tamamlayacak şekilde bırakalım.
+
+63
+00:19:53,831 --> 00:20:00,011
+Ama bu şeyde değil, yani analiz, tasarım.
+
+64
+00:20:00,435 --> 00:20:13,735
+Aşamalarını gözden çıkaralım anlamında değil, kendi kendini düzenleyen ekiplerle en iyi
+
+65
+00:20:26,976 --> 00:20:44,336
+Belirli iç aralıklarla, düzenli aralıklarda ekip kendi kendini kontrol etsin ve davranışlarını kendi kendine ayarlasın.
+
+66
+00:20:45,587 --> 00:21:11,087
+Bu zaten karşımıza çıkacak. XP'de farklı şekilde, Scrum'da farklı şekilde bu iç düzenlemeler nasıl olacak? Yani iç toplantılardan söz edeceğiz hep. Bunlar nasıl gerçekleşecek şeklinde? Burada farklı bir yapılandırma olacak.
+
+67
+00:21:11,731 --> 00:21:14,508
+Şimdi birinci...
+
+68
+00:21:18,836 --> 00:21:29,516
+Çevik prensip, ekstrem programming, XP yaklaşımı üzerinde biraz duralım.
+
+69
+00:21:46,804 --> 00:21:49,064
+Nedenleri anlaşıldı mı?
+
+70
+00:21:51,064 --> 00:21:52,423
+Sorunuz var mı?
+
+71
+00:22:12,051 --> 00:22:14,271
+Bakıyorum, devam edenlere.
+
+72
+00:22:31,220 --> 00:22:36,680
+[öğrenci], duyabiliyor mu?
+
+73
+00:22:45,236 --> 00:22:53,635
+Şimdiye kadar gördüğümüz klasik süreç modellerinden 3 tanesini sayabilir misiniz?
+
+74
+00:23:06,708 --> 00:23:12,608
+Kan, yazabilirsin eğer mikrofonunda problem varsa.
+
+75
+00:23:37,076 --> 00:23:48,395
+Waterfall'u hatırlıyorsun. O zaman başka bir arkadaşınıza daha soralım. [öğrenci], duyabiliyor musun?
+
+76
+00:24:00,019 --> 00:24:02,080
+Yazabilirsiniz isterseniz.
+
+77
+00:24:15,476 --> 00:24:16,588
+biraz da başkanı
+
+78
+00:24:19,923 --> 00:24:21,023
+[öğrenci] [öğrenci]
+
+79
+00:24:40,307 --> 00:24:41,647
+[öğrenci], duyuyor musun?
+
+80
+00:24:44,728 --> 00:24:46,647
+Duyuyorum hocam.
+
+81
+00:24:46,988 --> 00:24:49,067
+O zaman sen söyler misin [öğrenci]?
+
+82
+00:24:50,448 --> 00:24:56,307
+Klasik yazılım geliştirme süreç modellerinden, geçen hafta gördüğümüz, birazcık tekrarını da yaptık.
+
+83
+00:24:58,807 --> 00:25:02,788
+En fazla demeyeyim de, arkadaşım waterfall'u söyledi.
+
+84
+00:25:03,248 --> 00:25:05,347
+Sen de üç tane söyleyebilir misin?
+
+85
+00:25:07,124 --> 00:25:13,763
+Spiral vardı, onu hatırlıyorum. Başka hatırlamıyorum şu an.
+
+86
+00:25:13,763 --> 00:25:15,163
+Tamam.
+
+87
+00:25:19,539 --> 00:25:23,819
+Spiral'in özelliği neydi? Hatırlıyor musun?
+
+88
+00:25:30,675 --> 00:25:34,335
+Spray modelde nasıl bir çalışma şekli var?
+
+89
+00:25:38,900 --> 00:25:40,420
+Yok hocam, çok hatırlıyorum.
+
+90
+00:25:40,420 --> 00:25:43,680
+O zaman şöyle bir üzerinden geçelim.
+
+91
+00:25:46,039 --> 00:25:50,940
+Şu şeyi bir bulayım ben.
+
+92
+00:26:35,955 --> 00:26:47,355
+Şimdi [öğrenci] [öğrenci] waterfall'ı hatırlıyorum dedi. [öğrenci] da spiral modeli hatırlıyorum dedi. Ama spiral model nasıldı?
+
+93
+00:26:55,824 --> 00:27:08,704
+En içte ilk evre prototip yaratılması, sonraki evre ürünün kullanılacak ürünün yaratılması. Böylece bu model, atımlı bir model.
+
+94
+00:27:09,624 --> 00:27:19,424
+Eklemelerle ürün elde ediyoruz. Ürünün en son, en olgun halini elde edene kadar birçok evre geçiriyoruz.
+
+95
+00:27:23,635 --> 00:27:29,975
+6 tane adımdan oluşan bir süreç geliştiriyoruz.
+
+96
+00:27:31,556 --> 00:27:38,604
+Bu adımlar bizim için...
+
+97
+00:27:41,907 --> 00:27:57,267
+Müşteriyle, müşteriden bilgi alma, bu aldığımız bilgiye göre planlama yapma, ikinci adım. Üçüncü adım, bu plan üzerinde riskler var mı, risk analizi yapma.
+
+98
+00:27:57,267 --> 00:28:02,267
+Daha sonra risk analizi yaptığımız...
+
+99
+00:28:04,243 --> 00:28:24,243
+Durumu ve planlamayı kullanarak modelleme, yani analiz ve tasarımın başlangıcını yapma. Sonra construction, ayrıntılı tasarım, yazılımın kodlanması ve mühendislik testinin yapılması. Daha sonra da...
+
+100
+00:28:26,291 --> 00:28:52,672
+Müşterinin değerlendirmesine sunma aşaması. Yani prototip bile geliştirsek, bu prototip geliştirirken bile bu 6 adımı uyguluyoruz. Sonra müşteriyle değerlendirme işini yaptıktan sonra tekrar kullanılacak ürünü geliştirmek üzere çalışmalara başladığımızda yine bu 6 alt adımı tekrarlayarak devam ediyoruz.
+
+101
+00:28:54,291 --> 00:29:16,711
+Nedir? İşte müşterinin isteklerini yeniden dinleme, planlama yapma, risk analizi yapma, sonra modelleme yapma, construction aşaması ve deployment yani müşteriye bunun aktarılması ve değerlendirmeyi almasını sağlaması.
+
+102
+00:29:21,855 --> 00:29:28,435
+Hem de evrimsel bir süreç modelinden söz ediyoruz.
+
+103
+00:29:29,435 --> 00:29:35,855
+Şimdi, tabii ki bu arada belgelemeyi de daha...
+
+104
+00:29:36,723 --> 00:29:38,923
+kuvvetle gerçekleştiriyoruz.
+
+105
+00:29:39,803 --> 00:30:01,483
+Şimdi biz az önce çevik yaklaşımlara neden geldiğimizi belirten, işte 12 maddelik bir çevik manifesto denilen, 2000'li yıllarda yerleşmiş olan çevik yaklaşımlardan söz ediyoruz.
+
+106
+00:30:03,955 --> 00:30:08,175
+Bu Çevik Manifesto'nun İngilizcesi üzerinde durduk.
+
+107
+00:30:11,827 --> 00:30:20,087
+Evet, [öğrenci] [öğrenci] da daha sonra yazmış.
+
+108
+00:30:21,827 --> 00:30:29,647
+Agile Kanban, bunlar Kanban da bir agile süreç.
+
+109
+00:30:36,276 --> 00:30:50,276
+Sipral, RAT model, unified process model bunlar klasik yaklaşımlarla geliştirilen yazılım geliştirme modelleri.
+
+110
+00:30:50,276 --> 00:30:55,211
+Kanban'da bir agile yaklaşım.
+
+111
+00:30:55,412 --> 00:31:12,412
+Kullanan yazılım geliştirme süreci. Yani Eceal başlı başına bir yazılım geliştirme süreç modeli değil de Eceal yaklaşımla geliştirilen süreç modelleri var. Bunlar da bizim...
+
+112
+00:31:14,099 --> 00:31:22,359
+En fazla kullandığımız, çok sayıda var yoksa Ecel yaklaşımla oluşturulmuş yazılım geliştirme süreç modeli.
+
+113
+00:31:22,440 --> 00:31:26,299
+Klasik süreç modelleri de aslında daha fazla sayılabilir.
+
+114
+00:31:27,639 --> 00:31:31,399
+Ama en yaygın kullanılanlardan söz ediyoruz burada.
+
+115
+00:31:31,399 --> 00:31:33,960
+Evet, [öğrenci] [öğrenci].
+
+116
+00:31:34,963 --> 00:31:45,003
+Size takip etmemişim sonra yazdığınızı. Ama böyle bir düzeltme yaptım. Teşekkürler.
+
+117
+00:31:48,435 --> 00:31:55,375
+Evet, şimdi, Eca'yı yaklaşımla yazılım geliştirme nedir?
+
+118
+00:32:03,571 --> 00:32:08,471
+Çevik yaklaşımlarla, agile yaklaşımlarla yazılım geliştirme nedir?
+
+119
+00:32:09,651 --> 00:32:18,651
+Ve biz burada, şöyle büyüteyim, önce onun tanımını verelim.
+
+120
+00:32:20,131 --> 00:32:23,871
+Böylece bu manifestonun nedenini de bir kez daha anlayalım.
+
+121
+00:32:23,971 --> 00:32:29,751
+12 madde üzerinde, orijinal yazısının üzerinden geçtik ama.
+
+122
+00:32:30,612 --> 00:32:44,992
+Bu talepleri arttıkça sektörde, bu talepleri daha hızlı karşılamak amacıyla geleneksel sistem modellerine alternatif olarak ortaya çıkmıştır çevik yaklaşımlar.
+
+123
+00:32:53,107 --> 00:33:03,707
+Geç ortaya çıkan gereksinim değişimlerini daha çabuk karşılamayı esas alan modellerdir hedef çevik yaklaşımla.
+
+124
+00:33:04,607 --> 00:33:12,407
+Bunu sağlamak üzere farklı çevik yaklaşım modelleri üzerinde geliştiriliyor.
+
+125
+00:33:12,407 --> 00:33:16,907
+Böylece önce bir tanımını yapmış olduk.
+
+126
+00:33:21,076 --> 00:33:25,775
+Çevik'le neden olan 12 maddelik manifesto üzerinde durmuştuk.
+
+127
+00:33:26,675 --> 00:33:32,475
+Şimdi Çevik yaklaşımın hedefinin anlamını söylemiş olduk.
+
+128
+00:33:43,667 --> 00:33:50,567
+Baktığımızda biz şimdi bu 12 maddeyi söyleyip neler değiştirilmek isteniyor.
+
+129
+00:33:52,007 --> 00:33:55,187
+Kalite açısından da değerlendirdiğimizde.
+
+130
+00:33:55,827 --> 00:34:14,247
+Dinamik kalite değerlendirmenin daha fazla modellerdir. Bunun anlamı ne? Yani gözden geçirmeler yerine daha fazla test, gerçek veri kullanarak test yapılması.
+
+131
+00:34:23,827 --> 00:34:29,447
+Development yaklaşımından, TDD yaklaşımından da söz edeceğiz.
+
+132
+00:34:30,127 --> 00:34:35,307
+Kaliteyle ilgili aktiviteler daha az aralıklarla yapılıyor.
+
+133
+00:34:35,547 --> 00:34:40,907
+Yani daha kısa aralıklarla testler, kısa aralıklarla gözden geçirmeler yapılıyor.
+
+134
+00:34:41,012 --> 00:34:52,092
+Arkadaşımlarda kullanıcı hikayeleri, bilim testler, müşteri geri beslemesi ile doğruluk ve süreklilik sağlanmaktadır.
+
+135
+00:34:53,351 --> 00:35:02,512
+Onu da az önce söylemiştim. Sürekli yazılımı yaşayan halde tutmak. Bu süreklilik kelimesi tabii daha iyi oldu burada.
+
+136
+00:35:04,628 --> 00:35:15,588
+Çevik modellerin geleneksel yazılım geliştirme süreçlerine göre kalite bakımından da böyle bir farklılığı var.
+
+137
+00:35:15,588 --> 00:35:26,648
+Şimdi, çevik süreçlerde bu 12 maddeyi söylemiştik.
+
+138
+00:35:34,068 --> 00:36:00,768
+12 madde bölerek değil de daha birleştirerek ve daha farklılıkları göz önünde bulundurarak öncelikle klasik süreçlere göre, klasik yazılım geliştirme süreçlerine göre çevik süreçlerde nasıl bir ekip yapısı var?
+
+139
+00:36:01,268 --> 00:36:21,927
+Yüz yüze görüşmelerin etkin aktarım olduğu bir ekip yapısı ve ekip üyelerinin çevik yaklaşım konusunda bilgilendirilmeleri, eğitim verilmesi.
+
+140
+00:36:25,108 --> 00:36:32,028
+Çalışan yazılımı üretmek ve bunu müşteriye daha hızlı teslim etmek.
+
+141
+00:36:34,328 --> 00:36:43,807
+Ekip üyeleri birbiriyle ve müşteriyle sürekli iş birliği içinde olmalıdırlar.
+
+142
+00:36:43,807 --> 00:36:47,948
+Tabii ki karşılıklı saygı ve güven içinde.
+
+143
+00:36:48,692 --> 00:36:53,351
+Çünkü birbirini değerlendirmeleri de söz konusu burada.
+
+144
+00:36:54,731 --> 00:36:57,692
+Birbirlerini değerlendirmeleri derken...
+
+145
+00:37:10,195 --> 00:37:16,855
+Tüm proje hakkında zarar üretiminde birlikte çalışırlar.
+
+146
+00:37:18,815 --> 00:37:24,435
+Tabi bu cümlelerle proje yöneticisi ortadan mı kalktı?
+
+147
+00:37:25,135 --> 00:37:27,716
+Çevik yaklaşımlarda gibi.
+
+148
+00:37:28,192 --> 00:37:41,572
+Makale konuları da var. Ama yine çevik yürütülen projelerde de bir proje yöneticisi var. Ama bu daha çok koordinatör gibi çalışıyor.
+
+149
+00:37:44,072 --> 00:37:54,572
+Böyle bir şu iş sana verildiği yapacaksın şu kadar günde değil de ekibin ortak denetimiyle herkes işini yapıyor şeklinde.
+
+150
+00:37:55,284 --> 00:38:21,996
+Yine proje hakkındaki fikirleri de toplantılarda tüm ekip elemanları söyleyebilecek bir yapıda oluşturuluyor. Çözülen bir sorun gereksizleşse bile çözüm sürecinde edilen deneyim ekibi daha sonra faydalı olabilir. O yüzden herkesin şeyleri...
+
+151
+00:38:22,003 --> 00:38:43,963
+Fikirleri değerlendiriliyor. Ekip kendi kendine düzenleyecek yapısı var. Ecai süreçlerde yapılan işe göre ekibin kendine uyarlaması, ekibin kullanacağı süreci yerel ortama uyarlaması,
+
+152
+00:38:50,132 --> 00:39:01,172
+Artımsal yazılım parçalarını teslim etmek için gerekli çalışma zamanlamasını ekibin kendisinin belirlemesi.
+
+153
+00:39:01,172 --> 00:39:14,751
+Bütün bunlar çevik yaklaşımda olan ekiplerin çalışma özellikleri, çalışma biçimleri burada bahsettiklerimiz.
+
+154
+00:39:17,043 --> 00:39:19,915
+Şimdi bir...
+
+155
+00:39:23,027 --> 00:39:27,807
+Çevik yazılım geliştirme süreci,
+
+156
+00:39:32,019 --> 00:39:39,599
+Nasıl bir esneklik sağlıyor? Ve anahtar kelimeleri nelerdir?
+
+157
+00:39:46,036 --> 00:40:04,536
+Burada bireyler ve etkileşimler önemlidir. Çalışan yazılımı bir an önce üretmek önemlidir. Müşteri bu sürece katılmalıdır. Yani müşteri de gerçek bir ekip üyesidir.
+
+158
+00:40:12,436 --> 00:40:16,155
+Bilgi sistemini geliştirme tarafıdır.
+
+159
+00:40:17,360 --> 00:40:34,680
+Arada bir soru sorulacak şeklinde değil de, müşteriden seçilen kişiler sürekli olarak ekibin içinde yer alacaktır, sürece katılacaktır şeklinde. Burada bir düzeltme yapıyoruz.
+
+160
+00:40:45,684 --> 00:40:49,164
+Buna uyum sağlayacak şekilde olacaktır.
+
+161
+00:40:49,164 --> 00:40:55,284
+Süreçler
+
+162
+00:41:00,755 --> 00:41:24,956
+Klasik süreçlere baktığımızda, bireysindeki etkileşimler arasında süreçler ve bunlarda kullanılacak geçim gereçleri yerine taraflar arasında sürekli etkileşimin olması.
+
+163
+00:41:34,739 --> 00:41:37,579
+Ben bu yazılımı nasıl takip edebilirim?
+
+164
+00:41:44,851 --> 00:41:48,112
+Evet, şimdi tekrarlıyorum az önce söylediklerimi.
+
+165
+00:41:50,771 --> 00:42:14,971
+Geliştirilen yazılımı daha iyi takip etmek için, bakımını yapabilmek için gerekli belgeler nelerdir? Bunları tam olarak hazırlayayım. Her yazılım için çok ayrıntılı belgeler hazırlayıp bunların amacını düşünmeden hazırlamak yerine çalışan yazılımı üretmek.
+
+166
+00:42:15,380 --> 00:42:26,800
+ve çalışan yazılıma bakımını yaparken kullanacağımız gerekli belgeleri üretmek şekline dönüşmüştür.
+
+167
+00:42:27,260 --> 00:42:36,059
+Yani ecel süreç kullanıyoruz diye eski program mantığına geri dönmüş değiliz.
+
+168
+00:42:36,599 --> 00:42:39,279
+Gerekli belgeler yine hazırlanıyor.
+
+169
+00:42:39,279 --> 00:42:41,640
+Müşterinin sürece katılımı.
+
+170
+00:42:42,032 --> 00:42:55,032
+Müşteri işin her seferinde var. Sadece sözleşme pazarlığı dediğimiz gereksinim analizi bitti. Müşteriyi bir daha...
+
+171
+00:42:55,668 --> 00:43:19,467
+soralım, istenilenler olduğumuz şeklinde değil. Değişikliklere uyum sağlayacak şekilde dinamik bir proje planı, anahtar kelimemiz yine. Bir plan var, bu planı izleyeceğiz. Bu planı sadece belli evrelerde takip ettik.
+
+172
+00:43:19,856 --> 00:43:35,936
+Yeterli mi diye bakmak değil. Sürekli planı dinamik olarak küçük aralıklarla izlenmesi, değişikliklere uyum sağlayacak şekilde planın da değiştirilmesi gerekiyor.
+
+173
+00:43:37,775 --> 00:43:46,056
+Bir plan yaptık, artık hep bunu izlemeliyiz, hiçbir değişiklik yapamayız şeklinde bir kural yok çevik süreçlerde.
+
+174
+00:43:47,507 --> 00:43:53,807
+Evet, yani şimdi baktığımızda şurada iki sütun var.
+
+175
+00:44:06,228 --> 00:44:30,228
+Maddelerimiz daha önemli çevik süreçlerde. Nedir bunlar? Kişiler, paydaşlar, yazılım geliştirmişleri, müşteri, programcı, veri tabanı uzmanı, sistem analisti bunların arasındaki bütün etkileşimler önemli.
+
+176
+00:44:31,027 --> 00:44:46,027
+Süreçler de önemli. Süreçler takip ediliyor. Ama bu tarafa daha çok önem veriliyor. Çalışan yazılım önemli. Ayrıntılı belgeleme de önemli. Ama ayrıntılı belgeler...
+
+177
+00:44:48,115 --> 00:45:05,236
+Ne işe yarayacağını bileceğimiz şekilde gerekli olanların hazırlanması biçiminde. Müşterinin sürece katılımı önemli. Gereksinim analizinde göreceğiz. Negotiation, sözleşme pazarlığı.
+
+178
+00:45:05,876 --> 00:45:20,856
+Bu da sadece dikkate alınacak bir şey değil. Ama yine bu yapılacak. Ama müşteri sürece katılmışsa zaten buradaki işlem daha hafif geçecek.
+
+179
+00:45:21,616 --> 00:45:32,616
+Değişikliklere uyum sağlamak önemli. Bir plan izleyeceğiz ama bu plan değişik değil diye de düzeltmiş olacağız.
+
+180
+00:45:35,764 --> 00:45:36,963
+Şimdi...
+
+181
+00:45:41,556 --> 00:46:06,775
+İlerlemeler de önemli. Yazılımın artımsal gelişimi, müşteriye erken ve sık ürün teslimi, birinci ölçütte doğru çalışma yazılımın elde edilmesi tabii ki. Bunu da sağlamış olmamız gerekiyor.
+
+182
+00:46:07,411 --> 00:46:17,591
+Şimdi geleneksel yazılım geliştirme süreç modellerine göre kaliteyle farkını gördük.
+
+183
+00:46:33,652 --> 00:46:36,411
+Ve biraz da kanbandan bahsedeceğim.
+
+184
+00:46:36,411 --> 00:46:44,192
+Anklopment kavramından da söz edeceğim.
+
+185
+00:46:44,491 --> 00:46:57,592
+Çünkü bu güncel bir kavram olarak bitirdiğinizde de bilmeniz gereken kavramlar olarak sorulan.
+
+186
+00:48:50,579 --> 00:48:57,400
+Evet, saat şu anda 10. 10 dakika ara veriyorum. Herkes takip edebiliyor değil mi?
+
+187
+00:49:08,563 --> 00:49:12,003
+Tamam, teşekkürler. 10 dakika sonra devam edeceğiz.
+
+188
+01:04:23,987 --> 01:04:26,088
+Evet, derse devam ediyoruz şimdi.
+
+189
+01:04:50,547 --> 01:04:58,027
+Yazılım geliştirme süreçleri içinde çevik süreçlerin tanıtımına başlayacağız.
+
+190
+01:04:58,027 --> 01:05:03,027
+Şimdiye kadar çevik süreçlerin genel özellikleri üzerinde durduk.
+
+191
+01:05:04,227 --> 01:05:12,367
+Şimdi de çevik süreçlerden XP yaklaşımı üzerinde duracağız.
+
+192
+01:05:13,460 --> 01:05:21,440
+XP, Extreme Programming. Extreme Programming, bunu değişik isimlerde tercüme ettik.
+
+193
+01:05:21,440 --> 01:05:32,679
+İşte, Extreme Uç Programlama gibi farklı isimler aldı.
+
+194
+01:05:43,219 --> 01:05:46,860
+Ekstrem kelimesinin karşılığı
+
+195
+01:05:47,380 --> 01:06:04,300
+değişik şekillerde Türkçeleştirildi. Uç programlama, aşırı programlama gibi isimler verdik zaman zaman. Ama şu anda hiçbirinin tam uymadığını düşünüyoruz bu tanıma.
+
+196
+01:06:13,748 --> 01:06:39,648
+Bu 12 maddelik, az önce daha kısaltarak söylediğim bütün çevik süreç özellikleri var. Bunu burada 4 temel değer çerçevesinde geliştirdiler XP yazılım geliştirme sürecini tanımlarken.
+
+197
+01:06:41,748 --> 01:06:45,327
+İletişim, geri besleme ve cesaret.
+
+198
+01:06:47,047 --> 01:07:01,748
+Burada planlama oyunları, küçük kısa aralıklı yayımlar, yani küçük kısa aralıklı artımlar, artımsal bir yazılım geliştirme süreç modeli aynı zamanda XP.
+
+199
+01:07:03,208 --> 01:07:07,708
+Küçük kısa aralıklı yayımlar, yani küçük kısa aralıklı release'ler.
+
+200
+01:07:10,612 --> 01:07:23,432
+Müşterinin kullanacağı yazılım ürünlerini kısa aralıklarla ekleyerek vermek.
+
+201
+01:07:23,827 --> 01:07:40,528
+Sistem metaforu, basit tasarım, yine XP'den önce çevik yaklaşımların hepsinde tasarımlarınızı çok karmaşık yapmayın, basit yapın ve giderek geliştirin şeklinde bir öğüt var.
+
+202
+01:07:45,300 --> 01:08:05,300
+Tasarım, refactoring, eşle programlama, pair programming, ortak kod mülkiyeti. Bu ortak kod mülkiyetinden aslında bir de şunu anlıyoruz. Analist, tasarımcı, kodu üreten programcı, hepsi...
+
+203
+01:08:06,704 --> 01:08:21,664
+Ürünün tamamında ne yapıldığını biliyor. Sadece kendi işini değil, yani kendi işini daha iyi bilse de diğerleri hakkında da bilgisi olacak şekilde çalışıyor. Ortak kod mülkiyetinden. Bunu anlıyoruz aslında.
+
+204
+01:08:22,523 --> 01:08:27,724
+Pair programlama da EŞ'le programlama. Bu XP'de daha çok var.
+
+205
+01:08:29,779 --> 01:08:48,680
+Bütün bu Scrum, Kanban, XP hepsi çevik yaklaşımın esas felsefesi üzerinde gelişse de kendilerine has anahtar kelimeler var. İşte burada da bunları söylüyoruz XP ile ilişkili.
+
+206
+01:08:49,939 --> 01:09:05,459
+Sürekli bütünleştirme ve devam edilebilir bir hız. Burada da çalışanlarla ilişkili de bir sınırlama var.
+
+207
+01:09:06,895 --> 01:09:24,355
+Haftada çalışacak şekilde devam ettirilebilir bir hızda çalışması ekip üyesinin. Müşteri de ekip üyesi ve kodlamada belli standartların kullanılması. Bunların hepsi XP'nin özellikleri.
+
+208
+01:09:32,256 --> 01:09:56,076
+Uç programlama dediğimizde planlama, tasarım, kodlama, sınama var ve artımsal bir yazılım geliştirme süreç modeli özelliğine baktığımızda planlama müşteri kullanıcı öykülerini oluşturur ve öneme göre derecelendirir.
+
+209
+01:10:00,000 --> 01:10:21,300
+Öyküler varsa, müşteriden bunları alt öykülere ayırması istenir. Çünkü az önceki özellik yapısında da kısa artımlarla, kısa release'lerle geliştirilmesi isteniyor XP'de ürünün.
+
+210
+01:10:25,043 --> 01:10:32,743
+Ekip ve kullanıcı öykülerin sıradaki artımsal ürüne nasıl ekleneceğine karar veriliyor.
+
+211
+01:10:32,743 --> 01:10:45,804
+Yani önce hangi öyküden başlayacağız? Yüksek riskli öyküden mi? Önceliğine göre, önemine göre mi?
+
+212
+01:10:47,956 --> 01:11:01,355
+Tüm öyküler kısa sürede gerçeklenecek gibi, yani 3 haftada gerçeklenemeyecekse zaten burada da söylediğimiz gibi alt öykülere ayırmamız gerekiyor.
+
+213
+01:11:01,355 --> 01:11:12,296
+Burada çalışma şekli üzerinde duruldu.
+
+214
+01:11:20,884 --> 01:11:36,043
+Planlamada ilk artımsal ürün projenin hızını ölçme amacıyla değerlendirilir. Ona göre sonraki artımların teslim tarihleri belirlenir.
+
+215
+01:11:36,043 --> 01:11:47,043
+Bu da az önce yine söylediğimiz şeye uyuyor. Bir plan var ama bu plan değişmez değil. Plan dinamik. İlk ürünü teslim ettiğimizde.
+
+216
+01:11:48,083 --> 01:12:04,743
+Bu ürünü ne kadar sürede teslim edebildik, ekibin çalışma hızı nedir? O zaman bundan sonraki artımları ona göre teslim edelim diye planımızı değiştirelim.
+
+217
+01:12:15,507 --> 01:12:32,667
+Bu artımsal ürünlerin içerikleri gözden geçirilir. Yani kapsam azaltılmaya çalışılır. Süreç ilerledikçe müşteri yeni öyküler ekleyebilir. Eski öykülerin önceliğini değiştirebilir.
+
+218
+01:12:42,047 --> 01:13:00,547
+Planlamamızda da değişiklik olacaktır. Bu değişiklikler gerçekleştirilen işe bağlı olarak yürütülecektir.
+
+219
+01:13:06,707 --> 01:13:19,227
+Devam edelim XP'deki süreç aşamalarına. Planlamadan sonra tasarım. Tasarımda özellikler nelerdir?
+
+220
+01:13:23,252 --> 01:13:24,552
+Daha üstündür.
+
+221
+01:13:26,552 --> 01:13:33,252
+Ve bir Class Responsibility Collaboration kartı oluşturulur.
+
+222
+01:13:33,612 --> 01:13:38,532
+Belki nesneye yönelik yaklaşımdan hatırlıyorsunuz.
+
+223
+01:13:40,432 --> 01:13:45,152
+CRC kartları burada kullanılıyor.
+
+224
+01:13:46,800 --> 01:14:09,559
+Sorumluluk ve işbirliği. Her bir sınıfı incelerken, yazılımı sınıflar halinde incelerken, her bir sınıfın yapısı, sınıfın sorumluluğu nedir, sınıfın işbirliğinde oldukları sınıflar hangileridir? Bunlar belirlenir.
+
+225
+01:14:14,195 --> 01:14:35,435
+Bir tasarım varsa eğer bir prototip yaratılıp bunun üzerinde geliştirilmesi tavsiye edilir. Refactoring de tasarımın yenilenmesi. Bu da Kisbi'de teşvik edilir.
+
+226
+01:14:40,404 --> 01:14:49,664
+Tasarım aşamasında bir CRC kartları oluşturulur. Bir de ön gerçeklemeler yani prototip oluşturulur.
+
+227
+01:14:58,420 --> 01:15:16,940
+CRC kartları dediğim gibi daha önceden biliyor olabilirsiniz. Ama burada adı geçtiği için ve tasarımda da bu XP tasarımlarında bu yer aldığı için bir daha hatırlayalım.
+
+228
+01:15:16,940 --> 01:15:24,299
+Bir CRC kartı örneği, CRC mi deriz.
+
+229
+01:15:24,724 --> 01:15:48,824
+Burada satış sınıfı, kasada yapılan ödemeyi simgeleyen sınıf, bunun üst sınıfı yok, alt sınıfı yok. Sorumluluğu nedir? Satışın yapıldığı tarih ve saati saklamak, yapılan ödeme tutarını saklamak, satılan malların da listesine erişebilir olması gerekiyor.
+
+230
+01:15:51,220 --> 01:16:18,680
+Collaboration işbirliği içinde olduğu sınıflar hangileri? Yapılan ödeme tutarını sakladığı için ödeme sınıfı, satılan malların listesine erişim sağlayabileceği için mal sınıfı da işbirliği içinde olduğu sınıflardandır. Böylece CRC kartlarını da hatırlamış olduk.
+
+231
+01:16:19,123 --> 01:16:22,163
+Buraya kadar sorunuz var mı?
+
+232
+01:16:30,195 --> 01:16:32,515
+Şimdi o zaman neredeyiz? Bir bakalım.
+
+233
+01:16:32,515 --> 01:16:39,995
+Scrum'a geçmeden önce.
+
+234
+01:17:03,731 --> 01:17:05,171
+Bu arada?
+
+235
+01:17:09,652 --> 01:17:10,252
+Bizim
+
+236
+01:17:26,036 --> 01:17:39,615
+Planlama aşamasında yaptıklarımızı gördük XP'de. Tasarım aşamasında özellikle yaptıklarımızı gördük. Kodlama sırasında ne yapıyoruz?
+
+237
+01:17:44,020 --> 01:17:51,820
+Diğer yazılım geliştirme süreç modellerinden farklı bir iş var mı burada?
+
+238
+01:17:52,420 --> 01:17:56,900
+Kodlama sırasında Pair Programming'den bahsetmiştik.
+
+239
+01:17:57,020 --> 01:18:02,220
+XP'nin özelliği olan, XP'nin anahtar kelimelerinden birisi olan.
+
+240
+01:18:02,840 --> 01:18:03,620
+Şurada bakalım.
+
+241
+01:18:07,923 --> 01:18:26,203
+Pair Programming, EŞ'le programlama. Bunun anlamı nedir? Özellikle 2000'li yıllarda çevik yazılım geliştirme süreçleri tanıtıldığında burada
+
+242
+01:18:27,956 --> 01:18:36,076
+Eşle programlama, XP ilk kullanılan yazılım geliştirme süreci olduğu için çevik modellerde.
+
+243
+01:18:37,796 --> 01:18:41,076
+Peri Programming çok fazla önem kazandı.
+
+244
+01:18:41,876 --> 01:19:04,456
+Bu nedir? Aynı anda bilgisayarda program yazımı sırasında iki tane programcının olması ve pair programming'i çalışabilen bilgisayarlar, iki klavyeli bilgisayarlar, birisi yazılımı geliştirmek üzere.
+
+245
+01:19:06,836 --> 01:19:20,435
+çalışmalar yaparken, diğeri de onu gözden geçirme işini gerçekleştiriyor. Gerekirse müdahale ediyor. Bu noktada, şurada,
+
+246
+01:19:22,355 --> 01:19:32,476
+Evrelere baktığımızda planlamadaki özellikleri söyledik, tasarımdaki özellikleri söyledik, refactoring ve basitlik tasarımda.
+
+247
+01:19:32,476 --> 01:19:40,916
+Kodlamada pair programming kullanımı, sınamada ise test driving development kullanılması.
+
+248
+01:19:41,416 --> 01:19:44,695
+Şimdi biraz test driving development'a bakalım.
+
+249
+01:20:00,000 --> 01:20:16,819
+Test Driven Development, test güdümlü yazılım geliştirme, Test Driven Development stratejisi, küçük ve hızlı iterasyonlar yazılım geliştirme araçları ile hazırlanmış testler yazılır.
+
+250
+01:20:22,100 --> 01:20:24,739
+Çevik yaklaşımlar için uygundur.
+
+251
+01:20:25,700 --> 01:20:31,088
+XP'de de özellikle daha...
+
+252
+01:20:31,087 --> 01:20:45,247
+Sistemin tanımı yapılırken, bu sistemin sistem analizi gerçekleştirilirken veya gereksinim analizi oluşturulurken bu sistemedeki bu gereksinim nasıl test edilecek?
+
+253
+01:20:45,247 --> 01:20:51,247
+Bunu da belirterek ilerlemek gerekiyor.
+
+254
+01:20:59,283 --> 01:21:10,923
+Hangi iterasyonlar varsa bunlar için testler geliştiriyor.
+
+255
+01:21:10,923 --> 01:21:14,827
+Bu test development da...
+
+256
+01:21:18,100 --> 01:21:28,100
+Bilim test keyzleri yazılıyor. Yazılmış olan test keyzlerin henüz kod yazılmadığı için...
+
+257
+01:21:30,836 --> 01:21:48,176
+Başarısız olduğu ilk başta bilinir. Daha sonra kod yazıldıkça bu belirlenen birim test geyazlar çalıştırılır. Test geyazları tekrar tekrar koşturarak geçtiğini görmek gerekir.
+
+258
+01:21:49,376 --> 01:21:56,836
+Ve gerekirse kodun tekrar düzenlenmesi gerekmektedir.
+
+259
+01:21:57,728 --> 01:22:02,507
+Test Drive Development'ın aşamaları bu şekilde.
+
+260
+01:22:12,372 --> 01:22:24,471
+Oldukça öncelerden beri, yani 2000'li yıllarda agile programlama başladığında aynı şekilde test and development yaklaşımı da başlamış durumda.
+
+261
+01:22:24,471 --> 01:22:35,971
+Hakan Erdoğmuş, IEEE Software'in de editörü olan Türk uzman.
+
+262
+01:22:36,756 --> 01:22:54,076
+Bu konuda araştırmalar yapmıştır. Hakan Erdoğmuş, bizim 2009'da yaptığımız Ulusal Yazılım Mühendisliği konferansına da Amerika'dan davetli konuşmacı olarak çağrılmıştı.
+
+263
+01:23:04,372 --> 01:23:21,752
+çalışan bir akademisyen, test run development'ın programcı ürkenliğini arttırdığını ama kalite açısından çok büyük farklılık olmadığını belirtmiştir.
+
+264
+01:23:30,260 --> 01:23:42,000
+Programcıyı kodlar ve test sonuçlarını yedekleme konusunda da teşvik ettiğini belirtmiştir Hakan Erdoğan'ın çalışmaları.
+
+265
+01:23:54,484 --> 01:23:56,184
+Buraya kadar sorunuz var mı?
+
+266
+01:24:15,891 --> 01:24:20,211
+Şimdi Scrum hakkında konuşacağız biraz.
+
+267
+01:24:22,011 --> 01:24:32,072
+Yalnız XP'yi geçmeden önce bir soru sormak istiyorum.
+
+268
+01:24:35,731 --> 01:24:38,891
+[öğrenci], beni duyuyor mu?
+
+269
+01:24:41,891 --> 01:24:43,691
+[öğrenci].
+
+270
+01:24:44,551 --> 01:24:45,091
+Evet hocam.
+
+271
+01:24:59,828 --> 01:25:06,208
+Yazılım geliştirme süreç modeli vardır. Yani özellikleri nelerdir, temel özellikleri?
+
+272
+01:25:08,268 --> 01:25:19,228
+Özellikleri biraz çevre benziyor diye anladım ben. Peer programming vs. daha etkileşimli bir yaklaşım değil mi?
+
+273
+01:25:20,228 --> 01:25:20,728
+Evet.
+
+274
+01:25:22,728 --> 01:25:27,048
+Onun dışında bilmiyorum.
+
+275
+01:25:28,243 --> 01:25:37,683
+XP'de Alaaddin [öğrenci], sen söyler misin?
+
+276
+01:25:48,884 --> 01:25:50,188
+[öğrenci] şey de...
+
+277
+01:25:56,083 --> 01:25:57,623
+[öğrenci] şey daha özdemir.
+
+278
+01:26:09,747 --> 01:26:11,528
+[öğrenci] şey daha özlemi duydun mu?
+
+279
+01:26:12,087 --> 01:26:14,688
+Hocam, chatten yazıyorlar. Mikrofonlar yok herhalde.
+
+280
+01:26:14,688 --> 01:26:17,847
+Evet, gördüm. Tamam, tamam. Teşekkürler.
+
+281
+01:26:20,768 --> 01:26:32,608
+O zaman Alaaddin, önce sen yazar mısın? XP'nin nasıl bir yazılım geliştirme süreç modeli olduğunu.
+
+282
+01:26:33,684 --> 01:26:37,424
+Çevik bir model ama başka hangi özelliği var?
+
+283
+01:26:42,292 --> 01:26:44,632
+Şey daha sen biliyorsan sen de yazabilirsin.
+
+284
+01:27:11,956 --> 01:27:13,496
+hangi özellikleri vardır?
+
+285
+01:27:22,515 --> 01:27:24,475
+Şöyle bir üzerinden geçelim o zaman.
+
+286
+01:27:36,212 --> 01:27:47,272
+Arkadaşlarınızın dışında yorum yapmak, söylemek isteyen var mı? XP nasıl bir yazılım geliştirme süreç modelidir?
+
+287
+01:27:49,112 --> 01:27:51,372
+Hocam hatırladıklarımı söyleyebilirim ben.
+
+288
+01:27:51,852 --> 01:27:52,192
+Tamam.
+
+289
+01:27:53,231 --> 01:27:58,372
+Kısa aralıklarla release'ler var. Sondan başlayayım, son hatırladıklarımdan.
+
+290
+01:27:58,372 --> 01:28:01,731
+Test during development var.
+
+291
+01:28:03,572 --> 01:28:07,372
+Böylece test demeye yönelik işte yedeklerin alınması.
+
+292
+01:28:09,076 --> 01:28:15,615
+Bir yandan kod geliştirirken diğer kullanıcının fair programming ile yazılan kodu test etmesi.
+
+293
+01:28:16,315 --> 01:28:18,155
+Ama bu kaliteyi arttırmamış.
+
+294
+01:28:18,155 --> 01:28:21,536
+Bir başta söylediğim, aslında biraz açalım onu.
+
+295
+01:28:21,636 --> 01:28:25,296
+Artımlı bir yazılım geliştirme süreç modelidir. Bunu duymak istiyordum.
+
+296
+01:28:25,655 --> 01:28:35,376
+Artımlı yazılım geliştirmede uzun süreli geliştirme değil, daha kısalı geliştirmelerle kısa aralıklarla release'ler.
+
+297
+01:28:35,935 --> 01:28:36,216
+Evet.
+
+298
+01:28:37,076 --> 01:28:44,015
+Ortaya konması ve hataların erkenden test edilmesi şeklinde bir süreç diye anladım ben.
+
+299
+01:28:46,615 --> 01:28:52,495
+Evet. Evet, teşekkürler. [öğrenci] değil mi?
+
+300
+01:28:53,456 --> 01:28:54,195
+Evet hocam.
+
+301
+01:28:54,195 --> 01:28:54,495
+Tamam.
+
+302
+01:28:57,652 --> 01:29:16,992
+Bu arada Alaaddin [öğrenci] da yazdı. XP müşteriyi öne koyuyordu. Yani bunun anlamı şu, bütün aslında çevik modellerle eşit özelliği. Müşteri ekibin bir parçası oluyor.
+
+303
+01:29:18,735 --> 01:29:35,376
+Biz diğer klasik süreç modellerinde nasıl gördük? Analizi yapıyoruz, müşteriye soruyoruz, bu geliştirdiğimiz model sizce uygun mu? Ondan sonra tasarımı yapıyoruz, tasarımdan sonra tekrar müşteriye soruyoruz uygun mu diye.
+
+304
+01:29:43,060 --> 01:29:56,860
+Müşteriyi ekibin bir parçası haline getiriyoruz ve ekibin içindeki bütün uygulamalarda var olacak.
+
+305
+01:29:56,860 --> 01:29:59,860
+Tabii ki bütün müşterilerin hepsini...
+
+306
+01:30:00,000 --> 01:30:24,920
+Ekibin üyesi yapmamız uygun, mümkün değil. Müşteri tarafından gerektiği kadar sayıda temsilci seçilerek bunlar yazılımın yapılacağı konuyla ilişkili bütün bilgileri vermek ve değerlendirmeleri yapmak konusunda
+
+307
+01:30:27,699 --> 01:30:30,399
+çalışma geliştirmiş olacaklardı.
+
+308
+01:30:36,916 --> 01:30:40,596
+Evet, böylece bu müşteri tarafını da vurgulamış olduk.
+
+309
+01:30:42,596 --> 01:30:44,355
+Evet, sorunuz var mı?
+
+310
+01:30:46,355 --> 01:30:47,876
+XP ile ilişkili.
+
+311
+01:30:49,996 --> 01:31:00,756
+Tamam, o zaman biz Scrum nasıl bir yapıdadır? Ona geçelim.
+
+312
+01:31:39,764 --> 01:31:55,804
+Bu CRC kartları bugün bahsettiğim daha önce nesneye yönelik yaklaşım dersinden, nesneye yönelik programlama dersinden bildiğiniz bir kavramdı değil mi?
+
+313
+01:32:09,011 --> 01:32:13,671
+Alaaddin [öğrenci], Nesli'ye yönelik yaklaşım dersini aldınız mı?
+
+314
+01:32:16,072 --> 01:32:18,511
+Sizden daha önce cevap geldiği için soruyorum.
+
+315
+01:32:22,131 --> 01:32:31,631
+Nesne'ye yönelik yaklaşım dersini almış olanlar, CRC kartı hakkında bilgi sahibi mi?
+
+316
+01:32:33,351 --> 01:32:36,071
+Ben bilmiyorum hocam, bu dönemi alıyorum. Herhalde göreceğiz.
+
+317
+01:32:37,691 --> 01:32:42,931
+Evet, daha önce almış olanlar bir fikrini söyleyebilir mi?
+
+318
+01:32:47,828 --> 01:33:01,748
+Evet, tamam. O zaman yeterince üzerinde durduk herhalde değil mi? Tekrar şöyle bir şeye getireyim ben onu. Scrum'a geçmeden önce.
+
+319
+01:33:04,351 --> 01:33:12,032
+Çevik, agile süreçler içinde özellikle XP'de CRC kartlarıyla tasarımda faydalanıyoruz.
+
+320
+01:33:12,032 --> 01:33:21,652
+Her bir sınıfın adı, gerçekleştirdiği iş ve özellikleri belirtiliyor.
+
+321
+01:33:22,231 --> 01:33:29,032
+Sınıfın sorumluluğu yani hangi işlemleri gerçekleştiriyor ve sınıfın...
+
+322
+01:33:29,747 --> 01:33:44,747
+Collaboration, iş birliği içinde bulunduğu sınıflar hangileri ve hangi sorumluluklarla bunlar birbirine bağlanıyorlar, bunu da tanımlamış oluyoruz.
+
+323
+01:33:57,555 --> 01:33:59,095
+CRC kartlarını.
+
+324
+01:34:01,015 --> 01:34:04,855
+CRC'nin açılımı resource kart gibi falan bir şey mi?
+
+325
+01:34:04,855 --> 01:34:23,895
+Yok, hayır. C, class, geçmişti yukarıdaki şeylerde de. C, class, R, sorumluluk, responsibility, C'de collaboration, işbirlikçi. Yani sınıf, class, sorumluluk, responsibility.
+
+326
+01:34:24,627 --> 01:34:26,567
+Birlikçi, collaboration.
+
+327
+01:34:28,028 --> 01:34:28,768
+Teşekkür ederim.
+
+328
+01:34:34,707 --> 01:34:39,627
+Evet, şimdi bakalım Scrum'ın temel özellikleri nelermiş?
+
+329
+01:34:39,627 --> 01:34:49,387
+Şimdi ben tekrarlıyorum, çok fazla tekrarlıyorum ama bu kavramlar yerleşsin istiyorum.
+
+330
+01:34:49,528 --> 01:34:52,407
+Çünkü artık Ecel yaklaşımlar çok fazla kullanılıyor.
+
+331
+01:35:01,203 --> 01:35:25,823
+yapısını verdik. Ecel süreçlerde hangi özellikler var? Temel özellikleri nelerdir? Ve 2000'li yıllarda yapılan Ecel Manifesto'da yer alan 12 maddelik kuralları verdik veya istekleri verdik.
+
+332
+01:35:28,756 --> 01:35:50,816
+Bunları önce gözden geçirdik. Daha sonra bunlar ecel yaklaşımda nasıl yerine getiriliyor? Onu gördük. Bunu da şurada gördük. Ecel yaklaşımlarda nasıl yerine getiriliyor bu belirtilenler?
+
+333
+01:36:04,532 --> 01:36:06,351
+Şurada görmüştük.
+
+334
+01:36:06,351 --> 01:36:12,351
+Ecel, çevik süreçlerin hepsinde, yani ister XP olsun, ister...
+
+335
+01:36:14,292 --> 01:36:41,072
+Scrum olsun, ister Kanban olsun. Bireyler ve etkileşimler önemli. Süreçler de var yine ama ikinci plana geçiyor. Çalışan yazılım önemli. Ayrıntılı belgeler var ama çok ayrıntılı ve daha sonra nerede kullanacağımızı kestiremediğimiz belgeler değil, gerekli olanların tam olarak doldurulması şeklinde var.
+
+336
+01:36:42,292 --> 01:37:05,852
+Bu önemli. Müşteriyle arada sözleşme pazarlığı yapmak yerine sürekli müşterinin içimizde olması var. Tabii ki arada sözleşme pazarlığı da yapılacak. Değişikliklere uyum sağlayacak şekilde plan yapılıyor. Bir tek plan yapıp onu izlemek zorunda değiliz.
+
+337
+01:37:08,659 --> 01:37:13,619
+Değişikliklere uyum sağlayacak şekilde dinamik bir plan izliyoruz.
+
+338
+01:37:16,539 --> 01:37:25,100
+Evet, şimdi Scrum yapısını görelim.
+
+339
+01:37:27,219 --> 01:37:33,699
+Scrum, ikinci ecel sürecimiz.
+
+340
+01:37:37,492 --> 01:38:02,672
+Adımlarımız, bir görev listesi oluşturuluyor. Hangi koşular var, bunlar belirtiliyor. Ve daha sonra da bu süreç içinde hangi işlev yerine getirildiyse bunun belirtimi gerçekleştiriliyor.
+
+341
+01:38:03,252 --> 01:38:19,412
+Görev listesi dediğimiz şey önceliklendirilmiş kullanıcı öyküleri. Yani önce sistem analistleri ya da onun yerine geçecek olan kişiler.
+
+342
+01:38:19,891 --> 01:38:41,371
+Bir görev listesi hazırlıyorlar. Bu görev listesi nedir? Kullanıcı neler istiyor? Kullanıcıyla beraber oluşturdukları kullanıcı öyküleri, yani use case'ler. Bunlar önceliklendiriyor. Önceliklendirmenin anlamı ne?
+
+343
+01:38:43,091 --> 01:38:50,531
+Hangileri daha önce yazılım haline getirilmesi gerekiyor?
+
+344
+01:38:51,671 --> 01:38:57,572
+Koşu dediğimiz şey, görev listesinin maddelerinden bir tanesi seçilir.
+
+345
+01:38:58,771 --> 01:39:04,091
+Önceden belirlenmiş olan kısa bir süre içinde bu gerçekleştirilir.
+
+346
+01:39:07,412 --> 01:39:12,532
+Örneğin bir haftada, örneğin dört haftada, dört haftadan uzun olmaması gerekiyor.
+
+347
+01:39:13,791 --> 01:39:18,851
+Koşu süresince de ekibin her gün yaptığı bir kısa toplantı var.
+
+348
+01:39:20,252 --> 01:39:24,731
+Bu kısa toplantı örneğin on beş dakika gibi.
+
+349
+01:39:25,363 --> 01:39:51,083
+Bir proje lideri yani yine bir proje yöneticisi, proje koordinatörü var. Cevaplanmaya çalışılan sorular şunlardır. Herkes birbirine son toplantıdan bu yana ne yaptınız? Karşılaştığınız engeller nelerdi? Now-how oluşturmak üzere. Yarınki toplantıda neleri başarmayı hedefliyorsunuz?
+
+350
+01:39:52,832 --> 01:40:15,892
+Burada işlev gösteriminden kastımızda müşteri en son yapılmış olan fonksiyonu test eder ya da o zamana kadar yapılmış olan tüm müşteri isteklerini test eder.
+
+351
+01:40:16,500 --> 01:40:40,319
+Şimdi burada bu koşudan kastımız, mesela bir hafta başında yapılan toplantıda, o hafta başında hangi use case'ler çalışır hale getirilecek ve test edilecek?
+
+352
+01:40:43,380 --> 01:40:45,519
+İş dağıtımı gerçekleştirilir.
+
+353
+01:40:49,519 --> 01:41:01,460
+Bunlardan hangisi bitiş süresinde tamamlanmıştır, hangisi tamamlanmamıştır?
+
+354
+01:41:10,515 --> 01:41:18,095
+Bana atılan işler bunlardı, bunların şu kadarını tamamladım, şu kadarını tamamlayamadım demek zorunda.
+
+355
+01:41:18,935 --> 01:41:31,515
+Karşılaştığınız engeller nelerdir? Daha sonraki iş bitmiş olanların yeni eklenen işleri veya bitirmemişse de yeni eklenen işler belirtilecek.
+
+356
+01:41:31,515 --> 01:41:35,695
+Ve herkes birbirine karşı sorumlu, işi yapmamış birisi.
+
+357
+01:41:36,095 --> 01:41:47,795
+Bu Scrum adı nereden geliyor? Biraz da ondan bahsedeyim. Bu kısa aralıklarla yapılan iş üzerinde toplantılar gerçekleştiriliyor.
+
+358
+01:41:47,795 --> 01:41:57,995
+Buradaki toplantılarda mümkün olduğunca kısa ve motive edici toplantılar.
+
+359
+01:42:00,020 --> 01:42:09,100
+Zaten bütün ekip ayakta toplantı yapıyor, uzun sürmeyen bir toplantı olması için.
+
+360
+01:42:09,100 --> 01:42:16,740
+Ve arada motive edici, bir sonraki çalışmaya itici bir güç sağlamak önemli.
+
+361
+01:42:27,315 --> 01:42:47,556
+Şöyle anlatabiliriz, ismiyle birleştirirsek, Scrum, Amerikan rugby futbolunun aralarında yapılan kısa ve itici güç yaratmaya çalışan toplantılar.
+
+362
+01:42:53,471 --> 01:43:15,011
+Scrum'da bu toplantılar önem kazanıyor. Her gün bir görev listesi oluşturulmuşsa bu görev listesinin tamamlanması aşamaları nelerdir? Çok kısa toplantılar yapılıyor. Haftalık, günlük toplantılar.
+
+363
+01:43:15,444 --> 01:43:42,404
+Haftalık toplantılar, bir de işte mesela maddeler seçilmiş, dört haftalık iş, bir de dört haftalık. Yani kademe kademe biraz daha genişletilen toplantılar şeklinde ve hedefleri küçültülerek her güne aktarılan toplantılar şeklinde.
+
+364
+01:43:43,220 --> 01:43:51,260
+Scrum tanımında yer alan çalışma biçimi var.
+
+365
+01:43:53,007 --> 01:44:18,747
+Görev listesi, koşu, işlev gösterimi. İşlev gösterimi üstünden bir kez daha geçelim. Burada müşterinin yapılan yazılıma eklenen fonksiyonları, yeni yazılım parçalarını, yeni bir fonksiyonu test etmesi işlev gösteriminden de kasıt bu oluyor.
+
+366
+01:44:19,119 --> 01:44:29,939
+Scrum şu anda XP ilk kullanılan çevik yazılım geliştirme süreç modelidir.
+
+367
+01:44:29,939 --> 01:44:35,939
+Ama Scrum şu anda sektörde en fazla kullanılan...
+
+368
+01:44:37,011 --> 01:44:51,871
+Yazılım geliştirme süreç modelidir. Tabii ki bunu hakkıyla kullananlar da var. Sadece işi programcılığa doğru döndürmeyi Scrum olarak anlatanlar da var.
+
+369
+01:44:51,871 --> 01:45:05,011
+Ama iyi kullanan da kötü kullanan da olmasına rağmen sektörde çok fazla adı geçmiş olan bir yazılım geliştirme.
+
+370
+01:45:05,011 --> 01:45:11,411
+Bu sorunlarınız var mı?
+
+371
+01:45:19,604 --> 01:45:21,264
+Sorunuz var mı buraya kadar?
+
+372
+01:45:24,979 --> 01:45:27,779
+Evet, bir 10 dakika daha ara veriyorum.
+
+373
+02:02:25,043 --> 02:02:26,783
+Evet, devam ediyoruz tekrar.
+
+374
+02:02:31,891 --> 02:02:33,751
+Herkes takip edebiliyor mu?
+
+375
+02:02:36,671 --> 02:02:42,891
+Ekstrem Programming için şekil üzerinden de bir...
+
+376
+02:02:43,988 --> 02:03:01,488
+Takip edelim ve yerine otursun adım adım yapılan işler. Daha sonra Scrum'ı diğer bazı modellerle kıyaslayacağız ve Kanban hakkında da bazı temel tanımlamalar yapacağım.
+
+377
+02:03:04,748 --> 02:03:07,828
+Herkes geri döndü mü aradan?
+
+378
+02:03:23,220 --> 02:03:29,600
+Evet, tamam. Bilgi verdiğiniz için teşekkür ederim [öğrenci] ve [öğrenci].
+
+379
+02:03:29,600 --> 02:03:36,539
+Şimdi şu chat'i çekeyim önümden.
+
+380
+02:03:38,060 --> 02:03:45,940
+Evet, Extreme Programming şöyle daha net görelim.
+
+381
+02:03:47,252 --> 02:04:00,052
+Ekstrem Programming bir artımlı program yazılım geliştirme süreç modeli demiştik. Aynı zamanda tabii ki çevik yaklaşıma dahil.
+
+382
+02:04:05,811 --> 02:04:14,251
+değerlendirerek kabul test kriterlerini ve iterasyon planlarını gerçekleştiriyoruz.
+
+383
+02:04:15,171 --> 02:04:33,811
+Gördüğünüz gibi planlama sırasında daha kullanıcı hikayelerini yaklaşık olarak alıp test kriterlerimiz, test driving development geçerlidir demiştik ya, test kriterlerini de kabul test kriterlerimizde.
+
+384
+02:04:33,811 --> 02:04:36,992
+oluşturarak planlamayla başlıyoruz.
+
+385
+02:04:37,612 --> 02:04:39,251
+Sonra tasarıma geçiyoruz.
+
+386
+02:04:39,391 --> 02:04:42,791
+Basit bir tasarım yapıyoruz ve CRC kartlarını kullanıyoruz.
+
+387
+02:04:43,251 --> 02:04:44,511
+Bu basit tasarımda.
+
+388
+02:04:45,851 --> 02:04:50,931
+Prototipler, buradaki Spark Solution'lar aslında prototipler.
+
+389
+02:04:52,372 --> 02:05:00,471
+CRC kartları ve prototiplerle tasarım yapıyoruz ki müşteri ile birlikte çalışabilelim.
+
+390
+02:05:00,832 --> 02:05:16,072
+Daha sonra burada kodlamaya geçiyoruz. Kodlama sırasında pair programming kullanıyoruz. Tasarımda tanımladıklarımızı kodluyoruz. Burada bir refactoring var.
+
+391
+02:05:28,051 --> 02:05:35,032
+Memnun kalmayacak ya da bazı eksiklikler varsa tasarımımızda değişiklik yapıyoruz. Refactoring.
+
+392
+02:05:36,564 --> 02:05:41,184
+Kavramını bir şekilde burada kullanmış oluyoruz.
+
+393
+02:05:41,524 --> 02:05:46,104
+Peri programlamayı tarif etmiştim yine bunun üzerinden geçerken.
+
+394
+02:05:46,624 --> 02:05:56,564
+İki kişi aynı anda kodu yazarken çalışıyor, aynı bilgisayar başında ve birisi kodu yazarken diğeri gözden geçirme, review işlemi gerçekleştirmiş oluyor.
+
+395
+02:06:01,011 --> 02:06:16,211
+Kodlama sırasında birim test de yapılıyor ve test aşamasında sürekli bütünleştirme, yani bir kod parçası, bir tasarım parçası.
+
+396
+02:06:18,195 --> 02:06:37,695
+gerçekleştirildikten sonra bunun üzerinde birim testi yapılıp tekrar diğerleriyle bütünlük testi ile birleştiriliyor. Kabul testi müşteri tarafından kabul testi gerçekleştiriliyor ve yeni bir release, yeni bir artım, software increment, yazılım artımı.
+
+397
+02:06:43,028 --> 02:07:01,508
+Burada projenin hızı da hesaplanıyor. Planlama sırasında bu hıza göre plan yeniden dinamik bir plan demiştik. Plan yeniden güncellenebiliyor bu çalışmalara göre.
+
+398
+02:07:01,508 --> 02:07:07,928
+Evet, bu şekil üzerinde sanıyorum biraz daha canlandırabilmiş olduk.
+
+399
+02:07:10,355 --> 02:07:27,475
+Şimdi, pardon, özür dilerim. Şimdi Scrum üzerinde biraz daha yerleştirelim bilgilerimizi. Scrum hakkında da ilk bilgimizi vermiştik.
+
+400
+02:07:29,039 --> 02:07:38,019
+Tabii ki işte use case'lerle, kullanıcı hikayeleriyle çalışmaya başlanıyor ve bunlar önceliklendiriliyor.
+
+401
+02:07:38,019 --> 02:07:53,759
+Önce hangisinden başlanacak şeklinde en riskli olandan başlayabiliriz ya da en gerekli olandan artımının, dağıtımının önce yapılması istenilenden başlayabiliriz.
+
+402
+02:07:55,731 --> 02:08:12,052
+Ve kısa toplantılar yaparak bu bütün kullanıcı hikayelerinde verilmiş olan işleri iş listesi haline getirip tamamlamaya çalışıyoruz. Burada da toplantı yapısı öne çıkıyordu.
+
+403
+02:08:21,876 --> 02:08:32,895
+waterfall model, Scrum, tanımlı süreçler gerekli, planlama ve kapatma aşamasında.
+
+404
+02:08:33,363 --> 02:08:49,144
+waterfall'da, spiral'de gerekli olan süreç tanımları, Scrum'da planlama ve kapatma projenin kapatılması aşamasında süreç tanımları veriliyor.
+
+405
+02:08:49,144 --> 02:08:50,604
+Son ürün.
+
+406
+02:08:50,931 --> 02:09:10,431
+Planlamada tanımlanır daha waterfall'da. Spiral'de de planlama sırasında tanımlanır. Scrum'da ise proje esnasında şekillenir. Yani iş olgunlaştıkça sonuç ürün hakkında bilgi verilir. Proje maliyeti de.
+
+407
+02:09:10,804 --> 02:09:26,023
+Yine planlama sırasında waterfall'da, spiralde kısmen değişkendir. Çünkü spiralde hatırlıyorsanız bir döngü var. O döngü çerçevesinde plan da yenileniyor. Scrum'da da proje esnasında şekilleniyor.
+
+408
+02:09:26,804 --> 02:09:38,804
+Tamamlanma tarihi, yine tamamlanma tarihine baktığımızda planlanma sırasında belirlenir. Ama doğru belirlenir ama yanlış belirlenir ama bir tarih.
+
+409
+02:09:38,804 --> 02:10:04,263
+Tabii bu tarihlerde aslında waterfall modelde tam doğru çıkmayacağı için proje başarısız gibi görünür. Halbuki proje maliyeti proje esnasında ilerledikçe şekilleniyor. Tam gerçek bir fikir verebiliyoruz bir süre sonra Scrum'da.
+
+410
+02:10:04,819 --> 02:10:15,260
+Tamamlama tarihi de aynı şekilde, yani zamanından gecikmiş olur waterfallda ilk verilen maliyet göz önünde bulundurulduğu için.
+
+411
+02:10:17,380 --> 02:10:21,800
+Dış çevreye duyarlılık sadece planlamada.
+
+412
+02:10:24,819 --> 02:10:49,939
+waterfall'da dış çevreye duyarlılık. Yani dış çevrede gerçekleşen uygulamalardan etkilenme diyebiliriz biz buna. Scrum'da her zaman dış çevrede olan çalışmalara, uygulamalara göre yazılım geliştirme sürecimiz ona göre kendini ayarlayacak yapıda.
+
+413
+02:10:52,467 --> 02:11:09,168
+Gerçekleşir. Takım esnekliği ve yaratıcılığı. Fazla yaratıcılık ve esneklik desteklenmiyor. İlk başta yapılacak şeyler, istekler belirleniyor waterfall'da.
+
+414
+02:11:11,699 --> 02:11:24,339
+Spiral'de de yine aynı şekilde istekler tamam plan tekrar yenilense de takım yapısı ve kişilere verilen görevler çok esnek değil.
+
+415
+02:11:25,939 --> 02:11:33,679
+Scrum'da ise iterasyonlar boyunca yaratıcılıkta ve esneklikte limit yok.
+
+416
+02:11:36,051 --> 02:12:01,612
+Ekip yapısı değişebiliyor. O yüzden kod ve yapılan işler anonim, yani herkes her konuda biliyor. Dolayısıyla işte analizdeki bir kişi teste veya tasarıma aktarma şeyi var, olanağı var veya tehlikesi var çalışanlar için.
+
+417
+02:12:02,292 --> 02:12:28,772
+Bilirkişi desteği dışarıdan, proje eğitimi sırasında olur. Halbuki Scrum'da bu Scrum uzmanları proje içinde takıma bile dahil edilebiliyor. Scrum yapısıyla ilişkili Scrum Master denilen.
+
+418
+02:12:29,184 --> 02:12:50,523
+Başarı olasılığı, Scrum'da daha yüksek olarak görünüyor. Ama bu da yine %100 değil, projesine göre değişiyor. Belki daha önceden de söylemişimdir.
+
+419
+02:12:53,684 --> 02:13:01,284
+Sondan iki önceki Ulusal Yazılım Mühendisliği Sempozyumunda iki tane bildiri vardı.
+
+420
+02:13:04,148 --> 02:13:19,628
+Ecail gerçek çözüm müdür? Diğer klasik süreçlerle şeyi nedir? İyi ve kötü tarafları nelerdir? gibi bu modellerde sorgulanmaya başlanmış durumda.
+
+421
+02:13:28,595 --> 02:13:40,036
+Bize zaman kazandırdığı için bunun kullanımı baya uzun süreler yine devam edecek gibi görünmekte.
+
+422
+02:13:41,555 --> 02:13:45,996
+Scrum ile ilişkili sorunuz var mı?
+
+423
+02:13:51,796 --> 02:13:57,876
+Scrum'la ilişkili, buradaki bu tabloyla ilişkili sorunuz var mı?
+
+424
+02:14:05,300 --> 02:14:24,539
+O zaman biraz da Kanban üzerinde duralım. Kanban dediğimiz zaman buradan hangi özellikler var? Üç tane farklı model üzerinde duracağız demiştim.
+
+425
+02:14:32,724 --> 02:14:38,524
+Kanbanda ne zaman kullanıyoruz?
+
+426
+02:14:48,532 --> 02:14:59,712
+Baz sayıda görevi akıcı ve eş zamanlı yönetebilmek istiyorsak o zaman kan ban kullanmamız daha uygun.
+
+427
+02:14:59,712 --> 02:15:04,712
+Bu çerçevede...
+
+428
+02:15:08,851 --> 02:15:15,612
+Nereden çıkmış Kanban? Japonya, Toyota'da ilk defa kullanılmış.
+
+429
+02:15:23,612 --> 02:15:25,711
+Burada anlamı nedir?
+
+430
+02:15:27,252 --> 02:15:42,732
+Veya büyük görsel tahta anlamında. Bunun anlamı nedir? Scrum'da da böyle bir Scrum Board var. Burada da büyük görsel tahta, burada yapılacak işler yazılıyor.
+
+431
+02:15:51,731 --> 02:16:00,711
+Hangi işler yapılacak? Bu işlerin ne kadarı gerçekleştirildi? Bunların belirtilmesi.
+
+432
+02:16:19,828 --> 02:16:22,268
+Yönetimi için geliştirilmiş.
+
+433
+02:16:23,828 --> 02:16:44,828
+Süpermarket raflarında malların stoklanmasını gözleyerek daha çok önceki yıllarda böyle bir üretim bandında yürüyen kaynakları görselleştirerek bir...
+
+434
+02:16:44,927 --> 02:16:50,247
+çalışma sonucunda üretim şekli olarak ortaya çıkmış Kanban.
+
+435
+02:16:53,492 --> 02:17:02,391
+Süreç hakkında bilgi sahibi olup bu süreci yönetme, işleri belirleme.
+
+436
+02:17:02,391 --> 02:17:11,332
+Yani Kanban felsefesi 1940'ların sonlarından itibaren kullanılan bir felsefe ama 2000'li yıllardan itibaren.
+
+437
+02:17:17,940 --> 02:17:24,540
+Kanban yöntemi, ecel süreçlerde de kullanılmaya başlandı.
+
+438
+02:17:29,075 --> 02:17:32,195
+Evrimsel bir değişim çerçevesi.
+
+439
+02:17:32,495 --> 02:17:59,055
+Kanban, önce müşteri ihtiyaçlarını anla ve bu müşteri ihtiyaçlarına odaklan. Temel felsefelerinden bir tanesi. Başka bir felsefede insanları değil, işi yönet. O yüzden şey yok, mesela bu büyük görsel tahtada hangi işler gerçekleştirildiği iş listesi üzerinden gidiliyor.
+
+440
+02:18:00,495 --> 02:18:04,455
+Ve burada da ekosistem sürekli gözden geçiriliyor.
+
+441
+02:18:14,004 --> 02:18:27,724
+İş listesinde eğer sürekli değişiklik gerçekleştiriliyorsa, iş listemizde sürekli değişiklik oluyorsa Kanban tercih ediliyor.
+
+442
+02:18:27,724 --> 02:18:39,224
+Burada bu Kanban pratikleri olarak.
+
+443
+02:18:39,956 --> 02:18:52,515
+Geçen bir şey var, yapı var bizim ecel süreçlerimizden bir tanesi.
+
+444
+02:18:54,015 --> 02:19:02,056
+Dolayısıyla Kent Beck, bu şeylerde çalışan uzmanlardan biri.
+
+445
+02:19:04,468 --> 02:19:17,308
+Agile süreçlerin yaratılmasında, agile yaklaşımda ve XP'nin de oluşturulması, agile manifestoda ilk kullanılan XP demiştim.
+
+446
+02:19:17,308 --> 02:19:31,448
+Bu da oyun planlama, test odaklı geliştirme, tüm ekibin çalışması.
+
+447
+02:19:32,084 --> 02:19:47,804
+Sürekli entegrasyon, tasarım gelişmeleri için refactoring, küçük sürümler bunlar hep XP'nin önemli tarafları, XP'de kullanılanlar.
+
+448
+02:19:47,804 --> 02:20:00,000
+Kanban'da süreklilik var, sürekli olarak geliştirme gerçekleştiriliyor ama burada esas olan iş listesi.
+
+449
+02:20:00,000 --> 02:20:15,239
+İş listesinin ne kadarı gerçekleştirildi? Farklı renklerde post-itler kullanılarak kullanıcı hikayeleri belirtiliyor.
+
+450
+02:20:15,239 --> 02:20:23,239
+İşte kullanıcı hikayeleri morla, eğer bir görev verilmişse turkuazla.
+
+451
+02:20:26,067 --> 02:20:33,487
+Eğer bir takım özellikler tanımlanmışsa yapılacak işle ilişkili, kırmızı.
+
+452
+02:20:35,027 --> 02:20:46,007
+Bu işlemler ilgili kişiler tarafından işletilip bitmiş işler olarak aktarılıyor.
+
+453
+02:20:46,007 --> 02:20:53,047
+Burada yapılacak olanlar plan.
+
+454
+02:20:53,504 --> 02:21:07,244
+Geliştirme, test ve gerçekleştirecek işler gibi burada farklı renklerle tanımlanan bir tablo var Kamban'da.
+
+455
+02:21:20,340 --> 02:21:48,340
+Daha çok iş olduğuna göre sistemi yönetmek gerekiyor. O yüzden zaten Kanban'da insanları değil, işi yönet kavramı geçerli. Buna göre iş akışı ve işleyişi arasında birbirine göre farklılıklar var. Sürekli olarak geliştirilir.
+
+456
+02:21:48,340 --> 02:21:50,540
+kambanda devam ediyor.
+
+457
+02:21:54,639 --> 02:21:56,460
+Bizim bu
+
+458
+02:21:56,460 --> 02:21:58,700
+büyük görsel tahtada da
+
+459
+02:21:58,700 --> 02:22:00,620
+tudu yapılacak işler
+
+460
+02:22:01,043 --> 02:22:18,043
+Planlananlar, geliştirenler, test edilenler ve dağıtıma hazır hale getirilenler ve dam yapılmış olanlar, tamamladığımız görevler.
+
+461
+02:22:21,940 --> 02:22:28,760
+Hangi kullanıcı hikayeleri tanımlanmış? Bu belirtiliyor.
+
+462
+02:22:34,963 --> 02:22:36,724
+Buraya kadar sorunuz var mı?
+
+463
+02:22:41,971 --> 02:22:50,271
+Hocam, söylemiş olabilirsiniz, ben kaçırdım. Bu Kanban yazılım geliştirme süreçleri için ortaya çıkmamış herhalde Toyota'da olduğuna göre.
+
+464
+02:22:50,271 --> 02:23:00,851
+Evet, evet. Kanban bir üretim yönetimi yapısı.
+
+465
+02:23:01,396 --> 02:23:21,776
+modeli. Az önce de söylediğim gibi 1940'larda Toyota'da kullanılmaya başlanmış. Üretim bantlarına nasıl daha etkin bir yapı oluştururuz şeklinde. Ve bu bir kalite modeli haline de dönüşmüş. Üretimde kalite modeli haline dönüşmüş.
+
+466
+02:23:29,396 --> 02:23:41,996
+Bizim Ecal yazılım geliştirme modellerimiz olarak kendini göstermiş. Yani burada da kullanılmış.
+
+467
+02:23:43,096 --> 02:23:43,996
+Peki, teşekkür ederim.
+
+468
+02:23:44,675 --> 02:23:45,476
+Teşekkürler.
+
+469
+02:23:48,476 --> 02:23:49,396
+Scrum'da...
+
+470
+02:23:49,876 --> 02:24:17,876
+Ürün yöneticisi bir daha toparlayalım şöyle. Şurada bir değişiklik tablosunu gösterdim Scrum için. Diğer modellerle kıyaslamalım. Bir de bir önceki derste de Scrum'ın temel özelliklerinin neler olduğu yani toplantı idaresi. Ürün yöneticisi tarafından bir ürün backlog oluşturulur. Yani bu ürünü geliştirmek için nasıl bir çevrim yapmamız gerekiyor.
+
+471
+02:24:17,876 --> 02:24:41,876
+Gerekiyor. Takım ve ürün yöneticisi bir koşuda koşulacak işleri, gerçekleştirecek işleri belirtir. O yüzden Scrum'ın bazı şekilleri vardır. Böyle iç içe döngüler şeklinde. Yani 24 saatlik işler, 30 günlük işler, 30 günden fazlası belirlenmez. Yeni bir...
+
+472
+02:24:43,476 --> 02:25:05,436
+Yeni bir backlog tanımlanır bunun için. Ürün tanımı ve bu ürünlerin nasıl sprintlerde, nasıl koşularla gerçekleşeceği, işte 30 günlük işte ne yapılacak? Bu 30 günlük iş, günlük işlere nasıl ayrılacak?
+
+473
+02:25:07,412 --> 02:25:31,412
+Scrum'da bu belirtilir. Takım ve ürün yöneticisi her bir sprintte koşulacak backlog'u ayırır. 2 ve 4 haftalık sprintler, sprint dediğimiz şey bu bir koşuda yapılacak işler ve bunların sonunda da yeni sürümler elde edilir.
+
+474
+02:25:31,891 --> 02:25:47,772
+Burada demek ki Scrum'da öne çıkan kavramlar neler? Önce kapsam belirlenecek, sonra bu kapsamı gerçekleştirmek için ürün backlogları, yani ürün geliştirme döngüleri oluşturulur.
+
+475
+02:25:48,231 --> 02:25:56,811
+Gereksinimler belirlenir ve bu koşulların planlanması için bir toplantı yapılır.
+
+476
+02:25:57,167 --> 02:26:19,007
+Her bir iş bittiğinde de bu işler gözden geçirilir. Esprint review işlemi gerçekleştirilir. Burada Kanban'da odaklanacağımız şey çok görevliliği azaltma.
+
+477
+02:26:19,924 --> 02:26:45,544
+Boşa geçen zamanı azaltma, müşterinin ihtiyaçlarını en öncelikli olarak değerlendirme, Scrum'da ekibin ortak kararını sağlama, her bir sprintte, doğru olduğunu düşündüğün şeyleri yapma, XP'de de demiştik cesaret.
+
+478
+02:26:48,404 --> 02:26:59,904
+Karşılaştığı zorluklara karşı açık sözlü davranma, yani yapılamayan işleri ekibin bütün üyelerinin yapamadığını, niye yapamadığını belirtmesi.
+
+479
+02:27:00,404 --> 02:27:17,623
+Ve herkesin elinden gelinin en iyisini yaptığına inanma, saygı çerçevesi. XP'de ise, XP'de saymıştık, iletişim, basitlik, geri bildirim, cesaret. Yine buna da saygıyı ekleyebiliriz.
+
+480
+02:27:27,827 --> 02:27:43,847
+Geliştirilen özellikler varsa, bunlardan vazgeçilecekse, yani sistemde yapılan bir iş var yazılımda, bu ortadan kaldırılmak, değiştirilmek isteniyorsa, mevcut plan kanbanda değiştirilebiliyor.
+
+481
+02:27:47,347 --> 02:27:49,567
+Scrum'da bu biraz daha zor.
+
+482
+02:27:50,164 --> 02:27:57,904
+Xp'de de bu geliştirilmiş bir özellik başka bir iterasyonla değiştirilebiliyor.
+
+483
+02:27:58,644 --> 02:28:05,984
+Kanban'da bir de roller açısından kıyaslarsak, Kanban'da roller yok.
+
+484
+02:28:05,984 --> 02:28:12,943
+Şu kişi şu işi yapacak. Yani zaten Kanban'da şöyle bir tanımlama yaptık.
+
+485
+02:28:15,252 --> 02:28:38,871
+İnsanları değil, işi yönet. O yüzden rol tanımı yok. Scrum'da roller daha net tanımlanmış. Product Owner var, ürün sahibi, Scrum Master var, geliştirme ekibi var. XP'de ise müşteri var, ekip var. Yani ekipte ayrım yok.
+
+486
+02:28:43,572 --> 02:28:50,832
+Müşteri işleri nasıl önceliklendiriyorsa ona uyulur ayrıca XP'de.
+
+487
+02:29:10,291 --> 02:29:13,691
+işleme alacağız. Takım tarafından bu belirlenir.
+
+488
+02:29:17,523 --> 02:29:21,103
+Kanbanda da yine müşteri ihtiyaçları en öncelikli.
+
+489
+02:29:24,103 --> 02:29:27,500
+Evet, bugün için...
+
+490
+02:29:27,731 --> 02:29:42,211
+Bu ecel süreçler üzerinde durduk. Bunlara biraz daha fazla zaman ayırdım. Çünkü şu anda sektörde bu ecel süreçler çok fazla kullanılıyor.
+
+491
+02:29:44,211 --> 02:29:55,731
+Sadece Scrum ve XP üzerinde duruluyor. Ama Kanban'dan da bahsi geçirilir.
+
+492
+02:29:55,731 --> 02:30:01,772
+çalışma hayatımızda. Onun için ondan da bahsettim. Sorunuz var mı?
+
+493
+02:30:09,203 --> 02:30:18,283
+Sorunuz var mı? Ecai süreçlerin her biriyle ilişkili veya birbiriyle ilişkileriyle alakalı.
+
+494
+02:30:24,531 --> 02:30:25,671
+Sorunuz var mı?
+
+495
+02:30:30,067 --> 02:30:30,747
+Benim yok.
+
+496
+02:30:33,387 --> 02:30:34,707
+Teşekkürler.
+
+497
+02:30:37,167 --> 02:30:42,707
+Ha bu arada biz henüz proje konumuzu vermedik.
+
+498
+02:30:42,707 --> 02:30:51,347
+Proje çalışma arkadaşlarınızla ilişkili bir girişim yaptınız mı, yapıyor musunuz?
+
+499
+02:30:51,407 --> 02:30:54,647
+Bazı arkadaşlarınızdan sadece sayı konusunda.
+
+500
+02:30:56,788 --> 02:31:17,907
+İstekler geliyor. Ama çok mecbursanız bunu yazışarak karar vereceğiz. Ama en az dört kişi olmasına çalışmanız gerekiyor. Biz konu başlıklarımızı vereceğiz size.
+
+501
+02:31:22,963 --> 02:31:36,404
+Belirlenmesi sonucunda hemen biz size konu başlıklarını verdiğimiz anda sizler bu üç konudan hangisini seçeceğinize karar vereceksiniz.
+
+502
+02:31:36,984 --> 02:31:43,864
+Eğer bizim verdiğimiz konunun üzerine bir tane daha modül ekleyerek çalışırsanız beş kişi de çalışabilirsiniz.
+
+503
+02:31:47,412 --> 02:31:55,531
+Oluşturmaya başlayın. Yani sonuçta verilecek proje şu, yazılım geliştirme süreç.
+
+504
+02:31:56,832 --> 02:32:04,512
+gerçekleştireceğimiz işlerin hepsini göreceğimiz bir rapor oluşturmanızı istiyoruz.
+
+505
+02:32:05,211 --> 02:32:20,972
+Ve mesneye yönelik olarak yazılım geliştirme sürecinde analiz tasarımı, planlamayı, analizi tasarımı ve kodlamayı yapmanızı isteyeceğiz.
+
+506
+02:32:20,972 --> 02:32:24,812
+Bu yüzden dört ya da beş kişilik.
+
+507
+02:32:24,832 --> 02:32:42,472
+Gruplar halinde çalışacaksınız. Şu anda konunun ne olduğu çok fark etmez. Grubunuzu kurun. Önümüzdeki hafta ya da daha sonraki hafta konu başlıklarını vereceğiz biz size.
+
+508
+02:32:44,752 --> 02:32:51,072
+Hocam oldu da kuramadık. İstemiyorlar. Beni mesela kimse istemiyor grupta. Ne yapacağız?
+
+509
+02:32:53,427 --> 02:33:02,968
+Yani bir şeyiniz var sizin değil mi? WhatsApp mı? Nedir bir iletişim noktanız?
+
+510
+02:33:03,108 --> 02:33:08,508
+Vardı hocam, şimdi farz edelim. Benim de kimse aynı grupta olmak istemiyor. Olabilir.
+
+511
+02:33:09,968 --> 02:33:12,427
+Yani o özel durumlar için...
+
+512
+02:33:13,363 --> 02:33:27,644
+Küksek başınıza yapacaksınız ama hani bunun şu anda o yüzden söylüyorum konuları verene kadar da iki haftanız var. Bu arada süreçmeye çalışın.
+
+513
+02:33:27,923 --> 02:33:30,504
+Otomatik gruplaştırma olayınız olacak değil mi?
+
+514
+02:33:31,443 --> 02:33:36,263
+Ben onu yapabilirim. Gerçek hayatta da sonuçta otomatik gruplandır.
+
+515
+02:33:36,263 --> 02:33:43,203
+Aynen öyle. O yüzden başarı için kendinizin oluşturması daha iyi.
+
+516
+02:33:43,523 --> 02:33:48,523
+Bana yazan 20-25'e yakın arkadaşım var. Bu konuda bilginiz olsun hocam.
+
+517
+02:33:48,523 --> 02:33:59,403
+Yani gerekirse otomatik hale çekilmesi daha çok bence. Çünkü yeni gelenler var, hiç tanımayanlar var. Direkt bu ders alanlar var.
+
+518
+02:33:59,443 --> 02:34:09,283
+Dışarıdan, sıfırdan gelenler var. Hatta gelip de üstten alanlar var. Bana bu konuda çok fazla arkadaşım özellikle diyor abi ne yapacağız diye.
+
+519
+02:34:09,283 --> 02:34:17,463
+Birleştirmeyi birdenbire yapmıyorum. Çünkü sonuçta ben yaptığım zaman dersi bırakanlar olur, çalışmayanlar olur.
+
+520
+02:34:17,623 --> 02:34:18,004
+Tabii tabii.
+
+521
+02:34:18,423 --> 02:34:20,723
+O zaman hani…
+
+522
+02:34:20,723 --> 02:34:25,423
+Süreç konusunda mağduriyet yaşanmasın da siz de zaten biliyorsunuzdur.
+
+523
+02:34:25,863 --> 02:34:27,443
+Evet, evet. Yani…
+
+524
+02:34:27,443 --> 02:34:35,484
+O yüzden iki hafta boyunca herkes bir grup oluşturmaya çalışsın.
+
+525
+02:34:37,504 --> 02:34:39,103
+Tamamdır hocam, çok teşekkür ederim.
+
+526
+02:34:39,903 --> 02:34:43,103
+Teşekkürler. Başka sorunuz var mı?
+
+527
+02:34:49,523 --> 02:35:08,523
+Evet, o zaman dersi tamamlıyoruz. Önümüzdeki hafta gereksinim analizinden devam edeceğiz. Bu arada yazılım evlerinin...
+
+528
+02:35:08,628 --> 02:35:22,567
+Yazılım geliştiren birimlerin iyileştirilmesiyle ilişkili bazı modeller var. Onları biraz daha sonraya bıraktım. Kalite kavramını gördükten sonraya bıraktım.
+
+529
+02:35:36,628 --> 02:35:55,968
+Kapsam içine alacağım, ders kapsamı içine. Çünkü gereksinim bilgilerinde de bu kavramlarla ilişkili olacağız. Yani sadece gereksinim analizi değil, aynı zamanda kalite özelliklerinden de bahsedeceğiz önümüzdeki hafta.
+
+530
+02:35:58,608 --> 02:36:02,388
+Evet, o zaman iyi haftalar diliyorum. Dersi bitiriyorum.
+
+531
+02:36:04,404 --> 02:36:07,144
+Teşekkür ederim hocam. Emeğinize sağlık. Sağ olun.
+
+532
+02:36:08,783 --> 02:36:09,504
+İyi haftalar hocam.
+
+533
+02:36:10,224 --> 02:36:11,544
+İyi haftalar diliyorum.

@@ -1,0 +1,1927 @@
+1
+00:04:50,708 --> 00:04:52,087
+Ta hocam duyuyor musunuz?
+
+2
+00:04:52,948 --> 00:04:54,067
+Sesim geliyor mu arkadaşlar?
+
+3
+00:04:56,067 --> 00:04:59,008
+Tamam ben size yetkiyi veriyorum.
+
+4
+00:05:05,235 --> 00:05:09,676
+Ekran paylaşıp siz devam edebilirsiniz hocam. Bitince de kapatabilirsiniz.
+
+5
+00:05:10,196 --> 00:05:11,515
+Tamam hocam. Teşekkür ederim.
+
+6
+00:05:12,835 --> 00:05:13,696
+Geldiğimde görüşürüz.
+
+7
+00:05:14,255 --> 00:05:14,635
+Görüşürüz.
+
+8
+00:14:16,563 --> 00:14:17,843
+Merhaba arkadaşlar.
+
+9
+00:14:21,812 --> 00:14:24,812
+Sesim geliyor mu? Ben o paylaşıyorum.
+
+10
+00:14:28,532 --> 00:14:30,532
+Ses ve Görüntü'nöğe ses alın.
+
+11
+00:14:33,556 --> 00:15:02,556
+Geliyor hocam. Teşekkürler. Bu hafta strc ve linked list yapısını çalışacağız. UrgonaSource bir şirkette çalışan bilgilerin strclanmaya yönelik bir veri tabanı gerçekleştireceğiz. Bunun için de strc yapısını kullanacağız. Veri tabanı iki farklı şekilde gerçekleyeceğiz. Bir array tabanını bir de linked list tabanını yapıda gerçekleyip bunları karşılaştıracağız.
+
+12
+00:15:09,331 --> 00:15:23,331
+iki farklı strc konus olacak. Job strc. Çalışanların mesleki isimini tutacak. Person's ile çalışanların adını, yaşını ve job isimini tutacak.
+
+13
+00:15:24,596 --> 00:15:31,596
+Ve bu
+
+14
+00:15:51,956 --> 00:16:13,956
+Öncelikleri, job strandı tanımlamak için, struct, struct, job, not, fustle tanımlamak için, sadece, job'ın içinde, sadece mesleğin ismi olacağı için, chart pointer, cinsinden, bitleşme tanımlamak için.
+
+15
+00:16:13,956 --> 00:16:23,956
+Bunu daha kısaca göstermek için başıma site-click yapıyoruz. Sadece ssak çap.
+
+16
+00:16:23,956 --> 00:16:29,956
+Burada yazdığımızda aynı şey oluyor. Kısasını da yapabiliyorduk.
+
+17
+00:16:33,460 --> 00:16:37,460
+Erdından Töğüs'ün sıra mı tanımlı?
+
+18
+00:16:40,460 --> 00:16:44,460
+Bunun için yine çalışan adım olacak.
+
+19
+00:16:45,460 --> 00:16:47,460
+Stratçak için point terapçası var.
+
+20
+00:16:47,460 --> 00:16:49,460
+Yaşı olacak.
+
+21
+00:16:49,460 --> 00:16:50,460
+Bir de geçir.
+
+22
+00:16:50,460 --> 00:16:54,460
+Ayrıca çabu gösteren bir tanıtırak diğer çak var.
+
+23
+00:16:54,460 --> 00:16:57,460
+Bu miktarda böyle tanımladığımız için buraya var yazatıyoruz.
+
+24
+00:16:57,460 --> 00:16:59,460
+Ve şu startçak yapabiliriz.
+
+25
+00:16:59,460 --> 00:17:04,140
+Böylece bunu gösteren bir konular sahip oldu.
+
+26
+00:17:04,140 --> 00:17:09,460
+Bunu da kısaltma personer ile yapabiliriz.
+
+27
+00:17:11,460 --> 00:17:15,460
+Ayrıca ben de veri tabanı için straklı bir kısaltma.
+
+28
+00:17:22,291 --> 00:17:29,411
+yapıları, elitabanında person tipinden de array oluşturacağız.
+
+29
+00:17:29,411 --> 00:17:35,811
+bir tane array tutsardı bu şekilde olurdu.
+
+30
+00:17:35,811 --> 00:17:38,611
+person tutsinden 7 tane.
+
+31
+00:17:38,611 --> 00:17:46,611
+ama array olması istediğiniz için 2 tane point kurulur.
+
+32
+00:17:46,611 --> 00:17:49,811
+böyle bir pointer of array kurulur.
+
+33
+00:17:49,811 --> 00:18:03,811
+Ardından şu an database'de kaç kişi olduğunu tutmak için people count işkenli database'i tutmam boyutu tutmak için de database count yaşını tutmak için de
+
+34
+00:18:06,811 --> 00:18:14,811
+Bunlardan sonra, program bir menü üzerinden çalışmak istedik
+
+35
+00:18:14,812 --> 00:18:21,172
+Çıbaşan eklemə, silmə, arama qaydasında bizdərindik bir işlərdəri olacak.
+
+36
+00:18:21,172 --> 00:18:25,972
+Onun için main, başlayabiliriz.
+
+37
+00:18:34,195 --> 00:18:39,835
+Şimdi bir database aşağıya kısaltmaları
+
+38
+00:18:41,615 --> 00:18:42,895
+database yapalım
+
+39
+00:18:49,748 --> 00:18:50,748
+Hoşçakalın.
+
+40
+00:18:56,948 --> 00:19:03,948
+Ayrıca, people counts, kimse kayıtlı olmadığı için sıkılacak.
+
+41
+00:19:07,948 --> 00:19:12,948
+Database count'u ilk başta bir adama alacak şeklinde.
+
+42
+00:19:15,988 --> 00:19:17,988
+boyutu 1 olsun.
+
+43
+00:19:22,451 --> 00:19:23,451
+Moldova ile.
+
+44
+00:19:26,804 --> 00:19:31,923
+bu yere zamanlı bir derece oluşturacak görelim
+
+45
+00:19:33,203 --> 00:19:36,283
+bu karşılıkça kendin atılır diye
+
+46
+00:19:37,564 --> 00:19:38,843
+bu mağlup
+
+47
+00:19:40,623 --> 00:19:42,163
+bu saysov
+
+48
+00:19:44,463 --> 00:19:46,003
+bu örtür
+
+49
+00:19:46,523 --> 00:19:53,683
+bu tırın saygında bir yere yok
+
+50
+00:19:55,380 --> 00:19:57,380
+yalnız şey de seveç.
+
+51
+00:20:03,155 --> 00:20:09,155
+bir eleman zaten. Bu sayesinde bir perevör.
+
+52
+00:20:12,500 --> 00:20:23,619
+Ardından menüyü switchgez yapısıyla yapacağız. Ancak tekrar tekrar çağırabilmek için bir while düğmesine ihtiyaç var.
+
+53
+00:20:25,219 --> 00:20:30,420
+Böylece işlem yaptıktan sonra tekrar switchgez yapısıyla tekrar açılacak.
+
+54
+00:20:32,739 --> 00:20:34,739
+Bunun için bir çoğusteydi birleştirilmiş.
+
+55
+00:20:38,500 --> 00:20:40,739
+Buraya da menüyü yazacağız.
+
+56
+00:20:49,556 --> 00:20:50,556
+ve halkı birş.
+
+57
+00:20:54,036 --> 00:21:09,475
+Eklemek için bir şey yapacağız. Bu işte choice, eee, pardon. Choice diyeyim. Choice aşağıya dolayacağız. Choice integer değer yapacağız.
+
+58
+00:21:28,019 --> 00:21:42,419
+Burada exit control'ı koymamız gerek. Böylece programı bittiği zaman, value öncesinden çıkıp çıkan sonlandırı okuyacağız.
+
+59
+00:21:45,419 --> 00:21:48,419
+Buraya bir switch yapısı oluşturacağız.
+
+60
+00:21:51,347 --> 00:21:53,347
+Çumuşun değerine göre
+
+61
+00:21:56,660 --> 00:22:03,580
+İlk bir branca tozlatacak. İlk kezimiz bir bu adding olacak.
+
+62
+00:22:04,600 --> 00:22:11,660
+Bir kişiye ekran için buraya gireceğiz. En sona sıhhır yapıyoruz.
+
+63
+00:22:12,279 --> 00:22:13,819
+Exit Ctrl'u
+
+64
+00:22:15,859 --> 00:22:21,660
+Sıhhır yapıyoruz. Dönele bir daha var dönüşünden girmez ve çıkar.
+
+65
+00:22:21,660 --> 00:22:25,660
+çaldı var.
+
+66
+00:22:29,907 --> 00:22:38,407
+Eğer başka, bifaltta da, eğer bu keydinin hiçbirine gelinmezse enfabına geliyor. Orada da yanlış seçim yoktur. Yaparız.
+
+67
+00:22:39,407 --> 00:22:41,407
+Bu tekma, aşağıda var.
+
+68
+00:22:52,403 --> 00:22:56,403
+Choice, veşkin, malloc, kip, intiçör, ödeşin şuraya, basit.
+
+69
+00:23:03,059 --> 00:23:08,059
+Bir kişinin bildiğini önce almamız kalsın mı?
+
+70
+00:23:08,059 --> 00:23:10,059
+Sıfır.
+
+71
+00:23:15,443 --> 00:23:17,763
+A, çınırlayan tıklı, zanırlayan tıklıdır.
+
+72
+00:23:27,667 --> 00:23:31,667
+ney, değiştim atıyorum. Orada şurada, fıtkı olarak tamamlayabiliriz.
+
+73
+00:23:52,211 --> 00:23:54,211
+ve C ihtiyaçımız var.
+
+74
+00:24:17,332 --> 00:24:18,832
+ve hüyağın yapın.
+
+75
+00:24:31,988 --> 00:24:38,988
+ve
+
+76
+00:24:37,460 --> 00:24:48,460
+Bunları aldıktan sonra bunları ilgili strc yapacağımız için atamız lazım. Bunun için de bir fonksiyon var geçeceğiz.
+
+77
+00:24:52,460 --> 00:24:57,460
+Bu fonksiyon oluşturalım.
+
+78
+00:24:59,763 --> 00:25:04,883
+Korsini, adresi tüm çeşitli.
+
+79
+00:25:17,076 --> 00:25:18,076
+Evet.
+
+80
+00:25:23,316 --> 00:25:29,816
+Buraya ismi geçeceğiz. Deş geçeceğiz.
+
+81
+00:25:31,816 --> 00:25:34,816
+Ve de çalk.
+
+82
+00:25:38,708 --> 00:25:49,008
+bir listarcaps'ın içerisine atlayacağız. Öncelikle bir person stracca inşekte etmemiz kalsın.
+
+83
+00:25:52,531 --> 00:25:54,531
+original person diye bir şey.
+
+84
+00:25:55,731 --> 00:25:57,731
+person altı gibi tutuyoruz.
+
+85
+00:26:01,875 --> 00:26:08,875
+konumab bu konumda bir korsu boğdu.
+
+86
+00:26:17,011 --> 00:26:18,011
+ve çarpı çarp
+
+87
+00:26:29,044 --> 00:26:32,044
+tachap, kontyak, stırçut, NULL.
+
+88
+00:26:36,948 --> 00:26:38,948
+çok kadar, çok
+
+89
+00:26:43,667 --> 00:26:45,667
+Bunları oluşturduktan sonra hoşgeldiniz.
+
+90
+00:26:49,652 --> 00:27:04,751
+person, strc, artı, pointer, strc, elemanlarına ilişkilerini kullanıyoruz. Bu ifade, şu artı,
+
+91
+00:27:08,692 --> 00:27:12,192
+Aksa bir ekran için, stik okuyoruz.
+
+92
+00:27:13,192 --> 00:27:16,192
+New Person'un içine, D, C, atıyoruz.
+
+93
+00:27:16,192 --> 00:27:21,192
+o yüzden neticik direk üzerinde atabiliriz.
+
+94
+00:27:21,192 --> 00:27:28,192
+Bu yüzden person'in ismini sadece ponitör olarak tuttuk.
+
+95
+00:27:28,192 --> 00:27:35,192
+O yüzden string için diğer yeri ayaklamamız gerekiyor.
+
+96
+00:27:35,192 --> 00:27:41,192
+ve içer, böyle, kaskı çekelim.
+
+97
+00:27:46,483 --> 00:27:50,884
+Bu da işte stetsin gelen neyinin oydu kadar.
+
+98
+00:27:54,067 --> 00:28:10,067
+String, ayıra, pürüz, asit, string, clen fonksiyonuyla oluşuyor. Ancak, string, clen tam boyutu veriyor. En sona mall koymamız gerektiği için arttırıcı öpürüz.
+
+99
+00:28:13,875 --> 00:28:17,875
+karakteri de alakalıcılık oluyor.
+
+100
+00:28:19,875 --> 00:28:24,875
+Bunu çarkıdır, çarşıdır.
+
+101
+00:28:24,875 --> 00:28:27,875
+Bu kadar ele almıştık.
+
+102
+00:28:27,875 --> 00:28:34,875
+Ayrıca bunları sferi kopi ile
+
+103
+00:28:40,564 --> 00:28:42,564
+Şimdi bunu yapıp bir şeyden geçti.
+
+104
+00:28:42,564 --> 00:28:52,564
+Bir de.
+
+105
+00:28:57,460 --> 00:29:01,460
+Ayrıca, aynısını çap içinde yapmaz ki.
+
+106
+00:29:10,228 --> 00:29:40,228
+bir
+
+107
+00:29:38,548 --> 00:29:45,548
+bu
+
+108
+00:29:47,859 --> 00:29:55,859
+Bundan sonra da Person'la cabı ilişkili yapacağız. Akçen, YVCB
+
+109
+00:29:58,259 --> 00:30:02,859
+adresini buraya da bir yolculuk, YVCB
+
+110
+00:30:03,859 --> 00:30:08,739
+şu, çıplaklı yöntürecek. Bunları yaptıktan sonra ilişkili
+
+111
+00:30:09,780 --> 00:30:14,059
+bitiyor. Bir saniye bu, YVCB'i geri dönüşürüz.
+
+112
+00:30:27,508 --> 00:30:32,508
+Bunları aldık. New person.
+
+113
+00:30:35,731 --> 00:30:45,731
+ve
+
+114
+00:30:47,892 --> 00:30:49,892
+numara aldıktan sonra
+
+115
+00:30:53,236 --> 00:30:58,236
+Data Becadurimiz gerekiyor.
+
+116
+00:31:01,556 --> 00:31:05,996
+Bunun içinde bir fonksiyon yazacağız. Red Carson.
+
+117
+00:31:05,996 --> 00:31:08,635
+Oraya database geçeceğiz.
+
+118
+00:31:08,635 --> 00:31:11,635
+Oraya yana uçtan.
+
+119
+00:31:11,635 --> 00:31:13,635
+Tüşünün
+
+120
+00:31:21,811 --> 00:31:23,811
+Çünkü adresi değişebildi mi?
+
+121
+00:31:23,811 --> 00:31:25,811
+Değişebildi mi?
+
+122
+00:31:25,811 --> 00:31:28,811
+Adresi, first reference adresini
+
+123
+00:31:28,811 --> 00:31:30,811
+önderdim.
+
+124
+00:31:49,683 --> 00:31:51,683
+şey dönücek.
+
+125
+00:31:53,683 --> 00:31:55,683
+Teşekkürler.
+
+126
+00:31:59,571 --> 00:32:00,571
+Kodla list.
+
+127
+00:32:12,756 --> 00:32:19,756
+ve
+
+128
+00:32:29,523 --> 00:32:31,523
+person,
+
+129
+00:32:33,123 --> 00:32:37,123
+data, point, yol, tüştü, yerleşmiş,
+
+130
+00:32:37,123 --> 00:32:40,523
+data city,
+
+131
+00:32:40,923 --> 00:32:47,124
+data tecrübe, hang elemanı anlatacağımızdan şu people count'da.
+
+132
+00:32:48,923 --> 00:32:53,124
+Bu çok yani en son, kaç tane eleman var?
+
+133
+00:33:14,291 --> 00:33:18,291
+Yani en son, erayın en son gözü people count's.
+
+134
+00:33:18,291 --> 00:33:28,291
+Değerli, kartonun people count's. O kadar. En son gözü, yine gelen person adresini atlamış için açacağız.
+
+135
+00:33:31,988 --> 00:33:36,587
+Daha sonra da at. Bilseğiniz bir arttırışım, o da bir arttırışım.
+
+136
+00:33:40,211 --> 00:33:49,512
+Bunu şurada da yapabiliriz. Sonradan yaptığımız zaman bu işlemlerden direktten sonra attığım işlem yok mu? Aynen.
+
+137
+00:33:49,512 --> 00:33:51,012
+Şükür.
+
+138
+00:33:51,672 --> 00:33:59,771
+Ve soruda eğer boyutu açılırsa
+
+139
+00:34:05,076 --> 00:34:14,775
+Array boyutu açılırsa boyutu kirttan çıkartmamız istemiyorum. Array'in boyutunun
+
+140
+00:34:16,659 --> 00:34:29,019
+ulaştığında şu şekilde veririz. Her person database dediğim, database count'u
+
+141
+00:34:32,628 --> 00:34:37,628
+Yine PeopleCountages ise artık göreviz dolmuştur.
+
+142
+00:34:41,684 --> 00:34:42,924
+Bu yüzden de katkı bir şey.
+
+143
+00:34:52,980 --> 00:35:01,980
+Şimdi önce database count'ını kitabına çıkarttık. Bunu şu operatörle yapabiliyorduk. Kendisine çalışan.
+
+144
+00:35:01,980 --> 00:35:04,980
+Biri kileç aldık, kendisine atıyor.
+
+145
+00:35:04,980 --> 00:35:08,980
+Ayrıca,
+
+146
+00:35:10,036 --> 00:35:40,015
+parsonsun adresinin datasını ile kodla çıkartacağız. Bunun için ancak dialog daha uygun. Eğer yer varsa bulunduğu adresten, bunun adresten sonra kodla çıkartıyor. Eğer yoksa yeni bir yere kopyalayıp onun adresini zannediyor. O yüzden öncelikle kodla çıkartmak istediğimiz yerin adresini zannediyoruz.
+
+147
+00:35:48,275 --> 00:35:49,275
+oyduğuz.
+
+148
+00:35:59,764 --> 00:36:01,764
+Sözler, prosten, fend.
+
+149
+00:36:27,059 --> 00:36:48,188
+Tamam.
+
+150
+00:36:55,923 --> 00:36:58,923
+Maldırız, böyle bir çay, çay, çay.
+
+151
+00:37:02,931 --> 00:37:03,691
+Evet.
+
+152
+00:37:15,891 --> 00:37:19,132
+Gönlümüsü, takiragüüsü.
+
+153
+00:37:31,059 --> 00:37:33,059
+İstediğiniz için teşekkür ederim.
+
+154
+00:37:35,059 --> 00:37:41,059
+Teşekkürler.
+
+155
+00:37:43,572 --> 00:37:44,491
+top list.
+
+156
+00:38:11,188 --> 00:38:16,128
+Çeşit, çeşit.
+
+157
+00:38:25,108 --> 00:38:26,108
+Bu da işte.
+
+158
+00:38:32,307 --> 00:39:00,307
+...
+
+159
+00:38:46,547 --> 00:38:47,547
+C, çöğüs.
+
+160
+00:38:52,275 --> 00:39:02,275
+...
+
+161
+00:39:03,731 --> 00:39:06,731
+bu da tamamen yiyincilerini aldık.
+
+162
+00:39:06,731 --> 00:39:10,731
+Bu köpküçünün adresini göndereceğiz.
+
+163
+00:39:10,731 --> 00:39:15,731
+Bu adım bu fonksiyonu da
+
+164
+00:40:00,659 --> 00:40:05,659
+tabağı eşitken uygulayıp japa başlayacağız.
+
+165
+00:40:10,420 --> 00:40:21,420
+çarptırı, pöntöldecek. Bu şekilde çözüyoruz. Adımda adımda çarın neyini kadar da konuşuyoruz.
+
+166
+00:40:32,692 --> 00:41:02,692
+Ne?
+
+167
+00:40:44,211 --> 00:40:46,211
+İstirik misli, evet.
+
+168
+00:40:46,211 --> 00:40:49,211
+Aslında, tam bırakın mıydı?
+
+169
+00:40:57,364 --> 00:41:01,364
+Evet, bu.
+
+170
+00:41:05,043 --> 00:41:12,543
+Buradan sağdan yapacağız. Buradan sonra, isme göre arama yapacağız.
+
+171
+00:41:13,543 --> 00:41:19,543
+Sağdan dikiyorsanız, sördücü.
+
+172
+00:41:26,867 --> 00:41:31,867
+Masal için bir de ne araba seçtiniz, neyi geçeceğiz.
+
+173
+00:42:04,724 --> 00:42:08,943
+Evet, sire, parmak, tıkmıyorum, açalım, geçiyoruz.
+
+174
+00:42:17,972 --> 00:42:20,672
+Aydınlanan, ünlü bir foto, tetik.
+
+175
+00:42:21,192 --> 00:42:22,071
+Hepsine bakacağız.
+
+176
+00:42:26,132 --> 00:42:28,132
+bu
+
+177
+00:42:30,132 --> 00:42:32,132
+karşılaştırma için
+
+178
+00:42:32,132 --> 00:42:34,132
+her
+
+179
+00:42:34,132 --> 00:42:36,132
+siyah telefonu
+
+180
+00:42:36,132 --> 00:42:38,132
+her fonksiyonu
+
+181
+00:42:38,132 --> 00:42:42,132
+şu anki
+
+182
+00:42:46,612 --> 00:42:55,431
+Person, enter, bu, bunun name ile bize geçilen name'i karşılaştıracağız.
+
+183
+00:42:55,431 --> 00:43:06,612
+C, pointer, eğer eşit ise 0 dönüyor. Bunlar, eğer ikisi de 1 ve ne eşit ise, vurmuş olacağız.
+
+184
+00:43:11,668 --> 00:43:14,668
+Böylece çok çarpıyor.
+
+185
+00:43:16,267 --> 00:43:17,668
+Bu kutu
+
+186
+00:43:18,267 --> 00:43:19,668
+kardiden
+
+187
+00:43:19,668 --> 00:43:21,668
+başına bir giderim yazdık.
+
+188
+00:43:26,291 --> 00:43:33,291
+ve
+
+189
+00:43:34,867 --> 00:43:42,308
+Dönüş değeri olarak C, endisini tereqt edacağız. Başka bir konksiyonu açalım.
+
+190
+00:43:42,308 --> 00:43:45,867
+Aynısı dönüşlerine özgürlük ediyoruz.
+
+191
+00:43:45,867 --> 00:43:52,867
+Ben hiçbir şey bulamadıysa, boy, çekecek, çekecek, anında eksi bir döndürürüz.
+
+192
+00:43:52,867 --> 00:43:57,867
+Eksi bir olamayacağı için bulamadığına alıyoruz.
+
+193
+00:44:00,436 --> 00:44:02,436
+Evet, şimdi, bu arada bir daha iyi.
+
+194
+00:44:56,692 --> 00:45:02,692
+kaydın sitemesi, herhalde bir kişinin sitemesini yapacağız.
+
+195
+00:45:18,452 --> 00:45:23,131
+Burada yine bir isimler arayacağız. Siziğimiz kesinlikle bulup.
+
+196
+00:45:26,900 --> 00:45:27,759
+Nazırıcı.
+
+197
+00:46:12,052 --> 00:46:20,052
+Burada ise ayrıca arama veftiyar yok. Arama fonksiyonunu yazmıştık.
+
+198
+00:46:20,052 --> 00:46:26,052
+Fonksiyonu çağırarak hangi yurt site oturuyoruz?
+
+199
+00:46:39,987 --> 00:46:50,467
+başlığının kapasını almaya geçeceğiz. Böylece oradan, siz bir şekilde sunacak. Eğer bu eksikirse
+
+200
+00:46:52,052 --> 00:46:57,052
+bir şey yolunlamadığını anlatacağız. Böyle bir video anlatacak bir şey yok.
+
+201
+00:47:13,300 --> 00:47:23,800
+Eğer varsa o bir şey, o point'in gösterdi adresleri, saydesi bırakacağız.
+
+202
+00:47:26,300 --> 00:47:28,800
+Kısaadan, protein pozisyonu.
+
+203
+00:47:33,588 --> 00:47:34,787
+Bir şey size bir şey.
+
+204
+00:47:35,667 --> 00:47:36,588
+Fırıcı bir şey.
+
+205
+00:47:36,588 --> 00:47:37,588
+Bir şey.
+
+206
+00:47:44,211 --> 00:47:48,891
+malloc oluşturduklarım için serbest bırakmamız gerekiyor.
+
+207
+00:48:03,251 --> 00:48:05,251
+Körsün, nul.
+
+208
+00:48:08,563 --> 00:48:24,003
+Ardından, personal job'in var ve onun da neyini konuşmuştuk? Ardından, job'in kendisini free veriyoruz.
+
+209
+00:48:24,003 --> 00:48:28,003
+Aslında da personal job'in.
+
+210
+00:48:30,547 --> 00:48:35,547
+Kırılık.
+
+211
+00:48:40,884 --> 00:49:00,884
+bu sildikten sonra bu array'in o bölgesinde geçersiz bir diğer olacak. Bu kontrat doyla ilgili gösterecek. Karşılığında ayrılık müşirölde olmayacak. O yüzden array'i kaydıracağız.
+
+212
+00:49:05,619 --> 00:49:13,619
+Person Position'dan itibaren, kendisine sonraki kodları bir önceki kodlara taşıyacağız.
+
+213
+00:49:13,619 --> 00:49:17,619
+Sonunda boşluk yok olacak.
+
+214
+00:49:32,403 --> 00:49:37,403
+Person tabi, data, niyesi artı, kendisinden bir sonraki.
+
+215
+00:49:37,403 --> 00:49:40,403
+Biraz daha soruştuk.
+
+216
+00:49:40,403 --> 00:49:42,403
+Kendisinden bir sonraki.
+
+217
+00:49:42,403 --> 00:49:46,403
+Post-production'un yerine konuşacağız.
+
+218
+00:49:46,403 --> 00:49:53,403
+Ve son olarak iki şey eksiktiğimiz için, people count da biraz azıcık.
+
+219
+00:49:56,083 --> 00:50:00,083
+Bunun yerine başka yöntem olarak
+
+220
+00:50:02,283 --> 00:50:07,483
+En son, bunlar sıralı olmadığı için, her sırasında sıklıkla yapmak için
+
+221
+00:50:08,083 --> 00:50:11,483
+Bunu yapmak, bütün her şeyi kaydırmak yerine
+
+222
+00:50:11,683 --> 00:50:17,083
+En sondaki keşiyi alıp sildiğiniz yeri
+
+223
+00:50:18,684 --> 00:50:23,083
+Sildiğiniz keşinin yerine koyabiliriz. Böyle bütün her şeyi kaydırmamız gerek kalmaz.
+
+224
+00:50:23,883 --> 00:50:25,283
+Bu tabi yöntem.
+
+225
+00:50:25,283 --> 00:50:27,283
+Arista Olpins
+
+226
+00:51:13,331 --> 00:51:23,651
+kutlu, kusturu, zihnişancak, free, nâdın olan kutlu, matu.
+
+227
+00:51:49,972 --> 00:51:50,972
+Tamam.
+
+228
+00:51:58,003 --> 00:51:59,003
+Evet.
+
+229
+00:52:30,739 --> 00:52:49,739
+Şimdi bir de sıfır yazdığımızda çıkması lazım ama çıktıktan sonra bir de bütün boşluğumuz erayları kullanmış bir tebefiye serbest bırakması lazım. Bunun için de şu re, programı nasıl yazdım? Şükür.
+
+230
+00:53:42,356 --> 00:53:46,356
+Hepsini, gezeleksiz sayıları, tıklayabiliriz.
+
+231
+00:53:51,188 --> 00:53:58,307
+Ancak sizin esmasında programı tutuyoruz. Kısıtçı oldukça, en sonunda onu başlayacağım.
+
+232
+00:54:01,780 --> 00:54:08,780
+bu
+
+233
+00:54:08,780 --> 00:54:11,780
+o
+
+234
+00:54:11,780 --> 00:54:14,780
+tek tek tek sonrası geçeceğiz
+
+235
+00:54:14,780 --> 00:54:17,780
+bu da yine bir bir şey yazmıştık
+
+236
+00:54:17,780 --> 00:54:20,780
+konusun
+
+237
+00:54:33,331 --> 00:54:35,331
+En son
+
+238
+00:54:37,331 --> 00:54:39,331
+Boşunluk programı, en son
+
+239
+00:54:41,331 --> 00:54:42,331
+Çıkışacağız
+
+240
+00:54:45,331 --> 00:54:46,331
+En son
+
+241
+00:54:47,331 --> 00:54:51,331
+Tereğin boyutlu olduğu için çıkardık, en son olarak oluşacağız.
+
+242
+00:54:51,331 --> 00:54:52,331
+Stadildan
+
+243
+00:54:53,331 --> 00:54:56,331
+Pidolkansı biraz azaltacağız
+
+244
+00:55:06,387 --> 00:55:08,387
+Aferin, tepkik, vipsi.
+
+245
+00:55:11,987 --> 00:55:21,987
+sildik. Bunun sonunda da, kütüphosonu'yu belirtmekten sonra, elenken, sildik yapacağız.
+
+246
+00:56:22,132 --> 00:56:29,132
+bu
+
+247
+00:56:28,052 --> 00:56:41,691
+Kapanma. Bu şekilde R ile gerçekleşecek. Ya da bunu NGTG ile gerçekleşeceğiz. Aşamada.
+
+248
+00:56:57,972 --> 00:57:04,531
+Genel kod yoksa benzer olacak. Tekrar etmez.
+
+249
+00:57:06,531 --> 00:57:14,771
+Ancak şu eleyeli, hikmetiz konudurumsa, değişecek fonksiyonları ile içerisine göreceğiz.
+
+250
+00:57:24,019 --> 00:57:52,019
+Bu yapılar aynı kalacak. Zaten artık database'in node tutacak. Bak ismini her kreman node tuttuk. Bu ise bir person tutacak. Kendisi yerini kendisi...
+
+251
+00:57:52,019 --> 00:57:56,019
+Bir de link list yapmanda
+
+252
+00:57:58,519 --> 00:58:02,519
+Kelime son kelimesi yapmak için liste yapmam. Şu ifade
+
+253
+00:58:04,320 --> 00:58:09,519
+Bu cinsiten bir pointer ekrançımız var. Bir sonraki elan düzü seçelim.
+
+254
+00:58:12,019 --> 00:58:13,519
+Nasıl? Şu kaşığı daha da.
+
+255
+00:58:14,019 --> 00:58:15,519
+Burada patlayıp tutun.
+
+256
+00:58:15,519 --> 00:58:22,519
+Next tabi, next tabi son etnotu gösterdi. Böylece Next tabi de bütün link kısmı dolaşabiliyoruz.
+
+257
+00:58:39,923 --> 00:58:41,923
+Ekse ne işlem yok.
+
+258
+00:58:45,940 --> 00:58:51,940
+ve bu nevi şuda yukarıdaki, bu nevi şudra.
+
+259
+00:58:58,387 --> 00:59:02,387
+database on chat sadece
+
+260
+00:59:02,387 --> 00:59:07,387
+not point intelligence
+
+261
+00:59:07,387 --> 00:59:10,387
+bu da
+
+262
+00:59:10,387 --> 00:59:14,387
+testi gösteren head point intelligence
+
+263
+00:59:14,387 --> 00:59:18,387
+baştan ne olarak çıkıyoruz?
+
+264
+00:59:24,275 --> 00:59:26,275
+altı, hep geçeceğiz.
+
+265
+00:59:28,275 --> 00:59:30,275
+App personal yokacak.
+
+266
+00:59:30,275 --> 00:59:33,275
+Geçtiğimiz App personal işte işte.
+
+267
+00:59:56,500 --> 00:59:58,899
+İlk testte farklı şeyler yapabiliriz.
+
+268
+00:59:59,799 --> 01:00:02,899
+Eğer yine sıralı değilse en başa eklediğimizde
+
+269
+01:00:03,699 --> 01:00:05,300
+en başa eklediğimizde ise
+
+270
+01:00:06,800 --> 01:00:08,199
+yeni bir notumuz olacak.
+
+271
+01:00:09,099 --> 01:00:09,699
+Not
+
+272
+01:00:10,599 --> 01:00:13,100
+Öldüken artık hepsi bunu gösterecek.
+
+273
+01:00:13,299 --> 01:00:14,100
+Bunun nette
+
+274
+01:00:15,500 --> 01:00:17,500
+önceki herin gösterdiği yeri gösterecek.
+
+275
+01:00:19,100 --> 01:00:23,000
+Ya da eğer en son ekran eksikliyorsak en sona malgörene kadar gideceğiz.
+
+276
+01:00:24,500 --> 01:00:25,799
+Ondan sonra bu notu
+
+277
+01:00:26,500 --> 01:00:29,500
+sonuna ekleyeceğiz
+
+278
+01:00:29,500 --> 01:00:32,500
+artık data next'in şeyi
+
+279
+01:00:32,500 --> 01:00:35,500
+bunu göstereceğiz ve next'in alını göstereceğiz
+
+280
+01:00:35,500 --> 01:00:37,500
+böyle de en sona ekleyeceğiz
+
+281
+01:00:37,500 --> 01:00:41,500
+şimdi önce ilk başa ekleyelim
+
+282
+01:00:44,500 --> 01:00:46,500
+şimdi tabi not
+
+283
+01:00:46,500 --> 01:00:49,500
+oluşturacağız
+
+284
+01:00:56,724 --> 01:01:03,724
+ve
+
+285
+01:01:02,356 --> 01:01:04,356
+no, ya da işte
+
+286
+01:01:09,235 --> 01:01:11,235
+Bu da bir şey.
+
+287
+01:01:14,771 --> 01:01:20,771
+Person, Qs, Catac, S, O, C veya Gevenlik, Persona, Reznat olsun.
+
+288
+01:01:22,771 --> 01:01:29,771
+Ve ilk başta hiçbir yeri göstermediği için Next, Naz oluyor.
+
+289
+01:01:43,476 --> 01:01:44,135
+Mhm.
+
+290
+01:01:48,211 --> 01:02:00,211
+peki şeyde, minodunin eksini artık fede atacağız. Aslında, eee, şu anda durun hafta işte.
+
+291
+01:02:03,347 --> 01:02:10,347
+Note pointer olduğu için değiştiğinden dolayı pointer, pointer, pointer gönderiyoruz.
+
+292
+01:02:10,347 --> 01:02:15,707
+Windows'un eksi heden değer olacak.
+
+293
+01:02:15,707 --> 01:02:25,708
+Heden yeni Windows'un eksi heden eski değeri olacak.
+
+294
+01:02:29,780 --> 01:02:37,139
+New node'un next değeri, bizim eski değeri olacak. DNAhead değerimizde, new node'un adres değeri olacak.
+
+295
+01:02:37,139 --> 01:02:39,139
+Bu da new node.
+
+296
+01:02:39,139 --> 01:02:42,419
+Tüm değer olacak.
+
+297
+01:02:42,419 --> 01:02:45,139
+Ölce en başı ekran iş olsun.
+
+298
+01:02:50,675 --> 01:02:52,675
+...değişmeyecek.
+
+299
+01:02:53,675 --> 01:02:56,675
+...bizde de...
+
+300
+01:02:58,675 --> 01:03:04,675
+...sadece hedi konutunu geçebiliriz.
+
+301
+01:03:05,675 --> 01:03:10,675
+Çünkü hediye değişme ihtimali yok listelerde.
+
+302
+01:03:21,460 --> 01:03:26,219
+istedim, heriften başlayıp naz görene kadar next next diyeceğiz. Böylece
+
+303
+01:03:29,299 --> 01:03:30,420
+notları
+
+304
+01:03:30,819 --> 01:03:32,499
+göstermiş olacağız.
+
+305
+01:03:33,059 --> 01:03:35,420
+current notumuz nasıl?
+
+306
+01:03:36,619 --> 01:03:37,619
+da
+
+307
+01:03:41,300 --> 01:03:56,979
+bir adım isteyecek. File. Şu anki değerimiz daha olmadı müddetçe. Devam edeceğiz.
+
+308
+01:04:00,019 --> 01:04:01,019
+A.
+
+309
+01:04:04,467 --> 01:04:08,908
+bu artı kuru konusu anlaşılma, kuruldu nexti
+
+310
+01:04:11,267 --> 01:04:15,127
+bu olacak, bir saat not edeceğiz, bundan önce de
+
+311
+01:04:15,607 --> 01:04:18,607
+ııı
+
+312
+01:04:21,492 --> 01:04:33,492
+Person yazdıkçı hızlıcaz, call, current'ın, person'a alınma açıcaz. Böylece bütün stay'a atmış olcaz.
+
+313
+01:05:25,907 --> 01:05:32,907
+İçerideki, çantan kodla göreceğiz. Şimdi, erayı da farklılıyor, ben sünnetten iki yerden, ben başak kodla göreceğiz.
+
+314
+01:05:32,907 --> 01:05:38,907
+Düzden, yapıdınızdan iki yerden alıyor.
+
+315
+01:05:44,563 --> 01:05:48,563
+Anlaşılır, tabunun son ekranı halini yapacağız.
+
+316
+01:05:51,507 --> 01:05:54,867
+voice, at personal losses.
+
+317
+01:06:01,364 --> 01:06:04,723
+Most to do benzeri, bu bocik.
+
+318
+01:06:20,500 --> 01:06:26,500
+bir nokta oluşturup atama kısmı aynı şekilde olacak. Ancak next liste bu sabah mall olacak. Head liste olacak.
+
+319
+01:06:27,500 --> 01:06:31,500
+Şimdi birkaç ihtimal var. En son ekberç.
+
+320
+01:06:32,500 --> 01:06:37,500
+Eğer hiç eleman yoksa yani head null ise iki seferde.
+
+321
+01:06:38,500 --> 01:06:43,500
+Bu zaman headin bu yeni node to head adams gerekiyor.
+
+322
+01:06:47,188 --> 01:06:59,188
+son alan, en grup, ve h, din de, ili, parçal malloc ve alt kredi, konu duru, stırsık.
+
+323
+01:07:18,516 --> 01:07:28,755
+Eğer C, NULL değilse en sonu kadar gideceğiz. İstemedi olduğumuz benzer okuyla.
+
+324
+01:07:31,827 --> 01:07:37,147
+yapacağız. Bir olarak bir dinleyin atacağız.
+
+325
+01:07:39,251 --> 01:07:44,632
+Sonra burada farklı olarak, eğer en sona gidip istediğimiz, en sona gidip, navlanana kadar bakıyorduk.
+
+326
+01:07:44,632 --> 01:07:53,132
+Bunda en son eklemek istediğimiz için şu, tuttaksın, parçası, dinleme saatleri, yani bunu da olmaması aldı ki, next'ini değiştirebilirim.
+
+327
+01:07:53,132 --> 01:08:00,131
+Yani, işte en sona da ekledim. O yüzden, current'ın, next'ini alana kadar devam edeceğiz.
+
+328
+01:08:05,571 --> 01:08:07,012
+Navlanma kutu bitince...
+
+329
+01:08:09,251 --> 01:08:16,252
+çöğrünç,
+
+330
+01:08:20,307 --> 01:08:35,667
+Bu en son bu, orta var gittiğinde, körün en son anlamı göstereyim ki, atık, körün tüm nextine, sizden notumuza atarsak, onu en sona girmiş olacağız.
+
+331
+01:08:39,988 --> 01:08:40,988
+Evet.
+
+332
+01:08:42,988 --> 01:08:45,988
+Buğun kadar şu, şu la, dene, dene, dene.
+
+333
+01:09:00,916 --> 01:09:07,635
+groupers, diğerleri de kilopter, zanır.
+
+334
+01:09:12,564 --> 01:09:13,643
+bir soru çe...
+
+335
+01:09:23,859 --> 01:09:28,859
+Search'ta da yine hep gözlük isim bulacağız.
+
+336
+01:09:30,859 --> 01:09:35,859
+Yine bir tüm isteği plana kadar konuşacağız.
+
+337
+01:09:39,091 --> 01:09:46,091
+ve
+
+338
+01:09:43,828 --> 01:09:51,227
+seçkedef, add değişmeyecek için, kendisini döndürüyoruz.
+
+339
+01:09:51,227 --> 01:09:53,427
+adresini değil,
+
+340
+01:09:54,527 --> 01:09:57,828
+benimle bütün şey varlıyoruz.
+
+341
+01:09:59,328 --> 01:10:03,328
+bu çocukla olmadıklar,
+
+342
+01:10:03,328 --> 01:10:05,828
+tamam,
+
+343
+01:10:11,828 --> 01:10:14,828
+Burada da karşılaştığımı alacağız.
+
+344
+01:10:14,828 --> 01:10:16,828
+Satifame, bu arada,
+
+345
+01:10:16,828 --> 01:10:19,828
+Choran's,
+
+346
+01:10:19,828 --> 01:10:22,828
+Torson,
+
+347
+01:10:22,828 --> 01:10:25,828
+Yine'nin bir de,
+
+348
+01:10:25,828 --> 01:10:27,828
+Günderleme,
+
+349
+01:10:27,828 --> 01:10:30,828
+Aynı, aynı oldukça sıvı,
+
+350
+01:10:30,828 --> 01:10:33,828
+Aynı, aynısı,
+
+351
+01:10:33,828 --> 01:10:37,828
+Aynı,
+
+352
+01:10:50,931 --> 01:10:51,931
+İngilizce.
+
+353
+01:11:05,363 --> 01:11:06,363
+pulkos ekme, midi, içi, tomatürüz, indes, arzak,
+
+354
+01:11:25,779 --> 01:11:32,779
+Buradan sonra her şekilde current'in restrilemeyeceğiz.
+
+355
+01:11:32,779 --> 01:11:35,779
+Buradan sonraki görüntüme geçeceğiz.
+
+356
+01:11:35,779 --> 01:11:40,779
+Current'in olmaya kadar tüm günlük etmiş açacağız.
+
+357
+01:11:40,779 --> 01:11:47,779
+Gerçekten hiçbir şey olmazsa, eksiklik edecek.
+
+358
+01:12:04,627 --> 01:12:05,627
+Surten elbos.
+
+359
+01:12:33,203 --> 01:12:35,203
+C, çınkı.
+
+360
+01:12:37,939 --> 01:12:44,939
+ve
+
+361
+01:12:49,203 --> 01:12:49,963
+şey
+
+362
+01:13:02,131 --> 01:13:09,131
+ve
+
+363
+01:13:21,587 --> 01:13:22,087
+başına.
+
+364
+01:13:35,796 --> 01:13:38,796
+ve şirle ramayken.
+
+365
+01:13:44,340 --> 01:13:46,340
+3, 2, 3, 2, 1, 2, 1.
+
+366
+01:13:54,515 --> 01:14:04,755
+bir person, bir person yine aynı olacak. C, middele, hiç içlerinde biraz daha farklı.
+
+367
+01:14:07,220 --> 01:14:36,739
+Burada yine head değeri değişebilir, eğer ülkünahsızın, hendinatresini göndereceğiz, genelini göndereceğiz. Ancak burada içeride arama yapabiliriz. Sadece indeksi dönümü, aslında inkıdisklerin bir dezavantajı da olur. Düğününlerde olduğunu bilsek bile direk erişemiyoruz. Yani gene baştan oraya kadar gündemiz lazım yani daha yıkarıp inses yok.
+
+368
+01:14:36,739 --> 01:14:40,239
+her zaman next list ile devam edip ondan sonra erişebiliriz.
+
+369
+01:14:40,639 --> 01:14:45,239
+Bireyde olduğu gibi ilimcilik bir insanda bile erişemiyoruz.
+
+370
+01:14:48,212 --> 01:14:55,212
+Buradan ilk gene search yapacağız.
+
+371
+01:14:55,212 --> 01:14:58,212
+Her nodu bakacağız.
+
+372
+01:14:58,212 --> 01:15:01,212
+Eğer isim aynıysa onu size yapacağız.
+
+373
+01:15:01,212 --> 01:15:03,212
+Ama silmek için de şu işlem yapmaz gerek.
+
+374
+01:15:03,212 --> 01:15:06,212
+Mesela modu siliceyeceğimiz anladık.
+
+375
+01:15:06,212 --> 01:15:09,212
+Bu modu önceki modu bilmemiz gerekebilir.
+
+376
+01:15:09,212 --> 01:15:11,212
+Çünkü bu next değerini değiştireceğiz.
+
+377
+01:15:11,212 --> 01:15:15,212
+Bu next değeri kendisinden sonraki göstermesi lazım.
+
+378
+01:15:15,212 --> 01:15:17,212
+O yüzden previewsiyonu da tutmamız lazım.
+
+379
+01:15:18,212 --> 01:15:27,212
+Sadece Winnext'i gösterdiğimiz zaman, yani Winnext'i yeni Winnext'i aslında Winnext'i
+
+380
+01:15:27,212 --> 01:15:32,212
+Atadığımız zaman artık önceki not, hükmertan ekliğini gösterir.
+
+381
+01:15:32,212 --> 01:15:35,212
+Burada kürlediğimiz zaman silme işlemini yapacağız.
+
+382
+01:15:37,212 --> 01:15:42,212
+Ama ilk not da silme işlemek istiyorsak,
+
+383
+01:15:42,212 --> 01:15:48,212
+artık heads düğümünün deksiyle aynı olacak
+
+384
+01:15:48,212 --> 01:15:52,212
+bir sonraki bunu gösterecek
+
+385
+01:15:54,212 --> 01:15:58,212
+son adımak ilerlediğimizde ilk netliymiş olacak
+
+386
+01:15:58,212 --> 01:16:00,212
+geri kalmak için aynı
+
+387
+01:16:00,212 --> 01:16:06,212
+şimdi iki tane diğer tutacağız
+
+388
+01:16:06,212 --> 01:16:13,212
+ve
+
+389
+01:16:24,148 --> 01:16:25,148
+Şak.
+
+390
+01:16:30,996 --> 01:16:33,996
+Genel arama ile benzer şekilde görüntüm.
+
+391
+01:16:35,996 --> 01:16:37,996
+Null olmadığı müddetçe.
+
+392
+01:16:39,996 --> 01:16:45,996
+Ve burada eşitliği yapacağız. Eşitli olduğunda çıkmasını istiyoruz.
+
+393
+01:16:49,427 --> 01:16:56,427
+bu
+
+394
+01:16:56,427 --> 01:17:00,427
+geçen kalı aynısı
+
+395
+01:17:02,707 --> 01:17:21,468
+eşit değiliz. Olduğunuz için aynı olmadan devam et. Aynısı, bu araçtan çıkacağız. Aynı olduğumuz için bir sonraki moda geçeceğiz. Bir sonraki toprağımız artık körün tutulacak.
+
+396
+01:17:23,315 --> 01:17:29,315
+ve current modda, current index olacak. Öyle bir son olarak da geçeceğiz.
+
+397
+01:17:39,444 --> 01:17:57,444
+En son, rejen brevizem, köyutması tutuş olacak. En sonunda, köyutması bulamadıysak, köyutması alırsa, bu zaman en sona gelmiştir.
+
+398
+01:17:57,444 --> 01:18:04,444
+Bu yüzden, bu almıştır diyeceğiz.
+
+399
+01:18:15,220 --> 01:18:17,220
+çalışmayacak ihtimal yapacağız.
+
+400
+01:18:17,220 --> 01:18:19,220
+eğer şimdi ilk ihtimal var,
+
+401
+01:18:19,220 --> 01:18:21,220
+eğer ülke namazsa
+
+402
+01:18:21,220 --> 01:18:23,220
+kreviysen alırılacak.
+
+403
+01:18:23,220 --> 01:18:27,220
+çünkü ön başta kreviysen alırılacak.
+
+404
+01:18:27,220 --> 01:18:29,220
+eğer playa hiç kim nası yok.
+
+405
+01:18:29,220 --> 01:18:31,220
+ve 2-2 arasında eşit size.
+
+406
+01:18:31,220 --> 01:18:33,220
+kreviysen alırılacak.
+
+407
+01:18:33,220 --> 01:18:35,220
+eğer kreviysen alırılacak.
+
+408
+01:18:35,220 --> 01:18:37,220
+kreviysen alırılacak.
+
+409
+01:18:37,220 --> 01:18:39,220
+o yüzden
+
+410
+01:18:39,220 --> 01:18:41,220
+eğer artık
+
+411
+01:18:41,220 --> 01:18:47,220
+Heading next'ini atacağız.
+
+412
+01:18:47,220 --> 01:18:53,220
+Böylece ilk next'inden çıkmış olacak.
+
+413
+01:18:53,220 --> 01:18:57,220
+Eğer yaklaşık değilse,
+
+414
+01:18:57,220 --> 01:19:01,220
+Previews'un yeni next'i
+
+415
+01:19:01,220 --> 01:19:03,220
+current'in next'i olacak.
+
+416
+01:19:03,220 --> 01:19:05,220
+Böylece adedeki next'i çıkartıyoruz.
+
+417
+01:19:05,220 --> 01:19:16,220
+ve en sonunda da unutur ve gücü yenilerek kalanını seviyorsunuz.
+
+418
+01:19:18,220 --> 01:19:21,220
+Bu da son modun kendisini tepkilerimiz lazım.
+
+419
+01:19:26,195 --> 01:19:28,195
+Örülfü sinir, şahs.
+
+420
+01:20:04,595 --> 01:20:08,595
+Proyaltyom, tüm stücür, tüm eşeklış.
+
+421
+01:20:41,587 --> 01:20:46,587
+ve sonlar altı pöze, kuracağız.
+
+422
+01:20:53,971 --> 01:21:00,971
+ve
+
+423
+01:21:03,956 --> 01:21:09,956
+Bakalım baştan sonuna kadar her ne tür rızı çeşire sıfırlayacağız.
+
+424
+01:21:09,956 --> 01:21:11,956
+Dabağı
+
+425
+01:21:16,020 --> 01:21:21,520
+Bu da bu da
+
+426
+01:21:38,515 --> 01:21:40,515
+Bu da şu bu psikoloj.
+
+427
+01:21:48,787 --> 01:21:58,787
+ve
+
+428
+01:21:59,539 --> 01:22:06,299
+Bu da bu yol koş, şu anıtı, tutucu farkından görüntü müşterine edeceğiz.
+
+429
+01:22:06,299 --> 01:22:11,699
+Bu yolculuğunu yaparsak, bir ancak bu yolun adısını kaybettiriz, onun işlemleriz.
+
+430
+01:22:11,699 --> 01:22:19,699
+Görüntü müşterine geçe olunca artık yanıda geçiyor, speski, sen böyle nokta.
+
+431
+01:22:21,811 --> 01:22:23,811
+Kürlüşler, şans.
+
+432
+01:22:27,475 --> 01:22:28,475
+İlginç.
+
+433
+01:22:33,300 --> 01:22:36,300
+ve nasıl bir şey yapıcı olacağız?
+
+434
+01:22:39,764 --> 01:22:43,764
+Böylece yakınca tamam, sınmış olacağım.
+
+435
+01:23:33,811 --> 01:23:37,811
+Eray ve Tipittis'in bazı avantajları ve avantajları var.
+
+436
+01:23:38,811 --> 01:23:42,811
+Sizde fark ettiğiniz üzere Tipittis'ler
+
+437
+01:23:43,811 --> 01:23:47,811
+Sonsuna kadar, Memory Icin'in verdiği kadar ekleyebiliriz.
+
+438
+01:23:48,811 --> 01:23:49,811
+Ama
+
+439
+01:23:50,811 --> 01:23:57,811
+Tata Eray'tin de Eray'de olduktan sonra iki katına çıkartmamız gerekli. Tekrar lokansmanı yapıyoruz.
+
+440
+01:24:04,564 --> 01:24:12,564
+Ayrıca, Giddis'te bir elemanı sildiğiniz zaman sadece Fiat Not'a gidip o elemanı siliyoruz.
+
+441
+01:24:12,564 --> 01:24:15,564
+Ve tekrar shift etmediği gerek kalmıyor.
+
+442
+01:24:19,564 --> 01:24:28,564
+Ancak Array'de, slikten sonra o öbeğenin boş kalmasını istemiyorsak, eğer şey sıralıysa, hepsini shift edeceğiz.
+
+443
+01:24:28,564 --> 01:24:32,564
+O yüzden ovaya kalmışlık ıptal olayım.
+
+444
+01:24:32,564 --> 01:24:39,564
+Ama bu süpçüde sadece o düğüm kaldırılarak cüptetmeden sile ediyoruz.
+
+445
+01:24:49,555 --> 01:24:59,275
+Belli açısından baktığımızda, sabit ki, linked list daha bu zamanda gördü. Çünkü her person için bu aileyi eğer de durup yalnızca bu vardı ancak.
+
+446
+01:24:59,275 --> 01:25:06,795
+Note olduğu zaman bir de ayrıca Struck note maxini tutuyoruz. Öğrencelikle kayıp oluyor.
+
+447
+01:25:08,236 --> 01:25:18,675
+Ayrıca, array tipinde eğer biz iyi yenisi bulduğumuz anda direkt gidip onu silebiliyorduk.
+
+448
+01:25:18,675 --> 01:25:28,295
+Ancak burada link atışta kimisi bilsek bile sonradan erişiremiyoruz en baştan tekrar next, play, next, play, next, play, next, play
+
+449
+01:25:28,295 --> 01:25:34,375
+O yüzden elemana erişim o en karmaşıklıkta ne de olabilirken
+
+450
+01:25:42,996 --> 01:26:04,496
+Eğer çok ekleme ve çıkma olduğu durumlarda link list daha doğru bir yere yapısı, işlem vesibede çok daha az işlem yapıyor. Ama eğer sayısı kısıtlıysa, belki dinamik kalbiyerayı içiniz göreceksiniz.
+
+451
+01:26:04,496 --> 01:26:08,856
+Dere yapısını bağlı diyeceğim.
+
+452
+01:26:08,856 --> 01:26:11,256
+Kaldınki tüys daha dinamik.
+
+453
+01:26:11,256 --> 01:26:17,735
+Sizin işlemlerini de daha az karışıklıkla yapıyoruz.
+
+454
+01:26:30,804 --> 01:26:36,804
+Bu soru ile bir sonuç deriz bir şey var mı? Bir de son bir kaydır sunu lazım.
+
+455
+01:26:43,764 --> 01:26:48,164
+Bir daha da varsin kendi
+
+456
+01:26:49,283 --> 01:26:51,483
+ve dosyanları. Bunları ekliyoruz.
+
+457
+01:26:51,483 --> 01:26:55,644
+Bunları eklerken bu işareti kullanıyoruz. Bunlar derleyicinin olduğu dizine bakıyor.
+
+458
+01:26:55,644 --> 01:27:02,284
+Tırnak içerisine baktığımızda sizin mevcut dizinde yani bu dosyanın olduğu dizindeki
+
+459
+01:27:02,284 --> 01:27:06,883
+şeyleri import ediyor. Dizine bakıyor, onları import ediyor.
+
+460
+01:27:06,883 --> 01:27:09,003
+Şimdi aşağıya baktığımızda
+
+461
+01:27:17,779 --> 01:27:29,779
+Bu akroları, biliyorsunuz, menün yazdığı yere bu ifadeyi getirip kopyalıyor derlerimizin zamanıdır.
+
+462
+01:27:29,779 --> 01:27:37,779
+Şimdi menü h için yapalım. Bu da if not defined. Menü h tanımlı değilse menü h için yapalım.
+
+463
+01:27:37,779 --> 01:27:51,779
+Bu da şey yapmak için, birden fazla ilk kez include verilirse farklı şey özellikle karışıklığı özellikle daha önce include verilirse define var
+
+464
+01:27:51,779 --> 01:27:57,779
+Bu da işte include korunası oluyor, include karakter değil var
+
+465
+01:27:57,779 --> 01:28:01,779
+Eğer daha önce include verilirse onu include et
+
+466
+01:28:01,779 --> 01:28:05,779
+Ardından bizim arkadaşımız define menu
+
+467
+01:28:07,779 --> 01:28:15,779
+Şunlarda satır sonu kaçış karakteri koyduğumuz zaman bunlar birbirinin devam ettiğini gösteriyor
+
+468
+01:28:16,779 --> 01:28:21,779
+Menüyü bu şekilde fxf alt alta
+
+469
+01:28:22,779 --> 01:28:26,779
+header çalıştırdığımızda menü yerine soydan bu ifade koyacak
+
+470
+01:28:32,884 --> 01:28:37,884
+calculation click ise, gene benzer şekilde include cardlar var.
+
+471
+01:28:37,884 --> 01:28:49,884
+Takal eklememiz için, ifanan gibi bu topla x y ifadesi gördüğü yere, derleme zamanından önce x artı y ifadesini demiştik.
+
+472
+01:28:49,884 --> 01:28:57,884
+Mesela, topla x artı y, referatik aşamasında bu ifadeyi yerine koydu.
+
+473
+01:28:57,884 --> 01:29:19,884
+Bu NULL sayesinde bütün ayrı doçalar döküp yalnızca bir satınla bütün dakikaları dahil edebiliyoruz. Zaten şunlar da aslında enzer şey dakikada çalışıyor. Böylece programlar birinden pahaması oluyor.
+
+474
+01:29:31,956 --> 01:29:38,956
+C, malloc, bir programla, bir şeyle çalışıyor. Diğer her bir suğunu çarma.
+
+475
+01:29:48,051 --> 01:29:52,051
+Evet, altıcık adamı kodla suylu, su olan var mı anlamadın yer?
+
+476
+01:30:17,427 --> 01:30:20,067
+sorunuz yoksa bugünki uygulama bu kadar.
+
+477
+01:30:22,467 --> 01:30:24,467
+Ahmet Hoca online dersi
+
+478
+01:30:25,587 --> 01:30:27,427
+Cuma günü yapacakmış.
+
+479
+01:30:27,427 --> 01:30:29,027
+Online ders olmayacak.
+
+480
+01:30:30,787 --> 01:30:34,467
+Öpücüm uygulama bu kadar. Denediğiniz için teşekkür ederim.
+
+481
+01:30:34,868 --> 01:30:36,627
+Sonuç yoksa.
+
+482
+01:30:40,243 --> 01:30:41,243
+İzmir.

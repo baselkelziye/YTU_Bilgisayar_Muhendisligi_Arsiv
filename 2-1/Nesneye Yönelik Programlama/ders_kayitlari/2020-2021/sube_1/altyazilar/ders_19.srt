@@ -1,0 +1,2323 @@
+1
+00:07:13,363 --> 00:07:14,123
+Assalamualaikum.
+
+2
+00:07:16,823 --> 00:07:17,543
+Alaikumussalam.
+
+3
+00:07:36,307 --> 00:07:39,987
+Başka kimse gelmeyecek daha. Biraz bekledim onu.
+
+4
+00:08:20,531 --> 00:08:21,531
+Başlayalım o zaman.
+
+5
+00:08:32,148 --> 00:08:36,148
+Evet, bu hafta dört konuyla ilgileneceğiz.
+
+6
+00:08:36,148 --> 00:08:42,148
+FileStream, yani dosyayı yazma, dosyadan okuma falan.
+
+7
+00:08:42,148 --> 00:08:52,148
+Inner classlar, işte multi-thread yapıları, bir de type, casting, tip dönüştürme.
+
+8
+00:08:57,940 --> 00:08:59,660
+Öncelikle inner class'dan başlayalım.
+
+9
+00:09:00,960 --> 00:09:01,800
+Inner class için
+
+10
+00:09:07,283 --> 00:09:09,624
+Bu sitede, bu sitede biliyorsunuzdur belki.
+
+11
+00:09:13,268 --> 00:09:15,368
+Buradan kaynak alacağız.
+
+12
+00:09:22,388 --> 00:09:24,388
+Evet, inner classları biliyorsunuz.
+
+13
+00:09:24,388 --> 00:09:32,388
+Bir classın içinde, bir class yazıldığı zaman, bu içerideki class'a inner class deniliyor.
+
+14
+00:09:34,388 --> 00:09:36,388
+Anteji nedir?
+
+15
+00:09:36,388 --> 00:09:39,388
+Açıkçası, çok bir farkı yok.
+
+16
+00:09:40,388 --> 00:09:44,268
+Yani, şunları özellikle hazırlamıştım.
+
+17
+00:09:47,347 --> 00:09:58,347
+Bakın burada bir tane inner class diye bir tane class tanımlamışım. Inner dediğime bakmayın. Yani bir tane A class'ı, bir tane de B class'ı. Dış dışa tanımladım.
+
+18
+00:09:59,647 --> 00:10:01,647
+Burada ne yaptım bakın hani
+
+19
+00:10:03,347 --> 00:10:06,548
+Dış class diye tanımladığım yerde bir tane
+
+20
+00:10:07,847 --> 00:10:10,548
+inner class'tan nesne oluşturdum.
+
+21
+00:10:11,048 --> 00:10:12,048
+Bununla
+
+22
+00:10:14,836 --> 00:10:15,276
+Bu.
+
+23
+00:10:17,036 --> 00:10:18,196
+Aynı şey yani.
+
+24
+00:10:19,836 --> 00:10:23,375
+Olayı nedir? Bakın burada 2-3 satır kod yazıyoruz.
+
+25
+00:10:25,276 --> 00:10:26,316
+Burada bu kadar.
+
+26
+00:10:27,596 --> 00:10:31,036
+Hocam o linki chat'e yazabilir misiniz? Rica etsin yukarıdakini.
+
+27
+00:10:31,516 --> 00:10:31,975
+Bunu mu?
+
+28
+00:10:32,375 --> 00:10:32,916
+Evet lütfen.
+
+29
+00:10:49,844 --> 00:11:12,024
+Yani aradaki fark bu. Yani nedir? İşte okunurluluk. Hemen kısa sürede daha kod yazmış olduk. Şu kadar satıp kod yazın o iki yerine. Şunu yazmış olduk ve tamam. Bakın nasıl kullanıyoruz? İşte dışarıdaki class'tan bir tane class oluşturuyoruz.
+
+30
+00:11:13,620 --> 00:11:21,240
+Sonra o class nokta, o class'tan oluşturduğumuz nesne, myAuthere.newInnerClass
+
+31
+00:11:23,240 --> 00:11:24,519
+Ne yapıyoruz bunu da?
+
+32
+00:11:27,956 --> 00:11:32,956
+Outer class.inner class tipinde
+
+33
+00:11:34,656 --> 00:11:37,156
+bir tane değişken MyInner adında
+
+34
+00:11:37,756 --> 00:11:39,355
+bir değişken de tutuyoruz.
+
+35
+00:11:40,756 --> 00:11:43,956
+MyInner.y, MyOuter.x
+
+36
+00:11:44,656 --> 00:11:46,656
+Bunların toplamını dediğimizde
+
+37
+00:11:47,456 --> 00:11:50,956
+5 artı 10, 15 çıktısını veriyormuş bile.
+
+38
+00:11:54,644 --> 00:11:57,644
+Tek fark bu. Yani mesela
+
+39
+00:11:58,364 --> 00:12:01,244
+Hani bu içeride diye şu, yani
+
+40
+00:12:02,644 --> 00:12:04,644
+Myinner.x
+
+41
+00:12:05,964 --> 00:12:09,644
+Diyebileceğimizi mesela düşünmeyin. Böyle bir şey olmuyor.
+
+42
+00:12:11,043 --> 00:12:13,043
+Aynı burada nasıl diyemeyeceksek
+
+43
+00:12:14,244 --> 00:12:15,644
+Mesela burada değil mi?
+
+44
+00:12:17,324 --> 00:12:19,324
+Bir nesne olsaydı diyemeyecektik.
+
+45
+00:12:22,227 --> 00:12:28,227
+Ya da aynı şekilde burada mesela y.y.y diyemeyiz de.
+
+46
+00:12:29,827 --> 00:12:33,227
+İşte diz.y diyemeyiz mesela.
+
+47
+00:12:39,124 --> 00:12:46,124
+Yani iç içe olduğu için hani şurada X değişkenine bu class'ın içinden erişemiyoruz. Öyle düşünmeyin.
+
+48
+00:12:52,179 --> 00:12:54,939
+Onun haricinde private olduğu zaman da hata veriyor.
+
+49
+00:12:55,379 --> 00:12:58,059
+Yani o yüzden public olması lazım.
+
+50
+00:12:58,319 --> 00:12:59,859
+Private olduğu zaman
+
+51
+00:13:00,500 --> 00:13:02,419
+Burada hata verecektir.
+
+52
+00:13:02,679 --> 00:13:03,439
+Şurada.
+
+53
+00:13:06,932 --> 00:13:18,731
+Çünkü görmüyor yani private olduğu için. Ne olacak? Public, protected veyahut da hiçbir şey yazmazsanız da private yerine bir belirti hiç belirtmezsiniz mesela. O da kabul eder.
+
+54
+00:13:21,971 --> 00:13:39,031
+Onayla static inner class dediğimizde, her static, yani mesela outer class'ın içinde static x deseydik, static int x eşittir onu deseydik, nasıl outer class.x diyecekti isek, aynı şekilde outer class.inner class diyebiliyoruz.
+
+55
+00:13:39,091 --> 00:13:42,611
+Ama işte bu bir nesne olduğu için ne olacak? Bir alan oluşturacağız. O yüzden new diyoruz.
+
+56
+00:13:43,508 --> 00:13:56,228
+Ne yapacağız? O alanı bu veri tipinde, author class.inner class veri tipinde, myinner adında değişkende tutacağız. Sonra ne oldu? myinner.y dedik ve yazdırdık.
+
+57
+00:13:56,228 --> 00:14:02,220
+Hani bunun için, yani statin olayı neydi? author class'tan bir nesne oluşturmam gerekmedi.
+
+58
+00:14:14,323 --> 00:14:16,923
+Mesela içerideki metoda erişeceğiz.
+
+59
+00:14:17,923 --> 00:14:19,923
+Şu metoda erişmek istiyoruz. Ne yapacağız?
+
+60
+00:14:20,223 --> 00:14:22,823
+Önce outer class'tan bir nesne oluşturacağız.
+
+61
+00:14:23,024 --> 00:14:24,423
+Bakın oluşturduk.
+
+62
+00:14:24,923 --> 00:14:28,124
+Sonra da outer class.
+
+63
+00:14:28,323 --> 00:14:32,124
+outer class'ta oluşturduğumuz nesnenin adı myouter.
+
+64
+00:14:32,323 --> 00:14:34,024
+uinner class
+
+65
+00:14:34,923 --> 00:14:39,124
+Ne yaptık? Böylelikle inner class'tan bir nesne oluşturduk. Onu da myinner ile tuttuk.
+
+66
+00:14:39,360 --> 00:14:48,840
+Sonra normal bir class gibi. MyInner.MyInnerMethod. Ne yaptık? Bunu çağırdık. Bize x'i döndürüyor. x oldu. Onu yazdık.
+
+67
+00:14:50,180 --> 00:14:55,480
+Tamam. Bu iç içe, inner class. Yani iç içe classlar, inner class.
+
+68
+00:14:57,539 --> 00:15:02,400
+Bu konu hakkında bir sorun yoksa, inner class'ı bitiriyorum.
+
+69
+00:15:10,323 --> 00:15:13,463
+Hocam yeni konuya geçmeden proje hakkında bir soru sorabilir miyim?
+
+70
+00:15:14,963 --> 00:15:16,644
+Zor ama zor olmasın.
+
+71
+00:15:17,443 --> 00:15:22,524
+Hocam projede bize bir yukarıda hani UML diagramı var.
+
+72
+00:15:23,024 --> 00:15:33,323
+Onda mesela e-mail falan istiyor veya hani mesela potansiyel müşteri diye bir şey var ama altta şu şekilde alacaksınız kısmında sadece isim soy isim bir tane de...
+
+73
+00:15:34,035 --> 00:15:47,035
+Şey ne denir ona, service provider ile bir tane paket ismi istiyor ve onu ekrana bastırıyor. Yani biz aslında bu sistemi tamamen mi tasarlayacağız yoksa UMLN diagramındaki gibi mi tasarlayacağız? O konuda kafam karıştı.
+
+74
+00:15:47,035 --> 00:15:49,035
+Tamamen derken?
+
+75
+00:15:49,035 --> 00:16:01,867
+Mesela biz bu potansiyel müşterileri bir yerde tutacak mıyız ya da birden fazla müşteri olacak mı? Mesela aynı şekilde GSM provider var, cable provider var ama ikisinden birini seçmiyoruz.
+
+76
+00:16:02,292 --> 00:16:07,751
+Bunlar biz mi düşünmemiz gerekiyor yoksa direkt oradaki neyse onu yapmamız gerekiyor?
+
+77
+00:16:08,792 --> 00:16:11,011
+Açıkçası ben projeyi şey yapmadım.
+
+78
+00:16:12,172 --> 00:16:13,632
+Ya şey yapabilirim.
+
+79
+00:16:14,432 --> 00:16:15,552
+Ya Mehmet Hoca'ya sorun.
+
+80
+00:16:16,412 --> 00:16:17,432
+Çünkü o bizim hocamız.
+
+81
+00:16:17,632 --> 00:16:18,792
+Ve hatta bana mail atın.
+
+82
+00:16:19,091 --> 00:16:19,771
+Ben bakınca.
+
+83
+00:16:21,711 --> 00:16:23,031
+Tamamdır hocam. Teşekkür ederim.
+
+84
+00:16:34,388 --> 00:16:44,888
+O zaman şey, lap notlarıyla alakalı bir itirazı, şikayet olan var mı?
+
+85
+00:16:56,947 --> 00:16:59,988
+8 kişi olduğumuzdan pek memnun olmadıklarını anlıyorum ama.
+
+86
+00:17:05,364 --> 00:17:11,683
+Yani şikayet demeyelim de süreler genelde yetmiyor hocam bize. Sizinle ilgili bir mevzu değil.
+
+87
+00:17:11,963 --> 00:17:13,003
+Bir buçuk saat yetmiyor mu?
+
+88
+00:17:14,244 --> 00:17:15,344
+Yetmiyor bana yetmiyor.
+
+89
+00:17:16,844 --> 00:17:19,844
+Bir de notlarınız azıcık kıt gibi geliyor bana.
+
+90
+00:17:20,304 --> 00:17:20,624
+Nasıl?
+
+91
+00:17:21,564 --> 00:17:23,284
+Notlar birazcık kıt gibi geliyor.
+
+92
+00:17:24,724 --> 00:17:27,144
+Valla elimden geldiğince de bol vermeye çalışıyorum ama.
+
+93
+00:17:28,531 --> 00:17:34,111
+Birkaç tane herhalde bu işi çok iyi bilen var. Onlar yüz alıyor. Diğerleri ona göre sıralanıyor.
+
+94
+00:17:38,067 --> 00:17:47,067
+Ya şimdi şöyle ufak tefek bazı şeyleri yapmayanlar oluyor. Onlardan 1-2 puan kırıyorum hak geçmesin diye.
+
+95
+00:17:48,067 --> 00:17:54,067
+O 1-2 puanı göz ardı etmiyorum ama işte full yapanlar 100 puanı alıyorlar.
+
+96
+00:17:57,652 --> 00:18:03,072
+İsteyen olursa nasıl notlandırdığımı falan bakabiliriz özelde sonra.
+
+97
+00:18:03,632 --> 00:18:06,872
+Hocam notlarda değil ama sürede bende çok sıkıntı yaşıyorum yani.
+
+98
+00:18:07,692 --> 00:18:11,231
+Ben şu an projeye baktığımda aslında Lab'da gördüğümüz şeyle çok yakın bir proje.
+
+99
+00:18:11,352 --> 00:18:17,292
+Hani bir proje madem bu şekildeyse biz Lab'da her, Lab'da bir proje mi yapıyoruz gibi bir soru oluşuyor benim kafamda.
+
+100
+00:18:18,012 --> 00:18:20,152
+Zaman kısa sonuçta sıkıntı yaşıyorum bende.
+
+101
+00:18:20,592 --> 00:18:21,552
+Diğerlerini bilmiyorum ama.
+
+102
+00:18:27,955 --> 00:18:40,235
+Birlikte yapıyoruz ya diğer gruplarla zaman konusunu diğer grup arkadaşlarla konuşurum. Ne yapabiliriz? Değiştirilir mi bilmiyorum ama en azından konuşurum.
+
+103
+00:18:41,915 --> 00:18:54,315
+Yani yapılmayacak bir şey yok hocam. Laptan sonra ben bakıyorum yetiştiremediğim kısımları tık tık tık yapıyorum ama süre yetmiyor. Yani birazcık süre, yani hızı ölçen laboratuvarlar gibi bir şey oluyor.
+
+104
+00:18:58,324 --> 00:18:59,724
+Bana iletleyeceğim arkadaşlar.
+
+105
+00:19:09,875 --> 00:19:12,596
+Başka bir şey yok mu? O zaman devam edelim.
+
+106
+00:19:14,556 --> 00:19:21,456
+Hocam, bir de sizinle ilgili olmayan bizim bir program aksadı sanırım tatillerden dolayı.
+
+107
+00:19:22,036 --> 00:19:27,155
+Mesela siz Lab'da işin teorik kısmı değil, direkt pratikte gösteriyorsunuz ama biz daha başlamadık bile.
+
+108
+00:19:27,795 --> 00:19:30,295
+O yüzden çok da uzak geliyor bana biraz.
+
+109
+00:19:31,539 --> 00:19:53,539
+Biliyorum başlamadınız. O yüzden mesela multi-threadler biraz önemli bir konu ama hani ne yapacağız? Biraz yüzeysel anlatacağım yani. Hani daha ileri konularına girmeyeceğiz. Biraz öyle yapacağız. Yapabilecek bir şey yok çünkü dediğim gibi tatillerden dolayı falan biraz teorik konular geride kalmış. Yapabileceğim bir şey yok.
+
+110
+00:19:57,268 --> 00:20:01,327
+Inner class'ın zaten teorik olan bir tarafı yok. Inner class, inner class.
+
+111
+00:20:03,228 --> 00:20:05,488
+Aynı şekilde typecasting'in de öyle.
+
+112
+00:20:07,347 --> 00:20:10,508
+Dosya sistemleri de aslında öyle. Belki multitwet.
+
+113
+00:20:11,948 --> 00:20:15,827
+Belki multitwet kısmı biraz şey yapabilir.
+
+114
+00:20:18,528 --> 00:20:20,847
+O kadar. Bir yerleri zaten kod yani.
+
+115
+00:20:23,155 --> 00:20:28,315
+Inner class'ı ne tür durumlarda kullanabiliriz? Ona bir iki örnek verebilirseniz belki daha iyi netleşir.
+
+116
+00:20:28,336 --> 00:20:38,435
+Bakın burada mesela, burada iki tane class oluşturdum. Bir inner class adında. Ama dışarıda ikisi de bakın, ikisi de ayrı ayrı class.
+
+117
+00:20:41,135 --> 00:20:50,275
+Hani bununla bu aynı şey. O ikisi aynı şey.
+
+118
+00:20:50,708 --> 00:21:15,887
+Aradaki fark ne? Bakın burada bir tane nesne oluşturmuşum. Böyle oluşturacağımı. Burada da bir class ekstradan oluşturacağımı. Bu class'ı alırım. Bunun içinde tanımlarım. Ne olur? Böylelikle daha okunaklı olur. Daha okunurluluk artar. Ondan sonra ne bileyim daha mesela bakın az yak katılıyor.
+
+119
+00:21:16,980 --> 00:21:29,280
+Bu olur. Yoksa aradaki farkı yok. Inner class ile şu şekilde yazmakla, şu şekilde yazmanın çalışma anlamında bir farkı yok.
+
+120
+00:21:30,380 --> 00:21:42,780
+Ama işte burada 3-4 satır kod, burada 12 satır kod.
+
+121
+00:21:43,731 --> 00:21:45,612
+Yani yazım tekniği gibi bir şey o zaman.
+
+122
+00:21:46,351 --> 00:21:49,571
+Aynen öyle. Genelde nasıl kullanılır, ne zaman kullanılır?
+
+123
+00:21:49,571 --> 00:21:54,491
+İşte mesela şu class, sadece bu classla alakalıdır, ilişkilidir.
+
+124
+00:21:54,591 --> 00:21:57,112
+Mesela bir tane daha classım olur, x classı.
+
+125
+00:21:58,271 --> 00:22:01,211
+O class'da da ben in-class'tan bir nesne oluşturacağımdır.
+
+126
+00:22:02,011 --> 00:22:04,931
+O zaman onu hani içeride tutmayız, dışarıda tutarız.
+
+127
+00:22:05,391 --> 00:22:06,911
+Ama ben bir tane class oluşturdum.
+
+128
+00:22:07,311 --> 00:22:09,551
+Bunu sadece bu class kullanıyor.
+
+129
+00:22:11,284 --> 00:22:38,844
+O zaman bu şekilde yapmak yerine inner class şeklinde yapılabilir. Anlatabildim mi? Yani bir tane daha x classı oluştursam ve o da inner classı kullansa, yani inner class diyeyim şu classı kullansa, o zaman hani şu şekilde yazmak sıkıntı olur. Ama sadece bu class kullanıyor bu classı. O halde böyle yazmanın bir anlamı yok. Şu şekilde yazılabilir yani.
+
+130
+00:22:40,692 --> 00:22:41,692
+Daha şık olun.
+
+131
+00:22:47,251 --> 00:22:48,192
+Anlatabildim mi?
+
+132
+00:22:50,751 --> 00:22:52,172
+Evet hocam, teşekkür.
+
+133
+00:22:54,572 --> 00:22:55,371
+Tamam.
+
+134
+00:22:56,871 --> 00:22:57,751
+Şimdi...
+
+135
+00:23:11,251 --> 00:23:12,552
+Dönüştürmeye geçelim.
+
+136
+00:23:18,451 --> 00:23:32,831
+Şimdi iki tür tip dönüştürme var arkadaşlar. İlkel veri tiplerini dönüştürme, bir de ilkel olmayan veri tiplerini dönüştürme. İlkel veri tiplerimiz nedir? Integer, Double, Charge, String falan. İlkel olmayan veri tipler nedir? İşte class.
+
+137
+00:23:34,411 --> 00:23:38,072
+Yani class mi çağırdı? İşte kalem class'ı. Tükenmez kalem class.
+
+138
+00:23:41,299 --> 00:23:43,319
+İlken olmayan eritiklerinden başlayalım.
+
+139
+00:23:44,940 --> 00:23:46,619
+Otomatik dönüştürmeler var.
+
+140
+00:23:47,059 --> 00:23:49,319
+Mesela işte ben bir tane integer tanımlamışım.
+
+141
+00:23:51,039 --> 00:23:54,259
+Sonra bunu double bir değişkine atıyorum.
+
+142
+00:23:56,139 --> 00:23:58,259
+Şurada çalıştırayım. Sonuçları bekliyorum.
+
+143
+00:23:59,319 --> 00:24:00,519
+Mesela bakın.
+
+144
+00:24:01,539 --> 00:24:03,719
+X'i yazdırdım. Sonra Y'i yazdırdım.
+
+145
+00:24:04,403 --> 00:24:15,304
+Bakın X'i yazdırdığımda 1911, Y'i yazdırdığımda 1911.0. Otomatik olarak dönüşmüş oldu. Double, evet.
+
+146
+00:24:20,276 --> 00:24:22,276
+Mesela bir tane stringimiz var.
+
+147
+00:24:23,576 --> 00:24:29,276
+İşte yıldız eşittir. Yıldız teknik üniversitesi artı x artı yılında kuruldu demişim.
+
+148
+00:24:29,276 --> 00:24:30,276
+x nedir?
+
+149
+00:24:30,276 --> 00:24:33,276
+Integerdir normalde değil mi?
+
+150
+00:24:33,276 --> 00:24:35,276
+Ama biz burada ne yapıyoruz?
+
+151
+00:24:35,276 --> 00:24:41,276
+x otomatik olarak yani integer bir değeri otomatik olarak string'e çevirmiş olduk.
+
+152
+00:24:45,011 --> 00:24:49,011
+Böylelikle ne oldu? String toplama yani birleştirme oldu.
+
+153
+00:24:50,011 --> 00:24:55,011
+Sonuç olarak Yıldız Teknik Üniversitesi 1911 yılında kuruldu.
+
+154
+00:24:55,011 --> 00:24:57,011
+Çıktısını aldık.
+
+155
+00:24:59,011 --> 00:25:08,011
+Tabii karakter veri tipleriyle integer arasında bir değişik tip dönüştürme yaptığımız zaman ASCII tablosuna göre dönüşüm yapıyor.
+
+156
+00:25:09,011 --> 00:25:12,624
+Mesela bakın, tınak içinde 3 demişim.
+
+157
+00:25:12,624 --> 00:25:21,324
+Bunu integer'a çevirdiğim zaman bana 51 sonucunu döndürmüş. Niye? Çünkü ASCII tablosundaki karşılığı 10.
+
+158
+00:25:24,980 --> 00:25:47,059
+Bu otomatik dönüştürmeydi. Bakın şöyle hani mesela zora dönüştürmedeki gibi şöyle parantez içerisinde integer karakter falan yazmadık. Otomatik olarak bir integer bir değeri mesela double bir değere atadık veyahut da işte integer bir değeri iki stringin arasında toplama işaretiyle topladık. Böylelikle otomatik olarak tip dönüştürme yapmış olduk.
+
+159
+00:25:51,316 --> 00:25:55,056
+Zorla dönüştürme dedi mesela bakın bir tane double değişken tanımlamışım.
+
+160
+00:25:55,976 --> 00:25:57,516
+Abi bu arada şunu da söyleyeyim mesela
+
+161
+00:25:57,516 --> 00:26:01,715
+Evet integer'ı biz double'a dönüştürdük ama
+
+162
+00:26:05,811 --> 00:26:08,371
+double z eşittir.
+
+163
+00:26:09,611 --> 00:26:11,411
+10.0 diyelim.
+
+164
+00:26:11,891 --> 00:26:13,091
+4 diyelim.
+
+165
+00:26:14,431 --> 00:26:15,331
+Tamam.
+
+166
+00:26:16,331 --> 00:26:17,491
+X eşittir.
+
+167
+00:26:18,311 --> 00:26:19,172
+Z diyelim.
+
+168
+00:26:20,731 --> 00:26:22,251
+Bakın hata veriyor.
+
+169
+00:26:23,991 --> 00:26:26,172
+Niye? Double int dönüştürülemez.
+
+170
+00:26:28,031 --> 00:26:32,811
+Büyük olan, küçük olanan otomatik olarak dönüştürülmüyor yani.
+
+171
+00:26:34,067 --> 00:26:36,788
+Küçük olan büyük olanı dönüştüyor, arkada dolduruluyor.
+
+172
+00:26:38,467 --> 00:26:39,587
+Yani double...
+
+173
+00:26:40,508 --> 00:26:41,508
+Evet.
+
+174
+00:26:42,028 --> 00:26:43,427
+Anlaşıldı değil mi?
+
+175
+00:26:47,604 --> 00:26:48,364
+Evet.
+
+176
+00:26:52,372 --> 00:26:57,711
+Ama bakın, bir double'ı nasıl integre dönüştürürüz? Sonuçta bazen ihtiyacımız olacaktır.
+
+177
+00:26:59,172 --> 00:27:04,432
+Double'ı integre dönüştürmek istediğimiz zaman, buraya zorla dönüştürüyoruz yani.
+
+178
+00:27:06,452 --> 00:27:12,492
+Parantez içerisinde int yazarak, zorla integre dönüştürmüş olduk. 5.4'ü.
+
+179
+00:27:12,812 --> 00:27:17,172
+E tabi integre dönüşünce ne oldu? Ondalıklı kısım silindi.
+
+180
+00:27:19,284 --> 00:27:20,584
+Verik kaybı yaşadık.
+
+181
+00:27:24,564 --> 00:27:32,604
+Tanımlama sırasında mı dönüştürüyoruz sadece? Y alt çizgi i'yi int ile önceden tanımlayıp daha sonra aşağıda s ayın edebilir miydik?
+
+182
+00:27:33,684 --> 00:27:36,724
+Bunu mu demek istiyorsun? Mesela böyle.
+
+183
+00:27:39,784 --> 00:27:40,584
+Bu mu?
+
+184
+00:27:41,504 --> 00:27:41,844
+Evet.
+
+185
+00:27:42,844 --> 00:27:43,304
+Aynı şey.
+
+186
+00:27:44,684 --> 00:27:45,923
+Yine aynı sonucu alacağız.
+
+187
+00:27:47,304 --> 00:27:47,903
+Farkı yok.
+
+188
+00:27:57,299 --> 00:28:00,719
+Bak yine 5'i aldık 8 oradan kayboldu.
+
+189
+00:28:02,079 --> 00:28:04,279
+Çünkü şöyle şimdi bellekte
+
+190
+00:28:04,279 --> 00:28:09,980
+Yi'nin tutulduğu adres burada 8 değeri var.
+
+191
+00:28:10,859 --> 00:28:13,920
+Sen buradakini yazdırmadan önce zaten değiştiriyorsun.
+
+192
+00:28:14,079 --> 00:28:16,659
+Nedir? 5.4'ü integre çeviriyorsun.
+
+193
+00:28:18,599 --> 00:28:19,420
+Onu aldın 5.
+
+194
+00:28:19,420 --> 00:28:22,139
+Tabi integre çevirdiğin için .4'ü kayboldu.
+
+195
+00:28:22,199 --> 00:28:24,000
+5'i 8'in bulunduğu yere yazdırdın.
+
+196
+00:28:24,627 --> 00:28:27,347
+O yüzden 8'in esprisi kalmadı.
+
+197
+00:28:36,788 --> 00:29:02,208
+yazdırdık, 5 geldi. Sonra ne yaptık mesela? Bu 5'i, çünkü integer'a dönüştürdük. 5'i bu sefer karaktere dönüştürüyoruz. Karaktere dönüştürünce ASCII tablosundaki şu karaktere dönüşmüş olduk öylece. Onu da yazdırdık. Sonra işte mesela bakın 50.4'ü string veri tipinde tutuyoruz.
+
+198
+00:29:06,675 --> 00:29:24,635
+Sonra tabii stringlerde şöyle bir şey var. Hani şu dönüştürme hata verecek. Veriyor. Stringi double'a dönüştürmemize veyahut da integer'a dönüştürmemize şu şekilde izin vermiyor.
+
+199
+00:29:28,403 --> 00:29:32,804
+Onu dönüştürmek için fonksiyonları kullanmak gerekiyor.
+
+200
+00:29:39,892 --> 00:29:53,892
+dönüştürmek için fonksiyonları kullanmak gerekiyor. Mesela bakın, bu her veri tipin class'ı vardır. Baş harfi büyük harfle olur. İşte integer'ın büyük harfi şudur.
+
+201
+00:29:56,892 --> 00:30:04,892
+parseInt. Bakın mesela burada hep string alıyor, görüyor musunuz? Bu stringi dönüştürmek için
+
+202
+00:30:07,188 --> 00:30:09,188
+Java'nın bir fonksiyonu.
+
+203
+00:30:09,188 --> 00:30:11,188
+Java da yapılmış bir fonksiyon.
+
+204
+00:30:11,188 --> 00:30:15,188
+Aynı şekilde double da öyle.
+
+205
+00:30:15,188 --> 00:30:17,188
+Flatos'u da öyle.
+
+206
+00:30:19,188 --> 00:30:25,188
+Ne yapıyoruz? String bir değeri veriyoruz ve onun rakamsal değerini elde ediyoruz.
+
+207
+00:30:30,036 --> 00:30:39,336
+Sonra işte yaş D geldi. Ha yaş D geldi ama ne oldu? Yine 50.4. Double'a çevirdik ya. Yine 50.4. Onu ben yazdım.
+
+208
+00:30:39,336 --> 00:30:40,256
+Onu yazdırayım.
+
+209
+00:30:53,875 --> 00:31:18,395
+Bakın 50.4. Sonra yine integer'a çevirmişim. Ne oldu? Yine veri kaybı yaşadık. Tabii bu veri kaybı her zaman kötü bir şey değil. Onu da söyleyeyim. Bazen işimize yarar. Mesela tam sayı bulmak isteriz. O zaman ne yapacağız? İşte onunla çarpıp, ondan sonra modunu alıp, ona göre modunu alıp.
+
+210
+00:31:19,988 --> 00:31:21,988
+işlemler yapmak yerine
+
+211
+00:31:23,307 --> 00:31:26,128
+10 ile çarpıt moduna alsak 4 gelecek.
+
+212
+00:31:28,567 --> 00:31:30,748
+Böyle işlemler yapmak yerine
+
+213
+00:31:31,428 --> 00:31:33,428
+ne yapıyoruz? Direkt çeviriyoruz.
+
+214
+00:31:35,188 --> 00:31:37,788
+50'yi elde ediyoruz. Tam sayısını.
+
+215
+00:31:40,368 --> 00:31:42,768
+Sonra 504'den 4'ü çıkanacağız.
+
+216
+00:31:43,988 --> 00:31:44,875
+Uf!
+
+217
+00:31:45,971 --> 00:31:48,172
+mod 100'e alacağımızı düşünüyorum ya da.
+
+218
+00:31:48,772 --> 00:31:59,572
+Hangi mod değişken sayıda olsa mesela, birden fazla değer gelse, 50.4, 500.4, 3.4 gibi.
+
+219
+00:32:01,572 --> 00:32:10,971
+Ne oldu? Böylelikle tam sayı değerini bağlı elde etmemiz için mesela bu şekilde bir tip dönüşümü rahatlıkla bizim işimize yarıyor.
+
+220
+00:32:20,564 --> 00:32:22,524
+Şimdi ilkel olmayan veri tiklerine geçelim.
+
+221
+00:32:25,044 --> 00:32:28,104
+Aslında bunları görmüştük kalıtında.
+
+222
+00:32:30,064 --> 00:32:31,644
+Kalıtım konusunu anlatırken.
+
+223
+00:32:36,211 --> 00:32:53,451
+Mesela bakın burada iki tane class oluşturdum. Çok basit bir class. Hemen bir tane kalem. Bir tek işte bunun kalem sınıfı olduğunu yazsın diye. Bunun da tükenmez kalem sınıfı olduğunu bildirmesi amacıyla yani böyle iki tane class tanımladım.
+
+224
+00:32:58,996 --> 00:33:04,316
+Evet. Şimdi mesela tükenmez kalemden bir nesne oluşturduk. Bunu yazdık. Ne oldu?
+
+225
+00:33:05,776 --> 00:33:15,635
+Bakın tükenmez kalem TK dedim. TK'yı yazdırdım. Nesneyi yazdırıyorum. Nasıl oluyor? Atılama yapalım. Toosting'i override ediyorduk.
+
+226
+00:33:17,836 --> 00:33:20,115
+Bu şekilde direkt TK ile
+
+227
+00:33:20,596 --> 00:33:27,076
+Onu yazmış olduk. Tk.toString. Şurada otomotif bir toString var biliyorsunuz.
+
+228
+00:33:31,508 --> 00:33:35,508
+Bir tane de kalem nesnesi oluşturdum. Aynı şey burada da var.
+
+229
+00:33:37,508 --> 00:33:38,220
+Sonra...
+
+230
+00:33:41,683 --> 00:34:07,023
+Bakın işte hani TK burada yazdı. Tükenmez kalem sınıfı. K geldi, kalem sınıfı. Burada yazdı. Şimdi ne oldu? TK kaleme çevirdik. Bakın bir K, K yani kalem sınıfı. Bir tükenmez kalem sınıfından bir nesneyi, kalem sınıfından bir nesne, tükenmez kalem sınıfından bir nesneyi ne yapabiliyor?
+
+231
+00:34:08,788 --> 00:34:09,488
+tutabiliyor.
+
+232
+00:34:12,488 --> 00:34:14,728
+Ama tabii bunun için özel bir şart olmalı.
+
+233
+00:34:14,788 --> 00:34:15,047
+Nedir?
+
+234
+00:34:15,748 --> 00:34:17,047
+Şimdi tükenmez kalem diyoruz.
+
+235
+00:34:17,108 --> 00:34:18,887
+Tükenmez kalem de sonuçta bir kalem.
+
+236
+00:34:19,988 --> 00:34:20,847
+O yüzden tutabiliyor.
+
+237
+00:34:21,347 --> 00:34:22,248
+Bunu nerede bilirttik?
+
+238
+00:34:22,307 --> 00:34:22,948
+Bakın burada.
+
+239
+00:34:23,668 --> 00:34:26,168
+Extens ile kalemden kalıtım aldık.
+
+240
+00:34:27,668 --> 00:34:28,427
+Böylelikle ne dedik?
+
+241
+00:34:28,427 --> 00:34:33,528
+Tükenmez kalem, kalem sınıfından kalıtım alıyor.
+
+242
+00:34:33,908 --> 00:34:35,288
+Aynı zamanda bu bir kalemdir.
+
+243
+00:34:36,052 --> 00:34:37,052
+diyoruz.
+
+244
+00:34:39,652 --> 00:34:42,152
+O nedenden ötürü bunu böyle tutabiliyoruz.
+
+245
+00:34:44,252 --> 00:34:47,052
+Sonra bunu yazdırdık ama en nihayetinde
+
+246
+00:34:47,752 --> 00:34:49,351
+bu bir tükenmez kalem.
+
+247
+00:34:52,820 --> 00:34:59,820
+K'yı yazdırmama rağmen sonuçta tükenmez kalem nesnesini tutuyor.
+
+248
+00:34:59,820 --> 00:35:03,820
+Yani K sonuçta tükenmez kalem nesnesini tutuyor.
+
+249
+00:35:03,820 --> 00:35:09,820
+Yani kalem veri tipinden bir değişken tükenmez kalem nesnesini tutuyor.
+
+250
+00:35:09,820 --> 00:35:19,820
+Nasıl? İşte bu kalıtım sayesinde. Eğer bu kalıtım olmasaydı, tabi ki böyle bir tip dönüştürme yapılamazdı.
+
+251
+00:35:20,211 --> 00:35:21,092
+Hatta verildi.
+
+252
+00:35:25,235 --> 00:35:27,835
+Tükenmez kalem kurşun kaleme dönüştürülebilir mi?
+
+253
+00:35:30,055 --> 00:35:37,755
+Öyle bir şey mi? Kurşun kalem diye bir class oluşturalım. O da kalemden kalıptım alsın. Ama tükenmez kalemle hiçbir bağları yok.
+
+254
+00:35:38,295 --> 00:35:39,076
+Evet, kardeş.
+
+255
+00:35:39,975 --> 00:35:40,576
+Dönüştürülemez.
+
+256
+00:35:44,179 --> 00:35:45,300
+Dönüştürülemez o.
+
+257
+00:35:46,519 --> 00:35:52,819
+Kalıtım almaları lazım. Çünkü tükenmez kalem kurşun kalem değildir. Hani kalıtım aldığınızda bir nevi şöyle düşünebilirsiniz.
+
+258
+00:35:54,340 --> 00:35:57,840
+Nereden kalıtım alıyor? Kalemden. Tükenmez kalem o zaman bir kalemdir.
+
+259
+00:35:58,840 --> 00:36:06,500
+Ama tükenmez kalem bir kalemdir. Kurşun kalem de bir kalemdir ama tükenmez kalem kurşun kalem değildir.
+
+260
+00:36:08,340 --> 00:36:10,539
+Superclass'a dönüştürülebiliyor yani.
+
+261
+00:36:12,115 --> 00:36:12,895
+Yağın, ayın.
+
+262
+00:36:20,340 --> 00:36:36,000
+Bakın mesela, K tükenmez kalem midir? Evet. K kalem midir? Ona da evet. Niye? Çünkü kalıtım aldığı için aynı şekilde hem tükenmez kalem aynı zamanda da kalem oluyor sonuçta. Çünkü tükenmez kalem bir kalemdir.
+
+263
+00:36:38,659 --> 00:36:41,180
+Kalem tersi de olmaz değil mi?
+
+264
+00:36:41,840 --> 00:36:47,239
+Mesela tükenmez kalem veri tipinden bir değişken kalem nesnesini tutabilir mi?
+
+265
+00:36:47,731 --> 00:36:55,731
+Evet. Ne diyelim? Mesela TK vardı değil mi? TK.
+
+266
+00:36:58,931 --> 00:36:59,931
+Gelmez kalem.
+
+267
+00:37:02,091 --> 00:37:02,572
+Kal.
+
+268
+00:37:07,347 --> 00:37:08,988
+Buradan TK'yı yazdıralım.
+
+269
+00:37:11,427 --> 00:37:12,948
+Hatta bunu da yapayım.
+
+270
+00:37:14,488 --> 00:37:15,268
+Görelim bakalım.
+
+271
+00:37:21,172 --> 00:37:22,172
+hata veriyor.
+
+272
+00:37:25,172 --> 00:37:27,172
+Yani değiştirilemezmiş.
+
+273
+00:37:35,347 --> 00:37:36,248
+Başka bir şey?
+
+274
+00:37:42,643 --> 00:37:43,783
+Başka sorusu olamaz mı?
+
+275
+00:37:49,012 --> 00:38:01,012
+Bir şey sormak istiyorum. Burada ilk başta yaptığımız işlemde parantez içine dönüştüreceğimiz tipi yazmadan da dönüştürebilir miydik? İlk başlarken orayı kastetmedim. Kaleme 47. satırda.
+
+276
+00:38:01,012 --> 00:38:05,012
+Otomatik dönüşüyor. Ben onu göstermek için. Burada tabi onu atabiliyor mu?
+
+277
+00:38:05,012 --> 00:38:10,012
+Çünkü ArrayList'i liste atarken o şekilde yapıyorduk da o yüzden.
+
+278
+00:38:10,012 --> 00:38:11,012
+Tamam.
+
+279
+00:38:25,748 --> 00:38:32,868
+Bak gördün mü? Onu yazmadım. Ama çalıştı. Yine aynı şekilde çalıştı.
+
+280
+00:38:32,868 --> 00:38:34,628
+Sorlamaya gerek yok yani.
+
+281
+00:38:34,628 --> 00:38:40,139
+E tabii ki ama ben hani onu görün diye özellikle yazmıştım.
+
+282
+00:38:47,507 --> 00:38:50,047
+Evet, başka bir soru var. Burada bir mesaj varmış.
+
+283
+00:38:54,483 --> 00:38:56,703
+Bunun derken tam olarak neyi kast ediyorsun onu?
+
+284
+00:38:58,483 --> 00:39:05,324
+Hocam şimdi int.parse int dediğimizde ve bu int arasındaki fark ne hocam?
+
+285
+00:39:05,423 --> 00:39:08,983
+Yani ikisi de aynı işlemi yapıyorsa neden yani bu ikisini?
+
+286
+00:39:09,564 --> 00:39:14,963
+Parantez içerisindeki int ile int.parse int arasındaki farkı mı söylüyorsun?
+
+287
+00:39:14,983 --> 00:39:15,543
+Evet hocam.
+
+288
+00:39:16,244 --> 00:39:18,644
+Bunu söylemiştim az önce de. Neydi?
+
+289
+00:39:19,583 --> 00:39:21,443
+Bakın dedim. Nerede? Hem burada.
+
+290
+00:39:22,164 --> 00:39:23,564
+Bakın burada bir hata var.
+
+291
+00:39:24,064 --> 00:39:26,384
+A double integer aynı şey olacak. Hiçbir farkı yok.
+
+292
+00:39:31,059 --> 00:39:40,899
+Bir hata veriyor. Niye? String'i dönüştürmüyor çünkü. Özellikle bu integer parsing de string veri tipinden bir parametre alıyor.
+
+293
+00:39:52,275 --> 00:39:54,675
+Bak, gördün mü? String. String.
+
+294
+00:40:06,036 --> 00:40:31,176
+Evet. Tip dönüştüğümü tamamladık. Inner class tamamladık. File dosya işlemlerine geçiyorum. Öncelikle yazmakla başlayalım. Bakın bir tane ArrayList oluşturuyorum. İki tane ürün. Ondan önce şunu göstereyim.
+
+295
+00:40:33,204 --> 00:40:46,404
+nesnelerimi, nesne classlarımızı gösterelim. Mesela ürün diye bir class var. İsim, fiyat adında iki tane değişken tutuyor. Yapıcı fonksiyonu, toString fonksiyonu.
+
+296
+00:40:50,260 --> 00:40:52,260
+ve getirsettler.
+
+297
+00:40:53,580 --> 00:40:55,580
+Yani basit bir
+
+298
+00:40:56,000 --> 00:40:57,000
+class.
+
+299
+00:40:57,280 --> 00:41:00,080
+Aynı şekilde hiçbir farkı yok. Bu da öyle.
+
+300
+00:41:00,360 --> 00:41:02,360
+Tek fark ne?
+
+301
+00:41:03,180 --> 00:41:05,180
+Java, I.O.
+
+302
+00:41:05,180 --> 00:41:09,920
+Serializable'dan
+
+303
+00:41:11,240 --> 00:41:12,240
+Bu bir
+
+304
+00:41:12,628 --> 00:41:20,228
+interface. Burada ne yapıyor? Kalıtım implement yapıyor. Implement ediyor yani. Tamam mı?
+
+305
+00:41:24,307 --> 00:41:51,608
+Biliyorsunuz implement neyi yaparız? Interface'leri implement ederiz. Normal class'ları da extend ederiz. Lakin bu implement ettiğimiz interface, bir interface implement ettiğimiz zaman normalde onun soyut fonksiyonları vardır.
+
+306
+00:41:51,860 --> 00:42:09,860
+onların ne yapmamız lazım? Override edip, içine bir şeyler yazmamız lazım. Ama burada öyle bir şey yok. Bunun içi tamamen boş. Yani bu interface'in içi tamamen boş. O nedenle bir şey override etmemize yüzüm yok.
+
+307
+00:42:20,788 --> 00:42:25,675
+Hata veriyordu, o yüzden ekliyorum. Yoksa neden diye sorsanız ben de bilmiyorum açıkçası.
+
+308
+00:42:34,516 --> 00:42:36,516
+Bir tane write file var.
+
+309
+00:42:37,516 --> 00:42:41,115
+Hatta veriyordu derken uyarı veriyordu aslında.
+
+310
+00:42:41,615 --> 00:42:44,115
+Şurada sarı şeyler olurdu.
+
+311
+00:42:44,516 --> 00:42:46,516
+Görmezden gelebilirdik ama
+
+312
+00:42:47,716 --> 00:42:49,115
+bir şey yapmak istemedim.
+
+313
+00:42:53,523 --> 00:42:56,863
+write file, dosyayı yazma işlemine başlayalım.
+
+314
+00:42:58,023 --> 00:43:01,304
+Bakın, ürün klasında iki tane nesne oluşturdum.
+
+315
+00:43:01,903 --> 00:43:03,764
+Bu iki nesneyi bir tane ArrayListe attım.
+
+316
+00:43:04,903 --> 00:43:05,363
+Tamam mı?
+
+317
+00:43:07,264 --> 00:43:09,344
+Sonra bir tane file rider.
+
+318
+00:43:13,043 --> 00:43:14,804
+Class'ından bir nesne üretiyorum.
+
+319
+00:43:16,263 --> 00:43:17,923
+Bir dosya üretiyorum aslında.
+
+320
+00:43:18,823 --> 00:43:24,503
+Buraya da dosyamızın üretileceği adresi ve dosyamızın adını yazıyoruz.
+
+321
+00:43:25,503 --> 00:43:28,563
+Tabii ben adres belirtmediğim için dizimde üretilecek.
+
+322
+00:43:29,083 --> 00:43:31,763
+Yani bu projenin bulunduğu dizimde üretilecek.
+
+323
+00:43:33,283 --> 00:43:34,643
+Tamam, ürettik.
+
+324
+00:43:35,823 --> 00:43:36,563
+Sonra ne yapıyoruz?
+
+325
+00:43:36,563 --> 00:43:40,443
+Bakın burada oluşturduğumuz ürünler ArrayList'ini dolaşıyoruz.
+
+326
+00:43:42,260 --> 00:43:44,260
+Tamam dolaşalım.
+
+327
+00:43:44,260 --> 00:43:47,260
+Dolaşırken ne diyoruz? MyWriter.Write
+
+328
+00:43:49,260 --> 00:43:51,260
+u.get isim
+
+329
+00:43:51,260 --> 00:43:52,260
+Get isim neydi?
+
+330
+00:43:52,260 --> 00:43:56,260
+Ürün klasında vardı biliyorsunuz ismi bize dönülüyor.
+
+331
+00:43:57,260 --> 00:44:02,260
+Get fiyat da ürünün fiyatını bize dönülüyor. Yani ürün 1 ile 10'u almış olduk.
+
+332
+00:44:03,260 --> 00:44:05,260
+Tabi arasında virgül var.
+
+333
+00:44:05,260 --> 00:44:09,196
+Bunu ne yapıyoruz? Bir dosyayı yazıyoruz. Sonra da alt satıra geçiyoruz.
+
+334
+00:44:10,835 --> 00:44:12,915
+Çünkü ters, slash, n var.
+
+335
+00:44:15,255 --> 00:44:19,275
+Ondan sonra bir daha çalışıyor. Bu sefer ürün 2 için aynısını yapıyoruz.
+
+336
+00:44:21,015 --> 00:44:22,815
+Onu da alt satıra yazmış olduk.
+
+337
+00:44:23,755 --> 00:44:24,775
+Yani ne olmuş oldu?
+
+338
+00:44:25,155 --> 00:44:28,015
+Ürünler.txt diye bir dosya açtım.
+
+339
+00:44:30,175 --> 00:44:34,595
+Ürün 1 ve ürün 2'yi bu dosyanın içine yazmış oldum.
+
+340
+00:44:35,875 --> 00:44:37,775
+Ürün 1 ve ürün 2'yi yazmış oldum derken.
+
+341
+00:44:38,547 --> 00:44:44,387
+Tek tek burada bakın, ürünün önce ismini aldım, sonra fiyatını aldım, öyle yazmış oldum.
+
+342
+00:44:46,927 --> 00:44:50,268
+Sonrada ne oldu? Forbit'i, MyWriter'i kapattım.
+
+343
+00:44:53,728 --> 00:44:54,907
+Kapatmasaydım ne olurdu?
+
+344
+00:44:55,827 --> 00:45:00,228
+Yani Java'da olduğumuz için çok bir şey olmazdı ama yine de kapatın.
+
+345
+00:45:05,364 --> 00:45:07,364
+Yine de kapatın yani.
+
+346
+00:45:07,364 --> 00:45:11,820
+Ama mesela C++'da falan olsaydı kapatmamak sıkıntıydı. Böyle iş işe yürüdü.
+
+347
+00:45:16,179 --> 00:45:18,179
+Sonra da bunu yazdırdık.
+
+348
+00:45:18,179 --> 00:45:20,179
+Eğer ki,
+
+349
+00:45:20,179 --> 00:45:26,179
+Şimdi ben burada file writer dedim evet. Bir tane dosya oluşturdum tamam ama
+
+350
+00:45:26,179 --> 00:45:32,179
+Bu dosya oluştururken bir hata eğer ki alırsam, bakın tradecatch içerisindeyim.
+
+351
+00:45:32,179 --> 00:45:36,179
+Hata alırsam eğer ki, direk ne oluyor?
+
+352
+00:45:36,179 --> 00:45:38,179
+Buradaki işlemler çalışmıyor.
+
+353
+00:45:38,179 --> 00:45:41,387
+Burası çalışıyor.
+
+354
+00:45:42,579 --> 00:45:44,939
+Böylelikle hata oluştu mesajı gelecek.
+
+355
+00:45:46,019 --> 00:45:47,000
+Şimdi bunu çalıştırayım.
+
+356
+00:45:47,619 --> 00:45:49,179
+Bakın dosya başarılı yazdırıldı.
+
+357
+00:45:49,279 --> 00:45:49,639
+Nerede?
+
+358
+00:45:51,639 --> 00:45:52,279
+Bakın burada.
+
+359
+00:45:53,000 --> 00:45:53,679
+Açayım içini.
+
+360
+00:45:54,559 --> 00:45:54,960
+Bakın.
+
+361
+00:45:55,559 --> 00:45:56,819
+Ürün 1,10.
+
+362
+00:45:57,179 --> 00:45:58,279
+Ürün 2,15.
+
+363
+00:45:58,840 --> 00:45:59,719
+Yazdırılmış oldu.
+
+364
+00:46:02,539 --> 00:46:03,380
+Tamam.
+
+365
+00:46:05,880 --> 00:46:08,019
+Şimdi read file'a bakalım.
+
+366
+00:46:08,019 --> 00:46:09,880
+Evet bu dosyayı yazdırdım.
+
+367
+00:46:10,739 --> 00:46:12,739
+Şimdi dosyadan okuma yapalım.
+
+368
+00:46:12,739 --> 00:46:14,739
+Bir tane ArrayList oluşturdum.
+
+369
+00:46:14,739 --> 00:46:20,739
+Çünkü o dosyadaki her bir satırı ben bu ArrayList'in içinde tutacağım.
+
+370
+00:46:20,739 --> 00:46:25,739
+Bakın bir tane file nesnesi oluşturuyorum. MyObje diye.
+
+371
+00:46:25,739 --> 00:46:31,739
+Benim var olan dosyamın adını yazıyoruz.
+
+372
+00:46:31,739 --> 00:46:38,539
+Mesela bakın, bu da Tracitch içerisinde. Eğer ki bu dosyayı bulamazsa,
+
+373
+00:46:38,739 --> 00:47:06,339
+File not found exception hatası gelir ve bu hatayı aldığı zaman dosya bulunamadı yazılır. Başka hatalar da olabilir mi? Olabilir. O zaman da ne yapalım? Mesela catch io exception deriz yine veyahut da exception deriz. File not found exception geldiği zaman dosya bulunamadı. Catch exception geldiği zaman da
+
+374
+00:47:07,731 --> 00:47:13,731
+Artık, yani şu dosya bulunamaması hatasından başka ne hata alırsak oraya gider.
+
+375
+00:47:14,931 --> 00:47:17,532
+O zaman da orada ne olmasını istiyorsak onu yazarız.
+
+376
+00:47:19,231 --> 00:47:20,532
+Tamam devam edeyim.
+
+377
+00:47:22,431 --> 00:47:27,032
+Ürünler TXT'yi aldık okuduk, daha okumadık daha doğrusu.
+
+378
+00:47:27,231 --> 00:47:30,731
+Bu dosyayı ne yaptık? MyObject'e tutuyoruz.
+
+379
+00:47:31,231 --> 00:47:34,731
+Şimdi Scanner'ımız var. Bir tane Scanner nesnesi oluşturuyorum.
+
+380
+00:47:34,784 --> 00:47:50,784
+MyReader diye bu file nesnesini bu Scanner'a parametrik olarak veriyorum. Böylelikle ürünler.txtm'i okutacağım. MyReader yani Scanner'la okuyacağız.
+
+381
+00:47:50,784 --> 00:47:59,784
+File sadece o dosyayı tutuyor. Tamam. MyReader.hazNextLine.
+
+382
+00:48:04,083 --> 00:48:27,483
+Bir sonraki satırım var mı? Var. O zaman devam et. Ne yapıyorum? Bakın o varsa o satırı getir diyorum. Data ile aldık. Sonra virgülle ile ayırdık. Yani satırı kelimelerine ayırdık gibi düşünüyorum. İki kelimeydi zaten. Biri ürün biri yazıyordu, diğeri de onu yazıyordu.
+
+383
+00:48:28,980 --> 00:48:55,940
+Yani tokens dediğimiz zaman iki elemanı var bu token'ın. Birinde ismi var, diğerinde fiyat bilgisi var. Ne yapıyoruz? Bakın token 0 artı işte ters slash t artı tokens 1. Yani dosyadan aldım, okudum ve ekrana yazdırdım.
+
+384
+00:48:58,164 --> 00:49:05,324
+Yazdırdıktan sonra da ürünler ArrayList'imin içerisinde ne yapmış oldu?
+
+385
+00:49:06,264 --> 00:49:07,144
+Eklemiş oldu.
+
+386
+00:49:07,684 --> 00:49:12,264
+Bakın new ürün, token 0, bakın.
+
+387
+00:49:13,724 --> 00:49:17,984
+Ne oldu? Şu 10.0 string olarak geldi.
+
+388
+00:49:19,644 --> 00:49:24,304
+Double.parse double ile o stringi ne yaptık? Double'a çevirdik.
+
+389
+00:49:27,380 --> 00:49:29,599
+Sonra işte dosyanın sonuna kadar okuyacak.
+
+390
+00:49:30,380 --> 00:49:34,119
+Bittikten sonra dosyamızı okuma şeyini kapatacak.
+
+391
+00:49:35,440 --> 00:49:38,760
+Sonra da system out print elen ürünler diyor.
+
+392
+00:49:39,960 --> 00:49:40,400
+Bakın.
+
+393
+00:49:41,960 --> 00:49:43,619
+Ürünleri yazdırdığı zaman ne oluyor?
+
+394
+00:49:48,019 --> 00:49:49,119
+İşte birinci ürün.
+
+395
+00:49:50,059 --> 00:49:50,500
+Şöyle.
+
+396
+00:49:51,579 --> 00:49:52,420
+Bu da ikinci ürün.
+
+397
+00:49:58,835 --> 00:49:59,976
+Böylece yazdırmış ol.
+
+398
+00:50:06,228 --> 00:50:13,907
+Şimdi bir de byte byte okuma yazıldılar. Buna serializable deniyor.
+
+399
+00:50:15,947 --> 00:50:17,228
+Byte byte okuma.
+
+400
+00:50:18,508 --> 00:50:22,228
+Yani biz az önce ne yaptık? Mesela yazmadan bahsedelim.
+
+401
+00:50:22,427 --> 00:50:32,028
+Ne yaptık? Biz u get isim dedik, u get fiyat dedik ama bu sefer öyle bir şey yok. Direkt ürün. U yani direk U.
+
+402
+00:50:33,715 --> 00:50:39,715
+Direkt Uyu yazdıracağız. Çünkü byte byte yazacak zaten. Integer, string, uyayırma özgü.
+
+403
+00:50:40,715 --> 00:50:41,715
+Tamam.
+
+404
+00:50:43,715 --> 00:50:45,715
+Byte byte yazdırma işlemine başlayalım.
+
+405
+00:50:47,715 --> 00:50:49,715
+Bir tane ürün nesnesi oluşturdum.
+
+406
+00:50:50,715 --> 00:50:51,715
+Bir tane de
+
+407
+00:50:52,715 --> 00:50:55,715
+Serializable ürün nesnesi oluşturdum.
+
+408
+00:50:59,603 --> 00:51:15,003
+Trycatch'in içindeyim. Çünkü hata çıkarsa program patlamasın. Bana ne hata varsa onu söylesin. Zaten Trycatch yazmasanız şey yapıyor. Zorla yazdırtıyor yani hata geliyor.
+
+409
+00:51:19,603 --> 00:51:26,844
+FileOutputStream desnesi oluşturdum. Dedim ki, ürün.ser diye bir dosya oluştur.
+
+410
+00:51:30,228 --> 00:51:39,828
+Sonra da object-a2stream oluşturdum ve bu dosya değişkenimi, file-a2stream nesnemi buna parametre olarak veriyorum.
+
+411
+00:51:41,828 --> 00:51:54,428
+Sonra, write object, object-a2stream nesnemi write object fonksiyonunu çağırıyordum.
+
+412
+00:52:01,748 --> 00:52:22,228
+çalışıyor. Bakın mesela işlem başarısız dedi. Neden? Çünkü ürün biri yazdıramaz. Niye? Çünkü Elisable'dan implement yapmadı. Onu yapması için implement etmesi lazım.
+
+413
+00:52:31,347 --> 00:52:33,367
+Bakın bu sefer işlem başarılı geldi.
+
+414
+00:52:35,768 --> 00:52:36,407
+Tamam.
+
+415
+00:52:37,447 --> 00:52:38,567
+Ürün 2'yi yazdıracağız.
+
+416
+00:52:39,567 --> 00:52:41,707
+Right object'ten yazdırdık.
+
+417
+00:52:42,667 --> 00:52:47,707
+Bakın burada ürün 2.get isim, ürün 2.get fiyat falan demedik.
+
+418
+00:52:47,807 --> 00:52:49,147
+Direkt ne dedik? Ürün 2 dedik.
+
+419
+00:52:50,447 --> 00:52:51,927
+Çünkü byte byte yazdırıyoruz.
+
+420
+00:52:54,132 --> 00:53:00,251
+Sonra da out'u kapatıyoruz. File out'u kapatıyoruz. İşlem başarılı diye ekrana çıktı alıyoruz.
+
+421
+00:53:03,192 --> 00:53:09,291
+Çalıştırdık şimdi biz bunu. Bakın buraya ürün nokta ser diye bir dosya çıktı.
+
+422
+00:53:15,891 --> 00:53:16,851
+3, 8.
+
+423
+00:53:27,411 --> 00:53:29,355
+Notbet'ten açılmış.
+
+424
+00:53:34,099 --> 00:53:36,599
+Yani doğru düzgün anlaşılmayan bir şey.
+
+425
+00:53:37,899 --> 00:53:43,719
+Ama yine az buçuk bir şeyler belli oluyor. Ne diyor mesela? Bakın, serializable üründen bir nesne herhalde.
+
+426
+00:53:43,719 --> 00:53:47,719
+10 demek istiyor. Bakın burada fiyat var, isim var.
+
+427
+00:53:49,699 --> 00:53:51,699
+İşte onun veri tipi var.
+
+428
+00:53:53,000 --> 00:53:57,199
+Yani, tam olarak ne olduğunu anlayamıyoruz.
+
+429
+00:54:01,235 --> 00:54:05,235
+Tamam. Şimdi bu dosyayı okuyacağız.
+
+430
+00:54:06,235 --> 00:54:07,235
+Nasıl?
+
+431
+00:54:07,735 --> 00:54:10,235
+Read object dosyamızla.
+
+432
+00:54:10,735 --> 00:54:12,235
+Buradaki kodlarla.
+
+433
+00:54:13,235 --> 00:54:15,235
+File input seçeyim. Bakın.
+
+434
+00:54:15,735 --> 00:54:17,735
+Yazarken output seçeyim.
+
+435
+00:54:18,235 --> 00:54:19,735
+Okurken input seçeyim.
+
+436
+00:54:22,235 --> 00:54:24,235
+Ne yapıyorum? Ürün.ser
+
+437
+00:54:30,036 --> 00:54:33,036
+Bu ürün nokta ser dosyamı açıyorum.
+
+438
+00:54:37,427 --> 00:54:43,587
+Sonra, object input istiyorum. Buradan bir nesne oluşturuyorum ve bu dosyayı buna veriyorum.
+
+439
+00:54:46,708 --> 00:54:49,268
+Sonra da read object diyorum.
+
+440
+00:54:51,228 --> 00:54:52,627
+Direkt okuyorum.
+
+441
+00:54:53,467 --> 00:54:56,507
+Object A, A dedik, yazdırdı.
+
+442
+00:54:56,927 --> 00:55:01,347
+Direkt yani, bakın, object A, bir tane object nesnesi bakın.
+
+443
+00:55:03,411 --> 00:55:05,331
+Sonra da aldık bu A'yı yazdırdık.
+
+444
+00:55:06,551 --> 00:55:07,711
+Bakın böyle bir şey yazdı.
+
+445
+00:55:08,291 --> 00:55:09,331
+Sonra da bunları kapatıyoruz.
+
+446
+00:55:24,724 --> 00:55:27,464
+Mesela ben şöyle bir şey denemek istiyorum.
+
+447
+00:55:59,860 --> 00:56:00,340
+Tamam.
+
+448
+00:56:15,284 --> 00:56:18,063
+Tamam. Şimdi mu integra çalıştır.
+
+449
+00:56:22,324 --> 00:56:24,324
+Bir de bunu tekrar açalım isteyim.
+
+450
+00:56:25,923 --> 00:56:29,724
+Bakın ne oldu? Build object. Sadece oradaki satırı aldım.
+
+451
+00:56:31,224 --> 00:56:33,036
+Tamam. Şunu yapalım.
+
+452
+00:56:39,572 --> 00:56:41,291
+Tekrar ilde object diyelim.
+
+453
+00:56:44,371 --> 00:56:45,251
+Ve...
+
+454
+00:56:53,331 --> 00:56:54,711
+ve yazdıralım.
+
+455
+00:56:58,931 --> 00:57:00,931
+Bakın bu sefer burada geldi.
+
+456
+00:57:02,431 --> 00:57:07,307
+Read object ne yapıyor? Otomatik olarak satır satır okuma yapıyor aslında. Değil mi?
+
+457
+00:57:10,547 --> 00:57:17,647
+Evet. File stream'de böylece anlatmış olduk. Şimdi
+
+458
+00:57:21,364 --> 00:57:22,563
+Önemli bir konu.
+
+459
+00:57:22,563 --> 00:57:24,163
+Java'da türettiler.
+
+460
+00:57:30,387 --> 00:57:40,927
+Şimdi bakın bir tane thread oluşturmanın iki tane yöntemi var. Birisi böyle new thread dersiniz. Bir de thread havuzu oluşturursunuz. Onu da buradaki örnekte açıklayacağım.
+
+461
+00:57:43,168 --> 00:57:49,668
+Tamam. Şimdi biz bir tane thread oluşturacağız. Thread, parametre olarak bir runable alır.
+
+462
+00:57:51,748 --> 00:57:56,327
+Bakın o yüzden increaser dedik. Ne yaptık? Runable'dan implement ettik.
+
+463
+00:57:58,804 --> 00:58:06,684
+ismine de nesne1 demişiz. O, increaser class'ının yapıcı fonksiyonundan kaynaklanıyor. Yoksa illa böyle bir şey zorluydu.
+
+464
+00:58:08,684 --> 00:58:18,324
+Şimdi, bir runable class'ı tanımladık. Yani bir tane increaser tanımladık. Bunları da runable dedik.
+
+465
+00:58:19,324 --> 00:58:21,463
+Ve bir thread oluşturduk böylece.
+
+466
+00:58:24,043 --> 00:58:26,184
+T1.start dediğimiz zaman,
+
+467
+00:58:27,123 --> 00:58:35,523
+yapacağı şey, bakın burada run fonksiyonu var. Renable'dan implement ettiğimiz zaman run fonksiyonunu overwrite etmemiz gerekiyor.
+
+468
+00:58:37,143 --> 00:58:44,823
+Bakın burada da run fonksiyonu var. Bu run fonksiyonu da add fonksiyonunu çağırıyor. Buradaki add fonksiyonunu çalıştırıyor yani.
+
+469
+00:58:51,603 --> 00:58:53,723
+Ben, bitanlar class oluşturmuşuz.
+
+470
+00:58:57,204 --> 00:58:58,484
+Onay adında.
+
+471
+00:59:00,084 --> 00:59:06,324
+Burada aynı şekilde Renable ve burada da onaylama fonksiyonu. Yani bu çalışıyor. Evet.
+
+472
+00:59:08,764 --> 00:59:14,444
+Bakın bir tane Increaser'dan, bir tane de onaydan thread oluşturduk. Ne demek bu? Yani bir tane thread'in var.
+
+473
+00:59:14,924 --> 00:59:22,524
+Ha bu arada thread'lerin ne olduğunu söyleyeyim. Arkadaşlar thread'ler nedir? Mesela bakın, normal bir program akışı nasıl ilerler?
+
+474
+00:59:24,211 --> 00:59:50,032
+Tread T1 deriz değil mi? Önce bu satır. Sonra bu satır. Sonra bu satır. Sonra da bu satır çalışır. Treadler, normal program akışı böyledir değil mi? Lakin Treadlerde şöyle bir şey var. Bu satır çalışırken bu satır da çalışır. X aynı anda çalışır.
+
+475
+00:59:50,420 --> 01:00:16,012
+O yüzden iki tane ayrı class içerisinde bunu anlatmak istedim. Neden? Çünkü iki tane threadimiz var. Bakın bir tanesi buradaki for döngüsünü çalıştıracak, bir tanesi de buradaki for döngüsünü çalıştıracak ama aynı anda çalışacaklar. Yani önce bu çalışıp sonra bu çalışmayacak. Eğer normal bir program akışı olsaydı öyle olmaz mıydı? Şunları unutun. Buradan...
+
+476
+01:00:16,724 --> 01:00:43,024
+T1.start dedi. Hani işte o fonksiyonu çağırdı. T1.at dedik mesela. Ne oldu? Önce bu çalışır. Bu biter. Buraya geri döner. T2.start anca o zaman çalışırdı değil mi? Ama thread olduğu zaman öyle değil. Thread olduğu zaman T1.start çalışır. Bu buraya gider ama bu buradaki çalışırken aynı zamanda bu da çalışır. T2.start ile çalışır aynı zamanda.
+
+477
+01:00:47,059 --> 01:00:53,599
+Tamam. Şimdi bakalım ne olacak. Hatta çalıştırayım. Bakın ne oldu?
+
+478
+01:00:56,099 --> 01:01:01,679
+Nesne 1 çalıştı. Sayı değeri artı kaltı. Yani buraya gittik. Ya da önce biraz anlatayım kodları.
+
+479
+01:01:02,859 --> 01:01:09,759
+Öyle şey yapayım. Tamam. Şimdi Increaser çağırdı. T1 dedik. Tamam. Onaydan oluşturdu. T2 dedik. Start dedik. Ne oldu?
+
+480
+01:01:10,516 --> 01:01:18,516
+Bu iki class'ın run fonksiyonlarına gitti. Bu class add fonksiyonu, bu class onaylama fonksiyonu çağırdı. Onaylama fonksiyonu ne yaptı?
+
+481
+01:01:21,516 --> 01:01:31,516
+Buradaki for döngüsü var burada. System out, print, ln. Onaylandı yazacak yani. Onaylandı fonksiyonu onaylandı yazıyor 5 defa.
+
+482
+01:01:35,219 --> 01:01:43,279
+Increaseive fonksiyonu ise ne yapıyor? Bir tane sayı değişkenimiz var. 5. Arttırdı. 6 oldu.
+
+483
+01:01:47,795 --> 01:01:48,815
+İşte ne yapıyor?
+
+484
+01:01:53,684 --> 01:02:19,184
+5 defa for dönüşü dolaşacak. Name diyor. Name nedir? Burada bakın nesne1 demişiz. O name, bu name. Nesne1 çalıştı. Virgül sayı değeri artık 5'i 6 yapmıştık. 6 sayı değeri daha değişmiyor. Bakın burada da bu yazıyor. Şimdi ne demiştim? Eğer ki thread değil de normal bir program olsaydı,
+
+485
+01:02:19,360 --> 01:02:44,080
+T1 noktası start gelirdi, burayı çalıştırırdı. Önce ne olurdu? Nesne 1 çalıştı, sayı değeri artı kaldı. Nesne 1 çalıştı, sayı değeri artı kaldı. Nesne 1 çalıştı, sayı değeri artı kaldı. 5 defa bu yazardı. Sonra gelirdi T2 noktası starta. O da işte 5 defa anaylandı yazardı. Ama burada ne oldu? Bakın. Önce bu çalıştı.
+
+486
+01:02:44,692 --> 01:02:48,251
+Sonra 5 defa bu çalıştı. Sonra 4 defa bu çalıştı.
+
+487
+01:02:50,652 --> 01:02:55,071
+Yine aynı soru. Tabii değişmesi normal. Bakın mesela burada nasıl olmuş.
+
+488
+01:02:56,131 --> 01:03:04,011
+2 defa onaylandı çalıştı. 2 defa bakın. 2 defa onay fonksiyonundaki bu onaylama fonksiyonu çalıştı.
+
+489
+01:03:04,692 --> 01:03:11,011
+Ondan sonra 2 defa da bu increaser classındaki add fonksiyonu çalıştı.
+
+490
+01:03:11,956 --> 01:03:15,416
+Sonra 3 defa bu fonksiyon, 3 defa bu fonksiyon.
+
+491
+01:03:17,195 --> 01:03:21,115
+Yani 3 defa, 3 defa derken, hani önce bu yazdırdı.
+
+492
+01:03:21,695 --> 01:03:23,195
+Ama aynı anda çalışıyorlar.
+
+493
+01:03:24,056 --> 01:03:31,096
+Yani mesela şöyle söyleyeyim, bu programın süresi 5 saniye sürse, tamam mı?
+
+494
+01:03:31,615 --> 01:03:37,876
+Toplam süresi 5 saniye sürse, 5 saniyenin içerisinde hem increaser class'ı, hem onay class'ı çalışıyor.
+
+495
+01:03:38,547 --> 01:03:59,887
+Hatta bakın burada thread sleep diye bunu göstermek amacıyla güzel bir kodumuz. Ne yapıyor? Mesela yazdırdı ya bunu. Sonra bir saniye kadar buradaki thread duruyor. Aynı şekilde bu yazdıktan sonra bir saniye kadar buradaki threadle durur. Bir de böyle çalıştıralım.
+
+496
+01:04:06,643 --> 01:04:08,203
+İki saniye anda çalışıyor yani.
+
+497
+01:04:10,883 --> 01:04:16,043
+Yani ne oluyor işte bilmem kaç milisaniye önce bu bunu yazma koduna geldi.
+
+498
+01:04:16,043 --> 01:04:22,063
+Hemen işte bir iki milisaniye sonra da buradaki yazma kodu çalıştı. Mevzu o.
+
+499
+01:04:22,583 --> 01:04:32,083
+Ama bu çalış, yani önce bu bitecek bütünüyle, sonra gelecek de bu çalışacak olmadı.
+
+500
+01:04:34,099 --> 01:04:35,639
+Anlatabildim mi?
+
+501
+01:04:37,719 --> 01:04:38,659
+Anlaşıldı hocam.
+
+502
+01:04:39,379 --> 01:04:40,459
+Bunun faydası nedir?
+
+503
+01:04:41,639 --> 01:04:42,939
+Faydası şudur arkadaşlar.
+
+504
+01:04:42,939 --> 01:04:45,719
+Mesela iki tane tretimiz var.
+
+505
+01:04:45,939 --> 01:04:49,339
+2x, 2t zaman da bitecek bir iş, t zaman da bitebilir.
+
+506
+01:04:49,899 --> 01:04:52,500
+Veyahut da işte iki işi aynı anda yapabiliriz.
+
+507
+01:04:54,779 --> 01:04:55,839
+Bunun böyle bir çare var.
+
+508
+01:05:06,228 --> 01:05:08,228
+Bu konu, bu,
+
+509
+01:05:08,228 --> 01:05:09,228
+eee,
+
+510
+01:05:09,228 --> 01:05:12,228
+threadlerle alakalı özellikle sorunuz var mı?
+
+511
+01:05:13,228 --> 01:05:16,228
+Bakın buraya milisaniye cinsinden veriyoruz.
+
+512
+01:05:16,228 --> 01:05:19,228
+Yani 1000 yazarsak 1 saniye,
+
+513
+01:05:19,228 --> 01:05:23,180
+2000 yazarsak 2 saniye kadar olacak.
+
+514
+01:05:28,211 --> 01:05:30,532
+Sorunuz yoksa, tref havuzu kısmına geçeceğim.
+
+515
+01:05:38,739 --> 01:05:41,259
+Bunu anladınız değil mi? İnşallah anlamışsınızdır.
+
+516
+01:05:48,563 --> 01:06:01,063
+Tred havuzunda da, bakın burada biz ne yaptık? İki tane thread oluşturduk. Burada ne yapıyoruz? Diyoruz ki 5 tane thread olsun. Buraya parametre olarak veriyoruz. Veyahut da diyebiliriz ki 10 tane thread'imiz olsun.
+
+517
+01:06:04,851 --> 01:06:06,851
+5 tane trade olsun demişiz.
+
+518
+01:06:08,451 --> 01:06:15,451
+Şimdi ne olacak? Bakın, myTrade, runable nesnesi, işte rundaki fonksiyon, run fonksiyonu çalışacak.
+
+519
+01:06:16,551 --> 01:06:17,551
+Tamam.
+
+520
+01:06:19,051 --> 01:06:21,051
+Burada bir tane trade oluşturuyoruz.
+
+521
+01:06:23,651 --> 01:06:26,851
+Havuzu nasıl oluşturuyoruz? Bakın, executors.survise.
+
+522
+01:06:28,951 --> 01:06:31,851
+Classımız var. Executors.
+
+523
+01:06:32,532 --> 01:06:34,532
+New Fixed Thread Pool
+
+524
+01:06:36,532 --> 01:06:37,532
+Fonksiyonu sayesinde
+
+525
+01:06:38,532 --> 01:06:41,532
+Buraya da parametre olarak kaç thread oluşturmak istiyorsak onu veriyoruz.
+
+526
+01:06:42,532 --> 01:06:44,532
+Thread oluşturuyoruz.
+
+527
+01:06:44,532 --> 01:06:46,532
+Thread havuzu oluşturuyoruz.
+
+528
+01:06:47,532 --> 01:06:49,532
+Sonra bakın burada bir for döngüsü yapmışım.
+
+529
+01:06:49,532 --> 01:06:51,532
+20 tane thread oluşturuyorum.
+
+530
+01:06:53,532 --> 01:06:56,300
+Bu her bir thread'i ben ne yapıyorum? Thread havuzuna veriyorum.
+
+531
+01:06:59,155 --> 01:07:02,076
+Her bir thread ne yapıyor, geliyor burada çalışıyor.
+
+532
+01:07:07,380 --> 01:07:34,560
+Tabii şöyle, bakın mesela 5 tane oluşturduk ya, 5 thread yani i5, i1, i2, i3, i4, i5, i6'ya kadar 5 thread oluştu ya, bakın ondan sonra buraya gelecek de duracak. Çünkü bu execute ne yapıyor? Thread'ı uzunluğunu doldurdum sonra çalışıyor. Hatta şöyle göstereyim. Bakın durduruyorum.
+
+533
+01:07:38,516 --> 01:07:39,556
+Tekrar başlatalım.
+
+534
+01:07:46,739 --> 01:07:47,659
+Bakın ne oldu?
+
+535
+01:08:07,956 --> 01:08:33,435
+çalıştırıyorum tekrardan. Bakın ne oldu? İlk 5 thread çalıştı. İlk 5 thread çalıştı. Çünkü ne oluyor? İşte thread havuzunu dolduruyoruz. Yani bir tane thread oluşturdum, havuza ekledim, bir tane daha oluşturdum, havuza ekledim. Ta ki sınıra kadar. 5 tane thread oluşturdum, 5 havuza ekledim. Havuz doldu. Havuz dolduktan sonra artık
+
+536
+01:08:34,163 --> 01:08:36,123
+Buradaki her bir thread birlikte ne yapıyor?
+
+537
+01:08:39,003 --> 01:08:39,863
+Bu my thread
+
+538
+01:08:39,863 --> 01:08:42,203
+teki
+
+539
+01:08:42,203 --> 01:08:44,363
+my thread benim yazdığım bir class
+
+540
+01:08:44,363 --> 01:08:46,903
+buradaki kodları birlikte çalıştırmaya başlıyorlar.
+
+541
+01:08:49,683 --> 01:08:51,603
+Yani bir tane işimiz var.
+
+542
+01:08:52,583 --> 01:08:53,083
+5x
+
+543
+01:08:53,083 --> 01:08:54,304
+ya da 5
+
+544
+01:08:54,304 --> 01:08:58,224
+bir fonksiyonunda 5 iş yapılacak diyelim mesela.
+
+545
+01:08:59,423 --> 01:08:59,903
+Ne yapıyoruz?
+
+546
+01:09:00,144 --> 01:09:01,224
+Eğer thread 2 ise
+
+547
+01:09:02,547 --> 01:09:05,227
+Bu işi o yapsın. Thread 1 ise bu işi o yapsın deriz.
+
+548
+01:09:06,907 --> 01:09:14,567
+5 tane if koyarız hemen. Ne olur? Her bir thread kendi işini yapar. 5x kadar iş, x kadar sürede biter.
+
+549
+01:09:16,028 --> 01:09:19,367
+Yani 5x sürede bitecek iş, x sürede biter.
+
+550
+01:09:23,764 --> 01:09:34,123
+Havuzda oldu, bunu çalıştırdık. Bakın, thread 2, 5, 4, 1, 3. Farklı da olabilirdi. Bakın, thread 2, 5, 3, 1, 4 bu sefer.
+
+551
+01:09:37,824 --> 01:09:50,203
+Farklı olabilir bu oluyor, önemli değil. Ama sonuçta ilk 5 thread çalışıyor. Sonra ne oluyor? Buraya giriyor.
+
+552
+01:09:52,787 --> 01:09:56,147
+Yani thread 2 çalıştı mesela bakın thread 2 çalıştı.
+
+553
+01:09:56,147 --> 01:09:59,867
+Sistem alt print alanı yazdı. Sonra buraya girdi durdu.
+
+554
+01:09:59,867 --> 01:10:03,907
+Thread 5 çalıştı aynı şekilde. Thread 3 çalıştı buraya girdi durdu.
+
+555
+01:10:03,907 --> 01:10:07,587
+Thread 1 çalıştı buraya girdi durdu. Thread 4 çalıştı buraya girdi durdu.
+
+556
+01:10:08,867 --> 01:10:12,467
+Sonra devam ettirseydim 6, 7, 8, 9, 10
+
+557
+01:10:14,947 --> 01:10:18,067
+çalışacaktı bu sefer thread olarak.
+
+558
+01:10:18,484 --> 01:10:23,944
+Tread 1, Tread 8, Tread 9, Tread 10. Bunlar çalışıyor. Tread havuzu bu.
+
+559
+01:10:26,064 --> 01:10:43,264
+Evet, burada konuları bitirmiş oldum. Özellikle bu Treadlerde özellikle sorunuz varsa muhakkak sorun. Vaktimiz var. Sıkıntı yapmayın. Kendi canınızı da sıkmayın.
+
+560
+01:10:48,243 --> 01:10:49,903
+Benim canımı da sıkmayın değil mi?
+
+561
+01:10:50,983 --> 01:10:51,763
+Estağfurullah.
+
+562
+01:10:53,583 --> 01:10:55,943
+Eğer sorunuz varsa hakikaten sorun.
+
+563
+01:10:56,963 --> 01:10:58,503
+Burada bir soru işareti bırakmayalım.
+
+564
+01:10:59,463 --> 01:10:59,983
+Olur.
+
+565
+01:11:01,363 --> 01:11:02,083
+Efendim [öğrenci].
+
+566
+01:11:02,643 --> 01:11:03,483
+Ezekül mü?
+
+567
+01:11:03,483 --> 01:11:07,223
+Yani anında çalıştırmıyor, havuzun dolmasını mı bekliyor burada?
+
+568
+01:11:08,043 --> 01:11:08,723
+Ezekül mü?
+
+569
+01:11:09,203 --> 01:11:10,103
+Evet.
+
+570
+01:11:11,563 --> 01:11:13,863
+Yani aynen öyle. Bekliyor.
+
+571
+01:11:14,452 --> 01:11:22,852
+Bir de hocam bu 16. satırda kapattık. Ondan sonra 17. satırda ne yaptık tam o işlemi anlatabilir misiniz?
+
+572
+01:11:23,252 --> 01:11:31,492
+Tabii tabii. Burayı unutmuşum. Bu shutdown ile şunu yapıyoruz. Hani x.execute ile thread ekliyoruz ya.
+
+573
+01:11:32,272 --> 01:11:39,752
+Shutdown dediğimiz zaman artık diyoruz ki ben artık bittim. Daha bana thread ekleme. Bana daha thread ekleyemezsin.
+
+574
+01:11:40,819 --> 01:11:56,639
+X, await, termination'da da şu oluyor. Çalışan mesela 7-8 tane trade'imiz var diyelim. Bu trade'lerin hepsinin bitmesini bekliyor. Peki ne kadar bekliyor? Bir gün.
+
+575
+01:12:03,188 --> 01:12:03,688
+Tamam.
+
+576
+01:12:10,771 --> 01:12:12,311
+Tamam o zaman, kapatıyorum.
+
+577
+01:12:13,951 --> 01:12:14,891
+Sorunuz yoksa.
+
+578
+01:12:17,011 --> 01:12:18,511
+Teşekkürler hocam, sağ olun.
+
+579
+01:12:19,332 --> 01:12:20,231
+Allah'a emanet olun.
+
+580
+01:12:20,611 --> 01:12:21,591
+Sağ olun siz de.
+
+581
+01:12:21,992 --> 01:12:22,631
+Ular az olsun.

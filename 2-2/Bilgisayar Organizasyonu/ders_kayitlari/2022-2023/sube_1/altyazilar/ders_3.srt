@@ -1,0 +1,3207 @@
+1
+00:02:02,548 --> 00:02:26,468
+Arkadaşlar, merhaba. Bu hafta İngisayar Donanımı dersinde, Ardışlı Devre Tasarımıyla ilgili olarak önerilerden hatırlamamız gereken konuları tekrarlayacağız. Daha sonrasında da tıpkı kombinasyonel devrelerde yaptığımız gibi, daha büyük bloklar, daha geniş blokları nasıl tasarlayacağız, onları inceleyeceğiz.
+
+2
+00:02:27,092 --> 00:02:31,572
+ve de yine bunların en bitik versiyonlarını nasıl tanımlarız onları görmeye çalışacağız.
+
+3
+00:02:33,092 --> 00:02:39,892
+Bunun ardından da programlanabilir lojik devreler mantığına bir giriyor olacağız.
+
+4
+00:02:39,892 --> 00:02:46,052
+Orada PLA, PLD gibi entegreler var onları tanıyacağız.
+
+5
+00:02:46,052 --> 00:02:49,572
+Bu şekilde bu haftaki dersimizi tamamlamaya çalışacağız.
+
+6
+00:02:50,292 --> 00:02:53,572
+Geçen haftadan kaldığımız noktayla devam edelim.
+
+7
+00:02:54,099 --> 00:02:56,819
+Bu arada bir de şeyle bakalım.
+
+8
+00:03:00,563 --> 00:03:05,003
+Önümüzdeki hafta kaçıncı haftamız olacak? Dördüncü haftamız oluyor değil mi?
+
+9
+00:03:18,003 --> 00:03:26,783
+Evet, önümüzdeki hafta için bir de kısa sınavımız var arkadaşlar. Bu kısa sınavımız şöyle olacak, onu söyleyeyim.
+
+10
+00:03:28,683 --> 00:03:37,463
+Önümüzdeki hafta dersin son saatinde online yıldız edi TRD'ye başlayacak, işte dersin son saatinde başlayacak şekilde bir sınav tanımlayacağız.
+
+11
+00:03:38,764 --> 00:03:40,824
+Bir saat civarında bir sınav olacak.
+
+12
+00:03:43,379 --> 00:03:58,479
+Sınav konusuna dahil olan konular, ilk dört haftayı kapsayacak konular olacak. Yani önümüzdeki hafta gördüğünüz konularda ders kapsamında var. Yani sınav olacak diye dersi dinlemeyeyim derseniz hata yapmış olursunuz. Önümüzdeki haftanın konularda dahil.
+
+13
+00:04:09,235 --> 00:04:15,295
+Dersin son saatinde bir tane kısa sınavımız var. Online Yıldızı'nı TR üzerinden yapmaya çalışacağız sınavımıza.
+
+14
+00:04:17,096 --> 00:04:21,795
+Şimdi kaldığımız yerden devam edecek şekilde ben ekran paylaşımı açayım.
+
+15
+00:04:25,300 --> 00:04:33,460
+Evet, geçen hafta hatırlayacak olursanız ardışlı devre bloklarına değinmiştik en son. Hızlıca bir orayı hatırlayacak olursak.
+
+16
+00:04:35,560 --> 00:04:43,920
+Şimdi bazı lojik tasarımlarda önceki durumların hafızada tutulması ihtiyacı doğuyor.
+
+17
+00:04:45,139 --> 00:04:51,259
+Yani bir önceki adımda gerçekleşen duruma göre hareket etmek gerekebiliyor.
+
+18
+00:04:52,084 --> 00:04:58,084
+Eğer sadece bir durum hafızada tutulacaksa bu bir tane hafıza elemanı ihtiyacı anlamına geliyor.
+
+19
+00:04:58,963 --> 00:05:08,163
+Veya işte örneğin 8 farklı durumu tutacaksak biz hafızamızda 8 farklı durumu şöyle kodlayabiliriz diyoruz.
+
+20
+00:05:08,903 --> 00:05:16,384
+8 farklı durum yani 8 farklı senaryo 3 bitle ifade edebiliriz. Dolayısıyla 3 tane hafıza elemanı bizim için yeterli diyebiliyoruz.
+
+21
+00:05:16,851 --> 00:05:23,951
+Bu hafıza elemanlarının temel yapısına baktığımızda da aslında şunu görüyorduk. Neredeydi o?
+
+22
+00:05:26,151 --> 00:05:29,951
+Temel olarak iki yapı var. Bunlardan birisi latch, diğerisi flip-flop.
+
+23
+00:05:31,072 --> 00:05:33,971
+Latch mantığında bir tane enable ucu var.
+
+24
+00:05:35,351 --> 00:05:38,851
+Şimdi genel olarak şeyi düşünecek olursak şöyle bir yazmaya çalışayım.
+
+25
+00:05:46,100 --> 00:05:48,100
+Bir black box kutumuz var.
+
+26
+00:05:55,315 --> 00:06:20,615
+Bir tane black box kutumuz var. Bunun bir tane giriş ucu var. Bir tane enable ucu var. Bir tane de çıkışı var. Şimdi enable ucu logic 1'de olduğu süre boyunca ben girişte ne kadar değişim olursa veya ne yönlü değişim olursa olsun aynısını çıkışta görebiliyorum. Ama enable ucum sıfıra düştükten sonra
+
+27
+00:06:21,007 --> 00:06:31,507
+Ben burada girişimde ne kadar değişiklik yaparsam yapayım. En son hangi durum varsa o çıkışta kalıyor. Bu mantık, bu mantık leç mantığı arkadaşlar.
+
+28
+00:06:32,548 --> 00:06:37,907
+Leç mantığı. Dolayısıyla burada bir seviye tetikleme söz konusuydu.
+
+29
+00:06:38,827 --> 00:06:41,727
+Flip floklarda ise mantığımız şu.
+
+30
+00:06:43,572 --> 00:06:52,871
+Gösterim olarak da burada bir artık klok işaretinden bahsedebiliriz. CLK diyelim. Bu klok işaretiyle ilgili olarak da şöyle bir durum var.
+
+31
+00:06:52,991 --> 00:07:08,932
+İşte gösterim olarak da yine bahsetmiştik. Ya işte şu entegrenin içi dışarıdan gelen uç ya şöyle bir gösterim var veyahut da bir yuvarlak ve ardına yine bir üçgen işareti var.
+
+32
+00:07:10,100 --> 00:07:21,379
+Birinci çizmiş olduğumuz clock control işareti saat darbesi saat darbesini veya clock işaretini sadece yükselen kenarında tetiklemeyi ifade ediyor.
+
+33
+00:07:22,319 --> 00:07:27,459
+Yuvarlak ve daha sonrasındaki üçgen ise yuvarlak hep negatif veya aktif sıfır anlamında kullanıyorduk.
+
+34
+00:07:28,139 --> 00:07:31,939
+Bu da yine clock işaretini bu sefer düşen kenarında tetiklemeyi.
+
+35
+00:07:32,403 --> 00:07:50,324
+Karşılık olarak bize getiriyor. Şimdi seviye tetikleme ile leçlerde ne demiştik? Seviye tetikleme var. Leçlerdeki seviye tetikleme ile flip-floplardaki kenar tetiklemenin farkı ne? Oradaki olay da şu. Giriş işaretim var. Ben giriş işaretimi ne kadar değiştirirsem değiştireyim.
+
+36
+00:07:51,091 --> 00:08:13,471
+Clock işaretim 0'dayken de herhangi bir çıkışta değişiklik yok. Clock işaretim 1'deyken de bir değişiklik yok. Değişim sadece örneğin clock işaretimin yükselen kenarında var. Burada öyle çizdiğim için. Ve yükselen kenar anında hangi uç değerimiz varsa, hangi giriş değerimiz varsa çıkışta o değer oluşturuluyor ve sabit kalıyor.
+
+37
+00:08:15,860 --> 00:08:28,220
+Kenar tetiklemeden farklı olarak seviye tetiklemede. Seviye 1'deyse ben girişimi değiştirdiğimde çıkışımda birebir bunu görüyorum. Dolayısıyla bu tür leşlere transparent leş tarzı isimler de veriliyor.
+
+38
+00:08:31,156 --> 00:08:57,016
+Flip-flop olmasının avantajı dediğimiz gibi durum değişimini, çıkıştaki durum değişimini anlık, minimal, çok küçük, sonsuz küçük bir yükselen kenar anına sıkıştırabildiğimiz için biz bu mantık çerçevesinde, flip-flop mantığında istediğimiz giriş değerini ayarladıktan sonra, genel olarak çalışma mantığı bu olacak, istediğimiz giriş değerini ayarladıktan sonra clock işaretinin yükselen kenarını vuruyoruz örneğin.
+
+39
+00:08:57,395 --> 00:09:16,155
+Dolayısıyla mantık bu şekilde çalışıyor olacak flip-floplarla ilgili olarak. Peki bu flip-flop veya latch dediğimiz hafıza elemanlarının iç yapısında ne var? Bunların iç yapısında temel olarak bir geri besleme mantığı, feedback mantığı var. Normalde biliyorsunuz kombinasyonel lojik devrelerde.
+
+40
+00:09:16,692 --> 00:09:24,172
+Bir başka devrenin çıkışı, bir başka kapının çıkışı, bir başka kapıya giriş olabilir.
+
+41
+00:09:24,172 --> 00:09:30,172
+Ama hiçbir zaman için kombinasyonel lojik mantığı içerisinde bir kapının...
+
+42
+00:09:31,988 --> 00:09:59,708
+Veya bir grup kapının ortak çıkışı yine kendisiyle giriş olarak geri olarak bildirilmiyor. Böyle bir yapı farklılığı var. Bu geri beslenen mantığının özelliği de şimdi unstable yani kararsız durumlar oluşabiliyor. Evet kararsız durumlar ulaşabiliyor. Yani sürekli bir sıfır bir sıfır olarak değişme söz konusu olabiliyor. Birbirini kovalayan bir durum olabiliyor ama bunun dışında stabil durumlar da oluyor. Bu stabil durum da şu anlama geliyor.
+
+43
+00:09:59,988 --> 00:10:17,988
+Ben burada bir değer oluşturduktan sonra o değer diğer uç kontrol üclerindeki işaret değerleri değişse de sabit olarak kalabilir. Örneğin bunlardan birisi şu. İşte burada şu kısım için bakacak olursak yani bunu aslında iki kısım olarak inceleyebiliriz.
+
+44
+00:10:29,235 --> 00:10:41,175
+Bir de clock işareti eklenmiş, yani feedback kısmı ve kontrol kısmı var diyebiliriz. Öncelikle feedback'li kısma bakalım. Feedback'li kısma baktığımızda bu bir nor kapısıydı.
+
+45
+00:10:41,255 --> 00:10:50,316
+Nor kapısında siz eğer herhangi bir girişe bir verirseniz çıkışınız sıfır oluyordu. Diğer kapıya bakmaksızın. Burada sıfır var.
+
+46
+00:10:51,124 --> 00:11:10,543
+Buradaki girişimizde örneğin 1 ise, 1-1 durumuna mı denk gelecek? Bakalım şimdi. 1-1 durumu varsa, yine burada da 0 olacak. Bizim donk yer olarak kullandığımız değer 0.
+
+47
+00:11:11,124 --> 00:11:20,723
+Şuraya gelen değer de 0. Dolayısıyla burada Q ve Q üstü için benzer bir durum oluştu. Sanki tam bunu aramıyorduk.
+
+48
+00:11:21,563 --> 00:11:32,803
+Burası 1 olduğunda çıkışımız 0. Buraya 0 geldi. Şuraya da 0 verirsek çıkışımız 1.
+
+49
+00:11:33,364 --> 00:11:58,324
+Çıkışımız 1 olduğu için don't care olarak kullandığımız değer de 1. Dolayısıyla çıkışımız 0 ve birbirlerini destekleyecek şekilde herhangi bir koşu şeklinde 0-1 değişim olmayacak şekilde stabil bir çıkış elde etmiş oluyoruz. Yani burada böyle bir senaryo var veyahut da tersi de düşünebiliriz. Bu çıkışımızı sıfırladığımız senaryoya karşılık gelmiş oldu.
+
+50
+00:12:00,080 --> 00:12:05,100
+Yani şuradaki satıra bir kapı daha geri gittiğimizde şuradaki satıra karşılık gelmiş olacak.
+
+51
+00:12:05,840 --> 00:12:09,120
+Veya işte tersini düşünelim.
+
+52
+00:12:11,200 --> 00:12:17,060
+Bu sefer şurada birimiz olsa burada sıfırımız var.
+
+53
+00:12:17,700 --> 00:12:20,940
+Oraya sıfır yazmadan şurada da sıfır olsa ne olur diye bakalım.
+
+54
+00:12:21,460 --> 00:12:42,460
+Burada birimiz var. Dolayısıyla şurası sıfır. Burası sıfır olduğu için, burası sıfır geliyor. İki sıfır olduğu için çıkışımız bir. Buraya bir geliyor. Buradaki sıfırı bozmuyor. İki tane birinin olu yine sıfır. Dolayısıyla yine stabil bir durum. Geri beslemede de stabil bir durum var. O da şuradaki satıra geliyor. Dolayısıyla gördüğünüz gibi biz istediğimiz durumda bunlar da...
+
+55
+00:12:42,772 --> 00:12:50,692
+Stabil çıkış değerleri sağlayabiliyoruz. Şimdi böyle iken, durum bu iken, biz gelip şunu yapalım.
+
+56
+00:12:50,972 --> 00:12:58,852
+Kırmızı ile işaretleyelim. Giriş işaretlerimizden şuradaki işaretimizi sıfıra çekeceğim.
+
+57
+00:12:59,872 --> 00:13:07,932
+Ama ben bunu sıfıra çekerken, daha buradaki sıfırın etkisi dışarı çıkmadan önce, buralarda mevcut değerler bulunduğunu varsayalım.
+
+58
+00:13:10,676 --> 00:13:24,375
+Biz bunu sıfıra çektikten sonra arkadaşlar, bunun yine burada bir değeri olduğu için çıkışının bir değişimi söz konusu olmaz değil mi? Sıfıra çeksem bile burası yine sıfırda kalacak.
+
+59
+00:13:25,035 --> 00:13:33,676
+Karşı tarafta ikisi de sıfır olduğu için çıkışım yine bir olacak. Bu tarafa yine bir geldiği için bir ile sıfırın durumu sonucu değiştirmeyecek.
+
+60
+00:13:34,395 --> 00:13:36,836
+Dolayısıyla ben şunu görmüş oldum.
+
+61
+00:13:37,299 --> 00:13:58,179
+0, 1 durumundan bunlar R üstü ve S üstü değerleri. Bundan 0, 0'a geçersem durumumda bir değişiklik olmuyor. Durumum neydi? 1'di. Tekrar 1 olarak kaldı. Aynısını bu sefer ilk yaptığımız örnek için tekrarlayalım. Orada neydi? Onu hatırlayalım tekrar.
+
+62
+00:14:02,419 --> 00:14:29,740
+1 değerimiz buradaydı, 0 değerimiz buradaydı değil mi? Dolayısıyla şurada 0 değerimiz vardı. Buraya 0, 0 geldiği için burada 1 değeri çıkıyordu. Burada da 1 değeri olduğu için stabil bir feedback mantığı vardı. Ben gelip giriş işaretimi şurada 1'den 0'a çekersem ne olur? Durum yine değişmeyecek. Burada alttaki taraftan 1 feedback geldiği için durum değişmeyecek. Dolayısıyla burada V üstü, S üstünü
+
+63
+00:14:30,196 --> 00:14:42,776
+1, 0 olduğu durumdan da ben 0, 0'a geçsem. Durumum 0'dı ve tekrar 0 olarak kaldı. Dolayısıyla bu iki senaryonun özetini şöyle söyleyebileceğiz.
+
+64
+00:14:43,336 --> 00:14:54,515
+R üstü ve C üstünün 0 olduğu durumlarda, R üstü ve C üstünün 0 olduğu durumlarda, bu sıfıra karşılık geliyor. Önceki durumda herhangi bir değişiklik yok.
+
+65
+00:14:55,220 --> 00:15:02,620
+Peki, 1-1 olduğu durumda ne var? 1-1 olduğu durumda bir yarış koşulu ortaya çıkıyor. Şöyle görelim.
+
+66
+00:15:05,480 --> 00:15:11,120
+1-1 olduğu durumda, burada da 1 olsa, burada da 1 olsa ne olur? 1 var, şurada 0 var.
+
+67
+00:15:14,964 --> 00:15:16,864
+1-1 olduğumuz durum için.
+
+68
+00:15:23,283 --> 00:15:25,704
+R üstü olduğu için sıfır yazmamız gerekmiyor mu?
+
+69
+00:15:26,504 --> 00:15:29,724
+O zaman R üstü değil de R prime bir düşün.
+
+70
+00:15:32,283 --> 00:15:34,084
+Bir sonraki hali şeklinde mi?
+
+71
+00:15:34,943 --> 00:15:40,584
+Bir sonraki hali de değil de farklı bir isimlendirme. Şuradaki isimlendirmeden farklı bir isimlendirme olarak.
+
+72
+00:15:41,139 --> 00:15:58,159
+Geçiyor gibi düşünelim. Çünkü şu katman aslında bu yani soldaki katmanı eklediğimiz zaman seviye tetiklemeyi bu sisteme eklemiş oluyor. Sadece feedback kısmına baktığımızda burada bir seviye tetikleme, seviye kontrolü yok. Seviye tetiklemeli kontrol yok.
+
+73
+00:15:58,159 --> 00:16:08,779
+Clock işaretinin bir olduğu durumlarda seviye kontrolü, seviye tetiklemesi sağlamak adına bu katman eklenmiş. Üstü olarak değil de bunlar bir isimlendirme.
+
+74
+00:16:09,139 --> 00:16:29,519
+B gibi de düşünebilirsiniz. NAT'ı değil ama yani NAT'ı değil. Şimdi 1-1 olduğu durum için baktığımızda bu izin verilmeyen bir durum. Neden izin verilmiyor? Burada da 0 mu olacak? Tekrar bakalım. Bunu da şöyle yapalım isterseniz.
+
+75
+00:16:30,740 --> 00:16:58,079
+Örneğin, bir sıfır durumundan bir bir durumuna geçeceğimiz bir senaryo. Önce bir sıfır durumu için bakalım ne oluyordu? Burası sıfır olacak. Sıfır olduğu için burası bir olacak ve burada da bir var. Stabil bir durum sağladık. Ama getirip biz şuradaki sıfırı bir yapmaya çalışırsak ne olacak bir bakalım. Bunu bir yaptığımızda çıkışımız Q üstü. Üstüyü şöyle bar olarak göstermişti zaten. Bu sıfıra dönecek. Bu sıfıra döndüğü vakit.
+
+76
+00:16:58,899 --> 00:17:25,599
+Burada sıfır değerimiz var. Çıkış değerimiz ne oluyor? Yine sıfır olarak kalıyor mu? Sıfır olarak kalıyor. Sıfır olarak kaldığında buradaki çıkışımız sıfıra dönüyor. Sabitledik. Bu şekilde değil. Nasıl onu tanımlayabiliriz? Bir bir durumunda bir RISC oluşuyor. Onu tanımlayabiliriz.
+
+77
+00:17:25,683 --> 00:17:34,443
+Tanımlamak gerekirse, bir daha bir bakalım, S ve R'de 1 olsa, bir clock işareti geldiğinde buralar 1 olacak zaten.
+
+78
+00:17:35,403 --> 00:17:41,304
+Tekrar şunun için bir daha bir bakmaya çalışalım. 1 olduğunda, sıkıntı şuradan tabii.
+
+79
+00:17:41,983 --> 00:17:46,264
+Normalde biliyorsunuz tüm filipiloklar için Q ve Q üstü değerleri mevcut.
+
+80
+00:17:46,675 --> 00:17:59,935
+Ve bunlar birbirini değili şeklinde sağlıyor. Ama iki girişimizde bir olduğu vakit çıkışlarımızın her ikisi de sıfır olmuş olacak. Dolayısıyla bir RISC condition'dan ziyade çıkış tarafında bizim aradığımız bu.
+
+81
+00:18:00,692 --> 00:18:10,331
+kendisi, çıkışın kendisi ve değil olacak şekilde sağlamaya çalıştığımız senaryo oluşmadığı için izin verilmeyen bir durum olarak karşımıza çıkıyor.
+
+82
+00:18:10,471 --> 00:18:13,451
+Yani feedback tarafı için bunu böyle tanımlamış olalım.
+
+83
+00:18:14,391 --> 00:18:22,511
+Şey tarafına geldiğimizde ise bunun solundaki katmana geldiğimizde de şimdi bu sol taraftaki katmanın yaptığı işlem şu.
+
+84
+00:18:23,028 --> 00:18:39,847
+Bir R kontrolüm var. Burada R apostrof olarak isimlendirdiğim işaretle aynı. Normalde işte klok işareti 1 ise R apostrof dediğimiz şey R'ye eşit, S apostrof dediğimiz şey S'ye eşit.
+
+85
+00:18:39,847 --> 00:18:46,148
+Ama klok işareti 0'a düştüğünde buraya 0 ve buraya 0 gelecek. 0 0 durumu bizim için.
+
+86
+00:18:46,740 --> 00:19:01,700
+durum değişimi olmayan senaryoya karşılık gelmiş oluyor. Yani Latch'in Enable'ını kapatmış oluyor. Dolayısıyla bu katman feedback mantığının seviye tetikleme olarak kontrolünü sağlayan senaryo. Onu söyleyebiliriz.
+
+87
+00:19:11,731 --> 00:19:22,991
+Yine farklı flip-floplar tanımlamak mümkün. Lojik devreler dersinde bunları kapı seviyesinde soyutlayarak kabul edip kullanmıştık. Benzer bir yapıyı burada da yapacağız.
+
+88
+00:19:24,612 --> 00:19:31,391
+Yine geçen haftaki ders içerisinde şundan da bahsetmiştik. Birleşle flip-flop kullanımı arasındaki temel farkı nasıl görebiliriz?
+
+89
+00:19:31,391 --> 00:19:38,271
+İşte bizim giriş ucumuzda, öncelikli olarak de flip-flop nasıl çalışıyor ondan bahsedelim.
+
+90
+00:19:38,740 --> 00:19:39,819
+Yukarıda mı vardı o?
+
+91
+00:19:41,319 --> 00:19:58,199
+D-Filip-Flop şu şekilde çalışıyor. D-Filip-Flop'a baktığımızda mantık bu. Bu mantık çerçevesinde aslında S-R-L-Çi dediğimiz yapıya bir değer ve onun değeri de R'ye gelecek şekilde tanımlanmış.
+
+92
+00:19:58,199 --> 00:20:00,000
+Değerin kendisi bir...
+
+93
+00:20:00,000 --> 00:20:24,639
+inputumuz var. D inputumuz. Bu direkt S'ye bağlı. Diğer girişimize de, R girişine de inputumuzun D ile bağlı. Dolayısıyla şu tabloya baktığımızda hangi senaryolara karşılık geliyor? Sadece şu iki satıra karşılık gelen durum var. Yani S ve R uçlarının birbirinin değil olduğu durumlarla kısıtlanmış bir leç mantığı burada söz konusu. Dolayısıyla baktığımızda şu S'deki değer
+
+94
+00:20:25,332 --> 00:20:35,572
+S'deki değer bizim D input değerimize eşitti. Dolayısıyla D'de hangi değer varsa Q'da o değeri görüyoruz. D ile için çalışma mantığı bu normalde.
+
+95
+00:20:36,771 --> 00:20:44,991
+D ile için çalışma mantığı bu. Dolayısıyla D girişinde hangi değer varsa LATCH Enable'de çıkışta aynısını göreceğiz.
+
+96
+00:20:45,359 --> 00:20:52,779
+D ucunda hangi değer varsa, clock işaretinin yükselen kenarında, flip-flopta çıkışta o değeri göreceğiz. Mantık bu şekilde.
+
+97
+00:20:53,479 --> 00:21:05,479
+Dolayısıyla bu devrede D'nin herhangi bir keyfi, değişimini her iki senaryo içinde çizmiş olsak, clock işaretinin yükselen kenarında çıkışta D'deki durumun aynısını göreceğiz.
+
+98
+00:21:05,940 --> 00:21:33,200
+Birazcık gecikme var. İçerideki propagation dolayısıyla birazcık gecikme var ama neticede D'nin aynısını görüyoruz. Flipflop'un çalışma mantığı da şu. Sadece ve sadece bakın nasıl olmuş. Clock işaretinin yükselen kenarında aktülyte gösteriyor. Clock işaretinin yükselen kenarında D'deki değer nedir örnekliyor. Biraz gecikme var yine propagation dolayısıyla ve Q'da çıkışta o değeri oluşturuyor ve o değer kalıyor ne zamana kadar? Clock işaretinin bir sonraki yükselen kenarına kadar.
+
+99
+00:21:33,940 --> 00:21:37,279
+Sizin de onu görmemişiz. Göstermiyor.
+
+100
+00:21:38,120 --> 00:21:41,000
+Dolayısıyla bu ikisi arasındaki çalışma mantığını konuşmuştuk.
+
+101
+00:21:41,000 --> 00:21:45,000
+Orayı geçtiğimiz için geçen hafta başımı tekrar etmek istedim.
+
+102
+00:21:45,364 --> 00:22:13,364
+Bunun dışında preset, reset uçları vardı. Bunlar asenkron çalıştığını söylemiştik. Asenkron çalışmak demek ne demekti? Clock işaretinin yükselen kenarını beklemeden Q'daki değeri sıfırlayıp birleyebilen bir lojik mantıktı. Bununla birlikte bir de senkron bir clear veya senkron preset uçları oluşturabileceğimizi söylemiştik. Buradaki mantıkta clear kontrolü D ucuna bağlı olduğu için ve D ucu ancak ve ancak clock işaretinin yükselen kenarında çıkış aktarıları var.
+
+103
+00:22:13,364 --> 00:22:35,564
+Bu durumda clear etme işlemi senkron bir mantıkla yani clock işaretinin yükseldiği kenarda sağlanabilir durumda oluyordu. Yine bu noktada da şeyden bahsetmiştik, ardışlı devre tasarımıyla ilgili olarak eğer ki senkron ardışlı devre tasarımı yapıyorsak sistemde kullandığımız tüm hafıza elemanlarının aynı clock işaretinde olması gerekiyordu.
+
+104
+00:22:35,564 --> 00:22:41,064
+Bununla birlikte farklı clock kaynaklarının kullanıldığı yapılarda asenkron devre tasarımı.
+
+105
+00:22:41,364 --> 00:22:44,004
+Asynchron Ardışıl Devre Tasarımı deniyordu.
+
+106
+00:22:44,704 --> 00:22:48,084
+Şimdi burada register mantıkları var.
+
+107
+00:22:48,284 --> 00:22:50,724
+Fakat register mantıklarına geçmeden önce
+
+108
+00:22:50,724 --> 00:22:54,104
+bir sonrasında ne var?
+
+109
+00:22:54,204 --> 00:22:56,484
+Hafızaya geçmeyeceğiz zaten bu hafta.
+
+110
+00:22:56,904 --> 00:22:59,884
+Bir dönüp şeye bakmak istiyorum, hatırlatmak istiyorum.
+
+111
+00:23:00,336 --> 00:23:12,636
+Ardışlı devre tasarımı ve onun öncesinde ardışlı devre tasarım süreçleriyle ilgili izlememiz gereken mantıklar nelerdir? Bir onlardan bahsetmek istiyorum. Onun için şuraya geçeceğim.
+
+112
+00:23:24,692 --> 00:23:30,991
+Şimdi öncelikli olarak arkadaşlar sıklıkla karşılaşabileceğimiz flip-flop mantıkları üzerinde duralım.
+
+113
+00:23:31,651 --> 00:23:39,171
+Şimdi ardışıl devre tasarımında latch'ten ziyade flip-flop kullanılma mantığı sanırım oturmuş olması gerekiyor.
+
+114
+00:23:39,171 --> 00:23:50,171
+O da şundan dolayı eğer seviye tetikleme varsa devrelerin kat etmiş olduğu kapı adetleri miktarınca her bir alt modülün sahip olduğu gecikmeler farklı.
+
+115
+00:23:52,403 --> 00:24:08,563
+Seviye tetiklemeli çalışan leçler kullanırsak, ardışlı devlet tasarımında hafıza elemanı olarak, bu durumda biz yanlış çıkışlar üreteceğiz. Yanlış çıkışlar başka girişleri etkileyecek çünkü geri beslemeli sistemler var. Dolayısıyla istenmeyen sonuçlar doğabilir.
+
+116
+00:24:08,563 --> 00:24:20,403
+Bunun önüne geçmek amacıyla, ardışlı devlet tasarımındaki bizim kullandığımız hafıza elemanları, flip-flop elemanları oluyor. Çünkü, clock işareti senkron olarak örneğin...
+
+117
+00:24:20,403 --> 00:24:23,203
+Gelmeden önce bütün girişlerdeki değerler hazır bulunuyor.
+
+118
+00:24:23,663 --> 00:24:45,823
+Block işareti anlık olarak vurduğunda yükselen kenar veya düşen kenar olarak vurduğunda ise bunun etkisi çıkışlara aktarılıyor ve mevcuttaki girişlerin, yani değişen çıkışların, değişen çıkışların tekrar giriş olarak geri beslemesine kadar geçen sürede bu yükselen kenar etkisi kalktığı için devrede bozucu bir etki oluşmuyor.
+
+119
+00:24:45,823 --> 00:24:48,223
+Dolayısıyla senkron artışın devre tasarımında.
+
+120
+00:24:48,403 --> 00:25:01,183
+Veyahut da ardışlı devre tasarımında tercih etmiş olduğumuz hafıza elemanları flip-floplar olmuş oluyor. Bu flip-flop elemanlarına ilişkin olarak hatırlamamız gereken yapıları şöyle çizerek gösterelim.
+
+121
+00:25:02,364 --> 00:25:15,723
+Örneğin, ilk başta SR elemanını görmüştük. Bunun için bir klok işaretimiz var. Klok işaretinin yükselen kenarda. Bunları aslında içeri çizmeyi daha çok tercih ediyorum. Yine öyle yapalım.
+
+122
+00:25:20,243 --> 00:25:28,104
+İşte Q'muz ve Q üstümüz olacak. Q üstü yuvar şeklinde çizdim. Gösterirken de bir yuvarlakla belirtiyoruz.
+
+123
+00:25:28,983 --> 00:25:33,864
+S, R ve C işaretimiz var. Şimdi bunun çalışma mantığı az önce gördüğümüz üzere şu.
+
+124
+00:25:34,403 --> 00:25:42,183
+Clock işaretinin sadece yükselen kenarında fonksiyon gösteriyor. Bunun dışındaki durumlarda fonksiyon göstermiyor.
+
+125
+00:25:42,943 --> 00:25:45,104
+4-5 tane senaryo çizeceğim.
+
+126
+00:25:46,836 --> 00:25:54,695
+4, bir de diğer diyeyim şuraya. Yükselen kenar haricindeki herhangi bir durumda ise bir değişiklik olmayacak.
+
+127
+00:25:56,495 --> 00:26:08,655
+Svr girişlerimiz var. Bir de Q'muz var. Eğer ki Svr değerimiz 0,0 uygulanmışsa buraya küçük Q yazıyorum. Bunun anlamı küçük Q.
+
+128
+00:26:11,347 --> 00:26:21,228
+T-1 anındaki durumu ifade ediyor. Büyük Q ise sonraki durumu T-1 de demeyelim hatta ona. Önceki diyelim.
+
+129
+00:26:22,228 --> 00:26:26,847
+Karışmaz. Bu önceki durumu ifade ediyor. Büyük Q ise
+
+130
+00:26:27,667 --> 00:26:41,667
+Sonraki durumu ifade etsin. Tüm gösterimlerde bu şekilde kullanacağız bunu. 0, 0 ise SR'de ve yükselen kenar vurmuşsa bu durumda önceki durumunu koruyor. 0, 1 de ne yapıyordu? 0, 1 de şöyle bir kopya çekelim. Ne yapıyordu?
+
+131
+00:26:43,847 --> 00:26:53,747
+Nerede? S'nin 0, R'nin 1 olduğu durumda 0 olarak resetliyordu. 1, 0 olduğu durumda 1'liyordu.
+
+132
+00:26:54,387 --> 00:27:02,567
+Bir bir durumu izin verilmeyen bir durum. Çünkü bu mantık çerçevesinde ben Q ve Q üstünü üretemiyordum orada.
+
+133
+00:27:03,227 --> 00:27:10,267
+Diğer clock işaretinin diğer durumlarında ise herhangi bir değişim olmuyor. Önceki durum korunuyor.
+
+134
+00:27:10,907 --> 00:27:16,607
+Bu SR flipflopumuz bu şekildeydi. Bunun üzerine bir JK flipflopu tanımlayabiliriz.
+
+135
+00:27:17,507 --> 00:27:19,947
+Hatırlayacak olursanız birazcık daha bir şeyden.
+
+136
+00:27:24,115 --> 00:27:26,496
+Yine iki girişi olan bir flip-floptu.
+
+137
+00:27:33,203 --> 00:27:40,203
+Q'su, Q'su, J'si, K'sı ve C'si.
+
+138
+00:27:41,644 --> 00:27:45,064
+Şimdi bunda da bu sadece yine yükselen kenarda tetikleme oluyor.
+
+139
+00:27:45,203 --> 00:27:48,324
+Yani artık tablonun C sütununu çizmeyeceğim.
+
+140
+00:27:49,163 --> 00:27:51,943
+J, K ve Q olarak çizeceğim.
+
+141
+00:27:52,983 --> 00:27:57,884
+Burada J ve K değerlerinin durumuna göre J ve K eğer 0, 0 ise
+
+142
+00:27:58,355 --> 00:28:17,076
+Bu filipilog mevcut durumunu koyuyordu. 0-1 ise sıfırlama yapıyordu çıkışını. 1-0 ise birleme yapıyordu. 1-1 girişleri uygulanmış ve bu durumda clock cycle yükselen kenara gelmişse de önceki durumun D ilini çıkışta oluşturuyordu.
+
+143
+00:28:18,296 --> 00:28:25,355
+Bunun haricinde bir başka filipilogumuz D filipiloguydu arkadaşlar. D filipilogunun işte bir girişi ve bir...
+
+144
+00:28:26,036 --> 00:28:27,336
+Kulak işareti var.
+
+145
+00:28:29,935 --> 00:28:32,655
+Q, Q üstü.
+
+146
+00:28:34,735 --> 00:28:43,776
+Yine C sütununu çizmeyeceğim. Burada da yine kulak işaretinin yükselen kenarında D'deki D ile karşılık Q şu şekilde değişiyor. Yapısını da görmüştük az önce.
+
+147
+00:28:43,776 --> 00:28:45,195
+S'ye.
+
+148
+00:28:46,036 --> 00:29:01,196
+D'ye direkt bağlı, R'ye de D'nin değili bağlı. Dolayısıyla bu çalışma mantığında ne görüyorsak S'deki değerin aynısı, çıkışa aktarılan bir kısıtlamaydı. Dolayısıyla sıfırlama ve birleme yeteneği mevcuttu.
+
+149
+00:29:02,056 --> 00:29:10,675
+Son olarak bir de T flip flop'u vardı, bir de ona bakalım. T flip flop'u da yine tek girişli bir flip flop'tu.
+
+150
+00:29:16,211 --> 00:29:21,991
+T, şu C, Q'umuz var, Q'umuz var.
+
+151
+00:29:23,311 --> 00:29:24,991
+Bunun çalışma mantığı da şuydu.
+
+152
+00:29:26,351 --> 00:29:30,211
+D'den farklı olarak 0 ve 1 durumda.
+
+153
+00:29:30,291 --> 00:29:32,291
+0 da önceki durumunu koruyordu.
+
+154
+00:29:32,971 --> 00:29:37,991
+1 varken yükselen kenar geldiğinde de değilini elde ediyordu, çıkartıyordu.
+
+155
+00:29:38,632 --> 00:29:43,652
+Bu flip-flop'lardaki temel mantık, kullanım mantığı şuydu arkadaşlar hatırlayacak olursanız.
+
+156
+00:29:44,500 --> 00:29:55,500
+Biz bir ağrıçlı devlet tasarım problemini ele aldığımızda bize sözler olarak bir senaryo veriliyor. Bu söz olarak verilmiş senaryo üzerinde ne yapmaya çalışıyorduk?
+
+157
+00:29:57,500 --> 00:30:01,500
+Bu senaryo üzerinde bir durum...
+
+158
+00:30:02,324 --> 00:30:27,564
+Kaç tane hafıza elemanı ihtiyacı var onu belirliyorduk. Bu belirlemiş olduğumuz hafıza elemanı sayısına göre bir durum diagramı çiziyorduk. Durum diagramı üzerindeki geçişleri tanımıyorduk. Girişlerimizle, çıkışlarımızle bunlara göre üstlen belirliyorduk. Durum diagramı tanımıyorduk yani. Sonrasında da bu durum diagramını bir doğruluk tablosuna geçiyorduk. Bu doğruluk tablosuna geçirdiğimiz vaziyet itibariyle bizim.
+
+159
+00:30:28,000 --> 00:30:49,600
+Bilmediğimiz tek şey şu kalıyordu. Kullanacağımız hafıza elemanı sayısı kaçsa işte n diyelim. En adet hafıza elemanının girişine ne bağlanacak bunu bilmiyorduk. Bunu bulmaya çalışıyorduk. Bir de çıkış fonksiyonumuzun hangi bir lojik kombinasyondan oluştuğunu bilmiyorsak onun da tekrar tasarlanması gerekiyor tabii.
+
+160
+00:30:49,600 --> 00:30:51,600
+Peki bu...
+
+161
+00:30:52,596 --> 00:30:59,775
+Çıkış işareti veya hafıza elemanlarının girişlerindeki uçlara bağlanacak olan fonksiyonlar nelere bağlı olabilirdi?
+
+162
+00:31:00,435 --> 00:31:09,675
+Input değerlerimize bağlı olabilirdi ve kullandığımız tüm hafıza elemanlarının geçmiş durumlarına, önceki durumlarına bağlı olabilirdi.
+
+163
+00:31:09,795 --> 00:31:17,655
+Benzer şekilde çıkışta inputlara ve hafıza elemanının geçmiş durumlarına, küçük Q'lara bağlı olarak yazılabilirdi.
+
+164
+00:31:17,655 --> 00:31:20,555
+Dolayısıyla biz bunları aradığımız bir senaryo oluyor.
+
+165
+00:31:20,596 --> 00:31:37,255
+Dolayısıyla doğruluk tablomuz içerisinde önceki durumlar ve girişlere bağlı olarak bunlar inputlarımız, belirlemek istediğimiz fonksiyonlarda flip flokların uçlarına bağlanması gereken fonksiyonlar artı bir de kaç tane çıkışımız varsa onları temsil ediyordu.
+
+166
+00:31:37,255 --> 00:31:46,015
+Bu noktada böyle sözel olarak verilmiş bir problemden bir durum diagramına geçtiğimiz senaryoyu mesela ele alalım.
+
+167
+00:31:46,451 --> 00:31:50,451
+Örneğin, şöyle bir senaryomuz varsa, iki tane durum olsun.
+
+168
+00:31:51,392 --> 00:31:55,491
+İşte, bir geldiğinde buraya geçiyoruz.
+
+169
+00:31:56,432 --> 00:31:58,971
+Sıfır geldiğinde kendi üzerine dönüyor.
+
+170
+00:31:59,951 --> 00:32:02,951
+Ondan sonra yine bir geldiğinde buraya dönüyor.
+
+171
+00:32:03,211 --> 00:32:07,652
+Sıfır geldiğinde kendi üzerine dönüyor gibi bir senaryo olabilir.
+
+172
+00:32:08,291 --> 00:32:11,011
+İşte bu sıfır numaralı A durumumuz.
+
+173
+00:32:11,407 --> 00:32:33,291
+Bu B durumumuz. Yani biz bunu anlatırken, bunu söz olarak çözerken işte iki tane durum üzerinden, iki tane durum üzerinden tanımlamışız. Bunu tasarlarken bir tane hafıza elemanı yetecek. İki tane durum varsa bir tane hafıza elemanı yetiyor. Eğer ki bu durum diagramında da hatırlayacak olursanız çıkışlarımız...
+
+174
+00:32:33,332 --> 00:32:43,032
+Bulunduğumuz duruma ve o durumdaki giriş işaretine bağlıysa, örneğin şöyle yazıyorsak bunları, tamamen atarak yazdım.
+
+175
+00:32:45,252 --> 00:32:50,852
+Eğer bu şekilde göstermemizi gerektiren bir senaryo varsa ki bu senaryoda şu anlama geliyor.
+
+176
+00:32:50,852 --> 00:32:52,932
+Şu bizim inputumuz.
+
+177
+00:32:55,652 --> 00:32:58,052
+Şu bizim çıkışımız.
+
+178
+00:33:01,203 --> 00:33:11,984
+Bunlar da bizim durumlarımız. A ve B'de durumumuz. Dolayısıyla şuradaki çıkış, ben A durumunda olsam bile, A durumunda bekliyorken, daha bir clock işareti gelip de durum değişimi yapmadım.
+
+179
+00:33:12,584 --> 00:33:25,604
+A durumunda bekliyorken, giriş işaretim sıfırken ben sıfır çıkışını göreceğim. Ama giriş işaretimi bire değiştirdiğinde, daha durum değiştirmeden, clock işaretinin yüksel kenara gelmese dahi, ben bir çıkışını görebileceğim.
+
+180
+00:33:25,604 --> 00:33:27,604
+Dolayısıyla buradaki çıkışlarımız...
+
+181
+00:33:28,016 --> 00:33:40,135
+Buradaki Z dediğimiz fonksiyonlar nelere bağlı olmuş oldu? Neyin fonksiyonları? Q'ların fonksiyonu, Q'ilerin fonksiyonu ve aynı zamanda X'li input'umuz, girişim fonksiyonu.
+
+182
+00:33:40,135 --> 00:33:55,576
+Bu tür durum makinelerinin Mili makinesi deniyor hatırlayacak olursanız. Mili makinelerinde temel olarak gösterim bu şekilde olmakla birlikte çıkışlardaki değişimler her zaman için
+
+183
+00:33:55,923 --> 00:34:15,824
+Çıkış değişimleri her zaman sadece durum değişimiyle ilişkili değil, ben belirli bir durumda beklerken girişimdeki bir değişiklik de çıkışımda değişikliğe sebep olabiliyordu. Dolayısıyla bir sonraki klok işaretini gelene kadar ben arada hatalı çıkışlar veya yanlış çıkışlar görebiliyordum. Onu da hatırlatmış olalım.
+
+184
+00:34:20,340 --> 00:34:27,060
+Durum diagram yapısı da şu olabilir. Yine benzer bir senaryo üzerinden gidelim. Hatta aynı yapı olsun.
+
+185
+00:34:28,640 --> 00:34:30,940
+Sıfır geldiğinde kendi üzerine dönüyor.
+
+186
+00:34:33,740 --> 00:34:42,880
+Bir geldiğinde karşı duruma geçiyor. Karşı durumda bir geldiğinde geri geliyor. Sıfır geldiğinde kendi üzerine dönüyor.
+
+187
+00:34:43,327 --> 00:35:04,028
+Fakat burada çıkışlar sadece duruma bağlıysa, yani ben A durumunda beklerken anlık olarak girişimi sıfırdan bire çeksem bile çıkışım değişmeyecekse bu ne demek oluyor? Benim çıkışım durumla bağımlı demek. Dolayısıyla çıkışımı ben şuraya yazabilirim. Çıkış değerimi şuraya yazabilirim.
+
+188
+00:35:04,028 --> 00:35:10,788
+Bu senaryoda ise bizim çıkış değerimiz sadece neye bağlı olmuş oluyor?
+
+189
+00:35:11,284 --> 00:35:36,923
+Durum değişkenlerimize bağlı olmuş oluyor. Yani küçük UI'lere bağlı olmuş oluyor. Bu tür yapılara da arkadaşlar mur makinesi deniyordu. Mur makinesinde önemli özelliklerden birisi tekrar hatırlatalım. Çıkış değerimiz sadece durum değişkeninin kendisine bağlı. Burada A ve B dediğimiz durumları farklı şekilde kodlayabiliriz. Örneğin ilk karar vereceğimiz, ilk göreceğimiz şey iki durum olduğu için bize bir tane hafıza elemanı yeterli.
+
+190
+00:35:39,284 --> 00:36:06,624
+Bu yüzden A'nın ve B'nin kodları şunlar olabilir. A, B diye yazdığında bunların kodları 0, 1 veya 1, 0 diye kodlanabilir. Bunu 1, 0 veya 0, 1 şeklinde kodlamanın sonucuna bağlı olarak durum geçiş fonksiyonların farklılaşabilir. Yani artışlı devre tasarımında farklı durum kodları oluşturmanın devre tasarımına etkisini de incelemişsinizdir diye tahmin ediyorum. Dolayısıyla buradaki farklı kodlar farklı devrelere karşılık gelebilir.
+
+191
+00:36:07,123 --> 00:36:20,143
+Benzer bir durum yine burada da söz konusu olabilir. AB durumları için 0-1 veya 1-0 kodlamasını yapabiliriz. Yine iki durum olduğu için bir tane hafız elemanı yeterli olduğundan dolayı bunu yapmamız mümkün diyebiliriz.
+
+192
+00:36:20,143 --> 00:36:32,143
+Şimdi elimizde bu şekilde iki adet durum diagramı varken yine şeyi atlamış olduk. Bunun arkasında yatan sözler tanımı atlamış olduk ama bu durum diagramları için bunları bir...
+
+193
+00:36:32,208 --> 00:36:35,168
+Ardışı devre tasarımı formatında ele almak istesek.
+
+194
+00:36:35,948 --> 00:36:38,967
+Hani onu nasıl yapabiliriz? Şöyle yapabilir miyim?
+
+195
+00:36:38,967 --> 00:36:39,608
+Güne bakalım.
+
+196
+00:36:43,731 --> 00:36:51,811
+Sonrasında rastgele uydurduğumuz bu kapı için, durum diagramı için, boş tarafa alalım.
+
+197
+00:36:57,460 --> 00:36:58,659
+Tekrar deneyeceğim.
+
+198
+00:37:12,755 --> 00:37:23,855
+Şöyle bir boşluğa doğru alalım. Şimdi elimizde böyle bir durum diagramı oluşturmuş olalım. İki tane durumumuz var. Durumlarımızın kodlarını da şöyle verelim yanlarına. Buna mesela sıfır kodu demiş olalım.
+
+199
+00:37:23,855 --> 00:37:34,235
+Yani şu daha büyük orta. Bunu sıfır durumu olarak kodlamış olalım. Bunu da bir durumu olarak. Hatta şöyle yapalım.
+
+200
+00:38:15,315 --> 00:38:22,195
+Bağlantı kopya tekrar geri bağlandım. Okuldayım. Şu anda arada bağlantı kesiliyor.
+
+201
+00:38:26,579 --> 00:38:30,619
+Herkes gelebildi mi? Evet, elbiyede. Zaten tek ben düştüm, çık geldim.
+
+202
+00:38:32,019 --> 00:38:41,200
+Şimdi bizim aradığımız şey şu. Biz örneğin bu devreyi işte T flip-flop ile gerçekleyecek olalım.
+
+203
+00:38:42,039 --> 00:38:46,639
+Böyle bir senaryo kendimize koyalım. Daha sonra aynısını D flip-flop ile yapalım.
+
+204
+00:38:46,639 --> 00:38:53,940
+Ve bir de JK flip-flop ile bunu yapmaya çalışalım.
+
+205
+00:38:55,699 --> 00:39:07,299
+Bir devre, üç farklı tasarım olarak ortaya koymaya çalışalım. Bizim bu mantıkta, bu çerçevede bulmamız gereken şeyler şunlar oluyor arkadaşlar.
+
+206
+00:39:07,980 --> 00:39:19,139
+Birincisi bir T filipflop kullanacaksak, T'nin, T ucunun, işte F1 diyelim, Q, Q'da T'nin çıkışı yani.
+
+207
+00:39:20,244 --> 00:39:38,884
+Q çıkışı ve bir tane girişimiz var. Bu girişe de X diyelim. X cinsinden bulunması gerekiyor ve aynı zamanda bizim bir de çıkışımız var. Z çıkışımız var. Z çıkışımızın da buna da G1 diyelim. Q ve X cinsinden bulunması gerekiyor.
+
+208
+00:39:40,324 --> 00:39:44,003
+Burada yapacağım işlem bu. Veya D fili filopla yapacaksa.
+
+209
+00:39:44,179 --> 00:39:55,199
+D, filipülo bunun ucuna bağlanması gereken F2 fonksiyonunun, ki bu F2 fonksiyonu D'nin çıkışı Q ve girişimiz olan X'e bağlı bir şey olacak. Ne olduğunu bulmamız gerekiyor.
+
+210
+00:39:55,759 --> 00:40:05,459
+Veya benzer şekilde devre çıkışı olan Z'nin, G2 diyeyim buna da, yine Q ve X cinsinden bulunması gerekiyor.
+
+211
+00:40:05,459 --> 00:40:08,919
+Aynı şey JK için geldiğimizde de şöyle bir senaryo var bu sefer.
+
+212
+00:40:09,396 --> 00:40:21,856
+J kafili filobuna geldiğimizde biz J'yi de bilmiyoruz, K'yı da bilmiyoruz, Z'yi de bilmiyoruz. Bunların her birisinin işte F3, Q, X olarak bulunması lazım.
+
+213
+00:40:22,036 --> 00:40:36,036
+İşte K'nın G3, Q, X olarak bulunması lazım ve benzer şekilde Z'nin de H3, Q, X cinsinden yazılması gerekiyor. Bunları yazmamız gerekiyor.
+
+214
+00:40:36,500 --> 00:40:49,079
+Şimdi bizim mevcut da devre kurduğumuzu düşünelim tasarım aşamasında. O anda devre üzerinde bulunan değerler küçük Q'ya tekabül ediyor. Büyük Q.
+
+215
+00:40:49,552 --> 00:40:55,652
+Kulak işareti geldikten sonra flip-flop'un çıkışında oluşacak değer ama daha kulak işareti gelmedi.
+
+216
+00:40:56,012 --> 00:41:01,632
+Büyük Q buna tekabül ediyor. Küçük Q dediğimiz şey ise kurmuş olduğumuz bir ardışıl devre var.
+
+217
+00:41:01,751 --> 00:41:11,251
+Bu ardışıl devrede hafıza elemanlarının çıkışları mevcutta devrede bulunan, uzun süredir bulunan değerler küçük Q'lara tekabül ediyor.
+
+218
+00:41:11,251 --> 00:41:12,812
+Dolayısıyla biz burada...
+
+219
+00:41:12,820 --> 00:41:18,480
+Örneğin, durum diagramını bir doğrulu tablosuna geçirmek istediğimizde şunları yapmalıyız.
+
+220
+00:41:18,480 --> 00:41:30,180
+Bir, bizim bulunabileceğimiz tüm input durumlarına ve tüm küçük Q durumlarına karşılık biz bir sonraki durumlar nedir, yani büyük Q nedir onu yazacağız.
+
+221
+00:41:31,260 --> 00:41:33,480
+Daha sonrasında...
+
+222
+00:41:33,940 --> 00:41:54,279
+Küçük Q'dan kullanacağımız flip-flop'a göre ilgili küçük Q'dan büyük Q'ya geçişi sağlayacak şekilde mesela T ucuna sonra eğer D flip-flop kullanacaksak D ucuna veya JK flip-flop kullanacaksak J ve K uçlarına
+
+223
+00:41:54,900 --> 00:42:14,279
+Hangi lojik değerlerin gelmesi gerektiğini bulacağız? Nereden bulacağız bunu? İşte bu durum diagramını tabloya geçirdiğimizde X, küçük Q ve büyük Q satırları sütunları da olmuş olacak. Bu sütunlardan küçük Q ve büyük Q'ya ve yukarıda az önce yazmış olduğumuz durum geçiş tablolarına bakarak, fülükloklar için.
+
+224
+00:42:15,507 --> 00:42:38,447
+Küçük Q'dan büyük Q'ya geçiş sağlayan T değerleri veya D flip-flopsa D veya Jk değerleri nedir? Onları tespit etmiş olacağız. Bir de bizim Z değerimiz var. Z değeri de bulunmuş olduğumuz duruma küçük Q'ya ve o andaki X değerine göre farklılık göstermiş olacak. Onlar da şurada görmüş olduğunuz çıkışlarla temsil edilmiş olacak.
+
+225
+00:42:43,507 --> 00:42:59,447
+Geri kalan her bir sütunu ise kullanacağımız flip floba ve küçük Q, büyük Q geçişine göre dolduracağız. Z'yi yine durum diagramından dolduracağız. Daha sonra şurada görmüş olduğunuz bütün fonksiyonları hesaplamaya çalışacağız.
+
+226
+00:43:03,840 --> 00:43:11,660
+Alternatifleri hangileri olabilir? İşte sıfıra sıfır olabilir, sıfıra bir olabilir, bire sıfır olabilir ve bire bir olabilir.
+
+227
+00:43:12,628 --> 00:43:32,128
+Şimdi bakalım ben 0 durumundayım. 0 durumundayken bana x eşittir 0 değeri geldi. Kendi üstüne dönüyor. Clock işareti geldiğinde büyük yullanımı oydu. Clock işareti geldiğinde 0 durumundan 0 girişi gelmişken clock işareti gelmişse hangi duruma giderim? Tekrar 0 durumuna giderim.
+
+228
+00:43:32,403 --> 00:43:54,704
+Bir durumundayım, sıfır geldi. Bir durumdayken sıfır geldiğinde bir sonraki clock işareti geldiğinde hangi duruma geçeceğim? Bir durumuna geçiyormuşum. Sıfır durumundayım, bir geldi. Sıfır durumundayım, bir geldi. Clock işareti vurursa nereye geçerim? Bire geçerim. Bir durumundayım, bir geldi. Bir geldiği vakit clock işareti de vurursa sıfır durumuna geçerim.
+
+229
+00:43:55,155 --> 00:44:08,975
+Dolayısıyla burada görmüş olduğunuz durum tablosunun bu şekilde bir karşılığı var. Yine durum tablosuna ilişkin dolduracağımız değerler var ise var zaten. Onu da aslında şöyle yapsam daha anlamlı olabilir. Eğer yapabilirsek bakalım.
+
+230
+00:44:23,699 --> 00:44:25,399
+Daha, yine başaramadım.
+
+231
+00:44:34,516 --> 00:44:36,556
+Meneğinde işten meyatı çalışanlar.
+
+232
+00:44:44,628 --> 00:44:51,608
+Neyse, kalsınlar. Çok önemli değil. Yani Z'yi de durum diagramına göre doldurduğumuzu şaşırmayalım. O önemli.
+
+233
+00:44:52,568 --> 00:44:55,728
+0 durumundayım. 0 girişi geldi. Çıkışımız 0.
+
+234
+00:44:57,088 --> 00:45:02,467
+1 durumundayız. 1 durumundayız. 0 girişi geldi. Çıkışımız 1.
+
+235
+00:45:04,447 --> 00:45:09,527
+0 durumundayız. 1 girişi geldi. 0 durumundayız. 1 girişi geldi. Çıkışımız 1.
+
+236
+00:45:11,027 --> 00:45:14,027
+Bir durumundayız. Bir girişi geldi. Çıkışımız sıfır.
+
+237
+00:45:16,788 --> 00:45:22,748
+Şimdi burada aslında, evet, girişe ve çıkışa bağlı olarak yazabileceğiz. Sıkıntı yok.
+
+238
+00:45:23,607 --> 00:45:30,467
+Şimdi şeye gelmemiz lazım. Şurada T filipflop'la bunu yapacaksak. T filipflop'un tanımantısı neydi?
+
+239
+00:45:31,427 --> 00:45:34,507
+Önce D ile yazalım. Önce D ile yazalım. D daha kolay.
+
+240
+00:45:35,411 --> 00:45:40,751
+0 varsa 1 varsa, 0 varsa clock işareti yükselen kenarına çıkışta 0 örtüyor, 1 varsa 1 örtüyor.
+
+241
+00:45:41,391 --> 00:45:50,152
+Biz istiyoruz ki mevcut durumda 0 var, clock işareti vurduktan sonra tekrar 0'a geçelim. Bu hangi D girişiyle sağlanır?
+
+242
+00:45:53,251 --> 00:46:00,851
+Aslında bizim şu flip flop'a göre şunu yazmamız lazım. D flip flop'u için küçük Q ya büyük Q
+
+243
+00:46:02,068 --> 00:46:19,968
+Hangi D değerinde sağlanır? 0, 0 geçişini sağlayan, 0, 1 geçişini sağlayan, 1, 0 geçişini sağlayan, 1, 1 geçişini sağlayan D değerlerini istiyoruz. Nasıl yapacağız? 0'dayım, 0'a geçmemi sağlayan. Hangi D'de geçerim 0'a? 0'dan 0'a hangi D'de geçerim?
+
+244
+00:46:20,668 --> 00:46:21,288
+0'la.
+
+245
+00:46:21,668 --> 00:46:25,148
+0'la geçeriz. 0'dan 1'e hangi D ile geçerim?
+
+246
+00:46:26,528 --> 00:46:26,748
+1.
+
+247
+00:46:27,628 --> 00:46:28,248
+1 ile.
+
+248
+00:46:28,755 --> 00:46:30,795
+1'den 0 hangi D ile geçerim?
+
+249
+00:46:32,956 --> 00:46:33,596
+0.
+
+250
+00:46:34,099 --> 00:46:55,599
+Bu da sonuncusu da birdenbire bir ile geçelim. Aslında şuradaki tanım bağımsızından hatırlayacağımız şey, D'de ne varsa Q'da ne oluyorsa, küçük Q'dan büyük Q'ya geçirecekken beni D'de ne olması gerektiğini araştırıyorsam, büyük Q'da ne varsa, büyük Q'da ne oluşmasını istiyorsam, D'ye onu vermeliyim şimdi zaten. O çıkıyor ortaya.
+
+251
+00:46:55,839 --> 00:47:02,099
+Dolayısıyla sıfırdan sıfırı gerçeklemek adına benim D'de sıfır değerini hazırlamam gerekiyor. Şunları da...
+
+252
+00:47:02,099 --> 00:47:12,099
+NAT olarak algılamayalım diye şöyle bir sileyim de bunlar sadece kim hangi gruba dahil onu belirtmek için de karışması.
+
+253
+00:47:12,799 --> 00:47:18,059
+Birdenbire geçişi sağlayan şey değil. Yani ben burada büyükçuğda ne varsa aynısını çizdim.
+
+254
+00:47:18,959 --> 00:47:25,499
+Şimdi aynı şeyi bu arada şu tabloya ters dönüşüm tablosu deniyor.
+
+255
+00:47:26,036 --> 00:47:36,696
+Aynı şeyi gelelim bu sefer T flip-flop için yapalım. T flip-flop için yaparken de bu D'ninki burada kalsın. Şunu sileyelim.
+
+256
+00:47:46,739 --> 00:48:03,480
+T'ninki nasıl çalışıyordu? T'ye Q dediğimizde, işte sıfır varsa küçük Q korunuyordu, bir varsa D'li çıkıyordu. Dolayısıyla biz aynı tabloyu bu sefer T'ye Fünkülök için yapacak olsak, küçük Q'ye büyük Q.
+
+257
+00:48:04,115 --> 00:48:20,235
+Hangi T durumunda sağlanır araştırıyoruz. 0'a 0, 0'a 1, 1'e 0, 1'e 1 diyelim. Bu tabloya göre 0'dan 0'ı geçişe sağlamak için ne demek bu? Küçüklüğüm 0'mış. Sonra T ucunda bir değer oluşturmuşum.
+
+258
+00:48:20,355 --> 00:48:27,255
+Clock chart'in yüksel kenara gelmiş ve tekrar 0'a dönmüşüm. Ne demek bu? 0'sa, küçük gü 0'sa.
+
+259
+00:48:27,599 --> 00:48:35,960
+Ve tekrar küçük Q değişmeden kalırsa bu benim aradığım senaryo. Dolayısıyla T ucunda 0 olmalı ki bunu sağlayabilelim.
+
+260
+00:48:36,579 --> 00:48:44,239
+0'dan 1'e geçiş yani değil o almak. Değil hangi durumda oluşuyor? T ucunda 1 varsa. 1'den 0. Aynı şey burası için de geçerli.
+
+261
+00:48:44,239 --> 00:48:55,199
+Bir durum değişimi varsa bu ancak T'de 1 varken olur. 1'den 1'e geçmiş, durumu değişmemiş. Dolayısıyla T eşittir 0 iken sağlanabilecek bir senaryo. Dolayısıyla bunu da
+
+262
+00:48:55,472 --> 00:49:01,772
+oluşturmuş olduk. Şimdi gelelim, eğer T fili flokla çalışıyor olsaydı, T ucuna hangi lojik fonksiyonlar bağlanmamıydı diye bulalım.
+
+263
+00:49:02,432 --> 00:49:14,672
+0'a 0 için 0'a 0 için 0 vermeliymişiz. Durum değişimi olmuş, 1 vermeliymişiz. Durum değişimi olmuş, 1 vermeliymişiz. Durum değişimi olmamış, 0 vermeliymişiz.
+
+264
+00:49:14,672 --> 00:49:20,592
+Bunu elde ediyoruz. İkinci satırda durum değişimi yoktu, 1 vermin CK.
+
+265
+00:49:21,588 --> 00:49:48,208
+İkinci satır. Küçük Q'da bir, büyük Q'da bir, bir verdiniz TV. Büyük tabloda. Büyük şu tabloda mı? Yok sağdaki esas hem T hem D hem JK filetları. Şurada. Durum değişimi yoktu. Durum değişimi yoktu. Yanlış yere bakmışım. Teşekkür ederiz uyarı için. Birdenbire durum değişimi yoktu.
+
+266
+00:49:48,755 --> 00:50:06,076
+0'dan 1'e durum değişimi var. 1'den 0'a durum değişimi var. Bu şekilde güncelledik. Şimdi JK için bakalım. JK'nın tanım mantısını yine oluşturmak adına şuradaki durum tablosunu verelim. Daha sonrasında da ters dönüşüm tablosunu hesaplamaya çalışalım.
+
+267
+00:50:11,155 --> 00:50:20,996
+CK'ya Q. Az önce yazdığımız şeyi tekrar yazacağız. 0, 0, 0, 1, 1, 0 ve 1, 1. CK değerleri için Q nasıl değişiyordu?
+
+268
+00:50:21,476 --> 00:50:28,615
+0, 0 varsa küçük Q, 1, 1 varsa Q üstü. 0, 1 varsa 0 diyordu. 1, 0 varsa 1 diyordu.
+
+269
+00:50:28,615 --> 00:50:30,936
+Buna göre bizim aradığımız şey yine.
+
+270
+00:50:31,380 --> 00:50:46,980
+Küçük Q'ya büyük Q geçişini hangi JK değerleri için sağlarız diye bakmak. 0, 0, 0'dan 1 durumuna geçersiz. 1'den 0'a geçerken ve 1'den 1'e geçerken ne oluyor diye bakalım.
+
+271
+00:50:47,559 --> 00:50:51,259
+Bunu da şöyle tekrar kutu içine alalım. Bunda yine ters dönüşüm tablosu olacak.
+
+272
+00:50:53,539 --> 00:50:56,059
+Hiçbirine yazmamışız. Bunda yazılı kalmış olması gerekiyor.
+
+273
+00:50:56,884 --> 00:51:22,663
+Şimdi bu durumda sıfırdan sıfıra geçişi arıyoruz. Küçük Q sıfırmış, büyük Q sıfır olacak. Hangi durumda olabilir bu? Ya küçük Q sıfırsa sonraki durumu sıfırladığımız senaryoda olabilir veya küçük Q zaten sıfırda durumunu korurken olabilir. Dolayısıyla şu iki satırda olabilir. Küçük Q sıfırdan büyük Q'nun tekrar sıfıra geçebilmesi bu iki durumda olabilir. Buna göre J kesinlikle sıfır olmalı.
+
+274
+00:51:23,347 --> 00:51:44,347
+J'nin sıfır olması yeterli. K sıfır da olabilir, bir de olabilir. Bu bizi sıfırdan sıfıra geçiş sağlayan senaryo. Sıfırdan bir için bakalım. Sıfırdan bir için bakarken bu sefer şöyle bakacağız. Sıfırdan bire geçiş için. Bir kere durum sıfırdan bire dönmüş. Dolayısıyla...
+
+275
+00:51:44,896 --> 00:52:11,536
+Durumum sıfırken bunun değilini alan senaryo benim aradığım durumlardan birisi olur. İkincisi de madem durumum sıfır bunu değil alarak değil de 1'e set ederek de yapabilirim. Dolayısıyla şu iki satır benim aradığım sunuş. Burada J kesinlikle 1 olması lazımmış. K ne olursa olsun J 1 olduktan sonra bu geçişi veriyor bana. Yine 1'den sıfıra geçişe bakalım. 1'den sıfıra geçiş bir değil almayla olabilir.
+
+276
+00:52:12,896 --> 00:52:40,655
+Gördüğüm durumlardan birisi şu son satırarak tekabül ediyor. İkinci durum da birden sıfıra geçiş. İlk duruma bakmaksızın sıfırlayan senaryo olabilir. Burada da K'nın bir olması kesin olarak gereklilik. Y don't care olarak davranıyor. Tek durum kaldı o da sıfıra X zaten. Onu da görelim ama. Birden bire geçiş hangi senaryoda sağlanır? Ya ilk satırda sağlanabilir veyahut da üçüncü satırda sağlanabilir.
+
+277
+00:52:40,896 --> 00:52:50,916
+1'miş, mesela 1'miş, bir önceki duruma bakmadan yine 1 olarak bırakıyor. Dolayısıyla 1 ve 3. satırdan K0 olacak, J don't care olabilir.
+
+278
+00:52:51,916 --> 00:52:58,615
+O zaman şimdi buradaki durum geçişlerine bakalım. 0'a 0, 0'dan 0'a bir geçiş var. 0'a X için sağlanıyormuş.
+
+279
+00:52:59,556 --> 00:53:07,236
+Sonrasında ne var? 1'e 1 durum var. 1'e 1, X'e 0 ile sağlanıyor. X'e 0, 0'a 1 var.
+
+280
+00:53:08,083 --> 00:53:28,864
+0'a 1, 1'e x ile sağlanıyormuş. 1'e x ile sağlanıyor. Son olarak 1'e 0 var. 1'e 0 da x'e 1 ile sağlanıyormuş. x'e 1 ile sağlanıyormuş. Bu şekilde tablomuzu oluşturduktan sonra bir sonraki adımımız arkadaşlar bunu bu fonksiyonları hesaplamak olacak. Fonksiyonları hesaplarken de şöyle yazalım.
+
+281
+00:53:29,311 --> 00:53:36,711
+Örneğin, Z fonksiyonunu yazacak olursak, neye bağlıydı Z? Q'ya ve X'e bağlı olarak Z fonksiyonu nedir?
+
+282
+00:53:38,511 --> 00:53:50,831
+Yani şey olduğu için karnomep yapmaya gerek kalmadı ama normalde 2'den fazla Q'ların ve X'lerin toplamı 2'den fazla olduğu vakit karnomepte görmek daha pratik oluyor, hatırlayacak olursanız.
+
+283
+00:53:50,831 --> 00:53:52,911
+Bu noktada ne yapmalıyız?
+
+284
+00:53:55,411 --> 00:53:57,331
+X ve Q'nun XOR.
+
+285
+00:53:58,072 --> 00:54:07,612
+Evet. X, XOR, Q diye yazabiliriz. Ne olmuş bakın? Farklı derken 1 olmuş, aynı derken 0. Bu zaten XOR'un tanımıydı.
+
+286
+00:54:08,152 --> 00:54:18,891
+Çıkışımız bu şekilde. Küçük Q ve X cinsinden yazdık. Eğer ki T fili flokla yapıyor olsaydık, bu durumda ne diyeceğiz? T fili flokla yapıyor olsaydık, T neye bağlı?
+
+287
+00:54:20,012 --> 00:54:20,731
+X'e.
+
+288
+00:54:21,619 --> 00:54:38,699
+Bakalım. X'de ne varsa T'de de aynısı çıkmış. Dolayısıyla T dediğimiz şey X ile aynı. Eğer ki biz D flip-flop ile yapıyor olsaydık, kodumu da ne yazacağız? Yine bir XOR çıkıyor görüyorsunuz. X, XOR, Q.
+
+289
+00:54:39,635 --> 00:54:44,355
+Eğer ki JK ile yapıyor olsaydık, J fonksiyonumuz neye eşit olacakmış bakalım.
+
+290
+00:54:44,975 --> 00:54:47,695
+Şimdi burada belki bir indirgeme durumu bulabiliriz.
+
+291
+00:54:48,135 --> 00:54:55,975
+Mesela şu X'i 1 olarak kabul etsem, tabloya koysak, karnometre koysak daha pratik olur ama.
+
+292
+00:54:56,596 --> 00:55:02,576
+Mesela ben bunu 1 olarak kabul etsem, bu durumda J dediğim şey X'e eşit oluyor gördüğünüz gibi.
+
+293
+00:55:02,635 --> 00:55:04,475
+Dolayısıyla bunu X olarak alabilirim.
+
+294
+00:55:04,851 --> 00:55:19,211
+Son keyerlerden birini belirleyerek yaptım. Diğer durumda da ne yapabiliriz mesela? Şunu 1 olarak kabul etsek ne olur? Bozuyor mu? O öyle bir durum yokmuş.
+
+295
+00:55:20,392 --> 00:55:27,811
+Yine şuradaki x'i 1 olarak kabul edelim. Şuradaki x'i 1 olarak kabul edelim. Yine k'da x'e eşit olsun mesela.
+
+296
+00:55:29,844 --> 00:55:39,844
+Böyle bir senaryo elde ettik. Şimdi buradan sonra izleyeceğimiz adımda bu doğruluk tablosu fonksiyonları elde ettik. Bunun tasarımının gerçekleştirilmesi.
+
+297
+00:55:41,184 --> 00:55:54,304
+Mesela üç tane senaryomuz olacak. Birinci senaryomuz D filipilobu kullandığımız senaryo olsun. Elimizde bir tane D filipilobumuz var. Bunun D girişi ve CLOB girişi var. Bir de Q çıkışımız var.
+
+298
+00:55:54,963 --> 00:56:00,963
+Şöyle küçük bir de Q üstü var. Q üstünü kullanmadığımız için koymaya gerek yok belki.
+
+299
+00:56:03,244 --> 00:56:16,784
+Bir de X girişimiz var. Z çıkışımız var. Bir tarafta da Z çıkışımız var. Z çıkışımız neye eşitmiş? Hepsi birbirine eşit aslında. Dolayısıyla şöyle bir şey yapacağız.
+
+300
+00:56:17,963 --> 00:56:22,324
+X'i şu tarafa alacağım. Daha pratik olacak.
+
+301
+00:56:23,476 --> 00:56:31,056
+X ile devrenin o andaki çıkışı, X zorlanmış hali bize Z çıkışını veriyor.
+
+302
+00:56:31,655 --> 00:56:44,816
+Aynı zamanda bu bir sonraki durumu da belirlediği için şu şekilde bir bağlantı yaparak bu koymuş olduğumuz durum diagramına ilişkin devre tasarımı D flip-flop ile gerçeklemiş olduk.
+
+303
+00:56:45,331 --> 00:56:55,011
+Şurada bir değişiklik yaparak bir sonuç elde edebiliyor muydur? Bir ona bakalım. Belki ikisi başka yerden alsak farklı bir şey olur mu? Tekrar bir kontrol edelim.
+
+304
+00:56:59,764 --> 00:57:25,744
+X nor'lu oluyor. O da aynı karmaşıklıkta zaten bir şey fark etmiyor. İkinci senaryo için bu sefer T flip-flop ile yapmaya çalışsak. Elimizde işte T flip-flop'umuz var. Girişimiz burada. Clock işaretimiz burada. Q ve Q üstü çıkışlarımız mevcut. Ne diyor? Burada yine çıkışımız şeye eşit. İkisi şöyle koyalım.
+
+305
+00:57:29,876 --> 00:57:57,276
+Z'imiz değişmiyor zaten. Dolayısıyla yine bir XOR kapısı koyacağım. Bu bizim Z çıkışımız. Fakat T flip flop'un girişi X'e eşitmiş. Bu devremizin karşılığı böyle olmuş oldu. Üçüncüsü için JK kullanacaktık. JK kullanmanın avantajı ne olabilir arkadaşlar temel olarak? JK'yi niye tercih edebiliriz tasarımlarda?
+
+306
+00:58:07,380 --> 00:58:08,500
+Sadece etmez miyim?
+
+307
+00:58:18,452 --> 00:58:19,771
+Yine benzer şekilde
+
+308
+00:58:26,483 --> 00:58:28,184
+Bizim Z çıkışımız.
+
+309
+00:58:33,780 --> 00:58:47,940
+Bu şekilde tasarımımızı elde etmiş oluyoruz. Yani farklı lojik flokları kullanırken de durum geçiş tablosularından hareketle bunların ters dönüşüm tablolarını bulmak gerekiyor.
+
+310
+00:58:54,132 --> 00:58:56,112
+Bu soruyu kaçırmış mıyız?
+
+311
+00:58:58,932 --> 00:59:01,292
+2-1 geldiğinde UV.
+
+312
+00:59:03,672 --> 00:59:05,332
+Bu herhalde şeyle ilgili miydi?
+
+313
+00:59:06,492 --> 00:59:08,352
+Zek başladığımız için demiş hocam.
+
+314
+00:59:08,752 --> 00:59:11,212
+Zek başladığımız için demiş hocam. Zek'e göre bir durumu tanımlı olduğu için.
+
+315
+00:59:11,212 --> 00:59:12,012
+Tamam.
+
+316
+00:59:15,972 --> 00:59:19,832
+Dolayısıyla tasarımları bu şekilde gerçeklemiş olduk.
+
+317
+00:59:20,159 --> 00:59:45,019
+Bunu genelleştirebiliriz. Farklı daha karmaşık sorular için ortaya koruyabiliriz. Mesela birden fazla durum gerektiren bir senaryo olabilir. Bu birden fazla durum gerektiren senaryolarda ise bizim burada gerçekleştirdiğimiz tasarım senkron artışın devre tasarımı. Dolayısıyla bütün clockların ortak olması lazım. Örneğin bizim yapacağımız devrede bir ikinci JK flip clock daha kullanacak olsaydık.
+
+318
+00:59:45,715 --> 01:00:00,295
+İşte bunların kloklarını ortaklamamız ve klok işaretini ortak olarak vermemiz gerekecekti ki durum geçişlerini biz o durum tablosunda aynı anda olacak şekilde tanımladığımız için bu gerekliydi.
+
+319
+01:00:01,395 --> 01:00:07,016
+Dolayısıyla senkron artışlı devre tasarımının en büyük özelliği olan klok işaretlerinin ortak kaynaklı olması.
+
+320
+01:00:07,827 --> 01:00:09,288
+Önemli bir özellik.
+
+321
+01:00:10,007 --> 01:00:15,268
+Şimdi saat 3 olmuş. Bir ara vereceğim arkadaşlar. Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı?
+
+322
+01:00:17,088 --> 01:00:22,847
+Belki ara sonrasında bu aynı mantığın mur devresine bir bakabiliriz. Yani şu mantığa.
+
+323
+01:00:30,739 --> 01:00:54,379
+Ne farklı olacak burada? Durum geçişleri aynı. Durum geçişleri aynı. Sadece Z fonksiyonu Q'ya bağlı olacak. Z ile Q arasındaki ilişki ne? Buna sıfır, buna bir demiştik. Z Q'ya eşit. Yani biz gelip de bu devrenin mur mantığını kurduğumuzda şöyle bir sonuç olacak mesela. Ve JK için mi yapalım? JK için.
+
+324
+01:01:00,851 --> 01:01:02,092
+Q'ya, Q'yı.
+
+325
+01:01:04,672 --> 01:01:06,492
+X işaretimiz vardı.
+
+326
+01:01:09,152 --> 01:01:11,192
+Normalde X oradan geliyordu.
+
+327
+01:01:12,291 --> 01:01:18,692
+Ama bu mur mantığında Z dediğimiz değer direkt flip flop'un Q çıkışı olacak.
+
+328
+01:01:18,992 --> 01:01:24,632
+X değerimizde yine durum geçişleri aynı olduğu için şu şekilde bir bağlantı sağlamış olacağız.
+
+329
+01:01:24,771 --> 01:01:26,052
+Dışarıdan buna bir tane de.
+
+330
+01:01:26,516 --> 01:01:34,675
+Kulak işareti bağladığımızda bu çıkışa sadece bulunduğumuz duruma bağlı olan bir mur makinesi olarak elde ettiğimiz senaryo olmuş olacak.
+
+331
+01:01:34,796 --> 01:01:43,796
+Burada prensip olarak mili makinesi mantığında oluşturulan herhangi bir akışın mur mantığında oluşturulabilmesi söz konusu.
+
+332
+01:01:43,796 --> 01:01:45,796
+Fakat...
+
+333
+01:01:47,315 --> 01:02:08,815
+Bir loji, mili lojiyi, mur lojiyi ne çevirmek istiyorsak büyük ihtimalle daha fazla sayıda durum tanımlamamız gerekecek. Örneğin mili makinesinde sıfır durumundayken sıfır geldiği durumla bir geldiği durum farklı şekilde davranıyordu. Dolayısıyla onları ayrı birer mur durumu olarak tanımlamamız gerekecektir.
+
+334
+01:02:11,635 --> 01:02:14,535
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı?
+
+335
+01:02:20,596 --> 01:02:37,336
+Lojik devrelerden hatırlıyorsunuz diye tahmin ediyorum. Çünkü cevaplarınız hatırlar şekilde. Belki genel için de söyleyebiliriz diye düşünüyorum. Herkes için söyleyebiliriz diye düşünüyorum.
+
+336
+01:02:38,068 --> 01:02:50,368
+Eğer bu konuları çok hatırlamıyorsak bir lojik devreler dersiyle ilgili notlarımızı tekrar karıştırmakta fayda var. Ama onun dışında temel mantık genel olarak hatırlıyoruz gibi duruyor.
+
+337
+01:02:51,448 --> 01:03:00,048
+Soru yoksa arkadaşlar ben şimdi ara vereceğim. Bir 10 dakika ara verelim. 3'ü 20 geçe devam edeceğiz. 3'ü 20 geçe.
+
+338
+01:03:16,884 --> 01:03:24,183
+Aziz dersi, video açık olarak seyreden nadir arkadaşlardan birisin. Özel bir sebebim mi var?
+
+339
+01:03:26,523 --> 01:03:27,783
+Yok hocam açık kalmış.
+
+340
+01:03:30,884 --> 01:03:34,343
+Tamamdır. 20 geçe dediğim gibi devam et arkadaşlar.
+
+341
+01:14:00,692 --> 01:14:03,611
+Merhaba arkadaşlar, tekrar devam edelim kaldığımız yerden.
+
+342
+01:14:05,431 --> 01:14:10,172
+Şimdi mur makinesine ilişkin örneği biraz daha farklılaştırarak şöyle yapalım.
+
+343
+01:14:11,912 --> 01:14:12,731
+Şuraya alalım.
+
+344
+01:14:13,851 --> 01:14:19,771
+Buradaki örneğimiz şu olsun. Bir senkron ardışın sayıcı yapmaya çalışalım.
+
+345
+01:14:35,380 --> 01:14:38,640
+T fili floplar kullanarak gerçeklemeye çalışalım.
+
+346
+01:14:39,840 --> 01:14:45,560
+Şimdi burada durum diagramını çizecek olsak işte 3 bitlik senkron sayıcı da 0'dan 7'ye kadar sayar.
+
+347
+01:14:46,200 --> 01:14:56,520
+İşte sayma değerimizin 0, 1, 2, 3, 4, 5, 6 ve 7 olduğu durumlarımız var.
+
+348
+01:14:57,540 --> 01:14:58,980
+Bunları yuvarlak içine alalım.
+
+349
+01:14:59,900 --> 01:15:01,220
+Burada girişimiz nedir?
+
+350
+01:15:06,868 --> 01:15:08,747
+Dışarıdan verdiğimiz giriş nedir?
+
+351
+01:15:17,939 --> 01:15:24,239
+0'dan sonra nereye gidecek? Senkron sıralı sayıcı 0, 1, 2, 4, 5, 6, 7, 0, 1, 2, 4, 5, 6, 1'ye sayacak.
+
+352
+01:15:25,299 --> 01:15:35,719
+0'dan sonra 1'e gidecek. 1'den 2'ye gidecek. 2'den 3'e gidecek. 3'den 4'e gidecek. Böyle gidecek.
+
+353
+01:15:36,119 --> 01:15:42,519
+Ama az önce yapmış olduğumuz mur makinesinde mesela dışarıdan bir giriş tanımlamıştık. X girişi. Burada girişimiz ne?
+
+354
+01:15:49,171 --> 01:15:50,811
+Ne olmuş oluyor buradaki girişimiz?
+
+355
+01:15:51,332 --> 01:15:52,572
+Önceki durumu mu oluyordu?
+
+356
+01:15:53,671 --> 01:16:01,912
+Yani daha doğrusu burada dışarıdan bir giriş yok. Burada durum geçişi clock işaretinin gelmesiyle sağlanacak.
+
+357
+01:16:03,051 --> 01:16:09,492
+Dışarıdan gelen girişe bakıp da clock işaretinin geldiği anda girişe göre karar verip başka bir duruma gitmiyor.
+
+358
+01:16:09,492 --> 01:16:13,752
+Yani sıfır durumundaysan clock işareti geldiğinde kesinlikle bire gideceğim.
+
+359
+01:16:14,068 --> 01:16:27,307
+Bir durumdan bir ok çıktığı için dışarıdan bir girişim yok, inputum yok demek. Bu anlama geliyor. Bir mur makinesi mantığında çalıştıracağım için bütün durumları kendi değeriyle kodlayalım.
+
+360
+01:16:27,747 --> 01:16:39,987
+Dolayısıyla, şimdi biz sayıcımızı küçük Q1, Q2, Q1, Q0 diyelim. 3 bitik sayıcı en yüksek anlamda Q2 olacak şekilde verelim.
+
+361
+01:16:40,500 --> 01:16:53,640
+Sonraki durumları da büyük Q2, büyük Q1, büyük Q0 olarak bir sonraki sayı olarak verelim. Çıkışlarımız zaten Z, Q'ya eşit olacak.
+
+362
+01:16:53,880 --> 01:17:04,780
+Dolayısıyla, pardon eşit olmayacak da çıkış değerlerimiz Q'ların her birisi evet eşit olacak. Q'larımızın her birisi çıkış olacak. Yani biz belirli bir durumdaysak.
+
+363
+01:17:05,072 --> 01:17:30,172
+Sayıcımızın çıkışı olarak bu değeri görmemiz gerekiyor. Q'lardaki değeri görmemiz lazım. Bunu T fili flog ile yapacağımızı söylemiştik. T fili flogun ters tanım bağıntısı nasıldı? Küçük Q'ya büyük Q ve T'yi çizdiğimizde eğer durum geçişi varsa ve yoksa ele aldığımız senaryolar oluyordu onda. 1-0 ve 1-1.
+
+364
+01:17:32,148 --> 01:17:47,128
+Durum geçişi yoksa ucuna sıfır gelmiş demektir. Değilini aldığı için bir gelmiş, değilini aldığı için bir gelmiş, durum geçişi olmadığı için sıfır gelmiş. Bunun ters dönüşüm bağıntısı bu şeklindeydi. Bunu da not ettikmiş olalım.
+
+365
+01:17:55,412 --> 01:17:57,311
+Pardon, 4, 8 tane mi olacak?
+
+366
+01:18:13,108 --> 01:18:33,148
+Olası tüm değerleri yazdık. 0'dan 7'ye kadar yazdık. Burası ne olacak? Burası da 0 ise bir önceki durum bir sonraki durum 1 olacak. Dolayısıyla 0, 0, 1, 0, aradaki 0, 1, 0, 2 ise 3 olacak. 0, 1, 1.
+
+367
+01:18:40,275 --> 01:19:07,195
+4 ise 5 olacak, 5 ise 6 olacak, 6 ise 7 olacak, 7 ise ne oluyor? 7 ise de tekrar sıfıra dönüyor. Dolayısıyla dönen bir sayıcımız var. Kaç tane hafıza elemanına ihtiyacımız var burada? 3 tane değil mi? Dolayısıyla bizim T2'miz, T1'miz ve T0'miz var. Bu yukarı yönlü sayıcı.
+
+368
+01:19:07,891 --> 01:19:19,971
+Şimdi küçük Q2, büyük Q2 bakıyoruz. Durum geçişi yok. Dolayısıyla 0. 0'dan 0'a 0. 0'dan 1'e 1. Birinci sayı için bu.
+
+369
+01:19:36,979 --> 01:19:51,659
+İki için yapıyoruz. Sıfıra bir, bir. Şimdi üç ve dört için yapıyoruz. Burada her birisinde durum değişimi olmuş. Dolayısıyla bir, bir, bir. Bu sonraki dört ile beş arasında sıfır sıfır bir olacak.
+
+370
+01:19:55,507 --> 01:20:00,007
+Sonra 5 ve 6 için baktığımızda 0, 1, 1 olacak.
+
+371
+01:20:03,147 --> 01:20:05,987
+6'dan 7'ye geçtiğinde 0, 0, 1 olacak.
+
+372
+01:20:08,807 --> 01:20:11,667
+Son olarak da hepsi 1, 1, 1 olacak.
+
+373
+01:20:13,167 --> 01:20:17,847
+Demek ki bizim burada yapmamız gereken T2'yi Q0, Q1 ve Q2 cinsinden yazmak.
+
+374
+01:20:18,739 --> 01:20:27,699
+İki tane min-turn var, doğru min-turn var. Ama şöyle, T0 için ne diyebiliriz? Bakın, T0 için kolay bir şey söyleyebiliriz.
+
+375
+01:20:31,859 --> 01:20:39,459
+T0 her halükarda Q ne olursa olsun 1 oluyor. T1 için de kolayca söyleyebiliriz.
+
+376
+01:20:42,340 --> 01:20:50,079
+Yani şimdi bunu alsam, karnım hep koysam, o kadar uğraşsam, Q0. Direkt tablodan da görünüyor değil mi? Q0'dan aynı gidiyor.
+
+377
+01:20:51,119 --> 01:20:53,500
+Onu da yazdık. Peki T2 için ne diyeceğiz?
+
+378
+01:20:57,043 --> 01:20:59,844
+Q1 ve Q0'u yazıyoruz belki.
+
+379
+01:21:01,164 --> 01:21:02,324
+Yazalım, görelim.
+
+380
+01:21:03,623 --> 01:21:14,423
+Şu minterm'den gelen Q2, Q1, Q0 artı şu minterm'den gelen 1, 2, 3, 4, 4.ymüş.
+
+381
+01:21:15,844 --> 01:21:17,023
+Yani şurası.
+
+382
+01:21:18,644 --> 01:21:23,783
+Q2 üstü, Q1 ve Q0 mıdır arkadaşlar?
+
+383
+01:21:24,372 --> 01:21:37,731
+Q1, Q0 parantezini alırsam Q2 artı Q2 üstü gider. Q1, Q0 kalıyor. Demek ki T2'nin denklemi de karno vep koyduk ve içten sonra Q1, Q0 olmuş oldu.
+
+384
+01:21:37,731 --> 01:21:46,932
+Bunu şimdi devreye dökelim. Devreye dökerken elimizde 3 tane T filikilop var.
+
+385
+01:21:56,724 --> 01:22:22,123
+Bu bizim T2'miz olsun. Şu T1'miz olsun. Şu da T0'miz olsun. T0'a direkt 1'i bağladım. T1'e ne veriyormuşuz? T1'e Q'nun 0'ı. Yani şunun çıkışını getirip T1'e bağlıyoruz. T2'ye ne bağlıyormuşuz? T2'ye de Q1 ile Q0. Yani şunun çıkışı ile
+
+386
+01:22:22,771 --> 01:22:33,231
+Q0'dan gelen senaryonun end işlemi sonucunu bağlıyormuşuz. Şu şekilde bağlıyormuşuz.
+
+387
+01:22:34,631 --> 01:22:43,612
+Şurada Q var. Q2, Q1, Q0. Bunların klok işaretleri de var.
+
+388
+01:22:46,012 --> 01:22:49,771
+Senkron ardışlı devre tasarımı olduğu için, şöyle farklı bir renk yapalım.
+
+389
+01:22:50,484 --> 01:23:09,604
+Vatandaşların clock işaretlerini alıp, birleştirip, ortak bir saat darbesinden vermemiz gerekiyor. Z'imiz nerede? Bir de Z'yi çizelim. Z dediğimiz şeyde 3 bitten oluşan, yani o da Z2, Z1 ve Z0 oluyor zaten.
+
+390
+01:23:16,212 --> 01:23:29,172
+Z0 çıkışı olarak karşımıza geliyor. Dolayısıyla T fili flok kullanarak senkron artışlı devre tasarım mantığında dışarıdan herhangi bir giriş ihtiyacı duymayan bu devre tasarımı gerçekleştirmiş olduk.
+
+391
+01:23:29,811 --> 01:23:38,852
+Peki burada bir değişiklik yaparak bunu aşağı yönlü sayıcı yapmak istesek neler değişir?
+
+392
+01:23:46,547 --> 01:23:47,667
+Neler değişecek?
+
+393
+01:23:50,108 --> 01:23:52,188
+Sonraki Q'lar değişir değil mi?
+
+394
+01:23:52,627 --> 01:23:53,887
+Büyük Q'lar değişir.
+
+395
+01:23:54,067 --> 01:23:59,887
+Dolayısıyla bu büyük Q'lara karşılık olarak gelen tanımlamalar da değişecek.
+
+396
+01:24:00,067 --> 01:24:01,387
+Yani T uçları da değişecek.
+
+397
+01:24:01,507 --> 01:24:05,007
+Onları da yeniden hesaplayıp devreyi oluşturmamız gerekiyor.
+
+398
+01:24:05,007 --> 01:24:08,880
+Bu mantık arkadaşlar temel olarak bir...
+
+399
+01:24:08,880 --> 01:24:19,579
+Senkron, ardışıl sayıcı tasarımı gerçekleştirmiş olduk. Tf-fluglar kullanarak. Bu noktada bir de asenkron devre tasarımına bir değinelim.
+
+400
+01:24:19,579 --> 01:24:24,860
+Şimdi asenkron devre tasarımına bakarken aslında şunu görmeliyiz.
+
+401
+01:24:29,011 --> 01:24:44,011
+Mesela Q0 için bakalım. Q0 0'mış sonra 1 olmuş, 1'miş 0 olmuş, 0'mış 1 olmuş. Yani her adımda her clock darbesinde toggle ediyor. Her clock darbesinde toggle eden bir bitimiz var.
+
+402
+01:24:44,811 --> 01:24:54,691
+Tek bir flip-flop kullanarak, mesela D flip-floplar veya T flip-flop kullanarak da basit, toggle eden, her clock darbesinde toggle eden bir mantık oluşturabilir miyiz?
+
+403
+01:24:59,796 --> 01:25:13,435
+Tekrar edeyim. Şimdi küçük Q0'la büyük Q0'a baktım. Her clock darbesinde yani her durum geçişinde bir 0 ise 1 olmuş, bir ise 0 olmuş, 0 ise 1 olmuş, bir ise 0 olmuş.
+
+404
+01:25:13,971 --> 01:25:41,111
+Yani her zaman için 0, 1, 0, 1, 0, 1 her sayma adımında 0, 1, 0, 1 diye değişiyor. Zaten 0'dan 7'ye kadar sonra 0'a döndüğümde saymaya en düşük anlamlı bir tabaklım. Bu hep 0, 1, 0, 1, 0, 1 diye gidiyor. Dolayısıyla şöyle bir mantık arıyoruz. Her clock derbesinde toggle edecek bir basit senkron devre mantığı arıyorum. Basit bir senkron devre arıyorum.
+
+405
+01:25:42,003 --> 01:25:59,083
+T veya D flip-floplar için bu kolay. Mesela T flip-flop için düşünelim. T flip-flop için öyle bir mantık söyleyin ki bana. Şuradaki Q, T değerlerimiz var. İşte C değerimiz olsun.
+
+406
+01:26:06,804 --> 01:26:34,103
+Bir clock darbesinde 0 olsun, bir clock darbesinde 1 olsun, bir sonraki clock darbesinde 0, sonra 1. Bu şekilde değişsin. Yani şurada benim clock işaretim de şuysa, bu Q çıkışımız, CLK'mın şöyle olduğunu varsayacak olursam, burada bir yükselen kenar geldi. Daha sonra arada bir düştü kenar. Tekrar yükselen kenarda durum değişimi oldu.
+
+407
+01:26:37,747 --> 01:26:42,887
+Bir daha bir yükselen kenar var.
+
+408
+01:26:42,988 --> 01:26:48,648
+Clock işaretinde böyle iken, Q'nun sürekli toggle ettiği bir versiyon nasıl olabilir?
+
+409
+01:26:49,307 --> 01:26:50,007
+Hangi senaryoda?
+
+410
+01:26:50,507 --> 01:26:52,287
+T'ye bir bağlayabiliriz hocam.
+
+411
+01:26:52,787 --> 01:26:56,127
+Değil mi? T flip flop'un tanım baantısında ucuna bir bağladığımızda,
+
+412
+01:26:56,127 --> 01:27:00,887
+Clock işareti yükselen kenar vurduğunda toggle ettiriyordu zaten, üstünü veriyordu.
+
+413
+01:27:01,007 --> 01:27:02,967
+Dolayısıyla bu şekildeki mantık.
+
+414
+01:27:03,024 --> 01:27:10,243
+Biz burada aslında neyi oluşturmuş olduk? Şu Q çıkışında bizim 3 bitlik sayıcımızın Q0'ını oluşturmuş olduk.
+
+415
+01:27:10,583 --> 01:27:22,283
+Şimdi Q1'i inceleyelim. Q1'i incelediğimizde diyor ki bakın 2 kere 0 gelmiş hatta şöyle diyelim 2 0 gelmiş 2 kere 1 olmuş.
+
+416
+01:27:22,463 --> 01:27:29,104
+2 kere 1 gelmiş 2 kere 0 olmuş. Yani Q1'e baktığımızda da her 2 saat darbesinde 1.
+
+417
+01:27:29,747 --> 01:27:36,667
+Bunda durum değişimi var. Yani öyle bir şey arıyoruz ki bu Q0 ise, şöyle küçük Q olarak çizelim.
+
+418
+01:27:41,747 --> 01:27:59,007
+Küçük Q'muz buyken biz öyle bir şey arıyoruz ki küçük Q'nun iki katı periyotta değişecek. Yani bu bir değişti, iki değişti, şurada bir değişim olacak. Bir değişti, iki değişti, şurada bir değişim olacak. Gibi. Değil mi?
+
+419
+01:28:01,147 --> 01:28:04,807
+Kabaca buna benzer bir şey. Bunu nasıl yapabiliriz?
+
+420
+01:28:06,163 --> 01:28:15,844
+Q0'ın iki katı periyotta toggle eden bir şey arıyorum. Bakın az önce ilk şu Q0 oluştururken aslında ne yapmıştık?
+
+421
+01:28:16,384 --> 01:28:21,463
+Clock işaretinin iki katı periyotta toggle eden bir işaret üretmiştik. Değil mi?
+
+422
+01:28:22,083 --> 01:28:28,443
+Q0 dediğimiz şey, clock işaretinin iki katı periyotta toggle eden bir işaret bu T-fil-flok mantığıyla.
+
+423
+01:28:28,443 --> 01:28:31,243
+Şimdi ne arıyoruz? Şimdi aradığımız şey de...
+
+424
+01:28:31,252 --> 01:28:49,752
+Q0'ın iki katı periyodda toggle edecek Q1 işaretini arıyoruz. O zaman ne olması lazım? Yine aynı mantıkta yükselen kenar bir flip-flop kullanacaksak, Q0'ın yükselen kenarlarında durum değişimi yapacak olan bir Q1'e ihtiyacımız var.
+
+425
+01:28:53,140 --> 01:29:06,400
+Şöyle yapalım. Birinci Q0'ın yükselen kenarında 1'e çıksa, ikincinin yükselen kenarında 0'a çıksa, inse, Q0'ın iki katı periyotta toggle eden bir işaret üretmiş oluruz.
+
+426
+01:29:06,940 --> 01:29:12,119
+Buradan çıkartacağımız sonuç ne olur arkadaşlar? Buradan çıkartacağımız sonuç ne dersiniz?
+
+427
+01:29:12,500 --> 01:29:15,300
+T1'e, clona Q0'ı mı bağlayacağız?
+
+428
+01:29:16,360 --> 01:29:20,440
+Kesinlikle tam olarak bunu elde etmiş oluyorum.
+
+429
+01:29:20,863 --> 01:29:32,503
+O zaman bir ikinci katmanımız var. Bu da T. Bu da yine yükselen kenarda tetikleniyor. Bunun Q'su ve Q üstüsü mevcut.
+
+430
+01:29:34,683 --> 01:29:46,943
+Şuradan çıkan ucum benim Q1 değerim. Hangi şartta? Buradan gelen Q değerim, Q0 değerim. Bunun clock tetiklemesi iken,
+
+431
+01:29:47,731 --> 01:30:07,431
+Ve toggle ettirmek için de T ucuna 1 vermemiz gerekiyordu. T ucuna da 1 verdiğimizde bu sefer Q1'i elde etmiş olduk. Son olarak Q2'ye bakalım. Q2, 1, 2, 3, 4 klok boyunca 1'de kalıyor. Sonra 4 klok boyunca 0'da kalıyor. Yani bunu da şöyle tanımlayabiliriz.
+
+432
+01:30:07,796 --> 01:30:20,655
+Q1'in iki katı periyotta toggle eden bir işaret. Mantığı oturttuk zaten. Dolayısıyla bir sonraki flip flop'umuzu da, T flip flop'umuzu da eğer ki toggle ettireceksek T ucuna bir vereceğiz.
+
+433
+01:30:21,275 --> 01:30:33,115
+Clock ucuna Q1 çıkışımızı, küçük Q1 çıkışımızı bir clock işareti üretecek şekilde bağlarsak burada elde ettiğimiz çıkış da bizim Q2 işaretimiz olmuş olacak arkadaşlar.
+
+434
+01:30:33,492 --> 01:30:55,492
+Dolayısıyla buradaki işaretleri yukarı taşıdığımda Q2, Q1, şuradan da Q0 gelecek. Şurada benim 3 bitlik sayma değerim mevcut olmuş olacak. Bunun çalışma mantığını...
+
+435
+01:30:56,212 --> 01:31:14,532
+Oturtmaya çalışalım. Bir dalga aşaması olarak çizmeye çalışalım. Aslında birazcık onu bulduk ama şimdi nihai hale getirdiğimizde de bakalım doğru bir şekilde çalışıyor mu? Bunu nasıl yapıyorduk? Şuraya gelip buradan değil, şuradan mıydı?
+
+436
+01:31:20,724 --> 01:31:23,224
+Arka plan değiştiriyorduk ya, o nasıl oluyordu?
+
+437
+01:31:29,779 --> 01:31:31,220
+Format big cloud.
+
+438
+01:31:36,467 --> 01:31:38,347
+Şu şekilde gridler olsun. Tamam.
+
+439
+01:31:40,368 --> 01:31:44,268
+Şimdi öncelikle ben bir clock işareti çizeceğim. Clock işaretim şöyle olsun.
+
+440
+01:31:44,548 --> 01:31:48,148
+İşte yükselen kenarda tetiklendikleri için şöyle ikişer ikişer çiziyorum.
+
+441
+01:31:59,859 --> 01:32:15,060
+Burada oluşturduğumuz yapıda arkadaşlar ne olmuş oldu bakın. Her bir flip-flop'un clock işareti farklı bir kaynaktan geliyor. Bir tanesi dışsal saat işaretinden geliyor ama diğerleri de kendinden önce yer alan flip-flop'un çıkışını clock işareti olarak kabul ediyor.
+
+442
+01:32:15,471 --> 01:32:22,511
+Dolayısıyla böyle bir kulak işareti çizmiş olsa bunun yükselen kenarları bizim durum değişimimizin olduğu anlara karşılık gelecek.
+
+443
+01:32:22,792 --> 01:32:24,412
+Hocam bir şey sorabilir miyim?
+
+444
+01:32:24,712 --> 01:32:25,011
+Buyurun.
+
+445
+01:32:25,752 --> 01:32:31,091
+Biz diğer kuluğa Q0'ı, Q1'i bağladık ya.
+
+446
+01:32:31,912 --> 01:32:32,132
+Evet.
+
+447
+01:32:32,372 --> 01:32:34,532
+Q0'ın tersini bağlamamız gerekiyor.
+
+448
+01:32:36,372 --> 01:32:46,492
+Onu bakacağız şimdi. Şu dalga şemasından ne çıkıyor bakalım. Bir geri sayıcı da olabilir. Belki yanlış yapmış olabiliriz. Bir bakalım. Ona göre karar verelim. Olur mu?
+
+449
+01:32:47,891 --> 01:32:48,211
+Olur.
+
+450
+01:32:49,051 --> 01:33:02,832
+Q 0'ı 0'dan başlatalım. Mantık çerçevesinde Q 0'ı 0'dan başlattığımızda klon yükselen kenarında 1'e çıkacak. Ve daha sonra bir sonraki klok darbesine kadar 1'de kalacak. Sonra 0'a inecek.
+
+451
+01:33:03,764 --> 01:33:04,743
+Şöyle gelecek.
+
+452
+01:33:09,363 --> 01:33:18,463
+Durum değişimi nerede oluyor? Kuloğun yükselen kenarında oluyor. Çok mükemmel çizememiş olabilirim ama kabaca bu hizada düşünelim.
+
+453
+01:33:19,243 --> 01:33:29,423
+Benzer şekilde Q0'ın yükselen kenarları bizim Q1 için toggle ettireceğimiz zamanlar olacak. Yine Q1'imiz de bizim 0'dan başlasın.
+
+454
+01:33:46,452 --> 01:33:48,452
+Yine bunun da yükselen kenarlarında.
+
+455
+01:33:52,404 --> 01:33:55,123
+Yükselen kenarlarını bu sefer Q2 toggle edecek.
+
+456
+01:34:01,844 --> 01:34:07,524
+Hallettiğimiz sonuç böyle bir şey. Şimdi baktığımız zaman şöyle ayırırsak bunları.
+
+457
+01:34:31,539 --> 01:34:49,519
+Burada okuttuğu değerler bize ne oluyor? Q2'si 1, Q1'i 1, Q0'ı 1 değil mi? Bu değer 1, 1, 1. 7'den başladı. Bu sayıcımız 7'den başladığı bir versiyon. İleri gidecek olsa ne olurdu? İleri gidecek olsa sıfıra dönmesi lazım.
+
+458
+01:34:49,519 --> 01:34:58,720
+Şimdi bakalım bir sonraki okuttuğu değer ne? 1, 1, 0. Yani 6'ya düştü. Tekrar bakalım burada.
+
+459
+01:34:59,152 --> 01:35:00,452
+1, 0, 1.
+
+460
+01:35:02,631 --> 01:35:04,572
+Şuraya baktığımızda 1, 0, 0.
+
+461
+01:35:08,340 --> 01:35:25,739
+Şurada baktığımızda 0, 1, 1. Şurada baktığımızda 0, 1, 0. Şurada baktığımızda da 0, 0, 1. Demek ki bir sonraki değer olsa orada da 0, 0, 0'a gidecek.
+
+462
+01:35:26,460 --> 01:35:32,059
+Dolayısıyla bizim burada oluşturmuş olduğumuz bu mantıkta yapı özelliği ne olmuş oldu arkadaşlar?
+
+463
+01:35:32,692 --> 01:35:40,692
+Bu geriye doğru sayan asenkron bir ardışıl devre olmuş oldu. Geriye doğru sayan asenkron bir ardışıl devre olmuş oldu.
+
+464
+01:35:41,131 --> 01:35:50,351
+Bunu ileriye doğru yani az önce kim söylemişti? [öğrenci] söylemişti herhalde. [öğrenci]'ın söylediği gibi bu geri sayıcı bir devre olmuş oldu.
+
+465
+01:35:50,351 --> 01:35:58,351
+Bunu ileri sayıcı haline getirebilmek için izleyebileceğimiz yollar arasındaki bir varyasyon şu olabilir.
+
+466
+01:35:58,783 --> 01:36:05,104
+devremizi yükselen kenar değil, düşen kenarda tetikleyerek bir deneyelim ne oluyor.
+
+467
+01:36:06,663 --> 01:36:08,764
+Düşen kenarda ne oluyor diye bakalım.
+
+468
+01:36:08,764 --> 01:36:11,764
+Yine bunun için benzer şekilde...
+
+469
+01:36:26,707 --> 01:36:29,767
+Kulak işaretinin yapısını buraya aldım.
+
+470
+01:36:31,567 --> 01:36:36,807
+Şimdi yaptığımız durum düşen kenarda tetikleme ve düşen kenarları işaretliyorum bu sefer.
+
+471
+01:36:36,947 --> 01:36:46,747
+Şurası bir düşen kenar, burası bir düşen kenar, burası bir düşen kenar, şurada bir düşen kenar var, düşen kenar var, düşen kenar var ve burada da bir düşen kenar var.
+
+472
+01:36:46,747 --> 01:36:52,187
+Şimdi Q0 için bunu çizelim. Q0'ımız yine sıfırdan başlasın.
+
+473
+01:36:54,771 --> 01:37:09,611
+Durum değişimi oldu. Şurada bir durum değişimi oldu. Burada bir durum değişimi var. Durum değişimi var. Durum değişimi var. Durum değişimi var. Durum değişimi var. Gidiyor.
+
+474
+01:37:11,531 --> 01:37:16,291
+Q1 için bakalım. Q1 için de Q0'ın düşen kenarları.
+
+475
+01:37:18,739 --> 01:37:30,079
+Q0'ın düşen kenarları değiştiriyor. Yine 0 ile başlamış olalım. Değişti, değişti, değişti ve bu şekilde gitti.
+
+476
+01:37:30,720 --> 01:37:41,619
+Q2 için de Q1'in düşen kenarları tetikleme oluşturuyor. Yine bu da 0'dan başlamış olsun. 1'e çıktı ve bu şekilde kaldı.
+
+477
+01:37:41,619 --> 01:37:43,739
+Yine bu aralıkları çizelim.
+
+478
+01:37:45,811 --> 01:37:47,151
+Şuradan başlamıştık.
+
+479
+01:38:10,420 --> 01:38:12,220
+Buradaki değerleri yazdıralım.
+
+480
+01:38:15,100 --> 01:38:16,400
+Ne var burada?
+
+481
+01:38:17,500 --> 01:38:23,380
+0, 0, 1 değeri var. Bir önceden başlayalım. Şuradan başlayalım. Hepsi 0'dan başlamıştı.
+
+482
+01:38:24,020 --> 01:38:26,620
+0, 0, 0 durumundan başladık.
+
+483
+01:38:27,180 --> 01:38:28,920
+Buradaki değerimiz 0, 0, 1.
+
+484
+01:38:30,079 --> 01:38:31,260
+0, 0, 1.
+
+485
+01:38:31,760 --> 01:38:36,440
+Buradaki değerimiz 1, 0, pardon 0, 1, 0.
+
+486
+01:38:38,644 --> 01:38:58,664
+Buradaki değerimiz 011. Buradaki değerimiz 10000. Şuradaki değerimiz 101. Şuradaki değerimiz 110. Şuradaki değerimiz de 111.
+
+487
+01:38:59,699 --> 01:39:21,260
+Gördüğünüz gibi bu yaklaşımda da bu sefer up-counter oldu. Yukarı doğru bir sayıcı oldu. Başka ne yapabilirdik? [öğrenci]'ın az önce söylediğini tekrarlar mısın? Bir başka alternatif de şu yapıda yükselen kenarda çizmiş olduğumuz devre asenkron devre şeması için down-counter olmuştu. Bunu tekrar up-counter'a dönüştürmek için başka ne yapabilirdik?
+
+488
+01:39:22,319 --> 01:39:25,960
+Hocam, Q-erslerini bağlayabilirdik, clock'ları.
+
+489
+01:39:26,416 --> 01:39:34,036
+Evet, bir sonuncu, üçüncü alternatifimiz de şu olacaktı arkadaşlar. Şöyle seçerek silebiliyorsam daha iyi olacak.
+
+490
+01:39:45,619 --> 01:40:06,380
+Bir üçüncü alternatifimiz de şu olacak. Burada klok işaretlerine Q'ların D'lerini bağlayarak da benzer bir durum elde edilmiş oluyor. Zaten yükselen kenar ve düşen kenar Q'un tersi olduğu için şuna benzer bir durum oluşmuş olacak. Dolayısıyla bu üç durumda da şunları şöyle bağlayalım.
+
+491
+01:40:07,956 --> 01:40:14,695
+Bu üç durumda bizim asenkron sayıcı mantığını oluşturabileceğimiz yapılar olarak karşımıza çıkıyor.
+
+492
+01:40:14,775 --> 01:40:22,255
+Üç alternatifli bir tasarım mantığında, üç farklı yaklaşımla bu asenkron sayıcıyı oluşturmamız mümkün.
+
+493
+01:40:22,996 --> 01:40:28,935
+Şimdi bu noktada slide'lara döneceğim tekrar. Slide'larda kaldığımız yerden devam edelim.
+
+494
+01:40:35,283 --> 01:40:42,623
+Tıpkı kombinasyonel devrelerde olduğu gibi bir de ardışıl devreler içinde daha büyük blokları oluşturmak durumu olabilir.
+
+495
+01:40:43,347 --> 01:40:53,088
+Örneğin, dersimiz boyunca göreceğiz. Bizim hafıza elemanı olarak kullanmış olduğumuz flip-flop mantıkları bir bitlik veli saklayabilecek yapıdalar. Güzel.
+
+496
+01:40:53,668 --> 01:41:00,688
+Fakat bizim bilgisayar yapılarında da gördüğünüz üzere veya SMB dersinde de gördüğünüz üzere aslında tek bir bitle işlem yapmıyoruz.
+
+497
+01:41:00,688 --> 01:41:04,688
+Bir bit bloğuyla, bir bit grubuyla işlem yapıyoruz. Dolayısıyla bizim...
+
+498
+01:41:05,104 --> 01:41:12,404
+Belirli bir bit genişliğe sahip, en bit bit bir değeri saklayabileceğimiz yaz maç yapılarına ihtiyacımız var.
+
+499
+01:41:12,404 --> 01:41:32,264
+Yaz maç yapıları temel olarak, ISM'den de hatırlayacağımız üzere, belirli işlem sonuçlarını saklamak için veya çeşitli aritmetik, lojik işlemlere girdi sağlayabilmek adına yüksek hızlı mikro işlemcinin içerisinde yer alan hafıza elemanları olarak karşımıza çıkıyor.
+
+500
+01:41:33,104 --> 01:41:58,164
+8 bitlik değil, işte mimari kaç bitlikse 8 bit, 16 bitlik yapılan olarak karşımıza. Dolayısıyla bizim ilk ihtiyaç duyduğumuz şey, bir seferde en adet bitlik değeri yükleyebildiğimiz bir register kavramına ihtiyacımız var. Bunu böyle blok diagramı olarak, kara kutu olarak şöyle çizelim. Sadece yükleme yapan bir yazmaç. Bunun için işte 8 bitlik bir girişimiz var.
+
+501
+01:41:58,707 --> 01:42:15,448
+8 bitlik bir çıkışımız var. 8 bitlik bir çıkışımız var. Bu sadece clock işaretinin yükselen kenarında uçlarındaki değeri içeri kopyalayacak. Bu bizim yazmaç dediğimiz paralel yüklemeli yazmaç dediğimiz yapı.
+
+502
+01:42:15,840 --> 01:42:43,840
+Bu yapıyı oluşturabilmek için ne yapabiliriz? İçeride 8 adet flipflop kullanabiliriz. Bu 8 adet flipflopu aynı anda yükleme yapabilmek için bunların clock işaretlerini ortaklayıp kaç bitlik bir register yapacaksak, her bir register'ın mesela değer yazmacıyla yapacaksak bunu, her bir D flipflopunun D ucu ilgili G giriş bitini oluşturacak şekilde ve yine her bir...
+
+503
+01:42:43,840 --> 01:42:52,260
+Filipçilob'un Q çıkışı, ilgili sıradaki Q çıkışını, yazma çıkışını oluşturacak şekilde iç tasarımını gerçekleştirebiliriz.
+
+504
+01:42:52,340 --> 01:43:02,420
+Bu yapının özelliği ne, fonksiyonu ne diye bakacak olursak, hani buna bir fonksiyon tablosu oluşturacak olursak, C ve Q'ya bağlı olarak şunu yazabiliriz.
+
+505
+01:43:10,868 --> 01:43:22,328
+Diğer durumlarda ise neyi sağlıyor? Küçük Q'yu koruyor. Bu yaz maç yapısını bu şekilde tanımlayabiliriz. İç yapısı da burada gördüğünüz karşılıkta kullanılıyor diyebiliriz.
+
+506
+01:43:22,328 --> 01:43:27,008
+Bunun dışında biz sadece paralel yükleme yapmak istemiyor olabiliriz.
+
+507
+01:43:29,140 --> 01:43:39,740
+Bazı durumlarda elimizde bulunan değeri ötelememiz veya kaydırmamız gerekiyor olabilir veya rotasyona sokmamız gerekiyor olabilir.
+
+508
+01:43:40,619 --> 01:43:53,780
+Bu gibi mesela loşik fonksiyonlar vardı SM'de, shift left, shift right gibi veya birkaç adım döndürdüğümüz rotate gibi veya tek adımla olabildiği gibi en adımlık işlemler yaptığımız süreçler vardı.
+
+509
+01:43:53,920 --> 01:43:56,740
+Dolayısıyla bizim bir yaz maç içerisinde sakladığımız...
+
+510
+01:43:57,140 --> 01:44:16,980
+Bu yapıları tekrar döndürüp burada tutabileceğimiz yapılara ihtiyacımız olabilir. Yani içeride saklanan değeri sağa veya sola kaydırdığımız senaryolar olabilir. Burada yine bu yapının, shift kaydırmalı veya ötelemeli yazmacın genel blok diagramını görüyorsunuz. Bir clock işareti var.
+
+511
+01:44:17,344 --> 01:44:38,164
+Bir besleme girişi var. Bir bitlik bir besleme girişi var. Bir de bir bitlik çıkışımız var. Bunu ne içinde kullanabiliriz? Mesela ders içerisinde yapmadık ama size zorunlu olmayan bir ev ödevi olarak belki lojik devrelerden hatırlayabilirsiniz. Seri toplayıcı mantığını bir artışlı, senkron artışlı devre olarak tasarlayabilirsiniz.
+
+512
+01:44:40,304 --> 01:45:01,583
+Ardışıl toplayıcı nasıl çalışıyordu? Örneğin, en bitlik iki tane sayımız, iki tane yazmaçta saklı ve ben bu sayıların ilgili sıradaki en düşük anlamlıdan başlayarak ilgili sıradaki bitlerini alıyorum. Seri toplayıcıya sokuyorum. Çıkan bir bitlik toplam değerim var. Ardışıl devlet asarım olduğu için elde var, yok, kendi içerisinde tutuyor bunu.
+
+513
+01:45:08,304 --> 01:45:33,564
+Sayıyı toplayıp toplam sonucunu da yine bu yazmaçlardan birine biriktirebilirim. Bunu yapabilmek için ne yapmam lazım? Her adımda A'daki ve B'deki bunlar benim iki tane değeri sakladığım yazmaç olsun A ve B yazmaçlarını her seferinde bir adım sağa ötelemeliyim. Her seferinde bir adım sağa ötelebilmeliyim. Dolayısıyla benim böyle bir fonksiyoneliteye donanım olarak ihtiyacım olabilir.
+
+514
+01:45:34,163 --> 01:45:47,003
+İşte blok yapısını görüyorsunuz burada. Bir clock işareti var. Clock işareti geldiğinde, örneğin bu 4 bitlik bir shift ötelemeli yazmaç ise çalışma fonksiyonu şu şekilde olacak.
+
+515
+01:45:47,003 --> 01:46:01,783
+İçeride saklamış olduğu Q4, Q3, Q2 ve Q1 değerlerine karşılık olarak mesela bir kaydırma yaptığımızda Q3'teki değer Q4'e sola doğru mu kaydırıyor?
+
+516
+01:46:02,292 --> 01:46:04,292
+Onu kontrol edeyim.
+
+517
+01:46:07,432 --> 01:46:11,752
+Q4 en düşük anlamlı, Q1 en yüksek anlamlı gibi burada görebilirsin.
+
+518
+01:46:11,892 --> 01:46:13,712
+Hani okurken de kolaylık olması açısından.
+
+519
+01:46:14,452 --> 01:46:20,072
+3 numaralı sıradaki bit 4 numaralıya kayacak, 2'deki 3'e kayacak, 1'deki 2'ye kayacak.
+
+520
+01:46:20,752 --> 01:46:25,012
+Serial in'deki girişimiz ise 1 numaralı boşluğu dolduracak.
+
+521
+01:46:25,512 --> 01:46:28,172
+Dolayısıyla biz serial in'de verdiğimiz değer neyse
+
+522
+01:46:28,659 --> 01:46:40,399
+Adım adım aslında yaz maçın içerisine bu değeri doldurmuş oluyoruz. Q'daki çıkışlarda Q4 yani 4 numaralı yerdeki değer neyse onun bir adım kaydığı senaryoya karşılık gelmiş oluyor.
+
+523
+01:46:41,239 --> 01:46:49,319
+Bu shift register'ın iç yapısına baktığımızda yine 4 bitlik bir shift register ise 4 tane de flip flop ile bunu gerçekleyebiliriz.
+
+524
+01:46:55,891 --> 01:46:56,991
+aktarılması
+
+525
+01:46:57,471 --> 01:47:18,291
+İkideki değerin 3'e aktarılması, birdeki değerin 2'ye aktarılması, serial in'in de 1'e aktarılması. Dolayısıyla burada D flip flop'ların girişlerine bir yüksek anlam sırasındaki flip flop'un çıkışı bağlanabilir. En yüksek anlamlıdakine ise serial in değeri bağlanabilir.
+
+526
+01:47:24,500 --> 01:47:33,539
+gerçekleşecek. Örneğin, daha clock işareti gelmemişken, bu bir bitlik çıkışımızda Q4 ile işaret edilmiş olan çıkış mevcut.
+
+527
+01:47:33,539 --> 01:47:48,199
+Clock işaretinin yükselen kenarı vurduğunda, işlem gerçekleştikten sonra Q ile işaret edilmiş olan etiketli çıkışta, ilk başta 3 numaralı konumda olan bit değerini görmemiz mümkün olacak.
+
+528
+01:47:48,359 --> 01:47:52,380
+Dolayısıyla shift register veya ötelemeli yazma dediğimiz yapının.
+
+529
+01:47:52,500 --> 01:47:56,199
+Block diagramı ve iç yapısı bu şekilde verilebilir arkadaşlar.
+
+530
+01:47:58,440 --> 01:48:04,920
+Bunun haricinde bir de biz şu fonksiyoneliteyi isteyebiliriz. Bu iki işlemin birleşmesini isteyebiliriz.
+
+531
+01:48:05,920 --> 01:48:09,279
+Bunun için örneğin 4 bitlik paralel yüklemeli.
+
+532
+01:48:09,760 --> 01:48:26,340
+Ve ötelemeli bir yazmaç yapısı isteyebiliriz. Bu yazmaç yapısının yine bir clock işareti olacak. Yani paralel yüklemeler senkron bir şekilde gerçekleşecek veya öteleme işlemi senkron bir şekilde gerçekleşecek. Dolayısıyla bizim bir clock'a ihtiyacımız var.
+
+533
+01:48:26,340 --> 01:48:37,760
+4 bitlik bir ötelemeli paralel yüklemeli yazmaç yapacaksak içeride 4 tane filifloba ihtiyacımız var. Bunun dışında yapacağımız işleme dair bir de kontrol işaretini kullanmamız gerekiyor.
+
+534
+01:48:37,760 --> 01:48:51,800
+Biz de buradaki yapıyı inceleyecek olursak, şu kontrol ucuna bakacak olursak, fonksiyonleti olarak şöyle çalışıyormuş. Kontrol ucuna bir verdiğimde paralel yükleme yapsın, sıfır verdiğimde öteleme işlemi yapsın istiyorum.
+
+535
+01:48:53,140 --> 01:49:06,220
+Buna göre arka tarafta yer alan her bir bit slice'ındaki kontrol devresi, shift load ve serial in mantığını bir arada kullanarak nasıl gerçekleşecek diye bir bulmamız gerekiyor.
+
+536
+01:49:07,500 --> 01:49:13,159
+Onun için buradaki bit slice'larından birini alacağım ve şöyle bir işlem yapacağım.
+
+537
+01:49:14,060 --> 01:49:19,560
+Shift load ucumuz var. Bu bizim için bir kontrol ve girdi ucu.
+
+538
+01:49:20,032 --> 01:49:30,152
+Onun haricinde Parallel In girişimiz var. Onun haricinde bir de Serial In diyelim ve biz aslında Serial In nereden bağlı? Şurada bağlı.
+
+539
+01:49:30,412 --> 01:49:37,132
+3 numaralı Bit Slice için Q3'te oluşması gereken değeri tespit etmeye çalışalım.
+
+540
+01:49:38,644 --> 01:49:54,123
+Eğer ki shift ve shift load ucunda 0 değeri varsa shift işlemi yapması lazım. Dolayısıyla PI'de ne olursa olsun SI'de 0 varsa Q'ya 0 çıkması lazım.
+
+541
+01:49:55,884 --> 01:50:01,684
+SI'de 1 varsa 1 çıkması lazım. Yani seri yüklemeyi gerçekleştirmemiz gerekiyor.
+
+542
+01:50:04,787 --> 01:50:16,787
+Pardon, shift işlemi olduğu için serial in'in Q3'e aktarılması lazım. Eğer ki, pardon, shift load ucunda bir değeri varsa, bu durumda da, serial in'de ne olursa olsun,
+
+543
+01:50:16,787 --> 01:50:27,787
+paralel inputta 0 varsa, 0'ın Q3'e çıkması, bunun dışında yine load işlemi seçilmişse, paralel inputta 1 varsa, shift ucunda ne olursa olsun,
+
+544
+01:50:27,859 --> 01:50:44,000
+Bir değerinin çıkmasını isteriz. Bu durumda aslında 8 tane değerimiz var olması lazım. Bu diğer durumlar için ne diyeceğiz? Diğer durumlar için donk'ler içerisinde gömülmüş bunlar. Oralara denk getireceğiz.
+
+545
+01:50:44,000 --> 01:50:51,559
+Şimdi bunu bir karnomepe de indirgeyebiliriz veya şöyle de yapabiliriz. Kontrol edelim.
+
+546
+01:50:55,444 --> 01:51:22,924
+Şu uca X diyelim, yazarken kolaylık olsun. X ucumuz. X'in 0 olduğu yerde Q3, S'i'ye eşit. Dolayısıyla Q3 dediğimiz şey, X'in 0 olduğu yerde S'i'ye eşit ve X'in 1 olduğu yerde P'i'ye eşit.
+
+547
+01:51:26,260 --> 01:51:29,300
+Bu şekilde doğrudan tablodan da bu şekilde yazabiliriz.
+
+548
+01:51:29,800 --> 01:51:35,080
+Bunu yine dediğim gibi şu DOMK'leri genişleterek iki durum burada, iki durum burada, iki durum burada, iki durum burada, iki durum burada.
+
+549
+01:51:35,860 --> 01:51:40,400
+Sekiz satırlı tablo haline getirip de karnometre koysanız elde edeceğiniz sonuç bu.
+
+550
+01:51:41,060 --> 01:51:45,380
+Dolayısıyla burada baktığımızda Q3 fonksiyonu bu olmalı.
+
+551
+01:51:50,228 --> 01:52:00,427
+D flip flop'unun giriş ucuna bağlayıp yükselen kenar verdiğimizde Q3'ün bu çıkacağını biliyoruz. Dolayısıyla aslında bir D ucuna bağlanacak değeri bulmuş olduk.
+
+552
+01:52:01,047 --> 01:52:17,068
+Şimdi bakalım buradaki devre onu sağlıyor mu? X'in D'li ve serial'i. Şu birinci terim şurada mevcut. X ve paralel input. Bu ikinci terim de burada mevcut. Bunların toplamını alıyoruz. Toplam terimi burada D'ye bağlı.
+
+553
+01:52:17,971 --> 01:52:32,131
+Diğer bit sliceler için farklı olan durum ne var? Diğer bit sliceler için serial input yok da, mesela Q3, Q2'ye aktarılacağı için orada Q3 değere bağlı gibi gibi diğer bitler için de bunları tanımlamamız mümkün.
+
+554
+01:52:34,111 --> 01:52:44,971
+Dolayısıyla şimdiye kadar yazmaçlarla ilgili olarak paralel yüklemini yazmaç gördük. Ötelemeli yazmaç gördük. Paralel yüklemeli ve ötelemeli yazmaç gördük. Bunların iç yapılarını...
+
+555
+01:52:45,216 --> 01:52:47,856
+fonksiyon tablosundan çıkarabilmiş olduk arkadaşlar.
+
+556
+01:52:50,616 --> 01:52:54,676
+Bir de şuna bakalım son. Memoriye girmeyeceğiz.
+
+557
+01:52:55,456 --> 01:53:05,396
+Az önce ders içerisinde oluşturmuş olduğumuz senkron veya asenkron olabilir sayıcılara ilişkin olarak bunların entegre olarak sunulan versiyonları da var.
+
+558
+01:53:06,636 --> 01:53:09,896
+Bu versiyonlara baktığımızda fonksiyon tablosu olarak
+
+559
+01:53:11,028 --> 01:53:22,948
+Burada bir enable ucu var. Enable ucuna bir verdiğimiz zaman bu sayıcı her clock darbesinde bir artarak saymasına devam ediyor.
+
+560
+01:53:24,068 --> 01:53:36,548
+Eğer ki load ucuna bir verirsek, load ucuna bir verdiğimizde de enable ucuna bakmaksızın sanırım tekrar kontrol edelim.
+
+561
+01:53:38,323 --> 01:53:50,763
+Load ucuna 1 verdiğimizde ise D uçlarındaki hazırladığımız değerin clock darbesinin yükselen kenarında initial değer olarak içeri yüklenmesini bekliyoruz.
+
+562
+01:53:53,423 --> 01:53:58,723
+Anlam sırasına baktığımızda da 3 numaralı verilenler en yüksek anlamlılar.
+
+563
+01:54:06,420 --> 01:54:17,579
+15 demeyelim de 12. 8 ila 12 arasında bir sayıcı yapmak istersek ne gibi bir bağlantı yapısı oluşturmalıyız burada? Ne dersiniz?
+
+564
+01:54:22,899 --> 01:54:41,619
+Bir kere sayıcı 12'ye ulaştığımda, 12'ye ulaştığımda nasıl olacak yani? 1, 1, 0, 0 olduğunda bu durum varken load ucuna 1 gelmeli ve yükleyeceğimiz değer 1, 0, 0, 0 olmalı.
+
+565
+01:54:50,868 --> 01:55:11,968
+1, 0, 0, 0'dan başlayıp 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0 olduğunda geri döneceğimiz için aslında ne diyebiliriz basitleştirilmiş bir mantık olarak?
+
+566
+01:55:16,756 --> 01:55:38,096
+Load ucuma bir verebilirim. Yani Q2'deki değeri ben Load'a bağlarsam, Enable'uma bir verirsem, bu durumda bu sayıcı ve Load uçlarına da 8'e karşılık gelecek bir banyarı sayıyı bağlarsam, bu durumda bu sayıcı sıfırdan başlamış olsa bile, örneğin 4 değerine geldiğinde sıfırdan başlattık.
+
+567
+01:55:43,935 --> 01:56:02,516
+4, Q2'si 1 olduğu için load işlemi yapacak ve 8 değerini yükleyecek. 8'den sonra 9, 10, 11, 12. 12'de yine Q2 1 olduğu için yine load işlemi yapacak ve tekrar 8'e dönüp artık 8, 12 arasında saymaya başlayacak.
+
+568
+01:56:02,516 --> 01:56:09,916
+Dolayısıyla bu yapmış olduğunuz mantıkta ilk başta bir tane hatalı sayma var ama sonrasında hep 8, 12 arasında.
+
+569
+01:56:10,547 --> 01:56:22,268
+bir up counter olarak fonksiyon gösterir hale gelmiş olacak. Yine bu konuyu da lojik devreler dersinde görmüşsünüz. Bir hatırlatma olması açısından bahsetmiş olduk arkadaşlar.
+
+570
+01:56:22,927 --> 01:56:33,547
+Counter bizim için nerede önemli? Counter bizim için örneğin program sayıcı yazmacımız olacak. Program sayıcı...
+
+571
+01:56:35,155 --> 01:56:43,916
+Veya program counter dediğimiz bir yazmaç olacak. O yazmaçın ardışık komutları yürütmesi sırasında aslında bunu kullanabileceğiz.
+
+572
+01:56:44,855 --> 01:56:54,996
+Veya özel durumlar varsa bir toplama devresiyle birlikte bunu entegre edip örneğin bir dallanma durumu varsa o dallanma durumlarını oluşturmaya çalışacağız.
+
+573
+01:56:55,756 --> 01:56:59,416
+Dolayısıyla bu yapı da, bu entegre blok yapısı da.
+
+574
+01:56:59,807 --> 01:57:04,028
+Bilgisayar donanımı açısından, mikro işlemcinin iç yapısı açısından önemli diyebiliriz.
+
+575
+01:57:04,587 --> 01:57:07,728
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+576
+01:57:12,787 --> 01:57:23,367
+Yoksa bir 10 dakika daha ara vereceğim. Sonrasında da programlanabilir lojik mantıklara bakıyor olacağız. Soru yoksa 10 dakika ara veriyorum.
+
+577
+01:57:26,247 --> 01:57:30,367
+Saat 4'ü çeyrek geçe dönmüş olacağız.
+
+578
+02:10:07,507 --> 02:10:09,528
+Merhaba arkadaşlar Teka.
+
+579
+02:10:11,387 --> 02:10:20,108
+Şimdi ilk koymuş olduğumuz sunum dosyası içerisinde yer alan hafıza elemanlarını bırakacağız.
+
+580
+02:10:21,108 --> 02:10:24,967
+Onu daha sonraki haftalar tekrar gelecek. O zaman ele alacağız.
+
+581
+02:10:24,967 --> 02:10:29,307
+Şimdi programlanabilir lojik mantıklara geçeceğiz.
+
+582
+02:10:29,547 --> 02:10:32,568
+Onunla ilgili olarak ben bir slide açacağım.
+
+583
+02:10:42,387 --> 02:10:55,108
+Şimdi gördüğünüz gibi önceki derslerimizde gördüğünüz üzere bizim tanımladığımız problem çerçevesinde bir takım lojik fonksiyonları yerine getirmemiz gerekiyor.
+
+584
+02:10:56,027 --> 02:11:04,387
+Bunları yerine getirirken ya ayrık kapı mantığında bunları bir araya getirip fonksiyonel olarak bağlayıp bunları yerine getirebiliriz.
+
+585
+02:11:06,260 --> 02:11:15,400
+Çeşitli programlanabilir devre elemanları kullanarak veya entegreler kullanarak gerçekleyebiliriz.
+
+586
+02:11:15,400 --> 02:11:30,000
+Bu saat kapsamında göreceğimiz yapılar bunlara ilişkin yapılar. Örneğin ROM, PLA, PAL ve benzer kapı yapılarını veya benzer entegreleri burada ele alıyor olacağız.
+
+587
+02:11:30,800 --> 02:11:33,480
+İlk üçü aslında tam olarak ele alacaklarımız.
+
+588
+02:11:33,920 --> 02:11:45,360
+FPGA mantığı veya CPLD mantıkları ise daha büyük ve daha kapasiteli yapıları, fonksiyonları gerçeklemek üzere kullanılan yapılar.
+
+589
+02:11:45,360 --> 02:11:59,060
+Örneğin FPGA mantığı üzerinde bir CPU tasarımı gerçekleştirip daha sonra FPGA üzerinde prototipleme hızlı olabilir.
+
+590
+02:11:59,828 --> 02:12:09,948
+Ama üretim için uygun değildir. Prototiplemeyi yaptıktan sonra burada testleri yürütüp, gerekli iyileştirmeleri yapıp,
+
+591
+02:12:10,260 --> 02:12:27,480
+FPGA mantığından artık kapı seviyesinde optimize dizime geçip bunu daha sonra ASIC mantığına yani üretim aşamasında kapı seviyesinde üreterek yani entegre seviyesinde üreterek bu işlemciyi çalışır halde elde etmek mümkün.
+
+592
+02:12:28,480 --> 02:12:34,360
+FPGA'nin önemli özelliklerinden birisi de yine tekrar programlanabilir olduğu için.
+
+593
+02:12:36,595 --> 02:12:58,275
+Yeniden farklı donanımlar için kullanmak mümkün. Bir FPGA'in temel hafıza demeyelim de işlem bloğu içerisinde belirli bir iktarda flip-flop hafıza elemanları, genel geçer amaçlı bir programlanabilir kombinasyonel lojik mantık ve ardışıl devre tasarımına destek vermek üzere.
+
+594
+02:12:58,703 --> 02:13:02,283
+Bu bahsetmiş olduğumuz flip floglar her bir blok içerisinde yer alıyor.
+
+595
+02:13:03,043 --> 02:13:10,523
+FPC, FPC'deki temel blokları kullanarak büyük hafıza yapıları modüler olarak tasarlanabilir.
+
+596
+02:13:11,523 --> 02:13:13,183
+Lookup table'lar oluşturulabilir.
+
+597
+02:13:14,703 --> 02:13:22,623
+Yine çeşitli lojik fonksiyonları, basit karmaşık lojik fonksiyonları gerçekleyebilecek kombinasyonel devre sentezi gerçekleşebilir.
+
+598
+02:13:23,104 --> 02:13:28,324
+Veya ardıçlı devre tasarım mantığını destekleyecek yapılar oluşturulabilir.
+
+599
+02:13:29,144 --> 02:13:32,944
+Ama bu dersimiz kapsamında olmayan bir konu bu aşamada.
+
+600
+02:13:33,543 --> 02:13:37,604
+Biz bu aşamada ROM, PAL ve PLA mantıklarını tanıyacağız.
+
+601
+02:13:38,184 --> 02:13:45,684
+Bunların iç yapısına bakacağız. Bunları kullanarak çeşitli lojik fonksiyonları nasıl gerçekleştirebiliriz diye incelemeye çalışacağız.
+
+602
+02:13:47,667 --> 02:14:11,907
+Şimdi bildiğiniz üzere biz devre tasarım mantığımızı örneğin doğru min termlerin toplamı cinsinden tanımladığımız haliyle aslında bir kat, birinci katmanda end katları vardı, end kapıları vardı. İkinci katmanda da bu end kapıların çıktısını çok girişli bir or kapısında birleştirdiğimiz bir senaryo vardı.
+
+603
+02:14:12,500 --> 02:14:34,500
+Dolayısıyla burada göreceğimiz 3 yapının ROM, PAL ve PLA yapısının 2 temel modülü var. Bir AND katı var, bir OR katı var. Fakat bu 3 yapı şu noktada birbirinden ayrılıyor. Örneğin ROM dediğimiz yapı için AND katı sabit. Orayı programlayamıyoruz. Ama programlayabildiğimiz kısım...
+
+604
+02:14:35,188 --> 02:14:55,828
+Neresi oluyor? OR katı oluyor. OR katı programlanabiliyor. Veya PAL cihazı için AND katmanı programlanabiliyor. OR kısmı fix, orayı programlayamıyorsunuz. Veya PLA cihazlarında her iki katman da AND katmanı da OR katmanı da programlanabilir durumda. Programlanabilirden kasıt şu.
+
+605
+02:14:58,579 --> 02:15:18,779
+Programlanabilirden kasız şu demek, siz orada farklı miktardaki veya farklı terime sahip toplam işlemleri oluşturabilirsiniz. Hangi terimlerin toplama gireceğini belirleyebilirsiniz veya çarpım katı programlanabiliyorsa çarpım terimine hangi elemanların gireceğini belirleyebiliyorsunuz gibi bir mantık söz konusu.
+
+606
+02:15:19,604 --> 02:15:38,003
+Temelde bunların birbirinden ayrılması bu şekilde. En önemli özellikle dediğim gibi doğru min termlerin toplamı cinsinden herhangi bir fonksiyonu yazabiliyorduk. Dolayısıyla doğru min term dediğimiz şeyler aslında girdilerin çeşitli varyasyonlardaki end kapılarında birleştirilmeleri veya çarpımlarıydı.
+
+607
+02:15:38,003 --> 02:15:46,564
+Bul cevindeki çarpımlarıydı. Bu çarpım terimlerinin toplamı dediğimiz durumda da toplamda or katı, çok girişli bir or katıyla sağlanıyordu.
+
+608
+02:15:47,604 --> 02:15:52,324
+Hangi seviyesi programlanabiliyorsa bu farklı bir programlanabilir cihaz olarak karşımıza çıkıyor.
+
+609
+02:15:53,243 --> 02:16:01,203
+Şimdi öncelikli olarak ROM elemanına bakacak olursak arkadaşlar, ROM elemanı yapı itibariyle temel olarak şöyle çizecek olursak.
+
+610
+02:16:05,971 --> 02:16:22,131
+N adet bir adres ucuna sahip ve M adet data ucuna sahip. Adres ve data olarak belirledim. Bir de bunun okuma kontrol ucu var ve enable ucu var diyebiliriz.
+
+611
+02:16:24,451 --> 02:16:28,871
+Output enable ucu var. Bu şekilde gösterebiliriz.
+
+612
+02:16:29,779 --> 02:16:46,599
+Şimdi böyle bir ROM yapısının temel olarak yine blok diagramı olarak bakacaksak en adet adres ucu demek içeride en adet hafıza gözü demek. Bu hafıza gözlerinin her birisi de M adet bitten oluşuyor.
+
+613
+02:16:47,040 --> 02:16:55,819
+Dolayısıyla böyle bir ROM'un kapasitesinden bahsedeceksek, en adet giriş ucu veya adres ucu varsa 2 üzeri en adet hafıza gözü var demektir.
+
+614
+02:16:56,240 --> 02:17:04,780
+Hafıza gözlerinden her birisi de mbit olduğu için bunun kapasitesini 2 üzeri n çarpı m şeklinde ifade etmemiz mümkün.
+
+615
+02:17:05,540 --> 02:17:11,260
+Bunun iç yapısında ne var diye bakacak olursak arkadaşlar, ROM'un iç yapısında ne var diye bakacak olursak,
+
+616
+02:17:13,747 --> 02:17:23,707
+İçeride bir dekoder var. En adet adres ucuna karşılık 2 üzeri en adet hafıza gözü seçimi gerçekleştiriyor gibi düşünebilirsiniz bunu.
+
+617
+02:17:24,747 --> 02:17:28,887
+Or katmanı ise burada özet bir şekilde çizilmiş ama bunun anlamı şu.
+
+618
+02:17:29,727 --> 02:17:39,968
+Örneğin şuradaki yapıyı ele alacak olursak, buradaki yapıyı genişleterek ele alacak olursak, bunlar bizim dekoder çıkışlarımız olsun.
+
+619
+02:17:42,164 --> 02:17:45,603
+Buradaki or kapısı, kocaman bir or kapısı çiziyorum.
+
+620
+02:17:46,844 --> 02:17:47,463
+Çizemedim.
+
+621
+02:17:49,463 --> 02:17:55,984
+Bu or kapısına tüm dekoder çıkışlarından bir bağlantı var.
+
+622
+02:17:57,144 --> 02:17:59,324
+Tüm dekoder çıkışlarından bağlantı var.
+
+623
+02:18:00,283 --> 02:18:02,184
+Mümkün yani, bağlantı yapmak mümkün.
+
+624
+02:18:02,184 --> 02:18:04,184
+Ben bu bağlantılardan...
+
+625
+02:18:04,659 --> 02:18:21,540
+İstediğim kısmını koruyabilirim, istediğim kısmını yok edebilirim. Dolayısıyla ROM'u programlamak dediğimiz şey, or katındaki bu bağlantıları korumak veya bunları yakmak. Bunları bir sigorta olarak düşünebilirsiniz.
+
+626
+02:18:22,675 --> 02:18:30,896
+Dediğimiz cepı aslında belirli bir akıma kadar destekliyor. Yani biz oraya yüksek akım verirsek oradaki bağlantıyı koparmış olacağız.
+
+627
+02:18:31,495 --> 02:18:37,615
+Bu şekildeki gösterimin bir özet hali burada aslında yukarıdan aşağı tek bir çizgi olarak verilmiş durumda.
+
+628
+02:18:47,860 --> 02:19:15,860
+Boyutunda bir ROM'u programlamak istediğimde bu şu anlama geliyor. Dekoderimiz bizim kullanacağımız dekoder K çarpı 2 üzeri K'lık bir dekoder olacak. Bizim 2 üzeri K adet dekoder çıkışımız var. Zaten dekoderle ilgili konuşmuştuk. Dekoderlerin her bir çıkışı neye karşılık geliyordu arkadaşlar? Min termlere karşılık geliyordu değil mi? Min termlere karşılık geliyordu. Dolayısıyla bu K adet girişe ilişkin olarak K...
+
+629
+02:19:15,860 --> 02:19:18,000
+girişli bir lojik fonksiyonun
+
+630
+02:19:18,000 --> 02:19:19,739
+olası tüm min termleri
+
+631
+02:19:19,739 --> 02:19:21,520
+dekoder çıkışı olarak elimde var.
+
+632
+02:19:22,060 --> 02:19:23,940
+En adet her bir
+
+633
+02:19:23,940 --> 02:19:25,540
+hafıza gözüm en diyorsam
+
+634
+02:19:25,540 --> 02:19:27,659
+bu durumda da benim 1, 2
+
+635
+02:19:27,659 --> 02:19:29,540
+nokta nokta nokta en adet
+
+636
+02:19:29,540 --> 02:19:31,760
+or kapım var. Bu or
+
+637
+02:19:31,760 --> 02:19:33,700
+kapılarından her birisi az önce
+
+638
+02:19:33,700 --> 02:19:35,560
+çizmiş olduğumuz şekil itibariyle
+
+639
+02:19:35,560 --> 02:19:37,659
+tüm dekoder çıkışlarından
+
+640
+02:19:37,659 --> 02:19:39,600
+ilgili sıradaki or
+
+641
+02:19:39,600 --> 02:19:41,400
+kapısına her telden birer
+
+642
+02:19:41,400 --> 02:19:43,500
+bağlantı var. Bu her dekoder
+
+643
+02:19:43,500 --> 02:19:43,860
+çıkışı
+
+644
+02:19:43,860 --> 02:19:51,819
+Or kapısına olan bağlantıyı korumak istememe veya istememe göre burada programlamayı gerçekleştirmiş oluyoruz.
+
+645
+02:19:52,500 --> 02:20:04,240
+Bir ROM devresi kullanarak lojik devre, lojik fonksiyon nasıl gerçekleştirilir dediğimiz vakit aslında yapacağımız da buradaki programlamanın yürütülmesi olmuş oluyor.
+
+646
+02:20:04,840 --> 02:20:07,180
+Burada bir örnek olacaktı sanırım ona bir bakalım.
+
+647
+02:20:22,355 --> 02:20:28,195
+Örneğin elimizde şu şekilde bir tasarım olsun. Bu tersten mi gidiyoruz acaba?
+
+648
+02:20:29,043 --> 02:20:39,943
+Böyle bir tasarım olsun, böyle programlanmış bir ROM olsun. Biz bu ROM'u baktığımız zaman burada F3, F2, F1 ve F0 fonksiyonları olarak 4 farklı fonksiyon göreceğiz.
+
+649
+02:20:40,504 --> 02:20:49,383
+Aslında ROM'u bir lookup table olarak da düşünebiliriz. Lookup table dediğimiz şey de şöyle. Adres değerini veriyoruz. Adres değerine karşı 4 tane çıkış var ya.
+
+650
+02:20:49,943 --> 02:20:57,043
+İlgili hafıza gözünde o adres değeri aslında fonksiyonun o gözü için bizim istediğimiz değerler oraya yazılıyor.
+
+651
+02:20:57,043 --> 02:21:13,363
+Bunu bir look up table olarak oluşturmamız mümkün olmuş oluyor. Dolayısıyla look up table olarak da çalışıyor. Burada görmüş olduğunuz çalışma mantığı şu. A, B ve C. A en yüksek anlamlısı olmak üzere burada bir 3'e 8 dekoderimiz var.
+
+652
+02:21:14,164 --> 02:21:28,123
+Şurada 7 numaralı min term'ümüze karşılık geliyor. 0 numaralı min term'ümüze karşılık geliyor. Burada koyduğumuz çarpılar ilgili min term'ün ilgili dikeydeki sütundaki or kapısına bağlantısının olduğunu gösteriyor.
+
+653
+02:21:41,652 --> 02:22:08,191
+Birinci, beşinci ve yedinci minitörmlerin toplamı şeklinde bir fonksiyon. Dolayısıyla bizim birinci minitörmümüz 0, 0, 1 değeri. Dolayısıyla A üstü, B üstü, C terimi artı. Beşinci minitörmümüz 1, 0, 1. Dolayısıyla A, B üstü, C artı. Yedinci minitörmümüz de A, B, C.
+
+654
+02:22:11,827 --> 02:22:33,667
+A, B, C terimine tekabül ediyor. Dolayısıyla bu F0 çıkışına ait or kapısının girişlerinde dekoder çıkışlarına ilişkin olarak bu vermiş olduğumuz bağlantıları yaparsak aslında biz F0 ucunda, ROM'un F0 çıkışında böyle bir lojik fonksiyonu gerçekleştiriyoruz.
+
+655
+02:22:33,907 --> 02:22:50,247
+F1 için bakalım. F1 için ne var? Birinci mintern. Birinci minternimizin A üstü, B üstü ve C fonksiyonuydu. Bir de dördüncü mintern bağlıymış. O da A, B üstü, C üstü oluyor sanırım. Buradaki fonksiyonumuz bu.
+
+656
+02:23:01,587 --> 02:23:04,808
+Bir de 7 numaralı minitörm var, ABC terimi.
+
+657
+02:23:06,367 --> 02:23:12,968
+Son olarak 3 numaralı F3 çıkışına bakacak olursak, 2 numaralı minitörm var.
+
+658
+02:23:13,148 --> 02:23:19,648
+Yani A üstü, B, C üstü artı 5 numaralı minitörm var.
+
+659
+02:23:20,007 --> 02:23:25,587
+AB üstü, C terimi artı bir de 7 numaralı minitörm var.
+
+660
+02:23:26,036 --> 02:23:40,296
+A, B, C terim olarak karşımıza çıkıyor. Dolayısıyla burada programlanmış olan her bir data ucundaki fonksiyonun karşılığı adres uçlarına verilen A, B, C değerlerine göre bu şekilde elde edilebilir.
+
+661
+02:23:41,896 --> 02:23:50,135
+Orkatı ROM'un içerisinde gömülü. Dekodert ROM'un içerisinde gömülü. Dolayısıyla biz ROM'u programladığımız zaman
+
+662
+02:23:50,559 --> 02:24:01,579
+Aslında ekstra hiçbir lojik kullanmadan, lojik kapı kullanmadan data genişliği neyse, veri yolu genişliği neyse o kadar miktarca lojik fonksiyonu.
+
+663
+02:24:01,951 --> 02:24:10,151
+eş anlı olarak gerçekleştirebiliyoruz anlamına geliyor. ROM kullanmanın avantajı bu şekilde ortaya çıkmış oluyor.
+
+664
+02:24:10,731 --> 02:24:19,091
+Mesela buradaki değerleri anlamlandırmak istediğimizde de mesela adres uçlarına 0, 0, 1 verilmiş olsun.
+
+665
+02:24:19,731 --> 02:24:23,551
+0, 0, 1 değeri verilmiş olsun. Yani okuttuğu değer 1.
+
+666
+02:24:25,011 --> 02:24:28,151
+Okuttuğu değer 1. Yani sadece burası aktif olacak.
+
+667
+02:24:28,788 --> 02:24:51,596
+Şu aktif olacak. Bu aktif olduğu için burada bir bağlantı yok. Bu da okuyacağımız değer sıfır. Bunu da okuyacağımız değer sıfır. Burada bir bağlantı var. Sadece bir tanesinin bir olduğunu bilmek diğerlerinin ne olduğunu bakmaya gerek bırakmıyordan sonucun bir olduğunu söylüyor. Yine burada bir bağlantı var. Bir değerini elde etmiş oluyoruz. Dolayısıyla biz bu...
+
+668
+02:24:51,827 --> 02:25:05,128
+ROM'da bu 4 adet logik fonksiyonu programladıktan sonra ROM'un adres uçlarına 001 değerini verdiğimizde yani aslında F3 fonksiyonuna 001 değerini vermiş oluyoruz.
+
+669
+02:25:05,128 --> 02:25:16,808
+F2 fonksiyon için 001 değerini elde etmiş oluyoruz. F1 fonksiyon için 001 elde etmiş oluyoruz. Benzer şekilde F0 için de 001'in çıkışını elde etmiş oluyoruz.
+
+670
+02:25:19,827 --> 02:25:41,227
+İşte or katının programlanabilir olması bu demek. Peki şeye gelelim. Az önceki diagramımızda, şuradaki diagramda diyor ki bakın wrong için or katı programlanabilir. Evet bunu anladık sanırım çünkü her bir dekoder çıkışının her bir dekoder çıkışının
+
+671
+02:25:43,283 --> 02:25:59,523
+OR kapısına bağlantısı vardı. Kaç tane, kaç bitlik bir ROM ise o kadar da OR kapısı kullanıyorduk. Dolayısıyla OR katlarına, dekoder çıkışlarının bağlantısını açıp kapayarak programlama gerçekleyebiliyorduk. Fakat diyor ki burada bakın, AND katı sabit.
+
+672
+02:25:59,664 --> 02:26:04,703
+AND katının sabit olduğunu nereden biliyoruz, nereden söyleyebiliriz? AND katı nerede? Ne dersiniz?
+
+673
+02:26:10,164 --> 02:26:17,724
+Dekoder'in içinde entlenerek çıkmış oluyorlar. Yani sıfır sıfırdan sıfır çıkması ent kapıları ile oluyordu galiba.
+
+674
+02:26:18,291 --> 02:26:30,811
+Evet, yani dekoderin iç yapısını hatırladığımızda dekoder nasıl çalışıyordu? Girişlerine uyguladığımız binary sayı neyse, binary sayının decimal karşılığı neyse ilgili numaralı çıkışı aktif ediyordu.
+
+675
+02:26:30,811 --> 02:26:40,331
+Buna göre biz tüm olası durumlar için çıkışların girişler cinsinden fonksiyonunu yazdığımızda burada çıkışlarının birer min term'e karşılık geldiğini görüyorduk.
+
+676
+02:26:46,291 --> 02:27:07,291
+diğer terimlerle çarpım şeklinde bir karşılıklı minitörmler bunlar. Dolayısıyla aslında her bir çıkışın önünde, iç yapada yani dekoderin içerisinde 3 tane terimi end dediğimiz katman var. O katmanı dekoder olduğu için programlayamıyoruz. Orası sabit olduğunu söylemiş oluyoruz. Dolayısıyla cevap doğru. Teşekkür ederiz.
+
+677
+02:27:09,920 --> 02:27:36,880
+Şunu söyleyebiliriz. Yine dersimizde konuşmuştuk. Mesela 3 girişli kaç fonksiyon yazabiliriz diye konuşmuştuk değil mi? 3 tane ABC girişine sahip kaç farklı fonksiyon yazabiliriz? Bu fonksiyonlardan birisi F, ABC eşittir 0 olabiliyordu veya F, ABC 1 gibi bir fonksiyon olabiliyordu veya F, ABC A üstü B artı AB gibi bir fonksiyon olabiliyordu.
+
+678
+02:27:38,100 --> 02:27:43,100
+Bu şekilde kaç fonksiyon yazabiliyorduk? 3 girişli, lojik kaç fonksiyon yazabiliyorduk?
+
+679
+02:27:47,763 --> 02:27:49,603
+İlk haftalarda konuşmuştuk.
+
+680
+02:27:50,083 --> 02:27:54,043
+2 üzeri 3 müydü? 2 üzeri 3 üzeri 2 miydi? Öyle bir şeydi.
+
+681
+02:27:55,363 --> 02:28:03,103
+Şöyleydi. Şimdi bir ABC'ye göre bir doğruluk tablosu yapsak. Bu doğruluk tablomuzun kaç satırı olur?
+
+682
+02:28:05,243 --> 02:28:06,003
+Güzelen.
+
+683
+02:28:07,123 --> 02:28:35,083
+Yani 3 için konuşalım. 8 satır olur. 2 üzeri 3 satır olur değil mi? Bu satırlarımızdan her birisinin 0 veya 1 değeri alma ihtimali var fonksiyon çıkışı olarak. Dolayısıyla bizim mesela F0 fonksiyonumuzda tüm satırlarımız çıkışı olarak 0 olabilir. F1 fonksiyonumuzda 0.min turn 1 diğerleri 0 olabilir gibi gibi. Dolayısıyla böyle kaç farklı fonksiyon yazabiliriz? Birinci satırda 2 değer, ikinci satırda 2 değer. Dolayısıyla 8.
+
+684
+02:28:35,123 --> 02:29:03,123
+satırın her birisi için iki değer var. Demek ki ikiyi sekiz kere çarpacağız. Demek ki bizim üç girişli yazabileceğimiz fonksiyon sayısı iki üzeri iki üzeri üç. Yani altmış dört farklı fonksiyon yazabiliriz. Bu altmış dört fonksiyondan iki tanesi sabit değerli fonksiyon. Yani f eşittir sıfır, f eşittir bir şeklinde sabit fonksiyonlar. Dolayısıyla biz üç değişkenli tüm fonksiyonları yazmak istediğimizde bunların bir kısmı
+
+685
+02:29:03,123 --> 02:29:23,043
+Bizim için anlamlı değil. Çünkü F3 girişli F eşittir bir fonksiyonu yazmak yerine direkt lojik bir değeri yani elektriksel 5 volt bağları aynı sonucu elde ederim. Demek ki iki tanesi anlamsız. Ama bir de şu var arkadaşlar. Bazı fonksiyonlar bazı fonksiyonların değili şeklinde yazılabilir.
+
+686
+02:29:25,492 --> 02:29:52,572
+Yarı kadar fonksiyonu da dolayısıyla bu şekilde eleyebiliriz. Yani elimizde ekstradan bir NAT kapısı olsa biz 62 tane fonksiyon gerçeklemek yerine 31 tane fonksiyon yapabilecek bir kapasitede donanıma sahip olsak, bunun peşine bir NAT kapısı koysak, çok kabaca söylüyorum detayı hesaplamadan, yine 64 adet fonksiyonu bir şekilde elde edebileceğimiz bir senaryo olmuş oluyor.
+
+687
+02:29:53,492 --> 02:29:59,152
+Bu da şimdi HLA ve PAL mantığında göreceğimiz mantıklarda yapılarda buna benzer yapılar.
+
+688
+02:29:59,152 --> 02:30:15,972
+Temel olarak bizim gerçekleyeceğimiz lojik fonksiyonlarda tüm min törnlere ihtiyacımızın olmayacağı varsayımından hareketle ve bazı min törnleri veya bazı terimleri birbirinin değili olarak kullanabileceğimiz bir senaryo olduğu için
+
+689
+02:30:16,404 --> 02:30:28,244
+İndirgenmiş, daha az sayıda terim ile ifade edilen daha düşük karmaşıklığa sahip entegre devreler olarak karşımıza çıkan bir programlanabilir yapı.
+
+690
+02:30:28,504 --> 02:30:43,364
+Bu yapı PLA yapısına baktığımızda tekrar şemamızda ne diyor PLA için? PLA'nın hem end katı hem de or katı programlanabilir diyor PLA için bu şekilde deniyor. PLA ne? Programmable Logic Array.
+
+691
+02:30:43,956 --> 02:30:49,195
+Şimdi bunun yapısına baktığımızda aslında iç yapısı şurada gördüğünüz gibi bir yapı.
+
+692
+02:30:50,736 --> 02:30:54,276
+Girdilerimizin hem kendisi hem değili bize sağlanmış oluyor.
+
+693
+02:30:54,276 --> 02:31:03,976
+Yani bize aslında kara kutu olarak çizeceksek şu kısım bize PLA içerisinde verilmiş durumda.
+
+694
+02:31:04,416 --> 02:31:08,096
+Dolayısıyla biz bir A girişini sağladıysak A üstü de bizde mevcut.
+
+695
+02:31:09,363 --> 02:31:24,484
+Normalde bakın burada arkadaşlar 3 tane girişli bir fonksiyon fakat 4 tane end katı kullanılmış. 4 tane end katı kullanılmış. Bunun anlamı nedir? Biz en fazla 4 tane min term'lü bir işlem yapabiliriz anlamına geliyor.
+
+696
+02:31:25,164 --> 02:31:29,063
+4 tane min term veyahut da şöyle 4 tane min term üretiyoruz anlamına geliyor.
+
+697
+02:31:29,427 --> 02:31:41,527
+Normalde 3 tane giriş için, 3 eleman için kaç tane min term üretilebilir? 2-3, 8 tane min term üretilebilir. Ama bunların hepsini üretmiyoruz. Sadece yarı kadarını üretiyoruz.
+
+698
+02:31:42,227 --> 02:32:09,448
+Geri kalanları nasıl kullanacağız? Geri kalanları da bizim bir de şu da tam isim olarak görünmüyor ama burada bir NAT katı var. O NAT katı üzerinden de geri kalanlara ihtiyacımız varsa onları üreteceğiz. Dolayısıyla PLA entegresinin AND katmanı programlanabilir durumda. Girişlerimizin kendisi ve değilleri mevcut. Bunlardan hangilerinin Bintörn'e gireceğini seçebiliyoruz.
+
+699
+02:32:10,227 --> 02:32:18,927
+Herhalde de 4 tane min term'e izin verilmiş. Geri kalan 4 tanesi üretilmemiş durumda. Onları da natkatıyla sağlamaya çalışacağız.
+
+700
+02:32:19,707 --> 02:32:23,927
+Min term elde etmiş olduğumuz çarpım terimlerini...
+
+701
+02:32:24,371 --> 02:32:46,371
+Elde etmiş olduğumuz tüm çarpım terimlerini yine bir or katı üzerinde birleştirmemiz de mümkün. Dolayısıyla tıpkı ROM'da olduğu gibi bir programlanabilir or katmanı var. Elde etmiş olduğumuz çarpım terimlerinin toplamı şeklindeki fonksiyon son olarak bir xor katından geçiyor. Bu xor katı da aslında temel olarak şu şekilde çalışıyor.
+
+702
+02:32:47,360 --> 02:33:15,360
+Bu XOR katına girişlerden birisi çarpım terimlerinin toplamı, diğer girişi ise 0 veya 1 olarak programlanabiliyor. Yani ben burada bir stundla tek bir değer seçebiliyorum, 0 veya 1. Eğer 0 seçmişsem buradaki fonksiyon aynen dışarı çıkıyor. Ama 1 seçmişsem bir değişkenin 1 ile XOR'u kendisinin değilini oluşturuyordu. Dolayısıyla buradaki çarpım terimlerinin toplamının değilini elde ediyoruz.
+
+703
+02:33:15,360 --> 02:33:37,180
+Elde etmiş oluyoruz çıktı olarak. Yapı bu şekilde. Şimdi dört tane min term olduğu için eğer biz dörtten fazla min term'e ihtiyaç duyan eş anlı fonksiyon gerçeklemesi yapacaksak bu durumda bir sıkıntıya düşüyoruz.
+
+704
+02:33:37,180 --> 02:33:39,380
+Yani problem şurada tekrar edeyim.
+
+705
+02:33:39,924 --> 02:34:04,304
+Bizim örneğin iki tane fonksiyonu eşanlı gerçeklememiz lazım. Birinci ve ikinci fonksiyonu aldım. KarnoWeb'de indirgedim. Totalde beş tane çarpım terimi çıktı. Bu beş tane çarpım terimi çıktığı zaman bu şu demek. Ben bunu dört tane çarpım terimi üretebildiğim bu dört tane end katında beş farklı senaryo üretemem. O zaman ne yapmalıyım? Ne dersiniz?
+
+706
+02:34:05,843 --> 02:34:16,123
+Buna benzer bir durumu tam toplayıcı da yapmıştık aslında. Oradan belki hatırlarız. Neyi hedefleyemeliyiz?
+
+707
+02:34:21,683 --> 02:34:44,043
+Soruyu tekrar edeyim. Eş anlı olarak birden fazla fonksiyonu gerçekleştirme durumunda olduğumuz bir senaryoda örneğin iki tane fonksiyon gerçekleyeceğiz. Bu fonksiyonları aldım. Girdilere göre karnomöpte indirgedim. Ondan sonra tekil olarak baktım. Birinci fonksiyon üç tane unique.
+
+708
+02:34:45,523 --> 02:35:07,043
+Çarpım teriminden oluşuyor. İkinci fonksiyonda yine iki tane unique, birinci fonksiyonda geçmeyen çarpım teriminden oluşuyor. İkisini de birlikte değerlendirdiğimde beş tane çarpım terimine ihtiyacım varmış. Ama burada gördüğünüz üzere dört tane çarpım terimi üretebilirim PLA mantığında. Ne yaparsam çözüm üretebilirim.
+
+709
+02:35:08,103 --> 02:35:09,804
+Max termini mi alırız?
+
+710
+02:35:11,956 --> 02:35:31,956
+Benzer bir mantık diyebilir. Şeyde nasıl yapmıştık hatırlayacak olursanız, tam toplayıcının Sam ve Kerry hesabında ortak kapı bulmaya çalışmıştık. Yani fonksiyonlardan birisini en indirgenmiş şekilde yazmamıştık da bir veya birkaç seviye indirgemeden önceki halini yazmıştık.
+
+711
+02:35:40,244 --> 02:35:46,424
+Aslında totalde 4 farklı çarpım terimi ihtiyacıyla sonucu elde edebilmiştik.
+
+712
+02:35:47,224 --> 02:35:53,963
+Orada XOR kapısına ortaklanmıştık. Burada da 4 çarpım terimi üzerinden aynı sonucu elde edebiliyor olacağız.
+
+713
+02:35:54,384 --> 02:35:56,024
+Şimdi buradaki örnekle bir bakalım.
+
+714
+02:35:57,984 --> 02:36:04,244
+Tabii öncelikli olarak burada bir tasarım var. Bu tasarıma göre F1 ve F2 fonksiyonları...
+
+715
+02:36:06,291 --> 02:36:08,191
+Neye karşılık veriyor? Bir onu bulalım.
+
+716
+02:36:09,252 --> 02:36:11,851
+Şimdi buradaki terimlerimiz öncelikli olarak şu.
+
+717
+02:36:12,631 --> 02:36:15,811
+Birinci çarpım teriminin çıktısı ne oluyor diye bakalım.
+
+718
+02:36:16,051 --> 02:36:19,631
+Buna A'nın kendisi bağlı ve B'nin değili bağlı.
+
+719
+02:36:19,711 --> 02:36:22,511
+Dolayısıyla buradaki fonksiyonumuz AB üstü.
+
+720
+02:36:22,711 --> 02:36:24,691
+Birinci kapının çıktısı AB üstü.
+
+721
+02:36:25,371 --> 02:36:31,551
+İkinci kapının çıktısı ise A terimiyle C teriminin çarpımında oluşuyor.
+
+722
+02:36:31,551 --> 02:36:33,171
+Üçüncü kapımız.
+
+723
+02:36:34,963 --> 02:36:52,463
+C terimi ve B teriminin çarpımından oluşuyor. Son kapımız ise A üstü B, C üstü teriminden oluşuyor. Daha sonrasında şu birinci A diyelim, A demeyelim, 1V2 diyelim yine.
+
+724
+02:36:53,463 --> 02:36:58,504
+1 ama F fonksiyonu F1 buradaymış, 1V2 olsa şöyle.
+
+725
+02:36:59,219 --> 02:37:17,899
+Bir numaralı or kapısının çıktısına baktığımızda bunun çıktısı A üstü, B, C üstü terimi var. Artı A, C terimi var. Artı A, B üstü terimi var.
+
+726
+02:37:21,012 --> 02:37:33,692
+AB3'lü terimi var. Sonrasında bu XOR katına geliyor bu değer. XOR katında sıfırla XOR'a sokuluyor. Dolayısıyla F1 fonksiyonumuz şurada yazdığımız değerin aynısı. F1 fonksiyonumuz bu.
+
+727
+02:37:35,052 --> 02:37:44,552
+Şimdi 2 numaralı OR kapısının çıkışına bakalım. Burada BC terimi var. Artı AC terimi var.
+
+728
+02:37:44,959 --> 02:37:55,119
+Fakat bu XOR katı 1 ile denkleme sokulmuş. Dolayısıyla buradan elde edeceğimiz çıkış BC artı AC'nin değili olacak.
+
+729
+02:37:55,119 --> 02:38:04,959
+Pardon. Şöyle yapalım. Bunun değili olacak. Bunu içeri dağıttığımızda da B üstü artı C üstü çarpı.
+
+730
+02:38:06,388 --> 02:38:14,788
+A üstü artı C üstü olmuş olacak. Bunu tekrar dağıttığımızda da elde edeceğimiz sonuç şöyle şuraya yazalım.
+
+731
+02:38:17,288 --> 02:38:20,608
+A üstü, B üstü, birinci terim bu.
+
+732
+02:38:21,768 --> 02:38:28,688
+B üstü, C üstü artı B üstü, C üstü artı
+
+733
+02:38:30,036 --> 02:38:37,076
+A üstü, C üstü, artı C üstü terim olarak, çarpım terimi olarak karşımıza çıkmış oluyor.
+
+734
+02:38:38,195 --> 02:38:44,536
+Baktığımızda, işte ortak terim olarak daha önceki hesapladıklarımızda benzer ortak terimler yok.
+
+735
+02:38:45,495 --> 02:38:50,036
+Demek ki bu halde biz bunu indirgemiş olsaydık veya kullanmış olsaydık,
+
+736
+02:38:50,644 --> 02:38:58,463
+Aslında burada yine indirgemek de mümkün ama bu şekilde bir sonuç elde etmiş olsaydı çok sayıda çarpı terimine ihtiyacımız vardı.
+
+737
+02:38:58,463 --> 02:39:09,384
+Bu şekildeki çarpı terimleriyle değil de diğer kapıdan gelebilecek ortak kapıları, diğer fonksiyondan gelebilecek ortak kapıları kullanmaya çalıştık, oluşturmaya çalıştık bir yapıda.
+
+738
+02:39:10,364 --> 02:39:13,463
+Dolayısıyla analizini bu şekilde ifade edebiliriz.
+
+739
+02:39:17,299 --> 02:39:40,299
+Bir tasarım örneğine de bakacak olursak. Şimdi amacımız neydi? Bir fonksiyonu gerçekleştirirken max termler cinsinden yazabiliriz veya min termler cinsinden yazabiliriz. Ama fonksiyonu hangi katta değil veya kendisi olarak bırakabiliyoruz? En son katta. Dolayısıyla...
+
+740
+02:39:41,108 --> 02:39:48,507
+Mesela birinci ve ikinci fonksiyonu gerçeklemeye çalışırken ya max termler cinsinden belirleyeceğiz ya min termler cinsinden belirleyeceğiz.
+
+741
+02:39:48,968 --> 02:39:54,468
+Ama elimizde bir nat katı olduğu için ortak kapılar bulmaya çalışacağız. Bunu da şöyle yapacağız.
+
+742
+02:39:55,067 --> 02:40:01,347
+Örneğin birinci fonksiyon 3, 5, 6 ve 7 numaralı min termlerin toplamından oluşuyormuş.
+
+743
+02:40:02,047 --> 02:40:06,347
+İkinci fonksiyon ise 1, 2, 3 ve 7 numaralı min termlerin toplamından oluşuyormuş.
+
+744
+02:40:06,868 --> 02:40:33,328
+Bunları karnometre koyduğumuzda, 3 numara mesela şöyle okuyalım bunu. 0, 0, pardon A, B, C'miş. 0, 1, 1. 0, 1, 1. Şuraya 1 yazdık. 3 numaralı mintern. 5 numaralı mintern. 1, 0, 1. 1, 0, 1. Şuraya yazdık. 6 numaralı mintern. Şurası 1, 1, 0. 7 numaralı mintern. Burası yazdık.
+
+745
+02:40:33,907 --> 02:40:50,067
+İkinci fonksiyonumuza geldiğimizde 0, 0, 1, 0, 0, 1 şuradaki terim. İki numaralı min termümüz 0, 1, 0 şuradaki terim. Üç numaralı min termümüz şuradaki terim. Yedi numaralı min term burası.
+
+746
+02:40:54,451 --> 02:41:14,331
+Mesela bir taraftaki sıfır veya birlerin karşı taraftaki ters işaretli olan değerleriyle eşleştirmeye çalışacağız. Yani bunun natıyla, mesela buranın natıyla bunun natlanmamış halini eşleştirmeye çalışacağız. Terim olarak eşleştirmeye çalışacağız ki ortak kapılar ortaya çıksın.
+
+747
+02:41:15,011 --> 02:41:21,171
+F1 fonksiyonu için diğer tarafta natı olmayan şu terim var. Yani bu ne demek?
+
+748
+02:41:21,780 --> 02:41:29,220
+Şu iki terimden, bu karnomepten oluşturmuş olduğumuz çarpım terim sadece F1 fonksiyonuna özel. Bunu anlıyoruz.
+
+749
+02:41:29,220 --> 02:41:38,619
+Benzer şekilde birkenki durumlarını karnomepe aldığımız şuradaki senaryo sadece F2 fonksiyonuna özel.
+
+750
+02:41:39,440 --> 02:41:40,076
+Ama...
+
+751
+02:41:40,244 --> 02:41:51,783
+Mesela burada şu ve şu min termleri de alabilirdik ama bu min termleri aldığımız zaman buradan oluşan çarpım teriminin değili karşı tarafta oluşmuyor.
+
+752
+02:41:52,504 --> 02:41:58,864
+Dolayısıyla bunun için ayrı bir fonksiyon, bunun için ayrı bir fonksiyon veya çarpım terimi kullanmamız gerekecektir.
+
+753
+02:41:58,864 --> 02:42:00,123
+Onun yerine şöyle yapıyoruz.
+
+754
+02:42:00,884 --> 02:42:21,344
+Değilini alabileceğimiz için buradaki birin eş değeri şuradaki sıfır max term olarak. Yine buradaki sıfır karşı taraftaki bir eş değeri olarak kullanmış oluyoruz. Dolayısıyla biz F1 fonksiyonunu bu eş değerlilik çerçevesinde hem F1'i hem de F1'in değerini yazmaya çalışıp ortak kapıları bulmaya çalışacağız.
+
+755
+02:42:27,379 --> 02:42:38,899
+B üstü C terimi kaldı değil mi? Şuradan F'in değilini yazarsak, F1'in değilini yazarsak yani sanki burada 1 varmış gibi yazdığımızda şu terim ortaya çıkmış olur.
+
+756
+02:42:41,119 --> 02:42:51,699
+Bununla birlikte yine değili üzerinden yazacak olursak karşı tarafta bir eş değerlik oluşturduğumuz için şu terimin karşılığını
+
+757
+02:42:52,128 --> 02:43:13,028
+A üstü, B üstü, C. A üstü, B üstü, C terimi. Şunun karşılığını A, B, C üstü, A üstü, pardon A üstü, B, C üstü şu terim. Dolayısıyla F1 fonksiyonunun değilini yazdık. F1 fonksiyonunun kendisini yazdığımızda ise şey yapabiliriz. Yine min törner cinsinden yazabiliriz bunu.
+
+758
+02:43:17,012 --> 02:43:26,092
+Yani bir olanları karnomepe alarak, karşı tarafta eşdeğerliği olanları biriktirmeye çalışarak böyle bir fonksiyon elde ediyoruz.
+
+759
+02:43:26,792 --> 02:43:34,412
+F2 fonksiyonu için de F2 fonksiyonunu öncelikli olarak yine minternel cinsinden yani birilerin karnomepleri şeklinde yazabiliriz.
+
+760
+02:43:34,412 --> 02:43:41,832
+Bir de F2 fonksiyonunu D'li olarak yazabiliriz. D'li olarak yazarken de aslında burada tutmuş olduğumuz.
+
+761
+02:43:42,355 --> 02:43:52,435
+Fonksiyonun değilini direkt yazabiliriz. Ama dikkat edeceğimiz nokta ortak kapı oluşturacak şekilde 3 terimleri de korumak. F2'nin üstünde şurada bar kaybolmuş.
+
+762
+02:43:52,876 --> 02:44:08,435
+Bu şekilde eş anlı gerçekleyeceğim 2 fonksiyona ilişkin olarak fonksiyonun değili ve kendisini tuttuktan sonra ya ikisinin de XOR katında 0 ile birleştiği an için yani karşılıklı
+
+763
+02:44:09,523 --> 02:44:22,203
+Her ikisinin de 1 ile X0'a sokulduğu durum için veya birisinin 1, birisinin 0 yani çapraz olarak eşleştirmelerine bakıyoruz.
+
+764
+02:44:22,203 --> 02:44:26,603
+Yani şu eşleştirmeye, şu eşleştirmeye.
+
+765
+02:44:27,316 --> 02:44:39,416
+Şu eşleştirmeye ve şu eşleştirmeye bakıyoruz. Bu dört durumda en fazla ortak kapı nerede var diye bakmaya çalışıyoruz ve dört adet çarpım teriminde bunları oluşturabilir miyiz diye bakıyoruz.
+
+766
+02:44:40,096 --> 02:44:48,436
+Burada elde ettiğimiz sonuç F1'in değiliyle F2'nin birlikte alındığı senaryoda şuradaki ortak kapıyı görüyorsunuz.
+
+767
+02:44:48,436 --> 02:44:53,756
+Bir, sonra şuradaki terimimiz var. Onu farklı renkli yapalım.
+
+768
+02:44:56,531 --> 02:44:58,612
+Bu da ortak bir kapı oluşturuyor.
+
+769
+02:45:00,711 --> 02:45:09,991
+Sonrasında sadece F1'e özel olan bir çarpım terimi var ve sadece F2'ye özel olan bir çarpım terimi var.
+
+770
+02:45:24,468 --> 02:45:38,788
+3 ve 4 çarpım terimi elde etmiş oluyoruz. Bunlardan iki tanesi ortak kapıda mevcut oluyor veya ortak terim olarak mevcut oluyor. Dolayısıyla bunları kullandığımız senaryoda da
+
+771
+02:45:38,788 --> 02:45:51,587
+bunları bir arada kullandığımız senaryoda da aslında 4 tane çarpım terimiyle iç yapısı bu şekilde verilmiş olan bir PLA entegresinde
+
+772
+02:45:52,531 --> 02:45:59,311
+4 farklı çarpım terimi kullanarak bu fonksiyonu gerçekleştirmemiz mümkün oluyor diyebiliyoruz.
+
+773
+02:46:00,831 --> 02:46:05,851
+Bir de PAL yapısı var. Süremiz varken kısacıkta ondan bahsedelim.
+
+774
+02:46:06,711 --> 02:46:11,491
+PAL yapısında da hangi katı programlayabiliyoruz? AND katını programlayabiliyoruz.
+
+775
+02:46:12,031 --> 02:46:18,912
+AND katını programlayabildiğimiz için aslında burada kaç tane terimi, kaç tane çarpım terimini topladığımız fix.
+
+776
+02:46:19,311 --> 02:46:29,092
+Eğer ki bizim elde etmiş olduğumuz fonksiyonda, örneğin burada görmüş olduğunuz PAL entegresinde 3 tane çarpım terimi toplanabiliyor.
+
+777
+02:46:29,572 --> 02:46:35,211
+Ama biz öyle bir tasarım gerçekleştirdik ki 4 tane çarpım teriminin toplamına ihtiyaç var.
+
+778
+02:46:35,711 --> 02:46:47,291
+Bunu kolaylaştırmak adına veya mümkün kılmak adına PAL entegrelerinde or katından birinin çıktısı diğer bütün AND girişlerine, AND katmanına bir giriş olarak sağlanıyor.
+
+779
+02:46:47,311 --> 02:46:55,651
+Dolayısıyla buradaki yapıyı kullanarak yani bir toplam terimini tekrar end katına sağlayarak, vererek
+
+780
+02:46:57,172 --> 02:47:25,172
+Burada şeyi gerçekleştirmemiz mümkün oluyor. Üçten fazla çarpım terimini topladığımız senaryoyu gerçekleştirmemiz mümkün oluyor. Hızlıca bahsetmek gerekirse bize dört tane eşanlı gerçekleşecek fonksiyon verilmiş. Bu fonksiyonlar için doğru min törner verilen işte toplam formülleri çerçevesinde ifade edilmiş. Biz bu fonksiyonları alıp daha sonrasında minimum versiyonlarını elde ettiğimizde WXYZ fonksiyonlarını bu şekilde...
+
+781
+02:47:25,172 --> 02:47:50,551
+elde ediyoruz. Fakat burada Z fonksiyonunu verilen PAL entegresi yapısına gerçekleştirmek mümkün değil normalde. Çünkü toplam terimi, kaç tane toplam terim var? 1, 2, 3, 4 tane toplam terim var. Dolayısıyla bunu gerçekleyebilmek için diğer fonksiyonların bunun içerisinde yer alıp almadığını bakmamız gerekiyor. Bu noktada da
+
+782
+02:47:50,879 --> 02:48:03,579
+İlk iki terimin W ile verilmiş olan fonksiyonun eş değeri olduğunu görüyoruz. Dolayısıyla W çıktısını buraya sağlayabilirsek, 3 tane terim toplamına bunun indirgenebildiğini görüyoruz.
+
+783
+02:48:04,199 --> 02:48:15,219
+Dolayısıyla burada yapacağımız işlem, baktığımız zaman, genel yapısına baktığımız zaman yine girdilerimiz bunların içeride kendisi ve değili sağlanıyor.
+
+784
+02:48:15,731 --> 02:48:39,435
+Bunları end katında çarpım terimi olarak üretiyoruz, kullanıyoruz. Daha sonrasında W çıkışını aynı zamanda Z çıkışına da bir girdi olarak veriyoruz. Bakın burada W girişini de Z'ye bir toplam terim olarak aktarıyoruz. Bunu yaparken W teriminin satırındaki diğer girdileri herhangi bir...
+
+785
+02:48:39,667 --> 02:48:56,948
+Katılım sağlamıyoruz. Sadece W terimi ent kapısına giriyor. Dolayısıyla şunun çıkışı W oluyor. Dolayısıyla Z'nin içerisinde W artı diğer terimler yer almış oluyor. Bu yapıda PAL entegresi için.
+
+786
+02:48:57,327 --> 02:49:08,127
+verilen sınırdan daha fazla sayıdaki çarpım terimini toplamak için sağlanmış bir kolaylık olarak karşımıza çıkıyor diyelim.
+
+787
+02:49:09,047 --> 02:49:13,727
+Burada bırakalım. Buraya kadar olanla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+788
+02:49:14,947 --> 02:49:21,727
+Hocam, o W'ye indirgeyip sonra kullanma gibi şeyleri...
+
+789
+02:49:22,484 --> 02:49:25,324
+PLA'da da yapabilir miyiz?
+
+790
+02:49:26,804 --> 02:49:31,043
+Orada toplam terimi şey olarak beklenmiyor ya sanki.
+
+791
+02:49:32,204 --> 02:49:32,724
+Bakalım.
+
+792
+02:49:33,744 --> 02:49:35,684
+Burada ortak kapı aramamız lazım.
+
+793
+02:49:35,944 --> 02:49:38,064
+Burada ortak terim aramamız lazım.
+
+794
+02:49:38,204 --> 02:49:40,004
+Ortak çarpım terimi aramamız lazım.
+
+795
+02:49:40,628 --> 02:50:06,148
+Şey tarafında indirgeme olabilir mi? Or katında. İçerisinde yer alıyorsa evet yani o da bir yöntem olabilir aslında. Yani sadece bir terimi buraya toplam olarak katıp ama burada şey zaten kısıtlı. Büyük ihtimal buradaki darboğaz, PLA entegresindeki darboğaz çarpım terimindeki kullanılacak şeyden gelecek.
+
+796
+02:50:07,412 --> 02:50:35,412
+4 tane çarpım terimindeki kısıt daha büyük bir darboğaz oluşturacak. Yani içinde aramaktan ziyade. Dolayısıyla burada büyük ihtimalle ortak terimleri bulmamız daha pratik olur diye düşünüyorum. Buradaki yapıya bakacak olursak, paldaki yapıya bakacak olursak zaten iç yapı olarak o toplam teriminin bir kısmının diğer fonksiyonlarda olmasını arattırıyor. Zaten yapı olarak bir bağlantı sağladığı için o da onu zor.
+
+797
+02:50:35,412 --> 02:50:53,671
+Yani yapı itibariyle, tasarım itibariyle büyük ihtimalle PLA'da ortak çarpım terimleri bulmak daha pratik ve optimum. PAL entegresinde ise toplam terimlerini diğer fonksiyonlar içerisinde bulmak daha optimum, daha pratik sonuç veriyor diye düşünüyorum.
+
+798
+02:50:54,631 --> 02:50:55,412
+Anladım hocam, teşekkürler.
+
+799
+02:50:59,412 --> 02:51:01,291
+Başka soru var mı arkadaşlar?
+
+800
+02:51:05,876 --> 02:51:31,095
+Başka soru yoksa dersi tamamlayacağım, bitireceğim. Önümüzdeki hafta tekrar hatırlatalım. Bir tane kısa sınavımız var. Kısa sınavımız dersin son saatinde online yıldız edi.tr üzerinden yürütülecek. Yani online yıldız edi.tr'ye login olup bilgisayar donanımının kısa sınav birini belirlenen saatte başlatmanız gerekiyor. Büyük ihtimal bir saat civarında bir sınav olur. Çoktan seçmeli olma ihtimali yüksek.
+
+801
+02:51:31,603 --> 02:51:54,783
+Buna göre sınav kapsamı ne olacak onu söyleyeyim. İlk 4 haftada gördüğümüz konuların tamamı kısa sınav kapsamında mevcut. Dolayısıyla kısa sınav var bu haftaki konudan çıkmaz diye düşünürseniz yanlış olur. İlk 4 haftanın konusu kısa sınava dahil. Yani derste göreceğiz sonra sınavda karşınıza çıkabilir onu söylemiş olayım.
+
+802
+02:51:55,507 --> 02:52:09,608
+Onun dışında başka hatırlatmak istediğimiz bir şey var mı? Onun dışında yok herhalde. Sizin de başka sorunuz yoksa arkadaşlar bu haftalık bitirmiş olalım. Katılımınız için teşekkür ediyorum. Haftaya tekrar görüşmek üzere. İyi akşamlar herkes.

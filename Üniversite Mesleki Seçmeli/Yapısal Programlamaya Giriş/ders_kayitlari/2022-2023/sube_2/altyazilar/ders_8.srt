@@ -1,0 +1,4035 @@
+1
+00:07:47,987 --> 00:07:48,987
+Arkadaşlar, günaydın.
+
+2
+00:07:55,283 --> 00:07:56,783
+Ses geliyor mu acaba?
+
+3
+00:07:57,783 --> 00:07:58,783
+Geliyor hocam.
+
+4
+00:07:59,283 --> 00:08:00,283
+Dur.
+
+5
+00:08:03,283 --> 00:08:04,283
+Şimdi...
+
+6
+00:08:10,483 --> 00:08:18,411
+Bu hafta dördüncü konudan devam edeceğiz. Şimdi şöyle bir bakalım ne varmış.
+
+7
+00:08:24,980 --> 00:08:28,980
+Şimdi dizilerle alakalı başlamıştık.
+
+8
+00:08:30,680 --> 00:08:32,980
+İlk soru, soru 1.
+
+9
+00:08:35,180 --> 00:08:49,980
+Merging to sorted array. Konumuz bu. Merge edeceğiz, birleştireceğiz.
+
+10
+00:08:50,707 --> 00:09:01,507
+Merge Sort diye bir şey söylüyoruz ya. İşte o Sort işlemi yapılırken sıklıkla kullanılan algoritmalardan bir tanesi.
+
+11
+00:09:02,707 --> 00:09:14,707
+Elimizde iki tane sıralı dizimiz var. L1 ve L2 diye. Bunların mesela uzunluğu L1 diyelim, n elemanlı olsun.
+
+12
+00:09:15,379 --> 00:09:27,879
+L2, M elemanlı olsun, bunlar sıralı. Bunu bir diziye sıralayacağız. N artı M elemanlı yeni bir dizi oluşturacağız.
+
+13
+00:09:27,879 --> 00:09:39,379
+Ve iki sıralı dizi virileşmiş olacak. Evet, ilk yaklaşım ne olabilir? En basit haliyle düşünceler olursak.
+
+14
+00:09:39,379 --> 00:09:41,995
+Önce merge son ikisini birden sort.
+
+15
+00:09:45,172 --> 00:09:50,572
+[öğrenci], tekrar bir şey yaparsan, çok kesik geldi. Önce bir şey dedin.
+
+16
+00:09:51,572 --> 00:09:54,372
+Önce merge ederiz, sonra eksini birden sort yaparız.
+
+17
+00:09:55,772 --> 00:10:03,772
+Merge edelim derken, diyorsun ki şunu yapalım, işte L1'i L3'e veya L2, L3'e aktarırım.
+
+18
+00:10:04,172 --> 00:10:09,372
+Arkasına da, işte hangisini aktarmışsam onu aktarırım. Doğru mu?
+
+19
+00:10:09,779 --> 00:10:14,379
+Yadrik'ını sırasız bir şekilde ikisini de birleştirelim, sonra hepsini birden dizelim.
+
+20
+00:10:14,379 --> 00:10:27,779
+Evet, sırasız bir şekilde anladım. Örneğin şu L3 dizim ise, L1 dizim N tane eleman olacak şekilde, sonra L2 dizim M tane eleman olacak şekilde.
+
+21
+00:10:28,779 --> 00:10:36,579
+Bunu alırım. Buna dedik ki önce merge dedik, tamam. Sonra sort, L3.
+
+22
+00:10:37,076 --> 00:10:53,475
+V3'ü sıraladık. Burada karmaşıklık ne olabilir? Merge ederken doğrudan n tane işlem yapıyoruz. Önce bunu yazdık, daha sonra devamında bunu yazdık. Şuranın karmaşıklığı, birinci adımın karmaşıklığında n deriz.
+
+23
+00:11:02,355 --> 00:11:16,355
+Sort işlemi de iyi bir sıralama algoritması kullanırsak nLoggen ile çözülür. Yani burada karmaşıklığımız genel anlamda ne olur? Birinci durumda nLoggen.
+
+24
+00:11:19,860 --> 00:11:29,460
+block n artı n artı n gibi bir şey. Bu da yaklaşık olarak n block n'lik oluyor.
+
+25
+00:11:29,460 --> 00:11:40,460
+Kötü bir sıralama algoritması kullanırsak, tabii şu n kare olabilir. O zaman karbaşıklığımız n kareye gider ama biz en iyi algoritmalardan birini kullandığımızı düşünelim.
+
+26
+00:11:40,460 --> 00:11:46,443
+Başka bir alternatif ne olabilir? Bu birinci yaklaşım.
+
+27
+00:11:51,028 --> 00:11:53,587
+Approach 2 diyelim mesela.
+
+28
+00:11:56,148 --> 00:11:57,687
+İkinci algoritma.
+
+29
+00:12:00,748 --> 00:12:03,019
+Şu birinci algoritma A1.
+
+30
+00:12:08,467 --> 00:12:13,467
+Evet, nasıl bir şey söyleyebilirim? Mesela şöyle örnek üzerinden yapacak olsak.
+
+31
+00:12:14,467 --> 00:12:18,467
+Burada ne olsun? 1 olsun, 2 olsun, 4 olsun, 6 olsun.
+
+32
+00:12:20,467 --> 00:12:25,467
+Şurada da 1 olsun, 3 olsun, 5 olsun, 7 olsun.
+
+33
+00:12:26,467 --> 00:12:31,467
+Bunları birleştirdiğimizde, işte 1, 2, 3, 4, 5, 6, 7'yi elde edeceğiz.
+
+34
+00:12:32,467 --> 00:12:33,467
+Ne yapabiliriz?
+
+35
+00:12:37,460 --> 00:12:45,460
+[öğrenci]'in söylediği 2-4-6, peşine 1-3-5-7 gelecek. Ondan sonra bunu sıralayacağız. 1-2-3-4-5-6-7'e elde edeceğiz.
+
+36
+00:12:45,460 --> 00:12:54,460
+Ve karmaşıklığımız ne oldu burada? Endogen oldu. Acaba daha az bir karmaşıklıkla bu problemi çözebilmek mümkün mü?
+
+37
+00:12:55,460 --> 00:13:01,460
+Hocam, son diziyi atarken sıralayıp atayabiliriz. Belki n artı yandan kurtulabiliriz.
+
+38
+00:13:01,779 --> 00:13:15,379
+Son diziyi atarken dediğimiz 2-4-6'yı mesela kopyalayalım dedin. Öyle mi anlıyorum? Biri yazarken bir yandan sıralayalım, yani doğru yere kaydederim. Öyle mi?
+
+39
+00:13:15,379 --> 00:13:21,779
+İki diziyi karşılaştıra karşılaştıra atalım hocam. Mesela ilk dizinin ilk kelimanın büyük, ikinci dizinin ilk kelimanın büyük.
+
+40
+00:13:21,779 --> 00:13:27,779
+Tamam, çok güzel. Anladım. O zaman onu bana tarif edeceksin.
+
+41
+00:13:28,563 --> 00:13:31,723
+Kapıyı sen açtın, şimdi tamam.
+
+42
+00:13:31,723 --> 00:13:38,563
+Hocam, bir for döngüsü yapabiliriz. Birinci dizinin ilk elemanı büyük, ikinci dizinin ilk elemanı mı?
+
+43
+00:13:38,563 --> 00:13:44,563
+Hangisi büyükse, bir değişkeni bir arttırabiliriz. Sonra ikinci değişkenleri karşılaştırabiliriz.
+
+44
+00:13:44,563 --> 00:13:52,563
+Anladım. O zaman diyoruz ki, şöyle bir şey yapacağız. Bir tane işaretçi şurada olacak. Bir işaretçi de burada olacak.
+
+45
+00:13:52,563 --> 00:13:56,459
+İşte buna mesela x diyelim, buna y diyelim.
+
+46
+00:13:56,755 --> 00:14:22,535
+İkisi de, indisi sıfırdan başlayacak. İkisi de sıfırdan başladı, tamam. O zaman bakacağız. Şimdi diyeceğiz ki, hangisinin elemanı küçükse şuradan kopyalamaya başlayalım. O zaman bir de burada z diye bir şey olacak değil mi? Çünkü hangisi küçükse onu alacağız, daha sonra bunu da artıracağız. Öyle değil mi? Aynı hocam. 3 tane böyle bir değişkene ihtiyacımız var.
+
+47
+00:14:23,604 --> 00:14:30,364
+Döngü ile bakacağız. Şimdi döngü ile bakarken neye göre bakmamız lazım? Hani döngü, tamam for döngüsü dedik.
+
+48
+00:14:30,364 --> 00:14:33,364
+I eşittir, sıfırdan mı başlayacağız?
+
+49
+00:14:33,364 --> 00:14:39,364
+Aynen hocam, Endic'deki for döngüsü üçüncü dizinin indisi olabilir.
+
+50
+00:14:39,364 --> 00:14:46,844
+Alt taraftan da if-else ile ilk diziden eleman geldi, ikinci diziden mi eleman geldi?
+
+51
+00:14:46,844 --> 00:14:50,644
+Buna m'ye eleman dersek o zaman şu n artı m'e kadar mı gidecek?
+
+52
+00:14:50,964 --> 00:15:07,948
+Aynı. Tamam, iyi, plus, plus. Şimdi bakıyoruz, if- şuna D1 diyelim, buna D2 diyelim, şu da D3 olsun. D1'in-
+
+53
+00:15:08,275 --> 00:15:25,895
+İ'sine bakacağız. İ'sine bakmıyor. D1'in x'sine bakacağız. D1'in x'sine, bir de D2'nin de y'sine bakacağız. D1'in x'i küçükse D2'nin y'sinden ne yapacağız? O zaman D3 z eşittir, D1 x olsun.
+
+54
+00:15:25,895 --> 00:15:27,096
+D3.
+
+55
+00:15:30,096 --> 00:15:35,576
+Y'yi bir arttıralım. x olmadı da hocam. Gerçi ikinizin ilki yabanı daha küçük.
+
+56
+00:15:36,884 --> 00:15:44,483
+Evet, yani daha küçük olanı alacağız ya, küçükten bir eser alıyoruz. D1'in ikisini aldık, şimdi ne yapacağız?
+
+57
+00:15:45,084 --> 00:15:52,804
+Artık bu alındı, buna bir daha bakmamamız için x'i bir arttırmamız lazım. Z zaten kendisi artıyor.
+
+58
+00:15:53,364 --> 00:16:03,844
+D3'ün z'si demeyeyim mi, D3'ün i'si diyebiliriz. i kendisi artıyor her halükarda. Bu böyle.
+
+59
+00:16:04,307 --> 00:16:06,307
+Var mı burada ekleyeceğimiz bir şey?
+
+60
+00:16:06,307 --> 00:16:08,307
+Hocam bir else lazım galiba buraya.
+
+61
+00:16:08,307 --> 00:16:13,307
+Tamam yani, birinci ifimiz bu. İlk kontrol bu. Şimdi ne olabilir?
+
+62
+00:16:13,307 --> 00:16:14,307
+Tam tersi durumda da...
+
+63
+00:16:14,307 --> 00:16:16,307
+Tam tersi bir durum olabilir.
+
+64
+00:16:16,307 --> 00:16:18,307
+D2Y'yi atayıp Y'yi arttırabilir.
+
+65
+00:16:18,307 --> 00:16:23,307
+Yani direkt else diyelim. O zaman şunu da şöyle söyleyelim, direkt küçük eşitleri kabul edelim burada.
+
+66
+00:16:23,307 --> 00:16:29,307
+Eşit olursa burada alsın, eşit olmazsa büyük olursa diğer tarafta olsun. Diğer olasılığa bakmayalım.
+
+67
+00:16:29,307 --> 00:16:31,307
+Burada da ne yapacağız?
+
+68
+00:16:32,019 --> 00:16:47,819
+D3'ün iyisine bu sefer, D2'nin Y'sini alacağız. Burada da Y'yi arttıracağız. Buradan gübaşa dönecek ve böyle devam edip gidecek. Burada tek bir sıkıntı var.
+
+69
+00:16:51,379 --> 00:17:10,880
+D2 D1'den çok uzunsa bu patlar hocam. Ne olursa? D2 D1'den çok uzunsa bu patlar. Çok uzunsa derken? Mesela 10 elemandı, D1 3 elemandı. Eğer sıralı değilse D2. Yani D1 ve D2'nin sırada olacağı garanti mi? Evet.
+
+70
+00:17:11,380 --> 00:17:21,380
+Yani şunu kontrol etmemiz gerekiyor. Bunun çok uzun olduğu bir durumda, örneğin dedik ki arkadaşımız 3 elemanlı, bunu 10 elemanlı.
+
+71
+00:17:21,380 --> 00:17:38,092
+Şimdi 3 elemandan sonra, ilk 3 elemanı aldığımızı kabul edelim. 2, 4, 6 olmasın da mesela elemanları şöyle değiştireyim. 1 olsun, 2 olsun, 3 olsun.
+
+72
+00:17:38,740 --> 00:17:42,820
+Her durumda çünkü algoritma çözmesi lazım. Genelleştirilebilir olması gerekiyor.
+
+73
+00:17:43,380 --> 00:17:47,700
+Ne bileyim, 4 olsun, 5 olsun, 6 olsun, 7 olsun, ondan sonra bir de 8 olsun.
+
+74
+00:17:48,019 --> 00:17:50,259
+Böyle devam ediyoruz. Şimdi 1'e baktık.
+
+75
+00:17:50,579 --> 00:17:51,579
+Burada.
+
+76
+00:17:52,340 --> 00:17:58,460
+D1'in x'i yani ilk başta da x eşittir 0, y eşittir 0 diye programa giriyoruz.
+
+77
+00:18:00,059 --> 00:18:01,860
+1'e baktık, bunu aldık.
+
+78
+00:18:02,180 --> 00:18:05,380
+2'ye baktık, bunu aldık. Yani x burada.
+
+79
+00:18:05,619 --> 00:18:10,940
+3'e baktık, bunu aldık. Şimdi x'i arttırdığımda dizinin dışına çıkmış oluyoruz.
+
+80
+00:18:12,859 --> 00:18:19,019
+Burada hani bu sorun birazcık başımıza iş açtı mesela. Bundan sonrası yok.
+
+81
+00:18:19,988 --> 00:18:21,988
+O zaman buralarda ekstra...
+
+82
+00:18:21,988 --> 00:18:27,988
+For döngüsünün koşuluna ikisinin de sınırını açtığımızda for'un bitmesini ekleyebiliriz.
+
+83
+00:18:27,988 --> 00:18:33,988
+Mesela i küçük n artı m dedik ya, orada x küçük n, y küçük m de seç.
+
+84
+00:18:33,988 --> 00:18:39,988
+Olur. Yani o zaman ne diyeceğiz? Şurayı birazcık revize edeceğiz.
+
+85
+00:18:39,988 --> 00:18:41,988
+Yani oraya n ettirilir.
+
+86
+00:18:41,988 --> 00:18:45,484
+Küçüktür n olduğunuzu diye y küçük m artı.
+
+87
+00:18:45,748 --> 00:18:55,048
+V mi V'ya mı ona da bakmak lazım ama V olması daha güzel. Y küçüktür, M olduğu sürece dön.
+
+88
+00:18:56,048 --> 00:19:04,448
+I zaten, pardon, I ne olacak? Böyle devam edip gidecek. Ama bunu yapmakla iş bitmiyor.
+
+89
+00:19:05,875 --> 00:19:32,155
+Şimdi döngüden çıktık, yarım kalıyor. Döngüden çıktık, 1, 2, 3'ü aldık, 4, 5, 6, 7, 8'in aşağıda bir şekilde devam ettiniz. O zaman şuna bakacağız. Acaba bu döngüden niçin çıktık? Şu sebeple mi çıktık, bu sebeple mi çıktık? Bunun kontrolünü yapmamız lazım. Ne diyebiliriz? If x eşittir eşittir neyse buna göre bir işlem yapalım.
+
+90
+00:19:32,276 --> 00:19:36,776
+Çünkü ne oldu? Demek ki birinci dizide oldu, ikinci diziden devam etmemiz gerekiyor.
+
+91
+00:19:37,276 --> 00:19:48,776
+Veya if-y eşittir-eşittir-me ise, o zaman ikinci dizi önceden bitti, birinci dizi boşta kaldı, birinci diziyi devam ettirmemiz gerekiyor.
+
+92
+00:19:49,276 --> 00:19:59,776
+Burada bir şeyler, bir döngü daha çevireceğiz. For-for. Bu döngü kalan yerden itibaren elemanları doğrudan, hani hiç bakmadan kopyalamak için yapılan bir şey.
+
+93
+00:20:00,000 --> 00:20:26,480
+1-2-3'ü aldık. Artık B'nin baştan itibaren hiç kontrol yapmadan direkt kopyalama yani dizinin 3'ünün iyisine, işte tabi bu iyi döngüsü, şu da iyi döngüsü. Ne yap? Eğer burada birinci dizide olduysa dizinin 2'nin Y'sinden devam et. Şurada dizinin 3'ünün iyisine, dizinin 1'inin X'sinden devam et.
+
+94
+00:20:26,836 --> 00:20:33,715
+Şurada y'yi arttıracağız, burada x'i arttıracağız. Bu döngü böyle dönüp gidecek iki farklı durum içinde böyle bir şey yapacağız.
+
+95
+00:20:33,715 --> 00:20:34,916
+Peki.
+
+96
+00:20:34,916 --> 00:20:37,236
+Yukarı olarak yazacağım efendim.
+
+97
+00:20:37,236 --> 00:20:51,316
+Onun yerine ilk for döngüsün içerisinde x'in n'i geçmeyecek şekilde veya y'nin de m'i geçmeyecek şekilde bir işlem yapabilir miyiz?
+
+98
+00:20:52,084 --> 00:20:57,403
+Nasıl yapacağız? Yani şu if'in olduğu yerde diyorsun, bir şeyler yapalım.
+
+99
+00:20:57,403 --> 00:20:59,004
+Evet hocam.
+
+100
+00:20:59,004 --> 00:21:04,844
+Ama orada da şunu yapman gerekiyor. Şimdi döngünün şartını şuna göre ayarladık.
+
+101
+00:21:04,844 --> 00:21:07,844
+Mesela hocam şey yapabiliriz.
+
+102
+00:21:07,844 --> 00:21:09,244
+Hı hı.
+
+103
+00:21:09,244 --> 00:21:10,244
+Eee.
+
+104
+00:21:10,244 --> 00:21:14,324
+İçerideki if'in yani aynen.
+
+105
+00:21:14,324 --> 00:21:15,844
+Aynen. Sol tarafına.
+
+106
+00:21:15,844 --> 00:21:16,844
+Hı hı.
+
+107
+00:21:16,844 --> 00:21:17,844
+X.
+
+108
+00:21:18,771 --> 00:21:24,172
+Büyük müdür N'den? Ve şimdiki şartımızı yazsak?
+
+109
+00:21:26,172 --> 00:21:29,771
+X, M'den büyükse dolayısıyla birinci dizi bitmiş demek.
+
+110
+00:21:30,172 --> 00:21:33,172
+Pardon, X, N'den büyükse. Çok özür dilerim hocam.
+
+111
+00:21:33,172 --> 00:21:34,172
+Tamam.
+
+112
+00:21:34,172 --> 00:21:36,172
+Bununla şunu ekleyelim çalışalım hocam.
+
+113
+00:21:37,371 --> 00:21:45,771
+X, N'den büyükse, tamam, D1'de, D1'in X'i küçükse D2'nin Y'sinden diyeceğiz.
+
+114
+00:21:47,347 --> 00:21:49,347
+Pardon.
+
+115
+00:21:49,347 --> 00:21:53,347
+Yes, l.h. Şunun yerine.
+
+116
+00:21:53,347 --> 00:21:57,347
+Sonra aynı satır devam edecek.
+
+117
+00:21:57,347 --> 00:21:58,347
+Evet hocam.
+
+118
+00:21:58,347 --> 00:22:08,347
+Şimdi burada da şöyle bir durum var. Birinci dizi tamamlandıysa, kod yine devam etmeyecek. Yine kopyalama işlemi duracak.
+
+119
+00:22:08,347 --> 00:22:13,347
+Yani altta şunları kesin eklememiz gerekiyor.
+
+120
+00:22:16,435 --> 00:22:30,435
+A doğru şey, üstte sorulan şart. Yani şu şartı, yani hiçbir türlü geçemeyecek yani bu araya ve koyduğumuz için. E veya koysak o da olmaz. Şartı koymanın bir anlamı olmuyor. Bu da olmadı.
+
+121
+00:22:32,435 --> 00:22:43,115
+Şu çözüm, biraz şey de, for'un doğasına biraz aykırı oldu arkadaşlar. Niye? Yani bir döngünün ne zaman biteceği belli değilse for kullanmak pek iyi değil değil mi?
+
+122
+00:22:43,539 --> 00:22:54,139
+Bakın, ilk aklımıza gelen çözüm çok makuldü. Yeşille yazdıklarım, sonra kırmızı eklediklerim şey. Ama arkadaşımızın dediği, işte bir dizi önce biterse burada sıkıntı.
+
+123
+00:22:55,340 --> 00:23:02,019
+Şimdi mesela şeydeki çözüme bakalım. Buna çok benziyor. Ders tutumdaki çözüm.
+
+124
+00:23:02,019 --> 00:23:10,539
+Ne yapmışız? Mesela L1 dizim varmış, L2 dizim varmış. Birisi M elemanlı, birisi N elemanlı. Bunların son elemanına
+
+125
+00:23:11,347 --> 00:23:25,347
+Şöyle bir manipülasyon yapmışız. Demişiz ki, çok büyük bir sayı girelim. Yani n eleman artı birinci eleman, en sonuna büyük bir sayı, sonuna büyük bir sayı. Ne için bu? Bu problemin üstesinden gelebilmek için.
+
+126
+00:23:25,347 --> 00:23:38,347
+Yani bu 10.000 yerine integer'ın maksimum alacağı değer veya işte ne bileyim float'ın maksimum alacağı değer gibi bir şey ekliyoruz şuraya. Anlatabildim mi?
+
+127
+00:23:38,867 --> 00:23:51,867
+Dolayısıyla şu karşılaştırma hiçbirinde hangi dizinin sonuna gelirsek gelelim. Yani şu örnekte ne var? 1-2-3 var. Pardon. Ama bir tane fazladan yer açtık.
+
+128
+00:23:55,155 --> 00:24:06,556
+Şöyle, bir de buraya fazladan yer açtık. İkisinden herhangi bir tanesi şey olabilir çünkü. Şuraya intmax, buraya intmax ekliyorum.
+
+129
+00:24:09,255 --> 00:24:21,355
+Bu örnekte, şimdi buradan devam edersek, bakın burada artık n artı m'e kadar yeşille yazdıklarımız. Hiçbir şekilde, 1, 2, 3 bitti, ondan sonra 10 bine geldik.
+
+130
+00:24:21,584 --> 00:24:24,824
+10.000'e geldiğimizde 4, 5, 6, 7 diye devam edeceğiz.
+
+131
+00:24:26,443 --> 00:24:31,064
+Bu surette ne oluyor? Hani şu kırmızılar yaz, şuradaki kırmızılara gerek kalmıyor.
+
+132
+00:24:33,364 --> 00:24:34,644
+Şunu silebiliriz.
+
+133
+00:24:35,923 --> 00:24:44,104
+Hiçbir zaman bu int max değerine, değerinden daha büyük bir sayı gelmeyecek şurada.
+
+134
+00:24:44,364 --> 00:24:45,903
+Ta ki bu dizinin sonuna kadar.
+
+135
+00:24:47,184 --> 00:24:48,204
+Burayı anladık mı?
+
+136
+00:24:50,355 --> 00:25:02,355
+Burada da tek sıkıntı program yazarken, n elemanlı dizim varsa n artı birinci elemanı int, max nasıl yaparım? Diziyi genişletmek gerekiyor.
+
+137
+00:25:06,324 --> 00:25:18,324
+[öğrenci], onu şimdi yazdığını gördüm. D3'ün lenghti, D1'in lenghti artı D2'nin lenghti küçükse demişiz.
+
+138
+00:25:18,324 --> 00:25:33,324
+Şimdi push diye bir şey, bunlar yok [öğrenci]. Yani herhalde şey pusu ile kod olarak yazıyorsun da, doğrudan bir de sorting algoritması istemiyoruz. Sıralama yaparsak olmaz.
+
+139
+00:25:34,612 --> 00:25:41,012
+Sıralama yapmadan bu işi yapmamız gerekiyor. Sıralama yaparsak yine şuradan analogene gireceğiz.
+
+140
+00:25:41,012 --> 00:25:46,812
+Hocam tek tek yapmak istemedim de, sıralı olmayacağını düşünerek yaptım. Sıralı olacağı garanti ise de şey yapıyoruz.
+
+141
+00:25:46,812 --> 00:25:51,812
+D3'ün uzunluğu devir... Bunlar kesin sıralı. Yani D1 ve D2'nin sıralı olduğunda şükür yok.
+
+142
+00:25:51,812 --> 00:25:59,812
+Hımm. O zaman şansız. Hangisinin hangisinin daha uzunluğu daha uzunsa D1 ve D2'den?
+
+143
+00:25:59,812 --> 00:26:01,812
+Evet. Daha uzun olanı alırız.
+
+144
+00:26:02,003 --> 00:26:06,003
+Onun indeksini devam ettiririz sonuna kadar. D3'ün arkasına ekleriz.
+
+145
+00:26:06,003 --> 00:26:13,003
+Daha uzun olması bir anlam ifade etmiyor. Mesela şöyle, 1 burada olsun, şu case'e bak.
+
+146
+00:26:13,003 --> 00:26:21,003
+2 burada olsun, 3 burada olsun, 4 burada olsun, 5 burada olsun, 6, 7, 8, 9 olsun.
+
+147
+00:26:21,003 --> 00:26:26,859
+Şimdi uzunluk tamam, bu daha uzun da, bir bundan bir bundan almak gerekiyor bazı elemanlar için.
+
+148
+00:26:26,996 --> 00:26:30,996
+Sonundaki kırmızı ile ilgili söyledim ben hocam. Hani o en sonu ekleyemedikleriniz ya.
+
+149
+00:26:30,996 --> 00:26:31,996
+Evet.
+
+150
+00:26:31,996 --> 00:26:34,996
+En sonu eklenemeyen kesinlikle daha uzun olan olacak.
+
+151
+00:26:35,996 --> 00:26:43,996
+Yani şu int max'dan da bahsediyoruz. Onun için onu mu demek istedim? En son eklenme yeniden. Kastım nedir onu anlamadım.
+
+152
+00:26:43,996 --> 00:26:48,996
+Alttaki kırmızı bölümü yazmamızın sebebi, iki satır yazmamızın sebebi.
+
+153
+00:26:48,996 --> 00:26:51,307
+Uzun olanın sonu eklenmiyordu.
+
+154
+00:26:51,635 --> 00:26:58,635
+Evet, yani şu işlem yanıda kalıyor, şurası. Dolayısıyla bunu devam ettirebilmek için şöyle bir şey eklememiz gerekiyor.
+
+155
+00:26:58,635 --> 00:27:11,455
+Uzun oğlunun indeksini alırız. Uzun oğlunun indeksinden, uzun oğlunun sonuna kadar olan o sub array, array parçasını D3'ün sonuna ekleriz. O da zaten şurada yapılıyor işte.
+
+156
+00:27:11,455 --> 00:27:16,455
+Push sonunu ekleyen cevap sıkıntı. Siz o şeyi konuşurken ben onu yazdım da...
+
+157
+00:27:16,455 --> 00:27:21,455
+Tamam, Push'u anladım da, orada sorting algoritmasını çalıştırmaya gerek yok.
+
+158
+00:27:21,455 --> 00:27:25,455
+Biz zaten sıralı.
+
+159
+00:27:25,455 --> 00:27:30,379
+Yani çalıştırırsak çünkü karmaşıklık ne oluyor? Nlogan'a gidecek tekrar.
+
+160
+00:27:31,124 --> 00:27:44,524
+Şimdi, şuradaki çözümden devam edelim de sonra kodunu yazacağız. Bu çözümde de işte bazı sıkıntılar var. Yani dizinin n artı birinci veya m artı birinci elemanına büyük bir değer atadık. Sonra ne yapıyor burada?
+
+161
+00:27:44,524 --> 00:27:56,524
+Dizinin birinci elemandan, tabii biz C ile sıfırdan başlayacağız, m artı n'e ulaşana kadar doğrudan bakıyor. Birinin i'sine, birinin j'sine bakıyor. İşte bir tarafta i, bir tarafta j kullandık burada.
+
+162
+00:27:56,531 --> 00:28:03,131
+ve L3'ün K'sına bakıyor. Hangisi büyükse bunu kopyalayıp o tarafın işaretçisini bir arttırıyor.
+
+163
+00:28:03,131 --> 00:28:17,331
+D ise öbür tarafı değiştiriyor. Bakın bu hiçbir zaman bir dizi ne kadar küçük olursa olsun, örneğin birinci dizi bir elemanlı olsun, bir eleman daha ekledik, iki eleman, öbürü de bin elemanlı olsun. Bu da bin bir eleman.
+
+164
+00:28:17,331 --> 00:28:22,531
+Bu döngü bin bir defa dönecek demektir. Bin iki defa dönecek demektir.
+
+165
+00:28:22,688 --> 00:28:36,848
+En sonunda şu intmax büyük sayılara takılacağız. Bu bir çözüm, bir çözüm. Bunu yaptığımız için, şunu yaptığımız için, şu alttaki kısımlara gerek kalmıyor. Sadece yeşille alakalı kısımlar yeterli oluyor.
+
+166
+00:28:38,288 --> 00:28:45,728
+Bunu yapamazsak ne olacak? Şurada biraz önce yazdığımız bazı şeyleri kontrol etmemiz gerekecek.
+
+167
+00:28:46,488 --> 00:28:47,488
+Şimdi ben...
+
+168
+00:28:47,955 --> 00:28:57,955
+Şunun kodunu yazmıyorum. Elimizde zaten kod olarak var. Bunu siz koda çevirirsiniz. Buna gerek yok. Şunu kod olarak yazmayacağım. Ama ben başka bir kod yazacağım.
+
+169
+00:28:59,955 --> 00:29:13,955
+Biraz daha hem bu dizinin son elemanını değiştirme sıkıntısından kurtulacağız. Hem de for döngüsünü daha anlamlı hale getireceğiz. For kullanmadan bunu yapacağız.
+
+170
+00:29:15,508 --> 00:29:20,788
+Bir kere diziyi merge edeceksek, önce şunları yazalım.
+
+171
+00:29:27,763 --> 00:29:29,763
+Seğit edip on the webpage.
+
+172
+00:29:35,571 --> 00:29:41,571
+D1 dizimiz var. Bu mesela ne kadar elma olsun? N olsun. Şimdi bunları değiştireceğim.
+
+173
+00:29:41,571 --> 00:29:56,571
+Integro D2 dizimiz var. Bu M olsun. Integro D3'te N artı M. Şimdi N artı M'lik bir dizi, N'lik bir dizi böyle şeyler yapacaksam o zaman bunları şurada tanımlıyorum.
+
+174
+00:29:57,571 --> 00:29:59,571
+Yani işte ne olsun 5 olsun.
+
+175
+00:30:04,307 --> 00:30:05,307
+Bu, çoğuf.
+
+176
+00:30:09,683 --> 00:30:16,343
+Şimdi bir tane i dedik, bir tane j dedik, bir tane k diyelim. Bu üç tane değişkene ihtiyacımız var.
+
+177
+00:30:17,623 --> 00:30:24,683
+Dizinin elemanlarını doldurmak istiyorum ama şimdi ben böyle klavyeden değer girmeyi pek sevmem arkadaşlar. Diziyi rastgele dolduralım işte.
+
+178
+00:30:24,683 --> 00:30:28,103
+Veya ne yapalım şöyle bir şey yapayım önce.
+
+179
+00:30:29,143 --> 00:30:33,623
+i eşittir sıfırdan, hatta rastgele doldurmayalım da böyle farklı değerler atalım.
+
+180
+00:30:34,523 --> 00:30:36,683
+i küçüktür, ne?
+
+181
+00:30:37,395 --> 00:30:38,996
+İ plus plus.
+
+182
+00:30:43,763 --> 00:31:10,163
+D1'in İ'si ne olsun İ'lerden olsun desek, yani 1, 2, 3, 4, 5 diye gizse, şunu da J'yi sıfırdan başlatalım, J küçük M olduğu sürece, J plus plus, dizi 2'nin J'sinde,
+
+183
+00:31:11,284 --> 00:31:13,284
+2xJ diyelim mesela.
+
+184
+00:31:16,788 --> 00:31:43,927
+Hatta 2i, 2x i, artı 1 diyelim. Şurada tekler olsun, burada çiftler olsun. Tamam mı? Bunları bir yazdıralım. Hatta yazdırma işini de şurada yapabiliriz. Yani tek tercih edilmez ama bir yandan veri girsin, bir yandan yazdırılsın. Yüzde B boşluk diyorum. E1'in.
+
+185
+00:31:44,980 --> 00:31:45,980
+İse
+
+186
+00:31:56,147 --> 00:32:19,788
+Şuraya da printf diyelim. Dizi bir yazacak, yazacak, yazacak. Sonra boşluk bırakacak. Şurada backslash in diyelim. Dizi iki. Bunla yazsın. Şimdi geldik bunları birleştirmeye.
+
+187
+00:32:20,211 --> 00:32:28,211
+Artık elimizde sıralı olduğunu bildiğimiz iki tane dizi var. İstersek bunları klavyeden de alabilirdik ama o kısımla uğraşmadık.
+
+188
+00:32:28,211 --> 00:32:39,211
+Şimdi geldiğimizde şunu yapacağız arkadaşlar. Bu işlemi yaparken bir kere i bizim sıfırıncı noktamız. Birinci diziyi kontrol edeceğiz.
+
+189
+00:32:39,211 --> 00:32:43,211
+Hatta şöyle diyelim, j de sıfır okudum.
+
+190
+00:32:45,599 --> 00:32:51,839
+Bir de ne değişkenimiz lazım? Üçüncü diziyi kontrol edecek K var. Hadi onu da K'yı da şurada sıfır yapalım.
+
+191
+00:32:51,839 --> 00:32:58,719
+Burada for döngüsü ile çözmüyorum arkadaşlar. Çünkü ne zaman hangi dizinin biteceği belli değil.
+
+192
+00:32:58,719 --> 00:33:04,159
+O zaman diyorum ki while döngüsü ile bunu yapmak daha mantıklı. Yapacağım ilk şey şu olacak.
+
+193
+00:33:04,159 --> 00:33:08,559
+i küçükken n'den, aynı zamanda.
+
+194
+00:33:09,907 --> 00:33:26,307
+C küçükken M'den. Yani ya bu soldaki ya da sağdaki bu şartı bozulacak. Başka bir şeye gerek yok. Şimdi if-d1 dizisinin i ince elemanı, normal şartımızı yazıyoruz, küçüktür.
+
+195
+00:33:26,307 --> 00:33:36,307
+D2 dizisinin j ince elemanı. Böyle olduğu durum var. Hatta istersek eşitliği de buraya dahil edebiliriz ama mühim değil.
+
+196
+00:33:36,723 --> 00:33:46,723
+Bir de else durumu olur. Ya böyle ya böyle. Şimdi D1'in İ'si D2'nin C'sinden küçükse demek ki daha küçük elime var.
+
+197
+00:33:46,723 --> 00:33:54,723
+O zaman D3'ün K'sına neyi alacağız? D1'in İ'sini alacağız.
+
+198
+00:33:55,723 --> 00:34:02,723
+Hatta İ'yi alıp daha sonra şurada İ artı artı yaparsak tek satırda da bunu yapabiliriz ama şimdilik onu karıştırmayalım.
+
+199
+00:34:03,124 --> 00:34:13,623
+Tam algoritma ile giden, i++. Eğer bu değilse D3'ün k'sına eşittir. D2'nin c'sini aktarırız.
+
+200
+00:34:14,623 --> 00:34:20,623
+c'yi arttırırız. Her iki durumda da yapmamız gereken şey var. k'yı arttıracağız.
+
+201
+00:34:22,547 --> 00:34:29,268
+Bu döngü ne zaman biter? Ya i n'e eşit olunca biter ya da j m'ye eşit olunca biter.
+
+202
+00:34:29,268 --> 00:34:37,667
+Peki bitmesiyle kalacak mı? Kalmayacak. Burada şuna bakacağız. Herhangi bir if kontrolü yapmama aslında gerek yok. Şuna gerek yok.
+
+203
+00:34:37,667 --> 00:34:48,068
+Diyorum ki bir tane while döngüsü yazayım. Ya i küçüktür n olana kadar. Kopyalama yaparım.
+
+204
+00:34:48,755 --> 00:35:01,955
+Veya bunun aynısı, J küçüktür, M olana kadar kopyalamıyorum. Hangisinden dolayı bittiğini bilmiyorum. Ya buradan dolayı bitti, ya buradan dolayı bitti.
+
+205
+00:35:02,855 --> 00:35:13,675
+Ama ben, if yazmak yerine, y yazarım. Eğer bundan dolayı bittiyse, şu zaten çalışmayacaktır. Bu çalışacaktır. Şundan dolayı bittiyse, birincisi çalışacaktır.
+
+206
+00:35:14,867 --> 00:35:40,148
+if yazmaktan kurtulduk burada. D3'ün K'sı, şöyle bir şey yazacağız. D3'ün K'sına bakın, bundan dolayı bittiyse D2'nin J inci elemanını kalan yerden devam et. J'yi arttır, K'yı arttır derim. Eğer tam tersi ise, şunu alayım.
+
+207
+00:35:41,364 --> 00:35:51,604
+D3'ün kasına D1'in i'sini arttır, i'sini getir, i'yi arttır, t'yi arttır, başka da bir şey yok.
+
+208
+00:35:52,623 --> 00:35:56,724
+Bu ne yaptı? Gereksiz if kontrolünden kurtulmuş olduk.
+
+209
+00:35:56,984 --> 00:35:59,024
+Burada for döngüsü de yapabiliriz.
+
+210
+00:36:00,043 --> 00:36:03,884
+Ama for döngüsü mesela ne olurdu? Tek bir if yazardı.
+
+211
+00:36:05,164 --> 00:36:09,003
+Derdi ki geçici bir değişken onu birazdan yazalım.
+
+212
+00:36:09,300 --> 00:36:21,800
+Şurayı anladık mı peki? Bakın merge etme işlemi kabaca şu kadar. Yani önce iki diziden herhangi bir tanesi bitene kadar şurada işlem gerçekleşiyor.
+
+213
+00:36:21,800 --> 00:36:30,300
+Hangi dizi erken bittiyse kalan dizi alt kısımda hangi kod kısmı çalışacaksa böyle devam ediyoruz.
+
+214
+00:36:35,027 --> 00:36:42,707
+Şimdi şunu da yazdıralım. Şöyle ekrana birleştirmiş halini yazalım.
+
+215
+00:36:45,268 --> 00:37:00,367
+Dizi 3, for artı k eşittir 0, k küçüktür n artı m, k plus, printf.
+
+216
+00:37:03,092 --> 00:37:08,092
+%d, boşluk, D3'ün K'sı.
+
+217
+00:37:11,956 --> 00:37:13,956
+Verleyelim bakalım.
+
+218
+00:37:15,956 --> 00:37:17,956
+Hafta...
+
+219
+00:37:17,956 --> 00:37:18,827
+Yok.
+
+220
+00:37:23,987 --> 00:37:25,987
+Kodla ile öncelikle örnek kodla göreceğiz.
+
+221
+00:37:31,603 --> 00:37:34,723
+İ, dizi, bir, eşitir.
+
+222
+00:37:52,052 --> 00:37:59,252
+Şimdi 1, 3, 5, 7, 9, 0, 2, 4, o bir yerde demek ki patladı. Şimdi nerede patladı acaba?
+
+223
+00:38:03,315 --> 00:38:25,315
+Son terimi büyük yapma. Burada ona gerek yok, [öğrenci]. Niye gerek yok? Çünkü yapacağımız şey, son terim eklemeden dizinin bir tanesi. Şimdi bakalım, i küçüktür, m, j küçüktür, m, evet bunlar doğru çalışıyor. Aynı zamanda böyleyse.
+
+224
+00:38:26,099 --> 00:38:32,260
+Hocam, en sondaki while döngülerinde sanki i'lerde, j'lerde bir hata olabilir mi?
+
+225
+00:38:32,260 --> 00:38:37,059
+Bakalım. i'yi n'den küçük olarak kaldıysa...
+
+226
+00:38:37,059 --> 00:38:40,899
+i'yi güncellemedik orada.
+
+227
+00:38:40,899 --> 00:38:45,059
+i'yi artıracağız. Tam tersten yaptık. Yani d3'ün...
+
+228
+00:38:47,219 --> 00:38:50,579
+i küçükse, n'den şurada d2'nin i'sini alıp...
+
+229
+00:38:51,219 --> 00:39:14,219
+Devam etmemiz gerekiyordu. Bir dakika doğru mu yaptık? Şimdi i'nin m'den küçük olması birinci dizinin tamamlanmamış olması demek değil mi? Yani birinci dizi tamamen bitmiyor. O zaman şurada d1'in iyisini alıp bunu düzelteceğiz. J m'den küçükse burada da d2'nin, şunları ters yazmışız. D2'nin J'sini alıp J'yi güncelleyeceğiz. Pardon.
+
+230
+00:39:14,547 --> 00:39:40,407
+Aradaki while döngülerinden çıkamadığımız için böyle bir durum oldu. Bakın, biraz önceki aldığımız hata aslında şeydi, segmentation fault aldık. Dizimin dışına çıkardık, çıkarıldık, çıktık kod olarak. Çünkü J'ler veya İ'lerden bir tanesi çok arttı. Şurada erişim izni olmadığımız yerlere gittik. İşletim sisteminde iki dur bakalım yani sen haddini açtın, direkt programımızı kapattın.
+
+231
+00:39:41,427 --> 00:39:54,228
+Evet, 1, 3, 5, 7, 9, 0, 2, 4 varmış. Şundan 9'a kadar değerlerimiz altı. Mesela şunu biraz daha ne bileyim, 5'i ne yapalım, 15 yapalım, 45 fazla olur.
+
+232
+00:39:56,228 --> 00:40:03,927
+İşte birinci dizimiz bu, ikinci dizimiz bu. Ve burada da sıralı haldeki diğer dizimizi görebiliyoruz.
+
+233
+00:40:05,715 --> 00:40:19,715
+Şeye gerek yok bakın, herhangi bir değer eklemeye gerek yok. Şuradaki kod da var. Soruların, çözümlerin olduğu kod da var. Şurayı biraz daha iyileştirebiliriz. Onun yerine şöyle bir alternatif yazacağım.
+
+234
+00:40:20,715 --> 00:40:24,715
+Hocam ilk başta çarpı 2 ile çarptığımız yerde ne yaptık?
+
+235
+00:40:25,715 --> 00:40:26,715
+Şunlar mı?
+
+236
+00:40:27,507 --> 00:40:36,507
+Diziye elemanlar sıralı bir şekilde klavyeden girmek ile uğraşmayalım diye, bunları böyle rastgele gibi belli bir düzende eleman atladık.
+
+237
+00:40:36,507 --> 00:40:45,507
+Yani bunu kullanıcıdan da sıralı bir şekilde alabilirdik. Ama dedim ki eleman girmekle uğraşmayalım, derdimiz olmasın.
+
+238
+00:40:45,507 --> 00:40:51,507
+Şimdi şurada şunu yapmak istiyorum. Şu iki while'i biraz daha şey yapmak için.
+
+239
+00:40:52,148 --> 00:41:18,548
+Diyorum ki arkadaşlar, if-i eşittir eşittir ense bir şey olsun, değilse hatta değilse if diyelim, j eşittir eşittir m. Şöyle bir tek bir döngü ile bunu yapabilir miyiz acaba diye düşünüyorum.
+
+240
+00:41:19,860 --> 00:41:27,860
+J, I, N'e eşitse birinci dizi tamamlanmış demektir. İkinci dizinin kaldığımız yerden devam etmesi gerekiyor.
+
+241
+00:41:27,860 --> 00:41:36,860
+Şimdi şu K değişkenimi, artık ne yapmam lazım? K değişkenimi, J'nin olduğu yerden başlatmam gerekiyor.
+
+242
+00:41:36,860 --> 00:41:41,860
+J ince elemanı. Eğer böyleyse K değişkenim eşittir.
+
+243
+00:41:47,731 --> 00:42:13,271
+K olduğu yerden başlayacak. Yani K artık hangisiyse o. K küçük olacak. Burada bir limit vermemiz gerekiyor. İşte son değer. Şimdi son değeri de şurada belirleyebiliriz. Şimdi i eşit, n'e eşitse demek ki diğer, pardon şurada men yazacağız. İşte bir temp diye bir değişken kullansam, temp de ne olması lazım? m'e eşit olması lazım.
+
+244
+00:42:14,068 --> 00:42:22,568
+Eğer böyle bir şey varsa temp eşittir ne olması lazım? k küçük tempe kadar git k'i bir arttır.
+
+245
+00:42:29,427 --> 00:42:36,147
+Ama burada, bir dakika, hangi dizinin kaldığını, hangi dizide kaldığımızı söyledik.
+
+246
+00:42:39,827 --> 00:42:42,707
+Şurada, bir dakika, K'lar burada karışır.
+
+247
+00:42:44,627 --> 00:42:50,147
+Şu K'ları, o zaman buraya başka bir değişken, mesela K1 diyelim, buna da K1 diyelim.
+
+248
+00:42:50,947 --> 00:42:53,827
+K1 tempo ulaşana kadar K1 arttıracağız.
+
+249
+00:42:54,164 --> 00:43:21,164
+Şimdi şu K artık bizim en son kaldığımız yerde. Diyebiliriz ki şunu söyleyebiliriz. D3'ün K'sı eşittir. Ha buraya da şey dememiz lazım. Dizi 1 mi diyeceğiz, dizi 2 mi diyeceğiz? Bak burada da olmadı. Yani hangi dizi olduğunu söylememiz gerekiyor. Bundan kurtuluş pek yok. Maalesef. Ha pointerlarla yapabiliriz de pointerı da görmediğimiz için.
+
+250
+00:43:21,588 --> 00:43:34,387
+Mecburen şuradaki gibi şimdiki bilgilerimizle iki döngü yazmamız gerekiyor. Ya burası çalışacak ya burası çalışacak. Kodu biraz daha kısaltabiliriz diye düşündüm.
+
+251
+00:43:34,387 --> 00:43:46,988
+Aslında pointerları görmüş olsak biraz daha kısaltabiliriz. Tek döngü ile işin içinden çıkabiliriz. Neyse şimdilik budursun. Yani bunu biraz daha iyileştireceğimiz şey daha sonra gelir. Şimdilik bunu siliyorum.
+
+252
+00:43:47,795 --> 00:43:49,771
+Burada anlaşılmayan bir şey var mı?
+
+253
+00:43:53,684 --> 00:43:57,364
+Peki, şimdi soru şu, acaba bunun karmaşıklığı ne?
+
+254
+00:43:58,724 --> 00:44:04,324
+Şimdi şu kısımlar bizim için karmaşıklık da önemli değil, bundan sonraki kısımlara bakalım. Şurayı şöyle kopyalıyorum.
+
+255
+00:44:07,204 --> 00:44:13,003
+Çünkü o kadar karmaşıklıktan bahsettik, acaba yaptığımız iş değil mi? Yani işe yaradı mı?
+
+256
+00:44:13,324 --> 00:44:15,804
+Bunu kontrol etmemiz gerekiyor.
+
+257
+00:44:45,460 --> 00:44:48,960
+Şöyle yapayım, pardon, bu çok güzel görünmedi.
+
+258
+00:44:51,460 --> 00:44:52,460
+Snipping bakalım.
+
+259
+00:44:59,987 --> 00:45:15,987
+Mesela siz de ödevlerinizde bir şeyi analiz ederken böyle bir ekran görüntüsü alıp, işte şu kısmı alıp, böyle kocaman bir ekran görüntüsü almayın arkadaşlar. Hani daha anlaşılır olsun diye bunu yapıyorum.
+
+260
+00:45:20,371 --> 00:45:29,171
+Hadi biraz daha küçüldürsün. Evet, bu kodun karmaşıklığı nedir? Şimdi bakalım. Şuradan bir...
+
+261
+00:45:33,300 --> 00:45:44,300
+Şimdi burası, şu kısma baktığımızda, ya n olacak ya m olacak. Yani burası n defa dönebilir veya m defa dönebilir. n artı m defa dönemez.
+
+262
+00:45:45,300 --> 00:45:54,300
+Şimdi n ve m'yi eşit kabul edersek, yani çünkü çok anlam ifade etmiyor, buranın karmaşıklığına kabaca yaklaşık olarak n diyebiliriz.
+
+263
+00:45:55,731 --> 00:46:02,331
+Yani biri büyük biri küçük olsa da o zaman m olacak. Yine yani bir n kare gibi bir durum yok dikkat ederseniz.
+
+264
+00:46:02,331 --> 00:46:09,931
+Şimdi şuna baktığımızda bu döngü ne kadar döner? Bu döngü kesinlikle n defa döner. Şurada m defa döner.
+
+265
+00:46:09,931 --> 00:46:19,931
+Şimdi burası n veya m oldu, şurası n veya m oldu. O zaman n ise m defa, m ise n defa. Yani ya n artı m
+
+266
+00:46:20,467 --> 00:46:28,467
+Ya da m artı n defa dönecek. Öyle değil mi? İki farklı durum var. Birinci durumda ikinci. Ama ikisi de n artı m defa oldu.
+
+267
+00:46:29,467 --> 00:46:37,467
+Şimdi n bb'yi yakın kabul edersek iki n'ye kadar. E bu da önündeki sabit sayıyı atarsak n defa olacak.
+
+268
+00:46:37,467 --> 00:46:47,467
+Bakın şurada n artı m artı n log n dediğimiz karmaşıklık, burada n karmaşıklığa indirgenmiş oldu. Analizde böylece yapmış olabilirsiniz.
+
+269
+00:46:49,043 --> 00:46:51,019
+Anlaşılmayan bir şey var mı burada?
+
+270
+00:46:55,315 --> 00:47:01,315
+sort işleminden kurtularak böyle bir birleştirme yapmış oluyoruz.
+
+271
+00:47:07,347 --> 00:47:13,347
+Peki, şimdi gelelim diğer sorumuza.
+
+272
+00:47:15,847 --> 00:47:21,347
+Şimdi bir dizide eleman aramak istiyoruz. Searching, bu ikinci soru.
+
+273
+00:47:31,315 --> 00:47:32,268
+[öğrenci].
+
+274
+00:47:35,635 --> 00:47:45,635
+Dizide kastımız ne? Herhangi bir dizi, insanlar arasında kimlik numarasına göre birini arayabilirsiniz, sayı dizisinden birini arayabilirsiniz.
+
+275
+00:47:45,635 --> 00:47:56,556
+Bir arama kriteriniz var, örneğin sayılar içerisinde bir şey arayacaksınız. Dizi dediğimiz şey en tane hücreden oluşuyor.
+
+276
+00:47:59,860 --> 00:48:07,860
+Bunun en kötü durum karmaşıklığı ne olur? En kötü kaç durumda? Şu sıfırıncı eleman, şu n-1. eleman.
+
+277
+00:48:09,860 --> 00:48:11,860
+Kaç defa deneme yapabiliriz?
+
+278
+00:48:15,284 --> 00:48:16,284
+Ali.
+
+279
+00:48:20,307 --> 00:48:24,068
+Senin çözümünü yeni görüyorum. Farkı nedir anlayamadım.
+
+280
+00:48:25,068 --> 00:48:36,748
+Hocam, şu ilk baştaki merch, yani iki sıralı dizinin birleştirilmesi konusunda, direktmen for döngüsü ile çözümü.
+
+281
+00:48:39,468 --> 00:48:40,748
+Bakalım, bir saniye.
+
+282
+00:48:41,844 --> 00:48:50,844
+Şimdi X, N'den küçükse aynı zamanda A, X, B, Y'den küçükse tamam C'yi aldık. Ama şimdi burada şöyle bir durum var.
+
+283
+00:48:51,844 --> 00:48:59,844
+Yani anlayamadım, şimdi sana da soralım. Şimdi 1, 2, 3'ü aktardık.
+
+284
+00:48:59,844 --> 00:49:01,844
+Evet hocam.
+
+285
+00:49:01,844 --> 00:49:05,612
+Ama burada 1, 2, 3 değildi elemanlar.
+
+286
+00:49:06,228 --> 00:49:10,228
+1, 4, 6, öbüründe 2, 3 olsaydı.
+
+287
+00:49:14,804 --> 00:49:15,804
+Doğru hocam.
+
+288
+00:49:17,804 --> 00:49:22,804
+Tamam mı? Yani biri aldı, önce aktardı.
+
+289
+00:49:22,804 --> 00:49:23,804
+Yine sıkıntı...
+
+290
+00:49:23,804 --> 00:49:30,635
+Mesela bir, iki, üç değil de şey olsaydı... Bir dakika. Dur şu kodu kopyalayalım.
+
+291
+00:49:44,403 --> 00:49:51,003
+Yani arkadaşımızın çözümü bu. Bu şu an için çalışır mı? Çalışır.
+
+292
+00:49:53,003 --> 00:49:54,804
+x küçükken n'den.
+
+293
+00:49:56,403 --> 00:49:58,403
+ax'i aldı.
+
+294
+00:50:01,203 --> 00:50:06,003
+Ben de diyorum ki mesela 2 burada olsun, 3 burada olsun.
+
+295
+00:50:06,867 --> 00:50:12,268
+4 burada olsun, 6 burada olsun veya ne bileyim, 15 burada olsun.
+
+296
+00:50:15,027 --> 00:50:18,268
+Şimdi x'in artmasının şartı neye bağlı?
+
+297
+00:50:18,907 --> 00:50:25,467
+X n'den küçük olacak, x n'den küçük zaten başta, ax de b y'den küçük olacak.
+
+298
+00:50:26,188 --> 00:50:30,668
+Bu sağlar mı? Sağlar. ax'ı 6, c y'ye aktardı.
+
+299
+00:50:31,427 --> 00:50:34,507
+Değilse y, m'den küçük mü?
+
+300
+00:50:36,403 --> 00:50:39,604
+Buna bakacak ve şunu çalıştırayım.
+
+301
+00:50:52,500 --> 00:50:57,099
+1, 2, 3, 4, 10, 7, 8, bak burada bir 1 kaldı. Niye 1 kaldı?
+
+302
+00:50:59,799 --> 00:51:02,299
+11'den sonra bir 1 kalıyor.
+
+303
+00:51:06,132 --> 00:51:17,812
+1, 2, 3, 4, 6, 7, 8, 9, 10, 11. Bu neyin biri? Şu yazdırmayı şöyle yapalım.
+
+304
+00:51:22,164 --> 00:51:26,844
+Hocam, muhtemelen hafızadan rastgele bir şey alıyor olabilir. Çünkü bende de rastgele bir sayı çıkıyor.
+
+305
+00:51:28,403 --> 00:51:39,123
+Mesela burada en dediğimiz şey üç, üç, altı, sekiz, yani on bir tane eleman var ama. Yani şurada on ikinci eleman yok.
+
+306
+00:51:41,443 --> 00:51:42,684
+Şimdi şöyle bakalım.
+
+307
+00:51:44,204 --> 00:51:45,483
+Şunu kapatacağız.
+
+308
+00:51:51,731 --> 00:51:56,531
+2, 4, 6, 8, 10. 11. eleman kayıp.
+
+309
+00:51:59,731 --> 00:52:08,931
+Ne oldu? 1 var, 2 var, 3 var, 4 var, 6 var, 7 var, 8 var, 9 var, 15 yok mesela.
+
+310
+00:52:09,731 --> 00:52:17,132
+Evet. Niye? Çünkü şu şartlardan birisinde, yani biz 1'i aldık.
+
+311
+00:52:17,619 --> 00:52:20,939
+15 hiçbir şekilde ulaşılamaz bir eleman gibi oldu.
+
+312
+00:52:22,739 --> 00:52:26,299
+Arada böyle bir dikkat edersen şey var, algoritmada açık var.
+
+313
+00:52:27,819 --> 00:52:33,739
+Yani şunu yapmış olmakla kalan kısımları almış olmuyoruz. Sıkıntı bu.
+
+314
+00:52:34,779 --> 00:52:40,939
+İstersem hani buna biraz daha uğraş, belki bir çözüm yolu bulabilirsin ama burada böyle bir sıkıntı var maalesef.
+
+315
+00:52:42,459 --> 00:52:43,739
+Tamam mı? Tamamdır hocam.
+
+316
+00:52:43,956 --> 00:53:00,836
+Çünkü şu da bir sıralı dizi, şu da sıralı bir dizi. Herhangi sıralı olmayan durum yok. Mesela bu hani 1 olsaydı kabul ederdim sırasız. Mesela şöyle yapalım. Bunu 2 diyelim. Şimdi tamam.
+
+317
+00:53:01,364 --> 00:53:18,764
+1, 2, 3, 4, 5, niye şey var? Çünkü tam bir sıralı olmayandır ama şuradaki durumu aşağıya bir tane hey getirecek olsak, bunu da üç lere mandiyak yok olsak, burada olay patlıyor.
+
+318
+00:53:21,164 --> 00:53:25,564
+Belki biraz daha üzerinde çalışırsam bir şeyler çıkartırız. Neyse.
+
+319
+00:53:26,228 --> 00:53:38,228
+Evet, mücadele. Şimdi bir eleman arıyoruz. Aradığımız elemanı en hızlı bir şekilde nasıl bulabiliriz? İlk başta, ilk düşüncemiz yöntem ne olur arkadaşlar?
+
+320
+00:53:44,083 --> 00:53:47,283
+Tek tek bakarız değil mi? Önce buna bak.
+
+321
+00:53:47,283 --> 00:53:49,203
+While döngüsü ile baştan sonra.
+
+322
+00:53:49,203 --> 00:53:52,283
+Evet, dümdüz ararız.
+
+323
+00:53:52,283 --> 00:53:59,443
+Yani ilk yapacağımız şey, while döngüsü güzel olur. Çünkü arada bir yerde bulma ihtimalimiz var.
+
+324
+00:53:59,443 --> 00:54:07,883
+O zaman deriz ki, i eşittir sıfırdan başla, while, i küçüktür n'e kadar bak.
+
+325
+00:54:07,883 --> 00:54:10,443
+Eğer...
+
+326
+00:54:11,027 --> 00:54:35,027
+Dizinin iyisi, if-. Aradığımız elemana key diyelim, genelde key olarak isimleniyor. Anahtar elemana eşitse, gibi bir şey diyeceğiz. O zaman şu şartı genişletmemiz gerekiyor. Ya dizinin sonuna kadar bak, ya da aradığın eleman dizinin iyisi.
+
+327
+00:54:36,916 --> 00:55:00,316
+aradığın elemandan farklıysa bak, bu iki işe bakarken de aslında çok basit bir kod, i'yi arttır başka bir şey yapma. Bu döngü ne zaman biter? Ya şu şarttan dolayı biter ya da şu şarttan dolayı biter. O zaman if döngü bittikten sonra, şimdi şöyle kapatalım, i eşittir eşittir ense bulunamadı, not found.
+
+328
+00:55:05,139 --> 00:55:12,979
+found found e-inci location
+
+329
+00:55:16,403 --> 00:55:33,684
+found at, iyi ince location diyeceğiz. Niye? Arada çünkü bir yerde bulabildik aradığımız elemanı. İşte sayı dizisinde iki anahtar arıyoruz veya insanlar arasında bir insan arıyoruz gibi öyle söylüyor. Bu yaklaşımda karmaşıklık ne olur?
+
+330
+00:55:37,556 --> 00:55:39,556
+Kaç defa işlem yaparız?
+
+331
+00:55:39,556 --> 00:55:42,556
+N olmaz mı hocam? En kötü durum değil.
+
+332
+00:55:42,556 --> 00:55:46,556
+Anahtar kelime en kötü.
+
+333
+00:55:46,556 --> 00:55:52,556
+Yani en şanslıysak ilk seferde buluruz.
+
+334
+00:55:52,556 --> 00:55:57,556
+Şansımız çok kötüyse en seferde buluruz veya hiç bulamayız.
+
+335
+00:55:57,556 --> 00:56:00,268
+N artı birinci denemede çıkarız.
+
+336
+00:56:00,436 --> 00:56:10,436
+Orta şansımız varsa da işte yaklaşık n bölü 2 gibi bir şey söyleyebiliriz. Tabi orta şansı da n'e yaklaştırdığımızda o da n'e doğru gider. n bölü 2'yi de n gibi kabul edebiliyoruz.
+
+337
+00:56:10,436 --> 00:56:27,436
+Yani karmaşıklık burada best case, worst case ve average case olarak üçe bölünüyor arkadaşlar. Bakın şurada böyle bir durum yok. Bir önceki algoritmada en iyisi en kötüsü gibi bir durum yok. Yani dizi
+
+338
+00:56:27,539 --> 00:56:36,539
+Bitse de n artı m, bitmese de n artı m şeklinde. Her halükarda. Ama burada en iyi durumda bir seferde bulabiliriz, ilk eleman.
+
+339
+00:56:37,539 --> 00:56:46,539
+En kötü durumda n artı bir defa eleman yaparız. Şu artı bir dizinin dışındaki yani bulamama ihtimalimiz.
+
+340
+00:56:46,539 --> 00:56:54,443
+E vuruş durumda yaklaşık n bölü iki ama biz bunu yine n'e yaklaştıracağız. Aralarda bir yerde bulduğumuz kabul ediyoruz.
+
+341
+00:56:56,371 --> 00:57:00,971
+Peki, acaba bunu daha iyi bir şekilde getirmek mi? Bunun kodunu yazmıyorum.
+
+342
+00:57:02,011 --> 00:57:05,851
+Şöyle bir soru olarak söylesek, soru 3.
+
+343
+00:57:07,131 --> 00:57:11,211
+Search an element
+
+344
+00:57:13,271 --> 00:57:14,031
+yine
+
+345
+00:57:19,347 --> 00:57:22,547
+Forted Array.
+
+346
+00:57:26,420 --> 00:57:39,220
+Sıralı bir dizide eleman arayacaksak, baştan bakmama gerek yok. Sondan bakmama da gerek yok. O zaman daha başka bir şekilde yapalım.
+
+347
+00:57:39,220 --> 00:57:43,820
+Bir şey yapalım. Biliyorum ki bu dizi kesinlikle sıralı.
+
+348
+00:57:43,820 --> 00:57:45,820
+Soft-u derrey.
+
+349
+00:57:51,956 --> 00:57:57,456
+Şu sıfırıncı eleman, işte şu en eksi birinci eleman, en tane elemanım var.
+
+350
+00:57:59,716 --> 00:58:02,456
+Burada nasıl bir algoritma geliştirebiliriz?
+
+351
+00:58:03,356 --> 00:58:06,796
+Belki doğrudan bazı arkadaşlar algoritmanın ismini söyleyecekler.
+
+352
+00:58:08,256 --> 00:58:10,556
+BinarySearch kullanabiliriz.
+
+353
+00:58:10,556 --> 00:58:12,056
+BinarySearch.
+
+354
+00:58:12,756 --> 00:58:14,256
+Kullandınız mı daha önceden?
+
+355
+00:58:14,856 --> 00:58:16,256
+Evet, görmüştük.
+
+356
+00:58:16,256 --> 00:58:16,908
+Tamam.
+
+357
+00:58:17,235 --> 00:58:41,735
+Binary Search'ın yaptığı şey şu, ben adını Binary Search koymayalım. Arkadaşlar, şuna bakalım. Dizinin herhangi bir yerinde bir x pozisyonu belirleyelim. Bu ortada olabilir, başka bir yerde olabilir. Bunun farklı notasyonları var. Herhangi bir x pozisyonu diyelim. Bu x pozisyonundaki elemana bakalım. Bu başta değil, sonda değil bu arada. Ortada bir yerde, arada bir yerde.
+
+358
+00:58:42,835 --> 00:58:56,275
+Baktığım eleman eğer bu elemandan büyükse şu kısma bakacağım demektir. Eğer küçükse bu kısma bakacağım demektir. Bu sayede dizinin belli bir kısmını arama uzayının dışına atıyorum.
+
+359
+00:58:58,275 --> 00:59:05,155
+Şimdi bu sıralı dizilerde eleman arama aslında sayısal analizde gördüğümüz iki tane algoritma var.
+
+360
+00:59:05,427 --> 00:59:12,028
+Sayısal analizde kök bulurken ne yapıyoruz? İşte bir sayı doğrusu üzerinde, real sayılar sayı doğrusu üzerinde arama yapıyoruz.
+
+361
+00:59:12,028 --> 00:59:20,427
+Şimdi real sayılar sıralı bir dizi. 2.1, 2.2, 2.3 veya diğer basamak hassasiyetini artırsak sıralı bir dizi.
+
+362
+00:59:20,427 --> 00:59:26,628
+İki tane algoritmamız vardı. Birincisi bisection metot, öbürü regula-parisi metot.
+
+363
+00:59:26,628 --> 00:59:29,028
+Burada da ona benzer mantıkla...
+
+364
+00:59:29,331 --> 00:59:35,731
+Ama burada sayılarımız tam sayı. Çünkü 0. eleman, 1. eleman, 2. eleman diye gidiyor. Daha kolay aslında.
+
+365
+00:59:35,731 --> 00:59:44,172
+Deriz ki şu x'in yerini belirleyelim. x'in yeri için binary search dedikleri şey x mid element.
+
+366
+00:59:44,172 --> 00:59:56,731
+Ortadaki element. O zaman bakacağız. Ortadaki eleman ilk başta nasıl söylenebilir? Şimdi şuraya i diyorum, buraya j diyorum.
+
+367
+00:59:57,844 --> 01:00:05,844
+Yani i'nin değeri ilk başta 0 olacak, dizinin başı 0. j'de n-1. eleman.
+
+368
+01:00:05,844 --> 01:00:16,460
+mid elemanımız da ortadaki elemanda i artı j çarpı 1 bölü 2 veya bölü 2 deriz. Sonra bakacağız.
+
+369
+01:00:17,364 --> 01:00:33,603
+Şimdi bakarken ne olacak? Ortadaki elemandan büyükse bu kısma bakacağım, değilse bu kısma bakacağım. Büyük olduğunu düşünürsek artık şu i'yi şuraya kaydıracağım. Eğer küçükse j'yi buraya kaydıracağım. Yeniden bir orta nokta hesaplayacağım.
+
+370
+01:00:33,603 --> 01:00:44,083
+Dolayısıyla ne oluyor? i baştan sona doğru, j de sondan başa doğru yaklaşıyor. Bu böyle yaklaşacak yaklaşacak iki tane işaretçi.
+
+371
+01:00:44,275 --> 01:00:50,275
+Bir yerde birbirine eşit olacak ama hiçbir zaman J, I'yi geçemeyecek.
+
+372
+01:00:51,675 --> 01:00:59,275
+İşte diyeceğim ki while döngüsü ile şunu söyleyebiliriz. I küçük olduğu sürece J'den.
+
+373
+01:00:59,275 --> 01:01:04,275
+Bakın yine bir while döngüsü yaptım. İki tane işaretçim var.
+
+374
+01:01:10,804 --> 01:01:20,404
+Aradığım eleman bu sefer orta noktadaki eleman, mid noktasındaki eleman farklıysa anahtardan, aranan elemandan böyle bir şey diyeceğiz.
+
+375
+01:01:20,404 --> 01:01:34,604
+Şimdi içeriği yazalım, burada biraz daha farklı işler var. Şimdi bakacağız ki if dizinin ortasındaki eleman, middeki eleman,
+
+376
+01:01:36,532 --> 01:01:40,931
+Ne olabilir? Küçüktür, eşittir diyelim mesela. Küçük eşittir anahtarsa.
+
+377
+01:01:42,132 --> 01:01:46,771
+Yani ortadaki eleman aradığım anahtardan küçük. O zaman
+
+378
+01:01:47,492 --> 01:01:51,132
+şu kısma bakmam gerekiyor, bu kısma bakmam gerekiyor değil mi? O zaman
+
+379
+01:01:51,652 --> 01:01:56,532
+yapacağım şey şu i değişkenini şuraya getirmek. i ne olacak?
+
+380
+01:01:57,132 --> 01:01:58,731
+mid artı bir olur.
+
+381
+01:02:00,532 --> 01:02:01,931
+i'yi güncellemiz.
+
+382
+01:02:02,731 --> 01:02:03,731
+else
+
+383
+01:02:05,076 --> 01:02:11,875
+Öyle bir durum yoksa, eşitliği bu tarafa attık ya, j eşittir, mid-1 olur.
+
+384
+01:02:12,576 --> 01:02:18,576
+Her iki durumda mid noktası i artı j bölü 2 olarak incelilir.
+
+385
+01:02:20,375 --> 01:02:21,576
+Bu da bakın şey.
+
+386
+01:02:24,947 --> 01:02:30,947
+Tamam mı? Burada itiraz olan, hocam işte şöyle bir şey yapsak diyecek, diyeceğiniz bir şey var mı?
+
+387
+01:02:34,931 --> 01:02:38,931
+Mesela bakın şurada binary search ile alakalı bir şey varsa...
+
+388
+01:02:46,452 --> 01:03:11,452
+Animasyon. Şimdi ben kaç elemanlı bir diziymiş var işte. Şu küçük bir dizi oluşturalım. Bakın şunlar sıralı diziler. Öyle görünüyor. Evet sıralı dizi. Linear search yapmak istediğinde mesela 840'ı arayalım. 840. Linear search yaptığımda şu animasyonu da hızını yavaşlatalım. Birinciye bakıyor.
+
+389
+01:03:12,052 --> 01:03:16,251
+Bakın Python stiliyle yazmış ama mühim değil. Sonra tek tek bakıyoruz.
+
+390
+01:03:18,311 --> 01:03:20,491
+Biraz elemasyonu hızlandırayım.
+
+391
+01:03:27,315 --> 01:03:31,115
+Birer birer birer birer kontrol ediyoruz.
+
+392
+01:03:31,715 --> 01:03:35,715
+800'luk maalesef 25.'den yani oraya kadar gideceğiz.
+
+393
+01:03:43,507 --> 01:03:47,267
+Şimdi buldu. Bulduğu için artık ne yapacak? Aramaya devam etmeyecek.
+
+394
+01:03:47,267 --> 01:03:55,027
+Tabi bu arama işleminde aradığımız eleman birden fazla varsa ekstra opsiyonlar sunabilir.
+
+395
+01:03:55,027 --> 01:04:01,987
+İşte first occurrence veya last occurrence diye ilk nerede buldun veya son nerede buldun veya birden fazla varsa nerelerde var.
+
+396
+01:04:01,987 --> 01:04:05,267
+Bütün adresleri bul diyebiliriz ama biz şu an en basit halde düşünürüz.
+
+397
+01:04:05,267 --> 01:04:10,467
+Şimdi aynı algoritmayı binary search ile bakıyorum. Şimdi bir sondan, bir baştan, bir de ortadan.
+
+398
+01:04:10,608 --> 01:04:24,728
+işaretçi var. Ne oluyor? Orta, dur şunu hatta yavaşlatalım. Bakın yarılaya yarılaya çok çok daha hızlı bir şekilde sonuca ulaşıyoruz. Yine bakın burada, şunu biraz şey yapayım.
+
+399
+01:04:27,443 --> 01:04:52,264
+İlk elemanımız 0, son elemanımız en son eleman, ortadaki eleman 15. İşte 0 artı 31 bölü 2, 15 oldu. Ortaya göre büyük nokta olduğu için şurayı 16'ya getirdi. Yeni orta noktamız 23. Ortaya göre yine büyük noktadayız. Yeni orta noktamız 24. Ortaya göre bu sefer küçük noktadayız. Bu sefer yeni ortamız buraya gelecek. O da burada olacak. Baktığımız yer, aradığımız yer oldu.
+
+400
+01:04:52,724 --> 01:04:57,724
+Bu şekilde gideceğiz. Bakın, şu da Python stiliyle yazılmış bir kod.
+
+401
+01:04:59,023 --> 01:05:01,523
+Peki gelelim, bu döngü nasıl biter?
+
+402
+01:05:02,324 --> 01:05:08,423
+Bu döngü ya aradığımız şekilde biter ya da i, j'yi tam geçer.
+
+403
+01:05:08,423 --> 01:05:16,923
+i'nin j'yi tam geçmesi ne demek? Bunun sonunda şöyle bir kod yazarsam, i küçüktür, j değil de şöyle diyeceğiz.
+
+404
+01:05:18,643 --> 01:05:23,643
+EG'ye büyük veya eşit olduğunu yazalım. Böyle bir durumda ne yazacağız?
+
+405
+01:05:26,643 --> 01:05:28,643
+Bulamadık yani not found diyeceğiz.
+
+406
+01:05:33,076 --> 01:05:35,076
+Peki, karmaşıklığına bakalım bunun.
+
+407
+01:05:40,083 --> 01:05:48,163
+Kod olarak şimdi şeyini bir yerden bulup göstereceğim. Logaritma iki tabanda, yani neye göre hesapladık bunu?
+
+408
+01:05:56,148 --> 01:05:59,548
+Bora, nasıl hesapladın Logo Yıkma kitabını?
+
+409
+01:06:05,492 --> 01:06:09,492
+Bunu şimdi şöyle göstereyim. Mesela şurayı, şuraya çizeyim.
+
+410
+01:06:12,292 --> 01:06:14,492
+N tane elemanım var değil mi arkadaşlar?
+
+411
+01:06:16,292 --> 01:06:20,492
+Baktığım eleman ilk durumda, hani n eleman üzerinden bakacağız.
+
+412
+01:06:21,192 --> 01:06:24,492
+Buraya i dedik, şuraya j dedik. Burada orta nokta var, mid.
+
+413
+01:06:25,792 --> 01:06:31,492
+N elemandan sonra bakacağım eleman sayısı n bölü 2'ye düştü. Yani n elemana bakmadan
+
+414
+01:06:32,148 --> 01:06:57,927
+Daha birinci adımda n bölü iki defada bulabilme olasılığıdır. Birinci adımın sonrasında, örneğin i'yi buraya getirelim. Ne oluyor? Onun da yarısı n bölü dört. Daha sonra n bölü sekiz. Böyle gidiyor. n bölü iki üzeri k'ya kadar gider. Ne kalacak?
+
+415
+01:06:58,804 --> 01:07:09,204
+Tek bir elemana ulaşana kadar bu dizi küçülecek gidecek. Yani n bölü 2 üzeri k, 1'e kadar gelecek. Ya bulacağız ya bulamayacağız.
+
+416
+01:07:09,204 --> 01:07:18,403
+K dediğimde deneme sayın. Birinci denemede n defada, daha sonra işte n bölü 2 defa, n bölü 4 defa böyle devam edecek.
+
+417
+01:07:18,403 --> 01:07:23,603
+O zaman n eşittir 2 üzeri k'yı buluyoruz şu denklemde yerine koyarsak.
+
+418
+01:07:24,019 --> 01:07:28,519
+Şimdi k'yı bulmak için ne yapmamız lazım? Her iki tarafın da iki tarafın da logaritmasını alıyorum.
+
+419
+01:07:31,891 --> 01:07:39,891
+İki tabanında iki birdir, k'da başa gelir, buradan k eşittir. Logaritma iki tabanında n'i buluyoruz.
+
+420
+01:07:39,891 --> 01:07:48,891
+Demek ki ben en kötü ihtimalle, logaritma iki tabanında n defa işlem yaparak sonuca ulaşabilirim.
+
+421
+01:07:48,891 --> 01:07:53,891
+Eleman sayım eğer n tane ise burada karmaşıklığım n defaydı, en kötü durumda.
+
+422
+01:07:53,891 --> 01:07:59,851
+Ama şurada logaritma iki tabanında n defa oluyor. Eğer 1024 elemanım varsa,
+
+423
+01:07:59,923 --> 01:08:05,923
+Bu soruda 10 defa da bulabilirsek, burada 1024 defa da bulabiliyoruz.
+
+424
+01:08:08,423 --> 01:08:09,923
+Burada sorumuz var mı?
+
+425
+01:08:09,923 --> 01:08:14,923
+Hocam, i veya j, k, k'in üstüne gelirse ne olacak?
+
+426
+01:08:15,923 --> 01:08:23,923
+i veya j, k'in üstüne geldiğinde zaten i ve j'nin toplamının yarısı, mid noktası, k'in üstündedir demektir.
+
+427
+01:08:24,423 --> 01:08:27,423
+Dolayısıyla şu şarttan dolayı aradığımızı buluruz.
+
+428
+01:08:28,212 --> 01:08:30,212
+Nasıl yani? Anlamadım.
+
+429
+01:08:30,212 --> 01:08:37,212
+Şimdi i ve j tam ki'in üzerindeyse i artı j bölü iki, i ve j birbirine eşit demektir.
+
+430
+01:08:37,212 --> 01:08:43,212
+Yani o da şu şarttan dolayı dizinin orta noktası aradığımız eleman demektir. Öyle değil mi?
+
+431
+01:08:43,212 --> 01:08:51,212
+Şey, aradığımız sayı mesela ortanın bir sırındaysa son aşama olmasa da onun üstüne gelmeyecek mi?
+
+432
+01:08:51,212 --> 01:08:53,212
+Şimdi neresi olursa olsun.
+
+433
+01:08:53,908 --> 01:09:12,468
+Bir kere biz dizinin orta noktasına göre bakıyoruz ya, orta nokta eğer i ve j birbirine eşitse, tam birbirine aynı noktadaysa, şu şarttan dolayı, şuradaki durumdan dolayı, şart diyorum pardon, şu işlemden dolayı zaten elemanı bulmuş oluyoruz eğer aradığımız elemanı.
+
+434
+01:09:12,468 --> 01:09:18,628
+i veya j dedim. İkisinden biri tam o sayının üstüne gelirse.
+
+435
+01:09:19,412 --> 01:09:27,412
+Ama zaten şöyle düşün, anladım, tamam şimdi anladım. Şimdi i buradan başladı, j buradan başladı, aradığımız eleman da burada.
+
+436
+01:09:27,412 --> 01:09:32,412
+Aradığımız eleman ortanın tam bir sahanında olursa mesela, i onun üstüne gelmeyecek mi?
+
+437
+01:09:32,412 --> 01:09:45,228
+Gelecek, tamam. Tam şurada. Dur, onu şöyle yapalım. Dur, şurada göstereyim. Şimdi i'miz ilk başta on beşinci eleman oldu. Ben...
+
+438
+01:09:45,716 --> 01:09:47,716
+483 arıyorum.
+
+439
+01:09:47,716 --> 01:09:48,716
+Evet.
+
+440
+01:09:49,716 --> 01:09:51,716
+Niye yazamadım?
+
+441
+01:09:53,716 --> 01:09:56,716
+Şu animasyonu da iyice sıfır yapalım.
+
+442
+01:09:56,716 --> 01:10:01,716
+Bu burada, bu burada, orta nokta burada şimdi.
+
+443
+01:10:03,716 --> 01:10:07,716
+Orta nokta hesaplanırken şu nokta iyi oldu.
+
+444
+01:10:10,003 --> 01:10:13,603
+Orta nokta yeni hale geldi, sonra devam ediyoruz.
+
+445
+01:10:15,904 --> 01:10:18,703
+Şuraya kadar tamamen gelecek orta nokta.
+
+446
+01:10:21,003 --> 01:10:22,404
+Bir daha yaklaştık.
+
+447
+01:10:24,103 --> 01:10:25,804
+Sonra bir daha yaklaştık.
+
+448
+01:10:26,904 --> 01:10:32,503
+Bak dikkat edersen, low, küçüktür, eşittir, high olana kadar döngümüz.
+
+449
+01:10:33,103 --> 01:10:34,603
+Burada bir daha yaklaştık.
+
+450
+01:10:35,380 --> 01:10:40,380
+Ve en son burada bulmuş oluyoruz. Ha bizim şuradaki kodda şey yapabiliriz, eşittir yazmalıysak.
+
+451
+01:10:42,380 --> 01:10:45,380
+Bakayım yazmamız, ha şurada yazmamız gerekirdi. Şurada eşittir olacak.
+
+452
+01:10:49,108 --> 01:10:50,108
+Şimdi oldu mu?
+
+453
+01:10:51,108 --> 01:10:52,108
+Tamam anladım.
+
+454
+01:10:55,108 --> 01:10:57,108
+Bunu yazmasaydık ne olurdu?
+
+455
+01:10:59,108 --> 01:11:03,108
+Bunu yazmasaydık olmazdı. O zaman şurada da şunu diyecektik.
+
+456
+01:11:04,108 --> 01:11:07,108
+E büyükse G'den not found bulamadık.
+
+457
+01:11:08,108 --> 01:11:13,108
+Değilse işte bulduk, nerede bulduk? İşte mid noktasında bulduk, midinci point'te.
+
+458
+01:11:17,779 --> 01:11:39,779
+as found at midpoint. İşte midinci indekste bulduk gibi bir şey yazabiliriz. Bunun kodunu şöyle C üzerinde yazalım.
+
+459
+01:11:46,707 --> 01:11:54,948
+Hatırlarsanız, interpolation search diye bir şeyden bahsetmiştik. Regula falsi.
+
+460
+01:11:58,163 --> 01:12:00,163
+Bora hemen soruna bakacağım.
+
+461
+01:12:02,403 --> 01:12:06,663
+Şu python still code bir dakika burada şey vardı ya,
+
+462
+01:12:07,363 --> 01:12:08,863
+C kodu vardı.
+
+463
+01:12:22,003 --> 01:12:30,003
+Şöyle bir dizimiz var. Dizinin ne olduğu önemli değil. Bakın, lower banddan upper banda kadar karşılaştırma yapıyor.
+
+464
+01:12:30,003 --> 01:12:40,003
+İşte kaç tane karşılaştırma yaptığı bilgileri falan şurada var da mühim değil. Bakayım, orta nokta demiş. Ama bir dakika, bunu farklı yazmış ya.
+
+465
+01:12:41,003 --> 01:12:45,483
+Recursive mi çalıştırıyor? Pardon, yok yok, recursive değil.
+
+466
+01:12:45,684 --> 01:12:59,684
+Lower bound'dan upper bound'a kadar bakacak, orta noktayı bulacak. Orta noktayı bulduktan sonra diyecek ki, eğer aradığın elemanı bulduysa çık diyor. Biz break kullanmıyoruz. Bunun yerine şu şartı biraz önce şuraya yazdık.
+
+467
+01:12:59,684 --> 01:13:09,684
+Değilse, eğer orta noktadan büyükse, işte G'yi değiştir, değilse öbürünü değiştir deyip böyle döngüyü sürekli çevirtiyoruz. Böyle bir şey.
+
+468
+01:13:12,948 --> 01:13:18,268
+Şunu söyleyeyim, orta noktanın hesaplamasını burada yapmak zorunda değiliz.
+
+469
+01:13:18,268 --> 01:13:25,188
+Şu araya alabiliriz, şu aradaki işlemi silebiliriz. Bir tane işlem daha az yapılabilir.
+
+470
+01:13:25,188 --> 01:13:29,427
+Yani bu güzel bir şey, bir iyileştirme olabildi. Şunu siliyorum.
+
+471
+01:13:29,427 --> 01:13:35,268
+I0, n eşittir 1, şu noktayı şu satıra alıyorum.
+
+472
+01:13:35,268 --> 01:13:40,548
+Buna göre i ve j'ler güncelleniyor. Sonra tekrar orta nokta güncellemesi yapıyoruz.
+
+473
+01:13:41,203 --> 01:13:56,203
+Hocam, biz bir de eşitse bulamadık yazdırıyoruz ama o sıkıntı yapar mı? Eşitse bulamadı derken, [öğrenci] herhalde biraz önce arkadaşım [öğrenci]'di galiba söylediği sıkıntıyla alakalı seninki de.
+
+474
+01:13:56,203 --> 01:14:07,203
+Şunu yaparak o sonunda çözmüş oluyoruz. Şuraya küçük eşittir deyip, şurada da bu kontrolü yaparak çözmüş oluyoruz.
+
+475
+01:14:14,452 --> 01:14:16,452
+Evet, soru var mı başka?
+
+476
+01:14:18,452 --> 01:14:26,452
+Şimdi bu algoritmada aslında biz ne yaptık? i artı j çarpı 1 bölü 2 dedik.
+
+477
+01:14:27,452 --> 01:14:41,452
+Bu çarpı 1 bölü 2 yerine, interpolasyon dedik ya, regula falsi yöntemi, biraz daha interpolasyona uygun olarak tam orta noktayı şöyle bir formülle hesaplıyor.
+
+478
+01:14:42,355 --> 01:14:54,355
+Bakın kod hemen hemen aynı. Şöyle şey olarak aratayım. Binary Search değil, Interpolation Search.
+
+479
+01:15:00,307 --> 01:15:05,108
+Yine dizimiz var, baş noktamız var, işte son noktamızda max eksilir.
+
+480
+01:15:06,007 --> 01:15:16,208
+Orta noktayı hesaplarken şu formüle göre, bu formülde, bu regula falsi yöntemindeki formülün aynısı aslında bir interpolasyonu doğru uyduruyor orada.
+
+481
+01:15:16,608 --> 01:15:18,407
+Ve buna göre işlem yapıyor.
+
+482
+01:15:19,407 --> 01:15:22,708
+Bu bizi sonuca daha hızlı götürüyor arkadaşlar.
+
+483
+01:15:22,907 --> 01:15:24,507
+Daha hızlı sonuca gidiyoruz.
+
+484
+01:15:24,507 --> 01:15:26,108
+Şimdi ben şu kodu alacağım.
+
+485
+01:15:27,444 --> 01:15:38,644
+Daha önce sonuca gittiğimizi göstermek için... Bunların kodlarını uzun uzun yazmıyorum. Yani gerek yok. Yer yerde bulunan şeyler.
+
+486
+01:15:42,003 --> 01:15:47,283
+Burada tabii fonksiyon kullanmış da bu fonksiyonundan kurtaralım bu diziyi.
+
+487
+01:15:53,524 --> 01:16:01,524
+Veya durun böyle çalışsın birazdan zaten fonksiyonları anlatacağım. Kaç defa karşılaştırma yapıldığını da bize söylüyor bu fonksiyon.
+
+488
+01:16:03,524 --> 01:16:08,524
+Bir buna bakalım. Bunu farklı ekseküt edeceğim.
+
+489
+01:16:14,612 --> 01:16:17,412
+Interpolation Search
+
+490
+01:16:24,979 --> 01:16:43,979
+33'ü bakın bir karşılaştırmada bulmuş. 33 nerede? Şurada. Biz binary search yapsaydık kaç karşılaştırma olacaktı? Şimdi buradan buna bakıp orta nokta şurası deseydik bir karşılaştırma böyle. Sonra orta nokta burası deseydik iki karşılaştırma gibi olacaktı.
+
+491
+01:16:43,979 --> 01:16:46,979
+Şimdi buna bir de şey ekleyelim.
+
+492
+01:16:52,307 --> 01:17:06,707
+Linear Binary Search kodunu ekleyelim. Herhalde aynı kod. Şu kodu alıyorum. Bunu copy-all diyorum. Tek bir kodda ikisini de çalıştırıyorum.
+
+493
+01:17:06,707 --> 01:17:11,307
+Fonksiyonları anlatınca bu kodun findVertion2 diyorum buraya da.
+
+494
+01:17:32,851 --> 01:17:37,211
+List, şu printr ad im, şu artık list yapacağız.
+
+495
+01:17:44,724 --> 01:17:47,123
+değişken isimleri farklı gelmiş.
+
+496
+01:17:52,340 --> 01:17:54,340
+midpoint midpoint
+
+497
+01:17:56,640 --> 01:18:10,340
+Evet, bakın birinci algoritmada bir defa karşılaştırmada bulabildik. İkinci algoritmada ikinci karşılaştırma, üçüncü karşılaştırma toplam dört karşılaştırmada bulabildik.
+
+498
+01:18:10,340 --> 01:18:16,108
+Çünkü ne yapıyoruz? Orta noktaya göre. Interpolation Search işte şu basit operasyon aslında.
+
+499
+01:18:16,500 --> 01:18:32,100
+Bakın şu binary search'un orta nokta hesaplama kodu, şurada da interpolation search'un orta nokta hesaplama kodu. Geri kalan her şey aynı. Bir algoritmada geri kalan her şey aynı. Şimdi şu break'ten kurtulmak istiyorum. Ne yapmam lazım?
+
+500
+01:18:33,460 --> 01:18:43,700
+Break kullanmak yasak sizde. Bakın binary search kodunu değişecek. Şuradan gidelim, ondan sonra önce bundan yapalım. Dedi ki sizde break kullanmak yasak. Ne yapacağız?
+
+501
+01:18:44,884 --> 01:18:51,003
+Böyle bir kod gördünüz. Hadi ödevde kullanacaksınız bu kodu ama hocada break kullanmayı yasak yaptı. Ne yapmamız lazım?
+
+502
+01:18:58,100 --> 01:19:12,100
+Sanırsam zaten bu break bu döngünün son kodlarından birisi. O yüzden de buradaki breaki direktmen sevelim, if'in içerisindeki şeyi de while'ın içine atabiliriz.
+
+503
+01:19:12,100 --> 01:19:22,828
+Tamam, güzel. Ama buradaki şartı doğrudan alamayız. Diyor ki list midpoint eşitse dataya çık ve index'i şunu yap.
+
+504
+01:19:23,380 --> 01:19:25,380
+O zaman biz nefes ki?
+
+505
+01:19:25,380 --> 01:19:26,380
+Şeye giremiyoruz.
+
+506
+01:19:26,380 --> 01:19:29,380
+Tersiyle alacağız, dikkat edersen.
+
+507
+01:19:29,380 --> 01:19:37,380
+List datadan farklıysa, devam et, paramaya devam et dememiz lazım.
+
+508
+01:19:37,380 --> 01:19:41,380
+Peki midpoint indeksi de burada kaybetmeyeceğiz.
+
+509
+01:19:41,380 --> 01:19:45,355
+O zaman şöyle şurayı düzeltelim, şimdi şu gitti.
+
+510
+01:19:45,844 --> 01:19:51,344
+Bu şartımız ne olacak? Bulamadıysak, hani şu ifi yok edeceğiz.
+
+511
+01:19:55,539 --> 01:20:16,039
+Bu biraz önceki bizim slide'a yazdığımız koda benziyor değil mi? Orta nokta, midpoint datadan şeyse, değilse midpoint. Şimdi o zaman şurada bileceğiz ki, if, yani şeyi kullanmadık, lower bound, küçük'tür, eşittir, upper bound diyorsa, upper bound,
+
+512
+01:20:20,756 --> 01:20:40,576
+Büyüktür, lower bound ise not found. O zaman index mesela diyelim ki eksi bir olsun. Değilse, index eşittir midpoint olsun deriz.
+
+513
+01:20:43,539 --> 01:20:50,039
+Sonra index'i, buradan return yapacağız. Return ne oldu? Önemli değil. Yani bulunamadı, bulundu.
+
+514
+01:20:51,039 --> 01:21:02,840
+Neden kurtulduk? Şeyden kurtulmuş olduk. Neden aradığımız, yani tam istediğimiz şekilde kod yazmış olduk. Break'ten kurtulmuş olduk. Şimdi çalıştırıyorum tekrardan.
+
+515
+01:21:04,840 --> 01:21:08,039
+Upper bound, lower bound, şu değişken isimleri.
+
+516
+01:21:12,787 --> 01:21:16,287
+Hocam, lower değil, low yazıyor şu noktada.
+
+517
+01:21:19,956 --> 01:21:23,956
+Bir de bir yerde bir şey varmış.
+
+518
+01:21:28,819 --> 01:21:30,819
+İlentip, ayın, lorban, tıda.
+
+519
+01:21:39,796 --> 01:21:40,796
+Neyi görmedim ya?
+
+520
+01:21:42,996 --> 01:21:46,596
+Şurada bir tane fazladan şey var, şimdi parantezleri...
+
+521
+01:21:47,956 --> 01:21:51,275
+Bu, bunun parantezi. Şu parantez bir tane fazla.
+
+522
+01:21:52,796 --> 01:21:55,756
+Biraz önce ifesindik ya, hani şey yapmıştık.
+
+523
+01:21:56,836 --> 01:22:04,115
+Evet, birinci şey yine bakın dört karşılaştırmada bunu çözmüş olduk. Yani kodda ufak bir değişiklik yaptık.
+
+524
+01:22:04,556 --> 01:22:07,036
+Aynı değişikliği yukarıdakine de yapmak istiyorum.
+
+525
+01:22:07,667 --> 01:22:16,967
+Low, High'dan küçük olduğu müddetçe diyecek. Bakın burada bulabildiğini şey yaptı. Yine aynı noktayı getiriyorum. Ctrl X diyelim, bunu alalım.
+
+526
+01:22:19,967 --> 01:22:23,867
+Orta nokta datadan farklı iken aramaya devam et.
+
+527
+01:22:24,867 --> 01:22:31,067
+Şunu yok et. Şuradaki yerden bir tanesinde yok et.
+
+528
+01:22:31,507 --> 01:22:34,827
+Burada diyeceğiz ki yine aynı şuradaki kodu alıyorum.
+
+529
+01:22:39,347 --> 01:22:49,347
+Tabi burada upper bound, lower bound, up ve lo olarak, pardon high ve lo olarak olmuş. Şurası high, şu da low.
+
+530
+01:22:49,347 --> 01:22:54,347
+Index, mid noktası da, şuna da mid diyelim.
+
+531
+01:22:54,347 --> 01:23:05,347
+Ve değerli diyorum. Yine bakın burada birinci seferde bulduk. Burada da 7 şeyde, pardon burada da bunu bulduk.
+
+532
+01:23:06,068 --> 01:23:12,328
+Mesela şurada hangi lokasyonunda bulduğunu söylemiş miyim?
+
+533
+01:23:13,328 --> 01:23:18,327
+Teleman found at location.
+
+534
+01:23:21,908 --> 01:23:26,708
+Bakın, eksi bir döndürüyor, eksi bir kontrolü yapıyor bu şeyin, program değil.
+
+535
+01:23:29,908 --> 01:23:33,748
+Burada index-1 olacak, doğru. Burada index-1 olacak.
+
+536
+01:23:33,748 --> 01:23:38,468
+Şey göremedim, elementFound, notFound dedi bir dakika.
+
+537
+01:23:38,468 --> 01:23:43,348
+Ama element bulunması lazım, notFound olmayacak şurada.
+
+538
+01:23:43,348 --> 01:23:46,068
+Birinci denemede bulduk.
+
+539
+01:23:50,003 --> 01:23:58,724
+Mid noktası, listenin midi datadan farklıysa dön diyoruz. Mid noktası eksi bir oldu başta.
+
+540
+01:24:01,283 --> 01:24:06,884
+Ama listenin midi diye bir şey eksi birinci nokta yok. Şurayı sıfır yapmak gerekiyor.
+
+541
+01:24:08,163 --> 01:24:10,884
+Şurada şöyle bir şey söylememiz lazım.
+
+542
+01:24:11,684 --> 01:24:16,403
+Kodun içerisinde ufak bir açık var.
+
+543
+01:24:21,268 --> 01:24:27,828
+Şuna bir daha bakayım da, bunu düzeltirim. Yani şu değişikliği yapmış olmakla belki arada bir ufak bir hata yaptık.
+
+544
+01:24:28,387 --> 01:24:32,788
+Low küçük eşit high iken yerine high küçük eşit low yapacağız.
+
+545
+01:24:33,828 --> 01:24:41,268
+Başka gözüme takılan bir şey yok. Neyse bu bir dursun. Ben bunun düzeltilmiş haline bir arada ufak bir hatamız vardı belki.
+
+546
+01:24:41,668 --> 01:24:43,868
+Şöylebilir mi hocam?
+
+547
+01:24:44,588 --> 01:24:47,387
+While'ın şartını değiştirdiğimiz zaman...
+
+548
+01:24:47,572 --> 01:24:52,572
+While'ın bir döngüsünde, o if'in üzerindeki aşamaları gerçekleştirmiyor olabilir miyiz?
+
+549
+01:24:54,572 --> 01:25:00,572
+Şimdi sıfırdan başladık, max-1'e kadar gideceğiz. Mid noktamız sıfır diyebiliriz.
+
+550
+01:25:01,572 --> 01:25:02,572
+Yani,
+
+551
+01:25:04,572 --> 01:25:06,572
+Şurada,
+
+552
+01:25:08,572 --> 01:25:09,572
+Şöyle bir şey yapacağım.
+
+553
+01:25:11,572 --> 01:25:14,572
+Aslında bunu while ile değil de, do while ile yapmak daha mantıklı.
+
+554
+01:25:15,988 --> 01:25:19,568
+Burada da aslında aynı durum var.
+
+555
+01:25:21,868 --> 01:25:22,908
+Şimdi bakalım.
+
+556
+01:25:26,228 --> 01:25:27,508
+Aslında şey,
+
+557
+01:25:28,268 --> 01:25:30,828
+eksi bir döndürmüş olma, şey elemanı buluyor.
+
+558
+01:25:31,868 --> 01:25:36,728
+Tamam bulduğu için, yani şey yapıyorda, bizim şurada yaptığımız şu operasyon,
+
+559
+01:25:37,228 --> 01:25:40,568
+eksi bir artı bir şey işi karıştırıyor.
+
+560
+01:25:41,068 --> 01:25:42,608
+Yani indekse burada
+
+561
+01:25:43,444 --> 01:25:54,444
+Farklı bir değer atayım, şurada eksi bir yapmamız belki sıkıntı. Neyse bunu toparlarım ben. Biraz düzeltirim, size daha anlaşılır hale getiririm. Burada ufak tefek bazı değişiklikler yapmak gerekiyor.
+
+562
+01:25:55,444 --> 01:26:03,307
+Şimdi bir ara verelim. On buçukta gelelim arkadaşlar. On bir buçuğa kadar ders yapacağız. Bunu biraz uzattım.
+
+563
+01:26:03,412 --> 01:26:09,992
+Bugün bir toplantı var. 10 dakika ara verelim, kaldığımız yerden devam edelim. Ben de bu arada şunu düzeltirim.
+
+564
+01:26:09,992 --> 01:26:11,752
+Hocam buçukta mı döneceğiz?
+
+565
+01:26:11,752 --> 01:26:12,752
+Evet.
+
+566
+01:26:12,752 --> 01:26:13,676
+Tamam.
+
+567
+01:35:39,636 --> 01:35:51,636
+Evet arkadaşlar, sorunu buldum. Çok basit bir şeyi, hani gözden kaçırmışız sadece. Şöyle biraz süslemeler yapayım da, ondan sonra anlatacağım.
+
+568
+01:35:53,636 --> 01:35:56,636
+Şöyle bir backslash, benim daha koyalım.
+
+569
+01:36:00,787 --> 01:36:07,267
+Interpolation Search'te bir tane comparison yaptık, karşılaştırma yaptık ve yedinci lokasyonda bulduk.
+
+570
+01:36:07,267 --> 01:36:15,427
+Binary Search'te dört tane karşılaştırma yaptık ve yine yedinci lokasyonda bulduk. Hatamız neymiş? Şuymuş.
+
+571
+01:36:15,427 --> 01:36:26,467
+Şimdi burada low ve high bu şekildeydi. Şurada küçüktür yerine büyüktür yazmışız. Aslında buluyor ama şartı yanlış yazdığımız için.
+
+572
+01:36:26,771 --> 01:36:53,072
+Şart tam tersine girip bulunamadı diye şey yapıyor. Tabi ki bu algoritmada yani hem Binary Search'te hem Interpolation Search'te Arch, High noktası, Low noktasını geçerse şey olacaktır. Low, büyük, high olduğunda veya işte öyle söyleyebilir. Upper bound, küçük olduğunda lower bound, öyle de ifadebilir. Şimdi şurada da durum aynı.
+
+573
+01:36:53,587 --> 01:37:04,188
+eksi bir bulunamadığını göstermek için eksi bir göndereceğiz. Değilse işte bulduğumuz nokta da orta noktaydı her ikisinde de. Bu şekilde söyleyebiliriz. Mesela
+
+574
+01:37:04,868 --> 01:37:10,188
+bulunmayan bir eleman, mesela ne diyelim, 32'yi arayalım. 32'yi aramak için
+
+575
+01:37:10,868 --> 01:37:14,787
+şuraya geleceğim 32 yazacağım, daha sonra buraya da geleceğim.
+
+576
+01:37:14,944 --> 01:37:34,344
+Fonksiyonlar konusunu deniz görmedik ama görünce bu konu, yukarıdaki kodun daha anlamlı olduğunu göreceksiniz. Bakın ne oluyor? Aramaya çalışıyor. Bir yerde sonsuz döngüye takıldı. Yani burada muhtemelen ufak bir hatamız var yine. 32'yi sürekli bulamıyor. Bir sürü comparison yapmaya çalışıyor.
+
+577
+01:37:34,344 --> 01:37:39,944
+Acaba hangisindeydi? Mesela şunun da bir sıkıntı varsa diye şunu bir kapatayım.
+
+578
+01:37:42,644 --> 01:37:47,644
+Bakın, interpolation search'te şöyle bir sıkıntı var. Evet, bu şey sıkıntısı.
+
+579
+01:37:49,644 --> 01:37:53,444
+Aradığı eleman şununla şunun arasında bir yerde.
+
+580
+01:37:54,544 --> 01:38:02,044
+Burada şu işlem sürekli, gerçi şunu da kapatmak gerekecek mi? Şunu da kapatalım. Yani buna gerek yok. Bunu sağdan eklemiştim.
+
+581
+01:38:03,444 --> 01:38:05,644
+Orta noktayı eksi bir diyebiliriz.
+
+582
+01:38:06,844 --> 01:38:09,244
+Sürekli bu arama işlemini yapacağı için
+
+583
+01:38:10,868 --> 01:38:23,588
+Takılıp kalıyor. Interpolasyon search'u böyle bir sıkıntı var. Arada şu tam bölme işlemlerinden kaynaklı olarak burada devam ediliyor. Mesela şuraya gelelim bir debug yapalım.
+
+584
+01:38:24,588 --> 01:38:29,467
+Compile diyelim. Şunları da sileyim. Debug diyelim.
+
+585
+01:38:30,908 --> 01:38:37,588
+Orta noktayı add watch diyorum. Bana ne gerekiyor? Dizinin orta noktası işte listenin
+
+586
+01:38:38,195 --> 01:38:47,796
+Orta noktası lazım, bunun adwatch diyelim. Low noktamız olsun, buna adwatch diyelim. Bir de high noktamız, buna adwatch diyelim.
+
+587
+01:38:47,796 --> 01:39:00,596
+Şimdi, şu an orta noktamız eksi bir, güncel orta noktamız ne oldu? Beş. Yani sıfır, bir, iki, üç, dört, beş tam şu noktaya bizi getirdi. Otuz birdeyiz. Aslında çok yaklaştık.
+
+588
+01:39:02,228 --> 01:39:16,028
+Peki, devam edelim. Next line diyelim. İşte orta noktanın ne olduğunu burada bize gösterdi. Dedi ki, low 0 şey tam beşinci noktadayız. 10 ile 44'ün arasında bir yeri bizi ayarladı. Beşinci noktayı.
+
+589
+01:39:16,927 --> 01:39:27,427
+Devam ettiğimizde, orta nokta işte low 6'ya geldi. Orta noktamız şu an 31'i gösteriyor. Bunları ekrana yazdı.
+
+590
+01:39:28,884 --> 01:39:30,884
+Bir daha orta nokta bakacak.
+
+591
+01:39:32,884 --> 01:39:35,884
+Burada bulduğu orta nokta bakın yine 5'te kaldık.
+
+592
+01:39:36,884 --> 01:39:40,884
+Çünkü aradığımız nokta dizide yok.
+
+593
+01:39:40,884 --> 01:39:48,884
+Bu interpolasyon işlemi yine olduğumuz yere gidince low ve high noktalarımız değişmedi.
+
+594
+01:39:49,884 --> 01:39:55,884
+Değişmeyince sanki sonsuz bir döngü varmış gibi hep aynı nokta etrafında takılıp kalıyor.
+
+595
+01:39:57,684 --> 01:40:11,684
+Bunun böyle bir sıkıntısı var. Mesela aynı şey Binary Search'te olmaz. Mesela şunu bu sefer tam tersinden çalıştıralım. Burayı Interpolation Search'i kapatalım. Binary Search'i açalım.
+
+596
+01:40:11,684 --> 01:40:24,268
+Şöyle diyelim, Compile. Ama gerçi şunu kapatmam lazım. Böyle yaparsak hata verir.
+
+597
+01:40:30,771 --> 01:40:33,171
+İlk başta sırayı eksi bir yapalım.
+
+598
+01:40:33,171 --> 01:40:35,371
+Yani eksi bir diyelim.
+
+599
+01:40:39,315 --> 01:40:48,815
+Bakın, şey buldu, pardon, bir dakika, 32'yi çağırdık, 32'yi bulamaması lazım.
+
+600
+01:40:52,051 --> 01:41:04,051
+Binary Search, dördüncü lokasyonda Founded Location 7 bulamaması gerekiyor. Burada ne hatamız var?
+
+601
+01:41:07,051 --> 01:41:08,043
+Şurada...
+
+602
+01:41:11,155 --> 01:41:31,655
+while, midpoint, data küçükse, data büyükse, upper bound büyükse, ha, upper bound, burada da tersten yazmışız, küçükse şeyden olacak, şurası da.
+
+603
+01:41:33,652 --> 01:41:50,152
+Yani 2.1 günde geldi. Bakın burada da bulunamadığını söyledi. Yani burada bir sıkıntı yok ama interpolasyon söz, o yapılan şu bölmeli çarpmalı, işte interpolasyon işleminden kaynaklı olarak ne yapıyor? Hep aynı noktaya bize interpol ediyor.
+
+604
+01:41:50,152 --> 01:41:56,152
+Şimdi bunun mantığı şudur arkadaşlar, elinizde bir kitap alınız.
+
+605
+01:41:57,876 --> 01:42:09,876
+Şimdi linear search şunu yapıyor, işte mesela kitap 500 sayfalı, siz 100. sayfa arıyorsunuz. Linear search bakıyor, birinci sayfa mı değil, iki mi değil, üç mü değil, dört mü değil. Bu linear search'tür.
+
+606
+01:42:09,876 --> 01:42:25,836
+Binary search tam orta noktaya bakar. 500'ün ortası 250. 250'ü arıyorsanız o zaman bu tarafa bakacağız. Sonra 125 ile 250'ye bakar. Sonra 125 ile 250'nin orta noktası neresi? 175 mi? Neyse.
+
+607
+01:42:25,971 --> 01:42:36,971
+Oraya bakar, böyle yarılaya yarılaya. Hani biz kitap ararken böyle sayfaları şöyle şey yaparız ya, işte bu yaptığımız şey ve interpolasyon search oluyor. Bunun mantığı budur.
+
+608
+01:42:36,971 --> 01:42:50,891
+Böyle kestirim yaparak aramaya çalışmak. Hızlı bir şekilde interpolasyon search sonuca gidiyor ama aradığınız eleman yoksa takılma durumu var. Çünkü o interpolasyon işlemi bir yerde...
+
+609
+01:42:51,091 --> 01:43:00,091
+Sonsuza sizi gönderebiliyor. Yani divergence dediğimiz araksama işlemiyle karşı karşıya kalabilirsiniz.
+
+610
+01:43:00,091 --> 01:43:05,091
+Tamam, şimdi burada soru yoktu. Bunu da kapatalım.
+
+611
+01:43:05,091 --> 01:43:14,091
+Şimdi bir diğer sorumuz, bir dizinin sıralı olup olmadığını bulmak istiyoruz.
+
+612
+01:43:18,899 --> 01:43:21,699
+Bu kaçıncı soruydu? Üçüncü, dördüncü soru.
+
+613
+01:43:25,332 --> 01:43:43,332
+Check an array veya şöyle diyelim whether oradan if diyelim if array is sorted or not.
+
+614
+01:43:45,332 --> 01:43:47,332
+Bir dizi sıralı mı değil mi?
+
+615
+01:43:48,332 --> 01:43:51,332
+Nasıl bir yaklaşım yapabiliriz burada?
+
+616
+01:43:53,268 --> 01:44:00,768
+Elimde en tane eleman var, hangi şey olduğu önemli değil. Bu dizi acaba sıralım değil mi?
+
+617
+01:44:08,948 --> 01:44:22,948
+Hocam, şey yapabilir miyiz mesela diyelim ki ikinci eleman, ilk elemandan küçükse veya eşitse o zaman hepsinde ona veya öbür durumda hepsi öylim diye bakmak gibi bir şey.
+
+618
+01:44:22,948 --> 01:44:29,948
+Yani diyorsun ki iki ile biri kontrol ederim. Öyle mi?
+
+619
+01:44:30,452 --> 01:44:47,851
+Eğer bu ikinci eleman, birinci elemandan büyükse veya küçükse o zaman üç ile ikiye bakarım. Herhalde öyle. Bir de dört de buna bakarım. Yani sonuna kadar bakarım. Genelleştirirsek bunu nasıl yapacağız? Nasıl diyeceğiz? Ege?
+
+620
+01:44:50,676 --> 01:44:57,676
+Başta bir şey, if ile şeye bakabiliriz, öbüründe artıyor mu azalıyor mu diye bakabiliriz.
+
+621
+01:44:57,676 --> 01:45:13,676
+Yani şunu diyebilir miyiz, i artı bir ile dizinin i artı birinci elemanı, büyükse dizinin i'sinden böyle bir şart olur mu?
+
+622
+01:45:15,380 --> 01:45:18,840
+Yani diğer elemanlarda da oluyor mu diye bakabiliriz.
+
+623
+01:45:18,840 --> 01:45:22,240
+O zaman ne yapacağız? Bir de dışarıya döngü yazacağız diğer elemanlarda.
+
+624
+01:45:22,240 --> 01:45:34,280
+Yani i sıfırdan başlasak, i küçüktür en eksi birinci elemana kadar gitsek, i artı artı desek, dizinin i artı biri ne olur?
+
+625
+01:45:34,280 --> 01:45:38,640
+Dizinin birinci elemanı, şunlar 0, 1, 2 diye, C notasyonunda yazıyoruz.
+
+626
+01:45:39,640 --> 01:45:42,520
+Mesela 6 elemanlı dizi. Dizinin birinci elemanı.
+
+627
+01:45:42,836 --> 01:45:52,236
+0. elemandan büyükse, tamam büyükse, şimdi buna bir şeyler yapmamız gerekecek, bir değişiklik yapacağız, böyle baktık olmadı.
+
+628
+01:45:52,236 --> 01:46:04,236
+Mesela burada bir değişken, flag değişkeni tutsak, flag eşittir mesela ilk başta 0 olsa, dizinin i artı 1'i i'den büyükse,
+
+629
+01:46:04,500 --> 01:46:11,380
+i bir arttı, dizinin ikisi birden büyükse, bir arttı, üç ikiden büyükse, tamam büyükse, devam etti diyor.
+
+630
+01:46:12,380 --> 01:46:24,059
+Böyle bakarsak, sanki bir yola girdi gibi. Şimdi karşılaştırma doğru ama, dizi sıralı değilse bunu bir yerde tutmamız lazım. Mesela plek değişkeni sıfırsa sıralı olsun.
+
+631
+01:46:31,315 --> 01:46:35,395
+Veya 1 diyelim hani tam mantıksal olarak da anlamlı olsun.
+
+632
+01:46:35,395 --> 01:46:40,915
+Şu sorted değişkenini 0 yaparsam sıralı olmadığını kabul edeceğim.
+
+633
+01:46:40,915 --> 01:46:54,275
+O zaman şartı tam tersinden söylersek, küçüktür, eşittir dersek, sorted'da burada 0 yaparsak herhalde çözüme ulaşırız.
+
+634
+01:46:59,475 --> 01:47:13,475
+Arada bir yerde, eğer dizinin i artı biri dizinin i ince elemanından küçük eşitse, yani biz burada büyükten küçüğe değil de küçükten büyüğe sıralı olup olmadığını kontrol ediyoruz. Genellikle default düzen budur.
+
+635
+01:47:13,475 --> 01:47:19,475
+Şimdi ne oluyor? Mesela değerler girelim. 1 girelim, 2 girelim, 3 girelim, 4 girelim, 5 girelim, 6 girelim.
+
+636
+01:47:19,475 --> 01:47:26,443
+Şimdi sortuk değişkenimiz başta 1. Dizinin i artı 1'ine bakıyoruz, yani ikinci elemana.
+
+637
+01:47:26,515 --> 01:47:53,715
+Yani birinci elemana, C'ye göre birinci eleman. Dizinin iyisine bakıyoruz. 2, 1'den küçük mü? Değil. 3, 2'den küçük mü? Değil. 4, 3'den küçük mü? Değil. 5, 4'ten küçük mü? Değil. 6, 5'ten küçük mü? Değil. Hiçbir şekilde biz sorted eşittir 0 kodunu çalıştıramadık. Çalıştıramadığım için sorted hep 1 olarak kaldı. Bunun sonunda if sorted eşittir eşittir 1 ise
+
+638
+01:47:54,068 --> 01:48:05,068
+Diyeceğiz ki bu işte sorted, else, not, işte, not sorted falan gibi bir ifade yazarız.
+
+639
+01:48:05,068 --> 01:48:12,068
+Buradaki mantığı anladık mı? Dizi sıralı mı, değil mi?
+
+640
+01:48:12,068 --> 01:48:19,068
+Peki bunun analizini yapmak istersek, bu kod kaç defa çalışır?
+
+641
+01:48:26,612 --> 01:48:49,011
+En kötü ihtimalle n defa değil mi? Yani n defa dönmek zorunda. Yani son elemana kadar kontrol etmek zorundayız. Yalnız burada şöyle bir durum var. Dizi sıralı değilse yani sortu eşittir 0 bir defa yapılıyorsa artık daha fazla bakmamam gerekiyor değil mi?
+
+642
+01:48:54,931 --> 01:49:08,731
+1, 4, 3, 4, 5, 6. Şimdi bir defa bu şart bozuldu, yani bir defa sırayı bozan bir durumla karşılaştıysan daha fazla bakmamak için bunu şöyle yazmak daha mantıklı değil mi arkadaşlar?
+
+643
+01:49:08,731 --> 01:49:13,532
+Yani for döngüsü çok işe yaramaz burada. Onun için çok doğru bir kod değil bu.
+
+644
+01:49:14,731 --> 01:49:17,931
+For döngüsünün doğasına aykırı, öyle söyleyeyim. Onun yerine şöyle yapsak.
+
+645
+01:49:18,532 --> 01:49:22,332
+While döngüsüyle yapsak bunu. Şartımız ne olacak?
+
+646
+01:49:23,060 --> 01:49:27,460
+Bir kere i'yi sıfırdan başlatacağız. Sorted 1 olacak.
+
+647
+01:49:29,560 --> 01:49:37,460
+Diyebiliriz ki i küçüktür, son elemana gelene kadar, hatta sondan bir önceki elemana gelene kadar. Aynı zamanda
+
+648
+01:49:39,060 --> 01:49:41,560
+Şuradaki şartı buraya getiriyorum. Dizinin
+
+649
+01:49:44,159 --> 01:49:45,860
+Veya şuna gerek yok.
+
+650
+01:49:47,960 --> 01:49:50,360
+Veya sorted
+
+651
+01:49:52,243 --> 01:49:53,443
+Sorted.
+
+652
+01:49:58,260 --> 01:50:02,100
+Sıfırdan farklı oldu veya sortu eşit eşittir 1 olduğu sürece.
+
+653
+01:50:04,400 --> 01:50:15,160
+Yani sırayı bozan bir durum yok ve dizinin sonuna gelmediyse, bu iki cümleyi kod haline getirdim, bu iki şartı.
+
+654
+01:50:15,660 --> 01:50:21,820
+Bu ikisi bu şekildedir. Ya sortu devam edecek ya da dizinin sonuna henüz gelmedi. O zaman diyeceğim ki if
+
+655
+01:50:23,100 --> 01:50:24,880
+d'nin i artı 1'i
+
+656
+01:50:26,292 --> 01:50:29,971
+Küçüktür, eşittir, D'nin iyisinden.
+
+657
+01:50:31,971 --> 01:50:36,692
+Bu şart olduğu durumda sortatı ne yaptı? Sıfır yap.
+
+658
+01:50:37,492 --> 01:50:40,532
+Şart doğru da olsa, yanlış da olsa, iyi bir arttır.
+
+659
+01:50:44,020 --> 01:50:54,020
+Şimdi şartın doğru olma durumu nedir? Dizide sırayı bozan bir durum var. O zaman sortu 0 olunca şu sebepten dolayı çıkacağız. Çünkü arada ne var? Ant var.
+
+660
+01:50:54,020 --> 01:51:04,020
+Şart hep yanlış gidiyor. Yani hep sıralı bir dizi var. İşte 1, 2, 3, 4, 5, 6 gibi. Bu i artacak artacak, son elemana kadar bakacak.
+
+661
+01:51:04,020 --> 01:51:11,020
+Son elemana geldiğimizde ne yapacağız? Çıkmış olacağız. O zaman burada ekstra şöyle kontroller yaparız.
+
+662
+01:51:11,604 --> 01:51:26,904
+if mesela sorted ise işte bir şey yap, bir değer yap veya yani gerçi burada son elemana kadar baktığımızda şu i'den kontrol yapmamız gerekiyor.
+
+663
+01:51:27,004 --> 01:51:30,284
+if diyeceğiz doğrudan. Şunun aynısını buraya getirebiliriz.
+
+664
+01:51:32,124 --> 01:51:38,324
+if sorted eşittir eşittir birse yaz işte sorted yaz.
+
+665
+01:51:40,435 --> 01:51:50,735
+else, not, not sorted, not yet, bitirir. Bunun karmaşıklığı da n. Yani ikisi de aynı karmaşıklıkta kodlar.
+
+666
+01:51:50,735 --> 01:52:01,435
+Ama ikincisi daha az kontrol yapma imkanı sağlıyor şuna göre. Niye? Arada çünkü bir tane örnek, aksine örnek bulursak şey yapıyoruz.
+
+667
+01:52:01,435 --> 01:52:06,411
+İşte şu yaklaşım arkadaşlar, counter example yaklaşımı.
+
+668
+01:52:06,804 --> 01:52:23,804
+Mantıkta ilk derslerde veya ikinci derste konuşmuştuk ya, bir şeyin doğruluğunu ispat etmek çok zor ama yanlışlığını ispat etmek için çok basit bir durum varsa, o basitlikten faydalanarak yanlış değilse doğrudur, doğru değilse yanlıştır. İki tane durum var.
+
+669
+01:52:23,804 --> 01:52:31,500
+Burada da ya sıralı ya da sıralı değil. İşte bunu karşı örnekle şu while döngüsü de yaparsak çok rahat halledebiliyoruz.
+
+670
+01:52:31,636 --> 01:52:35,876
+For döngüsü, bütün durumları denemeye yönelik bir döngü burada.
+
+671
+01:52:36,756 --> 01:52:41,876
+Bir de daha kötü bir örnek, Solution 2 diyelim.
+
+672
+01:52:43,916 --> 01:52:45,716
+Diziye önce sıralarız.
+
+673
+01:52:47,515 --> 01:52:49,555
+Ve başka bir diziye atarız.
+
+674
+01:52:51,596 --> 01:52:52,636
+First
+
+675
+01:52:54,676 --> 01:52:55,596
+Sort
+
+676
+01:52:56,216 --> 01:52:56,975
+Array
+
+677
+01:52:59,859 --> 01:53:09,859
+and assign it to other dizi, to the other array.
+
+678
+01:53:09,859 --> 01:53:14,859
+Other array, şöyle yazamadım da, şöyle düşmeyiz.
+
+679
+01:53:20,083 --> 01:53:26,283
+Yani 1, 2, 3, 4, 5, 6 veya neyse bir dizim var ama ben bunun sıralamadığını bilmiyorum. Önce onu sıralıyorum.
+
+680
+01:53:27,884 --> 01:53:31,484
+Sıralama algoritması çalıştırıyorum. Bubble Sword artık neyse.
+
+681
+01:53:31,984 --> 01:53:38,484
+Ve bu sıraladığım diziyi başka bir diziye aktarıyorum. Aslında sıralarken başka bir diziyi kopyalayarak sıralayacağım.
+
+682
+01:53:39,283 --> 01:53:46,083
+Bunun sonrasında oluşan ilk dizi ile ikinci dizi birbirinin aynısı mı, eşit mi diye kontrol edelim.
+
+683
+01:53:46,739 --> 01:53:52,019
+Sonra check two arrays.
+
+684
+01:53:53,779 --> 01:53:59,019
+Biliyorum ki bunlardan birincisi artık sıralama algoritmasından geçtiği için sıralı.
+
+685
+01:53:59,019 --> 01:54:02,979
+İlk orijinal dizimde aramak istediğim kontrol etmediğim dizi.
+
+686
+01:54:02,979 --> 01:54:07,619
+Eğer sıralı dizi ile orijinal dizim birbirine aynıysa o zaman şeydir.
+
+687
+01:54:07,619 --> 01:54:11,619
+Ama burada ne var? Sıralamanın maliyetinden gelen n log n gibi.
+
+688
+01:54:12,404 --> 01:54:19,404
+Bir maliyet var. Bakın burada en karmaşıklık olan şey, burada n-log n karmaşıklık da karşımıza geliyor.
+
+689
+01:54:19,404 --> 01:54:23,404
+Çünkü sıralama algoritmaları en iyi ihtimalle budur demiştik.
+
+690
+01:54:25,404 --> 01:54:27,212
+Burada sorumuz var mı?
+
+691
+01:54:34,644 --> 01:54:47,043
+Şimdi soru beşe gelmeden önce arkadaşlar birazcık konunun dışına çıkmak istiyorum. İki diziyi birleştirdik falan, bunlar güzel.
+
+692
+01:54:50,043 --> 01:54:59,043
+Bir konu anlatacağım, programlamaya ilişkin bir konu anlatacağım çünkü bundan sonraki örneklerimiz de çok lazım olacak. Bunlardan bir tanesi pointerlar konusu.
+
+693
+01:55:04,083 --> 01:55:08,235
+ve
+
+694
+01:55:14,131 --> 01:55:22,131
+Bunun bir kısmı C ile alakalı, bir kısmı her programlama dili ve işletim sistemi ile alakalı aslında bilgisayar sistemi ile alakalı bir şey.
+
+695
+01:55:23,131 --> 01:55:36,131
+Şimdi siz bir program yazdınız. MyProgram.c, MyProgram.python. Bu tekst halindeydi.
+
+696
+01:55:36,131 --> 01:55:40,043
+Bunu ne yaptık? Biz değerledik arkadaşlar, compile ettik.
+
+697
+01:55:40,340 --> 01:56:03,340
+Sonra işte link yaptık, sonra executable hale getirdik. .exe gibi bir hale geldi. Bunu ne yapıyoruz? Run yaptığımızda, çalıştığınızda bilgisayarınızın RAM'inde, belleğinde işletim sistemi tarafından sizin programınıza bir yer tahsis ediliyor. Tamam mı?
+
+698
+01:56:13,363 --> 01:56:19,363
+Bu Memorial Equation içerisi böyle karmaşık bir yapıda değil, belli bir düzenli.
+
+699
+01:56:20,363 --> 01:56:23,363
+Şimdi bunu şöyle Google görsellerde aratalım.
+
+700
+01:56:25,363 --> 01:56:34,363
+Process Control Block diyoruz arkadaşlar. Belki geçen dönem BBG'de kısmen gördünüz. Mesela şuradan şöyle bakabiliriz.
+
+701
+01:56:41,492 --> 01:56:55,311
+Bakın diyor ki bu içerisinde belli alanlar var, program counter var, açık dosyalar var, bazı accounting bilgileri var, prosesin id'si var. Çünkü size programınız bir proses haline geliyor. Onu da şöyle göstereyim.
+
+702
+01:56:55,311 --> 01:57:08,891
+Şimdi biraz önce bir program şurada execute ettiğimde, bakın burada bir proses, iki dizi birleştir.exe. Ben şurada Windows'da Task Manager'a gelirsem,
+
+703
+01:57:09,716 --> 01:57:19,716
+Detaylara bakalım. Nerededir? H. Gerçi kapandığı için tam şey olmadı da.
+
+704
+01:57:21,216 --> 01:57:29,216
+Yani burada bir proses olarak bunu görebilirim. Yani iki dizi birleştir dosyası mı? Veya bakalım devc++ çalışır durumda.
+
+705
+01:57:37,492 --> 01:57:41,171
+Şöyle ikisini yan yana hızlıca gösterebilir miyim acaba?
+
+706
+01:57:45,427 --> 01:57:50,827
+Bakın, çalıştı, dikkat ederseniz bir şey geldi gitti. Çünkü hemen kapandı program, görevi bitti.
+
+707
+01:57:50,827 --> 01:57:58,627
+Sadece şu ekran karşılıyor. Tekrar tekrar çalıştırırsam bu devam eder gider. Hatta, yani biraz önceki şeyi açalım.
+
+708
+01:57:58,627 --> 01:58:11,228
+Gerçi o kapandı da, mühim değil. Buna bellekte bir yer ayrılıyor. Bu bellekte ayrılan yerin içerisinde sizin programınızın kodu var.
+
+709
+01:58:11,699 --> 01:58:14,699
+Proseslerimizle alakalı bazı bilgiler var.
+
+710
+01:58:15,699 --> 01:58:19,199
+Ve programımızın kullandığı datalar var.
+
+711
+01:58:20,199 --> 01:58:25,699
+Program kod kısmı, program data kısmı, bir de prosesle alakalı özel işletim sisteminin tuttuğu bilgiler.
+
+712
+01:58:26,199 --> 01:58:28,699
+Şimdi bize lazım olan şey şu bölgede,
+
+713
+01:58:30,699 --> 01:58:31,699
+Data Section.
+
+714
+01:58:34,699 --> 01:58:38,699
+Yani programımızın içerisindeki kullanılan şeyler, değişkenler.
+
+715
+01:58:39,283 --> 01:59:01,283
+Nasıl saklanıyor? Önce bunu görmemiz lazım. Bu data section'a baktığımızda arkadaşlar kendi içinde alt bölümleri ayırıyor. Bunlardan bir tanesi stack section, öbürü heap section, sonra global datalar var, global variable'lar var.
+
+716
+01:59:09,971 --> 01:59:16,691
+Biz genellikle şimdilik Stake Section'daki şeyleri kullanıyoruz. Diğerlerini de yeri geldiğinde kullanacağız.
+
+717
+01:59:16,691 --> 01:59:28,971
+Şimdi Stake Section'da normal değişkenler, Integer, float, birazdan göreceğimiz Integer, pointer gibi değişkenler var. Bir de diziler var işte.
+
+718
+01:59:28,971 --> 01:59:37,651
+Ama bu diziler sabit uzunlukta işte Array 10 mesela. Şöyle diyelim Integer 10 elemanlı A dizimiz.
+
+719
+01:59:38,739 --> 02:00:04,340
+Hepsi Stake Section'da tutuluyor. Tabi bu Stake Section nasıl çalışacak şimdi onun mantığına geleceğiz. Şimdi Stake dediğim şey yığın ifade edilen bir yapı. Şöyle bir dizi gibi düşünün. Bu üst üste eklene eklene yani bir tabak dizisi gibi her şeyi üste koyuyorsunuz. Alırken de üstten almanız gerekiyor. İşte bir A.
+
+720
+02:00:04,479 --> 02:00:12,279
+Sonra bir şey eklediğiniz B'ye geliyor, sonra bir şey eklediğiniz C'ye geliyor. Bir şey çıkaracağınızda aradan bir şey alıp çıkaramıyorsunuz.
+
+721
+02:00:12,279 --> 02:00:17,479
+Tepedekini her zaman sileceksiniz. Bu mantıkla çalışın.
+
+722
+02:00:17,479 --> 02:00:25,279
+Şimdi siz programınızı açtığınızda, pardon programınızı çalıştırdığınızda, bu stek bölgesine
+
+723
+02:00:27,060 --> 02:00:36,060
+Kullanılan bütün fonksiyonlar belli bir düzene göre ekleniyor. Şimdi program çalışınca hangi fonksiyon çalışıyor önce? Main fonksiyonu çalışıyor.
+
+724
+02:00:36,060 --> 02:00:48,060
+Dolayısıyla diyor ki ben bu stag bölgesine main'i getiririm. Main içerisinde tanımladığım bütün değişkenler burada belli bir düzene göre kaydedilir.
+
+725
+02:00:53,939 --> 02:01:18,539
+Önce en elemanlı yani sekiz elemanlı diziyi yerleştireceğim. Sonra onun akabine şunu yerleştireceğim. Sonra bunun devamına bunu yerleştireceğim. Bunlar hep birbiri ardışık. Sonra üç tane değişken atacağım. Bakıldığı zaman eğer bunu ben şöyle yaparsam, önce bu değişkenler yerleşecek. Ondan sonra dizilere sıra gelecek.
+
+726
+02:01:19,731 --> 02:01:23,912
+Şimdi hatırlarsanız, şu kodu şöyle alayım, bunu bozmadan.
+
+727
+02:01:25,192 --> 02:01:29,912
+Biz bir ampersand operatörümüz var değil mi arkadaşlar? Scanf'de kullanıyorduk şimdiye kadar.
+
+728
+02:01:31,372 --> 02:01:36,231
+Ben şu dizileri yine aynı tanımlayalım.
+
+729
+02:01:37,072 --> 02:01:42,172
+Printf için kullanacağım bu ampersand. Diyorum ki, %p.
+
+730
+02:01:45,011 --> 02:01:48,591
+Bu ne için? i değişikleri için.
+
+731
+02:01:50,131 --> 02:01:52,692
+Diyorum ki i'nin adresini yazdır.
+
+732
+02:01:54,231 --> 02:01:55,511
+Bakalım neymiş.
+
+733
+02:01:57,291 --> 02:01:58,072
+Sonra
+
+734
+02:01:59,351 --> 02:02:01,391
+şurada bir de backslash n koyalım.
+
+735
+02:02:04,659 --> 02:02:07,060
+Aynısını diğer değişkenler için yazacağım.
+
+736
+02:02:09,060 --> 02:02:11,860
+İ için değil, x için, sonra y için.
+
+737
+02:02:12,560 --> 02:02:17,060
+Bunların gelişi güzel, belliğe serpiştirilmediklerini görmemiz gerekiyor.
+
+738
+02:02:18,560 --> 02:02:23,060
+Sonra devam ediyorum. Bir %p daha yazalım. Bu %p de şey olsun.
+
+739
+02:02:23,860 --> 02:02:31,460
+Mesela A dizisinin ilk elemanının adresi, yani A'nın 0. elemanı için bunu yazacağım. O zaman buraya geliyorum.
+
+740
+02:02:32,884 --> 02:02:39,283
+sıfırıncı elemanın adresi. Bakın bunlar adres operatörüdü ya, scanf'de yaptığım şeyi burada sadece bunun için yaptım. Bir de gelelim,
+
+741
+02:02:41,583 --> 02:02:44,283
+B dizisinin ilk elemanın adresine bakalım.
+
+742
+02:02:48,404 --> 02:02:50,404
+Şöyle çalıştırayım.
+
+743
+02:02:54,707 --> 02:03:19,327
+Program Allocation falan diyelim veya işte Memory Allocation. Bakın, i62fe1c. Bakın bu program, bu adres bilgisi işletim sistemi tarafından, işletim sisteminin kendi kriterlerine göre bana verilen program bölgesinden elde ettiğim adresler. Şimdi 1c varmış.
+
+744
+02:03:21,268 --> 02:03:44,568
+Bu arada stek doldurma işi şöyle oluyor. Adresler, onu da ekleyeyim. Stek segment dedik ya, şurası en küçük low adres. Sonra aşağıya doğru artarak gidiyor. Yani bu artı artı artı diye gidiyor. Bakın burada bunu görüyoruz. Pardon, tam tersten söyledik ya.
+
+745
+02:03:47,123 --> 02:03:49,524
+Buradaki görüntü tam tersi olacak.
+
+746
+02:03:53,587 --> 02:04:10,587
+Şurası high address, şurası low address. Yani yukarıdan aşağıya doğru ama her zaman önce buraya verecek, daha sonra buraya verecek. Yani ben şurada tersten çizdim aslında. ABC dediğim şey. Bunu yukarıdan aşağıya doğru doldurdum. Mantık değişmiyor. Sadece adresin...
+
+747
+02:04:10,804 --> 02:04:21,923
+değerleri değişiyor. Bakın integer 4 byte'lı ya, x değişkeni bundan 4 byte önce, yani sıraya göre önce oluyor. Sonra bu 4 byte.
+
+748
+02:04:21,923 --> 02:04:32,923
+Bundan sonra bir şey yok arkadaşlar bakın, hemen peşine diziyi ekledi. Arada bir boşluk falan yok. Yani bunun 4 byte öncesi 14'ten 4 çıkarttığınız 0, 0 kalır.
+
+749
+02:04:35,636 --> 02:04:48,436
+Tabi arada 4 byte var ama B0'a gelene kadar 3 tane 4 byte gelecek. Bu da E0'a karşılık geliyor. Bunları böyle bir düzende stack mantığıyla, yukarıdan aşağıya doğru saklıyoruz.
+
+750
+02:04:48,436 --> 02:04:59,636
+Peki bu bizim ne işimize yarayacak? Yani burada bunları bilmek sadece programın nasıl organize edildiğini bilmekle alakalı. Ama bazen...
+
+751
+02:05:00,083 --> 02:05:26,384
+Herhangi bir değişkenin adresine ihtiyaç duyabiliyoruz. Bakın burada adres bilgisini aldık sadece ekrana yazdık ama çok bir işe yaramadı. İşte işe yarayacak durum, ilk şu dizi birleştir örneğinde hatırlarsanız böyle bir senaryomuz vardı, şu koddan kurtulalım dedim. Bu tarz durumlarda bir şeyin adresine ulaşmak ihtiyacı duyabiliyoruz. İşte bu işlem de pointerlar.
+
+752
+02:05:26,963 --> 02:05:35,463
+Ben şimdi pointer'lar üzerinde sadece şunu bilelim, yani bu böyle bir genel kültür gibi olsun. Asıl derdimiz pointer'lar.
+
+753
+02:05:37,963 --> 02:05:40,463
+Pointer variables.
+
+754
+02:05:45,011 --> 02:05:48,612
+Pointer variable, yeni bir değişken türü gibi bir şey.
+
+755
+02:05:49,751 --> 02:06:05,311
+Integer neyse, integer işte tam sayı tutuyordu. Integer pointer ile tam sayı türde değişken tutan bir adres. Pardon, değişkenin adresini tutan bir değişken türü. Biraz karışık belki.
+
+756
+02:06:12,404 --> 02:06:23,404
+Şöyle PA. Bunda değer tutamıyorum arkadaşlar. Yani 3, 5, 10 gibi değer tutamıyorum. Ama integer türde bir değişkenin adres değerini tutabiliyorum.
+
+757
+02:06:23,404 --> 02:06:31,372
+Dolayısıyla bunu tanımlarken önüne yıldız koyuyoruz. Yıldız başka nerede kullanılıyor programlamada?
+
+758
+02:06:34,612 --> 02:06:57,612
+Çarpma işlemi? Çarpmada. Ama çarpmadan fark ne? Çarpmada bir sol bir sağ operasyon olacak. Yani çarpma A çarpı B dediğim şey. Şöyle bir şey. Bir solda bize sağda iki tane operant gerekiyor. Ama bu tek operantlı bir şey. Evet, yuneri. Önünde sadece sağında bir şey var. Bu şekilde bir pointer değişken.
+
+759
+02:06:59,507 --> 02:07:19,507
+Pointer variable declaration yaptık. Sadece değişkeni tanımladık. Bu değişkeni kullanmak istiyorsak, diyeceğiz ki pa neye eşit olsun? Şunun adresini tutsun mesela. O zaman diyoruz ki bu adresi al, buna kopyalar. Bu bize lazım olacak.
+
+760
+02:07:26,323 --> 02:07:38,823
+array mesela beş elemanlı dizi. pA eşittir, ar'nin sıfırı diyemem. Bunu adrese çevirmem gerekiyor. Ar'nin sıfırıncısının adresi diyoruz.
+
+761
+02:07:40,963 --> 02:07:50,723
+Aynı yaptığım erişim işlemlerini artık pA üzerinden de yapabilirim. Şimdi şöyle bir bakalım. Dedik ya bellek bu şekilde organize edilecek.
+
+762
+02:07:51,572 --> 02:08:01,892
+Önce A değişkenini tanımlamış olayım. A değişkeni bellekte yazıldı. Sonra 5 elemanlı diziyi tanımlamış olalım. İşte Array diye şey var. Burada 5 tane hücre var.
+
+763
+02:08:04,692 --> 02:08:07,252
+Sonra PA değişkenini tanımlamış olalım.
+
+764
+02:08:08,932 --> 02:08:14,132
+Genellikle PA pointer değişkenleri 8 byte falan olur.
+
+765
+02:08:14,319 --> 02:08:28,139
+Bellekin ne kadar adresleme kapasitesi gerektirdiği ile alakalı, bellek boyutu ile alakalı işletim sistemi nasıl adresleme yapıyorsa bunun mesela integer 4 byte ama integer pointerlar 8 byte olabilir.
+
+766
+02:08:28,139 --> 02:08:36,339
+Bakın bu 4 byte, bu 4 byte, bu 4 byte, bu 4 byte, bu 4 byte, bu 4 byte, bu 4 byte, şu 8 olabilir. 16 olduğu durumlarda vardır.
+
+767
+02:08:36,339 --> 02:08:37,779
+Artık...
+
+768
+02:08:37,823 --> 02:08:50,323
+Ben pa eşittir a'nın adresi dersen, şu adres değeri neyse geliyor buraya kopyalıyor. Bunun içinde mesela buraya alfa diyelim. Burada alfa şeklinde bir adres değeri görüyor.
+
+769
+02:08:51,423 --> 02:08:55,623
+O zaman gelelim şurada biraz daha karıştıralım şurayı.
+
+770
+02:09:03,636 --> 02:09:05,636
+i'nin adresine.
+
+771
+02:09:08,636 --> 02:09:16,636
+Şimdi, niye integer tanımladık? Değişkenin türü integer ise pointer'da integer olmak zorunda. Şimdi mesela float diye bir değişken tanımlıyorum.
+
+772
+02:09:17,636 --> 02:09:29,636
+P diyelim. O zaman ben float türde pointer değişkeni tanımlamak zorundayım. F, A dedik. İlla şey, pardon, pf diyelim. Şöyle olsun.
+
+773
+02:09:30,355 --> 02:09:40,355
+pointer f. Başka isim verebiliriz. Yani hiçbir sıkıntı yok. pf de neye eşit olacak? Adres of p'ye. Şimdi değerliyorum.
+
+774
+02:09:41,555 --> 02:09:45,355
+Şurada adres i diyeceğiz.
+
+775
+02:09:47,155 --> 02:09:54,355
+Herhangi bir şey yok. Bakın şurada gördüğüm değerleri bir daha şey yapacağım. Bir yüzde p daha ekleyeyim.
+
+776
+02:09:56,851 --> 02:10:04,652
+Şurada i'nin adresi yerine P, A şeklinde yazıyorum veya bunu P, I yapalım arkadaşlar, daha anlamlı olsun.
+
+777
+02:10:07,652 --> 02:10:12,652
+İki değer de birbirinin aynısı olacaktır. Sadece birinde de adres tuttuk.
+
+778
+02:10:13,152 --> 02:10:17,152
+62F, E, 0C, 62F, E, 0C, tamam mı?
+
+779
+02:10:17,952 --> 02:10:21,751
+i değişken için yapılan şey. Yine printf diyorum.
+
+780
+02:10:23,220 --> 02:10:29,220
+Format Specifier olarak %p'yi kullanırsak böyle yazarız. Yani 16'lık formatta yazarız.
+
+781
+02:10:31,220 --> 02:10:43,180
+P'nin adresi bir yerde var. Ama ben bu F'nin adresi yerine pf'yi kullanacağım. Bakın pf doğrudan adres tutuyor. Hiçbir şekilde ampersan falan kullanmıyoruz.
+
+782
+02:10:46,771 --> 02:10:57,171
+Pf'de neymiş? Şu adreste oturuyormuş. Bu biraz daha değer farklı görünümlü. Pf'nin içerisindeki bulunan adres.
+
+783
+02:11:00,627 --> 02:11:16,627
+Tamam. Şimdi bunları daha ayrıca kullanacağız pointer ile alakalı şey mi? Peki, ben mesela i değişkenine 6, 5 gibi değer atadım. İşte f'ye, ne bileyim böyle bir sayı verdim.
+
+784
+02:11:18,627 --> 02:11:22,627
+Biz bu değişkenleri ekrana yazdırmak istiyorsak ne yapıyorduk?
+
+785
+02:11:23,283 --> 02:11:31,283
+değişkenleri toplamak istiyorsak doğrudan değişkenin etiketi ile kullanabiliyoruz. İşte bir tane yüzde B diyelim, bir tane yüzde F diyelim.
+
+786
+02:11:31,283 --> 02:11:38,283
+Yani İ dediğimizde ve F dediğimizde göreceğimiz değerler bellidir.
+
+787
+02:11:38,283 --> 02:11:43,283
+Şunun hemen devamına geldi. Şunu bir alt satıra geçirelim.
+
+788
+02:11:47,412 --> 02:11:50,012
+İşte birisi 5, öbürü de şu değer. Tamam.
+
+789
+02:11:51,012 --> 02:11:58,811
+Pointer kullanmanın güzelliği şu, pointer değişkeni üzerinden değişkenin değerini isterseniz değiştirirsiniz.
+
+790
+02:11:58,811 --> 02:12:02,012
+İsterseniz bu değişkenin değerine erişimi sağlayabilirsiniz.
+
+791
+02:12:02,012 --> 02:12:14,612
+Mesela önce erişelim, şu satırın aynısını değişken etiketleri üzerinden değil de değişkenlerin pointer'ları üzerinden yapacağım.
+
+792
+02:12:14,899 --> 02:12:20,899
+İşte burada yapacağımız şey, şurada referans yaptığımız şeyi, burada dereferans yapacağız.
+
+793
+02:12:20,899 --> 02:12:27,899
+Yani bana pi lazım ama pi yazarsam başka bir şey görürüm. Önce pf'yi de hatta şöyle yazalım.
+
+794
+02:12:27,899 --> 02:12:38,731
+Şimdi pi ve pf neyi gösteriyor? Hangi adresleri tuttuğunu gösteriyor. O adreslerdeki değerlere yani şu 5'e ve şuna erişmek istiyorsam...
+
+795
+02:12:38,739 --> 02:12:46,739
+Burada şu yaptığım işlemi geri almam gerekiyor. D-referans. Yıldız, yıldız diyorum. Bu ne demek?
+
+796
+02:12:46,739 --> 02:12:56,739
+P'yi bir pointer, bu pointer'ın gösterdiği yerdeki sayısal değeri, bellekteki içerik değeri neyse onu getir yaz.
+
+797
+02:12:56,739 --> 02:13:05,644
+Dolayısıyla baktığımızda ne yapacağız? Bakın aynı sonucu burada da görebiliyoruz. Bakın şöyle bir şey yaparsam olmaz.
+
+798
+02:13:07,507 --> 02:13:27,607
+%d, %f yazayım, bunu yazayım, bunu yazayım dedim. Bakın burada hatalı bir sonuç alırız. Şu bir sayısal değer, şu başka bir sayısal değer. Çünkü PI'nin ve PF'nin doğrudan elde ettiği değerler, tuttuğu değerler, adres değerleri. O adres değerleri neler? Şuradaki gördüğümüz değerler.
+
+799
+02:13:28,507 --> 02:13:32,027
+Temel olarak pointer konusunda iki tane operatör vardır arkadaşlar.
+
+800
+02:13:33,684 --> 02:13:47,684
+Birincisi adres operatörü veya referans operatörü diye de geçer. Ampersand dediğimiz işlem. Bu neyi veriyor? Bir değişkenin adresini size veriyor.
+
+801
+02:13:47,684 --> 02:13:58,315
+Bu value veya dereferans operatörü dediğimiz şey, bu da asterix yıldız.
+
+802
+02:13:58,739 --> 02:14:06,340
+Bir pointer değişken tanımlarken kullanıyoruz, bir de adresteki değere ulaşırken kullandığımız bir şey.
+
+803
+02:14:07,940 --> 02:14:09,539
+Burada bir sorumuz var mı?
+
+804
+02:14:19,699 --> 02:14:26,859
+Şimdi, neden scanf içerisinde yüzde bilmem bir şey kullanıyoruz?
+
+805
+02:14:28,399 --> 02:14:29,300
+Soru bu.
+
+806
+02:14:30,199 --> 02:14:30,960
+İşte.
+
+807
+02:14:33,020 --> 02:14:34,539
+Şunu neden kullanıyoruz?
+
+808
+02:14:40,756 --> 02:14:48,756
+Adrese ihtiyacı olduğu belli, niye bu scanf fonksiyonu bir şeyin adresine ihtiyaç duymuş? Tahmini olan var mı?
+
+809
+02:14:50,556 --> 02:14:59,556
+Önceden başka programlama dilleri gördüyseniz, işte belki böyle bir şey hiç kullanmadın. Yani pointer zaten çoğu programlama dilinde yok ama arka planda aslında var.
+
+810
+02:15:00,356 --> 02:15:02,356
+Şimdi onlar da C'yi kullanıyorlar.
+
+811
+02:15:04,020 --> 02:15:12,020
+C bizden direkt memoriye kendimizin erişmesini istiyor olabilir. Memori adresine.
+
+812
+02:15:12,020 --> 02:15:16,020
+Evet, yani biraz yaklaştım. Başka görüşü olan.
+
+813
+02:15:19,859 --> 02:15:26,859
+Scanf fonksiyon ne yapıyor arkadaşlar? Ben klavyeden bir şey giriyorum. Bunu integer formatı alıyor.
+
+814
+02:15:26,859 --> 02:15:32,859
+Girdiğim bu şeyi bellekte i değişkeni ile temsil edilen yere kopyalıyor.
+
+815
+02:15:32,859 --> 02:15:39,859
+Şimdi bellekte i değişkeni ile temsil edilen yere kopyalanacak da şimdi scanf bir fonksiyon.
+
+816
+02:15:39,859 --> 02:15:47,723
+Bu i'nin içeriğinin bu fonksiyonun da değişmesi ve çağrılan ana fonksiyona main içerisinde yansıtılması lazım.
+
+817
+02:15:48,851 --> 02:16:02,851
+Scanf tamamlandığında yansıtılmazsa boşu boşuna değer girmiş olur. Onun için bir değişken bir fonksiyona parametre olarak gidiyorsa, bakın bu bir fonksiyon, scanf fonksiyonu, printf gibi fonksiyonu.
+
+818
+02:16:02,851 --> 02:16:16,591
+Eğer içeriğinin değişmesini istiyorsam mutlaka mutlaka adresini göndermem gerekiyor. Printf'te böyle bir şey yapmıyoruz. Niye yapmıyoruz? Çünkü printf'te bir şeyin içeriği değişmiyor. Bir şeyin içeriğini biz veriyoruz ve ekrana bastırıyoruz.
+
+819
+02:16:16,591 --> 02:16:24,992
+Ama scanf'de burada i diye tanımladığımız bir değişken, içerisi klavyeden ne girilirse değişecek ve bana burada yansıtılacak.
+
+820
+02:16:25,992 --> 02:16:29,791
+Eğer yansıtılmazsa zaten hatalı bir işlem yapmış oluruz.
+
+821
+02:16:31,091 --> 02:16:37,791
+Aslında pointer'ların burada birlikte kullanılmasının sebebi, yani şey, functionlar.
+
+822
+02:16:38,891 --> 02:16:43,691
+Bunu daha detaylı olarak gelecek derslerde, işte bir veya iki ders sonra konuşacağız da.
+
+823
+02:16:44,531 --> 02:16:51,771
+Yavaştan giriş yapmak istiyorum buna. Çünkü bunlar öğrenilmeden algoritmik problem çözme işlemleri biraz zorlaşıyor.
+
+824
+02:16:51,771 --> 02:17:00,091
+Şimdi fonksiyonlar, bildiğimiz aslında şu ana kadar kullandığımız bir sürü fonksiyon var. İşte printer, scanner bunlardan bazıları.
+
+825
+02:17:00,091 --> 02:17:07,491
+İşte belki matematiksel fonksiyonları kullandınız. Bir defa yazıp tekrar tekrar kullanılabilecek yapılar.
+
+826
+02:17:07,491 --> 02:17:10,091
+Gereksiz işlerden bizi kurtarıyor.
+
+827
+02:17:10,611 --> 02:17:18,771
+Bunu biz kendimiz de tasarlayabiliyoruz. Örnek olarak, myFunction'de bir şey yazıyor.
+
+828
+02:17:18,771 --> 02:17:28,851
+Siz buna belli parametreler veriyorsunuz. Bu verilen parametreler bu fonksiyonda işletiliyor.
+
+829
+02:17:28,851 --> 02:17:34,051
+Ve bu fonksiyon isterse size bir değer return ediyor.
+
+830
+02:17:36,915 --> 02:17:50,915
+Bu return işleminin sonucuna göre biz programımızı devam ettiriyoruz. Bu fonksiyonu istersek main içerisinde çağırabiliyoruz veya çağırmadan fonksiyon içerisinde fonksiyonu da çağırabiliyoruz.
+
+831
+02:17:50,915 --> 02:17:57,915
+Şimdi örnek, mesela elimizde bir tane dizimiz var. A dizimiz 10 elemanlı dizi.
+
+832
+02:17:58,772 --> 02:18:16,452
+Bu diziyi ekrana yazdırmak istediğimizde ne yaparız? For döngüsü, i eşittir 0, i küçüktür 10, i++ deriz, printf deriz, %d deriz, işte şöyle tırnak arasında, a'nın i ince elemanını ekrana bastırır.
+
+833
+02:18:18,355 --> 02:18:26,756
+Şimdi, mesela kullanıcıdan verileri aldınız, diziyi yazdırmak istiyorsunuz, şu kodu kopyala yapıştırı yaparsınız.
+
+834
+02:18:26,756 --> 02:18:33,556
+Sonra ne bileyim dizinin içerisindeki elemanları sıfırladınız, tekrar diziyi yazdırmak istiyorsunuz, bu kodu kopyala yapıştırı yapıyorsunuz.
+
+835
+02:18:33,556 --> 02:18:42,556
+Gelin bunu hani deneyelim, işin nere, şu an hani sözler söylemek belki daha konumsuz kod yazalım, daha iyi olur.
+
+836
+02:18:54,868 --> 02:19:01,328
+fonksiyonlar ve pointerler birbirinden tamamen ayrı konular değil, hatta tam birbirinin ilgili konular.
+
+837
+02:19:01,328 --> 02:19:08,068
+Şimdi, integer i demek. Bir şeyi ekrana yazdırmak istiyorum, diziyi tamamen ekrana bastıracağım.
+
+838
+02:19:08,068 --> 02:19:12,668
+i küçüktür, işte on dediniz, i plus plus dediniz.
+
+839
+02:19:12,668 --> 02:19:20,068
+Printf, yüzde de an i'si.
+
+840
+02:19:21,940 --> 02:19:28,940
+Bu iş bitti, arada başka şeyler yaptım. Mesela dediniz ki A'nın 4. elemanı ne olsun? 5 olsun.
+
+841
+02:19:28,940 --> 02:19:37,940
+Şu kodu kopyalıyorsunuz, bizi tekrar görmek istediğinizi kabul edelim. Tekrardan yaz diyorsunuz. Araya mesela şöyle bir boşluk bırakalım, printf.
+
+842
+02:19:46,420 --> 02:19:48,076
+Another function here.
+
+843
+02:20:00,000 --> 02:20:06,920
+Evet, bakın ikisi de işte diziyi yazdırdı, birincisinde 5 gördü. Şimdi burada ne sıkıntısı var bu kodda?
+
+844
+02:20:08,439 --> 02:20:13,559
+Hadi şu onlar yerine define yazalım. Define n eşit bir on olsun. Bir problem var arkadaşlar burada.
+
+845
+02:20:21,236 --> 02:20:40,876
+Problemi önce göreceğiz. Tekrar etmemiz değil değil mi hocam? Ne? Söyle. Kendimizi tekrar etmemiz değil değil mi hocam? Kendimizi tekrar etmemizden kastımız tam onu demek istiyorum. Yani bir kodu aldık, bir daha buraya kopyalı yapıştır yaptık. Öyle değil mi? Birden fazla dizimiz olsa daha daha yapacağız. Gibi.
+
+846
+02:20:41,299 --> 02:21:05,879
+Yani mesela ikinci dizimiz olsun, başka başka şeyler olabilir, matrisler olabilir. Yani kodu kopyalı yapıştır, kodu yapıştır. Bu duplicated kod dediğimiz bir şey. Halbuki şöyle bir şey olsa, yazdır diye bir fonksiyon yazsam, bu yazdıra A'yı göndersen, bir de A'nın eleman sayısını göndersen ve bu kodun içerisinde şunu bir defa yazsam, hep yazdır A bölgüden, yani şunun yazmak yerine şunu.
+
+847
+02:21:06,355 --> 02:21:10,956
+Aynı şekilde gelip bunu yazmak yerine şunu yazsam çok çok daha basit bir şey yapmış oluyorum.
+
+848
+02:21:11,995 --> 02:21:18,956
+Yani bu kodun tabi böyle iki satır değil de 20 satır olduğunu düşünün. 20 satır böyle kopyaladın, 20 satır buraya geldin, yapıştırdın.
+
+849
+02:21:19,155 --> 02:21:28,956
+Ondan sonra ne olacak mesela, bir kodla bir değişiklik yapmak istesen, örneğin şurada bir ne bileyim araya şöyle bir şey ekledim, o zaman bu kopyalı yapıştırı yaptım gelip buraya da kopyalı yapıştırı yapacağım.
+
+850
+02:21:28,956 --> 02:21:34,155
+E iş ne oluyor? Gereksiz, duplication şeylerine gidiyor.
+
+851
+02:21:34,355 --> 02:21:50,355
+sürekli kopyala yapıştır, kopyala yapıştır. Yani iyi bir şey değil, mühendislikle alakası yok zaten. Onun için diyorum ki ben kendimi fonksiyon yazacağım. Şimdi fonksiyon nasıl yazılıyor? Programın ya tepesinde, main'den önce ya da main'den sonra yazılıyor. Şimdi main'den sonra yazmaya alışın arkadaşlar.
+
+852
+02:21:50,355 --> 02:21:56,355
+Yazdır dediriz. Bunun birkaç farklı şeyi var, bunu gelecek dersle görüşeceğiz. Bunu şimdilik...
+
+853
+02:21:57,332 --> 02:22:22,332
+void yazdır olarak yani herhangi bir dönüş değeri olmadan sadece yazdır olarak söyledik. Şimdi burada ne gönderiyorsak burada bunları tanımlamamız gerekiyor. Gönderilen A ne? Bir tane dizi. O zaman bu bir diziyse, Eceb A şöyle bir dizi tanımlıyor. Bakın dizinin sembolü var. Kaç elemanlı olduğunu yazmama gerekiyor. Bu bir dizi değişkeni diyelim. Sonra ne var? Bir tane...
+
+854
+02:22:22,963 --> 02:22:34,364
+n dediğimiz sayı var, bu n dediğimiz sayı integer, bu da integer. Mesela integer, küçük n diyelim. Nasıl gönderdiysek bu şekilde fonksiyonu tanımlıyoruz.
+
+855
+02:22:34,364 --> 02:22:40,763
+Sonra artık burada yaptığım şu işlemleri alıyorum, Ctrl x diyorum, bakın bunlar artık yok oluyor.
+
+856
+02:22:40,763 --> 02:22:49,364
+Tabi burada bir tane i değişkeni şuraya özel tanımlayacağım. Bakın bunlar gelen değerler.
+
+857
+02:22:49,683 --> 02:22:59,683
+fonksiyonu çağıran kimse, onlar bir değer gönderdi. Bu gönderilen değerleri burada tanımladık. Parametre diyoruz bunlara. Bu şekilde çağırdık.
+
+858
+02:22:59,683 --> 02:23:16,459
+Şimdi bunu değerleyelim. Dedi ki şöyle bir warning verdi. Dedi ki eğer sen bunu main'den sonra yazıyorsan şu başlığını al, şuraya böyle bir fonksiyon tanımı yapacağını buraya söyle. Bunu ayrıca konuşacağız. Hiç önemli değil, yazmasak da olur şimdi.
+
+859
+02:23:16,788 --> 02:23:27,788
+Şimdi çalıştır dediğimde ne oluyor? Biraz önceki çıktının aynısını görmüş oluyorum. Neden kazandım? İşte şurada 3-4 satırlık yazdığım şeyi burada bir satıra indirgemiş olduk.
+
+860
+02:23:27,788 --> 02:23:43,788
+Bir defa yazdık, en defa, çok defa kullandık. Eğer biz bunu yazdığımız şeyi başkalarına da açarsak başkaları da kullanmış oluyor. Örneğin printf'i birisi yazmış, biz sürekli kullanırız. Hatta bakın şu printf'i şuraya alalım.
+
+861
+02:23:43,871 --> 02:23:55,871
+Her defasında böyle, şöyle yapalım. Basit bir alt program gibi düşünün. Artık ben sadece ne yapıyorum? Yazdır fonksiyonunu çağırarak iş yapıyorum.
+
+862
+02:23:57,871 --> 02:24:01,871
+Pointer ve fonksiyon. Burada anlaşılmayan bir şey var mı?
+
+863
+02:24:06,484 --> 02:24:07,684
+Sorunuz var mı?
+
+864
+02:24:07,684 --> 02:24:12,984
+Hocam, alttaki for döngüsünde büyük ne yerine küçük ne olması gerekmiyor mu?
+
+865
+02:24:12,984 --> 02:24:24,184
+Olur, güzel, iyi yakaladın. Şimdi yazmasak da olur çünkü program değerlenirken ne oluyor? Şuraya on kopyalanıyor ya. O açıdan hani şu en boşa çıkmış oldu küçük ne.
+
+866
+02:24:24,184 --> 02:24:30,783
+Ama bunu yazarsak tam işin aslında uygun olması gerektiği yazmış olur. Güzel bir tespit, teşekkür ederim.
+
+867
+02:24:30,783 --> 02:24:33,984
+Bir arkadaş daha bir sorusu vardı galiba.
+
+868
+02:24:38,131 --> 02:24:42,131
+Bir [öğrenci] yazdı, bir arkadaş daha orada... Evet, [öğrenci].
+
+869
+02:24:46,932 --> 02:24:47,932
+İmiorum.
+
+870
+02:24:51,827 --> 02:24:54,927
+Mikrofonun kapalı herhalde veya başka bir sıkıntı var.
+
+871
+02:24:57,867 --> 02:25:03,727
+Evet, fonksiyon kullanmamızın güzellikleri daha ilerleyen derslerde ortaya çıkacak.
+
+872
+02:25:03,727 --> 02:25:10,127
+Şimdi arkadaşlar, şöyle bir şey yapalım. Şimdi ben n sayısını buraya gönderdim ya.
+
+873
+02:25:11,727 --> 02:25:18,827
+Diyorum ki şurada printf %d diyorum.
+
+874
+02:25:19,443 --> 02:25:21,443
+Aynısını soruyorum. Tamam, güzel.
+
+875
+02:25:22,243 --> 02:25:23,243
+M diyeceğim.
+
+876
+02:25:24,243 --> 02:25:29,443
+Hatta integer küçük n diyelim arkadaşlar. Şuraya m'yi aktaralım.
+
+877
+02:25:32,144 --> 02:25:34,644
+Şurada m diye bir şey olsun.
+
+878
+02:25:35,443 --> 02:25:38,243
+Şunlara da artık şu küçük n'yi gönderiyorum.
+
+879
+02:25:38,843 --> 02:25:43,644
+Şimdi burada bir küçük n var, burada bir küçük n var. Bunlar karışabilir mi acaba?
+
+880
+02:25:44,644 --> 02:25:45,579
+Soru bu.
+
+881
+02:25:53,652 --> 02:25:58,652
+Main'deki küçük ne ile yazdırdaki küçük ne birbirine karışabilir mi?
+
+882
+02:26:00,652 --> 02:26:04,652
+Hata alır mıyım derler. İkisinde skopları farklı olduğu için karışmaz.
+
+883
+02:26:05,652 --> 02:26:10,652
+Şimdi skop nereden çıktı? Biz böyle bir şey görmedik diyecek arkadaşlar.
+
+884
+02:26:12,652 --> 02:26:20,652
+Şimdi gelelim bellek organizasyonuna. Bakın arkadaşlar, şurada dedik ya, bir main fonksiyonu çağrıldığında siteye aktarılıyor ya.
+
+885
+02:26:21,332 --> 02:26:25,332
+Siz bir fonksiyon çağrısı yaptığınızda o da siteye aktarılıyor.
+
+886
+02:26:25,332 --> 02:26:34,332
+Dolayısıyla main'in adres uzayı burada. Siz ne zamanki yazdır fonksiyonunu çağırırsanız, yazdır, onun adres uzayı da bunun tepesinde.
+
+887
+02:26:34,332 --> 02:26:46,332
+Mesela yazdırın içerisinde bir tane printf çağırdınız. Yazdırın tepesinde de geliyor bir tane printf aktarılıyor.
+
+888
+02:26:46,332 --> 02:26:47,948
+Tamam mı?
+
+889
+02:26:48,852 --> 02:27:05,452
+printf'inde kendine göre adres skobu var. Bunlar böyle iç içe, üst üste geliyor. Dolayısıyla, şuradaki en değişkeni ile buradaki en değişkeni birbirinden bağımsız şeyler, skobları, kapsamları farklı, kapsama alanları farklı diyelim.
+
+890
+02:27:05,452 --> 02:27:15,452
+Bakın çalıştırdığımda herhangi bir sıkıntıya düşmeden, sıkıntı görmeden şekli. Tabi şurada şunu bir alt satıra indirelim, şuna neye diyelim.
+
+891
+02:27:19,443 --> 02:27:24,943
+Böyle adım adım gidiyorum. Bakın n'in değeri 10'muş. Burada da dizleri yazdık.
+
+892
+02:27:25,343 --> 02:27:31,144
+Hatta şurada n'in değerini yazdırırsam, bakın aynısını burada da yapalım.
+
+893
+02:27:32,443 --> 02:27:40,144
+Yine aynı değeri göreceğim. Çünkü yukarıdan değer olarak kopyalama var. Yani yukarıda 10 olarak tanımlanan şey aşağıda da 10 oldu.
+
+894
+02:27:40,943 --> 02:27:44,644
+Şimdi gelelim. Ben burada şöyle bir şey yapmak istiyorum.
+
+895
+02:27:45,268 --> 02:27:55,268
+n eşittir 6 diyorum arkadaşlar. Şimdi burada n'i 6 diyerek şuradaki n'e bir değişiklik yapabilmek mümkün.
+
+896
+02:27:58,067 --> 02:28:03,268
+Bakın n eşittir 6 dedim, n'i ekrana yazdırdım. Yazdır fonksiyonunu çağırdıktan sonra
+
+897
+02:28:06,268 --> 02:28:12,268
+diyorum ki şunu da bir daha bastır. Ekranda ne göreceğiz? Şimdi bu bana 10 yazdıracak.
+
+898
+02:28:12,755 --> 02:28:19,755
+Yazdırın içerisine gireceğiz. Yazdırın içerisine gelince şurada bir 10 göreceğiz. Sonra dizinin elemanlarını yazdırdığımızı göreceğiz.
+
+899
+02:28:19,755 --> 02:28:30,755
+Sonra alt satıra geçeceğiz. Sonra en eşittir 6 olacak. Burada en eşittir 6'yı göreceğiz. Sonra burada bu fonksiyon bitince şuradan devam edeceğiz.
+
+900
+02:28:30,755 --> 02:28:37,755
+Şimdi burada acaba ne göreceğiz? Kilit soru burası. 10. satırda ekranda ne görürüz?
+
+901
+02:28:40,244 --> 02:28:56,443
+Büyük n'i görürüz. Yani, büyük n sayı olarak? 10. 10'u göreceğiz. Neden? Çünkü main'deki küçük n farklı, yazdığı daki küçük n farklı. Hocam, isimleri farklı olsaydı ne olurdu? O zaman hiç problem yok.
+
+902
+02:28:56,443 --> 02:29:07,244
+Ama demek istediğimiz şey, bunlar belli ki de farklı hücrelerdeki değerler arkadaşlar. Ve şuradaki fonksiyonu çağırmayla yaptığımız iş
+
+903
+02:29:07,412 --> 02:29:12,371
+işte n'in değeri burada neyse buraya birebir kopyalanıyor yani duplication yapılıyor.
+
+904
+02:29:12,371 --> 02:29:21,412
+Tamam mı? Değer kopyalama diyoruz. Bunları detaylandıracağız ileride. Bu duplication yapıldığı için şurada yapılan değişiklik yukarıya yansıtılmaz.
+
+905
+02:29:23,412 --> 02:29:31,412
+Bakın ne oldu? n eşittir 6 dedi. Pardon şurada printf dedik.
+
+906
+02:29:36,275 --> 02:29:45,876
+Bakın n eşittir 6'yı gördük, yukarıda n eşittir 10 olarak devam etti. Niye? Çünkü 10 burada değişmedi. Sonra fonksiyonu tekrar çağırdım.
+
+907
+02:29:45,876 --> 02:29:53,876
+Şimdi fonksiyonu tekrar çağırırken sonuçta buradaki n ile çağırıyorum. Bakın ne oldu? Yine 10 olarak ekrana yazdırdı fonksiyon içinde.
+
+908
+02:29:53,876 --> 02:30:03,876
+Sonra fonksiyon içerisinde 6'ya çevirip tekrar 6 yaptı. Yani bir önceki fonksiyon çağrısıyla bir sonraki fonksiyon çağrısı da birbirinden bağımsız.
+
+909
+02:30:04,468 --> 02:30:11,468
+Tamam mı? O program bir başlıyor, sonra tekrar kaldığı yerden devam etmiyor. Yeniden sıfırdan başlarmış gibi gidiyor.
+
+910
+02:30:11,468 --> 02:30:21,468
+Az bir şey daha devam edip bitireceğim. Şimdi o zaman benim bir sorunum var. Bir tane fonksiyon yazayım. Swap fonksiyonu diyelim.
+
+911
+02:30:21,468 --> 02:30:27,468
+Buraya iki tane değişken alayım. X ve Y türünde.
+
+912
+02:30:28,308 --> 02:30:33,508
+Bu ikisini swap yapalım. Nasıl swap yapıyorduk? İşte temporali değişkenimiz vardı.
+
+913
+02:30:33,508 --> 02:30:39,508
+Temp eşittir x, x eşittir y, geçen derste gördüğüm şey y eşittir t.
+
+914
+02:30:43,860 --> 02:31:09,760
+Yukarıda iki tane değişken tanımlayacağım. x eşittir. 2, y eşittir. 6 diyelim. Önce printf ile bunları ekrana yazdıralım. x eşittir %d, y eşittir %d. x,y dedik. Sonra swap fonksiyonunu çağırıyorum. x ve y'yi gönder diyeceğim.
+
+915
+02:31:10,963 --> 02:31:13,963
+Sonra aynı kodu şu printf'i tekrar yazdık.
+
+916
+02:31:15,463 --> 02:31:20,463
+Şimdi iki şeyin swap edilmesi demek ne demekti? Yer değişmesi gerektiriyordu.
+
+917
+02:31:20,463 --> 02:31:22,963
+Şimdi şurada swap işlemini yaptık.
+
+918
+02:31:22,963 --> 02:31:29,963
+Dedi ki, swap'i kendim fonksiyon olarak yazdım veya hani Türkçe gidiyoruz, takas yap diyelim bunu.
+
+919
+02:31:33,139 --> 02:31:57,639
+Birbiriyle değiştir. X ve Y'yi gönderdiğimde bakın şurada bir değişiklik oluyor. Pardon şurada yalnız bunu yer yaptı arkadaşlar. Söylemediniz. Bunlar burada takas oldu. Şimdi şu kodlar çalıştığında ne göreceğiz? Hatta şunları kapatalım, yorum satırı yapalım ve oradan şunları görelim. Bu satırlarda 15 ve 17. satırda neler görür?
+
+920
+02:32:02,260 --> 02:32:11,260
+Aslında değişmeyecekler. Yani ilk başta şey olacaklar ama o X ve Y aslında değişmeyecekler. Biz sadece değer kopyalamış olduk.
+
+921
+02:32:11,260 --> 02:32:19,260
+Evet. Aslında X ve Y'yi değiştirmedik. Yani olan olay şu arkadaşlar, main fonksiyonuna ait X ve Y diye bir değişken var.
+
+922
+02:32:19,260 --> 02:32:29,260
+Her ne zaman takas fonksiyonu çalıştırılırsa, X ve Y diye yeni değişkenler tanımlanıyor. Bunlar kendi içerisinde burada değiştiriliyor.
+
+923
+02:32:30,388 --> 02:32:51,648
+Yukarıya yansıtıyor. Yani buraya x yazmak zorunda değilim. İstersen x, x, başka y'e ilerelim. Amacım, şuradaki x ile yukarıdaki x'in birbirinden bağımsız olduğunu göstermek. Şimdi çalıştırdığımız zaman x eşittir 2, y eşittir 6, x eşittir 2, y eşittir 6. Bakın değişmediğini gördük ama biz aşağıda değiştirdik.
+
+924
+02:32:56,275 --> 02:33:07,275
+Yani burada olmadı. Şimdi fonksiyon kullanmanın avantajını şu yazdır fonksiyonunda gördük. Öyle değil mi? Burada işimize yaradı. Ama burada işimize yaramadı bu.
+
+925
+02:33:07,275 --> 02:33:12,275
+Çünkü bir return değerimiz yok.
+
+926
+02:33:12,275 --> 02:33:16,275
+Tamam, return, yani şurada da return yok.
+
+927
+02:33:16,275 --> 02:33:21,275
+Ama ihtiyacımız yoktu. Burada sadece ekrana yazdırıyoruz.
+
+928
+02:33:21,275 --> 02:33:24,043
+Tamam, scanf'de de o zaman return yoktu.
+
+929
+02:33:26,644 --> 02:33:32,144
+Dur, scanf nerede var? Mesela bir yerde scanf yazalım. Ne yapıyoruz mesela scanf fonksiyonunda?
+
+930
+02:33:33,644 --> 02:33:42,644
+%d diyorsun, %1, işte c diyorsun, d diyelim. Ne yap? i'nin adresine bir şey yap. Şimdi burada bir değer dönüyor mu?
+
+931
+02:33:43,144 --> 02:33:47,500
+Ama i'nin değeri klavyeden ne girdiysek ona göre değişiyor.
+
+932
+02:33:50,260 --> 02:34:02,760
+Yani bunda da bir değer dönecek olsa burada bir şeyler yazmak zorundayız. İşte ne bileyim ilk seçiklik, mesela printf'de değer dönüyor geçen uygulamada incelemiştik ama şeyde bir değer dönüşü doğrudan yok.
+
+933
+02:34:02,760 --> 02:34:10,760
+Aslında scanf'de de değer dönüyor da biz bu iyi değişkenin değerini değer dönme yöntemiyle almıyoruz.
+
+934
+02:34:16,404 --> 02:34:39,904
+fonksiyonun içerisindeki, main'in içerisindeki X ve Y, şu takastaki X ve Y'den bağımsızsa, acaba bunları pointerlarda biraz önce gördüğümüz şekliyle bunu birleştirebilir miyiz? Buna takas versiyon 2 diyorum. Diyorum ki arkadaşlar, takas versiyon 2'yi çağır.
+
+935
+02:34:41,683 --> 02:34:47,683
+Ama gönderirken X'in adresini gönder, Y'nin adresini gönder.
+
+936
+02:34:49,683 --> 02:34:51,683
+Takas versiyonu 2.
+
+937
+02:34:51,683 --> 02:34:58,683
+Şimdi X'in adresi ve Y'nin adresi gidiyorsa artık bunlar adres türünde değişkenler, bunlar adres olarak alınacak.
+
+938
+02:34:58,683 --> 02:35:00,683
+Buna dikkat.
+
+939
+02:35:00,683 --> 02:35:03,683
+Çünkü gelen veriler adres türünde verilmiş.
+
+940
+02:35:03,683 --> 02:35:05,683
+Sonra burada takas yapacağız.
+
+941
+02:35:06,963 --> 02:35:14,463
+Bizim geçici değeri tutan değişkenimiz. Diyorum ki, x'in adresindeki değeri al, t'ye kopyalar.
+
+942
+02:35:14,463 --> 02:35:24,463
+y'nin adresindeki değeri al, x'in adresindeki değeri kopyalar. t'deki geçici değeri al, y'nin adresindeki değeri kopyalar.
+
+943
+02:35:33,683 --> 02:35:53,683
+Adres değerleri gönderdik. Takas versiyon 2'de. Bunun sonrasında ne oldu? Buraya adresler gelecek için artık bunları biraz önceki pointer bilgimle birleştiriyorum. Adres değerleri tanımlıyorum. Ve şurada pointerlarda adresten değere erişim nasıl oluyordu? D-referans ile oluyordu.
+
+944
+02:36:00,948 --> 02:36:23,528
+2'yi getiriyor buraya, T'ye kopyalıyor. Y'nin gösterdiği değeri al, yerdeki değeri al, X'in gösterdiği yerdeki değeri atar. Y'nin adresine ise gidiyor, orada adresi buluyor, adresteki değer 6'yı da 6'yı alıyor, sonra X'in adresine gidiyor. X'in adresindeki bellek hücresine 6 değerini kopyalıyor. Bakın bu sayede...
+
+945
+02:36:28,435 --> 02:36:38,435
+Çalışacak da çalışmadı. Bakalım, şurada bir yorum satırı ile... Ha, şu scanf de engelliyor arkadaşlar. Klavyeden bir şeye girmemizi bekliyor.
+
+946
+02:36:38,435 --> 02:36:50,435
+Bakın ne oldu? 2-6, 2-6. Bakın bu sefer 6-2'yi görebildik. Neyin sayesinde? Bir fonksiyonu çağırırken, eğer pointer ile çağırıyorsam...
+
+947
+02:36:51,700 --> 02:37:01,580
+fonksiyon içerisinde yapılan değişiklikler buraya yansıtılıyor. Çünkü biz aslında parametre olarak bir değişkenin adresini gönderiyoruz.
+
+948
+02:37:01,580 --> 02:37:06,580
+Daha sonra burada adres üzerinde ne yapıyorsak onları geç. İstersek mesela şöyle bir şey yapabiliriz.
+
+949
+02:37:06,580 --> 02:37:18,580
+x'in adresindeki değeri 999 yap. Her ne kadar swap yapsak da x'in adresi, pardon şöyle yapacağız, x'in adresindeki değer
+
+950
+02:37:19,219 --> 02:37:28,219
+Şu olsun, mesela bu fonksiyon bittiğinde, bittikten sonra orijinal nerede çağırlıyorsa x'in adresindeki değer bu şekilde değişmiş oldu.
+
+951
+02:37:29,860 --> 02:37:33,860
+Şimdi bu hafta, hani burada kalalım, şimdi toplantıya gireceğim.
+
+952
+02:37:33,860 --> 02:37:40,020
+Bu Program Allocation örneğini birazdan yüklerim.
+
+953
+02:37:40,180 --> 02:37:42,827
+Fonksiyon ve pointer örneklerini...
+
+954
+02:37:42,995 --> 02:37:47,435
+Birazcık karıştırın arkadaşlar. Yani gelecek derste kadar alıştırma yapın.
+
+955
+02:37:47,435 --> 02:37:57,235
+Normalde bizim bakın derste şu an konuya göre gittiğimizde şuraya kadar ki kısmı tamamladık.
+
+956
+02:37:57,235 --> 02:38:00,995
+Bundan sonraki kısımlarda fonksiyonlara ihtiyaç duyacağız.
+
+957
+02:38:00,995 --> 02:38:06,555
+Şimdi fonksiyonlar işin içerisine girince pointerları da öğrenmek lazım. Onun için şurada biraz ara verdim.
+
+958
+02:38:06,868 --> 02:38:17,868
+Gelecek ders bu kaldığımız yerden devam edeceğiz. Belki diğer grup flowchart üzerinden anlattığı için bu konuları anlatmadılar. Diğer grupla birazcık ayrışıyoruz burada. Sıkıntı değil.
+
+959
+02:38:17,868 --> 02:38:28,868
+Yani bu pointer ve fonksiyonları artık bundan sonra çoğu şeyi kod üzerinde yapacağımız için öğrenmeden bundan sonra ilerlemek kağıt üzerinde belki kolay ama kod üzerinde zor.
+
+960
+02:38:28,868 --> 02:38:34,540
+Bu örnekleri bundan sonra kod üzerinde yapacağımız için bu konulara girmiş olduk.
+
+961
+02:38:34,579 --> 02:38:42,579
+Fonksiyonların farklı detayları var. Onları da gelecek derslerde anlatacağım. Şimdilik burada bırakalım. Sizin sorunuz varsa onları alayım.
+
+962
+02:38:44,579 --> 02:38:48,579
+Yoksa dersi şimdilik bitireceğim. Gün içerisinde bu kodları yüklerim zaten.
+
+963
+02:38:49,579 --> 02:38:56,579
+Hocam, bir şey soracaktım. Biz pointerları memory management açısından kullanıyor muyuz?
+
+964
+02:38:56,579 --> 02:39:00,579
+Evet, şu an memory manager ediyoruz mesela. Yani adresin...
+
+965
+02:39:01,167 --> 02:39:07,167
+Adres üzerinden değerlere erişim yapıyoruz. Bu bir memory management basit anlamda.
+
+966
+02:39:07,167 --> 02:39:14,167
+Ama senin memory management'tan kastın, istediğim adrese erişebilir miyimse o ayrı mevzu.
+
+967
+02:39:14,167 --> 02:39:24,167
+Yok şeyi soruyordum, eski kod bilgilerimde şöyle bir şey hatırlıyorum, gereksiz yere kopya oluşturmasını engelliyor bir değişiklik.
+
+968
+02:39:24,167 --> 02:39:24,716
+Evet.
+
+969
+02:39:25,203 --> 02:39:39,884
+Güzel, şimdi mesela bellek organizasyonunda şunlar mesela arda arda geliyor dedik ya, takas fonksiyonunu çağırdığında x ve y bu şekilde gönderirsem bunlar birebir kopyalanıyor dedik.
+
+970
+02:39:39,884 --> 02:39:50,004
+Ve bu birebir kopyalamanın dışında bellekte iki tane gereksiz yer oluşuyor. Yani yukarıda x, y var aşağıda da x, y var. Birebir kopyası.
+
+971
+02:39:50,067 --> 02:40:04,567
+Halbuki şu şekilde yaparsak, bu x adres tutan bir değişken, y adres tutan bir değişken, yukarıdaki 2 ve 6'yı bunlar üzerinde tutamam. Bunlar ayrı bir değişken gibi. Dolayısıyla aynı şeyi iki defa yapmış olmuyoruz. Bu açıdan da faydası var.
+
+972
+02:40:05,567 --> 02:40:06,567
+Sağ olun hocam.
+
+973
+02:40:09,567 --> 02:40:10,567
+Başka sorumuz?
+
+974
+02:40:13,108 --> 02:40:37,488
+Şimdi konularda geri kalabiliriz diğer gruba göre. Çünkü araya bu konular gidince bazen geri düşmüş olabiliyoruz. Eğer konuda geri kalırsak, birinci ihtimal, ilk haftalarda da söyledim, uygulama saatinde telafi yapacağız. İkinci ihtimal, herhangi bir gün, bu cumartesi, pazar dahil bir ek ders yaparım. O ek dersle alakalı bilgi gönderirim. Ama şu an için ek derse gerek yok.
+
+975
+02:40:38,004 --> 02:40:45,924
+Gelecek hafta bu kaldığımız yerden devam edip, buradaki bilgilerimizi artık şu soruları çözme üzerinden devam ettireceğiz arkadaşlar.
+
+976
+02:40:45,924 --> 02:40:58,963
+Kalan sorularımız var ya, artık kod yazarken bunlara ihtiyacımız mutlaka olacak. Bunları daha böyle geliştete geliştete bilgileri ekleye ekleye devam edeceğiz.
+
+977
+02:40:58,963 --> 02:41:05,844
+Hocam, şu grafik aryeden yazıyorsunuz ya notları, onları atacağım demiştiniz ama...
+
+978
+02:41:06,644 --> 02:41:10,144
+Orada var diyebiliyorum ama yani güncel hali yok mu acaba?
+
+979
+02:41:12,144 --> 02:41:13,644
+Bakayım bir saniye.
+
+980
+02:41:17,268 --> 02:41:19,020
+Şu şey nerededir?
+
+981
+02:41:26,451 --> 02:41:27,451
+Bir dakika.
+
+982
+02:41:33,012 --> 02:41:36,692
+22-23 şu klasörden bahsediyoruz değil mi?
+
+983
+02:41:37,652 --> 02:41:49,172
+Bak şurada, geçen hafta 7 Mart'ta, pardon geçen haftadan önce galiba, en son güncellem için, bunu şey yapayım, şunu biraz daha toparlarım, bazı şeyleri buraya tekrar yüklerim.
+
+984
+02:41:50,051 --> 02:41:50,852
+Tamam mı?
+
+985
+02:41:52,692 --> 02:41:59,412
+Bir de hocam, bundan sonraki ödevlerde vesaire de pointer ve fonksiyonların kullanımı serbest olacak mı?
+
+986
+02:41:59,827 --> 02:42:09,827
+Yani laboratuvarda hocalarınız şey der, main fonksiyonunda yazın der. Yani laboratuvar çünkü diğer grup bu konuya girmedi.
+
+987
+02:42:09,827 --> 02:42:21,827
+Yani ben onu arkadaşlara söylerim, kendileri fonksiyon yazabilirler diye söylerim. Ama eğer derseler ki sadece main fonksiyonunda yazacaksınız, ona göre yazmanız gerekiyor.
+
+988
+02:42:21,827 --> 02:42:25,827
+Kısıtları size hocalarınız ifade eder, buna uygun.
+
+989
+02:42:25,827 --> 02:42:26,859
+Hocam...
+
+990
+02:42:27,507 --> 02:42:34,507
+Şu slide'a baktım da yani bende şey gözüküyor, full, boş slide'lar var, siyah.
+
+991
+02:42:34,507 --> 02:42:37,507
+Bakalım.
+
+992
+02:42:39,316 --> 02:42:44,316
+Hocam, Google'da gözükmüyor da, Drive'dan indirince normal...
+
+993
+02:42:44,316 --> 02:42:48,316
+Yani onu bilemem, yani indirirseniz hatta ben şimdi...
+
+994
+02:42:48,316 --> 02:42:51,316
+Ama güncelleyiz sanki dediğiniz gibi.
+
+995
+02:42:51,316 --> 02:42:57,316
+Yani şeydir işte, en son 7'sinde güncellenmiş. Zaten şurada yazıyor ya, 7 var.
+
+996
+02:42:57,316 --> 02:43:04,316
+Ama bakın bunu böyle yapalım, değiştir diyelim. Şu an en güncel halde yüklenmiş olur.
+
+997
+02:43:05,523 --> 02:43:20,523
+Yalnız bunlar işte benim ders notlarım. Hani şimdi birisinin ders notunu ne kadar anlaşılır ayrı mevzu. Yani ben yine paylaşayım da arada ufak tefek yazım hataları falan vardır. Yine dersi dinlemek esas olan. Yani bunu da kayıta geçirelim.
+
+998
+02:43:20,523 --> 02:43:31,523
+[öğrenci] bu link nerede var? OBSD dersin ayrıntılarına girersen bir link vardır. O linke tıklarsan bu sayfa açılır. Bakın şurada DATALC diye bir şey var.
+
+999
+02:43:31,860 --> 02:43:43,260
+Bazı C konularının örnekleri, pointer, diziler, fonksiyonlar, bunlar bu dönem buradan da faydalanacağız. Bu slide'dan da çalışabilirsiniz. Yeterince fazladan örnek var.
+
+1000
+02:43:43,260 --> 02:43:55,860
+Hem dersin ana sayfası hem de dersin örneği. Mesela şurada da bazı örnekler var. Hepsini değerlendirmeniz sizin faydanıza. Sorumuz var mı?
+
+1001
+02:43:58,644 --> 02:44:05,443
+Ben biraz toplantıya geç kaldım, şimdi yetişmem gerekiyor. Öğleden sonra bir kısmınıza görüşeceğiz.
+
+1002
+02:44:06,443 --> 02:44:12,443
+Pazartesi günü laboratuvarınız var, bilginiz olsun. Yani o zaten artık ilan edildi.
+
+1003
+02:44:13,443 --> 02:44:18,443
+Hocalarınız size bir soru yöneltecekler. Bununla alakalı Classroom linki gönderdik.
+
+1004
+02:44:18,443 --> 02:44:23,443
+Classroom'dan katılım, oturumla alakalı bilgiyi alacaksınız.
+
+1005
+02:44:23,924 --> 02:44:31,924
+Soruyu hocalarınız size anlatacaklar, nereden yükleyeceğinizi falan da anlatacaklar ve belli bir süre içerisinde değerlendirecek.
+
+1006
+02:44:31,924 --> 02:44:38,924
+Pointer çıkmaz, dizi çıkabilir tabii ki, fonksiyon çıkmaz, onu ben ayrıca anlatıyorum.
+
+1007
+02:44:39,924 --> 02:44:47,924
+Bunlar dışında şu ana kadar gördüğünüz, BBG'de görmüş olacağınız, gördüğünüz konular dahil olur.
+
+1008
+02:44:50,644 --> 02:44:55,644
+Sorunuz yoksa hepinize iyi günler arkadaşlar. Katıldığınız için teşekkür ederim. Görüşmek üzere.
+
+1009
+02:44:55,644 --> 02:44:57,644
+İyi günler hocam. Kolay gelsin.

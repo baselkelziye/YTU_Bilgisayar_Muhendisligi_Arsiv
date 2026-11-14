@@ -1,0 +1,2883 @@
+1
+00:00:32,628 --> 00:00:53,088
+Günaydın arkadaşlar. Şimdi bir iki dakika bekleyelim. Katılımcı sayımız artsın. Saat dokuzun beş geçişe doğru dersimize başlarız. Dediğim gibi azıcık beklerim. Birazcık katılımcı sayımız artsın. Ben yardım okudayım. Birazdan dersimize başlarız.
+
+2
+00:04:16,531 --> 00:04:26,331
+Evet arkadaşlar, hoş geldiniz. 30 öğrenci oldu. Güzel, ilk başladığımda 18 filandı. Katılım canınıza atmış. Teşekkür ederim.
+
+3
+00:04:26,995 --> 00:04:45,195
+Şimdi dersimize proje ödeviyle ilgili duyuruyla başlamak istiyorum. Henüz AESİ tarifasına yüklemediğim bu arada veya en geç ders bir tane klas projeli ilgili belgeyi, bu şu an açık olan belgeyi AESİ'se yükleyeceğim.
+
+4
+00:04:45,195 --> 00:04:51,935
+Ve il sistemde İML adreslerimize proje ödevini duyuran toplu İML atacağım.
+
+5
+00:04:52,500 --> 00:05:04,339
+Proje ödevimizde geçen senelerden farklı olarak bu sefer test case'ler eklemenizi istiyoruz. Şimdi ayrıntılarını konuşacağız.
+
+6
+00:05:05,420 --> 00:05:13,639
+Anlatlarıyla tarif edecek olursam bu ders kapsamında öğrendiğiniz her şeyi uygulayacağınız bir proje ödevi olacak.
+
+7
+00:05:14,079 --> 00:05:27,560
+Daha aşağıda üç tane konu yer alıyor olacak. Doğal dille yazılmış gereksinimler belgesi olacak. Bunlardan yola çıkarak bu ders kapsamında öğrendiğimiz her şeyi uygulayacaksınız.
+
+8
+00:05:28,180 --> 00:05:43,959
+Bu size atanacak olan proje konusu doğrultusunda seçeceğiniz bir modülü kodlayacaksınız ve aynı zamanda birim testlerini de hazırlayacaksınız.
+
+9
+00:05:43,959 --> 00:05:55,399
+Birim testleriyle ilgili ders notlarının sonuna bunun J-Unit üzerinden nasıl yapılacağını anlatan birkaç sayfa içerik ekledim.
+
+10
+00:05:56,180 --> 00:06:07,560
+Güncellenmiş ders notları olarak Avesiz sayfama yükleyeceğim. Zaten ileriki haftalarda onların üstünden de en son geçiyor olacağız.
+
+11
+00:06:09,259 --> 00:06:21,980
+Proje kapsamında neler yapacaksınız? Öncelikle bir proje planı içeriği olacak. Burada proje alan tanımı derken size verdiğimiz proje konusunun içeriğini yazıyor olacaksınız.
+
+12
+00:06:22,516 --> 00:06:37,776
+Kabul ve kısıtlar kısmında bu bahsettiğimiz proje içeriğinde yer alan konulara ek olarak bazı sizin karar verdiğiniz ayrıntılar veyahut da ek işlevler varsa onlardan bahsedeceksiniz.
+
+13
+00:06:39,256 --> 00:06:40,776
+Örneğin işte...
+
+14
+00:06:43,411 --> 00:06:50,312
+Üniversite bilgi sisteminde bir öğretim üyesinin en fazla 10 adet.
+
+15
+00:06:50,720 --> 00:07:05,140
+30 adet öğrenciye danışmanlık yapabileceğini ve araştırma görevlilerinin danışmanlık yapamayacağını kabul ediyorum, varsayıyorum veyahut da gereksinimlerimi ekliyorum şeklinde ifade edeceğiniz bir özellik olabilir.
+
+16
+00:07:05,860 --> 00:07:11,280
+Bu projenin ilgili proje konusunda yer almıyor fakat siz bunu bu şekilde kabul ettiniz.
+
+17
+00:07:11,280 --> 00:07:18,720
+Bu kabul ve kısıtlı alanını özellikle kullanım senaryosu metinlerinde alternatif senaryolar...
+
+18
+00:07:18,720 --> 00:07:35,220
+Bu konuları oluşturmak için kullanabileceğiniz bir alan burası aslında. Daha sonra aşağı indiğinizde kullanım senaryosu metinleri yazarken alternatif senaryo bulmakta sıkıntı çekiyorsanız eğer o zaman işte ben bu alternatif senaryo doğrulabilecek şöyle bir...
+
+19
+00:07:35,315 --> 00:07:48,076
+Gereksinim veya şöyle bir olay, şöyle bir ister olduğunu kabul ettim diyerekten bunu yukarı çıkıp kabul kısıtlar kısmını ekleyip ondan sonra kullanım senaryosu metinlerinize rahatlıkla ekleyebilirsiniz.
+
+20
+00:07:50,015 --> 00:07:54,375
+Proje içi zaman çizelgeçsiz kapsamında bir Gantt diagramı çizeceksiniz.
+
+21
+00:07:56,915 --> 00:08:20,355
+Olası yoldan birini seçebilirsiniz. Birincisi, bu bir gerçek bir yazılım projesi olsaydı eğer, ne kadar süreceğini tahmin ediyorsunuz. Bu süre içerisinde hangi aşamalarda, hangi tarihlerde, hangi işlemler yapılacak? O şekilde yapabilirsiniz. İlerleyen aşamalarda biraz proje süre kestirme hakkında birkaç bazı yöntemden bahsediyoruz.
+
+22
+00:08:24,915 --> 00:08:26,615
+ödevi olarak düşünüp
+
+23
+00:08:26,615 --> 00:08:28,896
+şu an kaçıncı haftadayız?
+
+24
+00:08:29,331 --> 00:08:57,051
+6. haftadayız. Teslimi ne zaman? Bu sınavdan önce diye şey ediyorum, hatırlıyorum. Şimdi bakacağız şimdi noktaya. Kaç haftamız var mı ki? 3, 6, 7. 7 hafta dedi ki bu projeyi 7 hafta içerisinde tamamlamanız gerektiğinden işte buradaki yapılacak işlemleri hangi işi kim yapacak? Zaten kendi aranızda bir görevlarında yapmanızı bekliyoruz. Hangi işi kim yapacak? Hangi tarifler arasında yapacak? Şeklinde de.
+
+25
+00:08:57,331 --> 00:09:08,611
+Düşünebilirsiniz. O da ikinci seçenektir. Bu iki seçenekten birine göre yaptığınız bir iş zamanı çiftlergesini Gantt diagramı ile anlatıyor olacaksınız.
+
+26
+00:09:10,511 --> 00:09:17,331
+Ekibinizde, bu arada ekip üyeleri beş öğrenciden oluşabilecek. Birazdan onu da söyleyeceğim. Aşağıda yer alıyor.
+
+27
+00:09:19,028 --> 00:09:34,768
+Şimdi aslında şey de yapabilirsiniz. Yani her bir etkinliği hep birlikte de yapabilirsiniz. Veyahut da bazı etkinlikleri bazı arkadaşlar üstlenebilirler. Ama böyle bir şey yaparsanız kesinlikle birbirinizden kopuk olmayın.
+
+28
+00:09:46,004 --> 00:09:54,663
+İşler yapmış olmayın. Örneğin, kullanım senaryosu metinleriyle kullanım aşamaları arasında bir tutaksızlık olmamalı mesela.
+
+29
+00:09:54,663 --> 00:09:57,744
+Bu kişisini ayrı kişiler yapacaksa.
+
+30
+00:10:00,000 --> 00:10:11,120
+Risk tablosu konusunu önümüzdeki haftalarda göreceğimiz risk yönetimi ile ilgili onun bir konusudur. Onu da gördüğünüz zaman nasıl yapacağınızı öğreneceksiniz.
+
+31
+00:10:12,039 --> 00:10:20,720
+İsteklerin modelleri, yani gereksinim mühendisi ve analiz etkinlikleri anlamında. Kullanım senaryosu metinleri yazacaksınız.
+
+32
+00:10:20,720 --> 00:10:27,720
+Geçen haftalarda anlattığımız kurallar kapsamında. Kullanım senaryosu şamaları yazacaksınız.
+
+33
+00:10:28,000 --> 00:10:36,620
+Eğer isterseniz sözleşme de yazabilirsiniz. Opsiyonel bakıyorum bunu aslında. Gerekirse demişiz. Yazmasanız da olur diyebilirim.
+
+34
+00:10:38,339 --> 00:10:50,159
+Onun dışında gereksinim yönetimi, daha doğrusu gereksinimlerin izlenmesi konusunda gereksinim mühendisliğinin sonlarına doğru bahsettiğim bir izlenebilirlik tablosu yöntemi vardı.
+
+35
+00:10:50,159 --> 00:10:53,159
+Onu da oluşturmanızı istiyorum arkadaşlar.
+
+36
+00:10:56,403 --> 00:11:24,303
+Bir projeyi bütüncülü olarak kodlamayacak olsanız da en azından şimdi bu şey kısmında bu arada nesneye darın modelleme kısmında uygulama alanında sınıf diagramı çizdiğinizde en azından o sınıfları sizin gereksinimlerinizin yanına gereksinimlerinizden satı sınıfları ise tutunlarda yer alıyordu ya en azından bu.
+
+37
+00:11:24,403 --> 00:11:31,124
+Programı alanındaki çizeceğiniz sınıf şemasında yer alan sınıflar, sütunlar da yer alabilir.
+
+38
+00:11:31,563 --> 00:11:35,163
+Yani elinizde yeterli malzeme var bu tabloyu kendiniz çizebilmeniz için.
+
+39
+00:11:36,983 --> 00:11:41,384
+Bunu da sizden bu dönemden itibaren bekliyor olacağız.
+
+40
+00:11:42,548 --> 00:12:02,748
+Geçen hafta yaptığımız gibi uygulama alanında sınıf diyaklama çizeceksiniz. Sonra aldığından tasarım aşamasına geçilmiş olacak. Tasarım aşamasında yapacağınız şeyler, birincisi alan modelini metotlarla zenginleştireceksiniz. Onu da önümüzdeki günlerde, hatta belki bugün bilemiyorum, bakacağız artık. Yapacağız, birlikte yapacağız.
+
+41
+00:12:03,316 --> 00:12:23,036
+Onun dışında yine bu hafta görmeye başlayacağımız çeşitli yeni UML şimotörleri var. Gerçi Sikros diagramları nesne yönelik programlama dersinde gördünüz. Biz tekrar hatırlayacağız. Etkinlik ve durum diagramlarını da öğreneceğiz. Bugün onları da çizeceksiniz.
+
+42
+00:12:24,659 --> 00:12:44,519
+Burada şimdi şöyle benim önerim şu genelde. Şimdi en azıda birden fazla sayıda kullanım senaryosu metni yer alacak. Diyelim ki bunlar kaç tane? On tane diyelim ki. Bu on tane kullanım senaryosu metninin
+
+43
+00:12:45,076 --> 00:13:13,076
+İki tanesinden yola çıkarak bir sequence diagram çizersiniz. Bir tanesinden yola çıkıp bir diagram çizebileceğiniz gibi bu senaryoların birbirinin alternatif olması veya içerilmesi gibi durumlar kapsamında düşündüğünüzde belki birden fazla kullanım senaryosu metnini tek bir şemaya denk etmeyeceğiz.
+
+44
+00:13:13,076 --> 00:13:30,415
+gösterebilirsiniz. Artık o sizin neyi nasıl yapacağınıza da bakacak bir kere. Ama en azından hiçbir şey olmasa bile bir kullanım senaryosu metninden bir circles diyargramı oluşturun. Bir kullanım senaryosu metninden bir activity diyargramı oluşturun. Bir kullanım senaryosu metninden bir durum diyargramı oluşturun.
+
+45
+00:13:30,611 --> 00:13:38,132
+Diğerleri için de, diğer kullanım senaryolarımız için de bu istediğiniz şema türlerinden çizebilirsiniz.
+
+46
+00:13:38,132 --> 00:13:49,312
+Ama ben raporlarınızı incelediğimde bütün bu şema türlerinden en az bir tane çizmiş olduğunuzu görmek istiyorum. Ona göre o kısmı puanlandıracağım.
+
+47
+00:13:51,283 --> 00:13:58,524
+Evet, şurada onu söylemek isterim. Yani proje kapsamda toplamda en az bir sıra ve bir etkinlik bir durum diagramı bekliyorum sizlerden.
+
+48
+00:14:00,264 --> 00:14:13,283
+Ardından sınama aşamasına da etkinlik göstereceksiniz arkadaşlar. Bir modülü seçip kodlayacağımızı söylemiştim. Bu modül için her öğrenci en az iki adet bilim testi tasarlayacak.
+
+49
+00:14:13,812 --> 00:14:36,511
+Şimdi proje tesliminde birazdan ileriki sayfada söyleyeceğim. Projeye elektronik olarak teslim ediyorsunuz. Proje raporunuzu teslim ediyorsunuz ve proje kapsamında yazdığınız kod parçasını ve test kezleri de bunları bir araya getirip bir zip dosyası altında paketleyerekten sunmuş olacaksınız bizlere.
+
+50
+00:14:41,812 --> 00:14:56,312
+Hem de proje metninizde de yer alacak arkadaşlar. Bilim testleri çok karışık ve uzun olmak zorunda değiller. Yapacağız birlikte bir bilim test örneği.
+
+51
+00:14:57,891 --> 00:14:59,812
+Burada önemli olan sizin...
+
+52
+00:15:01,172 --> 00:15:12,991
+Koda döktüğünüz işlevlerde tutarlık kontrolü veya bu işleminin doğru çalışmadığını sınayacak şekilde bilim sınamaları ortaya koymanız.
+
+53
+00:15:12,991 --> 00:15:27,731
+Bu aşamada hep birlikte çalışmanızı rica ediyorum. Çünkü her ne kadar bazı etkinlikleri bazı arkadaşlar üstlenebilse de sınama en iyi birden fazla kişi tarafından yapıldığında etkilidir.
+
+54
+00:15:29,172 --> 00:15:47,231
+Teorikal tipisinin de zaten yazılım süreç konusunu anlatırken söyleyeceğiz. Bu nedenle, ancak nasıl görev davranışı olursanız olun, bu süreçte test case hazırlama aşamasında her öğrenciler en azından iki test case bekliyor arkadaşlar.
+
+55
+00:15:47,231 --> 00:15:57,172
+Ve bu hazırladığınız test case'leri proje metninde de kaynak kod olarak yapıştırmanızı bekliyorum. Kodlayacağınız modülün kaynak kodunu tabii ki...
+
+56
+00:15:57,172 --> 00:16:08,991
+Bu iki proje metnine yapıştırmayacaksınız ama hazırladığınız test kezlerinizi proje metninizde de görmek istiyorum. Kaynakot olarak ekli gelmesini de bekliyorum.
+
+57
+00:16:09,844 --> 00:16:27,364
+Onun dışında, bütün bu etkinlikler sırasında sizin yaptığınız vasiyenler veya aldığınız kabuller söz konusuysa, şu en başta söylediğim üzere, şuradaki kabulleri kısıtlar kapsamında, bunları da raporunuzda güzelce belirtiniz.
+
+58
+00:16:29,104 --> 00:16:34,783
+Mesela şöyle yapıp bırakmayın, bir tane de dedim ki state diagram, çizdiniz bıraktınız, herhangi bir açıklama yok.
+
+59
+00:16:35,187 --> 00:16:41,187
+Öyle değil, öyle olmamalı. O asiteliği yerden çizdikten sonra işte şekil bilmem kaçta...
+
+60
+00:16:41,491 --> 00:16:57,271
+O iki yer alan state diagramda görüldüğü üzere, işte bir öğrenci ilk başta üniversiteye kayıt olma aşamasından sonra, öğrenci durumunda da ders verebilir, her neyse vesaire.
+
+61
+00:16:57,932 --> 00:17:06,451
+Belirli bir kredi yükünü topla, tamamladıktan sonra artık not ortalaması da belli bir durum ortalama üstündeyse mezun olabilir.
+
+62
+00:17:06,451 --> 00:17:09,451
+Yoksa işte şu kadar ders kalmışsa...
+
+63
+00:17:09,491 --> 00:17:25,911
+Mezunet sınavına girer filan gibi ne anlatmaya çalıştığınızı da çizdiğiniz şemeye ek olarak bu şamanın açıklaması şeklinde anlatın lütfen. Bu son maddeyle de onu kastediyorum.
+
+64
+00:17:28,243 --> 00:17:35,683
+Proje ekiplerinin 5'er kişiden oluşturdum arkadaşlar. Bir fazlası, bir eksi problem yok.
+
+65
+00:17:38,420 --> 00:17:48,880
+Daha fazla bir varyasyon durumunda bana mail atmanızı, sormanızı istiyorum. Ona göre bilal edin lütfen.
+
+66
+00:17:49,960 --> 00:17:56,900
+Aynı ekipte yer almak isteyen öğrenciler 27 Nisan salı sabahına kadar bana gönderecekler arkadaşlar.
+
+67
+00:17:57,620 --> 00:18:01,120
+E-mail adresini şurada aşağıda Gmail adresime gönderin lütfen.
+
+68
+00:18:01,760 --> 00:18:04,539
+Şimdi 27 Nisan salı da şu demek oluyor.
+
+69
+00:18:06,675 --> 00:18:21,576
+İki hafta vaktiniz var oluyor. Ertesi günkü derste ben daha doğrusu sınav aslında ama şimdi sınavda aynı zamanda ben online yıldızdan da sisteme girmiş olacağım.
+
+70
+00:18:21,976 --> 00:18:29,016
+Sınav sırasında soracağınız sorular olursa derste chat ekranı üstünden yazabilirsiniz, edebilirsiniz.
+
+71
+00:18:34,675 --> 00:18:37,615
+Programını yapmadık ama tam saat, saat programı gelmedi.
+
+72
+00:18:38,612 --> 00:19:06,592
+Ama saat dokuzda bile başlasa en azından ben işte diyeceğim ki işte şu kısa gününe kadar göndereceksiniz ya o akşam çalışacağım. İşte kabul edilen gruplar ve atandıkları proje konularının tam listesi diye bunu ders sırasında da duyuracağım. Oradan bir iki sorunuz sorusu olan arkadaşlarla sonları hızlıca yanıtlayıp edip ondan sonra sınavına başlayabiliriz. Planlamayı bu şekilde yapmak istedim.
+
+73
+00:19:08,084 --> 00:19:28,023
+Ondan sonra [öğrenci]. Şimdi bana mail atarken lütfen yazılım mühendisliği proje grubumuz şeklinde gibisinden bir mail atın. Burada aynı ekipte yer almak isteyen tüm öğrencilerin numaraları ve adlarını bekliyorum sizden.
+
+74
+00:19:28,023 --> 00:19:36,023
+Ve birazdan aşağı indiğimde göstereceğim. Üç tane proje konusunda hangisini tercih ettiğiniz konusunda da...
+
+75
+00:19:36,084 --> 00:19:56,023
+Bilgi bekliyorum. Burada şimdi yaklaşık 100 kişiyiz. 5 kişilik gruplardan bu yaklaşık 20 grup eder. 3 tane konu var. Yaklaşık 3 kere 7-7-1 dersek bu konular arasında ben eşit dağılım, homojen dağılım düzenlemeye çalışacağız.
+
+76
+00:20:00,000 --> 00:20:09,860
+Yediden fazla, sekizinci, dokuzuncu talepler gelmeye başladığında büyük ihtimalle bunları daha az talep gelen bir proje konusuna aktaracağım.
+
+77
+00:20:09,860 --> 00:20:25,220
+Diyeceğim ki siz şu konuda yapacaksınız projenizi diye. Burada ilk gelen avantajlı. Grubunu daha önce belirleyen arkadaşlar tercih ettikleri konuyu almakta daha şanslı olacaklar.
+
+78
+00:20:28,000 --> 00:20:55,519
+Yaparım inşallah. Bu iki haftayı beklemeden bu ilk yedi kotasını doldurmamışsa bir grup bunun tercihi. Hemen onlara geri dönüş yapacağım. Tamam grubunuz uygundur ve tercih ettiniz bu konu yapabilirsiniz diye mail ile yanıt döneceğim. Bu yanıtın ardından çalışmalara başlayabilirsiniz. Yani iki hafta sonrasına duyuracağım listeyi beklemenize gerek yok.
+
+79
+00:20:56,000 --> 00:21:14,000
+Belki benden bir onay almış olun. Bu şekilde çalışmak istiyorum. Ondan sonra projenin teslimini ise 31 Mayıs pazartesi öğlene kadar rica ediyorum sizlerden. Bu da demek oluyor ki...
+
+80
+00:21:15,508 --> 00:21:42,728
+Şu 2 Haziran haftasında yetişecek şekilde. Bu haftadan itibaren de yaptığınız projeleri sunacaksınız arkadaşlar. Projenin sunumu da olacak. Bu anlamda ayrı bir PowerPoint dosyası hazırlamanızı öneririm. Ama içerini tabii ki proje raporunuzdan oluşturacaksınız, doğduracaksınız. Ekstra bir şey hazırlamamıza gerek yok kesinlikle.
+
+81
+00:21:43,508 --> 00:21:54,148
+Bu sunumların programını da bu iki haftaya yayılı şekilde yapacağız. 13. ve 14. haftalarda bu proje sunumları olacak.
+
+82
+00:21:54,148 --> 00:22:11,408
+Tabii işte saatleri, şusu busu bunları konuşacağız. Çünkü işte bu 13. haftada sınav diyelim ki 9-11 arası sınav, 11-12 arasında da sunum diyelim ki sonraki hafta ise 9-12 arasında.
+
+83
+00:22:11,508 --> 00:22:36,348
+sunum yapacağız, programı duyuracağız. Belki 12'de 12.5 yapabiliriz bakalım yani şeye göre kaç grup çıktı, kaç kişi dinleyebileceğiz. Proje sunumu konusunda belki birden fazla paralel oturum yapacağız belki de. Bu iki haftaya toparlamaya çalışacağız. O yüzden bu ayrıntıları önümüzdeki günlerde belli olacak.
+
+84
+00:22:39,508 --> 00:22:44,408
+Aynı zamanda tedafil sınavlarının da olduğu hafta biliyorsunuz.
+
+85
+00:22:45,568 --> 00:22:53,888
+Yönetmeliklerde tarif edilen aklı bir mazeret nedeniyle iki vizeden birine giremeyen öğrencilere tanınan sınav hakkıdır bu.
+
+86
+00:22:55,928 --> 00:22:59,019
+Bu sınav da ortak olacak, diğer sınavlar da olacak.
+
+87
+00:22:59,028 --> 00:23:20,307
+Belki şöyle olur mesela, telafi sınavını 9-11 arasını yapar ve 11-12 arasında bir saate de telafi sınavına girmiş olan bir arkadaşımın bulunduğu grupta sunumunu o dilimde yapar gibi çıkışmayacak şekilde planlı program yapacağız, sizlere duyuracağız.
+
+88
+00:23:24,372 --> 00:23:52,052
+Ondan sonra da kaldık. Evet, peki bunu söyledik. Evet, sunum yapacağız dedik. Evet, şimdi proje raporunu 4 dosyası olarak hazırlayabilirsiniz. Seçeceğiniz modülün kaynak ve kodlarını ve test kodlarını da bu durumların hepsini bir zip dosyası içerisinde birleştireceksiniz. Bu oluşturduğunuz zip dosyasının adını da lütfen size atınacak.
+
+89
+00:23:52,372 --> 00:24:20,352
+Proje grup numarası olacak. Şimdi siz ekibinize belirleyeceksiniz ve tercih ettiğiniz konuyu yazacaksınız ya, ben diyeceğim ki tamam bu ekiple ama şu konuyla çalışacaksınız diyeceğim. Bence daha sonra bütün ekipler belli olduğunda ben her ekibi bir ekip numarası vermiş olacağım. Bu ekip numarasını yer alsın mutlaka dosya adında. Ayrıca o ekipteki bütün öğrencilerin numaraları da yer alsın dosya adında.
+
+90
+00:24:20,372 --> 00:24:31,612
+Böyle bir zip dosyası şeklinde bekliyoruz. Ayrıca test case kodlarını da proje raporuna da yapıştırmamız gerektiğini tekrar hatırlatmak istedim.
+
+91
+00:24:32,052 --> 00:24:35,052
+Bundan sonra da üç tane konu yer alıyor.
+
+92
+00:24:35,955 --> 00:25:01,075
+Bu konuları oluştururken arkadaşlar, içeriğinin birbirine denk olmasına göz önünde bulundurduk. Yani aslında bu üç tane konunun biri ötekisinden zor değil kesinlikle. Hepsi aynı düzeyde. Fakat bunları aynı proje yapacak, diğer gruplardan farklılaştıracak olan şeyler sizin kabul ve kısıtlarınızda olacaktır. Onu da parantez içinde tekrar hatırlatayım.
+
+93
+00:25:03,955 --> 00:25:16,595
+Takip şirketi bilgi sistemi, işte sözlü biçimde konuşma diliyle gereksinimler yer alan, şöyle yaklaşık işte bir sayfaya yakın bir A4 sayfası.
+
+94
+00:25:16,595 --> 00:25:29,555
+Daha doğrusu 3 bölü 4 gibi bir içerik. Şöyle bir şey dersem, tek sayfa şeklinde getirirse, mesela işte bakın, şu işte neredeyse 3 bölü 4 sayfa gibi.
+
+95
+00:25:30,067 --> 00:25:45,928
+İkinci konu bir üniversite kütüphanesi bilgi sistemi. O da yaklaşık aynı içerikte. Biraz aşağı ineyim şimdi. Evet. Orada da çeşitli işte şöyle yapılmalı, böyle olmalı, şu var, bu var gibisinden.
+
+96
+00:25:48,564 --> 00:26:06,664
+Üçüncü konu ise şifa polikliniği bilgi sistemi. Bu da benzer şekilde sözlü yazılmış gereksinimler. Yine işte bir adö sayfasının yaklaşık üç bölü dördünü dolduracak şekilde. O yüzden bunların iç ekleri birbirine denk.
+
+97
+00:26:07,071 --> 00:26:33,211
+Seçeceğiniz modül derken de ona da bir açıklama koyayım. Mesela şu poliklinik bilgi sisteminde yapılan çeşitli işlevler var. Muayene süreci başka, alma süreci başka, reçete yazma modülü başka. Bunlardan seçeceğiniz bir tanesini, en az bir tanesini kodlayacaksınız. Daha fazlasını da kodlayabilirsiniz, bilirsiniz.
+
+98
+00:26:35,071 --> 00:26:47,231
+Seçeceğiniz modül eğer nispeten basit veya kısa bir ya da birkaç kullanım senaryosu metnine dayanmışsa o zaman oradan biraz puan kırabilirim.
+
+99
+00:26:48,011 --> 00:27:00,371
+Ama o yüzden seçim yaparken sistemi tasarladığınız yeteneklerini düşündüğünüzde şöyle orta karar bir yeteneğini koda dökmeniz yeterli olacaktır diyorum.
+
+100
+00:27:01,371 --> 00:27:03,071
+Ama tabii ki tek not birleşim...
+
+101
+00:27:03,071 --> 00:27:07,691
+Bu değil. Yaptığınız her şeyde bu ilk sayfada yer alan
+
+102
+00:27:09,395 --> 00:27:31,275
+İlk sayfada yer alan her şeyin ayrı bir puan değeri var. Hepsi puanlanacak, hepsi değerlendirecek. O yüzden bir tanesini yapamazsanız buradaki yazılan şeylerden, az bile yapsanız diğer taraflardan notunuzu yukarı çekebilirsiniz. Onu da ayrıca hatırlatmak istedim.
+
+103
+00:27:32,948 --> 00:27:44,048
+Şimdi genel olarak benim projeler hakkında söyleyeceklerim bunlar. Sizlerin soruları varsa lütfen şimdi söz alın, konuşun sorularınızı bekliyorum.
+
+104
+00:27:49,203 --> 00:28:01,683
+Kağıt kalemini de alıyorum. Eğer aklına gelmeyen bir şey söz açarsanız, o zaman onları hemen belirleyip not alıp sizlere o şekilde duymuş olacağım.
+
+105
+00:28:02,144 --> 00:28:06,023
+Hocam, projeyi nerede kodlamamızı istiyorsunuz? Öyle bir sınırlam var mı?
+
+106
+00:28:06,243 --> 00:28:17,203
+Tamam, çok güzel. Hiçbir sınırlama yok. İstediğiniz ortamda, istediğiniz yerde kodlayabilirsiniz. Fakat burada test case yapacağınızı da unutmayın.
+
+107
+00:28:17,203 --> 00:28:38,963
+Şimdi, unit testing konusunu anlatırken, diyeceğiz ki, bu işin tool yardımıyla yapılması önemlidir, diyeceğiz. Çünkü, yazılım sınaması da bir çaba gerektirmektedir ve o da hatta kodlamadan daha zor bir iştir. Bu zorlukta size yardımcı olacak. Toollar kullanılması yararlı olacak, diyeceğim.
+
+108
+00:28:45,203 --> 00:28:51,683
+XR için CS Unity türevi var örneğin. Ama bunun PHP için bir versiyonu var mı bilmiyorum.
+
+109
+00:28:52,443 --> 00:28:58,623
+Veyahut da ne bileyim, Perl için bir versiyonu var mı ya da Python için bir versiyonu var mı bilmiyorum.
+
+110
+00:28:58,623 --> 00:29:13,183
+Büyük ihtimalle vardır. Eğer yoksa bile o zaman bu basit kıra kutu sınamasına yönelik kendi ek kodunuzu da, ek raporlama kodunuzu da yazmak zorunda kalabilirsiniz.
+
+111
+00:29:13,203 --> 00:29:40,423
+Ufak bir güçlüktür. Ama kapatılamayacak bir güçlük değildir. Bu nedenle sizin sorunuzun yanıtı olarak belki bir unit testing tool'un olduğu bir dil ve platformu seçmenizi tavsiye ederim diyeceğim. Ama Java C Sharp için var. Başka birçok programlama dil ve ortamı içinde unit testing tool'ları vardır diye düşünüyorum.
+
+112
+00:29:41,203 --> 00:29:45,163
+Sonunuzun yanıtı istediğiniz dille, istediğiniz şekilde kodlayabilirsiniz.
+
+113
+00:29:45,743 --> 00:29:50,363
+Fakat bilim testi de yapacağınızı unutmayın demek istiyorum.
+
+114
+00:29:54,579 --> 00:30:10,859
+Bunu isterseniz yazın. Yani diyelim ki, istenilen bir dilde ve lat 10'da kodlanacak ve sınanacaktır diyelim.
+
+115
+00:30:11,399 --> 00:30:14,599
+Şimdi evet sayfayı da taşmadık. Güzel. Böyle olabilir.
+
+116
+00:30:16,740 --> 00:30:19,919
+Başka soru alayım arkadaşlar varsa.
+
+117
+00:30:28,468 --> 00:30:39,068
+Hocam, dokümanı şimdi chatte paylaşmanız mümkün mü acaba? Konuları seçmek için mi? Olur, tamam. Derse giren arkadaşlar için o kadar. Kıyamız olsun tabii ki.
+
+118
+00:30:39,068 --> 00:30:39,908
+Teşekkür ederim.
+
+119
+00:30:39,908 --> 00:30:45,008
+Şimdi nasıl yapalım? Önce şöyle yapayım. Bunu bir pdf'e çevirip öyle yollayayım sizi.
+
+120
+00:30:51,028 --> 00:30:57,988
+Şimdi şu chat kısmına girelim veya dosyayı ekleyelim.
+
+121
+00:31:07,571 --> 00:31:18,011
+Evet, geliyor arkadaşlar. Gönderdi diyor. Buradan indirip o şekilde harket edebilirsiniz.
+
+122
+00:31:19,931 --> 00:31:21,051
+Evet, başka soru buyurun.
+
+123
+00:31:33,107 --> 00:31:40,847
+Bu arada sandalyem hareket ettikçe biraz gıcırdı. O yüzden de siz de ederim. Çok da hareketsiz kalamıyorsunuz böyle.
+
+124
+00:31:40,847 --> 00:31:45,727
+Soru yok galiba.
+
+125
+00:31:47,007 --> 00:31:47,967
+Tamam, devam edeceğiz.
+
+126
+00:31:51,604 --> 00:31:55,324
+Evet, şurada kalmıştık 87. sayfada.
+
+127
+00:31:57,619 --> 00:32:25,619
+Geçen hafta en son bağlaşım uyumundan bahsetmiştik. Onun dışında şundan da bahsetmiştik. Tasarım aşamasında problem alanına, iş mantığına odaklanıyoruz demiştik. Sistem katmanını fazla düşünmeyeceğiz bu ders kapsamında demiştik. Fakat o katman için yararlanabileceğiniz çeşitli platformlar, çeşitli frameworklar var demiştik. Ayrıca ister sistem katman için olsun, ister...
+
+128
+00:32:25,619 --> 00:32:44,239
+Veri problem alanı modellenmesi olsun. Bu alanlarda yapacağınız tasarım çalışmalarında göz önünde bulundurmanızın yararlı olacağı tasarım kalıpları var arkadaşlar. Ondan kısaca bahsetmek istiyorum.
+
+129
+00:32:44,859 --> 00:32:53,619
+Design patterns diye geçer. Literatürde tasarım kalıpları. Bu kalıplar arkadaşlar, Nesli Yenik modelleme alanı.
+
+130
+00:32:53,619 --> 00:33:20,619
+Sık karşılaşılan problemlere çözüm önerileri sunarlar. Bu tasarım kalıplarına uyarak eğer tasarım yaparsanız daha esnek bir çözüm elde ederiz genelde. Burada esneklik derken de olası gereksinimlere karşı ya gereksinimlerdeki olası değişikliklere karşı bunların daha rahat, daha esnek, daha verimli, daha kolay biçimde
+
+131
+00:33:22,420 --> 00:33:28,019
+Bakım zorluğunu arttırmayacak şekilde karşılanabilmesinden bahsediyorum.
+
+132
+00:33:28,599 --> 00:33:40,900
+Şimdi bizim meslek nispeten yeni bir meslek olduğu için, ister bilgisayar mühendisliği olarak düşünün, ister yazılım mühendisliği olarak düşünün, farklı disiplinlerden bazı konu ve terimleri alıyoruz.
+
+133
+00:33:41,379 --> 00:33:44,579
+Ve duruma göre kendimize göre uyarlıyoruz.
+
+134
+00:33:44,579 --> 00:33:50,400
+Aslında tasarım kalıbı kelimesi de böyle bir şey. Mimariden çıkmış bir kavram.
+
+135
+00:33:50,420 --> 00:33:58,539
+Bu tasarım kanalı. Yine esas oda aynı. Sık karşılaşılan problemlere çözüm önerildi.
+
+136
+00:33:58,539 --> 00:34:18,239
+Örneğin işte mimari açısından düşündüğümüzde denir ki içerisinde en az yarım saat kesintisiz zaman geçirilecek her odanın en azından bir penceresi olmalıdır.
+
+137
+00:34:18,420 --> 00:34:19,139
+Teşekkürler.
+
+138
+00:34:19,572 --> 00:34:47,572
+Kural mesela mimar kalanında bir tasarım kalıbıdır. Peki, nesne yönelik tasarım ve modellemede ne gibi kalıplar söz konusudur? Bunun temellerini atan çalışma, dörtlü çete diye tabir edilen dört kişinin Gamma, Han, Willisides, Kitlisi daha vardı. Dört kişinin 1994 yılında bir kitap haline getirdiği, adısını mesajdan çıkıyor.
+
+139
+00:34:47,572 --> 00:35:02,731
+Design Patterns adlı kitabı. Adı daha uzun aslında. Design Patterns, Elements of Reusable Object Oriented Software şeklinde geçer. Bu kitap hem basit olarak hem elektronik olarak kütüphanemizde var.
+
+140
+00:35:05,684 --> 00:35:20,583
+Kariyerini, uzmanlaşma alanını, yazılım alanında, gerçekliği, kodlama alanında ilerletmek isteyen arkadaşların mutlaka bilmesi gereken bir konudur tasarım kalıpları arkadaşlar.
+
+141
+00:35:33,684 --> 00:35:43,684
+Bu konuda Design Patterns deyin, karşınıza yüzlerce kitap geçiyor arkadaşlar. Ufak bir göstergesidir bu konunun. Önemli ve popülerliğinden.
+
+142
+00:35:44,275 --> 00:36:10,496
+gösteren tasarım kalıpları arkadaşlar bize tecrübenin yazıl olarak aktarımını da sağlayan bir olgu. Nihayetinde bu kalmış problemlerin çözümü için yılların deneyimine sahip insanlar bir araya gelmişler, kafaya olmuşlar, bazı çözüm önerileri sunmuşlar size. Bu önemli bir tecrübe süzgecinden geçerekten gelen bir öneridir.
+
+143
+00:36:12,275 --> 00:36:23,576
+veriyi siz de öğrenildiğinizde ve uygulamaya başladığınızda siz de aynı deneyimi çok daha az çaba ile kazanmaya başlamış oluyorsunuz.
+
+144
+00:36:24,115 --> 00:36:28,775
+Bu anlamda öncelikle bu kitabı bakıp incelemeye başlayabilirsiniz.
+
+145
+00:36:28,775 --> 00:36:37,775
+Onun dışında göreceğiniz kitaptan arkadaşlar bu kitaptaki tasarım kalıplarının çeşitli problemlere pratik olarak uygulamalarını...
+
+146
+00:36:38,228 --> 00:36:52,887
+Gösteren kitaplardır arkadaşlar. Ağırlık olarak o yönde işeleyen sahiplerdir. Onun dışında ben de yüksek lisansta Nesne'leri tasarım ve modelleme adlı derste bu tasarım kalıplarından epey bir bahsediyorum.
+
+147
+00:36:53,648 --> 00:37:05,028
+Kitaptaki tasarım kalıplarının 22, 23, 24 tane tasarım kalıpları var. Bir ya da iki tane sahip hepsini ders notlarında işledim.
+
+148
+00:37:06,003 --> 00:37:33,443
+Bir ders bu. Başka içerik de var tabii ki derste. Merak etme arkadaşlar, konuyla ilgilenen arkadaşlar ders noktalarını da inceleyebilirler. Mutlaka bu Dörtlü Çeten'in kitabı ve başka kitaplardan da bu konu hakkında bilgi birikimi sahibi olmak isteyebilirler. Bu konuda farkındalık yaratmak istedim öncelikle. Ondan sonra başlayacağız. Dersimize kaldığımız yerden devam edeceğiz.
+
+149
+00:37:34,708 --> 00:37:59,847
+Tamam, şimdi bunu söyleyeyim. Ondan sonra ara veririm. Yeni şama türlerine geçmem. Şimdi tasarım aşamasında da illaki teknik belgelendirmeyi sürdüreceğiz. Bu teknik belgelendirmede neler yer almalı, nelerin yer alması yardımcı olur, yararlı olur? Biraz onlardan bahsedeyim. Bence bu kısmın olmazsa olmazı ayrıntılı yürüyen sınıf şamaları.
+
+150
+00:38:00,340 --> 00:38:07,920
+Çünkü nihayetinde bu sizin ortaya çıkaracağınız kodun ana planı.
+
+151
+00:38:09,460 --> 00:38:18,739
+Buna uymayan şekilde yapılacak her yazılacak her kod parçası düzeltilmek zorunda kalacak.
+
+152
+00:38:18,739 --> 00:38:29,440
+Değerleme hatalarına yol açacak veyahut da mantıksal hatalara yol açacak ve daha sonra bunu düzeltilmesi gereken fazladan sınama etkinliklerine yol açacak.
+
+153
+00:38:29,739 --> 00:38:37,179
+Bu nedenle ayrıntılı yorulaması bir şamada sizin oyun planınız, her şeyi üstüne inşa ettiğiniz bu mutlaka yer almak.
+
+154
+00:38:37,460 --> 00:38:38,000
+Zoruda.
+
+155
+00:38:38,384 --> 00:38:48,583
+Onun dışındaki bileşenler, seçimlik olmakla birlikte yer almaları, yararlı olan artifactlar. Hepsini göreceğiz.
+
+156
+00:38:49,163 --> 00:39:00,543
+Sözleşmeler, etkileşim şamaları, UML etkileşim şamaları, interaction diagram aslında iki türlüdür. Bunun birinci türü sequence diagramlardır. İkinci türü collaboration diagramlardır.
+
+157
+00:39:00,543 --> 00:39:06,063
+Sequence diagramları nesnelik programlama dersinde gördük. Şimdi biraz hatırlayacağız.
+
+158
+00:39:06,384 --> 00:39:29,483
+Collaboration diagram da aynı amaca yöneliktir. Bu iki şemada nesnelerin birbirlerine gönderdikleri mesajların, yani birbirlerinin metotlarını çağırmalarının hangi sırada ve nasıl yapıldığına yönelik koda yakın bir şema türüdür etkileşim şemaları. Hem sequence diagram hem de collaboration diagram bunu göstermeye yöneliktir.
+
+159
+00:39:34,384 --> 00:39:59,983
+ve akademik kaynaklarda ve pratik kaynaklarda sequence diagramlar tercih ediliyor. Collaboration diagramlar çok daha az tercih ediliyor. Bunun sebebi de şu, bu etkileşim şemalarının ana amacı metot çağrım sırasını göstermek olduğunda bu sıra sequence diagramlarda daha net gözüküyor ve daha kolay takip edilebiliyor. O şemanın da dezavantajı sizler de çizdiniz, yaptınız.
+
+160
+00:40:00,000 --> 00:40:10,119
+Biliyorsunuz, nesne sayısı arttıkça, yani aynı işi belli bir sorumluluğa yönelik, işte Siklus diagram çiziyorsunuz.
+
+161
+00:40:10,380 --> 00:40:19,420
+İlk bir mesajla başlıyor, sonra ilgili birbirine coupling içerisinde olan bütün nesneler birbirine çeşitli mesajlar gösteriyor.
+
+162
+00:40:19,420 --> 00:40:27,500
+İşte bu aynı coupling içerisinde yer alan nesnenin sayısı arttıkça şema sağa doğru, karabalıklaşıyor, uzuyor bu an.
+
+163
+00:40:28,000 --> 00:40:53,099
+Daha biraz daha dağınık gibi oluyor. Hacimli diyelim. Daha hacimli oluyor. Collaboration diagramlar daha kompakt oluyor. Fakat orada metotların çağrım sıralarını takip etmek zor oluyor. Tamamen nesneler arasındaki bir çizgi üstüne yazılan sayılarla işte 1.1.1, 1.1.2 falan gibi sayılarla sıra ifade ediliyor.
+
+164
+00:40:56,000 --> 00:41:02,280
+Gözünüzde görselleştirmek, beğeninizde bütüncül bir akış resmi oluşturmak kolay olmuyor.
+
+165
+00:41:02,739 --> 00:41:13,820
+Fakat sequence diagramlarda şak diye hangi metot hangi metoddan sonuna çağrılmış, hangi metot hangi metodun içinde çağrılmış gibi şeyleri çok daha bakar bakmaz görebiliyorsunuz, sakin olabiliyorsunuz.
+
+166
+00:41:13,820 --> 00:41:23,199
+O yüzden bu sağa doğru hacminin büyümesine rağmen sequence diagramlar en çok tercih ediliyor.
+
+167
+00:41:23,664 --> 00:41:27,844
+Onun dışında, activity diagram ve state diagram daha söz konusu.
+
+168
+00:41:35,347 --> 00:41:57,008
+Müşterinin ve konu uzmanının, hem konu uzmanının hem de müşterinin de anlayabileceği bir düzeyde anlatan çok yararlı bir şema türü. Bu etkinlik şemaları olmasaydı eğer, use case şemalarından bahsederken size yapmayın dediğim hataya düşürmek zorunda kalamadı.
+
+169
+00:41:57,008 --> 00:42:01,928
+Tekrar diyorum, use case şemaları hangi işin hangisinde de yapıldığını göstermez.
+
+170
+00:42:02,420 --> 00:42:07,580
+Hangi işin hangi sırada yapıldığını göstermek istiyorsanız, etkinlik şemaları çizmeniz gerekiyor arkadaşlar.
+
+171
+00:42:08,040 --> 00:42:11,740
+Bunun diagramları da bir noktaya kadar bu işe yarar.
+
+172
+00:42:12,780 --> 00:42:20,340
+Hangi işi kim hangi sırada yapıyorum gösterimi, birinci sınıfta gördüğünüz akış şemalarına benzer bir biçimde,
+
+173
+00:42:20,340 --> 00:42:24,560
+bir ancak etkinlik şemaları üzerinden yapılır, tarif edilir.
+
+174
+00:42:24,880 --> 00:42:30,420
+Ve bu şemalar, müşterinin ve konu uzmanının da anlayabileceği bir düzenli.
+
+175
+00:42:30,420 --> 00:42:46,260
+Bir sequence diagramı herkes anlamaz. Bunu ancak programlama deneyimi olan birisi anlar. Fakat bir aktivite diagramı herkes anlayabilir. Yeter ki temel çizim bileşenlerinin neler olduğunu bilsin.
+
+176
+00:42:47,840 --> 00:42:58,400
+Bazılarını bilmese bile kişisel olarak görmez yorumlayabiliyor insanlar. Bunları konuşurken siz de anlayacaksınız. Umarım bu söylediklerime katılacaksınız.
+
+177
+00:42:58,420 --> 00:43:26,420
+Durum diagramları biraz daha karışık olmakla birlikte onlar da yararlı diagramlar. Şöyle ki, şimdi problem alanımızda çok önemli varlıklar olabilir ve bu varlıkların durumlarının neler olduğu, içinde yer alabileceği durumların, hallerin, aşamaların, seviyelerin neler olduğunu, hangi olay gerçekleştiğinde hangi durumdan hangi duruma geçtiğini veya aynı durumda kalmaya çalışıyoruz.
+
+178
+00:43:26,420 --> 00:43:44,560
+Yani devam ettiğini gösteren diagramlardır bunlar. Program anlamamızla ilgili çok önemli varlıkların bu süre içerisinde geçireceği aşamaları yani programın çalışması sırasında geçilebileceği aşamaları anlatması açısından durum diagramları da yararlıdır.
+
+179
+00:43:44,560 --> 00:43:54,420
+Anlaması aktivite diagramlardan biraz daha zor olsa da birlikte bence sequence diagramlardan daha kolay. State diagramlarda esas önemli olan...
+
+180
+00:43:54,420 --> 00:44:04,660
+Neyin durum, neyin durum girişi olayı olduğunu çıkartmaktır. Ondan sonrası iyice kolaydır. Zamanı geldiğinde onları da anlatıyor olacağız.
+
+181
+00:44:05,680 --> 00:44:10,500
+Şimdi, soru varsa alayım arkadaşlar.
+
+182
+00:44:13,640 --> 00:44:18,600
+Çok bir şey demedim ama, yani yine de soru olabilir.
+
+183
+00:44:21,619 --> 00:44:39,039
+Yoksa da aramızı verelim artık madem öyle. 10 dakika ara verelim. 09.45 ile 09.55 arasında 10 dakika aramızı verelim. Soru olursa aradan sonra da sorabilirsiniz.
+
+184
+00:55:06,420 --> 00:55:13,820
+Evet arkadaşlar, süremizi doldurduk yine, adat süremizi. Dersimize kaldığımız yerden devam edelim.
+
+185
+00:55:17,880 --> 00:55:21,599
+Şimdi sözleşme konusuna kısa bir değineceğim.
+
+186
+00:55:22,003 --> 00:55:40,783
+Sözleşmeleri kullanmanız şart değil ama bilmeniz yararlı olabilir diye düşünüyorum. Keza kaldı ki biraz CRC katlarıyla da birlikte belki Scrum sürecindeki gözden geçirme, değerlendirmede de yine kullanılabilir bir ejenler oluyorlar.
+
+187
+00:55:41,088 --> 00:55:48,028
+Sözleşme dediğimiz şey, kontrakt diye geçiyor. Bir kullanım senaryosunun ayrıntılandırılmasıyla erdedilir haliyle.
+
+188
+00:55:48,028 --> 00:55:53,028
+Ve bir kontrakt, bir solumluluk ama...
+
+189
+00:55:54,164 --> 00:56:11,344
+Büyük o açık değil de bir metot düzeyinde kodlanabilecek bir sorumluluk için kontrakt yazılır. O sorumlulukla ilgili, o alt göreviyle ilgili metodun nasıl kodlanacağının, nasıl çalıştığının tarif edilmesi amacıyla yapılır.
+
+190
+00:56:11,764 --> 00:56:33,423
+Bu nedenle şöyle bir metot aslında bir sözleşmeyle ayrıntılandırılır. Her metoda sözleşmeye hazırlayacak diye bir koşul yok. Bir kere zaten kolay anlaşabilecek metotların sözleşmeye ihtiyaç yok. Öte yandan bu sözleşmeyi hazırlamak da önemli bir miktar çaba gerektireceğinden bütün metotlar için yapılmasını kesinlikle önermiyorum Hennet'te.
+
+191
+00:56:39,764 --> 00:56:44,824
+Bu doğru biçimde kodlanmasına yerel sağlayacaktır. Bu nedenle tercih edilebilir.
+
+192
+00:56:47,059 --> 00:56:58,639
+Şimdi örnek bir tane sözleşme görüyorsunuz. Her kullanım senaryosunun olduğu gibi sözleşmenin de bir numarası olur. Sözleşme numara 2'ymiş mesela. Bu satış kalemi girişi.
+
+193
+00:56:59,419 --> 00:57:09,879
+Geçen hafta hatırlarsanız bu satış kalemi aslında kritik bir varlıktı ve o olmadan çok verimli bir tasarımda yapamayacağımız ortaya çıkmıştı.
+
+194
+00:57:15,059 --> 00:57:21,179
+Onların gerçekleştirmesinin enlikhi metotlarından biri olan ÜrünGir metodunun sözleşmesi.
+
+195
+00:57:21,679 --> 00:57:28,079
+Sözleşmeleri ayrı isim verebileceğiniz gibi metot adını da sözleşmez olarak kullanabilirsiniz.
+
+196
+00:57:28,899 --> 00:57:33,619
+Neymiş işlemimiz? ÜrünGir metodu. Parametre olarak iki parametre alıyormuş.
+
+197
+00:57:34,279 --> 00:57:37,460
+String olarak barcode, integer olarak da adet alıyormuş.
+
+198
+00:57:38,420 --> 00:58:03,320
+Bir kontrakt ilişkili olduğu başka kontraktlar olabilir veyahut da başka artifaklar olabilir. Örneğin burada çatraz başvurular bölümüne satış kullanım senaryosu verilmiş. Satış kullanım senaryosunun da geçen o senaryonun gerçeklenmesinde kullanılan metodlardan biri olacağını buradan anlıyoruz.
+
+199
+00:58:03,987 --> 00:58:12,767
+İşlemin adı bölüm mutlaka olacak. Şaptans başvurular olmayabilir ama yoksa bile bu bölümü yazıp yanına çizgi çekmek de yoktur demek.
+
+200
+00:58:14,579 --> 00:58:30,980
+Gerekir. Ön koşullar ve son koşullar bölümünü yaranız bundan sonra. Ön koşullar yine bu kullanım senaryosunda olduğu gibi bu metodun anlamlı biçimde çalıştırılması için sistemin hangi durumda olması gerekiyor? Ondan bahsediyoruz.
+
+201
+00:58:30,980 --> 00:58:42,579
+Örneğin sürekli bir satış işleminin olması gerekiyormuş bu ürün girme tutunun çağrılması için. Bir satış, başlanmış bir satış yokken, diyelim ki bir...
+
+202
+00:58:42,579 --> 00:58:53,039
+Kasa nesnesinin Ringer metodu çağırdığında bu metot bir şey yapmadan direkt geri dönecektir gibi bir anlam çıkar burada.
+
+203
+00:58:53,715 --> 00:59:02,635
+Son koşullar bölümünde ise daha sistemin durumunu değiştirebilecek her türlü eylemin tanımlandığı kısımdır.
+
+204
+00:59:02,635 --> 00:59:21,355
+Bu kısım, öyle düşünebilirsiniz. Bu metodun tamamlanmasının ardından ne gibi yeni ilişkiler kurulmuş veya ne gibi ilişkiler değişmiş ya da kırılmış, bozulmuş, yenisi konulmuş gibi durumların anlatıldığı kısımdır son koşullar bölümü.
+
+205
+00:59:21,715 --> 00:59:27,655
+Ne yazıyor örneğin? İşte bir satış kalemi örneği olan satış kalemi nesnesi oluşturulmuştur.
+
+206
+00:59:28,175 --> 00:59:34,635
+Hatırlayın instance of derdik. Satış kalemi nesne sınıfından bir nesne olan satış kalemi.
+
+207
+00:59:37,523 --> 00:59:46,083
+Veyahut da işte küçük seyreden olan satış kalemi bir satış kaleminin sınıfı örneğidir. Yani instance of o şekilde diyor, katılmayın.
+
+208
+00:59:46,863 --> 01:00:02,103
+Peki sonra ne olmuş? Satış kalemi süregilen satış ile ilişkilendirilmiştir. Hatırlarsanız bir satış birden fazla, bir yarı daha fazla satış kalemi içeri çekti. O parçalık ilişkisinin kurulmuş olmasından bahsediyor örneğin. Çift yönlü olarak.
+
+209
+01:00:02,623 --> 01:00:15,723
+Üçüncü neymiş? Satış kaleminin miktar üyesine o malın satış adeti atanmıştır. Peki, dördüncü olarak satış kalemi satınanlar ile uğraşan barkos sayesinde bir ürün örneği ile ilişkilendirilmiştir.
+
+210
+01:00:16,159 --> 01:00:30,159
+Dedik. Satış kaleminden de ürüne birebir sahiplik söz konusu vardı. O da kurulmuştur anlamında da yazıyor. Yani bu Üringer metodunu, şimdi bu sözleşmeyi okuduktan sonra çok daha kolay kodlayabiliriz.
+
+211
+01:00:31,079 --> 01:00:44,159
+Veyahut da o metodu kodladığımızda burada yazılan bazı şeyleri atlamış olma olasılığımız sıfır. Çünkü işte burada yazıyoruz sözleşme. Ne yazmışız bu sözleşme? Uygun kod. Yazıyoruz. Bu nedenle böyle...
+
+212
+01:00:44,159 --> 01:01:12,159
+Yararlar var. Ama dediğim gibi epey bir çalışma da gerektirdiğinden bir sözleşme hazırlamak. Onu yaparak kadar kodda yazarım bile diyebilirsiniz. Ama tabii ki bunu yaparken mutlaka ayrıntılı yığama sınıf işlemini da gözden geçimi ve ilgili özellikle izlenebilirlik tablosu üzerinden bakıp ilgili kullanım senaryonunu da unutmamak.
+
+213
+01:01:12,159 --> 01:01:25,659
+Yapmak gereklidir. Yoksa şuradaki yapılanlar yapılacağını anlattığımız işlerden bir tanesini unutmak, atlamak işlem bile değil. Yapılabilir böyle. Hatta durum bu sözleşmelerle ilgili olarak.
+
+214
+01:01:28,884 --> 01:01:43,684
+Evet, sözle genelde söyledim ama atladığım bazı şeyler var mı? Ön koşullara tüm sistem hakkında bilgiler alabilir. Ama son koşullar sadece ilgili problem alanının nesnelerinin durum değişiklikleri hakkındadır.
+
+215
+01:01:43,684 --> 01:01:46,023
+İşte [öğrenci] olmaz dedik.
+
+216
+01:01:46,708 --> 01:01:59,867
+Ondan sonra edilgen geçmiş zaman kullanırsak bu metodun tamamlanmasının sonucunda gerçekleşmiş olan olaylar olduğunu bunların anlatmakta biraz daha yalan sağlamış oluyoruz.
+
+217
+01:01:59,867 --> 01:02:08,088
+Evet, ilişki kurulması kısımlarını atlamayı unutmayalım. Mutlaka yazalım.
+
+218
+01:02:14,708 --> 01:02:34,987
+Eksik düşündüğünüzü de keşfedebilirsiniz. Bu nedenle gidip alan tasarım modeline veya alan modeline geri dönüp bazı ilişkilerin yönlerini, türlerini, niceliklerinin değiştirmesi gerektiğini de keşfedebilirsiniz. Bu anlamda sözleşmelerin böyle bir yararı da olabiliyor.
+
+219
+01:02:34,987 --> 01:02:42,708
+Gerçi bu işlem yazılım, geliştirme, yaşam dönemüsünün herhangi bir adımda yapılan bilinir. Bir adımda verdiğiniz karar veya keşfettiğiniz...
+
+220
+01:02:42,708 --> 01:02:52,708
+Bir şeyler, önceki adımlar dönülüp başka şeylerin düzeltilmesini veya değiştirmesini gerektirebilir. En azar şey sözleşmeler için de geçerlidir.
+
+221
+01:02:56,820 --> 01:03:06,960
+Şimdi gelelim sıralım aşamalarına. Bunu nesneye yönelik programı modellerinde ayrıntılarak gördünüz. Ama bir hatırlatalım bu aşamalarını.
+
+222
+01:03:06,960 --> 01:03:15,720
+Şimdi sıralım aşaması nesnelerin metotlarının çağrılmasını gösteriyordu. Buna konstraktör metotlar da dahildi.
+
+223
+01:03:24,115 --> 01:03:27,056
+Sınıf bir türünden nesne bir olsun.
+
+224
+01:03:27,635 --> 01:03:38,256
+Bu durumda, işte nesnelerin dikdörtgen içerisinde, nesne adı 2.4'ü sınıf adı şeklinde yazılıp, altının mutlaka çizildiğini hatırlatırım.
+
+225
+01:03:38,936 --> 01:03:48,936
+Çünkü mesela diyelim ki, eğer, özellikle nesne 2 için konuşalım, nesnenin adından nesnenin türü belli ise, örneğin arabam.
+
+226
+01:03:48,936 --> 01:03:54,496
+Nedir? Araba sınıfı var bir nesne. O zaman belki sınıf adını yazmak zorunda kalmazsınız.
+
+227
+01:03:54,916 --> 01:03:55,635
+Yani yazmayabiliriz.
+
+228
+01:03:55,635 --> 01:04:08,356
+Sadece arabam yazarsınız. Ama bu sefer bunu 2-4-2-4 yazan arabam ne bu şimdi? Sınıfın nesne mi karışabilir? Karışmaması için burada nesne olduğunu gösteren alt çizgi önemli.
+
+229
+01:04:08,876 --> 01:04:21,115
+Veyahut da işte nesnin adı önemli değil ama türü önemlidir. Şu sınıftan bir nesne. O zaman iki nokta üst üste ve sınıf adı yazarsınız. Bunu da yine altına çizmek zorundasınız.
+
+230
+01:04:23,188 --> 01:04:30,328
+Ondan sonra şu gördüğünüz uzun dörtgenleri yaşam çizgisi deniliyor.
+
+231
+01:04:31,028 --> 01:04:35,968
+Veyahut da activation bar şeklinde geçiyor literatürde.
+
+232
+01:04:36,868 --> 01:04:44,208
+Activation bar demek o anda o nesnenin bir metodu çağırılmış çalışıyor anlamına gelmektedir.
+
+233
+01:04:45,148 --> 01:04:51,148
+İşte mesela örneğin bu nesnekinin ilk activation barına bir tane giren bir ok.
+
+234
+01:04:51,188 --> 01:04:56,368
+Ona doğru yönlenmiş bir ok var. Bu demek oluyor ki o nesnenin bir metodu çağrılıyor.
+
+235
+01:04:58,128 --> 01:05:04,048
+Şimdi aslında biliyorsunuz yani bir nesnenin bir public metodu varsa onu herkes çağırabilir. Her türden her nesne çağırabilir.
+
+236
+01:05:04,048 --> 01:05:12,508
+Ve aslında bir nesne kendisinin metot çağrısını gönderen nesnenin ne olduğunu bilmez.
+
+237
+01:05:12,916 --> 01:05:19,316
+Bilmek zorunda da değildir. Sadece kendine gelen çağrıları yanıtlamakla, public çağrıları yanıtlamakla yükümlülürüz.
+
+238
+01:05:19,316 --> 01:05:35,695
+Tabii ki mesela diyelim ki bu metodu çağıran nesne kendisini o nesneye tanıtmak istiyorsa, ya tanıtması yararlı olabilecekse, metot parametresi olarak çağıran nesnenin bir işaretçisi atanabilir isterseniz eğer.
+
+239
+01:05:36,056 --> 01:05:40,236
+Kodunuzu, tasarımınızı ona göre yapabilirsiniz. O zaman nesne, iki nesne biri bilecektir.
+
+240
+01:05:40,916 --> 01:05:45,896
+Genelde bilmek zorunda değildir. Hatırlayın geçen sene ki derslerimizden.
+
+241
+01:05:46,324 --> 01:06:09,884
+Bu metot çağrısının tamamlandığı an ise kesikli çizgilerle gösterilir metot geri dönüşü. Eğer geri döndüren belli bir değer varsa veya belli bir hesaplama sonucu geri döndürülüyorsa isterseniz bu geri dönüş okulun üzerine de koyacağınız bir etiketle oraya da bir iki satır bir şeyler, bir iki kelime bir şeyler yazabilirsiniz.
+
+242
+01:06:14,324 --> 01:06:42,264
+Eğer bu metodu çağıran kod içerisinde bir yerlere atanıyorsa, o zaman o bir yerleri değişken gibi burada.
+
+243
+01:06:42,324 --> 01:06:43,023
+İfade ettim.
+
+244
+01:06:44,223 --> 01:06:46,103
+Deyip eşitir koyabilirsiniz.
+
+245
+01:06:46,483 --> 01:06:50,723
+Ama da Pascal gösterim gibi iki nokta üstü eşitir yazmışız ama orasına çok takmıyoruz.
+
+246
+01:06:51,143 --> 01:06:52,463
+Eşitir yazabilirsiniz.
+
+247
+01:06:52,923 --> 01:06:54,503
+Artık orası noktada takmıyoruz.
+
+248
+01:06:55,092 --> 01:07:08,192
+Durum bu. Peki bir nesnenin kendi kendisinin bir metodunu çağırması nasıl gösteriliyor? O da şurada gördüğünüz gibi gösteriliyor. Activation bar'ın içerisinde bir kat daha Activation bar çiziyoruz.
+
+249
+01:07:08,192 --> 01:07:22,792
+Ve ilk Activation bar'da yeni Activation bar'a yine metod çağırma okunu çiziyoruz. Üstüne de bu okun üstüne de işte metod çağırma neyse şurada yukarıda olan formatta yazıyoruz.
+
+250
+01:07:23,092 --> 01:07:36,711
+Durum bu. Peki, döngüleri nasıl gösteriyoruz? Döngüleri de yıldız ile gösteriyoruz. Eğer bir while döngüsü söz konusuysa, işte yıldız koyup köşke parantezi içerisinde o while'in koşulunu yazabiliriz.
+
+251
+01:07:40,052 --> 01:07:53,892
+Veyahut da bir wilde'de sabit bir for döngüsü söz konusuysa, o zaman koşulu bağla olmadan tekrarlanma demektir. Sadece yıldız koyup metot çağrımızın adını yazabiliriz. Durum bu.
+
+252
+01:07:54,516 --> 01:08:07,936
+Bunu hatırlarsınız. Bir tek şey gösterebilirim size. Bir alternatif göstereyim. Onu Nesne'ye programlama da gösterdiğimi göstermediğimi hatırlamıyorum şimdi.
+
+253
+01:08:09,876 --> 01:08:22,156
+Şimdi yapacağım şey şu. Şimdi diyelim ki bu aynı if koşuluna bağlı veyahut da aynı for döngüsüne bağlı çok sayıda metot çağrımı söz konusuysa birden farsın. 2, 3, 4, 5 her neyse.
+
+254
+01:08:22,156 --> 01:08:36,043
+Hepsinin başına bu köşeli parantezi açıp da veya işte bu döngüyü seriçin başına yıldızı koyup da hepsinin içerisinde bu koşulu tekrar tekrar yazmaktansa şöyle bir şey yapabiliyorsunuz.
+
+255
+01:08:36,212 --> 01:08:37,952
+Şimdi koşul kısmını siliyorum.
+
+256
+01:08:38,252 --> 01:08:39,972
+Üstünü biraz karaladım.
+
+257
+01:08:40,912 --> 01:08:47,912
+O koşula bağlı olarak gönderilen ama tabii bunların birbirini izlemesi lazım, ardışıl olması lazım.
+
+258
+01:08:47,912 --> 01:08:53,912
+O koşulu sağlayan bütün metotların etrafına bir tane likdörtgen çiziyorsunuz.
+
+259
+01:08:56,083 --> 01:09:14,163
+O dikdörtgenin tercih an sol köşesine, ama yeriniz yoksa sağ filan da olabilir, sol üst köşesine bu koşulu buraya yazıyorsunuz işte, köşe partisi içerisinde. O koşul ne ise olacaksa, sadece KŞ yazayım, o kadar yazamayacağım sonunda.
+
+260
+01:09:14,163 --> 01:09:24,083
+O koşulu böyle yazdığınızda bu dikdörtgenin kapladığı bütün alandaki metot çağrıları o koşul doğru ise gerçekleşecek.
+
+261
+01:09:24,083 --> 01:09:40,003
+Bu gösterin, bu gösterin, tamam mı? Bu sizi neden kurtarıyor? Burada yer alan bütün giden okların başına aynı koşul ifadesini yazmaktan kurtarıyor.
+
+262
+01:09:41,908 --> 01:09:59,988
+Siz bilirsiniz, nasıl isterseniz yapabilirsiniz. Violet UML maalesef bu gösterimi desteklemiyor. Eğer Violet UML ile çiziyorsanız mutlaka her birinin başına o koşulu yazmanız gerekiyor. Ama şöyle de yapabilirsiniz. Bu şamayı çizerken bu gösterimi kullanmayı istiyorsanız.
+
+263
+01:10:00,051 --> 01:10:18,891
+Öncelikle bu gösterimi kullanmadan, şeylerinizi, sequence taklımınızı çizin. Ondan sonra onu bir resim dosyası olarak kaydettiğinizde, resim dosyasını bir resim editörüyle açıp, şu an çizdiğim gibi bu koşul alanını çizip, kenarına da koşulun içerisini yazabilirsiniz.
+
+264
+01:10:19,551 --> 01:10:26,391
+Yani, böyle bir ek bir çaba ile yine bu gösterimi kullanabilirsiniz proje ödeninizde.
+
+265
+01:10:28,724 --> 01:10:29,963
+Şimdi sileyim bunları.
+
+266
+01:10:33,652 --> 01:10:54,551
+Durum bu. Bu arada şunu da hatırlatayım. Mesela şimdi bu nesne 2'ye gelen ok, üstünde de bir metot yazdığına göre bu bir metot nesne 2'nin metodu. Yani o metodun imzası sınıf 2'nin içerisinde yer almak zorunda. Sınıf şamasına baktığımda sınıf 2'de bu bir metodu görebilmeliyim.
+
+267
+01:10:54,899 --> 01:11:12,699
+Bu bir metot var ama sınıf 2'de o metot gözükmüyor. Veyahut da tam tersi. Bu bir metot sınıf 2'de değil de başka bir sınıfta gözüküyor ise o zaman böyle çizdiğiniz okun üstüne yazdığınız bir metot bu işi anlamadığınızı gösterir. Önemli bir hatadır, kritik bir hatadır bu mesela.
+
+268
+01:11:13,492 --> 01:11:33,231
+Bir de yine hatırlatayım. Diyelim ki bu nesne 2'nin de diyelim ki bu bir metodu kendi içerisinde bir başka metot çağrımlarına da yol açıyorsa eğer o zaman onların çağrımlarını da şunun içerisinde yer almak kaydıyla.
+
+269
+01:11:35,923 --> 01:11:55,324
+O da bir metot çağrısına sebep oldu. Ondan sonra o metot çağrısı da geri döndü. Bakın, şimdi dikkat ederseniz şu dışarıdaki ok çiftinin, gidiş dönüş oklarının içerisinde yer alan bir başka gidiş dönüş okları daha var.
+
+270
+01:11:55,324 --> 01:12:03,923
+Bu da demek oluyor ki bu nesne 2'nin bir metodunun içerisinde başka metot çağrımları da var. Başka nesneler ve başka...
+
+271
+01:12:03,923 --> 01:12:26,923
+metotları çağrılıyor. Bunu çizerken bu sıralama aşamalarında aşağı doğru inildikçe, Y ekserinde aşağı doğru inildikçe zamanda da ileri gidiliyor anlamını taşımaktadır. Bu nedenle ben şimdi burada şunu gördüğümde bu birinci çiftinin, giriş yönüşün içerisinde yer alıyor bu ikinci şu an yeşille çizdiğim çift. O zaman...
+
+272
+01:12:28,207 --> 01:12:36,528
+İşte Y ekseninde içerilmesi nedeniyle ben kodda da bunun onun içinde yer aldığını anlamış oluyorum.
+
+273
+01:12:36,863 --> 01:12:48,083
+O yüzden burada şu an yer olmadığı için daha sıkışık oldu ama işte bu iki ok içerisinde Y ekseninde düşeyde belli bir mesafe bırakmayı unutmayın.
+
+274
+01:12:48,083 --> 01:12:56,843
+Keza bu geri dönüş okların arasında da yine Y ekseni içerisinde belli bir mesafe bırakmayı unutmayın.
+
+275
+01:13:04,863 --> 01:13:24,543
+Resne 2'de çağrılacak bu şekilde normalde gösterdiğim bir yeşil. Ama siz onu tutup mesela bu okla aynı hizaya hatta daha da kötüsü daha bile yukarıya çizme durumlarına gitmeyin lütfen. Bu zamanda geriye gitmek gibi oluyor. Olmaz öyle bir şey. Bu nedenle buna dikkat edin.
+
+276
+01:13:24,543 --> 01:13:32,863
+Eğer tool kullanırsanız tabii ki o sizin böyle bir şey yapmanıza izin vermeyecektir elbette. Ama elle çiziyor.
+
+277
+01:13:32,863 --> 01:13:44,003
+Veya işte UML tool ile değil de genel bir çizim aracı kullanarak çizim yapıyorsanız bu hataya da düşmemeye dikkat etmelisiniz diyorum.
+
+278
+01:13:46,243 --> 01:13:49,663
+Evet, sonuçta arkadaşım varsa buyursun lütfen.
+
+279
+01:13:59,444 --> 01:14:07,024
+Peki, o zaman temizliyorum şu çizimleri ve devam ediyorum. Zaten bildiğiniz bir şey olduğu için soru olmayabilir.
+
+280
+01:14:07,944 --> 01:14:22,644
+Şimdi gelelim etkinlik şamalarına arkadaşlar. Etkinlik şamaları, denetim akışını veya program akışını gerçekleşen olaylar üzerinden göstermeye yarayan yalarlı bir şama türü.
+
+281
+01:14:23,283 --> 01:14:41,644
+Bu aynı zamanda multi-threaded olarak yapılan işlemler varsa onları da gösterebiliyor. Bu nedenle avantaj taşıyor. Bir önceki sequence diagramlarda multi-threading'i gösteremiyorduk. O tek bir kanaldan akışı gösteren şemalardı.
+
+282
+01:14:41,644 --> 01:14:51,163
+Fakat etkinlik şemalarında, activity diagramlarda paralel yürüyen işleri rahatlıkla gösterebiliyoruz. Ona yönelik birleşenleri var.
+
+283
+01:14:51,283 --> 01:15:15,543
+Bu şamanın. İki kurallarını rahatlıkla gösterebiliyoruz. Hangi etkinliği, hangi aktörün yaptığını çok rahatlıkla gösterebiliyoruz. Karar verme dallanmayı gösterebiliyoruz. Döngü söz konusuysa onu da yine karar verme altı oklar şeklinde rahatlıkla gösterebiliyoruz. Ve konu alanı uzmanlığında anlayabileceği bir şama türüdür.
+
+284
+01:15:16,115 --> 01:15:38,836
+Şimdi bir örnek üstünden anlatmak istiyorum. Bu arada şemanın bileşenlerini de anlatmış olayım. Bundan sonraki örneklerim, bu ve bundan sonraki örneklerim, bir hava alanı, bir hava yolu firmasının bilgi sistemi açısından düşündüğümüzdeki çeşitli örnekler olacak.
+
+285
+01:15:44,115 --> 01:15:48,796
+gerçekleneceğini, nasıl yürümesi gerektiğini anlatan bir şamadır.
+
+286
+01:15:50,131 --> 01:16:06,091
+Şimdi bir etkinlik şarası genelde bu içi dolu yuvarlak işareti ile başlar. Etkinliğin başlangıcını bu gösterir. Etkinlikte yürütülen eylemler ise kenarları hafif yuvarlatılmış dörtgenler içerisinde yazılır.
+
+287
+01:16:06,091 --> 01:16:15,091
+Ve başlangıçtan itibaren eylemlere her geçiş bu denetim akışı oku ile gösterilir.
+
+288
+01:16:16,032 --> 01:16:30,971
+Bazı durumlarda eğer bu etkinlik şeması belirli bir olayın başlangıcı ve sürüşünü ifade ediyorsa o zaman şu olay kabul etme ya da sinyal alma bileşeni ile de başlayabilir şemamız.
+
+289
+01:16:31,432 --> 01:16:38,752
+Yani buradaki örnek şema öyle başlamış. Biraz bayrağa benziyor bu şekil, bu eleman.
+
+290
+01:16:38,752 --> 01:16:44,032
+Yani direkt bu şekilde başlayabileceği gibi alternatif olarak şöyle de başlayabiliriz.
+
+291
+01:16:44,032 --> 01:16:49,792
+Başlayabilirdik. Hadi şimdi bir Valdut'u yaman açayım da onun üstünden söyleyeyim daha iyi olacak.
+
+292
+01:16:57,876 --> 01:17:17,376
+Şimdi bir tane activity diagram. Şöyle de yapabilirdim ben. Gerçi işte şu, yani hepsi olabilir. Burada yolcunun çekim bankosuna gelmesini bir etkinlik gibi de değerlendirebilirsiniz. İsterseniz. Şöyle de olabilirdi.
+
+293
+01:17:26,068 --> 01:17:27,068
+Şöyle mesela.
+
+294
+01:17:30,427 --> 01:17:31,688
+Böyle yapabilirdiniz.
+
+295
+01:17:32,168 --> 01:17:34,347
+Mesela böyle de olabiliriz.
+
+296
+01:17:34,427 --> 01:17:35,968
+Böyle de başlayabilirdik şama.
+
+297
+01:17:36,528 --> 01:17:38,968
+Veya şöyle de başlasaydı da olabilirdi.
+
+298
+01:17:44,659 --> 01:17:45,639
+İçiliğine aynı.
+
+299
+01:17:52,275 --> 01:17:56,376
+Ama işte nihayetinde, bunu biraz şimdi şey edeyim.
+
+300
+01:18:04,180 --> 01:18:19,300
+Peki, yani böyle de olabilirdi, böyle de olabilirdi. Ama işte eğer direkt bir akış, bir olay kabul etme simgesiyle başlıyorsa, işaretiyle başlıyorsa, o zaman şurada ders notunda olduğu gibi çok rahat da gösterebilirsiniz.
+
+301
+01:18:23,667 --> 01:18:29,847
+Peki, yolcu çekim maksosuna geldi. Sonra ne oluyor? Oku izliyorum. Yolcu çekim yapıyor.
+
+302
+01:18:30,868 --> 01:18:57,808
+Ondan sonra karar verme durumumuz söz konusu olabilir. Bir if koşulu. Burada elmas kullanıyoruz. Elmasın çıkan, yani şimdi dört tane kenarı var ya ve dört tane köşesi var ya, ilk köşeyi işte denetim akışının girişi için harcadık. Geriye kaldı. Üç tane köşe. Bu üç köşeyi isterseniz üçünde kullanabilirsiniz.
+
+303
+01:18:58,868 --> 01:19:00,948
+İkişerli kullanabilirsiniz.
+
+304
+01:19:01,208 --> 01:19:02,248
+Burada gördüğünüz gibi.
+
+305
+01:19:02,739 --> 01:19:26,680
+Bu elmastan karar vermeden çıkan bütün okların üstünde bir koşul yazmalı köşeli parantez içerisinde. Çünkü bu bir if koşulu. If koşulu doğruysa, çekim başarılı olmuşsa akış devam edecek. Else aksi takdirde bu senaryo artık bitecek şeklinde bitiş etkinlik sonu simgesine gitmiş akış.
+
+306
+01:19:27,060 --> 01:19:50,800
+Peki, çekim başarıysa ne oluyor? O zaman buradaki örnekte artık paralel olarak yürüyen iki tane işlem görüyorsunuz. Bu biraz kalın olan çubuk, senkronizasyon eşgülüm anlamına gelir. Eğer bu çubuğa giren bir ok çıkan da bizden fazla ok varsa bu senkronizasyonun, paralel çalışmanın başlangıcı.
+
+307
+01:19:51,667 --> 01:20:02,567
+Eğer kalın çubuğa birkaç, iki ya da daha fazla ok girip tek bir ok çıkıyorsa, o da paralel yürümlü çalışmanın sonu anlamına gelmektedir.
+
+308
+01:20:03,188 --> 01:20:14,987
+Ve şuradaki ilk paralel çalışmanın başlangıç noktasında, son noktasına gelinebilmesi için paralelde yürütülen bütün eylemlerin bitmesi gerekmektedir.
+
+309
+01:20:15,796 --> 01:20:33,016
+Örneğin, çekim başarıysa yolcu uçağa binmek için yola koyuluyor. Öte yandan onun bagajları da konveyor bantlar üzerinden uçağa yükleniyor bir yandan. Bütün yolcular uçağa binmeden ve bütün bagajlar uçağa yüklenmeden,
+
+310
+01:20:33,716 --> 01:20:50,615
+Uçak piste yönelemeyecek haliyle. O yüzden buradaki eşgüdüm blocking diye geçen, bütün paralel çalışan işlemlerin süreçlerinin tamamlanmış, bitmiş olmasını gerektirir. O anlamda.
+
+311
+01:20:51,091 --> 01:21:17,231
+Ve nihayetinde uçak bir sitelerine bitip etkinlik artık bitmiş bu aşamada. Daha doğrusu bu kullanım senaryosunun kapsadığı alan bitmiş. Ondan sonra başka şeyler de olabilir. Elbette de bu etkinlik işlemesi bu check-in senaryosunun gösterimi olduğundan onun için artık bu etkinlik bitti şeklinde söyleyebilirim.
+
+312
+01:21:18,355 --> 01:21:24,935
+Gördüğünüz gibi şu şemaya bir baktığımda ne yapıldığını daha tıklı anlayabilirsiniz.
+
+313
+01:21:26,068 --> 01:21:50,488
+Bunun için illaki çok istedik programcı veya yazılımcı olmaya gerek yok. Sadece temel olarak şu şekillerin anlamının ne olduğunu bilmek yeter. Hayatında bir şekilde bir akış yamasıyla uğraşmış bu iki kişi. Bunun zaten en hızlı bir karar verme koşulu olduğunda zaten farkındadır. Diğerlerinin de anlamını şeyden bile şemadan bile çıkarabilecek durumda oluyor.
+
+314
+01:21:51,060 --> 01:22:01,300
+Bu nedenle bu etkinlik şamaları kullanım sürenç ürün metinlerinde neyin hangi sırada yürütüldüğünü göstermek için yalanlı bir şama biçimidir.
+
+315
+01:22:04,692 --> 01:22:08,832
+Evet, şey söyledik, bu Edge bölümün çalışmayı söyledik.
+
+316
+01:22:09,231 --> 01:22:18,471
+Hani eğer, hani C terminolojisinde düşünürseniz eğer, şimdi bu senkronizasyon çubuğuna bir giriş, birden fazla çıkış, fork komutuna denk geliyor.
+
+317
+01:22:18,992 --> 01:22:23,252
+Birden fazla giriş, bir çıkış varsa da join komutuna denk geliyor.
+
+318
+01:22:23,252 --> 01:22:28,131
+Burası paralel çalışmanın başlangıcı, burası paralel çalışmanın bitişi.
+
+319
+01:22:28,352 --> 01:22:32,192
+Ve paralel çalışan bütün süreçlerin tamamlanması gerekmektedir.
+
+320
+01:22:32,543 --> 01:22:35,083
+Tek bir akıştan devam edilebilmesi için.
+
+321
+01:22:37,300 --> 01:22:57,460
+Ve bu şey, şu sinyal alma, olay kabul etme, bileşeni aynı zamanda bir belirli bir timer, timer süresinde gerçekleşme ilişkisi için belli bir timer kurulması ve timer'ın dolması olayını da bu bileşen ile gösterebiliyoruz.
+
+322
+01:22:58,079 --> 01:23:05,300
+Eğer bir sinyal göndermi, sinyal alma veya olay kabul etme söz konusuysa o olayı gönderen birisi de olabilir başka bir problem.
+
+323
+01:23:05,300 --> 01:23:22,520
+Başka bir aktör, başka bir süreç. O da şurada gördüğünüz şekilde ifade ediliyor. Bunun ikisinin şekillerinin bu şekilde olmasının anlamı şu, bu ikisi bir araya geldiğinde tam bir dikdörtgen ediyorlar. Bakalım şuradan gösterebilecek miyim?
+
+324
+01:23:23,956 --> 01:23:42,515
+Gerçek bu tarafa bakıyor. Bunu çeviremiyorum ama. Şimdi bunu 180 derece sola çevirdiğimde ve şu yorcu çekim bankosu da gelire birleştirdiğimde aslında bunlar bir dikdörtgen olmuş olacaklar. Şöyle çizeyim onu bari. Şöyle anlatıya şey yapayım.
+
+325
+01:23:45,315 --> 01:23:48,515
+Onun da şeklinin şöyle olduğunu düşünürseniz.
+
+326
+01:23:51,028 --> 01:23:56,307
+Şimdi bu ikisi birleştiğinde tam bir dikdörtgen oluyorlar. O şekilde düşünülmüş.
+
+327
+01:23:57,688 --> 01:23:59,108
+Ha, clear demeyi unuttum.
+
+328
+01:24:04,404 --> 01:24:05,196
+Töneşe kalan.
+
+329
+01:24:11,891 --> 01:24:28,712
+Şimdi az önceki Şemam'da hangi aktörün hangi işi yaptığı etkinliğin içerisine yazıyordu. Örneğin yolcu çekim bankasına geliriz veya öte yandan geri dönersem yolcu çekim yapar, yolcu uçağa biner, bagaj uçağa yüklenir.
+
+330
+01:24:28,712 --> 01:24:36,132
+Şimdi burada edilgen geçiyor ama nedir? Bagajlar diğer hizmetleri tarafından uçağa yüklenir deseydik. Belki daha doğru.
+
+331
+01:24:37,076 --> 01:24:49,836
+Bu şekilde her bir etkinliği hangi aktörün yürüttüğünün yazılması belki yorucu olabilir veyahut da sıkıcı olabilir veya takip edilmesi zor olabilir.
+
+332
+01:24:49,836 --> 01:25:00,336
+Çünkü her bir kutuya bakıp hangi kutudaki işleri kim yapmış, hangi aktör yapmış anlamak, görselleştirmek ve içselleştirmek biraz zor olabilir.
+
+333
+01:25:03,231 --> 01:25:19,231
+Streamlaneler hazırlayabiliyorsunuz. Yüzme havuzu kulvarı. Hatırlarsanız, olimpik yüzme havuzlarında yüzme yarışı yapıldığı zaman her yüzü kendi kulvarında yüzüyor. Kocaman bir havuz içerisinde çeşitli kulvarlar.
+
+334
+01:25:19,231 --> 01:25:29,631
+Kulvarlar şeklinde düşünebilirsiniz. Örneğin bir üçüncü aktör olsaydı, bu durumda üçüncü kulvarı koyacaktım. Üçüncü kulvar.
+
+335
+01:25:31,475 --> 01:25:51,735
+Ondan sonra buraya da o kimse, o aktör yazılırdı işte. Ondan sonra eğer onun da yaptığı bazı şeyler olsaydı eğer işte mesela onu da bir şeyler yapıp ben ne bileyim daha sonra şuraya dönüş olabilirdi gibi.
+
+336
+01:25:52,500 --> 01:26:14,079
+Şimdi buradaki aktiviteler çizerken biraz daha kolaya kaçmışım. Aslında bunlar da bir aktivite. Kemerleri hafif yuvarlatılmış dikdörtgenden. Kemerleri sanki tam yuvarlakmış gibi olana kadar değişik şekiller kullanılabiliyor ama ikisi de aynı bunların hepsi.
+
+337
+01:26:14,515 --> 01:26:33,935
+Biraz etkinlik arkadaşlar, başka bir şey değil. Daha bunlar ders notlarını oluştururken, Valizc'e M'lerden daha haberim yoktu falan. O yüzden başka çizme araçları çizmiştim. Sonra da güncellemi hibal ettim biraz. O yüzden şekillerde çok ufak farklılıklar var. Sebebi odur.
+
+338
+01:26:37,203 --> 01:27:05,203
+Şimdi bu stream neyinleri maalesef VL2ML de desteklemiyor gerçi. Ama siz sanki stream neyinler varmış gibi VL2ML'de etkinlikleri hizalar, daha sonra bu VL2ML'de çizdiğiniz şekli bir PNG dosyasına eksport eder ve daha sonra başka bir çizim programında bu PNG dosyasını açarsanız, kulvarları dikdörtgenler şeklinde istediğiniz gibi çizip üst dikdörtgenleri de aktör isimler.
+
+339
+01:27:05,203 --> 01:27:08,264
+İstediğiniz için çok rahatlıkla tekst şeklinde yazabilirsiniz.
+
+340
+01:27:08,724 --> 01:27:09,423
+Eğer isterseniz.
+
+341
+01:27:09,983 --> 01:27:15,323
+Veyahut da işte dediğim gibi streamline'i kullanmak şart da değil, %100 bir zorunluluk da değil.
+
+342
+01:27:15,783 --> 01:27:21,083
+Sadece her etkinliğin içerisine hangi aktör tarafından yapıldığımı yazmanız yeterli olacaktır.
+
+343
+01:27:21,083 --> 01:27:27,143
+Ama tabii ki streamline'in belli bir görsel anlama kolaylığı avantajı sağlıyor size.
+
+344
+01:27:27,923 --> 01:27:38,863
+Öte yandan, şurada yeni bir şey daha söylemek istiyorum. Örneğin, yer hizmetleri yolcu listesini gönderiyor. Bu yolcu listesini kabul eden ise müşteri hizmetleridir.
+
+345
+01:27:46,036 --> 01:27:55,996
+Kayıt olduğu için bu durumda normal bir okulun üstüne köşeli parantez içerisinde yazılan şey bu anlama gelmektedir.
+
+346
+01:27:56,336 --> 01:28:24,315
+Yer hizmetleri, müşteri hizmetlerinin yolcu listesini gönderiyor. O yolcu listesi, Dentim Akışı ile birlikte aktarılıyor şeklinde düşünebilirsiniz. Onu da köşeli parantez içerisinde yazıyor. Burada bu if koşulu söz konusu değil. If söz konusu olsaydı bu ok bir elmastan çıkıyor olmalıydı. Ok elmastan çıkmıyorsa, iki etkinlik arasında giderken bir köşeli parantez içinde bir şey yazılıyorsa.
+
+347
+01:28:24,336 --> 01:28:34,936
+O iki etkinlik arasında bir etkinlikten diğerine aktarılan bir bilgi, bir rapor, bir sorgu sonucu vs. bir şeyler vardır anlamına gelmektedir.
+
+348
+01:28:35,347 --> 01:28:45,507
+Şey gibi yapabiliriz mesela, siz staj evrakları için ilk birkaç formu hazırlıyorsunuz ve bölüm sekre tarihine teslim ediyorsunuz.
+
+349
+01:28:45,967 --> 01:29:02,568
+İşte bir tarafta siz staj evrakları form 1-2-3 hazırlanır, ondan sonra sekreterlik form 1-2-3 alır ve onaylar kısmında işte burada sizden bölüm sekre tarihine giden o okta staj evrakları yazar.
+
+350
+01:29:03,347 --> 01:29:06,448
+test içerisinde gibi vermek verebilir.
+
+351
+01:29:08,047 --> 01:29:08,967
+Evet.
+
+352
+01:29:10,887 --> 01:29:11,927
+Kuralları bunlar.
+
+353
+01:29:12,887 --> 01:29:16,368
+Etkinlik şamalarının kuralları bunlar.
+
+354
+01:29:17,028 --> 01:29:17,908
+Birleşenleri bunlar.
+
+355
+01:29:18,528 --> 01:29:20,568
+Soru soran arkadaşım varsa lütfen duyuruz.
+
+356
+01:29:35,028 --> 01:29:37,228
+O zaman ilerleyebilirim herhalde.
+
+357
+01:29:38,388 --> 01:29:39,828
+Ha, şey gösterecektim.
+
+358
+01:29:40,668 --> 01:29:51,528
+Şu elmasın birkaç bacağı olduğu için, yani elmastan çıkabilecek, ikiden fazla aslında, üçüncü bacak da çıkabilir, üçüncü ok da çıkabilir.
+
+359
+01:29:51,528 --> 01:29:56,868
+Şimdi mesela, if, else, if, else gibi bir şeyi çizerken,
+
+360
+01:29:57,928 --> 01:29:59,548
+Şöyle üç tane aktivite koyalım.
+
+361
+01:30:01,300 --> 01:30:03,859
+Bir tane şey koyalım, istersen fark etmez.
+
+362
+01:30:07,667 --> 01:30:14,007
+Şimdi mesela buradan bir tane, buradan bir tane, buradan da bir tane çizebiliyorsunuz eğer isterseniz.
+
+363
+01:30:17,007 --> 01:30:21,448
+Mesela diyelim ki, nedir?
+
+364
+01:30:22,292 --> 01:30:35,452
+Şu an şu yeni, hep hayatımızda olan, şu an kuralları da biraz değişen, şu sokağa çıkma yasakları içerisinde, 18 yaşından küçük olanlar, bir de 65 yaşından büyük olanlar durumu vardı.
+
+365
+01:30:35,452 --> 01:30:46,672
+Mesela diyelim ki, şu oka diyelim ki mesela, diyelim ki, koşul, yaş küçüktür, 18.
+
+366
+01:30:49,203 --> 01:31:14,884
+A küçüktür ifadesini yazmadı. Neden? Ş olarak anladı. Tek olarak anladı. Yaş 0, şöyle diyelim. Yaş 0, 18 arası ise diyelim ki 0, 17 diyelim. Yani 18 yaşından küçük. 0'dan 17'ye kadar.
+
+367
+01:31:16,851 --> 01:31:39,911
+İşte şöyle yapılacak. Yok eğer işte yaş işte ne diz? 18 ile 60 yaşından büyük dediğimiz için 60 dahil olacak. 60'a kadar ya da 59 dahil arasında ise.
+
+368
+01:31:43,091 --> 01:31:52,631
+Karanfektir, yaş 60 destek mesela.
+
+369
+01:31:53,971 --> 01:32:18,372
+İşte size üç seçenekli bir akış örneği. Bu durumda toplu taşıma kullanamaz. Ama şu saatler arasında çıkar, bu saatler arasında çıkar, her zaman çıkar gibisinden çeşitli kuralları yazdık diyelim ki. Daha sonra bunlar da bir başka şeydi. Nihayetinde bir araya gelecek, birleşecek, birleşmek durumunda.
+
+370
+01:32:23,252 --> 01:32:32,731
+Şimdi bunu böyle yapabileceğiniz gibi şöyle de yapabilirsiniz. Şunları sileyim artık.
+
+371
+01:32:40,020 --> 01:32:44,060
+Şimdi, diyelim ki, işte,
+
+372
+01:32:46,460 --> 01:32:50,300
+bir dakika şunu da çizeyim.
+
+373
+01:32:51,880 --> 01:32:55,880
+Şimdi, diyelim ki, yaş 0-17 arasında mı?
+
+374
+01:32:56,800 --> 01:32:58,020
+Şunu koyayım, kopyalayayım.
+
+375
+01:33:01,363 --> 01:33:25,423
+Yaş 0-17 arasında ise, şöyle bir şey yazayım mı? A, B, C diyeyim mi şuna? Neyinin olduğunu daha rahat anlarız. Şuraya A etkinliği yapılırız. Şuraya işte B etkinliği yapılırız. Daha sonra şuraya da C etkinliği yapılırız. Yaş 0-17 arasında ise A etkinliği yapılırız. Aksi takdirde bir tane daha kararlar çiziyorum.
+
+376
+01:33:29,395 --> 01:33:41,735
+Çok güzel olmadı. Şöyle yapayım. Buraya da else düğüm mesela. Sonra da 1859 arasında mı?
+
+377
+01:33:53,524 --> 01:33:55,864
+O zaman B için yapılıyor.
+
+378
+01:33:57,484 --> 01:33:59,524
+Else, alt başı ve üstü anlamına gelmektedir.
+
+379
+01:34:02,384 --> 01:34:03,524
+Burada eşit olsun.
+
+380
+01:34:05,184 --> 01:34:08,024
+Fazla uzaklaştırmışım, azıcık yakınlaştırmışım.
+
+381
+01:34:10,724 --> 01:34:15,364
+Else durumunda da şöyle diyebiliriz mesela.
+
+382
+01:34:16,684 --> 01:34:17,944
+Else de yasak olur.
+
+383
+01:34:18,644 --> 01:34:40,304
+Altmış ve üstü de yazsak olur. Hatta belki daha iyi anlamak açısından öyle de yazabiliyoruz. Fark etmez. Ondan sonra bunlar sıradaki etkinliğe varmak üzere birleşirler. Böyle de yapabilirsiniz arkadaşlar.
+
+384
+01:34:40,815 --> 01:34:55,355
+Eğer kullandığınız gereç şu şekilde ikiden fazla yani üçüncü çıkış okuna izin veriyorsa böyle yapabilirsiniz. Ama dördüncü, beşinci elslah söz konusu olacaksa o zaman tabii ki hepsini burada sağda gördüğünüz gibi.
+
+385
+01:34:56,979 --> 01:35:12,179
+Birden fazla sayıda elmas ile çizmeniz gerekmekte. Ama eğer geleceğiniz sadece en fazla iki çıkış okunak izin veriyorsa, o zaman da mecbur hep bu sağdaki gibi yapmak zorunda kalırsınız diyeyim.
+
+386
+01:35:14,059 --> 01:35:14,319
+Evet.
+
+387
+01:35:17,379 --> 01:35:18,139
+Peki.
+
+388
+01:35:18,859 --> 01:35:19,979
+Soru yoksa devam edeceğim.
+
+389
+01:35:23,315 --> 01:35:26,496
+Çok rahatlıkla statikli anlamda konuşuruz.
+
+390
+01:35:34,323 --> 01:35:38,463
+State diagram, durum diagramları.
+
+391
+01:35:40,083 --> 01:35:52,644
+Şimdi durum diagramları arkadaşlar, bir varlığın içinde bulunabileceği durumları ve bu durumların birinden diğerine geçiş yapma kurallarını anlatmaya yarayan bir şema çeşidinizdir.
+
+392
+01:35:54,243 --> 01:35:56,604
+Şimdi burada adım adım gitmek istiyorum.
+
+393
+01:35:58,163 --> 01:36:25,904
+Şey değişmeyecek, yani işeğimizin birleşenleri değişmeyecek. İşeğimizin top topu dört tane farklı birleşeni var. Yine başlangıç ve bitiş simgeleri aynı etkinlik şamalarıyla. Başlangıç içi dolu siyah ok, bitiş. Şöyle hedef tahtası gibi arkadaşlar. Amacımız da hedefe ulaşmak ya, hedefe ulaşarak bitirmek. O sayede bu iki şekli birbiriyle karıştırmamış olursunuz.
+
+394
+01:36:26,163 --> 01:36:45,864
+Hoş mali tüyamayla etikette yazıyor start entry ama mali tüyamayla kullanmıyorsanız karıştırmamak için bunu kullanabilirsiniz. Bitiş simgesi hedefe benziyor. O şekilde aklınızda kalabilir. Durumlar yine kenarları yuvarlatılmış dikdörtgenler ve durumlar arası geçiş ise
+
+395
+01:36:46,515 --> 01:37:14,235
+Düz çizgi ve ucu açık ok ile gösteriliyor. Aslında bunların her biri birer olaydır arkadaşlar. Bir durum geçişi aynı zamanda eşitli bir olay şeklinde de ifade edebiliriz. Olay geçişlerini yazarken de UML stereotype karakteri içerisinde, stereotype'ınız yoksa iki büyüktür içerisinde, büyük harfle M yazaraktan başlıyorsunuz. Bu M, mutehtin M'sidir.
+
+396
+01:37:14,515 --> 01:37:21,715
+Mutate yani mutasyon geçirme yani bir değişikliğe uğrama anlamındadır.
+
+397
+01:37:22,555 --> 01:37:31,855
+Neden M ile başladığını ve sonuna da bir tane slash koyduğumuzu bir sonraki yansıda belli olacak söyleyeceğim.
+
+398
+01:37:33,055 --> 01:37:35,995
+Şimdi şu şemayı nasıl okuyoruz bir onu görelim.
+
+399
+01:37:36,435 --> 01:37:50,015
+Bizim durum diyarlarımız başlıyor. Şu an hiçbir şey yok. İlk olay gerçekleştirilmesinde, ki bu şema bir yolcu uçağının yaşam döngüsünü simgelemekte.
+
+400
+01:37:50,515 --> 01:37:54,615
+Onun içinde bulunabileceği durumları simgelemekti.
+
+401
+01:37:55,155 --> 01:37:57,155
+Bakın burada yaşam döngüsü iyi oturdu.
+
+402
+01:37:57,275 --> 01:38:02,415
+Yani bir varlık hayatı boyunca farklı aşamalarda farklı durumlardan geçer.
+
+403
+01:38:02,775 --> 01:38:06,335
+Ve belki geçtiği bir duruma daha sonra tekrar geri dönebiliriz.
+
+404
+01:38:06,415 --> 01:38:10,475
+Böyle durumlar söz konusu varlıkların var olduğu süre boyunca.
+
+405
+01:38:10,475 --> 01:38:17,475
+Durum diagramı da varlıkların durumlarını gösterdiği için benzer analojiyi kurabiliriz.
+
+406
+01:38:19,956 --> 01:38:39,895
+Şimdi senaryo başlangıcından ilk duruma geçiş için illaki bir olay olması gerekmiyor. Hani bazı durumlarda sistemin senaryo başladığında içinde bulunduğu varsayılan durum söz konusuysa o zaman şuradaki ilk M mutation olay geçişimiz boş olabilir.
+
+407
+01:38:39,895 --> 01:38:47,036
+Yani direkt başlangıçtan bir duruma herhangi bir etkisi olmayan bir tane ok da görebilirsiniz. Bu demek oluyor ki o durum.
+
+408
+01:38:47,956 --> 01:38:59,016
+Varlığın ilk doğar doğmaz ya da bizim ilgi alanımıza girer girmez içine girdiği durumdur. Otomatik olarak içine girdiği durumdur şeklinde anlaşılır.
+
+409
+01:39:00,315 --> 01:39:09,775
+Ama burada bizim uçağımız uçağın alım emrinin verilmesi olayının ardından uçak sipariş aşamasında olmuş oluyor.
+
+410
+01:39:10,963 --> 01:39:36,863
+Sonra uçak teslim edildiği zaman, yani daha doğrusu uçağın teslim edilmesi olayı gerçekleştiğinde, uçağa hemen hizmete almıyoruz. Önce bir bakımı almıyoruz. Ondan sonra bu bakımdayken, bakım tamamlanması olayı gerçekleşmişse, o zaman uçak artık kullanıma hazır. Daha sonra işlemiş uçuşlar gerçekleştirecek falan filan, onunla aynı tanıdı sonraki şamalarda bakacağız.
+
+411
+01:39:37,555 --> 01:39:58,955
+Uçak kullanma hazır durumdayken bir arıza bulunması olayı gerçekleşirse, o zaman uçak artık kullanma hazır durumunda hemen bakıma alınıyor uçak. O yüzden uçak bakımda durumuna geçmiş oluyor. Tekrar bakım tamamlandığında uçak yine kullanma hazır hale gelmiş oluyor.
+
+412
+01:40:00,000 --> 01:40:22,539
+Uçağın döngüsü bu iki durum arasında geliyor. Ne zamana kadar? Ta ki uçağın emekli edilmesi olayı gerçekleşene kadar. Bu olay gerçekleştiğinde de durum diyaklanımız bitiyor. Bu uçağımız artık bizimle ilişkili değil. Ne olacaksa olacak ona şeklinde durum diyaklanımız sonlanıyor.
+
+413
+01:40:24,140 --> 01:40:25,539
+Temel mantık bu.
+
+414
+01:40:26,387 --> 01:40:52,488
+Bu gördüğünüz gibi etkinlik şahısından biraz daha karışık. Çünkü durumlar durumlar arasındaki geçişler bunların, şimdi gerçek bir sırası yok bakın yani. Özel bir sırası yok ama yine de şu akışlarını takip ettiğimde tabii ki uçağın alım emri verilmeden uçağın emekli edilmesinin söz konusu olmayacağını anlayabilirsiniz tabii halbette. Ama burada geçişler biraz daha karmaşık.
+
+415
+01:40:56,020 --> 01:40:58,880
+Bir adım daha ilave edeyim bu temelini anladıysak.
+
+416
+01:41:01,160 --> 01:41:03,880
+Şimdi şöyle bir gereksinim geldi diyelim ki.
+
+417
+01:41:08,300 --> 01:41:14,320
+Uçak kullanması durumdayken çeşitli uçuş yapılma olaylarını da anlatalım şimdi.
+
+418
+01:41:15,260 --> 01:41:18,480
+Şimdi ilk olayım, ilk durumum aynı.
+
+419
+01:41:19,104 --> 01:41:27,243
+İkinci olayın, ikinci durumun aynı bakımda. Bu kısmını görmüştük. Bakım tamamlandı ve arzada bulundu. Bu kısmı önceki şemarda idi.
+
+420
+01:41:27,663 --> 01:41:36,123
+Şimdi bu hatta uçan geçmekle edilmesi de önceki şemarda aynıydı. Şimdi neler ekledik bu varlığın durumuna? Onu görelim.
+
+421
+01:41:37,203 --> 01:41:43,144
+Uçak kullanıma hazır durumundayken o uçağa bir uçuş atanmışsa,
+
+422
+01:41:44,212 --> 01:41:51,152
+Veya o uçak ve uçuş yapmışsa, hala yine kullanıma hazır durumunda olacak.
+
+423
+01:41:52,271 --> 01:42:06,172
+Eğer bir ok bir durumdan yine aynı duruma yönleniyorsa, o zaman o okun üstünde yazılan olaylar gerçekleştiğinde, varlık durumunu değiştirmiyor anlamına gelmektedir bu.
+
+424
+01:42:06,172 --> 01:42:09,672
+Bunu bu şekilde gösterebileceğim gibi,
+
+425
+01:42:10,064 --> 01:42:20,484
+Bu iki uçuş ata ve uçuş yap olaylarını, bu iki olayı dikdörtgenin içine de yazabilirdim. Şu bakım sırası beklemedeki durum gibi.
+
+426
+01:42:21,664 --> 01:42:30,884
+Peki, uçak kullanma hızlı durumundayken bir eğer bakım isteği gelmişse, arıza bulunmasında olduğu gibi hemen bakıma alınmıyor.
+
+427
+01:42:32,275 --> 01:42:55,135
+Uçak bu durumda bakım sırası beklemede durumuna gelmiş oluyor. Bir bakım isteği gelme olayı gerçekleştiğinde uçak hemen bakımda durumuna alınmıyor. Bakım sırası beklemede durumuna alınıyor. Bu sırada uçuş yap olaylarını kabul ediyor. Belirli bir koşula göre ama atanmış uçuş varsa.
+
+428
+01:42:55,988 --> 01:43:04,788
+Burada dikkat ederseniz, M'den sonra, olay adını yazdıktan sonra, köşeli parantez içerisinde, if koşulu yazabiliyoruz.
+
+429
+01:43:04,788 --> 01:43:11,668
+Bu da şu anlama geliyor, bütüncül olarak baktığımda. Sonra da, ne zamana kadar bakım sırası beklemedi?
+
+430
+01:43:14,484 --> 01:43:29,623
+Bir yeni uçuş yapma olayı söz konusu olacağı zaman ama bu artık uçağın artık üzerinde atanmış uçuş kalmamışsa artık o zaman bakıma alınıyor.
+
+431
+01:43:30,604 --> 01:43:38,484
+Toparlarsan bir bakım isteği geldiğinde uçak hemen bakıma alınmıyor. Önce üzerine daha önceden atanmış uçuşlar varsa onları yapıyor.
+
+432
+01:43:38,927 --> 01:43:59,547
+Bu süre boyunca bakım sırası beklemede durumunda olmuş oluyor. Artık atanmış başka uçuş kalmayınca da, yani en son uçuş yap olayı tamamlanıp da artık daha fazla atanmış uçuşu kalmamışsa, önceden planlanmış, artık o zaman uçak bakımda durumuna alınıyor.
+
+433
+01:44:00,020 --> 01:44:08,480
+Bakım aşamasına geçiriliyor diyebilirim. Bakım tamamlandığında da eşit tekrar kullanılmaz durumunda. Bu dönemki böyle devam ediyoruz.
+
+434
+01:44:10,384 --> 01:44:37,323
+Şuradaki bakım sırası beklemede durumun içerisinde bir olayı durumun içerisine yazmak örneğini verdim. İster sağ taraftaki kullanıma hazır durumda olduğu gibi aynı durumdan yine aynı duruma bir ok çizip, durum, daha doğrusu olay oku çizip, durum geçişi ya da olay oku çizip, o olayları okun üstüne yazabileceğiniz gibi durumun kendi içerisinde yazabiliyorsunuz.
+
+435
+01:44:38,384 --> 01:44:44,863
+Ve yine kendinden kendine giden ok anlamını taşıyor aslında.
+
+436
+01:44:47,483 --> 01:44:53,224
+Şöyle de yapıp, şu M uçuş yap, atan uçuş uçuş varsayı böyle de yazabilirdik.
+
+437
+01:44:53,224 --> 01:45:01,043
+Veya şuradaki şu M uçuş atan uçuş yap olaylarının hepsini şunun içerisine de alabilirdik.
+
+438
+01:45:01,163 --> 01:45:05,384
+İki şekilde de gösterme izin veriyor durum şamaları.
+
+439
+01:45:09,492 --> 01:45:17,432
+İşte bakın şimdi bir 3 durum vardı. 4. durumu koyduk. Olaylar ne kadar fazlalaştı gördünüz mü?
+
+440
+01:45:18,707 --> 01:45:40,247
+Yani bu şema biraz daha karışık. Hele ki işte durumlar arttıkça olası durum geçişi varyasyonları da artıyor. Hangi olay gerçekleştiğinde hangi duruma geçecek veya aynı durumda kalacak bunların takibi birazcık daha zor etkinlik şemalarıyla karşılaştırıldığımızda.
+
+441
+01:45:40,787 --> 01:45:46,307
+Öte yandan bir zorla daha durumunuzu dikkatinizi çekmek istiyorum.
+
+442
+01:45:48,547 --> 01:45:57,827
+Uçuş yapma olayının nasıl davrandığını bu şemaya bir bakışta anlayamıyoruz.
+
+443
+01:45:58,427 --> 01:46:03,028
+Çünkü bakın şurada üç yerde uçuş yapma olayı gerçekleşiyor.
+
+444
+01:46:03,028 --> 01:46:05,287
+Altını çizeyim. Biri burada.
+
+445
+01:46:07,667 --> 01:46:10,847
+Biri şurada, biri de şurada.
+
+446
+01:46:11,507 --> 01:46:18,587
+Ve bunların birisinde koşulsuz bir durum, ötekisinde iki tane farklı koşuldan bahsediliyor.
+
+447
+01:46:19,627 --> 01:46:28,368
+Bu şemadan, işte şurada sözle yazılmış olan bilgiyi bir bakışta anlamak zor.
+
+448
+01:46:30,167 --> 01:46:33,908
+Ha buradaki bilgiyi şemaya nispeten daha az zorlukla aktarırız.
+
+449
+01:46:35,699 --> 01:46:48,720
+Sonra bu yazıyı görmüyorsak, bu şemadan bu yazıyı anlamak biraz daha çaba gerektiriyor. Ama etkinlik şemaları öyle değildi. Çok daha rahat anlaşılıyordu her şey.
+
+450
+01:46:51,060 --> 01:46:56,000
+Bu nedenle durum şeması çizmek biraz daha zor.
+
+451
+01:46:56,595 --> 01:47:12,916
+Aynıca bir de ister sınav kapsamında olsun, ister proje edebi kapsamında olsun bir durum diyagramı çizeceğiniz zaman neler birer durum, neler birer olay bunları iyi anlayabilmeniz lazım.
+
+452
+01:47:14,215 --> 01:47:19,076
+Olayı durum gibi göstermemek, durumu olay gibi göstermemek gereklidir.
+
+453
+01:47:19,551 --> 01:47:46,192
+Genelde en zor olanlar kısım da budur. Ama onun ardından neler durum, neler olay, onların kullanım senaryosu metninden ayırdığına, farkına vardığınız zaman gerisi daha hatasız oluyor. Ama eğer hata yaparsanız da en büyük hata neler durum, neler olay onları doğru belirlemekten kaynaklanıyor genelde.
+
+454
+01:47:46,931 --> 01:48:06,271
+Şimdi dikkat ederseniz, mesela uçuş atamak, bu bir durum değildir. Bu bir eylemdir, bir olaydır. Ama uçağın, örneğin, kullanımda hazır durumda olması, bu bir içinde bulunduğu durumdur. Kullanıma hazır olma olayı değil bu. İçinde bulunduğu durum.
+
+455
+01:48:06,836 --> 01:48:33,236
+Mesela ben şu an benim bir hoca olarak ve aynı zamanda bir koca olarak ve aynı zamanda bir baba olarak çeşitli sorumluluklarım var. Şu an ben ders verme durumundayım. Evet, yaptığım bir etkinlik, bir eylem, bir olay gerçekleşiyor ama bu şekilde bakmamanız lazım. Ben şu an ders verme durumundayım.
+
+456
+01:48:34,452 --> 01:48:59,452
+Dersim bittiği zaman, 3 saatlik dersimiz bittiği zaman, dinlenme durumuna geçeceğim. Biraz dinleneceğim. Time out'um gerçekleştiği zaman, yapmam gereken bir iki acil iş var. Çalışıyor durumuna geçeceğim. Çalışma durumuna geçeceğim. Ondan sonra tekrar biraz dinlenme durumuna geçeceğim.
+
+457
+01:48:59,840 --> 01:49:23,059
+Daha sonra yola koyulacağım, eve dönüş yoluna. Trafikte olma durumunda olacağım. Evet, o sırada bir etkinlik yapıyorum, bir eylem yapıyorum ama benim içinde bulunduğum hal açısından baktığımızda olay nedir? Mesai saatinin bitmesi. Mesai saati bitince ben eve gidiş durumunda olacağım.
+
+458
+01:49:24,851 --> 01:49:38,572
+Peki, evine varma olayın gerçekleştiğinde de, çocuk gelecek babar babar diyecek mesela, o zaman babarlık görevini yapma durumunda olacağım vs. vs. gibi.
+
+459
+01:49:40,311 --> 01:49:47,332
+Lütfen durumları doğru tespit edin, ondan sonrası daha hatasız yürüyor.
+
+460
+01:49:49,779 --> 01:50:04,599
+Peki, şimdi soru soran arkadaşım var mı? Gerek bu uçak örneği açısından sorusu olan, gerek işte başka bir konuda soru soran arkadaşım var mı? Varsa buyurun.
+
+461
+01:50:09,492 --> 01:50:11,672
+Yoksa bu şemeye bir şey daha ekleyeceğim.
+
+462
+01:50:11,832 --> 01:50:12,632
+Eğer bir şey yoksa.
+
+463
+01:50:16,627 --> 01:50:22,627
+Evet, şimdi bunları konuştuk, söylemiş olduk.
+
+464
+01:50:24,047 --> 01:50:32,787
+Şimdi, eğer bir olay gerçekleştiği zaman, yürütülen çeşitli konuklar varsa, onları isterseniz gösterebilirsiniz.
+
+465
+01:50:33,268 --> 01:50:36,648
+Onları göstermek için de, slash'tan sonrasını kullanıyorsunuz.
+
+466
+01:50:37,492 --> 01:50:49,892
+Ve bu kodu da yazarken ya da olacak olayları yazılacak, yürütülecek kodu anlatırken genelde sadesi stil kullanabilirsiniz.
+
+467
+01:50:49,892 --> 01:51:02,212
+Veya pseudo kod kullanabilirsiniz. Veyahut da o olay gerçekleştiğinde yürütülecek örneğin SQL sorguları varsa onları yazabilirsiniz.
+
+468
+01:51:02,640 --> 01:51:16,420
+Veyahut da bazı eventlar, triggerlar gerçekleşecekse ya da işte stored procedurelar çalışacaksa, bir veri tabanında stored procedurelar çalışacaksa o stored procedureların adını yazabilirsiniz.
+
+469
+01:51:16,640 --> 01:51:43,420
+Mesela. Oradaki gösterim biraz size kalmış. Ama hani önlenilen bir iki deyim var. Onu göstermek istiyorum. Şimdi başlangıç anında uçağın alım emri verdiği olayı gerçekleştiğinde ne yapılıyormuş? Önceki bir create. Create ne demek? Bu nesne için veri tabanımızda ilk kaydımızı oluşturuyoruz anlamına geliyor.
+
+470
+01:51:44,148 --> 01:51:55,288
+Ve ondan sonra ne yapıyormuşuz? Set kayıt numara eşit input. Yani bu uçak nesnesinin kayıt numarasını kullanıcından alıyormuşuz.
+
+471
+01:51:55,288 --> 01:52:03,148
+Artık kullanıcından mı olur? Ne bileyim bir servis üstünden bir API çağrısıyla başka bir kaynak tam mı olur?
+
+472
+01:52:04,307 --> 01:52:14,287
+Değişik şekillerde olabilir. Ama temel olarak şu iki satırı gördüğümde anlıyorum ki ilk satırda uçak nesnesi benim sistemimde oluşturuluyor.
+
+473
+01:52:14,407 --> 01:52:24,927
+İşte veritabın ise veritabın da kayıda oluşturuluyor gibi. Ama oluşturularken de kullanıcılar bir bilgi alıyorum. O bilgi kayıt numarasına atanıyor şeklinde bunu anlıyorum.
+
+474
+01:52:25,367 --> 01:52:28,188
+Sonra da noktalı bilgileri bitirmeye özen gösteriyorum.
+
+475
+01:52:28,595 --> 01:52:50,536
+Sonra mesela uçak sipariş şeridi açamasında uçak teslim edilmesi olayı gerçekleştiğinde o zaman set ediyorum, ne yapıyorum? Teslim tarihini kullanıcından alıyorum. Uçak hangi tarihte elimize geçti? Onun bilgisini de kullanıcından alıyorum ve bakımda açamasına durumuna geçmiş oluyorum.
+
+476
+01:52:50,536 --> 01:52:56,395
+İşte şamonun gerisi yürüyor işte daha önce gördüğümüz gibi. Sonra senaryo biteceğin zaman.
+
+477
+01:52:56,595 --> 01:53:06,455
+durum diagramı biteceği zaman uçan emekli edilmesi durumu gerçekleştiğinde ne yapıyormuşum? Delete. Yani o nesneyi veri tabanından siliyormuşum.
+
+478
+01:53:06,735 --> 01:53:34,735
+Tamamen siliyormuşum mesela. Belki bunun bir alternatifi ne olabilirdi? Set durum eşittir, pasif de diyebilirdim mesela. Belki emekliye ayırdığım uçakların kayıtların sisteminden tamamen silmiyorumdur da bir aktif pasif alanım vardır. Normalde aktiftir ama uçak emekli edildiğinde artık bizimle ilişkisi kalmadığında pasife çekiyoruz. Neden bu olabilir? Belki biz bu uçağı bizde başka bir hava yoluna satmışızdır. Veyahut da artık uçak...
+
+479
+01:53:34,735 --> 01:53:55,855
+mezarlarına ya da burada yer göndermişiz. Ne olursa olsun belki bunun bir kaydının tutulması gerekebilir. Resmi kurumlara vermek için ya da mali tablolarda göstermek için her neyse. Öyle bir durum söz konusuysa direkt silinmiyordur da belki dereyip demeyiz de işte set, status, eşit, pasif gibisinden bir işaretle yapıyor olabiliriz.
+
+480
+01:53:57,203 --> 01:54:03,663
+Şimdi artık anlıyorsunuz ki neden M ile başlıyor, neden slash ile bitiyor.
+
+481
+01:54:03,663 --> 01:54:10,843
+Şimdi ben şu durumda örneğin mesela sipariş şuradan göstereyim ya da.
+
+482
+01:54:11,636 --> 01:54:19,696
+Şimdi bakın, şu durumda, kullanıma hazır durumunda iki tane olay gerçekleşebilir ve varlık aynı durumda kalmaya devam eder.
+
+483
+01:54:19,956 --> 01:54:22,216
+Uçuş hata ve uçuş yap olaylarında.
+
+484
+01:54:22,596 --> 01:54:26,836
+Uçuş hata olayı söz konusu olduğunda bir start procedure.
+
+485
+01:54:27,256 --> 01:54:32,096
+Uçuş yap gerçekleştiğinde başka bir start procedure çalıştıracaksam eğer,
+
+486
+01:54:32,096 --> 01:54:34,056
+hadi çizelim şuraya.
+
+487
+01:54:40,467 --> 01:54:44,907
+Şimdi aynı durumdan yine aynı duruma bir geçiş çiziyorum.
+
+488
+01:54:46,027 --> 01:54:46,827
+İşte mesela.
+
+489
+01:54:48,487 --> 01:54:51,647
+Ha şimdi onu nasıl yapacağım? Onu şöyle yapabilirim.
+
+490
+01:54:51,727 --> 01:54:54,547
+Stratype için şöyle bir püf noktam var benim.
+
+491
+01:54:55,047 --> 01:54:58,427
+Bir tane sınıf şemasına bir tane interfej koyuyorum.
+
+492
+01:54:58,975 --> 01:55:11,235
+İnterfays kelimesinin yerine ne yazmak istiyorsam M, mutlaka M'sini koydum. Şimdi bunu klavyeden seçip kestim. Şu an clipboard'umda bir tane M harfi var.
+
+493
+01:55:11,235 --> 01:55:25,115
+M neydi mesela? Uçuş yap. Bu durumunda şu stop projesi rejimi çalıştır.
+
+494
+01:55:27,699 --> 01:55:49,619
+uç, start procedure'ımı çalıştık. Ondan sonra acaba. Fakat sonra da dediğim ki, burada enter öyle işe yaramıyor. Sonra ne olayım vardı mesela? Uçuş ata peki. Yine M, uçuş.
+
+495
+01:55:51,859 --> 01:56:04,460
+Ata, slashımı koydum. Bu durumda da stored procedure, ata stored procedure çalışacak. Sonra da noktaya bir gün diyelim.
+
+496
+01:56:04,948 --> 01:56:26,747
+İşte şimdi şu M-MUTEET simgeleri bir sonraki olayımın, bir önceki olayın stop procedure'ının veya işte yürütülecek komutunun bittiği noktayı ve yeni olayımın gerçekleştiği başlangıç noktasını çok kolaylıkla görsel biçimde ayırt etmeme yarıyor.
+
+497
+01:56:27,315 --> 01:56:39,615
+Keza işte slash ise olay ile o olay esnasında yürütülecek kodun ne olduğunu göstermek, bu içisini birbirinden ayırmak için kullanılıyor.
+
+498
+01:56:40,016 --> 01:56:48,916
+Gördüğünüz gibi her bir bileşenin M'in de slash'ında bir pratik olarak görevi de var.
+
+499
+01:56:48,916 --> 01:56:50,676
+Buradan görebiliyoruz.
+
+500
+01:56:53,036 --> 01:56:54,256
+Evet, peki.
+
+501
+01:56:56,948 --> 01:57:02,488
+Evet, durum diagramları bu kadar. Soru sana arkadaşım var mı? WhatsApp uyursunlar lütfen.
+
+502
+01:57:14,899 --> 01:57:18,060
+Hocam ben AfterLabla alakalı sormak istiyorum.
+
+503
+01:57:18,119 --> 01:57:20,319
+AfterLabla alakalı değil, bölmek istemedim ama.
+
+504
+01:57:20,500 --> 01:57:21,399
+Buyurun sağlamayın.
+
+505
+01:57:22,720 --> 01:57:24,600
+Ne kadar sürecek?
+
+506
+01:57:24,899 --> 01:57:28,840
+Violet.UML kullanacağız ama bende 0.21.1 versiyonu var.
+
+507
+01:57:29,159 --> 01:57:30,340
+Bir sorun çıkartırma.
+
+508
+01:57:30,868 --> 01:57:57,928
+Hiç sorun çıkarmaz. Şu anda labın koordinasyonunu yapamadık. Belki haftaya lab değil de ders yaparız bilemiyorum. Ama her halükarda zaten dersi biz başlatacağız. Ayrı bir oturum, ayrı bir zoom linki gönderilmeyecek. Bugün onu Oya Hoca ve asistan arkadaşlarla konuşuruz bugün yarın. Pazartesi ya da Engelsi Salı'ya kadar duyururuz sizlere.
+
+509
+01:57:58,868 --> 01:58:26,748
+LAMP'da ilk yapacağımız etkinlik, sizler de bu analiz aşamasının sonuna kadar yaptığımız etkinlikler olan doğal dilde yazılmış bir gereksinimden A. Kullanım senaryosu metni oluşturmak, B. Kullanım şamaları çizmek, C. Metodları olmayan ama geri kalan tüm bileşenlerinin tam olduğu sınıf şeması, yani alan modeli oluşturmak.
+
+510
+01:58:26,868 --> 01:58:44,968
+Şeklinde bir buçuk saatlik bir etkinlik olacak. Üç saatlik ders içerisinde işte bir saat on dakika ilk grup, ondan sonra on dakika ara, sonra geri kalan bir saat on dakikada da ikinci grup şeklinde bir ayarlama olacak.
+
+511
+01:58:45,768 --> 01:58:52,048
+Hangi sırada, hangi grupta hangi öğrencilerin yer alacağını duyuracağız arkadaşlar.
+
+512
+01:58:54,868 --> 01:59:11,448
+Kullanıcısız hocam. Kağıda çizim yapmayacağız değil mi? Kağıda çizmeye gerek yok kesinlikle. Violet uyanlar kullanırsınız. Kullanım senaryosu metni oluşturmak için de Word kullanırsınız. Bunlar yeterli olacaktır. Tamam. Teşekkür ederim hocam. Bir şey diyeyim. Evet başka sorusu olan buyurun.
+
+513
+01:59:20,083 --> 01:59:27,483
+Bu konuları neyi hak ettik diyorum. Saatimiz on bir on bir on birçaya kadar ara veriyoruz arkadaşlar.
+
+514
+01:59:30,323 --> 01:59:31,804
+On bir on birçaya kadar ara.
+
+515
+02:10:36,724 --> 02:10:39,404
+Evet arkadaşlar, ara vaktimizi doldurduk.
+
+516
+02:10:40,851 --> 02:11:04,471
+Şimdi sizlerle, evet, bu Next Pampos tasarım modelini oluşturacağız. Bunun için etkinlik şeması, durum şeması ve sınıf şeması da çizelim. Bunları çizerken tabii ki belki keşfedeceğimiz aynı tılar olabilir. Onlar da çıkarsa söyleriz. Belkiye dönelim, değiştiririz belki falan.
+
+517
+02:11:08,851 --> 02:11:17,731
+Artık yönsüz olup bırakmayacağız. Ki kez o zaman bile bırakmamıştık. İlişki önlerine karar vermiştik ve metotları da ekliyor olacağız.
+
+518
+02:11:17,731 --> 02:11:30,851
+Şimdi sizinle birlikte öncelikle kullanım senaryosu metninden yola çıkarak bir etkinlik şeması çizelim. Bunun için şeyleri almamışım Tekras.
+
+519
+02:11:33,524 --> 02:11:46,364
+Metniyi almamışım. Geri dönelim. Metni hatırlayalım. Kullanım senaryosu metnini hatırlayalım. Ön koşullarla birlikte bu işi yürütmeye çalışalım.
+
+520
+02:11:51,123 --> 02:11:52,763
+Yalnız öncesinde
+
+521
+02:11:57,684 --> 02:11:58,784
+Tamam peki, bir şey yok.
+
+522
+02:12:01,144 --> 02:12:05,104
+Evet, bir tane activity diagram oluşturalım.
+
+523
+02:12:05,104 --> 02:12:06,184
+Sizinle bir ökete.
+
+524
+02:12:14,868 --> 02:12:42,768
+Şimdi ön koşullar, kasiyenin kimliği doğrulaması. Bunu burada hiç göstermeme gerek yok. Bu etkinlik işlememde göstermeme gerek yok. Ana başarılı akış ve alternatif senaryoları çiziyor olacağım. Ön koşulu her satıştan önce kasiyenin kimliği tekrar doğrulanması söz konusu değil. Doğrulanmışsa bir daha bir daha tekrar her satış için doğrulamaya gerek de yok. O yüzden etkinlik işlememde bu ön koşulu tekrar göstermeyeceğim.
+
+525
+02:12:42,868 --> 02:12:57,368
+Fakat işte senaryonun ilk adımı olarak müşterinin kasaya alacağı ürünlerle gelmesinden başlayacağım. Bunu isterseniz şu olay kabul etme şeyle de başlatabilirsiniz.
+
+526
+02:12:57,368 --> 02:13:06,688
+Veyahut da daha geleneksel şekilde başlangıç artı aktivite şeklinde de düşünebilirsiniz.
+
+527
+02:13:07,315 --> 02:13:09,315
+Burada biraz copy paste yapabilirim.
+
+528
+02:13:10,495 --> 02:13:12,595
+İşte kasaya arayacağı ürünler ve gelir.
+
+529
+02:13:18,420 --> 02:13:28,059
+Şimdi sonra belki şöyle bir enter'larla belki şey yapabilirim, daraltabilirim şekilleri.
+
+530
+02:13:32,083 --> 02:13:57,863
+Peki. Şimdi burada ister swimmingline kullanırız, ister hep özneyi yani aktörü yazarız. Keza kullanım senaryosu metnimizde hep bu aktörü yazdığımız, etken cümleleri zaten kurduğumuzda, her adımda zaten aktörün adı geçtiğinden swimmingline çizmemize gerek yok bunun için. Çok rahat bir onu söyleyebilirim.
+
+531
+02:13:58,515 --> 02:14:04,216
+Kasiyer yeni bir satış işlemi başlatır. Peki hala. Bu da bir etkinliğimiz.
+
+532
+02:14:20,500 --> 02:14:21,339
+Şöyle yapayım.
+
+533
+02:14:23,139 --> 02:14:37,500
+Şimdi bu arada, yalnız ilk başta ana senaryoya bakaraktan şeklimi çizeceğim ama ondan sonra alternatif senaryoya bakmaya başladığımda bazı...
+
+534
+02:14:38,260 --> 02:15:06,260
+Farklılaşmalar ortaya çıkacak. Onu çizmek için biraz daha zorlanabiliriz. O yüzden belki isterseniz şey de mutlaka bir bakalım. Alternatif öykülere de bir bakalım. Sadece öncelikle ana öyküyü çizersem, ondan sonra alternatif öyküye bakmaya başladığımda belirli bir adım veya adımlarda olası varyasyonla araya benim elmaslar koymamı gerektirir.
+
+535
+02:15:06,260 --> 02:15:32,479
+Belki mevcut ok geçişlerinden bazılarını söküp elmasa doğru yönlendirmemi falan gerektirecek. O yüzden ipucu olarak söyleyeyim. Bu üçüncü adımdan itibaren aslında bu alternatif öykülere de bir yandan baksak yararlı olacak. Üçüncü adımdan itibaren bunu da yapalım. Bir, iki, üç tamam mı? Ondan sonrası için alternatiflere de bir bakacağız.
+
+536
+02:15:34,003 --> 02:15:36,804
+Üçüncü adımda kasaya yönün barkodunu gitsek.
+
+537
+02:15:45,524 --> 02:15:46,244
+Teşekkürler.
+
+538
+02:15:51,028 --> 02:15:56,367
+Bakın, bu aşamada üçüncü adımda 3A geçersiz barcode var.
+
+539
+02:15:56,367 --> 02:16:07,367
+Bu araya şeyleri çizeceğim. Eğer çizmeseydim, dördüncü olan sitem bir satış kanalı maddesi oluşturur şeyi koyduğumda...
+
+540
+02:16:16,051 --> 02:16:16,511
+Teşekkürler.
+
+541
+02:16:20,115 --> 02:16:46,835
+Dedim mesela. Normalde bunu bağladım. Ondan sonra devam ediyorum falan. Sonra alternatif senaryona baktığımda bu aşamada geçersiz barkot olma durumu var. Geçersiz barkot olma durumunda satış kanalı maddesini de oluşturmaz. Çünkü işte sistem uyarı sesi verir ve veri girişini reddeder. Durumu söz konusu. Bu nedenle bunu koyup ondan sonra şu oku.
+
+542
+02:16:47,379 --> 02:16:55,459
+Şu denetim akışını, en son denetim akışını silip aslında, tutup başka yere götüremiyorum, bunu silip bu sefer...
+
+543
+02:16:55,763 --> 02:17:22,203
+Buradan şuraya yazmam lazım. Ve bunu da yaparken aslında şu dik üst köşesine getirmem de lazım. Hatta burada şimdi I'm Planneder'ı ne olacak? Aşağı doğru ve yana doğru şey diyecek, dallanacak şeyler, değişik aktiviteler. Bu nedenle şimdi mesela şöyle bir şey yapsam.
+
+544
+02:17:22,899 --> 02:17:36,099
+Şunu da bu arada önce horizontal sonra vertical yaparsam ve ondan sonra da belki diyelim ki şunları nasıl düzgün bir konumlandırma keşfedebilmem lazım.
+
+545
+02:17:36,099 --> 02:17:40,939
+Ha mesela. Düzgün bir konumlandırma keşfedebildim.
+
+546
+02:17:48,147 --> 02:18:14,827
+O yüzden bütün bunları sonradan keşfedip, bütün şemada bir şeylerin üst üste geçmesinin, kanlı çıklaşmasının geçici bile olsa, gözle almaktansa, ana senaryoyu okurken, alternatif senaryodaki adımlara da bakıp, şu an çizdiğim yerlerde onlarla ilişkili bir şeyler varsa, onları direkt hemen bu aşamada katmam, işin içine katmam, şemaya katmam en doğrusu olacak.
+
+547
+02:18:16,308 --> 02:18:39,948
+Şimdi, şurada ne diyor? Daha doğrusu şurada ne diyor? Geçersiz bağ kod durumunda sistem uyarı mesajı veriyor ve kayıt girişini reddediyor. Peki, o zaman şimdi ben şuraya bir şey diyorum. Diyorum ki, şu oka yazıyorum ki köşe parçası esasında.
+
+548
+02:18:41,139 --> 02:18:44,299
+Eşersiz barcode diyorum.
+
+549
+02:18:48,084 --> 02:18:51,164
+Bu durumda ne oluyor? Sistem uyarı mesajı veriyor.
+
+550
+02:19:02,963 --> 02:19:25,583
+Ve veri girişini ned eder? Yeni bir barcode girilmek zorundadır. Bunun ardından şu kasiyerin tekrar ürünün barcodunun girmesine geçecektir akış. Bunu da daha düzgün göstermek için önce dik çizsin yani vertical sonra horizontal çizsin oku. Ben test ile değiştirdim. Bu böyle daha düzgün oldu şimdi. Daha doğru oldu.
+
+551
+02:19:25,971 --> 02:19:33,092
+Eğer geçersiz barcode yoksa, yani barcode geçerliyse o zaman sistem bir satış kanalı maddesi oluşturacak.
+
+552
+02:19:33,711 --> 02:19:34,551
+Alayım şunu şöyle.
+
+553
+02:19:37,511 --> 02:19:38,511
+Buraya da.
+
+554
+02:19:39,252 --> 02:19:43,471
+Şimdi else demek, şimdi şuraya else demek hoşuma gitmiyor doğrusu.
+
+555
+02:19:44,171 --> 02:19:45,492
+Yani dersem olur ama.
+
+556
+02:19:48,724 --> 02:20:05,043
+Sanki burada esas hani geçersiz barkod olma ana senaryo seçeneğiymiş gibime geliyor. Gerçi hoş böyle kansı da olur. Hiçbir problem yok bence ama yine de sanki şuraya eğer siyasmaktansa geçerli barkod demek daha mantıklı geliyor bana.
+
+557
+02:20:07,463 --> 02:20:12,363
+İkisi de olur da bence geçerli barkod demek daha güzel, daha yakışırız buraya.
+
+558
+02:20:19,476 --> 02:20:41,436
+Bakıyorum şimdi, işte sıra çıkaran maddesi oluştu. Son adımlar var da, ki keza 5'te 3'te 4'te geri dönüşü söz konusu var. Onu yaparız aynı metin içerisinde. Ama şurada bir yerde şu, alışverişten bir kalem malı çıkartmak ister konusunu nereye nasıl monte edeceğiz şamamızda ve onu düşünmemiz lazım.
+
+559
+02:20:44,564 --> 02:21:06,484
+Önüm barkodunu girdi diyelim ki. Daha bu aşamadan itibaren ben bunu alışverişten çıkarmak istiyorum diyebilir kullanıcıya. Ama bir kere kasiyar bunun barkodunu girmiştir. Barkodu girmediyse zaten müşteri ün almak istemiyorsa hiç kasiyarın bandına koymaz bile. Kenara bir lafa koyar final.
+
+560
+02:21:06,995 --> 02:21:24,395
+Fakat eğer kasiyere vermiş, kasiyer de onu okuttuktan sonra ancak aslında o ürünü alışverişten çıkarmak ister. Bu da bu geçerli bankodun ardından aslında olabilecek bir durumdur.
+
+561
+02:21:24,915 --> 02:21:43,015
+Satış kanalının maddesi oluşturmasından yalnız önce mi olur, sonuna mı olur? Onu düşünelim. Geçerli barkon okutu mu okutmaz? Zaten geçersiz değilse hemen yeni bir madde oluşturulacak ve bu satışa eklenmiş olacak aslında.
+
+562
+02:21:51,924 --> 02:22:13,144
+Şu dördüncü adım tamamlanmış olur. Ama beşinci adım, üçüncü adıma geri dönüş olduğundan büyük ihtimalle bu kasiyenin, özür dilerim müşterinin aslında önünü çıkarmak istemesi, şu dördüncü ile beşinci adımların arasına yazmak en doğrusu olacak.
+
+563
+02:22:19,636 --> 02:22:37,695
+Ya da birkaç kalem malı ürünü alışverişler çıkartmak isteyebilir de. Hani bu nedenle burası epey karmaşıklaşıyor. Şu yedinci adımdan sonra da bu işi yapabilecek olması nedeniyle. O zaman aklıma şu geliyor.
+
+564
+02:22:42,067 --> 02:23:05,948
+Nasıl desem? Etkinlik diagramını veya sequence diagramını çizerken bir if koşulu durumunda her okun başına if koşulu yazmaktansa bir alan tanımlayabilirim demiştim ya. İşte o alan tanımlama yöntemini kullanmak bu alternatif senaryoyu göstermek için en iyi çözüm gibi geliyor bana.
+
+565
+02:23:05,948 --> 02:23:09,948
+Dur bakalım ders notlarında da onu mu yapmışım yoksa...
+
+566
+02:23:10,067 --> 02:23:16,327
+Başka bir versiyon, sütünden diye bir çözüm önermişim. Şimdi bakalım ondan sonracıma.
+
+567
+02:23:16,327 --> 02:23:32,207
+Çünkü çok çok uçuk bir şey çekmeyelim. Evet tamam. O versiyonu çekmişim. Dikkat ederseniz bakın hani Şaman'ın içerisinde hem bu sefer tam net olarak bu 3 ila 7. adımlarını da daha net göstermiş olabileceğim.
+
+568
+02:23:32,207 --> 02:23:38,067
+Çünkü 3. adım barkot girmeydi, 7 ile toplamı bildirmeydi. Bütün bu adımlar arasında...
+
+569
+02:23:38,067 --> 02:23:46,807
+Aslında herhangi bir anda ürün iptali senaryosu da gerçekleşebilir. Onu bakınız bu şekilde ifade etmişim.
+
+570
+02:23:50,260 --> 02:24:13,479
+En mantıklısı o. Ama öyle olmasaydı belki şu aşamada da işte bir ürün çıkarmak istiyor musunuz? Evet ise işte o senaryo gerçekleşti ve sonra akışa geri dönebilirdim. Ama işte o basit tek kalemde halledebileceğim işi, o yedinci adımın da dahil olması işi bozuyor. Tekrar tutalım senaryo metniğine dönmek istiyorum.
+
+571
+02:24:19,123 --> 02:24:29,324
+En rahatı öyle olacak. Şimdi madem bunu konuştuk, konuştuğumuza göre şemayı çizmeye devam edebilirim. Ana akış üzerinden.
+
+572
+02:24:32,024 --> 02:24:44,404
+Başka alternatif akışım yok. Geçen sipariş kod bir de alışverişten ürün çıkarmak ister. Onu bu alan tanımlama şeklinde halledeceğimizi söyledim. O zaman ana senaryoya odaklanıp gitmeye devam edebiliriz.
+
+573
+02:24:44,852 --> 02:25:07,632
+Satış kanı maddesi oluşturur. Şu diğer ayrıntıları yazmıyorum. Bu ayrıntılar burada yer alıyor zaten. Sonra kasiyat 3. ve 4. adımları müşterinin alacağı tüm ürünler için tekrarlar. Şimdi bunu şu şekilde ifade etmek istiyorum. Burada bir tekrar söz konusu, tekrar da beni belli bir aktiviteye geri götürmeli. Örneğin ürünün barkodunu girme etkiliğine geri götürmeli.
+
+574
+02:25:07,888 --> 02:25:16,788
+O zaman burada bir cisi cimbal koyabilirim. Yani alınacak daha başka ürün var mı? Evet ise oraya dön, hayır ise ilerle şeklinde.
+
+575
+02:25:20,659 --> 02:25:37,200
+Şimdi sonra tabii şuradan acaba şuraya nasıl güzel bir ok çizebilirim? Galiba şöyle yaparsam daha iyi olur. Şimdi şundan şuraya nasıl bir şey çizebileceğim? Dur bakalım.
+
+576
+02:25:41,200 --> 02:25:43,020
+İşte epey şimdi dur bakalım.
+
+577
+02:25:43,476 --> 02:25:54,096
+Şöyle yaptıysam, şimdi 3 kıvrımda koyamıyorum ama şöyle yapsam olabilir mi? Şuraya koysam olabilir belki.
+
+578
+02:25:58,100 --> 02:26:00,799
+Bunu da, çok kötü oldu ya.
+
+579
+02:26:05,559 --> 02:26:12,439
+Şöyle yapayım da, şu oku seçebileyim ve şey şeklinde git desem, VHV işime yaramıyor.
+
+580
+02:26:12,639 --> 02:26:22,439
+HVH yapsam, çeksem, al olmadı. O zaman yine şey düşüneyim, vertical horizontal yapmaya çalışsam.
+
+581
+02:26:23,476 --> 02:26:46,695
+Bir dakika yapabildim mi? Yazdım vertical horizontal yaptım. Ama pek şey demiyorum. Geri al. Tekrar seç. Bir de horizontal vertical deneyeyim. O da pek bir şey yaramadı. Pekala. Şöyle yapabilirim o zaman. Belki de.
+
+582
+02:26:47,347 --> 02:27:00,308
+Bunu, illet çizeceğimi hatırlayıp, işte onun geri kalanını çizmeye devam edebilirim. Büyük ihtimalle ders notunda da öyle yapmışımdır diye düşünüyorum.
+
+583
+02:27:01,828 --> 02:27:09,668
+Şimdi aynı iki şey üstüne tekrar dolaşmaktansa, şeyi açsam olur mu? PDF'den açsam olur mu? Olur, daha doğru olur hatta.
+
+584
+02:27:12,067 --> 02:27:13,468
+Şöyle yapalım şimdi.
+
+585
+02:27:18,739 --> 02:27:19,319
+Teşekkürler.
+
+586
+02:27:27,219 --> 02:27:28,299
+Şöyle yapabilirim.
+
+587
+02:27:30,879 --> 02:27:36,899
+Yani maalesef bu şekilde bu hatta şimdi zunlatayım da farkına varın.
+
+588
+02:27:37,899 --> 02:27:46,000
+Aynı ok gibi gözüküyor ama şunu ben şu çizgiyi resim dosyası üzerinden işleyerekten koymuş durumdayım.
+
+589
+02:27:46,379 --> 02:27:49,439
+Öyle bir ipucu vereyim size.
+
+590
+02:27:51,731 --> 02:28:12,992
+Evet ise, ya da şöyle de olabilir belki. Şimdilik sırf şunun için şöyle bir şey yapacağım. Burada anlatı için özelliğinden yararlanacağım. Tabii inşallah daha sonra şeklinin şem halini çok değiştirmek zorunda kalmam.
+
+591
+02:28:19,316 --> 02:28:44,316
+Şöyle yapıyorum, tamam mı? Hatta isterseniz şöyle yapacağımı göstereyim en azından. Şimdi şöyle diyeceğim ki, başka ürün, daha ürün var mı? Evet. Ben bunu nasıl yapayım şimdi? Buraya else demek istiyorum. O yüzden şu an şunu kapatıp şuraya...
+
+592
+02:28:44,724 --> 02:28:47,623
+Başka ürün var mı?
+
+593
+02:28:47,623 --> 02:28:48,463
+Diyeceğim.
+
+594
+02:28:49,463 --> 02:28:49,963
+Ay pardon.
+
+595
+02:28:51,164 --> 02:28:56,344
+Başka ürün var mı? Evet ise yok. Hayır ise artık adımımız neydi?
+
+596
+02:28:57,884 --> 02:29:02,064
+Toplam bir sistem, toplam bedeli KDV'le birlikte hesaplar idi.
+
+597
+02:29:02,824 --> 02:29:07,103
+Ondan sonra şuraya şunu yazdıktan sonra.
+
+598
+02:29:08,884 --> 02:29:13,144
+Şu oku şöyle koyuyorum ve buraya da diyorum ki
+
+599
+02:29:18,451 --> 02:29:45,091
+Başka ürün yok. Alınacak başka ürün yok ise devam edecek. Ama else işte, anote eşitimi alayım. Kısaca else yazmak istiyorum. Ya da alınacak daha fazla ürün var diye uzun uzun yazsam daha güzel oldu ama bu annotation da bu kadar yazabiliyorum diyeyim.
+
+600
+02:29:45,683 --> 02:30:05,283
+Çünkü şöyle oldu. Tamam. Bunu böyle yapacağım. Ondan sonra biraz yan yan devam edeyim. Aşağı doğru gitmeyeyim. Çünkü şimdi şurada scroll yapsam, annotation yerinde sabit o scroll olmuyor. Bu nedenle şöyle yapayım. Şuna koymuşum bir tane.
+
+601
+02:30:09,620 --> 02:30:18,220
+Peki, nedir işte? KDV hesaplar, ondan sonra kasiyen müşteriler toplam bildiri ödemeyi isteriz.
+
+602
+02:30:22,739 --> 02:30:24,139
+Şu adımımız.
+
+603
+02:30:25,099 --> 02:30:26,819
+Kısıyoruz. Toplamak yaptık.
+
+604
+02:30:29,139 --> 02:30:30,739
+Ödememiz ters.
+
+605
+02:30:32,020 --> 02:30:32,819
+Bu adımımız.
+
+606
+02:30:33,899 --> 02:30:35,259
+Ondan sonra acaba ne var?
+
+607
+02:30:35,659 --> 02:30:37,360
+Ödemenin tahsili vardı galiba.
+
+608
+02:30:37,939 --> 02:30:38,159
+Evet.
+
+609
+02:30:38,840 --> 02:30:40,619
+Ödeme tahsili diyelim ki.
+
+610
+02:30:44,468 --> 02:31:04,468
+Bu arada hangi aşamada iptal yapabiliyorduk? Bu aşamada bile aslında toplayıbildir ve ödeme ister aşamasında bile bir iptal söz konusu olabilirdi. O zaman o iptal söz konusunu gösterebilmek için...
+
+611
+02:31:13,652 --> 02:31:19,512
+Şunları uzatacağım, uzun yazacağım. Böylece biraz daha yer kazanırım şuradan.
+
+612
+02:31:19,512 --> 02:31:34,612
+Aptans az da geniş olmasa da olurdum sanki. Ama neyse. Şöyle yapsam. Sistem acaba olur mu? Sistem yeni bir tane koysam.
+
+613
+02:31:36,132 --> 02:31:40,592
+Genişliğini, yüksekliğini daha doğrusu daha düzgün ayarlar mı acaba?
+
+614
+02:31:41,971 --> 02:31:46,172
+Hemen aynı oldu ama, hemen aynı oldu.
+
+615
+02:31:47,051 --> 02:31:48,832
+Geri al, geri al, geri al, geri al. Peki.
+
+616
+02:31:51,752 --> 02:31:52,452
+Ne yapsam?
+
+617
+02:31:54,871 --> 02:31:57,632
+Belli bir annotation da silemediğim için.
+
+618
+02:32:01,396 --> 02:32:17,855
+Neyse, şu annotationı sileceğim. Başka çarem yok. Bu arada stop share dedim. Tekrar share edeyim. Ondan sonra şu annotationı bir sileyim. Ama ne yapacağımı hatırladınız aklınızda. Şu an şu şekilde biraz çekiştireyim.
+
+619
+02:32:28,564 --> 02:32:34,044
+Şöyle şöyle yapsam, belki biraz daha yerden kazanırım.
+
+620
+02:32:41,236 --> 02:33:07,495
+Şöyle olabilirsin. Ha, onu şeyi de unutmayayım. Nerede iptal edecektik onu da unutmayayım. Şekilde. Ha, hazır. Barcode gire kadar. Tamam. Peki, o zaman şunun burada olması daha avantajlı. Peki, içerideki şansız barcode durumları biraz daha sıkıştırsam şunu. Daha da fazla sıkıştırmam.
+
+621
+02:33:09,747 --> 02:33:17,747
+Bence şöyle olsun, şöyle olsun, şöyle olsun.
+
+622
+02:33:19,227 --> 02:33:25,207
+Tamam. Toplam bir ödeme ister. Eğer kabul etmişse tamam ödemenin tahsili olacak.
+
+623
+02:33:25,927 --> 02:33:34,288
+Şu noktada o zaman şöyle yapabilirim. O zaman o dikdörtgeni böyle çizersem yeter. Tamam pekala. İyi.
+
+624
+02:33:34,804 --> 02:33:44,403
+Sığdırdım. Bu arada tekrar o sildiğim annotation'ı geri koyayım. Şöyle tık.
+
+625
+02:33:49,139 --> 02:33:54,579
+Şöyle yaptık ve şöyle yaptık ve buraya else dedik.
+
+626
+02:34:04,915 --> 02:34:16,015
+Evet. İyi. Şimdi aynı testini kapatayım. Toplam bir de ödeme istedik. Şöyle biraz uzağa koyayım şunu. Ödeme tahsili yapacak dedik.
+
+627
+02:34:21,587 --> 02:34:22,768
+Ödeme tahsili.
+
+628
+02:34:29,620 --> 02:34:32,500
+Sonra nasıl devam ediyoruz?
+
+629
+02:34:34,040 --> 02:34:38,420
+İşte harici sistemlere bilgi aktarımı, fiş verimi diyeyim ve bitirelim artık.
+
+630
+02:34:50,579 --> 02:34:53,040
+Olucak, ister fikrinecek.
+
+631
+02:34:59,507 --> 02:35:11,587
+Müşteri de ayrılır işte. Artık o adımları da çok da fazla işlemeye gerek yok. Nihayet işte senaryo biter diyebilirim.
+
+632
+02:35:13,492 --> 02:35:24,211
+Şimdi sayfamda, raporumda yerim olsaydı ben bunları aslında alt alta yazmayı tercih ederdim ama ekranda hem yaparken sizlere dergi toplu gösterebilmek için böyle tercih ettim.
+
+633
+02:35:24,572 --> 02:35:40,132
+Hem şu annotation'ın kayacak edecek olmasın diye böyle tercih ettim. Yoksa ne olmadı? Bakın ders notuna da bunu böyle düz bir biçimde şey attım.
+
+634
+02:35:41,587 --> 02:35:43,628
+eklemiş oldum ders notlarımda.
+
+635
+02:35:44,448 --> 02:35:47,528
+Evet, pekala. Şimdi bir de şeyi unutmayacaktık.
+
+636
+02:35:47,788 --> 02:35:54,327
+Bu ürün silme durumunun geçerli olduğu kısmı unutmayacaktık.
+
+637
+02:35:54,327 --> 02:36:04,207
+Şimdi bunun için şöyle bir, şu aşamalarda, şunlar da dahil olmak üzere,
+
+638
+02:36:05,768 --> 02:36:08,667
+A tek tek yapsaydım.
+
+639
+02:36:09,492 --> 02:36:10,031
+Tamam.
+
+640
+02:36:11,452 --> 02:36:12,231
+One başkı.
+
+641
+02:36:15,763 --> 02:36:20,423
+Şu kenar, kenar, şunu da birleştirelim.
+
+642
+02:36:21,623 --> 02:36:27,903
+Burada şimdi şu alanımı çiziyorum. Etkili kalanımı çok kötü çizdim.
+
+643
+02:36:32,404 --> 02:36:40,004
+Şöyle olsun. İşte buraya diyeceğim ki, text yazacağım.
+
+644
+02:36:42,004 --> 02:36:56,004
+Bakınız, ürün, filmi, sınarında su diyeceğim. Bunu da şöyle biraz küçük fontla inşallah yapacağım.
+
+645
+02:37:00,020 --> 02:37:01,520
+Onun nerede yapıyorduk?
+
+646
+02:37:03,360 --> 02:37:13,799
+Format yok. Tamam format, font. 12 olsun. Tamam. İyi, böyle olabilir. Evet. Pekala.
+
+647
+02:37:14,355 --> 02:37:29,175
+Bu şekilde artık işler yerine oturmuştur diye düşünüyorum. Ama yine de sorusu olan arkadaşım varsa veya hocam şunu şöyle yapabilir miydik dediğiniz olan şeyler varsa şimdi sizinle birlikte tartışalım burada.
+
+648
+02:37:32,659 --> 02:37:49,932
+Şeyde tekrar hatırlarsak, onun için nasıl yapayım? Şunu biraz, yine yalnız şöyle alıp, oturdu galiba, oturdu, tamam. Şöyle yaparsam, şunu da bir yazılım.
+
+649
+02:37:54,388 --> 02:38:00,668
+Evet, pekâ. Şu an fena gözükmüyor. Şunu da şöyle yan tarafa monte edersem.
+
+650
+02:38:03,788 --> 02:38:06,268
+Tabii şey, biraz sunmayalım.
+
+651
+02:38:07,907 --> 02:38:13,308
+Aslında şey bunu daha şöyle alabilirim tabii ki. Boşu boşuna şey etmedik, saklamadık paleti.
+
+652
+02:38:14,708 --> 02:38:16,067
+Biraz daha bakalım.
+
+653
+02:38:18,628 --> 02:38:19,128
+Evet.
+
+654
+02:38:19,667 --> 02:38:45,427
+Karşılaştığımı bakalım. Satış işlemi başlattı. Bunu eklemişim. Eklemek zorunda değiliz. Söylemiştim. Pardon. Logini, tanıtmayı eklemek zorunda değiliz. Satış işlemi başlattı. Kısa demişim. Ama bunu da senaryonun metni maddesinin ikisini de yazarak devam etmişim. Olabilir. Problem değil. Anlaşılıyor nihayetinde. Peki, kasiyanın barkodunu gibi. Barkod ikiz. Bu da aktörü yazsaymışım daha düzgün olurmuş arkadaşlar.
+
+655
+02:38:47,667 --> 02:39:04,028
+Bu ünleyim de yapabilirim ama daha da karmaşıklaştıracak şu an. Yani daha o çizmeni zorlaştıracak değilmiş. Ama yıkanları açıklaştırmayacak, netleştirecek ama çizmeni karıştıracak, zor uzatacak. O yüzden böyle kalsın. Peki, barkot girer.
+
+656
+02:39:04,915 --> 02:39:23,755
+Şimdi bakın şurada neye çıkıyor? İfade şart tarzım var. Onu da kullanabilirsiniz eğer isterseniz. Bu elmasa giren ok üstüne if koşulunu yazıp case'leri de sadece çıkan oklara case'leri yazmak da yine kabul edilebilir.
+
+657
+02:39:23,755 --> 02:39:32,915
+Yani şuradaki gösterim doğru. Barcode geçer mi? Hayır ise bu tarafa, evet ise bu tarafa. Veyahut da barcode girdi. Geçersiz barcode durumunda şöyle yap. Geçerli barcode.
+
+658
+02:39:32,915 --> 02:39:59,755
+Durumunda böyle yap. Her ikisi de olabilir arkadaşlar. Problem yok. Evet. Sonra işte satış kalemi ya da kanalı işte değişik ifade edebiliyorum. Oluşturulur. Anılacak mal kaldı mı? Evet ise devam et. Hayır ise yok. Veyahut da işte baş görün yok ya da else. Yani ikisi de olabilir. Problem yok. İşte toplamı bildiriz. Ödeme al. Ondan sonra makbul ver. Gideriz. Yani toplamı bildir dahil. Ödeme istemek.
+
+659
+02:40:00,000 --> 02:40:00,860
+Dahil dedim.
+
+660
+02:40:01,620 --> 02:40:29,560
+Biraz sadeleştirdim ders notunda adımları yazarken ama eğer bir sıkıntınız, probleminiz yoksa zaman sıkışıkları şu bu. Biraz daha açık yazabilirsiniz adımları. Hiçbir sakıncası yok. Hatta anlaşılabilirliği daha çok arttırıyor arkadaşlar. Hani burada barcode, satış kalemi oluşturuyor. Hangi aktörler yapıyor bunları? Bunları streamlay'in ile göstermek daha doğru olabilirdi. Veyahut da işte aktörün adını yazaraktan daha net anlaşılmasını.
+
+661
+02:40:29,620 --> 02:40:31,360
+sağlayabiliriz.
+
+662
+02:40:31,940 --> 02:40:39,720
+Öte yandan bu şemayı her zaman kullanım sürençliği metniyle birlikte bakıyorsak, o zaman zaten hangi elin, kimin yaptığı orada gözüküyor ama
+
+663
+02:40:39,720 --> 02:40:45,000
+yine de şu şemada da özneleri belirtmiş olsaydım daha iyi olurdu.
+
+664
+02:40:45,920 --> 02:40:48,040
+Hatta bu not bile alayım yani.
+
+665
+02:40:48,220 --> 02:40:53,420
+Sonraki dönemlere bunları yazsam iyi oluruz.
+
+666
+02:40:57,075 --> 02:41:08,355
+Sizinle sözde söylemiş oldum. Şuraya bir yolum gireyim. Gözden geçiriz. Bir tane açıklama gireyim. Nereye koydu? Üçmüş, şuraya koydu.
+
+667
+02:41:20,724 --> 02:41:35,524
+Ulaştırır diyorum. Çünkü benim zaynı GML bu kadar, işte, swing lens çizmeye fızmıyor da, o yüzden. Sebebi o. Yoksa swing lens çizmek iyidir sana. Evet, peki. Mütfarı gelmedi.
+
+668
+02:41:41,299 --> 02:42:07,559
+Vaktimiz var arkadaşlar. Eğer soru varsa soru yapalım. Yoksa bu durum diagramını kalan süremiz içerisinde çizmeyi sıkıştırmak istemiyorum. Çünkü onu daha dikkatli çizmemiz gerekiyor. Bence bugünlük bu etkinlik işlemesini çizmemiz yeter diye düşünüyorum. O yüzden soru varsa lütfen çekinmeden rahat rahat sorun. Onların üstünden geçelim. Ondan sonra ders kapatalım.
+
+669
+02:42:13,075 --> 02:42:14,455
+İnanılışmak istedim.
+
+670
+02:42:21,556 --> 02:42:23,195
+Evet, bu yürürüm. Varsak sonra bekliyor.
+
+671
+02:42:44,948 --> 02:42:46,087
+Evet, çok teşekkür ederim.
+
+672
+02:42:47,379 --> 02:43:15,379
+İlerleyen derslerimizde aynı senaryo üzerinden diğer şamaları da çizeceğiz değil mi? Evet. Haftaya eğer lab yapmazsak, ders yaparsak öyle yapacağız. Lab yaparsak da lab üstünden devam edeceksiniz zaten. Bu noktada kaldık. Bir sonraki teorik dersimizde bu sefer yine bu market, next gen post örneği üzerinden durum diyaklamı çizeceğiz. Ondan sonra da daha önceki dersimizde...
+
+673
+02:43:15,379 --> 02:43:20,659
+Oluşturduğumuz alan modelini tasarım şeması şekline çevireceğiz. Böyle ilerleyeceğiz.
+
+674
+02:43:20,659 --> 02:43:27,379
+Diğer şeması zaten bundan aslında. Yüz case'i zaten çizmiştik. Sınıf şemesini çizdik ve tamamlayacağız.
+
+675
+02:43:28,500 --> 02:43:33,779
+Aktivite diagramı çizdik. Durum diagramı da çizeceğiz. Sequence diagramı tekrar çizmeyeceğim.
+
+676
+02:43:34,359 --> 02:43:38,599
+Onu biliyorsunuz artık diyorum. Ama yine de belki yapabiliriz yani.
+
+677
+02:43:39,219 --> 02:43:42,659
+Şey yaparsak, hedef özellikle sınıf şemasından sonra...
+
+678
+02:43:43,379 --> 02:43:49,959
+Sınıf şamasını çizerken, metotları da içeren sınıf şamasını çizerken, bazı şeylerin ayrıntılarını sözle konuşacağız.
+
+679
+02:43:49,959 --> 02:43:55,159
+Evet ama birden fazla alternatif kodlama yapabileceğimizi de keşfedeceğiz.
+
+680
+02:43:55,500 --> 02:44:02,099
+Hangi alternatiflere karar verdiğimizi net olarak ifade etmek için o sırada bir iki sequence diagramda çizileceğiz.
+
+681
+02:44:02,219 --> 02:44:03,119
+Evet çiziyorduk doğru.
+
+682
+02:44:04,659 --> 02:44:06,099
+Böylece hepsini çizmiş olacağız.
+
+683
+02:44:08,519 --> 02:44:09,139
+Bir şey dinliyorum.
+
+684
+02:44:10,067 --> 02:44:15,587
+Ben de teşekkür ederim soru için. Başka soru soran arkadaşım var mı varsa buyursun lütfen.
+
+685
+02:45:12,020 --> 02:45:19,020
+bu
+
+686
+02:45:29,747 --> 02:45:43,747
+Neyse, aynı zamanda karıştırdım. Aynı zamanda gönderdiler. Daha önce söylediğim gibi hiç eksiklik beyan etmediler. Çeşitli zayıflık ve kaygı beyanında bulundular.
+
+687
+02:45:43,747 --> 02:45:57,747
+Şimdi onların bu raporlarına bizim bir 30 günlük yanıt zamanımız var. Onların işte zayıflık veya eksiklik olarak gördüğü şeylerin aslında ön görev...
+
+688
+02:45:57,747 --> 02:46:06,667
+Dedikleri şekilde, açıkladıkları şekilde olmadığını delilleriyle birlikte gösterebilirsek bazı zayıfıklarımız silinecek veya kaygıya çekilecek.
+
+689
+02:46:06,667 --> 02:46:17,808
+Ama her halükarda biz şu an hiçbir yanıt vermesek bile, bir 30 gün yanıtımızı kullanmasak bile 2 sene akreditasyon almaya hak kazanmış durumdayız.
+
+690
+02:46:18,047 --> 02:46:19,648
+Çünkü eksikliğimiz yok.
+
+691
+02:46:20,084 --> 02:46:21,664
+Sadece zayıflıklarımız var.
+
+692
+02:46:22,184 --> 02:46:23,123
+Hayır, zorlu olsun.
+
+693
+02:46:23,504 --> 02:46:26,044
+Teşekkür ederim hepimiz için. Daha çok sizler için.
+
+694
+02:46:26,344 --> 02:46:30,443
+Çünkü yoksa bizden ziyade bu sizin için olan bir şey.
+
+695
+02:46:30,704 --> 02:46:32,304
+Öğrencilerimiz için olan bir şey.
+
+696
+02:46:32,304 --> 02:46:37,704
+Tabii ki akredite bir programa daha fazla öğrenci tercihi olacaktır haliyle.
+
+697
+02:46:38,103 --> 02:46:43,103
+Ama çok şükür programımızın öğrenci tercihi kısmı.
+
+698
+02:46:43,152 --> 02:47:01,391
+Sıkıntısı da yok. Her sene programımıza kayıt olmayan hak kazanan öğrencilerin puanları yükselerek geliyorlar. Bu açıdan bir sıkıntımız yok ama nihayetinde öğrencilerimize daha iyi hizmet verebilmiş olmak, onlara avantaj ve farklılık kazandırabilmek için yapıyoruz biz bu mülük işlerini.
+
+699
+02:47:11,152 --> 02:47:31,691
+2021-2022, bahar büyük ihtimalle bu iki sene şeklinde akredite olacağız. Ondan sonra bu sabitleşen zayıflıklarımızı ve kaygılarımızı gidermek üzere iki sene sonra, daha doğrusu aslında bir sene kaldı. Çünkü bir sene geçmiştir.
+
+700
+02:47:39,152 --> 02:48:01,671
+O hazırlama sürecine ve tekrar değerlendirme sürecine gireceğiz. Ama şu an için 2 seneden başlamak üzere 2 sene akrediteyiz. Bu sene ve bu sene mezun olacak arkadaşlar akredite olarak mezun olmuş olacaklar. Biz bunun devamını da sağlamak istiyoruz. Bundan sonra inşallah böyle devam edeceğiz.
+
+701
+02:48:02,131 --> 02:48:04,152
+Teşekkürler hocam, emeğinize sağlık.
+
+702
+02:48:04,231 --> 02:48:14,252
+Çok kişinin çabası var bu konuda. Sizlerin de, öğrencilerin de gelip görüşen, toplantılara katılan öğrencilerin de, herkesin emini var burada.
+
+703
+02:48:14,783 --> 02:48:17,563
+Ben de teşekkür ederim. Başka soru varsa buyurun.
+
+704
+02:48:17,923 --> 02:48:22,523
+Hocam, ABET için bir şey yapılıyor mu? Ne düşünüyorsunuz? Var mı bir şey yani?
+
+705
+02:48:22,523 --> 02:48:36,004
+ABET için bir şey düşünmüyoruz. Çünkü müdekinde uluslararası tanınır olduğu için iki ayrı akreditasyon yeterince insan kaynağı ayıramayız.
+
+706
+02:48:36,083 --> 02:48:42,523
+Yeterince çaba, efor harcayamayız. Üniversite düzeyinde alınan genel karar...
+
+707
+02:48:42,783 --> 02:48:54,123
+Tek bir akreditasyonun yeterli olmasıdır. O yüzden aynı icabet düşünmüyoruz. Müdek'in de uluslararası tanınılılığı var. O yüzden Müdek'le devam edeceğiz.
+
+708
+02:48:55,564 --> 02:48:56,863
+Tamamdır hocam. Teşekkürler.
+
+709
+02:48:59,219 --> 02:49:09,039
+ABET'i zamanında ilk İTÜ başvurmuştu. Ama ondan sonra onlar da müddet geçtiler. ABET'i sürdürüyorlar mı bilmiyorum ama o kadar yakından takip etmedim bu aşamada.
+
+710
+02:49:10,399 --> 02:49:26,280
+Sürdürüyorlar hocam. Sürdürüyorlar ama nasıl bir farklılık sağlıyor? Mesela şu anda biz gitsek Amerika'da denklik sağlayamıyor muyuz? Denklik için başka bir şey mi? Diploma mu almamız gerekiyor? Çok bilmiyorum.
+
+711
+02:49:27,219 --> 02:49:28,020
+Yeterli oluyor mu?
+
+712
+02:49:28,920 --> 02:49:37,860
+Müdek yeterli oluyor. Müdek Washington Accord adlı üst kurumun bir üyesi. Washington Accord, Amerika'da da tanınıyor yani.
+
+713
+02:49:38,639 --> 02:49:39,379
+Anladım hocam.
+
+714
+02:49:39,879 --> 02:49:40,260
+Bu adı var.
+
+715
+02:49:41,860 --> 02:49:43,239
+Başka sonuç sorular mı?
+
+716
+02:50:00,435 --> 02:50:27,075
+Peki o zaman, bugün bu kadar yeter madem arkadaşlar. Haftaya belki lap yaparız, belki teorik yaparız. Sizleri bilgilendireceğim, haber vereceğim. Kısa bir sene dinledikten sonra da bu şu an chatte paylaştığım proje raporunu adres site yayınlayıp sizlere de, bütün öğrencilere de, yüz üstü üzerinden mail ile de tekrar duyuracağım. Haftaya görüşmek üzere. Sağlıcakla kalın.
+
+717
+02:50:27,796 --> 02:50:29,156
+Şimdilik alansın anladık.
+
+718
+02:50:29,816 --> 02:50:30,496
+İyi günler hocam.
+
+719
+02:50:30,996 --> 02:50:32,136
+Teşekkürler hocam, iyi günler.
+
+720
+02:50:32,456 --> 02:50:33,236
+İyi günler hocam.
+
+721
+02:50:35,656 --> 02:50:37,256
+Evet, önce bir tutukça atlayalım.

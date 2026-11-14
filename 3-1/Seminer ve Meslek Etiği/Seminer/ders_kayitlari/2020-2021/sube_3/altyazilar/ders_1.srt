@@ -1,0 +1,983 @@
+1
+00:00:30,643 --> 00:00:38,704
+Evet arkadaşlar, günaydın. Hoş geldiniz. Şimdi birazcık bekleyelim katılımcı sayınız azıcık artsın. Ondan sonra bugün dersimize başlıyoruz.
+
+2
+00:01:05,364 --> 00:01:09,364
+Şu an 13 öğrencim var. Biraz daha artacağız tabii ki.
+
+3
+00:01:45,492 --> 00:01:51,012
+Evet, sayımız altıyor. 14'e bir takılmıştık. Şimdi bir hızlıcak atalım daha.
+
+4
+00:01:51,012 --> 00:01:51,632
+Bakalım.
+
+5
+00:02:17,907 --> 00:02:25,987
+Peki arkadaşlar, en son bekleyelim dediğimden beri 4 arkadaşım daha katıldı aramıza.
+
+6
+00:02:36,116 --> 00:02:42,596
+Arkadaşlar, ben biraz başlamak istiyorum.
+
+7
+00:02:44,596 --> 00:02:52,336
+Beni birazdan anlayacaksınız. Bu dönem seminer dersini üç grup olarak yürütüyoruz.
+
+8
+00:02:53,396 --> 00:02:59,336
+Biz üçüncü grubuz. Birinci grupta Sınma Hocam var, ikinci grupta Fatih Hocam var.
+
+9
+00:02:59,711 --> 00:03:20,351
+Şimdi bu ilk hafta öğrencilerin UTSI kayıtlarından bu online yıldız yeni sisteme aktarılmaları dün ancak gerçekleşirdi. Dün akşam gibi tam olarak. Nihaletinde yeni bir sistem. O yüzden alışmamız gereken bazı şeyler.
+
+10
+00:03:20,979 --> 00:03:30,339
+Yapılması gereken bazı şeyler var. Ama örneğin dün yapısal programlama dersimi yapabildim.
+
+11
+00:03:31,924 --> 00:03:50,724
+Fakat o dersin birinci grubu bendeydi. İkinci grubun öğrencileri benden dinlediler biraz. Problem yok. Bu ders için de problem yok. Çünkü üç grup olarak da aynı ders notları üzerinden gideceğiz. Ders notlarımız aynı, sınavlarımız aynı, ödevlerimiz aynı, ders yürütüş şekillerimiz aynı.
+
+12
+00:03:59,924 --> 00:04:04,184
+Asenkron olarak da seyredebileceksiniz, izleyebileceksiniz.
+
+13
+00:04:06,084 --> 00:04:10,444
+Şimdi sunum moduna geçeyim, öyle devam edeyim.
+
+14
+00:04:10,444 --> 00:04:18,984
+Bu arada arkadaşlar, eğer soru sormak isteyen varsa, ister kendisini sesliğe alıp mikrofonun sesini açıp sorabilir, ister chatten yazabilir.
+
+15
+00:04:19,464 --> 00:04:23,844
+Her halükarda sistem dikkatini çekiyor. Ben de sorunları yanıtlıyorum.
+
+16
+00:04:33,108 --> 00:04:58,108
+Evet, şimdi arkadaşlar dersin ilk 3 haftasında konu anlatımı olacak. Derslerin hocaları konu anlatacaklar. Temel chat sorusu geldi. Umut diyor ki bu grupta olmasına rağmen sistem grup 1'e atıyormuş. Peki, olabilir arkadaşlar. Problem yok. Dediğim gibi ders notları aynı.
+
+17
+00:04:58,771 --> 00:05:02,771
+Sınavlar aynı, yapılacak her şey aynı.
+
+18
+00:05:04,788 --> 00:05:32,128
+Farklı grupta girmek ancak ileriki haftalar. Yani sizlerin sunum yapmaya başladığınız haftalarda zorundan teşkil edebilir. Ama o zamana kadar da bu aktarım sorunları çözülecektir diye düşünüyorum. Daha yeni öğrenci kayıtları, yani üstten bilgilerini çekip gruplara yönlendirmesi yeni yapıldı. Hala ufak tefek buglar, hatalar olabilir. O yüzden yanlış gruba düşmüş olabilirsiniz.
+
+19
+00:05:32,788 --> 00:05:37,968
+Bu ilk üç hafta boyunca kesinlikle problem değil. Merak etmeyin o konuda.
+
+20
+00:05:41,651 --> 00:06:06,891
+Nasıl yürüteceğiz dersi? Üç grupta da. Ağırlık olarak tabii ki öğrenci sunumları şeklinde ilerleyecek bu ders. Çünkü dersin ana konsepti bu. Tabii ki sizlere önce bu sunumları hazırlarken ve sunumları yaparken nereye dikkat etmeniz gerektiği, nelerden kaçınmanız gerektiği gibi konulardan bahsedeceğiz.
+
+21
+00:06:07,475 --> 00:06:13,355
+Bunun dışında ayrıca dersin iki ayrı farklı amacı daha var.
+
+22
+00:06:13,779 --> 00:06:25,539
+Birincisi sizleri biraz araştırma yöntemlerinden ve bilimsel veya teknik raporların hazırlanmasına yönelik bir altyapı kazandırmak istiyoruz.
+
+23
+00:06:25,539 --> 00:06:41,539
+Dersin bir amacı da bu. Onun dışında aslında bütün eğitim programlarının ana amaçlarından biri olması gereken fakat onlar için özel ayrı bir ders adayamadığımız
+
+24
+00:06:41,779 --> 00:07:00,500
+Yaşam boyu öğrenme, girişimcilik ve sürdürülebilir kalkınma konularında da farkındalık kazanmanız için de iki hafta boyunca anlatacağımız konular olacak.
+
+25
+00:07:00,979 --> 00:07:08,039
+Bütün bunları üç hafta içerisinde anlatacağız. Ardından dördüncü haftadan itibaren sizlerin sunumlarınız başlayacak.
+
+26
+00:07:08,564 --> 00:07:21,504
+Dersin bir sınavını yapacağız. Bu hocanın anladığı konulardan sınav olacaksınız. Öğrenci sunumlarından sorumlu değilsiniz sınavlarda. Yaptığımız sunum bir ara sınav değerinde olacak.
+
+27
+00:07:22,355 --> 00:07:34,755
+Daha sonra final haftasına doğru kendi yaptığımız sunumdan bir rapor hazırlayacaksınız. Onu tabii ki de derste gördüğünüz rapor hazırlanma kuralları çerçevesinde hazırlayacaksınız.
+
+28
+00:07:34,755 --> 00:07:50,355
+Ve aynı ara sınavın içeriğine benzer bir final sınavı da bulacaksınız. Şimdi raporu finalin bir parçası olarak değerlendiriyoruz. O yüzden ara sınav %30, sunum %30, rapor %15 ve final %25 şeklinde bir puanlama.
+
+29
+00:07:50,355 --> 00:07:51,135
+belirledik.
+
+30
+00:07:56,627 --> 00:08:08,168
+Şimdi birkaç senedir yürekte olan değişik kararlar var. Bunları derslerin başında anlatmayı seviyorum. Bilginizin olması gereken konular bunlar.
+
+31
+00:08:08,168 --> 00:08:21,367
+Şimdi 2018'den beri uygulanan bir karar. Ders geçme, şimdi şöyle, kılıkın altında bir notla ders geçilemez. Bu, özetle bu kararı aldılar.
+
+32
+00:08:23,124 --> 00:08:49,844
+Bu aklınızda olsun. Onun dışında sonraki sene devamlı koşulları biraz klaştılar ama işin içerisinde salgın koşulları gelince bu kararları askıya aldılar. O yüzden derste devam zorunluluğu yok. Fakat bu ders kapsamında, bu ders özelinde sunum yapacağınız zaman derse katılıp online, şerine katılıp sunumunuzu yapmanız beklenmekte.
+
+33
+00:08:50,240 --> 00:09:17,836
+Onun dışında devamsızlıktan öğrenci bırakmayacağız. Öyle istiyor. O tabii sınava da girmemiş, sunumunu da yapmamış olan arkadaşları da onları devamsızlıktan bırakabilirim. Çünkü bütünlemeye girme gibi bir durumda zaten geçemeyecekleri için. Çünkü şu not ağırlıklarına baktığınızda dönemik şehrinler yüzü altı, sunumun yüzde altmış. Bu nedenle...
+
+34
+00:09:17,908 --> 00:09:41,748
+Bu etkinlikleri çevremiş olarak devam etmenizi istiyoruz. Sınavlar yine çevremişi yapılacak. Sınavları da mı yeni sistemle yapacağız yoksa sınavlar için online kampüsü mu kullanılacak onu henüz bilmiyoruz. Bilgi gelmedi ama herhalde sınavlarımızı çevremişi yapacağız.
+
+35
+00:09:45,268 --> 00:09:50,488
+Dördüncü haftan itibaren siz konuşacaksınız. Ben dinleyeceğim. Bunu hatırlatırım.
+
+36
+00:09:51,648 --> 00:09:56,708
+Şimdi elli dakikalık olan ders süremizi açmamaya çalışacağız.
+
+37
+00:09:57,327 --> 00:10:02,928
+Bu nedenle zamanlamaya bütün arkadaşlarımın uymasını istiyorum.
+
+38
+00:10:03,847 --> 00:10:06,708
+Her derste sekiz öğrenci sunumu yapacak.
+
+39
+00:10:07,408 --> 00:10:12,488
+Sunumlarınızı dört dakikada anlatacağınız şekilde hazırlayıp sunacaksınız.
+
+40
+00:10:12,947 --> 00:10:35,728
+4 dakikalık sonunu ardından da 2 dakikalık soru cevap kısmı gelecek. Bütün öğrencilerin sunum yapan arkadaşa soru sorabilir. Eğer arkadaşlarım sormazsa o zaman ben soracağım. Bir soru bile olsa anlattıkları konudan, kafamıza takılan, merak ettiğimiz konulardan soracağız.
+
+41
+00:10:36,563 --> 00:11:04,563
+Son 4 dakika. Bu 4 dakikaya uyarabilmek için 3. dakikada ben uyarı yapacağım. Sonra da skronometre de tutuyor olacağım elbette. 3. dakikaya gelince ben son 1 dakikanız kaldı uyarısı yapacağım. Ve bu son 1 dakika içerisinde de sunumunuzu planladığınız içerikle birlikte anlatmış olmanızı bekleyeceğiz. 4 dakika doldu ama daha anlatmanız gereken önemli bir kısım.
+
+42
+00:11:04,563 --> 00:11:15,103
+Bu bir puan kaybı olarak değerlendirecek ve bu kadar yeterli teşekkür ederiz deyip bir sonraki arkadaşım sunuma devam edecek.
+
+43
+00:11:16,307 --> 00:11:32,168
+Hazır burada yeri gelmişken özellikle bir şey hatırlatmak istiyorum. Sunum yapma teklifleri konusunda da konuşacağız. Ama sunum bir kere hazırlanan bir şey değildir veya yiner olarak hazırlanan bir şey değildir. Bence iteratif olarak hazırlanan bir şeydir.
+
+44
+00:11:42,580 --> 00:11:54,879
+Belki bilgisayar karşısında bir üstünden geçip planladığınız sürede anlatıp anlatamadığınıza bakarsınız, bakmalısınız.
+
+45
+00:11:55,344 --> 00:12:13,484
+Eğer planladığınız sürede anlatamayacağınızı gördüğünüzde o zaman içeriği daha özüt bir biçimde yan ayrıntıları atlayıp ana ayrıntılara odaklayacak şekilde daha kısa bir sürede anlatabileceğiniz şekilde toparlarsınız sunumunuzu.
+
+46
+00:12:13,484 --> 00:12:14,783
+Tekrar denersiniz.
+
+47
+00:12:15,443 --> 00:12:28,903
+Süreyi dahilinde misiniz? Tamam, sorun problem yok. Hala sürenin dışındaysa, o zaman biraz daha özetleme, böyle böyle sunumu, ilgili çerçeveye sığdırma şeklinde çalışmanızı öneririz.
+
+48
+00:12:32,436 --> 00:12:40,136
+Şimdi konu seçmekte sabitsiniz arkadaşlar. Ve bu konular kesinlikle meskipki konu olmak zorunda değil. Hobileriniz olur.
+
+49
+00:12:40,916 --> 00:13:08,556
+Mesleki konuda seçebilirsiniz. Teknik konuda seçebilirsiniz. Ama genelde teknik konuların her iki teknik beceri kazandıracak şekilde anlatılması, bırakın 4 dakikayı, bir ders saati veya 30 dakika bir seminar, 40 dakika bir seminerde bile pek mümkün olmuyor.
+
+50
+00:13:08,916 --> 00:13:15,755
+O yüzden teknik olmayan konulara yönelmeniz daha avantajlı olabilir.
+
+51
+00:13:16,135 --> 00:13:30,796
+Teknik konularda ise o teknik konunun ne işe yaradığını, nasıl çalıştığından ziyade belki temel olarak ne maçlarda kullanıldığı gibi 4 dakikaya kısıtlayabileceğiniz bir şey olursa o da olabilir.
+
+52
+00:13:30,956 --> 00:13:31,456
+Siz bilirsiniz.
+
+53
+00:13:31,456 --> 00:13:34,076
+Konu seçimi tamamen size kalmış.
+
+54
+00:14:00,052 --> 00:14:19,932
+Bu nedenle Gmail adresine yönlendiriyorlar size. Sunum konularınızı bildirin. Eğer aynı konu bildiren iki arkadaş olursa o zaman o arkadaşlarla hemen o gün yine mail iletişime geçip diyeceğim ki siz o konunun şu alt dalına, siz de şu ödül alt dalına odaklanın diyeceğim.
+
+55
+00:14:28,052 --> 00:14:48,491
+Siz de birinci tekir şahıs savaş oyunlarına odaklanın. Bir üçüncü arkadaşım olsa siz de mobil oyunlara odaklanın falan gibi alt konu kıvılımı belirleyeceğiz. Böylece aynı sunum olmayacak. Diyeşitli konularda geniş bir yer fazlada sunumlar dinliyor olacaksınız arkadaşlar.
+
+56
+00:14:50,323 --> 00:15:03,183
+Sunum takvimini bu dördüncü haftadan itibaren yapacağımız sunum takvimini rastgele belirleyeceğim. En güzel de rastgele sayı ataraktan sonra onu sıralayarak o şekilde belirleyeceğim.
+
+57
+00:15:05,299 --> 00:15:32,899
+Değişiklik talebi almayacağız bunu duyduktan sonra. Fakat aranızda bir arkadaşla anlaşıp karşılıklı değiştirme, buna becaiş deniz. Bu hukuk terminolojisinde kullanılan, biraz eski bir deyim olmakla birlikte, eski kelime olarak halen kullanılan bir deyim, becaiş. Yani karşılıklı değiştirme. Becaişi kabul edeceğiz ama onu düşünüyorum. Bir an önce tek başına git. Ben sunulmuş tarihi ertemek istiyorum.
+
+58
+00:15:33,299 --> 00:15:48,199
+Talebini kabul etmeyeceğiz. Bunun kabul edilebilmesi için yönetmeliklerde belirlenmiş mazeret dilekçesi verme sürecini izlemesi gerekli arkadaşlar.
+
+59
+00:15:50,079 --> 00:15:59,359
+Şimdi şunu da söylemeyi unutmayın. 19 Ekim Pazartesi akşamına kadar konuyu bildireceksiniz deyip bildirmeyen arkadaşlar sunum yapamayacak.
+
+60
+00:15:59,744 --> 00:16:12,364
+Bu nedenle konunuzu seçmeniz ve zamanında bildirmeniz önemli. Daha sonra bu konuların ardından duyurulacak programa uymanız önemli. Arada becaiş kabul ediyoruz demiştik.
+
+61
+00:16:16,083 --> 00:16:34,843
+İleriki haftalarda anlatacak arkadaşlara haksız bir avantaj kazanmamaları için bütün öğrencilerin sunumlarını 26 Ekim Pazartesi akşamına kadar özellikle PowerPoint formatında hocalara göndermenizi istiyoruz.
+
+62
+00:16:39,124 --> 00:16:52,984
+Dersin süresini verimli kullanabilmek için şu yöntemi izleyeceğiz. Sırası kayan arkadaşın sunumunu ben açacağım ve paylaşacağım. Arkadaşımı da sonraki yaz soracağım veya önceki yazıya geri döner misiniz falan gibi beni yönlendirecek.
+
+63
+00:16:53,427 --> 00:17:10,768
+Bu şekilde daha hızlı ilerleriz. Gerçi çevrim içi derste sonun yetkisi atama daha hızlı yapılan bir şey. Fiziksel olarak yaptığımız zaman dersi, öğrenci kendini bilgisini çıkartacak, takacak, projeksiyonu görecek, görmeyecek falan epey bir süre geçiyordu.
+
+64
+00:17:11,827 --> 00:17:30,867
+Online dersi daha kolay bu. Ama yine de olasız teknik atlattıklardan kaynaklanabilecek zaman aşımlarını engellemek için böyle bir yol izlemeye devam ediyoruz. Bütün öğrenciler 26 Ekim pazartesi akşamına kadar sunumlarını gönderecekler.
+
+65
+00:17:36,432 --> 00:17:46,791
+Sunumunu geciktirmiş, sunumunu göndermeyi geciktirmiş olan arkadaşlar da bu gecikme süresiyle doğru orantılı olacak şekilde ceza puanı keseceğiz.
+
+66
+00:17:47,632 --> 00:17:51,092
+Bunu da önceden haberiniz olmasını istiyorum.
+
+67
+00:17:51,711 --> 00:17:59,251
+Hem yaptığımız sunumda 4 dakikalık zamana uymanız bir önemli kriter puanlama açısından.
+
+68
+00:17:59,692 --> 00:18:03,632
+Hem de sunumlarınızı zamanında göndermeniz önemli bir kriter.
+
+69
+00:18:06,451 --> 00:18:17,172
+Peki, insanlık halinde, hele ki zor zamanlardan geçiyoruz bu sargı ortamında. Neden ne? Hastalık olur, başka bir şey olur.
+
+70
+00:18:19,988 --> 00:18:39,688
+Sunumunu zamanında yapamayan öğrenciler, yönetmelik kuralları süreci çerçevesinde bölüme mazzeyet dilekçesi verip eğer dilekçeleri kabul ederlerse dersin son haftasında ki o da 6 Ocak 2021 gününe denk geliyor, sunumlarını yapacaklar. İleride duyuracağımız bir programa göre.
+
+71
+00:18:42,195 --> 00:18:54,675
+Onun dışında benzer durum vize içinde geçerli. Ara sınava giremeyen öğrenciler yine mazeretle iletişesi verip dersin son haftasında mazeret sınavına katılabilecekler.
+
+72
+00:18:54,675 --> 00:18:58,635
+Ama bu mazeret sunumunu ve mazeret sınavını...
+
+73
+00:18:58,675 --> 00:19:16,795
+Eş zamanlı olarak yürüteceğiz. Dersin 3 kurulu var. Bu 3 hocadan birisi sınavı okuyacak, öbür hoca telafi sunumlarını dinleyecek, notlayacak. O yüzden aynı öğrenci hem telafi sunumuna hem telafi sunumuna giremez.
+
+74
+00:19:25,332 --> 00:19:42,792
+Diğer üçüncü not bileşenimiz ise kendi yaptığınız sunumdan oluşturacağınız rapor olacak. Bunu finalin bir parçası olarak görüyoruz. O yüzden onun hazırlanıp gönderilmesi için olan son tarih final haftasının ilk günü olacak. Onu da ilmeğe ilerleyip istiyoruz sizden.
+
+75
+00:19:53,332 --> 00:20:08,632
+Her hocanın kendi yoğurt yiyişine bağımlı olarak abesli sayfamızda üst üsünden mail göndererek veya işte değişik ek yöntemlerle örneğe infartı hoca dersi için bir sayfa, özel sayfa açmış oradan.
+
+76
+00:20:08,960 --> 00:20:34,279
+İletiyor olacağız arkadaşlar. O yüzden olası değişiklikler için dersleri dinlemeye devam edin. Anlık olarak, senkron olarak kıtlamasanız bile sonra dönüp kaydedilmiş dersin en azından ya başında ya sonunda diğerinde böyle şeyleri duyuruyor olacağız. Onlarda bir değişiklik var mı, bir güncelleme var mı? Lütfen bakın.
+
+77
+00:20:35,700 --> 00:20:42,320
+Ana hatlarıyla bu arkadaşlar. Bu aşamada sorusu olan arkadaşım varsa lütfen duyuyoruz.
+
+78
+00:20:49,971 --> 00:20:50,971
+Çok sürekli bir şey.
+
+79
+00:20:55,667 --> 00:21:18,127
+Evet, bir şeyler geldi bakalım. Raporda yazmamız gereken ne? Şimdi kendi seçeceğiniz bir konuda yapacağınız sunum olacak ya arkadaşlar. O bizler sunumda anlattıklarımızın üstüne bir iki bir şey daha koyup çünkü dört dakika süre içerisinde belki istediğiniz her şeyi anlatacak kadar bir zaman değil bu. Sunumunuzu her arkada dört dakika içerisinde bitireceksiniz ama.
+
+80
+00:21:18,528 --> 00:21:40,847
+Anlatmanız gereken ek şeyler varsa onları yazabilirsiniz raporunuza. En azından raporunuzun içeriği sunum olarak anlattığımız konunun bir rapor halinde ifadesi. Bu rapor sunumuzda biraz daha geniş içeriğe sahip olabilir. Ama en azından sunumumuzda aynı içeriğe sahip olacak. Raporda bunu bekliyoruz sizden arkadaşlar.
+
+81
+00:21:43,059 --> 00:21:57,539
+Bunu yaparken rapor hazırlama konusunda kaynak gösterme, alıntılama, rapor formatı bunlarla ilgili anlattığımız şeylerin her birine uyup uymamanıza göre de raporumuzu notlandıracağız.
+
+82
+00:22:01,140 --> 00:22:08,640
+Başka sorusu olan arkadaşım varsa veya bu açıklam yeterli olmadıysa tekrar söyleyin lütfen.
+
+83
+00:22:18,132 --> 00:22:25,392
+Bunda kamera kullanacak mıyız? Evet, güzel soru. Şimdi sunma başladığınızda bir sizi göreyim arkadaşlar.
+
+84
+00:22:26,259 --> 00:22:52,080
+Ondan sonra kameramızı kapatabilirsiniz. Problem yok. Bazen band genişliği tasarruflu için kamerayı kapatmak gerekli de olabiliyor. Geçen eski sistemde özellikle bunu yapıyorduk. Şimdi zoom tabanlı olan yeni sistemde görüntü sıkıştırılması çok daha verimli yapılıyor. O yüzden aslında kamera açık konuşmada band genişliği açısından sıkıntı yok.
+
+85
+00:22:53,683 --> 00:23:02,403
+Fakat isteyen arkadaşlarım tekrar bir başta karşılıklı bilginizi görelim. Ondan sonra kamerayı kapatabilirsiniz arkadaşlar.
+
+86
+00:23:04,443 --> 00:23:06,764
+Evet, önemli bir konuydu. Teşekkür ederim.
+
+87
+00:23:08,384 --> 00:23:13,344
+Sunumun minimum uzunluğu var mı? Minimum uzunluğu yok arkadaşlar. Maksimum süresi var.
+
+88
+00:23:13,504 --> 00:23:18,484
+Dört dakika içerisinde anlatmak istediklerinizi anlatacağınız şekilde hazırlamamız lazım.
+
+89
+00:23:18,784 --> 00:23:20,364
+Onun dışında başka bir kısıtımız yok.
+
+90
+00:23:25,652 --> 00:23:27,971
+Buyurun, başka soru sana arkadaşım varsa.
+
+91
+00:23:35,380 --> 00:23:50,820
+Konu seçimi istediğiniz konuyu seçebiliyorsunuz arkadaşlar. Yalnız sadece bu 3. haftanın pazar testisine kadar yani şuradaki yansıda görüyorsunuz.
+
+92
+00:23:51,020 --> 00:23:55,380
+19 Ekim pazar testi akşamına kadar bana seçtiğiniz konuyu bildiriyorsunuz.
+
+93
+00:23:56,084 --> 00:24:07,903
+Eğer konunun arasında duplikasyon varsa da ilgili arkadaşlarla temas geçip siz o konunun şu alt bağlamını inceleyin. Siz de diğer alt bağlamını inceleyin şeklinde ayrışmayı sağlıyoruz. O kadar.
+
+94
+00:24:10,764 --> 00:24:11,964
+Evet, başka sorusu olan.
+
+95
+00:24:21,587 --> 00:24:25,607
+Bir kumu seçersek son seçimi gününe kadar değiştirebilir miyiz? Evet, değiştirebilirsiniz.
+
+96
+00:24:26,667 --> 00:24:27,267
+Kılaplam yok.
+
+97
+00:24:32,852 --> 00:24:39,852
+Masaüstü Bilgisayar kullanıyorum. Kamera yok. Peki, tamam. Problem de yok.
+
+98
+00:24:39,852 --> 00:24:41,852
+Ne diyeyim.
+
+99
+00:24:43,852 --> 00:24:56,852
+Sunumlarınızı bana göndereceksiniz ya arkadaşlar. O yüzden siz sadece mikrofon olması lazım. Mikrofonla beni yönlendireceksiniz. Sonraki yansıtı. Lütfen önceki yansıya geçer misiniz?
+
+100
+00:24:56,852 --> 00:24:58,732
+O kadar.
+
+101
+00:24:59,796 --> 00:25:25,296
+Mikrofon daha kolay. Yani kameraları, ya benim de mesela masaüstü bilgisayarına eski bir web kamerayı takmaya çalıştım. Başaramadım. İşletim sistemi kaç kere geçti ama kameranın driveru eski kaldı falan. Ama basitçe bir kulaklık artı mikrofonu mic jackine taktığınızda onu kullanıyorsunuz zaten. Orada kullanılıyor ama olmaz [öğrenci], merak etmeyin. Başka?
+
+102
+00:25:29,460 --> 00:25:38,460
+Ha şu bile olabilir mesela. Ben hiç cep telefonundan şunu kullanmadım ama bir araya bir denerim. Tabletten kullanabildik.
+
+103
+00:25:39,059 --> 00:26:07,019
+Kullandım. Ben kullanmadım da onlar da yüksek uzaktan eğitimde. Yani Zoom'a tabletten bağlanılabiliyor. Büyük ihtimalle cep telefonlarından da bağlanılabiliyoruz. O yüzden aslında kameram yokacak bir maceriyet değil ama zaten sunum süresince bir sürü görüşelim demek istiyorum sadece. O yüzden kameram olsun dedim. Yoksa [öğrenci]'un örneğinde olduğu gibi.
+
+104
+00:26:07,059 --> 00:26:08,299
+Problem yok.
+
+105
+00:26:11,000 --> 00:26:12,299
+Başka soru soralım.
+
+106
+00:26:19,508 --> 00:26:38,107
+Sunumlar başladıktan sonra öğreneceğimiz iyi bir şey olacak mı? Hayır arkadaşlar. Sunum programını paylaşıyor olacağız zaten sizinle. Rastgele belirlenecek dedim ya. Bir ödükten sonra sizinle paylaşıyor olacağız. Merak ettiğiniz konuların yoğunluklu olduğu günler olursa o gün gelir dinlersiniz.
+
+107
+00:26:38,107 --> 00:26:45,147
+Veyahut da o anda sıkı çıksınız. Daha sonra çevrim dışı yani asenkron olarak dinlersiniz.
+
+108
+00:26:46,612 --> 00:26:48,612
+Devam kontrolü yapmayacağım.
+
+109
+00:26:50,112 --> 00:26:52,112
+Devam etmeniz...
+
+110
+00:26:52,948 --> 00:27:14,448
+Öğren diğer arkadaşlarımız için yarar olacak. Nihayetinde bir topluluk önünde, çevrim içi bile olsa bir topluluk önünde sunum yapmak başka. Bir kişiye sunum yapmak başka. O yüzden vaktiniz varsa, olursa, konular ilginizi çekiyorsa, önemli sıkışıklığınız yoksa gelin buyurun. Bazen eğlenceli şeyler olabiliyor.
+
+111
+00:27:20,948 --> 00:27:34,148
+Okçuluktu. Resmen o gün geldi, okçuluk aletleriyle yay getirdi, değişik ok çeşitleri getirdi, okçulun kullandığı yüzürü getirdi falan. Yani değişik şeyler olabiliyor.
+
+112
+00:27:35,528 --> 00:27:46,648
+Şimdi tabii ki bu arkadaşın çevrim içi olsaydı biraz zor olurdu. Yani kameranın bütün çevresini göstereceği kadar ok pozisyonu alma falan olmazdı tabii de.
+
+113
+00:27:47,155 --> 00:27:50,076
+İnşallah kısa zamanda şu salgınlarını da atlatırız.
+
+114
+00:27:50,516 --> 00:27:52,556
+Evet, buyurun başka sorusu olan...
+
+115
+00:27:56,435 --> 00:27:57,115
+Ön.
+
+116
+00:27:57,779 --> 00:28:25,779
+Şimdi soracağınız sorular konuyla ilgili olacak. Evet. Sunum içinden mi? Sunumda olmayan ama konuya bağlı sorular mı olacak? Evet. Bazen sunumda anlattığımız bir şeyi tam anlamamışımdır veya bir çelişkili gibi olduğunu düşünmüşümdür. Onu açıklamanız için, biraz daha açıklamanız için olacak sorun. Veyahut da onunla ilgili bir şeye değinmemişinizdir. O konuyla ilgili acaba baktınız mı, bakmadınız mı?
+
+117
+00:28:25,779 --> 00:28:44,079
+diye biraz da bilgi ölçmek amacıyla soruyorum. Yani nihayetinde anlatacağınız şeyin hepsini anlatacağınız konuyla ilgili her ayrıntıyı 4 dakikada anlatamazsınız. Belki 40 dakikada bile anlatamazsınız. Ama anlattığınız içerikle yakın ilişkili diğer konulara da baktınız mı?
+
+118
+00:28:44,528 --> 00:28:54,668
+Onların içerisinden benliği 4 dakikalık bir sunum içerisinde daha rahat anlatım diye bir çalışma yaptınız mı? Bu gibi şeyleri ölçmek için böyle ince sorular sorabiliyorum.
+
+119
+00:28:54,668 --> 00:28:55,668
+Evet.
+
+120
+00:28:59,067 --> 00:29:00,887
+Başka soru soran.
+
+121
+00:29:11,892 --> 00:29:19,592
+Peki o zaman ben yansına ilerlemeye devam edeyim. Soru olursa zaten chat ekranım benim dikkatimi çekecek.
+
+122
+00:29:25,364 --> 00:29:34,624
+Peki, bundan bahsettik. Şimdi ilk anlatacağım içerik araştırma yöntem ve teknikleri olacak.
+
+123
+00:29:35,188 --> 00:30:00,000
+Burada iki kaynaktan yararlandım. Birincisi Research Methods of Business. Bu arada soru geldi. Hemen bakalım. [öğrenci] diyor ki vize final nasıl olacaktı? Bahsetmiştim. Kısaca tekrar anlatayım. Vize bu derste anlattığım, hocaların anlattığı yansılardan araştırma yöntem teknikleri, sunum yöntem teknikleri, rapor hazırlama...
+
+124
+00:30:00,180 --> 00:30:15,779
+Teknikleri, girişimcilik, sürdürebilir kalkınma, hayat boyu öğrenme. Bu alt konumuz var. Bu alt konuyla ilgili yansılarda verdiğimiz, anlattığımız içerikten bir vize ve bir final olacaksınız. Öğrenci sunumlarından sorumlu değilsiniz sınavlarda.
+
+125
+00:30:19,124 --> 00:30:44,144
+İlk bahsedeceğimiz konu alaştırma yöntem ve teknikleri. Ben iki kaynaktan yararlandım. Birisi 2012 tarihli Research Methods for Business Students kitaptan bir parça. İkinci kaynak ise aslında Diyadır Tarih-Curay Fakültesi Felsefe Bölümü öğretim üyelerinden Ankara Mühendisliği'nin hocalarından Uday Masranoğlu'nun bir yazısı.
+
+126
+00:30:47,124 --> 00:31:00,784
+Araştırma yöntemleri, teknikleri bilimsel veya teknik bir konuyu ortaya çıkarmak için yapıldığından sadece bilgisayar mühendisliği, literatüründen, kaynaklardan yararlanmayız halbette.
+
+127
+00:31:00,784 --> 00:31:05,784
+Bu nedenle yararlandığım kaynakların çoğu...
+
+128
+00:31:06,963 --> 00:31:22,323
+Bilgisayar Mühendisliği literatüründen alınmış değil. Bunlar sizlere genel bir altyapı kazandırmak için ve bütün akademik disiplinlerde kullanılan, yararlanılan yöntemler olduğu için bazımız biraz geniş.
+
+129
+00:31:24,703 --> 00:31:32,903
+Bu bölümde neler anlatacağız size? Öncelikle bilimsel araştırma nedir? Ne gibi amaçlarla niçin yapılır? Ondan bahsedeceğiz.
+
+130
+00:31:33,311 --> 00:31:43,051
+Ardından bu bir süreç hangi aşamalardan geçerekten yürütülüyor ve hangi aşamada nelerin yapılması gerekiyor? Ondan bahsedeceğiz.
+
+131
+00:31:43,051 --> 00:31:55,591
+Konuyla ilgili temel kavramları anlatacağız. Ardından bilimsel araştırma yöntem ve tekniklerinin bu sefer işin nasıl yapıldığına yönelik birkaç yöntemden bahsediyor olacağız.
+
+132
+00:31:56,211 --> 00:32:01,051
+Her bilimsel araştırmada mutlaka yapılması gereken etkinliklerden biri de veri toplamadır.
+
+133
+00:32:01,268 --> 00:32:19,168
+Ondan bahsediyorum olacağız. Sonra ardından bütün bu topladığınız veriler veyahut da ilgili çalışmalar veya konunun altyapısıyla ilgili okuduğunuz kaynakları içeren literatürde nasıl sistematik bir tarama yapılacağına yönelik şeylerden bahsediyor olacağız.
+
+134
+00:32:21,648 --> 00:32:27,188
+Bugün inşallah bitirelim. Bitiremesem de çoluğum bitirip haftaya kaldığımız yerden devam edeceğiz.
+
+135
+00:32:29,395 --> 00:32:37,716
+Şimdi bilimsel araştırma nedir? Farklı tanımlar olabilir albette. Ondan içerisinden bir tanesini seçip sizlerle paylaşıyorum.
+
+136
+00:32:39,336 --> 00:32:52,096
+Nihayetinde bilimsel araştırma problemlere güvenilir çözümler bulma sürecidir. Bu süreçleri temel olarak yaptıklarımız bir kere önce çözme biçimimiz amaçlı, planlı ve sistemli olacak.
+
+137
+00:32:55,700 --> 00:33:21,140
+Belli bir sıvı ispatlamaya veyahut da geçersizlemeye gibi bir amaç olabilir bu. Bir plan çerçevesinde ve o planı sistematik biçimde uygulayarak, yani amaçlı planları sistemli olarak, verilerin toplanması ve gruplanması, veri analizi ve sentezi, açıklama, yorumlama ve değerlendirme işlemleriyle problemleri güvenilir çözümler bulma sürecidir. Şeklinde bir tanım.
+
+138
+00:33:21,811 --> 00:33:26,571
+Bütün arahattarıyla işi anlatıyor. O yüzden bunu seçtim.
+
+139
+00:33:28,231 --> 00:33:31,391
+Ne amaçla bilimsel araştırma yapıyoruz?
+
+140
+00:33:32,331 --> 00:33:39,591
+Şimdi bir araştırmanın amacı illaki ortaya yeni bir şey koymak değildir.
+
+141
+00:33:39,591 --> 00:33:47,591
+Bazen geniş bir konuyu, literatürünü inceleyip, tarayarak...
+
+142
+00:33:47,796 --> 00:34:07,975
+Oradan bir durum bilgisi çıkarmak ve bu konudaki şu anki durum budur ve bu konu ileride şu açık problemler üstünden araştırılmaya devam edilebilir gibisinden bir literatür çalışması da değerli bir etkinliktir. O yüzden bir amaç bu olabilir.
+
+143
+00:34:09,108 --> 00:34:25,748
+İkinci amaç, daha çok akla gelen bir hipotezin ispatına yönelik olarak veri toplamak ve o hipotezi topladığımız veri kullanarak test etmek. Böylece hipotezi geçerlemek veya geçersizlemek olabilir.
+
+144
+00:34:27,868 --> 00:34:33,748
+Betimleme tasvir amaçlı araştırma yapılabilir. Bir durumun veya olgunun tespiti.
+
+145
+00:34:34,847 --> 00:35:00,248
+Ve karakteristik özelliklerinin tanımlanması şeklinde. Bir olgu belki birçok kişi tarafından fark edilmiş olabilir. Fakat bütün yönleriyle fark edilmemiş olabilir. Bunun benzer olgularla ilişkileri araştırılmamış olabilir. Bütün bu eksiklikleri, bu gibi gördüğünüz eksiklikleri tamamlamaya yönelik betimleme amaçlı araştırma da yapılabilir.
+
+146
+00:35:01,748 --> 00:35:17,748
+Tahminleme, kestirme amaçlı araştırma yapabiliriz. Orguların gelecekte nasıl davranacaklarını tahmin etme. Mesela örneğin küresel ısınma. Bu orgunun farkındayız. Acaba ama orgu...
+
+147
+00:35:17,856 --> 00:35:43,436
+Gerçekten var mı bunu geçerlemek amacıyla bir betimlemeye çalışması? Test ve betimleme çalışmaları da yapılabileceği gibi acaba bu süreçle devam edilir de herhangi bir önlem alınmazsa gelecekte ne olacak? Ne olabilir? Bunu tahmin etme, tahminleme veya kestim. Estimation diye geçer İngilizce. Buna yönelik bir çalışma yapılabilir bilimsel araştırma olarak.
+
+148
+00:35:44,467 --> 00:36:01,507
+Açığa çıkmış olan bir problemi çözmek veya daha önceden belirlenmiş bir ve hatta çözüm bulunmuş olan bir problem için yeni ve farklı bir çözüm önermek de bilimsel araştırma tanımına girer.
+
+149
+00:36:02,728 --> 00:36:07,688
+Mesela daha hızlı tamamlanan veya daha yüksek doğrulukla.
+
+150
+00:36:08,275 --> 00:36:20,076
+Tamamlanan bir sonuç elde etmeye yönelik bir yöntem, algoritma çeşfı de bir bilimsel araştırma çalışması olarak elbette ki nitelendirebilir.
+
+151
+00:36:21,695 --> 00:36:30,635
+Temel olarak bu beş farklı amaçla yapılır. Bu beş farklı amaçın biri veya daha fazlasıyla yapılır bilimsel araştırma.
+
+152
+00:36:34,675 --> 00:36:49,536
+Hepsi için aynı yöntem kullanılmak zorunda değil. O amaca en iyi hizmet edecek farklı yöntem veya tekniklerden birinin seçimi söz konusu olabilir. Önümüzdeki yansıla da bu yöntemlerden bahsediyoruz.
+
+153
+00:36:49,536 --> 00:36:58,076
+Bu yansının başında dediğim gibi literatür taraması kimi zaman tek başına amaç da olabilir.
+
+154
+00:36:58,608 --> 00:37:11,048
+Ama diğer kalan 5 maddeden herhangi biri de mutlaka bu ilk madde olan literatür karamasını içermek zorundadır arkadaşlar.
+
+155
+00:37:11,467 --> 00:37:16,648
+Çünkü sizin yaptığınız bilimsel araştırma yepyeni bir şey değildir.
+
+156
+00:37:17,076 --> 00:37:41,896
+Gökten zenbille inmiş bir şey olmayacaktır. Belki yepyeni bir yöntem önereceksiniz ama o problem üzerinde daha önceden yapılmış çalışmalar mutlaka mevcuttur. Bu çalışmaların kategorilenmesi, ne yönlerde başarılı sonuçlar üretiyor onların ortaya konulması ve sizin önerdiğiniz yeni yöntem ile
+
+157
+00:37:42,483 --> 00:37:50,364
+Eski yöntemlerin farklılıklarının ortaya konulup sizin yönteminizin, avantajlarınızın vurgulanması gerekecektir.
+
+158
+00:37:50,483 --> 00:38:00,084
+Yani yepyeni bir şey bile bulmuş olsanız o konuyla ilgili eski çalışmalara bir değinmek, bunun için de literatür çalışması yapmak zorunda kalanıyor.
+
+159
+00:38:05,876 --> 00:38:18,676
+Ne gibi aşamalardan geçerek bir misal araştırma yapabiliriz? Öncelikle problem fark edeceğiz elbette. Bu bizim kendi içinde bulunduğumuz etkinlikler esnasında fark ettiğimiz bir şey de olabilir.
+
+160
+00:38:18,676 --> 00:38:29,176
+Veya konuyla ilgili çalışmaları incelerken fark ettiğimiz bir eksiklik olabilir. Nihayetinde bir problem fark edeceğiz. Bu fark ettiğimiz problemi tanımlayacağız.
+
+161
+00:38:29,652 --> 00:38:44,751
+Fark etmek başka. Kafamızda fark ettiğimiz çeşitli açıları ile fark ettiğimiz problemi düzgün ve herkesin aynı şekilde anlayabileceği biçimde tanınmamak da başka bir ve gerekli bir etkinlik.
+
+162
+00:38:45,952 --> 00:38:54,192
+Nüansman problemi tanımladık. Acaba ne gibi yollarla çözülebilir? Bir veya daha fazla yol varsa bunların tahmin edilmesi.
+
+163
+00:38:55,123 --> 00:38:59,123
+Daha sonra bu çözümü...
+
+164
+00:39:00,019 --> 00:39:11,199
+Yapılmasına yönelik verileri toplamadan önce acaba biz bu problemin çözümü için hangi araştırma yöntemini seçip onu nasıl özelleştirebiliriz?
+
+165
+00:39:11,199 --> 00:39:26,039
+Onu karar verilmesi yani araştırma yönteminin geliştirilmesi. Ardından o yöntem kapsamında veri toplaması ve analizi yani çözümlerle çalışmaları yapılması. Daha sonra bunlardan da yalanarak karar verme ve yorumlama.
+
+166
+00:39:28,019 --> 00:39:47,319
+Çözümü önerme ve bu çözümün avantajlarının, dezavantajlarının başarılı olmasına sebep olabilecek veya başarısız olmasına sebep olabilecek etkenlerin neler olduğu gibi konularda yorumlama yapmamız da gerekiyor.
+
+167
+00:39:51,507 --> 00:40:14,987
+Şimdi bu ana çerçeveyi verdikten sonra bazı kavramların farkında olmanız gerekiyor. Onları söylemek istiyorum. İngilizce dört ayrı kavram var. Bunun her birinin Türkçe karşılığı da var. Hepsinin farkında olmasak bile. Öncelikle data yani veri.
+
+168
+00:40:16,755 --> 00:40:19,996
+Henüz işlenmemiş ham bilgilerdir arkadaşlar.
+
+169
+00:40:19,996 --> 00:40:21,315
+Veri dediğimiz için.
+
+170
+00:40:22,036 --> 00:40:25,115
+23 derece.
+
+171
+00:40:25,815 --> 00:40:26,795
+Nedir 23 derece?
+
+172
+00:40:27,135 --> 00:40:29,295
+Hava sıcaklığı 23 derece.
+
+173
+00:40:29,755 --> 00:40:32,175
+Peki santigratlı fareye ait mi?
+
+174
+00:40:32,255 --> 00:40:33,255
+Peki santigrat olsun.
+
+175
+00:40:33,835 --> 00:40:39,695
+Havanın bugün bu saatte 23 santigrat derece olması bir ham bilgi arkadaşlar.
+
+176
+00:40:41,907 --> 00:41:09,567
+Herhangi bir buradan bir çıkarım yapamıyorsunuz. Çok bir amacı hizmet etmiyor. Sizin kendi bu veriyi kullanaraktan bazı karar verme seçenekleriniz olabilir kafanızda. Bugün nasıl giyinsem, ne amaç, hepsi alsam mı, almasam mı falan gibi ama o yaptığınız şey, o verdiğiniz işlem ve karar ve sonuçta ortaya çıkaracağınız bilgi olacak aslında arkadaşlar.
+
+177
+00:41:09,940 --> 00:41:22,079
+O yüzden iş ilk başta veriyle başlıyor. Henüz işlenmemiş ham bilgiler ile başlıyor. Buradan veriyi işleyerekten bunu information haline getiriyorsunuz.
+
+178
+00:41:22,643 --> 00:41:48,343
+Bunu direkt bilgi olarak çevirmek istemedim. Çünkü knowledge bilgi olarak kullanılması daha doğru. Informational, malumat demek istiyorum. Genç arkadaşlar bilmeyebilirler ama biraz eski bir kelime bu. Arapça kökenli kelime. Kendisi aslında çoğu bir kelimedir. Yani malumatlar denmez. Malumatın kendisi de çoğuldur.
+
+179
+00:41:49,300 --> 00:41:58,900
+Örnek olarak [öğrenci] demiş ki bu hakikatta artık çocukların bildikleri en basit malumat sırasına geçmiştir.
+
+180
+00:41:58,900 --> 00:42:08,300
+Bir kelime içerisinde kullanılmış. Tanımı ise işlenmiş, özetlenmiş, organize edilmiş, anlam kazanmış veri.
+
+181
+00:42:09,980 --> 00:42:16,639
+Yani işlenmiş veri. Malumattan, information'dan yola çıkarak bilgiye ulaşıyoruz.
+
+182
+00:42:17,076 --> 00:42:26,675
+O da knowledge, bilgi. Bir karara varmak için malumatın, deney, tecrübe, yorum, analiz ve sentezle zenginleştirilmiş hali.
+
+183
+00:42:28,475 --> 00:42:44,096
+Ve son olarak da wisdom, irfan veya bilgelik, bilgelik daha güncel kelime, bilgi ve tecrübelerden elde edilen karar verme aşamasında kullanılan en değerli ve en üst seviyedeki gerçeklerdir.
+
+184
+00:42:44,820 --> 00:42:53,759
+Belki siz information ve knowledge'ı iç işe geçilerekten tahayyül edebilirsiniz. Kafanızı da canlandırabilirsiniz.
+
+185
+00:42:53,759 --> 00:43:00,779
+Böyle yapan birçok insan da var. Ama arada ufak bir nüans var. Onu da burada anlatmaya çalıştım.
+
+186
+00:43:07,411 --> 00:43:10,931
+Biraz da soru soru olan arkadaşlarım varsa da lütfen duyuyorsunuz.
+
+187
+00:43:14,963 --> 00:43:26,143
+Şimdi bu veriden bilgeliğe kadar geçen aşamalar içerisinde bunları kullanarak sadece bu kavramları kullanmıyoruz.
+
+188
+00:43:26,143 --> 00:43:33,423
+Kullanacağımız başka temel kavramlar da var. Birincisi hipotez. Kısaca tez diye de geçebiliriz.
+
+189
+00:43:33,543 --> 00:43:39,523
+Aslında hipotez. Türkçesi varsayım veya sal şeklinde söyleyebiliyoruz.
+
+190
+00:43:40,019 --> 00:43:53,660
+Deneyler de henüz yeterli derece doğrulanmamış ama doğrulayabileceğimizi düşündüğümüz, doğrulayabileceğimizi umut ettiğimiz teorik düşünceye tez, hipotez denir.
+
+191
+00:43:54,771 --> 00:44:07,811
+Bu hipotezlerin, madem doğrulanabileceğini umuyoruz, kontrollü deneyler yaparak doğrulayabiliyorsak hipotezlerimizi o zaman teoriye yükseltmiş oluyoruz.
+
+192
+00:44:07,811 --> 00:44:18,371
+Ayrıca teori çeşitli olup fikirler bütünüdür şeklinde söyleyebiliriz.
+
+193
+00:44:21,811 --> 00:44:46,751
+İzafiyet teorisi. Einstein'ın İzafiyet teorisi. Önemli bir çalışma. Çok ayrıntılı bir çalışma. Ama henüz kanun değil. Çünkü bütün önermeleri ispatlanıp bir kanun haline daha getirilememiş. Karnaşık bir teori çünkü.
+
+194
+00:44:48,340 --> 00:45:02,340
+Buradan kanuna geçiyoruz. Kanun ise olgulardan türetilmiş, gözlem ve deneylerle iyi desteklenip kanıtlanmış, matematiksel olarak da betimlenmiş, formüle edilebilmiş genellemeler ve prensiplerdir.
+
+195
+00:45:05,280 --> 00:45:14,100
+Hipotez ile teorinin farkı veya üstüne kattığı şey, teorinin hipotezinin üstüne kattığı şey deneylerle yapılan doğrulamadır.
+
+196
+00:45:14,739 --> 00:45:38,119
+Teori ile kanunun farkı ise şudur. Şu anlatımı daha hoşlandım. Teoriler gözlemlediğimiz olgunun neden gerçekleştiğini açıklar. Kanunlar ise bundan sonra ne olacağını açıklar. Teori why, neden, kanunlar ise what will happen, ileride ne olacak.
+
+197
+00:45:39,219 --> 00:45:52,219
+Kimin alıntısı unuttum. Bu kısmı da Zeynep Hoca sağ olsun hazırlamıştı. Unuttum. Anlatmaya çalışayım.
+
+198
+00:46:04,960 --> 00:46:30,740
+Olguların neden bulunduğunu da açıklamaz. O kısmını teori yapar. Kanun ise bundan sonra ne olacağını açıklar. Teoriler bir araya gelerek de bir kanun oluşturabilir veya bir teori, eğer yeterince geniş bir teori ise tüm cepheleriyle birlikte bir kanun da oluşturabilir.
+
+199
+00:46:35,380 --> 00:46:52,300
+Ve bir teori de genelde iki bileşemden oluşuyor. Aksiyon ve hipotez. Hipotez konusunu gördük. Aksiyon nedir? Sayıltı olarak Türkçe'ye çeviriyor. Çok aşın olduğum bir kullanım tarzı değil sayıltı kelimesi ama o da bilmek istiyor.
+
+200
+00:46:57,907 --> 00:47:11,628
+Doğruluğu ve gerçekliği kabul edilen genel ilkeler. Gerçek olduğuna dair de elimizde oldukça kuvvetli kanatlar, yargılar bulunan ifadeler bunlar.
+
+201
+00:47:12,548 --> 00:47:20,400
+Aksiyonları hipoteze ilerletmek gerekir. Hipotezler ise...
+
+202
+00:47:20,400 --> 00:47:39,400
+Bir başka tanımıyla test edilmek için düzenlenen genellemeler şeklinde anlatılabilir. Hipotezler yaptığımız araştırmanın veya işi yapan araştırmacının amacını veya başka şekilde iddiasını oluşturur. Bu iddianın doğruluğu sınanmalıdır.
+
+203
+00:47:39,891 --> 00:47:49,172
+Yaptığımız anahtarın içerisinde tekrar tekrar kontrollü doğrulanabilir ve yenilenebilir, tekrarlanabilir sınamalar yapılır.
+
+204
+00:47:49,536 --> 00:48:17,496
+Bu sunamayı sadece araştırmacı değil, araştırmacının hazırladığı, yayında anlattığı yöntem ile her kim yaparsa, aynı şekilde uygularsa yine aynı sonuçlara ulaşabileceği, yani başka bir de işte kontrollü deneyler ile ilerlemelidir. Kontrollü deneylere dayanmayan hipotezler, hipotez sayılmaz, aksiyondur. Genel olarak geçerli kıldırdır ama bunun %100.
+
+205
+00:48:17,536 --> 00:48:20,775
+Ve her zaman böyle olduğumu da savunamayız.
+
+206
+00:48:23,603 --> 00:48:47,844
+Nihayetinde hipotezler bile tam kesinlikle ifade etmiyor. Bu hipotez ile ilgili veri topluyoruz, bunları analiz ediyoruz, çözünürüyoruz. Yani parçalarını ayırıyoruz, parçalar arasındaki ilişkileri anlamaya çalışıyoruz, nedenlerini anlamaya çalışıyoruz. Sonra çeşitli ölçme ve değerlendirme işlemleri yapıyoruz. Ancak bunların ardından bir hipotezin doğru veya yanlış olduğunu ispatlayabiliyoruz.
+
+207
+00:48:51,315 --> 00:49:13,295
+Bu ispatlama işini yaparken de iki farklı yöntemimiz var. Bunlardan ya dirini ya ötekini kullanırız genelde. Birincisi tümden gelin, ikincisi tüme varın. Şimdi bu şekilde tanımlandığı zaman isimler yöntemi çok güzel anlatıyor arkadaşlar. Tümden gelin, tüme varın.
+
+208
+00:49:16,211 --> 00:49:34,231
+Parçalara doğru gitmek. Tümden geliyoruz. Bütünden gelip parçalara geliyoruz. Tüme varım ise parçalardan gelip bütüne varıyoruz. Bu çalışma biçimleri çok güzel anlatıyor bu kelimeler. Tümden gelim yerine nicel yöntem de denilebiliyor. İngilizcesi didaktif.
+
+209
+00:49:34,804 --> 00:49:48,224
+Genel yargılardan yola çıkıp daha özel bir olgulara ulaşıyoruz. Veya başka bir de işte bir bütünde bulunan özelliklerden yola çıkıp bütün oluşturan parçalın özellikleri hakkında yargılara ulaşmış oluyoruz.
+
+210
+00:49:48,224 --> 00:50:00,804
+Bütünden gelin mantığı. Tüne varım mantığı ise nitel veyahut da indaktif diye geçiyor İngilizce'de. Tek tek bireysel olaylardan yola çıkarak genel yargılara ulaşmaya çalışıyoruz.
+
+211
+00:50:01,012 --> 00:50:06,331
+Bütün oluşturan parçaların ortak yönlerinden işe başlayıp genellemeler ardı ediyoruz.
+
+212
+00:50:07,532 --> 00:50:15,152
+Mesela ufak bir tüm ev adım için bir örnek verelim. Bir P-N teoremimiz olsun. En adımlı bir teorem.
+
+213
+00:50:15,992 --> 00:50:21,132
+Temel durumumuz bu adımların ilk iki adım için sıfırıncı adım ve birinci adım.
+
+214
+00:50:28,500 --> 00:50:41,599
+Gösterdik diyelim. Bunu yapabildiysek, diyoruz ki madem 0 ve 1 için böyle, her i adımı için pi'nin doğru olduğunu varsayalım.
+
+215
+00:50:41,599 --> 00:50:44,159
+Ve şunu ispatlamaya çalışalım.
+
+216
+00:50:45,492 --> 00:51:02,851
+Pİ durumu, Pİ artı bir sonraki adımı gerektiriyorsa veya ona yol açıyorsa bunu illaki deneyesi olarak değil matematiksel yöntemlerle ispatlayabiliyorsak o zaman PN teoremine dosdoğru bir teoremdir diyebiliriz.
+
+217
+00:51:04,231 --> 00:51:06,851
+Tabii ki yaptığımız matematik ispatı...
+
+218
+00:51:07,795 --> 00:51:14,895
+Deneylerle de desteklememiz, çalışmanın daha güvenilir sonuçlar üretmesine katkıda bulunacaktır.
+
+219
+00:51:18,420 --> 00:51:30,800
+Şimdi bir şu konudaki içeriye bakayım. Ne kadar yansım var ve bugün herhalde hepsinden bahsedemeyeceğim. Bunu bir ikiye bölmem gerekecek.
+
+220
+00:51:30,800 --> 00:51:39,159
+Ama madem şu tüme varım, tümden gelin dedik. Bundan biraz daha ilerleyeyim.
+
+221
+00:51:39,635 --> 00:51:48,995
+Ama hepsini bitirmeyin. Geneldex'in karşılaştırılması amaçlı şu yansıyı da konuşayım. Ondan sonra ders bırakalım.
+
+222
+00:51:48,995 --> 00:52:00,576
+Şimdi aslında ders programı bundan sonra müsait. Yani zamanla hemen bundan sonra bir ders yok. Fakat çok da uzatmak istemiyoruz. Sizler için hem bizler için.
+
+223
+00:52:01,576 --> 00:52:07,415
+Fakat işte konuları da ilk üç haftaya da sığdırmaya çalışacağız. O yüzden biraz daha ilerliyorum.
+
+224
+00:52:07,860 --> 00:52:27,639
+Şimdi şu aşamaları, tümdengen ve tümevarım aşamalarını bir şekil olarak gösterirsek ki şekil ve gösterleştirme bir şeyin akılda kalmasına yardımcı olan bir tekniktir. Tümdengenimde bir teoriyle başlıyoruz. Bu teoriyle ilgili hipotezler oluşturuyoruz, öne sürüyoruz.
+
+225
+00:52:33,331 --> 00:52:46,291
+Hipotezlere yönelik yaptığımız gözlem ve veri toplama etkinliklerinin ardından ortaya çıkan veriyi test ediyoruz ve sonuçta testin sonucuna göre hipotezimizi kabul veya reddediyoruz.
+
+226
+00:52:47,051 --> 00:52:56,891
+Tüme varımda ise ilk yaptığımız şey gözlem, veri toplama ve bu verilerden yola çıkarak yaptığımız çeşitli sınama işlemleri.
+
+227
+00:52:57,364 --> 00:53:12,463
+Bu sınava işlemlerinin ardından ortak bazı dokular, örüntüler keşfedebiliyorsak, bu ikinci aşama, son aşamada bu örüntülerin üzerinden bir yeni bir hipotez veya teori üretiminde bulunuyoruz.
+
+228
+00:53:12,463 --> 00:53:20,604
+Şimdi ikide birlikte aslında bir çevrim oluşturabilir. Örneğin bir araştırmacı tüm abadım yönteminde bir hipotez veya teori üretir.
+
+229
+00:53:21,204 --> 00:53:29,884
+Bir başka bilim insanı da tümden gelim yöntemini kullanarak da bu teoriyi o da doğrular veyahut da yanlışlar.
+
+230
+00:53:31,963 --> 00:53:33,824
+Bunu da söylemeden edemedim.
+
+231
+00:53:36,211 --> 00:53:50,552
+Şu ayrıntılara isterseniz bugün girmeyelim. Haftaya hem bu tümden gelin azıcık onları tekrarlayıp bu sefer her birinin ayrıntılı olarak nasıl yapıldığını haftaya konuşuruz.
+
+232
+00:53:51,711 --> 00:53:59,272
+Fakat şu aşamada sorusu olan arkadaşım varsa dersin geneli veya konuştuğumuz konularla ilgili alayım arkadaşlar.
+
+233
+00:53:59,635 --> 00:54:12,715
+Değil mi? Vaktimiz var. Ben buradayım. Eskisinde olduğu gibi sistemde şak diye kapanmıyor çok şükür. O yüzden soru soran arkadaşım varsa lütfen buyuruz.
+
+234
+00:54:23,572 --> 00:54:32,952
+Sunum için Gmail adresini kullanmanızı rica ediyorum arkadaşlar. Onu da şöyle şuradan göstereyim.
+
+235
+00:54:40,436 --> 00:54:56,936
+Şeyi de hatırlatayım. Şimdi ders notlarını özellikle bu yeni tarihler ile güncelledim. Ve ayrıca bilimsel yayınlarda referanslamanın önemini anlatan iki, yanlış hatırlamıyorsam iki yansı da ekledim.
+
+236
+00:54:57,331 --> 00:55:25,331
+Böylece ders notlarını yenilemiş oldum. Onun dışında geri kalan kısım eski notlarla aynı. Şu an Avesis sayfamda ben ders malzemesini paylaşmak için Avesis'i tercih ediyorum. Bu yeni online yıldız sisteminin de böyle bir modülü var ama her yeni teknik yani her yeni sistem kullanımı bir teknik riskide barındırmaktadır. O yüzden ben ilk aşamada Avesis üzerinden bu güncellediğim ders notlarını PDF'ye çevirip size arıyorum.
+
+237
+00:55:25,331 --> 00:55:53,331
+Sonra tekrar dönüp oradan bakabilirsiniz. Veya işte dediğim gibi bu sunumlarda yani bütün derslerde kayıt ediliyor. Sonra geri dönüp her dersi aslından olarak da izleyebileceksiniz. Ama belki bunu bir iki hafta boyunca ayağa kaldıramayacaklar bu özelliği. Fakat üçüncü haftanın başına kadar da konu göndermeniz gerekiyor. O yüzden bu soruyu şunu sorayım.
+
+238
+00:55:53,331 --> 00:55:55,112
+Son derece doğru ve iyi.
+
+239
+00:55:55,632 --> 00:56:03,992
+Arasiste şifre var mı? Hayır, arasiste şifre yok. Direkt arasisten benim sayfama giriyorsunuz, tıklıyorsunuz, geliyor. Yani ek bir şifre korumam yok.
+
+240
+00:56:06,951 --> 00:56:08,152
+Başka sorusu olan?
+
+241
+00:56:25,235 --> 00:56:47,195
+Peki arkadaşlar, o zaman bugünlük bu kadar diyeyim. Dinleyen katılan arkadaşlara teşekkür ederim. Şimdi ben mümkün olduğu kadar dersleri Davut Paşa'dan, odamdan vermeye çalışıyorum. Ama belki bazı şarjlanma günleri Davut Paşa'dan değil de evimden de veriyor olabilirim.
+
+242
+00:56:47,195 --> 00:56:52,855
+Davut Paşa'dan dersi verdiğim zaman bilen arkadaşlarım biliyor, ben uzakta oturuyorum.
+
+243
+00:56:53,235 --> 00:57:11,515
+Yani ancak yetişiyorum. Eğer trafikte bir ders, bugün buraya gelmem gerekiyorsa, trafikte bir ders takılmışsa ders azıcık gecikebilir. Öyle olursa şimdiden sizden özürlerinizi diliyorum.
+
+244
+00:57:20,980 --> 00:57:46,560
+Olası yol, trafik problemlerini önlemek için o çarşamba günleri derse evden de anlatabilirim. Bir problem olacağını sanmıyorum. Çünkü bu Zoom tamamlı yeni sistemle band genişliği çok verimli kullanılıyor. Geçen dönem eski sistemde evden konu anlatmaya kalktığımda masaüstü paylaşımında falan hemen band genişliğinin dibi vuruyordu.
+
+245
+00:57:48,980 --> 00:57:56,940
+Hocalarda da aynı şeyi keşfettik. O yüzden bu dönem problem olacak inşallah. Başka soru soru soru.
+
+246
+00:58:04,820 --> 00:58:10,220
+Peki teşekkür ederim arkadaşlar. Bugünlük bu kadar bitiriyoruz. Haftaya görüşmek üzere.

@@ -1,0 +1,1103 @@
+1
+00:15:50,932 --> 00:16:00,351
+Merhaba arkadaşlar. Hepinize iyi, sağlıklı günler dileyerek derse başlayalım. Yeterince bekledik. Artık herhalde herkes gelmiştir.
+
+2
+00:16:01,711 --> 00:16:13,132
+Lapla alakalı takvim zaten duyurulmuş olmalı [öğrenci]. Her hafta bana sormanızın bir anlamı yok. Lütfen piyazadaki takvime bakın.
+
+3
+00:16:14,644 --> 00:16:19,964
+Takvime göre de labınızın olduğu günler belli. O günlerde laba katılım yapacaksınız.
+
+4
+00:16:21,644 --> 00:16:28,644
+Evet arkadaşlar, geçen hafta transistöre giriş yapmış idik. Bu haftada devam edeceğiz. Hatta işlem...
+
+5
+00:16:34,419 --> 00:16:43,899
+Hatta biraz işlemlere yani nasıl soruları çözmemiz gerektiğine değineceğiz bu hafta. Web dersimizi bitireceğiz.
+
+6
+00:16:44,819 --> 00:16:50,859
+Geçen hafta kısaca bahsetmiştik. Bir transistör mimarisi aynı diyot mimarisi gibi bir PN Junction.
+
+7
+00:16:51,539 --> 00:17:15,039
+PNP yapısında oluşturuluyor. Daha doğrusu iki tane diyotun PN Junction mantığıyla art arda kullanılması olarak da söyleyebiliriz. Bu tabii iki tip bir diyot yapısından bahsedeceğiz. Çünkü neden? Üç tane Substance dediğimiz, üç tane madde P ve N maddesi içeren maddelerin kombinasyonu oluştuğu için iki versiyonu var.
+
+8
+00:17:18,991 --> 00:17:32,551
+Orta bacak veyahut da ana bacak dediğimiz bacağın N veya P-type olmasına göre değişkenlik gösteren bir iki tarz transüstör yapımız mevcut.
+
+9
+00:17:33,932 --> 00:17:41,451
+Bacaklarına baktığımızda üç terminale sahip, yani üç adet bacağı var demiştik, emiter, bez ve kolektör diye söylemiştik.
+
+10
+00:17:43,955 --> 00:18:01,195
+Şunu unutmayacağız. Bir transistörün çalışabilmesi için her zaman Bayes ile Emitter arasındaki Deployation Region diye tabir ettiğimiz bu bölgenin minimize edilmiş olması, ki bunu nasıl minimize edebiliriz bir PNP junction yapısında?
+
+11
+00:18:02,355 --> 00:18:20,235
+Bu tarafa yani P-Junction tarafına pozitif polarma verirsek yükler birbirini itecektir. N-Junction yani Bay's'in N-Type olmasından dolayı bu tarafa da negatif bir gerilim verdiğimizde o da negatifleri iterek birbiri içerisinde balansa geçmeye.
+
+12
+00:18:24,692 --> 00:18:26,291
+Takvim yok muyormuş?
+
+13
+00:18:29,779 --> 00:18:53,779
+Tamam, bir sorarım ben bakalım dersin ortalarına doğru. Buradaki bölgenin minimize edilerek, aradaki Deployation Regin diyorduk buraya hatırlarsanız. Diyot yapısında da mevcuttu bu. Deployation bölgesi diye tabir edilen bölgenin minimize edilmesi hedefleniyordu. Öteki taraftan ise...
+
+14
+00:18:54,387 --> 00:19:20,747
+Bu hiçbir şekilde PMP veya MPN olmasına göre bu kayda değişmeyecek. Her zaman emitter base doğru polar mı olacak şekilde? Yani buradaki depletion region'ı yok edecek şekilde. Öteki taraftan ise kolektör ile base arasındaki depletion region'ın maksimize olmasını sağlayacak bir polarmada bunu gerçekleştiriyoruz diyeceğiz.
+
+15
+00:19:21,556 --> 00:19:29,016
+Yani biz emitter base'i doğru polar malı, base kolektörü ters polar malı bağlayacağız diyeceğiz.
+
+16
+00:19:31,700 --> 00:19:36,519
+Burada birkaç tane matematiksel formül vermiştik. Bu hafta hepsine değineceğiz.
+
+17
+00:19:36,519 --> 00:19:56,220
+Ama en çok kullanacağımız, en etkili formülümüz akımların korunumu kanunundan gelen, KCL'den gelen IE'nin yani emiter akımının, burada output akımı, çıkış akımı, pardon input akımı, giriş akımı, emiter akımının
+
+18
+00:19:56,788 --> 00:20:14,367
+Kollektör dediğimiz çıkış akımını oluştururken Bayes'in de etkisini kattı. Yani emitterimiz kollektör artı Bayes şeklinde olacak. Kollektör akımındaki değer ile Bayes'deki akımdaki değeri topladığımızda bize emitter akımını verecek.
+
+19
+00:20:14,367 --> 00:20:23,367
+Şimdi burada Bayes akımı göreceğiz ki çok çok ufak bir akım. Yani mikro amperler seviyesinde.
+
+20
+00:20:24,223 --> 00:20:25,503
+Bir akım olacak.
+
+21
+00:20:26,099 --> 00:20:54,099
+Eğer ki ben şimdiden bu uyarıyı yapayım, sorularda IB akımını çözdünüz, buldunuz. Mikroamperden büyük çıktı. Yani amper falan çıktı. Belki bir ihtimal mili amper çıktı. O da büyük işte. 50 mili amper gibi vesaire. O zaman %99 bir yerleri yanlış çözüyorsunuz arkadaşlar. Çünkü Bayes akımı genelde çok ufak olur. Neden? Çünkü bu Bayes ile biz bunları ters bağlayarak bir sızıntı akımı oluruz.
+
+22
+00:20:54,099 --> 00:21:11,859
+Yani gerçek bir akım değil bu. Bir sızıntı akımı. Tabi bu ortak base de geçerli bir yapı. Şimdi değineceğiz. 3 farklı konfigürasyonu var bu transistörün. Ama base akımını mikro seviyesinde, mikro amperler seviyesinde bulmanız beklenir.
+
+23
+00:21:19,344 --> 00:21:43,183
+Bağlantı şeması. Bu şu demek, yani Bayes'i hem emitere hem kollektöre bağladığımız senaryo, zaten bizim deminden beri analiz ettiğimiz senaryo ve şunu biliyoruz, emiter-Base arası, şurası doğru polar mı olmalı? Doğru polar mı olması için de emitere artı PMP'de, emitere artı Bayes'e de negatif, yani eksi ucunu verdik beslemenin.
+
+24
+00:21:43,827 --> 00:22:04,587
+NPN'de ise aynı şekilde doğru polarma olması için emitter'e negatif, base'e de pozitif vererek bunu doğru polarma haline getirdik bu tarafı. Öteki tarafı da zaten reverse yaparak kollektöre pozitif N'de, P'de de negatif verecek şekilde ayarladık.
+
+25
+00:22:04,587 --> 00:22:11,407
+Bu Common Base Configuration genelde amplifier olarak kullanılır. Yükseltme devrelerinde kullanılır.
+
+26
+00:22:11,827 --> 00:22:26,751
+Burada bir diagramı, yani bu iki transüstörün şematik gösterimi, yani bizim programlarda simülasyonlarda görebileceğimiz versiyonu. Burada şuna değindik, ok ucu her zaman en...
+
+27
+00:22:26,751 --> 00:22:52,051
+Yani neyi gösterecek? Yani burası ne? Şimdi Bayes'in ne olduğu senaryoda demek ki buralar PMP. Yani bu aslında bir PMP transistör diyeceğiz. Ok her zaman neyi gösterecek? Neyi koydum? O zaman emitterin ne olması için NPN transistör olması gerekiyor diyeceğiz.
+
+28
+00:22:54,259 --> 00:23:09,860
+Ve her zaman emiter her zaman arkadaşlar Bayes ile Kollektör akımının toplamına eşit olacak. Her zaman emiter Bayes ile Kollektör'ün toplamına eşit olacak.
+
+29
+00:23:12,948 --> 00:23:29,488
+Şimdi gelelim karakteristiklerinin input. Hani girişte verdiğimiz değerlere göre bazı değişkenler, mesela ortak, şurada ortak beyzde en önemli değişken emiter akımıdır.
+
+30
+00:23:29,488 --> 00:23:35,488
+Yani emiter akımının nasıl değiştiğini analiz edeceğiz. Bunlar çok önemli değil ama...
+
+31
+00:23:36,660 --> 00:23:57,760
+En azından mentaliteyi oturtturmak için bunları izah etmek istiyorum. Misal, Bayes-Emitter arası doğru polar mı olmalı dedik. Ama fark ediyoruz ki 0-7'ye kadar gibi düşünebiliriz, şuralara kadar bir akım geçmeme durumu söz konusu. Yani bir emiter akımı oluşmuyor. Ne kadar doğru polar mı da versek?
+
+32
+00:23:58,000 --> 00:24:12,220
+Bunun nedeni şu, aslında biz Beys Emiter veya Transistor mimarilerinde aynı diyotmuş gibi. Yani şöyle iki tane diyotun biraz hatalı çizim olabilir ama.
+
+33
+00:24:13,811 --> 00:24:26,711
+İki tane diyodun şöyle sırt sırta verilmiş şekliyle kullanılması söz konusu. Yani base emitter arası biz doğru polarma yaparak aslında oradaki diyodu doğru polarizasyon etmeye çalışıyoruz.
+
+34
+00:24:26,711 --> 00:24:40,192
+Ve bir transüstörün çalışabilmesi için base emitter arası doğru polarma olmalı. Yani buradaki 0.7'ye kadar geçirmeme durumu tamamen içerideki Pn'deki Deplation Region'ı
+
+35
+00:24:40,271 --> 00:24:55,271
+Engel diyordu ki, bir bariyer kuruyor silisyumdan dolayı. O silisyum materyalinden doğan 0.7'yi geçmek. Yani aynı diyottaki mantık. Ne zaman 0.7 ve B, E arasındaki fark geçerse...
+
+36
+00:24:57,140 --> 00:25:11,539
+Yani çizmeye gerek yok herhalde. VBE arasındaki gerilim farkı 0.7 voltu geçerse ve doğru bir polarma, ki artı veriyoruz, doğru bir polarma verilirse o zaman emiterde bir akım oluşuyor.
+
+37
+00:25:12,360 --> 00:25:18,740
+Emiter dediğimiz zaten bizim için transistörün kontrol etmemizi sağlayan bir bacağı.
+
+38
+00:25:25,076 --> 00:25:44,615
+CB arasındaki gerilim ile değiştirebiliyoruz. Yani misal ben CB'ye ters polarma yani VB ile aynı yönde olan bir polarma bakarsak eğer ikisi de aynı yönde. Yani birine artı 20 verirsen ötekine de artı 20 veriyorsun. Ötekine eksi 20 verirken ötekine de eksi 20 veriyorsun.
+
+39
+00:25:52,788 --> 00:26:20,788
+Yani kolektör ile Bayes arasındaki ters polarizasyondaki gerilimi ne kadar arttırırsam o kadar hızlı bir şekilde IE yani o kadar yüksek seviyelerde emitter akımını oluşturmuş oluyorum. Burada CB'nin etkisi aslında hep başından beri diyoruz. Şunun oluşabilmesi için birinci kaydemiz şuradaki gerilimin yani Bayes-Emitter arasındaki potansiyel farkın 0.7'den.
+
+40
+00:26:20,788 --> 00:26:37,448
+Yani yukarıda olması gerekiyor ki emiter oluşsun. Ama burayı 0,7 yaptım ve emiteri yükseltmek istiyorum. Bir diğer şey ise buradaki ters polarizasyonu ne kadar arttırırsam yine emiter akımı daha hızlı bir şekilde artacaktır.
+
+41
+00:26:39,048 --> 00:26:46,628
+Anlaşıldı mı bu karakteristik? Buradan onu anlıyoruz. Şöyle bakabiliriz hatta. Atıyorum ben 0.
+
+42
+00:26:47,104 --> 00:27:07,884
+Tabii tabii o tutturamadım. Çekil olmadığı için. Şöyle yapalım. 0.8 volt veriyorum. Yani Base Emiter arasındaki şuraya 0.8 volt verdim. Tamam bir IE oluşacak. Ama VCB'ye bir verirsem eğer, yani şuradaki gerilim.
+
+43
+00:27:08,403 --> 00:27:19,723
+Kollektör, Beys arasındaki gerilim farkını 1 volt verirsem bu IE5 mA oluşurken 20 volt versem 8 mA oluşuyor.
+
+44
+00:27:20,372 --> 00:27:42,231
+Bunu bu şekilde yorumlayalım. Aradaki bağıntıyı bilelim. Çünkü transistörün en büyük kaidesi, baştan da diyoruz çalışma prensibi, kolektör beysi ters. Ne kadar ters o kadar iyi, öyle düşünebiliriz. Emiter beysi de ne kadar doğru polarmalı, ne kadar yüksek voltaj verdesine o kadar iyi.
+
+45
+00:27:43,988 --> 00:28:00,028
+Çünkü şunu da görüyoruz ki bir eşik gerilimden sonra voltajı arttırmak burada tabii daha dramatik bir artışı sağlıyor emiter akımı için. Buradaki gerilimi arttırmak çok dramatik olmasa da emiter akımını arttırmaya yarayan bir unsur.
+
+46
+00:28:03,476 --> 00:28:08,676
+Çıkış karakteristiğine baktığımızda ise çıkıştan kastığımız aslında kolektör akımıdır.
+
+47
+00:28:18,771 --> 00:28:34,692
+Zaten bu bir kere arttırdıktan sonra bir kolektör akımı oluşturacak. Yani şuradaki emiterdeki akım oluştuğu anda bir kolektör akımı oluşuyor. Buradaki bağıntı şu, normalde biz bir formül vermiştik. IE eşittir.
+
+48
+00:28:41,364 --> 00:28:54,124
+IB artı IC dedik değil mi? Şimdi IB o kadar ufak ki bu tarz konfigürasyonda. Neredeyse IC IB'ye eşit.
+
+49
+00:28:54,483 --> 00:29:09,423
+Baktığımızda analizlerde de IE'nin 1 mA ve herhangi bir Collector Base arasındaki gerilim oluştuğu anda benim aslında IE'yim de hemen hemen aynı seviyelerde oluşmuş diyoruz.
+
+50
+00:29:21,971 --> 00:29:43,911
+Herhangi bir transitörün çalışması söz konusu olmadığından kolektör akımı oluşmuyor. Ne zaman kolektör akımını negatif verirsek ki aynı şeye çıkıyor aslında. O da cutoff region dediğimiz bölgeye sokar. O zaman da çalışmıyor bir gerilim oluşmuyor.
+
+51
+00:29:51,667 --> 00:30:07,027
+Yani aslında ilk baştaki o lafzen anlattığımız doğru polarma ve ters emitter base'i doğru, base kolektörü ters yapma mevzusu burada analizleri sağlıyor.
+
+52
+00:30:08,500 --> 00:30:22,440
+Bundan bahsettik. Evet, normalde formülümüz IE'nin Ic artı Ib'ye eşit olması ama approximation dediğimiz bazı sorularda o kadar ufaktır ki base akımı.
+
+53
+00:30:22,832 --> 00:30:45,271
+Ic'yi, Ie'yi eşitlemekte bir mahsur görülmez. O kadar küçüktür yani. Ama yani Ib'yi bulmak da gerekebilir bazı sorularda. Ona bakacağız. Ve base emitter gerilim arkadaşlar, Vb'ye. Bahsettiğimiz 0.7 volt zaten var. Hani beslediğimiz girişteki gerilim bu 0.7'yi geçmesi lazım.
+
+54
+00:30:48,723 --> 00:30:57,603
+Bir alfa parametresinden bahsedeceğiz. Aslında bu alfaydı, beta gelecek şimdi, betaydı bunların hepsi sadece 3 tane akıma bağlı değişkenler.
+
+55
+00:30:57,603 --> 00:31:07,844
+Ic, Ie, Ib. İşte Ic'nin Ie'ye oranı, yani kolektör akımının emiter akımının oranı, yani çıkış akımının giriş akımının oranı.
+
+56
+00:31:08,276 --> 00:31:34,376
+Alfa denen bir parametreyi oluşturuyor bize. Alfa normalde idealde bir, ne demek bu? Ic'nin Ie'ye eşit olmasını söyler. Yani bir Ib'nin olmadığını savunur. Çünkü çok çok ufaktır. Ama genelde 0.9, 0.998 gibi. Yani Ie'nin daha büyük olduğu. Çünkü şunu biliyorum ki ben Ie gerçekten pratik de değil, şey teoride...
+
+57
+00:31:34,483 --> 00:32:00,864
+Bu teoride değil, pratikte I, C artı I, B eşit olacak. Buradaki I, B çok ufak olduğu için de alfadaki parametre, yani bunlar birebir eşit olmayacağı için de 0.9, 0.998 aralığında bir değer çıkacaktır. Belki de soruda verilir, belki de verilmez. Sizin bulmanız istenir. Eğer soruda alfa verilirse zaten I, C'yi ve I, E'yi bulduktan sonra I, B'yi bulmak gayet basit bir yöntem.
+
+58
+00:32:04,372 --> 00:32:17,731
+Evet, dedik ki ortak bezler amplification yani girişteki değeri arttırmak için kullanılır değerini. Burada bir örneğimiz var. Mesela girişte 200 milivoltluk bir sinüs dalgası var.
+
+59
+00:32:18,099 --> 00:32:44,159
+Ve 20-10'lukta bir direnç varmış. İç direnç, RE diye bir direnci varmış. Buradan gelen akımı hesaplayacak olursak 200 bölü 20'den 10 mA'lık bir akımımız geliyor buradan. Emiter akımı. Değil mi? 10 mA. Şimdi ilk kaydemiş şuydu. Böyle bir kabul edelim. I, C'yi, I, E'yi eşit olduğunu. Yani herhangi bir base akımının oluşmadığını veya bir sızıntı akımının olmadığını düşünüyorum.
+
+60
+00:32:44,500 --> 00:32:49,480
+Bu durumda benim Ic, yani şuradaki akımım, burası I, E.
+
+61
+00:32:50,771 --> 00:33:16,731
+Şurası da I, C. I, E'nin I, C. Zaten I, E'nin şuradaki I, I olduğunu ve I'den gelen biliyoruz. Çünkü buraya geliyor. 200 miliwol bölü 20'den 10 miliampere bulduk. Buradaki 10 miliampere, buraya da 10 miliampere şeklinde direkt kabul yaparsak, burada 5 kilo ohmluk bir direnç var ve buradaki V, L soruluyor.
+
+62
+00:33:17,119 --> 00:33:36,439
+O zaman ne yapacağız? 10 mA çarpı 5 kilo ohmdan 50 voltluk bir VL gerilimim oluşmuş. Yani aslında benim 200 milivolta 50 voltluk bir çıkış gerilimi gözükmüş. Yani 250 kata arttırma işlemi yapmış bir amplification devresidir bu.
+
+63
+00:33:40,660 --> 00:33:55,660
+Bir diğer konfigürasyon öteki Common Base'di. Bu Common Emiter yani ortak emiter konfigürasyonu. Bunun farkı şu, emiter bacağı hem Base'e hem Collector'e gidiyor.
+
+64
+00:33:55,839 --> 00:34:16,460
+Ve tekrardan diyoruz ki doğru bir şekilde emitter-base polarması yapılması lazım. Mesela burada bir MPN junction var. Yani MPN transistör mevcut. MPN transistörde de ben biliyorum ki işte base'deki piye pozitif polarma gelmeli. Emitere de negatif edeceğiz.
+
+65
+00:34:21,588 --> 00:34:44,328
+Hangisini ters vermek daha önemli? Buna bakmak lazım. Her zaman kollektöre ters polarma vermemiz lazım. Çünkü kollektör bizim için şuradaki Deplation Region'i arttıracak olan eleman. Kollektöre ters polarma verdim yani neyleri kendine çektiği için öyle düşünebiliriz buradaki artık polarmanın. Buradaki Deplation Region'i artacak.
+
+66
+00:34:44,947 --> 00:34:59,387
+Bu mihvalde bir bağlantısı var, bir konfigürasyonu var. Bunun şeyine baktığımızda da yine aynı şekilde Ic artı Ib'nin Ie'ye eşit olma kaydısı zaten bütün transistör mimarlarında olacak.
+
+67
+00:35:00,268 --> 00:35:07,667
+Bunun konfigürasyonuna bakarsak yine aynı şekilde Bayes-Emitter arası zaten bizim istediğimiz gibi.
+
+68
+00:35:07,667 --> 00:35:11,507
+Yani Bayes-Emitter'i bir kere doğru polar malı 07'yi geçirmemiz lazım.
+
+69
+00:35:12,179 --> 00:35:36,019
+IB'nin oluşması için burada şeyin, yani B zakımını analiz ediyoruz. IB'nin oluşabilmesi için. Burada ters olan ise şu. Kollektör emiter arasını düşürmek B zakımını daha fazla etkiliyor. Neden? Çünkü şuna baktığımızda burada bir doğru polarma kısmı daha var. VCC'nin. Yani buradaki emitere ne vererek?
+
+70
+00:35:36,416 --> 00:35:56,155
+Bunu arttırmak, yani VCC'yi arttırmak, buradaki depreşini bir sıkı, tamam kolektörü arttırıyor, doğru. Yani buradaki depreşini bölgeyi arttırıyor ama buradaki B'yize de etkisi pozitif anlamda olduğu için ben VCC'yi arttırmam, IB'yi düşürme nedeni olacak.
+
+71
+00:35:57,844 --> 00:36:15,704
+Yani VCE'yi ben daha ufak yaparsam, kolektör emitter arasındaki yerimi daha ufak yaparsam ama yine ters kolarma yaparsam daha iyi bir konfigürasyondur diyeceğim. Common emitter için. Çünkü IBM'i daha verimli bir şekilde alabiliyorum.
+
+72
+00:36:17,331 --> 00:36:40,771
+Çıkışa bakarsak, yani Ic'ye bakarsak, Ic'nin analizini yaparsak, yine aynı şekilde Vce zaten belli bir sıfırın üstünde değer olmak zorunda. Burada şuradaki Bayz akımı, bakın hep dediğim gibi hani mikro amperler seviyesindedir. Bir sızıntı akımıdır Bayz akımı dediğimiz akım. Bu Bayz akımı arttıkça benim...
+
+73
+00:36:41,268 --> 00:37:05,748
+Gerekli olan, VCE arasına vermem gereken gerilim daha düşük seviyelerde daha yükseklere erişebiliyor. Yani BASE akımı zaten şurada da onu demeye çalıştık. VCE'nin ufalması BASE akımını daha güçlü kılıyor. VCE'nin ufalması BASE akımını daha güçlü kıldığından IC'yi daha yüksek seviyelerde verebiliyor.
+
+74
+00:37:08,436 --> 00:37:23,655
+Karakter isteklerden. Common emitter dediği tekrardan aynı kaydımız her zaman geçerli. Burada alfa dediğimiz parametremiz vardı hatırlarsanız. Alfa dediğimiz parametre neydi? E'nin I, C'yi oranıydı.
+
+75
+00:37:26,800 --> 00:37:42,460
+Bu örneğe, Ic'nin Ie oranıydı. Burada Ic'miz daha düşük çıkacağı için 0.9 gibi bir değer olacaktı. Ya bunu da bu şekilde de yazalım. Bu yüzden bir Ie soru da verildi ve arfada verildiyse çarpı olarak Ic'nin bulunması da mümkün.
+
+76
+00:37:43,460 --> 00:37:54,260
+Bu akıma değinmeyeceğim. Bu sızıntı akımı, minority kolektör akımı da ekstradan bazen hesaplanıyor ama buna biz girmeyeceğiz hiç. Yani böyle bir hesaplama yapmayacağız.
+
+77
+00:37:54,771 --> 00:38:02,751
+Çünkü bu çok fazla detay olacak. Sıcaklıkla alakalı sıkıntılarda bu IC bu genelde oluşan akım.
+
+78
+00:38:04,692 --> 00:38:15,251
+Beta bir diğer parametremiz. Yine aynı şekilde fark ettiyseniz IC ve IB yani o 3 tane akımımızdan diğer ikisi üzerinde bir etkisi olan bir parametre.
+
+79
+00:38:16,960 --> 00:38:40,140
+IB'ye yani beta akım, base akımına bölümüyle bulunan parametredir beta. Beta genelde 50, 100, 200 bu seviyelerde olur. Neden? Çünkü ben IB tekrardan söylüyorum mikro amperler seviyesinde, IC milli amperler seviyesinde olabilir. O da zaten en ufak senaryoda 100 kat demek.
+
+80
+00:38:45,556 --> 00:38:56,396
+Burada örneğin deminki çıktığıyla alakalı bir graf üzerinde analiz yaparsak beta'yı, VCE gerilimi 7.5 iken beta'yı bulalım denmiş.
+
+81
+00:38:56,396 --> 00:39:05,396
+7.5 iken ben bir çizgi çektim ve burada iki farklı değer üzerinden ortalamalarıyla da işlem yapabilirim.
+
+82
+00:39:05,576 --> 00:39:09,456
+İki farklı değer üzerinde de işlem yapabilirim. Şurayı bir aldım.
+
+83
+00:39:09,556 --> 00:39:24,216
+Şu iki tane noktayı. Bu şu diyor, 30 IB 30 mikro amperdeyken şu VC'ye 7,5 volttayken benim ölçtüğüm IC değerim 3,2 zannedersem 3,2 imiş.
+
+84
+00:39:24,596 --> 00:39:37,876
+Öteki tarafta IB bir 7,5 voltdayken gene ama Bs akımım 20 mikro amperdayken o zaman IC1 dediğim kısım 2,2 mili amper ölçülmüş.
+
+85
+00:39:37,876 --> 00:39:48,876
+Bu iki tanesini beta mantığıyla aradaki değişimlerini gözlemlemek için 3,2 eksi 2,2 den aradaki fark değişimini gözlemliyoruz.
+
+86
+00:39:49,536 --> 00:40:16,676
+Ötekinde de beta'daki, base akımındaki farkı gözlemliyoruz. Birbirine oranladığımızda bizim VC'ye 7.5 yani kolektör emitter arasını 7.5 volt verirken ki beta parametresini buluyoruz. Bu hep aynıdır esasında. Yani bunu 15'te de yapsanız aynı çıkacaktır. Çünkü bir transistörün betası demek aslında o transistörün kendi fabrikasyondan gelen bir parametredir.
+
+87
+00:40:18,228 --> 00:40:36,168
+Ortalamasını alarak da yapılabilir. İki farklı değerinin ortalamasını alarak da bu değer bulunabilir. Yakın çıkar. Ama tabii ortalamayı almaktan ziyade en verimli olan beta bulma yöntemi gerçek fabrikasyon değerleri üzerinde yapılan işlemdir. Ortalama yerine değil.
+
+88
+00:40:45,076 --> 00:40:59,256
+E vardı, I, B var ve I, C var. Aslında bizim bütün işlemlerimiz bunlar üzerinden yürüyecek. Beta dediğimiz şey zaten I, C, I, E bölü I, B.
+
+89
+00:41:07,827 --> 00:41:14,007
+IE dediğimiz zaten IBase artı ICollector.
+
+90
+00:41:14,643 --> 00:41:22,703
+Buradan IB'yi işte farklı yönlerle, işte misal IE'yi beta bölü IE, şey IE bölü beta yazabiliriz vs.
+
+91
+00:41:22,963 --> 00:41:29,384
+Yani oluşturabileceğimiz bir farklı yöntem formüllerden çıkartıp yeni formül oluşturabiliriz.
+
+92
+00:41:29,483 --> 00:41:34,463
+Burada da aslında alfanın beta şeklinde, betanın da alfa şeklinde yazılması söz konusu.
+
+93
+00:41:34,463 --> 00:41:40,743
+Burada da ortak olan IE olduğu için IE'leri çekerseniz şu formülleri bulmuş olacaksınız.
+
+94
+00:41:41,183 --> 00:41:42,623
+Aynı şey olmuş olacak.
+
+95
+00:41:42,643 --> 00:41:52,863
+Yani IE'leri eşitlediğimizde beta bölü beta artı bir alfayı verecek. Alfa bölü alfa eksi bir de betayı verecek diyeceğiz.
+
+96
+00:41:55,523 --> 00:42:05,023
+Ic beta çarpı IB dedik zaten. Şu nereden geliyor? Aslında bu da IE'nin Ic artı IB'den geliyor.
+
+97
+00:42:09,536 --> 00:42:10,895
+şey ne demekti?
+
+98
+00:42:13,016 --> 00:42:18,016
+Ic beta Ib demek. Artı Ib burada.
+
+99
+00:42:20,416 --> 00:42:23,876
+Evet şurası Ic olacak değil mi?
+
+100
+00:42:25,355 --> 00:42:27,675
+Beta Ib artı Ib.
+
+101
+00:42:29,315 --> 00:42:32,235
+Bunu da ortak parantezde aldığınızda beta artı birin.
+
+102
+00:42:32,724 --> 00:42:49,844
+Verilen kastiyanın bir fazlasının eğer ki Bayes akımı biliniyorsa, çarpılırsa direkt emitter'e eşit olduğunu söyleyebileceğiz. Emitter'i bulduktan sonra da zaten kolektörü de çıkartmış olacağız. Neden? Emitter eksi I ve benim kolektör akımımı verecek.
+
+103
+00:42:50,844 --> 00:42:58,404
+Bunlarla alakalı yapacağız sorular arkadaşlar. Bu hafta sadece formüllerin nasıl geldiğini yani şey yaparsak yeterli.
+
+104
+00:42:58,867 --> 00:43:10,407
+Soruları önümüzdeki hafta herhalde ders yok diye diyorum. 23 Nisan mi ne herhalde? Ondan sonraki hafta da vize haftası. Neyse onları konuşuyoruz.
+
+105
+00:43:12,563 --> 00:43:19,903
+Evet, ortak kollektör konfigürasyonuna bakarsak, şimdi ortak base, ortak emitteri yaptık. Bir de ortak kollektöre bakacağız.
+
+106
+00:43:20,823 --> 00:43:32,344
+Yine her zamanki gibi base ile emitter bu sefer yok tabii. Çünkü ortak kollektör, yani kollektörün hem base'e hem emitter'e dahil olması lazım.
+
+107
+00:43:32,344 --> 00:43:36,323
+Bu durumda base'in doğru polarizasyon olması önemli.
+
+108
+00:43:36,947 --> 00:43:56,327
+O yüzden Base ile Collector arasını doğru polarize ediyoruz. Yani artısına artı eksisine eksi veriyoruz. Öteki taraftan Emitter ile Collector arasını ise ters polarize ediyoruz. Şuradaki Deplation Region'ı tekrardan söylüyorum. Buradaki Deplation Region'ı azaltmak için.
+
+109
+00:44:02,291 --> 00:44:21,952
+Bunun konfigürasyonları da zaten ötekiyle benziyor. Çok üzerinde durmayacağız. Sadece şunu bilmemiz lazım. Eğer ki VCE üzerinde bir analiz yapılacaksa, mesela 5 voltluk CE üzerinde bir analiz isteniyor. O zaman bizim için önemli olan şuradaki IB akımları.
+
+110
+00:44:23,251 --> 00:44:31,771
+Ve şuradaki Ic akımlarıdır. Yani bunun tekabülüne gelen Ic akımlarıdır. Bu grafı okumayı bu anlamda bilelim.
+
+111
+00:44:38,356 --> 00:44:48,856
+Güçlerle alakalı gücün formülü her zaman devre teorislerinde hatırlarsanız I çarpı V'ydi veyahut da I kare çarpı R'ydi veyahut da V kare bölü R'ydi.
+
+112
+00:44:49,280 --> 00:45:10,680
+Bunların pek çok versiyonu vardı. Çıkartılabilecekti işte P'ye çarpı I'dan farklı farklı formüller üretilebilirdi. Burada da bir transütör üzerindeki harcanan güç bizim için her zaman her bir bacaktaki yani kollektör base, kollektör emitter.
+
+113
+00:45:12,288 --> 00:45:39,688
+Ortak Base yapısında Collector Base arasındakidir. Neden? Çünkü Collector'dur bizim çıkış bacağımız. Ortak Emiter'de Collector Emiter'dir. Neden? Çünkü Collector'dur bizim çıkışımız. Ortak Collector'da da yine çıkışımız Collector'dur. O yüzden Collector Base arasındaki akım, Collector Emiter arasındaki gerilim üzerinden hesaplanır güç.
+
+114
+00:45:40,851 --> 00:46:04,692
+Bunları bilelim. Base akımını hiçbir zaman dahil etmiyoruz zaten akıma. Ortak base'e bağlanmış olan mimari de konfigürasyonda kolektör base arasındaki oluşan potansiyel fark çarpı kolektör akımıdır. Benim için bu transüstörün bu konfigürasyondaki harcadığı güç.
+
+115
+00:46:05,972 --> 00:46:23,731
+Kollektör-Emitter arasındaki gerilimin kollektör ile çarpımı yine Common Emitter'dedir. Kollektör-Emitter arasındaki gerilimin emiter akımı ile çarpımı da ortak kollektördeki mimarideki konfigürasyonundaki gücü bana spate edilmiş gücü bana verecektir.
+
+116
+00:46:31,315 --> 00:46:47,755
+Sıcaklığa bağlı olarak değişmeler veya kolektör emiter voltaj maksimum aralığı. Bunlar hep bahsedilir, yazılır. Bu karakteristik değerlere göre transistör devrede uygulanır. Yani devreye entegre edilir.
+
+117
+00:46:48,340 --> 00:47:10,840
+Transistörün, tabii gerçek bir lab ortamımız yok. O yüzden elle muhtemelen transistör tutup da bir yerlerde tasarım yapmayacaksınız ama projeleriniz var gerçi. Projelerde kullanacaksınız %90. Çünkü transistör elektronik devrelerde ve bilgisayar mimarilerinde en çok kullanılan devre elemanıdır arkadaşlar.
+
+118
+00:47:12,820 --> 00:47:39,880
+Hatta bilgisayar organizasyonda veya bilgisayar mimarisinde tarihçeden hatırlarsanız anlatılıyor olması lazım hocalarınız. Gerçi o üçüncü sınıf dersiydi. Orada anlatacaklar diyelim. Transüstörün bulunmasıyla diyot mimarisinden çıkılmasıyla diyelim. İlk başta diyot tabanlı bilgisayarlar üretildi. Mesela Enyaq denen çok popüler bir bilgisayar tarihçesindeki ilk bilgisayarların atasıdır. Enyaq diyot tabanlıydı.
+
+119
+00:47:40,820 --> 00:47:47,279
+Şu an günümüzdeki ufak diyotlar değil, tüp diyot dediğimiz tüp yapısında diyotlar vardı kocaman el kadar.
+
+120
+00:47:47,731 --> 00:48:10,311
+Bu tüp diyotlardan vazgeçilerek transistör mimarisine geçilmesi bilgisayar sistemlerinin çok hızlı bir şekilde ilerlemesine neden oldu. Şu anda misal CPU dediğimiz merkezi işlem biriminin içerisinde tamamen transistörlü kapı mimarileri mevcuttur. Lojikle misal ikinci sınıf dersi birinci dönemde gördüğünüzde ediyorum.
+
+121
+00:48:11,059 --> 00:48:38,800
+Lojikte, lojik kapılarının içerisinde aslında bir transistör bağlantısı vardır. Ve transistörler lojik yetleri oluşturur. Lojik yetler de bilgisayar mimarlerini oluşturur. Bu mantıkla kafamızda ortak da biliriz. O yüzden transistörlerin önemi çok büyüktür. Anahtarlama devre elemanı olarak en çok kullanılan şeydir. Bunu göreceğiz. Yani Bayes akımı. Ne demek anahtarlama? Ben buraya bir gerilim bağlıyorum kodektöre.
+
+122
+00:48:39,059 --> 00:49:06,460
+Buradan aşağı bir akım akması için bir kontrol edeceğim nokta var. Nedir o da? Beyzemiterin doğru polarması. Eğer beyzemiter arasında doğru polarma yapmazsam bu akım buradan aşağı inmeyecek. O yüzden transistör kesimde kalacak. Bu mantıkla da çokça kullanılan bir devre elemanıdır. Anahtarlama devre elemanıdır. Bu anlamda da çok önemli bir devre elemanı olduğunu tekrar belirtelim.
+
+123
+00:49:07,092 --> 00:49:25,052
+Gerçekte 3 bacaklı 1-2-3 diye ibare edilir. Yanında da bunun hangisi, 2 hangisi, 3 hangisi bilinmezse diyorum. Eğer bunları yazmamış olsa bile 1-2-3 şöyle bulabiliyoruz.
+
+124
+00:49:28,244 --> 00:49:35,664
+Ne diyelim? Sırt bölgesi diyelim. Yani düz olan çizgi bölgesi. Şuradaki sırt bölgesine tekabül girerek bakıldığında,
+
+125
+00:49:36,344 --> 00:49:46,244
+işte sağdaki bacak, 3 nolu bacak emiter. Tabi burada herhalde yanlış yazılmış. Çünkü normalde 3 nolu bacak emiter,
+
+126
+00:49:48,084 --> 00:49:53,324
+2 nolu bacak base, 1 nolu bacak da kolektör olması lazım bu diyagrama göre.
+
+127
+00:49:54,324 --> 00:49:58,043
+Bu diagrama göre öyle olması lazım. Tabii yanlış yazılmadıysa.
+
+128
+00:49:59,423 --> 00:50:09,423
+Zaten fiziksel olarak çok bir iş yapmayacağız. Ama normalde data sheetlerde 1-2-3 olarak yazılmazsa bu şekilde aksi belirtilmedikçe.
+
+129
+00:50:09,423 --> 00:50:15,144
+Burada yazılmış emitteri sola yazmışlar. Yani bu şekildeymiş demek ki.
+
+130
+00:50:17,724 --> 00:50:20,524
+Data sheetlerde başka bilgiler de veriliyor tabii.
+
+131
+00:50:21,331 --> 00:50:23,372
+Bunlar gelmiyor, niye ekrana gelmiyor?
+
+132
+00:50:27,603 --> 00:50:28,483
+Allah Allah.
+
+133
+00:50:31,043 --> 00:50:32,463
+Gelmiyor bunlar.
+
+134
+00:50:33,123 --> 00:50:35,763
+Başka data sheet ile bilgiler de var.
+
+135
+00:50:35,903 --> 00:50:42,603
+Bozulma bölgesi, ufak sinyalin karakteristiklerine göre IB akımında oluşan değişimler.
+
+136
+00:50:43,463 --> 00:50:47,603
+Translörün gerçekten bozulma, breakdown voltajı, 40 voltun...
+
+137
+00:50:48,371 --> 00:51:01,271
+Üstüne çıktığında bozulma durumu. Söz konusu Bayes kısmının, emitter Bayes'in arasındaki 5 voltu geçerse bozulma durumu. Bunların hepsi karakteristik elinde data sheetlerde belirtiliyor.
+
+138
+00:51:02,612 --> 00:51:10,271
+Transüter'ün yanıp yanmama durumu nasıl anlaşılıyor? O da şöyle. Dedik ki içerisinde zaten en...
+
+139
+00:51:28,467 --> 00:51:31,387
+Tablet bağlantısı gitti arkadaşlar.
+
+140
+00:52:44,532 --> 00:53:00,532
+Nerede kalmıştık? Evet, transütörlerin projenizde de lazım olacak diye bunu anlatsak iyi olacak. Bozulup bozulmadığının testi şu şekilde anlaşılıyor arkadaşlar. Dedik ki, Base-Emitter arası doğru polar mı olmalı? Yani ben Base-Emitter arasında...
+
+141
+00:53:00,788 --> 00:53:19,688
+Diyot yapısı, MP yapısı var veya PN yapısı var ya, bu yapıyı bir kere doğru polarizasyon ile diyotu beslemem lazım. Direnç sekmesini aldığımızda, BZM ter arasındaki, tabi buraya şimdi bu artı verilmiş, buraya eksi verilmiş. Yani bu aslında bir MPN.
+
+142
+00:53:20,096 --> 00:53:35,695
+Zaten şuradaki oktan da neyi gösterdiği için MPN transistörü olduğunu söyledim. O yüzden artı noktası B'ye verdim, eksiği de E'ye verdim. Bu aradaki direncin çok az, çok ufak bir direnç yapısında olduğunu çıkartmam lazım.
+
+143
+00:53:35,695 --> 00:53:47,416
+Burada da bir PN yapısı var. Şöyle. Burada da artısını kollektöre, eksisini B'ye bağladığımda çok yüksek bir direnç değeri görmem lazım.
+
+144
+00:53:48,096 --> 00:53:55,056
+Bu ters taraftan beslediğim için bu şekilde kontrol edebiliriz. Transültörün bozulup bozulmadığı.
+
+145
+00:53:57,876 --> 00:54:08,936
+Farklı transültörler var. Foto transültörler var. Foto sensörü olarak kullanılan farklı mimarilerde transültörleri burada görebiliriz.
+
+146
+00:54:10,996 --> 00:54:13,195
+Şimdi öteki slide'a geçeceğim arkadaşlar.
+
+147
+00:54:14,164 --> 00:54:16,604
+Hesaplamaları anlatacağım. Slide.
+
+148
+00:54:20,148 --> 00:54:31,468
+Ara vermeyeceğim. Muhtemelen erken bitecek. Yani herhalde bir yarım saat erken bitirebiliriz diye düşünüyorum. O yüzden ara vermeyeceğim.
+
+149
+00:54:48,724 --> 00:55:13,604
+Evet, şimdi transistörlerin çalışma prensiplerine bakalım. Şunu her zaman aklımızda tutacağız. Transistörlerin polarmasını sağlayan şey DC gelirimlerdir. Ama transistör AC sinyallerin üzerinde işlem yapar. Yani biz bir transistörün çalışma noktasını belirlerken,
+
+150
+00:55:14,003 --> 00:55:16,844
+Tamamen DC gerilimler üzerinde
+
+151
+00:55:16,844 --> 00:55:18,704
+Biz
+
+152
+00:55:20,403 --> 00:55:34,543
+Base emitterse veya kolektör emitterse tamamen DC gerilimlerle biz bu transistörü polar bias diyeceğiz. Yani DC gerilimlerle biz transistörü çalışma eğilimine sokacağız.
+
+153
+00:55:34,543 --> 00:55:48,064
+Ama bu transistörün aslında AC input yani bir alternatif akım üzerinden sinyali arttırma veya azaltma yaptığını bilelim.
+
+154
+00:55:48,403 --> 00:56:02,284
+Ama bizim için önemli olan kısım, soruları çözerken kullanacağımız kısım, bu transistörün çalışmasını sağlayacak mimari olan DC kontrol. Yani DC gerilimle iş yapacağız biz.
+
+155
+00:56:04,423 --> 00:56:07,980
+Evet, bir Q-Point diye tabir edeceğimiz...
+
+156
+00:56:08,052 --> 00:56:35,452
+Bu nokta olacak. Nedir bu Q-Point? Aslında bu transatörün çalışma eğrisinde nerede çalışabileceğini, nerede doğru polarmalı bir şekilde çalışabileceğini söyleyen nokta. Bu grafta misal örneğin VCE, Collector Emitter arasında bir çalışma eğrimi 20 volt olarak belirtilmiş. Neden? Çünkü bu data sheetine baktığımızda bu transatörün,
+
+157
+00:56:36,052 --> 00:56:44,432
+BC Max dediği 20 voltun üstünde bu transistör breakdown oluyor zaten, bozuluyor. O yüzden buraya kadar yalınmış.
+
+158
+00:56:44,432 --> 00:56:57,432
+Cut off dediğimiz kısım, yani aslında IB, base akımının olmadığı, aşağısı veya kolektör akımının olmadığı kısımlar, yani kesimde olduğu kısım.
+
+159
+00:56:58,708 --> 00:57:04,708
+Orası da çalışma alnına girmiyor. Bunun dışında, Iğbe'yi arttırdıkça...
+
+160
+00:57:05,076 --> 00:57:27,675
+Ic yani kolektör akımı da artacak doğal olarak. Ama daha düşük Vc aralıklarında artacak. Çünkü buralarda breakdown'la sokuyor diyeceğiz. PC Max'dan dolayı maksimum gücü elde ettiğimizden dolayı. Çünkü güçte ben şunu biliyorum ki Ic çarpı Vc olacak. Ama bu da bir yerden sonra Ic'yi arttı.
+
+161
+00:57:28,112 --> 00:57:50,952
+İçin bu transistörü bozacak. O yüzden de çalışma eğrisi dışında kalıyor. Bu eğri dediğim gibi data sheetlerdeki karakteristiklere göre çıkartılıyor. Mesele şunu bilmek, ben öyle bir değer gönderirsem bu transistöre, o gönderdiğim değer şu bölge içerisinde olmak zorunda ki bu transistör çalışsın.
+
+162
+00:57:51,956 --> 00:58:14,175
+Burası operating point bölgesini belirleyeceğim şeydir. Mesela C değerleri bu transfer'ü çalıştırabilir. Nedir bu C değerleri? I, B'si 10 mikroamper. Sonra V, C'e muhtemelen 3 gibi görüyorum. V, C'e 3 volt.
+
+163
+00:58:19,411 --> 00:58:27,051
+4, diyebiliriz herhalde. Milli amperlik bir mimaride bu transistör çalışma eğilimi gösterecek diyeceğiz.
+
+164
+00:58:28,571 --> 00:58:33,011
+Q Point'tan kastımız bu. Operation Point diye de çevireceğiz.
+
+165
+00:58:35,731 --> 00:58:52,152
+Üç durumu var çalışması, transütörün. Demiştik zaten. Bir işte normalde Active Region dediğimiz bölge. Yani Base Emiter arası doğru polar mı olacak? Base Collector arası ters polar mı olacak? Bir de kesim bölgesi var. Kesim bölgesi aslında Base Emiter'in.
+
+166
+00:58:53,204 --> 00:59:07,244
+Yani en başlı olan o Deplation Region'a azaltılması gereken bölgenin bezemiter arası, ters bağlanarak Deplation Region'ın arttırılmasıyla giren bölge. Yani şu alt bölge oluyor, cutoff.
+
+167
+00:59:09,235 --> 00:59:35,675
+Saturation Region ise, Saturation Region'da burada çok gözükmüyor ama ileride başka örneklerde gözükecek şu bölge oluyor. Yani şu sol taraf. Saturation ise aslında Base Emiter'i biz yine doğru polarladık. Yani doğru bir şekilde oradaki Deplation Region'ı azalttık. Evet. Ama Base Collector'ı ters bağlamamız gerekirken bağlamadık. Yani 20 Volt verdik Base Emiter'e. Tamam. Öteki tarafa eksi 20 verdik.
+
+168
+00:59:36,500 --> 00:59:58,760
+Çünkü 20 vermemiz lazımdı ki kolektör ters polarlansın. Yani oradaki yükler çekilsin source tarafından ve deblation region artsın. Amaç buydu ama eğer ki biz base kolektörü doğru polarlarsak o zaman yani doğru polarlamadan kastım şurası VCE dediğimiz bölgeyi eksi değer vermek.
+
+169
+01:00:00,000 --> 01:00:20,619
+Ne demek eksi değer vermek? Şurada kollektör emitter arası yani şuradaki VCE'nin aslında tam tersi işte bu misal MPN transüstör buraya artı gelmiş yani en tarafa artı değil eksi getirilmiş olan senaryo. Eksi volt.
+
+170
+01:00:20,916 --> 01:00:39,916
+O zaman ne olacak? Buradaki Deplation Region eksiye eksi olduğu için yine indirilmiş olacak, azaltılmış olacak. O istenmeyen bir durum. Bu Saturation Region bölgesinde Base Collector'un de doğru bir şekilde polarlandığı senaryo. Bu da bizim için...
+
+171
+01:00:40,371 --> 01:00:53,871
+Aslında çalışma bölgesi dışındaki bölge. Çalışma bölgesi sadece bu. Burada da kaydemiz BayZ emiter doğru polarlanacak. Artıya artı, eksiye eksi. BayZ kolektör ise ters polarlanacak.
+
+172
+01:00:56,052 --> 01:01:12,192
+P ise oraya biz negatif yani bir eksi güç kaynağının eksi ucunu ve base'imiz P ise oraya eksi ucunu getirecek şekilde reverse pi ise evet eksi ucunu getirecek şekilde bir reverse piyasa yapmamız lazım.
+
+173
+01:01:15,572 --> 01:01:25,832
+Şimdi burada analizlere gireceğiz. Birinci analiz, burada aslında çok fazla farklı konfigürasyon çıkartılabilir. Sadece mantığını oturtmamız lazım.
+
+174
+01:01:26,392 --> 01:01:43,052
+Dediğimiz gibi bizim için buralar ilgimiz dışında. Bir kere transütör AC sinyaller üzerinde işlem yapabilir. Evet ama transütörü aktif regina sokan diyelim o deminki grafta sokan gerilimler DC gerilimlerdir.
+
+175
+01:01:43,411 --> 01:01:51,391
+O yüzden transistör zaten DC kontrol ile kontrol edilen bir elektronik devre komponentidir.
+
+176
+01:01:52,711 --> 01:01:55,871
+Burada şimdi şöyle bir diagram olduğunu düşünelim.
+
+177
+01:01:57,132 --> 01:02:00,791
+VCC bir giriş gerilimi yani transistörü besleyen gerilim.
+
+178
+01:02:00,791 --> 01:02:08,511
+Bu gerilim bize bu konfigürasyona baktığımızda bir base ucuna bağlanmış bir de kolektör ucuna bağlanmış.
+
+179
+01:02:08,884 --> 01:02:27,544
+Ve emitter'e de negatif bağlanmış. Şimdi Bayes emitter'in doğru polarması burada sağlanıyor. Neden? Çünkü emitter'i zaten negatifte, buradan da pozitif bir şey geliyor ve burada VB ile VE arasındaki potansiyel fark dediğimiz VBE doğru polarma şeklinde gözüküyor.
+
+180
+01:02:28,211 --> 01:02:40,791
+O yüzden bu iletime geçecek. Buradan bir IB akımı akacak ve ben bundan sonra IB'yi nasıl bulurum vs. onlara değineceğiz ama bundan sonra analizlerimi gerçekleyebilirim.
+
+181
+01:02:42,331 --> 01:02:50,892
+Şimdi şu yapıyı şu hale getirdiğimizi düşünelim. Bir şey değişmiyor. Sadece IB ucunu analiz ediyorum şu an. Şurayı kopardığınızı düşünün.
+
+182
+01:02:52,892 --> 01:02:54,912
+Buradan bir VCC geliyor.
+
+183
+01:02:55,476 --> 01:03:09,395
+Şimdi KVL'yi hatırlarsanız Kirchhoff'un gerilim kanunu bize şunu söylüyordu. Bir hat düzlemi içerisinde, yani burada bir loop var değil mi aslında? Şöyle bir loop var. Yani ikisini birleştirip toprağa verdiğimi düşün.
+
+184
+01:03:11,536 --> 01:03:22,715
+KVL bize derdi ki, bir loop içerisinde bütün devre ekipmanlarının üzerindeki gerilim toplamı sıfır olmalı. Bu da enerjinin kurulumu kanunuydu.
+
+185
+01:03:23,539 --> 01:03:34,380
+Şimdi burada bir gerilim var. Vcc. Eksi artı şeklinde bir Vcc olduğu için yazdım. Ve akımın aktığı yönde direnç...
+
+186
+01:03:34,387 --> 01:04:01,627
+Ters polarize olacaktı. Yani akımın dirence girdiği noktada artı, çıktığı noktada eksi. Bu devre teorisinde çokça anlattığımız konu. Polarizasyon konusu dirençler üzerinden. Bu şeklinde bir gerilim bırakacak. Artı eksi yani ters bir, çünkü sömürmesi lazım. Direnç sonuçta sömüren bir devre romanı. Yani bataryaları ters bağladığımı düşünelim. Eksi artı, artı eksi olmaları eve. Çünkü buradaki gerilimi sömüreceğim.
+
+187
+01:04:02,291 --> 01:04:16,492
+eksi artı artı eksi şeklinde oldu. Burası da artı eksi bir iç gerilimi var demiştik değil mi? Neydi bu iç gerilim? Şuradaki diyot yapısından dolayı 0.7 volt. Vb'miz bu.
+
+188
+01:04:16,492 --> 01:04:26,432
+Yani ben buraya bir KBL yazarsam Vcc eksi IB çarpı RB şuradaki VB gerilimini verecek.
+
+189
+01:04:27,860 --> 01:04:46,840
+Eksi 0.7 volt. Tekabülünde ben bu IB'yi bulabilirim. Çünkü burada işte RB'yi bilsem, VBE zaten standart geliyor. Şeyden dolayı, diyotun iç yapısından dolayı 0.7 geçmesi lazım. Burada bir diyot olduğu için.
+
+190
+01:04:49,079 --> 01:04:53,259
+Buradan IB'yi çekerek ben IB'yi bulmuş oluyorum bu sorularda.
+
+191
+01:04:55,123 --> 01:04:58,163
+Burada anlaşıldık mı arkadaşlar? Var mı bir problem?
+
+192
+01:05:01,876 --> 01:05:14,896
+Tamam değil mi? Bunlar kritik noktalar transültörler için. Öteki tarafı analiz edelim. Yani şu tarafını sağ tarafından analiz ediyoruz. Burayı kapattık şimdi.
+
+193
+01:05:14,896 --> 01:05:21,896
+Bu tarafı analiz ettiğimizde de yine bir VCC gerilimimiz vardı zaten o yukarıda.
+
+194
+01:05:22,643 --> 01:05:26,303
+Bir dirençten geçerek VCE arasından geçerek gene de.
+
+195
+01:05:26,343 --> 01:05:30,423
+Burada bir loop var. Bunu da yazmak istesek, şöyle yazabiliriz.
+
+196
+01:05:50,228 --> 01:05:59,587
+Çünkü Collector-Emitter arasının ben ters yani normalde forward olmayan şekilde olmasını beklediğimden artı eksi yazdım buraya.
+
+197
+01:06:01,708 --> 01:06:10,688
+Tamam mıyız arkadaşlar? Yani burası MPN ya. O yüzden artı eksi. Burası tamam mı arkadaşlar?
+
+198
+01:06:13,027 --> 01:06:13,827
+Güzel.
+
+199
+01:06:14,516 --> 01:06:27,155
+Burada başka bir Ic'yi yazabileceğimiz denklemimiz var. Bunu söylemiştik zaten. Beta verildiyse soruda, önceki soruda Ib'yi de bulduysak, Ib ile Beta'yı çarpar, Ic'yi bulurum.
+
+200
+01:06:27,155 --> 01:06:36,596
+Ic'yi bulduktan sonra, Ic çarpı Rc'yi Vcc'den çıkarak Vc'yi de bulabilirim. Tamamız herhalde.
+
+201
+01:06:42,291 --> 01:06:51,191
+Evet, Translator'un Saturation'a sokma durumu bizim için VCE'nin doğru değil, yani daha doğrusu ters değil, doğru polar malı şekilde verilmesiydi.
+
+202
+01:06:51,191 --> 01:07:09,071
+Bunu ICE Saturation dediğimiz noktaya kadar yapan bir akımımız var. Bunu bulmak için de normalde VCE'nin maksimum alabileceği değer benim için RCE'ye bölünerek, kolektördeki dirence bölünerek bulunuyor.
+
+203
+01:07:09,492 --> 01:07:15,372
+Bunları sorular üzerinde analiz edeceğiz ileride.
+
+204
+01:07:18,652 --> 01:07:21,872
+Bu kısımları sorular üzerinde analiz edelim.
+
+205
+01:07:21,872 --> 01:07:24,872
+Çünkü buralar QPoint'te.
+
+206
+01:07:29,300 --> 01:07:51,560
+Bunları olmadığı sorular üzerinde tekrar döneriz arkadaşlar. Başka bir konfibrasyon. Ne farkı var? Eğer ki ben deminki örneklerde hatırlarsanız emiter bacağı direkt genediye bağlıydı. Ama bu sefer buraya bir direnç yapılırsa, direnç konulursa nasıl çözülecek? Aslında hiçbir şey değişmiyor.
+
+207
+01:07:51,987 --> 01:07:57,307
+Aynı şekilde yine ben ikiye böldüm. Şu sol tarafı aneğiz ediyorum ilk etapta.
+
+208
+01:07:57,747 --> 01:08:02,427
+I, B akımını bulmak için ne yapacağım? Bir K, V, L yapacağım yine aynı şekilde.
+
+209
+01:08:03,247 --> 01:08:08,887
+V, C, C, şurası, eksi I, B çarpı R, B. Değil mi?
+
+210
+01:08:10,967 --> 01:08:12,787
+Şurada bir yanlışlık yazılmış herhalde.
+
+211
+01:08:13,987 --> 01:08:16,227
+Niye bu şey gitti ya?
+
+212
+01:08:18,996 --> 01:08:29,195
+Evet, şurası IB çarpı RB olacak arkadaşlar. Şurada düzeltmişiz de. Anlatabildim mi? Şöyle olacak.
+
+213
+01:08:31,076 --> 01:08:37,255
+Eksi VB'ye, eksi IE çarpı R'ye. Şu denklemi yazmada bir problem yok herhalde.
+
+214
+01:08:38,195 --> 01:08:58,056
+Vcc-Ib-Rb-Vbe'yi yazarken, yani şu E-Re'yi yazarken, ben biliyorum ki E'de demiş şey beta artı 1-Ib. Yani değişkeni E'den kurtarmak için beta artı 1-Ib yazdım.
+
+215
+01:08:58,707 --> 01:09:16,547
+Ve RE ile çarptım. Buradaki VBE'yi niye sildik? Çünkü bu bilinen 0.7 ideal olduğunu düşünelim, 0 olduğunu düşünelim diye silmişiz buradan. Ama 0.7 şeklinde şurada aslında şu tarafa, şuraya ekleyelim bence VBE kalsın.
+
+216
+01:09:18,688 --> 01:09:20,307
+VBE'miz var çünkü.
+
+217
+01:09:21,011 --> 01:09:42,451
+Şuradaki IE'yi beta artı bir IB şeklinde çevirdik. Çünkü ben biliyorum ki IE dediğimiz şey IC artı IB idi. Şu IC'yi de ne yazmıştık biz? IC'yi de I beta. Şöyle yazmıştık. Beta da IC bölü IB idi.
+
+218
+01:09:43,315 --> 01:09:51,216
+Değil mi? Yani beta IB artı IB'den IE'ye eşit. Orada da IE'yi beta artı bir IB şeklinde yazdım.
+
+219
+01:09:52,895 --> 01:10:01,495
+Eksi VB'yi de yazdım. Şimdi buradan IB'yi çekebiliriz. Çünkü biliniyor her şey artık. Vcc'yi biliyoruz soruda giriş besleme gerilimi.
+
+220
+01:10:01,908 --> 01:10:24,168
+VBE zaten 0.7 veya silisyum ise 0.7, germanyum ise 0.3, arsene ise 1.2. VBE'yi yazdık. RB artı, işte bunlar da direnç değerleri zaten. Beta'yı da soruda vermek zorunda. Bu ikisini oranladığımızda IB'yi bu diyarlamda bulabiliyoruz.
+
+221
+01:10:25,108 --> 01:10:44,288
+Öteki tarafa baktığımızda, IB'yi bulduktan sonra IC'yi oradan çekebiliriz esasında. IC'yi çektikten sonra da bu denklemi yerleştirirsek, VCE gerilimini bulabiliriz. Ne yapacağız burada? VCC- veya tam tersten loop yazılmış burada, hani şu tersine yazılmış. IC çarpı RC.
+
+222
+01:10:45,300 --> 01:10:54,340
+E çarpı ve artı vc eksi vcc. Hani tersten dolu yazılmış. Şöyle yazılmış zaten. O şekilde.
+
+223
+01:10:57,659 --> 01:11:10,400
+E'nin ic işte olma durumunu kabul edersek yakın sayarak. Hani kabul etmesek ki burada ic gördüğümüz yerlere veya e'ye gördüğümüz yerlere ib'yi bulduysak o formatta ic'yi de yazabiliriz.
+
+224
+01:11:12,083 --> 01:11:35,683
+Gibi bunu da çekersek Vc'yi bulmuş oluruz. Bunun dışında tabii Vc'yi bulduktan sonra aslında benim şuradaki gerilimlerim de var değil mi? Mesela burada VE gerilimim var. Burada da Vc gerilimim var. Bunu nasıl bulabiliriz? VE gerilimini direkt IE çarpı RE'dir değil mi? Çünkü şurası yani şuradaki noktadaki gerilim.
+
+225
+01:11:36,307 --> 01:12:01,028
+Şu aradaki gene de olduğu için gerilim potansiyel farkı eşit olacak. IE çarpı RE'ye eşit olacak. Oradan bulabiliriz VE'yi. VC'yi yani kolektördeki gerilimi ise VCE'yi de biliyorsak bir önceki adımda bulduğum. VCE'yi VE'ye ekleriz. Şurayı vermiş olacak. Veya tam tersinden VCC'den IEC çarpı RE'ye çıkartırız.
+
+226
+01:12:01,779 --> 01:12:05,619
+Burayı vermiş olacak bu noktayı değil mi? Burası da VC noktası zaten.
+
+227
+01:12:07,159 --> 01:12:09,719
+E'deki gerilimi nasıl buluruz peki? Şuradaki gerilimi?
+
+228
+01:12:09,719 --> 01:12:18,039
+E zaten VE'yi bulduysak, yani şuradaki veya E çarpı R'yi bulduysak, şuraya 0.7 ekleyerek burayı bulabiliriz.
+
+229
+01:12:18,479 --> 01:12:21,579
+Çünkü şurası VBE'yi biliyorum zaten 0.7.
+
+230
+01:12:27,123 --> 01:12:37,564
+Öteki tarafta kaldı tabii bunun çözümü. I, R çarpı, R, B'yi, şurası I, B olacak. I, B çarpı, R, B'yi çıkartırsak da bulabiliriz diyeceğiz.
+
+231
+01:12:39,083 --> 01:12:42,423
+Var mı? Hiç sıkıntı arkadaşlar. Bunları yazmakta.
+
+232
+01:12:46,484 --> 01:12:48,984
+Yok diye düşünüyorum. Devam ediyorum.
+
+233
+01:12:58,036 --> 01:12:59,788
+Bir bakıyorum. Gerekli bir...
+
+234
+01:13:03,796 --> 01:13:24,376
+Evet. Şimdi dedik ya, transütörün bir VCE geriliminden sonra bozuntuya gitmesi söz konusu. Eğer ki işte o VCC dediğimiz gerilim CE'yi geçiyorsa, o max'ı geçiyorsa herhangi bir akım oluşmayacak. IC saturation olacak diyeceğiz.
+
+235
+01:13:24,884 --> 01:13:48,144
+VCE 0 ise, yani kollektör-emitör arası bir polarma olmadıysa da burada, VCE 0 ise, ancak ICE'nin RCE 0 olduğu noktada.
+
+236
+01:13:48,564 --> 01:14:00,463
+Yani kolektör-emiter arasında bir potansiyel fark sıfırsa direkt Vcc'yi Rc artı Re şeklinde bölerek de bulabiliyoruz. Eğer bu tabloyu oluşturmak istenirse.
+
+237
+01:14:04,020 --> 01:14:08,120
+Başka bir konfigürasyon da gerilim bölücü konfigürasyonu.
+
+238
+01:14:08,120 --> 01:14:09,120
+Zaten...
+
+239
+01:14:09,136 --> 01:14:29,976
+Şurada iki tane R1-R2 direncinin olmasından bu VCC'nin bölücü bir devreye bölüneceğini görüyor olmamız lazım. Çünkü gerilim bölücü devreleri hatırlarsanız ladder devreleri idi. Yani R ladder diye tabir ettiğimiz devrelerdi.
+
+240
+01:14:37,136 --> 01:14:38,536
+Ölünmüş bir geldim olacak.
+
+241
+01:14:43,123 --> 01:14:57,203
+VB dediğimiz şurası işte. Şuradaki VB gerilimimiz bizim aslında VCC'nin R2 bölü R1 artı R2 oranıyla oranlandığı gerilim.
+
+242
+01:14:57,203 --> 01:15:08,804
+Yani aslında R2 üzerindeki gerilimi soruyoruz biz buradaki VB'yi bularak. O da VCC çarpı R2 bölü R1 artı R2 formülüyle bulacağız. Burası VB.
+
+243
+01:15:09,332 --> 01:15:34,912
+Şimdi E'yi bulmak için ise yani emiter akımını bulmak için ise VE bölü RE yapacağız ama VE'yi de bulmak için VB'yi bulduktan sonra VB eksi VBE yani şu aradaki potansiyel fark zaten materyalden kaynaklanan fark 0.7 gibi işte 0.3 veya 1.2 gibi VB'den çıkarttığımızda biz şuradaki VE'yi bulmuş olacağız.
+
+244
+01:15:37,332 --> 01:15:39,972
+IE'yi bulmuş olacağız diyeceğiz.
+
+245
+01:15:41,552 --> 01:15:45,932
+CE'yi de yani şuradaki aradakini de nasıl bularız o zaman?
+
+246
+01:15:46,332 --> 01:15:53,912
+VCC-ICRC-RE-E-E-RE bana VE'yi verecektir diyeceğiz.
+
+247
+01:15:55,852 --> 01:15:57,432
+Buralar anlaşılıyor değil mi arkadaşlar?
+
+248
+01:15:57,432 --> 01:16:02,432
+Çok yani zaten devre teorisinden bir tık.
+
+249
+01:16:02,804 --> 01:16:09,644
+Bu kameralere aşırı neşesiniz diye hızlı geçiyorum biraz. Varsa bir problem lütfen yazın.
+
+250
+01:16:22,804 --> 01:16:39,664
+Başka bir konfigürasyonumuz daha var. DC-BIAS dediğimiz bir konfigürasyon. Burada da farkımız şu. VCC bir RC direnci üzerinden geçtikten sonra bir IB akımı veya IC akımı oluşturması söz konusu.
+
+251
+01:16:44,212 --> 01:17:10,012
+KBL analizi yapmamız lazım. Ama burada farklı olarak şu noktada bir loop daha oluşacak. Bunu denklemini yazarken aslında şuradaki I, C'yi ikinci versiyonla hani daha birebir aynı değil. Sonuçta bu üstsel I, C'de I, C artı I, B söz konusu. Daha dağılmamış bu not analizini yaparsak. Yani üstsel I, C, I, B artı I, C'ye eşit olacak.
+
+252
+01:17:10,644 --> 01:17:29,644
+Şimdi burada Vcc-Ic-Rc-Ib-Rb-Vbe-E-E-Re ile biz aslında akımın şu mavi hatta gözüken şekliyle bir KVL yapıyoruz.
+
+253
+01:17:30,463 --> 01:17:36,584
+Niye şurayı katmadık, Vbe'yi katmadık? Çünkü onu ilk etapta değil, ikinci etapta bakacağız.
+
+254
+01:17:36,975 --> 01:17:54,056
+Şimdi IB dediğimiz akım aslında IC'ye nazaran çok çok ufak. O yüzden şunları şöyle kabul edebiliriz birbirini eşitmiş gibi. Çünkü buradaki BZ akımı çok çok ufak bir akım olacak. Veyahut da beta biliniyorsa eğer IB ile çarparak IC'yi bulabiliriz.
+
+255
+01:17:54,416 --> 01:18:10,476
+Yani beta parametresine göre bunu düzenleyebiliriz. Şu yukarıda I, C gördüğümüz yerlere beta I, B yazarsak ve bunda I, B'yi çekersek biz I, B akımını bulmuş olacağız. Ama burası tekrar söylüyorum çok çok ufak bir değer çıkması lazım.
+
+256
+01:18:11,376 --> 01:18:17,576
+I, B'yi bulduktan sonra da zaten I, C'yi çıkartabiliriz. Neden? Çünkü I, E'ye buradan geçeceğiz.
+
+257
+01:18:22,644 --> 01:18:46,543
+Evet, bu birinci looplu. Şu mavi olan şu ı, b'yi bulduğumuz looplu. Bir de düz indi looplu. Hani şöyle indiğimiz senaryoyu tekrardan yapacaksak. Onda da ne yapmamız lazım? Vc tabi looplu ters almışız. Ie çarpı Re, Vce. Bunlar hepsi aynı yönde zaten. Şurada bir şey unutmuşuz.
+
+258
+01:18:49,652 --> 01:19:04,471
+Ic çarpı Rc, Vcc'den çıkarttığımızda ki eşitlik KVL'si. Burada da yine aynı kaydıyı alırsak, IB'nin, pardon, Bz akımının çok ufak olduğunu direkt yazabiliriz ve Vc'ye ilk çekebiliriz.
+
+259
+01:19:21,587 --> 01:19:32,567
+Evet, bu örnekte misal 5 voltluk bir gerilim veriliyor buradan. Şurada bir 125 beta parametresi verilmiş.
+
+260
+01:19:33,108 --> 01:19:59,868
+Bu örnekte misal bu 5 volt bunu anahtarlamak için kullanılıyor. Ama girişteki gerilimi, normalde onu demeye çalıştım ilk başta. Girişteki gerilim ne olursa olsun şurada elde ettiğimiz sinyal üzerinde işlem yapması için bir anahtarlama devresidir burası. Yani bizim için şu an bu transdörü aktif edersek yapacağı işlemi analiz etmek değil.
+
+261
+01:20:00,000 --> 01:20:08,659
+Bizim hedefimiz bu transütörün iç yapısında aktif olabilmesi için I, B, I, C ve I, E akımlarının bulunmasını sağlamak.
+
+262
+01:20:13,844 --> 01:20:30,923
+Buraları haftaya anlatalım arkadaşlar. Malum yoruldum ben de. Biraz oluş olduğumuzdan dolayı. Sorumuz varsa arkadaşlar soru alabiliriz. Haftaya herhalde 23 Nisan mı acaba?
+
+263
+01:20:33,324 --> 01:20:34,744
+Evet hocam, 23 Nisan.
+
+264
+01:20:35,796 --> 01:20:58,016
+23 Nisan'da dersle alakalı bir ibareyi bilmiyorum. Yapacağız mı, yapmayacağız mı, tanımlı mı, değil mi? Daha bakmadım online'dan ama yaparsak işte haftaya transitörle alakalı sorular çözeceğiz. Yapmazsak ondan sonraki haftaya, yani 30 Nisan haftası herhalde vize haftası, yani 26 Nisan haftası herhalde vize haftası.
+
+265
+01:20:58,739 --> 01:21:20,520
+Bizim biliyorsunuz duyurmuştuk, yani herkese değil, yani birinci vize haftasında genel bir vize değil. Sadece dersi alttan alanların, laba giremeyenlerin, işte lab notunu yükseltmek isteyenlerin girebileceği bir vizemiz olacak. Sadece dersi alttan alanların, tekrardan belirtiyorum.
+
+266
+01:21:22,579 --> 01:21:48,979
+Girebileceği bir vize haftası yapacağız. Yani o 30 Nisan'da bir vizemiz olacak. O 26 Nisan haftasında diyelim. Şimdi belki 30 Nisan'a koyarlar, belki başka güne koyarlar. Takip edin. 26 Nisan haftasında bir vize yapacağız. Ama dediğim gibi dersi alttan alanlar ve sadece işte lab notunu yükseltmek için girmek isteyenlerin gireceği bir sınav olacak.
+
+267
+01:21:50,547 --> 01:22:09,087
+Eğer ki 73 Nisan'da ders yapmayacaksak o zaman 7 Mayıs'a kadar bizim muhtemelen dersimiz olmayacak. 7 Mayıs'a kadar herhalde soruları, bunları bir daha olmadı tekrardan hızlıca o derste geçip öyle sorulara geçeriz. Belki unutmayın.
+
+268
+01:22:09,136 --> 01:22:36,136
+Bu kanlık olabilir. Ama transüstörde en önemli bilmeniz gereken kaide ne kadar karışık da olursa olsun yapısı, KVL denklemini yazabilmek. KVL'yi yazdıktan sonra, yani Kirşof'un Gevrimler Kanunu, transüstör üzerindeki akım, tabii bazı kaideleri bilmek lazım. En önemli kaidemiz, söylüyorum her daim zaten, emiterin base artı kodektör akımına eşit olma kaidesi.
+
+269
+01:22:37,136 --> 01:22:47,656
+Ve Bayez'in çok çok cüzi olduğu vs. Bu kaydeleri bilirsek, bir de KVL'yi yazabilirsek hiçbir şekilde zor bir soru olacağını düşünmüyorum.
+
+270
+01:22:47,656 --> 01:22:53,775
+Yani herhangi bir transistörde bunları iyi yapabiliyorsanız soruları rahatlıkla çözeceksinizdir.
+
+271
+01:22:55,836 --> 01:23:03,676
+Soru varsa sunumla, dersle alakalı sorulabilir. Yoksa ben lab için bir asistanları arayacağım.
+
+272
+01:23:08,307 --> 01:23:10,220
+İyi, nasıl sınaklarla ilgili?
+
+273
+01:25:41,524 --> 01:26:00,123
+Arkadaşlar, konuştuk. Bu hafta labınız yokmuş ama şöyle bir şey de söyledim. Herhalde lab olduğu haftalarda en geç, Perşembe günü size bir duyuru koyacaklarmış. Bu hafta koymadıkları için de zaten lab olmayacağı oradan çıkartılabilir.
+
+274
+01:26:00,916 --> 01:26:20,515
+Lab olmayacak ama sonraki labınız işte herhalde yine 7 Mayıs oldu. O tarihe de kavga giriyor. 7 Mayıs günü transütörle alakalı labınız olacak. Yani biz 7 Mayıs günü derste transütörün örnek sorularını çözeceğiz vs. Aynı günde siz lab yapacaksınız aynı konuda.
+
+275
+01:26:23,636 --> 01:26:41,536
+Tamamsa arkadaşlar, sorumuz varsa buyurun, yoksa dersi bitirebiliriz. Hepinize sağlıklı günler diliyorum. Bu arada Ramazanınız mübarek olsun. İnşallah hayırlı günler diliyorum. İyi günler, kolay gelsin.
+
+276
+01:26:42,336 --> 01:26:43,056
+İyi günler hocam.

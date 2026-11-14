@@ -1,0 +1,1863 @@
+1
+00:00:07,508 --> 00:00:09,807
+Evet, haydi bakalım. Başlayalım.
+
+2
+00:00:28,852 --> 00:00:34,972
+Evet arkadaşlar, şimdi ben ona 5 kare falan ancak yetişebildim bölüme.
+
+3
+00:00:35,112 --> 00:00:42,632
+Bugün bölüm toplantımız olduğu için. ODS'den de size duyduğum üzere bugün 10-12 arasında yapacağız dersi.
+
+4
+00:00:44,072 --> 00:00:50,031
+Ancak yetiştim bölüme, ona 5 kare falan ama elektrik kesintisi oldu, network, barlar, stobler falan.
+
+5
+00:00:50,572 --> 00:00:54,832
+Ancak açtım bakalım. Başlayalım derse fazla beklemeden.
+
+6
+00:00:55,475 --> 00:01:06,456
+Ekran paylaşımına başlayayım. Ondan sonra nerede kaldık bir ona bakayım. Öyle saat inşallah yapalım dersimize.
+
+7
+00:01:13,459 --> 00:01:17,560
+Evet peki, tasarım kalıpları diyerekten devam edecekmişiz.
+
+8
+00:01:32,340 --> 00:01:34,420
+Altı Diyatik kaç gün için? 80.
+
+9
+00:01:42,067 --> 00:01:45,647
+Peki, şu an bir hızlıca bir bakayım bakalım, neler adına yoktu.
+
+10
+00:01:46,828 --> 00:01:50,948
+Aslam katlarından bahsedelim. Zaten hemen kontrolak, active diagram hatırlayacağız.
+
+11
+00:01:50,948 --> 00:01:57,768
+Ha, yok. Sequence diagram hatırlayıp, activity diagram göreceğiz. State diagram. Peki.
+
+12
+00:01:59,347 --> 00:02:00,347
+Bakalım bakalım.
+
+13
+00:02:05,364 --> 00:02:12,264
+Tam bu noktada kaldık. Paylaşım, bağlaşım bugün demişiz. Ondan sonra ardından devam.
+
+14
+00:02:13,304 --> 00:02:18,644
+Şimdi ben elektrin durumumuz biraz oraya havalanmış. Pencereye kapıdan geliyorum.
+
+15
+00:02:48,500 --> 00:02:50,219
+Başlayalım, tasarım kapıları ile.
+
+16
+00:02:52,219 --> 00:02:54,500
+Şimdi arkadaşlar, tasarım yaparken...
+
+17
+00:13:12,148 --> 00:13:37,748
+Evet, geri geldik arkadaşlar. Okuradaki elektrik probleminden dolayı gitti geldi gitti geldi derken her gidiş gelişte bazı başka sıvıçlarla kapanıyor. Kaçık akım görevleri devreye giriyor falan derken sağ olsun mutlaka dolanıcılar aşağıdaki odalamıza giriyorlar. Bir şeyde kışatları kazanıyorlar. Zamanında ben yapıyordum. Çözdük. Peki.
+
+18
+00:13:38,388 --> 00:13:41,528
+Şimdi bugün biraz tasarım kalıplarından bahsedeceğiz.
+
+19
+00:13:42,827 --> 00:13:43,988
+Rampaylaşımı yapalım.
+
+20
+00:13:44,724 --> 00:13:52,564
+Ondan sonra Stikos diagramları bir hatırlayıp, design by contact dedikten sonra daha fazla ilerlemeyeceğim.
+
+21
+00:13:52,564 --> 00:14:07,204
+Hani bugün hey hey diyelim, işte aksitleri falan falan çok da şey değiliz, kalabalıkları değiliz. O yüzden çok kritik olmayan ama bilmenizde yana olan bazı şeyleri anlatıp dersi kapatırız.
+
+22
+00:14:08,564 --> 00:14:10,084
+Tasarım kalıplarıyla başlayalım.
+
+23
+00:14:11,091 --> 00:14:12,652
+Şimdi bir sen ne kadarsın?
+
+24
+00:14:14,995 --> 00:14:26,096
+İyi bir tasarım yapmaya yönelik çalışsak da ve bununla ilgili ölçütleri de belirlesek de, yeniden tasarım yaparken her şeyi sıfırdan bulmamıza gerek yok.
+
+25
+00:14:26,096 --> 00:14:40,196
+Hani derler ya, tekerleği yeniden icat etmeye gerek yok. Bizim herhangi bir problem alanındaki ilişkilerden yola çıkarak nesneye yönelik yapacağımız modelleme ve tasarım etkinliklerinde,
+
+26
+00:14:40,820 --> 00:15:07,400
+recurring diye tabir edebileceğimiz, sık sık karşılaşılan bazı durumlar var. Bu durumları güzel bir şekilde biz kendimiz de düşünsek modelleyebiliriz. Fakat deneyimli insanlar bu bazı problemler üzerinde düşünmüşler, taşımışlar, güzel çözüm önerileri sunmuşlar ve bu çözüm önerilerini avantajları, dezavantajları ile birlikte önümüze hazır bir deneyim olarak sunmuşlar.
+
+27
+00:15:08,820 --> 00:15:18,700
+Nereden haberdar olursak, tasarım aşamamızı, modelleme ve tasarım aşamalarımızı daha kolaylaştırmış oluruz.
+
+28
+00:15:20,179 --> 00:15:48,159
+Bu bağlamda design patterns konusu devreye ilgili arkadaşlar. Bu konuya daha önce hiç duymamış arkadaşlar. Bugünden itibaren başlayabilirler. Çünkü geçen sene nesne yönelimi öğrendiniz. Nesne yönelimi bütün temel ilklerini, kavramlarını, prensiplerini öğrendiniz. Bu noktadan itibaren eğer özellikle yazılım geliştirme alanında çalışacaksanız mutlaka ilerlemeniz gereken nokta tasarım kalıplarıdır arkadaşlar.
+
+29
+00:15:48,179 --> 00:15:59,279
+Bu çok önemli. O yüzden yazılım mühendisliği dersinde de tasarım konusuna geldiğimizde bunlarla ilgili birkaç kelam laf etmemiz çok yararlı oluyor.
+
+30
+00:16:00,279 --> 00:16:08,639
+Tasarım kılıplarına uymak bize daha esnek ve daha iyi bir tasarım oluşturmamıza yarıyor.
+
+31
+00:16:09,076 --> 00:16:25,076
+Burada temel kaynak kitap, dörtlü çete diye tabir edilen, dört yazardan oluşan Eric Gama, sonra Helms, Vili Sides, birisi daha vardı, dört kişi. Dört yazarlı, en klasik kitap bu konuda arkadaşlar.
+
+32
+00:16:25,276 --> 00:16:32,675
+Tasarım kitabı, kalıpları denilince aklınıza gelen kitap budur. Design Patterns, Elements of Reusable Object Oriented Software.
+
+33
+00:16:33,104 --> 00:16:36,844
+Bu kitap bizim kütüphanemizde basılı olarak da var.
+
+34
+00:16:37,704 --> 00:16:43,864
+Ve abonelik kapsamında elektronik olarak da VTIS hesabınızdan girip okuyabiliyorsunuz.
+
+35
+00:16:43,864 --> 00:16:55,364
+Ve ayrıca o kadar yaygın ve önemli bir konu ki internette tasarım kalıplarını anlatan bir dolu hem de güzel bir içerik ve anlatan bir dolu sitelerde bulabilirsiniz.
+
+36
+00:16:57,299 --> 00:17:01,019
+O yüzden bu konuya elmenizde büyük yarar var.
+
+37
+00:17:01,740 --> 00:17:05,339
+4.3 yazanların kitabını elbette güzelce okuyup inceleyeceksiniz.
+
+38
+00:17:08,243 --> 00:17:25,963
+Diğer kaynaklar, ek kaynaklar derken de onlar da gündelik çeşitli problemler üzerinden hangi tasarım kalıbının nasıl uygulanabileceğini örnekler üzerinden anlatım şeklinde gidiyor. Diğer ek kaynaklar dediğim kitaplarda.
+
+39
+00:17:26,336 --> 00:17:44,016
+Bazıları bir problem, bir kalıp şeklinde anlatıyor. Bazıları büyükçe bir bilgi sistemi gerçeklerken karşılaşılan problemleri özellikle tasarım kalıpları ile onları kullanarak çözüyorlar. Bu şekilde yaparak öğretme yolunu izliyor diğer kitaplar.
+
+40
+00:17:46,228 --> 00:18:00,988
+Bu konuda şöyle söyleyeyim, ben yüksek lisansta nesne-i daire tasarım ve modelleme dersi veriyorum ve o ders kapsamında dersin haftalarının büyük ağırlıklı bir kısmını bu tasarım kalıpları üzerine anlatıyorum.
+
+41
+00:18:00,988 --> 00:18:05,988
+Eğer isterseniz Avesisten benim ders notlarımı da bulup onu da inceleyebilirsiniz.
+
+42
+00:18:06,788 --> 00:18:08,748
+Ben 4T Çetenin kitabımdan...
+
+43
+00:18:08,884 --> 00:18:35,243
+Bir kalıbı anlatıyorum. Hem de ardından o kalıbı bir örnekle çözüyorum. Ben de zaten o örneklerimin bazılarını bu bahsettiğim ek kaynaklardan topladım. Bazılarını da kendim oluşturdum. Ve bir kalıp, bir problem, bir problem, bir kalıp şeklinde gidiyorum. Fakat bu tasarım kalıpların birikteki kullanımı da ekstra olarak sağlayabiliyor. O yüzden başka kaynaklardan da çalışmanız elbette yararlı olacak.
+
+44
+00:18:35,955 --> 00:18:46,735
+Peki, nedir tasarım kalıbı? Bir tarım olarak vermemiz gerekirse, yazılım tasarımında karşılaşılan belir ve solumların, yalın ve güzel çözümlerin tarifidir diyebiliriz.
+
+45
+00:18:46,735 --> 00:19:03,015
+Burada bu çözüm biraz soyutta kalabiliyor bazen. Ben de anlatım kolaylığı olması açısından, hem dörtlü çetenin de o sırayla gitmesi nedeniyle, model bir kontrolü tasarım kalıbından değinerekten konuyu bağlayacağım.
+
+46
+00:19:04,051 --> 00:19:19,631
+Genelde daha ayrıntılı bir ana tasarım vererekten tasarım kalıbını anlatırlar. Bu biraz soyut gelebilir size örnek olarak ilk başlayacağımız kalıb. Ama diğerleri daha ayrıntılı, merak etmeyin.
+
+47
+00:19:22,132 --> 00:19:33,652
+Amacımız tekrar yeniden keşfetmeden iyi bir tasarıma ulaşmak. Sonunda da esnek biçimde yeniden kullanılabilir ve arttıracak yönde, iyileştirecek yönde çözülmesi bizim amacımız.
+
+48
+00:19:35,251 --> 00:19:41,812
+Şimdi yararlarından bahsediyor muydum? Yoksa bir sözle söyleyeceğim. Tamam, şimdi şöyle söyleyeyim.
+
+49
+00:19:42,672 --> 00:19:48,471
+Tamam, yararlar kısmı geliyor. Akıştan korkmayalım o zaman.
+
+50
+00:19:49,940 --> 00:20:08,780
+Şimdi tasarım kalıbının bazı bileşenleri var. Bir tasarım kalıbı önermiş olabilmek için bunların hepsinin adreslenmesi gerekmektedir. Birincisi tasarım kalıbının ismi. Bu kalıbı en güzel şekilde anlatacak bir ya da birkaç kelimelik isim. Bu çok önemli arkadaşlar.
+
+51
+00:20:13,556 --> 00:20:29,796
+Tabii ki ilk başta ismi gördükten her şeyi anlayamazsınız elbette. Fakat kalıbı çalışıp özümsedikten sonra o ismin o kalıbı çok güzel özetlediğini, siz de ana fikrini oluşturduğunu göreceksiniz.
+
+52
+00:20:30,240 --> 00:20:43,619
+Siz de bir kalıp önerecekseniz bu doğrultuda olmasını gerekmektedir. Çözüm önerisini incelip edip, adlı ve bunu ertelik emisi nedir diye düşünüp o şekilde isplendirmek en doğrusu oluyor.
+
+53
+00:20:44,840 --> 00:20:53,539
+Ve iyi bir isim vermek çok da kolay bir şey değildir arkadaşlar. Düşünüp taşınıp emek alacağımız gereken bir şeydir. İnsanlarda bile öyle.
+
+54
+00:20:55,188 --> 00:21:02,367
+İkinci kısım sorun tabii ki elde etti. Bu kalıp hangi sorunu çözmeye çalışıyor? Bunun güzelce bir tarih edilmesi.
+
+55
+00:21:03,347 --> 00:21:23,188
+Bu sorun belki kelimeler anlatınca basit gibi gelebilir fakat daha sonra çözüm kısmındaki ayrıntıları gördüğünüzde aslında düşünmesi gereken çok fazla şeyin olduğunu ve bütün bunların farklı problemlere göre ne gibi avantajlar, dezavantajlar sunuluyor?
+
+56
+00:21:23,188 --> 00:21:45,628
+Bu durumda özellikle de tartışmak konusunda da bölümünde de zaten tekrar göreceksiniz. Çözüm kısmında sorunu çözmek için önerilen tasarımın bileşenleri anlatılır. Bu bileşenlerin ilişkileri nedir? Solumlulukları nedir? Birlikte nasıl çalışıyorlar? Bunlardan bahsedilir. Ki nesne önerimden bahsettiğimiz için sınıflardan bahsediyoruz aslında arkadaşlar.
+
+57
+00:21:47,092 --> 00:22:01,812
+Ve son olarak da tartışma sonuçlar kısmı. Bu önerilen çözümün sistemin bütün ne? Esneklik açısından, yeniden kullanılabilirlik açısından, genişlet verilirlik açısından, taşınabilirlik açısından ne gibi etkiler veriliyor?
+
+58
+00:22:02,492 --> 00:22:08,992
+Bu çözümün güçlü yönlerine, zayıf yönlerine, hangi problemler için uygun, hangi problemler için uygun değil?
+
+59
+00:22:09,491 --> 00:22:20,692
+Yer-zaman çelişkileri, yer-zaman çelişkisi derken biraz açayım bunu. Belirli bir problemi çözmek için bilgisayarda yazacağınız kodda,
+
+60
+00:22:21,203 --> 00:22:28,163
+Eğer daha fazla bellek kullanmak pahasına daha kısa zamanda çözmeyi tercih edebilirsiniz.
+
+61
+00:22:28,723 --> 00:22:43,063
+Mesela gerçek zaman uygulamalarda önceden hesaplanmış bazı hesap tablolarını mesela bellekte tutup bunların tekrar hesaplanmasına gerek kalmadan bir look-up tablodan bakma ile hesaplamayı hazırlayabilirsiniz.
+
+62
+00:22:43,744 --> 00:22:48,983
+Bunu ne zaman yaparsınız? Gerçek zamanlı bir uygulamada yapmanız lazım.
+
+63
+00:22:49,203 --> 00:22:56,663
+Veyahut da işleyici kaynaklarının nisbiden düşük ama bellek kaynaklarının nisbiden yüksek olduğu sistemlerde kullanırsınız.
+
+64
+00:22:56,663 --> 00:23:09,844
+Ya da tam tersi, kısıtlı bellek alanımız vardır. O zaman işte normalde bellemiz geniş olsa, çeşitli bazı geçici değişkenler ve ara hesaplamaların sonuçlarını tutarsaklar sonra onları oradan kullanırız.
+
+65
+00:23:11,988 --> 00:23:17,988
+Öyle bir belyek alanımız olmadığında her seferinde bazı hesapları tekrar tekrar yapmamız gerekebilecektir mesela.
+
+66
+00:23:18,188 --> 00:23:23,407
+Yani Time Memory Trade-off demek istiyoruz aslında bu da. Bu en temel bir sonumuz.
+
+67
+00:23:23,827 --> 00:23:31,468
+Bir algoritma önerirken de bu ikisini birden optimiz etmeye çalışan çözümler üzerine zamanında bir insanları düşünmüşler.
+
+68
+00:23:32,435 --> 00:23:38,675
+Ve son olarak bu bölümde başka kalıplar ile işbirliği olanaklarına da değinmek lazım.
+
+69
+00:23:38,675 --> 00:23:45,516
+Çünkü genelde daha büyük bir problemin bir parçasını çözmüş olabiliyoruz bir tasarım kalabıyla.
+
+70
+00:23:45,875 --> 00:23:58,915
+Diğer parçaları da çözerken o parçalarla ilgili kalıplarla acaba nasıl etkileşim kurulabilir en uykum biçimde onunla anlatılması yararlı oluyor bir tasarım kalabında.
+
+71
+00:24:02,932 --> 00:24:10,572
+Evet, tek elde yeniden icat etmemiş oluyoruz. Daha az acaba harcayarak iyi bir çözüme ulaşmış oluyoruz.
+
+72
+00:24:10,871 --> 00:24:17,231
+Ve bunun iyi bir çözüm olduğu üzerinde birçok deneyimlik için emeği geçtiğinden geliyor genelde.
+
+73
+00:24:20,468 --> 00:24:36,008
+Buna da çok da gözü kapalı aktamamak da lazım. Şöyle söyleyeyim, tasarım kalıpları kullanarak yapılan çözümlerin çeşitli kalite kriterlerine göre iyileşmeler sağlandırır. Genelde çalışmalarda zaten gösterilir.
+
+74
+00:24:36,276 --> 00:24:52,115
+Bazı noktalarda, bazı ölçütlerde gerilemeler olabilir. Fakat o gerilemeler gelecekteki gereksinim değişikliklerine daha rahat uyum sağlama açısında kendini telafi etmekte oluyorlar.
+
+75
+00:24:53,196 --> 00:24:58,336
+Üçüncü olarak, üçüncü ve dördüncü olarak bunların da değeri çok büyük.
+
+76
+00:24:58,736 --> 00:25:15,436
+Tasarım kalıpları arkadaşlar, deneyimin yazılı bir biçimde, HAP gibi tabiri caizse aktarılabilmesini sağlıyor. Normalde deneyin bir şey üstünde çalışarak ancak kazanır. Yani hazır gelmezdi.
+
+77
+00:25:25,471 --> 00:25:40,291
+basılı olarak yazılı biçimde size sunuyor arkadaşlar. Ve siz de tasarım kalıpları çalışarak daha başka problemlerde tasarım kalıplarıyla diyelim ki önelimemiş bir probleme.
+
+78
+00:25:41,107 --> 00:25:50,807
+Daha iyi çözümler üretmek konusunda bilgi birikiminiz de artıyor arkadaşlar. Bir şeyden ne kadar haşırlı çalışılırsanız o konudaki yetenekleriniz o kadar artacaktır.
+
+79
+00:25:51,168 --> 00:26:02,847
+Siz de tasarım kalıpları üzerinden iyi tasarımlar kurmaya çalışma ve bunun pratiklerini sürdürdüğünüzde bu konuda daha da iyi olacaksınız demek istiyorum.
+
+80
+00:26:03,228 --> 00:26:08,347
+Ve sonra tasarım kalıpları yazılım ekibi arasında ortak bir sözlük oluşturuyor arkadaşlar.
+
+81
+00:26:08,788 --> 00:26:24,827
+Şöyle bir örnek vereyim. Mesela tasarım açımasında, diyelim ki sistem tasarım açıması ya da problem alanı ile ilgili belli bir alanda hiç fark etmez. Nasıl bir tasarıya gidilecek? Tasarım ekibi kendi alanında konuşurken şöyle cümleler kurabilir.
+
+82
+00:26:31,892 --> 00:26:57,771
+Bölme algoritması zamanlarda çok sık değişimi gösterebiliyor. Biz burada o yüzden strateji kalıbı kullanalım der. Bir başkası da der ki, evet ve fakat bu algoritmaların da temellerinin değiştirememesi lazım. Fakat bazı alt adımlarında düzenlemeler yapabilmesi lazım. O yüzden de template metot tasarım kalıbını kullanmak iyi olur der.
+
+83
+00:26:59,892 --> 00:27:19,552
+Aslında ben de uzattım sözü, o açıklamayı yapmaya bile gerek yok. Çünkü hangi tasarım kalıbının ne gibi alanlarda kullanılabileceğini herkes biliyorsa, şurada şu kalıbı kullanım, burada bu kalıbı kullanım diye birkaç kısa cümle ile tasarım çalışmasını hızla belirli bir noktaya getirmek söz konusu olabiliyor arkadaşlar.
+
+84
+00:27:19,988 --> 00:27:47,148
+Bu noktada kalıbı eğer ekipteki herkes biliyorsa belli bir kalıbı, belli bir problem içerisinde o kullanılacaksa oturup uzun uzun işte şöyle üst sınıfı olsun, ondan kalıtımla şu alt sınıflar olsun, üst sınıfı soyutu olsun da şu şu metotları soyutu şu şu metotları somut olsun, alt sınıflar da olur aydırsın filan filan uzun uzun anlatana kadar o kişi template metot kalıbını biliyorsa zaten tamam diyecek. O kadar.
+
+85
+00:27:48,180 --> 00:27:52,740
+Bu anlamda çok büyük önemler taşıyor tasarım katları.
+
+86
+00:27:54,260 --> 00:28:04,260
+Ne bileyim, teknik mülakatlarda çıkar karşımıza, zaten yazılım alanında çalışacaksanız illaki bunları kullanmanız gerekecek.
+
+87
+00:28:04,480 --> 00:28:10,360
+O yüzden bu konuya bir zaman, çaba harcayın, yatırım yapın demek istiyorum.
+
+88
+00:28:11,251 --> 00:28:36,871
+Şimdi burada ufak bir tartışmaya girebiliriz. Bir kişinin kalıp dediğine diğerine çok temel ilke veya basit bir yapı taşı diyebilir belki. Kendi açısından haklıdırız. Bu adam yok. Burada tartışmaya girmeye gerek yok. Bu uyguluğu en baştan kapatık. Bir tasarım kalıbının çok somut olması gerekmez. Biraz soyutta kalabilir dedik.
+
+89
+00:28:38,511 --> 00:29:03,532
+Bir de şuradan bir örnek vereyim. Niye design pattern, tasarım kalıpları denilmiş? Bizim meslek nispeten yeni bir meslek olduğu için daha eski mesleklerden terimler alabiliyoruz elbette. Tasarım kalıpları da aslında mimarlıktan gelen bir kalıp, bir ifade. Örnek bir mimari tasarım kalıbı.
+
+90
+00:29:04,019 --> 00:29:15,299
+İçerisinde bir insanın bir saatten fazla zaman geçireceği her bölmede mutlaka bir pencere olmalıdır.
+
+91
+00:29:16,000 --> 00:29:18,519
+Mesela bu mimaride bir tasarım kalıbı.
+
+92
+00:29:18,612 --> 00:29:38,552
+Öbür türlü buna uymazsak ne olacak? Orada çalışan insanların verimliliği düşecek, oralarda yapay aydınlatma gerekeceklerinden elektrik masrafı artacak, orada daha kalın mesela kablo hatları çıkılması gerekeceklerinden inşaat maliyeti artacak vs. vs. O kalıbı uymaktanız zarar edersiniz.
+
+93
+00:29:39,552 --> 00:29:46,612
+Ama bu bahsettiğim bir cümleyi bir iki cümlelik bir ifade ama bu bile özellikle mesela mümari de...
+
+94
+00:29:46,612 --> 00:30:02,632
+tasım kalıbı olarak değerlendiriliyor. Bilgisayar bilimlerinde de MVC gibi biraz soyut da anlatsa önerilen çözüm yolu bir tasım kalıbı olarak adlandırılmayı hak ediyor diyordum. Ama yine de çok da fazla tartışmaya gerek yok.
+
+95
+00:30:04,180 --> 00:30:15,279
+Bu dörtlü çetenin kitabı ile tasarım kalıpları bilgisayar bilimlerinde pekikler kazandı ve yararlığı da hızlıca görüp sektörde de çok yoğun kullanılmaya başlandı.
+
+96
+00:30:16,039 --> 00:30:22,100
+Bu bahsettiğim ana kaynak kitapta tasarım kalıplarını amaçlarıyla üç kümeye ayırıyorlar.
+
+97
+00:30:23,019 --> 00:30:27,140
+Creation, structural ve behavioral. Creation, yaratımsal.
+
+98
+00:30:27,508 --> 00:30:40,388
+Bu kalıp ailesi çeşitli nesmelerin oluşturulması temsili ve birbirleriyle ilişkilendirilmenin yönündeki bağımlılığı azartmaya yönelik kalıplar.
+
+99
+00:30:40,587 --> 00:30:48,168
+Yani işte couplingi düşürmeye yönelik kalıplar. Bağlaşımı azartmaya yönelik kalıplar.
+
+100
+00:30:48,168 --> 00:30:54,788
+Her kalıp bunu özellikle mesela sağlayamaya biliyor.
+
+101
+00:30:55,508 --> 00:31:11,668
+İşte problemi yeterince iyi bir biçimde. Hem tasarım kalıbı kullanarak hem de kullanmadan çözdüğümüzde, belki de tasarım kalıbı kullanmadan yaptığımız çözümde bağlaşım, tasarım kalıbı kullanarak yaptığınıza göre oranda biraz yüksek çıkabiliriz.
+
+102
+00:31:11,668 --> 00:31:23,148
+%10, %15, %20 mesela yüksek çıkabiliriz. Ama bu yükseklik size ne sağlıyor? Yakın gelecekte olası, gereksinim değişiklikleri varsa ona karşısında bağımlılık.
+
+103
+00:31:23,508 --> 00:31:50,988
+Bağışıklık sağlamı. Ama şunu da söylemiştik, önermiştik. Şu anki gereksinimlere göre tasarımınızı yapın, geleceğe düşünmeyin demiştik ki özellikle çevik çalıştığınızda bu şekilde Kepti Simp'ın ilkesinin konulması gerektiğini de söylemiştik. O yüzden bakacaksınız arkadaşlar. Eğer yakın gelecekte gereksinimlerde değişiklikleri öngörüyorsanız,
+
+104
+00:31:51,412 --> 00:32:11,971
+Çok eminseniz o zaman tasarım kalıbı kullanmakta biraz daha ağır bir çözüm yapabilirsiniz. Ama öyle bir şey söz konusu değilse, eldeki problemi en iyi çözen tasarım uygulayıp olası bir kalıbı kullanmaktan vazgeçebilirsiniz. Bu sizin geleceğiniz bir karar eldeki duruma göre.
+
+105
+00:32:13,395 --> 00:32:23,655
+İkinci kalıp ailesi, structure kalıplar, yapısal kalıplar. Bunlar da sınıflar ve nesnelerin bir araya getirerek daha büyük yapılar elde edilmesi mühendisliği kalıplar.
+
+106
+00:32:23,655 --> 00:32:39,536
+Ve son olarak behavioral, yani davranışsal kalıplar. Bunlar da sorumlulukların nesnelere dağıtılması ve algoritma seçimine esneklik kazandırılması gibi ihtiyaçlara yönelik kalıplar oluyorlar.
+
+107
+00:32:41,395 --> 00:32:50,476
+Bu kalıpta bir aileye dahil ediliyor. Bir tanesi aç. Hangisi unuttum? Bir kalıbı iki aileye birden katmıştı.
+
+108
+00:32:50,476 --> 00:33:02,395
+Altı ezmedin de yok. Gül döneminde verdiğim ders, aradan zaman geçti, hangisi unuttum. Meraklı arkadaşlar, 4.3'in kitabını incelerler. O kategorizasyona bakarlar.
+
+109
+00:33:02,395 --> 00:33:07,395
+İlk giriş bölümlerinde bunlardan bahsediyor gayet ayrıntılı olarak.
+
+110
+00:33:08,403 --> 00:33:14,703
+Örnek tasarım kalıbı olarak model view controller tasarım kalıbını söylemek istiyorum.
+
+111
+00:33:18,740 --> 00:33:40,039
+Arkadaşlar aklına bazen Microsoft gelebiliyor önce. Microsoft'un MVC framework'ı gelebiliyor. Arkadaşlar Microsoft'un MVC framework'ü de bu model view, konsolu tasarım kalıbına dayanılarak zaten önerilen bir framework. Onun özünde bu MVC tasarım kalıbı var zaten.
+
+112
+00:33:40,276 --> 00:33:59,496
+Ve bu kalıp mesela başka çok yerde kullanıldığına şahit olabilirsiniz. Örneğin, Java'nın bütün GUI frameworkleri bunu kullanıyor. Çünkü zaten özellikle bu alana yönelik bir kalıp. Görelim şimdi.
+
+113
+00:34:00,819 --> 00:34:07,979
+Bu kalıbın çözmeye çalıştığı sorun ne? Aynı veriyi farklı biçimlerde gösterebilme ihtiyacına yönelik bir kalıtı.
+
+114
+00:34:07,979 --> 00:34:18,099
+Bu istekle kalmıyoruz. Kullanıcıya bu verinin nasıl ve ne kadarının göstereceğini seçebilmek gibi yetenekler de sağlamak istiyoruz.
+
+115
+00:34:18,420 --> 00:34:23,779
+Bu durumda ne yapsak acaba? Taral çözüm prensibi şu olacak.
+
+116
+00:34:24,467 --> 00:34:45,648
+Bir genel ilke vardı zaten, neyin değiştiğini bul ve onu sarmalar şeklinde. Bu da veriyi, verinin gösterimini ve gösterimin yönetimini ayrı sınıflar, ayrı sorumluluklar ve eşittir ayrı sınıflar şeklinde ele almak yoluna izlersek bu okutu iyi bir biçimde çözeriz demek istiyoruz.
+
+117
+00:34:46,079 --> 00:35:08,079
+Ve bu durumda tasarım kalıbının bize önerdiği ana tasarım bu şekilde arkadaşlar. Burada modal sınıfımız var, view sınıfımız var ve kontrol sınıfımız var. Kalıp zaten bunların sınıfı isimlerinin baş harflerinden geliyor diyelim. Uzun adı da sınıfların adları zaten.
+
+118
+00:35:08,079 --> 00:35:13,079
+Şimdi burada ne ne isim geliyor? Model sınıfı burada ham veriğimizi simgeliyor.
+
+119
+00:35:14,047 --> 00:35:24,967
+View sınıfı bu verinin çeşitli gösterim biçimlerinin simgeliyor. Kontrol alı sınıfı ise çeşitli kullanıcı komutlarını alıp işleme tabi tutuyor.
+
+120
+00:35:24,967 --> 00:35:35,188
+Ve bu komutlar nedeniyle view veya model üzerinde çeşitli işlemler yürütüyor. Burada bağlaşımların yönü de çok önemli arkadaşlar.
+
+121
+00:35:36,188 --> 00:35:41,228
+Şimdi dikkat ederseniz model hiçbir şeye bağımlı değil. Çünkü ondan çıkan ok yok.
+
+122
+00:35:41,652 --> 00:36:00,672
+Zaten model veri gösterilmesi gerekiyor. O da göstermek için de bekliyor. Birisi bunu kullanacak. Kim kullanacak? View ve controller kullanacak. View'dan model'a tabii ki ok var. Çünkü o veriyi erişip onu uygun bir biçimde gösterecek.
+
+123
+00:36:01,043 --> 00:36:20,304
+Controller ise, kullanıcının verinin bir kısmını görmek istiyor, bir kısmını görmek istiyor, veride bazı filtrelemeler mi yapmak istiyor vs. vs. Bu gibi komutlarını alıp, o komutların gereğini Vue'un yapmasını sağlamak üzere Vue'u kontrol ediyor.
+
+124
+00:36:20,304 --> 00:36:29,043
+Ve modelde bir değişiklik olması gerektiği zaman, ihtiyacı ve durma göre, elimizdeki probleme göre, bunun kontrolörünü doğrudan yapabileceği gibi.
+
+125
+00:36:29,043 --> 00:36:53,463
+Viva'da yaptırması söz konusu olabilir. Burada bir örnek olarak bir ressam ve çizdiği resimden bahsediyoruz genelde. O yüzden veriyar model demişler bir yandan. Düşünün ben diyelim ki bir ressam'a resmimi yaptırmak istiyorum. Ben ressam'a modeller diyeceğim.
+
+126
+00:36:54,068 --> 00:37:01,387
+Ve resminin nasıl çizilmesini istediğimi de ressama söylüyorum.
+
+127
+00:37:02,328 --> 00:37:06,927
+Ressama diyebilirim ki beni tam boy çiz diyebilirim.
+
+128
+00:37:06,927 --> 00:37:11,868
+Veya da beni portre olarak çiz diyebilirim omzumdan kalsın.
+
+129
+00:37:12,692 --> 00:37:31,032
+Veya beni karikatür olarak çiz diyebilirim. İşte burnunu büyük yapar, gözlerinin çekikliğine abartır falan. Göbeğim çok büyüdü. Portre çizecekse oraya bakmayacak ama vücut çizecekse kocaman göbehte çizer yapar mesela.
+
+130
+00:37:32,652 --> 00:37:40,572
+Yapmayayım, sevdiğim bir etkinlik varsa onu yaparken çizer belki beni. Ben öyle yapmasını isteyebilirim, o da olabilir.
+
+131
+00:37:40,692 --> 00:37:55,172
+Ben resim ben çiftirsem ben talebimi söylüyorum. O da view'u ona göre ayarlıyor. Veyahut da tamamen ressam kendisi bir eser ortaya çıkarmak süresi, ben olan modeller yapacaksam o zaman, bu arada ressam da kontrolcü oluyor.
+
+132
+00:37:55,552 --> 00:38:00,612
+Hangi view'u kullanacağına karar veriyor ve ona göre çizimini yapıyor.
+
+133
+00:38:02,003 --> 00:38:13,003
+Model alımı bu. Bakış açısı, kontrolü ise gerekli işlemlerin yürütülmesinin ilk başlangıç noktası kontrolü sınıfı olmuş oluyor.
+
+134
+00:38:13,543 --> 00:38:22,583
+Şimdi burada en azından bu bağlaşımların olması lazım. Fakat ihtiyaç olduğu durumda başka bağlaşımlar da çizilebilirsiniz.
+
+135
+00:38:22,583 --> 00:38:28,943
+O da galiba şu arada bir yerde olacak. Evet. Tamam.
+
+136
+00:38:29,396 --> 00:38:32,336
+Yansım hepsi gelsin de onları toplu olarak söyleyeyim.
+
+137
+00:38:33,076 --> 00:38:38,816
+Şimdi, neye yarıyor bu kalıp? Gösterimi, kontrolü ve veriyi birbirinden ayırmış oluyor.
+
+138
+00:38:39,115 --> 00:38:45,036
+Bu ayırmak da bize aslında bunları çalışma anında değiştirebilmemizi sağlıyor arkadaşlar.
+
+139
+00:38:46,396 --> 00:38:50,176
+Mesela bizim birden fazla view'umuz olabilir.
+
+140
+00:38:56,563 --> 00:39:04,663
+Bu view sınıfından kalıtımla alt sınıflar şeklinde oluşturabiliriz.
+
+141
+00:39:21,844 --> 00:39:31,903
+VA ile veya VB ile çalışmayı seçebilir veya belki de kontrolcüye de sen şu bir yıl da çalışacaksın diye biz veriyor olabiliriz.
+
+142
+00:39:33,043 --> 00:39:40,823
+Kullanıcı bir seçenek seçerekten, şöyle yap, böyle yap, şurayı kullanılsın, burayı kullanılsın diye bu seçenekleri tamamen yapabilir.
+
+143
+00:39:41,344 --> 00:39:51,463
+Kullanıcı verdiği komutana göre V, A, V, B ya da her birisi o alt sınıftan bir nesne üzerinden görüntüleme işlemleri yapılmaya geçilebilir.
+
+144
+00:39:51,623 --> 00:39:59,963
+Çalışma anında. Öbür türlü programı kapatıp, kaynak kodu değiştirip veya konfigürasyonu değiştirip.
+
+145
+00:40:00,000 --> 00:40:17,579
+Tekrar çalıştırmak gerekecekti ki, eğer bunları birbirinden ayırmazsaydık. Ama ayırarak bunların çalışma anında değişebilmesini ve daha sistemin geri kalanlarını etkilemeden değiştirilebilmesini ve geliştirilebilmesini sağlayabiliyoruz.
+
+146
+00:40:18,675 --> 00:40:35,376
+Ve tabii ki bunlar üç temel sorumluluk. Bu sorumlulukların yani ilgi alanlarının ayrılmasını sağlayamak da zaten bizi iyi bir taslama doğrudan götüren bir şey. Problemimiz ne düzeyde bileşenlere ayrılabilebiliyorsa o düzeyde bileşenlere ayrılan bir tasarım değil.
+
+147
+00:40:35,376 --> 00:40:42,036
+Bu noktada bunu sağlıyor. Ve yeniden kullanımı da arttırmış oluyor.
+
+148
+00:40:44,148 --> 00:40:52,468
+Belli bir view türünü uygulanabilecek başka modellerle de kullanmamız mümkün olabilecek ifade.
+
+149
+00:40:53,028 --> 00:41:02,028
+Mesela neden bahsediyoruz? Diyelim ki önünüzde seçimler var. Televizyonlarda sürekli çeşitli veriler gösterilecek.
+
+150
+00:41:03,048 --> 00:41:08,508
+Açılan sandıklar, açılan sandıklarda çıkan oylar, sandıkların açılma yüzdesi.
+
+151
+00:41:08,916 --> 00:41:36,916
+İl düzeyinde sonuçlar. İstanbul'da üç ayrı bölge var mesela. İstanbul'un genel sonuçları, üç ayrı bölgesi düzeyinde sonuçlar. Bütün bu sonuçları kimi zaman sayılarla, kimi zaman pasta grafiklerle, kimi zaman çubuk grafiklerle, kimi zaman harita üstünde en çok oyu alan partner rengini renklendirmek şeklinde çok farklı farklı biçimlerde gösterilmiş.
+
+152
+00:41:36,916 --> 00:41:55,516
+Ve işte haber spikeri, anlatan spiker, şimdi şu görüntüye geçelim diyecek, şimdi şöyle gösterebiliriz diyecek, şuradaki sandıkların açıldığını fark ettik, şimdi oraya geçelim diyecek ve sürekli neyin, ne kadar göstereceğini ve nasıl göstereceğini kontrol edecek.
+
+153
+00:41:57,516 --> 00:42:02,836
+Bu örneği vermeyi seviyorum çünkü bütün birleşenlerini anlatıyor böyle bir.
+
+154
+00:42:03,956 --> 00:42:23,976
+Örnek. Durum bu arkadaşlar. En temel hatlarıyla. Ve bir kere bir pipe chart veya çubuk grafiği, bar chart oluşturma birleşimini yazdığınızda bunu farklı farklı problemlerinizle yeniden kullanabilirsiniz. Gayet kolaylıkla.
+
+155
+00:42:25,972 --> 00:42:42,452
+Evet, bunlar bunlar. Şimdi bu kıl üzerinde olası çeşitlemeleri inceleyelim. Bunların hepsi tartışılmıştır. Dörtlü çetenin kitabında. Şimdi yine bu seçim önleğinden gidelim isterseniz.
+
+156
+00:42:42,452 --> 00:42:49,892
+Acaba model geçirdiği değişiklikleri view'a bildirmesi yararlı olabilir mi?
+
+157
+00:42:50,643 --> 00:43:02,844
+Şimdi model view'u kontrol ediyor ya gösterecek. Ama dedim ki modelde bir veride yani bir değişiklik oldu. Bu değişiklik nasıl hissedilmeli?
+
+158
+00:43:05,743 --> 00:43:15,443
+Eğer kalıbı, yani ilişkileri daha fazla arttırmak istemiyorsak o zaman view zaman zaman modeli kontrol eder. Sorar, sen değiştin mi diye.
+
+159
+00:43:15,795 --> 00:43:27,475
+Değiştiyse, evet, true-durl model ve ona göre view bütün veriyi veya sadece o anda göstermesi gereken kadar veriyi modelden çeker.
+
+160
+00:43:28,996 --> 00:43:36,375
+Fakat bu, dediğim gibi, view'un belirli aralıklarla modeli sorgulamasını gerektir.
+
+161
+00:43:40,916 --> 00:44:08,676
+Farklı birbirleriyle net ve bağlı farklı bilgisayarlardan ise eğer bir haberleşme masrafı çıkartacaktır. Haberleşme yükü çıkartacaktır. Hem bunu zaman alması açısından söylüyorum hem de eğer tarifeli bir bağlantıysa veyahut da tariflisiz bir olsa 3G'ye ilgili bir bağlantıysa onlar da genelde tarifi oluyorlar neyse. Yani ek haberleşme masrafları çıkacak.
+
+162
+00:44:08,916 --> 00:44:13,356
+Neden? Değiştim mi? Değişmedim. Değiştim mi? Değişmedim. Boş herif soruyor.
+
+163
+00:44:13,756 --> 00:44:21,456
+Halbuki değişmiş olsa daha az, yani nizmal değiştiğini bilebilse o zaman daha az haberleşmeye yapılacak.
+
+164
+00:44:21,456 --> 00:44:28,916
+Eğer bu master sizin için önemliyse ve kritikse o zaman modelin de viewer'u bilmesi yararlı olacaktır.
+
+165
+00:44:29,195 --> 00:44:32,976
+O zaman mother'dan da viewer'a doğru ok ucu çiziyoruz arkadaşlar.
+
+166
+00:44:33,436 --> 00:44:36,896
+Yani modelde o anda hangi viewer'la ilişkili olduğunu.
+
+167
+00:44:36,916 --> 00:45:02,735
+Bu bilir. Ki herhangi bir güncelleme olduğu zaman modelde hemen ilişkili olduğu Viva ben değiştim biraz ve ondan sonra Viva da modelden ne içerik verileri çeker veya tüm veriyi çeker. Artık nasıl davranacağı Viva bakar ki orada da işin içerisine başka bir tasarım kalıbı olan Observer tasarım kalıbı girmektedir.
+
+168
+00:45:03,891 --> 00:45:15,551
+Bu da demek oluyor ki, gerekirse MVC kalıbında model ve Viva arasında observator tasarım kalıbı da kurulabilir anlamına gelmektedir. Merak etme arkadaşlarım, bir daha bakarlar.
+
+169
+00:45:19,152 --> 00:45:24,771
+Evet, bu gerekirse o zaman modelden de Viva bağlantımızı kurarız.
+
+170
+00:45:25,431 --> 00:45:28,551
+Geçen sene Nesliye'nin elinde çift yönlü ilişkilerinin...
+
+171
+00:45:29,043 --> 00:45:42,023
+Kurulmasının ve tutarlılığının sağlanmasının daha karmaşık olduğunu gördük. Ama gereksinimiz bir yönde ise tabii ki yapacağız. Ama gereksinimiz bir yönde değilse de boş yere ek karmaşıklığı ve bağlaşımı tasarımımıza dahil etmeyeceğiz.
+
+172
+00:45:43,923 --> 00:46:03,764
+Ondan sonra, şimdi şurada pek nicelikler yok arkadaşlar. Aslında her zaman tabii ki bir view, bir model ile ilişkilidir belirli bir anda. Fakat bir kontrolün her zaman bir view ile ilişkili olması gerekmiyor.
+
+173
+00:46:04,255 --> 00:46:13,935
+İki noktaya yana yıldızda koyabilirim. Yani bir kontrolün birden fazla view'la ilişkide olması söz konusu olabilir.
+
+174
+00:46:14,335 --> 00:46:31,695
+Hele ki işte farklı view'lar söz konusu veya şurada gördüğünüz gibi alt sınıflarla farklı view sınıflar oluşturulmuşsa bunların birer örneği hepsinden birer örnek mesle kontrol edilmiş olumu ve istenildiği zaman birinden ötekine geçiş yapması sağlanabilirsiniz.
+
+175
+00:46:32,275 --> 00:46:35,795
+kontrol verecek, verecek konular ile.
+
+176
+00:46:37,395 --> 00:46:45,995
+Ve belki belirli bir anda bu view'lardan birden fazlasıyla da çalışıyor olabilir kontrol.
+
+177
+00:46:47,375 --> 00:46:58,635
+Mesela diyelim ki bir denetim ekranında 4-5 tane farklı panel var.
+
+178
+00:46:59,251 --> 00:47:15,871
+Ve bu paneller verinin, modelin farklı kısımlarını gösteriyorlar. Bunları gösterirken bu veride kesişimler olabilir, kesişim kümeleri olabilir. Örnek benim seçim aradığımda.
+
+179
+00:47:20,980 --> 00:47:30,980
+Mesela işte sandıkların yanısından fazlasının açıldığı iller ile A Partisi'nin önde olduğu illerin...
+
+180
+00:47:31,795 --> 00:47:49,795
+İki ayrı real'daki bazı iller her iki real'da da gösteriliyor olacak. Bazı iller tek real'da da gösteriliyor olacak. Bu program hiçbir edemem yok. Aslında etmez. Çünkü nihayetinde mother ve real'ı ayrıştırdık.
+
+181
+00:47:49,795 --> 00:47:59,235
+Fakat eğer bu kontrolör bu durumda diyelim ki modelde bir değişiklik yapılması talebi kullanıcıdan geldi.
+
+182
+00:47:59,795 --> 00:48:01,795
+Bu mümkün değil ama...
+
+183
+00:48:02,963 --> 00:48:13,143
+Yani seçimlerin televizyondan aktatılması kısmında bu geçerli değil ama öbür tarafında ne deniyordu o bilgi sistemini unuttum.
+
+184
+00:48:13,483 --> 00:48:22,623
+Yani sandık tutanığa geldikçe, imzalı mühürlü sandık tutanığa geldikçe bunların sisteme girilmesi kısmında,
+
+185
+00:48:30,963 --> 00:48:37,903
+Söz konusuysa o zaman bu giriş işlemlerini view üstünden değil de kontrol üstünden kodlamakta yarar var.
+
+186
+00:48:37,903 --> 00:48:56,303
+Çünkü bir view yaptığı değişikliği modeli aktarır ama öbür view'un bundan haberi olmayabilir ve diyelim ki bu modelinde view'u kendisinin geçirdiği değişikliklerden haberdar etmesiyle ilgili çeşitli çözümler olabilir demiştik.
+
+187
+00:48:56,703 --> 00:48:58,803
+O çözümlerden bazıları da bu durum.
+
+188
+00:48:58,963 --> 00:49:08,383
+Daha iyi anlaşabilir ya da yapılması gereken ek işlemler gerekebilir. Bunları düşünmek ve kodumuza dahil etmek gerekecektir örneğin.
+
+189
+00:49:09,043 --> 00:49:17,783
+Yani nested, pardon, örtüşen ayrık bahsetmiş oldum aslında olay bu. Bazen bir yola iç içe de olabiliyor.
+
+190
+00:49:18,083 --> 00:49:21,823
+Hani metod içinde metod çağırımı bile, şu an çok pratik örnek vereyim mi? Aklıma gelmedi.
+
+191
+00:49:22,383 --> 00:49:25,923
+Ya da işin içerisinde multi-trading de olabilir arkadaşlar.
+
+192
+00:49:26,963 --> 00:49:28,172
+ve
+
+193
+00:49:28,820 --> 00:49:41,780
+Bazı birden fazla view olduğunda acaba bu view'lar her biri farklı trendlerde mi çalışıyor? Farklı trendlerde çalışıyorsa senkronizasyon problemleri olabilir.
+
+194
+00:49:41,780 --> 00:49:50,340
+Ki onu da bazı örneklerinde yine nesliyelik problemlerinin dersimiz son haftalarında market trading'e giriş konusunda görmüştük.
+
+195
+00:49:51,480 --> 00:49:56,820
+Race condition olması durumlarını engellemek gerekiyordu. Burada da ona dikkat ediyoruz.
+
+196
+00:49:56,820 --> 00:50:00,780
+etmek gerekecektir elbette. Onu hatırlatmak lazım diyelim.
+
+197
+00:50:01,268 --> 00:50:15,907
+Bir başka varyasyonda birden fazla kontrolcün olabilmesidir. Mesela eğer bizim yaptığımız bilgisayara veri girişiyse, klavye ile veri giriş yapıyoruz ama bazen sesle de veri giriş yapabiliyoruz.
+
+198
+00:50:29,268 --> 00:50:32,447
+CA diyeyim, şurada CB diyeyim.
+
+199
+00:50:34,847 --> 00:50:37,007
+Farklı kontrolcü sınıflarımız olabilir.
+
+200
+00:50:37,447 --> 00:50:45,547
+Ve sistem çalışacağı zaman ilk başta şu kontrolcüyle başla diye komut verebiliriz.
+
+201
+00:50:45,887 --> 00:50:51,327
+Sonra duruma göre yeni kontrolcü vermek gibisinden kodlar yazabiliriz.
+
+202
+00:50:51,507 --> 00:50:53,927
+Eğer gerekiyorsa, öyle bir duruma ihtiyaç varsa.
+
+203
+00:50:56,019 --> 00:51:16,200
+Evet, şeyler bunlar arkadaşlar. Bu kılıkla ilgili durumlar bunlar. Bu temel önerilen yapıyı elimizdeki problemin ayrıntılarına göre çeşitli varyasyonlara tabi tutabiliriz. Ne gerekiyorsa onu yapacağız demek istiyorum.
+
+204
+00:51:16,200 --> 00:51:18,760
+Peki.
+
+205
+00:51:20,275 --> 00:51:36,056
+Şimdi, yani çok kalabalık değiliz ama, hani sorun sonra arkadaşlarım varsa, lütfen sorsunlar. Genel olarak tasarım kalıptığıyla ilgili merak ettiğiniz şeyler olabilir. Ne bileyim, MVC ile ilgili, şu kafama yatmadı hocam dediğiniz şeyler olabilir. Varsa buyrun konuşalım.
+
+206
+00:51:43,188 --> 00:51:53,027
+Yoksa sonraki bir iki yansıyla dersimiz açıp sohbete bir şey geldi. Affay yok hocam diyor. Tamam peki. Peki o zaman devam edelim.
+
+207
+00:52:01,492 --> 00:52:08,572
+Sandalyemde kolumunu diye içtirmek istedim, water şeklini. Bu da çok gıcırı dayan bir sandalya olduğu için.
+
+208
+00:52:10,291 --> 00:52:27,631
+rahat etmek istedikler, onları sesi kapattı, başlıyor. Peki, şimdi tasarımı nasıl belgelendireceğiz arkadaşlar? Yani gereksinim için CRS belgemiz var, Software Recurvement Specification belgemiz var, standartı bile var, onu konuşmuştuk.
+
+209
+00:52:30,324 --> 00:52:37,003
+Bu kadar ayrıntılı standart olmasa bile tasarımda da genelde UML şamaları için yok bulacağız.
+
+210
+00:52:37,003 --> 00:52:42,104
+Ve ayrıntılı bir UML sınıf şaması bu için olmazsa olmazı.
+
+211
+00:52:42,431 --> 00:52:59,591
+Onun dışında tasarım ihtiyaçlarına göre kullanabileceğimiz diğer çeşitli farklı yönelişme türleri ve bir de kontrakt, sözleşme dediğimiz bir yapı var. Bunların çeşitli birleşimlerini de kullanabilirsiniz elbette.
+
+212
+00:53:08,724 --> 00:53:13,484
+Daha ayrıntılı alıp tasarım belgesinde de kendini tekrarlayabilecektir mesela.
+
+213
+00:53:14,684 --> 00:53:18,004
+Şimdi başka neler var UML aşaması türleri?
+
+214
+00:53:18,784 --> 00:53:26,604
+UML etkileşim şamaları arkadaşlar, nesnelerin çalışma anındaki davranışını bildiren şamalardır.
+
+215
+00:53:27,104 --> 00:53:33,964
+Bunlardan Sikus diyagramları, sığarama şamalarını geçen seneki nesne yönelim dersinde gördük.
+
+216
+00:53:34,420 --> 00:53:45,420
+Burada kısacık tekrar edeceğiz, hatırlayacağız. Ders almayıp da bir nedenle hazırlıktır, rast mutluluk.
+
+217
+00:53:45,503 --> 00:54:11,083
+Çarptı filan, herhangi bir nedenle, almayan arkadaşlarım olabilir. O konuyu biraz hatırlayacağız bugün. Ve öyle bir kapatırız bugünü. Onun dışında haftaya inşallah UML etkinlik şamaları ve Activity diagram ve ardından UML durum diagramları, TED diagram üstüne konuşacağız. Ama şu ders akış yeni bir tekrar bir bakıp hatırlamak istiyorum.
+
+218
+00:54:11,668 --> 00:54:35,128
+Şu an buradayız. Önümüzdeki hafta dilap çalışması yapmak yararlı olacaktır. Çünkü birinci vizemiz analiz çalışmaları üstüne olacak. Demek ki o söylediklerimi vizeden sonraki dokuzuncu haftadan itibaren bakacağız, edeceğiz.
+
+219
+00:54:37,139 --> 00:54:39,919
+Tamam, o laf işinde bir ayaklarınız lazım.
+
+220
+00:54:39,919 --> 00:54:40,519
+Peki.
+
+221
+00:54:44,659 --> 00:54:46,919
+Proje konularını...
+
+222
+00:54:47,860 --> 00:55:14,340
+Dün yoğundum arkadaşlar, şey demedim, zaman ayıramadım. Yani yarın içerisinde açıklayacağım, öyle söyleyeyim. En geçer an akşam. Yarın bir dersim yok, oturup konulara bakacağım. Hangi gruplar, hangi grup konuları tercih etti, kimden sonra kaldı. O yüzden konunun değişmesi gerekiyor olabilir. Tümler şeyleri perşembe günü içerisinde en geçer an akşamına kadar açıklayacağım arkadaşlar. Onu da öyle beyan edeyim.
+
+223
+00:55:17,940 --> 00:55:18,740
+Teşekkürler.
+
+224
+00:55:26,708 --> 00:55:45,628
+Evet. Şimdi sözleşmeleri bir değinelim arkadaşlar. Belirli bir sözleşme, belirli bir kullanım senaryosunun ayrıntılandırılması ile elde edilmektedir. Ve her bir metodumuz arkadaşlar bir sözleşme ile ayrıntılandırılabilir.
+
+225
+00:55:55,668 --> 00:56:10,588
+Çalışma anında nasıl yürütüleceği koda yakın bir biçimde anlatılmak üzere bu sözleşmeler hazırlamız. Tasarım sözleşmeler üstünden yaptığımızda geriye sadece bunu koda dökmek kalmaktadır.
+
+226
+00:56:10,588 --> 00:56:18,348
+Ama bütün bir tasarım sözleşmeler ile hazırlamak çok da verimli olmamaktadır.
+
+227
+00:56:23,668 --> 00:56:33,508
+Bazı sorumluluklar söz konusuysa onlara sözleşme yazmak yararlı olabilecekmiş. Ama onun dışında çok da gerekmemektedir.
+
+228
+00:56:35,508 --> 00:56:39,708
+Evet, şimdi bir tane örnek sözleşme görüyorsunuz arkadaşlar.
+
+229
+00:56:41,844 --> 00:56:59,444
+Numara verebilirsiniz sözleşmeye, adı da verirsiniz. Sözleşme nol 2, satış kalemi girişi. Bu satış kaleminin gereğini tartışmıştık ya arkadaşlar, geçen dersimizde kritik bir konu. O yüzden o konuyu ayrıca belgelendirelim diyebiliriz.
+
+230
+00:56:59,444 --> 00:57:09,584
+Veyahut da ne bileyim yazılım geliştirme sürecinde o aşamada çok ayrıntılı konuşmak diyelim ki o işlemi. Şimdi analiz sözleşmeyeli bunu ayrıntılandıralım ki.
+
+231
+00:57:09,844 --> 00:57:18,784
+Kritik bir konu olduğundan koda dökerken yanlışlık yapılmasın şeklinde diyelim ki bir yol izlemiş olabiliriz.
+
+232
+00:57:20,052 --> 00:57:36,371
+Şimdi, işlem kısmında bu sözleşmenin tarif ettiği metot neyse o yazılıyor. UML notasyonun şeklinde olabilir veyahut da direkt koronotasyonun şeklinde de yazabilirsiniz. Ben UML notasyonun şeklinde yazmışım.
+
+233
+00:57:36,371 --> 00:57:43,032
+Barcode 2.0 string gibi birisinden de yazabilirsiniz. String, barcode 1.0 gibi birisinden de yazabilirsiniz.
+
+234
+00:57:48,052 --> 00:58:07,211
+Bu kullanım sanaryosuyla ilişkili, onu söylemiş oluyor. Ön koşullar ve son koşullar ise, ön koşullar bu metodun yürütülmesi için, yürütülebilmesi için, işe yarayacak anlamlı bir işler yapabilmesi için, sistemin içinde bulunması gereken durumdan bahseder.
+
+235
+00:58:15,987 --> 00:58:34,987
+İster bu metodunun tanımlandığı sınıftan nesne olsun, ister onun sahiplikmiş, parça bitirmiş, diğer ilişki türleri içerisinde bağlaşımda olduğu diğer sınıflardan nesneler olsun, onların...
+
+236
+00:58:35,327 --> 00:58:48,748
+Üye alanlarında veya başka bir değişiklik durumlarında olabilecek her türlü yeni oluşturma, ilişki kurma ve ilişki değişikliği, eylemlerini yazmak durumundayız.
+
+237
+00:58:49,467 --> 00:58:58,607
+Neymiş bunlar? Şöyle bir satış kalemi örneği olan, nesnesi olan, başka bir işle, instant soft diyorum ya, satış kalemi nesnesi oluşturulmuştur.
+
+238
+00:58:59,092 --> 00:59:03,791
+Satış kalemi süre gelen satış nesnesi ile ilişkilendirilmiştir.
+
+239
+00:59:04,052 --> 00:59:11,251
+O da o sınıftan bir nesne. Seçmiştik, tasarımımızı almıştık, problem ağlarımızı almıştık satış nesnesine.
+
+240
+00:59:11,811 --> 00:59:16,492
+Satış kalemi nesnesinin miktar üye alanına o malın satış adedi atanmıştır.
+
+241
+00:59:16,492 --> 00:59:25,492
+Satış kalemi satılan mal ile uyuşan barkot sayesinde bir ürün nesnesi ya da mal nesnesi örneği ile ilişkilendirilmiştir.
+
+242
+00:59:27,092 --> 00:59:34,652
+kullanılması gereken bütün ilişkiler, oluşturması gereken bütün mesleler ve bunlarla ilgili durumlar yazılmaktadır.
+
+243
+00:59:35,211 --> 00:59:45,932
+İşte böyle olunca bunu kodu nasıl dökeceğimizin %80 ayrıntısı buradan görüp anlaşılabilmektedir arkadaşlar. Yararı bu.
+
+244
+00:59:48,628 --> 01:00:00,548
+Evet, bakın, söylemeye atladığım bir şey var mı? Ön koşullar, tüm sistem hakkında bilgilerdir. Evet, doğru. Çünkü o başlamadan önce bütün sistemin durumu göz önüne alınıp ona göre başlar başlamaz.
+
+245
+01:00:00,548 --> 01:00:07,068
+Son koşullar ise sadece problem alanı ile ilgili nesmelerin durum neye çıkıyor hakkında da.
+
+246
+01:00:08,000 --> 01:00:26,220
+Her zaman gerekli olmayabilir demiştik. Buralarda da edilgen geçmiş zaman kullanmak daha mantıklı. Çünkü bu sözleşmenin tarif ettiği metot tamamlandıktan sonra sistemin durumu anlattığında daha iyi bir vurgu yapmış oluyor.
+
+247
+01:00:26,220 --> 01:00:34,340
+Ama kullanım sanatçı metinlerinin tersine kullanım sanatçı metinlerinde her bir adımı etken.
+
+248
+01:00:34,784 --> 01:00:41,324
+Ve geniş zaman ya da şimdiki zaman şeklinde kullanmak daha doğru oluyordu.
+
+249
+01:00:43,476 --> 01:01:01,255
+Kullanış bir de besmeyi unutmayın diyoruz ve bazen de sözleşme yazma ayrıntısında düşündüğünüzde belki çözümleme aşamasında bir şeyin eksik olduğunu keşfedip orada düzenlemeler yapmanıza bile yardımcı olabilir.
+
+250
+01:01:01,255 --> 01:01:07,315
+Böylece belirli bir problemi, analiz aşamasındaki bir problemi.
+
+251
+01:01:09,715 --> 01:01:14,635
+Hiç olmazsa tasarım aşamasına önlük kesmiş olursunuz. Kodlamaya geçmeden önce.
+
+252
+01:01:16,135 --> 01:01:23,056
+Tabi ki ideali aynı aşamada önemli bir formla teknik review ile bu keşfetmektir ama keşfedilemeyebilir.
+
+253
+01:01:23,275 --> 01:01:29,476
+Çünkü sınama odası bütün hataların, problemlerin yakalanabileceği bir güvenlik halı gibi düşünülmemelidir.
+
+254
+01:01:30,956 --> 01:01:33,615
+İlla ki az daha kaçan şeyler olacaktır.
+
+255
+01:01:35,715 --> 01:01:36,675
+Evet.
+
+256
+01:01:37,172 --> 01:01:48,432
+Ve sikmet diagramları hatırlayıp dersi bitirelim. Evet, çünkü zaten son atışama aktivite atışmalarına yaklaşılacak.
+
+257
+01:01:48,432 --> 01:01:57,751
+Evet, şimdi hatırlayın, bir nesnenin bir metodu çağrılacak.
+
+258
+01:02:05,043 --> 01:02:16,163
+Şu bir metodu çağrılıyor diyelim ki. Nesne 2.1 metot diye bunun çağrımı gerçekleştiğinde bu nasıl gösteriliyor onu hatırlayalım.
+
+259
+01:02:17,023 --> 01:02:32,263
+Burada mutlaka nesnenin adı 2.üst üste nesnenin türü yani sınıfı ve artı çizili şeklinde gösterim yaptığımızı unutmayın arkadaşlar.
+
+260
+01:02:33,492 --> 01:02:44,432
+Bu bir metodu diyelim ki, bir sınıf birden bir nesne bir çağırıyor diyelim ki.
+
+261
+01:02:44,788 --> 01:02:53,487
+Aslında böyle yazmanıza da gerek yok diyelim. Çünkü şu noktadan itibaren, şimdi kesiyorum şurada yeşil çizgimi takip edin.
+
+262
+01:02:53,487 --> 01:03:01,747
+Yani bu diye çizdiğim çizginin sağı aslında yeterli. Özellikle şu bir metodun şemasını çizmek için.
+
+263
+01:03:02,227 --> 01:03:12,427
+Ama bu diyelim ki daha geniş bir diagramın bir parçasıysa, işte tabii ki ya da daha ayrıntılı bir senaryonun bir sarma şemasıysa,
+
+264
+01:03:12,788 --> 01:03:26,788
+Tabii ki metodu çağıran nesne belli de olabilir. Bu metod çağırıldığında eğer buna parametreler verilmişse parametre adı iknotur süfte parametrinin türü şeklinde yazıp,
+
+265
+01:03:26,788 --> 01:03:36,788
+bir daha fazla parametre varsa da bunların ağlarını virgül ile ayırıyorduk. Eğer bu bir metodun geri döndürdüğü değişken,
+
+266
+01:03:37,780 --> 01:03:40,519
+Geri döndürdüğü bir değer varsa,
+
+267
+01:03:41,523 --> 01:03:48,043
+O değer geri dönüş okumunun üstüne yazılabilir arkadaşlar eğer istenirse. Opsiyoneldir.
+
+268
+01:03:48,784 --> 01:03:55,483
+Ve bu değerde bu ilgili söz konusu değişkeni atandığını da göstermek isteyebilirsiniz.
+
+269
+01:03:56,243 --> 01:04:07,123
+Atama için ben burada biraz pascal notasyonu gibi iki nokta üst üste Echitir şeklini kullanmışım ama siz normal Echitir de diyebilirsiniz isterseniz. Dert değil orasını dert ediyoruz.
+
+270
+01:04:07,731 --> 01:04:20,771
+Ve fakat bu metot çağrımı belirli bir if koşuluna bağlı olarak yürütülmüşse o zaman o koşulu köşeli parantezler içerisinde metot çağrımının en başına yazıyoruz.
+
+271
+01:04:21,411 --> 01:04:33,672
+Şurada gördüğünüz gibi if deyip bir koşul yazılmışsa o koşulu köşeli parantezler içerisinde okum üstüne en başa yazıyoruz.
+
+272
+01:04:35,731 --> 01:04:58,432
+O zaman yıldız koyuyoruz arkadaşlar. Tek başına bir döngü söz konusuysa, yani diyelim ki bu nesne 2 ya da şey, sınıf 2 türünden nesneler için bir dizi var diyelim ki ve o dizideki bütün nesneler için bir metot çağrılıyorsa o zaman sadece yıldız koyup bir metot yazabiliriz mesela.
+
+273
+01:05:03,731 --> 01:05:13,411
+Bütün sınıf 2 nesnelerine bu metodu çağrılıyor anlamında. Yıldız çokluk belirtiyor. Burada da aynı şekilde.
+
+274
+01:05:13,411 --> 01:05:22,411
+Ve for döngüsü anlamına geliyor. Ama mesela bir wild anlatacaksanız veya for döngüsünün...
+
+275
+01:05:22,416 --> 01:05:32,735
+Devam koşullarını falan ayrıntılı yazmak istiyorsanız, o zaman sadece yıldızla bırakmayıp, special part'ı içerisinde o ilgili koşulu da, döngüyle ilgili koşulu da yazabilirsiniz.
+
+276
+01:05:33,215 --> 01:05:41,456
+İster döngüyle ilgili koşul olsun başında yıldız olarak da, ister iş ile ilgili koşul olsun başında yıldız olmayarak da, en başa bunu yazarsınız.
+
+277
+01:05:42,452 --> 01:05:50,732
+Bu çağırdığınız metot herhangi bir metot değil de bir constructor metot ise o zaman sadece new yazmamız yetiyor.
+
+278
+01:05:51,152 --> 01:05:55,672
+Tabi verdiğiniz parametreler varsa onu da parantez içerisinde yazabilirsiniz.
+
+279
+01:05:56,980 --> 01:06:24,619
+Peki bir nesne kendisinin bir metodunu çağırıyorsa ne olacak? O zaman şurada gördüğünüz gibi bir durum söz konusu. Bu nesnenin bir metodu hali hazırda yürüyor. Fakat o metodun içerisinde o nesne kendisinin başka bir metodu çağırırsa o zaman şöyle gördüğünüz ok ile kendisinden kendisine giden bir ok çiziyoruz. Fakat bir tane iç dikdörtgen daha çiziyoruz. Bu dikdörtgene activity bar deniliyor.
+
+280
+01:06:25,364 --> 01:06:33,864
+Bu da kendi metodunun içerisinde, kendisinin içerisinde kendisinin başka bir metodunun çağırılması anlamına gelmektedir.
+
+281
+01:06:34,524 --> 01:06:37,824
+Bu durumda geri dönüş oku çizmiyoruz.
+
+282
+01:06:38,084 --> 01:06:47,364
+Çünkü zaten o dikdörtgenin alt bitiş noktası o metodun sona erdiği noktayı göstermektedir.
+
+283
+01:06:47,724 --> 01:06:53,364
+Buradan tekrar herhangi bir kesikli çizgi bir oku bir yerlere bağlamamız gerekmemektedir.
+
+284
+01:06:53,364 --> 01:07:16,184
+Bağlamayız da. Ve diyelim ki şu bir metodun çağrımının içinde, diyelim ki başka bir nesnenin başka bir metodu çağırmışsa da ondan çıkan ok ve o ile tamamlandığında ona giren, geri dönen ok şeklinde bu gösterimi yapıyorduk.
+
+285
+01:07:17,748 --> 01:07:34,548
+Şey çizerken, özellikle bu ders kapsamında, proje ödevi kapsamında şöyle diyeceğiz size. Yazdığınız her kullanım senaryosu metniyle ilgili bir tane şama çizin diyeceğiz.
+
+286
+01:07:34,864 --> 01:07:47,264
+Yani proje yönetimde bu ders kapsamında gördüğünüz, adıyla zikredilen, şey işte, collaboration hariç diğer bir sürü de çalıştığımız şama türlerinin her birinden bir tane çizmeniz gerekiyor.
+
+287
+01:07:47,699 --> 01:08:02,139
+Bunu da mesela 10 tane kullanım sanaryonumuz mu var diyelim. Bir tanesi için sequence diagram çizim, bir tanesi için activity diagram çizim, bir tanesi için state diagram çizim, geri kalan 7'si için
+
+288
+01:08:03,507 --> 01:08:24,747
+Hangisinden isterseniz çizin. Ama en azından her şama türünden bir tane en azından görmek istiyorum. Bu noktada hangi senaryoyu hangi şama türünden daha rahat anlatabilecekseniz, araya da anlatmak kolay gelecekse o türü seçmesi de sizin avantajınızadır elbette.
+
+289
+01:08:26,100 --> 01:08:44,880
+Onu da söyleyeyim. Sequence'de yaklaştık. Arkadaşlar, okun ucu şu anlamda çok önemli. Eğer bir ok ucu bir nesneye giriyorsa, o okun gövdesinde yazan metot adı, o nesnenin sınıfında olan bir metot olmalıdır. Aksi taktirde yanlış.
+
+290
+01:08:52,467 --> 01:08:59,627
+Sınıf 2'de tanımlı. O yüzden sınıf 2 türünden bir nesneye giren okta bir metot yazabilir.
+
+291
+01:09:00,948 --> 01:09:09,467
+Çağıran, ne yanlış yapılıyor, çağıran nesne 1 olunca bazen o ok buraya gelip buraya bir metot yazılabilir.
+
+292
+01:09:09,467 --> 01:09:20,467
+Hayır kardeşim, sınıf çamasına bakacağız. Bu bir metot sınıf 2'de yer alıyorsa, onun içerisindeyse o zaman sınıf 1'den bir nesneye...
+
+293
+01:09:20,467 --> 01:09:34,407
+Böyle bir metot çağrısı yapılamaz. Bir o yapılıyor. Bir de şu yapılabiliyor. Şurada gözükmüyor galiba. Sonraki yansıya da koymadık galiba.
+
+294
+01:09:34,407 --> 01:09:43,927
+Şunu kapatayım. Evet, tamam. Göstermişiz. Şimdi göstereyim. Mesela.
+
+295
+01:09:45,876 --> 01:09:51,336
+Ne adlandı gitsek, puzzle açık bir şeyden, puzzle açık bir koddan yapayım bu işi.
+
+296
+01:09:51,336 --> 01:09:55,916
+Ek açıklama şunları çizimle bir temizleyeyim.
+
+297
+01:09:55,916 --> 01:09:59,336
+Mesela vaktimiz var mı? Olmaz.
+
+298
+01:09:59,336 --> 01:10:04,615
+Zaten yeni bir saati doldurduk. 13'e geçe başlayalım.
+
+299
+01:10:04,615 --> 01:10:08,216
+Şimdi şunu sunum modundan bir çıkayım.
+
+300
+01:10:09,140 --> 01:10:18,520
+Şimdi söyleyeyim de ondan sonra şeye geçeyim. Sonra şu son yazı anlattığım şey olmasın. Ha bu kadar güzel. Pardon. Activity Diagram'a geçiyor. Tamam.
+
+301
+01:10:20,620 --> 01:10:24,180
+Tamam peki. Şöyle yapalım. Bir tane epips açayım mesela.
+
+302
+01:10:28,115 --> 01:10:31,115
+Bir de wildfire'ını açayım. O zaman bakalım.
+
+303
+01:10:32,115 --> 01:10:39,115
+Tabi şimdi Google Maps'dan farklı olduğu için hazırlaştırmam olmayacak belki ama fakat diğerinde buluruz bir şeyler.
+
+304
+01:10:40,115 --> 01:10:42,115
+Nasıl yapalım şimdi?
+
+305
+01:10:53,555 --> 01:10:55,315
+Zaten şey değil, sunup.
+
+306
+01:11:01,315 --> 01:11:02,235
+Peki.
+
+307
+01:11:03,615 --> 01:11:05,295
+Bunun için share'de açsam olur.
+
+308
+01:11:05,536 --> 01:11:08,075
+Nesne'in önünde bir şey söylesek olur.
+
+309
+01:11:08,075 --> 01:11:08,995
+Ya da
+
+310
+01:11:10,195 --> 01:11:33,095
+Daha sonra merak etmeyin arkadaşlar. Bu NextGenPost örneğini hem sınıf şabımızı tasarıma geçireceğiz, hem de gerek öğrendiğimiz yeni şama türleri olsun onların çizimlerini yırtacağız, edeceğiz. O sırada bir synchronous diagramla çizeriz sizinle birlikte. İşin içerisindeki azıcık çetreflere bir şey için bir tane synchronous diagram çizeriz.
+
+311
+01:11:36,564 --> 01:11:43,224
+Peki, şey açayım. Şu nesne programdan onu ders malzemesinden bir açayım.
+
+312
+01:12:06,355 --> 01:12:07,475
+Olsun, ne?
+
+313
+01:12:19,155 --> 01:12:20,796
+Neresinde bir stik suçukla.
+
+314
+01:12:27,412 --> 01:12:35,252
+Ama bu menide olan versiyon muydu ki? Fark etmez ki.
+
+315
+01:12:41,300 --> 01:13:00,300
+Bu biraz eski. Ya da orada gül. Haa şuradan mı bakacaktım? Şuradan bakacaktım. Ha yok hayırs. Ben bir sonra bakayım. Bu bir eksikliğe mi var mı? Mühendisliği arkas.
+
+316
+01:13:12,275 --> 01:13:14,235
+Tamam peki şunu yapalım madem öyle.
+
+317
+01:13:14,235 --> 01:13:28,115
+Şimdi kodla şeyden ziyade PowerPoint'ten ziyade daha rahat eşleştirebiliyor Eclipse ekranda.
+
+318
+01:13:28,615 --> 01:13:30,895
+Peki şimdi şöyle bir yapalım bakalım.
+
+319
+01:13:31,815 --> 01:13:33,895
+Bir K sınıfımız var arkadaşlar.
+
+320
+01:13:35,956 --> 01:13:38,376
+Şuradan da görebileceğiniz üzere.
+
+321
+01:13:38,832 --> 01:13:52,051
+Şurada bir tasarımımız var bununla ilgili. K sınıfımız var, plate uyarımı var ve şahsız number uyarımı var. İkisi de private string. K constructor bu ikisini de parametre olarak alıyor.
+
+322
+01:13:52,792 --> 01:14:04,631
+Burada biraz açık yaslayalım şimdi daha iyi olurum. Şimdi hangi parametre plate, hangi parametre şahsız number. O yüzden aslında burada plate ignoctus de string virgül şahsız number ignoctus de string diye yaslak daha iyi olacak.
+
+323
+01:14:05,119 --> 01:14:11,500
+İşte, bir dakika ya, past personal interview sahne bakacaktık ya.
+
+324
+01:14:13,719 --> 01:14:16,219
+Ama yok, burada şimdilik cardan çözüm, şimdi o yüzden.
+
+325
+01:14:26,676 --> 01:14:34,015
+Şunda bir bayraklığım mı var yoksa? Bilgisayar başka da o yüzden.
+
+326
+01:14:40,051 --> 01:14:40,431
+Bu ne?
+
+327
+01:14:44,020 --> 01:14:59,400
+Hayır, tasarımdan bahsediyorduk, pardon. Evet, bu iki uyanlanan Constructor, Pleka numarası için Get-Reset metodu, şasi için ise sadece Get-Reset metodu var. Çünkü bir aracın şasinin varası değiştirilemez demiştik.
+
+328
+01:14:59,400 --> 01:15:02,360
+Ve ek olarak buna bir metot ekliyoruz.
+
+329
+01:15:03,988 --> 01:15:12,188
+Bu araba nesnesi, kar nesnesi kendi hakkında bilgi içeren bir metin ekranı yazdıracak.
+
+330
+01:15:13,188 --> 01:15:20,888
+O zaman bunu yapalım bakalım. Bunu sequence programını çizmeye çalışalım.
+
+331
+01:15:21,152 --> 01:15:33,511
+Circumst diagramlarda arkadaşlar, print falan gibi metot çağrılarından ziyade problem alanına yönelik metot çağrıları üstünden bu çizimler yapılır.
+
+332
+01:15:33,931 --> 01:15:40,951
+Introduceive metodun içerisinde get blade ve get chassis number metodlarının çağrılması sırf konusu.
+
+333
+01:15:42,791 --> 01:15:47,252
+Bir dakika, bu şey basit kalıyor. Ondan bahsetmiyorum, şundan bahsedelim.
+
+334
+01:15:47,764 --> 01:15:54,684
+Aradaki bir ilişkiyi kurduktan sonra insanları çizersek daha mantıklı olacak.
+
+335
+01:15:55,804 --> 01:15:59,004
+Evet, tabii buna çok daha iski ama ilk şeye atlamışım.
+
+336
+01:16:04,115 --> 01:16:07,896
+Tamam, birebir saatlik, ondan sonra yana gelecek şeyler var.
+
+337
+01:16:09,056 --> 01:16:09,935
+Tamam, şimdi oldu.
+
+338
+01:16:11,656 --> 01:16:13,536
+Peki, evet.
+
+339
+01:16:14,095 --> 01:16:15,736
+Şuna bir bakalım arkadaşlar.
+
+340
+01:16:16,636 --> 01:16:19,076
+Birazcık büyüteyim. Bunu da çok iyi büyütemiyorum ya.
+
+341
+01:16:19,736 --> 01:16:21,496
+PDF'den gitsen daha iyi olacak.
+
+342
+01:16:24,716 --> 01:16:26,876
+Şimdi bu kaçıncı?
+
+343
+01:16:26,976 --> 01:16:31,336
+70. yansıdı. Demek ki 35. sayfaya.
+
+344
+01:16:32,948 --> 01:16:41,668
+Bir gidelim. Beşinci sayfaya. Gidelim. Evet, şurada. Şimdi şunu çok güzelce yutelim. Şunu kapatalım.
+
+345
+01:16:43,155 --> 01:17:11,155
+Şöyle yapalım. Evet. Şimdi şöyle bir tasarımımız var arkadaşlar. Bir person sınıfım var. Kişinin adı ve bir kişi bir arabaya sahip olabilir. O yüzden şeyime baktığımda, okuma baktığımda person'dan kara doğru giden bir düz çizgi var, ucu açık ok. Bir kişi sahiptir sıfır ya da bir arabaya şeklinde. Neden burada sıfır bir ayrıntı konulmaktadır?
+
+346
+01:17:11,155 --> 01:17:28,195
+Constructor'da, person's reference'ın Constructor'ına baktığımızda buna isim veriyoruz ama kar vermiyoruz. Demek ki biz bir person oluşturmak için bir araba olmadan, arabası olmadan person oluştururuz. Daha sonra setter metodular oradan set ederiz. O yüzden nicelik bu şekilde yazılmış durumda.
+
+347
+01:17:31,828 --> 01:17:41,808
+Ve madem bu sahiplik ilişkisi var, bu sahiplik ilişkisi person tarafında o türden bir üye alan olarak kendini göstermek zorunda.
+
+348
+01:17:42,420 --> 01:17:49,780
+İşte person constructor isim alıyor. İsim için getter metodu var. Araba için getter ve setter metodu var.
+
+349
+01:17:49,780 --> 01:17:57,500
+Ve bir de introduce self diye bir metodu var bu person nesnesinin. Kendisi hakkında bilgi içeren bir string oluşturup onu geri döndürüyor.
+
+350
+01:17:57,940 --> 01:18:03,360
+Acaba bu işi nasıl yapacak? Bir onu şey edelim, onun şamasını çizelim, sequence track'ını çizelim.
+
+351
+01:18:03,780 --> 01:18:10,020
+Ve burada şuna da kontrol etmemiz lazım. Her insanın bir arabası olmayabileceği için ama her insanın ismi olacağı için
+
+352
+01:18:10,420 --> 01:18:19,360
+Bu introduself içerisinde isim bilgisi yer alacak ama arabasının plakasının bilgisi eğer bir arabası varsa olacak.
+
+353
+01:18:19,360 --> 01:18:29,360
+Bu bağlamda koda baktığımızda şimdi bu neydi?
+
+354
+01:18:29,960 --> 01:18:35,479
+N-P-02 ha tamam N-P-02 onun plakasını.
+
+355
+01:18:35,823 --> 01:18:42,903
+Evet, tamam. Yani name üyesi var, k üyesi var, constructor var, get the setter metotları ve introduceFert metodunlar.
+
+356
+01:18:42,903 --> 01:18:48,903
+Şimdi evet, her insanın bir ismi olacak. Kendi ismini stringe ekleyecek ve eğer...
+
+357
+01:18:48,975 --> 01:19:16,915
+Kar üye alanının al değilse o zaman işte şu plakalı bir aracın da var anlamında kar üyesinin getiret metodunu da çağıracak ve oluşturduğu stringi geri döndürecek şeklinde bir kod bu. Hani diyelim ki burada kodlamadık ama sequence değerli anlamıyla tasarlamak istiyoruz. Sonra kodla dökeceğiz. O yönde de düşünebilirsiniz. Ya da tersi de olabilir. Bu metot önemli bir metottu. Bunun nasıl çalıştığını kaynak kodlar?
+
+358
+01:19:16,975 --> 01:19:32,855
+Bakmak gerekmeden, şemadan da öğrenebilmeliyiz, gülsünden de bir gerekli olabilir. Hangi bakış açısından bakarsanız, bakalım fark etmez. Biz kod üstünden anlatırsak, belki biraz daha net anlatmış olabiliriz bu konuyu.
+
+359
+01:19:42,836 --> 01:19:50,836
+Evet, şu stringin gerisinin gözümesine gerek yok arkadaşlar. Yani string bitiyor ve upstart'a geçiyor sadece. Şöyle yapalım yeter.
+
+360
+01:19:52,435 --> 01:19:59,316
+Şimdi bir ters'ın Introduce-self metodunu, sequence diagramını nasıl çiziriz?
+
+361
+01:19:59,976 --> 01:20:08,216
+Herhangi bir nesne bu public metodu olduğu için Introduce-self metodunu çağırabilir. O yüzden buraya herhangi bir şey yazmıyorum.
+
+362
+01:20:10,515 --> 01:20:25,515
+Bir person meselesidir anlamında, iki nokta üst üste person yazıyorum. Art çizgiyi kendisi otomatik ekliyor. Ondan sonra çizmeye çalıştığım metot da işte bu introduce self metodu.
+
+363
+01:20:30,899 --> 01:20:43,180
+Bu arada arkadaşlar, şimdi hani rabutu arkasında da söyler, ben de ayrıca söylemiş olayım. Şimdi vizeler, denici vizeler online olacak.
+
+364
+01:20:43,631 --> 01:20:52,671
+Bu bağlamda siz de bir mesela Word dosyası üstüne çözmelerinizi yazacaksınız. Teorik kısmına yazarsınız. Program değil.
+
+365
+01:20:52,671 --> 01:21:11,451
+Ama uygulamalı kısmının geldiğinde bir use case diagramı çizmenizi isteyeceğiz ve onu da ya işte bu wild-tree ML'le ya da başka bir grafik çizme aracıyla çizip resim olarak yanıtımıza ekleyeceksiniz.
+
+366
+01:21:11,631 --> 01:21:23,912
+Onu da unutmayalım. O yüzden henüz mesela VARC veya başka bu türden bir uygulama edinmediyseniz bir an önce edinim, onunla ağaçlığına alalım.
+
+367
+01:21:24,291 --> 01:21:32,351
+Ki bunu sınav zamanında öğrenmeye çalışmayın. Çalışmayın o uygulamanın huylarını diyeyim. Tamam.
+
+368
+01:21:33,876 --> 01:21:57,756
+Peki, personal sınıfın introduce self metodu çağırıyor. Şimdi bu introduce self içerisinde bir ilk metod çağrısı get name şeklinde bir metod çağrısı. Bu da neslinin kendi metodunu çağırması olacak. Bu nedenle bu activation'ların içinde başlayıp içinde biten bir ok çizdiğimde otomatik olarak kendi metodunu çağırma şeklinde getiriyor.
+
+369
+01:22:01,876 --> 01:22:18,355
+getName metodu olduğunu bu şekilde göstereyim. GetName basitçe return diyecek. Onun için de ayrıca bakmaya gerek yok. Ve sonra belli bir koşula bağlı olarak duruma göre car üye alanının getPlate metodu çağırılacak.
+
+370
+01:22:20,627 --> 01:22:40,167
+Küçük C ile olan kar, türüne büyük C ile olan kar. O zaman bir tane object lifeline şuraya. Küçük C ile kar, büyük C ile kar. Neslin adı ya da üye alan adı bu durumda ve üye alanının türü.
+
+371
+01:22:40,608 --> 01:22:59,507
+Şimdi şöyle çekeyim. Sol tarafa zaten ihtiyaç yok. Biraz dummy şuradaki boş. Peki. Onun getplate metodu çağrılıyor. Ama ne zaman? GetName metodu bittikten sonra odası neresi? Şuralarda bir yerde.
+
+372
+01:22:59,920 --> 01:23:09,079
+Oradan başlıyorum. Karın lifeline'ına doğru bir çizgi çekiyorum. Activation barı kendisi ekliyor bu noktada.
+
+373
+01:23:10,260 --> 01:23:22,039
+Hemen bir şey geldi. İlk ay diyor, diagram bence gözükmüyor mu diyor. Bakın arkadaşlar, görebilen varsa bir yazsın lütfen.
+
+374
+01:23:23,320 --> 01:23:25,940
+Çünkü ben hani ekran paylaşımına şeklinde paylaştım ama.
+
+375
+01:23:27,764 --> 01:23:51,864
+Gözümüyorsa da bir haberim olsun. Peki. O zaman şöyle yapalım. Bir paylaşım durdurum. Kısa bir şeylik durdurdum. Ve tekrar paylaşım yapayım. Ha bu arada şey, evet PowerPoint'ten sunum modundan çıkmayı mı umuttum diyecektim ama bazen öyle olabiliyor ama o da değil. Peki tekrar ekran paylaşımı yapıp tekrar ekrana dön. Evet. Peki.
+
+376
+01:23:52,787 --> 01:24:08,867
+Şu anda, sor tarafa Eclipse'i açtım, sağ tarafa da Wilder'i açtım. Şu an gözükmesi lazım diye düşünüyorum. Tam şu açımda. Ama hala gözükmüyorsa o da ilginç bir konu.
+
+377
+01:24:09,395 --> 01:24:25,675
+Bir tık geç geliyor yaptığınız işlemler diyor [öğrenci]. Olabilir. Şimdi paylaşımı kapatıp açtığım için bunun gelmesi biraz geliştirecektir herhalde. O doğal. Onun dışında tabii ki arada bir network latency var.
+
+378
+01:24:28,243 --> 01:24:46,963
+O yüzden biraz şeyde geç gelebiliriz. Peki, şimdi inşallah gözüküyordur hem sol tarafta kod ve sağ tarafta şama. Bir ne yaptığımız ne ettiğimizi şey üstünden anlatayım, çizim ile ekleyeyim. Mesela henüz ekran gelmedi. O çok kötü.
+
+379
+01:24:50,880 --> 01:25:06,800
+Mesela, efendim diyor, şimdi ancak görüntü geldi diyor. Tamam, peki. İyi. O zaman şimdi çizimlerle bir destekleyelim anlattığımız şeyleri. Sarı renk alayım. Şöyle koyayım.
+
+380
+01:25:20,051 --> 01:25:25,051
+Pardon, şurada, sonunda da, file new sequence değerli.
+
+381
+01:25:25,632 --> 01:25:35,492
+Evet, peki, yeni başlıyor. Şimdi ne yapacağız? Personal sınıfının Introduce-self metodunun sequence değerliğinin çizeceğiz.
+
+382
+01:25:35,988 --> 01:25:53,268
+Ne yapacak bu? Eğer kodu yazmadıysak diyeceğiz ki kişinin ismi hakkında bilgi döndürecek ve eğer arabası da varsa onun plakasını da ile ilgili bilgiyi de toparlayıp hepsini bir metin olarak geri döndürecek şekilde bir gereksinim olması var.
+
+383
+01:25:53,268 --> 01:26:03,967
+Bunu diyelim ki önce Siklis diagramı yapıp sonra koda dökülecek diye de düşünebilirsiniz veya kodladıkları, şimdi bu karmaşık bir şey diyelim ki bunu belgelendireceğiz.
+
+384
+01:26:03,988 --> 01:26:26,288
+diye şamasını çizmek istiyoruz. Sequence Kaggle'ını da diyebilirsiniz artık. Hangi açıdan bakarsanız bakalım. Ben şu an bir tarafta kodu açıp daha iyi anlatmak için ben kodu açıp oradan şama çizeceğim. Şimdi ben aslında şu paletten bir tane object line falan tıkladım. Sonra buraya bıraktım. Personal sınıfının Introduceive Start metodunun şamasını çizeceğim.
+
+385
+01:26:28,500 --> 01:26:55,760
+O yüzden person türünden bir nesnenin metodu çağırılacak anlamında. Nesne de önemli değil ama iki noktası da person yani bir insanın bu metodu çağırılacak diye. Bunu bir de çağıran olmalı. Onun için de bir tane dummy, bir tane objekt koyuyorum. Her ikisinde bir de activation bar tıklayıp paletten koyuyorum. Ve ilk call message, şu boş dummy objeden.
+
+386
+01:26:56,500 --> 01:27:03,220
+Person objesini doğru çizip bırakıyorum ve üstüne de metodumun adımı yazıyorum.
+
+387
+01:27:04,880 --> 01:27:05,560
+Introduce.
+
+388
+01:27:07,560 --> 01:27:08,360
+Şeklinde.
+
+389
+01:27:09,560 --> 01:27:09,779
+Peki.
+
+390
+01:27:10,560 --> 01:27:11,480
+Ve bakıyorum koda.
+
+391
+01:27:12,148 --> 01:27:33,907
+String tanımlanmış, onu göstermiyoruz. Biz burada önemli olarak göstereceğimiz şeyler, problem alanındaki varlıkların metot çağrılarıdır. Yani bu person'ın kendi get play metodunun çağrılması ve koşula bağlı olarak onun car üye alanının get play metodunun çağrılması. Çizeceklerim bunlar. Bunlar olmalı.
+
+392
+01:27:33,907 --> 01:27:36,547
+Peki, şimdi.
+
+393
+01:27:37,332 --> 01:28:00,332
+Kendisinin get-ne-metodunu çağırıyor. Bunu nasıl yapacağız? Valide de şöyle yapacağız. Metod çağırma okumu seçtim. Bu person'ın bu dikdörtgenine, ince uzun dikdörtgenine activation bar'ın içinde başlayıp aynı activation bar'ın içinde bitecek şekilde okumu çizersem, çizim.
+
+394
+01:28:00,703 --> 01:28:07,243
+Bırakılsam, işte bu şekilde kendi kendine metot çağrısı şeklini döndürüyor o çizimi.
+
+395
+01:28:07,724 --> 01:28:12,804
+Ve select tıklayıp o yeni okuluşuna tıkladığımda neydi o metodun adı? GetNey.
+
+396
+01:28:14,583 --> 01:28:18,984
+GetNey yazıp okey dedim. GetNey metodu çağıraldı.
+
+397
+01:28:22,707 --> 01:28:32,627
+Koşula bağlı olarak, 17. satırdaki koşula bağlı olarak, 19. satıra düşmüş olan metot çağrısı gerçekleştiriliyor.
+
+398
+01:28:33,844 --> 01:29:00,163
+Bu 18-19. satırlar nereye denk geliyor? GetName metodu çağırıp bittikten sonrasına denk geliyor. Orası neresi? Şu ek dikdörtgenin ek activation barı son çizgisinden aşağısı bir yerlerde. Ama tabi person'ın dıştaki kontrol activation barının da dışına çıkmadan bir yerlerde. Yani kalemi ele alayım. Şuralarda bir yerde.
+
+399
+01:29:01,684 --> 01:29:19,864
+Oradan bir yerden çizecek, çizmeli, başlatmalıyız. Şimdi metodu çağırılacak olan nesne ne? Bu person nesnesinin küçük c ile yazılmış kar üye alanı. O zaman ben buraya şimdi şu çizimi kapatayım, bir tane daha object koyayım.
+
+400
+01:29:21,235 --> 01:29:41,895
+Üye alımları küçük CLK, iki nokta üst üste, çürü de sınıfı da büyük CLK. Bunun getplate metodu çağrılacak. Şimdi burada bir activation var, ihtiyaç yok. Kendisi çizecek. Ben sadece call create message'ı tıklayıp, sarı ile volverladığım yerden bir yerden okumu başlatıp,
+
+401
+01:29:42,192 --> 01:29:51,811
+Bu kar üye alanını simgeleyen nesnenin lifeline çizgisini üstünde bıraktığımda kendisi otomatik activation bar'ı da ekliyor.
+
+402
+01:29:52,211 --> 01:29:59,391
+Öyle yapmadınız mı? Şöyle olabilir. Activation bar al, karar koy, ondan sonra okunu al.
+
+403
+01:29:59,851 --> 01:30:06,951
+Bahsettiğim sarı bölgeden o activation bar'a çizgiyi çiz. İkisi de nihayetinde sonucunda aynı kapıya çıkıyor.
+
+404
+01:30:08,180 --> 01:30:14,320
+Ve tabi bu oku çizince, person tarafındaki activation barı da otomatik olarak uzattı.
+
+405
+01:30:14,320 --> 01:30:15,800
+Olması gerektiği gibi.
+
+406
+01:30:16,520 --> 01:30:19,360
+Peki, şimdi şu okun üstünü nasıl doğduracağız?
+
+407
+01:30:19,800 --> 01:30:23,660
+Bakın, car sınıfında getplate diye bir metot var.
+
+408
+01:30:24,480 --> 01:30:27,220
+Car sınıfında getplate diye bir metot var.
+
+409
+01:30:27,300 --> 01:30:29,160
+O yüzden ona doğru bu ok giriyor.
+
+410
+01:30:29,760 --> 01:30:32,440
+Üstüne yazacağımız şey getplate.
+
+411
+01:30:36,148 --> 01:31:01,747
+Şimdi, okey. Ama bu kadar yeterli mi? Hangi yeterli? Diye, bu get play metodunun çağrısı bir if koşuluna bağlı olarak yürütülüyor. O yüzden tekrar select'teyken aynı ok tıklıyorum, yazılımın başına gidiyorum ve köşeli parantez içerisinde bu if içerisinde geçen ifadeyi aynen yazıp köşeli parantezini kapatıp
+
+412
+01:31:02,131 --> 01:31:20,131
+Pardon, kapatmadım. Bir de boşluk koyayım. Daha rahat okursun. İşte şu hale getirmiş oldum çağrımı. Bu getplate metodu da basitçe plakayı geri döndürecek. Onun içinde başka bir metod çağrısı olmayacak. O yüzden o işini yapacak ve geri dönecek.
+
+413
+01:31:20,595 --> 01:31:47,235
+Ondan sonucuma 20. satıra dönmüş olduk kodda. Burada özel metod çağrısı yok ve en sonunda 21. satırda geri dönüş gerçekleşiyor. Yine return alıp buradan, yani daha dur. Nereden? İşte o 20. satır nerelere simgeliyor? İşte artık şuralar bir yer simgeliyor orayı. Oradan başlayıp, return message, oradan başlatıp.
+
+414
+01:31:47,636 --> 01:31:51,236
+İntrodyusrafi kim çağırmıştı? İşte herhangi bir nesne çağırmıştı.
+
+415
+01:31:52,436 --> 01:31:55,076
+Oraya doğru geri dönüş okumu çiziyor.
+
+416
+01:31:55,756 --> 01:31:57,156
+Olay budur arkadaşlar.
+
+417
+01:31:59,736 --> 01:32:03,676
+Buraya kadar kafasına bir şey takılan arkadaşım varsa sorsun.
+
+418
+01:32:04,236 --> 01:32:08,516
+Yoksa işte şuna dikkat edin filan gibisinden bazı şeyler söyleyeceğim.
+
+419
+01:32:10,396 --> 01:32:13,115
+Varsa sorun ister sesinizi açıp ister çete.
+
+420
+01:32:14,931 --> 01:32:15,612
+UML.
+
+421
+01:32:20,595 --> 01:32:35,275
+Peki, şimdi bu tip şamalarda, Scrum diagramlarda aşağı doğru inildikçe zamanda da ileri doğru gitmiş oluyoruz arkadaşlar.
+
+422
+01:32:42,515 --> 01:32:48,435
+Hangi metotta hangisinden sonra çağrılmış bunları çok iyi anlayabiliyoruz. Örneğin,
+
+423
+01:32:48,884 --> 01:33:08,604
+GetName ve GetPlate metodlarının çağrılmasının IntroduceSurf metodu içerisinde olduğunu anlıyoruz. Çünkü IntroduceSurf'ın başlangıç çizgisi bu, bitiş çizgisi de bu. Bakın bu iki çizginin içerisinde yer alıyor. Hem GetName hem GetPlate metodları.
+
+424
+01:33:16,884 --> 01:33:30,844
+Git neyin başında başlıyor, bitiyor. Ondan sonra getplate metodu başlıyor ve bitiyor. Bu sayede buluşoklet anlayabiliyoruz.
+
+425
+01:33:31,412 --> 01:33:46,132
+Eğer siz mesela bir sequence dergenden kendiniz elle çiziyorsanız veyahut da UML için olmayan herhangi bir çizim aracıyla çiziyorsanız eğer, şimdi şu en son çizdiğim bir şey çizgileri sileyim.
+
+426
+01:33:47,132 --> 01:33:50,052
+Control Z ile bir geri alayım biraz.
+
+427
+01:33:52,652 --> 01:33:52,892
+Evet.
+
+428
+01:33:54,707 --> 01:34:09,347
+Bazen arkadaşlar şöyle bir şey yapabiliyorlar. Getne metodunun çizgisinin başlangıcını Introduce Self ile neredeyse aynı hizadan başlatabiliyorlar çizmeyi. Böyle yapmayın arkadaşlar.
+
+429
+01:34:09,347 --> 01:34:19,867
+Arada şöyle ufak bir düşeyde yeşillediğim boşluğun kalması önemli arkadaşlar.
+
+430
+01:34:22,707 --> 01:34:31,467
+Onun için de get name çağrılıyor. Introduce self içerisinde yaptığımız ilk şey get name metodunun çağrılması bile olsaydı,
+
+431
+01:34:31,507 --> 01:34:53,667
+Kardeşim, introdisans metodun içerisinden sonra yeni bir metot çağrısı olduğunda, eski derslerimizden hatırlayın, metot içerisinde metot çağrısı olduğu zaman, çağıran metodun, önceki metodun durum bilgisi bellekli bir yığına atılıyor ve yeni metot çağrısı için yeni bellek alanı açılıyor.
+
+432
+01:34:54,036 --> 01:35:20,996
+Onun da içerisinden başka bir metot çağıracaksa, ilk çağırılan metodun durum bilgisi yığının üstüne atılıyor. İkinci metot çağrısı için, diğer metot çağrısı için yine alan açılıyor. Ve her bir metot sona erdikçe de yığının üstünden bir önceki metodun kaldığı yerin durumu geri çekiliyor. Yani böyle bir işler yapıyor arkada. Ve bunlar illaki belirli bir gecikmeyle yapılacak.
+
+433
+01:35:21,395 --> 01:35:33,315
+Ve hani bırakın onların hepsini bu araya koyduğumuz boşlukla Çam'ın anlaşılabilirliğini önemli oranda iyileştiriyor. O yüzden buraya boşlukları koyun arkadaşlar.
+
+434
+01:35:34,756 --> 01:35:46,996
+Entrodüsü serfiyle örneğin işte aynı hizada çizilen ok o boşluğa sahip değil ve hatta bazen daha kötüsü bundan daha yukarıdan bir yerden de başlatabiliyorlar mesela çağrıyı.
+
+435
+01:35:46,996 --> 01:35:49,055
+Evet şimdi buradan yukarı çıkmak ne demek?
+
+436
+01:35:49,395 --> 01:35:55,515
+Zamanla geriye gitmek demek. Burada introdüseltelik, zamanda geri gittik, ondan sonra metod çağrısı oldu.
+
+437
+01:35:55,916 --> 01:36:02,595
+Ve zamanda geri gidemeyeceğine göre, buralarda da boşluk kovulması gerekmektedir arkadaşlar.
+
+438
+01:36:03,060 --> 01:36:28,260
+Ve her şeyi tekrar hatırlatayım. Örneğin, getplate metodu kart sınıfında, person'da değil. O yüzden kara doğru giden, bir kar nesvesine doğru giden bir getplate metodu var. Ben tutup da person'a doğru giden bir getplate yapmaya kalksam bu işi anlamadığının göstergesidir. Çünkü person'da getplate diye bir metot yok.
+
+439
+01:36:29,844 --> 01:36:39,692
+Ben de buna dikkat etmenizi istiyorum. Bunlar bunlar, soru soran varsa buyurun konuşalım daha sonra.
+
+440
+01:36:53,076 --> 01:36:57,776
+Şişizmini temizlediğim, şişizmin içerisine bırakıyorum ve kaldığım yeri not edeyim.
+
+441
+01:36:58,496 --> 01:36:58,956
+Unutmadan.
+
+442
+01:37:04,948 --> 01:37:09,467
+88'den nereye kadar geldik?
+
+443
+01:37:10,467 --> 01:37:13,088
+96 dahil yaptık diyelim.
+
+444
+01:37:25,395 --> 01:37:28,815
+Şimdi, işte bir şey geldi. Ha, peki, tamam bakalım.
+
+445
+01:37:29,555 --> 01:37:37,935
+[öğrenci] demiş ki, bu sadece introduce certain sequence diagramı değil mi? Evet. Başka metotlar içinde böyle sequence diagramı yapmamız gerekiyor.
+
+446
+01:37:37,935 --> 01:37:52,235
+Şöyle, ister iç mantığı açısından, ister sistem tasarımı açısından çok önemli, çok kritik bir metot söz konusuysa, onun sequence diagramını çizmek her zaman için yalarladı.
+
+447
+01:37:53,332 --> 01:37:56,172
+Ama onun dışında gerek yok.
+
+448
+01:37:56,884 --> 01:38:24,003
+Proje ödevi konusunda da soruyorsanız eğer, proje ödevi kapsamında yazacağınız use case'lerden bir tanesi için oradaki bir eylemin, bütün use case için olması gerekmez ama belki oradaki bir eylemin için, örneğin satış kalemi oluşturma, satış kalemi oluşturup ilişkilendirme işlemi için onun nasıl yapıldığını yönelik bir sirküms tiyadamı görmek istiyorum.
+
+449
+01:38:24,500 --> 01:38:31,179
+Ve en azından işte her türlü diagramdan bir tane görmek istiyorum.
+
+450
+01:38:31,840 --> 01:38:34,619
+Ki not verebilirim o konuda.
+
+451
+01:38:35,719 --> 01:38:36,139
+Durum bu.
+
+452
+01:38:39,731 --> 01:38:46,692
+Teşekkür ederim son için. Anlaşılmamışsa yazın. Başka soru varsa onlardan konuşalım.
+
+453
+01:39:07,796 --> 01:39:10,156
+Biz de değil aslında, bir buçuk sahibiz.
+
+454
+01:39:11,016 --> 01:39:11,456
+Oldu.
+
+455
+01:39:26,131 --> 01:39:42,091
+Peki arkadaşlar, o zaman bugün bu kadar. Lütfen OBS'e sakin son hesabınızı kontrol edin. Perşembe açılma kadar bu proje gruplarını ve atanan konuları duyuracağım.
+
+456
+01:39:42,463 --> 01:39:54,103
+Ve birkaç gün içerisinde de bu laboratuvar çalışması ile ilgili ne yapacağız, ne edeceğiz, kim hangi saatler arasında yapacak.
+
+457
+01:39:54,923 --> 01:39:59,963
+Çünkü yani bu üç saati ikiye bölüyoruz. İşte buçuk saattık. Arada da bir 10-15 dakika bırakacak şekilde.
+
+458
+01:40:00,000 --> 01:40:13,239
+İki gruba ayırıyoruz genelde. Ama tek de olabilir. Bakacağız. Ayrıntıları sizlere söyleyeceğiz. Tamam mı? O yüzden odresler sayfalarınıza ve mail adreslerinizi çekmeyin.
+
+459
+01:40:13,719 --> 01:40:23,279
+Ha bir dakika. Ha öyle mi olacak? Dokuzuncu hafta mı taşındı? Teşekkür ederim. Tamam ona bir bakayım. O zaman ona göre daha net şey ederim.
+
+460
+01:40:23,279 --> 01:40:27,880
+Ben şu an çibim duyduğum falan bakmıyorum. Bugün toplantıda zaten söylenir.
+
+461
+01:40:28,000 --> 01:40:35,899
+Ama iyi, yakından takip ediyorsunuz bu işleri. Afin size. Teşekkür ederim. Hadi bakalım şimdi o zaman.
+
+462
+01:40:36,659 --> 01:40:44,319
+Şöyle tekrar, hayır bir dakika, ekstra işlem olsun buradan. Zaten geldim buradan ne kadar. Şunu bakalım.
+
+463
+01:40:47,380 --> 01:40:48,179
+Daha sonra şimdi.
+
+464
+01:40:50,484 --> 01:41:04,204
+Bize dokuzuncu hafta ona göre ayarlayacağım. Ben böyle bir tüm alayım. Teşekkür ederim.
+
+465
+01:41:09,779 --> 01:41:12,460
+Peki, oyunun başka bir şey varsa konuşalım.
+
+466
+01:41:26,420 --> 01:41:31,840
+Yoksa da o zaman bugünlük bu kadar. Haftaya görüşmek üzere. Hoşçakalın arkadaşlar.

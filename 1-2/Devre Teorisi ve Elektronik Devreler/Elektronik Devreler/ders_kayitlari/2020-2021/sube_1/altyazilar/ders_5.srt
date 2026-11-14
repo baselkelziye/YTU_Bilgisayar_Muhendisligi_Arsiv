@@ -1,0 +1,1507 @@
+1
+00:02:12,532 --> 00:02:13,412
+Merhaba arkadaşlar.
+
+2
+00:02:19,219 --> 00:02:37,360
+Sesim geliyor değil mi? Kesintisiz. Geliyor, evet. Tamamdır. Şimdi kaç kişiyiz? 37. Biraz daha bekleyelim. Sayımız biraz daha artsın. 5 geçe. Daha önce 10 geçe falan başlatacağımızı söylemiş miydik? Yoksa hani 5 geçe mi demiştik?
+
+3
+00:02:43,955 --> 00:02:45,975
+Beşkeş'e başlayalım o zaman arkadaşlar.
+
+4
+00:03:56,020 --> 00:04:05,040
+Tekrar merhaba arkadaşlar. Bugün LAP 0'ın anlatımı yapılacaktı. Onunla alakalı duyuru aldınız mı acaba?
+
+5
+00:04:08,040 --> 00:04:09,640
+Evet hocam.
+
+6
+00:04:22,560 --> 00:04:47,459
+Kendileri direkt açamıyorlar dersi, benim açtığım gibi. O yüzden şeyi vermem gerekiyor zannedersem burada. Dersin linkini vermem gerekiyor. Bakalım onun linkini nasıl göndereceğiz? Benim tekrar açıp dersi, onun linkini göndermem lazım. Siz dersle alakalı linkler sizin postanıza geliyor mu acaba?
+
+7
+00:05:05,620 --> 00:05:18,899
+Piyazadan paylaşılacak, oradan paylaşabilirler. Yok, oradan paylaşabilecekler veya ben dersi başlatacağım, yönetimi oraya vereceğim ama şu an açılmış olan derse linkini nasıl bulacağız?
+
+8
+00:05:18,899 --> 00:05:30,420
+Şu an açtığım, size link gelmiyor. Ben sadece katıl ile alakalı bir link geliyordu. Acaba o katıl linki yeterli olacak mı?
+
+9
+00:05:31,379 --> 00:05:35,980
+Bağlantı adresini kopyala diyoruz mesela. Şuraya bir atalım.
+
+10
+00:05:57,204 --> 00:06:18,704
+Participants'tan bakalım. Orası şöyle. Invite kısmı var zannedersem. Copy Invite Link. Tamamdır. Derse kayıtlı olmayan için buradan göndeririz. Tamamdır arkadaşlar. Teşekkür ediyorum.
+
+11
+00:06:20,915 --> 00:06:32,115
+Evet, dersimize başlayalım bakalım. Geçen hafta kaldığımız yerden itibaren bununla alakalı kısmı da öncelikle bir yükleyelim.
+
+12
+00:06:32,115 --> 00:06:46,615
+Dersimizin sunumlarına. Dersler, sınavlar, elektronik devrelerde ders duvarında en son ne yüklemişiz? 5'i yüklemişiz. Bir de 6'yı yükleyelim bakalım.
+
+13
+00:06:50,387 --> 00:07:05,647
+Elektronik Devreler, Slice Elektronik Devreler. Bugün 6'ya da biraz gireceğiz. Onu da yüklemiş olalım. Buradan indirirsiniz arkadaşlar. 5'ten devam ediyoruz geçen hafta kaldığımız yerden.
+
+14
+00:07:16,148 --> 00:07:38,807
+En azından eski yapılarda diyot, transistör gibi yapıların daha rahat yapıldığını görmüşsünüzdür. Bununla alakalı ödevimiz de vardı. Bakalım ödevimiz için son tarihi ne vermişiz? Bu akşam 28 ne kadar mı vermişiz? Elektronik yağı yeri yetken. Şuradan bakalım.
+
+15
+00:07:39,540 --> 00:08:01,379
+Ödevler, sınavlar. Biz bunun tarihini 28'ine kadar vermişiz. Hafta sonuna kadar vermişiz arkadaşlar. Derse daha sonradan eklenen arkadaşlar da olmuş. Yani var olan sınıf listemizin haricinde ekstradan eklenenler de olmuş.
+
+16
+00:08:07,572 --> 00:08:34,331
+Yayın kaldırma, tekrar yayını tekrar aktive etme gibi bir özellik yok şu anda maalesef. Sadece bitiş tarihini değiştirebiliyorum. Bu [öğrenci] gönderdi ödevini. [öğrenci] ve katılamayacak durumda [öğrenci] ödevini gönderecekler arkadaşlar. Diğerlerinin hepsi zaten sistem üzerinden. Gönderilen ödevler kısmında göreceğim.
+
+17
+00:08:35,155 --> 00:08:50,155
+Mesela şu ana kadar ödevini göstermiş kim var? [öğrenci] göndermiş, [öğrenci] göndermiş. Örneğin PDF şeklinde. Bu ödevlerinizi gönderirken arkadaşlar, aynı şu [öğrenci]'nın...
+
+18
+00:08:50,543 --> 00:09:18,323
+Onun formatında değil de ödev bir, at soyat, no şeklinde gönderin. Örneğin şurada [öğrenci], ChemScanner diye direkt PDF'ini göndermiş. Hayır. Bunların derli toplu bir yerde tutulacağını bilin. O yüzden ama bunları kaydederken zannedersem şey de yapıyor. Yeniden adlandırma yapıyor olabilir. Ama siz ne olur ne olmaz? Ödev bir, at soyat, ondan sonra numara şeklinde yine.
+
+19
+00:09:18,543 --> 00:09:35,743
+Ayarlayın arkadaşlar. Dediğim gibi ilk önce diyot yapılarını görmeye başlayacağız. Diyot yapısı yapılırken basitçe iki tür malzeme P ve N tipi malzemelerden tekrar yükleyelim.
+
+20
+00:09:35,743 --> 00:09:43,723
+Dediğiniz şekilde yüklemediyse. Evet arkadaşlar iyi olur. Daha süremiz var. Bir revizyon yaparsanız.
+
+21
+00:09:44,500 --> 00:10:04,620
+Örneğin şu şekilde gösterelim. Önce ödev 1, alt çizgi, at, soyat, alt çizgi, no, nokta, pdf şekline getirirseniz daha iyi olur.
+
+22
+00:10:05,220 --> 00:10:11,720
+Büyük ihtimalle bunları toplu halde kaydederken isim değişikliği yapıyor ama siz yine de bu şekilde kaydedin arkadaşlar.
+
+23
+00:10:17,844 --> 00:10:45,304
+Tamamdır. Şimdi geçen hafta biraz daha yarı iletken fiziğini gördüğünüz için size ödev vermiştim. Onları hatırlamanız sağlamıştı. Sonuçta temelde yarı iletken içerisinde silisyum, germanyum, ondan sonra galyum, arsenit gibi malzemelerin içerisine belli miktarlarda bizim elektron sayısını arttırıcı
+
+24
+00:10:46,131 --> 00:11:03,111
+Dengedeki elektron sayısını arttıracak veya elektron sayısını azaltıp delik sayısını arttıracak artı ve eksi tipindeki iki tipte malzemeden bahsetmiştik. Bunlar N tipi ve P tipi materyaller olarak geçiyor.
+
+25
+00:11:03,111 --> 00:11:14,111
+Tabi bunların içerisine çok ufak miktarlarda değişik atomlar eklenildiğinde bu N tipi ve P tipi malzemelerden yararlılıyor.
+
+26
+00:11:14,131 --> 00:11:28,192
+Kararlanıyorduk, buluyorduk. P tipi malzemelerinin özelliği neydi? Bizim artı kısmımız daha yüksek oluyordu. Öbürkünde ise elektronlarda.
+
+27
+00:11:28,672 --> 00:11:40,812
+Elektron sayısı arttığı için elektron sayısı fazlalıyordu. N tipi malzeme de bizim materyallerimizin oluşturacağımız materyallerin eksi yüklü olmasını sağlıyordu.
+
+28
+00:11:40,812 --> 00:11:55,711
+Şimdi bunların junction dediği eklemleme arkadaşlar. P tipi ve N tipi malzemeyi birbirine yapıştırdığımızda arada bir depletion.
+
+29
+00:11:58,580 --> 00:12:12,220
+Depletion Region oluşuyor arkadaşlar. Bu Depletion Region sonuçta bir denge safhasına geliyor. Bu Depletion'u ne diye çevirebiliriz arkadaşlar Türkçe'ye? Bakalım.
+
+30
+00:12:12,900 --> 00:12:23,220
+Depletion Region'in tükenme bölgesi olarak diye geçiyor. Tükenme bölgesi.
+
+31
+00:12:25,716 --> 00:12:37,895
+Aslında burada tükenen ne? Bizim malzemelerimizde eksiler artıya doğru çekildiği için ve artılar eksiye doğru çekildi. Pardon artılar bizim burada.
+
+32
+00:12:40,563 --> 00:12:53,943
+En tipi malzemede eksiler artıları ittiği için diyelim. Burada da eksiler çoğalacağı için böyle bir tükenme bölgesi. Tükenmeyi burada neden kastediyorlar? Bir denge.
+
+33
+00:12:56,148 --> 00:13:14,807
+Bölgesi aslında. Tükenme derken artı tipi malzemeler biraz daha buraya mı kayıyor? O manada mı söylüyorlar acaba? Eksiler artları itiyor. Buradaki artlar da eksileri itiyor. Böylece bir geçiş bölgesi diyelim biz buna. Geçiş bölgesi oluşuyor.
+
+34
+00:13:20,500 --> 00:13:43,500
+Şimdi burada onun açıklamasını yapmış. Elektron Migration Result Sine Negative Charge on P-type demiş. Özellikle burada hani tükenme derken, Migration manasında bir tükenme derken, P tipi malzemede negatif şarjların N tipi malzemeye yanaşması aynısının da N tipi malzemede de...
+
+35
+00:13:44,692 --> 00:13:55,971
+Pozitif tipli şarjların ise bu D-Reject'in bölgesinde buluşmasıyla beraber eksiler ve artıların birbirine çekmesiyle beraber D-Reject'in bölgesi oluşuyor.
+
+36
+00:13:57,471 --> 00:14:03,971
+Şimdi burada biraz daha güzel açıklamış bizim anlatmak istediğimizi.
+
+37
+00:14:05,192 --> 00:14:07,971
+P tipi yarı iletken malzemede arkadaşlar.
+
+38
+00:14:08,895 --> 00:14:30,395
+Bizim mobil pozitif şarjlarımız artı. Yani aslında bizim deliklerimiz. Delik dediğimiz şey elektronun eksik olduğu bölgeler diyelim. Aynı şekilde N tipi malzemette mobil negatif şarjlar yani akımın oluşması sağlayacak negatif yani elektron fazlalığı bölgeleri oluşuyor.
+
+39
+00:14:32,596 --> 00:14:46,115
+Dipsyon Regin demiş, aynı zamanda uzay şarj katmanı olarak da adlandırılıyor burası. Bunlar birbirine eklemlendiğinde şu şekilde bir bölge oluşuyor.
+
+40
+00:14:50,803 --> 00:14:57,483
+Büyük olarak negatif şarjı gösterirken pozitifler pozitif şarjı gösteriyor.
+
+41
+00:14:57,623 --> 00:15:04,583
+Şimdi potansiyel de bunun arkadaşlar nesi? Bunların integral şeklinde tanımlanıyor.
+
+42
+00:15:05,303 --> 00:15:12,083
+Negatiften ondan sonra pozitife doğru bir potansiyel bariyeri oluşmuş oluyor.
+
+43
+00:15:12,596 --> 00:15:24,996
+Potansiyel bariyeri dediğimiz, yani bizim buradaki N tipi malzememizin olduğu yerdeki potansiyel yüksek ve N diyelim buraya.
+
+44
+00:15:25,676 --> 00:15:31,056
+Potansiyel olarak P tipi malzememizin potansiyeli ise düşük.
+
+45
+00:15:31,836 --> 00:15:34,736
+Peki bizim akım yönümüz ne tarafa doğru olacak?
+
+46
+00:15:35,336 --> 00:15:38,696
+Soldan sağa doğru olacak. Bunu akıldan çıkarmıyorum şimdilik.
+
+47
+00:15:39,860 --> 00:15:52,120
+Şimdi Forward BIAS dediğimizde arkadaşlar, Forward BIAS şurada daha güzel açıklanmış. Şöyle bakalım. Şöyle biraz silelim bunları.
+
+48
+00:15:57,043 --> 00:16:20,543
+Bizim önce göreceğimiz kısım şu. Isolated Junction yani herhangi bir gerilim falan bağlanmamış. Boştaki halimde nedir? Benim belli bir potansiyel bariyerim duruyor. Sabit. Oluşan Depletion Region'dan dolayı. Şuralarda artılar.
+
+49
+00:16:21,135 --> 00:16:30,696
+Şuralarda, pardon buralarda artılar, buralarda eksiler. Şöyle bir potansiyel bölge, diplikin rejim boyunca oluşuyor.
+
+50
+00:16:30,696 --> 00:16:43,475
+Şimdi benim dışarıdan vereceğim beslemelerle beraber, ben bunu artık iletime geçirmeye çalışacağım.
+
+51
+00:16:48,467 --> 00:17:05,508
+Bu elektronların akmasına müsaade edip akımın akmasını sağlayacağım. Şu yukarıda bir ok şeklinde göstermiş ama bunu açıkça yapacak olursam sizin anlayacağınız şekilde aslında böyle bir doğru akım kaynağı bağlanmış.
+
+52
+00:17:05,508 --> 00:17:14,508
+Böyle olunca arkadaşlar benim buradaki dikkat edin bu ara bölgede burada artılar çoktu.
+
+53
+00:17:15,119 --> 00:17:36,539
+Burada eksiler çoktu. Bu potansiyel bölgenin artı verdiğimiz zaman bu bölgenin daraldığını görüyoruz. Neden? Ben buradan elektron yolladığımda buradaki artı yüklerin bölgesi azalacak. Dolayısıyla benim o şarjlarımın dengesi azalıp potansiyel miktarı azalacak.
+
+54
+00:17:42,847 --> 00:18:09,748
+Akmasına neden olup devreden akım akmaya başlayacak. Şu yönde. Tam tersi yapıldığında ise yani reverse bias dediği, burada forward bias dediği aslında pozitif. Yani çalışmasını istediğimiz yönde beslemeyi yaptığımız. Reverse bias ise çalışmasını engelleyeceğimiz, yani diyot şu şekildeydi. Bu diyot nasıl çalışıyordu normalde?
+
+55
+00:18:11,251 --> 00:18:24,991
+Ben artı tarafa, burası eks tarafıydı. Pozitif bir güç bağışları verdiğimde ondan sonra akım akıtmaya başladı. Buralarda devre elemanları var gibi. Reverse Bias dediğimde tam tersi.
+
+56
+00:18:25,471 --> 00:18:40,152
+Artı yönüne eksi bağlı. Mavi ile çizdiğim bu sefer oluyor. Bu sefer akım geçirmemesi lazım. Burada ne oluyor arkadaşlar? Eksileri verdiğim zaman eksiler eksileri içeceği için buradaki bölge iyice genişliyor. Öyle değil mi?
+
+57
+00:18:40,627 --> 00:19:04,248
+İyice buradan genişliyor. Eksi yükü verdim. Burada artılar iyice yoğunlaşıyor. Burada ise tam tersine artılar iyice yoğunlaşıyor. Bu bölge depletion region genişliyor. Dolayısıyla genişlediği için buradaki potansiyel fark yukarı doğru çıkmış oluyor.
+
+58
+00:19:09,268 --> 00:19:27,708
+Biraz daha burada PN jönksiyonlarında bir hesap var burada. Çeşitli Boltzmann sabitleriyle, ondan sonra sıcaklık değerliyle, malzemenin tipine göre çeşitli atomik bir hesaplama, geçiş hesabı var burada. Onu çok fazla girmeyeceğim ben.
+
+59
+00:19:28,208 --> 00:19:29,588
+Hocam bir şey sorabilir miyim?
+
+60
+00:19:30,148 --> 00:19:30,668
+Tabii ki.
+
+61
+00:19:31,188 --> 00:19:35,068
+Hesaplamaya girmeden önce yukarı çıkar mısınız az önce anlattığınız kısmı?
+
+62
+00:19:35,068 --> 00:19:36,068
+Evet.
+
+63
+00:19:36,884 --> 00:19:50,324
+Bu diyotun potansiyelinin düşmesiyle akım aktarıyor dediniz ya. Bu diyot ne zamana kadar çalışır? Ne zaman tükenir? Böyle bir şey varmıyor da.
+
+64
+00:19:50,443 --> 00:19:53,943
+Tükenir derken tam o hakkını anlatmak istedim. Onu biraz açar mısın?
+
+65
+00:19:54,703 --> 00:19:58,003
+Şimdi ben bu diyotu bir pil gibi düşünürsem.
+
+66
+00:19:58,003 --> 00:19:59,963
+Diyot peki değil, enerji.
+
+67
+00:20:00,000 --> 00:20:09,440
+İç direnci kaynağı değil. Sadece potansiyelin düşmesiyle beraber iç direnci düşüp akımın geçmesine izin veren bir eleman gibi düşün.
+
+68
+00:20:09,440 --> 00:20:19,900
+Yani hatırlarsam biz diyotu tanımlarken ne demiştik? Eğer artı eksi ideal haline burasına belli bir gerilim verirsen demiştik kısa devre gibi davranıyor.
+
+69
+00:20:26,067 --> 00:20:46,807
+A ve B uçları diyelim. Kısa devre gibi oluyor. Eğer sen burada artı eksi şeklinde pozitif yönde beslersen tam tersini yaptın diyelim. Burada bir negatif besleme yaptın diyelim. Bu zamanda VA, VB'den küçük olacağı için bir açık devre gibi davranacak demiştik hatırlarsan.
+
+70
+00:20:48,027 --> 00:20:51,807
+VA, VB diyelim açık devre gibi davranacaktır.
+
+71
+00:20:53,364 --> 00:21:02,683
+Anladım. O zaman dışarıdan fiziksel bir etki olmadığı sürece diyot çok kullanıldığında bozulacak veya tükenecek bir eleman değil.
+
+72
+00:21:03,023 --> 00:21:03,903
+Değil, değil, değil.
+
+73
+00:21:04,264 --> 00:21:05,624
+Tamam, teşekkür ederim.
+
+74
+00:21:06,324 --> 00:21:07,764
+Şöyle yapalım.
+
+75
+00:21:08,500 --> 00:21:35,160
+Burası da A ve B diyelim. Yani bir açıp kapanma elemanı olarak değil de aslında biz bir potansiyeli örneğiz. Tabii ki yarı iletkenlerin de her malzeme gibi belli bir ömürleri var ama bunlar genellikle uzun ömürlü. Yani sonuçta siz şu bilgisayarlarınızı, laptoplarınızı kullanıyorsunuz. Bunların içerisinde koruma elemanları, diyotlar var, transistörler var. Bunlar çok dayanıklı elemanlar. Ne zaman bozuluyorlar?
+
+76
+00:21:35,503 --> 00:21:48,584
+Daha çok çalışma sınırlarının dışında gerilimlerle karşılaşıp fiziksel yapıları bozulmaya başladığında yani yanma diyoruz ya elektronik elemanların yanması o zaman bozulmaya başlıyorlar.
+
+77
+00:21:52,403 --> 00:22:10,224
+Peki biz burada bir şeyden bahsettik. Sonuçta hani deminki örnekte gördüğümüz gibi burada bir denge hali vardı. Benim ana taşıyıcım, şurada gördüğün gibi elektron taşıyıcım var ama benim miktarda geri akım da akıyor.
+
+78
+00:22:20,016 --> 00:22:34,256
+Şimdi benim burada bu doyma akımları dediğim kısımlar da hesaba katıldığında basitçe ideal diyot arkadaşlar nasıl çiziyordum ben? Şöyle çizeyim.
+
+79
+00:22:34,256 --> 00:22:44,375
+Bu diyotun A ve B uçları arasında şöyle VAB veya B diyot diyeyim.
+
+80
+00:22:45,172 --> 00:23:09,091
+Ne eşit bu? V-A-V-B diye eşit. Eğer bunun beslemesini yaptığımızda biz bunun beslemesini yaptığımızda şöyle. Eğer idealinde nasıl gösteriyorduk arkadaşlar? Şunu da ıdiyot diyelim akan akıma. Şurası ıd, şurası da vd grafiği olsun.
+
+81
+00:23:12,243 --> 00:23:26,823
+Eğer negatif gelip VD negatifse herhangi bir akım akmıyordu. Onu şöyle gösteriyorduk. Ondan sonra diyotun üstünde V diyot, VAVB'den epsilon kadar büyük olduğunda
+
+82
+00:23:27,539 --> 00:23:35,579
+Ne demiştik? Akım akmaya başlar demiştik. Epsilon'du bu ama yapışık gibi çözüyorduk orada.
+
+83
+00:23:35,579 --> 00:23:47,679
+Şimdi gerçekte ise, ideal bir tanımın haricinde gerçekte ise benim belli bir potansiyel bariyer demiştik ya şurada arkadaşlar.
+
+84
+00:23:48,399 --> 00:23:54,379
+Şu potansiyel bariyeri aşabilecek kadar bir gerilimi öncelikli olarak vermem.
+
+85
+00:23:55,539 --> 00:24:03,159
+Bu üzerinde akımı akıtmam gerektiğini gerçek hesaplarda görüyoruz. Onu da şöyle göstermiştik. Şöyle sileyim.
+
+86
+00:24:06,379 --> 00:24:14,539
+Şimdi bu tabii malzemenin tipine göre yani o oluşan hani P ve N jonksiyonunda oluşan şu Depletion Region'ın
+
+87
+00:24:15,796 --> 00:24:30,796
+Şurası artı, şurası eksi, burası P tipi, burası N tipi. Şimdi bu kullanılan malzemenin tipine göre bu Diffleation Region'ın genişliği ve potansiyeli değişiyor. Silisyum'da yaklaşık arkadaşlar...
+
+88
+00:24:31,604 --> 00:24:49,084
+0.7 Volt'tan itibaren yani diyota uygulayacağınız 0.7'den itibaren ideal gibi değil de yani bu ideal aslında biraz daha potansiyeli yenebilecek gibi şöyle yukarı çıkıyor. Bu da epsilon değil de 0.7 Volt silisyum için.
+
+89
+00:24:49,652 --> 00:25:10,852
+Germanyum için 0.3, öbürki için galimarişin 1.3'tü yanlış hatırlamıyorsam gibi bir depression regionu yenmesi gerekiyor. Anca bu potansiyeli yenebilecek şeyi verdikten sonra, gerilimi verdikten sonra akım akıtmaya başlıyor. Hesaplarımızda bu yer alacak şimdi bizim.
+
+90
+00:25:15,599 --> 00:25:40,079
+Çalışma İşletim Koşulları 3 tane konum göreceğiz. Öncelikle No-Bias dediğimizde herhangi bir gerilim uygulanmıyor. Diyota herhangi bir gerilim uygulanmıyor. Bu durumda üzerinden herhangi bir akım ID eşittir 0 mA. Diyota bir şey bağlamazsınız. Boşta duran diyottan ne akım akar ne şey akar gibi düşünebilirsiniz.
+
+91
+00:25:41,844 --> 00:26:04,504
+Reverse Bias dediğimizde ise, yani bakın burada daha güzel göstermiş. Burada bir negatif. Burası P tipi malzemeydi hatırlarsanız. Burası N tipi malzemeydi. Ters gerilim bağlamışız. Yani aslında olan şu. Şöyle. Bunu böyle bağlayayım. Olan bu. Yani artı kısmına diyotun.
+
+92
+00:26:04,948 --> 00:26:29,628
+Eksi gerilim bağlamışız. Diptation Region'a giderek ne olmuş arkadaşlar? Büyümüş. Büyüyünce potansiyel de iyice büyüyecek. Dolayısıyla sadece ters yönde azınlık taşıyıcısı akım oluyor. Majority akımı yani bu tarafa doğru olan akım potansiyeli geçemediği için sıfır seviyesinde.
+
+93
+00:26:30,771 --> 00:26:34,731
+Dolayısıyla sadece geri yönlü ufak bir akım akıyor diyelim.
+
+94
+00:26:38,099 --> 00:26:48,679
+Şimdi buradaki depletion region'a bakın. Ne demiş burada? Ters gerilimleme depletion region'ın genişlemesine neden olur.
+
+95
+00:26:51,319 --> 00:27:01,059
+Şimdi buradaki ne diyor? N tipi malzemedeki elektronlar yani buradaki materyaller ne yapar diyor?
+
+96
+00:27:06,067 --> 00:27:14,788
+Geçip buraya doğru çekildiği için, buradaki artılar da buraya doğru çekildiği için bu bölgeyi genişler diyor aynı şekilde.
+
+97
+00:27:16,627 --> 00:27:27,627
+Tam tersini düşünelim. Şimdi ben burada pozitif, buradan ne verdim artını? Pozitif verdim. Benim P tipi malzemelerim artık ne almaya başlayacak?
+
+98
+00:27:27,627 --> 00:27:33,048
+Buradan artı gelimi verdiğim zaman bu Deployation Region'ı ne yapacak?
+
+99
+00:27:33,460 --> 00:27:58,519
+Daraltmaya başlayacak. Ne diyor? Forward Voltage, yani Forward Voltage dediği, yani bunu çalışmaya yönlendiren gerilim. Şu şekilde bağladığımızda. Bakın, Depletion Region aslında daralıyor. Dolayısıyla pozitif yönde veya Forward gerilinleme, Depletion Region'ın daralmasına neden oluyor.
+
+100
+00:27:59,347 --> 00:28:14,407
+Elektronlar ve delikler Pn jonksiyonuna doğru dengeleniyor. Bu bölge nasıl yapılıyor? Eskisinde ne vardı? Artılar vardı burada. Burada artı bölgeler daha genişti.
+
+101
+00:28:14,407 --> 00:28:26,048
+Eksiler verince buradaki eksiler artıları kapatıp burası daralmaya başladı. Burada da tam tersi oldu. Eksiler buradaki artılarla dengelendi. Jonksiyona doğru itilmiş oldular.
+
+102
+00:28:27,380 --> 00:28:37,880
+Dolayısıyla benim artık majörite taşıyıcılarım buradaki potansiyel azaldığı için daha rahat geçebilir hale geldiler.
+
+103
+00:28:41,940 --> 00:29:01,519
+Gerçekteki olan diyot karakteristiği. Normalde biz bunu burada sıfır çizmiştik. İdeal hali buydu değil mi? Epsilon kadar şey yaptığımızda yukarı doğru gidiyordu. Daha sonra dedik ki 0.7 volttan itibaren bu biraz böyle hızlıca yukarı doğru çıkmaya başlar demiştik. Gerçekteki çizimi buymuş.
+
+104
+00:29:01,519 --> 00:29:09,400
+Ters beslenmede IS denilen mikroamperler seviyesinde çok düşük bir akım geriye doğru gidiyormuş.
+
+105
+00:29:11,667 --> 00:29:38,607
+Evet, bu bizim neyimiz arkadaşlar? Normal diyotumuz. Normal diyotumuz. Yani şu şekilde aslında bir akımın geçmesi için kurulmuş düzenekte yolu açıp kapayan bir anahtar gibi düşünebiliriz.
+
+106
+00:29:39,988 --> 00:29:47,428
+Şimdi, peki ben bu diyotu şu şekilde bağlasam.
+
+107
+00:29:47,428 --> 00:29:52,087
+Yani, şu diyotu şu şekilde bağlasam.
+
+108
+00:29:55,443 --> 00:30:19,443
+Normalde bunun geçirmemesi lazım. Öyle değil mi? Geçirmemesi lazım. Ama ben gerilimi arttırdıkça, V'yi arttırdıkça belli bir noktadan sonra demin görmüş olduğunuz IS taşıyıcı şeyi kırılıp belli bir miktardan sonra eksi gerilimleme yaptığımda belli bir noktadan sonra kırılıyor ve akım IS miktarı...
+
+109
+00:30:19,667 --> 00:30:27,667
+Birden çığ gibi o voltajla geçip akıtmaya başlıyor. Bu ise farklı bir diyot tipine neden oluyor.
+
+110
+00:30:27,667 --> 00:30:35,487
+Zener bölgesi denilen diyotun normalde biz sadece şurayı inceliyorduk. Şöyle şurayı görüyorduk.
+
+111
+00:30:36,027 --> 00:30:43,367
+Ama diyota ters yönde bir gerilim uyguladığımızda yani normalde diyotumuz şu şekildeydi.
+
+112
+00:30:43,923 --> 00:30:56,403
+Eksi uyguladık diyelim şöyle. Eksideki miktarı arttırdık diyelim. Bakın şurada eksideki miktarı arttırdık. En sonunda ters yönde bir akım akmaya başlıyor. Bu şekilde.
+
+113
+00:30:57,124 --> 00:31:08,423
+Şimdi bunun adı çalıştığımız bölgenin adı Zener bölgesi olarak geçiyor. Ve bu kırıldığı yerin adı Zener gerilimi olarak geçiyor.
+
+114
+00:31:11,892 --> 00:31:26,072
+Tersteki belli bir gerilimden sonra Peak Reverse Voltage deniyor buna. Zener Voltage'ına ulaştığı zaman akım akıttığı bir bölge var. Buradan da farklı bir zener türü oluşturuluyor.
+
+115
+00:31:26,072 --> 00:31:37,112
+Bu da üzerine belli bir gerilim düştüğünde, tabi bu tersten bağlanıyor, belli bir gerilim düştüğünde akım akıtmasını sağlayacak.
+
+116
+00:31:38,228 --> 00:32:02,327
+Diyot tipi oluşturuluyor. Zener tipi. Mesela burada sabitiz değil mi biz 0.7'de hep akıtmaya başlıyoruz. Ama malzemenin tipi değiştirilerek bu VZ sağa sola oynatırılarak kullanılan malzeme tipine göre örneğin eksi 5 voltta, eksi 10 voltta, eksi 12 voltta akım akıtacak.
+
+117
+00:32:02,932 --> 00:32:07,491
+Karakteristiğe sahip diyotlar oluşturulabiliyor arkadaşlar.
+
+118
+00:32:09,231 --> 00:32:15,511
+Şimdi, demin bahsetmiştim. Bu bizim potansiyeli geçme gerilimimiz.
+
+119
+00:32:16,011 --> 00:32:25,491
+Silikonda 0.7, Germanyum'da 0.3, Galyum Arsenik diyotta ise 1.2 volt civarındaymış arkadaşlar.
+
+120
+00:32:27,491 --> 00:32:28,011
+Şimdi,
+
+121
+00:32:30,963 --> 00:32:43,124
+Burada çeşitli ısının etkileri. Mesela sıcaklık altında Tiot'a enerji verir diyor.
+
+122
+00:32:45,923 --> 00:32:52,403
+It Reduce to Recait Forward Bias Foto. Gerekli olan forward.
+
+123
+00:32:52,627 --> 00:33:18,167
+Potansiyeli geçme voltajını düşürür. 0.7'yi düşürür diyor. Dolayısıyla bizim stabil devrelerde çalışmamızı engelleyecek bir davranışa girer diyor. Resistance Level'lar var diyor. Sonuçta bu bir devre elemanı. Bunun bir iç direnci var bununla beraber. Kendine ait bir iç direnci var.
+
+124
+00:33:20,288 --> 00:33:36,667
+Bunu DC'de ve de AC'de ayrı ayrı hesaplıyorlar. Bu da tabii ki elimizde akım, gerilim grafiği olduğu için belli bir noktada yani şu iletim anındaki direncini hesaplamamız mümkün.
+
+125
+00:33:43,700 --> 00:33:57,379
+Eğimi bulduğunuz zaman, E-VD, E-D dediğiniz zaman buradaki eğimi bulmuş oluyoruz.
+
+126
+00:33:59,763 --> 00:34:23,583
+Eğimin tersi diyelim daha doğrusu. Çünkü burada noktalar bazında düşünüyoruz. A ve B noktası diyelim mesela şurasını şurasını. Buradan iç direnci bulmuş oluyoruz. Tabi bu DC'deki hali. Bunun AC'deki halini bulabilmek için de ekstra hesaplar yapmamız gerekiyor.
+
+127
+00:34:24,659 --> 00:34:30,859
+Burada sıcaklığa bağlı, ondan sonra geçiş seviyelerindeki şeylere bağlı çeşitli hesaplar var.
+
+128
+00:34:31,699 --> 00:34:37,480
+Ama genel olarak Reverse Bias Region'da genellikle direncin yüksek olduğunu söyleniyor.
+
+129
+00:34:37,480 --> 00:34:39,579
+Yani şunu söylemeye çalışıyor.
+
+130
+00:34:41,331 --> 00:35:03,251
+Şu şekilde beslersem bunun karşılığı neydi? Akım geçirmemesiydi. Akım geçirmemesi için bunun açık devresi olması lazımdı. Açık devre ne demek aslında bir tel üzerinde düşündüğümüzde? Burada hava var diyelim değil mi? Bu havanın özelliği ne? Direncinin sonsuz olması.
+
+131
+00:35:03,860 --> 00:35:11,160
+Eğer burası kısa devre ise bu direncin diline R sıfıra yakın. Yani direncinin olmaması demektir.
+
+132
+00:35:11,160 --> 00:35:19,740
+Demek ki gerçekte sonsuz olmayacağına göre R çok yüksek bir değerde akım akıtmıyor diye düşünebiliriz.
+
+133
+00:35:21,260 --> 00:35:28,220
+Şimdi diyotun eşdeğer devresini çizecek olursak.
+
+134
+00:35:30,420 --> 00:35:48,199
+Diyot şu şekilde bir tarafına siyah bir çubuk koyar, böyle halka çizerler. Bu şu demektir. Benim eksi yönümü, eksi yönünü, şu halkının olduğu yön, eksi yönünü, diğer yön ise artı yönünü gösterir.
+
+135
+00:35:48,980 --> 00:35:53,920
+Şimdi biz sadece diyotu bu şekilde çirmişiz. Bu sadece ideal diyot.
+
+136
+00:35:54,483 --> 00:36:21,663
+Oysa gerçekleştirecek olursak bir ideal diyot kısım var. Yani şöyle çalışan. Daha sonra biz buna ne eklemiştik? Bu böyle değildir demiştik. Şöyle 0.7'de bariyer gerilimini açması lazım demiştik. O bariyer gerilimini de ekleyelim buna. Bir de bunun iç direnci vardı. Bu iç direncini de ekledikten sonra.
+
+137
+00:36:22,931 --> 00:36:28,251
+diyotun eş devresini aslında bu şekilde çizmemiz gerekiyor.
+
+138
+00:36:30,311 --> 00:36:43,152
+Evet, şurada diyot sembolleri ve paket dediğimiz fiziksel halde kullanılır seviyeye getirildiği hal gösteriyoruz.
+
+139
+00:36:43,152 --> 00:36:48,152
+Normalde devre üzerinde çizecek olursak şunu aslında gösteriyoruz.
+
+140
+00:36:48,659 --> 00:36:57,380
+Biliyoruz ki biz gerçekte bunun. Üst taraf anot, P tipi malzemeden, alt tipi ise katot, X tipi malzemeden oluşuyor.
+
+141
+00:36:58,291 --> 00:37:26,072
+Birkaç tane çeşit var. Güç uygulamalarında, düşük akımlı devrelerde kullanılan halde baktığımızda şöyle Huni şeklinde, bir ucu kesip Huni şeklinde yapılan var. Demin size gösterdiğim bir tarafı eksi halkası gösterilir. Silindir şeklinde tanımlanan var. Bir de büyük güç uygulamalarında, büyük akımlarda çalışabilsin diye kullanılan diyot tipleri var. Bir de arkadaşlar.
+
+142
+00:37:26,291 --> 00:37:41,751
+Yüzeye montaj dediğimiz, hani şöyle PCB denilen elektronik kartla üzerinde çıkan yolları bu şekilde kurşunla kaparlan, yüzey montajıyla konumlandırabilecek düşük akımlardaki diyotikleri de var arkadaşlar.
+
+143
+00:37:46,195 --> 00:37:57,395
+Evet, şimdi eğer elinizde bir direnç ölçer yani 10 metre varsa bir diyotun çalıştığını nasıl ölçebilirsiniz mesela?
+
+144
+00:37:57,395 --> 00:38:10,996
+Şimdi burada artısına yani burada direnç ölçer konumuna getirdikten sonra artı kısmına pozitif kısmı, eksi kısmına negatif kısmını.
+
+145
+00:38:11,507 --> 00:38:25,487
+Dayadığımızda burada düşük, genel olarak artı kısmı ile eksi kısım arasında düşük gerilim vermesi lazım. Eğer yüksek veriyorsa demek ki onun iç yapısı bozulmuş demektir.
+
+146
+00:38:25,487 --> 00:38:35,108
+Tam tersine 10 metrenin kırmızı ucunu yani pozitif olarak 1 metrenin kendi kırmızı ucunu bunun eksi ucuna koyduğumuzda
+
+147
+00:38:35,539 --> 00:38:50,180
+Black yani ortak ucunu veya eksi ucunu da negatife koyduğunuzda yüksek bir direnç çıkıyorsa demek ki bu iki taraflı kontrol ile biyotun bozuk olup olmadığını ölçebilirsiniz arkadaşlar.
+
+148
+00:39:02,228 --> 00:39:20,148
+Akım grafiğini çizen Curb Tracer'ler var. Farklı gelinler uygulayarak elektronik elemanlara bunun almış olduğu akım değerlerini nokta nokta bastırıp nasıl bir karakter isteği var. Bunu görebildiğiniz çeşitli kontrol edici devreler var.
+
+149
+00:39:21,168 --> 00:39:28,587
+Şimdi diğer diyot çeşitleri ne demiştim? Diyotların tipi. Bir normal kullanımlık diye atlar. Şuraya normal.
+
+150
+00:39:28,851 --> 00:39:56,851
+Diyotlar diyeyim. Bu bir. İki zener diyot. Ters yönlü olarak, ters kutuplama olarak kullanan diyotlar. Üç, hepimizin çok bildiği ışık yayan diyotlar diyeyim. Ne yani? LED. Bugün bizim telefonlarımızda, bilgisayarlarımızda, televizyonlarda kullandığımız yapı da bu. Aslında yine bir diyot ama ışık yayan diyot bu. Üzerinden akım aktığı anda belirli dalga boylarında ışıklar yayan.
+
+151
+00:39:56,851 --> 00:40:04,711
+Bu yaymış olduğu dalga boyları da R, G, B şeklinde iyi bir şekilde ayarlanırsa
+
+152
+00:40:05,172 --> 00:40:31,911
+Ne olmuş oluyor? Hücreler içerisinde kırmızı, yeşil ve mavi ışıkların çıkmasını sağlıyoruz. Dolayısıyla renkli bir görüntü oluşturmak için pikselleri, her bir noktasında bir pikseli oluşturabildiğiniz yapıları görüyoruz. Bunlar ne kadar sık ve dar alanda basılabilirse bu PN'in jonksiyonları o kadar yüksek çözünürlüklü LED dizileri elde etmiş oluyoruz.
+
+153
+00:40:33,172 --> 00:40:43,512
+Kullanımımızı görsel olarak pikseli çok görmememizi sağlıyor. Ne kadar bilim alanda çoksa o kadar iyi diyelim arkadaşlar.
+
+154
+00:40:46,331 --> 00:40:55,512
+Evet, diyot dizileri de 4. Burada diyot dizileri çok dizi, eğer diyot kullanılacaksa şayet bunlar da...
+
+155
+00:40:57,972 --> 00:41:06,092
+Devrede şöyle aynı, geçen dönem görmüştünüz ya, şeyde, lojik dersinde.
+
+156
+00:41:06,632 --> 00:41:09,271
+Bunu da bir şeyin içerisine koyuyorlar böyle.
+
+157
+00:41:10,172 --> 00:41:11,172
+Dizi şeklinde.
+
+158
+00:41:12,092 --> 00:41:21,032
+Çokça kullanılacaksa bir devre içerisinde, şöyle bacaklarını da şöyle delikli bir şekilde dışarı çıkarıyorlar.
+
+159
+00:41:21,211 --> 00:41:24,852
+Bir içerisinde 8-16'lı yapılarda bunları kullanabiliyorsunuz.
+
+160
+00:41:26,483 --> 00:41:52,624
+Şimdi zener diyottan bahsetmiştik geçen. Normalde diyotumuz nasıl kullanılıyor bizim? Şu şekilde pozitif beslemeyle beraber akım geçiriyor. Ne demiştik zener diyotunun tersine? Şöyle zener bölgesinden bahsederken negatif yönde yani benim burada negatif gelin uyguladığımda belli bir noktadan sonra akım akıtır demiştim.
+
+161
+00:41:53,268 --> 00:42:16,147
+Dolayısıyla burada eksili V'de eksili gerilimlerde kullanılıyor. Bunu belli bir normalde 0.7'den başlıyor. Ben diyorum ki bir diyotum olsun ama üzerine belli bir gerilim uyguladığımda o gerilim daha artsın. Örneğin 1.8, 3.6, 5 volt, 12 volt gibi.
+
+162
+00:42:16,916 --> 00:42:21,516
+Bu durumda zener diyotlar kullanmaya başlıyor. Zener diyotlarının arkadaşlar,
+
+163
+00:42:21,516 --> 00:42:27,216
+gösteriminde şöyle uçları kırılmış bir şekilde gösteriliyor.
+
+164
+00:42:27,216 --> 00:42:33,316
+Ve de normal diyota ters bağlıymış gibi bir kullanımı var.
+
+165
+00:42:33,316 --> 00:42:37,916
+Yani artı yönü bizim normal eksi yön olduğu tarafta.
+
+166
+00:42:38,324 --> 00:43:00,744
+Eksi yönü de artı yönün olduğu tarafta. Niye? Çünkü ters bölgede çalışıyor buradaki. Akım yönü de arttan yükseğe değil, zener, ızede kullanıyor. Yani şuradaki akımın hızlıca boşalması kısmından yararlanıyoruz. Ters bağlıyoruz. Diyotun tersi gibi çalışma başlıyor. Farkı ne?
+
+167
+00:43:01,364 --> 00:43:18,624
+Şuradaki kırıldığı gerilimi malzeme tipine göre sağa sola oynatarak istediğimiz gerilimde akımın hızlıca akmasını sağlıyoruz. Yani açık devreye haline gidiyoruz. Yani öyle bir zener kullanıyoruz ki mesela şöyle kullandığımızda şöyle.
+
+168
+00:43:18,624 --> 00:43:21,784
+Şöyle.
+
+169
+00:43:23,523 --> 00:43:25,923
+Şöyle yapalım daha doğrusu.
+
+170
+00:43:29,460 --> 00:43:54,279
+Şöyle kullandığımızda, diyoruz ki, şöyle bir gelin uygulamaya başlıyoruz burada. Şurada direncimiz olsun. Eğer bunun üzerine, örneğin bu 1.8 voltluk üzeri. Bunun üzerine 1.8 volt geçtiği zaman, düştüğü zaman bu kısa devre gibi davranmaya, daha doğrusu üzerinden hızlıca akmak etmeye başlıyor.
+
+171
+00:43:56,596 --> 00:44:02,996
+Genellikle kullanılan zenerler 1.8 volt ile 200 volt arasında ayarlanabiliyormuş.
+
+172
+00:44:04,275 --> 00:44:07,596
+Ledler ise bildiğimiz standart kullanımda.
+
+173
+00:44:13,396 --> 00:44:18,076
+Normal diyotlar da zener diyot olarak kullanılabilir ama şöyle bir şey söyleyeyim.
+
+174
+00:44:18,076 --> 00:44:28,896
+Birinci kullanacağın diyotun şu ters yöndeki kırılmasıyla, ikinci bir diyot aldın, onun kırılması farklı yerlerde olabilir.
+
+175
+00:44:29,496 --> 00:44:33,196
+Onun malzeme tipine göre gerçekten iyi ayarlanması gerekiyor.
+
+176
+00:44:33,583 --> 00:44:44,643
+Dolayısıyla ters yönünü kullanıldığı için normal biyottan farklı kırılma gemilerin sabit olarak ayarlanabilmesi için biraz daha özel üretim gerekiyor. O yüzden farklı sembolü var.
+
+177
+00:44:48,148 --> 00:45:12,887
+Şimdi, diğer ise normal diyot gibi ama farkı ledler nasıl çalışıyor? Üzerinden akım geçtiği zaman bir ışık çıkarıyor. Dediğim gibi değişik dalga boylarında RGB'de kullanılıyor. Visible'de kullanılıyorsa örneğin 400 ile 700 nanometre arasında elektromanyetik dalga çıkarıyor. Yani görünür, göze görünür ışık çıkarıyor.
+
+178
+00:45:15,027 --> 00:45:23,227
+Yararlanıyoruz. Yani biz aslında iletime geçirdiğimizde bu malzemeden ışık elde etmiş oluyoruz arkadaşlar.
+
+179
+00:45:24,327 --> 00:45:28,407
+Demin de bahsetmiştim. Diyotlar çok kullanacaksa bir devrede aynı.
+
+180
+00:45:28,407 --> 00:45:37,187
+Çiplerde kullandığımız or, ent gibi elemanların haricinde bu şekilde bir kullanım yapabiliyoruz.
+
+181
+00:45:41,844 --> 00:45:49,884
+Pozitif tarafları ortak bir beslemeden sağlanıyorsa buna ortak amortlu.
+
+182
+00:45:50,384 --> 00:45:55,824
+Buraya başladığımız düşük potansiyel ile beraber buradan geçmeye başlayacak.
+
+183
+00:45:56,344 --> 00:45:59,824
+Eğer burası düşük potansiyel değilse buradan iletimi olmayacaktır.
+
+184
+00:46:00,179 --> 00:46:13,219
+Gibi düşünebilirsiniz. Veya negatif potansiyelleri ortak olabilir, toprağa bağlanabilir veya burada belli bir gerilim kaynağına bağlanabilir. Ortak anot ve ortak katotlu olmak üzere ikiye ayrılıyor arkadaşlar.
+
+185
+00:46:15,280 --> 00:46:20,340
+Sizlerin sormak istediği bir soru var mı arkadaşlar? Şu ana kadar kısımda.
+
+186
+00:46:23,539 --> 00:46:25,179
+Yoksa artık...
+
+187
+00:46:27,059 --> 00:46:48,539
+Bizim şu artık temelde elimizde diyotla alakalı neyimiz var bizim? Devre içerisinde kullanışın analizini yapmaya başlayacağız. Bunun için de artı eksi V diyot ve buradan geçen I diyot akımlarımız var.
+
+188
+00:46:48,539 --> 00:46:52,599
+Şimdi bu I diyot akımını ne yapıyoruz arkadaşlar?
+
+189
+00:46:54,675 --> 00:47:21,435
+ID, VD grafiği üzerinde. Buralarda devreler kuracağız artık. Şuralara da ekleyeceğiz falan böyle. Artık bunun standart eğrimizin neresinde çalıştığını bulacağımız Q point'imiz çalışma noktası olarak giriyor. Bunların analizine başlayacağız arkadaşlar.
+
+190
+00:47:22,132 --> 00:47:27,652
+Şimdi saat 3'e kadar bir ara verelim. Ondan sonra devam ederiz.
+
+191
+01:00:39,668 --> 01:00:42,248
+Merhabalar tekrar arkadaşlar. Sesim geliyor mu?
+
+192
+01:00:47,476 --> 01:01:01,476
+Tamamdır. Şimdi diyotun devre içerisindeki kullanımlarına, kullanımı kısımlarına geçeceğiz arkadaşlar. Burada öncelikli olarak...
+
+193
+01:01:02,804 --> 01:01:26,384
+Bu, Forward Bias dediğimiz ileri yönle bir gerilim kaynağı. Şuradaki E olarak görmüş olduğunuz aslında bir DC gerilim kaynağı. Bunu bir pil gibi de düşünebilirsiniz. Art ucu yukarıda yani şöyle bağlanmış gibi. Burası da negatif kısmı. Genellikle toprağa bağlanır. Buradan devre silisyum üzerinden geçerek.
+
+194
+01:01:26,800 --> 01:01:38,740
+Firenç üzerinden toprağa bağlanıyor diye düşünebilirsiniz. Burada 3V, 5V uyguladınız diyelim. Genel gösterilimi E-Volt uygulanmış şeklinde gözüküyor.
+
+195
+01:01:39,559 --> 01:01:49,019
+Diyot eğer ideal olarak verilmişse diyotun üstüne düşen gerilim sıfırdır ama silikon kullanılmışsa şayet.
+
+196
+01:01:49,300 --> 01:02:01,540
+Üzerinde iletim durumunda 0.7 volt düşer. Bu potansiyeli indirmek için kullanılan geldim. Germanyum ise şayet 0.3 volt düşer.
+
+197
+01:02:16,500 --> 01:02:22,379
+Ve direncin üzerinde düşen gerilim olarak kullanabiliyoruz.
+
+198
+01:02:22,379 --> 01:02:24,259
+Diyotumuz ne bizim burada?
+
+199
+01:02:24,940 --> 01:02:35,779
+Kullandığımız buradaki DC gerilim 0.7 volt artı buradan da ID geçiyor.
+
+200
+01:02:36,819 --> 01:02:38,179
+Burada da IR var.
+
+201
+01:02:38,996 --> 01:02:41,655
+Yani direncin üzerinden geçen akım.
+
+202
+01:02:42,115 --> 01:02:44,576
+Id eşittir. Tek koldan geçtiği için.
+
+203
+01:02:45,115 --> 01:02:46,196
+Id eşittir.
+
+204
+01:02:46,396 --> 01:02:46,675
+Ir.
+
+205
+01:02:48,115 --> 01:02:49,655
+Vr'ye ne diyebiliriz?
+
+206
+01:02:49,655 --> 01:02:52,016
+Vr burada.
+
+207
+01:02:53,256 --> 01:02:55,175
+Bunu tekrarlamayalım.
+
+208
+01:02:57,396 --> 01:03:05,996
+R çarpı ır veya r çarpı ıd şeklinde yazabiliriz arkadaşlar.
+
+209
+01:03:09,844 --> 01:03:33,443
+Şimdi burada reverse bias uygulamışsak şayet. Yani bizim burada kullandığımız E gerilimi. Eğer eksili bir gerilimse, örneğin 0.7 voltun altındaysa, örneğin 0.6 ve altında eksili gerilimlerse, bu durumda ne olacak silisyum diyot?
+
+210
+01:03:33,807 --> 01:03:52,507
+Üzerinden herhangi bir akım akmayacak. Öyle değil mi? Üzerinden herhangi bir akım akmayacak. Benim şu uçlarım sanki açıkmış gibi düşünebilirsiniz. Şöyle açıkmış gibi düşünebilirsiniz. Dolayısıyla VR'den akım akmayacağı için, buradan akım akmayacağı için...
+
+211
+01:03:52,512 --> 01:04:14,812
+I R sıfıra eşit olacak. Dolayısıyla V R sıfıra eşit olmuş olacak. I diyot zaten akmıyor. I R sıfırsa I D de sıfırdır. Buradaki gerilim tamamıyla ne uygulanmışsa artık? Eksi 3 volt, eksi 5 volt, 0.6 volt uygulanmışsa tamamıyla neyin üstüne düşüyor?
+
+212
+01:04:15,443 --> 01:04:36,344
+A ve B uçları arasına düşmüş oluyor. Onu da çalıştıramıyor. Bunun üzerinde örneğin artı, eksi ve E gerilimi oluşuyor. Tamamıyla akım akmadığı için bunların üzerinde duruyor. Ama onu çalıştırmadığı için açık devre gibi davranıyor.
+
+213
+01:04:39,059 --> 01:04:52,779
+Burada iki tane paralel diyot verilmiş. Bunun bir şeyini yapalım. Öncelikle bu devreden ne anlıyorum ben? Vd'yi biliyorum. 0.7 volt.
+
+214
+01:04:54,643 --> 01:05:10,763
+Değil mi? Silisyum diyot, diyot 1 ve diyot 2 ikisi de eğer akım geçiriyorsa ki geçirecek çünkü burada 10 volt var. Bir kısmı direncin üzerinde düşecek. Diğer geri kalanlar şu silisyum diyot üzerinde düşecek.
+
+215
+01:05:21,396 --> 01:05:28,336
+Şu uçların arasında yani A ve B uçlarında paralel uçlar arasında gerilimler birbirine eşittir.
+
+216
+01:05:29,416 --> 01:05:36,756
+VAB eşittir. V diyot 1 eşittir. V diyot 2. O da 0.7 volt.
+
+217
+01:05:37,696 --> 01:05:42,416
+Geriye kalan yani direncin üzerinde düşen gerilim ne olur bu durumda arkadaşlar?
+
+218
+01:05:47,860 --> 01:06:14,320
+Paralel diyotlardan VAB diyelim buraya da. Burası 0.7 voltlu. Burası 10 volt uygulanmış. VR buradan çekilebilir. VR bu durumda 9.3 volt uygulanmış oluyor. Bu durumda çıkmıyor.
+
+219
+01:06:14,804 --> 01:06:40,884
+Ne demiştik? Hemen diyotun eğrisine bakalım. İdeal olmayan diyotlar için şöyle akıyordu. Yani diyot, bakın burası VD ekseni. Belli bir noktadan sonra 0.7 volttan sonra üzerindeki gerilim artmıyor. Üzerinden akım akıtıyor. Yani 0.7 voltta vardığı zaman artık kısa devre gibi davrandığını düşüneceksin [öğrenci].
+
+220
+01:06:44,371 --> 01:06:58,011
+Şimdi buradan itibaren üzerinden yani I1, ID1 ve ID2 hesaplamamız isteniyor. Bu da basit bir hesaplama.
+
+221
+01:06:59,612 --> 01:07:10,971
+Öncelikli olarak şeyi düşünecek olursak, burası örneğin C ucu olsun. Şurası C ucu olsun.
+
+222
+01:07:11,572 --> 01:07:19,311
+Vc, mesela direncin üzerindeki gerilim şu şekilde hesaplanır.
+
+223
+01:07:21,311 --> 01:07:24,152
+Vc-Va'dır.
+
+224
+01:07:26,472 --> 01:07:30,311
+Şimdi, benim de Va gerilimim...
+
+225
+01:07:31,347 --> 01:07:43,387
+Ne arkadaşlar? Diyotun üstünde düşen gerilim. Çünkü öbür ucu toprağa bağlı olduğu için diyotun ucuyla aynı. Yani VA eşittir.
+
+226
+01:07:44,387 --> 01:07:52,987
+V diyota eşit. Çünkü benim diyotta ne eşittir? VA-VB'dir.
+
+227
+01:07:58,643 --> 01:08:20,703
+A'ya eşit. Dolayısıyla V A 0.7 volt. V C dediğimiz yer nereye eşit? O da E gerilimine eşit. Çünkü diğer ucu, şuradaki diğer uç toprağa bağlanmış. E-0.7 volt. Bu da direncin üzerinde düşen gerilim.
+
+228
+01:08:21,427 --> 01:08:27,147
+Ne demiştik? V, R'ye zaten bulmuştuk onu. 9.3 volt olarak bulmuştuk.
+
+229
+01:08:29,407 --> 01:08:32,688
+Peki, akımı nasıl buluruz burada?
+
+230
+01:08:34,367 --> 01:08:37,887
+E-VD, yani V, R aslında burası.
+
+231
+01:08:39,407 --> 01:08:43,147
+10-0.7 volt, burada 10 volt var V, C'de.
+
+232
+01:08:44,180 --> 01:08:48,239
+Şurada da 0.7 var. Çıkardığımızda bunun üzerine gelelim.
+
+233
+01:08:48,700 --> 01:08:53,280
+Böyle şu direncin kendisine bulacağım. V eşittir. I çarpı R hatırladığınız gibi.
+
+234
+01:08:54,360 --> 01:08:59,420
+Ne yapıyoruz burada? I'yi bulabilmek için yani I1'i bulabilmek için.
+
+235
+01:08:59,420 --> 01:09:08,420
+Aynı zamanda I1 neye eşit? I1, I R'ye eşit. 28 mA. Yani şu ana koldan geçen.
+
+236
+01:09:08,948 --> 01:09:27,007
+28 mA'miş. Bu 28 mA ne olacak arkadaşlar? İkiye bölünecek. Eşit bir biçimde özdeş diyotlar olduğu için. Özdeş olması önemli. Özdeş diyotlar olduğu için ikiye ayrılacak. 14 mA, 14 mA olarak ikiye ayrılmış olacak arkadaşlar.
+
+237
+01:09:29,148 --> 01:09:35,128
+Bu anlaşıldıysa diyotun farklı uygulamalarına geçmeye başlayacağım arkadaşlar.
+
+238
+01:09:39,315 --> 01:09:50,115
+Tamamdır. Yarım dalga doğrultucu. Yarım dalga doğrultucu.
+
+239
+01:09:52,935 --> 01:10:00,655
+Özellikle diyot şeylerde ilk baştaki derslerde bahsetmiştim arkadaşlar hatırlarsanız.
+
+240
+01:10:00,655 --> 01:10:05,655
+Şimdi bizim AC işaretlerimiz vardı hatırlarsanız.
+
+241
+01:10:06,068 --> 01:10:14,968
+Ve DC işaretlerimiz vardı. Onunla alakalı bir hatırlatma yapacağım şimdi. Oradan devam edelim.
+
+242
+01:10:17,048 --> 01:10:30,188
+Şimdi hatırlarsanız DC işaretler belli bir noktada, şöyle V diyelim, T diyelim, sabit gelinme alan.
+
+243
+01:10:31,764 --> 01:10:45,963
+Örneğin A olarak gösterin. Bu 5 volt olabilir, 3.3 olabilir, eksi 5 volt olabilir. Sabit ilerleyen gerilimler. Sinizoiden işaretlerimizse arkadaşlar, hatırladığınız gibi şu şekildeki işaretlerde.
+
+244
+01:10:45,963 --> 01:10:55,963
+Şimdi biz ne demiştik derste? Normalde prizlerimizden biz AC işaretler alıyorduk.
+
+245
+01:10:58,195 --> 01:11:06,195
+Ne demiştik orada bir örnek verirken sizin kullanmış olduğunuz elektronik cihazlar AC işaretle çalışmıyor.
+
+246
+01:11:06,195 --> 01:11:11,976
+DC işaretle çalışıyor demiştik. Örneğin bilgisayarınıza bağladığınız adaptörünüz.
+
+247
+01:11:12,416 --> 01:11:21,015
+Ondan sonra sizin şarj cihazlarınız alıyor. Ne yapıyor? 220 volt AC işareti alıyor.
+
+248
+01:11:21,655 --> 01:11:24,195
+19.3 volta düşürüyor.
+
+249
+01:11:25,104 --> 01:11:27,024
+DC şeklinde gösterilir.
+
+250
+01:11:27,943 --> 01:11:36,064
+Şimdi bunu yapabilmek için işte bu adaptörler veya şarj cihazları dediğimiz şeyler nasıl AC'den DC'ye dönüştürüyor.
+
+251
+01:11:36,064 --> 01:11:38,264
+En baştaki adımı şu arkadaşlar.
+
+252
+01:11:39,543 --> 01:11:44,463
+Şöyle bir dalga varsa şayet ilk başta adım adım şunları yapıyor.
+
+253
+01:11:44,623 --> 01:11:50,984
+Yarım dalga doğrultucular pozitif bölgeleri geçirip negatif bölgeleri geçirmiyor.
+
+254
+01:11:52,203 --> 01:11:52,664
+Önce.
+
+255
+01:11:53,587 --> 01:12:10,448
+Buna yarım dalga doğrultucu deniyor arkadaşlar. Tabi ne yapıyor? Buralarda boşluklar kalıyor. İkinci adım tam dalga doğrultucu. Buradaki negatif gerilimleri ise bu tarafa doğru. Ne yapılıyor? Evirmemiz gerekiyor.
+
+256
+01:12:10,931 --> 01:12:23,871
+Böylece daha sonra kapasiteler de kullanılarak bu tepe noktaları arasındaki boşalmaları, kapasitelerin üzerinde bunları olabildiğince düzeltmeye çalışıyoruz.
+
+257
+01:12:23,951 --> 01:12:29,072
+Şu dalgalı bir işaret oluşuyor. Ama ilk başta yapılması gereken nedir?
+
+258
+01:12:37,076 --> 01:12:45,556
+Dikkat ederseniz sabit bir gerilme dönüştürme. Tabi buradaki dalgalanmalar da daha sonra çeşitli elektronik devrelerle düzeltilecek.
+
+259
+01:12:45,556 --> 01:13:01,956
+Ama öncelikli olarak yapılması gereken iş, önce Half-Wave Rectifier işlemi, sonra şunlarla beraber Full-Wave, yani tam dalga.
+
+260
+01:13:03,155 --> 01:13:15,675
+Rectifier işlemleri. Yani şurası da doğrultucu demek. Doğrultucu ne demek? Aslında AC'den DC'ye doğru bir çevrimi gerçekleştirmiş oluyoruz.
+
+261
+01:13:16,675 --> 01:13:25,835
+Şimdi burada bakalım. İşin en basitinden başlayalım. Örneğin girişimiz VI'den. Şöyle bir sinizoidal işaret.
+
+262
+01:13:26,868 --> 01:13:31,708
+Burası da bizim artı eksi diye şey yaptığımız direncin üzerinde düşen gerilim.
+
+263
+01:13:32,868 --> 01:13:35,628
+Bakalım diyot kullanılarak ne hale gelecekmiş.
+
+264
+01:13:35,628 --> 01:13:40,628
+Şimdi benim şu AC işaretimi...
+
+265
+01:13:41,779 --> 01:13:57,639
+Şöyle pozitif kısmındayım diyelim. Pozitif kısmındayım. İdeal gibi düşünün şimdilik diyotu. 0.7 diye düşünmeyin. Epsilon kadar geçtiğinde diyotu, yani diyotun üzerinde kullanılan gelim, V'de.
+
+266
+01:13:58,355 --> 01:14:22,315
+Sıfır artı epsilon kadar gittiğinde ne yapmaya başlıyor? İletime geçmeye başlıyor. İletime geçince de sanki burası kısa devre gibi oluyor. Dolayısıyla Vİ neye eşit olmuş oluyor? Voutputa. Çünkü Vİ nereye uygulanan gerilim? A ile toprak arasında. Vİ eşittir. VA eksi V toprak. V toprak da sıfır eşit. Tam bu noktadaki gerilme eşit oluyor.
+
+267
+01:14:25,427 --> 01:14:52,887
+VA-V toprak. V toprak da 0 olduğu için demek ki şuralar sanki VI neye eşit olmuş oluyor? VI'ya yani birbirlerine eşit olmuş oluyorlar. O da VI. VI VI output'a eşit olduğu için pozitif gerilimli yani AC işaretinin bir saykılının yani bir çevriminin pozitif kısımında aynen T bölü 2 yani
+
+268
+01:14:53,619 --> 01:15:13,299
+Bir sinizoylar işareti şöyle düşünecek olursak. Burada geçen süre T girer. Şu orta nokta nedir? T bölü 2 kadar geçen süre. Pozitif kısımda arkadaşlar, benim Epsilon demiştim ama Epsilon çok ufak bir değer olduğu için.
+
+269
+01:15:14,452 --> 01:15:41,432
+İmput hemen ne yapılıyor? Pozitif kısmı aynen olduğu gibi geçirmiş oluyor. Peki yavaş yavaş şuraya geldiğimiz sıfıra geldim. Artık iletmedi ve negatif gerilimlere geldim. Negatif Vİ negatif gerilimlerde yani şuralardaysa ne olacak arkadaşlar o durumda? Yani ben şurada negatif saykıldayım. Şuradan itibaren şuralar yani.
+
+270
+01:15:42,836 --> 01:15:48,416
+Ters besleme olacağı için burası ne oluyor? Açık devre gibi oluyor. Öyle değil mi?
+
+271
+01:15:49,316 --> 01:15:55,336
+Buralarda herhangi bir gerilim yok. Çünkü bağlantısı kalmadı şey. Burada sıfır veriyor.
+
+272
+01:15:57,336 --> 01:16:07,336
+Yani aslında bir saykılın, şöyle baktığımda mavi ile çizeyim. V input mavi ile gösterilsin.
+
+273
+01:16:07,988 --> 01:16:13,488
+Voutput şu pozitif kısımda geçiyor, negatif kısımda iletmiyor.
+
+274
+01:16:13,948 --> 01:16:20,288
+Pozitif kısımda iletiyor, negatif kısımda, şurası t bölü 2, şurası da t bölü 2.
+
+275
+01:16:21,068 --> 01:16:26,068
+Bu şekilde sadece pozitif kısımları geçirmiş oluyor.
+
+276
+01:16:26,068 --> 01:16:32,548
+O yüzden buna yarım dalga, yani full dalga neydi arkadaşlar? Tam bir çevrim.
+
+277
+01:16:35,572 --> 01:16:38,891
+Pozitif kısmını geçirmiş oluyor arkadaşlar.
+
+278
+01:16:40,172 --> 01:16:40,952
+Şimdi,
+
+279
+01:16:42,492 --> 01:16:51,192
+Ben DC output'u 0.318v max demiş. Yani benim kullanmış olduğum,
+
+280
+01:16:51,692 --> 01:16:57,852
+input olarak kullan, onu tekrar mavi ile çizeyim. Aynı işaretleri kullanmış olayım.
+
+281
+01:16:58,092 --> 01:16:59,891
+Eğer benim kullandığım
+
+282
+01:17:00,912 --> 01:17:02,971
+input, yani v in
+
+283
+01:17:03,252 --> 01:17:12,692
+Maksimum değeri şurası v max olsun. Şurası eksi v max olsun. Bunun ortalama değeri ne arkadaşlar? Bu işaretin ortalama değeri.
+
+284
+01:17:15,652 --> 01:17:29,552
+Altta kalan değerlerin ortalaması kaç? Bunun ortalaması sıfır. Öyle değil mi? Bunun ortalaması sıfır. Evet. Peki ben şu şekle getirdiğim zaman yani sadece pozitiflerinin olduğunu düşündüğüm zaman.
+
+285
+01:17:30,739 --> 01:17:44,579
+Şimdi bunun belli bir ortalama değeri olacak değil mi? Ortalama neydi? Altta kalan alanların periyoda bölünümü. Yani pozitife çıkacak bunun ortalaması. Çünkü negatifler yok oldu.
+
+286
+01:17:44,579 --> 01:17:57,260
+Bu da neymiş arkadaşlar? 0.318V max'a denk geliyormuş. Yani maksimum gerilim ne diyelim? 10 volts da şayet 3.18 voltmuş bunun ortalaması.
+
+287
+01:17:57,716 --> 01:18:23,275
+0.318 Vmax. Şuradaki Vmax'ın 0.318'i kadar yukarı kayıyormuş bu ortalama. Buna da DC diyelim diyorlar. Aslında DC ortalama diyelim. Yani altta kalan alan büyüdü yukarı doğru. Normalde AC bir işaretle ortalama sıfırdı.
+
+288
+01:18:25,747 --> 01:18:27,587
+Hocam bir şey sorabilir miyim?
+
+289
+01:18:28,147 --> 01:18:28,427
+Tabii.
+
+290
+01:18:29,268 --> 01:18:30,268
+Yukarısıyla ilgili.
+
+291
+01:18:31,731 --> 01:18:46,592
+Biraz da kafam karışık ama şu en son anlattığımız ikinci kısımda bu negatif dalgaları yok ederken VI negatif diye diyot açık devremiş gibi davrandı ya.
+
+292
+01:18:46,891 --> 01:18:47,192
+Evet.
+
+293
+01:18:47,192 --> 01:18:53,271
+Bu VI çok yüksek olunca bir yerde Zener bölgesine giriyordu ya.
+
+294
+01:18:54,072 --> 01:18:59,731
+Onu da alıyoruz. Yani onu olmayacağını garanti edebileceğimiz bir bes.
+
+295
+01:18:59,731 --> 01:19:18,072
+Yani Zener bölgesine girmeyecek gibi çalışıyoruz. Ama senin dediğin doğru bir tespit. Eğer Zener bölgesi çok normal çalışan diyotlarda Zener'in eksi çok uzak gerilimlerde olması beklenir ki.
+
+296
+01:19:18,448 --> 01:19:28,988
+Hani o gerilime ulaşılamasın. Ama ulaşırsa dediğin gibi yanlış çalışma olmuş olur. Geriye doğru da bir akım atmış olur normalde.
+
+297
+01:19:30,128 --> 01:19:31,288
+Tamam, teşekkür ederim.
+
+298
+01:19:31,288 --> 01:19:32,167
+Rica ederim.
+
+299
+01:19:33,628 --> 01:19:42,148
+Şimdi geldik. Demin anlattığım konuda. V-in. Şurada çok güzel çizememiş tabii ki.
+
+300
+01:19:42,676 --> 01:20:00,976
+Artık bizim yarım dalga doğrultucu da şu şekildeydi. Pardon, şöyle biraz abarttık. Yarım dalgayı doğrulttuk şöyle. Neydi? VDC yarım dalgada 0.318 Vmax.
+
+301
+01:20:08,243 --> 01:20:32,963
+Şu negatif olan kısmı da yukarı çekersem şayet, yukarı doğru evirsem ortalamaya nasıl bir katkıda bulunur? 0.318'in 2 katı kadar, çarpı 2 kadar olur. Demek ki tam dalga doğrultucu da DC seviye 0.636 V max'a çıkar. Çünkü altta kalan alanın T'ye bölümü değil miydi ortalaması?
+
+302
+01:20:33,619 --> 01:20:44,039
+Eğer yarım dalgada 0.318 ise tam dalgada yani ikinci kısımda da aynı dalga oluşursa altta kalan alanlar büyüyecek ve iki katına çıkacaktır demektir.
+
+303
+01:20:45,100 --> 01:20:47,139
+Bunun DC seviyeden de bahsetmiş oluyorum.
+
+304
+01:20:47,139 --> 01:20:53,319
+Peki tam dalga doğrultucu nasıl çalışacak ona bir bakalım.
+
+305
+01:20:54,300 --> 01:20:57,699
+Tam dalga doğrultucu için inputumuz şu şekilde.
+
+306
+01:20:59,139 --> 01:21:00,960
+Tek bir çevrim üzerinden anlatıyoruz.
+
+307
+01:21:01,587 --> 01:21:26,807
+Burada v-input arkadaşlar şuradan uygulanıyor. V-input şöyle dörtlü bir diyot yapısı var. Bakalım nasıl çalışacak bunu göreceğiz. V-output da şuradan alınıyor arkadaşlar. Şuradaki direncin artısı burası, eksisi burası olmak üzere v-output oradan alınıyor. Çıkışı da full dalga doğrultucu olacakmış. Nasıl yapıyor ona bir bakalım.
+
+308
+01:21:27,796 --> 01:21:33,796
+Şimdi buna da köprü doğrultucu deniyor. Köprü doğrultucu.
+
+309
+01:21:38,547 --> 01:22:01,528
+Şimdi burada sanki bir köprü varmış gibi düşünülüyor. Pozitif cycle'da nasıl davranıyor bakalım. Şuna bir bakın. Pozitif cycle'dayım. Yani pozitif çevrimdeyim. Pozitif çevrimde hangileri iletimde olacak? Yani Vİ'yi buradan uyguladığını düşün. Vİ. Geldim şuraya kadar. D1 ters yönlü bağlandı için orası açık devre.
+
+310
+01:22:02,387 --> 01:22:29,228
+D2 pozitif, yani toprağa, eksi yönü toprağa daha yakın olduğu için şöyle kısa devre olmuş oluyor. Burası pozitif yönü, şurası negatif yönü olmak üzere. Buradan da pozitif gerilimler oluşuyor. D4'ten gitmiyor. Niye? Ters yönde bağlanmış çünkü. Buradan şöyle bir çıkış oluşmuş oluyor.
+
+311
+01:22:29,779 --> 01:22:41,579
+Diyotların üzerinde herhangi bir direnç olmadığı varsayılıyor. Aynı pozitif saykılın ve outputta oluştuğu düşünülüyor.
+
+312
+01:22:43,475 --> 01:23:01,815
+Çünkü şu uçlar, yani şurası VA, şurası VB olsun. VB nereye gidiyor? Toprağa, değil mi? X tarafa. VA'da, yani V'nin X tarafına gidiyor. VA'da art tarafa gittiği için aynen V output orada oluşmuş oluyor.
+
+313
+01:23:02,484 --> 01:23:27,224
+Peki, negatif cycle'da nasıl bir davranış sergileyecek? Negatif cycle'da da bakın burada artık negatif cycle demek, V'nin artı ucunda eksi gerilimlerin oluştuğu, buradaki potansiyelin daha yüksek olduğunu, yani V'nin eksideki potansiyelinin, V'nin artıdaki potansiyelinden düşük olması V'nin negatif değerler aldığını gösteriyor.
+
+314
+01:23:27,224 --> 01:23:29,084
+Yani şurası uygulanıyor.
+
+315
+01:23:29,587 --> 01:23:46,967
+Vİ'yi, yani eksi değerler uygulanmaya başlıyor. Burada arkadaşlar hangileri çalışacak? Eğer buranın potansiyeli, şu VA'nın potansiyeli, VB'den küçük olacaksa, pardon AB'yi şeyde kullandım ben, özür dilerim.
+
+316
+01:23:55,539 --> 01:24:11,079
+Hangi diyotlar çalışır? X'in potansiyeli düşükse şahit şu çalışır ve de şu çalışır değil mi? Bunun üzerinden sanki şöyle potansiyel Y'nin yüksekse bu çalışır, şunun üzerinden gitmesi lazım. Zaten onu göreceğiz şimdi.
+
+317
+01:24:12,000 --> 01:24:21,719
+Bu sefer de diğer diyotlar çalışmamaya başlıyor ve de benim akım yönüm şu şekilde tanımlanıyor. Ne demiştim ben?
+
+318
+01:24:22,323 --> 01:24:48,023
+Benim burası A ucumdu, burası B ucumdu. VAB'yi çizdiğime göre VAB. VA'nın potansiyeli VB'den yüksek. Öyle değil mi? Dolayısıyla benim VA'nın potansiyeli VB'den yüksekse, benim Voutput'umda burada oluşan işaretin tam tersi oluşur. Şu şekilde.
+
+319
+01:24:50,228 --> 01:25:15,768
+Bu sefer potansiyeli yüksek olan şu uç nerede gözükecek? A ucunda gözükecek. Düşük olan uç B ucunda gözükecek. Dolayısıyla bunun da potansiyeli yüksek olduğu için, artı uçta gözüktüğü için ne olmuş olacak arkadaşlar? Benim negatif impotum pozitif olarak gözükecek çıkışta.
+
+320
+01:25:18,003 --> 01:25:30,763
+Tam dalga doğrultucu deniyor. Bunun da DC ortalaması yarım dalga doğrultucunun tam iki katı olmuş oluyor. O da 0.636 arkadaşlar.
+
+321
+01:25:32,984 --> 01:25:35,863
+Tam dalga doğrultucu yapmanın başka yolları da var.
+
+322
+01:25:36,372 --> 01:25:57,832
+Bunun için çeşitli benim Transformer devreleri kullanılıyor. Şu kısım bilgi olarak yeterli. İlk kısmı bilin. Bu kısım Transformer kısmına çok fazla girmeyeceğiz. Transformer'lar, transformatörler daha doğrusu farklı sarımlarla beraber gerilimleri dışarı aktarmak için kullanılan yapılar.
+
+323
+01:25:58,387 --> 01:26:10,768
+Burada tabii ki şu sarımlar kullanılıyor. Bunlardan belki bahsetmişlerdir fizik dersinden ama ben çok fazla girmeyeceğim. Bu da tam dalga doğrultucuyu sağlamış oluyor.
+
+324
+01:26:12,368 --> 01:26:16,788
+Şimdi dediğim gibi yarım dalga doğrultucu da ideal halinde.
+
+325
+01:26:17,492 --> 01:26:44,791
+VDC değeri 0.318. Gerçekçi düşünecek olursak, bir tane diyot kullanıldığı için aslında 0.7'yi düşmemiz lazım. Köprü doğrultucu da ise ideal halinde 0.636. Biraz daha gerçekçi düşünecek olursak, aslında burada iki tane diyot üzerinden geçtiğimiz için, her seferinde diyot üzerinden geçtiğimiz için.
+
+326
+01:26:45,844 --> 01:26:56,844
+Şu 2x 0.7'yi de gerçekçi olmak eksi çıkarmak lazım DC seviyeden. Şu transformatörle olan kısmına çok girmiyorum.
+
+327
+01:26:56,844 --> 01:27:07,844
+Evet. Şimdi diyot kırpıcılara geçmeye başlayacağım.
+
+328
+01:27:09,363 --> 01:27:19,943
+Burada ilk görmüş olduğumuz yapılar var arkadaşlar. Kısa bir anlatacağım bunları. Ondan sonra Yod Clipper'ların farklı çeşitlerini göstermeye başlayacağım.
+
+329
+01:27:20,435 --> 01:27:42,796
+Diyot Creeper'lerde, şimdi biz input olarak arkadaşlar AC işaret uygulayabileceğimiz gibi şu şekilde AC işaret uygulayabileceğimiz gibi kare dalga, ortalama sıfır olan kare dalga veya üçgen dalga da uygulayabiliriz. Bunların hepsi salınım gösterdiği için AC işaretler olarak adlandırılıyor.
+
+330
+01:27:43,231 --> 01:27:54,952
+Şimdi diyot, şuradaki devrede seri bağlandığı için seri clipper, clipper arkadaşlar kesme, hani aynı resimlerdeki gibi kesme manasında kullanılıyor.
+
+331
+01:27:55,592 --> 01:27:58,891
+Ve input işaretimiz örneğin şöyle bir kare dalga olsun.
+
+332
+01:28:00,971 --> 01:28:05,912
+Demin görmüştük. Ne yapacak arkadaşlar bu? Pozitif kısmını geçirecek.
+
+333
+01:28:06,515 --> 01:28:31,435
+Negatif kısmındayken geçirmeyecek, açık devre davranacağı için yarısını geçirmeyecek. Yani bu aslında ne? Half-Wave Rectifier. Aynı şekilde burada üçgen dalga olsa, üçgenin pozitif olduğu yerlerde, yani bakın şuralarda pozitif değerler oluyor, oraları geçirecek. Negatif olduğu kısımları ise ideal olarak düşündüğümüzde geçirmeyecek.
+
+334
+01:28:32,083 --> 01:28:38,644
+Bunlar arkadaşlar, devreye seri olarak bağlandığı için seri clipper'lar olarak adlandırılıyor arkadaşlar.
+
+335
+01:28:47,891 --> 01:29:09,212
+Onun dışında çeşitli güç kaynakları ve input'un haricinde ve output'un oluşumunu görmek için farklı bağlantı şekilleri kullanacağız. Standart input'umuzun nasıl değişim gösterdiğini örnekler üzerinden çalışa çalışa devam edeceğiz arkadaşlar.
+
+336
+01:29:10,452 --> 01:29:13,972
+Şimdilik benim bu haftalık anlatacaklarım bunlar. Sizlerin sorusu var mı?
+
+337
+01:29:17,811 --> 01:29:28,731
+Hocam ben şey soracaktım ama şimdi çok fazla bir sayısal devre çözmedik de lap takvimi belli mi? Bir saat sonra mı aktarılacak bize? Siz biliyor musunuz?
+
+338
+01:29:29,524 --> 01:29:52,204
+Laplar anladığım kadarıyla şeyde, onları ayarlıyorlar. Yani bizim ilerleyiş şeklimize göre ayarlayacak arkadaşlar. Benim grubun altıda başlayacak diye biliyorum ben. Asistan arkadaşa linki göndereceğim. Ona sunum yetkisini verdikten sonra oradan devam edecek. Dersi ben başlatacağım ama.
+
+339
+01:29:52,644 --> 01:29:54,124
+Tamam, teşekkür ederim hocam. Sağ olun.
+
+340
+01:29:54,124 --> 01:29:57,423
+Orada ayrıntılı bilgi edinirsiniz zaten. Dersler.
+
+341
+01:29:57,524 --> 01:30:11,744
+Kullanılacak şeyler. En başta ORCAD kullanacaklardı. Orada bir sorun çıkmış zannedersem. Proteus'un öğrenci versiyonuna falan geçiyorlarmış. Onunla alakalı ayrıntılı, laboratuarla alakalı bütün bilgiyi arkadaşlarımızdan alırsınız. Oldu mu arkadaşlar?
+
+342
+01:30:11,864 --> 01:30:12,963
+Tamam, teşekkür ederim.
+
+343
+01:30:13,604 --> 01:30:24,503
+Sercan Hoca gelecek zannedersem. Alper değil de Sercan Hoca gelecek büyük ihtimalle. Yine haberleşiriz. Altıda normalde ders, hani ben baktığımda buradan.
+
+344
+01:30:25,011 --> 01:30:46,532
+Kontrol Panel diye gireyim mesela. Elektronik Devrelerin, dersler sınavlar diyeyim, canlı ders diyeyim. Şu anda 17.50'de başlıyor gözüküyor. Pardon 16'da başlıyor gözüküyor ama siz tabi 16'da girmeyeceksiniz.
+
+345
+01:30:48,632 --> 01:30:50,452
+6'da nasıl olacak o iş?
+
+346
+01:30:54,387 --> 01:31:14,188
+Altta da bu bağlantı kalkıyor. Öyle değil mi? 17.45 gibi ben bunu bir başlatmam lazım. Öyle değil mi? 17.45 ile başlamamışsa şayet size şey üzerinden, neydi o? Piazza üzerinden yeni bir link gönderir hocanız. O linkten bağlanırsınız. Anlaştık mı?
+
+347
+01:31:15,315 --> 01:31:35,215
+Ben açmaya çalışacağım. Benim başka bir dersim var o saatte şimdi. Beşte başlıyor. Eğer yetişemezsem, unutursam şayet, 17.45'te yakalamam lazım çünkü şunu. Eğer unutursam şayet şey yapın, piyazda üzerinden link kontrol edin. Hocanız oradan verecek. Anlaştık mı?
+
+348
+01:31:38,163 --> 01:31:40,003
+Kendinize iyi bakın arkadaşlar.
+
+349
+01:31:40,503 --> 01:31:43,384
+Hocam, benim bir tane daha sorumum var.
+
+350
+01:31:43,703 --> 01:31:44,344
+Tabii, buyurun.
+
+351
+01:31:45,163 --> 01:31:49,163
+Bu tam dalga rectifier'lere geri dönebilir miyiz?
+
+352
+01:31:54,547 --> 01:32:02,987
+Evet. Burada bu pozitif kısımda dörtlü bir diyot yapısı var ve iki tanesi çalışıyor ya.
+
+353
+01:32:03,407 --> 01:32:03,687
+Evet.
+
+354
+01:32:03,687 --> 01:32:12,627
+Şimdi ilk diyottan geçiyor, daha sonra dirençten geçiyor, sonra ikinci diyottan geçiyor aşağıya doğru.
+
+355
+01:32:12,967 --> 01:32:13,387
+Doğru.
+
+356
+01:32:13,939 --> 01:32:21,939
+Ama üst kısımdaki bu açık devre olan diyot aslında dirençten geçtikten sonra yukarı doğru çıkmaz mı?
+
+357
+01:32:35,347 --> 01:32:57,807
+Daima daha yüksek potansiyelde. O buraya doğru geliyor. Tabi direnç üzerinde belli bir miktar gerilimini kaybediyor. Buraya geliyor. Buraya geldiği zaman buranın gerilimi, C diyeyim buraya, hala VA'dan küçük. Değil mi? Çünkü bir direnç üzerinden geçti. Dolayısıyla bu çalışmayacak. Nereden ilerlemeye çalışıyor?
+
+358
+01:32:58,323 --> 01:33:11,724
+Buranın B ucu toprakta olduğu için buradan geçecek. Buraya baktığımda ise benim buradaki direncim, mesela buraya da D diyeyim, hala B'den küçük olduğu için bu da çalışmıyor.
+
+359
+01:33:15,667 --> 01:33:28,167
+Piyazaya nasıl katılabiliriz diye sormuş [öğrenci]. Ona mail mi gitmesi lazımdı arkadaşlar? Herhalde her öğrenciye gitmiş olması lazım. Veya Piyazda kodu gibi bir şey vardı. Onu bir yazsanız arkadaşımıza arkadaşlar.
+
+360
+01:33:32,916 --> 01:33:34,716
+[öğrenci] sana mail gelmedi mi?
+
+361
+01:33:42,515 --> 01:33:46,916
+Ben mail attım sizlere. Maili zannedersem onlar gelmiş olması lazım.
+
+362
+01:33:49,256 --> 01:33:51,735
+Diğer arkadaşlar piyazaya girdiler mi?
+
+363
+01:33:55,220 --> 01:34:16,500
+Diğer arkadaş girdiler mi? Bak sana şey verdi. [öğrenci] bir link verdi. Ona bir girsene. Bak linki de verdi. Kodu neydi bunun? Bir kodu da vardı. Onu da yazdın arkadaşlar. Tamam. Herhalde o ilk linkten açıklama var. Oradan bulabilirsin [öğrenci].
+
+364
+01:34:20,243 --> 01:34:39,384
+Evet, BLM2032 Ünlem İşareti imiş. Sen yine bir kontrol edersin. Dediğim gibi ben başlatırsam şayet buradan olacak. O zaman link atmazlar size. Ben 20.45'e bir kurayım saatimi ki başlatayım onu da.
+
+365
+01:34:47,091 --> 01:34:50,952
+Kendinize iyi bakın arkadaşlar. Görüşmek üzere. Başka sorusu olan yoksa?
+
+366
+01:34:51,711 --> 01:34:53,872
+Hocam, ben son bir soru daha sorabilir miyim?
+
+367
+01:34:54,631 --> 01:34:55,511
+Evet, sorabilirsin.
+
+368
+01:34:56,171 --> 01:35:00,612
+Belki geçen dersi söylediniz, ben kaçırdım ama bu diyotlar neden bu kadar önemli?
+
+369
+01:35:02,152 --> 01:35:09,311
+Bak, en başta LED'lerde kullanıyoruz. Tam dalga doğrultucularda kullanıyoruz.
+
+370
+01:35:09,832 --> 01:35:13,992
+Aslında bir yerden akım geçip geçmemesini sağlayan bir anahtar gibi kullanıyoruz.
+
+371
+01:35:14,707 --> 01:35:22,827
+Bu bile önemli bir kullanım alanı. Artık koruma devrelerinde de kullanıyoruz. Tamam mı?
+
+372
+01:35:23,220 --> 01:35:50,859
+Bu yüzden önemli bizim için. Bu en basit PN Jonsiyon yapısı. PN Jonsiyon yapısından sonra diyotlardan sonra transistörlere geçeceğiz. Transistörler diyotların daha böyle kompleks bir hali. Şimdi kırpıcı devrelerde de kullanıyoruz. Yani dalga şekillerini manipüle etmek için de kullanıyoruz. Bu yönden gerek analog gerek sayısal elektronikte önemli kullanım alanına sahip.
+
+373
+01:35:52,884 --> 01:35:54,364
+Tamam, teşekkür ederim.
+
+374
+01:35:55,083 --> 01:36:05,043
+Kolay gelsin, görüşmek üzere. Ben 17.45'e bir saatimi kurayım. 17.45 gibi. Herkes bağlansın arkadaşlar orada.
+
+375
+01:36:07,184 --> 01:36:10,884
+Tamam. Kolay gelsin, hepinize görüşmek üzere arkadaşlar.
+
+376
+01:36:11,384 --> 01:36:12,144
+İyi günler hocam.
+
+377
+01:36:12,604 --> 01:36:13,583
+İyi günler, iyi günler.

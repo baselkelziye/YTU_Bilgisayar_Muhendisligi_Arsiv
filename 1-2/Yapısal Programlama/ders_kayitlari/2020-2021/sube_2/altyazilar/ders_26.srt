@@ -1,0 +1,1851 @@
+1
+00:00:22,579 --> 00:00:23,679
+Günaydın arkadaşlar.
+
+2
+00:00:30,292 --> 00:00:31,051
+Günaydın hocam.
+
+3
+00:00:35,987 --> 00:00:37,207
+Teşekkür ederim. Sağ olun.
+
+4
+00:00:42,292 --> 00:00:47,551
+Bir dakika, iki dakika daha bekleyelim. Başlayacağız. Ben de şu slide'ı bulacağım.
+
+5
+00:04:04,563 --> 00:04:11,563
+Şimdi öncelikle son uygulamada arkadaşlar size Mac file ile alakalı bir örnek yapacaklar da onu unutmuşlar.
+
+6
+00:04:12,524 --> 00:04:14,283
+Kısaca ben onu açıklayayım.
+
+7
+00:04:15,623 --> 00:04:18,803
+Ama benim bilgisayarımda Mac komutu niyeyse çalışmadı.
+
+8
+00:04:19,063 --> 00:04:23,944
+Bu çevresel değişkenler dediğimiz ayarlamada bir problem var.
+
+9
+00:04:25,483 --> 00:04:27,783
+Neyse onu ben kısaca özetleyeyim.
+
+10
+00:04:27,783 --> 00:04:30,483
+Siz daha sonra zaten kendi bilgisayarında da denersiniz.
+
+11
+00:04:31,475 --> 00:04:35,576
+Bir de bir şey daha bulmaya çalışıyorum da unutulamadım hemen. Ona bakıyorum.
+
+12
+00:06:25,076 --> 00:06:50,376
+Şimdi arkadaşlar, önce makefile ile alakalı örneğe kısaca bakalım. Direkt şey açacağım. C'de açmayacağım. 3 tane programla alakalı dosyamız var. Birisi header file. Bu makefile ne için kullanılır? Daha önce derste kısaca söyledik de, şimdi biraz daha bunu detaylandıralım.
+
+13
+00:07:05,779 --> 00:07:17,819
+Bir tane main fonksiyonu içeren programım var. Bu programda Square Devir fonksiyon çağrısı yapıyorum. Normalde ben bu fonksiyonu burada yazabiliriz ama yazmadık.
+
+14
+00:07:19,099 --> 00:07:24,719
+Bu fonksiyonu gidecek, fonksiyonun haklı header içerisinde bir şeyden alacak.
+
+15
+00:07:25,500 --> 00:07:29,839
+Buna baktığınız zaman bu header, bir tane fonksiyonun header'ını içeriyor.
+
+16
+00:07:30,163 --> 00:07:33,764
+Başka ne içerebilir? Header file içerisinde başka ne yazılabilir?
+
+17
+00:07:43,060 --> 00:07:45,680
+Fonksiyon prototibinden başka ne yazabiliriz?
+
+18
+00:07:58,516 --> 00:08:08,816
+Structure Definition'ı yazarız. Değil mi arkadaşlar? Veya Macro Definition'larını yazarız. Ama herhangi bir programın, fonksiyonun implementasyonu burada yapılmaz.
+
+19
+00:08:09,816 --> 00:08:18,475
+Bu header file'i aynı şekilde içeren bir başka dosya square.se. Burada da implementasyon olacak.
+
+20
+00:08:19,355 --> 00:08:24,076
+Header file aracılığıyla ne oluyor? Bu fonksiyon buradan çağrılabiliyor.
+
+21
+00:08:24,947 --> 00:08:46,548
+Bir proje düşünün, C projesi. Bunun gibi 30-40 tane dosya var. Birbiriyle ilişkide header'larla bağlanmış. Bunları, tabi dfc gibi bir şey de kullanmadığınızı düşünelim. Derleyip, link edip, ondan sonra ne yapmak gerekiyor? Executable dosyayı oluşturmak gerekiyor.
+
+22
+00:08:48,724 --> 00:09:13,104
+Derleyici içinde gcc, minge ve artık hangisi kullanılacaksa bir şey var. Bu derleme aşamasını kolaylaştıracak olan şeyimiz makefile. Bunu belki çoğunuz, hani hocam niye anlatıyorsunuz belki kullanmayacaksınız ama bunu kullandığı yerler hala var. Özellikle low level programlamanın yapıldığı gömülü sistemlerde veya işte daha böyle
+
+23
+00:09:13,908 --> 00:09:24,608
+Bu, savunma sanayi gibi sistemlerde eğer her şeyi kendiniz yapmaz gerekiyorsa bunu kullanmak durumundasınız. Başka bir yazılıma ihtiyaç yok çünkü.
+
+24
+00:09:26,427 --> 00:09:38,468
+Yani illa devsi gibi bir ide olması da gerekmiyor. Yani bazı durumlarda doğrudan derleyici yükleniyor. Hatta sinin derleyicisini kendileri yazıp o derleyici üzerinden şey yapmaya çalışıyorlar.
+
+25
+00:09:38,468 --> 00:09:40,148
+O derlemeye çalışıyorlar.
+
+26
+00:09:41,139 --> 00:09:47,259
+Yani bu bizim sürekli dediğim gibi şu devsi açınca birazdan hatta şöyle yapalım.
+
+27
+00:09:48,899 --> 00:10:03,100
+Arka planda yapılan o uzun değerleme ile alakalı yapılan işlemleri daha kısa bir defa yazıp bu dosyayı çağırma üzerine geliştirilen bir şey.
+
+28
+00:10:04,159 --> 00:10:05,819
+Buradan bir şey açalım mesela.
+
+29
+00:10:10,707 --> 00:10:19,067
+Şu bizim geçenki yaptığımız örneğimizde. Bunu compile et dediğimde, gcc.exe dedi.
+
+30
+00:10:19,067 --> 00:10:23,067
+Keşke silmeseydi.
+
+31
+00:10:37,716 --> 00:10:52,395
+Bakın şurada işte bt.c dedi, ondan sonra bundan bt.exe oluştur dedi. Tabi tek bir dosya var. Eğer burada daha fazla dosya olsaydı ne olacaktı? Bu iş uzayıp gidecekti. Bir de burada petleri değişebiliyor, uzun olabiliyor falan falan.
+
+32
+00:10:53,416 --> 00:11:02,355
+Makefile bizi bu yükten kurtarıyor. Aslında c, dc'nin de arka planda makefile oluşturduğunu geçen ilk derste bu konuyu anlatırken konuşmuştuk.
+
+33
+00:11:03,124 --> 00:11:21,124
+Diyoruz ki, burada üç tane dosyamız var. Birincisi program. Uygulama nokta, işte Square birleşenlerinden oluşacak. Bu ikisini gcc ile derleyip obje file'lerini oluşturtuyoruz ve bu obje file'leri program içerisinde birleştirir.
+
+34
+00:11:22,124 --> 00:11:28,108
+Bunları da her birinin nasıl oluşturacağını şurada tanımlıyoruz. Şimdi uygulama dediğimiz şey diyoruz.
+
+35
+00:11:28,467 --> 00:11:45,028
+Şuradan önce değerlenecek. Uygulama.objetfile. Gcc ile CompileAid uygulama C'yi oluşturacağın objetfile uygulama O olsun. Gcc ile SquaresC'yi CompileAid uygulama O olsun.
+
+36
+00:11:45,028 --> 00:11:51,107
+Bu ikisi header file üzerinden birbirini görmüş oluyor.
+
+37
+00:11:52,340 --> 00:12:08,340
+En son uygulama o dosyası ve Square o dosyasını birleştirip program executable halini oluştur diyoruz. Çok basit bir makefile ama bu makefile yazma işi çok komplekstir.
+
+38
+00:12:08,340 --> 00:12:19,340
+Yani projeler büyüdükçe bu compiler'ların optimizasyon seviyeleri ile alakalı çok daha derin parametreleri bir sürü karmaşır işlemleri var.
+
+39
+00:12:19,764 --> 00:12:31,584
+Ama temel yapısının bu olduğunu bilmeniz, hiç bir derleyiciniz olmasa, yani bu bazen yurtdışı iş görüşmelerinde veya Türkiye'de de olabiliyor, işte soruyorlar.
+
+40
+00:12:32,344 --> 00:12:40,804
+Herhangi bir ideiniz yok, sadece derleyici kurulu. Böyle tek bir komutla bu projeyi nasıl derlersiniz?
+
+41
+00:12:41,723 --> 00:12:45,324
+Önce makefile yaparım diyeceksiniz. İşte o makefile bu şekilde.
+
+42
+00:12:46,388 --> 00:13:11,728
+Tanımlayacaksınız. Daha sonra bu Mac file'i çağırarak ona göre oluşacak. Normalde biz de ne yapıyorduk? Hani şuradaki komuta baktığımızda önce ne oluyor arkadaşlar? İşte c dosyasından obje file oluşturuluyor. Oluşturulan obje file'dan da executable file oluşturuluyor. Tek bir dosya olduğu için. İşte önce şu kısım çalışacak, ondan sonra bu kısım çalışacak. Bu şekilde tamamlayacağız.
+
+43
+00:13:14,259 --> 00:13:16,059
+Burada problem soru var mı?
+
+44
+00:13:20,403 --> 00:13:26,844
+Diğer grup anlatmayacak ama ben bu hafta kısaca size bir thread anlatıp birkaç örnek göstereceğim.
+
+45
+00:13:29,644 --> 00:13:38,764
+Ondan sonra bir de şeye giriş yapacağız. Object Oriented Programlama nedir? O konuya bir giriş yapacağız.
+
+46
+00:13:42,484 --> 00:13:43,644
+Bir saniye arkadaşlar.
+
+47
+00:14:05,043 --> 00:14:26,203
+Şu ana kadar çalıştığımız programlarda şöyle bir durum vardı. Program main'den başlıyor. Main'in en sonundaki süslü parantez de bitiyor. Dolayısıyla ağırdaşıl bir durumla karşılaşıyoruz.
+
+48
+00:14:30,067 --> 00:14:40,548
+Bu program içerisinde birbirinden bağımsız, birbirini beklemesi gerekmeyen bazı alt programlarınız olabilir, fonksiyonlarınız olabilir.
+
+49
+00:14:41,748 --> 00:14:48,467
+Örnek olarak bir dizinin toplanmasını hesap edelim.
+
+50
+00:14:50,008 --> 00:14:52,647
+Bir dizi değil de iki diziyi toplayalım önce.
+
+51
+00:14:54,127 --> 00:14:55,988
+Dizinin elemanları karşılıklı toplanacak.
+
+52
+00:14:56,628 --> 00:15:15,928
+Birinci elemanlar toplanırken ikinci elemanların toplanmasına bir engel var mı? Yani önce biri toplayacağız sonra ikiyi toplayacağız diye bir şey var mı? Şu tableti bağlayayım. Olmaması gerekir normalde.
+
+53
+00:15:28,884 --> 00:15:36,884
+Bu ders normalde işletim sistemleri konusu ama ben bunu anlatmak istiyorum. Daha öncelerde geçen dönemlerde anlatıyorduk.
+
+54
+00:15:39,124 --> 00:15:41,003
+İşletim sistemlerinde de ayrıca bilginiz olur.
+
+55
+00:15:42,943 --> 00:15:45,104
+Şöyle bir dizi düşünelim arkadaşlar.
+
+56
+00:15:46,923 --> 00:15:48,523
+Bu da niye böyle yazıyoruz?
+
+57
+00:16:10,131 --> 00:16:11,131
+Bu bir,
+
+58
+00:16:12,951 --> 00:16:13,971
+şu da iki.
+
+59
+00:16:24,659 --> 00:16:36,399
+Şimdi ben şuradaki iki elemanı toplamak istediğimde ne yapıyorum? Direkt i ince elemanla ince eleman. Ama buradaki elemanla birlikte şöyle bir şey yapabiliyoruz.
+
+60
+00:16:50,227 --> 00:17:12,947
+İ. elemanına artı eşittir. Dizi 2'nin İ. elemanını ekledisek karşılıklı toplayacak. Şunu biraz daha n bölü 2'ye götürsem. Bununla beraber dizinin İ artı birinci elemanıyla dizi 2'nin
+
+61
+00:17:14,516 --> 00:17:37,476
+İ artı ikinci elemanını da toplayabilirim. Karşılıklı olarak ikişer ikişer toplarım. Mesela bu kod, normal tekli yazmaktan daha hızlı çalışıyor. Bunu deneyebilirsiniz. Eğer dörtlü, üçlü, dörtlü yaparsanız biraz daha hızlı çalışıyor. Bir yere kadar. Çünkü zaten işlemcinin bir çekirdeğine bunu yaptırırken,
+
+62
+00:17:38,932 --> 00:17:42,351
+Diğer şekilde bilgisayar mimari sayesinde bunu yapabiliyor.
+
+63
+00:17:44,632 --> 00:17:52,152
+Ve zaten bu toplama işleminin doğası gereği, şuradaki elemanları önce toplamamla, şuradaki elemanları sonra toplama arasında bir fark yok.
+
+64
+00:17:52,471 --> 00:17:55,092
+Hani kümülatif toplam olacak olsa fark olur.
+
+65
+00:17:56,291 --> 00:18:02,311
+İşte bu program execution'ı, programın çalışması esnasındaki execution'ı.
+
+66
+00:18:03,059 --> 00:18:07,059
+Böyle bire değil de birden fazla akışa bölmeye thread diyeceğiz.
+
+67
+00:18:09,559 --> 00:18:17,720
+Örnek olarak ben şimdi size şu uygulamada bazen çizimler yapıyorum veya Word uygulamasını düşünün.
+
+68
+00:18:17,940 --> 00:18:24,639
+Bir şeyler yazıyoruz. Yazdığım bazı şeylerde hatalı gördüğü kısımların altını çiziyor değil mi?
+
+69
+00:18:24,639 --> 00:18:26,500
+Bu mesela bir yazım denetimi yapıyor.
+
+70
+00:18:27,380 --> 00:18:50,260
+Yazım, denetimi, işlemi farklı bir algoritma. Benim bir şeyler yazıyor olmam farklı bir algoritma. Bazı şeylerin altını çiziyorum, kırmızıya boyuyorum, Word ile alakalı yazma işlemleri yapıyorum. Onlar farklı bir algoritma. Bu işlemlerin hepsinin aynı zaman biriminde, aynı zaman içerisinde oluyormuş gibi olmasa bu işin thread ile alakalı olduğunu gösteriyor.
+
+71
+00:18:51,028 --> 00:19:09,228
+Tabi thread daha özel bir kavram. Bunun daha genel bir kavramından önce bahsedeceğim. Sonra programlama dilleri buna niye ihtiyaç duymuş buna bakacağız. Şuradaki açıklamaları okursunuz. Bu şeyi size tekrar belki yoksa da gönderin.
+
+72
+00:19:10,028 --> 00:19:12,347
+Önce biz program nedir?
+
+73
+00:19:16,019 --> 00:19:20,559
+Proses nedir? Ve thread nedir? Ona bir bakalım.
+
+74
+00:19:24,372 --> 00:19:40,412
+Program dediğimiz şey, yazılı olan, yani biraz önce gösterdiğim herhangi bir dilde C++'da yazılmış. Bizim anlayacağımız metinler, fonksiyonlar, komutlar içeren bir şey.
+
+75
+00:19:40,412 --> 00:19:51,632
+Biz bunu compile ettik. Ondan sonra link ettik. Belliğe bir şekilde yükledik.
+
+76
+00:19:52,756 --> 00:20:04,155
+Bize Executable hali geliyor. Bu Executable hale geldikten sonra oluşan haline proses diyoruz.
+
+77
+00:20:05,996 --> 00:20:09,635
+Ve işletim sistemimiz buna bir proses atıyor.
+
+78
+00:20:09,635 --> 00:20:18,996
+Process ID satıyor. Şimdi Task Manager'ını açtığınızda Ctrl Alt Del ile birlikte çalışan prosesleri görürsünüz.
+
+79
+00:20:19,124 --> 00:20:43,523
+Details dediğimizde, bakın bilgisayarda, benim bilgisayarımda çalışan proseslerin isimleri buymuş. Bunların bir proses PID'leri var. Bunların çalışıp çalışmadığını, aktif olup olmadığını söyleyen farklı durumlarda olduğumuz için statüsleri var. Çünkü bazıları waiting olur, bazıları terminate etmiş, sonlanmış olur, bazıları çalışır durumdadır.
+
+80
+00:20:43,923 --> 00:21:10,563
+Çalışır durumda olduğu şu anlama geliyor. Yani bu şu an işletim sistemiyle bellek arasında bu program gidip geliyor. Ama baktığımız zaman burada bir sürü proses var. Hepsi de çalışır durumda. Bizde bir tane işlemci var. Nasıl oluyor bu iş? Sonra CPU'da kullandı. Ne kadar CPU'yu kullandı. Bakın şu şeyler kullanıyormuş. Ne kadar bellek değer kullandı. Bu bilgiler de var.
+
+81
+00:21:11,251 --> 00:21:17,251
+Hatta istenirse buraya başka bilgiler de eklenebiliyordu. Bakayım şu an yapabilecek miyim?
+
+82
+00:21:17,251 --> 00:21:24,971
+Select Column dediğimde, evet.
+
+83
+00:21:28,084 --> 00:21:33,044
+Operating System Call Context. Mesela...
+
+84
+00:21:37,523 --> 00:21:49,783
+Memory olarak, Cycle, CPU, Time gibi şeyler de ekleyeyim. Burada başka bilgiler de, en son CPU'yu ne zaman kullandığına dair başka bilgiler de var mesela. Bunları da ekleyebiliriz.
+
+85
+00:21:50,843 --> 00:21:57,283
+Soru bu. Yani aynı anda bu kadar proses bir işlemciyi nasıl kullanıyor?
+
+86
+00:22:11,380 --> 00:22:25,200
+uyuyor musunuz hala? Şimdi CPU hızları nedir arkadaşlar? CPU hızlarının birimleri hakkında ne biliyorsunuz? CPU Speed çalışma hızı.
+
+87
+00:22:31,508 --> 00:22:48,327
+Mesela 2.4 GHz dedik değil mi? GHz bunu periyoda çevirirsek saniyede 10 üzeri 9 tane, 2.4 çarpı sonu 10 üzeri 9 tane saniye başına işlem.
+
+88
+00:22:49,988 --> 00:22:54,327
+Bu saniyede arkadaşlar yani şu kadar kare dalga üretiliyor demek.
+
+89
+00:22:57,907 --> 00:23:15,547
+Gider, her bir yükselen veya düşen kenarda işlemci bir işlem yapar. Bir saniyede bu kadar işlemi alabiliyor. Şimdi kabul edelim ki şöyle bir hesapta bayağı bir işlem var yani bayağı bir kabiliyeti var aslında işlem yapma kabiliyeti.
+
+90
+00:23:22,483 --> 00:23:43,643
+Komutlarını getirecek, işleyecek. Bunun için mümkün ama bir sürü var burada. Bunun iki tane açıklaması var. Birincisi core mekanizması. Bu işlemcinin içerisinde şu an en tane benim bilgisayarımda yaklaşık 4 veya 8 olacaktı. 8 tane çekirdek var.
+
+91
+00:23:49,044 --> 00:24:10,604
+Birim zamanda yapılabilecek işlem sayısını arttırabiliyor. Eğer dört çekirdekse aynı anda Fetch Instruction, Bunu görmüşsünüzdür aslende, Decode Instruction, Execute Instruction ve Writeback işlemleri var ya, bir komutun getirilip, çözülüp ve execute edilmesi,
+
+92
+00:24:18,324 --> 00:24:27,523
+Eğer 4 tane çekildiğim varsa. O zaman bunun gibi yani 4 tane ayrı prosesi işleyebileceğim. Ama bu da yeterli değil.
+
+93
+00:24:28,844 --> 00:24:34,163
+Yani 4'ten çok fazla sayıda şey var. Ne oluyor arkadaşlar? Şöyle bir durum oluyor.
+
+94
+00:24:35,124 --> 00:24:38,384
+Buna proses scheduling konusunda işletim sistemlerini de göreceksiniz.
+
+95
+00:24:39,284 --> 00:24:44,264
+P1 prosesi işlemciye alındı. Belli bir süre çalışıyor.
+
+96
+00:24:45,044 --> 00:25:05,304
+Sonra diyor ki tamam sen bir geç yerine diyor ben P2'ye alacağım diyor. Ama bakın bu şu kadar fazla sayıda işlem olduğu için şu kadar fazla bu kadar saniye saniyenin tabii ne kadarı 2 çarpı 4 2.4 çarpı 10 üzeri eksi 9 saniyelerdedir.
+
+97
+00:25:10,259 --> 00:25:20,719
+Parçalara bölün. O bölünmüş parçalar arasında bu işlemler oluyor. P1 prosesi belli bir miktar çalıştırılıp sonra P2'ye geçiyor. Öbür korlarda da diğer proseslerle alakalı şey var.
+
+98
+00:25:22,559 --> 00:25:29,659
+Öncelik dediğimiz şey de zaten bunu söylüyor. Şimdi burada öncelikler var mı? Görünmüyor. Şöyle yapalım. Görebilecek miyiz? Ona bakalım.
+
+99
+00:25:35,092 --> 00:25:38,011
+Önceden priority görünüyordu.
+
+100
+00:25:42,067 --> 00:26:00,567
+Thread'lerini görebiliriz. Base priority diyelim. Bakın, bu proseslerin bazı önceliği yüksek, bazıları normal öncelikte, bazıları daha düşük öncelikte. Ve kaç tane thread kullandığı falan var. O thread'e şimdi geleceğiz. Kimmiş mesela? Explore, Exe bayağı bir thread kullanıyormuş.
+
+101
+00:26:03,508 --> 00:26:13,208
+P1 prosesinin belli bir miktar çalışıp sonra sıra P2'ye gelmesi, sonra P3'e gelip sonra tekrar P1'e gelmesi şu bir scheduling işleyebilir.
+
+102
+00:26:17,875 --> 00:26:35,875
+Bu Scheduling işlemi sayesinde P1'den P2'ye, P2'den P3'e sonra tekrar P2'ye şöyle bir geçiş yapıyor. Buna Switching deniyor. Hatta Context Switching kavramı veriliyor.
+
+103
+00:26:35,875 --> 00:26:43,723
+Bir prosesi aldık. Diğer prosesi yerine getiriyoruz.
+
+104
+00:26:44,211 --> 00:27:03,311
+Bu arada P1 prosesi tamamlanmadı. Tekrar çağrılmak üzere belleğe gönderildi. Tabii belleğe gönderildi. Yani sizin P1 prosesinizin bir sürü kodu var. Belki bu kodun şu kadarı işlendi. O kadar işlenmiş kadarı belleğe kaydediliyor.
+
+105
+00:27:03,311 --> 00:27:11,392
+Yani flag registerları, nasıl recursive fonksiyonlarda bazı şeyler belleğe kaydediliyordu. Burada da aynı durum var.
+
+106
+00:27:11,892 --> 00:27:24,432
+Tamamlanmış olan kısmı belleğe kaydediliyor. Tekrar çağrıldığında bellekten tamamlanmış kısmı, en son nerede kalmıştık diye oradan devam ediyor ve P1 biraz daha işletilmeye devam ediyor. Belli bir süre sonra bu kadar işletilir.
+
+107
+00:27:25,452 --> 00:27:36,812
+Bu örneği anlatırken genellikle şu örneği verilir. Süpermarket örneği verilir. Bir tane kasamız olsun. Yani işlemcimiz.
+
+108
+00:27:37,971 --> 00:27:55,451
+Dört tane de müşteri geldi. Yani proses. Kasiyer de dedi ki tamam, her birimizi tek tek bitirip almayacağız. Parça parça alacağız. Herkese eşit davranmak istiyorum. Adil davranacağım.
+
+109
+00:27:56,671 --> 00:28:03,911
+P1'in mesela 10 birimlik işlemi var. P2'nin 2 birimlik, P3'ün 8 birimlik, P4'ün 6 birimlik işlemi olsun.
+
+110
+00:28:04,627 --> 00:28:28,347
+Ya işte 2 çıkıp gidebilir belki ama hani hatta onu 4 diyelim. 2 çıkıp gidebilir ama gitmiyor. Yani diyor ki kasiyer böyle bir şey uygulayacağım. Diyor ki P1'den 2 birim aldım. P1'in kaç birimi kaldı? 8 birimi kaldı. Ondan sonra P2'den de 2 birimi aldım. Herkesten 2'şer 2'şer aldığınızı kabul edin.
+
+111
+00:28:29,236 --> 00:28:46,616
+2 birimi kaldı. P3'den de 2 birimi aldım. 6 birimi kaldı. P4'den 2 birimi aldım. 4 birim kaldı. Bu düzeni uygulayarak ne yaptı? Bir tur herkesten 2 birimi aldı. Sonra aynı şeyi 2 birimi tekrar yapacak.
+
+112
+00:28:56,019 --> 00:29:20,259
+Diyor ki, P1 senden şu kadarlık para geçti. Yani o iki biriminden. Bunu bir yerde not et. Sonra P2'ye geldiğinde aynı şeyi P2 için, P3'e geldiğinde aynı şeyi P3 için ve P4 için yapıyor. Tekrar başa geliyor. En son nerede kalmıştık deyip tekrar buradan devam edip bütün ürünleri bitene kadar. Buradan ilk kim çıkacak mesela? P2 çıkacak. Onda sonra P4 çıkacak. 3 çıkacak. En son P1 çıkacak eğer 2-2 giderse.
+
+113
+00:29:20,627 --> 00:29:36,067
+Ama şunu da yapabilirim. Tamam, P1'in 8'i bir man. Önce şu P1'i bir aradan çıkaralım, gönderelim der. P2'yi, P3'ü, P4'ü bekler. Bu tamamen buradaki kasiyerin gönlüne göre olan bir şey. İşletim sistemi de burada, şu scheduling mevzusunda da işletim sistemi görev alıyor.
+
+114
+00:29:37,067 --> 00:29:44,067
+Diyor ki, P1'e çok fazla öncelik verdin diyor. Ama ileride diyor ki, P1 sen çok kovdun. Biraz bekle diyor sen, biraz bekle falan.
+
+115
+00:29:44,756 --> 00:29:58,155
+Bu işlem böyle planlanarak devam ediyor. Zaman paylaşımı esasına göre yapılıyor. Tamam mı? 0T zaman aralığında, T1 zaman aralığında bu, T1, T2 zaman aralığında bu, sonra T2, T3 aralığında, T3, T4 aralığında bu yapılıyor.
+
+116
+00:30:00,235 --> 00:30:05,155
+Bakın hala proses seviyesindeyiz. Daha trade gelemedik. Demek ki bu...
+
+117
+00:30:05,875 --> 00:30:14,776
+Aynı anda birden fazla prosesin çalışması için bir donanım ve donanımla yapılan işletim sistemi tarafında yapılan çözümlerden bazıları bunlarmış.
+
+118
+00:30:15,695 --> 00:30:18,755
+Gelelim thread aşamasına.
+
+119
+00:30:20,516 --> 00:30:22,215
+Şimdi bir programımız.
+
+120
+00:30:25,635 --> 00:30:29,915
+Şurada main var. Bununla başladı. Şurada da main'in bitişi var.
+
+121
+00:30:35,284 --> 00:30:46,203
+Bitişe kadar gitmesi aşamasında bir thread diyoruz. Ve her proses veya her program en az bir tane execution flow içermesi gerekiyor.
+
+122
+00:30:47,003 --> 00:30:54,804
+Aslında her proses içermesi lazım. Çünkü çalışan program proses anlamındadır. Ve bir execution flow'a sahip olması gerekir.
+
+123
+00:30:55,804 --> 00:31:00,044
+Main'den başladı, tek bir koldan ilerleyip gidiyor.
+
+124
+00:31:00,852 --> 00:31:09,352
+Buna single thread, single process deniyor. Tek bir thread içeren process ismini veriyoruz.
+
+125
+00:31:09,352 --> 00:31:18,352
+Ama bazı programlarımızda bir yerde başladı, öyle bir tek gidiyoruz. Daha sonra ikiye bölündü program akışı.
+
+126
+00:31:18,352 --> 00:31:26,188
+Aynı şu proseslerdeki olan ayrılık gibi, ayrılık gibi, şuradaki mantıkta.
+
+127
+00:31:26,644 --> 00:31:43,924
+Programınızın çalışması iki koldan yürütülüyor. Çünkü birbirinden bağımsız olabilecek, aynı anda yürütülmesine gerek olmayan bir program bloğu varsa siz bunu ikiye bölüp daha hızlı çalıştırabiliyorsunuz.
+
+128
+00:31:43,924 --> 00:31:52,024
+Bu işletim sisteminden öncelik olarak, işlemciyi daha verimli konulara programınızın daha kısa sürede tamamlanmasını bekliyorsunuz.
+
+129
+00:31:52,564 --> 00:32:00,144
+İşte bu dizilerin toplanması, matrislerin çarpılması gibi işlemler burada çok fazla kullanılan örneklerdir.
+
+130
+00:32:01,284 --> 00:32:07,984
+Çünkü matris çarpımında biz biliyoruz ki birinci matrisin satırıyla ikinci matrisin sütunu çarpılacak.
+
+131
+00:32:07,984 --> 00:32:14,344
+Başka bir şey çarpılmayacak. Yani önce şurayla şurayı çarpacağız. Ama bununla aynı anda şurayı da çarpabilirim.
+
+132
+00:32:14,504 --> 00:32:16,544
+Hiçbir engel yoktur.
+
+133
+00:32:19,571 --> 00:32:28,251
+Düzenli bir şekilde ilerleyebilmesi, mantıklı bir şekilde ilerleyebilmesi için threadlere bölünüyor işlemler.
+
+134
+00:32:30,051 --> 00:32:35,791
+Ve bu arkadaşlar programlama dili tarafından sağlanması gereken bir özellik.
+
+135
+00:32:35,791 --> 00:32:41,791
+Bununla alakalı dilinizde bir kütüphane varsa ne yapabiliyorsunuz? Bunu gerçekleyebiliyorsunuz.
+
+136
+00:32:42,931 --> 00:32:47,171
+Birazdan onun örneklerine bakacağız. Biraz şunun üzerinden gidelim.
+
+137
+00:32:51,476 --> 00:33:03,756
+Her bir proses birden fazla thread execution'una sahip olabilir. Threadler gerçekten concurrent bir şekilde çalıştığı görülür.
+
+138
+00:33:04,796 --> 00:33:15,036
+Tabi tek core üzerinde diyelim. Şu an bilgisayarda bir tane core'umuz var. Dolayısıyla bir tane decode instruction seçimimiz olacak.
+
+139
+00:33:18,900 --> 00:33:44,760
+Eğer birden fazla varsa bu biraz daha farklı. Şimdi biz tek düşünelim. Ne yapacak? Bir parçası, bir tane thread'imiz işlemciye girecek. Belli bir süre çalışacak. Sonra thread'i diğer thread girecek. Ama bu giriş ve çıkışlar nano saniyeler mertebesinde olduğu için bize nasıl görünüyor? Sanki eş zamanlıymış gibi görünüyor.
+
+140
+00:33:46,036 --> 00:33:49,276
+Concurent olarak görünmesi mevzusu threadler de budur.
+
+141
+00:33:50,296 --> 00:33:57,576
+Gerçekte eğer dediğim gibi tek bir çekirdek üzerinde, tek bir işlem üzerinde olan şey, birinci thread girer, sonra ikinci thread girer.
+
+142
+00:33:57,676 --> 00:34:01,496
+Artık orada bir planlama vardır ve bunu işletim sistem sizin programınıza göre yapıyor.
+
+143
+00:34:02,576 --> 00:34:07,116
+Bu şekilde program tamamlanıyor. Ama gerçekte böyle bir şey normalde olmaz.
+
+144
+00:34:08,096 --> 00:34:09,636
+Buna sanal paralellik deniyor.
+
+145
+00:34:13,748 --> 00:34:40,447
+Örnek olarak işte grafik kullanıcı arayüzleri. Mesela bu bir grafik kullanıcı arayüzü, bunun bir sürü özelliği var. Sonra bir diğer örnek web browser. Bir web browserda ne yapıyorsunuz? Aynı anda 5-6 tane tab açabiliyorsunuz. Bunların her birisi ayrı bir programmış gibi birbirinden bağımsız çalışıyor. Birbirini etkilemiyorlar. İşte bunlar threadler vasıtasıyla oldu arkadaşlar.
+
+146
+00:34:41,331 --> 00:34:52,831
+Bir web browser açtığında o bir kendisi proses. Opera'yı açtığınız, işte Chrome'ı açtığınız bir proses. O prosesin altında farklı alt parçalar var. Treadler var.
+
+147
+00:34:54,831 --> 00:34:55,671
+Pekala.
+
+148
+00:34:59,507 --> 00:35:12,007
+Peki gerekli mi bu? Evet, gerekli arkadaşlar. Hız gerektiren durumlarda, daha hızlı sonuca ulaşılması gerektiren durumlarda bir kere kullanılıyor.
+
+149
+00:35:14,147 --> 00:35:25,407
+Eğer real time'a yakın bir sistem çalıştıracaksanız kullanıyor. Bir taraftan input alıp öbür taraftan hızlı bir şekilde output vereceğiniz programlar olabilir. Orada kullanılıyor gibi.
+
+150
+00:35:27,507 --> 00:35:42,807
+Ve gerçek hayatta aslında olan bir şey. Mesela bir kantin düşünün. Kantine bir girişte sıra var. O sıradan fiş alıyorsunuz. Hani sert servis olduğunu düşünün.
+
+151
+00:35:43,807 --> 00:35:54,467
+Şimdi fiş kuyruğu bir işlem, bir proses. Fiş kuyruğunu fişinize aldınız. Yemek sırasından yemek alacaksınız. Yemek kuyruğu diye bir şey var.
+
+152
+00:35:55,251 --> 00:36:19,331
+Aldığınız yemeği yediniz, çöplerinin atılmasıyla alakalı bir de orada ayrı bir proses var. Bakın üç tane proses şimdilik tamamladık. Bunların her birisi birbirinden bağımsız, eş zamanlı olarak görütülmesi gerekiyor. Yani önce fiş kuyruğu bitsin de ondan sonra yemek kuyruğuna sıra gelsin diyemiyoruz değil mi günlük hayatta? Fiş kuyruğunda işlemler yürürken öbür tarafta yemek kuyruğunda ve diğer kuyrukta işlemler yürüyor.
+
+153
+00:36:20,211 --> 00:36:33,891
+Eğer sizin probleminizle bu şekilde simülasyonları veya gerçeklemeleri içerecekse, aynı maddesi çarpma örneğinde olduğu gibi, o zaman tereddütleri kullanmak zorundasınız. Ama kullanırken de birazdan konuşacağız. Bazı özellikleri var.
+
+154
+00:36:39,347 --> 00:36:59,347
+Tread ile proses arasında ne fark vardır? Bunu da kısaca söyleyelim. Proses arkadaşlar, birden fazla thread içerebilir ama thread'in proses içermek gibi bir durumu yoktur. Proses bir tanedir. Thread bunun alt bölümleridir.
+
+155
+00:36:59,347 --> 00:37:06,208
+Şimdi sizin programınız çalıştırıldığı zaman bellekte buna bir yer ayrılıyor.
+
+156
+00:37:07,380 --> 00:37:13,519
+Bunu hep aynı konuşuyoruz. Genellikle diziler üzerinde işlem yaparken anlatıyorum. İşte hip bölgesi, stack bölgesi falan.
+
+157
+00:37:14,980 --> 00:37:19,560
+İşte programınız çalıştırıldı, proses haline geldi. Bellekten size bir yer verildi.
+
+158
+00:37:21,840 --> 00:37:29,159
+Burada belli bir yerde programınızın datası var. Ondan sonra uninitialized datalar var.
+
+159
+00:37:31,519 --> 00:37:32,760
+Uninitialized diyelim.
+
+160
+00:37:33,492 --> 00:37:58,492
+Statik ve Global değişkenler var. Global değişken. Sonra belleğinizin heap bölgesi var. Bu heap bölgesinde mallok oluşturduğumuz şeyler falan tutuluyor. Stack bölgesi var. Bir de programınızın komutlarının, instrakşınlarının olduğu bölüm var. Genel olarak bu kadar herhalde. Başka bölümlerde olabilir. Bu sizin sadece programımıza ait bir şey. Buna...
+
+161
+00:37:59,092 --> 00:38:18,132
+Proses Kontrol Bloğu diyoruz. Bu Proses Kontrol Bloğu bir başka prosesin adres uzayına erişemez. Hani büyüyebilir, küçüğebilir, işletim sistemi hip bölgesini arttırabilir burada. Stek bölgesi genellikle sabittir. Bu büyüyebilir ama başka herhangi bir prosesin alanına erişemezsiniz.
+
+162
+00:38:18,512 --> 00:38:25,351
+Thread'lerde arkadaşlar bu Proses Kontrol Bloğu'nun içerisinde kendilerine ait thread kontrol blokları var.
+
+163
+00:38:26,452 --> 00:38:35,811
+Bir thread bir thread'e gerektiği durumda bazen erişebiliyor da hep her zaman bunu erişebilir diyemiyoruz. Ama bu alanda küçük parçalar içeren yerler.
+
+164
+00:38:37,152 --> 00:38:46,492
+Prosesler kendi adres uzayını birbiriyle paylaşamazken thread'ler bunu yapabiliyor. Çünkü thread'ler birbiriyle haberleşme imkanları var. Birazdan bakacağız.
+
+165
+00:38:54,387 --> 00:39:12,467
+Alanda işte şurada var. Siz buradan gidip o prosesin adres alanına erişemezsiniz. Proses 2 diyelim. Bu da proses 1 diyelim. Ama bu thread'lerde mümkün. Çünkü thread dediğim gibi şu alanın küçük parçalara bölünmesiyle oluşturulan bir şey.
+
+166
+00:39:16,436 --> 00:39:37,476
+Proseslerin kendine ait açık file descriptörleri varken threadler bunu ortak olarak kullanıyor. Ne demek file descriptör? Şimdi bir f-scan-f'de şey görmüştük. Standart input, standart output ve standart error. Bunun vasıtasıyla ne yapıyorduk?
+
+167
+00:39:43,583 --> 00:39:49,583
+Neyi gerçekleştiriyoruz? Okuma-yazma işlemlerini gerçekleştiriyoruz. Bu, proseslerini her bir için ayrı ayrıdır.
+
+168
+00:39:49,583 --> 00:39:55,583
+Ve bu da arkadaşlar, şu proses kontrol bloğu içerisinde tutulan file descriptor alanı vardır. Yani onu eklemedik.
+
+169
+00:39:55,583 --> 00:39:59,583
+Prosesin her birisi için ayrı ayrıdır. Her prosesi ayrıca tahsis edilir.
+
+170
+00:39:59,583 --> 00:40:05,583
+Ama threadlerde bu ortak kullanımı var. Çünkü bir tane prosesin altında çalışacak.
+
+171
+00:40:08,916 --> 00:40:22,676
+Process Execute, prosesler birbirinden bağımsız olarak çalıştırılır ve prosesler arası senkronizasyon ancak kernel tarafından yapılır.
+
+172
+00:40:22,676 --> 00:40:29,936
+Yani işletim sisteminin gözetimi altında oluyor bu proseslerin arasındaki senkronizasyon.
+
+173
+00:40:36,019 --> 00:40:48,119
+Bu, prosesin içerisinde yazdığınız sizin kod tarafından yapılması gereken bir şey. İşletim sistemi buna çok fazla müdahil olamıyor.
+
+174
+00:40:50,619 --> 00:41:00,119
+Şimdi, threadler arasında da geçiş var. Context Switching dediğimiz şey var. Prosesler arasında da geçişler var. Bu, Context Switching süresi...
+
+175
+00:41:01,972 --> 00:41:17,212
+Şeye karşı, proseslerdeki konteks seviçe göre, threadlerdeki konteks seviçin biraz daha hızlı. Çünkü işletim sisteminden ziyade bizim yazdığımız basit kodlar üzerinde çok karmaşık işlemler içermeyen bir şeyler yapılacak.
+
+176
+00:41:22,132 --> 00:41:32,791
+Şimdi iki proses arasındaki interaction dediğimiz yani haberleşme interprocess communication metotlarıyla ancak elde edilebiliyor, gerçekleştirilebiliyor.
+
+177
+00:41:32,791 --> 00:41:39,791
+Fakat bunu threadler arasındaki haberleşmeye girince...
+
+178
+00:41:41,844 --> 00:41:50,684
+Bellek üzerinde, tek segmenti üzerinde ortak alanların paylaşımıyla yapılabilecek kadar kolaylaşıyor. Bunların daha detayları şeydi arkadaşlar, işletim sistemlerinde.
+
+179
+00:41:53,304 --> 00:42:00,224
+İşletim sistemlerinin, threadlerin implementasyonuna ait herhangi bir doğrudan şey yok.
+
+180
+00:42:01,824 --> 00:42:05,944
+Kütüphanesi yok. Onlar doğrudan thread implemente etmiyorlar.
+
+181
+00:42:07,224 --> 00:42:07,724
+Daha sonra,
+
+182
+00:42:08,755 --> 00:42:25,195
+Daha ziyade, onlar bir prosesin parent prosesi, bir parçası, bir prosesin parçası gibi görüyorlar. Biraz önce gösterdiğim işte Ctrl Alt derili açılan ekranda da aslında bir anlamda bu yapılıyor.
+
+183
+00:42:33,300 --> 00:42:59,400
+Şunu demiş, what would happen if a thread execs a new binary exec? Şimdi bir thread, sizin yazdığınız bir program. İkili bir şekilde şeyler execute ederse, yani bir program yazdığınız, ikiye bölünüyor, o ikiye bölünüyor, o ikiye bölünüyor. Bir proses gibi çalışıyor. Ne yapabilirsiniz? Belliği çok kısa sürede proseslerle boğabilirsiniz.
+
+184
+00:43:00,403 --> 00:43:20,264
+Normalde proses oluşturmada fork diye bir şey vardır. İşletim sisteminin arasında anlatacaklar. Oluşturulan prosesin aynısını duplicate hale getirebiliyorsunuz. İki tane, dört tane, sekiz tane, ikinin katları şeklinde prosesleri arttırabiliyorsunuz. Mümkün. Ama bu threadlerde pek yok. Threadlerde olsa iş çünkü daha çok karışır.
+
+185
+00:43:23,795 --> 00:43:38,915
+Threadlerin debug edilmesi birazcık zor. Bunları aradan söyleyeyim. Çünkü ben devsi de nasıl debug yapıyorsam, herhangi bir threadin çalışmasının nerede başlamış, nerede bittiğini bilmiyoruz.
+
+186
+00:43:38,915 --> 00:43:45,415
+Nerede kaldığını bilmiyoruz. Bir problem debug edilirken değişkenleri çok rahat analiz edebilmek lazım.
+
+187
+00:43:47,827 --> 00:43:56,947
+Aşırı fazla thread kullanımı, yani problemi tamam en küçük parçalara bölelim derken bu sefer fazla bölmekten kaynaklı performans düşük tuşları da meydana gelebiliyor.
+
+188
+00:43:58,947 --> 00:44:14,788
+Bir de şu var arkadaşlar. Asıl önemli olan şey bu. Tamam probleminizi modüler parçalara böldünüz. Olabildiğince de threadler oluşturdunuz. Bu oluşturduğunuz threadler arasında senkronizasyon sağlamanız lazım.
+
+189
+00:44:15,699 --> 00:44:20,099
+Şimdi bir saniye hemen şu ışığı açayım da öyle anlatayım.
+
+190
+00:44:55,219 --> 00:45:02,599
+Şimdi normalde threadlerin, ben bunu sınıfta anlatırken genelde bu örneği veriyorum, biraz daha iyi anlaşılıyor.
+
+191
+00:45:03,599 --> 00:45:05,419
+Threadlerin yaptığı şey şu arkadaşlar.
+
+192
+00:45:06,379 --> 00:45:12,519
+Prosesler birbiri, thread parçaları birbiriyle o kadar hızlı değişiyor ki siz onun farkına varamıyorsunuz.
+
+193
+00:45:12,519 --> 00:45:20,719
+Şimdi kendiniz evde şunu denemeye çalışın. Bir elinizle, elinizi bir tanesini içeriden dışarıya doğru çevirin.
+
+194
+00:45:21,339 --> 00:45:22,819
+Öbüründe dışarıdan içeriye doğru.
+
+195
+00:45:23,315 --> 00:45:26,016
+Ve bunun ikisini aynı anda yapmaya çalışın, yapamayacaksınız.
+
+196
+00:45:26,875 --> 00:45:28,675
+Tredin yapmaya çalıştığı da aslında budur.
+
+197
+00:45:29,456 --> 00:45:32,396
+Bir tane böyle yaparken, ikisini aynı anda yapmıyor.
+
+198
+00:45:32,831 --> 00:46:00,831
+Birini böyle yaparken, diğerini hızlı bir şekilde, biri bitince hemen diğerine başlıyor. Ve siz öyle bir illüzyon görüyorsunuz ki, bu ikisi aynı anda oluyormuş gibi. Bu ikisinin gerçek anlamda aynı anda olması, denerseniz kafayı yakarsınız, dikkat edin. Bu ikisinin gerçek anlamda aynı anda olması nedir? Multi Processing'dir. Yani baya baya iki tane proses aynı anda çalışıyor. İnsan beyninin işte bu özelliğinden dolayı bu iki işlem, bir tanesi böyle yaparken, bir tanesi böyle yaparken.
+
+199
+00:46:00,831 --> 00:46:26,311
+Hocam ben böyle yapabiliyorum diyorsanız bu zaten tek bir prosestir. Birini bu yönle, diğerini bu yönle yapabilmek iki tane proses. Ve ikisini aynı anda yapabilen varsa demek ki beynin iki tarafında çok iyi bir şekilde aynı anda kullanılabiliyor demektir. Çok az insan bunu yapabiliyor. Bu iki dediğim şey proses arkadaşlar. Malta proses konusu. Ama bunun maltı trede geldiğimizde bunu ona dönüştürürsek bir tanesini böyle yaparken.
+
+200
+00:46:26,739 --> 00:46:51,739
+Diğerine, biri bittiğinde hemen diğerine geçip bunu yapabilmek işte bu multi-thread'e örnek olarak verilebilir. Genelde bunu sınıfta böyle anlatıyorum. Biraz daha iyi anlaşılıyor. Şimdi bu işi yaparken thread'liler dedi ki T1 thread'imiz var, T2 thread'imiz var, T3 thread'imiz var falan falan TN thread'imiz var. Bizim bunları yönetmemiz gerekiyor arkadaşlar.
+
+201
+00:46:52,532 --> 00:46:54,572
+Yönetmek ne demek? Senkronize etmek.
+
+202
+00:46:56,572 --> 00:47:02,012
+Yani önce T1 mi gelecek, T2 mi gelecek, T1 ne kadar süre kalacak, T2 ne kadar süre kalacak.
+
+203
+00:47:02,912 --> 00:47:09,792
+İşte ortak bir değişken, global bir değişken üzerinde bunlar nasıl işlem yapacaklar, erişebilecekler bununla alakalı şeyler.
+
+204
+00:47:12,872 --> 00:47:17,232
+Ve burada thread senkronizasyonu daha çok bize bırakılıyor.
+
+205
+00:47:18,195 --> 00:47:42,195
+Proseslerin senkronizasyonuyla biz ilgileniyor muyuz? Yani işletim sistemi bu işi kendisi yapıyor. Ama thread'in senkronizasyonunda biz müdahil olabiliyoruz. Yazdığımız kodlarla, ulaştığımız, verdiğimiz önceliklerle bunu biz yapabiliyoruz. Ve senkronize edeyim derken bazı problemlere sebep oluyoruz. Yani yeterince senkronize edemiyoruz. Bunlardan bir tanesi...
+
+206
+00:47:45,076 --> 00:47:50,895
+Problemlerden bir tanesi nedir, bilen var mı? Genel olarak iki tane problem var.
+
+207
+00:47:57,235 --> 00:48:24,076
+Deadlock dediğimiz örümcül kilitlenme. Bazen programların kilitlendiğini görürsünüz. O programın kilitlenmesi muhtemelen programı yazan kişinin o threadleri doğru düzgün senkronoza etmediğinden kaynaklı. Şu demek deadlock arkadaşlar. Şimdi prosesler dedi ki threadler içerecek. Prosesin içerisindeki threadler ortak bir değişkene ulaşmak isteyebilirler.
+
+208
+00:48:24,916 --> 00:48:36,855
+Veya işlemciyi kullanırken bir problem olur. Bir thread, bir başka thread'in çalışmasını beklemesi gerekebilir. Bu işlemlerde bir aksaklık olmuş olabilir.
+
+209
+00:48:37,855 --> 00:48:44,855
+Threadler arasındaki bu geçiş sırasında program ekzeküsünün kararsız kalıp durması,
+
+210
+00:48:45,556 --> 00:48:51,695
+Ve threadlerin birbiriyle haberleşememesi gibi problemleri deadlock diyoruz.
+
+211
+00:48:52,336 --> 00:48:58,675
+Genellikle bu kaynakların paylaşımı source sharing'den oluyor.
+
+212
+00:49:02,324 --> 00:49:16,124
+Source dediğimiz Variable olabilir, paylaşılabilir, Variable olabilir. Ondan sonra bir CPU olabilir veya bir Memory bölgesi olabilir. Olabilir, olabilir. Bunun birçok açılımı var. İşletim sistemlerinde detayını göreceksiniz.
+
+213
+00:49:16,324 --> 00:49:29,324
+Yani senkronize edeyim derken ne yapabilirsiniz? Kilitlenmeye sebep olabilirsiniz. Şunu örnek veriyorum. Yeni bir tecrübesiz trafik polisi koyduğunuz bir kavşağa.
+
+214
+00:49:29,331 --> 00:49:42,632
+Trafiği düzenleyeyim derken kilitleyebiliyor. Niye kilitleyebiliyor? Örneğin bir tam kavşaya geldi. Bu kavşakta genellikle bu problemde yani dörtlü bir kavşak üzerinden örnek veriyoruz.
+
+215
+00:49:50,036 --> 00:49:51,255
+Nasıl olabilir? Şöyle.
+
+216
+00:49:52,516 --> 00:50:05,096
+İşte bu böyle gelecek. Buradan bir araç grubu. Buradan bir araç grubu böyle gelecek. Bir diğeri işte şu şekilde gelecek. Bir diğeri de bu şekilde gelecek. Ve geçişlerin olmadığını kabul edin.
+
+217
+00:50:05,856 --> 00:50:12,275
+Şimdi bu buraya gitmek istiyor, geçemiyor bundan dolayı. Bu buraya gitmek istiyor, bundan dolayı geçemiyor. Bu buraya gitmek istiyor, bundan dolayı geçemiyor.
+
+218
+00:50:12,996 --> 00:50:17,795
+Kimse hiçbir yere kıpırdayamıyor. Bütün araçların da böyle kuyruk, yani bir sürü araç olduğunu kabul edin.
+
+219
+00:50:18,675 --> 00:50:44,795
+Anlatabildim mi? Bunun adı bir anlamda kilitlenmedir. Trafik kilitlendi diyoruz ya. Onun için kavşaktaki aracın önce çıkması, kavşağı boşaltması, diğer taraflardaki gelenlerin beklemesi diye bir kural vardır. Her ne kadar bazı yerlerde bu tersten işlese de, kural nedir? Önce kavşaktaki boşaltır, ondan sonra kavşak boşsa, burada herhangi bir dörtlü olanlardan bir tanesi gelir. Hatta en sağdakine sıra verilir falan.
+
+220
+00:50:45,556 --> 00:51:04,655
+Şimdi bunun çözümü kaynakları da release etme ile alakalı. Diyecek ki polis geriye gidin. Şuradakilere geriye gidin diyecek. Önce buradakiler geriye gelecekler. Burası açılacak. Diyecek ki gerekirse sen de geriye git. Yani bu kaynağı bırakacak.
+
+221
+00:51:10,835 --> 00:51:32,496
+Veya ne yapıyoruz biz program kilitleyince? Programı kapatıyoruz, yeniden açıyoruz. Buradaki kaynaklar bırakıldıkça bu processler, bu threadler, bu kaynağa erişim sağlayıp tekrar buradan yürüyüp gidecekler. Bakın, senkronize edelim derken neye sebep olduk? Deadlock'a sebep olduk. Bir diğer arıza da şudur arkadaşlar.
+
+222
+00:51:41,364 --> 00:51:44,963
+Starve to Death genellikle kullanılır İngilizce'de.
+
+223
+00:51:49,652 --> 00:52:17,132
+Açlık, güzel. Şu arkadaşlar, biz T1, T2, T3 threadlerimize imkan tanıyoruz. Diyoruz ki sen, sen, sen gel. Ama gariban öyle bir thread var ki hiçbir şekilde ona sıra gelmemiş. Yani senkronizasyon işlemini kötü yapmışız, hiç sıra gelmemiş. Hatta thread 1, thread 2, thread 3'ün işlemleri bitmiş. Yani onlar programın bitmesini bekliyor.
+
+224
+00:52:17,811 --> 00:52:42,071
+Ama programın veya prosesin tamamlanması için bitmesi gereken bir tane thread var. Ona hiç sıra gelmiyor. Unutulmuş kalmış. İşte buna starvation, herhangi bir şekilde kaynakları kullanamama starvation problemi diyoruz. Bu da mümkün. Bunu işletim sistem kitaplarında şöyle bir anekdotla anlatırlar. 80'li yıllarda tabii bu starvation problemleri, şey, prosesler için de geçerli arkadaşlar.
+
+225
+00:52:43,155 --> 00:53:07,016
+İşletim Sistemi kitaplarında şöyle anlatılır. 80'li yıllarda bir bilgisayar kapatılmaya çalışılıyor. Ve o bilgisayardaki prosesler yaklaşık 20 yıldır çalıştığı söyleniyor. Kapatılmaya çalışırken diyor ki hala açık olan bir proses var. Kapatmak istediğinizden emin misiniz tarzında bir mesaj geliyor. Diyorlar ki hangi proses olabilir falan. Meğer bir tane proses bu senkronizasyon işlemlerinden dolayı.
+
+226
+00:53:07,507 --> 00:53:25,507
+Öyle gariban bekliyormuş. Herhangi bir şekilde işlemini tamamlayamamış. Tamamlayamadığı için programın bilgisayarın kapatılması sırasında bir engel çıkarmış. Çünkü bu önceden işletim sistemlerinde proseslerin senkronizasyonuna dair...
+
+227
+00:53:26,384 --> 00:53:36,004
+Daha çok özellikle Linux tabanlı, Fork'lar vs. onların da Interprocess Communication konusunda senkronizasyon komutları vardı. Onlar yapılıyordu.
+
+228
+00:53:36,884 --> 00:53:42,804
+İşte bu senkronize edeyim derken bu tür hastalıklara, bu tür sıkıntılara sebep verebiliyoruz.
+
+229
+00:53:44,084 --> 00:53:45,004
+Bunu da söylemiş olalım.
+
+230
+00:53:47,403 --> 00:53:51,584
+Biraz daha bakacağım. Ondan sonra arkadaşlar örnek göstereceğim.
+
+231
+00:53:53,652 --> 00:54:15,491
+Treadler peki nasıl oluşturulacak? Bunun için arkadaşlar, programlama dilinizin bununla alakalı kütüphaneleri olması gerekiyor. Aynı F-Scan F'i nasıl kullanıyorsak. Bunun içinde P-Tread kütüphanesi var C'de. Başka dillerde başka kütüphaneler var. Siz bunu Object Oriented dersinde de göreceksiniz Java threadleri konusunda.
+
+232
+00:54:16,275 --> 00:54:27,715
+Bir de işletim sistemleri konusunda yine orada p-threadler anlatılır. Daha işin detayıyla, bu anlattıklarımın daha detayları bir işletim sistemi perspektifinden anlatılacak.
+
+233
+00:54:29,395 --> 00:54:37,515
+Şimdi her thread'in kendisine ait bir ID'si, thread ID'si var ve bunun bir pointer'ını kullanacağız biz. Unique'dir arkadaşlar bu.
+
+234
+00:54:39,507 --> 00:54:44,307
+Çalışan bir prosesle alakalı içeriğinin de hakkında bazı bilgileri sahiptir.
+
+235
+00:54:45,447 --> 00:54:48,607
+Genelde bu P-Thread kütüphanesinden elde edilen bir şey.
+
+236
+00:54:49,627 --> 00:54:53,387
+Bunun için biz kullanmak için P-Thread kütüphanesini inkulat ediyoruz.
+
+237
+00:54:53,667 --> 00:54:56,288
+Bunun temel bazı fonksiyonları var bu kütüphanede.
+
+238
+00:54:57,707 --> 00:55:05,867
+P-Thread Crate, herhangi bir yeni thread oluşturmayla alakalı kullanılan kütüphanedir.
+
+239
+00:55:06,452 --> 00:55:24,751
+Şu şekilde çalışıyor. Thread'in ID'sini return ediyor bu. Herhangi bir thread pointer'ı alıyoruz. Thread'in çalışacak özellikleri burada assign ediliyor. Attribute değişkeni var. Genellikle default ayarlar kullanılır da bu çok çok derin bu konudur.
+
+240
+00:55:35,411 --> 00:56:02,991
+Thread, Etrubus, Java Thread'lerinde daha farklı oluşturuyor. Bu biraz daha basit bir kütüphane olduğu için çok fazla özelliği yok ama çok fazla özelliği olmamasına çok çok detaylı bir şeydir. Bu thread hangi fonksiyonla çalışır? Bir fonksiyon pointer veriyoruz. Örneğin f fonksiyonunu çağıracağız diyeceğiz bu fonksiyonu da, bu thread'te. Ve o fonksiyona gönderilecek argümanları gönderiyoruz. Void argümanları.
+
+241
+00:56:03,380 --> 00:56:27,420
+İşte sayılar gönder, tekst gönder vs. Dediğim gibi şu çok detaylı bir şey. Biz bunun detayına pek girmeyiz. Daha sonra start rutin dediğimizde thread'in çalışacağı şu rutini, yani fonksiyonu tanımlayacağız. Fonksiyonun içerisinde ne yapmak istiyorsunuz? Dizimi toplayacaksınız, matrisimi çarpacaksınız, ne yapacaksınız o?
+
+242
+00:56:28,052 --> 00:56:44,012
+Bunun argümanları gönderiliyor ve bunun return type'ı da eğer thread başarılı bir şekilde oluşturulduysa pardon return'de sıfır dönecekmiş. Değilse herhangi bir return numarası yani error numarası gönderilecek.
+
+243
+00:56:44,311 --> 00:56:49,572
+Şimdi ara verelim. 10 dakika sonra geldiğimizde örneklerine bakacağız.
+
+244
+00:56:50,356 --> 00:57:01,716
+Hem çalıştırarız hem de buradaki slide'daki örneklere bakarız. Saat 15 geçe görüşmek üzere. Ondan sonra bitireceğim arkadaşlar. Çok bir şey kalmadı zaten. 15 geçe görüşürüz.
+
+245
+01:07:46,195 --> 01:07:55,295
+Evet arkadaşlar, şöyle bir şey deneyelim. Biz de yazmayı deneyelim.
+
+246
+01:08:00,500 --> 01:08:21,699
+Basit bir. Burada bu işin birkaç temelini anlatacağım. Sonra bir kaynak vereceğim size. Daha sonra isteyen olan devam edebilir. Normal include diyorum. Bakalım include'larda böyle sıkıntı yaşamazsak. Genelde bu thread'ler Linux kütüphanelerle daha uyumlu çalışıyor da.
+
+247
+01:08:25,779 --> 01:08:29,779
+Bazen karıştırırken ayarları bozmadıysam.
+
+248
+01:08:31,779 --> 01:08:33,779
+f-thread.h
+
+249
+01:08:33,779 --> 01:08:36,652
+Bir de time.h eklemişim.
+
+250
+01:08:49,427 --> 01:08:54,028
+Genelde şöyle bir yanılgı oluyor. Onu tekrar üzerinden geçmek isterim.
+
+251
+01:08:57,971 --> 01:09:20,912
+Şimdi bu bir main programı. Kendi içinde bir çalışma bloğu var. Thread birimizi bir f fonksiyonu ile ilişkilendireceğiz. Yani t1 dediğimiz bir f fonksiyonu. Baya bildiğimiz fonksiyon. Thread 2 de örneğin g fonksiyonu olsun. T2.
+
+252
+01:09:23,347 --> 01:09:32,667
+Çalışma şu şekilde oluyor arkadaşlar. Biz buradan t1 çalıştır diyoruz, t2 çalıştır diyoruz, start diyoruz.
+
+253
+01:09:34,467 --> 01:09:42,548
+Bir fonksiyon çağrısı gibi görünmesine rağmen fonksiyon çağrısı doğrudan değil. Çünkü buna thread'lerle ilişkili.
+
+254
+01:09:47,283 --> 01:10:02,963
+Örneğin T1 ve T2 eş zamanlı olarak çalışmaya başladı. Bu şu demek. İşletim sistemi veya işlemci üzerinde T1'in belli bir parçası çalışıyor. Bakın bu kod arkadaşlar. Baya bildiğimiz fonksiyon dedi.
+
+255
+01:10:04,103 --> 01:10:10,724
+İşte şurada bir yerde printf yaparken printf'i bitirdi. Sonra dedi ki sıra T2'ye geldi. Sonra buna gelebilir.
+
+256
+01:10:11,636 --> 01:10:33,596
+Belki burada döngü içindeydiniz. Belki ifin içerisindesiniz. Ifin şartını yaptınız. Programın çalışması orada donup kalıyor. Sonra diyor ki diğer fonksiyona gidelim. Diğer fonksiyon çalışıyor. Bunun sırası bizim için burada kaldığı yerden devam ediyor. Tekrar baştan başlamıyor bakın. Örneğin bir no olanı da buradan ayrıldı.
+
+257
+01:10:34,228 --> 01:10:52,247
+Sonra ikinoğlu zaman biriminde buradan ayrıldı. Kaldığı yer şuradan devam edildi. Dolayısıyla bu kaldığı yeri hatırlaması lazım. Kaldığı yere kadarki programdaki değişkenlerin en son değerleri nedir? Onları hatırlaması lazım. Bunlar hep process control bloğu altındaki trade'e ilişkin alanlarda saklanan şeyler.
+
+258
+01:10:53,148 --> 01:10:56,307
+Yani genelde burada arkadaşlar şöyle bir hataya düşüyorlar.
+
+259
+01:10:56,627 --> 01:11:13,487
+Hocam, F1 çalışırken tamam, G çalıştı. G tekrar çalışınca baştan mı başlıyor? Hayır, baştan başlamıyor. Kaldığı yerden devam ediyor. Normal bir fonksiyon çağrısı ne olur? Hani fonksiyon içinde fonksiyon çağırmıyoruz. Burada T1 ayrı bir şey, T2 ayrı bir şey çalışan.
+
+260
+01:11:13,876 --> 01:11:29,056
+Bunlar bağımsız, ikisi birbiriyle alakası olmayan, herhangi bir şekilde ikisi birbirini çağırmayan fonksiyonlar. Bu çalışırken bir kesintiye uğruyor. Sıra buna geliyor. Sonra kaldığı yerden devam edecek şey buradan devam ediyor. Buna dikkat edelim arkadaşlar. Çok karıştırılan bir kavram.
+
+261
+01:11:31,123 --> 01:11:38,763
+Günlük hayatta biz eş zamanlı, aslında birçok şey farkında olmadan yapıyoruz da eş zamanlı düşünerek yapınca insanın kafası birazcık karışabiliyor.
+
+262
+01:11:39,423 --> 01:11:45,283
+Şimdi arkadaşlar, öncelikle bir thread oluşturacağız. Thread IDC oluşturma işlemine bakalım.
+
+263
+01:11:45,283 --> 01:11:50,283
+Burada P-Thread Kütüphanesi'nden şu...
+
+264
+01:11:50,420 --> 01:11:59,780
+Alttan trt genellikle integer id'lerden kullanılan bir notasyondur. Bu da pay thread kütüphanesinde bir id oluşturma notasyonu. Önce bir derliyeyim bakalım çalışacak mı?
+
+265
+01:12:01,399 --> 01:12:03,059
+Herhangi bir arıza vermezse.
+
+266
+01:12:06,836 --> 01:12:27,076
+Evet, bakın bu değerleme aşamasında şurada bir yerde p thread de buraya dahil ediyor. Onun için mesela make file yazmak bazı durumlarda daha avantajlı. Şuralarda bir yerde p thread ile alakalı bir şey görmemiz lazım. Gerçi bu direkt arka planda kendi hallediyorsa.
+
+267
+01:12:31,636 --> 01:12:34,636
+Neyse, göremedik.
+
+268
+01:12:38,355 --> 01:12:45,595
+Tamam, demek ki thread alabiliyoruz. Şimdi thread'den bir id elde ettik. Thread'i create edeceğiz.
+
+269
+01:12:50,323 --> 01:13:05,523
+Şu thread'in id'sini vereceğiz. Ama bunun adresi gidecek arkadaşlar. Pointer değişkeni. Tid diyor. Sonra thread özellikleri. Şimdi bunun null yazarsam varsayılan thread özellikleri gider. Ama bu dediğim gibi çok geniş bir kavram.
+
+270
+01:13:09,939 --> 01:13:18,020
+İşletim Sistemi dersinde göreceğiniz teorik şeylerin her biri bu thread attribute konusu altında uygulamalı olarak anlatılan bir şey.
+
+271
+01:13:18,159 --> 01:13:24,059
+Yani burada saatlerce konuşulabilir bunun üzerinde. Sonra bir fonksiyon edelim. İşte hello diye bir fonksiyonum olsun diyorum.
+
+272
+01:13:25,020 --> 01:13:29,119
+Buna da hello thread diye bir mesaj göndereceğim.
+
+273
+01:13:31,619 --> 01:13:35,319
+Şimdi bunun gibi birden fazla thread oluşturabilirim.
+
+274
+01:13:35,319 --> 01:13:36,760
+Printf diyelim.
+
+275
+01:13:37,104 --> 01:13:45,003
+Thread çalışacak, çağırınca printf return to main.
+
+276
+01:13:48,659 --> 01:13:50,119
+Turn 0 diyelim.
+
+277
+01:13:51,659 --> 01:13:57,899
+Geliyorum, şuraya bir tane fonksiyon yazıyorum. Bu fonksiyonun özelliği şu arkadaşlar. Bir void pointer döndürecek.
+
+278
+01:13:59,139 --> 01:14:03,659
+Başka türde pointer döndürmez. Adını şuradaki yazdığım fonksiyon olacak.
+
+279
+01:14:04,500 --> 01:14:08,079
+Ve burada void pointer olarak bir parametre alacak. Neden böyle?
+
+280
+01:14:08,939 --> 01:14:15,019
+Çünkü bu global, yani her türden işlemi yapabilecek bir şekilde tanımlanması lazım.
+
+281
+01:14:15,667 --> 01:14:21,667
+Sonra gelen mesajı ekrana yazdıralım. Bu void pointerı nasıl kullanacağımızı geçenlerde görmüştük.
+
+282
+01:14:21,667 --> 01:14:31,667
+%ashback.slashn, ne yapıyorduk? Önce cast ediyorduk. Karakter pointerına cast et diyorum. Şu input'u cast ettik.
+
+283
+01:14:33,667 --> 01:14:38,667
+Şurada slip diye bir şey var. Bunu şu kadar süre uyutalım.
+
+284
+01:14:42,868 --> 01:14:55,208
+Exit diyorum. Thread'den çık. Yani eğer işlemi tamamladığımı göstermek istiyorsam, burada Null dışında bir değer verirsem 3-5 gibi buraya bir şeyler döner, onu görürüz. Şimdi çalıştıralım bakalım.
+
+285
+01:15:02,228 --> 01:15:29,448
+Burada başka bir örnek bulabilirsem. Evet, herhangi bir şey yok. Sonucu görelim. Bakalım ne olacak. Sonuçta, tabii sadece şu an için bir tane değer göreceğiz. Bakın arkadaşlar, çok ilginç. Önce ben thread'i çağırdım. Önce main'dekini yazdı. Güzel bir sonuç bu. Yani bunu görmek çok iyi oldu. Ondan sonra fonksiyonundakini yazdı.
+
+286
+01:15:29,779 --> 01:15:35,179
+Niye böyle? Bu programda kaç tane thread var?
+
+287
+01:15:45,011 --> 01:16:00,131
+Kaç thread var? Slip, thread'i uyutuyor, beklemeye aldırıyor. Yani şu demek, ben bekleyebilirim, benden başka thread varsa sıra ona gelebilir, şu kadar süre.
+
+288
+01:16:05,171 --> 01:16:09,835
+Bu programda veya bu proseste kaç tane tıra doluşur arkadaşlar?
+
+289
+01:16:21,203 --> 01:16:33,663
+İki, güzel. Birincisi Main Thread'i. Main'den itibaren başlayan şey. Diğeri de şu Thread'le oluşturduğumuz yeni Thread. Yani P Thread'le oluşturduğumuz yeni Thread.
+
+290
+01:16:34,023 --> 01:16:45,763
+Şimdi burada bir şey eklersek, önce Thread'in tamamlanmasını, Thread'in tamamlanmasından sonra, bakın yine Return 0 geldi. Yani program tamamen bitti. Ama
+
+291
+01:16:46,612 --> 01:16:55,612
+Her şey bitsin. En son main kapansın isterseniz şöyle bir şey yazacağız. Buna join diyoruz.
+
+292
+01:17:10,836 --> 01:17:17,456
+Dönüş değeri varsa thread'den, şu an için nul yazdık. Bunu bekle diyorum. Şimdi görelim sonucu.
+
+293
+01:17:24,532 --> 01:17:41,932
+Bakın Hello Thread yazdı, bekliyor şu an. 5 saniye bekleyecek. Ondan sonra bir turn to main dedi. O arada ne yaptı? Thread'i dondurdu. Şimdi thread donunca ama thread bitmedi. Thread bitmeyince fonksiyon bitmedi.
+
+294
+01:17:41,932 --> 01:17:50,132
+Fonksiyon bitmeyince join olamadı. Join olamadığı için şunu printf'i yazdıramadı. Mesela gelin.
+
+295
+01:17:52,275 --> 01:18:00,915
+Printed, after, write, call diyelim.
+
+296
+01:18:05,492 --> 01:18:07,311
+Şimdi çalıştıralım.
+
+297
+01:18:11,155 --> 01:18:18,028
+Bakın, After Threat, Call önce çalıştı. Normalde Create'den önce çalıştı. Sonra Hello Threat...
+
+298
+01:18:34,036 --> 01:18:55,515
+Ne oldu arkadaşlar? Bir bağlantı gitti geldi galiba. Ekranımı bir daha paylaşayım. En son şunu diyordum. Gördüğümüz sonuç bu arkadaşlar. Ama şunu da görebiliriz. Önce şu Hello Threat görebiliriz.
+
+299
+01:18:55,887 --> 01:19:02,787
+Bir daha çalıştırınca. Ondan sonra after thread call'u görebiliriz. Ondan sonra zaten return to main'i en son göreceğiz. O kesin.
+
+300
+01:19:02,787 --> 01:19:14,007
+Yani join olmadan, bu thread bitmeden şu satıra gelemeyeceğini burada söylemiş oluyoruz. Ama şu printf, şu printf'ten sonra yazılabilir. Şimdi bir daha çalıştırıyorum.
+
+301
+01:19:21,108 --> 01:19:33,507
+Yine after thread callu görüyoruz. Şöyle bir şey yapalım. TID2 diyorum. İkinci bir fonksiyon oluşturayım.
+
+302
+01:19:37,555 --> 01:19:41,055
+Buraya da ikinci Tred'imi gönderiyorum. Hello Tred 2 diyorum.
+
+303
+01:19:45,652 --> 01:19:50,951
+Bir de buna bakalım arkadaşlar. Bir saniye kapıya bakmam gerekiyor.
+
+304
+01:21:54,515 --> 01:22:08,775
+Evet arkadaşlar, kusura bakmayın. Öyle arada. Şimdi Hello Thread 2. Bakın şimdi Thread sayımız 3 tane oldu. Bakalım kim önce çalışacak. Bunu kestiremiyoruz arkadaşlar.
+
+305
+01:22:10,595 --> 01:22:20,515
+Bakın Hello Thread çalıştı. After Thread Cola geldi. Yani main'deki Thread'e geldi. Daha sonra Hello Thread 2'yi çağırdı. Daha sonra tekrar main'e döndü.
+
+306
+01:22:21,971 --> 01:22:23,451
+Bir daha çalıştırayım son olarak.
+
+307
+01:22:27,699 --> 01:22:34,100
+Yine bu sırada gidiyor. Şunu da mesela Join yapmamız gerekir.
+
+308
+01:22:37,652 --> 01:22:46,731
+Hatta şöyle bir şey diyebiliriz. Önce ikinci thread bitsin, ondan sonra birinci thread bitsin.
+
+309
+01:22:56,595 --> 01:23:10,475
+Bakın ikinci trenin bitmesini bekliyoruz. Ondan sonra şu mayine geçelim. Tamam. Çok basit tren oluşturma ile alakalı bir örneğimiz burada başka söyleyecek bir şey var mı?
+
+310
+01:23:13,415 --> 01:23:15,435
+Mesela örneği şu şekilde yapayım.
+
+311
+01:23:23,764 --> 01:23:35,764
+3 defa farklı threadler oluşturalım. Bir döngüyle. O farklı threadleri yani thread create'i 3 defa çalıştıralım.
+
+312
+01:23:37,764 --> 01:23:49,764
+Ve her birinde bir integer parametre gönderelim. Şöyle diyeyim, bir tane pthread id'm olsun yine. Aynı thread'i farklı farklı çağırabiliyorum.
+
+313
+01:23:57,971 --> 01:24:00,731
+y eşittir 0, y küçük 3.
+
+314
+01:24:04,148 --> 01:24:05,260
+i artı artı
+
+315
+01:24:09,716 --> 01:24:10,216
+Evet, evet.
+
+316
+01:24:14,420 --> 01:24:26,220
+Thread'in id'sini yine göndereceğim. Bizim hello function'umuzu çağıracağız. Önce thread özelliklerine null göndereceğiz. Sonra hello.
+
+317
+01:24:39,923 --> 01:24:41,423
+Neyse, biraz daha kısa keseyim.
+
+318
+01:24:43,283 --> 01:24:47,564
+Şuradan thread'in id'sini void parametre olarak gönderiyorum.
+
+319
+01:24:50,043 --> 01:24:54,404
+Sonra şuradan da pthread.exit diyelim.
+
+320
+01:24:57,923 --> 01:24:58,904
+Alttan thread exit.
+
+321
+01:25:01,043 --> 01:25:03,724
+Thread'in kapandığını gösterelim.
+
+322
+01:25:07,028 --> 01:25:12,608
+Bir tane global değişken oluştursak veya statik bir değişken oluşturalım şurada.
+
+323
+01:25:16,851 --> 01:25:17,691
+Sıfır olsun.
+
+324
+01:25:20,072 --> 01:25:30,271
+Bir tane integer id değişkeni oluşturacağım. Bu id değişkenim şuraya gelen input'un yani id'nin karşılığı olacak. Bunu öncelikle integer pointer'a dönüştürüyorum.
+
+325
+01:25:31,752 --> 01:25:35,631
+Tabi integer pointer'a dönüştürüyorum. Şimdi burası da integer pointer olmak durumunda.
+
+326
+01:25:37,971 --> 01:25:40,752
+Integer pointer input diyelim.
+
+327
+01:25:43,731 --> 01:25:46,172
+Aslı olan buradan giden bir değer.
+
+328
+01:25:48,211 --> 01:25:49,692
+Statik var.
+
+329
+01:25:51,412 --> 01:25:53,551
+X artı artı diyorum bir defa.
+
+330
+01:25:55,091 --> 01:25:56,431
+Şunları da ekrana yazdıralım.
+
+331
+01:26:00,492 --> 01:26:05,931
+Thread ID'miz artık şu ID'nin gösterdiği değer.
+
+332
+01:26:05,931 --> 01:26:08,451
+Yani şu.
+
+333
+01:26:15,604 --> 01:26:20,344
+thread id 2.100d diyelim.
+
+334
+01:26:27,220 --> 01:26:28,220
+Statik değişken.
+
+335
+01:26:30,260 --> 01:26:33,200
+2.100'de D diyorum.
+
+336
+01:26:34,819 --> 01:26:38,440
+Burada da buna karşılık olarak X'i yazalım.
+
+337
+01:26:39,540 --> 01:26:39,819
+Yeter.
+
+338
+01:26:40,819 --> 01:26:44,520
+Sonra X'i zaten arttırdığımız için gerek yok.
+
+339
+01:26:45,739 --> 01:26:48,159
+Bir çalıştıralım bakalım. Sıkıntılı bir şey var mı?
+
+340
+01:26:57,363 --> 01:27:06,083
+Evet, thread ID 2'nin oğlu thread ID'miş. Statik 1 ile çalıştı. Thread ID 3 çalıştı.
+
+341
+01:27:09,043 --> 01:27:16,323
+Statik 2 ile. ID 3 bir ara main'e dönüyor bakın.
+
+342
+01:27:23,796 --> 01:27:30,056
+2 ve 3. Normalde 3 tane thread olması lazım ama 2 tane thread varmış gibi çalışıyor.
+
+343
+01:27:31,676 --> 01:27:37,136
+Thread ID başka 0, 1 ve 2 için çalışacak.
+
+344
+01:27:38,536 --> 01:27:39,536
+Bir daha çalıştıralım.
+
+345
+01:27:41,636 --> 01:27:46,136
+Bir de şöyle yapalım. Bir de global değişkenimiz olsun. Pek kullanmayız ama onun için kullanmayın diyoruz.
+
+346
+01:27:46,676 --> 01:27:50,115
+G eşittir 0 diyelim. Şurada da G artı artı diyorum.
+
+347
+01:28:01,844 --> 01:28:02,863
+Şunu da 5 yapalım.
+
+348
+01:28:04,764 --> 01:28:06,123
+Biraz daha fazla olsun.
+
+349
+01:28:10,931 --> 01:28:15,791
+Her zaman tek fonksiyon yazmak zorunda mıyız diye bir soru gelebilir.
+
+350
+01:28:16,711 --> 01:28:20,531
+2, 3, 4, 5 diye başladı. En son main'e return etti.
+
+351
+01:28:24,072 --> 01:28:28,171
+Aslında 4 tane oluşturuyor. 0, 1, 2, 3, 4, 5 tane oluşturacak da.
+
+352
+01:28:29,391 --> 01:28:32,391
+Bir tane thread aynı id ile çalışıyor.
+
+353
+01:28:33,771 --> 01:28:37,711
+Bu şekilde birden fazla thread havuzu diyoruz buna.
+
+354
+01:28:38,739 --> 01:28:40,899
+Oluşturabilmek mümkün.
+
+355
+01:28:42,340 --> 01:28:47,760
+Şimdi bir örnek daha vardı. Ona da bakayım. Eğer o da çok alakasız bir şey değilse.
+
+356
+01:28:49,619 --> 01:28:55,399
+Trede mesela parametre olarak bunu direkt alalım arkadaşlar. Aynı şey olduğu için uzak bir yayın.
+
+357
+01:28:59,252 --> 01:29:25,432
+Trede parametre olarak bir structure gönderebiliriz. Göndereceğimiz structure ne olarak geçecek? Void pointer olarak geçecek. Bunu hangi türdense o türe dönüştürmek gerekiyordu şeyde. Biraz önce integer'a dönüştürdük. Bakın, böyle bir structure elemanı oluşturmuş. Bunun içerisine bu değişkenleri yazmış. Sonra diyor ki, Alan'ı gönder hello'ya.
+
+358
+01:29:26,100 --> 01:29:41,780
+Gönderdiğimiz Alan, Structure Argument türünde bir input'a gelen input'un bu değişkeni bu türdedir deyip, bu türdeki değişimi yaptıktan sonra alanlarına eriştiriyoruz.
+
+359
+01:29:42,820 --> 01:29:44,100
+Şunu compile edelim.
+
+360
+01:29:54,707 --> 01:30:01,307
+Bu şekilde görebiliyoruz. Her zaman için bir tane fonksiyon oluşturmak da durumunda değiliz arkadaşlar.
+
+361
+01:30:02,867 --> 01:30:07,847
+Örneğin şöyle yapalım. Hello2 diyelim.
+
+362
+01:30:13,652 --> 01:30:17,452
+Ondan sonra bir tret daha oluşturup...
+
+363
+01:30:20,948 --> 01:30:35,048
+Bunu da hello2 ile ilişkilendirelim. Sonra, şuna 2 diyorum. Önce 2 bitsin, sonra 1 bitsin diyebilirsiniz.
+
+364
+01:30:39,380 --> 01:30:49,380
+İşte, oluşturulan her bir thread farklı fonksiyonlarda çalışıyor. İşte bir tanesi dedim ya yazım denetimi yapacak, bir tanesi başka bir işlemi yapacak.
+
+365
+01:30:49,380 --> 01:30:54,680
+Word programında falan. Onlar bu mantıkla oluşturulan şeyler.
+
+366
+01:30:56,100 --> 01:31:01,760
+TID Undeclayed. Tabii şunu şuraya alacağız.
+
+367
+01:31:08,532 --> 01:31:10,532
+Şurada da 2 diyeceğiz.
+
+368
+01:31:11,731 --> 01:31:13,547
+Çoğun 2 diye bir şey olmaz.
+
+369
+01:31:20,851 --> 01:31:24,091
+Önce normal olan çalıştı, sonra kendisi çalıştı.
+
+370
+01:31:25,691 --> 01:31:30,771
+Şimdi bu konularda, şimdi size chatten bir link göndereceğim.
+
+371
+01:31:33,912 --> 01:31:40,031
+Adam Eyl, gayet otorite denebilecek bir adam.
+
+372
+01:31:40,031 --> 01:31:44,031
+Bunun sistem programlama dersinin...
+
+373
+01:31:49,652 --> 01:32:17,131
+İçinde threadlerle alakalı bölüm var. Size paylaştığım link bununla alakalı. PostX thread ve threadlerin sharingle alakalı işlemi şu dokuzuncu şartı. Bundan önceki konular işletim sistemi üzerinde sistem programlamaya ilişkin işte proses oluşturma, proses senkronizasyonu alakalı. Çok fazla hani anlamayabilirsiniz ama bu thread konusuyla alakalı kısımlara bakmanız, eğer merak ediyorsanız bakmanız iyi olur.
+
+374
+01:32:18,676 --> 01:32:40,156
+Şu bizim yaptığımız örneklere benziyor. Buradan birkaç bir şey söyleyeceğim. Thread'in join edilmesiyle alakalı kısmı. Thread'den bir değer döndürmek. Örneğin hello diye bir şey döndürüyor. Dönen değeri ekrana yazdırmak istiyor. Şunu mesela deneyelim.
+
+375
+01:32:45,555 --> 01:32:54,215
+Yani tamam bir mesaj gelecek ama hello mesajını strdub bizde çalışır mı tabi onu bilmiyorum.
+
+376
+01:32:59,252 --> 01:33:18,972
+Evet, burada böyle bir mesaj oluşturuyor. Oluşturduğu mesajı main'e gönderiyor. Bu ne için lazım? Örneğin, thread işini tamamladı. Thread'i çağıran fonksiyona bir değer göndermek isteyebilirsiniz. Yani burada biz sadece thread'i şuradan değer göndermek amaçlı kullandık.
+
+377
+01:33:23,220 --> 01:33:35,400
+Compile ederken de olan şey cdc'di arkadaşlar. LpThread. Şunun yazılması gerekiyordu. Bizim programlar kullandı mı bilmiyorum.
+
+378
+01:33:37,400 --> 01:33:47,040
+Şurada gcc içerisinde link pthread demektir. pthread kütüphanesini link edeceğinizi söylüyorsunuz.
+
+379
+01:33:51,283 --> 01:34:05,003
+Thread ve Operation System. Şimdi GetPID ve GetParentPID dediğimiz çalışan prosesin ID'sini getirir demektir. Bu normalde Unix tabanlıdır. Windows'da çalışmaz. Onun için çalıştıramam.
+
+380
+01:34:05,843 --> 01:34:16,724
+Şimdi ne yapıyor? Main'de çalışan thread'in ID'si ve PID'si. Bir de thread'in kendisine ait verilen ID bilgisi elde ediliyor.
+
+381
+01:34:19,572 --> 01:34:40,032
+Threadleri bir proses olarak bakın en tane bir thread pointerı oluşturmuş. Her threadi ayrı ayrı bu fonksiyona gönderiyor. Belli bir bekletme var. Ondan sonra hepsini ayrı ayrı return ediyor. Çalışan thread yani dört farklı thread oluşturup şu fonksiyonla ilişkilendirebiliyorsunuz.
+
+382
+01:34:46,783 --> 01:35:12,043
+Hep deriz arkadaşlar, global değişken kullanmayın, global değişken kullanmayın. İşte onun yeri aslında burası. Böyle bir variable'ı siz burada kullanıyorsanız, burada ne yapmış mesela shared değişken üzerinde? Bir arttırma yapmış. Birden fazla thread eğer buna erişiyorsa, şöyle bir sorunla karşılaşacaksınız. Şimdi assembly'de bunu aslında kısmen gördünüz.
+
+383
+01:35:12,948 --> 01:35:39,768
+Farklı bir bakış açısıyla gördünüz. A eşittir. A artı bir. Bu şurada da olsun. Şurada da A eşittir. A eksi bir olsun. Bunun assembly karşılığında ne var? Move. A eksi A'nın bulunduğu yeri getiriyorsunuz. Add. A eksi bir arttırıyoruz. Sonra tekrar bir move belki.
+
+384
+01:35:41,203 --> 01:35:50,023
+Herhangi bir registra Dx'e Ax'e atıldığınızı düşünün. Böyle bir yapısı var. Tam hatırlamadığım bir şeydir. Buna yakın bir şeydir.
+
+385
+01:35:51,103 --> 01:36:00,563
+Şimdi, işlemcide bölünemez olan komutlar, şunlar değil. Bunlar bölünebilir. Ama bunlar bölünemez.
+
+386
+01:36:00,563 --> 01:36:05,503
+Yani bu kod çalışıyorken, şu kod çalışırken,
+
+387
+01:36:06,100 --> 01:36:30,539
+Eğer başka bir thread çağrısı geldiyse önce bu kod bitecek. Ondan sonra o thread çalışacak demektir. Ama bizim şurada yazdığımız şu kodun karşılığı 3 tane. Dolayısıyla paylaşılan bir değişken üzerinde burada sen bir arttırma yapıyorsun, şurada bir azaltma yapıyorsun. A'nın değerini 10 diyelim.
+
+388
+01:36:34,068 --> 01:36:58,368
+Şöyle bir durumla karşılaşılıyor. Ax Register'ına şu thread çalışırken 10 değere atanıyor. Bunun karşılığı nedir? Bunu da yazalım. Move ax, subtract ax, move ax, ax.
+
+389
+01:36:59,731 --> 01:37:20,511
+Şimdi şu işlemde 10 değeri ax'e atandı. Ax'in içerisinde 10 var. Sonra oldu da şu trede geçtiniz. Bakın bu işlem tamamlanmadan a variable üzerinde geldiniz buraya. Ax'i 10'a atadı. Yine 10 ax'e atandı. Gidiyor bakıyor yine de a'nın değeri 10.
+
+390
+01:37:22,195 --> 01:37:49,155
+Halbuki bu bir arttıracaktı. AX'i bir azalttı. Oldu AX. AX'deki değer 9. Öbür tıra da geçmedik. Bunu da gitti. DX'e yazdı. DX'ten de tekrar gitti. Belli'ye değişti. Ne oldu? Şu tıra tamamlandı. AX'in değeri 9 oldu. Geldi burada. AX'in değerini burada bu şekilde kaydetmişti. Bu ne oluyor?
+
+391
+01:38:01,332 --> 01:38:24,952
+AX'in değeri buna göre 11 olacak, buna göre 9 olacak. Burada şu assembly komutlarının daha detaylı seviyesinden dolayı AX'in değerinin 10 olduğunu göreceksiniz. Çünkü AX üzerinden bu işlem yapıyor. Kaldığı yerden devam edecek ya, AX'in değeri burada, bu işlemci sonuçta. Tekrar AX'in değerini almayacak.
+
+392
+01:38:25,652 --> 01:38:34,692
+Şuradaki aldığı 9 değerini alıp bunu tekrar 10 yapıyor. Ve gidiyor tekrar 10 yazıyor. A- değeri hala 10 olarak görüyoruz.
+
+393
+01:38:35,271 --> 01:38:50,351
+İşte bu atomiklik kavramı, bölünemezlik kavramı. Onun için eğer buradaki yapılacak bir işlem ve şuradaki yapılacak bir işlem ortak bir kaynağa erişiyorsa aynı kavşak örneğinde olduğu gibi.
+
+394
+01:38:50,804 --> 01:38:55,804
+Ve bize bazı problemler oluşturacaksa tutarsızlıklar oluşturacak. Ona dikkat etmek lazım.
+
+395
+01:38:59,804 --> 01:39:02,203
+Mesela burada tek bir thread oluşturmuş.
+
+396
+01:39:04,804 --> 01:39:08,564
+Şunu bir deneyelim de bu çalışmayacaktır. Unix ile alakalı kütüphaneler var.
+
+397
+01:39:17,908 --> 01:39:18,608
+Çalıştı.
+
+398
+01:39:22,547 --> 01:39:29,407
+Shared değişkeninin değerini en son ne yapmış? Şuna kadar getirmiş.
+
+399
+01:39:29,627 --> 01:39:30,427
+Yani bu kadar çalışmış.
+
+400
+01:39:30,507 --> 01:39:34,207
+Tabi bu tek bir tane thread olduğu için çok anlamlı belki gelmiyor size.
+
+401
+01:39:34,988 --> 01:39:39,387
+Bu değişken üzerinde birden fazla thread ile işlem yaptığınızı düşünün.
+
+402
+01:39:41,287 --> 01:39:43,148
+Kilitlenme dediğimiz kavram var.
+
+403
+01:39:43,707 --> 01:39:46,007
+Örneğin bir bankadan para çekeceksiniz.
+
+404
+01:39:47,608 --> 01:39:49,827
+Bir C dosyası, bu banka C dosyası.
+
+405
+01:39:50,739 --> 01:40:15,420
+Bu bankasiy dosyasıyla şu main'i ilişkilendiriyorsunuz. Birisi para çekecek, bir thread, bir thread, para yatıracak. Bu örneğe biraz bakılabilir. Mevcut para ne kadar, balans ne kadar, çekilen para miktarı. Bunun üzerinde biraz önce bahsettiğim şu değişken üzerinde arttırmaya benzer bir mekanizma anlatılıyor.
+
+406
+01:40:16,020 --> 01:40:31,680
+Bunun nasıl çözüleceğine dair bir lak mekanizmasıyla bunu çözebiliriz. Yani toplulukta konuşmak istiyorsunuz, mikrofonunuz varsa konuşuyorsunuz. Burada da diyor ki kilide laka sahip olan burada bu değişken üzerinde işlem yapar, inkrement işlemini yapar.
+
+407
+01:40:40,051 --> 01:40:55,971
+Lack'ı bir yapıyor. Eğer Lack birden büyükse bekliyor. Bakın bekleme döngüsü. Birden büyük değilse, yani herhangi bir şeye sahip değilse gidiyor bu şeridi arttırıyor. Arttırdıktan sonra Lack'ı serbest bırakıyor. Böyle bir örnek.
+
+408
+01:41:06,644 --> 01:41:08,460
+Tam hazırlanmamış.
+
+409
+01:41:20,500 --> 01:41:24,659
+Invaded number of threads. Niye böyle dedi?
+
+410
+01:41:30,868 --> 01:41:35,087
+Argüman counter vereceğiz. Argümanda ne vermiş?
+
+411
+01:41:39,028 --> 01:41:40,128
+Gidemiş, direkt.
+
+412
+01:41:58,100 --> 01:42:08,940
+Böyle bir sonuç var. Bu değişken üzerinde, shared variable üzerinde birisi bunu alıyormuş. Eldedilmesi gereken o falan diyor.
+
+413
+01:42:13,300 --> 01:42:35,279
+Bunun işte Mutex diye, Mutual Explosion diye başka bir mekanizması var. Bu kilitlenmelerde ve senkronizasyon problemlerinde kullanılan, işte Deadlock'tan kaçınma diye başka bir mekanizma. Bunlar hep arkadaşlar işletim sisteminin konusu. Mesela Dining Philosopher. Bu bilinen bir problem. Onu da anlatayım, ondan sonra bu konuyu bitirelim.
+
+414
+01:42:42,452 --> 01:42:52,172
+Bunların önünde yemek var. Hepsinin önünde işte bir tane çatal var. Yemeği yemek için herkes, tabii çatallar aslında şöyle.
+
+415
+01:42:56,564 --> 01:43:22,904
+Bir sağındaki bir solundaki çatala sahip olmak zorunda. Yani bu kişi şu iki çatalı da sahip olursa yemek yiyor veya işte bu kişi şuna sahip olursa yemek yiyor. Şimdi dolayısıyla bu yemek yerken bunlar yiyemez, karşıdaki yemek yiyebilir. Şunlar yemek yerken bunlar yiyemez, bunun karşısındaki yemek yiyebilir. Bunun simülasyonu, bu bilinen Dining-Prazopro problemi. Bakalım burada sonucu görebilecek miyiz? Şunu bir deneyelim.
+
+416
+01:43:28,787 --> 01:43:31,687
+Bir simülasyon örneği olarak düşünebiliriz.
+
+417
+01:43:41,427 --> 01:43:58,027
+Filozof sayısını arttırabiliriz. Birisi bırakıyor. Filozof 6 çatalı bırakmış. Ondan sonra 6 5'in bıraktığını almış. Böyle bir simülasyon. Böyle devam edip gidiyor bu.
+
+418
+01:44:01,587 --> 01:44:03,807
+Önemli, güzel bir problem incelersiniz.
+
+419
+01:44:05,068 --> 01:44:08,667
+Şimdi son olarak bu konuyu da bitirdik.
+
+420
+01:44:09,448 --> 01:44:17,007
+Yani bunun detayı, burada C programlama açısından biz neyle bunu ilişkilendirelim?
+
+421
+01:44:18,427 --> 01:44:23,587
+Biz arkadaşlar Structure konusunu gördük. Bir trede Structure parametre olarak gönderiliyor.
+
+422
+01:44:23,587 --> 01:44:26,587
+Fonksiyon pointer konusunu gördük. Fonksiyon pointer ile...
+
+423
+01:44:27,444 --> 01:44:31,804
+Hangi thread hangi fonksiyonla birlikte çalışacak onu ayarlayabiliyoruz.
+
+424
+01:44:33,204 --> 01:44:41,264
+Ondan sonra threadlerden geriye dönüş, statik değişken bunları kullanabiliriz. Bu işin içine file operasyonlarını katabilirsiniz.
+
+425
+01:44:41,264 --> 01:44:48,344
+Ve bu sayede eş zamanlı çalışan programlar tasarlayabilirsiniz.
+
+426
+01:44:50,344 --> 01:44:52,824
+Şimdi son olarak.
+
+427
+01:44:54,387 --> 01:45:14,768
+Şunu da söyleyelim, kapatacağım. Bizim bu gördüğümüz şey arkadaşlar, Structural Programming, Yapısal Programı. Buradaki Structural, bizim gördüğümüz Structural konusuyla aslında daha çok ilişkili. Yapısalcı bir yöntem kullanıyoruz. Kullandık bu derste ve veri yapılarında da kullanacaksınız, işledim sistemlerinde de kullanacaksınız.
+
+428
+01:45:15,604 --> 01:45:26,944
+Değişkenlerin başlangıçta tanımlanması, ondan sonra programın belli bir sıraya göre adım adımlı tanımlanması, gerektiğiniz yerde fonksiyonlarla modüler hale getirilmesi bu dersin kapsamındaydı.
+
+429
+01:45:27,504 --> 01:45:38,584
+Şimdi bu dersin kapsamında olmayan ama program yazmayı daha kolay hale getiren, objekt oriyantik programlama diye C++'la, Java'yla, C Sharp'la elde edilen,
+
+430
+01:45:39,315 --> 01:45:53,375
+Yapılabilen yeni bir programlama tekniği var. Onu gelecek dönem göreceksiniz. Farkı şudur. Orada da Structure yerine Structure'ların farklı bir versiyon olan Classları, sınıfları göreceksiniz.
+
+431
+01:46:03,283 --> 01:46:13,224
+C++'ın, Java'nın, C Sharp'ın, hatta Python'ın sintaksına baktığınızda C ile çok benzer olacağını göreceksiniz bu derste.
+
+432
+01:46:13,224 --> 01:46:29,224
+Ama bizdeki Structure konusuna benzer olarak orada göreceğiniz Object ve Class konusunda Structure'lardan farklı olarak her bir elemana, sınıfa...
+
+433
+01:46:29,971 --> 01:46:47,471
+Metotlar aktarabiliyorsunuz. Biz Structure'larda sadece Feature'lar aktarabiliyorduk. İşte insanın yaşı, kilosu, boyu, cinsiyeti, adı, soyadı. Halbuki insan konuşmasıyla alakalı bir şeyi biz programın kendi içerisinde fonksiyonlar yazarak oluşturuyoruz.
+
+434
+01:46:57,296 --> 01:47:23,595
+Şişiyor. Ve header file'lar arasında bir ilişki kuramıyoruz. Veri tabanında olduğu yani bire çok ilişki, çoka çok ilişki, alt üst ilişkisi kuramıyoruz. Object Oriented Programlama bize onu sağlıyor. Diyor ki sen structure benzeri bir şey oluştur. Adına da sınıf de. Şunun gibi bir structure oluştur. Adına da sınıf de. Tamam. Bu sınıfa ait yeni özellikler tanımlı. Örneğin.
+
+435
+01:47:24,180 --> 01:47:46,840
+Bir oda, biz odayı belki struktur olarak sizde örnekle yaptık veya karmaşık sayı. İşte odanın özellikleri bunlar. Bunlara ekstra özellikler tanımlıyoruz. Bu özellikler eylemdir arkadaşlar. Metot dediğimiz şeydir. Bu eylemler vasıtasıyla bu sınıfın bu eylemini çağırabiliyoruz.
+
+436
+01:47:48,115 --> 01:47:53,355
+Ve bu sınıftan istediğimiz kadar nesne üretiyoruz. Aynı structure'larda olduğu gibi.
+
+437
+01:47:54,255 --> 01:48:00,095
+Room 1.Calculate Area dediğimizde Object Oriented'da ne yapıyor?
+
+438
+01:48:00,775 --> 01:48:08,055
+Kendisinin önceki nesnelerine yani memberlerine atanan değerleri alıp şuradaki algoritmanın gereği neyse onu yapıyor.
+
+439
+01:48:08,456 --> 01:48:12,055
+Aslında Object Oriented Programlama'ımı hep söylerim.
+
+440
+01:48:15,123 --> 01:48:28,224
+Yapısal Programlamayı. Siz yapısal programlamada bazı kavramlar, işte algoritma geliştirme ile alakalı, dilin temel kavramları ile alakalı şeyler öğrenirsiniz. Objekt oryantı da ona yeni eklentiler gelir.
+
+441
+01:48:30,463 --> 01:48:39,224
+Genel olarak bunları ikinci dönem Java üzerinde göreceksiniz. Bakın bir sınıf var. Şu örnek bizim için daha yeterli. Room sınıfı.
+
+442
+01:48:39,988 --> 01:48:49,948
+Ben main içerisinde, yani başka bir sınıf içerisinde gideceğim. Bunun birbirine bağlı olması gerekmiyor. Birbirinden ayrı dosyalarda da yazabiliriz şu maini.
+
+443
+01:48:49,948 --> 01:48:52,488
+Room sınıfından bir nesne üreteceğim.
+
+444
+01:48:54,988 --> 01:49:00,648
+Structure'larda olmayan şunları yapabileceğim.
+
+445
+01:49:01,448 --> 01:49:06,448
+Ve bu nesneler arasında, birden fazla nesne arasında ilişki kurabileceğiz.
+
+446
+01:49:07,188 --> 01:49:17,708
+Şimdi ben şu Room nesnesini veya Room Structure değişkenini nasıl fonksiyona gönderiyorsam, bunları da aynı şekilde fonksiyona gönderebiliyorum.
+
+447
+01:49:17,708 --> 01:49:30,908
+Ama Structure'lardan farklı olarak nesneler arası, veri tabanında olduğu gibi birebir, bireçok, çoka çok veya kalıtımla oluşturulan alt-üst genel özel ilişkileri de tanımlanabiliyor.
+
+448
+01:49:31,796 --> 01:49:54,496
+Bunların kavramlarında gelecek dönem artık kim gelir dersiniz de bilmiyorum. Onunla, onlarla öğrenirsiniz. Buradaki örnekler birazcık da onlarla alakalı. Herhangi bir şekilde sormak istediğiniz bir şey var mı arkadaşlar? Sınavla alakalı ben bir iki bir şey söyleyeyim. Tretler hariç gördüğümüz bütün konulardan sorumlu olacaksınız.
+
+449
+01:49:56,340 --> 01:50:22,039
+Yine birinci sınava benzer iki veya üç soru olur. Sorularınızın cevaplarını kod olarak online sisteme yükleyeceksiniz. Ödevlerinizi de işte ben online sistemi şu an açık yükleyebilirsiniz. Belki yükleyen arkadaşlar olmuştur. Değerlendirildiğinde size duyuracağız. Asistan hocalarınızı değerlendirilecek. Ona itiraz edebilirsiniz zamanında. Onları duyuracağım tekrardan.
+
+450
+01:50:23,315 --> 01:50:48,996
+İnşallah faydalı işinize yarayan bir dönem olmuştur. Sormak istediğiniz, söylemek istediğiniz bir şey var mı arkadaşlar? Bu ders dediğim gibi birçok dersin ön hazırlığı, gelecek dönem veri yapılarında, işletim sistemlerinde, algoritma analizinde yapacağınız ödevler hepsi üzerine. Onun için buradaki bilgileriniz sizinle bayağı bir baki kalacak bilgilerdir.
+
+451
+01:50:51,988 --> 01:51:04,388
+Ben teşekkür ederim hepinize dönem boyunca bana sabrettiğiniz için. Yanlışlıkla bir sürçülüysen etmişsek af ola. Hakkınıza helal edin. Varsa sizin bir hakkınız ben tamamen peşinden helal olsun.
+
+452
+01:51:05,668 --> 01:51:12,668
+Bugün uygulama yapmıyoruz. Sinyal Sistem dersinde bir uygulama yapacağız. Bizim normal yapısal saatimizde.
+
+453
+01:51:15,188 --> 01:51:34,288
+Ben verdiğim üç derste alakalı genel bir anket göndereceğim. Herhangi bir şekilde e-mail bilgileriniz olmayacak orada. Oraya bilgilerinizi aktarırız. Yani önerilerinizi, düşüncelerinizi yazarsanız memnun olurum. Onu size mail ile gönderirim.
+
+454
+01:51:34,288 --> 01:51:37,288
+Onun dışında benim...
+
+455
+01:51:37,823 --> 01:51:57,303
+Söylemeyecek çok bir şey yok. Hepinize dediğim gibi ayrı ayrı teşekkür ederim katılımlarınız için. Faydalı olduysak ne ala. Gönül isterdi ki tabii bunu yüz yüze sınıfta yapalım. Daha güzel bir dönem geçirelim ama bu dönem kısmet olmadı. İnşallah gelecek döneme diyelim.
+
+456
+01:52:01,011 --> 01:52:26,711
+Teşekkür ederim hepiniz için. Evet, bir sormak istediğiniz özel bir şey yoksa veya dersle alakalı başka bir sorunuz yoksa kapatabiliriz arkadaşlar. Farklı mecralarda, diğer derslerde inşallah tekrar görüşeceğiz. Zaten sınava kadar, finallerin sonuna kadar Telegram grubumuz vesaire açık. Bu dersle alakalı bir şey olursa sorabilirsiniz.
+
+457
+01:52:27,252 --> 01:52:53,512
+Ek ders gereği duymuyorum. Yani structure'larla alakalı yeteri kadar örnek çözdük, file operasyonla alakalı yeteri kadar örnek çözdük diye düşünüyorum. Bakayım biraz daha böyle farklı, ilginç bir şeyler bulabilirsem, böyle belki bir saat, bir cumartesi günü veya pazar günü bu ders üzerine bir çalışma yapabiliriz ama şu an için ben gerek duymuyorum. Sınavımızı da ikinci haftaya koymuşlar. Onlar hakkında duyuru yaparız.
+
+458
+01:52:56,372 --> 01:53:23,291
+Ödevi yapan sınav açısından avantajlı duruma geçer arkadaşlar. Ödev verirken hissiyatım şuydu. Threadleri de anlatacak olsaydık biraz daha farklı bir oyun ödevi vardı. Onu verecektim. İki tane uygulama açıp iki kişi karşılıklı oyun oynar gibi bir çalışma yapacaktım. Onu yine size paylaşmak istiyorum. Çalışmak isteyen yapabilir.
+
+459
+01:53:23,859 --> 01:53:43,139
+Ama şu anki verdiğim ödev gerçekten anlatarak, anlattığım her şeyi içeren, anlatmadığım hiçbir şeyi de hemen hemen içermeyen, bir şey olduğu için içimesindi. Size faydalı oluyorsa ne hala, dönem boyunca gördüklerimizin üzerinden böyle bir uygulamayla geçmiş olmanızı sağlar.
+
+460
+01:53:47,412 --> 01:53:59,172
+Evet, bir isteğiniz sorunuz yoksa arkadaşlar kapatabiliriz. Bugün erken bırakalım. Bunu da ayrıca bir doküman haline getirip paylaşırım sizlerle inşallah.
+
+461
+01:54:05,747 --> 01:54:29,988
+Bir kısmınızla öğleden sonra ve cuma günü tekrar görüşeceğiz. Belki bir kısmınızla ders olarak son gün bir daha görüşmeyiz ama yine kendinize iyi bakın. Bir sıkıntınız olursa mail üzerinden farklı şekillerde ulaşabilirsiniz veya telegram üzerinden her zaman açığız.
+
+462
+01:54:31,572 --> 01:54:34,271
+Herhangi bir sorun yoksa hepinize iyi günler. Kapatalım o zaman.
+
+463
+01:54:43,252 --> 01:54:45,872
+Görüşmek üzere arkadaşlar. Hepinize iyi günler.

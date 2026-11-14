@@ -1,0 +1,1879 @@
+1
+00:00:37,140 --> 00:00:54,480
+Günaydın. Sınavdan sonra ilk dersimiz bugün. Daha sonra önce konular üzerinde duracağız, daha sonra sınav soruları üzerinde de duracağım.
+
+2
+00:00:58,480 --> 00:01:03,480
+Şimdi arkadaşlarınızla biraz bağlanmaya başlasın.
+
+3
+00:01:04,500 --> 00:01:09,939
+Slide'ları biraz sonra yükleyeceğim, üzerinde çalışacağım slide'ları.
+
+4
+00:12:18,388 --> 00:12:19,268
+Şöyle başladı.
+
+5
+00:12:26,676 --> 00:12:42,236
+Evet, az önce bilgisayarım kapanmıştı, tekrar başladım. Şimdi tasarımla ilişkili tasarım kalıpları konusu üzerinde duracağız bugün. Ve slide'ı paylaşıyorum şimdi.
+
+6
+00:12:44,036 --> 00:12:45,496
+Hocam, başlamadan bir şey sorabilir miyim?
+
+7
+00:12:45,855 --> 00:12:46,115
+Tabii.
+
+8
+00:12:46,591 --> 00:12:49,812
+Bu ders duvarındaki grupları ne zaman güncelleyeceksiniz?
+
+9
+00:12:50,192 --> 00:12:54,192
+Evet, evet. Onu şimdi dersten sonra yapacağım o işi.
+
+10
+00:12:54,631 --> 00:12:55,572
+Tamam, teşekkür ederim.
+
+11
+00:12:56,172 --> 00:12:58,831
+Çünkü orada gerçekten bir karışıklık oldu.
+
+12
+00:12:59,347 --> 00:13:17,127
+Benden yana da bu gruplarda ayarsızlık oldu. Herkes özellikle kütüphane konusunda örnekte çözüldükten sonra herkes o konuyu almak istedi daha öncesinde de.
+
+13
+00:13:17,127 --> 00:13:27,127
+Bu sefer ben de daha sonra bildirenleri özellikle medya takip sistemine yönlendirdim ama yine de...
+
+14
+00:13:27,347 --> 00:13:40,288
+kütüphane sisteminde bir fazlalık vardı. Onu tekrar gözden geçirip hemen dersten sonra kesin listeyi koyacağım. Ders duvarına koyabilirim belki yeni halini.
+
+15
+00:13:41,028 --> 00:13:42,187
+Hocam ben de bir şey sorabilir miyim?
+
+16
+00:13:42,467 --> 00:13:42,707
+Tabii.
+
+17
+00:13:43,283 --> 00:14:02,024
+Şimdi tasarım modelleri, analiz kısımları tamam da şu en altta yani son kısım olarak sistemin sadece tek bir modülü kodlanıp denenecektir. Bu kısım ne oluyor? Biz şimdi tüm sistemi tasarlamadan sadece bir modülü mü kodlayacağız? Biraz orada kafamız karıştı da.
+
+18
+00:14:02,024 --> 00:14:06,744
+Şöyle, şimdi yazılımın bütününün tasarımını yapacaksınız.
+
+19
+00:14:08,532 --> 00:14:23,132
+Ama tabii ki sürenizin kısıtlı olduğunu biliyoruz. Bir tane modülü seçip onu çalışır hale getireceksiniz. Yani kodlamayı, bütününü kodlamayacaksınız.
+
+20
+00:14:24,692 --> 00:14:26,112
+Tamamdır, anladım ben. Teşekkürler.
+
+21
+00:14:26,672 --> 00:14:34,711
+Yani sürenin kısıtlı olduğunu biliyoruz ama bir modülü kodladığınızda nasıl gerçekleştiriyorsunuz onu görmek istiyoruz.
+
+22
+00:14:51,283 --> 00:15:01,024
+Şu anda nesneye yönelik tasarım süreci ile ilişkili slide'ı paylaştım. Görebiliyor musunuz?
+
+23
+00:15:02,303 --> 00:15:02,864
+Görebiliyorum.
+
+24
+00:15:03,403 --> 00:15:04,563
+Tamam, teşekkür ederim.
+
+25
+00:15:28,563 --> 00:15:47,943
+Şimdi nesneye yönelik analiz konusu üzerindeki bütün şeyleri tamamladık. Tasarım üzerinde de geçen hafta tasarımda hangi şeyleri kullanıyoruz, diagramları kullanıyoruz? Onun üzerinde hızlıca durdum.
+
+26
+00:15:50,419 --> 00:15:58,059
+Diagramlar ve programlamayla ilişkili nesne yönelik programlama dersinde de gördüğünüz kavramlar vardı.
+
+27
+00:16:00,819 --> 00:16:17,219
+Bu şeyde yazılım mühendisliği dersinde yazılım mimarisini de içine alacak tasarım kalıpları konusu üzerinde de duracağız.
+
+28
+00:16:18,227 --> 00:16:28,171
+Öncelikle tasarım neydi? Sistem analizinden de bildiğimiz şekilde yazılım geliştirmenin...
+
+29
+00:16:28,436 --> 00:16:52,936
+Analizden sonraki aşaması tasarım. Tasarımda nasıl sorusuna yanıt aranırı sistem analizinde de ezberlemiştik artık. Analizde ne sorusuna cevap verilir, tasarımda nasıl sorusuna ve nesne modeli dediğimizde analizden tasarıma kadar doğrudan problem alanı ile nesnelerden oluşan model yardımcı nesnelerle zenginleştirir.
+
+30
+00:16:53,344 --> 00:16:59,544
+Zenginleştirilir diyebiliriz. Ana işlem grupları, nesne tasarımı ve sistem tasarımı.
+
+31
+00:17:00,115 --> 00:17:22,296
+Problem alanımız nedir? Bu problem alanındaki nesneler nelerdir? Bunu analizden sonra tasarımda iyice netleştiriyoruz ve sistem tasarımında da altyapıyı ve gereçleri oluşturan nesneleri tanımlıyoruz.
+
+32
+00:17:24,019 --> 00:17:42,740
+Sistem katmanında bulunacak bileşenler bir defa yazılım mimarisi, istenci, sunucu, olay tabanlımı nasıl geliştirilecek, yazılım nasıl bir platform üzerinde geliştirilecek, kullanıcı arayüzümüz nedir?
+
+33
+00:17:43,135 --> 00:17:53,875
+Veri yönetimimiz nasıl olacak? Ağla network ile ilişkiler programlama nasıl gerçekleşecek? Bunlar sistem katmanındaki bileşenler.
+
+34
+00:18:01,236 --> 00:18:23,556
+Konuyla ilişkili, işte use case diagramından başlayarak nesnelerimiz nelerdir sınıf diagramının ilk yapılanmasından sonra bu sınıf diagramının tamamlanması, nesnelerin arasındaki ilişkilerin ve özellikle de her bir nesnenin gerçek kullanılacağı prosedürlerin tanımlanması.
+
+35
+00:18:29,140 --> 00:18:48,019
+Yazılım mimarisi, kullanıcı ara yüzü, veri yönetimi, ağ programlama bunları bir yazılım gerçekleştirirken hepsini kendimiz sıfırdan oluşturmuyoruz. Hazır bir framework kullanıyoruz. Bu framework üzerinde daha sonra tanımlamalarımızı geliştiriyoruz.
+
+36
+00:18:48,019 --> 00:18:57,140
+Ama tasarım aşamasında biz bunlardan hangilerini fizibilitede daha seçtiğimiz altyapı yazılımları,
+
+37
+00:18:57,140 --> 00:19:03,180
+uygulamaya konulacak hale getiriyoruz.
+
+38
+00:19:05,100 --> 00:19:12,960
+Şimdi tasarımı nasıl belgelendiriyoruz? Hangi diagramları kullanıyoruz? Bir de onu görelim.
+
+39
+00:19:15,500 --> 00:19:22,100
+UML sınıf şemaları, bu vazgeçilmez. Yani sınıf diagramlarımızı tasarım aşamasında tamamlıyoruz.
+
+40
+00:19:22,644 --> 00:19:43,284
+Tasarımın ihtiyaçlarına göre diğer belgelerimiz, şemalarımız, etkileşim şemalarımız, sequence diagramları ya da collaboration diagramları ki biz sequence diagramlarını daha kullanışlı buluyoruz.
+
+41
+00:19:45,203 --> 00:20:03,344
+Sıralama şemaları, sırayla hangi nesne işleme giriyor, hangi işlemler gerçekleşiyor. Bunları işleme giren nesneler ve gerçekleştirilen işlemler. Bu işlemleri sırasıyla gösteriyoruz.
+
+42
+00:20:03,344 --> 00:20:11,344
+Sekolist diagramlarında işbirliği şemaları ayrıca collaboration diagramlar.
+
+43
+00:20:11,731 --> 00:20:24,211
+Burada sırayla değil de nesneleri nasıl birbiriyle ilişkili olarak işleme giriyorlar. Bunu gösteriyoruz.
+
+44
+00:20:24,211 --> 00:20:27,331
+Etkinlik şemaları, aktivite diagramları.
+
+45
+00:20:27,680 --> 00:20:46,900
+Aktivite diagramlarında da özellikle eş zamanlı aktiviteleri daha iyi gösterebiliyoruz. O yüzden bir yazılımın tasarımını tanımlarken hem sequence diagramları hem aktivite diagramlarını kullanıyoruz.
+
+46
+00:20:47,519 --> 00:20:55,680
+Etkinlik şemaları veya etkinlik diagramları. Ayrıca bir de durum diagramlarını, durum diagramları da o anda sistemini kullanıyoruz.
+
+47
+00:20:55,680 --> 00:21:03,279
+Bu durum diagramları da yine
+
+48
+00:21:04,500 --> 00:21:10,940
+State diagramlarda yine tasarımın belgelendirilmesi sırasında kullanılıyor.
+
+49
+00:21:10,940 --> 00:21:20,780
+Şimdi bir de tasarım sırasında bizim tanımlamamız gereken tasarım kalıpları var, design patternlar var.
+
+50
+00:21:21,740 --> 00:21:26,980
+Yazılım mimarisi kapsamı içinde bunlar da belirtilmeli.
+
+51
+00:21:32,500 --> 00:21:46,920
+sorumlulukların atanmasında tasarım kalıpları yaygın olarak kullanılırlar. Mesnel tasarımda sınıfları ve sorumlulukları belirlemeden önce tasarım kalıplarının incelenmesi gerekir.
+
+52
+00:21:48,700 --> 00:21:50,820
+Tasarım kalıbı nedir?
+
+53
+00:21:52,680 --> 00:21:56,820
+Sıklıkla karşılaşılan, tanımlanabilir bir probleme
+
+54
+00:21:57,172 --> 00:22:01,771
+Sistematik bir çözüm getiren prensipleri tasarım kalıpları diyoruz.
+
+55
+00:22:07,440 --> 00:22:22,480
+Aklın yolu birdir cümlesi aklımıza geliyor. Eğer çözülmüş bir problem varsa, bu çözülmüş problemin en mantıklı gidiş yolu bir tasarım kalıbında tanımlanıyor.
+
+56
+00:22:22,480 --> 00:22:35,440
+Eğer her program, her yazılım tarafından da daha fazla kullanılan bir problem çözümünü sağlıyorsa, o zaman bu tasarım kalıbı.
+
+57
+00:22:35,440 --> 00:22:41,440
+Tasarım kalıpları arasında genel kullanılan tasarım kalıbı olarak kaydediliyor.
+
+58
+00:22:43,440 --> 00:22:53,680
+Tasarım kalıplarını probleme getirdiği çözümü belirten ve kolay hatırlanan, iletişimi kolaylaştıran isimler verilir.
+
+59
+00:22:59,251 --> 00:23:08,612
+Gamma, Helm, Johnson, Willisides bu tasarım kalıplarının ilk başlangıcını gerçekleştirmiştir.
+
+60
+00:23:09,811 --> 00:23:19,552
+Bunların gerçekleştirdikleri tasarım kalıpları Gang of Four olarak bilinir.
+
+61
+00:23:20,771 --> 00:23:26,072
+Yani bu dört uzman Gamma, Helm, Johnson, Willisides tarafından.
+
+62
+00:23:26,559 --> 00:23:29,840
+ortaya konulduğu için golf kalıpları olarak.
+
+63
+00:23:29,840 --> 00:23:34,480
+Toplam ilk başlangıçtaki golf kalıpları 23 tane.
+
+64
+00:23:35,179 --> 00:23:45,319
+Genel olarak nesnelere sorumlulukları atarken temel alınan genel sorumluluk atama prensipleri üzerinedir bu golf kalıpları.
+
+65
+00:23:46,119 --> 00:23:48,440
+Bunlardan bazıları üzerinde duracağız.
+
+66
+00:23:49,539 --> 00:23:52,319
+Özellikle Larmann'ın kitabında.
+
+67
+00:23:52,751 --> 00:24:11,751
+Ki Lerman'ın kitabından daha önce de bahsetmiştim. Nesneye yönelik yaklaşımla ilişkili ilk ve en temel bilgileri oluşturan. Bu konuda çok kitap var aslında ama bu temel kitap olduğu için hep bunun adını söylüyoruz.
+
+68
+00:24:12,403 --> 00:24:34,163
+Şimdi bu golf kalıpları üzerinde duracağız. Yani tasarımda, özellikle nesneye yönelik tasarımda hangi şeyler var, problemler, temel problemlerin çözümü, bunu göreceğiz.
+
+69
+00:24:44,692 --> 00:24:54,192
+Yaratıcı kreatör, bir sınıftan nesne yaratma sorumluluğunun kime verileceğini belirleyen kalıplardır.
+
+70
+00:24:55,612 --> 00:25:03,552
+Nesne yönelik sistemlerde nesne yaratımı sıklıkla yapılan işlemlerdendir.
+
+71
+00:25:03,552 --> 00:25:09,692
+O yüzden ilk kullanılan tasarım kalıplarından yaratıcı kreatör.
+
+72
+00:25:11,663 --> 00:25:23,503
+Eğer bu kalıba uygun davranarak nesne yaratılırsa, tasarımı daha az bağımlı, daha anlaşılır ve yeniden kullanılabilir olur.
+
+73
+00:25:23,503 --> 00:25:36,324
+Bu arada yeniden kullanılabilirlik, reusability, bizim yazılım kalite özelliklerinde geçen önemli kalite faktörlerinden bir tanesi.
+
+74
+00:25:36,852 --> 00:25:52,432
+Ve reizubiliteyi nasıl sağlıyoruz? Yani yazılımın tümü ya da yazılımın böyle elemanları daha sonra başka yazılımlarda da kullanılabilsin diye neler yapıyoruz?
+
+75
+00:25:52,432 --> 00:25:59,432
+İşte yazılım kütüphaneleri oluşturuyoruz, paket programlar oluşturuyoruz.
+
+76
+00:25:59,571 --> 00:26:10,291
+Tasarım kalıpları bunu destekliyor, reusability'yi. Çözdüğümüz bir problemi tekrar tekrar düşünmeyelim, aklın yolu birdir onu kullanalım şeklinde.
+
+77
+00:26:13,268 --> 00:26:40,107
+Alan modelleme kullanıyoruz. Nesneye yönelik yaklaşım zaten bu reusabiliteyi desteklemek için oluşmuş ve bunun içindeki kavramlar, tasarım kalıpları, alan modelleme, alana özgü diller bunların hepsi reusabiliteyi, yeniden kullanılabilirliği destekleyen özelliklerdir.
+
+78
+00:26:40,980 --> 00:26:52,039
+Evet, şimdi hangi koşullar geçerliyse B sınıfına A sınıfından mesle yaratma sorumluluğu verilir.
+
+79
+00:26:52,415 --> 00:27:19,415
+Eğer B, A nesnelerini içeriyorsa, kümeleme ilişkisi de olabilir, B, A nesnelerini kaydında tutuyorsa, B, A nesnelerini sıkı biçimde kullanıyorsa, A'nın yaratılması için gerekli verilere B sahipse, o zaman yaratıcı sorumluluğunu verebiliriz.
+
+80
+00:27:22,420 --> 00:27:39,599
+Kahve sitesi bizim yazılım sistem analizi dersinde temel kitabımız olan Göksel Hoca'nın ve benim ve Ayşe Hanım'ın kitabında kahve sitesi örneği vardı.
+
+81
+00:27:39,599 --> 00:27:45,759
+Kahve sitesinde sipariş kalemi nesnesini kimin yaratacağı?
+
+82
+00:27:46,079 --> 00:27:51,500
+Örnek olarak verilebilir. Uygulama modeli incelenir.
+
+83
+00:27:52,699 --> 00:28:08,699
+Kalemi içeride görülür. Bu yüzden sipariş kalemlerini, yani bir alışveriş yapıyorsunuz, bir kere de bir fatura alacaksınız, bir siparişe karşılık.
+
+84
+00:28:09,044 --> 00:28:28,504
+Bu bir tek sipariş kaç tane satır içerir? Bunların hepsi sipariş kalemleridir. O zaman sipariş kalemlerini yaratma sorumluluğu siparişindir diyebiliriz.
+
+85
+00:28:30,504 --> 00:28:33,684
+İkinci bir tasarım kalıbı örneği.
+
+86
+00:28:34,016 --> 00:28:36,896
+Yine GoF kalıplarından bir tanesi.
+
+87
+00:28:37,376 --> 00:28:39,115
+Ekspert bilginin uzmanı.
+
+88
+00:28:39,855 --> 00:28:47,135
+Nesnelere sorumlulukları atamanın temel prensibi bilginin uzmanı.
+
+89
+00:28:47,816 --> 00:28:56,996
+Bir sorumluluğun o bilginin uzmanına onu yerine getirecek veriye sahip olan sınıfa atanmasını tanımlar.
+
+90
+00:29:01,332 --> 00:29:11,452
+Özellikle uzman kalıbına uygun olarak bu bilgiye sahip yazılım sınıfı aranır.
+
+91
+00:29:13,072 --> 00:29:19,271
+Kavramsal sınıflar incelenir ve uygun sınıf tasarım modeline alınır.
+
+92
+00:29:19,859 --> 00:29:32,920
+Yine kahve sitesinde bir siparişin toplam bedelinin bilinmesi sorumluluğunu almak için en uygun sınıf sipariş sınıfıdır.
+
+93
+00:29:36,852 --> 00:29:58,372
+Burada sipariş tek başına bu bilgiye sahip değildir. Sipariş kalemlerinin toplam bedellerini bilme sorumlulukları kendisindedir. Bir sipariş kaleminde birden fazla kahve yer alabilir. Bu durumda sipariş kalemi kahve nesneleriyle iş birliği yapmalarıdır.
+
+94
+00:30:03,347 --> 00:30:06,748
+sorumluluklarını atamak üzere
+
+95
+00:30:12,756 --> 00:30:23,735
+nesne sorumluluklarını atamak üzere kime bunun sorumluluğunu vereceğiz?
+
+96
+00:30:26,475 --> 00:30:32,235
+Onun yerine getirebilecek özelliğe sahip olan sınıfa vereceğiz.
+
+97
+00:30:39,476 --> 00:30:43,716
+Modelinden bu bilgi alınarak kararı verebiliyoruz.
+
+98
+00:30:44,196 --> 00:30:50,416
+Şimdi başka bir yazılım tasarımında başka bir önemli konu az bağımlılık.
+
+99
+00:30:50,416 --> 00:31:05,396
+Şimdi tasarımda, yazılım tasarımında eğer yapısal yaklaşım kullanıyorsak modüller burada önemli, modüller arası ilişkiler.
+
+100
+00:31:06,003 --> 00:31:14,443
+Ama nesneye yönelik yaklaşım kullanıyorsak nesneler arasındaki ilişkiler önemli.
+
+101
+00:31:14,443 --> 00:31:31,763
+Biz burada low coupling, az bağımlılık için gerçekleştirilecek işlemleri nasıl tanımlayacağımızı tasarım kalıbı olarak low coupling yapısını göreceğiz şimdi.
+
+102
+00:31:32,223 --> 00:31:43,303
+Diğer sınıflarda olabilecek değişimlerden etkilenmemesi ve tekrar kullanılabilirliği, yeniden kullanılabilirliği tanımlayan bir tasarım kalıbıdır.
+
+103
+00:31:43,303 --> 00:31:50,943
+Low coupling, bağımlılık bir birimin diğerlerine ne kadar bağlı olduğunu gösterir.
+
+104
+00:32:00,948 --> 00:32:17,367
+Belirten bir ölçük. Fazla bağımlılık tercih edilmez. Yazılım tasarımı oluşturulurken nesnelerin veya modüllerin birbiriyle çok sıkı ilişkide olması isteriz.
+
+105
+00:32:28,788 --> 00:32:42,728
+Mesela bir modülde diğer modüle çok fazla veri gönderimi varsa, ortak veri kullanımı varsa,
+
+106
+00:32:46,067 --> 00:33:03,727
+Parametre listesi çok uzuyorsa modüller arasındaki tanımlamalarda bu iyi değil. Minimum veri gidiş gelişi olmalı. Aynı şey nesneler içinde.
+
+107
+00:33:04,884 --> 00:33:27,784
+Geçerli. Nesneler bir sınıfta olabilecek değişimlerden diğer bir sınıf etkilenmemelidir. Bağımlılık bu şekilde ifade ediliyor. Bir nesne diğer nesne arasında ne kadar bilgi sahibi?
+
+108
+00:33:28,307 --> 00:33:48,127
+Ne kadar bağlı? Bir sınıftaki değişimin bağımlı diğer sınıfları da etkilediğini bu coupling olayında görüyoruz. Sınıfları birbirinden ayrı olarak anlamak zordur.
+
+109
+00:33:49,047 --> 00:33:52,011
+Bağımlılıktan ötürü sınıfı yeniden...
+
+110
+00:33:53,268 --> 00:34:00,587
+Kendiden kullanılabilirliği de bu coupling'in fazla olması engeller.
+
+111
+00:34:01,127 --> 00:34:08,627
+Şimdi kahve sitesinde bir sipariş veriyoruz ve ödeme müşteriyle ilişkili.
+
+112
+00:34:09,387 --> 00:34:11,228
+Gerçek dünyada da bu böyle.
+
+113
+00:34:12,528 --> 00:34:19,608
+Zaten mesneye yönelik yaklaşım gerçek dünyayı daha iyi modellediği için daha fazla kullanılıyor.
+
+114
+00:34:20,179 --> 00:34:36,960
+Yaratıcı kalıbına göre ödemeyi müşterinin yaratması gerekiyor. Ancak bu durumda müşteri ödeme hakkında da bilgiye sahip olmalıdır. Oysa bu sorumluluk sipariş sınıfına atanırsa bağımlılık azaltılmış olur.
+
+115
+00:34:40,148 --> 00:34:53,427
+Tabii ki burada tasarım kalıplarını kullanma kararı verirken birini kullandığımızda diğerini uygun halden çıkarmış oluruz.
+
+116
+00:34:53,427 --> 00:35:00,427
+Tasarım kalıpları birlikte kullanılarak ve bu kararlar tasarım...
+
+117
+00:35:04,403 --> 00:35:08,203
+En uygun tasarım çözümüne ulaşmış oluyoruz.
+
+118
+00:35:25,876 --> 00:35:45,836
+Bu arada katılıma baktım. Şu anda 33 kişiyiz. Halbuki yaklaşık 90'dan fazlasınız. Bu hafta neden bu kadar az acaba? Arkadaşlarınızdan biliyor musunuz? Neden katılmadılar derse?
+
+119
+00:35:49,780 --> 00:36:16,560
+Evet. Bu arada size bilmiyorum daha önce duyuruldu mu. Önümüzdeki hafta derslerin bayram tatiliyle arada şey olduğu için idare izin durumu derslerin olmayacağı belirtildi rektörlük tarafından.
+
+120
+00:36:17,023 --> 00:36:25,023
+Belki bu akademik takvime de yansıyacaktır daha sonra. Ama önümüzdeki hafta dolayısıyla dersimiz olmayacak.
+
+121
+00:36:30,931 --> 00:36:31,871
+Evet hocam, duyduk.
+
+122
+00:36:32,631 --> 00:36:33,851
+Duyulmuş muydu?
+
+123
+00:36:34,652 --> 00:36:34,851
+Evet.
+
+124
+00:36:35,532 --> 00:36:37,211
+Resmi duyuru gelmedi ama duyduk.
+
+125
+00:36:37,671 --> 00:36:39,572
+Evet, tamam, teşekkür ederim.
+
+126
+00:36:41,271 --> 00:36:42,791
+Zaten dün geldi bize de.
+
+127
+00:36:45,371 --> 00:36:52,791
+Evet, tasarım kalıplarından ilk üçünü gördük şimdiye kadar.
+
+128
+00:36:52,791 --> 00:36:56,791
+Yaratıcı, bilginin uzmanı.
+
+129
+00:36:57,588 --> 00:37:13,988
+Az bağlılık, denetçi kontrolür, kullanıcı ara biriminin arkasında durarak sistem olaylarını alma, kontrol etme sorumluluğunu alacak bir sınıf için bu belirlenir.
+
+130
+00:37:16,108 --> 00:37:20,427
+Her bir kullanım senaryosunu temsil eden bir sınıf denetçi olarak atanır.
+
+131
+00:37:21,940 --> 00:37:35,500
+Tabii ki bu uygulamalardaki window, update, frame gibi yapılar denetçi sınıflar değil. Bunlar sadece sistem olaylarını ilgili denetçiye aktaran uygulamalar.
+
+132
+00:37:37,400 --> 00:37:46,880
+Denetçi nesneleri sistem olaylarını algıladıktan sonra kontrol işlemlerini yaparlar ve ilgili nesnelere yönlendirirler.
+
+133
+00:37:53,619 --> 00:38:04,519
+İyi uyum, high cohesion, coupling ile cohesion, tasarım ile ilişkili.
+
+134
+00:38:09,715 --> 00:38:24,395
+Kurallarda. İkisi birlikte çok kullanılır. Hatta modüller yaklaşımda biz modüllerin kendi içinde
+
+135
+00:38:25,043 --> 00:38:35,163
+Kendi içindeki elemanlarda sıkı ilişkiler olsun ama modüller arasındaki ilişkiler zayıf olsun diye tanımlarız.
+
+136
+00:38:35,724 --> 00:38:42,703
+Aynı şey nesneler için de geçerli. Nesneler kendi içinde tutarlı, iyi tanımlı olsunlar.
+
+137
+00:38:45,460 --> 00:38:51,239
+Nesnelerin özellikleri, gerçekleştirdikleri işlemler birbiriyle sıkı ilişkilerde olsun.
+
+138
+00:38:51,840 --> 00:39:05,699
+Ama nesneler arasındaki ilişkiler en temel işlemi gerçekleştirecek şekilde çok karmaşık olmadan bir ilişki şeklinde olsun deriz.
+
+139
+00:39:13,460 --> 00:39:34,920
+Yapının yoğunlaşması. Buna şöyle diyebiliriz. Nesneye yönelik bir programda nesneler kendilerine atanan sorumlulukları yerine getirmekle yükümlüdür. Bir sınıfa atanan sorumlulukların birbiriyle ilgili olması ve belirli bir konuya yoğunlaşması beklenir.
+
+140
+00:39:35,380 --> 00:39:52,320
+Eğer bir sınıf çok fazla iş yapıyorsa ve sorumlulukları birbirinden farklı farklıysa sınıfta uyum iyi değildir. Yani cohesion iyi değildir. Bu durumda sınıfın anlaşılırlığı azalır, tekrar kullanımda zorlaşır.
+
+141
+00:39:53,320 --> 00:40:00,159
+Birlikte çalıştığı çok fazla sınıf olur tabii ki bu durumda çok değişik işler yaptığı için.
+
+142
+00:40:04,083 --> 00:40:08,283
+Bu da sınıf değişimlerinden daha fazla etkilenmesini ortaya çıkarır.
+
+143
+00:40:09,263 --> 00:40:18,703
+Karmaşıklığın idare edilebilmesi için sorumluluklar sınıf içinde iyi uyum olacak şekilde atanmalıdır.
+
+144
+00:40:19,923 --> 00:40:26,123
+Yine kahve sitesi örneğinde bakarsak az bağımlılık kalıbında incelenen durum,
+
+145
+00:40:27,956 --> 00:40:42,815
+İyi uyum kalıbı içinde geçerlidir. Gerçek hayatta ödemeyi müşteri gerçekleştirir. Ancak uygulama açısından bakıldığında ödeme hakkında bilginin uzmanı sipariş sınıfıdır.
+
+146
+00:40:54,387 --> 00:40:59,307
+İyi uyum kalıbı bakımda uygun olacaktır.
+
+147
+00:41:03,284 --> 00:41:08,003
+High Cohesion, Love Coupling olarak aklınızda kalabilir.
+
+148
+00:41:08,144 --> 00:41:19,543
+Tasarımın, iyi tasarımın kuralları ve bunu da tasarım kalıplarıyla da yine kontrol altına almamız öğütleniyor.
+
+149
+00:41:22,003 --> 00:41:24,884
+Çok şekillilik, nesneye yönelik yaklaşımda.
+
+150
+00:41:26,867 --> 00:41:44,887
+Birbiriyle ilgili ancak tiplere göre değişiklik gösteren davranışları tasarlarken çok şekilli metotlar kullanmak, değişen durumlara kolaylıkla uyum sağlayabilecek bileşenler yaratmayı sağlar.
+
+151
+00:41:48,500 --> 00:41:58,060
+Tiplere bağlı alternatif durumlarda ilgili metot koşullu deyimlerle test edilerek çağrılabilir.
+
+152
+00:42:00,699 --> 00:42:10,840
+Davranışın değişebileceği tiplere sorumluluk çok şekilli metotlar kullanılarak atanır.
+
+153
+00:42:15,092 --> 00:42:32,811
+Farklı işlemleri gerçekleştirmek, farklı davranışları tasarlamak için değişen durumlara kolaylıkla uyum sağlayabilecek bileşenler için çok değişkenlik, çok şekillilik, polimorfizm.
+
+154
+00:42:33,119 --> 00:42:47,359
+tasarım kalıpları kullanılmalıdır. Yine kahve sitesinde, yani bir alışveriş sitesinde kredi kartından onay almak için farklı programlar kullanılabilir.
+
+155
+00:42:49,399 --> 00:42:53,500
+Gelecekte yeni bir kredi kartı tipi de sisteme eklenebilir.
+
+156
+00:42:58,420 --> 00:43:12,039
+Onay programları arasında bir arayüz oluşturulur. Tüm kredi kartı tiplerinde yer alan ve aslında aynı işleri yapan onay fonksiyonları çok şekillidir.
+
+157
+00:43:13,460 --> 00:43:19,800
+Eğer sistem tek bir kredi kartı sistemi kullansaydı çok şekilliye gerek kalmazdı.
+
+158
+00:43:20,500 --> 00:43:38,559
+Ama farklı kredi kartları kullanıldığında bunlara uyum sağlayacak polimorfizm çok şekillilik yapısına ihtiyaç olacağını görüyoruz.
+
+159
+00:43:49,108 --> 00:44:03,168
+Yapay sınıf, pure fabrication, daha önceden bahsedilen uzman kalıbının getirdiği çözümler, iyi uyum ve az bağımlılık kavramlarıyla çelişebilir.
+
+160
+00:44:03,168 --> 00:44:14,168
+Bu durumda bağımlılıkları azaltıyorsa ve tekrar kullanılabilirliği arttırıyorsa, gerçek dünyada var olmayan,
+
+161
+00:44:14,739 --> 00:44:17,639
+Yapay sınıflar yazılımda yer alır.
+
+162
+00:44:18,679 --> 00:44:24,279
+İşte bu yapay sınıfların ayarlanması da bir tasarım kalıplarından bir tanesi.
+
+163
+00:44:24,279 --> 00:44:34,599
+Gerçek dünyadaki varlıklarla onları yazılımda temsil eden unsurlar arasındaki benzerlikler ele alınmalıdır.
+
+164
+00:44:37,639 --> 00:44:40,340
+Bu durumdaki sorumlulukların atanması
+
+165
+00:44:41,907 --> 00:44:44,127
+Diğer kalıplara ters düşebilir.
+
+166
+00:44:45,847 --> 00:44:56,087
+Temel olarak birbirine benzeyen işlevler bir sınıf olarak toplanarak gerçek dünyada var olmayan yapay sınıflar yaratılabilir.
+
+167
+00:45:03,092 --> 00:45:19,132
+ve bağımlılık gibi, yani kohezyon ve coupling gibi problemlerin üstünden gelmek için benzer işlevler gereğinden fazla kullanılmamak şartıyla bir sınıf içinde toplanabilir.
+
+168
+00:45:19,132 --> 00:45:25,771
+Yapay sınıfları gereğinden fazla kullanmamak öğütleniyor aslında.
+
+169
+00:45:30,164 --> 00:45:39,564
+Dünya varlıklarına ayırmak yerine işlevlere göre ayırırlar sistemi alt parçalara.
+
+170
+00:45:41,564 --> 00:45:48,524
+Çok fazla yapay sınıf kullanırsak gerçek dünyadan uzaklaştırmış oluruz yazılımımızı.
+
+171
+00:45:49,264 --> 00:45:51,184
+Anlaşılırlığı azalır böylece.
+
+172
+00:45:51,784 --> 00:45:54,604
+Ayrıca sınıflar arasındaki bağımlılık da artar.
+
+173
+00:45:56,244 --> 00:46:00,963
+olduğunda daha az kullanımı öğütleniyor yapay sınıfların.
+
+174
+00:46:15,507 --> 00:46:23,547
+Son iki tane daha yapay tasarım kalıplarından örnek vereceğim GoF kalıplarından.
+
+175
+00:46:25,827 --> 00:46:29,967
+Dolaylılık, indirection, ara birim kavramı.
+
+176
+00:46:30,768 --> 00:46:38,228
+Kolaylıkla değişebilecek yapılar arasındaki bahsedebilirliği yeniden kullanılabilirliği arttırır.
+
+177
+00:46:42,463 --> 00:46:55,443
+Bileşen ya da servis arasındaki sorumluluklar bir ara birim mesnesine atanarak bu dolaylılık yani indirect yapı sağlanır.
+
+178
+00:46:56,104 --> 00:47:06,403
+Uygulamalarda bu dolaylılığı, indirection'ı ara birim mesneleri sağlar.
+
+179
+00:47:06,867 --> 00:47:17,987
+Çok şekillilik özelliği de olan bu nesneler, ara birim nesneleri dış değişimlerden etkilenmemeyi sağlayacaktır.
+
+180
+00:47:19,707 --> 00:47:24,807
+Mesela kahve sitesinde kredi kartı onaylama hizmeti dışarıdan alınıyor.
+
+181
+00:47:25,827 --> 00:47:29,768
+Değişik kredi kartı kullanışlarının değişik onay mekanizması var.
+
+182
+00:47:36,851 --> 00:47:46,331
+Dolaylı olarak başka bir servise, başka bir bileşene, başka bir birime aktarmış oluyor.
+
+183
+00:47:48,051 --> 00:47:51,251
+İndirection yapısından da kastımız bu.
+
+184
+00:47:52,152 --> 00:47:55,671
+Değişimlerden korunma, protected variation.
+
+185
+00:47:59,671 --> 00:48:00,231
+Burada
+
+186
+00:48:01,268 --> 00:48:19,408
+Bir sistemdeki her bir alt sistem, hatta her bir nesnede değişimlikler, değişiklikler ve kararsızlıklar olabilir. Bunların diğer birimlere etkisi minimum seviyede tutulmalıdır. Bunun için ne yapılacak?
+
+187
+00:48:20,688 --> 00:48:23,268
+Birimlerdeki değişikliklerin birbirlerine en az...
+
+188
+00:48:27,315 --> 00:48:42,396
+Ara yüzlere bu sorumlulukların atandığı yapı, yani bir üstteki şu indirection ile ilişkili değişik yerlerden korunmada.
+
+189
+00:48:48,307 --> 00:49:15,648
+Daha kararlı sistemler oluşturulması için değişikliklerden korunma hizmeti gerekli. Dolaylılık kalıbında örnek olarak verilen ara birim nesneleri kahve sitesi sistemini dışta olabilecek değişimlere karşı korumaktadır. Kredi kartı onay sistemleri değişse de yenileri de eklense tasarlanan sistem bu değişimlerden etkilenmeyecektir.
+
+190
+00:49:16,115 --> 00:49:27,775
+Sistem için gerekli olan onay alma sorumluluğu gerçekleştirilecektir. Bu karşı taraftaki uygulamalara atanmış olacaktır.
+
+191
+00:49:41,204 --> 00:49:50,364
+Bir tasarım işlemi sırasında hangi belgeleri oluşturmamız gerekiyor?
+
+192
+00:49:53,224 --> 00:50:00,000
+UML etkileşim şemalarından, sequence diagramlarını, aktivite diagramlarını.
+
+193
+00:50:00,000 --> 00:50:02,720
+ve state diagramlarını kullanmamız öğütleniyor.
+
+194
+00:50:04,140 --> 00:50:14,780
+Tabii ki UML sınıf diagramları da veri açısından önemli tasarım sınıf diagramlarını hazırlamış olmamız gerekiyor.
+
+195
+00:50:24,820 --> 00:50:32,380
+Yeniden kullanılabilirliği özellikle sağlamak için tasarım kalıplarının kullanılması gerektiği öğütleniyor.
+
+196
+00:50:33,500 --> 00:50:39,539
+Burada ilk golf kalıplarından bahsettik.
+
+197
+00:50:40,599 --> 00:50:47,820
+Temel olarak hangi tasarım kalıbı dediğimizde hangi işlemler, bunlara örnek vermek istedim.
+
+198
+00:50:48,307 --> 00:51:15,707
+Ve temel GoF kalıplarını tanıtarak gittik. Hangi tasarım kalıplarını gördük? Yaratıcı, bilginin uzmanı, az bağımlılık, tasarımın kuralları, high cohesion, denetçi, kontrolör,
+
+199
+00:51:17,108 --> 00:51:29,728
+Sistem olaylarını algıladıktan sonra ve kontrol işlerini yaptıktan sonra bu olayları ilgili işlemleri yapacak nesnelere yönlendiren kalıplar.
+
+200
+00:51:30,728 --> 00:51:31,988
+Denetçi, kontrolür.
+
+201
+00:51:32,748 --> 00:51:36,128
+İyi uyum, high cohesion, nesnenin kendi içindeki uyumu.
+
+202
+00:51:36,128 --> 00:51:40,128
+Çok şekillilik, polimorfizm.
+
+203
+00:51:45,684 --> 00:52:09,264
+Birbiriyle ilgili ancak tiplere göre değişiklik gösteren davranışları tasarlarken bu çok şekilli metotların kullanılması, yapay sınıf, perfabrication, dolaylılık, indirection ve değişikliklerden korunma, protected variation.
+
+204
+00:52:09,876 --> 00:52:15,195
+Bunlar da tasarım kalıplarının temel elemanlarıydı.
+
+205
+00:52:16,896 --> 00:52:20,776
+Şimdi bir ara veriyorum.
+
+206
+00:52:23,195 --> 00:52:26,316
+Bugün için tek ara veririz.
+
+207
+00:52:28,036 --> 00:52:31,296
+O yüzden 15 dakika ara veriyorum.
+
+208
+00:52:32,036 --> 00:52:36,755
+Ondan sonra tekrar derse devam edeceğiz.
+
+209
+01:14:28,275 --> 01:14:32,496
+Evet, ben yine aynı hata yapmıştım. Mikrofonum kapalıymış.
+
+210
+01:14:32,496 --> 01:14:49,376
+Şimdi bu sınavda sorduğumuz uygulama sorusu, tasarıma bir başlangıç yapmıştık ama analizle ilişkili soruyu sormuştuk.
+
+211
+01:14:49,716 --> 01:15:04,916
+Kuaför web sitesi bilgi sistemi sorusuydu. Nasıl soruyu cevaplandırdığınızı düşünüyor musunuz? Sizce nasıl geçti?
+
+212
+01:15:10,547 --> 01:15:20,707
+Hocam ben sınıf diagramında mesela berber ve kuaför gibi objeler vardı ya, onların içerisine mesela metot olarak ne yazacağımı pek bilemedim.
+
+213
+01:15:20,707 --> 01:15:28,647
+Evet, şimdi üzerinden geçeceğiz. Cevap üzerinden geçeceğiz. Birisi de bir şey yazmış, ona da bakalım.
+
+214
+01:15:30,647 --> 01:15:33,667
+UML diagramına, yani sınıf diagramına.
+
+215
+01:15:35,539 --> 01:15:38,279
+Daha çok problem çıktı. Hep sorularınız o yönde.
+
+216
+01:15:39,539 --> 01:15:41,360
+Şimdi onun üzerinden de geçeceğiz.
+
+217
+01:15:42,360 --> 01:15:48,539
+Use case diagramı, use case belgesi ve sınıf diagramı, kavramsal sınıf diagramı üzerinde.
+
+218
+01:15:49,860 --> 01:15:55,539
+Evet, bu kuaför için kadın ve erkek bölümleri ayrı.
+
+219
+01:15:59,475 --> 01:16:25,015
+Saç tasarım uzmanı deniyor hepsine. Uzmanların yanı sıra kalfalar, çıraklarda var. Kalfalar yoğun zamanlarda fön yapma, dip boya yapma gibi kısıtlı işlemler yapsalar da kesim ve daha zor, gelin başı gibi zor işlemler yapmamaktalar. Çıraklarsa hiçbir şekilde işlem yapmamaktalar. Sadece diğerlerine yardım etmekte.
+
+220
+01:16:25,555 --> 01:16:36,795
+İnternetten randevu alınabiliyor, çalışan sayısı değişebiliyor ama kuaför koltuğu aynı kalıyor.
+
+221
+01:16:39,123 --> 01:16:54,403
+Zamanla dükkan gelişebilir fakat dükkan sahibi tek kişi ve müdür olarak çalışıyor. Her çalışan belli bir süre öncesinden istediği gün için izin talebinde bulunuyor. Bu talep müdür tarafından onaylanıyor.
+
+222
+01:16:55,028 --> 01:17:05,988
+Yetkili müdür. Müşteriler de internetten randevu alırken kendi üzerlerinde sanal olarak deneyebiliyorlar.
+
+223
+01:17:07,087 --> 01:17:16,587
+İşte vesikalık resim yükleyebilmeli müşteriler ve kayıtlı modelleri seçip deneyebilmeli.
+
+224
+01:17:16,587 --> 01:17:19,748
+Şimdi bunun yüz kez diagramına önce bakalım.
+
+225
+01:17:31,220 --> 01:17:41,340
+Bu yüz case diagramı. Aktörlerimize bakıyoruz. Müşteri, çalışan, yönetici. Şimdi burada çalışanın şu tipi, bu tipi diye ayırmıyoruz.
+
+226
+01:17:41,340 --> 01:17:49,040
+Yüz case diagramında. Ama yönetici var.
+
+227
+01:17:54,195 --> 01:18:16,876
+Bu yönetici şey anlamında, işte koltuk stil yükleme gibi işlemleri yapıyor. Müşteri stil deneme yapıyor, randevu alma yapıyor web sitesinden. İkisini gerçekleştiriyor. Kayıt oluşturuyor. Öncelikle tabii sürekli müşteri kaydı.
+
+228
+01:18:17,460 --> 01:18:32,940
+Burada bir ekstent var. Stil deneme gerçekleştirirken resim yükleme de buna dahil. Çalışan işlemleriyle ilişkili yönetici, izin işlemleri var.
+
+229
+01:18:33,587 --> 01:18:58,127
+Çalışan talep bildiriyor izin işlemi için. Bu kabul ya da reddoluyor. Talep onaylama işlemi var. Çalışan izin günlerini istediği zaman sorgulayabiliyor. Sistemde gerçekleştirilen işlemler bunlar ve include extent ile genellikle include şeklinde.
+
+230
+01:18:58,612 --> 01:19:11,731
+Bir işlemi yaparken daha önce başka bir işleminde yapılmış olması gerekir veya bu işlem yapılıyorsa altta bunun da içerildiğini belirtiyoruz.
+
+231
+01:19:11,731 --> 01:19:18,012
+Bu şeydi, use case diagramı.
+
+232
+01:19:22,547 --> 01:19:29,667
+Tek tek adım adım işlemler anlatıldığı için burada bir yani bazı
+
+233
+01:19:32,435 --> 01:19:55,815
+Veya bir yerde inklotu fark etmemiş olabilirsiniz. Ama genel olarak problem olmadığını zannediyorum. Zannediyorum diyorum çünkü henüz hiç sizin sınavlarınıza bakamadım. Önce sistem analizi sınavlarını bitirmek istedim. Bugün onları bitirdiğim için bundan sonra sizinkilere bakacağım.
+
+234
+01:20:00,000 --> 01:20:18,200
+Yapısı bu. Şimdi belgeye bakalım. Birinci laktörümüz müşteri. İlgililer, müşteri kolayca randevu almak ister, sırada beklemek istemez. Ön koşullar, müşteri önce web sitesini ziyaret etmeli.
+
+235
+01:20:18,739 --> 01:20:27,739
+Son koşul ise randevu kaydı oluşturulmuş ise bu randevu almanın kullanım senaryosu.
+
+236
+01:20:29,219 --> 01:20:44,939
+Müşteri kendi kullanıcısı ile web sitesine bağlanır, randevu al linkine tıklar, müşterinin cinsiyetine göre otomatik olarak sistem kuaför ya da berber salonu için randevu.
+
+237
+01:20:45,328 --> 01:21:03,008
+Randevu almak istediği günü girer. Sistem izin kayıtlarına, boş koltuk sayılarına bakarak o günde uygun olan randevu saatlerini listeler. Kullanıcı istediği saati seçer ve tamam der.
+
+238
+01:21:03,444 --> 01:21:16,064
+Alternatif akışlar nelerdir? Müşteri login olamamışsa sisteme giriş sayfasına tekrar yönlendirilir. Müşteri bir kullanıcı hesabı oluşturmamışsa yeni kullanıcı oluştur sayfasına yönlenir.
+
+239
+01:21:16,064 --> 01:21:30,064
+Burada görüyoruz, müşteri randevu almak istiyor ama kaydı yoksa müşterinin önce kayıt oluşturmayla zenginleştirilmiş oluyor. Önce buraya uğraması gerekiyor.
+
+240
+01:21:30,963 --> 01:21:53,243
+Kullanıcı sistemin önerdiği saatleri beğenmezse dördüncü adıma geri döner. Yani tekrar günlere bakar şeklinde bir senaryo belgesi sadece randevu alma için oluşturuyoruz.
+
+241
+01:21:59,699 --> 01:22:04,019
+Şimdi sınıf diagramına bakalım. Çoğunuzun sorusu sınıf diagramındaydı.
+
+242
+01:22:04,899 --> 01:22:14,199
+Sınıf diagramı kavramsal sınıf diagramı. Dikkat ederseniz altta prosesler yok. Tasarımda bunu netleştiriyoruz.
+
+243
+01:22:14,199 --> 01:22:25,739
+Şu anda sadece sınıfın adı ve özellikleri var ve sınıflar arasındaki ilişki, ne tür ilişki ona bakıyoruz.
+
+244
+01:22:26,228 --> 01:22:42,327
+İşlem sınıfı hangi işlemler, hangi ücretle yapılabiliyor? Hangi çalışan bu işlemi gerçekleştirebiliyor? Yani bazı işleri kalfalar yapıyor ama bazılarını gerçek kuaförlerin yapması gerekiyor.
+
+245
+01:22:48,564 --> 01:23:14,963
+Çalışan diye genelleştiriyoruz ama bunun alt elemanları kuaför olabilir, kalfa olabilir, çırak olabilir. Bunların hepsi çalışan olarak kaydediliyor. Ve hangi işlemi hangisi yapabiliyor bu belirtiliyor. Bölüm dediğimiz koltuk sayısı bölümü cinsiyete göre kadın bölümü erkek bölümü diye birebir şeyde.
+
+246
+01:23:15,507 --> 01:23:31,547
+Kaç tane koltuk var hangi bölümde? Bunu belirtiyor. Koltuk sayısına göre hangi bölümden randevu alacaksa randevu tarih ve saati belirleniyor. Tabii ki müşteri bununla ilişkide.
+
+247
+01:23:40,787 --> 01:23:47,948
+Bununla ilişkili resim ve tanımlanıyor.
+
+248
+01:23:49,627 --> 01:23:54,167
+Hangi modeller yapılacak? Bu nesne tanımı var.
+
+249
+01:23:55,507 --> 01:24:05,627
+Bilgi sistemine resim kaydediliyor ve yönetici de bu işleri gerçekleştiriyor.
+
+250
+01:24:07,507 --> 01:24:11,127
+Şeklinde UML sınıf diagramımız.
+
+251
+01:24:11,247 --> 01:24:18,307
+Tabi ki burada yani mutlaka bunun aynısını çizmeniz gerekir.
+
+252
+01:24:18,787 --> 01:24:29,987
+Eğer mantıklı farklılıklar varsa tabi ki yine notunuz çok fazla kırılmayacaktır.
+
+253
+01:24:30,771 --> 01:24:52,072
+Ama genel olarak, yani burada ben şu çalışanla işlem mesela herkesle olmalı. Çalışanla işlem arasındaki ilişkiyi gösterirken bir işlem mutlaka bir çalışan tarafından yapılmalı. Bir mutlak bir.
+
+254
+01:24:53,524 --> 01:25:05,452
+Bir çalışan çok sayıda işlem yapabilir. Yani şu ilişkide işte yıldızı biri görebilmek isterim. Yine aynı şekilde çalışan...
+
+255
+01:25:05,460 --> 01:25:25,479
+Bir genelleştirme varsa, kuaför, kalfa ve çırak çalışan olarak genelleştirilir. Bölüm dediğimizde biz cinsiyete göre kadın ve erkek bölümü diye kuaförü ve berberi ayırmışız.
+
+256
+01:25:28,851 --> 01:25:39,891
+Belki şuralarda bazı farklılıklar yaratabilirsiniz. Onları dediğim gibi cevaplarınıza göre yorumlayacağım.
+
+257
+01:25:41,931 --> 01:25:45,572
+Evet, böylece bir üzerinden geçmiş olduk.
+
+258
+01:25:45,904 --> 01:26:09,203
+Daha önce üzerinden geçtiğimiz şekilde analiz üzerinde, nesneye yönelik yaklaşımla analiz üzerinde durmamıza gerek yok herhalde. Unified Process modelde nesneye yönelik yaklaşım.
+
+259
+01:26:10,484 --> 01:26:24,604
+gösteriliyor. UML diagramları, nesneye yönelik yaklaşım için ismi, sınıf özellikleri ve sınıfta gerçekleşen işlemler.
+
+260
+01:26:25,108 --> 01:26:42,308
+Metotlar belirtiliyor. Bunları kavramsal sınıf diagramında tamamlıyoruz. Sınıflar arasındaki ilişkiler, bağlantı association, bağlantının tipi nedir? Bunu göstermemiz gerekiyor.
+
+261
+01:26:52,500 --> 01:26:58,340
+Kümeleme, aggregation ve composition üzerinde durmuştuk.
+
+262
+01:26:58,340 --> 01:27:04,340
+İşte burada bir...
+
+263
+01:27:11,604 --> 01:27:26,203
+Elemanlar, her birinin ayrıca anlamı var mı? Yoksa ancak bütünün içinde mi anlamı var? Ona göre aggregation composition tanımı vardı.
+
+264
+01:27:26,203 --> 01:27:35,203
+Genelleştirme, ki mesela müşteri, kurumsal müşteri, şahsi müşteri demiştik örneğimizde. Biz burada az önce...
+
+265
+01:27:35,699 --> 01:27:39,319
+Şurada genelleştirmeyi kullandık.
+
+266
+01:27:52,724 --> 01:27:59,744
+Laf açırak hepsi çalışanı gösteriyor demiştik örneğimizde.
+
+267
+01:28:03,507 --> 01:28:14,927
+Nesne yönelik analizde nesneler arasındaki etkileşimi ve gerçekleşen işleri gösteriyoruz.
+
+268
+01:28:14,927 --> 01:28:24,927
+Kullanım senaryosunda aktörlerin sistemi nasıl kullanacağını belirtiyoruz.
+
+269
+01:28:29,011 --> 01:28:42,431
+Bütün ayrıntıları tek bir kullanım senaryosunda göstermek yerine genel bir kullanım senaryosu yapıp daha alt ayrıntıları ayrı ayrı kullanım senaryolarında da gösterebiliyoruz.
+
+270
+01:28:44,591 --> 01:28:50,631
+Aktör senaryoyla etkileşime geçen kimse ya da şey yani kişi olmayabilir.
+
+271
+01:28:51,152 --> 01:28:54,711
+Sistemin kullanıcısı bir insan veya başka bir sistem olabilir.
+
+272
+01:28:55,988 --> 01:28:58,988
+Senaryodan kullanılabileceği bir sonuç bekler.
+
+273
+01:29:04,500 --> 01:29:05,360
+Aktörler,
+
+274
+01:29:12,020 --> 01:29:16,040
+UML diagramında sınıf şeklinde gösterilir.
+
+275
+01:29:21,971 --> 01:29:25,031
+Bir senaryo başka bir senaryoyla ilişkili olabilir.
+
+276
+01:29:32,916 --> 01:29:35,916
+Evet, bu kahve sitesi örneğinin...
+
+277
+01:29:41,268 --> 01:29:55,068
+Kahve satışı yapan bir site, hazır kahveler olduğu gibi özel kahveler de yapılabiliyor. Birden fazla kahve siparişi verilebiliyor. Kredi kartı ya da banka havalesiyle ödeme yapılabiliyor.
+
+278
+01:29:59,123 --> 01:30:02,644
+Birden fazla çeşit kahve siparişi bir kere de verilebiliyor.
+
+279
+01:30:05,304 --> 01:30:10,724
+Siparişin tamamlanması teslimat ve ödeme formlarının doldurulmasıyla gerçekleşiyor.
+
+280
+01:30:15,475 --> 01:30:24,595
+Bitti işlemi için ödeme emrinin verilmesi ve faturanın basılması, müşteriye gönderilmesi.
+
+281
+01:30:30,163 --> 01:30:41,144
+Adımlar, müşteri bir hazır kahve seçer, özellikleri ve fiyatı görülebilir siteden, müşteri istediği kahveleri harmanlayarak özel kahvede oluşturabilir.
+
+282
+01:30:43,144 --> 01:30:56,144
+Tekrarlanarak alışveriş devam eder, müşteri siparişini siteden verir, tamamlamak için de teslimat ve fatura bilgilerini verir, ödeme detaylarını içeren bir form doldurur.
+
+283
+01:31:01,587 --> 01:31:07,547
+İstenen özelliklerdeki kahve sağlayıcı depodan alınır ve faturası basılır, müşteriye gönderilir.
+
+284
+01:31:08,148 --> 01:31:12,547
+İşte kullanım senaryosu da bu şekilde.
+
+285
+01:31:13,887 --> 01:31:16,648
+Depo, müşteri. Müşteri ne yapıyor?
+
+286
+01:31:17,528 --> 01:31:22,087
+Müşteri önce kahve seçimi yapıyor.
+
+287
+01:31:23,448 --> 01:31:26,628
+Bunun için önce kendini tanıtıyor bilgi girişi.
+
+288
+01:31:27,123 --> 01:31:52,903
+Kahve seçimini yapıyor, bunun siparişini veriyor. Siparişi verdiği anda bilgi girişinde içeriyor bu. Özel kahve oluşturma yapacaksa bu bir uzantı işlemidir. Kahve seçimini yapıp birleştirir, karışım yapar. Sipariş teslimatında depo devreye girer. Fatura basılır sipariş teslimatıyla.
+
+289
+01:31:53,460 --> 01:31:57,719
+İç içe bir işlem ve müşteriye teslim edilir.
+
+290
+01:32:04,275 --> 01:32:17,075
+Evet, include, extend ve özelleştirme kullanım senaryoları arasındaki ilişkiler.
+
+291
+01:32:23,091 --> 01:32:34,951
+Senaryo dökümanına baktığımızda, sipariş verme, müşteri bilincil aktör, kahve sitesi ve depoda diğer aktörler, ilgililer de diyebiliriz buna.
+
+292
+01:32:35,051 --> 01:32:43,291
+Ön koşul alışveriş sitesine bakabilmeli, girebilmeli. Son koşul ödeme ve teslimat bilgileri doğrulanmıştır.
+
+293
+01:32:46,868 --> 01:32:59,548
+Sipariş etmek istediğini bildirir, teslimat bilgilerini girer, ödeme şeklini seçer ve müşteri hesap bilgileriyle birlikte bu kaydedilir.
+
+294
+01:33:05,171 --> 01:33:31,351
+Burada sınıf diagramına bakalım. Müşteri, müşteri ile kahve sitesi arasında ilişki var. Kahve sitesi ile kahveler arasında sipariş kalemi bir kahveden oluşabilir ya da daha çok sayıda. Özel kalemde, standart kalemde olabilir sipariş kalemi. Ve sipariş kalemi çok sayıda ya da en az bir tane sipariş kaleminden sipariş oluşur.
+
+295
+01:33:32,467 --> 01:33:52,987
+Müşteri ile sipariş arasındaki ilişkiye baktığımızda bir siparişi mutlaka bir müşteri vermiş olmalı. Bu sıfır olamaz. Ama bir müşteri hiç sipariş vermemiş olabilir. O yüzden müşteri ile sipariş arasında, müşteri tarafında bir, sipariş tarafında sıfırdan bire kadar bir ilişki vardır.
+
+296
+01:33:53,551 --> 01:34:02,931
+Yine aynı şekilde siparişle fatura arasında, siparişle mutlaka ödeme arasında ilişkilendirme vardır.
+
+297
+01:34:02,931 --> 01:34:11,915
+İşte biz de buraya kadar olan kısmından bir soru sorduk ve bunun yanında...
+
+298
+01:34:15,636 --> 01:34:19,416
+Cevaplarını da
+
+299
+01:34:23,155 --> 01:34:29,836
+Use case diagramı, use case belgesi ve sınıf diagramı olarak almak istedik.
+
+300
+01:34:29,896 --> 01:34:40,316
+Gördüğünüz gibi çözümlerde çok karmaşık, aklınıza gelen çok karmaşık bir yapı değil, en basit hali çözüm olarak karşımıza çıkıyor.
+
+301
+01:34:51,155 --> 01:35:05,655
+Kahveye uygulanacak alt işlemler, standart kalem için alt toplamı al, özel kalem için alt işlemler şeklinde işlemleri de belirtiyoruz.
+
+302
+01:35:05,655 --> 01:35:10,916
+Ayrıca burada denetçiyi görüyoruz.
+
+303
+01:35:11,252 --> 01:35:29,252
+Yeni bir sınıf olarak eklenmiş denetçi sınıfı bir tasarım kalıbı, gov kalıbı. Bunu da tasarım sırasında, bunun da kullanılması gerekir diye tasarım diagramına eklemişiz.
+
+304
+01:35:56,020 --> 01:36:02,920
+Etkileşim, bir nesnenin üzerine düşen sorumluluğu yerine getirmek için diğer bir nesneye mesaj göndermesidir.
+
+305
+01:36:02,920 --> 01:36:09,480
+O yüzden etkileşim diagramları dediğinizde collaboration veya sequence diagramlar karşımıza çıkıyor.
+
+306
+01:36:10,739 --> 01:36:14,659
+Sequence diagramları etkileşim diagramı olarak daha çok kullanıyoruz.
+
+307
+01:36:16,000 --> 01:36:19,020
+Sınıflar arasındaki ilişkileri belirtiyoruz.
+
+308
+01:36:21,876 --> 01:36:38,695
+Böylece sıralı olarak önce nesne bir işleme giriyor, şu işlemler gerçekleşiyor şu mesajlarla, nesne 2 için şu işlemler gerçekleşiyor şu mesajlarla şeklinde.
+
+309
+01:36:39,235 --> 01:36:41,876
+Ardışıl diagramlarda mesajlar sıralı gösteriliyor.
+
+310
+01:36:52,564 --> 01:37:00,484
+Analiz ve tasarım sırasında gerçekleştirdiğimiz yapıların tümünde nesne modeli olarak tanımlanıyor.
+
+311
+01:37:02,724 --> 01:37:05,744
+Bir tane daha artışıl diagram bakalım.
+
+312
+01:37:06,564 --> 01:37:09,064
+Özel kahve siparişi için denetçi var.
+
+313
+01:37:11,664 --> 01:37:14,724
+Gerçekleşen işlemleri kontrol eden, kontrolör.
+
+314
+01:37:15,844 --> 01:37:18,724
+Sipariş veriliyor, özel kahve.
+
+315
+01:37:19,220 --> 01:37:36,500
+Yaratılıyorsa, sipariş kalemleri her bir sipariş için oluşuyor. Burada da bir döngü var. Kahve katalogda işlem gerçekleşiyor.
+
+316
+01:37:54,292 --> 01:38:12,612
+Evet, böylece nesne modellemenin birinci kısmını da şöyle bir üzerinden geçmiş olduk. Şimdi ikinci sunuma geçebiliriz.
+
+317
+01:39:38,579 --> 01:39:44,539
+Şimdi tasarım aşamasında çizdiğimiz diagramları bir kez daha gözden geçirelim.
+
+318
+01:39:48,884 --> 01:40:15,623
+Tasarım kalıplarını gördük. Tasarım kalıplarını tamamladıktan sonra ara verdik. Soruları çözdük, sınav sorusunu ve az önce gördüğümüz ürün ekleme işlemini, denetçi, uzman, yaratıcı golf kalıplarını
+
+319
+01:40:16,180 --> 01:40:20,460
+kullanarak gerçekleştireceğimizi burada görelim.
+
+320
+01:40:22,880 --> 01:40:30,159
+Özel kahve siparişini az önce inceledik zaten. Yine denetçi tasarım kalıbı devredeydi.
+
+321
+01:40:42,003 --> 01:40:46,984
+Evet, denetçi, kahve ekleme,
+
+322
+01:40:55,539 --> 01:41:08,680
+Kahve ekleme işlemi denetçi tarafından denetleniyor. Bu yüzden bunun kullanımı nesne olarak bir tasarım kalıbı kullanılması öneriliyor.
+
+323
+01:41:11,180 --> 01:41:16,539
+Ve kahve kataloğa kahve tanımı gerçekleştiriliyor.
+
+324
+01:41:19,891 --> 01:41:41,291
+Sipariş kahve katalogdan gerçekleştiriliyor. Sipariş işlemi açıldığında bu kahve sipariş ekle için yaratıcı sipariş ekle işleminin yaratılmasını sağlıyor.
+
+325
+01:42:13,747 --> 01:42:14,847
+Burada üç tane
+
+326
+01:42:22,771 --> 01:42:41,532
+Özel kahve siparişi değil de ürün ekleme işlemi, sipariş verme işlemi sırasında 3 tane tasarım kalıbı kullanımı öneriliyor.
+
+327
+01:42:41,532 --> 01:42:43,351
+Denetçi, uzman, yaratıcı.
+
+328
+01:42:43,807 --> 01:42:55,927
+Yaratıcı siparişin yaratılması sırasında, sipariş kalemlerinin yaratılması sırasında bir sipariş eklendiğinde yine yaratıcı devreye giriyor.
+
+329
+01:42:56,487 --> 01:43:02,587
+Sipariş kalemleri bir döngü içinde gerçekleştirilecek ve bunun ayrıntısı da bir sonraki slide'da.
+
+330
+01:43:02,587 --> 01:43:08,907
+Bunu az önce de görmüştük. Özel kahve yaratta denetici.
+
+331
+01:43:09,264 --> 01:43:23,963
+Controller devrede her bir eklenen kahvenin ne kadar eklendiği ve kahve katalogdan da fiyatı alınıyor.
+
+332
+01:43:24,399 --> 01:43:37,299
+Böylece sipariş kalemleri ve sipariş sınıfı arasında bir döngü şeklinde işlem gerçekleştirilmiş oluyor.
+
+333
+01:43:49,524 --> 01:44:09,184
+Aktivite diagramlarının sembolleri, denetim akışı, etkinlik başlangıcı, sinyal alma, olay kabul etme, eylem, karar verme, eş güdüm, etkinlik sonu ve sinyal gönderme gibi sembolleri var.
+
+334
+01:44:09,716 --> 01:44:30,096
+Yolcu çekim bankosuna gelir, bir çekim işlemi sırasında yolcu çekim yapar. Yani şu bir sinyal alma, yeni bir yolcu çekim bankosuna geliyor, bir olayın kabulü gerçekleşecek. Olay nedir? Yolcunun çekim yapması, eylem, aktivite.
+
+335
+01:44:33,908 --> 01:44:49,908
+Burada bir karar var. Karar verme. Check-in yapıyor. Check-in başarılı ya da değil. Değilse bu etkinliğin sonu tekrar başlayacak. Check-in başarılıysa...
+
+336
+01:44:51,347 --> 01:45:19,347
+Bagajını verdi, bagaj uçağa yüklenir, yolcu da binmek için uçağa gerekli işlemleri yapar. Bunlar aynı sırada gidiyor. Bagajı bir tarafta bir olay gerçekleştiriyor, kendi bir tarafta başka bir olay gerçekleştiriyor. Bu da nedir? Eşgüdüm, şu koyu çizgi. Bir eşgüdüm gerçekleşiyor. Bunların ikisi paralel birimlerde, paralel bölümlerde.
+
+337
+01:45:19,347 --> 01:45:29,152
+Bu şekilde bir yerde gelişiyor. Bundan sonra iki iş de bitti. Bagajlar da uçağa yüklendi, yolcular da uçağa bindi.
+
+338
+01:45:29,152 --> 01:45:49,231
+Bu noktadan sonra uçak piste yönelir. Artık uçak kapısı kapandı, piste yönelir ve işlem etkinlik sona erer. Böyle bir şeyi kendi uygulamalarınız için de mutlaka aktivite diagramı çizmeniz gerekiyor.
+
+339
+01:45:51,091 --> 01:46:09,371
+Aktivite diagramları için bir başlangıç işareti olmalı. Sinyal alma işlemiyle başlıyor. Sinyal alma bekleniyor. Akış bir sinyali alana kadar bekler. Zamanlı olaylar da bununla gösterilebilir. Eşgüdüm yine birisinin bitmesini beklemelidir.
+
+340
+01:46:10,144 --> 01:46:34,123
+Yolcuların hepsi yükleniyor ama bagajların yüklenmesi bitmiyor. O da bitince bundan sonraki aşama gerçekleşmeye başlıyor. Eşgüdüm çizgisine varan akış, çizgiyi geçmeden önce diğer akışların hepsini bekler. Fork ve Join bu eşgüdümün başlangıcı ve bitişi diyebiliriz.
+
+341
+01:46:37,427 --> 01:46:40,728
+Peki, etkinlik şemaları farklı yerlerde?
+
+342
+01:46:42,640 --> 01:47:09,700
+Yürüyorsa, böyle farklı alanlar da oluşturabiliriz. Birden fazla aktör ve aktörler arası bilgi akışı gösterilmesi isteniyorsa, yer hizmetleri, müşteri hizmetleri bölümünde gerçekleşen işlemler gibi, iki yer hizmetleri bölümü ve müşteri hizmetleri bölümünde gerçekleşen işlemleri.
+
+343
+01:47:10,640 --> 01:47:11,640
+görebiliyoruz.
+
+344
+01:47:15,283 --> 01:47:28,103
+Evet, burada etkinlik diagramlarını da tekrar gözden geçirmiş olduk.
+
+345
+01:47:28,103 --> 01:47:34,987
+Şimdi biraz aslında...
+
+346
+01:47:35,988 --> 01:47:42,088
+Bu hafta için tasarım kalıpları ve yazılım mimarisi ve soru çözümü üzerinde duracaktım.
+
+347
+01:47:42,088 --> 01:47:51,968
+Ama önümüzdeki hafta ders yapamayacağımız için yazılım kalite özellikleri üzerinde bugün biraz durmak istiyorum.
+
+348
+01:47:53,608 --> 01:47:55,988
+Onunla ilgili başka bir slide yükleyeceğim şimdi.
+
+349
+01:50:05,268 --> 01:50:23,608
+Evet, yazılım kalitesi ve kalite ölçütleri üzerinde duracağız şimdi. Bu yeni yüklediğim slide okunuyor mu? Yazılım kalite yönteminde yeni yaklaşımlar yazılım kalitesi.
+
+350
+01:50:23,608 --> 01:50:27,487
+Evet, önce yazılım kalitesi nedir?
+
+351
+01:50:33,043 --> 01:50:56,543
+Faydalı bir ürün yaratabilmek için ve özellikle de bu ürünün belirli değerleri için ölçülebilir özelliklerini tanımlayarak
+
+352
+01:50:58,579 --> 01:51:20,959
+Faydalı bir ürün yaratmışsak, yazılım kalitesinden söz edebiliriz. Bu ölçülebilir özellikleri nelerdir? Yazılım kalitesi için ölçütlerle, metriklerle değerlendirebileceğimiz şekilde.
+
+353
+01:51:21,488 --> 01:51:46,448
+Belli özellikleri hakkında söz söyleyebiliyorsak geliştirdiğimiz yazılım ürününün yani ne büyüklükte, yeniden kullanılabilirlik özelliği nedir, ne kadar kullanışlıdır, hangi işi gerçekleştiriyor, hangi alanda hizmet veriyor.
+
+354
+01:51:46,931 --> 01:51:51,931
+Performans özelliği nedir? Bütün bu sorulara...
+
+355
+01:51:56,916 --> 01:52:07,855
+Biz yazılım kalitesinden söz edebiliriz. Ama şimdi burada önce yazılım kalite özelliklerinden söz etmemiz gerekiyor.
+
+356
+01:52:30,899 --> 01:52:36,479
+ve ISO 9126'nın kalite özelliklerini sayacağız.
+
+357
+01:52:39,639 --> 01:52:44,179
+Makkol'un bu meşhur üçgeni var.
+
+358
+01:52:46,279 --> 01:52:57,559
+Bir yazılım ürününü işlemsel olarak, yani çalıştığı anda müşterinin, kullanıcının baktığı tarafı nedir?
+
+359
+01:52:58,644 --> 01:52:59,284
+Ürün
+
+360
+01:53:21,076 --> 01:53:22,355
+Sesiniz kesildi hocam herhalde.
+
+361
+01:54:29,203 --> 01:54:38,604
+Evet, bir internette kopma oldu. Tekrar paylaştım slide'ı. Şu anda ses ve görüntüde herhangi bir problem var mı?
+
+362
+01:54:39,324 --> 01:54:40,083
+Yok hocam, geliyorum.
+
+363
+01:54:40,684 --> 01:54:45,623
+Tamam, teşekkürler. Az önce çünkü bir kopma oldu. O zaman ben şu şekli büyüteyim.
+
+364
+01:54:48,623 --> 01:54:51,487
+Evet, şimdi...
+
+365
+01:54:51,488 --> 01:55:12,887
+Sizler de yazılım kullanıcısı olarak Product Operation tarafına baktığınızda aldığım yazılım ürünü doğru işi yapıyor mu? Reliability doğru yapıyor ama bu doğruluk ne kadar güvenilirdir? Güvenlik değil reliability, güvenirlik.
+
+366
+01:55:13,807 --> 01:55:38,868
+Belli bir kullanım süresindeki hata oranı diyebiliriz biz buna. Bu doğruluk %99 hatasızlık seviyesiyle mi yoksa %95 hata seviyesiyle mi çalışıyor? Bunun belirtilmesi, usability, kullanışlılık, ne kadar kullanışlı bu?
+
+367
+01:55:39,796 --> 01:56:03,936
+Ürün, kullanıcı dostu mu? Kullanıcı özelliklerine uygun mu? İntegriti ne kadar güvenli? Bütünlüğü ne kadar sağlıyor? Etkinlik, performansı, etkinliği, cevap süresi gibi değerler. Bunlar bizim için önemli. Kullanıcıların hepsi için bunlar önemli.
+
+368
+01:56:04,692 --> 01:56:25,251
+Peki, ürünü bir yerden bir yere taşıdığımızda portability taşıdığımızda, şimdi şurada saydıklarımız ölçütler nelerdir bunlar? Ama bunların hepsi ölçülemeyen değerler de olabilir. Yani tanımsal, doğru.
+
+369
+01:56:25,728 --> 01:56:52,367
+Ama ne kadar doğru? Ne anlamda? Kullanım kolaylığı var ama bunu sayısallaştırabiliyor muyuz? Bir ölçüde dayandırabiliyor muyuz? Bunlar önemli bizim için. Şu anda bunlar kalite özellikleri. Ürünün çalışabilirliğini belirtmek için doğru mu?
+
+370
+01:56:52,884 --> 01:57:12,344
+Güvenirlik hata payı az mı? Kullanışlı mı? User friendly de denilebilir buna. Güvenli mi? Etkin performansta, etkin veri kullanımında mı? Bunlar bizim kalite özelliklerimiz.
+
+371
+01:57:13,203 --> 01:57:41,203
+Peki, ürünü başka bir yere taşıyacağımız zaman portability, taşınabilirlik, yeniden kullanılabilirlik ve birlikte çalışabilirlik, interoperability. Interoperability, mesela bir kurumda daha büyük ölçekli düşünürsek, bir kurumda bir muhasebe programı var ama daha sonra biz bir ERP yazılımı aldık.
+
+372
+01:57:41,203 --> 01:57:48,064
+Bu muhasebe programı bununla iş güdümlü çalışabilecek mi? Birlikte çalışabilir mi? Interoperability.
+
+373
+01:57:50,368 --> 01:58:18,348
+Bu ürünün çalıştırılmasını sağlayanlar için önemli. Ayrıca ürüne bakım yapacak kişiler için mesela bu yazılımın kurallarında değişiklik oldu. Yazılımda eklemeler yapılacak. Bakım yapılabilirlik, esneklik, test edilebilirlik. Bunlar da diğer özellikleri. Bunların hepsine birden baktığımızda.
+
+374
+01:58:18,368 --> 01:58:26,228
+Makkol'un kalite üçgeninde kalite özelliklerini bölümlenmiş olarak görüyoruz.
+
+375
+01:58:26,228 --> 01:58:38,728
+Bunun alternatifi ISO, şöyle şurada yazayım.
+
+376
+01:58:44,819 --> 01:58:46,699
+Çekte yazıyorum şu anda.
+
+377
+01:59:30,323 --> 01:59:37,683
+ISO 9126 yazılım kalite özellikleri. ISO'da da yazılım kalite özellikleri tanımlanmıştır.
+
+378
+01:59:37,683 --> 01:59:42,683
+Biz neden bu MacColinkini daha çok...
+
+379
+01:59:44,083 --> 02:00:00,000
+Üzerinde durarak kullanıyoruz. Çünkü bu bölümlemiş, kullanıcı açısından, çalıştırıcı açısından, bakım yapan açısından diye ISO 9126'ya baktığımızda iç kalite özelliği.
+
+380
+02:00:00,000 --> 02:00:14,319
+Dış kalite özellikleri, dış kalite özellikleri diye ayırır. Dış kalite özellikleri dışarıdan bakılandır kullanıcılar tarafından. İç kalite özellikleri de daha içeride çalıştırılmasını sağlayanlar, bakım yapanlar gibi.
+
+381
+02:00:15,899 --> 02:00:26,000
+Burada da bütün kalite özellikleri sıralanıp açıklamalarının verilmesiyle görüyoruz kalite özelliklerini.
+
+382
+02:00:26,579 --> 02:00:51,420
+Şimdi bir de ölçütler, bu konuda başka şeyler de var. Mesela performans kalitesi, özellik kalitesi, reliability, uyumluluk, süreklilik, yani süreklilik demeyeyim de sağlamlık, servis yeteneği.
+
+383
+02:00:52,851 --> 02:00:58,028
+Görünüşü, ergonomik özellikler, renk özellikler.
+
+384
+02:00:59,475 --> 02:01:22,955
+Ekran yapılarının özellikleri gibi kalite boyutları işte David Garvin tarafından önerilenler de bunlar. Ama biz daha çok ISO 9126 ve Maccol'un yazılım kalite üçgeni üzerinde duracağız.
+
+385
+02:01:22,955 --> 02:01:26,035
+Şimdi burada bir model var.
+
+386
+02:01:27,252 --> 02:01:50,712
+Maccol da aynı zamanda. O yüzden de bunu çok kullanıyoruz. Bu model nedir? Burada Maccol'un belirttiği şey, kalite özellikleri diye baktığımızda bunların çoğu tanımsal özellikler. Bunları bir sayısal ölçeye getirmemiz zor.
+
+387
+02:01:51,155 --> 02:02:03,295
+O zaman biz bu kalite özelliklerini kalite ölçütleriyle, yazılım ölçütleriyle eşleştiriyoruz.
+
+388
+02:02:17,332 --> 02:02:41,324
+Birden fazla farklı sayılarda geçerli olan etkisi daha fazla olacak şekilde ölçütlerle
+
+389
+02:02:42,771 --> 02:02:46,652
+Daha sayısal, daha karşılaştırılabilir hale getiriliyor.
+
+390
+02:02:47,612 --> 02:02:53,352
+Şimdi bu formülü şurada görelim.
+
+391
+02:02:55,472 --> 02:02:59,412
+Kalite modeli olarak baktığımızda.
+
+392
+02:03:01,692 --> 02:03:07,452
+Şimdi sol taraftakiler kalite özellikleri.
+
+393
+02:03:08,180 --> 02:03:19,720
+Sağ taraftakiler ise yazılımı daha sayısal olarak ölçebilen kalite ölçütleri.
+
+394
+02:03:29,684 --> 02:03:45,484
+Farklı kat sayılarla, yani önemine göre, o kalite özelliğindeki önemine göre, farklı kat sayılarla çarpımı şeklinde hesaplayabiliyoruz.
+
+395
+02:03:46,284 --> 02:03:50,604
+Mesela doğruluk. Doğruluk neyle ilişkilidir?
+
+396
+02:03:57,043 --> 02:04:22,863
+Tam bütün istenilenleri yapıyor mu? Consistency, uyumluluk, tam mı, izlenebilir mi ve istenenlere uyumlu mu? Reliability dediğimizde, reliability, güvenirlik. Yine consistency var, hata torenası var. Tabi bu akresi, bu da doğruluk şeklinde.
+
+397
+02:04:23,475 --> 02:04:50,195
+İstenilen işi yapıyor mu? Hata toleransı nedir? Ve uyumluluğu nedir? Etkinlik dediğimiz zaman, bellek etkinliği ve çalışma, yani çalışma performansı, bellek performansı ya da çalışma etkinliği, bellek etkinliği olarak tanımlayabiliriz. İki özellik var.
+
+398
+02:04:50,623 --> 02:05:04,684
+Integrity, erişim kontrolü, erişim denetimi. Yani yetkisiz kişiler bu sisteme girebiliyor mu? Sistem bütünlüğü var mı? Erişim kontrolü ve erişim denetimi var mı? Ona bakıyoruz.
+
+399
+02:05:04,684 --> 02:05:16,003
+Usability diye baktığımızda operability, istenilen işlemleri gerçekleştiriyor mu? Çalışma yapısı, kapasitesi nedir?
+
+400
+02:05:16,532 --> 02:05:26,912
+Eğitim veriliyor mu? Kullanıcıların daha rahat kullanabilmesi için ve iletişim şeyi nedir?
+
+401
+02:05:31,380 --> 02:05:39,380
+öğrenilebilir mi, eğitim verildi mi? Bunlar da usability'yi etkiliyorlar.
+
+402
+02:05:40,220 --> 02:05:55,380
+Maintenability, bakım yapılabilirlik. Bakım yapılabilmesi için mümkün olduğunca basit hazırlanmış ve kendi kendini tanımlayabilen...
+
+403
+02:05:57,716 --> 02:05:59,636
+Mesela açıklamalar vardır.
+
+404
+02:06:03,283 --> 02:06:10,064
+Maintenability'ye baktığımızda bakım yapılabilirliğe modularite özelliğinin olması gerekiyor.
+
+405
+02:06:10,064 --> 02:06:17,783
+Demek ki modularite kendi içinde iç tanımlamaların olması.
+
+406
+02:06:25,652 --> 02:06:34,192
+ve uyumluluk. Bunlar da bakım yapılabilirlik için önemli olanlar. Test edilebilirlik için yine basitlik gerekiyor.
+
+407
+02:06:42,100 --> 02:06:58,979
+Yine açıklamaların olması gerekiyor kendi içinde. Test edilebilirlik için modülerite de gerekli. Zaten bakım yapılabilirlikte test edilebilirliği de içermiş oluyor.
+
+408
+02:07:11,188 --> 02:07:21,208
+Genelleştirilebilirlik ve modularite. Bu da bu şekilde esnekliği getiriyor.
+
+409
+02:07:21,208 --> 02:07:23,648
+Reusability
+
+410
+02:07:27,475 --> 02:07:38,055
+Daha kullanılabilir olma, yeniden kullanılabilir olma, basitlik, çok karmaşık bir algoritmada olmaması gerekiyor. Başka yerlerde de kullanabilmek için.
+
+411
+02:07:39,055 --> 02:07:51,475
+Genelleştirilebilirlik, modularite, yazılım, makineden bağımsızlık, donanımdan bağımsızlık. Bunlar da...
+
+412
+02:07:55,252 --> 02:08:00,752
+Bunlar da esnekliği, fleksibiliteyi ortaya çıkaran şeyler.
+
+413
+02:08:01,271 --> 02:08:05,731
+Şimdi burada mesela bazısında iki tane, etkinlik için iki tane dedik.
+
+414
+02:08:06,311 --> 02:08:17,792
+Ne olacak? Etkinlik kalite özelliği, Q1 diyelim ki, çalışma etkinliği, bellek etkinliği.
+
+415
+02:08:21,971 --> 02:08:32,971
+M metrik 1 diyelim, bellek etkinliğine metrik 2 diyelim. Bunların ikisinin...
+
+416
+02:08:33,811 --> 02:08:51,391
+Yüzdeleri kadar bir toplamın oluşturulması gerekiyor. Yeniden kullanılabilirlikte makineden bağımsız, yazılım sisteminden bağımsız, modüleriteye sahip ve genelleştirilebilir olması isteniyor.
+
+417
+02:08:59,667 --> 02:09:20,527
+Genelleştirilmiş olması, iletişim değerlerinin genelleştirilmiş olması ve modularitesi etkilidir. Interoperability başka yazılımlarla çalışabilmesi için de bu gereklidir.
+
+418
+02:09:21,627 --> 02:09:24,487
+Buraya kadar sorunuz var mı?
+
+419
+02:09:29,844 --> 02:09:37,083
+Yok hocam da bu şeyler, ölçütler biraz çok nesnel gelmedi bana. Daha öznel gibi sanki.
+
+420
+02:09:38,724 --> 02:09:45,684
+Yani ölçülebilirliği açısından mı yoksa her yazılıma uymaması açısından mı?
+
+421
+02:09:46,260 --> 02:09:55,539
+Yani değerlendirirken nasıl ölçülecek? Yani basitlik mesela kaç notlama verirken bana göre basit olabilir, başkasına göre basit olmayabilir o açıdan demek istedim.
+
+422
+02:09:55,539 --> 02:09:59,539
+Yani şöyle, tabii ki bu...
+
+423
+02:10:00,000 --> 02:10:15,340
+Aslında dediğin doğru. Bunlar da başka ölçütleri getiriyorlar sayısallaştırabilmek için. Mesela basitlik, algoritma karmaşıklığı olabilir, döngüsel karmaşıklık olabilir.
+
+424
+02:10:18,963 --> 02:10:35,203
+Ölçülerek veriyorlar. Her birine baktığınızda zaten tam sayısal değil bunlar da. Bunları da başka ölçütlerle, başka ölçümlerle sayısallaştırabiliyoruz.
+
+425
+02:10:37,684 --> 02:10:38,583
+Anladım hocam, sağ olun.
+
+426
+02:10:40,275 --> 02:10:56,235
+Bu arada bana sınavdan sonra 3 veya 4 arkadaşınız 2-3 dakika geçtikten sonra yükleyemedik diye sınav kağıtlarını gönderdiler.
+
+427
+02:10:57,336 --> 02:11:03,395
+Süre çok az olduğu için göndermeleriyle sınavın bitişi arasında onları değerlendireceğim.
+
+428
+02:11:17,876 --> 02:11:24,095
+Bu kalite konusunda sorunuz var mı? Başka?
+
+429
+02:11:31,764 --> 02:11:38,184
+Bunlar tasarım kalıplarıyla da alakalı değil mi hocam? Tasarım kalıplarının kullanımı ile kalite artıyor dolayısıyla.
+
+430
+02:11:38,184 --> 02:11:56,024
+Yani şöyle, tasarım kalıplarının kullanımı tabii ki kaliteyi iyi yönde etkileyen bir şey ama hani ölçütlerle ilişkisi doğrudan yok.
+
+431
+02:11:57,300 --> 02:12:03,780
+Tasarım kalıpları, yazılım kalitesini iyileştirici nitelikte.
+
+432
+02:12:10,355 --> 02:12:14,996
+Bir yazılımın kalitesini ölçmek için şunlara bakıyoruz.
+
+433
+02:12:16,235 --> 02:12:24,016
+Ama bunların iyi olmasını sağlamak üzere tasarım kalıplarını kullanıyoruz.
+
+434
+02:12:24,176 --> 02:12:28,435
+Mesela tasarım kalıpları burada ne ile ilişkilidir?
+
+435
+02:12:28,556 --> 02:12:35,855
+Tasarım kalıplarını incelerken hangi yazılım kalite özelliğinden sürekli bahsettik biz?
+
+436
+02:12:37,332 --> 02:12:40,572
+Düşük bağlaşım, yüksek cohesion.
+
+437
+02:12:42,432 --> 02:12:43,812
+Tasarım kalıbı için.
+
+438
+02:12:44,952 --> 02:12:46,052
+Tasarım kalıpları için mi?
+
+439
+02:12:46,052 --> 02:12:54,532
+Evet, tasarım kalıpları yaratıcı.
+
+440
+02:12:55,155 --> 02:13:17,136
+Hangi? Yok, hayır. Şimdi tasarım kalıplarını genel olarak düşünün. Nesneye yönelik yaklaşımı da yine içine katabiliriz. Buradaki hangi yazılım kalite özelliğini sağlayacak şeyler, sağlayacak işlemler?
+
+441
+02:13:17,136 --> 02:13:20,695
+Reusability. Evet, evet. Kim söyledi bunu?
+
+442
+02:13:21,363 --> 02:13:44,443
+Evet, çünkü az önce bu tasarım kalıplarını anlatırken sürekli razıbiliteden bahsettim, yeniden kullanılabilirlikten. Tasarım kalıpları ve daha genel düşündüğümüzde bu nesneye yönelik yaklaşım.
+
+443
+02:13:44,851 --> 02:14:12,851
+Yazılımın yeniden kullanılabilirliğini arttırmış oluyor. Yazılımın yeniden kullanılabilirliğini arttırmak için neler yapmamız gerekir dediğimizde tasarım kalıplarını kullanmak, onun öncesinde nesneye yönelik yaklaşımı kullanmak, alan modelleme yapmak, alana özgü dil yapmak.
+
+444
+02:14:12,851 --> 02:14:20,351
+Yeniden kullanılabilirliği arttıran özellikler.
+
+445
+02:14:26,644 --> 02:14:31,844
+Reusability arttığında, Mintability artıyor dolayısıyla gibi geliyor bana sanki.
+
+446
+02:14:31,844 --> 02:14:33,844
+Çünkü ne kadar...
+
+447
+02:14:33,844 --> 02:14:50,304
+Evet, aslında şöyle, şu üçgeni dikkate alırsak, biz Reusability'yi şuraya koymuş, Makkol, ürün geçişi için.
+
+448
+02:14:50,707 --> 02:15:00,747
+Ama bu tarafta da var. Yani şu reusability'yi bu tarafa da ürünün bakımını yapabilmek için.
+
+449
+02:15:01,119 --> 02:15:19,479
+Eğer yeniden kullanılabilirlik varsa bakım yapılabilirlikte daha iyileşir. O yüzden yani bu şeyi şimdi hazır alıp orijinalini koydum buraya ama derste tahtada çizerken Reusability'yi hem şuraya yazarım ben hem de şuraya yazarım.
+
+450
+02:15:22,419 --> 02:15:25,439
+Dolayısıyla Mentibility ile ilişkili.
+
+451
+02:15:27,859 --> 02:15:39,819
+Başka sorusu olan var mı? Bugünkü konularla ilişkili. Bugün sadece yazılım kalite özellikleri, ölçütleri ve MACCOL modelini gördük.
+
+452
+02:15:48,787 --> 02:15:58,787
+Test, kalite aktiviteleri, proje yönetimi konularına girmiyorum. Çünkü önümüzdeki hafta...
+
+453
+02:16:03,123 --> 02:16:13,564
+Derslerin belirtildiği için uzatılacaktır diye tahmin ediyorum. Daha sonra üzerinde duracağız bu konuların.
+
+454
+02:16:16,484 --> 02:16:20,284
+Sorusu olan var mı bugün işlediğimiz konularla ilişkili?
+
+455
+02:16:21,423 --> 02:16:25,484
+Hocam, sesiniz orada kesildi de okulun uzatılmasını kastettiniz.
+
+456
+02:16:26,003 --> 02:16:46,123
+Yani öyle tahmin ediyorum. Çünkü bu bayram nedeniyle böyle tatil yapıldığına göre herhalde sonuna eklenecektir diye düşünüyorum. Değilse de bizim bu dersimiz için sorun değil. Yani bu benim tahminim.
+
+457
+02:16:47,004 --> 02:16:47,923
+Anladım, teşekkür ederim.
+
+458
+02:16:57,236 --> 02:17:01,516
+Evet, o zaman dersi tamamlayabiliriz. Sorunuz varsa alabilirim.
+
+459
+02:17:05,108 --> 02:17:21,768
+Şimdi bugün için tasarım projelerinizle ilişkili tasarım diagramları belirtilmiş oldu.
+
+460
+02:17:33,747 --> 02:17:47,148
+Sınıf diagramları, tasarım sınıf diagramları, durum diagramları, state diagramlar. Bunların üzerinden bir önceki dersimizde de hızlıca geçmiştik.
+
+461
+02:17:52,788 --> 02:17:57,907
+Bir tane de Elçin Hanım'la beraber bir örnek yaptınız.
+
+462
+02:18:00,547 --> 02:18:09,407
+Bunun dışında tasarım kalıpları üzerinde durduk, tasarım aşamasında.
+
+463
+02:18:12,167 --> 02:18:15,747
+Ve sınav sorusunu çözdük.
+
+464
+02:18:16,111 --> 02:18:25,111
+Tasarım kalıplarından sonra da yazılım kalite özellikleri ve kalite ölçütleri arasındaki ilişkiler üzerinde durduk.
+
+465
+02:18:28,111 --> 02:18:31,491
+İlgili sorunuz var mı? Tekrar sorayım.
+
+466
+02:18:34,331 --> 02:18:35,871
+Benim yok hocam. Teşekkür ederim.
+
+467
+02:18:42,004 --> 02:18:49,824
+Evet, o zaman iyi haftalar diliyorum. Önümüzdeki hafta ders yapmayacağımıza göre iyi bayramlar diliyorum hepinize.
+
+468
+02:18:50,564 --> 02:18:52,204
+İyi bayramlar hocam, teşekkürler.
+
+469
+02:18:52,564 --> 02:18:53,244
+Teşekkürler hocam.
+
+470
+02:18:53,264 --> 02:18:54,463
+Teşekkürler hocam, yata.

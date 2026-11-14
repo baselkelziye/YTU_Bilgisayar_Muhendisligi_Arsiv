@@ -1,0 +1,1439 @@
+1
+00:04:13,235 --> 00:04:18,435
+Merhaba arkadaşlar. Sesim geliyor mu?
+
+2
+00:04:23,699 --> 00:04:29,680
+Tamamdır. Şu anda 30 kişi olduk. Şöyle 2-3 dakika daha bekleyelim. Dersimizi başlatalım.
+
+3
+00:07:58,740 --> 00:08:11,540
+Selamlar arkadaşlar tekrar. Biraz önce bağlanmıştık. 30 kişi kadar vardı. Normalde derste 100 kişi kadar alıyor. Maalesef 48 kişi.
+
+4
+00:08:12,031 --> 00:08:32,052
+Şu anda bağlandı. Benim öncelikle tavsiyem derse derste takip etmeniz arkadaşlar. Bu oldukça yararlı olacaktır sizler için de. Tekrar bu çağrımı tekrarlıyorum. Bir de devamla alakalı bir şey yaptıkları zaman bu sistem üzerinden mağdur duruma düşmeyin ondan sonra arkadaşlar. Ben uyarımı şimdiden yapayım.
+
+5
+00:08:40,032 --> 00:08:51,872
+Fakır devrelerinin çözümüyle alakalı size sorular soracağımı sınavda belirttim. Bunun üzerine bir tane daha örnek soru daha çözmeyi düşünüyorum.
+
+6
+00:08:51,872 --> 00:09:04,792
+Fakat bugün itibariyle simülatörlerinizde, simülasyon devrenizde bunları tamamlamanızı bekliyorum. Hangi simülasyon programını kullandınız arkadaşlar?
+
+7
+00:09:07,475 --> 00:09:08,975
+Kimler söz almak ister?
+
+8
+00:09:09,556 --> 00:09:10,316
+Proteus hocam.
+
+9
+00:09:11,036 --> 00:09:24,796
+Evet. Proteus'u kullandınız. Herkes kurabildi mi Proteus'unu? Proteus'u gerek yok. Online bir tane bir ara göstermiştik web versiyonu ama kul versiyon çalışıyor mu? Onu da ben test etmemiştim.
+
+10
+00:09:26,875 --> 00:09:31,316
+Simülasyonlarda problem yaşayan var mı arkadaşlar? Simülasyonlar çalıştıramayan.
+
+11
+00:09:34,868 --> 00:09:38,307
+Simülasyonlarla alakalı problem yaşayan var mı?
+
+12
+00:09:39,648 --> 00:09:48,408
+Bugün arkadaşlar, bakın ilk başta da dediğim gibi yıl içi değerlendirmelerde bir tane vizemiz olacak.
+
+13
+00:09:48,708 --> 00:09:52,228
+Bir tane vizemiz var, o da ikinci vize haftasında olacak.
+
+14
+00:09:54,807 --> 00:09:59,588
+[öğrenci], [öğrenci]'in haricinde yapamayan var mı?
+
+15
+00:10:02,964 --> 00:10:09,884
+Arkadaşlar, kuranlardan bir tanesi online olabilir mi? [öğrenci], [öğrenci], senle konuşmuştuk. Sen tekrar online ol.
+
+16
+00:10:11,403 --> 00:10:12,624
+Evet hocam.
+
+17
+00:10:14,644 --> 00:10:17,024
+Bir sorun oluyor mu proteist kurarken?
+
+18
+00:10:17,584 --> 00:10:21,864
+Yok hocam. Ben proteist eskiden kurmuştum. Yakın zamanda kurmadım.
+
+19
+00:10:22,604 --> 00:10:25,104
+Yakın zamanda kuran var mı? [öğrenci]?
+
+20
+00:10:26,292 --> 00:10:40,352
+Hocam ben kurdum. En son o labda dokümanı attıklarında kurdum. Herhangi bir sıkıntı yaşamadım. Full versiyon değil tabii ki. Proje kaydetmiyor. Sadece SS alabiliyoruz kurduktan sonra.
+
+21
+00:10:41,192 --> 00:10:46,772
+Normal programı kuruyorsunuz. Ondan sonra çalıştırıyorsunuz. Çıkta alabiliyor musunuz?
+
+22
+00:10:48,132 --> 00:10:49,331
+Tabii çıktı da alabiliyor musunuz?
+
+23
+00:10:49,331 --> 00:10:51,272
+Ben hocam SS aldım daha çok.
+
+24
+00:10:52,659 --> 00:11:00,399
+Screenshot aldın yani diyorsun. Tamam o da olur. Sorun değil. Önemli olan, peki osiloskop çalışıyor mu oradan?
+
+25
+00:11:01,699 --> 00:11:05,960
+Her şey çalışıyor hocam. LAP0'da zaten detaylı bir şekilde anlattılar.
+
+26
+00:11:05,960 --> 00:11:10,019
+LAP0'da anlatmışlar. [öğrenci] sen katıldın mı LAP0'a?
+
+27
+00:11:13,908 --> 00:11:35,847
+Katıldıysan bence oradaki şeyleri tekrar et ve baştan kurmayı dene. Eğer bir sorun görünüyorsa o da. Ama tabii ki şeyleri bugün son gün. Son güne bırakmamış olman lazım en azından. Bir arkadaşından yardım alıp nasıl çalıştırdığına alakalı son güne bırakmamak lazım. Çünkü bu akşam itibariyle doluyor.
+
+28
+00:11:37,556 --> 00:12:03,396
+Biliyorsunuz yıl içi sınavların bir tane sınavımız olacak. O da ikinci vize haftası. 12. hafta olacak herhalde. Bir tane vizemiz olacak. Onun dışında vize bir yerine geçecek olan notlar, arkadaşlar, ödevler, lablar ve proje olacak. Bunların hepsinin ortalamasından bir vize bir notu çıkaracağız.
+
+29
+00:12:04,244 --> 00:12:27,283
+O da %30'luk bir katkısı olacak. Bir tane vizemizin %30'u yıl içi %60 etti. Bir tane de final %40. Dolayısıyla ödevlere ağırlık vermenizi tekrar defa söylemiş olayım. Bugün Clipper Devreler ödevinin son günü doğru. Clamper'lara bir hafta daha ekstradan vermiştik arkadaşlar.
+
+30
+00:12:29,748 --> 00:12:54,748
+Bakıyorum şu anda clipper'ları yüklemek için bayağı bir boşluk var. Bakın şuradaki arkadaşlar, özellikle eskinoğlu olanlar, 14'ler, 15'ler, 17'ler, 18'ler. Bakın siz lablardan muaf olabilirsiniz ama ödevlerden muaf değilsiniz arkadaşlar. Ondan sonra niye geçemiyoruz? DC olsa mıydı notlarımız demeyin. Ödevlerden siz de...
+
+31
+00:12:55,264 --> 00:13:13,384
+Mesulsünüz. Bakıyorum, devam ediyorum. Evet, 17-18'liler. Bakıyorum, ödev şu anda bayağı bir eksik boşluklar var. Herkes son güne bırakmasın arkadaşlar.
+
+32
+00:13:14,868 --> 00:13:41,008
+Bakın, normal derse katılan bir arkadaş, [öğrenci], nasıl ödev formatını yapmış? Ödevi ki, alt çizgi, adını, soyadını, alt çizgi, numarasını yazmış. Ben bunu özellikle belirttim ama [öğrenci] [öğrenci] sadece numarayı yazıp Clipper yazmış, gitmiş. Demek ki dinlememiş derse. Öyle değil mi? Veya sadece numarasını yazıp gönderler var. Bak mesela [öğrenci] aynı istediğimiz formatta kaydetmiş.
+
+33
+00:13:41,491 --> 00:14:06,791
+[öğrenci], ödevi kaç olduğunu kaydetmemiş. Adını, soyadını yazmış. Takip etmeyenler belli oluyor arkadaşlar. Evet, bak bir tanesi yeni doküks doküment demiş. Demiş ki, bu yeni doküks dokümentı Gökhan Hoca açsın, dışarı içini açmak zorunda kalsın ki demiş [öğrenci]. Ne olduğunu anlasın demiş. Adını bile değiştirmeye tenezzül etmemiş.
+
+34
+00:14:13,556 --> 00:14:23,736
+Bölüm 20.32 demiş [öğrenci]. PDF'i indirdiğim zaman ben onun [öğrenci]'tan geldiğini anlayacağım. İçini açmadan nasıl anlayacağım bilmiyorum.
+
+35
+00:14:25,496 --> 00:14:31,736
+Dostlar, tüm kanalları DC moduna çekmek gerekiyor. AC moduyken sonuçları olması gerekenden farklı gösteriyor.
+
+36
+00:14:31,736 --> 00:14:39,395
+Doğru, onu derste anlatmadılar mı [öğrenci]? Biliyorsunuz, osiloskopta şöyle bir özellik var.
+
+37
+00:14:40,371 --> 00:14:47,152
+Şimdi bizim bir işaretimiz var. İşaret şöyle bir işaret olsun.
+
+38
+00:14:48,031 --> 00:14:54,152
+Şimdi bu işaret aslında bu XT işareti aslında iki kısımdan oluşuyor.
+
+39
+00:14:55,731 --> 00:15:05,031
+Birincisi bu işaret bir DC bileşeni var. Bu DC bileşen arkadaşlar bu işaretin ortalaması. Buna DC bileşen deniyor.
+
+40
+00:15:08,628 --> 00:15:27,848
+Bileşen dedik. Artı, bu işaret bir de neyden oluşuyor arkadaşlar? AC bileşenden. Şurası mesela diyelim ki, şu mesafe, diyelim ki A olsun. Şurası da A ile eksi A arasında salınabilen bir işarettir bu.
+
+41
+00:15:33,395 --> 00:15:47,755
+Aslında bu işaretin üzerine bindiğini düşünebilirsiniz. DC bileşen işaretin ortalaması. Yani DC neydi? Sıfır frekanslı olan. O işaretin ortalamasını veriyordu. Şuydu.
+
+42
+00:15:48,403 --> 00:16:14,624
+Şimdi ben osiloskopta iki seçim yapabiliyorum dediğin gibi. Osiloskopta bir DC modu var, bir de AC modu var. AC modu derseniz şu iki orijinal işareti görürsünüz. Hem DC hem AC bileşenini görürsünüz. AC dediğinizde ise DC bileşeni süzer, sadece şunu görürsünüz arkadaşlar. AC'de. DC'de ise şunu görürsünüz.
+
+43
+00:16:16,211 --> 00:16:19,392
+Anlaştık mı? Bu bilgiyi de vermiş olayım.
+
+44
+00:16:28,019 --> 00:16:51,599
+DC'ye çektiğin zaman işaretin olduğu halini görürsün. AC modu işaretin şu DC bileşenini yok eder. Bunu sıfıra çeker. Sadece AC bileşenini bırakır. Normalde bakmanız gereken DC'de kalması gerekiyor. DC'de olunca hem DC bileşeni hem AC bileşeni beraberce görebiliyorsunuz arkadaşlar.
+
+45
+00:16:54,227 --> 00:16:57,227
+Evet, onun dışında sorusu olan var mı arkadaşlar?
+
+46
+00:16:59,408 --> 00:17:07,847
+Sorusu olan, kafasına takılan bir şey olan şu ana kadar yok zannedersem.
+
+47
+00:17:08,927 --> 00:17:15,947
+Tamamdır. Bugün bir transitöre geçiş yapacağız ama ben öncesinde bir tekrar soru sormak istiyorum.
+
+48
+00:17:15,947 --> 00:17:17,668
+Şimdi bir way in.
+
+49
+00:17:19,380 --> 00:17:33,380
+Fonksiyonu var. Burada ne demiş? Burası V1 olsun, burası V2 olsun. Ben şöyle bağladığımda arkadaşlar, şöyle V1 diye bağladığımda eğer uzun kenar...
+
+50
+00:17:34,387 --> 00:17:52,487
+Üstte, kısa kenar attıysa şuradaki potansiyel artıdadır, şuradaki potansiyel eksitedir. O da toprağa çekilmiş zaten. Kısa kenar buradaysa, uzun kenar buradaysa bu taraf ters bağlanmış bir pil gibi düşünebilirsiniz. Eksi kenar burada, artı kenar burada gibi düşünebilirsiniz.
+
+51
+00:17:59,604 --> 00:18:10,844
+Bir tane V in uygulanmış sinizoidal şekilde. Bunun da genliği V ve eksi V arasında salındığını düşünelim.
+
+52
+00:18:12,003 --> 00:18:20,784
+Şimdi biz burada, hatta biraz daha geniş çizerim ki daha rahat analiz edelim işaretimizi.
+
+53
+00:18:21,543 --> 00:18:23,183
+Mavi işaretimiz V in olsun.
+
+54
+00:18:25,748 --> 00:18:53,748
+Yeşille çizecek olursa V out. Bakın, V'in buradan uygulanıyor. Art ucu buradaysa şayet demek istiyor ki bu işaret sanki buranın, bu noktanın yani A noktasının toprağa göre olan gerilim değişimidir. Ne yapıyor? Sıfırdan başlıyor, yükseliyor, V'ye gidiyor burası. Eksi gerilim aldığında ne oluyor? Mesela tam sıfıra geldiğinde ne oluyor? A ile B noktalar arasında gerilim farkının olmadığını söylüyor.
+
+55
+00:18:53,748 --> 00:19:02,008
+Eksilere geçtiğinde ise A'nın geriliminin, V'a'nın B'b'den küçük olduğu yerler başlıyor şuradan itibarense.
+
+56
+00:19:03,148 --> 00:19:07,407
+Şimdi burada Vout'u çizebilmek için.
+
+57
+00:19:08,307 --> 00:19:10,827
+Şimdi ben pozitif taraftayım, sıfırdayım.
+
+58
+00:19:11,387 --> 00:19:14,407
+Sıfırdayken yani buralarda sıfır gerilim var.
+
+59
+00:19:14,768 --> 00:19:17,407
+Herhangi bir akım akmıyor. Tam sıfır noktasındayım.
+
+60
+00:19:17,407 --> 00:19:20,688
+Burada arkadaşlar.
+
+61
+00:19:21,172 --> 00:19:29,912
+Benim herhangi bir D1 diyotumdan da D2 diyotumdan da herhangi bir akım akmıyor.
+
+62
+00:19:30,692 --> 00:19:33,952
+Dolayısıyla benim Voutum sıfırda.
+
+63
+00:19:34,731 --> 00:19:40,092
+Peki pozitiflere doğru gitmeye başladıkça, yani ben burada yükselmeye doğru başladıkça.
+
+64
+00:19:40,692 --> 00:20:03,052
+Hangi diyot iletime geçecektir? Burası yükselmeye başladıkça, A'daki gelin, bakın buradaki potansiyel toprağa göre, VA, VB'ye göre yüksek olacağından, buradaki pozitif yönüne konulmuş diyot, yani D1 diyotu iletime geçecektir.
+
+65
+00:20:07,251 --> 00:20:18,771
+İletime geçince ne olacak? İletime geçince uçları arasında burası kısa devre gibi olacak.
+
+66
+00:20:18,771 --> 00:20:23,500
+Ve de buradaki gerilim bize...
+
+67
+00:20:23,731 --> 00:20:35,172
+Şuradan itibaren, pozitiften itibaren. Peki, şöyle bir şey de demek lazım. Pozitif olacak ama, öncelikle VA gerilimi neyi yenmesi lazım?
+
+68
+00:20:35,731 --> 00:20:54,891
+V1 yenmesi lazım. Yani bakın V1 diyotunun eksi ucunda V1 gerilimi var. Örneğin burası 3 volt diyelim. Burası da 4 volt olsun. Burası da 10 volt. Eksi 10 volt arasında. Gözünüzde canlandırmak için böyle sayısal değerler verebilirsiniz arkadaşlar.
+
+69
+00:21:01,503 --> 00:21:26,763
+1 volttayım diyelim. Hala D1 iletimde değil. Bizim A gerilimli B'den de yüksek olduğu için D2 zaten çalışmıyor. 2 volta geldik diyelim. Hala D1 de çalışmıyor. D2 de çalışmıyor. D2 hala 3 volta açamadı. Ancak 3 volta geldiğimde 3 volta yaklaşık şurası diyelim. Şöyle yeşille çizeyim onu. 3 volta geldim diyelim.
+
+70
+00:21:27,284 --> 00:21:43,664
+D1'in uçları arasındaki gerilim sıfır oluyor. Daha iletime başladı. 3.001'den sonra ne yapmaya başlayacak arkadaşlar? Akım akıtmaya başlayacak. Yani D1 çalışmaya başlayacak. Yani kısa devre olacak orası.
+
+71
+00:21:52,948 --> 00:21:56,028
+Ne eşit olacak arkadaşlar? 3 Volta eşit olacak.
+
+72
+00:21:56,028 --> 00:22:02,788
+Yani benim şurası şöyle buraya kadar.
+
+73
+00:22:03,167 --> 00:22:20,867
+Hangi gerilim uyguladıysam odur. Çünkü herhangi bir şey yapmıyor. Ben buradan yükselmeye başlıyorum. Örneğin 1 volt varsa burada x ile y arasında 1 volt vardır. 2 ise 2 volt vardır. Herhangi bir akım akmıyor ama gerilimler ne yapılıyor? Paralel olarak aktarılıyor öbür tarafa.
+
+74
+00:22:22,675 --> 00:22:45,076
+Akım akmasa bile devreden ne oluyor? Şu uçların arasında direnci geçiyor. VAB gelin. VAB ve V'in ne oluyor? Pozitif kilidi. Örneğin 1 voltta. Aynen buradaki AB uçlarındaki gelin XC'ye yansıtılıyor zaten. Burada akım akmasa bile. Nedir? Akım akmaması için VA.
+
+75
+00:22:46,132 --> 00:23:07,552
+V eşittir. Vx olması lazım. Dolayısıyla Vx'de V'nin o anda almış olduğu değeri işaret ediyor. Şurada 3 voltun biraz aşağısına düştüğü zaman ne oluyor arkadaşlar? Aynen inputu takip ediyor. Burası ne kadar olacak? Yaklaşık V1 volt kadar olacak.
+
+76
+00:23:12,160 --> 00:23:25,240
+Tam şu bölgede, siyahla çizdiğim bölgede iletimde. Ondan sonra takip etmeye başlıyoruz böyle. Sıfıra geldik. Eksi gelime geldik. Artık eksi gelimdeyiz.
+
+77
+00:23:35,988 --> 00:23:44,048
+Eksi gerilimin ne olması lazım arkadaşlar? Eksi gerilimin şuradaki, şuraya da at vereyim şöyle.
+
+78
+00:23:46,968 --> 00:23:48,108
+Şuradaki.
+
+79
+00:23:52,019 --> 00:24:13,019
+Şuradaki diyelim ki F gerilim olsun, şurası da G olsun. GF gerilimi var tamam mı? Şimdi buradaki F geriliminin yani VF'nin VG'den küçük olması lazım.
+
+80
+00:24:15,220 --> 00:24:18,480
+Ne olması lazım? Negatifin altında olması lazım.
+
+81
+00:24:20,380 --> 00:24:24,980
+Şimdi burada sırayla gidiyorum ben buradan diyelim.
+
+82
+00:24:25,600 --> 00:24:27,800
+Geldim, sıfır yaptım.
+
+83
+00:24:28,840 --> 00:24:31,120
+Sıfır yaptım. Örneğin eksi birdeyim.
+
+84
+00:24:31,660 --> 00:24:34,200
+Yani VG gelimine eksi bir geldi.
+
+85
+00:24:34,500 --> 00:24:37,620
+Burada ise ne vardı? Dört demiştim buraya daha önce hatırlarsanız.
+
+86
+00:24:38,120 --> 00:24:39,360
+Burada aslında eksi dört volt.
+
+87
+00:24:39,800 --> 00:24:41,360
+Eksi bir ise burası.
+
+88
+00:24:41,807 --> 00:25:00,567
+Burası eksi, burası hala daha büyük bir eksi gerilimde. Ne olacak orası? Hala iletimde değil. Ondan sonra eksi gerilimde değil, geldik geldik. Nereye kadar devam edecek bu? Vg gerilimi eksi dörde geldi diyelim.
+
+89
+00:25:09,107 --> 00:25:26,987
+Eksi 4.001 olduğu zaman Vf, işte o zaman Vf büyüktür Vg olacak. Dolayısıyla o zaman ne yapılacak? O zaman burası kısa devre olacak. Anlaştık mı?
+
+90
+00:25:29,875 --> 00:25:36,415
+Buradaki, burası da A ucu demiştim. Pardon, burası X ucu demiştim. Burası Y ucu demiştim.
+
+91
+00:25:36,415 --> 00:25:43,596
+Ve X'ye gelin. Pardon, ben V işçizliği yapmışım. Kısa devre yapmışım şurada.
+
+92
+00:25:48,788 --> 00:26:06,888
+Şöyle yaptım. Tam böyle benim VF ucumdaki gelin VG'den küçük olduğu zaman yani eksi 4'ün altına düştüğü zaman ne oluyor o zaman? Benim iletime geçiyor burası.
+
+93
+00:26:07,539 --> 00:26:31,840
+Evet, tam o nokta örneğin burayı eksi 3 gibi çizmiştim. Burayı 3 gibi kabul etmiştim. Şurası da benim 4'üm olsun örneğin. Eksi 4'üm olsun diyelim. Şuraya kadar geliyor. Eksi 4'ten sonra kısa devre olunca x'ye uçlandı. Sadece v2 gelimi kalıyor. O da şöyle. Şöyle yine eksi 4'ün altına düştüğü an.
+
+94
+00:26:32,256 --> 00:26:58,216
+Ne yapılıyor? Diğer sinizoider giriş dışarı aktarılıyor. Bir çevrim bu şekilde yapılıyor arkadaşlar. Burası da benim V2 gerilimim. V2 gerilimim, eksi bir gerilim. Örneğin eksi dört diyebilirim ona. Bu şekilde davranıyor. Bakın, burada da gösteriliyor. V2 gerilimim ne oluyor arkadaşlar?
+
+95
+00:26:58,996 --> 00:27:10,296
+Burada biz daha V2'yi daha büyük çizdik. Sonuçta şöyle yaptık. Burada şurada da aslında dimdik değil, yuvarlak olarak takip ediliyor çıkış.
+
+96
+00:27:10,616 --> 00:27:21,916
+Buradaki her bir değişik konfigürasyonla alakalı soru gerilir. Hepsini çözmeli ve doğru bir şekilde yorumlamanız isteniyor arkadaşlar. Bu anlaşıldı mı?
+
+97
+00:27:26,195 --> 00:27:30,335
+Bu kısım anlaşıldıysa, en son nerede kalmıştık?
+
+98
+00:27:31,815 --> 00:27:40,755
+Clamper'ları anlatmıştık. Clamper'larda artık işin içerisinde ne vardı? Kapasiteler vardı. O kapasiteler devreye giriyordu.
+
+99
+00:27:41,755 --> 00:27:46,775
+Zener'leri anlatmıştık. Zener'leri bence en güzel şeyde anlayacağız. Sorular üzerinde anlarız.
+
+100
+00:27:47,827 --> 00:27:57,087
+Transformatörlerle yapılan voltaj çiftleyiciler, üç katına çıkacılar, çoklayıcılar anlatmıştık ama genel bilgi seviyesinde.
+
+101
+00:27:57,087 --> 00:28:06,468
+Şimdi 7'ye geçelim. Diyoddan sonraki en önemli devre elemanımız bizim için.
+
+102
+00:28:07,347 --> 00:28:09,888
+Hocam çoklayıcıları sanırım anlatmadık.
+
+103
+00:28:10,327 --> 00:28:10,748
+Efendim?
+
+104
+00:28:11,183 --> 00:28:13,983
+Çoklayıcıları sanırım anlatmadınız şey olarak.
+
+105
+00:28:14,983 --> 00:28:25,844
+Evet, üzerinden geçmiştim. Şey vardı orada, ne derler? Sadece neylerle yapıldığını biliyoruz. Transformatörlerle yapıldığını söylemiştik değil mi?
+
+106
+00:28:26,516 --> 00:28:49,536
+Transformatörlerle yapılıp güç aktarımı yapıldık. Transformatör konusuna girmeyeceğiz. Ama transformatörlerle gelen VM geriliminin 2VM gerilim, 3VM, 4VM gerilimine kadar yükseltilebildiği çıkışların alınabileceği uçların 4 katına kadar çıkarılabildiğini görebiliyoruz demiştik. Orada bırakmıştık.
+
+107
+00:28:50,163 --> 00:29:03,884
+Hocam, lab dokümanında transformatörler, hazırlama dokümanında bir şey paylaştılar, lab bilgi dokümanında. Transformatörler hakkında soru sormuşlar hocam. Eğer labda karşımıza gelir mi? Açıkçası onu merak ediyorum.
+
+108
+00:29:04,624 --> 00:29:10,124
+Benim bildiğim kadarıyla transformatörlerle alakalı bir şey yok. Transistörler olmasın o.
+
+109
+00:29:11,316 --> 00:29:16,896
+Transistör değil. Hocam, transformer nedir? Onu bir araştırın falan diye sormuştum.
+
+110
+00:29:16,896 --> 00:29:22,596
+O zaman siz onları biraz araştırırsanız şu devre şekliyle gösteriliyor arkadaşlar.
+
+111
+00:29:23,376 --> 00:29:25,256
+Sonuçta elektronik böyle.
+
+112
+00:29:26,067 --> 00:29:42,528
+Bir sarım var. Şöyle. Karşı tarafta da belli bir sarım oranı var. V1'in V2'ye aktarımı ile alakalı elektromanyetik olarak güç transferi sağlanıyor. Bu örneğin sarım sayıları birebirse,
+
+113
+00:29:44,175 --> 00:29:59,735
+Buradaki gerilim buradaki ile aynı oluyor. Bu 1'e 2 diyelim. V1, 2V1 şeklinde bir aktarım gerçekleşiyor olabilir. Burada tabii ki bir demir çekirdeğin üzerine sarılı bakır.
+
+114
+00:30:00,147 --> 00:30:13,836
+Bakır teller bulunuyor. Elektromanyetik olarak güç transferi yapılabiliyor. Bazen birebir olarak da sarabiliyorlar. Sonuçta şurada yalıtkan bir tabaka var. Gerilimi...
+
+115
+00:30:14,771 --> 00:30:30,771
+İzole ederek karşı tarafa aktarmak da kullanılıyor. Bunun dışında ayrıntılı bilgiye, transformatörler nasıl çalışır diye, siz araştırma ödevi gibi rahatlıkla bulabilirsiniz.
+
+116
+00:30:38,067 --> 00:31:05,608
+Araştırma ödevi olarak vermişlerdir. Şuradaki size anlattığım kısımlar şunlar. Bakır kablolardan güç aktarım amacıyla kullanılıyor. Şurada transformatör veya trafo nasıl çalışır alakalı YouTube'da bir şey var ama bu elektrik transformatörünü anlatmış. Transformatör nedir? Çalışma yapısı gibi güzel şeyler var.
+
+117
+00:31:06,163 --> 00:31:14,803
+Açıklayıcılar var. Dönüştürme oranları ile alakalı çeşitli. Burayı okuyayım mesela. Burası güzel.
+
+118
+00:31:16,563 --> 00:31:29,243
+Transronatör veya Trafo AC sistemleri gerilimin seviyesini frekans değiştirmeden manyetik indüksiyon yolları dönüştürmek için kullanan hareketli parçası bulunmayan bir elektrik makinesidir.
+
+119
+00:31:29,843 --> 00:31:31,523
+Aynı buradaki gibi.
+
+120
+00:31:31,988 --> 00:31:55,548
+Temelde şöyle bir demir veya manyetik nüve var. Buradaki tellerin sarım oranlarına göre değişik güç aktarımı oluyor. Giriş gücü ve primer deniyor girişe. Primer yani V in. Çıkışa da V output diyorduk. Sekonder diyoruz. O sekonderler arasındaki gerilim aktarımına.
+
+121
+00:31:55,923 --> 00:32:14,604
+Eşit miktardaki gerilim, burada eşit güç aktarılıyor. Mesela bir transformatörde örneğin girişteki V gerilimi çıkışta 2V'ye yükseltiyorsa bu 2V'ye sahip cihazın akımı yarıya düşecek.
+
+122
+00:32:23,796 --> 00:32:43,736
+İki bacaklı bir komponent düşünün. Şuraya üçgen çizeyim. Bunun üzerinden geçen akım İ'dir. Uçlar arasındaki gerilim V'dir. Güç V çarpı İ'dir. Her zaman. Yani akım çarpı gerilim bize gücü verir.
+
+123
+00:32:44,144 --> 00:32:57,203
+Bu bir direnç olabilir, bir transistör olabilir. Eğer bir devrenin veya bir kara kutu devre gelinimini biliyorsanız ve de çektiği akımı biliyorsanız onun gücünü hesaplayabilirsiniz.
+
+124
+00:32:57,203 --> 00:33:11,124
+Evet, bunu da geçelim. Arkasından transformatörlere yönelelim arkadaşlar.
+
+125
+00:33:11,988 --> 00:33:17,327
+Şimdi bu dersimizin ana konusu transistörler.
+
+126
+00:33:17,327 --> 00:33:17,928
+Özür dilerim.
+
+127
+00:33:18,428 --> 00:33:19,388
+Transistörler.
+
+128
+00:33:19,788 --> 00:33:22,488
+Şimdi transistörler bizim için çok önemli.
+
+129
+00:33:22,688 --> 00:33:31,327
+1950'li yıllarda artık yarı iletken transistörlerin bulunmasıyla beraber artık yarı iletkenle...
+
+130
+00:33:31,827 --> 00:33:58,767
+Yapılan cihazlar hem küçülmeye başladı hem de daha stabil sıcaklık koşullarında çalıştırılmaya başlandı arkadaşlar. İlk yapılan transistörü bu P ve N tipi malzemeye göre, hani görmüştük edersin aynı diyotlarda gördüğümüz gibi, diyotlar iki jonksiyonluydu. Ne demek iki jonksiyon? Yani iki eklem P ve N'den oluşuyordu. Burası artı kısmıydı, burası eksik kısmıydı.
+
+131
+00:33:59,347 --> 00:34:02,927
+Şurada Deployation Bölgesi bulunmaktaydı.
+
+132
+00:34:03,927 --> 00:34:10,427
+Şimdi transistörlerde ise arkadaşlar yine P ve N tipi malzemeyi kullanıyoruz.
+
+133
+00:34:11,347 --> 00:34:17,007
+P ve N tipi malzeme olunca 3 tane malzeme oluyor. En az 2 tanesi aynı tipte oluyor.
+
+134
+00:34:17,667 --> 00:34:26,007
+Dolayısıyla transistörler yine 2 Johnksyon, bipolar Johnksyon transistör deniyor buna.
+
+135
+00:34:26,096 --> 00:34:43,416
+BJT transistörler deniyor. İki tane eklem bulunuyor. Merkezdeki, merkezde bulunan malzemenin tipi diğerlerinden farklı oluyor. Dolayısıyla iki tip transistör yapma şansımız var bizim.
+
+136
+00:34:54,068 --> 00:35:09,448
+İçe P tipi malzemeyi koyduğumuz bir yapı gibi düşünebilirsiniz. Şimdi bunları normalde nasıl yapıyorlar? Aslında burada ben kare şeklinde göstermişim ama gösterilmiş daha doğrusu ama bunu şöyle düşünebilirsiniz arkadaşlar.
+
+137
+00:35:21,204 --> 00:35:41,043
+Şuraya kadar olan kısmına şöyle çizersem, şu üstünde P veya N tipi var. Altında da aynı şekilde şöyle yaptığımda, burada da örneğin P veya N tipi var. Örneğin yukarıdaki gibi düşünecek olursak, yukarıda P var. Tam ortasına kuşak gibi.
+
+138
+00:35:42,547 --> 00:36:04,347
+En tipi malzeme konuluyor örneğin. Burada alınan kesit de arkadaşlar, şurada alınan kesit de şöyle kesit alınmış. Bakın şöyle kesmişiz. Şöyle kesmişiz. Dolayısıyla tam şu ortadaki kesiti aldığınız zaman bu kesit neyi verecek size? Şu yandan görünüşü vermiş olacak.
+
+139
+00:36:06,099 --> 00:36:11,059
+Dolayısıyla aynı bir silindirin ortadan kesilmiş hali gibi düşünebilirsiniz bunu.
+
+140
+00:36:11,939 --> 00:36:18,880
+Şimdi dediğimiz gibi iki tip transistörler var. PMP ve MPN tipi.
+
+141
+00:36:18,880 --> 00:36:27,539
+Bunlar birbirlerinin tam tersi mantığıyla çalışıyorlar arkadaşlar. Akım yönleri ve beslemeleri birbirinden farklı.
+
+142
+00:36:28,083 --> 00:36:51,483
+Örneğin NPN tipinde. Burada 3 tane uç var arkadaşlar. Hem PNP tipinde hem NPN tipinde. Merkeze bağlı olan bacağı Base deniyor arkadaşlar. İki tarafta da bakın ortaya bağlanmış. Ortadaki kuşağa bağlanmış. Oraya Temel deniyor. Base, Temel deniyor.
+
+143
+00:36:54,943 --> 00:37:00,484
+Toplayıcı demek ve uçlardan bir tanesinin adı. Şöyle.
+
+144
+00:37:02,604 --> 00:37:09,543
+Emetör ise yayıcı demek. Emitör, yayıcı demek. Bu yayıcı, bu toplayıcı bakın.
+
+145
+00:37:10,224 --> 00:37:15,284
+Buradan da sanki akım şöyle akıyor, şöyle giriyormuş gibi düşünebilirsiniz.
+
+146
+00:37:16,104 --> 00:37:21,884
+Burada da tam tersi. Akım buradan kolektörden çıkıyor.
+
+147
+00:37:22,612 --> 00:37:36,311
+Emitter'den giriyormuş gibi düşünebilirsiniz. Böyle bir çalışma var. Pardon, Emitter'den yayılıyor, kolektörden toplanıyor gibi düşünebilirsiniz. Bu tam tersi.
+
+148
+00:37:40,623 --> 00:37:48,063
+Emitere doğru giriyormuş, kolektöre doğru çıkıyormuş, kolektörende çıkıyormuş gibi düşünebilirsiniz.
+
+149
+00:37:48,643 --> 00:38:07,263
+Şimdi biraz daha ayrıntısına gireceğiz zaten. Demek ki 3 tane ucumuz var. Emitör, Base ve Collector. Base daima ortasında yer alan, emitör ise emitör ve kolektör ise uçlarda yer alan bacakların veya çıkışların atların.
+
+150
+00:38:09,907 --> 00:38:35,528
+Mesela burada bir tane PMP, PMP tipinde şey verilmiş, transistör verilmiş. Arkadaşlar şu P ve N'in her birleştiği yerde aslında nasıl ki hatırlarsanız diyotta P tipi malzeme, N tipimizde arada bir tane depletion origin oluşmuştu.
+
+151
+00:38:37,844 --> 00:38:52,244
+Şimdi burada da baktığımızda arkadaşlar P ve N arasında aynı şekilde N ile P arasında ne var? Deplation regionlar oluşuyor.
+
+152
+00:38:52,244 --> 00:39:04,304
+Şimdi buradan baktığımızda bizim kolektörle baz arasına negatif bir.
+
+153
+00:39:04,820 --> 00:39:28,500
+Bu gerilim. Emetör ile baz arasına ise pozitif bir gerilim bağlanmış. Ne diyor? Emeter-based junction is forward bir aset. Yani buraya pozitif bir emetör ile ve ve ve ve ve ve ve diye düşünelim. Pozitif bir gerilim. O da ve e e'ye eşit.
+
+154
+00:39:31,476 --> 00:39:52,195
+Ve kolektörle baz arasındaki gerilim ise burada eksi Vcc yani negatif bir gerilim bağlanmış çalıştırılmak için. Dolayısıyla bu durumda arkadaşlar çoğunluk taşıyıcıları emetörden kolektöre sanki transitörün içinde geçiyor.
+
+155
+00:39:58,804 --> 00:40:15,984
+Buradaki tamamlamaya bir de IB akımı ekleniyor arkadaşlar. Dolayısıyla IC eşittir. IB artı IE şeklinde bir tam şu nottaki şu nota göre şunu yazabiliyoruz.
+
+156
+00:40:26,195 --> 00:40:28,376
+Eşit kabul edilir arkadaşlar.
+
+157
+00:40:30,715 --> 00:40:42,655
+Şimdi aynı şekilde MPN tipine baktığımızda ise, MPN tipinde de bakın burada kolektörle baz arasına negatif gelin bağlamıştık.
+
+158
+00:40:42,655 --> 00:40:48,735
+Burada ise kolektörle baz arasına pozitif bir gelin bağladık.
+
+159
+00:40:49,295 --> 00:40:52,555
+VCB, VCB pozitif.
+
+160
+00:40:53,139 --> 00:41:04,179
+VEB ise negatif. Yani PMP tipindeki bağlantının tam tersini yapmış olduk.
+
+161
+00:41:05,059 --> 00:41:08,739
+Hocam, denklemi yanlış mı yazdınız acaba yukarıda?
+
+162
+00:41:10,619 --> 00:41:12,439
+Bakıyorum, yanlış mı yazdım?
+
+163
+00:41:13,960 --> 00:41:18,920
+Evet, evet. E demedim mi? Pardon, ters yazmışım onu.
+
+164
+00:41:19,764 --> 00:41:43,164
+Evet, şurası IE olacak. Orayı ters yazdım. IE eşittir. IC artı IB olacak. Teşekkürler hatırlatma için. Yani benim şu nota baktığımda IE, IC buradan geliyor. IC artı IB eşittir IE olması gerekiyor.
+
+165
+00:41:45,043 --> 00:42:11,443
+NPN tipindeki duruma bakıyorum. Burada da aynı şekilde arkadaşlar. Bakıyorum şu nokta için. Burada da IE eşittir. Değil mi? Aynı eşitlik var. IC artı IB. Buradan da akım buradan geliyor. IB ve IC olarak dağılmış oluyor. Dolayısıyla aynı şey var. Burada da arkadaşlar dikkat edin.
+
+166
+00:42:12,115 --> 00:42:24,235
+Bu NPN'de akım kolektörden çıkıp IE'ye doğru giriyor diye düşünmüştük. Burada da IE'den çıkıyor, IC'ye giriyormuş gibi düşüneceğiz arkadaşlar.
+
+167
+00:42:25,012 --> 00:42:49,211
+Daima I, C ile I, B'nin yönleri noda aynı yönde ulaşıyor. Zaten o yüzden I, C ve I, B toplanıyor her zamanında. Burada da tam tersi oluşan Diptation Region'larda, burası geniş, burası şey. Burada da Majority akımları çok önemli oluyor. Aynı burada göstermiş. Burada Majority akımı var.
+
+168
+00:42:49,972 --> 00:42:57,251
+Şu şekilde, onun haricinde çok az NPN'den dolayı da oluşan ekstra akımlar oluşuyor.
+
+169
+00:42:58,632 --> 00:43:07,052
+Peki genel olarak biz bunu iki tip transüstörümüzü çizerken nasıl çizeceğiz?
+
+170
+00:43:07,432 --> 00:43:12,992
+Genellikle arkadaşlar biz örneklerimizi şu NPN'e göre anlatıyoruz.
+
+171
+00:43:13,692 --> 00:43:16,192
+NPN'de genellikle şöyle çizilir arkadaşlar.
+
+172
+00:43:21,364 --> 00:43:24,284
+Şöyle bir çizim tarzı vardır NPN için.
+
+173
+00:43:26,064 --> 00:43:36,824
+Şimdi şurada bir ok bulunur. Bu ok daima arkadaşlar okun gösterdiği yön N tipi malzemeyi gösterir.
+
+174
+00:43:36,824 --> 00:43:45,624
+N tipi malzemeyi gösterir. Okun yönü N tipi malzemenin olduğu yönü işaret eder. Dolayısıyla burası N, burası N.
+
+175
+00:43:46,132 --> 00:43:59,412
+Baz ise şu çizgi var ya, o çizginin olduğu yer ise bazdır. Burası baz, şurası kolektör, şurası emetör olarak çizgi var. Daima emetör ucunda arkadaşlar bir ok bulunur.
+
+176
+00:43:59,412 --> 00:44:11,092
+Emetör ucunda. Bu emetördeki okun yönü ise eğer dışarı gösteriyorsa dışarlardaki en tipi malzemeyi işaret eder.
+
+177
+00:44:12,403 --> 00:44:21,684
+Ama buradaki gibi içeriği gösteriyorsa, o da şöyle gösterilir genellikle, böyle yatay değil de. Şöyle gösterecek olursak.
+
+178
+00:44:25,492 --> 00:44:30,612
+N tipi malzeme olarak bazın yönünü gösteriyorsa, demek ki bazda N var.
+
+179
+00:44:33,972 --> 00:44:47,432
+Bazda M varsa şayet, diğer taraflarda P var. Kolektör ve emetörde. Okun bulunduğu uç daima ne arkadaşlar? Emetör. Oradan çıkarabiliriz şöyle. Okun bulunduğu yön emetör.
+
+180
+00:44:49,092 --> 00:44:55,512
+Şimdi NPN tipinde akım nereden akıyor? Şöyle akıyormuş gibi düşüneceğiz.
+
+181
+00:45:01,556 --> 00:45:16,196
+Şöyle Ic akımı var. Şurada Ie akımı var. Burada baz akımı içeri doğru. I baz akımı. I kolektör aşağı doğru. İyice.
+
+182
+00:45:16,724 --> 00:45:30,284
+IE hakkımı da yine aşağı doğru oldu. Bir bilenin eşleniği şeklinde bunlar. Dediğim gibi şu malzemeye baktığımda ben bunun ne olduğunu çıkarabiliyorum. Niye? Okun olduğu bacak bir kere ematör.
+
+183
+00:45:32,179 --> 00:45:48,820
+Ve dışarıyı gösteriyor. Demek ki bu dış demek istediğim sonuçta 3 tip malzeme var. Dışlardakiler aynı tip malzeme. Okun yönü N tipini gösteriyor. Demek ki bu N. Burası da N olmak zorunda. Burası kollektör.
+
+184
+00:45:58,452 --> 00:46:13,232
+Emetör ucunda içeriği göre bazı tarafını işaret ediyorsa ok. Demek ki burada N tipi malzama var. Dışarılarda P olmak zorunda bazı kolektör. Bu da PMP tipi transistör olmuş oluyor arkadaşlar.
+
+185
+00:46:17,232 --> 00:46:22,732
+Şimdi benim burada... Evet bir soru var herhalde.
+
+186
+00:46:26,867 --> 00:46:30,188
+Görüntü veya sesle alakalı bir sorun var mı arkadaşlar?
+
+187
+00:46:34,483 --> 00:46:37,903
+Görüntü veya sesle alakalı bir... Yok hocam, şu an hiçbir sorun.
+
+188
+00:46:39,443 --> 00:46:45,443
+Yok. [öğrenci] zannedersen senin şeyinde, internet bağlantınınla alakalı olabilir.
+
+189
+00:46:45,443 --> 00:46:57,443
+Evet. Şimdi bizim burada çeşitli...
+
+190
+00:47:00,244 --> 00:47:08,364
+Transistörü kullanabileceğimiz çeşitli yapılar var. Bakın, sonuçta bu transistör dediğim benim üç bacaklı bir devre elemanı.
+
+191
+00:47:08,983 --> 00:47:14,483
+Kollektör, emetör ve bas şeklinde görüyoruz.
+
+192
+00:47:15,083 --> 00:47:21,143
+Bazen kullanılan devre yapılarına göre bazen emetöre toprak bağlanır.
+
+193
+00:47:22,423 --> 00:47:25,284
+Bazen şöyle yapılır.
+
+194
+00:47:26,099 --> 00:47:43,320
+Orta, kolektör, emetör, şöyle, baza toprak bağlanır. Bazen de şu şekilde olabilir. Ortak, kolektör, emetör, baz şeklindedir.
+
+195
+00:47:44,079 --> 00:47:48,340
+Kolektöre toprak bağlanır. Yani devrinin ground'u bağlanır.
+
+196
+00:47:48,724 --> 00:47:56,443
+Bunların yapısına göre, dolayısıyla 3 tane yapı kullanım şekli var.
+
+197
+00:47:57,384 --> 00:48:12,204
+Eğer emetörde toprak varsa ortak emetörlü yapı, baz toprağa bağlanmışsa ortak bazlı yapı veya kolektöre bağlanmışsa ortak kolektörlü yapı diye adlandırılır arkadaşlar.
+
+198
+00:48:14,804 --> 00:48:29,804
+Common Base Amplifier dediği ortak bazlı amplifier yani bir üç bacaklı devre elemanı olarak düşünürsem burası baz olmuş, burası kollektör, burası emetörlü bir bağlantı yapılmış diyelim.
+
+199
+00:48:29,804 --> 00:48:40,804
+Böyle olunca bazlı emetörün arasında örneğin bu silikondan yapılmış diyelim. Sonuçta ben şöyle kullandım diyelim. NPN tipi bir eleman bu.
+
+200
+00:48:42,003 --> 00:48:58,824
+Sonuçta şuralarda diyot gibi davranıyor bakın. NP, şöyle bir diyot var böyle olursa. Şuraya bakacak olursam nasıl bir diyot var? Burada ise şöyle bir diyot. Sanki iki diyotun birleşimi gibi düşünebilirsiniz.
+
+201
+00:48:59,411 --> 00:49:14,692
+Ortak bazlı yapıda bazda emetör arasına uygulanan gelin 0.7'yi geçtikten sonra IE akımı yani şuradaki akım ciddi manada akım artıyormuş arkadaşlar. Onu gösteriyor.
+
+202
+00:49:19,648 --> 00:49:29,248
+Burada Common Base Amplifier'ı gördükten sonra tekrar bunların üzerinden geçeceğiz. Bu şeyleri okumayı tekrar yapacağız arkadaşlar.
+
+203
+00:49:29,248 --> 00:49:40,648
+Genel olarak bir transistörün çalışma eğrisine baktığımızda, bir transistörde kesim bölgesi,
+
+204
+00:49:47,891 --> 00:49:52,371
+Burası kesim bölgesi. İki, doyma bölgesi.
+
+205
+00:49:57,235 --> 00:50:10,055
+Ve de çalışma bölgesi veya 3 aktif bölge olmak üzere 3 tane bölge bulunur arkadaşlar.
+
+206
+00:50:10,055 --> 00:50:18,055
+Şimdi burada mesela bir tane NPN tipinde.
+
+207
+00:50:19,668 --> 00:50:44,928
+Şey çizelim, burası bazı, burası kolektörü, burası da emetörü olsun. Bizim burada bakın şey yapmış, burada VCB yani kolektörle baz arasında bir gerilim verilemiş. Bir de I C yani buradan akın akın.
+
+208
+00:50:46,068 --> 00:50:58,427
+Eğer benim Ic gelimim Ie'ye yaklaşık eşitti biliyorsunuz. Şöyle Ie'ye eşitti çünkü I baz akımı çok düşük olacak.
+
+209
+00:51:07,827 --> 00:51:16,687
+Kollektörle baz arasına uğrayan gelimin yükseltilmesine rağmen akmadığı bölgeye kesim bölgesi diyoruz.
+
+210
+00:51:17,627 --> 00:51:27,607
+Tam tersine akımın çokça aktığı ama kollektörle baz arasına düşen gelimin düşük olduğu bölge ise satürasyon bölgesi.
+
+211
+00:51:27,607 --> 00:51:33,607
+Diğer şuradaki araları ise aktif çalışma bölgesi diyeceğiz. Bununla alakalı...
+
+212
+00:51:34,612 --> 00:51:56,092
+Ayrıntılı şeyler göreceğiz. Şimdi kafasınız tek bilmeniz gereken bir transistörle. Çünkü bağlantı şekline göre de bu eğriler değişecek. Sadece herhangi bir transistörün çalışmasında 3 tane bölge olduğunu, kesim, doyma ve de aktif bölge olmak üzere 3 tane bölge olduğunu bilin arkadaşlar.
+
+213
+00:52:00,692 --> 00:52:26,571
+Evet, aktifte bizim şimdi bu transistörlere niye amplifier demişler? Bir de amplifier demek şu demek arkadaşlar. Güçlendirici. Özellikle ortak bazlı yapılarda arkadaşlar şöyle. Şuralardan V-in'ler uygulanır, V-out'lar uygun. Transistör sadece.
+
+214
+00:52:27,987 --> 00:52:37,367
+Dijital çıktı ve girdi üretmek için değil, asıl kullanılma nedeni gerilimi yükseltmek amacıyla kullanılıyor en temelde.
+
+215
+00:52:38,407 --> 00:52:42,268
+Onunla alakalı da örnek vardı zannedersem gösteririm birazdan.
+
+216
+00:52:42,268 --> 00:52:51,927
+Adım adım gidiyoruz. Aktif bölgede amplifier'ın yani transistörün çalışma aralığını görebiliyoruz.
+
+217
+00:52:52,755 --> 00:53:18,215
+Katov kesim bölgesinde amplifier genel olarak çalışmıyordur. Gelim olmasına rağmen akım çok azdır. Aynen şuradaki gibi. Bakın akım sıfırlarda gelim VB gelimi artmasına rağmen akım hep IC ve IE sıfırda. Tam tersine bir de saturasyondaysa amplifier yani transistör tamamıyla çalışmaktadır.
+
+218
+00:53:18,675 --> 00:53:27,555
+Akım vardır fakat çok az gerilimle beraber bu yüksek akımı elde edebiliyoruz. O yüzden buraya da doyma bölgesi deniyor arkadaşlar.
+
+219
+00:53:30,095 --> 00:53:42,395
+Dediğimiz gibi bir yaklaşıklıklar kısmına geldiğimiz zaman bir tane NPN transüstör çizeyim. Burası baz, kollektör, burası da emetör olsun.
+
+220
+00:53:43,443 --> 00:54:00,764
+Ic ucuna gelen akım yaklaşık olarak Ie'ye eşittir arkadaşlar. Ne demiştik? Ic artı Ib'dir. Ib çok küçük olduğu için ihmal edilir. Ic eşittir. Yaklaşık Ie'dir.
+
+221
+00:54:06,547 --> 00:54:16,107
+Burası arkadaşlar şöyle artı eksi olarak n-pn tipindeydi. Burası p, burası n. Sanki şöyle bir diyot varmış gibi düşünürseniz.
+
+222
+00:54:24,655 --> 00:54:30,255
+Bizim transistörümüz çalışmaya başlar. Yani transistörü öyle bir devre elemanı olarak görün ki,
+
+223
+00:54:30,255 --> 00:54:41,315
+baz ile emetör arasına, yani V, B, onu da şöyle çizelim. Şurası baz, V, B, şurası da V, E olsun.
+
+224
+00:54:51,155 --> 00:55:04,476
+Ve 0.7'nin üstüne çıktığı andan itibaren benim Ic akımım sanki akmaya başlıyormuş gibi düşünebilirsiniz. Bu NPM tipi transfer için.
+
+225
+00:55:06,255 --> 00:55:11,016
+Şimdi burada alfa ve beta diye iki tane parametre var.
+
+226
+00:55:11,016 --> 00:55:19,016
+Şimdi alfa Ic'nin sonuçta şöyle bir şey ya. Ic eşittir.
+
+227
+00:55:19,155 --> 00:55:32,956
+İc artı ib eşittir ie demiştik. Yani emitörden yayılan akımlar kolektörde toplanan ve baza giden akımların toplamı demiştik.
+
+228
+00:55:32,956 --> 00:55:43,576
+Ib'ye çok küçük olarak söylemiştik ama ic bölü ie böldüğümüzde tam anlamıyla bir olmaz.
+
+229
+00:55:44,179 --> 00:55:58,239
+IB'nin değerine göre en yüksek alabileceği değer 1'dir bunun. Ama genellikle 0.99 şeklindedir. Bu da IC'nin R'ye oranı alfa olarak biliniyor arkadaşlar.
+
+230
+00:55:59,299 --> 00:56:04,900
+Tabi DC modda yani DC gelin uyguladığınızda bu şekilde bulursunuz. Sabitli rakımlar çünkü.
+
+231
+00:56:08,628 --> 00:56:13,927
+Bunların difansiyel farklarının oranı şeklinde bulunabilir bunlar.
+
+232
+00:56:16,387 --> 00:56:24,228
+Şimdi arkadaşlar, demin size bahsettiğim transistörde güçlendirme konusuna biraz sonra gireriz.
+
+233
+00:56:24,307 --> 00:56:28,008
+Bir 10 dakika ara verelim. Ondan sonra tekrar başlayacağız arkadaşlar.
+
+234
+00:56:28,827 --> 00:56:29,447
+Görüşmek üzere.
+
+235
+01:09:16,532 --> 01:09:20,492
+Merhabalar arkadaşlar. Ses geliyor mu?
+
+236
+01:09:25,492 --> 01:09:26,391
+Geliyor hocam.
+
+237
+01:09:27,112 --> 01:09:27,492
+Tamam.
+
+238
+01:09:28,952 --> 01:09:38,231
+Şimdi burada transistörlerle gerilim yükseltmeyle alakalı önde temel bir örnek verilmiş.
+
+239
+01:09:38,391 --> 01:09:42,832
+Burada PMP tipinde bir transistör var öncelikli olarak.
+
+240
+01:09:43,072 --> 01:09:47,391
+Burada bas kısmı toprağa bağlanmış gördüğünüz gibi.
+
+241
+01:09:48,152 --> 01:09:50,132
+Emetör ucundan ne yapıyor?
+
+242
+01:09:51,092 --> 01:09:52,891
+Giriş akımı geliyor.
+
+243
+01:09:53,555 --> 01:10:11,575
+Ve çıkış yakımı da kolektörden çıkıyor. Gerçekten bu nasıl bir yapı aslında baktığımızda. Şöyle bir yapıdayız biz. Şöyle. İçeye doğru göstermesi lazım ki burasının baz olduğunu anlayalım. Şurası emetör, şurası kolektör tarzında.
+
+244
+01:10:12,148 --> 01:10:24,128
+Bir yapılandırma yapılmış. Burada ematörden 200 milivoltluk bir input sinyali vermiş sinüzoidal olarak.
+
+245
+01:10:24,128 --> 01:10:35,568
+Ve benim ematörle bas arasındaki gerilimim 200 milivoltken iç direncim yapısından kaynaklanan bir saniye kadar.
+
+246
+01:10:58,612 --> 01:11:08,912
+Arkadaşlar, bizim buradan emetörle baz arasındaki direncimiz oldukça düşük bir direnç. 20 ohmlar civarında.
+
+247
+01:11:08,912 --> 01:11:21,931
+Yani benim emetör olarak yapılandırdığım kısımda P ve N arasındaki, yani şurada bir diyot var. Bu diyotun diyottan dolayı iç direnç düşük.
+
+248
+01:11:24,275 --> 01:11:38,895
+En arasındaki ters diyottan dolayı kolektörle baz arasındaki benim dış tan ölçtüğüm kolektörle baz arasında ölçmüş olduğum direnç ise yapısından dolayı oldukça 100K'lar mertebesinde.
+
+249
+01:11:38,895 --> 01:11:48,975
+Burada ise 20 ohmlar var seviyesinde. Şimdi benim kolektörle şöyle bir şey bağlamışım. Bu da toprağa gidiyor.
+
+250
+01:11:49,503 --> 01:11:59,963
+Bir tane RL direnci bağlamışım. Bu RL direnci aslında kolektörden beslenen herhangi bir ikinci devre veya herhangi bir cihaz olabilir.
+
+251
+01:11:59,963 --> 01:12:14,523
+Onun iç direncini temsil ediyor. Reload. Yani reload, yük dediğimiz zaman benim asıl çalışan devremden beslenen ikinci devrenin temsili olmuş oluyor.
+
+252
+01:12:17,524 --> 01:12:31,364
+RE 200 milivolttu. RE ise 20 ohmdu. Dolayısıyla ben IE yani IE'yi hesaplayacak olursam 10 miliamper buluyorum.
+
+253
+01:12:32,424 --> 01:12:36,504
+IC'ye de yaklaşık IE'ye eşitti hatırlarsanız genel olarak kabulümüz.
+
+254
+01:12:36,504 --> 01:12:44,664
+Dolayısıyla IE yaklaşık ILE'ye input load'daki akıma eşit 10 miliamper.
+
+255
+01:12:45,747 --> 01:12:57,787
+Şimdi V-load ise arkadaşlar, I-L çarpı R, yani 10 mA çarpı 5 kilo ohmluk bir şey varmış, 50 voltluk bir aktarım oluyormuş.
+
+256
+01:12:59,047 --> 01:13:05,467
+Yani ben girişte 20 milivoltluk, çıkışta 50 voltluk bir gerilimim var.
+
+257
+01:13:12,180 --> 01:13:27,579
+AV olarak ifade ediliyor. Dış output geriliminin input gerilimine oranı. Yani 50 voltun 200 milivoltu oranı yaklaşık 250 katmış. 250 katlık bir gerilim kazancı elde edebilmişiz.
+
+258
+01:13:39,988 --> 01:14:06,923
+Neden yükseltilmek istenir arkadaşlar? Özellikle çeşitli sensörlerden aldığımız dış dünyayla ilgili veriler, örneğin EKG cihazlarından, uydu verilerinden olabilir, herhangi bir yerdeki bunların yükseltilerek işlenebilir seviye, tamam 50 volt seviyesinde değil ama 5 voltlar seviyesinde bile olsa en az 20-25 kat kadar kuvvetlendirmesi lazım ki mikro işlemcilerin...
+
+259
+01:14:07,028 --> 01:14:19,708
+DSP kısımlarının işleyebileceği seviyeye getirilebilsin. Özellikle buradaki sinyal güçlendirme yani Signal Amplification.
+
+260
+01:14:23,604 --> 01:14:24,863
+Kısmında kullanılır.
+
+261
+01:14:25,304 --> 01:14:30,064
+Veya hepinizin müzikten az çok bildiği bir şey var. Amplifikatörler vardır değil mi?
+
+262
+01:14:30,564 --> 01:14:34,783
+Örneğin elektro gitarlar var değil mi? Şöyle elektro gitarlar.
+
+263
+01:14:35,443 --> 01:14:37,384
+Şimdi buradan bir ses geliyor.
+
+264
+01:14:38,004 --> 01:14:41,423
+Elektro bir ses işareti geliyor ama çok düşük genlikli.
+
+265
+01:14:41,484 --> 01:14:46,304
+Buradan bir sensör var. Buradaki titreşimlere göre üzerindeki elektrik sinyal değişiyor.
+
+266
+01:14:46,304 --> 01:14:50,384
+Bunu hoparlöre direkt verseniz hoparlöre oynatamıyor bu.
+
+267
+01:14:50,543 --> 01:14:51,484
+Araya ne koyuyorlar?
+
+268
+01:14:51,604 --> 01:15:00,904
+Amplifikatörleri koyuyorlar. Burada işaret yükseltiliyor ve ne yapılıyor? Girişe veriliyor.
+
+269
+01:15:00,904 --> 01:15:15,943
+Tabi bu amplifikatörlerde yüksek enerjili devrelerde çeşitli bozulmalara uğradığı için hoparlörde bu bozulmaları ayarlayabilen düğmeler var. O bozulmalarda müziğin rengini veriyor.
+
+270
+01:15:18,612 --> 01:15:28,332
+İstenmeyen bir şey ama sanatsal olarak müziğe bir renk verdiği için de kullanılan distorsiyonlar bulunuyor. Belki ilgilenenler vardır aramızda.
+
+271
+01:15:30,811 --> 01:15:41,112
+Şimdi bunlar ortak. Burası ortak bazlı. Common. Common baz. Common base yapıydı.
+
+272
+01:15:41,939 --> 01:15:52,379
+Benzer şekilde, Common Emitter, yani Common Emitter dediğimizden Emitter ne yapacak? Toprağa gidecek. Yapı varsa ki en çok kullanılan yapı budur arkadaşlar.
+
+273
+01:15:54,639 --> 01:16:05,379
+MPN tipinde bir şeyimiz var. Biz ne yapmışız? Aslında şöyle de gösterebiliriz bunu. C ucundan VCC gerilimi bağlanmış.
+
+274
+01:16:06,996 --> 01:16:33,355
+Aşağı doğru bir akım akıyor. IE'den bir akım çıkıyor. IB'den bir akım giriyor. Genellikle V input, V bazdan uygulanır. Emetöre toprak bağlanır. Transistörün beslemesi ise kolektör ucundan verilir. Tabi buralara dirençler bağlayacağız. Şimdi farklı konfigürasyonları da görmeye başlayacağız birazdan. Ve önümüzdeki ders görmeye başlayacağız.
+
+275
+01:16:34,931 --> 01:16:52,692
+Bu Common Emitter karakteristiklerinde de şimdi şöyle artı eksi VCE gelimiyle IC'nin yani kolektörün üzerinden akan akımın eğrileri bizim için çok önemli hale geliyor.
+
+276
+01:16:53,524 --> 01:17:11,444
+Ic, Vce grafiği. Aynı şekilde Ic'nin yani Ie'nin çok düşük olduğu ama Vce'nin sıfıra istediği gelimi aldığı ama Ie veya Ic'nin atmadığı bu kesme kesim bölgesi diyoruz.
+
+277
+01:17:12,444 --> 01:17:20,644
+Ic veya Ie'nin istenilen değeri aldığı ama Vce'nin çok düşük gelim değerlerinde olduğu bölgeler satrasyon.
+
+278
+01:17:22,100 --> 01:17:31,400
+Şunlar da IB'nin değerleri. Gördüğünüz gibi IB'nin değerleri mikroamperler seviyesinde. Mikro neydi? Mikroamper.
+
+279
+01:17:32,243 --> 01:17:52,603
+10 üzeri eksi 6 milyonda bir amperler seviyesinde. Şeylerle Ic ve Ie'nin seviyesine mili amperler seviyesinde. Yani 10 üzeri eksi 3'ler mertebesinde. Dolayısıyla arada binlerce kat fark var. Ve de o yüzden ihmal ediliyor zaten Ib genellikle hesaplarda.
+
+280
+01:17:59,859 --> 01:18:11,459
+Ne yapmış oluyor? Aslında devri bir anahtar gibi buradan geçen IC akımının veya E akımının miktarını IB ile belirleyebiliyoruz arkadaşlar.
+
+281
+01:18:13,427 --> 01:18:20,287
+Burada da aynı şekilde bazla emetör arasında bütün transistörlerde VBE önemli bir şeydir.
+
+282
+01:18:20,887 --> 01:18:26,927
+VBE gelimiyle aslında biz 0.7'yi geçirdiğimiz zaman biz ne yapıyoruz arkadaşlar?
+
+283
+01:18:27,448 --> 01:18:40,948
+Transistörü aslında bir nevi anahtar gibi açmış oluyoruz ki üzerinden IC akımı aksın, şuradan geçen akım akmaya başlasın şeklinde düşünebiliriz.
+
+284
+01:18:42,484 --> 01:18:51,484
+Veya şöyle biraz daha kafanızı canlansın diye çizeyim. Şöyle bir transistörümüz var. Bu nasıl çalışır derseniz arkadaşlar.
+
+285
+01:18:52,467 --> 01:19:16,368
+Şuraya bir gelim uygulanıyor. VBE gelimi uygulanıyor. Bu VBE'den dolayı şurada bir IB akımı oluşuyor. Bu IB akımının miktarına göre şuradan geçen IC, yukarıda IC, kolektördeki kısımın adı IC, şu noktanın adı ise IE akımı olmak üzere aslında geçen IC akımının miktarını belirliyoruz demektir bu.
+
+286
+01:19:17,300 --> 01:19:23,319
+Dolayısıyla aktif bölgede çalışabilecek bir şekilde devre konfigürasyonunun yapılmasını bekliyoruz.
+
+287
+01:19:26,899 --> 01:19:36,060
+Demin de anlatmıştık arkadaşlar. İdeal akımlarımız neydi? IE eşittir. Emitter daima kolektör artı bazın toplamını eşittir.
+
+288
+01:19:37,060 --> 01:19:43,500
+Alfa ise IC bölü IE'di. Aslında bunun yanında bir de IB olduğu için.
+
+289
+01:19:44,148 --> 01:19:55,708
+Bunun buna bölümü tam 1 oluyor. Ama IB'yi yok ettiğimizde belli bir 0.90 ile 99 arasında bir değer alıyor gibi düşünebilirsiniz.
+
+290
+01:19:58,108 --> 01:20:06,148
+Evet, şunları bir de IC akımı nasıl hesaplanır diye düşünecek olursanız.
+
+291
+01:20:07,087 --> 01:20:10,968
+IC eşittir. Aslında tam hesabını yapmak istersek.
+
+292
+01:20:11,444 --> 01:20:34,584
+Ic'e eşittir. Alfa çarpı IE. Burada beta yani IB'nin çıkarılmış hali var. Artı şöyle değil miydi aslında bizim yapımız? Şöyle. Şurası emetör. Şurası kollektör. Burası emetör. Burası örneğin P tipi veya N tipiydi. P tipi veya N tipi. Burası N tipi veya P tipi.
+
+293
+01:20:35,376 --> 01:20:45,756
+Benim IC akımım, yani buradan geçen akım, IE alfayla çarpalım, artı ICBO.
+
+294
+01:20:45,756 --> 01:20:54,416
+ICBO Minority Collector Current, yani kolektörden geçen azınlık taşıyıcıları da ekleniyor.
+
+295
+01:21:00,435 --> 01:21:18,855
+I-Kollektör Emetör Output'undan akan akım ne demişler? I-B0 olduğunda kesim durumundayken hala bir azınlık taşıyıcısı var. Bu da I-CO olarak adlandırılıyor. Arasındaki ilişki bu alfaya göre bu şekilde bulunuyor.
+
+296
+01:21:18,855 --> 01:21:24,935
+I-B0 mikroamperken olan değerler bunlar.
+
+297
+01:21:26,036 --> 01:21:39,695
+Burası çok önemli değil. Önemli olan şuradaki alfayı bilin. Yeterli. Orayı da ICBO ve de ICO akımlarınızda genel kültür olarak bilirsiniz. Yeterli.
+
+298
+01:21:40,096 --> 01:21:43,695
+Bir de beta. Alfa numarası için beta değeri var. O da...
+
+299
+01:21:44,307 --> 01:22:00,847
+IC bölü IB. IB çok küçük oluyor demiştik. IC ise ona göre miliamperler seviyesindeydi. Beta DC seviyesi genellikle yüksek bir değerdi. Ve transistörün güçlendirme faktörü olarak adlandırılır arkadaşlar.
+
+300
+01:22:02,528 --> 01:22:11,167
+Şimdi, bunun bulunmuşu genellikle bu beta değeri sorularda verilir.
+
+301
+01:22:11,891 --> 01:22:32,332
+Şimdi ne demiştik? Ic eşittir beta çarpı ib demiştik. Ie neye eşittir arkadaşlar? Ie eşittir. Ic artı ib eşittir. Peki benim ib, ic değerim neydi? Beta ib artı ib.
+
+302
+01:22:39,507 --> 01:22:53,287
+Beta IB parantezini alayım önce. IB parantezini alırsam. Beta artı 1. Burada onu göstermiş oluyor.
+
+303
+01:22:53,287 --> 01:23:05,448
+Şimdi burada IE yerine bakın buradaki ne demiştik bir de. Başka bir tane daha şeyimiz vardı.
+
+304
+01:23:06,131 --> 01:23:26,091
+Alfa değerimiz vardı. Ic eşittir. Alfa eşittir. Ic bölü Ie. Alfa eşittir. Şurada. Alfa eşittir. Alfa eşittir. Ic bölü Ie değeriydi.
+
+305
+01:23:32,176 --> 01:23:33,736
+Ne yazabilirim arkadaşlar?
+
+306
+01:23:35,676 --> 01:23:44,176
+Ic bölü alfa eşittir beta artı bir ib.
+
+307
+01:23:44,176 --> 01:23:48,176
+Burada da ne diyebilirim arkadaşlar?
+
+308
+01:23:49,176 --> 01:23:51,176
+Ic bölü ib oranına.
+
+309
+01:23:52,615 --> 01:23:53,936
+Neydi benim şeyim?
+
+310
+01:23:54,076 --> 01:23:55,596
+Ic bölü ib oranı.
+
+311
+01:24:00,659 --> 01:24:16,199
+I, B, beta bölü alfa eşittir. Beta artı bir haline gelmiş oluyor. Burada alfa eşittir. Beta bölü beta artı bir oranı çıkmış oluyor buradan arkadaşlar.
+
+312
+01:24:18,340 --> 01:24:24,519
+Evet, burası da anlaşıldıysa ortak kolektörlü yapıya geçelim.
+
+313
+01:24:25,811 --> 01:24:38,371
+Dediğim gibi ortak kolektörlü yapıda da artık toprağa en yakın kıyosu gerek PMP gerekse MPN yapılı tarafta ikisinde de kolektör toprağa yakın oluyor.
+
+314
+01:24:38,371 --> 01:24:48,371
+Bunun da eğrileri yaklaşık aynı şekilde. Burada da tabii kolektör emetörle aynı şekilde kolektör akımları şey yapılıyor.
+
+315
+01:24:48,371 --> 01:24:52,572
+Burada ise arkadaşlar IB akımları değerlendiriliyor.
+
+316
+01:24:54,100 --> 01:25:16,076
+Şimdi biz transistörleri çalıştıracaksak arkadaşlar, transistörlerin belli bir gücü var. Yani baktığımızda şöyle, artı, eksi ve kolektör, emitör. Bir de buradan geçen bir Ic yapımı var. Bu Ie'ye eşit. Yani sanki iki uçlu bir...
+
+317
+01:25:16,627 --> 01:25:35,247
+Karakutu düşünün şöyle. Şöyle artı eksi VCE gelimi var. Üzerinden geçen akımda I C veya I E. Dolayısıyla bunun gücü ne olmuş oluyor? VCE power'ı VCE çarpı I C veya I E diyebiliriz.
+
+318
+01:25:35,747 --> 01:25:41,367
+Dolayısıyla bunun bir transistöründe gücü var. Bu aktif bölgenin hepsini kullanamıyoruz. Dolayısıyla şu.
+
+319
+01:25:41,971 --> 01:25:53,311
+Kesim bölgesini zaten kullanamıyoruz. Satürasyonu kullanmıyoruz. Bunlar normalde şu bölgede çalışıyor olmamız lazım. Ama V çarpı CE yani VCE ile
+
+320
+01:25:53,971 --> 01:26:11,031
+Ic'nin çarpımının belli değerlerinin altında olması lazım. Dolayısıyla şöyle bir sınır bölgemiz de geliyor. Güçten dolayı. Buradan sonra güç çoklaşmış oluyor. Yani Vc ile Ic'nin çarpımı belli değerinin üstünü açıyorsa buralarda çıkarılmış oluyor.
+
+321
+01:26:11,891 --> 01:26:21,791
+Dolayısıyla, eğer bir devre konfigürasyonu yapacaksak, en güzel çalışacağımız yerler aktif bölgenin belli alanları olmuş oluyor arkadaşlar.
+
+322
+01:26:23,283 --> 01:26:42,663
+Burada aynı şekilde VC'ye çarpı EC ortak emitörde, ortak kolektörde de VC'ye çarpı eden ama Common Base'de kolektör baz ve IC arasındakinden enerji harcaması hesaplanıyor.
+
+323
+01:26:44,103 --> 01:26:47,443
+Şimdi transistörleri nasıl buluruz derseniz arkadaşlar.
+
+324
+01:26:48,148 --> 01:27:11,228
+Şimdi genellikle şuna benzer, şöyle bir silindirik bir yapı var. Şöyle bir silindirik bir yapı var. Bir ucu kesilmiş gibi sanki. Bir ucu kesilmiş. O ucu kesip ucu size döndürdüğünüzde bir nolu bacak bakın nereye eşitmiş, emitörmüş. İki nolu bacak bazmış. Üç nolu bacaksa kolektörmüş.
+
+325
+01:27:11,615 --> 01:27:31,975
+Genellikle bu tarz bilgileri transistör speklerinden spek denir buna kısaltılmış olarak. Spek işitimleri arattırdığınızda örneğin 2N4143 adlı transistör spek yazarsınız.
+
+326
+01:27:34,739 --> 01:27:47,020
+2N4123 spek yaparsanız bu çıkar karşınıza. Peki bu transistör ne tip bir transistörmüş arkadaşlar? Bakarak söyleyebilir misiniz?
+
+327
+01:27:48,819 --> 01:27:52,399
+Bu ne tür bir tarz bir transistör?
+
+328
+01:27:56,595 --> 01:28:10,575
+NPN, evet. Zaten şurada da yazıyor bakın. NPN tipi. Ok dışarıyı gösterdiği için N. Dolayısıyla emitter N ise kolektör de N. Baza ne kalıyor? P. Dolayısıyla NPN tipi de bir transistörmüş.
+
+329
+01:28:11,699 --> 01:28:26,000
+Burada değişik akımlar, ufak işaret karakteristikleri, on durumundaki karakteristikleri, off durumundaki karakteristikleri gibi birçok parametreye dair bilgi veriliyor.
+
+330
+01:28:27,000 --> 01:28:30,819
+Bir transistörü test etmek isterseniz arkadaşlar.
+
+331
+01:28:31,479 --> 01:28:33,440
+Mesela burada bir NPN tipinde bakın.
+
+332
+01:28:33,659 --> 01:28:35,960
+NPN tipinde bir transistörüymüş.
+
+333
+01:28:39,520 --> 01:28:46,820
+Yani pozitif diyotlamanın olduğu yerdeki düşük bir direnç verecekmiş. Demin size anlatmıştım.
+
+334
+01:28:47,600 --> 01:28:57,659
+Kolektörle baz arasında ise mesela ters diyotlama olduğu için şurasına pozitife değdirdiğimizde yüksek bir direnç verecekmiş.
+
+335
+01:28:57,659 --> 01:29:02,239
+Gerçekten güçlendirme kısmında bunu görmüştük.
+
+336
+01:29:05,296 --> 01:29:24,836
+Transistörler nasıl karşımıza çıkıyor? Demin göstermiş olduğum bu yapı şöyle bir bacak yapısı vardı. Üç bacak bu şekilde çıkıyordu. Üç transistörleri var. Onun uçları birbirinden farklı olabiliyor.
+
+337
+01:29:25,328 --> 01:29:35,048
+Daha büyük transistörler var. Devreye yerleştirilecek bu şekilde olabiliyor. Bir de yüzey montajı var. PCB deniliyor.
+
+338
+01:29:35,216 --> 01:29:59,796
+PCB'lerin üzerinde bakarsınız. Özellikle bilgisayar, telefon. Devre elemanları böyle delikli bir yapıda geçirilmez de oraya. Yüzeye montaj edilir. İki tane böyle kurşunlu bir alan vardır. O kurşunlu alanlara bir bacağa değecek şekilde yerleştirilir. Devre elemanı şöyle. Şurası ısıtılarak ne yapılır? Yüzeye montaj edilir.
+
+339
+01:30:00,083 --> 01:30:12,923
+Yine üç bacağı var tabii ki ama buna SMD deniyor. Şunlar ise dip kılıflar deniyor. Bunların bacakları var. Hakikaten devre üzerinde delikli olan yerlere geçirilmesi gerekiyor.
+
+340
+01:30:15,064 --> 01:30:20,203
+Evet arkadaşlar, benim bu haftalık anlatacaklarım bunlar. Sizlerin soruları var mı?
+
+341
+01:30:22,884 --> 01:30:24,804
+Sizlerin sormak istediği sorular var mı?
+
+342
+01:30:27,828 --> 01:30:46,427
+Eğer yoksa arkadaşlar, önümüzdeki hafta Clamper ödevi. Bu akşam gece yarısına kadar Clipper ödevlerimiz var. Onları muhakkak düzgün bir şekilde sisteme yükleyin. Sistemin son anına bırakmayın. Ondan sonra mail atmak zorunda kalmayın. Önemli olan sistemde ödevin bulunması bende değil.
+
+343
+01:30:46,427 --> 01:30:48,847
+Hocam, şey soracağım da.
+
+344
+01:30:50,416 --> 01:30:58,416
+Klipper ödevi 16 bir devre kuracağız yoksa sadece 6 tane devre kuracağız. Sadece seri olanları.
+
+345
+01:31:00,756 --> 01:31:02,015
+Klipper ödevinde mi?
+
+346
+01:31:02,355 --> 01:31:03,376
+Aynen. Bugünkü.
+
+347
+01:31:05,636 --> 01:31:08,115
+Bugün ben geçen hafta verdim ödevi.
+
+348
+01:31:08,176 --> 01:31:12,895
+Aynen. Siz söylediniz ki sadece 6 tane seri olanlar, seri devreler.
+
+349
+01:31:13,176 --> 01:31:14,555
+Yok öyle bir şey dedim. Hepsi dedim.
+
+350
+01:31:14,916 --> 01:31:15,876
+Hepsi. 16'lar.
+
+351
+01:31:16,340 --> 01:31:37,680
+Evet, Clipper, Clipper hepsi. Ben sadece 6 taneyi sandım da ondan. Yani o şekilde olanların hepsini yapacaksın. 16 tane yok orada zannedersem ama. 13 tane var hocam. 13, 13. 13 tane varsa 13 tanesini de yapacaksınız arkadaşlar. Tamam. Tamam mı?
+
+352
+01:31:38,484 --> 01:31:53,764
+Tabi son vakit, herhalde son güne son vakte bıraktığınız zaman biraz zor olacaktır. Çünkü ben yanlarına açıklamalar da istiyorum. Nasıl yapıldığına, ne edildiğine dair. Sonuçta siz bunları yorumlayacaksınız. Ben onları da bekliyorum. Anlaştık mı?
+
+353
+01:31:55,412 --> 01:32:02,232
+Hocam, oradaki işlemin nasıl gerçekleştiğini, devrenin neden nasıl davrandığını anlatmamızı istiyorsunuz değil mi?
+
+354
+01:32:02,492 --> 01:32:10,712
+Evet, evet. Aynen o şekilde. 2-3 cümleyle beraber neden o şekilde bir output verdiğini açıklamanızı bekleyin.
+
+355
+01:32:11,232 --> 01:32:12,392
+Hocam, teşekkürler.
+
+356
+01:32:13,072 --> 01:32:16,892
+Rica ederim. Başka sorusu olan var mı?
+
+357
+01:32:17,532 --> 01:32:19,512
+Hocam, Lab 4'te mi başlayacak acaba?
+
+358
+01:32:20,307 --> 01:32:39,847
+Kaçta söylediler size? Ben glablarla ilgilenmiyorum her zaman dediğim gibi ama bakalım şeyden. Bizim labımız zannedersem 5'te başlıyordu ama. Pardon 4'te mi başlıyordu? Özür dilerim. Siz aynı yerden bizim arkadaşlarımız girebiliyorlar değil mi artık laboratuvarlara?
+
+359
+01:32:45,108 --> 01:33:08,028
+Canlı Ders 16'da başlıyor arkadaşlar. Tamam, teşekkür ederim. Rica ederim. Eğer bir sorun olursa falan bana telefon ederler. Bir şekilde buradaki canlı derse katılmanızı bekleyeceğiz. Tamam mı? Ayarlarız yani biz onu. Piyazadan da bir terslik olursa takip edebilirsiniz.
+
+360
+01:33:11,283 --> 01:33:26,103
+Evet arkadaşlar, başka sorusu olan var mıydı? Yok herhalde. Hepinize iyi hafta sonları diliyorum arkadaşlar. Görüşmek üzere. Kolay gelsin. İyi akşamlar hocam. İyi akşamlar. Sağ olasınız. Görüşmek üzere.

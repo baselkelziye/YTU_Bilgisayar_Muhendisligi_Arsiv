@@ -1,0 +1,2975 @@
+1
+00:08:25,492 --> 00:08:30,652
+Evet, günaydın arkadaşlar. Şu chat ekranımızı da açalım.
+
+2
+00:08:54,067 --> 00:09:00,508
+Evet [öğrenci], [öğrenci], dataset'inize şöyle bir bakmam lazım. Dersten sonra bakıp size bir cevap yazarım.
+
+3
+00:10:42,772 --> 00:10:46,612
+Evet, scrunchial data diye görünüyor.
+
+4
+00:10:50,312 --> 00:10:59,012
+[öğrenci], [öğrenci], veri setinizde scrunchial yani bir zamana bağlı. Evet, real-time sensör verileri kullanılıyor, doğru.
+
+5
+00:11:03,572 --> 00:11:05,971
+Evet, bir mail atarsanız bakarız.
+
+6
+00:11:11,700 --> 00:11:32,320
+[öğrenci], Colab notebook üzerinde yapmanızı tercih etmiyorum. Yani orada çalışabilirsiniz ama nihai şeyleri taşıyın yine. Ben kendi bilgisayarımda çalıştırabilmeliyim onu. Ayrı ayrı platformları kullanmak istemiyorum.
+
+7
+00:11:36,820 --> 00:11:46,800
+Evet arkadaşlar, bu hafta son hafta ben konuları bitirdim. Sonra dedim ki ne yapsak acaba bu derste?
+
+8
+00:11:51,091 --> 00:12:03,032
+Ve boş geçirmemek için size yapay sinir ağa ve derin öğrenme konularını da kapsayan bir üç saatlik ders hazırladım.
+
+9
+00:12:04,412 --> 00:12:11,892
+Bu dersle ilgili dersin duvarına bir kitap ve link koydum.
+
+10
+00:12:11,892 --> 00:12:15,932
+Kitapta bu kitaba ait tüm kodlar yer alıyor.
+
+11
+00:12:20,884 --> 00:12:25,039
+A'sından Z'sine, aslında veri ön işlemeden...
+
+12
+00:12:25,039 --> 00:12:43,919
+Başlıyor. Makine öğrenmesiyle ilgili tüm yöntemleri, bizim bu derste öğrendiğimiz yöntemleri ve arkasından yapay sinir ağlarıyla bir model nasıl oluşturula kadar anlatan pratik uygulamalı bir kitap.
+
+13
+00:12:44,120 --> 00:12:50,620
+Aslında bu kitap teorik bilgisini olmayan bir insanın tek başına kullanabileceği bir kitap değil.
+
+14
+00:12:53,039 --> 00:13:15,620
+sonra bunları pratiğe dökme anlamında yol gösterecek bir kaynak. Size o linkte dediğim gibi güzel benim kullandığım bir kitap oldu bu. Şu kitap görmüşsünüzdür çokça. Machine Learning with Python Cookbook diye.
+
+15
+00:13:17,203 --> 00:13:36,144
+Bu Practical Solutions from Pre-Processing to Deep Learning diyor. Aynı derste yaptığımız gibi veri ön işleme adımlarıyla başlıyor. Normalizasyon işlemlerini anlatıyor. Arkasından Classification, Regression, Clustering, Metod diye bölümleri var.
+
+16
+00:13:45,203 --> 00:14:03,203
+Bu hafta yapay sinir ağlarıyla ilgili bölümü size anlatmak istiyorum. Aslında dediğim gibi kitap daha çok pratik uygulamaya yönelik. O yüzden aslında dersin girişinde size kısaca biraz yapay sinir ağları nasıl çalışır bir nöronun?
+
+17
+00:14:05,427 --> 00:14:18,427
+Perseptron dediğimiz nöronun çalışma yapısı nedir, matematiksel yapısı nedir? Kısaca, şöyle bir yarım saat onu anlattıktan sonra tümüyle Jüpiter notbook ekranında...
+
+18
+00:14:20,436 --> 00:14:36,615
+dört farklı örnek üzerinde model oluşturacağız. Bu dört farklı model dediğim bir regresyon için, yani bir nümerik outputumuz varsa eğer, bunu için regresyon yöntemlerini kullanmamız gerekiyor.
+
+19
+00:14:37,475 --> 00:14:47,436
+Onunla ilgili bir örnek yapacağım. Arkasından bir binary classification işlemi, yani iki tane output var. Bunlar arasında...
+
+20
+00:14:49,395 --> 00:15:09,395
+Karar verebilen bir klasifier göstereceğim. Bir multi-class klasifier örneği göstereceğim. Uygulama ayağı olduğu için ayrıca çok faydalı olacağına inanıyorum ben bu dersin. Son dördüncü konu olarak da...
+
+21
+00:15:11,860 --> 00:15:27,000
+Görüntü üzerinde CNN, Convolutional Neural Networkler ile Feature Extraction ve Fully Connected Layer dediğimiz katmanlarla bir modelin nasıl oluşturulduğunu göstermeye çalışacağım.
+
+22
+00:15:28,563 --> 00:15:39,644
+Hepiniz aslında yapay sinir ağaç modellerini yavaş yavaş kullanmaya başladınız biliyorum. Hazır frameworkler yardımıyla bunu çok da güzel yapıyorsunuz.
+
+23
+00:15:39,644 --> 00:15:48,124
+Ama arkasındaki teoriyi ya da matematiği biraz anlarsak daha verimli kullanabileceğinize inanıyorum.
+
+24
+00:15:56,563 --> 00:16:04,703
+Kendinize göre bir takım iyileştirmeler yapmanız mümkün olur diye düşünüyorum.
+
+25
+00:16:04,703 --> 00:16:17,903
+Umarım sizin için de faydalı olur. Bu hafta anlatacağım konu bir sınavla ilgili ya da size işte finalde şurada burada soracağım bir konu değil.
+
+26
+00:16:18,563 --> 00:16:23,703
+Sadece öğrenmek istiyorsanız eğer benim bu hafta anlatacağım konulara katılmanızı...
+
+27
+00:16:24,563 --> 00:16:32,103
+İsterim. Uygulama ayağı olacağı için dediğim gibi daha da ilginizi çekecektir diye düşünüyorum.
+
+28
+00:16:35,103 --> 00:16:42,563
+Şimdi önce az önce söylediğim gibi şöyle hızlıca.
+
+29
+00:16:48,083 --> 00:16:54,183
+Konuya giriş yapalım. Daha sonra veri setleriyle ilgili sorularınızı yanıtlayacağım.
+
+30
+00:17:00,851 --> 00:17:17,311
+Evet, siz de farkındasınız. Aslında kullandığımız tüm, derste kullandığımız tüm yöntemler, data mining altında gösterdiğim classification, clustering yöntemleri, makine öğrenmesinin de konu başlıkları.
+
+31
+00:17:17,311 --> 00:17:23,311
+Yani bunlar birbiri içine geçmiş konular. Dolayısıyla bu slide'lar...
+
+32
+00:17:24,500 --> 00:17:38,599
+Machine Learning konusunda hazırlanmış ders notları ve bu yazarlar tarafından hazırlanmış kitaba ait slide'lardan.
+
+33
+00:17:39,923 --> 00:17:52,364
+Düzenlenmiş bir kaynak. Çok uzun değil. 30-40 tane slide var. Ben zaten çok son kısımlardaki detaylara girmeyeceğim.
+
+34
+00:17:52,364 --> 00:18:05,223
+Sadece size yapay sinir ağında bir nöronun çalışma mantığını kısaca anlatacağım. Arkasından biz bunu örneklerimizde nasıl kullanıyoruz onlara bakacağız.
+
+35
+00:18:13,844 --> 00:18:27,804
+Yapay sinir ağları konusu yeni bir konu değil. Hepinizin de bildiği gibi aslında teori çok eskiye dayanıyor. Fakat yeniden popüler oldu günümüzde. Neden bu kadar popüler oldu?
+
+36
+00:18:30,983 --> 00:18:32,224
+Özür dilerim.
+
+37
+00:18:50,324 --> 00:19:12,324
+Bu konular yapay sinir modelleri. Genel olarak hesaplama karmaşıklığı yüksek olan algoritmalar ve önceki çalışmalarımızda...
+
+38
+00:19:13,907 --> 00:19:33,288
+Biz yapay siri modellerini kullanıyorduk ancak elimizdeki sistemlerin ve mevcut altyapının yetersizliği sebebiyle çalıştırdığımız modeller belki günlerce çalışması gerekiyordu bir sonuç alabilmek için.
+
+39
+00:19:33,288 --> 00:19:35,288
+Dolayısıyla...
+
+40
+00:19:36,180 --> 00:19:44,300
+Bir dönem üzerinde çalışıldı fakat çok yavaş olması sebebiyle üzerine gidilmedi.
+
+41
+00:19:44,300 --> 00:19:55,760
+Fakat yeni trend diyelim, ne görüyoruz? Çok güçlü hesaplama altyapılarına sahibiz.
+
+42
+00:19:56,440 --> 00:20:00,000
+Bu tür bir yapay sinir...
+
+43
+00:20:00,000 --> 00:20:17,420
+Bu modelini artık çalıştırmak günler almıyor. Ama ne yapabiliyoruz? Bu kadar güçlü bir hesaplama altyapısına sahip olduğumuz için yapay sineralarında kullanılan katmanların sayısını arttırarak daha derin yapılar oluşturabiliyoruz.
+
+44
+00:20:24,019 --> 00:20:32,420
+Kullanılmaya başlandı. Yapay sinir ağaları ve daha kompleks modellerle çok daha başarılı sonuçlar elde edildi.
+
+45
+00:20:33,179 --> 00:20:38,980
+Yapay sinir ağalarının çalışma mantığı aslında insan modelinden esinlenerek geliştirilmiş bir model.
+
+46
+00:20:40,559 --> 00:20:51,940
+İnsan beyninde bulunan her bir nöronun aslında çevresindeki nöronlarla iletişim içinde olduğu ve etkileşim içinde olduğu düşüncesiyle.
+
+47
+00:20:52,019 --> 00:21:00,219
+oluşturulmuş bir yapı ve baktığımızda aslında elde edilen sonuçlar da oldukça başarılı.
+
+48
+00:21:05,940 --> 00:21:11,160
+60'lar, 70'lerde ilk kullanılmaya başlandığı dönemden bahsedebiliriz.
+
+49
+00:21:11,280 --> 00:21:15,059
+86 Backpropagation algoritmasının kullanılması diyor.
+
+50
+00:21:19,476 --> 00:21:30,456
+Ve tekrar günümüzde son 10 yıldır neredeyse yaygın olarak kullanılmaya başlaması gördüğümüz akış içerisinde.
+
+51
+00:21:31,236 --> 00:21:33,635
+Yapay sinir o modelleri nerede kullanılıyor?
+
+52
+00:21:34,376 --> 00:21:44,135
+Bir pattern recognition, yani bir örüntüyü tanıma, object detection, object recognition gibi alanlarda kullanılıyor.
+
+53
+00:21:47,476 --> 00:22:01,096
+Yani de kullanılıyor. Yani ama en çok gördüğümüz pattern recognition ve function approximation konusu. Yani bir numarik output'a yakınsıyoruz.
+
+54
+00:22:07,096 --> 00:22:10,216
+Bu özelliklerinden bahsettik.
+
+55
+00:22:11,955 --> 00:22:22,455
+Şimdi bir nöronun, bir perceptron dediğimiz yapının nasıl çalıştığını burada göreceğiz.
+
+56
+00:22:24,339 --> 00:22:44,139
+Lütfen şekle dikkat edin. Bir input vektör verilmiş. Input vektörde X0'dan XN'e kadar bizim veri madenciliğinde kullandığımız her bir sample, diyorduk ki en boyutlu uzayda bir sampleımız var.
+
+57
+00:22:44,139 --> 00:22:51,740
+Burada gördüğümüz X0'dan XN'e kadar olan girişler aslında bizim elimizdeki bir sample'ı gösteriyor.
+
+58
+00:22:52,339 --> 00:23:00,279
+N-dimension'ı bizim feature setimizin sayısını gösteriyor, kaç elemanın olduğunu gösteriyor.
+
+59
+00:23:01,279 --> 00:23:14,619
+Her bir giriş sample'ı burada gördüğümüz gibi bir W ile ağırlıklandırılmış ve bu ağırlıklandırılmış toplamlar alınmış.
+
+60
+00:23:14,619 --> 00:23:18,659
+Bir de burada T dediğimiz bir Bayez değeri var.
+
+61
+00:23:20,339 --> 00:23:26,880
+Bu sistemde, lütfen sağ tarafta yazdığımız matematiksel ifadeye de dikkat edin.
+
+62
+00:23:27,319 --> 00:23:37,099
+i eşit sıfırdan n'e kadar w i çarpı x i eksi t, yani şurada t dediğimiz Bayes değerini bu toplamdan çıkartıyoruz.
+
+63
+00:23:37,099 --> 00:23:43,699
+Daha sonra burada gördüğümüz bir aktivasyon fonksiyonundan geçiriyoruz.
+
+64
+00:23:45,652 --> 00:23:57,451
+Sigmoid olabilir, farklı bir aktivasyon fonksiyonu olabilir ve Y dediğimiz output'u üretiliyoruz. Bu gördüğümüz yapı bir nöronun yapısını gösteriyor bize.
+
+65
+00:24:04,884 --> 00:24:15,788
+Perseptron için, yani tek bir sinir hücresi orada gösterdiğimiz, basic unit yine neural network diyor, yapay sinir ağındaki en temel...
+
+66
+00:24:15,955 --> 00:24:34,155
+Birimdir diyor. Linear separatör ve bunun çalışma yapısında az önce özetlediğimiz gibi x1'den xN'e kadar. Bakın burada dikkatinizi çekmek istediğim bir nokta var. Aslında biz inputları x1'den xN'e kadar diye söylüyoruz.
+
+67
+00:24:43,955 --> 00:24:57,315
+Bu yüzden Bayes değerini de bize sağlıyor. Yani buradaki input x0 dediğimiz bir sabit ve o Bayes değerini oluşturmak için kullanılıyor.
+
+68
+00:24:57,435 --> 00:25:05,835
+Aslında elimizdeki inputlar bizim x1'den x'e ne kadar ama matematiksel yapı içerisinde bunu x0'dan başlatıyoruz kullanırken.
+
+69
+00:25:09,587 --> 00:25:24,847
+Weightleri de bunların W1'den WN'e kadar değer alıyor. Ama X0 ile ilişkilendirdiğimiz W0 dediğimiz ağırlık buradaki Bayes değerini oluşturuyor. Daha sonra Weighted Sum alıyoruz dedik.
+
+70
+00:25:24,847 --> 00:25:37,587
+Yani çünkü nedir? Her bir X girişini bir W weighti ile çarpıp topladık. Bir Y elde ettik. Daha sonra Y'yi bir aktivasyon fonksiyonu dediğimiz fonksiyondan geçtik.
+
+71
+00:25:37,587 --> 00:25:47,507
+Aslında bunun diğer bir adı threshold function diyebiliriz. Bu aktivasyon fonksiyonlarının değişik çeşitleri var. Bunları ilerleyen kısımlarda konuşacağız zaten.
+
+72
+00:25:49,147 --> 00:25:54,907
+Yine yapay sinir öğü için bakın burada modeli tekrar çizmiş.
+
+73
+00:25:56,115 --> 00:26:09,615
+Üç tane giriş var. Input notes dediği, şuraya input notlarını koydu. Input notes bizim sample'ımızı verdiğimiz girişi temsil ediyor.
+
+74
+00:26:09,795 --> 00:26:18,855
+Burada üç boyutlu bir, yani üç tane öz niteliğe sahip bir data set için çizilmiş bir yapı düşünebiliriz.
+
+75
+00:26:18,855 --> 00:26:23,496
+Bunların her biri bir W ile ağırlıklandırılmış.
+
+76
+00:26:24,115 --> 00:26:44,855
+W2, W3 ile ve bu bir toplama işleminden geçiriliyor. Burada gördüğümüz T ise az önce konuştuğumuz Bayes değeri W, I, X, I çarpımlarından bunların toplamından T'yi çıkartıyoruz, bir I elde ediyoruz.
+
+77
+00:26:44,855 --> 00:26:52,115
+Bunu da bir aktivasyon fonksiyonundan yani burada I diye gösterdiği aktivasyon fonksiyonu.
+
+78
+00:26:52,115 --> 00:26:56,556
+Önce, bir şey.
+
+79
+00:26:57,203 --> 00:27:07,284
+Types of Connectivity, kullanılan bağlantı çeşitlerine göre değişik modeller var burada gösterebileceğimiz.
+
+80
+00:27:07,784 --> 00:27:16,624
+Bir feed-forward network yapısı var. Burada gördüğümüz gibi az önce konuştuğumuz yapı input units.
+
+81
+00:27:16,963 --> 00:27:22,884
+Burası bizim girişlerimiz, 3 giriş verilmiş. Demek ki 3 tane öz niteliği olan bir dataset var.
+
+82
+00:27:25,203 --> 00:27:43,104
+hidden layer adı veriliyor, gizli katman. Bu gizli katmanların sayısı değiştirilebilir, 2 olabilir, 3 olabilir. Ne kadar fazla katman eklersek o kadar bir derin yapı oluşturmuş oluruz.
+
+83
+00:27:53,203 --> 00:27:55,244
+olması gerektiği kararlaştırılıyor.
+
+84
+00:27:56,683 --> 00:27:58,943
+Yani mesela kullandığımız
+
+85
+00:28:00,147 --> 00:28:14,627
+ImageNet kütüphanesinde bin farklı nesneyi tanıyabilen bir yapı oluşturmak istediğimizde output unitimizin sayısı tanımak istediğimiz nesne sayısı kadar olacak.
+
+86
+00:28:14,827 --> 00:28:27,587
+Yani bin tane output'u olan bir yapı oluşturulacak. Sınıf sayısı kaçsa, multi-class problem için söylüyorum, output unitlerin sayısı sınıf sayısıyla aynı olmalıdır.
+
+87
+00:28:28,147 --> 00:28:50,107
+Bir de recurrent networks dediğimiz bir yapı var. Burada belirtildiği gibi bu katman içerisindeki output aynı katman içerisindeki bir nöron için input olabiliyor. Bu recurrent network yapılarında bu şekilde.
+
+88
+00:28:53,460 --> 00:28:59,059
+Single Layer Feed Forward Network yapısını burada görüyoruz.
+
+89
+00:28:59,880 --> 00:29:04,340
+Input Layer, Projecting into the Output Layer diyor.
+
+90
+00:29:05,940 --> 00:29:11,200
+Giriş katmanı var, çıkış katmanı var. Single Layer Network yapısı için.
+
+91
+00:29:12,960 --> 00:29:19,960
+Multi Layer yapıda, bu Single Layer Feed Forward Network yapısıydı.
+
+92
+00:29:21,971 --> 00:29:35,731
+Multi Layer'da ise burada gördüğümüz gibi bir gizli katman eklenmiş. Gizli katmanların sayısı istediğimiz kadar olabilir. Bu modelde lütfen dikkat, burası Input Layer'ımız.
+
+93
+00:29:36,339 --> 00:29:50,339
+Giriş katmanı. Daha sonra bu giriş katmanındaki verdiğimiz her sample belli ağırlıklarla çarpılıp toplanıyor demiştik. Buradaki nöronların her biri bir perceptron bu işi yapıyor.
+
+94
+00:29:50,339 --> 00:30:00,000
+Ve mesela bu gizli katmanın içerisinde iki tane nöron var diyorum. Bu kaç tane hidden layer kullanıcı?
+
+95
+00:30:00,000 --> 00:30:09,319
+ve o hidden layer'ın içerisinde kaç tane nöron bulunacağına modeli oluştururken biz karar veriyoruz.
+
+96
+00:30:10,159 --> 00:30:20,119
+Burada two layer modeli tarif ederken two layer veya one hidden layer fully connected network diye isimlendiriliyor bu.
+
+97
+00:30:20,119 --> 00:30:22,639
+Çünkü bir tane gizli katmanı var.
+
+98
+00:30:25,299 --> 00:30:33,819
+Diğerleri input layer ve output layer. Bu bir fully connected network. Buradaki bağlantılardan gördüğümüz üzere.
+
+99
+00:30:35,219 --> 00:30:46,099
+İsimlendirirken bu yapıyı two layer yerine aslında ben daha çok one hidden layer, fully connected network tanımını daha doğru buluyorum.
+
+100
+00:30:48,276 --> 00:31:16,276
+Burada multi-layered feedforward network modeli var. Yine bir giriş katmanı. Üç tane öz niteliği olan bir dataset için diyelim. Input layer'ı gösteriyor. İki tane katman eklenmiş. Hidden layer katmanı. Hidden layer'lardan ilkinde üç tane nöron var. Diğerinde iki tane.
+
+101
+00:31:16,276 --> 00:31:30,916
+İki tane nöron var ve bir output layer tanımlanmış. Bu output layer bir binary classifier için tanımlanmış bir output olabilir. Sıfırsa, sıfır sınıfını gösteriyor.
+
+102
+00:31:32,147 --> 00:31:40,227
+Birse bir sınıfını gösteriyor şeklinde bir yapı için böyle bir network oluşturulabilir.
+
+103
+00:31:41,167 --> 00:31:49,087
+Eğer buradaki input layer'ı ve output layer'ı da sayarsak toplamda dört tane layer var diyebiliriz.
+
+104
+00:32:00,147 --> 00:32:14,288
+Network demek daha doğru olur. Çünkü her network'ün başında bir input layer, sonunda da bir output layer olacağını zaten biliyoruz. İki katmanı var diyebiliriz bunun için.
+
+105
+00:32:15,443 --> 00:32:18,043
+İki hidden layer katmanı var diyebiliriz.
+
+106
+00:32:18,923 --> 00:32:23,163
+Recurrent networks için az önce bahsetmiştik.
+
+107
+00:32:23,624 --> 00:32:32,183
+Aynı katman içerisindeki düğümlerin çıkışı bu katman içerisindeki diğer düğme giriş olabilir dedik.
+
+108
+00:32:32,583 --> 00:32:34,384
+Böyle çalışan yapılar da var.
+
+109
+00:32:34,583 --> 00:32:38,183
+Buna da recurrent network yapısı adı veriliyor.
+
+110
+00:32:39,251 --> 00:32:43,271
+Ben çok çalışmadım Recurrent Neural Network yapısıyla.
+
+111
+00:32:44,951 --> 00:32:52,251
+Şimdi, Algorithm for Learning Artificial Neural Networks demiş.
+
+112
+00:32:52,251 --> 00:32:58,251
+Bu yapay sinalarında kullanılan weightlerin,
+
+113
+00:33:01,907 --> 00:33:13,907
+Eğitilerek bir optimum seviyeye gelecek en iyi ağırlığın bulunması hedefleniyor. Bunun için önce bir...
+
+114
+00:33:14,451 --> 00:33:36,531
+Bu weightleri biz ne yapıyoruz? Başta bir random olarak seçiyoruz. Daha sonra buna initialize the weights demiş. W0'dan WK'ya kadar burada network içerisinde kaç tane nöron varsa bunların sayısı kadar bu weightlerden olacak.
+
+115
+00:33:42,451 --> 00:33:51,751
+Öğrenebilen bir yapı içerisinde bir optimum değere getirmemiz gerekiyor. Peki bu optimum değer nasıl belirleniyor?
+
+116
+00:33:53,592 --> 00:34:02,551
+Adjust the weights demiş, bu sözüne edilen weightlerin ayarlanması gerekiyor. Neye göre ayarlıyoruz?
+
+117
+00:34:10,452 --> 00:34:24,811
+WE, XE olarak belirtilebilir. Bu ne demek? Az önce konuştuğumuz bir nöronun WE ağırlıkları ile XE sample için
+
+118
+00:34:26,036 --> 00:34:38,695
+ürettiği output ve bir de bu sample'ın, buradaki XE sample'ının bir YE output değeri var. Yani buna Grand Truth diyoruz, buradaki büyük YE dediğimiz değer.
+
+119
+00:34:41,195 --> 00:34:52,336
+FW XE ise, şuradaki ifade ise bizim bu sample'ı bu network'e verdiğimizde bize ürettiği output.
+
+120
+00:34:54,036 --> 00:35:06,416
+Sumated value oluyor. Sonuçta bizim grand truth ile tahmin ettiğimiz değer arasındaki farkın bize bir error ifade ettiğini biliyoruz.
+
+121
+00:35:06,416 --> 00:35:16,695
+Burada bir error function tanımlanmış. i eşit birden işte kaç tane sample varsa bu veri setinde diyelim ki m adet sample'ımız var.
+
+122
+00:35:17,336 --> 00:35:21,916
+Bu sample'ların her biri için bunların sınıf etiketleri var elimizde.
+
+123
+00:35:22,036 --> 00:35:30,315
+Yani gerçek sınıf etiketleri var. Bir de modelin bize ürettiği output var. Bu ikisi arasındaki farkı alarak hatayı hesaplıyoruz.
+
+124
+00:35:30,315 --> 00:35:47,395
+Hatanın karesini alarak da burada bir error değeri oluşturuyoruz. Sonuçta amacımız nedir? İyi bir model oluşturduğumuzda bu error'ın, hatanın minimum olması beklenir.
+
+125
+00:35:50,036 --> 00:36:10,115
+en küçük yapacak WE weightlerini bulmak. Bunu sağlayacak weightler bizim düzenlememiz gereken parametrelerimiz ve bu parametreleri bu hatayı minimize edecek şekilde.
+
+126
+00:36:12,851 --> 00:36:32,851
+Belirlenmesi gerekiyor. Bunu da sistemde örnek, train dataset içerisinde bulunan örneklerle bu sistemi her defasında çalıştırıp, WE ağırlıklarını güncelleyerek en iyi sonuç verecek WE ağırlıklarını bulmaya çalışıyoruz.
+
+127
+00:36:32,851 --> 00:36:38,851
+Burada gradient descent sıkça kullanılan yöntemlerden biri.
+
+128
+00:36:40,403 --> 00:36:50,304
+Bu WI değerlerini bulmak için. Hatayı minimize edecek WI değerlerini bulmak için.
+
+129
+00:36:57,556 --> 00:37:03,355
+Bu bir aslında optimizasyon problemi oluyor bu noktadan sonra.
+
+130
+00:37:03,355 --> 00:37:08,635
+Ve diyor ki varsayalım ki elimizdeki problem iki boyutlu.
+
+131
+00:37:10,356 --> 00:37:24,176
+Yani iki boyut derken şöyle diyelim, bir W0, W1 weight değerimiz var. Aslında bir boyutlu bir veri. W0 çünkü Bayes değerini gösteriyor.
+
+132
+00:37:24,176 --> 00:37:38,356
+Ve bunu diyor ki ben W1 ve W0 için uzayda bir arama işlemi yapıyorum. Buradaki dikey eksen ise bize loss function'u gösteriyor.
+
+133
+00:37:38,356 --> 00:37:43,716
+Yani buradaki minimize etmek istediğimiz hata değerini gösteriyor.
+
+134
+00:37:44,536 --> 00:37:49,416
+Ve bu hata değeri aslında bir konveks yapıya sahip.
+
+135
+00:37:49,536 --> 00:38:01,776
+Yani konveks yapı demek arkadaşlar, şurada gördüğümüz şekil içerisinde lokal minimumların olmadığı, tek bir minimumun olduğu bir konveks yapıdan bahsediyor.
+
+136
+00:38:01,776 --> 00:38:02,856
+Lütfen dikkat.
+
+137
+00:38:06,356 --> 00:38:27,356
+Eğer minimumlar yoksa bunu minimize edecek değeri bulmak aslında kolay. Burada görüldüğü gibi bu loss function dediğimiz fonksiyonun türevini alarak, W'ye göre türevini alarak bir...
+
+138
+00:38:28,851 --> 00:38:48,091
+arama işlemi yapıyoruz. Buradaki türev işlemini, w fonksiyonuna göre türev işlemini gösteriyor. Loss function için bu türevi gösteriyor. Aşağıda ise bir update rule tanımlanmış.
+
+139
+00:38:56,851 --> 00:39:19,331
+türevinin t anındaki, t iterasyonundaki değerine bir eta dediğimiz learning rate parametresiyle ağırlıklandırılmış loss function'ı we'ye göre türevini aldığımızda ki değerini ekleyerek güncel bir we değeri buluyoruz.
+
+140
+00:39:19,764 --> 00:39:27,764
+Böylece ne yapıyoruz? Her iterasyonda WE'yi güncelleyerek...
+
+141
+00:39:29,588 --> 00:39:50,868
+Buradaki arama işlemini yapıyoruz. Yani işte ilk değer olarak random olarak seçiliyor W değeri. Bir başlama noktası var. Daha sonra bu başlama noktasına göre her iterasyonda bunu minimum yapan şu dip noktaya götürecek olan adımlarda bu arama işlemini yapıyoruz.
+
+142
+00:39:57,588 --> 00:40:14,927
+ulaştıracak algoritmayı temsil ediyor. Burada gradient descent dediğimiz algoritma bir alternatif. Bunun dışında değişik optimizasyon algoritmaları da var.
+
+143
+00:40:17,204 --> 00:40:20,404
+Yani onun çok detayına burada girmeyeceğiz.
+
+144
+00:40:21,184 --> 00:40:26,144
+Gradient descent ile burada güncelleme işlemini gösteriyor.
+
+145
+00:40:26,524 --> 00:40:30,304
+Gradient descent rule'da bir çıkartma işlemi yapılıyor.
+
+146
+00:40:30,744 --> 00:40:36,503
+Burada ise gradient descent rule yazılmış, artı diye verilmiş.
+
+147
+00:40:36,503 --> 00:40:45,003
+Yani buradaki loss function'ın concave ya da convex olmasına göre değişiyor.
+
+148
+00:40:45,204 --> 00:40:55,503
+Bu resimde verilmiş olan örnekte bir konveks yapı var. Ona göre bir işlem yapılıyor.
+
+149
+00:40:57,784 --> 00:41:05,644
+Böyleydi. Evet. Ama bunun tersini çizmiş. Eksi LW verilmiş burada.
+
+150
+00:41:06,804 --> 00:41:12,264
+O yüzden burası artı gradient descent rule diye verilmiş.
+
+151
+00:41:13,164 --> 00:41:20,304
+Gradient descent algoritmasında buradaki W'dan, yani WT değerinden
+
+152
+00:41:21,780 --> 00:41:27,659
+Sağ tarafta gördüğümüz terim çıkartılarak WT artı bir değeri oluşturuluyor.
+
+153
+00:41:28,400 --> 00:41:35,100
+Buradaki eta learning rate'i gösteriyor ve bu oldukça küçük, pozitif bir sayı.
+
+154
+00:41:35,100 --> 00:41:44,199
+Burada 0.05, %5 olarak alınmış ama bu binde, binde bir, on binde bir gibi değerler kullanılıyor çoğunlukla.
+
+155
+00:41:49,780 --> 00:42:05,600
+mesafesini de ayarlıyor. Çok büyük seçersek büyük adımlarla gidiyor ve ıskalayabiliyoruz. O yüzden bazen bunun dinamik yapıldığı bile oluyor. Uygulamalarda bunu görebiliyoruz.
+
+156
+00:42:11,923 --> 00:42:12,423
+Evet.
+
+157
+00:42:17,619 --> 00:42:18,639
+Bunları geçtim.
+
+158
+00:42:22,099 --> 00:42:44,300
+Evet, burada batch perceptron algoritm diye bir işlem adımı tanımlanmış. Birinci adımda diyor ki, randomly initialize the weights, W1'den WM'e kadar olan sistemdeki bulunan bütün parametreleri, weightleri, random olarak seçiyor.
+
+159
+00:42:50,356 --> 00:42:57,556
+Veri seti, train data seti var elimizde. Burada for i eşit birden re'ye kadar dediği.
+
+160
+00:42:59,923 --> 00:43:18,764
+i burada sample ID'yi gösteriyor. i sample ID'yi gösteriyor. r de toplam örnek sayısını gösteriyor. j eşit birden m'e kadar dediği de öz niteliklerin sayısını gösteriyor. j eşit birden m'e kadar.
+
+161
+00:43:28,052 --> 00:43:32,931
+şeyde, formülde yerine koymuş.
+
+162
+00:43:33,731 --> 00:43:37,552
+Ve bir loss function tanımlı tabii burada.
+
+163
+00:43:38,112 --> 00:43:41,052
+Bu loss function'ı ya da hatayı...
+
+164
+00:43:41,376 --> 00:43:48,655
+Hatayı minimum yapacak weight değerlerini bulmaya çalışıyoruz şu adımda.
+
+165
+00:43:49,456 --> 00:43:57,856
+Beşinci adım diyor ki bu hata değeri tanımlanmış belli bir eşik değerine gelene kadar ya da döngü sayısı vererek yapılabilir.
+
+166
+00:43:58,516 --> 00:44:06,296
+Bu işlem adımına kadar şu yukarıda gördüğümüz üçüncü ve dördüncü adımdaki işlemler tekrarlanır diyor.
+
+167
+00:44:19,668 --> 00:44:26,708
+Son bölümde bir aktivasyon fonksiyonlarıyla ilgili bir açıklama vardı. Evet, burası bence gerekli.
+
+168
+00:44:34,867 --> 00:44:43,528
+Aktivasyon fonksiyonu olarak yapay sinir ağlarında bugüne kadar çokça kullanılan yöntemlerin başında sigmoid function geliyor.
+
+169
+00:44:45,204 --> 00:44:55,043
+Sigmoid Function, biz dersin başında bir nöronun input layerleri ve weightlerle çarpımından elde ettiğimiz bir sonuç demiştik.
+
+170
+00:44:55,043 --> 00:45:10,144
+O toplamları H diye ifade edebiliriz burada. Yani belli ağırlıklarla çarpılmış bir inputun toplamlarını burada gösteriyor.
+
+171
+00:45:13,108 --> 00:45:27,528
+Bir bölü, bir artı E üzeri H dediği formda yazılıyor ve sigmoid function, bakın yatay eksen H, dikey eksen ise GH'yi gösterecek şekilde çizilmiş.
+
+172
+00:45:27,528 --> 00:45:40,528
+Buna göre sıfır noktası şurası, sıfır için bu sıfır nokta beş değerini alıyor, H sıfır değerini aldığında ve gördüğünüz gibi birle,
+
+173
+00:45:41,108 --> 00:46:01,648
+Sıfır arasında değer üretiyor outputta. Dolayısıyla bir binary classifier'ın çıkışına bir sigmoid function eklenerek elde edilen output'un sıfır ya da bir oraya dönüştürülmesini sağlıyor. Sigmoid funksiyonunun görevi bu.
+
+174
+00:46:09,108 --> 00:46:17,068
+0 üretecek, 0'dan büyük bir değer gelmişse size 1 üretecek bir threshold function.
+
+175
+00:46:17,068 --> 00:46:20,987
+Yani çok büyük bir görevi yok aslında sigmoid function'ın.
+
+176
+00:46:21,907 --> 00:46:26,427
+Elde ettiğimiz output mesela 400 de gösteriyor olabilir.
+
+177
+00:46:26,907 --> 00:46:30,548
+Elde ettiğiniz output eksi 100 diye bir sonuç da vermiş olabilir.
+
+178
+00:46:30,987 --> 00:46:35,967
+Bunu 0-1'e dönüştürmenizi sağlayan bir fonksiyon sadece.
+
+179
+00:46:40,403 --> 00:46:52,644
+Evet, kullanıldığı yer neresi? Kullanıldığı yer tekrar söylüyorum. Biz bir nöronun girişleri ve bu girişlerin ağırlıkları ile burada toplandığını söyledik.
+
+180
+00:46:52,644 --> 00:46:56,556
+X0 dediğimiz giriş ise...
+
+181
+00:46:56,916 --> 00:47:07,916
+Bayes değerini gösteriyor demiştik. Bu toplamları aldıktan sonra nöronun çıkışına bir sigmoid function yerleştiriliyor.
+
+182
+00:47:08,076 --> 00:47:14,776
+Yani ya da bir aktivasyon fonksiyonu yerleştiriliyor ve dediğim gibi sıfır bir dönüşümünü bize sağlıyor.
+
+183
+00:47:17,176 --> 00:47:20,316
+Bakın şu toplam network'ün çıkışı.
+
+184
+00:47:22,164 --> 00:47:41,164
+Bunu bir aktivasyon fonksiyonundan geçiyor. Bir bölü, bir artı, e üzeri, eksi net diyor. Buradaki toplam netti. Buradaki toplamı şuradaki fonksiyonda e üzeri, eksi net diyerek yazıp buradan bir output üretmiş oluyoruz.
+
+185
+00:47:41,164 --> 00:47:48,804
+Dediğim gibi amacı elinizdeki output'u 0, 1'e dönüştürmek. Sadece görevi bu.
+
+186
+00:47:50,452 --> 00:48:05,452
+0-1 aralığına sıkıştırmak. 0-1 aralığına sıkıştırdığında ben diyorum ki 0'a yakınsa klas 0'dır, 1'e yakınsa klas 1'dir diyorum. Bu aktivasyon fonksiyonu buradaki rolü bu şekilde.
+
+187
+00:48:07,452 --> 00:48:08,892
+Evet.
+
+188
+00:48:18,260 --> 00:48:19,220
+Son bölümde
+
+189
+00:48:22,867 --> 00:48:48,668
+Bir örnek vardı, bir de onu göstereceğim. Ondan sonra Jüpiter ekranına geçeceğim. Bir yapay sinir ağı modeli vermiş burada. Sol tarafta da dataset vermiş. Datasetteki öz nitelik sayısı 3, x1, x2, x3 dediği öz nitelikleri gösteriyor. Y dediği ise bunun class label'ını gösteriyor. Class 0 ya da class 1 şeklinde.
+
+190
+00:48:50,867 --> 00:48:57,508
+4, 6, 8 tane sample var. 8 tane sample var. 3 tane öz nitelik var.
+
+191
+00:48:59,539 --> 00:49:13,200
+İki sınıflı bir sınıflayıcı için verilmiş bir dataset. Sağ tarafta ise bir nörondan oluşan bir yapı burada çizilmiş.
+
+192
+00:49:13,900 --> 00:49:19,820
+X1, X2, X3 dediğimiz bizim girişlerimiz. Burası input layer'ı gösteriyor.
+
+193
+00:49:20,240 --> 00:49:24,539
+Input layer'ın üzerinde herhangi bir ağırlık yok farkındaysanız şu bölgede.
+
+194
+00:49:24,539 --> 00:49:27,480
+Üç tane buraya düğüm eklenmiş.
+
+195
+00:49:27,539 --> 00:49:30,900
+Bu düğümlerin anlamı burada bir input layer var demek.
+
+196
+00:49:30,900 --> 00:49:39,900
+Input layer'dan sonra weightlerle ağırlıklandırılmış ve bir nörona gidip burada toplanmış olduğunu görüyorsunuz.
+
+197
+00:49:41,980 --> 00:49:43,640
+Bir soru mu vardı?
+
+198
+00:49:50,900 --> 00:50:00,000
+Buradaki kırmızıyla çizilmiş olan oklar bu nörona hangi ağırlıklarla bu...
+
+199
+00:50:00,000 --> 00:50:09,079
+girişlerin bağlandığını gösteriyor. Yani weightlerimizi gösteriyor. W1, W2, W3 dediğimiz değerler bunlar.
+
+200
+00:50:11,539 --> 00:50:22,079
+W0 değeri burada aslında T ile gösterilmiş. Bakın iki şekilde gösterilebiliyor. Burada Bayez'i ayrı çizmiş.
+
+201
+00:50:28,000 --> 00:50:44,079
+X3 girişlerini bu W ağırlıklarıyla çarptık. Burada hepsini eşit verdiği için tabii o şey çok anlaşılmıyor ama bunları çarptık ve topladık. Şuradaki toplama sembolünü görüyorsunuz. T Bayez değerini buradan çıkardık.
+
+202
+00:50:44,884 --> 00:50:52,483
+Ve ondan sonra bu işlemin sonunda bir y çıkışı elde ettik.
+
+203
+00:50:52,563 --> 00:50:57,503
+Y çıkışı bir aktivasyon fonksiyonuyla tabii bir çıkış veriyor.
+
+204
+00:50:57,503 --> 00:51:04,503
+Diyor ki şu içerideki toplam sıfırdan büyükse...
+
+205
+00:51:04,980 --> 00:51:13,500
+Eğer z true ise bir olacak, diğer durumda sıfır olacak diyor ve buna göre bir output üretiyor.
+
+206
+00:51:21,972 --> 00:51:44,012
+Ve hata da, burada az önce konuştuğumuz gibi işte W ağırlıklarıyla X'i çarptığımızda elde ettiğimiz bir output var. Bunun gerçek değer ile arasındaki fark bize error veriyor. Bu hatanın karesi, kareleri toplamı da tüm sistemin ürettiği, train dataset için ürettiği hatayı gösteriyor.
+
+207
+00:51:49,972 --> 00:51:59,392
+hatayı minimize etmeye çalışıyorum. Ve bunu minimum yapan parametreleri bulmaya çalışıyorum.
+
+208
+00:52:05,556 --> 00:52:09,655
+Burada yine genel bir yapay sinir yapısı verilmiş.
+
+209
+00:52:10,155 --> 00:52:19,736
+Input layer'da X1'den X5'e kadar 5 tane öz nitelikli bir dataset için giriş katmanı oluşturulmuş.
+
+210
+00:52:20,516 --> 00:52:24,135
+Bir hidden layer var. Hidden layer'da 3 tane nöron var.
+
+211
+00:52:24,856 --> 00:52:32,296
+Ve bir output layer var. Tek bir çıkış. Demek ki bu bir binary classifier için çalışan bir yapı.
+
+212
+00:52:33,556 --> 00:52:46,135
+Yani şuradaki hidden layer'ın sağ tarafta iç yapısını gösteriyor. Hidden layer dediğimiz yapı. Bu inputları yine indisilere lütfen dikkat edin.
+
+213
+00:52:59,603 --> 00:53:05,663
+Sample için farklı ağırlıklar geliyor ve bunlar güncelleniyor.
+
+214
+00:53:08,244 --> 00:53:27,784
+W ağırlıkları ile ağırlıklandırılmış girişler toplanıyor. Bir SI oluşturuluyor, SAM değeri oluşturuluyor. Daha sonra bu SAM, bu toplam bir aktivasyon fonksiyonundan geçiriliyor. Yani bir threshold işlemi yapılıyor ve buradan bir output üretiliyor.
+
+215
+00:53:28,224 --> 00:53:52,103
+Yani şu yapı bir bütün, kendi içerisinde hem weightlerle çarpımı hem de bir aktivasyon fonksiyonundan geçirilmesi işlemini ifade ediyor. Her hidden layer'da bu işlemler tekrarlanıyor. Bu hidden layer'ın peşinden bir tane daha hidden layer gelebilirdi. Aynı yapı bu gördüğümüz formda orada da olması gerekiyor.
+
+216
+00:53:53,492 --> 00:53:56,492
+Evet, yani genel olarak yapıyı...
+
+217
+00:54:01,652 --> 00:54:03,871
+Burada göstermiş olduk.
+
+218
+00:54:04,092 --> 00:54:05,531
+Buraya kadar sorunuz var mı?
+
+219
+00:54:09,139 --> 00:54:27,079
+Ara verip uygulamalara geçeceğim size. Uygulamada kullandığım Jupyter Notebook dosyasını şimdi duvara eklerim. Siz de lütfen paralelde benzer işlemleri benimle beraber yapın.
+
+220
+00:54:28,659 --> 00:54:35,879
+Tekrar stop share diyelim. Şöyle bir ekrana geleyim.
+
+221
+00:54:41,460 --> 00:54:51,240
+Evet, sorunuz var mı? Şu ana kadar anlattığım konularla ilgili. Aranızda hiç yapay sinir ağa dersi alan var mı? Belki dersi alanlar bir parça biliyordur.
+
+222
+00:54:53,039 --> 00:54:56,260
+Evet, siz aldınız. Güzel.
+
+223
+00:54:58,003 --> 00:55:09,583
+Yani dediğim gibi bu veri madenciliğinin çok konusu değil belki ama algoritmalar arasında, classification tarafında da hazır çözümleri bizim çok işimize yarıyor.
+
+224
+00:55:12,423 --> 00:55:21,863
+Bence artık herkesin kullanabileceği çözümler bunlar. Size bir örnek vereyim. İktisat bölümünde bir hocamız var.
+
+225
+00:55:24,436 --> 00:55:40,256
+İşte enerji tüketim tahminleri yapmak için bu tür yapay sinirli modelleri kullanıyor. Evet, belki arkasındaki matematiği çok iyi bilmiyor ama bir işinin bir parçası olarak bunları kullanabiliyor.
+
+226
+00:55:40,256 --> 00:55:43,256
+Sizin bilgisayar tarafında...
+
+227
+00:55:44,275 --> 00:55:54,855
+Bunun arkasındaki matematiği de biraz öğrenip geliştirmeniz bekleniyor. Umarım ileriki çalışmalarınızda da kullanırsınız.
+
+228
+00:55:56,535 --> 00:56:05,395
+Evet, bir on dakika ara verelim arkadaşlar. Ders duvarına yükleyeceğim dosyayı indirip benimle beraber on dakika sonra başlayabilirsiniz.
+
+229
+01:05:54,228 --> 01:05:56,628
+Evet, şu an 49 kişi olduk.
+
+230
+01:06:34,068 --> 01:06:37,428
+Evet arkadaşlar, şimdi kaldığımız yerden devam edelim.
+
+231
+01:06:41,811 --> 01:06:59,591
+Sorunuz var mı? Tekrar soracağım. Az önce anlattığım bölümle ilgili teorik anlatımdan sonra size bu bölümde Python üzerinde dört farklı modelden bahsedeceğim demiştim.
+
+232
+01:07:01,071 --> 01:07:04,351
+Buraya kadar sorunuz yoksa uygulamaya geçebiliriz.
+
+233
+01:07:14,068 --> 01:07:22,188
+Biraz önce teorik bölümde konuştuğumuz yapay sinir modelini burada görüyorsunuz.
+
+234
+01:07:26,003 --> 01:07:26,443
+Öçalım.
+
+235
+01:07:45,139 --> 01:07:50,400
+Jüpiter ekranı görünüyor değil mi arkadaşlar? Ekran paylaşımında.
+
+236
+01:07:51,220 --> 01:07:51,800
+Evet hocam.
+
+237
+01:07:52,800 --> 01:07:53,119
+Tamam.
+
+238
+01:07:58,835 --> 01:08:06,295
+Burada birkaç farklı modelden ben şekil vererek bahsetmek istedim.
+
+239
+01:08:09,556 --> 01:08:19,775
+Bir giriş katmanı, bir hidden layer ve bir outputtan oluşan bir modeli burada görebiliyorsunuz. Açıklamaları da zaten orada okursunuz.
+
+240
+01:08:20,836 --> 01:08:27,716
+Farklı yapay sınıf modelleri var kullandığımız, özellikle görüntü işleme tarafında baktığımızda.
+
+241
+01:08:29,355 --> 01:08:34,675
+Öncesinde yaptığımız tüm çalışmalarda, görüntü işleme ile ilgili yaptığımız çalışmalarda
+
+242
+01:08:36,532 --> 01:08:45,092
+Ve feature mining dediğimiz öz nitelik çıkarma, feature extraction işlemlerini manuel olarak yapıyorduk.
+
+243
+01:08:45,172 --> 01:08:49,872
+Manuel derken farklı bir platformda bir takım öz nitelikler üretiyorduk.
+
+244
+01:08:49,872 --> 01:09:04,532
+Görüntü üzerinde edge'leri buluyorduk, köşeleri buluyorduk ve bunların birbirlerine olan uzaklığını, daire var mı, varsa dairenin çapı gibi bir takım öz nitelikler bulup bunları birer...
+
+245
+01:09:04,532 --> 01:09:16,012
+input olarak sisteme veriyorduk. Fakat yapay sinralarında artık bu geleneksel çözümün dışında bir çözüme gidilmeye başlandı.
+
+246
+01:09:16,012 --> 01:09:25,012
+Convolutional Neural Network dediğimiz yapılar ile konvolüsyon katmanında bu öz niteliklerin çıkarılması işlemi...
+
+247
+01:09:27,731 --> 01:09:46,512
+yapılır hale geldi. Dolayısıyla insanın öngöremediği kenardı, köşeydi, daireydi gibi şekillerin dışında çok daha kompleks öz nitelikleri çıkarabilen daha başarılı yapay sinrağı modelleri oluşturuldu.
+
+248
+01:09:46,652 --> 01:09:51,492
+Burada aslında verilen şekilde bunu görebiliyorsunuz.
+
+249
+01:09:55,731 --> 01:10:00,000
+Görüntü veriliyor ve bu görüntü üzerinde filtreler yardımı iletişim.
+
+250
+01:10:00,000 --> 01:10:27,979
+Bu şekilde gördüğümüz feature maplerde dört tane katman vermiş mesela. Her bir katmanda birbiri arkasında oluşturulan öz nitelikleri temsil ediyor bu. Bu öz nitelikleri de birbirinden farklı filtrelerle uygulanmış konvolisyon işleminin sonucunda elde edilen değerler.
+
+251
+01:10:28,000 --> 01:10:53,180
+Bunlar insanların manuel olarak çıkardığı öz niteliklerin yerine geçiyor ve çok daha başarılı sonuçlar üretiyor. Bu öz nitelik çıkarma işlemini feature mapleri oluşturduktan sonra ilerleyen aşamalarda aslında yaptığımız şey burada da gördüğümüz gibi fully connected network yapısı.
+
+252
+01:10:56,000 --> 01:11:08,380
+bir flatten dediğimiz işlemden geçiriyoruz. Yani bir vektörün içerisine yerleştiriyoruz. Bir, bir arka sıra concatenate ederek. Daha sonra bunu bir fully connected layer'a vererek.
+
+253
+01:11:09,460 --> 01:11:12,299
+sistemi tasarlayabiliyoruz.
+
+254
+01:11:13,600 --> 01:11:30,920
+Python'da özellikle bir Keras kullandığımızda, Keras bir wrapper, Keras altında TensorFlow ve Tiano diye iki farklı yapı var. Bunların ikisini de kapsıyor.
+
+255
+01:11:30,920 --> 01:11:35,020
+Burada TensorFlow çözümlerini göreceğiz.
+
+256
+01:11:36,500 --> 01:11:43,579
+Ve tabii hep böyle örnek veri setleri üzerinde bir takım çalışmalar yapacağız.
+
+257
+01:11:45,020 --> 01:11:55,700
+Pre-processing data for neural networks demiş bir veri seti alacağız ve bunu önce bir ön işlemden geçireceğiz.
+
+258
+01:12:00,948 --> 01:12:04,868
+Kütüphanesinde preprocessing çözümünü kullanacağım.
+
+259
+01:12:06,048 --> 01:12:12,488
+Ve bir yapay, sentetik bir data burada üretiyorum.
+
+260
+01:12:12,768 --> 01:12:14,068
+Create features demiş.
+
+261
+01:12:15,248 --> 01:12:20,087
+İki boyutlu bir dataset oluşturuyorum.
+
+262
+01:12:21,788 --> 01:12:24,768
+İki, dört, beş tane sample'dan oluşuyor.
+
+263
+01:12:24,768 --> 01:12:28,927
+Bu beş tane sample'dan oluşan features dedi.
+
+264
+01:12:28,948 --> 01:12:50,028
+Matriste tuttuğum veriyi bir preprocessing işleminden geçireceğim. Burada standard scalar dediği çözüm bizim derste öğrendiğimiz standard deviation normalization işlemini yapıyor. Veri setinde ortalamayı ve standard sapmayı hesaplıyor.
+
+265
+01:12:56,948 --> 01:13:16,948
+Ve veri setinde işte 3000-9000 gibi sayılar varken normalizasyon işleminden sonraki sayılara bakacak olursanız, genel olarak artı-eksi iki aralığına sıkıştırılmış hale geldiğini görebilirsiniz.
+
+266
+01:13:17,328 --> 01:13:21,728
+Basit bir pre-processing adımını gösteriyor bu.
+
+267
+01:13:23,252 --> 01:13:34,032
+Bu datanın ortalama değerini, yani normalizasyon işleminden sonraki datanın ortalama değerine baktığımız zaman sıfır ortalamalı olduğunu göreceğiz.
+
+268
+01:13:34,492 --> 01:13:43,352
+Çünkü ne yaptık? Tüm sampullardan verinin mevcut ortalamasını çıkardığımız için bunu sıfır ortalamalı veri haline getirmiş olduk.
+
+269
+01:13:45,587 --> 01:13:52,567
+Standart sapması da 0.99 ya da 1 gibi bir değer diyebiliriz.
+
+270
+01:13:55,731 --> 01:14:19,572
+Keras'ın Squential Model çözümünü nasıl kullandığını burada göreceğiz. Keras'ın altında yer alan Models ve Layers'ı import ettik. Squential Model oluşturmak demek arkadaşlar, arka arkaya kullandığımız katmanların bir tarifini vermek anlamına geliyor.
+
+271
+01:14:23,731 --> 01:14:42,471
+Hangi katman var? Bu katmanın özellikleri ne? Bunun peşinden gelen katmanın özellikleri ne? Tabii ki katmanlar arasında uyum olabilmesi için birinin output sayısı, diğerinin input sayısıyla tutarlı olmalı. Bunlara dikkat etmemiz gerekiyor.
+
+272
+01:14:51,731 --> 01:15:05,172
+Network'ü burada oluşturuyor. Start veriyor daha doğrusu. Daha sonra Network.Add diyerek her aşamada bu sequential yapıya, bu artificial yapıya bir katman ekliyor.
+
+273
+01:15:06,031 --> 01:15:13,791
+Network.Add dediği birinci aşamada bir Dance Layer eklemiş. Layers.Dance diyor.
+
+274
+01:15:19,731 --> 01:15:47,731
+Bu işinden gelen ilk dense layer katmanı olduğu için inputlarının sayısını vermem gerekiyor bir. İkincisi bu katmanda kaç tane nöron olacak bunu vermem gerekiyor. O yüzden bu dense layer katmanında diyor ki 16 tane nöron var diyor. O hani her katmanda kaç tane nöron olduğunu tanımlayabiliyoruz demiştik. 16 tane olsun diyor. Ben bunun sayısını 16 değil ne bileyim 26.
+
+275
+01:15:47,731 --> 01:15:57,711
+Bu konuda yapabilirim. Aktivasyon fonksiyonu olarak relo kullanılsın diyor. Yani sigmoid yerine relo kullanmış. Relu'nun ne olduğunu birazdan anlatacağım.
+
+276
+01:15:59,511 --> 01:16:07,511
+Sigmoid yerine kullanılan bir namliner yapı aslında.
+
+277
+01:16:10,963 --> 01:16:22,443
+Arkasından da input shape'i veriyor. Input shape olarak da diyor ki 10 tane input'um var. Yani bakın bu öz niteliklerin sayısını gösteriyor arkadaşlar.
+
+278
+01:16:23,783 --> 01:16:32,323
+Çünkü ilk dense layer katmanında input layer'dan gelecek olan girişler kullanılacak. Dolayısıyla bu aşamada bunun tanımlanması gerekiyor.
+
+279
+01:16:33,043 --> 01:16:37,963
+İlk sırada, input layer'ın peşinden gelen dense layer'da bunu yapmam gerekiyor.
+
+280
+01:16:38,543 --> 01:16:52,144
+Sonraki eklediği, network.ed diyerek eklediği katmanda ise, diyor ki bu katmanda da 16 tane nöron olsun diyor ve yine aktivasyonu relo olsun diyor.
+
+281
+01:16:52,144 --> 01:17:00,783
+Burada tekrar input shape tanımlamasına gerek yok. Neden? Çünkü zaten bir üst katmanda tanımladığının çıkışıyla ilişkili bu.
+
+282
+01:17:01,043 --> 01:17:27,384
+Burada 16 tane vardı. Demek ki o 16 tanenin çıkışı bu katmanın inputu olarak gelecek. Dolayısıyla arka arkaya tanımlanan ardışıl modelde bir üst katmanda bu tanımlı. Daha sonra bir tane daha şey ekliyor, dense layer ekliyor. Fakat bu dense layer'ın sonuna aktivasyon fonksiyonu olarak sigmoid koyuyor.
+
+283
+01:17:28,627 --> 01:17:32,487
+Bir binary output üretecek herhalde. Bunu amaçlıyor.
+
+284
+01:17:33,108 --> 01:17:40,067
+Ve bakın burada network'ü oluşturdu. Squential model olarak üç tane katman koydu.
+
+285
+01:17:40,667 --> 01:17:45,547
+Bir de şuna dikkat. Son kullandığı dense layer katmanında unit'e bir dedi.
+
+286
+01:17:46,027 --> 01:17:52,827
+Bu unit'in bir olması ne demek? Demek ki output layer'ı tanımlıyor ve output layer'de bir tane nöron var diyor.
+
+287
+01:17:53,347 --> 01:17:56,627
+Bu nöronun çıkışı da bir sigmoid ile oluşturulacak.
+
+288
+01:17:56,627 --> 01:18:15,787
+Sigmoid Function ne yapıyordu? Çıkışı 0-1 aralığına sıkıştırıyordu. 0 ise işte class 0 diyorum ya da işte 0.5'den küçükse class 0, ondan büyükse belli bir threshold koyup bunun üstünü de class 1 olarak kabul edeceğim diyorum.
+
+289
+01:18:15,787 --> 01:18:20,787
+Burada network'ü 3 katmanlı olarak oluşturdu.
+
+290
+01:18:21,171 --> 01:18:48,811
+Aşağıda ise Compile Neural Network diyor. Compile işleminde ise şunları tanımlıyoruz biz. Loss Function'ı nasıl tanımlayacağız? Burada Binary Cross Entropy kullanılmış. Binary Cross Entropy, Binary Classifier için kullanılıyor. Yani iki sınıflı sınıflayıcılarda kullanılıyor. Sonuç evet, hayır. Hasta, sağlıklı.
+
+291
+01:18:49,171 --> 01:19:03,491
+ya da churn, non-churn gibi değişik değerler alıyorsa, yani iki türlü, iki farklı şekilde değer alıyorsa binary, burada loss function olarak binary cross-entropy kullanabiliyorum.
+
+292
+01:19:04,491 --> 01:19:09,491
+Optimizer olarak bu kütüphanenin altında...
+
+293
+01:19:09,587 --> 01:19:37,547
+parametrelerini, weight parametrelerini loss'u minimum yapacak şekilde güncellememiz gerekiyor dedik. Bu güncelleme işlemini farklı optimizer'lar kullanarak yapabiliriz. Bu optimizasyon algoritmalarının bazıları daha yavaş çalışır, bazıları daha hızlı çalışır. Tek şeyi o. Burada optimizer olarak root mean square propagation optimizer'ı.
+
+294
+01:19:37,587 --> 01:19:51,627
+kullanalım diyor. Metrik olarak da, yani bu oluşturduğumuz modelin performansını incelerken de, accuracy'yi bize göstersin ve bunun üzerinden gidelim diyebiliriz.
+
+295
+01:20:04,051 --> 01:20:09,051
+Bu bölümde oluşturduğumuz modelin, oluşturduğumuz modelle ilgili...
+
+296
+01:20:10,420 --> 01:20:14,500
+Belli bilgiler veriyor. Diyor ki,
+
+297
+01:20:15,079 --> 01:20:25,440
+First, for each layer in the hidden and output layers, we must define number of units to include in the layer and the activation function.
+
+298
+01:20:26,440 --> 01:20:30,479
+Yani kaç tane nöron olduğunu tanımlıyoruz demiştik.
+
+299
+01:20:30,479 --> 01:20:31,780
+Ve bir de,
+
+300
+01:20:34,323 --> 01:20:53,283
+Number of units to include in the layer and the activation function. Burada kullanılan aktivasyon fonksiyonunu tanımlıyoruz dedik. Bu aktivasyon fonksiyonunu sigmoidi teorik bölümde anlatmıştım. Relu burada Rectified Linear Unit için şunu söyleyebiliriz.
+
+301
+01:20:53,283 --> 01:21:02,283
+Rectified Linear Unit şöyle çalışıyor. Bakın grafikte şuradaki mavi olan Rectified Linear Unit'i.
+
+302
+01:21:02,323 --> 01:21:10,323
+Yatay eksen nöronun çıkışını, dikeyde ise Relu'nun çıkışını görüyoruz.
+
+303
+01:21:10,724 --> 01:21:26,403
+Diyor ki, eğer o nöronun output'u, yani weightlerle input'u çarparak elde ettiği output değeri sıfırdan küçükse, yani bir negatif değerse, output sıfıra kilitlensin diyor.
+
+304
+01:21:27,796 --> 01:21:37,756
+Eğer nöronun çıkışı pozitifse, yani sıfırdan büyükse, ne değer varsa onu outputta göstersin diyor.
+
+305
+01:21:38,615 --> 01:21:45,216
+Tam liner bir yapı. 2 ise 2 oluyor, toplam değeri 1 ise 1 oluyor.
+
+306
+01:21:54,963 --> 01:22:07,404
+Yapay sinir ağlarından sonra derin ağların kullanımıyla birlikte başlıyor ve RELU kullanımı sigmoid yerine RELU'nun tercih edilmesi sistemin başarısını arttırıyor.
+
+307
+01:22:08,051 --> 01:22:21,431
+O yüzden bu da bir atılım oluyor aslına bakarsanız. Yapay sinir ağlarının günümüzde bu kadar popüler olmasında Relu'nun başarısını da mutlaka söylememiz gerekir.
+
+308
+01:22:24,851 --> 01:22:47,371
+Gördüğünüz gibi bir 0-1 aralığına sıkıştırmak için kullanılmıyor. Bu sadece ara katmanlarda tercih edeceğimiz bir output. O yüzden bakın dikkat edin ilk dense layer'da relo kullandı, ikinci dense layer'da relo kullandı ama output layer'da çıkış katmanında sigmoid kullandı.
+
+309
+01:22:48,340 --> 01:22:58,039
+RELU kullanmadı. Eğer burada RELU kullansaydı, bunun peşine bir katman daha ekleyip, belki bir softmax eklemesi gerekirdi output üretmek için.
+
+310
+01:22:59,260 --> 01:23:10,119
+Ama burada output unit'i bir tanımlayıp aktivasyon fonksiyonunu sigmoid verirseniz eğer 0-1 aralığında bir output üretirsiniz.
+
+311
+01:23:11,988 --> 01:23:35,888
+İkinci nokta diyor ki, second, we need to define number of hidden layers to use in network. Evet, bunu konuştuk. Her bir hidden layer'da kaç tane nöron olacağını, kaç tane düğüm olacağını belirtmeliyiz ve number of hidden layers, kaç tane hidden layer kullanacağımızı tanımlamamız gerekir.
+
+312
+01:23:39,091 --> 01:23:45,811
+We have to define the structure of activation function of the output layer.
+
+313
+01:23:47,636 --> 01:24:00,756
+Lütfen dikkat, bence buraya dikkatinizi çekmek isterim. Eğer biz bir binary classification işlemi yapıyorsak, diyor ki çıkış katmanındaki aktivasyon fonksiyonu sigmoid olmalıdır diyor.
+
+314
+01:24:00,756 --> 01:24:15,156
+Eğer multi-class classification yapıyorsak, yani çıkışların sayısı k adetse, bu mesela az önce verdiğim şey örneği gibi, ImageNet kütüphanesinde bin tane obje var.
+
+315
+01:24:15,636 --> 01:24:23,296
+Bu bin tane objeyi tanıyabilen bir derin ağ tanımladığımızda bin tane outputumuz var demektir.
+
+316
+01:24:23,296 --> 01:24:32,556
+Bu outputların hangisinin olma olasılığı daha yüksektir'i söyleyebilmek için softmax işlemi yapmamız gerekiyor.
+
+317
+01:24:32,916 --> 01:24:41,996
+Softmax dediğimiz işlem de o kadar basit bir işlem ki arkadaşlar, yani onu bu slide'a koymadım ama size dersten sonra paylaşırım.
+
+318
+01:24:43,636 --> 01:25:11,496
+Aldığı output değerini bir toplamını alıyor. Bir çeşit normalizasyon yapıyor ve böylece hepsini bir 0-1 aralığına getiriyor. Daha doğrusu toplamları 1 olacak şekilde bir normalize ediyor. Böylece oluşan her bir output'u bir probability olarak görebiliyorsunuz. Yani her bir output'un olma olasılığını görüyorsunuz çıkışta. Olma olasılığı en büyük olan hangisi ise
+
+319
+01:25:11,636 --> 01:25:22,416
+Onu estimated value olarak alıyorsunuz. Aynı hani şeyde naive Bayes'de kullandığımız gibi düşünebilirsiniz.
+
+320
+01:25:35,828 --> 01:25:51,568
+One unit output katmanında bir tane nöron olmalıdır diyor ve no activation function, herhangi bir aktivasyon fonksiyonu kullanmamalıyız. Çünkü biz nümerik bir output üretmek istiyoruz anlamına geliyor.
+
+321
+01:25:51,568 --> 01:25:59,808
+Bu bölüm önemli, problemin türüne göre çıkış katmanında hangi aktivasyon fonksiyonunun kullanılacağını söylüyor bize.
+
+322
+01:26:02,836 --> 01:26:09,976
+Önemli konu loss function. Loss function da yine aslında uğraştığımız probleme göre değişiyor.
+
+323
+01:26:11,655 --> 01:26:18,595
+Eğer bir binary classification problemiyle uğraşıyorsak loss function'u binary cross-entropy tanımlamalıyız.
+
+324
+01:26:19,476 --> 01:26:28,836
+Eğer multi-class classification yapıyorsak categorical cross-entropy kullanmalıyız diyor ve regresyon problemiyle uğraşıyorsak
+
+325
+01:26:29,488 --> 01:26:45,068
+Mean Square Error Loss Function'ı kullanmalıyız diyor. Regresyon problemiyle ilgili hemen şunu hatırlatayım. Belki biliyorsunuz en bilinen örneği ev fiyatlarının tahmini problemi vardır.
+
+326
+01:26:45,068 --> 01:26:57,488
+İşte bir evin kaç oda olduğunu, kaç metre kare olduğunu bir takım özelliklerini biliyoruz ve buna göre output olarak bu evin fiyatını tahmin etmektedir.
+
+327
+01:26:57,488 --> 01:27:11,028
+satış fiyatı ne olabilir? Bunun için elimizde bir train dataset var. Bu train dataset'ten faydalanarak bir eğri uydurma problemi gibi düşünebilirsiniz.
+
+328
+01:27:12,028 --> 01:27:19,068
+Numerik output'u tahmin etmek istiyoruz. Dolayısıyla bu tür problemleri regresyon problemi deniyor.
+
+329
+01:27:19,503 --> 01:27:27,863
+Numerik output olduğu için ve loss function olarak da mean square error kullanılıyor.
+
+330
+01:27:29,943 --> 01:27:35,423
+Yapay sinir ağlarında beşinci önemli konu, we have to define an optimizer.
+
+331
+01:27:36,243 --> 01:27:52,763
+Bir optimizer seçmemiz, tanımlamamız gerekiyor. Niçin? Çünkü bu W weightleri dediğimiz bu parametreleri nasıl güncelleyeceğimize karar vereceğiz.
+
+332
+01:27:52,763 --> 01:28:00,423
+Bu güncelleme işlemindeki amaç da loss function'u minimize etmek. Bunu en hızlı şekilde minimize edecek.
+
+333
+01:28:03,604 --> 01:28:10,783
+parametreleri hızlı bir şekilde bulmak için bu optimizer'dan faydalanıyoruz.
+
+334
+01:28:11,463 --> 01:28:14,764
+Altıncı önemli konu...
+
+335
+01:28:14,771 --> 01:28:28,412
+We can select one or more metrics to use the evaluation, evaluate the performance. Geliştireceğimiz modelin performansını değerlendirmek için hangisine bakacak?
+
+336
+01:28:28,412 --> 01:28:32,832
+Yani onu ekrana yazdırarak onu takip edebiliriz.
+
+337
+01:28:40,756 --> 01:28:57,136
+Burada Keras offers two ways for creating neural networks. Keras sequential model creates neural networks by stacking together layers. Arka arkaya bunları dizerek oluşturuyor demiştik.
+
+338
+01:28:57,136 --> 01:29:02,595
+An alternative, pardon ekranımda yine chat.
+
+339
+01:29:03,188 --> 01:29:10,068
+Çok yer tutuyor. An alternatif metod for creating neural network is called the functional API.
+
+340
+01:29:10,068 --> 01:29:18,587
+But this is for more for researchers rather than practitioners diye belirtmiş.
+
+341
+01:29:22,579 --> 01:29:41,579
+Evet, bunları tanımladıktan sonra ilk Training'e Binary Classifier örneğine geçelim. Ben bu örnekleri çok faydalı buluyorum. Burada bir Binary Classification işlemi için...
+
+342
+01:29:43,539 --> 01:30:00,139
+modeli eğiteceğiz. Bunun için de bir ikili sınıflama problemine örnek olabilecek IMDB dataset'ini örnek veriyor. IMDB Large Movie Review Dataset.
+
+343
+01:30:01,520 --> 01:30:03,039
+Burada kullanılmış.
+
+344
+01:30:05,860 --> 01:30:10,840
+Şimdi ben burada sizinle Chrome ekranını paylaştım.
+
+345
+01:30:11,283 --> 01:30:18,843
+Acaba yeni açılan pencereyi gösterecek mi? Bunu görebiliyor musunuz?
+
+346
+01:30:21,663 --> 01:30:22,283
+Evet hocam.
+
+347
+01:30:22,644 --> 01:30:27,363
+Large Movie Review Dataset. Yeni bir tab açtım, görebiliyorsunuz, tamam.
+
+348
+01:30:28,283 --> 01:30:32,823
+Diyor ki bu dataset'te, önce dataset ile ilgili bilgi vereyim size kısaca.
+
+349
+01:30:36,756 --> 01:30:46,376
+Dataset for binary sentiment classification containing substantially more data than previous benchmark dataset.
+
+350
+01:30:46,376 --> 01:31:04,756
+Burada 25 bin tane review yani değerlendirme yapılmış. Bu 25 bin tane değerlendirme filmlerle ilgili insanların yaptıkları yorumları, yorumlarda kullandıkları kelimelere bakarak pozitif mi negatif mi olduğunu görüyoruz.
+
+351
+01:31:04,756 --> 01:31:21,636
+gösterecek şekilde etiketlemişler. Böyle bir dataset. İşte muhteşem bir film, çok beğendim diyorsa işte pozitif, berbat, sakın izlemeyin falan yazmışsa negatif gibi böyle yorumlar var bu dataset içerisinde.
+
+352
+01:31:27,252 --> 01:31:36,512
+Önce bu keras dataset altında aslında hazırda var ve ben buradan import ediyorum bunu.
+
+353
+01:31:38,212 --> 01:31:46,112
+Ve bu import ettiğim dataset bir arka arkaya yazılmış kelimelerden oluşan cümleler yer alıyor.
+
+354
+01:31:46,112 --> 01:31:52,652
+Bir tokenizer kullanarak bu kelimeleri özüntelik kümesine ekliyor.
+
+355
+01:31:54,676 --> 01:32:10,336
+Keras preprocessing text altında tokenizer var. Bunu kullanmış. Yine Keras'ın models ve layers metotlarını kullanmış.
+
+356
+01:32:10,336 --> 01:32:14,775
+Şimdi ne yapıyor önce?
+
+357
+01:32:16,275 --> 01:32:27,195
+Number of features. Diyor ki ben bu veri seti aslında yanlış hatırlamıyorsam 50 bin tane kelimeyi içeriyormuş.
+
+358
+01:32:27,956 --> 01:32:38,095
+Data set içerisinde birbirinden farklı yorumlarda geçen her bir kelime bir öz nitelik olarak bir sütuna eklenmiş.
+
+359
+01:32:38,095 --> 01:32:44,015
+Daha sonra bu kelime varsa o göze bir yoksa sıfır yazılmış her yorumla ilgili.
+
+360
+01:32:44,275 --> 01:33:05,756
+Böyle bir dataset oluşturulmuş. Ama 50 bin tane kelime oldukça fazla. Sonra şunu çıkarmışlar. Tüm review'larda ortak geçen kelimelerden en çok kullanılan bin tane, en çok kullanılan 20 bin tane gibi böyle bir takım veri setinin alt kümeleri oluşturulmuş.
+
+361
+01:33:12,275 --> 01:33:38,676
+Bir tane kelimeye göre bir alt küme oluşturacağız. Onun için IMDB load data dediğimizde bu IMDB datasını load ederken number of words'ü, number of features ile bine eşitliyoruz ve sadece bin tane öz nitelikten oluşan alt kümeyi alıyoruz.
+
+362
+01:33:40,275 --> 01:33:51,055
+Datayı Data Train, Target Train, Data Test, Target Test diye Train ve Test için iki bölüme ayırıyoruz.
+
+363
+01:33:51,376 --> 01:33:53,895
+Fakat Train ve Test datasına lütfen dikkat.
+
+364
+01:33:54,676 --> 01:33:58,015
+Data Train dediği bölümde sadece sample'lar var.
+
+365
+01:33:58,771 --> 01:34:13,551
+Target train dediği bölümde ise bu train dataset'in class label'ı var. Yani class label'ı bir vektör, data train dediğim ise işte sample sayısı çarpı bin taneden oluşan bir matriz.
+
+366
+01:34:14,771 --> 01:34:17,371
+Aynı şekilde test datası da tabii.
+
+367
+01:34:27,188 --> 01:34:39,367
+Train datasındaki kelimeleri ve test datasındaki kelimeleri bir datasete features, train, features, test olarak koyuyor.
+
+368
+01:34:39,367 --> 01:34:47,947
+Ve daha sonra ben burada bunların bir shape'ini, matrisin yapısını göstermek istiyorum size.
+
+369
+01:34:48,427 --> 01:34:54,567
+Hani neye benziyor, kaç tane sample var, kaç tane öz nitelik var train ve test datasında?
+
+370
+01:34:55,188 --> 01:35:07,688
+Daha sonra burada Start Neural Network diyerek şurada konuştuğumuz modeli oluşturuyor. Bunu tekrar söylemeyeceğim. Sadece dikkatinizi çekeceğim nokta, input shape'e dikkat.
+
+371
+01:35:07,688 --> 01:35:22,648
+Yani birinci katmanda oluşturduğu fully connected layer'da input shape'in number of features olmak zorunda. Units bu katmandaki nöron sayısı ve relu.
+
+372
+01:35:23,252 --> 01:35:24,492
+Son katmanda
+
+373
+01:35:25,203 --> 01:35:47,903
+Biz bir polariti ölçmek istiyoruz. Olumlu mu, olumsuz mu diyorum. Bunu belirlemek istiyoruz. O yüzden binary classifier yapmak istediğimiz için aktivasyon fonksiyonunu sigmoid seçiyoruz. Aşağıda bunu compile ediyoruz ve network fit diyerek de burada train işlemine başlıyoruz.
+
+374
+01:35:53,203 --> 01:36:06,443
+ve Apriori ile train et diyoruz. Target train ile bu Grand Truth ile arasındaki farka bakarak her defasında loss hesaplayacağı için output vektörünü de veriyoruz.
+
+375
+01:36:07,104 --> 01:36:16,283
+Epoch olarak 3 tanımlanmış, 3 iterasyon çalıştırılacak. Verbosa dediği print description after each epoch demiş.
+
+376
+01:36:21,203 --> 01:36:26,663
+Loss ne kadar oldu, Accuracy kaç oldu, bunları ekrana yazdırsın, yazdırmasın seçimini yapıyorum.
+
+377
+01:36:27,323 --> 01:36:40,804
+Batch Size'ı ise 100 seçiyoruz. Neden? Veri setinde, Train Data Set'inin içerisinde 25 bin tane sample var ama bunların hepsini train işleminde kullanmak çok zaman alan bir işlem olduğu için
+
+378
+01:36:40,804 --> 01:36:49,203
+burada bir Batch Size tanımlıyoruz ve sadece bin tane sample ile bu train işlemini yapıyoruz.
+
+379
+01:36:49,203 --> 01:37:01,463
+Bunlar random seçiliyor ve validation data da bizim test için ayırdığımız data ile de validasyon işlemini yap diyoruz.
+
+380
+01:37:01,463 --> 01:37:03,363
+Yukarıda.
+
+381
+01:37:04,340 --> 01:37:23,480
+Train ve test datasının shape'ini yazdırmıştık. 25.000'e 1000. 25.000 satırdan oluşuyor, 1000 tane sütundan oluşuyor. 25.000 tane sample, 1000 tane öz nitelik var demek. Train datasıyla test datasının size'ları aynı, eşit oranda veri bölünmüş.
+
+382
+01:37:25,555 --> 01:37:35,715
+Her bir epok sonundaki durumu burada görüyoruz. Birinci iterasyonun sonunda Los 041 iken,
+
+383
+01:37:36,212 --> 01:38:02,712
+Ecurisi %81 iken bu train datası için. Validasyon Ecurisi %85'miş. Sonraki iterasyonda loss 0.41'den 0.32'ye düşmüş. Ecurisi 0.86'ya çıkmış train dataset için. Test dataset için validasyon Ecurisi daha iyi görünüyor.
+
+384
+01:38:04,212 --> 01:38:19,192
+3 iterasyonun sonunda durumu gösteriyor bize. Bu dataset'te toplamda 50 bir tane movie reviews vardı. 25 bin, 25 bin bölündü. Eşit olarak train ve test için ayrıldı.
+
+385
+01:38:21,203 --> 01:38:33,203
+Amacımız pozitif negatif şekilde bunları sınıflamaktı. Yani iki sınıflı bir sınıflayıcı yapmak istedik. Bu data setin içerisinde...
+
+386
+01:38:34,612 --> 01:38:44,471
+5 bin tane binary features varmış. Biz bunun içerisinden bin tanesini most frequent words olarak bunları seçtik diyor.
+
+387
+01:38:44,471 --> 01:38:56,112
+Ve bu işlemi bu şekilde gerçekleştirmiş olduk. Ne gördük? Biz şimdi bir binary classifier, yani iki sınıflı bir sınıflayıcı gördük.
+
+388
+01:38:57,572 --> 01:39:00,992
+İkinci modelimiz multi-class classifier.
+
+389
+01:39:01,844 --> 01:39:04,743
+Buraya kadar sorunuz var mı? Hiç sesiniz çıkmıyor bugün.
+
+390
+01:39:10,163 --> 01:39:11,403
+Uyumaya mı gittiniz?
+
+391
+01:39:13,023 --> 01:39:14,203
+Yok hocam, teşekkür eder.
+
+392
+01:39:15,243 --> 01:39:16,363
+Uyumuyorsunuz değil mi?
+
+393
+01:39:16,723 --> 01:39:17,083
+Hayır.
+
+394
+01:39:18,103 --> 01:39:18,743
+Dinliyoruz hocam.
+
+395
+01:39:19,663 --> 01:39:20,463
+Peki.
+
+396
+01:39:22,304 --> 01:39:24,943
+Ses verdiğiniz için teşekkür ediyorum.
+
+397
+01:39:26,063 --> 01:39:35,683
+Training Multi-Class Classifier için Reuters Newswire Classification Dataset'i örnek vereceğim.
+
+398
+01:39:36,435 --> 01:39:38,435
+Şimdi buna bakalım.
+
+399
+01:39:53,427 --> 01:40:15,087
+Reuters Newswire Classification Datasette diyor ki 11.228 tane news varmış ve bunlar 46 tane başlık altında etiketlenmiş. Böyle bir dataset bu.
+
+400
+01:40:18,579 --> 01:40:27,640
+Dataset'in içeriğini bilmiyorum ama hani böyle haberlerin türleri gibi düşünebilirsiniz ve 46 tane sınıf, farklı sınıf var diyor.
+
+401
+01:40:28,920 --> 01:40:36,380
+11.228 news var, mevcut.
+
+402
+01:40:37,640 --> 01:40:42,440
+Peki, şimdi bunun için nasıl bir model oluşturmamız gerekiyor?
+
+403
+01:40:42,440 --> 01:40:43,500
+Solution's için.
+
+404
+01:40:44,692 --> 01:40:56,311
+bir feedforward neural network oluşturuyoruz. Output layer'ını ise softmax aktivasyon fonksiyonuyla bağlayacağız. Ve 46 tane farklı çıkışı olacak bunun.
+
+405
+01:40:58,231 --> 01:41:08,811
+Dataseti, keras dataset import Reuters demiş. Reuters datasetini buradan import ettim. Daha sonra
+
+406
+01:41:11,412 --> 01:41:28,351
+Import to Categorical işlemini yine yapacağım için bunları hazırladım. Bakalım, diyor ki bu dataset'te de Number of Features'ü 5000 olarak alıyorum.
+
+407
+01:41:30,292 --> 01:41:51,372
+Bu da yine bir aslında text mining işlemi. Her haber metninde geçen kelimeleri öz nitelik olarak alıyor. Veri setinin içerisinde sık kullanılan 5000 tane kelimeyi yine burada seçiyoruz.
+
+408
+01:41:55,507 --> 01:42:09,787
+Data değişkenine aldım ve daha sonra bunu number of features yani 5000 tane öz niteliğini alarak data değişkenine koydum.
+
+409
+01:42:09,787 --> 01:42:15,148
+Ve bunu train test datası olarak ikiye ayırdık.
+
+410
+01:42:22,591 --> 01:42:36,911
+Number of words, number of features olacak. Yani beş bin tane kelimeyi alacağız. Ve bu beş bin tane kelime için bir one head encoding dediğimiz işlemi oluşturacağız.
+
+411
+01:42:36,911 --> 01:42:47,032
+Yani bu metin içerisinde geçen her kelime için bir öz nitelik açacağız yukarıda. Bu öz nitelikler her metin için.
+
+412
+01:42:47,507 --> 01:43:10,728
+Her sample bir haber metnini gösteriyor. Her haber metninin içerisinde geçen kelimeler de sütunlarda öz nitelik olarak dizilmiş. O kelime o metnin içerisinde varsa binary 1 yazıyoruz yoksa 0 yazıyoruz. Böyle bir yapı aslında oluşturduğumuz yapı.
+
+413
+01:43:14,100 --> 01:43:29,100
+Daha sonra network modelini oluşturuyoruz. Lütfen dikkat. Network modelini oluştururken ilk katman, lütfen dikkat, ilk katmanda...
+
+414
+01:43:29,235 --> 01:43:45,235
+Ne görüyorsunuz? Bana mesela input shape'in ne olduğunu söyleyebilir misiniz? Azıcık soru sorayım ya ben sesinizi duymayınca boşa anlatıyor gibi hissediyorum. Nedir input shape'i bu network'ün?
+
+415
+01:43:47,815 --> 01:43:49,435
+Başlangıç için varsa o da ne?
+
+416
+01:43:52,635 --> 01:43:53,395
+Anlaşılmadı.
+
+417
+01:43:57,684 --> 01:44:02,224
+Mikrofonu açar açmaz konuşunca maalesef anlaşılmıyor. Bir daha duyayım.
+
+418
+01:44:03,304 --> 01:44:04,464
+Future sayısıyla aynı.
+
+419
+01:44:05,084 --> 01:44:08,004
+Yani? Future sayısı kaç dedik?
+
+420
+01:44:10,624 --> 01:44:11,144
+46.
+
+421
+01:44:11,744 --> 01:44:20,504
+Hayır, 46. Sınıf sayısıydı. Kelime sayısı. Kelimeler öz niteliklerimiz dedik.
+
+422
+01:44:21,427 --> 01:44:28,208
+Öz niteliklerimiz kelimeler en sık kullanılan 5000 tane kelime, number of features, 5000.
+
+423
+01:44:29,347 --> 01:44:41,688
+Demek ki öz nitelik sayısı bu oluşturduğumuz network'ün ilk katmanında input shape'i belirleyen şey number of features.
+
+424
+01:44:42,579 --> 01:44:53,459
+Tamam. Ne dedik? Beş bin tane öz niteliğimiz var. Bu katmanda yüz tane nöron var diyor.
+
+425
+01:44:54,195 --> 01:45:11,836
+Ondan sonra bir tane tekrar fully connected layer ekliyor, bir dense layer ekliyor yani. O katmanda da 100 tane nöron var. Aktivasyon fonksiyonu relu. Bakın ara katmanda relu kullanmak sistem başarısını arttırıyor. Daha çok tercih ediyoruz.
+
+426
+01:45:11,836 --> 01:45:20,036
+Ve output layer'ı burada tanımlamış. Output layer'da unit sayısı 46 çünkü sınıf sayısı 46.
+
+427
+01:45:21,363 --> 01:45:47,223
+Ve aktivasyon olarak Softmax kullanıyor. Softmax için de az önce söylemiştim, bu network'ün 46 tane çıkışı var. 46 tane nöronun aldığı değerlerin hepsini topluyor. Bunun üzerinden bir normalizasyon yapıyor aslında ve her bir çıkışı bir probability'ye dönüştürüyor. Softmax işlemiyle ilgili.
+
+428
+01:45:55,572 --> 01:45:57,872
+Size slide'a koymadığım için.
+
+429
+01:46:01,619 --> 01:46:06,699
+Nasıl çalıştığını Softmax'ın buradan gösterelim.
+
+430
+01:46:08,440 --> 01:46:10,640
+Aslında şurada verdiği örnek güzel.
+
+431
+01:46:11,315 --> 01:46:21,636
+Sağ tarafta softmax fonksiyonuyla ilgili verdiği örnek. Bakın output layer'da her 2, 4, 5 tane çıkış var ve 5 tane çıkışın aldığı değerler var.
+
+432
+01:46:21,636 --> 01:46:29,655
+Şimdi bu 5 tanenin en büyüğü 5.1 olduğu için doğrudan estimated value olarak bu sınıfı diyebilirsiniz.
+
+433
+01:46:29,836 --> 01:46:39,315
+Ama bunu probability'ye dönüştürmek için, yani probability gibi bir sayıyla ifade edebilmek için bunların her...
+
+434
+01:46:39,315 --> 01:46:56,756
+E birinin değerine z diyoruz. Bu zileri e üzeri zi yazarak işte beş tanesini topluyor ve e üzeri zi bölü bunların toplamına bölerek bakın sağ tarafta gördüğümüz probability'lere dönüştürüyor.
+
+435
+01:46:56,756 --> 01:47:07,315
+Ve probability'ye dönüştürdüğü zaman görüyorsunuz bakın bu ikinci sıradaki 5.1 en büyüğüdür. Zaten output ikinci sıradaki olacak dedim ama buna bir olasılık değeri.
+
+436
+01:47:07,315 --> 01:47:34,796
+atamış oluyorsunuz. Diyorsunuz ki, ikinci sınıf olma olasılığı yüzde doksandır, birinci sınıf olma olasılığı yüzde ikidir, üçüncü sınıfın olma olasılığı yüzde beştir diyorsunuz. Bu softmax işlemi, buradaki nöronun çıkışında gördüğümüz sayısal değerleri bir probability'ye dönüştürmemizi sağlıyor. Böyle çok basit bir matematiksel işlem aslında.
+
+437
+01:47:35,315 --> 01:47:36,956
+Yaptığı işlem.
+
+438
+01:47:39,775 --> 01:47:50,115
+Ve burada softmax işlemiyle bu output 46 taneden hangisinin olma olasılığı en yüksektir bize söylemiş oluyor.
+
+439
+01:47:50,115 --> 01:47:58,115
+Daha sonra burada kurguladığı networkü, compile neural network dediğimiz işlem ile...
+
+440
+01:47:58,256 --> 01:48:12,475
+Compile ediyor. Hangi optimizer'ı kullanacağım, hangi metriyi kullanacağım bunların seçimi var. Tek burada önemli nokta, dikkatinizi çekeceğim. Loss function için categorical cross entropy yazıyorum.
+
+441
+01:48:14,155 --> 01:48:18,615
+Sonra network'ü fit ettik. Network'ü fit ettik.
+
+442
+01:48:21,268 --> 01:48:31,268
+4 iterasyon çalışsın, ekrana yazdırsın, 200 tane sample'ı train'de...
+
+443
+01:48:31,475 --> 01:48:50,835
+optimizasyonunu da kullansın istiyoruz. Şimdi diyor ki, biz veriyi böl dediğimizde, bu verinin 8900 sample'ı train için, 2246 tanesini test için ayırmış, 5000 tane feature var.
+
+444
+01:48:55,188 --> 01:49:10,028
+Bakın, target dediğimiz output ise 46 tane çıkış olduğu için one-head encoding ile 46 tane output üretiyor. Her bir çıkış bir sınıfı temsil ediyor.
+
+445
+01:49:22,036 --> 01:49:31,735
+Bakın, 5 tane çıkış var. Bizim problemimizde 46 tane çıkış var. Bu 46 tane çıkışın her biri için bir output üretiyoruz.
+
+446
+01:49:31,735 --> 01:49:37,775
+Ve hangisinin olma olasılığı yüksek bunu bulmaya çalışıyoruz.
+
+447
+01:49:49,235 --> 01:49:51,315
+46 tane sütundan oluşuyor.
+
+448
+01:49:53,715 --> 01:50:02,435
+4 epoch çalıştırdık. 4 epoch sonunda loss değerinin 1.78'den 0.45'e düştüğünü,
+
+449
+01:50:03,815 --> 01:50:16,155
+train accuracy'sinin 0.62'den 0.90'a çıktığını, test datası üzerindeki accuracy'sinin 0.71'den 0.80'e yükseldiğini görebiliyoruz.
+
+450
+01:50:16,595 --> 01:50:21,775
+One Hat Encoding bu output için nasıl yapılmış bakın burada gösteriyor. Diyor ki,
+
+451
+01:50:28,500 --> 01:50:36,340
+11.228 tane haber metni vardı ve bunları 46 tane ayrı sınıfa ayırmak istemiştik.
+
+452
+01:50:37,380 --> 01:50:46,340
+Target dediğimiz 46 tane sınıfı, 46 uzunluklu bir vektör olarak tanımlıyoruz her bir sampleda.
+
+453
+01:50:46,840 --> 01:50:51,500
+Hangi sınıfa aitse onun çıkışı 1 oluyor, diğerleri 0 oluyor.
+
+454
+01:50:54,260 --> 01:51:13,260
+Target dediğimiz output'umuz 46 uzunluklu ve bu sample yani sıfır numaralı ilk sıradaki sample'ın class ID'si 46'dan 4. class'a ait olduğunu gösteriyor bize.
+
+455
+01:51:22,355 --> 01:51:27,415
+Gerçek sınıf etiketi bir ile işaretlenmiş.
+
+456
+01:51:29,155 --> 01:51:37,815
+Evet, bu da multi-class, yani çok sınıflı bir sınıflayıcı için yapının nasıl çalıştığını gösteriyordu.
+
+457
+01:51:38,975 --> 01:51:44,235
+Bir de regresyon problemi için bir model eğitmekten bahsediyor burada.
+
+458
+01:51:48,564 --> 01:51:50,604
+Bakın güzel bir şey var burada.
+
+459
+01:51:53,543 --> 01:52:05,243
+Make Regression için bir dataset üretiyor. Make Regression'ı SiteLearn datasets altından import etti.
+
+460
+01:52:11,344 --> 01:52:39,344
+Sample size 10.000 olsun. 10.000 tane satırdan oluşacak. Öz niteliklerin sayısı 3 olsun. Ve en informatif demek bu öz niteliklerden kaç tanesi ayırt edici olacak. 3'ü de ayırt edici olsun, informative olsun diyor. Bunu seçiyor. Target bir tane output'um olsun diyor. No 100 eklemiyor. Bir random sayı üretecek.
+
+461
+01:52:39,344 --> 01:52:59,684
+ile bunu sentetik olarak bu datayı üretiyor. Böyle bir dataset üretiyor. Daha sonra bu dataset'i train ve test diye %33'ü test için, %66'sı train için olacak şekilde ayırıyor. Ben burada ekrana bunların size'larını yazdırdım.
+
+462
+01:53:07,344 --> 01:53:17,104
+S6600 falan işte o civarda da bir train olacak anlamına geliyor.
+
+463
+01:53:17,703 --> 01:53:24,163
+Şimdi network'ü burada oluşturuyor. İsterseniz buraya ara katmanı siz de ekleyebilirsiniz.
+
+464
+01:53:24,163 --> 01:53:29,463
+Fakat size sorular sorayım yine.
+
+465
+01:53:32,851 --> 01:53:38,011
+Input Shape'de öz nitelik sayısı nedir diye soracağım.
+
+466
+01:53:38,712 --> 01:53:40,931
+Input Shape'de öz nitelik sayısı nedir?
+
+467
+01:53:42,091 --> 01:53:43,452
+Bunu dinliyor musunuz? Bakayım.
+
+468
+01:53:51,764 --> 01:53:56,764
+Kaç tane düğüm var, nod var bu katmanda?
+
+469
+01:54:04,307 --> 01:54:11,747
+Ekranda görünüyor. Birinci, dense layer katmanındaki nöron sayısı 32.
+
+470
+01:54:13,047 --> 01:54:21,387
+Input shape olarak da az önce oluşturduğumuz sentetik datayı veriyoruz. Bu sentetik data içerisinde 3 tane özüntelik vardı.
+
+471
+01:54:22,608 --> 01:54:24,768
+Ve aktivasyon olarak Relu kullanıyor.
+
+472
+01:54:25,908 --> 01:54:32,348
+İkinci dense layer katmanında 32 tane nöron var. Yine aktivasyon fonksiyonu olarak Relu kullanıyor.
+
+473
+01:54:32,968 --> 01:54:44,748
+Ve output layer'da dense layer unit 1 demiş no activation function. Regresyon problemlerinde çıkış katmanında aktivasyon fonksiyonu kullanılmaz demiştik.
+
+474
+01:54:51,155 --> 01:55:15,375
+katmanlardan oluşacağını veriyoruz. Daha sonra network'ü compile ediyoruz. Loss function olarak mean square error veriyoruz. Bu şekilde compile ediyoruz. Daha sonra da network'ü fit ediyoruz. Fit ederken de kullandığımız train dataset'inin
+
+475
+01:55:16,051 --> 01:55:29,311
+Sample'larını ve output'unu, yani ground truth'unu veriyoruz. 6 epoch çalışsın diyor. 100 tane sample ile bu network'ü eğitliyor.
+
+476
+01:55:31,152 --> 01:55:39,311
+Validasyon datası olarak da test için ayırdığımız örnekleri veriyoruz. Daha sonra Network Summary diyerek ben bu network'ün...
+
+477
+01:55:41,076 --> 01:55:47,956
+İlk üç tane test sample için başarısını ya da tahminlerini ekrana yazdırıyorum.
+
+478
+01:55:47,956 --> 01:55:56,015
+Diyor ki, train sample size 6700 tanesini, train için 10.000 tane sample vardı.
+
+479
+01:55:56,135 --> 01:56:00,315
+%33'ünü test, %66'sını train için kullandık.
+
+480
+01:56:01,515 --> 01:56:03,315
+Üç tane öz niteliğimiz vardı.
+
+481
+01:56:04,020 --> 01:56:19,579
+Daha sonra bu datayı Network'e verdik. 6 Epoch'u eğittik. 6 iterasyonun sonunda loss değeri 14.000'den 5.900'e düşmüş.
+
+482
+01:56:20,051 --> 01:56:34,811
+Test accuracy'si, tabi burada accuracy diyemiyoruz buna, mean square error diyoruz. Validasyon datasında mean square error 4529'a kadar düşmüş.
+
+483
+01:56:34,811 --> 01:56:42,539
+Yani daha fazla çalıştırılsa yavaş yavaş düşme eğiliminde olduğu görülüyor. Daha sonra ben ekrana...
+
+484
+01:56:42,579 --> 01:56:58,399
+Şurada Print Network Summary dediğim satırda oluşturduğum network'ün katmanlarını aslında yazdırıyorum. Kaç tane parametresi var, input layer'da ne var, output layer'da ne var bunları görüntülüyorum.
+
+485
+01:57:09,684 --> 01:57:15,704
+Predikt edilen değeri ile gerçek değerlerini yazdırdım.
+
+486
+01:57:16,756 --> 01:57:39,096
+Ne kadar tutarlı olduğunu görmek için. Birinci sıradaki sample'ı 55.25 diye tahmin etmiş ama gerçek değeri 87.55'miş. Ne kadar? 32 hata var arada. Ama ikinci sample eksi 70.69'muş. Eksi 70.97 olarak bulmuş. Baya yaklaşmış.
+
+487
+01:57:44,756 --> 01:57:52,096
+6 epok sonunda. Yani bunu biraz daha çalıştırsak belki daha iyi bir sonuç elde edebiliriz.
+
+488
+01:58:00,724 --> 01:58:08,203
+Peki, ben bir ara daha vereceğim. Çok konuştum galiba, baya bir çenem ağrıdı.
+
+489
+01:58:10,043 --> 01:58:19,524
+Peki, arkadaşlar, yani devam edeyim mi? Yoksa hiç sizden feedback alamıyorum. Hocam biz sıkıldık, bırakalım mı diyorsunuz?
+
+490
+01:58:35,315 --> 01:58:52,935
+Projeyi yaparsınız, aklınızda kalmasın proje. Şu anda anlattığım konular sizin için o kadar faydalı ki, yarın öbür gün bu modelleri siz de işinizde kullanıyor olacaksınız. İnanın bu yapıları biraz ne olduğunu bilmek çok işinize yarar.
+
+491
+01:58:58,963 --> 01:59:02,684
+Peki ben bir 10 dakika ara vereyim. 10 dakika sonra bir daha sorayım size.
+
+492
+01:59:42,899 --> 01:59:45,079
+Hocam, ekran paylaşımımız açık hala ama.
+
+493
+02:00:46,228 --> 02:00:48,368
+Hocam, şu an ekran paylaşımını geçelim.
+
+494
+02:09:48,916 --> 02:10:00,336
+Evet, merhaba arkadaşlar. Tekrar kaldığımız yerden devam edeceğim. Şöyle bir, kim bilgisayarının başında, ekranının başında bir göreyim ben, bir ellerinizi kaldırın bakalım.
+
+495
+02:10:14,739 --> 02:10:34,739
+Evet, 19 kişi, 20 kişi bilgisayarın başında, 50 kişi bağlı ama. Peki, niye hiç ses çıkmıyor sizden arkadaşlar? Niye benimle bir feedback, bir şey üretmiyorsunuz acaba? Soru sorduğumda, anladınız mı, anlamadınız mı dediğimde?
+
+496
+02:10:38,579 --> 02:10:42,039
+Hocam, ben anladığım için hiç sorma gereği duymuyordum.
+
+497
+02:10:42,112 --> 02:10:42,792
+Kendi adım.
+
+498
+02:10:43,432 --> 02:10:50,252
+Teşekkür ederim. Ama ne bileyim, böyle bir ses geldiği zaman sizden şunu hissediyorum.
+
+499
+02:10:50,252 --> 02:11:09,232
+Aa tamam, takip edebiliyorlar. Ama hiç ses gelmediği zaman çok kötü bir his. Siz bunu anlayamazsınız. Ben şimdi ekranımda 50 kişiye ders anlattığımı zannediyorum ama boşluğa konuşuyormuşum gibi hissediyorum sizden bir tepki alamadığımda.
+
+500
+02:11:11,604 --> 02:11:39,144
+Onun için lütfen çekinmeyin ve bir şey yapın, böyle bir aksiyon olsun yani. Konuşmaktan lütfen çekinmeyin. Ve sorduğum sorulara cevap vermeye gayret edin. Yanlış olur, doğru olur, çok da dert değil. Bu aslında sizin biraz daha takip etmenizi sağlayacaktır bence. Daha belki dikkatli takip etmenizi sağlayacaktır.
+
+501
+02:11:41,684 --> 02:11:53,743
+Peki, derse devam etmemi istiyor musunuz? Bu konular ilginizi çekti mi? Yoksa hocam biz bunları biliyoruz, hiç yorulmayın mı diyorsunuz?
+
+502
+02:12:03,475 --> 02:12:11,095
+Bir şeyler öğrendiğinizi düşünüyorsanız eğer devam edeceğim. Yoksa evet devam edelim diyen bir 4-5 kişi oldu.
+
+503
+02:12:15,699 --> 02:12:17,399
+edelim diyorsunuz. Peki.
+
+504
+02:12:19,199 --> 02:12:19,720
+Peki.
+
+505
+02:12:32,595 --> 02:12:46,455
+Ben tabii ekranımı paylaştığımı unutup bir güzel maillerimi de okumaya başlamıştım az önce. Uyardı arkadaşlar sağ olsunlar. Evet şimdi mail ekranımı kapatayım da.
+
+506
+02:13:06,003 --> 02:13:07,344
+Orayı keseriz. Peki.
+
+507
+02:13:08,844 --> 02:13:09,663
+Şimdi
+
+508
+02:13:14,931 --> 02:13:22,011
+Regresyon problemi için, prediction için az önce bir çözüm inceledik.
+
+509
+02:13:33,971 --> 02:13:34,923
+Evet.
+
+510
+02:13:50,100 --> 02:14:17,980
+Aslında bu dataset'i az önce yaptık diye hatırlıyorum ben. Tekrar bir IMDB dataset'iyle bir binary classifier problemi tanımlamış. Bu dataset'te filmlerle ilgili insanların yaptığı yorumlar, bu yorumlar üzerinden de pozitif-negatif ayrımı yapıyorduk. Bununla ilgili bir model oluşturmuştuk.
+
+511
+02:14:18,100 --> 02:14:23,560
+Aynı yapıyı vermiş, sadece network'ün...
+
+512
+02:14:27,123 --> 02:14:38,184
+Belli sampullar için aldığı değerleri sayısal olarak göstermiş. Yani bu örneği geçebiliriz o yüzden. Visualize Training History diye bir bölüm var.
+
+513
+02:14:40,923 --> 02:14:43,184
+Training işleminde...
+
+514
+02:14:46,292 --> 02:14:51,032
+Adım adım sonuçları nasıl takip edebiliriz bunu gösteren bir örnek.
+
+515
+02:14:51,931 --> 02:14:57,292
+Yine IMDB dataset'i 10 bin tane öz nitelik kullanıyor Number of Features'da.
+
+516
+02:15:00,532 --> 02:15:07,731
+Datasetini Data Train, Data Test diye ikiye ayırdık.
+
+517
+02:15:08,180 --> 02:15:21,440
+Bunların size'ını göstermek için ben burada print shape diyerek datayı tarif etmek için ekrana yazdırdım.
+
+518
+02:15:21,440 --> 02:15:27,440
+Daha sonra tokenizer ile...
+
+519
+02:15:28,404 --> 02:15:45,404
+Öz niteliklerin her birini, yani metinde geçen her bir kelimeyi bir öz nitelik olarak alıyoruz ve bunları binary olarak ifade ediyoruz demiştik. Bunları burada oluşturuyor. Daha sonra squential model oluşturuyor. Bu squential modelde...
+
+520
+02:15:46,100 --> 02:16:06,260
+Arka arkaya üç tane katman var. Dance Layer katmanı, son katman, Output katmanı. Bunları vermiş. Aynı örnek. Burada sadece şu var. Number of Epoch için 15 Epoch çalışsın demiş.
+
+521
+02:16:13,492 --> 02:16:15,252
+Örneğin, Dady Garbaro.
+
+522
+02:16:19,252 --> 02:16:42,492
+Epoch sayısı 15 olarak verilmiş. Batch size'ı 1000 tane sample için çalıştır diyor. Validasyon datasını test datası olarak vermiş. Daha sonra training loss'u ve test loss'unu alıyor.
+
+523
+02:16:45,747 --> 02:16:58,572
+Create Count of the Number of Epochs demiş. Epoch Count'a göre Training Laws'u yazdırmış. Bunu çalıştırdığımızda...
+
+524
+02:17:02,835 --> 02:17:03,675
+düşünmemiş miyim ben?
+
+525
+02:17:07,412 --> 02:17:10,412
+biraz uzun sürüyor olabilir. İnşallah o değildir.
+
+526
+02:17:26,611 --> 02:17:27,891
+Hala çalışıyor.
+
+527
+02:17:52,115 --> 02:18:18,896
+Ve train data ve train target size'larını gösterdim. Train data sample'ı, train data sample'ını bir tanesini burada görüntüledim. Daha sonra train data after tokenizer için 10 bin tane özüntelik var, 25 bin tane sample var hem train'de hem testte.
+
+528
+02:18:19,796 --> 02:18:22,056
+Um, uh,
+
+529
+02:18:28,755 --> 02:18:32,216
+Hala çalışıyor. Warningleri önemsemiyorum.
+
+530
+02:18:38,739 --> 02:18:45,540
+Yani değişiyor sürekli çünkü Python'da onun yerine bunu kullan diye öneriler var.
+
+531
+02:19:13,587 --> 02:19:22,007
+Siz ödevde bu şeyleri mutlaka çalıştırıp bırakın. Sonuçlarınızı oradan görmek daha hızlı oluyor çünkü.
+
+532
+02:19:23,547 --> 02:19:25,007
+Evet, bu da çalıştı.
+
+533
+02:19:31,924 --> 02:19:33,864
+Training accuracy, test accuracy.
+
+534
+02:19:38,708 --> 02:19:43,188
+İşlemleri bir de şuradan çalıştırıp görüntüleyebiliriz.
+
+535
+02:19:44,648 --> 02:19:48,028
+Training accuracy ve test accuracy burada.
+
+536
+02:19:48,547 --> 02:19:54,047
+Epoch'lara göre yani ilerleyen adımlarda nasıl değiştiğini görebiliyoruz.
+
+537
+02:19:55,188 --> 02:19:59,648
+Daha önce bahsetmiştim bu aralığın açılıyor olması.
+
+538
+02:20:00,000 --> 02:20:24,060
+Overfitting'e gittiğini gösteriyor diye. Overfitting'e gitmesini önlemek için ne yapabiliyoruz? Reducing Overfitting with Weight Regularization. Bu Regularization Term dediğimiz bir terim ekliyoruz loss function'a. Böylece overfitting'in önüne geçebiliyoruz. Bir takım çözümler var. Bunlardan birincisi bu.
+
+539
+02:20:26,036 --> 02:20:34,216
+Regularization term dediğimiz terimi, tabi burada eklemek oldukça kolay, hazır fonksiyonları yine kullanarak yapacağız.
+
+540
+02:20:53,907 --> 02:20:55,887
+Regularizer dediği
+
+541
+02:20:56,175 --> 02:21:23,056
+parametreyi ekleyerek bunu yapabiliyoruz. Aslında şöyle çalışıyor. Loss Function'a bir terim daha ilave ediyor. O terim de bulduğu tüm weight değerlerinin L2 normuna göre magnetütlerini alıp, işte bunu belli bir katsayıla 0.01 katsayısıyla o terime ekliyor.
+
+542
+02:21:24,175 --> 02:21:39,396
+Aslında sistemi bir parça şaşırtarak ezberlemenin önüne gitmeye çalışıyor. Her densleyer katmanına bunu eklemiş. Burada ikinci densleyer katmanında da benzer bir yapının kullanıldığını görüyoruz.
+
+543
+02:21:39,396 --> 02:21:52,175
+Yüzde bir ağırlıkla bu terimi buna ekleyerek overfit olmasını, aşırı öğrenmesini önlemeye çalışıyor.
+
+544
+02:21:52,175 --> 02:21:57,295
+Bu durumda işlem sonuçları ne olur onu gösteriyor.
+
+545
+02:22:03,507 --> 02:22:05,067
+Biraz yavaş çalışıyor.
+
+546
+02:22:07,347 --> 02:22:15,247
+Bunun dışında reducing overfitting with early stopping diye bir çözümümüz var.
+
+547
+02:22:17,067 --> 02:22:30,427
+Yani siz yukarıda EPOC sayısını 15 tanımladınız ama 15 EPOC çalışmak yerine aşırı öğrenmeye doğru gidiyorsa sistem belli bir aşamada kendi kendisini sonlandırabiliyor.
+
+548
+02:22:30,899 --> 02:22:46,239
+Bu çözümden bahsedeceğiz. Burada regularization term eklediğinde elde ettiği sonuçları yazdırdı. Early stopping için, şimdi şunu size göstermek istiyorum.
+
+549
+02:22:48,379 --> 02:22:57,599
+Networkü, Scential Network'ı burada oluşturdu. Burada compile etti. Daha sonra şurada
+
+550
+02:22:59,092 --> 02:23:02,731
+Early Stopping için bir şey tanımladı.
+
+551
+02:23:04,112 --> 02:23:13,231
+Set callback function to early stop training and save the best model for far demiş.
+
+552
+02:23:15,603 --> 02:23:35,283
+Böyle bir adım ekliyor ve böylece aslında mesela şurada EPOC sayısını 20 olarak tanımlamış olmasına rağmen eğer sistem aşırı öğrenmeye doğru gidiyorsa bu EPOC sayısını arttırdığımızda önceden durdurabiliyor.
+
+553
+02:23:35,283 --> 02:23:43,203
+Bunu burada tarif etmiş. Early Stopping Model Checkpoint.
+
+554
+02:23:43,891 --> 02:23:56,731
+Save Best Only dediği parametreleriyle 20 epoch çalışmak yerine belli bir adımda
+
+555
+02:23:57,087 --> 02:24:13,387
+20 epoğun birincisini çalıştırdım diyor. Loss Function'ı 0.41. İkinci iterasyonda 0.32 olmuş. Üçüncü iterasyonda 0.31 olmuş. Sonra bakıyor 30 olmuş, 29 olmuş, 28 olmuş.
+
+556
+02:24:13,387 --> 02:24:25,087
+Fakat aradaki değişim oranları çok fazla değilse ve ilerleyen adımlarda artık bu loss Function'da çok büyük bir değişim olmuyorsa, bakın aslında...
+
+557
+02:24:25,087 --> 02:24:31,487
+Ben 20 epok çalıştır dediğim halde 6. epon sonunda sistemi durduruyor.
+
+558
+02:24:32,007 --> 02:24:35,288
+Early stopping dediğimiz işlem bu şekilde çalışıyor.
+
+559
+02:24:36,147 --> 02:25:02,707
+Yine overfitting probleminin önüne geçmek için kullanılan çözümlerden biri drop-out işlemi. Drop-out işlemi de şu arkadaşlar. Burada basit bir neural network yapısı görüyorsunuz. Input layer'da 5 tane node var. 2 tane hidden layer var. Hidden layer'ların her birinde 5 tane nöron var ve bir tane çıkış katmanı var. Tek bir nörondan oluşuyor.
+
+560
+02:25:04,275 --> 02:25:23,355
+Dropout işlemi, tabii bu giriş katmanı değil, giriş katmanında bu olmaz. Burada şey yapmış, belli bir oranda her katmandaki nöronları sisteme katmıyor. Burada çarpı ile işaretlediklerini siliyor.
+
+561
+02:25:23,860 --> 02:25:46,780
+Ve böylece drop-out işlemi gerçekleşmiş oluyor. Yani her katmanda belli nöronları devre dışı bırakarak aşırı öğrenmenin önüne geçmeye çalışılıyor. Bunun bir oranı var. Mesela diyebiliyorsunuz ki ağda bulunan düğümlerin %10'unu drop et.
+
+562
+02:25:47,540 --> 02:25:53,460
+Geriye kalan %90'ı ile sadece çalış gibi bir işlem yapabiliyoruz.
+
+563
+02:25:54,100 --> 02:25:56,639
+Bunu nerede eklemiş sisteme bakalım.
+
+564
+02:25:58,580 --> 02:26:00,380
+Scanshel model oluşturuyor.
+
+565
+02:26:02,139 --> 02:26:04,780
+Aslında input katmanına da mı koymuş bunu?
+
+566
+02:26:05,720 --> 02:26:07,560
+Evet, input katmanına da koymuş.
+
+567
+02:26:09,236 --> 02:26:28,876
+Aslında input katmanına koymanın şöyle bir şeyi olur. Bazı öz nitelikleri eleyebiliyoruz demiştik hatırlarsanız Feature Selection'da. Bu aslında input layer'a da bunu eklemiş olmak. Mesela %20 oranında drop et diyor.
+
+568
+02:26:29,459 --> 02:26:39,979
+Input katmanında daha varsayalım ki sizin 10 tane öz niteliğiniz var. İki tanesini hiç sisteme input olarak katmayacağınız anlamına geliyor.
+
+569
+02:26:40,359 --> 02:26:52,439
+Tabii bunun hangisi olacağını rastgele seçiyoruz. Dolayısıyla orada bir rastgelelik olduğu için her farklı model oluşturduğunda farklı bir sonuç üretecek.
+
+570
+02:26:54,195 --> 02:27:14,195
+İlk katmandan başlayarak bunu yapmış. Daha sonra bir dense layer katmanı var. Add fully connected layer with relu, activation function diyor. Bu katmanın arkasından yine bir dropout işlemi görüyoruz. Ondan sonra...
+
+571
+02:27:14,868 --> 02:27:33,768
+Yine bir Dance Layer'ımız var. Daha sonra yine bir Dropout var. Burada %50 drop işlemi yapıyor. İlk katmanda %20 drop etmişti. Böyle model oluşturabiliyoruz. Yine overfitting probleminin önüne geçmek için. Dediğim gibi aradaki düğümleri silmek anlamına geliyor.
+
+572
+02:27:33,768 --> 02:27:41,227
+Input Layer'da sildiğimiz zaman da Feature Elimination yapmış oluyoruz. Yani bazı öz nitelikleri elemiş oluyoruz aslında.
+
+573
+02:27:44,084 --> 02:27:44,844
+Hmm.
+
+574
+02:27:48,691 --> 02:28:03,791
+Saving Model Training Progress. Oluşturduğunuz modelin aşamalarını kaydedebiliyorsunuz. Çünkü bu hesaplama adımları problemin büyüklüğüne göre ve verinin büyüklüğüne göre çok uzun sürebiliyor.
+
+575
+02:28:05,252 --> 02:28:12,671
+Belli aşamalarda bunu kaydederek geri dönüşü sağlayabiliyorsunuz. Bu mümkün.
+
+576
+02:28:22,675 --> 02:28:26,716
+Bunu çalıştırmayalım, geçelim. K-Fold Cross-Validation Neural Network demiş.
+
+577
+02:28:29,236 --> 02:28:44,316
+Önceki yaptığımız örneklerde %33'ünü test için, %66'sını, %67'sini train için kullan dediğimiz zaman sabit bir eğitim ve test kümesi oluşturmuş oluyorsunuz.
+
+578
+02:28:44,976 --> 02:28:48,216
+K-Fold Cross Validation'ın ne olduğunu hatırlıyorsunuz herhalde.
+
+579
+02:28:48,336 --> 02:28:57,236
+K parçaya bölüyoruz ve bu K parçanın bir tanesini test için, geriye kalanını train için kullanıyoruz ve bu parçayı her defasında yer değiştiriyoruz.
+
+580
+02:28:57,236 --> 02:29:13,096
+Sonuçta eğer 5'e bölmüşsek datayı 5 defa model oluşturuyor ve arkadan 5 tane parça için test ediyor. Bu 5 tane test işleminin sonucunu nihai sonuç olarak göstermek için de bunların ortalamasını alıyor.
+
+581
+02:29:24,884 --> 02:29:29,404
+Binary Classifier problemi miydi bu? Bakıyorum.
+
+582
+02:29:33,459 --> 02:29:59,619
+Random bir data oluşturduk. Number of class 2, 2 class, hayır bu bir binary classifier problemi tanımlamışız. Binary cross-entropy kullanıyoruz ve 3 tane parçaya ayırıp datayı bu 3 parçanın her birinin sonuçlarını
+
+583
+02:30:00,180 --> 02:30:12,779
+ekrana yazdırıyor. Sonra da modelin nihai başarısı olarak üç tane test parçasının ortalamasını alarak bir ortalama başarı hesaplıyor.
+
+584
+02:30:16,015 --> 02:30:36,876
+Cross Validation Score dediği 3 tane test parçası için birinci test parçasında %90 accuracy elde etmiş, ikincisinde %77, üçüncüsünde %86 elde etmiş. Bunların ortalaması, modelin ortalaması olacak dediğim gibi.
+
+585
+02:30:39,540 --> 02:30:51,720
+Bu benim çok ilgimi çeken bir bölüm. Tuning Neural Networks, yapay sinir ağa modellerinde hiperparametreler için bizim de dışarıdan verdiğimiz bazı değerler var.
+
+586
+02:30:51,720 --> 02:31:07,540
+Ve bu değerlerin hangisi için network daha başarılıdırı bulmak için aslında modeli her defasında elle ayrı ayrı parametrelerle çalıştırmak yerine grid search cross-validation dediği bir...
+
+587
+02:31:07,540 --> 02:31:29,200
+Yine hazır çözümü var. Bunu kullanabiliyorsunuz. Ne yapıyor? Lütfen dikkat edin. Yine 100 tane öz nitelik olsun diyor ve bir synthetic data generate ediyor. Binary classification problemi için.
+
+588
+02:31:31,156 --> 02:31:41,996
+Bu binary classification problemi için ürettiği datanın dengeli dağılmış bir dataset olmasını sağlıyor. %50, %50 her sınıftan örnek sayısı demiş.
+
+589
+02:31:41,996 --> 02:31:53,836
+Daha sonra create function returning a compiled network için burada bir fonksiyon tanımlıyor.
+
+590
+02:31:58,036 --> 02:32:02,275
+Squential modelimizi oluşturuyoruz.
+
+591
+02:32:03,296 --> 02:32:09,835
+Input layer'ı, dense layer'ı, dense layer'ı arka arkaya koyduk ve compile işlemi.
+
+592
+02:32:12,736 --> 02:32:16,936
+Daha sonra return network diyerek fonksiyonu sonlandırdık.
+
+593
+02:32:16,936 --> 02:32:18,136
+Bu bölümde ise
+
+594
+02:32:19,636 --> 02:32:27,256
+Bu network'ü çalıştırırken kullanmak istediğim farklı parametreler var. Nedir? Epoch sayısını 5 ve 10 denemek istiyorum.
+
+595
+02:32:28,096 --> 02:32:37,816
+Batch size'ını 5, 10 ve 100 almak istiyorum. Optimizer olarak Root Mean Square Propagation veya Adam Optimizer.
+
+596
+02:32:37,816 --> 02:32:43,756
+Bu ikisini de denemek istiyorum. Bunlar benim denemek istediğim parametrelerim.
+
+597
+02:32:47,636 --> 02:33:00,036
+Bir çalıştır, 10 epok için bir daha çalıştır. Ya da batch size'ı 100 için bir çalıştır, 200 için bir daha manuel olarak çalıştır yerine burada denemek istediğim tüm parametreleri tanımlıyorum.
+
+598
+02:33:00,036 --> 02:33:12,695
+Daha sonra bu parametreleri burada create hyperparameter options için bir diktikşinariye yazıyorum. İşte optimizer olarak iki tane seçeneğim var.
+
+599
+02:33:13,363 --> 02:33:30,243
+Epoch sayısı olarak iki tane farklı seçeneğim var. Batch size için benim üç tane farklı seçeneğim var. Bu üçünü de ayrı ayrı ben manuel olarak denemek yerine bunları bu opsiyonlardan oluşan dikişleri oluşturuyorum.
+
+600
+02:33:41,363 --> 02:33:55,484
+oluşturduğum nörel network'ü train ediyorum. Ve daha sonra bunu fit ediyorum verdiğim train dataset için.
+
+601
+02:33:56,180 --> 02:34:04,779
+Bu işlemleri manuel olarak yapmamız yerine oldukça hızlı hale getiriyor.
+
+602
+02:34:06,100 --> 02:34:10,020
+Tabii şimdi ben bunu burada çalıştırmayayım. Bu kadar bekleyecek şeyimiz yok.
+
+603
+02:34:12,139 --> 02:34:17,819
+Ama gerçekten güzel bir alternatif. Onu da belirtmek isterim.
+
+604
+02:34:19,420 --> 02:34:21,360
+Bunu da burada görmüş olduk.
+
+605
+02:34:21,631 --> 02:34:31,252
+Visualizing Neural Network. Bir de bunları visualize etme ile ilgili bir takım şeyler var. Hazır çözümler var. Bunları vermiş.
+
+606
+02:34:33,432 --> 02:34:41,752
+Şu bölüme geçeyim. Çok fazla vaktimiz kalmadı. Artık bir 10 dakika, 15 dakika daha yapıp bitireceğim. Classifying Images.
+
+607
+02:34:43,379 --> 02:34:51,899
+Görüntü üzerinde sınıflama işlemi yapmak istiyorsam, convolutional neural network kullanıyorum dedim.
+
+608
+02:35:00,724 --> 02:35:19,484
+konvolüsyon işlemiyle uygulanması demek, filtre kat sayıları ile görüntü üzerindeki intensity değerlerinin karşılıklı gelen gözlerini çarpıyoruz ve bunların toplamını alıp o filtrenin merkez noktası için bir output üretiyoruz konvolüsyon işleminde.
+
+609
+02:35:21,884 --> 02:35:25,203
+Konvolüsyon işlemini hiç duymayan, yapmayan var mı?
+
+610
+02:35:26,772 --> 02:35:28,312
+Çetten de yazabilirsiniz.
+
+611
+02:35:30,292 --> 02:35:37,312
+Konvolisyon nedir? Duydunuz mu? Yaptınız mı bir konvolisyon işlemi? Duymayan var mı daha doğrusu? Onu sorayım ben.
+
+612
+02:35:39,272 --> 02:35:43,672
+Hocam ben duymuştum ama açıkçası çok hakim değilim yani.
+
+613
+02:35:44,244 --> 02:35:46,824
+Ne yaptığını çok da bilmiyoruz diyorsunuz öyle mi?
+
+614
+02:35:47,164 --> 02:35:55,724
+Yani derste gördüğüm kadarıyla konuşuyorum. Kod üzerinde kullanmadım. Yani CNN'lere kullanmıştım ama komünüsünün ne olduğunu pek bilerek kullanmadık.
+
+615
+02:35:55,724 --> 02:36:02,704
+Evet. Anladım. Şimdi şöyle düşünelim. Elimizde... Pardon.
+
+616
+02:36:13,139 --> 02:36:25,020
+Hemen küçük bir örnekle bunu göstermek istiyorum. Aslında çok kolay bir işlem fakat belki anlatılmadığı için gözden kaçmış olabilir.
+
+617
+02:36:26,599 --> 02:36:32,139
+Size tablet üzerinde küçük bir örnekle komolysiyon işleminin nasıl çalıştığını...
+
+618
+02:36:35,796 --> 02:36:36,476
+Önceklik.
+
+619
+02:37:52,211 --> 02:37:55,131
+Şu an benim tablet ekranımı görüyor musunuz?
+
+620
+02:38:05,683 --> 02:38:06,483
+Evet hocam.
+
+621
+02:38:07,503 --> 02:38:14,023
+Yine cevap gelmeyince dedim ki herhalde mikrofonumun sesi gitti. Peki teşekkür ederim cevap verdiğiniz için.
+
+622
+02:38:14,743 --> 02:38:21,583
+Şimdi bir görüntü matrisimiz var. Bu I matrisi olsun. Bu bir image matriks.
+
+623
+02:38:21,583 --> 02:38:28,063
+Ve bu görüntü matrisinin içerisinde intensity değerleri var. Bu bir grayscale image olabilir.
+
+624
+02:38:30,004 --> 02:38:36,224
+Grayscale Image demek 0-255 arasında parlaklık değerleri anlamına geliyor.
+
+625
+02:38:36,804 --> 02:38:38,763
+Sıfır siyahı gösterirken.
+
+626
+02:38:39,092 --> 02:38:47,272
+255 ise beyazı gösteriyor ve bu ikisinin arasında da grey level'ları yer alıyor.
+
+627
+02:38:48,072 --> 02:38:53,811
+Bu matriz içerisinde grey level image'den gidelim daha basit, renkliye bunu genişletebilirsiniz.
+
+628
+02:38:54,311 --> 02:39:03,472
+Parlaklık değerleri var. 2, 3, 15, 12, 20. Bu bizim image matrizimin piksellerinin aldığı değerler.
+
+629
+02:39:07,123 --> 02:39:13,304
+3, 4, 1, 2, 10 olsun.
+
+630
+02:39:13,744 --> 02:39:34,164
+Devamında, tabii ki 55, 76, 255 gibi değerler de var bu matrisin içerisinde. Bizim elimizde bir de kernel dediğimiz bir filtremiz var. Bu kernellarda değişik boyutta kernellar.
+
+631
+02:39:41,744 --> 02:39:51,283
+Eğer bütün gözleri birse bu filtrenin adı ortalama filtresi, average filtering filter oluyor.
+
+632
+02:39:55,123 --> 02:40:03,304
+Ben bu filtre ile bu image arasında bir konvolüsyon işlemi yapmak istiyorsam eğer yaptığım işlem aslında şu.
+
+633
+02:40:10,324 --> 02:40:33,763
+Bu kernel içerisindeki kat sayıları, o matrisi, bu imic üzerine birebir örtüştürüyorum ve örtüşen gözlerin karşılıklı değerlerini çarparak topluyorum ve göz sayısına, yani kernel 3'e 3'te 9 tane gözden oluşuyordu, buna bölüyorum.
+
+634
+02:40:33,763 --> 02:40:38,324
+Ya da şöyle de düşünebiliriz, bu kernel'ın başında bir 1 bölü 9 kat sayısı.
+
+635
+02:40:38,324 --> 02:40:57,064
+Çünkü 9 tane gözden oluşuyor diye de düşünebilirsiniz. Bu şekilde aslında Image Intensity değerleriyle Kernel içerisinde, filtre içerisindeki karşılıklı gözleri çarpıyorum. Daha sonra bu çarpımları üst üste topluyorum.
+
+636
+02:40:57,424 --> 02:41:05,584
+Yani bu ne demek oluyor? Aslında hepsi bir olduğuna göre bu gözlerin hepsini toplayıp dokuza bölmek demek.
+
+637
+02:41:05,584 --> 02:41:15,603
+Bulduğum sonucu da output image olarak şuradaki görüntünün merkez noktasına yazıyorum.
+
+638
+02:41:16,628 --> 02:41:30,068
+Bulduğum sonucu şu merkez noktası için yazıyorum. Kernel'ın bir merkezi var çünkü. Bulduğum output'u buraya yazıyorum. Daha sonra bu filtreyi kaydırıyorum.
+
+639
+02:41:30,068 --> 02:41:32,068
+Bu filtreyi...
+
+640
+02:41:36,340 --> 02:41:53,639
+Kaydırıyorum şu şekilde. Bu defa bu alan ile bu intensif değerleri ile kernel'ın kat sayılarını çarpıyorum ve bu kernel'ın merkez noktası için yani şu göz için bulduğum sonucu yazıyorum.
+
+641
+02:42:01,203 --> 02:42:03,804
+Konvolution matricinée
+
+642
+02:42:04,976 --> 02:42:09,236
+X ve Y doğrultusunda bir mirror etme işlemi var.
+
+643
+02:42:09,416 --> 02:42:21,676
+Fakat genelde kullandığımız filtreler simetrik bir yapıya sahip olduğu için X doğrultusunda mirror ettiğinizde ya da Y doğrultusunda bunu mirror ettiğinizde sonuç değişmiyor.
+
+644
+02:42:21,676 --> 02:42:30,236
+Çünkü simetrik bir matriz. O yüzden genelde konvolisyon işlemi anlatılırken bu işlem hep atlanır.
+
+645
+02:42:30,656 --> 02:42:32,976
+Yani bir 180 derece döndürme işlemi.
+
+646
+02:42:32,976 --> 02:42:40,695
+Bu işlemi yapıyoruz ama bu işlemi simetrik bir filtre yapısında çok da önemsemiyoruz.
+
+647
+02:42:41,355 --> 02:42:57,336
+Komolisyon işlemi bu ve bir noktada şu, mesela benim vermiş olduğum giriş görüntüsü dört satırdan oluşuyor fakat output üretirken üçe üçlük bir filtrede hep bir içeriden output ürettik.
+
+648
+02:42:57,336 --> 02:42:59,976
+Çünkü merkez noktası için sonuç yazdık.
+
+649
+02:43:00,976 --> 02:43:20,976
+Çıkış görüntüsünün boyutu, giriş görüntüsünün boyutundan küçük oluyor. Yani border pikseller için işlem yapamamış oluyoruz. Bu problem konvolüsyon işleminde var. Bunun önüne geçmek için bir takım çözümler var. Mesela giriş görüntüsünün o border piksellerinin...
+
+650
+02:43:23,347 --> 02:43:35,427
+Aldığı değerler en dış tarafa padding işlemiyle eklenebilir. Yani şuraya mesela yeni değerler ekliyorum. Hangi değerleri ekliyorum? Şu alandaki değerleri padding ile ekliyorum.
+
+651
+02:43:35,427 --> 02:43:46,648
+Buraya da aynı şekilde padding işlemi yaparak aslında border için de sonuç üretebilecek şekle getirebiliyorum bu konvolüsyonun işlemini.
+
+652
+02:43:47,308 --> 02:43:51,347
+Konvolüsyonun işleminin sonucunda giriş görüntüsüyle aynı boyutta bir...
+
+653
+02:43:51,347 --> 02:43:57,387
+Bir çıkış derseniz eğer bu padding işlemini yaparak size sonuç getirir.
+
+654
+02:43:59,028 --> 02:44:02,788
+Kısaca böylece anlatmış olduk konvolisyon işlemini.
+
+655
+02:44:03,587 --> 02:44:11,488
+Bu konvolisyon işleminde filtreler 3'e 3 olur, 5'e 5 olur ama hep böyle bir merkez noktası tanımlanabilecek formda olmalı.
+
+656
+02:44:12,247 --> 02:44:13,387
+Bunlara dikkat ediyoruz.
+
+657
+02:44:13,387 --> 02:44:14,608
+Başka?
+
+658
+02:44:19,891 --> 02:44:31,531
+Filtre içerisindeki kat sayılar değiştirilerek farklı özüntelikler üretilebilir. Ben burada filtrenin gözlerinin hepsini bir olduğunu varsaydım ama değişik değerler alınabilir.
+
+659
+02:44:31,531 --> 02:44:47,891
+Şimdi burada çok basit bir dataset, MNIST dataset çok duymuşsunuzdur ama MNIST dataset'i kısaca anlatayım. El yazısı 0'dan 9'a kadar sayıları yüzlerce, binlerce,
+
+660
+02:44:47,891 --> 02:45:03,851
+En az önce de çok fazla insanlara yazmışlar. Amnist dataset'i Amerika'da nüfus idaresine başvuran insanların doldurduğu bir tane form var. Formun üzerinde de böyle küçük kareler var. Karelerin içerisine elle mesela kimlik numaranızı yazıyorsunuz.
+
+661
+02:45:03,851 --> 02:45:15,572
+İnsanların o gözlerin içerisine yazmış olduğu nümerik sayıları alıyorlar, bir dataset oluşturuyorlar. El yazısı nümerik karakterlerden oluşuyor bu dataset. Oldukça büyük bir dataset.
+
+662
+02:45:15,891 --> 02:45:32,311
+Sonuçta 8'e 8'lik bir matrizden oluşan bir görüntü var burada. Bu görüntü matrizinin içerisinde de bir nümerik karakter var. El yazısıyla yazılmış. Bunu tanıyan bir model oluşturmak istiyoruz.
+
+663
+02:45:43,891 --> 02:46:07,551
+Flatten demek de bir matriste bulunan değerleri bir vektöre dönüştürmek demek. Bir matrisin önce birinci satırını alıyor vektöre koyuyor. Sonra ikinci satırı alıyor. Vektörün arkasına oluşturduğu bir boyutlu vektörün arkasına onu concatenate ediyor. Yani ekliyor. Böylece ekleyerek bir boyutlu hale getiriyor Flatten işleminde.
+
+664
+02:46:11,891 --> 02:46:25,412
+İki boyutlu komolysiyon yapıyor. Az önce size tahtada anlattığım işlem ve bir de max pooling işlemi var. Onu birazdan anlatacağım. Bunları hazır zaten fonksiyon olarak kullanacağız.
+
+665
+02:46:25,412 --> 02:46:33,992
+Önce image data formatını tanımlamış.
+
+666
+02:46:35,700 --> 02:46:43,120
+Burada set image information da 28'e 28 boyutuna getiriyor bunları.
+
+667
+02:46:43,479 --> 02:46:47,720
+Hocam, biz hala tahtayı görüyoruz da şimdi fark ettim.
+
+668
+02:46:47,720 --> 02:46:50,500
+Öyle mi? Peki.
+
+669
+02:46:57,971 --> 02:46:58,851
+Tamam mıyız?
+
+670
+02:47:00,572 --> 02:47:01,371
+Evet.
+
+671
+02:47:02,471 --> 02:47:02,772
+Tamam.
+
+672
+02:47:05,092 --> 02:47:10,211
+Burada kullanacağımız, kütüphanede kullanacağımız şeyleri az önce tarif etmiştim.
+
+673
+02:47:10,752 --> 02:47:13,691
+Şimdi MNIST datasetini load ediyor.
+
+674
+02:47:15,272 --> 02:47:16,672
+Data train, target train.
+
+675
+02:47:17,792 --> 02:47:21,691
+Data test, target test diye bu dataset'i import etti.
+
+676
+02:47:21,691 --> 02:47:23,691
+Daha sonra...
+
+677
+02:47:25,012 --> 02:47:41,531
+Görüntü matrisi aslında ya 7'ye 7'ydi ya 8'ye 8'di. Bunu 28'e 28 boyutlarına getiriyor. Bizim tanımladığımız height ve width boyutlarına getiriyor.
+
+678
+02:47:46,739 --> 02:47:48,819
+Burada reshape işlemi yapmış.
+
+679
+02:47:49,860 --> 02:47:58,200
+Ben burada bir de az önce demiştik ya bir grayscale imit 0 ile 255 arasında değer alır.
+
+680
+02:47:58,200 --> 02:48:05,619
+Bunları 255'e bölerek normalize ediyor ve diyor ki bütün parlaklık değerleri artık 0-1 arasında değer alacak diyor.
+
+681
+02:48:06,067 --> 02:48:18,727
+Bu işlemi yapıyor. Daha sonra şunu hatırlatayım. 0'dan 9'a kadar rakamlar demek 10 tane farklı sınıf demek. Bu multi-class classification problemidir.
+
+682
+02:48:34,067 --> 02:48:48,407
+28 yan tarafında da diyor ki bu 7'dir, bu 8'dir, rakam tutuyordu. Şimdi biz bunu one hat encoding işlemiyle 10'a genişletiyoruz ve 10 sütundan oluşan bir vektör oluşturuyoruz.
+
+683
+02:48:48,407 --> 02:48:59,948
+Eğer sample ID yani giriş görüntüsünün sınıf etiketi 3 ise gidiyor o vektörün 3. gözünü 1 yapıyor, diğerlerini 0 yapıyor.
+
+684
+02:49:01,427 --> 02:49:12,427
+Böylece One Hat Encode Target dediğimiz işlemi gerçekleştiriyoruz. Burada Scrantial Network yapısını tarif ediyor. Önce...
+
+685
+02:49:14,868 --> 02:49:21,828
+İki boyutlu konvolüsyon işlemi tanımlıyor. Diyor ki bu konvolüsyon işleminde 64 tane filtre kullanacağız.
+
+686
+02:49:22,207 --> 02:49:33,387
+Filtrelerin boyutu 5'e 5 olacak diyor. Bakın 5'e 5'lik 64 tane farklı filtreyi random olarak filtre katsayılarını atıyor.
+
+687
+02:49:33,387 --> 02:49:42,387
+Ve daha sonra bunu işte bunun arkasından input shape'i veriyor. Yani giriş görüntüsünün.
+
+688
+02:49:42,868 --> 02:50:05,347
+türünü veriyor. Channel dediği grayscale mi, bir colored image mi, buna göre bir şey veriyor. Aktivasyonu relu demiş. Birinci katmanda bu işlem yapılıyor. Bu birinci katmanda 64 tane filtre olduğu için 64 tane output üretiyor. İkinci aşamada
+
+689
+02:50:08,211 --> 02:50:10,811
+bir max pooling işlemi var 2'ye 2.
+
+690
+02:50:11,283 --> 02:50:31,804
+Max Pulling işlemi de aslında çok basit bir işlem. 2'ye 2'lik bir matriz alanı içerisindeki en büyük sayıyı alıyor, output'a yazıyor. Ama ne oluyor? 2'ye 2'lik alanı 1'e düşürüyorsunuz. Yani görüntüyü yarı yarıya küçültmüş oluyorsunuz Max Pulling işlemiyle.
+
+691
+02:50:39,123 --> 02:50:45,043
+Öz nitelikleri flatten işlemiyle bir vektöre yerleştirmiş.
+
+692
+02:50:48,691 --> 02:51:13,511
+Bunun arkasından bir fully connected layer ekliyor. Fully connected layer içerisinde 128 tane nöron var. Aktivasyon fonksiyonu rel olacak diyor. Tekrar arkasından bir dropout ve şurası bizim çıkış katmanımız. Çıkış katmanındaki nöron sayısı number of classes, sınıf sayısı kadar olacak.
+
+693
+02:51:16,691 --> 02:51:30,891
+Yani 10 tane sınıf var. Aktivasyon fonksiyonu olarak da Softmax'ı seçiyor. Bu network'ü burada dizayn etti. Daha sonra bunu compile ediyor.
+
+694
+02:51:32,011 --> 02:51:34,072
+Categorical Cross-Entropy.
+
+695
+02:51:34,512 --> 02:51:51,272
+loss function'ı kullanarak. Daha sonra da bizim train dataset'imizle network'ü eğitiyor ve test datasıyla da, şurada gördüğümüz test datasıyla da validasyon işlemini gerçekleştiriyor.
+
+696
+02:51:55,272 --> 02:51:58,188
+Bunu çalıştırdığımızda...
+
+697
+02:52:06,004 --> 02:52:07,844
+Çok yavaş değil diye hatırlıyorum.
+
+698
+02:52:09,024 --> 02:52:16,064
+Kaç tane, bin tane sample'ı train'de kullanacağız. İki epoch çalışacak.
+
+699
+02:52:36,691 --> 02:52:40,731
+Bu dosyayı indirip kendi bilgisayarında çalıştıran var mı şu anda aranızda?
+
+700
+02:52:47,188 --> 02:52:50,968
+Ders duvarına eklemiştim ben bu dosyayı.
+
+701
+02:53:48,115 --> 02:54:04,536
+Dokümanın devamında da görüntüleri çeşitlendirmek ve zorlukları alıştırmak için aslında bir image augmentation işleminden bahsediyor.
+
+702
+02:54:04,536 --> 02:54:13,115
+Bu genelde veri az olduğunda ve veriye gürültü eklediğimizde de tanıma başarısını arttırması için tercih ettiğimiz bir yol.
+
+703
+02:54:15,028 --> 02:54:37,208
+Elimizdeki örneklere gürültü katıyoruz. Mesela 10 derece, 20 derece rotate ediyoruz ve böylece insanlar eğri yazmışsa vesaire gibi durumlarda da sistemin tanıma başarısını arttırmayı hedefliyoruz. Data Augmentation işlemi orada işe yarıyor.
+
+704
+02:54:47,603 --> 02:54:50,603
+Umarım bugün çalışır da bir sonuç görürüz.
+
+705
+02:54:59,956 --> 02:55:01,236
+Bir iki dakika daha bakalım.
+
+706
+02:55:23,412 --> 02:55:24,432
+Çıkış üretmeye
+
+707
+02:55:24,432 --> 02:55:28,971
+Başladık. Evet.
+
+708
+02:55:38,388 --> 02:55:59,588
+Evet, 28'e 28'lik görüntü matrisleri bunlar. 60 bin tane görüntü var. Bu 60 bin tane sample'ın şu 60 bin çarpı 10 dediğimiz target'ı, train target'ı gösteriyor.
+
+709
+02:56:06,260 --> 02:56:12,500
+Mesela sıfır numaralı örneğin sınıfının hangisi olduğunu gösteriyor.
+
+710
+02:56:13,020 --> 02:56:16,139
+0, 1, 2, 3, rakam 3 rakamıymış.
+
+711
+02:56:16,280 --> 02:56:26,260
+Bu 3 rakamının target vektöründe 10 boyutlu target vektörünün 3'ün...
+
+712
+02:56:26,835 --> 02:56:30,575
+Bu gözü 1 olduğu için 3 olduğunu görebiliyorum.
+
+713
+02:56:31,195 --> 02:56:42,415
+Ve yazılmış rakam da 28'e 28'lik vektör matris içerisindeki, görüntü matrisi içerisindeki değer de bu şekilde büyütülerek ekrana getirilmiş.
+
+714
+02:56:47,763 --> 02:57:03,263
+7'ye 7'lik bir matristi. Bu 7'ye 7'lik matrisi resize ederek, büyüterek ekrana getirdik. Veriyi tanımak açısından ben sadece bunu bu şekilde görüntülemek istedim.
+
+715
+02:57:06,355 --> 02:57:23,536
+Network'ü fit ederek daha sonra skorunu inceleyebilirsiniz. Ne kadar doğru tahmin etmiş bunlara bakabilirsiniz. Evet, benim bu bölümde size anlatacaklarım bu kadar arkadaşlar. Bu dosyayı sizlerle paylaştım.
+
+716
+02:57:32,628 --> 02:57:41,208
+Evet, bu haftaki konumuz bu kadar. Şimdi projelerle ilgili sorularınızı cevaplayabilirim.
+
+717
+02:57:41,208 --> 02:57:43,247
+Evet.
+
+718
+02:57:51,252 --> 02:57:54,292
+Proje için yüzde on yazmışız, öyle mi olacak?
+
+719
+02:57:57,131 --> 02:58:02,391
+Bunları sizin lehinize biraz değiştirebiliyorum, biliyorsunuz o şeyim var hala.
+
+720
+02:58:07,827 --> 02:58:33,028
+[öğrenci], sizde bir zaman serisi var. Zaman serileriyle uğraşmak ayrı bir konu. Yani zaman serilerinde orada galiba 24 tane farklı sensörden alınan veri var diyordu. Onları arka arkaya concatenate ederek kullanabilirsiniz. Bu bir yol olabilir ama çok iyi bir yol değil tabii. Ya da veri setini değiştirebiliriz.
+
+721
+02:58:34,004 --> 02:58:40,004
+O listenin en altında boş olan konulardan birini alabilirsin. Eğer değiştirmek istersen.
+
+722
+02:58:50,708 --> 02:58:52,808
+Başka sorunuz var mı projeyle ilgili?
+
+723
+02:58:58,579 --> 02:59:15,260
+Yani projenin yüzdesinin kaç olacağını soruyorsunuz. Proje yüzdesini ben Core syllabus'da dönemin başında vermiştim. O yüzden şimdi aklımda yok. Oraya bakın ama tekrar söyleyeceğim. Yani duruma göre biraz onların ağırlığını arttırabiliriz.
+
+724
+02:59:19,252 --> 02:59:33,312
+Evet, ödevi mutlaka yüklerken veri setini de beraberinde yükleyin. Çünkü ben tekrardan çalıştırmak istediğimde veri setini ben oraya koymakla uğraşmayayım. İkisini birlikte zipleyip koyabilirsiniz mesela.
+
+725
+02:59:35,731 --> 02:59:44,192
+Zaten ziplmeden koyamıyorsunuz. Biliyorsunuz, Jupyter Notebook dosyasının doğrudan yükleme opsiyonu yok.
+
+726
+02:59:51,891 --> 03:00:15,772
+[öğrenci], eğer binary atribütlerden oluşuyorsa outlier hesaplamak çok mümkün değil tabii ki. O şeyi, bölümü atlarsınız dersiniz. Outlier detection için binary veri setinde herhangi bir işlem yapılamamıştır diye. Yani o seksiyonu açın ama neden yapamadığınızı açıklayın ve atlayın.
+
+727
+03:00:18,451 --> 03:00:22,451
+Birinci ödevin yüzdesi ne kadar olacak? Bakacağız.
+
+728
+03:00:26,708 --> 03:00:42,388
+Eccuracy sonucuna göre değerlendirmiyorum tabii ki projenizin puanını. Çünkü bir veri seti var. Çok kompleks olabilir ve sınıf tahmini yapmak çok zor olabilir.
+
+729
+03:00:45,075 --> 03:01:06,915
+Dolayısıyla başarı düşük çıkar ama bazı veri setleri de çok basittir. O biraz şansınıza ne geldiğine bağlı. O yüzden kesinlikle bu işlem adımlarının, istediğim işlem adımlarının hepsini yapıp yapmadığınıza bakarım. Doğru uygulayıp uygulamadığınıza bakarım. Puanı etkileyen bir faktör değildir ekürisi.
+
+730
+03:01:13,332 --> 03:01:40,232
+Veri setinde resimler de var ve boyutu oldukça yüksek. Yani hem resim var hem bir nümerik data set var sadece resmi çıkartayım mı diyorsunuz? Resimleri bir vektör olarak da kullanabiliyorsunuz. Yani iki boyutlu bir matris olarak değil, onu flatten edip bir vektör olarak da input'a verebilirsiniz mesela.
+
+731
+03:01:41,268 --> 03:01:42,548
+Böyle bir çözüm de var.
+
+732
+03:01:48,788 --> 03:01:49,988
+Evet, başka soru.
+
+733
+03:02:02,611 --> 03:02:13,912
+CSV resimlerin işlenmiş hali. İşlenmiş hali ise o şekilde CSV dosyasını kullanın doğrudan. Bir daha resimleri eklemenize gerek yok demek ki.
+
+734
+03:02:20,211 --> 03:02:35,992
+[öğrenci] [öğrenci], veri setinizi değiştirdim, doğru. Ama şey önemli değil. Yani siz online Yıldız Edüter'e çalıştığınız veri setiyle yaptığınız çalışmayı yükleyeceksiniz.
+
+735
+03:02:51,763 --> 03:03:01,923
+[öğrenci], dengesiz veri dağılımında, imbalans data sette biliyorsunuz accuracy yerine precision ve recall önem kazanıyor.
+
+736
+03:03:02,343 --> 03:03:05,863
+Onlara ağırlık vererek karşılaştırma yapmanız daha doğru olur.
+
+737
+03:03:09,263 --> 03:03:14,064
+Ya da işte ikisini ayrı ayrı değerlendirmek yerine F1 score kullanabilirsiniz mesela.
+
+738
+03:03:16,948 --> 03:03:22,908
+Bunları hep son güne mi bıraktınız arkadaşlar? Bu akşam ödev teslimi yapacaksınız, proje teslimi yapacaksınız.
+
+739
+03:03:25,788 --> 03:03:26,388
+Evet.
+
+740
+03:03:31,059 --> 03:03:49,799
+Peki, umarım bu ders sizin için faydalı olmuştur. Bu hafta son haftaydı. Hepinize finalde başarılar diliyorum. İyi çalışmalar, hoşçakalın arkadaşlar. Bana el sallayıp çıkın bakayım kimler kalacak bugün derste geriye. Görelim.
+
+741
+03:04:14,899 --> 03:04:16,719
+Evet, başarılar. Hoşçakalın arkadaşlar.
+
+742
+03:04:35,796 --> 03:04:38,115
+Evet, bu sona kalan 10 kişi.
+
+743
+03:04:44,211 --> 03:04:46,151
+Son hafta yine aynı manzara.
+
+744
+03:04:48,471 --> 03:04:51,631
+Peki, hoşçakalın arkadaşlar. Başarılar diliyorum.

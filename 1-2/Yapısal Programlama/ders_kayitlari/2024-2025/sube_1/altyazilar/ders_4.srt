@@ -1,0 +1,1439 @@
+1
+00:00:08,980 --> 00:00:26,760
+Evet arkadaşlar, azıcık geciktim katılmada, özür dilerim. Bu ilk defa başlattığım bir bilgisayarda, kolum da şuydu buydu derken, kusura bakmayın. Ben şimdi bugünkü uygulamayı yapacak olan Kaan hocanızı bir davet edeceğim. Birazdan o da katılacaktız.
+
+2
+00:00:26,760 --> 00:00:35,820
+Şimdi bakalım şu, katılımcılar kısmına tıklayalım ve davet istiyoruz.
+
+3
+00:00:37,204 --> 00:00:41,643
+Şimdi kopyalı, şu tam neprisatki deli.
+
+4
+00:00:53,171 --> 00:01:14,831
+Bir de şimdi OBS'de bu iki grup tanımlı olduğu için, grup 1, grup 4, neydi siber güvenlik programı falan alanla, ilk başta bir de yanlış gruba tıkladım, grup 4'e tıkladım, onu başlattık derken, kısara bakmayın, birazdan başlarız.
+
+5
+00:02:06,036 --> 00:02:22,176
+Tamam, peki. Hoş geldin Karno Hocam. Şimdi bakalım tabii seni bulmalıyım şuradan. Ha, tamam, güzel. Ve diyorum ki, ne diyoruz? Oturma sahibi yap. Evet, değiştirmek istiyorum.
+
+6
+00:02:22,496 --> 00:02:23,596
+Aynen, oldu şu an.
+
+7
+00:02:23,855 --> 00:02:25,176
+Evet hocam, kolay gelsin sana.
+
+8
+00:02:25,556 --> 00:02:26,716
+Sağ olun hocam, teşekkür ederim.
+
+9
+00:02:29,195 --> 00:02:32,695
+Ama şey tabii, sesini açmayı unutma. Ben duyamadım sesini.
+
+10
+00:02:33,747 --> 00:02:34,608
+Nasıl hocam?
+
+11
+00:02:35,847 --> 00:02:43,787
+Yok, hayır. Az önceki oturumda şey etmiştim, duymuştum. Ama burada duyamıyorum şimdi ben şu an sesini.
+
+12
+00:02:44,487 --> 00:02:45,447
+Şu an sesini gelmiyor mu?
+
+13
+00:02:46,747 --> 00:02:51,867
+Yok, hayır. Kesinlikle gelmiyor. Ben şu an dudak hareketleri okuyarak da bir şey şey diyorum, bakıyorum.
+
+14
+00:02:52,287 --> 00:02:52,668
+Ha, bırak.
+
+15
+00:02:53,327 --> 00:02:54,728
+Geliyor diyorsun ama arkadaşlar.
+
+16
+00:02:55,527 --> 00:03:00,327
+Teşekkür ederim [öğrenci]. Tamam, iyisi de kolay gelsin o zaman. Nedense benimle ilgili problem var.
+
+17
+00:03:00,819 --> 00:03:01,779
+Tamam, peki.
+
+18
+00:03:02,319 --> 00:03:02,959
+Anamdın hocam.
+
+19
+00:03:03,240 --> 00:03:04,459
+Kolay gelsin sizler o zaman.
+
+20
+00:03:04,859 --> 00:03:05,419
+Anamdın hocam.
+
+21
+00:03:08,419 --> 00:03:08,819
+Teşekkürler.
+
+22
+00:03:12,372 --> 00:03:16,211
+Evet arkadaşlar, merhabalar. Nasılsınız öncelikle iyi misiniz?
+
+23
+00:03:25,907 --> 00:03:28,608
+O kadar mı kötüsünüz yoksa?
+
+24
+00:03:29,947 --> 00:03:31,267
+Ben de iyiyim, teşekkür ederim.
+
+25
+00:03:32,967 --> 00:03:38,007
+Şimdi bu dönemin Yapısal Programlama dersinin ilk uygulamasını yapacağız bugün.
+
+26
+00:03:39,507 --> 00:03:50,127
+İşte Yunus Emre hocamızla da konuşmanın nerelere kadar geldiniz, ne gördünüz, daha sonra neler işleyeceksiniz gibi konularınızla ilgili kısa bir uygulama yapacağız burada.
+
+27
+00:03:51,647 --> 00:03:53,187
+Şöyle bir ekran paylaşayım öncelikle.
+
+28
+00:03:55,379 --> 00:03:56,171
+Aaaa...
+
+29
+00:03:59,572 --> 00:04:12,372
+Bugün yaklaşık 3 tane soru çözeceğiz. Aslında ilk sorumuz sizin gördüğünüz dizilerle ilgili, döngülerle ilgili bir tane soru olacak.
+
+30
+00:04:12,979 --> 00:04:20,700
+İkinci sorumuz pointer konusuna yavaş yavaş giriş yaptığınız bazı kısımları gördüğünüz pointer konusunu çok hızlı bir tekrar yapıp
+
+31
+00:04:20,700 --> 00:04:29,279
+Üçüncü soru da hem gördüğünüzle ilgili hem de bir sonraki derste göreceğiniz bir konuyla ilgili birleşimi bir soru çözeceğiz burada uygulamada.
+
+32
+00:04:30,100 --> 00:04:37,100
+Bu artık zaten uygulama ve lab mantığını geçmiş dönemde gördünüz BBG dersinde. Uygulamalarda ne yapacağız?
+
+33
+00:04:37,240 --> 00:04:40,900
+Biz soru çözeceğiz labda da. Gelecek haftada ilk labınız olacak mesela.
+
+34
+00:04:42,100 --> 00:04:47,600
+Bir lab soru, biz size bir soru vereceğiz, bir süre vereceğiz. O süre zarfında o soruyu çözmenizi isteyeceğiz.
+
+35
+00:04:47,600 --> 00:04:55,980
+Sizinle öncelikle şey paylaşıldı mı? Hangi hafta uygulama, hangi hafta lab olacağı bir takvim hocalarımız tarafından paylaşıldı mı size?
+
+36
+00:05:01,267 --> 00:05:05,807
+Tamam, güzel. Yani hangi haftalap hangi hafta uygulama olacağını biliyorsunuz. Süper.
+
+37
+00:05:06,567 --> 00:05:13,567
+O zaman sorulara başlamadan önce arkadaşlar genel anlamda soracağınız bir şey var mı? Yoksa yavaştan soru çözümüne başlayalım mı?
+
+38
+00:05:22,612 --> 00:05:49,872
+Bir şey yok. Anladığım kadarıyla genel anlamda. Tamam. Şimdi ne diyor birinci sorumuzda? Verilen bir dizi içerisine diyor, Pythagorean Triplet bulunup bulunmadığını kontrol eden, eğer varsa bu üçlüyü ekrana yazdıran programı C dilinde yazınız. Şimdi şu kavram, zaten asıl olan kısım, bu kavram şu demek, yani Pythagor üçlüsü. Yani senin bir dizin var, bunun içinde bir elemanlar var. Bu elemanların içinde herhangi bir üçlü bir Pythagor üçlüsü oluşturuyor mu?
+
+39
+00:05:50,420 --> 00:05:57,840
+oluşturuyoruz işte, evet oluşturuyor ve şu elemanlar bu psikolojiküsünü oluşturuyor gibi bir program yazmamızı istiyor.
+
+40
+00:05:58,019 --> 00:06:01,259
+Şimdi şuradan başlayalım mesela.
+
+41
+00:06:03,060 --> 00:06:06,940
+Şimdi siz BBG derslerinde gördüğünüz bir, mesela bir akış şeması gördünüz.
+
+42
+00:06:06,940 --> 00:06:10,220
+Bu akış şemasında biz ne yapıyorduk? Bir problem veriliyordu bize.
+
+43
+00:06:10,460 --> 00:06:15,159
+Hatta bu işte oradaki algoritma oluşturma mantığınız bütün hayatınız boyunca gidecek.
+
+44
+00:06:15,259 --> 00:06:17,580
+Yani ne demek istiyorum? Size bir problem verilecek.
+
+45
+00:06:18,067 --> 00:06:26,067
+O problemi tabii ki de kodla çözmeye çalışacaksınız. Burada önemli olan zaten kodu bilip, yani kodun içindeki işlevleri bilmek değil.
+
+46
+00:06:26,067 --> 00:06:33,067
+O problemin çözülmesi için kafanızda o algoritmayı oturtturmanız gerekiyor. Ne demek istiyorum? Şimdi Pythagoras'ın bir dizim var.
+
+47
+00:06:33,427 --> 00:06:54,887
+Bu dizimde Pisegor üçlüsü var mı yok mu bunu bulmak istiyorum. Ne yaparım o zaman önce? Bir akış çiziyorum. Önce dizinin kaç elemanlı olmasını isterim. Tamam kullanıcıdan dizi elemanını isteyeceğim. Bu bir. İki. Aldım kullanıcıdan eleman sayısını. Sallıyorum altı. Altı tane eleman kullanıcıdan isterim girmesini. Girdi dizim oluştu. Tamam dizim oluştuktan sonra ne yapıyorum ben?
+
+48
+00:06:56,915 --> 00:07:14,315
+3 tane eleman bulmam lazım. Değil mi? Psagon neydi? A, kare eşittir, B, kare artı, C kareydi. Yani 3, o bulduğum 3'te elemanları sırayla dolaşacağım, ben sürekli diziyim. Herhangi bir tanesinde, işte onun karesini, onun karesini toplamak, oradaki herhangi bir sayının karesini eşitmek gibi bir döngüye bakmam gerekiyor.
+
+49
+00:07:15,252 --> 00:07:24,772
+Varsa diyeceğim, bulursam bu 3 sayıyı, varsa şu psikolojiküsü oluşturur, sayılar bunlardır. Yoksa bu dizide psikolojiküsü bulunmamaktır.
+
+50
+00:07:25,152 --> 00:07:37,612
+Bak gördüğünüz gibi daha kodu hiç yazmadık daha ama en başta ne yapmam lazım, hangi aşamalardan geçmem lazım gibi aslında bu algoritmik düşünce yapı sizin bütün hayatınız boyunca böyle gidecek.
+
+51
+00:07:37,612 --> 00:07:40,052
+Ve işlerinizi daha çok kolaylaştıracak.
+
+52
+00:07:41,524 --> 00:07:43,524
+Şimdi o zaman yavaştan başlayalım.
+
+53
+00:07:43,524 --> 00:07:47,524
+Şimdi zaten main şeyini biliyorsunuz, şu klasik kütüphanemiz.
+
+54
+00:07:47,524 --> 00:07:49,524
+Şu da, bunu belki görmemiş olabilirsiniz.
+
+55
+00:07:49,524 --> 00:07:55,524
+Bu printf ile şey yazdırdığımızda, devs ile yazdırdığımızda bazen Türkçe karakterleri şey yazdırmıyor.
+
+56
+00:07:55,524 --> 00:07:59,524
+Bunu bu, şu hazır kütüphane ile, bunun şu Türkçe destekle sağlayabilirsin.
+
+57
+00:07:59,524 --> 00:08:03,524
+Bunu rahatlık için, kullanmak için şöyle söyledim.
+
+58
+00:08:03,524 --> 00:08:06,524
+Tamam, şimdi en başta kullanıcıda ne yapalım o zaman?
+
+59
+00:08:06,524 --> 00:08:07,627
+Printf ile diyelim ki...
+
+60
+00:08:09,043 --> 00:08:15,443
+Dizimiz, dizimiz, kaç elemanlı olsun? Elemanlı olsun.
+
+61
+00:08:17,743 --> 00:08:22,863
+Tamam, daha sonra da ne diyelim? Kullanıcıdan bir sayı alalım.
+
+62
+00:08:25,163 --> 00:08:26,703
+Ne olsun bizim bu?
+
+63
+00:08:27,223 --> 00:08:30,043
+Boyut mu diyelim, eleman sayı diyelim.
+
+64
+00:08:32,723 --> 00:08:35,600
+Şimdi ne oldu? Böyle bir şey yapa yapa.
+
+65
+00:08:35,600 --> 00:08:42,320
+Aynı zamanda yani işlevlere adım adım aşağı inen hangi değişkenleri tanınmayacağımı da buluyorum.
+
+66
+00:08:43,279 --> 00:08:51,600
+Şimdi ne oldu dizimiz kaç elemanlı olsun dedik ve sayı aldık. Şimdi bizim ana şeyimiz ne eksik şimdi bir tane dizi tanımlamamız lazım. Dizimin eleman sayılarını aldık.
+
+67
+00:08:52,960 --> 00:08:59,200
+Ne edelim buna da? Bu sayılarımız tabii integer tipinde bir sayı olacak dizimiz olacak.
+
+68
+00:08:59,892 --> 00:09:08,052
+Şimdi dizi tanımlamada bunu görmüşsünüzdür. Ya diziyi kaç elemanlıysa içine şu kadar tanıyıp, boş bakıp daha sonra doldurabilirsiniz.
+
+69
+00:09:08,472 --> 00:09:16,072
+Veya dizi budur, hemen elemanlarını şuraya silelim mesela. Şu şekilde içini doldurup ilerleyebilirsiniz.
+
+70
+00:09:16,072 --> 00:09:20,072
+Burada bizim programlama...
+
+71
+00:09:21,875 --> 00:09:43,875
+Yazma prensiplerimizden biri şudur bölüm olarak da. Biz dizi tanınmadığımızda, biz eğer diziyi o an, hiç elemanlığını bir kere de tanınmayacağız ve bir daha değiştirmeyeceğiz toplam boyut sayısını. O yüzden şu en başa makro değişkenler dediğimiz, yani define'la tanınmadığımız bir değişken tanımlayıp, toplam şeyimiz ne olsun, elli boyutta olsun bu dizimiz.
+
+72
+00:09:45,331 --> 00:10:03,912
+Dizimizi bu şekilde tanımlamamız gerekiyor. Yani bizim başka şekilde de az önce söylediğim gibi tanımlama şeyleri mevcuttur CD'nin. Ancak biz bölümün işte genel bir kültür şey anlamında demek istiyorum. Eğer bir dizimiz sabitse, boyutumuz sabitse, yukarıda bir makro değişken tanımlayıp dizimizin boyutunu bu şekilde tanımlıyoruz.
+
+73
+00:10:03,912 --> 00:10:05,692
+Tamam.
+
+74
+00:10:06,772 --> 00:10:21,772
+Dizimi ayarladığınızda diziyi oluşturdum. Boyutunda, max boyutunda ayarladım. Daha sonra kullanıcıdan eleman sayımı da aldım. Şimdi eleman sayısı boyunca bu dizimizi bir şeyini dolduralım.
+
+75
+00:10:25,235 --> 00:10:31,475
+nereye kadar gelsin? s-i'ye kadar gelsin. Ne yapalım? e'yi bir arttıralım.
+
+76
+00:10:33,155 --> 00:10:39,635
+Şimdi şu da bir, yine bölümümüzün şeylerinden bir de, normalde programlama anlamına bir yanlış olur.
+
+77
+00:10:39,635 --> 00:10:43,235
+vms'ı şöyle tanımlama da olur int i0 diye. Ancak...
+
+78
+00:10:43,796 --> 00:11:00,956
+Geçen sene BBG'de de görmüşsünüz. Bu dönem veyahut da bütün dersleriniz boyunca bu şeyi göreceksiniz. For'un içinde böyle int i şeklinde tanımlama yapmayacaksınız. Yukarıya o değişkeni tanımlayıp içeride bu şekilde i eşit sıfırla devam edeceksiniz. For, while ve neyse işte döngülerde.
+
+79
+00:11:02,776 --> 00:11:06,236
+Tamam. Döneceğiz değil mi? Diyeceğiz ki kullanıcıya.
+
+80
+00:11:07,508 --> 00:11:11,508
+Cancağazım diyeceğiz. Bizim elemanları yazar mısın sana zahmet diyeceğiz.
+
+81
+00:11:14,447 --> 00:11:20,608
+Eski dizinin elemanına giriniz.
+
+82
+00:11:24,563 --> 00:11:29,423
+Neydi bizim şeyimiz neden ona? İyi incelemanını gir diyeceğiz.
+
+83
+00:11:38,676 --> 00:11:48,076
+Şimdi burada geçmiş programlama şeylerinde de görmüşsünüz. Yani bir C deliğinde ne yapıyorduk? Biz printf de bir şey yapıyorduk. Daha sonra scanf de şöyle bir şey yapıyorduk.
+
+84
+00:11:48,876 --> 00:11:52,876
+Şuraya bak şey yazmıyor, hiç söylemiyorsunuz arkadaşlar. Tam da bunu diyecektim.
+
+85
+00:11:53,476 --> 00:12:00,876
+Scanf de biz ne yapıyorduk burada? Şu operatör aslında şu an pointerda görmüşsünüzdün ne anlama geldiğini.
+
+86
+00:12:01,491 --> 00:12:18,371
+Diyoruz ki bu e sayısı var ya diyoruz, utanımadığın senin bir integer sayısı. Buna işte o kullanıcıdan aldığın değeri buna yaz. Ama buraya yazarken niye yazıyor? Bunun adresine yazıyor. Aslında bu operatör, bu önündeki değişkenin adresine git ve o işlemi yap anlamına gelen operatör anlıyor.
+
+87
+00:12:23,028 --> 00:12:50,368
+Biz bir değişkenin sonuçta bu değişkenleri bizden bir bellekte tutuluyor. Bu bellekteki değişkenleri biz o adresteki değişkenine bir değer atamamız gerekiyor. O değer atamasını sağlayan, yani o adresi bulmamızı sağlayan operatör şu operatördür. Yine burada nasıl biz tek bir değişkene değer atadıyorsak, burada da dizimizin bir elemanına değer atamak istediğimizde yine gelip o operatör yazıp, dizimiz neydi? Şuydu.
+
+88
+00:12:52,916 --> 00:13:05,156
+eray'in ince elemanına gir diyoruz. Bu ne yapıyor? eray'in 0. elemanındaki adresi gidiyor, benim kullanıcımdan aldığım değeri giriyor.
+
+89
+00:13:05,156 --> 00:13:14,355
+Şimdi buraya kadar herhangi bir şey varmıyor, sıkıntı yoktur diye düşünüyorum. Zaten kat kat daha zorlandı, daha şeyden yazdınız zaten.
+
+90
+00:13:14,355 --> 00:13:18,348
+Tamam, şimdi ne yaptık? Dizimizi oluşturduk.
+
+91
+00:13:18,484 --> 00:13:21,803
+Kullanıcından kaç elemanlı olmasını istedik. İçini doldurduk.
+
+92
+00:13:22,583 --> 00:13:23,604
+Şimdi
+
+93
+00:13:24,124 --> 00:13:27,443
+Bunu Paint'te mi çizsem? Paint'te çizeyim.
+
+94
+00:13:30,004 --> 00:13:34,604
+Şimdi şöyle bir dizimiz olduğunu düşünün. Ben kullanıcından girdi isteyeceğim.
+
+95
+00:13:35,884 --> 00:13:37,943
+Evet, çizeyim öyle. Şu olsun.
+
+96
+00:13:38,964 --> 00:13:40,504
+Birinci eleman.
+
+97
+00:13:41,264 --> 00:13:42,543
+İkinci eleman.
+
+98
+00:13:42,803 --> 00:13:44,604
+Üç, dört, dört.
+
+99
+00:13:45,203 --> 00:13:49,203
+Güzel bir dizimiz olsun.
+
+100
+00:13:49,203 --> 00:13:52,203
+Buraya da aşağı sayıları yavaştan geçelim.
+
+101
+00:13:52,203 --> 00:14:07,203
+5, 7, 3, 8, 4, 10, 12, 13 gibi gibi bu şekilde devam et.
+
+102
+00:14:10,292 --> 00:14:13,032
+Onu arada olur öyle şeyler. Teşekkür ederim.
+
+103
+00:14:14,572 --> 00:14:16,951
+Şeyleri diziyi doldurduk dedim.
+
+104
+00:14:17,032 --> 00:14:18,331
+Şimdi biz burada ne yapmamız lazım?
+
+105
+00:14:18,932 --> 00:14:19,692
+Ben ne arıyorum?
+
+106
+00:14:19,851 --> 00:14:25,772
+Öyle üçlü bulacağım ki bir tanesinin karesi diğer ikisinin karesini toplamana eşit mi?
+
+107
+00:14:27,764 --> 00:14:54,163
+Şimdi sırayla dolaşacağım o zaman. Ben burada üç farklı şekilde dolaşmam. Üç kere dolaşmam gerekiyor. İlk önce buna bakacağım. Bir tanesimiz buna bakacak, bir tanesi buna bakacak. Bakacağım önce sırayla. Bunun karesinin bir toplamı herhangi bir tanesinin, bu dizi sıralı olmak zorunda değil. Büyük sayı buraya da gelebilir, buraya da gelebilir. Üç farklı şekilde bir if koşulu düşünün. Üç farklı şekilde herhangi bir koşulu sağlıyor mu diyeceğim. Herhangi bir tanesinin karesi diğerinin toplamına mı diye.
+
+108
+00:14:55,764 --> 00:15:16,764
+Bunu da bulamadım mesela. O zaman bu ikisi sabit kalıp şunu değiştirdim, buraya getirim. Yine bu ikisi sabit kalır, üçüncüyü buraya getiririm. Böyle böyle, önce üçüncüyü bitiririm. Bu şekilde, şu ilk ikisi sabit. Daha sonra ikinciyi buraya getiririm, üçü yine bölelim. Yani aslında kafanıza ne oldu? İşte üç tane iç içe formula dönüp, önce...
+
+109
+00:15:17,491 --> 00:15:28,411
+En sağdaki bütün dizi dolanır. Bulduk mu? Bulduysak yazarız. Ha olmadı mı? O zaman ikinciyi bir arttırırız, buraya getiririz. Üçünü alttan aramaya devam eder. Böyle böyle.
+
+110
+00:15:28,596 --> 00:15:46,596
+3 kere dönmem iyi. Zaten ana bu sorudaki ana kısım o şeyi oluşturabilmek. Yani ben bu psikolojusunu bulmam için ne yapmam gerekiyor? Bir tane dizim var. Dizi ben sonuçta 3 tane eleman bulmam gerekiyor. 3 tane eleman bulmam için de sırayla da her biriyle birbirleriyle kontrol etmem gerekiyor. O zaman 3 tane for ile ben...
+
+111
+00:15:47,087 --> 00:16:14,087
+Şu en içteki for, şeyden başlayıp arar, bulursa yazar. Yok bulamadım. O zaman şu ikinciyi ben bir arttırırım. Aramaya yine devam ederim. Sonra baktım yine bulamadım. O zaman birinci artık buraya gelir gibi gibi en soldan en sağa doğru bir arama işlemi gerçekleştirdim. Tamam. Ne edelim o zaman? A işte sıfırla başlatalım. A nereye kadar devam edecek? Dizinin boyutu kadar devam edecek. Yani...
+
+112
+00:16:15,572 --> 00:16:17,548
+Özyine kalemizsin.
+
+113
+00:16:21,364 --> 00:16:25,964
+Bu şu an, bu ilk oluşturduğum A işte sıfırlı şu birinci kısmı gösteren şey.
+
+114
+00:16:27,803 --> 00:16:33,423
+Şimdi ben burada mesela B'yi neyden başlatacağım? B'yi şimdi gidip yine buradan başlatmak olmaz.
+
+115
+00:16:33,604 --> 00:16:39,303
+B'yi bir sonrakinden, yani A neyse, yani birinci işareteceğim şeyin neyse, o bir sonrakinden olacak.
+
+116
+00:16:39,403 --> 00:16:43,063
+O zaman bunda B'yi de ben A artı birden başlatacağım.
+
+117
+00:16:44,436 --> 00:16:49,876
+B nereye kadar gelecek? Yine E eleman sayısına kadar girecek. B arfa arka olacak. Tamam.
+
+118
+00:16:59,796 --> 00:17:25,115
+Tamam. Bunu da şarttık. Şimdi ne olacak? Üçüncü indeksime geldim. Üçüncü iksime ne olacak? İstersen buraya, hatta istersen öyle. Buraya da bu sorun olacak. B'nin bir sonu kimden devam edecek? O zaman C eşittir de diyeceğim. B artı bir deyip, C nereye kadar gelsin? E sayıya kadar. C artı artı. Tamam.
+
+119
+00:17:26,228 --> 00:17:29,367
+Bunları tanımmadık. Tabi yukarıda hemen tanımlamayı unutmayacağız.
+
+120
+00:17:30,967 --> 00:17:34,608
+A bir gün, B bir gün, C değil. Tamam.
+
+121
+00:17:36,128 --> 00:17:38,347
+Şimdi biz arama şeyini başlatıyoruz.
+
+122
+00:17:40,108 --> 00:17:43,947
+Değil mi? Bu bunu gösteriyor, bu bunu gösteriyor, bu bunu gösteriyor diye düşünüyoruz.
+
+123
+00:17:44,307 --> 00:17:50,168
+Şimdi buradaki benim atam önce şeyim ne olacak? Ben bu her bir isimini önce bir kare eleni hesaplaman gerekecek.
+
+124
+00:17:50,508 --> 00:17:52,148
+Yani kare elini önce benim bir tutmam lazım.
+
+125
+00:17:52,511 --> 00:17:56,692
+O zaman buna ne derim mesela? X diyelim. X neye eşittir olacak?
+
+126
+00:17:59,811 --> 00:18:05,851
+Ereyim. A'nın karesi olsun. Bu birinci elemanın karesi olsun.
+
+127
+00:18:08,551 --> 00:18:11,791
+Y'ye, şöyle hatta kopyalım daha rahat olur.
+
+128
+00:18:14,791 --> 00:18:16,672
+B'nin karesi olsun.
+
+129
+00:18:20,276 --> 00:18:24,276
+Z'de C'nin karısı olsun.
+
+130
+00:18:25,276 --> 00:18:27,276
+Hemen şeyi tanımayalım.
+
+131
+00:18:30,276 --> 00:18:32,276
+Şimdi ne yaptım ben?
+
+132
+00:18:35,700 --> 00:18:45,960
+Arama işlemini gerçekleştirmek için gerekli 3 for yazdım. For yazdıktan sonra hangi işlem yapmam gerekecek? Ben acaba bu ararken her bir döngüde
+
+133
+00:18:47,100 --> 00:18:57,600
+karelerin toplamı yani bir tanesinin karesinin diğer ikisinin karesinin toplamına eşitliği diye kontrol etmem lazım. Tamam, kara alma işlemini de gerçekleştirdim. Şimdi kontrol ürünü yazmam lazım.
+
+134
+00:18:57,811 --> 00:19:24,231
+Burada sonuçta bir sıralı dizi yok. Yani herhangi bir eleman, herhangi bir eleman karesini toplamıp herhangi bir eleman eşit olabilir. Yani ne demek istiyorum? Burada 3 tane if koşulu olacak. x eşit eşittir. Acaba y artı z eşit mi? Veya y eşittir x artı z eşit mi? Veya z eşittir x artı y'ye mi?
+
+135
+00:19:26,612 --> 00:19:38,192
+Yani burada ben bir arama işlemini gerçekleştirdiğinde, yani mesela burada 3, 4, 5 var değil mi? Bu, yani bu x'e denk geliyor mesela, işte y artı z'ye denk geldi gibi düşünebiliriz.
+
+136
+00:19:39,971 --> 00:19:45,352
+Tamam, eşit mi diye baktık. Eşit ise ne yapacağız? Bir tane count değişkeni tanımlayalım hatta.
+
+137
+00:19:47,751 --> 00:19:49,471
+Kaç tane varı bulmak için?
+
+138
+00:19:58,099 --> 00:20:25,400
+Önüklük, bunu unuttuk, güzel. Olur öyle arada. Tamam, count ney olsun bizim? Kaç tane varsa eray üçlüsü, onun sayısını tutalım. Daha sonra yazalım. Ne diyelim burada? İşte şu eleman üçlüsü, bir psikolojisi oluşturmaktadır gibi bir şey diyebiliriz burada. Ne diyelim burada? Şöyle bir şey alalım.
+
+139
+00:20:27,700 --> 00:20:29,500
+başıncı olsun şöyle.
+
+140
+00:20:33,395 --> 00:20:36,155
+C, piso gol eti, c.
+
+141
+00:20:39,284 --> 00:20:40,784
+Şöyle bir şey yok.
+
+142
+00:20:48,627 --> 00:20:50,067
+şeker, ne?
+
+143
+00:20:55,188 --> 00:21:02,428
+Açıncıyı zaten burada arttırmaya başladı. Yani bir tane varsa bu arttıracak. Şimdi bir daha bu gelirse ikinci, üçüncü şekline devam edecek. Şimdi buraya ne yazacağız?
+
+144
+00:21:05,328 --> 00:21:07,348
+Hangi elemanları bulduysak biz buraya?
+
+145
+00:21:17,779 --> 00:21:20,600
+Şimdi ne yaptık biz burada? Başa alıyorum şimdi.
+
+146
+00:21:21,360 --> 00:21:22,900
+Bir dizim vardı.
+
+147
+00:21:23,160 --> 00:21:27,759
+Bu diziyi ben 3 for ile dönüyorum tüm elemanların tüm kombinasyonunu bulabilmek için.
+
+148
+00:21:28,019 --> 00:21:33,900
+Ve her bir arama işleminde kara alma işlemlerini yapıyorum. X, Y, Z'yi buluyorum.
+
+149
+00:21:34,160 --> 00:21:40,560
+Ve bu X, Y, Z'nin herhangi bir tanesinde karelerin toplamı diğerine eşit olayım diye kontrol ediyorum.
+
+150
+00:21:40,560 --> 00:21:42,620
+Kontrol ettim ve buldum.
+
+151
+00:21:44,211 --> 00:21:54,211
+Kontrol ettik bulduktan sonra gelip buraya şudur ve şey budur deyip yazıyorum. Eğer bulamazsam, şimdi en son ki for'a geleceğim.
+
+152
+00:21:54,211 --> 00:22:03,211
+Mesela aradım aradım arkadaş bulamadım. O zaman diyeceğim ki if eşittir diyeceğim. Count eşit eşittir. Sıfır ise
+
+153
+00:22:08,884 --> 00:22:09,884
+realloc, realloc, fb.
+
+154
+00:22:12,384 --> 00:22:17,283
+Maalesef, cancağızım yok. Cancağızım yoktur diyeceğim.
+
+155
+00:22:20,483 --> 00:22:27,483
+Ve en sonda da, main abimiz üzülmesin diye de return 0'ı dönüp, programı sonlandıracağım.
+
+156
+00:22:27,483 --> 00:22:33,483
+Şimdi bir deneyelim mesela, acaba bir hatamız yani, kod san anlamadı değil de mantıksan anlamadı. Evet, şurada bir neyimizi yazmadık.
+
+157
+00:22:40,180 --> 00:22:41,180
+Ya of.
+
+158
+00:22:42,680 --> 00:22:45,680
+Python dersine çıkıp buraya gelince, f'leri unutuyorsun.
+
+159
+00:22:46,480 --> 00:22:47,180
+Tamam.
+
+160
+00:22:47,980 --> 00:22:49,480
+Şuraya şey atan nasıl yapıştırmışım.
+
+161
+00:22:49,680 --> 00:22:51,180
+Beş elemanlı olsun diyelim.
+
+162
+00:22:51,980 --> 00:22:57,180
+Ne olsun mesela beş, sekiz, bir, üç.
+
+163
+00:22:57,395 --> 00:23:23,915
+4 olsun mesela. Birinci psikor üçlüsü ne? 5, 3, 4 şeklini, yani 3, 4, 5, 3 kini olarak bulabiliriz. Hatta birden fazla halini bakalım bulabiliyor mu? Yani birden fazla psikor üçlüsü bulunsun. Kaç eleman olsun? 10 eleman olsun. Yine 5 diyelim. 2, 3, 4. Ne var? Bir de 5, 12, 13 var yanlış hatırlamıyorsam. 12, 25, 23, 5, 12, 13 öyle.
+
+164
+00:23:24,723 --> 00:23:30,723
+Ne olsun? 7, 9 gibi bak.
+
+165
+00:23:30,723 --> 00:23:37,723
+İşte birinci pisarörü düşüşümüz 5, 3, 4, ikinci pisarörü düşüşümüz 5, 12, 13 şeklinde bir çift elde ettik.
+
+166
+00:23:37,723 --> 00:23:40,723
+Acaba hiç şey olamazsa onu da verecek mi?
+
+167
+00:23:42,723 --> 00:23:48,723
+5 eleman olsun. 3, 4'ü vermeyelim. 5'i vermeyelim.
+
+168
+00:23:51,059 --> 00:23:52,740
+Maalesef ön cihazım yoktur dedik.
+
+169
+00:23:53,779 --> 00:23:58,660
+Şey kabaca bu arkadaşlar. Bu kodu tabii daha şey halinde de yazılabilir.
+
+170
+00:24:00,660 --> 00:24:03,259
+Karmaşıklı daha düşük bir şekilde de yazılabilir.
+
+171
+00:24:03,779 --> 00:24:08,259
+Çünkü mesela siz 3. sınıfta algoritma analizinde bir ders göreceksiniz.
+
+172
+00:24:08,460 --> 00:24:14,880
+Orada bir problemin birden fazla şekilde kodu yazılabilir.
+
+173
+00:24:16,539 --> 00:24:17,900
+Aklınıza gelmeyecek şekilde.
+
+174
+00:24:19,059 --> 00:24:46,240
+Mesela burada 3 tane arka arkaya for kullanmak zorunda kaldık. Bu for sonuçta her bir for döngüsü bu programın çalışma süresini arttırır döngüden dolayı. Ne kadar uzatacak, ne kadar iç içe döngü olursa o kadar uzatacak. Bunun karmaşıklığı artar. Bazen zorunlu mudur, zorunlu olur. O ayrı. Ancak zorunlu olmadığı durumlarda kodun ne kadar basic veya karmaşıklığı, döngü sayısını az veya ne kadar yazısız daha okunaklı ve daha anlaşılabili ve karmaşıklı düşük olur.
+
+175
+00:24:47,059 --> 00:24:49,220
+Ama şu an böyle bir şey düşünmenize gerek yok.
+
+176
+00:24:49,759 --> 00:24:52,939
+Şu an kodumuz çalıştı mı çalıştı, istediğim şeyi verdi mi verdi, tamam.
+
+177
+00:24:53,839 --> 00:24:54,379
+Sıkıntı yok.
+
+178
+00:24:56,220 --> 00:24:57,980
+Şey buydu arkadaşlar, birinci soru buydu.
+
+179
+00:24:58,099 --> 00:24:59,779
+Siz de çok yormamıştır zaten.
+
+180
+00:25:00,839 --> 00:25:06,879
+Dizi mantığı olsun, değişken şey yapma olsun, kullanıcından alma, verme şeklinde böyle güzel bir giriş yapalım dedik.
+
+181
+00:25:07,699 --> 00:25:10,059
+Şimdi asıl şeylerimiz...
+
+182
+00:25:30,644 --> 00:25:31,284
+Çocca.
+
+183
+00:25:41,268 --> 00:25:47,087
+Evet arkadaşlar, geldi mi? Pointy-to-corrosuna giriş yapıldı değil mi? [öğrenci] tarafından.
+
+184
+00:25:57,779 --> 00:25:59,320
+Teşekkür ederim [öğrenci].
+
+185
+00:26:02,640 --> 00:26:06,779
+Tamamdır, güzel. Konusuna giriş yapılmışım. O zaman ikinci sorumuz da neydi?
+
+186
+00:26:06,779 --> 00:26:12,380
+Pointr Gozu'nun hızlı bir tekrar yapacağız. Burada anlamına mutlaka sorabilirsiniz.
+
+187
+00:26:13,779 --> 00:26:22,380
+Bu zamana kadar bir sürü programlama yazdınız. Değişkenler tanımladınız. Bu değişkenlere bazı değerleri atadınız. Değişkenlerin değerlerini değiştirdiniz gibi işlemler yaptınız.
+
+188
+00:26:22,612 --> 00:26:30,612
+Tabii siz bu işlemleri yaparken aslında bellek tarafında da bir işlem gerçekleşiyor. Bu değişkenler dediğimiz, bu diziler dediğimiz bir bellekle RAM'de tutuluyor.
+
+189
+00:26:31,612 --> 00:26:38,612
+Ancak tabii RAM dediğimiz nasıl bir yapı var? Bir adresi var ve o adresin bulunduğu yerde sizin belirttiğiniz değerler var.
+
+190
+00:26:38,612 --> 00:26:46,612
+Şimdi önüneşmiş şurada pointer konusu olduğu için burayı yazarak zaman kaybetmek istemiyorum. Önemli bir konu şimdi pointer konusu.
+
+191
+00:26:48,051 --> 00:26:51,051
+Bir tane var diye bir değişken tanımladık. Değeri de 20.
+
+192
+00:26:51,551 --> 00:26:55,051
+Şimdi biz bu değişken tanımladığımızda ne yapıyoruz? Belliğe gidiyor.
+
+193
+00:26:56,051 --> 00:26:58,028
+Şöyle bir rem belli olsun.
+
+194
+00:27:06,867 --> 00:27:11,467
+Gidiyor, var değişkeni, integer şeyden ne kadar 4 byte yer kaplıyordu.
+
+195
+00:27:11,987 --> 00:27:17,627
+Bunun mesela adresi 16, buradaki şeyler de 16 byte, şöyle arkadan geldiğini düşün 16 tane.
+
+196
+00:27:17,627 --> 00:27:19,927
+0.4 olsun diyelim buranın adresi.
+
+197
+00:27:21,207 --> 00:27:24,528
+Burası ne olsun? 0.008.
+
+198
+00:27:24,528 --> 00:27:28,627
+Geliyor, var değişkeni şu kısmı 20 değere atanıyor.
+
+199
+00:27:29,387 --> 00:27:31,187
+Bu 4 byte'lik yer alanına.
+
+200
+00:27:31,923 --> 00:27:58,683
+RAM bölgesinde. Siz bir değişken tanımladığınızda, bu değişkenin sonuçta değeri ve adresi saklanması gerekiyor bellekle. Çünkü biz adresine ulaşacağız, değerini değiştirmek istiyiz, bir şeyler yapacağız. Bunun sonuçta bir yerde saklanıyor. RAM değişti. Bu integer dediğimiz ne tipte bir sayı oluşturuyorsak, onun byte'lık şey kadar yer açılıyor. Integer'da 4 byte yer kapladığı için 4 byte'lık bir yer açılıyor RAM'de ve o adrese gidip değer yazılıyor. Okey, sıkıntı yok. Tamam hocam.
+
+201
+00:27:59,059 --> 00:28:02,599
+Güzel, sen oraya oluşturdun, değeri de atalım, tamam, adresini de biliyoruz.
+
+202
+00:28:02,599 --> 00:28:12,559
+Şimdi biz bu, bu belle, C programı dilinde en önemli şeyden biz, bu belle kullanımı kolaylığı anlamındadır ve ulaşılabilmesi anlamında.
+
+203
+00:28:13,460 --> 00:28:19,839
+Ben bu adresdeki, o var değişken, acaba adresine ulaşabilir miyim? O adresine ulaşıp, oradaki değerle ilgili bir işe yapabilir miyim?
+
+204
+00:28:20,159 --> 00:28:26,059
+Kısmı için bir pointer tanımlamamız gerekiyor. Pointer dediğimiz bir işaretçi. Ne işaretçisi? Adresi işaret ediyor.
+
+205
+00:28:26,759 --> 00:28:31,799
+Mesela ben bir sayı tanınmadığımda ne yapıyorum? O sayı bir eşittir sayı demem gerek.
+
+206
+00:28:31,940 --> 00:28:37,119
+Yani ben hani integer bir şey tanımlıyorsam, gidip integer bir değer atamam. Gidip buraya char veya string bir şey atamam.
+
+207
+00:28:40,084 --> 00:28:45,844
+pointer'ımda bir adresçi ise, bir işaretçi ise, onun da değeri ne yapmam lazım? Bir adres atamam lazım.
+
+208
+00:28:47,284 --> 00:28:53,604
+Peki adres atama işlemi nasıl? Hatta şu bir önceki örnekte de ne demiştik? Biz bu hani scan ettik şu şeyi direkt hani...
+
+209
+00:28:53,683 --> 00:29:11,044
+Ezbere yazıyoruz ama buradakilerin biz aslında ne yapıyorduk? O aldığımız değeri, mesela 20 sayısı olsun, bu E sayısının RAM'deki o tanımlandığı adresi git, şu adres almayı sağlıyor. Orayı o değere atla işlemini yapıyor. İşte burada da ben bu IP işaretçisine diyorum ki sen artık
+
+210
+00:29:11,311 --> 00:29:22,711
+var değişkeninin RAM'deki adres bölgesini işe tutuyorsun. Orayı işaretliyorsun diyoruz. Tamam. IP diyor ki, tamam abi, ben var değişkenin adresini gösteririm artık diyorsun.
+
+211
+00:29:23,611 --> 00:29:30,071
+Buradaki çıktığı da ne olacak o zaman? Burada var değişkenin adresi olacak. İşte buraya da var değişkenin normal içindeki değer yazılacak.
+
+212
+00:29:30,071 --> 00:29:37,991
+Tamam. Ben IP'de artık ne tutuyordum? Şunun adresini tutuyordum. Ben bu IP'yi direkt kendisine yazdırırsam
+
+213
+00:29:38,099 --> 00:30:01,579
+IP'nin o sakladığı adresi yazar. Yani içinde ne tutuyorsa. Ama tamam ben adresi tutuyorum ama bu adresi niçin tutuyorum zaten o değere ulaşmak için tutuyorum. Tamam o değeri nasıl yazdırabilirim hocam? Başına yıldız işareti koyarak o işaretçinin sakladığı adresi gidiyor ve onun içinde nasıl bir değer varsa onu bize döndürüyor. Eğer biz şu dönemde.
+
+214
+00:30:02,291 --> 00:30:07,971
+Ben bir integer bir değişkenin adresini tutmak istiyorsam o zaman integer pointer tanımlamalıyım.
+
+215
+00:30:08,031 --> 00:30:12,611
+Yani ben neyin bir adrese gideceğim ya pointer'larda bu zaten ortak. Bir adrese gideceğim.
+
+216
+00:30:12,891 --> 00:30:20,351
+Ama o adrese ben nasıl bir değer almak istiyorsam pointer'ımı da o tipte tanımlamam gerekiyor ki birbirine atama işlemi yaptığında bir sıkıntı olmasın.
+
+217
+00:30:22,091 --> 00:30:26,131
+Tamam. Şimdi mesela bunu yazdırdığımızda nasıl bir şekilde elde etmemiz gerekiyor? Hemen bakalım.
+
+218
+00:30:26,740 --> 00:30:34,240
+Birincide şey neydi? Var değişkenimizin adresi. İşte şöyle bir hexadecimal şeyinde bir adresimiz var. Tamam.
+
+219
+00:30:35,420 --> 00:30:41,680
+İşaretçinin değeri ne diyor? PTR şu an biz bir işaretçi iki farklı şekilde tanımlayabiliriz.
+
+220
+00:30:41,740 --> 00:30:50,140
+Ya direkt null atarız veya boş bıraktığımızda o da zaten sıfır atayacak. Tamam. Bu şekilde iki farklı şekilde tanımlayabiliriz pointer'ımızı.
+
+221
+00:30:50,576 --> 00:31:03,276
+Daha sonra buraya gelen ne yazdık? Şeyi yazdırdık. Neden ona? Şu an boş olduğu için, en iyi bir atama yapmadığımız için 0-0 yazdırdık. Daha sonra şurada bir atama işlemi gerçekleştiriyor. Yani ne diyor? Var değişkenin adresini artık tutuyorum ben IP değişkenim de diyor.
+
+222
+00:31:03,859 --> 00:31:09,459
+Bu var değişkenimizin adresi neymiş? Şuydu zaten ve içindeki değeri de buydu.
+
+223
+00:31:09,459 --> 00:31:17,459
+Şimdi ben bu ip işaretimi atama yaptığımda, direkt onu yazdığımda ne görmem gerekiyor? Bu var değişkeninin adresini görmem gerekiyor.
+
+224
+00:31:17,459 --> 00:31:24,059
+Görüyorum demek ki atama işlemleri doğru gerçekleştirdi. Tamam o zaman onun içindeki değeri gitti dediğimde 20'yi görmem gerekiyor. 20'yi görüyorum.
+
+225
+00:31:25,059 --> 00:31:30,259
+İşte en basic şekilde pointer'ın ana mantığı, niçin kullanıldığının şeyi budur arkadaşlar.
+
+226
+00:31:31,443 --> 00:31:51,044
+Yine çok kısa şeyi göstermek istedim de, tamam hocam, bir tane değişkenim bulursun, ben o değişkeni atarım, şeyi bulurum. Peki ben bir dizi saklıyorum örneğin. Yani ben dizinin adresine ulaşmam lazım, oradaki elemanlara bir şeyler yapmam lazım, bunu nasıl yapabilirim kısmı ise, önüne şöyle bir tane dizi tanımlandı diyelim.
+
+227
+00:31:52,180 --> 00:31:57,940
+Şöyle ekstra da bir bilgi vereyim. Normalde mesela diziniz çok boyutlu olsun. Daha çok boyutlu da çok elemanlı olsun.
+
+228
+00:31:57,940 --> 00:32:01,660
+Ve saymaya üşeniyorsunuz dizinin acaba bu kaç elemanlı gibi gibi.
+
+229
+00:32:01,660 --> 00:32:04,220
+Hani ekstra bir bilgi olarak söylüyorum bu örnek için değil de.
+
+230
+00:32:04,220 --> 00:32:08,059
+Şu var dizimiz var ya, bunun size of dediğinde bu...
+
+231
+00:32:08,756 --> 00:32:33,776
+İşte her bir integer değer saplıyor ya, her bir integer'ım da benim neydi? 4 byte'di. İşte bu video hesapta kaç elem var? 3 elem var, 4, 12. 12 bölü birincinin boyutuna 4. 12 bölü 4'ten 3, işte benim dizimin boyutu 3 elemandadır gibi. Hani kısa bir size of da yani o dizinin bu toplam boyutunu ve bir elemanın boyutunu da bulabilirsiniz. Bu hazır fonksiyonla tamam mı? Bu ekstra bir bilgiyle devam ediyorum.
+
+232
+00:32:34,451 --> 00:32:44,352
+Şimdi biz burada ne yaptık? Bir değişkenin adresini almak istediğimizde şu şekilde işaretçime biz atam eşlemini gerçekleştirdik. Tamam hocam, sıkıntı yok.
+
+233
+00:32:44,872 --> 00:32:50,012
+Peki ben bir dizimi nasıl, yani dizinin sonucu başlangıç yerine gitmem lazım. Bunu da iki farklı şekilde yapabiliriz.
+
+234
+00:32:50,012 --> 00:33:02,012
+Ya direkt aynı şey değişken atam eşlemi yapıyormuş gibi başını yazabilirsiniz veya az önce öğrendiğimiz gibi bu birinci elemanının şu şekilde adresini vererek
+
+235
+00:33:02,384 --> 00:33:06,884
+Yine atam işlemi gerçekleştirebilirsiniz. İkisi de aynı anlamına geliyor burada.
+
+236
+00:33:07,884 --> 00:33:14,384
+Tamam, burada mesela ne yapalım? Dizime işte her birine manacım ulaşıp ulaşmadığımı burada görmek istiyorum.
+
+237
+00:33:14,384 --> 00:33:18,684
+Ve bir de biz mesela normal klasik programda bir integer bir sayı düşünün.
+
+238
+00:33:18,684 --> 00:33:22,684
+A eşitleri 5, a artı artı dediğimizde ne yapıyor? A'nın değerini bir arttırıyor.
+
+239
+00:33:22,684 --> 00:33:24,364
+Ama biz bir pointer...
+
+240
+00:33:25,172 --> 00:33:51,812
+Art art art yaptı dediğimizde ne oluyor? Biz sonuçta integer pointer olduğu için ve integerları da 4 byte yer kapladığı için mesela birinde adres 004 ise ptr'nin ilk adresi bir sonraki ben arttır dediğimde 8'e gider. Bir sonraki saklanan değerin adresine gider. Yani 4 byte. Ne saklıyorsam, ne tiple saklıyorsam onun boyutu kadar arttırır. Art art dediğimde normal integer şeydeki gibi normal programlar gibi artı 1 değildir.
+
+241
+00:33:52,884 --> 00:34:19,663
+Tamam. Mesela güzel, sayılarda güzel denk geldi. Mesela sıfırıncı değerin adresi neymiş? 00.00'a denk gelmiş. Son ikisinden gidiyorum. Onun değeri. Tamam. Ben bir sonraki elemanı gittimde neydim? Şurada art art yaptığımda ne demiştim? Artı bir olmayacak. Intelc'de değer setlediğim için 4x saklıyor ve o zaman ne olacak? Artı 4 ekleyeceğim. Adresi gördüğünüz gibi art 0.4 oldu. Bir sonraki gittimde de 0.8 oldu.
+
+242
+00:34:20,659 --> 00:34:26,799
+Bu şekilde de bir önceki örnekli bir değişken üzerinden gidiyorduk. Diziyi de aslında yine bir değişken olarak düşünebilirsiniz.
+
+243
+00:34:27,179 --> 00:34:38,179
+Bunu sıfır ince elemanla göstertirim ben pointer'a, yani dizinin başlangıç adresine. Ondan sonra arttıra arttıra dizinin her bir elemanına ulaşıp artık ne işlem yapmak istiyorsak o işlemleri gerçekleştirebiliriz.
+
+244
+00:34:39,359 --> 00:34:45,579
+Bu iki soruda anlaşılma bir şey var mı? Yani genelde hızlı bir tekrar yaptık. Zaten bunları görmüştünüz. Bir tekrar alacağız size de.
+
+245
+00:34:46,996 --> 00:34:54,315
+Şimdi asıl pointer konusunu anlatmamın sebebi bu üçüncü soruyla ilgili. Onu da şöyle bir kapatayım.
+
+246
+00:34:56,596 --> 00:34:58,115
+Asıl şey burası.
+
+247
+00:34:58,931 --> 00:35:26,851
+Şimdi soru da ne diyor? Bir laboratuvar var diyor. Kimyasa deney yapılıyor ve bu kullanılan şeylerin kısa kodları kayıt altına alınıyor. Tamam. Bu laboratuvar görevlisi elindeki kodların içerisinde belirttiği alt kod, örneğin NA, CL aranması gerektiğini söylüyor. Elimizde de iki girdi varmış. Bir tanesi büyük ana girdi. Mesela NA, CL, K şıkkında olabilir diyor. Aranacak alt kod CL ise NA, CL içinde CL dizi olmadığını oldu sanki. Tamam şunu demek.
+
+248
+00:35:26,931 --> 00:35:41,731
+Yani ben bir girdim var, tamam mı? Bir string girdim var. Başka bir küçük alt girdi daha var, subsisting gibi düşünün. Bu subsisting bu ana girdin içinde bir yerde bulunuyor mu? Bulunuyorsa da hangi indekste ilk defa görüyor? Yani benim mesela girdim şöyle olsun.
+
+249
+00:35:46,612 --> 00:35:52,731
+Ne olsun mesela? Mesela Fenerbahçe olsun, tamam mı? Benim girdim Fenerbahçe.
+
+250
+00:35:53,684 --> 00:36:07,923
+İki cingon olsun, bach olsun. Yani bu bach, bu an'a girdiğimde bulunuyor mu? Bulunuyorsa kaçıncı indeks? Yani 0, 1, 2, 3, 4, 5, 5. indekse bulunuyor diyeceğiz. Bu bach, subsc. ana işlemimiz burada bu.
+
+251
+00:36:08,788 --> 00:36:30,507
+Bu soruda sorumlu olmak istedim. İki tane girdi alacağız. Bu girdileri daha sonra attakini üstteki sırayla tarayacağız. Acaba geçiyor mu? Geçtiğse tam birinci geçiyor. İlk soruda ben ne demiştim? Soru bu tarz hayatınızın her anlamına gelecek. Bir problem gelecek karşınıza. Koda başlamadan önce bir algoritmak olarak düşüneceğiz. Ne yapalım? Kapat alsak.
+
+252
+00:36:30,900 --> 00:36:44,020
+Biliyorsunuz, şimdi burada düşüneceğimiz ne? Önce bir tane iki tane girdi alacağız. Dizi tanımlayıp o karakterli girdileri alacağız. Tamam dizilere ekledik bunları. Daha sonra yine bir arama işlemi gerçekleşeceğiz. İki dizi arasında.
+
+253
+00:36:44,788 --> 00:37:07,728
+Onun sıfır indeks ile bunun sıfır indeks ile 1 ile 1 ile 0 gibi böyle bir arama işlemi gerçekleştip, acaba tamamı yani bir eşleşme mesela B ile B burada eşleşti ama burada mesela C olsaydı o eşleşmeyecek. Hani bahın tamamıyla bunun devamını eşleşme gibi şimdi kodla daha net anlatacağım gibi bir kapatarsak bir şey yapmamız gerekiyor burada. Tamam.
+
+254
+00:37:08,403 --> 00:37:16,403
+İki tane dizi tanımlamış olanım burada. Bir tanesi text izin olsun, dizisi olsun. Mesela bunun olacak, çar tipinde olacak. Karakter karakterler yazılmıyor.
+
+255
+00:37:16,403 --> 00:37:25,403
+Text izin olsun. Mesela burada bu şekilde tanımlama değil de, buraya define ile tanımlamamız gerekiyor. Orayı bir daha şimdi yazmadım. Daha doğru olur.
+
+256
+00:37:26,403 --> 00:37:30,403
+Print app'de metni girin dedik. Tamam, textimizi girdik. Penelbahçe diye girdik.
+
+257
+00:37:31,347 --> 00:37:39,787
+Daha sonra Arancak dizisine girin diyor. Bach'ı da girdik. Tamam. Bunları ne yaptık? Bu diziyi atadık. Bunda bir sıkıntı yok. Bunlar zaten bildiğiniz şeyler.
+
+258
+00:37:41,787 --> 00:37:52,507
+Veya hatta Char, özür dilerim. Siz Pointer dizisi şeyinde, string, char dizisi şeklinde bir şey gördünüz mü şu ana kadar?
+
+259
+00:37:54,420 --> 00:38:04,179
+Yani normal integer'da integer değer alıp, o integer diziye değerler atama yapabiliyorduk. Yine char dizisi olarak char şeklinde bir atama ve eleman girişimi yaptınız mı?
+
+260
+00:38:04,179 --> 00:38:07,460
+Pointer'lı olur veya pointer'lısız olur fark etmez.
+
+261
+00:38:10,260 --> 00:38:11,860
+Gördük hocam, süper.
+
+262
+00:38:12,780 --> 00:38:17,260
+Tamam, bu şekilde dizimize o...
+
+263
+00:38:17,396 --> 00:38:26,396
+Karakterlere tek tek girdik ve char şimdi nasıl integer 4 byte değer kaplıyorken char dizimizin elemanları 1 byte değer kaplıyor. O yüzden hani 1 arttırdım daha des 1 artacak.
+
+264
+00:38:27,396 --> 00:38:35,396
+Tamam. Şimdi şuralara girmeden önce benim şöyle bir 2 tane dizim var. Kapatalım tekrar açalım.
+
+265
+00:38:36,396 --> 00:38:38,396
+Daha temizli bir sayfa olsun.
+
+266
+00:38:40,396 --> 00:38:42,396
+Tamam şöyle 2 tane dizim var.
+
+267
+00:38:56,596 --> 00:38:58,135
+Çok güzel şeklini çizip.
+
+268
+00:39:00,175 --> 00:39:03,516
+Şimdi ne olsun bu? Gerçi kısa kaldı ama neyse.
+
+269
+00:39:09,907 --> 00:39:12,708
+Devam edelim. Siz orada anlarsınız zaten.
+
+270
+00:39:14,987 --> 00:39:18,467
+Bu şekilde devam etti benim dizim. Buna da ne olsun? Bak olsun.
+
+271
+00:39:20,867 --> 00:39:24,148
+Tamam. İki tane dizim var. Şimdi ben bu iki diziyi
+
+272
+00:39:25,588 --> 00:39:30,148
+ne yapmam lazım? Sonuçta pointerla gezmem, dolaşmam gerekecek.
+
+273
+00:39:31,268 --> 00:39:35,427
+Şu dizime ben dizimi gösteren bir tane
+
+274
+00:39:35,860 --> 00:39:49,099
+Pointer tanımlıyorum. Neyimi tanımlamışım? Ptr diye bir şey tanımlamışım. Bunun da şeyini atamışım. Txedizsini atamışım. Bunu ya Txedirek olarak yazabilirsiniz veya şurada gördüğünüz gibi ilk elemanın şeklinde boyunca. Bu tamamen size kalmış bir şey.
+
+275
+00:39:50,760 --> 00:39:59,980
+Bu bunu gösterdi. Daha sonra ben bu işaretçiyle buradaki elemanları karşılaştırıp acaba bir eşleşme var diye bakmam gerekiyor değil mi? Ancak aynı zamanda eşleşme ararken
+
+276
+00:40:00,000 --> 00:40:15,000
+Bunu da kaybetmemem gerekiyor. Çünkü bulamadığımda bunun artık son iki indeksi buraya geleceği için bunu kaybetmemem gerektiği için bunu bir temp değişikliği daha oluşturma. Bu temp aram işlemini yapsın, işi bitsin, bunu ben bir arttırım. Bu başlangıç indeksini kaybetmemem gerekiyor.
+
+277
+00:40:16,000 --> 00:40:22,760
+Tamam. Şimdi aram işlemine başlıyorum. Ne yapmam lazım? Ben bu ptr, şu ptr diyorum.
+
+278
+00:40:25,556 --> 00:40:33,376
+Bütün dizide olaşacak ya. Bu dizilerin, mesela sen 100 boyutlu tanımladın değil mi? Bu arada 100 elemanı tanımladın ve 7, 8 eleman girdin diyelim.
+
+279
+00:40:35,175 --> 00:40:44,036
+Elemanlarını girdikten sonra geri kalan o 92 kısmı şu end of 16 dediğimiz, yani o hani dizinin artık şeyi bitti daha eleman yok burada dediğimiz bir şey atılır.
+
+280
+00:40:45,396 --> 00:40:51,536
+Sembol atılır. Hem burada diyorum ki dizinin sonuna kadar devam et. Gidebildiğin yer, eleman gördüğün yere kadar devam et. Tamam.
+
+281
+00:40:52,019 --> 00:40:56,019
+Bu ne ama temp değil. Şimdi gideceğiz, tamam, sıkıntı yok.
+
+282
+00:40:56,019 --> 00:41:00,519
+Şimdi bu arama işlemini yaparken ise bir temp değişkenim olacak. Bu temp değişkenim ne yapacak?
+
+283
+00:41:00,519 --> 00:41:04,519
+Sürekli bu arama işlemini gerçekleştirecek. Dediğim gibi bu başlangıç şeyini kaybetmemem gerekiyor.
+
+284
+00:41:04,519 --> 00:41:11,019
+Diyorum ki, temp artı, şu an i sıfırdan başlatıp arama işlemini gerçekleştiriyorum.
+
+285
+00:41:11,019 --> 00:41:18,519
+Temp artı, yani temp artı ne oldu? Şu an birinci indeksiyim, f. Acaba pattern'ın
+
+286
+00:41:19,380 --> 00:41:28,380
+i'incisi değil. Normalde bu ana yaptığımız işlemi illa işaretçi olmak değil. Burada biz pattern i nasıl diyoruz? Yani birinci dizinin elemanı diye.
+
+287
+00:41:28,380 --> 00:41:34,380
+Bunda da yine aynı şekilde yapıyorduk ama burada işaretçi ile dizi arasındaki işlemi göstermek için işaretçi kullanıyoruz burada.
+
+288
+00:41:34,380 --> 00:41:42,155
+Temparti i diyorum. Şu an i'im ne bileyim? 0f. Pattern i'yi eşit mi? Yani 0. eşit mi? Değil.
+
+289
+00:41:44,403 --> 00:42:09,644
+Burada bir işlem yapalım o zaman. Geri geldim bir daha. Şu an pattern'ı da şeyini bir arttırdım. Şuraya geldim şu an. E'ye geldim. Tamam. Yine bunu tempo atadım. E artı sıfır B'ye eşit mi? Değil. Pattern'ı bir arttırıyorum yine. Geldim buraya. Bu şekilde devam edeceğim. Buraya anladınız zaten. Şu B'ye gelelim şimdi. Tamam.
+
+290
+00:42:10,547 --> 00:42:35,427
+Temp artı i. Artık benim pattern'ım buraya geldi. Çünkü eşleştim, baktım, baktım, baktım, hiç daha birincisiyle eşleşmedim. B'ye geldim. Aa, B ile eşleştim. Tamam. B ile eşleştim. Güzel ama B'nin de daha, yani bu ikinci dizinde daha tüm elemanla ben baktım mı diye bakıyorum. Daha bakmamışım. Hala sonda dedim. Demek ki hala eşleşme var mı diye bakacağım elemanlarım duruyor.
+
+291
+00:42:35,956 --> 00:42:57,736
+Tamam. O zaman i'yi bir arttırıyorum. Temp artı i diyorum. Yani a'ya geldim artık. A'm benim i'yim bir olduğu için pattern i'ye bir ile eşleşiyorum. Güzel eşleşti ama hala sonunda değilim. Tamam oğlum. i'yi bir arttırıyoruz yine. Temp buraya geldi. Temp artı i buraya geldi.
+
+292
+00:43:00,500 --> 00:43:10,759
+Buranın ikincisiyle eşleşiyor mu? İkinci index ile eşleşiyor mu? Eşleşiyor. Ve artık şu an sonda mıyım? Şu an sonunda değilim. Hala sonunda değilim. Burayı gösteriyor çünkü.
+
+293
+00:43:11,879 --> 00:43:20,759
+İ1 arttırıyorum. Ç buraya geldi. Ç artık bununla eşleşiyor mu? Eşleşmiyor. Şeyden çıkıyorum.
+
+294
+00:43:22,899 --> 00:43:26,479
+Pattern artı İ'yimden oldu. Ben İ'yi 1 arttırmıştım. Artık buraya geldi.
+
+295
+00:43:26,963 --> 00:43:35,724
+pattern i'm artık, enterostrip mi? Evet. Demek ki ben o ikinci dizimde tamamını dolaşmışım. Tamam o zaman ne yap? Count'unu bir arttır.
+
+296
+00:43:35,724 --> 00:43:44,124
+Şimdi biz burada da ne yapmışız? Kaçıncı indeksi olduğunu bulmamız lazım değil mi? Ben bu ptr değişkenini niye hiç bozmadım?
+
+297
+00:43:44,124 --> 00:43:53,124
+Çünkü o şeydeki indeksi neyse, şuradaki kaçıncı indekse denk geliyorsa o benim aslında başlangıç indeksim.
+
+298
+00:43:54,036 --> 00:43:58,776
+Değil mi? Tamam. Ptr'yi buldum. Texte neydi benim?
+
+299
+00:44:01,036 --> 00:44:06,216
+Texte o bahçemin, yani bah şeyimdi. Neden ona?
+
+300
+00:44:07,316 --> 00:44:10,196
+Özür dilerim ya. Sen dur yanlış yazdın buraya.
+
+301
+00:44:16,467 --> 00:44:18,467
+Tamam, tamam, şimdi oluyor. Ben dedim, ne işi oluyor?
+
+302
+00:44:18,967 --> 00:44:22,167
+Şimdi benim şu ana dizim var ya, bu ana dizimin şu ana indeksi var.
+
+303
+00:44:22,167 --> 00:44:25,768
+Bu tx'nin adresini, yani tx dediğinizde benim başlangıç adresim.
+
+304
+00:44:26,067 --> 00:44:30,268
+ptr dediğimle şurada en son durduğumuz yer, ilk bulduğumuz yer.
+
+305
+00:44:30,467 --> 00:44:35,167
+İşte bunun adresinden, bunun adresini çıkartırsam, kaçıncı indeks olduğunu bulurum?
+
+306
+00:44:35,167 --> 00:44:41,167
+Yani burası mesela sallıyorum 16, 0, 0, 0 geliyor 16. Burası da sıfırıncı indeksim.
+
+307
+00:44:42,356 --> 00:45:09,336
+Arada kaç şey olacak? 1 gelecek, 2 gelecek, 3 gelecek, 5. indekste bulduğunu diyecek. Çünkü arada 4 byte'lik yer kaplıyor ya. İşte o indeksinde benim 5. indekste olduğumu gösterecek. Başa alıyoruz. Biraz karmaşık gelebilir başa. Biraz burası yoğun olduğu için başa alıyorum şu an. İki tane dizim var. Elemanlarını aldığım sırayla. Birinci dizim, ikinci dizim. Tamam, girdik indekslere.
+
+308
+00:45:10,612 --> 00:45:27,572
+Şimdi bunun bir ana PTR var. Bu PTR, bu text, yani ana ilk dizi kelimenin başlangıç adresini gösteriyor. Tamam, sıkıntı yok. Ben bunun sonuçluğu bu arama işlemleri gerçekleştirme tamamını arayacağım için bu while'le sona gelene kadar bu arama yaptıracağımı söylüyor. Okey, bir sıkıntı yok.
+
+309
+00:45:28,628 --> 00:45:55,307
+Ancak bu aramışlarım ve programımın başlangıçlarını de kaybetmemem gerekiyor. O yüzden her bir adım ilerlediğimde bunu bir tempo atıyorum. Tempo, ikili aramalara baksın. Tamam. Temp ile bakıyorum. Temp artı iyim. Benim neye geldi? Şu an f'teyim. F ile pattern i'yi kontrol ediyorum. B ile bir eşleşme var mı? Yok. Tamam. Ptr'yi bir arttırıyorum. Hala sona gelmedim. E'ye geldim. Bunu da tempo atadım.
+
+310
+00:45:55,956 --> 00:46:01,396
+Temp artı iyim şu an benim bir şeye denk geliyor mu? Eşleşme var mı? Yok. Böyle böyle böyle geldim B'ye.
+
+311
+00:46:03,376 --> 00:46:11,715
+B, yani ne olur temp atadığımda, B artı sıfırdan, yani daha doğrusu B artı, temp artı iyim şu an sıfırlı.
+
+312
+00:46:12,276 --> 00:46:16,076
+B ile B buradaki eşleşti mi? Sıfırıncısı ile sıfırıncısı ile eşleşti mi? Eşleşti.
+
+313
+00:46:16,076 --> 00:46:20,715
+Daha sonra i'yi bir arttırdığımda A ile petim bir eşleşti mi? Eşleşti.
+
+314
+00:46:21,268 --> 00:46:27,928
+İyi yine 1 arttırdım. Hele heyle mi eşleşti? Evet. İyi 1 arttırdığımda eşleşmıyor. Burada da sona geldim.
+
+315
+00:46:28,888 --> 00:46:35,508
+Şey sıfırla. Tamam. Ben şeyimi buldum. Tamam. Şimdi burada ben ne istiyorum?
+
+316
+00:46:37,172 --> 00:46:43,391
+Kaç tane geçti? Yani kaç tane altı indeks var ve kaçıncı indeksi olduğunu aramaya çalışıyorum.
+
+317
+00:46:43,391 --> 00:46:47,851
+Bir tane count değişkenim var diyelim. Bunu bir arttırıyorum. Güzel bir tane buldum.
+
+318
+00:46:47,851 --> 00:46:52,851
+Adresini de bulurken de ben burada sonuçta...
+
+319
+00:46:54,547 --> 00:47:15,247
+4 byte 4 byte gidiyorum ve şuradaki ptr'yi sonuçta burada kaybetmedim. Hala tutuyorum. Ptr'yi ben size bu template arama yaptığım için ptr'nin yeri değişmiyor. Bu ilk bulduğum yerde duruyor ptr. Başlangıç indeksine teksti. Ben bu sonuçta ptr yazdırma ve teksti yazdırma da yol aslında bir adres miyim var? Bu adresini birbirine çıkarttığımda işte o başlangıç indeksini bulabilirim.
+
+320
+00:47:16,407 --> 00:47:19,767
+Tamam hocam, iyi güzel, hoş dediğinde çalışıyor mu kodunu, o kadar konuştum diyeceksin.
+
+321
+00:47:25,300 --> 00:47:28,240
+Arkadaşlar, arkadan olsun, fenerbahçe diyelim.
+
+322
+00:47:29,260 --> 00:47:30,380
+Bah diyelim.
+
+323
+00:47:31,260 --> 00:47:37,080
+Adresim bu, şeyim de bu. Gördüğünüz gibi beşinci indekste geçiyorum.
+
+324
+00:47:37,080 --> 00:47:46,720
+Buna her birisi çalar bir byte olduğu için, işte beşinci gördüğünüz gibi burada beşinci en sonu beş, şeyinci de sıfır.
+
+325
+00:47:46,720 --> 00:47:51,920
+Bundan bunu çıkarttığında ne olur? Beş kalır. Beşinci indekse geçtiğini görelim ve bir tane geçiyormuş.
+
+326
+00:47:52,148 --> 00:48:20,148
+şeklinde bu soruyu böyle çözebiliriz arkadaşlar. Var mı bununla sormak istediğiniz bir şey? Bu biraz daha karmaşık. Hani burada an arama kısmı şu kısmı yazabilmek, şu algoritma şeyini yazabilmek. Yani iki dizi arasında bir temp değişikleri bir arama yapıyorum. 10 eşitme, 10 eşitme. Eşitse devam et, devam et. Ne zamanki, sonuçta bütün şu ikinci dizdeki elemanları görmem gerekiyor ve artık bitmesi gerekiyor. Tamam, görene kadar devam et, eşit olana kadar ve...
+
+327
+00:48:20,148 --> 00:48:28,367
+Bittiğinde de bitir. Bitirdikten sonra ne yapalım? Bunlar eşleştir. Eşleştir. Tamam. O zaman adres ne yapacağım? Çarp.
+
+328
+00:48:28,820 --> 00:48:38,840
+pointer'la daha sonra charl'la dizileri bir byte'ler kapladığı için bu işi şurada bitiyor. Bununla da en başlangıç adresini çıkartırsam benim o indeksimi bulabilirim.
+
+329
+00:48:38,840 --> 00:48:48,800
+Ya kaç indeks olduğunu yazabilirim. Tabii bu kodları ben hem uygulama videosu zaten online yıldızda durur. Kodları da paylaşacağım ben sizlerle. Ya [öğrenci]'yle paylaşırım. O sizinle paylaşır.
+
+330
+00:48:48,840 --> 00:48:51,940
+Veya benim AVSİ sayfama koyarım. Orada paylaşın.
+
+331
+00:48:53,331 --> 00:48:59,331
+Bugün arkadaşlar, yaklaşık 1 saat sürün uygulamamız bu şekildeydi.
+
+332
+00:48:59,331 --> 00:49:18,188
+Burada ne yaptık önce? Diziler olsun, değişkenler olsun, oraları da döngüler olsun, bir arama algoritması yapıp, diziler içinde bir arama algoritması yapıp, acaba üçlü şeyimiz var mı diye bir kontrol yaptık. Döngüler, if şeyleri gibi. Daha sonra...
+
+333
+00:49:18,612 --> 00:49:36,052
+C programlamanın en önemli avantajı olan pointer konusu işlemi var. Pointer konusunu gerçekten arkadaşlar iyi öğrenin. Bu videoyu da tekrar izleyebilirsiniz veya başka kaynaklardan izleyebilirsiniz. Çünkü bundan sonra çok önemli daha dersler göreceksiniz. Ben bunu size BBG'de ilk uygulamada da diyordum.
+
+334
+00:49:37,012 --> 00:50:00,000
+Yeni başlamıştınız döneme, bir bxr kodlama nedir, bak nerelere geldiniz. Şimdi yine öyle olacak. Daha neler neler göreceksiniz. Veri yapıları var, algoritma analiz var. Daha bu bir kodlamanın hem bellek tarafında olsun hem işlenme tarafında olsun bir üstü şeyler öğreneceksiniz. Ancak hepsinin en tabi de pointer konusu. Her yerde kullanılıyor.
+
+335
+00:50:00,000 --> 00:50:07,000
+C'de artık olmadığı yer ya pointer'ın. O yüzden bu konuyu da çok iyi çalışmanızı ve öğrenmenizi tavsiye ediyorum sizlerle.
+
+336
+00:50:07,000 --> 00:50:12,000
+Dediğim gibi kodları ve şeyleri paylaşacağım. Hem bu uygulamayı tekrar izleyerseniz başka kaynaklardan da çalışabilirsiniz.
+
+337
+00:50:12,000 --> 00:50:19,000
+Yararınız olur. Bu şekilde inşallah dönem boyunca uygulamalarda yine görüşeceğiz. Haftaya ilk labınız olacak.
+
+338
+00:50:19,000 --> 00:50:20,000
+Yine labda.
+
+339
+00:50:20,692 --> 00:50:29,692
+Bu gördüklerinizden olacak. Daha da 3 gruba ortak bir lab olacağı için ortak bir konu bazında bir soru oluşturacağız sizlere.
+
+340
+00:50:31,011 --> 00:50:33,431
+4 uygulama, 4 lab var bu dönem.
+
+341
+00:50:34,871 --> 00:50:38,891
+İnşallah sorunsuz bir şekilde, iyi bir şekilde şeyi tamamlarız.
+
+342
+00:50:39,251 --> 00:50:41,951
+Dönemi tamamlarız. Var mı genel anlamda sormak istediğiniz bir şey?
+
+343
+00:50:43,971 --> 00:50:46,251
+Yoksa ben dinlediğiniz için teşekkür ederim sizlere.
+
+344
+00:50:51,123 --> 00:50:53,003
+Onu hocam...
+
+345
+00:50:56,211 --> 00:50:58,211
+Tempin bu farkı olu...
+
+346
+00:50:58,211 --> 00:51:00,211
+Ne istedim saniye, şu an...
+
+347
+00:51:00,320 --> 00:51:25,260
+Temp'in bir farkı oluyor. Temp'in o başlangıç, PTR'yi kaybetmemem gerekiyor. Temp ile ben sürekli arama yapacağımla bir daha o PTR neredeydi, benim başlangıcım nereydi kaybetmemem gerekiyor. O yüzden PTR'yi sabit tutup Temp ile aramaları devam ettim. Laplar online olacak. Classroom konusunda hocalarınızla bir konuşacağız. Yani classroom'da mı şey yapın yoksa başka bir duyuru şeyini. Bu hafta size herhangi bir şeyin duyuru yapılır mutlaka. Laplar online olacak.
+
+348
+00:51:26,643 --> 00:51:53,303
+Onda da yine bir toplantı linki paylaşılacak sizlere. Siz oraya katılacaksınız. Daha sonra yüksek ihtimalle ödev dosyanızı yüklemeniz için bir Google Form oluşturacağız sizlere. Onda yine linkler şınlatacağız. O konuda çok dert etmeyin. Oraya yükleyeceksiniz ödev dosyalarınızı. Burada şeyi de paylaşacağız sizlere arkadaşlar. Cümlemi hep en başında onu söylemişim. Kod bir şekilde yazılır.
+
+349
+00:51:53,648 --> 00:51:58,648
+Ancak kodun yazılabilme şey için bir kural demeyeyim de.
+
+350
+00:51:58,648 --> 00:52:03,648
+Hani o şekilde de yazılı mesela şurada, 1.sorada yapmıştık ya mesela for sure int.
+
+351
+00:52:03,923 --> 00:52:07,923
+i şeklinde de yazabilirsin bunu. Ancak yazmayacaksın. Bunlar puan kırılır.
+
+352
+00:52:07,923 --> 00:52:15,923
+Break, continue, bunu zaten bbg'de az buçuk deneyimlemişsiniz. Break, continue, go to, int, i şeklinde.
+
+353
+00:52:15,923 --> 00:52:23,923
+Onu yine bir dokümanla paylaşırsınız. Genel olarak uyguladığımız kurallar anlamında. Normalde bir kod gönderiyorsun, full.
+
+354
+00:52:24,115 --> 00:52:34,516
+Tam istediğin şey, çıktığı veriyor. Ama kodu bir açıyorsun, hayda onu da kullanmış, onu da kullanmış, sonra vay hocam ne 85 aldım gibi. Her biri mesela 5-10 puan kırılıyor. Bunlar bu kadar önemli şeyler.
+
+355
+00:52:34,516 --> 00:52:44,016
+Bu şeylerin, kodun doğru çalışıyor. İstediğin gibi ben sonra soruyu sormuşum, çıktı da bu olsun demişim, sen de çok güzel çıktığı vermişsin. Ama hocam ney yüzü anladım. Bu da bir şey.
+
+356
+00:52:44,980 --> 00:53:09,320
+Yine öyle bir genel bir doküman, itirazlarınızı nereye yapacaksınız, ödevlerinizi nereye, ödev diyorum, laplarınızı nereye yükleyeceksiniz gibi bir şey paylaşacak sizlerle inşallah bu hafta. Böyle bir giriş yaptık arkadaşlar. İnşallah verimli olmuştur sizler adına da. Ben dinlediğiniz için tekrar teşekkür ederim. Ödev yok yanlış bilmiyorsam arkadaşlar. Onu paylaştığım hocalar size ödev yanlış bilmiyorsam yok. Yine Yunus Ermi Hoca'ya sorarsanız çarşamba günü. Laplar online.
+
+357
+00:53:10,612 --> 00:53:15,172
+Naptlar yine haftaya bu saat, saat 2'de online olacak.
+
+358
+00:53:20,467 --> 00:53:21,667
+Bu şekilde arkadaşlar.
+
+359
+00:53:22,687 --> 00:53:24,307
+Ben dinlediğiniz için teşekkür ederim.
+
+360
+00:53:25,887 --> 00:53:29,687
+Haftaya LAP'ta görüşmek üzere diyorum hocalar. Hepinize iyi günler.

@@ -1,0 +1,1723 @@
+1
+00:00:03,124 --> 00:00:56,851
+Günaydın arkadaşlar.
+
+2
+00:01:00,531 --> 00:01:01,231
+Günaydın.
+
+3
+00:01:02,311 --> 00:01:07,171
+Bağlantıda bir sorun var mı acaba? 11 kişi katılabilmiş şu an için.
+
+4
+00:01:11,859 --> 00:01:16,179
+2-3 dakika daha bekleyelim arkadaşlar. Sonra dersimize başlarız. Tamam mı?
+
+5
+00:04:26,644 --> 00:04:35,423
+Tekrar merhaba arkadaşlar. Şu anda dersimize 24 kişi katılmış gözüküyor. Sesim geliyor değil mi?
+
+6
+00:04:37,723 --> 00:04:38,504
+Gayet net hocam.
+
+7
+00:04:38,504 --> 00:04:39,624
+Tamamdır.
+
+8
+00:04:39,644 --> 00:04:40,144
+Evet hocam.
+
+9
+00:04:41,144 --> 00:04:52,944
+Tamamdır. Öncelikle geçen hafta dersle alakalı genel bir giriş yapmıştık. Dersle alakalı olarak işleyeceğimiz kitap.
+
+10
+00:04:53,343 --> 00:05:01,343
+Geçen hafta tanıttığımız gibi onu tekrar bir göstereyim. Onun pdf'leri rahatlıkla, elektronik...
+
+11
+00:05:03,343 --> 00:05:04,343
+Pardon.
+
+12
+00:05:11,124 --> 00:05:28,604
+Elektronik Devices and Circuit Teori. Kitabın yazarı Ballstep arkadaşlar. Onunla alakalı görsellere bakarsak kitabın en azından çeşitli baskıları var arkadaşlar. Adı Elektronik Devices and Circuit Teori şeklinde geçiyor.
+
+13
+00:05:30,324 --> 00:05:46,624
+Çeşitli, bunun Türkçeleştirilmiş versiyonu da var aynı şekilde. PDF olarak da bulunabiliyor diye düşünüyorum. Bunun slide'larını paylaşacağım zaten sizinle beraber. Bundan takip edersiniz. Sorularla alakalı ayrı slide'lar paylaşacağım.
+
+14
+00:05:46,624 --> 00:05:54,624
+Bunun haricinde, geçen hafta yaptığım tanıtımdan sonra bir basit giriş yapmıştık.
+
+15
+00:05:55,379 --> 00:06:04,100
+Bugün ona devam edeceğiz. Sizlerin soruları var mı ders başlangıcıyla alakalı olarak, kayıtlarla veya diğer konuyla alakalı olarak?
+
+16
+00:06:06,120 --> 00:06:17,480
+Şimdi dersimizi elektronik devreler dersine nasıl değerlendireceğimizi kısaca bir hatırlatmak istiyorum.
+
+17
+00:06:23,187 --> 00:06:44,467
+Şöyle ikiye ayıracak olursak, yıl sonu şeklinde. Yıl sonu sınavımız %40, yıl içi %60 olarak belenecek. Yıl içinde nelerimiz var? Bir tane vize, bir vizemiz var. Bu da 11 veya 12. haftalarda olacak.
+
+18
+00:06:48,788 --> 00:07:03,668
+Ödevlerle alakalı simülasyon ödevlerimiz olacak. Üçüncü olarak da laboratuvarlar. Laboratuvarlar iki araştırma göre tarafından yürütülecek. Burak Ahmet Özden.
+
+19
+00:07:08,915 --> 00:07:14,036
+Ve de ikincisi de Emre Parlak tarafından yürütülecek.
+
+20
+00:07:14,796 --> 00:07:18,635
+Bununla alakalı olarak bir mail atmıştım size. Elinize geçti mi?
+
+21
+00:07:18,635 --> 00:07:25,316
+Bizim genel kullandığımız elektronik devrelerle alakalı.
+
+22
+00:07:27,196 --> 00:07:29,656
+Lojik burada, elektronik burada.
+
+23
+00:07:30,387 --> 00:07:53,347
+Kişilere bakalım. Kişileri geçen döneminkileri boşaltmıştık. 51 öğrenci kayıt olmuş durumda. Bununla alakalı olarak, bu dersle alakalı olarak linki de ben sizinle paylaşmıştım. Bu gruba aynı zamanda üye olmak istiyorsanız arkadaşlar G2OSTQ5.
+
+24
+00:07:54,548 --> 00:08:10,888
+Sınıf kodundan da yararlanabilirsiniz. Eğer şu anda sizlerin sınıf şeyi varsa beraber paylaştığınız, şu chat kısmına tekrar bir yapıştırayım.
+
+25
+00:08:10,888 --> 00:08:20,888
+Bu klasruma üye olmakla alakalı olarak WhatsApp'tan falan paylaşırsınız. Çünkü duyurular...
+
+26
+00:08:21,684 --> 00:08:39,043
+Burak Ahmet Özden tarafından bu gruptan yapılacak. Buradan işte laboratuvarlarla ilgili, simülasyon programlarla ilgili bütün paylaşımları buradan takip edebileceksiniz arkadaşlar.
+
+27
+00:08:39,043 --> 00:08:48,624
+Üye olmayan var mı aranızda? Bununla alakalı olarak elektronik devrelerin Classroom.
+
+28
+00:08:49,008 --> 00:09:14,688
+Üyeliğiyle alakalı mail gelmiş miydi arkadaşlar sizlere? [öğrenci]? Mail yoktu. Mail gelmedi mi size? Yok canım. Bence ben de mail görmedim. Bir daha bakayım. Bir bakar mısınız? Olmadı. Şimdiden bir daha kopyalayalım, atalım bunu da. En azından arkadaşlar.
+
+29
+00:09:19,668 --> 00:09:21,107
+WhatsApp attım hocam ben.
+
+30
+00:09:21,768 --> 00:09:28,447
+WhatsApp attım mı? Tamamdır. Ben de buradan bütün gruba atmış olayım.
+
+31
+00:09:32,596 --> 00:09:52,516
+Bakalım gelecek mi size? Önce onu bir deneyelim. Ders işlemleri, verilen dersler içerisinde 90 kişiyiz. Kullanıcı işlemleri, gönderilen mesajlar diyeyim. Elektronik devrelerle alakalı Classroom üyelik linki göndermişim arkadaşlar.
+
+32
+00:09:56,516 --> 00:09:59,076
+Hocam bana gelmiş daha önce.
+
+33
+00:10:00,000 --> 00:10:18,160
+Geldi değil mi? Evet, 2 Mart'ta gözüküyor. Tamam. Gelmişse bunun üzerinden üyelikleri tekrar yapabilirsiniz. Whatsapp'tan da gönderdiyseniz tamamdır. Elektronik Devreler Grup 1. 22.32 gönderilmiş. Tamamdır arkadaşlar.
+
+34
+00:10:24,788 --> 00:10:38,548
+Classroom'dan kaç kişi? 50 kişi üye olmuş. 90 kişilik bir şeyimiz var. Bütün herkese gitmiş olması lazım. 52 öğrenci girmiş.
+
+35
+00:10:39,427 --> 00:10:51,327
+Tamamdır arkadaşlar. Dediğim gibi laboratuvarlarla ilgili duyurular da yine Burak Ahmet Özlem ve Emine Parlak tarafından yapılacak.
+
+36
+00:10:51,764 --> 00:11:08,144
+Onlara biz sadece sınıf listelerini gönderiyoruz. Onlar bize dönem sonunda lab artı proje ile alakalı bir not dönüşünü bunlar. Bunlarla biz ilgilenmiyoruz. Ben ödevler ve vize ile ilgileneceğim arkadaşlar.
+
+37
+00:11:10,783 --> 00:11:35,504
+Yıl sonunda bir tane final sınavımız olacak. Aynı şekilde artı bütünleme şeklinde. Final sınavımız bütünlemeye göre çok daha kolay olacaktır. Bütünlemede biraz daha zor süreriz. Önemli olan finalde herkesin adil bir şekilde geçebilmesi. Mütlere bırakıp ekstradan zaman tanımak isteyen arkadaşlar için şimdiden bir uyarıda bulunmuş olayım.
+
+38
+00:11:36,724 --> 00:11:39,724
+Evet, şu ana kadar sorsu olan var mı arkadaşlar?
+
+39
+00:11:42,423 --> 00:11:54,804
+Tamam. Şimdi geçen hafta basit bir giriş yapmıştık. Biz elektronik devreler dersine niye ihtiyaç duyuyoruz? Elektronik devreler bizim için niçin önemli?
+
+40
+00:12:03,296 --> 00:12:26,196
+Karitalarına benzetelim şöyle. Dış dünya yani analog dünya bizim yaşadığımız sürekli verilerin bulunduğu dünyayı düşünebilirsiniz. Yani ses işareti, sizin görme duyularınızla iletildiğiniz görüntü. Bunu niye sürekli olarak tanımlıyorum arkadaşlar?
+
+41
+00:12:26,803 --> 00:12:41,144
+Çünkü şu anda bir sınıfta olsaydık mesela benim sesim sizin kulaklarınıza zamanın her anında sürekli olarak gelecekti.
+
+42
+00:12:41,144 --> 00:12:51,624
+Bunu bir boyutlu işaret olarak düşünecek olursak, iki boyutlu işaretler cinsinden insan görme sisteminden bahsediyoruz.
+
+43
+00:12:54,836 --> 00:13:18,755
+Sürekli bir görüntü alıyorsunuz, beyninizde oluşturuyorsunuz. Yani standart piksellerle oluşturulmuş sayısal bir görüntü oluşmuyor. Yani mekanın burada iki boyutlu düzlemdeki veriler daha çok mekansal olarak tanımlanıyor veya İngilizcesi spatial.
+
+44
+00:13:20,851 --> 00:13:37,311
+Veya daha çok burada da yine Türkçe olarak uzamsal olarak tanımlıyor. İki boyutlu düzlemde bizim için baktığımız zaman iki boyutlu düzlemde komşuluk ilişkileri içeren bir yapı var.
+
+45
+00:13:48,320 --> 00:13:56,200
+Nokta demek bile yanlış. Her kısımda tanımlı. Her bir uzamda mekan olarak tanımlı.
+
+46
+00:13:57,360 --> 00:14:03,800
+Veya M boyutlu işaretlerden bahsedebiliriz. Örneğin tıbbi cihazlarda ne yapıyorsunuz?
+
+47
+00:14:03,800 --> 00:14:15,240
+Bir MR cihazına girdiğiniz zaman sizlerin kesitlerini her noktada alabiliyor. Bu sefer X, Y'nin yanına Z de ekleniyor.
+
+48
+00:14:16,851 --> 00:14:42,491
+Yani bizim dış dünyada elde ettiğimiz sıcaklıkları, bir termometreyi düşünün. Termometreye biz bakmasak bile ölçümlerini yapıyor, öyle değil mi? Yani burada zamana bağlı olarak her anda tanımlıyız. Peki biz bunları işleyebilmek için neye ihtiyaç duyuyoruz? Dijital yani sayısal sistemlere ihtiyaç duyuyoruz.
+
+49
+00:14:43,028 --> 00:14:58,348
+Sayısal sistemlerden kastığım işlem gücü olan, yani içerisinde mikroprosesör veya mikrocontroller olan, hafıza birimi olan bir yapıdan bahsediyoruz.
+
+50
+00:14:58,348 --> 00:15:05,028
+Yani bunu sadece desktop ve laptop diye düşünmeyin. Sizin cep telefonlarınızdan tutun da.
+
+51
+00:15:05,360 --> 00:15:20,220
+Tabletleriniz veya içerisinde mikroprosesör bulunduran ve hafızayla dış dünya verilerini işleyebilen ve kompütüng yapım içerisinde algoritma çalıştırabilen herhangi bir cihaz kompütür.
+
+52
+00:15:21,360 --> 00:15:28,180
+Şimdi biz bunu bilgisayar diye çeviriyoruz ama kompüt hesaplamak aslında. Hesaplayıcı demek daha mantıklı.
+
+53
+00:15:28,639 --> 00:15:39,639
+Biz burada işleyeceğiz. Peki bu analog dünyası bu hangi dünya? Dijital veya sayısal dünya olarak adlandırılıyor.
+
+54
+00:15:39,639 --> 00:15:53,639
+Peki burada bilgiler nasıl? Hafızadan da siz de bilirsiniz. Artık discrete yani ayrık dünyaya geçmiş oluyor. Veriler ayrıklaştırılıyor.
+
+55
+00:15:54,676 --> 00:15:59,436
+Peki bu dünyadan bu dünyaya geçerken neye ihtiyacımız oluyor?
+
+56
+00:16:00,155 --> 00:16:04,235
+Örneğin ses sinyalini bilgisayarda kaydetmek istiyoruz.
+
+57
+00:16:04,235 --> 00:16:10,076
+Önce bir sensör, yani algılayıcı ihtiyacı var.
+
+58
+00:16:10,216 --> 00:16:14,936
+Bu ne mesela? Bir mikrofon, öyle değil mi? Ses sinyallerinin alındığı.
+
+59
+00:16:15,716 --> 00:16:20,176
+Veya iki boyutlu veriler için düşünecek olursak,
+
+60
+00:16:20,596 --> 00:16:48,396
+Bir analog fotoğraf makinesi, analogdan dijitale denişli, sayısal fotoğraf makinesi de olur. Bilgiler geliyor burada, ne yapılıyor? Ya böyle film şeritlerine kaydediliyor veya tarayıcılarla bu film şeritleri kaydediyor veya sayısal fotoğraf makinesi her ikisini birden yapıyor. Odağına gelen bilgiyi alıyor, pikseller şekline getiriyor.
+
+61
+00:16:48,596 --> 00:17:11,056
+Burada bir dönüşüm var. Veya bir MR cihazı, burada görmüş olduğunuz bir MR cihazı da bizim sensörlerimiz aslında. Öyle değil mi? Yani dış dünyadaki herhangi bir büyüklüğü alıp, işleyip, sayısallaştıran yapının ilk baştaki kısmı sensör kısmı.
+
+62
+00:17:13,971 --> 00:17:33,951
+Şurada mesela mikrofon örneği üzerinden gidecek olursak ses işareti bu şekilde. Yeterli mi? Yani burada hala elektriksel bir işarete dönüşse de bizim neye ihtiyacımız var arkadaşlar ayrık dünyaya geçebilmemiz için?
+
+63
+00:17:37,587 --> 00:17:56,387
+Evet, örneklemi iten örneğin sıfırıncı saniye ve birinci saniye. Şu aralıkta, şu aralıkta bilgiler sonsuz. Sıfırla sıfır beş arasında da sonsuz. Çünkü zamanın her anında tanımla oradaki değişim.
+
+64
+00:17:56,947 --> 00:18:00,607
+Peki ne yapmamız gerekiyor? Arkadaşımızın da dediği gibi.
+
+65
+00:18:01,364 --> 00:18:27,364
+Orjinal işarete olabildiğince sadık alıp örnekler almamız gerekiyor. Yani bu işaretten örnekler almamız gerekiyor. Bu tek boyutlu işaretten. İki boyutlu işaretlerde ise, yani insan görme sisteminde piksel kavramı yok ama iki boyutlu işaretlerden, yani görüntülerden ise aldığımız örneklerin adı ne olmuş oluyor arkadaşlar?
+
+66
+00:18:27,988 --> 00:18:39,488
+Bu sefer X ve Y yönünde örnekler alıyoruz. Bunlar neydi? Ne olarak adlandırılıyor bu örnekleri?
+
+67
+00:18:39,488 --> 00:18:44,988
+Sayısal fotoğrafçılıktan hatırlayın. Bu örnekler nelerdi?
+
+68
+00:18:49,236 --> 00:18:56,936
+Evet, [öğrenci]. Ne diyoruz iki boyutlu bilgi kaynaklarından alınan örnekleri?
+
+69
+00:19:01,811 --> 00:19:05,971
+Yani aklıma gelmedi hocam ayrı bir anda sence.
+
+70
+00:19:07,371 --> 00:19:15,172
+Tamam, başka bir arkadaşa soralım. [öğrenci]. Hepinizin bildiği kavramlar.
+
+71
+00:19:15,471 --> 00:19:17,031
+Hocam bir daha soruyu tekrardan alabilir miyim?
+
+72
+00:19:17,031 --> 00:19:21,031
+Yani iki boyutlu bir veriye sayısallaştırırken.
+
+73
+00:19:21,935 --> 00:19:29,056
+Nasıl ki ses işaretlerinden örnekler alıyorsak, iki boyutlu gerçek görüntüler üzerinde de örnekler alıyoruz.
+
+74
+00:19:29,255 --> 00:19:30,496
+Örneklemeler alıyoruz, aynen.
+
+75
+00:19:31,056 --> 00:19:32,935
+Evet, bu örneklere tat veriliyor.
+
+76
+00:19:33,935 --> 00:19:38,295
+Yani, F-S ile işaretliyorduk sanki hatırlıyorsam ama hani bölüyorduk sürekli.
+
+77
+00:19:38,295 --> 00:19:41,835
+Hatta böldükçe bazı şeylerden verimlilik, bazı şeylerden kayıp oluyordu.
+
+78
+00:19:42,771 --> 00:19:56,831
+Ne deniyor iki boyutlu görüntülerde? Mesela sayısal fotoğraf makineleri veya sizin telefonunuz ne yapıyor? Dış dünyadaki sürekli bir görüntüyü saklayabilmek için yaptığı işlem neydi ilk başta?
+
+79
+00:19:57,632 --> 00:19:59,871
+Terimsel olarak sampling değil değil mi?
+
+80
+00:20:00,132 --> 00:20:06,931
+Yani bir nevi sampling. Bunlar ne diyor? Aldığı her bir sample'a X ve Y koordinatlarında.
+
+81
+00:20:08,564 --> 00:20:09,724
+Piksel değil mi hocam?
+
+82
+00:20:10,084 --> 00:20:11,004
+Evet, piksel.
+
+83
+00:20:11,903 --> 00:20:12,824
+Değil mi? Piksel.
+
+84
+00:20:14,084 --> 00:20:19,403
+Ama daha anlatımı kolay olsun diye şu anda ses işareti üzerinde gidiyoruz.
+
+85
+00:20:19,403 --> 00:20:27,403
+Peki biz bu örnekleri alırken geniş geniş de alabiliriz veya çok sık alabiliriz.
+
+86
+00:20:29,084 --> 00:20:29,463
+Öyle değil mi?
+
+87
+00:20:30,804 --> 00:20:34,384
+Burada Muhlis, sana soralım.
+
+88
+00:20:34,923 --> 00:20:35,664
+[öğrenci].
+
+89
+00:20:36,276 --> 00:20:47,596
+Eğer çok sık örnek alırsak, sayısal bir sisteme geçerken, bunun sağlayacağı avantaj ve dezavantaj nedir bizim için?
+
+90
+00:20:49,155 --> 00:20:52,236
+Avantajı gerçeğe daha yakın bir şeyle etmiş oluruz.
+
+91
+00:20:52,236 --> 00:21:02,996
+Avant yani ses işaretine, işarete daha yakın bir işaret almış oluruz. Yani onu daha iyi örneklemiş, daha orijinale yakın bir işaret.
+
+92
+00:21:03,423 --> 00:21:06,543
+Saklamış olacağız. Dezavantajı ne olur?
+
+93
+00:21:06,543 --> 00:21:11,723
+Ama sakladığımız şey artacağı için de saklama alanından kaybedeceğiz. Daha çok belli.
+
+94
+00:21:11,824 --> 00:21:18,124
+Yani hafıza olarak daha fazla alana ihtiyacımız olacak. Daha fazla nokta var çünkü.
+
+95
+00:21:18,784 --> 00:21:27,503
+Bir de algoritmik açıdan, mikro işlem gücü açısından, mikro kontrolü daha fazla veri noktası ile uğraşacağı için.
+
+96
+00:21:28,051 --> 00:21:49,932
+Hesapsal, computational kompleksli de artacak aynı şekilde. Peki, [öğrenci]'a soralım. [öğrenci], peki seyrek almanın dezavantajı ne? Aynı şuradaki gibi seyrek seyrek örnekler aldık. Şuradaki kısım gibi. Bunun avantajlı dezavantajı nedir?
+
+97
+00:21:55,955 --> 00:21:57,375
+Geliyor mu sesi [öğrenci]?
+
+98
+00:22:00,175 --> 00:22:01,715
+Sesiniz geliyor hocam.
+
+99
+00:22:02,435 --> 00:22:02,695
+Evet.
+
+100
+00:22:04,055 --> 00:22:06,115
+[öğrenci], dinliyor musun bizi?
+
+101
+00:22:06,635 --> 00:22:07,855
+Dinliyorum hocam.
+
+102
+00:22:08,455 --> 00:22:11,515
+Evet, seyrek örnek almanın dezavantajı nedir?
+
+103
+00:22:12,775 --> 00:22:20,035
+Seyrek örnek almanın dezavantajı ayrıntıyı kaybederiz ama yerden tasarruf etmiş olabiliriz.
+
+104
+00:22:20,035 --> 00:22:22,255
+Evet, bir saniye.
+
+105
+00:22:22,644 --> 00:22:26,103
+Bölümle alakalı bir telefon aldım. Bir saniye.
+
+106
+00:22:41,844 --> 00:23:06,063
+Evet, dediğin gibi seyrek almanın dezavantajları aslında şurada da net gözüküyor değil mi? Arada önemli bilgi taşıyan değişimleri kaybetmiş olabiliriz. Öyle değil mi? Şuralarda değil mi? Oradaki değişim noktalarını kaydederiz ve sesin veya herhangi bir işaretin önemli karakteristiklerini kaybedebiliriz.
+
+107
+00:23:06,740 --> 00:23:11,779
+Eğer örnek aldığımız, örneğin şuralarda örnekler alıyoruz.
+
+108
+00:23:12,640 --> 00:23:13,779
+Orjinal işaretten.
+
+109
+00:23:14,500 --> 00:23:21,299
+Örnek alma sıklığımız, örneğin T periyodu ile örnek aldığımızı düşünelim.
+
+110
+00:23:21,400 --> 00:23:24,240
+Buralar T periyodu ile örnek aldığımızı düşünelim.
+
+111
+00:23:25,279 --> 00:23:31,360
+Peki, örnek dediğimiz için de buraya sampling, T sampling yani örnekleme periyodu.
+
+112
+00:23:34,804 --> 00:23:55,284
+Şimdi böyle bir problem, yani analogtan dijital dünyaya geçerken sensörlerle beraber elektriksel hale getirdik. Arkasından örnekleme sampling yaptık. Ama biz sonuçta burada bir sıfır, bir sıfırları kaydedeceğiz.
+
+113
+00:23:56,284 --> 00:24:01,544
+İlk soru ne? İlk mühendislik açısından ilk sorumuz ne olur mesela burada?
+
+114
+00:24:02,099 --> 00:24:13,079
+Kafanıza ne takılır? Demin verdiğim, size sorduğum örnekler, size sorduğum soruları da hesaba katarak sorun. İlk aklınıza takılan soru ne olurdu burada?
+
+115
+00:24:16,059 --> 00:24:18,039
+Periyodumuz minimum ne olmadı mı?
+
+116
+00:24:19,119 --> 00:24:19,559
+Efendim?
+
+117
+00:24:20,939 --> 00:24:23,039
+Periyodumuz minimum ne olmadı mı?
+
+118
+00:24:23,639 --> 00:24:27,079
+Evet. İlk soru şu. Biz bu T's'yi seçeceğiz ama.
+
+119
+00:24:27,700 --> 00:24:35,299
+TSE çok geniş de seçilebiliyor. Bunun zararları var. Veya çok sık seçilebiliyor. Bunun da zararları var.
+
+120
+00:24:36,039 --> 00:24:47,779
+Demek ki amacım TSE'yi yaparken olabildiğince geniş seçmek ama arada bilgi kaybını olabildiğince minimize etmek.
+
+121
+00:24:47,779 --> 00:24:54,339
+Peki, bunun için bir yöntem belirleyebilir miyim? Yani TSE'yi seçeceğim optimal.
+
+122
+00:24:55,988 --> 00:25:07,368
+Bir yöntem var mıdır? İlk aklımıza gelecek soru şu. Evet, mesela siz fotoğrafları örnekliyorsunuz piksel açısından.
+
+123
+00:25:08,148 --> 00:25:16,068
+Kullandığınız veya kullanacağınız uygulamaya bağlı olarak o piksel sıklığı ne olacak sorusuyla aynı soru aslında bu.
+
+124
+00:25:16,068 --> 00:25:21,968
+Bunun cevabını arkadaşlar Fourier analiziyle.
+
+125
+00:25:23,988 --> 00:25:35,428
+Huria analiziyle yola çıkacağız. Amacımız neydi? TSE ne olmalı? Sorumuz bu. TSE'yi optimal bir şekilde nasıl belirleyebiliriz?
+
+126
+00:25:35,428 --> 00:25:47,748
+Şimdi Huria analizi diyor ki, Huria biliyorsunuz 1800'lerin başında yaşamış. Tabi o zamanlar işaret.
+
+127
+00:25:48,127 --> 00:26:05,687
+İşleme ile ilgilenmemiş. Standart bir matematiksel, keyfi bir matematiksel fonksiyon. Yani arbitrary fonksiyonlar nasıl ayrıştırılabilir diye bir soru sormuş.
+
+128
+00:26:06,548 --> 00:26:17,188
+Fourier analizinde diyor ki matematiksel olarak keyfi herhangi bir fonksiyon, hani ben şurada ses işaretini farklı farklı çizebilirim, keyfiyi çizebilirim.
+
+129
+00:26:17,848 --> 00:26:24,888
+Ben bunları nasıl ifade edelim diye bir soru sormuş. Bunun cevabını da şu şekilde vermiş.
+
+130
+00:26:33,940 --> 00:26:48,960
+Frekans 0'dan sonsuza kadar sinizoidallerin değişik frekansların toplamı şeklinde ifade edilebilir.
+
+131
+00:26:48,960 --> 00:26:56,420
+Şuraya eşit dediğim işaret. Örneğin, ilk çizeceğim bileşen f eşittir 0.
+
+132
+00:26:56,960 --> 00:27:00,100
+f eşittir 0 ne demek? Frekansın 0 olduğu.
+
+133
+00:27:02,963 --> 00:27:28,223
+Düşük frekanslı bir işaret. Şuraya 3 nokta koyuyorum. Artı 3 nokta daha koyuyorum. Şöyle yüksek frekanslı bir işareti de çizeyim. Tabi bu daha da gidiyor. Ne dedim ben burada arkadaşlar? F0'dan başlıyor ve de bu sıfırın işaret. Aralara 3 nokta koydum. Niye 3 nokta koydum?
+
+134
+00:27:28,660 --> 00:27:54,420
+F burada sürekli arkadaşlar. Yani sıfırdan sonsuza kadar herhangi bir değer alır. Yani 1, 2, 3 şeklinde gitmek zorunda değil. 1.258 de olabilir. 1.2581 de olabilir. Yani virgülden sonra istediğinizde tanımlayabilirsiniz. Sürekli bir fonksiyon. Ben bu yüzden aralara noktaları koydum.
+
+135
+00:27:54,912 --> 00:28:10,632
+Aralarda örnekler gösteriyorum sizlere. F eşittir 0. Daha sonraki değerler, tabii ki bundan sonrası F büyüktür, 0'dan bütün değerleri alıyor. Sonsuza kadar gidiyor.
+
+136
+00:28:17,844 --> 00:28:24,024
+Ne dedik? Herhangi bir işaret sinüslerin toplamı şeklinde ifade edilebilir dedik.
+
+137
+00:28:24,744 --> 00:28:34,304
+Burada sinüsleri biraz inceleyelim. Yani sinüs kavramı nedir? Sinüs bizim için neyi ifade eder? Ona bir bakmamız lazım.
+
+138
+00:28:34,884 --> 00:28:43,984
+Herhangi bir sinüzoidal işareti nasıl tanımlarız? Önce onu sizle bir anlamaya çalışalım.
+
+139
+00:28:45,076 --> 00:29:10,675
+Sinüs işaretimizi nasıl tanımıyorduk arkadaşlar? Sinüs, parantezimizi açalım ve bir sinüsü diğer sinüsten ayıran değişkenler neler? Bir onun üzerinde düşünelim sizinle beraber. Bir sinüsü, mesela bu çizdiğim mavi sinüsü, şundan ayıran farklar nelerdir? Bir tartışalım bakalım sizinle.
+
+140
+00:29:10,963 --> 00:29:13,083
+Genlik gibi gözüküyor hocam.
+
+141
+00:29:13,603 --> 00:29:21,443
+Evet, doğru söyledin. Bir tanesi genlik öyle değil mi? Normalde sinüs kaç ile kaç arasında değer alır?
+
+142
+00:29:22,243 --> 00:29:23,144
+Eksi 1 ile 1.
+
+143
+00:29:23,803 --> 00:29:33,423
+Eksi 1 ile 1 alır. Ama başına yerleştireceğimiz bir A değişkeni değil mi? A ile eksi A. Örneğin A yerine 3 koyduk.
+
+144
+00:29:34,132 --> 00:29:40,652
+Yani bir çarptık sinüs değerini 3 ile. Hangi değerler arasında alır? 3 ile eksi 3 arasında alır.
+
+145
+00:29:40,732 --> 00:29:45,852
+Yani demek ki bunu mavi ile çizeyim şöyle. Birinci değişkenim genlik.
+
+146
+00:29:47,512 --> 00:29:54,652
+Örneğin bununki B genliğinde salınası. Tamam. Birinci değişkenim genlik.
+
+147
+00:29:54,652 --> 00:29:58,632
+İkinci değişkenimle iki sinüs arasındaki farkı belirtebileceğim.
+
+148
+00:30:00,307 --> 00:30:26,608
+İkincisi de periyod. Güzel. Periyod bir çevrimin başlığı. Çevrim derken çevrim yerine cycle kelimesinin yerine kullanıyorum. Yani sinüs biliyorsunuz tekrar ediyor aslında kendini. Ama periyodik olarak kendini tekrar ettiği bir aralık var. Buna bir çevrim deniyor. Bu çevrimin uzunluğuna periyod deniyor.
+
+149
+00:30:27,092 --> 00:30:30,432
+Peki, periyodun frekansla olan ilişkisi ne?
+
+150
+00:30:32,412 --> 00:30:33,751
+Ters orantılı mı hocam?
+
+151
+00:30:34,172 --> 00:30:40,771
+Ters orantılı, evet. Yani periyod frekansın tersi. Öyle değil mi?
+
+152
+00:30:40,771 --> 00:30:47,291
+Peki, frekansı nasıl tanımlarız bu durumda? Periyod bir çevrimin başlayıp bitti.
+
+153
+00:30:48,180 --> 00:30:59,059
+Süre olarak adlandırıyor. Yani birimi de zaman cinsinden, saniye cinsinden ifade edilebilir. Peki frekansı nasıl tanımlayabiliriz?
+
+154
+00:30:59,059 --> 00:31:07,360
+Bir saniyede oluşan doğrultu sayısı. Bir saniyede tamamlanan çevrim sayısı diyebiliriz değil mi?
+
+155
+00:31:08,051 --> 00:31:27,611
+Dolayısıyla 5 Hz. Bunun da birimi Hz arkadaşlar. Hz'i nasıl tanımlıyoruz? 1 saniyede tamamlanan çevrim sayısı. Örneğin 5 Hz'lik bir sinyal diyecek olursak, şu 1 saniye içerisinde
+
+156
+00:31:28,144 --> 00:31:44,384
+Şu çevremi 5 kere, 1, 2, 3, 4, 5 kere tamamlamış oluyor. Yani 1 saniye içinde 5 kere. 100 Hz desek, 1 saniyede 100 kez salınıyor olması demek.
+
+157
+00:31:45,604 --> 00:31:53,624
+Evet, onu nasıl ekliyoruz arkadaşlar? Onu şuraya ekliyoruz. 2P, değişik olarak F.
+
+158
+00:31:54,579 --> 00:32:15,099
+İkinci değişkenimiz bu genlikte. İkinci değişkenimiz period veya frekans olarak buraya eklendi. Bir ana değişkenimiz de T. T'ye göre değişiyor. Artı. Başka bir fark var mı?
+
+159
+00:32:20,756 --> 00:32:44,875
+Aldığımız zaman bakın bir de fas farkı denilen bir şey var. Bu işaret illa sıfırdan başlamak zorunda değil. Bu işaret böyle de olsa yine sünüstür. Öyle değil mi? Yine sünüstür, yine sünüstür. Arada ne farkı var burada gördüğünüz? Bir offset var, başlangıç offsette farkı var. Buna da fi şeklinde ifade edilir.
+
+160
+00:32:45,523 --> 00:33:07,443
+Şöyle fi diye toplamsal olarak eklenir. Buna da faz adı verilir. Peki bu faz ne cinsinden ifade ediliyor? Tam bir periyot boyu arkadaşlar 360 derece veya radyan cinsinden 2 pi'lik mesafe olarak adlandırılıyor.
+
+161
+00:33:11,539 --> 00:33:16,879
+Çizmiş olduğum işaretle, yani nokta nokta çizmiş olduğum işaretle şöyle.
+
+162
+00:33:18,039 --> 00:33:24,039
+Mavi olarak 1 ve mavi olarak çizdiğim 2 arasında kaç derecelik bir fark var?
+
+163
+00:33:27,827 --> 00:33:35,307
+Yani offset tamamı 360 derece ise şu ikisi arasındaki fark ne kadar?
+
+164
+00:33:36,907 --> 00:33:38,827
+90 derece hocam.
+
+165
+00:33:39,227 --> 00:33:48,327
+90 derece. Eğer 360 derecelik bir fark var diyorsak, 360 derecelik bir fark işaretin zaten kendisi olmuş oluyor.
+
+166
+00:33:49,487 --> 00:33:52,887
+İşaretin yarısı kadar bir fark olsaydı şöyle olacaktı işaret.
+
+167
+00:33:55,092 --> 00:34:10,972
+Bu da 90 derecelik bir fark vardı. Demek ki derece cinsinden dörtte birlik bir fark varmış. 90 derece, 360 bölü 4 dedik. 2 pi'yi 4'e bölersek radyan cinsinden pi bölü ikilik bir fark oluşmuş oluyor.
+
+168
+00:34:15,155 --> 00:34:29,815
+Noğlu işaretim, Kosünüs işareti. İki Noğlu işaretim, Sinüs işareti. Hani sizin matematikten hatırlayacağınız. Demek ki aslında Sinüs ve Kosünüs diye iki ayrı işaret yokmuş.
+
+169
+00:34:29,815 --> 00:34:39,315
+Aslında sinizoidal bir form var. Bu sinizoidal formların offsetle kaydırılmış hali veya faz kaymış hali.
+
+170
+00:34:39,891 --> 00:34:52,612
+Sinüs veya kosünüs şeklinde ifade ediliyor. Demek ki sinüs ve kosünüs birbirinden ayrı iki işaret değil, sadece fas farkı olmuş olan aynı işaretten bahsediyoruz.
+
+171
+00:34:54,291 --> 00:35:04,652
+Kosünüs ve sinüs frekansları, genlikleri aynı ama fas farkları 90 derece olan iki işaret. Bu da aklımızda kalsın.
+
+172
+00:35:07,764 --> 00:35:28,404
+Frekans kavramı neyle alakalı burada göreceğiniz gibi? Frekans kavramı bizim çevrimimizin başladık bittiği kısım. Bir bölü F şeklinde gösteriliyor. İki tane işaret çizsem şu şekilde.
+
+173
+00:35:32,884 --> 00:35:36,963
+Bunların periyotları ve frekansları hakkında bana ne diyebilirsiniz?
+
+174
+00:35:39,083 --> 00:35:42,364
+Kim söz almak ister? Her seferinde. [öğrenci] sen söyle.
+
+175
+00:35:45,972 --> 00:36:07,052
+[öğrenci]. Evet. Dersten biraz koptum da kusura bakmayın. Dersten kopacak mı oldu? Biraz geç uyandım da onun etkisi sanırım hocam. Kahvaltını yap sonra gelsin. Tamamdır hocam kusura bakmayın. [öğrenci] sen söyle.
+
+176
+00:36:13,523 --> 00:36:14,203
+Zekra.
+
+177
+00:36:18,452 --> 00:36:19,612
+Geliyor bir sesim.
+
+178
+00:36:25,043 --> 00:36:32,783
+[öğrenci] da bilgisayarını dinletiyor veya kahvaltı yapıyor herhalde. O yüzden onu rahatsız etmeyelim.
+
+179
+00:36:32,783 --> 00:36:34,163
+[öğrenci].
+
+180
+00:36:39,155 --> 00:36:44,416
+Evet [öğrenci]. Geliyor mu sesin?
+
+181
+00:36:46,355 --> 00:36:48,195
+Hocam geliyor, ben söyleyeyim.
+
+182
+00:36:48,996 --> 00:36:49,675
+Yok, [öğrenci].
+
+183
+00:36:50,775 --> 00:36:51,635
+Tamam.
+
+184
+00:36:53,395 --> 00:36:57,336
+[öğrenci]'la bir görüşelim. Arada böyle bir yoklama da yapmış oluyoruz.
+
+185
+00:36:58,315 --> 00:37:04,155
+Bilgisayarına dinletenler ve dersi dinleyenler şeklinde söyleyebiliriz.
+
+186
+00:37:05,364 --> 00:37:07,963
+Gezelim şöyle bir yer. Bir bakalım.
+
+187
+00:37:10,364 --> 00:37:12,123
+[öğrenci] sen biraz bekleyeceksin.
+
+188
+00:37:13,083 --> 00:37:15,744
+[öğrenci], sen söyle bakalım.
+
+189
+00:37:16,923 --> 00:37:20,503
+Hocam, ilkinci'nin frekansı ilkinin periyodu yüksek.
+
+190
+00:37:20,503 --> 00:37:23,943
+Evet. Şöyle de yorumlayabiliriz.
+
+191
+00:37:24,344 --> 00:37:28,784
+Bakın bir çevrim aynı işaretin başladığı bittiği yer. Yani T kısmı burası.
+
+192
+00:37:31,315 --> 00:37:42,735
+Şu kadar bir alanda t1, t2 diyelim. Dolayısıyla periyodu büyük olunca işareti 1 bölü f1'den dolayı frekansı küçük oluyor.
+
+193
+00:37:43,595 --> 00:37:51,735
+Veya periyodu küçük olunca frekansı yüksek oluyor. Yani frekansın yüksek olması demek...
+
+194
+00:37:53,972 --> 00:38:02,092
+Aynı zaman aralığında daha çok titreşmesi, daha çok çevrim yapması anlamına geliyor.
+
+195
+00:38:03,392 --> 00:38:05,972
+Buradan biraz da genel kültüre geçelim.
+
+196
+00:38:06,792 --> 00:38:16,752
+Şimdi eline konuşmaya başlayalım. Bir soru soracağım. Basit bir soru ama bakalım bilebilecek mi?
+
+197
+00:38:17,912 --> 00:38:18,792
+[öğrenci].
+
+198
+00:38:20,072 --> 00:38:20,872
+Buyurun hocam.
+
+199
+00:38:21,300 --> 00:38:32,100
+Şimdi biliyorsun biz işaretlerden bahsediyoruz genel olarak. Evimizde şeyler var, prizler var. Buradan da güç işareti alıyoruz. Öyle değil mi?
+
+200
+00:38:32,600 --> 00:38:32,840
+Evet.
+
+201
+00:38:33,440 --> 00:38:45,060
+Bu güç işareti nasıl bir işaret? Salınan bir işaret mi? Şöyle sabit bir işaret mi yoksa salınan bir işaret mi? Şöyle.
+
+202
+00:38:47,860 --> 00:38:51,780
+Güzel soru. Doğru akım değil mi?
+
+203
+00:38:52,840 --> 00:39:02,020
+Evet. Seni eledik. Adadan attık seni. Yani Elektrik Elektronik Fakültesi öğrencisi olarak olmadı bu iş.
+
+204
+00:39:03,039 --> 00:39:13,079
+Şimdi demin size anlatırken şurada ne demiştik? F0'dan da bahsetmiştik. F'in 0 olması ne manaya gelir arkadaşlar? F'in 0 olması.
+
+205
+00:39:14,164 --> 00:39:22,644
+F'in sıfır olması. F eşittir sıfırsa salınım yapmıyor demektir bu. Bunlara DC işaretlenir.
+
+206
+00:39:23,484 --> 00:39:31,484
+F sıfırdan büyük olduğu andan itibaren salınım yapıyor demektir. Öyle değil mi?
+
+207
+00:39:32,344 --> 00:39:38,984
+F sıfırdan büyük olduğu zaman salınım yapıyor. Buna da AC akım, AC işaretlenir.
+
+208
+00:39:39,315 --> 00:39:55,396
+DC arkadaşlar, Direct Current, AC ise Alternative Current. Yani doğru akım ve alternatif akım şeklindeki biraz da elektriksel değerlerle alakalı olarak adlandırılan sistemler.
+
+209
+00:39:55,396 --> 00:40:03,576
+Şimdi DC dediğimizde, DC işaretler dediğimizde zamanla beraber sabit.
+
+210
+00:40:05,139 --> 00:40:29,599
+Bir değer alan, örneğin 1.5. Mesela bize 1.5 voltu ne verir zamanla? Bir pil değil mi? Bir pilin üzerine bir volt metre bağladınız. Elektrik sinyal olarak şunu alırsınız. Zamanla tabii azalır o başka bir şey ama 1.5 voltluk pil DC gelin verir. Doğru akım verir. Peki başka bir arkadaşa soralım tekrar.
+
+211
+00:40:30,675 --> 00:40:34,336
+İpucunu aldı artık. Ezgi, sen söyle.
+
+212
+00:40:38,356 --> 00:40:42,956
+Hocam, benim aklımda hala bir şey canlanmadı sorduğunuz soruyla ilgili. Üzgünüm.
+
+213
+00:40:45,236 --> 00:40:51,496
+Evet, yok. Genel kültür zaten bu. Hani beyinde canlanacak bir şey yok. Biliyorsan zaten cevap vermeni bekliyorum.
+
+214
+00:40:51,496 --> 00:41:05,696
+[öğrenci], [öğrenci], yani biz pirizlerden nasıl bir elektrik, mesela bir pili şey yaptığımız zaman bir buçuk bu okluk bir pil var diyelim. Sabit bir gerilim alıyoruz demek. [öğrenci] sen söyleyebilir misin?
+
+215
+00:41:06,356 --> 00:41:22,716
+Prizlerden nasıl bir şey alıyoruz? Yani çok kullandığımız bir şey. Elektrik makinesi, çamaşır makinesinden tut da şu anda sizin bilgisayarınızın bağlandığı prize kadar. Değişik bir güç işareti, işaret cinsinden nasıl bir şey alıyoruz? Bir bilgin var mı? Yok artık.
+
+216
+00:41:27,284 --> 00:41:42,424
+Yok, haydi mi kahvaltıda acaba ya? Herkes geç kahvaltıya ne kadar zengin ya. Geç kahvaltılar bile böyle. Tebrik ediyor. [öğrenci]?
+
+217
+00:41:44,804 --> 00:41:49,904
+Hocam şimdi prizlerden benim bildiğim kadarıyla AC gelir. Hatta onu sonra adaptörlerle DC'ye çeviririz.
+
+218
+00:41:50,744 --> 00:41:51,004
+Evet.
+
+219
+00:41:51,635 --> 00:42:04,695
+[öğrenci], şeyi biliyor musun? Eğer bu prizlerden mesela fişlerle yaptık, bir elektriksel sinyal geliyor. Bu elektriksel sinyalin genliği ne biliyor musun?
+
+220
+00:42:07,195 --> 00:42:15,496
+Yani fişlerden sabit bir gerilim, yani AC bir işaret alıyoruz. Bu AC işaretin genliği nedir biliyor musun?
+
+221
+00:42:17,012 --> 00:42:31,172
+İpucu vereyim size. Cep telefonlarınızı şarj ettiğiniz adaptörler veya bilgisayarınızı veya monitörünüzü bağladığınız adaptörlerin üstünde bu ifadeleri çok çok görürsünüz.
+
+222
+00:42:33,872 --> 00:42:34,711
+Ben bilmiyorum ya.
+
+223
+00:42:36,612 --> 00:42:41,172
+Evet. Her şeyin başı merak arkadaşlar. Özellikle...
+
+224
+00:42:41,172 --> 00:42:41,832
+Söyleyeyim mi hocam?
+
+225
+00:42:42,771 --> 00:42:43,231
+Efendim?
+
+226
+00:42:43,692 --> 00:42:44,251
+Söyleyeyim mi?
+
+227
+00:42:44,980 --> 00:42:46,220
+Tabii, [öğrenci].
+
+228
+00:42:46,580 --> 00:42:48,200
+220 volt değil mi hocam?
+
+229
+00:42:48,420 --> 00:42:58,060
+Evet. Genellikle görürsünüz burada, adaptörlerin aksın 220 voltluk bir genliği vardır. Peki başka bir arkadaşa soralım bakalım.
+
+230
+00:43:00,460 --> 00:43:02,960
+Evet, [öğrenci]'ya soralım bakalım.
+
+231
+00:43:05,480 --> 00:43:06,660
+Evet hocam.
+
+232
+00:43:07,500 --> 00:43:10,980
+[öğrenci], 220 volt, genliğini öğrendik bunun. Peki bunun...
+
+233
+00:43:11,956 --> 00:43:33,795
+Periyodu veya frekansı nedir? Periyodu veya frekansı. Türkiye için 50 Hz hocam frekansı. Güzel. Google link yapmadın değil mi? Yok hocam, lojikten hatırlıyorum. Tamamdır. Doğru, orada da anlattım bunları aslında. Lojik alanı her arkadaşın bilmesi lazım aslında.
+
+234
+00:43:34,963 --> 00:43:46,983
+50 Hz. Türkiye için niye? Adı arkadaşımız niye Türkiye için 50 Hz dedi? Çünkü mesela Amerika'ya gitseniz oradaki bir prizde alacağınız işaretin genliği 110 volt.
+
+235
+00:43:48,324 --> 00:43:57,943
+Şey ise, frekans ise 60 Hz. Ülkeden ülkeye değişebiliyor ama Avrupa standartı genellikle 50 Hz'dir.
+
+236
+00:43:58,420 --> 00:44:20,200
+Bunu özellikle niye anlattım? Bakın aslında konumuz çok çok dağıldı. Sinizoidal işaretlerden geldi. Ama soru neydi asıl soru? Hemen unutmuyoruz. Soru buydu. T, S'yi nasıl belirleyeceğiz? Yani bir işaretten örnekle örnek alırken örneğin periyodu ne olacaktı sorusuna cevap arıyoruz.
+
+237
+00:44:21,396 --> 00:44:37,675
+Tamam, ne demiştik? Bunun cevabı Huria Analizi'ndir demiştik. Huria Analizi ne diyordu? Sinüsleri o yüzden uzun uzun anlattım arkadaşlar. Huria Analizi diyor ki herhangi bir keyfi işaret, herhangi bir işaret yani.
+
+238
+00:44:47,407 --> 00:44:59,467
+Aslında bunun atomları yani o işareti oluşturan bileşenler sinizoidal işaretlerdi. İlk işaret DC, F eşittir. DC olmak için diğerleri AC işaretlerdi.
+
+239
+00:45:00,367 --> 00:45:12,367
+Şu DC işaret işaretin ortalamasıdır arkadaşlar. Bilgi olarak vereyim. Diğer sinizoidal işaret yani AC işaretlerin ortalaması sıfırdır.
+
+240
+00:45:13,871 --> 00:45:30,371
+Bu DC işaretinin üstüne binerek bu orijinal işareti oluştururlar. Bakın, burada dedim ya, yani sonsuz sayıda işaretten oluşuyor. Yani biz bir XT işaretini şöyle yazabiliriz.
+
+241
+00:45:41,715 --> 00:45:50,435
+Sinus 2PF T artı PF DF.
+
+242
+00:45:51,315 --> 00:45:54,655
+Kısaca bu ne söylüyor artık şu konu?
+
+243
+00:45:55,315 --> 00:46:01,195
+X'te işareti frekansın sıfırdan sonsuza kadar.
+
+244
+00:46:01,195 --> 00:46:08,195
+Ufak adımlarla yapıyor ama sonsuz sürekli halde biliyorsunuz integral kullanılır.
+
+245
+00:46:08,500 --> 00:46:18,940
+Belli bir genlikle, o frekansa ait genlikle, o frekansta ve o fazdaki bileşenlerinden oluşur.
+
+246
+00:46:18,940 --> 00:46:25,119
+Peki, gerçek hayatta bu frekansın sonsuza gitmesi mümkün müdür?
+
+247
+00:46:26,660 --> 00:46:34,940
+Mümkün değildir. Değil mi? Örneğin siz benim sesimi dinliyorsunuz. İnsan sesinin belli bir titreşim.
+
+248
+00:46:35,539 --> 00:46:44,039
+Kaynaktan kaynaklanan, yani ses tellerinden kaynaklanan 0 ile 4 kHz arasında yer alır arkadaşlar.
+
+249
+00:46:44,439 --> 00:46:57,779
+İnsandan insana değişir. Kiminde 5 kHz çıkar, kiminde 3,5 kHz iner ama sesin karakteristiği yaklaşık olarak 0-4 kHz arasındadır.
+
+250
+00:47:01,715 --> 00:47:22,615
+Kaynaktan kaynaklanan belli limitasyonlar var. Yani bizim işaretimiz gerçek anlamda sonsuz frekansa sahip değildir. Sonuçta bir band limiti vardır, bir maksimum frekans vardır. Örneğin bir kalp işaretini inceliyoruz diyelim şu şekilde.
+
+251
+00:47:23,443 --> 00:47:34,623
+Bu işaretin de kendi karakteristiğiyle alakalı, örneğin bu da 0 ile 360 Hz arasında değişen frekansa sahiptir.
+
+252
+00:47:34,623 --> 00:47:42,483
+Yani içerisinde 700 Hz'lik bir işaret bulunmaz veya sesin içerisinde 10 kHz'lik bir bileşen bulunmaz.
+
+253
+00:47:43,203 --> 00:47:46,623
+İnsan sesi olarak söylüyorum. Demek ki bizim burada...
+
+254
+00:47:47,347 --> 00:48:00,607
+Sonuçta buradan sonraki frekansların da bileşeni olmayan veya AF buradan sonraki frekansların geldiğinin sıfır olduğu maksimum bir frekans var.
+
+255
+00:48:00,728 --> 00:48:12,527
+Yani F max'a sahip işaretin içerisindeki en yüksek frekansı içeren bir sinizoidal bileşen var ve ondan sonrası yok.
+
+256
+00:48:12,527 --> 00:48:14,187
+Diyelim.
+
+257
+00:48:15,123 --> 00:48:24,304
+Mesela şu işarete şöyle bir zoom yapalım, büyüteş tutalım ve tekrar çizelim. Şu şekilde.
+
+258
+00:48:26,824 --> 00:48:37,744
+Bu işaretin içerisinde en büyük frekansa sahip işaretti.
+
+259
+00:48:38,735 --> 00:48:54,615
+T max şeklinde bir bölüm f max'ın tersi şeklinde tanımlayalım. Yani en yüksek frekanslı işaretin periyodu olarak işaretleyelim.
+
+260
+00:49:04,755 --> 00:49:21,115
+Yön, bir çözüm bulmaya çalışacağım işaretin içerisinde. İşaretin içerisinde arkadaşlar, herhangi bir işaretin içerisinde çok az değişim gösterilen yerler genellikle alçak frekanslı birleşenler.
+
+261
+00:49:21,115 --> 00:49:28,695
+Hızlı olarak değişim yapılan yerler ise bizim yüksek frekanslı birleşenlerimizdir.
+
+262
+00:49:29,268 --> 00:49:35,827
+Yani burada işaretin içerisinde hızlı değişim gösteren yerler yüksek frekanslı yerlerden gelir.
+
+263
+00:49:35,827 --> 00:49:49,768
+Peki, bu durumda yüksek frekanslı, eğer ben yüksek frekans gösterilen şu bölgeyi örneklerken buradaki değerleri de kaybetmemem lazım.
+
+264
+00:49:55,552 --> 00:50:04,351
+Örnekleme periyotları zaten daha düşük frekanslar için rahat rahat karşılayacaktır onların karakteristiklerini.
+
+265
+00:50:05,491 --> 00:50:18,072
+Demek ki en yüksek frekansın, önce şöyle diyelim, en yüksek frekansın sadece tepe noktalarını alacağımız örnek aralığı belirleyelim.
+
+266
+00:50:19,476 --> 00:50:26,456
+Bir örneği burada aldık, bir örneği diğer tepe noktasına aldık. Burası da TS olarak belirlendi.
+
+267
+00:50:27,576 --> 00:50:32,316
+Bu durumda TS ile Tmax arasında nasıl bir ilişki var arkadaşlar?
+
+268
+00:50:34,156 --> 00:50:35,896
+Tamam, bu çizdiğim şekle göre.
+
+269
+00:50:36,716 --> 00:50:40,536
+TS ile Tmax arasında nasıl bir ilişki var?
+
+270
+00:50:42,396 --> 00:50:43,456
+Matematiksel olarak.
+
+271
+00:50:44,083 --> 00:50:46,344
+Tmax bölü 2 eşittir T'se.
+
+272
+00:50:46,844 --> 00:51:01,824
+Evet. Tmax veya şöyle diyebilir miyiz? Tmax eşittir 2 T'se diyebiliriz değil mi? Çünkü bu çevirimin yarısına kadar var T'se. Tmax da onun 2 katı büyüklüğünde.
+
+273
+00:51:01,824 --> 00:51:11,523
+Veya şöyle diyebilir miyiz? Fs eşittir 2 Fmax diyebiliriz değil mi? Frekans içerisinde.
+
+274
+00:51:11,956 --> 00:51:37,556
+Efes eşittir 2F max. Peki bu en kötü durum senaryosu. Yani şuraya baktığımda şuraları biraz sileceğim. Şuraları sileyim. Bakın ben burada örnekler aldığımda en yüksek frekansın sadece tepe noktalarında örnekler aldığımda bakın.
+
+275
+00:51:38,708 --> 00:52:04,967
+Şöyle gidiyorum. Şöyle yukarı doğru çekiyorum. Şöyle yukarı doğru çekiyorum. Bakın, en yüksek frekanslı birleşenlerde sadece tepe noktalarında aldığımda daha düşük frekanslı işaretlerin bir periyodu boyunca aslında çok daha fazla oluyorum. En kötü durum nerede oluşuyor?
+
+276
+00:52:05,492 --> 00:52:27,492
+En yüksek frekanslı bileşende oluşuyor. Yani bir periyot boyunca bir ve iki tane örnek almış oluyorum. Oysa diğer daha düşük frekanslı bileşenlerin içerisinde bir periyot boyunca daha fazla örnek alıyorum. Yani en kötü durum benim f-maxımda oluşuyor. Diğerleri için...
+
+277
+00:52:28,019 --> 00:52:43,419
+Daha fazla sayıda örnek almış oluyorum. Demek ki Fmax'da sadece tepe noktaları kurtarmak, tekrar inşa etmek için yeterli görüyorsam bu benim için bir alt sınır oluşturabilir.
+
+278
+00:52:43,419 --> 00:52:52,639
+Şöyle de diyebilirim. Yani bir periyot boyunca dedim ki sadece tepe noktalarını almak bir çözümdür. Evet.
+
+279
+00:52:53,248 --> 00:52:56,868
+Dolayısıyla işareti en azından üçgensel olarak da oluşturabilirim.
+
+280
+00:52:56,988 --> 00:53:05,308
+Fakat ben desem ki bunun haricinde ara noktalardan da örnek alayım.
+
+281
+00:53:05,308 --> 00:53:12,768
+Yani geçişlerden de örnek alayım dediğim zaman bir periyod boyunca iki değil dört örnek almış oluyorum.
+
+282
+00:53:12,888 --> 00:53:18,088
+Aslında ne yapmış oluyorum? Şu geçişlerden de alırsam şayet.
+
+283
+00:53:18,483 --> 00:53:44,844
+Buradaki ara noktalardan da bakın, geçiş noktalarından da örnek alıyorum. Bakın yukarıdaki işaretleri daha da sık bir şekilde örneklemiş oluyor. Ve de en yüksek frekansımı da daha iyi örneklemiş hale giriyorum. Bu durumda, yeni durumda T-S aralığı ne olmuş oluyor? T-S'nin T-Max ile ilişkisini bu sefer söylenmişsiniz. Geçişleri de aldığımda.
+
+284
+00:53:48,148 --> 00:53:49,348
+Börü 4 ne oldu?
+
+285
+00:53:50,928 --> 00:54:05,068
+Demek ki bu yeni durumda ne oldu? T max eşittir 4 T s oldu. Yani F s eşittir 4 F max.
+
+286
+00:54:06,148 --> 00:54:12,268
+Veya bunu daha da arttırabilirim. Şöyle daha ara değerleri de alırsam. En yüksek frekansı bile
+
+287
+00:54:12,947 --> 00:54:30,847
+Daha iyi şekilde ifade edelim. Yani 8F Max yapabilirim. 16F Max yapabilirim. Bunun sınırı yok. Ne kadar sıklaşırsam o kadar iyi bir şekilde de ne yapmış oluyorum? Yüksek frekanslı birleşen örneklerini de almış oluyorum.
+
+288
+00:54:30,847 --> 00:54:33,728
+Ama en kötü durum 2F Max'daydı.
+
+289
+00:54:34,675 --> 00:54:41,175
+Onun üstünün sınırı yok. Ama genel olarak artık şunu şöyle söyleyebiliriz. Eşittir yerine.
+
+290
+00:54:41,875 --> 00:54:52,135
+Efes, yani örnekleme frekansı, en yüksek frekansın en az iki katı olmalıdır. En az.
+
+291
+00:54:52,995 --> 00:54:55,455
+Dolayısıyla böyle bir kural çıkarmış oldum.
+
+292
+00:54:55,455 --> 00:55:01,955
+Buna da arkadaşlar Nyquist frekansı adı verilmiyor.
+
+293
+00:55:03,380 --> 00:55:19,360
+Bulan kişinin adından dolayı. Demek ki bunun tercümesi nereymiş? Eğer bir işareti örnekleyeceksek, örnekleme sıklığımızı belirten örnekleme frekansı, bu örnekleme frekansı.
+
+294
+00:55:24,019 --> 00:55:45,679
+İşaretin içerisindeki maksimum frekansı en az iki katı olmak zorundadır diyoruz. Bir soru sorayım o zaman. Ben sınıftayım, mikrofonda benim sesimi kaydetmek istiyorsunuz. Demin bir sayı vermiştim hatırlarsanız. İnsan sesi sıfırda 4 kHz arasında bu demiştim.
+
+295
+00:55:51,507 --> 00:55:57,747
+Mikrofonla çektiğiniz sesi örneklemek isterseniz örnekleme frekansını en düşük ne seçmelisiniz?
+
+296
+00:55:59,047 --> 00:56:00,167
+En az 8 kHz.
+
+297
+00:56:00,867 --> 00:56:11,087
+Evet, en az 8 kHz seçmeliyiz. Yani şu fmax'ın benim 4 kHz olduğu için 2x4 kHz, 8 kHz seçmek zorundayım.
+
+298
+00:56:11,467 --> 00:56:13,907
+Yani bu şeye de bağlı.
+
+299
+00:56:16,115 --> 00:56:39,576
+İşaretimin içerisinde 4 kHz varsa örnekleme hızım ondan daha hızlı olmak zorunda. Aklınızda bu kalsın. Örneğin MP3'ler dinliyoruz öyle değil mi? MP3'lerin Heller bilgilerini de veya içerisinde bazen görüyoruz. 8 kHz'li, 16 kHz'li, 128 kHz'li örneklenmiştir sampling rate'ini görürsünüz.
+
+300
+00:56:40,980 --> 00:57:01,340
+Aslında bu bize şeyi söylüyor. Örneklemenin en düşük 8 kHz olduğu zaman ses kalitesi biraz daha düşüktür. 128 kHz örneklediği zaman normalin 16 katı değil mi? 16 katı daha iyi örnekleme yapmıştır demektir.
+
+301
+00:57:04,672 --> 00:57:15,911
+Frekanslarla örneklemenin dezavantajı nasıl oluyor? Dosya boyutu büyüyor ama ses kalitesi artıyor. İlk başında tartıştığımız durum.
+
+302
+00:57:18,951 --> 00:57:23,052
+Veya şu anda cep telefonları kullanıyorsunuz arkadaşlar.
+
+303
+00:57:29,619 --> 00:57:41,319
+Elektromanyetik olarak biz cep istasyonlarıyla haberleşiyoruz ama sesimiz örneklenirken, iletilecek ses örneklenirken kaç kilohertz kullanılıyor biliyor musunuz?
+
+304
+00:57:42,939 --> 00:57:50,359
+8 kilohertz kullanılıyor. Yani buradan çıkan değerli işlem yapılıyor arkadaşlar.
+
+305
+00:57:56,244 --> 00:58:02,523
+Ongeç'e dersimize devam edeceğiz arkadaşlar. Şu ana kadar olan kısımla alakalı bir sorunuz var mı?
+
+306
+00:58:06,483 --> 00:58:10,803
+Eğer sorunuz yoksa geldikten sonra da sorularınız olursa onları cevaplayabilirim.
+
+307
+00:58:11,243 --> 00:58:13,323
+11.10 geçe görüşmek üzere arkadaşlar.
+
+308
+01:10:26,612 --> 01:10:31,612
+Evet arkadaşlar, ses geliyor zannedersem.
+
+309
+01:10:34,231 --> 01:10:35,572
+Geliyor hocam.
+
+310
+01:10:36,012 --> 01:10:44,211
+Tamamdır. En son örnekleme ile alakalı olarak TSE'yi nasıl belirleyiz sorusunu sormuştuk.
+
+311
+01:10:44,211 --> 01:10:53,572
+Bu TSE'yi bulurken demek ki en yüksek frekanslı bileşenden yararlanıyoruz ve bulduğumuz çözüm neydi?
+
+312
+01:10:54,032 --> 01:11:10,072
+Efes, yani bu da aynı zamanda bir bölü TS olduğu için örnekleme frekansı, işaretin içerisinde en yüksek frekansın iki katı olmak olabilir diye bir çıkarımda bulunmuştuk.
+
+313
+01:11:10,252 --> 01:11:12,792
+En düşük iki katı olmak zorunda demiştik.
+
+314
+01:11:12,792 --> 01:11:20,592
+Şimdi biz işaretimizi artık aldık ve örnekledik.
+
+315
+01:11:21,108 --> 01:11:31,748
+Artık örneklerimizi bu şekilde alıyoruz. Ve t-s aralıklarla alıyoruz. Belirlediğimiz en yüksek frekansı iki katı aralıklarla alıyoruz.
+
+316
+01:11:32,468 --> 01:11:41,667
+Bir de bu işaretleri nereye gönderecektik arkadaşlar? Artık işlemek üzere bilgisayarın hafızasına göndereceğiz.
+
+317
+01:11:41,667 --> 01:11:47,708
+Birinci örnek buraya, ikinci örnek buraya, üçüncü örnek buraya.
+
+318
+01:11:48,340 --> 01:12:06,079
+Hafızaya kaybedilecek. Bunun için bir engel var mı arkadaşlar? Yani artık sayısallaştırdık, ne yaptık işaretimizi? Ayrıklaştırdık. Artık elimizde ayrık işaretler var. Peki bunu hafızaya atmada bir sorun yaşar mıyız acaba?
+
+319
+01:12:06,079 --> 01:12:10,299
+Bu da kuantalamamız gerek. 0 ile 1'ler şeklinde depolayacağız.
+
+320
+01:12:10,688 --> 01:12:17,927
+Evet, şimdi bilmeyen arkadaşlara soralım. Bakın kuantalamak neymiş? Veya sorun neymiş? [öğrenci]?
+
+321
+01:12:22,292 --> 01:12:28,072
+Sıralım [öğrenci]. Sesim geliyor mu [öğrenci]?
+
+322
+01:12:32,051 --> 01:12:44,871
+[öğrenci] de anladığım kadarıyla şu anda bizi ulaşamıyor, dinlemiyor veya. Onun dışında kime sorabiliriz? [öğrenci]?
+
+323
+01:12:50,868 --> 01:12:51,548
+Hurkan?
+
+324
+01:12:53,768 --> 01:12:54,768
+Efendim?
+
+325
+01:12:55,488 --> 01:12:58,068
+Evet. Sorun ne olabilir burada?
+
+326
+01:12:58,948 --> 01:13:06,308
+Kuantalamak dedi arkadaşımız. Yani biz bu ayrıklaştırmış işaretleri niye atayamıyoruz şeye?
+
+327
+01:13:07,528 --> 01:13:11,208
+Hafızaya atamayız. Ne yapmamız gerekir?
+
+328
+01:13:12,548 --> 01:13:18,347
+Sonuçta bunları 1-0, 1-biner diziler haline getirmemiz gerekiyor. Öyle değil mi?
+
+329
+01:13:19,060 --> 01:13:39,160
+Evet. Şimdi dönüştürücüler kullanıyoruz hocam. Evet. Şimdi burada ayrık örnekleri aldık biz. Yani biz t'yi artık sıfırıncı örnek, birinci örnek, ikinci, üçüncü örnek şeklinde artık zaman imzisleriyle, en zaman imzisiyle belirtir hale geldik.
+
+330
+01:13:45,503 --> 01:13:59,884
+Aynı zamanda bakın, mesela ilk örneğin aldığı değer 4 olabilir. 4'ü saklayabilir miyiz binary olarak? Saklarız. Deriz ki biz burada 4 değerini şu şekilde saklarız.
+
+331
+01:14:12,787 --> 01:14:36,927
+Virgülden sonra sonsuz değer alabilir. Öyle değil mi? Demek istediğim şu. Yani bizim burada ayrıklaştırma, t domeninde ayrıklaştırma yapmamıza rağmen y'de hala sürekli değerler alabiliyor. Yani bizim seçtiğimiz örnek değerleri illa integer değerinde olmak zorunda değil. Bunların da bir yere yuvarlanması gerekiyor. Öyle değil mi?
+
+332
+01:14:38,323 --> 01:14:45,384
+Sonuçta benim hafızamın alabileceği şöyle n tane hafıza gözüm var.
+
+333
+01:14:45,523 --> 01:14:55,263
+Birden n'e kadar. Ama hafıza gözlerimin içeriği 8 bit olabilir, 16 bit olabilir, 64 bit olabilir.
+
+334
+01:14:55,263 --> 01:15:00,963
+Bunlarla ifade edebileceğim sayılar nedir? Sınırlıdır.
+
+335
+01:15:02,323 --> 01:15:13,064
+Dolayısıyla ne yapmak gerekiyor? Bunları belirli aralıklara koymak gerekiyor. Bu işlemde kuantalama adı veriliyor. Örneğin şöyle bir işaretimizi çizdim.
+
+336
+01:15:13,064 --> 01:15:26,564
+Örneğin sadece ben bir bit kullansam, bir bit kullandığımda kaç durumu ifade edebilirim?
+
+337
+01:15:27,475 --> 01:15:38,876
+Şöyle ortadan geçen bir çizgiyi düşünelim. 0 ve 1 olmak üzere pozitif, yani aldığım örneklerin pozitif veya negatif olduğunu belirleyebilirim.
+
+338
+01:15:38,876 --> 01:15:49,876
+Peki 2 bit kullansam ne olur? 2 bit kullandığımda artık 0, 0 bölgesi, 0, 1 bölgesi.
+
+339
+01:15:49,952 --> 01:16:06,551
+1-0 bölgesi ve 1-1 bölgesi olmak üzere 4 değişik bölge tanımı yapabilirim. Artık şu almış ördüğüm örnekle şu örneği birbirinden ayrıştırabilirim. Örneğin bunu 0-0 diye saklarım. Bunu 0-1 şeklinde saklarım.
+
+340
+01:16:15,988 --> 01:16:35,728
+Şu işareti sıfır sıfır saklamadan, bununla bu işareti iki işaret arasında genlik farkı olmasına rağmen aynı şeyle sıfır sıfırla kodluyorum ve hafızayı kaybediyorum. Bunun çözümü ne? Bir bit daha kullanmak. Bir bit daha kullanırsam artık...
+
+341
+01:16:35,728 --> 01:16:39,988
+Şu işaret ve şu işaret arasında da fark yapabiliyorum.
+
+342
+01:16:40,087 --> 01:16:43,908
+Diyorum ki buna 0, 0, 0, buna 0, 0, 1 diyebiliyorum örneğin.
+
+343
+01:16:45,388 --> 01:16:49,788
+Demek ki bit sayısı arttıkça, kullandığım bit sayısı arttıkça,
+
+344
+01:16:49,788 --> 01:16:54,667
+yani hafıza gözümün içerisindeki bit sayısı arttıkça,
+
+345
+01:16:55,148 --> 01:16:59,828
+ben daha sık aralıkla ne yapabiliyorum?
+
+346
+01:17:01,587 --> 01:17:09,487
+Binary değerler atayabiliyorum. Bu aralıkları arkadaşlar kuant aralıkları adı veriliyor.
+
+347
+01:17:11,604 --> 01:17:22,124
+Bu kuanta aralıkları arkadaşlar, aynı elektronik, kimyadan hatırlayacağınız gibi atomun çevresinde elektronlar belirli seviyelerde bulunuyordu.
+
+348
+01:17:22,124 --> 01:17:35,984
+Bu seviyelere kuanta adı veriliyordu. Yani ayrık seviyeler vardı. Aynı şekilde örneğin burada diyelim ki şu aralığa iki tane değer düştü.
+
+349
+01:17:36,724 --> 01:17:47,363
+Bu ikisini de aynı şekilde kodluyorum. Ortalama olarak tekrar bunu oluşturacaksam bu kuanta aralığının ortalığında örneğin hafızadan okuyorum sırasıyla bunları.
+
+350
+01:17:47,363 --> 01:18:02,264
+Geldim. Tabi burada şeyi de bilmem lazım. TS aralığını da bilmem lazım. Dosyanın içerisinde. Sırasıyla onlara karşılık gelen kuanta değerlerini, kuanta ortalamalarını koyarak ne yapıyorum?
+
+351
+01:18:04,884 --> 01:18:22,003
+Oluşturmaya çalışıyorum. Tabi burada her yerde olmuyor. Ne olacak o? Şu kuanta değerinin ortalama değeri var. Şu ikisi aynı şekilde kuanta. Eğer daha sık kuanta alarsam onların arasında da farklar oluşacaktır.
+
+352
+01:18:22,003 --> 01:18:32,324
+Bu işlemi ikinci adım olarak, birinci adımda sampling yapmıştık. İkinci adımda quantization.
+
+353
+01:18:35,123 --> 01:18:47,623
+Yani Türkçeleri örnekleme ve nicemleme olarak geçiyor arkadaşlar. Örnekleme ve nicemleme olarak adlandırıyoruz.
+
+354
+01:18:48,844 --> 01:18:54,923
+Elektronik devreler artık burada nerelerde kullanılıyor?
+
+355
+01:19:02,739 --> 01:19:18,939
+Şu analog to digital converter'lardan tutun. Şu bilgisayarın içerisindeki lojik elemanların, transistörlü yapıların içine kadar her alanda kullanılıyor.
+
+356
+01:19:30,131 --> 01:19:44,891
+Elektronik sistemlerle gerçekleştiriliyor. Gömülü sistemler, Embedded sistemler, ondan sonra mikrodeğiticilik sistemlerinin etrafında yer alan çevre birimlerine kadar hepsi elektronik sistemler için kullanılıyor.
+
+357
+01:19:44,891 --> 01:19:46,891
+Peki biz bu dersimizin içerisinde...
+
+358
+01:19:47,636 --> 01:19:58,636
+Hangi sistemleri göreceğiz? Biz diyotlar, transistörler gibi basit elektronik devrelerle bu çevre bilimleri nasıl dizayn ediliyor onları göreceğiz.
+
+359
+01:19:58,636 --> 01:20:09,636
+İlk başta şeylerden biraz bahsedelim. Sensör kısmından bahsetmiştik. Sensörler ve akciğerler. Sensörler bir bilginin...
+
+360
+01:20:10,192 --> 01:20:21,832
+Alındığı, elektriksel işarete dönüştürüldüğü elemanlar, actuatorlar ise sensörlerin tam tersine elektriksel sinyalleri ne yapıyor?
+
+361
+01:20:22,252 --> 01:20:26,752
+Fiziksel analog verileri, analog bilgiye dönüştürüyor.
+
+362
+01:20:26,752 --> 01:20:35,391
+Örneğin sensör bir mikrofonken hoparlör bir actuator olarak düşünebiliriz.
+
+363
+01:20:36,051 --> 01:20:59,931
+Burada çeşitli sensörler ve actuatorlar var. Tabi bunları da değerlendirirken, bunların sensör performanslarını değerlendirirken hangi aralıkta çalıştığı, çözümlüğü ve ayrıştırıcılığı, hata oranı, ondan sonra doğruluk, ondan sonra belirsizlik gibi kavramlar var.
+
+364
+01:21:00,372 --> 01:21:05,811
+Bir de sensörden bilgi okurken precision, netlik kavramı var.
+
+365
+01:21:05,811 --> 01:21:17,032
+Netlik kavramı var. Örneğin şurası gerçekte okumamız gereken de sensörlerle okumalar yapıyoruz. Örneğin bir yerin bir sıvının sıcaklığını ölçüyoruz.
+
+366
+01:21:17,412 --> 01:21:22,472
+Farklı değerler ne yapabiliyoruz? Alabiliyoruz bununla alakalı olarak.
+
+367
+01:21:24,500 --> 01:21:41,960
+Bunun haricinde bazen bizim sensörlerimiz doğru, aynı değerleri ölçebilir, yakın değerleri ölçebilir ama gerçekte ölçmesi gereken yerden uzaktır.
+
+368
+01:21:41,960 --> 01:21:50,180
+Buna precision netlik yani hep aynı şeyi ölçme eğiliminde olması ama doğru ölçmesi ise accuracy.
+
+369
+01:21:51,380 --> 01:22:07,559
+Doğruluk olarak geçiyor. Precision, daha çok ölçümdeki netliği ifade ediyor. Yüksek netlik, precision ve yüksek doğrulukta ise genellikle ölçmek istediğimiz değerin etrafında ölçümlerimizi yaparız.
+
+370
+01:22:19,604 --> 01:22:24,623
+Asıl olması gereken yerden uzakta gibi düşünebiliriz.
+
+371
+01:22:26,444 --> 01:22:35,664
+Sensör performanslarını ölçerken doğrusallık, ondan sonra hassasiyet gibi kavramlar var.
+
+372
+01:22:35,664 --> 01:22:38,484
+Ne tür sensörlerimiz var?
+
+373
+01:22:38,944 --> 01:22:39,703
+Resistif.
+
+374
+01:22:40,115 --> 01:22:50,796
+İndüktif, kapasitif, piezoelektrik, fotorezistif, ışıkla değişken, elastik ve termal ısıyla değişen değişkenlerimiz var. Örneğin.
+
+375
+01:22:51,667 --> 01:23:01,227
+Sıcaklığı ölçerken kullanabileceğimiz sensörler rezistif, yani sıcaklıkla direnci değişen yapılardan elektriksel işaret.
+
+376
+01:23:01,227 --> 01:23:11,307
+Evet sıcaklıkla beraber direnç değişirse V eşittir I çarpı R'den. Eğer bu değişken olursa R, ölçtüğümüz gerilim farklılaşır.
+
+377
+01:23:17,747 --> 01:23:41,387
+Sıcaklıkla orantılayarak onu bir elektriksel sinyal elde edebiliriz. Bunun dışında termistörler çokça kullanılır. Termistörlerin haricinde yarı iletken yapılar, transistörlerden yararlanarak sıcaklık ölçen özel yapılar bulunur.
+
+378
+01:23:43,952 --> 01:24:10,631
+Örneğin, ışıkla gerilimi değişen, yani bir yerdeki ışığın miktarına göre ne yapıyor? Değişkenlik. Aslında bir fotoğraf makinesinin temel pikselinin yaptığı işler. Yani biz belirli elektromanyetik bantlardan ne yapıyoruz arkadaşlar? Işık alıyoruz değil mi? Lenslerle beraber. Bu lenslerle beraber ne yapılıyor arkadaşlar?
+
+379
+01:24:11,604 --> 01:24:17,004
+Bizim ışığın miktarına göre elektriksel değerler.
+
+380
+01:24:17,564 --> 01:24:20,924
+Kotoramik'sın her piksel için bunu oluşturduğumuzu düşünün.
+
+381
+01:24:21,623 --> 01:24:29,504
+Arkasından bu piksel dizilerinin parlaklık değerleri kaydedilerek siyah-beyaz resimler oluşturuyor.
+
+382
+01:24:29,504 --> 01:24:35,524
+Eğer bunu özelleştirirsek, örneğin red, green ve blue'daki yansıma değerlerini.
+
+383
+01:24:36,595 --> 01:24:50,675
+Parlaklık seviyelerini kaydedecek olursak şayet ne yaparız arkadaşlar? Bizim fotoğraf yani dış dünyadaki parlaklık seviyeleri elde edilmiş olur.
+
+384
+01:24:52,724 --> 01:25:05,123
+Kapasitesi, ışıkla rezistansının değişmesi haricinde ışıkla kapasitesinin değiştiği yapılarda bulunuyor sensör teknolojisinde.
+
+385
+01:25:05,123 --> 01:25:16,123
+Bunun haricinde uygulanan güce göre, üzerine uygulanan güce göre değişkenlik gösteren,
+
+386
+01:25:16,467 --> 01:25:42,467
+Güç sensörleri bulunuyor. Onun dışında yer değiştirme sensörleri, örneğin potansiyometreler bulunuyor. Potansiyometreler örneğin ne yapılıyor? Sizin şurada bir oranaylar başlığınız var. Bunun hangi konuma ilerletiyorsunuz? Bununla alakalı elektriksel sinyal olarak. Dolayısıyla hareketteki değişime göre elektriksel sinyallerin değişimini...
+
+387
+01:25:43,188 --> 01:25:56,108
+Gösterip, örneğin bir gerilim elde ettiniz. Bu tarafta en yüksek, burada aşağıdayken, dolayısıyla şu ara değerlerde artık potansiyometrenin neresinde olduğunuzu bulabiliyorsunuz.
+
+388
+01:25:56,435 --> 01:26:24,315
+Bunun dışında Inductive Promximity sensörleri var. Özellikle sanayide çok kullanılır. Yani bir malzeme yüklüyorsunuz diyelim. Eliniz girdi araya. İki tane algılayıcısı, vericisi var. Dolayısıyla buradaki ilişki kesildiği zaman anlıyorsunuz ki arada farklı elemanlar bulunuyor. Switchler bulunabiliyor tabii ki. Switchler anahtarlar arkadaşlar. Ne yapılıyor bunlar? Arada.
+
+389
+01:26:24,435 --> 01:26:48,815
+Bu sefer farklı materyalar ilerliyor mu? Yani bu sefer hareketi algılama için kullanıyoruz. Opto-siviçler var. Örneğin iki tane bir ışık kaynağı. Mesela burası ışık kaynağı. Burası ise sensör kısmı. Arasından ışığın geçmediği anları ve ışığın geçtiği anları elektriksel sinyal olarak ürettirebilirsiniz.
+
+390
+01:26:51,252 --> 01:27:04,812
+Buradaki örneğin tekerleğin üzerine delikler açtığımızı düşünün. Işığın geçtiği geçmediği kısımlarla beraber bunun dönüş hızını, frekansını da çıkartmanız mümkün olabilir arkadaşlar.
+
+391
+01:27:05,932 --> 01:27:10,392
+Pozisyon sensörleri, enkodörleri, motorlarda çok kullanılan.
+
+392
+01:27:10,868 --> 01:27:38,328
+Atım motorlarda çok kullanılan. Demin bahsettiğim yapı mesela opto switchlerde eskiden mouse'lar lazerle çalışmadan önce bu yapılar kullanılıyordu. Dolayısıyla hem X yönündeki hem Y yönündeki hareketlere göre biraz daha mekanik olarak veya hangi hızla gittiğine bağlı olarak fareler, mouse'lar bu opto switchlerle tasarlanırdı arkadaşlarım.
+
+393
+01:27:38,676 --> 01:27:46,855
+Onun dışında ses sensörleri var. Örneğin bahsettiğim mikrofonlar, elektriksel sinyale dönüşükler.
+
+394
+01:27:47,416 --> 01:27:56,216
+Onun dışında sensör yapıları daha sonra dersimizde göreceğimiz gibi gerilim bölücü devreler üzerinden de gerçekleştirilebilir.
+
+395
+01:28:01,779 --> 01:28:20,939
+Akçı Eytililer dediğim gibi sensörlerin tam tersi mantıklı çalışıyor. Sensörlerde biz dış dünyadaki veriyi ölçerken veya elektriksel işareti dönüştürürken elektriksel işareti.
+
+396
+01:28:21,439 --> 01:28:29,680
+Isı, ses gibi fiziksel birimlere dönüştüren yapılar bulunuyor.
+
+397
+01:28:30,779 --> 01:28:40,720
+Gelen elektriksel işarete göre örneğin ışık miktarının artıp azaldığı yapılar Light Actuator olarak adlandırılıyor. Bunlardan biri de LED'ler.
+
+398
+01:28:41,171 --> 01:29:04,031
+Üzerinden geçen elektrik akımına göre ne yapıyoruz? Bizi bugün televizyonlardan telefonlarımıza kadar bunlardan yararlanıyoruz öyle değil mi? Çıkan, tabii burada 1.0 mantığıyla da çalışabilir veya arada olan gerilimin farkına 0.5-0.7 farklı parlaklık seviyelerine dönen ledlerde.
+
+399
+01:29:04,724 --> 01:29:29,463
+Yapılabilir. Bunun dışında likit kristal displayler, akşu eğitlerlerimiz bizim. Selon eğitler bir fiziksel olarak yani bir elektriğin varlığına yokluğuna göre dönen yapılar bulunuyor. Bunlar mesela bir motorun çalışması veya bir hareket gerektiren, açıp kapama gerektiren arabalardan tutun da sanayide çokça kullanılıyor.
+
+400
+01:29:30,036 --> 01:29:54,695
+Bunun dışında ölçüm aletleri, elektriksel işareti bir şekilde ne yapıyor, ölçüyor. Buradaki değerleri göstererek aslında burada ise koiller var. Üzerinden geçen akımın veya gelimin miktarına göre farklı yerleri saparak aslında bize oradaki akımın, gelimin varlığının şiddetini gösteriyor. Motorlar aynı şekilde. ACDC motorlar, STEP motorlar.
+
+401
+01:29:55,024 --> 01:29:59,224
+Bizden hep elektriksel işaretlerini aktarmak için.
+
+402
+01:30:00,000 --> 01:30:17,779
+Spikerler, yani bizim hoparlörlerimiz aynı şekilde elektriksel işaretleri, ses işaretlerine, ondan sonra transmüsörler, rezistif, kapasitif, indüktif şekilde çalışan bol miktarda yapı var.
+
+403
+01:30:17,779 --> 01:30:27,779
+Aynı şekilde ölçüm aletleri de bir nevi akücülatorlar bize elektriksel işareti gösteren, herhangi bir ara birim kullanan yapılar.
+
+404
+01:30:28,000 --> 01:30:43,140
+Bizim için akşuayet olarak adlandırılıyor. Bunların dijital ostoskoplar, ostoskop kullanımıyla alakalı olarak sizlere arkadaşlarımız bilgi verecek. Laboratuvarlarla alakalı olarak listelerin oluşturulması.
+
+405
+01:30:43,764 --> 01:30:58,284
+Ve de bu laboratuvar kapsamında kullanabileceğiniz simülasyon, benzetim programlarını kullanılması için bir laboratuvar sıfır yapılıp temel bilgilere aktarıcı bir session da düzenlenecek arkadaşlar.
+
+406
+01:30:58,284 --> 01:31:02,724
+Bunun için tekrar baştan hatırlatayım. Bu elektronik devreler bahar.
+
+407
+01:31:05,043 --> 01:31:23,764
+Google Classroom üyeliklerinizi tamamlayın. Bunlar hakkında bir arkadaşımız WhatsApp mesajı atmıştı. Umarım buradan haberleşeceğimizi de yazarsanız en azından buradan insanlar bilgi sahibi olurlar. Laboratuvar grupları, laboratuvar fiyatları hepsi buradan paylaşılacak arkadaşlar.
+
+408
+01:31:24,444 --> 01:31:28,644
+Bu haftalık bu kadar dersimiz. Sizlerin sormak istediği sorular var mı?
+
+409
+01:31:30,404 --> 01:31:31,703
+Hocam bir şey sorabilir miyim?
+
+410
+01:31:32,024 --> 01:31:32,224
+Tabii.
+
+411
+01:31:32,819 --> 01:31:39,619
+Muafiyet nasıl olacak? Ben alttan alıyorum da labı geçmiştim ama dersten kalmıştım.
+
+412
+01:31:40,659 --> 01:31:48,519
+Eğer muafiyet laboratuvar notundan falan memnunsa o geçmiş senelerden bu sene aktarılıyor.
+
+413
+01:31:49,076 --> 01:32:12,376
+Bu laboratuvar notundan memnun olmayan arkadaşlar için ise bir tane sınav yapacağız. Onu da birinci vize haftasında yapacağız. Sadece muafiyet notundan memnun olmayanlar için bütün elektronik devreler konularından bir sınav oluşacak orada. Ona göre lab notu yerine geçecek birinci vize haftası yani sekizinci haftada bir sınav düzenlenecek arkadaşlar.
+
+414
+01:32:13,515 --> 01:32:14,796
+Anladım hocam. Sağ olun.
+
+415
+01:32:15,347 --> 01:32:18,047
+Başka soru soran arkadaşımız var mı?
+
+416
+01:32:19,327 --> 01:32:20,547
+Hocam merhabalar.
+
+417
+01:32:21,927 --> 01:32:25,367
+Size ulaşmamız gerekiyorsa nereden ulaşabiliriz?
+
+418
+01:32:26,667 --> 01:32:32,667
+Ben ofisimde oluyorum ama daha çok öncesinde e-mail ile yazabilirsiniz.
+
+419
+01:32:38,484 --> 01:32:39,784
+Başka sorusu olan?
+
+420
+01:32:40,364 --> 01:32:44,884
+Hocam, dersi alttan alıp laplara katılabiliyor muyuz istersek?
+
+421
+01:32:47,444 --> 01:32:50,384
+Yeni lap notu almak istiyorsanız evet.
+
+422
+01:32:52,003 --> 01:32:55,684
+Onu önceden nasıl bildirmemiz gerekiyor?
+
+423
+01:32:55,684 --> 01:33:00,684
+Ben laboratuvar notundan memnun değilim. Ben laplara katılacağım deyip...
+
+424
+01:33:00,992 --> 01:33:19,231
+Yeni lab notunuzu oluşturmak için laboratuvar listelerinde yer alabilirsiniz. Aktif çalışan gruplar gibi bu dönem biliyorsunuz biraz daha simülasyon üzerine gitmiş olacak. Dolayısıyla sizlerin gerçek laboratuvar ortamında belki Nisan ayında 100'liğe geçeriz bununla alakalı olarak.
+
+425
+01:33:19,796 --> 01:33:31,956
+Laboratör gruplarını oluşturmakla alakalı buradan görmüş olduğunuz klasüm üzerinden arkadaşlarımızla iletişime geçersiniz.
+
+426
+01:33:33,516 --> 01:33:34,615
+Tamamdır, teşekkürler.
+
+427
+01:33:35,096 --> 01:33:37,076
+Tamamdır. Başka sorusu olan?
+
+428
+01:33:40,787 --> 01:34:01,747
+Başka sorusu olan yoksa arkadaşlar, önümüzdeki hafta artık diyotlar, diyotların oluşturulmasıyla alakalı kısımlara girip ilerlemeye başlayacağız. Bu haftalık bu kadar. Hepiniz kendinize iyi bakın. Başka sorusu olan var mıydı? Tamamdır. İyi haftalar diliyorum arkadaşlar. İyi çalışmalar. Görüşmek üzere.
+
+429
+01:34:02,087 --> 01:34:02,967
+Görüşürüz hocam.
+
+430
+01:34:03,507 --> 01:34:06,127
+İyi günler hocam.
+
+431
+01:34:06,647 --> 01:34:07,667
+İyi günler sağ olsun.

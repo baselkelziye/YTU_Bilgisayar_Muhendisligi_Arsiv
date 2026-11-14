@@ -1,0 +1,1823 @@
+1
+00:09:30,323 --> 00:09:31,323
+Merhaba arkadaşlar.
+
+2
+00:09:33,323 --> 00:09:34,283
+Merhaba hocam.
+
+3
+00:09:35,483 --> 00:09:38,323
+Merhabalar hocam.
+
+4
+00:09:38,703 --> 00:09:42,463
+Merhaba, evet. Sesinizi duymak güzel.
+
+5
+00:09:43,463 --> 00:09:47,543
+Şimdi kaç kişi olduk? Bakıyorum. 25 kişiyiz.
+
+6
+00:09:48,543 --> 00:09:54,903
+Pekala. Bugün ders duvarına bir ödev ekledim. Görmüşsünüzdür herhalde.
+
+7
+00:09:56,820 --> 00:10:09,820
+Ödev için fazla süre veremiyorum. Bir hafta süre verdim. Zaten derste yaptığımız aslında küçük küçük örneklerin benzerlerini sizin yazmanızı istedim.
+
+8
+00:10:11,920 --> 00:10:20,820
+Süreyi biraz kısa tuttum. Bir hafta. Çünkü arkasından bir başka ödev geliyor. O yüzden...
+
+9
+00:10:22,292 --> 00:10:35,072
+İlk ödevin zaten içeriği de basit olduğu için bir haftanın yeteceğini düşündüm. Ona göre bir program yapmanızı, plan yapmanızı bekliyorum.
+
+10
+00:10:35,072 --> 00:10:45,072
+Şimdi bu hafta beşinci haftadayız ve proje seçimi konusunda da harekete geçilmesi gerekiyor.
+
+11
+00:10:46,163 --> 00:11:00,043
+Bu konuda size şöyle bir tavsiyem olacak. CVPR 2020, hemen linkini de sizinle paylaşayım.
+
+12
+00:11:04,043 --> 00:11:09,884
+CVPR 2020 paper list dediğiniz zaman.
+
+13
+00:11:11,731 --> 00:11:14,731
+Bunları her yıl paylaşıyorlar.
+
+14
+00:11:14,731 --> 00:11:18,731
+Ctrl C hemen sizinle ben de paylaşayım.
+
+15
+00:11:26,707 --> 00:11:46,187
+Çetten paylaştım. CVPR, Computer Vision konusunda yapılan en büyük ve kapsamı geniş konferanslardan biri. Gerçekten çok kaliteli yayınlar çıkıyor bu konferansta.
+
+16
+00:11:46,187 --> 00:11:50,187
+Her sene de paperları yayınlıyorlar.
+
+17
+00:11:53,299 --> 00:12:12,379
+Sizinle sayfayı da paylaşarak gidebilirim. Şöyle yapalım. CVPR 2020 makaleleri, 3 gün süren konferansın bütün makaleleri burada listelenmiş durumda.
+
+18
+00:12:20,628 --> 00:12:48,628
+Makaleyi yayınlamıştım. Bunlar arasından seçin demiştim. Ama bu sene herhangi bir kısıt koyma ihtiyacı duymuyorum. Sizi çalışma alanı konusunda da böyle belli bir dar alana sıkıştırmak istemiyorum. O yüzden buradaki makaleleri konu olarak ilginizi çeken herhangi bir makaleyi seçip onun üzerinde bir çalışma yapmanızı.
+
+19
+00:12:48,628 --> 00:13:00,628
+Tüm makaleler, burada gördüğünüz gibi PDF'leri var ve erişilebiliyor. Mesela burada re-identification ile ilgili bir...
+
+20
+00:13:02,292 --> 00:13:30,292
+Konferans Bildirisi. Yapılan çalışma Large Scale Clothes Changing Person Data for Reidentification. Burada genelde aslında kişileri yeniden kimliklendirirken üstündeki kıyafetlerden faydalanarak yakalıyorlardı. Şöyle düşünün, bir kampüste yüzlerce kamera var. Sizin sabah girerken kampüs girişindeki kameradan alınan görüntü...
+
+21
+00:13:30,292 --> 00:13:54,124
+Bu örneğe bakalım.
+
+22
+00:13:54,644 --> 00:14:10,984
+Clouds Changing Person Dataset dediği zaman problemi biraz daha zorlaştırmış oluyor. Hem çalışılan veri tabanları hakkında, güncel veri tabanları hakkında bir fikriniz olur, nerede, ne var, nasıl erişiliyor gibi.
+
+23
+00:14:23,251 --> 00:14:39,211
+Vizyonunuzun gelişmesine faydası olur diye düşünüyorum. Dediğim gibi bu dönem sizi herhangi bir sınır koymadan kendi seçiminize bırakıyorum.
+
+24
+00:14:44,687 --> 00:15:06,408
+Benimle paylaşmanızı istiyorum. Aynı bildiri birden fazla kişinin çalışmasını istemiyorum. Bu noktada bu kadar makale varken çakışırsa eğer, tabii benim bu konuda sizi uyarmam gerekir. O yüzden şöyle yapalım. O süreci de çok uzatmamak adına.
+
+25
+00:15:07,731 --> 00:15:28,151
+Herkes birinci, ikinci, üçüncü tercihim diye üç tane bildiriyi buradan seçsin ve bildirinin şurada gördüğümüz title'ını yani başlığını kullanarak bana birinci tercihim, bu bildiri, ikinci, bu tercihim şeklinde bildirsin.
+
+26
+00:15:28,884 --> 00:15:42,683
+Ama bu bildirimi de online yıldız edüter üzerinden. Benim açacağım bir ödev linki gibi bir platformdan yine yapalım. Çünkü e-mailler çok karışıyor. O şekilde olmasını istemiyorum. Bununla ilgili...
+
+27
+00:15:44,436 --> 00:16:04,276
+Ödev kısmına sanki bir ödev açıyormuş gibi bu konuyla ilgili hem açıklamaları yazarım hem de size seçimlerinizi bir Word dokümanına tercih sırasıyla yapıp bana göndermeniz için de bir imkan sağlamış olurum.
+
+28
+00:16:05,395 --> 00:16:25,816
+Dediğim gibi oldukça geniş alanda. Face Segmentation var, Image Synthesis var. Gerçekten kapsamı geniş. Ama hepsi tabii Computer Vision'la ilgili çok güncel çalışmalar bunlar.
+
+29
+00:16:26,419 --> 00:16:51,379
+Buradan tercihlerinizi belirleyin ve çalışmaya başlayın. Çünkü beşinci haftadayız. Gerçekten zaman çok hızlı akıyor. Bizim son üç hafta proje sunumlarımız olduğuna göre şöyle düşünelim. Zaten on dört haftamız var. Dokuz hafta kaldı geriye. Üç altı hafta var bu çalışmayı tamamlamanız için. Buradan o çıkıyor.
+
+30
+00:16:52,211 --> 00:17:13,711
+O yüzden bugünden başlamakta fayda var. Çünkü seçiminiz de en az bir hafta sürecektir. Bana bu konu seçimi için de herhalde bir hafta yeterli olur diye düşünüyorum. Haftaya ders günümüze kadar bu seçimi yaparsınız. Ödev teslimi gibi 12 Nisan'a kadar tercihlerinizi bana bildirirsiniz.
+
+31
+00:17:14,288 --> 00:17:29,867
+İlginç çalışmalar. Bunları böyle bir hızlıca gözden geçirin. Kendi çalışmak istediğiniz konuyla ilgili keywordler üzerinden arama yapabilirsiniz isterseniz. Ya da kullanacağınız yöntemler üzerinden giderek bir şey yapabilirsiniz.
+
+32
+00:17:29,867 --> 00:17:41,127
+Burada video falan da var. Bu şeyi mi paylaşmışlar? Sunumu mu paylaşmış acaba? 0.36 saniye.
+
+33
+00:17:41,907 --> 00:17:45,207
+Kısa bir reklam.
+
+34
+00:17:49,268 --> 00:17:50,587
+Bye, bye, bye.
+
+35
+00:17:56,180 --> 00:17:58,440
+Ama yine kısa 0.59 yazıyor.
+
+36
+00:18:06,804 --> 00:18:29,744
+Bayağı hızlandırılmış kısa bir sunum şeyi de göstermiş. Evet, böyle.
+
+37
+00:18:31,988 --> 00:18:39,327
+Peki, sorunuz veya paylaşmak istediğiniz bir şey varsa?
+
+38
+00:18:42,148 --> 00:18:51,228
+Hocam, bu yayınlarla ilgili bizden beklentimiz tam olarak ne olacak? Oradaki kodları falan implemente etmemizi isteyecek misiniz? Rapor ve sonundaki beklentileriniz, örnebildiğiniz?
+
+39
+00:18:59,392 --> 00:19:12,811
+İyice bir okuyup anlamanızı bekliyorum öncelikle. Kullanılan dataset'i indirebilirsiniz. Bu dataset ile ilgili yapılmış çalışmayı bazı bildirilerde kodu da paylaşıyorlar.
+
+40
+00:19:12,811 --> 00:19:20,311
+Eğer kodda paylaşılmışsa ve bir laptop üzerinde çalıştırabileceğiniz formatta ise deneyebilirsiniz.
+
+41
+00:19:22,708 --> 00:19:37,688
+Ama hani sıfırdan kod yazmanız ya da aynı çalışmayı yapmanız tabii ki beklenemez. Ama varsa dediğim gibi paylaşılmış kod, siz de onu üzerinden çalıştırıp sonuçlarını gözlemleyebilirsiniz.
+
+42
+00:19:48,384 --> 00:20:10,543
+Ayrıntısıyla anlatmanızı isteyeceğim. Bir rapor hazırlayacaksınız. Hazırlayacağınız rapor mesela 10 sayfa makaleden gidip bana 20 sayfa rapor yazmayın. Benim istediğim 10 sayfalık bir makaleyi okuduysanız en fazla 7-8 sayfada bunu özetlemeniz.
+
+43
+00:20:11,092 --> 00:20:38,092
+Bu raporda. Ayrıca bir de bir PowerPoint sunum hazırlayıp bu sunum üzerinden yapılan iş nedir, hangi yöntemler kullanılmış, hangi dataset üzerinde çalıştırılmış, elde edilen sonuçlar klasik algoritmalara göre ne kadar başarılı olmuş gibi makalede gördüğünüz tüm o değerlendirme süreçlerini kullandıkları…
+
+44
+00:20:39,092 --> 00:20:50,932
+Sonuçları ifade etmek için kullandıkları grafiklere kadar koyabilirsiniz. Yani sonuçta çalışmaya referans vererek o çalışmayı anlamanızı, bize de anlatmanızı istiyorum.
+
+45
+00:20:51,635 --> 00:21:09,375
+Bu tür makaleler okumanın size çok şey kazandıracağına inanıyorum. Eğer konuyu ilgili makaleden okuduğunuzda yeterince anlaşılmıyorsa, referans verilen diğer kaynaklara da gidip bazı bölümleri oradan da okumanız gerekebilir.
+
+46
+00:21:13,011 --> 00:21:38,751
+Özet çıkartmanız aslında gerekiyor proje kapsamında. Özet tabii Türkçe olacak. Derste var mı yabancı öğrenci? Bir öğrenci var galiba. Onun için ayrıcalıklı bir şey yapabiliriz. Bir Erasmus öğrencisi var bildiğim kadarıyla derste. Onun dışında tüm arkadaşlar Türkçe özet hazırlayacaklar.
+
+47
+00:21:39,892 --> 00:21:40,852
+Teşekkürler.
+
+48
+00:21:41,872 --> 00:21:44,632
+Evet, başka soru var mı acaba?
+
+49
+00:21:49,587 --> 00:22:09,228
+Evet, profil resmi koymuşsunuz. Teşekkür ediyorum. Profil resmi eklemeyen arkadaşlardan da rica ediyorum. Lütfen profil resmi siz de ekleyin. En azından kim var karşımda? Şöyle iyi geliyor bana yüzlerinizi görmek. Kamera açamıyoruz. Malum.
+
+50
+00:22:13,395 --> 00:22:26,556
+Zaten network ve yük açısından sıkıntılar var. O yüzden tüm öğrencilere kameralarınızı açın diyemiyoruz ama fotoğraflarınızı ekleyebilirsiniz.
+
+51
+00:22:28,496 --> 00:22:39,596
+Peki, bu hafta konumuz yine temel görüntü işleme yöntemleriyle devam edecek.
+
+52
+00:22:50,612 --> 00:23:09,132
+Evet, buradan devam edebiliriz. Binary Image Processing konu başlığımız ve bu başlık altında PowerPoint sunumunu paylaşmış mıydım ben sizinle? Bununla ilgili PowerPoint herhalde paylaşmadım. Dersten sonra onu da paylaşayım.
+
+53
+00:23:17,907 --> 00:23:43,788
+İlk, Connected Component Labeling konusunu konuşacağız. Ve üçüncü sırada Matematical Morfoloji konusunu konuşacağız. Ben PowerPoint sunumunu yine bu hafta Jupyter Notebook ekranıma taşıdım. Slideleri buradan hiç bölünmeden anlatmak daha iyi geliyor açıkçası.
+
+54
+00:23:46,099 --> 00:23:50,099
+Computer Vision çalışan öğrencilerimizin zaman zaman...
+
+55
+00:23:51,443 --> 00:24:13,364
+Çok temel görüntü işleme yöntemlerini bile bilmediklerini görüyoruz. Aslında hem görüntüyü analiz etme hem de bunlar üzerinde temel bazı pratik işlemlerin nasıl yapıldığını bilmek size ayrı bir yetenek kazandıracaktır. O nedenle bu kavramların üzerinden geçmemiz gerekiyor.
+
+56
+00:24:13,364 --> 00:24:18,884
+Geçen hafta Image Enhancement ve Image Sharpening konusunu konuşmuştuk.
+
+57
+00:24:19,443 --> 00:24:24,864
+Bu hafta temel konularda thresholding ile başlayacağız.
+
+58
+00:24:24,864 --> 00:24:42,864
+Thresholding de amaç aslında elimizdeki görüntüyü bir siyah-beyaz görüntüye dönüştürmek ve bazı uygulamalarda aslında bu tarz bir thresholding işlemi ile segmentation gerçekleştirmek.
+
+59
+00:24:47,443 --> 00:25:05,743
+Arka plandaki pikseller ile ön planda yer alan nesneleri birbirinden ayırt edebilirsek eğer threshold işlemiyle bu işlem aynı zamanda bir segmentation işlemi olarak geçiyor.
+
+60
+00:25:05,743 --> 00:25:11,943
+The Simplest Segmentation Process diye belirtilmiş.
+
+61
+00:25:14,708 --> 00:25:29,327
+Threshold işlemi, burada belirtildiği gibi oldukça hızlı ve az maliyetli bir iş. Çünkü çok basit bir işlem gerçekleştiriliyor arka planda.
+
+62
+00:25:29,988 --> 00:25:34,548
+Görüntü üzerinde bir threshold işlemi yaptığımız zaman.
+
+63
+00:25:36,339 --> 00:25:53,079
+R-İ dediğimiz regionlara, bölgelere ayırıyoruz. Bu iki bölgeye de ayrılabilir ya da ikiden fazla bölgeye de ayrılabilir ama genel uygulama iki bölgeye ayırmak ve bunun için gerekli T threshold dediğimiz eşik değerini bilmek.
+
+64
+00:25:53,556 --> 00:26:21,556
+Bu şekilde de anlatacağız.
+
+65
+00:26:21,556 --> 00:26:31,996
+T eşik değerinden küçük olan pikselleri ise sıfır yani siyaha dönüştürerek bir sıfır birlerden oluşan bir binary image oluşturuyoruz.
+
+66
+00:26:31,996 --> 00:26:49,556
+Threshold işlemi sonunda. Eğer elimizdeki görüntünün arka plan parlaklık değerleriyle foreground dediğimiz ön planda yer alan nesnelerin parlaklık.
+
+67
+00:26:49,556 --> 00:27:17,556
+Bu örneklerle anlatacağız.
+
+68
+00:27:17,556 --> 00:27:33,115
+Ve parlaklık farkı var. Fakat bazı nesneler de burada gördüğümüz gibi biraz daha koyu olabiliyor. Ahşap nesnelerin üzerinde siyahlık ve beyazlıkların olduğu bölgeler olabiliyor.
+
+69
+00:27:45,556 --> 00:28:06,836
+95 parlaklık değeriyle bir threshold işlemi yaptığı belirtilmiş. Yani T değeri olarak 95 seçilmiş. Bu durumda parlaklık değerleri 95 ve üstü olan pikselleri burada gördüğümüz gibi beyaza dönüştürüyor.
+
+70
+00:28:07,231 --> 00:28:22,652
+95'ten küçük olan parlaklık değerlerinde tam siyah dönüştürüyor. Bakın burada sol taraftaki orijinal görüntüde background koyu gri bir tondayken sağ tarafta tümüyle siyah beyaz bir görüntü elde edilmiş.
+
+71
+00:28:22,652 --> 00:28:34,932
+Burada mesela yine dikkatimizi çeken şu nesnenin yan yüzündeki gölgeliklerin arka plana kısmen karışmış olması.
+
+72
+00:28:35,231 --> 00:28:50,331
+Veya bu nesnenin köşelerinin biraz daha yuvarlatılmış bir şekilde görünüyor olması bu yaptığımız işlemi threshold işleminin sıkıntılı bölgelerini bize gösteriyor.
+
+73
+00:28:52,500 --> 00:29:13,720
+Thresholding işleminde T eşik değerinin kaç seçilici? Burada mesela 95 seçtik dedik. İdeal değer. Çünkü foreground objelerinin hiçbiri kaybolmamış tümüyle arka planla ön plan arasında bir ayrıştırma sağlanmış.
+
+74
+00:29:20,500 --> 00:29:41,039
+25 seçseydik ne olurdu diye bakacak olursak, 25 için 25'ten büyük olan tüm parlaklık değerleri bir, yani beyaz olacağı için çok büyük bir alanın, sizin de gördüğünüz gibi çok büyük bir alanın beyaza dönüştürülmesine sebep oluyor.
+
+75
+00:29:48,500 --> 00:29:59,460
+Undersegmentation problemi yaşanıyor. Neden? Çünkü seçtiği parlaklık değeri eşik değeri olarak 225 ve çok yüksek bir değer.
+
+76
+00:30:00,000 --> 00:30:19,159
+225'den küçük olan tüm pikselleri siyaha dönüştürdüğü için gördüğünüz gibi görüntüde foreground object olarak işaretlenmesi gereken alanların tamamı background olarak işaretlenmiş. Yani nesneler kaybedilmiş oluyor.
+
+77
+00:30:20,559 --> 00:30:24,799
+Peki, thresholding algoritmasında ne yapmak gerekiyor?
+
+78
+00:30:28,000 --> 00:30:46,508
+Bu örneğe bakalım.
+
+79
+00:30:48,564 --> 00:30:57,824
+Background dediği pikselleri buna göre ayırt edebiliriz. Büyük olanlara bir, küçük olanlara sıfır şeklinde değer atanabilir.
+
+80
+00:30:57,824 --> 00:31:13,243
+Tabii bu sözünü ettiğimiz değerlendirme, giriş görüntüsünün arka planının ne renk olduğuna göre de değişir. Bizim burada verdiğimiz örneklerde arka plan siyah.
+
+81
+00:31:13,619 --> 00:31:41,180
+Ön plandaki nesneler beyaz. Ama bazı uygulamalarda tam tersi olabiliyor. Yani arka planı beyaz, ön planı siyahta olabiliyor. Değişik durumlar için problemi ona göre değerlendirmeniz lazım. Ezbere gitmememiz gerekir. Buna dikkat. Yani burada yazılan bir kural sadece background-ı siyah olan görüntüler için çalışır.
+
+82
+00:31:41,619 --> 00:32:03,119
+Burada bir Global Thresholding algoritması var. Gonzales'in kitabında yer alan bir algoritma bu. Basit, çok güzel bir algoritma. Ben basit olduğu için buraya koymak istedim. Nasıl karar veriyoruz? T eşik değerini nasıl seçiyoruz? Bununla ilgili bir algoritma verilmiş burada.
+
+83
+00:32:06,132 --> 00:32:19,232
+Selekt an initial estimate for t. A suggested initial estimate is the midpoint between the minimum and maximum intensity values in the image.
+
+84
+00:32:21,076 --> 00:32:31,476
+Birinci adımda, algoritma beş adımdan oluşuyor. Birinci adımda bir initial threshold değeri belirlememiz gerekiyor.
+
+85
+00:32:31,855 --> 00:32:49,036
+Ve bunu belirlerken de bir tavsiyede bulunuyor. Diyor ki bu başlangıç eşik değerini, görüntü içerisindeki en küçük ve en büyük parlaklık değerlerini bulup bunların orta noktası olacak şekilde ilk başlangıç değerini seçebilirsiniz.
+
+86
+00:32:49,076 --> 00:33:16,496
+Birinci adım bu. İkinci adım diyor ki ikinci adımda elimizdeki görüntüyü bu t eşik değerine göre iki gruba ayırırız diyor. G1 ve G2 dediği kümeler. G1 kümesinde belirlediğimiz t eşik değerinden büyük ve eşit olan tüm piksel değerleri, parlaklık değerleri G1 kümesinin elemanı olacak.
+
+87
+00:33:17,076 --> 00:33:25,596
+Ve parlaklık değeri bu eşit değerinden küçük olanlar ise G2 kümesinin elemanı olacak. Bu şekilde iki kümeyi ayırıyor.
+
+88
+00:33:25,596 --> 00:33:35,875
+Ve daha sonra üçüncü adımda, üçüncü adımda, Compute the Average Intensity Values, Mu1 and Mu2.
+
+89
+00:33:36,339 --> 00:33:49,239
+İki kümeyi ayırdık. Her iki kümenin de kendi içerisinde sahip olduğu pikseller var. Hangi parlaklık değerleri olduğunu biliyoruz.
+
+90
+00:33:49,239 --> 00:33:58,419
+Her iki kümenin de Average Intensity Value dediği ortalama parlaklık değerini hesaplıyoruz. Bunlara Müh1 ve Müh2 diyoruz.
+
+91
+00:33:58,771 --> 00:34:06,172
+Tüm parlaklık değerlerinin o küme içerisinde yer alan parlaklık değerlerinin bir ortalamasını alıyoruz.
+
+92
+00:34:06,172 --> 00:34:16,072
+Ve geliyoruz dördüncü adıma. Bakın dördüncü adım diyor ki, Compute a new threshold value.
+
+93
+00:34:17,331 --> 00:34:34,331
+Yeni bir eşik değeri hesaplayacağız. Neye göre hesaplayacağız? G1 ve G2 diye iki kümemiz vardı. Bu iki kümenin ortalama değerlerinin orta noktasını tekrar seçiyor ve buna T değeri diyor. Daha sonra bu işlemleri...
+
+94
+00:34:35,923 --> 00:34:53,203
+Yeni bulduğu T ile bir önceki iterasyonda bulduğu T arasındaki farka bakarak ne kadar değişim gösterdi? Bu değişim miktarı belli bir seviyenin altında kalıyorsa artık sonuca yakınsamış demektir deyip işlemi durduruyoruz.
+
+95
+00:34:53,203 --> 00:35:03,184
+Yok eğer aradaki fark çok büyükse ikinci adımdan dördüncü adıma kadar olan işlemleri tekrar tekrar yapmaya devam ediyoruz.
+
+96
+00:35:03,923 --> 00:35:09,384
+Bir şey, iteratif bir şey, algoritma kullanıyor.
+
+97
+00:35:11,863 --> 00:35:22,083
+Threshold değerini belirlemek için. Genelde üçüncü, dördüncü adımda yakınsıyor zaten bu T değeri arasındaki fark oldukça küçülüyor.
+
+98
+00:35:23,783 --> 00:35:28,384
+Bu bir alternatif yol. Bununla ilgili...
+
+99
+00:35:30,003 --> 00:35:35,703
+Mesela size şöyle bir örnek gösterebilirim. Küçük bir örnek hazırlamıştım.
+
+100
+00:35:37,235 --> 00:35:52,796
+Egzersiz olması için. Evet, bu bir sınav sorusuydu. Şimdi malum biz her şeyi evet Python'da yazıyoruz, kodluyoruz, ediyoruz ama bu sınavın bir de yazılı ayağı var.
+
+101
+00:35:52,796 --> 00:36:02,796
+Orada böyle küçük örnek görüntü parçaları üzerinde bu işlemlerin nasıl yapıldığını elle hesaplamanızı isteyeceğim.
+
+102
+00:36:05,235 --> 00:36:24,235
+Bu örnekte diyor ki, give a flowchart or pseudo code to use automated global thresholding method, which is described by Gonzalez and Woods on the given image ff.
+
+103
+00:36:26,235 --> 00:36:31,235
+What is the global threshold value at the end of first iteration?
+
+104
+00:36:32,659 --> 00:36:53,579
+Ve burada fx'ye dediğimiz bir imaj verilmiş. Görüntü 5 satır, 5 sütundan oluşuyor. Gray level bir imaj. Yani 0 ile 255 arasında değer alabilir.
+
+105
+00:36:54,291 --> 00:37:05,091
+Ancak algoritmayı az önce gördük. Algoritma beş adımdan oluşuyor ve diyordu ki ilk adımda bir initial threshold value belirleyin diyordu.
+
+106
+00:37:05,091 --> 00:37:21,251
+Burada belki şuraya bir step one diyebiliriz. Bu birinci adım dediğim adımda görüntü içerisindeki minimum parlaklık değerini
+
+107
+00:37:21,556 --> 00:37:39,695
+76 olarak tespit ettim. Görüntü içerisindeki en büyük parlaklık değerini de 203 olarak tespit ettim. Minimum ve maksimumu bulduktan sonra bunların orta noktasını bulmam gerekiyor. Yani toplayıp ikiye böldüğümde.
+
+108
+00:37:45,300 --> 00:37:51,400
+Gördüğünüz gibi Initial Threshold Value dediğimiz değeri bulmuş oluyoruz.
+
+109
+00:37:53,400 --> 00:37:58,340
+Şuraya da ikinci adım diyelim.
+
+110
+00:38:06,739 --> 00:38:11,719
+Büyük ve buna eşit olan pikselleri G1 kümesine alıyorum.
+
+111
+00:38:12,719 --> 00:38:23,179
+Tüm matriz içerisinde threshold olan 139'a eşit ve büyük olan pikselleri G1 kümesine aldım.
+
+112
+00:38:23,179 --> 00:38:27,420
+76, 90, 90, 3 tane 90 var, 82 var.
+
+113
+00:38:28,119 --> 00:38:33,399
+90, 82, 90, 80, 82, 101.
+
+114
+00:38:34,047 --> 00:38:46,867
+113, 103, 120 ve 103. Şu satıra geçtiğim zaman artık matriz üzerindeki tüm değerlerin eşit değerinden büyük olduğunu görüyorum.
+
+115
+00:38:47,507 --> 00:38:54,827
+Büyük olanlara biz şey demiştik, bunları ters yazmışım. Aşağıda olacak bu, öbürü bunlar yer değiştirecek.
+
+116
+00:38:56,947 --> 00:39:00,188
+Büyük olanlar demişim, Ctrl X.
+
+117
+00:39:03,572 --> 00:39:04,592
+Şöyle.
+
+118
+00:39:14,324 --> 00:39:21,064
+Şuna G1 diyeceğiz. Aşağıdakine G2 diyeceğiz. Daha doğru olacak değil mi?
+
+119
+00:39:23,423 --> 00:39:31,064
+Şöyle. T eşik değerinden küçük olanlar bunlar, büyük olanlar bunlar. Sonra üçüncü adımda...
+
+120
+00:39:45,492 --> 00:39:54,132
+Her bir küme için Average Intensity Value, Müh 1 ve Müh 2'nin hesaplanması gerekiyor.
+
+121
+00:39:54,132 --> 00:40:02,972
+Ve dördüncü adımda ise bunların orta noktası threshold değeri olarak hesaplanmalıdır diyor.
+
+122
+00:40:07,412 --> 00:40:08,452
+Şöyle.
+
+123
+00:40:09,844 --> 00:40:23,524
+Üçüncü adımda hesaplayın lütfen. Ben hesaplamadım. Step 3 diyelim. Burada Müh 1 ve Müh 2 için burada Müh 1 ve Müh 2 diyeyim ben.
+
+124
+00:40:45,780 --> 00:40:50,100
+2, 4, 6, 8, 10 tane parlaklık değeri var.
+
+125
+00:40:51,000 --> 00:40:57,780
+Hocam, G1 sanırım 188,1 çıktı. Arkadaşlar da teyit ederse iyi olur.
+
+126
+00:40:58,420 --> 00:40:59,780
+188 nokta çıktı.
+
+127
+00:40:59,780 --> 00:41:00,579
+Ben de öyle bulundum.
+
+128
+00:41:01,060 --> 00:41:01,820
+Evet, evet.
+
+129
+00:41:02,200 --> 00:41:03,220
+M2 ne çıktı?
+
+130
+00:41:03,660 --> 00:41:05,579
+Onu hesaplamadım daha, hemen bakalım.
+
+131
+00:41:05,579 --> 00:41:05,860
+Tamam.
+
+132
+00:41:16,403 --> 00:41:18,663
+92.8 bulduk hocam.
+
+133
+00:41:18,663 --> 00:41:43,724
+92.8 bulduk. Güzel. Şimdi her iki grup içinde mevcut parlaklık değerlerinin ortalamasını bulduktan sonra Step 4 diyorum ve yeni T New dediğim değeri hesaplıyorum.
+
+134
+00:41:46,963 --> 00:41:48,604
+Tenive dediğim değer
+
+135
+00:41:58,132 --> 00:42:01,912
+M1 artı M2 bölü 2.
+
+136
+00:42:15,284 --> 00:42:19,463
+Ve buradan, 22 değil 2, kaç çıkıyor?
+
+137
+00:42:20,764 --> 00:42:25,284
+140,45.
+
+138
+00:42:27,284 --> 00:42:38,324
+Evet, şimdi burada eğer ikisi arasındaki, bir önceki adımdaki t değeriyle yeni bulduğum t değeri arasındaki fark,
+
+139
+00:42:41,460 --> 00:42:50,360
+Bu işlemleri yapmaya devam et şeklinde bir kural tanımladıysam eğer, birinci step'e geri dönecek, bu işlemleri tekrarlayacak.
+
+140
+00:42:50,480 --> 00:42:57,140
+Ama zaten 140 eşik değeri bu kümeleri değiştirmeyeceği için ikinci iterasyonda sonlanacak.
+
+141
+00:42:57,140 --> 00:43:09,460
+Burada problemde bizim istediğimiz birinci iterasyonun sonundaki intensity değeriydi. O da 140.45 yapıyor zaten. Bunu yazmamız yetiyor.
+
+142
+00:43:09,460 --> 00:43:28,180
+Şurada threshold value at the end of first iteration diye sormuştuk. Dolayısıyla problemi bu şekilde çözmüş olduk. Ama bir ikinci iterasyon gerekseydi, ikinci iterasyonu da benzer şekilde yapmamız gerekirdi.
+
+143
+00:43:28,180 --> 00:43:34,180
+Peki, şimdi tekrar...
+
+144
+00:43:34,739 --> 00:43:36,739
+Şuraya dönecek olursak.
+
+145
+00:43:41,523 --> 00:43:50,123
+Threshold ile ilgili yine Psyc Image altında hazır threshold metotları var.
+
+146
+00:43:50,123 --> 00:43:52,123
+Burada...
+
+147
+00:43:54,068 --> 00:44:04,428
+Şurada gördüğümüz orijinal bir belgenin, dökümanın bir sayfası, taranmış bir kopyası, bir resim olarak taranmış.
+
+148
+00:44:04,428 --> 00:44:14,748
+Bu görüntüde problem şu, farkındaysanız sayfanın sol tarafı biraz daha gölgeli, sağ taraf biraz daha aydınlık.
+
+149
+00:44:18,003 --> 00:44:35,203
+Bize eğer sağda gördüğümüz gibi bu karanlık kalan bölgeyi siyaha döndürerek bir sonuç üretirse burada olduğu gibi artık yazı okunmaz hale geliyor. Bunu olabildiğince azaltan yöntemi tercih etmemiz gerekiyor.
+
+150
+00:44:35,203 --> 00:44:46,003
+Burada region-based segmentation mesela o anlamda biraz daha başarılı olmuş. Burada psych image altındaki try-all filter.
+
+151
+00:44:46,003 --> 00:44:57,743
+Try All Threshold dediği bütün mevcut threshold algoritmalarını ayrı ayrı uygulayarak sonucu görüntülemiş.
+
+152
+00:44:58,223 --> 00:45:08,983
+Birbirlerine göre çok farkları yok ama tabii şu dediğim gibi Region Based Segmentation burada biraz daha bu problemin üstesinden gelme noktasında iyi olmuş.
+
+153
+00:45:09,523 --> 00:45:21,724
+Bu mevcut algoritmalar içerisinde en başarılılardan biri OTSU threshold algoritmasıdır. Ama OTSU biraz hız açısından avantajlıdır. Onu söyleyebilirim.
+
+154
+00:45:24,884 --> 00:45:40,603
+Threshold yöntemleriyle ilgili bir başka örnek. Threshold mean yöntemi. Aslında mean yöntemi burada da var. Sadece onu burada tek başına kullanarak bir değerlendirme yapmış.
+
+155
+00:45:52,239 --> 00:46:01,360
+Naive threshold value, which is sometimes used as a guess value. Yani ortalama değerden giderek.
+
+156
+00:46:02,579 --> 00:46:14,639
+Bir çözüm üretmiş ve farklı bir görüntüye, kameraman görüntüsüne bunu uygulayarak background ile foreground'ı birbirinden ayırt etmeyi amaçlamış.
+
+157
+00:46:15,679 --> 00:46:19,579
+Thresholding işleminde bir başka önemli nokta...
+
+158
+00:46:20,980 --> 00:46:29,720
+Bimodal Histogram dediğimiz, histogram yapısına sahip görüntüler üzerinde bu nasıl çalışır, ona bakalım.
+
+159
+00:46:30,780 --> 00:46:38,320
+For pictures, with a bimodal histogram, more specific algorithms can be used.
+
+160
+00:46:38,320 --> 00:46:48,980
+For instance, the minimum algorithm takes a histogram of this image and smooths it repeatedly until there are only...
+
+161
+00:46:48,980 --> 00:46:57,867
+Yani two peaks in the histogram. Şurada bir görüntüye bunu uygulayarak...
+
+162
+00:47:02,483 --> 00:47:09,903
+İki tane maksimumu olan bir hale dönüştürüyor ve oradan threshold bulmaya çalışıyor.
+
+163
+00:47:10,583 --> 00:47:15,643
+Şurada gördüğümüz orijinal görüntü. Bu orijinal görüntü için verilmiş histogram.
+
+164
+00:47:15,643 --> 00:47:28,583
+By model dediği burada iki tane pik var. Bunlar üzerinden giderek bir eşik değerini bu iki pik arasında uygun değerde seçmeyi hedefliyor.
+
+165
+00:47:34,643 --> 00:47:52,063
+Ve en son olarak Otsu Thresholding yöntemi burada verilmiş. Otsunun aslında en büyük avantajı, benim hatırladığım kadarıyla bunu biz kendi kodunu da yazmıştık vaktiyle, daha hızlı yakınsaması gibi bir özelliğe sahip.
+
+166
+00:47:52,063 --> 00:47:58,063
+Daha az işlemle sizi sonuca götürüyor ama yani...
+
+167
+00:47:58,324 --> 00:48:05,664
+Başarım açısından çok da büyük bir farkı bulduğu eşik değeri anlamında yok.
+
+168
+00:48:06,264 --> 00:48:14,724
+Burada gördüğümüz OTSU thresholding yöntemi uygulanmış görüntünün sonucunu bize gösteriyor.
+
+169
+00:48:25,876 --> 00:48:47,496
+Thresholding işleminin ne olduğunu tarif edebilmelisiniz. OTSU dediğim gibi çok büyük bir fark yok. Aslında sadece oradaki şey hızlı çalışıyor olması. Buradaki optimal threshold dediği yapı aslında orada biraz da hızlı çalışmasından kaynaklı.
+
+170
+00:48:48,884 --> 00:48:59,204
+Çünkü dediğim gibi ot suyu biz zamanında kodunu da yazmıştık. O dönemden hatırlıyorum. Hızlı bir yakınsama özelliğine sahip bir algoritma.
+
+171
+00:49:00,224 --> 00:49:05,544
+Evet, temel kavramların üzerinden gitmeye devam ediyoruz. Şimdi bir ara vereceğim.
+
+172
+00:49:06,604 --> 00:49:14,204
+Ve ondan sonra Connected Component Labeling ve Matematical Morfoloji diye devam edeceğim.
+
+173
+00:49:14,204 --> 00:49:16,884
+Dökümanı da hemen sizinle paylaşacağım.
+
+174
+00:49:16,884 --> 00:49:22,644
+Şunun son halini kaydetmiş olayım. Chat'ten sizinle bu dökümanı paylaşayım.
+
+175
+00:49:23,844 --> 00:49:25,524
+Hocam bir soru sorabilir miyim?
+
+176
+00:49:25,903 --> 00:49:26,963
+Buyurun tabii ki.
+
+177
+00:49:26,963 --> 00:49:38,884
+Image sharpening yaparak bu işlemleri kolaylaştırabilir miydik? Buradaki mesela yazılarda kenarlıkları arttırarak sanki daha kolay görünebilirdi hocam.
+
+178
+00:49:40,340 --> 00:49:42,940
+Thresholding açısından biliyorsunuz.
+
+179
+00:49:43,380 --> 00:49:47,900
+Sharpening'in nasıl bir katkısı olabilirdi mesela? Bir daha açıklayabilir misiniz?
+
+180
+00:49:48,120 --> 00:49:54,960
+Belki harflerdeki kenarlıkları hocam image sharpening ile böyle keskinleştirdik.
+
+181
+00:49:54,960 --> 00:49:57,080
+Şu şey için, doküman için söylüyoruz.
+
+182
+00:49:57,080 --> 00:49:57,660
+Aynen hocam.
+
+183
+00:49:57,740 --> 00:49:58,560
+Öyle mi burada?
+
+184
+00:50:00,560 --> 00:50:07,980
+Evet, deneyebilirsiniz. Mümkün. Ama gerçekten zor bir şey bu. Örnek bu.
+
+185
+00:50:08,500 --> 00:50:27,920
+Evet hocam. Teşekkürler. Rica ederim. Şimdi dokümanı paylaştım sizinle, Jüpiter dosyasını. Bir 10 dakika ara verelim. Bu sırada PowerPoint dosyasını da paylaşırım. 10 dakika sonra görüşürüz.
+
+186
+01:04:24,659 --> 01:04:32,220
+Evet, tekrar merhaba arkadaşlar. Biraz geç kaldım. Kimler bilgisayarın başında acaba?
+
+187
+01:04:32,220 --> 01:04:32,880
+Merhaba hocam.
+
+188
+01:04:32,880 --> 01:04:36,880
+Evet, bana bir el kaldırın, bir el sallayın bakayım.
+
+189
+01:04:37,599 --> 01:04:38,260
+Merhaba hocam.
+
+190
+01:04:38,820 --> 01:04:43,280
+Evet, bizim dersin kuralı her aradan sonra bir el sallıyoruz birbirimize.
+
+191
+01:04:46,996 --> 01:04:59,735
+Yedi kişi el kaldırdı sadece. Eyvah. Evet. Tamam [öğrenci], sen mesajla selam verdin. Dokuz. Yarısından çoğu yok.
+
+192
+01:05:00,235 --> 01:05:01,795
+Hocam buradayım da ben de bulamadım.
+
+193
+01:05:04,947 --> 01:05:13,788
+O zaman hemen yeri öğrenin. Her ders arası isteyeceğim sizden bir elleri görelim falan diye.
+
+194
+01:05:14,127 --> 01:05:17,227
+Ben ters seferinde bulup kaçıp kaybediyorum.
+
+195
+01:05:18,507 --> 01:05:28,907
+Evet, peki. 10 kişi, 11 kişi. Evet, 12 kişi şu anda buradayız dedi. Anca yarıyı bulduk yani. Diğer yarı kayıp.
+
+196
+01:05:32,788 --> 01:05:33,528
+İki ala.
+
+197
+01:05:41,811 --> 01:05:53,112
+Şimdi teşekkür ediyorum. Ellerinizi de gördüm. Sizin de sesinizi duydum. Şimdi kaldığımız yerden devam edelim.
+
+198
+01:06:12,947 --> 01:06:18,268
+Acaba slide'da daha mı iyiydi? Slide'dan gidelim. Şuradan.
+
+199
+01:06:51,155 --> 01:07:07,755
+Evet, şimdi Connected Component Labeling diye bir konu başlığımız var. Görüntü işlemede temel adımlardan biri olarak geçiyor bu. Bir pikselin yine bir binary image üzerinden gittiğimizi varsayıyorum.
+
+200
+01:07:08,820 --> 01:07:25,520
+Komşusu olan, kendisiyle aynı değere sahip komşusu olan piksellerle bir bölge oluşturuyor. Sonuçta bu birbirine bağlantılı bir bölge pikseli olduğu için aynı etiketi alması gerekiyor.
+
+201
+01:07:25,520 --> 01:07:36,820
+Buna bir örnek, bir binary image üzerinden verilmiş bir örnek görüyorsunuz. 2, 4, 6, 8 satır, 2, 4, 6, 8 sütundan oluşan binary bir...
+
+202
+01:07:36,820 --> 01:07:52,440
+Demici örneği verilmiş burada. Foreground olarak beyaz pikselleri alıyorum. Beyaz demek bir demek. Yani burada bir olan pikseller bir bölge, siyah olan sıfır olan pikseller ise arka planı gösteriyor olsun.
+
+203
+01:07:52,440 --> 01:08:04,800
+Buna göre şu bölge, birlerden oluşan bu bölge kendi içinde birbiriyle bağlantılı bir alan ve hatta görüyorsunuz şu tarafa doğru da dönüyor. Beyaz olan pikseller bakın.
+
+204
+01:08:04,820 --> 01:08:22,159
+Gördüğünüz gibi bu bölge içerisinde kalan tüm pikseller birbiriyle bağlantılı pikseller. Dolayısıyla bu beyaz bölge içinde olan bütün piksellerin aynı etiketi alması gerekir.
+
+205
+01:08:28,692 --> 01:08:35,292
+Ve bu alandaki bütün piksellerin birbiriyle bağlantılı olduğunu söyleyebiliriz.
+
+206
+01:08:35,372 --> 01:08:37,852
+Ve bunların birbiriyle aynı etiketi alması gerekir.
+
+207
+01:08:37,912 --> 01:08:42,272
+Burada gördüğümüz gibi iki etiket değerini almış.
+
+208
+01:08:42,272 --> 01:08:50,332
+Bunu, bunu, yani Yükşehir deyip şuraya geçeceğim.
+
+209
+01:08:53,427 --> 01:08:58,927
+Yazabilmek, tahtayı kullanabilmek adına şuradan gideyim.
+
+210
+01:09:02,387 --> 01:09:08,827
+Evet, şimdi kalem.
+
+211
+01:09:29,524 --> 01:09:33,364
+Bazen beni uğraştırıyor böyle ama çözeceğiz.
+
+212
+01:09:37,555 --> 01:09:39,235
+Kalemi seçtirmiyor.
+
+213
+01:09:53,939 --> 01:10:11,299
+Pointer kullanarak gidelim o zaman. Az önce söylediğim gibi şu beyaz bölge bizim için foreground piksel olarak yer aldığı için buna aynı bölgeye ait etiketi bir etiketini veriyoruz.
+
+214
+01:10:11,299 --> 01:10:19,519
+Şurada gördüğümüz beyaz olan bölge yine ikinci bir bölge olduğu için bunun label'ı artık 2 oluyor.
+
+215
+01:10:20,212 --> 01:10:38,152
+Burada 3 diye etiketlediği şuradaki beyaz piksellerden oluşan alana 3 etiketini vermiş. Buraya 4 etiketini vermiş. Ve şu alan 5 etiketini almış.
+
+216
+01:10:38,591 --> 01:10:45,691
+Sonuçta bu görüntü içerisinde siyah arka plan, beyaz ön planı gösteriyor dedik.
+
+217
+01:10:45,691 --> 01:10:57,351
+Ve beyaz ön plana sahip birbiriyle bağlantılı bir, iki, üç, dört, beş tane bölge olduğu için bu beş bölgenin ayrı ayrı etiketlerinin olması gerekir.
+
+218
+01:10:57,431 --> 01:11:06,591
+Bunlar birden beşe kadar numaralandırılabilir, farklı renklere boyanabilir ve bu şekilde birbiriyle bağlantılı bölgeler, alanlar işaretlenebilir.
+
+219
+01:11:06,591 --> 01:11:28,591
+Burada bir boyama örneği yapılmış. Mesela bir olan pikseller açık gri bir tona boyanmış. İki olan bölge biraz daha açık. Üç olan ondan biraz daha açık. Dört ve beşin bu şekilde farklı renklerle ifade edilebildiğini...
+
+220
+01:11:30,323 --> 01:11:45,304
+Bir başka ifade şekli olduğunu söyleyebiliriz. Genel olarak kullandığımız böyle label'lar atamak ama bunu renklendirerek görüntülemek de yine mümkün.
+
+221
+01:11:49,747 --> 01:11:55,067
+Şimdi buradan devam edelim aslında.
+
+222
+01:12:01,747 --> 01:12:11,407
+Connected Component Labeling için bir Recursive Labeling algoritması var. Bunu anlatacağım.
+
+223
+01:12:11,407 --> 01:12:18,507
+Ve sanıyorum ödevde de bunu vermiştim. Recursive Labeling algoritmasının kodunu yazmanızı isteyeceğim.
+
+224
+01:12:18,827 --> 01:12:25,188
+Ben size burada sadece bir akış diagramı ve bunun üzerinden bu algoritmanın nasıl çalıştığını açıklayacağım.
+
+225
+01:12:28,659 --> 01:12:34,059
+Ödevi siz bu algoritma için yazacaksınız.
+
+226
+01:12:34,760 --> 01:12:36,699
+Kalem geldi mi? Gelmedi yine.
+
+227
+01:12:48,275 --> 01:12:50,315
+Bir çıkalım da öyle deneyelim.
+
+228
+01:12:57,300 --> 01:13:01,500
+Enable Editing yapmadığım için izin vermiyormuş. Çözdük.
+
+229
+01:13:16,340 --> 01:13:33,340
+Pekala. Şimdi akış diagramı üzerinden gidelim ve rekürsif bir Connected Component Labeling işlemi nasıl yapılabilir bunu bir görelim.
+
+230
+01:13:33,340 --> 01:13:37,800
+Burada bir prosedür verilmiş.
+
+231
+01:13:49,140 --> 01:14:11,380
+Yine kalemi gitti. Burada bir prosedür verilmiş şu bölümde. Bu prosedürün inputu B dediğimiz bir binary image matrisi ve LB dediğimiz bir label matrisi.
+
+232
+01:14:16,756 --> 01:14:21,956
+B Binary Image matrisinin negatifini alarak yazıyor.
+
+233
+01:14:22,756 --> 01:14:33,416
+B dediğimiz Binary Image matrisi içerisinde sıfırlar var, birler var, bir var, sıfır var. Tümüyle bir Binary Image.
+
+234
+01:14:44,404 --> 01:14:51,624
+Sıfırlar aynı, sadece bir olan gözler eksi bir olmuş olacak.
+
+235
+01:14:52,344 --> 01:15:01,064
+Bu şekilde bunun bir negatifini almış ve label matrisini oluşturmuş.
+
+236
+01:15:01,304 --> 01:15:02,964
+LB matrisini oluşturmuş.
+
+237
+01:15:02,964 --> 01:15:11,164
+Daha sonra label'a sıfır atamış ve find component dediği bir prosedürü çağırmış.
+
+238
+01:15:11,604 --> 01:15:32,684
+Find Component prosedürü, hemen altta gördüğümüz prosedür, şurada. Bu prosedürde ise LB matrisini, yani negatifini aldığımız matrisi ve label değişkenini gönderiyor prosedüre.
+
+239
+01:15:32,684 --> 01:15:36,043
+İçeride ne yapılıyor? Şöyle bir bakacak olursak.
+
+240
+01:15:36,787 --> 01:15:50,507
+L eşit sıfırdan maksimum rova kadar, yani bütün satırlar için, P eşit sıfırdan maksimum kalım, yani bütün kolonlar için gerçekleştirilecek diyor bu işlem.
+
+241
+01:16:00,756 --> 01:16:12,332
+Eğer eksi bir varsa, label'ı bir arttırıyor ve bir search prosedürü çağırıyor. Search prosedürü de...
+
+242
+01:16:12,340 --> 01:16:19,100
+Yine bir altta verilmiş. Search prosedürüne hangi parametreleri aktarıyor?
+
+243
+01:16:19,100 --> 01:16:24,779
+Label matrisini, label değişkenini, label'ı burada bir arttırmıştı.
+
+244
+01:16:25,520 --> 01:16:38,380
+Ve şu an bizim işlem yaptığımız matris gözünün satır ve sütun numarasını, L ve P değerlerini bu prosedüre aktarıyor.
+
+245
+01:16:38,899 --> 01:16:48,699
+Bu prosedürde LB matrisinin LB gözüne label'ı koyuyor.
+
+246
+01:16:48,859 --> 01:16:56,779
+Çünkü az önce örnekte de görmüştük, label'lar atanıyor bu sıfırdan farklı olan gözlere demiştik.
+
+247
+01:17:04,020 --> 01:17:18,920
+Komşuları için bir enset dediği bir küme tanımlıyor. Şimdi lütfen şöyle düşünün. L virgül P dediğim matris gözü, L satır numarası P sütun numarasını gösteriyor.
+
+248
+01:17:27,315 --> 01:17:37,796
+Doğu ve Batı yönündeki dört komşusu n set dediğim kümenin elemanları olacak. Yani onların indekslerini kullanacak.
+
+249
+01:17:37,796 --> 01:17:46,475
+Eğer dört komşuluk değil de bu algoritmayı sekiz komşuluk için yapıyorsam, bu durumda şuradaki...
+
+250
+01:17:46,836 --> 01:17:51,136
+Diğer ara yönler de işin içine katılmış olacak.
+
+251
+01:17:51,775 --> 01:17:54,095
+Dediğim gibi bu işlem iki şekilde yapılabilir.
+
+252
+01:17:54,095 --> 01:18:08,015
+Bir four neighbors dediğimiz formda veya sekiz komşuluk şeklinde yapılabilir.
+
+253
+01:18:10,003 --> 01:18:26,884
+Bu komşuları n-set dediğimiz kümenin içerisine alıyor. Bu komşuların indekslerini aslında, yani satır sütun numaralarını bir kümeye kaydediyor.
+
+254
+01:18:26,884 --> 01:18:37,584
+Ve diyor ki sonra, for each L'P' in n-set demiş. Bu kümeye yerleştirdiği tüm bu komşu pikseller için.
+
+255
+01:18:38,100 --> 01:18:47,260
+Aynı kontrolü tekrar yapıyor. Diyor ki, LB madresinin L üstü P üstü gözü eksi bire eşit mi diye kontrol ediyor.
+
+256
+01:18:47,260 --> 01:19:01,900
+Ve eğer eşitse, bunu tekrar aynı prosedüre rekürsif olarak gönderiyor. Yani şuradaki search işlemi.
+
+257
+01:19:02,192 --> 01:19:16,011
+Search prosedürünün içerisinde tekrar çağrılıyor. Ama bu defa L üsü, P üsü indeksleri için çağrılıyor. Bu şekilde kendi içinde sürekli...
+
+258
+01:19:17,247 --> 01:19:25,188
+Bu örneğe sıfırdan farklı ve eksi bire eşit olan gözler için bu çağırma işlemini gerçekleştiriyor.
+
+259
+01:19:25,747 --> 01:19:31,887
+Güzel bir algoritma aslında rekürsif olduğu için biraz memori ihtiyacı duyuyor.
+
+260
+01:19:32,147 --> 01:19:44,188
+Fakat algoritma hızlı yakınsayan, yani hızlı çalışan bir algoritma olarak bize birbiriyle bağlantılı bileşenlere...
+
+261
+01:19:44,756 --> 01:19:58,056
+Bu algoritmanın akış diagramını ben sizinle paylaştım. İlk önce belki dört komşuluk için yazarsınız.
+
+262
+01:20:00,000 --> 01:20:16,340
+Komşusuna bakarak yapabiliyor mu diye kontrol edersiniz. Sonra da aynı işlemi bir de sekiz komşuluk için parametrik hale getirerek yazabilirsiniz. Zaten ödevde sanırım her ikisi için de ayrı ayrı çözüm yapmanızı istiyorum. Farklı test görüntüleri için.
+
+263
+01:20:18,819 --> 01:20:21,060
+Bu bölümde sormak istediğiniz herhangi bir şey var mı?
+
+264
+01:20:23,180 --> 01:20:25,000
+Hocam, bu algoritma...
+
+265
+01:20:25,811 --> 01:20:37,412
+Reinforcement Learning'de de buna benzer bir şey var da acaba o tarz alanlarda mı kullanılıyor daha çok? Yani yol bulma, özellikle aklıma haritalama geliyor hocam.
+
+266
+01:20:38,631 --> 01:20:51,692
+Reinforcement Learning'de ama şey var, orada daha çok bir ödül mekanizması kullanıyor ve çalışma mantığında biraz daha tabii farklılıklar var. Olabilir tabii benzerlikler de olabilir yani.
+
+267
+01:20:52,564 --> 01:21:12,963
+Arama algoritması 10 an mı sattı bana hocam? Bir de arama kısmında mesela kenar kısımlarda sorun yaşayacak gibi görünüyor. O yüzden mesela ilk satırı düşündüğüm zaman üstteki komşuya bakmak için bir öncekine gidecek ama bir önceki satır olmadığından.
+
+268
+01:21:13,427 --> 01:21:15,427
+Sorun yaşayabilir diye düşünüyorum.
+
+269
+01:21:15,427 --> 01:21:20,448
+Onu sınır değerleri için şu komşuluklarda onu koyacaksınız.
+
+270
+01:21:20,708 --> 01:21:28,568
+Yani işte eğer sıfırsa veya eksi bir geliyorsa gibi keyzleri değerlendirmeniz gerekir.
+
+271
+01:21:28,667 --> 01:21:29,488
+Tabii doğru yani.
+
+272
+01:21:30,208 --> 01:21:39,548
+Onları bu şeye koyarsanız, şurada en set dediği seti oluştururkenki kısımda o kontrolleri koyarsanız sıkıntı olmaz.
+
+273
+01:21:40,212 --> 01:21:41,132
+Tamamdır Hicam.
+
+274
+01:21:41,712 --> 01:21:55,652
+Ama güzel bir algoritma. Ben bunu yazmanızı gerçekten isterim. Bir de verdiğim test görüntüsü biraz trikli sizi, biraz ilginç bir sonuç döndürecek size yani. Öyle söyleyeyim.
+
+275
+01:21:57,472 --> 01:22:00,532
+Şimdi tekrar şeyden devam edelim.
+
+276
+01:22:05,332 --> 01:22:09,332
+PowerPoint'ten değil, neyden devam ediyorduk? Şuradayız.
+
+277
+01:22:11,332 --> 01:22:11,592
+Evet.
+
+278
+01:22:13,992 --> 01:22:22,852
+Jüpiter ekranından devam edeceğim. Yapıyı anlattım. Recursive Labeling algoritmasının nasıl çalıştığını konuştuk.
+
+279
+01:22:24,787 --> 01:22:34,763
+Bir görüntü de bağlantılı birleşenleri etiketlemek için ben bunu şeyde...
+
+280
+01:22:34,804 --> 01:22:52,804
+Burada hazır bir şey var aslında. Site Image altında measure.label diye bir fonksiyon var. Bu iş için geliştirilmiş. Bunu kullanılarak tabii ki çok rahat yapabiliyoruz. Bu örneği size göstermek istedim. Bu örnekte...
+
+281
+01:22:53,587 --> 01:23:06,948
+Siyah arka plan ve beyaz foreground objeleri var. Yani şunların gördüğünüz her biri birer obje ve bu objeler kendi içinde birbiriyle bağlantılı bileşenleri ayrı etiketler alıyor.
+
+282
+01:23:06,948 --> 01:23:21,587
+Sağ tarafta gördüğümüz gibi burada iki ayrı yöntem ile bu labellar, all labels ve blobs labels diye gösterilmiş. Bunları burada renklendirerek...
+
+283
+01:23:21,587 --> 01:23:23,827
+göstermiş.
+
+284
+01:23:27,252 --> 01:23:37,052
+Sarı, yeşil, mavi ve mor, kırmızı gibi renkler kullanmış her bir komponenti ayrı bir renkle ifade etmiş.
+
+285
+01:23:37,152 --> 01:23:43,612
+Mesela şu parçalar birbiriyle bağlantılı. O yüzden onları aynı etiket atamış.
+
+286
+01:23:43,612 --> 01:23:49,292
+Şunlar farklı renkler. Birbirine yakın gibi görünmekle beraber farklı renkler.
+
+287
+01:23:55,252 --> 01:24:01,832
+Bağlantılı bileşenleri ayırt etme işini yapabiliyoruz.
+
+288
+01:24:04,632 --> 01:24:09,452
+Geldik mathematical morfolojiye. Buraya kadar sorunuz var mı acaba?
+
+289
+01:24:12,452 --> 01:24:22,392
+Bu kodu açıklamadım ama burada hazır kod olduğu için measure.label dediği işlem ile bunu yapıyor.
+
+290
+01:24:23,315 --> 01:24:36,835
+Verdiği görüntü üzerinde bu işlemi yapıp sonuçlarını siz de görebilirsiniz.
+
+291
+01:24:39,188 --> 01:24:52,347
+Soru yok herhalde. Matematikal morfoloji ile devam edelim. Bu da güzel bir yöntem. Aslında hiç beklemediğiniz noktada işinize yarayabiliyor bu matematikal morfoloji dediğimiz yöntemler.
+
+292
+01:24:55,228 --> 01:24:58,347
+Yapılandırma elemanı adı verilen bir...
+
+293
+01:24:59,859 --> 01:25:07,260
+Bu şekilde de gördüğümüz gibi değişik formlarda yapılandırma elemanları ile kullanılıyor.
+
+294
+01:25:08,180 --> 01:25:21,819
+Burada biz binary morfolojiden bahsedeceğiz. Yani giriş görüntüsü bir binary imiş. Bu grayscale imiş de olabilir. Bununla ilgili uygulamalar da var. İnternette görebilirsiniz.
+
+295
+01:25:27,859 --> 01:25:35,699
+Bir de yapılandırma elemanını temsil ettiğimiz bir S matrisimiz olacak. Structuring elementten geliyor.
+
+296
+01:25:36,600 --> 01:25:44,739
+S genelde burada belirtildiği gibi o da küçük bir binary image. Fakat değişik formlar da olabiliyor.
+
+297
+01:25:45,519 --> 01:25:55,559
+Mesela ne olabilir? Burada gördüğümüz gibi bir dikdörtgen şeklinde olabilir. Bir kare formunda, üçe üçlük bir kare formunda olabilir.
+
+298
+01:25:55,859 --> 01:26:04,879
+Burada gördüğümüz gibi disk formunda olabilir veya ring formunda olabilir. Değişik formlarda, değişik şekillerde olabiliyor.
+
+299
+01:26:11,604 --> 01:26:27,664
+Bu yapılandırma elemanında şurada boş bırakılan gözler sıfır. Çok hani gözü yormaması için bunlar işaretlenmemiş. Bir olan gözler sadece işaretlenmiş. Tüm yapılandırma elemanlarının bir merkez noktasının olması gerekiyor.
+
+300
+01:26:27,664 --> 01:26:39,164
+O yüzden aynı filtrelerde kullandığımız tek sayıda 3'e 3, 5'e 5 gibi formlarının olması gerekiyordu.
+
+301
+01:26:39,604 --> 01:26:57,944
+Burada da benzer bir yapı var. 3'e 3 bir formda verilmiş bir merkez noktası tanımlanmış ve merkez noktaları burada siyah bir nokta ile işaretlenmiş. Bu artı şeklinde olabilir yapılandırma elemanı. Ne demek? Bu gözleri birle dolu, şu gözlerde sıfır var.
+
+302
+01:27:07,604 --> 01:27:27,363
+Çubuk şeklinde verilmiş bir yapılandırma elemanı var. Buna diamond shape deniyor. Bunun da yine bir merkez noktası var gördüğünüz gibi. Bunları bir matrise giydirerek, hemen alt satırında bir matrise giydirerek göstermiş şu iki şekli. Bunun için öyle bir şeye ihtiyaç duymamış.
+
+303
+01:27:29,011 --> 01:27:43,711
+Şimdi iki tane temel işlemimiz var binary imic üzerinde morfoloji yaparken. Biri erosion yani aşındırma demek. Öbürü de dilation yani yayma işlemi demek.
+
+304
+01:27:43,711 --> 01:27:54,971
+Erosion işlemi, erosion ise shrinking or thinning operation demiş. Aşındırma veya inceltme işlemi yapar diyor.
+
+305
+01:27:57,011 --> 01:28:12,831
+Yaptığına hemen bir bakalım. Burada şeyler değişmiş, tabii semboller. A matrisi giriş görüntüsünü, B ise bu şekilde yapılandırma elemanını gösteriyor. Bu bir Dumbbell şekli.
+
+306
+01:28:15,923 --> 01:28:33,923
+Yapısını temsil ediyor hemen hemen. Ve artı şeklinde verilmiş bir yapılandırma elemanı ile bu görüntüde aşındırma işleminin nasıl yapılacağına dikkatinizi çekmek istiyorum. Bunları da yine manuel olarak yapabilmenizi bekliyorum.
+
+307
+01:28:43,604 --> 01:29:00,184
+Bir olan göz ile çakıştırılıyor. Tekrar söylüyorum. Yapılandırma elemanının merkez noktası, görüntünün bir olan, şu arka gözler sıfır, burası bir, bir olan göz ile çakıştırılıyor.
+
+308
+01:29:10,127 --> 01:29:19,028
+Görüntü üzerinde de bir olan gözlerle örtüşmesi durumunda bu matris gözü korunuyor.
+
+309
+01:29:19,028 --> 01:29:30,887
+Eğer tersi bir durum varsa yani artı şeklindeki yapı, ben bunu yine şeyden anlatsam çizerek daha kolay olacak galiba.
+
+310
+01:29:34,608 --> 01:29:36,207
+Tahtaya geçiyorum.
+
+311
+01:29:43,123 --> 01:29:54,123
+Aşındırma işlemi için dedik ki, şu nokta ile yapılandırma elemanının merkez noktası örtüştürülüyor.
+
+312
+01:29:54,644 --> 01:29:59,903
+Ve yapılandırma elemanının örttüğü alan şu pikseller olacak.
+
+313
+01:30:02,423 --> 01:30:06,083
+Bu piksellerin tamamında eğer bir varsa,
+
+314
+01:30:06,804 --> 01:30:31,783
+Yapılan, yani erosion işlemi sonunda bu merkez pikselin örttüğü değer aynen karşı tarafa aktarılıyor. Yani aşınmamış oluyor. Ama burada gördüğümüz gibi yapılandırma elemanının örttüğü piksellerde şu göz ve bu göz bir değil. O yüzden bu merkez piksel aşındırılıyor.
+
+315
+01:30:32,176 --> 01:30:43,456
+Ve sağ taraftaki görüntüde bu pikselin yerini siz de görüyorsunuz. Ne olmuş? Background haline getirilmiş.
+
+316
+01:30:44,736 --> 01:30:52,716
+Hangi noktalarda aşınma olmaz diye bakacak olursak, mesela şu piksel için baktığımda.
+
+317
+01:30:54,515 --> 01:31:16,295
+Bu piksel için yapılandırma elemanının artı şeklinde örttüğü tüm gözler bir foreground ile örtüştüğü için, yani bir olan değerlerle örtüştüğü için bu piksel korunuyor ve sağ tarafa burada gördüğümüz şekilde bir olarak aktarılıyor.
+
+318
+01:31:20,735 --> 01:31:42,335
+Şuradaki piksel için işlem yaptığımızda, yapılandırma elemanının örttüğü gözlerde, yani kuzey, güney, doğu, batı yönündeki komşularda hepsi bir olduğu için bu piksel korunuyor ve buraya bir olarak aktarılıyor.
+
+319
+01:31:42,335 --> 01:31:45,716
+Şuraya bir olarak aktarılıyor.
+
+320
+01:31:46,996 --> 01:32:09,836
+Aşındırma işlemi sonunda, burada gördüğümüz Dumbbell şekli inceltilmiş ve şurada gördüğümüz gibi bir piksel kalınlığında, şu yönde de baktığımızda 3 piksel kalınlığında bir hale gelmiş. Normal, orijinal boyutu 2, 4, 5 pikseldi şu yönde.
+
+321
+01:32:10,355 --> 01:32:18,796
+Bu yönde baktığımızda da 3 pikselde, burada gördüğümüz gibi aşınmış bir Dumbbell şekli ortaya çıkmış oluyor.
+
+322
+01:32:18,796 --> 01:32:21,355
+Aşındırma işlemi sonunda.
+
+323
+01:32:26,836 --> 01:32:37,456
+Erojun'la ilgili başka örnekler verilmiş burada. Bu aşındırma işlemiyle ilgili örneği ben size sormak istiyorum. Az önce bir örneğini yaptık.
+
+324
+01:32:37,456 --> 01:32:53,935
+Diyor ki, benim elimde D çarpı D boyutunda bir kare alan var ve içi birlerle dolu. Buna A dedim. B dediğim ise yapılandırma elemanını gösteriyor. Yapılandırma elemanının boyutu ise
+
+325
+01:32:54,420 --> 01:33:08,119
+D bölü 4, D bölü 4 boyutunda. Buradaki şeklin boyutuyla ilişkilendirilmiş ve bunun D bölü 4 boyutunda bir kare olduğu belirtiliyor.
+
+326
+01:33:08,119 --> 01:33:19,840
+Buna göre sağ tarafta aşındırma işleminin sonucu verilmiş. Aşındırma işleminin sonucunda baktığım zaman görüntünün yanlarında
+
+327
+01:33:20,724 --> 01:33:29,384
+Kenarlarında, üst ve altta, sağ ve solda ne kadarlık bir alan aşınmış görünüyor ve neden?
+
+328
+01:33:34,676 --> 01:33:40,496
+D bölü ikilik her iki tarafta da. Çünkü yapılandırma elemanının yarısı o kadar oldu.
+
+329
+01:33:40,496 --> 01:33:54,435
+Yarısı. Yani şunun yapılandırma elemanının bir yarısı D bölü 8 yapıyor. O yüzden görüntüde de D bölü 8 kadarlık bir bölge aşınmış ve geriye kalan şekil.
+
+330
+01:33:54,720 --> 01:34:10,360
+Burada gördüğümüz gibi olmuş. Aşındırma işleminin sembolü, burada lütfen dikkat, şu sembol aşındırma işlemini gösteriyor. Şu işlem, erosion.
+
+331
+01:34:12,756 --> 01:34:29,336
+İşlemini temsil ediyor. Peki, altta bir başka örnek var. Yapılandırma elemanı olarak bu defa D yüksekliğinde, D bölü 4 kalınlığında diyelim bir yapılandırma elemanı seçmiş.
+
+332
+01:34:29,336 --> 01:34:35,476
+Bu durumda şu görüntüye ben bu yapılandırma elemanını uygularsam eğer.
+
+333
+01:34:36,692 --> 01:34:40,592
+Ne çıkar ve neden sorusunu soracağım.
+
+334
+01:34:47,412 --> 01:34:52,811
+Burada cevap var ama bana bu cevabı yorumlamanızı istiyorum diğer bir deyişle.
+
+335
+01:35:03,539 --> 01:35:17,840
+Hocam, M ve boydan D bölü 2 yani bulunduğu boyutun yarısı kadar aşınacağı için en kısmında D bölü 4 olduğu için her iki taraftan D bölü 8, D bölü 8 olarak ayrılıyor.
+
+336
+01:35:18,520 --> 01:35:18,840
+Doğru.
+
+337
+01:35:18,840 --> 01:35:23,159
+Boy olarak da D olduğu için onun da D bölü 2, D bölü 2 aşınması gerekiyor.
+
+338
+01:35:24,532 --> 01:35:29,211
+Programın sisteme göre. Bu yüzden de sadece ortada bir çizgi olarak kalmış olacak.
+
+339
+01:35:29,572 --> 01:35:34,391
+Evet, sadece ortada bir çizgi, bir piksel kalınlığında bir çizgi olarak kalacak.
+
+340
+01:35:35,851 --> 01:35:41,311
+A-Irojin B işleminin sonucunda göreceğimiz şekil bu olacak.
+
+341
+01:35:41,672 --> 01:35:44,271
+Aşındırma işleminin güzel bir örneği.
+
+342
+01:35:44,271 --> 01:35:52,532
+Çünkü tam eşit yükseklikte, bu da D yüksekliğinde, görüntüdeki nesne de D yüksekliğinde olacak.
+
+343
+01:35:52,532 --> 01:36:00,992
+Bu işlemin sonucu bir çizgi şeklinde çıkıyor. Güzel, teşekkür ediyorum cevap içinde.
+
+344
+01:36:03,131 --> 01:36:06,252
+Burada değişik erosion örnekleri var.
+
+345
+01:36:09,908 --> 01:36:26,908
+Bir Binary Image verilmiş. Bu Binary Image, bir PCB gördünüz mü? Devre kartının arka yüzü. Printed Circuit Board.
+
+346
+01:36:27,923 --> 01:36:41,984
+PCB dediğimiz devre kartının arka yüzünde bunlar şey, bakır bağlantı yolları böyle bir görüntü verilmiş. Bunun üzerinde aşındırma işlemi uygulanmış.
+
+347
+01:36:42,579 --> 01:36:57,639
+B, C ve D dediği görüntülerde image eroded using square structuring elements of size 11 by 11 kullandığı yapılandırma elemanı kare formunda bir yapılandırma elemanı.
+
+348
+01:36:57,639 --> 01:37:09,819
+11'e 11, 15'e 15 ve 45'e 45 boyutlarında yapılandırma elemanı ile bir aşındırma işlemi yaptığında sonucu görüyoruz.
+
+349
+01:37:10,579 --> 01:37:29,779
+45 oldukça radikal bir şey. Sadece ortada göbekteki beyaz bölge kalıyor. O da aşınmış olarak kalıyor. Diğer bütün bileşenler en son örnekte 45'e 45 yapılandırma elemanında yok olmuş oluyor.
+
+350
+01:37:37,747 --> 01:37:46,747
+Dilation işlemine bakacak olursak, dilation yaymak demek ve bu işlemin sonunda...
+
+351
+01:37:48,627 --> 01:38:06,707
+Görüntüde var olan nesne kalınlaşıyor veya büyüyor diğer bir deyişle. Ne yapıyoruz işlem olarak bakacak olursak? Yine bir A matrisi vermiş D çarpı D boyutunda. B yapılandırma elemanı için ise diyor ki D bölü 4, D bölü 4 boyutundadır diyor.
+
+352
+01:38:16,627 --> 01:38:23,747
+Bir pikseliyle örtüştürdüğümde geriye kalan alanları birle doldurmam anlamına geliyor.
+
+353
+01:38:24,568 --> 01:38:35,408
+Ve bu şekilde bir işlem sonucunda gördüğünüz gibi D çarpı D boyutundaki alan sol taraftan ve sağ taraftan D bölü 8 kadar genişlemiş.
+
+354
+01:38:36,467 --> 01:38:41,268
+Benzer şekilde yukarıdan ve aşağıdan da D bölü 8 kadar genişlemiş oluyor.
+
+355
+01:38:41,268 --> 01:38:49,608
+Dilation işleminin sembolü burada gördüğümüz gibi lojikte kullandığımız XOR işaretiyle gösteriliyor.
+
+356
+01:38:50,047 --> 01:39:11,747
+Bu dilation işleminin sembolü olarak verilmiş. Aşağıdaki örnekte yapılandırma elemanı D yüksekliğinde, D bölü 4 eninde bir yapılandırma elemanı vermiş. Bu durumda yayma işleminin sonucu, burada gördüğümüz gibi yukarıdan D bölü 2 kadar genişliyor.
+
+357
+01:39:18,047 --> 01:39:29,827
+Aşağıda d bölü 2 kadar genişliyor. Sağ ve sol taraflarda ise d bölü 8, d bölü 8 kadar, bunun yarısı kadar bir genişleme gerçekleşiyor.
+
+358
+01:39:36,148 --> 01:40:02,007
+Burada Dilation örnekleri verilmiş. Taranmış bir yazı, metin görüntüsünde birbirinden kopmuş olan parçaları bağlantılı hale getirmek için bir Dilation işleminin artı formunda bir yapılandırma elemanı ile bu problemin üstesinden geleceğini söylüyor.
+
+359
+01:40:05,555 --> 01:40:15,495
+Şimdi işlemi bir de binary olarak gösterecek olursak. Elimizde böyle bir orijinal görüntü var.
+
+360
+01:40:16,051 --> 01:40:43,671
+Bunun üzerine bir yapılandırma elemanı koymak istiyorum. Şu sol tarafta orijinal görüntü var. Bu yapılandırma elemanıyla yayma işlemini yapmak demek, yapılandırma elemanının merkezini görüntüdeki bir olan pikselle çakıştırıyorum ve bunun etrafında yapılandırma elemanının sahip olduğu pikseller kadar gözü birlerle dolduruyorum. Eğer bu alanlar olsaydı buralarda bir olacaktı ama yok.
+
+361
+01:40:44,275 --> 01:40:48,996
+Sonra yapılandırma elemanının merkezini bir sonraki piksele kaydırıyorum.
+
+362
+01:40:50,056 --> 01:40:55,775
+Ve bu pikselin sekiz komşusunu birlerle dolduruyorum.
+
+363
+01:40:57,315 --> 01:41:00,076
+Dylation işlemi bu şekilde ilerliyor.
+
+364
+01:41:00,636 --> 01:41:04,076
+Sonra bir sonraki pikselle merkez noktayı çakıştırıyorum.
+
+365
+01:41:04,076 --> 01:41:06,296
+Benzer formda.
+
+366
+01:41:06,771 --> 01:41:17,651
+Boş olan gözlerini, sekiz tane komşusunu birlerle dolduruyorum. Bu taraftan baktığımda görüntü bu yönde. Birer piksel genişleyecek.
+
+367
+01:41:21,235 --> 01:41:31,735
+Bu piksel için şuraya da koymam gerekecek, buraya da koymam gerekecek birileri. Bunun için tüm bu yönlere
+
+368
+01:41:35,283 --> 01:41:44,844
+Birileri yerleştirerek yayma işlemi sonucunda elde ettiğim matrisi sağ taraftaki gibi oluşturacağım.
+
+369
+01:42:09,395 --> 01:42:31,996
+Şimdi ara vermeyeceğim. Şu konuları bitireyim. Çok da uzun bir şey kalmadı çünkü. Ara vermeden ilerleyelim. Sadece size şunu söylemek istiyorum. Ben bir binary görüntü verdiğim zaman, hani dedim ya bu işin bir de kağıt üzerinde sınav kısmı olacak. Orada sizden bu tür işlemleri yapabilmenizi bekleyeceğim.
+
+370
+01:42:34,420 --> 01:42:49,119
+Yani vermiş olduğum bir binary image'e arka arkaya bir yapılandırma elemanıyla erosion veya dilation işlemi arka arkaya uyguladığımızda ne sonuç alırı adım adım bana oluşturabilmelisiniz.
+
+371
+01:42:49,979 --> 01:42:55,719
+Bununla ilgili Python kodu zaten birazdan çalıştıracağım. İki tane işlemimiz daha var. Opening ve Closing.
+
+372
+01:43:01,332 --> 01:43:05,852
+Burada belirtildiği gibi opening işlemi için diyor ki,
+
+373
+01:43:05,852 --> 01:43:12,852
+smooths the contours of an object, breaks narrow its muse and eliminates thin...
+
+374
+01:43:13,043 --> 01:43:27,984
+Produsions. Kullanım amacı olarak görüntünün kenarlarında smoothing dediğimiz yumuşatma işlemini yapıyor. Yani küçük çıkıntılar vesaireler varsa onları temizlemek için kullanılıyor.
+
+375
+01:43:27,984 --> 01:43:34,923
+Ve dar bir takım bağlantılar varsa bunları koparmak için kullanılıyor diyor.
+
+376
+01:43:39,252 --> 01:43:58,112
+Aşındırma işlemi, sonra bir Dylation yani bundan elde edilen output'un üzerine yine aynı yapılandırma elemanıyla bir Dylation işlemi uygulamak demek ve Opening işleminin sembolü burada gördüğümüz şekilde.
+
+377
+01:44:09,363 --> 01:44:26,223
+Yayma işlemi var, Dylation işlemi var. Bu Dylation işleminin outputuna yine aynı yapılandırma elemanıyla bir aşındırma işlemi uygulanarak Closing dediğimiz işlemi gerçekleştirebiliyoruz.
+
+378
+01:44:26,223 --> 01:44:30,223
+Bunun görevi ise...
+
+379
+01:44:30,387 --> 01:44:48,188
+Fusus Narrow Breaks demiş. Yani dar bazı boşlukları, kopuklukları birbirine bağlamak için kullanılıyor diyor. İkisinin kullanım amacı bu şekilde birbirinden ayrılıyor.
+
+380
+01:44:48,188 --> 01:44:54,347
+Burada bir örnek yine var.
+
+381
+01:44:54,996 --> 01:45:08,996
+Bize bir orijinal görüntü verilmiş bir yapılandırma elemanı ile bu görüntü üzerinde erosion, arkasından closing ve opening işlemlerinin sonuçlarını...
+
+382
+01:45:09,492 --> 01:45:29,252
+Bu örneği göstermiş. Bu kare yapılandırma elemanı vardı diye hatırlıyorum. Bu örneği siz de yapın. Üçü üçlük bir kare yapılandırma elemanı bu orijinal görüntüye uygulandığında nasıl bir sonuç veriyor? Siz de lütfen dediğim gibi kağıt üzerinde bunu gerçekleştirin.
+
+383
+01:45:34,131 --> 01:45:50,212
+Teknolojik uygulamalar var. Teknolojik uygulamalar şurada. Bu ilginç bir örnek. Bir fabrikada üretilen dişli parçaların üretimdeki kusurlu...
+
+384
+01:45:50,292 --> 01:46:17,891
+Dişlilerin bazı parçalarında dişler kırık gelebiliyor diyor. Bunu tespit etmek için morfolojik işlemlerden faydalanmışlar. Yani bant üzerinde fotoğrafını aldıkları, kamerayla görüntüledikleri tüm parçalar üzerinde bu dişlilerdeki kopuk bölümleri
+
+385
+01:46:18,292 --> 01:46:37,971
+Şu şekilde, burada gördüğümüz şekilde arka arkaya uyguladıkları matematiksel morfolojik işlemler ile rahatlıkla bulabildiklerini söylüyorlar. Güzel bir örnek. Benim de çok hoşuma gitti. Çünkü adım adım hangi işlemleri yaptıklarını da belirtmişler. Slide'da bunu görebilirsiniz.
+
+386
+01:46:39,271 --> 01:46:44,271
+Morfolojik işlemlerin uygulandığı medikal bir görüntü örneği var.
+
+387
+01:46:45,427 --> 01:47:03,467
+Bu medikal görüntü üzerine önce threshold işlemi uygulanmış. Daha sonra bir morfolojik işlem uygulanarak şu parçaların, organların daha belirgin bir şekilde ortaya çıkması sağlanmış.
+
+388
+01:47:03,467 --> 01:47:12,507
+Bu tür örnekler, örnek uygulamalar, matematiksel morfolojinin kullandığı örnekler gösterilebilir.
+
+389
+01:47:13,300 --> 01:47:25,640
+Şimdi size ben tekrar Jüpiter ekranıma geçip buradan bu işlemleri nasıl yapıldığını hızlıca göstereceğim.
+
+390
+01:47:25,640 --> 01:47:28,492
+Erosion işlemi için...
+
+391
+01:47:28,627 --> 01:47:42,507
+Önce bir bright square dediğimiz bir sentetik görüntü oluşturuyoruz. Bu sentetik görüntü 5 satır 5 lütundan oluşuyor ve ortada kare şeklinde 3'e 3'lük bir alan var.
+
+392
+01:47:46,032 --> 01:48:05,391
+Dilation ve Erosion işlemlerinin nasıl çalıştığını görmek istiyorum. Bunun için de yine hazır. Psych-image morfoloji altında. Binary Dilation, Binary Erosion ve bunun onlarca farklı çeşidi bu kütüphanenin altında var.
+
+393
+01:48:06,612 --> 01:48:13,731
+Psych-image morfoloji yazıp internette bakarsanız eğer alternatif fonksiyonları orada.
+
+394
+01:48:14,032 --> 01:48:15,855
+görebilirsiniz.
+
+395
+01:48:15,855 --> 01:48:34,056
+Şimdi biz ilk olarak bir binary erosion işlemini görelim. Bir square yapılandırma elemanı, 3'e 3'lük bir kare yapılandırma elemanı verilmiş. Bunu bright image dediğim ya da bright square dediğim image'e uyguluyorum. Şuradaki örnek görüntüye uyguluyorum.
+
+396
+01:48:34,056 --> 01:48:42,136
+Ve image erosion dediğim output'u oluşturuyorum. Daha sonra bunu görüntülüyorum.
+
+397
+01:48:43,855 --> 01:48:56,335
+İşlemin sonucunu print ediyoruz ekranda ve print ettiğimiz işlem sonucu şurada gördüğümüz şekilde kalıyor.
+
+398
+01:48:56,576 --> 01:49:01,755
+Sadece ortada bir tane bir diğer alanların sıfır kaldığını görüyoruz.
+
+399
+01:49:10,292 --> 01:49:30,092
+Merkez noktayla örtüştürdüğüm zaman 3'e 3'lük square yapılandırma elemanını sadece orada bir tane piksel kalıyor. Diğer tüm pikseller için, yani bunun etrafındaki şu 1 olan gözler için aşındırma işlemi gerçekleşiyor ve sıfıra döndürülüyor onlar şu alanda.
+
+400
+01:49:30,092 --> 01:49:34,032
+Ve bir tek ortada merkezde bir değeri kalıyor.
+
+401
+01:49:34,420 --> 01:49:57,400
+Erosion işlemi, aşındırma işleminin sonunda. Bu işlem için kullandığım yapılandırma elemanı 3'e 3'lük bir yapılandırma elemanı. Şurada gördüğümüz yapılandırma elemanını kullanıyorum. Giriş görüntüsü ve çıkış görüntüsünü burada büyütülmüş olarak, image olarak da görebiliyoruz.
+
+402
+01:49:59,400 --> 01:50:01,340
+Imshow fonksiyonu ile.
+
+403
+01:50:02,387 --> 01:50:16,067
+Dilation işlemi için az önce yaptığımız örnek, bununla ilgili, Dilation işlemiyle ilgili kodu buraya siz yazın diye bir alan bıraktım.
+
+404
+01:50:16,307 --> 01:50:20,527
+Ama bunu galiba şeyde de var, burayı siz tamamlayabilirsiniz.
+
+405
+01:50:29,488 --> 01:50:44,268
+Sonuçlarını ekranınızda görüntüleyebilirsiniz. Opening and Closing işlemleri içinde bu test görüntüsünü kendiniz yaratıp kullanabilirsiniz.
+
+406
+01:50:47,636 --> 01:50:59,596
+Matematika, mathematical morfoloji dediğimiz bu işlemleri, binary morfolojik işlemleri boundary extraction içinde kullanabiliyoruz.
+
+407
+01:50:59,596 --> 01:51:10,876
+Yani bir nesnenin çevre piksellerini, onu çevreleyen pikselleri çıkartmak içinde kullanabiliyoruz.
+
+408
+01:51:10,975 --> 01:51:14,935
+Zaten ödevde bununla ilgili size bir şey de verdim.
+
+409
+01:51:17,076 --> 01:51:28,155
+Boundary Extraction işlemini morfoloji kullanarak nasıl yaparız diye aynı örnekle bu işlemleri nasıl yaptığımızı buraya kodlayın dedim.
+
+410
+01:51:28,155 --> 01:51:45,076
+Bunu dediğim gibi sizin yapmanızı bekliyorum. Basit aslında. Yani nihayetinde şöyle bir input verdiğimde sağ taraftaki gibi bir output görmeyi bekliyorum. Hangi morfolojik işlemleri arka arkaya.
+
+411
+01:51:45,076 --> 01:51:55,136
+Uyguladığımda acaba bunu bulurum diye bir soru size sormuştum ödevde. Hem de bunların güzel bir egzersizi olmuş olur.
+
+412
+01:51:55,136 --> 01:51:59,136
+Bu konularla ilgili...
+
+413
+01:52:04,851 --> 01:52:17,391
+Şu tip bir binary matriz üzerinde dediğim gibi elle bu işlemleri sonuçlarını yapabiliyor olmalısınız.
+
+414
+01:52:18,871 --> 01:52:29,451
+Böyle bir, yani her şeyi kodla değil de kendimiz de yapsak nasıl olurduyu cevaplamanızı bekliyorum.
+
+415
+01:52:29,451 --> 01:52:31,152
+Evet.
+
+416
+01:52:33,876 --> 01:52:43,036
+Bu haftaki konuları hızlıca bitirdim. Bana sorunuz var mı arkadaşlar? Ödevle ilgili, bugünkü konularla ilgili. Buyurun.
+
+417
+01:52:43,036 --> 01:52:50,036
+Benim bugünkü konularla ilgili, son konuyla ilgili bir ufak sorun var. Şimdi yapısal elemanlardan bahsettik ya, bu üzerine uyguluyoruz.
+
+418
+01:52:51,015 --> 01:52:59,735
+Farklı tiplerini gösterdiniz. İşte dikey gösterdiniz, kare gösterdiniz. Bunların hangisini hangi durumda tercih edeceğimizi tam olarak anlamadım.
+
+419
+01:53:00,115 --> 01:53:02,315
+Yapısal elemanı nasıl seçeceğiz?
+
+420
+01:53:02,996 --> 01:53:14,555
+Yapılandırma elemanını aslında uğraştığınız nesnenin şekliyle de ilişkilendirebilmemiz gerekiyor.
+
+421
+01:53:14,555 --> 01:53:19,715
+Şöyle göstereyim size. Slide'da az önce bir örneği vardı.
+
+422
+01:53:26,195 --> 01:53:43,835
+Özellikle şu şeyde dişlilerin olduğu bu şekil için.
+
+423
+01:53:47,891 --> 01:54:01,851
+Mesela diyor ki orijinal imicimiz bu. Bu görüntüden ben şuradaki noktaları bulabilmek için, yani şuradaki boşlukları bulabilmek için bir whole ring kullandım diyor.
+
+424
+01:54:02,676 --> 01:54:18,676
+Bir hall mask kullandım diyor. Yani çıkartmak istediğiniz şekille ilişkilendirmeniz gerekiyor. Buradaki görüntü üzerinde neyi yakalamak istiyorum? Yani ben şuradaki diski yakalamak istiyorsam disk şeklinde bir yapılandırma elemanı kullanmam lazım.
+
+425
+01:54:22,579 --> 01:54:34,619
+Yapılandırma elemanının şeklinin, görüntüde aradığınız bölgenin şekliyle uyumu bizim için önemli.
+
+426
+01:54:34,920 --> 01:54:36,619
+Yani buna bakarak karar veriyoruz.
+
+427
+01:54:39,500 --> 01:54:46,680
+Mesela şurada dişlileri en son çıkardığı şeyde bir or işlemi yapmıştı.
+
+428
+01:54:48,564 --> 01:55:04,024
+Bir end işlemi yapıyor. Burada bir lojik işlem yaparak mesela B ve B7 arasında diyor. Bir lojik işlem yaparak diyor. Görüyor musunuz? B7 dediği şu şeyi kapsıyor. Özür dilerim.
+
+429
+01:55:04,024 --> 01:55:12,024
+B7 dediğimiz imaj dişlilerin olduğu, çentiklerin olduğu bölgeyi kapsayan bir halka.
+
+430
+01:55:12,787 --> 01:55:21,767
+Bununla giriş görüntüsü arasında end işlemi yaparak şuradaki output'u elde ediyor. Yani birbiriyle aralıklı.
+
+431
+01:55:22,144 --> 01:55:44,124
+Beyaz siyah noktaların olduğu şu çevreyi elde ediyor ve burada bir atlamanın olduğu nokta buluyor. Yani böyle ilginç bir şey. Tam böyle hedef odaklı. Hep elinizde giriş görüntüsü var. Ne aradığınızı biliyorsunuz. Ben burada neyi temizlersem ne kalır? Ben sonuca nasıl giderim diye bakmamız gerekiyor.
+
+432
+01:55:45,524 --> 01:56:09,424
+Adım adım yaptığı iş, mesela şurada önce bu dört tane noktayı, şu boşlukların olduğu, vida deliklerinin olduğu bölgeleri tespit ediyor. Daha sonra vida deliklerinin olduğu bölgeler için şöyle bir hall mask kullanıyor ve o alanı kapatıyor. Bakın bu dişlilerin içerisindeki şu siyah bölgeleri yok etmek için yaptı önceki iki adımı.
+
+433
+01:56:10,260 --> 01:56:18,439
+Ve nihayetinde sadece bu dış çevrelerini hedeflediğimiz için içerideki detayları yok etmeye çalıştık.
+
+434
+01:56:20,275 --> 01:56:33,775
+Fikir bu. Hep dediğim gibi çalıştığımız alanla ilgili o şekle uygun, o şekli oradan kaldırmak istiyorsam onunla örtüşecek yapıda bir yapılandırma elemanı seçmem gerekiyor.
+
+435
+01:56:33,775 --> 01:56:47,075
+İlginç bir konu. Benim bir doktora öğrencim çalışmasında bu işlemleri çokça kullanmıştı ve bayağı da faydası oldu yaptığı çalışmaya.
+
+436
+01:56:48,275 --> 01:56:51,275
+Basit işlemler ama iş görüyor yani.
+
+437
+01:56:54,115 --> 01:56:56,875
+Evet, sevgili arkadaşlar sorunuz var mıdır?
+
+438
+01:57:01,140 --> 01:57:13,579
+Peki, o zaman bu hafta bu kadar diyelim. Bu hafta neler yaptık? Bir ödev verdim. Önümüzdeki haftaya kadar onun tamamlanmasını bekliyorum. Bir. İkincisi.
+
+439
+01:57:20,020 --> 01:57:26,240
+Birileri sorular sormuş ama gradient vertical kullanarak neyle alakalı olduğunu anlayamadım.
+
+440
+01:57:28,740 --> 01:57:32,860
+Hocam, teneffüsten önce ben size bir soru sormuştum da.
+
+441
+01:57:32,860 --> 01:57:43,100
+Orada bir tekst vardı ve bazı threshold kullanarak yazıyı çıkartmaya çalışıyordu.
+
+442
+01:57:43,180 --> 01:57:44,860
+Ben de orada demiştim ki...
+
+443
+01:57:45,716 --> 01:57:57,536
+Trash Holding'den başka şeyler kullanarak yapılabilir mi diye. Burada gösterdiğimde Gradient Vertical, yani sağ kenar trayları alınarak.
+
+444
+01:57:58,579 --> 01:58:23,219
+Bir görsel çıkartmış da onu yapmaya çalıştım ama olmamış da. Anladım şimdi ne demek istediğinizi. O tarayıcıdan geçirilmiş görüntüde bir gölge problemi vardı. O gölge problemiyle ilgiliydi. Evet tamam hatırladım. Ama herhalde ben geç gördüm şeyi. O yüzden konuyu yerledim.
+
+445
+01:58:23,219 --> 01:58:24,340
+Arada atmıştım hocam.
+
+446
+01:58:25,279 --> 01:58:25,619
+Peki.
+
+447
+01:58:26,579 --> 01:58:35,479
+Evet, bu hafta ayrıca önümüzdeki hafta derse kadar sizden bir de ne bekliyorum? Proje için konu seçimi yapmanızı bekliyorum arkadaşlar.
+
+448
+01:58:35,479 --> 01:58:46,859
+İlgi duyduğunuz alana göre oradaki bildirilerden çalışabileceğiniz birini seçin ama alternatifli seçim yapmanız gerekiyor.
+
+449
+01:58:47,239 --> 01:58:54,479
+Bana üç alternatif sunun. Eğer birinci alternatifiniz sizden önce seçilmişse size ikinci alternatif...
+
+450
+01:58:54,579 --> 01:59:11,659
+Ve tercih ettiğiniz konuyu yazacağım. Ve sonra bunun listesini yayınlayacağım. Yani çakışma olmaz gibi geliyor bana. Çok fazla konu var orada ama olur ya aynı konuyu seçmişseniz eğer o konuda sizi uyarıp bir sonraki konuya çalışın diyebilirim.
+
+451
+01:59:11,659 --> 01:59:16,300
+Onun için onları da takip etmeniz gerekiyor sonrasında.
+
+452
+01:59:18,068 --> 01:59:24,608
+Bu haftalık bu kadar. Hepinize güzel bir hafta diliyorum. Sağlıkla kalın, kendinize dikkat edin.
+
+453
+01:59:25,807 --> 01:59:26,887
+Çok teşekkür ederim.
+
+454
+01:59:26,887 --> 01:59:27,568
+Teşekkürler.
+
+455
+01:59:28,247 --> 01:59:30,028
+Güle güle.
+
+456
+01:59:37,235 --> 01:59:38,835
+Evet, hoşçakalın arkadaşlar.

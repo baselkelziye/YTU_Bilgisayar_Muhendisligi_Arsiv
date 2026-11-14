@@ -1,0 +1,1135 @@
+1
+00:00:11,635 --> 00:00:18,435
+Arkadaşlarınızın toplandığı seçim biraz zaman veriyorum. Bir 5-10 dakika sonra başlıyoruz.
+
+2
+00:11:51,251 --> 00:12:04,891
+Evet, merhabalar. Ekran paylaşımını yaptım. Bu arada bayağı da bekledim başka katılan olur mu diye. Ama bir ara 11 kişi oldu. Tekrar 10 kişiye düştü katılanlar.
+
+3
+00:12:07,391 --> 00:12:08,891
+Bu arada...
+
+4
+00:12:10,163 --> 00:12:24,723
+Sınav sonuçlarınızın yarısından fazlasını girdim ama herhalde hiç kimse görememiştir. Çünkü tümünü girip etkinleştirmedim.
+
+5
+00:12:29,524 --> 00:12:41,984
+Yani arada birkaç kişi 68 falan var, katılmayanlar var. Onun dışında 80, 75, 80, 90, 100 arasında değişen notlar var.
+
+6
+00:12:55,091 --> 00:13:03,131
+Bilgi sisteminin geliştirilmesi sürecindeki son aşamaları işleyeceğiz bugün.
+
+7
+00:13:04,692 --> 00:13:18,511
+Biliyorsunuz, bilgi sistemi geliştirme sürecinde adımlar halinde çalışıyorduk. Birdenbire program hazırlamıyorduk.
+
+8
+00:13:18,868 --> 00:13:28,548
+programı kodlama aşamasına gelene kadar hangi işlemleri gerçekleştiriyorduk? [öğrenci], sen söyler misin?
+
+9
+00:13:33,235 --> 00:13:34,296
+[öğrenci]
+
+10
+00:13:41,427 --> 00:13:51,827
+[öğrenci], sen söyleyebilir misin? Program kodlamaya kadar hangi işlemleri gerçekleştirdik bilgi sistemi geliştirme sürecinde?
+
+11
+00:14:00,628 --> 00:14:05,508
+Hocam, veri yapısını tasarladık, yani tasarlıyoruz.
+
+12
+00:14:06,148 --> 00:14:10,868
+Yani bunların gerçekleştirdiğimiz adımlar hangileri diyebiliriz?
+
+13
+00:14:12,108 --> 00:14:15,348
+Önce problemi belirliyoruz.
+
+14
+00:14:15,807 --> 00:14:18,648
+Problemi belirliyoruz, analiz yapıyoruz.
+
+15
+00:14:19,548 --> 00:14:20,828
+Programı analiz ediyoruz.
+
+16
+00:14:23,731 --> 00:14:25,731
+Sonra veri yapısını oluşturuyoruz.
+
+17
+00:14:26,491 --> 00:14:48,591
+İşte veri yapısını oluşturmak neyin içinde? Tasarımın içinde veri tabanını oluşturuyoruz. Sonra kodlamaya geçiyoruz. Yani analiz, tasarım, gerçekleştirme dediğimizde, gerçekleştirmede kodlama ve veri tabanının hazırlanması.
+
+18
+00:14:49,395 --> 00:15:09,215
+Sonra da test yapıyoruz. İşte şimdi analiz tasarımdan sonra yani fizibilite analizi, sistem analizi, sonra sistem tasarımı, bundan sonra yaptığımız işlem kodlama ve kodlama sonucunda programlar ortaya çıkıyor.
+
+19
+00:15:09,995 --> 00:15:17,395
+Kodlamayı nasıl yapıyoruz? Bunun üzerinden bir geçeceğiz zaten programlama dilleri dersinden, algoritmalar dersinden bunu biliyorsunuz.
+
+20
+00:15:17,395 --> 00:15:35,275
+Sonra bunu değerlendiriyoruz. Eğer bu kod uygunsa test ediyoruz. Test içinde test planı, test işlemleri. Sonra sistem kullanıma hazır diyoruz. Sistemin kullanıma hazırlanması sürecinde de bir şeyler geçiyor.
+
+21
+00:15:43,855 --> 00:15:51,375
+Nasıl test yapıyoruz? Sonra da sistemi kullanıma hazır hale nasıl getiriyoruz? Bunun üzerinde duracağız.
+
+22
+00:15:52,375 --> 00:16:04,855
+Şimdi bu noktada neler yaptığımızı kaynak kod, source kod ya da kod dediğimiz zaman program...
+
+23
+00:16:06,772 --> 00:16:08,992
+Satırları aklımıza geliyor.
+
+24
+00:16:10,112 --> 00:16:17,112
+Ve programı hazırlamak için programlama dilimizi nasıl seçiyoruz?
+
+25
+00:16:17,292 --> 00:16:18,432
+Önce buna bir bakalım.
+
+26
+00:16:18,612 --> 00:16:19,772
+Programlama dilini...
+
+27
+00:16:22,580 --> 00:16:31,900
+Genel uygulama alanına, yani yaptığımız iş hangi alanda çalışacak? Bu program hangi alanda çalışacak?
+
+28
+00:16:32,400 --> 00:16:41,799
+Algoritmanın karmaşıklık durumu, veri yapısı, yazılımın kullanılacağı ortam, uygulama koşulları, personel bilgi düzeyi,
+
+29
+00:16:41,799 --> 00:16:50,580
+yani belki mesela yazacağınız uygulamaya Python daha uygundur ama hızlı yazılım.
+
+30
+00:16:50,580 --> 00:16:59,980
+Bir şey yapalımın bitmesi gerekiyorsa, siz de Python bilmeyip onu öğrenecek bir ekiple çalışıyorsanız o zaman diğer dilleri seçebilirsiniz şeklinde.
+
+31
+00:17:03,028 --> 00:17:22,748
+Bazen büyük projelerde bir tek programlama dili yeterli olmayabilir. Bazı tarafında farklı bir programlama diliyle, bazı tarafında farklı bir programlama diliyle gerçekleştirilebilir. Kod içinde açıklamalar bulunur. Kodu ve yapılan işi anlatmak üzere.
+
+32
+00:17:25,172 --> 00:17:27,652
+Bu da kullanılır.
+
+33
+00:17:27,652 --> 00:17:32,251
+Yapısal kodlama dediğimizde burada
+
+34
+00:17:35,092 --> 00:17:49,652
+Kodlama stili nasıl onu anlıyoruz. Özellikle daha kolay okunabilecek ve çok karmaşık dallanmaların olmadığı programlar diye anlıyoruz.
+
+35
+00:17:49,652 --> 00:18:03,092
+Evet, açıklama satırlarını burada tekrar yazılı olarak da görüyoruz. Kodlamanın anlaşılması için, daha sonra bakım yapanların daha iyi anlayabilmesi için açıklaması.
+
+36
+00:18:03,092 --> 00:18:22,052
+Açıklama satırları yer alır. Kodun yazım düzenine uygun yazılması gerekir. Yani programın anlaşılabilir olması için okunabilirliğinin artması gerekir.
+
+37
+00:18:24,627 --> 00:18:35,407
+Programlama dilinin yazım düzenine uygun olmasına dikkat etmek gerekir. İsimlendirmelerin de anlamlı olması gerekir.
+
+38
+00:18:35,407 --> 00:18:45,467
+Şimdi bir program yazıldı, bu test edilecek. Şu şeyden de bakarsak programımızı oluşturduk.
+
+39
+00:18:47,092 --> 00:18:53,432
+Test edeceğiz. Bir defa test aşamasında nasıl test ediyoruz?
+
+40
+00:18:57,299 --> 00:19:04,200
+Test şekilleri nelerdir? Kaliteli yazılım dediğimizde neyi anlıyoruz? Önce buradan başlayalım.
+
+41
+00:19:04,559 --> 00:19:16,519
+Test, yani nasıl test edeceğimizi incelemeden önce. Bir defa doğru olmalı. Yani istenilen gereksinimlere uygun olmalı.
+
+42
+00:19:17,440 --> 00:19:25,240
+Güvenirlik derecesinde olmalı. İstenilen güvenirlik derecesinde. Yani bir işe yapıyor ama yapıyor.
+
+43
+00:19:25,299 --> 00:19:32,200
+Ama ne kadar doğrulukta, doğruluk düzeyi nedir, duyarlılık düzeyi nedir ona bakmak lazım.
+
+44
+00:19:32,319 --> 00:19:38,779
+Verimli olması gerekir. Yani bilgi işlem kaynaklarını iyi kullanması gerekir.
+
+45
+00:19:39,119 --> 00:19:43,460
+Güvenli olması gerekir. Yetkisiz kişilerin müdahale etmemesi gerekir.
+
+46
+00:19:43,859 --> 00:19:47,700
+Kullanışlı olması gerekir. Hata bulma kolaylığının olması.
+
+47
+00:19:48,980 --> 00:19:59,619
+Esnekliği, sınama kolaylığı, birlikte çalışabilirliği, burada bunu biz bağlanabilirlik olarak görüyoruz.
+
+48
+00:19:59,720 --> 00:20:10,980
+Bağlanabilirlik, şurada bağlanabilirlik, interoperabilitenin karşılığı, bu sistem başka yazılım sistemleriyle uyumlu çalışıyor mu?
+
+49
+00:20:11,508 --> 00:20:33,347
+Tekrar kullanılabilirlik, yazılımın bakımının ya da bir bölümünün farklı uygulamada tamamının ya da bir bölümünün farklı uygulamada kullanılması, taşınabilirlik bir işletim sisteminden başka işletim sistemine taşınabilir olması, bütün bunlar kaliteli olması gerekliliğini belirtiyor.
+
+50
+00:20:33,347 --> 00:20:36,088
+Yani kalitenin gerekleri bunlar.
+
+51
+00:20:36,660 --> 00:20:43,580
+Kaliteli yazılım olup olmadığını da nasıl test edeceğiz?
+
+52
+00:20:44,740 --> 00:20:47,780
+Kalitenin güvence altına alınması.
+
+53
+00:20:51,019 --> 00:21:01,940
+Bir defa yüksek kalitede geliştirilmesi için doğrudan programlamayla başlanmaması.
+
+54
+00:21:04,592 --> 00:21:21,231
+analiz ve tasarıma önem verilmesi gerekiyor. Test aşamasına önem verilmesi gerekiyor ayrıca. Bunlara gereksinim analizi, tasarım aşamasında.
+
+55
+00:21:21,680 --> 00:21:34,840
+İşi doğru anlayıp doğru tasarlamamız, yazılımın kaliteli olması, bu kalite özelliklerini yukarıda saymıştık. Bunlarla birleşmesinde önemli.
+
+56
+00:21:36,115 --> 00:21:47,415
+Kalitenin sağlanması için gözden geçirme yapılmalı. Bir de şu şekli yine bir gözden geçirelim. Bu şekil üzerinde daha önce de durmuş olabiliriz.
+
+57
+00:21:47,415 --> 00:22:03,215
+Hata bulma gideri, yazılım geliştirme, bilgi sistemi oluşturma süreci boyunca ilerleyecektir gider. Yani hatayı bulma.
+
+58
+00:22:04,115 --> 00:22:11,436
+Ve hatayı bertaraf etme gideri daha fazla olacaktır.
+
+59
+00:22:12,775 --> 00:22:17,735
+Hata bulma olasılığı da süreç ilerledikçe daha düşük olacaktır.
+
+60
+00:22:17,735 --> 00:22:21,635
+Bu yüzden bunlara önem vermemiz gerekiyor.
+
+61
+00:22:26,259 --> 00:22:38,219
+gerçekleştirmek için de daha iyi gözden geçirme yapmamız gerekiyor ve planlama yaparak yazılımı test etmemiz gerekiyor.
+
+62
+00:22:38,699 --> 00:22:44,119
+Şimdi bakalım test nedir? Test işlemleri nelerdir?
+
+63
+00:22:45,339 --> 00:22:46,659
+Fonksiyonel test.
+
+64
+00:22:46,976 --> 00:23:04,796
+Performans testi, dayanılıklılık testi, yapısal test bunlar hepsi test şekilleri. Yazılımın test etme basamakları, yazılım geliştirme süreciyle paralel şekilde ilerliyor.
+
+65
+00:23:14,976 --> 00:23:18,996
+Sistem tasarımı, sonra kodlama yapmamız gerekiyor.
+
+66
+00:23:19,436 --> 00:23:23,655
+İşte kodlama yaptıktan sonra birim testi yapıyoruz.
+
+67
+00:23:25,076 --> 00:23:31,256
+Birim testi tamamlandıktan sonra bütünlük testini gerçekleştiriyoruz.
+
+68
+00:23:32,096 --> 00:23:37,715
+Ve onaylama testini gerçekleştiriyoruz.
+
+69
+00:23:46,228 --> 00:24:08,128
+Hazırlanan bir kod içinde hata olup olmadığının hem algoritma hatası hem kod hatası, program akış yollarındaki hatalar bunların incelenmesi ve burada hatanın bulunması.
+
+70
+00:24:10,420 --> 00:24:13,600
+Birim testi sırasında gerçekleşir.
+
+71
+00:24:13,600 --> 00:24:22,280
+Birim testi kaynak program gözden geçirilerek ve
+
+72
+00:24:24,660 --> 00:24:40,780
+Derleyici sırasındaki söz dizimi hataları düzeltildikten sonra birim testi gerçekleştirilir. Yazılım tasarıma dayanarak hata işlemleri bulunmaya çalışılır.
+
+73
+00:24:52,660 --> 00:25:01,259
+Bütünlük testi gerçekleştirilir ve burada bütünlük testi oluşturulur.
+
+74
+00:25:05,423 --> 00:25:23,344
+Aşağıdan yukarı ya da yukarıdan aşağıya bütünlük arttırmalı olarak sağlanabilir. Onaylama testi, bütünleştirilmiş yazılımın kullanıcı belgelerine göre doğru çalışıp çalışmadığı test edilir.
+
+75
+00:25:33,423 --> 00:25:58,443
+İşletim sistemi çevresi, veri tabanı çevresi ile de uyumlu mu? Buna bakılır. Bunlar için sistem testleri nelerdir? Güvenlik testi, dayanıklılık testi, performans testi bunlar gerçekleştirilir.
+
+76
+00:26:00,115 --> 00:26:18,076
+Güvenlik testi dediğimiz şey, dış ortama karşı nasıl ki güvenlik bir kalite özelliği ise, güvenlik testi de dış ortamdaki insanlardan, zararlardan koruyabiliyor muyuz yazılımımızı?
+
+77
+00:26:18,076 --> 00:26:20,255
+Dayanıklılık testi.
+
+78
+00:26:20,915 --> 00:26:31,655
+Sistemin hacim bakımından ya da anormal biçimde yüklenmesi durumunda dayanıklılığı var mı? Bu ölçülür.
+
+79
+00:26:31,655 --> 00:26:47,395
+Performans testinde ise cevap süresine bakılır. Cevap süresi uygun mu? Performansı iyi mi? Buna bakılır. Peki,
+
+80
+00:26:48,019 --> 00:27:11,059
+Sistemde hata varsa bu nasıl giderilecek? Debug kavramı. Test sadece hataları bulur. Debug ise hataları gidermedir. Debug işlevi. Bu belirti ve neden programın değişik yerlerinde olması düzeltilen başka bir hata yüzünden
+
+81
+00:27:14,291 --> 00:27:16,092
+Bir hatanın oluşması.
+
+82
+00:27:19,051 --> 00:27:27,551
+Bunların nedenlerine göre hata düzeltilme yoluna gidilir.
+
+83
+00:27:27,652 --> 00:27:32,531
+Debug işlemi, debugging işlemi hatanın düzeltilmesi.
+
+84
+00:27:38,451 --> 00:27:54,152
+Hata nedeninin doğrudan bulunamaması halinde bilimsel yöntemler kullanılarak tümden gelip tüme varım, geriye dönüş, backtracking, geriye doğru izleme ile hatanın nedeni bulunmaya çalışılır.
+
+85
+00:28:02,548 --> 00:28:15,188
+Düzeltilir. Test yoluyla hatalar bulunur ve düzeltme işlemi debug işlemiyle gerçekleştirilir. Böylece hatalardan arınmış bir program olur elimizde.
+
+86
+00:28:15,188 --> 00:28:29,447
+Peki, yani biz sırasıyla sıraya dizdiğimizde gerçekleştirdiğimiz test süreç adımlarını sırayla hangi testleri yaparız dedik.
+
+87
+00:28:29,811 --> 00:28:43,991
+Kodlamaya karşılık birim testi, birim testi, bütünlük testi, sistem testi ve onay testi. Yani kullanıcı kabul testi.
+
+88
+00:28:43,991 --> 00:28:51,951
+Peki, bunları biz hangi şekilde testleri gerçekleştiririz? Kara kutu.
+
+89
+00:28:52,531 --> 00:28:55,152
+Ve saydam kutu testleriyle.
+
+90
+00:28:55,652 --> 00:28:58,152
+Kara kutu testi ve saydam kutu.
+
+91
+00:28:58,251 --> 00:29:06,951
+Saydam kutu, white box testi özellikle adı nedeniyle biz saydam kutu, yani yaptığı iş nedeniyle saydam kutu diyoruz.
+
+92
+00:29:06,951 --> 00:29:07,791
+Çünkü
+
+93
+00:29:10,708 --> 00:29:21,928
+Saydam kutu testinde iç yapı test ediliyor. Bir modüldeki tüm bağımsız yolların en az bir kez çalıştırılacağı garanti edilir.
+
+94
+00:29:38,228 --> 00:30:01,668
+İç yapı testinde temel yollar testi ve döngü testi en fazla gerçekleştirilen testlerden, temel yollar testinde her bir algoritmadaki her bir yol, her bir yolunu test edecek şekilde test verisi hazırlanması.
+
+95
+00:30:04,403 --> 00:30:20,243
+Yani test programlarını bütün yollardan geçip geçmeyi sağlayacak, bütün algoritma akış yollarından geçmeyi sağlayacak test verisi hazırlayarak gerçekleştiriyoruz.
+
+96
+00:30:31,604 --> 00:30:51,223
+ortak özellikleri, döngü temel özelliklerinin kontrol edilmesi, başlangıç bitiş noktaları ve birbirine bağlı olmaları şeklinde test edilir.
+
+97
+00:30:55,028 --> 00:31:05,968
+Karakutu testi ise dışarıdan bakarak test etme, yani iç yapıyı program kodunu görmeden test işleminin gerçekleştirilmesi.
+
+98
+00:31:05,968 --> 00:31:18,408
+Burada da karakutu testinde de mantıksal elemanlarından çok sistemin daha çok şeyle ilgilenilir.
+
+99
+00:31:21,715 --> 00:31:26,955
+Dışarıdan verilen veriye nasıl bir sonuç alıyoruz?
+
+100
+00:31:28,816 --> 00:31:37,036
+Veri uzayını nasıl bölelim ki daha etkin bir test işlemi gerçekleştirelim?
+
+101
+00:31:37,619 --> 00:32:05,619
+Ara birim hataları ortaya çıksın, performans hataları ortaya çıksın. Bunları şu şekildeki gibi bir kara kutu testi. Bu sistemimiz kara kutu. İç yapısını bilmiyoruz. Hangi işi yaptığını biliyoruz sadece. Hangi veri aralıklarında girdiler alıyor onu biliyoruz. Giriş sınava verisini dışarıdan veriyoruz. Bir de anormal davranışa sebep olacak.
+
+102
+00:32:05,619 --> 00:32:20,659
+Bunları tepki olarak alacağımız çıktılar test sonucunda değerlendiriliyor. Hangi girdilere karşı hangi çıktıları alıyoruz? Bu da karakutu testi.
+
+103
+00:32:31,092 --> 00:32:33,731
+Şu diagram üzerinden gidelim.
+
+104
+00:32:36,892 --> 00:32:51,812
+Şu diagramda analiz tasarımı yaptıktan sonra analiz ve tasarımı yapıp sistem gereksinimlerini aldıktan sonra kodlamayı gerçekleştiriyoruz.
+
+105
+00:32:52,339 --> 00:33:12,759
+programlarımız ortaya çıkıyor ve bu programları test ediyoruz. Test ederken de, bu arada kodu yazdıkça da gözden geçiriyoruz. Bir düzeltmelerimiz oluyor, revizyonlarımız oluyor. Bitmiş kodları.
+
+106
+00:33:13,215 --> 00:33:17,375
+Test ediyoruz. Test verisi kullanıyoruz bunun için.
+
+107
+00:33:18,695 --> 00:33:31,655
+Ve test işlemlerini gerçekleştirirken de nasıl bir işlem gerçekleştiriyoruz, bunu kontrol ediyoruz.
+
+108
+00:33:36,723 --> 00:33:44,963
+Bütünlük testi yapıyoruz, sonra onay testi gerçekleştiriyoruz ve sistem kullanıma hazır hale geliyor.
+
+109
+00:33:45,383 --> 00:33:54,643
+Peki, yani sistemin kullanıma hazır hale gelmesi için başka neler yapıyoruz? Bir de bunların üzerinde duralım.
+
+110
+00:34:19,027 --> 00:34:27,987
+Test tiplerini gördük. Burada çok genel, çok geniş almışız ama şu temel bilgiyi bilmeniz yeterli.
+
+111
+00:34:29,047 --> 00:34:40,507
+Test aşamasında öncelikle test sürecini nasıl bölüyoruz? Yani nasıl sıralıyoruz? Hangi testleri yapacağımızı?
+
+112
+00:34:43,603 --> 00:34:58,603
+Kodladığımız birimde bir birim testi, en küçük modülde bir birim testi. Her modül için bir birim testi yapıyoruz. Yani iç yapısı uygun mu? Daha sonra bütünlük testiyle birleştiriyoruz. Daha sonra...
+
+113
+00:34:59,699 --> 00:35:13,479
+Sistem testi yapıyoruz. Sonra da kullanıcı kabul testini, onay testini gerçekleştiriyoruz. Sıralamamız bu şekilde ve böylece test işlerimiz tamamlanmış oluyor.
+
+114
+00:35:13,479 --> 00:35:25,719
+Daha sonra artık sistemin kullanıma hazır olması aşaması geliyor. Sistemin kullanıma hazır olması aşamasında
+
+115
+00:35:26,324 --> 00:35:28,764
+Yapacağımız şeyleri göreceğiz şimdi.
+
+116
+00:35:29,444 --> 00:35:35,043
+Ama önce test yaparken hangi tip testleri gerçekleştiriyoruz?
+
+117
+00:35:35,043 --> 00:35:39,344
+Bir kara kutu, bir de saydam kutu. Bunları da az önce gördük.
+
+118
+00:35:39,444 --> 00:35:42,284
+Saydam kutu iç yapının test edilmesi.
+
+119
+00:35:43,344 --> 00:35:49,503
+İç yapı dediğimiz zaman algoritma temel yolları uygun mu?
+
+120
+00:35:50,675 --> 00:36:05,556
+algoritma yolları uygun mu? Bunların her birisi doğru çalışıyor mu? Her birisini çalıştıracak test verisi hazırlamak burada ön plana geçiyor.
+
+121
+00:36:16,532 --> 00:36:31,892
+Karakutu testi yapıyoruz başka bir test tipi olarak. Karakutu test tipinde sistem genel olarak hangi tür veriye hangi tür çıktılar veriyor? Bunun anlaşılması.
+
+122
+00:36:32,596 --> 00:36:37,155
+Karakutu testinde de bunu gerçekleştiriyoruz.
+
+123
+00:36:37,155 --> 00:36:56,115
+Ve iç yapısını bilmediğimiz yazılım sistemi üzerinde girdi verisi gönderip çıktıları inceleyerek bir de normal girdilerimize uymayan girdiler verip bunun sonucundaki çıktıları
+
+124
+00:36:57,076 --> 00:37:05,555
+Nasıl alıyoruz? Nasıl hatalara sebep olabiliyor bunlar? Bunu kontrol ediyoruz.
+
+125
+00:37:06,032 --> 00:37:25,112
+İşte testle ilişkili bilmemiz gereken iki bölüm var. Bir, test sürecinde nasıl işlemler yapıyoruz? Bilim testi, bütünlük testi, sistem testi, kullanıcı testi sırayla.
+
+126
+00:37:25,112 --> 00:37:29,996
+Peki, bu testlerde…
+
+127
+00:37:30,003 --> 00:37:44,264
+Nasıl çalışıyoruz? Ya saydam kutu testi tipinde ya da kara kutu testi tipinde. Saydam kutu testi olursa iç yapıyı bildiğimiz testler olarak karşımıza çıkıyor.
+
+128
+00:37:44,264 --> 00:37:57,203
+Evet, şimdi kullanıma hazırlık süreci demiştik. Kullanıma hazırlık süreci dediğimizde neler yapılıyor? Kullanıma hazırlık dediğimiz şey.
+
+129
+00:37:57,780 --> 00:37:59,260
+Nedir?
+
+130
+00:38:00,880 --> 00:38:04,780
+Burada kullanıma hazırlık aşamasında bir...
+
+131
+00:38:06,228 --> 00:38:28,068
+Eski sistemden yeni sisteme nasıl geçeceğimize karar vermemiz gerekiyor. İkincisi, var olan sistemdeki dosyaları nasıl dönüştüreceğiz veya veri tabanını nasıl dönüştüreceğiz, tekrar kullanılabilir hale nasıl getireceğiz? Bu önemli.
+
+132
+00:38:30,228 --> 00:38:37,288
+Bir de kullanıcıların nasıl eğitilmesi gerekiyor ki hatalı işlemler yapmasınlar, eğitim.
+
+133
+00:38:37,608 --> 00:38:44,628
+Yani eğitim, veri bilgi dönüştürme, eski sistemden yeni sisteme.
+
+134
+00:38:45,168 --> 00:38:51,807
+Üçüncüsü de eski sistemden yeni sisteme geçiş sürecine karar verme. Nasıl bir geçiş olacak?
+
+135
+00:38:52,307 --> 00:39:02,347
+İşte bu geçiş sürecine nasıl karar vereceğimiz, hangi yöntemlerle geçiş yapacağımız üzerinde duracağız.
+
+136
+00:39:10,675 --> 00:39:18,635
+Bunlar üzerinde durmayacağız. ERP falan sonra yönetim bilgi sistemlerinde işleyeceğimiz konular bunlar.
+
+137
+00:39:28,947 --> 00:39:33,747
+Evet, bir sistemden diğer sisteme nasıl geçeriz?
+
+138
+00:39:36,447 --> 00:39:46,587
+Bir defa geçiş aşamasında, eski sistemden yeni sisteme geçiş aşamasında neler yapmamız gerekiyor?
+
+139
+00:39:46,587 --> 00:39:48,067
+Bir.
+
+140
+00:39:51,987 --> 00:39:55,987
+Kurumun elemanlarına eğitim vermek.
+
+141
+00:39:57,167 --> 00:40:01,787
+Gerek bilgisayarla ilişkili, gerek hazırladığınız sistemle ilişkili.
+
+142
+00:40:01,787 --> 00:40:06,228
+Bu kullanıcı grubuna göre değişebilir.
+
+143
+00:40:07,287 --> 00:40:11,007
+Bazen daha fazla eğitim verilmesi gerekebilir.
+
+144
+00:40:13,331 --> 00:40:24,291
+Eğitimi kademelendirmek, yönetim seviyesine çalışanlara, daha yetkin çalışanlara olmak üzere gruplandırılabilir.
+
+145
+00:40:25,011 --> 00:40:34,851
+Yani eğitimler gruplar halinde bilgisayar ve sistem eğitim düzeylerine göre gerçekleştirilir.
+
+146
+00:40:39,648 --> 00:40:54,807
+Eğitim tamamlandıktan sonra eski sistemden yeni sisteme veri dönüşümünün yapılması gerekir. Üçüncü olarak da geçiş yöntemine karar verdik.
+
+147
+00:40:54,807 --> 00:41:00,548
+Şimdi bakalım bu geçiş yöntemleri nelerdir? Doğrudan geçiş.
+
+148
+00:41:02,867 --> 00:41:10,707
+Belirlenen bir tarihten itibaren eski sistem tamamen bırakılarak yeni sisteme geçilir.
+
+149
+00:41:10,707 --> 00:41:16,707
+Burada özellikle, şurada bakalım, özellikle...
+
+150
+00:41:17,396 --> 00:41:35,615
+Eğitim ve veri tabanı dönüşümünün çok iyi hazırlanmış olması gerekir. Çünkü bir anda eski sistemi kullanımı bırakılacak, bir T anında, bir T gününde yeni sisteme geçirecek. Bu yüzden yeni sistem hazırlıklarının iyi yapılması.
+
+151
+00:41:36,244 --> 00:41:51,403
+Gerekir. Paralel geçiş nedir? Paralel geçiş, tabii ki paralel geçiş daha fazla yoracaktır insanları. Ama bir kuşku kalmasın isteniyorsa.
+
+152
+00:41:52,532 --> 00:41:57,372
+Eski sistem ve yeni sistem belirlenen bir süre boyunca birlikte çalışırlar.
+
+153
+00:41:57,512 --> 00:42:09,391
+Ancak her iki sistemde de verilerin birbirini tutmasını sağlamak, kullanıcıların gerçekleştirdikleri işlemi hem yeni hem eski sistemde yapmalarını gerektirir.
+
+154
+00:42:09,391 --> 00:42:15,452
+Bu da vakit alacaktır. Çift işlem bir süre ne kadar sürecekse.
+
+155
+00:42:15,824 --> 00:42:42,423
+Bu, bu da, işte ikisi şu anda mesela paralel kullanılıyor. Paralel geçiş. Bir başka yol dereceli geçiş. Dereceli geçiş, şurada kademe kademe yeni sistem belli işlevleriyle kullanılmaya başlanır. Zaman içinde yeni sistemin diğer işlevleri de aşamalı olarak aktarılarak sistem bütünleştirilir.
+
+156
+00:42:42,835 --> 00:43:04,735
+Yani yeni sistemin özellikleri veya modülleri, işlevleri aşamalı olarak bırakılır, yeni uygulamalara geçilir.
+
+157
+00:43:08,500 --> 00:43:14,500
+Prototip geçiş, eski sistemle bir süre bir...
+
+158
+00:43:15,347 --> 00:43:41,228
+bölümde prototip oluşturulur ve prototip de bir yandan çalışır. Bunun üzerinde denemeler yapılır. Sonra yeni sisteme geçilir. Yani paralel geçilir. Pardon, şurada bir paralel çalışma söz konusu. Buraya bakarsak da doğrudan geçiş söz konusu. Ama bu doğrudan geçişe hazırlanmak için bir prototip yaratılır.
+
+159
+00:43:43,347 --> 00:43:50,027
+Bir süre bu prototip çalıştırılır. Bu da prototip geçiş.
+
+160
+00:43:50,648 --> 00:43:57,648
+Dağıtılmış geçiş nedir? Her bölümde aşamalı olarak tek tek geçiş söz konusudur.
+
+161
+00:43:58,167 --> 00:44:05,667
+Belirli periyotlarla genel olarak değerlendirilip bakımının yapılması gerekir.
+
+162
+00:44:11,347 --> 00:44:17,007
+Dağıtılmış geçiş olarak kullanılır, isimlendirilir.
+
+163
+00:44:17,427 --> 00:44:24,688
+Geçiş şekillerini bu şekilde tanımlayabiliyoruz.
+
+164
+00:44:24,688 --> 00:44:37,108
+Bu aslında bu anlattıklarımla tamamlamış oluyoruz konularımızı.
+
+165
+00:44:38,996 --> 00:44:58,576
+Tekrar kaliteli yazılım dedik dersin başında. Bu konuda kaliteli yazılımı belirleyen özellikler açısından ek yapmak isteyen var mı?
+
+166
+00:45:05,108 --> 00:45:07,288
+Ne anlamda soruyorsunuz hocam?
+
+167
+00:45:08,288 --> 00:45:22,648
+Şimdi az önce gördük, onu anlamaya çalışıyorum. Anladınız mı diye. Kaliteli yazılım dediğimde hangi özellikler ortaya çıkar? Hangi özellikler kalite özellikleridir yazılımda?
+
+168
+00:45:28,788 --> 00:45:46,108
+Mesela az önce söylediklerimi hatırlamıyorsanız da, düşünün siz bir uygulama aldınız, bu uygulamada nelere bakarsınız, neleri istersiniz kaliteli demek için?
+
+169
+00:45:48,167 --> 00:45:49,627
+Kullanıcı gözüyle neler?
+
+170
+00:45:51,123 --> 00:46:17,243
+Hocam ben biraz geç katıldım dersi o yüzden dersin başını hatırlamıyorum ama mantıksal olarak cevaplarsak ilk önce UI'ye iyi olması gerekiyor diye düşünüyorum. Girdi çıktı anlaşılır şekilde olacak. Önceki derslerde gördüğüm şekilde girdi anlamlı olacak, çıktı anlamlı olacak.
+
+171
+00:46:17,243 --> 00:46:18,323
+Evet.
+
+172
+00:46:18,996 --> 00:46:27,436
+Yani şimdi girdiği, çıktığı ekran düzenleri falan uygun olacak değil mi?
+
+173
+00:46:27,436 --> 00:46:40,195
+Evet. Ve işte bazı buglara veya hatalara karşı beklenmedik durumlara karşı önlem almış gerekiyor.
+
+174
+00:46:40,416 --> 00:46:41,735
+Zayanıklı olacak yani.
+
+175
+00:46:41,735 --> 00:46:43,056
+Aynen. Evet.
+
+176
+00:46:43,056 --> 00:46:45,056
+Evet. Şimdi...
+
+177
+00:46:46,195 --> 00:46:47,935
+Arkoma şimdilik konular geliyor.
+
+178
+00:46:47,935 --> 00:46:55,376
+Tamam. Şimdi o zaman bu düşüncenin arkasında bir daha gözden geçirelim.
+
+179
+00:46:56,675 --> 00:47:00,255
+Evet, kodun optimizasyonlu ve anlamlı olması lazım.
+
+180
+00:47:01,115 --> 00:47:07,355
+Şimdi o içeriden baktığımızda olması gerekenler.
+
+181
+00:47:07,755 --> 00:47:10,695
+Şimdi tekrar şu kalite özelliklerine bir daha bakalım.
+
+182
+00:47:27,891 --> 00:47:39,471
+Şimdi ilk başta bakacağımız kalite özellikleri kullanıcı açısından önemli olanlar.
+
+183
+00:47:39,471 --> 00:47:53,831
+Kullanıcı açısından baktığımızda doğru olması, güvenilir olması, güvenirlik, reliability kavramının olması, verimlilik,
+
+184
+00:47:54,291 --> 00:48:00,731
+Güvenlik, kullanışlılık bunlar yani şuradan başlayarak
+
+185
+00:48:05,684 --> 00:48:15,704
+Şuraya kadar olanlar, şunlar, bunlar kullanıcı, uç kullanıcı açısından önemli olanlar.
+
+186
+00:48:16,044 --> 00:48:22,424
+Siz de mesela bir oyun programı aldınız diyelim ki, doğru çalışmasını istersiniz.
+
+187
+00:48:23,164 --> 00:48:25,684
+Yani bir sürü bug olmasın içeride.
+
+188
+00:48:27,264 --> 00:48:31,884
+Siz ne oyun neyi tarif ediyorsa onu yapsın.
+
+189
+00:48:32,596 --> 00:48:51,496
+Güvenirliği olsun, yani belli bir hassasiyet derecesinde bunu doğruluğu kesin sonuçlar versin çalışırken. Bu özellikle mesela mühendislik hesaplama programlarında önem taşır.
+
+190
+00:48:58,260 --> 00:49:19,880
+İyi kullansın, performansı iyi olsun, cevap süresi kısa olsun, bekletmesin sizi çok fazla, belleği çok fazla kullanmasın, verimli ve performanslı iyi olsun, güvenlikli olsun, başka kişiler sızmasın.
+
+191
+00:49:19,880 --> 00:49:25,340
+Mesela bir öğrenci sistemi yazılmışsa, istem dışı müdahaleler olmasın.
+
+192
+00:49:25,972 --> 00:49:38,892
+Kullanışlılık olsun, öğrenmesi, işletmesi, arkadaşınızın dediği gibi girdi hazırlaması, çıktı yorumlaması kolay olsun. Verdiği raporlar anlaşılır olsun. Bu da kullanışlılık.
+
+193
+00:49:39,443 --> 00:49:55,324
+İşte bunlar kullanıcı açısından baktığınızda istenilen kalite özellikleri, doğru, bu doğruluğun belli bir güvenirlik seviyesinde olması, verimli, güvenlikli, kullanışlı bunlar kullanıcı açısından önemli.
+
+194
+00:49:55,324 --> 00:50:04,603
+Hata bulma kolaylığı, esnekliği, test edilebilirliği bunlar da kim açısından önemli?
+
+195
+00:50:07,251 --> 00:50:08,892
+Yazılımcılar tarafından.
+
+196
+00:50:08,912 --> 00:50:18,052
+Yazılımcılar, yani daha sonra bakımını yapacak kişiler tarafından. Bunlar önemli tarafları.
+
+197
+00:50:18,052 --> 00:50:29,672
+Bir de programı operatör olarak büyük kurumlar için çalıştıranlar var.
+
+198
+00:50:32,532 --> 00:50:36,192
+Tek kişilik kullanım için uç kullanıcı bu işleri de yapıyor.
+
+199
+00:50:36,192 --> 00:50:48,192
+Ama büyük sistemlerdeki operatörler için de taşınabilirlik, farklı donanımlara kolay aktarılabilsin, tekrar kullanılabilirlik.
+
+200
+00:50:48,991 --> 00:50:51,951
+Bu aslında şu üstteki gruba giriyor.
+
+201
+00:50:53,831 --> 00:50:58,931
+Yani bakım yapacak kişiler için de önemli bu usability, reusability.
+
+202
+00:51:00,083 --> 00:51:06,563
+Re-usability, yazılımın tamamını ya da bir kısmını başka bir yerde kullanabiliyor muyuz?
+
+203
+00:51:07,103 --> 00:51:14,943
+Bağlanabilirlik, burada ben bunu çok Türkçe karşılığını iyi verememişim, interoperability, birlikte çalışabilirlik.
+
+204
+00:51:17,224 --> 00:51:26,764
+Yani kurumda başka ERP yazılımları var, başka yazılımlar var, onlarla veri alışverişi yapabilsin, birlikte çalışabilsin.
+
+205
+00:51:27,123 --> 00:51:39,663
+İşte bütün bunlar. Daha sonra yazılım mühendisliğinde çok ayrıntılı göreceğiz. O yüzden hani burada şimdi şu formülü falan hiç size şey yapmıyorum.
+
+206
+00:51:40,663 --> 00:51:44,943
+McCall modeli diye daha sonra göreceğiz bunu yazılım mühendisliğinde.
+
+207
+00:51:44,943 --> 00:51:48,783
+Bu özellikler.
+
+208
+00:51:49,139 --> 00:52:08,199
+Kalite faktörü olarak da geçen bunlar önemli. Bunlar bazı yazılım ölçütleri açısından da ifade edilebilir. Bunların önemli olduğunu biliyoruz.
+
+209
+00:52:16,115 --> 00:52:24,556
+Kaliteyi sağlamak için neler yapıyorduk? Gözden geçirme yapıyorduk. Özellikle kaliteyi sağlamak için.
+
+210
+00:52:29,492 --> 00:52:30,188
+UML
+
+211
+00:52:47,315 --> 00:52:50,155
+Diagramları göz önünde bulunduruyoruz.
+
+212
+00:52:52,096 --> 00:52:56,175
+Hata bulma gideri süreç ilerledikçe artar.
+
+213
+00:52:56,735 --> 00:52:59,675
+Hatayı bulma olasılığı da düşer.
+
+214
+00:52:59,795 --> 00:53:07,855
+O yüzden mümkün olduğu kadar erken bu hataları bulmamız gerekiyor.
+
+215
+00:53:12,755 --> 00:53:23,935
+Bu yüzden de ne yapmamız gerekir? Yazılımı geliştirdikçe geliştirdiğimiz kadarını gözden geçirmemiz gerekiyor.
+
+216
+00:53:25,395 --> 00:53:31,675
+Mesela planda biz milestone, kilometre taşları kavramını gördük.
+
+217
+00:53:31,675 --> 00:53:33,675
+Planımız...
+
+218
+00:53:33,844 --> 00:53:36,744
+Ona göre oluşturulmalı.
+
+219
+00:53:37,284 --> 00:53:52,184
+İşte gereksinim analizi bittiği zaman bir gözden geçirme, tasarım bittiğinde bir gözden geçirme, kodlama bittiğinde bir gözden geçirme yaparsak o zaman daha kaliteli yazılımlar üretme şansımız olur.
+
+220
+00:53:52,184 --> 00:54:00,184
+Bunu sağlamak üzere de yazılımı geliştirirken.
+
+221
+00:54:01,652 --> 00:54:06,632
+Buna uygun davranmamız gerekecektir.
+
+222
+00:54:08,452 --> 00:54:11,952
+Evet, geçiş yöntemleri konusunda sorunuz var mı?
+
+223
+00:54:12,772 --> 00:54:13,972
+Tekrar geleyim oraya.
+
+224
+00:54:23,380 --> 00:54:29,160
+Var olan sistemden başka sisteme geçiş, yeni sisteme geçiş.
+
+225
+00:54:34,356 --> 00:54:43,956
+Doğrudan geçiş, paralel geçiş, dereceli geçiş, prototip geçiş ve dağıtılmış geçiş.
+
+226
+00:54:43,956 --> 00:54:56,436
+Dağıtılmış geçişle dereceli geçiş, her bölümün aşamalı olarak tek tek geçişi söz konusu.
+
+227
+00:54:56,980 --> 00:55:03,960
+Belirli periyotlarla da genel olarak değerlendirilmesi ve bakımının yapılması gerekir.
+
+228
+00:55:04,580 --> 00:55:21,480
+Eski sistemden yeni sisteme bölüm bölüm geçiş kurumun her bölümünün aşamalı olarak tek tek geçişi yeni sisteme.
+
+229
+00:55:28,115 --> 00:55:33,736
+Dereceli geçişte ise yeni sistem belli işlevleriyle kullanılmaya başlanır.
+
+230
+00:55:33,856 --> 00:55:40,536
+Zaman içinde yeni sistemin diğer işlevleri de aşamalı olarak bütünleştirilir.
+
+231
+00:55:40,536 --> 00:55:42,195
+Tüm fonksiyon.
+
+232
+00:55:43,315 --> 00:56:05,435
+Yeni sisteme tek tek fonksiyonlar eklemek, dereceli geçiş. Mesela bir öğrenci bilgi sistemi var. Bütün bölümlerde kullanılıyor. Ama işte önce çok temel işlemler yapıyor. Sadece öğrencileri kaydediyor. Temel işlemleri yapıyor. Not girişlerini yapıyor.
+
+233
+00:56:08,659 --> 00:56:21,619
+İşte daha farklı bütün belgeleri sistem vermeye çalışıyor gibi. Yani sisteme yeni fonksiyonları tek tek eklediğimiz yapı.
+
+234
+00:56:23,199 --> 00:56:27,019
+Bugün anlattıklarımla ilişkili sorunuz var mı?
+
+235
+00:56:38,900 --> 00:56:40,100
+Sorunuz var mı?
+
+236
+00:56:51,795 --> 00:57:18,195
+Diğer haftalarda gördüğümüz şeylerle veya sınavda zorlandığınız cevap vermekte zorlandığınız konular açısından veya sınavlara çalışırken zorlandığınız bölümler açısından sorunuz var mı?
+
+237
+00:57:25,715 --> 00:57:33,635
+Geçen hafta Elçin Hanım'la beraber bir uygulama yaptınız.
+
+238
+00:57:35,335 --> 00:57:51,876
+Diagramların çizimiyle analiz ve tasarımı destekleyen tasarımlar, analizler gerçekleştirecek diagramlar.
+
+239
+00:57:52,500 --> 00:58:11,319
+Bu diagramlarla ilişkili sorunuz var mı? Ne bileyim aklınıza takılan bir şey var mı? Çünkü tekrarlıyım. Tabii siz şu anda çok az kişisiniz, arkadaşlarınıza da duyurursanız sevinirim.
+
+240
+00:58:19,572 --> 00:58:44,012
+Ve yüz yüze yapılacağı için de final sınavlarınızda daha kolay biz bir sistemin, size derste vereceğimiz bir sistemin analizini gerçekleştirin, analizle ilişkili diyagramları çizin.
+
+241
+00:58:44,447 --> 00:58:52,627
+Tasarımını gerçekleştirin, tasarımla ilişkili diagramlarını çizin şeklinde sorular sorabileceğiz.
+
+242
+00:58:55,627 --> 00:59:04,227
+Bunu gerçekleştirirken aklımıza takılan sorular var mı?
+
+243
+00:59:09,268 --> 00:59:11,188
+O zaman ben bir soru sorayım.
+
+244
+00:59:14,547 --> 00:59:23,228
+Sırayla bir yapısal yaklaşımı gördük bu derste. Bir de nesneye yönelik yaklaşımı gördük.
+
+245
+00:59:37,907 --> 00:59:44,727
+Diagramları analiz sırasında kullanırsınız, yapısal yaklaşımda. Söyler misiniz?
+
+246
+00:59:47,167 --> 00:59:49,467
+[öğrenci], sen söyleyebilir misin?
+
+247
+00:59:54,835 --> 01:00:08,295
+Yapısal yaklaşımla, klasik yaklaşımla analiz gerçekleştiriyoruz, sistem analizi gerçekleştiriyoruz. Hangi diagramları çizeriz?
+
+248
+01:00:11,891 --> 01:00:14,311
+[öğrenci] yerine söylemek isteyen var mı?
+
+249
+01:00:24,340 --> 01:00:25,980
+[öğrenci] sen söyler misin?
+
+250
+01:00:41,715 --> 01:01:00,536
+Evet, [öğrenci], yapı diagramı yapısal yaklaşımla çizilir ama yapı diagramı tasarım sırasında, mimari tasarım sırasında veya genel tasarım sırasında çizilir.
+
+251
+01:01:02,675 --> 01:01:03,715
+Tasarlayacağımız...
+
+252
+01:01:04,371 --> 01:01:19,592
+Yazılımın hangi modülleri olmalıdır? Bunu göstermek için bir yapı diagramı çizeriz. Analiz sırasında ne çizeriz? Hatta yapı diagramını da o diagramdan dönüştürerek çizeriz.
+
+253
+01:01:21,731 --> 01:01:25,472
+Diğer arkadaşlarınızdan ziyaret.
+
+254
+01:01:27,572 --> 01:01:33,411
+Evet, veri akış diyagramı, veri akış diyagramı çizeriz.
+
+255
+01:01:36,211 --> 01:01:48,632
+Veri akış diyagramı, yapısal yaklaşımla sistem analizi sırasında hazırladığımız diyagramdır.
+
+256
+01:01:49,311 --> 01:01:54,932
+Yapı diyagramı da tasarım sırasında yapısal yaklaşımla çizdiğimiz diyagram.
+
+257
+01:01:55,347 --> 01:02:03,907
+Peki, veri tabanı yapısını hangi diagramla gösteririz?
+
+258
+01:02:06,847 --> 01:02:10,248
+Veri modelimizi nasıl çıkarırız ortaya?
+
+259
+01:02:17,715 --> 01:02:18,875
+[öğrenci]
+
+260
+01:02:37,780 --> 01:02:57,519
+Evet. Veri tabanı, veri modelimiz için ER diyagramı. İki hafta önce veri modeli üzerinde durduk. Veri tabanı tasarımı üzerinde durduk.
+
+261
+01:02:59,219 --> 01:03:18,799
+ER diyagramı, varlık, ilişki diyagramı. Yani bir uygulamada hangi varlıklar var? Bunu sistem analizinde kabaca çiziyoruz. Tasarımda da ayrıntılı olarak çiziyoruz. Hangi varlıklar var? Bunların aralarında da nasıl bir ilişki var? Bunu gösteriyoruz.
+
+262
+01:03:20,739 --> 01:03:25,439
+Peki son olarak bir soru daha sorayım. Ondan sonra dersi tamamlayalım.
+
+263
+01:03:27,923 --> 01:03:39,083
+Mesleğe yönelik yaklaşımla analiz aşamasında, sistem analizi aşamasında hangi diagramları çizeriz?
+
+264
+01:03:51,188 --> 01:03:52,967
+[öğrenci] söyler misin?
+
+265
+01:04:05,972 --> 01:04:08,072
+Başka söyleyecek olan var mı?
+
+266
+01:04:09,072 --> 01:04:18,972
+Nesneye yönelik yaklaşımda, siz nesneye yönelik analiz, nesneye yönelik programlama dersi de okuyorsunuz.
+
+267
+01:04:48,500 --> 01:04:48,940
+Evet.
+
+268
+01:04:55,123 --> 01:05:04,364
+Nesneye yönelik yaklaşımla çizdiğimiz diyagramlar, use case diyagramları, use case belgelerini hazırlıyoruz. Bunları analizde oluşturuyoruz.
+
+269
+01:05:04,364 --> 01:05:11,483
+Ayrıca, kullanım senaryosu diyagramları, use case diyagramları.
+
+270
+01:05:17,844 --> 01:05:26,664
+Class diagramlar, kavramsal sınıf diagramları diyoruz ona. Class diagramı veya sınıf diagramları veri modeli için.
+
+271
+01:05:27,152 --> 01:05:51,092
+Tasarım içinde ardışıl diyagramları. Bunları da hepsini geçen hafta gördünüz. Ama bunları çalışırken şu şekilde çalışın, daha mantıklı olarak çalışın. Hangisini ne için kullanıyoruz? Analiz için ne kullanıyoruz? Tasarım için ne kullanıyoruz? Bu size sınavda da yani sadece
+
+272
+01:05:51,891 --> 01:06:04,592
+İyi bir şekil çizmek değil bu diyagramlar. Ne anlatıyor, ne zaman anlatıyor, hangi süreçte anlatıyor? Bunu farkında olarak hazırlayın diyagramları.
+
+273
+01:06:06,251 --> 01:06:07,672
+Evet, sorunuz var mı?
+
+274
+01:06:16,244 --> 01:06:23,724
+Sınav sonuçlarınızı büyük bir ihtimalle bu 1-2 gün içinde ilan ederim.
+
+275
+01:06:36,019 --> 01:06:38,579
+Evet, o zaman tamamlıyorum dersi.
+
+276
+01:06:44,148 --> 01:06:48,228
+Evet, bu 9 kişiye de teşekkür ederim katıldıkları için.
+
+277
+01:06:52,148 --> 01:07:02,907
+Bundan sonraki haftada projelerinizi teslim edeceksiniz ve sunumlarınız var.
+
+278
+01:07:04,367 --> 01:07:06,927
+Sunumunu arkadaş gruplarınıza da yazın.
+
+279
+01:07:07,668 --> 01:07:11,407
+Sunumunu önümüzdeki hafta yapmak isteyenler.
+
+280
+01:07:11,923 --> 01:07:30,103
+İsteyen gruplar bana mail atsın. Ona göre sunum listesini hazırlayacağım. Kendi isteğiyle ilk hafta yapan gruba bir 5-10 puan fazla vereceğim. Onu bilerek grup arkadaşlarınızla konuşun, bana mail atın.
+
+281
+01:07:40,755 --> 01:08:04,895
+Yani devam tutabildiğim kadar olacak. Özellikle şeylerde oluyor zaten. Benim sizde ilk haftalarda verdiğim ödevler vardı. O ödevlere cevap veren arkadaşlarınız ders sırasında. Onların etkisi oluyor.
+
+282
+01:08:16,756 --> 01:08:27,756
+Bunların vizedeki normal sonuçlarınızı arttırarak veya finaldeki sonuçlarınızı arttırarak etkisi oluyor.
+
+283
+01:08:37,427 --> 01:08:40,307
+Evet, başka sorunuz yoksa dersi tamamlıyorum.
+
+284
+01:10:01,524 --> 01:10:08,804
+Tur abi, henüz ayrılmadım herhalde. Duyuyor musun?

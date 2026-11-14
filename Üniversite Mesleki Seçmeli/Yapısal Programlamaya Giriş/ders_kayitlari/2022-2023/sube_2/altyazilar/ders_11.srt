@@ -1,0 +1,1079 @@
+1
+00:01:28,628 --> 00:01:30,251
+[öğrenci], merhaba ve al.
+
+2
+00:01:43,572 --> 00:01:58,251
+Şimdi Sena Hocamız gelecek. Bu hafta kendisiyle Közü Çözüm'ü ilgulama yapacaksınız. Biraz daha kalabalıklaşalım. Birkaç bir şey söyleyeceğim. Sonra ben ayrılırım herhalde.
+
+3
+00:02:01,715 --> 00:02:03,715
+Evet, Sena Hocam, hoş geldiniz.
+
+4
+00:02:03,715 --> 00:02:06,215
+Hoş bulduk Hocam. Kasım geliyor mu?
+
+5
+00:02:06,215 --> 00:02:07,215
+Geliyor.
+
+6
+00:02:09,216 --> 00:02:12,216
+Ben size post yetkisi veriyorum.
+
+7
+00:02:13,216 --> 00:02:14,216
+Tamam Hocam.
+
+8
+00:02:15,216 --> 00:02:21,216
+Birkaç bir şey söyleyeceğim, öyle ayrılırım. Ama biraz böyle şey, sınıf kalabalıklaşsın.
+
+9
+00:02:22,216 --> 00:02:24,139
+Bir iki dakika daha bekleyelim.
+
+10
+00:02:30,515 --> 00:02:32,875
+Bakın hocam, ben size şey sormak istiyordum.
+
+11
+00:02:35,355 --> 00:02:41,675
+Şimdi GCC ile compile ederken, ANSI parametresini eklememiz yeterli mi, okulun standartları için?
+
+12
+00:02:43,515 --> 00:02:46,156
+C, tıra C'ye, onu mu diyorsun?
+
+13
+00:02:48,915 --> 00:02:51,156
+Tamam anlamadım hocam, tekrar edildi misiniz?
+
+14
+00:02:52,156 --> 00:02:57,275
+Tıra C ile, yani GCC, tıra C yazarak diyorsun değil mi sadece?
+
+15
+00:02:57,587 --> 00:03:03,927
+Gece C-STD eşittir C89 mesela.
+
+16
+00:03:04,927 --> 00:03:09,087
+Yok 89'a falan gerek yok da yani direkt değerlemesi lazım.
+
+17
+00:03:09,747 --> 00:03:12,867
+Ama [öğrenci] C89'da da değerleyebilirsiniz.
+
+18
+00:03:13,608 --> 00:03:15,947
+Yani orada özetle şunlara dikkat etmeniz gerekiyor.
+
+19
+00:03:17,647 --> 00:03:22,447
+For gibi ondan sonra if gibi blok altında değişken tanımlaması yapmıyorsunuz.
+
+20
+00:03:23,328 --> 00:03:25,007
+Örneğin şöyle bir şey olmaz.
+
+21
+00:03:25,972 --> 00:03:27,972
+For int iyi.
+
+22
+00:03:27,972 --> 00:03:42,972
+Aynen. Ben de yazıyordum. Sonra prototiplerin main'den önce yazılması gerekiyor. Yani o standarda dikkat edelim. Başka ne vardı? Bir şey daha vardı da.
+
+23
+00:03:44,972 --> 00:03:51,972
+Break, Continue zaten onları kullanmayacağız. Onlar direkt programlamayla alakalı şeyler. Break'i sadece Switch ile kullanabilirsiniz.
+
+24
+00:03:52,467 --> 00:04:01,867
+Onun yerine şey tavsiye ederim ama, yani bir dfc++ veya CodeBlocks gibi bir IDE kurun. Ayrıca onun üzerinde deneyin.
+
+25
+00:04:01,867 --> 00:04:05,867
+Veya şey var, IDE One miydi neydi, öyle bir sayfa vardı.
+
+26
+00:04:05,867 --> 00:04:08,467
+Bir dakika.
+
+27
+00:04:08,467 --> 00:04:13,067
+Veya online gdb.
+
+28
+00:04:13,067 --> 00:04:15,867
+Şu olacak.
+
+29
+00:04:17,588 --> 00:04:32,588
+Evet, bu online GDP üzerinde C'yi seçtiğinizde o bizim standartlarımıza uygun bir şey. Buradan da online değerleme yapabilirsiniz. Ondan sonra gönderirsiniz ödevlerinizi veya işte laboratuvar çözümlerinizi.
+
+30
+00:04:34,588 --> 00:04:35,588
+Evet, sanırsam...
+
+31
+00:04:36,211 --> 00:04:40,371
+Type-Def, structlar falan da serbest değil mi artık, şu sayısal analizde?
+
+32
+00:04:40,371 --> 00:04:52,932
+Sayısal analizde serbest, burada structure bu derste yok. Sadece diziler, matrisler, fonksiyonlar, pointerlar. Yani bu ders daha çok algoritma geliştirme üzerine.
+
+33
+00:04:52,932 --> 00:04:57,172
+Sayısal analizde isterseniz structure kullanabilirsiniz.
+
+34
+00:04:57,172 --> 00:04:59,411
+Çok teşekkürler.
+
+35
+00:04:59,411 --> 00:05:00,451
+Mücahedef.
+
+36
+00:05:00,564 --> 00:05:11,803
+Şimdi arkadaşlar, ders başlamadan önce yaklaşık 40 kişi olmuşuz. Hepinizin de merakını uyandırmıştır belki. Herkes ne olacak falan diye düşünüyor olabilir.
+
+37
+00:05:11,803 --> 00:05:20,124
+Bir hibrit eğitim kararı diye bir şey var. Yani burada hibrit eğitimden kasıt şu.
+
+38
+00:05:20,660 --> 00:05:28,660
+Ben zaten okuldayım, şu anda da okuldayım. İşte okulda, odamda olmak yerine sınıfa gideceğim öğrenciler varsa.
+
+39
+00:05:28,660 --> 00:05:45,580
+Sınıfta tahtaya sizin gördüğünüz şeyi yansıtacağız. Siz de ekrandan bunu göreceksiniz. Hani bir kamera yok, tahtayı çekecek, işte ben tahtaya yazdığım kameradan göreceksin. Öyle bir platform maalesef yok.
+
+40
+00:05:45,620 --> 00:05:56,820
+Dolayısıyla yapacağımız şey bu online derste neyse sınıfta da o olur. Bunu düşünerek gelmek isteyen varsa elbette gelebilir okula.
+
+41
+00:05:57,108 --> 00:06:22,788
+Ama gelmek ve gelmemek arasında hiçbir fark yok. Tabi işin yorgunluk, ondan sonra yol vs. boyutunu düşüneceksiniz. O ayrı. Çünkü ben tablet kullanıyorum, grafik tablet. Bir şeyler yazacaksam onun üzerine yazıyorum. Ha ekrandan görmüşsünüz, ha tahtada görmüşsünüz. Normal derste de olsanız onu kullanacağım. Benim hem sayısal analiz dersim için hem de yapısal programlama dersim için
+
+42
+00:06:23,028 --> 00:06:29,028
+Öyle bir şey yok. Hadi onu da geçtim. Belki tahtada yazacak olsam şöyle bir sıkıntımız var.
+
+43
+00:06:29,028 --> 00:06:39,028
+Sınıflardaki internetler henüz tam stabil değil. Bazı sınıfta internet kablolu veya kablosuz çekiyor, bazı sınıfta çekmiyor.
+
+44
+00:06:39,028 --> 00:06:47,756
+Bu ne demek? Sıkıntılı bir internette online eğitimin aksaması demek. Bu sefer uzakta olan arkadaşlarımız bundan çok mağdur olacaklar.
+
+45
+00:06:47,987 --> 00:06:51,307
+Bir şey yapıyorsak tam yapalım. Düşüncem her zaman odur.
+
+46
+00:06:52,208 --> 00:06:58,148
+En azından online eğitimin kaynakları videolarımız sağlam olsun, eksiksiz olsun isterim.
+
+47
+00:06:58,148 --> 00:07:01,548
+Bir şeyler bölük bölçük olduğumu hiç kimseye faydası olmaz.
+
+48
+00:07:02,068 --> 00:07:08,987
+Bakalım eğer şu internet sistemi düzelirse, herhalde bu hafta bir iyileştirme yapılacak diye bir duyum aldım.
+
+49
+00:07:08,987 --> 00:07:14,348
+O zaman ben de sınıfa giderim ama bakacağım eğer hiçbir öğrenci yoksa sınıfta.
+
+50
+00:07:14,612 --> 00:07:24,612
+Ofisime geleceğim çarşamba günleri için. Ofisimde normal işleyişe devam edeceğiz. Şunu sorabilirim, şehir dışında olanlar bir el kaldırabilir mi?
+
+51
+00:07:24,612 --> 00:07:35,612
+Bu çarşamba herhalde anlık bir şekilde çoğu kişi gelecek değildir. Baya bir şehir dışı var görünüyor.
+
+52
+00:07:39,923 --> 00:07:51,323
+Evet, şehir üstüde, şehir dışıda sayısını hesap göremiyorum. Belki bir yerlerde sayıda vardır da evet, baya bir katılım var şehir dışında.
+
+53
+00:07:51,323 --> 00:07:58,923
+Dolayısıyla bu online eğitim videolarını aksatacak bir şey yapmayacağım ben.
+
+54
+00:07:58,923 --> 00:08:05,739
+Yani sınıfa gittiğim zaman internet yok, ondan sonra veya kesilen bir internet varsa online eğitimin aksaması demek.
+
+55
+00:08:05,747 --> 00:08:14,747
+Böyle bir şeye müsaade etmem, gelirim odamda okuldaki ofisinde veya internet olan gerekirse evde dersini yaparım. Bu herkese faydalı olur.
+
+56
+00:08:14,747 --> 00:08:30,668
+Ama internet düzelmiştir, herhangi bir sıkıntı yoktur. O zaman sizlerden de birileri gelirse okula şey yaparız, ben sınıfa giderim. Yine şu ana kadar yaptığımız dersin mantığıyla derslerimizi yaparız.
+
+57
+00:08:30,708 --> 00:08:38,107
+Bunun bilgisini şimdilik böylece vermiş olalım. Bu çarşamba şeyler belli olmadığı için çarşamba öğlen toplantı yapılacak.
+
+58
+00:08:38,107 --> 00:08:45,508
+Çarşamba günkü derslerimiz normal işleyişte, şu ana kadar online yaptığımız işleyişte olacak. Onun için okula gelmenize gerek yok çarşambada.
+
+59
+00:08:45,508 --> 00:08:51,908
+Ondan sonraki hafta için ayrıca bilgilendirme yaparım. Bunu da söylemiş olalım. Tabii bu benim dersim için geçerli.
+
+60
+00:08:51,908 --> 00:08:58,307
+Başka bir hoca başka bir imkan yaratır, farklı işte kendi telefonundan girer, başka şeyleri vardır bilemem.
+
+61
+00:08:58,707 --> 00:09:08,207
+Ahmet Hoca böyle dedi deyip de bunu bütün derslere yorumlamasın arkadaşlar. Benim dersimde bu çarşamba günü normal işleyişimize devam edeceğiz. Tamam mı?
+
+62
+00:09:08,207 --> 00:09:11,207
+Bu konuda sorunuz var mı?
+
+63
+00:09:15,892 --> 00:09:27,172
+Peki Sena Hocam, bayramdan sonrası için zaten şey, [öğrenci], dikkat edersen gelecek hafta için bile sınıfta işlemeyi düşünürüm diyorum.
+
+64
+00:09:27,172 --> 00:09:38,132
+Yani bayrama gelmeden önce gelecek hafta da yapılabilir. Ama şu an için bu haftaya özel şey yok. Herhangi bir şekilde sınıfta işlemeyi düşünmüyorum.
+
+65
+00:09:38,451 --> 00:09:44,451
+Sınıfta işlemeyi düşünürsem de işleyiş şekli belli. Yani ben tahtaya kalkıp da bir şey yazmayacağım.
+
+66
+00:09:44,451 --> 00:09:49,052
+Online katılan arkadaşların burada tahtayı görmesi imkanı yok.
+
+67
+00:09:49,052 --> 00:09:52,852
+Yani bu notbookun kamerasıyla bilmem nesiyle olacak iş değil.
+
+68
+00:09:52,852 --> 00:09:58,052
+Grafik tablete yazarak aynen derslerinde olduğu gibi öyle işleyeceğim.
+
+69
+00:09:58,052 --> 00:10:04,652
+Tabii ki sınıfta işlemeyi düşünürüz gelirseniz buyrun gelin. Ama çok fazla bir şey olmayacak.
+
+70
+00:10:04,947 --> 00:10:14,248
+Evet, sınıfta maalesef mikrofon sıkıntısı oluyor. Ayağa kalkınca, bir tahtaya yönelince göremeyeceğiniz gibi aynı şekilde seste de problem olacak.
+
+71
+00:10:14,248 --> 00:10:22,048
+Onun için ben bu uzaktan öğretimle alakalı video materyallerimizin bozulmaması adına, nasıl ki şu ana kadar belli bir düzenle gidiyoruz,
+
+72
+00:10:22,048 --> 00:10:30,847
+bu düzeni bozmamak adına sınıfta da gideceğim, internet sorunu çözülürse oturacağım ve oturduğum yerden kalkmadan size ders anlatacağım.
+
+73
+00:10:31,604 --> 00:10:37,203
+Tahtayı vs. zaten grafik tablette ben kullanabiliyorum, öyle bir imkanım var.
+
+74
+00:10:37,203 --> 00:10:44,203
+O açıdan ders işleyişinde tekrar söyleyelim, herhangi bir şey sınıfta da olsam, burada da olsam hiçbir şey değişmeyecek.
+
+75
+00:10:45,803 --> 00:10:46,796
+Tamam?
+
+76
+00:10:47,860 --> 00:10:55,579
+Peki, sizleri Sena Hocam'la baş başa bırakalım. Hocam ben buralardayım, tekrar belki gelirim, arada soru olursa bakarız.
+
+77
+00:10:55,579 --> 00:11:08,579
+Şimdi bugün hocamız sizlere 2-3 örnek çözecek. Sizlere tavsiyem şu, henüz ders işleyişinde fonksiyonları tam görmedi diğer grup. Onun için bu örnekler main fonksiyonunda yazılan örnekler.
+
+78
+00:11:13,279 --> 00:11:25,559
+Fonksiyonla yazmaya çalışın. Ayrı zamanda fonksiyon kullanarak, dizi üzerinde yapılan operasyon var veya başka operasyonlar var. Fonksiyon yazacak şekilde örnekleri revize edin.
+
+79
+00:11:26,599 --> 00:11:40,279
+Laboratuvarların puanlarından bahsediyoruz. Onları hocalarımız belli bir sistematiğe göre okuyorlar. Sadece bu dersin lablarıyla meşgul değiller. Artık iki hafta 15-20 gün içerisinde normalde okunuyor.
+
+80
+00:11:40,563 --> 00:12:01,803
+Okundukça zaten size bir egzer paylaşıldı, oradan görürsünüz. Yani belli bir süresi yok ama çok da geç değil. Yani bir ay sonra açıklanacak değil. Bizim hocalarla görüşmemizde 15 gün içerisinde falan açıklansın diyoruz. Ama bazen yoğunluklar oluyor. Bir laboratuvar hocası, yani sizin tarafından nasıl görünüyor bilmiyorum da.
+
+81
+00:12:02,048 --> 00:12:08,807
+Onların da kendi aldıkları dersler var. Sizin gibi onlar da yüksek seans öğrenciler, yüksek seans öğrencileri.
+
+82
+00:12:08,807 --> 00:12:14,487
+Ayrıca asiste ettikleri birden fazla dersler var. Hatta ikiden fazla, üçten fazla da olabilir.
+
+83
+00:12:14,487 --> 00:12:25,487
+Onlar kendileri bir plan yapıp, iş paylaşımı yapıp, en kısa sürede, mümkün olan en kısa sürede sizlere açıklarlar. Bu en kısa sürede dediğim gibi bir ay falan olmaz. Tamam mı?
+
+84
+00:12:28,563 --> 00:12:35,043
+Beşinci haftanın eksik konularını çarşamba dersinde kaldığımız yerden devam edeceğiz.
+
+85
+00:12:35,043 --> 00:12:40,004
+Bir ek ders yapmayı düşündük ama rahatsızlık sebebiyle yapamadık.
+
+86
+00:12:40,004 --> 00:12:46,563
+Gerekirse bir hafta ek ders yapacağım ama şu an için arada bir laboratuvarda boşluk varmış.
+
+87
+00:12:46,563 --> 00:12:49,203
+Gerekirse o laboratuvar gününü de kullanın.
+
+88
+00:12:49,556 --> 00:12:59,956
+Dersin konularını normal işleyiş üzerinde tamamlamayı düşünüyorum. Ayrı bir link olmasın, her şeyi online yıldızdaki kayıtlardan görün diye ayrı bir linki şu an için düşünmüyorum.
+
+89
+00:12:59,956 --> 00:13:12,355
+Gerekirse vize sınavına kadar geç kalırsak, kaldığımız, geldiğimiz yere kadar sorumlu olursunuz. Bu haftaki konu belki ikisini birden de bitirebiliriz. Yani beşinci haftanın konusu aşırı zor ve uzun bir konu değil.
+
+90
+00:13:12,755 --> 00:13:21,755
+Yani biraz belki kaydıra kaydıra işte bazı haftalar işte geri önceki haftanın konusundan kala kala rahatlıkla yetiştiririz.
+
+91
+00:13:21,755 --> 00:13:24,755
+Peki hepinize kolay gelsin, görüşmek üzere arkadaşlar.
+
+92
+00:13:27,755 --> 00:13:30,755
+Merhaba arkadaşlar, sesimi duyabiliyor musunuz?
+
+93
+00:13:35,755 --> 00:13:37,755
+Evet duyabiliyoruz.
+
+94
+00:13:37,755 --> 00:13:38,755
+Tamamdır.
+
+95
+00:13:45,395 --> 00:13:47,395
+Ekranımı görebiliyor musunuz?
+
+96
+00:13:47,395 --> 00:13:49,395
+Evet hocam.
+
+97
+00:13:49,395 --> 00:13:59,395
+Öncelikle geçen hafta yapmış olduğunuz LAB uygulamasının çözümünü yapacağız. Önce bir soruyu okuyalım, hatırlayalım.
+
+98
+00:13:59,892 --> 00:14:07,892
+İstanbul sokaklarında yürüyen bir bilgisayar mühendisi öğrencisi Ali, mağazaların üzerinde bulunan led tabelalar dikkatini çeker.
+
+99
+00:14:07,892 --> 00:14:17,892
+Bu tabelalarda yazılan kelimenin elemanlarının her bir adımda sola kayıp belirli bir adım sonra kelimenin tekrar eski haline geldiğini fark eder.
+
+100
+00:14:17,892 --> 00:14:24,892
+Ali bu örneği, C programlama da programlamak ister. Bu konuyu hocasına danışıp nasıl yapılacağı konusunda fikir almak ister.
+
+101
+00:14:24,892 --> 00:14:27,892
+Hocası Ali'ye şu kısımların olması gerektiğini belirtir.
+
+102
+00:14:27,892 --> 00:14:36,892
+olması gereken kısımlar, öncelikle kelimeyi kullanıcından alıp, bir diziye aktarıp, işlemler bu dizi üzerinden yapılmalı.
+
+103
+00:14:37,107 --> 00:14:47,508
+2. LED tabelada olduğu gibi harfler her bir adımda en son gelecek şekilde düzenlendiğinde her bir adımın ekrana yazılması gerekiyor.
+
+104
+00:14:47,508 --> 00:14:51,107
+3. Programda for döngüsü yerine do while kullanılacak.
+
+105
+00:14:51,107 --> 00:14:57,107
+4. Program bittiğinde kullanıcı büyük e veya küçük e'ye bastığında program tekrar başlamalı.
+
+106
+00:14:57,107 --> 00:15:01,931
+Herhangi bir durum için hazır bir fonksiyon kullanılmamalıdır. Şartlarımız vardı.
+
+107
+00:15:03,764 --> 00:15:07,764
+Adım adım koddan gösterelim olması gereken yerleri.
+
+108
+00:15:12,788 --> 00:15:30,788
+Öncelikle bir dizi belirledik. Ondan sonrasında döngülerimizi devam ettirmek için n, i ve j değişkenlerimizi belirledik. Sonrasında tempf ve devam...
+
+109
+00:15:31,668 --> 00:15:43,668
+değişkenlerini tanımladık ki, geçici yani yerini değiştireceğimiz karakteri tempe atamak, büyük e ve küçük e şartını da sağlamak için devam değişkenini tanımladık.
+
+110
+00:15:43,668 --> 00:15:49,668
+Hocam, ekran tekrardan şeye geçti de, teşekkürler.
+
+111
+00:15:51,668 --> 00:15:54,668
+İlk du bizim için ne yapıyor?
+
+112
+00:15:58,163 --> 00:16:12,163
+Büyük E veya Küçük E'ye bastığında devam etmesini sağlayacağız. Bunun için ilk do'da, ilk while'ın şartı diyelim, devam E veya Küçük E olduğunda devam edecek.
+
+113
+00:16:12,163 --> 00:16:16,163
+Peki, do while ne işe yarıyordu? Söyleyebilecek olan var mı?
+
+114
+00:16:20,307 --> 00:16:26,307
+İşlemin önce bir defa gerçekleştirilip ardından şartı sağlıyorsa tekrardan gerçekleştirilmeye devam edilmesini sağlıyor.
+
+115
+00:16:26,307 --> 00:16:37,259
+Evet. O yüzden öncelikle ne diyoruz? Lütfen bir kelime girin. Ondan sonra kelimeyi alıyoruz. Burada yüzde S olmasının sebebi nedir?
+
+116
+00:16:41,268 --> 00:16:43,768
+String olarak almamızdan dolayı.
+
+117
+00:16:43,768 --> 00:16:52,067
+Evet, string olarak bir değer aldık ve bunu da neye atadık? ARR dizisine atadık.
+
+118
+00:16:53,468 --> 00:17:00,067
+Sonraki do while'da ne yapıyoruz? Dizimizin boyutunu öğreneceğiz. Burada ne diyoruz?
+
+119
+00:17:00,067 --> 00:17:08,768
+Eni sıfır olarak burada tanımlamıştık. Sonrasında do'nun içerisinde eni arttırıyoruz her seferinde. Ama şartımız ne?
+
+120
+00:17:09,011 --> 00:17:18,371
+Dizinin en ince elemanı boşluk değilse, bu ters, sıfır, boş karakter anlamına geliyor.
+
+121
+00:17:18,371 --> 00:17:28,612
+Diyse devam et. Böylece bu hazır fonksiyon olan stln fonksiyonunun işini yapmış oluyoruz. Dizimizin boyutunu buluyoruz.
+
+122
+00:17:28,612 --> 00:17:34,451
+Sonrasında ne yapacaktık? Şuradan tekrar bakalım.
+
+123
+00:17:35,380 --> 00:17:45,880
+Birinci adım, kelimeyi yazdık, sonrasında mühendislikte M'yi sona atıp U'dan devam etmesini istiyorduk.
+
+124
+00:17:45,880 --> 00:17:53,380
+Burada adımı yazdırıyoruz. İ'yi önce tabii ki sıfıra eşitledik. Sonrasında printf'de kaçıncı adımda olduğumuzu yazdırıyoruz.
+
+125
+00:17:53,380 --> 00:17:56,332
+İ artı bir diyerek.
+
+126
+00:17:56,660 --> 00:18:01,660
+Sonrasında tempe dizimizin 0. elemanını atıyoruz.
+
+127
+00:18:01,660 --> 00:18:05,660
+Ekran yine pdf'e geldi.
+
+128
+00:18:09,236 --> 00:18:11,236
+Şu an kod ekranı görünmüyor mu?
+
+129
+00:18:13,236 --> 00:18:14,236
+Bende gözükmüyor.
+
+130
+00:18:26,579 --> 00:18:30,980
+Şu an görünüyor mu? Evet, şimdi gözüküyor.
+
+131
+00:18:30,980 --> 00:18:39,779
+Tamam. Adımlarımızı yazdırdık dedik, i artı bir, birinci adım yazacak ilk seferinde.
+
+132
+00:18:39,779 --> 00:18:48,179
+Sonrasında evreğimizin sıfırıncı elemanını, yani ilk elemanını temp'e atadık. Neden? Çünkü o elemanı sona atmak istiyoruz.
+
+133
+00:18:48,179 --> 00:18:53,179
+Sonrasında j'yi sıfıra eşitledik. Tabii bu do y'nin şartı neymiş?
+
+134
+00:18:53,491 --> 00:18:58,991
+i n'den küçük olduğu sürece, neden? i yani dizimizin boyutunu aşmamak için.
+
+135
+00:19:00,192 --> 00:19:09,991
+İkinci duuda ne yapıyoruz? j. elemana j artı 1'i atıyoruz.
+
+136
+00:19:09,991 --> 00:19:15,440
+Neden bir sonraki elemanı şimdiki elemanımızı atayarak dizimizi kaydırmış oluyoruz?
+
+137
+00:19:15,440 --> 00:19:23,440
+Burada da şartımız neymiş? J küçük, n-1. Neden? Dizimizin son elemanına kadar gidebilmek için.
+
+138
+00:19:23,440 --> 00:19:35,440
+Sonrasında, R'imizin n-1. yani bir önceki elemanına tempi atayarak son elemanı da ilk elemanla değiştirmiş oluyoruz.
+
+139
+00:19:37,440 --> 00:19:42,440
+Sonra, j eşittir 0 diyerek ne yapıyoruz?
+
+140
+00:19:42,932 --> 00:19:47,332
+dizimizin karakterlerini yazdırıyoruz. Buradaki yüzde C nedir peki?
+
+141
+00:19:52,500 --> 00:19:58,979
+Bu da tek karakter anlamına geliyor. Karakterimizi ekrana bastırarak sonrasında da j'yi artırıyoruz.
+
+142
+00:20:00,179 --> 00:20:01,459
+Bir çalıştıralım.
+
+143
+00:20:04,279 --> 00:20:05,559
+Görebiliyor musunuz?
+
+144
+00:20:05,819 --> 00:20:07,599
+Exe dosyasını.
+
+145
+00:20:07,859 --> 00:20:09,139
+Göremiyoruz hocam.
+
+146
+00:20:10,159 --> 00:20:11,439
+Göremiyorsunuz.
+
+147
+00:20:14,000 --> 00:20:15,539
+Şu an görebiliyor musunuz?
+
+148
+00:20:16,819 --> 00:20:17,579
+Evet hocam.
+
+149
+00:20:19,188 --> 00:20:40,188
+Bilgisayar yazdığımızda ne yaptı? Birinci adımda B'yi sona aldı, ikinci adımda İ'yi sona aldı, üçüncü adımda G'yi sona aldı şeklinde en sonda tekrar kelimemizin orijinalini yazarak devam etmek isteyip istemediğimizi soruyor.
+
+150
+00:20:40,188 --> 00:20:44,188
+E yazarsak tekrar bize kelime soruyor.
+
+151
+00:20:51,028 --> 00:20:55,028
+Çıkmak istediğimiz zaman da herhangi bir tuşa bastığımız zaman, çıkıyoruz.
+
+152
+00:20:58,028 --> 00:21:00,028
+Tamam mıdır? Sorunuz var mı?
+
+153
+00:21:04,403 --> 00:21:05,403
+Yok hocam benim.
+
+154
+00:21:06,403 --> 00:21:09,403
+Tamam, o zaman bu haftanın uygulamalarına geçelim.
+
+155
+00:21:26,132 --> 00:21:40,632
+İlk önce bir matriz sorusu yapacağız. Bu matriz sorusu şöyle bir soru. Binary bir matrizin ilk köşegenine göre simetrik olabilmesi için matrizin üzerinde gerçekleşebilecek minimum değişiklik sayısını bulan C programını yazmış.
+
+156
+00:21:52,788 --> 00:21:59,788
+Şu şekilde elemanların simetrik olması anlamına geliyor.
+
+157
+00:22:01,788 --> 00:22:09,740
+Bunu yapmak için sizce nasıl bir yöntem kullanmalıyız? Önce sizden fikirleri alayım, ondan sonra çözümünü göstereyim.
+
+158
+00:22:15,316 --> 00:22:16,316
+Var mı fikri olan?
+
+159
+00:22:16,316 --> 00:22:27,316
+Matrisi aldıktan sonra, matrisin sıfırıncı elemanından değil, birinci elemanından başlayarak satırın en eksi,
+
+160
+00:22:27,316 --> 00:22:40,316
+yani sondan bir önceki simetrik olarak karşılaştırmamızı yaparak,
+
+161
+00:22:42,324 --> 00:22:51,324
+Dizinin i'ye j'inci elemanı, j'ye i'ci elemanı ile aynı değilse gerçekleşecek minimum işlem sayısını bir arttırabiliriz.
+
+162
+00:22:51,324 --> 00:22:57,964
+Evet, doğru. Tamam, o zaman kod ekranımıza geçelim.
+
+163
+00:23:16,948 --> 00:23:18,948
+Bu da ekranını görebiliyor musunuz?
+
+164
+00:23:20,948 --> 00:23:21,948
+Evet hocam.
+
+165
+00:23:22,948 --> 00:23:23,948
+Tamam.
+
+166
+00:23:24,948 --> 00:23:31,948
+Öncelikle iki tane matris tanımladık A ve T olarak.
+
+167
+00:23:33,948 --> 00:23:39,948
+Gerçi burada T'yi kullanmadık. A bize yeterli. A matrisini tanımladık, bir de N tanımladık.
+
+168
+00:23:40,627 --> 00:23:49,988
+i ve j değişkenlerini döngülerimiz için tanımladık. Bir de kaç değişiklik yapacağımızı bilmek için flip adında bir değişken tanımladık.
+
+169
+00:23:49,988 --> 00:24:04,188
+Bu do-while döngüsünde ne yapıyoruz? Şurada maksimum bir değer tanımladık. Kullanıcı ondan fazla bir boyut girmesin diye. Eğer ondan fazla boyut giderse
+
+170
+00:24:06,355 --> 00:24:10,355
+Tekrar matris boyutu girmesini istiyoruz.
+
+171
+00:24:11,355 --> 00:24:15,355
+Eğer ondan küçükse de ne yapıyoruz?
+
+172
+00:24:16,355 --> 00:24:23,355
+Okuyoruz değerlerimizi scanf ile ve en değişkenini atıyoruz.
+
+173
+00:24:23,355 --> 00:24:27,355
+Yani daha doğrusu en değişkeninde kaç boyutlu olacağını tutuyoruz.
+
+174
+00:24:28,355 --> 00:24:32,355
+Sonrasında elemanları girmesini istiyoruz.
+
+175
+00:24:34,259 --> 00:24:46,259
+İki boyutlu bir dizimiz olduğu için, matrisimiz iki boyutlu olduğu için, i ve j değişkenleri ile adım adım elemanlarımızı alıyoruz.
+
+176
+00:24:46,259 --> 00:25:00,971
+i eşittir 0 olduğunda, j eşittir 0 olduğunda, element 0, 0 yazacağız. Sonra oraya girilen değeri %d ile okuyacağız.
+
+177
+00:25:01,044 --> 00:25:09,443
+Sonrasında J1 artacak, 0'a 1, 0'a 2 şeklinde n'i kaç girdiysek ona göre devam edeceğiz.
+
+178
+00:25:10,443 --> 00:25:24,044
+Sonrasında matrisi yazdıracağız. Print matriks diyoruz. Ne yapıyoruz? Yine aynı yapıyı kullanıyoruz. İçte iki tane döngümüz var, i ve j olarak.
+
+179
+00:25:27,827 --> 00:25:34,587
+N'den küçük olduğu sürece I'yi arttırıyoruz. Aynı şekilde J'de N'den küçük olduğu sürece J'yi arttırıyoruz.
+
+180
+00:25:34,587 --> 00:25:40,827
+Buradaki %3D dediğimiz ne işe yarıyor bilen var mı? Söyleyebilecek olan?
+
+181
+00:25:40,827 --> 00:25:46,427
+Sayıların dört basamaktan küçük olduğu takdirde düzgün bir şekilde basılmasını sağlıyor.
+
+182
+00:25:46,427 --> 00:25:51,427
+Evet, kenarlardan boşluk bırakmak için böyle bir yapı kullandık, daha net görebilmek için.
+
+183
+00:25:52,500 --> 00:25:59,220
+Sonrasında A, I, J'yi yazdırıyoruz ve bir satır aşağı geçmesini sağlıyoruz.
+
+184
+00:25:59,220 --> 00:26:10,339
+Şimdi flip işlemi için ne yapacağız? Adım adım matrisimizi gezeceğiz. Yine aynı şekilde iç içe bir döngü kullandık, for döngüsü.
+
+185
+00:26:18,000 --> 00:26:26,000
+Benim değişiklik yapmam gerekiyor anlamına gelir. O zaman filipi bir arttırıyoruz. Aslında gayet basit.
+
+186
+00:26:26,000 --> 00:26:40,000
+Peki burada bir şeye dikkat etmemiz gerekiyor. Bu filip bölü 2'yi neden kullandık? Yazdırırken neden yarısını yazdırıyoruz?
+
+187
+00:26:45,844 --> 00:27:04,844
+Çünkü hem i'nin hem j'nin yani hem dörde beşlik elemanı beşe dörtlik elemanla karşılaştırdık hem de beşe dörtlik elemanı dörde beşlik elemanla karşılaştırdık. Bu da iki defa karşılaştırmaya denk geliyor aynı elemanları.
+
+188
+00:27:04,844 --> 00:27:11,564
+Evet, doğru. Yani tüm dizi, tüm matrisi gezdiğiniz için
+
+189
+00:27:12,403 --> 00:27:23,403
+I, J, I, J, I ile yani her seferinde yer değişeceği için 4, 5 ve 5, 4, 2, 3 ve 3, 2 gibi elemanları karşılaştırıp fili bir arttırdığımız için yarısını yazdırmamız gerekiyor.
+
+190
+00:27:23,403 --> 00:27:25,996
+Bir de çalıştırarak görelim.
+
+191
+00:27:37,364 --> 00:27:48,364
+Ne demiştik? Size eğer 10'dan fazla girersek bizden tekrar boyut girmemizi istiyordu. O yüzden efendim?
+
+192
+00:27:48,364 --> 00:27:58,092
+Burada köşekendeki elemanları da saymıyor mu yazdığımız kod? Mesela bire bir, bire bire eşit mi diye de sayacak.
+
+193
+00:28:03,539 --> 00:28:05,539
+Ben mi yanlış gördüm?
+
+194
+00:28:05,539 --> 00:28:07,500
+Bir daha açayım bir dakika.
+
+195
+00:28:19,635 --> 00:28:22,635
+Birebir, birebir eşit olduğunda
+
+196
+00:28:26,228 --> 00:28:32,728
+Köşegenleri de sayıyoruz ekstra olarak, o yüzden bölü 2 doğruya olmayacak.
+
+197
+00:28:36,084 --> 00:28:46,084
+Bölü 2, flip, artı şey, matrisin sütün sayısı bölü 2 yaparsak olabilir sanırım.
+
+198
+00:28:46,084 --> 00:28:49,004
+Bir çalıştıralım bakalım.
+
+199
+00:29:08,307 --> 00:29:16,307
+Matrisin boyutunu büyük girersek, bizden tekrar matrisin boyutunu ilgiyecek demiştik.
+
+200
+00:29:16,307 --> 00:29:21,307
+Küçük bir değer girelim, arkadaşımızın da sorduğu sorunun cevabını bulmuş olalım.
+
+201
+00:29:23,307 --> 00:29:27,307
+3 olsun matrisimizin boyutu, 3'e 3 bir matris olacak.
+
+202
+00:29:29,307 --> 00:29:33,900
+Binary matris olduğu için ne olması gerekiyor değerlerin?
+
+203
+00:29:36,243 --> 00:29:37,243
+1 ve 0.
+
+204
+00:29:37,243 --> 00:29:38,243
+Evet.
+
+205
+00:29:45,044 --> 00:29:47,044
+Seyredelim, ilk eleman sıfır olsun.
+
+206
+00:29:49,044 --> 00:29:54,044
+Hocam, ben yanlış şey yapmışım sanırım. Çünkü eşit olmadığını da arttırıyoruz ya zaten, o sorun olmayacak.
+
+207
+00:29:55,044 --> 00:30:01,044
+Evet. Onu görelim yine de. Güzel bir soruydu bence.
+
+208
+00:30:02,044 --> 00:30:11,820
+0, 1, 0, 0, 1, 0, 1, 0.
+
+209
+00:30:16,339 --> 00:30:21,839
+İlk sıfıra sıfır elemanımız hangisi? Şu, bu arada imlecimi görebiliyor musunuz?
+
+210
+00:30:24,339 --> 00:30:25,339
+Evet hocam.
+
+211
+00:30:25,339 --> 00:30:31,339
+Tamam. Sıfıra sıfır elemanı hangi eleman oluyor? İlk eleman oluyor. Şu gösterdiğimiz sıfır.
+
+212
+00:30:31,339 --> 00:30:43,179
+Sıfıra bir, sıfırıncı satır, birinci sütun olarak burası bir oluyor. Sonrasında girdiğimiz sıfır.
+
+213
+00:30:43,635 --> 00:31:09,895
+0, 1, 0, 1, 1, 0 şeklinde girdik. Şu 0, 1, 0 şeklinde olan, çapraz olan kısım bizim köşegenimiz olmuş oluyor. Kaç değişiklik yapmamız gerekiyormuş? 3. Neden? Şu 0'ın şu 1 ile simetrik olması için bunu 1 ile değiştirmemiz gerekiyor. Bu 0'ın şu 1'e göre simetrik olması için bu 1'i de 0 ile değiştirmemiz gerekiyor.
+
+214
+00:31:10,451 --> 00:31:14,852
+Bu sıfırın da simetrik olabilmesi için burada sıfır olması gerekiyor.
+
+215
+00:31:15,852 --> 00:31:17,052
+Sorunuz var mı?
+
+216
+00:31:25,907 --> 00:31:29,907
+Sanırım yok. Bu zaman devam ediyorum ikinci örnekle.
+
+217
+00:31:46,195 --> 00:31:58,195
+İkinci örneğimizde, elemanları kullanıcına dağınan en boyutlu bir diziyi Bubble Sort ile sıralayan ve dizide her bir elemanın kaç defa tekrar ettiğini ekrana yazdıran C programı.
+
+218
+00:31:58,195 --> 00:32:03,195
+Bubble Sort'u bilen var mı aranızda? Açıklayabilecek olan.
+
+219
+00:32:12,980 --> 00:32:29,300
+Bubble Sort en temel sıralama algoritmamız adım adım giderek yapıyor ve oldukça yoran bir sıralama algoritması aslında. Kodumuza geçelim o zaman.
+
+220
+00:32:47,188 --> 00:32:49,428
+Kod ekranı mı görebiliyorsunuz değil mi?
+
+221
+00:32:52,819 --> 00:33:15,539
+Yine döngülerimiz için EG'yi tanımladık. N de dizimizin boyutunu tutacak olan değişken. Int, integer bir dizi tanımlıyoruz. Maksimum boyutunda burada define ile tanımladık yüz olarak. Dizimizi tanımladık ve temp tanımladık.
+
+222
+00:33:15,695 --> 00:33:33,855
+Bunun da sebebi, bubble sort sıralamasını kullanabilmek için. İlk önce ne demiştik? Kullanıcıdan dizinin boyutunu istiyorduk. Printf ile dizinin boyutuna girin dedik. Scanf ile %d ile N değişkenimizin atamış olduk.
+
+223
+00:33:34,579 --> 00:33:43,939
+Kullanıcıdan dizinin boyutunu aldık. Sonrasında ne yapacağız? Kaç girdiyse kullanıcı dizinin boyutunu o kadar eleman isteyeceğiz.
+
+224
+00:33:43,939 --> 00:33:55,939
+Bunun için i eşittir 0'dan n'den küçük olduğu sürece i'yi 1 artırarak dizimizin i'inci elemanına değerlerimizi atıyoruz.
+
+225
+00:33:55,939 --> 00:33:59,939
+Sonrasında bir diziyi yazdırmak istiyoruz.
+
+226
+00:34:01,395 --> 00:34:12,395
+Yine i eşittir sıfırdan, n'den küçük olduğu sürece i'yi bir arttırarak elemanlarımızı yazdırıyoruz. Her seferinde bir alt satıra geçerek.
+
+227
+00:34:12,395 --> 00:34:25,228
+Sonrasında Bubble Sort ile bu diziyi sıralayacağız. Bubble Sort nasıl çalışıyor? İç içe iki for döngümüz var. İlk döngü de i sıfır.
+
+228
+00:34:25,300 --> 00:34:36,820
+n'den küçük olduğu sürece i'yi bir arttırarak ikincide de j'yi eşittir i artı birden başlıyoruz. Bunun nedenini söyleyebilecek olan var mı? Bir mantık yürütelim.
+
+229
+00:34:40,039 --> 00:34:41,660
+Neden i artı birden başlıyoruz?
+
+230
+00:34:49,940 --> 00:35:01,940
+Kendisiyle karşılaştırmamak için. Evet. Her elemanı bir sonraki elemanla karşılaştırmak için i artı birden başlatıyoruz ve yine n'den küçük olduğu sürece j'yi bir artırarak devam ediyoruz.
+
+231
+00:35:01,940 --> 00:35:13,940
+Eğer dizinin i. elemanı dizinin j. elemanından büyükse temp değişkenimize dizinin i. elemanını atıyoruz.
+
+232
+00:35:15,347 --> 00:35:21,347
+Sonra dizinin i. elemanına da dizinin j. elemanına atıyoruz. Yani ne yapmış olduk?
+
+233
+00:35:29,396 --> 00:35:40,796
+Dizinin bir sonraki elemanını öncekine atamış olduk. Sonra diziciye de temp değişkenimizi atarak bir swap işlemi yapmış oluyoruz.
+
+234
+00:35:40,796 --> 00:35:52,796
+Ve böylelikle ikili ikili karşılaştırarak bubblesort uygulaması, bubblesort algoritması dizimizi sıralamış oluyor. Burada sorunuz var mı?
+
+235
+00:36:00,115 --> 00:36:06,916
+Tamam, yoksa devam ediyorum. Sonrasında dizinin sıralı halini yazdırıyoruz. Yine yukarıdaki ile aynı.
+
+236
+00:36:07,916 --> 00:36:16,315
+i eşittir 0'dan, enden küçük olduğu sürece i artırarak dizimizi yazdırıyoruz.
+
+237
+00:36:17,416 --> 00:36:21,916
+Peki hangi elemanın kaç defa tekrar ettiğini nasıl bulacağız?
+
+238
+00:36:23,115 --> 00:36:25,615
+Yine burada iç içe for döngülerimiz var.
+
+239
+00:36:27,519 --> 00:36:35,119
+n'den küçük olduğu sürece i artırarak devam edeceğiz. Sayacı önce sıfıra eşit diyoruz. Sonrasında
+
+240
+00:36:35,119 --> 00:36:45,099
+for döngüsünde j eşittir sıfırdan. Bu sefer j i'den küçük olduğu sürece j i artırıyoruz.
+
+241
+00:36:48,371 --> 00:36:57,171
+Eğer dizinin i. elemanı eşitse dizinin j. elemanını sayacı arttır. Yani aynı elemanı bulduğumda sayacı arttırdım.
+
+242
+00:37:00,788 --> 00:37:13,988
+Sonrasında döngüden çıktım ve ne diyeceğim şu G olan döngüden, if-se eğer sayaç sıfıra eşitse ne anlama gelir sizce? Tahmin edin, bir mantık yürütelim.
+
+243
+00:37:22,804 --> 00:37:24,804
+Dizide tekrarlayan eleman yok.
+
+244
+00:37:27,804 --> 00:37:34,804
+Dizide işlenmemiş eleman varsa diyebiliriz. İşlenmemiş eleman varsa sayanç şuradan sıfır olarak gelecek.
+
+245
+00:37:35,804 --> 00:37:40,804
+O yüzden bir kere daha dizinin içinde arıyoruz.
+
+246
+00:37:42,804 --> 00:37:47,804
+Aynı değişkeni. J eşitir i artı birden başlayarak arıyoruz bu sefer.
+
+247
+00:37:49,876 --> 00:38:05,876
+En sonunda da printf ile dizinin i. elemanı, yani i sayısı, sayaç kadar tekrar ediyor diyoruz ve return 0 diyoruz.
+
+248
+00:38:05,876 --> 00:38:07,756
+Çalıştırarak görelim.
+
+249
+00:38:17,204 --> 00:38:19,524
+EGZE uygulamasını görüyorsunuz değil mi?
+
+250
+00:38:22,484 --> 00:38:23,324
+Evet hocam.
+
+251
+00:38:25,124 --> 00:38:28,884
+Tizinin boyutuna 5 girelim.
+
+252
+00:38:31,043 --> 00:38:42,324
+İlk sayı 15 olsun, ikinci sayı 20 olsun, üçüncü sayı 10 olsun, dört, altı olsun.
+
+253
+00:38:42,867 --> 00:38:45,268
+Son sayımız da 58 olsun.
+
+254
+00:38:47,867 --> 00:38:54,467
+İlk önce dizinin girilen haliyle 15, 20, 10, 6 ve 58 olarak diziyi yazdırdık.
+
+255
+00:38:54,467 --> 00:39:00,867
+Sonrasında dizinin sıralı halini, bubble sort ile sıralanmış halini yazdırıyoruz. Küçükten büyüye şekilde.
+
+256
+00:39:01,867 --> 00:39:08,867
+Tabi bu tekrar eden örnek olsa daha iyi olur. Tekrar edenleri şey yapalım.
+
+257
+00:39:19,668 --> 00:39:39,668
+Dizinin boyutu 6 olsun, ilk sayı 12 olsun, 20 olsun, tekrar 12 olsun, 15, 3 olsun. Bizim girdiğimiz sırayla yazdırdık, sonrasında dizinin sıralı halini yazdırdık. Babasort ile sıralanmış.
+
+258
+00:39:44,467 --> 00:40:00,707
+3 kaç defa tekrar etti? 2 kere 3 sayısı 2 defa tekrar ediyor. 12 sayısı 2 defa tekrar ediyor. 15 sayısı 1 defa, 20 sayısı 1 defa şeklinde çalışıyor. Sorusu olan var mı?
+
+259
+00:40:13,076 --> 00:40:16,676
+Anlamadığımız bir yer, genel olarak sormak istediğiniz bir konu.
+
+260
+00:40:20,244 --> 00:40:22,244
+Anlamadığınız yeri tekrar edebiliriz.
+
+261
+00:40:39,956 --> 00:40:47,956
+Uden'in bir sorusu var. İlk soruda matrisi tamamen dolaşmak yerine sadece köşegenin üst kısmını gezsek daha iyi olmaz mıydı?
+
+262
+00:40:49,956 --> 00:40:54,956
+Köşegenin sadece ilk üst kısmını gezersek...
+
+263
+00:40:58,900 --> 00:41:07,900
+Olabilir, bu daha iyi bir çözüm. Sonuçta aşağı ile karşılaştırma yapıyoruz her halükarda, o yüzden olabilir, doğru.
+
+264
+00:41:10,900 --> 00:41:18,900
+O zaman bu da size ödev olsun, bunun kodunu yazın, takıldığınız yerde getirebilirsiniz eğer okula geliyorsanız.
+
+265
+00:41:20,900 --> 00:41:25,900
+Takıldığınız yeri çözebiliriz. Bu da sizin için güzel bir örnek olur. Başka sorusu olan var mı?
+
+266
+00:41:28,307 --> 00:41:29,307
+Rica ederim.
+
+267
+00:41:44,500 --> 00:41:46,900
+Sanırım yok. Ahmet Hocam burada mısınız?
+
+268
+00:42:42,420 --> 00:42:45,420
+Evet arkadaşlar, sorusu olan var mı? Son kez soruyorum.
+
+269
+00:42:50,835 --> 00:42:57,076
+Yoksa dersimiz bu kadar. Çıkabilirsiniz. Herkese iyi günler, iyi akşamlar dilerim.
+
+270
+00:42:57,076 --> 00:43:03,076
+İyi günler hocam. İyi günler.

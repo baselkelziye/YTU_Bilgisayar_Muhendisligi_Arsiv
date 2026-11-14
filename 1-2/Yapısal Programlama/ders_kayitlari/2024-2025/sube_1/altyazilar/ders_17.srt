@@ -1,0 +1,1583 @@
+1
+00:01:17,587 --> 00:01:21,187
+Merhaba Rüke hocam, hoş geldin. Nasılsın?
+
+2
+00:01:21,747 --> 00:01:23,387
+İyiyim hocam, siz nasılsınız?
+
+3
+00:01:23,827 --> 00:01:29,787
+Teşekkür ederim, iyiydi. Sesini güzel görüyorum, kamerayı da güzel görüyorum. Tamam, her şey yolunda demektir.
+
+4
+00:01:30,447 --> 00:01:33,407
+Şimdi seni oturum başkanı yapıyorum.
+
+5
+00:01:34,307 --> 00:01:39,048
+Tabii hocam. Ben de linki Ahmet hocanın grubuyla şimdi paylaşacağım.
+
+6
+00:01:39,487 --> 00:01:40,167
+Tamam.
+
+7
+00:01:40,167 --> 00:01:43,087
+Çünkü Ahmet hocanın grubunda bize katılacak.
+
+8
+00:01:43,456 --> 00:02:11,436
+Evet, tamam. [öğrenci] sordun ya ders oldu mu diye. Ben şeyden OBS'den genel mesaj gönderdim bugünkü olacak olayları anlatmak için. Pazartesi günü lab saatinde online teorik konularını anlatacağım dedim. Orada dosya konularını anlattım. Arkadaşların canlı katılım olmamıştı. Bilemiyorum artık ama nihayetinde şeyden kayıtlardan seyredersiniz.
+
+9
+00:02:11,455 --> 00:02:21,455
+ders kayıtlı nihayetinde. Hatta dur ben şöyle bir bakayım ekstradan. Online yıldız'a bakayım. Ondan sonra cima.
+
+10
+00:02:21,455 --> 00:02:33,155
+Ve bakayım tarımlar ve eğitimler. Evet. Şimdi ne zamandı o? 14, 13, 12'si olacak. Bakalım 12 Mart tarihli.
+
+11
+00:02:35,455 --> 00:02:37,695
+Bu da enteresandı bakayım.
+
+12
+00:02:39,572 --> 00:03:06,271
+Şimdi haklısın. O yüzden aşağı doğru iniyor. Ay tamam. Şey en yakın en üstte değil de en geç en üstte şeklinde sağlandığı için ben şimdi şuradan onun kayıttan izle dinlenin. Ana şey yok. Kayıt yok. O da çok enteresan. Allah Allah. Kayıdı. Ben bu yazık oldu ya. Çok enteresan.
+
+13
+00:03:07,924 --> 00:03:10,924
+ekran paylaşıp göstereyim size.
+
+14
+00:03:11,604 --> 00:03:14,544
+Onun bir çaresini bulacağız, nasıl bulacağız bilemiyorum.
+
+15
+00:03:15,104 --> 00:03:18,564
+Evet, sistemde kayıt yok diyor. Evet, haklısın nasıl? Nedense kayıdı almamış.
+
+16
+00:03:19,064 --> 00:03:22,524
+Rukiye Hocam, o zaman sana biraz daha fazla iş düştü. Tamam mı?
+
+17
+00:03:22,604 --> 00:03:30,084
+Şöyle bir özet olarak, bu dosya, işte FP, file pointer, işte dosya erişim modları falan falan,
+
+18
+00:03:30,424 --> 00:03:35,264
+onlar hakkında biraz bir şey anlatıp öyle uygulamaya gittiği kadar gidersin. Tamam mı?
+
+19
+00:03:35,343 --> 00:03:36,903
+Çok enteresan, gerçekten kayıt yok.
+
+20
+00:03:39,604 --> 00:03:44,984
+Dosya işlemleriyle soru çözeceğiz. Ortada detaylı olarak bahsedelim.
+
+21
+00:03:45,444 --> 00:03:51,384
+Evet. Neyse hizik olmuş. Ben belki eski senelerin derslerinden, online derslerinden bir şey bulur.
+
+22
+00:03:51,484 --> 00:03:58,003
+Grupa özellikle yollarım. Bakacağız artık. Tamam. Pekala. O zaman ben çıkar. Size kolay gelsin.
+
+23
+00:04:00,164 --> 00:04:01,623
+Teşekkürler hocam. Sağ olun.
+
+24
+00:04:09,075 --> 00:04:12,535
+Biraz bekleyelim arkadaşlarınız gelsin başlayalım.
+
+25
+00:05:42,579 --> 00:05:52,819
+Merhaba arkadaşlar. Sesim geliyor değil mi? Ekranı paylaştım. Şu an ds'yi görebiliyor musunuz?
+
+26
+00:05:54,819 --> 00:05:55,860
+Görülüyor.
+
+27
+00:05:57,439 --> 00:06:05,439
+Tamam. Yavaş yavaş başlayalım. Önce birinci sorumuzu açalım.
+
+28
+00:06:22,100 --> 00:06:24,100
+Soruyu görebiliyorsunuz değil mi?
+
+29
+00:06:30,387 --> 00:06:31,027
+Evet hocam.
+
+30
+00:06:50,771 --> 00:06:52,532
+İçen kaç kişi olmuşuz?
+
+31
+00:06:59,572 --> 00:07:10,971
+Bakmışım. O zaman. Neyse arkadaşlar, biz başlayalım. Bu şekilde onlar da belki kaldı. Sonrasında bize veririz.
+
+32
+00:07:13,112 --> 00:07:23,272
+Şimdi soruya birlikte bir bakalım. Ya da bir iki dakika size müsaade edeyim. Siz bir okuyun. Daha sonrasında ben soruyu anlatacağım size.
+
+33
+00:07:58,803 --> 00:08:25,043
+Evet, şimdi soruya birlikte bakalım. Bu günkü uygulamamızda dosya yönetimi ile ilgili işlemler yapacağız. Yani dosyadan okuma, dosyaya yazma gibi işlemler yapacağız. Bunun için bu soruda bir dataset.txt dosyamız var. Bu dosyamızın içeriği aslında şöyle.
+
+34
+00:08:25,779 --> 00:08:30,179
+Burada personel bilgileri var.
+
+35
+00:08:30,223 --> 00:08:41,903
+Personeli ait ID'si, name'i ve departman bilgileri bulunuyor. Bunlar virgülle ayrılmış arkadaşlar.
+
+36
+00:08:41,903 --> 00:08:56,783
+Burada gördüğünüz gibi. Biz de bunları yani bu verileri bir şekilde bu dosyadan pars edip, bu virgüllerden ayırıp istediğimiz biçimde ekrana yazdıracağız.
+
+37
+00:08:58,224 --> 00:09:17,664
+Aynı şekilde farklı t- dosyalarını aynı formatta tekrardan kaybedeceğiz. Ekrana yazdırırken IDN ve department olarak yazılarını da ekleyerek yazdıracağız. Bu şekilde yani
+
+38
+00:09:18,067 --> 00:09:28,567
+ne yapacağız? txc dosyasından okuduğumuz her satırı datastract yapısına dönüştüreceğiz ve onları linked liste içinde saklayacağız.
+
+39
+00:09:28,567 --> 00:09:40,728
+Sonrasında da bunları ardıya göre azalan sırayla ya da artan sırayla sıralayacağız ve bunları iki ayrı txc dosyasına yazacağız.
+
+40
+00:09:42,728 --> 00:09:45,675
+Soruyu anladınız mı arkadaşlar?
+
+41
+00:09:54,803 --> 00:09:55,803
+Tamam başlayalım.
+
+42
+00:09:57,803 --> 00:09:59,803
+Şöyle dengeyi açalım.
+
+43
+00:10:12,179 --> 00:10:15,531
+Bununla önce kütüphanelerini...
+
+44
+00:10:15,796 --> 00:10:26,236
+Zincode edelim. Zaten iki tane kütüphanemiz var da STDLip kütüphanesine dinamik memora alakasını kullandığımızda ekliyoruz.
+
+45
+00:10:26,236 --> 00:10:43,396
+Bunlara ek olarak da string.h kütüphanesini ekleyeceğiz. Çünkü burada dosyadan okurken ve dosyaya yazarken string'lerin integer'a dönüştüreceğiz. Bunun için de
+
+46
+00:10:43,796 --> 00:10:51,156
+string nokta aşiküphanesindeki bazı özel fonksiyonlar kullanacağız. Onun için onu ekliyorum.
+
+47
+00:11:03,764 --> 00:11:15,764
+sizinle birlikte yazabilirsiniz. Eğer bir yanlış görürseniz yazdığım yerde, çünkü bazen konuşurken yanlış yazabiliyorum, bunu bana söylerseniz çok iyi olur.
+
+48
+00:11:15,764 --> 00:11:24,716
+Tamam, şimdi struct yapımızı tanımlayalım burada. Çünkü bir linkli liste oluşturacak. Bunun için...
+
+49
+00:11:29,011 --> 00:11:45,011
+Webta isimini bilgilerimizi tutan bir yapı konuşturuyoruz. Burada hangi bilgilerimiz olacak? ID olacak, name olacak,
+
+50
+00:11:53,652 --> 00:11:55,652
+Benim de prakman bilgimi olacak.
+
+51
+00:12:05,268 --> 00:12:10,948
+Bir de next numarca, internet listede de kullanacağım.
+
+52
+00:12:27,731 --> 00:12:31,731
+Zaten bildiğiniz strak yapımı.
+
+53
+00:12:31,731 --> 00:12:40,731
+Şimdi main'de hedefimizi tanımlayalım. Yani linkli listenin ilk elemanını, baştan güç elemanını tanımlayalım.
+
+54
+00:12:53,683 --> 00:12:57,844
+olarak da tanımlayabiliriz ancak şimdilik bu şekilde tanımladık.
+
+55
+00:13:00,084 --> 00:13:02,124
+İlk önce ne yapacağız?
+
+56
+00:13:02,644 --> 00:13:05,723
+Dataset.txt dosyasından
+
+57
+00:13:06,483 --> 00:13:07,763
+şöyle göstereyim.
+
+58
+00:13:08,024 --> 00:13:11,084
+Dataset.txt dosyasından bu dosyamız bizim
+
+59
+00:13:12,124 --> 00:13:14,683
+C dosyamızın olduğu,
+
+60
+00:13:15,703 --> 00:13:20,303
+bizim kodumuzu yazdığımız dosyanın olduğu dosyanın içerisinde yani
+
+61
+00:13:20,511 --> 00:13:32,192
+aynı klasörde olması gerekiyor ki okuma yapabilelim. Dataset.txt dosyasını okuyacağız. Bilgileri oradan alıp linki üsteye ekleyeceğiz.
+
+62
+00:13:38,100 --> 00:13:49,100
+Bu fonksiyonu şimdi oluşturalım. Yani dataset.txt'den dosyaları okuyacak. Bunun fonksiyonunu oluşturalım.
+
+63
+00:14:05,139 --> 00:14:29,932
+Dosyanın ismi olacak parametre olarak. Bundan sonra main'de bundan bahsedeceğiz. Yani hangi dosya olduğunu yazacağız. Bir de delimitre diye bir parametrem olacak. Bu da dosyayı hangi operatörle dosyanın içerisindeki
+
+64
+00:14:30,323 --> 00:14:42,563
+Satır içerisindeki o token'ları yani kelimeleri hangi operatörle ayırdıysam onu tutan bir parametre olacak. Yani burada virgül aslında.
+
+65
+00:14:51,443 --> 00:14:53,683
+dosyayı okuma modunda açalım.
+
+66
+00:15:06,419 --> 00:15:08,179
+open ile açıyoruz.
+
+67
+00:15:20,947 --> 00:15:28,947
+Lead modunda. Eğer yazmak isteseydik o zaman Write modunda açacaktık.
+
+68
+00:15:33,652 --> 00:15:38,772
+Şimdi bir buffer değişkeni tamamlayalım.
+
+69
+00:16:15,091 --> 00:16:23,591
+Bu buffer dizisi dosyadan okuduğumuz her satırın karakterlerini atılmış oluyoruz burada.
+
+70
+00:16:23,591 --> 00:16:31,091
+Şimdi bu linkli listenin, linkli liste oluşturacağız ya bunun hedi için malloc ile yeri ayağlayalım.
+
+71
+00:16:49,652 --> 00:16:51,020
+Aşkı
+
+72
+00:16:59,091 --> 00:17:18,508
+Bu değişkenler de şimdiki ve önceki düğümü tutan değişkenler olsun. Bunları da bu şekilde tanımlıyorum. Biri current beta olsun, bir de current beta olsun.
+
+73
+00:17:24,948 --> 00:17:50,387
+Şimdi dataset.tx dosyasındaki ilk satırı okumaya çalışacağız. Fakat bu dosyanın hani boş olup olmadığına da bakmalıyız. Eğer boş değilse ona göre işlemler yapacağız. Devam edeceğiz yani işlemlerimize. Onun için ilk koşulu koyalım ve fget ile işlemleri yapalım. Şöyle ilk koşulunda
+
+74
+00:18:19,892 --> 00:18:29,892
+Eğer boş değilse okuduğunu buffera yazdıracağız. Bunun için de printf ile karakter olarak dosyanın ilk satınını okumaya çalışalım.
+
+75
+00:19:01,076 --> 00:19:04,076
+ne yaptık? Buf dizisine atadık.
+
+76
+00:19:07,076 --> 00:19:17,076
+Fakat dosya boş değilse satırı okuyacağız ama pars ederek okumalıyız. Yani virgül olduğu için ayırarak okumalıyız.
+
+77
+00:19:17,076 --> 00:19:23,076
+Bunun için ayrı bir fonksiyon oluşturalım. Split data fonksiyonu olsun bu.
+
+78
+00:19:23,519 --> 00:19:29,280
+Bunu yukarıda oluşturup daha sonra haliyleyip de bunu çalıştıracağım.
+
+79
+00:19:47,188 --> 00:19:54,508
+İzmirçam, holder parametram, on its own.
+
+80
+00:20:11,028 --> 00:20:17,028
+delim yaptırım. Olsun. Bunu da virgül olduğunun main'de bulmak.
+
+81
+00:20:17,028 --> 00:20:18,827
+Ben seçerim.
+
+82
+00:20:25,523 --> 00:20:27,923
+Özellikle dilerim, dinleniyorum.
+
+83
+00:20:37,364 --> 00:20:43,364
+Tars edilen bu parçaları atamak için de bir token isminde bir point'i tanımlayalım.
+
+84
+00:20:54,740 --> 00:21:03,051
+kodla fonksiyonu ile de ilk parçayı alalım. İlk satırdaki verigülden önceki ilk kısmı alalım yani.
+
+85
+00:21:09,940 --> 00:21:14,500
+token'ı kullandığımız için string.ars kütüphanesini eklemiş olduk.
+
+86
+00:21:28,596 --> 00:21:51,875
+Görmek istediğimiz dizi, denim içeride virgülümün. Burada id'imiz integer bir sayı. Şimdi virgülden önceki ilk şey, şu dokümandan da bakalım. Virgülden önceki ilk token diyeyim artık buna, şey id'ler oluyor. Yani integer oluyor.
+
+87
+00:21:56,147 --> 00:22:07,907
+txt dosyamızdan biz bunu okurken string gibi okuyoruz. O yüzden bunu integer'a dönüştürmemiz lazım. Bunun için de atory fonksiyonunu kullanmamız gerekiyor.
+
+88
+00:22:28,211 --> 00:22:50,412
+integer'a dönüştüren fonksiyon. Daha sonrasında da biz integer'dan yani string'e yani dosyaya yazarken de bunun tam tersi olan ito i fonksiyonunu yazacağız.
+
+89
+00:22:54,483 --> 00:23:03,983
+Holder'ın id alanını atadık. String'den integer'a dönüştürmüş olduk. Şimdi ikinci parçaya geçeceğiz. Yani name'i
+
+90
+00:23:03,983 --> 00:23:12,783
+strtoken ile alacağız. Fakat bunda şuradaki buffer olmayacak, NULL olacak onun yerine.
+
+91
+00:23:12,784 --> 00:23:22,544
+Çünkü buffer yazsaydı bu ilk parçayı okumak için yazıyoruz. Bundan sonrakiler için NULL yazıyoruz.
+
+92
+00:23:25,024 --> 00:23:33,184
+Token içerisindeki veriyi strcpy ile struct yapısının main alanına kopyalayalım.
+
+93
+00:23:35,104 --> 00:23:37,664
+Şöyle, şimdi de token.
+
+94
+00:23:42,132 --> 00:23:46,132
+Aynısını alabilirim. Sadece NULLYapıcam.
+
+95
+00:23:53,364 --> 00:23:58,364
+Arkadaşlar bunu nasıl düzeltebilirim biliyor musunuz?
+
+96
+00:23:58,364 --> 00:24:01,364
+Insert tuşuyla.
+
+97
+00:24:01,364 --> 00:24:03,364
+Hangi tuşla?
+
+98
+00:24:03,364 --> 00:24:05,364
+Insert.
+
+99
+00:24:05,364 --> 00:24:06,364
+Ha, insert.
+
+100
+00:24:26,771 --> 00:24:28,771
+Teşekkür ederim.
+
+101
+00:24:41,428 --> 00:24:49,740
+Tamam, bu yatarak kopyalı da. Holder'ın name'ini atıyorum.
+
+102
+00:25:10,132 --> 00:25:28,132
+Şimdi diğeri için de aynı şeyi yapacağım. Yani department için de aynısını yapacağım. Sadece department'da da o da virgülden sonraki yani son virgülden sonraki son token olduğu için
+
+103
+00:25:28,319 --> 00:25:43,915
+Ondan sonra artık terslaş, N'e gitmiş oluyor. Onu da almamak için bu şekilde şimdi yazacağım ama şurası aynı zaten.
+
+104
+00:26:34,900 --> 00:26:44,500
+Kodla çıkmış olduk. Departmandan sonra alt satıra indiği için dosyada onu da okumasın diye bu kodu ekledik.
+
+105
+00:26:50,900 --> 00:27:05,900
+Kodları yazarak o ters slasherini kaldırmış oldum. Sonra burada karakter dizisini Holder'ın departman alanına popyalayacağım.
+
+106
+00:27:05,900 --> 00:27:09,900
+Şunu alayım. Sadece departman.
+
+107
+00:27:24,915 --> 00:27:38,195
+Bu fonksiyon, bu datayı, yani virgüle ayırmak için kullandığımız fonksiyonlu. Bunu şimdi faaliyet fonksiyonunda, ihtiyacımız olan yerde bunu çağıralım.
+
+108
+00:27:40,195 --> 00:27:44,915
+Şimdi en son, burada kalmıştık.
+
+109
+00:27:49,236 --> 00:28:09,236
+Burada ilk satırdan, burada ilk koşulumuz vardı. Eğer boş değilse demiştik. Şimdi burada işlemlerimize devam edeceğiz. Dosya boş değilse devam edelim.
+
+110
+00:28:20,980 --> 00:28:26,980
+Ayrıca ayırma işlemini yaptırıyoruz.
+
+111
+00:28:38,804 --> 00:28:41,684
+Son sabah delta NULL dönecek.
+
+112
+00:28:54,132 --> 00:29:03,132
+İlk satırdan sonrakileri okumaya başlayalım. Linkli listemizde lazım olacak değişkenlerimiz vardı. Onları kullanalım.
+
+113
+00:29:03,132 --> 00:29:07,132
+Neydi? PrevData ve CurrentState'ıydı.
+
+114
+00:29:38,324 --> 00:30:00,000
+Bu kısmında sadece, yani şurada sadece ilk satırı okumuştuk. Artık bufferdaki bütün satırları okuyacağız ve her okuduğumuzu yazdıracağız ve linkli listeye ekleyeceğiz. Bunun için while ile...
+
+115
+00:30:00,000 --> 00:30:06,559
+cdc dosyamızdan okuyup her okuduğumuzu bufferda satır satır yazdıralım.
+
+116
+00:30:19,859 --> 00:30:20,859
+Çok teşekkür ederim.
+
+117
+00:30:54,963 --> 00:30:56,963
+Kıskayağı sıralım.
+
+118
+00:31:21,268 --> 00:31:25,268
+Sayıttamız için hafıza da yer ayıralım.
+
+119
+00:31:29,556 --> 00:31:34,596
+ters satır için yani yaptığımız yer ayırma işlemi yapıyoruz.
+
+120
+00:31:56,692 --> 00:32:04,692
+Açıkçı bağlı olan, bu da op yapışı. Mesela arkadaşlarım, eğer görürseniz lütfen şöyle deyin.
+
+121
+00:32:11,731 --> 00:32:25,011
+Kodla göreve, current the turn'un, önceki nodun next'i ile linkli listeye eklememiz lazım. Yani okuduklarımı linkli listeye ekliyorum.
+
+122
+00:32:50,996 --> 00:32:59,636
+satır satır için, yani diğer satırlar için ayırma işlemini yapacağım. O yüzden tekrar Split Data fonksiyonunu çağırıyorum.
+
+123
+00:33:10,900 --> 00:33:12,140
+Çocuk bir özyine.
+
+124
+00:33:30,067 --> 00:33:32,067
+Şunu ben bu kaydan alayım.
+
+125
+00:33:41,779 --> 00:33:46,979
+Burda Current Data olmayacak, hit değil de.
+
+126
+00:33:55,763 --> 00:34:05,763
+Sonrak satırlar için de ayırma işlemini yapmış olduk. Sonra current data'yı private data'ya atlayalım.
+
+127
+00:34:23,572 --> 00:34:34,011
+Bu şekilde. Bunun sonunda da LinkedIn Listenin son düğümünün Next'ini NULL yapacağız ki sona geldiğini belirtmemiz lazım.
+
+128
+00:34:41,396 --> 00:34:41,896
+şeyin.
+
+129
+00:34:49,492 --> 00:34:55,172
+Dediğim gibi, ennextimi 0 yapacağız. Çünkü sona geldik.
+
+130
+00:35:18,387 --> 00:35:22,387
+Dosyayı kapatmamız lazım ve head'i döndürmemiz lazım.
+
+131
+00:35:22,387 --> 00:35:28,268
+F-close ile dosyayı kapatıyoruz. Yukarıda dosyayı açmıştık reyip ile.
+
+132
+00:35:39,699 --> 00:35:40,587
+Aşk.
+
+133
+00:36:01,907 --> 00:36:07,587
+Şimdi print list fonksiyonumuz ile linkli listemizi yazdıralım.
+
+134
+00:36:39,380 --> 00:36:40,380
+İzolça.
+
+135
+00:36:45,523 --> 00:36:48,724
+Listede dolaşmak için while koşulu yazıyorum.
+
+136
+00:37:07,891 --> 00:37:18,391
+Nol olana kadar yani bu ingilizce sitenin sonuna gelene kadar tüm elemanları dolaşıp printf ile yazalım.
+
+137
+00:37:37,300 --> 00:37:38,988
+ilerleyelim ama
+
+138
+00:38:47,860 --> 00:38:58,420
+Ne yaptık burada? Head'in oralana kadar yani link listelerin sonuna gelene kadar tüm elemanları tekrar tekrar dolaşıp yazıyoruz.
+
+139
+00:38:59,420 --> 00:39:07,420
+Ve bir sonraki elemana döngüde bir sonraki elemana geçmek için de head'in next'ini head'e atalım.
+
+140
+00:39:18,579 --> 00:39:22,579
+Bu fonksiyonumuz da bu kadar.
+
+141
+00:39:22,579 --> 00:39:31,579
+Ve ne yapacağız? SortData fonksiyonunu yapacağız. Şöyle bir metinle tekrardan bakalım.
+
+142
+00:39:31,579 --> 00:39:34,579
+Burada sıralama yapacaktık.
+
+143
+00:39:39,380 --> 00:39:44,180
+Büyükten küçüğe, küçükten büyüğe olmak üzere sıralama yapacağız.
+
+144
+00:39:44,180 --> 00:39:52,980
+Sıralama yaptığımız veriyi de her birini ayrı ayrı text-y dosyasına yazdıracağız.
+
+145
+00:39:52,980 --> 00:39:58,180
+Bu sıralama işlemini şimdi yapacağız. ID'ye göre sıralama işini.
+
+146
+00:39:58,180 --> 00:40:01,780
+Onun için de bir sort data fonksiyonu oluşturalım.
+
+147
+00:40:21,556 --> 00:40:25,096
+With the B function, enter the corner jabs.
+
+148
+00:40:48,467 --> 00:41:14,707
+Şimdi burada bakacağız bu fonksiyonda yine listemiz boş mu, dolu mu diye yukarıda bir liste oluşturmuştuk ya eğer boş ise sıralama yapmaya gerek yok diyeceğiz. Eğer bir tane eleman varsa da yine sıralama yapmaya gerek yok diyeceğiz. Yani en az iki eleman varsa ona göre işlemleri yaptıracağız. Onun için de ilk boşunu koyuyorum.
+
+149
+00:41:22,452 --> 00:41:23,592
+ya da
+
+150
+00:41:32,884 --> 00:41:34,884
+Bir element var senin.
+
+151
+00:41:36,884 --> 00:41:38,884
+And then next thing also.
+
+152
+00:41:47,219 --> 00:42:13,219
+İste boş mu? Ya da bir eleman var mı? İşte eğer yoksa, yani boş ise return döndüreceğiz, have döndüreceğiz, pardon. Eğer doluysa da en az iki eleman varsa da sıralama işlemini yapacağız. O zaman şu an ne yapacağız? Have döndüreceğiz. Çünkü sıralama yapmamı da gerek yok.
+
+153
+00:42:20,500 --> 00:42:29,380
+ancak boş değilse de iki elemanını seçti. Sıralama yapacağız.
+
+154
+00:42:32,020 --> 00:42:37,060
+Burada Selection Sort kullanacağız. O da şöyle.
+
+155
+00:42:37,199 --> 00:43:04,239
+İlk değer yani 0. indisi max yapacağız ilk başta ve max'ı sırayla diğerleriyle karşılaştıracağız. Hangisi büyükse onu başa alacağız. Sonra diğer max'ı sırayla karşılaştıracağız. Sonra ikinci sıradaki indisi diğer sırayla karşılaştıracağız. Öyle öyle devam edecek. O zaman ilk olarak max'ı head'in id'si yapacağız.
+
+156
+00:43:08,340 --> 00:43:10,460
+Minimax ismini olsun.
+
+157
+00:43:25,619 --> 00:43:51,300
+Listemizdeki ilk nodumuz zaten. Bu şekilde. Şimdi Max'ı başa alırken nodlar birbirine bağlı. Ne yapacağız? Önce birbirine bağlı olan diğer iki nod arasında Max'ı çıkartacağız. Çıkartırken diğerlerini birbirine bağlama işlemi yapmamız lazım.
+
+158
+00:43:51,860 --> 00:44:03,860
+yani demo işlemi ve bağlama işlemi bunları yapacağız. Bunun için de 3 tane pointer değişkeni tanımlayalım ve bu işlemleri yapabilirim.
+
+159
+00:44:43,987 --> 00:44:47,108
+ve arbeniyon fiyahar sanma fiyaharın.
+
+160
+00:44:54,420 --> 00:45:03,420
+Şimdi bunu attık Prev değişkenine, N-Max değişkenine ve current değişkenine burada yaptık.
+
+161
+00:45:03,420 --> 00:45:11,947
+Ve Prev dediğimiz şimdiki node aslında.
+
+162
+00:45:25,043 --> 00:45:27,923
+Bunu hediye attık. Tamam.
+
+163
+00:45:38,675 --> 00:45:48,036
+Burada, NEMAX da, MAX, maksimum değere sahip düğümün önceki düğümünü tutuyor.
+
+164
+00:45:52,052 --> 00:46:02,851
+Yine listede gezinmek için kullandığımız pointer. Şimdi Max'ı bulmak için geri kalan liste üzerinde bir döngü başlatalım.
+
+165
+00:46:02,851 --> 00:46:12,851
+Burada New Max NULL olana kadar diziyi gezelim. While ile yapalım.
+
+166
+00:46:24,083 --> 00:46:25,083
+MOLO
+
+167
+00:46:36,148 --> 00:46:36,940
+Aşkı konularını kodla göreceğiz.
+
+168
+00:46:48,436 --> 00:46:50,635
+konularını kodla göreceğiz.
+
+169
+00:47:00,436 --> 00:47:14,436
+ve gezdiklerimi Maximum ile karşılaştıracağım. Eğer Max'dan büyükse yer değiştireceğim. Yani Term'i Max yapacağım. Bunun için IF.
+
+170
+00:47:25,684 --> 00:47:35,923
+Sort Condition'ı çağırıyorum. Bunun için Sort Condition'ı çağırıyorum. Önce onları yazalım.
+
+171
+00:48:04,211 --> 00:48:28,451
+Bu kod uzun olduğu için bazen karışıyor. Nerede kaldığımızda, bu sıralama şeyinde de tam olarak nerede kaldığımızda, o sort işlemlerinde o önemli oluyor. Onun için takip etmek lazım. Siz de benimle birlikte takip ederseniz yanlış falan yazdığında sıkıntı kalmaz.
+
+172
+00:48:59,539 --> 00:49:00,235
+Bu ne?
+
+173
+00:49:12,851 --> 00:49:13,739
+Aşkı
+
+174
+00:49:34,771 --> 00:49:59,771
+Burada temp dediğimiz, dediğimiz, gezdiğimiz elemanın ailesi max'dan büyük mü? Büyükse eğer, bu sefer min, max, temp aile bu şekilde yazmış oldu. Sonra, to, no, p ataması yapıyoruz. Bunu yapıyoruz ki, linkli listede bir önceki elemanı tutabilelim.
+
+175
+00:50:00,000 --> 00:50:18,079
+Aya'dan max'ı çıkartmak için. Eğer max 10 aydınlığından büyük değilse listede gezmeye devam edeceğiz. Bir sonraki elemana geçeceğiz. Bu şekilde. Şimdi bir sonraki eleman için yazalım.
+
+176
+00:50:27,219 --> 00:50:32,219
+Gezmeye devam etmek için de şöyle
+
+177
+00:50:43,603 --> 00:51:03,603
+Max'ı aramak için gezdik ve Max'ı bulamadık. Max'dan büyük değilse devam ettik gezmeye. Fakat, sonrakilerde Max'dan büyük gelmediyse, bu sefer ilk değer yani head olan Max, en büyük değer olmuş oluyor.
+
+178
+00:51:03,603 --> 00:51:08,603
+Bunun için de bir ilk koşulu.
+
+179
+00:51:32,980 --> 00:51:33,708
+M.
+
+180
+00:51:48,851 --> 00:52:00,371
+Burada ne yapıyorum? SortData yazdığım farkındaysanız fonksiyonumuzun ismiyle aynı, yani recursion yapmış oluyoruz.
+
+181
+00:52:25,108 --> 00:52:46,108
+fonksiyonu yaptığımız yerde aynı fonksiyonu tekrar çağırdık bu recursion'da. Head max olduğu için head'in next'i diyerek sonraki max'ları bulsun diyoruz ve head'i döndürelim. Burada o işlemi yapmış oldum.
+
+182
+00:52:51,987 --> 00:53:06,867
+Max listede ise, yani head değil ise, diğer değerlerden biriyse, o zaman pire ve bulduğumuz max'dan bir önceki elemanı koyacağım.
+
+183
+00:53:29,588 --> 00:53:50,387
+Max'ımız olmuş oldu. Burada selection short işlemini yapıyoruz aslında temel olarak. Sadece böyle biraz detayları var. Max başta ise, başta değil diğer elemanlardan biri ise, onu bulduk, ikinci Max'ı bulacağız. O işlemleri yapıyoruz şu an.
+
+184
+00:53:55,411 --> 00:53:59,411
+Bu listeden çıkartalım.
+
+185
+00:53:59,411 --> 00:54:08,683
+Crem, next, ışıklık kremin satanı.
+
+186
+00:54:13,811 --> 00:54:14,603
+Evet.
+
+187
+00:54:24,692 --> 00:54:45,172
+aradaki nodu silmiş olduk. Bağlantıyı kaldırmış olduk. Ama önceki nod ile sonraki nodu da birbirine bağlamış olduk. Kısaca max nodu çıkarmış olduk. Şimdi sıralama yaptığımız düğümü geri kalan listeye ekleyerek devam edelim.
+
+188
+00:55:11,411 --> 00:55:13,971
+Zerden recursion yapmış olduk.
+
+189
+00:55:32,532 --> 00:55:37,652
+Buradan dönen TUM'u ikinci max'ımız oluyor.
+
+190
+00:55:40,472 --> 00:55:45,851
+Ve return yeni max'ımızı döndürük olacağız.
+
+191
+00:56:00,052 --> 00:56:08,932
+sort işlemini tamamladık. id'ye göre küçükten büyüğe sıralama yapan fonksiyonu yazalım.
+
+192
+00:56:34,547 --> 00:56:40,067
+Zaten aynısı, deskandrunk içinde yazacağız.
+
+193
+00:56:45,940 --> 00:57:01,139
+Burada iki parametre almıştı ya arkadaşlar, bu intler, birisi ilk değeri, ikincisi second'ı gösteriyor aslında. Öyle düşünebiliriz.
+
+194
+00:57:08,148 --> 00:57:09,148
+Yaboo.
+
+195
+00:57:13,556 --> 00:57:20,556
+Bu nasıl bir sıralama istiyorsak onu döndüreceğiz. Yani büyükten küçüğünü, küçükten büyümünü alacağım.
+
+196
+00:57:27,092 --> 00:57:31,092
+Burada küçükten büyüğe sıralamış olduk.
+
+197
+00:57:31,092 --> 00:57:33,092
+Bir de buna...
+
+198
+00:57:33,092 --> 00:57:35,092
+Yükten başlar.
+
+199
+00:57:35,092 --> 00:57:39,052
+Buna da öztermeliyiz.
+
+200
+00:57:45,043 --> 00:57:47,844
+Aklına doksiyon yazma işlemimiz var.
+
+201
+00:57:48,644 --> 00:57:51,443
+Şimdi burada şu değişeceğiz.
+
+202
+00:57:57,619 --> 00:58:00,980
+Burada ID'ye göre sıralanma yapmış olduk.
+
+203
+00:58:07,188 --> 00:58:17,507
+Bu sıraladığımız LinkedIn liste elemanlarını ayrı ayrı dosyalara yazdıralım. Şuradaki tx dosyalarına.
+
+204
+00:58:20,851 --> 00:58:32,371
+azalan sırayla yani büyükten küçüğe, ailesi büyükten küçüğe olanı deskenlik, küçükten büyüğü olanı deskenlik.txt olarak sıralayalım.
+
+205
+00:58:34,171 --> 00:58:38,011
+Burada da fputc kullanacağız.
+
+206
+00:58:38,771 --> 00:58:41,851
+Ama fprintf ile de yapabiliriz.
+
+207
+00:58:42,351 --> 00:58:46,711
+Onun için file write fonksiyonumuzu oturalım.
+
+208
+00:59:00,083 --> 00:59:05,036
+Bu fonksiyonlar üzerinden tekrar geçelim eğer karıştıysam.
+
+209
+00:59:19,956 --> 00:59:32,956
+WordBite konusunu yazıyorum. Head'im var. FileName'im var parametre olarak. Dosya isimlerini daha sonra mail ile yazacağım.
+
+210
+00:59:34,956 --> 00:59:40,956
+Deneme tırım var. Yazarken virgülle ayrılarak yazmak istediğim için.
+
+211
+00:59:44,532 --> 00:59:45,972
+bu şekilde
+
+212
+00:59:55,795 --> 01:00:04,916
+Dosyayı daha önce açtığımızda okumak için açtığımızda Read modunda açmıştık. Şimdi yazılmak için de Write modunda açıyoruz.
+
+213
+01:00:12,980 --> 01:00:21,980
+Ayrıca, şeyde işitimini, şurada nasıl? Söylemeye başlar.
+
+214
+01:00:28,628 --> 01:00:36,228
+Bu isimde bir dosya yoksa sıfırdan oluşturacak fakat varsa içini boşaltacak.
+
+215
+01:00:39,108 --> 01:00:44,708
+Burada şimdi bir de bir temp dizisi oluşturalım.
+
+216
+01:00:53,619 --> 01:00:59,300
+Son elemana kadar diziye gireceğiz. Virgülle ayırarak dosyaya yazacağız.
+
+217
+01:01:15,027 --> 01:01:26,467
+dosyaya listemin elemanlarını yerleştireceğiz gezmek için. Yine while dönüşü ile geçeceğiz listemin için de.
+
+218
+01:01:37,652 --> 01:01:52,652
+Burada, read'de daha önce söylemiştim, atoey fonksiyonunu kullanmıştık. String'den integer'a dönüştürmüştük. Şimdi de integer'a string'e dönüştüreceğiz. Çünkü oluşturacağımız dokümanda string olarak tutacağız.
+
+219
+01:01:52,652 --> 01:02:03,652
+Ama id'miz aslında integer ve dosyaya yazarken bunu string yapıyoruz. Onun için de daha önce söylediğim itoey fonksiyonunu kullanacağız.
+
+220
+01:02:31,188 --> 01:02:37,908
+string'e çevirdik. Şimdi fputc ile id'yi tempe koyalım.
+
+221
+01:02:58,324 --> 01:03:00,324
+için virgülü koyacağım.
+
+222
+01:03:00,324 --> 01:03:02,324
+fputli ile
+
+223
+01:03:02,324 --> 01:03:04,324
+bu farklı bir fonksiyon.
+
+224
+01:03:06,324 --> 01:03:07,371
+Dövdüğünüz üzere
+
+225
+01:03:12,307 --> 01:03:22,307
+Nasıl ayırmak istediğimi söyledim. Delimi çöldüm ve zaten bunu mailde söyleyeceğim yine bilgi olduğunu.
+
+226
+01:03:24,307 --> 01:03:29,307
+Bunu ID için yapmış olduk. Şimdi name ve departman için yapacağım.
+
+227
+01:03:31,307 --> 01:03:35,148
+Bunun için de direkt...
+
+228
+01:03:39,251 --> 01:03:51,251
+alçalım ama etoyu kullanmayacağım. Zaten string. Fpotsu ile yapıyoruz.
+
+229
+01:03:51,251 --> 01:03:54,956
+Evet, name.
+
+230
+01:04:06,643 --> 01:04:13,283
+Ve yine delim tırlar ayıracağım için onu da şöyle aynı şeyi yapayım.
+
+231
+01:04:18,771 --> 01:04:26,668
+ve departmanda yazacağım ama şunu alayım.
+
+232
+01:04:30,291 --> 01:04:32,291
+ve en önemli bir şey.
+
+233
+01:04:42,387 --> 01:04:50,387
+Tekrar vergül koymayacağız. Çünkü departmandan sonra sadece satır sonu var. O yüzden ters yılaç ön koyacağız.
+
+234
+01:05:11,347 --> 01:05:17,747
+Biz senin bir sonraki noduna geçeceğiz. Yani diğer satırlara geçmek için de şunu yazıyorum.
+
+235
+01:05:17,747 --> 01:05:19,747
+And.
+
+236
+01:05:19,747 --> 01:05:23,347
+Bakın eşitliğimiz öyle.
+
+237
+01:05:23,347 --> 01:05:25,747
+And then next.
+
+238
+01:05:37,235 --> 01:05:38,775
+Ne, don't say, katılalım.
+
+239
+01:05:54,099 --> 01:06:08,099
+Start fonksiyonumuz da bu şekilde. Dediğim gibi bunu fprintf ile de yapabilirdik. Burada aynı işlem olacaktı. Yani sadece farklı bir şey kullanmış olacaktık.
+
+240
+01:06:37,396 --> 01:06:54,996
+dosyayı çağırıyoruz ve buraya hangi dosyayı okumak istediğimizi yazıyoruz. Dediğim gibi bu dosyanın bizim main.c kodumuz neredeyse o klasörün altında olması lazım.
+
+241
+01:07:01,300 --> 01:07:04,619
+ve ekliyorum
+
+242
+01:07:17,684 --> 01:07:33,044
+birbiriyle ayrılmış olduğunu söylemek için de bakın şu şekilde bu birbiri ekledim fakat arkasına bu şekilde ekleme yapmış oldum.
+
+243
+01:07:38,420 --> 01:07:40,331
+Krenfest'i çağıralım.
+
+244
+01:07:56,916 --> 01:08:15,416
+Sıralamaları yapalım. SortData fonksiyonunu. Yukarıda yazdığımız fonksiyonları neyinde artık çağırıp test edeceğiz. Konuşlarımızı alacağız.
+
+245
+01:08:18,868 --> 01:08:19,868
+Bu.
+
+246
+01:08:24,115 --> 01:08:31,235
+Büyükten küçüğe id, büyükten küçüğe sıralama işlemini okuyordu.
+
+247
+01:08:40,916 --> 01:08:44,916
+Buraya bir şey yazalım. Ne olduğunu göstereyim.
+
+248
+01:08:46,916 --> 01:08:48,916
+Kendine kovsusun, ters kocaman.
+
+249
+01:09:08,979 --> 01:09:21,379
+Dosyamızı, ID'si büyükten küçüğe doğru olacak şekilde farklı bir dosyaya yazdıracağız.
+
+250
+01:09:21,379 --> 01:09:26,979
+Onun şeyini, dosyamı yazalım, write konusunu.
+
+251
+01:09:35,764 --> 01:09:38,764
+Bu ücremizin ismini burada belirtiyorduk.
+
+252
+01:10:00,627 --> 01:10:10,228
+Şimdi aynısını asken bir şekilde yapacağız. Onun için ben şunu yapıyorum.
+
+253
+01:10:10,228 --> 01:10:14,155
+Burayı değiştirelim.
+
+254
+01:10:33,779 --> 01:10:38,279
+Kalkıda, bilmiyom, böyle parantezleri kontrol edeyim.
+
+255
+01:10:39,279 --> 01:10:40,779
+Şurada sanki,
+
+256
+01:10:56,564 --> 01:11:00,244
+Aşıklı.
+
+257
+01:11:15,412 --> 01:11:22,412
+Siz de görüyorsunuz yani parantezlerde falan bir atasım çalıştığımca zaten o açıkçak aramam.
+
+258
+01:11:54,547 --> 01:11:58,127
+Uyuh, start this alone, don't even like soul check.
+
+259
+01:12:11,252 --> 01:12:12,252
+Bunları yazdım.
+
+260
+01:12:14,252 --> 01:12:16,252
+Daha almıştım.
+
+261
+01:12:18,252 --> 01:12:22,252
+Ben kodu direkt yapıştırırsam şöyle deneyeyim.
+
+262
+01:12:24,252 --> 01:12:25,252
+Ne oldu?
+
+263
+01:12:26,252 --> 01:12:30,252
+Dataset.txt dosyasının içinde değil.
+
+264
+01:12:31,252 --> 01:12:33,252
+O zaman şöyle yapayım.
+
+265
+01:12:44,404 --> 01:12:45,404
+Birkaç bir şey.
+
+266
+01:12:49,332 --> 01:13:17,332
+Şimdi geldi. Çünkü az önce ben yeni bir klasör açmıştım ve oraya dataset.txt dosyasını koymamıştım. Şimdi dataset.txt dosyasının olduğu yerleri aynı kodumu açınca çalıştı. Burada gördüğünüz gibi ilk başta txt dosyasındaki bilgileri yazdı. Daha sonra işte
+
+267
+01:13:17,332 --> 01:13:39,012
+ID, name ve department kısmını da ekleyerek yeniden yazmış oldu. Bunları linkli listeye ekledi. Sonra bunları ID'ye göre sıraladı. Büyükten küçüğe ve küçükten büyüğe. Bir de şimdi dosyada oluşan şeyi görelim. Şöyle...
+
+268
+01:13:39,859 --> 01:13:50,359
+görebiliyorsunuz değil mi arkadaşlar? Mesela şimdi çalıştırdığımız için yeni iki tane text dosyası oluştu.
+
+269
+01:13:53,180 --> 01:13:54,960
+Şöyle açınca
+
+270
+01:13:55,220 --> 01:14:12,340
+Mesela, iScandling'i açtığımda bu şekilde ID'ye göre küçükten büyüğü olarak sıralı bir şekilde verimiz buraya yazdıramış oldu. Okuduğumuz dosya da bu.
+
+271
+01:14:13,011 --> 01:14:29,411
+Bu ilk soruydu. Bu şekildeydi. Burada anlamadığınız bir şey varsa ya da tekrar bir hızlıca hani fonksiyonlara özet geçmemi isterseniz geçebilirim. Çünkü uzun olduğu için biraz karışabiliyor.
+
+272
+01:14:38,644 --> 01:14:40,644
+Kursa diğer sloviye geçeceğim.
+
+273
+01:14:51,188 --> 01:15:16,827
+Arkadaşlar, ikinci soruya geçeceğim ama bir saat 10 dakika falan oldu. O yüzden bir kısa ara verin isterseniz. Sonra devam edelim. Ben şimdi ikinci sorunun dosyasını da açayım. Daha sonra siz bu soruya bakın.
+
+274
+01:15:17,876 --> 01:15:39,724
+Bu sürede. Geldiğimizde yani bir 12 şeyi kapatmayacağım, hani zulmü kapatmayacağım. Sadece bir 10 dakika yani 20 geçe kadar. Bir bakın 20 geçe tekrar başlayalım. Soruya bakabilirsiniz.
+
+275
+01:26:53,268 --> 01:26:55,268
+Daj, sabi, beş takrk genioro.
+
+276
+01:30:53,235 --> 01:30:54,235
+iş var mı?
+
+277
+01:30:54,235 --> 01:30:55,235
+da
+
+278
+01:30:55,235 --> 01:30:56,235
+ama
+
+279
+01:30:56,235 --> 01:30:56,971
+aynı oku.
+
+280
+01:31:01,619 --> 01:31:03,239
+Suriye markasınız.
+
+281
+01:31:08,340 --> 01:31:10,252
+Şimdi de mambea açıklayayım.
+
+282
+01:31:16,467 --> 01:31:25,427
+Burada da bir tane txt dosyamız var. O da uçuş nerede? Burada yazıyor mu?
+
+283
+01:31:29,779 --> 01:31:55,579
+Burada yazmıyor ama uçuşbilgi.txt, hadi yazıyorsa da şu an görelim. Bu uçuşbilgi.txt dosyamızda kodu yazacağımız klasörün içerisinde. Burada dosyanın içeriği aslında şu şekilde.
+
+284
+01:31:56,051 --> 01:32:22,027
+Burada bir hava alanına ait, uçuşlara ait bilgiler var. Bu ilk kısımda uçuş kodu bilgisi var. Daha sonra kalkış şehri, varış şehri, pistte bulunacağı saat, iç hat mı, dış hat mı olduğu bilgisi. Bu da pist numarası, 1, 8, 2 ve 1 olarak. Bu bilgiler var.
+
+285
+01:32:23,988 --> 01:32:49,228
+Bu da yine uçuşları ifade eden bir strak yapısı kurulmuş diyor. Yani yine linkli listeye ekleyeceğiz buradaki okuduğumuz bilgileri. Daha sonra bunu uçuş koduna göre küçükten büyüğe sıralı olarak bir linkli listeye kaydeteceğiz. Yani aslında ilk başta biz bunu sıralı olarak, linkli listeye sıralı olarak kaydedeceğiz.
+
+286
+01:32:49,747 --> 01:32:54,867
+Daha sonra linkli listeyi ekranda göstereceğiz. Bu şekilde.
+
+287
+01:32:55,796 --> 01:33:05,956
+Ve her bir pist için pistin adını taşıyan birer dosya oluşturarak pisti kullanacak uçuşların bilgilerini bu dosyaya kaydediyoruz.
+
+288
+01:33:05,956 --> 01:33:12,916
+Şimdi bizim mesela burada TXT dosyamızda 3 tane pist var. 1, 2 ve 8. pist.
+
+289
+01:33:12,916 --> 01:33:23,796
+Bu 3 tane pist için ayrı ayrı TXT dosyalarımız oluşacak ve bunların içerisinde de sadece o pistteki uçuşları
+
+290
+01:33:23,796 --> 01:33:38,676
+bilgileri yer alacak. Bu şekilde de üç farklı dosyaya yazmış olacağız. Sonra bu şekilde. O zaman başlayalım.
+
+291
+01:33:44,435 --> 01:33:46,055
+başına uyanık yoğun.
+
+292
+01:33:58,131 --> 01:34:08,631
+Şuradan yine devam edebilirim ama sevmi olacağım. Şuradan açalım o zaman.
+
+293
+01:34:10,631 --> 01:34:14,571
+Şuradan yine de demeyelim. Onun için de yapalım.
+
+294
+01:34:37,811 --> 01:34:49,811
+TXT dosyası ile aynı klasörde olduğuna dikkat etmemiz lazım. Ben onu şimdi birazdan ayarlayacağım.
+
+295
+01:34:49,811 --> 01:34:53,811
+Burada da
+
+296
+01:34:54,707 --> 01:35:08,067
+Kutufanelerimizde yine biz dosya işlemleri yaptığımız için stringlerle alakalı dönüşüm işlemleri yaptığımız için string.hp'ı include edelim.
+
+297
+01:35:20,532 --> 01:35:29,832
+Bu da aslında yani 11'e kadar süremiz çok olmadığı için bunu kod üzerinde mi göstertim acaba diye.
+
+298
+01:35:29,832 --> 01:35:37,152
+Şu an aklıma geldi şöyle kod üzerinde açsam. Böyle olacak o zaman.
+
+299
+01:35:37,152 --> 01:35:48,152
+Böylece daha iyi olur diye düşünüyorum. Anlatırken de. Çünkü yazmakta çok zaman kalabiliyor.
+
+300
+01:35:48,307 --> 01:36:00,307
+Kapatalım. Evet, burada şimdi kod üzerinde anlatıyorum. Kutbanelerimizi ekledik ve burada bir
+
+301
+01:36:00,692 --> 01:36:27,871
+Strc yapımız var, uçuş bilgilerini tutan. Bunu oluşturacağız. Bu strc yapımızın içerisinde ne var? Uçuş kodumuz var, kalkış şehri var, varış şehri var, zaman var, ne zaman, saat, kaçta olacağı. Ve işte iç atma, dış atma bilgisi var.
+
+302
+01:36:28,692 --> 01:36:34,451
+PIS numarası var ve NEXT pointer'ımız var.
+
+303
+01:36:41,235 --> 01:36:44,735
+struct linklenirsen struct'ını oluşturuyorum.
+
+304
+01:36:47,036 --> 01:36:50,235
+Şimdi Create Flight fonksiyonunu oluşturmuş.
+
+305
+01:36:50,536 --> 01:36:54,435
+Bu da uçuşa ait tüm bilgiler için.
+
+306
+01:36:55,735 --> 01:37:00,536
+Burada hafızada yer ayıracağız.
+
+307
+01:37:01,336 --> 01:37:06,036
+Ve yeni ayrılan bu bloktaki her alanı
+
+308
+01:37:07,988 --> 01:37:16,108
+parametrelerle, gelen verilerle yazacağız. Yani burada, aslında bu fonksiyon amacı, hem bellek tahsis edeceğiz,
+
+309
+01:37:16,108 --> 01:37:33,868
+yeni uçuşa, hem tüm alanları dolduracağız, hem de düğümü listeye eklenmeye hazır hale getirmiş olacağız. Yani bu işlemlerde onu yapmış olduk. Yine strcpy mesela görüyorsunuz.
+
+310
+01:37:34,068 --> 01:37:43,788
+Burada bu işlemi yapmış ol. Bunları çok uzatmayacağım çünkü süremiz az ve bizim bir toplantımız var. Oraya gitmemiz gerekiyor.
+
+311
+01:37:43,788 --> 01:37:54,548
+Tamam. Burada Insert Flight'a geçiyorum. Bu da linkli listeyi burada adım adım oluşturuyorum.
+
+312
+01:37:59,315 --> 01:38:04,115
+liste boş olduğundan doğrudan head ekliyorum.
+
+313
+01:38:07,699 --> 01:38:27,260
+Burada da daima sıralı olarak, ilk başta sorda da demişti zaten, küçükten büyüğe şekilde sıralansın. O şekilde eklenmesi için, bu şekilde yazıyorum. Hangi iki nodun arasına girmesi gerekiyorsa onu koyacağız.
+
+314
+01:38:33,939 --> 01:38:43,299
+Burada hangi şey nereye koymamız gerekiyorsa bu Insert Flight'ta o işlemi yapıyoruz.
+
+315
+01:38:43,299 --> 01:38:52,659
+Sonra şimdi bu özetliyorum ama daha sonra bunların detaylarına ineceğim aslında süremizi yetti.
+
+316
+01:38:53,011 --> 01:39:06,211
+Şimdi burada Display Flight var. Bu da yazdırdığımız konusyon, uçuşlara yazdırdığımız. Her düğündeki uçuş bilgilerini burada ekrana yazdırıyoruz.
+
+317
+01:39:06,211 --> 01:39:16,211
+Head'den başlayarak listeyi tarayıp verileri burada ekrana yazdırmış oluyorum.
+
+318
+01:39:19,731 --> 01:39:45,731
+Burada Write Slides to File fonksiyonu var. Bunlara zaten döneceğim. Ama şöyle söyleyeyim. Burada da bazı yani ilk listedeki her uçuşcu kullandığı PIS numarasına göre ilgili dosyaya yazdıracağız. Şu dosyada zaten nasıl yazmamız gerektiği gösteriliyordu. Bakayım.
+
+319
+01:39:46,804 --> 01:40:02,644
+Hangi şeyse pist, şurada da söylemiş, pist numarası 1 dediği .txt olarak yazılması gerekiyor.
+
+320
+01:40:04,484 --> 01:40:11,923
+Burada da o dosyaları yazma işlemini yaptırdığımız fonksiyon bu da.
+
+321
+01:40:15,699 --> 01:40:25,699
+Burada, şimdi öncelikle RE ile RE modu ile okuyorduk. Burada da WRITE modu ile yazıyoruz.
+
+322
+01:40:41,203 --> 01:40:54,564
+Read, bunu ilk başta yazdığımız fonksiyon bu. Burada da Read moduyla bu uçuş tx dosyamızı okuyoruz.
+
+323
+01:40:56,963 --> 01:41:02,484
+Bununla ilgili zaten bir önceki örnekte bunun detayından bahsetmiştik.
+
+324
+01:41:26,676 --> 01:41:43,076
+Biz diğer ekstörüde de önce head'i tanımlamıştık. Bunda da yine head'i tanımlamamız gerekiyor. Yani linkli listenin başlangıç elemanını. Bunun için flight list aslında onu tutuyor.
+
+325
+01:41:44,180 --> 01:41:51,060
+O değişkenin ismi. Bunu NULL olarak burada tanımladık. Bir öncekinde o şekilde tanılamamıştık.
+
+326
+01:41:51,060 --> 01:41:58,739
+Ve burada bu şekilde tanımlamamızın sebebi, başlangıçta listenin boş olduğunu belirtmek için tanımladık.
+
+327
+01:41:58,739 --> 01:42:12,180
+Yani şu an hiçbir uç modun adresi yok. Daha sonra dosyadan okudukça, her yeni uçuşu ekledikçe bu pointer, listesinin ilk düğümünün adresi.
+
+328
+01:42:12,180 --> 01:42:22,500
+resmi gösterecek şekilde işlemler yapacağız. Bu her zaman main'de yaptığımız şey bu linked listelerde.
+
+329
+01:42:22,500 --> 01:42:29,300
+Şimdi okuma fonksiyonuma dönüyorum. Bunun detayına biraz bakalım.
+
+330
+01:42:29,619 --> 01:42:55,619
+Burada dediğim gibi Read Mode'unda ve File Name'i değinemeyinde uçuşbilgi.txt olarak verdiğim şekilde burada fopen ile dosyamı açıyorum. Burada dosyam açılmazsa ya da mesela erişim iznim yoksa böyle bir hata mesajı yazdırmak için bunu yazmıştık.
+
+331
+01:42:57,427 --> 01:43:02,427
+Fakat erişim izni varsa da devam ediyor.
+
+332
+01:43:04,427 --> 01:43:08,427
+Burada geçici değişkenlerimizi tanımladık.
+
+333
+01:43:10,427 --> 01:43:13,427
+Ters hatıramı yerlerinde tutabilmek için.
+
+334
+01:43:14,427 --> 01:43:17,427
+Burada why döngüsünde
+
+335
+01:43:18,739 --> 01:43:41,459
+Dosyanın sonuna kadar, görüyorsun End of File'la kadar devam ediyor. Dosyadan bir satır okuyoruz ve parçaları ayırarak ilgili değişkenleri atacağız. Burada virgül olmadığı için metinde, etxt dosyamızda.
+
+336
+01:43:42,579 --> 01:43:51,579
+Otomatikman ayırma işlemini yapacağız. Ayrıca bir split etmemize, part etmemize gerek yok.
+
+337
+01:43:55,579 --> 01:44:03,579
+Eğer okumum işlemi başarılıysa, dönme çalışıyor. Okunan verilerle bir flight yapısı oluşturuluyor.
+
+338
+01:44:05,332 --> 01:44:17,492
+Ancak bunun için link listeyi, yani bunun için create flight fonksiyonunu oluşturmamız daha sonrasında burada çalışmamız gerekiyordu.
+
+339
+01:44:18,711 --> 01:44:30,211
+Bu create flight fonksiyonunda da ne yapacağız? Yeni bir node oluşturup bilgileri içine yazacağız. Create flight'a bakalım.
+
+340
+01:44:32,020 --> 01:44:47,220
+Şurada ilk başta bahsettiğim. Burada create.flight da dediğim gibi tek bir uçuşu yani tek bir node'u oluşturmak için bu fonksiyonu yazdık.
+
+341
+01:44:55,859 --> 01:45:08,819
+parametrelerde zaten uçuş bilgilerini içeriyor. Burada yine New Flight için yeni gelen uçuş için havzada yer ayırmışız.
+
+342
+01:45:10,500 --> 01:45:12,099
+Ve
+
+343
+01:45:14,099 --> 01:45:16,099
+Burada
+
+344
+01:45:16,659 --> 01:45:23,619
+Yeni Flight düğümünün Flight Code alanına şurada arkadaşlar
+
+345
+01:45:24,435 --> 01:45:30,195
+Fonksiyona verilen saldaki flight kod sayısını atıyoruz.
+
+346
+01:45:32,835 --> 01:45:41,155
+Diğer her bir parametre içinde strcpy ile atıyoruz. Çünkü karakter dizileri zaten bunlar.
+
+347
+01:45:41,155 --> 01:45:46,355
+Ve bunları direk eşitli operatörü ile atayabiliyoruz.
+
+348
+01:45:53,747 --> 01:46:03,347
+Bunlar da yapamıyoruz, şunlar da yapabiliyoruz. Bu integer olanları atayabiliyoruz, string olanları atayabiliyoruz.
+
+349
+01:46:05,987 --> 01:46:17,747
+Daha sonra yeni oluşturulan flight nodunun next işaretçisini NULL yapıyoruz.
+
+350
+01:46:20,819 --> 01:46:29,819
+Çünkü düğüm henüz hiçbir listeye bağlanmadı. Nur başlangıç değeri şimdilik devamı yok anlamına geliyor.
+
+351
+01:46:29,819 --> 01:46:37,819
+Bu şekilde ve en son New Flight'ı döndürüyoruz. Yani bellekteki yeni düğümün adresini döndürüyoruz.
+
+352
+01:46:42,899 --> 01:46:50,399
+Şimdi dosyadaki uç uçları uç koduna göre küçükten büyüğe sıralı olarak linkli listeye kaybediyoruz.
+
+353
+01:46:51,899 --> 01:46:57,399
+Her ekleme de sıralı olarak yerleştiriyoruz. Tekrar sıralamamıza gerek kalmasın.
+
+354
+01:46:58,399 --> 01:46:59,399
+Bu fonksiyon
+
+355
+01:47:01,203 --> 01:47:11,363
+Verilen ne flight düğümünü mevcut link list ekliyor ama nasıl küçükten bir sıralı olarak şekilde ekliyor.
+
+356
+01:47:11,363 --> 01:47:26,884
+Ve başa ekleme durumu varsa direk yerleştiriyor. Ama işte araya ya da sona eklemek gerekiyorsa o zaman doğru konumu bulana kadar ilerliyor ve oraya yerleştiriyor.
+
+357
+01:47:30,707 --> 01:47:57,427
+Dina pointer'larım, head ve new flight, yani listeye eklenecek hazır düğümüm. Koşulda şeye bakıyoruz ilk koşulunda. Liste boş mu ya da yani mevcut ilk düğümün kodundan büyükmüş artına bakıyoruz. Ona göre küçükse başa koyacağız. Çünkü küçükten büyüğe doğru sıralayacaktık.
+
+358
+01:47:58,003 --> 01:48:07,603
+Onun için bu koşulu koyduk ve yeni düğümün next alanı mevcut ilk düğüm gösterecek şekilde ayarladık.
+
+359
+01:48:09,619 --> 01:48:34,100
+Burada da liste başı işaret eden hedi. Artık ne flight oldu, bu düğüm başa geçmiş oldu. Değil ise, yani liste boş değil veya en küçük değil ise araya ya da sona eklenecek. Bunun için de listeyi taramak için yine by ile kullanıyoruz.
+
+360
+01:48:34,804 --> 01:48:40,804
+Ve burada bir current değişkeni tanımladık yine listeyi taramak için.
+
+361
+01:48:42,304 --> 01:48:47,103
+Ve head'in ilk nodun adresini atadık.
+
+362
+01:48:47,703 --> 01:49:01,503
+Şimdi while'da current son düğümde değilse ve bir sonraki düğümün uçuş kodu ekleyeceğimiz düğümün kodundan küçükse.
+
+363
+01:49:02,963 --> 01:49:12,963
+Buna bakıyoruz. Yani bu döngü de lisenin içinde eklenecek yeri bulmak için burada ilerliyoruz. Bu iki şartı birlikte kontrol ediyor.
+
+364
+01:49:12,963 --> 01:49:27,963
+Burada bağlantı kopmadan önce, yani bir tanesini buldu, onu çıkarmadan önce yeni düğüm ile eski sonraki düğümün bağlantısını kurmuş oluyor.
+
+365
+01:49:29,140 --> 01:49:50,092
+New Slide ile ShowComp ile. Sonra burada da artık yeni düğümü gösteriyoruz. Bu Edge kısmı yeni düğümün araya ya da sona eklendiği senaryo aslında. Bu şekilde.
+
+366
+01:49:50,131 --> 01:49:58,531
+Burada da şimdi uçuşları yazdıralım. Ekrana yazdıra uçuşları yazdıralım.
+
+367
+01:50:00,031 --> 01:50:07,631
+Burada yine körün tadında bir geçici değişken tanımlıyoruz. Bu başlangıçta hedi göstermiş.
+
+368
+01:50:09,268 --> 01:50:37,268
+Bu geçici pointer, hani orijinal head bozulmasın diye bu şekilde tanımladık. Ve düğümler arasında dolaşmak için bu karıntı kullanıyorum. Bu faalda, bu döngü karıntı, nal olmadığı sürece devam etsin diyor. Yani listenin sonuna gelinmediği sürece listedeki her düğüm sırayla gezinmiş oluyor. Hepsine uçuş.
+
+369
+01:50:37,268 --> 01:50:41,268
+uç bilgilerini her satırda her uçun bilgilerini ekrana yazdırıyoruz.
+
+370
+01:50:41,268 --> 01:50:43,268
+Printed'de.
+
+371
+01:50:45,268 --> 01:50:54,268
+Current'ı bir sonraki düğümü göstermesi için bu şekilde güncelledik. Böylece lisedeki sonraki uçuşa geçmiş olduk.
+
+372
+01:50:55,988 --> 01:51:07,427
+Şimdi dosyadaki yazma koduna bakalım hızlıca. Burada da uçuşları PIS numarasına göre ilgili dosyalara yazıyoruz.
+
+373
+01:51:10,948 --> 01:51:16,788
+Currents yine bir geçici değişkeni kullandık.
+
+374
+01:51:19,475 --> 01:51:35,155
+değişken ile kullanmışız. Dosya kapatma da lazım olacak bir değişkenim. Sonra, şu kodda da, files 0'dan 9'a kadar
+
+375
+01:51:35,572 --> 01:51:55,811
+Yani 10 farklı pist için file dizisini tanımlamış oluyoruz. Baştanınca hepsi NULL, yani hiçbir dosya açılmamış onu gösteriyor. Bu diziyi kullanarak aynı pist numarasına sahip uçuşlara aynı dosyayı yazacağız.
+
+376
+01:51:58,323 --> 01:52:10,823
+Ve burada yine mikro listelerinin sonuna kadar gezme işlemi ve burada da karakter listesi tanımlıyoruz faniinin arında.
+
+377
+01:52:10,823 --> 01:52:17,823
+SMP'in tefti ile pis numarasına göre dosya oluşturuyoruz.
+
+378
+01:52:19,188 --> 01:52:37,987
+Eğer bu if koşuğunda, eğer bu pis numarasına ait dosya henüz açılmadıysa, yani NULL ise, burada, şura ile yani, şura ile, write modunda,
+
+379
+01:52:38,112 --> 01:52:47,471
+Dosya açıyoruz. Eğer dosya yoksa burada oluşturmuş oluyor. Varsa da içeriği silinmiş, baştan yazılmış oluyor.
+
+380
+01:52:48,532 --> 01:52:54,532
+Burada dosya açılmazsa bir hata mesajı dönemişiz.
+
+381
+01:52:54,532 --> 01:53:04,532
+Ve fprintf ile dosyaya uçuş bilgilerini yazdırıp her satıra bir uçuş bilgilerini yazdırmışız.
+
+382
+01:53:04,532 --> 01:53:09,532
+Tıpkı uçuşbilgi.txt'deki gibi.
+
+383
+01:53:16,595 --> 01:53:33,595
+listedeki yine bir sonraki uçuşa geçmiş olduk. Dosyayı burada güvenlik kapatma işlemini gerçekleştiriyoruz. Bu şekilde. Sonra main'de de bunları çalıştırıyoruz.
+
+384
+01:53:35,444 --> 01:53:48,244
+Bu zaten benim direkt koddan açtığım için soru 2'nin olduğu klasörde uçuş bilgi nokta teaklisi de var. Çalışacaktır diye düşünüyorum.
+
+385
+01:53:48,244 --> 01:53:50,244
+Şöyle çalıştı.
+
+386
+01:53:52,644 --> 01:54:01,444
+Bu şekilde kodları, kalkış yeri, varış yeri, saatleri ve
+
+387
+01:54:02,479 --> 01:54:26,479
+iç at mı, diş at mı olduğu bilgisini ve pistleri bu şekilde yazdı. Ancak şeye de bakalım, dosyadaki dosyalar gelmiş mi? Evet, üç farklı dosya yazmış. İsimlerini 1.txt, pist 2.txt ve pist 2.txt. Bunları da bir açalım.
+
+388
+01:54:27,891 --> 01:54:34,891
+Şöyle bir olana sadece pis numarası bir olan şeyleri yazmış.
+
+389
+01:54:34,891 --> 01:54:36,891
+Üçleri.
+
+390
+01:54:36,891 --> 01:54:38,891
+Bekle de bakalım.
+
+391
+01:54:40,891 --> 01:54:44,876
+Bu şekilde burada gösterilmiş.
+
+392
+01:54:48,627 --> 01:54:50,627
+Yani,
+
+393
+01:54:52,127 --> 01:54:59,307
+Burada bu şekilde arkadaşlar, eğer anlamadığınız bir yer varsa sorabilirsiniz.
+
+394
+01:54:59,307 --> 01:55:13,107
+Ya da hani bunu siz kendiniz de yazarsanız, daha iyi oturacaktır. Belki kendi kayda tekrar bakıp hani o şekilde de uygulayabilirsiniz.
+
+395
+01:55:14,003 --> 01:55:25,844
+Benim anlatacaklarım bu kadar. Zaten uygulama da bitmek üzere. Bir soru yoksa uygulamayı kapatacağım.
+
+396
+01:55:31,923 --> 01:55:34,804
+Bu zaman herkese iyi günler.

@@ -1,0 +1,2975 @@
+1
+00:01:13,171 --> 00:01:19,671
+Azıcık bir hızlandırız. Şunu söyler, öyle devam ederiz.
+
+2
+00:01:23,284 --> 00:01:32,204
+Evet. Peki. Henüz ben, hariç 30 kişiyiz. Bir iki dakikada bekleyelim. Ondan sonra dersle başlarız arkadaşlar.
+
+3
+00:01:32,204 --> 00:01:34,764
+Şuradan itibaren.
+
+4
+00:02:53,171 --> 00:02:53,867
+D'accord.
+
+5
+00:03:35,860 --> 00:03:41,360
+Katılımcı sayımız arttı mı? Biraz artmış. Evet, tamam. Bir dakika daha bekleyelim.
+
+6
+00:04:07,060 --> 00:04:11,180
+Akıllı olduk. Tamam, peki. İyi. Başlayamıyoruz o zaman yavaş yavaş.
+
+7
+00:04:17,267 --> 00:04:33,267
+Arkadaşlar, şimdi bugün Bitfield uygulaması ile devam edeceğiz. Structa Bitfield örneği ile. Bitfield'ı geçen hafta ayrıntılı konuşmuştuk, hatırlarsınız. Burada önemli olan nokta...
+
+8
+00:04:33,759 --> 00:05:00,939
+Aslında şu sentaksı bilmek. Bu sentaksı bildikten sonra bunun arka planda, bellekte nasıl davranabileceği hakkında uzun uzun ayrıntıla ayrıntıla konuşmuştuk. Bu çok konuşmamızın sebebi de biraz da şundan kaynaklanıyor. Arka plandaki çalışan işletim sistemi ve SİDARİ'cisi ürettiği kod nasıl bellek ayrımında davranacak? Bundan emin olamıyoruz.
+
+9
+00:05:01,759 --> 00:05:29,759
+Bazı bileşen var. Kodun üstünde çalıştığı işlemcinin mimarisi dahi fark ediyor. Ve hangisi dervecisiyle bu kod oluşturduğumuzu da fark ediyor. Çok fark ediyor. Bazı sadece ortak noktaları söyleyebildik. Burada en azından şöyle bir şey dedik. En azından eğer şey yapacaksak, böyle parçalı bitfiyat kullanacaksak, eğer aralarda toplamları...
+
+10
+00:05:29,759 --> 00:05:35,759
+8'e ya da 16'ya en yakın olacak bir şeyler varsa onları...
+
+11
+00:05:36,403 --> 00:05:59,543
+Yaklaştıralım dedik. Şurada da hani olmuyorsa da eşit davranalım, dengeli davranalım dedik. Mesela şöyle bir tanım yaptığımızda anlamı ne oluyordu? Çünkü Strak'ta biliyorsunuz, öğrendiniz. Strak'ta üç tane alan var. Burada esas yeni öğrendiğimiz şey, bu iki noktaya üstü üstünden sonra o alan için kaç bit ayıracağımız. Böylelikle bellek tasarrufu yapıyoruz.
+
+12
+00:06:04,403 --> 00:06:32,343
+Bu bir tanım yaparsak iyi durumda böyle, kötü durumda böyle kullanılacak. Bu bitfilt tanımlamasak daha fazla böyle karışacaktık her durumda. Bitfilt kullanıyorsak da ya işte toplamları bir arada dengeli yapmaya çalışalım. Üst taraf 9, alt taraf 11. Öteki türlü yapsak şimdi burada ya bir şey 4 artı 5 hani 9 byte gidecek.
+
+13
+00:06:32,403 --> 00:06:37,183
+Ama öbür türlü yapsak 16 artı 4, yani 16 değil.
+
+14
+00:06:50,548 --> 00:07:06,548
+Yani yine her akarda karı çıkıyoruz. Ama bir şey yapıyorsak da eğer şöyle bir durumda şey yapmaya çalışalım. Denk, eşit dağıtmaya çalışalım. Terazi dengesi gibi. Öbür türlü bir rakam örneğinde ise...
+
+15
+00:07:12,851 --> 00:07:30,011
+Şöyle bir örnekte ise, en azından charge-off-charge türünde yaptığımız bir durumda belki de şöyle bir israf olabiliyor demiştik.
+
+16
+00:07:30,011 --> 00:07:35,572
+Tekrar şey etmeyelim, didiklemeyelim. Örnekten devam edelim. Bir çift örneğinden devam edelim.
+
+17
+00:07:38,132 --> 00:07:49,412
+Evet, peki hala. Şimdi bu Linked List örneğine devam etmek istiyorum. Ama burada bu sefer farkımız şu oluyor ki Bitfield kullanıyoruz.
+
+18
+00:07:51,603 --> 00:08:08,843
+Bunun daha iyi örneği Yuni'nin görünce ortaya çıkacak. Şimdi bitfili adımadım gidelim ama. Şimdi isim 20 karakterlik olabilir en fazla. TC-Kimut numarası da 11. Burada bir harcama yok biliyorsunuz. Herkesin TC-Kimut numarası 11 basınmakta olduğu için burada kesinlikle bir israf yok.
+
+19
+00:08:08,843 --> 00:08:18,699
+Ama şu noktada tabii ki kısa isimlerin bellek harcaması söz konusu olacak. 20'den fazla uzun isimli...
+
+20
+00:08:18,708 --> 00:08:28,948
+Bu örneği kullanmayacağız. Belki ara isimler varsa ilk ismin ya da ikinci harfin bir harfini kullanarak kısaltma yaparız. O şekilde idare edeceğiz.
+
+21
+00:08:32,628 --> 00:08:47,148
+Onun dışında doğum günü için, o en fazla 31 olabiliyor. Daha fazla gün olmuyor bir ayda. O yüzden 255-32 yeter.
+
+22
+00:08:49,203 --> 00:09:02,823
+Daha özür dilerim. Ay için. 12 ay var. 2 üzeri 4 yeter. Doğum yılı için ise 2 üzeri 11 ne kadar giden şey yeter. O yüzden böyle bir tanımı yaptık. Geri kalan kısım hemen hemen aynı başka için değişen bir şey yok.
+
+23
+00:09:03,475 --> 00:09:29,096
+Hatta bu iddiayı kanıtlamak için şöyle yapalım. Eğer silmemişse geçen hafta yaptığımız bu bitfield olmadan olan örneği üstüne şu bitfield'ı koyalım. Her şeyin aynı çalıştığını görelim. Ama onun dışında bakalım söylemem gereken bir şey var mıymış? Şu yansı notlarının üstünden özel giderim. Bakıyorum. This create this element, add element. Bu özel bir şey yok.
+
+24
+00:09:29,491 --> 00:09:51,291
+Yalnız şurada bir iddiam var. Hem ikel hem bitfield kullandığımız için gibi geçici değişken şart oluyor demiştik. Gerçi bunun bir denemesini yapmıştık. Şart değildi gibi bir şey hatırlıyorum sanki ama neyse bakarız. Şu kısmı bir hatırlarız. Gerekiyor mu, gerekmiyor muydu? Ondan sonra şuna.
+
+25
+00:09:52,019 --> 00:10:00,019
+Onun dışında bakıyorum. Özellikle commentlerden veyahut da bu bitfield ile ilgili bir şey var mı? Burada yok.
+
+26
+00:10:00,019 --> 00:10:08,683
+Evet, zaten açık açık yazmışım. The rest would be very similar olacak yani. Şuraya tekrar gidelim. Bakın özel bir şey var mıydı?
+
+27
+00:10:11,412 --> 00:10:25,092
+Bir de şey tabii ki, şimdi madem bitfield yaptık, bitfield'da şu alanlar unsigned int oldu. O zaman onları unsigned int olarak formatlayıp ekrana bassın diye.
+
+28
+00:10:29,135 --> 00:10:47,235
+Bu %U şeklinde, ansayeni şeklinde geçiyor doğum tarihiyle ilgili elemanlar. Ve tabii ki bunları da eklenmiş olduğumuz için daha fazla bilgi gösteriyor. Onun dışında bu yeni girdiğimiz alanlar için de tabii ki ilgili bilgilerin okunması gerekiyor.
+
+29
+00:10:48,724 --> 00:11:07,204
+Buradaki farkların çoğu yeni ekran alan olmasından dolu. Yoksa bitfiyat olmasına özel bir şey yok. Bitfiyat olmasına fark ettiren tek kısım şu kısım olabilir. İlker bir bitfiyat olduğu için gerekebilir. Gerekip gerekmediğinde şimdi koştup yazdık diyoruz.
+
+30
+00:11:09,344 --> 00:11:10,903
+Bakalım şimdi.
+
+31
+00:11:16,467 --> 00:11:18,627
+Ve bir şey bakayım.
+
+32
+00:11:28,052 --> 00:11:36,932
+Şimdi, bakalım. Ben proje 1'den gidiyordum ve şu şey de orada değil mi? Employeex bu oldu. Tamam, pek. Mesela değişen kısımları.
+
+33
+00:11:37,932 --> 00:11:44,872
+Main metodunu da biraz sadeleştiririz. Geçen hafta epey bir denemeler yapmıştık. Main metodunu da sadeleştiririz. Geri kalan kısım aynı kalır.
+
+34
+00:11:50,515 --> 00:12:01,875
+Evet. Şimdi yaptık. Person Asset'a inliği alanlar eklemiş olduk. Bu bitfiyat kısmını eklemiş olduk.
+
+35
+00:12:05,107 --> 00:12:13,667
+Söyleyeyim, Aydin. Söyleyeyim, kaldırmışız. Yeter demişiz.
+
+36
+00:12:13,667 --> 00:12:23,107
+TC kimlik numara demişiz. Neymiş, söyleyem yerini. TC kimlik numarası kurmuşuz.
+
+37
+00:12:23,107 --> 00:12:30,539
+Söyleyeyim. Bir diğer kısım aynı, başka bir şey yok.
+
+38
+00:12:32,275 --> 00:12:41,675
+Evet, next pointer var. O zaman type def'imiz burada mı? Type store employee. Tamam. Ha, element kalmış. Peki, employee element.
+
+39
+00:12:43,096 --> 00:12:55,675
+Şey olsun ya, aynı kalsın. Şimdi element diye değiştirmek gerek yok ki. Tabii ki diğer şeylere de bakayım. Hep burada element, element, element geçiyor. Ama diğer tarafla...
+
+40
+00:12:56,399 --> 00:13:17,979
+Evet, element element. Peki ya niye element? Element kalmasa da employee desek daha uygun olabilir. Şuna bir not düşeyim bakalım. Çok bir şey diyeçmediğini göstermeyeceğiz demiştik ya. Bakalım şimdi gözden geçiriz. Buradan bir açıklama ekleyelim.
+
+41
+00:13:22,772 --> 00:13:26,892
+Bir dakika. Taklifler yaparız. Bu işi çözeriz.
+
+42
+00:13:27,491 --> 00:13:28,912
+Evet doğru ya. Dur bakalım şimdi.
+
+43
+00:13:38,004 --> 00:13:51,543
+Bitfield nedeniyle fazla değişen bir şey olmamak için diyeceğim.
+
+44
+00:13:51,543 --> 00:13:54,543
+Şimdi, madem bunu...
+
+45
+00:13:54,543 --> 00:13:56,964
+Eleman, element, element.
+
+46
+00:13:57,524 --> 00:13:59,124
+Neyi niye çevirelim şimdi?
+
+47
+00:14:00,644 --> 00:14:03,444
+Şey element diyelim. Employee element diyelim. Peki.
+
+48
+00:14:07,892 --> 00:14:17,732
+Bitfilt Stalk yapısı dışında kullanılabiliyor mu? Bildiğim kadarıyla kullanılmıyor arkadaşlar. Çünkü çok bir anlamı yok.
+
+49
+00:14:17,732 --> 00:14:22,852
+Evet, çok bir anlamı yok.
+
+50
+00:14:25,331 --> 00:14:43,471
+Ama kullanılması mantıklı olabilir. Fakat bu işi siz şu şekildeki iki nokta üst üste şekilde tanımına değil de siz bunun mesela burada ne tuttu? 20 bit tuttu. Siz bu 20 biti tutacak şey nedir?
+
+51
+00:14:45,076 --> 00:15:09,135
+Platformunuzdaki veri türü nedir? Örneğin int yetmiyor. Longint diyelim. Longint'in 32 bit ama siz burada 20 bit var. O 20'yi 32'nin sağına doğru mu yaslayacaksın, sonuna doğru mu yaslayacaksınız? Ona karar verip diğer bütün kodumuzu bitwise işlemlerle yapabilirsiniz. Biraz daha karmaşık olacak ama.
+
+52
+00:15:10,932 --> 00:15:21,112
+Bir silik programcısının bitwise ve karmaşık işlemden şikayet edeceğim diyorsa zaten silik programcısı olmamalıdır. Başka dillerle uğraşmalıdır, başka platformlarla uğraşmalıdır diyeyim.
+
+53
+00:15:24,659 --> 00:15:34,659
+Evet, peki anla. Şimdi şunu yapalım. Ently ve Person Stat'ı aynı yapalım.
+
+54
+00:15:41,524 --> 00:15:58,423
+Şimdi Employee yeni isim veriyorum. Ne diyorduk şimdi buradaki kodlar? Element. Böyle dersem olabilir diye düşünüyorum.
+
+55
+00:16:04,500 --> 00:16:10,360
+Bir şey diyor mu? Bir tek sık al. Noktaya birgülü gerekiyor mu? Gerekmiyor mu? Ondan emin değilim. Evet, noktaya birgülü koymam gerekiyor.
+
+56
+00:16:10,940 --> 00:16:13,879
+Tahtadaki normal komutu. Çünkü şey değil ki, propel sosyal komutu değil ki.
+
+57
+00:16:16,179 --> 00:16:23,500
+Evet, pekala. Ama bir dakika, şimdi neler geldi. Ha bir şeyleri uymadı mı uymadı diyor. Tamam, pekala. Ama...
+
+58
+00:16:23,500 --> 00:16:26,679
+Find.
+
+59
+00:16:28,720 --> 00:16:29,519
+Dur bakalım.
+
+60
+00:16:34,419 --> 00:16:36,419
+Normalde find ile ilgili...
+
+61
+00:16:39,419 --> 00:16:41,419
+Element, element, element.
+
+62
+00:16:42,419 --> 00:16:50,419
+Bu employee döndü. Employee element, yoksa element employee mi diyecektim? Onun yanlış mı şeyti mi acaba? Düşündüm. Yanlış mı karar verdim?
+
+63
+00:16:59,668 --> 00:17:01,668
+Ha, de definiiyonu'u emploi'yı yok.
+
+64
+00:17:01,668 --> 00:17:02,668
+Peki, da.
+
+65
+00:17:02,668 --> 00:17:03,668
+Ve şöyle yapayım.
+
+66
+00:17:08,596 --> 00:17:19,596
+Yok. Yok. Bu ilk düşündüğüm doğru ama şey aramadı. Dur bak. Peki abi. Bunu böyle yapamadım. Elemente çeviriyorum falan falan diyeyim. Notumu öyle düştüğüm.
+
+67
+00:17:29,907 --> 00:17:31,447
+Şöyleyeçmiştim.
+
+68
+00:17:46,579 --> 00:17:49,419
+Diyelim.
+
+69
+00:17:49,419 --> 00:17:50,319
+Pekala.
+
+70
+00:17:53,059 --> 00:17:55,359
+Dolayısıyla karşılaştırmak yaparız.
+
+71
+00:17:55,480 --> 00:17:56,339
+Diğer ikisi ile.
+
+72
+00:17:59,559 --> 00:18:01,480
+İlk üstüne ulaşamadım.
+
+73
+00:18:03,240 --> 00:18:07,359
+O yüzden bu bitfield örneği üstünden gidelim.
+
+74
+00:18:08,559 --> 00:18:10,980
+Peki şimdi element dedik.
+
+75
+00:18:13,844 --> 00:18:16,875
+Employee element değiliz artık.
+
+76
+00:18:22,195 --> 00:18:34,455
+Şimdi genel bir sleep race yapmak da istemiyorum. Arada gözden kaçırdığım şeyler olabilir. Ondan sonra onu bulmaya daha çok uğraşırız. Daha çok zaman kaybederiz. Şeklinde söylüyorum.
+
+77
+00:18:38,536 --> 00:18:44,596
+Şimdi bu arada o zaman bunu yeni proje yapıp da o şekilde karşılaştırayım. O da 4 olsun.
+
+78
+00:18:50,483 --> 00:18:51,483
+Kaydetme.
+
+79
+00:18:53,483 --> 00:18:56,483
+Ama o söyleyecek şey teklerimden değişiklik oldu mu? Neyse.
+
+80
+00:18:57,483 --> 00:19:02,483
+Project, Consultation, C Project. Evet, tamam. Okey.
+
+81
+00:19:03,483 --> 00:19:06,483
+Project 4 diyorum ben buna.
+
+82
+00:19:09,483 --> 00:19:14,483
+Project. Onu da boşluk kullanmışım, onu da kullanmamışım. Neyse, çok fark etmez.
+
+83
+00:19:17,395 --> 00:19:23,516
+Şimdi şunu da bir kaydetmeliyim.
+
+84
+00:19:23,516 --> 00:19:27,500
+4 isim ya da kod 4 isim.
+
+85
+00:19:31,508 --> 00:19:52,508
+Pekala. Sonra onunla karşılaştıracağız. Include'larım falan kalsın tabiki aslında. Oradaki yapıyı tekrar şey, bekleme yapısını kaybetmiş oldum tabi. O yüzden onu geri kazanayım.
+
+86
+00:19:52,508 --> 00:19:59,403
+Evet şimdi, şurada yanalım. Yok bu değildi.
+
+87
+00:19:59,508 --> 00:20:08,508
+Project 4T ne vardı? Şunlardan biri olsa gerek. Evet, tamam.
+
+88
+00:20:08,508 --> 00:20:13,508
+Sync ve vtdli bir koyalım.
+
+89
+00:20:25,107 --> 00:20:27,107
+Kalkan main, main.
+
+90
+00:20:32,107 --> 00:20:34,107
+Peki, şu bakalım.
+
+91
+00:20:36,107 --> 00:20:39,107
+Evet, aslında onlar yetiyordu da.
+
+92
+00:20:42,107 --> 00:20:43,884
+Main'in içerisine...
+
+93
+00:20:45,715 --> 00:20:53,715
+Kişeli, şimdi kuşuktan kopyalaksam. Yeter ondan sonra, ben yapıştadıktan sonra, sonunda tekrar. Ha zaten ben burada tamam peki. İyi.
+
+94
+00:20:58,291 --> 00:21:08,291
+Peki, bu tuttuğumuza göre, sizin kaç ihtiyacımız olacak mı? Olabilir. Komple to, mampilotu bir şeyler yapacak.
+
+95
+00:21:08,291 --> 00:21:11,291
+Şunu bir hata veriyor, vermiyor. Tamam peki.
+
+96
+00:21:13,291 --> 00:21:16,076
+Evet, peki başlayalım.
+
+97
+00:21:22,003 --> 00:21:40,403
+Evet, şimdi yeni haliyle kişisel bilgi yapımızı ekledik. Soyat yerine TC klinik numarası yaptık. Doğum tarihiyle ilgili Bitfield tanımladık. Farklar bunlar oldu. Onun dışında geri kalan mantık ana hatlarıyla aynı.
+
+98
+00:21:46,228 --> 00:21:50,148
+Uzun uzun her yer strac personal strac dememek için element dedim.
+
+99
+00:21:50,488 --> 00:21:51,428
+Bir dakika ya.
+
+100
+00:21:52,867 --> 00:21:58,648
+Aynı şey aynı zamanda strac personal strac employee diyebilirdim. Ne olacaktı yani?
+
+101
+00:21:59,847 --> 00:22:00,407
+Bakalım.
+
+102
+00:22:01,228 --> 00:22:05,168
+Ama en azından şöyle bir adım adım ilerleme yapayım.
+
+103
+00:22:05,827 --> 00:22:11,048
+Ve şuraya geri dönüp şöyle deseydim eğer oraya yapıştıracağım şimdi.
+
+104
+00:22:12,428 --> 00:22:13,347
+Employee.
+
+105
+00:22:22,163 --> 00:22:28,923
+Evet, geçen sefer öyle diyecektim. Öyle deseydim da olurdu. Ama ben sonucuma yanlış düşünmüşüm.
+
+106
+00:22:45,971 --> 00:23:05,071
+Ya da şöyle, böyle tarabilsin diyorum. Ondan sonra bir fema. Ya da bu sefer ötekinde onu yazar. Ama neyse çok fazla uğraşmayalım. İnanın arkadaşlar. Değişen fazla bir şey yok. Kodları hazırlarken incelemiştik.
+
+107
+00:23:07,211 --> 00:23:08,331
+Tamam peki.
+
+108
+00:23:11,347 --> 00:23:22,187
+Şimdi buna gerek yok tabii ki. Bir dakika. Kalsın. Sonra bazı şeyleri eskisinden yasını yapıp hala aynı çalışıyor mu? O şekilde de deneyebiliriz.
+
+109
+00:23:25,940 --> 00:23:26,940
+Geçeceğim.
+
+110
+00:23:27,940 --> 00:23:29,868
+İnşallah kısımla az.
+
+111
+00:23:42,003 --> 00:23:48,283
+Şimdi, önce bakalım bir izleyen problemimiz yok. Sonra şurada bir notum bir şey var. Bakalım ne demişiz.
+
+112
+00:23:48,743 --> 00:23:51,223
+İkinci örneği, tamam bundan özel bir şey yok.
+
+113
+00:23:52,663 --> 00:23:55,324
+Ama başıma geri kalan kısım lazım.
+
+114
+00:24:03,508 --> 00:24:06,508
+Ve son olarak meyin örneği.
+
+115
+00:24:21,299 --> 00:24:25,660
+Peki, iki kişi koyuyorduk. Ondan sonra araya üçüncüyü koyuyorduk.
+
+116
+00:24:30,708 --> 00:24:45,268
+Niye buraya bir kimlik yapmış mı? Ha, pardon. İkisi de olur anlamında. Tamam, pekala. İster Print Element'ten, ister kişinin bilgilerini tek tek de yazabiliriz. Onu göstermek için yazmışım. Özel bir şey değil.
+
+117
+00:24:45,268 --> 00:24:53,708
+Tabii Print Element, bakayım. Tamam, pekala. Çünkü Print Element P'ye bir gidelim ayrıca. Tekrar.
+
+118
+00:24:55,731 --> 00:25:05,731
+Tamam, aynı nihayetinde. Yalnız burada şimdi fonksiyon parametresini pointer olarak verdiğimiz için burada ok işareti var.
+
+119
+00:25:05,731 --> 00:25:13,731
+Main'de ise, ha main'de de zaten aynı şey pointer yine ok var. Tamam, pekala fark eder bir şey yok.
+
+120
+00:25:13,731 --> 00:25:19,731
+O zaman çalıştırıp görelim doğru çalıştığını. Ondan sonra sorularını sınavırız.
+
+121
+00:25:23,188 --> 00:25:37,728
+Şunu beğenmedi. Ha evet tamam doğru. Aslında element demem gerekiyordu. Create List Element. Peki Create List Element nerede? Evet element türünden bir şey döndürüyor.
+
+122
+00:25:39,728 --> 00:25:47,048
+Niye böyle bir şey yaptı? Almadım bakalım. Doğru yerden mi aldım? Doğru yerden aldım.
+
+123
+00:25:47,635 --> 00:25:54,635
+İllaki...
+
+124
+00:25:54,635 --> 00:26:10,635
+İnteger to pElement.
+
+125
+00:26:10,635 --> 00:26:12,635
+Tamam.
+
+126
+00:26:14,804 --> 00:26:26,604
+GreatListElement. Tamam. Element türünden. Element. Tamam. Peki. Element, Element. Element döndürüyor. Evet. Peki.
+
+127
+00:26:29,183 --> 00:26:31,423
+Şimdi şurada niye böyle bir şey yaptı anlayamadım.
+
+128
+00:26:38,516 --> 00:26:54,475
+Şey de ilginç ya. Yani, create element, add element'e paramet olarak aktarabiliyor da, ona aynı yöntem yöntem gitsem. Çünkü şey, illa kastıyor ya. İlginç yani.
+
+129
+00:26:54,475 --> 00:27:00,175
+Integer from point to, kast. Öyle değil. Yani, illa ki, teşekkür ederim.
+
+130
+00:27:15,923 --> 00:27:23,624
+Ne demek istiyor yani hocam? Anlamadım. Anlasam şunu hocam. Kassız olamaz dediği, kast dediği nedir hocam?
+
+131
+00:27:24,435 --> 00:27:48,155
+Kas tip dönüşümü. Şimdi şöyle bir şey oluyordu hatırlarsanız. Bir yerde bir yer, eleman işini bir yer ayırdığım zaman malloc gibi o bir void bir pointer döndürüyordu. Ve bu void pointerı element türünden bir pointera doğrudan atayamıyordum. O yüzden bu tip dönüşümü yapmam gerekiyordu. Casting bu işimi yapmam gerekiyordu. O burada olan bir şey.
+
+132
+00:27:48,928 --> 00:28:05,248
+Ama burada niye böyle bir şey verdi bilmiyorum. Bakacağım. İlerlemek istiyorum çünkü arkadaşlar. Bu üçüncü elemanı eklemiyorum. Bu şekilde kalsın. Neden öyle olduğunu anlamadım.
+
+133
+00:28:05,248 --> 00:28:13,248
+Hocam sorun çıkmasının bizim için bir sakıncası yok. Bizde yazarken sorun çıkacağı şey en azından sorunlara karşı sizin...
+
+134
+00:28:14,579 --> 00:28:28,099
+Çözümleriniz de bizde kendimize bir şey bulmuyor. Yani şu anda mesela o sağ taraftaki kendi sorunlarınızı yazıp, kendi sorunlarınızı çözümde üretip onu not etmeniz bile çok güzel bir olay.
+
+135
+00:28:29,319 --> 00:28:33,299
+Eyvallah. Ama bunu daha önce hazırlıklı yapsaydım daha iyi olurdu.
+
+136
+00:28:33,299 --> 00:28:34,059
+Ne? Pass?
+
+137
+00:28:34,799 --> 00:28:35,799
+Allah Allah.
+
+138
+00:28:36,219 --> 00:28:38,519
+Ne var mı? Anlamadım.
+
+139
+00:28:39,859 --> 00:28:43,039
+Pask, alapif ala bitti ama. Yok ki burada bir şey. Allah Allah.
+
+140
+00:28:49,332 --> 00:28:50,332
+Hayret bir şey ya.
+
+141
+00:29:11,316 --> 00:29:18,475
+Bu yakada problem yok. Ondan sonra şuraya bakalım.
+
+142
+00:29:28,788 --> 00:29:32,327
+Evet, şunu eklediğim zaman bir problem veriyor.
+
+143
+00:29:32,768 --> 00:29:36,367
+Hocam sanırım forum başlangıç üstü paranteze eksik.
+
+144
+00:29:38,847 --> 00:29:39,488
+Forum?
+
+145
+00:29:40,707 --> 00:29:42,327
+Aa, evet. Haklısın. Ama yok.
+
+146
+00:29:43,067 --> 00:29:43,988
+Tek bir...
+
+147
+00:29:43,988 --> 00:29:47,147
+Fazla. Ya da şu alttaki basla.
+
+148
+00:29:47,667 --> 00:29:49,008
+Evet, haklısınız. Teşekkür ederim.
+
+149
+00:29:54,163 --> 00:30:00,000
+Burada, şöyle yaptık. Bu işi çözmüş oluyor.
+
+150
+00:30:05,619 --> 00:30:13,339
+Hatta, aa şu şeyleri de kaybetmiş olduk. Bekleme konutlarını. Ama neyse. Tekrar alırız.
+
+151
+00:30:18,804 --> 00:30:19,596
+Evet.
+
+152
+00:30:24,660 --> 00:30:28,492
+Her halka da bir saçmalıyor.
+
+153
+00:30:35,443 --> 00:30:40,564
+Özür dilerim ya. O kıvrık bandı zoraya konulmaz. Tabii ki şöyle yapılır.
+
+154
+00:30:51,059 --> 00:30:53,559
+Bu arada evet şimdi şöyle.
+
+155
+00:30:56,059 --> 00:30:57,259
+Bu kısmı böyle.
+
+156
+00:30:59,259 --> 00:31:01,859
+Pekala sonra diğer şeylerimi deneyebilirim.
+
+157
+00:31:01,859 --> 00:31:05,059
+Denemeye çalışıp ondan sonra vazgeçilme olan şeyleri deneyebilirim.
+
+158
+00:31:08,660 --> 00:31:09,519
+çalışılabileceğim.
+
+159
+00:31:12,140 --> 00:31:17,220
+Doğum tarihi
+
+160
+00:31:17,220 --> 00:31:22,960
+11.1.1911
+
+161
+00:31:22,960 --> 00:31:25,320
+Evet.
+
+162
+00:31:34,660 --> 00:31:35,560
+Düşüncü olan
+
+163
+00:31:36,276 --> 00:31:50,976
+Mesela 3, 30 olacak tabii. 3, 19, 13. Ah, parsalı koymadığım için parsalı tokayalım.
+
+164
+00:32:14,451 --> 00:32:15,115
+Teşekkürler.
+
+165
+00:32:21,715 --> 00:32:22,215
+Tuf.
+
+166
+00:32:28,660 --> 00:32:33,660
+Yani çalışmaması için neden yoktu ama bak, planter yüzünden uğraştık.
+
+167
+00:32:33,660 --> 00:32:36,660
+Durum bu.
+
+168
+00:32:41,236 --> 00:32:50,036
+Buraya kadar konuştuğumuz noktalarda soru sona hocam şunlardan tekrar bahsedin dediğiniz şeyler varsa onlara bakalım.
+
+169
+00:32:55,188 --> 00:33:00,048
+[öğrenci] sormuş Yusuf Hocam. Bu Struck yapısı diyor Bitfield.
+
+170
+00:33:02,147 --> 00:33:08,228
+Bitfield Struck yapısı dışında kullanılamıyor arkadaşlar. Bitfield bu şekilde kullanım olmuyor.
+
+171
+00:33:08,228 --> 00:33:17,228
+Siz isterseniz eğer, örneğin long int tipi tanımlarsınız ve onun içerisinde şuradaki...
+
+172
+00:33:19,667 --> 00:33:33,247
+5, 4, 11'lik yapıyı siz kendiniz ayrı ayrı bitwise işlemlerde kurarsınız. Oradaki 20 biti ister 32 bitin soluna yazılarsınız ister sağına yazılarsınız.
+
+173
+00:33:33,247 --> 00:33:44,127
+Diğer kanal kısmından 00, 00 olur. Siz doğum tarihine ulaşmak için her zaman için ilk 5 biti tam sayı çevrinden mesela bir fonksiyon yazarsınız.
+
+174
+00:33:46,036 --> 00:34:07,236
+Ay için ise diğer 4 biti tam sayı çeviren fonksiyon yazarsınız filan ayrı ayrı uğraşırsınız. Daha fazla uğraştıracak. Ama eğer çok çok kısıtlı bir belli kalanında çalışıyorsanız, bir bitim bile tasarrufun yararı olacaksa o zaman mecbus biraz kodu uzatacağız ve zorlaştıracağız.
+
+175
+00:34:11,827 --> 00:34:18,188
+Aklınıza sorun gerisi bu arada sorun arkadaşlar.
+
+176
+00:34:22,228 --> 00:34:40,568
+Örneğin, bir daha saat konuşuyoruz. Union' var, Recursion' var. Union Recursion'ın bugün bu iki konuyu bitiririz de. Ondan sonra şu konulara bakalım. Function pointers, input output.
+
+177
+00:34:42,427 --> 00:34:47,327
+Function pointers, input output. Efendim, bunu nasıl yapmışım bakalım.
+
+178
+00:34:49,268 --> 00:34:51,387
+Peki, ona bakalım.
+
+179
+00:35:04,083 --> 00:35:22,083
+Döneme bakalım. Şimdi bir, iki, üç haftalık kısım. Bir, iki. Peki. Dosya işlemlerini bir hafta yoğun çalışarak tamamlamışız.
+
+180
+00:35:22,083 --> 00:35:30,264
+Bu ekorajın function point test. Belki, evet peki. Bugün bitiremesek bile en azından içim rahat eder diyeyim.
+
+181
+00:35:31,315 --> 00:35:32,315
+Peki.
+
+182
+00:35:34,975 --> 00:35:41,815
+Peki, soru gelmediğine göre arkadaşlar, biraz önce Union mantığını konuşalım.
+
+183
+00:35:41,815 --> 00:35:45,315
+Ondan sonra, ara verdikten sonra örnek kuruluna bakarız.
+
+184
+00:35:45,315 --> 00:35:47,315
+Çalıştırır deneriz.
+
+185
+00:35:47,315 --> 00:35:51,315
+Şimdi çok daha oraya gittim.
+
+186
+00:35:51,315 --> 00:35:54,315
+Şöyle bir gelin.
+
+187
+00:35:54,315 --> 00:35:56,315
+Peki.
+
+188
+00:35:56,820 --> 00:36:05,640
+Şurada özel bir, ha ama yolunu konuşmuştum. Bırak yoluna bir bakayım bakalım. Tamam, peki geliştirmeye yönelik sonlar. Teşekkürler.
+
+189
+00:36:13,907 --> 00:36:37,804
+Peki arkadaşlar, şimdi Union mantığı, Struct'ın üstüne bir turdala daha koyuyor. Bu yenilik de şu. Aynı bit alanını farklı şekilde yorumlamak istiyorsanız, yapacağınız şey Union arkadaşlar. Tekrarlıyorum. Aynı bit alanını...
+
+190
+00:36:38,579 --> 00:36:43,920
+Farklı şekilde yorumlamak. Duruma göre farklı şekilde yorumlamak. Olay bu.
+
+191
+00:36:48,239 --> 00:37:01,380
+Peki buna niçin ihtiyacımız olabilir? Daha eski veri yapıları oluşturmak için bu yola gidebilirsiniz. Böylelikle aynı veri yapısı farklı türden veriler içeri bilecektir.
+
+192
+00:37:02,260 --> 00:37:05,119
+Ona kapıyı açıyor Union Band'ı.
+
+193
+00:37:06,643 --> 00:37:16,923
+Hemen örneğimi verelim. Bir union tipi tanımlıyorum. Type de F union, U demişim. Peki bu union'u nasıl tanımlamışım?
+
+194
+00:37:16,923 --> 00:37:28,143
+Şimdi bu union'un içerisinde yazdığım her ayrı birim o union'un farklı yorumlanma biçimleridir arkadaşlar.
+
+195
+00:37:29,804 --> 00:37:34,183
+Burada bir struct, bir long, bir de float.
+
+196
+00:37:34,867 --> 00:37:43,288
+Burada üç ayrı satır var. Bu union alanını bu üç ayrı şekilden biri olarak kullanabilirsin anlamına geliyor.
+
+197
+00:37:43,288 --> 00:37:53,467
+Bu union içerisinde yazdığım şey, birer ve sıfırlar ve birerler. İsterseniz buradaki stack şeklinde yolunlayabilirsiniz.
+
+198
+00:38:00,000 --> 00:38:08,859
+Long sayı, tam sayı olarak yorumlayabilirsiniz. Veyahut da bu alanı bir ondalıklı sayı olarak yorumlayabilirsiniz diyor yaptığım tanım.
+
+199
+00:38:10,159 --> 00:38:25,079
+Ve buradaki satırlara baktığımda, buradaki satırlardan en geniş olanı float. Long da ona eşit gerçi. Diğeri daha kısa. İki tane karakter, iki byte çünkü. Ama long ve float dört byte.
+
+200
+00:38:25,780 --> 00:38:43,780
+Bunun en genişini kapsayacak şekilde bir bellek alanı açılıyor bu union için. Ve o bellek alanına ya o bellek alanındaki sıfır ve birileri ister bir float olarak yorumlayabiliyorsunuz, x diye erişmeye çalışırsanız.
+
+201
+00:38:53,012 --> 00:39:05,452
+S-struct'ı türünden erişmek isterseniz. Olay bu. Peki böyle bir tanım yaptığım zaman nasıl kullanabilirim? Ön U türünden example adlı bir değişken tanımlıyorum.
+
+202
+00:39:13,588 --> 00:39:35,547
+Buraya A'nın ASCII kodu 65, pardon Büyük Ağ da 65'ti. Büyük Ağ 65, Kış Ağ 92 filandı galiba. 92 diyelim. Yanlışmışlar kusura bakmayın. İlk byte'ta sayısal olarak 92 yazıyor. İkinci byte'ta sayısal olarak 93 yazıyor. Diğer byte'ların anlamı yok.
+
+203
+00:39:36,052 --> 00:39:50,932
+O anda eğer daha evverden bir sayı vardıysa oralarda ve geallog demediysek rastgele 0 ve 1'ler. Oraya ulaşmadık çünkü. Ama eğer geallog ile yaptıysak da o zaman 0, 0, 0 şeklinde yorumlanmış oluyor.
+
+204
+00:39:51,731 --> 00:39:59,932
+Sonra ben bu alanı diyelim ki şey olarak yazdır dediğimde long olarak yazdır diyorsam da o zaman tabii...
+
+205
+00:40:00,000 --> 00:40:02,439
+Bu unsigned değil signed şu an.
+
+206
+00:40:03,359 --> 00:40:09,159
+Sıfır sıfırına başladığı için herhalde pozitif olarak yorumlanacaktır.
+
+207
+00:40:09,239 --> 00:40:11,559
+Biri de başlamak için negatif yorumlanmayacaktır.
+
+208
+00:40:11,960 --> 00:40:14,760
+Pozitif bir uzun sayı olarak yorumlanacaktır.
+
+209
+00:40:14,760 --> 00:40:17,960
+Eğer bunu C olarak yaz demek istersen.
+
+210
+00:40:18,324 --> 00:40:31,043
+Ya da işte long turn'den bir başka değişkenli atarsa veyahut da zaten printf içerisinde türden çok daha farklı formatlı sistemleri yazaraktan da değişik yorumlamalarını ekranına yazdırıyabiliyorduk.
+
+211
+00:40:31,043 --> 00:40:42,043
+Peki, şu işi yaptıktan sonra diyelim ki example.j'ye eşitli 5 diye bir atama yaparsan,
+
+212
+00:40:45,492 --> 00:40:54,492
+Evet, şey yapıyormuş, override de ediyormuş. 5 diye atarsam her ne kadar 5 bir tam sayı.
+
+213
+00:40:55,712 --> 00:40:59,972
+Aa, pardon, pardon. Şimdi bakalım. Şey değişimi yapıyor mu yapmıyorum, o da ayrı bir soru da.
+
+214
+00:41:01,932 --> 00:41:04,252
+Şimdi J ise long, tamam mı?
+
+215
+00:41:04,572 --> 00:41:11,692
+J long olduğu için, evet, J long olduğu için bütün bu alanı dolduracak bir şey, veri türü.
+
+216
+00:41:12,112 --> 00:41:40,032
+Her ne kadar 5 değeri atasak bile bunu longa çevirip başına hep sıfırları koyup koyup koyup en son 1, 2, 3 bite 1, 0, 1 yazaraktan 5 edecek. Yani 0, 0, 0, 0. En son da 1, 0, 1 ile bitecek. En son 3 bit, 1, 0 bit. Geri kalan her şeyin 0, 0 olacak. A ve B değerleri silmiş olacak. Ama daha sonra bunları da mesela ekrana yazdırmaya çalışırsak.
+
+217
+00:41:40,112 --> 00:41:50,731
+Asgır kod 0'ın karakteri neye karşı geliyorsa o olacak, anlamsız bir karakter olacak. B'de Asgır kodun 0'a ne denk geliyorsa yine öyle anlamsız bir şey olacak.
+
+218
+00:41:50,992 --> 00:42:02,211
+Tabi bunu şey olarak yaptığını düşünüyorum. Big End'in yaparsa belki şu işler farklı olabilir.
+
+219
+00:42:03,027 --> 00:42:28,987
+Hepsi sıfır, en sonunda bir sıfır bir yerine. İlk ney? On alttan üç çıkar. İlk on üç bit sıfır, sonra bir sıfır bir yazıp geri kalın sıfır sıfır şeklinde de simgeliyor olabilir bizim işlemcimiz. Bit ending yapmışsa. O zaman A yine sıfır olacaktır ama B'nin değeri bu sefer beş ASCII kodu neye denk geliyorsa onun değeri olacaktır.
+
+220
+00:42:30,675 --> 00:42:40,595
+Şimdi burada biraz ekstrem senaryodan bahsettim ama eğer yani bu yünün bu ekstremliği bize sağlıyor. İşimize yarıyorsa kullanacağız, yaramıyorsa kullanmayacağız.
+
+221
+00:42:46,612 --> 00:43:09,672
+Örneğin ilk satınına girelim. Formatı ve unionin amacı hakkında bilgi vermiş olacağız çünkü. Ondan sonra aramızı vermiş oluruz. Şimdi şöyle düşünelim. Bizim çalışanlarımız arasında yabancı uyruklu çalışanlar da olabilir. Onlar için TC ekimlik numaraya ihtiyaç yok. Acaba şöyle mi yapsam? Önce çıkarttıklarına. Diyelim ki unioni bilmiyorduk.
+
+222
+00:43:13,204 --> 00:43:21,124
+Yok eğer bu bir yabancıysa o zaman da pasaport numarası için alan açalım. Yabancıysa pasaport numarasını kullanıyor olacağız.
+
+223
+00:43:22,483 --> 00:43:46,703
+TC üyrukluyorsa, TC kimlik numarası mı kullanıyor olacağız? Peki bir çalışan acaba yabancı üyruklu mu, Türkiye Cumhuriyeti vatandaşı mı? Bunu nasıl karar vereceğiz? Belki onun içinde bir bullying alan eklerdik staktımıza. Öyle gidebilirdik. Veya şöyle yapabilirdik belki. Eğer pasaport numarası alanı boşsa, bu Türkiye Cumhuriyeti vatandaşı.
+
+224
+00:43:47,699 --> 00:43:59,179
+Yok eğer TC kimlik numarası alanı boşsa bu sefer bu bir yabancı vatandaş. Peki iki alanda boşsa ne olacak? O gibi belirsizlikler de olabilir.
+
+225
+00:43:59,179 --> 00:44:11,119
+Şimdi bunlara gerek yok ama Yuni'ni biliyoruz. Yuni'ni de diyeceğiz ki benim normalde Türkiye Cumhuriyeti vatandaşlarımız için ayırdığımız 11 hanelik TC kimlik numarasını,
+
+226
+00:44:11,668 --> 00:44:32,668
+Yine öyle kalsın. Fakat eğer bu kişi bir yabancıysa o zaman ben o alana TC klimik numarası değil, pasaport numarası koyuyorum diyeceğim. Bunun yönüne ne yapabilirim? Ama bunu yaparken de şunu da ayırt etmeliyim. Yani her halükarda bu çalışan acaba...
+
+227
+00:44:33,235 --> 00:44:41,296
+TC vatandaşı mı da buradaki bir TC kim numarası mı? Yoksa yabancı uyruklu da bu bir pasaport numarası mı?
+
+228
+00:44:41,844 --> 00:45:07,243
+Onu bir saklamam gerekiyor. Onu da bu alanda saklamam. Ayrıca bir boolean alan açmama gerek yok Struct'ın içerisine. Ki Struct içerisinde Bitfield kullansak da kullanmasak da veri kaybı olabileceğini, boşa harcanan veri olabileceğini de biliyoruz. Hiç bir tane boolean açıp belki bütün hizalamayı berbat etmeyelim.
+
+229
+00:45:08,244 --> 00:45:28,504
+Madem TC-Klimik No alanını ortak amaçlı kullanıyoruz. Eğer bu kişi yabancı ise o zaman ilk alanı gerçekten TC vatandaşı mı değil mi şeklinde o bilgiyi tutsun.
+
+230
+00:45:32,504 --> 00:45:33,824
+Evet.
+
+231
+00:45:34,387 --> 00:45:53,387
+Bu örneğe yapmayı ve ayrıntıları ikinci dersimize bırakıyorum. O yüzden şu ara yansıma geleyim.
+
+232
+00:46:01,684 --> 00:46:21,704
+Saat 10'a kadar aramızı verelim arkadaşlar. Ondan sonra kaldığımız yerden devam ederiz. Şunu da kaydettiğimizi unutmayayım. Faktifekte ilişkiler yaptım. Bu karşılaştırma yapmaktan vazgeçtim. Meraklı arkadaşlarım yapabilirler bunun kendileri. Şimdi 10 dakika.
+
+233
+00:59:42,931 --> 00:59:51,771
+Peki arkadaşlar. Biraz daha çabuk geçermiş. Hemen bitti. Nasıl kaldığımız yerden devam edeceğiz.
+
+234
+00:59:56,244 --> 00:59:59,884
+En son bu unionlardan konuşmuştuk.
+
+235
+01:00:00,083 --> 01:00:12,963
+Yunanlardan konuşurken aynı bellek alanını birden fazla şekilde yorumlayabilmek, birden fazla şekilde türden erişebilmek gibi altta yaptan temel motivasyonu söylemiştik.
+
+236
+01:00:12,963 --> 01:00:25,863
+Ve şimdi bu motivasyonu örneğimize uyarlayacağız. Uyarlayıp uyarma kısmını birlikte yapacağız. Bu ders saatimi o şekilde geçenleriz diye düşünüyorum.
+
+237
+01:00:28,659 --> 01:00:39,599
+Şöyle bir ihtiyacımız vardı. Bir önceki örnekte çalışanlarımız için normal yapımız isim Tecrühe Kümük numarası ve doğum tarihi idi.
+
+238
+01:00:39,599 --> 01:00:49,739
+Fakat şimdi yabancı uygulukluğu çalışanlarımız için Tecrühe Kümük numarası değil de tasaport numarası kullanılması gerekiyor diye düşünmüştük.
+
+239
+01:00:50,000 --> 01:00:55,779
+Ve öyle olunca şu şekilde biz yapı kullanabiliriz demiştik.
+
+240
+01:00:56,096 --> 01:01:11,315
+En azından bari şöyle yapalım dedik. Bu bir TC vatandaşı mı değil mi? TC vatandaşı ise kişinin bari doğum şehrini tutalım.
+
+241
+01:01:11,795 --> 01:01:28,096
+Yok eğer şey ise, değil ise, yabancı ise bu sefer hangi ülke uyruğu olduğunu tutalım. Ve o zaman da aslında TC Kirmikno alanda yazacağımız şey de pasaport numarası olacaktır.
+
+242
+01:01:36,692 --> 01:02:02,991
+Ya hangi ülke vatandaşı olduğunu boşa harcayacak ve doğum şehrini boşa harcayacak. Çünkü şu şekilde bir staktanını yaptığımızda her kayıt için hem Nationality hem Sturford için 20 karakterlik, 20 byte'lık araylanacak. İkisinden biri illaki komple çöpe gidecek.
+
+243
+01:02:03,572 --> 01:02:16,492
+Onun yerine ben şu alanı ortak kullanabilir miyim? Bu 20 karakterlik alanı ortak kullanabilir miyim? Kullanabilirim. Onun için de bitfield tanımlı.
+
+244
+01:02:16,492 --> 01:02:30,052
+Bu arada kaldı ki, şimdi acaba daha da fazla tıslarsak edebilir miyim diye düşünüyorum. 20 karakter. 20 karakter, 20 byte.
+
+245
+01:02:31,764 --> 01:02:57,103
+Fark etmeyecek. Ama en azından şu 20 byte'ı tasarruf edeceğiz union tanımlayarak da. Şu unsight int'in aslında bir bitlik, evet o bir bellek kaybına, alignment problemine yol açacak ama en azından en fazla int olduğu için en fazla 2 byte.
+
+246
+01:02:57,907 --> 01:03:13,007
+Kayba yol açacağız. Ama biz şurada 20 byte'dan tasarruf ediyoruz. Yine günün sonunda kardayız olacak. Peki bunun için nasıl bir union tanımı yapacağız? Şurada gördüğünüz şekilde bir union tanımı yapacağız.
+
+247
+01:03:19,411 --> 01:03:27,411
+Daha evvel bu işlerin personal startımız tanımlıydı zaten. Şimdi ona ek olarak...
+
+248
+01:03:27,983 --> 01:03:54,463
+Bu kişi, TC-Hikim vatandaşımı. Onu illa tutmam gerekiyor. Onu Union'un içerisinde tutamam. Çünkü hatırlarsanız Union komple her bir satır ayrı bir şekilde yolumlanıyordu. Benim şu iki bilgiye ek olarak, şu iki bilgiden birini ek olarak illa şuna da ihtiyacım var. [öğrenci] el kaldırmış. Buyurun kendinizi anlayıp soru sorabilirsiniz.
+
+249
+01:03:55,603 --> 01:03:57,983
+Hocam, ortak kullanabilirim dediniz ya.
+
+250
+01:03:58,744 --> 01:03:59,063
+Evet.
+
+251
+01:03:59,764 --> 01:04:06,523
+Orada yani iki farklı kişinin bilgilerini aynı ereğe koyup farklı farklı çağırabilirim anlamında mı?
+
+252
+01:04:07,284 --> 01:04:09,043
+Bir daha alayım sorumuzu. Aynı.
+
+253
+01:04:10,943 --> 01:04:16,844
+Farklı iki kişinin bilgilerini aynı ereğe koyup farklı farklı çağırabilirim anlamında mı?
+
+254
+01:04:17,483 --> 01:04:23,043
+Şöyle olacak. Aynı ereğe hem TC vatandaşı olan hem de olmayanları koyacağım.
+
+255
+01:04:23,891 --> 01:04:38,871
+Bunlara ortak biçimde erişeceğim. Erişirken de öncelikle bakacağım illaki. Bu bir TC vatandaşı mı? Vatandaşıysa o zaman diyeceğim ki bu kişinin doğduğu yer şu şehirdir diyeceğim. City of Work diyeceğim.
+
+256
+01:04:39,603 --> 01:04:58,603
+Aksi taktirde, yok bu kişinin uyluğu, şu nationality'si, şudur şeklinde söyleyeceğim. Ayrıca bir de şunu da söyleyeceğim. Bu kişi eğer TLC Cumhuriyeti Vatandaşıysa o zaman TLC iklimi numarası şudur diyeceğim. Aksi taktirde, bunun pasaport numarası budur diyeceğim.
+
+257
+01:04:58,996 --> 01:05:26,996
+Şimdi o kodu yansılarımda eklememişim maalesef. Birlikte yapacağız şimdi o kodu. Yani aynı dizide hepsi illaki personal stat nesneleri varlıkları olacak elbette tabii ki. Ama bu personal stat dizisinde yer alan varlıkların kimisi TC vatandaşı olacak, o şekilde yorumlanacak. Kimisi yabancı uyruklu olacak, o şekilde yorumlanacak ve işlenecek. Fakat burada neyi sağlamış olacağız?
+
+258
+01:05:26,996 --> 01:05:48,996
+TC vatandaşı olanlar için ayrı şehir bilgisi veya yabancı uyruklu olanlar için ayrı tabiyet uyruk bilgisi tutmak yerine uyruk ve şehri birleştirdik. O kısım ortak kullanılıyor olacak her kayıtta. Anlatmak istediğim buydu.
+
+259
+01:05:56,532 --> 01:06:09,652
+Şimdi o zaman, burada personal stat diye geçirmişiz. En son örneğim de, evet yine personal stat ama element demişiz buna. Peki o zaman şimdi şöyle bakalım.
+
+260
+01:06:22,260 --> 01:06:33,540
+element dedik. Yine element kalsın diyeceğim. Çünkü kodun büyük kısmını tekrar yeniden kullanmak istiyorum. O yüzden şimdi yapacağım ekleme.
+
+261
+01:06:35,120 --> 01:06:43,320
+Şimdi isim tc kimlik numarası. Ondan sonra cema. Peki şunu da kapatayım bu arada.
+
+262
+01:06:47,380 --> 01:07:08,960
+Şimdi, tamam. Şimdi burada dead şey kal. Şurada yine değiştirmişiz. 5, 3, 11 şeklinde değiştirmişiz. Niye sürekli değiştirmişim bilmiyorum. Demont, yıl, 5, 4, 11 yetiyorken, 3'e, bir dakika, 2, 3, 8. Aslında zaten 4 olmalı. Doğru yani 2, 3, 8, 4 olmalı.
+
+263
+01:07:10,068 --> 01:07:25,888
+Bir anşın var. 5.4.11. 5.4.11. Tamam peki. Şimdi nasıl çevirmiş oluyorum? Şunu ayrıca bitfiyatı yapmışım. Bu date yapmışım. Peki tamam kalabilir.
+
+264
+01:07:26,648 --> 01:07:33,788
+Tabii şimdi burada özellikle bir şey değişecek mi? Şurada bilgi girerken bunlar değişebilir.
+
+265
+01:07:34,675 --> 01:07:41,675
+Bunlar da yaşabiliriz. Date'in bilmem nesi şeklinde. Tamam, yapalım.
+
+266
+01:07:41,675 --> 01:07:55,675
+Yine de şöyle bir açıklamayı düşün, düşün. Önceki örnekten, buna geçişi de esnet, yumuşat diyelim.
+
+267
+01:08:01,076 --> 01:08:25,975
+Hat yapmış oluruz bu işi. Peki. Ya da, ya şimdi zaten biz buraya kod yazmamışız bile. Ondan sonra acaba. O yüzden şu haliyle kalsa olur yani. O yüzden. Bakıyorum.
+
+268
+01:08:27,604 --> 01:08:37,604
+Sadece o buraya bir şeyi sıkıştırıyor. Sadece buradaki düzeni sağlıyor. Pekala. Düzeni sağlayınca...
+
+269
+01:08:39,364 --> 01:08:48,824
+Şimdi o zaman şu D kısmını ayrı bir struct olarak tanımıyorum.
+
+270
+01:08:55,604 --> 01:09:01,503
+D çekiyorum şunu. Adım adım gideceğim.
+
+271
+01:09:05,716 --> 01:09:13,416
+Struct Date, PS4 Date.
+
+272
+01:09:16,416 --> 01:09:20,576
+Ha pardon, title, struct zaten Date kendi içerisinde.
+
+273
+01:09:23,475 --> 01:09:47,555
+Böyle yaptığımda bakalım nelerlerde şey hata alıyorum. Tamam peki. Beklediğim şeylerdi. Bilgi girişinde şu an sızlıktım PSBIRTHDAY diye bir şey yok diyor. Ondan sonucum var şurada mesela. Şimdi bu sefer şöyle diyeceğim tabii ki. Değişiklik ne oldu? PSBIRTHDAY'in değil şeklinde demem gerekiyor. Noktada inlikle olan nokta years.
+
+274
+01:09:47,952 --> 01:09:50,212
+PC, birth, date.
+
+275
+01:09:50,212 --> 01:09:51,272
+Şimdi gel şu veya.
+
+276
+01:09:56,948 --> 01:09:57,900
+Evet.
+
+277
+01:10:01,427 --> 01:10:25,028
+Bördünün, değil mesela değil, nokta şeklinde gitmem gerekiyor herhalde. Olmadı, şeye çekeceğim.
+
+278
+01:10:25,203 --> 01:10:51,884
+O zat okla gelmişim. Ama neyse dur bakalım. Önce bir şunu düzelteyim bakalım. Ondan sonra acaba şu 25'teki o hatadan kurtuluyor muyum? Evet, kurtuldum. Geldi monta. Ama tabii ki bunu da kafamızın bu köşesinde yazalım, unutmayalım. Ok kullanma gösterimi acaba, bakın o ne diyecek? Ama o bir pointta değil. Yine hata.
+
+279
+01:10:52,532 --> 01:11:10,971
+Çıkartmasını bekliyorum. Evet, hata çıkartmak. Burada oku kullanamazsın diyor. Nokta. Evet, nokta. Bu şekilde. Evet, gördüğünüz gibi uyarım bir azaldı. Aynı mantığı şimdi oraya gideceğiz.
+
+280
+01:11:17,619 --> 01:11:25,619
+Dating Yılını ekrana yazdığı diyorum. Hepsini aynı şekilde devam edeceğiz.
+
+281
+01:11:25,619 --> 01:11:31,619
+Date.
+
+282
+01:11:31,619 --> 01:11:33,619
+Ve yine buraya.
+
+283
+01:11:33,619 --> 01:11:35,619
+Date.
+
+284
+01:11:35,619 --> 01:11:42,619
+Şimdi bu en azından Print Discipline elementteki hatalardan kurtulmuş olacağım.
+
+285
+01:11:43,667 --> 01:11:49,507
+Evet, aha. Buraya nerede? Ha, Creatist Element tek kaldı. Hemen bakalım şimdi.
+
+286
+01:11:54,515 --> 01:12:01,715
+İyi tamam. Burada point'ı kullanmamış olduğumda sevindim. Şu düzeltmeyi daha kolay yapmış olacağız. Böylelikle.
+
+287
+01:12:01,715 --> 01:12:09,876
+Evet, nokta. Evet. Şimdi peki, bunu bu kadar uzatmasak daha iyi olur.
+
+288
+01:12:09,876 --> 01:12:19,956
+Şimdi atlıktan geçeyim. Şöyle. Nereden? Her scanf'ten değil. Ha evet. Peki burada. Madem kaldık. Böyle yapalım.
+
+289
+01:12:21,587 --> 01:12:22,467
+Evet, peki.
+
+290
+01:12:24,608 --> 01:12:26,387
+Yine add.
+
+291
+01:12:26,387 --> 01:12:27,167
+Add.
+
+292
+01:12:30,688 --> 01:12:31,608
+Evet, peki.
+
+293
+01:12:33,247 --> 01:12:34,467
+Evet, add element.
+
+294
+01:12:34,587 --> 01:12:35,368
+Add element yoktu.
+
+295
+01:12:35,407 --> 01:12:37,448
+Onlar zaten element ünlü şeylerdi.
+
+296
+01:12:37,907 --> 01:12:38,567
+Şimdi bakıyorum.
+
+297
+01:12:39,087 --> 01:12:40,608
+Evet, bir derlema tam yoktu.
+
+298
+01:12:40,807 --> 01:12:42,587
+Ama, şimdi...
+
+299
+01:12:43,412 --> 01:13:11,412
+Eğer çekince hissediyorsanız, adım adım ilerlemek en iyisidir. Adım adım ilerleyelim. Şimdi şu şey kısmı, ortada eleman ekleme kısmını siliyorum arkadaşlar. Yani adım adım gideceğim, çok deneme yapacağım. Ortaya ekleyebildiğini gördük artık yani. Orada bir şeyim yok, derdim yok. Geçen dersteki bocalama alalımız ise, sadece bocalama alalımız ise, arkadaşımın hatırlattığı sağ olsun sadece bir kıvık parçası unutmamdan kaynaklı.
+
+300
+01:13:11,412 --> 01:13:18,291
+O yüzden şuraya şöyle şu yorumlarımı koyuyorum.
+
+301
+01:13:20,291 --> 01:13:29,852
+İki şey oluşursun yeter. Şu haliyle. Ama ondan sonra tabii ki bu meynidi değiştireceğim. Birisini tecrübe vatandaşı, birisini yabancı grupla yapacağım. Öyle yapacağız.
+
+302
+01:13:35,380 --> 01:13:36,380
+Çalıştır.
+
+303
+01:13:47,155 --> 01:13:55,536
+İki, iki, iki, iki, iki, iki, iki, iki, iki. Tamam, yani bir skatımız yok.
+
+304
+01:13:59,220 --> 01:14:10,760
+Date yapısını düzeltebildik. Ama esas amacımız o değildi. Esas amacımız Union yapmak. Şimdi Union'a devam edeceğiz.
+
+305
+01:14:13,260 --> 01:14:17,840
+Evet, geldik şimdi buraya. Esas kısım bu.
+
+306
+01:14:32,275 --> 01:14:45,735
+Bu arada acaba... Ha o şeyin tab sekmeni hatası bu. Yani şey o kadar akıllı değil. Bazen boşluklarla his alıyor ediyor. Özellikle devsiz tipi.
+
+307
+01:14:48,435 --> 01:14:57,536
+Peki şimdi ekledim. Bu kişi tütece vatandaşı mı? Sıfırsa değil, bir ise tüce vatandaşı şeklinde.
+
+308
+01:14:59,315 --> 01:15:01,099
+Gerçi şimdi buradan...
+
+309
+01:15:05,268 --> 01:15:24,068
+Şimdi normal nedir? Benim çalışanlarının büyük çoğunluğunu zaten aslında Türkiye cümle eti vatandaşı olmasını bekliyorum. Yabancı çalışan sayının az olmasını bekliyorum. Bu yüzden default olarak bir işe aldığım kişinin TC vatandaşı olmasını düşünmem daha mantıklı olacak.
+
+310
+01:15:28,756 --> 01:15:42,136
+Bütünün değeri normalde bir olacak hep. Ama biz bu sayısal değerlere bir değer vermezsek, default değer sıfırdı ya, acaba bunun, şimdi düşünün, TCS tezimi yoksa adını şöyle değiştirmek istiyorum.
+
+311
+01:15:42,136 --> 01:15:45,136
+Is Foreigner.
+
+312
+01:15:45,555 --> 01:16:13,435
+Yabancı mı? Eğer o işte bir ise yabancı, sıfır ise TC vatandaşı. Ama o hem kodu çok fazla değiştirmeme yol açacak hem de yani sırf bir default değeri daha uygun olsun diye böyle bir değişiklikle gitmeye gerek yok. Zaten BBG1'den beri, bunu verdiğim zamanlardan beri ki diğer hocalar da aynı şekilde gidiyor, default değer, ilk değer atmanın önemini sürekli vurguluyoruz.
+
+313
+01:16:13,555 --> 01:16:36,675
+Buna da hep dikkat etmemiz gerektiğini söylüyoruz. Hepimiz de dikkat ederek gideriz. TC Sitesim 1 olayını böyle bu şekilde tutmaya devam ediyorum. Ama mantığımız genelde düz mantık olması yararlıdır. TC Sitesim. O zaman demek ki 0 ise değil, 1 ise TC Sitesim'dir. Şeklinde düşünmemiz lazım. Ona göre kodun geri kalanını hep yazacağım.
+
+314
+01:16:42,323 --> 01:16:58,203
+Şimdi bu kişinin TC vatandaşı mı değil mi? Artık bilgisine girerken ona göre ilerlemem gerekecek. Ve hepsine bu açıdan bakacağım şimdi. Önce Create List elementten gitmek istiyorum.
+
+315
+01:17:00,343 --> 01:17:02,623
+Buraya soracağım. Değileceğim ki.
+
+316
+01:17:11,220 --> 01:17:13,220
+Türkçe
+
+317
+01:17:13,220 --> 01:17:15,220
+Citizen
+
+318
+01:17:15,220 --> 01:17:17,220
+Ah, ben elterim. Yes, no.
+
+319
+01:17:21,300 --> 01:17:23,380
+şeklinde sorsun.
+
+320
+01:17:24,619 --> 01:17:25,460
+Ondan sonra
+
+321
+01:17:25,460 --> 01:17:28,440
+dersin sonra da diyelim ki
+
+322
+01:17:28,440 --> 01:17:30,279
+dur şey alalım.
+
+323
+01:17:30,619 --> 01:17:32,560
+Bir karakter alalım.
+
+324
+01:17:33,020 --> 01:17:34,680
+Ki onu da şey yapalım.
+
+325
+01:17:34,680 --> 01:17:36,600
+Yok pas değil de şey yapalım.
+
+326
+01:17:39,279 --> 01:17:41,060
+Geç yaş kullansak
+
+327
+01:17:41,060 --> 01:17:42,579
+o bir problem
+
+328
+01:17:42,579 --> 01:17:44,020
+teşkil ediyor muydu?
+
+329
+01:17:44,460 --> 01:17:45,039
+Neyse bakalım.
+
+330
+01:17:48,435 --> 01:17:50,435
+Bu ne?
+
+331
+01:17:54,068 --> 01:17:55,347
+0-1 soralım.
+
+332
+01:18:01,011 --> 01:18:17,011
+Bir yes şeklinde ilerlemek istiyorum. Tabii şimdi charge, onu al, et. Dur bakalım. Eşit eşit e, o eşit eşit e, o öyle yapabiliriz herhalde ya.
+
+333
+01:18:19,011 --> 01:18:20,011
+Yes no.
+
+334
+01:18:24,756 --> 01:18:26,756
+Olmaksa şeye çeviriz.
+
+335
+01:18:26,756 --> 01:18:28,756
+Şuraya da bir...
+
+336
+01:18:28,756 --> 01:18:33,756
+Peki şimdi var o int gerekecek. Onu zaten kullanacağım.
+
+337
+01:18:33,756 --> 01:18:35,756
+Şöyle...
+
+338
+01:18:42,996 --> 01:18:46,815
+Bu da S O dersen bizden fazla şekerse
+
+339
+01:18:46,815 --> 01:18:48,336
+taşma olur mu? Neyse ya
+
+340
+01:18:48,336 --> 01:18:54,155
+S
+
+341
+01:18:54,155 --> 01:18:55,416
+bir gün
+
+342
+01:18:55,416 --> 01:18:57,536
+Ant C
+
+343
+01:18:57,536 --> 01:19:00,275
+Bakın burada bir derdimin hatası verecek mi?
+
+344
+01:19:00,355 --> 01:19:01,275
+Bana merak ediyorum.
+
+345
+01:19:02,475 --> 01:19:04,016
+Uymuyor demiyor.
+
+346
+01:19:05,587 --> 01:19:12,247
+Ama çok şeye girersem taşmaya sebep olur mu bilmiyoruz. Bakacağız. Neyse. Çok da önemli değil bu aşamada.
+
+347
+01:19:30,644 --> 01:19:34,863
+Şimdi bunu bir yabancı vatandaş olarak işleyeceğiz.
+
+348
+01:19:40,564 --> 01:19:41,604
+Bu arada nasıl diyelim?
+
+349
+01:19:43,744 --> 01:19:46,104
+Bu sefer, ön taraf.
+
+350
+01:19:48,104 --> 01:19:51,784
+Şimdi ne diyorduk? Bu sefer, ha bir dakika.
+
+351
+01:19:52,444 --> 01:19:55,484
+TC kimlik numarasından önce bunu soralım şimdi.
+
+352
+01:19:55,623 --> 01:19:59,644
+Yoksa burada TC kimlik numarasını demeyeceğiz de bu pasaport numarasıdır diyeceğiz.
+
+353
+01:20:00,000 --> 01:20:03,960
+Bu kısımları oraya koymak, eklemek istiyorum.
+
+354
+01:20:04,920 --> 01:20:10,180
+Ya da şey dedi, stc.no.o.slash.pasaport.no diyebilirim.
+
+355
+01:20:10,940 --> 01:20:15,219
+Böylece kod sahasını da biraz daha az değiştirmiş oluruz.
+
+356
+01:20:15,899 --> 01:20:19,440
+Yani kod sahasını değiştirmenin bir şey yok da, sakıncası yok da,
+
+357
+01:20:19,440 --> 01:20:27,420
+önceki örneklerle karşılaştırarak gitmeyi yaparken bu eklemeler sona eklemeli.
+
+358
+01:20:28,000 --> 01:20:32,059
+Gitsin diye düşündüğüm için öyle gitmek istiyorum.
+
+359
+01:20:36,148 --> 01:20:41,747
+Şenol, flash, haspot no.
+
+360
+01:20:45,395 --> 01:20:56,415
+Evet, diyelim. Şimdi o zaman ne diyorduk? Bu bir yabancıysa, şey ne? Nationality'ni soracağız.
+
+361
+01:20:56,415 --> 01:21:11,275
+What? Onality of the person diyelim. Ondan sonra diyelim ki...
+
+362
+01:21:11,347 --> 01:21:18,807
+Scan F. Şöyle gidelim. Bir saniye arkadaşlar.
+
+363
+01:21:40,467 --> 01:21:41,608
+Arada.
+
+364
+01:21:44,756 --> 01:21:46,396
+Kopya bir dönemi bir nabım bak.
+
+365
+01:21:52,372 --> 01:22:08,332
+Al, koy. Evet string olacak. Ama yapacağım şey, tc'nin o değil, nasıl tanımlamıştım. Location'ın nationalities.
+
+366
+01:22:12,532 --> 01:22:17,532
+Şimdi bu pointer değil, o yüzden nokta demem gerekiyor.
+
+367
+01:22:20,532 --> 01:22:31,032
+Evet, peki. Şimdi yalnız bu, evet tamam string aldım. Önce ok olarak gittim. O açtığımızı itir. Location. Böyle yazınız.
+
+368
+01:22:32,412 --> 01:22:38,432
+Peki, doğru yazdığımı düşünüyorum. Bakalım, tamam derleme hatası yok. Bu şekilde devam edeceğim.
+
+369
+01:22:43,731 --> 01:22:55,672
+Else diyeceğim. Evet, değişen sahne şöyle buydu. Bu sefer de don şehrini soracağım diyeceğim. Mesajım değişecek ve erişim biçimim değişecek.
+
+370
+01:23:05,363 --> 01:23:08,163
+Peki, şu.
+
+371
+01:23:12,083 --> 01:23:17,603
+What is the birth city of this person?
+
+372
+01:23:18,563 --> 01:23:21,123
+Bunda bu sefer şey city of birth.
+
+373
+01:23:29,203 --> 01:23:53,203
+Aslında ben buraya ne işine elektri olarak bıraksaydım da fark etmeyecekti. Aslında aynı alana yazıyor ve ikisi de çar. Yani değişen çok bir şey yok aslında. Şeydeki gibi değil. Hani örneğimde iki çare karşılık bir tam sayı falan gibi bir örnek değil. O yüzden aslında ne işine elektri olarak bıraksaydım da bir problem olmayacaktı aslında.
+
+374
+01:23:56,180 --> 01:24:22,760
+Evet. Haa şeyi unutmayalım. Şu alanı set etmeyi unutmayalım. Az kaldı. Gidiyordu. Kaçıyordu aladan. Onu ekleyelim. Evet. Formül ise hemen şeyi de ekleyelim. Sonunda başa. Başa eklemek daha doğrudur diye düşünüyorum. Peki P. Ne demiştik ona? T.C. Citizen. Şöyle demiştik.
+
+375
+01:24:24,212 --> 01:24:26,212
+Teknikar şurada.
+
+376
+01:24:26,212 --> 01:24:29,212
+Teşit sıfır.
+
+377
+01:24:29,212 --> 01:24:33,212
+Ötkü sen de bir devir.
+
+378
+01:24:38,100 --> 01:24:41,004
+Evet, peki. Şimdi...
+
+379
+01:24:43,412 --> 01:24:51,032
+Tamam, bir problem yok. Şimdi elemanları yazdırırken bana göre yazdırırım.
+
+380
+01:24:51,032 --> 01:24:57,112
+İşte bu yabancı. Şimdi bakalım main'de hangisinden gidiyorduk?
+
+381
+01:24:57,372 --> 01:25:02,791
+Jam Print Element P'den gidiyorduk. Bu değerlerini de değiştireceğim tabii ama önce şu Print Element P'yi değiştireyim.
+
+382
+01:25:02,891 --> 01:25:05,811
+Sonra ötkisini de değiştiririz. Bu şey değil. Problem değil.
+
+383
+01:25:09,747 --> 01:25:19,747
+Bu sefer tc-kimit numarasıdır demeyeceğim, pasaport numarası şudur filan şeklinde diyeceğim için print element epey farklılaşacak.
+
+384
+01:25:21,747 --> 01:25:25,747
+if-ersini buraya koyacağım şimdi.
+
+385
+01:25:26,747 --> 01:25:36,652
+if, işte şeyin, eme-p'nin, ne demiştik? tc-stism.
+
+386
+01:25:40,692 --> 01:25:45,731
+Eşit eşit bir ise farklı olacak. Aksi takdirde farklı olacak.
+
+387
+01:25:52,467 --> 01:25:54,467
+Şimdi...
+
+388
+01:26:03,220 --> 01:26:13,220
+Türk İş Employee is born in...
+
+389
+01:26:13,220 --> 01:26:19,220
+Şantiyel Jack'in tutmasını yazdırmıyorum. Çok gert değil.
+
+390
+01:26:19,220 --> 01:26:23,220
+Sonopinit listede onu bütün bilgiyle yazdıyoruz bu sefer.
+
+391
+01:26:30,676 --> 01:26:36,976
+S ve dolmuşehrine yazıyor olacak. En sona da, onu da ekleyeyim.
+
+392
+01:26:36,976 --> 01:26:44,976
+Mp, ne demiştik? Ha, şeysi. Location'ın...
+
+393
+01:26:44,976 --> 01:26:54,576
+Değil mi? Evet, böyle.
+
+394
+01:26:56,627 --> 01:27:00,087
+O zaman bunu da şöyle kaydırayım.
+
+395
+01:27:01,347 --> 01:27:06,387
+Evet, aksi takdirde de benziyor.
+
+396
+01:27:08,207 --> 01:27:09,547
+Ama şöyle olacak bu sefer.
+
+397
+01:27:11,587 --> 01:27:16,047
+Bu sefer %s şu uyruklu employee.
+
+398
+01:27:16,047 --> 01:27:19,967
+Bu sefer in demeyeceğiz.
+
+399
+01:27:21,716 --> 01:27:27,796
+Şunu sileceğim. Ve bu sefer de şey olmuş olacak. Şu Amplocation Nationality.
+
+400
+01:27:28,456 --> 01:27:33,775
+Nationality. Ah ah şunu düzelteceğim aslında. Pardon bu Nationality kalacak da.
+
+401
+01:27:33,775 --> 01:27:37,876
+Çok da en değil. Çünkü nihayetinde aynı şekilde ulaştığımızı hatırlatırım.
+
+402
+01:27:39,296 --> 01:27:41,236
+Şimdi şunu şuradan.
+
+403
+01:27:43,028 --> 01:27:50,248
+Kesiyorum. Ve bu sefer şey buraya ne işin etti ama buraya şey doğum şehri. City of Brought.
+
+404
+01:27:54,836 --> 01:28:07,736
+Evet, şimdi oldu. Ne düşünüyorum? Bakalım derleyici de benimle aynı fikir. Şimdi şu print listi düzeltelim.
+
+405
+01:28:11,123 --> 01:28:19,603
+Şimdi, İV yazarken biraz daha az süsleme yapabilirim.
+
+406
+01:28:19,603 --> 01:28:25,844
+name, tcno falan filan olsun. Ondan sonra direkt sonuna ek eklemek istiyorum.
+
+407
+01:28:25,844 --> 01:28:36,564
+Şimdi, ha aniyedir illa bir if olacak. Slash n demesin ondan sonucuma.
+
+408
+01:28:38,676 --> 01:28:44,676
+Sadece şöyle yapayım şimdi. Tekrar printf koyuyorum. Ama if ile tabii ki.
+
+409
+01:28:50,676 --> 01:28:59,676
+p'nin yakan kısmı hemen aynı olacak da. tc sitasının eşit eşit birisi.
+
+410
+01:29:00,676 --> 01:29:02,676
+Burada kılık bağlantıza gerek yok.
+
+411
+01:29:03,676 --> 01:29:05,292
+Teknik komut koyacağım.
+
+412
+01:29:06,163 --> 01:29:33,163
+Evet, o zaman şimdi ne diyeceğim? Bu eğer şurada doğmuştur diyeceğim. Ha, Bonn'in City veya Bonn'in, ha ama şey, şu uyduk diyor. Yani yabancı uyduk buysa, işte diyeceğim örneğin işte İngiltere'ye ama Bonn şehrini ilgilenmiyorum şeklinde.
+
+413
+01:29:34,579 --> 01:29:50,619
+Pardon. Ne diyorum? Ha, ne diyorum? Ha, tl ise o zaman born in this slash in notimul.
+
+414
+01:29:50,619 --> 01:29:59,059
+Ha, virgül. O zaman p'nin neyseydi? Locations diyor. Bördür.
+
+415
+01:30:03,796 --> 01:30:06,796
+S
+
+416
+01:30:11,380 --> 01:30:14,380
+O zaman şöyle yapalım. Şükürünü tefnatayım.
+
+417
+01:30:47,380 --> 01:31:08,180
+Evet. Her ikisinde, yani print list ve print element hepsinde de ilgili değişiklikleri yaptım. Umarım bir derdeme hatam yoktu. Yok. Şimdi main metodum da add element, create list element. Onu da create list element de bunları koymuştum. Çalıştırabilirim bakalım.
+
+418
+01:31:15,667 --> 01:31:18,207
+Bu bir bir bir Türk olsun.
+
+419
+01:31:44,372 --> 01:31:45,372
+Pisane.
+
+420
+01:31:45,372 --> 01:31:46,372
+Aka da şey?
+
+421
+01:31:46,372 --> 01:31:47,212
+Pisane.
+
+422
+01:32:05,652 --> 01:32:14,192
+Evet arkadaşlar, şimdilik devam ediyorum. Örneğe kaldığım yerden, pardon arası da acil durum olabilir. O kadar acil olmamakla birlikte bir çocuk için acil bir durum olunca.
+
+423
+01:32:17,332 --> 01:32:24,952
+Peki, şimdi bu arada şeyi unutmayayım. Evet, kalk derdim. Şimdi bu ABC'li bir şey olabilir.
+
+424
+01:32:29,555 --> 01:32:46,175
+İki olsun mesela. Bu iki iki bin dokuz yüz yediklikte doğmuş olsun. İzlif sözcüsü no diyorum. Bu sefer ne işin eriti ne British an olsun.
+
+425
+01:32:47,028 --> 01:33:05,288
+Bakalım. Birincisi, bir dakika bir fiyat. Türkiye, Türkiye, Türkiye, Türkiye, employ bilmem ne. Yunus Borne'in gelibolu. Ötekisi British Employee'in bilmem ne. Falan falan. Bir dakika ben öyle mi düşünmüştüm yalnız? Bir bakayım şimdi.
+
+426
+01:33:10,612 --> 01:33:36,211
+Tamam, Türk Şempleri, Yabancı Empleri. Tamam, doğru yazmışım. Yani yanlış bir yerlerden yanlış bir alanı mı getirip koydu? Yok, tamam. İstediğim gibi yanlış. Önce Türk Şempleri veya bilmem ne, Yabancı Empleri falan şeklinde deyip çıkıp devam ediyoruz. Evet. Peki güzel. Şurada geri bulduk dedi. Ama açıkçası da şu uyduktu dedi. Böylelikle işi toparladık. Çok şükür. Evet.
+
+427
+01:33:36,815 --> 01:33:42,155
+Peki, şimdi sizlerden sonra anlayayım arkadaşlar. Bu ana kadar yaptığınız konularla ilgili.
+
+428
+01:33:46,963 --> 01:33:48,923
+Bunu ayrıca saklamak istiyorum.
+
+429
+01:33:50,703 --> 01:33:52,304
+Siz soru düşünürken.
+
+430
+01:33:59,828 --> 01:34:00,828
+Teşekkürler.
+
+431
+01:34:21,140 --> 01:34:29,540
+Evet, yaptığımı da düşeceğim. Şöyle, nefli notum varmış. Hayır, müşahattı. Tamam, çok şey bir problem değil.
+
+432
+01:34:33,540 --> 01:34:36,492
+Ceyartı kodladın diyeyim artık.
+
+433
+01:34:45,300 --> 01:34:46,199
+Kötler bir sinin de.
+
+434
+01:34:46,619 --> 01:34:47,760
+[öğrenci] mazluması kodlar.
+
+435
+01:35:03,699 --> 01:35:15,379
+Peki, soru yoksa olmayabilir. Yani aşağıda zor değil ama her zaman için soru gelebilir. O yüzden benim görevim size hatırlatmak. Sus sorarsınız, ben de hatırlatırım.
+
+436
+01:35:15,379 --> 01:35:26,859
+Peki. O zaman Recursion'a girebiliriz arkadaşlar. Öz dinleme Türkçesi. O şekilde söylüyoruz.
+
+437
+01:35:28,500 --> 01:35:41,500
+Bir fonksiyon kendi kendine çağırıyorsa buna öz iğneleme diyoruz. Burada bir örnek vermişiz işte. Bir recurs yani.
+
+438
+01:35:43,604 --> 01:36:05,443
+Kendini iğnele, öz iğnele diye bir fonksiyon var. Bir statik değişken tanımlamışım. Bir demişim K'a bir. Şimdi dikkat edin, hatırlarsanız bir fonksiyon içerisinde değişkenin statik olarak tanımlarsak o değişken fonksiyon her çağrıldığında bir önceki değerini koruyarak devam eder.
+
+439
+01:36:05,876 --> 01:36:28,215
+Normalde böyle bir şey olmuyordu. Statik yazmasaydık. Recurse fonksiyonun her çağrışında hep count bir oluyordu tekrar. Ama bu da şimdi statik dediğim için bu bir olarak tekrar başa dönmeyecek. Eski halini koruyacak. Sayıyı yaz diyorum. Ondan sonra sayıyı bir arttırıyorum. Tekrar recurs diyorum. Bir daha fonksiyon çağrılıyor.
+
+440
+01:36:30,068 --> 01:36:44,427
+Sayı daha evvel birdi ama ikiye arttırıldı. Bir yazdı ama count artı aldı ikiye oldu. Ondan sonra iki yazdıracak, üç olacak, tekrar çağıracak. Üç yazdıracak, dört olacak, tekrar çağıracak. Bu şekilde devam edecek. Ama ne zamana kadar?
+
+441
+01:36:45,876 --> 01:36:59,635
+Belliyemiz sınırslı olsaydı sonsuza kadar devam edecekti. Recursif fonksiyonlar yazarken arkadaşlar bu şekilde sonsuz döngüye girmemeye dikkat etmeliyiz. Tabii ki sonsuz döngü olmayacak da. Şimdi birazdan göstereceğiz.
+
+442
+01:37:00,851 --> 01:37:26,912
+Şimdi her bir fonksiyon çağrımında bellekte yeni bir alan ayrılıp yığın belli çağıran fonksiyonun durum bilgisi aktarılıyor ve yeni fonksiyon için alan açılıyor şeklinde durumumuz var. Bir çağıran fonksiyon geri döndüğünde de yığından pop edip bir geri döndüğümüz fonksiyondaki değişkenlerin durum bilgisine geri dönüyoruz.
+
+443
+01:37:28,851 --> 01:37:36,212
+İçin, bu stack memory bitene kadar bu fonksiyon kendi kendine içenlere devam edecek. En sonunda da bir hata duracak.
+
+444
+01:37:36,212 --> 01:37:46,152
+O yüzden mutlaka bu rekürsif fonksiyonlarda uygun bir durma noktası, sonlanma noktası koymamız gerekmektedir.
+
+445
+01:37:46,792 --> 01:37:56,152
+Peki, neden rekürsifliğe ihtiyacım var? Önce şu çalışma mekanizmasını anlatayım, ondan sonra örnekleri geçeriz.
+
+446
+01:37:56,500 --> 01:38:07,100
+Şimdi, hatalı olmakla birlikte şu örneğin nasıl çalıştığına bakalım. May metodu recurs fonksiyonunu çağırıyor. Recurs fonksiyonu da az önce bahsettiğim şekilde ilerliyor.
+
+447
+01:38:09,300 --> 01:38:18,199
+İlk başta main metodunu çağırdığımızda zaten aslında derde için main metodu için yanında bir alan ayırıyor.
+
+448
+01:38:18,199 --> 01:38:30,500
+Ve işte o şeydeki aslında bunu çağırdığım anda mı ayırıyor yoksa acaba ikinci fonksiyonu çağırırken mi main'i ayırıyor? Bence ilk andadır.
+
+449
+01:38:35,444 --> 01:38:58,964
+Evet, ayrılıyor gerçekten. Bir program main ile çalışmaya başladığında, bu main içerisinde tanınladığım bütün değişkenleri tutabilecek bir beynelik alanı ayrılıyor yılımızda. A şıkkında, A parçasında olduğu gibi. Ne zaman main içerisinde bir func bir konfiyonu çağırdı?
+
+450
+01:38:59,391 --> 01:39:12,152
+Örneğimde request demişim ama bu başka. Diyelim ki main içerisinde birkaç değişken değiştirme konutları falan var. Ondan sonra diyelim ki sonuç bir de bir fonksiyon çağırdık. Kodda yarana. O zaman ne oluyor?
+
+451
+01:39:13,268 --> 01:39:24,807
+Ek bir alan ayrılıyor yorum bellekte. Ki o ek alan da funç 1'de tanımlanan tüm değişkenleri saklayacak kadar bir alan ayrılmış oluyor.
+
+452
+01:39:29,524 --> 01:39:41,804
+Yığının üstünde bu fonksiyonun, fonksiyon birin bilgileri var. Yığın veri yapısını hatırlarsanız yığın hep sadece en üstüne erişiyorduk. Aşağılarına gidemiyorduk şeklinde yapı hatırlayın.
+
+453
+01:39:42,404 --> 01:39:55,924
+Ayrıca tabii bu sadece fonksiyon birin içerisindeki geçici değişkenleri değil, onun çeşitli parametreleri varsa fonksiyon parametreleri, onları da saklanacak verilere dahildir.
+
+454
+01:39:57,524 --> 01:40:10,184
+Fonksiyon 1 tamamlandıktan sonra stekten pop edip atılıyor. Ondan sonra main kaldığı yerden devam ediyor.
+
+455
+01:40:10,184 --> 01:40:23,204
+Eğer fonksiyon 1'in içerisinde bir fonksiyon 2 çağırılıyor olsaydı, o zaman yine bu sefer fonksiyon 2'nin parametreleri ve fonksiyon 2'nin değişkenleri için yeni bir alan daha ayrılacaktı yılın üstünde.
+
+456
+01:40:23,503 --> 01:40:46,483
+İşte bu şekilde fonksiyon çağırma, hip memory yanlış hatırlamıyorsam diye de şey diyordu, adlandırıyordu. Bu alan direktli fonksiyon çağırdıkça, iç içe fonksiyon çağırdıkça doluyor. O fonksiyonlar bittikçe de boşalıyor. Bu şekilde bir çalışma biçimi var.
+
+457
+01:40:52,787 --> 01:41:11,447
+Ve bu arada tabii ki şey de olabilir. Bir mallok, carloç gibi bir şey çağırdığımda, bir bellek ayırma çağırdığımda belki o ayran bellek şu an o yığın için yanımda taşabileceği bir alan olmuş olabilir.
+
+458
+01:41:17,779 --> 01:41:26,539
+Mallok'la bellek ayırdığında orada farklı farklı değerler alabiliriz şeklinde konuşmuştuk. Onu da bir ufak hatırlatma yapmış olalım.
+
+459
+01:41:28,559 --> 01:41:34,599
+Pekala. Şimdi gelelim doğru dürüst bir rekürsif hesaplama örneğine.
+
+460
+01:41:34,599 --> 01:41:44,679
+Şimdi bazı algoritmalar ya da bazı problemlerin çözümünü rekürsif olarak düşündüğünüzde daha doğal düşünebiliyorsunuz.
+
+461
+01:41:44,724 --> 01:42:05,264
+O zaman reküsyonu kullanın. Ama bana her zaman bir argümetmeyi düz düşünmek, reküsyonu düşünmekten daha kolay gelmiştir. Bu belki de bir insan hangi yeteneğini daha çok kullanırsa, ona daha çok alışır, ezberler ve daha rahat tekrarlar ya, belki de ondan kaynaklanmaktadır.
+
+462
+01:42:06,083 --> 01:42:12,384
+Fakat bazen öyle algümetmeler var ki bunların içerisinde şey dahil.
+
+463
+01:42:12,724 --> 01:42:14,184
+Ne?
+
+464
+01:42:15,864 --> 01:42:29,284
+Quicksort dahil. Yani karmaşıklığı o en kaleden daha iyi olan, o en log'en olan sarama algoritması dahil olmak üzere regrasyon bazen bize ciddi oranda performans kazandırabiliyor.
+
+465
+01:42:30,864 --> 01:42:38,083
+Ama o tip algoritmaları düşünüp kodlamak birazcık daha zor oluyor.
+
+466
+01:42:38,579 --> 01:42:56,780
+Faktöriyel örneğimize bakalım. Faktöriyeli hatırlarsanız n faktöriyel eşitir n çarpı n-1 çarpı nokta nokta nokta 1'e kadar gidiyor. Veya tersten de düşünebilirsiniz n faktöriyel eşitir 1 çarpı iki çarpı nokta nokta nokta n'e kadar gidiyor.
+
+467
+01:42:57,203 --> 01:43:12,423
+O zaman biz eğer bu formülü bu şekilde düşündüğümüzde, yani bir adımın değeri kendinden önceki adımlar cinsinden ifade edilebiyorsa, o zaman bu problem rekürsif olarak çözülmeye uygun bir problemdir anlamına geliyor.
+
+468
+01:43:12,423 --> 01:43:25,203
+Ve o zaman diyebiliriz ki, eğer n1 gelmişse bir faktör yer 1'dir. Direkt return 1 diyorum. Ki bu bize aynı zamanda uygun bir sonlanma noktası.
+
+469
+01:43:25,203 --> 01:43:53,003
+Aksi taktirde N çarpı bunun bir eksiğinin faktöriyelini hesaplar şeklinde rekürsiyona giriyorum. Ve main inşaatı diyelim ki 5 faktöriyeli hesaplayacağım zaman faktöriyel 5'i çağırdığımda şimdi ilk başta nerede bakayım şöyle gerçi yığın demiştik ama buradaki anlatma sıramız kolun akışlaması sırası.
+
+470
+01:43:53,203 --> 01:44:21,163
+Öncelikle faktör yerleş çağrılmış oluyor. Faktör yer 5 ne yapıyor bana? N5 geliyor. 5 birden küçük eşit mi? Hayır değil. Erse giriyorum. 5 çarpı faktör yer 4 hesabı gelecek. O zaman faktör yer bu sefer 4 parametresiyle çağrılıyor. 5 çarpı faktör yer 4'ü hesaplamaya çalışılıyor. Bu sefer N4 oluyor. 4 birden küçük eşit mi? Hayır.
+
+471
+01:44:21,203 --> 01:44:25,483
+Bu sefer 4 şartı faktörler 3 hesaplanıyor.
+
+472
+01:44:26,036 --> 01:44:44,756
+Hesaplanmak için çağrıda bulunuluyor. Onu izliyor. 3 çarpı faktöyel 2'nin hesaplanması geliyor. Onu da 2 çarpı faktöyel 1'in hesaplanması geliyor. Faktöyel 1 için n1 olarak çağrılığında 1 birey eşit. O yüzden 1 geri dönüyor.
+
+473
+01:44:44,756 --> 01:44:52,656
+Ve bu bana 2 çarpı 1'i faktöyelin bir önceki çağrılmış hali 2 çarpı 1'i çarpıp geri döndürüyor.
+
+474
+01:44:54,036 --> 01:45:11,416
+Daha bir önceki hali 2 çarpı 3'ü hesaplayıp geri döndürüyor. 6. Otekisi 4 çarpı 6'yı hesaplayıp döndürüyor. 24. Ve bu da 24 çarpı 5'i çarpıp 120 olarak geri döndürüyor. Bu şekilde bir çalışma biçimi oluyor.
+
+475
+01:45:12,076 --> 01:45:20,716
+Şimdi yazar koştururuz. Burada bir tek şunlara dikkat etmek lazım. Faktörler çok hızlı büyüyen bir sayı.
+
+476
+01:45:22,036 --> 01:45:37,296
+Saatlıkla 6 yaptığımız zaman da, kağıt 12 adı var, 1, 720 oluyor. Gitgide int sınırına çok yaklaşan bir sayı oluyor. O yüzden 10 faktörer, 15 faktörer falan bizim alanımızı aşacaktır büyük ihtimalle. Tam sayı alanımızı aşacaktır.
+
+477
+01:45:38,899 --> 01:46:02,079
+Yığın belli şey etmez, komple tüketmez ama ortaya çıkacak sayı artık bitler farklı şekilde hesaplanacağından doğru olmayan sonuçlar üretecektir. Program patlamaz büyük ihtimalle yeni faktörüyle hesaplamaya çalışacak ama bu intin sınırlarından daha büyük bir sayı olacağı için çıkan sonuç doğru bir şey olmayacaktır.
+
+478
+01:46:03,604 --> 01:46:30,323
+Nereyse alıştırma olarak işte Fibonacci numaralarını en azından bunu hesaplayın arkadaşlar. Binary Search'u da aslında reklusif olabilir. Çünkü hatırlayın Binary Search'u ikili aramayı. Öncelikle tabii sırada dizide arama yapacaktık hatırlarsınız. Dizinin ortasına bakıyoruz. Önce ortadaki eleman aradığımız eleman mı? Evet ise zaten bitti.
+
+479
+01:46:31,604 --> 01:46:46,863
+Yok baktığımız eleman ortalık elemandan daha küçükse artık bu sefer dizinin soluna bak şeklinde. Yok aksi takdiri dizinin sağına bak şeklinde bir çalışma biçimi vardı. Bu da rekürsif olarak kodlanmaya bugundur.
+
+480
+01:46:49,043 --> 01:47:01,143
+Depth First Search'u ağaçlarda arama algoritmasıydı, hatırlarsınız. Ama onu da veri yapıları dersinde gördükten sonra, eğer görmüşsünüz, onu da kodlayabilirsiniz.
+
+481
+01:47:01,684 --> 01:47:18,784
+Hatta buraya bir tane daha örnek eklemek istiyorum. Fahri Vatan Sıra Hoca'nın soru kitabını hatırlarsınız. Orada bazı iterasyona yönelik algoritmalarda var. İsterseniz onlara da kodlamaya çalışabilirsiniz.
+
+482
+01:47:18,784 --> 01:47:27,604
+Onun dışında işte lineerci bir türünden dersleri almışsanız onlarda da reküsif ya da en azından.
+
+483
+01:47:28,307 --> 01:47:43,768
+İteratif hesaplanabilecek algoritmaları rekültüfe çevirebilirsiniz. Örneğin bir şey vardı neydi? Unutmuşum nada. Neyse. İkinci dereceden bir bilmeyen bir denklemin çözümü için bir ilk çözüm.
+
+484
+01:47:44,372 --> 01:47:56,872
+Atıyorduk kafadan. Ondan sonra her iterasyonda biraz daha yerine koyduk. Olmuyordu. O yüzden bir iterasyon yapıyorduk bir şeyleri değiştirerekten.
+
+485
+01:47:56,872 --> 01:48:11,131
+Çok özür dilerim. Yıllar geçti. Bu şekilde linealce bir algoritmaları da iteratif ve rükrasif ifade edilebilir. Merak etme arkadaşlarım. Bakabilirler bu konuya.
+
+486
+01:48:12,595 --> 01:48:18,875
+Şimdi çok geride getirdik. Örneği yapalım. Çalıştığını görelim. Ondan sonra alanımızı veririz.
+
+487
+01:48:20,875 --> 01:48:26,215
+Hemen çabucak kodlarımız. O yüzden bir sorun olmayacaktır diye düşünüyorum.
+
+488
+01:48:26,215 --> 01:48:30,515
+Şimdi tabii neyini sileceğiz? Şöyle epey bir şey sileceğiz.
+
+489
+01:48:35,667 --> 01:48:37,667
+Menü silleyelim.
+
+490
+01:48:45,667 --> 01:48:50,667
+Ne yapıyoruz? Factory'ye fonksiyonunu alıyorum.
+
+491
+01:48:55,667 --> 01:48:59,500
+Ve, batch Factory'yi ekrana yazdırıyorum.
+
+492
+01:49:07,507 --> 01:49:22,927
+5 faktör yeri 120 olarak doğru hesaplayabildiğini gördük. Ama eğer şey olsaydı bu mesela diyelim ki 15 faktör yer. Aşağı diye düşünüyorum.
+
+493
+01:49:27,091 --> 01:49:53,551
+En azından patlamadı. Yani şu sayı büyük ihtimalle doğru değildir diye düşünüyorum. Bir bilimsel hesap makinesiyle aslında şey edilebiliriz. 15 faktörü. Evet, yani gördüğünüz gibi acayip bir sayı. Ülçü artı 92. 13 basamaklı sayı. İnç sınırını haydi haydi aşıyor. O yüzden tabii ki sonuç bu değil. Ama en azından program patlamadı.
+
+494
+01:49:55,828 --> 01:49:58,668
+Evet, soru soran arkadaşım var mı? Varysa buyursun.
+
+495
+01:50:06,484 --> 01:50:08,864
+Peki, o zaman 10 dakikada mısın verelim?
+
+496
+01:50:14,707 --> 01:50:20,627
+10.50. 11.00 arasını verelim.
+
+497
+01:59:31,220 --> 01:59:36,319
+Evet arkadaşlar, saati 11 ettik. Kaldığımız yerden devam edeceğiz.
+
+498
+01:59:40,319 --> 01:59:44,319
+Ufak bir notumu da düşünmüştüm ve göz konu geçtik.
+
+499
+01:59:45,819 --> 01:59:47,359
+Fonksiyon pointörlerine gelelim.
+
+500
+01:59:58,836 --> 02:00:12,636
+Fonksiyon pointer'ları epey ilginç bir konu. Main fonksiyonuna bakmıştık bu arada. Yeri gelmişti. Daha evvel yazıp denemiştik. Onu anlatıyorum.
+
+501
+02:00:22,612 --> 02:00:48,271
+Geğişik problemleri daha esnek çözmemize yarayan bir özellik. İşe her ne kadar ek bir karmaşıklık sivrisi getirse de yine de zor problemlerin çözümü için kabul edilebilir bir ek karmaşıklık olarak değerlendiriyorum fonksiyon pointerlarını.
+
+502
+02:00:48,979 --> 02:01:05,899
+Fonksiyon pointerları bana yazdığım herhangi bir fonksiyona da programatik bir biçimde aktarmayı, iletmeyi üzerinde değişik işler yapmayı sağlayan bir yöntem.
+
+503
+02:01:05,899 --> 02:01:08,420
+Örnek.
+
+504
+02:01:14,387 --> 02:01:34,747
+Şey örneğini vermek istiyorum. Jala'da artı toplama operatörünün iki anlamı var. Eğer toplama operatörünün hem sonunda hem sağında sayısal değer varsa int ya da float fark etmez. O zaman anitmetik toplama işlemi olarak davranıyor.
+
+505
+02:01:42,176 --> 02:01:49,176
+String ise o zaman metin birleştirme işi yapıyor. Aynı operatör.
+
+506
+02:01:50,163 --> 02:02:14,543
+Böyle bir şeyi nasıl CD'de diyeyim ki, Java kodunu pars edip, işte veyahut da CD'de böyle bir esneklik kazandırmak istiyorum diyelim ki. Bir metin nöfesini okuyorum diyelim ki. Orada yazan ifadeleri yürütüp çalıştık sunucu ekrana yazan kod yazmaya ihtiyacımız var diyelim ki. Ve işte bir satırda 3x5 yazıyor.
+
+507
+02:02:15,060 --> 02:02:19,340
+Öbür satırda Yunus artı Emre yazıyor.
+
+508
+02:02:20,039 --> 02:02:22,720
+Şimdi nasıl davranacağız?
+
+509
+02:02:25,380 --> 02:02:30,500
+Benim hem bir aritmetik toplama fonksiyonu olur.
+
+510
+02:02:31,155 --> 02:02:36,976
+Hem de bir string birleştirme fonksiyonu olur.
+
+511
+02:02:37,576 --> 02:02:44,496
+Elementlere bakalım. Eğer elementlerden ikisi de sayısarsa o zaman aritmetik toplama fonksiyonu mu iletirim?
+
+512
+02:02:45,235 --> 02:02:48,396
+Değerlendirmeyi yapacak olan diğer fonksiyonu mu?
+
+513
+02:02:48,396 --> 02:02:54,416
+Yok eğer öbür türlü string birleştirme fonksiyonu mu iletirim?
+
+514
+02:02:54,615 --> 02:02:57,076
+O değerlendirmeyi yapacak diğer fonksiyonu.
+
+515
+02:02:57,516 --> 02:02:58,996
+Enayiden soru geldi.
+
+516
+02:03:24,884 --> 02:03:28,884
+Üniversitesi derse açıklayacağız.
+
+517
+02:03:30,355 --> 02:03:42,715
+Sözü çağır yazı kalır kalsın. Eğer şey etmezsen de yine de o zaman hocam söz vermiştim, sözünüzde durmamıştınız diye baskıyı arttırırsınız.
+
+518
+02:03:42,995 --> 02:03:48,795
+Ama yani inşallah bu hafta sonu, bu hafta içerisinde bunlara bakacağım. Öyle istiyorum.
+
+519
+02:03:49,575 --> 02:03:54,155
+Bu pandemi döneminde ben önceliklerimi çok iyi ayarlayamadım.
+
+520
+02:03:54,899 --> 02:04:02,420
+Değişen şartlar, değişen koşullar. Kimisi daha kolay altından kalkıyor. Kimisi daha zor altından kalkıyor.
+
+521
+02:04:02,420 --> 02:04:14,159
+Bu da kabahat benim. Bu pandemi koşullarında kendime gerekli motivasyonu sağlayamadım. Mesela bundan kaynaklanıyor arkadaşlar. Ben bir sayın bir şekilde söylüyorum.
+
+522
+02:04:16,243 --> 02:04:19,323
+İnşallah aktarmış olacağım bir dahaki dersi.
+
+523
+02:04:19,783 --> 02:04:25,103
+Onun dışında bu hafta laboratuarla ilgili herhangi bir uygulama bilgisi gelmedi.
+
+524
+02:04:25,943 --> 02:04:28,963
+Bu hafta bir laboratuvar uygulaması yapmayacağız arkadaşlar.
+
+525
+02:04:29,623 --> 02:04:31,323
+Haftaya Allah kerim inşallah bakalım.
+
+526
+02:04:31,323 --> 02:04:33,344
+Ben hatırlatayım bir gün arkadaşlara.
+
+527
+02:04:33,783 --> 02:04:35,344
+Epey bir konuda biriktirmiş olduk.
+
+528
+02:04:35,923 --> 02:04:38,363
+Yani yeni bir uygulamanın zamanı geldi.
+
+529
+02:04:43,347 --> 02:04:56,988
+Bunu da şimdi yazayım. Bugün lab olmayacak da yazayım. Derse girince, tekst ayrıca gözükünce o da hemen giden arkadaşlar aşağı diye görsün.
+
+530
+02:04:58,988 --> 02:04:59,908
+Evet.
+
+531
+02:05:00,756 --> 02:05:18,676
+Peki, şimdi konuya geri dönersen, fonksiyon pointerları mantığı, fonksiyonları da bir sanki bir değişkenmiş, bir değermiş, bir işaretçiymiş gibi bir yere aktarıp, farklı yerlere aktarıp kullanmaya yol açan, yarayan bir işlevdir.
+
+532
+02:05:18,676 --> 02:05:25,476
+Şimdi tanımlamamız şöyle oluyor arkadaşlar, bunun bir fonksiyon pointerı olduğunu anlatmak üzere,
+
+533
+02:05:25,844 --> 02:05:30,244
+Fonksiyon aç parantez, kapa parantez işlemleri oluyor.
+
+534
+02:05:31,028 --> 02:05:56,248
+Ve bunu yazdıktan sonra bu pf ise benim point of to function. Fp'ye de yazabilirdik. Neyse. pf başında yazdık. Onları da bir parantez işine alıyorum. Casting işlemi gibi. Ve başında da int dediğimde bu benim geriye tam sayı döndüren bir fonksiyon tanımıdır. Şeklinde bir tanımlama yazıyor.
+
+535
+02:05:59,028 --> 02:06:06,887
+Bu olan parantezleri yazmasaydım, böyle bir tanım sanki bir allusion gibi, fonksiyon ön tanımlaması gibi bir işlem olurdur.
+
+536
+02:06:07,328 --> 02:06:17,427
+Fonksiyon ön tanımlaması yapmak istemiyorum. Fonksiyon pointer'ı tanımlamak istiyorum. O zaman yazışım bu şekilde olmak zorunda.
+
+537
+02:06:23,347 --> 02:06:35,368
+Bu fonksiyonun alacağı parametreler ise şu an belli değil. Şeyde olduğu gibi printf fonksiyonunu hatırlayın. Printf fonksiyonun değişken sayıda parametre olabiliyordu.
+
+538
+02:06:36,115 --> 02:06:47,975
+İlk parametre, String'in içerisine yazdığım %s ya da %d gibi format String'lerin sayısına göre,
+
+539
+02:06:48,355 --> 02:06:52,256
+sonraki virgülü ayrılan parametreleri bakıyordu.
+
+540
+02:06:53,256 --> 02:06:55,256
+Fonksiyon pointerları da bu şekilde.
+
+541
+02:06:55,256 --> 02:07:03,015
+Siz bir fonksiyona pointer tanımlarken, o pointer tanımladığınız fonksiyonun geri dönüş tipini bilmeniz gerekiyor.
+
+542
+02:07:04,115 --> 02:07:05,956
+gerekiyor. Parametreler sonradan
+
+543
+02:07:05,956 --> 02:07:07,115
+halledilebiliyor. Ama
+
+544
+02:07:07,115 --> 02:07:09,876
+void ise void, int ise int, double ise
+
+545
+02:07:09,876 --> 02:07:11,876
+double. O fonksiyonun return type'ı
+
+546
+02:07:11,876 --> 02:07:13,515
+neyse siz de
+
+547
+02:07:13,515 --> 02:07:15,935
+o türden bir fonksiyon
+
+548
+02:07:15,935 --> 02:07:17,336
+pointerı tanımak zorundasınız.
+
+549
+02:07:21,779 --> 02:07:39,299
+Nasıl kullanılırız? Örneklerini görelim. Şimdi diyelim ki bu fonksiyon başka bir C dosyasında da tanımlanmış olabilir. Biz örneklerimizde hep aynı C dosyasında tanımlanmış fonksiyonlardan gideceğiz ama başka bir C fonksiyonu da tanımlanmış olabilir.
+
+550
+02:07:42,996 --> 02:07:49,996
+Onu ink üniversitesi ile ekleyebildikten sonra başka dosyasında da yer alan fonksiyonlara da pointer tanımlı ediyoruz.
+
+551
+02:07:49,996 --> 02:07:55,996
+Ki öyle bir fonksiyon varmış. Parameter almıyormuş ama int geri dönmüyormuş.
+
+552
+02:07:55,996 --> 02:08:03,996
+Şimdi, az önce yansıtı gördüğümüz şekilde fonksiyon pointer'ını tanımlıyorum.
+
+553
+02:08:03,996 --> 02:08:09,996
+Ondan sonra bu fonksiyon pointer'ına fair bir fonksiyonumu atıyorum.
+
+554
+02:08:10,452 --> 02:08:35,392
+Normalde bu şekilde yapmam gerekiyor. Başka her türlü varyasyon bana hata döndürecek. İşte warning döndürecek. Bu buna kest olmadı filan filan. İşte bu acayip hatalardan birini döndürecek. Buradaki üç şey de yapamıyoruz. Doğru tanımlamam bu. O tanıma bir fonksiyon atmam ise şu şekilde gerçekleşiyor.
+
+555
+02:08:40,340 --> 02:08:56,340
+İnt olur, float olur, char olur, geri dönüş tipi. İnteger fonksiyon, if1 fonksiyonu, if2 fonksiyonu ile int dönülen fonksiyon.
+
+556
+02:08:56,340 --> 02:09:07,340
+Ve işte o türden fonksiyonlardan herhangi bir atayabileceğim bir fonksiyon tanımı ise üçüncü tanımı olmuş oluyor.
+
+557
+02:09:07,988 --> 02:09:25,488
+Bu şekilde ben bu pif fonksiyon pointerına istersem if1'i, istersem if2'yi atayabilirim. Ve pifi çalıştır dediğimde hangisini atamışsam if1'i atamışsam if2'yi çalıştıracak, if2'yi atamışsam if2'yi çalıştıracak şeklinde olacak.
+
+558
+02:09:26,948 --> 02:09:35,988
+İntil de bir float fonksiyonu var. Float fonksiyonu 1 ve char fonksiyonu 1 var mesela. Ve bunları da göstermeye yarayabilirim.
+
+559
+02:09:35,988 --> 02:09:43,488
+Diğer fonksiyon pointerlarımı ise gördüğünüz gibi ikinci ve üçüncü satırlarda tanımlıyorum.
+
+560
+02:09:45,167 --> 02:09:47,787
+Şimdi neyi yapabilirim, neyi yapamam?
+
+561
+02:09:48,728 --> 02:09:50,608
+Şimdi pif eşittir if bir diyebilirim.
+
+562
+02:09:50,768 --> 02:09:59,667
+Çünkü pif if bir ve if iki'nin geri dönüş türüyle aynı türde tanımlanmış olduğu için pif eşittir if bir diyebilirim.
+
+563
+02:10:00,000 --> 02:10:26,760
+Ama pif eşittir cf1 diyemem mesela. Her ne kadar int char'dan daha büyük bir geniş bir alan olsa da bir otomatik sarmalama yapmıyor c. Çok kuvvetli tiplemeli. Bu nedenle bir char döndüren fonksiyonunu benim int tanımladığım pointer fonksiyon pointer'ına atayamam. Tipler uyuşmuyor.
+
+564
+02:10:28,500 --> 02:10:39,340
+PFF'ye de o float durumdan IF1, IF2'yi atıyamam. O da olmaz. Ancak işte mesela PCF'ye CF1'i atayabilirim. Bu da örnekler dönüşüyor.
+
+565
+02:10:41,363 --> 02:10:59,883
+If1'i if2'ye atıyamam. Yani if1'i if2'ye bunlar fonksiyonların kendileri sabit tanımlanmış fonksiyonla, yani sabit değilim size tipi falan arkadaşımla, bunlar elle hardcorda tanımlanmış fonksiyonla constant diye geçiyor. Bu constant'ları böyle birbirine de atama yapamam, böyle bir şey de olmaz.
+
+566
+02:11:09,363 --> 02:11:13,203
+türleri birbiriyle aynı türden olmalı.
+
+567
+02:11:13,343 --> 02:11:14,863
+Insane, Float, The Float gibi.
+
+568
+02:11:19,859 --> 02:11:20,439
+Önnek.
+
+569
+02:11:26,547 --> 02:11:50,167
+Önce bir fonksiyon alerjim var. Bu yukarıda tanımlarını da biliyorum. Hiç problem değil. Sonra main içerisinde bu fonksiyonu bir işaretçi tanımlayıp işaretçi üzerinden fonksiyonu çalıştıracağım. Doğrudan çalıştırmayacağım da işaretçi üzerinden çalıştıracağım.
+
+570
+02:11:54,420 --> 02:11:55,420
+İçlem sonucu.
+
+571
+02:11:55,420 --> 02:11:57,420
+Kullanacağın sayı istiyorum.
+
+572
+02:11:57,420 --> 02:11:58,420
+N'e atıyorum.
+
+573
+02:11:58,420 --> 02:11:59,420
+Ondan sonra...
+
+574
+02:12:00,724 --> 02:12:25,564
+Pointer to function, yani fonksiyon point'ıma f1 fonksiyonunu atıyorum. O zaman şimdi ben nasıl o fonksiyonu çağıracağım? Pointer üzerinden çağıracağım. Hatırlarsanız, parantez içerisinde yazıyorum. Ondan sonra eğer herhangi bir parametre almasaydı sadece aç parantez, kafa parantez yapacaktım. Ama o fonksiyonun benden bir tam sayı parametre bekliyor.
+
+575
+02:12:26,543 --> 02:12:41,703
+Bir fazlasını hesaplayacağım olan n sayısını parametre olarak verdim. Ne oldu? Pf pointerı bana f1 fonksiyonunu a argörüyle çağırmış oldu. Yani aslında şu komutu vermekle aynı.
+
+576
+02:12:41,703 --> 02:12:51,695
+Hocam madem o komutu vermekle aynı, niye böyle uğraşıyoruz derseniz, şu verdiğim farklı amaçlarla çağırılabilecek artı operatörünü...
+
+577
+02:12:51,695 --> 02:12:54,576
+O gibi işler için işimize yarayacak.
+
+578
+02:12:55,195 --> 02:13:02,956
+İşte kontrolü tanımında burada basitçe bir artma fonksiyonu bu şekilde kodu çağırmış olabiliyoruz.
+
+579
+02:13:03,956 --> 02:13:08,135
+Bir arttırma, bir azalma da yaparız mesela. Onu da atarız, onu da çağırırız.
+
+580
+02:13:09,215 --> 02:13:10,655
+Doğru çalışığını görürüz.
+
+581
+02:13:27,028 --> 02:13:34,028
+Bu şekilde kopyalamıyorum.
+
+582
+02:13:57,876 --> 02:13:59,876
+Ve çalıştırıyorum.
+
+583
+02:14:01,876 --> 02:14:05,876
+Aslında şuna ihtiyacım yok.
+
+584
+02:14:08,876 --> 02:14:12,876
+Aynı anda daha fazla şey görelim diye.
+
+585
+02:14:13,876 --> 02:14:15,876
+Teknama sığdırayım bazı şeyleri.
+
+586
+02:14:17,876 --> 02:14:20,876
+Hatta bunun ayrı ayrı satılma olmasına gerek yok.
+
+587
+02:14:21,876 --> 02:14:23,876
+Pass to 0 yani.
+
+588
+02:14:27,444 --> 02:14:39,384
+Saygınız 98, 99. İşte gördüğünüz gibi bir şekilde çalıştırabildim. Bir de F2'm olsun. Ha, hatta F2'm ve F3'm olsun.
+
+589
+02:14:42,884 --> 02:14:44,524
+Bu tek sıtür olsun ya.
+
+590
+02:14:54,100 --> 02:14:56,819
+F2 olsun. Bu da azalsın mesela.
+
+591
+02:15:03,539 --> 02:15:16,179
+Bundan sonucuma. Bir de F3'üm ikinci parametreyi alsın. O da int olacak ama. Geri dönüş tipi.
+
+592
+02:15:16,179 --> 02:15:28,979
+int, F3, int, a, b, a'sı da.
+
+593
+02:15:30,836 --> 02:15:36,556
+Sonra eksi daha benzer şekilde olacak. Problem olmayacak.
+
+594
+02:15:36,556 --> 02:15:38,336
+Bu sayın genelis.
+
+595
+02:15:39,155 --> 02:15:44,556
+Önce diyeyim ki, fonksiyon biz...
+
+596
+02:15:45,939 --> 02:15:55,939
+Bu şekilde olsun. Ondan sonra fonksiyon 2 de çalıştırayım. Fonksiyon 2 de çalıştırmak için bu sefer diyeceğim ki bu sefer pf eşittir.
+
+597
+02:15:55,939 --> 02:16:02,939
+F2, ha şu allojin'ları tanımlama, yukarıda tanımlasaydım yine aynı şey olacaktı. Bu sefer şöyle yapalım.
+
+598
+02:16:04,939 --> 02:16:12,939
+O üçünü bir de üç satırda ayrıca oradan yemeyeyim. Bu şekilde yukarıda tanımlıyorum.
+
+599
+02:16:13,043 --> 02:16:20,043
+Ondan sonra şema. Bu sefer F2'yi atasın. Ondan sonra şema. Ve ansıvı da...
+
+600
+02:16:25,524 --> 02:16:37,024
+Bu sefer, aynı şeyi atıyorum ama F2'ye çağırmış olacak. F2 bu şekilde çıkartıyor olacak diyeceğim.
+
+601
+02:16:37,024 --> 02:16:43,024
+Şimdi ikinci sayıyı da isteyelim.
+
+602
+02:16:43,024 --> 02:16:48,024
+Bir sayı daha giriniz diyeyim.
+
+603
+02:16:48,024 --> 02:16:51,979
+Ne? O olsun.
+
+604
+02:16:54,611 --> 02:17:09,611
+Bu sefer de pf eşittir, f3 olsun ve ondan sonra eşittir.
+
+605
+02:17:09,611 --> 02:17:14,611
+Şimdi şu şekilde yıldız pf parantez fiyatının demeyi unutmuyoruz.
+
+606
+02:17:28,628 --> 02:17:35,688
+Evet. Birincisi bir atılacak ilk sayı, ikincisi bir yazıla atacak, üçüncüsü ilk sayı toplayacak.
+
+607
+02:17:42,260 --> 02:18:01,799
+Bir fazlası 6, bir eksi 4. Güzel olmadı. Boşluklar koyacaktım. Daha iyi olacaktı. Neyse. Bir de 3 girelim. Bir de 5 ve 3'ü toplayıp sonuçta 8 olarak söyledi. Ve düzgün bir şekilde bu iş çalışabilmiş olduğu durum bu.
+
+608
+02:18:04,691 --> 02:18:27,971
+Dikkat ederseniz, aynı fonksiyon pointer'a farklı fonksiyonlar atayabildim. Parametreleri farklı olan, parametre hatta listesi farklı olan. Ama tabii ki ortak noktaları geri dönüş tipleri. Geri dönüş tipleri ortak olduğu için bu üç fonksiyonun hepsini aynı türden tanımladığım fonksiyon pointer'ına atayıp o fonksiyon pointer üzerinden işi yürütebildim.
+
+609
+02:18:27,971 --> 02:18:29,471
+Bu.
+
+610
+02:18:32,979 --> 02:18:35,819
+Evet, soru sona arkadaşım var mı? Varsa buyursun lütfen.
+
+611
+02:18:46,100 --> 02:18:53,159
+Peki, sorusu olan yoksa biraz file input, output hakkında teorik konuşuruz. Ama soru var mı? Geliyor mu?
+
+612
+02:18:54,319 --> 02:18:58,840
+Hocam, tam olarak hangi durumlarda daha kullanışlı oluyor bu fonksiyon pointer'ları?
+
+613
+02:18:59,540 --> 02:19:19,840
+Fonksiyon pointer'la jenerik kod yazmaya çalıştığımızda işimize yarıyor. Yani içindeki elemanların farklı farklı türden elemanlara hitap eden ortak kod yazmaya çalıştığımızda bu fonksiyon pointer'ların işe yarayabilir.
+
+614
+02:19:27,540 --> 02:19:29,540
+Hepsinin işte ne?
+
+615
+02:19:31,156 --> 02:19:47,956
+Biraz daha karmaşıktır. Ama sadece tam sayılı bir linked list düşünün. Tam sayılı linked list için ayrı linked list kodum olmalı. Karakter verisi içeren linked list için farklı kodum olmalı. Bunlar farklı farklı.
+
+616
+02:19:47,956 --> 02:19:56,175
+Peki bunların hepsinin üstünde dolaşıp elemanlarını listeleyecek bir kod yazmak istiyorum.
+
+617
+02:19:59,156 --> 02:20:11,736
+Her kodda o elemanın türüne bağımlı olarak farklı farklı fonksiyonlar yazmam gerekecek ve her kod çağrışımda onun ilgili fonksiyonunu çağır şeklinde yazmak zorunda kalacağım.
+
+618
+02:20:11,736 --> 02:20:22,515
+Ama halbuki benim ayrı bir kütüphanede bu veri yapısı üstünde ayrı bir dolaşma ve listeleme fonksiyonum olsun.
+
+619
+02:20:24,180 --> 02:20:43,180
+Bunu ben bir çağrıyla halledebilmek istiyorum. Bir çağrıyla halledebilmek istiyorsam önce fonksiyon pointer'ımı tanımlarım. Hangi çağrıyı çağırması gerekiyorsa onu atarım. Ondan sonra çağırırım gibi. Bu örneği de çok tutmadım, beğenmedim ama yani...
+
+620
+02:20:43,827 --> 02:21:02,608
+Daha iyi örnek vermek için Java'daki generic smooth'lara ve reflection yeteneklerine atlamam gerekecek. Oralardan örnek verebileceğim. İlk o da dersin kapsamı dışında daha basit örnek veremedim. Kusura bakmayın.
+
+621
+02:21:10,708 --> 02:21:36,968
+Bunu not alayım. Bu örnek aslında sadece ne yapabileceğimizi anlatan bir örnek, neyi nasıl yapabileceğimizi. Ama nerede gerçekten çok işe yarar, onu anlatan bir örnek değil. Kusura bakmayın. Onu bulup bir ilerleyen lab oturumlarından birinde. Belki buna yönelik bir örnek yapabiliriz.
+
+622
+02:21:38,899 --> 02:22:05,399
+Function pointer'ın söz verdiği kesnikliği alayacak daha iyi bir örnek bulup notlara ekle veya ayrı lab kullanması yap şeklinde notumu alıyorum.
+
+623
+02:22:11,540 --> 02:22:19,159
+Bana bir şey başka sormak isteyen, ya da hocam şöyle bir örnektir bu işe yalan mıydı demek isteyen arkadaşım varsa buyuruz.
+
+624
+02:22:29,523 --> 02:22:30,903
+O zaman şeye gidelim biraz.
+
+625
+02:22:31,384 --> 02:22:33,123
+File input output konusuna gidelim.
+
+626
+02:22:33,123 --> 02:22:36,043
+Biraz teorisinden bahsedelim.
+
+627
+02:22:36,603 --> 02:22:38,523
+Temel kavramlarından bahsedelim.
+
+628
+02:22:38,943 --> 02:22:42,664
+Ondan sonra kod örneklerini haftaya gireriz artık.
+
+629
+02:22:47,443 --> 02:22:55,504
+İşletim sistemleri, farklı işletim sistemleri çeşitli dosyalara ve sürücülere veya
+
+630
+02:22:56,639 --> 02:23:07,639
+Dosya konumlarına veya DİS konumlarına erişmekte farklı farklı yöntemler ve farklı farklı değişik ayrıntılar içermekte.
+
+631
+02:23:07,639 --> 02:23:10,603
+O yüzden aslında...
+
+632
+02:23:10,804 --> 02:23:21,684
+Portable, yani taşınabilir olan input-output işlemleri, yani input-output işlemlerinin taşınabilir şekilde kodlamaya çalışmak gerçekten zor.
+
+633
+02:23:21,684 --> 02:23:32,344
+Hele aslında C gibi çalışılan platformun ayrıntılarına da çok bağımlı bir dilde bu daha bile zor.
+
+634
+02:23:36,275 --> 02:23:50,595
+Her platformda yazabileceğim, her uygulamada illaki verinin kılıcılığını sağlamak, yani diske yazmak, diskeni okumak konusunda illaki bir işler yapmamız gerekecek.
+
+635
+02:23:50,595 --> 02:24:04,036
+Bu bir Windows sistemdir, ana disk C'dir. Ondan sonra klasörler de birbirinden ters slash ile ayrılır. Yok bu bir Linux dağıtımıymış.
+
+636
+02:24:04,275 --> 02:24:19,975
+Orada çeşitli file sistemlerimiz vardır. Bir yeri bir dizide ayrıca mount edip bir drive gibi düşünebiliyoruz. Onda da dosya yolu ayıracı öbür türlü sılaçmış. Falan gibi ayrıntılar çok fazla.
+
+637
+02:24:27,316 --> 02:24:44,996
+Klavyede olabilir. Klavyeye komut satılır olabilir. Klavye bir input device'dir. Ekran output device'dir. Delikli kart okuyucu bir input device'dir. Bir yazıcı output device'dir. Veyahut da bir TCP konneksiyonu input içinde, output içinde kullanabiliriz mesela.
+
+638
+02:24:47,219 --> 02:25:14,979
+O yüzden çeşitli input-output kaynaklarının farklı çalışma biçimleri de var. Bunlardan bir tanesi tamponlu veya tamponsuz. Yani buffered tamponlu, unbuffered tamponsuz. Bir kere o çalışma biçimi de var. Ve bir işletim sistemi tamponlu çalışıyorken veya bir işletim sistemindeki bir cihaz tamponlu çalışıyorken aynı işletimdeki farklı cihaz tamponsuz da çalışıyor. Varyasyonlar çok.
+
+639
+02:25:15,219 --> 02:25:24,020
+Bütün bunlara rağmen bir ortak yapı altında bir kod kitaplığı hazırlamak her dilde zordur aslında.
+
+640
+02:25:25,159 --> 02:25:29,059
+C de bu konuda elinden geleni yapmış durumda.
+
+641
+02:25:30,963 --> 02:25:47,524
+Genelde sil kütüphanesi tamponlu geride çıktığı işlemleriyle ona hizmet, destek veriyor. Eğer kodunuzu direkt Linux üstünde çalıştırıyorsanız veya bazı farklı Linux dağıtımlarında çalıştırıyorsanız, onlar genelde unbuffer input'a yapıyorlar.
+
+642
+02:25:47,524 --> 02:25:58,963
+Ama eğer siz tamponlu çalışıyorsanız, tampon boyunu sık olarak atadığınızda tamponsuz çalışmaya da evlenmiş olabileceğinizden sil kütüphanesi size bu...
+
+643
+02:25:58,963 --> 02:26:08,184
+Bu ek tamponlu çalışma yeteneğini sağlamış oluyor. Sizde arka piyandaki tamponsuz işlemlerden soyutluyor. Buyurun soru var galiba.
+
+644
+02:26:08,783 --> 02:26:12,603
+Hocam tamponu ne demek diyor? Tamponun tamponsuz kabranlarımızı bilmiyoruz.
+
+645
+02:26:12,603 --> 02:26:24,783
+Tamam, şöyle düşünüyorum. Nasıl söyleyeyim? İki hali bilgisayar düşünelim.
+
+646
+02:26:25,396 --> 02:26:35,335
+Bir bilgisayarındaki bir executor'u bir network üstündeki başka bir bilgisayara paket yolluyor.
+
+647
+02:26:35,335 --> 02:26:37,136
+Meri paketleri yolluyor.
+
+648
+02:26:37,616 --> 02:26:42,756
+Ve bu paketleri hızla yolluyor.
+
+649
+02:26:44,616 --> 02:26:51,216
+Karşı taraftaki bilgisayar, diyelim ki o anda donanımı düşük.
+
+650
+02:26:53,172 --> 02:27:07,971
+Arka planda network ile ilgili başka işler de çalışıyor. Bu nedenle gönderen bilgisayardan gelen veri paketlerini o anda program işleyemediğinden o paketler kaybolabilir.
+
+651
+02:27:14,239 --> 02:27:23,979
+Ne zaman alıcı müsait olduğu zaman o tampon bellekten çeksin şeklinde bir haberleşme söz konusuysa o zaman veri kaybı, paket kaybı olmaz.
+
+652
+02:27:24,415 --> 02:27:39,815
+Veya aynı bilgisayarın içinde bile, şimdi mesela ben klavyeden bir şeyler giriyorum, bu girdiğim veriyi, diyen ki işte scanf ile %s ile bir stringe atanacak diyelim ki.
+
+653
+02:27:39,815 --> 02:27:49,815
+Bilgisayarım eski oldu, çok eski ve yavaş olsun. Arka planda virüs tanıması diye bir yazı falan düşünün. Ben klavyeden yazıyorum.
+
+654
+02:27:49,968 --> 02:28:10,948
+Ama benim tuş buluşlarının hepsini executable algılayamıyor. Yunus'umda yazıyorum ama sadece Yunus'unu algılayabiliyor. Emresini input alamıyor bile. Öyle düşünün. Veya şöyle düşünün. Şimdi bir şişeden başka şişeye su aktaracağız. Tamam mı?
+
+655
+02:28:11,216 --> 02:28:33,976
+Daha geniş ağızlı bir şişeden, daha dar ağızlı bir şişeye su aktardığımız bir şişe. Su şişen ağzı da bardağın ağzı geniş. Şimdi ben bunların şişeye su aktarmaya çalışsam büyük ihtimalle döker taşırırım yani. Çok yetenekli bir adam değilim. Fakat ben bir huli kullanırsam...
+
+656
+02:28:34,100 --> 02:28:41,940
+Huni koyarsam, şöyle bir yapı, ağzı daha ince çubuk, üstü böyle geniş bir kap şeklinde.
+
+657
+02:28:41,940 --> 02:28:53,940
+Su, ben hızlı veya yavaş dökmemden bağımsız olarak biraz daha hızlı bile döksem, o su huninin haznesi içerisinde...
+
+658
+02:28:54,611 --> 02:29:14,152
+Durur ve aşağı akabildiği hızla akar dar ağzı yeri ama ben yukarıdan biraz daha hızlı boşaltsam bile hulunun alanı bana bir tampon bölge sağlamış olur. Böylelikle suyu döküp saçmam. Örnek bu şekilde vermek istiyorum. Bilmem yeterli oldu.
+
+659
+02:29:17,211 --> 02:29:18,351
+Sağ olun hocam.
+
+660
+02:29:19,860 --> 02:29:39,000
+Veya her zaman disk işlemleri bellek işlemlerinden daha yavaştı. Siz 1 milyon kayıtlık, dos kayıtlık bilgiyi yazmak istiyorsunuz. Gönderiyorsunuz. Ama belki o sırada disk sisteminde başka başka bir nedenle işler yapılıyor. O zaman ne olacak? Ya veri kaybolacak?
+
+661
+02:29:39,443 --> 02:30:00,000
+Ama kayıp olmaz da işletim sistemi diğer programları durdurun. Bir dakika, bir dakika. Herkes durdurur bir kere. Bir dakika. Şimdi çok fazla bilgi gelmeye başladı. Hepiniz hepiniz hepiniz durun. Artık herkes tek tek hangi programın gidiyor bu bilgi diğer programlar dursun ona aktarıyorum falan şeklinde. Bu sefer en azından...
+
+662
+02:30:00,000 --> 02:30:07,299
+Responstan yavaşlar. Belki bir kaybı olmaz ama sistemin geneli iyice bir ağırlaşır yavaşlar. Öyle söyleyeyim.
+
+663
+02:30:08,500 --> 02:30:33,220
+En azından veri kaybı olmaz. Halbuki işletim sistemi bir yerlerde bir tampon bellek ayırsa, bu anı bu ren bellekli bir kısmı tampon olarak ayırsa, ben uygulamamda dosyayı yazacağım bilgileri oraya basmış olurum aslında. Sonra işte disk sistemi yavaşladığında, toparladığında o tampon bellekten bilgiler okumup disk dosyaya yazılır.
+
+664
+02:30:33,220 --> 02:30:36,479
+Bu şekilde bir örnek daha aklıma geldi. Onu da vereyim dedim.
+
+665
+02:30:36,500 --> 02:30:54,819
+Durum bu. Tamponlu vs. Tamponsuz. Aslında bunu daha çok hani datacom veri iletişimi falan gibi dersler veya işletimi sistemleri derslerinde daha çok ayrıntılı göreceksiniz ama madem şey geldi, durumu geldi, ben de en temel bir iki örnekle anlatayım.
+
+666
+02:30:56,959 --> 02:30:57,220
+Evet.
+
+667
+02:30:58,868 --> 02:31:26,048
+Onun dışında bir olay daha var. Bir dosyayı text modunda açmak veya binary ikili düzende açmak farklıdır aslında. Unix hem binary hem text dosyalarına hepsine aynı şekilde davranıyor. Ama bunu binary'e mi çevirerek davranıyorsa tek herhalde binary'e çevirerek davranıyordu diye düşünüyorum emin değilim. Ama bazı başka işletim sistemlerinde bu ayrım çok fark edebilir.
+
+668
+02:31:26,868 --> 02:31:38,048
+Aslında aynı C kodunu farklı işletim sistemlerinde çalıştığımda bir dosyayı tekst veya metin şeklinde açmak doğru veya yanlış karar olabilir.
+
+669
+02:31:38,048 --> 02:31:49,268
+Haftaya yaptığımız örneklerde hep aynı veriyi değişik modlarda açıp ya da kaydedip doğru kaydedebilmiş mi kaydedilmemiş mi falan filan filan denemelerini yapacağız.
+
+670
+02:31:49,716 --> 02:32:12,656
+Neyse, nihayetinde ANSI komitesi, yani C'dir'in de standart getirmesi çalışan komitelerden bir tanesi, ANSI C için bazı fonksiyonları, yani bu geniş yelpazedeki bazı özellikleri korudu, bazı özellikleri değiştirdi, bazı özellikleri birleştirdi, bazıları da sildi ve nihayetinde bir kütüphane ortaya çıkarttı.
+
+671
+02:32:14,324 --> 02:32:38,864
+Ansi input output işlemleri bir dosyaya text modda veya binary modda erişimi farklı şekilde ele alıyor. Text ve binary arasındaki fark ise şu. Önce şuraya mı geleyim? Yok, bakın. Şöyle söyleyeyim. Şimdi aslında bir metin dosyasını açayım. Onun üstünden örnek göstereyim.
+
+672
+02:32:39,924 --> 02:33:04,984
+Şimdi bu uzantısı nokta C olmakla birlikte aslında bir metin dosyası. Her bir satır ve sütumunda bir harf içeriyor aslında. Fakat bu dosya aslında arka planda bir bit dizisi şeklinde saklanıyor. Yani bu dosya harf dizinin içerisinde fiziksel bit şeklinde saklanıyor.
+
+673
+02:33:07,924 --> 02:33:18,304
+Aski koduyla 65 yazıyor diyelim.
+
+674
+02:33:19,808 --> 02:33:44,308
+Yani bir işletim sistemi bu dosyayı bu şekilde saklıyor olabilir. Hem binary hem tekstit hepsini binary modda saklıyor olabilir. Öyleyse örnek o olacak. Yok öbür türlü veri dosyanın uzantısına göre farklı formatlarda saklıyorsa o zaman C'yi bir metinsel mod olarak algılayıp onu o şekilde saklayacaktır. Karakter karakter saklayacaktır.
+
+675
+02:33:47,808 --> 02:33:51,028
+O şekilde gösterecektir bize.
+
+676
+02:33:53,876 --> 02:34:16,896
+Fakat mesela şu executable dosyaları veya object dosyalarını bu şekilde bir anlamı yok. Bunu aslında binary modlar işlenmiş durumda. Her bir bitinin ayrı ayrı anlamları var. Bunu mesela bir wordpad ile açmaya çalıştığında anlamsız olarak farklı.
+
+677
+02:34:17,427 --> 02:34:44,727
+Karakterler göreceğiz. Şurada büyüklüğünün asli kodu neyse, ona yorumlanacak bir integer kadar bir iki byte varmış. Öyle denk gelmiş. Ama diğerlerinin şu an pek bir anlamı yok haliyle ki bazılarının karşılıkları bile yok. Asli formatında diyelim. Bu object dosyası bir binary dosya. Her byte ayrı ayrı yorumlanmaktadır. Ama işte c dosyası metinsel dosya.
+
+678
+02:34:45,427 --> 02:34:56,927
+Her bir karakter byte'ını çevirip o şekilde bize göstermekte ve yorumlamaktadır. Aradaki temel fark budur. Binary Mode veya Text Mode.
+
+679
+02:34:59,067 --> 02:35:03,148
+Evet, şimdi yansı düzenini bozmayalım. Şuraya geçelim şimdi.
+
+680
+02:35:10,772 --> 02:35:30,972
+Şimdi, bir çıktı vereceğiz ama verdimiz çıktı. Ekrandır, yoksa disk dosyasını, yoksa bir internet bağlantısı mı? Bir gizli alacağız ama bir gizli kaynağı, bir klavye mi, başka bir bilgisayardan gelen disk bağlantısı mı, yoksa bir diskten aktarılan bir veri mi?
+
+681
+02:35:32,340 --> 02:35:43,340
+Input-Output işlemlerinin kaynağı ve hedefi farklı farklı birleşenler olabilir. Bunlara eş biçimde bir erişim sağlayabilmek için veri yakışı...
+
+682
+02:35:43,471 --> 02:35:56,412
+Stream denilen kavram üzerinden yapılır. Yani aslında bir hedeften, bir kaynaktan bir hedefe gidecek veri bir akış olarak ele alınır.
+
+683
+02:35:56,412 --> 02:36:10,412
+Ve bir byte dizisi şeklinde iletilir. İster metin iletir, ister binary bilgi iletir. Hepsi bir stream şeklinde bir sekiz iller dizisine çevrilip karşı...
+
+684
+02:36:10,868 --> 02:36:28,067
+Bu şekilde çalışmaya stream akış tabanlı çalışma deniriz. Bu iki uçta bilgiyi stream'e çevirme.
+
+685
+02:36:28,564 --> 02:36:45,963
+Veyahut da Steam'deki bilgiyi orijinal haline çevirmeye, Steam'den alınan bilgiyi orijinal haline çevirmeye işlemleri yürütüyor olacaktır. Bu işlemlerin karmaşıklığı, bu input output kütüphanesini kodayanlara dert olmaktadır.
+
+686
+02:36:56,564 --> 02:37:05,123
+Bu streamlere erişmek için kullanacağımız pointer'ın türüne ise file, büyük harflerle file deniliyor.
+
+687
+02:37:05,584 --> 02:37:17,044
+std.h da tanımlanmış bir tiptir bu. File yapısını kullanarak da biz input-out işlemlerimizi yapıyor olacağız. Örnek kodlarımızı görüyor olacağız.
+
+688
+02:37:17,843 --> 02:37:34,623
+Üç tane standart stream kaynağı vardır arkadaşlar. Bunlar otomatik olarak bir helsley programına atanmış olur. STDin, Standart Input. STD Out, Standart Output. Ve STD Error, Standart Hata.
+
+689
+02:37:34,623 --> 02:37:44,283
+Şimdi STDin bir inputtur. Bilginç için kullanılan bir streamdir. Bu normalde klavyedir default olarak.
+
+690
+02:37:45,139 --> 02:37:59,520
+STD-out ise normal Pintef fonksiyonlarımızın çıktı vereceği kaynaktır. O da normalde ekrandır. Daha eskiden bundan STD indirikli kart okuyucu, STD-out ise cılt cılt yazıcıydı.
+
+691
+02:38:02,835 --> 02:38:27,576
+STD-error ise normal çıktıkların dışında sadece bir hata oluştuğu zaman çıktı vereceğimiz bir yer varsa STD-error de orayı gösterir. Normalde STD-error aslında STD-auto gösteriyordur. Ama siz hataya ilgili çıkan ayrı bir hedefe yönlendirilsin istiyorsanız o zaman STD-error için ayrı bir tanım yapabilirsiniz.
+
+692
+02:38:30,835 --> 02:38:34,835
+Bu konuda kullanılırken bir problem olmayacaktır. Ama diyelim ki bir hata ortaya çıktı.
+
+693
+02:38:34,975 --> 02:38:41,716
+Bunlar ortaya çıktı. Şu oldu, bu oldu falan. Veya işte SystemExit1 hata kodu ile çıkış yapacaksınız.
+
+694
+02:38:41,716 --> 02:38:47,716
+İşte onunla ilgili bilgiler ayrı bir kanala yazılsın. Diyelim ki bu...
+
+695
+02:38:48,691 --> 02:39:00,211
+Biriktirilme yapılıp toplum mail gönderebilecek bir metin bile olabilir mesela. Eğer arka tarafta öyle bir stream sağlayan bir utility veya prosesiniz varsa o bile olabilir yani.
+
+696
+02:39:01,491 --> 02:39:02,351
+Şey bu.
+
+697
+02:39:06,592 --> 02:39:13,932
+Onun dışında bakalım başka bir şey var mı? Evet, Ginter FST'de alacağız. Ginter FST'de inden okur. Bunlarını da söylemiştik.
+
+698
+02:39:17,203 --> 02:39:41,644
+Ama std ve std out eğer isterseniz dosyalara yönlendirerek bu işlemleri yapabilirsiniz. Bu input out işlemlerini de yapabilirsiniz. Ama bu biraz daha zor bir işlem. Bunun bir adımı basitleştirmek için fprintf ve fscanf fonksiyonları olduğunu göreceğiz. Dosyaya bir şey yazan fprintf ve dosyadan bilgi alan fscanf. Bunlar var. Bunların da kullanımını göreceğiz.
+
+699
+02:39:43,156 --> 02:40:03,176
+Böylece işte std-out'u dosyalara yönlendirmek gibi ek işlemler yapmamız yerine direkt fprint-e deyip şu dosyadan al, fscanf deyip şu dosyadan oku şeklinde bir adım daha basit yapabileceğiz bu işlemleri.
+
+700
+02:40:03,176 --> 02:40:09,076
+Yapabileceğimizi göreceğiz. Text vs. binary bundan bahsetmiştik aslında.
+
+701
+02:40:09,683 --> 02:40:14,763
+Onun dışında tek format hakkında biraz bir silah.
+
+702
+02:40:15,156 --> 02:40:36,576
+Yani hepsi aslında şey, yani daha doğrusu Linux'un, özür dilerim, Unix'in ve Unix standartında farklı farklı standartlar ve çok eski sürüler bunların değişik doğalimleri kullanmaya çalışması, oradaki gereksinlerden kaynaklanan farklı davranışlar falanla ilgili.
+
+703
+02:40:36,576 --> 02:40:40,096
+Hızlı bakayım, özellikle buldurmam gereken bir şey var mı bakayım.
+
+704
+02:40:46,675 --> 02:40:48,995
+Özel bir şey yok arkadaşlar. Geçiyorum.
+
+705
+02:40:51,475 --> 02:40:52,755
+Burada bir şey var mı? Özel bir şey.
+
+706
+02:40:55,655 --> 02:40:57,056
+Burada da özel bir şey yok.
+
+707
+02:40:58,275 --> 02:41:00,295
+Hocam bir şey sorabilir miyim ben?
+
+708
+02:41:00,315 --> 02:41:00,775
+Tabii, buyurun.
+
+709
+02:41:01,775 --> 02:41:08,435
+Ben bir şeyler duymuştum. Mesela Unix ile Unix End of File'lar farklı.
+
+710
+02:41:09,108 --> 02:41:21,047
+Ya da Windows ile, mesela bu dosyayı Windows End File ile okumak istiyor musun? Unix ile mi? Şöyle bir şey vermiştim. Olabiliriz. O nasıl olur?
+
+711
+02:41:21,768 --> 02:41:28,988
+Ya ayrıntısını bilmiyorum. Ama şu var mesela, en basit bir örnek söylemek istiyorum mesela. Ben onu açayım. Orada göstereyim.
+
+712
+02:41:32,340 --> 02:41:33,439
+Ve felaket.
+
+713
+02:41:37,811 --> 02:41:46,252
+Şimdi şu görünmez karakterleri de göstereyim. Görünmez karakterleri görünür hale getirdiğinizde boşluk yerine şuraya bir nokta koyuyor.
+
+714
+02:41:46,252 --> 02:41:47,371
+Mesela ben zoom yapayım.
+
+715
+02:41:51,603 --> 02:42:10,984
+Şu bir aslında boşluk. Şu da bir boşluk. Ve normalde işte şurada sayfa sonu bittiği için öbür taraftan yazmaya devam ediyor. Fakat, eski haline getireyim. Fakat şimdi mesela.
+
+716
+02:42:15,476 --> 02:42:32,076
+Çift ve Enter basıyorum. Şu an güya farklı bir şey yok. Ama şuraya bakın. Şimdi şunu büyüttüğümde göreceksiniz ki mesela bu bir carriage return diye adlandırılıyor. Yeni satıra geç ama yeni paragraf yapma.
+
+717
+02:42:33,716 --> 02:43:01,476
+Çiftle Enter'a bastığım için. Fakat normal Enter'a bassaydım, bugünkü paragraf yaptı. Ve paragraf boşluğunun da daha satır sonrasının daha farklı bir aralığı olduğu için bunun bir paragraf olduğunu burada görebiliyoruz. Ama şöyle bir şey olsaydı, hepsinde paragrafta 0, 0 ve tek deseydim ondan sonra, yine belli olmuyordu. Bakın, yani şurada ister Enter'ı yapmışım, ister boşluk yapmışım.
+
+718
+02:43:01,716 --> 02:43:20,716
+İster Shift Enter basmışım. Hiçbir fark yok. Fakat ben bunu mikro olarak kaybettikten sonra, diyelim ki ben bunu Windows'da kaybettim. Bir Linux dağıttım da açtım da, burada ben Shift Enter yapmış olmama rağmen, oradaki OpenOffice uygulaması bunu paragraf olarak belki yorumlayacaktı.
+
+719
+02:43:29,716 --> 02:43:52,995
+Burada bunu bu şekilde görüyorum ama OpenOffice'de açtığımda bu şekilde görüyor olacaktım. Bütün layout bozuldu gibi durumlar var. Arkadaşımın sorduğu soru da benzer bir örnek. End of file, işte bir işletim sistemi end of file'da slash 0 kullanıyor, ötekisi slash x1 kullanıyor mesela. Ondaki dosyayı onda açtığınızda problem oluyor.
+
+720
+02:43:53,492 --> 02:44:10,672
+Hiçbir şey olmazsa, ya kardeşim örneğin işte Türkçe karakterleri veya farklı lokallardaki karakterlerin işte bu UTF ile UTF 8'e göre diyelim ki kodluyor Windows ama Linux Unicode'a göre kodluyor diyelim ki.
+
+721
+02:44:10,672 --> 02:44:19,672
+O zaman burada yazdığım bu Word dosyasında, metin dosyası değil mi? Bu metin dosyası yanıtasında düzgün gözüküyor Türkçe karakterler.
+
+722
+02:44:21,492 --> 02:44:29,391
+Garip garip şekiller şeklinde gözükecek mesela. Böyle durumlar oluyor. Onun dışında çok fazla ayrıntı bilmiyorum.
+
+723
+02:44:30,231 --> 02:44:31,152
+Teşekkürler hocam.
+
+724
+02:44:37,523 --> 02:45:03,083
+Evet, peki. O yüzden şu binary formatı da geçiyorum. Çok önemli değil. Bugün bu kadar yeter diye düşünüyorum arkadaşlar dersimizde. Çünkü işte Fopen neymiş, file yapısı neymiş, şimdi işte onları yavaş yavaş görüyor olacağız. O yüzden hani binary text formatı da konuştuk diyelim. Bugünlük dersimizi burada bitirelim. Haftaya bu kaldığımız yerden devam edeceğiz.
+
+725
+02:45:04,147 --> 02:45:10,787
+Ben notlarımı alıyorum. Bu sırada soru soran arkadaşlarım sorabilirler. Çıkmak isimli arkadaşlarım da çıkabilirler.
+
+726
+02:45:13,847 --> 02:45:15,347
+Hocam bir şey sorabilir miyim?
+
+727
+02:45:15,387 --> 02:45:16,207
+Tabii buyurun lütfen.
+
+728
+02:45:16,827 --> 02:45:22,247
+Hocam ödev ve proje vereceksiniz ama daha hiç birini vermediniz. Ne zaman verirsiniz acaba?
+
+729
+02:45:22,387 --> 02:45:25,907
+Evet. Okulu da Ahmet Hoca'yı bekliyorum. Yakında vereceğiz.
+
+730
+02:45:26,420 --> 02:45:36,380
+Verirken de tabii ne zaman vardıysak teslim tarihini de düşünüp ona göre makul ve mantıklı yetiştirebileceğiniz bir içerikle vermek istiyoruz.
+
+731
+02:45:37,380 --> 02:45:38,520
+Teşekkürler.
+
+732
+02:45:39,840 --> 02:45:40,959
+Sesim geliyor mu hocam?
+
+733
+02:45:41,500 --> 02:45:42,340
+Geldi, buyurun [öğrenci].
+
+734
+02:45:43,279 --> 02:45:51,020
+Ben şey soracaktım. Bir programa neden biz kendimiz fail olarak input veya output almak isteyelim?
+
+735
+02:45:52,404 --> 02:46:15,103
+Şimdi şöyle, mesela az önceki örnekte çeşitli çalışanlar oluşturduk. Bunların bilgilerini konut satığından girdik. Programı kapattık. Daha sonra diyelim ki bu çalışanların bilgilerini saklamak istiyoruz. Çünkü daha sonra değiştireceğiz. Bu nedenle bilgilerimizi bir yerlerde saklamamız gerekiyor. En temel olarak da dosyalarda saklıyoruz.
+
+736
+02:46:20,404 --> 02:46:45,364
+Bilgilerimizi veri tabanına da yazabiliriz. Ama bunun için hem bir veri tabanının sonucu soruyla iletişim kurabilme yeteneklerini öğrenmemiz ve bu veri tabanında sorgulama yapabilme komutlarını öğrenmemiz lazım. Bunun için değişik standartlar var ama sektör uzun yıllarda SQL sorgulama dili üstüne çekmiş durumda, buluşmuş durumda.
+
+737
+02:46:48,404 --> 02:47:15,684
+Bu konudu göreceksiniz. Ama daha henüz veri tabanları yokken veya bir veri tabunun sunucusunu kurulamayacağı falan gibi ortamlarda bizim girdiğimiz verilerin program sonlandıktan sonra kaldığı yerden devam ederken o verilerin saklanması, korunması son kaldığı yerden devam etmesi gerekmektedir. İşte bu gibi işlemler için dosyalara yazan, dosyalardan okuyan kod yazmamıza ihtiyaç var.
+
+738
+02:47:16,564 --> 02:47:18,324
+Teşekkür ederim hocam, sağ olun.
+
+739
+02:47:18,423 --> 02:47:21,623
+Yani verinin kalıcılığını sağlamak için.
+
+740
+02:47:32,564 --> 02:47:33,283
+Tamam geldik.
+
+741
+02:47:41,172 --> 02:47:43,172
+Yaptık o zaman şimdi.
+
+742
+02:47:49,523 --> 02:47:50,891
+Ve bu.
+
+743
+02:48:00,500 --> 02:48:02,280
+Peki arkadaşlar, ders bitmiştir.
+
+744
+02:48:02,979 --> 02:48:03,639
+Görüşmek üzere.

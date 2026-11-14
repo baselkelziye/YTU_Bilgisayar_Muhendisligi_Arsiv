@@ -1,0 +1,2035 @@
+1
+00:03:04,532 --> 00:03:06,712
+Herkese merhabalar, hoş geldiniz.
+
+2
+00:03:25,876 --> 00:03:26,876
+Hoşçakalın.
+
+3
+00:03:36,500 --> 00:03:38,039
+Nasılsınız, iyisiniz?
+
+4
+00:03:45,044 --> 00:03:45,963
+Selamlar hocam.
+
+5
+00:03:46,624 --> 00:03:47,384
+Selamlar.
+
+6
+00:03:49,824 --> 00:03:54,683
+Nasıl geçti yazınız? Pandemi günleri nasıl geçiyor?
+
+7
+00:04:14,228 --> 00:04:16,228
+Pandemiye alıştık hocam.
+
+8
+00:05:05,043 --> 00:05:06,584
+Bu ders Türkçe değil mi?
+
+9
+00:05:20,947 --> 00:05:21,447
+Tüm ne?
+
+10
+00:05:25,012 --> 00:05:27,012
+Bakayım mı hocam istiyorsunuz?
+
+11
+00:05:27,012 --> 00:05:29,012
+Bir bakabilir misin?
+
+12
+00:05:29,012 --> 00:05:31,012
+Türkçe ders diyor.
+
+13
+00:05:31,012 --> 00:05:33,012
+Efendim?
+
+14
+00:05:33,012 --> 00:05:35,012
+Türkçe ders diyor.
+
+15
+00:05:35,012 --> 00:05:35,403
+Türkçe değil mi? Tamam.
+
+16
+00:06:00,339 --> 00:06:14,319
+Öncelikle tekrar hoş geldiniz diyelim. Ekranı görüyorsunuz herhalde, paylaştığım ekranı. Görüyoruz hocam. Bir sıkıntı var mı okuyabiliyor musunuz?
+
+17
+00:06:18,387 --> 00:06:21,007
+Okunabiliyor hocam. Yine şekilde geliyor.
+
+18
+00:06:25,027 --> 00:06:39,907
+Şimdi 17 kişi var ama benden de kontenjan artırımı istediler. 35'de en son 40 yaptılar. Demek ki daha sınıfın yarısı uyanamamış.
+
+19
+00:06:44,019 --> 00:06:48,379
+Neyse artık buradakilerle yapacağız.
+
+20
+00:06:52,860 --> 00:06:59,680
+Öncelikle bir şeye bakalım. Konular vesaire nedir ne değildir ona bir bakalım.
+
+21
+00:07:16,052 --> 00:07:21,812
+Şöyle, browser ekranına geçtim. Ona geçti mi görüntü?
+
+22
+00:07:22,831 --> 00:07:23,612
+Evet hocam.
+
+23
+00:07:24,512 --> 00:07:26,172
+Kara ekran gitti mi?
+
+24
+00:07:27,112 --> 00:07:27,852
+Gitti hocam.
+
+25
+00:07:28,492 --> 00:07:29,472
+Tamam, sağ olun.
+
+26
+00:07:31,032 --> 00:07:34,152
+Tamam, buradan Bologna sistemine girelim.
+
+27
+00:07:40,692 --> 00:07:45,152
+Ne yapacağız? Bu ders yüksek lisans mı doktora mı acaba?
+
+28
+00:07:49,300 --> 00:07:51,180
+Yüksek lisans diye hatırlıyorum ama.
+
+29
+00:07:52,639 --> 00:07:54,360
+Yüksek lisans.
+
+30
+00:08:03,603 --> 00:08:05,983
+Ben normalde şeyden giriyorum da hep.
+
+31
+00:08:12,148 --> 00:08:18,028
+Hocam, derse bakacaksanız şey, kodunu söyleyeyim.
+
+32
+00:08:19,188 --> 00:08:19,828
+Buldum.
+
+33
+00:08:22,708 --> 00:08:23,748
+Söyleyebilirsiniz.
+
+34
+00:08:24,628 --> 00:08:26,807
+51.03'tü galiba.
+
+35
+00:08:29,088 --> 00:08:31,368
+Evet, bilgisayarla görme.
+
+36
+00:08:34,548 --> 00:08:34,968
+Evet.
+
+37
+00:08:36,548 --> 00:08:38,148
+Şimdi bu...
+
+38
+00:08:38,964 --> 00:08:51,384
+Derste amacımız ne? Görme diyor. Bilgisayarla görme. Yani bilgisayarlara çevreyi nasıl gösteririz?
+
+39
+00:08:53,464 --> 00:08:57,944
+Çevreyi nasıl algılatabiliriz? Temel amaç bu.
+
+40
+00:09:06,451 --> 00:09:30,851
+İlgili şeyler de görebiliriz. Yani bilgisayarda resimlerin işlenmesi, yeni resimlerin bilgisayar yoluyla oluşturulması, onun yanında iki boyutlu görüntülerden üç boyutlu algılama.
+
+41
+00:09:32,659 --> 00:09:41,299
+Nesnelerin takibi. Bunun gibi şeyler var ders kapsamında.
+
+42
+00:09:45,812 --> 00:10:02,172
+Kitap olarak bu üç kitabı yazmışız. Bunları not alabilirsiniz. Okumalar Zeliski'nin kitabından. Ekrandaki yazıları okuyabiliyor musunuz? Büyüteyim mi biraz?
+
+43
+00:10:08,340 --> 00:10:09,420
+Daha iyi hocam şimdi.
+
+44
+00:10:09,820 --> 00:10:10,019
+Evet.
+
+45
+00:10:12,740 --> 00:10:27,879
+Ekrandaki okumalarımızı şuradan vereceğiz. Richard Ziliski'nin Computer Vision Algorithms and Applications diye bir kitabı var. Bu kitap ücretsiz olarak webde PDF olarak var.
+
+46
+00:10:30,019 --> 00:10:30,820
+Evet.
+
+47
+00:10:34,868 --> 00:10:39,028
+Herhalde evet, daha sonra seyrederiz diye düşündü arkadaşlar.
+
+48
+00:10:42,508 --> 00:10:55,768
+Diğer iki kitap da güzel kitaplar. Onları da bulunsun bir kenarda. Bunları da edinin. Bir şeyi merak ederseniz, şu yöntem nasıl, bu yöntem nasıl olabilir falan diye.
+
+49
+00:10:57,128 --> 00:11:02,088
+Bakacağınız kitaplar, bakabileceğiniz kitaplar.
+
+50
+00:11:04,755 --> 00:11:15,135
+Ama Zeliski'nin kitabını edinin hemen. Dediğim gibi zaten ücretsiz PDF'i webde var. Kendi yazarın kendi sitesinde.
+
+51
+00:11:19,155 --> 00:11:36,115
+Öğrenim çıktıları olarak ne saymışız? Öğrenciler, görme duyusunun yeteneklerinin bilgisayarlara kazandırılması için ihtiyaç duyulan yöntemleri öğrenecektir.
+
+52
+00:11:36,115 --> 00:11:42,035
+Görüntü işlemenin temellerini öğrenecektir öğrenciler.
+
+53
+00:11:44,179 --> 00:11:49,119
+İki boyutlu görüntü üzerinden derinlik bilgisinin çıkarılmasını öğrenecektir.
+
+54
+00:11:51,059 --> 00:11:56,379
+Görüntü üzerinde ilgi noktalarının tespiti konusunda bilgi sahibi olacaklardır.
+
+55
+00:11:57,659 --> 00:12:05,939
+İlgi noktalarından tanınmayıcıların kullanılması ve eşleştirilmesi konusunda bilgi sahibi olacaklardır demişiz.
+
+56
+00:12:19,860 --> 00:12:38,720
+Evet. Haftalık konular, buradaki haftalık konular aslında birebir, yani bunları göreceğiz yaklaşık olarak. Fakat değiştirilebilir. Bilgisayarla görü çok değişiyor.
+
+57
+00:12:43,923 --> 00:13:09,163
+Onunla ilgili tekrar haftalık konuları başka bir yerden size söyleyeceğim. Notlandırma iki ödev yazmışım. Toplam 20 puan yazmışız. Esasen ikiden fazla ödev vereceğim galiba ama onları herhalde toplamda 20 puan olacak şekilde gruplarım.
+
+58
+00:13:10,932 --> 00:13:23,091
+Geçen, daha doğrusu 1-2 yıl önce vermiştim bu dersi. Verdiğimde şöyle bir şey yapmıştım. Ders anlatıyordum. O zaman tabii yüz yüze eğitim yapıyorduk.
+
+59
+00:13:25,011 --> 00:13:35,091
+Son bir saati, son iki saati laboratuvar gibi bir şey yapıyordum. Bir uygulama, hadi bunu yapalım, yapın falan diyordum.
+
+60
+00:13:36,628 --> 00:13:47,867
+Ondan sonra da öğrenciler de yapmaya başlıyordu onu. Sonrasında ben de orada olduğum için yardımcı oluyordum.
+
+61
+00:13:47,867 --> 00:14:01,988
+İşte Python programlama diliyle nesnelerin, görüntülerin açılması, filtrelenmesi vesaire gibi şeyleri yapıyorduk beraber.
+
+62
+00:14:03,155 --> 00:14:16,355
+Yetişmeyen kısmını da ödev olarak veriyordum. Yani birçok öğrenci yetiştiremiyordu. Geri kalanda ödev olsun, haftaya yükleyin falan diyordum. Bu şekilde bir sistem oluşturmuştuk.
+
+63
+00:14:18,635 --> 00:14:23,596
+Onu aslında bu yılda devam etmeyi düşünüyorum. Yani güzel bir şeydi o.
+
+64
+00:14:25,299 --> 00:14:42,279
+Bu yılda işte bir saat, iki saat neyse ders anlatıp daha sonra laboratuvar tarzı siz de ekran paylaşımı yaparsınız. Kimin ne yaptığını buradan görürüm.
+
+65
+00:14:44,279 --> 00:14:48,279
+Ne yaptın, sen ne yapıyorsun falan gibi bir taraftan konuşuruz.
+
+66
+00:14:51,635 --> 00:14:58,875
+Geri kalanda yine ödev olur. Ödevleri de toplarız diye düşünüyorum. Ne dersiniz? Olabilir mi?
+
+67
+00:15:04,115 --> 00:15:05,696
+Evet hocam.
+
+68
+00:15:08,375 --> 00:15:17,875
+Yani ses kesiliyor demiş bir arkadaşınız. Nasıl şu anda genel olarak yayın geliyor mu, ulaşıyor mu size? Duyamayan var mı?
+
+69
+00:15:19,355 --> 00:15:20,015
+Ben de iyi.
+
+70
+00:15:21,916 --> 00:15:22,836
+Ben de iyi hocam.
+
+71
+00:15:23,416 --> 00:15:24,395
+Kötü olan var mı?
+
+72
+00:15:27,700 --> 00:15:39,240
+Yani tabii tek tük şeyler olacak muhtemelen ama öyle bir sorun yaşayan artık arkadaş logof olup daha sonra seyredebilir.
+
+73
+00:15:40,860 --> 00:15:44,259
+Veya bir yarım saat sonra tekrar gelebilir.
+
+74
+00:15:45,580 --> 00:15:52,860
+Zaten ekrana yazacağım şeyleri, ders anlatımına geçtiğimde yazarak anlatmayı düşünüyorum.
+
+75
+00:15:54,100 --> 00:16:02,340
+Dolayısıyla ekrandan görebilir en azından sesimi duymasa da.
+
+76
+00:16:04,460 --> 00:16:09,480
+Bir tane proje olacak. Dediğim gibi iki ödev var demiştim. Bir tane proje olacak.
+
+77
+00:16:09,480 --> 00:16:16,480
+Bu projeyi beraber seçeceğiz. Bir paper seçeceğiz.
+
+78
+00:16:17,940 --> 00:16:31,820
+Bir veya iki kişilik gruplar olabilirsiniz projede. Sonra ne olacak? Onu sunacaksınız.
+
+79
+00:16:36,724 --> 00:16:39,764
+Projelerin notlandırılmasında
+
+80
+00:16:46,323 --> 00:17:08,264
+Projelerin notlandırılmasında, onu tekrar da konuşuruz ama, öğrencinin uygulama yapıp yapmadığına da bakacağız. Güzel anlatımına bakacağız. Düzgün bir rapor hazırlamış mı? Düzgün bir sunum hazırlamış mı? Şeklinde bir şey olacak.
+
+81
+00:17:14,708 --> 00:17:35,528
+Öğrencilerin hepsi uygulama yapamayabiliyor. Böyle paper seçip onları inceleyince. Yani benim hoşuma gidiyor. Böyle bazı geçen yılki derslerimde de yaptırmıştım. Son bir iki hafta böyle kendi içimizde seminer gibi bir şey yapmış oluyoruz. Hoş oluyor.
+
+82
+00:17:43,539 --> 00:17:45,159
+Hem öğrenmiş oluyoruz.
+
+83
+00:17:49,299 --> 00:18:08,539
+O tarz bir şey hani böyle seminer gibi bir şey olmuş olacak. 40 tane de yani 35'in üzerinde kayıtlı var anladığım kadarıyla. Buradan da nereden baksanız hani 20 tane 20'nin üzerinde paper şey yapabiliriz, dinleyebiliriz.
+
+84
+00:18:13,172 --> 00:18:38,632
+Bu tarz bir şey düşünüyorum. Tabi o paperların kodunu da yazabilirse öğrenci veya uygulamayı kendisi replike edip ufak değişiklikler demonstre edebilirse o bonus olacak. Sadece öyle paperı anlatırsa bonus alamayacak. Veya işte 20 puan falan azalmış olacak yani.
+
+85
+00:18:39,220 --> 00:18:41,940
+Bonus sonuçta hepsi 100'e tamamlanacak için.
+
+86
+00:18:45,460 --> 00:18:55,160
+Ara sınav olacak bir tane. Bir tane de final olacak. Bunlar 20 ve 40'ar puan. Toplamda 100 puan edecek.
+
+87
+00:18:58,200 --> 00:19:01,320
+Planımız bu şekilde. Notlama planımız bu şekilde.
+
+88
+00:19:08,435 --> 00:19:25,556
+Şimdi bunu Songül Hoca ve ben zaman zaman verdik, veriyoruz bu dersi. Songül Hoca'nın esasen buradaki konuları var.
+
+89
+00:19:26,932 --> 00:19:40,172
+Benimki biraz daha farklı olabiliyor. Yani çok çok farklı değil de biraz daha farklı. Sırası veya kaynakları falan biraz farklı gibi. Onları da şuradan görebilirsiniz.
+
+90
+00:19:42,692 --> 00:19:47,632
+Birinci hafta... Onu paylaşmadım bir saniye.
+
+91
+00:20:01,460 --> 00:20:13,460
+Onları hafta hafta böyle ben ayarlamıştım kendi şeyime. Bunun isterseniz bir kontrol...
+
+92
+00:20:18,771 --> 00:20:23,172
+Bunun bir resmini alalım. Nasıl oluyor? Print Screen'de alabiliriz sanırım.
+
+93
+00:20:26,291 --> 00:20:28,451
+Snipping Tool'u vardı değil mi?
+
+94
+00:20:30,451 --> 00:20:31,451
+Evet.
+
+95
+00:20:32,771 --> 00:20:34,851
+New Snip diyelim.
+
+96
+00:20:45,907 --> 00:20:48,987
+Evet, şuradan kırıp öbiliyor muyum?
+
+97
+00:21:08,180 --> 00:21:17,820
+Şu araçları tam yeni araçlar falan eklemiş Windows'da. Şurayı kırpmaya çalışıyorum.
+
+98
+00:21:26,291 --> 00:21:27,243
+Evet.
+
+99
+00:21:36,596 --> 00:21:38,635
+Neyse, o...
+
+100
+00:21:43,923 --> 00:21:46,784
+Bu araçta şimdi Android'de bu kara ekran.
+
+101
+00:21:50,324 --> 00:21:53,824
+Android'den buraya tabii paylaşamıyorum.
+
+102
+00:21:59,188 --> 00:22:25,307
+Neyse, evet. Şuradaki şeyleri not alabilirsiniz arkadaşlar veya bir print screen alabilirsiniz. Burada okumalar var aslında onun için söylüyorum. Reading Zeliski 3.2 yazmışım veya Reading Zeliski 3.4 demişim. Reading Zeliski 3.5.2 ve 8.1.1 demişim. Bu tarz şeyler var.
+
+103
+00:22:27,251 --> 00:22:43,871
+Readingler var. Image Filtering, Frekans Domeninde çalışma, Edge Detection yani kenar bulma, Lokal imge özellikleri.
+
+104
+00:22:49,395 --> 00:23:08,775
+Özelliklerin birbiriyle match edilmesi, model fitting ve ransack, kamera kalibrasyonu, epipolar geometri diye gitmişiz geçen yıl veya geçen verdiğimde bu dersi.
+
+105
+00:23:18,067 --> 00:23:33,048
+Genel bir giriş. İkinci haftadan itibaren imgeler nasıl açılır, piksellerine nasıl erişilir gibi şeyler.
+
+106
+00:23:36,567 --> 00:23:41,347
+İmge yapıları vesaire gibi şeyler. Yani imgeleri anlatacağız.
+
+107
+00:23:42,324 --> 00:24:07,483
+Bu tentative bir list. Yani bu değişebilir. Büyük ihtimalle değişir. Bu yıl biraz daha hızlı gidip biraz da nörel networkları falan eklemeyi istiyorum. Son haftalara en azından. Dolayısıyla frekansı atlayabilirim veya kısaltabilirim. Kamera kalibrasyonu ve epikolar geometriyi atlayabilirim veya kısaltabilirim.
+
+108
+00:24:12,019 --> 00:24:16,579
+Oradan da biraz daha neural networklere yer bırakmış oluruz.
+
+109
+00:24:18,380 --> 00:24:26,320
+Proje konusu da daha çok neural networklerle ilgili olur diye düşünüyorum.
+
+110
+00:24:26,320 --> 00:24:36,019
+Son yıllarda üretici modellere baya ilgi duyuyorum. Onları merak da ediyorum.
+
+111
+00:24:36,819 --> 00:24:51,799
+Bu Generative Adversarial Networkler falan var. Güzel nesneler oluşturabiliyorsunuz, ingeler oluşturabiliyorsunuz. O tarz projeleri seçeceğim diye düşünüyorum.
+
+112
+00:24:58,003 --> 00:25:10,864
+Evet, arkadaşınız chat'e okumalar JPEG diye paylaşmış [öğrenci] arkadaşınız. Oradan alabilirsiniz.
+
+113
+00:25:14,864 --> 00:25:17,864
+Zaman içerisinde zaten hafta hafta...
+
+114
+00:25:18,067 --> 00:25:31,688
+Bu hafta şunu yaptık, geçen haftanın, gelecek haftanın okuması budur falan gibi de konuşabiliriz, konuşuruz da. Genel işleme bu şekilde olacak diye düşünüyorum.
+
+115
+00:25:42,036 --> 00:26:07,336
+Bunun yanında aklıma gelen konuşulacak şeyler. İletişim olarak ben announcementları yani ilanları GISİS üzerinden yapacağım.
+
+116
+00:26:08,468 --> 00:26:12,788
+Yani Gisiz'te toplay email atılabiliyorsunuz. Atılabiliyor.
+
+117
+00:26:16,327 --> 00:26:19,788
+Paylaşmamışım. Eklana yazıyorum ama ekranı paylaşmamışım.
+
+118
+00:26:27,539 --> 00:26:34,939
+Evet, ilanlar için, duyurular için diyelim daha doğrusu. Sınıf duyuruları.
+
+119
+00:26:38,612 --> 00:27:00,172
+Gisys'ten takip edebilirsiniz. Dolayısıyla Gisys'ten atılan e-mailleri alıyor olun. İsterseniz hepinize bir toplu e-mail atayım, kontrol edelim. Gisys'ten e-mail alıyor musunuz? Alabiliyor musunuz?
+
+120
+00:27:08,788 --> 00:27:13,087
+Şöyle, şuraya gelelim.
+
+121
+00:27:14,627 --> 00:27:15,768
+Bir sisleyelim.
+
+122
+00:27:30,099 --> 00:27:37,319
+E-mail sistemi, öğrenci toplu e-posta gönderme. Eklesiller devam ediyor mu arkadaşlar?
+
+123
+00:27:38,859 --> 00:27:40,279
+Bugün son herhalde hocam.
+
+124
+00:27:41,399 --> 00:27:43,839
+Bugün hala eklesil yapabiliyor mu?
+
+125
+00:27:44,960 --> 00:27:46,879
+Galiba. Ben dün akşam yapabiliyorum.
+
+126
+00:27:46,879 --> 00:27:47,440
+Yapabiliyor.
+
+127
+00:27:48,039 --> 00:27:55,440
+Tamam. Öyleyse derse başlamamamız lazım. Yani havadan sudan konuşacağız ama ders konusu işlemeyeceğiz.
+
+128
+00:28:03,731 --> 00:28:09,612
+O zaman bu e-maili de daha sonra atabilirdim ama buraya kadar gelmişken de atayım.
+
+129
+00:28:12,951 --> 00:28:26,092
+Güz, Bilgisayarla Görme. Öğrencilere listeliyoruz. Ekranı görüyor musunuz bu arada?
+
+130
+00:28:27,635 --> 00:28:31,635
+Yeni bir browser pop-up etti. Herhalde onu hiç görmediniz.
+
+131
+00:28:32,036 --> 00:28:33,096
+Görmeyiz hocam onu.
+
+132
+00:28:33,676 --> 00:28:39,236
+O pop-up ile geldiği için ona ayrıca geçmem gerekecek herhalde.
+
+133
+00:28:45,940 --> 00:28:48,980
+Neyse merhaba diye bir e-mail gönderiyorum hepinize.
+
+134
+00:28:52,564 --> 00:29:09,284
+Topluğu gönderdim şu anda. Yani bu e-mail 5 dakika, 10 dakika içinde en fazla bugün gelmesi lazım. Bugün merhaba diye bir e-mail gelmezse size, benden, Gisist'ten problem olabilir. IT ile konuşabilirsiniz.
+
+135
+00:29:09,844 --> 00:29:10,604
+Geldi hocam.
+
+136
+00:29:11,524 --> 00:29:11,924
+Evet.
+
+137
+00:29:13,264 --> 00:29:13,984
+Mailiniz geldi.
+
+138
+00:29:14,544 --> 00:29:14,844
+Evet.
+
+139
+00:29:15,667 --> 00:29:29,067
+Yani bugün gelmezse bir sorun olabilir. Bizim Bilgi İşlem Departmanı ile iletişime geçip sorunu çözdürmeye bakın.
+
+140
+00:29:31,947 --> 00:29:40,487
+Gilsisten toplu e-mail atacağım dediğim gibi duyurular için. Temel duyuru şeyimiz odur. Yani web sayfasına falan koymayacağım.
+
+141
+00:29:41,491 --> 00:29:51,491
+Gisis'ten e-mail atarım size. Sizin bana ulaşmanız için ofis saatlerim...
+
+142
+00:29:57,299 --> 00:30:13,319
+Çarşamba 15.00 ile 17.00 arasını belirledim. Bu saatler size uyuyor mu dersiniz falan var mı?
+
+143
+00:30:23,443 --> 00:30:25,003
+Benim var hocam.
+
+144
+00:30:25,423 --> 00:30:27,343
+Sizin var. Başka?
+
+145
+00:30:29,003 --> 00:30:29,243
+Evet.
+
+146
+00:30:29,903 --> 00:30:34,923
+Tabii herkese uyuyan bir saat belirlemek çok zor. Bir de bu saatleri tüm dersler için belirledim ben.
+
+147
+00:30:36,043 --> 00:30:39,083
+Yani bu benim genel ofis saatlerim.
+
+148
+00:30:39,083 --> 00:30:45,883
+Fakat tabii bu saatler haricinde de görüşebiliriz.
+
+149
+00:30:47,203 --> 00:30:49,643
+E-mailim oaltun.
+
+150
+00:30:55,784 --> 00:30:58,284
+pardon, karıştı.
+
+151
+00:31:01,384 --> 00:31:07,684
+at yıldız.edu.tr
+
+152
+00:31:07,684 --> 00:31:16,064
+şimdilerde Kalendli diye bir uygulama keşfettim, web sitesi.
+
+153
+00:31:17,971 --> 00:31:44,111
+Buraya gidip birisiyle online buluşma yapacağınızda buradan buluşacağınız kişiye uygun zamanlarınızı gönderiyorsunuz. Onlar da oradan seçiyor. Her iki tarafın da Google takvimine başka entegrasyonları da vardır bilmiyorum.
+
+154
+00:31:44,852 --> 00:32:08,592
+Google takvimine o işleniyor. Yani online buluşmayı kolaylaştırıyor. Baya hoşuma gitti. Ben kullanıyorum öğrencilerimle şimdilerde. Dolayısıyla bana bir kalendiden buluşma isteği gönderebilirsiniz veya bana e-mail gönderirseniz ben size kalendle gönderirim. O şekilde siz zaman seçebilirsiniz.
+
+155
+00:32:09,428 --> 00:32:16,268
+Ama işleri hızlandırmak için direk siz kalentle gönderebilirsiniz. Daha da iyi olur. Bir adımı azaltmış oluruz.
+
+156
+00:32:18,008 --> 00:32:34,388
+Öğrencim olduğunuz için dediğim gibi yarımşar saatlik mesela böyle danışma isteyebilirsiniz. Anlamadığınız bir şey olursa danışmak istediğiniz bir şey olduğunda danışabilirsiniz.
+
+157
+00:32:37,971 --> 00:32:43,971
+Evet, ismimin herhalde Oğuz Altun olduğunu biliyorsunuz. Buraya yazmamışım ama.
+
+158
+00:32:43,971 --> 00:32:46,971
+Şimdi...
+
+159
+00:32:51,316 --> 00:32:54,556
+Bir de yine iletişimle ilgili Dropbox.
+
+160
+00:32:59,763 --> 00:33:22,323
+Drogbox kullanıyorum. Drogbox'dan bir şeyler paylaşıyorum, share gibi. Nasıl yapıyorum onu? Şöyle yapıyorum. Bir dizine ayarlıyorum sharing için.
+
+161
+00:33:23,700 --> 00:33:28,299
+Onu hemen yapayım sizle buradayken. Sizinle paylaşayım. Sonu unutuyorum.
+
+162
+00:33:43,539 --> 00:34:01,940
+Şuraya yeni bir bilgi diyeceğim. Bilgisayarla Görü. Hayırda Şun diyeceğim. Dropbox da buna Share diyorum.
+
+163
+00:34:05,523 --> 00:34:09,384
+Create Link diyor. Siz onu görmediniz herhalde. Copy Link dedi.
+
+164
+00:34:10,644 --> 00:34:13,264
+Şimdi chat ekranına bunu paylaşacağım.
+
+165
+00:34:22,579 --> 00:34:27,639
+Chat ekranında paylaşım dizininin adresini paylaştım şu anda.
+
+166
+00:34:31,639 --> 00:34:38,500
+Oraya mesela deneme için basit bir Word dokümanı atayım.
+
+167
+00:34:42,228 --> 00:34:49,408
+New Word Document Links diyelim.
+
+168
+00:34:52,248 --> 00:34:59,908
+Buradan ödevleri paylaşabilirim. Proje tanımı ile ilgili paylaşımlarımız olabilir.
+
+169
+00:34:59,908 --> 00:35:03,967
+Bunu kopya.
+
+170
+00:35:06,068 --> 00:35:27,008
+Paylaşım linki diyorum. Geldi hocam. Evet. Şimdi save dedim. Bu linki de böylece buradan da birbirinizle paylaşabilirsiniz. Tabi dersimizi alan arkadaşlarla. Links'in içerisinde link var. Zaten chatte de paylaştım.
+
+171
+00:35:34,420 --> 00:35:48,880
+Dropbox sanırım burayı görmek için hesap almanızı istemeyecek. Yani normal bunu hesabınız olmasa da paylaşabilmeniz lazım. Ama şeyi de Dropbox üzerinden alıyorum.
+
+172
+00:35:52,840 --> 00:35:54,880
+Dosya toplamayı da...
+
+173
+00:36:00,052 --> 00:36:15,052
+Dropbox üzerinden yapıyorum. Bunu yıllardır kullanıyorum. Pandemiden önce de Dropbox üzerinden yapıyordum. Çünkü çok kolay. Ne oluyor? Öğrenci...
+
+174
+00:36:21,715 --> 00:36:35,496
+Bir link paylaşıyorum. Bu linke öğrenci de ödevi yüklüyor. Güzel tarafı son tarih falan koyabiliyorum. Yani şu tarihe kadar.
+
+175
+00:36:39,284 --> 00:36:57,583
+Son tarihiniz şudur. Fazladan da bir gün süre veriyorum. O gün bir gün süre geç verirseniz, o geç günü içerisinde verirseniz yüzde yirmi puan keserim diyorum. Bu tarz bir sisteme izin veriyor.
+
+176
+00:37:07,092 --> 00:37:31,711
+E-mailleri meşgul ediyor. Kimden geldiği belli değil, ne zaman gönderildiği belli değil falan. Tek tek indirmen gerekiyor falan. Tam bir bela. Dropbox ile bu şekilde topladığında tüm dosyalar otomatikman benim PC'me, bilgisayarıma senkronize oluyor. Benim açımdan çok kolay oluyor yani.
+
+177
+00:37:33,556 --> 00:37:48,576
+Dolayısıyla paylaşımı ve dosya paylaşımını ve dosya toplamayı Dropbox üzerinden yapıyorum. Bu yükleme için muhtemelen Dropbox hesabı almanız gerekebilir. Onu şimdiden söylemiş olayım.
+
+178
+00:37:54,996 --> 00:37:56,876
+Başka ne konuşulur?
+
+179
+00:37:58,336 --> 00:38:00,876
+Slibise baktık, programa baktık.
+
+180
+00:38:04,851 --> 00:38:31,372
+Duyurlardan bahsettik. Projeden genel olarak bahsettik. Projeleri şöyle birkaç hafta geçsin. Bir haftaya oturup buna mı ayarlayalım? Yani proje konularının bulunmasına harcayabiliriz beraber.
+
+181
+00:38:32,019 --> 00:38:51,659
+Arama yaparız webden. Şöyle dördüncü hafta falan bana da hatırlatın. Oturup şöyle bir paper bulalım. Bol miktarda paper bulalım. Sonra o paperları aranızda dağıtalım diye düşünüyorum. Uygun mudur?
+
+182
+00:38:56,403 --> 00:39:01,463
+Üçüncü, dördüncü hafta belirleyelim.
+
+183
+00:39:11,188 --> 00:39:23,467
+Bunun için de yine bir şeyler yaparız. Bir ortak Excel falan belki paylaşabiliriz. Neyse onu sonra düşünürüz.
+
+184
+00:39:28,087 --> 00:39:29,467
+Dediğim gibi...
+
+185
+00:39:34,996 --> 00:39:44,756
+Şu anki düşüncem ders içerisinde değişir mi bilmiyorum ama yazarak anlatmayı düşünüyorum ve bu yazdıklarımı da paylaşmayı düşünmüyorum.
+
+186
+00:39:44,756 --> 00:39:46,756
+Dolayısıyla...
+
+187
+00:39:54,675 --> 00:39:56,956
+Not paylaşmayı düşünmüyorum.
+
+188
+00:40:10,547 --> 00:40:16,567
+Hocam, videolar yanlış bilmiyorsam sisteme konuyor. Siz de koyacak mısınız?
+
+189
+00:40:19,087 --> 00:40:31,467
+Yani bu sistem yeni, benim için yeni. Şöyle bir bakayım, paylaş, paylaşma falan diye bir şey var mı? Otomatik olarak zaten sanırım kayıt altına alıyor.
+
+190
+00:40:32,724 --> 00:40:45,664
+Fakat kayıt altına aldığı şeyleri size açıyor mu, açmıyor mu veya benim öyle bir seçenek ayarlama şansım var mı bilmiyorum. Şöyle bir bakayım.
+
+191
+00:40:53,523 --> 00:41:09,203
+Yok gibi. Bana verilen öyle bir seçenek göremiyorum. Bu Zoom'u kullanıyor zaten sistem biliyorsunuz. Burada bana öyle bir seçenek sağlanmış değil.
+
+192
+00:41:12,243 --> 00:41:17,583
+Buraya bizi atan Zoom'a girmeden bir web sitesine girmemiz gerekiyor.
+
+193
+00:41:18,324 --> 00:41:38,344
+Orada da öyle bir şey görmemiştim. Yani kaydolsun, olmasın falan diye bir şey görmemiştim. Yanılmıyorsam otomatikman kaydediyor. Ama ona siz ulaşabiliyor musunuz, ulaşamıyor musunuz? Nasıl ulaşıyorsunuz bilmiyorum. Bilen varsa aranızda söylesin.
+
+194
+00:41:42,483 --> 00:41:50,364
+Derslerde ben şey yaptığımda otomatik betrile de yükleniyor ve oradan sonra izleyebiliriz ve imzedebiliriz.
+
+195
+00:41:51,203 --> 00:41:56,284
+Ama bu geçen yıl kimi diyorsunuz bu hafta? Yani bu yılkilerden mi? Bu dönemkilerden mi?
+
+196
+00:41:56,284 --> 00:42:07,923
+Yok bu dönemkilerden. Aynı 3-4 gün önce veri tabanları gerçekleştirilmesi dersinde ben denedim ve her şey çalışıyordu.
+
+197
+00:42:08,467 --> 00:42:09,367
+Tamam, güzel.
+
+198
+00:42:09,907 --> 00:42:11,787
+Online Yıldız üzerinden değil mi?
+
+199
+00:42:12,927 --> 00:42:13,768
+Evet, aynen.
+
+200
+00:42:14,768 --> 00:42:16,287
+Tamam, teşekkürler.
+
+201
+00:42:17,407 --> 00:42:21,407
+Bir de bu arada bazen ekranları değiştirmeyi unutuyorum.
+
+202
+00:42:21,407 --> 00:42:31,188
+Mesela şu anda görüntü şeyde kalmış, dosya yöneticisinde ama ben şeye geçmiştim bir süredir, kara ekrana.
+
+203
+00:42:32,179 --> 00:42:45,139
+Öyle bir hissederseniz, öyle bir hisse, yani onu tahmin ederseniz, hemen uyarın beni de doğru tarafa geçeyim. Şu kısımları falan herhalde yazdığımı görmediniz.
+
+204
+00:42:51,635 --> 00:43:10,435
+Evet, yani zaten öyle yazılacak bir şey yok. Sadece şu e-mail'i almanız yeterli. Önemli olan sanırım. [e-posta] ve ofis saatlerimde normalde bu saatler. Yani kontak için yine kalendliyle ama rastgele değil de kalendliyle şey yapalım. Önceden belirleyelim.
+
+205
+00:43:14,452 --> 00:43:26,292
+Gerçi bir Zoom linki alın bu saatlerde devamlı açık olsun falan da dediler ama onu da nasıl yapacağız falan onu bulmam gerekiyor. Onu yaptığım zaman sizinle de paylaşırım.
+
+206
+00:43:29,780 --> 00:43:37,320
+Evet, not paylaşmayı düşünmüyorum. Dolayısıyla kendi notumuzu tutun.
+
+207
+00:43:50,452 --> 00:43:52,332
+Evet.
+
+208
+00:43:59,251 --> 00:44:16,311
+Derste kullanacağımız araçlara falan geleceğim. Hatta onların yüklemesiyle ilgili falan da konuşuruz biraz. Bu hafta içerisinde yüklersiniz. Anaconda Python Distribution'u kullanıyoruz genelde. Yani kullandım geçen yıllarda.
+
+209
+00:44:22,835 --> 00:44:27,536
+Ders yönetimiyle ilgili acaba anlatılması gereken bir şey var mı?
+
+210
+00:45:00,851 --> 00:45:10,032
+Evet, yani yok gibi. Egzem sınavlar muhtemelen test olacak diye tahmin ediyorum.
+
+211
+00:45:31,188 --> 00:45:32,728
+Şimdilik öyle düşünüyorum.
+
+212
+00:45:43,188 --> 00:45:50,688
+Konular şar olarak, araç olarak dediğim gibi programlama dili olarak.
+
+213
+00:46:16,884 --> 00:46:34,604
+Python'u tercih ediyorum. Derste de Python'la anlatacağım, örnek çözdüğümde. Bazı öğrenciler farklı dillerle, Julia'yla mesela veya Matlab'la ödevleri sunmak istiyorlar.
+
+214
+00:46:44,563 --> 00:46:56,563
+Dediğim gibi dersleri böyle ilk bölümlerini, ders son kısımlarını uygulama olarak falan yaparsak...
+
+215
+00:47:02,739 --> 00:47:15,939
+Gerçi siz de kendi ekranınızda Julia veya Matlab'ı açıp oradan çalışabilirsiniz. Şimdi düşünüyorum çok bir farkı da yok. Ama benim anlattığım demoları, şunları bunları anlamanız daha zor olabilir.
+
+216
+00:47:19,939 --> 00:47:27,719
+İleride PyTorch falan anlatırsak, bu yine Python'la.
+
+217
+00:47:29,632 --> 00:47:34,092
+Siz de Python'la giderseniz dersteki demoları anlamanız daha kolay olur.
+
+218
+00:47:36,152 --> 00:47:38,572
+İde fark etmiyor.
+
+219
+00:47:40,572 --> 00:47:47,831
+Integrated Development Environment, Python'daki hangi ide? Daha doğrusu Anaconda'daki hangi ide?
+
+220
+00:47:47,831 --> 00:47:50,371
+Diye bir soru gelmiş.
+
+221
+00:47:55,188 --> 00:48:07,188
+Yakın zamanda Spyder'i kullandım. Bu da yine şeyle geliyor. Anaconda Python Distribution'da var.
+
+222
+00:48:07,188 --> 00:48:13,188
+Ama başka şeyler de kullanabilirsiniz.
+
+223
+00:48:24,275 --> 00:48:27,056
+Jupyter Notebookları da güzel ama
+
+224
+00:48:31,411 --> 00:48:47,911
+Küçük ekranlarda onunla iş yapmak, ders anlatmak falan çok kolay olmuyor sanırım. Hani böyle kısıtlı bir ekran alanımız var. Oradan böyle paylaşıp kodları falan göstermek çok kolay olmuyor diye hatırlıyorum.
+
+225
+00:48:48,331 --> 00:48:56,971
+Dolayısıyla ben kendim derste muhtemelen Spyder'ı kullanırım. Spyder'ı ya da cupaytarı.buk'u kullanırım.
+
+226
+00:48:58,420 --> 00:49:05,680
+Visual Studio Code'da aslında çok beğeniyorum. Başka dillerle onu kullanıyorum ama.
+
+227
+00:49:05,680 --> 00:49:11,140
+Python'da işte o Spider baya güzel.
+
+228
+00:49:11,140 --> 00:49:15,579
+Dolayısıyla Python için Spider'i tercih ediyorum daha çok.
+
+229
+00:49:15,579 --> 00:49:21,860
+Bunun yanında Neo Jetbrae'nin idesi neydi?
+
+230
+00:49:21,860 --> 00:49:23,860
+PyCharm.
+
+231
+00:49:23,860 --> 00:49:25,860
+PyCharm neydi?
+
+232
+00:49:27,668 --> 00:49:36,588
+O da bayağı iyi bir şey. Geçmişte bunu ayarlamıştım falan da şimdi ayarlamakla falan uğraşmayacağım tahmin ediyorum.
+
+233
+00:49:37,248 --> 00:49:38,668
+Hocam bir sorum olabilir mi acaba?
+
+234
+00:49:39,488 --> 00:49:40,048
+Tabii buyurun.
+
+235
+00:49:40,908 --> 00:49:47,948
+PyCharm kullanmayla ilgili bir kısıt var mı bildiğiniz? Genelde bu işler için pek kullanılmıyor ama çok da güzel bir idedir kendisi.
+
+236
+00:49:48,887 --> 00:49:50,488
+Evet, evet çok güzel bir idedir.
+
+237
+00:49:51,923 --> 00:50:17,943
+Ya şöyle, bu Spyder'de falan Matlab'dan gelen bir şey var. Komut satırı. O komut satırı çok işe yarıyor. Hızlıca böyle orada komutları deniyorsunuz falan sonra şeye yazıyorsunuz. Normal kodunuza ekliyorsunuz falan. O alışkanlık.
+
+238
+00:50:18,335 --> 00:50:35,596
+PyCharm'da da var da benzeri bir şey. O kadar da güzel değil PyCharm'ınki yanlış hatırlamıyorsam. En son buna bakalı birkaç yılda oldu şimdi. Dolayısıyla çok da bildiğimi iddia etmeyeyim. Ama güzel bir editör, çok beğenilen bir editör olduğunu biliyorum.
+
+239
+00:50:35,596 --> 00:50:44,175
+Bu size kalmış. Sonuçta programlama dili programlama dilidir. Her türlü ide ile yazabilirsiniz.
+
+240
+00:50:45,108 --> 00:50:51,308
+Sanırım büyük ihtimal ben derste Spyder'i kullanacağım gibi. Öyle tahmin ediyorum.
+
+241
+00:50:53,588 --> 00:50:59,308
+Anaconda Python Distribution'unu kullanırken, indirirken...
+
+242
+00:51:17,076 --> 00:51:28,596
+Ona bakalım biraz. Anakondanın hepsini indirmeyin. Bir kısmınızı belki muhtemelen biliyorsunuz ama yeni bilmeyenler varsa Minikonda'yı indirin.
+
+243
+00:51:33,076 --> 00:51:40,776
+Minikonda'yı kurduğunuz zaman size Konda diye bir araç veriyor. Komut satırıyla çalışmanız gerekiyor burada yalnız.
+
+244
+00:51:41,748 --> 00:52:09,307
+Konda'da istediğiniz şeyi kurabiliyorsunuz. Mesela Konda, sanırım install idi. Şu anda kafadan atıyorum ama bunu tekrar görmek lazım. Konda install mesela Python eşittir 3.8 falan gibi ve mesela NumPy.
+
+245
+00:52:12,115 --> 00:52:15,307
+ve Open CV
+
+246
+00:52:19,572 --> 00:52:38,152
+Nampay vesaire gibi burada şeyleri listeliyorsunuz. Yüklemek istediğiniz paketleri. Sadece o paketleri indiriyor. O güzel. Çünkü tüm hepsini kurarsanız, tüm anakondayı kurarsanız.
+
+247
+00:52:40,820 --> 00:52:57,159
+O zaman en son benim gördüğüm 600 MB'lik paketler indiriyordu. Yani gerekli gereksiz ne varsa indiriyor Anaconda'nın ana dağıtımında. Ama Miniconda 30 MB falan indiriyordu.
+
+248
+00:52:59,880 --> 00:53:08,139
+Öncelikle sonra da istediğiniz paketleri kuruyorsunuz. Bu install aynı zamanda o paketlerin update'ini yapıyor.
+
+249
+00:53:09,364 --> 00:53:19,264
+Dolayısıyla büyük ana konda dağıtımıyla değil de mini konda ve konda aracıyla çalışmanızı tavsiye ediyorum.
+
+250
+00:53:24,003 --> 00:53:31,103
+Yine kondayla çalışırken envirantları öğrenmeniz gerekiyor.
+
+251
+00:53:37,907 --> 00:53:43,907
+Yani diyelim ki bir projede belirli bir Python dağıdılımı kullanacaksınız.
+
+252
+00:53:45,748 --> 00:53:55,027
+Diyelim ki PyTorch için ayrı bir Python sürümüne ihtiyacınız var. Sadece onunla çalışıyor.
+
+253
+00:53:56,527 --> 00:54:03,927
+Ama diyelim ki TensorFlow'la da çalışmak istiyorsunuz. O da ayrı bir Python sürümü istiyor.
+
+254
+00:54:04,980 --> 00:54:16,980
+O zaman iki ayrı environment kuruyorsunuz. PyTorch için ayrı bir environment, TensorFlow için ayrı bir environment kuruyorsunuz.
+
+255
+00:54:32,784 --> 00:54:51,624
+Environment'a yüklüyor. Dolayısıyla birbirine karışmıyor. Dolayısıyla o konda aracını öğrenin. Bilmiyorsanız webden falan öğrenin.
+
+256
+00:54:55,476 --> 00:54:56,836
+Öğ...
+
+257
+00:55:01,748 --> 00:55:18,508
+Hatta bununla ilgili bir notlar falan olması lazım bende. Onu bir demonstrasyonda yapalım şu anda. Başka sorunuz edeceğiniz bir şey var mı? Veya tavsiyeniz veya merak ettiğiniz bir şey?
+
+258
+00:55:22,516 --> 00:55:24,516
+Hocam size...
+
+259
+00:55:24,516 --> 00:55:25,315
+Efendim?
+
+260
+00:55:26,016 --> 00:55:39,516
+Yazmak zor olmayacak mı hocam? Hani yavaşlatmaz mı bizi? Çünkü biz bu videoları istediğimiz kadar izleyebiliyoruz. Yani daha sonrasında notlar alabiliriz. Yani yavaşlatır diye düşündüm.
+
+261
+00:55:40,856 --> 00:55:42,416
+Yazıyla mı anlatma?
+
+262
+00:55:43,056 --> 00:55:45,775
+Evet hocam. Çünkü bayağı bir vakit alıyor.
+
+263
+00:55:46,996 --> 00:56:04,795
+Yani ben bir onu denemek istiyorum. Çeşitli nedenlerim var. Öyle bir başlayalım. Bakalım olacak gibi değil, başka bir şeye dönebiliriz. Şöyle bir yazarak gidelim diye düşünüyorum öncelikle.
+
+264
+00:56:08,371 --> 00:56:19,271
+Hocam, sadece bu gönderdiğiniz e-mail gizli sistemde bana ulaşmadı. Onu bir tekrar gönderebilir misiniz?
+
+265
+00:56:22,031 --> 00:56:31,571
+Gönderdim, ulaşmamış. Tekrar göndermeme gelecek hafta da tekrar gönderirim. Çünkü yeni arkadaşlar da gelebilir, onlarınkinini de test etmek için.
+
+266
+00:56:32,083 --> 00:56:56,243
+Gelecek hafta hatırlatırsan tekrar göndereyim. Ama bu gelmediğine göre sende bir problem olabilir. Bence hemen sen IT, bilgi işleme ulaşmaya çalış. Her dönem böyle bir veya iki öğrenci de böyle sorunlar çıkabiliyor. Birileri benimki bana ulaşmıyor falan diyor. Spamını falan kontrol ettin mi?
+
+267
+00:56:59,539 --> 00:57:01,000
+Sıpama düşmüş olabilir.
+
+268
+00:57:01,720 --> 00:57:04,000
+Sadece bir tane e-mail şey var.
+
+269
+00:57:06,940 --> 00:57:10,460
+Merhaba diye bir şey olacak.
+
+270
+00:57:12,740 --> 00:57:15,920
+Sen bence hemen bilgi işlemle iletişim kur.
+
+271
+00:57:17,700 --> 00:57:20,400
+Yani böyle bir şey denendi bana gelmedi diye.
+
+272
+00:57:22,940 --> 00:57:25,599
+Önemli bir e-mail attığımızda kaçırma.
+
+273
+00:57:27,411 --> 00:57:38,192
+Resmi e-posta adresine gelmesini bekledim ben de bir an. Gmail'e geliyor, onu hatırlatmış olayım. Kayıt olurken kullanılan hesabınız varsa oraya gelmesi gerekiyor.
+
+274
+00:57:39,931 --> 00:57:44,112
+Bak bu da güzel bir şey oldu. Ben de normalde onu beklemiştim.
+
+275
+00:57:44,592 --> 00:57:47,592
+Evet hocam, ben de onu da oraya bir gelmiştim.
+
+276
+00:57:47,971 --> 00:57:50,831
+Gmail'e gelebiliyor demek ki, yönlendirmişler.
+
+277
+00:57:51,632 --> 00:57:52,211
+Teşekkür ederim.
+
+278
+00:57:54,420 --> 00:57:55,420
+Evet.
+
+279
+00:58:08,275 --> 00:58:18,155
+Bu KONDA kurulumuyla ilgili sanırım geçen yıllardan bir şey olacaktı bende, notlar olacaktı. Bakalım ona bir.
+
+280
+00:58:24,724 --> 00:58:27,724
+Installing Python diye bir doküman.
+
+281
+00:58:32,340 --> 00:58:41,720
+Burada şey yapmışım, anlatmışım. Burada Cupaytar Notbook ile anlatmışım. Burada ister Cupaytar Notbook ile anlatmışım.
+
+282
+00:58:41,720 --> 00:58:42,960
+Hocam şu an ekranı göremiyoruz.
+
+283
+00:58:43,480 --> 00:58:45,019
+Bak unuttum yine.
+
+284
+00:58:53,523 --> 00:59:01,903
+Evet, installing Python diye bir doküman. Bu dokümanı şimdi paylaşıyorum ben sizinle. Şehire koyuyorum.
+
+285
+00:59:09,652 --> 00:59:16,971
+Share'e koydum. Bir dakika içinde falan senkronize olur o. Dropbox'dan indirebilirsiniz.
+
+286
+00:59:24,019 --> 00:59:33,680
+Burada ne yapıyorsunuz? Öncelikle MiniKonda, Konda I.O.'da imiş. O zaman hala burada mı? Bir bakayım.
+
+287
+00:59:45,876 --> 00:59:48,235
+Web sayfası açmasın, Word'te.
+
+288
+00:59:54,195 --> 01:00:05,255
+Tüm ekranı paylaşayım en iyisi oradan oraya atlamaktansa. Evet, Minikonda bu adresleymiş hakikaten de. Konda.io, Minikonda'da.
+
+289
+01:00:09,204 --> 01:00:28,044
+Buradan ne yapıyorsunuz? İndiriyorsunuz. Windows installerlar var. Python'un iki versiyonu var. Python 2 ve Python 3. Python 3'ü indirin. Python 2 yavaş yavaş tarihe karışıyor.
+
+290
+01:00:30,184 --> 01:00:35,963
+Burada 64 biti indirebilirsiniz. Python 3 64 biti mesela indirebilirsiniz.
+
+291
+01:00:36,980 --> 01:00:40,640
+Bunu indirdiğiniz zaman 55 MB'lik bir indirim olacak.
+
+292
+01:00:42,480 --> 01:00:54,260
+Kurduğunuz zaman, komut satırını açtığınızda, CMD dediğinizde, CMD yazdığınızda başlangıç menüsünden şöyle komut satırı geliyor.
+
+293
+01:00:54,559 --> 01:00:55,780
+Ekranı görüyorsunuz değil mi?
+
+294
+01:00:56,700 --> 01:00:57,240
+Evet hocam.
+
+295
+01:00:58,980 --> 01:01:02,827
+Burada Konda diye bir araç...
+
+296
+01:01:03,251 --> 01:01:29,192
+Artık komut satırında olması lazım. Konda ile install NumPy falan demişiz de ondan önce aslında bir environment oluşturmanız lazım. Çünkü farklı projeler için farklı environment'lar oluşturmanız gerekebiliyor.
+
+297
+01:01:31,923 --> 01:01:46,963
+Pardon. Python'daki pipi biliyorsunuzdur. Pip paket yöneticisi. Onun benzeri burada da environmentlar, nedense bu kelimeyi söyleyemiyorum, oluşuyor.
+
+298
+01:01:50,463 --> 01:01:58,003
+Konda Create, görüyor musunuz? Konda. Create a new Konda environment from a list of specified packages, diyor.
+
+299
+01:01:59,731 --> 01:02:05,331
+Dolayısıyla mesela bu demo için şu anda bir demo yapalım sizinle.
+
+300
+01:02:06,731 --> 01:02:25,324
+CD Documents, CD Oğuz diyeyim, CD Temp diyeyim. Yok mu? Mkdir Temp. Bir Temp Rory Directory yaptım. CD Temp diyorum.
+
+301
+01:02:27,315 --> 01:02:49,515
+Evet. Şimdi burada bir environment oluşturalım. Konda, create, demo 1 diyeyim. Ya da project, proje 1 diyeyim. Konda bir proje 1.
+
+302
+01:02:49,903 --> 01:02:57,684
+Environment'ı oluşturacaktı. Ne dedi? Target Prefix is the Base Prefix demiş.
+
+303
+01:03:01,811 --> 01:03:09,511
+Evet, tabii epeydir kullanmadım bu komutu. Bir hatırlayalım. Konda create environment diyelim.
+
+304
+01:03:11,591 --> 01:03:15,731
+Hocam, burada create eksine koyup ismi yazarsanız.
+
+305
+01:03:16,171 --> 01:03:17,651
+Onu mu unuttun?
+
+306
+01:03:18,771 --> 01:03:21,731
+Tire n koyup isim yazın hocam. O name olarak geçmiş.
+
+307
+01:03:21,731 --> 01:03:23,371
+Ha, şunu diyorsun.
+
+308
+01:03:25,940 --> 01:03:48,440
+Bunları okuyun. Konda ile Environment nasıl yönetilir? Şöyle yapmamız lazımmış. Konda, Tren'e de sanırım Project 1. Bir de burada şeyde ayarlayabiliyorsunuz. Özellikle diyelim ki Python.
+
+309
+01:03:51,923 --> 01:04:16,523
+Eşittir 3.5. Yani ben 3.5'lik Python'u istiyorum diyebiliyorsunuz. Konda ne yapıyor? O 3.5 Python'u indireyim mi falan diyor. Evet diyoruz. Konda bu şekilde. Sadece size gerekli olan paketleri indiriyor.
+
+310
+01:04:17,748 --> 01:04:43,347
+Gördüğünüz gibi Python'un da 3.5'ini indirdi. Diğer paketler de bu 3.5 ile uyumlu paketler oluyor. Yani rastgele indirmiyor. Diyelim ki PyTorch 3.5 ile çalışıyor. 3.5'i indirebiliyorsunuz. Benzer şekilde sanırım diğer paketlerin de versiyonunu yazabiliyorsunuz diye tahmin ediyorum.
+
+311
+01:04:52,947 --> 01:05:06,267
+Şöyle diyor, mesela şunlar indirilecek dedi, bunlar kurulacak dedi. Bazen de upgrade edilecek şeyler varsa onları upgrade de ediyor. Yani tekrar install dediğimizde tekrar şey yapıyor.
+
+312
+01:05:11,891 --> 01:05:18,031
+Şimdi bu şekilde bu ne oldu? Yüzde biri gelmiyor tabii internetimiz falan filan.
+
+313
+01:05:22,452 --> 01:05:33,552
+Başka bir komut satırı daha açayım. cmd. Bu şekilde komut satırı oluşturacak. Önce buraya o zaman onu yazalım.
+
+314
+01:05:49,907 --> 01:06:00,907
+Project you will develop diyelim. Bunun içinde ne yapacak?
+
+315
+01:06:02,907 --> 01:06:13,867
+Konda create ne? Diyelim ki my project diyelim.
+
+316
+01:06:14,643 --> 01:06:19,643
+Veya diyelim ki Pythorce ile çalışacaksınız veya OpenCV ile çalışacaksınız.
+
+317
+01:06:19,643 --> 01:06:24,643
+OpenCV 1 gibi.
+
+318
+01:06:24,643 --> 01:06:32,643
+Ve Python eşittir 3.6 gibi.
+
+319
+01:06:32,643 --> 01:06:36,643
+Sonra...
+
+320
+01:06:37,652 --> 01:06:55,152
+Bu yarattığınız, oluşturduğunuz environment'a geçmeniz lazım. Birden fazla environment olabiliyor ya. Dolayısıyla ne yapmanız lazım? Ne diyeceğim?
+
+321
+01:07:06,579 --> 01:07:14,519
+Ara falan da vermedik çabuk bitiririm diye ama ders yapmamayı düşündüğüm için.
+
+322
+01:07:19,380 --> 01:07:21,940
+Aktivasyon için ne yapıyoruz?
+
+323
+01:07:22,699 --> 01:07:24,500
+Koruna aktiviyet.
+
+324
+01:07:24,760 --> 01:07:27,320
+Evet Windows ve Linux da farklı bu.
+
+325
+01:07:27,891 --> 01:07:50,691
+Bu arada Linux'ta çalışmanızı esasen tavsiye ederim. Yani bu Python falan Linux'ta daha iyi çalışıyor. Bizim anlatacağımız konular için bir farkı olmaması lazım. Python, Konda, OpenCV vs. zaten bunlar taşınabilir paketler.
+
+326
+01:07:51,347 --> 01:08:00,748
+Ve yanılmıyorsam Linux'ta da daha iyi çalışır diye düşünüyorum. Ama Windows'ta da çalışıyor. Onda da bir sıkıntı yok. Gördüğüm kadarıyla.
+
+327
+01:08:04,847 --> 01:08:17,467
+Windows'ta aktive etmek için Activate diye bir komut kuruyor Konda. Mesela bende bir tane PyTorch Environment'ı olması lazım. Activate.
+
+328
+01:08:18,899 --> 01:08:36,420
+PyTorch Env yazıyorum. O environment'ı aktive etti. Buraya yazdı environment ismini. Dolayısıyla ne diyoruz?
+
+329
+01:08:45,779 --> 01:08:58,739
+Activate PyTorch Env diyorsunuz. On Linux. Linux'u bilen var mı?
+
+330
+01:09:03,891 --> 01:09:07,951
+Neyse, Linux kullanan olursa onu internetten araştırıp öğrenebilir.
+
+331
+01:09:09,092 --> 01:09:18,692
+Şimdi bu environment'ı aktive ettikten sonra artık kurduğunuz diğer paketler bu environment'ın içine kuruluyor.
+
+332
+01:09:18,692 --> 01:09:21,692
+Yani diyelim ki ne kuruyorsunuz?
+
+333
+01:09:24,891 --> 01:09:28,771
+CD Documents.
+
+334
+01:09:31,028 --> 01:09:45,268
+Oğuz Temp dedik. Mk'dir Project One dedik. CD Project One.
+
+335
+01:09:45,268 --> 01:09:51,248
+Şimdi Project One'ın içerisinde PyTorch Environment zaten aktif.
+
+336
+01:09:54,068 --> 01:10:02,068
+Burada da şu tarz bir şey güzel oluyor. Bir Requirements Text oluşturabiliyorsunuz.
+
+337
+01:10:24,435 --> 01:10:34,675
+Requirements Text'te gerekli paketleri yazabiliyorsunuz da, şimdi Pit'ten atladım buraya. Konda'da da bunu yapabiliyor muydunuz?
+
+338
+01:10:37,095 --> 01:10:41,695
+Deneyelim. Diyelim ki ne lazım? NumPy lazım.
+
+339
+01:10:43,835 --> 01:10:46,575
+Matplotlib lazım.
+
+340
+01:10:48,055 --> 01:10:50,095
+OpenCV lazım.
+
+341
+01:10:51,315 --> 01:11:17,435
+Pilglo lazım. Scikit. Scikit. Learn lazım. Scikit. Image. Jupyter. SciPy. Bunlar paketler.
+
+342
+01:11:20,020 --> 01:11:25,399
+Bu arada bugüne niye takıldı kaldı? Bunu durdurayım, tekrar deneyelim.
+
+343
+01:11:28,819 --> 01:11:31,819
+Öniversitesi Bilgisayar Mühendisliği
+
+344
+01:11:37,652 --> 01:11:39,652
+Kurdu mu kurmadım bunu bilemedim.
+
+345
+01:11:41,652 --> 01:11:43,652
+Activate etmeye çalışayım.
+
+346
+01:11:43,652 --> 01:11:45,652
+Conda
+
+347
+01:11:45,652 --> 01:11:49,652
+Activate
+
+348
+01:11:49,652 --> 01:11:53,163
+Neydi bunun ismi? Project One mıydı?
+
+349
+01:12:01,427 --> 01:12:26,127
+Proje 1'miş. Proje 1 active edemedi. Demek ki kuramamış bu şeyi. Artık yeni bir isimle tekrar ben olsam bunu yapmayı denerim. Proje 1 end diyeyim. Tekrar deneyeceğiz. Tekrar kurmaya çalışacağız.
+
+350
+01:12:27,347 --> 01:12:37,387
+Sonuçta burada bunu kurmamız lazım. İndirme daha az olacak bu sefer. Daha önce indirdiklerini keşliyor bir yerlerde.
+
+351
+01:12:42,188 --> 01:12:48,148
+Tekrar denilsin bakalım. Yaptı galiba.
+
+352
+01:12:52,532 --> 01:12:59,932
+Artık Condu Activate gelmiş. Normalde Activate'di. Condu Activate ve Condu Deactivate varmış.
+
+353
+01:13:01,932 --> 01:13:09,132
+Condu Activate Project 1.
+
+354
+01:13:09,132 --> 01:13:14,932
+Evet, Proje 1. Environment'ı burada açık.
+
+355
+01:13:16,948 --> 01:13:31,788
+PyTorch Environment'ı burada açık. Şimdi bir environment'a direkt istediğiniz paketleri kurabiliyorsunuz. Diğer environment'taki paketlerle karışmıyor.
+
+356
+01:13:43,667 --> 01:13:52,407
+Python'la beraber geliyor. Konuda neden tavsiye ediyoruz pip yerine? Neden tavsiye ediyoruz arkadaşlar?
+
+357
+01:13:56,948 --> 01:14:01,388
+Böyle desek pip kuracak. Ama farklı yerden kuracak.
+
+358
+01:14:01,388 --> 01:14:14,528
+Konda install. Bakalım şeydeki kurabiliyor muyum? Olmadı. Bilmiyorum.
+
+359
+01:14:17,588 --> 01:14:21,408
+Konda ne diyelim?
+
+360
+01:14:22,100 --> 01:14:25,100
+Requirements Text diyelim.
+
+361
+01:14:30,387 --> 01:14:32,708
+Hocam, ekranınızı göremiyoruz.
+
+362
+01:14:34,788 --> 01:14:36,108
+Göremiyor musunuz?
+
+363
+01:14:38,167 --> 01:14:39,148
+Görüyorum hocam şimdi.
+
+364
+01:14:40,587 --> 01:14:43,628
+Epeydir böyle çalışıyorum ekranda. Göremiyor musunuz onu?
+
+365
+01:14:44,307 --> 01:14:46,067
+Bir şey yazdığımızı göremedik.
+
+366
+01:14:47,067 --> 01:14:49,028
+Tamam, şurada şey yazdım.
+
+367
+01:14:52,327 --> 01:14:55,188
+Yok, browserda bir şey yapıyorum şu anda.
+
+368
+01:14:56,243 --> 01:14:59,463
+Tüm ekran paylaşımı yaptığını düşünüyorum. Yapamamış mıyım acaba?
+
+369
+01:15:00,123 --> 01:15:01,103
+Yapmıştınız hocam.
+
+370
+01:15:01,183 --> 01:15:03,183
+Yapmışsınız hocam.
+
+371
+01:15:03,884 --> 01:15:04,103
+Evet.
+
+372
+01:15:06,043 --> 01:15:07,743
+Şimdi oldu.
+
+373
+01:15:08,884 --> 01:15:14,144
+Yani böyle bir requirements text nasıl kullanılabilir Konda'yla diye baktım ona da şimdi.
+
+374
+01:15:15,583 --> 01:15:18,763
+Direkt bir şey yok. Şöyle bir şey tavsiye ediyor sanki adamlar.
+
+375
+01:15:23,636 --> 01:15:26,576
+Konda liste requirements text.
+
+376
+01:15:35,923 --> 01:15:41,724
+Evet, bunu bilmiyorum. Requirements Text kullanmayı bilen var mı?
+
+377
+01:15:42,863 --> 01:15:49,623
+Hocam, Virtual Environment'ın içindeyken FIP'le de kurabilirsiniz. Virtual Environment'ın içine kuracaktır.
+
+378
+01:15:56,083 --> 01:16:06,083
+Evet, yani pipi de kullansak aynı yere kuruyor da. Fakat pip farklı yerden alıyor, konda farklı yerden alıyor gibime geliyor.
+
+379
+01:16:07,363 --> 01:16:19,083
+Evet hocam, ikisi farklı yerlerden alıyor. Anaconda'nın kendi repositesine bakıyor. Varsa oradan kuruyor. Pipin baktığı yer daha genel aslında.
+
+380
+01:16:20,435 --> 01:16:20,996
+Evet.
+
+381
+01:16:21,476 --> 01:16:23,496
+IP repositorilerine bakıyor.
+
+382
+01:16:24,136 --> 01:16:44,735
+Bu da Konda ile pipi kurun diyor. O zaman farklı bir yerden alacak mı acaba? Neyse, biraz ayrıntıya girdik. Normalde web projelerinde çalışırken daha çok pip ile çalışıyorsunuz ama pipte böyle bir requirements text yazıyorsunuz.
+
+383
+01:16:45,427 --> 01:17:10,708
+Projeyi de başkasıyla paylaştığınızda Requirements Text'i gönderiyorsunuz. İnsanlar onları pip install ile kurabiliyor. Pip install, Requirements Text diyorsunuz. Direkt o dosyadaki paketleri kuruyor. Paketi göndermemiz, dolayısıyla herkes aynı environment'a kolaylıkla kurabilmiş oluyor.
+
+384
+01:17:12,500 --> 01:17:20,040
+Belki bir çözümü vardır artık. Bunu çözüme çözebilen olursa, bizimle paylaşırsa mutlu oluruz.
+
+385
+01:17:20,700 --> 01:17:26,079
+Direkt şu şekilde devamlı paketleri sıralayıp kurabiliyorsunuz artık.
+
+386
+01:17:27,020 --> 01:17:33,840
+Mesela bu yeni oluşturduğumuz Project 1 environment'a ne yapalım?
+
+387
+01:17:34,600 --> 01:17:39,239
+Kopyaladım. Konda install. Bunları indir dedim.
+
+388
+01:17:40,948 --> 01:17:46,948
+Bunları artık uygun versiyonlarıyla, en son versiyonlarıyla Python indirecek.
+
+389
+01:17:48,948 --> 01:17:50,427
+Kuracak.
+
+390
+01:17:54,323 --> 01:18:03,963
+Bu kurduğunuz environmentlarda çalışırken tabii editörün bu environment'ı tanıması gerekiyor.
+
+391
+01:18:04,983 --> 01:18:13,983
+Spider'ı direkt buradan başlatırsanız sanırım direkt şey yapıyor, bu environment olduğunu biliyor.
+
+392
+01:18:21,971 --> 01:18:26,131
+Bu environment'ı istiyorum ben diye ayarlamanız lazım.
+
+393
+01:18:28,871 --> 01:18:31,371
+Bu mesela spider sonlar.
+
+394
+01:18:36,787 --> 01:19:00,687
+Yeni Spyder var diyor. Şurada mesela gördünüz mü? Konda PyTorch N Python'unu kullanıyorum diyor. Spyder. Dolayısıyla onu da not alın. Hangi editörü kullanırsanız doğru environment'ı açmanız gerekiyor.
+
+395
+01:19:03,859 --> 01:19:10,920
+Arkada böyle çirkin bir komut satırı kalıyor. Onu sevmiyorum ama.
+
+396
+01:19:12,699 --> 01:19:18,859
+Yalnız şey var, Windows'da çalışırsanız, şuradan Anaconda'ya gelirseniz,
+
+397
+01:19:20,500 --> 01:19:26,819
+Spider mevcut sisteminizdeki environment'ları biliyor anladığım kadarıyla.
+
+398
+01:19:26,819 --> 01:19:31,079
+Onun için bir açma kısa yolu oluşturmuş buraya.
+
+399
+01:19:31,604 --> 01:19:33,604
+Ben o tıkladığımda oraya
+
+400
+01:19:37,779 --> 01:19:45,939
+Arkada böyle çirkin bir komut satırı kalmadan kendisi onu açıyordu. Şu anda açıyor mu bilmiyorum.
+
+401
+01:19:48,139 --> 01:19:53,319
+Evet, şurada mesela proje 1 environment'ımızı hazırlamaya devam ediyoruz.
+
+402
+01:19:57,524 --> 01:20:00,604
+Siz de bir taraftan yapıyorsunuzdur diye tahmin ediyorum.
+
+403
+01:20:03,104 --> 01:20:06,524
+Evet, artık indirecek bu indirmesi kurması bir müddet sürebilir.
+
+404
+01:20:07,524 --> 01:20:22,864
+Ama bunu yaptığında bu ders için çalışma environment'ınız hazır olur veya farklı projeler için farklı çalışma ortamları hazırlayabilirsiniz.
+
+405
+01:20:24,051 --> 01:20:27,131
+Hocam, bu kurduğunuz paketleri kısaca anlatabilir misiniz?
+
+406
+01:20:27,131 --> 01:20:27,652
+Pildo.
+
+407
+01:20:28,572 --> 01:20:38,391
+Evet, NumPy şey, standart Python'da matrikslerle çalışma.
+
+408
+01:20:39,371 --> 01:20:46,851
+Matriksten de öte aslında çok boyutlu matriksler diyelim.
+
+409
+01:20:47,031 --> 01:20:50,652
+Yani matriks iki boyutlu oluyor da, nd array diye geçiyor.
+
+410
+01:20:51,072 --> 01:21:00,072
+3 boyutlu, 4 boyutlu, 5 boyutlu, 10 boyutlu Matrix gibi yapılarla çalışabiliyorsunuz.
+
+411
+01:21:01,771 --> 01:21:12,172
+Matplotlib çok popüler bir grafik çizme aracı, görselleştirme aracı. 2 ve 3 boyutlu grafikler çizebiliyorsunuz.
+
+412
+01:21:14,012 --> 01:21:16,072
+OpenCV...
+
+413
+01:21:16,532 --> 01:21:25,532
+Çok popüler ve çok hızlı çalışan bir imge işleme ve bilgisayarla görü kütüphanesi.
+
+414
+01:21:26,832 --> 01:21:36,311
+Intel tarafından geliştiriliyor diye hatırlıyorum. C++, Java, C Sharp, Python gibi birçok dille bindingi var.
+
+415
+01:21:37,631 --> 01:21:41,532
+Biz de şu anda bu komutla Python bindingini kuruyoruz.
+
+416
+01:21:44,148 --> 01:21:53,708
+Bunu kullanabiliriz. Yani imgeleri açmak için, görüntülemek için, içeriğini değiştirebilmek için bunu kullanabiliriz.
+
+417
+01:21:55,268 --> 01:22:08,587
+Pilov imgeleri açıyor sadece. Ama farklı imge formatlarını açabiliyor. Birçok farklı imge formatını açabiliyor. Ve size NumPy dizisi veriyor.
+
+418
+01:22:09,268 --> 01:22:23,347
+Yani JPEG'tir. Biliyorsunuz farklı ingil formatları var. JPEG, Bitmap, PNG, TIFF. Bütün bunları açabilen bir program. Paket diyelim.
+
+419
+01:22:35,283 --> 01:22:37,283
+İmge İşleme Kütüphanesi.
+
+420
+01:22:38,823 --> 01:22:42,963
+Cupayter bir şekilde bir ide veriyor size.
+
+421
+01:22:42,963 --> 01:22:51,963
+Web browser'ından kodlama yapıp, kodlama sırasında dokümentasyon da yazabiliyorsunuz.
+
+422
+01:22:54,983 --> 01:22:58,963
+Oldukça güzel. Büyükçe bir ekranınız varsa...
+
+423
+01:23:00,148 --> 01:23:15,608
+Güzel, şey için de güzel. Dokümentasyon hazırlamak için de güzel. Yani diyelim ki bir tutorial gibi bir şey yapacaksınız. Jupyter Notebook açıyorsunuz, açıklamalarınızı yazıyorsunuz, altına kodu yazıyorsunuz.
+
+424
+01:23:17,988 --> 01:23:25,968
+Öğrenci onu veya öğrenmek isteyen kişi onu okuyor. O kodu kendisi deniyor. Değiştirebiliyor küçük kod parçaları.
+
+425
+01:23:26,351 --> 01:23:44,371
+Yani Dokumentasyon Kod, Dokumentasyon Kod, Dokumentasyon Kod bu şekilde gidiyor. O Dokumentasyonu da şeyle, neyle yazıyordunuz arkadaşlar? Markdown'la falan yazıyorsunuz.
+
+426
+01:23:45,951 --> 01:23:50,371
+Bu arada Google'ın Colab'ı var biliyorsunuz.
+
+427
+01:23:51,188 --> 01:24:09,887
+Yani kendi makineniz çok çok kuvvetsizse Google'ın neyi var? Colab diye bir şeyi var. Onu nereye yazayım?
+
+428
+01:24:46,612 --> 01:24:57,011
+Evet, yani Konda'yı direkt requirement text kullanmak için böyle bir tek satırlık script paylaşmış bir arkadaşınız, [öğrenci] arkadaşınız.
+
+429
+01:25:04,851 --> 01:25:10,172
+Bu adrese girdiğiniz zaman size bir GFighter Notebook.
+
+430
+01:25:11,636 --> 01:25:29,815
+Veriyor veya geliştirmişler direkt o tarz bir şey. Sanırım direkt QPyter Notebook. Orada hem onu paylaşabiliyorsunuz hem orada kod geliştirimi yapabiliyorsunuz. 12 saat falan da açık kalabiliyor.
+
+431
+01:25:40,916 --> 01:25:54,176
+Evet, arkadaşınız başka şeyler de paylaşıyor arkadaşlarınız. Jupayter Notebook o bakımdan orada kullanılabiliyor. You can use diyelim. Buraya ufak bir dokumentasyon hazırlamış olalım.
+
+432
+01:25:57,176 --> 01:26:03,536
+Your local environment, your local computer diyelim.
+
+433
+01:26:08,212 --> 01:26:19,212
+Ne diyelim buraya? Working Enmes diyelim. Buna heading 1 yapalım.
+
+434
+01:26:21,212 --> 01:26:28,108
+Installing diyelim. Bunu da heading 1 yapalım.
+
+435
+01:26:31,859 --> 01:26:43,559
+Evet, Kaggle da Google'un. Kaggle daha mı iyi diyorsunuz? Bir de Databricks mi var?
+
+436
+01:26:47,539 --> 01:26:56,960
+Başka böyle bildiğiniz çalışılabilecek ortamlar falan varsa söylerseniz buraya ekleriz. Zaman içinde burada bir bilgi şeyimiz oluşsun.
+
+437
+01:26:58,960 --> 01:27:03,380
+Installing Python diyelim buraya.
+
+438
+01:27:09,971 --> 01:27:33,171
+GPU ilk planda gerekmiyor. Yani bizim kullanacağımız dersin büyük kısmında klasik bilgisayarla görü yapacağız. Dolayısıyla orada GPU gerekmiyor. Ama neural network'lara falan girersek orada GPU gerekiyor.
+
+439
+01:27:34,676 --> 01:28:01,475
+Yani çok fark ettiriyor. Hız açısından çok fark ettiriyor. Lokalde çalışmak çok zor tabii. Ciddi bir bilgisayar olmazsa çalışmak çok zor esasen. Lokal veya dışarıda. Hani bu kolap falan da çok kuvvetli değil esasen. Milyon dolarlık şeyler gerekiyor. Çok çok büyük networkleri eğiteceğim dersen.
+
+440
+01:28:02,484 --> 01:28:14,024
+Şey yapacağız, biraz ufak networkleri eğitmeyi öğrenip daha sonra hazır networkleri kullanmayı onun üzerinde dururuz diye düşünüyorum. Bakalım ne yaparız?
+
+441
+01:28:15,083 --> 01:28:24,404
+Elinin altında böyle büyük sağlam makineler olanlar var mı? Bizim bölüm dışında öğrenciler de var sanırım veya dışarıdan gelenler olabilir.
+
+442
+01:28:25,716 --> 01:28:39,976
+Hocam, onun için de Google Cloud platformu kullanabiliriz. Bize öğrenci olduğumuz için bayağı bir ücret veriyordu. Tam hatırlamıyorum ama yeter bize, çok rahat yeter böyle şeyler için.
+
+443
+01:28:39,976 --> 01:28:43,836
+Google Cloud, Computing Engine video.
+
+444
+01:28:44,724 --> 01:28:53,224
+Altında platformlar var. Onlar öğrenci olduğumuz için yüksele bir meblağı veriyor kullanmamız.
+
+445
+01:28:54,224 --> 01:29:00,744
+Doğru. İyi hatırlattın. Google Cloud'da 300 dolar mı?
+
+446
+01:29:01,268 --> 01:29:04,308
+Ben 300 dolar diye hatırladım. Yanlış hatırlıyorum belki.
+
+447
+01:29:04,308 --> 01:29:08,388
+300 olabilir hocam. Ben tam emin olamadım. Baya yıllar geçti ben de hatırlamıyorum.
+
+448
+01:29:08,708 --> 01:29:12,288
+Evet, orada yalnız şeye dikkat etmeniz gerekiyor diye duymuştum.
+
+449
+01:29:14,288 --> 01:29:18,328
+Bu açtığınız bilgisayarı işiniz bitince kapatmanız gerekiyor.
+
+450
+01:29:18,328 --> 01:29:28,588
+Yoksa o bilgisayar, siz orada bir şey çalıştırmasanız bile açıksa o virtual bilgisayar o kredinizden düşüyor.
+
+451
+01:29:29,971 --> 01:29:31,971
+Ona dikkat edin.
+
+452
+01:29:31,971 --> 01:29:35,971
+Free
+
+453
+01:29:35,971 --> 01:29:37,971
+100
+
+454
+01:29:37,971 --> 01:29:41,931
+Dollar
+
+455
+01:29:55,155 --> 01:30:08,355
+Stop the virtual machine after stopping, while not working with the end.
+
+456
+01:30:28,916 --> 01:30:48,215
+Evet, bu Sci-Fi daha kurulmaya çalışılıyor. Yani bu bilgisayarın ve network hızına göre değişebilir. Şu anda da network'ün yavaş olduğunu düşünüyorum. Türkiye'de birçok yerde online sınıflar falan var.
+
+457
+01:30:53,587 --> 01:31:03,828
+Evet, bu şekilde kurabiliyorsunuz sisteminizi. Şuraya da Editors diyelim.
+
+458
+01:31:08,340 --> 01:31:27,244
+Editors, Jupy, Payiter, Notebook. Bunda heading 2 yapalım. Buraya da heading 2 spider diyelim.
+
+459
+01:31:32,243 --> 01:31:35,804
+Gibi.
+
+460
+01:31:39,423 --> 01:31:44,903
+Yani bunu şey için ekledim. Sadece Jupyter kullanmak zorunda değilsiniz gibi.
+
+461
+01:31:47,963 --> 01:31:53,063
+Bunu yaptıktan sonra ne yapabiliyorsunuz?
+
+462
+01:31:55,523 --> 01:31:58,743
+Environment'ınıza gidiyorsunuz.
+
+463
+01:31:59,283 --> 01:32:04,064
+Kapatmışım galiba şeyi. Değer konut satırına.
+
+464
+01:32:10,452 --> 01:32:30,452
+Konda Activate PyTorch End diyelim. Burada Spyder'i başlatabilirsiniz veya iş yaptınız. Bunu direkt kapatmadan Environment'dan çıkmak için de Deactivate diyorsunuz.
+
+465
+01:32:30,452 --> 01:32:36,452
+Konda Deactivate PyTorch.
+
+466
+01:32:37,716 --> 01:32:48,696
+Direkt Deactivate diyorsunuz. Deactivate dediğin zaman o environment'dan artık çıkmış oluyorsunuz. Normal çalışmanıza devam edebilirsiniz.
+
+467
+01:32:55,016 --> 01:33:04,176
+Evet, yani dediğim gibi bu hafta derse de başlamak istemiyorum. Çünkü eklesildiler devam ediyor.
+
+468
+01:33:04,948 --> 01:33:17,268
+Yeni ekleyen öğrenciler olabilir. Sonra onlara hadi bakalım sil baştan oluyor. O yüzden başka bir sorunuz yoksa artık bu haftalık burada bitirelim diye düşünüyorum.
+
+469
+01:33:19,088 --> 01:33:25,088
+Veya söylemenizi isteye az önce diğer arkadaşlara vereceğiniz tipler falan da olabilir.
+
+470
+01:33:33,363 --> 01:33:39,003
+Bunu zaten paylaştım. İsmini değiştireyim. Installing Note bu Python demeyeyim de buna.
+
+471
+01:33:41,543 --> 01:33:42,163
+Ne diyeyim?
+
+472
+01:33:47,643 --> 01:33:50,843
+Ne diyelim? Infobase mi diyelim?
+
+473
+01:33:53,903 --> 01:33:58,243
+Yani ufak tefek buraya bildiklerimizi yazalım zaman içerisinde.
+
+474
+01:33:59,103 --> 01:34:00,583
+Dersle ilgili şeyler.
+
+475
+01:34:01,395 --> 01:34:28,115
+Ortaya çıksın, bilgiler ortaya çıksın. Tamam. Üniversitenin öğrenciler için remote server hizmeti var mı demiş bir arkadaşınız. Ne demek istiyorsun? Yani yok diyebiliyorum ben de. Ne demek istediğin yine de öğrenebilirsem.
+
+476
+01:34:36,275 --> 01:34:46,515
+Kolap gibi yok ne yazık ki. Yıldız'da böyle bir eksiklik var. Ne yazık ki aslında buna önemli bir yatırım da yapılması lazım ama.
+
+477
+01:34:47,415 --> 01:34:56,055
+Şey var, TÜBİTAK'ın TRUBA diye bir sistemi var.
+
+478
+01:35:02,707 --> 01:35:26,127
+TR Grid, Turba, Turbitak. Bunları araştırırsanız, bunları Türkiye'deki araştırmacılar ve sanırım öğrenciler de kaydolabiliyor. Benden bununla ilgili bir onay falan isterlerse verebilirim size.
+
+479
+01:35:27,028 --> 01:35:46,548
+Bu Türkiye'deki araştırmacılara yönelik GPU'ları falan olan bir hizmet. Bir ara bunu kullanmaya çalışmıştım. Sonra kaldı. İçinizden de bunu kullanabilen olursa, bize öğretirse, hatta onu bir proje olarak şey yapabiliriz.
+
+480
+01:35:47,412 --> 01:36:04,972
+Yani bir TR grid'in makine öğrenmesi için ve nöral networkler için, derin öğrenme için kullanılmasıyla ilgili bir proje konusu olabilir bu. Bunu bize öğretecek birisi olursa çok mutlu olurum.
+
+481
+01:36:08,340 --> 01:36:11,140
+Buna bir bakın webden.
+
+482
+01:36:15,188 --> 01:36:41,668
+Tamam. Ama şey yok yani, Yıldız'ın böyle bir şeyi yok. Şeyi merak ediyorum, mesela kaç kişi bizim bölümden, kaç kişi dışarıdan falan. Gerçi herkes de yok zaten burada da. Nasıl yapabiliriz? Bölümlerinizi yazabilir misiniz? Yani hangi bölümden geliyorsunuz? Hangi üniversite ve hangi bölüm?
+
+483
+01:36:44,819 --> 01:36:47,279
+Çete yazabilirsiniz. Öyle bir bakmış oluruz.
+
+484
+01:36:55,123 --> 01:37:16,884
+[kişisel bilgi]
+
+485
+01:37:19,667 --> 01:37:31,287
+Ben şey zannediyordum, bizim buradaki üniversitelerden falandır diye ama hiç pandemi öncesi gibi kalmış aklıma. Tabii online olduğu için tüm Türkiye'den katılınabiliyor anladığım kadarıyla.
+
+486
+01:37:35,699 --> 01:37:39,300
+Mirdamat Gorgan İran diyor ya. Nasıl yani?
+
+487
+01:37:40,760 --> 01:37:44,760
+Hocam ben yalancıyım.
+
+488
+01:37:45,380 --> 01:37:51,520
+Tamam da yani şu anda İran'da mı okuyorsun? Kayıtlı olduğun üniversiteyi soruyorum ben.
+
+489
+01:37:52,720 --> 01:38:00,400
+[kişisel bilgi]
+
+490
+01:38:01,555 --> 01:38:03,336
+Şu anda nereye kayıtlısın?
+
+491
+01:38:04,055 --> 01:38:05,975
+Şu an ben YTÜ'de.
+
+492
+01:38:06,975 --> 01:38:07,756
+YTÜ'de?
+
+493
+01:38:08,235 --> 01:38:09,555
+Evet, şu an YTÜ'de.
+
+494
+01:38:10,555 --> 01:38:22,855
+Tamam. Siz bu bilgisayar mühendisliği falan derken, mesela [öğrenci] Bey, yani şu anki kayıtlı olduğunuz bölümü mü yazdınız, lisansı mı?
+
+495
+01:38:24,916 --> 01:38:26,916
+Lisans, herkes lisansı yazmış.
+
+496
+01:38:27,344 --> 01:38:40,963
+Ben şey diyorum, şu anda nerede kayıtlısınız? Yani bizim bilgisayardan mı kayıtlısınız? Diğer fakültelerden de gelebiliyorlar. Oradan mı kayıtlısınız? Yüksek lisansta nerede kayıtlısınız?
+
+497
+01:38:43,104 --> 01:38:54,024
+Anladım. Tamam. Ben de şey zannettim, hani şu... Ha, istatistik YETÖ'den birisi var galiba.
+
+498
+01:38:55,220 --> 01:39:01,220
+Tamam. Evet, yani genel olarak Yıldız'da ama...
+
+499
+01:39:06,963 --> 01:39:24,043
+Barış, iki kişiyiz demiş. Kaçırdım ama nereden geliyordunuz siz? Barış Çelik. İstatistik. Tamam, istatistikten gelen öğrenciler var iki tane diyoruz.
+
+500
+01:39:25,823 --> 01:39:32,583
+Tamam yani elektrik, elektronikten falan da bir öğrencinin kayıt olacağını duymuştum. Kendisi bana e-mail falan atmıştı.
+
+501
+01:39:33,908 --> 01:39:52,728
+Tamam. Evet. Kimler doktorada? Doktora olanlar yazabilir mi? Ve yüksek lisans olanlar? Bunun şeyi yok mu ya? Anket manket yapamıyor muyuz burada?
+
+502
+01:40:01,460 --> 01:40:10,940
+Evet, doktora bir, iki, yüksek iki, daha çok yüksek gibi iki tane doktora gördüm, üç doktora.
+
+503
+01:40:24,787 --> 01:40:36,967
+Evet, üç tane doktor var gibi gözüküyor. Tamam. Evet, burada bir şey bulamadım. Hani böyle bir anket hızlıca yapabilecek bir şey bulamadım. Neyse.
+
+504
+01:40:40,467 --> 01:40:49,807
+Tamam arkadaşlar. Dört olduk. [kişisel bilgi] Haftaya görüşürüz diyelim öyleyse. Tamam.
+
+505
+01:40:52,307 --> 01:40:53,027
+Tamam hocam.
+
+506
+01:40:53,787 --> 01:40:58,947
+Dediğim gibi e-mail adresim altun.
+
+507
+01:40:58,947 --> 01:41:01,987
+Evet, Yıldız.
+
+508
+01:41:05,492 --> 01:41:10,092
+Buradan da iletişim kurabiliriz. Hepinize iyi günler diliyorum. Kapatıyorum.
+
+509
+01:41:11,272 --> 01:41:13,372
+İyi günler hocam.

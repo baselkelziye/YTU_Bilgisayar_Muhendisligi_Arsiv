@@ -1,0 +1,2355 @@
+1
+00:11:17,491 --> 00:11:18,812
+Arkadaşlar, günaydın.
+
+2
+00:11:20,812 --> 00:11:27,251
+Dersi saat on buçta başlatacağım. Diğer grubun gelmesini bekleyeceğiz. Biraz gecikmeli olacak. Bilginiz olsun.
+
+3
+00:25:20,852 --> 00:25:28,852
+Arkadaşlar, hangi gruptan kimler, herkes için hangi grupta olduğunu çete yazabilir mi? Böylece hangi gruptan karışık olduğunu öğrenebilir mi?
+
+4
+00:25:50,195 --> 00:25:55,836
+Tamam, her iki gruptan da öğrenciler var herhalde. Demek ki mesajları gördünüz, duyuruları vs.
+
+5
+00:34:27,827 --> 00:34:28,947
+Arkadaşlar günaydın.
+
+6
+00:34:28,947 --> 00:34:36,628
+Saat on buçuk olduğuna göre başlayabiliriz. Zaten sayımız da 60'a yakınlaştı. Şöyle başlayalım.
+
+7
+00:34:41,972 --> 00:34:45,052
+Sesim geliyor değil mi? Bir kontrol yapayım son kez.
+
+8
+00:34:45,812 --> 00:34:47,992
+Geliyor hocam.
+
+9
+00:34:48,552 --> 00:34:49,372
+Teşekkür ederim.
+
+10
+00:34:50,211 --> 00:35:02,272
+Şimdi başlamadığı önce, bugün size şu ana kadar gördüğünüz sayı sistemleri, işte komplementümleyen prezentasyonları ve bunlarla ilgili yapılan aritmetik toplama çıkarma işlemleri gibi.
+
+11
+00:35:02,804 --> 00:35:11,244
+farklı konulardan bir değerleme yaptık. Bunlarla ilgili bir sunum yapacağım size. Örnek çözümde de içeren bir sunum yapacağım.
+
+12
+00:35:11,244 --> 00:35:15,523
+Ama önce bir başlangıçta bazı terimlerin üzerinden geçmekte fayda var.
+
+13
+00:35:15,523 --> 00:35:22,523
+Örneğin bit ve byte'ı bildiğinize eminim ama belki nibble'ı, word'ı ve double word'ı ne olduğunu bilmiyorsunuzdur.
+
+14
+00:35:22,523 --> 00:35:28,124
+Bir nibble, dört bit'e denk gelir arkadaşlar. Aynı zamanda bir hexadecimal karakterle ifade edilebilir.
+
+15
+00:35:28,532 --> 00:35:35,892
+Byte zaten biliyorsunuz 8bit'ten oluşan bir binary veri birimi.
+
+16
+00:35:35,892 --> 00:35:45,012
+Word dediğimiz için 2 byte'ten oluşan bir birim ve DoubleWord de 2 tane Word'ten oluşan bir birim. En büyük aslında baktığınız zaman DoubleWord 32bit ile.
+
+17
+00:35:45,012 --> 00:35:51,251
+Mesela örneğin şöyle birisi DoubleWord veriliyor olsun.
+
+18
+00:35:51,411 --> 00:36:05,991
+Ben size hemen çözümleri göstermeyeceğim arkadaşlar. Önce sizin düşünmeniz için vakit vereceğim. Kendiniz çözmeye çalışın. Buradaki en yüksek byte, en yüksek nibble ve en yüksek ve en düşük load word'ü bulmanızı istiyorum. En azından işaretlemenizi.
+
+19
+00:36:10,132 --> 00:36:12,132
+Bulant çete yazabilir.
+
+20
+00:36:28,692 --> 00:36:35,411
+Mesela sadece Hiest Byte yazabilirsiniz örneğin. Veya Hiest Nebula yazabilirsiniz.
+
+21
+00:36:40,628 --> 00:36:45,347
+Bit değil [öğrenci], byte diyoruz. O yüzden sekiz tane karakter içerim değil mi?
+
+22
+00:36:53,043 --> 00:37:03,543
+Tamam, çok farklı fikirler var ama ne olduğunu anladınız sanırım. Yani en, highs demek en soldaki most significant kısım. Yani en soldan başlayarak sayıyorsunuz. Low's da da en sağdan başlayarak sayıyorsunuz.
+
+23
+00:37:03,543 --> 00:37:17,643
+Şimdi cevapları göstereyim, herkes karşılaştırmasını yapsın. Bakın burada arkadaşlar most significant biti de gösteriyoruz. Siz bunu derslerde sign bit olarak da görüyorsunuz işaret sayılarda aslında. Aynı zamanda most significant bit diye geçer.
+
+24
+00:37:23,923 --> 00:37:36,923
+Tamam, burada çok fazla yol almaya gerek yok sanırım. Gayet basit bir mantığı var. Şimdi sayı sistemlerine geçelim. Sayı sistemlerinde arkadaşlar, farklı sayı sistemleri kullanılıyor. Özellikle ikili tabanları olan sayı sistemlerinde bilgisayar biliminde çok sıklıkla kullanılıyor.
+
+25
+00:37:37,923 --> 00:37:44,923
+Binary, Octal, Hexadecimal bu tarz sayı sistemleri kullanılıyor. Aslında burada en çok kullananlar Binary ve Hexadecimal.
+
+26
+00:37:44,923 --> 00:37:50,507
+Günlük halde biz genelde decimalini kullanıyoruz. Ama Binary, Bilgisayar...
+
+27
+00:37:50,739 --> 00:38:17,675
+mimarisinin en uygun sayı tabanı olduğu için, sayı birimi olduğu için. Hexadecimalde şu anki günümüz Bilgisayar mimarilerinde çok büyük bitli sayılı işlemler yaptığımız için, binary daha iyi reprezent etmek için kullanılan, daha iyi sunmak için kullanılan bir sayı birimi. Bu ikisini daha çok sıklıkla göreceksiniz. Şimdi bunların dönüşümleri de çok önemli tabii ki. Çünkü günlük kayatta verdiğimiz şeylerin Bilgisayar tarafından nasıl algılanlarını tahmin etmek, bilmek çok önemli. O yüzden sayı tabanlar arası dönüşümleri
+
+28
+00:38:17,811 --> 00:38:32,831
+Biliyorummamız gerekir. Sizin derste zaten bunları bildiğinizi biliyorum. Şu an örnek çözmeye şekline gidelim. Sizin için bu üç soruyu çözdüm. Kendiniz başınızı çözmeyi deneyin lütfen. Sonra nasıl çözdüğünü beraber değerlendirelim. Size bir iki dakika vakit veriyorum. Soru lütfen inceleyin, kendiniz çözmeye çalışın.
+
+29
+00:39:33,523 --> 00:39:41,804
+Sanırım çözmüş olmalısınız. Ben size direkt çözümü göstereyim arkadaşlar.
+
+30
+00:39:41,804 --> 00:39:48,163
+Tabii kolay bir gösterim şekli olsun diye
+
+31
+00:39:48,163 --> 00:39:54,243
+Normalde yapılan, örneğin iki
+
+32
+00:39:54,243 --> 00:39:57,683
+Bir saniye arkadaşlar.
+
+33
+00:40:02,931 --> 00:40:03,931
+Bir saniye.
+
+34
+00:40:06,931 --> 00:40:07,671
+Ring.
+
+35
+00:40:21,755 --> 00:40:29,755
+Bir saniye
+
+36
+00:40:21,364 --> 00:40:28,364
+Kimler girelimmiş? Bir saniye. Merhaba hocam, online bızda ders açılmıyor. Sınırıma çalışmıyor. Gelemeyen arkadaş da var, grup 3 için.
+
+37
+00:40:36,008 --> 00:40:39,008
+Bir saniye
+
+38
+00:40:32,244 --> 00:40:37,364
+Bir saniye, ben ders hocasına konuşayım, herkesin katılımını sağlayalım. Bir dakika arkadaşlar, sen vakit istiyorum.
+
+39
+00:41:03,644 --> 00:41:12,684
+Bir saniye
+
+40
+00:41:01,748 --> 00:41:08,748
+Arkadaşlar, ders açım linkinden girmeyeceksiniz. Mailden ve duyurudan, paylaşılan linkten ders katılacaksınız. OnlineYıldız'dan,
+
+41
+00:41:09,748 --> 00:41:14,748
+değil, yani size web paylaşılan Zoom linkinden gelin lütfen. Meeting şeklinde çıktı çünkü.
+
+42
+00:41:15,748 --> 00:41:22,748
+Grup için mail gelmediyse, arkadaşlar bölüm duyur sayfasında da var aslında baktığınız zaman.
+
+43
+00:41:23,748 --> 00:41:27,748
+Bölüm duyur sayfasından da geriye olmanız lazım.
+
+44
+00:41:35,476 --> 00:41:49,456
+Şu an zaten yirmi yüz otuz kişi olduk. Muhtemelen katılıyor arkadaşlarınız tek tek birbirlerinden duya duya. Biraz daha yavaş ilerleyelim o zaman. Herkes katılsın. Daha önemli konuları hep beraber yaparız olur mu? Şimdi biz bu kilise sistemlerini konuşalım istiyorsanız. Arkadaşlarınız gelene kadar.
+
+45
+00:41:55,092 --> 00:42:19,092
+Normalde bu sayıları 157 sayısını bu şekilde bölüp, değil mi arkadaşlar? Division ve mod alma şeklinde hem bölüme hem kalana bakacak şekilde böyle böyle çözüm yapıyoruz değil mi? 75, 78 oluyor burası.
+
+46
+00:42:19,827 --> 00:42:24,947
+Pardon, burası ne yapıyor? 157 bölü, 278 evet, 156 oluyor.
+
+47
+00:42:26,228 --> 00:42:36,728
+Çıkarıyoruz, 1 oluyor. Bu şekilde yapılabildiği zaman gösterim olarak çok uzun ve çok fazla erkapların gösterim oluyor. O yüzden ben size daha basit bir şekilde bu notasyonu kullanarak göstereceğim.
+
+48
+00:42:41,460 --> 00:42:43,260
+Arkadaşlar, şimdi baktığımız zaman
+
+49
+00:42:43,260 --> 00:42:47,380
+157'i 2'ye bölüp
+
+50
+00:42:47,380 --> 00:42:48,960
+1 bırakıyoruz değil mi?
+
+51
+00:42:48,960 --> 00:42:50,780
+Bir tane kalan oluyor.
+
+52
+00:42:51,320 --> 00:42:53,180
+Daha sonra 78'i 2'ye bölüp
+
+53
+00:42:53,180 --> 00:42:54,159
+0 kalanımız oluyor.
+
+54
+00:42:54,840 --> 00:42:56,740
+Bu şekilde bölüp en son indiğimizde,
+
+55
+00:42:56,840 --> 00:42:59,860
+en son 2'ye, en son basamağa geldiğimizde
+
+56
+00:42:59,860 --> 00:43:02,059
+oluşan sayı dizilimi
+
+57
+00:43:02,059 --> 00:43:05,720
+tersten okuduğumuz zaman
+
+58
+00:43:05,720 --> 00:43:08,059
+bize bunun ikilik tabağındaki karşılığını veriyor.
+
+59
+00:43:08,659 --> 00:43:34,779
+Tamam mı? Çözümümüzü bu şekilde yapabilirsiniz. Mesela örneğin aynı şekilde 8 içine geçer. Bu sefer 8 tabanında yazdığımız için sürekli 8'e bölüp 8'de bölümden kalanları değerlendiriyoruz. Burada aynı şekilde bitirdikten sonra alttan yukarıya doğru okuduğumuzda bize bu sayı veriyor. Tamam mı? Çözümler bu şekilde. Bu çok daha üzerinde konuşulması, konuşulacak bir şey değil. Zorlu olan bir konu değil. O yüzden anlız düşünüyorum.
+
+60
+00:43:35,603 --> 00:43:37,423
+Bir sonraki slide'a geçiyorum.
+
+61
+00:43:37,723 --> 00:43:39,323
+Sayıdım alarsın önüşümle ilgili.
+
+62
+00:43:45,043 --> 00:43:48,243
+Örneğin, kitabından verilen bir sayıyı on topana çevirin. Evet.
+
+63
+00:43:48,243 --> 00:43:51,804
+Bir kısmı. Bunu da hızlıca yapmaya çalışın. En azından ilk iki örneği yapın.
+
+64
+00:43:51,804 --> 00:43:53,443
+Neyse, bir iki dakika vereyim.
+
+65
+00:43:53,443 --> 00:43:56,443
+Çözüm, sor çözümü göstereyim. Üzerine tartışalım.
+
+66
+00:44:51,251 --> 00:45:13,851
+Evet, gayet cevaplar yapılmış demek ki. Bakalım arkadaşlar, ilk 50, ikincisi 1680, üçüncüsü sayı, hexadecimal sayı. Burada hexadecimal sayı sisteminde, tabii ki 9 dijitten sonra 6 karakteri daha ihtiyacımız var dijitleri tanımlamak için, rakamları tanımlamak için. Bu yüzden alfabe kullanılıyor. Örneğin A10 yerine geçiyor, B11, C12.
+
+67
+00:45:14,387 --> 00:45:26,788
+D13 gibi bir tipi. Siz dersi zaten biliyorsunuz detayları. O yüzden buradaki karakterleri de ona göre çarparak gerekli konverjörleri yapacaksınız. Ekstra zimal için sonuç bu şekilde çıkıyor.
+
+68
+00:45:30,036 --> 00:45:53,036
+Yavaşça ilerleyelim. Bunlar kolay konular. Şimdi iki farklı sayı sistemi tabanında dönüşüm. Şimdi burada arkadaşlar, yürüt ederseniz bütün [öğrenci], bu sorunun cevabını hocana sorarsın. Olur mu? Vizelerde yapılacak olan şeylerinizle ilgili yani sınavın nasıl yapılacağı ile ilgili şeyleri kararları biz vermiyoruz. Vize de hesabı meyusuklarını kullanmayacağınız hocanızla bağlı. Tamam mı?
+
+69
+00:45:54,132 --> 00:46:03,132
+Devam edelim. Şimdi burada dikkat ederseniz sayı tabanları iki ve ikinci tabanları şeklinde. O yüzden bunu dikkat ederek çözüm yapmanızı istiyorum.
+
+70
+00:46:03,132 --> 00:46:11,132
+İçiyorsanız bu soruyla ilgili biraz daha, yine tekrar uğraşın. İki dakika verin sonra size bunu biraz daha detaylı anlatacağım önceki örneklerden fark olarak.
+
+71
+00:47:23,668 --> 00:47:25,668
+[öğrenci] tam olarak ne yazıyorsun?
+
+72
+00:47:26,387 --> 00:47:32,068
+Exadecimal istenmiyor. Burada sekiz tabanında, onaltı tabanında dijitler haline yazman gerekiyor. An onaltıda belki çıkarım mı?
+
+73
+00:47:32,628 --> 00:47:34,708
+Exadecimal. Sekiz ve iki için.
+
+74
+00:48:10,132 --> 00:48:14,132
+Peki arkadaşlar, beraber bakalım. Şimdi öncelikle
+
+75
+00:48:17,132 --> 00:48:21,132
+Basit düşünelim. Şimdi 2, 8'in
+
+76
+00:48:21,132 --> 00:48:26,132
+Aslında, yani 3'üncü kuvveti aslında baktığınız zaman değil mi? Yani 3 tane dijit
+
+77
+00:48:26,132 --> 00:48:32,132
+Aslında bir tane, 8 taban ilk sayıya denk geliyor. O yüzden şu şekilde ayırabilirsiniz bunları.
+
+78
+00:48:32,132 --> 00:48:35,132
+Değil mi mantıken? Çok basit bir şekilde.
+
+79
+00:48:35,132 --> 00:48:36,396
+Bunların
+
+80
+00:48:36,724 --> 00:48:44,724
+Karşılıklarına alırsınız, 7, 6, 1. Baktığınız zaman burası 2 üzeri 0 tabanı gibi. Değil mi arkadaşlar? 2 üzeri 1 tabanı gibi. 2 üzeri 2 tabanı gibi.
+
+81
+00:48:44,724 --> 00:48:56,724
+Baktığınız zaman o yüzden burası 7 çıkar. Değil mi? Burası 6 çıkar çünkü bir eksiği. Burası da 1. Bu şekilde dönüştürebilirsiniz çok basit bir şekilde.
+
+82
+00:48:56,724 --> 00:49:03,724
+Burada da aynı şekilde sağdan 4, 4 dalıyorsunuz. Bu da aslında 11 ama bu aslında şöyle bir 11.
+
+83
+00:49:04,467 --> 00:49:08,587
+0, 0, 11 değil mi arkadaşlar? Dörtte alıyoruz çünkü. O yüzden
+
+84
+00:49:08,587 --> 00:49:12,907
+Bunları çevirdiğin zaman da burası 2, burası 7, burası da 3 yapıyor.
+
+85
+00:49:12,907 --> 00:49:14,907
+372 imiş.
+
+86
+00:49:22,228 --> 00:49:24,228
+Son olarak diğer örnekte ise
+
+87
+00:49:24,228 --> 00:49:28,228
+Burada da
+
+88
+00:49:28,228 --> 00:49:32,228
+8 tabanındaki bir şeyi ikiye çeviriyoruz. Burada aslında her bir karakter
+
+89
+00:49:32,228 --> 00:49:34,228
+tam tersi bir şekilde 3'e ayrıştırıyoruz. 4'ü
+
+90
+00:49:34,228 --> 00:49:38,228
+3 biti de nasıl ifade ederiz? Değil mi arkadaşlar? Çünkü
+
+91
+00:49:38,228 --> 00:49:42,228
+8, 2'nin 3. kuvveti. Tam tersi. Yani şu ilk başta yaptığımızın tam tersi bir örnek bu.
+
+92
+00:49:44,228 --> 00:49:47,228
+4'ü nasıl ifade ederiz? Burası 2 üzeri 2'dir zaten.
+
+93
+00:49:48,596 --> 00:50:01,396
+O yüzden dördü direkt veriyor. Şu bitlere hiç değer koymayız, sıfır bırakırız. Altı da aynı şekilde iki fazlası. Burası iki taban olduğu için, iki üzeri bir olduğu için ekliyoruz. Burası da beş. Sonuçları bu şekilde çok kolay bulabilirsiniz.
+
+94
+00:50:02,675 --> 00:50:15,476
+Dönüşümleri yaparken yani ikili sayılardan, ikili tabanındaki sayılardan ikili kuvveti olan tabanlara dönüşüm yaparken bu şekilde gruplaya gruplaya yaparsanız çok daha kazançlı, çok daha hızlı vakit kazandıran çözümlere ulaşabilirsiniz.
+
+95
+00:50:16,788 --> 00:50:42,327
+Arkadaşlar, o sıfır çarpı şey için, sizin segmentlerinizi belirlemek için. O yüzden altlık sayı sistemlerine sıfır çarpı yazmanız bir şey ifade yok. Bilgisayar bilimlerinde görürsünüz belki hani böyle sıfır çarpı bir şey. O segmenti ifade eden sıfır çarpıdır. Yani aslında onun bir sayı sistemleriyle bir ilgisi yok ama kavramları çok karıştırmayalım.
+
+96
+00:50:44,340 --> 00:50:54,019
+Evet evet, sıfır bellekteki adresleri belirtmek için. Çünkü sizin birden fazla bellek segmentiniz olabilir. O sıfır onu belirtiyor. Sizin başına sıfır çarpı yazmanıza gerek yok.
+
+97
+00:50:54,019 --> 00:51:06,340
+Yani sayı sisteminde sadece sıfırdan dokuzuna kadar rakamlar, onaltılık sayı sisteminde düzeltiyorum. Onaltılık sayı sisteminde sadece sıfırdan ona kadar olan sayılar, pardon rakamlar ve ABC'de
+
+98
+00:51:06,708 --> 00:51:20,188
+E, F karakterleri var. Başka karakter yok. Önün sıfır çarpı diye bir çarpı karakteri olmaz. Bu sayı sistemi. Sayı sistemiyle bilgisayarda karşılık gelen segment ve sayı sistemleri kombinasyonları karıştırmayalım. Tamam mı? Şu an sayı sistemlerinden bahsediyoruz.
+
+99
+00:51:25,268 --> 00:51:26,807
+Şimdi devam edelim istiyorsanız.
+
+100
+00:51:28,588 --> 00:51:30,387
+Tıkar tabanlar arası dönüşüm
+
+101
+00:51:31,668 --> 00:51:33,708
+Yapalım, önce bir ekranı temizleyelim.
+
+102
+00:51:35,768 --> 00:51:40,367
+Şimdi burada arkadaşlar gördüğünüz gibi, burada hexadecimal sayı var. Bunu iki tabanına çevirmemiz gerekiyor.
+
+103
+00:51:42,168 --> 00:51:44,988
+Sonra 938 tabanındaki bir sayı 16'ya,
+
+104
+00:51:45,488 --> 00:51:48,827
+16 tabanındaki bir sayı da 8'e çevirmemiz gerekiyor. Dikkat ederseniz burada yine
+
+105
+00:51:49,068 --> 00:51:52,907
+ortak tabanlar söz konusu. Burada ona uygun olarak bir çözüm yapmanızı bekliyorum.
+
+106
+00:51:53,300 --> 00:51:57,480
+Siz biraz uğraşın arkadaşlar çözüm için. Tekrar sözüzümlerini konuşalım sonra.
+
+107
+00:53:49,427 --> 00:53:55,427
+Şimdi arkadaşlar, ilkini ben çözeyim istiyorsunuz, diğerlerini size çözeyim. Sanırım süre yeterliydi.
+
+108
+00:53:55,427 --> 00:54:00,427
+İlkine baktığımız zaman arkadaşlar, şimdi A
+
+109
+00:54:04,052 --> 00:54:06,052
+Şuradan bakarsak şöyle
+
+110
+00:54:07,052 --> 00:54:08,052
+A
+
+111
+00:54:09,052 --> 00:54:11,052
+Şuna denk geliyor arkadaşlar değil mi?
+
+112
+00:54:11,052 --> 00:54:12,052
+Egzazimar olarak
+
+113
+00:54:12,052 --> 00:54:14,052
+1, 0, 1, 0'a denk geliyor.
+
+114
+00:54:14,052 --> 00:54:16,052
+Zaten bu 1'di
+
+115
+00:54:16,052 --> 00:54:21,052
+Bu da 0, 0, 0, 1. Gayet basit bir şekilde.
+
+116
+00:54:21,052 --> 00:54:22,796
+D karakteri
+
+117
+00:54:26,068 --> 00:54:28,068
+D karakteri arkadaşlar,
+
+118
+00:54:28,068 --> 00:54:30,068
+1, 1, 0, 1, değil mi?
+
+119
+00:54:30,068 --> 00:54:32,068
+B de
+
+120
+00:54:32,068 --> 00:54:36,068
+1, 1, pardon 1, 0,
+
+121
+00:54:36,068 --> 00:54:38,068
+1, 1 yapıyor.
+
+122
+00:54:38,068 --> 00:54:42,068
+A, A'dan bir az yani B, sonra C geliyor.
+
+123
+00:54:42,068 --> 00:54:44,068
+C'den bir fazlası da D yapıyor.
+
+124
+00:54:46,003 --> 00:55:08,724
+Bu şekilde ikiye çevirebilirsiniz. Yani nasıl hexadecimal direk onaltı tabanındaki bir sayı iki tabana çevirmen çok kolay çünkü karakterlerin direk birebir karşılıklarını yazıyorsunuz. Karşılığı denk gelen dört deniyorsunuz ama bir sonraki örnekle mesela sekizde onaltıcın durum biraz farklı olacak. Doğrudan dönüşüm yapamayacağız. Bu konuyla ilgili çözüm yapabilen var mı? Çözüm üretebilen var mı? Varsa kim anlatmak ister?
+
+125
+00:55:15,251 --> 00:55:18,291
+Önce ikilik sisteme çevirip sonra onaltıya çevirmek.
+
+126
+00:55:20,351 --> 00:55:39,512
+Tekrar söyler misin? Önce ikiye sonra onaltıya çeviririz. Doğru değil mi? Çünkü sekiz onaltı ile ortak taban değil ama ortak tabanı bulursak ortak tabana çevirip sonra tekrar o tabandan öbür sayı birimine dönüş yapabilirsiniz. O zaman çok uzatmayalım. Diğer sunumda da sonuçlara bakalım.
+
+127
+00:55:41,619 --> 00:56:08,579
+Sonuçları inceleyelim, sonuçları üzerinden konuşalım. Şimdi baktığınız zaman, ilk örneği zaten anlatmıştım. Değil mi arkadaşlar? A burada, 1 burada. İkinci örneğe baktığımız zaman dediğiniz gibi, bunu öncelikle iki tabana dönüştürmek istersek bu 203. kuvvetidir. O yüzden 4 sayısını 3 bitli ifade edecek şekilde yazarız önce. Daha sonra diğer 4'ü 3 bitli yazacak şekilde ifade ederiz. Sonra 3'ü yazmak için yazacak şekilde ifade ederiz. En son
+
+128
+00:56:09,023 --> 00:56:20,023
+Bunların iki tabanının sayısını oluşturmuş oluruz. Daha sonra bunların dörtlü dörtlü partişimleri alarak, değil mi arkadaşlar? Ama sağdan sayarak. İlk dörtlü, ikinci dörtlü, değil mi? Şöyle.
+
+129
+00:56:23,731 --> 00:56:29,971
+En sonunda bir kalıyor. Bunun başına sıfırla padding yaparak bu şekilde üç sayı sistemi dönüştürürsünüz.
+
+130
+00:56:29,971 --> 00:56:33,731
+Pardon, onaltılık sayı sistemi dönüştürürsünüz.
+
+131
+00:56:36,731 --> 00:56:41,731
+Son örneğimiz de diğer örneğimiz de tamamen aynısı. Onda birebir aynı dönüşüm var.
+
+132
+00:56:41,731 --> 00:56:50,731
+Burada sadece onaltılık sayı sistemi önce ikiliye, ikiliden de sekize dönüşüyorsunuz. Diğer örneklerimiz de birebir benziyor aslında. Sadece iki çözümü birlikte bir araya getiriyoruz.
+
+133
+00:56:50,867 --> 00:57:01,188
+Şimdi bir sonraki konumuzda bire tümleyen konusunu işleyeceğiz. Şimdi bire tümleyenle ilgili zaten derste tümlemeleri nasıl yapıldığını biliyorsunuzdur.
+
+134
+00:57:01,188 --> 00:57:18,307
+Çok basit bir şekilde aslında bütün her bir bitlerin bit file şeklinde bir sayıdaki sayının kilitabanla yazılmış bir sayının her bir bitindeki sayıların negatif işlemi yani tersin alınması gerçekleşen bir işlemde. Tümleme oradan geliyor zaten çünkü bunu iki sayın bire tümleyen demek.
+
+135
+00:57:18,643 --> 00:57:28,803
+1'i tümlemek için 0'ı, 0 tümlemek için 1'i kullanırız. O yüzden tümleme işlemi aslında negation işlemidir. Yani tersi nalma işlemidir. Ama bitwise yapmanız gerekiyor tabii bunları.
+
+136
+00:57:30,083 --> 00:57:36,143
+Ve 1'e tümleyen, 2'e tümlenenler aslında işareti sayıları için çok kullanılan bir prezentasyon şeklidir.
+
+137
+00:57:37,143 --> 00:57:43,783
+1'e tümlenen de dediğimiz gibi bir sayıdan çok basit bir şekilde terslerini alarak negatif veya pozitif sayılarını
+
+138
+00:57:44,244 --> 00:58:06,244
+belirleyebiliyoruz. Ama burada birtakım durumlar oluşuyor. Örneğin, sıfırın, sıfır pozitif sayı gibi gözüküyor bu sayı sisteminde ve dolayısıyla eksi sıfırdaya bir sayı geliyor ama bu normalde kullandığımız sayı sistemlerine çok da uyumlu olmuyor. Hem günlük halde kullandığımız hem de bixar modeli çok uygun olmuyor. Değer aralığı da aynı şekilde.
+
+139
+00:58:07,027 --> 00:58:22,427
+Aslında şurada verilen örnekler göre, örneğin, 8 bitlik bir sayı sistemi için bu formülü kullandığınızda oluşacak değer aralığı eksi 127 ile, değil mi arkadaşlar? Artı 127 olmuş oluyor. Bu da bize sayı sistemindeki karşılıklarını veriyor.
+
+140
+00:58:24,340 --> 00:58:49,079
+İkiye tümleyen değilse arkadaşlar, bire tümleyenini önce hesaplıyorsunuz. Bire tümleyenle bütün bit by negation yani bit by terslerini almış oluyorsunuz. Bit bazında bütün sayıların terslerini alıyorsunuz. Daha sonra da low significant byte yani en sağdaki en anlamsız byte bir değerine ekliyorsunuz ve oluşan sayısının ikiye tümleyeniniz oluyor. İkiye tümleyen değer aralığı da mesela 8 bit için ne oluyor? Eksi 120.
+
+141
+00:58:49,619 --> 00:59:00,439
+8 oluyor. Değil mi arkadaşlar? Pozitif tayıfımda da artı 127'ye kadar geliyor. Çünkü 0'da var. Değil mi? Bu şekilde. Bunları zaten biliyorsunuz. Ben bir kez daha sadece tekrar etmek istedim.
+
+142
+00:59:01,859 --> 00:59:10,179
+Şimdi bunlarla ilgili dönüşümlerde bir başka önemli konu. Çünkü işaret sayı sistemlerini oluşturan sayı prezentasyonları genelde ikiye türmüllerle yapılıyor.
+
+143
+00:59:10,771 --> 00:59:38,431
+O yüzden şimdi size burada birçok örnek var. Bunlardan hepsini çözmenizi istemeyeceğim. Birkaç tanesini istiyorsanız uğraşın. Örneğin ilk iki tanesiyle uğraşın arkadaşlar her iki taraftan da. Sonra diğerleri üzerinde de konuşalım. Olur mu? Ben size yeterince süre vereyim. Bunları çözmeye çalışın. Çünkü çok genel anlamda çok kullanacağınız, çok sık kullanmak isteyeceğiniz dönüşümler bunlar. O yüzden bu abolara örneğe koydum. Biraz uğraşın. Sonra çözümleri birlikte konuşalım.
+
+144
+01:00:11,476 --> 01:00:24,756
+Arkadaşlar, istiyorsanız hepsini çözün. Ben size çözdüreyim bunları çünkü bunları zaten biliyor olmanız gerekiyor. Çok önemli bir konu aslında. O yüzden olabildiğin hepsini çözmeye çalışın. Size yeterli süreyi vereyim. Sonra size çözdüreyim sonuçlarını. Tevdik olur mu?
+
+145
+01:03:51,219 --> 01:03:54,639
+Arkadaşlar, bu soru için cevapları yazmayalım. Herkes kendi çözmeye çalışsın.
+
+146
+01:06:00,436 --> 01:06:06,636
+Meetin Kaylan'ı hocanızla konuşmam gerekiyor önce, bilmiyorum şu an alabilir misiniz?
+
+147
+01:06:06,636 --> 01:06:13,036
+Hocanız beni kendisi host yaptı, o yüzden hocanıza sormanız daha doğru muhtemelen hoca kendisi kaydediyor.
+
+148
+01:06:13,036 --> 01:06:17,836
+Ben hocayla konuşurum ama bana size söylerim, bana sorarsınız daha sonra.
+
+149
+01:06:17,836 --> 01:06:21,836
+Şu an verecek cevabım yok.
+
+150
+01:06:27,092 --> 01:06:32,532
+Ama ders bittikten sonra ses sunumu paylaşacağız arkadaşlar. İşinize yarayacaksa çözümler de olacak üstüne zaten.
+
+151
+01:06:32,532 --> 01:06:35,251
+O şekilde.
+
+152
+01:07:30,708 --> 01:07:57,847
+Bilgisayar, ikinin tümleyini bulmak için aslında bildiğimiz lojik operasyonları ve artmetik operasyonları yapıyor. Yani sizin aslında bitwise'ine getirdiğiniz şey, bitwise tersini almak değil mi? Önce terslerini alıyor, bit, bit. Daha sonra da bütün sayının en sabitliğine biri ekliyor ve gerekli kerelik operasyonları yaptıktan sonra bir sayı oluşuyor. Yani aslında iki işlem marka arka yaparak siz bir sayının tümleyini alabilirsiniz, bilgisayara yaptırabilirsiniz, tamam?
+
+153
+01:07:58,452 --> 01:08:03,452
+yapıdığımız müzik operasyonlarla ve aritmetik operasyonlarla, siz de seyitim tüm beni alabilirsiniz belki sehap arasında.
+
+154
+01:08:08,115 --> 01:08:13,615
+Şimdi ben açıklayacağım, zaten çözümleri açıklayacağım. Şu an derslerden ama dağıtıldığı için sizin de çözebiliyor olmanız gerekiyor.
+
+155
+01:08:13,615 --> 01:08:21,315
+Tabi dersin amacı bunları nasıl çözüldüğünü size göstermek. O yüzden tabi ki çözümleri yaparken açıklayacağım. Şu an sizin çözümlerinizi istiyorum sadece.
+
+156
+01:08:21,315 --> 01:08:27,595
+Çünkü uğraşmadan, hatanızı görmeden, size doğrudan cevap vermemin bir anlamı yok pek fazla.
+
+157
+01:08:33,395 --> 01:08:40,515
+Hepsini bitiren olduysa, varsa kiçinizde hepsini bitiren, ufak ufak başlayayım istiyorsanız. Var mı hepsini yapan?
+
+158
+01:08:43,515 --> 01:08:47,695
+Tamam o zaman [öğrenci], x sayıyı nasıl hesapladığını ve sonucunu söyler misin?
+
+159
+01:08:53,811 --> 01:08:55,192
+[öğrenci] söz alabilirsin.
+
+160
+01:08:56,612 --> 01:08:58,412
+Söz alabilirsin, mikrofonu kullanabilirsin.
+
+161
+01:09:02,355 --> 01:09:12,115
+Tamam. Sağdaki onun pozitif halini belirttiği için tığsü komplementali onu hesapladım. Eksi 124 buldum.
+
+162
+01:09:17,235 --> 01:09:24,755
+Tamam. Başka diğer mesela Exo32 binderi nasıl yazdın? Yapabildim mi? Sağ tarafa geçebildim mi?
+
+163
+01:09:24,755 --> 01:09:27,835
+Evet. Pozitif olarak yazdım.
+
+164
+01:09:32,851 --> 01:09:59,251
+Mesela, bu sayının x124 olduğunu söyledim. Şuraya yazalım. Bunu nasıl hesapladık peki? Şu sayı aslında, binary hali bunun doğrudan karşılığı değil mi arkadaşlar? Birebir karşılığı. Tools Komplemento'nun pozitif halini gösteriyor baktığınız zaman. Değil mi? Negatif sayının karşılığı bu. Bir negatif sayı değil mi arkadaşlar? Bir negatif sayı belirliyor. Şimdi siz buradan sayının önce
+
+165
+01:10:00,000 --> 01:10:20,000
+orijinal pozitif halini hesaplayıp, şuradan, Tuğuz Komplement halinden, sonra bunun bir binarydeki bir karşılığı negatif olduğunu görüyorsunuz ya, negatif karşılığınızı yapabilirsiniz. Yani isterseniz önce Tuğuz Komplement'ini hesaplayıp, bu sayının negatif olduğunu biliyorsunuz zaten. Bu negatiflikten Tuğuz Komplement'ini hesaplayıp gerçek karşılığını hesaplayabilirsiniz. Bu sayı 124.
+
+166
+01:10:28,051 --> 01:10:34,531
+ikilik tabandan desimale çevirdiğinizde 124 olduğunu hesaplayabilirsiniz. Ama binaryde de bunun başında 1 var. Demek ki bu sayı aslında
+
+167
+01:10:34,531 --> 01:10:44,371
+bir negatif sayı, o yüzden cevap x124. Önce comptoos complementini hesaplayıp, daha sonra sayına bakıp bu sayının hangi sayıda denk geldiğini bulabilirsiniz.
+
+168
+01:10:44,371 --> 01:10:53,572
+Peki o zaman karışıp gidelim örnekleri tüzerken. Tersini yapalım şu anda. Mesela 48'in
+
+169
+01:10:54,068 --> 01:11:00,068
+binary'sini ve tuz komplementini bana hesaplayabilecek biri var mı? Direkt söz alabilirim.
+
+170
+01:11:09,684 --> 01:11:13,684
+Binary'i bulmak için 48'i 2'ye böldüm.
+
+171
+01:11:13,684 --> 01:11:24,684
+Sonra, yerde kalanla bölmeler tersden düzerek binary'yi alıyoruz.
+
+172
+01:11:24,684 --> 01:11:32,619
+Sonra ekinin complementini almak için onun bire tamamlayıcısını üzerine bir geliyoruz.
+
+173
+01:11:34,996 --> 01:11:38,996
+Tamam, yapalım. Sen bana yazdır, ben ne yazayım?
+
+174
+01:11:38,996 --> 01:11:41,476
+48 bölü 2
+
+175
+01:11:41,476 --> 01:11:48,355
+Tamam, şuraya yazıyorum arkadaşlar, görüyorsunuzdur. 48 bölü 2, değil mi?
+
+176
+01:11:48,355 --> 01:11:51,355
+24 sıfır
+
+177
+01:11:51,355 --> 01:11:54,355
+Sonra burası ne oldu? 48, 24
+
+178
+01:11:54,355 --> 01:11:55,076
+24
+
+179
+01:11:55,076 --> 01:11:58,036
+24 bölü 2, kalan sıfır
+
+180
+01:11:58,036 --> 01:11:58,916
+Burası 12 oldu.
+
+181
+01:11:58,916 --> 01:12:00,036
+12 bölü 2
+
+182
+01:12:00,036 --> 01:12:02,036
+Kalan sıfır
+
+183
+01:12:02,420 --> 01:12:13,559
+Altı bölü iki sıfır. Kalan sıfır değil mi? Sonra üç bölü iki kalan bir. Burası bir bölü iki kalan bir değil mi? Böyle oluyor. Doğru muyum?
+
+184
+01:12:13,559 --> 01:12:23,920
+Her şeyden yazarsak. Ne oluyor? Bir bir sıfır sıfır.
+
+185
+01:12:30,131 --> 01:12:34,291
+Ama bunun başına iki tane sıfır atmamız lazım, bir segelsip de tamamlansın. Bu bunun binary karşılığı.
+
+186
+01:12:34,291 --> 01:12:39,731
+Değil mi arkadaşlar? Bunun tools komplementine, yani aslında negatifliğin aslında belirten sayıda olmayacak o zaman.
+
+187
+01:12:39,731 --> 01:12:46,531
+Bunu da hesaplayalım. Şimdi şurayı geçici olarak siliyorum. Ya da silmiyorum, vazgeçtim. Şuraya yazıyorum.
+
+188
+01:12:49,716 --> 01:12:50,916
+Çeydın şöyön.
+
+189
+01:12:56,595 --> 01:13:05,995
+Şimdi sayımız 0, 0, 0, 0, 1, 1.
+
+190
+01:13:07,055 --> 01:13:08,135
+4 tane 0 var değil mi?
+
+191
+01:13:09,455 --> 01:13:10,675
+Sayımız bu orijinalinde.
+
+192
+01:13:10,775 --> 01:13:14,395
+Bunu şimdi negation, one komplementini alacağım.
+
+193
+01:13:15,175 --> 01:13:17,235
+1, 1, 0, 0.
+
+194
+01:13:17,455 --> 01:13:17,975
+Değil mi arkadaşlar?
+
+195
+01:13:18,975 --> 01:13:20,835
+1, 1, 1, 1.
+
+196
+01:13:21,515 --> 01:13:22,915
+Daha sonra bu once komplement.
+
+197
+01:13:22,915 --> 01:13:23,955
+Bu once.
+
+198
+01:13:25,424 --> 01:13:26,424
+00
+
+199
+01:13:24,756 --> 01:13:29,195
+Şimdi buna bir ekleyeceğim ve tools komplementine hesaplayacağım. Bir ekliyorum.
+
+200
+01:13:31,896 --> 01:13:45,816
+Burası sıfır, sıfır, sıfır. Bunlar hepsi toplanıyor. Bir de bir topladım sıfır, sıfır, sıfır, sıfır. Burası bir oldu. Burası sıfır, bir, bir. Bu da tools komplementi.
+
+201
+01:13:49,115 --> 01:13:51,396
+Doğru mu arkadaşlar? Bir, bir.
+
+202
+01:13:53,300 --> 01:13:54,220
+0, 1.
+
+203
+01:13:55,880 --> 01:13:58,140
+0, 0, 0.
+
+204
+01:13:58,239 --> 01:13:58,840
+Aslında bu da
+
+205
+01:13:58,840 --> 01:14:00,900
+eksi kırsızı hızı gösteriyor.
+
+206
+01:14:03,600 --> 01:14:04,460
+Farklı zaman.
+
+207
+01:14:05,680 --> 01:14:07,600
+Tamam başka diğer örneklerle devam edelim o zaman.
+
+208
+01:14:09,128 --> 01:14:12,128
+01
+
+209
+01:14:08,404 --> 01:14:11,164
+Başka çözüm yapmak isteyen var mı? Mesela 63 çözüm aldın mı?
+
+210
+01:14:11,164 --> 01:14:12,924
+Bir şey sorabilir miyim acaba?
+
+211
+01:14:13,224 --> 01:14:14,043
+Buyurun sorun.
+
+212
+01:14:14,724 --> 01:14:22,463
+Sağdaki örnekte, soldaki örneği ben tam bağdaştıramadım ama hani çünkü soldakinde sayıyı veren şey tuz hali.
+
+213
+01:14:23,264 --> 01:14:34,004
+Ama sağdakinde tuz komplement hali sayıyı vermiyor bize. Anlatabildim mi şeyimi?
+
+214
+01:14:35,380 --> 01:14:43,380
+Yok, şöyle, aslında sayıların karşılığını veren şey, bizim burada görüyoruz binary halleri. Toos komplementi onların negatif hallerini veriyor aslında.
+
+215
+01:14:43,380 --> 01:14:56,380
+Yani mesela sol taraftaki tabloya bakarsak, bakacak olursak, bize sayı veren şey aslında, yani örneğin şu decimal ile binary birebir karşılıkları, değil mi? Örneğin, exon şuymuş.
+
+216
+01:14:56,380 --> 01:15:00,380
+Ama bunun tersi de aslında, toos komplementi bu, bu da aslında ona denk geliyor.
+
+217
+01:15:00,884 --> 01:15:27,984
+Bak yukarıdaki örneğe bak, örneğini az önce yapmıştım. Bu da eksi 124 var. Bunun eksi olduğunu zaten şuradaki bitinden anlarsın. Her zaman 1 olur eksi negatif sayılar. Bu onun binary karşılığı. Bu da onun tuz komplement hali. Bazen eksi 124 sayısını doğrudan binary çevirmekte zorluk yaşayabilirsiniz. O yüzden ne yapıyorsunuz? Önce bunu 124 gibi düşünüp negatifliğine bakmayıp tuz komplementini hesaplarsınız. O da bu. Tamam. Ben o yüzden ikisini birden veriyorum.
+
+218
+01:15:28,467 --> 01:15:47,768
+124 normallik sayı bu, değil mi? 124 sayısı. Şimdi tuz komplementi, bir tane tuz komplement alırsınız, aslında binary formuna kadar siz, yani negative file'ini bulursunuz, eksi 124'e geçersiniz. Yani şu dönüşümleri, iç taraftan da yapabiliyor olmanız sizi işlem kolaylığı sağlıyor. Anlatabildim mi? Tekrar anlatmamı ister misin?
+
+219
+01:15:48,847 --> 01:15:50,768
+Yok yok, anladım. Teşekkürler.
+
+220
+01:15:57,108 --> 01:16:17,108
+Yani iki notasyonu size yan yana vermemi nedeni, bazen bir sayının binary karşılığını bulmak için doğrudan onun binary'sini yazmak yerine önce tools komplementarını alıp sonra bir daha tools komplementarını almak daha mantıklı. Özellikle negatif sayılardan konuşuyorsak. Mesela x124 sayısı bir negatif sayı.
+
+221
+01:16:17,108 --> 01:16:22,108
+Dolayısıyla siz bunun önce binary'sini doğrudan yazmanız zor olabilir.
+
+222
+01:16:22,420 --> 01:16:47,399
+124 gibi düşünürsünüz ilk başta. 124 gibi bulduğunuz sayının formu şu olur arkadaşlar. 124 olarak hesaplı düşünürseniz, bu sayı 124. Bunu çok kolay bir şekilde böyle bitlerini saya saya hesaplayabilirsiniz. Ama bunu negatif olarak istediğiniz zaman, çünkü bizlere negatif soruluyordu, direkt tools complementen binary'e, bunu tekrar tools complementen alarak binary formunu bulabilirsiniz. Eksi 124 haline. Çünkü burası 124'ü veriyor.
+
+223
+01:16:48,500 --> 01:16:58,340
+Önce bu 124'ü bulduk, biz şundan x124'ü hesaplıyoruz. Zaten o yüzden iki tarafı da veriyorum ilk başta, tamam mı? Tekrar atmama gerek yok artık. Şöyle sürüyorum.
+
+224
+01:16:58,340 --> 01:17:02,420
+Şimdi diğer örnekler için alam edelim. Mesela
+
+225
+01:17:02,420 --> 01:17:04,420
+eee
+
+226
+01:17:08,275 --> 01:17:10,275
+Mesela x32'yi
+
+227
+01:17:12,975 --> 01:17:16,275
+hesaplarken, nasıl hesaplıyım siz arkadaşlar baktığınız zaman
+
+228
+01:17:18,216 --> 01:17:19,216
+Burası
+
+229
+01:17:19,975 --> 01:17:23,675
+bu 36 sayısı pozisif sayı olduğu için, değil mi arkadaşlar? Direkt şuraya
+
+230
+01:17:23,675 --> 01:17:26,876
+pozisif halinde oradan binary'sini bulabiliriz. Yani 36 sayısı bu.
+
+231
+01:17:27,415 --> 01:17:29,735
+Ama x32 hesaplarken baktığınız zaman
+
+232
+01:17:29,872 --> 01:17:55,912
+Önce 32 hesaplayıp, şu halini hesaplayıp, sonra bunu tuz komplementarına alarak gerçek halini bulmak daha kolay olabilir. O yüzden iki notasyonda kullanmak gerekebilir. Şimdi bunun dışında farklı birtakım pratik yöntemler de var. Onları da size söylemek istiyorum. Örneğin, sizin normalde sayınız 32 mesela, 255 değil mi arkadaşlar? Direkt şu bitini arttırmıştınız.
+
+233
+01:17:56,532 --> 01:18:03,252
+Dediğim gibi önce Toast komplementini hesaplayıp daha sonra binaryye geçerseniz çok daha kolay olabilir özellikle negatif sayıları için.
+
+234
+01:18:05,252 --> 01:18:10,931
+Bu soru çözümlerle ilgili eklemek istediğiniz bir şey var mı veya sormaksız bir şey var mı?
+
+235
+01:18:16,916 --> 01:18:22,596
+Hüccan bu bir gelene kadar indirme olayı vardı ya, o direkt ikiye tümleyenini mi alıyordu?
+
+236
+01:18:22,596 --> 01:18:23,716
+Efendim?
+
+237
+01:18:24,036 --> 01:18:28,195
+Bir denk gelene kadar böyle aynısını alıp sonra çeviriyor muyduk?
+
+238
+01:18:28,756 --> 01:18:31,235
+O direkt ikiye tümleyenini mi alıyordu?
+
+239
+01:18:33,235 --> 01:18:35,235
+Tamam. Böyle bir yöntem vardı.
+
+240
+01:18:36,435 --> 01:18:37,435
+Tamam, tamam.
+
+241
+01:18:37,435 --> 01:18:49,435
+Şey diyorsanım, en sağdan başlayıp bir görene kadar binary sayının tut komplementini alırken, en sağdan başlayıp bir görene kadar aynen yazıyoruz. Sonraki kısmı ters çeviriyoruz ya, olay yöntem olarak nefes.
+
+242
+01:18:51,435 --> 01:19:03,083
+Yok, sorun tamamlamadım ama şöyle yapıyoruz. Bak şimdi, 13 ya burası. Örneğin. 13'ü siz pozitif sayı olduğu için doğrudan bu şekilde yazabilirsiniz. Bu sizin için kolay.
+
+243
+01:19:03,155 --> 01:19:29,015
+Doğru muyum? Şimdi bunu yazdınız, siz X13'i bulmak istiyorsunuz diyelim. Tamam mı? X13'e ilişmek istiyorsunuz. Yapmaz erken şey şu, buradaki sayıyı aynen yazıyorum. Bu 13'ün pozitif hali. Tamam mı? Şimdi önce birbire tümlerini alıyorsunuz. İki tümlerini almadan önce birbire tümlerini almanız lazım. Bunun birbire tümlerini şu. Bire bir terslerine yazıyorsunuz. Bit bit. 1, 1, 1, 1, 0, 1, 0 değil mi?
+
+244
+01:19:30,260 --> 01:19:32,260
+Daha sonra ikiye tümleyin almak için
+
+245
+01:19:33,860 --> 01:19:35,260
+bir ekliyorsunuz buraya.
+
+246
+01:19:35,260 --> 01:19:42,260
+Şunu arkadaşlar, bir, bir, sıfır, sıfır, bir, bir, bir, bir.
+
+247
+01:19:42,260 --> 01:19:43,659
+Bu da onun ikiye tümleyin aslında.
+
+248
+01:19:43,659 --> 01:19:51,860
+Yani aslında bir sayı bu binary hali, bir sayı atıyorum bu pozitif sayısa, bir sayının herhangi bir pozitif karşılığı veriyorsa, bunun negatif hali de bu.
+
+249
+01:19:54,996 --> 01:20:04,996
+Şu negatif hallerde böyle bit bit hesaplamak, iki yüzleri sıfır, iki yüzleri bir çok zor. Ya eksi yüz yirmi yediden düşe düşe gideceksiniz ya da bu şekilde yapacaksınız. Tamam mı?
+
+250
+01:20:07,412 --> 01:20:34,292
+Hocam, ben arkadaşın sorusunu anladım. Ama çocuğa geçen derste anlatmış da evet dediği gibi oluyor yani. Şey diyor, bir sayıyı alıyoruz mesela. Tools komplementini almak yerine şey yapıyorsunuz. Mesela atıyorum sayımız 1, 1, 0, 0 ya. Bir görene kadar alt kısma işte bir altına geçiriyoruz. Sağdan başlayarak 1, 1. Bir gördük, değiştirerek yazıyoruz. O direkt Tools komplement hali olarak aynısını veriyor yani.
+
+251
+01:20:34,771 --> 01:21:01,771
+Tabii arkadaşlar, pratik yolları vardır. Bazı sayılar için, çünkü ikili sayı sisteminden bahsettik pratik yolları vardır. Onları tabii kolay kolay şekilde yapabilirsiniz ama genel formülü bu şekilde. Bir sayının önce bir et ünlüyünü alırsınız. Yani tersini alırsınız bit, bit, bit, bir şekilde. Daha sonra da bir eklersiniz. Size iki et ünlüyünü verir. Bu her zaman çalışacaksınız ama o sizin önerdiğiniz hocanın da dersleri görürsünüz. Pratik çözüm. Tamam mı?
+
+252
+01:21:02,623 --> 01:21:11,443
+Kritik çözüm, şu anki verdiğim şey, ikisi bir bilet çelişmiyor. İkisini de kullanabilirsiniz. Çözümler aynı olduğu sürece hiçbir önemi yok.
+
+253
+01:21:16,212 --> 01:21:17,492
+Şimdi devam edin istiyorsanız.
+
+254
+01:21:24,851 --> 01:21:40,671
+Arkadaşlar, Excess Notation'ın ne olduğunu biliyorsunuzdur zaten. Hoca dersi size anlatmış. Şimdi bununla ilgili size bir kertçen sonra hazırladım. Şu iki soruyla arkadaşlar uğraşırsanız üzerinde tekrar konuşalım.
+
+255
+01:23:10,963 --> 01:23:17,283
+Tamam, birinin cevabı 5 diyorsunuz, 15 diyen var. İkiyle çözün istiyorsanız ikisini birlikte değerlendirelim.
+
+256
+01:24:12,307 --> 01:24:13,547
+Hocam sesim geliyor mu?
+
+257
+01:24:15,068 --> 01:24:15,708
+Geliyor.
+
+258
+01:24:20,243 --> 01:24:23,564
+Geliyor. Sesiniz geliyor, duyuyorum sizi. Buyurun.
+
+259
+01:25:36,051 --> 01:25:50,051
+[öğrenci], o zaman bir error oluşuyor. Biz çünkü en zayıf bit, yani list segment bitten vazgeçiyoruz. Dolayısıyla bir error oluşuyor, o da truncation error deniyor. Onu da birazdan göstereceğim zaten [öğrenci].
+
+260
+01:25:52,051 --> 01:26:00,811
+12'de bitireceğiz arkadaşlar. Normalde resmi takma süresi zaten 12'ye kadar. En fazla 12'ye kadar süre arkadaşlar.
+
+261
+01:26:02,068 --> 01:26:04,568
+Tamam, sonuçlar gelmeye başladı. İstiyorsanız
+
+262
+01:26:04,568 --> 01:26:15,028
+Çözüme birlikte bakalım istiyorsanız. Çözümlere bakalım. Şimdi arkadaşlar, ekses on altı bit. Şimdi on altı sayısını siz
+
+263
+01:26:15,028 --> 01:26:19,868
+dört bitte nasıl ifade ederse, kaç bitte ifade etmeniz gerekir? Dört bitte değil mi? Dolayısıyla
+
+264
+01:26:20,467 --> 01:26:28,228
+dört bitini sizin ekses biti olarak ayırmanız lazım. Bir biti de sayın bit diye hesaplarsanız, aslında beş bit ihtiyacınız var ama
+
+265
+01:26:28,228 --> 01:26:35,667
+orijinal formulasyona bakarak da, yerine koyarak da hesaplayabilirsiniz. O da iki üzeri en eksi bir eşittir on altı olacak şekilde
+
+266
+01:26:35,667 --> 01:26:47,948
+en değerini veren sayı kaçsa, bir soru cevabı bu şekilde hesaplanabiliyor. İkinci soruda ise, bunun adım adım
+
+267
+01:26:48,564 --> 01:26:59,804
+Formülünü uygulayacak olursak, öncelikle 29 bölü sayısı pozitif sayı. Doğruysa işareti sıfır değil mi arkadaşlar? Sign biti sıfır. Bunu hesapladık.
+
+268
+01:27:00,372 --> 01:27:26,612
+Daha sonra 29 bölü 8 sayısını bizim scientific formasyonu çevirmemiz lazım. Ondan önce de tam ve kesirli kısımlarını ayırmamız lazım. Bu 3 tam 5 bölü 8 o da şurası arkadaşlar baktığınız zaman 3'e denk gelir değil mi? Burası 3. Burası 2 üzeri eksi 1 tabanı. Burası 2 üzeri eksi 2 tabanı baktığınız zaman.
+
+269
+01:27:28,275 --> 01:27:30,275
+Burası da iki üzeri eksi üç tabanı.
+
+270
+01:27:31,975 --> 01:27:33,275
+Tamam mı arkadaşlar?
+
+271
+01:27:33,975 --> 01:27:38,275
+Dolayısıyla siz beş bölü sekizi şöyle parçalarsanız, bir bölü sekiz
+
+272
+01:27:38,895 --> 01:27:40,275
+bir bölü sekiz
+
+273
+01:27:41,275 --> 01:27:42,275
+artı
+
+274
+01:27:43,275 --> 01:27:44,275
+eee
+
+275
+01:27:49,971 --> 01:27:53,051
+4 bölü 8 şeklinde yaparsanız burası aslında
+
+276
+01:27:53,811 --> 01:27:55,091
+iki üzeri
+
+277
+01:27:57,652 --> 01:27:59,191
+bir bölü 2'ye denklidir burası
+
+278
+01:27:59,191 --> 01:28:00,731
+değil mi arkadaşlar baktığınız zaman
+
+279
+01:28:01,231 --> 01:28:03,031
+bir bölü 2 de iki üzeri eksi 1'dir
+
+280
+01:28:04,051 --> 01:28:06,091
+bir bölü 8 iki üzeri eksi 3'dür
+
+281
+01:28:09,431 --> 01:28:12,751
+ve yerine koyarsak iki üzeri eksi 1, iki üzeri eksi 3 gördüğünüz gibi 1
+
+282
+01:28:13,271 --> 01:28:14,551
+iki üzeri eksi 2, sıfır olur
+
+283
+01:28:15,859 --> 01:28:39,859
+Dolayısıyla bu sayının karşılığı da eksponansiyel karşılığı bu şekilde. Ama sizin bu sayı bu şekilde yazmanız yetmez. Bunun Scientific formatı vermeniz lazım. Excess 4 formatı yazmanız için. O yüzden de single bit bırakarak, bir tane tek bit bırakarak single point precision sağlayacak şekilde normalizasyon yapmanız gerekiyor. Onun için önce sıfır, daha sonra da buradaki bitlerini...
+
+284
+01:28:40,448 --> 01:28:47,048
+hesaplayacak şekilde 2 üzeri 2. Çünkü 2 bit kaydırıyoruz. Bak şu bu noktayı buradan alıp, şöyle sileyim arkadaşlar biraz.
+
+285
+01:28:47,048 --> 01:29:02,048
+Karnışları gidermek adına. Sizin şuradaki noktayı 2 bit kaydırmanız gerekiyor. Bunun içinde ikilik sayı sisteminde olduğumuz için ikinin ikinci kuvveti ile çarpmanız gerekiyor.
+
+286
+01:29:07,775 --> 01:29:18,175
+formunda ifade etmeniz için altıdan çıkarmaz gerekiyor. Dolayısıyla bu altı, eksi dört formunda. Çünkü altı eksi dört, iki yapar. Altının da bit files karşılığı budur. Bu bizim
+
+287
+01:29:18,175 --> 01:29:29,695
+eksi bitlerimiz olacak. O zaman yazalım. Bir, bir, sıfır şeklinde. Bu bizim eksi kısmı, exponantsel express. Burası sign bitimiz.
+
+288
+01:29:30,355 --> 01:29:33,896
+Dolayısıyla şu an dört bit oldu. Bizim dört bitlik dallarımız var, değil mi arkadaşlar, mantı seçin?
+
+289
+01:29:34,452 --> 01:29:42,952
+4 bitlik alanını nasıl yazacağız? Sayımız normalde bizim buydu. Başında 0 olmadan yazacak olsak, şurada şu 5 bit var. Değil mi arkadaşlar? 0'a ihtiyacımız yok çünkü.
+
+290
+01:29:44,112 --> 01:29:57,752
+Yazacak olsak, 11, 0, pardon yer alayım, 111, 0. Bir tane daha birimiz var ama o birimiz kayıp arkadaşlar. Çünkü bizim burada bitimiz yok. 8 bitlik bir alandan bahsediyoruz.
+
+291
+01:29:57,752 --> 01:30:01,051
+Bu kadar bitimize yerleştirdik sayımız. Sonuç olarak sayımız...
+
+292
+01:30:01,619 --> 01:30:08,340
+Bizim bu. Ama bu sayı 3 tan 5 bölü 8 değil arkadaşlar. Çünkü bizim burada yazamadığımız bir bit var. 8 bite sığdıramadık.
+
+293
+01:30:09,479 --> 01:30:11,460
+Sallamasını yapalım. Bu sayı kaça denk geliyor?
+
+294
+01:30:14,979 --> 01:30:17,860
+3 tan 5 bölü 8. Bunun sallamasını yapacak olan bir arkadaş var mı aranızda?
+
+295
+01:30:24,180 --> 01:30:30,399
+Sözde olabilir yapmak isteyen, bulduğumuz sayının 3 tan 5 bölü 8 mi olduğunu veya kaç olduğunu hesaplamak isteyen arkadaşımız var mı?
+
+296
+01:30:53,908 --> 01:31:00,808
+Söz alıp yapabilir misiniz [öğrenci]? Söz alıp yapabilirsin, anlatabilirsin bize. Arkadaşlarına duysun.
+
+297
+01:31:06,355 --> 01:31:14,355
+Tamam, yediçen yerine o zaman [öğrenci] sen söyle istiyorsan. Arkadaşım müsait değil mi? Sen konuşabiliyorsan sen açıkla.
+
+298
+01:31:15,355 --> 01:31:23,355
+Bunun sağlaması nasıl yapılır? Excess form yazılmış bir sayı öncelikle normal sayı içeveceksiniz ve 3 tam 5 bölü 8 milyon diye bakacaksınız.
+
+299
+01:31:31,859 --> 01:31:35,180
+Kimseye müsait değil mi konuşamıyorum. O zaman [öğrenci] abi sen yap. Ben yapabilirim hocam.
+
+300
+01:31:35,180 --> 01:31:38,260
+Süper sen yap tamam sen yap. Açıkla bize.
+
+301
+01:31:38,260 --> 01:31:49,379
+Hocam Excess 4'te 1 1 0 2'ye denk geliyor demiştik. O yüzden 1 1 1 0 aslında 11 nokta 1 0 olacak.
+
+302
+01:31:49,379 --> 01:31:59,340
+O yüzden de 1 1 dediğimiz şey 3'e denk geliyor. 1 0'da 1 bölü 2'ye denk geliyor. Oradan da 3 buçuk yapıyor.
+
+303
+01:32:03,923 --> 01:32:26,443
+Doğru kesinlikle, şu an sesim kısılmıştı, fark etmedim. Doğru söyledim, aynen dediğin gibi, şu kısım bizim ilk kısmımız zaten, tam kısımımız kesil kısımdan kaybımız vardı zaten. Onun da son bitin kaybolduğunu zaten biliyorduk. Aynen yazdığımızda, değil mi arkadaşlar, son bitin kaybolduğunu biliyoruz. Yazamadık çünkü. Burası 1 bölü 2'ye denk geliyor çünkü 1 bölü 8 yazamadık.
+
+304
+01:32:27,475 --> 01:32:36,675
+Aslında şuradan da çıkarabilirdik direkt bu formülü hesaplamak yerine. Biz bura hangi biti yazamadığımızı biliyoruz değil mi arkadaşlar? Bu 1 bölü 8'lik olan biti yazamadığımız. Kaybımız da bu aslında.
+
+305
+01:32:36,675 --> 01:32:52,675
+Dolayısıyla 3 tam 5 bölü 8'den 1 bölü 8 çıkarırsınız, 3 tam 4 bölü 8 yapar. Değil mi arkadaşlar? O da aslında 3 tam 1 bölü 2 veya 3 buçuk. 3 tam 1 bölü 2 veya 3 buçuk. Değil mi?
+
+306
+01:32:53,876 --> 01:33:07,876
+Burada oluşan arkadaşlar error, az önce herkesin sorduğu gibi bir error oluşuyor burada, bir kaybımız var. Yani biz istersek bunu daha büyük bir alana yazabiliriz elbette ama sonuçta bilgisayarların memorileri sınırlı işlem yapabilecekleri…
+
+307
+01:33:08,916 --> 01:33:15,456
+Floating point için sınırlı bir memoryimiz var, sınırlı bir disk alırımız var. Dolayısıyla istediğimiz sayı istediğinizde her zaman sığdıramıyoruz ve her zaman bir
+
+308
+01:33:15,456 --> 01:33:26,136
+pire vermek zorunda kalabiliyoruz. Özellikle tüsürat sayılarda. Önemi, p sayısı için istediğiniz kadar tüsürat kullanın hiçbir zaman memory dolduramazsınız. Hiçbir zaman memory tamamen kullanamazsınız.
+
+309
+01:33:26,136 --> 01:33:34,976
+Sığdırmak için sayıyı. Dolayısıyla birtakım errorler oluşmak zorunda. Bu errorleri de biz truncation error olarak ifade ediyoruz.
+
+310
+01:33:38,003 --> 01:33:46,884
+değil mi arkadaşlar? Hocam ben bir şey sorabilir miyim? Tabi sorabilirsiniz buyurun. C ile D şıkkını tam olarak ben anlayamadım yani. Hemen tekrar edeyim.
+
+311
+01:33:46,884 --> 01:34:04,763
+Hangi kısımlarda tekrar sorar mısın? C ve D şıkları yani. C ve D tamam. İşlem basamakları. Tamam normalde sen şu sayı nasıl ifade edersin? 10 çarpı 10 üzeri 5.
+
+312
+01:34:06,612 --> 01:34:29,612
+Bu sayı ile şu sayı aynı değil mi aslında? Bir tam 10 üzeri 6. Aynı sayılar bunlar. Değil mi? Evet. Scientific notation sonuçta bilimsel dilde iki sayıda birbirine eşit olmasına rağmen biz bir notasyon kullanırız. Her zaman şunu tercih ederiz değil mi baktığınız zaman? Çünkü şunu şuraya vermek varken, üst kuvvete vermek varken bu şekil tutmak çok...
+
+313
+01:34:30,131 --> 01:34:37,652
+doğru olmuyor ve bir şeyleri formalize etmek amacıyla da biz genelde şunu kullanıyoruz.
+
+314
+01:34:37,652 --> 01:34:41,971
+Değil mi? Dolayısıyla bizim aslında burada yaptığımız şey bunu iki tabanında bu hale getirmek.
+
+315
+01:34:41,971 --> 01:34:48,291
+Buna normalizasyon deniyor. Biz bunu iki tabanında bu hale getiriyoruz. O yüzden aslında bizim şuradaki sayımızı,
+
+316
+01:34:48,291 --> 01:34:56,091
+şu sayımızı biz aynı o şekilde scientific normalizasyonu yaparak bu hale getiriyoruz.
+
+317
+01:34:56,532 --> 01:35:05,412
+Şu işlemi yaparsan şu ikisinin birbirine eşit olduğunu anlarsın. Tamam? Şimdi B kısmına tekrar dönecek olsak. Burayı da anlamadım. Orayı anladım hocam, orayı anladım.
+
+318
+01:35:05,412 --> 01:35:15,851
+Bir bu koduzluk sayısını tam kesir alerisi çevirip, bu 3'e denk geliyor. Burası da 5 bölü 8'e denk geliyor. O şekilde yazdık. Daha sonra bu sayıyı biz normalize ettik.
+
+319
+01:35:15,851 --> 01:35:22,332
+Şimdi sayımız bizim burada, değil mi noktamız? Noktamız burada.
+
+320
+01:35:23,028 --> 01:35:32,028
+Ve şu an istediğimiz formda. O zaman ikinin kaçıncı kuvvetini kullandığımıza bakıyoruz. İkinci kuvvetini kullanıyoruz değil mi? Bu bizim kaça eksesi olacağımızı gösteriyor. Şimdi eksesi dört kullandığımız için
+
+321
+01:35:32,028 --> 01:35:41,028
+iki ile kaçı toplarsak, pardon iki ile dört topladığımızda kaç yapar sorusunun cevabı altı olur değil mi?
+
+322
+01:35:43,028 --> 01:35:44,028
+Evet.
+
+323
+01:35:44,028 --> 01:35:49,804
+Yani kısacası aslında formülü de şu. n-4 eşittir, ikiyi sağlayacak n sayısını hesaplamak.
+
+324
+01:35:49,939 --> 01:36:01,539
+Formülüne bakarsak. Bu da XS4'te bize bu sayının 6 olduğunu gösterir. 6 da aslında 110'dur değil mi? Şu şekilde yazdım zaten. 1, 1, 0'dır daha doğrusu. Bitwise. Bu bizim
+
+325
+01:36:01,539 --> 01:36:15,760
+eksponansiyel bitlerimizi karşılık eden, XS bitlerine karşılık eden sayımız 110. En başta sayın bitimiz de zaten pozitif sayı olduğu için 0'dı. Geriye 4 tane bitimiz kalmıştı.
+
+326
+01:36:16,724 --> 01:36:41,224
+Gör kalan biti de şudaki mantı sayısı başına sıfır olmadan yazıyoruz. Şu kısmını. O da bir bir bir sıfır. Şimdi bizim burada yazanımız bir bir var. Değil mi? O bir aslında burası ama yerimiz yok çünkü sekiz biti kullandık şu anda. Sekiz bitimizi kullandık. Bir tane yazanımız bir var. O bir de aslında en başta tekrar bir yerine öne bakarsanız yazanımız bir bir bölü sekizdi. Bu aslında bir bölü sekize denk gelen bir bir biti.
+
+327
+01:36:42,420 --> 01:36:50,100
+Burada bir error oluştu. O error da 1 bölü 8'lik bir error. Bizim sayımız 29 bölü 8 idi. Bu 1 bölü 8 çıkarırsak 28 bölü 8.
+
+328
+01:36:51,100 --> 01:36:55,100
+Bak o da eşittir. 3 tam 1 bölü 2.
+
+329
+01:36:57,460 --> 01:37:01,260
+Tamam mı? Hocam biz burada excess 8 formatını kullanıyoruz değil mi?
+
+330
+01:37:01,860 --> 01:37:04,579
+Hayır, burada excess 4'ü kullanıyoruz.
+
+331
+01:37:06,131 --> 01:37:12,531
+Çünkü 8 bit hesaplayalım onu da tersi. Az önceki sorun tersine gidelim. 8 bit kaç yapar? 2 üzeri 3 yapar. Değil mi?
+
+332
+01:37:12,531 --> 01:37:26,231
+2 üzeri 3 yapar. Bir de sine biti var. 2 üzeri 4 yaptı mı? Demek ki xs4 kullanıyoruz. Önceki sorunun tersi aslında değil mi? Bak buraya bakarsan tam tersi.
+
+333
+01:37:28,371 --> 01:37:29,691
+Başka sorusu olan var mı?
+
+334
+01:37:33,268 --> 01:37:35,407
+Şu çetteki soruları cevaplamak istiyorum izninizle.
+
+335
+01:37:42,100 --> 01:37:50,600
+Evet, aslında bunu normalde belirtmem gerekiyordu XS4'te ama Öcal herhalde derste söylüyor ki XS4'ü anlattığı için ben de o şekilde bize söyledim.
+
+336
+01:37:50,600 --> 01:37:59,100
+XS4 olarak anlattım ama evet, normalde vermeniz gerekiyor. Çünkü sizin 8 bitlik bir, aslında o söylemeniz gerekmiyor. Çünkü 8 bit float point diye belirtmişiz arkadaşlar.
+
+337
+01:37:59,100 --> 01:38:09,600
+Şimdi [öğrenci]'ın sorusunu cevaplıyorum. [öğrenci] biz burada şey dedik ya, 8 bit dedik ya, 8 bit zaten XS4'ü kullanmaya gerekir. Çünkü 1 bit, sine bit.
+
+338
+01:38:09,908 --> 01:38:31,908
+eee, sine biti kullanıyorsun 1 bit. 8 bit ifade etmek için 3 bit'e ihtiyacım var. 4 bit kullanıyorsun toplamda sayının eksponansiyonu ve sine belirtmek için. Bu da aslında 2 üzeri 4'ten, değil mi arkadaşlar? 2 üzeri 4'te şurası bizim excess'nizi belirttiği için excess'nizi belirtmek zorundasın. Yani 8 bit floating point kullanıyorsanız, excess'nizi 4 ifade ediyorsunuz.
+
+339
+01:38:31,908 --> 01:38:35,908
+Excess notasyonunda. Şimdi ikinci soruya cevaplıyorum.
+
+340
+01:38:36,532 --> 01:38:41,891
+Axis 4 ve Axis 3 arasında ne fark var hocam?
+
+341
+01:38:42,452 --> 01:38:46,932
+Axis 4 ve Axis 3 arasında kullandığın floating point bit farkı var.
+
+342
+01:38:47,352 --> 01:38:49,771
+Onu da zaten birinci örnekte gösteriyorum. Bakın arkadaşlar.
+
+343
+01:38:52,372 --> 01:38:54,811
+Tekrar siliyorum. Sorunuzu ennekmek adına.
+
+344
+01:39:01,524 --> 01:39:03,604
+Sizin Excess 4 kullanıyor olmanız demek,
+
+345
+01:39:03,604 --> 01:39:05,604
+4, eee,
+
+346
+01:39:05,604 --> 01:39:10,004
+Şuraya 4 koyarsanız, değil mi? Excess 4 kullanıyorsanız, şuraya 4 neye eşitir, 4 koyarsınız.
+
+347
+01:39:11,064 --> 01:39:12,484
+Bu da sizin kaç bit
+
+348
+01:39:12,484 --> 01:39:14,963
+kullanmanız gerektiğini gösterir. Yani aslında,
+
+349
+01:39:14,963 --> 01:39:16,963
+1 sign bit, 5 bit de buraya.
+
+350
+01:39:17,604 --> 01:39:22,244
+Sizin, mantı seçin ayıracağınız alanı belirliyor. Sizin kaç Excess kullanacağınız.
+
+351
+01:39:22,244 --> 01:39:23,244
+Tamam mı?
+
+352
+01:39:23,796 --> 01:39:32,076
+Dolayısıyla sorunuz cevabı bu şekilde. Yani XS4, XS3 sizin mantik sayı ayıracağınız alanın ne kadar az veya çok olduğunu belirtiyor. Ona göre seçim yapıyoruz.
+
+353
+01:39:34,175 --> 01:39:38,756
+Precision'i beliriyor aslında. Point'in nereye kayacağını belirtiyor. Ne kadar kayabileceğini belirtiyorsunuz.
+
+354
+01:39:40,615 --> 01:39:44,476
+Şimdi [öğrenci]'in sorusunu cevaplıyorum. 29.8 bitik bir bilgisayar depolayamıyor muyuz?
+
+355
+01:39:46,296 --> 01:39:48,064
+8 bitik sayısına...
+
+356
+01:39:48,064 --> 01:40:14,783
+Evet, depolayamıyorsun. Eğer Excess Point'ini 3 bit seçersen, 3 bit yapabilirsen depolayamazsın. Daha kısa seçersen depolayabilirsin. Ama o zaman da şey yapılmazsın, depolayabildiğin sayı miktarları azalır. Yani örneğin, nasıl anlatayım sana bunu? 1.9987 olsun.
+
+357
+01:40:15,380 --> 01:40:18,260
+Böyle bir sayı olsun. Hatta piyi yapalım. Piyi düşün.
+
+358
+01:40:19,980 --> 01:40:21,420
+Piyi düşündüğün zaman
+
+359
+01:40:23,300 --> 01:40:32,140
+3 nokta 14'lüye başlayıp uzayan bir sayı var ama 3 de devam edebilir değil mi? Sola doğru. Çok daha büyük bir tam sayı kısmı olabilir. O kısımlardan feragat etmek zorunda kalırsın.
+
+360
+01:40:32,420 --> 01:40:42,340
+O taraftan preziz yapamazsın. O zaman da double precision ihtiyacı doğurur. O da apayrı bir memory ihtiyacı olan, baya farklı bir rotasyon çözümü.
+
+361
+01:40:42,804 --> 01:40:49,804
+Onu da dersli belki hocanız size bahsetmiştir ama zaten şu anki muşu dağıttığınızda onlara çok yer veremiyor. Başka sorusu olan var mı?
+
+362
+01:40:54,612 --> 01:41:10,952
+Sanırım yok. Şimdi truncation errordan bahsedelim. Az önce aslında truncation errorla karşı karşıya gelmiştik. Bu soruya arkadaşlar bir bakın hızlıca. Diğer soruya oldukça benzediği için çok fazla zorlanacağız düşünmüyorum. Bir bakın tekrar beraber yapalım.
+
+363
+01:42:29,203 --> 01:42:30,823
+Çözümü anlatmak isteyen var mı?
+
+364
+01:42:33,123 --> 01:42:37,343
+Mesela, [öğrenci] sen konuşabiliyor musun? Anlatabilir misin çözümü bize?
+
+365
+01:42:38,984 --> 01:42:43,123
+[öğrenci], sen Rabb'i odanda biri uyuyordu galiba sen Rabb'i veremiyorsun.
+
+366
+01:42:44,043 --> 01:42:46,023
+[öğrenci] bize sonuncu çözümü anlatır mısın?
+
+367
+01:42:50,387 --> 01:42:59,387
+Anlatayım. Sesim geliyor mu? Sesin geliyor. Sen söylerken ben de yazmaya çalışayım söylediklerini. Tamam.
+
+368
+01:42:59,387 --> 01:43:10,387
+Iki tam yedi, yedi bölü sekizi ilk önce bir sıfır nokta bir bir bir bir şeklinde yazıyoruz. Tamam.
+
+369
+01:43:10,387 --> 01:43:15,307
+Noktayı iki sola kaydırmak için de
+
+370
+01:43:15,315 --> 01:43:18,996
+Excess 4'te 2 olması gerekir, o yüzden 1 1 0 yazıyoruz.
+
+371
+01:43:19,996 --> 01:43:26,636
+Yani şöyle, 0.10, 0.10, 1 1 1 1 yapmak için, değil mi?
+
+372
+01:43:27,076 --> 01:43:27,376
+Evet.
+
+373
+01:43:27,576 --> 01:43:30,216
+Bunu 2 üzeri 2 ile mi çarpmamız gerekiyor?
+
+374
+01:43:31,136 --> 01:43:35,595
+Tamam, bu da 2 demek. Excess 2 olması için ne yapmanız lazım? 6 bitimi kullanmanız lazım.
+
+375
+01:43:35,716 --> 01:43:38,835
+Az önceki örnekeki olduğu gibi. 6 yapmamız lazım, değil mi?
+
+376
+01:43:39,539 --> 01:43:43,840
+Evet. Tamam. Sayın bitimizi baştan, en baştan belirlememiz gerek yok değil mi bir de en önce?
+
+377
+01:43:43,840 --> 01:43:49,940
+Sayın bit pozitif olduğu için sıfır. Sıfır. Tamam. Şimdi iki olduğu için burası, ikinci kuvveti kullanmamız için.
+
+378
+01:43:49,940 --> 01:43:53,140
+Eksponentte kullanacağımız bitler de belli değil mi? Kaç olacak?
+
+379
+01:43:53,140 --> 01:43:58,640
+Bir bir sıfır. Bir bir sıfır. Çünkü altı olacak değil mi? Çünkü altı tamamlamak için.
+
+380
+01:43:58,640 --> 01:44:03,140
+2 artı 4, ekses 4 için 6. Bir bir sıfır yazdık.
+
+381
+01:44:03,828 --> 01:44:08,888
+Şimdi 4 bit de Mantis için ayırdığımızı düşünelim. 1, 2, 3, 4. Mantis'e ne yerleşecek?
+
+382
+01:44:09,347 --> 01:44:11,208
+1, 0, 1, 0, 1, 1.
+
+383
+01:44:11,768 --> 01:44:14,608
+1, 0, 1, 1 mi? Doğru mu?
+
+384
+01:44:15,168 --> 01:44:15,448
+Hı hı.
+
+385
+01:44:17,608 --> 01:44:20,748
+Peki, kayıbımız var mı hiç? Şunları yazdık.
+
+386
+01:44:21,788 --> 01:44:23,008
+En sondaki bir kayıp.
+
+387
+01:44:23,488 --> 01:44:25,828
+O bir kayıp. Şimdi şöyle düşünün, bu bir...
+
+388
+01:44:26,387 --> 01:44:52,247
+Hiç uğraşmayalım, tekrar sağlaması yapmaya uğraşmayalım. Bizim hangi sayımızı, hangi kesimimizi ifade ediyoruz? 200'leri x3 değil mi? Burası 200'leri x3'ler tabanı. Değil mi arkadaşlar? O zaman ne oluyor? Kayıp ne kadar olmuş oluyor? Bu 1 yazamadığınız için. Kim söyleyecek? 1 bölü 8. 1 bölü 8 değil mi? Truncation örgüümüz uzman 1 bölü 8'miş bu örnek için.
+
+389
+01:44:52,884 --> 01:45:05,384
+Veya şu an şöyle yapabiliriz, bu sayı doğrudan tam sayı karşılığında hesaplayalım. Kim hesaplayacak bunu? Şu sayıyı bana bu şekilde XS4 notasyonda verilen bir floating point sayısını bana decimal olarak kim söyleyebilir nasıl hesaplayacağını?
+
+390
+01:45:08,084 --> 01:45:12,084
+Bu sayı kaç olarak, şuraya bir yazılmadan, erörlü hali kaç bu sayının?
+
+391
+01:45:14,084 --> 01:45:18,684
+2 tam 6 bölü 8
+
+392
+01:45:19,188 --> 01:45:23,188
+6 bölü 8. Nasıl yaptığımızı söyler misin? Bu nasıl bulduğumuz sayıdan?
+
+393
+01:45:23,188 --> 01:45:25,188
+Bit bit bit merak ediyorum.
+
+394
+01:45:25,188 --> 01:45:31,188
+Evet, 1, 1, yok 1, 0, 1, 1 oluyor.
+
+395
+01:45:31,188 --> 01:45:33,188
+Evet, sayımız bu değil mi? Sayımız bu.
+
+396
+01:45:33,188 --> 01:45:34,188
+Evet.
+
+397
+01:45:34,188 --> 01:45:37,188
+Sayımız ne? Sıfıra bakarak pozitif.
+
+398
+01:45:37,188 --> 01:45:39,188
+Evet.
+
+399
+01:45:39,188 --> 01:45:41,188
+Nokta iki sahada.
+
+400
+01:45:41,188 --> 01:45:46,188
+Nokta iki sahada çünkü ekstresi, şuraya şu bitlere bakıyoruz. Burası kaç? 6.
+
+401
+01:45:46,899 --> 01:45:49,659
+6'dan ekses sayımız 4'tü, 4 çıkarıyoruz.
+
+402
+01:45:51,039 --> 01:45:53,760
+2, demek ki 2 bit kaydırmamız gerekiyor. O da şurası.
+
+403
+01:45:54,760 --> 01:45:55,019
+Evet.
+
+404
+01:45:55,219 --> 01:45:57,739
+Bu sayı kaç yapıyor o zaman? Şu kısım, 2 tam.
+
+405
+01:45:59,340 --> 01:46:02,299
+Burası 2 üzeri eksi 1, artı 2 üzeri eksi 2.
+
+406
+01:46:03,379 --> 01:46:04,519
+Kaç yapıyor? 3 bölü 4.
+
+407
+01:46:06,600 --> 01:46:08,680
+Aslında aynı sayılar, baktığımız gibi.
+
+408
+01:46:10,479 --> 01:46:10,699
+Değil mi?
+
+409
+01:46:12,100 --> 01:46:13,439
+Kaybımız ne kadar? 1 bölü 8.
+
+410
+01:46:14,484 --> 01:46:16,484
+iki tam 6 bölü 8 dedi.
+
+411
+01:46:16,484 --> 01:46:18,484
+iki tam 7 bölü 8 arası farkı oldu.
+
+412
+01:46:18,484 --> 01:46:22,484
+Trunkish nerör dediğimiz şeydi bu farkı arkadaşlar. Çünkü biz mantisamızla
+
+413
+01:46:22,484 --> 01:46:25,484
+sığdıramadığımız bitlerden vazgeçiyoruz.
+
+414
+01:46:25,484 --> 01:46:28,484
+O bir vazgeçtiğimiz bitlerde bizim errorümüz oluyor. Bu
+
+415
+01:46:28,484 --> 01:46:33,484
+Big Star'da sınırsız bir kaynak olmadığı için, bu tarz
+
+416
+01:46:33,484 --> 01:46:37,484
+büyük sayılar için, özellikle büyük floating point sayılar için bu tarz
+
+417
+01:46:37,484 --> 01:46:41,388
+yuvarlamalardan kaynaklanan trunkish nerör oluyor.
+
+418
+01:46:42,836 --> 01:46:45,636
+Tamam. Bir sonraki konumuza geçelim o zaman.
+
+419
+01:46:48,275 --> 01:46:54,355
+Bu çözüm var arkadaşlar ama biz zaten şey yaptık, çözümü çizdik. Çözüm bu şekildeydi.
+
+420
+01:46:55,155 --> 01:47:05,556
+Şimdi lojik kapılardan bahsedelim. Şimdi lojik kapıları zaten biliyorsunuzdur. Sizden bu örnek için kısa hemen hızlıca çözümünü öğretmenizi istiyorum. Size bir iki dakika vereyim.
+
+421
+01:47:06,235 --> 01:47:07,355
+Sağda verilen kapıya göre.
+
+422
+01:47:07,828 --> 01:47:17,828
+A0, B1, C0 verildiğinde oluşacak çıktığının ne olduğunu soruyoruz. Bir bakın hızlıca. Çete yazın. Çete yazdıktan sonra da çözüme geçerim hızlıca.
+
+423
+01:47:47,604 --> 01:47:50,924
+Tamam arkadaşlar, bununla ilgili çok fazla şey yapmaya gerek yok.
+
+424
+01:47:52,203 --> 01:47:53,444
+Zaman kaybetmeye gerek yok.
+
+425
+01:47:54,444 --> 01:47:55,084
+Gördüğünüz gibi
+
+426
+01:47:55,084 --> 01:48:00,463
+A ile B'yi topladığımızda end olduğu için A her zaman sıfırlıyor.
+
+427
+01:48:00,884 --> 01:48:01,864
+Çıkışırt sıfır oluyor.
+
+428
+01:48:02,344 --> 01:48:04,584
+A ile C'nin girdiği nant kapısından biri çıkıyor.
+
+429
+01:48:05,164 --> 01:48:07,564
+Sonra sıfırla biri oradığımız zaman her zaman biri çıkar.
+
+430
+01:48:07,564 --> 01:48:09,644
+Bu böyle basit bir lojik kapı örneği.
+
+431
+01:48:11,956 --> 01:48:13,956
+Şimdi lojik kapılar tabii ki...
+
+432
+01:48:13,956 --> 01:48:18,956
+Bir şey soracağım, öncekinde o alttaki gate'in ismi ne?
+
+433
+01:48:18,956 --> 01:48:31,956
+NAND, NOTAND. Şu notasyonda, şuraya bakarsan eğer, burada bir NOT operasyonu var. Bu bir AND kapısı, şu bir AND kapısı, şu işaretlediğim.
+
+434
+01:48:33,011 --> 01:48:39,951
+end'in sonuna not gelince, not end oluyor, not end demek. Önce end olup zor not'ın olabilirsin bu işlem için.
+
+435
+01:48:39,951 --> 01:48:42,511
+Bu not üçgen değil mi? Ben üçgen diye not almıştım.
+
+436
+01:48:42,511 --> 01:48:46,951
+Farklı notasyonlar var, üçgen kullanan notasyon da var ama bu daha sık kullanılıyor nokta.
+
+437
+01:48:46,951 --> 01:48:48,311
+Tamam, teşekkür ederim.
+
+438
+01:48:53,076 --> 01:48:55,076
+Başka sorusu olan yoksa devam ediyorum.
+
+439
+01:49:06,420 --> 01:49:07,840
+Sonraki slide'e geçiyorum arkadaşlar.
+
+440
+01:49:10,239 --> 01:49:17,899
+Burada bitwise lojik işlemler var arkadaşlar. Bitwise demek bit bazında yani her karşılık eden bitlerin birebir karşılığı yapılan işlemler var.
+
+441
+01:49:19,380 --> 01:49:20,200
+Buna da hızlıca bir bakın.
+
+442
+01:49:21,619 --> 01:49:23,159
+Çözümleri kendisi çözmeye çalışın.
+
+443
+01:49:41,524 --> 01:49:46,524
+İlk çözen bize cevap söyleyebilir. Ben tek tek kontrol edeyim.
+
+444
+01:49:55,347 --> 01:49:59,608
+Tamam, [öğrenci] cevabı verdi arkadaşlar. Doğru, [öğrenci] verdi. Nasıl yapıldığına bakalım.
+
+445
+01:50:00,987 --> 01:50:01,728
+Bir saniye.
+
+446
+01:50:05,128 --> 01:50:07,747
+Cevaplar bu şekilde. Hemen nasıl yapıldığına bakalım birlikte.
+
+447
+01:50:09,567 --> 01:50:11,768
+End operasyonu, sadece birkaç tane seçim yapacağım.
+
+448
+01:50:12,268 --> 01:50:14,987
+End operasyonu için, 1 ile 1'in end'i 1.
+
+449
+01:50:16,747 --> 01:50:20,427
+0 ile 1'in end'i 0.
+
+450
+01:50:21,332 --> 01:50:46,731
+Değil mi arkadaşlar? Birli sıfırın endi, sıfır ve sıfır diye gidiyor. Yani her bit, her bit kuvvetin aynı basamakta yok olan bitler için bir iş operasyonu koduz. Bitfazenemizin nedeni bu. Mesela bitfazen olmasaydı iki işlemin endi aslında toplamları olmuş oluyor değil mi arkadaşlar baktığımız zaman? Pardon orları mesela toplamları oluyor, endleri, çalkımları oluyor gibi.
+
+451
+01:50:49,876 --> 01:51:02,275
+Bu ikinci örnekte de buralar sıfır ama buralar bir olduğu için cevaplar bir bir, buralar bir bir olduğu için buralar sıfır sıfır olduğu için cevaplar sıfır bir bir şeklinde olacağı şekilde bir operasyon var. Diğerlerinde benzer şekilde.
+
+452
+01:51:02,275 --> 01:51:15,376
+Exor, Exclusive, Or demek. Yada demek aslında bir nevi. Birle bir her zaman aynı olduğu için cevabı sıfır olacak. Burada sıfır var, burada sıfır var, burada sıfır olacak çünkü yada'ya uymuyor.
+
+453
+01:51:15,988 --> 01:51:38,488
+XOR'a uymuyor. 1 ile 0, 1 üretir. 1 ile 0 yine 1 üretir. Bunun cevabı da bu şekilde. NAND kapısını azıca göstermiştim zaten nasıl bir şey olduğunu. Bunun cevabı da bu şekilde. Bunlar da son olacağını şu an. Sondakinin 1110 olması gerekmiyor muydu? 1100. Slide'da farklı şeyler olmuş olabilir. Ben kontrol ederim onu. Slide tamam.
+
+454
+01:51:46,739 --> 01:51:50,960
+Tamam yapalım. Sondaki dediğin şey değil mi? NAND'den bahsediyorsun buradaki örnekten.
+
+455
+01:51:50,960 --> 01:51:55,619
+Doğukan. Tamam, bakalım. Şimdi 1 ile 0'ın AND neydi?
+
+456
+01:51:56,940 --> 01:51:58,139
+0'dı, NAND'di 1.
+
+457
+01:52:00,039 --> 01:52:03,760
+0 ile 1'in AND'i 0, NAND'i 1.
+
+458
+01:52:04,739 --> 01:52:05,260
+NAT'ı yani.
+
+459
+01:52:06,699 --> 01:52:11,360
+0 ile 0'ın AND'i 1 normaldi ama NAT yaparsak 0.
+
+460
+01:52:12,899 --> 01:52:13,699
+1 ile 1'inki
+
+461
+01:52:14,228 --> 01:52:17,388
+End'ini yaparsak 1 ama burası 0 olacak.
+
+462
+01:52:17,868 --> 01:52:19,807
+Hocam 0 ile 0'ın endi...
+
+463
+01:52:19,807 --> 01:52:21,427
+Efendim?
+
+464
+01:52:22,208 --> 01:52:24,427
+0 ile 0'ın endi 0 değil mi?
+
+465
+01:52:25,868 --> 01:52:26,708
+Endi 0.
+
+466
+01:52:28,328 --> 01:52:29,927
+O zaman 1 olacak değil mi? Doğru.
+
+467
+01:52:30,648 --> 01:52:32,927
+O zaman 1 olacak. Evet doğru. Burası 1 olacak.
+
+468
+01:52:33,368 --> 01:52:33,908
+Düzeltiyorum.
+
+469
+01:52:36,288 --> 01:52:37,667
+0 ile 0'ın endi 1.
+
+470
+01:52:38,747 --> 01:52:39,587
+Endi de 0 oluyor.
+
+471
+01:52:40,564 --> 01:52:45,844
+Benim kafam karıştı, sıfırı sıfırın endi bir, burası sıfır.
+
+472
+01:52:47,404 --> 01:52:50,404
+Hocam, endi sıfır, not endi bir değil mi?
+
+473
+01:52:52,884 --> 01:52:56,164
+Hayır, sıfırı sıfır endi yaparsak ne çıkar? Bir çıkmaz mı?
+
+474
+01:52:56,804 --> 01:52:58,043
+Sıfır olur hocam.
+
+475
+01:52:58,043 --> 01:53:05,043
+Sıfır çıkar, sıfır çıkar değil mi? Doğru doğru, pardon benim kafam karıştı. Çok doğru söyledin. Sıfırı sıfırın endi sıfır, burası da bir olur o zaman.
+
+476
+01:53:09,619 --> 01:53:10,799
+Tamam, teşekkür ederim.
+
+477
+01:53:11,879 --> 01:53:12,539
+Devam ediyorum.
+
+478
+01:53:12,979 --> 01:53:13,719
+Bir sonraki slide ile.
+
+479
+01:53:22,899 --> 01:53:32,079
+Toplama çıkarma işlemleri var arkadaşlar. Bunlar farklı şekilde yapılabilir. Bunu da hızlıca yapın arkadaşlar. 5 dakika size süre vereyim. Sonra diğer işlemleri bitirelim.
+
+480
+01:55:15,859 --> 01:55:23,859
+Tamam, bulduğunuza göre hemen bakalım sonuçlarına. Şimdi ilk olarak...
+
+481
+01:55:23,859 --> 01:55:25,707
+Bir saniye...
+
+482
+01:55:35,539 --> 01:55:37,079
+Tamam, ilk olarak şuradan başlayalım.
+
+483
+01:55:38,299 --> 01:55:40,859
+İlk örneğimiz 9 artı 12 idi. Çok basit bir şekilde.
+
+484
+01:55:41,639 --> 01:55:45,680
+9'u 12'nin binary hallerini yazıyoruz değil mi arkadaşlar? Kısa basit sayı zaten.
+
+485
+01:55:46,760 --> 01:55:50,100
+Bir şey çevirmeye gerek yok. Binary hapornlarını yazıp topluyoruz ve cevap bu çıkıyor.
+
+486
+01:55:50,260 --> 01:55:52,819
+Bu da aslında 21'e denk geliyor değil mi?
+
+487
+01:55:54,500 --> 01:55:56,079
+Çevirirseniz 20'e denk geliyor görürsünüz.
+
+488
+01:55:56,659 --> 01:56:00,159
+Toplama işlemi 1 ile 0 toplarsak 1, 0 ile 0 toplarsak 0.
+
+489
+01:56:02,452 --> 01:56:29,112
+Sıfır. Burada bir ile bir topladığımız zaman sıfır ama elde var bir şeklinde bir sonraki basamağı bir yazıyoruz. Elde burada da geçerli. Şimdi dokuz eksi on ikinin çıkarma işlemine iki farklı şeklinde yapılabiliyor. Birincisinde ki mantık şu dokuz eksi on iki aslında dokuz artı eksi on iki şeklinde yapılabilir. Değil mi arkadaşlar? Şöyle. Dokuz eksi on iki şeklinde yapılabilir. Bunlar bir, bir.
+
+490
+01:56:30,515 --> 01:56:39,015
+Birbirlerine eşit olan iki tane format. Dolayısıyla şöyle bir seçeneğiniz olur bu durumda. 12'yi öncelikle normal binary formunda yazarsınız. Tools Komplement'ini alıp
+
+491
+01:56:39,015 --> 01:56:50,507
+X12'yi bulursunuz. Sonra 9 ile X12'yi karşı gelen binary formatlarını toplarsınız. Bu durumda 12'nin normalde
+
+492
+01:56:53,268 --> 01:57:01,448
+On ikiyi, once komplement, normal hali budur. Bunun once komplementini aldığımız zaman bitwise negatif yaparız, bitwise terslerini alırız, o da bu.
+
+493
+01:57:02,448 --> 01:57:08,128
+Bunun da buna da bir eklediğimiz zaman, eksi on ikiyi buluruz. Yani tous komplement aslında burası değil mi arkadaşlar? Tous komplement, negatif hali şurası.
+
+494
+01:57:09,188 --> 01:57:20,427
+Eksi on iki buymuş. Şimdi bu iki sayı bulduğumuza göre bu sayı ve baştaki orijinal olan dokuzu, dokuz da eksi on ikiyi toplama işlemine koyuyoruz. Dokuz burada, eksi on iki burada.
+
+495
+01:57:21,524 --> 01:57:30,684
+Oluşan sonuçta biz aslında, bakın negatif sayı, eksi 3'ü gösteriyor. Çünkü buradaki bit yok. Tamam?
+
+496
+01:57:32,123 --> 01:57:34,924
+Bunu çözüm bu şekilde. Bir diğer alternatif ise burada.
+
+497
+01:57:36,532 --> 01:57:53,532
+bir tane alternatör çözüse doğrudan çıkarma işlemi yapalım. Yani içine geç işleme yapmadan 26'dan 12 çıkarmak. Burada da doğrudan çıkarma işlemi uyguluyoruz. 0'dan 0 çıkarsa 0, 1'den 0 çıkarsa 1, 0'dan 1 çıkmaz. Buradan bir elde alıyoruz. Dolayısıyla çıkarttığımızda...
+
+498
+01:57:57,140 --> 01:58:04,200
+İki oluyor, ikiden bir çıkar bir. Bu şekilde çıkartma işlemi devam ettiğinizde oluşan sonuçta buluyor. Bu da doğrudan çıkartma işlemi.
+
+499
+01:58:07,280 --> 01:58:15,400
+Sorusu olan var mı arkadaşlar? Doğrudan çıkartma işlemiyle ilgili veya önce negat yapıp sonra çıkartma işlemiyle ilgili farklı yol gösterdim.
+
+500
+01:58:15,520 --> 01:58:19,840
+Bir daha anlatır mısın? Hangisini? Sonuçsunu mu anlatmak istiyorsunuz? Hangisini?
+
+501
+01:58:20,260 --> 01:58:24,340
+Tamam. Tamam. Sonuçta arkadaşı olan çıkartma işlemi yapıyoruz. Tamam mı?
+
+502
+01:58:25,203 --> 01:58:27,763
+Tekrar gösteriyorum. Önce bir temizleyeyim.
+
+503
+01:58:32,724 --> 01:59:00,492
+ehh
+
+504
+01:58:39,220 --> 01:58:49,720
+Şimdi sıfırdan sıfır çıkar, sıfır değil mi arkadaşlar? Birden sıfır bir çıkartma işlemi uyguluyoruz. Ama sıfırdan bir de çıkmaz. Normalde biz onların sayılarda çıkarma işlemi yaparken ne yapıyoruz? Elde alıyoruz değil mi buradan?
+
+505
+01:58:51,500 --> 01:59:00,220
+Elde, on elde alıyoruz. On üç falan yapayım, on üçten falan sayı çıkıyoruz. Ama burada ikilik tabanında olduğu için elde iki alıyoruz. Burası iki oluyor, buradan bir elde alırsak.
+
+506
+01:59:01,131 --> 01:59:04,131
+ehh
+
+507
+01:59:00,851 --> 01:59:26,072
+İkiden bir çıkarsa bir. Burada bir vardı, biz buraya sıfır indirdik bir elde aldığımız için. Sıfırdan bir çıkmaz değil mi? Buradan bir elde aldık iki. İki aldık buradan. İkiden bir çıktı bir. Burada elde kalmadı, burası sıfıra dönüştü. Sıfır aşağı inir, sıfır aşağı inir, sıfır aşağı inir. Onun için sayı bu çıkıyor. Burası ile ilgili bir sorun var mı? Tekrar anlatmamı ister misiniz? Normal ondalık sayı çıkarır gibi biz. Desimal sayıları birbirinden çıkarırken ne yapıyoruz?
+
+508
+01:59:26,448 --> 01:59:31,888
+Bir öncük biz büyük basamaktan bir onluk alıyoruz değil mi? Burada ikilik alıp böyle çıkarmak yapıyoruz. Başka hiçbir farkı yok.
+
+509
+01:59:34,128 --> 01:59:35,768
+Anladım hocam, teşekkür ederim.
+
+510
+01:59:36,108 --> 01:59:36,667
+Ben de anladım.
+
+511
+01:59:38,208 --> 01:59:40,528
+Hocam ama sonuç onluk çıkmıyor mu orada?
+
+512
+01:59:46,804 --> 02:00:03,804
+13, 13 çıkmıyor mu hesaplayalım. 2 üzeri 1, 2 üzeri 2, 2 üzeri 3, burası 2, burası 4, 6, 8 daha 14.
+
+513
+02:00:03,804 --> 02:00:04,804
+Ah pardon pardon.
+
+514
+02:00:04,804 --> 02:00:05,804
+Tamam.
+
+515
+02:00:11,412 --> 02:00:12,172
+Tamam ediyorum.
+
+516
+02:00:16,659 --> 02:00:36,859
+Şimdi overflow durumları var arkadaşlar. Şimdi iki sayı topladığımız zaman, tabii memorileri düşünün, sonsuz sayı toplama şansımız yok. Yani çok yüksek basamak sayıları topladığımızda memoriye sığmadığı durumlar oluşabiliyor. Bu duruma overflow deniyor. Örneğin 8 bit ile 127'ye kadar, artı eksi 127'ye kadar, pardon artı 127, eksi 128.
+
+517
+02:00:37,524 --> 02:01:01,244
+Veya tam tersi. Önemli olan burada belli bir belleğimiz var ve belli bir sayı range'imiz var. Sayı range'inin dışına çıktığı zaman ne oluyor sayılar? Şimdi bitlerimiz ne oluyor bizim? Overflow oluyor. Overflow olduğu zaman da sayılar negatif veya pozitife dönüşebiliyor. Örneğin iki büyük sayı topladığınız zaman sonucunuz negatif veya iki negatif sayı topladığınız zaman soyunuz pozitif çıkabiliyor ki normalde böyle çıkmaması gerekir. Bu durumun adı Overflow'dur arkadaşlar. Mesela burada bir Overflow durumu söz konusu.
+
+518
+02:01:01,844 --> 02:01:09,043
+Çok vaktimiz kalma için çok uzatmayacağım kısmı, direkt sonucu gösteriyorum. Şimdi hemen bakalım birlikte.
+
+519
+02:01:11,283 --> 02:01:16,564
+Burada aslında 120 sayısı var ve burada 126 sayısı var. İki sayının toplamı baktığınız zaman 253 yapıyor.
+
+520
+02:01:20,148 --> 02:01:25,347
+değil mi arkadaşlar? Ama bizim çözümümüz öyle mi? Negatif sayı çıkıyor değil mi arkadaşlar? Bakın negatif sayı oluşuyor.
+
+521
+02:01:25,347 --> 02:01:33,028
+Başı, biliklik basamağı bir. İşte buna overflow deniyor arkadaşlar. Tamam. Şimdi bunun için neye bakıyoruz?
+
+522
+02:01:33,028 --> 02:01:39,108
+Carry ve carry alt flagleri vardır bir toplama işlemleri yapılırken. Bizim iki topladığımız sayı
+
+523
+02:01:39,828 --> 02:01:45,328
+pozitifken, sonuç negatif çıkıyorsa taşma vardı deyip, bizim bit by toplama işlemlerinde
+
+524
+02:01:45,328 --> 02:01:55,828
+carry in ve carry it proyeklerini 0 veya 1'e çeviren doğrul tablosu var arkadaşlar. Bak bizim iki tane pozitif sayı topladığın zaman bir negatif sayı çıkıyorsa taşma var.
+
+525
+02:01:55,828 --> 02:02:00,828
+veya iki tane negatif sayı topladığın zaman bir pozitif çıkıyorsa burada bir taşma vardı diyebiliyoruz.
+
+526
+02:02:02,828 --> 02:02:04,828
+Anlaşılmayan bir şey var mı?
+
+527
+02:02:14,292 --> 02:02:27,612
+Hayır, overflowla truncation aynı şey değil. Truncation'a bizim elimizde bir sayı var ve biz onu bir bitliğe sığdırmaya çalışıyoruz ve en az önemli olan ondalık kısmı veya kirlik kısmı çöpe atıyoruz. Truncation error bu. Ama overflow bambaşka.
+
+528
+02:02:27,612 --> 02:02:39,292
+Çünkü overflowda ise iki tane sayı topluyoruz. Ama topladığımız sayıda oluşan sonuç bizim alanımıza sığmıyor. Sığmadığı için de negatif sayı veya pozitif sayıya girmiş gibi
+
+529
+02:02:40,051 --> 02:02:42,611
+oluşuyor tamam mı? Bunun durumuna offload deniyor.
+
+530
+02:02:45,939 --> 02:02:57,099
+Bu durumu offload. Gördüğünüz gibi, mesela şu iki sayı topladığınızda, bitwise topladığınızda, bu sayın oluştuğunu görüyorsunuz. Normalde bu sayı 127. Bu sayı da 126.
+
+531
+02:02:59,099 --> 02:03:11,779
+İki tane sayı var ama bizim rencimiz neydi zaten? 127'den büyük sayı alamıyoruz. Pardon, evet, 127'den en büyük sayımız bu da 127 bizim pozitif sayı olarak. Çünkü bu pozitif sayı hepsini bir yaptığımızda maksimum 127 oluşabiliyoruz.
+
+532
+02:03:11,904 --> 02:03:22,104
+Bizim bu sekiz bitik formasyonda, böyle bir sayı, bizim için negatif bir sayı. Ama bizim range maksimum 127 olduğu için 253 sayısını buraya sığdıramıyoruz, tamam?
+
+533
+02:03:24,744 --> 02:03:29,463
+Evet [öğrenci] abi, nedeni bu? Aşırı büyük sayılar toplanınca sonuçların negatif çıkması nedeni overflowdur.
+
+534
+02:03:29,463 --> 02:03:31,864
+Ve bilgisayarlarda overflow bulup olmadığını...
+
+535
+02:03:32,051 --> 02:03:41,652
+taşıyan bilgi de overflow flag'tir. Carry flag'lere bakarak, aşağıdaki Dorul tablosuna bakarak, overflow flag 1 veya 0 olur. Tamam mı?
+
+536
+02:03:42,851 --> 02:03:46,851
+Sizin aslında sayı sistemlerini ileride göreceksiniz. Şunlar dışında...
+
+537
+02:03:50,868 --> 02:03:57,347
+İki işlemi topladığınızda, örneğin burası 6 bit olduğunu düşünün. Böyle bir carry flag
+
+538
+02:03:57,347 --> 02:04:07,908
+carry flag'iniz ve burada bir tane overflow flag'iniz olacak. Bunlar birer birer bitik toplama ve çıkarma işlem sonuçlarını
+
+539
+02:04:07,908 --> 02:04:14,468
+doğruluğunu gösteren, hangi durumda olduğunu gösteren flag'ler. Bildiri bitleri aslında.
+
+540
+02:04:14,644 --> 02:04:31,644
+O bitlerde belli bir doğruluk tablosuna göre çalışıyor. İşte Keyflake'den, Offlapfag'in bitlerini hesaplamada aşağıdaki doğruluk tablosundan faydalanılıyor. İki tane pozitif sayı topladığımız zaman hiçbir zaman negatif çıkmamalı. İki tane negatif sayı topladığımız zaman hiçbir zaman pozitif çıkmamalı. Böyle durumlarda eğer oluşursa taş mı olduğunu söylüyoruz.
+
+541
+02:04:37,779 --> 02:05:00,219
+Overflow var. Truncation error zaten overflow'dan ayrı bir şey. Çok başka şeyler arkadaşlar. Birinde bizim belli bir memoriyalarımız var. Oraya bir şey sığdırmaya çalışıyoruz. Ama sığdıramadığımız için birtakım şeyler var. Kayıplar vermemiz gerekiyor. Göze aldığımız kayıplar var. Buna truncation error dönüyor. Ama overflow, bir işlemin yanlış çıkması sonucunda oluşan bir durum. Yani iki tane toplama işleminin sonucu.
+
+542
+02:05:00,851 --> 02:05:16,851
+Negatif çıkmamalı ama bizim memoralarımız kısıtlı olduğu için iç sayı topladığımız zaman negatif sayı notasyonunda pozitif çıkabiliyor veya negatifleri topladığımızda pozitif çıkabiliyor. Bu duruma overflow deniyor. İkisini birbirine çok karıştırmamamız gerekiyor. Tamam mı?
+
+543
+02:05:18,851 --> 02:05:22,851
+Bugün anlatiplerin ilgili sorusu olan var mı? Ders yetinmemiz gerekiyor çünkü.
+
+544
+02:05:24,148 --> 02:05:29,148
+Hocam, o zaman bu overflow olayı sadece işaretçilerde geçerli oluyor değil mi?
+
+545
+02:05:32,979 --> 02:05:38,979
+overflow olayı sadece işaret sayılardan var. Yani, hayır olmaksızın diye pozitif sayılarda da sıfırdan
+
+546
+02:05:38,979 --> 02:05:46,979
+255'e kadar olan durumlarda overflow olur ama bizim şu an sadece negatif sayılarda oluşan, negatif pozitif sayılarda oluşan
+
+547
+02:05:53,171 --> 02:05:57,011
+Biz sadece işaret sayılarda oluşan negatif pozitif sayılara bakıyoruz.
+
+548
+02:05:57,531 --> 02:06:05,211
+Pozitif sayılarda olması mümkün ama bu durumu kontrol edebileceğimiz bir mekanizma yok şu anda. O sadece overflow play'in olması durumunda söz konusu.
+
+549
+02:06:07,636 --> 02:06:16,836
+Hocam, bu yaptığımız işlemeyi eğer işaretsiz kabul etseydik sayılarımızda doğru oluyor mesela bu. Ama bunun dışında daha büyük sayılarda oluyor mu yine işaretsiz sayılar?
+
+550
+02:06:16,836 --> 02:06:25,115
+Oluyor, oluyor. Onun için play kullanılıyor. Az önce söyledim ya, şöyle göstereyim sana hemen, çiziyorum. Hemen göstereyim. Mesela sekiz bitik bir sayım var.
+
+551
+02:06:25,476 --> 02:06:33,216
+Sadece işaretsiz işlerden bahsettiğim için bütün bitlerin bir olması durumunda. Sekiz bitik bir sayının hep bütün bitleri bir sene çıkar işaretsizse.
+
+552
+02:06:33,971 --> 02:06:41,731
+İki yüz elli beşe kadar iler değil mi bu sayı? Sıfır iki yüz elli beş arası olur. Sıfırla iki yüz elli beş arası olur değil mi? İşaretçilerden bahsediyoruz.
+
+553
+02:06:42,851 --> 02:06:51,731
+Hepsi bir olursa ne olur? Bunların? İki yüz elli beş. Çünkü en baştaki sign bit değil artık değil mi? Çünkü sign bit kullanmamıza gerek yok işaretçisi. Hepsi normal bit.
+
+554
+02:06:51,731 --> 02:06:59,891
+Sıfırdan iki yüz elli beşe kadar sayı üretemezmiş üretiriz. Peki böyle bir durumda iki tane iki yüz elli beşi toplarsak, sekiz bitlik alan. Şöyle şurada çiziyorum sağda.
+
+555
+02:07:01,939 --> 02:07:04,439
+İki tane sayımız var burada. Hemen çiziyorum.
+
+556
+02:07:07,399 --> 02:07:08,899
+Buradaki bütün gözlerin biri olduğunu düşün.
+
+557
+02:07:10,500 --> 02:07:12,000
+Alttakilerin hepsinin biri olduğunu düşün.
+
+558
+02:07:13,000 --> 02:07:13,959
+[öğrenci] 255.
+
+559
+02:07:15,840 --> 02:07:16,799
+[öğrenci] da 255.
+
+560
+02:07:18,439 --> 02:07:19,039
+Topluyorum.
+
+561
+02:07:20,243 --> 02:07:44,463
+Yine hepsi ne olacak bu sefer? Yine şöyle bir sayı olacak. Burası bir ile bir topladım sıfır değil mi? Bir, bir ile topladım sıfır sıfır sıfır sıfır. Burada bir bir olacak. Burada bir overflow söz konusu. Sonra burası bir oluyor. Olmayan bir byte bir geliyor. Bu durumlarda bunu handle etmek için, bu durumu yakalamak için buraya bir flag konuyor eksen. Flag biti konuyor. Buna da overflag flag deniyor. Overflow flag. Tamam mı? Bu bir olduğunda direkt flaya yansıyor zaten.
+
+562
+02:07:47,859 --> 02:07:49,179
+Tamamdır hocam, teşekkür ederim.
+
+563
+02:07:49,199 --> 02:07:52,000
+Yani Signbit'in değişmesine bakıyoruz ya biz negatif sayılarda.
+
+564
+02:07:52,500 --> 02:07:55,920
+Pozitif sayılarda ise sadece overflow play'e bakıyoruz.
+
+565
+02:07:57,039 --> 02:07:58,039
+Pozitif pozitif sayılarda.
+
+566
+02:07:58,599 --> 02:08:00,159
+Negatif sayılarda söz konusu olmadığı durumlarda.
+
+567
+02:08:00,239 --> 02:08:02,679
+Çünkü Signbit olmadığı için şu tabloyu kullanamıyoruz.
+
+568
+02:08:04,279 --> 02:08:05,659
+Onun yerine overflow play kullanıyoruz.
+
+569
+02:08:08,179 --> 02:08:09,959
+Tamam. Başka sorusu olan yoksa?
+
+570
+02:08:11,155 --> 02:08:19,515
+Dinlediğiniz için teşekkürler arkadaşlar. Bugün biraz karışıklık oldu. Tam planlayamadık. Grupları bir tek gruma toplayalım. Grup şeklinde mantılın diye.
+
+571
+02:08:21,155 --> 02:08:33,416
+Bundan sonra da Nasıl İşleyencel'le ilgili duyuruları bölüm sayfasından ve hocalarınızdan doğrudan öğrenebilirsiniz. Anlatacaklarım benim bugün bu kadardı. Zaten sunumda bitti. Dinlediğiniz için teşekkür ederim.
+
+572
+02:08:33,755 --> 02:08:34,136
+Hocam.
+
+573
+02:08:34,155 --> 02:08:35,496
+Umarım faydalı olmuştur. Buyurun.
+
+574
+02:08:36,095 --> 02:08:37,136
+Son soru söyleyebilir miyim?
+
+575
+02:08:37,456 --> 02:08:38,155
+Tabii sorabilirsin.
+
+576
+02:08:38,804 --> 02:08:43,884
+Hocam, bu binary sayı sistemi ile işaretli sayı sistemi aynı şeyi mi ifade ediyor?
+
+577
+02:08:44,304 --> 02:08:54,023
+Şimdi, binary sayı sistemi ikili sayı sistemi demek. İşaretli sayı sistemi ise, bu ikili sayı sistemindeki en soldaki biti 0 ile 1 yaparak işareti belirlediğimiz bir sayı sistemi, tamam mı?
+
+578
+02:08:54,104 --> 02:09:00,064
+Yani her zaman bütün binary sayı sistemleri işaretli sayı sistemi olmak zorunda değil. Bu bitleri nasıl kullandığının alakalı bir şey.
+
+579
+02:09:00,604 --> 02:09:02,744
+İşaretli sayı sisteminin özel bir adı var mı yoksa?
+
+580
+02:09:03,412 --> 02:09:08,992
+Özel adı yok yani. Sayı sistemi farklı bir şey. O sayıları biz bitlerle nasıl ifade ediyoruz çok başka bir şey.
+
+581
+02:09:09,572 --> 02:09:10,832
+Tamamdır hocam. Teşekkürler.
+
+582
+02:09:13,712 --> 02:09:18,232
+Tamam. O zaman kapatıyorum arkadaşlar. Herkese iyi bir gün diliyorum. Hoşçakalın.
+
+583
+02:09:19,272 --> 02:09:22,032
+Hocam, sünürüyü bizle nerede paylaşacaksınız?
+
+584
+02:09:22,512 --> 02:09:23,292
+Avasis sayfalarında.
+
+585
+02:09:23,292 --> 02:09:25,952
+Avasis'e bakabilirsiniz. Avasis'ten paylaşırız. Tamam.
+
+586
+02:09:26,032 --> 02:09:27,212
+Tamam. Teşekkür ederim.
+
+587
+02:09:27,612 --> 02:09:28,212
+Hoşçakalın.
+
+588
+02:09:28,372 --> 02:09:29,312
+Teşekkürler. Emekler.
+
+589
+02:09:29,512 --> 02:09:30,352
+İyi günler hocam.

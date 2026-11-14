@@ -1,0 +1,2183 @@
+1
+00:00:50,195 --> 00:00:50,835
+Ses geliyor mu?
+
+2
+00:00:55,475 --> 00:00:57,615
+Evet hocam, geliyor da, geridan.
+
+3
+00:00:58,135 --> 00:00:59,855
+Hocam geliyor da sanki uzaktan geliyor gibi.
+
+4
+00:01:07,379 --> 00:01:09,979
+Şimdi nasıl? İyi mi?
+
+5
+00:01:10,619 --> 00:01:11,060
+Şu an iyi.
+
+6
+00:01:11,459 --> 00:01:12,419
+Biraz daha iyi hocam.
+
+7
+00:01:13,399 --> 00:01:16,979
+Tamam arkadaşlar. Quiz bugün, evet haberiniz var zaten muhtemelen.
+
+8
+00:01:18,219 --> 00:01:22,099
+Saat dörtte başlatacağız. Hatta şu an onu bir tanımlayayım ben.
+
+9
+00:01:24,019 --> 00:01:28,479
+Bir on beş dakika sonra derse başlayacağız. On dakika sonra derse başlarız.
+
+10
+00:01:29,579 --> 00:01:30,419
+Geliyorum hemen.
+
+11
+00:05:04,148 --> 00:05:10,148
+Arkadaşlar, sınavı tanımladık. Geldi mi mail acaba veya bir bildirim şey?
+
+12
+00:05:13,368 --> 00:05:24,268
+Saat 4'de başlayıp 4.50'de bitecek. 4'e kadar ders yapacağız. Zaten bu haftanın dersi empedanslar üzerine olacağı için bitirebileceğimizi düşünüyorum.
+
+13
+00:05:24,947 --> 00:05:34,487
+Yani 3.50 gibi falan bir bitiririz dersi. 10 dakikada o arayı kullanırız. 3.50'ye kadar bir ara vermeyiz. Bu şekilde.
+
+14
+00:05:36,227 --> 00:05:38,887
+Hocam, sınav klasik mi olacak, test mi?
+
+15
+00:05:39,407 --> 00:05:41,827
+Klasik. Kısa sınavlar klasik.
+
+16
+00:05:43,048 --> 00:05:51,679
+Klasik, işte en son labda da yaptığınız tarzda bir soru. O yüzden hani...
+
+17
+00:05:51,680 --> 00:05:53,500
+Pekiştireç anlamında zor değil.
+
+18
+00:05:54,980 --> 00:05:55,920
+Kaç soru var hocam?
+
+19
+00:05:56,800 --> 00:05:57,180
+Efendim?
+
+20
+00:05:57,639 --> 00:05:58,900
+Kaç soru olacak kısasına?
+
+21
+00:05:59,300 --> 00:06:01,939
+Yani bir soru var ama şıkları var işte artık.
+
+22
+00:06:02,379 --> 00:06:04,680
+Bilmiyorum yani dört şıkkım ne var herhalde?
+
+23
+00:06:04,900 --> 00:06:05,840
+Hatırladım kadarıyla.
+
+24
+00:06:06,439 --> 00:06:07,379
+Bir tane soru almak.
+
+25
+00:06:07,620 --> 00:06:09,259
+Yani elli dakika çok rahat yeter.
+
+26
+00:06:09,480 --> 00:06:10,519
+Yani aşırı yeter.
+
+27
+00:06:11,560 --> 00:06:13,080
+Kesinlikle mail göndermeyin.
+
+28
+00:06:13,492 --> 00:06:22,392
+Gerçekten mail, hani şunu diyenleriniz oluyor, kendince haklı belki ama, hocam sistemden yükledim, daha önceden sıkıntılar yaşadığımız için buradan da gönderiyorum, değil.
+
+29
+00:06:23,172 --> 00:06:28,951
+Yani çünkü maili hiç açmadan siliyorum arkadaşlar, hani boş yere uğraşmayın, beni de uğraştırmayın.
+
+30
+00:06:29,632 --> 00:06:38,552
+Sistem, ya 30 dakikada bitecek bir sınav, 20 dakikanızı onu yüklemek için oraya uğraşırsak zaten hala hazırda.
+
+31
+00:06:39,028 --> 00:06:44,128
+Gayet normal bir şekilde yükleniceğini düşünüyorum. Hiç sıkıntı olacağını düşünmüyorum.
+
+32
+00:06:47,764 --> 00:06:54,723
+Evet, dersimize geçelim. Saatımız kaç? Aynen, derse geçelim. İki geçmiş zaten.
+
+33
+00:07:05,043 --> 00:07:24,144
+Şimdi bu dersin amacı aslında empedans denen bir tabir vardı. Herhalde geçen hafta bir karışıklık yaşandı. Asistanlar size empedans sorusu sormuştu ne derslerim lafta. Onu güncelledik, düzelttik vesaire neyse. Aslında geçen haftanın son sunumunda empedansa ufaktan da olsa bir değinmiştik.
+
+34
+00:07:24,564 --> 00:07:30,244
+Bu haftada empedansı daha detaylıca analiz edeceğiz. Nedir empedans? Ona bakacağız.
+
+35
+00:07:30,804 --> 00:07:39,104
+Empedansın Ohm kanunu çerçevesindeki hesaplamalara bakacağız. KVL, KCL'sine bakacağız. Thevenin, Norton'una bakacağız.
+
+36
+00:07:39,684 --> 00:07:42,764
+Ve dersi bitireceğiz. Empedans üzerinden bir ders olacak.
+
+37
+00:07:43,664 --> 00:07:45,804
+Aslında empedans... Geçelim direkt.
+
+38
+00:07:46,387 --> 00:07:50,408
+Matematik formülünü vs. anlatacağımız Ohm kanunu göstereceğiz.
+
+39
+00:07:50,908 --> 00:07:57,987
+Ohm kanunu normalde neydi arkadaşlar? V eşittir, I çarpı R diye tabir ettiğimiz bir kanundu.
+
+40
+00:07:58,647 --> 00:08:04,867
+Yani aslında gerilimin akım ve direncin orantısıyla alakalı bir parametre olduğunu söylerdi bize.
+
+41
+00:08:05,396 --> 00:08:20,536
+Şimdi tabii bu V çarpı R derken DC akım veya DC gerilimden bahsediyoruz genelde. Yani V burada büyük hafle gösteriliyor işte o formülde. İ dediğimiz veya I diye tabir ettiğimiz büyük hafle gösteriliyor.
+
+42
+00:08:21,076 --> 00:08:27,196
+Yani bir zaman domenine bağlı bir analiz söz konusu değil. O doğru akım devre analizlerinde.
+
+43
+00:08:27,196 --> 00:08:33,395
+Çünkü ne demiştik? Doğru akım dediğimiz zamana göre değişmeyen bir akım şekliydi veya gerilim şekliydi.
+
+44
+00:08:33,395 --> 00:08:50,555
+Ama alternatif akım veya alternatif gerilim bizim için zaman domeninde değişkenlik gösteren sinüs dalgası gibi, kosinüs dalgası veyahut da bunların birleşiminden üretilmiş bir time variant, yani zamana bağlı değişkenlik gösteren bir gerilim ve akımdı.
+
+45
+00:08:50,555 --> 00:09:00,155
+O yüzden Ohm kanununun AC gerilim boyutunda yazacağımız vakit biz her zaman V ve I, yani gerilim ve akımı ufak harfle gösteririz.
+
+46
+00:09:01,395 --> 00:09:19,035
+Neden? Çünkü bu böyle nomine edilmiş, böyle kısaltma bu hale getirilmiş. Büyük, I, Büyük ve Büyük parametreler DC analizler için geçerli olur. Ufak harfle yazılmış olan parametreler AC analizler için gösterilir.
+
+47
+00:09:19,875 --> 00:09:24,336
+Burada da İ ve B... Efendim bir soru mu var?
+
+48
+00:09:27,508 --> 00:09:29,948
+Bir ses geldi ama herhalde yanlışlıkla oldu.
+
+49
+00:09:31,688 --> 00:09:38,587
+V ve i'nin burada ufak harfde gösterdiğimiz, ekran gözüküyor değil mi? Ben sormadım ama hiç. Sunum gözüküyor mu?
+
+50
+00:09:38,868 --> 00:09:39,827
+Gözüküyor hocam.
+
+51
+00:09:40,724 --> 00:09:48,024
+Burada i ve v'yi biz ufak hafifle göstererek aslında AC gerilim ve AC akımla işlem yapacağımızı belirtiyoruz.
+
+52
+00:09:48,464 --> 00:09:56,604
+Ayrıca zaten gördüğünüz gibi bir t parametresi var. Yani zamana bağlı akım, o zamandaki akım ve o zamandaki gerilimi gösteren ibare bunlar.
+
+53
+00:09:57,384 --> 00:10:03,784
+Şimdi biz biliyoruz ki zamanla değişiyor ve biz bu sinyali genelde kosünüs ve sinüs tabanında gösteriyoruz.
+
+54
+00:10:04,532 --> 00:10:12,231
+V eşittir, I çarpı, R denkleminin de gene biz I anlamında, yani akım anlamında kosünüstü bir ibareden bahsedeceğiz.
+
+55
+00:10:12,372 --> 00:10:14,731
+Sonuçta değişkenlik gösterecek olan bir akım olacak.
+
+56
+00:10:15,211 --> 00:10:20,832
+Burada I, M, işte o PİT'teki maksimumu gösterecek, akımın maksimum noktası.
+
+57
+00:10:20,832 --> 00:10:32,532
+Kosünüstü omega T artı fi ibaresi ise onun o T domeninde, o T skalasında, o T zamanında kosünüstü açıyla çarpılarak bir değerini verecek.
+
+58
+00:10:32,532 --> 00:10:54,552
+Yani işte artı eksi 5 volt da sanım yapan bir gerilimden bahsedelim. Veya artı eksi 5 amperlik bir akımdan bahsedelim. Bu 5 amperliğin 3. saniyesinde kaç olduğu 5 çarpı 0, bilmem kaç parametresiyle bulacağız. Oradaki 0, kosün üstten gelince okulan parametre olacak. Yani okuması böyle en azından.
+
+59
+00:10:58,067 --> 00:11:01,048
+Ohm kanununda da kosyonüstü ibareyi akım niyetine yazdı.
+
+60
+00:11:01,375 --> 00:11:06,975
+Şimdi V eşde, I çarpı, R'de de aslında V ve I'yı burada biz kosünüs bazında yazacağız.
+
+61
+00:11:07,415 --> 00:11:10,115
+Peki bu bize neyi mümkün hale getiriyor?
+
+62
+00:11:11,036 --> 00:11:16,216
+Şu an kosünüs ile ibarede bir T domeninin, T sıkası hala var.
+
+63
+00:11:16,615 --> 00:11:21,056
+Ama biz bunu kosünüs ile ibareden fazor diye gösterdiğimiz hatırlarsanız,
+
+64
+00:11:22,076 --> 00:11:28,015
+şimdi tablet de tabii okulda değil, yanımda değil ama şöyle bir elimle göstermeye çalışayım.
+
+65
+00:11:30,004 --> 00:11:38,403
+Şuradaki teta bizim için şuradaki kosünüsün shift ettiği, yani faz farkını oluşturacak kısım olacaktı.
+
+66
+00:11:38,764 --> 00:11:44,163
+Yani biz şuradaki t'den tamamen fazöre geçerek kurtulmayı hedefliyoruz.
+
+67
+00:11:44,764 --> 00:11:47,464
+Ki gördüğümüz gibi burada herhangi bir t parametresi yok.
+
+68
+00:11:47,464 --> 00:11:49,744
+R çarpı I.
+
+69
+00:11:50,176 --> 00:11:59,635
+Fazor gösterimde teta, açısı şeklinde gerilimi bulabilmemizde yarayacak bu fazor gösterimi AC gerilim ve AC akım içeren devrelerde.
+
+70
+00:12:01,596 --> 00:12:11,355
+Evet, burada ama en büyük sıkıntı şu, akımda, şimdi kapasitör ve R olunca zaten bir sıkıntı yok.
+
+71
+00:12:12,532 --> 00:12:24,511
+Bir esil gerilimle beslenen bir devre düşünelim. Sadece direnç var, başka bir şey yok. Bu durumda zaten direncin fazor analitini yaparsak herhangi bir ek işleme gerek kalmıyor.
+
+72
+00:12:24,511 --> 00:12:33,951
+R'yi biliyoruz zaten. I, tamam devrede bir kosünüsü ibar olsa da onu fazor moda getiririm. I ile R'yi çarparım.
+
+73
+00:12:34,004 --> 00:12:37,384
+Benim gene fazörlü bir gerilimim elde edilir.
+
+74
+00:12:37,864 --> 00:12:44,024
+Ve onu gerekirse ters dönüşümle kosinüstü formatta götürüp sinyali çizebilirim.
+
+75
+00:12:44,443 --> 00:12:52,063
+Ama devrede eğer ki bir kapasitör veya indiktör, yani bobin veya kondansitör mevcut ise,
+
+76
+00:12:52,563 --> 00:13:01,223
+Bu üzerinde bir enerji depolama birimi olduklarından bu iki devre elemanı bir faz kayması yaşatacaklar.
+
+77
+00:13:01,644 --> 00:13:11,923
+Ve bu faz kayması bizim için bir J'li yani sinüs anlamında bir fi parametresi daha ekleyecek.
+
+78
+00:13:11,923 --> 00:13:14,923
+Bunu analiz edebilmek için ise biz...
+
+79
+00:13:15,572 --> 00:13:20,971
+Ne yapacağız? Buradaki, yani kapasitörler için konuşalım.
+
+80
+00:13:21,552 --> 00:13:28,031
+Üzerinde biriktirdiği gerilimin hesabındaki kaydığı o faz farkını hesaba katmamız gerekecek.
+
+81
+00:13:28,371 --> 00:13:32,812
+Şimdi şöyle anlatalım. Misal, bir devrede akım var. Dirençte kondansitör var.
+
+82
+00:13:33,552 --> 00:13:39,291
+Şimdi kondansitörün üzerindeki akımı hesapladığımız sormu şuydu. C çarpı dv bölü dt idi.
+
+83
+00:13:39,615 --> 00:13:51,495
+Şimdi DV'de, yani şuradaki FT'yi, VM çarpı kosünüs olsun. Tamam. Yani şu şöyle bir gerilim, alternatif gerilim var devreleri besleyen.
+
+84
+00:13:51,775 --> 00:14:15,495
+Şimdi kondansiyon üzerindeki akımı analiz ettiğimizde ne demek istediğimizi anlayacağız. Böyle bir alternatif gerilim var. Formüldeyi yerine koyduğumuzda kosünüs nasıl çıkacak? Sinüs diye çıkacak ama eksi sinüs diye çıkacak tabii ki de. C parametresi zaten D, T'ye bağlı olmadığı için direkt çıktı. Şu içerideki T'ye bağlı olan parametrenin baş kat sayısı dışarıya çıktı değil mi? Normal türevi aldık yani.
+
+85
+00:14:15,860 --> 00:14:39,755
+Eksi C, Omega, Vm, Sinüs, Omega T haline geldi. Şu an bu aslında akım tamam ama verdiğim gerilimden farklı bir domeynde, farklı bir sinyale dönüştü. Bir kayma söz konusu. Bak, Omega T sinyalin frekansını veriyordu bize. Frekansta bir kayma yaşamadık. Ama...
+
+86
+00:14:39,764 --> 00:15:06,403
+Zaten hatırlarsanız sinyalleri kıyaslarken ilk kaydemiz şuydu bizim. Sinyalin frekans bilgisi, yani omega t içerisindeki omega t'ler iki sinyali kıyaslıyorsak aynı olmak zorunda. Yani şöyle iki sinyali kıyaslayamayız. Sin 2 pi 50 diyelim mft. Yani aslında 2 pi f bizim için omega demek. Değil mi? Yani şey.
+
+87
+00:15:06,868 --> 00:15:19,288
+İçerisindeki 2PF parametresi omega demek. Burada da 50 omega, yani 100 gibi bir parametre gelsin. Neyse, yani buradaki bir frekans bilgimiz bizim 50 olsun.
+
+88
+00:15:19,707 --> 00:15:28,447
+Şimdi öteki başka bir sinyal, kozünüs diyelim. 2P, 125 atıyorum F'i bunun. T diye bir sinyal var.
+
+89
+00:15:29,587 --> 00:15:31,268
+Arkadaşlar, maalesef tableti.
+
+90
+00:15:31,731 --> 00:15:43,351
+Yanıma getirmediğim için şu an baya zor bir şekilde çizilmeye çalışıyorum. Burası 125 olduğunda bu iki sinyali biz kıyaslayamayız. Bu iki sinyal aynı domeninde kıyaslanamaz.
+
+91
+00:15:44,911 --> 00:15:57,611
+Kondansatör devrelerinde de tabii ki bir etkisi olacak ama bu etki bizim için sinyalin frekansıyla alakalı bir etki değil. Yani misal sinyal daha sık hale gelmeyecek kondansatör bulunduğu için.
+
+92
+00:15:58,100 --> 00:16:06,079
+Şimdi analize devam edelim. VM, kosinus, omega t'yi türevine aldık, sinüse döndü, baş kat sayıları geldi.
+
+93
+00:16:06,720 --> 00:16:16,159
+Şimdi bu iki gerilim ve akımı kıyaslamak istediğimizde bir kaydemiz tamam içerisindekilerin eşit olma, yani aynı frekansa sahip olmasıydı.
+
+94
+00:16:16,240 --> 00:16:21,579
+Bir kaydemiz de şuydu, aynı domeyne getirmemiz lazım. Mesela burası sinüs, burası kosinüs.
+
+95
+00:16:21,971 --> 00:16:32,591
+Şimdi ben biliyorum ki sinüsün kosünüsten ileride olduğu. Yani bunu ne yapmam lazım? Pardon, kosünüsün sinüsten ileride olduğu. Yani bunu kosünüs formata getirmem lazım.
+
+96
+00:16:33,172 --> 00:16:40,572
+Tabii öncesinde bir eksili ibare de var burada. Bu eksiliği de kurtarmam lazım. İlk başta 180 derece ekleyerek veya çıkararak da yapabilirsiniz.
+
+97
+00:16:41,272 --> 00:16:48,111
+Buradaki eksiliği kurtarıyorum. Eksilik gitti. Aynı domeninde kıyaslayacağım bu. Akımla gerilimi kıyaslayacağım.
+
+98
+00:16:48,692 --> 00:17:08,891
+Sonra bunu sinüsten kosünüse geçirdim. Kosünüse geçirmek için 90 derece daha geriye çekmem lazımdı sinyali. Bunu 90 derece çıkarttım. Şu an benim kondansatör üzerindeki geçen akımın ibaresi bu. Girişteki gerilimin ibaresi de buydu.
+
+99
+00:17:08,891 --> 00:17:15,831
+Şimdi baktığımda kosünüs formatında ikisi de, ikisi de pozitif kıyaslayabilirim. Ve şunu görüyorum ki ben,
+
+100
+00:17:16,180 --> 00:17:30,559
+Akım, gerilimden 90 derece bir faz farkına sahip. Yani ben normal direnç devresinde bu fark oluşmadığı için direkt işlem yapabiliyordum.
+
+101
+00:17:30,559 --> 00:17:41,840
+Ama kondansatör üzerindeki akım, yani V eşit R çarpı R ya, oradan bir İ ile R ile aynı domeninde olmadığı için işlem yapamıyorum. Buna bir ön işlem yapmam lazım.
+
+102
+00:17:42,675 --> 00:17:46,395
+İşte bu ön işlem kısmına biz empedans dönüşümü diyeceğiz.
+
+103
+00:17:48,115 --> 00:17:49,875
+Nasıl yapacağız peki onu?
+
+104
+00:17:50,335 --> 00:17:55,375
+İşte ilk başta şuydu bizim sinyalimiz hatırlarsanız, Vm kosinüs omega t idi.
+
+105
+00:17:55,892 --> 00:18:00,392
+Omega diyorum da buna bazıları W diyor, Omega diyelim biz.
+
+106
+00:18:00,811 --> 00:18:03,172
+Vm, Kosinus, Omega, T diyelim.
+
+107
+00:18:03,632 --> 00:18:10,851
+Şimdi şunu biliyorum ben, Kosinus'lu ibarelerin fazor formata geçirilmesi, yani direkt sıfır dereceydi.
+
+108
+00:18:10,951 --> 00:18:13,471
+Şunu bir daha yazalım buraya, yazmaya çalışalım.
+
+109
+00:18:26,132 --> 00:18:27,271
+O, benzer, uluyorum.
+
+110
+00:18:34,324 --> 00:18:52,204
+Sinyalimiz bu değil mi? Şimdi bunun fazor formatına getirmek, kasayı aynen geliyordu. Faz açısı kosünüs olduğu için de 0 derece diyordu. Örnek verelim, neyse örnek verelim, başka kosünüs omega artı 90'ı nasıl çeviriyordu?
+
+111
+00:18:52,948 --> 00:19:00,668
+90, sadece şuradaki artı kısmını yazıyorduk içeriye. Başka sayısı VM, yine aynen kendisine geliyordu.
+
+112
+00:19:01,428 --> 00:19:10,768
+Yani, fazor formata getirdiğimizde şu akımı, biz şöyle bir 90 derece faz farkı olan formata getirmiş oluyoruz.
+
+113
+00:19:11,868 --> 00:19:17,148
+Ve bunun da ibaresi, hani karmaşık sayı ibaresi, JV olarak geçecek.
+
+114
+00:19:18,768 --> 00:19:20,428
+Şu kısım için tabii.
+
+115
+00:19:20,852 --> 00:19:22,852
+Sadece şu kısmı çevirdiğimizde.
+
+116
+00:19:23,812 --> 00:19:26,632
+JV gelecek. JVM'nin V'si oldu.
+
+117
+00:19:27,492 --> 00:19:33,692
+Bir de Omega C'miz vardı. Yani akımımız bizim için J Omega C V olacak.
+
+118
+00:19:34,392 --> 00:19:37,372
+Buradaki C, kondansatörün farad parametresi.
+
+119
+00:19:39,612 --> 00:19:43,291
+Buradaki V zaten normal şuradaki beslemedeki V.
+
+120
+00:19:43,923 --> 00:20:03,923
+Onu da fazor formatta yazdığımızı düşünün. Bu da fazor format. Akım da bir fazor formatta üretilecek değil mi? Ve bu sefer hiç arada 90 derece faz farkı falan bahsetmiyoruz. Değil mi? Çünkü zaten oradaki faz farkı biz fazor formata kaydırdık. Ve fazor formatta artık bunu bu işlemde akım...
+
+121
+00:20:04,756 --> 00:20:07,496
+Aynı dilden haberleşmiş olacak.
+
+122
+00:20:07,676 --> 00:20:20,056
+Şimdi, V eşittir I çarpı R'den, bu V'yi, yani şuradaki şu kısmı, şu tarafa alırsak, yani V eşittir I çarpı R diyorduk değil mi?
+
+123
+00:20:20,916 --> 00:20:25,756
+Devredeki direnci bulmak için biz V bölü I yapıyorduk uzun lafın kısası.
+
+124
+00:20:26,900 --> 00:20:36,940
+Şimdi aynı şekilde bu kondansatörün üzerinde neyin sömürüldüğü, yani direnç bir sömürme elemanı derse kondansatörün de bir sömürme yaptığını düşünelim.
+
+125
+00:20:37,639 --> 00:20:49,780
+V bölü I yaparsak, ki bu bize bir bölü J omega C'ye çıkartacak, bizim için eşdeğer devre direncinden bahsederken, işte bir direnç var, bir bobin var.
+
+126
+00:20:50,099 --> 00:20:56,000
+şey, kondansatör var. Orada parametre olarak R'yi kullanabiliyoruz ve
+
+127
+00:21:00,276 --> 00:21:11,356
+Katkısını kullanacağımız parametre bu. Yani 1 bölü J omega C bizim için empedans olacak. Empedansa kondansatörün etkisi olacak.
+
+128
+00:21:13,756 --> 00:21:24,135
+Biz burada hedefimiz şu, herhangi bir T'ye veya faz farkına bağlanmadan devreye ait eşdeğer direnci bulmak.
+
+129
+00:21:24,564 --> 00:21:28,564
+Şimdi normalde R'li devrelerde, sadece R'lerin...
+
+130
+00:21:28,564 --> 00:21:39,564
+Hocam, mikrofonunuz girip çıkıyor da temassızlık yapıyor, ona bir bakabilir misiniz? Hatta şu an sesiniz kesildi.
+
+131
+00:21:40,704 --> 00:21:41,544
+Herkes de öyle mi?
+
+132
+00:21:43,684 --> 00:21:45,003
+Evet hocam.
+
+133
+00:21:46,304 --> 00:21:47,044
+Enteresan.
+
+134
+00:21:49,064 --> 00:21:50,544
+Bir saniye atılaştır o zaman.
+
+135
+00:22:20,980 --> 00:22:21,659
+Şu an nasıl?
+
+136
+00:22:24,240 --> 00:22:25,420
+Şu anda iyi gibi hocam.
+
+137
+00:22:27,300 --> 00:22:29,340
+Neden öyle oldu acaba? Bir daha bakalım.
+
+138
+00:22:32,948 --> 00:22:35,948
+Valla bütün ayarlar eski ayarlardı ama...
+
+139
+00:22:40,564 --> 00:22:41,324
+Şu an nasıl?
+
+140
+00:22:43,884 --> 00:22:44,683
+İyi mi?
+
+141
+00:22:45,443 --> 00:22:46,604
+Arkadaşlar, ses nasıl?
+
+142
+00:22:47,163 --> 00:22:49,264
+Hocam, şu an hatta biraz patlıyor bile.
+
+143
+00:22:55,284 --> 00:23:13,284
+Yani her zamanki ortamda ders anlatıyorum ama tamam, devam edelim. Yani empedans dediğimiz tabir arkadaşlar şu demek, alternatif akımın bulunduğu veya gerilimin bulunduğu devrelerde eşdeğer...
+
+144
+00:23:13,599 --> 00:23:26,700
+Direnç demek doğru değil ama eşdeğer devre direnci nasıl bir DC gerilim devrelerde iş yapıyorsa, empedans da bobin ve kondansörün bulunduğu devrelerdeki parametredir.
+
+145
+00:23:26,700 --> 00:23:39,899
+Yani V, I, bunu Z ile göstereceğiz. Empedans Z demek. Zunguldan Z'si. Yani V eşittir I çarpı R neyse, V eşittir I çarpı Z.
+
+146
+00:23:40,468 --> 00:23:45,868
+Bizim için alternatif gerilim ve alternatif akımın bulunduğu devrelerde aynı işi yapacağız.
+
+147
+00:23:46,388 --> 00:23:48,048
+Neden Z domenine geçiyoruz?
+
+148
+00:23:48,788 --> 00:23:57,288
+Çünkü bobin ve kondansatörde yaşanan zamana bağlı faz kaymasını egale etmek için, onu ortadan kaldırmak için.
+
+149
+00:23:57,632 --> 00:24:24,951
+Daha doğrusu kaldırmak demeyelim de, onun katkıyı formülize edebilmek için. Nasıl katıyoruz peki o 90 derece farkını veya şeyi? Bir J ile zaten 90 derecelik faz farkı olduğunu söylüyoruz. Şimdi biliyorsunuz J eksildir demem. Omega ile devredeki 2PF olduğunu biliyoruz. Devredeki frekans bilgisini kontribüt ediyoruz denkleme. J ile de kondansatörün.
+
+150
+00:24:25,311 --> 00:24:34,151
+Farad değerini işte buraya, yani direnç anlamında R'nin değeri neyse bu da kondansöründe öyle bir etkisi oluyor farad anlamında.
+
+151
+00:24:34,971 --> 00:24:39,011
+Ve biz bunu bir bölüje omega C olarak da kullanabiliriz.
+
+152
+00:24:39,191 --> 00:24:42,231
+Hani aynı şu kısmı R olarak düşünebilirsiniz yani.
+
+153
+00:24:42,591 --> 00:24:44,731
+Şu R'ye çarpılı, R'ye eşit değil mi?
+
+154
+00:24:44,731 --> 00:24:46,411
+Burada da kondansörün.
+
+155
+00:24:46,736 --> 00:24:55,216
+alternatif akımdaki R karşı bir ilişki gibi düşünebiliriz. Bunu ama genelde eksi C bölü omega C şeklinde yazarlar.
+
+156
+00:24:55,716 --> 00:25:03,536
+Çünkü şunu biliyoruz ki C üzeri eksi bir tersi alır. O da zaten aynıdır. Kendisinin aynısı da sadece eksi işaretidir.
+
+157
+00:25:04,316 --> 00:25:11,436
+Yani bir bölü C omega C ile kullanabiliriz veya eksi C bölü omega C ile kullanabiliriz devrelerimizde.
+
+158
+00:25:13,203 --> 00:25:22,024
+Ve şunu biliyoruz, gerilim, akım, akım 90 derece öndedir. Neyin? Gerilimin önündedir.
+
+159
+00:25:22,903 --> 00:25:29,544
+Çünkü şurada da gördük, geliştik, gerilim 0 dereceye sahipken akımımız, kondansatör üzerinde 90 derece önde.
+
+160
+00:25:33,044 --> 00:25:41,584
+Bu normal gerilimin bir açısı olsa bile, bu gerilimin açısı kondansatörde buradaki açı artı 90'dır. Yani şurası 90'dır.
+
+161
+00:25:44,624 --> 00:25:54,504
+Bobine bakalım. Bobinde de biliyorsunuz akım üzerinden gideceğiz. Akıma biz ı, m, kos, omega, t desek, yani direkt yüz, hiçbir kayma yok.
+
+162
+00:25:54,864 --> 00:26:18,563
+Kosinus bir sinyal, bir akım veriyoruz. Bunun tabii ki de LDE bölü DT'den türevi alınacak ve gene yine aynı kondansiyonun gerilimde olduğu gibi 90 derece bir fark çıkacak. Bu 90 derecelik faz farkı aslında bize neyi söyleyecek? Bobinin üzerindeki gerilimin akımdan 90 derece kaymalı olarak.
+
+163
+00:26:19,092 --> 00:26:26,572
+gösterildiğini söyleyecek veya bir başka bir işte gerilimin 90 derece önde olduğunu söyleyecek akımdan.
+
+164
+00:26:27,912 --> 00:26:39,572
+Bunu formülize edersek de bizim empedans hesaplamalarında bobin için kullanacağımız, indiktör için kullanacağımız parametre bir bujie, omega L,
+
+165
+00:26:41,215 --> 00:26:56,375
+Öteki tarafta da eksi J omega L ikisi de aynı. Ama burada dikkat edin, I eşittir yazılmış. Hani biz genelde bunu V eşittir, I çarpı R olarak kullandığımız için bunu bu tarafa getirdiğimizde aslında baktığımız şey şu olacak değil mi?
+
+166
+00:27:06,644 --> 00:27:16,803
+Ç hesaplamalarında, j, j bölü, omega L, omega C ile kondansatör hesaplamalarında kullanacağımız formül olacak.
+
+167
+00:27:20,756 --> 00:27:35,995
+Evet, empedans dediğim şey aslında normal DC gerilimli devrelerde R'nin yaptığının aynısı. Yani bir akım hesaplamak istiyoruz değil mi? DC gerilimli bir devrede akım olmak istiyoruz. Gerilim verilmiş. İlk başta empedansını hesaplamamız lazım.
+
+168
+00:27:36,576 --> 00:27:48,756
+Empedansı da baktık devrede kondansütör, bobin, direnç var. İyi de kondansütör bir ayrı kosmüste hesabı var. Başka bir kosmüste hesabı var. Bunlardan kurtulmak için her birini...
+
+169
+00:27:48,756 --> 00:28:00,576
+Bir kere bizim fazor formata getirmemiz gerekiyor. Fazor formata getirdikten sonra da biz bunları normal V bölü Z yaparsak akımı, devrenin ana akımını bulmuş olacağız.
+
+170
+00:28:01,756 --> 00:28:11,816
+Nihayetinde direnç için ZR, yani R'nin empedansı, direncin empedansı, direkt direncin kendi değeri ve bunun da zaten fazor formata getirirsek
+
+171
+00:28:12,180 --> 00:28:24,799
+R'nin kendi değeri ve fazör açısının sıfır olan bir şey demek değil mi? Çünkü bunu, neydi formülümüz hatırlıyorsak, R kare, yani bu da R çarpı R'nin kara kökünden R'ye gelecek.
+
+172
+00:28:25,860 --> 00:28:35,559
+Buradan da eksi tam bölü, işte arktan cin alırsanız B bölü A'nın, burdandaki açıdan da zaten 1 gelecek. Yani tanjantta 1 gelir yok.
+
+173
+00:28:37,715 --> 00:28:40,055
+Yani bu birbirinin içerisinde aynı şey.
+
+174
+00:28:40,655 --> 00:28:47,535
+Kondansatör için ise kullanacağımız ibarat, R ibaresi hep diyoruz, eksi J bölü omega C olacak.
+
+175
+00:28:49,015 --> 00:29:00,175
+Ve bunun fazor gösterimi, eksi J'den dolayı eksi 90, zaten bunun bu hale getirmiş hali bu, eksi 90, bir bölü omega C şeklinde olacak.
+
+176
+00:29:01,044 --> 00:29:16,104
+Fazor gösterimi bu günlerde J omega L, normal gösterimi J omega L'den biz matematikse işlemleri yapacağız. Ama fazöre geçmek istediğimizde J'si 90 derece, omega D'si de kast sayı olacak şekilde bize fazor formada geçireceğiz.
+
+177
+00:29:20,372 --> 00:29:24,592
+Empedans'ın tam tersi Admitans denen bir parametre var arkadaşlar.
+
+178
+00:29:25,119 --> 00:29:35,379
+Şimdi şey gibi bu, yani hatırlarsanız bir resistance vardı, bir de conductance vardı. Hani biri dirençti, biri letgenlitti. Bu da aynısı.
+
+179
+00:29:36,000 --> 00:29:48,119
+Empedansı normaldeki işte bobin ve direnç şey, kondansör, bobin, direnç gibi devrede üç farklı yapının alternatif akım veya gerilimle beslendiği durumlardaki hesaplaması iken,
+
+180
+00:29:48,852 --> 00:30:01,852
+Edmitans da impadansın, empedansın tam tersi olacak şekilde. İşte direnç için bu bir bölü R, ki o da bir bölü R'yi hatırlarsanız G ile gösterdiğimiz, iletkenlik dediğimiz kondakdansıydı.
+
+181
+00:30:03,232 --> 00:30:11,032
+YC, yani kondansör üzerindeki Edmitans ise bizim için tam tersi olacak.
+
+182
+00:30:13,364 --> 00:30:16,544
+Eksi 90 ve 90 nereden gelmiş olabilir [öğrenci]?
+
+183
+00:30:28,852 --> 00:30:48,052
+Eksijce ve J'nin, şunu biliyoruz değil mi? Kartez yanda. Şuralar real partlar, artı real, eksi real, şuralarda imaginary partlar. Artı J'ye kadar gider, şu da eksi J'ye kadar gider.
+
+184
+00:30:49,428 --> 00:31:12,428
+Şimdi şu artı J noktasında zaten 90 derece olduğunu görüyoruz. Eksi J noktasında da eksi 90 derece olduğunu görüyoruz. Bu normalde şeyden gelen, kartezan düğümden J'ye bağlı olarak. Bir de neyi biliyoruz biz? Hani bu rektangular düzlemde gösterimde, rektangulardan buraya nasıl dönüyorduk?
+
+185
+00:31:16,180 --> 00:31:17,100
+Hatırlıyor muyuz?
+
+186
+00:31:19,600 --> 00:31:21,620
+Yani şunu söylemeye çalışıyorum.
+
+187
+00:31:21,779 --> 00:31:24,680
+A artı J B.
+
+188
+00:31:26,019 --> 00:31:28,420
+Bunu hatırlıyor muyuz? Nasıl fazor yapıyorduk?
+
+189
+00:31:31,000 --> 00:31:31,720
+Evet.
+
+190
+00:31:33,000 --> 00:31:35,279
+Tanjant, A'sı yok, B bölü A.
+
+191
+00:31:36,080 --> 00:31:37,559
+Ters tanjant, B bölü A.
+
+192
+00:31:39,319 --> 00:31:40,160
+Değil mi?
+
+193
+00:31:40,840 --> 00:31:41,860
+Buranın B'si ne?
+
+194
+00:31:41,860 --> 00:31:42,880
+Bir bölü Omega C.
+
+195
+00:31:43,667 --> 00:31:54,247
+A'sı sıfır olduğu için olmayacak. Sıfır çıkacak. Ark time sıfır da eksi doksan çıkıyor herhalde yanlış mı hatırlıyorum.
+
+196
+00:31:59,859 --> 00:32:06,939
+Bu taraf sıfır. Ötekine bakarsak da, ötekinin real time kısmı var. Öteki taraf zaten sıfır çıktığı için sıfır.
+
+197
+00:32:09,719 --> 00:32:18,299
+Bu kısımlar, bu ZR, ZC, ZL'yi dikkat ediyorsanız topladığımızda elde ettiğimiz şey genel empedans olacak.
+
+198
+00:32:18,299 --> 00:32:22,119
+Yani real partını oluşturan bir direnç.
+
+199
+00:32:22,516 --> 00:32:35,455
+Imaginary partını oluşturan J ortak parantezinde işte ne gelebilir? 1 bölü BC'ye gelebilir buradan. Artı omega L gelebilir. Baya zor oluyor bu şeyle.
+
+200
+00:32:37,455 --> 00:32:46,695
+Ve nihayetinde bunun fazlal formatına geçirmek demek, ben devrenin eşdeğer empedansını hesaplıyorum demek.
+
+201
+00:32:48,084 --> 00:33:03,584
+Çünkü bir yıl var, bir kısmı var, R²C, şu C'nin bas, şurası neyse işte, bunun karesi benim için şu kısmı oluşturacak. İçeriği de eksi B bölü A'dan oluşturacağız.
+
+202
+00:33:04,804 --> 00:33:14,244
+Örnekler yapacağız. Buradaki eksi 90 ve 90, kondansitörün şuradaki eksi C'li olmasından ve artı C'li olmasından geliyor.
+
+203
+00:33:21,011 --> 00:33:32,291
+Edmitans tam tersi dedik. Hani kondansatörde eşsizce bir bölü omega c iken, burada j omega c, yani indüktörün aynısı olacak, sadece c parmakası farklı.
+
+204
+00:33:33,011 --> 00:33:35,331
+Açıları da tam tersi olacak şekilde.
+
+205
+00:33:37,751 --> 00:33:41,431
+Burada genel impedansla impedans arasındaki ilişki var.
+
+206
+00:33:42,531 --> 00:33:44,331
+Aslında genelde impedans...
+
+207
+00:33:45,263 --> 00:33:46,583
+İstenir sorularda.
+
+208
+00:33:47,543 --> 00:33:49,303
+Admitans'ı ne için kullanırız?
+
+209
+00:33:49,443 --> 00:33:51,423
+Eğer ki impedans hesaplaması zorsa,
+
+210
+00:33:51,863 --> 00:33:53,503
+Admitans üzerinden gidilebilir.
+
+211
+00:33:53,863 --> 00:33:56,143
+Sonra en son Admitans'ı bulduktan sonra,
+
+212
+00:33:56,443 --> 00:33:59,623
+bir bölüsü zaten impedansın kendisi oluyor.
+
+213
+00:34:00,143 --> 00:34:02,043
+Öyle hesaplamak daha kolaysa,
+
+214
+00:34:02,483 --> 00:34:03,643
+o yoldan da gidilebilir.
+
+215
+00:34:03,823 --> 00:34:05,503
+Örnek sorumuz var bununla alakalı.
+
+216
+00:34:06,063 --> 00:34:08,323
+Admitans'la alakalı da sorumuz var.
+
+217
+00:34:10,523 --> 00:34:11,363
+Evet.
+
+218
+00:34:11,987 --> 00:34:22,947
+Burada tekrardan bobin üzerindeki empedansı hesaplarken J omega L, kondansör üzerindeki empedansı hesaplarken eksi J bölü omega C şeklinde hesaplıyoruz.
+
+219
+00:34:23,667 --> 00:34:27,787
+Bunun fazol formatına geçirdiğimizde J omega L'ye nasıl geçecek?
+
+220
+00:34:28,980 --> 00:34:39,760
+Fazor formatta bobin olduğu için 90, XG'den gelen XG'den gelen X90, Omega C, 1, Omega C kasayı da X90 fazora girecek.
+
+221
+00:34:43,251 --> 00:34:59,871
+Evet, empedans, eşdeğer devrede, yani devredeki jenerik bir bileşen, yani şimdi eşdeğer demek de çok doğru değil. Eğer devremizde direnç, bobin, kondansör varsa bunların hepsine ibare edebileceğimiz bir, aynı domeninden konuşabileceğimiz bir birim esas.
+
+222
+00:35:00,791 --> 00:35:08,731
+Dediğimiz gibi işte R dediğimiz direnç, bir yıl kısmı oluşturacak, dirençlerin kendi eşdeğeri.
+
+223
+00:35:09,268 --> 00:35:14,667
+Bu kısım ise X'in içeriği, işte bobin veya kondansatör olmasına göre değişecek.
+
+224
+00:35:15,108 --> 00:35:28,688
+Ama şu var, bobinde de kondansatörde de J parametresi olduğu için bizim sanal kısmı oluşturan veyahut da açısal farklılığı oluşturacak olan kondansatör ve bobinin dinamikleri.
+
+225
+00:35:30,835 --> 00:35:37,996
+Evet, bunu fazla formata getirirken, diyoruz işte R² artı X²'nin kare kökü, magnetot kısmını oluşturacak.
+
+226
+00:35:38,515 --> 00:35:51,635
+Açısal iç tarafı da, eksi arktanjant, J, yani J'nin kas sayısı olan sanal bölüm B kısmını oluşturacağı için, X bölü R şeklinde de hesapladığımız kısım olacak bir şekilde oluşturan kısım.
+
+227
+00:35:53,619 --> 00:36:11,639
+Eğer ki gerekirse kosünüs sinüs şeklinde şu fazor formattan da çekebiliriz. Bunu nasıl yapıyorduk? Şu Z magnitude hem kosünüs katı hem de sinüs katı için ortak kat sayısı içerisinin kosünüslü olanı, kosünüs partı, sinüs olan kısmı da sinüs partı oluşturacaktı.
+
+228
+00:36:20,500 --> 00:36:36,699
+Kosünüs formattan da hesaplayabiliriz tersten. Şöyle bir soru verirse bize ve bunun R direnci kısmı, yani sadece R olan birimi bulun deseler, Z çarpı kosünüsü Omega bizim için R parametresini verecek.
+
+229
+00:36:37,056 --> 00:36:50,935
+Z çarpı sinüs, Omega ise bizim için X parametresini, ki buradaki X tabi, induktans ve kapasitörün ikisinin karnaşık yapısı, yani ikisini beraber sanal kısmını oluşturan kısmı oluşturdu.
+
+230
+00:36:53,076 --> 00:36:57,376
+Edmitans'ta da her şey bir, yani bir bölüşü şeklinde.
+
+231
+00:36:57,807 --> 00:37:04,927
+Normalde Z dediğimiz R artı J X idi ama Edmintoniz artık bir bölü R artı J X şeklinde olacak.
+
+232
+00:37:04,927 --> 00:37:15,927
+Burada tabii şuradaki magnitude'ki Y'yi hesaplamak için belki de hani...
+
+233
+00:37:17,652 --> 00:37:32,612
+Buradaki Conductance'a geçip, çünkü bir bölü R'si önemli bizim için. Öteki tarafta da B dediğimiz şeyin de aslında şuradaki şu kısmın tam tersi olacak şekilde ayarlanması.
+
+234
+00:37:33,872 --> 00:37:43,211
+Yani Admitance, gerçi bu kullanımda çok faydalı değil. Örnekten gidelim isterseniz. Örnekte daha bariz belli olacak şimdi.
+
+235
+00:37:46,068 --> 00:37:50,347
+Evet, direkt bir örnek soruya doğru geçelim. Özetler onlar zaten.
+
+236
+00:37:53,715 --> 00:37:58,996
+Biz empedansı bulduktan sonra arkadaşlar zaten bütün işlemlerin Ohm kanunuydı.
+
+237
+00:37:59,435 --> 00:38:05,975
+İşte V mi istiyorsa da I verilmiş mi? I çarpı Z'den V'yi bulacağız. V bölü Z'den I'yi bulacağız.
+
+238
+00:38:06,135 --> 00:38:12,036
+Veya Edmitans'ı da tabii bu tam tersi olacak. İşte gerilim isteniyor ve Edmitans'ı buldunuz.
+
+239
+00:38:12,576 --> 00:38:20,215
+I bölü Y olacak. Veya akım istiyor, gerilim belli. Edmitans'ı da buldunuz. V çarpı Y olacak.
+
+240
+00:38:21,427 --> 00:38:38,667
+Örnek soru, gerçi bu örnek soru değil ama burada Kirchhoff'un, ya bütün bu KCL ve KVL'lerin de mantığını aynı mantıkla oturtacağız. Yani bu empedans hesaplamalarıyla aynı domeninde olacak. Neydi KVL? Gerilimlerin toplamının sıfır olması.
+
+241
+00:38:42,547 --> 00:38:47,847
+Kara kutu iki tane devre elemanı olsun. Hani bobindir, kondansördür, direnç, hiç fark etmez.
+
+242
+00:38:48,228 --> 00:39:06,867
+Neticede empedansa çevirirsek o 10 Ohm'u veyahut da 5 mikrofaradı, empedans seviyesinde söylersek, örnek bir yolum, 5 mikrofarad, ben empedansa çevirdim, J5 bilmem ne çıktı.
+
+243
+00:39:06,867 --> 00:39:08,507
+Yani orada tabi Omega da önemli.
+
+244
+00:39:08,976 --> 00:39:19,036
+J5, 2P'ye F çekti. Yani F'in değerli önemli. Böyle bir parametre empedansa soktuktan sonra benim için hepsi aynı değil.
+
+245
+00:39:19,036 --> 00:39:27,296
+Yani orada direnç olmuş, bobin olmuş, aynı şeyleri söyleyecek. Karakutu diyelim burada. Mesela Z1 bir karakutu devre elemanı.
+
+246
+00:39:27,355 --> 00:39:36,355
+Z2 de karakutu devre elemanı. Bunlar empedansları olduğu için karakutu diyorum. Çünkü ikisi de empedansını da değerlendirebileceğim iki devre elemanı.
+
+247
+00:39:36,724 --> 00:39:46,923
+Bu Z1, Z2'nin üzerinde bir gerilim birikecek, V1, V2 ve KC'de, KB'de bize diyecek ki, Vs eşitliği V1 artı V2 veya tam tersi sıfıra eşit diyeceğiz.
+
+248
+00:39:47,644 --> 00:39:52,403
+Burada on kanunu Z'ye dönüşüm yaptıktan sonra direkt kullanabileceğiz.
+
+249
+00:39:52,844 --> 00:40:00,543
+İşte V1, şuradaki V1'i bulmak için biz I, I'yi bulduktan sonra I çarpı Z1 diyeceğiz, V1'i bulacağız.
+
+250
+00:40:00,684 --> 00:40:02,623
+I çarpı Z2 diyeceğiz, V2'yi bulacağız.
+
+251
+00:40:03,411 --> 00:40:14,671
+Bütün kaydelerimiz, kabul görülen kaydeler, empedansa geçtikten sonra direkt normal DC gelinmiş gibi hesaplamamıza yardım edecek.
+
+252
+00:40:17,231 --> 00:40:25,051
+Veya böyle ayrı ayrı da yapabileceğimiz gibi, bu Z1 ile Z2'yi empedans domeninde işler her ikisi de toplayıp,
+
+253
+00:40:25,344 --> 00:40:32,484
+ana koldaki akımı veya akımla çarparak da bulabileceğimiz bir yaklaşım düşünülecek.
+
+254
+00:40:33,164 --> 00:40:38,664
+Yani empedans bizim için işleri çok çok kolaylaştıran bir dönüşüm olacak.
+
+255
+00:40:39,844 --> 00:40:42,324
+Paralellerde de işte akımlar burada bölünüyor.
+
+256
+00:40:42,424 --> 00:40:51,304
+Biliyorsunuz Note KCD analizinde bize derdi ki şuradan gelen ISE'nin I1 artı 2'ye eşit olması veya toplamlarının sıfır eşit olması.
+
+257
+00:40:51,699 --> 00:41:04,999
+Burada da Z1 ile Z2'nin, yani iki empedansı bulunan devre elemanı bu şekildeyse, bunları normal bir dirençmiş gibi bir bölüsü şeklinde eşdeğer empedansı bulmamıza yarayacak.
+
+258
+00:41:05,379 --> 00:41:14,939
+Veyahut da biz I1, I2'yi nasıl buluyorduk? V'ler burada eşit olduğu için V bölü Z1, I1'i, V bölü Z2, I2'yi.
+
+259
+00:41:15,360 --> 00:41:36,680
+verecekti. Bütün DC gerilimlerde, tekrar söylüyorum, direnç devrelerinde nasıl işlem yapıyorsak, empedans düzlemine geçirilmiş bobin kondansatör ne olası olsun, empedansa geçirildikten sonra direkt aynı kuralları üzerinde uygulayabileceğimiz bir devre çözümüne gidiyoruz.
+
+260
+00:41:41,235 --> 00:42:05,076
+İşte empedans değil de admittance kullansaydık. Hatırlarsanız biz conductansiyeyi anlatırken de bunları bir değmiştik. Her şey tam tersi oluyor. Yani işte Y1, Y2, iki tane admittance eğer bunlar seriyse bunların eşdeğer admittance'ından bahsedeceğimiz vakit bir bölü Y1, bir bölü Y2 diyeceğiz. Aynı işte dirençinin tersi olduğu için.
+
+261
+00:42:06,356 --> 00:42:11,216
+Paralelde ise direkt toplayacaktık. Aynı bizim Conduct Densi hesabında olduğu gibi.
+
+262
+00:42:12,416 --> 00:42:20,856
+Örnek bir sorumuz var. Bakıyoruz, giriş gerilimimiz bir alternatif gerilim. 12 volt sinüs 100 T 30 derece demiş.
+
+263
+00:42:21,716 --> 00:42:24,236
+Yani bu nasıl bir gerilim? İlk onu konuşalım.
+
+264
+00:42:25,016 --> 00:42:32,556
+Tepeden tepeye, artı işte 12 volt arasında salınım gösteren ve bu salınımda 2 P F
+
+265
+00:42:33,460 --> 00:42:36,579
+Yazayım. Şurası Omega değil mi arkadaşlar?
+
+266
+00:42:38,860 --> 00:42:43,420
+Ve ben biliyorum ki Omega'nın değeri 2PF.
+
+267
+00:42:45,179 --> 00:42:46,940
+Burası 100'müş.
+
+268
+00:42:48,039 --> 00:42:49,119
+Niye böyle yapıyor ya?
+
+269
+00:43:05,139 --> 00:43:29,260
+Evet, yani bizim buradaki pi'miz 50 bölü 3,14 gibi bir şey değil mi? Yani ne geliyor? 20 Hz gibi bir şey geliyor maksimum. Hatta 16 Hz gibi bir şey. Yani burada bir frekansa sahip, uzun lafın kısası, bir frekansa sahip bir sinüs dalgası. Ama bu frekansın üstüne de 30 derecelik kayma yaşanmışız.
+
+270
+00:43:31,188 --> 00:43:54,408
+Yani direkt bu ham sinyal değil. Böyle bir giriş gerilimimiz var. Bakıyoruz devrede nelerimiz var. Bir adet direncimiz, bir adet de bobinimiz var. Şimdi 10 artı 10, 20'dir bunun parametresi diyemeyiz. Çünkü bunlar farklı keseler. Yani farklı domeynlerdir şu an. Ama ikisini de empedans düzlemine çekersek,
+
+271
+00:43:55,443 --> 00:44:06,804
+Bu sefer bu ikisini seri bir iki empedans toplar gibi, seri empedans devresi gibi toplayıp V'yi buna bölerek akımı bulabiliriz.
+
+272
+00:44:08,284 --> 00:44:11,423
+Yani bizim için empedansın en faydalı yanı bu.
+
+273
+00:44:12,043 --> 00:44:14,844
+Şimdi normalde direncin empedansı zaten kendisi.
+
+274
+00:44:15,483 --> 00:44:17,204
+10'da 10 olarak kalacak.
+
+275
+00:44:17,543 --> 00:44:19,943
+10-10, empedansın birimi de 10 arkadaşlar.
+
+276
+00:44:21,460 --> 00:44:23,119
+Belki böyle daha iyi olacak.
+
+277
+00:44:23,240 --> 00:44:25,139
+Mesela burada mile herri var, burada Ohm var.
+
+278
+00:44:25,900 --> 00:44:27,539
+Bu ikisini o yüzden toplayamıyorum.
+
+279
+00:44:27,539 --> 00:44:33,960
+Ama ben ne zaman empedansa gitsem, bunun da değeri Ohm olacak, bunun da değeri Ohm olacak.
+
+280
+00:44:34,599 --> 00:44:35,360
+Empedans Ohm.
+
+281
+00:44:36,420 --> 00:44:41,420
+Ben bobin için biliyorum ki J omega L idi ve omega burada 100.
+
+282
+00:44:42,019 --> 00:44:42,539
+Gördük mü?
+
+283
+00:44:42,860 --> 00:44:47,579
+İşte burada empedansın katkıları, işte kıtından bahsediyoruz ya.
+
+284
+00:44:48,083 --> 00:45:01,983
+Frekans bilgisini de dahil etti şu an ama Ohm parametresinden. Burası da J omega L'den, J 100 çarpı L'miz 10 mHm'di, 1 J omega oldu. Bu da artık bobinin empedansı.
+
+285
+00:45:03,563 --> 00:45:12,843
+Ve ben bu devrenin empedansı, eşdeğer empedansını bulmak için seri olduklarından normal toplama yapacağım direnç gibi, ZR artı ZL ve benim
+
+286
+00:45:13,652 --> 00:45:22,692
+Allah'ım ya. Benim devredeki karmaşık sayı düzleminde gösterdiğim empedansım 10 artı 1 J omega oldu.
+
+287
+00:45:23,871 --> 00:45:29,632
+Tabii biz bunu böyle bırakmayacağız. Bunu fazör formata çevirmemiz lazım. Neden fazöre geçmeye çalışıyoruz?
+
+288
+00:45:29,632 --> 00:45:32,632
+Çünkü bu gerilimi de fazöre geçip...
+
+289
+00:45:32,992 --> 00:45:52,951
+Sonra bölme işlemi olduğundan biliyorsunuz fazörleri anlatırken bölmenin çok rahat yapıldığını, faz açılarının bölme işlemini çıkarma işlemiyle bulunduğunu söylemiştik. O yüzden kolaydı. Bunu bir fazöre geçirelim. Fazör ne diyordu bize? Bir magnitud vardı bir de içerisindeki açısal feysencel vardı.
+
+290
+00:45:54,195 --> 00:46:19,215
+Şimdi magnitütünü hesaplarken, A kare artı B karenin kare köküydü. 100 artı 1, 101'in kare kökü 10.1. Bu kısım magnitütünü oluşturdu. Faz kısmında arktanjantın, imajin bölü real ile bulunuyordu. 1 bölü 10'dan, arktanjantın 5.7'miş. Yani şunu demeye çalışıyoruz. Bizim eşdeğer devrinin empedansının fazör gösterimi bu. Bunu bulduk.
+
+291
+00:46:21,456 --> 00:46:27,256
+giriş gerilimini de fazör formatı alırsak akımı çok daha rahat bulabiliriz.
+
+292
+00:46:29,016 --> 00:46:32,736
+Evet, bu soruda misal, empedanslardan gitmek çok mantıklıydı.
+
+293
+00:46:32,736 --> 00:46:38,476
+Çünkü, Admitance'da bir bölü şeklinde işlem yapacaktı, eşdeğer Admitance'ı bulurken.
+
+294
+00:46:38,616 --> 00:46:42,656
+Ama, empedanslar seri derelerde daha mantıklı, empedanstan yürümek.
+
+295
+00:46:43,996 --> 00:46:47,436
+Şimdi gelelim girişteki bu gerilimi çevirmeye fazör.
+
+296
+00:46:47,923 --> 00:47:09,943
+Fazör'ü anlatırken şunu demiştik. Fazör'e kosünüsden geçmek daha mantıklı. Yani sinyali kosünüs formatında gösterip direkt geçebiliriz. Şimdi 12V sin 100D 30 dereceydi. Şimdi ben ilk başta bunu kosünüse çevireceğim ve ben bunu kosünüse çevirmek için ne biliyordum? Eksi 90 yazmam lazım.
+
+297
+00:47:11,188 --> 00:47:20,728
+açısı 90 derece farkından dolayı. 12 volt cos100t artı 30, eksi 90 yazdım. Aslında benim giriş gelimim cos tarafında.
+
+298
+00:47:21,307 --> 00:47:36,548
+12 volt cos100t eksi 60'mış. Cos olduğu için bunu direkt şu an geçebiliyorum. 12 volt geldi. Şuradaki eksi 60, faz angel'ı da fazordaki açısal kısma girdi.
+
+299
+00:47:38,416 --> 00:47:45,155
+I'yi bulmak hedef, V'yi biliyorum, Equivalent Z'yi de biliyorum, empedansı da biliyorum.
+
+300
+00:47:46,036 --> 00:47:57,916
+V bölü, yani 12 bölü, eksi 60, RL kısımları, pardon şöyle, burası V'miz, fazor gösterimi, burası da eşdeğer empedansı, fazor gösterimi.
+
+301
+00:47:58,235 --> 00:48:00,255
+Birbirine böldüğümde 12'yi 10'a böleceğim.
+
+302
+00:48:00,659 --> 00:48:13,000
+Eksi 60'dan da eksi 5.7'yi çıkartacağım veya toplayacağım eksi düzlemde işte. Nihayetinde bulduğum akım benim için bu devredeki geçen fazör gösterimle akım olacak.
+
+303
+00:48:14,771 --> 00:48:19,672
+Bunu şöyle de yapılabilir. Direkt zaten bu şekilde de yapılabilir.
+
+304
+00:48:19,811 --> 00:48:24,231
+Veyahut da eksponensiyel gösterim de yapabiliriz sıfır göstermek için.
+
+305
+00:48:24,831 --> 00:48:29,012
+Burası zaten katsayı 12'ye geliyordu eksponensiyelde hatırlarsak.
+
+306
+00:48:29,311 --> 00:48:36,172
+İçerisindeki açı da çarpı E üzeri eksi J omega formülünden geliyordu.
+
+307
+00:48:36,672 --> 00:48:40,572
+Burada eksi 60 J şeklinde de yazıldı buraya.
+
+308
+00:48:42,003 --> 00:48:48,003
+Bu da eksponansiyel formatı, Ekonomist, eşdeğer empedansın karşılığı.
+
+309
+00:48:49,523 --> 00:48:57,864
+Bundan sonra da hani üstsel olarak da işlem yapabiliriz ama yani fazöre geçtikten sonra en kolay işlem şu şekilde yapmak olacaktır.
+
+310
+00:49:00,344 --> 00:49:01,063
+Pardon.
+
+311
+00:49:03,663 --> 00:49:07,943
+Evet, akımı bulduk, gerilimi bulduk. Şimdi asıl kritik noktaya geldik.
+
+312
+00:49:08,692 --> 00:49:12,619
+Arkadaşlar, bir devrede direnç ve...
+
+313
+00:49:12,659 --> 00:49:39,300
+Bobin veya kondansatör varsa, devredeki gerilim ve akım arasında kesinlikle bir kayma söz konusu. Zaten baştan dedik, analiz de ettik. Girişte sıfır dereceli bir gerilim verildiğinde kondansatörde akımı 90 derece kayıyordu. Ötekinde de sıfır derecelik bir akım verildiğinde bobinde 90 derece gerilim kayıyordu.
+
+314
+00:49:40,659 --> 00:49:49,340
+Kayma söz konusu olacak. İçerisindeki Handy ve kapasitördeki farat değerlerine göre bir kayma söz konusu olacak.
+
+315
+00:49:50,099 --> 00:49:54,139
+Aslında empedansa göre, eşdeğer empedansa göre bir kayma söz konusu olacak.
+
+316
+00:49:54,139 --> 00:49:59,980
+Ta ki sadece direnç yoksa. Eğer devrede sadece direnç varsa zaten herhangi bir kayma yok.
+
+317
+00:50:00,219 --> 00:50:05,099
+Neden? Çünkü sadece direnç real part olan, imagine part olmayan bir devre elemanı.
+
+318
+00:50:05,972 --> 00:50:11,391
+Ama bizim bu devremizde tabii bobin olduğundan dolayı bir kayım olacak ve bunun analizini yapmamız lazım.
+
+319
+00:50:12,811 --> 00:50:17,192
+Şimdi bakıyorum, akımı buldum. Akımın değeri böyle bir şeydi hatırlarsak.
+
+320
+00:50:17,711 --> 00:50:22,632
+Gerilim de zaten ana soruda verdi ve ben bunu dönüştürdüm, bu formata getirmiştim.
+
+321
+00:50:23,371 --> 00:50:28,512
+İkisine bakıyorum, açısal olarak bakıyorum. Şu magnetotlar önemli değil.
+
+322
+00:50:29,364 --> 00:50:39,703
+Ve şunu diyebilirim. Hangisi sıfıra daha yakınsa veya pozitife yakınsa veya daha pozitifse o benim için önde bir sinyaldir diyeceğim.
+
+323
+00:50:39,884 --> 00:50:46,303
+Burada gerilim eksi 60, akım eksi 65 dereceler. Yani gerilim daha yakın değil mi pozitife?
+
+324
+00:50:46,723 --> 00:50:53,983
+Öyle olunca gerilim, bu devredeki gerilim akımdan 5.7 derece daha öndedir diyeceğim.
+
+325
+00:50:58,099 --> 00:50:58,999
+Tamam mı? Yes.
+
+326
+00:51:04,371 --> 00:51:23,032
+Başka bir örneğimiz, isterseniz direkt buraya yazabiliriz değil mi? 4 amper, cosinus 300T, 10 derece diyor. Ben bunu fazöre geçirsem, şöyle yazıp bırakacağım. Neden? Çünkü cosinus formatında açısal farkı da var. Böyle bir sinyal.
+
+327
+00:51:30,036 --> 00:51:39,435
+Omega, C1M'ymiş gerçi, yazmadım ama böyle bir formüldü. Buna bakalım, J Omega L. Formülleri buldum.
+
+328
+00:51:39,435 --> 00:51:54,496
+Yani Ars, pardon, eksi 10 olacak, aynen. Teşekkürler. Burası eksi 10 olacak arkadaşlar. Şuan ben gözümden kaçmış şurası. Eksi J Omega C, burası da J Omega L.
+
+329
+00:51:55,923 --> 00:52:02,244
+Ve bunlar birbirine paralel olduğundan normal paralel devre direncinin hesabı gibi hesap yapacağız.
+
+330
+00:52:02,624 --> 00:52:07,603
+Ama bu tarz sorularda arkadaşlar, Admitance'dan gitmek çok daha mantıklı. Neden?
+
+331
+00:52:08,124 --> 00:52:17,583
+Çünkü paralel devrelerde burada işte bir bölü eksi J bölü omega C artı bir bölü J omega L topla bilmem ne bir ton iş.
+
+332
+00:52:18,083 --> 00:52:20,943
+Paydalarını eşitleyeceksin, omega J'lerden kurtaracaksın.
+
+333
+00:52:23,923 --> 00:52:51,204
+Admitans'ın paralelliklerini biliyorum ki ben, direkt toplama işlemi. Bakıyorum, Admitans'dan gidiyorum, burası 1 bölü R'den 1 gelecek zaten. Admitans'ın birimi de arkadaşlar, Ohm üzeri eksi 1. Yani bu Admitans'ın birimi, yanlış anlaşılmasın bu birim. Admitans'ın, yani normal empedansın Ohm ise bunun da Ohm üzeri eksi 1 şeklinde gösterimi var.
+
+334
+00:52:51,699 --> 00:53:00,719
+Eksi J omega L idi. Bu Edmitansı ama dikkat edin. Yani normalde empedansı J omega L idi hatırlarsak.
+
+335
+00:53:01,440 --> 00:53:12,360
+Bunu da çevirdik. Eksi J 3.33 mili ohm üzeri eksi 1 geldi. Şurası. Yani bunlar bizim empedanslarımızdı.
+
+336
+00:53:13,119 --> 00:53:16,039
+Edmitanslar ise aslında J omega L.
+
+337
+00:53:16,916 --> 00:53:22,456
+Bunun da J omega C. Yani biraz işler dışlar gibi oluyor. Yani birbirinin tersi zaten.
+
+338
+00:53:23,175 --> 00:53:27,016
+J omega C şeklinde. Bunu da hesapladık. 0,3 J geldi.
+
+339
+00:53:27,615 --> 00:53:34,816
+Şimdi bu ortak admittance'ı bir bölü şeklinde hesaplamamız aslında admittance'ı seçmemizdeki en etken, en önemli etken.
+
+340
+00:53:34,816 --> 00:53:40,175
+Direkt topluyoruz. 1 artı 0,297 J bizim için admittance.
+
+341
+00:53:40,816 --> 00:53:42,816
+Şimdi gerilimi soruyor herhalde.
+
+342
+00:53:43,443 --> 00:53:44,923
+Sonunda belirtmemişsiniz ama.
+
+343
+00:53:46,931 --> 00:54:12,572
+Muhtemelen gerilimi soracak. Gerilimi sorarken, dediğim gibi her zaman biz fazör notasyona geçmemiz çok mantıklı. Çünkü bölme ve çarpma işlemleri yapacağız. Ve fazör formatta bunlar çok rahat yapılıyor. Bunun fazör formatına geçmek için de gene A kare artı B karenin kare kökü magnetültü verecek. Ak tanjant eksi B bölü A ise bizim açısı kısmımızı verecek.
+
+344
+00:54:13,012 --> 00:54:16,012
+Şöyle bir ekonomant gelmiş, Edmonton's ekonomantı.
+
+345
+00:54:16,792 --> 00:54:23,252
+Bu Edmonton's'ın biz tersini alarak direkt empedansı sorudursa sonra da kullanabiliriz.
+
+346
+00:54:24,072 --> 00:54:25,992
+Yani 1 bölü 1, 0, 4.
+
+347
+00:54:26,532 --> 00:54:30,292
+Öteki tarafta da tabii bunun tersi demek aslında 0 eksisi demek.
+
+348
+00:54:31,112 --> 00:54:38,112
+0 eksi 16,5'tan biz şöyle bir değerle aslında bu devrenin empedansını bulmuş olduk.
+
+349
+00:54:38,931 --> 00:54:45,572
+Çok daha basit bir şekilde. Bunun empedansını bulmak birbirlerle çok zor olacaktı öteki taraftan gitseydik.
+
+350
+00:54:46,552 --> 00:54:49,072
+Neden? Edmitans'ı yaptığımız anlaşıldı mı bu soru için?
+
+351
+00:54:52,011 --> 00:55:01,431
+Soru yok değil mi? Paralel yapılarda arkadaşlar genelde admittance'dan yürünür, sonra empedansa geçilir birbirleri şeklinde.
+
+352
+00:55:05,076 --> 00:55:11,396
+Tamam, devre analizine başlayalım artık. Tamam, empedansı bulduk çünkü. Bunu yazmıştık zaten.
+
+353
+00:55:13,396 --> 00:55:15,396
+Burada şimdi gerilim...
+
+354
+00:55:16,148 --> 00:55:25,068
+Yani empedanslı da gidilebilir, normal admittance'dan da gidilebilir. Aşağısı empedans gösteriyor, yukarısı admittance'dan gidelim.
+
+355
+00:55:25,368 --> 00:55:33,348
+Ve eşitliği çarpı Z'di zaten. I'yı biliyorum, pardon şey, evet I'yı biliyorum, Z'yi biliyorum. Buradan gerilimi bulabilirim.
+
+356
+00:55:33,988 --> 00:55:42,628
+4 ile 0,9,59'u çarpacağım. Eksi 10 ile de 16,5'u toplayacağım. Yani eksi 16,5'u toplayacağım. Benim için burası bir gerilimimiz olacak.
+
+357
+00:55:44,148 --> 00:55:52,808
+Hani Elmitans'tan da gidersek, eğer V eşittir, I bölü Y şeklinde tam tersi, yerimize koyduğumuzda gene aynı sonucu bulacağız zaten.
+
+358
+00:55:53,768 --> 00:55:55,008
+Aynı şeylerden bahsediyoruz.
+
+359
+00:55:56,328 --> 00:56:00,008
+Şimdi tekrardan soruyu analiz edelim, gerilim ve akımın durumu için.
+
+360
+00:56:01,408 --> 00:56:09,008
+Akımımız girişteki şurada 4-10, yani daha doğrusu kosinusten 4 amper kosinus 300'e eksi 10'du.
+
+361
+00:56:09,076 --> 00:56:14,675
+Veya direkt fazör formatta çevirdiğimizde 4 fazör eksi 10 dereceye sahipti.
+
+362
+00:56:14,795 --> 00:56:17,055
+Gerilim ise 384 eksi 26.
+
+363
+00:56:17,576 --> 00:56:25,475
+Pozitife akım daha yakın olduğu için biz diyeceğiz ki akım bu soruda gerilimin önündedir diye yorum yazacağız.
+
+364
+00:56:29,043 --> 00:56:37,163
+Burada eşdeğer empedanslar serilerde toplama, paralellerde bir bölü vs. özetlediğimiz bir kısım.
+
+365
+00:56:38,603 --> 00:56:46,683
+Evet, özet olarak bunların nasıl hesaplandığını, nasıl eşdeğer ekonomantın, yani eşdeğer empedansın ve admittansın hesaplandığını değindik.
+
+366
+00:56:47,143 --> 00:56:50,203
+Bunlarla alakalı örnekte gösterdik.
+
+367
+00:56:50,203 --> 00:56:51,803
+Şimdi Thevenin ve Norton.
+
+368
+00:56:52,275 --> 00:57:03,096
+Şimdi Thevenin ve Norton normal DC analizlerde hatırlarsanız neydi? Bir yük direncimiz vardı ve o yük direncinden doğru o dirence gelen akımın
+
+369
+00:57:03,251 --> 00:57:13,612
+En bariz bir şekilde, en sade bir şekilde o akımı oluşturan ön devresinin bir direnç, bir gerilim kaynağı ile gösterimiydi. Değil mi?
+
+370
+00:57:14,112 --> 00:57:24,612
+Biz o gerilim kaynağının Thevenin gerilimi, o geçen akımı, Norton akımı, eşdeğer devre direncinin de Thevenin veya Norton'un eşdeğer devre direnci diyor idik.
+
+371
+00:57:25,268 --> 00:57:36,108
+Burada da aynı şey söz konusu. Burada hiçbir şey değişmeyecek arkadaşlar. Nasıl R devresinde işlem yapıyorsak, empedansları çevrildikten sonra devre bu şekilde anecelecek.
+
+372
+00:57:37,548 --> 00:57:47,268
+Yani mesela Source Transformation vardı hatırlarsanız. Burada da yine Source Transformation'ı aynı empedans üsulü üzerinden yürüteceğiz.
+
+373
+00:57:47,947 --> 00:57:51,268
+Evet, burada demeye çalıştım. Hani Thevenin neydi, Norton neydi, onların...
+
+374
+00:57:51,903 --> 00:58:07,304
+Öz şeyi var. Ne demektir? Şurası bir kara kutu olduğunu düşünün. Bunun içerisinde pek çok direnç, pek çok devre elemanı var. Beni ilgilendiren nokta şuydu. Bir yük direncim var. Bu yük direnci üzerinde bir gerilim oluşuyor ve bu yük direnci üzerinden bir akım akıyor.
+
+375
+00:58:07,304 --> 00:58:14,304
+Şimdi ben buraya, bu karmaşık, şuradaki kara kutunun içerisine ne olduğuna bakmadan...
+
+376
+00:58:15,059 --> 00:58:29,420
+Sadece tek bir direnç ve tek bir gerilim kaynağı ile göstersem ve onlardan elde ettiğim akımın karmaşık devre yapısında elde ettiğim akımla aynı olma durumuydu. Eşdeğer devreler dediğimiz yapılar.
+
+377
+00:58:30,164 --> 00:58:46,364
+Bunu herhalde zaten biliyoruz. Tekrar tekrar üstünde durmayalım. Neticede Thevenin ise eğer gerilim üzerinden, gerilimin eşdeğerinin olması söz konusuydu. Norton ise akım üzerinden gittiğimiz bir örneklemdi.
+
+378
+00:58:47,083 --> 00:58:49,644
+Şimdi burada bir soru var, mesela örnek var.
+
+379
+00:58:51,092 --> 00:59:19,092
+Demişiz ki I1 şurası yani bir akım kaynağı var. 5 mA sinüs 400t artı 50 varmış. Şimdi bunu bir kere ilk etapta biz bir fazör formata getireceğiz. Sinüs olduğu için kosünüse getirmem lazım. Kosünüse getirmek için eksi 90 çıkartmam lazımdı. Yani 5 mA kosünüs 400t eksi 40 benim için şu an kosünüsteki gösterimi ve bunu da fazöre kosünüs olduğu için
+
+380
+00:59:19,092 --> 00:59:20,372
+için direkt çevirebiliyordum.
+
+381
+00:59:21,711 --> 00:59:22,472
+5 mA
+
+382
+00:59:22,472 --> 00:59:24,791
+şuradaki faz farkı
+
+383
+00:59:24,791 --> 00:59:26,992
+eksi 40 olduğundan dolayı da eksi 40'ı
+
+384
+00:59:26,992 --> 00:59:28,912
+buraya yazdım.
+
+385
+00:59:30,512 --> 00:59:30,892
+Var mı?
+
+386
+00:59:30,972 --> 00:59:32,572
+Çizmemişiz. Evet. Sonrasında
+
+387
+00:59:32,572 --> 00:59:34,352
+her bir devre elemanının
+
+388
+00:59:34,352 --> 00:59:35,532
+empedansını bulalım.
+
+389
+00:59:36,403 --> 00:59:43,764
+Çünkü source transformation yapacağım. Mesela burası akım kaynağı, buna paralel bir empedans, şimdi kondansatörde onu yapamam.
+
+390
+00:59:44,043 --> 00:59:51,543
+Çünkü kondansatörde başka işte frankans bilgisi vs. onlar da giriyor. Ama empedans da bu T domeninden kurtarmak eder.
+
+391
+00:59:52,864 --> 01:00:02,543
+Buradaki akım kaynağı ile C1 dediğimiz ve empedansını hesapladıktan sonra ZC1 olacak olan o parametreyi
+
+392
+01:00:03,295 --> 01:00:10,655
+Akımla onu çarparsam ne elde edelim? Gerilim ve onu elde edelim. Yani source transformation dediğim yapıya sokabilirim.
+
+393
+01:00:10,956 --> 01:00:21,295
+Çünkü akımla yani I1, bunu yazmak da çok zor olacak ama, I1 çarpı ZC1 benim için...
+
+394
+01:00:21,619 --> 01:00:28,280
+ve biri veriyorsa ben bunu seri moda getireceğim ve buraya da bir gerilim kaynağı koyacağım.
+
+395
+01:00:28,420 --> 01:00:33,780
+Niye bunu yapıyorum? Çünkü bir başka empedansla seri hale gelsin ki ikisini toplayayım.
+
+396
+01:00:34,739 --> 01:00:38,739
+Sonra tekrar transform edeyim. Source Transform'ı zaten işlemiştik.
+
+397
+01:00:39,159 --> 01:00:41,739
+Onu bu mantığa nasıl oturttururuz ona bakacağız.
+
+398
+01:00:41,739 --> 01:00:43,739
+Her bir devre elemanın empedansını...
+
+399
+01:00:45,492 --> 01:01:00,492
+Bulalım dedik. Bir saniye. Bunu nasıl usyleyeceğim? Aynen. Her bir devre elemanının empedansını buldum. Şurası bir mikrofar atmış. Eksi c, omega c1. Burada omega...
+
+400
+01:01:00,800 --> 01:01:07,420
+İbaresi aslında bizim T domenini siliyoruz ama onu aslında formülize etmiş olduğumuzu gösteriyor.
+
+401
+01:01:07,579 --> 01:01:14,719
+Yani biz T'deki o frekans bilgisini biz zaten formülize ederek empedansın içine katmış oluyoruz.
+
+402
+01:01:15,480 --> 01:01:16,619
+Imaginary Part'la.
+
+403
+01:01:18,068 --> 01:01:22,608
+Eksi J 400, sonra da 400 verilmişti hatırlarsanız, şurası.
+
+404
+01:01:23,628 --> 01:01:30,468
+400 radyan bölü saniye 1 mikrofarad çarptığımızda, eksi J 2,5 kilo ohm şeklinde çevirdik.
+
+405
+01:01:30,848 --> 01:01:38,608
+R1 zaten direnç, L1J omega L1'di, J 400 radyan 0,3'müş değeri, şurası yani.
+
+406
+01:01:39,411 --> 01:02:01,151
+Çarptığımızda J120, öteki J800, R2 dediğimiz zaten direkt kendisi şurası. Bir de burada 0.7 mikrofarad var, eksi J omega C2. O da eksi J, 357 kilo olmuş. Bunları bulduktan sonra bunları fazor formata getirelim. Neden bunu getiriyoruz? Çünkü hep bir çarpma işlemi yapacağız.
+
+407
+01:02:06,208 --> 01:02:13,988
+Sonra bunları toplayacağım, sonra bununla onu çarpacağım, tekrar şey böleceğim, tekrar akıma geçireceğim, paralel hale getireceğim.
+
+408
+01:02:14,448 --> 01:02:19,847
+Source transformation'da çok çarpma bölme yapacağımız için fazor format en mantıklısı.
+
+409
+01:02:21,427 --> 01:02:26,768
+Zaten şunu çevirmek de bir sıkıntı yok, burası magnitötünü verecek.
+
+410
+01:02:27,251 --> 01:02:36,132
+Sadece konular stüllerinde olduğu için, eksi C'de eksi 90'ı, burası artı 90'ı, şurası da artı 90 açıyı, burası da yine eksi 90 açıyı verecek.
+
+411
+01:02:37,452 --> 01:02:38,112
+Çevirdik.
+
+412
+01:02:39,972 --> 01:02:43,311
+Şimdi bunları fazör gösterimde yazabiliriz.
+
+413
+01:02:43,751 --> 01:02:48,235
+Ve yazdıktan sonra, Thevenin eşdeğer devre direnci, yani...
+
+414
+01:02:49,427 --> 01:02:54,568
+Şuradaki Source Transformation, yani birinci etaptaki Source Transformation'ı yapabiliriz.
+
+415
+01:02:55,228 --> 01:03:03,508
+Burası akım kaynağı, burası bir empedans. Bu ikisini çarparsam ben, işte normal kas sayıları çarp, açıları da topla demek.
+
+416
+01:03:04,548 --> 01:03:11,807
+Ben gerilim kaynağı ve ona seri bir empedansa sahip devre elemanı şeklinde getirebilirim onu.
+
+417
+01:03:11,807 --> 01:03:16,168
+Yani bir Source Transformation yapıyorum. Sonra bu ikisini toplayacağım.
+
+418
+01:03:18,804 --> 01:03:19,643
+Bebe...
+
+419
+01:03:19,860 --> 01:03:47,860
+Kara kutu olarak gösteriyorum artık. Z ekonomun 1 oldu. ZR1 ile ZC1'i topladım. Real ve imaginary part olan bir sayı haline geldi. Bunu tabii fazör formata geçirmem lazım. Fazör formata çeviriyorum. Real ve imaginary part olduğu için tabii fazör formatta magnitude'u karelerinin toplamı. Açısı da aktanjant eksi B bölü A'dan geliyor. Velev ki şu kısım olmasaydı zaten.
+
+420
+01:03:47,860 --> 01:03:58,340
+Zaten bireyseller de yok hatırlarsanız. Yani o kısımlar yok. Bunu çevirmek çok daha kolay. Zaten direkt açı bilgisi J'den eksi 90 artı 90 gelecek.
+
+421
+01:04:00,260 --> 01:04:09,960
+Evet, bunu fazorla getirdik. Sonra ben bunu tekrardan V'yi buradaki ekonomata bölsem akım kaynağı ve bu ona paralel bir yapıya bölündüreceğim.
+
+422
+01:04:10,420 --> 01:04:12,139
+Evet, getirdim tekrardan.
+
+423
+01:04:12,519 --> 01:04:14,200
+Ona paralel bir yapı durumuna geldi.
+
+424
+01:04:14,340 --> 01:04:16,500
+Şu an şu iki tanesi birbirine paralel.
+
+425
+01:04:16,980 --> 01:04:22,420
+Birbirine paralel yapılarda, yani şuradaki ZEQ olanı bulacaksam,
+
+426
+01:04:23,800 --> 01:04:25,200
+Admitans'tan gidebilirim.
+
+427
+01:04:25,400 --> 01:04:29,340
+Yani direkt bunları toplarım, bir bölüsünü alırım, aynı şeye tekabül gelir.
+
+428
+01:04:30,700 --> 01:04:33,920
+Aynen öyle yapmışız zaten, bir bölüsü şeklinde yazmışız.
+
+429
+01:04:34,996 --> 01:04:46,796
+En nihayetinde çevirdim. Artık admittance bu, dikkat ederseniz. Admittance ile bunları geçirmem mümkün değil. O yüzden ben bunu da tersine alaraktan yazdım.
+
+430
+01:04:48,436 --> 01:04:52,896
+Tekrardan burası Admittance oldu ve gerilim kaynağı formatına getirdim.
+
+431
+01:04:53,316 --> 01:04:56,255
+Buradaki Admittance'da buradaki empedans birbirini toplamaz.
+
+432
+01:04:56,356 --> 01:04:59,655
+Birbirinden hangisi daha avantajlısı ona çevirmem lazım.
+
+433
+01:04:59,735 --> 01:05:04,096
+Burada seri olduğu için şuradaki Admittance'ı empedansa çeviriyorum.
+
+434
+01:05:04,215 --> 01:05:05,076
+Sonra da toplayacağım.
+
+435
+01:05:07,096 --> 01:05:10,755
+Empedansa çevirdim ve sonra TheAqulement'ı topladım.
+
+436
+01:05:12,083 --> 01:05:28,163
+Gerilim kaynağı ve seri bir empedansım var. Ne yapacağım? Bölerim gerilim kaynağını, empedansı, akım kaynağını bulurum ve ona paralel bir empedansım olur. Sonra bu empedanslar birbirine paralel olduğu için gene el mitans'tan da gidebiliriz.
+
+437
+01:05:29,108 --> 01:05:41,908
+Aynen, Edmonton'dan da gidebiliriz. Equivalent'ı bulduktan sonra, Edmonton'ın, onun bir bölüsünü alarak biz buraya, empedansın ekivalentini hesaplarız ve ona paralel bir akım kaynağımız olur.
+
+438
+01:05:44,668 --> 01:05:49,628
+Ondan sonra ise amaç şey, şu ana soruya gelelim geri.
+
+439
+01:05:52,115 --> 01:06:02,315
+Amaç bu taraftaki eşdeğer devreyi bulmak. Yani aslında VTH dediğimiz C2 kondansörü üzerindeki gerilim kaynağını istiyor değil mi?
+
+440
+01:06:02,715 --> 01:06:10,536
+Yani buraya bir yük direnci koysaydım ben, yük direncinin üzerindeki gerilim nedir deseydim aslında buradaki direncin üzerindeki gerilimi soruyor.
+
+441
+01:06:10,536 --> 01:06:19,815
+Bu soruda da biz en nihayetinde şu formata getirdikten sonra şuradaki akım kaynağını gerilim kaynağı moduna getirip,
+
+442
+01:06:20,115 --> 01:06:23,635
+V2 üzerindeki gerilimin ne olduğunu hesaplayacağız.
+
+443
+01:06:24,675 --> 01:06:29,715
+Onu da hesapladığımızda en nihayetinde yazmamışmış şuraya.
+
+444
+01:06:30,915 --> 01:06:41,295
+Equivalent 4'ten yani şu ikisini de birleştirdiğimizden geçen akımı normal bir V'ştir, I çarpı R mantığıyla hesaplıyoruz.
+
+445
+01:06:42,395 --> 01:06:47,235
+Kondansörün üzerinden geçen gerilimi buluyoruz ki bu bizim için Thevenin gerilimi olacak.
+
+446
+01:06:47,648 --> 01:07:14,508
+Yani aslında normal Thevenin sorularında olan hiçbir şey, fazla bir şey yok burada. Yani artısı yok. Sadece ön işlem olarak bütün değerlerin empedansa çevrilmesi, empedansa çevrilen değerlerin açısal forma getirilmesi, açısal forma getirilmiş olan değerlerin ise, yani fazör gösterimdeki değerlerin ise eşdeğer empedansı veya source transformasyona katmak bütün iş.
+
+447
+01:07:18,260 --> 01:07:19,579
+Anlaşıldı mı arkadaşlar?
+
+448
+01:07:25,523 --> 01:07:26,903
+Evet, burada da
+
+449
+01:07:26,903 --> 01:07:28,803
+bakıyorum.
+
+450
+01:07:36,532 --> 01:07:43,092
+Evet, yani sağdakinin aslında soldakilerinin eşdeğerli olduğunu anlattığımız bir örnek.
+
+451
+01:07:49,684 --> 01:08:02,784
+Bu kısımdaki Norton ve Thevenin'deki, normalde daha önceden yaptığımızın aynı her şeyi yapabiliyoruz. Sadece ön işlem olarak empedansa geçmek var.
+
+452
+01:08:04,764 --> 01:08:08,904
+Ayrıca hatırlarsanız normal DC analizlerde de bunu bahsetmiştik.
+
+453
+01:08:17,171 --> 01:08:35,091
+etkisi, yani bir dağılımı söz konusu olacak. Voltage divider anlamında. Bunu da yine empedansa geçtikten sonra, normal dirençlerde neydi? Örnek verelim. V2'yi hesaplamak istiyorsak, V2'yi Vs çarpı,
+
+454
+01:08:35,456 --> 01:08:50,655
+Z1, pardon, Z2 bölü Z1 artı Z2'den bulabiliyorduk. V1 için ise. Vs çarpı Z1 bölü Z1 artı Z2'den, yani şu alttaki iki tane denklemden bulabiliyoruz. Aynı direnç soruları olduğu gibi.
+
+455
+01:08:56,787 --> 01:09:03,647
+Akım bölücü devrelerde de aynı şekilde bunun dağılması birbirine oranı ile alakalıydı.
+
+456
+01:09:03,647 --> 01:09:07,647
+Yani işte normalde bir WS varsa karşısı bölü...
+
+457
+01:09:08,287 --> 01:09:13,607
+toplama şeklindeydi hatırlarsanız. Burada da aynı şekilde işlem yapıyoruz.
+
+458
+01:09:13,607 --> 01:09:24,887
+Veya bir gerilim kaynağı belli ise, akımın bölünmesi değil de, tek tek gerilim kaynağı üzerinde sonuçta perler olduğu için aynı gerilimi bırakacak.
+
+459
+01:09:25,467 --> 01:09:29,647
+Vs bölü Z1 ile I1'i vesaire vesaire bulabiliyoruz.
+
+460
+01:09:34,707 --> 01:09:39,028
+Veya ikili anlisi şeklinde de yapabiliyorduk. Bunları anlatmıştık.
+
+461
+01:09:39,608 --> 01:09:43,707
+Hani bu kısımlar aynen birebir aynısı zaten normal DC analizlerdekilerin.
+
+462
+01:09:44,587 --> 01:09:47,427
+Tek farkı Z'den yürümemiz gerekiyor.
+
+463
+01:09:47,567 --> 01:09:49,108
+Empedansa geçmemiz gerekiyor.
+
+464
+01:09:49,207 --> 01:09:52,987
+Bir fazör gösterime geçip orada işlem yapmamız gerekiyor.
+
+465
+01:09:54,707 --> 01:09:55,347
+Evet.
+
+466
+01:09:56,948 --> 01:09:59,467
+Sorumuz var mı arkadaşlar sunumla alakalı?
+
+467
+01:10:00,180 --> 01:10:02,579
+Tekrar anlatmamızı istediğiniz bir kısım.
+
+468
+01:10:11,891 --> 01:10:13,631
+Her şey tamam o zaman.
+
+469
+01:10:16,627 --> 01:10:32,927
+Empedans konusu önemli arkadaşlar. Empedans bizim için T'den kurtarmak, yani o zaman domenindeki analizlerden kurtarmak için ve hepsinin sanki bir devre elemanı ama hepsi birbiriyle iletişime geçebilen bir devre elemanıymış gibi.
+
+470
+01:10:32,927 --> 01:10:44,027
+Biz buna empedans diyoruz. Empedans şeklinde göstermemizi sağlayan, bobinin işte ayrı konuları istiyor, ayrı analiz değil de hepsine eşdeğerli bir devre elemanıymış gibi analiz yapmasını sağlayan.
+
+471
+01:10:44,467 --> 01:10:46,007
+bir gösterim şekli.
+
+472
+01:10:50,003 --> 01:10:55,744
+Sorumuz yoksa arkadaşlar, esasında dersi bugünlük bu kadar yapacağım. Sınavınız da var zaten.
+
+473
+01:10:59,988 --> 01:11:03,068
+Soru varsa soru alalım, yoksa dersi bitirebiliriz.
+
+474
+01:11:08,051 --> 01:11:12,631
+Hatta geçen hafta bir sunumun sonunda bir soru vardı.
+
+475
+01:11:14,691 --> 01:11:18,891
+Bunu isterseniz tekrar yansıtıp bir daha bakalım bunları işledikten sonra.
+
+476
+01:11:19,412 --> 01:11:20,992
+Yani işledik artık empedansı.
+
+477
+01:11:37,332 --> 01:11:39,032
+Bir saniye arkadaşlar, geliyorum hemen.
+
+478
+01:13:38,228 --> 01:13:43,628
+Arkadaşlar, hemen geçen haftayla alakalı bir soru vardı burada hatırlarsanız.
+
+479
+01:13:52,083 --> 01:13:56,183
+Bir sonraki örneğin arkadaşlar, geliyor mu ekrana? Geldi mi soru?
+
+480
+01:13:56,644 --> 01:13:57,123
+Evet hocam.
+
+481
+01:13:58,324 --> 01:14:04,683
+Örneğin şöyle bir soru. Bir akım kaynağımız var ve buna paralel olarak direnç, bobin ve kondansatör var.
+
+482
+01:14:05,344 --> 01:14:09,783
+Şimdi ilk başta fazora geçeceğiz. Akım kaynağına bakıyorum ki kosünüs formatta.
+
+483
+01:14:10,443 --> 01:14:14,103
+Direkt ne yazacağım? 8, fazora açısı 30 derece olan bir açı.
+
+484
+01:14:14,612 --> 01:14:21,092
+Bu kısım ne için önemli? Bu kısım bizim kondansatör ve bobinin etkisini bulabilmek için önemli.
+
+485
+01:14:21,352 --> 01:14:27,891
+Yani Omega diye gösterdiğimiz o açısal hesaplama, açısal fark, Omega.
+
+486
+01:14:29,311 --> 01:14:33,572
+Buradaki bobin ve kondansatörün bu devreye olan katkısını bulmak için lazım.
+
+487
+01:14:34,452 --> 01:14:39,432
+Burada ise 8-30 faz açısına sahip olan bir akım kaynağı var.
+
+488
+01:14:40,551 --> 01:14:42,072
+Soru şu, V'yi hesaplamak.
+
+489
+01:14:42,836 --> 01:14:50,935
+Bu V'yi hesaplayabilmek için tabii ki de akımdan gidersek, şunu biliyorum ki ben, I, S, R, R, R, R, R, C'ye eşit olacak değil mi?
+
+490
+01:14:51,275 --> 01:14:53,015
+Şimdi R'yi nasıl bulacağım peki?
+
+491
+01:14:53,916 --> 01:14:58,355
+Hepsinde V gerilimi olduğu için, V bölü R, R'dir.
+
+492
+01:14:58,916 --> 01:15:04,056
+V bölü empedansı hesaplanmış olan, Z, L diyeceğim ben buna.
+
+493
+01:15:04,056 --> 01:15:10,136
+Z ile buradaki R'yi veririk, V bölü Z, C'de, R'yi veririk.
+
+494
+01:15:10,644 --> 01:15:17,043
+Bu anlamda empedans değerleri bizim direkt bunları işleme takmamızı sağlayacak.
+
+495
+01:15:17,564 --> 01:15:21,863
+Şimdi V bölü R'yi direkt yazabilirim. V bölü 70 şeklinde.
+
+496
+01:15:22,744 --> 01:15:31,004
+V bölü ZL, ZL'yi de biliyorum ki ben J omega L idi.
+
+497
+01:15:31,475 --> 01:15:53,135
+V bölü J omega R şeklinde yazdım. V bölü ZC, ZC'li eksi J bölü omega C'ydi, omega C'ye yukarı geçer. J'li eksilikten kurtarırım, o da yukarı geçer. J omega C, V olur. Bunların eksilikleri tamamen bizim KCL'den gelen eksilikler. Onlara dikkat edelim. Bu J'den gelen değil yani.
+
+498
+01:15:53,652 --> 01:16:01,652
+Bunları bu şekilde yazdığımızda, buradaki omega dediğimiz parametre bizim için soruda verilmiş olan frekans bilgisi.
+
+499
+01:16:03,652 --> 01:16:12,731
+Bunları böyle yerine yazdığımızda, V'yi çektiğimizde bizim aslında şuradaki V'yi bulmamızı sağlayacak olan formülük verecek.
+
+500
+01:16:13,412 --> 01:16:15,931
+Bakalım V'yi çektiğimizde ne gelmiş?
+
+501
+01:16:16,931 --> 01:16:17,931
+Şöyle bir...
+
+502
+01:16:18,963 --> 01:16:35,683
+Sayı gelmiş, yani bir koordinat düzeni. Bunu da tabii faz formata çevirip, karşıya attığımızda, 8 bölü 0, 0, 147 gerilimi, 30-13 de şeyi verecek. Yani 43 derecede faz açısına verecek.
+
+503
+01:16:35,683 --> 01:16:44,484
+Şimdi şöyle bir analiz yapalım peki. Bu bizim gerilimimiz, 544 milivolt, 43 faz açısına sayabilir gerilim.
+
+504
+01:16:45,076 --> 01:16:58,476
+Bunu akımla kıyaslayalım. Akımımız neydi? 8'e 30'du. Şimdi baktığımızda 43 daha önde olduğu için diyeceğiz ki bu devreleri gerilim akımdan 13 derece daha öndedir diyeceğiz.
+
+505
+01:17:10,484 --> 01:17:13,504
+Bu çek ekranı açılmıyor arkadaşlar. Biraz bekletiyorum.
+
+506
+01:17:18,547 --> 01:17:33,907
+Denklemde kondansatör için yazdığımız kısmı kısaca, şuradaki kısım var, şuradaki j omega c kısmı var herhalde değil mi? Şimdi normalde V bölü zc değil mi? Oradan geçen akı.
+
+507
+01:17:34,927 --> 01:17:40,867
+Ic. Hani on kanunu göre Ic çaldı. Zc, V'yi vermesi lazım.
+
+508
+01:17:41,779 --> 01:17:52,399
+Burada Zc'yi ben, Eksi J bölü, Omega, niye bu zıplıyor böyle anlamış diyelim, Omega C olarak biliyorum.
+
+509
+01:17:53,420 --> 01:18:04,079
+Bunun bir de V bölüsü var, Omega C'ye yukarı gelir ve çarpı Omega C bölü, Eksi J kalır değil mi?
+
+510
+01:18:04,079 --> 01:18:08,479
+Bu Eksi J'de, tabii eksilikten kurtarmak için yukarı getirirsek.
+
+511
+01:18:10,163 --> 01:18:17,083
+Yani eksi eksi, burası J idi. Yani V, Omega, C, J olucak.
+
+512
+01:18:20,916 --> 01:18:21,756
+Orda'ın gibi.
+
+513
+01:18:25,716 --> 01:18:51,376
+Bu geçen haftanın sonunda olan bir örnekti. Başka bu haftada örneklerimizi yaptık. Genel olarak bu sorular basittir arkadaşlar. Sadece, hani hep gördüğümüz karışıklık şundan dolayı, bir en nihayetinde akım-gerilim kıyaslaması yaparken bir karıştırma söz konusu oluyor. Kim kimin önünde, kimi lead yapıyor, kimi lagde, lagde, yani işte burada misal gerilim.
+
+514
+01:18:51,859 --> 01:18:58,460
+Ne yazıyorduk nihayetinde? We, Leads, I diyeceğiz değil mi? Yani gerilim akımın önündedir diyeceğiz.
+
+515
+01:18:58,579 --> 01:19:07,640
+Veyahut da tam tersi, I, Legs veya Legging, We diyeceğiz. Yani akım gerilimin gerisinde gibi ibadet edeceğiz.
+
+516
+01:19:07,819 --> 01:19:09,539
+Burada bir karışıklık yaşıyoruz.
+
+517
+01:19:10,387 --> 01:19:19,847
+Bir de, empedansa geçerken kondansörle bobinin formülü biraz karışıyor. Bir de Sg bölü omega C, ötekisi de J omega L.
+
+518
+01:19:20,532 --> 01:19:26,532
+Bunları karıştırmamak lazım. Admitance ne zaman önemli? O karışabiliyor.
+
+519
+01:19:26,851 --> 01:19:38,291
+Mesela burada aslında admittance da mantıklı olabilirdi. Neden birbirinden hepsi paralel ama burada eşdeğer sorulmadığı için, yani eşdeğer empedansı hesaplanması sorulmadığı için girmedik.
+
+520
+01:19:38,291 --> 01:19:44,291
+Ama velev ki derseydi bu devrede eşdeğer empedansı bulundu. Ben şunu yapardım.
+
+521
+01:19:47,859 --> 01:19:59,059
+Micro Henry'i, 2 nanafarad'ı, empedansı çevirip, yani veya impedansa çevirip, şey, etmitansı çevirip, bak etmitansı formülmeye atalım.
+
+522
+01:20:02,559 --> 01:20:12,499
+Normalde şunu biliyorum ki ben, Z ile, şuraya yazmaya çalışacağım, G, Omega, L değil mi? Allah Allah.
+
+523
+01:20:22,484 --> 01:20:25,264
+Evet, ZC'yi de yazalım.
+
+524
+01:20:26,963 --> 01:20:30,444
+Eksi J, Omega, C.
+
+525
+01:20:30,864 --> 01:20:33,364
+Şimdi bunların etmetanslarını da yazalım.
+
+526
+01:20:33,623 --> 01:20:37,344
+Y ile, Allah Allah, öyle kalsın arkadaşlar.
+
+527
+01:20:38,083 --> 01:20:41,344
+J, Omega ile, YC.
+
+528
+01:20:43,284 --> 01:20:46,484
+YC dedi, direkt ötekisi olacak zaten.
+
+529
+01:20:47,252 --> 01:20:53,852
+J, Omega, J. Şimdi ben ne yapardım bu soruda? Elin tanrısından giderdim, eşdeğer devrelerden sorulsaydı.
+
+530
+01:20:53,852 --> 01:21:08,052
+Buradaki YL olarak hesaplardım. Bizim örnekte de XJ, Omega neydi? 2P10.6 da yazalım bari.
+
+531
+01:21:08,052 --> 01:21:13,452
+2P10.6, L'iz neymiş? 10 mikrofon.
+
+532
+01:21:14,355 --> 01:21:34,055
+çarpı, bunun üzeri, eksi altı. Değil mi? Bu altlığa gitti zaten. Buradaki değer gelecek. Yani eticiye böyle 2Pi, 16. Öteki tarafı da yapardım ve bunları toplardım direkt. Benim için bir sanal sayı gelecekti. İşte real partı dirençten gelen.
+
+533
+01:21:34,479 --> 01:21:55,739
+Imagine Part'ı, bobin ve kondansörden gelen bir rektangular form gelecekti. O rektangular formu ben sonradan, yani o rektangular formu bir faz polar formata çevirirdim açısı olarak. Sonra o polar formatı da tersine yani bir bölüsüne alarak en bedasını bulmuş olalım.
+
+534
+01:21:57,039 --> 01:21:58,479
+Yani etnik tanısı daha mantıklıydı.
+
+535
+01:22:03,764 --> 01:22:29,924
+Olmayız arkadaşlar. Sorunuz var mı? Sorunuz yoksa dersi bitirebiliriz. Sınavınız ne kadar süre var? Biraz daha var diye düşünüyorum. Bu sürede isterseniz biraz daha çalışabilirsiniz. Bu geçen hafta yaptığımız kısımlara bakabilirsiniz.
+
+536
+01:22:30,739 --> 01:22:39,859
+Geçen hafta derken şey değil, yani şu polar gösterim, yani polar gösterim var ama empedans yok mesela.
+
+537
+01:22:40,159 --> 01:22:45,220
+Yani empedans sorusu yok ama genel olarak kolay bir soru.
+
+538
+01:22:47,180 --> 01:22:54,239
+Yani omega alfa vardı, hani birinden büyüktü, işte 3 durum vardı, over-demput, critical-demput.
+
+539
+01:22:55,239 --> 01:22:56,139
+Bu noktalara bakın.
+
+540
+01:22:59,475 --> 01:23:25,475
+Soru var mı arkadaşlar? Soru yoksa? Haftaya son dersimiz, haftaya konuşuruz hani final ile alakalı. O yüzden bu hafta konuşmaya gerek yok. Haftaya son dersimiz var. Muhtemelen Bode Pro'lara giriş yaparız diye görüyorum ama bir konuşacağız bakalım. Haftaya kadar. Kendinize iyi bakın.
+
+541
+01:23:26,195 --> 01:23:28,636
+Sorumuz yok değil, son defa soruyorum.
+
+542
+01:23:30,356 --> 01:23:30,576
+Tamam.
+
+543
+01:23:31,676 --> 01:23:36,956
+Hepinize iyi günler, iyi dersler, iyi sınavlar, iyi kısa sınavlar.
+
+544
+01:23:39,036 --> 01:23:41,956
+Bir de mail atmayın arkadaşlar, lütfen mail istemiyoruz.
+
+545
+01:23:42,556 --> 01:23:43,996
+Sistemden yüklemeye çalışalım.
+
+546
+01:23:44,996 --> 01:23:46,336
+İyi günler.

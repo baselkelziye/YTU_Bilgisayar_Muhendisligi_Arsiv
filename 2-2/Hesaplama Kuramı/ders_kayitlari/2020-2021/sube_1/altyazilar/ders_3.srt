@@ -1,0 +1,4719 @@
+1
+00:02:54,355 --> 00:03:00,096
+Merhaba arkadaşlar. Günaydın. Sesim geliyor mu?
+
+2
+00:03:10,068 --> 00:03:11,588
+Arkadaşlar, sesim geliyor mu?
+
+3
+00:03:23,539 --> 00:03:29,280
+Okey, mesajlar yazdınız, tamam, güzel. Sesimi duyamayan var mı?
+
+4
+00:03:42,484 --> 00:03:55,864
+Bir iki dakika bekleyelim, katılım sağlayalım. Şu anda 20 kişi derse katılmış durumda. Bir dakika kadar bekleyelim ve ondan sonra bir dakika sonra dersimize başlıyoruz.
+
+5
+00:04:11,668 --> 00:04:11,987
+Ok.
+
+6
+00:04:43,220 --> 00:04:46,800
+Do you remember the definition of language from the last week?
+
+7
+00:04:52,211 --> 00:05:03,211
+What is language? Can you answer this simple question? Because you already know it. What is language?
+
+8
+00:05:06,836 --> 00:05:09,336
+How can you describe language?
+
+9
+00:05:15,795 --> 00:05:29,995
+Okay. Language is itself a set of strings. If you have a set of strings, then you have the language. Okay.
+
+10
+00:05:34,867 --> 00:05:38,867
+For example, Turkish is a language, English is a language.
+
+11
+00:05:40,187 --> 00:05:43,507
+Also, machines has a language.
+
+12
+00:05:45,587 --> 00:05:57,668
+Compute, like, if you want to, if you want to compute your algorithm, if you want to compute your algorithm.
+
+13
+00:05:58,387 --> 00:06:04,168
+You have to describe your algorithm in terms of the language the machine can understand.
+
+14
+00:06:05,527 --> 00:06:08,627
+So, the language is a set of strings.
+
+15
+00:06:09,627 --> 00:06:25,687
+If your language is accepted or recognized by a finite otomat, then your language is regular language.
+
+16
+00:06:26,451 --> 00:06:34,512
+Regular language is a language which can be recognized or accepted by an automata.
+
+17
+00:06:36,992 --> 00:06:37,432
+Okay.
+
+18
+00:06:37,432 --> 00:06:44,012
+So finite automata actually is a machine.
+
+19
+00:06:45,372 --> 00:06:49,091
+It receives this string.
+
+20
+00:06:50,036 --> 00:07:08,196
+And this finite automat recognizes a language. Okay? It recognizes or accepts only one language and it receives a string and it decides the string is an element of the language or not.
+
+21
+00:07:12,276 --> 00:07:25,635
+If string is not element of the language, then finite automat, if string is not the element of the language, the finite automat results reject.
+
+22
+00:07:26,235 --> 00:07:35,635
+If string is an element of language, now finite automat will result accept.
+
+23
+00:07:39,028 --> 00:07:49,628
+recognize, the string, recognize whether the input string is an element of the language it has.
+
+24
+00:07:51,528 --> 00:07:57,128
+For example, if I tell you a Japanese word, arigatou goza masu.
+
+25
+00:07:58,048 --> 00:08:04,067
+If you don't know the Japanese very well, you cannot say what?
+
+26
+00:08:04,403 --> 00:08:24,984
+Arkadaşlar, is it Turkish or not? No, it is not Turkish. So you reject. But for Japanese, Arkadaşlar, is actually a phrase of the Japanese so he can accept. He says, okay, he recognizes. But for you, no.
+
+27
+00:08:26,067 --> 00:08:46,528
+Merhaba, desem, if I say merhaba, the word merhaba, you recognize. The similar case for finite automates. Finite automates recognize the strings of a language and the language is a set of strings.
+
+28
+00:08:47,796 --> 00:08:57,736
+If this automat recognizes all the strings in a language, then you say that this automat recognizes the language.
+
+29
+00:08:58,836 --> 00:09:07,916
+Okay, so in general, finite automat receives an input and results accept or reject.
+
+30
+00:09:10,067 --> 00:09:28,607
+So, final automata has a five-tuple definition. Be careful. In the exams, we say five-tuple definition, and sometimes students are not able to write this definition.
+
+31
+00:09:37,364 --> 00:09:40,683
+An element that contains five numbers.
+
+32
+00:09:41,484 --> 00:09:42,764
+You see, it is not a set.
+
+33
+00:09:43,704 --> 00:09:46,224
+An element that contains five numbers.
+
+34
+00:09:46,884 --> 00:09:49,004
+So, the first number is Q.
+
+35
+00:09:49,864 --> 00:09:50,943
+Q is the
+
+36
+00:09:50,943 --> 00:09:55,484
+num, Q is the all the states
+
+37
+00:09:55,484 --> 00:09:57,584
+finite automat has.
+
+38
+00:09:59,403 --> 00:10:00,104
+And
+
+39
+00:10:01,716 --> 00:10:08,915
+Sigma is the alphabet of the language the finite automat recognize.
+
+40
+00:10:10,276 --> 00:10:17,076
+And delta is the transition functions between the states of the finite automat.
+
+41
+00:10:17,836 --> 00:10:24,615
+And Q0 is a start state and the F is the set of final states.
+
+42
+00:10:24,615 --> 00:10:27,855
+So when you look at here, Q is a set.
+
+43
+00:10:28,340 --> 00:10:37,300
+Sigma is a set, Delta is a transition table, Q0 is scalar, and F is a set.
+
+44
+00:10:37,880 --> 00:10:46,200
+So when you write the definition of the finite automat, five-duple definition of the finite automat,
+
+45
+00:10:46,200 --> 00:10:54,900
+you need to be very careful about Q, Sigma, and F is a set.
+
+46
+00:10:55,827 --> 00:11:05,528
+Delta is a transition table and the Q0 is just the name of the start state.
+
+47
+00:11:06,087 --> 00:11:19,627
+So from this point, here as you see that transitions table, this delta is the transition table.
+
+48
+00:11:20,032 --> 00:11:22,632
+How many transition table exist?
+
+49
+00:11:23,152 --> 00:11:34,231
+Actually, transitions are defined by the alphabet of the language and all the states in the otomat.
+
+50
+00:11:34,231 --> 00:11:42,852
+So the Cartesian product of the Cartesian product of the all states and the alphabet.
+
+51
+00:11:43,375 --> 00:12:03,576
+Yields, and other states. So, this, it will be a transition table you can, you can define. Actually, for any symbol from the alphabet, you define a transition from one state to the other state.
+
+52
+00:12:05,875 --> 00:12:33,675
+Okay? And Q0 is the start state, and Q0 is element of the Q. Q0 is one of the elements in the set of all states. And F is a set, and F denotes the set of final states. Okay? So...
+
+53
+00:12:33,971 --> 00:12:48,872
+These final states must be a subset of all state q, q state, set of states, q, q set of states.
+
+54
+00:12:50,351 --> 00:12:57,231
+So, if, after these definitions, let us give you an example.
+
+55
+00:12:57,231 --> 00:12:58,692
+Look at here.
+
+56
+00:12:59,187 --> 00:13:02,208
+Bu bir örnek, finit automata.
+
+57
+00:13:26,196 --> 00:13:33,175
+In the finite automat, the number of start state cannot be more than one.
+
+58
+00:13:33,956 --> 00:13:40,615
+I'm repeating, the number of start state cannot be more than one.
+
+59
+00:13:41,515 --> 00:13:41,696
+Okay?
+
+60
+00:13:42,275 --> 00:13:44,935
+So Q0 is the start state.
+
+61
+00:13:46,227 --> 00:13:54,827
+And Q1, Q0, Q1, Q2, Q3, Q4, and Q5, these are all the states.
+
+62
+00:13:55,508 --> 00:14:04,388
+So capital Q is the set of Q0, Q1, Q2, Q3, Q4, and Q5.
+
+63
+00:14:05,488 --> 00:14:05,788
+Okay.
+
+64
+00:14:06,288 --> 00:14:08,648
+And you see this arrow, for example.
+
+65
+00:14:08,768 --> 00:14:13,687
+This arrow is the transition from Q0 to Q1.
+
+66
+00:14:14,611 --> 00:14:19,951
+And this arrow is the transition from Q1 to Q2.
+
+67
+00:14:20,471 --> 00:14:24,911
+And this arrow is the transition from Q2 to Q3.
+
+68
+00:14:25,591 --> 00:14:26,731
+What about this arrow?
+
+69
+00:14:27,351 --> 00:14:31,031
+This arrow is the transition from Q0 to Q5.
+
+70
+00:14:31,031 --> 00:14:37,651
+As you see that there are letters on the arrows.
+
+71
+00:14:38,431 --> 00:14:40,911
+For example, here, it means that
+
+72
+00:14:41,168 --> 00:14:50,487
+You can change the state from Q1 to Q5 by the input letter A.
+
+73
+00:14:51,187 --> 00:15:04,627
+For example, if the state of the machine is at Q1 and if the input is A, then the state of machine will change from Q1 to Q5.
+
+74
+00:15:05,971 --> 00:15:14,831
+The input is B, then the state will change, the state of the machine will change from Q1 to Q2.
+
+75
+00:15:15,711 --> 00:15:29,072
+So, when you look at here, when you look at the Q3, if the input state is B, the state will change.
+
+76
+00:15:29,779 --> 00:15:35,039
+The state of the machine will change from Q3 to Q5.
+
+77
+00:15:35,519 --> 00:15:43,679
+Or if the input state A, the state of the machine will change from Q3 to Q4.
+
+78
+00:15:44,339 --> 00:15:44,480
+Okay.
+
+79
+00:15:45,419 --> 00:15:49,120
+In this case, let us look at the Q5.
+
+80
+00:15:49,679 --> 00:15:51,559
+When you arrive in Q5,
+
+81
+00:15:52,467 --> 00:16:06,907
+For all the state of, sorry, for all different kind of inputs, A and B, so you always stay in state Q5.
+
+82
+00:16:09,027 --> 00:16:12,555
+Okay, but here you see...
+
+83
+00:16:12,755 --> 00:16:36,459
+K4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in aksesine, k4'in akses
+
+84
+00:16:36,596 --> 00:17:03,355
+For example, if the state of the machine is Q3, and if the input is A, and the A is the last symbol of input string, then your state will change from Q3 to Q4, and the input is consumed, so there is no input anymore, so your state is Q4, and it is your final state.
+
+85
+00:17:03,711 --> 00:17:07,771
+And then the automat accepts the input state.
+
+86
+00:17:09,331 --> 00:17:20,311
+Can you write the list of the strings that this automat can recognize?
+
+87
+00:17:21,132 --> 00:17:26,811
+For example, this automat can recognize ABBA, the string ABBA.
+
+88
+00:17:29,811 --> 00:17:30,700
+But...
+
+89
+00:17:30,708 --> 00:17:57,628
+It doesn't recognize the other strings. It recognize only one string. Which string it recognize? A, B, B, A. And what is the language this otomat recognize? It is a set that contains only one string. What is that string? The language of this otomat is a set that contains only A, B, B, A string.
+
+90
+00:17:59,635 --> 00:18:17,255
+Okay, let us see the transitions table. Okay, when you see this is the transition table, it defines the transitions between the states for every input. So this is the input symbols.
+
+91
+00:18:18,163 --> 00:18:43,624
+And these are the states. Assume that you are at Q0 state. Okay, you are at Q0. For input A, you go to Q1. Okay, as you see that you are at the Q0 state. For input A, you go to Q1. And for input B, you go to Q5. Yes, you are here for input B.
+
+92
+00:18:44,211 --> 00:18:48,211
+You go to Q5, you go from Q0 to Q5.
+
+93
+00:18:48,771 --> 00:18:54,652
+If you are at state Q1, okay, look at here, you are at the state Q1.
+
+94
+00:18:55,112 --> 00:19:01,511
+For input A, you go to Q5 from Q1 to Q5.
+
+95
+00:19:01,911 --> 00:19:06,132
+And for input B, you go from Q1 to Q2.
+
+96
+00:19:06,132 --> 00:19:07,756
+You see from...
+
+97
+00:19:07,827 --> 00:19:09,947
+Q1 to Q2.
+
+98
+00:19:10,567 --> 00:19:20,507
+And similarly, if the state of the machine is Q2, for input A, the state of the machine will change from Q2 to Q5.
+
+99
+00:19:20,507 --> 00:19:27,268
+For input B, the state of the machine will change from Q2 to Q3.
+
+100
+00:19:28,228 --> 00:19:33,467
+Similarly, if for input symbol A, the automat,
+
+101
+00:19:34,579 --> 00:19:37,839
+Q3-Q4
+
+102
+00:19:37,839 --> 00:19:40,079
+ve
+
+103
+00:19:40,079 --> 00:19:45,039
+Q3-Q5
+
+104
+00:19:45,039 --> 00:19:45,960
+ve
+
+105
+00:19:45,960 --> 00:20:01,679
+Q4
+
+106
+00:20:01,680 --> 00:20:05,820
+A and B, directly it goes to Q5.
+
+107
+00:20:07,220 --> 00:20:12,320
+As you see that there are two letters on this transition.
+
+108
+00:20:12,599 --> 00:20:21,700
+It means that for input A and for input B, the state of the machine will change from Q4 to Q5.
+
+109
+00:20:22,599 --> 00:20:28,480
+Similarly, in the Q5, in the state Q5, for the input A,
+
+110
+00:20:28,884 --> 00:20:42,344
+And for either for input B, the state will change from Q5 to Q5 means state will not change. It will stay at the same state.
+
+111
+00:20:43,564 --> 00:20:55,423
+So this is the transition table. If you are given this table, you could, can you draw the NFA or DFA?
+
+112
+00:20:59,892 --> 00:21:03,711
+Can you draw this finite automat from this transition table?
+
+113
+00:21:04,932 --> 00:21:05,872
+What is absent?
+
+114
+00:21:06,952 --> 00:21:16,771
+As you notice that in this transition table, you are not given the information about which state is the start state.
+
+115
+00:21:17,715 --> 00:21:21,735
+You don't see which state is start state.
+
+116
+00:21:22,215 --> 00:21:26,056
+But here, the arrow denotes the start state.
+
+117
+00:21:26,435 --> 00:21:29,795
+That is why start state is another information.
+
+118
+00:21:30,355 --> 00:21:32,035
+This is just the transition table.
+
+119
+00:21:32,875 --> 00:21:33,036
+Okay.
+
+120
+00:21:33,395 --> 00:21:36,875
+In the transition table, start state is not determined.
+
+121
+00:21:38,415 --> 00:21:39,175
+It's not given.
+
+122
+00:21:40,395 --> 00:21:40,835
+Anyway.
+
+123
+00:21:42,259 --> 00:21:49,079
+You can think of the transition function as being the program of otomat, like it is the language of otomat.
+
+124
+00:21:49,079 --> 00:21:54,839
+So actually, it is the being of a program of otomat.
+
+125
+00:21:55,079 --> 00:21:58,519
+And this function tells us what the machine...
+
+126
+00:22:05,104 --> 00:22:06,304
+Q4
+
+127
+00:22:03,923 --> 00:22:05,923
+Bu programı bir şekilde,
+
+128
+00:22:05,923 --> 00:22:11,923
+ve bir şey yapabilecek bir şey yapabilecek.
+
+129
+00:22:11,923 --> 00:22:15,923
+Yani,
+
+130
+00:22:15,923 --> 00:22:18,923
+R denotes
+
+131
+00:22:18,923 --> 00:22:21,923
+a state
+
+132
+00:22:21,923 --> 00:22:23,923
+q
+
+133
+00:22:23,923 --> 00:22:25,923
+ve A
+
+134
+00:22:25,923 --> 00:22:27,923
+as a
+
+135
+00:22:27,923 --> 00:22:28,923
+symbol
+
+136
+00:22:28,923 --> 00:22:29,923
+alfabet
+
+137
+00:22:30,240 --> 00:22:41,019
+If the final otomat M is in state R and read the symbol A and then it switch its state from R to state R A.
+
+138
+00:22:41,819 --> 00:22:45,879
+So this here, delta R A, this is the transition.
+
+139
+00:22:46,579 --> 00:22:48,639
+Maybe equal to R, maybe.
+
+140
+00:22:49,599 --> 00:22:54,259
+For example, let us consider this example.
+
+141
+00:22:54,259 --> 00:22:56,039
+A is the set.
+
+142
+00:22:56,336 --> 00:22:58,336
+Look at this language.
+
+143
+00:23:00,336 --> 00:23:08,655
+This language contains words such that each word is a binary string containing odd number of ones.
+
+144
+00:23:09,255 --> 00:23:17,415
+So you have a set of strings and each string will have odd number of ones.
+
+145
+00:23:18,695 --> 00:23:20,816
+So this is A is the language.
+
+146
+00:23:21,779 --> 00:23:30,539
+Can we design or find the automat recognizes this? Yes, it is possible.
+
+147
+00:23:30,539 --> 00:23:45,659
+Design, the final automat reads the input string W and it starts reads the input string from left to right.
+
+148
+00:23:46,003 --> 00:24:11,723
+Ok, and keeps the track of the number ones, as seen, and counts. If the number of counts is odd, the automat will be on the final state. If the number of odds is not odd, then
+
+149
+00:24:13,875 --> 00:24:15,875
+Final Automat'a
+
+150
+00:24:15,875 --> 00:24:17,875
+bu final state
+
+151
+00:24:17,875 --> 00:24:19,875
+ve
+
+152
+00:24:19,875 --> 00:24:21,875
+bu
+
+153
+00:24:21,875 --> 00:24:23,875
+ilişkilerin
+
+154
+00:24:23,875 --> 00:24:25,875
+ve
+
+155
+00:24:25,875 --> 00:24:27,875
+final state
+
+156
+00:24:27,875 --> 00:24:29,875
+denemiydi
+
+157
+00:24:29,875 --> 00:24:39,372
+bu
+
+158
+00:24:39,604 --> 00:24:49,563
+And for every integer means input indicating the reading the symbols of the input string from left to right.
+
+159
+00:24:51,003 --> 00:24:55,043
+So how can we design? Design is...
+
+160
+00:24:58,884 --> 00:25:02,523
+So you can design the finite automat.
+
+161
+00:25:02,784 --> 00:25:08,944
+many alternativli, but sometimes you can design efficiently.
+
+162
+00:25:09,564 --> 00:25:11,704
+For example, this is a very good example.
+
+163
+00:25:12,484 --> 00:25:18,384
+So if you have the inputs, think 101010, let's say 1010.
+
+164
+00:25:18,384 --> 00:25:22,384
+So if there are two...
+
+165
+00:25:24,147 --> 00:25:27,567
+Ones, so there are even number of ones.
+
+166
+00:25:28,087 --> 00:25:35,987
+When you have even number of ones, you see, this is Q0 start state, you go to Q1 and you come back to Q0.
+
+167
+00:25:36,507 --> 00:25:47,427
+So Q0 denotes the number of one is even, Q1 denotes the number of one is odd.
+
+168
+00:25:48,167 --> 00:25:50,647
+For example, this is the input.
+
+169
+00:25:51,220 --> 00:26:18,508
+İmput 0 ve başlangıçta bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nereyde bir nere
+
+170
+00:26:18,516 --> 00:26:28,896
+The number of one is even, so you are at the even state, q1.
+
+171
+00:26:29,716 --> 00:26:32,996
+In this state means the number of one is even.
+
+172
+00:26:33,996 --> 00:26:36,316
+In another one, you go back.
+
+173
+00:26:37,332 --> 00:27:01,532
+So now there are two ones. So the number of ones is even. You are at Q0 state. So you can design this automat. This automat recognizes which language? This language A. A is the language which has strings.
+
+174
+00:27:02,483 --> 00:27:10,384
+Each string is a binary, each string is a binary string containing odd number of ones.
+
+175
+00:27:11,223 --> 00:27:17,144
+And this is the automat that recognizes the language A.
+
+176
+00:27:21,203 --> 00:27:45,203
+Okay, what about the transitions table? Okay, the transitions table from here, you can write the transitions table. If your state is Q0, for input 0, it will remain same. For input 1, it will change the state from Q0 to Q1. Q0 means even number of...
+
+177
+00:27:45,556 --> 00:27:49,135
+Q1, Q1 means odd number of one.
+
+178
+00:27:49,656 --> 00:27:51,115
+So let us look at here.
+
+179
+00:27:51,716 --> 00:27:55,736
+So what you see, Q0 and input for zero.
+
+180
+00:27:56,316 --> 00:27:58,996
+So the number of ones will not change.
+
+181
+00:27:59,395 --> 00:28:04,355
+So if you are state in the Q1, Q0, so it really gives you the Q0.
+
+182
+00:28:04,976 --> 00:28:12,115
+For input one, the state of what the automat will change from Q0 to Q1.
+
+183
+00:28:12,463 --> 00:28:14,463
+İNP0'a bir şekilde,
+
+184
+00:28:14,463 --> 00:28:16,463
+bir şekilde bir şekilde değiştirecek
+
+185
+00:28:16,463 --> 00:28:29,675
+bir şekilde bir şekilde
+
+186
+00:28:30,291 --> 00:28:40,851
+And for input 1, so input is the 1, so the number of 1s in the string will, the number of 1 will be changed.
+
+187
+00:28:41,451 --> 00:28:45,271
+So the state must change, according to state must change.
+
+188
+00:28:45,671 --> 00:28:51,271
+So the state of the machine for input 1 will change from Q1 to Q0.
+
+189
+00:28:51,651 --> 00:28:53,491
+So these are the transitions.
+
+190
+00:28:54,211 --> 00:28:56,911
+These are the, this is the transition table.
+
+191
+00:28:56,911 --> 00:28:58,291
+As you see that this is the.
+
+192
+00:28:58,291 --> 00:29:22,591
+transition table, this transition or this transition table similar. You can consider to use, you can consider the usage of this transition table or sometimes you can consider the usage of this, but I strongly suggest you to use the transition table instead of these transitions because these transitions may be not easy to see there.
+
+193
+00:29:22,900 --> 00:29:34,800
+Maybe not easy to see how machine behaves, but this transition helps you to see the behavior of the machine.
+
+194
+00:29:35,519 --> 00:29:47,800
+And here M is the definition of the machine. M denotes the machine. And this is the five-tuple definition of machines. Q is the set of the states. Sigma is the set of the...
+
+195
+00:29:48,531 --> 00:30:01,111
+Alphabet, alf, and this is the alphabet, it's a set of symbols, and the delta is the transition table, and Q0 is the start state, and the F is the final state.
+
+196
+00:30:01,631 --> 00:30:08,891
+When you look at here, what is the start state? Q0 is the start state, because there is a row here.
+
+197
+00:30:29,423 --> 00:30:56,844
+A set of the final state, so it must be written as a state, and the state has only one element. Q0 is the start state and element of the state Q, and the Q is all the states in the machine. How many states here? There are two states here. So all the states in the machine is Q0 and Q1, and the Q is a set.
+
+198
+00:30:57,364 --> 00:31:21,364
+SIGMA is the alphabet. You see that the transitions occur for 0 and 1. The letters you see on the transition are the elements of the alphabet. So the alphabet is 0 and 1. So these are very simple definitions of the...
+
+199
+00:31:22,771 --> 00:31:30,771
+DFA, okay, so every state, there is a transition for every input, for every simple in the alphabet.
+
+200
+00:31:31,411 --> 00:31:39,471
+So if you are state, if you are at the state Q0, for input A and for input B, the state will change.
+
+201
+00:31:40,011 --> 00:31:44,291
+Okay, for input A, the state will change from Q0 to Q1.
+
+202
+00:31:44,291 --> 00:31:48,391
+For input B, the state will change from Q0 to Q5.
+
+203
+00:31:48,756 --> 00:31:55,336
+And you see that there are transitions and the letters on the transitions are A and B.
+
+204
+00:31:55,756 --> 00:32:04,396
+So the alphabet of the language this machine recognizes is sigma A and B.
+
+205
+00:32:04,976 --> 00:32:06,116
+Okay, any question?
+
+206
+00:32:10,003 --> 00:32:26,163
+Okay, let us continue. Look at now, this is the input string, ABBA, this is the input string, and automat starts read the input strings from left to right. I am repeating.
+
+207
+00:32:27,476 --> 00:32:33,236
+Otomat starts reading the input string from left to right.
+
+208
+00:32:33,836 --> 00:32:35,096
+This is the head.
+
+209
+00:32:35,236 --> 00:32:41,856
+Head is positioned at the beginning of the input.
+
+210
+00:32:42,716 --> 00:32:45,096
+And you have the state.
+
+211
+00:32:45,496 --> 00:32:50,016
+At the beginning, the state of the machine is Q0.
+
+212
+00:32:50,556 --> 00:32:51,776
+You are here.
+
+213
+00:32:51,896 --> 00:32:53,456
+You are at the Q0 state.
+
+214
+00:32:54,900 --> 00:33:07,700
+The head of the tape is, sorry, the head of the machine is at the beginning of the tape, and inside the tape, you have the string.
+
+215
+00:33:08,620 --> 00:33:08,820
+Okay?
+
+216
+00:33:09,540 --> 00:33:11,880
+You can consider the tape as a memory.
+
+217
+00:33:13,460 --> 00:33:19,860
+Okay, for input symbol A, actually, you change your state.
+
+218
+00:33:20,339 --> 00:33:25,339
+You change the machine state from Q0 to Q1 for input A.
+
+219
+00:33:25,339 --> 00:33:29,339
+Now, for input B,
+
+220
+00:33:33,652 --> 00:33:38,432
+Now, for input B, again, you change the state from Q1 to Q2.
+
+221
+00:33:39,271 --> 00:33:44,672
+For input B, again, you change the state from Q2 to Q3.
+
+222
+00:33:45,612 --> 00:33:51,892
+And for input A, you change the state from Q3 to Q4.
+
+223
+00:33:52,211 --> 00:33:56,211
+And as you see that, input is consumed.
+
+224
+00:33:57,112 --> 00:33:57,771
+Finish it.
+
+225
+00:33:59,763 --> 00:34:01,803
+And there is no input anymore.
+
+226
+00:34:02,703 --> 00:34:08,223
+And the state, current state, is the final state.
+
+227
+00:34:08,443 --> 00:34:14,123
+So it means that ABBA, this string, is accepted.
+
+228
+00:34:16,483 --> 00:34:18,264
+What about this string?
+
+229
+00:34:19,983 --> 00:34:22,884
+At the beginning, you are at the start state.
+
+230
+00:34:24,179 --> 00:34:47,099
+For input A, you change the state from Q0 to Q1. For input B, you change the state from Q1 to Q2. And for input A, for input A, okay, like this, you change the state from Q2 to Q5. And the input finished.
+
+231
+00:34:48,115 --> 00:34:55,275
+Ve bu k5'in k5'in k5'in değil.
+
+232
+00:35:15,603 --> 00:35:22,884
+In other words, ABA is not the element of the language this automat recognizes.
+
+233
+00:35:24,283 --> 00:35:32,583
+What about the empty string? You see that empty string means no empty. So input is empty.
+
+234
+00:35:33,503 --> 00:35:41,363
+At the beginning, you are at the state Q0 and now input is finished.
+
+235
+00:35:42,452 --> 00:35:53,552
+So, your state is at Q0, so you reject the empty string, because Q0 is not a final state, and there is nothing in the input.
+
+236
+00:35:54,052 --> 00:35:54,252
+Okay?
+
+237
+00:35:55,572 --> 00:35:56,311
+Any question?
+
+238
+00:35:59,512 --> 00:36:00,252
+Okay.
+
+239
+00:36:00,851 --> 00:36:01,992
+What about this?
+
+240
+00:36:02,592 --> 00:36:06,572
+Finally, the language of this automat is this.
+
+241
+00:36:08,412 --> 00:36:09,552
+This is the L.
+
+242
+00:36:09,952 --> 00:36:28,952
+Contains only one string, ABBA, and this language, actually, is it language? Yes, it is language. Language is the set of the strings. You do not need, the set could have no string or could have...
+
+243
+00:36:29,492 --> 00:36:39,472
+Many strings, or could have only one string, but in this case, the language has only one string, and it is a language, because it is set, set of string.
+
+244
+00:36:40,392 --> 00:36:44,152
+And this is the language of this automat, recognized.
+
+245
+00:36:51,923 --> 00:36:53,144
+What about this one?
+
+246
+00:36:55,463 --> 00:36:56,623
+Accept string.
+
+247
+00:36:58,163 --> 00:37:04,144
+To accept a string, you have to consume the scan, all the input string.
+
+248
+00:37:04,783 --> 00:37:07,163
+And the last state must be accepting.
+
+249
+00:37:07,783 --> 00:37:12,283
+To reject the string, you have to consume all the string.
+
+250
+00:37:12,903 --> 00:37:17,123
+And the last state must be not a final state.
+
+251
+00:37:17,536 --> 00:37:19,756
+Or, non-accepting states.
+
+252
+00:37:22,615 --> 00:37:26,176
+What about this machine?
+
+253
+00:37:26,436 --> 00:37:27,056
+Look at here.
+
+254
+00:37:27,716 --> 00:37:30,916
+The number of final states increased
+
+255
+00:37:30,916 --> 00:37:34,216
+from one to three.
+
+256
+00:37:34,960 --> 00:37:44,420
+Q0 is the start state, sorry, Q0 is the final state, Q2 is final state, and Q4 is final state.
+
+257
+00:37:44,560 --> 00:37:53,579
+Why? Q0, Q2, and Q4 states are double circled. Double circle means final state.
+
+258
+00:37:53,720 --> 00:37:56,659
+So we have the three final states.
+
+259
+00:38:02,963 --> 00:38:04,764
+is given here.
+
+260
+00:38:06,224 --> 00:38:17,724
+This otomat can recognize the empty string, can recognize the string AB, and they also can recognize the string ABBA.
+
+261
+00:38:22,228 --> 00:38:23,228
+Okay?
+
+262
+00:38:27,228 --> 00:38:30,228
+Okay, what about the input string?
+
+263
+00:38:30,228 --> 00:38:32,228
+Empty, for empty string,
+
+264
+00:38:33,228 --> 00:38:38,228
+at the beginning of the, at the beginning, the machine is at the Q0 state,
+
+265
+00:38:38,228 --> 00:38:40,228
+and for empty input,
+
+266
+00:38:41,228 --> 00:38:48,228
+the state doesn't change, and you are still at the Q0, and the Q0 is a final state, so empty string is
+
+267
+00:38:48,947 --> 00:38:50,768
+Recognize it, accept it.
+
+268
+00:38:52,887 --> 00:38:53,228
+Okay?
+
+269
+00:38:53,867 --> 00:38:55,307
+So what about this
+
+270
+00:38:55,307 --> 00:38:59,568
+automat?
+
+271
+00:38:59,568 --> 00:39:03,207
+You see that, you see only the
+
+272
+00:39:03,207 --> 00:39:06,467
+one final state
+
+273
+00:39:06,467 --> 00:39:09,528
+and two non-final states
+
+274
+00:39:09,528 --> 00:39:11,980
+and the transitions
+
+275
+00:39:13,556 --> 00:39:17,556
+A ve B'ye alfabeti.
+
+276
+00:39:17,556 --> 00:39:19,556
+Bu otomatik alfabeti.
+
+277
+00:39:19,556 --> 00:39:21,556
+A ve B'ye alfabeti.
+
+278
+00:39:21,556 --> 00:39:23,556
+Ve bu otomatik.
+
+279
+00:39:23,556 --> 00:39:25,556
+Q0, Q1 ve Q2.
+
+280
+00:39:25,556 --> 00:39:29,556
+Ve bu otomatik.
+
+281
+00:39:29,556 --> 00:39:37,556
+Bir otomatik.
+
+282
+00:39:37,940 --> 00:39:41,779
+So, there will be three rows in the transition table.
+
+283
+00:39:42,739 --> 00:39:46,599
+And the final states, there is only one state, Q1.
+
+284
+00:39:47,380 --> 00:39:50,920
+In the final state set, there is only Q1.
+
+285
+00:39:52,440 --> 00:39:56,639
+And the final, what else left?
+
+286
+00:39:57,299 --> 00:39:57,480
+Yeah.
+
+287
+00:39:59,519 --> 00:40:00,699
+That is all.
+
+288
+00:40:01,204 --> 00:40:07,264
+So, when you look at this, what you see, this is the language.
+
+289
+00:40:10,084 --> 00:40:17,464
+This automat, recognize the language, starts with A and ends with B.
+
+290
+00:40:19,044 --> 00:40:23,144
+So, okay, for example, AAB.
+
+291
+00:40:24,019 --> 00:40:36,900
+is the element of this language. Let's see. At the beginning, you are at the state of Q0. For input A, you remain at Q0. You change the state from Q0 to Q0.
+
+292
+00:40:37,679 --> 00:40:51,480
+For input A, again, you change the state from Q0 to Q0. And for input B, you change the state from Q1 to Q1.
+
+293
+00:40:52,052 --> 00:41:03,012
+ve bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda
+
+294
+00:41:03,012 --> 00:41:10,932
+bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda da bu konuda
+
+295
+00:41:19,092 --> 00:41:22,132
+Of the machine changed from Q0 to Q1.
+
+296
+00:41:23,192 --> 00:41:30,672
+And for input A, the state of the machine changed from Q1 to Q2.
+
+297
+00:41:31,152 --> 00:41:38,251
+And for input B, the state of the machine changed from Q1 to Q2 to Q2.
+
+298
+00:41:38,851 --> 00:41:41,251
+So the state doesn't change.
+
+299
+00:41:41,251 --> 00:41:44,012
+And the input finished, as you see.
+
+300
+00:41:44,480 --> 00:41:48,579
+So, the state of the machine is not a final state.
+
+301
+00:41:48,860 --> 00:41:51,840
+So, BAB is rejected.
+
+302
+00:41:52,159 --> 00:41:58,299
+So, BAB is not the element of the language this automat recognize.
+
+303
+00:42:00,619 --> 00:42:05,299
+And the language this automat recognize is given like this.
+
+304
+00:42:05,299 --> 00:42:06,840
+So, this is the set.
+
+305
+00:42:07,799 --> 00:42:09,019
+Or, this is the set.
+
+306
+00:42:10,199 --> 00:42:11,619
+And B.
+
+307
+00:42:12,211 --> 00:42:19,251
+AB, AAB, AAAB, AAB, quadruple AB, something like this.
+
+308
+00:42:19,371 --> 00:42:24,452
+All strings is the element of this language.
+
+309
+00:42:24,871 --> 00:42:27,311
+What is the size of this language is infinite.
+
+310
+00:42:30,791 --> 00:42:31,392
+Infinite.
+
+311
+00:42:31,791 --> 00:42:35,692
+So the size of this language is infinite.
+
+312
+00:42:35,692 --> 00:42:37,675
+As you see that...
+
+313
+00:42:37,684 --> 00:42:41,284
+N starts from zero and goes to infinity.
+
+314
+00:42:41,844 --> 00:42:42,024
+Okay?
+
+315
+00:42:43,864 --> 00:42:59,024
+And you see that the number of, you have only two, three, you have only three states and you have a language which has this infinite size.
+
+316
+00:42:59,644 --> 00:43:00,044
+Why?
+
+317
+00:43:00,324 --> 00:43:02,104
+Because there are loops here.
+
+318
+00:43:02,724 --> 00:43:05,024
+These loops creates...
+
+319
+00:43:05,876 --> 00:43:12,876
+bu
+
+320
+00:43:28,563 --> 00:43:54,543
+Do you see the names on the transitions like letters, symbols? Do you see? On this transition, there is one symbol, one. On this transition, there is symbol one. So you don't see the other symbol. So the alphabet of this automat is, sigma is a set that contains only one. Okay.
+
+321
+00:43:55,284 --> 00:43:59,724
+What kind of language this machine accepts?
+
+322
+00:43:59,724 --> 00:44:19,804
+Actually, this machine accepts empty strings, double one, or even, you see, the number of one is divisible by two.
+
+323
+00:44:21,043 --> 00:44:41,036
+Bu, bu
+
+324
+00:44:47,219 --> 00:45:11,900
+We have also the extended transitions, definitions. Do you remember the transitions? We had the delta. Delta means you have a Q. For example, you have a delta star. In the past, we learned this in the previous slides. We have the delta. This is the state. This is the input string.
+
+325
+00:45:12,724 --> 00:45:27,504
+Sorry, this is the influence. So we use it. Okay. I think before we get something wrong. One second. You have to fix this. One second. Yes.
+
+326
+00:45:43,507 --> 00:45:44,427
+Any question?
+
+327
+00:45:54,324 --> 00:46:12,204
+Okay. Delta star denotes the extended transition function. At the beginning, you have the transition function and transition function was receiving only the state and the symbol. Let us go to the previous slides. One second.
+
+328
+00:46:18,164 --> 00:46:18,724
+Oops.
+
+329
+00:46:20,724 --> 00:46:21,284
+Okay.
+
+330
+00:46:30,900 --> 00:46:32,780
+Definition of Transitions.
+
+331
+00:46:34,620 --> 00:46:36,520
+Okay, you see that.
+
+332
+00:46:37,140 --> 00:46:39,120
+Here is the definition of transition.
+
+333
+00:46:39,320 --> 00:46:43,380
+Let me write this like this.
+
+334
+00:46:54,931 --> 00:46:57,851
+Ok, in here you see that
+
+335
+00:47:02,228 --> 00:47:09,347
+You see that Q0 is the state and the second argument is a symbol.
+
+336
+00:47:10,467 --> 00:47:14,367
+It's not a string and the delta denotes the transition.
+
+337
+00:47:14,367 --> 00:47:16,248
+So this is the transition.
+
+338
+00:47:17,327 --> 00:47:21,188
+You are at the state Q0 for input symbol 0.
+
+339
+00:47:22,108 --> 00:47:25,288
+You change the output state is Q0.
+
+340
+00:47:25,947 --> 00:47:28,108
+You are at the state Q1.
+
+341
+00:47:28,500 --> 00:47:48,699
+For input symbol 0, you remain, you go to the state Q1. You are at the state Q0. For input symbol 1, this transition function yields state Q2. So this is the transition functions. Okay? Define it like this.
+
+342
+00:47:50,059 --> 00:47:55,519
+An extended transition function is different.
+
+343
+00:47:56,851 --> 00:48:05,871
+Translation function receives only the symbols, extended transition function receives string, not symbol.
+
+344
+00:48:05,871 --> 00:48:07,491
+Okay? Okay.
+
+345
+00:48:09,491 --> 00:48:15,711
+Let's go to the where we state.
+
+346
+00:48:19,443 --> 00:48:42,903
+Okay. So in the extended transition function, you have the input state and the second input is string, not a symbol. And it yields a state. Okay. For example, you are at the state Q0 and input is AB.
+
+347
+00:48:44,403 --> 00:48:51,403
+You are at state Q0, input A, you go here, input B, you go here, and you reach Q2.
+
+348
+00:48:51,903 --> 00:48:55,503
+So this extended transition function will yield Q2.
+
+349
+00:49:00,436 --> 00:49:03,356
+Okay, very simple extension.
+
+350
+00:49:03,876 --> 00:49:05,016
+What about this one?
+
+351
+00:49:05,696 --> 00:49:09,856
+You are at the state Q0 for this input.
+
+352
+00:49:11,996 --> 00:49:14,996
+This extended transition functions will yield what?
+
+353
+00:49:15,356 --> 00:49:20,116
+You are at Q0 for A and B.
+
+354
+00:49:20,336 --> 00:49:21,356
+There are two options.
+
+355
+00:49:21,596 --> 00:49:22,996
+For A, you go here.
+
+356
+00:49:23,436 --> 00:49:25,176
+For B, you go here.
+
+357
+00:49:25,356 --> 00:49:26,536
+Third symbol is B.
+
+358
+00:49:26,776 --> 00:49:27,576
+You go here.
+
+359
+00:49:28,211 --> 00:49:51,884
+Ve bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzey
+
+360
+00:50:00,000 --> 00:50:25,000
+Okay. What about this input string BBA? You are at state Q1. The state no need to be Q0. So this is the, you can define the extended transition function for any state. So at this state Q1, for the input BBA,
+
+361
+00:50:25,588 --> 00:50:35,048
+B, BA, you go to the Q4, so this extended transition function will results in state Q4.
+
+362
+00:50:40,083 --> 00:50:40,583
+Ok.
+
+363
+00:50:42,143 --> 00:50:43,583
+So, in general,
+
+364
+00:50:49,619 --> 00:51:13,480
+Okay. Here, let us have 10-minute break. It is time to have 10-minute break. Before having 10-minute break, I would like to listen to you and your feedback about the course. Are you happy with the course currently? Is there anything else you want to declare?
+
+365
+00:51:15,507 --> 00:51:40,867
+Arkadaşlar, herhangi bir hoşunuza gitmeyen noktası var mı dersin? Veyahut da dersin işlenişi nasıl? Anlaşılıyor mu her şey? Evet, interaktif olalım lütfen. Cevap verin. Diyorsunuz beni değil mi?
+
+366
+00:51:46,804 --> 00:52:06,144
+Daha önceden söylemiştim, bilmiyorum size daha önceden söyledim mi? Ders ne kadar çok derste katılım olursa, interaktif düzeyi ne kadar yüksek olursa, sınavlar da o derecede kolay olur.
+
+367
+00:52:06,144 --> 00:52:13,404
+Eğer bir şeyi bilmiyorsanız sorarsınız, eğer sormuyorsanız demek ki biliyorsunuz demektir.
+
+368
+00:52:13,972 --> 00:52:35,412
+Anlamadığın bir kısım varsa sorarsın. Her şeyi anlıyorsan sormazsın. Soru sormuyorsanız o zaman her şeyi anladınız demektir. O zaman ben de sınavda her şeyi sorabilirim. Ona göre sınavın zorluğu da siz belirliyorsunuz. Yani şu anki davranışınız belirliyor.
+
+369
+00:52:35,412 --> 00:52:39,952
+Tamam. Bunu iyice bir düşünün 10 dakika.
+
+370
+00:52:41,331 --> 00:52:44,791
+10 dakika sonra görüşürüz arkadaşlar.
+
+371
+00:52:46,791 --> 00:52:48,611
+Para veriyoruz.
+
+372
+01:04:09,715 --> 01:04:14,215
+Evet arkadaşlar, ara süremiz bitti. Devam edelim.
+
+373
+01:04:15,255 --> 01:04:26,715
+In general, the extended transition function implies that there is a walk between transition Q and Q''.
+
+374
+01:04:36,980 --> 01:04:38,380
+Q' state.
+
+375
+01:04:38,859 --> 01:04:43,519
+So, there are many state transitions.
+
+376
+01:04:44,440 --> 01:04:47,719
+At the end, you reach the state Q'
+
+377
+01:04:47,719 --> 01:04:58,799
+So, you can consider that extended transition function defines a wall from state Q2.
+
+378
+01:04:59,572 --> 01:05:19,532
+State Q''. So this is the state. So this is the word, sigma1, sigma2, til sigma k. These are the symbols. So this word or this string contains key symbols. So for each input symbol,
+
+379
+01:05:20,340 --> 01:05:46,300
+The state of the machine change. So you are at state Q for input symbol sigma 1. You are at this state. Now for input symbol sigma 2, you are at this state. At the end, you reach, at the end, you are at this state. For input symbol K, you reach the state Q prime.
+
+380
+01:05:47,795 --> 01:06:05,995
+So, as you notice that this is the walk. It is not easy to show all the states here. So, sometimes we represent this walk as a transition. Let's say this is the state Q.
+
+381
+01:06:06,643 --> 01:06:11,963
+Transition, this is the work, you reach state Q''.
+
+382
+01:06:11,963 --> 01:06:16,483
+So you write the string on the transition.
+
+383
+01:06:16,483 --> 01:06:18,803
+Okay, this is the transition.
+
+384
+01:06:18,803 --> 01:06:23,283
+But what kind of transition is this? This is extended transition.
+
+385
+01:06:23,283 --> 01:06:28,803
+And this extended transition is defined by the extended transition function.
+
+386
+01:06:32,244 --> 01:06:54,064
+Okay. And the language accepted by DFA. So the language accepted by automata. Automata is plural. Automata is singular. The language accepted by an automata M is denoted by LM. So it means that this is the language of
+
+387
+01:06:54,483 --> 01:06:56,483
+M, M, M.
+
+388
+01:06:56,483 --> 01:07:02,483
+LM means the language of M and contains all the string.
+
+389
+01:07:02,483 --> 01:07:08,483
+This language contains all the strings accepted by M.
+
+390
+01:07:08,483 --> 01:07:09,483
+Okay?
+
+391
+01:07:09,483 --> 01:07:14,483
+So let's say that there is another language, there is a language,
+
+392
+01:07:14,483 --> 01:07:20,483
+language prime is also accepted by the DFA M.
+
+393
+01:07:20,483 --> 01:07:21,483
+Okay?
+
+394
+01:07:22,195 --> 01:07:35,395
+machine, deterministic finite automat M, if the language of machine is equal to L prime.
+
+395
+01:07:36,515 --> 01:07:43,835
+Okay, so we have the finite automat, it recognizes the language L M.
+
+396
+01:07:44,659 --> 01:08:11,979
+We have a DFA machine. It recognizes L' machine. And then if DFA machine's language is similar, is the same as the machine language, and then say that the language of the DFA machine is LM, actually an otomat accepts only, accept one and only one language.
+
+397
+01:08:12,400 --> 01:08:20,440
+ve bu idi
+
+398
+01:08:20,440 --> 01:08:24,440
+let me fix it one second
+
+399
+01:08:34,260 --> 01:08:37,579
+Tamam, bu konfliktör. Bu konfliktör.
+
+400
+01:08:37,579 --> 01:08:39,900
+Let me make it maybe a different color.
+
+401
+01:08:44,500 --> 01:08:45,100
+Tamam.
+
+402
+01:08:50,036 --> 01:09:05,076
+Otomat, otomat, only one language, and the language can be accepted by a number of otomat, many machines.
+
+403
+01:09:05,076 --> 01:09:14,275
+Okay? A machine can accept only one language, and the one language can be accepted by many machines.
+
+404
+01:09:19,188 --> 01:09:33,488
+So, for DFA, the definition of DFA, it has a five-tuple definition, states, alfabet, transitions, start state, and the final states.
+
+405
+01:09:34,288 --> 01:09:38,068
+So, the language of this machine can be written like this.
+
+406
+01:09:38,888 --> 01:09:40,728
+This is the language of the machine.
+
+407
+01:09:41,728 --> 01:09:43,228
+It is the string.
+
+408
+01:09:44,243 --> 01:10:10,683
+String is the element of the cleanest star operation on the alphabet. Alphabet, cleanest star operation applied on alphabet is the universe language. So W is element of the universe language. So all the possible strings generated using the alphabet sigma such that, here is such that
+
+409
+01:10:11,188 --> 01:10:18,288
+You are at the state, this is the start state for all the string.
+
+410
+01:10:19,188 --> 01:10:33,927
+This string is such that the extended transition function of the strings for the states Q0 results a state in a final, results a state which is the element of the final state.
+
+411
+01:10:34,407 --> 01:10:37,747
+So this is the definition of the language.
+
+412
+01:10:38,176 --> 01:10:50,456
+In Turkish, alfabemiz var. Alfabemize klinistar operasyonu uyguladığımızda, alfabenin klinistar operasyonu demek bir dildir bu da.
+
+413
+01:10:50,456 --> 01:11:00,336
+Ve bütün muhtemel, mümkün diziler bu alfabe klinistar operasyonu içindedir.
+
+414
+01:11:05,524 --> 01:11:14,463
+stringi aldığınızda ve bunu genişletilmiş geçiş fonksiyonuna extended transition
+
+415
+01:11:14,463 --> 01:11:21,724
+uyguladığınızda uyguladığınızda her zaman bir
+
+416
+01:11:21,971 --> 01:11:34,051
+Final State'e ulaşacaksınız. Yani W öyle bir string ki şu transition'lar sonucunda her zaman bir Final State'e ulaşacaksınız.
+
+417
+01:11:34,051 --> 01:11:49,131
+İşte bu sizi Final State'e ulaştıran bütün mümkün W string'lerin kümesine bu makinenin, M makinesinin dili diyoruz.
+
+418
+01:11:49,524 --> 01:12:03,524
+In other words, as you see this representation, you are at this state for the all possible string W, you reach the final state.
+
+419
+01:12:03,524 --> 01:12:16,524
+So the set of all possible strings that makes, that change the state of the machine from Q0 to Q' is the language of...
+
+420
+01:12:17,235 --> 01:12:18,155
+Meksi.
+
+421
+01:12:22,003 --> 01:12:33,844
+Ok, the rejected, the language rejected by the machine, actually it is the complement of the language.
+
+422
+01:12:33,844 --> 01:12:40,463
+So, the LM is accepted by the language and when it is rejected,
+
+423
+01:12:41,108 --> 01:12:43,908
+Bu, birçok birçok birçok.
+
+424
+01:12:43,908 --> 01:12:47,708
+Bu, birçok birçok.
+
+425
+01:13:06,579 --> 01:13:28,380
+For all transitions, for all possible input strings, your last state will not be final states, then all the strings constructs the complement of the language of the machine.
+
+426
+01:13:32,756 --> 01:13:39,756
+Bu, bu model olarak bu model olarak
+
+427
+01:13:39,756 --> 01:13:40,756
+Bir soru var mı?
+
+428
+01:13:45,779 --> 01:13:48,779
+Tamam, şimdi...
+
+429
+01:13:51,219 --> 01:13:51,799
+Evet.
+
+430
+01:13:56,020 --> 01:13:57,619
+Sesin az geliyor.
+
+431
+01:13:58,440 --> 01:14:00,020
+DFA ile EFE ne demek?
+
+432
+01:14:01,699 --> 01:14:02,119
+DFA?
+
+433
+01:14:05,119 --> 01:14:07,260
+Can you repeat your question, please?
+
+434
+01:14:12,948 --> 01:14:13,948
+I don't hear you.
+
+435
+01:14:16,307 --> 01:14:17,208
+Can you write?
+
+436
+01:14:27,028 --> 01:14:39,028
+Ok, finit automat, ok, it is automat, it contains the states and the transitions, final states and the start state and also on each transition there is symbol.
+
+437
+01:14:40,068 --> 01:14:44,448
+DFA is the deterministic finite automat, ok, deterministic.
+
+438
+01:14:45,548 --> 01:14:52,148
+We will see the difference, what is deterministic finite automat and what is non-deterministic finite automat.
+
+439
+01:14:52,659 --> 01:14:57,559
+We will see in the next slides. Okay? You will see the difference.
+
+440
+01:14:57,920 --> 01:15:05,860
+Actually, deterministic finite automates, each state has transitions for each symbol.
+
+441
+01:15:06,700 --> 01:15:11,239
+Then you say that you call this finite automat as a deterministic finite automat.
+
+442
+01:15:14,996 --> 01:15:17,996
+Ok, this is the...
+
+443
+01:15:18,996 --> 01:15:21,996
+Ok, let me stop the share.
+
+444
+01:15:25,747 --> 01:15:27,747
+Ok, let me...
+
+445
+01:15:29,947 --> 01:15:33,147
+I will open the next slide, one second.
+
+446
+01:16:10,163 --> 01:16:13,543
+Do you see the presentation?
+
+447
+01:16:21,235 --> 01:16:22,355
+Görüyoruz hocam, Emit.
+
+448
+01:16:23,076 --> 01:16:23,876
+Thank you.
+
+449
+01:16:26,815 --> 01:16:27,415
+Okay.
+
+450
+01:16:28,576 --> 01:16:29,095
+Very good.
+
+451
+01:16:30,115 --> 01:16:30,415
+Okay.
+
+452
+01:16:31,615 --> 01:16:42,115
+In this lecture, we will learn what the non-deterministic finite automat and what is the deterministic finite automat.
+
+453
+01:16:42,835 --> 01:16:44,716
+And we will look at their difference.
+
+454
+01:16:45,015 --> 01:16:45,195
+Okay.
+
+455
+01:16:50,484 --> 01:16:51,543
+Bir sikund.
+
+456
+01:17:24,627 --> 01:17:30,948
+We will learn what is deterministic finite automat, and the non-deterministic finite automat.
+
+457
+01:17:31,587 --> 01:17:34,627
+Do you remember the deterministic finite automat?
+
+458
+01:17:35,688 --> 01:17:46,747
+In the previous, for each state, we have all the possible inputs, symbols, then you go to another state.
+
+459
+01:17:47,055 --> 01:17:52,055
+Bu dersler, bu derslerle öğrenmeyi öğrenmek için,
+
+460
+01:17:52,055 --> 01:17:54,255
+nondeterministik finite automatik.
+
+461
+01:17:54,255 --> 01:17:57,055
+Bu dersler, nondeterministik finite automatik,
+
+462
+01:17:57,055 --> 01:18:02,055
+bilgilerin ne olduğunu bilgi edebilirsiniz.
+
+463
+01:18:02,528 --> 01:18:22,307
+Non-deterministic finite automat is. Non-deterministic finite automat has also five tuple definitions. Here is you see that Q is the states, sigma is the alphabet, delta is the transition table, Q0 is the start state, and the F is the final states. Okay.
+
+464
+01:18:24,307 --> 01:18:25,807
+So for
+
+465
+01:18:27,796 --> 01:18:42,676
+You see that in the non-deterministic finite automat, the state transition yields a set, not the state.
+
+466
+01:18:42,876 --> 01:18:43,916
+It yields the set.
+
+467
+01:18:43,916 --> 01:18:51,656
+For example, you are at state Q for input X, symbol X, you go to state Q1.
+
+468
+01:18:53,855 --> 01:18:54,796
+One second.
+
+469
+01:18:56,532 --> 01:18:57,131
+Ah.
+
+470
+01:19:07,380 --> 01:19:08,800
+You go to state.
+
+471
+01:19:11,079 --> 01:19:14,100
+I am not able to edit.
+
+472
+01:19:15,979 --> 01:19:17,700
+Okay, it must be.
+
+473
+01:19:19,040 --> 01:19:20,540
+Let me fix it.
+
+474
+01:19:25,619 --> 01:19:26,500
+Q2
+
+475
+01:19:44,724 --> 01:19:45,083
+Ok?
+
+476
+01:19:53,011 --> 01:19:53,992
+You are, okay.
+
+477
+01:19:59,091 --> 01:20:10,331
+You see that for input string or input symbol X, you can change this state from Q.
+
+478
+01:20:12,787 --> 01:20:40,747
+Q1, Q2, Q
+
+479
+01:20:40,819 --> 01:20:44,119
+You are now on a multiple states.
+
+480
+01:20:44,779 --> 01:20:44,979
+Okay.
+
+481
+01:20:45,439 --> 01:20:51,639
+When you see such transitions, then it is the NFA.
+
+482
+01:20:52,199 --> 01:20:52,399
+Okay.
+
+483
+01:20:53,119 --> 01:20:54,779
+Non-deterministic finite automata.
+
+484
+01:20:55,059 --> 01:20:55,899
+Look at here.
+
+485
+01:20:57,239 --> 01:21:07,099
+You see that there are three states and you are at state Q0 for input 1.
+
+486
+01:21:07,604 --> 01:21:09,923
+You go to only state Q1.
+
+487
+01:21:11,264 --> 01:21:11,984
+Okay?
+
+488
+01:21:15,324 --> 01:21:27,104
+If you are at state Q1, for input 0, you are at state Q0, at the same time you are at state Q2.
+
+489
+01:21:28,824 --> 01:21:29,184
+Okay?
+
+490
+01:21:29,463 --> 01:21:32,224
+At the beginning, you are at state Q1.
+
+491
+01:21:33,235 --> 01:21:38,075
+Now, you are at state Q0, at the same time you are at state Q2.
+
+492
+01:21:41,315 --> 01:21:51,876
+And another example, you are at state Q0 for empty string, you are also at the state Q2.
+
+493
+01:21:51,876 --> 01:21:52,835
+Okay?
+
+494
+01:21:59,828 --> 01:22:22,347
+And, for example, you are at state Q2, for input symbol 1, there is no transitions. You are at no state. There is no state you are at. So actually, this is the dead transition. This transition is called dead transition.
+
+495
+01:22:27,891 --> 01:22:29,891
+transition, as you see here.
+
+496
+01:22:29,891 --> 01:22:33,891
+So, this is this transition.
+
+497
+01:22:33,891 --> 01:22:35,891
+So, it's that transition.
+
+498
+01:22:37,891 --> 01:22:38,891
+Okay.
+
+499
+01:22:38,891 --> 01:22:39,891
+Look at this,
+
+500
+01:22:40,891 --> 01:22:43,891
+as non-tertism and finite automat.
+
+501
+01:22:43,891 --> 01:22:48,891
+You are at state Q0 for input symbol A.
+
+502
+01:22:50,228 --> 01:22:56,228
+Şimdi, Q1'e, Q3'e, aynı zamanda.
+
+503
+01:22:56,228 --> 01:23:00,228
+Bir başka, A'ın final state.
+
+504
+01:23:16,304 --> 01:23:23,083
+A'a
+
+505
+01:23:26,899 --> 01:23:52,939
+So, let us see, you are at state Q0 for input symbol A, you are at state Q1, and you are, you went to Q2. At the same time, you are at state Q0, and you go to state Q3. Next is the rejected, and the next one is rejected.
+
+506
+01:23:55,315 --> 01:24:09,755
+Okay, the next symbol is rejected. Do you know why? Because you are here and the next symbol for input A, there is no transition for the second A. So this is rejected.
+
+507
+01:24:10,675 --> 01:24:18,555
+Okay, so you can consider, you should consider that you are at state Q0 at the same time.
+
+508
+01:24:19,252 --> 01:24:25,252
+You are at Q1 and Q2. I showed you both transitions.
+
+509
+01:24:25,716 --> 01:24:46,836
+At different slides, okay? So you should consider like this. You are at state Q0. For input symbol A, you are at state Q1. At the same time, you are at state Q3. For the second input symbol A, now you are at state Q2 from here. But here,
+
+510
+01:24:47,347 --> 01:25:10,148
+There is no transition for input symbol A, so this branch is dead. Now the number of states I am at now is 1. So I am at only state 2. Q2.
+
+511
+01:25:10,676 --> 01:25:32,416
+Okay, this is the, you see, when you see these things, this is the NFA. NFA, there is, there exists a computation of the NFA that accepts the string. All the accept string is processed and the automat is in an accepting state. Actually, is, if one of the state, it is on.
+
+512
+01:25:34,612 --> 01:25:48,092
+If one of the states it is on is an accepting states, then input is accepted. I am repeating. Let me write. Maybe much more better.
+
+513
+01:25:54,452 --> 01:25:55,032
+Ok.
+
+514
+01:26:00,595 --> 01:26:28,555
+If at least one of the states the NFA machine is on, is a final state, then the input string
+
+515
+01:26:28,851 --> 01:26:43,131
+is accepted or recognized. In other words, input string is the element of the language the machine recognizes.
+
+516
+01:26:43,131 --> 01:26:44,092
+Okay?
+
+517
+01:27:01,363 --> 01:27:23,724
+In other words, input string is an element of the language LM of the machine NFA, otomat.
+
+518
+01:27:28,627 --> 01:27:34,807
+of the NFA, find NFA, machine, okay?
+
+519
+01:27:37,307 --> 01:27:40,007
+So, this is the other.
+
+520
+01:27:48,404 --> 01:27:48,783
+Okay.
+
+521
+01:27:58,579 --> 01:28:14,619
+AA is accepted, because the final state is Q2, and Q2 is one of the final states, so Q2 is the final state, so input AA is accepted.
+
+522
+01:28:18,707 --> 01:28:43,987
+And what about input, single input A? You are at state Q0 for single input A. You are at state Q1. At the same time, you are at state Q2, 3. And the state Q1 and the Q3 both are not final states. So input string is rejected. What about this one? Okay.
+
+523
+01:28:44,511 --> 01:29:05,891
+You are at state Q0. For input symbol A, you are at state Q1. At the same time, you are at state Q1. And now for the second, you change your state to Q2. At the same time, you follow this transition. You are at state.
+
+524
+01:29:06,579 --> 01:29:21,519
+Q0, now you go to the state Q3, and the next symbols are not consumed because there is no transition, outgoing transition here. So the input is also rejected. So this automata rejects the input, AAA.
+
+525
+01:29:23,799 --> 01:29:30,739
+Okay. NFA rejects a string if there is no computation of the NFA that accepts the strings. Okay.
+
+526
+01:29:36,180 --> 01:30:00,000
+Ok, for each computation, all the input is consumed and the automat is either non-final state or the input is consumed or the input cannot be consumed. So if the input string cannot be consumed by the machine.
+
+527
+01:30:00,000 --> 01:30:26,283
+ve alın
+
+528
+01:30:26,963 --> 01:30:28,923
+So, for AAA, again.
+
+529
+01:30:31,223 --> 01:30:36,783
+So, the language of this NFA is this.
+
+530
+01:30:40,003 --> 01:30:43,423
+Okay, we have also the epsilon transitions.
+
+531
+01:30:44,344 --> 01:30:48,963
+These epsilon transitions, let's say Q0, Q1, Q2, Q3.
+
+532
+01:30:49,876 --> 01:30:57,916
+And these are the states, and you see that the state Q1 and Q2 is connected by epsilon transition.
+
+533
+01:30:58,615 --> 01:31:04,556
+It means that when you reach state Q1, you also reach state Q2.
+
+534
+01:31:05,516 --> 01:31:05,696
+Okay?
+
+535
+01:31:06,436 --> 01:31:14,876
+When you reach state Q1, you also reach state Q2 because Q1 and Q2, these are the...
+
+536
+01:31:41,492 --> 01:31:52,772
+You can consume A, the second A can also be consumed at state Q1, but there is no outgoing transition for A.
+
+537
+01:31:53,252 --> 01:32:06,492
+So this transition, that, but you are also at the same time on state Q2 for the second input.
+
+538
+01:32:06,895 --> 01:32:33,899
+Bu, A'A
+
+539
+01:32:36,275 --> 01:32:48,275
+Bu NFA'ın, bu NFA'ın, bu NFA'ın, bu NFA'ın, bu NFA'ın, bu NFA'ın.
+
+540
+01:32:50,275 --> 01:32:55,275
+Bu NFA'ın, bu NFA'ın, bu NFA'ın.
+
+541
+01:32:55,275 --> 01:32:58,275
+Bu, NFA'ın, bu NFA'ın, bu NFA'ın.
+
+542
+01:32:59,444 --> 01:33:07,624
+ve aynı bir
+
+543
+01:33:07,624 --> 01:33:10,704
+bir masin.
+
+544
+01:33:11,704 --> 01:33:15,784
+Bir masin sadece bir bir masin.
+
+545
+01:33:16,463 --> 01:33:20,864
+Bir masin bir masin.
+
+546
+01:33:20,864 --> 01:33:24,804
+Bir masin sadece bir masin.
+
+547
+01:33:26,484 --> 01:33:30,003
+Okay, another NFA example. Look at this.
+
+548
+01:33:32,163 --> 01:33:39,003
+You see that state Q2 is connected to state Q3 by empty string.
+
+549
+01:33:39,524 --> 01:33:44,043
+Also, state Q3 is connected to state Q0 by empty string.
+
+550
+01:33:44,743 --> 01:33:45,104
+Nice.
+
+551
+01:33:46,403 --> 01:33:50,283
+Okay, for example, for this input symbol, A and B,
+
+552
+01:33:51,572 --> 01:34:10,292
+For input A, you change the state to Q1. For input symbol B, you change the state to Q2. Okay, this is accepted state. Also, you are at state Q3. Also, you are at state Q0.
+
+553
+01:34:14,623 --> 01:34:21,724
+So one of the last states is final state, so input is accepted, I repeat.
+
+554
+01:34:23,024 --> 01:34:33,564
+So after receiving second symbol, after receiving symbol B, I am at state Q2.
+
+555
+01:34:34,644 --> 01:34:39,684
+Because of this empty transition, I am also at the state Q3.
+
+556
+01:34:40,307 --> 01:34:46,528
+Çünkü bu
+
+557
+01:35:10,707 --> 01:35:35,207
+What about this one? Look, AB, AB. Okay. For input A, you change the state to Q1. For input B, you change the state to Q2. At the same time, you are at state Q3. At the same time, you are at state Q0. And then for input symbol A, you are at state Q1.
+
+558
+01:35:35,604 --> 01:35:40,364
+ve B'ye geçenli, final state Q2.
+
+559
+01:35:40,764 --> 01:35:52,844
+Also, now you are at state Q3 and Q0, but one of the last three states you are on is a final state, so the input AB, AB is accepted.
+
+560
+01:35:54,144 --> 01:36:02,424
+Okay, so the language of this automata, this is NFA, can be written like this, AB.
+
+561
+01:36:03,572 --> 01:36:09,212
+A, B, I, B, actually this is the A, B plus.
+
+562
+01:36:09,731 --> 01:36:16,332
+Okay, so this is the plus operation applied on the set of A, B.
+
+563
+01:36:16,592 --> 01:36:18,972
+So this is the language of this machine.
+
+564
+01:36:20,652 --> 01:36:24,072
+Another example, look at this example.
+
+565
+01:36:26,792 --> 01:36:30,972
+Q0, there are three states, Q0, Q1, and Q2.
+
+566
+01:36:32,212 --> 01:36:43,172
+Ok, the language of this machine, 1, 0 is element or, yes, 1, 0.
+
+567
+01:36:43,172 --> 01:36:47,351
+This transition is useless.
+
+568
+01:36:47,811 --> 01:36:52,811
+So actually, 1, 0 or 1, 0, 1, 0 or 1, 0 star.
+
+569
+01:36:54,195 --> 01:37:01,716
+As you see here, that empty string is also element of the language because start state is a final state.
+
+570
+01:37:03,636 --> 01:37:10,076
+If start state is a final state, then the language empty string is the element of the language.
+
+571
+01:37:11,435 --> 01:37:12,216
+Let me write.
+
+572
+01:37:17,427 --> 01:37:17,787
+Ok.
+
+573
+01:37:25,524 --> 01:37:29,524
+İlk başlıyor, ne oluyor?
+
+574
+01:37:30,524 --> 01:37:31,524
+Tamam.
+
+575
+01:37:41,619 --> 01:37:48,259
+OK. If the start state q0, OK.
+
+576
+01:37:57,876 --> 01:38:00,596
+Okay, is a final state.
+
+577
+01:38:03,596 --> 01:38:07,596
+Then, the empty string.
+
+578
+01:38:12,404 --> 01:38:14,404
+is an element of the
+
+579
+01:38:18,644 --> 01:38:19,784
+Of the language.
+
+580
+01:38:24,051 --> 01:38:26,311
+Otomat.
+
+581
+01:38:31,764 --> 01:38:34,844
+Do accept, recognize.
+
+582
+01:38:56,692 --> 01:38:58,351
+Hocam, bir soru sorabilir miyim?
+
+583
+01:38:58,592 --> 01:38:58,891
+Yes.
+
+584
+01:39:00,311 --> 01:39:12,632
+Bu önceki ABL soruyla ilgili. Orada Q2 son durumdu ya, Q2 son durum olmasa, Q3 olsaydı da arada MT olduğu için yine aynı sonucu gerçekleştirdik değil mi?
+
+585
+01:39:13,112 --> 01:39:14,931
+Kesinlikle. Çok güzel bir soru.
+
+586
+01:39:15,592 --> 01:39:15,792
+Yes.
+
+587
+01:39:16,851 --> 01:39:23,391
+Bir şey daha soracaktım. Q2 ya da Q3'te değil, Q0'da olsaydı sadece bu sonuca yine MT'yi ekleyecektik sanırım.
+
+588
+01:39:23,431 --> 01:39:23,832
+Tabii ki.
+
+589
+01:39:24,404 --> 01:39:25,864
+Tamam, teşekkür ederim hocam.
+
+590
+01:39:26,504 --> 01:39:27,004
+Teşekkür ederim.
+
+591
+01:39:28,644 --> 01:39:29,184
+Çok güzel.
+
+592
+01:39:30,684 --> 01:39:31,724
+Güzel bir soru da.
+
+593
+01:39:32,824 --> 01:39:46,804
+Yani, eğer Q3 final state olsaydı, Q2 değil de Q3 final state olsaydı, o zaman yine aynı dili verecekti bize.
+
+594
+01:39:46,804 --> 01:39:48,664
+Yani.
+
+595
+01:39:50,452 --> 01:40:10,492
+Pardon, bir saniye. Yani bunu değil de şu final state olsaydı yine aynı dili verecekler. Önemli olan bu anda üzerinde bulunmuş olduğun state'lerden birisinin final state olması gerekiyor. Eğer final state oluyorsa o input'u kabul ediyorsun. Tamam?
+
+596
+01:40:12,492 --> 01:40:15,271
+Tamam. Bu bahsede ne?
+
+597
+01:40:17,140 --> 01:40:19,140
+Bu bir simple automatik.
+
+598
+01:40:19,140 --> 01:40:23,140
+Bir start state, bir süreçte değil.
+
+599
+01:40:23,140 --> 01:40:25,140
+Ve bu bir süreçte değil.
+
+600
+01:40:25,140 --> 01:40:28,140
+Ve bu NFA, değil BFA.
+
+601
+01:40:28,140 --> 01:40:32,140
+Ve bu konuda, bu konuda, bu konuda,
+
+602
+01:40:32,140 --> 01:40:37,140
+bu konuda, bu konuda.
+
+603
+01:40:37,140 --> 01:40:41,140
+Bu konuda, bu konuda, bu konuda,
+
+604
+01:40:41,140 --> 01:40:43,140
+bu konuda, bu konuda, bu konuda,
+
+605
+01:40:43,140 --> 01:40:43,724
+bu konuda, bu konuda,
+
+606
+01:40:44,916 --> 01:40:47,636
+Bu makine hiçbir şey tanımaz desek doğru mu?
+
+607
+01:40:50,355 --> 01:40:54,076
+Bu makine hiçbir şey tanımaz dersek doğru mu?
+
+608
+01:40:56,136 --> 01:40:57,996
+Evet, bence doğru.
+
+609
+01:40:58,475 --> 01:40:59,435
+Hayır değil işte.
+
+610
+01:41:02,136 --> 01:41:03,895
+Sen hiç tuzağa düştüm.
+
+611
+01:41:05,136 --> 01:41:06,916
+Bu makine boş kümeyi tanır.
+
+612
+01:41:08,916 --> 01:41:12,416
+This machine recognizes the empty language.
+
+613
+01:41:13,524 --> 01:41:41,420
+Her makine bir dil tanır. Tamam?
+
+614
+01:41:42,707 --> 01:42:07,728
+Tamam, iyi. Sınavlarda böyle ters köşe sorular sorabiliriz. Yani genelde öyledir. Şimdi biraz Türkçe konuşalım. Şimdi vizede olsun, quizlerde olsun, finalde olsun soru soruyoruz öğrenciye. Bilmesi gerekiyor. Yanlış anlamaz. Senin cevabına bilen değil, konuşmuyorum. Üzerine alınmayasın sakın.
+
+615
+01:42:08,115 --> 01:42:27,036
+Mesela bu slide'ı gördüğünüzde diyorsan, burası basit ya, burada bir şey çıkmaz, geç. Esasen o soru burada. Niye? Sorular basit slide'larda saklıdır her zaman. Çünkü insanlar basit olaylarda çok fazla dikkatini vermez.
+
+616
+01:42:28,756 --> 01:42:37,936
+Çok fazla önemsemez basit olayları. Dolayısıyla dikkatini vermez ve insanlar hayatlarında her zaman hataları basit olaylar karşısında yapar.
+
+617
+01:42:38,856 --> 01:42:49,956
+Sınava hazırlanırken de karşısına bir tane slide çıkıyor, basit bir slide. Bakıyor burada, tamam ya buradan bir şey çıkmaz diyor, önemli olan. Bakıyor, aa burası biraz daha karışık, burası daha önemli diyor.
+
+618
+01:42:49,956 --> 01:42:55,655
+Hayır, önemli olan basit olanlar daha önemli. Basit olanları daha iyi anlarsanız,
+
+619
+01:42:56,032 --> 01:43:16,851
+Karmaşıkları anlamanız daha kolay olur ve sınavlarda basit, temel bilmeniz gereken konularda sorarız. Deriz ki işte her makine, bu makineyi veririz, bu makine hiçbir şeyi tanımaz dersek true or false.
+
+620
+01:43:18,195 --> 01:43:41,576
+Hemen Turing'u seç, buraya çalışmadığın için hemen Turing'u seçer. Evet, bu makine, M1 makinesi, otomatı, hiçbir şey tanımaz dersin. Esasında tanıyor. Neyi tanıyor? Boş küme, yani boş dili tanıyor. Yani içinde elemanı olmayan bir dili tanıyor. Dilinin tanımı neydi? Dilin tanımı?
+
+621
+01:43:42,195 --> 01:43:53,716
+Diziler kümesiyle, dilin tanımı diziler kümesi. Buna bakıyoruz, bu bir küme mi? Evet, boş küme bir kümedir. Diziler kümesidir ama boş kümedir.
+
+622
+01:43:54,936 --> 01:44:08,176
+Bu da bir diziler kümesi ama bu da boş küme değil bakın burada. Bu kümenin içinde boş string var. Boş stringten oluşan bir boş küme, tek elemanlı bir küme.
+
+623
+01:44:09,300 --> 01:44:23,680
+Tamam mı? Bunun dili bu değil. Mesela şu M2 makinesinin dili bu dil değil. M1 makinesinin dili de bu değil. Aradaki farkı tartabiliyorsunuz değil mi? Görebiliyorsunuz.
+
+624
+01:44:33,300 --> 01:44:49,000
+will be very simple and will be very fundamental. You should be very aware of the fundamental concepts in automata theory. Okay. What about this language? This is the NFA.
+
+625
+01:44:50,292 --> 01:44:52,332
+Okay, it reached the final state.
+
+626
+01:44:52,592 --> 01:44:58,212
+It has to, so there is no more outgoing transition after Q1.
+
+627
+01:44:58,432 --> 01:45:01,312
+So the language of this machine is this.
+
+628
+01:45:02,912 --> 01:45:06,432
+This is the set of strings that contains only letter A.
+
+629
+01:45:06,652 --> 01:45:07,872
+So A is a string.
+
+630
+01:45:09,192 --> 01:45:10,752
+What about this machine?
+
+631
+01:45:11,932 --> 01:45:13,272
+This is the DFA.
+
+632
+01:45:13,844 --> 01:45:19,123
+Bakın, bu NFA. Bu bir başka bir şey.
+
+633
+01:45:20,083 --> 01:45:22,003
+Bu bir birçok bir birçok.
+
+634
+01:45:22,003 --> 01:45:24,083
+Bu birçok birçok.
+
+635
+01:45:24,083 --> 01:45:36,444
+Bu birçok.
+
+636
+01:45:36,444 --> 01:45:38,444
+Ve birçok.
+
+637
+01:45:38,444 --> 01:45:40,444
+Bu birçok.
+
+638
+01:45:41,908 --> 01:45:55,568
+What we said before, a language can be recognized more than one machine, and each machine can recognize only one language.
+
+639
+01:45:56,328 --> 01:46:05,328
+So, this is the same language recognized by machine one and the machine two, more than one machine recognized the same language.
+
+640
+01:46:09,376 --> 01:46:12,016
+or has its own language.
+
+641
+01:46:13,815 --> 01:46:18,216
+Okay, this type of otomat is called NFA.
+
+642
+01:46:19,256 --> 01:46:23,096
+This type of otomat is called DFA.
+
+643
+01:46:23,716 --> 01:46:29,036
+DFA means deterministic finite otomat.
+
+644
+01:46:29,756 --> 01:46:34,556
+NFA means non-deterministic finite otomat.
+
+645
+01:46:34,556 --> 01:46:35,355
+Okay?
+
+646
+01:46:38,100 --> 01:46:39,020
+Any question?
+
+647
+01:46:41,020 --> 01:46:43,320
+Okay, I have a question for you.
+
+648
+01:46:44,220 --> 01:46:48,600
+What is the difference between NFA and the DFA?
+
+649
+01:46:49,060 --> 01:46:53,980
+Before writing the difference, let us find the alphabet.
+
+650
+01:46:54,640 --> 01:46:54,880
+Okay.
+
+651
+01:46:56,500 --> 01:46:58,980
+Okay, the alphabet of this...
+
+652
+01:47:01,060 --> 01:47:02,420
+One second.
+
+653
+01:47:03,619 --> 01:47:05,340
+Where is the alphabet symbol?
+
+654
+01:47:09,203 --> 01:47:09,884
+Okay.
+
+655
+01:47:14,100 --> 01:47:18,380
+Oh, very bad.
+
+656
+01:47:20,460 --> 01:47:22,880
+Okay, I will try to find anyway.
+
+657
+01:47:48,404 --> 01:47:57,124
+Ok, so let me write input text, yes.
+
+658
+01:48:01,460 --> 01:48:08,699
+Here, the alphabet and the symbol.
+
+659
+01:48:12,115 --> 01:48:39,715
+Alphabet, let's say, what is the alphabet here is A. What about the alphabet here? Okay. In both cases, alphabet is C.
+
+660
+01:48:40,948 --> 01:48:45,148
+Of course, must be seen, because they recognize the same language.
+
+661
+01:48:46,228 --> 01:48:59,308
+So, you see that each state has the outgoing transitions for the alphabet A, for the symbol A.
+
+662
+01:48:59,528 --> 01:49:02,308
+For example, Q0 has outgoing transition.
+
+663
+01:49:02,735 --> 01:49:15,876
+At Q1, there is another outgoing transition for input symbol A. At state Q2, there is an outgoing transition for input symbol A again.
+
+664
+01:49:15,876 --> 01:49:26,055
+So each state has outgoing transition for the symbols in the alphabet. What about this one?
+
+665
+01:49:27,347 --> 01:49:40,247
+You see the Q0, it has the outgoing states for input symbol A, but Q1 has no outgoing symbol for input symbol from the alphabet.
+
+666
+01:49:41,167 --> 01:49:46,887
+So then this is called, this machine is NFA.
+
+667
+01:49:46,887 --> 01:49:51,768
+So the difference between NFA and the DFA is this.
+
+668
+01:49:52,564 --> 01:50:20,448
+DFA'nin nf'a, nf'a
+
+669
+01:50:20,448 --> 01:50:40,628
+What is the size of alphabet here? It's 1. So it has 1 outgoing, so it has 0 outgoing. So this is NFA. So the state has 1 outgoing. State Q2 has 1 outgoing. State Q2 has 1 outgoing. So 1 is the length of the alphabet.
+
+670
+01:50:40,628 --> 01:50:46,848
+We will do examples, many examples actually.
+
+671
+01:50:47,347 --> 01:50:55,347
+Bu örneğin, bu örneğin, çok iyi anlamak için bir şey yapacağız.
+
+672
+01:50:55,347 --> 01:50:56,347
+Tamam mı?
+
+673
+01:50:56,347 --> 01:51:01,347
+Bir soru yok mu?
+
+674
+01:51:01,347 --> 01:51:03,347
+Tamam.
+
+675
+01:51:03,347 --> 01:51:05,347
+Örce, benim mi?
+
+676
+01:51:05,347 --> 01:51:06,347
+Evet.
+
+677
+01:51:06,347 --> 01:51:07,347
+Bir şey sorabilir mi?
+
+678
+01:51:07,347 --> 01:51:08,347
+Evet.
+
+679
+01:51:08,347 --> 01:51:13,963
+Burada NFA'de birden fazla da out going olabilir doğru mu anladım?
+
+680
+01:51:14,195 --> 01:51:25,036
+Evet, mesela, let me give you NFA example, but now I am not able to.
+
+681
+01:51:39,380 --> 01:51:58,820
+DFA'nın tanıdığı dilin alfabesindeki sembollerin sayısı kadardır. Bir daha tekrarlıyorum. Her bir DFA'da her bir durumdan çıkan geçişlerin sayısı alfabedeki sembollerin sayısı kadardır.
+
+682
+01:52:07,347 --> 01:52:12,428
+Alfabesindeki elemanların sayısı kadar olmak zorunda değil.
+
+683
+01:52:15,528 --> 01:52:17,288
+Tamamdır hocam, anladım. Teşekkür ederim.
+
+684
+01:52:17,948 --> 01:52:32,928
+Dolayısıyla NFA ve DFA'ye baktığımızda, DFA makineleri ve NFA makineleri, DFA makineleri, NFA makineleri, NFA makineleri, mesela tüm NFA makineleri,
+
+685
+01:52:33,395 --> 01:52:47,155
+Ve tüm DFA makineleri, iki ayrı uzay olarak düşünelim, bütün olası DFA makineleri, bütün olası NFA makinelerinin oluşturduğu kümenin nesidir? Bir alt kümesidir.
+
+686
+01:52:51,060 --> 01:52:51,620
+[öğrenci].
+
+687
+01:52:56,532 --> 01:53:14,772
+Şimdi 10 dakika ara veriyoruz. 10 dakika sonra devam edeceğiz. Ondan sonra biraz da örnek sorular falan yaparız beraber. Tamam. See you after 10 minutes, friends.
+
+688
+02:04:52,884 --> 02:04:53,684
+Arkadaşlar,
+
+689
+02:04:55,324 --> 02:04:56,944
+Düğüme
+
+690
+02:05:03,859 --> 02:05:04,519
+Duyuruz.
+
+691
+02:05:06,519 --> 02:05:10,539
+Şimdi, we have a quiz exam next week.
+
+692
+02:05:12,159 --> 02:05:26,679
+Actually, şöyle Türkçe söyleyeyim. Önümüzdeki hafta quizimiz var. Normalde quiz tarihini vermiyoruz ama sizlerin çalışabilmesi için o quizin olduğunu söylüyoruz.
+
+693
+02:05:28,212 --> 02:05:44,312
+Önümüzdeki hafta son ders ya da ilk ders, ya ilk derste, yani ilk 15 dakika ya da son 15 dakika ya da tam dersin ortasında 15 dakika, kuyuz olabiliriz.
+
+694
+02:05:44,312 --> 02:05:50,312
+Ders içerisinde hangi dakika içinde kuyuz yapacağımız saklı ama...
+
+695
+02:05:50,515 --> 02:06:02,895
+O ders içerisinde maksimum 15 dakikalık bir sınav olacaksınız, quiz sınav olacaksınız. O yüzden hazırlanarak gelmenizi tavsiye ediyorum. Çalışarak gelin.
+
+696
+02:06:05,535 --> 02:06:11,635
+Bugün içerisinde slide'ları size link üzerinden göndereceğim.
+
+697
+02:06:12,851 --> 02:06:28,851
+O slide'ları çalışabilirsiniz. Gönderdiğim slide'lara çalışabilirsiniz. Şimdi isterseniz biraz bakalım, bilgimizi ölçelim, biraz örnek sorular çözelim. Hem böylelikle haftaya...
+
+698
+02:06:29,492 --> 02:06:33,452
+quiz sınavına hazırlanmış oluruz beraber. Tamam?
+
+699
+02:06:33,792 --> 02:06:34,972
+Hocam, bir şey sorabilir miyim?
+
+700
+02:06:35,432 --> 02:06:35,712
+Evet.
+
+701
+02:06:36,232 --> 02:06:39,412
+Yazılı mı olacak? Test mi? Formatı belli mi? Onu söylüyor musunuz yani bize?
+
+702
+02:06:39,892 --> 02:06:41,652
+Hayır, onu söylemiyorum maalesef.
+
+703
+02:06:41,912 --> 02:06:42,152
+Tamam.
+
+704
+02:06:44,152 --> 02:06:51,332
+Yani onu söylemiyorum ama dediğim gibi sadece sınavımız olacak, onu bilin. Tamam?
+
+705
+02:06:52,252 --> 02:06:52,992
+Tamamdır hocam.
+
+706
+02:06:53,648 --> 02:07:17,448
+Bir de örnek sorular da paylaşacağım. Paylaşımları şeyden yaparım. Dersin slide'larını ve örnek sorunun paylaşımını, örnek sınav sorusu paylaşımını çözümleriyle beraber dersin uzem sayfasından yapacağım bugün. Tamam mı arkadaşlar?
+
+707
+02:07:20,787 --> 02:07:33,807
+Şimdi isterseniz örnek sorular çözelim. Bunun için şöyle yapalım. Ekran görüyor musunuz? Geliyor mu görüntü?
+
+708
+02:07:35,948 --> 02:07:36,608
+Evet hocam.
+
+709
+02:07:37,608 --> 02:07:42,988
+Tamam, süper. Şimdi şunları ayarlayayım.
+
+710
+02:07:48,564 --> 02:07:55,164
+Unutmayın. Ne kadar az sorarsanız, sınav o kadar zor olur.
+
+711
+02:07:56,284 --> 02:07:58,544
+Ters orantılı.
+
+712
+02:07:58,544 --> 02:08:00,384
+Soru.
+
+713
+02:08:15,220 --> 02:08:19,120
+Let A be the set.
+
+714
+02:08:22,868 --> 02:08:24,688
+Let's say this is the set, okay?
+
+715
+02:08:28,692 --> 02:08:38,572
+1, 2, 3, 4, 5, and...
+
+716
+02:08:41,587 --> 02:08:43,768
+6, 7, 8.
+
+717
+02:08:45,768 --> 02:08:46,567
+Okay.
+
+718
+02:08:48,527 --> 02:08:51,688
+So, the question is this.
+
+719
+02:08:51,967 --> 02:08:52,648
+Determine.
+
+720
+02:08:56,307 --> 02:09:33,751
+ve
+
+721
+02:09:14,804 --> 02:09:21,483
+Is true or false?
+
+722
+02:09:23,844 --> 02:09:24,844
+Okay.
+
+723
+02:09:25,764 --> 02:09:27,564
+So, the first one is,
+
+724
+02:09:30,003 --> 02:09:33,724
+One is element of set A.
+
+725
+02:09:34,983 --> 02:09:36,583
+True or false?
+
+726
+02:09:42,484 --> 02:09:42,984
+Fals.
+
+727
+02:09:45,084 --> 02:09:47,423
+Who said Fals? Who said?
+
+728
+02:09:48,463 --> 02:09:50,684
+Ben hocam, [öğrenci].
+
+729
+02:09:51,264 --> 02:09:54,044
+[öğrenci]. Why it is Fals?
+
+730
+02:09:56,423 --> 02:09:59,804
+There is one here, so why you said that it is Fals?
+
+731
+02:10:01,284 --> 02:10:06,484
+Ama set A'nın elemanları, 3 tane farklı set, o...
+
+732
+02:10:06,484 --> 02:10:08,244
+Okay, true.
+
+733
+02:10:09,184 --> 02:10:10,444
+So this is...
+
+734
+02:10:11,412 --> 02:10:13,412
+Evet, evet.
+
+735
+02:10:13,412 --> 02:10:15,412
+Evet, bu.
+
+736
+02:10:15,412 --> 02:10:17,412
+Tamam, iyi.
+
+737
+02:10:17,412 --> 02:10:19,412
+İlk bir şey.
+
+738
+02:10:19,412 --> 02:10:24,716
+Bir şey.
+
+739
+02:10:29,619 --> 02:10:39,939
+One, two, three, okay. Adın neydi senin? What was your name? What is your name? Sorry.
+
+740
+02:10:41,359 --> 02:10:42,099
+Hakan Hocam.
+
+741
+02:10:42,380 --> 02:10:47,739
+[öğrenci], okay. [öğrenci]. My question is this. What about this one?
+
+742
+02:10:52,851 --> 02:10:53,851
+True or false?
+
+743
+02:10:55,591 --> 02:10:56,491
+True hocam.
+
+744
+02:10:58,751 --> 02:11:01,791
+And you said that it is true. This is also false.
+
+745
+02:11:04,851 --> 02:11:12,251
+Because the right side is set, the left side is element of A.
+
+746
+02:11:13,531 --> 02:11:15,291
+Okay? It is not a person.
+
+747
+02:11:15,971 --> 02:11:17,171
+Okay? So it is false.
+
+748
+02:11:18,739 --> 02:11:37,979
+And what about, okay, let me ask another questions. Not you for the whole class. 6, 7, 8 is element of A. Is correct or not?
+
+749
+02:11:40,859 --> 02:11:41,359
+Correct.
+
+750
+02:11:41,559 --> 02:11:42,359
+Doğru hocam.
+
+751
+02:11:42,579 --> 02:11:43,500
+Yes, true.
+
+752
+02:11:48,083 --> 02:11:52,323
+Sınavda böyle olur. Yani böyle kafa karıştırıcı sorular var ona göre.
+
+753
+02:11:54,384 --> 02:11:57,823
+D, let me write.
+
+754
+02:12:01,300 --> 02:12:09,900
+4, 5, is subset of A. Is it true or not?
+
+755
+02:12:11,580 --> 02:12:13,540
+True.
+
+756
+02:12:17,540 --> 02:12:25,380
+And E, this is empty set, okay?
+
+757
+02:12:31,444 --> 02:12:32,324
+Is it true?
+
+758
+02:12:36,627 --> 02:12:38,367
+Fals.
+
+759
+02:12:44,148 --> 02:12:44,927
+And the F
+
+760
+02:13:00,275 --> 02:13:05,275
+Yes. Is it true or false?
+
+761
+02:13:11,731 --> 02:13:31,243
+Bu, bu
+
+762
+02:13:38,644 --> 02:13:38,963
+Ok.
+
+763
+02:13:43,507 --> 02:13:43,948
+Nice.
+
+764
+02:13:46,528 --> 02:13:51,148
+So, let us do another example. Do you have any questions?
+
+765
+02:13:54,028 --> 02:13:57,148
+Okay. Let me write another question.
+
+766
+02:13:57,948 --> 02:13:58,347
+Hocam.
+
+767
+02:13:58,907 --> 02:13:59,268
+Yes.
+
+768
+02:13:59,787 --> 02:14:04,747
+B'de eleman olarak alt küma olmaya çalıştığı için yanlış değil mi yani?
+
+769
+02:14:04,988 --> 02:14:08,827
+Nasıl sen? Küma olarak olmadığı için. O yüzden D doğru, şey B yanlış.
+
+770
+02:14:09,876 --> 02:14:12,895
+So, if you see that, this is element.
+
+771
+02:14:14,456 --> 02:14:16,115
+Okay, this is element.
+
+772
+02:14:18,115 --> 02:14:25,935
+Okay, if you add another hooked parenthesis, then it will be true.
+
+773
+02:14:27,076 --> 02:14:32,296
+Okay, this is not the element, the element of set A.
+
+774
+02:14:33,171 --> 02:14:39,991
+You can say that you can cut this, you can give a name, A, B, C, something like this.
+
+775
+02:14:41,951 --> 02:14:42,191
+Okay?
+
+776
+02:14:44,611 --> 02:14:49,251
+Another question, let's say.
+
+777
+02:14:55,283 --> 02:14:58,703
+Let me write the question too.
+
+778
+02:15:02,996 --> 02:15:03,996
+Evet, lütfen.
+
+779
+02:15:10,739 --> 02:15:14,659
+Questions for the following sets. Answer the questions.
+
+780
+02:15:18,387 --> 02:15:24,988
+for the following sets.
+
+781
+02:15:27,387 --> 02:15:30,268
+OK, the first set is this T.
+
+782
+02:15:32,108 --> 02:15:39,028
+It has empty string AAB and BAAB.
+
+783
+02:15:41,347 --> 02:15:44,547
+OK, we have another set D.
+
+784
+02:15:46,804 --> 02:15:51,963
+It has BWD, and it has AAB.
+
+785
+02:16:02,003 --> 02:16:05,583
+We have another set.
+
+786
+02:16:07,163 --> 02:16:09,423
+It has only the empty string.
+
+787
+02:16:10,583 --> 02:16:12,423
+We have another set.
+
+788
+02:16:13,323 --> 02:16:15,983
+It is the empty set.
+
+789
+02:16:16,503 --> 02:16:20,043
+Empty set means düzen.
+
+790
+02:16:21,523 --> 02:16:21,823
+Okay?
+
+791
+02:16:23,963 --> 02:16:27,623
+So, my question is this.
+
+792
+02:16:30,484 --> 02:16:32,203
+What is...
+
+793
+02:16:35,540 --> 02:16:47,659
+Okay, what is, let me write here, A, what is D union C?
+
+794
+02:16:52,948 --> 02:16:53,948
+Can you tell me?
+
+795
+02:16:56,747 --> 02:16:59,028
+D union C is very simple.
+
+796
+02:17:02,028 --> 02:17:05,068
+Is equal to epsilon.
+
+797
+02:17:13,843 --> 02:17:20,723
+And all the elements B, AAB, and BAA.
+
+798
+02:17:28,180 --> 02:17:32,180
+Bu bir şey.
+
+799
+02:17:32,180 --> 02:17:37,836
+Bu bir union.
+
+800
+02:17:42,739 --> 02:17:44,360
+C, union, F.
+
+801
+02:17:48,979 --> 02:17:51,340
+C union F is what?
+
+802
+02:17:54,279 --> 02:17:55,459
+Is equal to?
+
+803
+02:17:59,763 --> 02:18:08,144
+Epsilon, AAB, EAA, because F is the empty set, so it's equal to C.
+
+804
+02:18:10,183 --> 02:18:10,843
+Nice.
+
+805
+02:18:12,843 --> 02:18:14,063
+Is it simple?
+
+806
+02:18:19,347 --> 02:18:26,168
+Okay, what about C, Cartesian, D?
+
+807
+02:18:33,203 --> 02:18:40,863
+C Cartesian D. C Cartesian D is the set.
+
+808
+02:18:42,863 --> 02:18:44,984
+You have the doubles.
+
+809
+02:18:47,043 --> 02:18:56,344
+Epsilon BB, Epsilon AAB, and
+
+810
+02:18:58,739 --> 02:19:01,060
+A, A, B, M, B.
+
+811
+02:19:06,164 --> 02:19:12,504
+AAB, AAB, AAB, AAB, AAB, AAB.
+
+812
+02:19:16,915 --> 02:19:25,835
+BAA, double beer, BAA, double,
+
+813
+02:19:30,644 --> 02:19:32,644
+AA, B.
+
+814
+02:19:34,404 --> 02:19:35,364
+Okay, very simple.
+
+815
+02:19:36,564 --> 02:19:37,764
+My question is this.
+
+816
+02:19:38,484 --> 02:19:38,984
+E,
+
+817
+02:19:42,404 --> 02:19:43,764
+C Cartesian,
+
+818
+02:19:47,123 --> 02:19:48,804
+C Cartesian D
+
+819
+02:19:51,044 --> 02:19:52,644
+is not equal
+
+820
+02:19:53,364 --> 02:19:55,603
+D Cartesian C if
+
+821
+02:19:57,716 --> 02:20:05,515
+D, C and D are not
+
+822
+02:20:08,948 --> 02:20:10,968
+are not same.
+
+823
+02:20:13,308 --> 02:20:14,587
+Is it true?
+
+824
+02:20:16,368 --> 02:20:16,847
+Doğru.
+
+825
+02:20:17,268 --> 02:20:17,927
+Yes.
+
+826
+02:20:18,328 --> 02:20:21,148
+But in the exam, I write this like this.
+
+827
+02:20:22,427 --> 02:20:24,387
+C, Cartesian B,
+
+828
+02:20:25,268 --> 02:20:26,308
+one second,
+
+829
+02:20:28,628 --> 02:20:30,067
+C, Cartesian B,
+
+830
+02:20:30,788 --> 02:20:32,047
+not equal to
+
+831
+02:20:32,047 --> 02:20:35,087
+or
+
+832
+02:20:36,147 --> 02:20:57,628
+D, Cartesian C, if C is subset of D, if C is not the subset of D, and D is not the subset of D.
+
+833
+02:20:57,628 --> 02:20:59,768
+Or.
+
+834
+02:21:07,347 --> 02:21:07,727
+Okay?
+
+835
+02:21:09,288 --> 02:21:10,468
+Both are same.
+
+836
+02:21:20,308 --> 02:21:46,948
+Okay, very good. What about this one, D? C intersection D. C is here and D is here. The intersection is, there is only one common symbol, this one. So C intersection D is AAD.
+
+837
+02:21:54,515 --> 02:21:55,515
+Okay, nice.
+
+838
+02:21:55,515 --> 02:21:58,515
+What about the concatenation?
+
+839
+02:21:58,515 --> 02:22:03,515
+You want to concatenate.
+
+840
+02:22:03,515 --> 02:22:09,260
+Now, let's say, let me write this again.
+
+841
+02:22:12,595 --> 02:22:12,955
+Ok.
+
+842
+02:22:24,500 --> 02:22:48,099
+Now, let me write concatenation. C concatenated B. How can I write? Hmm? What is this? You will concatenate every element of C by the elements of B. So, epsilon BB means BB.
+
+843
+02:22:49,780 --> 02:22:52,940
+Epsilon concatenated by AAB.
+
+844
+02:22:53,600 --> 02:22:54,980
+So this is AAB.
+
+845
+02:22:55,800 --> 02:22:57,460
+Epsilon concatenated.
+
+846
+02:22:57,960 --> 02:22:58,400
+Okay, done.
+
+847
+02:22:59,040 --> 02:23:00,720
+AAB is concatenated.
+
+848
+02:23:00,940 --> 02:23:04,540
+AAB is concatenated by double B.
+
+849
+02:23:05,980 --> 02:23:12,960
+And AAB is concatenated by double AAB.
+
+850
+02:23:12,960 --> 02:23:15,440
+And BAA.
+
+851
+02:23:17,203 --> 02:23:35,543
+concatenated by double B, BAA concatenated by double B, and BAA is concatenated by double A, B.
+
+852
+02:23:36,583 --> 02:23:38,123
+Okay, this is the concatenation.
+
+853
+02:23:39,243 --> 02:23:40,144
+Is it clear?
+
+854
+02:23:43,603 --> 02:23:56,723
+So, the concatenation, what about this one? Okay, let me give you an example. D concatenated F.
+
+855
+02:24:02,195 --> 02:24:03,175
+Kim söyleyecek?
+
+856
+02:24:08,275 --> 02:24:09,975
+D kümesinin aynıısını hocam.
+
+857
+02:24:10,955 --> 02:24:11,315
+Efendim?
+
+858
+02:24:11,695 --> 02:24:13,236
+D kümesinin aynıısını.
+
+859
+02:24:14,236 --> 02:24:18,675
+Okay, B, B, you concatenate, and A, A, B. Okay?
+
+860
+02:24:20,896 --> 02:24:22,975
+And this is wrong.
+
+861
+02:24:31,731 --> 02:24:33,851
+Şöyle bir kuru kafaya.
+
+862
+02:24:36,991 --> 02:24:38,152
+Hataya düştü.
+
+863
+02:24:39,912 --> 02:24:42,231
+This is wrong.
+
+864
+02:24:42,592 --> 02:24:42,971
+Why?
+
+865
+02:24:43,351 --> 02:24:44,752
+Because F is empty C.
+
+866
+02:24:45,072 --> 02:24:47,231
+There is no element to concatenate.
+
+867
+02:24:47,572 --> 02:24:55,311
+So, D concatenate L is empty C.
+
+868
+02:25:05,620 --> 02:25:05,980
+Okay?
+
+869
+02:25:09,396 --> 02:25:12,515
+What about now? Who answered my question?
+
+870
+02:25:15,236 --> 02:25:15,855
+Ben hocam.
+
+871
+02:25:16,816 --> 02:25:17,876
+What's your name?
+
+872
+02:25:18,496 --> 02:25:18,816
+Meli.
+
+873
+02:25:19,316 --> 02:25:30,355
+Meli. Okay. Let me ask you a question. Okay. What about the D concatenated E?
+
+874
+02:25:32,476 --> 02:25:36,436
+D olur hocam. D kümesi olur.
+
+875
+02:25:36,847 --> 02:25:47,768
+Yes, because BB concatenated by epsilon, okay, and AAB is concatenated by epsilon.
+
+876
+02:25:50,507 --> 02:25:55,867
+Actually, this epsilon drops because it is empty string.
+
+877
+02:25:55,867 --> 02:26:01,827
+So this is equal to BB AAB.
+
+878
+02:26:03,188 --> 02:26:05,188
+Ve bu resulta E.
+
+879
+02:26:08,188 --> 02:26:09,188
+Ok?
+
+880
+02:26:12,188 --> 02:26:16,188
+So, these are the interesting concatenations.
+
+881
+02:26:18,188 --> 02:26:20,188
+What about the power sets?
+
+882
+02:26:21,188 --> 02:26:22,188
+C,
+
+883
+02:26:23,188 --> 02:26:25,188
+the power set of C.
+
+884
+02:26:26,188 --> 02:26:27,188
+Can you write to me?
+
+885
+02:26:28,188 --> 02:26:29,188
+The power set.
+
+886
+02:26:30,548 --> 02:26:31,548
+C.
+
+887
+02:26:31,548 --> 02:26:37,548
+The power set of C.
+
+888
+02:26:37,548 --> 02:26:42,548
+Can you write?
+
+889
+02:26:42,548 --> 02:26:47,548
+C'nin bütün alt kümeleri.
+
+890
+02:26:47,548 --> 02:26:48,548
+Okay?
+
+891
+02:26:48,548 --> 02:26:51,548
+And this is equal to?
+
+892
+02:26:51,548 --> 02:26:54,220
+The first one is?
+
+893
+02:26:54,995 --> 02:26:58,556
+Empty string, empty string is the subset of C.
+
+894
+02:27:00,155 --> 02:27:05,315
+So empty, so not empty string, empty set is the subset of C.
+
+895
+02:27:05,815 --> 02:27:11,455
+And now we have the elements, epsilon is subset of C.
+
+896
+02:27:12,615 --> 02:27:15,396
+AAB is subset of C.
+
+897
+02:27:16,295 --> 02:27:21,015
+And another set, BAA is subset of C.
+
+898
+02:27:21,780 --> 02:27:26,580
+And now we will look at the double element sets.
+
+899
+02:27:27,540 --> 02:27:33,260
+So epsilon AAB is the subset of C.
+
+900
+02:27:34,520 --> 02:27:43,479
+And again, epsilon BAA is subset of C.
+
+901
+02:27:45,100 --> 02:27:47,780
+Now, and also...
+
+902
+02:27:48,659 --> 02:27:56,079
+AAB, and BAA is subset of C.
+
+903
+02:27:56,979 --> 02:28:01,100
+Now I will look at the triples, okay?
+
+904
+02:28:03,540 --> 02:28:14,899
+And triples, and this is, there is only one triple, epsilon, AAB, and BAA.
+
+905
+02:28:17,075 --> 02:28:20,275
+Ok, what is the size of the power set?
+
+906
+02:28:25,556 --> 02:28:31,556
+ve kardinli ifade, veya kardinli ifade, power set.
+
+907
+02:28:35,540 --> 02:28:42,479
+So, actually, this is the number of elements inside the power set.
+
+908
+02:28:42,479 --> 02:28:50,659
+The number of elements inside.
+
+909
+02:28:57,268 --> 02:29:19,211
+Ok, so what is it? We can count. 1, 2, 3, 4, 5, 6, 7, 8. So 8. Actually, this is equal to 2 power the length of C. The length of C is 3. Why? Because C is...
+
+910
+02:29:22,227 --> 02:29:24,427
+The C has three elements.
+
+911
+02:29:28,979 --> 02:29:29,360
+Ok?
+
+912
+02:29:33,556 --> 02:29:36,936
+What about the Klinistar operation of C?
+
+913
+02:29:38,256 --> 02:29:39,576
+Okay, C is here.
+
+914
+02:29:47,763 --> 02:29:49,763
+Aşkınca çalışma operasyonu.
+
+915
+02:29:54,036 --> 02:29:55,855
+Or, Clean Plus operation.
+
+916
+02:29:56,755 --> 02:29:57,576
+What do you think?
+
+917
+02:30:03,347 --> 02:30:05,347
+Bu bir şey.
+
+918
+02:30:06,747 --> 02:30:08,347
+Yenisinin farkında.
+
+919
+02:30:08,347 --> 02:30:16,299
+Bir şey.
+
+920
+02:30:21,427 --> 02:30:48,427
+D'ye
+
+921
+02:30:47,540 --> 02:30:51,800
+Cleanee Plus operation of C
+
+922
+02:30:51,800 --> 02:30:55,560
+Actually
+
+923
+02:31:02,548 --> 02:31:05,848
+And what is this?
+
+924
+02:31:20,244 --> 02:31:23,244
+Or let me copy this also.
+
+925
+02:31:26,675 --> 02:31:28,315
+All of them, copy.
+
+926
+02:31:31,036 --> 02:31:31,475
+Okay.
+
+927
+02:31:53,299 --> 02:31:54,020
+Pansyokant.
+
+928
+02:32:05,780 --> 02:32:06,620
+Dözen kopya.
+
+929
+02:32:14,100 --> 02:32:14,659
+Ok.
+
+930
+02:32:40,691 --> 02:32:53,592
+Okay. Now, what about F, Klinistar operation? F is the empty set. What is its Klinistar operation? Is?
+
+931
+02:32:58,515 --> 02:32:59,275
+What is it?
+
+932
+02:33:03,028 --> 02:33:04,227
+EMPTY STRING.
+
+933
+02:33:04,907 --> 02:33:06,567
+It must have empty string.
+
+934
+02:33:07,468 --> 02:33:08,067
+That's all.
+
+935
+02:33:10,148 --> 02:33:10,948
+Okay.
+
+936
+02:33:11,468 --> 02:33:16,648
+What about the cluster operation of C?
+
+937
+02:33:23,860 --> 02:33:47,579
+What is that? Epsilon, AAB, BAA, and then all the combinations, as you remember, AAB, AAB, and AAB, BAA.
+
+938
+02:33:49,620 --> 02:33:56,620
+And now BAA, AAB, BAA, BAA.
+
+939
+02:33:56,620 --> 02:34:15,620
+Now I repeat AAB, AAB, AAB, AAB, AAB, AAB, AAB, AAB, BAA.
+
+940
+02:34:17,780 --> 02:34:43,084
+AAB, BAA, AAB, AAB, AAB, BAA, BAA, AAB, BAA, B
+
+941
+02:34:44,180 --> 02:34:59,540
+BA, BA, BA, AAB, and BA, BA, BA, BA, and so on.
+
+942
+02:35:02,439 --> 02:35:05,159
+Okay, you can write.
+
+943
+02:35:06,260 --> 02:35:10,360
+What about the Cleanup Plus operation, C plus?
+
+944
+02:35:14,548 --> 02:35:24,028
+By definition, it is C star minus epsilon.
+
+945
+02:35:25,828 --> 02:35:27,668
+So, what we have?
+
+946
+02:35:31,636 --> 02:35:32,096
+Hmm?
+
+947
+02:35:39,924 --> 02:35:49,044
+So let us have this, copy, paste.
+
+948
+02:35:54,260 --> 02:35:56,739
+And there will be no epsilon.
+
+949
+02:35:57,959 --> 02:35:59,200
+So I delete this.
+
+950
+02:36:02,220 --> 02:36:02,840
+Okay.
+
+951
+02:36:04,360 --> 02:36:06,239
+You use the definition.
+
+952
+02:36:09,971 --> 02:36:14,351
+Again, copy.
+
+953
+02:36:18,260 --> 02:36:18,940
+Pest.
+
+954
+02:36:20,520 --> 02:36:29,940
+Let's say A is, D is not a subset of C, of course.
+
+955
+02:36:31,380 --> 02:36:33,119
+And what about this one?
+
+956
+02:36:37,220 --> 02:36:38,840
+This is empty set.
+
+957
+02:36:39,779 --> 02:36:41,500
+This is string AA.
+
+958
+02:36:42,239 --> 02:36:44,220
+The reverse of it is what?
+
+959
+02:36:45,203 --> 02:37:06,903
+AA, AB, this is the string, reverse of it is BA. AABAB, the reverse of this is BABAA, okay? The reverse of empty string is empty string.
+
+960
+02:37:10,644 --> 02:37:11,144
+Okay.
+
+961
+02:37:13,144 --> 02:37:13,943
+Any questions?
+
+962
+02:37:17,747 --> 02:37:19,288
+Ok, very good.
+
+963
+02:37:20,567 --> 02:37:22,808
+Let me write another questions.
+
+964
+02:37:24,648 --> 02:37:24,988
+Three.
+
+965
+02:37:27,988 --> 02:37:29,988
+For each...
+
+966
+02:37:42,644 --> 02:38:00,984
+For each of the following parts, given example.
+
+967
+02:38:07,412 --> 02:38:09,252
+Give a brief explanation.
+
+968
+02:38:19,827 --> 02:38:20,347
+Okay.
+
+969
+02:38:23,347 --> 02:38:25,547
+So, the first one is this.
+
+970
+02:38:27,147 --> 02:38:30,667
+S star is equal to S plus.
+
+971
+02:38:43,443 --> 02:38:43,923
+Tamam.
+
+972
+02:38:46,664 --> 02:38:51,043
+Actually, here, I will tell you something.
+
+973
+02:38:53,844 --> 02:39:08,724
+Here, we have the epsilon. The set has epsilon. Bak, buradayı tekrarlıyorum. C kümesinin içinde eleman var, epsilon. Epsilon ne olacak? Burada esasında yazmadığım şeyler var. Neler var?
+
+974
+02:39:10,131 --> 02:39:37,611
+Epsilonlar, Epsilonlarla konkateniyet de olmuş olabilir. Değil mi? Epsilon kendisiyle konkateniyet de olmuş olabilir. Yani Epsilon, Epsilon, Epsilon, Epsilon, Epsilon, Epsilon, Epsilon, Epsilon, Epsilon, Epsilon, Epsilon. Böyle gidebilir değil mi? Ama bunların hepsini biz ne yaptık? Bir sürü Epsilon var. Yani burada eğer,
+
+975
+02:39:38,899 --> 02:40:04,000
+Kümenin elemanı bir tane epsilon içeriyorsa ise, klinistar operasyonunda artıyı çıkartıyoruz ya, artıyı çıkartıyoruz, öyleyse burada yine ne olur? Epsilon olmak zorunda. Tamam? Bunu bu şekilde anlattım ki aklınızda otursun.
+
+976
+02:40:04,852 --> 02:40:30,463
+Yani, bu
+
+977
+02:40:30,463 --> 02:40:46,304
+The star operation will not be same. Be careful. I will, I will not repeat. Now you understand the way. Okay, very good. Now, what is this? You are asked to give an example.
+
+978
+02:40:47,484 --> 02:40:57,684
+Clean star operation of a set is equal to the clean plus star, clean plus operation of the set. If you say that these are the same, means that
+
+979
+02:41:01,747 --> 02:41:11,327
+İmpliyiz, that, implies, empty string is element of S.
+
+980
+02:41:15,028 --> 02:41:16,907
+Empties element of the set.
+
+981
+02:41:17,747 --> 02:41:18,067
+Okay.
+
+982
+02:41:19,968 --> 02:41:25,407
+Example, that means write set is like this, empty string and A.
+
+983
+02:41:27,028 --> 02:41:27,828
+Okay.
+
+984
+02:41:28,547 --> 02:41:29,468
+This is the set.
+
+985
+02:41:29,468 --> 02:41:32,468
+So, S star is...
+
+986
+02:41:40,564 --> 02:41:42,564
+ve so on.
+
+987
+02:41:42,564 --> 02:41:47,564
+And the S plus is same.
+
+988
+02:41:59,603 --> 02:42:00,603
+Okay.
+
+989
+02:42:02,603 --> 02:42:03,603
+What about this one?
+
+990
+02:42:05,603 --> 02:42:07,103
+The set is,
+
+991
+02:42:08,403 --> 02:42:11,103
+CleanItStarOperation is not equal to the...
+
+992
+02:42:12,804 --> 02:42:14,103
+This implies that...
+
+993
+02:42:19,252 --> 02:42:22,731
+Empty string is not the element of the set.
+
+994
+02:42:25,252 --> 02:42:29,572
+For example, S star is equal.
+
+995
+02:42:31,731 --> 02:42:36,292
+Let me give an example to set.
+
+996
+02:42:37,452 --> 02:42:42,772
+It has only this and S star is.
+
+997
+02:42:46,100 --> 02:42:55,880
+Epsilon, A, AA, AAA, AAA, A, and so on.
+
+998
+02:42:57,319 --> 02:42:59,180
+What about S plus?
+
+999
+02:43:03,347 --> 02:43:04,387
+By definition,
+
+1000
+02:43:09,876 --> 02:43:11,015
+S+,
+
+1001
+02:43:16,180 --> 02:43:22,540
+S star minus epsilon and the end.
+
+1002
+02:43:33,332 --> 02:43:35,711
+Not element of S.
+
+1003
+02:43:35,952 --> 02:43:47,652
+So by definition, then this is equal to A, AA, AAA, AAA, and so on.
+
+1004
+02:43:49,652 --> 02:43:50,332
+Okay.
+
+1005
+02:43:55,603 --> 02:43:56,603
+Bu ne?
+
+1006
+02:44:00,979 --> 02:44:02,119
+One second.
+
+1007
+02:44:15,540 --> 02:44:18,100
+Another example.
+
+1008
+02:44:22,100 --> 02:44:25,020
+Okay.
+
+1009
+02:44:26,460 --> 02:44:27,860
+This one, see?
+
+1010
+02:44:31,603 --> 02:44:33,463
+My questions for C.
+
+1011
+02:44:39,700 --> 02:44:40,020
+Ok?
+
+1012
+02:44:44,084 --> 02:44:45,344
+Can you give an example?
+
+1013
+02:44:51,987 --> 02:44:53,127
+İmpli, sted,
+
+1014
+02:44:58,355 --> 02:45:00,355
+Empty string is element of...
+
+1015
+02:45:04,659 --> 02:45:05,380
+The set.
+
+1016
+02:45:06,380 --> 02:45:08,540
+So, this is the set.
+
+1017
+02:45:10,159 --> 02:45:11,459
+Let's say.
+
+1018
+02:45:12,500 --> 02:45:17,959
+But, but, the size of set is.
+
+1019
+02:45:21,587 --> 02:45:22,628
+İnfinite.
+
+1020
+02:45:25,367 --> 02:45:27,387
+Okay, let me give an example.
+
+1021
+02:45:28,507 --> 02:45:39,747
+This is, let's say, this is epsilon A, double A, triple A, quadruple A, and so on.
+
+1022
+02:45:39,747 --> 02:45:44,808
+The size of S is infinite, the size of set is infinite.
+
+1023
+02:45:45,827 --> 02:45:47,587
+So what about the S?
+
+1024
+02:45:49,396 --> 02:45:52,056
+Star is the same set.
+
+1025
+02:46:01,139 --> 02:46:07,759
+So, we say that set is equal to its cleanstar operation set.
+
+1026
+02:46:07,759 --> 02:46:08,299
+Okay?
+
+1027
+02:46:12,020 --> 02:46:16,620
+ve bir diğer örneğe, bir dakika.
+
+1028
+02:46:29,332 --> 02:46:39,612
+Another example, D, set is not equal to clean star operation.
+
+1029
+02:46:44,275 --> 02:46:46,456
+Actually, it implies that.
+
+1030
+02:46:52,211 --> 02:46:57,811
+The size of set is less than infinity.
+
+1031
+02:47:00,631 --> 02:47:07,391
+Example, let's say this is the set A and the cleaning style operation is
+
+1032
+02:47:15,507 --> 02:47:21,927
+So you see that set is not equal to the its cleanstar operated set.
+
+1033
+02:47:34,004 --> 02:47:40,004
+So, my last question is, give an example.
+
+1034
+02:47:43,004 --> 02:47:44,004
+Example.
+
+1035
+02:47:48,308 --> 02:47:53,948
+Offset of strings,
+
+1036
+02:47:53,948 --> 02:47:58,348
+such that
+
+1037
+02:47:58,348 --> 02:48:03,108
+its Clinistar operation
+
+1038
+02:48:03,108 --> 02:48:06,188
+is
+
+1039
+02:48:06,188 --> 02:48:07,628
+finite.
+
+1040
+02:48:10,355 --> 02:48:16,135
+As you see that, when you apply the clean star operation, the size of the set goes to infinity.
+
+1041
+02:48:16,795 --> 02:48:24,236
+But is there any example that you have a set, its clean star operation is finite?
+
+1042
+02:48:26,975 --> 02:48:28,755
+Hocam boş kime olabilir mi?
+
+1043
+02:48:35,443 --> 02:48:36,963
+Let me, let us think.
+
+1044
+02:48:39,804 --> 02:48:40,443
+Okay.
+
+1045
+02:48:41,863 --> 02:48:43,583
+Empty string olabilir mi hocam?
+
+1046
+02:48:44,304 --> 02:48:46,043
+Let us think both.
+
+1047
+02:48:46,243 --> 02:48:46,463
+Okay.
+
+1048
+02:48:46,783 --> 02:48:51,063
+Let's say this is a set of strings.
+
+1049
+02:48:53,503 --> 02:48:57,363
+The first case is this one.
+
+1050
+02:48:58,383 --> 02:48:58,883
+Okay.
+
+1051
+02:49:00,003 --> 02:49:00,804
+And
+
+1052
+02:49:01,716 --> 02:49:05,695
+Its cleanest operation is this one.
+
+1053
+02:49:07,216 --> 02:49:09,036
+And yes, it's correct.
+
+1054
+02:49:09,495 --> 02:49:16,976
+So this is equal to one and it is less than infinity.
+
+1055
+02:49:17,275 --> 02:49:19,175
+Yes, this is empty string.
+
+1056
+02:49:19,855 --> 02:49:21,056
+Empty set is true.
+
+1057
+02:49:22,056 --> 02:49:25,536
+The other one also.
+
+1058
+02:49:27,603 --> 02:49:29,763
+Let me write this in purple.
+
+1059
+02:49:32,644 --> 02:49:34,503
+Empty string set.
+
+1060
+02:49:36,503 --> 02:49:39,103
+So it's clean star operation is.
+
+1061
+02:49:41,863 --> 02:49:42,703
+Okay.
+
+1062
+02:49:46,515 --> 02:49:48,515
+ve aynı şekilde,
+
+1063
+02:49:49,515 --> 02:49:50,515
+bu,
+
+1064
+02:49:52,515 --> 02:49:54,515
+z'eqlo 1,
+
+1065
+02:49:56,515 --> 02:49:57,515
+infinit.
+
+1066
+02:49:58,515 --> 02:49:59,515
+Benim sorumum bu,
+
+1067
+02:50:03,156 --> 02:50:05,296
+Can you give?
+
+1068
+02:50:09,620 --> 02:50:11,240
+Two sets
+
+1069
+02:50:14,995 --> 02:50:20,795
+Their Klinik operasyon,
+
+1070
+02:50:22,395 --> 02:50:28,295
+Operated Sets are equal.
+
+1071
+02:50:32,211 --> 02:50:36,051
+Sınavda tabu böyle yazmayız. Sınavda şöyle yazarız.
+
+1072
+02:50:36,051 --> 02:50:59,932
+Let A and B be two sets such that clean start operation of set is equal to
+
+1073
+02:50:59,984 --> 02:51:02,824
+Cleanse and operator set B.
+
+1074
+02:51:03,824 --> 02:51:11,544
+Then, what are A and B?
+
+1075
+02:51:13,704 --> 02:51:15,024
+What are these?
+
+1076
+02:51:16,244 --> 02:51:18,504
+A is the empty set.
+
+1077
+02:51:19,443 --> 02:51:25,283
+B is the empty string.
+
+1078
+02:51:26,675 --> 02:51:29,216
+B is the set that has only the N string.
+
+1079
+02:51:29,935 --> 02:51:30,736
+Any questions?
+
+1080
+02:51:34,388 --> 02:51:35,028
+Ok.
+
+1081
+02:51:44,115 --> 02:51:52,036
+Actually, we can try to develop the, okay, what is NFA, what is DFA?
+
+1082
+02:51:53,255 --> 02:52:03,536
+Also, I can, okay, today I will share you also the questions and the answer, please study them before coming to class.
+
+1083
+02:52:03,536 --> 02:52:10,916
+So, it will be, there will be exam, quiz next week.
+
+1084
+02:52:11,924 --> 02:52:19,924
+Bu, eğer, bu seti var,
+
+1085
+02:52:23,028 --> 02:52:25,188
+Example, questions.
+
+1086
+02:52:28,108 --> 02:52:30,108
+Questions, we have the set given.
+
+1087
+02:52:30,387 --> 02:52:34,168
+Let's say this is epsilon, B and AB.
+
+1088
+02:52:36,168 --> 02:52:49,368
+Design a DFA that accepts the language.
+
+1089
+02:52:51,667 --> 02:52:54,847
+A, okay, that accepts language A.
+
+1090
+02:52:56,288 --> 02:52:58,768
+No need to say right here, okay.
+
+1091
+02:53:00,147 --> 02:53:02,587
+So how can we design the DFA?
+
+1092
+02:53:03,347 --> 02:53:04,407
+Very simple.
+
+1093
+02:53:05,487 --> 02:53:07,487
+We will have the start state.
+
+1094
+02:53:08,567 --> 02:53:10,367
+Okay, this is start state.
+
+1095
+02:53:12,347 --> 02:53:17,987
+And empty string, you see that it has the empty string, so it will accept it.
+
+1096
+02:53:19,028 --> 02:53:43,028
+So, start state is a final state also. And then, what is our alphabet? Alphabet is here A and B. And then what will happen for A, because DFA, for B, the number of outgoing transitions is 2. Why? Because the size of...
+
+1097
+02:53:44,628 --> 02:53:49,148
+Alphabet is 2. So the number of outgoing transitions must be 2.
+
+1098
+02:53:49,927 --> 02:53:55,128
+Okay, as you see. So I went to another state. Let's say this is Q1.
+
+1099
+02:53:55,927 --> 02:53:58,907
+And I went to another state. Let's say this is Q2.
+
+1100
+02:53:59,828 --> 02:54:01,208
+And Q1.
+
+1101
+02:54:02,100 --> 02:54:28,840
+You see that you went to Q2 by input B, and B is the element of the set, B is the element of the language, so this is also, this is also final state, and then for each state should have two outgoing transitions.
+
+1102
+02:54:29,652 --> 02:54:32,252
+A and B from the alphabet.
+
+1103
+02:54:32,572 --> 02:54:38,632
+Also, this must have two outgoing transitions for A and B.
+
+1104
+02:54:39,531 --> 02:54:39,672
+Okay.
+
+1105
+02:54:40,191 --> 02:54:43,691
+So this is, these are the new states.
+
+1106
+02:54:45,191 --> 02:54:45,592
+Okay.
+
+1107
+02:54:46,132 --> 02:54:56,512
+Let's say this is Q3, Q4, Q5, and Q6.
+
+1108
+02:54:57,396 --> 02:54:58,396
+Ok?
+
+1109
+02:54:58,396 --> 02:55:10,396
+And you see that AB here is an element of the language, so these must be final states. The others should not.
+
+1110
+02:55:10,396 --> 02:55:18,396
+So what you can do, you can combine these states like this, or you can write like this.
+
+1111
+02:55:22,164 --> 02:55:26,763
+AB, AB, AB.
+
+1112
+02:55:28,043 --> 02:55:28,684
+Okay.
+
+1113
+02:55:29,404 --> 02:55:30,164
+Is it finished?
+
+1114
+02:55:30,364 --> 02:55:32,283
+No, because look at this state.
+
+1115
+02:55:32,724 --> 02:55:36,443
+The number of outgoing states here is still zero.
+
+1116
+02:55:36,684 --> 02:55:37,884
+You have to make it two.
+
+1117
+02:55:38,564 --> 02:55:40,144
+So I define another state.
+
+1118
+02:55:42,004 --> 02:55:44,864
+Here I go for A and B together.
+
+1119
+02:55:44,864 --> 02:55:47,884
+So it means there are two transitions.
+
+1120
+02:55:48,819 --> 02:55:51,899
+Bu bir başka state.
+
+1121
+02:55:51,899 --> 02:55:53,619
+Bu bir k7.
+
+1122
+02:55:54,260 --> 02:55:55,100
+Q7, bu k7.
+
+1123
+02:55:55,100 --> 02:55:55,760
+Bu k7, bu k7.
+
+1124
+02:55:55,959 --> 02:55:56,299
+Hayır.
+
+1125
+02:55:57,420 --> 02:55:58,299
+Bu k7, bu k7.
+
+1126
+02:55:59,659 --> 02:56:00,959
+A ve B.
+
+1127
+02:56:01,979 --> 02:56:02,239
+Tamam.
+
+1128
+02:56:03,199 --> 02:56:13,819
+Bu k7.
+
+1129
+02:56:15,700 --> 02:56:32,600
+Why? Because the number of outgoing transitions is equal to the length of the alphabet. And we can simplify it. I can delete this. Look at this. Q3 and Q4 are the same states. They are doing the same thing. So I delete this.
+
+1130
+02:56:34,800 --> 02:56:39,300
+And I put it here, A, B. Okay, two transitions. Okay, good.
+
+1131
+02:56:40,115 --> 02:56:45,115
+ve Q4 ve Q5 aynı, aynı şeyleri yapıyorlar.
+
+1132
+02:56:49,876 --> 02:56:57,275
+A ve B, A ve B, A ve Q4 ve Q7 sonucu aynı.
+
+1133
+02:56:59,515 --> 02:57:01,236
+So, I delete this.
+
+1134
+02:57:04,724 --> 02:57:06,884
+Take this, AB.
+
+1135
+02:57:07,664 --> 02:57:14,243
+Now, this is DFA, and you designed the DFA that recognizes the language A.
+
+1136
+02:57:15,243 --> 02:57:17,984
+What about NFA? NFA is very simple.
+
+1137
+02:57:23,623 --> 02:57:25,664
+Bakayım, yes, ABmiş.
+
+1138
+02:57:25,664 --> 02:57:32,184
+Okay, in this case, we have to say this is, yes.
+
+1139
+02:57:33,363 --> 02:57:35,723
+One second. Yes, you are right.
+
+1140
+02:57:39,316 --> 02:57:40,236
+You're right.
+
+1141
+02:57:43,175 --> 02:57:45,775
+Let me change the names.
+
+1142
+02:57:49,587 --> 02:57:51,308
+This is A, this is B.
+
+1143
+02:57:52,468 --> 02:57:53,027
+Okay.
+
+1144
+02:57:53,628 --> 02:57:54,847
+And A, B.
+
+1145
+02:57:55,688 --> 02:57:56,047
+Yes.
+
+1146
+02:57:57,188 --> 02:57:58,087
+Okay, okay.
+
+1147
+02:58:00,907 --> 02:58:04,007
+Let me write like this.
+
+1148
+02:58:05,387 --> 02:58:09,788
+Instead of changing everything, because we have no time, so I will change this to B.
+
+1149
+02:58:10,788 --> 02:58:12,948
+This is much, much better.
+
+1150
+02:58:13,308 --> 02:58:13,567
+Okay?
+
+1151
+02:58:14,451 --> 02:58:15,791
+Hocam, bir şey sorabilir miyim?
+
+1152
+02:58:15,991 --> 02:58:16,252
+Yes.
+
+1153
+02:58:16,791 --> 02:58:20,912
+Now, let me finish the DFA, then you can ask, okay?
+
+1154
+02:58:21,451 --> 02:58:21,691
+Okay.
+
+1155
+02:58:21,691 --> 02:58:34,451
+So, NFA, the first is empty string, so the start state must be the final state, so this is Q0 because of empty string, and then you will accept.
+
+1156
+02:58:38,548 --> 02:58:44,468
+And then this is Q1, and then you, this is also a state.
+
+1157
+02:58:48,340 --> 02:58:55,340
+bu
+
+1158
+02:59:01,492 --> 02:59:02,031
+Yes.
+
+1159
+02:59:05,620 --> 02:59:11,860
+Hocam, Q1'den Q4'e geçerken A, B var ya, orada birini mi seçebiliyoruz manasına geliyor?
+
+1160
+02:59:12,280 --> 02:59:17,220
+I understand it, it means that there are two transitions.
+
+1161
+02:59:18,220 --> 02:59:19,180
+Tamam, teşekkür ederim.
+
+1162
+02:59:19,659 --> 02:59:24,020
+Like this. Here and here, A and B.
+
+1163
+02:59:25,060 --> 02:59:29,340
+Instead of writing two transitions, you write one transition and you put two symbols.
+
+1164
+02:59:30,227 --> 02:59:59,199
+Tamam, teşekkür ederim.
+
+1165
+02:59:53,363 --> 02:59:55,843
+Please, study these questions.
+
+1166
+02:59:56,343 --> 02:59:58,003
+And also, I will share the example.
+
+1167
+02:59:59,503 --> 03:00:03,883
+And next week, we will have the quiz.
+
+1168
+03:00:04,943 --> 03:00:06,343
+Okay, my friends.
+
+1169
+03:00:07,484 --> 03:00:10,223
+Thank you for your attendance today.
+
+1170
+03:00:11,304 --> 03:00:15,943
+I hope the lecture was free for you.
+
+1171
+03:00:16,852 --> 03:00:26,731
+And please, before coming to the class next week, study the lectures we already see.
+
+1172
+03:00:27,052 --> 03:00:27,231
+Okay?
+
+1173
+03:00:27,792 --> 03:00:29,231
+So this is very important.
+
+1174
+03:00:30,512 --> 03:00:41,231
+I will share the questions, some example questions, and also I will share the slides now.
+
+1175
+03:00:41,852 --> 03:00:42,192
+Okay?
+
+1176
+03:00:42,772 --> 03:00:43,712
+See you next week.
+
+1177
+03:00:44,468 --> 03:00:46,828
+Sağlıcakla kalın. Kendinize iyi bakın.
+
+1178
+03:00:48,228 --> 03:00:48,888
+İyi günler hocam.
+
+1179
+03:00:48,888 --> 03:00:49,948
+İyi günler.
+
+1180
+03:00:49,948 --> 03:00:50,868
+Kolay gelsin.

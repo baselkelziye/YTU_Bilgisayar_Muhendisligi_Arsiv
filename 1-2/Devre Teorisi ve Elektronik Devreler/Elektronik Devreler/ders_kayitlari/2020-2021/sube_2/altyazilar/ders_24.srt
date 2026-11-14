@@ -1,0 +1,1467 @@
+1
+00:05:55,764 --> 00:05:57,564
+Selam arkadaşlar, sesimi duyuyor musunuz?
+
+2
+00:05:59,444 --> 00:06:00,264
+Evet hocam.
+
+3
+00:06:02,484 --> 00:06:03,223
+Evet, merhabalar.
+
+4
+00:06:14,196 --> 00:06:18,556
+Biraz sayımız artsın. Ben soruyu 5 dakika önceden koydum. Piyazaya.
+
+5
+00:06:21,756 --> 00:06:25,975
+Siz de bu sırada biraz şöyle bir göz gezdirin, anlamaya çalışın. Soruyu ben hazırladım.
+
+6
+00:06:29,816 --> 00:06:33,396
+İşleri basitleştirme niyetiyle hazırladım aslında, öyle söyleyeyim.
+
+7
+00:06:35,436 --> 00:06:37,236
+İyi niyetle yani gayet.
+
+8
+00:06:37,908 --> 00:07:00,848
+Hangi elemanın konulacağının figürünün resimine kadar koymaya çalıştım şey olmasın diye. Önceden duyurduğum çalışma konularıyla da zaten aynı şeyleri sordum. Derste birebir olan bir blok olmayabilir ama bunlar MOSFET konusunda aslında en az zahmetli hesaplama yapılacak alt konu başlıkları. O yüzden bunu seçtim.
+
+9
+00:07:03,764 --> 00:07:13,744
+Bu konuda işinden çıkamayız hesaplarla. Laboratuvarın da zamanımız az olduğu için çok güzel sorular olmuş oldu. Böylece hızlıca ve basitçe yapılabilecek şekilde.
+
+10
+00:07:14,723 --> 00:07:16,163
+Hocam başlamadan bir şey sorabilir miyim?
+
+11
+00:07:16,723 --> 00:07:21,204
+Ben bitireyim hemen hepsini sorarsınız sonra. Benim aklıma söyleyeceklerim var. Labları falan soracaksınız büyük ihtimalle.
+
+12
+00:07:21,223 --> 00:07:23,084
+Yok hayırlı lab harcında. Proje için soracak.
+
+13
+00:07:23,084 --> 00:07:30,184
+Onu da açıklayacağım. Biz Alper Hoca ile bu hafta, önümüzdeki hafta büyük ihtimalle bir toplantı yapacağız. Bir kısmını tabii ki okuduk.
+
+14
+00:07:30,708 --> 00:07:46,348
+Amacımız herkese eşit olarak, olumluca, yani tabii ki hak hukuk çerçevesinde herkese eşit olacak şekilde olumlu bir şey izlemek. O sebeple sonuçları bir daha bir gözden geçirsek iyi olacak gibi sanki açıklamadan önce.
+
+15
+00:07:47,388 --> 00:07:49,288
+Rapor için bir taslak yayınlayacak mısınız?
+
+16
+00:07:49,488 --> 00:07:58,288
+Taslağı yayınladı Alper hocanız. Onu da hepsini söyleyeceğim. Ben bitireyim eğer eksik kalırsa sorarsınız. Dolayısıyla notlarınız...
+
+17
+00:07:58,579 --> 00:08:18,980
+Bu durum bu. Onun dışında projeyle ilgili konularınızı seçtiniz zaten. Şu an yapıyor olmalısınız. Eğer henüz başlamadıysanız hemen sipariş verin malzemelerinizi. Çok cüzi yazdığınız devrelerin elemanları yani sizi sıkmaz. İstediğiniz herhangi bir yerden satın alabilirsiniz.
+
+18
+00:08:19,507 --> 00:08:44,327
+Evde birinci şeyimiz güvenlik. O sebeple zaten sadece pilli devreler istemiştik. Yani size hiç zararlı olma ihtimali olmayan o kadar akım çekemez çünkü. Onun dışında yani duvardaki elektrik prizleriyle hiçbir işiniz kesinlikle yok. Yani eğer öyle bir adaptör bağladım, oradan akım aldım, gerilimi buradan verdim falan kesinlikle kabul yok yani. Biliyorsunuz proje bittikten sonra bir video çekeceksiniz 3-4 dakikalık veya birkaç dakikalık neyse.
+
+19
+00:08:45,299 --> 00:09:07,699
+Beş dakikayı geçmeyin ama. Bir de rapor hazırlayacaksınız. Hepiniz projelerinizi seçtiniz. Malzemelerinizi edinip şu an deniyor olabilirsiniz evde. Bir breadboard olması lazım tabii bunun için. Görmüşsünüzdür zaten hobi sitelerinde. Az çok size yönlendirmiştir. Araştırdığınız kadarıyla. Onun üzerine kuracaksınız. Bir pil sluta alın yazmıştım proje dökümanının içine.
+
+20
+00:09:08,563 --> 00:09:25,504
+O pil ile onu besleyeceksiniz o kadar. Yani hiç güvenlikle ilgili en ufak bir soru işareti olmaması lazım. İki tane pil veya 9 voltluk pil dışında bir şey olmaması lazım projenin içerisinde. Yazılan yorumlara dikkat edin. Yorumlar yazmış ben ve Alper hocanız.
+
+21
+00:09:25,971 --> 00:09:43,851
+Bazılarınız onun bazılarını benim yazdığımı düşünmüş ama üst taraf Alper hocaya. Turuncu çizginin alt kısmı bana ait. O sebeple hangi hocanın yazdığını oradan anlayabilirsiniz. Sonradan yazılanlar alttakiler bana ait. Dolayısıyla bana yoruma bak yazılmış bende yorum yok diyen arkadaş için örneğin o yorumu ben yazmamıştım.
+
+22
+00:09:44,788 --> 00:09:58,008
+Onun dışında bir format var o soruya gelirsek eğer. Formatı Alper hocanız yayınlamıştı daha önceden. Yayınlamadıysa yine yayınlarız. Sorun değil. Onun üzerinden gidecektim zaten hemen ancak. Bir saniye.
+
+23
+00:10:01,875 --> 00:10:28,375
+Projenin ismini yazdınız, kişisel bilgilerinizi yazdınız. Ardından sonuçlarınızı, devre diagramınızı, devre ve komponentlere ilişkin, bunların bilgisini birbirleriyle olan ilişkilerini, daha teknik olarak izahını yaptığınız kısım ve bir de şuradan aldım, buradan aldım gibi teknik anlamda bir siteden aldıysanız eğer, kendiniz tasarladıysanız, kendiniz tasarladığınızı belirttiğiniz Related Link diye bir şey var. Bu format olmalı sizde var değil mi arkadaşlar bu format?
+
+24
+00:10:31,731 --> 00:10:33,391
+Ben ekrana bir şey yansıtmıyorum bu arada.
+
+25
+00:10:34,011 --> 00:10:37,311
+Nereden bakıyorsunuz hocam? Benim bir bilgim yok okumda. Ben de onu soruyordum size.
+
+26
+00:10:38,871 --> 00:10:39,591
+Evet hocam var.
+
+27
+00:10:40,851 --> 00:10:43,151
+Vardı mı? Daha önceden yayınlandı diye hatırlıyorum ben.
+
+28
+00:10:43,391 --> 00:10:43,651
+Evet.
+
+29
+00:10:44,611 --> 00:10:46,432
+Bakalım mesela neredeymiş?
+
+30
+00:10:47,031 --> 00:10:50,331
+Muafiyet, lab ve proje hakkında diye bir başlık var.
+
+31
+00:10:51,291 --> 00:10:52,371
+Buralarda bir yerde mi acaba?
+
+32
+00:10:54,035 --> 00:10:55,735
+Laboratuvar ve Proje Duyurusu.
+
+33
+00:10:55,995 --> 00:11:03,695
+Laboratuarla ilgili PDF'in içinde iki tane link vardı sanki. Birisi ilk ödevi projeyi seçeceğimiz rapordu.
+
+34
+00:11:03,695 --> 00:11:05,755
+Evet, aynen öyle. Bak ben söylüyorum şimdi sana.
+
+35
+00:11:07,596 --> 00:11:12,315
+Duyurularda 7 Nisan'da yayınlanan bir duyuru var. Laboratuvar ve Proje Duyurusu diye.
+
+36
+00:11:12,980 --> 00:11:29,019
+Onun için de proje 2.üstüste bir link verilmiş, Drive linki. Ona tıkladığınız zaman bir tane size bir şey açılıyor, döküman açılıyor. Arkadaşınızın dediği linkler de orada. Burada kırmızıyla yazdığım çok önemli uyarı, onu ben yazdım. Az önce bahsettiğim güvenlik uyarısıydı, onu bir daha dillendirmiş olalım.
+
+37
+00:11:29,960 --> 00:11:38,400
+İşte teslime ve puanlamaya ilişkin burada birkaç bir şey var, 3 adımda hatırlarsanız. Proje önerisini bitirdik zaten. Raporu ve demo videosu kaldı.
+
+38
+00:11:39,347 --> 00:12:04,008
+Videoyu işte örneğin kapalı olarak kimsenin görmeyeceği şekilde YouTube'a yükleyip onun linkini paylaşabilirsiniz liste dışı olarak veya herhangi bir drive'a. Raporunuzun içine de onun linkini koyarsınız. Beş numaralı maddede linklerde bu proje dokümanında proje final için bir drive linki var. Biz bunları olmadığı yakında tekrar ben bir daha bir üzerinden yayınlarım. O final şeyi orada. Final dokümana tıklıyorum mesela şu an oldum. Aynen öyle.
+
+39
+00:12:06,196 --> 00:12:17,456
+Bunun içinde de istediğimiz alt başlıklar belli. Böyle 5-6 sayfayı geçmeyecek şekilde ama simülasyonlarınızı, devrelerinizi, kullandığınız malzemeleri birbirleriyle olan ilişkili, yani bunu hobi devresi olarak düşünmeyip
+
+40
+00:12:17,711 --> 00:12:43,331
+Teknik açıdan elektronik aldığınız dersin temellerini uyguladığınız veya uygulamasanız bile çıkarım yaptığınız yerleri mutlaka belirtin. Örneğin burada bu transistör var. Bu işte yüksek frekansta böyle davrandığı için çıkışta bu sonucu veriyor gibi bizim beklediğimiz yorumlar bunlar. Rapor hazırlarken bunlara dikkat edin. Bir de dediğim gibi böyle devrenizi çalıştırıp bir çektiğiniz video olacak. Orada da devrenizi tanıtın.
+
+41
+00:12:43,764 --> 00:13:06,844
+İşte burada bu var, şurada şu var. Şuradan şunu anladım. Böyle problemlerle karşılaştım. Hem raporda hem videoda. Örneğin düğmeye basıyorum. Çıkışta şu ledler yanıyor gibi. Böyle demonuz olacak. Bu kadar. Yüksek ihtimalle 15 Haziran diye konuştuk az önce Alper hocanızla. Finallerin ilk haftası oluyor herhalde. Yalnız sen beni düzeltin. 15 Haziran'a kadar.
+
+42
+00:13:07,572 --> 00:13:21,831
+Bu işi de bitirelim. Uzamaz büyük ihtimalle bu artık çünkü final haftası. Bunu siz biz aslında hafta sonu diyecektik finallerden önceki ama birkaç gün daha verelim dedik. 15 Haziran ne kadar yüklenecek? Başka sorusu olan var mı bu konularla ilgili?
+
+43
+00:13:28,244 --> 00:13:35,943
+Tamam. Şimdi dökümanı açabilirsiniz. Hepiniz önünüzdedir zaten. İncelemişsinizdir de. Ben de bir daha açayım şuradan.
+
+44
+00:13:39,144 --> 00:13:47,084
+Şimdi iki tane soru var arkadaşlar. Ben ekranı paylaşmıyorum. Sayfa sayfa söyleyeceğim. Sizde böylece dikkatiniz, dökümanınızda olmuş olur.
+
+45
+00:13:47,903 --> 00:13:54,084
+Aynı kurallar geçerli. İsimlendirme, yükleme vesaireyle ilgili. Birazdan linki paylaşırım Google Form için.
+
+46
+00:13:54,707 --> 00:14:19,548
+Birinci soru sentez sorusu. Sentez bir devreyi tasarlamak demek. Tabii ki siz de burada sıfırdan bir, yani böyle kendiniz transistörleri bir araya kombine ederek tasarım yapmanızı istemiyoruz. Biz MOSFET'leri CMOS teknolojisi adı altında, yani içinde hem PMOS'ların hem NMOS'ların olduğu bu komplementary logic deniyor buna. Bu konfigürasyon da kullanarak lojik kapıları tasarlayabiliyoruz.
+
+47
+00:14:22,355 --> 00:14:41,975
+Burada NAT kapısının tasarımıyla ilgili. İnternete eğer NAT, işte inverter, logic gate, using, MOSFET yazarsanız zaten devresi çıkar. Ben zaten şeyde yazmıştım bunu konuların arasına da çalışmak için. Burada hangi malzemeleri kullanmamız gerektiği, yani Proteus'ta hangi kütüphaneden hangi malzemeleri seçeceğimiz yazıyor.
+
+48
+00:14:47,604 --> 00:15:10,704
+Önce el ile bunu bir yere çizmek. Buradaki amacımız şu, bu devrenin, işte tabii ki internetten bakacaksınız yani buna, acaba CMOS'larla MOSFET nasıl tasarlanıyormuş diye göreceksiniz. Ama onun girişi var, çıkışı var, toprak bağlantısı var, bir de besleme voltajı var. Burada bence dikkat edilmesi gereken şey devrede iki tane kaynağın olduğu. Bunlardan biri giriş, biri besleme.
+
+49
+00:15:11,412 --> 00:15:35,951
+Bu beslemenin ve toprağın birbirleriyle olan aslında çıkışta görülmesi açısından bir önemi var. Dolayısıyla ilk şıkta sizi bunu elle çizip, devreyi elle çizerek, transistörleri, girişleri, çıkışları, toprakları elle çizerek özellikle giriş gerilimi, çıkış gerilimi, besleme yani source voltajı, bu DC olacak. Bir de toprağı elle göstermenizi istiyoruz. Neresi, neresi çizdikten sonra.
+
+50
+00:15:36,532 --> 00:15:40,392
+Onu ilk sayfadaki ilk kutuya yapıştırıyorsunuz. Sonra B şıkkına geldik.
+
+51
+00:15:41,692 --> 00:15:43,092
+Sorusu olan varsa hemen kesebilir.
+
+52
+00:15:45,427 --> 00:16:11,807
+Burada devreyi proteosta tasarlıyoruz. Devreyi proteosta tasarlıyoruz. Yani aynı elle çizdiğimizi proteosta alıyoruz aslında sadece. Ama burada şeylere dikkat edin. Kaynakları olabildiği kadar bağlamaya, en azından beslemeyi toprağa, giriş ve çıkışta gözlemleyebilmek adına probları bağlamaya dikkat edin. Henüz giriş geriliminden, yani girişe uygulanacak olan işaretten bahsetmedim. Buraya da onun ekran çıkısını koyuyorsunuz. B şıkkının olduğu yere. C şıkkında.
+
+53
+00:16:12,500 --> 00:16:33,740
+Artık devreyi bir sinyalle beslememiz gerekiyor. Bakın adım adım gidiyoruz. Yani bu sıralamada gitmesek hiçbir şey söylemeyip yapın da denilebilirdi. O zaman besleme montajını nereye bağlayacağız? İşte neresine, nedir, ne değildir işin içinden çıkamayabilirsiniz. Ama burada öyle bir durum yok. C şıkkına kadar her şey artık clear olmuştur.
+
+54
+00:16:34,292 --> 00:17:00,451
+C şıkkında devreye girişine bir işaret vermemiz gerekiyor. İşaret vermek zorunda değiliz. Yani bir sinyal olmak zorunda değil bu. Diskrit değerler de olabilir. Ama bizim amacımız burada böyle kontinüüs bir sinyalin aslında NAT kapısının görevini yaptığını ispat etmek için kullanmak. Bunun için bir kara dalga vermenizi istiyorum. Sembolünü de verdim. Yani başka bir kara dalga üretici koymayın. Bunu koyun. Çünkü burada onun üzerinden ben istevleri yazdım.
+
+55
+00:17:01,011 --> 00:17:22,331
+Devrenin girişine vermemiz gereken sinyali devrenin girişine bağladıktan sonra tabii ki bu kare dalganın belli isterileri karşılaması için bazı bilgileri içeriğinde barındırması gerekiyor. Bu kaynağın güncellenmesi gerekiyor. Properties'den. Orada da hangi değerlerin orada olması gerektiğini ben yazdım. En düşük gerilim değeri, en yüksek gerilim değeri, başlama zamanı.
+
+56
+00:17:22,836 --> 00:17:49,836
+Bunların neler olduğunu da biraz düşünün. Yani bir sinyalin en düşük ve en yüksek gerilimi onun çıkabileceği en yüksek noktayı gösteriyor aslında. Yani onun kendini hakkında fikir veriyor. Başlama zamanı gecikme var mı yok mu onu söylüyor aslında. İşaretin yükselme zamanı bu bir kara dalga. Dimdikte yükselebilir. Hafif eğri de olabilir. Yani biraz böyle eğimli de yükselebilir. Bu onu söylüyor. Tepe noktasından sonra aşağı düşerken de yine o da düşme zamanını gösteriyor.
+
+57
+00:17:51,059 --> 00:18:04,179
+Bir de Pulse Genişliği var. Tepeye çıktı. Tepede bir süre onu izlemesi gerekiyor. O High Logic değerde. Ki burada onu bakın biz 5 volt olarak vermişiz. High gerilim değerini. Orada bir süre süre geçirmesi gerekiyor. O 1 second.
+
+58
+00:18:04,980 --> 00:18:25,840
+Ve bunu yukarıya çıktı, biraz devam etti, aşağıya indi, sıfırda devam etti. Yani bir peak oluşturdu aslında size, bir spike oluşturdu. Bunun periyodunu bahsediyoruz. Biraz da sıfırda kalacak sonra. İşte bu sıfırdan sıfıra bunun periyodu ne kadar? Bir de onun bilgisi var. Karadalgayı böyle yaratıyoruz yani. Bu temel bilgiler üzerine kuruluyor.
+
+59
+00:18:26,579 --> 00:18:51,400
+Burada sizden istediğimiz şey, iki tane şey var. Devreye kare dalgayı bağladıktan sonra devrenin güncel ekran resmini koymak. Birincisi o, devre üzerinde giriş kare dalga sinyal kaynağının doğru bağlandığını gösteren ekran çıkısı. Diğeri de kaynağa ilişkin pulse generator properties. Yani koyduğunuz kaynağın özelliklerini güncellerken benim istediğim sayısal değerlere göre o pencerenin güncellendikten sonraki ekran çıkısını koyuyorsunuz. Bu kadar. Gayet basit.
+
+60
+00:18:53,236 --> 00:19:02,756
+Sorusu olan var mı? Soru sorabilir miyim? Tabii. Hocam, BIN ve OUT yerine state, logic state koyabilir miyiz? Hayır. Analog çalışacağız sadece.
+
+61
+00:19:04,576 --> 00:19:19,536
+İkinci soruda zaten bununla ilgili de bir bilgi var. Amacımız sadece bir sinyalle beslemek. E şıkkında, F şıkkında hangisiyse hatırlamıyorum. Orada da zaten tekrar bununla ilgili bir şey var. Kare dalgayı söküyor üzerinden başka bir şey takıyoruz.
+
+62
+00:19:20,372 --> 00:19:42,352
+Şimdi bunu bağladık. Artık devreyi simüle etmemiz lazım. D şıkındayız. Bir grafik almamız gerekiyor. Giriş-çıkış gerilimlerini ölçmek için gerekli probları zaten bağlamıştınız ama bir daha burada söylüyorum. Resmini de koydum. Devreye bağlamamız gerekiyor. Ölçmek için gerilim problarını. Sonra grafik modu için analog analiz yapmamız lazım. Bir monitör vardı hatırlarsanız. LAP0'da bunu anlatmıştım ben.
+
+63
+00:19:42,804 --> 00:20:04,364
+Orada hem giriş sinyalini hem de çıkış sinyalini üst üste görmek istiyoruz. Ki NAT kapısının işlemini de böylece görebilelim. Burada da trace diye bir anahtar kelime var. Yani çift tıklayın, sağ tıklayın, sürükleyin, bırakın. Bir şekilde yani doğru analog analiz monitörünü bulduktan sonra buraları yaparsınız bence. Biraz keşfedin buraları yani.
+
+64
+00:20:05,140 --> 00:20:23,140
+Sonra yine aynı monitörün, aynı o grafiği, platı çizen monitörün ayarlarından ne kadar bu simülo etsin? Yani x80'inde nereden nereye kadar sürsün? Onu da 0 ile 50 olarak giriyorsunuz direkt. Başka hiçbir şey yok burada. Devreyi sonra da ne diyorsunuz? Bir süre çalıştırıp kapatın. Ondan sonra...
+
+65
+00:20:23,279 --> 00:20:46,819
+Grafikte çıkan sonucu aşağıya ikinci adımda ekliyorsunuz grafiğine. Burada hemen grafiğe sonuç gelmeyebilir. Orada bir şey yapmanız gerekiyor. Bakarsınız biraz oralara kurcalayın. Sonra biraz daha böyle yorumlu ve daha teknik sorular geliyor buradan sonra anladığınızı ölçmemiz için. Burada biraz yorumlarınızı, gözlemlerinizi, hesaplarınızı katarak işlem yapın.
+
+66
+00:20:50,867 --> 00:21:04,827
+Aslında iki alt adımdan oluşuyor. Birincisi, bir önceki adımda elde ettiğiniz grafiği yorumluyorsunuz. Yani şu olduğu için bu not kapısıdır gibi bir yorum yapıyorsunuz burada. Basit. İkincisi,
+
+67
+00:21:06,003 --> 00:21:33,943
+Bu CMOS'ların alt kapıları tasarlanırken gerilim transfer karakteristiği diye bir şey vardır. Bakarsınız istiyorsanız internetten ama bakmasanız da sorun yok. Çünkü ben cümlenin devamında ne olduğunu söylüyorum aslında. Girişi uygulanan minimum gerilimde çıkışta görülecek maksimum gerilim veya girişi uygulanacak olan maksimum gerilimde çıkıştan elde edilecek minimum gerilim aslında sizin çıkışta göreceğiniz en düşük ve en yüksek gerilimlerin tespitiyle ilgili.
+
+68
+00:21:34,003 --> 00:21:58,923
+Şu algı kesinlikle olmasın. Biz girişe verdiğimiz sinyali direkt olarak çıkışta natlayarak görmüyoruz. Orada transistörlerin on ve off olmasına bağlı olarak biz aslında çıkışta bazen bir değer, bazen başka bir değer görerek ilgili sinyalin aslında invert halini görüyoruz. Ama o direkt olarak gelen sinyal değil aslında.
+
+69
+00:21:59,347 --> 00:22:25,907
+O işte artık hangi iki değerse o bir yerden bir de başka bir yerden seçilerek çıkışa veriyor. İşte bu seçilim de transistörlerle yapılıyor. Devrede bir PMOS, bir PMOS, bir NMOS var zaten. Bir arada bunlar. CMOS ismini alıyorlar. Dolayısıyla burada onun çizimini istiyoruz sizden. Girişte, girişe gelen değer. En düşük olduğunda transistörler nasıl davranıyor? Burada böyle nokta nokta falan çizebilirsiniz. Off durumunda olanları.
+
+70
+00:22:26,708 --> 00:22:30,108
+Ve o off olduğu için on alan transistör çıkışa ne veriyor?
+
+71
+00:22:30,847 --> 00:22:35,028
+Diğerinde de giriş gerilimi en yükseğe ulaştı. Yani Karadavgın tepesi olun aslında.
+
+72
+00:22:35,728 --> 00:22:40,428
+Çıkışta hangi transistörler çıkışa nasıl etki ediyorlar?
+
+73
+00:22:41,268 --> 00:22:49,827
+Veya hangisi etmiyor? Onu da hangisi on, hangisi off yazarak ve açıklayarak bu adımı da bitiriyorsunuz.
+
+74
+00:22:49,827 --> 00:22:50,728
+Tamam mı?
+
+75
+00:22:51,380 --> 00:22:58,360
+Siyahla yazdığım gerilim transfer karakteristiği anahtar kelimeleri size araştırma konusunda yardımcı olacaktır.
+
+76
+00:23:00,560 --> 00:23:10,660
+Sonra bu teorik olarak izahın ötesinde F şıkkında aynı şeyi, yani E şıkkının ikinci adımındaki bu teoriyi alıp uygulamaya geçiriyorsunuz.
+
+77
+00:23:10,720 --> 00:23:14,519
+Burada artık kare dalga yok. Kare dalga yine diskret analog değerlerle besliyorsunuz DC olarak.
+
+78
+00:23:15,240 --> 00:23:18,940
+Bir değer veriyorsunuz, bir başka bir değer veriyorsunuz. Çıkışı gözlemliyorsunuz. Burada da o var.
+
+79
+00:23:19,667 --> 00:23:39,167
+Çıkışta alınabilecek en düşük voltajla, çıkışta alınabilecek en yüksek voltaj VOL ve VOH ile gösteriliyor. Literatürde de bunların isimleri böyle. Siz internete output low voltage and output high voltage for transfer karakteristik yazsanız bile bütün bunlarla ilgili bilgilere erişebilirsiniz.
+
+80
+00:23:39,796 --> 00:23:47,536
+Burada sonra bu kutuların içine siz VOL hesabı için yani çıkışta görülebilecek minimum gerilim değeri için.
+
+81
+00:23:48,180 --> 00:23:56,540
+Oluşturduğunuz devre konfigürasyonunu çalıştırıp sonucuyla birlikte okuduğunuz gerilim değeriyle birlikte çıkışta buraya yapıştırıyorsunuz.
+
+82
+00:23:56,920 --> 00:24:08,200
+Aynı şekilde VOH'de de çıkışta görülebilecek maksimum gerilim hesabının değerini devreyi çalıştırıp o konfigürasyonu çalışır durumdayken biz voltmetreden okuyabilelim yani.
+
+83
+00:24:08,480 --> 00:24:13,400
+Onun da resmini gene ekran çıktısını VOH hesabı olarak alta koyuyorsunuz.
+
+84
+00:24:13,400 --> 00:24:15,300
+Burada bir yalnız önemli nokta var.
+
+85
+00:24:15,859 --> 00:24:38,099
+Maksimum gerilimi elde ederken sorun yok. Voltmetrenin Display Range Volt'ta kalabilir ama minimumu alırken en hassas olarak okumanızı istiyorum. Buna literatürde Logic Swing deniyor. Yani iki değer arasında gidiyor geliyor. Çıkışta bu aslında bir miktar limitli. Beklediğimiz gibi tam olarak sıfırda ve tam olarak maksimum değerde.
+
+86
+00:24:38,544 --> 00:24:48,124
+Olmayabilir. Burada onu tespit ediyorsunuz aslında. Dolayısıyla önemli not dediğim notu lütfen okuyun. Orada bir ara range'i mikrovol yapmanız gerekecek.
+
+87
+00:24:51,124 --> 00:24:59,124
+Sonra ikinci soru var. Bu analiz sorusu. Burada biz size transferin koduyla birlikte...
+
+88
+00:24:59,215 --> 00:25:16,875
+Bir konfigürasyon verdik. Burada böyle yüzer vaziyette olan pinler var bakın gördüğünüz gibi. Bunların her biri bir anlam taşıyor aslında. Hangileri PMOS, hangileri NMOS? Önce onları tespit edin. Kodlarından bunu anlayabilirsiniz. Ok işaretlerinden bunları anlayabilirsiniz. Ondan sonra bunlar böyle bağlanmışsa eğer.
+
+89
+00:25:17,395 --> 00:25:27,495
+Hangi boşlukta kalan şu kablo uzantıları, giriş mi, toprak mı, çıkış mı, besleme voltajı mı, nereye bağlanması gerektiğine karar veriyorsunuz.
+
+90
+00:25:29,596 --> 00:25:35,435
+Şimdi bunu tespit edikten sonra proteosta devreyi kuruyorsunuz.
+
+91
+00:25:35,435 --> 00:25:40,455
+Yine besleme gerilimini, toprağını besleyip buraya ekran çıktısını bir koyun.
+
+92
+00:25:40,819 --> 00:26:06,319
+Devrenin A şıkkında bunu yapıyorsunuz. Burada amacımız şu, ne olduğunu bilmediğimiz bir lojik kapı bu aslında. Bu lojik kapıyı biz bir şekilde analiz ederek hangi lojik işlemi yaptığını tespit etmeye çalışacağız. Buraya gelip de buna direkt olarak şu kapıdır derseniz son şıkta, son şıkta onu soruyor, oradan puan alamazsınız. Her şık kendi içinde diskret bu arada. Yani A şıkkından 5 puan almak yok, A şıkkı 10 puan.
+
+93
+00:26:06,771 --> 00:26:28,531
+Bütün lap boyunca bu böyle. Onu tekrar belirteyim. Geçen hafta da öyleydi. Dolayısıyla devreyi aynen kuruyorsunuz yani özetle. Yukarıdaki şekilde verilen, ikinci soruda şekilde verilen devreyi protesto koyup, kurup, besleme gerilimi, toprak, çıkış vs. onların neresi olduğunu gösteriyorsunuz.
+
+94
+00:26:28,531 --> 00:26:33,432
+Devreyi kurun mesela. Ekran çıkısından isterseniz paint de yazın. Burası giriştir, burası topraktır, burası beslemedir.
+
+95
+00:26:33,776 --> 00:26:50,875
+Burası çıkıştır gibi. İki tane girişimiz olduğunu unutmayın yalnız. Çünkü iki kapılı bir devre. Sonra biz bu gerçekliği bilerek, iki kapılı bir devre var elimizde. Bunu bir teste tabi tutmamız lazım ki bu devrenin o lojik işlemi yaptığını bilenim.
+
+96
+00:26:51,231 --> 00:27:18,051
+Bunun için ne yapılabilir? Burada size birinci sorudaki aslında inverter'ı bir şekilde ekstrem değerlerle test ederken bir mesaj vermiş olduk. Burada o mesajı iki girişli ne kapısıysa artık o kapısı gerçekliğine dayandırıyorsunuz ve bir tablo var. Bu tabloyu doldurmanız gerekiyor. Dört tane durum var. Neyse artık o dört durum. O dört durumu belirleyen şey birinci ve ikinci girişlere vermeniz gereken gerilim değerleri. Sonra çıkışta bir değer okuyacaksınız. Bu tabloyu dolduruyorsunuz.
+
+97
+00:27:18,451 --> 00:27:36,632
+Her durumda kurduğunuz devreyi, birinci durum, ikinci durum, üçüncü durum, dördüncü durum olarak ekran çıktılarını yapıştırıyorsunuz. Tabloyu güncelleyerek. Sonra dört durum için, bu arada her durumda devreyi run edip çalışır durumdayken ekran çıktılarını tabii ki koyuyorsunuz. Tabloya yazmanın yanı sıra.
+
+98
+00:27:37,172 --> 00:27:58,172
+Bu sırada da hem gerilim problarından nerelere koyulması gerektiğini yazdım. Hem de çıkıştaki voltmetreden ilgili değerleri biz okuyabilelim. Tabloda da o değerleri yazılmış olarak görelim. Sonra tüm bunlara istinaden en altta bu devre hangi lojik kapıyı gerçeklemektedir? Neden? Teknik açıdan elde ettiğiniz verilere dayalı olarak izah ediniz diye bir soru var. Buraya kadar elde ettiğiniz...
+
+99
+00:27:58,864 --> 00:28:09,804
+Bütün bu verileri yorumlayarak maksimum 5 cümle şundan dolayı bu kapıdır diye bir yorum yapıyorsunuz. Tamam mı? Sorusu olan var mı?
+
+100
+00:28:13,652 --> 00:28:29,412
+Süremiz tam 18'de bitecek. Açıklamayla da birlikte iyice temizce kafalara yerleştiğini düşünüyorum. Bir şey olursa ben buradayım sorabilirsiniz. Ben birazdan sohbete yükleme linkini koyacağım.
+
+101
+00:31:46,644 --> 00:31:54,503
+Bu arada ben Türkçe'yi çok anlayamıyorum diyen yabancı arkadaşlar varsa eğer, onları Breakout Room'a alıp onlara İngilizce açıklayabilirim. İsteyen var mı buna?
+
+102
+00:31:58,387 --> 00:32:08,387
+Çünkü yabancı isimli arkadaşlar görüyorum. Hem çevir olarak dokümanı hem izahını İngilizce yapabilirim rekastımda.
+
+103
+00:48:28,788 --> 00:48:41,867
+Yükleme linkini sohbete yazdım arkadaşlar chat'e. Oradan yükleyebilirsiniz. Bir de bir şey soracağım. Opamp'u işlediniz mi acaba derste? Operational Amplifier.
+
+104
+00:48:41,867 --> 00:48:55,708
+Biz işlemedik hocam. Emin misiniz? En son ne geçti konu olarak? Mesela bugün ne işledi hocam?
+
+105
+00:48:57,811 --> 00:48:59,931
+Muhasifetlerle ilgili soru çözdü bugün.
+
+106
+00:49:00,511 --> 00:49:07,831
+Tamam. O zaman diğer hafta mı yapacak hocam? Neyse tamam. Biz ona göre bir son teori haftası herhalde değil mi diğer hafta? Öyle biliyorum ben.
+
+107
+00:49:07,831 --> 00:49:11,551
+Evet hocam haftaya da bunların üzerinden geçeceğiz dedi ama siz bir konuşursanız daha iyi olur.
+
+108
+00:49:11,771 --> 00:49:13,391
+Tamam peki. Ona göre bir soru hazırlıyoruz.
+
+109
+01:01:41,300 --> 01:01:43,640
+Hocam buradaysanız bir soru sorabilir miyim?
+
+110
+01:01:48,179 --> 01:01:49,099
+Tabi sorabilirsin.
+
+111
+01:01:49,979 --> 01:01:57,000
+Hocam yani bir sorun mu? Emin de değilim. Bir şeyle karşılaştım ama emin de değilim bu şekilde olup olmayacağına. Ona göre yanlış şekilde devam etmek istemiyorum.
+
+112
+01:01:57,519 --> 01:01:58,279
+Tamam, sor bakalım.
+
+113
+01:01:58,819 --> 01:02:05,399
+Hocam giriş voltu 5 volt ama çıkış 5 ila 4 arasında değişiyor. Bu problem mi?
+
+114
+01:02:06,059 --> 01:02:06,519
+Problem.
+
+115
+01:02:10,359 --> 01:02:13,340
+Devreyi tasarlatmaz. Mantıklı duruyor ama.
+
+116
+01:02:13,972 --> 01:02:18,912
+Yani şöyle, dışarıdan gördüğün gerilimin en düşük hali 4 ise bu bir problem.
+
+117
+01:02:21,252 --> 01:02:25,372
+Yani out gördüğüm değerinden düşüğü 4. Giriş 0 ile 5 arasında.
+
+118
+01:02:25,392 --> 01:02:26,832
+VOL'den bahsediyorsun değil mi?
+
+119
+01:02:28,192 --> 01:02:28,852
+Efendim hocam?
+
+120
+01:02:29,231 --> 01:02:32,932
+VOL'den bahsediyorsun. VOL, output low voltage.
+
+121
+01:02:33,684 --> 01:02:35,884
+Çıkışta görebileceğin minimum voltajı.
+
+122
+01:02:37,764 --> 01:03:01,083
+Diğerlerine de kopya vermiş olmayalım ama söyleme, girişe verdiğin bir değer olması lazım. O değer için minimum değer zaten tabii ki. Pardon, maksimum değer. Çıkışta da tam tersi olarak minimumunu görmen lazım. O sırada transitörlerin bir durumuna bak. Birkaç probekle bazı yerleri. O transitörlerin orada olma amacı aslında bir switchleme, on-off olarak switchleme yapması.
+
+123
+01:03:01,652 --> 01:03:13,391
+4 gibi bir değer çok yüksek. Nereden 4 olabilir ki? Transüter onu dışarıya çıkışa bir şey veriyor. O verdiği şeyin 4 kadar yüksek olması lazım. Enmos'u yalnız seçmiş olabilirsin.
+
+124
+01:03:14,052 --> 01:03:16,552
+Hocam ben de aynı sonuca ulaştım bu arada.
+
+125
+01:03:16,632 --> 01:03:17,292
+Ben de hocam.
+
+126
+01:03:17,972 --> 01:03:20,172
+Kodda kendini direkt kopyaladım ben ama.
+
+127
+01:03:20,972 --> 01:03:24,532
+En düşük 4. 4 ile 5 arasında da değişiyor çıkışı ortacım.
+
+128
+01:03:25,043 --> 01:03:35,224
+4 ile 5 çok yüksek ama yani. Şey mi acaba? Girişe verdiğiniz sinyalle ilgili bir problem var. Orada da 0 ile 5 arasında değişiyor zaten.
+
+129
+01:03:36,851 --> 01:03:43,271
+Nasıl? O zaten 0 ila 5 arasında gözüküyor grafikte ama çıkışta değişiyor. Yani sıkışta 4 ila 5 arasında değişiyor.
+
+130
+01:03:43,291 --> 01:03:52,711
+Evet, şöyle yapabiliriz. Ben bir Breakout Room açayım. Bu problemi yaşayan arkadaşlar bana ekranı paylaşsın. Diğerlerinin aklına bir şey gelmesin. Yardım etmeyeceğim. Bir göreyim ne olduğunu. Belki bizim soruda bir problem vardır.
+
+131
+01:03:53,112 --> 01:03:54,771
+Tamamdır hocam. Ben paylaşabilirim isterseniz.
+
+132
+01:03:54,791 --> 01:03:56,072
+Senin isminle [öğrenci]. Tamam.
+
+133
+01:03:56,072 --> 01:04:01,412
+Bir şey soracağım hocam. Şeyde mi sıkıntı? Normal Word'dekine göre giriyoruz.
+
+134
+01:04:02,036 --> 01:04:06,775
+Vout 4-5 arası geliyor. İşte birinde 5 geliyor, sonra 4 geliyor falan.
+
+135
+01:04:07,275 --> 01:04:11,235
+Evet, evet. Ben logic state koydum. Gene aynısı oldu.
+
+136
+01:04:11,655 --> 01:04:19,596
+Bir dakika. Gerilimin değer bacağını nereye bağlıyorsunuz voltmetrenin? Eksi bacağını.
+
+137
+01:04:22,476 --> 01:04:24,596
+Hocam, voltmetrediği pro kullanıyoruz.
+
+138
+01:04:25,596 --> 01:04:27,676
+Çıkışta okumak için voltmetre kullanım bir kere.
+
+139
+01:04:29,427 --> 01:04:34,268
+Zaten demişimdir onu. Demediysem de diyorum şu anda. Bakıyorum hemen.
+
+140
+01:04:36,967 --> 01:04:39,568
+Resimlerde hocam Vout'a prob gözüküyor ama.
+
+141
+01:04:39,568 --> 01:04:54,068
+Zaten arkadaşlar şöyle. Çıkıştaki gerilimi ölçmeniz için en düşüğünü ve en yükseğini range ayarı yapmanız gerekecek. Dolayısıyla voltmetre olduğunu açıkça söylemişim zaten. Dolayısıyla F şıkkından bahsediyoruz değil mi? Önce onu tekrar şey yapalım.
+
+142
+01:04:54,867 --> 01:04:57,188
+F şıkkındayız. Birinci sorunun F şıkkındasınız.
+
+143
+01:04:58,447 --> 01:05:02,807
+Ben C'ye bakarken simüle ettim hocam. Bir sıkıntı gördüm. C'deyim yani.
+
+144
+01:05:02,847 --> 01:05:04,247
+Ben de D'deyim hocam.
+
+145
+01:05:04,268 --> 01:05:06,367
+D'yi yapıyorum. O sırada şey yaptım yani.
+
+146
+01:05:06,467 --> 01:05:07,228
+F'ye daha gelmedim.
+
+147
+01:05:07,387 --> 01:05:13,887
+Tamam. Çıkışta prop kullanmayın. Çıkışta prop değil, voltmetre kullanmayın.
+
+148
+01:05:13,887 --> 01:05:20,387
+Zaten F şıkkına bakarsanız ben çıkış için voltmetre ekleyiniz demişim.
+
+149
+01:05:21,364 --> 01:05:26,604
+Hocam ben Schoenboltmetre kullandım. Tekrar 4 şey veriyor.
+
+150
+01:05:28,003 --> 01:05:30,403
+Evet hocam, bir 4 olur, bir 5 olur. Değişik.
+
+151
+01:05:31,604 --> 01:05:34,003
+Neyse, ben bir breakout'ımı açayım da bakalım ne problem.
+
+152
+01:05:36,304 --> 01:05:39,283
+[öğrenci]'ydi değil mi? [öğrenci] seni önce bir oraya alıp bakayım.
+
+153
+01:06:15,539 --> 01:06:24,480
+Hocam geri dön. Gittin geri mi geldin? Ben gidemedim ama oraya. Join dedim sonra beni geri attı buraya. Allah Allah peki dur bir de şuradan bakayım.
+
+154
+01:06:38,036 --> 01:06:39,155
+Sen hala burada mısın?
+
+155
+01:06:41,336 --> 01:06:42,215
+Evet hocam buradayım.
+
+156
+01:06:43,376 --> 01:06:44,635
+Ben gidemiyorum ama oraya.
+
+157
+01:06:47,135 --> 01:06:48,556
+Hadi ikiye alayım seni tekrar.
+
+158
+01:06:50,596 --> 01:06:53,036
+Hocam voltmetre denedim. Bende yine aynı sonuç çıkıyor.
+
+159
+01:06:53,036 --> 01:06:54,275
+Dur bakalım.
+
+160
+01:08:40,243 --> 01:09:05,143
+Hocam ben yine gittim. Ben o odaya hiçbir şekilde görüp ulaşamıyorum. Yani bu kadar kötü bir ara yüzde hayatımda da görmedim ayrıca. 30 saniye sonra beni geri döndürdü. Evet, ben kapattım. Çünkü ben odayı oluşturuyorum fakat bende odaya giriş için bir bilgi çıkmıyor. Onu nasıl yapacağım ben de bilmiyorum yani. Odayı yaratıyorum. Yarattım. Şu an sen room 1'desin. Şu an geri döndüm hocam buradayım. Hayır, yani assign edilmiş durumdasın. Gitsen gidersin istesen.
+
+161
+01:09:10,515 --> 01:09:15,855
+Ya buna bir yarat dersin, sonra da yarattıktan sonra oraya gir dersin. Bu kadar karmaşık yapmanın bir lüzumu yok ki bunun yani.
+
+162
+01:09:24,212 --> 01:09:36,112
+Open all room'umuz var. Bilen varsa beni yönlendirsin. O zaman hepinize o da assign ediyor. Add a room var. Add a room deyince oraya kişi assign ediyor. Hadi edeyim. Hadi mesela Alper, [öğrenci]'ı oraya assign edeyim. Eee tamam. Sonra?
+
+163
+01:09:38,772 --> 01:09:40,972
+Hocam ben de bilmiyorum. O yüzden yardımcı olamadım.
+
+164
+01:09:41,311 --> 01:09:45,632
+Sana demiyorum zaten. Zoom'u hazırlayan arkadaşlar kimse.
+
+165
+01:09:52,564 --> 01:09:55,184
+Sen baka dur bu arada da ben bunu bir çözmeye çalışayım bakayım.
+
+166
+01:09:55,524 --> 01:09:56,724
+Tamamdır hocam.
+
+167
+01:13:34,003 --> 01:14:00,623
+Sizin hepinize breakout room atanmışsa arkadaşlar dikkate almayın onu. Karşı taraftan davet gelince ancak ben gidebiliyorum. Herhalde main kişi olmadığım için falan bilmiyorum. Neyse. Biz görüştük şimdi. Ben baktım. Sorun yaşayan tüm arkadaşlar için söylediklerimi burada da söyleyeyim. Devrenizi yanlış kurmuşsunuz kesinlikle. Yani çıkışta 4 göremezsiniz düşüktür olduğu durumda. Neresi yanlış onu tespit edin artık. Zaten kaç tane eleman var.
+
+168
+01:14:03,444 --> 01:14:16,164
+Yani bu topolojinin içine kullandığımız CMOS adını vermemizi sağlayan o her bir transistörün elle çizdiğiniz resminde de şeklini, şemalinin yerini doğru tespit edin.
+
+169
+01:14:18,244 --> 01:14:24,164
+Aslında normalde bu devre elemanlarını kullanırken o orta bacakları var onların bakın. O orta bacakları da...
+
+170
+01:14:24,532 --> 01:14:49,771
+Burada kolaylık olsun diye bir şeylere bağlı ama o da ayrıca ayrı olur bazı simülasyon programlarına. Yani onun dört bacağı vardır aslında. O body bacağı. Onu biz burada kolaylık olsun olan versiyonunu seçip kullandık. Yani normalde bunların dört tane bacakları var. Üç tane kullanıyoruz şu anda. Referans aldığınız devrelerde bağladığınız noktalara dikkat et.
+
+171
+01:16:06,963 --> 01:16:16,703
+Hocam ben düzeltince şu an sıfır göstermiyor ama 10 üzeri eksi 17 civarında bir şeyler yazıyor. Kabul ediliyor mu?
+
+172
+01:16:22,579 --> 01:16:30,639
+Voltmetrenin range'ini dediğim şekilde ayarlayıp okuduysan, yani sen hangi şıkkıdan bahsediyorsun bilmiyorum. Plot'tan bahsediyorsun herhalde.
+
+173
+01:16:30,939 --> 01:16:33,319
+Hayır, şey probin kendisi.
+
+174
+01:16:33,920 --> 01:16:34,559
+F şıkkı.
+
+175
+01:16:36,359 --> 01:16:38,600
+F hayır, şey şu an C, D'deyim.
+
+176
+01:16:38,600 --> 01:16:47,479
+Ben orada probun ne gösterdiği benim için önemli değil. Orada grafın nasıl tuttuğu önemli. Hassas olan soruda hassas olması gerektiği şekilde yaparsan sorun olmaz.
+
+177
+01:16:48,199 --> 01:16:49,079
+Teşekkür ederim.
+
+178
+01:17:07,539 --> 01:17:19,500
+Hocam bir şey sorabilir miyim yine? Problemi fark edip çözdüm de, şimdi baştan hepsini tek tek geçirmemek adına en son ki halini koyup hepsinin aynısını koysam problem yaratır mı? Yani hep adım adım ilerliyoruz ya.
+
+179
+01:17:20,100 --> 01:17:22,920
+3-5'ini yazdım, ekran çıktısını koydum, orada yanlıştı mı diyorsun?
+
+180
+01:17:23,764 --> 01:17:33,384
+Hocam, 1-2-3'te adım adım ilerlediğim için hepsine yanlış bağlıydı. Şimdi hepsini tek tek yapmamak adına en son ki haline, probları falan yerleşmiş halini koysam diyorum sorun olur mu?
+
+181
+01:17:33,384 --> 01:17:39,083
+Tamam, not du şu şaka. De ki bunu böyle yapmışım. Artık öyle değil, şu şaka bakınızı düzelttim diye. Oradan hatırlarım ben.
+
+182
+01:17:39,404 --> 01:17:40,644
+Tamamdır hocam, teşekkür ederim.
+
+183
+01:22:09,908 --> 01:22:19,347
+Arkadaşlar, birinci soruyu ben hiç anlamadım, yapamıyorum falan diyen var mı? Hiç ilerleme kaydedemedim diyen var mı? Söylesin veya bana özelden yazsın.
+
+184
+01:22:23,315 --> 01:22:31,475
+Benim analogdan şey çıkmıyor ya. Voltaj probları okuyamıyor.
+
+185
+01:22:33,956 --> 01:22:39,435
+Devreye gerilim problarının sonucunu alamıyorsun. Monitörü aktaramıyor musun?
+
+186
+01:22:40,115 --> 01:22:43,495
+Hani şeyleri bağladım, analoga mı? Sen hiçbir şey okumuyorlar.
+
+187
+01:22:44,115 --> 01:22:46,615
+Devreyi çalıştırdın monitörde sonuç görmüyor musun?
+
+188
+01:22:47,036 --> 01:22:49,956
+Yani devreyi çalıştırmadan göstermesi lazım ama göstermiyor hiçbir türlü.
+
+189
+01:22:50,963 --> 01:23:07,363
+Devreyi çalıştırmadan göstermez. Doğru mu yerlerden bahsediyoruz? Önce onu tespit edelim. Devrede iğne koyuyorsun ya böyle gerilim. Resmini verdim zaten ben. Onları koyduktan sonra devreyi simüle ettiğin zaman, onun altında minik gerilim değerleri zaten çıkar.
+
+190
+01:23:08,023 --> 01:23:11,423
+Ama groundda çıkmıyor. Belki hata mı oradadır. Ground sıfırda sabit.
+
+191
+01:23:12,851 --> 01:23:28,771
+Yani sıfırda sabitse zaten okey. Hata varsa orada derseniz hocam, devam etmenize gerek yok. Toprağa bağladığın propda sonuç görmüyor musun? Sıfır diyor yani. Tamam, toprakta sıfır olacak zaten. Tamam.
+
+192
+01:23:32,659 --> 01:23:56,239
+Diğer taraflarda da. Burada senin referansın ne olabilir? Input olabilir. Kare dalga değil mi? Çünkü bir değişiyor, bir örtülecek, bir örtülecek. Onu orada değişiyor olarak görmen lazım 0-5. İşte onu göstermiyorum hocam. Çalıştırdığın zaman göstermesi lazım. Runa bastığın zaman sol altta. Hani şey, kendi değiştiği değerini ben görebilirim ama bu analog şeyde göstermiyor denize. Tamam. O zaman sorun dediğim gibi en baştaki dediğime geriye dönüyorum şu anda. Sen.
+
+193
+01:23:56,671 --> 01:24:12,671
+Görüntüyü almaya çalıştığım plot ekranında sürükleyip bıraktık ya onu. Ben onun adına yazdım. Analyzer. Orada göremiyor olmanın bir sebebi var. Çalıştırdığın zaman görülmüyor. Evet, böyle olacak. Herkes de böyle. Oraya o sonuçları almak için bir adım daha yapman gerekiyor. Böyle planın sonunda biraz kurcalan.
+
+194
+01:24:12,671 --> 01:24:13,111
+Tamam, tamam.
+
+195
+01:24:16,435 --> 01:24:35,155
+Başka sorusu olan var mı? Ben hiç yapamadım. Bu ne biçim bir soru ola ki diyen olmamalı bence. Yani ben hala 4-5 arası alıyorum hocam. Yani tek bir şey de yok devrede. O yüzden neyi yanlış yapabilirim onu da göremiyorum. Ama çizimle alakalı mı diyorsunuz? Bağlantılarla ilgili bir problem var. Öyle söyleyeyim.
+
+196
+01:24:35,923 --> 01:25:01,144
+O zaman şöyle yapalım. Bir kişi de olsa bunu burada amacımız yani böyle hani not almak değil sadece öğrenmek bence. Elektronik dersini bitiren kişinin bence iki devrenin sembolünü gördüğü zaman iki transistörün hangisinin hangisi olduğunu söylemesi lazım. Özetle şöyle. Bunların iki türlü gösterimleri var. Bir dört bacaklı bir üç bacaklı. Benim burada bugün kullandıklarım dört bacaklı ama birleştirilmiş versiyonuyla.
+
+197
+01:25:02,163 --> 01:25:19,963
+Şimdi biz normalde eğer PMOS kullanıyorsak onun böyle gate tarafında, sırtında yani, bir de bazen yuvarlak içi boş bir bubble koyabiliriz. Ama bu onun PMOS olduğunu gösterir. Ama böyle simülasyon programlarına onu koymayabilirler. Elle çizerken biz koyabiliriz.
+
+198
+01:25:20,372 --> 01:25:48,231
+Bunun dışında NMOS'ta o yuvarlak boşluk yoktur. Tıpkı bu lojik devrelerdeki, işte inverter'ın çıkışındaki yuvarlak boşluk gibi. Tamam mı? Birinci tespit edilebilecek şey bu. PMOS'la NMOS'u. Simülasyon ortamında şu anda gördüğünüz gibi onun öyle bir şeyi yok. Devreyi transistörü klasörden seçtikten sonra, library'den. O zaman neye bakılacak? O zaman eğer üç tane bacak varsa, alttaki bacağı.
+
+199
+01:25:48,287 --> 01:25:52,327
+Dört tane bacak varsa ortadaki bacağa bakarak onun okunun yönüne bakılacak.
+
+200
+01:25:53,188 --> 01:26:00,647
+Üç tane bacak varsa M olsun bu alt bacağında artık hangisi olduğunu söylemeyin bakarsınız.
+
+201
+01:26:01,167 --> 01:26:04,647
+Aşağı yönlü bir akış olması lazım. Eğer üç bacaklıysa.
+
+202
+01:26:04,647 --> 01:26:08,587
+Eğer dört bacaklıysa ki bizim simülasyonumuzda şu anda öyleler.
+
+203
+01:26:08,800 --> 01:26:35,719
+O zaman ortadaki bacağın ok işaretine bakacağız. O zaman ortadaki bacak içeriye doğruysa o da o zaman NMOS olduğunu gösteriyor. Tam tersi dışarıya doğruysa o zaman PMOS. Tamam mı? Yani simülasyonda veya elle çizildiğinde bir transistörün NMOS mu PMOS mu olduğunu buradan anlamanız lazım. Dolayısıyla bütün hatalar buradan kaynaklanıyor. Senin mesela internete bakıp bu end kapısı böyle yapılıyormuş deyip o elemanları koyarken yanlış koymuşsunuz yani özetle.
+
+204
+01:26:44,275 --> 01:27:00,956
+Başka burada hiç simüle edemeyen var mı birinci soruda? Bu en mus, bir mus anladınız değil mi? Üç bacaklı mı, dört bacaklı mı olduğuna bağlı olarak orta bacağa veya dıştaki bacağa bakarak ok işaretinin yönüne göre karar veriyoruz. Simülasyonda böyle. Elle çizerken de...
+
+205
+01:27:01,524 --> 01:27:19,004
+Sırta bir yuvarlak atarak onun P-MOS olduğunu ifade ediyoruz. C-MOS, ben yazmıştım hatırlarsanız, bir devre, yani transistör tipi değil de bu konfigürasyona verilen isim. Tabii bunlar böyle ayrı ayrı olmuyorlar C-MOS teknolojisinde. Bir arada tek bir eleman üzerinde oluyorlar aslında. Ona da komplementeri.
+
+206
+01:27:19,604 --> 01:27:37,583
+CMOS deniyor. CMOS oradan geliyor. İkisini de birden bir arada bulundurduğu için. Dolayısıyla şu an kullandığımız sistemlerin böyle küçük boyutlu işte telefonların içindeki işlemcilerin vesaire olmasının en büyük sebebi de ikisinin bir arada tek bir teknolojiyle belirtilebiliyor olması. CMOS da oradan geliyor. Bunlar da aklınızda kalmış olsun.
+
+207
+01:28:10,068 --> 01:28:27,188
+[öğrenci], eğer bunu plat çizdirmek için soruyorsan zaten orada prob istiyorum. Ama eğer hassas olarak F şıkkındaki hesaplardan bahsediyorsan, voltmetre koymazsan o kadar hassas gösteriyordur belki, bilmiyorum. Gösteriyor galiba. Gösteriyorsa sorun yok.
+
+208
+01:28:28,819 --> 01:28:47,819
+Ben şu an plat edince 0-5 arası simülasyon ederse farklı bir cevap veriyor. Mesela 0-10 saniyeyle cevap verirse...
+
+209
+01:28:48,851 --> 01:29:02,811
+Normal şey beklediğim gibi. 0-5 arası biraz saçma geliyor. 0-5 arası dediğim nedir? Monitörün üzerindeki X80'in de 0 ile 5 arası mı? Aynen.
+
+210
+01:29:04,032 --> 01:29:08,672
+Yani orada zaten 0'dan 50'ye kadar çalıştırıp konuyu döndürmeniz lazım. 0-5'te neden araya bilmiyorum.
+
+211
+01:29:09,332 --> 01:29:20,631
+Ama öyle bir devrenin girişinde bir sıkıntı olmaması lazım. Neden? Çünkü kare dalgayı verirken kare dalganın başlangıç değerini bir sıfırdan hemen çalışmaya başlı şeklinde veriyoruz. Bir gecikme koymuyoruz.
+
+212
+01:29:21,852 --> 01:29:26,231
+Tamamdır. Ben soruda 50'yi 5 görmüştüm.
+
+213
+01:29:26,412 --> 01:29:27,612
+Tamam, 50 olacak.
+
+214
+01:29:30,131 --> 01:29:35,992
+Biri ismini vermek istemeyen bir izleyicimiz özelden bir mesaj yazmış. Onu da okuyayım.
+
+215
+01:29:40,692 --> 01:29:45,032
+O kişiye isterden soruyorum. Bu değerler nedir anlamadım.
+
+216
+01:29:49,235 --> 01:29:54,996
+Hocam, bir şeyleri değiştirdim. Bu sefer de böyle aldım. Stres oldum işe.
+
+217
+01:29:55,416 --> 01:29:58,716
+Bir anlamadım ne sorunu ama. 0-15 arası nedir?
+
+218
+01:29:59,275 --> 01:30:02,296
+Veyahut bir şeyleri değiştirdiğimde bu şekilde geldi bu sefer.
+
+219
+01:30:04,195 --> 01:30:05,255
+Dedim acaba ne oldu?
+
+220
+01:30:05,255 --> 01:30:06,435
+Ama yorum yapmayayım yani.
+
+221
+01:30:06,576 --> 01:30:07,296
+Yapmayın tamam.
+
+222
+01:30:09,136 --> 01:30:11,083
+Bunlar küçük değerlerse...
+
+223
+01:30:11,220 --> 01:30:25,020
+Biraz büyük kalmışlar bence. 0-5 falan değil arkadaşlar. Küçücük mikro seviyesinde olması lazım. Zaten söylemişim sonun içinde. Mikro volt rengini ayarlayayım voltmetreyi dedim. Büyük için sorun yok ama küçük için sorun var.
+
+224
+01:30:28,659 --> 01:30:29,340
+Teşekkürler.
+
+225
+01:46:59,507 --> 01:47:06,547
+Ne durumdasınız arkadaşlar? Kaçıncı soruda herkes? İkinci soruya geçti mi herkes?
+
+226
+01:47:09,247 --> 01:47:10,987
+Ben birinci sorudayım hocam.
+
+227
+01:47:11,427 --> 01:47:14,347
+Hocam ben birinci sorunun şıkkını attılarak ikinci soruya geçtim.
+
+228
+01:47:14,747 --> 01:47:15,948
+Ben de hiç uğraşılmaz.
+
+229
+01:47:16,807 --> 01:47:19,707
+Peki o kadar zor değil aslında ama geçmeyelim.
+
+230
+01:47:19,707 --> 01:47:21,287
+Olmuyor bir dur hocam. Biz yapamıyoruz.
+
+231
+01:47:21,908 --> 01:47:38,968
+Yani şöyle, yani zordur değildir den ziyade, bilmem Alpür Hoca'ya sorarım şimdi. Kolay olduğu için biz kesinlikle altıda bitirelim dedik ama birkaç tane hata var bence yapılan. Onlardan bir tanesi devreyi baştan itibaren yanlış kurmak.
+
+232
+01:47:39,699 --> 01:47:54,299
+Ben çizdirmemin amacı oydu bu arada 50 A şıkkında. Hani tespit etsinler neresi Pmos, neresi giriş. Sonra böyle kümülatif olarak hatalar artarak gitmesin diye niyetim oydu. Belki son bir şans verebilirsiniz birinci soruya yapamayanlar varsa eğer.
+
+233
+01:47:56,819 --> 01:47:58,340
+İkiye herkes diğerleri geçti mi?
+
+234
+01:48:00,420 --> 01:48:05,779
+Orada da devreyi kurduktan sonra ekran çıktısı koyup farklı giriş değerleriyle bir tablo oluşturarak yorum yapacaksınız. O kadar.
+
+235
+01:48:12,564 --> 01:48:39,164
+Soner şöyle bir durum var. Yani MOSFET anlatıldı ya derste. Biz MOSFET'in derste anlatılan en kolay versiyonunu soruyoruz. On, off. Yani arada aslında başka formlar var, onları sormuyoruz. VGS, EXV, GD'ler, Body'ler, V-Trashot'lar falan. Onlarla ilgili hiç hesap yaptırmıyoruz. Burada o bir anahtar. Bir bir yerden devreye çıkışına bir şey versin, bir de bir taraftan versin diye. Nat kapısı bu kadar. Diğerinde zaten analiz var.
+
+236
+01:48:41,684 --> 01:48:56,724
+Protos bilemeyeceğim. Hızlıca toparlamaya çalışın. Ama elinizden geleni yapın. Soruları boş geçenler var. Görüyorum şimdi geldikçe raporlara bakıyorum. Bir şeyler yapmaya çalışın.
+
+237
+01:48:57,304 --> 01:49:00,623
+Hocam kesin olarak altıda bitecek mi? Yani onunla ilgili doğru yapacak mısınız?
+
+238
+01:49:01,064 --> 01:49:04,304
+Yani büyük ihtimalle evet. Ama yine de bir Alper Hoca ile tekrar bir konuşayım.
+
+239
+01:49:04,423 --> 01:49:05,443
+Tamam hocam. Teşekkür ederim.
+
+240
+01:51:30,739 --> 01:51:34,559
+10 dakika daha ekliyoruz üzerine arkadaşlar. 18-10.
+
+241
+01:51:35,420 --> 01:51:36,579
+Teşekkürler hocam.
+
+242
+01:51:39,659 --> 01:51:40,300
+Sağ olun hocam.
+
+243
+01:51:41,880 --> 01:51:43,819
+18-10. Yazalım da.
+
+244
+01:52:29,908 --> 01:52:37,328
+Yine ismini vermek istemeyen bir izleyicimiz. Benim adım yazmış dosyaya. Duyuyorsan bakacağım şimdi. İnşallah bulurum.
+
+245
+01:52:42,228 --> 01:52:44,268
+Artık kendime hazırım aldığım puanı yani.
+
+246
+01:53:01,043 --> 01:53:07,623
+Şöyle, zaten dosyanın ismi biliyorsunuz ya elle ayrıca. Dosyanın isminin yanı sıra formdan girilen isim de çıkıyor. O yüzden sorun yok.
+
+247
+01:53:13,140 --> 01:53:19,700
+Bu demek değil ki diğer arkadaşlar ismi yanlış versinler. Hayır, siz yine id, isim, soy isim olarak dosyanın pdf'ine isim veriniz.
+
+248
+01:58:41,524 --> 01:58:44,463
+Arkadaşlar, soruların hiçbirinde lojik giriş olmayacak.
+
+249
+02:08:23,764 --> 02:08:24,764
+Hocam orada mısınız?
+
+250
+02:08:26,923 --> 02:08:27,804
+Evet, oradayım.
+
+251
+02:08:28,144 --> 02:08:31,043
+Teslim ettikten sonra düzeltme yapma şansımız yok herhalde, değil mi?
+
+252
+02:08:33,244 --> 02:08:35,503
+Bu özelden yazan sen misin? Değilsin galiba.
+
+253
+02:08:35,724 --> 02:08:36,103
+Yok, hayır.
+
+254
+02:08:36,663 --> 02:08:36,824
+Hayır.
+
+255
+02:08:38,103 --> 02:08:39,923
+Çok büyük bir hatam yaptın. Ne yaptın?
+
+256
+02:08:40,564 --> 02:08:44,603
+Ya, soruda bir bağlantıyı yanlış yapmışım. O sebeple soru da oradan gidecek muhtemelen.
+
+257
+02:08:45,876 --> 02:09:02,935
+Yani düzeltebiliyorsan düzeltip mail atabilirsin bunu belirterek. Yalnız diğer arkadaşları da duyuru olsun. Sonradan biz okumayı falan unutursak oradaki belgelerden bulamaz edemez yenisini falan. Hatırlatın yani hocam bunu böyle yapmış mıydınız diye. 10 dakika daha gönderebilirsin mailde.
+
+258
+02:09:02,935 --> 02:09:03,816
+Tamam hocam.
+
+259
+02:09:09,971 --> 02:09:12,072
+Son lap haftaya mı olacak hocam?
+
+260
+02:09:13,291 --> 02:09:33,291
+Yani bu hocayla konuşacağım. Hangi konularda nedir, nasıl bir plan yapalım? Büyük ihtimalle belki son haftaya bırakmışlardır o pump'ı. Biz de ona göre bir soru hazırlarız. Ama olmazsa belki başka bir konular ne bulabilir? Belki iptal olabilir bilmiyorum. Yani konuşup size bilgi veririz hafta içinde. Ama siz varmışçasına hazırlık yapın.
+
+261
+02:09:36,051 --> 02:09:36,572
+Teşekkürler.
+
+262
+02:11:47,604 --> 02:11:54,963
+Sayfa ile ilgili bir yorum gelmiş. Mümkün mertebe uyumaya çalışın ama sığmıyorsa da artık yapacak bir şey yok. Gönderin çünkü az zaman kaldı.
+
+263
+02:11:56,324 --> 02:11:57,504
+Hocam mail adresiniz neydi?
+
+264
+02:11:59,304 --> 02:12:02,623
+Soyismim Aygum. S sonra sonra.
+
+265
+02:12:03,664 --> 02:12:04,543
+[e-posta]
+
+266
+02:12:05,144 --> 02:12:05,744
+Teşekkürler.
+
+267
+02:12:21,811 --> 02:12:28,891
+Son 4 dakika kaldı bu arada. Toparlayın. Yükleme de çünkü zaman alabilir. Riske girmeyin artık.
+
+268
+02:15:52,627 --> 02:15:55,127
+Hocam, lap süresi dolduğuna göre bir soru sorabilir miyim?
+
+269
+02:17:01,940 --> 02:17:10,400
+[öğrenci] gitti galiba ben cevap verene kadar. Ben konuşuyorum mikrofonu kapalı. Buradaki arkadaşlardan göndermeyenler var da onu sormuştum aslında da neyse.
+
+270
+02:17:14,227 --> 02:17:15,927
+Herkes gönderdi mi burada arkadaşlar?
+
+271
+02:17:16,667 --> 02:17:20,507
+Evet. Ben bir soru sorabilir miyim? Peki o zaman [öğrenci]?
+
+272
+02:17:20,927 --> 02:17:21,608
+Kim konuşuyor?
+
+273
+02:17:22,108 --> 02:17:22,507
+[öğrenci].
+
+274
+02:17:23,448 --> 02:17:24,247
+Evet, sorabilirsin.
+
+275
+02:17:25,067 --> 02:17:32,927
+Bu haftaya yapacağımız lab ile ilgili aslında şu ana kadar lab formatı bugün hariç biraz farklıydı.
+
+276
+02:17:33,027 --> 02:17:38,387
+Yani bizim alışamadığımız bir şeydi. O yüzden belki önemli bir kısmımızın performansı düşüktü.
+
+277
+02:17:38,835 --> 02:17:57,515
+Ama haftaya yapılacaklarla ilgili biraz hani önden çünkü çok fazla proje ve ödev var. Mesela bu duyuru yaptığınız vakitte bizim hem iki tane kuyuzumuz vardı hem de bir sürü proje yetiştirmemiz gerekiyordu. Biraz önceden duyuru yaparsanız çok daha iyi olur diye düşünüyorum.
+
+278
+02:17:57,515 --> 02:18:06,835
+Tamam. Laf formatından kastın hani sorulan soruların ve istenen istemlerin olması ile de ilgili bir yorumum var.
+
+279
+02:18:06,835 --> 02:18:11,435
+Anladığım kadarıyla. Yani birinci, ikinci lap, bu lap biraz daha mı farklıydı sence?
+
+280
+02:18:12,404 --> 02:18:23,304
+Bana öyle geldi. Bu lapta biraz daha önce alıştırmıştı. Devlet evresinde lojikte alıştığımız tarzda bir soru vardı. Öncesinde biraz daha araştırmaya yönelik.
+
+281
+02:18:23,943 --> 02:18:34,103
+Tamam, son lapı ben hazırlayacağım zaten. Yine bu ayarda olur, onu soruyorsan eğer. Ama son lap ne olur? Olur mu, nasıl olur? Onu bilmiyorum. Olursa haftaya cuma olur. Dersin hocasıyla konuşacağım tabii ki.
+
+282
+02:18:35,763 --> 02:18:39,864
+Kafamızda bizim o pump vardı ama belki o değişmiştir. Belki hocalar son hafta.
+
+283
+02:18:40,404 --> 02:18:44,904
+Onu anlatıp bizden laf yapmamızı bekleyebilirler. Bilmiyorum, konuşacağım.
+
+284
+02:18:46,424 --> 02:18:51,224
+Hocam, arkadaş biraz daha şeye demek istiyor olabilir. Daha önce olduğumuz laflara gördüğümüz konularda.
+
+285
+02:18:53,344 --> 02:19:00,684
+Transistörü görmüştük, diyotu görmüştük. Bunu hiç bilmiyorduk. Onu demek istiyor olabilir. Hiç görmediğimiz bir şeydi.
+
+286
+02:19:02,184 --> 02:19:03,084
+Burada...
+
+287
+02:19:04,180 --> 02:19:17,520
+Üzerinde konuştuğumuz şu andaki laboratuvar aslında sizin NOS Translütür gördüğünüz laboratuvar. O anlamda bir konusal olarak, ana başlığı olarak bir fark yok maalesef.
+
+288
+02:19:20,340 --> 02:19:31,600
+Onur, senin dediğin tarzda bir soru sorsak eğer, inan daha zor olurdu. Yani MOSFET'in dersi tamamen birebir örneğini yaptığınız. Bir kere birebir hiçbir zaman ben soru sormam zaten dersten alıp.
+
+289
+02:19:32,211 --> 02:20:00,000
+Hep özgündür. Bu soruların hiçbirinde bir yerde tabii ki çok benzerleri vardır ama özgün sormaya çalışırım. Biraz daha kolay yapmaya çalışırız. Gerekirse sonra daha da kolay yapmaya çalışırız. Ama her adımı da yazdım. Takdir edersiniz ki şekillerine varana kadar koymaya çalıştım. Ki sorudan sorulara da cevap verdim. Yani bu kadar kolay oldu. Sizin başka bir öneriniz varsa ama söyleyin onu da yapabilirim.
+
+290
+02:20:00,000 --> 02:20:14,819
+İlerlemede, bu şeyden şikayetçi olduğunuzu biliyorum biraz. Dersde direkt belki birebir bağlantılı bir şey görmek istiyorsunuz. Bence en bağlantılı olan lab buydu ama tabii bilemiyorum yorumunuzu ne olur yani.
+
+291
+02:20:16,755 --> 02:20:39,755
+Hocam, açıkçası, tabii şu an geçti zaten, son haftaya doğru gidiyoruz. Şu ana kadar yani verilen lablarda bence biraz daha ödev tarzındaydı. Yani güzel konulardı ama yani lab süreci içerisinde biz alışık olmadığımız için, belki hani daha önceki lablara göre bakarak labı yapmaya çalıştığımız için bizim beklediğimiz işte derste işlediğimiz örneklere...
+
+292
+02:20:40,051 --> 02:21:05,691
+Paralel bir şekilde giden bir labdı. Çünkü yüz yüzeyken öyle yapıyorduk. Tabii burada farklı durumlar var. Siz de bir şeyleri önlemeye çalışıyorsunuz. Ama yani bizi de hakikaten zor geldi. En yorucu lab diyebilirim bu dersinde bu sene. Ama son lab güzel oldu ve de önden mesela tabii geçti ama bence seneye bu şekilde online verirseniz ödev vermeyi de değerlendirin bence.
+
+293
+02:21:05,691 --> 02:21:08,051
+Söyle değil, onların söylediğinden farklı oluyor ama.
+
+294
+02:21:08,051 --> 02:21:16,191
+Mesela sen, sence bu lap sana daha belki kolay, belki daha dişe dokunur gelmiş. Ama onu tam tersini söylüyor anladığım kadarıyla.
+
+295
+02:21:16,431 --> 02:21:19,171
+Anladım. Aynen ben de anladım. Farklı düşünüyor olabilir.
+
+296
+02:21:19,171 --> 02:21:21,592
+Yani ama önemli.
+
+297
+02:21:22,311 --> 02:21:31,471
+Aynı düşünüyorum arkadaşlar. Hani P-MOS, C-MOS falan ve bunları ilk defasında şey yapmayı hiç bilmiyordum ben.
+
+298
+02:21:32,331 --> 02:21:32,572
+Peki.
+
+299
+02:21:34,004 --> 02:21:38,204
+Ben onu demiyorum işte. Ben onu demiyorum. Farklı bir şey söylüyor musun?
+
+300
+02:21:38,924 --> 02:21:41,324
+O sorunun tarzından bahsediyor bu arada bence.
+
+301
+02:21:44,184 --> 02:21:49,984
+Tabii ki devre olarak sorunun içinde sorduğumuz her komponent zaten dersi anlatılan komponent.
+
+302
+02:21:50,484 --> 02:22:11,184
+Bu lab için, onurun bakışından size belki ona ters gelen şu olabilir. Daha böyle hani Small Signal Circuit Equival'ın falan çözmüşsünüzdür büyük ihtimalle. Belki öyle bir şey. Analiz etmek, içini açmak, transferin içini görmek, oradan hesap yapıp ispatlamak diye düşünüyor. Aslında belki beşerinde değil de orada. Öyle bir ödev verseniz olur mu diye belki de kafasında ama.
+
+303
+02:22:11,796 --> 02:22:31,095
+İnanın bir mosfet sorusu sorulabilecek en kolay sorulardan biri bence buydu. Yapmışsınızdır zaten. Öbür lablara ben baktım bu arada. O kadar da kötü değildi. Hatta şöyle şu an konuşan arkadaşlarınkine de bakıyorum. Ufak hatalar var belki ama.
+
+304
+02:22:32,500 --> 02:22:47,239
+Fena değil. Yine bir şeyler yapmışsınız. O kadar dert etmeyin. Biz böyle zaten kestire kestire okuyup kimseye mağdur etme niyetinde değiliz. Biraz geç açıklamamızın amacı da o. Biraz siz de devam edin derslere katılmaya. Son hafta zaten laf olursa gelirsiniz.
+
+305
+02:22:47,860 --> 02:22:51,100
+Hocam, önceki lafların noktan nereden öğrenebiliriz?
+
+306
+02:22:51,860 --> 02:22:55,459
+Biz onları bu yakın bir zamanda size duyurmuş oluruz. Piyazadan duyuracağız.
+
+307
+02:22:56,948 --> 02:22:58,048
+Tamamdır hocam.
+
+308
+02:22:58,388 --> 02:23:16,587
+Bir itiraz süresi yaparız hatta, itirazlar için. Belki bir toplantı olur, gelip isteyen katılır, ben şöyle bulurum, niye böyle der ama onu bile dedetmeyecek şekilde elimizden geldiğince yayınlar, itirazınızı açarız yani. Final haftasında o işleri de yapmış olurum.
+
+309
+02:23:18,324 --> 02:23:36,984
+Sağ olun hocam. İyi günler. Bir arkadaş bir şey sordu ama sonra çıkmış. Yani tanıyorsanız, [öğrenci]'ydi galiba ismi, bana mail atabilir. Ben konuşmuşum, o sırada mikrofon kapalıymış. Farkında değilim. Tanıyanınız varsa söyleyebilirim yani. Evet, geçmiş olsun arkadaşlar hepinize.
+
+310
+02:23:37,684 --> 02:23:40,924
+Sağ olun hocam. İyi akşamlar.
+
+311
+02:23:53,172 --> 02:23:55,731
+Hocam, mislaysanız bir sorum olacaktı da.
+
+312
+02:23:56,172 --> 02:23:56,391
+Tabii.
+
+313
+02:23:57,391 --> 02:24:02,992
+Şu analog analiz diye yapı yapıyorduk ya, hocam kaçıncı soruyu da hatırlamıyorum tam.
+
+314
+02:24:03,672 --> 02:24:07,891
+Orada ben istenilen tam sonucu elde edemedim de onu nasıl yapıyoruz?
+
+315
+02:24:08,932 --> 02:24:10,792
+Öğrenmek amacıyla soruyorum zaten.
+
+316
+02:24:11,211 --> 02:24:15,752
+Hiç ekranda şey mi alamadın? Ekranda hiç grafik sonucu mu göremedin?
+
+317
+02:24:21,172 --> 02:24:22,472
+Dik çizgi gördüm hocam.
+
+318
+02:24:22,492 --> 02:24:24,172
+Haydi paylaş bakalım ekranı bir göreyim.
+
+319
+02:24:24,612 --> 02:24:25,231
+Tamam hocam.
+
+320
+02:24:31,507 --> 02:24:56,308
+Yani şurada, hetras deyip hem de hem de g'ye ekliyordum hocam. Ondan sonra simület edince sadece bu değeri veriyor bana. Solda k yazması zaten bir garip nedense. Transistörü doğru koymuşsun. Vsorsa ne dedin? Tepedeki 5 volt dedin mi? Evet hocam.
+
+321
+02:24:57,203 --> 02:24:57,703
+Tamam.
+
+322
+02:24:58,703 --> 02:25:00,804
+Start-Stop time'ı hocam.
+
+323
+02:25:01,203 --> 02:25:02,123
+Herhalde sıkıntılı.
+
+324
+02:25:05,716 --> 02:25:31,115
+Start, Stop. Ama solda neden 6K falan yazıyor? Şöyle. Hocam buraları da zaten normalde ilk başta 100'dü hocam. Zaten buralar. Tamam sen değiştir misin herhalde buraları? Aynen hocam. Tamam. Bunlar doğru olsun ama. Tamam şu an şu da 5'ti. Evet. Bu şekildeydi. Tamam. Şu şeye de ekrana da tekrar monitöre de çift tıklayabilirsin.
+
+325
+02:25:32,788 --> 02:25:34,148
+Stop Time'a 50 yap.
+
+326
+02:25:36,608 --> 02:25:37,948
+Stop'a mı hocam 50?
+
+327
+02:25:37,988 --> 02:25:38,188
+Evet.
+
+328
+02:25:40,868 --> 02:25:41,628
+Tamam.
+
+329
+02:25:44,388 --> 02:25:45,488
+Şimdi oldu.
+
+330
+02:25:46,988 --> 02:25:51,968
+Şimdi oldu ama neden böyle oldu onu anlamadım. Hala bir eğimler var.
+
+331
+02:25:53,407 --> 02:25:54,747
+Şu an QD'yi görüyoruz.
+
+332
+02:25:56,371 --> 02:26:00,412
+İki tane eklemiz. Üst üste bindi herhalde. Birini silersin sonradan.
+
+333
+02:26:05,332 --> 02:26:06,472
+Ama üç tane olduk.
+
+334
+02:26:09,472 --> 02:26:11,472
+Yok, bunlara hiç bilmene gerek yok.
+
+335
+02:26:12,032 --> 02:26:13,711
+Tekrar silip tekrar şey yapacağız.
+
+336
+02:26:13,711 --> 02:26:16,832
+Çalıştır devren tekrar veya rande. Yok, gerek yoksa onu yapmana ama.
+
+337
+02:26:17,152 --> 02:26:21,412
+Bence şöyle yap. Q1'in olduğu yere, fark etmeyecek gerçi ama bir tane daha prop koy.
+
+338
+02:26:21,711 --> 02:26:24,371
+Q1, G'nin yani kaynağın olduğu bacağın ortasına bir yere.
+
+339
+02:26:26,152 --> 02:26:28,452
+Oraya bir tane prop koy bakalım. Aynen oraya.
+
+340
+02:26:29,252 --> 02:26:32,012
+Şimdi Q1, G var, Q1, D var. Bunları trace olarak oraya al.
+
+341
+02:26:32,415 --> 02:26:34,095
+Onu 50 yaptı orada açmışken.
+
+342
+02:26:37,655 --> 02:26:41,475
+Tamam, artık sağ tuş Add Trace, aynen. Önce birini ekle.
+
+343
+02:26:42,195 --> 02:26:43,335
+Önce D'ye ekliyorum.
+
+344
+02:26:43,595 --> 02:26:47,615
+D'ye ekle, okey de. Onu yapma. Bazen çalışmıyor çünkü öyle, okey de.
+
+345
+02:26:49,295 --> 02:26:51,295
+Tekrar sağ tuş, Add Trace'de.
+
+346
+02:26:53,255 --> 02:26:58,935
+Biri kaynak, öbürü onun olduğu yer ama fark etmez. Şimdi bunu seç bir.
+
+347
+02:27:00,819 --> 02:27:09,420
+Öyle yapma. Run et bir devreyi bakalım. Burada bir bug olabilir çünkü. Kapat devreyi. Sağ tuşa gel tekrar. Run de.
+
+348
+02:27:13,843 --> 02:27:33,644
+Ben de neden bir defa böyle testlere dişi çıkıyor onu algılayamadım. Bir de aşağıya çift tıklar mısın şu kare dalgaya? Falsı doğru seçmişsin. Orada başka bir şey yok. Fals uzunluğunda bir. Reis time, fall time ve yüzme yazacaksın.
+
+349
+02:27:34,144 --> 02:27:39,663
+Yüzme. Az önce öyle mi yazmıştın hatırlamıyorum ama yazmamışsın neden ki. Bir daha bir anet bakalım.
+
+350
+02:27:44,755 --> 02:27:45,515
+Şu an tamam.
+
+351
+02:27:45,876 --> 02:27:49,575
+Aynen. 100 yazmışsın. 100M. Ben 100M yazdım ya soruda.
+
+352
+02:27:50,175 --> 02:27:50,716
+Evet hocam.
+
+353
+02:27:52,404 --> 02:28:09,224
+O testlere olmasının sebebi o böyle yana doğru eğilmiş artık. Yani Reichstein yukarıya çıkarken bir o kadar şeyde de belgede de ben 100M yazmıştım hocam. Ama yine şey yapılmamıştı. Şimdi öğrenmiş de oldum hatta. Daha güzel oldu hocam.
+
+354
+02:28:09,244 --> 02:28:16,884
+Grafiğin yanında grafiği tampon alamazsan, 100M'yi doğru yazdıysan o ayar penceresinden tampon almıştık. Peki hocam teşekkür ederim hocam.
+
+355
+02:28:16,884 --> 02:28:17,684
+Bir şey değil.
+
+356
+02:28:18,224 --> 02:28:19,104
+Haydi akşamlar hocam.
+
+357
+02:28:19,443 --> 02:28:19,804
+Sağol.
+
+358
+02:28:21,012 --> 02:28:22,532
+Başka sorusu olan var mı arkadaşlar?
+
+359
+02:28:30,036 --> 02:28:32,896
+Bir arkadaş bir şey sormuş. [öğrenci] sen sormuşsun galiba.
+
+360
+02:28:33,576 --> 02:28:34,396
+Hocam ne sormuştum?
+
+361
+02:28:36,576 --> 02:28:38,995
+Bunu sormuştum hocam hatta. Bu analog.
+
+362
+02:28:39,275 --> 02:28:42,655
+Aha sensin. Tamam peki. Öğrenmiş oldun galiba şu an değil mi?
+
+363
+02:28:42,855 --> 02:28:43,995
+Evet hocam. Şu an tam oldu.
+
+364
+02:28:45,876 --> 02:28:46,995
+Hayırlı akşamlar hocam.
+
+365
+02:28:47,736 --> 02:28:49,335
+Başka sorusu olan yoksa kapatıyorum.
+
+366
+02:28:51,175 --> 02:28:52,396
+Yok hocam. Teşekkürler.
+
+367
+02:28:52,396 --> 02:28:53,615
+Tamam. Kolay gelsin.

@@ -1,0 +1,719 @@
+1
+00:00:39,188 --> 00:00:40,347
+Merhabalar arkadaşlar.
+
+2
+00:00:45,396 --> 00:00:47,695
+Hocamıza şimdi mail gönderdim.
+
+3
+00:02:45,460 --> 00:02:50,460
+Az önceki dersten soru sormak isteyen 3 arkadaş vardı. O arkadaşlar burada mı? Bende mi acaba?
+
+4
+00:03:00,020 --> 00:03:01,240
+Yok zannediyorum. Tamam.
+
+5
+00:03:12,372 --> 00:03:17,472
+5 dakika zaten hocanıza demiştim, geç başlayacağız. O da geliyor zannediyorum.
+
+6
+00:07:35,060 --> 00:07:36,160
+Hoş geldiniz hocam.
+
+7
+00:07:38,220 --> 00:07:39,379
+Merhabalar hocam.
+
+8
+00:07:40,699 --> 00:07:43,980
+Size yetki verdim, ekranınızı paylaşabilirsiniz.
+
+9
+00:07:45,860 --> 00:07:49,819
+Tamam hocam, teşekkür ederim. Biraz bekleyelim mi yoksa 22?
+
+10
+00:07:49,819 --> 00:07:53,840
+Yok, yeteri kadar bekledik ki saatten itibaren yeterli olur.
+
+11
+00:07:54,680 --> 00:07:57,920
+Tamam hocam, sanki daha fazlaydı nüfus da o yüzden sordum.
+
+12
+00:07:58,519 --> 00:07:59,340
+Yani o artık.
+
+13
+00:07:59,923 --> 00:08:05,183
+Tercihe kalmış. Bazı arkadaşlarımın başka dersleri de olabiliyor. Sonra dinlemeyi tercih ediyorlar.
+
+14
+00:08:06,323 --> 00:08:07,063
+Tamam hocam.
+
+15
+00:08:09,323 --> 00:08:16,524
+Hocam bu sefer kod biraz uzun olduğu için tekrar sıfırdan oluşturmayayım. Üstünden daha güzel anlayalım diye düşündüm.
+
+16
+00:08:18,903 --> 00:08:20,503
+Böyle başlayalım.
+
+17
+00:08:21,503 --> 00:08:25,143
+Önce uygulama dosyamızı bir okuyalım.
+
+18
+00:08:28,596 --> 00:08:32,696
+Şu an bütün sayfam mı gözüküyor acaba bir ayarlayayım da aç.
+
+19
+00:09:00,596 --> 00:09:10,995
+Bu haftaki uygulamamızda sorumuz bu. Bir hastane nacil servisine kullanılmak üzere bir kuyruk hazırlayacağız.
+
+20
+00:09:11,316 --> 00:09:34,156
+Kuyrukta hastaların sırasını takip edebilmesi için kullanılacak kuyruğumuz. Hastalar hastaneye kayıt yaptırmak için isim, soy isim, TC kimlik numarası ve yaş gibi bilgiler paylaşacak. Biz de bunları tutacağız. Hastanelerde de vakalar acil vaka ve normal vaka olarak incelenecek. Bu doğrultuda aşağıdaki ilkeleri gerçekleyen kuyruk modelini oluşturalım demişiz.
+
+21
+00:09:39,316 --> 00:10:04,615
+Kuyruğa ekleniyor normal FIPO prensibiyle. Ondan sonra mesela örnekte ne demişiz? İlk önce birinci hasta gelmiş. Ardından iki, üç, sıranın başı bir olacak şekilde sıraya sokuyoruz hastalarımızı. Öncelikli bir hasta geldiği zaman da mesela altıncı hasta, öncelikli bir hasta. O zaman listenin en başına eklenecek. İlk öncelikli hasta.
+
+22
+00:10:05,203 --> 00:10:14,083
+Ondan sonra ardından eklenen öncelikli hastalar da en son eklenen öncelikli hastanın ardına eklenecek.
+
+23
+00:10:14,083 --> 00:10:21,683
+Yani mesela 7-6'dan sonra eklendiği zaman 6'nın arkasına eklenecek. Yani listenin en başına eklenmeyecek.
+
+24
+00:10:22,843 --> 00:10:27,644
+Hastalar doktoru görünmekten vazgeçtiklerinde kuyruktan çıkarılmalıdır demişiz.
+
+25
+00:10:28,927 --> 00:10:43,048
+Bu hastalarda isimli kullanarak kuyruktan çıkartılacak. Kuyruktan çıkarmak istediğimiz hastaları isimlerini kullanarak çıkartacağız. Mesela 6 numaralı hastanın ismi Ahmet olsun atıyorum. Ahmet Bey'i oradan çıkartacağız.
+
+26
+00:10:43,488 --> 00:11:02,608
+Ondan sonra kuyrukta bulunan hastaların bilgileri dosyada tutulmalıdır. Bu bilgileri de dosyada tutacağız. İstediğimizde, yani kuyruğu yazdırmak istediğimizde, listede kimler bekliyor bunu görmek istediğimizde de yine dosyadan okuyarak kuyruğu print edeceğiz.
+
+27
+00:11:10,772 --> 00:11:32,772
+Şimdi uygulamada öncelikle struct paint diye yani struct larımızı oluşturduğumuz patient diye bir tane file operation, bir tane struct patient dosyamız var. Ondan sonra bir de uygulama dosyamız var. Şimdi patient'ın yapısını oluşturduğumuz dosyayı
+
+28
+00:11:33,716 --> 00:11:35,056
+Burada tutuyoruz.
+
+29
+00:11:35,216 --> 00:11:39,355
+Hocam, bir saniye yalnız. Şey gelmiyor. Siz sadece tek ekran paylaştınız zannediyorum.
+
+30
+00:11:40,196 --> 00:11:41,495
+Şu anda görmüyor musunuz?
+
+31
+00:11:41,515 --> 00:11:41,755
+Yok.
+
+32
+00:11:44,796 --> 00:11:46,475
+Bütün ekran paylaşırsanız.
+
+33
+00:11:47,495 --> 00:11:48,395
+Tamam hocam.
+
+34
+00:11:57,908 --> 00:12:03,368
+Bütün ekranı paylaşıyoruz. İnternette sıkıntı oluyor da o yüzden devsiyi şey yapmıştım ama neden gözükmedi anlamadım.
+
+35
+00:12:03,587 --> 00:12:05,128
+Yok, öbür word görünüyordu.
+
+36
+00:12:05,488 --> 00:12:07,668
+Anladım hocam, tamam. Teşekkür ederim.
+
+37
+00:12:08,168 --> 00:12:10,768
+Şimdi burada yapılarımızı tanımladığımız dosyamız.
+
+38
+00:12:11,168 --> 00:12:27,168
+Kaç tane yapımız olacak? Bir tane hastalarımızı belirttiğimiz, isim, soy isim, idc, yaşı ve önceliğini tuttuğumuz bir tane kendi yapımız olacak. Sonra biz bu hastalarımızı bir listenin içerisinde tutmak istiyoruz ya, o listenin...
+
+39
+00:12:28,980 --> 00:12:55,840
+Bir tane elemanını belirtecek başka bir yapıya daha ihtiyacımız var. Bu yapıda da ne olacak? Hem hasta verisini tutan bir yapı olacak nodumuz hem de bir sonraki link liste öğrendiniz zaten. Bir sonraki ifadeyi gösterecek pointer işaretçimize ihtiyacımız var. Patient nodu işaret edecek bir patient nod işaretçisine ihtiyacımız var.
+
+40
+00:12:56,820 --> 00:13:09,240
+Arkadaşlar, bu laboratuvardaki amaç, gördüğümüz structure'ları, ayrı operation'ları, link list'leri kullanmak, aynı zamanda programı modüler hale getirmek.
+
+41
+00:13:09,240 --> 00:13:21,240
+Onun için burada üç farklı dosyamız var. Ona dikkat edin. Niye böyle bir şey şu ana kadar çok az belki bununla alakalı örnek yaptık. Ben örneğin hem böyle bir gördüğümüz konuların içermesini hem de...
+
+42
+00:13:21,344 --> 00:13:24,964
+Birden fazla modülden oluşmasını özellikle istedim. Tamam mı?
+
+43
+00:13:26,384 --> 00:13:33,024
+Sonra bu kütüphanemizi artık ana uygulamamızda include etmemiz gerekiyor.
+
+44
+00:13:33,024 --> 00:13:37,284
+Bu da strpatient.h dosyamızı.
+
+45
+00:13:37,587 --> 00:13:45,087
+Main'i de include ediyoruz. Daha sonra File Operation sayfamızı da include ediyoruz. Şimdi orada neler var ona bakalım.
+
+46
+00:13:45,087 --> 00:13:59,087
+Burada da dosyadan okuma ve yazma işlemleri yapacağız. Dosyadan okuma yaparken stream nesnemizi oluşturuyoruz. Ondan sonra...
+
+47
+00:13:59,316 --> 00:14:20,076
+Burada fread fonksiyonuyla okuma yapıyoruz. Bu fread dosyasının parametreleri var. Buffer, size, count ve stream olarak. Buffer dediğimiz ne demiş? Pointer to the buffer where data will be stored. Yani datanın tutulduğu yeri işaret eden işaretçimizi biz buraya parametre olarak veriyoruz.
+
+48
+00:14:21,331 --> 00:14:33,311
+Ondan sonra dosyadan okuyacak olan verinin boyutunu belirtiyoruz. Yani ne kadar bir boyutta bir okuma yapacağız diye. Biz burada hastaları okuyacağımız için patient yapımızı veriyoruz.
+
+49
+00:14:34,899 --> 00:14:48,099
+Ondan sonra her bir seferde okunacak veri sayısı 1 olacak. Bir tane patient okuyacak. Öyle istiyoruz. Bu da FSA'da bizim stream dosya parametremiz. Tamam mı? Stream nesnemiz.
+
+50
+00:14:50,484 --> 00:15:10,624
+Okuduğum veriler artık Patient nesnesinin içerisinde bulunacak. Ben burada okuduğum veriyi print ediyorum. Patient'ın name'ine ulaşmak için zaten sıcak yapısında bildiğimiz gibi noktayla erişebiliyoruz. Patient.name dediğim zaman hastanın ismine, soyadına, id'sine önceliğine kadar erişebiliyorum.
+
+51
+00:15:18,484 --> 00:15:27,903
+Yazdıracağımız nesnenin boyutu kaç tane yazdırıyoruz? Gene stream nesnemiz var. Ondan sonra bu şekilde yazdırma işlemi yapıyoruz. Tamam mı?
+
+52
+00:15:30,084 --> 00:15:34,384
+Şimdi uygulamada bakalım neler yapacağız. Önce ne dedik?
+
+53
+00:15:36,884 --> 00:15:39,384
+Öncelikle main'de biz...
+
+54
+00:15:40,244 --> 00:15:56,464
+Ne yapacağız? Kaç tane işlemimiz var? Kullanıcı girebileceğiz. Yeni hasta ekleyeceğiz kuyruğa. Ondan sonra ismiyle bu hastayı silebileceğiz. Ben her istediğimde dosyadan bu listeyi print edebileceğim.
+
+55
+00:16:06,419 --> 00:16:22,579
+Döngü oluşturmuşuz. Her seferinde kullanıcıdan eklemek istiyorsa 1, silmek istiyorsa 2, print etmek istiyorsa da 3 verisini alarak, okuyarak bu sefer seçimlerimizi switch case yapısıyla değerlendiriyoruz.
+
+56
+00:16:22,579 --> 00:16:30,519
+Şimdi eklemek istediğim zaman ben insert patient to list fonksiyonumu çalıştırıyormuşum. Bakalım bu fonksiyonlar neler yapıyor.
+
+57
+00:16:31,423 --> 00:16:41,143
+Yeni bir hasta eklemek istediğim zaman bu fonksiyonu kullanıyorum. Ne yapacağız? Şimdi bizim listemizde
+
+58
+00:16:41,491 --> 00:17:00,491
+Şu anda boşken hiçbir headimiz yok. Link listin başını ifade eden bir nodumuz yok değil mi? O zaman ben ne eklersem ekleyeyim. Priorities olan bir hasta da eklesem, olmayan bir hasta da eklesem, ne eklersem ekleyeyim. Bu benim listemin başı olacak değil mi?
+
+59
+00:17:09,491 --> 00:17:19,092
+kontrol etmeden direkt o hastayı listenin başı olarak eşitliyorum, ayarlıyorum ve ekleme fonksiyonundan geri dönüyorum.
+
+60
+00:17:19,092 --> 00:17:35,491
+Return yapıyoruz. Tamam mı? Bu arada en başta nodumuzun hedi oluşturuyoruz ve bu hedi de global bir değişken olarak değil de fonksiyonlarımıza parametre olarak gönderiyoruz.
+
+61
+00:17:37,140 --> 00:17:44,540
+Burada mesela oluşturmuşuz head pointer'ını, patient node'un pointer'ını oluşturmuşuz.
+
+62
+00:17:44,540 --> 00:17:48,540
+Fonksiyonumuzda onu da gönderiyoruz, adresini gönderiyoruz.
+
+63
+00:17:48,540 --> 00:17:55,140
+Parametre olarak da create new patient fonksiyonunu alıyor. Bakalım orada ne yapıyoruz?
+
+64
+00:17:55,140 --> 00:18:03,140
+Yeni hasta oluşturma fonksiyonumuzda da öncelikle yeni bir node oluşturuyoruz.
+
+65
+00:18:03,731 --> 00:18:23,391
+Memoride alan açılıyor mu dinamik olarak bunu oluşturuyoruz. Ondan sonra kullanıcıdan ismini, soy ismini, bilgilerini alıyoruz. Ve yeni bir node oluşturuyoruz. Bu oluşturduğumuz node, insert patient list fonksiyonuna bir parametre olarak gidiyor. Yani şurası.
+
+66
+00:18:31,284 --> 00:18:45,224
+Head parametremizi kullanarak şimdi bir ekleme yapacağız. Şimdi listenin başındaki yani liste tamamen boşken olan eklememizi yaptık. Eğer liste tamamen boş değilse yani bir headimiz varsa o zaman nasıl ilerleyeceğiz bunlara bakacağız.
+
+67
+00:18:48,692 --> 00:18:59,052
+Öncelikle ilk seferde head'imiz zaten parametre olarak geliyor ama last priori de head olarak değerlendiriyoruz. Tamam mı? En başta.
+
+68
+00:19:00,632 --> 00:19:14,532
+Sonra kontrol ediyoruz. Bu yeni hastanın prioritiesini. Eğer prioritiesi sıfırdan farklı bir değerse, zaten prioritimiz için önceliği yoksa sıfır, önceliği varsa da bir değerini alacağız.
+
+69
+00:19:15,155 --> 00:19:39,455
+Kullanıcıdan onu ifade ettik. Mesela onu yeni hasta oluştururken patient'ın önceliği eğer varsa 1'e 1 değeri gireceğiz. Eğer önceliği yoksa 0 değeri gireceğiz. Kullanıcıdan daha veriyi alırken.
+
+70
+00:19:40,692 --> 00:20:01,052
+Ondan sonra burada kontrol ediyoruz. Eğer hastanın prioritisi varsa, buraya geliyoruz. Ne diyor? Öncelikle yüksek öncelikli olan listede bulunan yüksek öncelikli hastaların en sonuncusunu bul diyor.
+
+71
+00:20:01,052 --> 00:20:08,052
+Yani baştan kontrol edeceğiz. Listenin başında prioritisi olan bir hasta var mı? Varsa o benim ilk...
+
+72
+00:20:08,660 --> 00:20:29,100
+Last Priority diye bir değişkenim var ya, ona eşit olacak. Eğer ondan sonraki not da prioritisi birse, bu sefer Last Prior'umu ikinciye eşitleyeceğim. Yani birinci indekste bulunan hastaya işaretlemiş olacağım. Bir sonraki de prioritisi yüksekse, bu sefer üçüncü olan eleman benim.
+
+73
+00:20:29,779 --> 00:20:39,139
+Priority yüksek olan hastam olacak. Yani last priori olacak. Çünkü onun ardına ekleme yapacağım ya. O yüzden listedeki en uçtaki yani şu dokümandan göstereyim.
+
+74
+00:20:42,067 --> 00:21:08,768
+Listedeki aslında mesela şu liste için 6, 7, 1, 2, 3, 4, 5 listesi için last prior'ımı ben 7'ye eşitlemeye çalışıyorum. Yani sağ baştan kontrol ediyorum. 6, öncelikle bakıyorum bunun prioritisi var. Bu last prior değişkeni oluyor benim için. Sonra 7'in bir sonraya bakıyorum. Eğer bu da prioritisi yüksek ise ki yüksek o zaman last prior'im benim 7 olacak. Bakıyorum bir sonrakine değil o zaman kontrol işlemime artık çıkıyorum.
+
+75
+00:21:10,067 --> 00:21:22,307
+genel bir hastanın ardında prioritisi yüksek olan bir hasta olamaz. O yüzden birinci indeksteki eleman benim last prior'im diyorum ve ayrılıyorum buradan. Bu işlemde bunu yapıyoruz.
+
+76
+00:21:29,299 --> 00:21:31,219
+Öncelikle, ne demişiz?
+
+77
+00:21:34,836 --> 00:21:51,836
+Özellikle şuna bakıyoruz bu işlemi yaptıktan sonra. Bakalım hala head yani listenin başındaki ifade last prior mı yoksa değişti mi bu diye bunu kontrol ediyoruz. Eğer last prior hala listenin başındaki ifadeye eşitse o zaman
+
+78
+00:21:53,268 --> 00:22:11,628
+Şunu kontrol ediyorum. Listenin başındaki eleman bir prioritisi var mı yok mu? Çünkü biz initial olarak last priority direkt head olarak işaretledik. Yani listede hiç prioritisi olan bir şey hasta yoksa bu hala head olarak kalmış olacak listede.
+
+79
+00:22:14,675 --> 00:22:40,935
+Eklememizi biz head'in sonrasından yapacak şekilde ayarlamıştık. Yani last prior'in bir sonrakine ekleme yapacağız. Last prior head'e eşitse ve head'in prioritisi yoksa o zaman orada bir karışıklık olacak. Yani bir tane önceliksiz hasta, sonra öncelikli hasta, sonra önceliksiz hastalar devam edecek şeklinde bir sıkıntı yaşayabiliriz. Bunu kontrol altına almak için de bunu kontrol ediyoruz. Yani last prior hala head'e eşit mi? Eğer head'e eşitse ne yapacağız?
+
+80
+00:22:42,036 --> 00:22:56,436
+Benim öncelikli hastayı biz yeni head yapacağız. Ama eğer head'e eşit değilse last prior, o zaman elde ettiğim last prior'ın bir sonrakine ekleme yapacağız.
+
+81
+00:22:56,436 --> 00:22:58,036
+Buradan bakalım şimdi.
+
+82
+00:23:00,036 --> 00:23:00,996
+Ne demişiz?
+
+83
+00:23:07,988 --> 00:23:10,148
+List değil de list olacak.
+
+84
+00:23:11,028 --> 00:23:18,728
+Has not high priority. Eğer değilse bu sefer headin başı olacak. Bunu da imin ifade ettim. Nasıl yapıyoruz?
+
+85
+00:23:19,208 --> 00:23:27,887
+Headin değerini bir temporary değişkeninde tutuyoruz. Sonra yeni headimiz new node oluyor. Yani yeni hastamız. Öncelikli olan hastamız.
+
+86
+00:23:27,887 --> 00:23:31,588
+Sonra yeni nodun bir sonra işaret ettiği.
+
+87
+00:23:32,115 --> 00:23:59,115
+Notta, temporary'de tuttuğumuz eski listenin başı olacak. Tamam mı? Eğer tam tersiyse, yani hede eşit değilse o zaman bir sonraki işaret ettiği veriye yenip hastayı ekleyeceğiz. Ne yapacağız? Last prior'ın işaret ettiği bir sonraki ifadeyi temporary'de tutuyorum. Sonra last prior'ın bir sonra işaret ettiği yere yeni hastamı ekliyorum. Sonra yeni hastanın işaret ettiği yere de
+
+88
+00:23:59,604 --> 00:24:04,604
+Bir önceki temperari de tuttuğum değeri eklemiş oluyorum. Tamam mı?
+
+89
+00:24:04,604 --> 00:24:09,604
+Burayla alakalı soru var mı acaba? Biraz karışık gelmiş olabilir.
+
+90
+00:24:14,259 --> 00:24:21,259
+Devam ediyorum o zaman. Burada da else durumu. Bu neyin else idi bakalım.
+
+91
+00:24:21,259 --> 00:24:31,259
+Heade eşit değilse yine aynı şekilde burada devam ediyoruz.
+
+92
+00:24:39,347 --> 00:25:00,548
+Burada şey durumunu kontrol ettik. Head'e eşitse ve head'in priorisi varsa veya yoksa durumu. Şimdi eşit değilse zaten burada da yine aynı şekilde ekleme yapacağız. Bunu eklememiş olsak bu sefer head'e eşit olmadığı durumda bir exception alırdık. Ama bunu da eklemiş olduk. Yani aynı kod aslında ama kontrolleri farklı. Tamam mı?
+
+93
+00:25:02,516 --> 00:25:15,576
+Sonra şurası da şu else de şunun else. Eğer prioritisi yoksa, bir hasta, prioritisi olmayan bir hastaysa o zaman ne yapacağız? Zaten direkt listenin son elemanını bulacağız. Şuradan.
+
+94
+00:25:15,576 --> 00:25:22,036
+Var hedin ya bir sonrakisi nulu ifade edinceye kadar dönecek.
+
+95
+00:25:25,011 --> 00:25:45,731
+Olduğu anda bu döngü duracak. Bu da bizim için bir ifade bir sonraki nesnesinde nulu işaret ediyorsa bu listenin son elemanıdır. Bu son elemana da yeni eklenen hastamızı ekleyeceğiz. Çünkü bu prioritisi olan bir hasta değil. O zaman dökümandan bakalım. Önceliği yoksa listenin sonuna ekleyecek demek.
+
+96
+00:25:49,076 --> 00:25:52,955
+Tamam, ekleme işlemini yaptık. Burada bir soru var mı? Tekrar soralım.
+
+97
+00:26:11,380 --> 00:26:14,259
+Soru yok. Şimdi o zaman dosyayı kaydetme işlemine bakalım.
+
+98
+00:26:16,440 --> 00:26:27,740
+Patient'ı listeye ekledikten sonra da tekste file'ımızda, yani hastalarımızı tuttuğumuz dosyamızda değişiklik yapacağız. Oraya ekleme yapacağız.
+
+99
+00:26:33,268 --> 00:26:58,648
+Buradaki dosyamız, yani dosyaya yazma yaptığımız aslında işlem. Bunu demin anlatmıştım. Gönderdiğimiz hasta bilgilerini alacak. Bu fonksiyonu kullanarak dosyaya yazma yapacak. Tamam mı? Bütün hepsini yazdırıyor. Head'i gönderiyoruz. Head geliyor. Listenin başından sağ baştan tekrardan dosyaya yazıyor. Tamam mı?
+
+100
+00:27:02,324 --> 00:27:28,124
+Silme işlemi yaparken de bakalım ne işlemi yapıyormuşuz. Hastanın ismini alıyoruz. Neden? Çünkü dosyada da ifade ederken problemimizi hastaları isimleriyle silebileceğimizi söylemiştik. Aslında bu çok kullanışlı bir şey olmamış. TC kimlik numaralarıyla silebilirdik. Çünkü birden fazla aynı isimde Ahmet olabilir. Bunu değiştirebiliriz. Ben yazarken bunu düşündüm de değiştirmeyi unutmuşum.
+
+101
+00:27:29,748 --> 00:27:56,128
+Şimdi Delete Patient hem ismi alıyor parametre olarak hem de listenin başını alacak haliyle. Çünkü listede arama yapacağız. İsmini bulduğumuz hastayı sileceğiz listeden. Delete Patient'a geldik. Parametre olarak demin de dediğim gibi isim aldık. Sonra listenin başını aldık. Geliyoruz. Şu anda Patient'ın tuttuğu veri Null.
+
+102
+00:27:57,811 --> 00:28:07,811
+Tamam varhead de bizim listemizin başını ifade ediyor. Varhead olana kadar biz listede arama yapıyoruz.
+
+103
+00:28:07,811 --> 00:28:17,811
+strcompire fonksiyonunu zaten biliyorsunuzdur. Eğer sıfır dönüyorsa iki stringin birbirine eşit olduğunu ifade ediyor.
+
+104
+00:28:19,923 --> 00:28:44,264
+Varhead'in işaret ettiği data'nın ismini ve bizim kullanıcıdan aldığımız ismi compare ediyoruz. Eğer bu değer sıfıra eşitse bu fonksiyonun return'ı bu hastayı bulduk demektir. Sonra patient'ı varhead'e işaret ediyor. Varhead'e eşitliyoruz. Çünkü bulduğumuz hastanın bilgileri hepsi burada tutulmuş.
+
+105
+00:28:50,612 --> 00:29:00,552
+Sonra bu döngüden çıkıp artık bu döngü bittiği zaman patient artık o isimde, arama yaptığımız isimdeki hastanın bilgilerini tutuyor değil mi? O zaman ne yapacağız?
+
+106
+00:29:09,076 --> 00:29:29,155
+Şunu kontrol ediyoruz. Bulduğumuz hasta listenin başındaki hasta mı, değil mi? Ona bakıyoruz. Eğer başındaki hastaysa yeni headimiz, headin bir sonra işaret ettiği hasta olacak değil mi? Ama eğer baş değilse o zaman geliyoruz.
+
+107
+00:29:30,900 --> 00:29:57,680
+Patient'ın nul olup olmadığını kontrol ediyoruz. Çünkü hiç listede olmayan bir eleman da olabilir. Eğer öyleyse zaten listede bulunamadı diye print ediyoruz ve dönüyoruz. Eğer böyle bir durum yoksa tekrar listede buluyoruz bu değişikkeni ve hastayı ve ne yapıyoruz? O nodu aradan çıkartıyoruz. Yani varheadin next'i o hastanın
+
+108
+00:29:58,195 --> 00:30:25,275
+Next'inin Next'ine işaret alıyor. Ne demişiz? Previous node, Next node will be patient, Next node. Yani burada tekrar arama yapmamızın sebebi şu. Patient'tan önceki aslında. Yani bizim bulduğumuz, sileceğimiz patient'ın bir önceki nodunu tespit ediyoruz. Çünkü bakın ne kontrol ediyoruz? Varhead'in Next'i patient olana kadar.
+
+109
+00:30:26,548 --> 00:30:39,908
+Bu döngü çalışacak. Olduğu anda, yani eşit değilse, birbirlerine eşit değilse bu döngü çalışacak. Olduğu anda buradan çıkacak. Yani bu aslında şuradaki varhedim benim. Silmek istediğim nodum bir önceki nodu aslında.
+
+110
+00:30:40,692 --> 00:30:51,892
+Dolayısıyla bir sonraki işaret ettiği verinin yerine işaret ettiği nodun bir sonra işaret ettiğini almış olacağım.
+
+111
+00:30:51,892 --> 00:31:06,471
+Yani ben şurada çizim yapabiliyorsam aslında şöyle çizebilirim burada. Listede şu benim silmek istedim, silinecek nodum. Tamam mı?
+
+112
+00:31:07,284 --> 00:31:09,284
+Bu da Previous olan.
+
+113
+00:31:09,284 --> 00:31:15,284
+Şimdi bu normalde Previous olan not silinecek notu işaret ediyor. Ben burada ne diyorum?
+
+114
+00:31:15,284 --> 00:31:24,908
+Varhead'in next'i, bu benim için şu anda şu Previous not. Tamam mı? Bu Previous not bu notu değil de...
+
+115
+00:31:25,107 --> 00:31:44,927
+Bunun işaret ettiğinin bir sonra işaret ettiği, yani direkt bu bunu işaret etsin istiyorum. Bunu aradan çıkartıyorum. Previous note aslında kendi işaretçisinin bir sonraki değil de ikinci sonrakini işaret ettiği zaman bu ortadan silinmiş olacak ve buradan liste devam etmiş olacak. Tamam mı?
+
+116
+00:31:46,407 --> 00:31:47,927
+Bir şey sorayım hocam ben burada.
+
+117
+00:31:48,548 --> 00:31:48,867
+Buyurun.
+
+118
+00:31:49,875 --> 00:32:01,135
+106. satırda bir arama işlemi yapıyorsunuz. Önce orada hastayı buluyoruz. İsim varsa. Ondan sonra bir onun öncesini buluyoruz. Doğru yapıyoruz değil mi?
+
+119
+00:32:02,255 --> 00:32:09,635
+Bunu başka türlü nasıl yapabiliriz arkadaşlar? Derste konuştuk ya hatırlıyorum. İki tane döngüye gerek var mı sizce?
+
+120
+00:32:27,155 --> 00:32:37,596
+Yani arama yaparken bir anda bir pointer ile aradığımız nodu bulana kadar current node'un bir önceki nodunu da tutsak ikinci döngüye gerek kalır mı?
+
+121
+00:32:38,955 --> 00:32:46,635
+Şu an bir tane nodumuz var. Bir sonraki iterasyonda öbür noda geçeceğiz ama şu anki nodu da bir yerde saklayabiliriz.
+
+122
+00:32:47,220 --> 00:32:49,119
+Aynen, o şekilde de yapabilirdik.
+
+123
+00:32:49,200 --> 00:33:06,180
+Yani o zaman buradaki şeye gerek kalmaz. Buna bir bakın arkadaşlar, tamam mı? Derste bunun farklı bir örneğini yaptık. Hatta zannediyorum bugün yapmış olabiliriz veya geçen bu employee örneğinde yapmışızdır. Bir bakın bakalım. Tamam, devam edebiliyoruz hocam.
+
+124
+00:33:06,180 --> 00:33:13,539
+Tamam hocam. Sonra sildiğimiz patient'ı da memory defli yapabiliriz. Boş bırakabiliriz o alanı.
+
+125
+00:33:14,867 --> 00:33:24,587
+Silme işlemini yaptıktan sonra zaten print etme işlemi kalıyor bir tek. Read file yapıyoruz. Onu da ilk başta yine göstermiştik. Dosyadan okuma yapıyoruz.
+
+126
+00:33:28,500 --> 00:33:49,439
+Ne yapıyoruz? Patient'ın yani yazdıracağımız nesnenin bilgilerini alacağımız adresi veriyoruz. Dosyadan okuma yapacağımız uzunluğu veriyoruz. Kaç tane okuma yapacağımızı veriyoruz. Ve stream nesnemizi veriyoruz. Bu şekilde dosyadan okuma yapabiliyoruz. Ondan sonra bu okuduğumuz verileri de bu şekilde print ediyoruz.
+
+127
+00:33:49,439 --> 00:33:55,939
+Biz burada dosyadan okuma yazma işlemini de buraya ekleyebilelim diye böyle aslında her seferinde işlem yapıyoruz ama.
+
+128
+00:33:56,500 --> 00:34:04,399
+Hani görmüş olalım diye böyle yaptık. Aslında her seferinde dosyodan okumam çok efektif değil.
+
+129
+00:34:05,319 --> 00:34:08,579
+Yani zaten şeyde tutuyoruz şu anda program çalışırken.
+
+130
+00:34:11,079 --> 00:34:13,720
+Bu şekilde sorunuz varsa alalım.
+
+131
+00:34:21,907 --> 00:34:35,827
+Evet, bu [öğrenci]'in sorduğu şeyi de anlatmıştık. Niye kullanıyoruz arkadaşlar Hedy? Hocamız söylemeden anlattığımız arkadaşlar, derse katılanlar biliyor olması gerekir.
+
+132
+00:34:36,807 --> 00:34:46,527
+Hatta bununla alakalı önce normal bir değişken üzerinde örnek yaptık. Bir de Structure ve Linktist üzerinde bir örnek yapmıştık.
+
+133
+00:34:51,347 --> 00:34:53,127
+Ben aradan sorayım mı isim seçip?
+
+134
+00:34:57,619 --> 00:35:01,840
+Mesela [öğrenci] ne için kullanıyoruz?
+
+135
+00:35:11,987 --> 00:35:16,148
+[öğrenci] herhalde yok galiba. [öğrenci].
+
+136
+00:35:22,675 --> 00:35:24,195
+Yoklama yapmaya kalksak.
+
+137
+00:35:26,416 --> 00:35:28,895
+[öğrenci].
+
+138
+00:35:31,295 --> 00:35:34,135
+Yani sesini geliyor mu hocam?
+
+139
+00:35:34,635 --> 00:35:35,155
+Geliyor evet.
+
+140
+00:35:35,155 --> 00:35:35,855
+Yani şey.
+
+141
+00:35:37,615 --> 00:35:38,496
+Tamam canım.
+
+142
+00:35:39,596 --> 00:35:41,215
+Ne hatırlayamıyorum maalesef ben.
+
+143
+00:35:45,015 --> 00:35:49,795
+Return etme ile alakası kısmen var mı? O fonksiyon bir şey return etmiyor.
+
+144
+00:35:51,827 --> 00:35:54,427
+Hani orada void şey var.
+
+145
+00:35:57,247 --> 00:36:04,747
+Sonuçta biz bu delete patient yapınca headin değişme olasılığı var mı?
+
+146
+00:36:11,123 --> 00:36:16,603
+Evet, yani head baştan silinebilir veya head yerine farklı bir şey gelebilir.
+
+147
+00:36:17,384 --> 00:36:25,903
+Head'i güncellemek için ya return yapacaksınız, hangi tür işte patient not türünde bir şey return edeceksiniz.
+
+148
+00:36:26,223 --> 00:36:33,783
+Ya da çift pointer ile ancak head'i güncellemek için. Bunun tek pointer olması durumunda head'in güncellenmeyeceğini,
+
+149
+00:36:34,443 --> 00:36:37,563
+integer değişkenler üzerinde 2 veya 3 ders önce konuştuk.
+
+150
+00:36:39,027 --> 00:36:39,707
+Tamam mı?
+
+151
+00:36:41,087 --> 00:36:47,728
+Bu dersin gayelerinden bir tanesi bu linklerin, düğümlerin, pointerların şeyini öğrenmek arkadaşlar.
+
+152
+00:36:49,127 --> 00:36:53,447
+Yani siyde bunu öğrenemezseniz gelecek dönem data yapılarında çok sıkıntı çekersiniz.
+
+153
+00:36:55,768 --> 00:37:00,607
+Aslında çok eğlenceli, en eğlenceli şeyi de bu veri yapılarında bunlar.
+
+154
+00:37:02,963 --> 00:37:17,304
+Düğümler arasında kaybolursunuz. Bunları tekrar edin. Bu bilgiler size lazım olacak. Eğer mezun olduktan sonra bilgisayar mühendisi olarak iş yapmak istiyorsanız tabii ki. Çünkü bu işin temeli bu.
+
+155
+00:37:18,324 --> 00:37:27,023
+Bu Linked List'de de hocam kafa karışıklığı olabiliyor. Çizerek mantığı oturmaya çalışırlarsa o da öyle bir tavsiyede de bulunalım.
+
+156
+00:37:27,023 --> 00:37:40,564
+Kesinlikle. Yani Linked List, Binary Tree bunların hepsinde zaten dün de konuştuk aslında bir yerde. Önce kağıt üzerinde bu işi çizeceksiniz. Linkleri ona göre düşüneceksiniz.
+
+157
+00:37:41,108 --> 00:38:06,228
+Ve kodlamayı kafanızda, işte algoritmayı tuttukları kodlama kolay. While döngüsüyle gideceğimiz yere gidiyoruz. Öncesi, sonrası işte falan. Ve gördüğünüz yerde her şeyler pointerlarla yürüyor. Eğer ileride IoT gibi, gömül sistemler gibi konular çalışacaksanız da bunlar yine lazım olacak öyle söyleyeyim. Herhangi bir sorunuz var mı arkadaşlar hocamıza?
+
+158
+00:38:08,019 --> 00:38:10,779
+Hocam mesela, siz geliyor mu şu an?
+
+159
+00:38:11,599 --> 00:38:12,019
+Geliyor.
+
+160
+00:38:13,219 --> 00:38:26,019
+Şey, mesela şey yapabilir miyiz? Bu bize verdiğimiz projede de aslında her bir öğrenci, her bir öğretim üyesinin arası bir link bağlayıp hepsi kendi içerisine dizebilir miyiz?
+
+161
+00:38:27,300 --> 00:38:29,619
+Şimdi o şöyle bir şey. Orada failler var.
+
+162
+00:38:30,867 --> 00:38:50,635
+Yani dosyanın tamamını okuyup bir structure'da tutabilirsiniz. Ona göre kurgulama yapılabilir ama iki fail arasındaki ilişkiyi gösteren bir şeyi burada tekrar tutmaya gerek yok. Yani dört tane dosya varsa dört tane structure olacak. O structure'lar arasında...
+
+163
+00:38:50,675 --> 00:39:07,355
+Doğrudan bağlantı kurmaya gerek yok diye düşünüyorum. Çünkü öğrenci ID'siyle ders ID'sini eşleştirdik. Çok acok ilişki orada o şey de vardı. Onu da o dosyaya ekleme silme yaparken olmayan bir dersi eklememeniz veya olmayan bir öğrenciyi eklememeniz yeterli.
+
+164
+00:39:09,835 --> 00:39:15,456
+Doğrudan structure'lar arasında bir ilişki kurmaya gerek yok. Linked list kurmaya da bence gerek yok.
+
+165
+00:39:15,891 --> 00:39:22,291
+Çünkü orada dosya üzerinde arama yapıp eklesil güncelle listele temel bu dört işlem yapılacak.
+
+166
+00:39:22,291 --> 00:39:25,791
+Onu oradan ancak şu şeyde olabilir.
+
+167
+00:39:26,032 --> 00:39:34,051
+İşte bir dersin öğrencilerinin listesini seçerken dosyadan o derse ait bütün öğrencileri çekerseniz bilgileriyle birlikte.
+
+168
+00:39:35,471 --> 00:39:39,371
+O structure'ları daha sonra kombine edip işte listeleme yaparken kullanabilirsiniz.
+
+169
+00:39:39,631 --> 00:39:42,731
+Yani o da orada problem değil ama eklesilde pek gerek yok bence.
+
+170
+00:39:45,364 --> 00:40:01,023
+Sizi zorlar ayrıca. Şöyle zorlar. Structure'lar arasındaki ilişki objekt oryantıda olduğu gibi kolay değil. Bir sürü ekstra yük çıkarır ama listelemede kullanılabilir mi? Kullanılabilir.
+
+171
+00:40:04,243 --> 00:40:05,403
+Anladım hocam. Teşekkürler.
+
+172
+00:40:08,823 --> 00:40:10,864
+Evet, soru var mı başka arkadaşlar?
+
+173
+00:40:14,483 --> 00:40:16,423
+Peki, hocam teşekkür ederiz.
+
+174
+00:40:16,743 --> 00:40:21,043
+Ben teşekkür ederim hocam. Ben böyle uygulamayı paylaşıyorum o zaman hemen.
+
+175
+00:40:22,043 --> 00:40:22,764
+Ulaşabilirler.
+
+176
+00:40:24,264 --> 00:40:26,163
+Hocamın sitesinden indirebilirsiniz.
+
+177
+00:40:27,503 --> 00:40:32,203
+Gelecek hafta salı günü varsa bununla alakalı bana soru sorabilirsiniz.
+
+178
+00:40:32,203 --> 00:40:34,059
+Ben ayrıca...
+
+179
+00:40:34,195 --> 00:40:44,576
+Size mail göndereceğim. Merak ettiğiniz bir konu varsa kısaca tekrar edelim. Bir de thread konusunu anlatacağım. Gelecek son derste öyle değerlendirelim arkadaşlar. Hepinize iyi akşamlar. Görüşmek üzere.
+
+180
+00:40:45,036 --> 00:40:47,475
+İyi akşamlar hocam.

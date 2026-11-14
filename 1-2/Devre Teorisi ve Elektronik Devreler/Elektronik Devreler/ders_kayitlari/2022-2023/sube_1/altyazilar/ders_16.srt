@@ -1,0 +1,1279 @@
+1
+00:01:17,811 --> 00:01:19,371
+Herkese merhabalar arkadaşlar.
+
+2
+00:01:21,811 --> 00:01:22,512
+Günaydın hocam.
+
+3
+00:01:22,951 --> 00:01:24,932
+Günaydın, ses geliyor zannedersem.
+
+4
+00:01:25,712 --> 00:01:31,292
+Şimdi bu dersin slide'ını da yükleyeyim. Elektronik Devreler 4 slide'ını yükleyeyim öncelikle.
+
+5
+00:01:45,555 --> 00:01:46,635
+Neyi klede.
+
+6
+00:02:40,403 --> 00:02:40,783
+Okay.
+
+7
+00:02:44,563 --> 00:02:58,503
+Arkadaşlar, normal transistörleri gördükten sonra, transistörün değişik bir versiyonu olarak MOSFET tabanlı transistörleri görecektik.
+
+8
+00:02:58,503 --> 00:03:04,743
+Fakat önümüzdeki hafta başlama göre ise arkadaşlar, o pamplarla alakalı deney yapacağınız sürediler.
+
+9
+00:03:05,283 --> 00:03:11,403
+O yüzden o pump deneyini en sona bırakmıştık. Onu bir öne alıp, bu hafta o pamplarla alakalı...
+
+10
+00:03:11,443 --> 00:03:26,343
+Çözümleri yapıp önümüzdeki hafta sınavımızı gerçekleştireceğiz. Şimdi kısaca bir bekleyelim. 2-3 dakika sonra biraz daha sınıf mevcudu artsın. Ondan sonra sınavla ilgili duyuruları yapıp ondan sonra dersimize başlarız.
+
+11
+00:06:18,995 --> 00:06:24,255
+Evet arkadaşlar, şimdi dersimize başlayalım.
+
+12
+00:06:30,387 --> 00:06:32,707
+Ekran paylaşımı geldi mi arkadaşlar?
+
+13
+00:06:33,887 --> 00:06:34,867
+Geldi hocam.
+
+14
+00:06:35,307 --> 00:06:35,867
+Tamamdır.
+
+15
+00:06:36,647 --> 00:06:49,367
+Demin de dediğim gibi arkadaşlar, normalde transistörlerden, BGT transistörlerden sonra, şöyle yazalım, BGT transistörlerden sonra, bir sonraki konu FET'lerdir.
+
+16
+00:06:49,744 --> 00:06:57,684
+Ama bu OPAMP'ı araya sokuyoruz şu anda. Bu hafta OPAMP, yani işlemsel yükselteşleri hızlıca göreceğiz.
+
+17
+00:06:57,804 --> 00:07:03,884
+Çünkü önümüzdeki hafta laboratuvarımız OPAMP'lar üzerineymiş.
+
+18
+00:07:05,264 --> 00:07:07,484
+Sınavla alakalı bir açıklama yapmak istiyorum.
+
+19
+00:07:07,484 --> 00:07:15,564
+Önümüzdeki hafta ders saatinde vize, vizemiz. Bakalım tarihini tam şey yazalım.
+
+20
+00:07:16,180 --> 00:07:26,740
+Vizemiz 11 Mayıs saat 10'da. Tam 10'da başlayacak arkadaşlar.
+
+21
+00:07:28,080 --> 00:07:32,579
+Klasik sınavları yaptınız mı hiç şimdiye kadar? Klasik sınavlar nasıl oluyor şeklinde?
+
+22
+00:07:35,019 --> 00:07:39,519
+Klasik sınavları yaptınız mı hiç arkadaşlar bu vize sezonunda?
+
+23
+00:07:42,355 --> 00:07:47,995
+Hocam, genel olarak testi sadece bir kod kısmı vardı veri yapılarında o kadar. Genel olarak test oldu.
+
+24
+00:07:47,995 --> 00:07:58,596
+Ben bu ödevler ve sınavlar kısmından yükleyeceğim bunu. Sınav olarak tanımlanacağım. Burada dikkat etmeniz gereken husus şu arkadaşlar sınavda.
+
+25
+00:07:59,175 --> 00:08:05,555
+Bir, siz bir kağıda bunları cevaplarınızı yazacaksınız. Ben bir pdf şeklinde soruları göndereceğim.
+
+26
+00:08:05,555 --> 00:08:07,196
+Sorular.
+
+27
+00:08:08,084 --> 00:08:25,403
+Daha sonra siz bunlara çözümler yapacaksınız veya beyaz bir kağıda yaparsınız. Tamam mı? Daha sonra bu kağıtları yazdıktan sonra, tabii kalemle yaptığınız zaman bunları daha sonra PDF'e dönüştüreceksiniz. Dolayısıyla hazırlıklı olun. Burada bir PDF'e dönüştürme süreci var.
+
+28
+00:08:33,940 --> 00:08:48,600
+Ödev kısmına yüklemeniz lazım. Dikkat edin. Örneğin sınavımızın sonu diyelim ki 75 dakika. Arkasından dedik ki 11.25'te.
+
+29
+00:08:49,683 --> 00:09:16,423
+Submit edin dediğimiz zaman. Son 5 dakikaya ayırmayın bu işleri. Eliniz ayağınıza karışır. Bunu PDF'e dönüştüremezsiniz. Sisteme yükleyemezsiniz. Bütün sınav kağıtlarının sistemde olması önemli. Ondan sonra son dakikada bilgisayarımın internete gittiği sonra şey yaptığım gibi yapmayın. Son 10-15 dakikanızı bunları PDF'e dönüştürüp sisteme yüklemeye çalışın arkadaşlar.
+
+30
+00:09:17,683 --> 00:09:42,604
+Ona göre ayarlayın. Biz o ekstra 10 dakikayı buraya eklemiş durumdayız. Ekleyeceğiz. Sınav süresine dikkat edin. Ondan sonra e-maillerle lütfen sınav göndermeyin. Önemli olan sınavların sisteme kayıtlı olması. Ondan sonra saat şurada geldi. İşte kanıt olarak bakın bunu yükleyemedim şeklinde yapmayın. Zaten yoğun bir vize haftası olmadığı için.
+
+31
+00:09:42,991 --> 00:10:03,932
+Bir terslik çıkmayacaklarını düşünmüyorum. Dolayısıyla lütfen zamanında kendinize PDF'e dönüştürme. PDF'e dönüştürücü programlar da var. Böyle direkt çektiğiniz telefonlarınızla veya tarayıcınızla PDF'e dönüştürüp sistemi bu şekilde yüklemeniz gerekiyor arkadaşlar.
+
+32
+00:10:07,700 --> 00:10:12,820
+Yani iki sayfanız var diyelim. İki sayfalık bir pdf olacak. Tek bir dosya şeklinde.
+
+33
+00:10:12,820 --> 00:10:27,000
+İşte bunu yüklerken de pdf'in adınızı öncelikle at soyat. Ondan sonra burada da no'unuzu yazın.
+
+34
+00:10:27,635 --> 00:10:45,235
+LK vize nokta pdf şekline getirin ve de bu şekilde yükleyin arkadaşlar. Anlaştık mı? Sizin sorunuz var mı bu kısımlarda? Sınavla alakalı bir sorunuz var mı arkadaşlar?
+
+35
+00:10:52,275 --> 00:11:01,596
+Evet, bu hafta işleyeceğimiz sınava OPM'da dahil. Aynı şekilde. Yani işlediğimiz bütün konular bizim için dahil arkadaşlar.
+
+36
+00:11:01,596 --> 00:11:16,235
+Şimdi, Operational Emplifiers işlemsel yükselteç olarak Türkçe'ye çevriliyor. Önümüzdeki hafta bunun laboratuvarlarını yapacakmışsınız.
+
+37
+00:11:19,155 --> 00:11:30,735
+Temel yapıları gösterelim. Bu niçin kullanılıyor? Adı üstünde gerilim yükseltmelerinde, yani giriş işaretinin daha büyük işaretlere yükseltilmesinde.
+
+38
+00:11:30,735 --> 00:11:38,296
+Mesela bu nerede işinizi yarayabilir? Örnek veriyorum. Ufak bir işaretiniz var. Şöyle o pump yapalım.
+
+39
+00:11:39,187 --> 00:12:00,387
+Küçük bir dalganız var. Bunu yükseltmeye çalışırsınız. Örneğin bunu nerede kullanıyoruz? Haberleşme devrelerinde gelen çok küçük sinyallerin daha sonradan işlenebilmesi için devre içerisinde yükseltilmesi. Mesela uydu yayıncılığı, uydulardan gelen çok zayıf sinyaller daha sonra yükseltilerek üzerinde temizlik işlemlerinde yapılarak kullanılıyor.
+
+40
+00:12:07,187 --> 00:12:13,488
+Kullanılan teknolojiler arkadaşlar. Çokça kullanılıyor dediğim gibi.
+
+41
+00:12:15,091 --> 00:12:32,951
+Standart paketlerden bahsedecek olursak, devrelerde arkadaşlar iki tip yapı vardır. Bir tanesi SMD dediğimiz Surface Mounted Device olarak söyleniyor. Burada paket T de kullanmış ama D de kullanılıyor.
+
+42
+00:12:32,951 --> 00:12:43,091
+Bunlar devrenin yüzeyindeki boş adacıklara öncelikle kurşunlar dökülüyor. Ondan sonra sıcaklıkla buraya yapışması sağlanıyor.
+
+43
+00:12:43,091 --> 00:13:07,852
+Bunlar ise daha çok delikli bordlara yerleştirilerek, girdi yapılarak daha sonra lehimlenerek kullanılıyor. Bu biraz daha eski teknoloji. Bunlar daha çok yeni şeylerde yüzeye montajlı yapılar kullanılıyor ama pratikte, ondan sonra günlük hayatta, hızlı devre yapma, prototip devre yapmada bu tip paketlerde kullanılıyor arkadaşlar.
+
+44
+00:13:11,091 --> 00:13:33,152
+Bunu noktalı yer genellikle bize ve noktalı yerden baktığımızda 1-2-3-4-5-6-7-8 şeklinde saat yönünün tersine kendimize doğru noktayı solumuza aldığımızda, sol altı aldığımızda 1-2-3-4-5-6-7-8-9-5-6-7-8 şeklinde devam ediyor.
+
+45
+00:13:33,152 --> 00:13:39,091
+Veya bu nokta olmayabilir. Şöyle bir tik olabilir veya bir çentik olabilir.
+
+46
+00:13:39,091 --> 00:13:49,152
+Onu da solumuza aldığımızda aynı şekilde saat yönünün tersinde bacak numaralandırılması yapılabiliyor arkadaşlar.
+
+47
+00:13:50,372 --> 00:13:58,231
+Bakın burada bunlar çiplerin paketlenme şekli. Yani içerisinde ne var ne yok şimdi inceleyeceğiz.
+
+48
+00:14:05,940 --> 00:14:25,100
+Yapıya bakalım. O pump dediğimiz şeyin gösteriminde arkadaşlar bir üçgen, eksi, artı işareti var ve de bir de çıkışı var. İki tane girişi var. Bir eksi bacağı var. Burada gördüğünüz gibi ikin oğlu bacak. Bir de artı ucu var.
+
+49
+00:14:25,748 --> 00:14:50,688
+Buna evirmeyen, yani evirmeyen giriş. Burayı ise eviren, yani evirmek kavramını invert kelimesinden geliyor. Tersine çeviren, eviren manasında. İki bacağı var. Çıkışı ise bir tane. Ayrıca başka şekillerde de gösteriliyor. Bu opamp'un besleneceği bir V-positive kısmı var.
+
+50
+00:14:52,019 --> 00:14:53,932
+Misal anyan arkadaşlar?
+
+51
+00:14:56,947 --> 00:15:04,947
+Burada pozitiften bir besleme gösterilir. Bazen de işte bu negatif ve...
+
+52
+00:15:05,120 --> 00:15:32,440
+Pozitif besleme kısımları ayrıca da çizilebiliyor. Diğer bacaklar 1,8,5 ise boş. Bazen bir paketin içerisinde iki tane opamp bulunuyor. Buradaki V pozitif, mesela burada gördüğünüz V pozitifler şöyle her ikisine de gittiğiniz an tek bir girişten veriliyor. Negatif beslemeler ise şu şekilde veriliyor. Bakın burada iki tane opamp var. Kullanabileceğiniz iki tane yapı var.
+
+53
+00:15:33,120 --> 00:15:43,720
+Bir çip içerisine aynı şekilde 14 bacaklı bir yapı içerisine aynı zamanda bakın 4 tane o pump'ı da sığdırabiliyorlar.
+
+54
+00:15:43,720 --> 00:15:50,980
+Yani bunların tabii ki speklerinden okuyarak o pump'ın içeriğini değerlendirebilirsiniz.
+
+55
+00:15:51,480 --> 00:15:53,899
+Şimdi o pump nedir?
+
+56
+00:15:54,836 --> 00:16:00,436
+İdeal OPAM tanımından yola çıkarak hesaplamalarımızı yapacağız.
+
+57
+00:16:00,855 --> 00:16:06,615
+Şimdi ideal OPAM dediğimiz arkadaşlar şöyle bir yapı gelecek aklınıza artık.
+
+58
+00:16:07,475 --> 00:16:14,016
+Şimdi bir artı bacağı, bir eksi bacağı, bir de çıkışı output diyelim.
+
+59
+00:16:14,016 --> 00:16:21,556
+Bu pozitif input, bu da negatif input şeklinde düşünelim.
+
+60
+00:16:21,971 --> 00:16:42,692
+Şimdi, ideal opamda arkadaşlar giriş işareti, gerilim kazancının sonsuz olduğu, giriş direncinin yani şunların arasında eğer bir direnç ölçümü yapsaydık şayet sonsuz verdiği ve çıkış direncinin sıfır olduğu bir yapı.
+
+61
+00:16:43,091 --> 00:16:54,451
+Anlaşılacak. Demek ki gerilim kazancı sonsuz, giriş direnci sonsuz ve çıkış direnci sıfır. Bu ideal tanımlaması arkadaşlar.
+
+62
+00:16:55,371 --> 00:17:01,312
+Şimdi yavaş yavaş bunu tek bacaklı bir devre olarak gösterseydik şayet.
+
+63
+00:17:10,771 --> 00:17:14,172
+Veya tersine çeviren, çevirmeyen şeklinde düşünebiliriz.
+
+64
+00:17:15,092 --> 00:17:17,912
+Buradaki bu kavramları öncelikle anlamaya çalışalım.
+
+65
+00:17:17,912 --> 00:17:20,011
+Av2, ne demek Av?
+
+66
+00:17:20,971 --> 00:17:22,311
+Gerilim kazancı.
+
+67
+00:17:24,811 --> 00:17:27,331
+Yani siz 1 volt verdiniz.
+
+68
+00:17:27,532 --> 00:17:31,831
+Gerilim kazancı Av2 ise 2 volt elde ettiniz.
+
+69
+00:17:32,092 --> 00:17:34,511
+Bakın, burada gerilim kazancı 2'ymiş.
+
+70
+00:17:35,028 --> 00:17:48,028
+İmput işareti bu. Bir sinizoidal işaret. Bakın. Eğer gelin kazancı 2 ise, buradan şunu anlıyoruz. İki katına çıkıyor. Mesela burası 1 ise...
+
+71
+00:17:48,112 --> 00:17:52,851
+Buranın maksimumu 2. Burası 2 ise burası 4. Şeklinde anlıyoruz.
+
+72
+00:17:53,211 --> 00:18:00,791
+Peki, eviren bu. Bu evirmeyen gerilim kazancı. Yani evrilme yok. Evrilme ne demek?
+
+73
+00:18:01,492 --> 00:18:09,172
+Evrilme şu demek arkadaşlar. Mesela burası 1 voltken dikkat edin onun karşılığı olan gerilim kazancı.
+
+74
+00:18:09,172 --> 00:18:15,251
+Eksi 2 ise 1'e eksi 2'ye dönüştürüyor. Yani buradaki gerilim. Mesela burası.
+
+75
+00:18:15,695 --> 00:18:28,295
+Eksi 1 diyelim. Burası ne oluyor? Eksi 1 çarpı eksi 2. 2 volta. Yani arada 180 derecelik faz farkını kastediyoruz.
+
+76
+00:18:28,295 --> 00:18:36,295
+Yani burada demek ki pozitifler negatife, negatifler ise pozitife dönüyor. Buradaki eksilik...
+
+77
+00:18:37,748 --> 00:18:59,867
+Bizim aslında 180 derecelik bir fas farkına işaretliyor. Fas farkı neydi arkadaşlar hatırlarsanız. Bir sinizoidal işaret için düşünelim. Tam evriliyorsa işaret bakın. Burada nedir? AV'si eksi bir kabul edeyim. Burası 2V ise burası da eksi 2V.
+
+78
+00:19:00,884 --> 00:19:13,784
+Eksi 1 ise, 1 ise, eksi 1 bu. Yani bakın dikkat edin aslında sinizoidal işaret burada 180 derece kaymış veya pi kadar kaymış diyebiliriz.
+
+79
+00:19:15,224 --> 00:19:24,124
+Evrilme kavramını anladınız mı arkadaşlar? Yani oradaki eksilik evirmek veya tersine döndürmek aslında 180 derecelik faz farkına.
+
+80
+00:19:24,627 --> 00:19:31,887
+İşaret değişimi, neden olan yapı bir kastediyoruz. Bu anlaşıldı mı [öğrenci]?
+
+81
+00:19:34,947 --> 00:19:36,188
+Anlaşıldı hocam.
+
+82
+00:19:36,188 --> 00:19:37,827
+[öğrenci] anlaşıldı mı?
+
+83
+00:19:39,887 --> 00:19:41,188
+Anlaşıldı hocam.
+
+84
+00:19:41,647 --> 00:19:49,163
+Tamamdır. Bu evirme kavramını yapmıştık. Şimdi biraz daha şeylere geçelim. Biz...
+
+85
+00:19:50,963 --> 00:20:10,283
+O pamplarla alakalı soru çözümlerini nasıl yapacağız? Dediğim gibi o pump deyince aklımıza şu yapı gelecek. Eksi artı ucu var bir de çıkışı var. Hep buna göre değerlendireceğiz. Artısı yukarıda da yapılabilir. Eksi aşağıda da yapılabilir. Önemli olan o değil.
+
+86
+00:20:10,804 --> 00:20:20,024
+Şimdi giriş direnci sonsuz olduğu için, bakın giriş direnci sonsuz olduğu için buradan sanki akım akmıyormuş gibi kabul ediyoruz veya çok yüksek olduğu için.
+
+87
+00:20:20,723 --> 00:20:26,784
+Burası üçgenin içi gibi düşünün. Ne demiştik? Re-input sonsuz demiştik.
+
+88
+00:20:27,423 --> 00:20:31,943
+Dolayısıyla buradan sanki akım akmıyormuş gibi bu direncin üzerinden çok yüksek olduğu için.
+
+89
+00:20:31,943 --> 00:20:38,603
+Dolayısıyla benim şuradaki v pozitif ve negatife eşit.
+
+90
+00:20:39,503 --> 00:20:45,304
+Daima şu iki ucun birbirinin geliminin aynı olduğu düşünülür.
+
+91
+00:20:45,844 --> 00:21:03,364
+Bakın, burada onu görmüş oluyoruz. Giriş direnci sonsuz olduğu için giriş gerilimleri aynı kabul ediyor. Yani ben eğer buraya V'in uygulamışsam V'ye artıya, burada da V'yi bulunur. O iki direnç birbirine eşittir.
+
+92
+00:21:03,364 --> 00:21:11,364
+Aynı zamanda bu devreyi buna göre çözecek olursak arkadaşlar.
+
+93
+00:21:11,859 --> 00:21:14,359
+Şimdi bunu ona göre çözelim.
+
+94
+00:21:15,259 --> 00:21:27,019
+Şimdi burada gelim kazancı demek arkadaşlar, yani demin A, V şeklinde gösterdiğim şey, Vout bölü Vindir.
+
+95
+00:21:27,019 --> 00:21:32,019
+Yani giriş çıkışı ne kadar kuvvetlendirdiğinizin bir ölçüsüdür.
+
+96
+00:21:38,688 --> 00:22:03,788
+Hep bu opamplı yapılarda oluyoruz. Buna aynı zamanda bazen de gain diyorlar. G de. Böyle gain şeklinde de adlandırılıyor. Bakın. Temel yapı neydi? Bizim ipucumuz neydi bu çözümlerde? Burası buraya eşit olacak. B artı ve eksiye eşit olacak. Tamam. Çözelim bu durumda bakalım. Bizim çözümümüz ne olacak burada?
+
+97
+00:22:04,756 --> 00:22:19,356
+Bir de, şu anda belirtmiyoruz herhalde. Onu şey yapmayız bakayım. Tamam. Bir de şey yapmayacağız. Diyeceğiz ki benim buradaki gerilimim, onu zamanla açıklayalım. Tamam.
+
+98
+00:22:20,036 --> 00:22:30,496
+Buraya Vİ uygulanmışsa burada da Vİ var. Dolayısıyla bu Vİ burada da gözüküyor. Burada ne var arkadaşlar çıkışta? Size şurası neyi hatırlatıyor?
+
+99
+00:22:31,571 --> 00:22:32,751
+Kim söylemek ister?
+
+100
+00:22:36,627 --> 00:22:59,967
+Gerilim bölücü hocam. Evet, aynen dediğin gibi. Şimdi ben buradan çıkarım mı yapacağım? Burası neymiş? V-Output. V-İ'yi. V-Output cinsinden nasıl yazarım arkadaşlar? V-Output. Şöyle bir yapalım. Direkt kendi bildiğim yöntemle yapayım. Diyeyim ki.
+
+101
+00:23:01,619 --> 00:23:12,259
+V'yi eşittir. V'yi gelime eşittir. R2 bölü R1 artı R2 çarpı Vout.
+
+102
+00:23:13,460 --> 00:23:20,559
+Diyebilir miyiz? Yani Vout'un R2 üzerindeki geli toplam dirençlerin üzerinde R2 kadar.
+
+103
+00:23:20,720 --> 00:23:24,980
+Yani buraya düşen gelin bu. Veya şu şekilde de yapabilirsiniz arkadaşlar.
+
+104
+00:23:25,811 --> 00:23:51,531
+Şuradaki akım şuna eşit. Yani i1, i2'ye eşit. Dikkat edin burada çok büyük direnç olduğu için buradaki akım yani buradaki şuradan gelecek akım sıfıra eşit arkadaşlar. Yani v- veya v- artıdaki şöyle diyeyim i- eşittir i artı eşittir sıfır. Çünkü çok büyük direnç olduğu için oradan sanki o pump'ın içine akım girmiyormuş gibi kabul edebiliriz.
+
+105
+00:23:52,115 --> 00:24:05,555
+Şimdi burada i1, i2. Buradan akım gelmediği için ne diyebilirim? i1 eşittir i2. Buradan geliyor akım, toprağa gidiyor. Ona göre yapayım hesabım. Bakalım bunun aynısını bulabilecek miyim?
+
+106
+00:24:06,275 --> 00:24:18,135
+i1 eşittir i2. i1'i nasıl yazabilirim arkadaşlar? Siz söyleyin bana. i1'i. Şuradaki akımı.
+
+107
+00:24:19,412 --> 00:24:32,312
+Ne derim? Gelin farkı ve output eksi ve input bölüm ve bir.
+
+108
+00:24:34,312 --> 00:24:37,872
+Bir direncin üzerindeki akımı nasıl ölçersiniz arkadaşlar?
+
+109
+00:24:38,971 --> 00:24:41,812
+V eşitti i çarpı r. Öyle değil mi?
+
+110
+00:24:43,476 --> 00:24:49,996
+i akımı v bölü r bir. Direncin üzerinde düşen v r bir ne arkadaşlar v r bir.
+
+111
+00:24:50,996 --> 00:24:54,396
+Yani r bir direncin üzerindeki düşen gelin.
+
+112
+00:24:54,396 --> 00:25:05,156
+v out eksi v input iki ucu arasındaki gelin yani v a noktası b noktası diyeyim buna v a eksi v b.
+
+113
+00:25:05,916 --> 00:25:10,036
+Öyle değil mi? Bölü r bir. Bakın.
+
+114
+00:25:10,516 --> 00:25:15,456
+Peki aynısını siz söyleyin. R2 yani i2'yi hesaplarken nasıl yapalım?
+
+115
+00:25:18,176 --> 00:25:27,096
+vr2'yi nasıl yazalım? vr2 bölü r2. Nasıl yazalım vr2? v input eksi sıfır.
+
+116
+00:25:27,096 --> 00:25:34,096
+Çünkü burası stoprak buranın c'si v input, d'si ise sıfırda. v i eksi v.
+
+117
+00:25:34,740 --> 00:25:40,620
+0, yani üzerinde düşen gelinim bölüm R1. Dolayısıyla buraya da ne yazabilirim?
+
+118
+00:25:40,620 --> 00:25:57,839
+V, İ bölü R2. Daha sonra bunları taraf tarafa çarptığında, V0R2'ye eksi VİR2 eşittir.
+
+119
+00:25:58,259 --> 00:26:20,299
+Vİ çarpı V1. Vİ'leri bir tarafa toplayayım arkadaşlar. Voutput R2 eşittir. Vİ parantezinde R1 artı R2. Peki ben niye arıyordum? Burada V0 bölü Vİ eşittir.
+
+120
+00:26:26,228 --> 00:26:37,148
+Vİ dedim. Yanlış bir şey yapmadım değil mi? Eşittir. V1 artı R2 bölü V1 olmuş oldu.
+
+121
+00:26:38,988 --> 00:26:51,807
+Bakın, burada da aynı şeyi bulmuştum. Burada Vİ eşittir, V0 demiştim. Buradan şey yaparsam, V0 bölü Vİ dersem ne olacak? V1 artı R2 bölü V2 olmuş oluyor.
+
+122
+00:26:52,788 --> 00:27:07,707
+Bu anlaşıldı mı arkadaşlar? Ya gerilim bölücüden bulursunuz. Burada V0 bölü V'yi olduğu için yerlerini değiştireceğiz. Veya uzun yoldan ispatını yapmış oldum size. Akımların eşitliğinden yola çıkarak aynı şeyi buldum.
+
+123
+00:27:08,468 --> 00:27:22,387
+Bu evirmeyen bir amplifier yapısıymış. Yani benim girişime verdiğim yapıyı, bakın, ve input'uma verdiğim gelimi ve output'tan elde ediyorum.
+
+124
+00:27:22,387 --> 00:27:34,807
+Gelim kazancını da şöyle hesaplıyorum. Her birine 1K versem, örneğin 1K versem, bunun gelim kazancı ne olacak arkadaşlar? 2.
+
+125
+00:27:36,115 --> 00:27:45,375
+Gördüğünüz gibi. Her birine örneğin R1'e 1K, R2'ye 3K versem ne olacak arkadaşlar?
+
+126
+00:27:45,915 --> 00:27:51,836
+2K versem 3 bölü ikilik bir gerilim kazancı olmuş olacak.
+
+127
+00:27:52,296 --> 00:27:58,215
+Yani ben burada kullanmış olduğum R dirençlerine göre neyi ayarlayabiliyorum arkadaşlar?
+
+128
+00:27:59,355 --> 00:28:01,915
+Gerilim kazancını ayarlayabiliyorum.
+
+129
+00:28:02,804 --> 00:28:08,304
+Dikkat edin, burada da zaten benim anlattıklarım anlatılmış.
+
+130
+00:28:09,344 --> 00:28:16,463
+Burada aynı şekilde gerilim bölücü veya akımların eşitliğinden yola çıkarak aynı sonuca varabiliyorsunuz.
+
+131
+00:28:17,584 --> 00:28:19,564
+Bununla alakalı sorunuz var mı arkadaşlar?
+
+132
+00:28:21,724 --> 00:28:22,864
+Ali Bank anlaşıldı mı?
+
+133
+00:28:24,724 --> 00:28:26,264
+Evet hocam anlaşıldı.
+
+134
+00:28:26,264 --> 00:28:27,524
+Tamamdır.
+
+135
+00:28:28,660 --> 00:28:36,140
+Şimdi bu, dikkat edin, bu G'de R'ler daima pozitif olacağı için G bir pozitif sayı üretecek değil mi?
+
+136
+00:28:36,700 --> 00:28:40,480
+Artı 2, artı 3, artı 4 gibi fark etmez.
+
+137
+00:28:40,480 --> 00:28:43,900
+Dolayısıyla bu evirmeyen bir yapı.
+
+138
+00:28:44,100 --> 00:28:50,780
+Yani her birine 1K verdiğimde, örneğin şöyle bir işaret verdiğimde çıkışında üstüne çiziyorum.
+
+139
+00:28:51,580 --> 00:28:55,280
+Şöyle bir işaret elde edeceğim. Evrilmiyor işaret.
+
+140
+00:28:57,523 --> 00:29:14,863
+Bakın burada bir şey yapmış. Non-inverting yapmış. Dikkat edin. Non-inverting yani evirmeyen yükselteşte input işareti artıdan veriliyor. Eksideki uç tam böyle devrenin ortasına veriliyor.
+
+141
+00:29:14,863 --> 00:29:23,323
+Ve output, dikkat edin iki tane şeyimiz var. V artı eşittir V eksiye.
+
+142
+00:29:24,372 --> 00:29:51,372
+Ve de buradaki i eksi i artıya eşit. O da sıfıra eşit. Temel varsayımlarım bunlar arkadaşlar. Örneğin burada neydi? Voutput bölü v in. R2 artı r1 bölü r2 idi. Bakın r2 alttaki direnç. Burada bunun devrenin kazancı ne olacak arkadaşlar?
+
+143
+00:29:51,935 --> 00:30:14,195
+25 katlık bir amplifier. Yani siz buna 10 mV'lik bir gerilim verdiniz. 25 ile çarptığımda bunda 250 mV'lik bir gerilim dalga şekli elde ediyorsunuz ve evirmeyen şekilde.
+
+144
+00:30:16,980 --> 00:30:44,639
+Şimdi burada da çokça kullanılan başka bir opamp çeşidi var. Bu da inverting yani gerilim kazancını inverting olarak ayarlıyor. Deminkinde arkadaşlar bakın şöyle bir yapı vardı. Artısından giriyorduk. V- tam bu ortaya geliyordu. Burada ise çokça kullanılan bir yapı var. Bakın eksisi bu sefer yukarıda. Artısı yukarıda. Neydi temel varsayımımız? V- eşittir.
+
+145
+00:30:44,980 --> 00:31:11,259
+V artı eşittim. V artı direkt toprağa gittiği için burası sıfır kabul edilebilir. Demek ki benim burası da sıfırmış aynı şekilde. Amacımız V output ve V input arasındaki ilişkiyi bulmak bu devrede öyle değil mi arkadaşlar? V output ile V input arasındaki ilişkiyi bulmak. Bu durumda nasıl yaparım hesabımı? Şu şekilde yapabilirim. Bakın.
+
+146
+00:31:12,180 --> 00:31:29,559
+İ2 bu yöndeki akım. Ondan sonra benim kabulüm İ1 biraz daha anlaşılsın diye Voutput'a doğru gidiyor. Ve de benim şu ucumda ne var? Bakın burada daha rahat gözüküyor. Voutput. Yani şurası da benim için Voutput.
+
+147
+00:31:30,660 --> 00:31:37,480
+Şimdi eğer bu şekle göre çizseydim İ2 eşittir eksi İ1 diyecektim.
+
+148
+00:31:37,619 --> 00:31:46,099
+Öyle mi? Yani şekle göre çizeyim o zaman. Ama ben varsayımımda sanki akım buradan geliyor, buradan devam ediyor gibi düşünüyorum.
+
+149
+00:31:46,099 --> 00:31:52,639
+Çünkü buradaki akım, yani buna ne diyeyim? i- eşittir 0. Ne kabul etmiştik?
+
+150
+00:31:53,399 --> 00:32:00,339
+Gerilimler birbirine eşit, v- eşittir, v artı eşittir. Birbirine kabul edilecek.
+
+151
+00:32:01,039 --> 00:32:04,539
+i- ile i artı ise 0 kabul edilecek.
+
+152
+00:32:04,948 --> 00:32:09,888
+Burada v artı toprağa gittiği için bunları sıfıra eşitlemiştim.
+
+153
+00:32:10,948 --> 00:32:12,908
+Dolayısıyla ne diyeceğim?
+
+154
+00:32:14,248 --> 00:32:15,607
+Benim yaptığıma göre yapayım.
+
+155
+00:32:15,847 --> 00:32:19,268
+i2 eşittir i1 diyeyim.
+
+156
+00:32:19,968 --> 00:32:22,008
+Şu kırmızıyla çizdiklerime göre diyorum.
+
+157
+00:32:22,107 --> 00:32:23,248
+i2 eşittir i1.
+
+158
+00:32:23,635 --> 00:32:45,515
+Tersini yaparsanız, i biri tersten alırsanız da ne yapacaksınız? Akım yönüne göre büyük olan taraftan küçük olan tarafa doğru akım kabul edeceksiniz. Hesabınızı tersten yapacaksınız. Akım ben böyle kabul ettiğimde şu uçta ne var? V-i'si var bu direncin üzerinde. Bu uçta ne var?
+
+159
+00:32:45,872 --> 00:32:53,932
+Sıfır var. Demek ki İ2 eşittir. İ1 dediğim zaman temelde İ2'yi nasıl yazacağım?
+
+160
+00:32:54,792 --> 00:33:08,552
+Vİ-0 bölü R2 eşittir. Bu üç tane var. Sıfır volt var buradan dolayı. Bu üç tane var arkadaşlar. V6.
+
+161
+00:33:13,811 --> 00:33:20,891
+0-V output bölü R1 var.
+
+162
+00:33:21,791 --> 00:33:22,751
+Yazalım.
+
+163
+00:33:23,431 --> 00:33:26,251
+V i bölü R2 eşitir.
+
+164
+00:33:26,311 --> 00:33:30,491
+V output bölü, eksi V output bölü R1.
+
+165
+00:33:31,412 --> 00:33:39,652
+Voutput bölü V'nin gerilim kazancı ne eşit olmuş olacak bu durumda?
+
+166
+00:33:40,172 --> 00:33:42,592
+Eksi R2 bölü R1 eşit olacak.
+
+167
+00:33:42,592 --> 00:33:45,451
+Bakın, gerilim kazancı burada.
+
+168
+00:33:46,312 --> 00:33:49,532
+Eksi R2 bölü R1'e dönüşmüş oldu.
+
+169
+00:33:49,972 --> 00:33:50,812
+Şurada yazdık.
+
+170
+00:33:51,732 --> 00:33:53,932
+Eksi, pardon.
+
+171
+00:33:58,067 --> 00:34:00,367
+Ben mi yanlış yaptım burada? Ökeyim.
+
+172
+00:34:03,768 --> 00:34:05,788
+Pardon, ben yanlış yapmışım.
+
+173
+00:34:05,788 --> 00:34:12,988
+Eksi.
+
+174
+00:34:13,780 --> 00:34:26,820
+R1 bölü R2. R1 neresi? Burası. Demek ki bu direncim buna oranı benim kazancımı belirlemiş oluyor buradaki yapıda da arkadaşlar.
+
+175
+00:34:30,579 --> 00:34:50,180
+Veya akımı öbür türlü yazsaydım, bunun yaptığı şekilde yapsaydım, hiç karıştırmasaydım. Ne olacaktı o zaman? Şöyle diyecektim. Akımları olduğu gibi kabul edersem, burası Vİ'de, burası sıfırda, burası Voutluk'ta.
+
+176
+00:34:54,356 --> 00:35:19,216
+I1 kabul edecektim. I2 ne olacaktı o durumda? V i-0 bölü V2 eksi I1'i nasıl kabul edeceğim? V output eksi V eksi o da 0 eşit 0 bölü V1 diyecektim.
+
+177
+00:35:19,923 --> 00:35:36,783
+Buradan ne elde edecektim arkadaşlar? Vİ bölü R2 eşittir. Eksi V0 bölü R1. Buradan da Voutput bölü V'in eşittir. AV olacaktı. Eksi V1 bölü R2'yi elde edecektim aynı şekilde.
+
+178
+00:35:44,115 --> 00:36:10,456
+R değerleri pozitif olacağız. Çünkü negatif direnç diye bir şey yok. Demek ki R1'in R2 örneği. Örneğin buraya 10 kilo 10 verdiniz. Buraya 1 kilo 10 verdiniz. 10K bölü 1K. 10 katlık bir gelin kazanç olacak ama başında eksi olacak arkadaşlar. Eksi hesaplardan geliyor. Bu da giriş işaretinin çıkışa göre 180 derece faz farkını olduğunu.
+
+179
+00:36:10,960 --> 00:36:27,139
+Göstermek oluyoruz arkadaşlar. Yani bizim giriş işaretimiz şu şekilde verildiyse çıkış işaretimiz iki katına çıktığını düşünelim. Şu şekilde. Eksiler artı artılar eksiye doğru gitmiş oluyor.
+
+180
+00:36:27,139 --> 00:36:37,099
+Bütün arkadaşlar çözümlerde bakın dikkat edin. Bütün çözümlerde şuna dikkat ediyorsunuz.
+
+181
+00:36:37,588 --> 00:36:56,728
+Şurada V eksi eşittir. V artıya eşit olacak. Bakın burada V artı sıfıra bağlandığı için sıfıra eşit oluyor. Ama her zaman oraya bağlanmayabilir. Bir de o pump'ın içine akım girmediğini düşüneceksiniz. Yani I eksi eşittir. I artı eşittir. Bu sıfır.
+
+182
+00:36:57,139 --> 00:37:01,500
+Şuradaki sıfırı şu anda siliyorum. Kafa karışıklığı olmasın diye.
+
+183
+00:37:02,260 --> 00:37:05,300
+Buna göre çözümlerimizi yapıyoruz arkadaşlar.
+
+184
+00:37:08,220 --> 00:37:13,079
+Mesela burada neyimiz var arkadaşlar?
+
+185
+00:37:14,079 --> 00:37:14,795
+Benim...
+
+186
+00:37:14,931 --> 00:37:33,031
+Daha çok elektronik devrelerde bolca göreceğiniz birim kazançlı buffer amplifier. Yani giriş ve çıkışın burada. Burası V artı ise V artıya eşit.
+
+187
+00:37:34,739 --> 00:37:52,139
+O da V-e eşit, o da V0'a eşit. Yani herhangi bir gerilim kazancı yok burada. V-i, V-output'a eşit. Yalnız buralardan akım akmadığı için, bakın buralardan akım akmadığı için aslında o pump üzerinden giriş ve çıkış birbirinden izole ediliyor.
+
+188
+00:37:52,139 --> 00:38:02,739
+Sadece gerilim aktarım olur. Devrelerin özellikle yanmasında veya işlemcilerin çıkışlarında falan çok kullanılır. Bacak çıkışlarında buffer denir buna.
+
+189
+00:38:02,739 --> 00:38:24,460
+Bunlar herhangi bir gelin kazancı sağlamazken bir izolasyon sağlayabilir. Çünkü bu giriş input rezistansına sahip olduğu ve çıkış, düşük gerilme rezistansına sahip olduğu için bu koruma amaçlı kullanılıyor diye düşünebiliriz arkadaşlar.
+
+190
+00:38:30,324 --> 00:38:55,404
+Bu current voltage converter. Akımdan gerilme konvertörmüş. Nasıl olur bu iş? Bakalım. Benim burada input akımım var. Ne eşit burada? I input eşittir. I input'um. Eksi I R'ye eşit. Buradakinin eksili haline eşit.
+
+191
+00:38:57,235 --> 00:39:03,235
+Benim burası sıfır olduğu için, toprağa bağlandığı için, burası sıfır, burası sıfır.
+
+192
+00:39:03,235 --> 00:39:18,235
+I input eşittir, eksi, buradaki I-R gelimini yazacak olursam, bakın burasının da artı, burası eksi kabul ediyorum o zaman, I-R yaparken.
+
+193
+00:39:18,235 --> 00:39:22,235
+Ve output eksi sıfır bölüm R.
+
+194
+00:39:23,027 --> 00:39:49,727
+Dolayısıyla benim Voutput'um eşittir. Eksi I input çarpı R'ye eşit olmuş oluyor. Ben burada V, bakın dikkat edin. V input verilmemişti. Burada dikkat edeceğiniz o şey. Voutput, örneğin burada R'ye sabit kabul edin. 1 ohm kabul edin. Giriş akımının faz farkına eşit olmuş olacak.
+
+195
+00:39:50,547 --> 00:40:00,987
+Yani burada ben eğer buradan geçen akımı, mesela burayı bir uç gibi kullanırsam, oradan geçen akımı ölçmek istiyorum. Elimizde sadece voltmetre var.
+
+196
+00:40:01,844 --> 00:40:15,903
+Volt metrem var ve sadece volt ölçemiyorum, akım ölçemiyorum. Böyle bir devre kurarsam şayet, bakın girişi de örneğin 1 ohm kabul edersem ne eşit olacak? V output eksi I input'a eşit olacak.
+
+197
+00:40:16,483 --> 00:40:24,663
+Demek ki ölçeceğim gerilim benim akımımın 180 derece faz farklı hali olmuş. Örneğin böyle bir resim gördüm ben.
+
+198
+00:40:24,943 --> 00:40:30,423
+Anlıyorum ki Voutput böyleyse şayet. Aslında benim akımım bunun tam tersi.
+
+199
+00:40:30,768 --> 00:40:56,168
+Veya burası R yerine illa birom koymanıza gerek yok. Birk koyarsanız bunu ne yaparsınız? Bine bölmüş olursunuz. Bu akımdan gerilme, çıkış gerilim, giriş değişkeni ise akım olduğu için buna akımdan gerilme çevirici adı veriliyor arkadaşlar.
+
+200
+00:40:58,036 --> 00:40:59,135
+Bu anlaşıldı mı?
+
+201
+00:41:02,739 --> 00:41:29,579
+Tamam, devam edelim. Mesela burada da ne var? Farksal yükselteç veya çıkarıcı diyor. Çıkarma işlemini nasıl yapıyor acaba? Bakın, hep aynı çözümü yapıyoruz. Mesela ben size böyle bir devre verdim. Voutput'unu bulun dedim. Ne yapacaksınız? Basit. Burada V1 direnci var. Bakın burada bir ne var? Gelin bölücü devre var.
+
+202
+00:41:29,972 --> 00:41:54,692
+V artı da ne oluşmuş arkadaşlar? V artı da gelin bölcüğe. Şunu yapabilirsin. V artı eşittir. V eksi. V artıyı yazacak olursam burada. V artıyı. Önce V artıyı yazayım şurada isterseniz. V artı diyelim. R1 bölü. R1 artı. R2 çarpı. V1. Tamam.
+
+203
+00:41:55,860 --> 00:41:57,860
+Bu neye eşit olacak arkadaşlar?
+
+204
+00:41:59,280 --> 00:42:03,340
+Burada v-direnci ne eşit olacak?
+
+205
+00:42:03,500 --> 00:42:05,440
+V-direnci ne burada peki?
+
+206
+00:42:06,039 --> 00:42:07,060
+V-direnci.
+
+207
+00:42:08,440 --> 00:42:14,320
+Burada v-e yazarken şunu yazmamız lazım.
+
+208
+00:42:15,260 --> 00:42:19,780
+Burada v-e çekebilmek için farklı bir işlem yapmamız lazım.
+
+209
+00:42:20,788 --> 00:42:35,188
+Voutput ve V2 cinsinden yazmamız lazım. Buradaki akımlar birbirine eşit. I2 eşittir I1. Örneğin I2 eşittir I1. I2'yi nasıl yazabilirim?
+
+210
+00:42:35,188 --> 00:42:46,827
+V2 eksi V2 eksi V2 eksi V eksi bölü R2 eşittir.
+
+211
+00:42:47,572 --> 00:43:10,792
+V-V-output 1 yazıyorum şimdi. Burasını düzgün yazayım. Şöyle V-V-output bölü R1.
+
+212
+00:43:14,068 --> 00:43:19,948
+V-i çekecek olursam, V-i çekmek için öncelik tuşu işlemleri yapıyorum.
+
+213
+00:43:19,948 --> 00:43:27,887
+R1 çarpı V2 eksi, R1 çarpı V eksi eşittir.
+
+214
+00:43:27,887 --> 00:43:36,847
+V eksi çarpı R2 eksi ve output çarpı R2.
+
+215
+00:43:39,155 --> 00:43:41,115
+Ve çarpı R2.
+
+216
+00:43:47,155 --> 00:43:57,855
+Çok yapıştırdım onu oraya. Şöyle yaptım. Şimdi burada V-E'yi toparlayacak olursam, V-E parantezini alacak olursam,
+
+217
+00:44:15,380 --> 00:44:34,020
+R2Vout şeklinde yapabilirim. Şimdi bu eşitliği yaptım. Arkasından V-e çektiğim zaman R1V2 artı R2V0 bölü R1 artı R2.
+
+218
+00:44:43,507 --> 00:44:44,268
+bölü
+
+219
+00:44:44,268 --> 00:44:50,207
+R1 artı R2
+
+220
+00:44:50,207 --> 00:44:51,467
+eşittir.
+
+221
+00:44:51,967 --> 00:44:54,207
+R1 V2 artı R2
+
+222
+00:44:54,207 --> 00:44:55,927
+V0 bölü
+
+223
+00:44:55,927 --> 00:44:58,007
+R1 artı R2
+
+224
+00:44:58,007 --> 00:45:02,167
+Bakın burada arkadaşlar
+
+225
+00:45:02,167 --> 00:45:04,427
+benim V input'um
+
+226
+00:45:04,427 --> 00:45:05,427
+pardon
+
+227
+00:45:10,099 --> 00:45:34,200
+V input'un cinsinden yazmam lazım. Pardon, benim V1'im burada. Özür dilerim. Burası V1. Burası da V1 diyeyim. Bakın arkadaşlar, bu hale getirdim. Şu tabanlar gittikten sonra ne kaldı geriye? V1 çarpı V1 eksi. Bu tarafa aldığımda.
+
+228
+00:45:34,996 --> 00:45:49,996
+Öbür tarafa R1 çarpı V2 bölü R2 eşittir V0. Bakın buradaki formül çıkmış oldu.
+
+229
+00:45:50,996 --> 00:45:59,115
+R1 bölü, burada dirençlere bakmayın arkadaşlar. Bakın burada dirençlere bakmayın. Bunların ikisini de 1K verdim mi?
+
+230
+00:45:59,596 --> 00:46:02,556
+Hiç manası kaldır. Önemli olan ne yapıyor bu devre?
+
+231
+00:46:03,059 --> 00:46:17,960
+Onu yorumlayın. Şuradaki gerilimle şu V2'nin gerilim farkını almış oluyor. R1'i 2 yaparsanız gerilim farkının iki katını almış olursunuz. Ama ikisini de aynı yaparsanız sadece basit bir çıkarma yapmış olabilirsiniz.
+
+232
+00:46:18,319 --> 00:46:29,859
+R'lerin çok önemi yok burada. Onlar bir sabit gibi düşünebilirsiniz. Belli bir çarpan gibi düşünebilirsiniz. Bakın Voutput yani benim çıkışta elde ettiğim gerilim.
+
+233
+00:46:30,867 --> 00:46:51,228
+Bu gerilimle, şu gerilimin arasındaki farkı eşit olur. O yüzden buna Differential Amplifier deniyor. Bakın hep aynı çözüm uyguluyorum. Ne diyorum? V eksi eşittir, V artı. Size de hiç karşınıza gelirse bu şekilde çözüm. Bir de şuradaki akımlar ikisi de yani i eksi ve i artı da.
+
+234
+00:46:51,668 --> 00:46:55,208
+i eksi eşittir i artı eşittir sıfır.
+
+235
+00:46:55,648 --> 00:46:58,547
+Yani buralardan akım atmıyormuş gibi hesabınızı yapın.
+
+236
+00:46:59,128 --> 00:47:01,148
+Zaten ben de ona göre çıkarmış oldum.
+
+237
+00:47:01,788 --> 00:47:04,228
+Buradaki koldan bir denklem buldum.
+
+238
+00:47:04,228 --> 00:47:10,567
+Ve eksileri yani bunun orta kolunu da buradan geldim bölücüden bulmuş oldum arkadaşlar.
+
+239
+00:47:11,947 --> 00:47:13,927
+Yine aynı şekilde burada bakın.
+
+240
+00:47:14,688 --> 00:47:17,827
+Inverting Summing and File. Deminkinin tersi.
+
+241
+00:47:18,175 --> 00:47:41,916
+Giriş gerilimleri, buradaki dirençlere dikkat etmeyin. Giriş gerilimlerini topluyor. V1 ve V2. Ama toplamın, toplam 180 derece faz farkıyla oluşuyor. Yani benim toplam değerim, o anki toplam değerim, eksili ise aslında artılı gibi düşüneceksiniz. Artılı ise eksili gibi düşünmeniz gerekecek.
+
+242
+00:47:45,972 --> 00:47:49,592
+Evet, soralım bakalım. Ezgi anlaşılıyor mu ders?
+
+243
+00:47:57,396 --> 00:47:59,776
+Ezgi nerede ya? Ezgi bir anda kay kayıp mı oluyor?
+
+244
+00:48:00,316 --> 00:48:04,696
+Hayır, hocam buradayım. Anlaşılıyor. Mikrofon da sonra çıktı da bir an.
+
+245
+00:48:05,276 --> 00:48:10,896
+Tamam, sorun yok. Anlaşıldıysa tamam. [öğrenci], ders anlaşılıyor mu?
+
+246
+00:48:11,860 --> 00:48:13,500
+Anlaşılıyor hocam. Teşekkürler.
+
+247
+00:48:13,680 --> 00:48:35,620
+Tamamdır. Yani bu tür sorular çözülürse ne olduğu önemli değil. Devrenin ne tipi olduğu önemli değil. Devrenin tiplerini ezberlemenizi istemiyoruz. Verdiğimiz zaman çözmeniz gerekiyor. Örneğin bakın burada çok büyük bir şey var. V eksi eşittir ve artı eşittir sıfır. Yani burayı sıfır gibi kabul edip çözümlerinizi yapacaksınız. Diyeceksiniz ki burada ne? Buradaki kolda düğümde ne var?
+
+248
+00:48:36,244 --> 00:48:57,744
+I1 artı I2 eşittir. Eksi I3. Bunu gördükten sonra çözüme başlıyorsunuz arkadaşlar. I1 artı I2. Bu tek bir düğüm düşünün burayı. Eşittir. Eksi I3. Yani düğme girenler çıkanları eşit olacak burada. Cinsinden yazabilirsiniz.
+
+249
+00:48:58,324 --> 00:49:22,084
+Burada da örneğin I1'i yazacaksınız diyelim. Ne yazacaksınız? V1-0. Çünkü V-0 bölü R2 diyeceksiniz. Aynı şekilde I2 için. Aynı şekilde I3'ü de yazacak olursanız mesela burada Voutput-0 bölü V1. Bu kadar. Bu devre işleri yerine koyduğunuzda elde edeceğiniz denklem bu şekilde.
+
+250
+00:49:23,284 --> 00:49:45,484
+Bunun haricinde arkadaşlar, integratörlerimiz var. Tabi burada integratörlerde artık dirençler yerine artık kapasiteler de giriyor. Bakın, R ve C değerlerini önemsemeyin şimdi. Giriş gelinimi ne yapıyormuş? Topluyormuş bu. Ama evirerek topluyormuş. Evirmek ne demekti arkadaşlar?
+
+251
+00:49:46,132 --> 00:49:57,412
+Şöyle baktığımızda çıkışı tersten yorumlayacağız. Yani bunun ghost tip olduğu yerde bu çıkış negatif üretiyor gibi düşüneceksiniz.
+
+252
+00:49:58,872 --> 00:50:06,711
+Bakın bu bir toplama işlemi yani integrasyon işlemi yapıyor. R ve C'yi 1 kabul ederseniz örneğin.
+
+253
+00:50:07,123 --> 00:50:19,663
+Eviren bir toplu integratör gibi düşünebilirsiniz. Oradaki evirmenin de bir manası yok. Biliyorsunuz o da 180 delik pas farkı olduğunu biliyorsanız temel işlev burada çok daha önemli.
+
+254
+00:50:20,663 --> 00:50:33,963
+Bakın bu sefer yerlerini değiştiriyoruz kapasiteyle direncin. Bu sefer de ne yapıyor? Giriş direncinin değişimindeki farkları ne yapıyor? Differansiyellerini.
+
+255
+00:50:34,579 --> 00:50:40,720
+Çıkış olarak veriyor. Çıkışından girişin diferansiyelini okuyabiliyoruz arkadaşlar.
+
+256
+00:50:42,720 --> 00:50:47,420
+Evet, burada benim bu hafta anlatacaklarım bunlar.
+
+257
+00:50:48,420 --> 00:50:55,920
+Sınavla alakalı olarak bunları zaten göstermiştim.
+
+258
+00:50:56,351 --> 00:51:13,371
+Sınavlar olarak, mesela burada şöyle bir devre verdim. I2, I artı eşittir 0 olduğu için, bunun üzerinde gelim düşümü olmayacağı için, burada gelim düşümü yoksa burası 0 volt kabiliyordu. Burası da 0 volt olarak kabul edildi. Bu evren bir input.
+
+259
+00:51:13,876 --> 00:51:25,916
+AV eşittir. Eksi RF bölü R1. Veya biz buna R2 demiştik. R1 demiştik. Buraya R2 demiştik biraz önce. Eksi R1 bölü R2 şeklinde yazılabilir.
+
+260
+00:51:28,296 --> 00:51:35,635
+Şimdi arkadaşlar, sınavla alakalı olarak nelere dikkat edeceğiz?
+
+261
+00:51:41,588 --> 00:51:43,348
+11 Mayıs Perşembe
+
+262
+00:51:47,827 --> 00:51:51,288
+Saat 10'da başlıyor arkadaşlar.
+
+263
+00:51:54,288 --> 00:51:59,827
+Şimdi biz sınav için diyelim ki x dakika ayırdık. Bunun sonuna bir 10 dakika ekliyoruz.
+
+264
+00:52:00,467 --> 00:52:03,907
+Muhakkak klasik sınav şeklinde olacak.
+
+265
+00:52:06,208 --> 00:52:07,688
+Hatta onu da yazalım şimdi.
+
+266
+00:52:09,827 --> 00:52:13,208
+Büyürüyü genel olarak yapmış olalım sınıfa.
+
+267
+00:52:14,291 --> 00:52:18,552
+Böylece kimsenin aklında soru işareti de kalmamış olacak. Olsun.
+
+268
+00:52:31,795 --> 00:52:32,715
+Ve dağın.
+
+269
+00:52:40,148 --> 00:52:41,932
+Şimdiden biriyan biriyan biriyan biriyan.
+
+270
+00:52:45,364 --> 00:52:47,364
+Elektronik Devreler.
+
+271
+00:52:53,844 --> 00:53:17,544
+Elektronik Devreler vizesi 11 Mayıs. Bir de arkadaşlar şunu söyleyeyim. Muhakkak ve muhakkak bu vizeye girin. Çünkü bu vize nispeten eğer şeye bırakmak isteyen varsa tekrar daha sonra ne deniyordu o sınava.
+
+272
+00:53:18,036 --> 00:53:32,615
+Ekstradan sınav hakkı için yapılacak mazeret sınavları çok çok daha zor olur arkadaşlar. Bu sınavdan yine güzel notlar alacağınızı düşünüyorum ama mazeretten gerçekten zorlu bir şekilde soracağız.
+
+273
+00:53:32,615 --> 00:53:38,615
+11 Mayıs saat Perşembe.
+
+274
+00:53:42,931 --> 00:53:43,632
+Saat.
+
+275
+00:53:47,155 --> 00:53:49,855
+Saat 10'da.
+
+276
+00:53:54,387 --> 00:54:07,387
+Online Sistem Üzerinde Klasik Sınav Formatında Yapılacaktır.
+
+277
+00:54:10,387 --> 00:54:12,387
+Evet, şimdi...
+
+278
+00:54:15,387 --> 00:54:17,387
+Şöyle yapalım.
+
+279
+00:54:18,387 --> 00:54:21,387
+Onu bir boltlaştıralım şöyle.
+
+280
+00:54:31,380 --> 00:54:37,880
+Sınav kağıtlarının şöyle yazalım. Dikkat edilecekler.
+
+281
+00:54:41,876 --> 00:55:07,956
+Bir, sınav kağıtlarının sisteme pdf olarak da yükleneceği hesaba katılarak son dakikalara bırakmadan
+
+282
+00:55:09,588 --> 00:55:28,708
+Sisteme sağlıklı bir biçimde yüklenmesine dikkat edilmeli ve son 10 dakika bu işe ayrılmalıdır.
+
+283
+00:55:32,820 --> 00:55:34,820
+Şükürlerle anlatacağım.
+
+284
+00:55:40,307 --> 00:55:58,208
+Sınav kağıtlarının milli değil, sistemde kayıtlı olması önem arz etmektedir.
+
+285
+00:56:41,715 --> 00:56:45,035
+Evet, bunu yaptıktan sonra
+
+286
+00:56:46,575 --> 00:56:47,595
+2
+
+287
+00:56:53,844 --> 00:57:05,264
+Mazariyet sınavlarının, normal vize sınavlarının, sınavlarının oranına,
+
+288
+00:57:28,500 --> 00:57:43,320
+Evet, bunları şey yapalım, duyurmuş olalım. Bununla alakalı başka ne not ekleyebiliriz arkadaşlar? Aklınıza takılan şunları da ekleyelim dediğiniz bir şey var mı?
+
+289
+00:57:44,760 --> 00:57:46,420
+Hocam soru sayısı belli mi?
+
+290
+00:57:47,960 --> 00:57:50,360
+3 veya 4 soru olacak arkadaşlar.
+
+291
+00:57:51,460 --> 00:57:52,220
+Tamamdır hocam.
+
+292
+00:57:56,692 --> 00:57:58,219
+Şöyle yapalım.
+
+293
+00:58:03,860 --> 00:58:06,079
+Evet, bunları da hallettik.
+
+294
+00:58:10,996 --> 00:58:15,596
+Tamam, artık bunu gönderiyorum. Yayınla dedim ve gönderdim.
+
+295
+00:58:17,456 --> 00:58:23,675
+Evet, haftaya güzel bir sınav olması dileğiyle. Herkes kendi rahatlıkla yapabilir.
+
+296
+00:58:24,516 --> 00:58:30,096
+Ben sizin kopya çekimi yeltenmeyecek kadar dürüst öğrenciler olduğunuzda inanıyorum.
+
+297
+00:58:30,643 --> 00:58:53,503
+Herkesin kendi yapabileceği seviyede olacağı için gerek de duymayacaksınızdır zaten. Lütfen elinizden geldiğince güzel bir şekilde bunları sınavları yapalım. Sağlıklı bir şekilde sisteme yükleyelim. Sınavlar bakın şuradan oluşturuluyor. Ölçme ve değerlendirme kısmından işte vize sınavı diyoruz. Burada vize yapıyoruz.
+
+298
+00:58:54,036 --> 00:59:13,356
+Başlangıç ve bitiş saatlerini belirliyoruz. Dikkat edin. Ben eğer 75 dakika sınavı süresi verdiysem şayet bunun üzerine bir 10 dakikada ekliyorum. 85'e çıkıyor. Dolayısıyla siz 75. dakikadan sonra hala soru çözmeyi bırakıyorsunuz.
+
+299
+00:59:13,632 --> 00:59:36,391
+Hızlıca onların PDF'e işte şu anda da çalışın. Hızlı bir şekilde var olan kağıtları taratıp hani şeyler var. Hem telefonlarda böyle fotoğraf çekerek PDF'e dönüştürenler var. Ondan sonra bir de fotoğraftan şey aktaracaksınız bilgisayara oraya falan. O yüzden zaman kaybedebilirsiniz. Lütfen okunur.
+
+300
+00:59:36,947 --> 00:59:45,427
+Bir formatta sınav sorularını yükleyin. Yoksa okuyamazsak yapacak bir şeyimiz kalmaz maalesef.
+
+301
+00:59:47,227 --> 00:59:54,227
+Evet, başka sorusu olan, soruları olan, dersle alakalı olabilir, sınavla alakalı olabilir.
+
+302
+00:59:57,287 --> 00:59:58,547
+Bir şey sorabilir miyim?
+
+303
+00:59:58,547 --> 00:59:59,207
+Tabii.
+
+304
+01:00:00,179 --> 01:00:07,340
+Fotoğrafı atıyorum bir Word belgesine ekleyerek de PDF oluşturabiliriz. Ya da tarama uygulamalarını da kullanabilir miyiz?
+
+305
+01:00:07,500 --> 01:00:15,179
+Aynen, aynen. Siyah beyaz olması çok önemli değil. Zaten bizim sorularımız...
+
+306
+01:00:15,572 --> 01:00:36,332
+Siyah beyaz yapabilir. Tarama dediğin, hani scanner'ın varsa onu bilemem ama cep telefonlarında da kaliteli yüksek çözünürlüklü PDF, önce bir resme dönüştürülüyor. O resimleri aldığınızda bilgisayardan işte jip ekliyor, PDF şeklinde arka arkaya tabii ayrı ayrı değil de arka arkaya ekleyerek hızlıca dönüştüren programlar da var.
+
+307
+01:00:36,820 --> 01:00:51,080
+PDF Creator'ı bir şey vardı şeyler, Scanner programları vardı. Hem Google'ın kendisinin ve de çok kullanılan bazı programlar vardı. Siz onları bir araştırın. Hızlıca çünkü onlarla.
+
+308
+01:00:52,403 --> 01:01:09,923
+Ya böyle sizi çekip PDF şeklinde verecek veya JPEG şeklinde veriyorsa onları hızlıca bilgisayara aktarıp JPEG'ten iki tane JPEG mesela önüne arkalı oluşturdunuz. İki tane JPEG sayfasını tek bir PDF'e dönüştüren JPEG'lü PDF filan yazsanız mesela.
+
+309
+01:01:15,123 --> 01:01:18,443
+Hocam en kötü ihtimalle zaten Word de PDF'e dönüştürüyor ya.
+
+310
+01:01:18,443 --> 01:01:40,063
+Aynen, en kötü ihtimalle resmi yapıştırırsın veya bu tür programlardan yanarsın. Böyle PDF'le jipekleri koyduğun zaman buraya çekip bırakıyorsun. Sana hop anında çeviriyor, PDF haline getiriyor mesela. Small PDF var. Ben de kullanıyorum. Dosyaları seç diyorsun buradan veya buraya bırakıyorsun.
+
+311
+01:01:40,596 --> 01:01:58,515
+Arka arkaya birinci sayfaya hop sana çevir dediğinde çeviriyor. JPEG PDF'e nasıl çeviriyor? Mesela iki sayfayı iki tane JPEG resimini yan yana koyuyorsun. Sana tek bir PDF şeklinde arka arkaya onları sunuyor. Bunlardan değerlendiriyor. Önemli olan bir şekilde hızlıca aktarımı gerçekleştirmek zaten.
+
+312
+01:02:00,655 --> 01:02:01,275
+Teşekkürler.
+
+313
+01:02:03,155 --> 01:02:21,036
+Word'e tam sayfa yaparsın. Kenarlarında boşluk bırakmamışsın. Çünkü olabildiğince büyük olması lazım çevirdiğin. Ondan sonra PDF'e dönüştürsün. O da bir çözüm yani. Çareler tükenmez. Bilgisayar mühendislerinde çare hiç bilmez zaten. Öyle değil mi?
+
+314
+01:02:22,715 --> 01:02:28,076
+Şimdilik bu kadar. Kendinize iyi bakın. Şimdiden size iyi sınavlar diliyorum arkadaşlar.
+
+315
+01:02:28,659 --> 01:02:52,920
+Ekstradan açıklama olacak olursa bizim klasüm üzerinden yaparız. Kendinize iyi bakın, iyi notlar alın. Çünkü sorular kolay olacak. Soru çözümleriyle alakalı sessionler de yapmıştık iki hafta hatırlarsanız. Onların üzerinden muhakkak kendiniz teker teker çözüp, verdiğimiz ödevler teker teker kendiniz çözüp.
+
+316
+01:02:53,876 --> 01:03:19,820
+Sınav sırasında eliniz ayağınıza karışabilir. Birim yanlışlıkları yapmayın. Milli amper yerine amper yazmayın. Mikro amper yerine amper yazmayın. O birimlere de dikkat ederek okunur ve sağlıklı bir şekilde sınavlarınızı tamamlayıp yükleyin. Ondan sonraki haftalarda FET'lere devam edeceğiz arkadaşlar. Hepinize...
+
+317
+01:03:20,403 --> 01:03:22,903
+İyi çalışmalar, iyi haftalar diliyorum arkadaşlar.
+
+318
+01:03:25,443 --> 01:03:26,364
+Teşekkür ederim.
+
+319
+01:03:27,123 --> 01:03:28,723
+Sağ olsınız. İyi günler hocam.
+
+320
+01:03:29,063 --> 01:03:30,083
+İyi günler sağ olun.

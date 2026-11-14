@@ -1,0 +1,3051 @@
+1
+00:00:05,716 --> 00:00:14,495
+Ekran paylaşıma başlayalım. Ekran paylaşımı yüklemle. Hemen çok çok yüklemle.
+
+2
+00:00:14,495 --> 00:00:17,475
+Buradan olmaz diyeyim.
+
+3
+00:00:40,051 --> 00:00:42,051
+Çınca ney jeskiz bir şey mi?
+
+4
+00:00:42,051 --> 00:01:10,051
+Ney?
+
+5
+00:01:07,412 --> 00:01:08,652
+Sınava geç.
+
+6
+00:01:09,652 --> 00:01:14,012
+Yemi, yanılıyorum. Tamam. Buradan iki tane daha açacağız. Beş dakika sonra.
+
+7
+00:01:14,652 --> 00:01:17,772
+Açık ve yetenekimiz artsın, katılımcılarımız artsın.
+
+8
+00:01:19,052 --> 00:01:21,052
+Çok fazla katılımcımız yok şu an.
+
+9
+00:07:00,403 --> 00:07:10,103
+Evet arkadaşlar, yavaş yavaş başlayalım madem öyle. Sadece 9-10 şey yaptık. Tanışlarımız da artmadı ama ne yapalım. En azımsı kayda alınıyor diyeceğiz artık.
+
+10
+00:07:15,187 --> 00:07:19,028
+Bugün yazılım sınavlık teknikleriyle dersimizle devam edeceğiz.
+
+11
+00:07:24,819 --> 00:07:48,079
+Şimdi bu bölümde hem yazılım sınavasının önemini sizlere kışılamaya çalışacağız. Hem nasıl o yapıldığı ile ilgili en temel bilgileri aktaracağız size. Hem de proje ödemiz kapsamında da yapmamız gereken bilim sınavası gerçekleşecek. Onlar hakkında da ilgi vermiş olacağız.
+
+12
+00:07:48,692 --> 00:08:11,351
+Yazılım süresi aslında başlı başına bir etkinlik alanı, başlı başına bir uzmanlık alanı. Bu amaçla mesela Oya Hocam'ın özellikle bu konuda herhalde başlı başına ders var. Onun dışında ayrıntılı bir konu. Bu ders kapsamında size bu işin temellerini vermeye çalışacağız.
+
+13
+00:08:12,211 --> 00:08:22,932
+Biliyorsunuz yazılım geçilmeci karmaşık bir süreç. Zihinsel yoğun çaba gerektiriyor. Bu da ister istemez hataların ortaya çıkmasını kaçınılmaz hale getiriyor.
+
+14
+00:08:24,531 --> 00:08:32,631
+Hata olması doğal bir şey. Önemli olan bu hataların keşfedilmeye çalışılması ve düzeltilmesi.
+
+15
+00:08:33,391 --> 00:08:38,211
+Sınama işlemi arkadaşlar, yazılım yaşam döngüsünün araştırmasında yapılabilmesi.
+
+16
+00:08:38,932 --> 00:08:58,692
+Yazılımı tamamlamadan ya da ortaya çalışıp koştumadan ben test yapamam düşüncesi yanlış bir düşünceleriz. Daha gereksinim belirleme aşamasında bile sınama yapılabilir arkadaşlar. Ne olabilir mesela? Gereksinimler arasında herhangi bir tutarsızlık var mı diye sınama yapılabilir.
+
+17
+00:08:59,379 --> 00:09:16,539
+Kod dışındaki artifaktlar, birleşenler üzerinde yapılan sınama ile formalı technical review'unu verdiğimiz bir gözden geçirme eylemi ile yapılır. Bu ders kapsamında onu da yapacağız.
+
+18
+00:09:16,539 --> 00:09:22,500
+Ama burada şu an vurgulamak istediğim kod dışındaki artifaklarında sınanabilirliyedir.
+
+19
+00:09:22,803 --> 00:09:43,003
+Onun dışında, çözümleme aşaması ile uygulama alanında uyumsuzluklar var mı? Bizim yaptığımız sınıflar ve aradık nesneler aradık ilişkiler ile bunların gerçek dünyadaki karşılığı olan varlıklar arasındaki ilişkiler arasında bir tansızlık var mı? Bir eksiklik var mı? Bakılır.
+
+20
+00:09:43,003 --> 00:09:50,803
+Tasarım aşamasında acaba hatalar ortaya çıkarmış olabilir miyiz? Bu yaptığımız tasarım bizim sterlimizi karşılayabilir.
+
+21
+00:09:50,803 --> 00:10:12,703
+çalışmamın hataları ise en klasik bildiğimiz şeyler konu çalıştırırsınız. Düzgün çalışmıyorsa, hatalarla karşılaşılıyorsa veya kullanım senaryolarında belirtildiği gibi çalışma gerçekleşmiyorsa, bunlar en temel bildiğimiz sınama açıklılır. Bunlar ve bunun gibi olgular sınanır arkadaşlar.
+
+22
+00:10:13,268 --> 00:10:35,608
+Ve sınamanı erken başkaltmımızın en önemli nedeni bu yazılım yaşam döngüsünün temel çaba masraf dinamiyidir. İlk derslerden beri söylüyoruz. Yazılım yaşam döngüsünde ilerletince yazılımda değişiklik yapmanın maliyeti üstel olarak artıyor. Bu da demek oluyor ki hataların düzeltilmesi de zorlaşıyor.
+
+23
+00:10:35,988 --> 00:10:44,587
+Eğer iyi bir sınava yaklaşımı kullanıyorsak, bu bize hataların erken belirlenmesine katkıda bulunan şeklinde yardımcı olmaktadır.
+
+24
+00:10:44,587 --> 00:10:54,368
+Ve mutlaka düzeltilmesine gelerek hataların daha kolay ve daha az masrafını düzeltilmesini sağlayarak daha katkıda bulunmaktadır.
+
+25
+00:10:54,688 --> 00:10:59,868
+Ve genel olarak projeye çıkması olacak olan yazılımın kalitesini arttıracağımız.
+
+26
+00:11:01,011 --> 00:11:05,651
+Peki, nasıl bir yaklaşım söz konusu olabiliriz? Nasıl bir yaklaşım kullanabiliriz?
+
+27
+00:11:05,651 --> 00:11:11,451
+Bu literatürde bazı yaklaşımlarda temel adımlarının temel bileşenleri söyleyeceğiz.
+
+28
+00:11:12,391 --> 00:11:18,651
+Herhangi bir yazılım evi bu temel çerçevesinde kendi ayrıntılsın ama yaklaşımlarını...
+
+29
+00:11:19,251 --> 00:11:38,211
+Yürüye koyabilecektik. Ve ayrıca değişik yazılım türlerinden bahsetmiştik. Değişik yazılım türlerinin değişik ihtiyaç ve gereksinimleri söz konusu olduğuna göre, o zaman yapacağımız sınama etkinlikleri de o yazılımın isterlerine göre farklılaşmalar da gösterebilecek ve göstermelidir zaten.
+
+30
+00:11:38,740 --> 00:11:50,920
+Neyi nasıl yaparsak? Yapalım. Kullanacağımız sınava yaklaşımının dört temel bileşimli haberdar olması, bunların içermesi, bunların nasıl uygulanacağını araştırması lazım.
+
+31
+00:11:51,519 --> 00:11:58,759
+Birincisi planlama, ikincisi tasarım, üçüncüsü çalıştırma, dördüncüsü bilgi toplama ve değerlerle.
+
+32
+00:11:59,604 --> 00:12:07,384
+Bunun için bu adımların hepsini tek tek söyleyeceğiz. Ama öncelikle genel olarak sormam gerekirse, birincisi planlama.
+
+33
+00:12:07,384 --> 00:12:16,784
+Sınamayı kimler yapacak? Daha da önemlisi, sınamaya ne kadar zaman ve çaba ayıracağız?
+
+34
+00:12:17,183 --> 00:12:32,144
+Şimdi sunama yazılım geliştirmeden bağımsız bir şey değildir. Yazılım projesinden bağımsız bir süreç değildir. O yüzden projemizde ne kadar haftada planlayacağımızı da, ne kadar sürede planladığımızı da değildir.
+
+35
+00:12:33,652 --> 00:12:53,032
+Toplam sürenin ve bu yazılımla harcanacak toplam adam ayı ne kadarı kinaanlama etkinliklerine ayrılmalıdır? Bu önemli bir soru ve yanıtın önceden belirlenmesi daha sonra olayların karmaşıklaşması için önemlidir.
+
+36
+00:12:53,032 --> 00:13:00,372
+Burada mesela diyelim ki %10 gibi bir çaba buna ayrılabilirsiniz. %10 çabayı küçümsemeyin lütfen.
+
+37
+00:13:00,799 --> 00:13:23,579
+Özellikle disiplinli bir şekilde ve otomatize tool'lar, gereksinim desteğiyle yapılacak sınama etkinlikleri, bu sınamaya harcayacağımız çabayı ve emeği azaltacağı için yüzde on çaba ayırmak aslında gayet iyi bir rakamdır.
+
+38
+00:13:24,083 --> 00:13:37,203
+Yani çoğu zaman ben ülkemizdeki yazılım evlerinin bu kadar zaman ayırsalar öpüp başımı üstüne koyacağım. Yüzde beş bile zaman ayırsalar yapmayabiliyorlar maalesef.
+
+39
+00:13:37,203 --> 00:13:51,303
+Aslında sadece ülkemizde de değil, yani uluslararası piyasada da mesela ben özellikle bunu daha popüler haberler olduğu için oyun projelerinde görüyorum. En son çıkan ne çıktı? Jedi Survivor çıktı.
+
+40
+00:13:52,083 --> 00:13:59,943
+İnsanlar çılgına dönmüş, çok showstopper, hatalarla karşılaşıyor insanlar. Yazıklar yani.
+
+41
+00:14:01,263 --> 00:14:04,243
+Neyse. İkincisi, pasalım.
+
+42
+00:14:04,980 --> 00:14:14,900
+Anladığınız sınama, yani şu kişiler şu kadar zaman ayırarak şu zamanlarda, şu saatlerde yapacak gibi veya çevik bir süreç kullanıyorsanız,
+
+43
+00:14:14,900 --> 00:14:26,920
+işte kaç, her iterasyonda bir sınamaya zaman ayırtınız söz konusu olabilir. Ama aslında daha çok çevik yaklaşımda test dilimini güzel kullanıyorsanız zaten,
+
+44
+00:14:27,400 --> 00:14:32,900
+onun ayrıntını daha sonra söyleyeceğiz. Biraz daha farklı bir yaklaşım vardı. Yani klasik...
+
+45
+00:14:32,980 --> 00:14:51,200
+Süreç kullanıyorsanız planlamanız daha farklı olacaktır. Çevik süreçler kullanıyorsanız planlamanız daha farklı olacaktır. Neyse, planlarınızı yaptınız. Ondan sonra testlerinizi tasarlayacaksınız arkadaşlar. Kodun, yazılımın neresini, nasıl ısınlamanız gerektiğini karar verdik.
+
+46
+00:14:58,964 --> 00:15:18,683
+Son aşamadan bilgi toplanma değerlendirmesi ise bu elde ettiğiniz bilgilerden yola çıkanaktan ne herhalde hata var, bunlar gerçekten hata mı, değil mi, bu hataların düzeltilmesi için ne zaman ayrılmalı, kim yapacak, nasıl yapacak vesaire gibi sorun yanıtlarını alacaksınız.
+
+47
+00:15:18,683 --> 00:15:26,444
+Şimdi bunlar aslında birbirini izleyen yani şelale sürecindeki gibi adımlar değil arkadaşlar.
+
+48
+00:15:26,964 --> 00:15:37,964
+Bu sınama etkinlikleri bir temsiye etkinliktir. Yani yazılım gençliğinin sürecinin klasik usulü haricinde her...
+
+49
+00:15:39,072 --> 00:15:56,932
+Kod açısından dersek, kodlama aşamasında bu yoğunlukla çalışabilir. Fakat klasik süreçte bile en azından tasarım yaparken, tasarım aşamasında bile testlerinizi de tasarlama zaman ayırabilirsiniz.
+
+50
+00:15:56,932 --> 00:16:02,851
+Kimse sizi bunun için engellemiyor. Yani isterseniz o şekilde hareket edebilirsiniz.
+
+51
+00:16:04,980 --> 00:16:31,000
+Bu da yalnız işin doğası şu, bir hata düzelttiğiniz zaman bu hata yazılımın başka yerlerinde başka hatalara da yol açıldı. Bu yüzden sınama da aslında tekrarlı bir şekilde ve sürekli olarak yapılması gereken etkinlikte planlama çalışmalarımızı buna göre, bunu düşünerek yapmamız önemlidir.
+
+52
+00:16:31,412 --> 00:16:36,912
+Peki, biz böyle konuşmak yeter. Biraz daha şimdi ders noktaların üstünden planlı bir şekilde gidelim.
+
+53
+00:16:37,652 --> 00:16:42,372
+Şimdi, sınav yaklaşımlarının genel özelliklerinden bahsetmek istiyorum.
+
+54
+00:16:43,032 --> 00:16:53,352
+Sınavlarımızı en küçük parça olan birleşen düzeyinde başlatırız ve en büyük parça olan sistemin kendisi düzeyinde sonlandırırız.
+
+55
+00:16:54,072 --> 00:16:57,852
+Çünkü yazılım biliyorsunuz tek başına bilgisayar kodu değil.
+
+56
+00:16:58,323 --> 00:17:22,503
+Çeşitli tümleştirme çalışmaları olabilir. Halbuki sistemlerle birlikte çalışma söz konusu olabilir. Çeşitli sensörler, algoritmeler, IoT cihazları vesaire vesaire yer alabilir. Bunlar da bizim projemize birlikte çalışacak olabilir. Veya bunları biz de hazırlanıyor olabiliriz. Fark etmez. Sonuçta işin varacağı yer aynı.
+
+57
+00:17:22,976 --> 00:17:40,596
+Eğer ne programlamadan bahsediyorsak, en küçük birleşenler sınıflarımız. Bu sınıflarımızın bireysel sorumluluklarından başlıyoruz. Nereye kadar gidiyor? İşte tüm sistem düzenine kadar, yazılımın üst düzey sorumluluklarına kadar bütün işlevlerimizi sınıyoruz arkadaşlar.
+
+58
+00:17:41,844 --> 00:17:51,403
+Şimdi planlarımızı yaparken yazılım yaşam dönemüsünün hangi aşamasında olduğumuzda dikkate almamız lazım. Çünkü değişik aşamalarda değişik sinema teknikleri uygulayacaktır.
+
+59
+00:17:54,663 --> 00:18:06,403
+İki madde birbirinin aynı. Yazılım yaşam dönemüsünün ve projenin aynı. Değişik aşamada da aynı şey aslında. Niye böyle ikiye geçirmişiz? Çınlık fark ediyoruz. Yazılım yaşam dönemüsünün ve projenin aynı şey.
+
+60
+00:18:08,692 --> 00:18:09,432
+Aynı şey.
+
+61
+00:18:10,511 --> 00:18:23,032
+Evet. Şimdi, sinemaları kim yapacak sorusunu. Şurada çok kritik bir cevabı var. Aslında bunun üstüne biraz daha sonra daha fazla konuşacağız. Ayrıca o zamana bakalım.
+
+62
+00:18:24,627 --> 00:18:40,027
+Aynı parçanın sineması birden fazla kişi tarafından yapılır arkadaşlar. O sinema hem ilgili birleşimle oluşturan kişi tarafından yapılır hem de bir başkası tarafından da yapılır. Bunun ayrıntılarına gireceğiz daha sonra.
+
+63
+00:18:40,027 --> 00:18:46,867
+Bu kadarım söylemiş olayım. Büyük ölçekliği yazılım evlerinde ayrı bir sinema ekip de bulunmaktadır.
+
+64
+00:18:47,231 --> 00:19:02,991
+Söyleti, astronaut filan gibi bir department içerisinde veyahut da direkt testing department diye organisi olan aynı bir ekip de olabilir. Çünkü bu başvuruşlarının tutmaktan iyi değil. Bu nedenle böyle bir bölümün ayrılması yalan atası.
+
+65
+00:19:06,355 --> 00:19:30,235
+Sınama ve hata ayıklama aynı şey değil arkadaşlar. Yani testing and debugging bunlar farklı işler. İsimleri farklı her şeyden önce. Sınama demek hata var mı diye kontrol etmek. Testing yaptığımız iş. Bir hata bulduysak da bunu düzeltmemiz gerekmektedir. Hata ayıklama veya debugging şeklinde onun da ismi ayrı.
+
+66
+00:19:32,403 --> 00:19:41,563
+Tabii ki hata ayaklamayı sınamadan ayrı düşünemeyiz. Hata ayaklama etkinliklerinin planlanması da sınama yaklaşımının çok önemli bir parçası.
+
+67
+00:19:41,563 --> 00:19:51,304
+Ve formal teknikleri konusunda işleyeceğimizi demiştik. Sınama öncesinde demek ne kadar doğru?
+
+68
+00:20:00,000 --> 00:20:08,559
+Dolayısıyla doğrudan ona geçerleme sınavları, bilim sınavları vs. vs. onlardan daha bağımsız olarak anlamında demek istiyoruz.
+
+69
+00:20:08,639 --> 00:20:16,299
+Sınava deyince ilk başakla gelenler onlar. Ama dediğim gibi daha gereksinim belirlenme aşamasında bile kolonu teknik review'lar yürütebiliyoruz.
+
+70
+00:20:16,679 --> 00:20:19,759
+Onu da bu bölümün en sonunda diyeceğiz.
+
+71
+00:20:19,759 --> 00:20:26,759
+Şimdi geldik. Sınava amaçlı yapılanma nasıl olur? Yani ekibinizi nasıl...
+
+72
+00:20:28,915 --> 00:20:33,996
+Görevlendireceğiz, dağıtacağız, görev ve sorunları nasıl edileceğiz gibi konulara gelelim.
+
+73
+00:20:33,996 --> 00:20:41,895
+Şimdi, tabii ki bir bileşen ilk olarak ve öncelikle onu hazırlayan program şıtasından sınanacak.
+
+74
+00:20:42,675 --> 00:20:46,456
+Çünkü o parçaya en iyidir, onu yazan kişi halbette.
+
+75
+00:20:47,135 --> 00:20:54,996
+Ama ek olarak bu parçanın yazarı dışındaki kişilerce de sınanması önem taşımaktadır.
+
+76
+00:20:56,372 --> 00:21:10,251
+Eğer bağımsız bir sınav ekibimiz varsa ne ala, onlar yürütür bu işi. O kadar insan kaynağımız yoksa o zaman iki farklı çözüm önerisini de bulunuyoruz.
+
+77
+00:21:10,251 --> 00:21:22,060
+Birinci çözüm önerisi, farklı projelerde çalışan ekipler birbirinin kodunu sınayabilir. Bunun bir dezavantajı şu, şimdi…
+
+78
+00:21:22,355 --> 00:21:33,755
+Bir şey sınavabilmek için genel yapısına da hakim olmak gerekmektedir. Yani onu kodlayan kadar ayrıntılı bilmek gerekmiyor, tamam. Fakat yine de belli bir noktaya kadar hakimiyet gerekmektedir.
+
+79
+00:21:33,755 --> 00:21:46,355
+Ve bu diğer projenin ekibi kendi projelerini takip etmeye odaklansın. Elbette birinci olarak onu yapacaklar. Ama diğer projenin de ilerleyişine yönelik.
+
+80
+00:21:48,084 --> 00:22:06,004
+Uyum çalışmaları, anlamı okuma, öğrenme, takip etme çalışmaları yükmek zorundadır ki o kadar fazla zaman harcayacak kadar lüksümüz olmayabilir. Bu durumda da aynı projenin farklı art grupları birbirinin çalışmasını sunar.
+
+81
+00:22:06,288 --> 00:22:33,788
+Ya da işte, diyelim ki 5 kişilik bir ekip, O projenin ekibi, 5 kişiyiz, A, B, C, D, E, F kişileri, A'nın kodunu B sınar, B'nin kodunu C sınar, C'ninkini de D, D'ninkini de E, A, B, C, D, E, E'ninkini de tekrar A sınar gibi, böyle bir circle'ı bir ayarlama yaptığımızda, işte herkes bir başkasının da kodunu sınamış olur.
+
+82
+00:22:34,387 --> 00:22:46,107
+Çünkü neden? Şimdi temel motivasyonu söyleyelim. Programcının çıkanı, kendi yazdığı kodun hatasız, zamanlı ve bütçe dahilinde tamamlanmasını gerektirir.
+
+83
+00:22:46,587 --> 00:22:54,127
+Kimse kötü iş yapmak istemez, istemeden bile olsa, kötü bir iş yapmışsa, kötü demek değil, hatalı diyelim.
+
+84
+00:22:54,463 --> 00:23:18,643
+Kimse hatalı iş yapmak istemez. İstemeden, tabii ki sen anılıyor bu iş. İstemeden bir hata ortaya çıktığı zaman ise bunun yayılmasını istemez. Bilinmesini istemez. Yapabiliyorsa kendisi düzeltmek ister ama yapabilseydi en başta yapmaz. Hadi diyelim ki yaptığı hatayı sınama aşamasında görür hocam diyebilirsiniz ama.
+
+85
+00:23:19,059 --> 00:23:35,299
+Görmeyebilir. Çünkü psikolojik olarak baktığınızda aslında sınama yıkıcı bir eylemdir arkadaşlar. O kodu yazan kişi kendi yazdığı kodu çalıştığını göstermeye eğilimli oluyor.
+
+86
+00:23:35,299 --> 00:23:39,059
+İster istemez. Bilinç altında. Bu bilinçli olarak yapmıyor. Söyleyeyim yani.
+
+87
+00:23:39,443 --> 00:24:01,564
+Kendi çalıştığı kodun çalışıyor diye göstermeye yönelik düşünün. Fakat aslında sınama dediğimiz iş kodun çalışmadığını göstermeye yönelik bir etkinliktir. Ne durumda bu kod çalışmaz, ne durumda hata yapar, ne durumda bozulun, ne durumda kırılır bu bakış açısıyla.
+
+88
+00:24:02,387 --> 00:24:11,147
+Eğlenmesi gereken bir sınava ve kimse de kendi yaptığı işin bu şekilde bozulmasını istemez.
+
+89
+00:24:13,227 --> 00:24:21,107
+Yani bırakın yazılımı, kendi günlük hayatımızda yaptığımız ufak hatalardan bahsederim.
+
+90
+00:24:23,247 --> 00:24:26,287
+Bu görmeyiz bile çoğu zaman.
+
+91
+00:24:26,740 --> 00:24:36,279
+Görmüşsek de nefsimiz çeşitli bahaneler bularaktan bu yaptığımız hataları, zulu davranışı sıklıkla çıkarmaya çalışır.
+
+92
+00:24:36,679 --> 00:24:42,359
+Ve nefsin kaybettiği hiçbir davada yoktur arkadaşlar. İlla bir bahane bulunur.
+
+93
+00:24:42,399 --> 00:24:46,960
+Ama burada biz şimdi profesyonel teknik bilinç yapıyoruz yazılımın gelişiminde.
+
+94
+00:24:47,039 --> 00:24:54,159
+Ama ister istemez insanız ve arka planda bilinç altında yaptığımız işe yaklaşığımız bu şekilde oluyor.
+
+95
+00:24:54,740 --> 00:25:01,079
+İşin içerisine kibir gibi duygular da gelir, bellik gibi duygular, her şey girebilir.
+
+96
+00:25:01,079 --> 00:25:17,299
+Bu nedenle işi profesyonel bir biçimde yapabilmek için, arka plandaki bu sınamanın yıkıcı bir etkinlik olduğu, kodu üretenin de onu ister istemez sahiplendiği güdülerini düşündüğümüzde yapmamız gereken şey bu da arkadaşlar.
+
+97
+00:25:18,516 --> 00:25:41,816
+Bu konuda bir şey okumuştum, haber okumuştum zamanında. Şimdi bir kamu kurumunda, unuttum neresi olduğunu ki unutmasam bile aslında söylememek lazım zaten. Bir nüfus müdürü diyelim. Ne bileyim bir sosyal sigortyal kurumunun bir şubesi diyelim hiç fark etmez. Bülokratik işlemlerin ama önemli işlemlerin yapıldığı bir devlet kurumu.
+
+98
+00:25:43,347 --> 00:25:52,967
+Burada hata oranının fazla olduğu fark edilince üst yönetim tarafında önce şöyle bir fikir öneriliyor.
+
+99
+00:25:55,247 --> 00:26:05,387
+Herkes kendi yaptığı işi geri dönük olarak tekrar gözden geçirip hata bulmaya çalışacak.
+
+100
+00:26:05,387 --> 00:26:08,407
+Bulduğu hata başarılı bir ikramiye alınacak.
+
+101
+00:26:10,451 --> 00:26:17,032
+Bu karar çalışmada, doğruluk düzeyinde belirli bir iyileşme sağlıyor ama yine de istenilen kadar olmuyor.
+
+102
+00:26:17,451 --> 00:26:20,451
+Bu sefer şöyle yapıyorlar, her bir memur...
+
+103
+00:26:20,980 --> 00:26:34,920
+Kendisinin hazırlamadığı şu kadar adet dosyayı araştıracak hatalı eksik soru işlem için diye o zaman ikramiyeler ve daha doğrusu hata bulma olanları falan yapacak.
+
+104
+00:26:35,660 --> 00:26:45,480
+Herkes bir başkasının hatasını ki hele ki bulduğu hata başına da gelir olacaksa çok daha canla başta sınılaraktan buluyor, düzeltiyor.
+
+105
+00:26:48,980 --> 00:27:05,099
+Aynı ikramiye karşılığında bunlası daha az düzelmeye getirirken, başkalarının dosyalarındaki hataları bulmak çok daha fazla hata tespitine yol açıyor.
+
+106
+00:27:05,500 --> 00:27:08,440
+Yani sadece yazılımda değil, başka her şeyde bu iş böyle.
+
+107
+00:27:09,044 --> 00:27:27,884
+Ve en samar olarak tabii ki yazılım bu iki kişinin çünkü hem yazılı hem diğer programcı veya test ekibi bunlar da yine profesyonel teknik insanlar. Bu teknik insanlar dışındaki üçüncü kişi tarafından da, üçüncü paydaş diyelim, üçüncü paydaş tarafından da sınanıyor. O da işlerimiz tabii ki.
+
+108
+00:27:28,948 --> 00:27:39,688
+Sonuçta hataların sonunu bulunacak. Burada önemli olan hataları daha erken bulmak ve bu şekilde daha kolay, daha az mahsatla çözebilmek.
+
+109
+00:27:40,367 --> 00:27:48,428
+Ortaya çıkan yazılımın bakım aşamasında geçtiğinde ortaya çıkan her hata bir düzeltilmesi çok daha mahsatlı olacak.
+
+110
+00:27:48,428 --> 00:27:51,367
+İki, prestijinizi sarsacak.
+
+111
+00:27:53,948 --> 00:27:54,708
+Peki.
+
+112
+00:28:00,500 --> 00:28:20,839
+Şimdi, sınava çalışmaları hem zor durur arkadaşlar, hem de en çok çaba gerektiren etkinliktir. Bir şeyi sınavak, kodlamaktan daha zor ve daha ayrıntılı düşünmeyi gerektirir.
+
+113
+00:28:21,268 --> 00:28:31,268
+Ve sinama yapıyoruz diye, işimiz rahat diye düşünmeyin. Ne kadar dikkatli ve...
+
+114
+00:28:32,192 --> 00:28:39,492
+Literatür'deki en güzel uygulamalar, best practice, bunlar uygun şekilde hazırlanırsak hazırlanalım.
+
+115
+00:28:39,971 --> 00:28:45,092
+Sınama tüm hataları yakalanabileceği bir güvenlik hal şeklinde değildir.
+
+116
+00:28:45,492 --> 00:28:51,992
+Hani sikte cambazlar mesela yüksek halde ip veya trapez gösterileri yapıyor falan.
+
+117
+00:28:52,652 --> 00:28:58,412
+Onlar işin erbabı düşmezler etmezler ama olur da bir sorun olur düşerlerse aslında bir güvenlik hal.
+
+118
+00:28:58,412 --> 00:29:00,192
+Ve o güvenlik halasında...
+
+119
+00:29:00,192 --> 00:29:23,032
+Yakalanacaklar elbette. Fakat hata ayaklama böyle bir şey değil arkadaşlar. Lerdo sınama böyle bir şey değil. Ne kadar aynı tıl sınama yaparsak yapalım. İlla ki kaçacak hatalar olacaktır. Burada önemli olan bu kaçan hataları en azından indirmeye çalışmaktır.
+
+120
+00:29:23,604 --> 00:29:27,224
+Hedeflerimizde planlama aşamasında açıkça belirlemeliyiz.
+
+121
+00:29:27,544 --> 00:29:29,264
+Biraz daha ayrıntıya girmiş olalım.
+
+122
+00:29:29,764 --> 00:29:32,544
+Birincisi, testin kapsama alanı.
+
+123
+00:29:33,524 --> 00:29:36,744
+Kapsama alanı derken, bunun yazıcısı code coverage.
+
+124
+00:29:37,504 --> 00:29:40,524
+Ortaya çıkan yazılımı tamam test ediyoruz.
+
+125
+00:29:40,663 --> 00:29:41,964
+İşte test senaryolarımız var.
+
+126
+00:29:42,224 --> 00:29:50,004
+Bu test senaryolarımız koştuğunda, hepsi koştuğunda, acaba yazılımın yüzde kaçı üzerinden gidiyor?
+
+127
+00:29:50,420 --> 00:30:06,840
+Yazılımın %100'ünü test etmek, ütçe ve maliyet açısında olanaksız. Fakat burada belirli bir eşit belirleyebilirsiniz. %60, %70, %75 gibi.
+
+128
+00:30:18,804 --> 00:30:34,484
+İlgili çabayı arttırırsanız, ama gerçekleme aşamasından da eğer geri kaldıysanız, o zaman biraz daha düşük bir kapsama oranıyla devam etmeyi kabullenebilirsiniz.
+
+129
+00:30:36,084 --> 00:30:40,304
+Çünkü burada bizim esas temel kriterimiz kaynak.
+
+130
+00:30:40,688 --> 00:30:55,328
+Yani bu sınavla çalışmalarına ne kadar kaynaklayacağız? Zaman, kişi ve bir kişi. İş birleşimliği var bunun. Bu kaynakları açmak zorunda kalacaksak, kapsama alanımızı genişletmek için o zaman yapmayabiliriz.
+
+131
+00:30:56,339 --> 00:31:11,439
+Ve işte söz konusu olan yazılımın türüne göre belirlenebilecek diğer çeşitli ölçütlerimiz de olabilir. Mesela eğer bu bilimsel uygulamaysa precision, hassasiyet, yeterli düzeyde mi? Ona bakmamız gerekir.
+
+132
+00:31:14,379 --> 00:31:20,439
+Eğer real time gerçek zamanlı bir uygulamaysa response time, unit verme zamanı.
+
+133
+00:31:20,692 --> 00:31:47,451
+Bizim için önemli bir kriter olacaktır. Veya sahada yoğun olarak kullanılacak ve sürekli gözetlenmeyecek bir yazılım süre veyahut da tam aksine yoğun olarak kullanılacak olup mümkün olduğu kadar az servis kesintisi gerçekleşmesi gereken projelerde iki hata arası ortalama süre önemli bir çiftçik.
+
+134
+00:31:48,692 --> 00:31:55,091
+mean time between failures. Mean ortalama time süre between failures. İki hata arasında.
+
+135
+00:31:55,872 --> 00:32:09,811
+Yani hatalı iste istemez gerçekleşecek. Ama sistemin çalışması süresince birbirini izleyen her iki hata arasında acaba ortalama ne kadar süre geçiyor?
+
+136
+00:32:11,031 --> 00:32:16,011
+Bir gün mü, bir ay mı, kaç saat gibi.
+
+137
+00:32:16,756 --> 00:32:42,395
+Onun dışında mesela mean time to repair, hata gerçekleşecek, bu hata hamle edilecek. Eğer bu hatanın düzeltilmesi için sistemin kendisinin de yürütebileceği etkinlikler varsa otomotik olarak özellikle, o da mean time to repair, yani bir hatanın düzeltilmesi ortalama ne kadar sürüyor, kaç dakika, kaç on dakika gibi.
+
+138
+00:32:43,251 --> 00:32:56,411
+Mümkün olduğu kadar sınamalarımızı da otomatikleştirmemiz gerekiyor arkadaşlar. Çünkü oradan tasarlıf edeceğiz. Sınamaları bir de evle değerlendirmeye çalışmak işimizi çok daha verimli sağlayacaktır.
+
+139
+00:32:56,411 --> 00:33:04,411
+Bu da önemli olan sınama gereçlerimizin bize yardımcı olmasıdır. Bunların hoşçlanması ve değerlendirilmesi.
+
+140
+00:33:05,460 --> 00:33:21,240
+Bu sürecimizi de her yazılım geliştirme sürecimizde olduğu gibi ölçmeli ve iyileştirmeliyiz. O konuda da yazılım kalitesi konusunda görüyor olacağız.
+
+141
+00:33:23,635 --> 00:33:41,555
+Bakalım neredeyiz? Black box, white box falan filan. Bunu söyleyelim. Ondan sonra birazcık erken ara vermek istiyorum. Şunun üstünde konuşalım. Ondan sonra acaba yüzdüğünüz aralarını ayrıntılı yapalım.
+
+142
+00:33:51,284 --> 00:33:56,804
+15 dakika araya ihtiyacım var. Biraz erken veriyorum araya, kusura bakmayın.
+
+143
+00:33:57,524 --> 00:34:09,144
+Şimdi, 40 diyelim, 50. 9.50'ye kadar arkadaşlar, biraz ara verelim.
+
+144
+00:34:09,144 --> 00:34:15,564
+11 dakika falan kadar. 9.40 falan şu an 9.40. 9.50.
+
+145
+00:34:17,396 --> 00:34:19,076
+10 dakika arasında verelim şimdi.
+
+146
+00:46:40,884 --> 00:46:44,944
+Evet, pek arkadaşlar. Kaldığımız yerden devam edebiliriz.
+
+147
+00:46:47,104 --> 00:46:48,123
+Videoyu açalım.
+
+148
+00:46:50,123 --> 00:46:50,543
+Tamam.
+
+149
+00:46:51,463 --> 00:46:51,904
+Pekala.
+
+150
+00:46:56,755 --> 00:47:08,715
+Şimdi sırama türlerini göreceğiz arkadaşlar. Sırama türlerini iki farklı kategoride ele alacağız. Birincisi yaklaşım tarzına göre, ikincisi yürütülme sıralarına göre.
+
+151
+00:47:13,139 --> 00:47:26,019
+Yaklaşım tarzlarına göre sınamayı ikiye ayırıyoruz. Kara kutu ve beyaz kutu sınaması olmak üzere. İngilizce de aynı, birebir. Black box testing, white box testing.
+
+152
+00:47:27,899 --> 00:47:33,460
+Kara kutu sınamasında sınayacağımız birleşmenin bir kara bir kutu olarak ele alıyoruz.
+
+153
+00:47:34,164 --> 00:47:47,884
+Başka bir deyişi, iç yapısından haberdar değiliz. Veyahut da iç işleyiş yapısını bilmiyoruz. Sadece elimizde temel bazı spekler var.
+
+154
+00:47:48,307 --> 00:48:05,988
+specification, temel bazı tanımlar var. Yani, beklenen şu, şu tür gizlilere karşılık elde edilecek şu, şu, şu çıktılar olmalıdır şeklinde. Mesela bir tane tüm devreyi ele alalım. İç yapısı belli değil.
+
+155
+00:48:06,320 --> 00:48:16,760
+Fakat işte birinci ve ikinci bacağına uygulanan sinyaller, üçüncü bacaktan ve işlemine tabi tutulardan çıkmaktadır.
+
+156
+00:48:18,867 --> 00:48:35,047
+Veya işte ilk 8 bacağındaki bitlerden oluşturulan tam sayı ile diğer 8 bacağındaki bitlerdeki tam sayılarla işlem yapıldığında 16 bacak oldu zaten.
+
+157
+00:48:35,047 --> 00:48:44,867
+Bir sonraki T aşamasında bu 8'er bacaktaki iki tane tam sayının bitwise or işlemine tabi tutulmuş.
+
+158
+00:48:46,867 --> 00:48:48,188
+Çıkacaktı, değil mi?
+
+159
+00:48:49,047 --> 00:48:54,807
+Şimdi, burada acaba bu devrinin iç yıpsını bilemiyoruz.
+
+160
+00:48:55,127 --> 00:48:58,587
+Açmaya çalışsak da kendini imhal edecek, lirals en işlemek yapamıyoruz.
+
+161
+00:48:59,268 --> 00:49:06,228
+O zaman bunu, bununla göre değişik veri hükümeleriyle ancak sınayabiliriz.
+
+162
+00:49:07,067 --> 00:49:11,327
+Değişik sayılar bize doğal sonuçları veriyor mu diye.
+
+163
+00:49:13,108 --> 00:49:24,208
+Ama bunu illa elektronik devre düzeninde düşünmeyin. Kaynak kodu bizde olmayan kod bileşenlerini de ancak bir şekilde sınayabiliriz. Başka çağrımız yok.
+
+164
+00:49:25,548 --> 00:49:30,068
+Fakat eğer bu bileşenin iç yapısını biliyorsak,
+
+165
+00:49:30,420 --> 00:49:53,279
+Yani kendi kaynak kodlarının kendi yazılım projesiyse elbette o zaman beyaz kutu sınaması da yürütebiliriz. Bu durumda sınayacağımız birinin iç eşleşimini göz önünde bulundurarak özellikle bu ayrıntılar kapsamında ters gidebilecek olguları araştırıp sınav alanımızı ona göre tasarlarız.
+
+166
+00:49:53,279 --> 00:49:54,279
+Tabii ki.
+
+167
+00:49:54,804 --> 00:50:14,104
+Ve bu aşamada whitebox testing yaparsak, kod kavrucu ne olduğunu da bilebiliriz. Çünkü kaynaklı ulaşık elimizde. Yazdığımız test ve rar yolu koştuğunda değişik if'ler, fall'lar, line'lar varsa öyle bir mesela veriler girmişizdir ki, 4 ayrı if dallanma.
+
+168
+00:50:14,931 --> 00:50:33,291
+Sıval biz bunlardan ancak üçünü kapsayabildik diyelim ki gibisinden durumda olabilir. Peki dördüncüsünü niye kapsayamadık? Belki işte sınama için ayırdığımız zaman ve bütçeyi aştık belki de. O yüzden diyebiliriz.
+
+169
+00:50:35,151 --> 00:50:39,651
+Ne bileyim işte böyle bu şekilde şeyler düşünülebiliriz.
+
+170
+00:50:41,012 --> 00:50:54,332
+Ve tabii ki elbette Beyaz Kutu sınaması haline daha masraflı. Çünkü iç yapısını bilip ona göre eylem yürüttüğümüze göre bu yaptığımız çalışmalar çok daha zorlu olacaktır.
+
+171
+00:50:54,996 --> 00:51:09,976
+Daha fazla çaba harcayacağız, kod kalıcımızı yüksek tutmak, nasıl bu işaretleri biliyoruz acaba, nasıl bir değer girsem de bunu bozmaya çalışmak gibi düşünmek daha fazla zaman ve çaba isteyecektim.
+
+172
+00:51:09,976 --> 00:51:19,256
+Bu nedenle, kaynak kod elimizde olmasına rağmen, daha az kritik önere sahip birleşenler için BlackBark's testing yapacağız.
+
+173
+00:51:22,996 --> 00:51:43,036
+Max testing yapacağız diyerekten sınama işin daha mütevazi bir oran belirleyebiliriz veya zaten do olan, masraf olan sınama işini belirlediğimiz iyi bir eşik olan, mesela biz onun içerisinde tutabilmek için de bu yöntemi kullanabiliriz.
+
+174
+00:51:43,311 --> 00:51:49,572
+Önemli kritikleşenlere white box testing, daha az kritikleşenlere black box testing yapabiliriz.
+
+175
+00:51:52,563 --> 00:52:05,463
+Yazdığımız kodlardan yeniden kullanım yaparaktan çalışıyorsak bazı birleşenlerde, orada zaten aslında isper blackbox, isper whitebox testlerimiz zaten hazırdır.
+
+176
+00:52:05,463 --> 00:52:18,463
+Ama mesela her yeni vakada ek kullanım senaryoları da ekleyeceğiz bu yeniden kullandığımız kod kitaplarına diyorsak eğer, o zaman bunu...
+
+177
+00:52:19,476 --> 00:52:31,476
+En azından bakım aşamasına gelene kadar Black Box yeni testler ekleyebiliriz. Daha sonra ise belki White Box ekleyebiliriz diye düşünebiliriz. Yani taktikleri uygulayabilirsiniz arkadaşlar.
+
+178
+00:52:33,364 --> 00:52:49,664
+İkinci kırılım tarzımız ise, kategorizasyonumuz ise, yürütülme sıralamasına göre sınama türleridir. Bu aşamada önce doğrulama sınamaları devreye girer, ardından geçerleme sınamaları devreye girer.
+
+179
+00:52:54,164 --> 00:53:08,524
+Bunun İngilizcesi açısından baktığımızda buna V&V test diyorlar. Bu V&V test denince karışıyor. Yani verification, validation, hangisi hangisi karışıyor.
+
+180
+00:53:20,224 --> 00:53:38,523
+Doğrulama ve geçerleme, önce D harfi, sonra G harfi gelmektedir. Fakat İngilizceye girdiğimizde bizim anladığımız değil ya, iş değişiyor. Önce verification, sonra verification. Alfabede V, V'dan daha sonra geliyor ama daha önce yapılıyor.
+
+181
+00:53:39,188 --> 00:54:00,268
+İşte, şöyle de kalsın, İngiltere'de trafik soldan akıyor, sağdan akmıyor. O yüzden İngiltere'deki sıralama, her saat evtik sıralama, Türkçe'deki sıralama, doğru, asliotik sıralama. Bütün bunları hatırlarsanız karıştırmanız mümkün değil. Önce doğrulama, sonra geçerleme sınamaları yapıyor.
+
+182
+00:54:04,288 --> 00:54:12,768
+Bir yaklaşımımız, bu arada dişlerinin ilgili problem olduğu için kesiyor, basartmış.
+
+183
+00:54:14,228 --> 00:54:23,008
+Doğrulama sınav alanındaki temel odağımız, yazılımı doğru mu gerçekliyoruz ya da yazılımı doğru mu yapıyoruz?
+
+184
+00:54:23,848 --> 00:54:29,768
+Beşerleme sınav alanında ise doğru yazılım mı yapılıyor? Bu konuya bakıyoruz.
+
+185
+00:54:30,931 --> 00:54:32,731
+Dolun bu.
+
+186
+00:54:35,291 --> 00:54:39,411
+Zorlama sınamaları, yazılım ekibi tarafından yapılmaktadır.
+
+187
+00:54:39,672 --> 00:54:43,051
+Meşalleme sınamaları ise, son kullanıcı tarafından yapılmaktadır.
+
+188
+00:54:43,652 --> 00:54:48,411
+Yazılım ekibi tabii ki kendi yaptıkları iş doğrum diye kontrol eder, teknik elemanlar.
+
+189
+00:54:48,871 --> 00:54:49,672
+Müşteri ise,
+
+190
+00:54:50,164 --> 00:55:05,544
+Acaba biz doğru yazılım mı alacağız? Yani yazılım gerçekten istediğimiz şekilde mi çalışıyor? Bizim işimize yarayacak şekilde mi çalışıyor? Doğru yazılım mı yapılıyor? Bu şekilde işe bakmaktarız.
+
+191
+00:55:05,544 --> 00:55:12,423
+Öyle baktığımızda sıralama karışmaz arkadaşlar. Tabi bu kış açısını hatırlamamız lazım.
+
+192
+00:55:14,900 --> 00:55:33,500
+Peki, şimdi doğrulama sınamaları kendi içerisinde iki alt aşamada yapılır. İki ayrı sınama türü vardır. Birim sınamaları ve tümleştirme sınamaları vardır. Geçerleme sınamaları ise kendi içerisinde ikiye ayrılır. Alfa sınaması ve beta sınaması şeklinde.
+
+193
+00:55:33,500 --> 00:55:42,200
+Şimdi, burada benim şöyle bir şeyim vardı.
+
+194
+00:55:43,603 --> 00:55:45,603
+Album var bir onu atayım.
+
+195
+00:55:45,603 --> 00:55:47,603
+Eğer bu da ise.
+
+196
+00:55:49,603 --> 00:55:50,603
+Evet.
+
+197
+00:55:50,603 --> 00:55:51,603
+Şimdi bakın.
+
+198
+00:55:53,603 --> 00:55:55,603
+Biraz da büyüteyim isterseniz.
+
+199
+00:56:00,467 --> 00:56:05,027
+Önce doğrulama sınımaları yapılıyor, sonra geçerleme sınımaları yapılıyor.
+
+200
+00:56:05,147 --> 00:56:10,967
+Yani ilk sekseninde ilerledikçe zamanda da ilerlemiş oluyoruz diye düşünebiliyorsunuz.
+
+201
+00:56:11,447 --> 00:56:14,187
+Önce doğrulama sınımaları, sonra geçerleme sınımaları yapılıyor.
+
+202
+00:56:14,767 --> 00:56:21,687
+Doğrulama sınımaları, bilim sınımaları, unit test ve tümleştirme sınımaları, integration test şeklindedir.
+
+203
+00:56:22,167 --> 00:56:26,607
+Geçerleme sınımaları ise alfa ve beta sınımaları şeklindedir.
+
+204
+00:56:27,443 --> 00:56:35,664
+Doğrulama sınamaları teknik ekip tarafından yürütüyoruz. Geçerleme sınamaları ise müşteri tarafından yürütüyoruz.
+
+205
+00:56:37,983 --> 00:56:47,443
+Doğrulama sınamaları yazılım evinde yapılır. Tabii teknik ekip tarafından yürütüldüğü için. Geçerleme sınamaları ise...
+
+206
+00:56:48,659 --> 00:57:00,539
+Alfa sınaması yazılım evinde, beta sınaması ise müşteri ortamındayız. Tabi yazılım evinde yapılan kısımda da gerçek ortama yakın bir ortam kurulması beklenmektedir.
+
+207
+00:57:04,307 --> 00:57:20,807
+Şimdi isterseniz bu karşılaştırmaları anlattıktan sonra bunların ayrıntılarına girelim. Şuradaki şu ölçülerin içeriğini zaten onları alfabeti anlatıktan sonra geri dönemden tekrar bakıyoruz.
+
+208
+00:57:25,684 --> 00:57:39,844
+Evet. Şimdi, bilim sınavları, testing dediğimiz gibi en küçük yıldızın birleşiminde. Nesliye yönelinde bu sınıflar oluyor. Bunların sınavı söylüyor. Bilim sınavları ne zaman tasarlarız?
+
+209
+00:57:52,820 --> 00:58:03,200
+Benimsi yorsanız eğer, ki yaklaşımdan, şu an TDD'yi önerir, son daha önce bilim sınamalarımızı tasarlarız.
+
+210
+00:58:03,827 --> 00:58:31,768
+Ve öyle ki gerçekleme aşamasında, kodlama aşamasında sadece ve sadece bu birim sınamaları geçecek kodu yazmaya odaklanabiliriz. Ne daha eksik ne daha farklı. Çünkü hatırlarsınız çevre süreçlerde kullanım öyküleri büyük oranda değişebilmekteydi. Bazıları iptal olabilmekteydi vs. Bu bağlamda daha fazla iş yapmaya kalkışmak sonradı.
+
+211
+00:58:31,827 --> 00:58:43,168
+Aslında geleneksel süreçte bile fazladan iş yapmaya çalışmak doğru bir şey değil. Çünkü gereksinimler illaki değişebilecek.
+
+212
+00:58:44,884 --> 00:58:53,983
+Bu durumda değişebilecek bir şeyi üstüne, bu projemizde değişmeyecek ama belki bir sonraki fazında değişecek.
+
+213
+00:58:54,983 --> 00:59:02,083
+Değişileceğin olasılığı yüksek olan bir şeyin üstünde çok fazla zaman harcamak mantıklıca bir şey değil.
+
+214
+00:59:02,243 --> 00:59:09,303
+Zaten biliyorsunuz yazılım projelerinin başarıya ulaşma oranı konusunda çok hassas davranıyoruz.
+
+215
+00:59:10,523 --> 00:59:12,884
+Hele ki geleneksel seç kullanırsak başarı olmaz.
+
+216
+00:59:12,884 --> 00:59:26,163
+Tam başladığında bir yerde ilgili konuşmuştuk. O zaman zaten zor olan işimizi böylece daha da fazla iş yaparaktan zorlaştırılmayalım demek istiyoruz.
+
+217
+00:59:26,763 --> 00:59:33,683
+Ayrıca bu çevik yakışındaki KİS, Keep It Simple ilkesine de uyar bu yaptığımız iş.
+
+218
+00:59:33,683 --> 00:59:39,903
+Ama herkes böyle çalışmayabilir. Bu mümkündür, tabii ki mümkündür. Çünkü elimizde bir tasarım var.
+
+219
+00:59:40,500 --> 00:59:59,039
+Evet, bu tasarımdan yola çıkarak sınamalarımızı tasarlayabiliriz elbette. O konuda bir problem yok. Herkes için uygun olmayabiliriz belki böyle bir çalışman için. Öyle usul uygun değilse kodlama sırasında da sınamalarınızı tasarlayabilirsiniz.
+
+220
+01:00:00,000 --> 01:00:28,000
+Ben Whitebox olarak çalışacağım diyorsanız, bu veya bir sonraki kodların ardından sınavını tasarlamak daha mantıklı olacak. Daha henüz hazırlanmış kod yok. Elinizde sadece ana tasarım var. Tamam, tasarım ayrıntıları da size belirli düzeyde şeffaflık sağlamaktadır. Fakat yine de tam anlamıyla Whitebox, bütün kaynak konu bilerekten yapılacak bir şeydir. Bu nedenle...
+
+221
+01:00:28,000 --> 01:00:39,840
+TD'de biraz daha Black Box başlar. Ama TD ilerledikçe, yazılımda ilerledikçe, çevik süreç çalışıyorsak bile, madem TD'de çevik süreçle daha alakalı dedik.
+
+222
+01:00:39,840 --> 01:00:51,739
+Sondaki, projenin daha ilerleyen aşamalarındaki çevrimlerde, döngülerde, Scrum'larda filan, White Box'lamaya da zaman ayırabiliriz mesela.
+
+223
+01:00:52,436 --> 01:00:56,556
+Yani bu demek olmasın, TDD, Blackbox şeklinde düşünülmesin.
+
+224
+01:00:59,135 --> 01:01:04,815
+Yani işte biraz kod yazar, yazdığımız kadarını sunacak şeklinde de gidebiliriz.
+
+225
+01:01:05,115 --> 01:01:09,655
+Veya o ilgili bileşeni kodladıktan sonra da şey edebiliriz.
+
+226
+01:01:10,976 --> 01:01:22,115
+tasarlayabiliriz. Peki, yürütülmesi ne zaman olacak? Yürütülmesi kodlamadan önce olamaz tabii elbette. Kodlama sırasında veya kodlamanın ardından yürütülebilirsiniz.
+
+227
+01:01:22,900 --> 01:01:44,240
+Ve tabii ki adet de bir nesne, bir sorumluluğu tek başına yerine getirmemektedir. Bir sorumluluğu yerine getirmek için bağlaşımda bulunduğu diğer sınıflardan nesnelerle birlikte çalışmaktadır. Yani böyle de olmak zorundadır zaten. Bu durumda şöyle bir soru geliyor aklına.
+
+228
+01:01:45,715 --> 01:01:58,535
+Bu sınıfımızın şu an yazdığımız bir sınıfımız var ya da yazacağımız sınıfımız var. Bunun tek başına yürütmediği sorumlulukları sunamak için ne yapacağız? Bekleyecek miyiz?
+
+229
+01:02:01,139 --> 01:02:22,139
+Eğer o ihtiyaç duyulan sınıfı da biz kodlayacaksak belki önce ihtiyaç duyulanı kodlar sonra ihtiyaç duyulanı kodlayabiliriz ama ortaya da büyük ölçü projelerde bu bağımlılıkların sırasını bir şey...
+
+230
+01:02:23,476 --> 01:02:44,436
+Karışmış bir iplik yığınına da benzetebiliriz. İpulucunu bulup da çekmek her zaman mümkün olmayı biliyor. Aslında şart da değil arkadaşlar. Çünkü şu o zaman bu ihtiyaç duyulan birlikte çalışılacak diğer kodlar başka programcılar tarafından yazılacaktı. Ve onların takvimine göre bunlar daha sonra yapılacaktı.
+
+231
+01:02:46,000 --> 01:02:59,639
+E peki ne yapacağız? Biz kendi kodumuzu test etmeyecek miyiz? Edeceğiz arkadaşlar. Şöyle ki, ihtiyaç duyulan bu diğer sınıfın yerine geçecek minimum kod hazırlıyoruz. Yani derne hatasına ulaşmasın.
+
+232
+01:03:00,052 --> 01:03:14,632
+Yeter diyeceğimiz düzeyde kod yazıyoruz. Bu koda değişik isimler veriyor literatürde. Stub deniliyor, dummy deniliyor, salogate deniliyor, proxy deniliyor vesaire.
+
+233
+01:03:14,632 --> 01:03:18,632
+Türkçeleri vekil, sahte, yalancı.
+
+234
+01:03:19,891 --> 01:03:47,151
+Bu da hayal söylemek anında değil de, nasıl emzeye yalancım ama denir ya, onun gibi diyelim. Bu şekilde adlandırılabilir. Tabii bunların teknik olarak nüanslığı var. Fakat ben o düzeyde bilgi sahibi değilim ve ince nüans oluyor bunlar bu arada. O yüzden bu aşamada bizim bu kadar bilmemiz yeter. İhtiyaç duyulan kod yerine geçecek bir iskelet kodu yazsak bizim için yeter.
+
+235
+01:03:47,664 --> 01:04:12,104
+O da mesela diyelim ki, bir sonuç hesaplayıp bir boolean return yapacak bir metot sözü olsa, biz onun gövdesine direkt kafadan return true diye kodlarız yeter. Neden? İçlemin başarılı olduğu teyz vakadan ona göre test yapmış oluruz. Daha sonra zaten tümleştirme testleri yapılacağında.
+
+236
+01:04:14,195 --> 01:04:21,855
+O iskelet kodun, sahte kodun yerine gerçeği kısa bir süre sonra zaten verecektir.
+
+237
+01:04:21,855 --> 01:04:23,855
+O yüzden...
+
+238
+01:04:24,596 --> 01:04:45,815
+İster kısa süre olsun, süresi bekleriz denilebilirim ama belki biraz daha uzun sürebilir. O yüzden biz beklemeyelim. Önünde sonunda diyelim. O sahte kod, iskelet kod, geçişi kod yerine aslı gelecektir zaten. Ve kümleçtirme sınavları yaparken zaten asırlarıyla test etmiş olacağız bütün yazılımı.
+
+239
+01:04:47,123 --> 01:04:53,063
+Eğer bu vekiz sonuçları bir sütürürsak, ekstradan fazla kodlama işi çıkartırız kendimize.
+
+240
+01:04:53,463 --> 01:05:01,003
+Ki zaten çok kolay değil bu işler. İşimizi daha da zorlaştırmayalım. Kiz ülkesine uyalım demek istiyorum.
+
+241
+01:05:01,903 --> 01:05:02,784
+Şey bu.
+
+242
+01:05:02,784 --> 01:05:03,663
+Bunun bu.
+
+243
+01:05:06,523 --> 01:05:09,344
+Evet, başka bir şey var mı bir yansıda? Yok, tamam.
+
+244
+01:05:30,483 --> 01:05:44,683
+Peki. Şimdi, birim sınav alanında ne gibi hatalar arayabiliriz? Yani tasarlarken ne gibi hatalara bakalım? Ona göre testlerimizi tasarlayalım.
+
+245
+01:05:45,172 --> 01:05:57,031
+Aslında özetle diyeceğim şey, şu an kadar yaptığınız hatalardan ders çıkın ve o hataları bir daha tekrarlamamak üzere test kodu yazın demek istiyorum.
+
+246
+01:06:04,307 --> 01:06:16,588
+Kalıtı mı kullanıyorsak, acaba işte oradan ortaya çıkacak polimorfizm durumunda acaba bazı yan etkiler söz konusu olabiliyor mu, olmuyor mu? Ona dikkat edelim.
+
+247
+01:06:17,172 --> 01:06:38,912
+Çok biçimliği kullanmıyorsak bile, hatta nesli yönelik kullanmıyorsak bile, farklı stacklarımız varsa, bunlarda birbirinin yerine geçebilecek alanlarımız varsa, herkese Union şeyini hatırlayın, aynı stacktaki aynı bit alanı farklı bakış açıları da farklı yollanabiliyordur mesela.
+
+248
+01:06:39,832 --> 01:06:45,052
+Oralardaki olaylara dikkat. Veya kullandığınız dilde eminim yapısı yoksa.
+
+249
+01:06:45,172 --> 01:07:04,372
+Enumu, yani Java'da gördüğünüz Enumu, T'de sabit kodlarla yapıyorduk mesela. Diyelim ki hang grubu bilgisi var? 0 grubunu 0, A grubunu 1, B grubunu 2 ile şey ediyorsunuz. Arka planda bir int var.
+
+250
+01:07:13,396 --> 01:07:37,856
+giriş seviyesi tarifinizde sıfır, orta düzeye bir, en üst düzeye hizmetinizde iki konuluk vermişsiniz. Yani bu durumda yanlışlıkla bir müşteriye bir paket erişim paketi satıyorum derken aslında onun kan grubunu da set edebilirsiniz. Yani böyle teslipler olabilir. Bunlara dikkat etmek lazım.
+
+251
+01:07:39,572 --> 01:08:07,532
+Kullandığınız dilin, bir de bakın kuvvetli tiplemeli dillerden bahsettim. İyi veya kötü, birbirinin yerine geçer ya da geçmez, farklı veri tipleri olan dillerden bahsettim. Bir de kuvvetli tiplemeli olmayan diller var. Yani herhangi bir değişkenin, değerinin, herhangi bir değişkenin, türünün, ona ilk atanan değerin türü neyse o olarak belirlendiği değişken tür.
+
+252
+01:08:07,572 --> 01:08:16,311
+Sahip dinler de var mesela. Oralarda bu işlere daha dikkat ederekten test yazmamız gerekmektedir arkadaşlar.
+
+253
+01:08:20,819 --> 01:08:34,940
+Onun dışında, şu and or not, bunu yanlış kullanmamız olabilir. Herkes kalbaşık bir koşul istiyorsam. Aslında zaten kalbaşık bir koşul istiyorsam. Bu parçaları ayırmak lazım ama neyse o kadar şey etmeyeyim şimdi. Refacting konusuna girmeyin.
+
+254
+01:08:35,420 --> 01:08:48,819
+Pointer özelliği varsa, onların yan etkileri olabilir. Operatörleriniz, operatör önceliği matematikse toplama çıkarma çarpma bölümü. Ya da hani Java'da olduğu gibi Java'da artı operatörler.
+
+255
+01:08:48,819 --> 01:08:58,819
+Satürn'ün polimorfik davranışı var. String, concatenation ve aritmetik toplam eksi birlikte oluyor mesela. Ne bileyim, döngü yapıyoruz, sonsuz döngü olabiliyor.
+
+256
+01:08:58,819 --> 01:09:05,739
+Veyahut da bir eksik, bir fazla eleman işlemek söz konusu olabiliyor.
+
+257
+01:09:07,420 --> 01:09:16,819
+Dağıtımız boyunca binbir türlü hata yaptık. Binbir türlü hatadan da öğreniyoruz. Yapabileceğimiz hatalar. Bunlar, demek ki bunların yapılmadığından emin olmak üzere.
+
+258
+01:09:16,819 --> 01:09:24,199
+Dolorlama sınaması açmasında bilim testleri ona göre hazırlayalım demek istiyorum.
+
+259
+01:09:26,600 --> 01:09:30,440
+Ardından tümleştirme sınamaları geliyor. Dolorlama sınamalarında.
+
+260
+01:09:30,440 --> 01:09:31,940
+İntegration Testing.
+
+261
+01:09:32,500 --> 01:09:48,520
+Basitçe şöyle bir soru sorarsak aslında saflık yapmış oluruz. Sınıflar, bilim sınavların geçmişlerse bir araya getirdiklerinde doğru çalışmayacaklar mı? Nihayet de tek başlarda doğru çalışıyorlar ama bir araya geldiklerinde doğru çalışamayabilirler arkadaşlar.
+
+262
+01:09:48,520 --> 01:09:56,520
+Bin bir türlü benzetme, teşbih, örnek verebilir aslında ama çok da fazla uzatmayayım.
+
+263
+01:10:00,000 --> 01:10:08,000
+Şöyle düşünelim. Şimdi bir public tuvalete hem...
+
+264
+01:10:08,735 --> 01:10:18,895
+Kağıt havlu koyduk, hem el ısıtma makinesi koyduk, hem de kağıt yok köşeti koyduk diyelim ki.
+
+265
+01:10:19,275 --> 01:10:30,175
+Şimdi bunlar tek başlarına doğru çalışıyorlardır. Biz tedarik işlerimizden aldığımızda bunların CE kalite belgeleri ve ISO kalite belgeleri var.
+
+266
+01:10:30,175 --> 01:10:32,796
+Yani kendi başlarına görebiliyoruz. İyi yerine geçiyorlar.
+
+267
+01:10:36,735 --> 01:10:43,564
+Öniversitesi bir işçimiz diyelim ki o tuvalette bu parçaları yerlerine takarken...
+
+268
+01:10:44,051 --> 01:11:07,891
+Havalı kurutucumun altına kağıt çöp kusunu koymuşsa, o havalı kurutucunun rüzgarında kağıt çöp kutusu, her iki duvarın montajı ise, onun altında montajı ise, dolduğunda bazı kağıt parçaları o hava basıncı yüzünden, üfleme yüzünden etrafa saçılabilir mesela.
+
+269
+01:11:07,891 --> 01:11:10,971
+İşte bak, bir yere geldiklerinde, doğru çalışmalılar.
+
+270
+01:11:12,051 --> 01:11:18,891
+Peki, yazılım geliştirme de bu işi nasıl olabiliyor? Olay şundan kaynaklanıyor.
+
+271
+01:11:19,764 --> 01:11:34,463
+Yazın yaşam döneminde ne kadar ayrıntılı çalışsak da, alan modellerimizi, şamalarımızı, diğer çeşitli alan şamaları ne kadar ayrıntılı çalışsak bile her ayrıntıyı belirleyemiyoruz.
+
+272
+01:11:34,463 --> 01:11:40,203
+Arkadaşlar, bazı açıkçılar, bazı ayrıntılar bir noktada belirsiz olabiliyor.
+
+273
+01:11:40,684 --> 01:11:47,463
+Ve bu belirsizlik söz konusu olduğu noktada programcıya kendi inisiyatiflerini kullanarak...
+
+274
+01:11:47,764 --> 01:11:52,764
+Karar verip kodu yazıyorlar. Ve bu durumda bir programcının...
+
+275
+01:11:53,551 --> 01:12:18,271
+Karar verirken ki bakış açısı ile diğer programcının karar verirken kullandığı bakışı sütü birbiriyle uyumsuz olabilir. Son derece olasıdır. Bu uyumsuz bakış açılarıyla verilmiş kararlarda birbiriyle çelişebilir ve bu kararlarla yazılmış kodlar da bir araya getirdiklerinde doğru çalışmayabilirler. Son derece doğaldır.
+
+276
+01:12:18,707 --> 01:12:28,707
+Yani aynı kişinin farklı zamanlarda verdiği kararlarla birbirine çelişelim. Bırakın iki farklı programcının kararlarını. Bu nedenle…
+
+277
+01:12:29,555 --> 01:12:38,275
+Tümleştirme sınavları da gereklidir arkadaşlar. Nesmiye'lik programlamada bu bilim ve tümleştirme sınavlarını çok kesin bir hatta aldığa ayıramıyoruz.
+
+278
+01:12:38,796 --> 01:12:49,595
+İsterdiği avantajlayın, isterdiği avantajlayın ama paylatlandığı nokta Nesmiye'lik de analiz ve tasarımın birbirinden çok ayrılamamasıdır aslında.
+
+279
+01:12:53,524 --> 01:13:03,384
+Kabaca belki şöyle diyebilirsiniz, hani vekil kod kullanmıyorsanız tümleştirme sanmasıdır, vekil kod kullanıyorsanız bilim sanmasıdır şeklinde diyebilirsiniz ama,
+
+280
+01:13:03,644 --> 01:13:12,384
+yaşam döngüsünün bütününe baktığımızda, proje geçen zamanın bütününe baktığımızda biz artık tümleştirmeye geçiyoruz.
+
+281
+01:13:18,608 --> 01:13:39,868
+Gecikmeleri, aksaklıkları nedeniyle tam istediğiniz anda bütün kodlar hazırlanmamış olabilir. O yüzden tam tümleştirme aşamasına da geçememiz. Neyse. Ama bunun engelleyici bir şey değil. Yani nesneye her şekilde çalışmamızı desteklemektedir. Açıdan bir program yok demek istiyorum.
+
+282
+01:13:41,747 --> 01:14:03,108
+Cumhuriyetçi sınamasının kendi içerisinde alt türleri var arkadaşlar. Bunlardan birkaç tanesini bilmek zorundayız. Birincisi tahribat sınaması, smoke testing. Şimdi burada Türkçe çevrimi birebir uymuyor arkadaşlar. Ve aslında sınama dediğiniz iş tabii ki sınır bilgisayar mühendisliğine yönelik değil.
+
+283
+01:14:03,572 --> 01:14:25,012
+Daha eski mühendislik disiplinlerinde de sınama var elbette ve terminoloji de o yüzden ona göre yapılmış durumda. İster bir makine üretin, ister bir malzeme üretin. Malzemenin tek başına da sınanması gerekmektedir.
+
+284
+01:14:28,275 --> 01:14:56,275
+Biri bir metal türü, spesifik bir çelik türü, ne bileyim G10 çeliği, D5 çeliği falan böyle tamamen salladım şimdi bunları. Değişik kod isimli metaller var. Bunların farklı farklı, ne bileyim, erime noktaları, kaynama noktaları, sertlik değerleri falan var bunların. Acaba işte o kodda üretilen çelik gerçekten o değerlere uygun mu üretilmiyor?
+
+285
+01:14:56,275 --> 01:15:11,755
+Şeklinde sınanmaktadır mesela. Veyahut da işte bir makine ürettiniz, bir motor ürettiniz. Bu kendisinden beklenen en temel işlemleri yerine getiriyor mu? Bu sorunun yanıtını arıyoruz.
+
+286
+01:15:24,275 --> 01:15:52,036
+İlerinden olmaması gereken dumanlar çıkmıyorsa, tamam şu an iyi gözüküyor diye. Yaptığımız yüzeysel sinemalar oluyor. Tamam yüzeysel sinema ama öyle noktalara bakıyoruz ki o tür bir hata olduğunda bütün sistem duracak, hızlı bir şekilde çalıştırılması olanaksız hale gelecek hataları aramaya çalışıyoruz.
+
+287
+01:15:52,275 --> 01:16:19,335
+Bu tip hata da Showstopper deniliyor. Gösteriyi durduran hata. Burada en meşhur örnek benim bildiğim IT alanında, tabi unutun, Windows 95 zamanında mı, 98 zamanında mı bilge işletim sistemi kanıtıyor. Fakat o anda mavi ekranlar karşılaşıyorsunuz. Dur bakayım, şuradan bakalım bakalım.
+
+288
+01:16:20,532 --> 01:16:21,372
+Atınlayalım.
+
+289
+01:16:26,931 --> 01:16:30,131
+İlgeç, UML, screen.
+
+290
+01:16:33,031 --> 01:16:35,791
+Evet, 98'deymiş arkadaşlar.
+
+291
+01:16:36,611 --> 01:16:44,451
+Windows 98'i tanıtırken, mavi ekran alıyor ve çalışma yarada kesiliyor.
+
+292
+01:16:46,228 --> 01:16:50,688
+Bunun sebebi neydi? Bunun sebebi şöyle bir şey olabiliriz.
+
+293
+01:16:50,688 --> 01:16:52,627
+Resul ediyorsunuz.
+
+294
+01:16:53,708 --> 01:17:00,268
+Şöyle bir şey diyeyim, uyduyorum şimdi.
+
+295
+01:17:01,507 --> 01:17:13,827
+O bilgisayarda diyelim ki USB klavye ve fare söz konusu ama bir şekilde klavye yerine fareyi taktı mesela.
+
+296
+01:17:14,228 --> 01:17:28,407
+Veyahut da işte böyle çok basit bir şey yüzünden arka planda mavi ekran düşünüyorum. Yani lansmanın yaptığını yapıyorsunuz, yeni ürünün lansmanını yapıyorsunuz, kalıyor orada gibi.
+
+297
+01:17:33,747 --> 01:17:49,067
+Devam edebilseydi ya da en azından o USB portunu artık şu amaçla kullanacağım şeklinde bir çok kolay bir kod yazılabilseydi o anda o hatayı düşünmezdi gibi. Bundan bahsediyoruz.
+
+298
+01:17:49,067 --> 01:18:01,188
+Ve buna da tahribat sunaması dediğimiz işte en ufak bir şeyde bütün her şeyin çalışması taklayacak mı? Şeklinde ediyoruz. Yoksa şöyle de tabii ki şeyimiz.
+
+299
+01:18:01,747 --> 01:18:12,587
+Dinamit demiyoruz. Bu tip çalışmaları ilk yapmamız gerekiyor. Daha ayrıntılı tümleştirme çalışmalarından önce bunları yapmamız gerekiyor.
+
+300
+01:18:12,587 --> 01:18:20,087
+Adios Neşe, Showstone, önce bunları bir aşalım ki ondan sonra daha ayrıntılı diğer konuları test edebilelim.
+
+301
+01:18:24,916 --> 01:18:25,736
+Bu amaçla.
+
+302
+01:18:26,644 --> 01:18:40,264
+Bu bileşenleri tüm alt partileriyle birlikte ve tüm mağbulunluklarıyla birlikte ve belirli konfigürasyon dosyaları vesaireyle birlikte hepsini bir araya getiririz, bir ödeleriz yani.
+
+303
+01:18:40,264 --> 01:18:53,864
+Günlük olarak bu tahlebat sınavları mutlaka yaparız arkadaşlar. Çünkü bu yüzeysel hataları sanayacak kod da çok da karmaşık olmamaktadır, çok da uzun sürmemektedir genelde.
+
+304
+01:18:54,644 --> 01:18:59,824
+Hiçbir çekinceniz olmadan bunları günlük olarak planlayabilirsiniz.
+
+305
+01:19:02,324 --> 01:19:07,084
+İkinci örnek tümse, diriye dönük sınava.
+
+306
+01:19:07,484 --> 01:19:09,424
+İngilizcesi regression testing.
+
+307
+01:19:09,724 --> 01:19:16,043
+Regresyon diye de söyleyebiliyoruz böyle yarım Türkçe ile, yarım Türkçe ve İngilizce ile.
+
+308
+01:19:16,532 --> 01:19:40,752
+Regression demek, geriye doğru bakmak demektir. Burada olay şu, şimdi yazılıma yeni bir işlev veya bileşen eklendiğinde, bütün sınavını tekrarlamak şeklinde tanımlanabilir, basitçe. Ama bu test senaryolarımızın koşması masrafı olabiliyor arkadaşlar, kimi durumda.
+
+309
+01:19:44,532 --> 01:20:05,811
+Hızlı tamamlanabiliyorsa, regresyon bir problem olmaz, hiç fark etmez. Her yeni bileşen eklediğinizde mesela diyelim, ya da her yeni bir sorumluluğu kodladığınızda bununla ilgili testleri de test havuzunu da eklersiniz ve her gün hepsi tekrar tekrar çalışır.
+
+310
+01:20:08,948 --> 01:20:16,148
+Ama eğer bu senaryoların yürütülmesi biraz uzun sürüyorsa, biraz masraflı olacaksa, o zaman böyle çalışmamız mantıksız olacak.
+
+311
+01:20:20,724 --> 01:20:23,724
+Bu mantıksızlığın sebebi de...
+
+312
+01:20:24,115 --> 01:20:36,855
+Sınama için ayırdığımız bir çaba limiti olması ve bu limitin aşılma riski nedeniyle böyle olabilir diyoruz.
+
+313
+01:20:37,355 --> 01:20:42,355
+Yani böyle olmadı diyoruz. Her yeni bir şey eklerdi. Bütün testleri baştan koşturmayalım.
+
+314
+01:20:42,675 --> 01:20:44,556
+O zaman dengeli bir çözüm kullanabiliriz.
+
+315
+01:20:45,556 --> 01:20:52,115
+Sisteme yeni bir sorumluluk eklediğim yazı da o sorumlulukla ilgili olan parçaların...
+
+316
+01:20:52,115 --> 01:21:08,015
+sunamalarını tekrar koştuysak yeterli olacaktır. Ama bu bağımlılığı da kaç tiriye bağımlılık şeklinde değerlendirilmeliyiz. Orada da bir limit belirleme lecmesine harcayız. Şimdi bir D işleri ekledik.
+
+317
+01:21:09,043 --> 01:21:18,763
+O D işlevine ihtiyacı olan bir C işlevi vardı. Tamam, güzel. Regresyon testi olduğundan C işleviyle ilgili sınamalarımızı da tekrar koşulacağız.
+
+318
+01:21:19,163 --> 01:21:30,043
+Regresyon yapacağız ama C'ye de ihtiyacı olan B var diyelim ki. B'ye de ihtiyacı olan A var diyelim ki. Ta A'ya kadar bir dönüp mü yapacağız?
+
+319
+01:21:30,836 --> 01:21:37,996
+Burada bir sınır belirleyebiliriz. En fazla iki düzey geriye gideceğiz diyebiliriz. Bu da planlamada vereceğimiz bir kalandı.
+
+320
+01:21:37,996 --> 01:21:45,596
+Ona göre reglasyonu ta en başa kadar, el de, el ödü kadımıya kadar yürütebiliriz.
+
+321
+01:21:47,636 --> 01:21:53,136
+Olaylar bu. Bu geriye yönelik olan ölçeğimiz yükseldikçe,
+
+322
+01:21:57,363 --> 01:22:13,363
+Sınama sıkılaşıyor, masraf artıyor. Ölçek ile geriye dönüklük birbirinin ızıt anlamı kelimeler. Yani ince ölçekte çalışmak demek, bütün sınamaları koşturmak demek, kaba ölçekte çalışmak demek.
+
+323
+01:22:13,363 --> 01:22:25,363
+İşte en sonuna kadar gitmedik, bir yerine kadar gittik, kavruk anlamında gerek. O yüzden lütfen yanlış anlaşılmasın kelimelendirmem. Sözde söyleyince ilgili kavramları kullandığımızda...
+
+324
+01:22:25,363 --> 01:22:37,564
+Burada zıt anlamlı olan şeyler varsa onlara dikkat etmek gerekiyor. Eğer bir tanesini hatırlayacaksanız noktaki gibi hatırlamaz. Yeter. Ama olguyu anladınız diye düşünüyorum.
+
+325
+01:22:37,564 --> 01:22:48,523
+Ve tabii ki bütün bu masraf işlemlerimizdeki masrafları düşünmek için de otomatik sarma gelişimlerini kullanmak akıllıca bir iş olur.
+
+326
+01:22:52,532 --> 01:22:56,512
+Geldik geçen yeni sinemalara. Validation testing.
+
+327
+01:22:57,300 --> 01:23:07,260
+Bunu kullanıcı yapıyor demiştik. Neye göre yapıyor? Gereksinimler belgisinde yazdığımız işlevsellikten yola çıkarak, buna dayanarak yapıyor.
+
+328
+01:23:07,780 --> 01:23:12,479
+En temel kaynak kullanım senaryosu metinleri oluyor arkadaşlar.
+
+329
+01:23:13,140 --> 01:23:21,920
+Madem bu gereksinimler belgisinde bütün paydaşlar anlaştı, o zaman neyin nasıl yapılacağı ayrıntılı adımlarıyla belli.
+
+330
+01:23:21,920 --> 01:23:25,300
+Bu işleri de alıyor eline kullanım senaryosu.
+
+331
+01:23:25,300 --> 01:23:32,300
+Kaptan yapmasın çünkü yanlış hatırlayabilir, dadığı yerler olabilir, hayır olabilir.
+
+332
+01:23:33,811 --> 01:24:01,811
+Bu nedenle, tamam şimdi bu işin şöyle yapılması konusunda sözleşmişiz. Açıyor, arıyor elini bir anda senareti. Ön koşulları sağlandı mı? Tamam sağlandı. Ondan sonra ana senaryonun birinci adımından başlıyor işte. Tık tık tık yürütüyor. Sonra değişik şekillerde değişik alternatif senaryolar da deniyor. Her bir alternatif senaryo önceden planlandığı anda ve şekilde devreye giriyor mu ve yürünmesi de istediği gibi oluyor falan gibi.
+
+333
+01:24:01,811 --> 01:24:24,851
+Bu şekilde kontrol edecek arkadaşlar. Temayip kirayış o. Peki, bu geçerlenin sınav alanına duyduğunuz ihtiyacın arkasındaki güdülemeden bahsederim. Teknik ekip son kullanıcının yapabileceği, ortaya koyabileceği şartlı davranışları, beklenmedik davranışlarını öngöremez arkadaşlar.
+
+334
+01:24:27,507 --> 01:24:43,907
+Bunu daha çok aslında IT destek ekiplerinde çalışan insanlar daha çok karşılaşıyorlar. Mesela işte bir kullanıcı arıyor teknik desteği, bilgisayarımın fincan tutacağı çalışmıyor diyor.
+
+335
+01:24:43,907 --> 01:24:55,507
+Allah Allah, şimdi bir müsaade fincan tutacağım oluyor. Şöyle ki masaüstü bilgisayar ve içerisinde okuyucu var, işte DVD okuyucu var.
+
+336
+01:24:55,507 --> 01:25:03,148
+Söyleyelim ki, onu açtığınız zaman şöyle bir açıklık oluyor ya, oraya tarifincin koyuyormuş adam mesela, sen gibisinden.
+
+337
+01:25:04,268 --> 01:25:12,247
+Veyahut da, şimdi genç arkadaşlar bilmez belki ama, hangi telekom operatörüydü onu da unuttum.
+
+338
+01:25:12,247 --> 01:25:17,967
+Neyse zaten adını söyledi bir reklam yapmış olmayalım. Bir reklamları vardı, nasıl oldu? Şöyle.
+
+339
+01:25:18,931 --> 01:25:31,851
+Bir üniversite çağında bir oğlan var. Bir de onun annesi var. Şimdi oğlan eve çıkmış. Başka da şehirdedir herhalde üniversiteye geçtiğinde.
+
+340
+01:25:34,515 --> 01:25:42,456
+Ama annesinin bilgisayarla ilgili bir problemi çıkıyor. Anan tabii telekomlektörünü arıyor oğlunu.
+
+341
+01:25:43,296 --> 01:25:46,915
+Nasıl edeceğiz? Görüntüleri de konuşuyorlar. Bir de var.
+
+342
+01:25:48,915 --> 01:25:52,515
+Çocuk diyor, anne şimdi bilgisayarın masa üstünden...
+
+343
+01:25:53,779 --> 01:26:02,519
+İlk başta öyle, anne bir pencere aç diyor, gidiyor kalıncağız, apartmanın penceresini açıyor mesela gibi komik durumlara düşüyor.
+
+344
+01:26:02,519 --> 01:26:13,239
+Ama sonuncaki reklamda da tam tersi, oğlan bir yemek yapacak, tutuyor, o bir yemek olarak da patlıcan yemeği yapacak.
+
+345
+01:26:13,579 --> 01:26:19,959
+Şimdi annesi diyor ki, önce patlıcanı öldüreceksin diyor, öldürmek gibi bir parvi var yaparken.
+
+346
+01:26:21,059 --> 01:26:21,779
+Nasıl yapacaksın?
+
+347
+01:26:21,779 --> 01:26:48,279
+Ne demek anne, biraz edeceksin işte diyor. Çocuk da alıyor tavayı yerine patlıca buluyor. O da öyle komik durumlara düşüyor. Yani her şey slylar gibi durumlar söz konusu. Neyse, fazla geyiğe sarmayalım. Yani çok enteresan şeyler yapabilir kullanıcılar. Bu noktada o yüzden geçenli sınavlarının yapılması büyük önemlidir şu noktada.
+
+348
+01:26:49,779 --> 01:27:02,180
+Yaklaşırsak bunun gereğiyle bir olguyu, bir şeyi, bir bileşeni, bir parçayı ne kadar çok bir şey incelerdi denedilerse ondaki bir sonu o kadar çabuk ortaya çıkartırız.
+
+349
+01:27:02,676 --> 01:27:18,656
+Eric Raymond'ın bir sürü var kişileri burada. Given enough eyeballs, all bugs are shallow. Onu inceleyen yeterince, göz atan yeterince kişi varsa hiçbir hata derin değildir. Hepsi teşfedilir.
+
+350
+01:27:18,656 --> 01:27:27,296
+Bu konuda başka başka şeyler de var ama yine de ortak payda bu.
+
+351
+01:27:28,884 --> 01:27:39,304
+Ne kadar çok düşüyeceğizse o kadar iyidir diyoruz. Alfa ve beta sınavısı olmak üzere iki alt yıla gençlerle sınavı.
+
+352
+01:27:39,804 --> 01:27:52,044
+Alfa sınavısını evet müşteri yapıyor ama yazılım ekibiyle yakın temasta yapıyor bu işi. Yakın temasta yapması lazım. Bu nedenle yazılım firmasının içinde yapıyor bu işi.
+
+353
+01:27:52,851 --> 01:28:16,111
+Evet, yazılım geçtiğim ekibi de bu testleri yakından izliyor, denetliyor. Bir hata ile karşılaşılırsa hemen anında haberdar olup hemen anında ya da mümkün olduğu kadar en kısa sürede bu hatanın düzeltilmesi yapılıyor ve düzeltilmiş haliyle sistem sınanmaya devam ediliyor.
+
+354
+01:28:16,111 --> 01:28:20,771
+Bu anda müşteri beklemiyor tabii ki diğer testleri üretiyor oradaki hatanın düzeltilmesi kadar.
+
+355
+01:28:20,851 --> 01:28:35,591
+Ve tabii bunu yaparken müşterinin ortamında değil de yazılım evinin ortamında olduğumuz için bu yazılımın doğal kullanım şartlarında en yakın koşullarda yürütülmesi gerekiyor, isteniyor.
+
+356
+01:28:35,935 --> 01:28:54,555
+Bir tane örnek vereyim. Mesela bir kütüphane bilgi sistemi yazıyoruz. Kitaplar ödünç alınıyor, ödünç veriliyor, değişik kullanıcı tipleri var, bunların değişik sayıda kitap alabilmesi, değişik sürelerde kitap alabilmesi söz konusu gibi bir bilgi sistemi düşünelim.
+
+357
+01:28:59,967 --> 01:29:19,467
+Kütüphane ödünçlerinden bankosluk gibi ayrılıyor. Müşteri onun başında oturuyor. Bir müşteri daha var belki ya da teknik kitabın bazıları müşteri yönelene geçip, daha doğrusu kütüphane okuyucu sorunu yönelene geçip, kitap ödünç alıyor, kitabı iade ediyorum falan diyor.
+
+358
+01:29:19,467 --> 01:29:27,967
+Bunun arkasında bir tane raf var, orada değişik kitaplar var. İnsanlar okuyucuza kitapları getirilmişler koymuşlar buraya. Her birinin üstüne sırt etiketler var.
+
+359
+01:29:27,967 --> 01:29:41,287
+Biri yazılmış, yayın numaralı var kitaplar. Masadaki bilgisayarın bir tane bar kod okuyucusu var veya RFID okuyucusu var kitapların bar kodları veya RFID etiketleri okutu var kitapları düşünüyorum.
+
+360
+01:29:41,287 --> 01:29:47,647
+Yani sadece küçük bir kütüphaneymiş gibi bir ortam bulunuyor yazılımlarının bir köküsünde diyelim ki mesela.
+
+361
+01:29:49,716 --> 01:29:59,716
+Ya da olay tamamen sanal bir işlem ise, sanal bir bilgisayar sistem ise, o zaman sınama amaçlı bir, yapılandırılmış bir bilgisayar ve yapılandırılmış bir bilgisayar.
+
+362
+01:30:00,000 --> 01:30:19,539
+Sınama amaçlı birkaç istekçi, bilgisayar veya belki tararlı makine olarak bir sunucu çiftliğinde de barınıyor koşu olabilir. Nihayetle bu sunama ortamı kuruluyor ve gerçek koşullara mümkün olduğunca yakın şartlarda bu sunamanın yapılması amaçlanıyor.
+
+363
+01:30:20,148 --> 01:30:28,428
+Beta sınamasında ise artık sınama müşterinin kendi ortamında ve gerçek kullanım ortamında yapılıyor.
+
+364
+01:30:28,788 --> 01:30:32,828
+Buradaki sınamalara yazılım geliştirme ekibi müdahil olmuyor.
+
+365
+01:30:33,928 --> 01:30:38,948
+Ve bulunan hatalar ise resmi bir biçimde.
+
+366
+01:30:39,408 --> 01:30:41,868
+Düzenli alırlıklar da resmi bir biçimde.
+
+367
+01:30:41,868 --> 01:30:45,068
+Yani diyelim ki şöyle karar açtık.
+
+368
+01:30:47,604 --> 01:31:05,604
+Cihazımda bulunan hatalar, beta sınırma sınırında bulunan hatalar, her haftanın karşamba günü şu FR bilmem kaç formu kullanılaraktan, o formunda alt alanları vardır, problemin...
+
+369
+01:31:06,676 --> 01:31:34,676
+Birkaç kelimeyle tarifi, ikinci bölümde problemin ayrıntılı kelimelerle tarifi, üçüncü bölümde probleme yol açan işlem adımlarının sırayla neler olduğu, dördüncüsü ortaya çıkan hata mesajının tam içeriği veyahut da ekran çıktısı, hata veya ekranın print screen'e çıktısını yapıştırılıyor.
+
+370
+01:31:34,676 --> 01:31:38,676
+Diğer sıradaki alan...
+
+371
+01:31:39,216 --> 01:32:03,596
+Hangi kullanıcı, hangi bilgisayar, hangi işletim sistemine sahip, hangi sürümüne sahip, ne tür bir bilgisayar kullandı. Diğer farklı alanlar da olabilir vs. Bu fon dolduracak. Çünkü her alanda mecburi, bazı alanlar mecburi ya da bazıların seçimli mecburi olan bütün alanların doldurarak yeter, gerekli bilginin sağlandığından emin olması için yapılıyor.
+
+372
+01:32:07,216 --> 01:32:28,176
+Yine gönderiliyor. Veya işte yazılım evinin bir görev planlama dağıtım yazılımı varsa, Jira gibi, müşteri bu hatayı bildirmek için orada yeni bir cask açıyor, bir görev açıyor. İşte o görev açma, bu durumda o görev açma ekranının alanları belli, ondan hepsini dolduruyor ve gönderiyor.
+
+373
+01:32:35,859 --> 01:32:44,699
+Cuma akşamına kadar çözülür ve müşteri ortamına düzeltilmiş kod yüklenir.
+
+374
+01:32:45,239 --> 01:32:57,199
+Düzeltilemiyorsa da ne zaman düzeltilebileceğine yönelik planlama yapılır ve müşteriye bildirilir birisinden net kurallar çerçevesinde.
+
+375
+01:32:58,547 --> 01:33:08,608
+gerçekleşen bir iletişim söz konusudur. Buna formal communication deniliyor. Resmi iletişim. Temel yapısı bu şekilde.
+
+376
+01:33:12,188 --> 01:33:23,307
+Bu beta kelimesi bir aralar Google'ın bütün ürünleri beta idi. Google aralama notları bile beta idi. Gmail beta idi falan.
+
+377
+01:33:26,707 --> 01:33:51,707
+Yani bu data sınıması şey olarak görünmemeli arkadaşlar. Yazılım evinin az sınama yapıp işin çoğunu müşkiliye gitmek türünden görünmemesi lazım. Bu durum ortaya çıkacak hata sırasını arttırarak prestijinizi, imajınızı vereyecek bir dallamış olacaktır. O yüzden her şeyin yeri ayrı, her şeyin yeri yerinde demek istiyorum.
+
+378
+01:33:54,260 --> 01:34:04,500
+Bunun bu. Saat kaç yaptık? On otuz sekiz. İslam sınamaları diyebilirim. Belki. Belki.
+
+379
+01:34:07,028 --> 01:34:12,248
+Şuraya kadar bir gelirim isterseniz. J-Mint Örneğe kadar gelirim. Onları bir hızlı bir şekilde konuşalım.
+
+380
+01:34:12,248 --> 01:34:22,088
+Evet, şimdi şu Excel tablosuna geri döndüğümde artık geçerleme sınavlarında, alfa sınavlarında gayri resmi haberleşme vardır.
+
+381
+01:34:22,248 --> 01:34:33,688
+Yani yazılım ekibi, teknik ekipten en azından bir kişi sürekli Müşen'in Yurt'u testi izliyor ve hata çıkar çıkmaz hemen bildiriliyor.
+
+382
+01:34:35,028 --> 01:34:59,528
+Belirli bir zaman yok, belirli bir format yok. Hemen anında sıcağı sıcağı. O iş yapılıyor. Bu arada resmi haberleşme geliyor. Ama resmi haberleşmenin de aynı tarafı az önce konuşmuştuk. Her hata anında bildiriliyor alfa sinemasında. Ama beta sinemasında belli bir zamanlama çerçevesinde ve toplu olarak bildiriliyor. Aradaki farklar bunlar. Bu aklınızda olsun mutlaka. Demek istiyorum. Bu tamam.
+
+383
+01:35:01,555 --> 01:35:06,015
+Notlarda söylediklerimin bir tablo şeklinde özetiydi o.
+
+384
+01:35:12,404 --> 01:35:16,944
+Tamam, alfabeta dedik. Şimdi sistem sınavalarına geldik.
+
+385
+01:35:21,324 --> 01:35:38,463
+Timleştirme, kendi yazılımın sınıfları paketleri düzeyindeydi. Sistem sınavasında ise artık ortaya çıkacak olan yazılım ürünün çalışacağı tüm ortam düşünülerekten.
+
+386
+01:35:39,283 --> 01:35:41,283
+Yatılan sunamalar oluyorlar.
+
+387
+01:35:42,195 --> 01:36:01,175
+Ve bütünü incelemeyi uygun olduğu için daha ayrı birçok oluyorlar. Bunda dört tane alt tümden bahsetmek istiyorum. Birincisi kurtarma sınaması, recovery testing. Sözde söylemiş oldum bir önceki ders saatinde ama aklıdığım yerde olabiliyoruz. İçinden devam edelim.
+
+388
+01:36:10,195 --> 01:36:18,595
+Bu konuda çıktığında sistemin kendini toparlayarak doğru çalışmaya devam edip edemediği düşünülmektedir. Mesela finansal işlemlerde bu önemlidir.
+
+389
+01:36:18,595 --> 01:36:34,595
+Finansal işlemlerde yapılacak işlemler transaction, hareket şeklinde adlandırır. Örneğin bir hesaptan diğer hesaba aktarılması için, hele ki bu hesaplar sağlıklı bankalardaysa,
+
+390
+01:36:38,195 --> 01:36:58,635
+Bu emir, karşı bankanın bilgi sistemine doğru bir şekilde aktarılabilmelidir. Ondan sonra bu emir alındığında da karşı taraftaki hesabın bakiyesi o kadar arttırılabilmelidir.
+
+391
+01:36:59,028 --> 01:37:17,368
+Arada birkaç tane adım var ve bu adımlardan herhangi bir sırasında bir hata ortaya çıkarsa, sistemin durumunu bütün bu işlemler başlamadan önceki tutarlı haline geri çevrilebilmesi gerekmektedir.
+
+392
+01:37:17,779 --> 01:37:25,599
+Yoksa mesela kaynak hesaptan para düşmemiş ama azalmamış ama hedef hesapta para artmış olabilir.
+
+393
+01:37:25,960 --> 01:37:32,920
+Veya tersi kaynak hedeflerde miktar azalmıştır ama hedef hesapta bakiye artmamıştır.
+
+394
+01:37:33,299 --> 01:37:36,599
+Her hakarda zarar tutulmuş. Böyle bir şeyler olmamak.
+
+395
+01:37:39,299 --> 01:37:41,979
+İşte buna dikkat edemelidir.
+
+396
+01:37:45,779 --> 01:37:52,039
+Problem ortaya çıkmışsa başa alınabilmesi, rollback diye geçer. Ne kadar tamamlanıyor?
+
+397
+01:37:52,920 --> 01:37:58,340
+Meantime to repair demiştim, burada onun bir örneği daha gelmiş oldu.
+
+398
+01:37:59,119 --> 01:38:02,319
+İkinci sinema türü güvenlik sineması.
+
+399
+01:38:04,000 --> 01:38:09,920
+Bence harfinde dövüş yapılacağı zaman tek kural yok derler ya, bu öyle bir durum.
+
+400
+01:38:12,884 --> 01:38:35,663
+O kadar aklı hayata gelmeyecek güvenlik olayları var ki, bu konuda benim uzmanlık alanım da diye. O yüzden çok çok fazla örnek veremeyeceğim. Ama şöyle söyleyeyim mesela. Diyelim ki bir askeri haberleşme kralında sinyaller şifrelenerek gönderiliyor. Peki.
+
+401
+01:38:36,467 --> 01:38:51,547
+Şimdi siz bir tane ters izi aldınız diyelim ki, düşmanın ters izini bir şekilde ele geçirdiniz. Bunun çalışma biçimini inceleyerekten şifreyi kırmak istiyorsunuz diyelim ki.
+
+402
+01:38:52,787 --> 01:39:09,607
+Ama tüm devrelerde öyle yapılmış ki, açmaya, kurmalaya çalıştığınızda, temple boost diye geçer. Küçük bir tane asit kapsülü otomatik olarak kırılıp, tüm devreyi kullanımlı hasarına getirmekteceğiz.
+
+403
+01:39:09,607 --> 01:39:19,371
+O zaman nasıl inceleyeceksiniz? Alternatif kanallardan yola çıkarak incelemek lazım. Mesela işte bir...
+
+404
+01:39:19,667 --> 01:39:41,228
+Önce sıra bir paket gönderiyorsunuz, daha sonra orta bir paket gönderiyorsunuz, daha kalırlık bir paket gönderiyorsunuz. Bu veri iletiminin hangi aşamalarında acaba bu tüm devrenin nereleri daha çok ısınıyor diye kız ötesi ışın gönderip sıcaklı ölçmek dahi.
+
+405
+01:39:41,695 --> 01:39:59,875
+O tüm devrenin çalışma ayrıntıları hakkında ipuçları verebilmektedir sizlere. Öyle söyleyeyim. Yani bilim, şahıs filmlerinde falan görüyorsunuz. Öyle çabalar da oluyor. Şimdi diyelim ki birisi benim ekranımda ne var? Şu an görmek istiyor diyelim ki.
+
+406
+01:40:00,000 --> 01:40:17,399
+Ama o ilgili cihazı şu an ekranını tam göremiyor diyelim ki, direkt penşeğinden benim ekranımı göremiyor. Ama diyelim ki ben skece veriyorum, çok da fazla ortam aydınlatması yok. Benim ekranımın ışık yansıması arkamdaki duvara düşüyor.
+
+407
+01:40:17,971 --> 01:40:33,011
+Pencerede o duvarı görüyor. O ışık görüntüsünden ana hatlarıyla benim ekranımı çıkartabilen yapay zeka tekniklerini de kullanarak yazılımlar varmış.
+
+408
+01:40:36,243 --> 01:40:47,203
+Yani biraz bu out of the box thinking diye düşünülen, diye söyleyemelen ayrıntılı ve çok yönünü düşünebilmeyi gerekmektedir güvenlik sınamaları.
+
+409
+01:40:47,923 --> 01:40:56,363
+Tabii ki hırsıda kilitlayamaz derler ya, evet her güvenlik önlemin er ya da geç, önünde ya da sonunda aşılmaktadır, aşılır.
+
+410
+01:41:03,792 --> 01:41:27,772
+Ortaya bir veri sızıntısı gerçekleşse bile bu işin gerçekleşmesinin artık çok geniş olması yeterli olacak. Mesela işte şifreli emir gönderiyoruz karargahtan bütün birliklere. Sabah dörtte harekata başlayın emri geliyor. Bunu saat kaçta yolluyoruz? Akşam.
+
+411
+01:41:28,467 --> 01:41:43,148
+12'de yolluyoruz diyelim ki 4 saat süre geçiyor. Düşman bizim bu haberleşmemizi yakalasa bile bunun şifresini kırmak için 6 saatte ihtiyacı varsa o zaman zaten çok daha sağdır baş baş olacak gibi.
+
+412
+01:41:56,595 --> 01:42:16,576
+Bu session'ın kırılmasının 10 dakikadan fazla sürmesi yetecektir. 20 dakikada kırıldı. Tamam ama yapılacak finansal hareket, transaction neyse artık o çoktan tamamlandı bile. Geçmiş olsun artık dışarıdan da ayrıca bunun ayrı tırını bozanayacak.
+
+413
+01:42:19,091 --> 01:42:24,271
+Üçüncü sistem sınaması türü zorlama sınaması, stress testing.
+
+414
+01:42:25,611 --> 01:42:33,511
+Şimdi tabii ki elbette sistemin çalışma sınırları belirlidir. Hangi şartlar altında ne düzeyde çalışacağı bellidir.
+
+415
+01:42:35,220 --> 01:42:52,579
+Olur da bir şekilde bu sınırların açılması durumunda, yani normalin dışında yüklemeye yapılması durumunda, acaba sistem neye kadar dayanabiliyor? Bunun sınanmasına da zorlama sınanması denilmektedir.
+
+416
+01:42:54,547 --> 01:43:15,387
+Son olarak başarım sunulması, performance testing. Bu özellikle gerçek zamanlı uygulamalarda özel bölgüme sahiptir. Tamam program kendisinden bekleneni doğru yapabilir ama bu iş geç olabilir, zamanında olmayabilir. Eğer bu önemliyse o zaman performance testing de yapmak durumundayız.
+
+417
+01:43:18,087 --> 01:43:19,887
+Örnek, örnek.
+
+418
+01:43:22,068 --> 01:43:41,068
+Ne bileyim, aynı örneği tekrarlayacağım ama kusura bakmayın. Diyelim ki bir hedefi arayan Hüze'den bahsediyoruz. Hedef manevra yaptı, ani manevra. O manevra'yı fark etmesi eğer yavaşsa Hüze'nin o zaman hedefi ıslatı gitti.
+
+419
+01:43:42,676 --> 01:44:05,216
+Belki %100 hassasiyetle tam yeni kaçınan yönü keşfetmesi gerekmeyebilir ama en azından bunu %80 hassasiyetle yapması gerekmektedir. Önemli olan anlık tepki, hızlı tepki verebilmesi de bu anlamda gibi olgulardan bahsediyoruz.
+
+420
+01:44:05,619 --> 01:44:14,840
+O zaman limitlerimizi ona göre belirleyip bu limitlerin dahilinde miyiz diye sınırma yapmakla başarılı sınırması oluyor.
+
+421
+01:44:15,180 --> 01:44:18,720
+İşte bu daha çok runtime terk olamazlarla bahsediyoruz daha çok.
+
+422
+01:44:20,559 --> 01:44:25,399
+Peki geldik hata ayaklamaya, hata düzenliğe, debugging işlemlerine.
+
+423
+01:44:26,515 --> 01:44:34,975
+Sınama işi evet zor bir iş ama sonunda ortaya çıkan hatalarımızın düzeltilmesi gerekmektedir.
+
+424
+01:44:35,796 --> 01:44:52,256
+Sınama daha zor ve özellikle farklı, yani sınama daha zor ve sınama türünden bağımsız olarak aslında daha fazla entelektüel, zihinsel yetenek ve deneyim ve ekranlıkları aslında bunlar.
+
+425
+01:44:52,756 --> 01:44:56,136
+Bazı sınama türler için daha da fazla olgu geçerlidir.
+
+426
+01:44:56,136 --> 01:45:03,796
+Fakat maalesef bugün çalışmalar, sınama çalışmaları ve hata etmemek çalışmaları kimi insanlar tarafından...
+
+427
+01:45:03,796 --> 01:45:20,616
+Aslında Angarya gibi görünebilmiyor, ikinci sınıf gibi düşünebiliyor, ayak işidir, sıkıcı işler gibi düşünülebilmiyor. Bu önemli bir yanılgıdır arkadaşlar. Hani sınavın önemi hakkında zaten uzun bir konuştuk bugün, ondan sonra işe mi?
+
+428
+01:45:22,804 --> 01:45:34,804
+Ve sınama işlemleri, her iki güvenlik açıklamalarının belirlenmesi işlemleri için alışveriş ve düşünce tarzının dışına çıkabilmek gerekiyor ki bu başlı başına bir yetenekte var arkadaşlar.
+
+429
+01:45:34,804 --> 01:45:40,804
+Ve ne kadar meşgul programcı varsa hepsinin sözü ve beyanı...
+
+430
+01:45:41,043 --> 01:46:06,364
+Ta ayıklama işlemlerinin kodlama yapma hakkından daha çok zor olduğu ve daha çok yetenek istedik. Bu bağlamda lütfen bu işlerin Angalya ayak işi değersiz ikinci plan gibi görünmesi hatasına düşmeyin. Böyle görülen yerlerde de lütfen yüksek sesle bu durumun böyle olmaması gerektiğini söyleyin.
+
+431
+01:46:09,043 --> 01:46:23,043
+Kademi'ye kadar bu durumu ıktanım demek istiyorum. O yüzden yani stajyerlere diyelim ki veriliyor ısınlama işlemleri ya da hata ayıklama işlemleri.
+
+432
+01:46:23,043 --> 01:46:28,043
+Şimdi bir kere bir stajyer eğer...
+
+433
+01:46:28,532 --> 01:46:56,532
+Yani o projenin tamamlanmasından sonra devreye giriyordur herhalde. Öncelikle bütün o projeye hakim olacak ki ona göre sınayabilsin. Aynı kadar sen şu modülü sına deseler bile o parçaya hakim olması gerekecektir. Belki anlayabileceğinden, bilgi bir düzeninden daha anlaşık algoritmalar, veri yapıları, tasarım tarifleri vesaire kullanarak hazırlanmışlar bunlar ve o sadece onu bilmiyordur o zaman hakkı bir sınavı.
+
+434
+01:46:56,532 --> 01:47:08,392
+Tabii ki en azından tahribat sunuması, small testing yapar. Bir kişiye kadar daha çok farklı bir şey bakıyorsa o kadar iyidir dedik.
+
+435
+01:47:08,392 --> 01:47:16,392
+İşte burada şöyle o zaman toparlamak istiyorum. Bu işler sadece stajyerlere ya da yeni katılımcılara yüklenmemelidir.
+
+436
+01:47:17,652 --> 01:47:23,512
+farklı deneyim ve bilgi düzeyindeki insanlara dağıtılmalıdır.
+
+437
+01:47:23,731 --> 01:47:27,152
+Sılamak işleri, uçanlara özel göstermek gerekmektedir.
+
+438
+01:47:29,043 --> 01:47:43,724
+İşte öte yandan bazen bir noktaya çok tıklıyoruz. Normalde görebileceğimiz şeyi göremeyebiliyoruz. O zaman bir kalkın bilgisayarın başından, bir nefes alın, bir dolaşın, bir pencereden bakın, bir çay alın, kahve alın kendinize falan.
+
+439
+01:47:43,724 --> 01:47:55,923
+Ve gelinip aynı problemi baktığınızdan aynı şarkı diye o problemi, aa bundan kaynaklanıyormuş diye bulabildiğinizi göreceksiniz arkadaşlar. Ve son tavsiyem ise.
+
+440
+01:47:57,043 --> 01:48:02,783
+Geliştirme ortamımızın hata ayıklama yeteneklerinden sonuna kadar yararlanmamızı öneriyorum.
+
+441
+01:48:02,783 --> 01:48:11,304
+Şimdi Technical Review'da deyip öyle bir şeye geçmek istiyorum. Bilim sınavlarına geçmek istiyorum.
+
+442
+01:48:12,180 --> 01:48:22,019
+Şimdi, gözden geçirme aslında resmi de olabilir, resmi olmayan yani gayri resmi de olabilir. Daha çok resmi olanlara bahsedeceğiz.
+
+443
+01:48:22,680 --> 01:48:37,100
+Review'larda amacımız, şu ana kadar konuştuğumuz daha kodları sisteme yönelik, yani elle tutulur ürünün sınanmasından ziyade bu etkinliklerden önce,
+
+444
+01:48:38,003 --> 01:48:46,623
+O sınama eylemlerinden daha az masraf ve çabayla yazılım hatalarını erkenden bulunmasın amaçlı bir yaklaşımdır.
+
+445
+01:48:46,623 --> 01:48:58,863
+Software'a veriyor, yazılım gözden geçirme. Tabii ki yazılım gözden geçirme ile şu an kadar konuştuğumuz diğer sınama yöntemleri kullanarak bulabileceğimiz bütün hataları bulamayız.
+
+446
+01:48:59,763 --> 01:49:05,623
+Fakat yine de gözden geçirme daha verimli oluyor. Daha az çaba ile...
+
+447
+01:49:07,475 --> 01:49:14,975
+Bazı hataları ve kimi zaman da showstopper türünden olabilecek hataları bulmamızı sağlıyor.
+
+448
+01:49:16,496 --> 01:49:22,015
+Hele ki bu gereksinimler üzerinden baktığımızda ilk hafta konuşmuştuk.
+
+449
+01:49:22,095 --> 01:49:27,435
+Eksinimlerin eksik belirlenmesi projenin başarısızlığına kırmızı halı seriyor.
+
+450
+01:49:28,627 --> 01:49:32,387
+Bu nedenle gözden geçirme eylemleri gerekir.
+
+451
+01:49:34,127 --> 01:49:41,488
+Resmi dediğiniz belirli bir kullanılar çerçevesinde ve daha çok yazılı olarak yapılandır.
+
+452
+01:49:41,827 --> 01:49:44,507
+Veya yazılı etkinlikleri mutlaka olacaktır.
+
+453
+01:49:44,507 --> 01:49:51,507
+Gayri resmi ise sözlü, on demand gerektiği zaman da böyle...
+
+454
+01:49:51,572 --> 01:50:04,431
+Samimi bir ortamda diyelim ki sözlü iletişimdir. Aradaki farkları arttırıyoruz. Yapılan saat çalışmaları resmi gözden geçirmenin daha verimli ve daha etkili olduğunu gösteriyor.
+
+455
+01:50:05,431 --> 01:50:16,871
+O yüzden formal technical review diyeceğiz. Aslında mesela extreme programming yapıyorsak orada peer programming yapılıyor demiş ki eski program var. O da bir gözden geçirme aslında.
+
+456
+01:50:17,332 --> 01:50:24,332
+Formal'da diyemeyiz, daha çok informal oluyor ama o da bir review.
+
+457
+01:50:24,332 --> 01:50:28,748
+Şimdi Formal Technical Software Review ona odaklanıyor.
+
+458
+01:50:30,163 --> 01:50:39,003
+Bu toplantılar şeklinde yapılır. Ve toplantının ve aslında bütün süreçin bir yöneticisi oluyor. Bunun için standartlar da var arkadaşlar.
+
+459
+01:50:39,003 --> 01:50:52,503
+Ay tırıcı 1028 standartı var mesela. Ve şimdi o standartın gerektirdiği şu tür, formlar, şu ayrıntılar demeden ana hatlarıyla göstereceğiz. Resmi gözden geçirmeyi.
+
+460
+01:50:53,887 --> 01:51:04,667
+Bu standartı göre ana adımlar şu şekilde geliyor. Öncelikle değerlendirme başlangıcı ilk adımımız. Bu değerlendirme yöneticisinin kullandığı standart bir checklist var.
+
+461
+01:51:04,667 --> 01:51:15,227
+Ayrıca standartta eleşebilirsiniz. Biz burada ayrıntılı anlatmayacağız. O checklist üzerinden benimle toplantı için gerekli koşulları sağlıyor.
+
+462
+01:51:17,876 --> 01:51:33,655
+Toplantının yürütülen şey, gün ve saatte ilgili salon ayarlanmış mı? O salon şu an, o salondaki bütün bileşenler doğru düzgün çalışıyor mu? Son bakımları yapılmış mı? Eğer bazı cihazlar söz konusunda kalibrasyonlar yapılmış mı?
+
+463
+01:51:38,804 --> 01:51:56,283
+Tamam olmayan varsa da tarzlanmasını sağlayarak da gerekli koşulları sağlamış oluyor. Katarılınca en az kadar gün öncesinden haber verildi mi? Bu resmi e-posta adresi, sütunlar, kumsa e-posta adresi üzerinden bildirilmeye, otobor vs. vs.
+
+464
+01:51:56,884 --> 01:52:16,783
+İkinci aşama yönetimin hazırlanması. Bu değerlendirme yöneticisi ve ayarlarla yardımcıları birlikte bu gözlem geçirme için gerekli kaynakları hazırlıyor ve toplantının standartlara uygun olarak yönetirmesini sağlayacak gerekli işlemleri yapıyor.
+
+465
+01:52:21,300 --> 01:52:38,819
+Üçüncü aşama, bu gözden geçirme prosedürlerine genel bakış aşamasıdır. Bu da değerlendirme yetişmesi. Değerlendirmeye katılacak tüm kişilerin bu gözden geçirme çalışmasının amaçlarının ve prosedürlerinin bu süreci konularak anlatımda emin olur.
+
+466
+01:52:39,220 --> 01:52:50,159
+Ne yapılabilir burada? Eğer böyle bir çalışmaya ilk kez katılacak birisi varsa o ilgili standarta yönlendiririz. Bu okulması ve anlaşılması sağlanır.
+
+467
+01:52:50,460 --> 01:53:02,380
+O konuyla ilgili belki bir online test hazırlamışlardır. O testten bakalım yetişmeşini sünder olması gerekiyor, final gibi şeyler yapılabilir bu aşamada bu alanda.
+
+468
+01:53:07,220 --> 01:53:13,220
+İçiler bireysel olarak inceleme toplantısından hazırlanıyor. Bu aşamada...
+
+469
+01:53:14,228 --> 01:53:21,087
+Yönetim, bu katılımcılara gözden geçirecek malzemeyi vermiş oluyor, iletmiş oluyor.
+
+470
+01:53:21,087 --> 01:53:36,167
+Ya da en azından mesela ortak bir havuzda yer alıyorsa ilgili artifaklar falan, örneğin yazılım, gözden geçirme, yazılım gereksinim belgesi diyelim ki değerlendirilecek, SLS'e belgesi işte şu adresten eleştirebilir diyor.
+
+471
+01:53:36,487 --> 01:53:40,768
+Veyahut da bir kopyesini İMEI'de gönderiyor artık, duruma göre ve işin gizliyle göre falan.
+
+472
+01:53:42,707 --> 01:53:58,367
+O da bu şey, hangi aşamada? İlk üç aşamadan birinde yapılabilir. Şu an kartanmalık hangisi mi ait hatırlamıyorum o işe. Ama nihayetinde bilirsel hazırlık aşamasında ya da belki bunun ilk bir kısmında diyeleri düşünülebilirsiniz.
+
+473
+01:53:58,367 --> 01:54:07,367
+Bütün değerlendiriciler bu incelenecek malzemeyi ellerine geçirmiş oluyorlar ve inceliyorlar. Bunu incelerken de kendilerine göre...
+
+474
+01:54:07,891 --> 01:54:16,591
+Anomali olarak, hata olarak değerlendirdikleri noktaları ayrıntılı olarak not ediyorlar kendileri.
+
+475
+01:54:17,395 --> 01:54:45,315
+Ardından grup incelemesi aşaması başlıyor. Bu her bir katılımcının veysel hazırlıklarının sonuçlarını daha önceden belirlenmiş olan yer ve zamandaki toplantıda bir araya getiriyor herkes. Belki herkes sınayda bir anomali söylüyor veya önce bir kişi de bütün anomalilerini söylüyor, bulgularını söylüyor, sonra diğerine geçiliyor. O sınayda nasıl bulacağına gözden yazılım, değerlendirme yöneticisi.
+
+476
+01:54:45,395 --> 01:55:05,036
+Bu olası hatalar anlatılıyor, paylaşılıyor diğer bütün katılımcılarda ve bu noktada iki durumdan birine gidiliyor her olgu için. Birincisi bu olgu gerçekten bir hatadır.
+
+477
+01:55:05,716 --> 01:55:28,935
+Şu nedenlerle diye, o olguyu bulan kişi diğer herkese ikna etmesi gerekmektedir bu konuda. Belki başka bir değerlendirici de aynı olguyu söylemiş olabilir. O zaten iknadır. O da diğer katılımcı da o ilk o anda sözü olan katılımcıya destekleyici noktada ek bulguları varsa, ek delileri varsa onları da olabilir.
+
+478
+01:55:28,935 --> 01:55:33,716
+Ve bunun gerçekten bir hata, problem olduğunu.
+
+479
+01:55:33,716 --> 01:55:47,115
+Bu şekilde herkes ulaşır. Veyahut da onun aslında bir problem olmadığı da ortaya çıkabilirsin. O bireysel değerlendirici bu değerlendirimi yaparken, o olgu ile ilgili, o olgu ile ilgili, o olgu ile ilgili, o olgu ile ilgili kendi hata yapabilir.
+
+480
+01:55:47,115 --> 01:56:01,115
+O zaman da onun aslında neden bir hata olmadığını, o olgunun neden bir hata arz etmediğini ortaya çıkarmadığı konusunda, usta diğer değerlendiriciler o değerlendirici ihtiyacımız var.
+
+481
+01:56:01,716 --> 01:56:12,115
+Ama öyle ya da böyle ortak karara varılması gerekmektedir. Ortak karara varılacak kadar da o konuşulmaya devam edelim.
+
+482
+01:56:12,895 --> 01:56:19,315
+Neyse, aşıları bu şekilde. Her şey üstünde uzlaşıya varıldıktan sonra düzenleme aşamasına sıra gelir.
+
+483
+01:56:19,728 --> 01:56:27,047
+Bu incelenen çalışmanın yazarları da bu işi yapabilir veya belki başka bir ekip de atılabilir bu amaçla.
+
+484
+01:56:27,367 --> 01:56:42,367
+Bu grup öncelerinde ortaya çıkan ve netleştirilen bütün noktaları raporluyor ve ardından düzenleme, düzeltme yani hatanın düzeltilmesi anlamında.
+
+485
+01:56:42,367 --> 01:56:47,728
+Şimdi buna hata ayıklama diyemiyoruz çünkü o bulgu bir problemse diyelim ki.
+
+486
+01:56:47,728 --> 01:57:01,367
+Bu şekilde ilişkili olmalı da bu şekilde ilişkili olmalı. Veyahut da ne bileyim, bu metot, bu sorumluluk o sınıfa değil de şu diğer sınıfa atanmış olmalıydı.
+
+487
+01:57:01,367 --> 01:57:15,547
+Veyahut da bu sorumluluğu şu sınıf tek başına değil de şu diğer sınıfla birlikte yerine getiriliydi. Veyahut da şu gereksinim şu zamanlamada yapılamaz.
+
+488
+01:57:15,728 --> 01:57:25,408
+Veyahut da on göre proje planı düzenlenir gibi gerekli düzeltmeler yapılır.
+
+489
+01:57:25,408 --> 01:57:35,667
+Ve son aşama, sonlandırma aşaması. Bu değerlendirme yönetik yöneticisi yapılmış olan düzeltmeleri, doğruluğun yeterliliği, tutarlılığını inceler.
+
+490
+01:57:36,028 --> 01:57:38,408
+Bu sırada tabii ki gerek...
+
+491
+01:57:38,996 --> 01:57:49,076
+O olgularla ilgili değerlendiricilerin görüşlerini de alabiliriz. Düzenlemeyi yapan başka bir ekip ise onların da görüşlerini alır, onların da ek desteğine ihtiyaç duyabilir.
+
+492
+01:57:49,076 --> 01:58:03,436
+Sonunda temel sorumluluk, burada yine değerlendirme yetkisinin üstündedir. Eğer tamam bu yapılan düzeltmeler olmuş diyorsa da o çevrim tamamlanmıştır denir.
+
+493
+01:58:04,148 --> 01:58:18,068
+Tüm bu arkadaşlar ve bu tür çalışma biçiminin daha az çabayla hata ortaya çıkartabildiği, tutarsızlık ortaya çıkartabildiği anlaşılmıştır.
+
+494
+01:58:18,448 --> 01:58:18,708
+Peki.
+
+495
+01:58:20,180 --> 01:58:46,859
+İyi bir ara vermemiz gerekiyor. J yöntemine çalışmaya başlamadan önce ne yapalım şimdi? 11-5 geçirelim. 11-5 geçirelim. 11-15'e kadar ara.
+
+496
+02:14:05,939 --> 02:14:25,979
+Geciktirmiş olduk. Kaldığımız yerden devam edelim. Kaldığımız yerde J-Unit bilim sınaması, zeliklikini sizlere anlatmak olacak. Peki. Sunum moduna geçip başlayalım.
+
+497
+02:14:33,779 --> 02:14:45,880
+J.N.E.T. Javali'ye yazılmış kodların bilim sınamaları için kullanılan bir çerçeve programda, sohbeti, framework, sınama çerçevesi de tabii ki, testing framework.
+
+498
+02:14:48,083 --> 02:15:14,564
+Aslında X-unit A-list diye gireceğim. Farklı diller içinde sürümleri mevcuttur. Örneğin C-sharp kodunu sunayacaksınız. C-sharp kodu üzerinde birim testleri gerçekleştireceksiniz. CS-unit var. Python'ın içine TY-unit var gibi. İde desteği de yaygın bu framework'ün. Eclipse ve NetBeans'te J-unit hazır geliyor.
+
+499
+02:15:15,155 --> 02:15:32,275
+Ama isterseniz tabii ki her zaman için bunun jeniniz için jeniniz dosyalarını indirip jeniniz.org adresinden indirip projeye dahil ederekten de bunu yapabilirsiniz, kullanabilirsiniz.
+
+500
+02:15:32,275 --> 02:15:38,715
+Ama dediğim gibi eğer ekleptüya netvins kullanıyorsanız zaten onunla birlikte gelmektedir.
+
+501
+02:15:41,363 --> 02:15:46,203
+Bunun 3x sünümü üstünden bir şeyler anlatmak istiyorum size.
+
+502
+02:15:48,643 --> 02:15:54,823
+Şimdi hazırladığınız uygulama MyPackage işareti içerisinde yer alıyor.
+
+503
+02:15:55,323 --> 02:15:59,743
+Burada yer alan Upclass 1, Upclass 2 gibi sınıflarımız var.
+
+504
+02:16:00,143 --> 02:16:03,143
+O sınıfların kendi alanındaki bağlantılarını göstermedim.
+
+505
+02:16:03,263 --> 02:16:06,243
+Çünkü test sünme odaklanmam yok.
+
+506
+02:16:06,739 --> 02:16:12,419
+Bu işte MyPacket içerisindeki Upclass ve Upclass gibi sınıflarınızı test etmek için
+
+507
+02:16:14,707 --> 02:16:34,628
+Adlarının başı test kelimesi ile başlaması gerekiyor. Upclass 1'in bilim sınamalarını test Upclass 1 adlı bir sınıf içerisinde oluşturuyorsunuz. Upclass 2 sınıfının bilim sınamalarını test Upclass 2 adlı bir sınıf içerisinde oluşturuyorsunuz.
+
+508
+02:16:35,188 --> 02:16:48,468
+J.Framl'a okunun paketi bu, J.Framl'a. Onun içerisinde yalan test case sınıfı var. Sizin test sınıflarınız bu test case sınıfından kalıtımla getirilir arkadaşlar.
+
+509
+02:16:51,268 --> 02:17:01,788
+Bu test sınıflarımızın içerisinde birim sınavlarının gerçekleştireceğiniz metotlarımızın adı da test ile başlamalıdır.
+
+510
+02:17:02,388 --> 02:17:28,747
+İşte test bilmem ne şeklinde metotlarınız olacak test sınıflarınız içerisinde. Ve bu herhangi bir testin başarılı olup olmadığını değerlendirmek için James Sennelok vakitinde AstroT diye bir sınıf var. Bu sınıfın public static metotları var.
+
+511
+02:17:29,332 --> 02:17:44,692
+Şimdi, temel olarak, en temel sınamanız nedir? Karakutlu sınaması olarak baktığımızda, verilen girdiğe karşılık, beklenen doğru sonuç elde ediyor muyuz? Temel sınama yöntemimiz budur.
+
+512
+02:17:44,692 --> 02:17:54,132
+Nedenle, uygulamanızdaki, örneğin, ad klasleriniz içerisindeki bir ya da birden fazla bir metodu çalıştırıp,
+
+513
+02:17:54,484 --> 02:18:08,384
+Onların döndürdüğü bir sonucun, acaba gerçekten olması gereken sonuç olup olmadığına bakarsınız sınava yapmak için. Bu mantıkla çalışmak üzere assert equals metodu var.
+
+514
+02:18:08,384 --> 02:18:20,384
+Bir yandan hazırladığımız bilgilere karşı elde edilmesi beklenen çıktığı simgeleyen bir obje oluşturuyorsunuz.
+
+515
+02:18:20,788 --> 02:18:46,028
+Öte yandan gerçekten o sınayacağınız metodun oluştup geri döndürdüğü objeyi ele alıyorsunuz ve sonuç objesi oluyor bu da. Beklenen nesne ile sonuç nesnesi birbirinin aynı ise tamamen aynı ise o zaman AstroTürk'ün ilk olarak metodu bu testin başarılı olduğu bildirimini veriyor.
+
+516
+02:18:46,932 --> 02:19:07,952
+Ve bunların türü de object. Yani hatırlarsanız object Java dilinde kozmik üst sınıftı. Yani siz göstermesiniz bile aslında yazdığınız her upclass'lar, her türlü sınıf aslında object sınıfının alt sınıfı oluyor. O yüzden herhangi bir nesne verebiliyorsunuz. Bu AstroTUqs metoduna parametre olarak.
+
+517
+02:19:08,659 --> 02:19:30,479
+Bunun ters mantık sınaması da yapılması gerekebilir. Eğer beklenen çıktığıyla erdi edilen sonuç birbirine eşit değilse test başarılıdır şeklinde kullanabileceğiniz bir astrologik ilkolosu metodudur. Yani ters mantık sınama her zaman gerekmemekle birlikte gerekeceği anlar da olabilir.
+
+518
+02:19:30,479 --> 02:19:32,659
+Bunu destekliyor.
+
+519
+02:19:36,084 --> 02:19:58,064
+Mesela diyelim ki şey istiyorsunuz, bir metot geriye bir nesne döndürüyor, o nesnenin null olmaması lazım. Diyelim ki işte kayıtlı nesne arasında bir sonuç geri dönmemesi lazım çünkü o nesne kayıt etmediniz. Ama buna rağmen kayıtlı olmamasına rağmen bir hit, bir bulgu geri dönüyorsa bu olmamalı.
+
+520
+02:20:00,000 --> 02:20:11,319
+Döndürdüğü sonucun mal olmamasını kontrol etmek istiyorsanız, o zaman mesela astral, natural, yiyebilirsiniz. Sonucun mal olmaması.
+
+521
+02:20:12,404 --> 02:20:22,363
+O durumda not equals'ı kullanabilirsiniz mesela. Gerçi bu bağlamda assert true veya assert false muhtatları var. İsterseniz onu da şeydebilirsiniz.
+
+522
+02:20:23,024 --> 02:20:37,623
+Assert true metodu parametre olarak bir Boolean değer almaktadır. O Boolean değer true olarak hesaplanıyorsa, assert true metodu bu testin başarılı olduğunu beyan eder. Aksi taktik başarısız olduğunu beyan eder.
+
+523
+02:20:37,811 --> 02:20:54,912
+Bunun tam tersi mantıkla assert-false metodu için geçerlidir. Ona parametre olarak verdiğiniz ifade false olarak değerlendiriliyorsa o zaman bu testten başarılı olduğu beyan edilir. Aksi taktirde başarısız olduğu beyan edilir.
+
+524
+02:21:05,811 --> 02:21:16,131
+İşte o metodun çıktısı, ünlemişi tırnal koşulunun true olarak değerlendirilmesi şeklinde de düştü.
+
+525
+02:21:16,191 --> 02:21:18,772
+Daha sonra true da kullanabilirsiniz onun yerine isterseniz.
+
+526
+02:21:20,404 --> 02:21:28,204
+Ama daha çok doğrudan buğulun, return döndüren metotların test keresinin hazırlanmasını daha çok tercih ederiz tabi.
+
+527
+02:21:28,824 --> 02:21:30,524
+Asteroid 2, Asteroid 4 metotların.
+
+528
+02:21:30,904 --> 02:21:35,804
+Ve aslında Asteroid Null diye ve Asteroid Not Null diye iki metodumuz da var zaten.
+
+529
+02:21:35,963 --> 02:21:37,623
+Doğrudan onları da kullanacağız aslında.
+
+530
+02:21:38,204 --> 02:21:46,024
+Asteroid Null metodu, parametre olarak aldığı nesnenin Null olması durumunda testin başarılı olduğunu beyan eder.
+
+531
+02:21:46,024 --> 02:21:48,064
+Aksi taktirde başarılı olduğunu beyan eder.
+
+532
+02:21:48,404 --> 02:21:51,744
+Tam tersi mantığında, sonat matmal metodunda var.
+
+533
+02:21:53,716 --> 02:22:17,396
+Ve tercihan her bir test bilmem ne metodunda bir tane asort kullanmamız beklenir. Ama isterseniz birden sonrası da kullanabilirsiniz. O durumda o testin başarılı olması için o metottaki bütün asortlerin başarılı ifade beyan etmesi gerekmektedir. Bir tanesi bile takılsa o test, bilim testi komple başarısız olarak ilan edilecek.
+
+534
+02:22:21,716 --> 02:22:31,355
+Test ünlü olan metoduna tek bir ASO kullanmanız. Çünkü mümkün olan en bireysel kılama açısından test etmeniz en doğru tutuştur.
+
+535
+02:22:34,056 --> 02:22:43,195
+Peki. Ama tabii ki testleri yapabilmek için aslında, dedik ya tek bir nesne tek başına bir sorunlu yerine getiremez aslında.
+
+536
+02:22:44,755 --> 02:23:06,915
+Başka nesnelerle birlikte de çalışması gerekebilecektir. Ya da bir testin yürütelebilmesi için öncelikle bir sahnenin hazırlanması gerekebilecektir. Yani öncelikle teşitli varlıkların oluşturup daha sonra bunların birbiriyle ilişkilendirmesi lazım ki ancak ondan sonra testlere başlıyor olabilirsiniz.
+
+537
+02:23:06,915 --> 02:23:12,355
+Örneğin, ne bileyim işte bir öğrencinin dersler başarılı olup olmadığı.
+
+538
+02:23:12,755 --> 02:23:23,435
+Önce dersi oluşturup, sonra öğrencileri oluşturup, işte tek tek bu öğrencileri bu derse ekleye, eklemeye, kapasite açınca eklenmemesi lazım.
+
+539
+02:23:23,595 --> 02:23:30,655
+Falan falan bir işlerin yapılabilmesi için, böyle bir senaryolar yapılabilmesi için, önce dersi öğrenci oluşturmamız gerekmektedir.
+
+540
+02:23:30,955 --> 02:23:35,435
+Ve her bir testten önce bu işlemi tekrarlanması gerekmektedir.
+
+541
+02:23:35,435 --> 02:23:40,135
+Bu bağlamda kullanılacağımız metot ise setup metodu arkadaşlar.
+
+542
+02:23:40,755 --> 02:23:48,415
+Test case sınıfının, J-Unit Framework'in yer alan test case sınıfının protected olarak değerlendirilmiş, kodlanmış bir setup metodu var.
+
+543
+02:23:48,415 --> 02:23:54,415
+Bu setup her bir test bilmem ne metodundan önce çalıştırılır, tekrar çalıştırılır.
+
+544
+02:23:54,536 --> 02:24:00,536
+Bu anlamda siz de kendi test sınıflarınızla bu setup metodunu override ederekten,
+
+545
+02:24:00,795 --> 02:24:08,695
+işte önce bu sahneye hazırlanması, yani oluşturulması gereken nesminin oluşturup, ilk ilişkilerin kurulması işlemlerini bu.
+
+546
+02:24:08,755 --> 02:24:16,175
+o laydettiğiniz setup metodu içerisinde yazarsınız ve böylelikle artık testleriniz gürütülmeye hazırdırlar.
+
+547
+02:24:17,587 --> 02:24:24,587
+Bu arada isterseniz birden fazla test sınıfımızı bir araya getirip bir suite oluşturabiliyorsunuz.
+
+548
+02:24:24,647 --> 02:24:33,587
+Ama opsiyonel. Fakat farklı türde regresyon çalışmalarını kategorize etmek için mesela farklı farklı suite'ler oluşturabilirsiniz.
+
+549
+02:24:34,628 --> 02:24:42,427
+Örneğin 10 tane test sınıfımız varsa bunlardan 10'un birden içeren bütün testler olabilir.
+
+550
+02:24:45,587 --> 02:24:50,308
+Önemli test olabilir. Sünen gibisinde gruplamalar yapabilirsiniz. Bu marka kullanmak.
+
+551
+02:24:54,128 --> 02:25:06,067
+4x sürümünde ise, 3x sürümünde bu adlandırmalar zorunlu. Yani sınıflarınızın adı test ile başlamalı, test ile metotlarınızın adı test ile başlamalı filan.
+
+552
+02:25:07,603 --> 02:25:17,323
+4x türmünde bu şekil adlandırma yerine annotationlar kullanılaraktan çalışma biçimi desteklenmeye başlandı.
+
+553
+02:25:17,323 --> 02:25:28,223
+Örneğin, bir kere test kez sınıfından kalıtım almanız gerekmemekte ve sınıfımızın adını da bir kere test kez başlaması da gerekmemekte.
+
+554
+02:25:29,223 --> 02:25:30,323
+Fakat…
+
+555
+02:25:30,804 --> 02:25:43,423
+O sınıfın içerisinde yazacağınız test kodlarının her ne kadar isimlerinin de test ile başlaması gerekmemekle birlikte her test metodunun başına et test şeklinde.
+
+556
+02:25:43,423 --> 02:25:52,103
+Burada aslında büyük art çıkart duyarlı. Kodda doğru olarak ilk t'yi büyük yazdım ama yansıda ilk t küçük bir külah. Ben onu düzelteyim.
+
+557
+02:25:54,036 --> 02:26:13,896
+Keza şu before'da öyle. Arkadaşlar bu sahnenin hazırlanması işlemlerini setup metodunda, onun yapılması için setup metodu kodlamanız gerekiyor. Herhangi bir isim verebilirsiniz o metodu. Ama başına at before annotation'ını koymanız lazım.
+
+558
+02:26:17,012 --> 02:26:44,452
+Et ile başlayan satırlardır ve değerlendirici bunu tamamen bir tür konvent, yorum gibi olarak değerlendirir. Herhangi bir işlem yürütmez bunların üstüne. Annotation'ın amacı o kaynak kod üzerinde çalışacak, farklı kararlar verebilecek veya farklı işlemler yapabilecek başka programlara bilgi aktarmak, talimat vermek gibi işlemler içindir bu annotation satırları.
+
+559
+02:26:45,012 --> 02:27:13,012
+Mesela diyelim ki Eclipse'de belirli tür warningleri almak istemiyorsanız, sınıf konunun başına ama sadece belirli sınıf için almak istemiyorsanız veya sınıflar için almaya devam etmek istiyorsanız mesela, o sınıfın başına at suppress warnings deyip, ona bir parametre olarak yani parantez içerisinde ve tırnak içerisinde diyelim ki şu tip warningi gösterme şeklinde konuklar verebiliyorsunuz.
+
+560
+02:27:13,012 --> 02:27:24,812
+Örneğin, o annotation'la, derleyicisine yöneliktir mesela. JUnit Framework'in yönelik annotation'ları ise, işte bu konus kıramı soruyor. At before, setup'ı yerine yönelik.
+
+561
+02:27:24,812 --> 02:27:37,632
+Bu diye ishaletlemeye yarıyor o metod. At test ise, sizin bir test keyfini kodlamış olduğunuz metodtur bu anlamında, bilgi veriyor JUnit Framework'i.
+
+562
+02:27:41,012 --> 02:27:54,472
+Neler benim test sınavlarımmış, hangi metodum setup metoduymuş, onun farkına varık bu sayede anlayıp, ona göre ilgili metotları, ilgili sıralarda yürütüyor, ilgili değerlendirmeleri yapıyor.
+
+563
+02:27:55,492 --> 02:28:07,332
+İki şekilde çalışabilirsiniz. Geriye doğru uyumluluk var. Yani C4x framework'ınız varsa, orada 3x'in testler yazmaya devam edebilirsiniz.
+
+564
+02:28:09,012 --> 02:28:19,891
+devam edebilirsiniz. Yere doğru uyumlu, destekleniyor. Ek olarak 4x sürümünde gelen yetenek, exception'ların da test edilebilmesi.
+
+565
+02:28:20,371 --> 02:28:27,512
+Nesliye yayınlığım dersinden hatırlarsanız, exception olduğu zaman aykırı durum, istisnardım, programın akışı kesiliyor.
+
+566
+02:28:28,371 --> 02:28:46,072
+Ama siz eğer isterseniz tahribat, isterseniz tümleştirme testi açısından düşünüp, belirli bir exception ortaya çıkmışsa test başarılıdır şeklinde bir test yapacaksanız bunu Vertex Stream'iyle yapabiliyorsunuz.
+
+567
+02:28:46,072 --> 02:28:55,991
+Bu bağlamda ilgili exception'i çıkartacak olan test case'inizi işeren metodun başına zaten test annotation'ını yazmanız gerekiyor ya.
+
+568
+02:28:56,371 --> 02:29:04,371
+Bu şekilde parametre diyorsunuz. Expected eşittir. Bu ortaya çıkması gereken exception adını nokta class şeklinde yazıyorsunuz.
+
+569
+02:29:05,011 --> 02:29:14,451
+Ve böylece örneğin şu test metodu içerisinde o testin başarılı olması için asıl atmasıl at yazmanıza gerek yok bu annotation sayesinde.
+
+570
+02:29:14,451 --> 02:29:24,331
+O test metodu içerisinde o exception oluşturabilecek metodu çalıştırdığınızda o exception gerçekleşmişse test başarılıdır.
+
+571
+02:29:24,371 --> 02:29:38,151
+Aksa da test başarısızdır şeklinde değerlendirmeyi yapıp, diğer testleri yürütmeye devam ediyor. Bu içi site olsa, extra film onun için her şey kesilecek. Bu da bu şekilde çalışmayı getiriyor.
+
+572
+02:29:44,816 --> 02:30:01,556
+Her bir katılımcının tek tek en az bir, şu an akım atılmıyorum belki de iki demişimdir, test case bilim sınaması hazırlamasını bekliyoruz arkadaşlar. Onlardan da not alacaksınız.
+
+573
+02:30:04,556 --> 02:30:06,676
+Onu hatırlatayım dedim.
+
+574
+02:30:07,756 --> 02:30:11,316
+Şimdi gelelim bir örneğe.
+
+575
+02:30:13,620 --> 02:30:25,340
+Bir örnek üzerinden nasıl bilim sınavları hazırlanır, kod düzeyinde gösterimle ve bunları çalıştırmak şeklinde örneğimizi yapacağız. Vaktimiz var, yetişir.
+
+576
+02:30:25,340 --> 02:30:40,400
+Bu örneği Martin Ford'ların refactoring tabundan aldım. O yüzden bu örnek yazılım hatası olarak değerlendirilmeyecek.
+
+577
+02:30:40,788 --> 02:31:01,927
+Fakat nesneye yönelimin istediklerini eksik bir biçimde veya hatalı bir biçimde uygulanmadan dolayı ortaya çıkan problemlerin, onlara kod simel denilir, nasıl peçhese edilip nasıl düzeltileceğini anlatan bir kitaptır bu.
+
+578
+02:31:02,772 --> 02:31:29,692
+Ve refactoring aslında tanımı konuşmuştuk zaten daha evvelki bahsederimizde. Refactoring işlemlerinin adım adım yapılması tercih edilir. Ve her bir adımda da numaralar eşliğinde yapılması tercih edilir. Çünkü yaptığımız refactoring eylemi her ne kadar bizi daha iyi bir tasarımına götürmek için yaptığımız eylem olmakla birlikte belki bizi hata bir noktaya da getirebilecek.
+
+579
+02:31:30,324 --> 02:31:38,804
+Bu nedenle, her bir fattım eyleminin ardından en azından en çok görüntü ettiğimiz sınıfla ilgili tercih alınır.
+
+580
+02:31:38,804 --> 02:31:50,924
+Onunla bir adım geriye yönelik olan sınıfları da test ettiğimiz kodun regresyonuyla birlikte GIM sınamalarının yapılması tercih edildi.
+
+581
+02:31:50,924 --> 02:31:56,704
+Şuradaki tasarımım da yine bu aslında kusurlu tasarımların.
+
+582
+02:31:57,040 --> 02:32:16,580
+Kusurların keşfine yönelik bir çalışma olduğu için aslında şurada göreceğiniz tasarımda ufak tefek kusurlar olacak. Birazdan onlarla da bahsedeceğim. Daha iyisi yapılabiliriz de denip o daha iyisinin ne olduğunu da sizlere yönlendireceğim. Onu da unutmayalım.
+
+583
+02:32:17,391 --> 02:32:44,772
+Örneğimiz bir video kaset kiralama sistemi olacak. Bizim müşterimiz var, taskımız. Müşterilerimiz çeşitli movieleri, filmleri belirli bir süreci kiralayabiliyorlar arkadaşlar. Bizim bu filmlerimiz 3 tip film olacak. Birincisi normal filmler, ikincisi yeni çıkan filmler, üçüncüsü çocuk filmleri.
+
+584
+02:32:45,172 --> 02:32:52,412
+Bunların değişik sürelerde kiralama ücretleri farklılıklar gösterecek.
+
+585
+02:32:53,412 --> 02:33:04,032
+Ve yapılan farklı türlerin farklı sürelerde yapılan kiralama işlemlerinden farklı bonus puanlar da kazanılabiliyor olabilecek.
+
+586
+02:33:04,032 --> 02:33:11,592
+Böyle bir bilgi sürülinin çekirdekli iş mantığını oluşturan sınıfları, customer, rental ve movie sınıfları.
+
+587
+02:33:13,172 --> 02:33:41,032
+Statement metodu. Aslında geriye bir string döndürüyor ve makbuz basmaya yarıyor. İşte nasıl bir makbuz basacak? Şu filmi şu kadar gün kiraladınız, borcumuz bu. O filmi şu kadar gün kiraladınız, borcumuz bu. Toplam borcumuz bu. Ve bu işlemlerimizden toplam şu kadar puan kazandınız şeklinde bilgi içeriyecek bir makbuz basacak. O makbuzun içeride bir stringi oluştuk. Bir dönülen bir metod bu.
+
+588
+02:33:41,172 --> 02:34:06,812
+Bu metod içerisinde GetTotalCharge ve GetBonus metotlarından da yararlanıyor olacak. GetTotalCharge metodu yapılmış bütün kiralama işlemlerinden ne kadar borcumuz olduğunu hesaplayan metod. GetTotalBonus ise bütün kiralama işlemlerinden kazandığımız puanı. Bonus olarak hesaplayan metod oluyor.
+
+589
+02:34:08,531 --> 02:34:16,891
+Rental sınıfında bu kiralama işleminin kaç gün tutulduğunu bildiren Days Rented üyesi var.
+
+590
+02:34:16,891 --> 02:34:26,451
+Üye alanlar saygı, tasarım olduğu gibi. Şimdi burada bir şey dikkatinizi çekmiş olabilir. Üye alan adlı underscoresle başlıyoruz. Yukarıda movie'de de öyle.
+
+591
+02:34:33,075 --> 02:34:40,775
+Bir de kullandığımızda üye alanlar veyahut da geçişi nesneler bunlar farklı farklı renklerle vurgulanmaktadır aslında.
+
+592
+02:34:40,775 --> 02:34:53,615
+Ve herhangi bir top parçasına baktığımızda bu renklendirme sayesinde ne üye alanmış, ne geçici değişkenmiş, ne metot parametresiymiş bunları algılayabiliyoruz.
+
+593
+02:34:55,347 --> 02:35:10,347
+Bu kaynak odonu basılı olarak incelendiği durumlarda, kitapta da öyle, renkli çıktı, hem çok masraflı olabiliyor bir yandan da. Bu nedenle...
+
+594
+02:35:10,384 --> 02:35:17,963
+Üye alanların underscore ile başlatılması bir alışkanlık olabiliyor bu tip durumlarda.
+
+595
+02:35:18,644 --> 02:35:26,023
+Daha çok C programlarından gelen bir alışkanlık olmakla birlikte bu noktada yarar sağlıyor underscore ile başlatmak.
+
+596
+02:35:26,023 --> 02:35:38,063
+Kitapta siyah beyaz basılmış. Kitapta hep böyle yeşil küçük kod parçacıkların üzerinden hatanın gösterimi ve düzeltiğinde nasıl olacağının bilgisi verildiğinde.
+
+597
+02:35:38,384 --> 02:35:50,443
+Androsco'ya başlayan üye alan olduğunu bilmek bu konuları daha iyi anlamınıza yer sağlıyor. O yüzden Androsco'ya başlıyor üye alanların isimleri. Bu örnek.
+
+598
+02:35:51,092 --> 02:36:11,452
+Eşeğlantı sınıfına devam edelim. Kaç gün kiralandığı Dave's Lentert üyesinde bu kiralama işleminin bedeli nedir? Onu hesaplayan geç çalış metodu var. Hesap bir geri döndüren. Bu kiralama işleminin ne kadar puan kazanıldığını hesaplayan geç bonus metodu var. Bir de kiraladığımız filmin adı neymiş? Onu da geri döndüren metodu var.
+
+599
+02:36:19,092 --> 02:36:33,551
+Rental'da sorup, sen bana movie'ni gönder, ben de onun adını alayım diyebilir. O da bir çözümdür. Fakat böyle demektense, Rental'a sormak, ya seninle ilgili filmin adı neydi bilgisini almak daha anlamlı olacak. İki nedenlerdir.
+
+600
+02:36:39,763 --> 02:37:06,804
+Bağlaşımı azaltacak, doldudan olan bir bağlaşımı dolaylı bağlaşım haline getirecek. İkincisi, haberleşme masrafını azaltacak. Komple nesneyi, sadece ismini aramak için komple nesneyi döndürmek yerine bir stringi, onun bir üye alanı olan bir stringi geri döndürmek daha az haberleşme masrafını sağlayacak.
+
+601
+02:37:07,763 --> 02:37:14,484
+Bu yönden düşünerekten bu Get Movie Title metodu buraya iterasyonlardan birinde eklenmiş durumda.
+
+602
+02:37:14,723 --> 02:37:24,103
+Ama tabii adım adım bir karşıya göstermeyeceğim de bu ortadaki bir hali üzerinden bilim sınıfının yardımını göstereceğim size.
+
+603
+02:37:24,723 --> 02:37:31,663
+Mühendisliği sınıfında ise bu filmin hangi tür film olduğunu enum gibi tutan bir price code üyemiz var.
+
+604
+02:37:32,883 --> 02:37:35,423
+Kodda kaynak kodu baktığımızda ayrıntısını göreceğiz.
+
+605
+02:37:35,763 --> 02:37:48,144
+Aslında burada böyle bir kod yerine ya enum kullanmak daha tercih edilir bir yöntem, daha da ise aslında polimorfizm kullanıp, parutum ve çok bir simül kullanıp,
+
+606
+02:37:48,144 --> 02:38:02,304
+movie'yi bir abstrakt, soyut bir üst sınıf olarak düşünüp, regular movie, new release ve child film türlerini alt sınıflar olarak tasarlamak en doğrusu olacaktı.
+
+607
+02:38:02,932 --> 02:38:04,371
+Onu da söyleyeyim.
+
+608
+02:38:05,075 --> 02:38:21,075
+Neyse, sağ tarafta da bu Statement Metrum'un Sequence Diagramını görebiliyorsunuz. Onun üstünden konuşmaktansa direkt kaynak kodu üzerinden konuşabiliriz. Daha çok bilgiyi daha hızlı bir şekilde size vermiş olabilirim bu bağlamda.
+
+609
+02:38:21,075 --> 02:38:31,896
+Onun dışında şu yansıda geçen test kodlarını da zaten üzerinden gösterip, ondan sonra bu testlerin nasıl koştuğunu da size göstereceğim.
+
+610
+02:38:33,139 --> 02:38:34,979
+Şimdi açalım bir Eclipse.
+
+611
+02:38:47,891 --> 02:39:02,652
+Bu arada şuradan da bakayım, acaba bunun kodlarını şuraya ayrıca koydum mu? Mesela ders nazisinin içerisine koymuşum. Tamam, ders nazisinin içerisine koymuşum. Buraya açayım şimdi.
+
+612
+02:39:04,932 --> 02:39:09,231
+Şimdi, şunları bir kapatayım.
+
+613
+02:39:13,811 --> 02:39:16,811
+Youth of Education Builder, Walsh.
+
+614
+02:39:20,811 --> 02:39:21,811
+Haa, bir dakika.
+
+615
+02:39:23,811 --> 02:39:26,811
+Oraya koydum mu? Yok, tamam.
+
+616
+02:39:26,811 --> 02:39:29,811
+Walsh'ta bir dersin için aslında.
+
+617
+02:39:29,811 --> 02:39:34,811
+Bunu çok fazla düzenleme gerekmediği için orada durması daha mantıklıydı zaten benim başımdan.
+
+618
+02:39:34,811 --> 02:39:36,811
+Şöyle gidelim.
+
+619
+02:39:41,427 --> 02:39:56,075
+Burada ders mazinesi, burada kodlar. Evet. Yaz, kodlar zimni, kodlar zimni.
+
+620
+02:40:02,579 --> 02:40:15,680
+Allah! Neyse bu, topu yanalım hemen. Bir noktada işte, saygıları aktarmış gibi yapmışım. O yüzden şu an o yüzün boş kalmış.
+
+621
+02:40:15,680 --> 02:40:23,340
+Yüzün görüntü ama, arttırdığını da aktarmamış. Şimdi halledeceğiz.
+
+622
+02:40:25,459 --> 02:40:32,340
+Aslında şey de yapabiliyoruz arkadaşlar, yani şimdi onun uğruna uğraşmak yerine şey de yapabiliyoruz.
+
+623
+02:40:32,779 --> 02:40:34,279
+Zaten bunu anlattım.
+
+624
+02:40:35,299 --> 02:40:38,719
+Mesela modelleme dersim kurdusundan geçelim.
+
+625
+02:40:38,859 --> 02:40:41,680
+Ben sonra bunu şeyden, kurdusunu da attıralım.
+
+626
+02:40:42,399 --> 02:40:43,619
+Manşo yapacağız şimdi.
+
+627
+02:40:45,219 --> 02:40:48,579
+Evet, desteklerimde de bu şeyi anlatmıştık.
+
+628
+02:40:49,159 --> 02:40:50,419
+Testing'i anlatmıştık.
+
+629
+02:40:50,719 --> 02:40:51,659
+Oradan gidelim.
+
+630
+02:40:52,084 --> 02:41:10,504
+Unit testing by fall, ayrı bir şey. Şimdi bir kere her şeyden önce, projenizde bilim testleri yapabilmek için yapmanız gereken projede configure build path deyip,
+
+631
+02:41:11,059 --> 02:41:38,500
+Alt seçenekleri de var aslında ama benim ilk başta ezberim de orada. Şey dediğinizde şu library liste, class pet'e add library deyip bu DINJ unit'i tıklayıp devam ediyorsunuz. 3, 4 ve 5 versiyonları hazır geliyor. Ben ekstra indirmedim bu şartı olsun. Hazır geldi. Ben testimi ışık üzerinden yapacağımlar. 3'ü seçip ekle dedim.
+
+632
+02:41:39,059 --> 02:41:42,079
+Zaten şu an ekli, zaten 3'le 4.
+
+633
+02:41:42,512 --> 02:42:04,472
+Örneği üç üzerinden göstereceğim. Ama eğer junit.org'dan ilgili jar dosyasını indirip herhangi bir dizine koyduysanız eğer, o zaman şurada classmate'de external jar deyip, ondan sonra o jar dosyasını nereye koyduysanız, örneğin diyelim ki başka bir framework'larım da var.
+
+634
+02:42:10,675 --> 02:42:21,075
+Matrix plugin, bunu da ekleyebilirim, bu jar dosyeni eklerim, bu jar dosyeni, plajemi ekle eklemez, oradaki sınıfları paketle import edip sınıfları kullanabilirim.
+
+635
+02:42:24,180 --> 02:42:41,460
+Öyle ya da böyle. Yani ya Eclipse'de direkt AdLibrary'i veyahut da başka bir IDE kullanıyorsanız, işte ilgili J-Git'in ilgili versiyonu indirip onun cihaz dosyasını bu şekilde o IDE nasıl yapıyorsa projeye eklemeniz gerekmektedir.
+
+636
+02:42:41,460 --> 02:42:51,580
+Bir kere ekledikten sonra, öncelikle şu kaynak kodunuza bir bakalım. Kod düzeyine de bakalım. Customer sınıfımız vardı.
+
+637
+02:42:52,084 --> 02:43:14,864
+İşte customer'ın ismi var. Bak dikkat edersiniz, üye alanlar underscore. Yapılan kiralama işlemleri rental türünden nesneye işlenen bir vektör. Link list türüdür. İçerisinde saklanıyor, saklanacak. Onun için ilk başta bunu iklendirmesini lazım. Customer'ın adı constructor da varmıyor.
+
+638
+02:43:15,327 --> 02:43:28,327
+Her kiralama işlemi Advantal metodu ile bu vektöre ekleniyor. Advantal metodu var, o kullanarak ekleniyor. Müşterin ismi için Getir metodu var. Ondan sonra acaba.
+
+639
+02:43:28,327 --> 02:43:38,327
+Ve geldik makbuz basma metoduna. Nasıl çalışıyor makbuz basma metodu? Kira kayıtlarının listesini elde etmek için.
+
+640
+02:43:40,468 --> 02:43:54,148
+Bu ilgili listenin element maklumunu kullanarak da onun üstünde dolaşabileceği bir iteratör almış. Ondan sonra şu result string içerisinde basılacak maklumun içeriğini oluşturmaya başlıyor.
+
+641
+02:43:54,148 --> 02:44:01,768
+İşte bilmem kim için kira kaydı diyor. Ondan sonra her bir kira kaydı için sıradaki elemanı alıyor.
+
+642
+02:44:02,291 --> 02:44:15,772
+Ondan sonra o kiralama kaydında şu filme aitmiş diyor, bir tane sekme koyuyor. Ondan sonra bu kiranın bedelini alıyor. O bedeli de string'e çeviriyor bu arada.
+
+643
+02:44:16,891 --> 02:44:24,871
+Yeni satır karakteri ekliyor. Bu işlemleri her bir kira için yaptıktan sonra toplam borcumuz şu kadardır diyor.
+
+644
+02:44:24,871 --> 02:44:30,291
+Get that to charge, aynı sınıftaki get that to charge metonu işe alıyor. Sonra da yine aynı sınıftaki get that to charge.
+
+645
+02:44:30,291 --> 02:44:56,432
+Total bonus metodu şu an artık. Toplamda bu kadar bonus puan kazandınız. Frequent rental bonus kazandınız diyor. Ve oluşturan setting geri dönüyor. Get total charge metodu rental'daki tüm elemanlar için for each döngüsü kullanıyor. İlk hocam o zaman niye yukarıda for each döngüsü kullanılmadı, while kullanıldı derseniz, hak etmez. Orijinal kodu öyleydi. Siz derseniz ona dönüştürmüşler değil.
+
+646
+02:44:58,291 --> 02:45:11,072
+Eylemleri de mümkün olan, yani o kadar şeyin içinde performans açısından veya tasarım açısından bir getirisi götürüsü olmayacağı için şöyle bunu tercih ettiriririz.
+
+647
+02:45:12,115 --> 02:45:20,275
+Toplam birleşen, for each dönemlüsü içerisinde kümülatif toplam, geçici result değişkenini kümülatif toplam oluşturmak için tanınılıyor.
+
+648
+02:45:20,275 --> 02:45:27,195
+Ve her bir kira bedelini bu result içerisinde kümülatif olarak bir dükkünden sonra toplan bedeli dönülüyor.
+
+649
+02:45:27,755 --> 02:45:36,975
+Kazınılan bonus için de benzer şekilde yine her bir kira kaydına sorup, buzdaki bonusun ne, onun kümülatif toplamını alıp geri dönülüyor. Böyle bir yapısı var.
+
+650
+02:45:37,716 --> 02:45:50,936
+Ventas'ına baktığımızda, ilişkili olan film ve kaçın kiralandığı bilgisi üye alanları, Constructor ikisini birden alıyor, set ediyor. İkisi için gettırıl metodları var.
+
+651
+02:45:53,396 --> 02:46:19,256
+O kira işlemi için, toplam bedel için nasıl bir hesap yapıyor? Şöyle, onun için bu sınıfına da bakmam gerek. Hemen bakalım. Bir kere farklı türden filmler olduğunu söylemiştik. Bu farklı türleri şuradaki kaç sayılar üzerinden belirtiyor? Normal türler sıfır, yani bir değer verilmemişse bu sıfır regular seridir. Bir verilmişse New New List'tir, iki verilmişse çocuk filmidir.
+
+652
+02:46:21,396 --> 02:46:29,855
+Tasarım yerine aslında enum yaptık. Veyahut da daha iyisi işte kalıtım ve çok bir simül kullanmak en doğrusu olacaktır.
+
+653
+02:46:33,652 --> 02:46:41,131
+Neyse, bu şimdi sınavı devam edelim. Filmin başlığı ve fiyat kodu alanı, şu üç değerden bir olacak.
+
+654
+02:46:41,691 --> 02:46:50,131
+Post-Ructus film adı ve fiyat kodunu alıyor, seçiliyor. Price-Code-Action, Get-Termet'i ve Set-Termet'i de var.
+
+655
+02:46:50,131 --> 02:47:00,772
+Çünkü bir film ilk çıktığında New Release olarak başlamakla birlikte, aradan belirli sürekli geçtikten sonra artık 6 ay mıdır, 1 sene mi dolu artık.
+
+656
+02:47:01,652 --> 02:47:29,631
+Kaset kiralayan firmanın politikasına göre değişir. Regular film haline düşecektir, dönecektir. O yüzden ya da ne bileyim yanlış kodlanmıştır o film düzeltilmesi gerekmektedir. Bu nedenle price code için set the metodu da var. Ekremişiz. Partil için et getirme metodu var. Ondan sonra geldik fiyatlandırmaya. Bu fiyatlandırmayı müşterimiz bizden bu şekilde olacak diye talep etti. Gereksinler Dergisi'nde yazıyoruz.
+
+657
+02:47:29,652 --> 02:47:40,011
+Dedi ki müşterimiz normal filmler için 2 lira vererek de bunu 2 gün kiralama hakkına sahip olsun istiyorum müşterilerim.
+
+658
+02:47:41,023 --> 02:48:03,324
+Bizim müşterimiz video kaset filması da onun müşterilerini kiralayan müşteriler. Kiralcılar diyor kiralayanlar. Kiralayanlar iki lira karşılığında normal filmi iki gün kiralama hakkı elde ediyorlar. İki gün yaşayan her gün içinde gün başına bir buçuk lira ödüyorlar. Ödesinler diye istedi, kullanmıştı benden.
+
+659
+02:48:03,924 --> 02:48:16,364
+Yeni çıkan filmler gün başına 3 liradan kiralanıyor dedi. Çocuk filmleri için ise 1,5 lira karşılığında bu filmi 3 gün kiralama hakkına sahip olunmalı.
+
+660
+02:48:17,484 --> 02:48:23,344
+3'ü aşan her gün için ise yine 1,5 lira para ödenmedi şeklinde bildirmiş bana.
+
+661
+02:48:28,755 --> 02:48:46,815
+Kiralamanın kaç gün olduğu ve filmin türü bilgilerine ihtiyaç var. Yani bu hesapların yapılması için iki bilgiye ihtiyaç var. Ve bu iki bilginin her biri farklı plan sınıfta yer alıyor. Kaç gün kiralandığı bilgisi de rental sınıfında, filmin türü ise Mühendisliği kendisinde.
+
+662
+02:48:46,815 --> 02:48:56,655
+O zaman Mühendisliği kendisinin kiralanmasından ne kadar bedel ortaya çıkmıştır, hesaplayabilmesi için kendisinin kaç gün kiralandığı bilgisine ihtiyaç var.
+
+663
+02:48:56,755 --> 02:49:02,415
+O bilgiyi de Rand'ın kendisinde olan bu bilgiyi ilk bilgi olduğumuz üniversitesine veriyor.
+
+664
+02:49:02,655 --> 02:49:06,135
+Red Charge metoduna parametre ile. Olay budur.
+
+665
+02:49:07,603 --> 02:49:16,523
+Bonus için de benzer mantık söz konusu. Şuradaki get bonusu da şurada kalmış. Basit metodu yukarıya alacağım.
+
+666
+02:49:16,523 --> 02:49:24,063
+Burada kalmış dedim. Evet, böylece bütün kodu görmüş olduk. Bir de get bonus var.
+
+667
+02:49:25,063 --> 02:49:32,623
+Orada da bizim müşterimiz demiş ki, normalde her kira işlemi için kaç gün olursa olsun bir puan kazanacaksın.
+
+668
+02:49:35,603 --> 02:49:43,824
+filmi iki gün ve daha yukarısında bir süreyle kiralamışlarsa, o zaman da ekstra bir puan daha verileceği.
+
+669
+02:49:45,103 --> 02:49:53,063
+Biz de o görevde baktık. Fiyat kodu yenilir. Bir günden daha fazla kiralanmışsa o zaman iki puan kazanmışlar.
+
+670
+02:49:53,164 --> 02:49:56,603
+Arkadaşlar bir puan kazanacak şekilde yazmışız.
+
+671
+02:49:56,603 --> 02:49:59,923
+Şimdi bakalım her şey doğulu mu değil mi? Bunu test etmek için.
+
+672
+02:50:00,000 --> 02:50:04,360
+Test kezlerimizi nasıl oluşturacağız? Onu incelemeye başlayalım şimdi.
+
+673
+02:50:06,659 --> 02:50:15,700
+Test customer sınıfı var bu amaçlar. Şimdi buradaki en kritik metodumuz statement metodu. Yani marka buluş doğru şekilde basılmasın.
+
+674
+02:50:16,319 --> 02:50:23,900
+Bunu sınayabilmek için farklı farklı türden filmleri, farklı farklı günlerde ödünç alıp,
+
+675
+02:50:24,468 --> 02:50:30,068
+Acaba doğru, makbul, versiyonlu mu? Şeklinde kontrol etmemiz gerekmektedir.
+
+676
+02:50:33,683 --> 02:50:45,123
+Bu amaçla, custom sınıfını test etmek için, 3x kullandığımızdan test case sınıfından kalıtımla türettiğimiz, test custom adlı sınıfı oluştururuz.
+
+677
+02:50:45,456 --> 02:50:59,116
+Şimdi bu testlerin yapılması için dedik ya, belli filmlerin bir süre kiralanması gerekiyor. Bu alamda bir tane müşteri nesnesi tanımlıyorum, birkaç tane de, dört tane de film nesnesi tanımlıyorum, bir alan olarak.
+
+678
+02:50:59,536 --> 02:51:05,835
+Ve bunların ilklendirme işlemlerini, setup metodunu overwrite ederekten bunun içerisinde anlatıyorum.
+
+679
+02:51:06,484 --> 02:51:20,884
+İşte müşteri oluşturalım bir tane. Dört tane film ilklendiriyorum. Birini normal film, birini çocuk filmi. İki filmi de New Release olarak kanımlıyorum. İlklendiriyorum.
+
+680
+02:51:21,943 --> 02:51:26,484
+Her bir test bilinme metodunda önce bu set up metodu tekrar çalışarak...
+
+681
+02:51:26,579 --> 02:51:36,559
+İlk Nesnel'in temiz bir sayfa şeklinde, Nesnel'in kendisi ilgilenmiş ama henüz ilişkiler kurulmamış şeklinde tekrar temiz sayfaya geri dönecek.
+
+682
+02:51:36,860 --> 02:51:46,819
+Ve ben de bu filmleri, bu müşteriyi değişik sürelerde kiralayarak da acaba doğal kira bedeli de bunu hesatlanıyor mu diye testlerimi yürütebileceğim.
+
+683
+02:51:48,852 --> 02:52:12,092
+İlk metodu test get name. Nasıl çalışıyorum metod? Erde edilen sonucu bu müşteri nesnemin get name metodunu çalıştırarak erde ediyorum. Bu erde ettiğim sonuç eğer burada açık açık verdiğim [öğrenci] ise o zaman testim başarılıdır diyecek. Aslında ikonus buna yarıyor.
+
+684
+02:52:15,888 --> 02:52:34,747
+Bunu showstop olarak düşünebilirsiniz. Belki Türkçe karakterleri doğru desteklemiyor kodun üstünde çalışacağı sistem. Olur olur yani. Bunun için ismini Türkçe karakter geçiyor. O zaman bu bağlamda bir test olarak düşünebilirsiniz bunu pekala.
+
+685
+02:52:37,247 --> 02:52:43,487
+Müşteri henüz hiçbir film almamışken ondan para beklenmemesi gerekmektedir.
+
+686
+02:52:43,487 --> 02:52:51,907
+Puan da kazanmamış olması gerekmektedir. Bu vakayı test etmek için test statement when empty diye bir metodla da hazırladım.
+
+687
+02:52:52,388 --> 02:52:59,688
+Şimdi varsın burada isimler uzun olsun arkadaşlar. Fakat neyi test ettiğini belirli olarak anlatsın.
+
+688
+02:53:00,167 --> 02:53:05,247
+Böylece eğer o test başarısız olursa aslında başarısız olan...
+
+689
+02:53:05,247 --> 02:53:19,268
+Ben testin ne yapmak istediğini, neyi sınırladığını sadece ismine bakaraktan anlayıp, o problemin kökenine uygulama sınıflarının içerisinde daha rahat nokta seçilir bir biçimde ulaşabilirim.
+
+690
+02:53:19,888 --> 02:53:24,888
+Bu şekilde bir ayrıntılı adlandırma vererek. O yüzden özgür ve tavsiye ederim.
+
+691
+02:53:24,888 --> 02:53:32,427
+Test ve test ki test ki test ki demeyin bu metotları lütfen. Tam olarak neyi test ettiğinizi anlatan bir ismi olsun.
+
+692
+02:53:32,979 --> 02:53:47,579
+Evet, şimdi setup metodu çalıştığında sadece nesnel ilgilendirdi, herhangi bir kiralama işlemi yok. Burada baktığımızda sonuç, [öğrenci] müşterisinin statementını erdi ediyorum. Öte yandan kağıt kalemle hesaplıyorum.
+
+693
+02:53:57,075 --> 02:54:08,335
+Kira kaydı. Herhangi bir şey olmayacak bu listede. Toplam borcumuz 0.0 diyecek ve 0'da bunu kazandınız diyecek. Sonuç bekliyorum.
+
+694
+02:54:08,672 --> 02:54:31,032
+Beklenen stringini bu şekilde oluşturuyorum. Erdedilen sonuç ise sonuç stringine ilgili metodu çağırlaktan atıyorum. Sonra bu beklenen ifadeyle sonuç ifadesinin birbirinin aynı olması lazım. Bu anlamda assert equals metodunu çağırıyorum. Beklenen sonucu eşitse o zaman test başarılı olacak. Aksi taktirde test başarısız olacak.
+
+695
+02:54:33,920 --> 02:55:01,840
+Bu makbuzu, filmleri uzun süre kiralayaraktan test edeceğim. Peki, uzun süre dediğim ne kadar süre olacak? Burada aslında hala Black Box diyebiliriz. Çünkü şu kaynak kodu görmeme gerek yok. Renton ve Murray kodlarını, kaynak kodlarını görmeme gerek yok. Delik filmler belgesinde müşterim söylemiş bunu bana. İşte yeni filmler için böyle böyle, çocuk filmler için böyle böyle, normal filmler için böyle böyle bir işaretlerle mi?
+
+696
+02:55:01,920 --> 02:55:08,060
+Bekliyorum diye zaten söylemiş bana. O yüzden burada yaptığım test aslında hala Black Box testing oluyor.
+
+697
+02:55:08,543 --> 02:55:26,444
+İşte bu müşteriye farklı tür filmleri, biri New Release, biri Çocuk filmi, biri normal film, uzun sayılacak günlerde ödünç vermişim. Ondan sonra bu müşterinin statementını alıp sonuç zingine yazmışım.
+
+698
+02:55:26,444 --> 02:55:35,884
+Sonra bütün bu işlemlerden gereksinim belgesinden yola çıkıp elle hesaplayarak da şöyle bir makbuz olması gerekiyor diye bu makbuzu inşa etmişim.
+
+699
+02:55:36,543 --> 02:55:52,024
+Daha sonra inşa ettiğim makbus ile beklenen, elde ettiğim makbus sonuç birbirine eşit mi diye bakıyorum. Eşit ise bu test başarılı, aksi takdirde başarısız şeklinde kodumuzu yapmışız.
+
+700
+02:55:52,024 --> 02:56:04,543
+Benzer mantığı, stasyon ile kiralanan filmler için de yapmışız. Ondan sonra bir de bonus testi de yapmışız. 2 puan ve 1 puan kazanmışız.
+
+701
+02:56:04,543 --> 02:56:27,644
+Kazandığım, kazanmam gereken vakaların örnek olarak da iki tane kira işlemi yapmışım. Ondan sonra cema makbuzu da hesaplamışım ve en sonunda eşofiz kılavar bonusu kazandığımız şeklinde bir onlusu gereken rakamı ekleyip işte yine string karşılaştırılması ile doğru sonuç ardı etmiş miyim ona bakıyorum. Böyle bir test kez hazırlamışım.
+
+702
+02:56:31,615 --> 02:56:49,456
+Bunun için bu dört tane farklı tür nesnenin türlerinin aynı türden olanların bunların gerçekten aynı tür olarak mı ele alındığı, farklı türden olanların da gerçekten farklı türden mi ele alındığını sınamak için test movie types diye bir metot oluşturmuşum.
+
+703
+02:56:49,456 --> 02:56:59,236
+Bunun içerisinde dört ayrı assert kullanmışım. Şimdi, Sargate ve Terminal Transervation'da bunlar NewList. Ben bu kodu yarımdan NewList'im.
+
+704
+02:56:59,615 --> 02:57:13,936
+Çünkü çok eski oldu da herkese. Aynı türden bu iki filmin fiyat kodlarının da aynı geri dönmesini bekliyorum. O yüzden bunları Astroq İl Kursa vermişim.
+
+705
+02:57:14,396 --> 02:57:24,176
+Sonra farklı türden iki film, biri çocuk filmi, biri normal film, bunların fiyat kodlarının da farklı olması gerekmektedir. O yüzden bunların fiyat kodlarını alıp Astroq İl Kursa vermişim.
+
+706
+02:57:24,595 --> 02:57:36,755
+Veyahut da işte bir de assert true ve assert false ile benzer mantıkla fiyat kodları değerlerinin eşitliği ve eşitsizliği üstüne olan hesaplanacak bir değer bulayım ifade olarak da yazmışım.
+
+707
+02:57:36,755 --> 02:57:52,595
+Burada dikkat ederseniz her filmi her filmde karşılaştırılmış oldum. Yani her farklı tür filmi ya da aynı tür filmi birbiriyle fiyat kod açısından karşılaştırılmış oldum. Böylece Black Box'da olsa kapsayıcı olmaya.
+
+708
+02:57:52,595 --> 02:58:05,015
+En azından veri kümesin açısından kapsayıcı olmaya yönet bir test hazırlamışım. Normalde bunların her birinin ayrı ayrı test bilinenme metotlarının içerisinde olmasını beklerdim.
+
+709
+02:58:05,015 --> 02:58:18,655
+Ama isterseniz yapabileceğinizi göstermek için, yapın diye değil ama yapılabiliyor diye göstermek için bir tane test metodunun içerisinde bir daha fazla assert metodu çağrılabileceğini gösterdim.
+
+710
+02:58:20,595 --> 02:58:28,056
+Custom'ı ve test movie üstünde tek tek bireysel olarak, üstlüğünü sağ tıklayıp, run-ass, J-unit testleyebilirsiniz.
+
+711
+02:58:28,216 --> 02:58:34,495
+Ya da bunların ikisini falan birlikte çalışmak istiyorsanız, bunlardan suite oluşturabilirsiniz demiştim.
+
+712
+02:58:34,855 --> 02:58:41,976
+O da test all sınıfı içerisinde. Bir suite oluşturabilmeniz için ise şöyle bir metot oluşturmanız gerekiyor arkadaşlar.
+
+713
+02:58:42,515 --> 02:58:48,595
+Adının suite olduğu, parametre almayan, VGS test türünden bir nesne dönülen public sınıfı.
+
+714
+02:58:48,595 --> 02:59:09,275
+Bir metot yazmamız gerekiyor. Onun içerisinde test suite üzerinden bir tane nesne tanımlayıp, ona bir tanımlayış isim verip, daha sonra hangi birim sinemalarınızı bu suite eklemek istiyorsanız, ona ette suite metodu ile o test kezlerinizin sınıflarını nokta klas gösterme şeklinde vermeniz gerekiyor.
+
+715
+02:59:16,595 --> 02:59:19,376
+İkisini birlikte çalıştırmış olacak.
+
+716
+02:59:20,155 --> 02:59:23,655
+Bakalım nasıl olacak? Şöyle olacak.
+
+717
+02:59:24,255 --> 02:59:24,935
+Sağa tutuyorum.
+
+718
+02:59:25,335 --> 02:59:27,296
+Annes, J'in test diyorum.
+
+719
+02:59:28,755 --> 02:59:46,135
+Perspektif değişti. Jeans penceresine çalışıyor burada. Ve yeşil çubuğu gördüm. Yeşil çubuk demek ki bütün testler başarılı ile başarılı olarak çalıştı anlamına geliyor. Hiçbirinde de hata bulunmadı anlamına geliyor. Bu bütün testler adını verdiğim için şurada, burada da bütün testler şeklinde gözüküyor.
+
+720
+02:59:56,755 --> 03:00:04,135
+Şimdi test getneğin bir, test et not ve nemt iki, şu üç, şu dört.
+
+721
+03:00:04,575 --> 03:00:12,895
+Şurada 5 tane test case'im var. 5 tane test case'im var. Hepsi de kendi içerisinde yeşil yeşil. Hepsi başarılı çalıştı.
+
+722
+03:00:14,755 --> 03:00:24,475
+Test moving'inde bir tane şey var. Her ne kadar 4 tane astrolat yazdıysam da tek bir metod için aslında. O yüzden burada tek bir girdi şeklinde gözüküyor.
+
+723
+03:00:24,975 --> 03:00:27,735
+Bu şekilde yeşil çubuğu gördüm. İşin rahat.
+
+724
+03:00:29,876 --> 03:00:53,595
+Ya problem olsaydı ne olacaktı? Bunu göstereyim. Bitireceğim. Mesela, ben müşterimi yanlış anladım. Bu nedenle mesela normal filmler olduğu zaman iki günleri aşan her gün için bir buçuk değil değil, biri de kodlanacak şekilde yanlış yazdım kodumu.
+
+725
+03:00:54,227 --> 03:01:03,947
+Ben şimdi kasta hata yaptım burada. Ve şimdi şu test movie'yi çalıştıralım mı bakalım. Göreceğiz, hata da vereceğiz.
+
+726
+03:01:03,947 --> 03:01:18,527
+Artıkla, vannes, c.unit test. Test custom olacaktı özledim. Burada custom var. Test customer.
+
+727
+03:01:19,924 --> 03:01:38,844
+Fales, C, test. Evet bakın, bir kırmızı çubuk görünce en azından bir hata olduğunu alıyorum. Ve veya test oldu da çalıştığı da saydığım durum fark etmeyecekti. Aynı hatalar orada da çıkacaktı. Ve neresi hata da ise onun alt dallarını açıp,
+
+728
+03:01:39,283 --> 03:01:49,084
+İlk bulduğu hatanın olduğu noktada, bakın burayı highlight etmiş ve arkada da bu hatanın bir ayrıntısını verdi. Failure trace.
+
+729
+03:01:49,084 --> 03:01:51,244
+Şimdi, diyor ki,
+
+730
+03:01:52,371 --> 03:02:15,831
+Karşılaşılım hatası. Beklenen şey şuydu diyor ama but was, elde edilen şey şu oldu şeklinde bana bilgi veriyor. Bu bilgi de en başından değil de farklılaşmanın olduğu ilk noktadan itibaren veriyor ve farklılaşmanın başladığı yeri de köşeli parantez açaraktan yazıyor.
+
+731
+03:02:16,251 --> 03:02:19,291
+Farklaşmanın bittiği yerde de köşeli parantezi kapatıyor.
+
+732
+03:02:19,763 --> 03:02:31,763
+Diyor ki, şunu bekliyordunuz siz, shadow matrix 3.5, master 3.0, sagratis artı 0, toplamda 12.5 borcumuz var şeklinde bekliyordunuz. Fakat elde ettiğiniz...
+
+733
+03:02:32,340 --> 03:02:41,840
+Matrix 3 lira, Monsters 3 lira, Cybert artıyla toplam borcunun 12 şeklinde, geri kalan kısımlar ise aynı.
+
+734
+03:02:41,840 --> 03:02:45,879
+Yani bütün farklılaşmanın olduğu noktaya da benim nokta işi yönlendir.
+
+735
+03:02:46,299 --> 03:02:53,100
+Ben de oradan anlıyorum ki problem ne farklılaştı? Matrix'in ve toplam borcun farklılaştı.
+
+736
+03:02:53,500 --> 03:02:59,139
+Ben yukarı çıkıyorum setup metoduma, test customımda.
+
+737
+03:02:59,551 --> 03:03:14,752
+Setup metoduna çıkıyorum. Matrix neydi? New du, New Reads'di. Demek ki ben New Reads, finlilerin masrafının, faturasının çıkartılmasında, borcunun hesaplanmasında bir hata yapmış olmalıyım diyorum.
+
+738
+03:03:15,311 --> 03:03:27,551
+Biliyorum Mühendisliği'ye New Reads örneğimin case'ine girdiğimde, burada ben bir yazmışım, harik bir müşterim benden bir buçuk istemişti deyip, hatamı düzeltip, ondan sonra testimi...
+
+739
+03:03:27,551 --> 03:03:41,551
+Tekrar çalıştırdığımda, şurada isterseniz, şuradaki bütün testi çalıştırıyorum ise, şunun sadece ve önce başarısız olanları çalışır şeklinde iki seçimlerimiz var.
+
+740
+03:03:41,971 --> 03:03:49,412
+Hepsini çalıştır diyorum. Hepsini çalıştırdığımda artık hatam yok. Bu işi düzeltmişim oldu, geçmiş olsun şeklinde.
+
+741
+03:03:50,451 --> 03:03:56,332
+Gönümü tamamlamanın hatlarıyla mühendisliği arasına çıkabilirim diyorum mesela.
+
+742
+03:03:56,992 --> 03:04:02,652
+Evet. Şey bu arkadaşlar. Bunun bu. Ve sizlerin de proje yönetiminiz kapsamında onun...
+
+743
+03:04:02,656 --> 03:04:15,956
+Kodladığınız kısmına şahsen yönelik, yoksa kodlamadığınız kısımlarında olabilir. Çünkü herkes bir katkıda bulunacak ya, 4 kişi, 5 kişi, 6 kişi, ekiplerde herkesin sırf kodlanan kısma yönelik bir katkıda bulunması zor olabilir.
+
+744
+03:04:15,956 --> 03:04:28,736
+Ama tasarım mı ayrıntılı yapacaksınız ya, sınıf tasarımımızla metodlar falan belli olacak, üye alanda üye metodlar, mağazlıklar, bunların arasındaki ilişkiler, da sequence, diagram falan da çizeceksiniz hatta.
+
+745
+03:04:29,396 --> 03:04:30,656
+O noktalardan yola çıkan...
+
+746
+03:04:30,656 --> 03:04:40,276
+Bu şekilde zirin sunamaları kodu yazabilirsiniz arkadaşlar. Hepinizden de bunu bekliyorum.
+
+747
+03:04:40,876 --> 03:04:45,296
+Müdek program çıktılarına erişmek açısından bu kritik bir şey.
+
+748
+03:04:46,296 --> 03:04:47,276
+Öğrencilerin...
+
+749
+03:04:48,948 --> 03:05:13,727
+Deney tasarlayabilmeleri program çıktısına erişimini ölçen bir not bile. Şimdi bu, bunu yapmazsanız daha sonra bu program çıktısına erişemediğiniz nedeniyle size 4. sınıfta ek bazı görevler vermek zorunda kalacağız. Böyle şeylerle ulaşmak istemiyorsanız, bu kadar güzel, düzgün katkılar da bulunmak istiyorum.
+
+750
+03:05:14,324 --> 03:05:26,064
+Ötüleriniz ya hocam bir dolu not bileşeni var proje döneminde, bir unit testini yapmasam yüz anında doksan alayım ne olacak diyebilirsiniz ama işte problem çıkan ulaşımı ölçen de bir şey olduğu için bu kritik.
+
+751
+03:05:28,468 --> 03:05:42,408
+Bunlar bunlar arkadaşlar. Biraz uzatmış oldum, çok üzülüyorum. Planlara aşkım ama yarıda da bölmek istemedim. Projeye başlamış olanlarımız da var. O yüzden bu bilgiyi anlatmak da kritikti.
+
+752
+03:05:44,048 --> 03:05:56,468
+Haftaya uygulamamız var arkadaşlar. Haftaya dersi başlattığımda asistan hocalarımızdan birisiyle karşılaşacaksınız.
+
+753
+03:05:56,468 --> 03:06:12,168
+Ben onu soranması olarak yapacağız. Erçin Hocam yanılmıyorsa benim gruba bakacaktı bu oturumda. Başkocalık bakacağız ama haftaya bu lab uygulanması yapacağız arkadaşlar. Haftadaki konumuz.
+
+754
+03:06:12,948 --> 03:06:38,628
+Yine saat 9'da başlayacağız. Adı laboratuara ama not almayacaksınız. Aslında uygulama şeklinde olacak. Hocamız sizinle bir tasarım etkinliğini, sizinle nasıl Nextgram, Pox'tan, Smoosh çövresi oluşturmuştum ve işte aktivite diagram ve state diagram yapmıştık hep birleşen bir şekilde benzer bir çalışma yürütülecek.
+
+755
+03:06:40,948 --> 03:07:04,948
+Sizin de kendinizin öncelikle hocadan bağımsız olarak çalışma yapmanız. Ondan sonra gönüllü arkadaşların, hocam ben böyle yaptım, bir inceleyip değerlendirir misiniz şeklinde etkileşimli olarak hareket etmeleri. Böylece diğer dinleyicilere de hakkıda bulunuyorsunuz.
+
+756
+03:07:05,948 --> 03:07:08,888
+Şunun şöyle değil de böyle yapılması daha uygun.
+
+757
+03:07:08,948 --> 03:07:25,167
+Geri bildirimler, ne kadar kendi çalışmalarınız, değişik alternatiflerle hocanızla sunarsanız, o kadar farklı geri bildirimler alıp, bilgi birikliğiniz o kadar ilerletmiş olacaksınız. O yüzden sizden hocam aktif katılın.
+
+758
+03:07:26,647 --> 03:07:35,747
+Maalesef bütün öğrencilerim aktif katılmıyor ama, özellikle bu önemli, mümkün olduğu kadar kamu göstermemizi neca ediyorum.
+
+759
+03:07:36,308 --> 03:07:52,268
+Haftaya yapacağımız şey bu olacak. Peki. Sonumuz varsa buyurun üstünden geçelim. Şu aşamada yoksa daha sonra aklınıza gelirse bir haftaya bakacağız buna.
+
+760
+03:07:52,268 --> 03:08:03,268
+Gerçi şimdi bu arada projelerinizin sunum zamanları da yaklaşıyor bu arada. Ben dersin içeriğini daha henüz...
+
+761
+03:08:03,731 --> 03:08:25,832
+bitirememiş durumdayım. O yüzden ben büyük olasılıkla size telafi dersleri hazırlayacağım. Ders programınızla çakışmayacak bir plan kapsamında şeyler hazırlayacağım, ders hazırlayacağım.
+
+762
+03:08:30,036 --> 03:08:38,976
+Bilmiyorum bakacağım. Yani en içten OBS sayfalarınıza bakın. Sizleri ne zaman yapacağımız konusunda bilgilendireceğim.
+
+763
+03:08:40,935 --> 03:08:47,976
+Peki. Bu kadar. Geçmiş olsun. Haftaya görüşmek üzere. Şimdilik hoşçakalın.

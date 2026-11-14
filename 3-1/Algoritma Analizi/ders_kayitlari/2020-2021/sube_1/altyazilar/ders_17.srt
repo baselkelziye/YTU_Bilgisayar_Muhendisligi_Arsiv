@@ -1,0 +1,2387 @@
+1
+00:00:25,172 --> 00:00:26,292
+Merhaba arkadaşlar.
+
+2
+00:00:28,432 --> 00:00:31,032
+Balmürken bir yavaşlık oldu sizlere oldu mu bilmiyorum.
+
+3
+00:00:35,444 --> 00:00:38,184
+Evet hocam, sistem işlemi bayağı yavaş ya.
+
+4
+00:00:38,984 --> 00:00:59,904
+Evet, herhalde bir güncelleme falan çok sık yapıyorlar. Belki onunla ilgilidir, bilmiyorum. Böyle bir şey var, yavaşlık var. Bir şeye bakayım. Şuradan, en son burada kalmıştık. Bir iki dakika bekleyeyim çünkü dediğim gibi ben de yavaş var, bağlandım. Şu anda otuz üç kişi gözüküyor.
+
+5
+00:01:03,667 --> 00:01:12,427
+Biraz, ya da şey yapayım şöyle beklerken. Ekranımı görüyorsunuz değil mi şu anda? Herkes görüyor, open addressing falan yazıyor.
+
+6
+00:01:19,731 --> 00:01:20,972
+Evet hocam gözüküyor şu an.
+
+7
+00:01:21,852 --> 00:01:37,031
+Tamam, peki. Şimdi şurada izlerden de belli olduğu üzere en son sınavdan önceki hafta benim kalemin doğru düzgün çalışamadığı için şarjı bitiyordu. Bir noktada artık yeterli kesmiştik, öyle hatırlıyorum.
+
+8
+00:01:37,456 --> 00:01:57,355
+Şimdi oradan devam etmek istiyorum. Şimdi biz hash ile ilgili open addressing'i gördük önce. Bizim oradaki yaptığımız şey neydi? Bir hash tablosuna şu şekilde hemen zaten bugün ödevde tesliminiz var.
+
+9
+00:02:00,563 --> 00:02:21,524
+elemanı bir hash tablosundan geçirip ürettiği adres değeri neyse o adrese yerleştirmeye çalışıyorduk. Bizim buradaki problemimiz eğer o adres boş ise bir sıkıntı yok. Eğer boş değil ise boş adres bulana kadar arama yapmamız gerekiyordu. Bu open addressing de.
+
+10
+00:02:23,283 --> 00:02:29,824
+ve genellikle işte boş bulduğumuz adrese yerleşerek kolaylıkla çözebildiğimiz bir problemdi.
+
+11
+00:02:30,963 --> 00:02:39,524
+Bunun dışında ikinci bir yaklaşımda geçtik sınavdan önceki hafta şey olmuştu, orada kalmıştı.
+
+12
+00:02:43,828 --> 00:03:01,828
+Separate Chaining yaklaşımı. Separate Chaining yaklaşımı da şöyle bir yaklaşım. Bu sefer n eleman sayısından küçük bir tablo oluşturuyoruz.
+
+13
+00:03:02,259 --> 00:03:15,319
+Çünkü burada diyoruz ki eğer biz şey oluşursa, öplejin oluşursa örneğin ben işte bir ki'yi şey yaptım.
+
+14
+00:03:17,235 --> 00:03:33,235
+fonksiyonundan geçirdim ve birinci adrese yerleşecektim. Birinci adresde de başka bir değer var. O zaman yeni bir boş yer aramak yerine ben linkli liste mantığı ile elemanları ucuca...
+
+15
+00:03:34,484 --> 00:03:39,204
+Şöyle yapayım, şu aslında bir adres gösterdiği için burada bir şey yok aslında.
+
+16
+00:03:39,843 --> 00:03:56,324
+Benimki burada beş var, işte burada üç var. Böyle elemanlar var. Bunlar aynı adresi gösteren, fakat işte başka bir eleman olduğu için yan yana olarak eklenmiş elemanlar.
+
+17
+00:03:56,324 --> 00:04:02,324
+O zaman Separate Chaining'in söylediği şey, biz bu elemanı bulup.
+
+18
+00:04:02,484 --> 00:04:14,484
+linkler isteye ekleriz. Böylece yeni bir adrese yerleştirmeye çalışmakla uğraşmayız. Dolayısıyla bu da ikinci bir çözüm yolu.
+
+19
+00:04:15,379 --> 00:04:36,319
+M'in n'den küçük olması, maksimum da M'in n'e eşit olması gerekiyor. Eğer M'in çok büyük alırsanız, bu gereksiz yer kaybına yol açıyor. Çok da küçük alırsanız bu sefer buradaki linkiniz çok uzayacağı için.
+
+20
+00:04:43,379 --> 00:04:58,120
+tablo uzunluğumuz 10-52, işte 11-5, eleman sayımız 10-52, yaklaşık 3-4 uzunlukta bir tablo hazırlamanızın yeterli olacağı belirlenmiş.
+
+21
+00:04:58,379 --> 00:05:01,480
+Şimdi şey analizlerinin, bu dersin sonunda yapacağım size.
+
+22
+00:05:01,480 --> 00:05:05,279
+En başta ilk derse ben size hatırlarsanız demiştim ki,
+
+23
+00:05:11,379 --> 00:05:29,879
+bağlı değildir demiştim. Bununla ilgili açıklamayı da dersin sonunda yapacağım. Şimdi şeyle kalmıştık, separate chainingi yapmak için sadece şeyi anlatsam yeterli olacağını düşünüyorum. Insert işleminin nasıl yapılacağını anlatsam yeterli olacağını düşünüyorum. İşlemin nasıl?
+
+24
+00:05:30,451 --> 00:05:46,451
+Yapılacağına birlikte bakalım. Şimdi sonuçta burada benim tabloyu ben adres tutmak için, adres göstermek için kullanıyorum. Linkli listede burası başlangıç adresini gösterecek.
+
+25
+00:05:46,451 --> 00:05:58,451
+İşte ne bileyim, burada diyelim ki bin yazıyor. Bin numaralı adreste beş var. İşte beş, dur onu biraz şöyle alalım, büyük yapalım. Hatırlatma amaçlı. Şu tablo adres...
+
+26
+00:05:58,451 --> 00:06:00,451
+ses gösteren bir tablo aslında.
+
+27
+00:06:04,084 --> 00:06:16,484
+Diyelim ki key'iniz işte 11 olsun, hash'den geçti, 4 numaralı adresi gösterdi. Hiç şeye bakmıyorum şu anda nasıl hesapladığına falan. Bakmıyorum şöyle bir tablomuz olsun.
+
+28
+00:06:19,204 --> 00:06:29,644
+Şurada biraz şey üst üste gelmişler. Tablo boşsa işte 11'i buraya yerleştirdi. Burası nal.
+
+29
+00:06:29,968 --> 00:06:45,968
+Bir sonra başka bir şey daha geldi. Mesela 8 geldi. O da 4 üretti. O zaman ne yapacaksınız şimdi? 8 için de bir dinamik allocation yapacaksınız. Tablo başı 8'i gösterecek.
+
+30
+00:06:46,064 --> 00:06:54,064
+8'de 11'i gösterecek. Yani şöyle düşünelim. Mesela 8 bin numaralı adreste ise 4 bini gösterecek.
+
+31
+00:06:54,064 --> 00:07:02,064
+İşte diyelim ki burası da 1500 numaralı adreste ise 8'de 1500'ü gösterecek şeklinde bir yapı kurmamız gerekiyor.
+
+32
+00:07:02,064 --> 00:07:07,692
+Buraya kadar bir sıkıntı var mı? Aklınıza yatmayan bir şey var mı?
+
+33
+00:07:08,244 --> 00:07:23,244
+Yok herhalde. Şimdi o zaman bunun için uygun yapıyı tasarlayalım. Şimdi öncelikle bir düğümüm var benim. Şunlar benim düğümlerim. Önce o düğümün yapısının nasıl olacağına bakalım. Nasıl olacak?
+
+34
+00:07:29,139 --> 00:07:44,259
+Bir key'imiz var, o düğümde bir key'i saklayacağız. Ondan sonra diyelim ki işte bir kişinin isim bilgilerini saklayacağız.
+
+35
+00:07:48,564 --> 00:07:53,363
+ve bir sonraki elemanın adresini göstereceğiz.
+
+36
+00:08:08,788 --> 00:08:10,788
+Bu konuda tanımlayacağım.
+
+37
+00:08:12,788 --> 00:08:15,660
+İstahamayacağım herhalde birazcık şöyle karatiliye.
+
+38
+00:08:27,636 --> 00:08:48,476
+O konu sadece başlangıcına tutmam yeterli. Bir de şeyi tutabilirim. Chain'de kaç eleman olduğunu yani mesela şurada yan yana kaç eleman olduğunu countta onu tutabilir. Yani o özel bir sebebi yok. Onu o şekilde tutabilirsiniz. Önce bir şeye bakalım.
+
+39
+00:08:49,427 --> 00:09:05,707
+yapıya bakalım. İşte deklarasyonlarımız falan var. Structure hash tabinde bir hash table'unuz olacak. Sorunuz varsa lütfen kesin beni ve başlangıçta now...
+
+40
+00:09:05,812 --> 00:09:31,659
+boş bir hash teybimiz olacak. Ondan sonra ana programda sadece hash teybimiz için bir yer tutalım. Sonra fonksiyonları çağırabilirim. Mesela işte her gelen elemanı şeye eklemek diyelim ki, hash tablosuna eklemek ile ilgili bir kod yazdığımızı düşünelim.
+
+41
+00:09:32,371 --> 00:09:43,672
+Şimdi şurada okuma işlemleri olsun falan, artık ne yapacaksınız öyle şeyler olsun. Ben sadece gerekli bilgiyi yazacağım.
+
+42
+00:09:45,811 --> 00:09:59,951
+Teşte bunu nasıl oluşturacaksınız? Struct hash tipinde pointerlardan oluşacak. Başlangıçta sıfırlayacaksınız. M tane elemanınız var.
+
+43
+00:10:00,000 --> 00:10:16,000
+Burada bütün okumaları, deklarasyonları falan da böyle yaptığımızı varsayalım. M tane elemanımız var ve her eleman için sizeofstructurehash kadar yer alok edebileceksiniz.
+
+44
+00:10:32,307 --> 00:10:35,307
+Nasılsa geri döneceksiniz.
+
+45
+00:10:54,740 --> 00:11:04,100
+Ve sonra işlemleriniz var. Şimdi bakın burada yaptığımız şey, bir düğümünüz var. O düğüm şu düğüm. Şöyle şey yapayım.
+
+46
+00:11:07,091 --> 00:11:28,591
+Şu düğümü şu şekilde deklare ediyoruz, Structure yapısında. Bir de tablomuz var. Tablomuzda böyle bir başlangıç düğümünden, her şey için, eleman için, head var. Head'in de gösterdiği şeyler var.
+
+47
+00:11:28,591 --> 00:11:35,091
+Nedir? Düğümler var sırasıyla. Bu tipte bir M tane elemandan oluşan H dizisi oluşturacağım.
+
+48
+00:11:35,091 --> 00:12:03,091
+Yani bu hash tablonun bir elemanının durumunu gösteriyor. Çünkü her eleman bir şeyinin, chain dizisini aslında, burada bir dizi var çünkü. Her eleman o dizinin hash elemanı. O dizideki başlangıç adresini gösteriyor. Ondan sonra onlar ucuca böyle gidecekler her yeni eleman eklendiğinde. Dolayısıyla benim böyle tablo uzunluğu kadar yani Manisa'nın ne...
+
+49
+00:12:03,091 --> 00:12:11,091
+N'si, M tane elemanım olması lazım. O deklarasyonu burada yapıyorum. Tablo için, yer allocation'ını burada yapıyorum.
+
+50
+00:12:11,091 --> 00:12:16,091
+M tane eleman için struct hash tipinde yani...
+
+51
+00:12:19,283 --> 00:12:32,844
+Şu tipte, bu bir elemanı gösteriyor çünkü, bir elemanın durumunu gösteriyor. Emlik yer tutuyorum. Bu linkli liste yapısında bir dizim var sonuçta. Yani linkli liste dizisi tanımlamış oluyorum. Böyle kadar sormak istediğiniz bir şey var mı?
+
+52
+00:12:34,844 --> 00:12:45,524
+Bundan sonra da yapmak istediğim şeyleri yapacağım. Mesela insert diyelim ki, insert yapmak istiyorum. Altı görüyor musunuz?
+
+53
+00:12:48,947 --> 00:13:00,108
+Evet hocam. Tamam mesela insert to hash deyip okuduğum key ve isim için tabloya bir ekleme yapacağım.
+
+54
+00:13:00,211 --> 00:13:10,451
+yapacağım şey bu şekilde, tasarım bu şekilde. Yani insert edebilirsiniz, search edebilirsiniz vesaire. Tablo üzerinde artık ne yapmak istiyorsanız yaparsınız.
+
+55
+00:13:10,451 --> 00:13:23,572
+Ben sadece temsili olması açısından böyle bir linkli liste dizisi şeklindeki tabloya bir yeni hash elemanını, daha doğrusu yeni bir elemanı
+
+56
+00:13:23,988 --> 00:13:35,988
+Bu tabloya nasıl yerleştiririz onu anlatacağım size. Şimdi ne olması lazım? Şöyle birlikte yazalım. Aslında siz geçen sene şeyi çok iyi gördünüz.
+
+57
+00:13:41,908 --> 00:13:49,867
+linkli liste yapısını çok iyi gördünüz. O yüzden rahatlıkla şey yapacağımızı düşünüyorum, anlayacağımızı düşünüyorum.
+
+58
+00:13:51,668 --> 00:13:56,908
+Tabloya yerleştirmek istediğim bilginin hangi...
+
+59
+00:13:57,460 --> 00:14:02,680
+adrese hesaplanacak, key değerine göre adrese hesaplanacak.
+
+60
+00:14:02,680 --> 00:14:09,260
+Meş fonksiyonundan geçecek olan değer bu değer ve bir de isim dizisi var.
+
+61
+00:14:09,260 --> 00:14:12,760
+Şimdi buna göre...
+
+62
+00:14:16,659 --> 00:14:20,500
+şey yapalım, nereye yerleşecek bu eleman?
+
+63
+00:14:32,244 --> 00:14:39,744
+Şimdi burada biz bunu global tanımlamıştık. Çünkü bütün fonksiyonlarda geçiyor tablo uzunluğu.
+
+64
+00:14:42,196 --> 00:15:07,136
+şey yapabilirsiniz, yani ya global tanımlarsınız, makro tanımlarsınız ya da o kadar da şey olmasını istemiyorsanız, fonksiyondan fonksiyonu aktara aktara kullanabilirsiniz. Bu mümkün. Tamamen sizin tasarımda nasıl bir yol izlediğinizle ilgili hepsi olur. Şimdi yeni gelen eleman için bir yer allocate etmem gerekiyor, değil mi?
+
+65
+00:15:08,563 --> 00:15:14,203
+Bir eleman geldi. Bunu hash tablosuna yerleştireceksem bu eleman için yer allocate edeceğim.
+
+66
+00:15:14,703 --> 00:15:21,484
+Allocate edeceğim yerin tipi nedir? Şurada gördüğümüz struct not tipinde olmalı.
+
+67
+00:15:21,583 --> 00:15:28,224
+Her eleman yeni bir şey, düğüm. O yüzden onu not tipinde olması gerekiyor.
+
+68
+00:15:28,724 --> 00:15:33,203
+O yüzden böyle bir MemeNode diye bir eleman tanımlıyorum.
+
+69
+00:15:33,203 --> 00:15:36,563
+Şimdi onun için de yer allocate etmek...
+
+70
+00:15:36,563 --> 00:15:51,244
+için de ayrı bir fonksiyon kullanalım. Şimdilik ben bunu böyle yazıyorum. Birazdan fonksiyonunu da yazacağım. Şurası şey için, yeni eleman için yer allocate derken.
+
+71
+00:15:56,500 --> 00:16:00,159
+kullandığımız fonksiyon olacak. Onu birazdan yazacağım.
+
+72
+00:16:02,679 --> 00:16:06,159
+Şimdi, önce şunu söyleyeyim.
+
+73
+00:16:07,620 --> 00:16:09,579
+Tasarımımızın nasıl olması lazım?
+
+74
+00:16:09,579 --> 00:16:11,579
+Ya...
+
+75
+00:16:12,340 --> 00:16:40,300
+Burada hiçbir eleman yoktur. Mesela şurada olduğu gibi daha önce yerleşmiş bir eleman yoktur. O zaman benim neyi belirlemem lazım? İlk defa olacağı için hedi belirlemem lazım. Yani bir eleman için yer tuttum. Örneğin işte 5 mesela ikinci göze yerleşecekti. Değil mi? 5 diyelim ki 2. bu ikinci göze yerleşecek. 5 de işte 3000 numaralı adresi tutuyor.
+
+76
+00:16:40,340 --> 00:17:00,440
+Benim ne yapmam lazım? Bunu hash tabloma bağlamam lazım. O zaman heading ne olmalı? 3000 olmalı ki bu elemanı kaybetmeyin. Şimdi birinci seçenek bu. Yani tabloda hiçbir eleman yoksa o zaman yapacağım işlem. Şimdi tabloda hiçbir eleman yok demek ne demek?
+
+77
+00:17:07,059 --> 00:17:32,779
+hashindexinci gözü, yani mesela işte şeyden geçirdim, M'e göre modunu aldım, 3 çıktı. Eğer 3. gözünün head'i null ise, yani şuradan onu kontrol ettik, null ise o zaman ne yapmam lazım? Hemen head'i belirlemem lazım. Yani demem lazım ki, hash table'ın
+
+78
+00:17:34,067 --> 00:17:56,527
+hashindexinci gözünün, head'i, bu artık new node hangi adrese yerleştiyse orası olacak demem lazım değil mi? Burada yaptığım işlem şu. Yani 3000'i, yani bu nodun adresini tabloya yerleştirdim ki,
+
+79
+00:17:57,875 --> 00:18:06,375
+Bir chain oluşturmaya başlayayım. Yani bu ikinci göze yerleşen ilk eleman 3000 numaralı adresteymiş. Yani head'i oluşturdum.
+
+80
+00:18:06,375 --> 00:18:20,375
+Share açısından tabloda tuttuğum işte şeyde daha doğrusu chain'deki eleman sayısını göstermek açısından count'u da 1 yaptım.
+
+81
+00:18:20,375 --> 00:18:25,375
+Ve return ettim buradan işim bitti.
+
+82
+00:18:26,228 --> 00:18:33,228
+Buradan çıktım. Yani çıkarabilirsiniz, çıkmayayım. Ben aslında şöyle yapayım, else diyeyim.
+
+83
+00:18:33,228 --> 00:18:44,228
+Şimdi eğer tabloda başka elemanlar var ise o da şu durum.
+
+84
+00:18:45,523 --> 00:18:52,803
+Şimdi 8 geldi, 8'i yerleştireceğim bu tabloya, 1000 numaralı adreste, o zaman ne yapacağım?
+
+85
+00:18:53,183 --> 00:18:59,203
+Şimdi iki tür davranabilirsiniz. Birincisi gidip bunu chain'in en sonuna yerleştirebilirsiniz.
+
+86
+00:18:59,543 --> 00:19:08,943
+Ama bu boşu boşuna chain'de ilerlemek demektir. Yani chain'de 8 tane eleman varsa, 8.yi bulup onun sonuna yerleştireceksiniz.
+
+87
+00:19:13,523 --> 00:19:29,763
+hemen elemanı head yaparsınız, eski head'i de ona bağlarsınız. Yani şurada yaptığımız işlem. Yeni head'imiz 1000 oldu, 1500'deymiş mesela 11. Head'de 11'i 1500 adresini gösterdi.
+
+88
+00:19:29,903 --> 00:19:53,743
+O zaman onu yapalım. Eğer tabloda zaten head varsa, başka bir elemanlar varsa, o zaman yapmam gereken şey, yeni düğümün next'i hash tablosunun, o aslında hash index'inci gözünde bulunan,
+
+89
+00:19:54,708 --> 00:20:08,548
+mevcut edin adresini göstermeli değil mi? Bu yaptığımız işlem yeni eleman linkli listenin en başına yerleşti. Şu anda yaptığım şey bu.
+
+90
+00:20:15,635 --> 00:20:16,635
+Yap, tam ish vun.
+
+91
+00:20:22,771 --> 00:20:24,331
+Ve HashTable'ın
+
+92
+00:20:28,852 --> 00:20:30,852
+hash index'inin
+
+93
+00:20:32,272 --> 00:20:33,996
+headide ne oldu?
+
+94
+00:20:37,683 --> 00:20:43,683
+Bu yeni elemanın adresi oldu. Böylece head yeni elemanın adresi olarak değişti.
+
+95
+00:20:43,683 --> 00:20:55,683
+Bir de neyi değiştireceğiz? O zincirde, yani o linkli liste zincirinde, o satırda eleman kaç tane var onu tutuyorduk.
+
+96
+00:20:55,683 --> 00:21:02,683
+Ondan sonra onu değiştireceğiz. Böylece yeni gelen bir elemanı
+
+97
+00:21:02,751 --> 00:21:07,751
+hashtag'la eklemiş oldum. Buraya kadar sormak istediğiniz aklınıza takılan bir şey var mı?
+
+98
+00:21:15,347 --> 00:21:20,007
+Hocam, LinkedIn'in yolu için aslında kanuta direkt ihtiyacımız yok herhalde değil mi?
+
+99
+00:21:20,468 --> 00:21:45,468
+Yok, zevk için. Yani, acaba hani, şeyi de görmek istersen, çünkü şunun için görmek isteyebilirsin. Chain'in çok uzadığını fark edersen, bir önlem alman gerekir. Mesela şunu yapabilirsin, count'u arttırırsın. İşte count, bilmem işte, bir eşik seviyesinden büyükse, ne bileyim, rehash yapabilirsin mesela. Count yoksa başka bir anlamı yok.
+
+100
+00:21:47,827 --> 00:21:48,827
+Anlatabildim mi?
+
+101
+00:21:49,387 --> 00:21:50,147
+Teşekkürler.
+
+102
+00:21:50,907 --> 00:21:56,127
+Yani, hayır, ciddi soruyorum anlatabildim mi derken, yani yeterli mi bu cevap?
+
+103
+00:21:56,488 --> 00:21:57,387
+Evet, evet, anladım.
+
+104
+00:21:57,947 --> 00:22:00,887
+Tamam, yani şey yok, başka bir anlamı yok.
+
+105
+00:22:00,887 --> 00:22:06,427
+Yani, idareyi evde tutalım, bir şey oluyorsa, çünkü o da bir sıkıntı aslında.
+
+106
+00:22:07,127 --> 00:22:10,667
+Birazdan bahsedeceğim, şeyinin, yani biz…
+
+107
+00:22:16,723 --> 00:22:18,983
+Pardon, bir ses sürünün, ondan bunu hiç açıyorum.
+
+108
+00:22:19,804 --> 00:22:24,723
+Çeynin biz aslında mantıken, N'e bağlı olmayacağını ve uzamayacağını varsayıyoruz.
+
+109
+00:22:25,423 --> 00:22:33,723
+Ama kontrol dışında çok uzarsa da bir önlem alıp reheş yapmanız gerekir ki karmaşıklık gereksizliğe artmasın.
+
+110
+00:22:34,624 --> 00:22:36,723
+Peki, o zaman...
+
+111
+00:22:39,443 --> 00:22:40,587
+Şimdi bir de...
+
+112
+00:22:43,763 --> 00:22:48,763
+Node nasıl allocate edilir, Node-i-Chinier, ondan bahsedelim.
+
+113
+00:22:50,763 --> 00:22:53,763
+Yani bunlar dediğim gibi içim çok rahat.
+
+114
+00:22:53,763 --> 00:23:03,763
+Çünkü siz veri yapılarında bu konuların bayağı indirişte konusunu artık bıktırana kadar anlatmıştık.
+
+115
+00:23:03,763 --> 00:23:07,763
+Eminim ki artık dahi değilsinizdir o konuda.
+
+116
+00:23:11,220 --> 00:23:16,220
+O yüzden ama yine de şey değil, unuttuğunuz, aklınıza takılan bir söz lütfen beni görün.
+
+117
+00:23:17,011 --> 00:23:40,091
+Şimdi bir new node diye bir değişken tanımladık haliyle. Bakın dikkat edin, fonksiyonumuzun dönüş tipi node tipinde. Yani biz tuttuğumuz yerin adresini return edeceğiz, geri döndürürüz. O yüzden dönüş tipi bu şekilde. Şimdi bunu da bir aslında, yazayım da öyle söyleyeceklerimi. Önce bir yazayım.
+
+118
+00:23:42,836 --> 00:23:45,836
+New node için yani gayet iyi bildiğiniz işler bunlar.
+
+119
+00:23:46,836 --> 00:23:48,836
+Yer allocate ettik.
+
+120
+00:23:49,836 --> 00:23:52,836
+Bir tane eleman yerleştireceğimiz için
+
+121
+00:23:54,836 --> 00:23:57,836
+Struct node kadarlık bir yer allocate ettik.
+
+122
+00:23:58,836 --> 00:23:59,836
+Şurada
+
+123
+00:24:00,836 --> 00:24:02,836
+yazıyorum şuraya, kontrol diye.
+
+124
+00:24:03,836 --> 00:24:07,836
+İşte yer allocate ettim mi etmedim mi onu bir kontrol edersiniz.
+
+125
+00:24:08,884 --> 00:24:29,884
+Edemediysem, edemedim falan filan yazar, dönersiniz. O işin de yapıldığını varsayıyorum. Ondan sonra yerleştireceğim. Ne diyeceğim? NewNode'un diyeceğim. Key değişkeninin değeri, main function'da okuduğum key değeri ve NewNode'un...
+
+126
+00:24:33,811 --> 00:24:39,811
+Name'i de, yine main function'da okudum, name'i kopyaladım.
+
+127
+00:24:39,811 --> 00:24:45,811
+Nimnode'un next'i ne olacak?
+
+128
+00:24:45,811 --> 00:24:48,811
+Next böyle değildi galiba, küçük arke miydi?
+
+129
+00:24:49,811 --> 00:24:54,811
+Nimnode'un next'i de ne olacak? Mal olacak.
+
+130
+00:24:54,811 --> 00:24:56,811
+Bitti, return edeceğim.
+
+131
+00:25:01,971 --> 00:25:11,652
+Şimdi bu şekilde ne yaptım? Bir tane node için yer alakate ettim. Yer'in büyüklüğü, Struct node'un size'ı kadar, byte, o kadarlık yer alakate ettim.
+
+132
+00:25:12,011 --> 00:25:19,831
+İşte şurada kontrol ettim. Dinamik adokasyon sonucunda yer tutamamış olma ihtimaliniz vardır. Her zaman başınıza gelebilir.
+
+133
+00:25:20,291 --> 00:25:29,912
+Bunlar önemli şeyler. Olmaz dersiniz ama hep söylerim. Safety Critic bir kod yazıyorsanız, yani diyelim ki işte uzaya füze gönderiyorsunuz veya
+
+134
+00:25:29,971 --> 00:25:43,751
+bankanın çok önemli transaction yazılımını yazıyorsunuz falan. Oralarda bu tür olmayacak, olmaması beklenen problemleri de mutlaka kontrol etmeniz gerekir ki.
+
+135
+00:25:43,912 --> 00:25:56,692
+Yüzyılda bir başınıza gelir, ondan sonra çok ciddi bir sıkıntı yaşarsınız. Burada da işte key'e key'e atadık, name'i aldık, next criminal yaptık ve tuttuğumuz yerin adresini geri göndürdük.
+
+136
+00:25:57,971 --> 00:26:09,192
+Bir şey burada söyleyeyim. Öğrencilerin çok sık yaptıkları bir hata var. O da şu, artık bunu sizler yapmıyorsunuzdur diye tahmin ediyorum.
+
+137
+00:26:13,172 --> 00:26:17,292
+Dinamik alokasyon ile tuttuğunuz bir adresi geri döndürebilirsiniz.
+
+138
+00:26:18,152 --> 00:26:24,532
+Bunun sebebi dinamik alokasyonla tutulan bilgilerin HIP alanında saklanmasıdır.
+
+139
+00:26:24,672 --> 00:26:29,912
+Dolayısıyla program çalıştığı sürece alokate edilen yerler geçerli olur.
+
+140
+00:26:29,912 --> 00:26:41,172
+Ama lokal bir dizi tanımlandığında, yani şöyle bir şey olsaydı, diyelim ki şunu yapamazdık, bir F1 fonksiyonu içinde bir A1.
+
+141
+00:26:41,172 --> 00:27:09,172
+dizisi tanınmayıp, onun içini doldurup da Return A diye geri döndüremezdik. Bu yaptığınız işlem aslında sintaks hatası vermeyecek bir işlem. Fakat A dizisi lokalde tanımlandığı için çıktığında yeri kaybedersiniz. Dolayısıyla şansınız varsa, orayı başkası kullanmadıysa o diziye erişirsiniz. Şansınız yoksa başkası kullanmadıysa o diziye erişirsiniz. Şansınız yoksa başkası kullanmadıysa.
+
+142
+00:27:09,172 --> 00:27:17,332
+Başkası kullandıysa o diziye erişemezsiniz. O zaman da Sometime modunda çalışan bir programınız olur. Bazen çalışır, bazen çalışmaz.
+
+143
+00:27:17,332 --> 00:27:29,451
+Ve anlayamazsınız da, ya ne oldu çalıştı, ne oldu çalışmadı. Çünkü bellekteki o bölge boş değilse, bu da yaptıklarınız işin sonunda oluşan dizi için, dizi orada duruyordur, erişebilirsiniz.
+
+144
+00:27:30,195 --> 00:27:42,836
+Ama kullanıma açıldığı için siz return ettiğinizde, başkası kullanırsa da bu adizis melemanlarını göremezsiniz. O zaman da çalışmaz mesela.
+
+145
+00:27:43,015 --> 00:27:56,655
+Ama dinamik alokasyon yaptığınızda öyle bir problem yok. Çünkü burada yapılan deklarasyon lokalde tutulduğu için kaybolur ama buradaki HIP bölgesinde tutuldu.
+
+146
+00:27:56,788 --> 00:28:05,188
+için kaybolmaz. Dolayısıyla program çalıştığı sürece durur. Return edebilirsiniz rahatlıkla bu şekilde.
+
+147
+00:28:05,807 --> 00:28:13,028
+Peki buraya kadar sormak istediğiniz bir şey var mı? Evet, dinliyorum. Var mı sorunuz?
+
+148
+00:28:17,428 --> 00:28:30,928
+Tamam, o zaman şeyi anlatmıyorum. Gerek görmüyorum. Elemanı nasıl silersin, nasıl ararsın falan filan. Onları kendi başımıza yapabileceğinizi düşünüyorum.
+
+149
+00:28:30,928 --> 00:28:37,928
+Şimdi bunun Open Addressing'e göre en büyük avantajı şu, silme yapabiliyorsunuz.
+
+150
+00:28:45,364 --> 00:28:46,604
+Hatırlıyor musunuz soruyu?
+
+151
+00:28:49,324 --> 00:28:51,063
+Orada mısınız arkadaşlar?
+
+152
+00:28:52,983 --> 00:28:54,703
+Evet hocam, hangi soruyordun?
+
+153
+00:28:55,903 --> 00:29:01,364
+Şey diye sormuştum, flagler var, şurası...
+
+154
+00:29:01,903 --> 00:29:03,104
+Size doğru demiştim.
+
+155
+00:29:05,364 --> 00:29:06,584
+Yanlış demişsin.
+
+156
+00:29:10,259 --> 00:29:25,299
+Dur şöyle değil mi? Şu deleted bu empty ise burada deleted, deleted, başka cevabı olan var. Burada da doğru yerleşmiş bir eleman var.
+
+157
+00:29:28,884 --> 00:29:35,124
+Soru da şeydi, şurayı emtiğe çevirmeli miyim, çevirmemeli miyim?
+
+158
+00:29:37,124 --> 00:29:44,884
+Şunu emtiğe çevirmem doğru mu, buna emtiğe çevirmem. Nedir cevabınız? Tahminlerinizi söyler misiniz? Ne cevap verdiniz?
+
+159
+00:29:50,067 --> 00:29:54,067
+Korkmayın, isimleri de görmüyorum ben nasıl. Rahatlıkla, boşluğa konuşabilirsiniz.
+
+160
+00:29:56,067 --> 00:29:57,708
+Kim konuştu görmüyorum ben.
+
+161
+00:30:04,307 --> 00:30:13,867
+Hocam, silmek hakkında pek fikrimiz yok herhalde. Yani benim de yok açıkçası. Silince ne oluyor? Yani niye silemiyoruz direkt olarak? İçeritleyemiyoruz, hem de bilmiyorum ben.
+
+162
+00:30:14,947 --> 00:30:22,367
+Nasıl bilmezsin? Ben bunu derste anlattım. Aşk olsun, bak şimdi kalbim kırıldı. O kadar anlattım, kaybediyorsunuz bir de.
+
+163
+00:30:24,327 --> 00:30:30,087
+Peki, kısacık bir daha söyleyeyim. Şöyleydi, şimdi sorunu önce bir göstereyim.
+
+164
+00:30:37,172 --> 00:30:41,652
+Şöyle 5 uzunluklu bir tablomuz olsun tamam mı? Hiç uğraşmayalım.
+
+165
+00:30:41,652 --> 00:30:47,412
+Üç sayısı gelsin.
+
+166
+00:30:47,412 --> 00:30:53,731
+Üç not beş, üçe yerleşsin. Burada üç var.
+
+167
+00:30:53,731 --> 00:30:58,284
+Şimdi sekiz sayısı gelsin.
+
+168
+00:31:03,476 --> 00:31:06,696
+O da 3'e yerleşecek. 8'i buraya yerleştirdim.
+
+169
+00:31:08,896 --> 00:31:11,776
+Pardon, ne yapıyorum ben? Bir tane daha yapacağım.
+
+170
+00:31:12,576 --> 00:31:16,276
+8, 5 daha, 13. 13 gelsin.
+
+171
+00:31:21,715 --> 00:31:37,555
+13 nereye yerleşecek? 13 de buraya yerleşecek. Niye? Çünkü işte burada bir sıkıntı yok değil mi? 3 buraya yerleşti, 8 buraya yerleşti, 13'ün de 5'e göre modu 3'tü, 3 dolu, 4 dolu, o da gitti 0'a yerleşti. Buraya kadar bir sıkıntı var mı?
+
+172
+00:31:40,535 --> 00:31:47,715
+Sizden cevap almadığım sürece bundan sonra konuşmaya devam etmeyeceğim. Buraya kadar bir problem var mı arkadaşlar?
+
+173
+00:31:48,215 --> 00:31:49,055
+Yok hocam şu an.
+
+174
+00:31:49,619 --> 00:32:07,619
+Tamam, peki. Şimdi devam edelim. Şimdi soru şu aslında ben bunu derste anlattım ama dikkatinizi çekmemiş olabilir. Önemini belki fark etmemiş olabilirsiniz. Şundan bahsetmiştim derste. Bu insert işlemi. Search işleminde nasıl davranıyorum? Diyelim ki search diyeyim.
+
+175
+00:32:08,276 --> 00:32:36,175
+Sekiz diyeyim, sekizi search edeceğim. Sekiz bu tabloda var mı, yok mu gibi biliyorsunuz. Aslında bunlar az önceki gibi sekiz durmaz burada. Yani buna bağlı olarak işte isim vardır falan değil mi? Böyle bir takım bilgiler vardır aslında. Sekizi buldunuz mu siz aslında bundan sonraki bilgilerle ilgili ediyorsunuzdur. Mesela öğrencinin ne bileyim matematik dersinden aldığı not falan yani önce öğrenciyi bulalım. Bulduktan sonra ona bağlı olarak strakt şeklinde olgu.
+
+176
+00:32:36,276 --> 00:32:53,816
+işin okutulan kayıtlar değil mi? Az önceki gibi, yani bu tek değil, ki'nin yanında neyim de var gibi. Tamam mı? Şimdi mesele bu. Şimdi ben 8'i arıyorum. 8'i nasıl ararım ben bu tabloda? Önce 8'in olabileceği yere bakarım. Yazamadım bir an.
+
+177
+00:32:54,228 --> 00:33:19,228
+8 nerede olmalı bu tabloda? 3. gözle. Buraya kadar bir problem yok herhalde. Gidelim 3. gözle bakarım. 8 mi? Hayır. Sonra ben bu tabloyu hangi yöntemle yerleştirdiysem, burada Linear Probing ile yerleştirdim. Yani bir adresle olursa bir sonraki adrese bakıyor. Gidelim bir sonraki adrese bakarım. Ve 8'i buldum. Burada bir sıkıntı yok değil mi?
+
+178
+00:33:21,875 --> 00:33:24,975
+Var mı arkadaşlar? Bak hakikaten konuşmayacağım, söyleyeyim.
+
+179
+00:33:25,336 --> 00:33:25,855
+Yok hocam.
+
+180
+00:33:26,496 --> 00:33:33,256
+Tamam, peki. Peki şimdi 11'i arayalım bu tabloda. 11.5 kaç? 1, değil mi?
+
+181
+00:33:35,955 --> 00:33:40,395
+Birinci göze geldim, baktım. Burası da naa. Bu bana neyi gösteriyor?
+
+182
+00:33:41,907 --> 00:33:44,107
+Nansa burası ne demektir Nansa?
+
+183
+00:33:44,247 --> 00:33:45,927
+Daha önce 11 yerleştirilmemiş.
+
+184
+00:33:46,247 --> 00:33:48,667
+Evet, 11 yerleştirilmemiş ve bu mesajı veririm.
+
+185
+00:33:48,747 --> 00:33:51,227
+Derim ki 11 bu tabloda yok derim ve çıkarım.
+
+186
+00:33:51,867 --> 00:33:55,407
+Şimdi, bu Insert böyle, Search de böyle.
+
+187
+00:33:56,407 --> 00:33:59,127
+Peki, delete etmek istersem ne olacak?
+
+188
+00:34:00,527 --> 00:34:06,847
+Problem şu, ben diyelim ki 3'ü buradan delete ettim.
+
+189
+00:34:07,527 --> 00:34:09,527
+Tamam mı? 3'ü buradan delete ettim.
+
+190
+00:34:10,867 --> 00:34:16,387
+3'ü buradan delete edersen, 5'i 8'i search edersen,
+
+191
+00:34:19,860 --> 00:34:41,579
+Buraya geldi. Burası boş. O zaman der ki sekiz tabloda yok. Çünkü boş burası. Onun için, anladınız mı problemi? Aşağıya bakmayı düşünemez. Çünkü aşağıya niye yerleşti sekiz? Üçüncü göz doluydu. O zaman onun için yerleşti. Ama sonra ben üçü sildim.
+
+192
+00:34:42,036 --> 00:35:10,036
+8-4'te. 8'i yukarı çekmiyorum. Niye çekmiyorum? Çünkü o zaman reheş yapmam gerekiyor. Yani 8'i yukarı çekmem demek, 8'in altındaki her şeyi tekrar kontrol etmem. Yani bir tek 8 ile bitmeyecek iş. Şu da olabilir. Belki burada 4. gözde 4 vardı ama 3. göze yerleşmesi gereken 13. Burası dolu olduğu için gitti, 0. göze yerleşti falan. Yani bunu bir tek...
+
+193
+00:35:10,036 --> 00:35:21,395
+sildiğim elemanın altındaki elemana bakarak bu problemi çözemem. Eğer bunu sildiysem her şeyi yeniden gözden geçirmem gerekir. Bu da anlaşıldı mı?
+
+194
+00:35:24,056 --> 00:35:24,735
+Anladım.
+
+195
+00:35:25,255 --> 00:35:29,056
+Tamam. O zaman ben dedim ki size derste anlatırken bunu.
+
+196
+00:35:30,132 --> 00:35:51,971
+O zaman flak tutulabilir dedim. Yani inşallah demişimdir tabii. Flak tutulabilmesi şu demek, yani demesem de fark etmez. Çünkü bu hani fikir sorusuydu. Bu şekilde bir şeyi anlatmadık. Yani şöylesini anlatmadık. Nasıl fikir yürütürsünüz sorusuydu. Şimdi flak tutabilirim. Yanına deleted yazarı.
+
+197
+00:35:53,172 --> 00:36:04,492
+Eğer boş bir göz varsa ve eleman silindiyse deleted yazarım. Boş bir göz, yani hiç eleman olmayan bir göz varsa, flag bu, flag değişkenim benim.
+
+198
+00:36:05,152 --> 00:36:15,011
+Yani sıçraktığınızda bir de flag olacak, oraya empty yazarım. Bu neyi sağlar? Ben şimdi 8'i ararken burada geldim, hiçbir değer yok ama deleted yazıyor.
+
+199
+00:36:15,011 --> 00:36:19,372
+O zaman aramaya devam ederim. Bu şu demek, yani burada eskiden bir eleman vardı.
+
+200
+00:36:19,791 --> 00:36:27,011
+Dolayısıyla, 8 buraya yerleşememiş, aşağılara bir yerlere yerleşmiş olabilir anlamında. Tamam mı?
+
+201
+00:36:29,592 --> 00:36:30,511
+Bu oldu mu?
+
+202
+00:36:31,412 --> 00:36:31,952
+Evet.
+
+203
+00:36:32,791 --> 00:36:34,632
+Soru varsa cevap vereyim.
+
+204
+00:36:37,971 --> 00:36:41,971
+Anladınız mı niye deleted yazınca 8'i aramaya devam ettiğini?
+
+205
+00:36:45,396 --> 00:36:50,716
+Evet, yani ararken empty ile delete de bakış açılarımız farklı.
+
+206
+00:36:50,815 --> 00:36:58,336
+Delete de sonraki adres yakışmasına nasıl ilerliyorsak, sonraki adrese de öyle bakmaya devam ediyoruz.
+
+207
+00:36:58,396 --> 00:37:01,796
+Delete ile karşılaşırsak, empty ile karşılaşırsak duruyoruz.
+
+208
+00:37:02,315 --> 00:37:05,876
+Harika, çok güzel. Şimdi sınavdaki soruda da şöyle diyordu.
+
+209
+00:37:07,536 --> 00:37:14,536
+Şimdi bu ikinci gözün fileyi, ikinci adresin fileyi deletedmiş, üçüncü adresin fileyi de NT-ymiş.
+
+210
+00:37:14,536 --> 00:37:19,036
+Yani flak'ten kasıt, flak herhalde birinci sınıfta falan görmüşsünüzdür diye tahmin ediyorum.
+
+211
+00:37:19,036 --> 00:37:22,536
+Genelde flak bir durumu göstermek için kullanılır.
+
+212
+00:37:22,536 --> 00:37:27,536
+Yani terminolojisi o, yoksa bir tane değişken kullanacaksınız alt tarafı da.
+
+213
+00:37:27,536 --> 00:37:29,536
+Diyorsunuz değil mi? Flak diyorsunuz.
+
+214
+00:37:31,536 --> 00:37:33,195
+Diyor musunuz?
+
+215
+00:37:35,155 --> 00:37:37,555
+yani flagtrimin daha çok SMB derjisinde
+
+216
+00:37:37,811 --> 00:38:05,431
+Tamam, yani değişken, o tür değişkenlere Fleck değişken denir. Yani bir durum gösteren bir değişken olması sebebiyle, yoksa yani o bir resort world falan değil. Yani alenen bildiğiniz integer Fleck diye bir değişken tanımlarsınız yani. Anlaşılırlık açısından o hani bir durum gösteriyor. İşte erased, deleted falan öyle bir durum gösterdiği için. Neyse, şimdi soru şuydu.
+
+217
+00:38:05,811 --> 00:38:21,572
+İkinci göz deleted ise, üçüncü göz empty ise, bunu empty'ye çevirebilir miyim? İkinci göz deleted ise, üçüncü gözle doğru yerleşmiş eleman varsa, bunu empty'ye çevirebilir miyim? Soru buydu.
+
+218
+00:38:21,572 --> 00:38:28,271
+Şimdi bu gözle bir kere daha dinleyip soruyu cevaplar mısınız? Soruyu anladınız mı?
+
+219
+00:38:29,204 --> 00:38:44,423
+Hocam, o zaman şöyle düşünüyorum ben. Şimdi az önce de söylediğimiz gibi orada deleted olması, hani sonraki başka bir elemana ulaşmamız için bir ön adım olabilir. Eğer oraya NP yaparsak aradığımız elemana ulaşamayabiliriz. Hani hiç o tabloda yokmuş sanki gibi davranabiliriz.
+
+220
+00:38:44,844 --> 00:38:55,884
+Evet ama bak bir sola bak, bir sağa bak. Solda ikinin altı NP-boş. Oraya hiç kimse yerleşmemiş şu an o kadar. O zaman ikiyi silersen bir şey bozar mıyım?
+
+221
+00:38:59,572 --> 00:39:01,572
+Bozmayız. Bozmayız.
+
+222
+00:39:02,472 --> 00:39:16,152
+Neden bozmam? Çünkü yani hani Diritis'in altında bir eleman olmadığı için, buraya kimse yerleşmediği için bu şu demektir. Yani bir öplijin oluşmamış daha bu ikinci gözle ilgili.
+
+223
+00:39:18,036 --> 00:39:44,115
+Öklicin olsa burada bir, mesela burada bir eleman olurdu. Değil mi? Empty olmazdı burası. Empty demek ne demek? Hiç kimse gelmemiş daha demek. Dolayısıyla öklicin oluşmadığı için, diyelim ki şöyle düşünün, şurada bir elemanınız varsa, diyelim şurada bir altı varsa, bu altı doğru yerdedir. Yani çünkü burası empty olduğuna göre altının yeri, üçüncü göz olsaydı altıyı oraya yazardım, değil mi?
+
+224
+00:39:45,364 --> 00:40:01,744
+Mantıken, empty olmazdı orası. Dolayısıyla bu doğrudur. Yani bunu emptyye çevirebilirsiniz. İkiyi emptyye çevirebilirsiniz. Şunu empty yapabilirsiniz. Bir sakıncası yok. Burası, buna ne dersiniz? Burada bir üç varmış örneğin.
+
+225
+00:40:02,484 --> 00:40:05,844
+Ona da sizinle empty olabilir dedim ve siz yanlış diyorsunuz.
+
+226
+00:40:06,564 --> 00:40:07,404
+Evet, o niye empty olabilir?
+
+227
+00:40:07,404 --> 00:40:09,284
+Hocam, burada bir şey sorabilir miyim?
+
+228
+00:40:09,884 --> 00:40:10,284
+Tamam.
+
+229
+00:40:10,931 --> 00:40:15,071
+Bu sadece indeksleri bir bir arttırdığımız durumda geçerli herhalde değil mi?
+
+230
+00:40:15,151 --> 00:40:18,711
+Tabii tabii ama o böyle bir linear probing diyor zaten.
+
+231
+00:40:18,851 --> 00:40:20,591
+Sorunda da diyorum, şu anda da diyorum.
+
+232
+00:40:21,051 --> 00:40:29,811
+Yani bu linear probing için yoksa ne bileyim double iş falan yapsaydık o zaman başka bir konudan bahsediyor olurdu.
+
+233
+00:40:29,871 --> 00:40:31,451
+Bu tamamen linear probing için.
+
+234
+00:40:32,151 --> 00:40:38,931
+Şimdi bakın burada eğer ben şu deleted'ı NP'ye çevirirsem 8'i aradığımızı düşünüyorum.
+
+235
+00:40:38,931 --> 00:40:51,931
+Şunu düşünelim, az önceki problem. Aslında 8 üçüncü göze yerleşecekti. 8 demeyeyim de, dur daha güzelini yapayım ben size. Çünkü şu anda...
+
+236
+00:40:52,527 --> 00:40:55,607
+Az önceki durumu yapmadığım için kafanız karışmasın.
+
+237
+00:40:56,607 --> 00:41:01,487
+Diyelim ki burada ikinci gözde bir eleman varmış, ondan ötürü de iki gelmiş buraya yerleşmiş.
+
+238
+00:41:01,587 --> 00:41:03,627
+Böyle daha rahat anlayacağınızı tahmin ediyorum.
+
+239
+00:41:04,387 --> 00:41:10,007
+Neden? Çünkü işte şurada diyelim ki işte on beş varmış, onu silmişim.
+
+240
+00:41:10,567 --> 00:41:13,627
+Ama silmeden burada on beş varken iki gelmiş.
+
+241
+00:41:14,247 --> 00:41:17,427
+On beş olduğu için ikiyi buraya yerleştirememişim, buraya bakmışım.
+
+242
+00:41:17,507 --> 00:41:19,667
+Burada da üç var, buraya da yerleştirememişim.
+
+243
+00:41:19,667 --> 00:41:20,527
+Buraya bakmışım.
+
+244
+00:41:20,527 --> 00:41:38,587
+Burası boş, ikiyi buraya yerleştirmişim. Şimdi bakın olaya, eğer ben burayı empty yaparsam ve burayı empty yapıp da ikiyi aramaya kalkarsam, ikiyi bulamam. Oldu mu şimdi? Anladınız mı şu anda?
+
+245
+00:41:38,587 --> 00:41:40,327
+Evet hocam.
+
+246
+00:41:41,972 --> 00:41:42,972
+E buyurun.
+
+247
+00:41:42,972 --> 00:41:54,972
+Orada iki tane şey var, iki tane bilgi var dedi. Deli tit biri üç. Üç zaten mesela üç doğru yerleşmiş. Demek ki bir şeyle bağlantısı yok. Deli tit de herhangi bir şey göstermiyor yani ona.
+
+248
+00:41:54,972 --> 00:42:08,972
+Hayır baba, dikkat et. İşte sana o senaryoyu yaptım. Üç doğru yerleşmiş. Bak üç doğru yerleşmiş, sıkıntı yok. Ama altına da ikiyi yerleştirdim. Öpvizimden ötürü yani şunu anlatmaya çalışıyorum.
+
+249
+00:42:10,708 --> 00:42:28,387
+Diyelim burada 15 vardı, burada da 3 vardı, 2 geldi, ikinci göze yerleşmek istiyor, 15 dolu, 2'yi buraya yerleştirdim. Arkasından bir ihtiyaç oldu, mesela öğrenci kaydını aldırdı, 15'i birit etti.
+
+250
+00:42:29,300 --> 00:42:30,739
+Tamam mı? Soru bu işte.
+
+251
+00:42:31,340 --> 00:42:40,460
+Ve ikiyi search et, yani burayı empty yaparsam, burayı empty yaparsam ve ikiyi search edersem, ikinci göze geldi baktı.
+
+252
+00:42:40,639 --> 00:42:43,900
+Empty ve iki yoksa yok diye çıkar dışarıya.
+
+253
+00:42:43,900 --> 00:42:46,019
+Çünkü bir göz non ise,
+
+254
+00:42:47,380 --> 00:43:03,000
+Benim baktığım göz non ise, mesela az önce konuştuk, biri arıyorsunuz mesela, birinci göz non. Bu ne demek? Bir bu tabloda yok demek. Aşağılara bakar mısın burası non ise? Bakmazsın yok çünkü tabloda bir olsa birinci göz de olurdu değil mi?
+
+255
+00:43:05,492 --> 00:43:21,012
+Sekizi arıyorsun, üçüncü göze geldin. Üçüncü gözde üç var, o zaman aşağılara bakarım ben. Yani üçüncü göz boş olsaydı, sekiz yok diyecektim. Ama üçüncü gözde üç var, demek ki hala sekizi bulmak için bir şansın var. Burası dolu oldu.
+
+256
+00:43:21,012 --> 00:43:28,012
+Siz anladım, siz anladım da şöyle, verdiğiniz sorunda iki tane eleman vardı sadece yani, ekstra bir eleman olsaydı.
+
+257
+00:43:28,467 --> 00:43:35,307
+Ya Allah Allah, alt gözünde diyor, bütün tabloyu vermemiştik ya, alt gözünde doğru yerleşmiş bir eleman var diyor.
+
+258
+00:43:36,447 --> 00:43:42,947
+Yani bütün tabloyu verseydik haklısın da, sadece diyor ki bir alt gözde doğru yerleşmiş bir eleman var diyor.
+
+259
+00:43:43,207 --> 00:43:47,427
+İşte o case bu case. Daha altında da başka elemanlar var değil mi?
+
+260
+00:43:47,699 --> 00:44:09,119
+Yani alt gözünde empty olması ile alt gözünde herhangi bir eleman olması empty'ye çevirmek için yeterli değil. Onu anlatmaya çalışıyorum. Anlatabildim mi? Yani üç olması bir şey kanıtlanıyor ki. Altta doğru yerleşmemiş başka bir eleman olabilir. Buna güvenerek empty'ye çeviremezsin.
+
+261
+00:44:09,588 --> 00:44:18,588
+Aşağıların tamamını kontrol etmen lazım. O da olmayacak bir şey. Çünkü az önce konuştuğum gibi onun sonu yok.
+
+262
+00:44:18,588 --> 00:44:30,588
+Aşağılarda nasıl elemanlar doğru yere mi yerleşmiş, öklicinden ötürü kaymış mı soru yok. O yüzden birinci şık doğru, yani bir doğru iki yanlış olacaktı.
+
+263
+00:44:30,588 --> 00:44:37,588
+Ben şey olarak değerlendirdim, sadece o verdiğiniz elemanda şey tabloda iki eleman var, bir delitit, bir doğru.
+
+264
+00:44:37,588 --> 00:44:42,588
+Diğer tabloyu da boş kabul ettiğim için olabilir dedim yani.
+
+265
+00:44:43,588 --> 00:44:46,588
+Öyle şey olmaz ama niye bu tabloyu boş kabul ediyorsun?
+
+266
+00:44:46,588 --> 00:44:48,588
+Eleman yazmamıştınız.
+
+267
+00:44:49,684 --> 00:45:03,844
+Allah Allah, tablo yazmadık ki zaten hiçbir zaman. Öyle olsa derdik ki tabloda başka hiçbir eleman olmadığını varsayınız derdik ki o da çok anlamsız oldu soru olarak. Öyle bir bilgi vermedik yani.
+
+268
+00:45:04,884 --> 00:45:07,944
+Yok sadece küçük bir görsel koymuştunuz ya onun üzerinden.
+
+269
+00:45:09,108 --> 00:45:14,568
+Ama size birinci sınıf birinci dönemden itibaren genel düşünmeniz öğretiliyor.
+
+270
+00:45:14,847 --> 00:45:20,668
+Yani öyle bir şey olsa özellikle söylenir. Başta da hiçbir eleman yok. Aman dikkat falan değil.
+
+271
+00:45:20,847 --> 00:45:24,467
+Yani senin söylediğin gibi düşünmek aklıma bile gelmedi açıkçası.
+
+272
+00:45:24,648 --> 00:45:30,507
+Yani bu bir gerçek hayat uygulaması ve gerçek bir tablo. O yüzden yani o değerin altında.
+
+273
+00:45:31,059 --> 00:45:40,719
+Başka değerler olabilir, olmayabilir, her şey olabilir. Sonuçta sen bir tek alt değere bakarak karar vermemem gerekir.
+
+274
+00:45:40,719 --> 00:45:41,719
+Bere versin.
+
+275
+00:45:41,719 --> 00:45:48,759
+Şey belediyeyim de, en azından genel söyleyeyim, sınavda, iki sınavda da oldu görüntü işlemelere, şeyleri de algoritmalarında da.
+
+276
+00:45:48,759 --> 00:45:54,000
+Bazı sorularda acaba nasıl değerlendireceğiz kısmında şey yani...
+
+277
+00:45:54,195 --> 00:45:58,275
+Şüpheye düştüğüm oldu en azından yani. Böyle mi değerlendim, böyle mi değerlendim diye.
+
+278
+00:45:58,395 --> 00:45:59,695
+Hani biraz daha açıklamalıyım.
+
+279
+00:45:59,695 --> 00:46:05,755
+Bu soruda öyle bir şey yok. Başka bir soruda öyle bir şey olmuş olabilir. Ama bu soruda...
+
+280
+00:46:05,755 --> 00:46:09,675
+Yok, genel onu da söyleyeyim yani. Bazı sorularda böyle acaba hangi ne demek istemiş?
+
+281
+00:46:09,675 --> 00:46:13,835
+Olabilir. Yani o konuda yapabileceğimiz bir şey yok bu dönemde.
+
+282
+00:46:13,835 --> 00:46:21,895
+Çünkü orada mesela açık ve net söyledim yani bu soruyu anlayamamış, başka türlü anlamış olmam.
+
+283
+00:46:22,195 --> 00:46:28,195
+Bu yüzden bu soru da kişisel bir problem. Soruda bir anlaşılmazlık yok çünkü. Çok net soru.
+
+284
+00:46:28,195 --> 00:46:37,195
+Olabilir tabii, soruları anlayamadığınız olabilir. Bu da uzaktan eğitimin şeyi.
+
+285
+00:46:37,195 --> 00:46:41,887
+Şey yapabilme şansımız yok. Eskisi gibi sınıfta dolaşıp da...
+
+286
+00:46:41,887 --> 00:46:53,227
+sorulara cevap verebilme şansımız maalesef yok. O dönemde bunu yapabiliyorduk. Şimdi yapamıyoruz maalesef. O yüzden de olabildiğince anlaşılır sormaya çalışıyoruz.
+
+287
+00:46:53,587 --> 00:47:06,947
+Şimdi şeyle devam edeceğim. Biraz süreyi iyi kullanmaya çalışıyorum. Çünkü biz birazcık geç kalmıştık. Ama konuları da hızlı geçmek gibi bir niyetim yok. Merak etmeyin.
+
+288
+00:47:09,887 --> 00:47:24,007
+İstiyorum. Şimdi bizim en başta söylediğimiz şey, heşin karmaşıklığının, arama ve insert karmaşıklığının, ha şeyi söylerken kaldı, pardon buna nereden geldi?
+
+289
+00:47:24,244 --> 00:47:52,104
+Seperic Chaining'de delete işlemi hiçbir şey etkilemiyor. Ben buradan sekizi silsem de öklojunda elemanlar ucuca eklendiği için bununla ilgili bir sıkıntı yaşamıyorum. Onun böyle bir avantajı var Seperic Chaining'in. Yani burada yaşadığım, sildiğim eleman için ne yapacağım sorunu yok. Çünkü burada bir filet kullanmazsanız delik deşik bir tablo olacak.
+
+290
+00:47:52,244 --> 00:47:59,964
+Bir süre sonra, bir gözüden elemanı sildiğimizi bir şekilde anlatmamız gerekecek.
+
+291
+00:48:00,324 --> 00:48:11,484
+Dolayısıyla eleman silinmesi çok olan şeyler için, uygulamalar için open addressing, şey, efektif bir çözüm değil aslında.
+
+292
+00:48:12,604 --> 00:48:15,104
+Öbürü daha avantajlı o noktadan bakıldığında.
+
+293
+00:48:15,104 --> 00:48:17,424
+Şimdi şeye bakacak olursak,
+
+294
+00:48:18,195 --> 00:48:28,096
+Bu karmaşıklığın O1 olması, yani N'e bağlı olmayan bir karmaşıklığın olmasının nasıl sağlandığına bakacak olursak.
+
+295
+00:48:28,775 --> 00:48:33,755
+Şimdi load factor diye bir şey var, hatta siz ödevde de kullandınız bunu.
+
+296
+00:48:35,115 --> 00:48:40,336
+Load factor şu şekilde, aslında N bölü.
+
+297
+00:48:41,331 --> 00:49:02,891
+N olarak bir tablonun doluluk oranını belirliyor aslında. Eğer bu sıfırsa bu boş tablo demektir. Hiç dolmamış tablo demektir. Eğer birse de tamamen dolu bir tablo demektir.
+
+298
+00:49:05,940 --> 00:49:31,940
+Şimdi bir şey nedir? Bir tabloda random dağılıma sahip şeylerden oluşan, key'lerden oluşan, yani ondan kastettiğim böyle her şeyin üst üste çakışmadığı aslında genel bir normal distribution'a sahip değerlerden oluşan bir tabloda bir...
+
+299
+00:49:32,692 --> 00:49:59,692
+Bir şeyin nedir? Bir hücrenin dolu olma ihtimaline şey diyelim, lambda diyelim. O zaman boş olma, bir hücrenin boş olma ihtimaline de bir eksi lambda değil mi? Bir eksi lambda deriz. O zaman birinci baktığımız...
+
+300
+00:50:00,000 --> 00:50:25,900
+adres, şimdi bir elemanımızı yerleştirmeye çalışıyoruz. Eğer birinci baktığımız adres doluysa ve ikincisi boş ise bunun olasılığı ne olur? Lambda çarpı, bir eksi lambda olur. Peki ilk ikisi doluysa?
+
+301
+00:50:30,324 --> 00:50:33,084
+Ve üçüncüsü boylu olsa
+
+302
+00:50:43,572 --> 00:50:53,812
+Onun olasılığı ne olur? İlk ikisi dolu, yani ilk iki göze baktığım dolu, üçüncü göz boş, lambda kare çarpı, bir eksi lambda olur.
+
+303
+00:50:57,588 --> 00:51:07,788
+Bu mantıkla ilk k-1'i dolu
+
+304
+00:51:18,675 --> 00:51:25,115
+Kaancısı boş ise, yani biz boş göz arıyoruz ya, kaçıncı gözle boşu bulacağız diyoruz.
+
+305
+00:51:26,416 --> 00:51:32,956
+Aynı mantıkla işte üçüncü gözle boşu bulduğumuzda Lambda kare çarpı bir eksi Lambda oldu.
+
+306
+00:51:33,516 --> 00:51:39,195
+Kaancı gözle boşu bulduğumuzda da Lambda üzeri k eksi bir çarpı bir eksi Lambda olur.
+
+307
+00:51:39,195 --> 00:51:42,195
+Şimdi bu geometrik seviye aslında.
+
+308
+00:51:43,411 --> 00:52:02,031
+O zaman bu hesaplandığında, kaç şeyde, nedir, lambda'nın değerine bağlı olarak kaç adımda boş yer bulacağının hesabı şu şekilde çıkıyor.
+
+309
+00:52:03,611 --> 00:52:09,431
+Probe dediğim deneme, kaç deneme yaptım aslında, kaçıncı adımda boş yer buldum?
+
+310
+00:52:13,811 --> 00:52:18,931
+Linear probing, linear tek tek sırayla bütün adreslere bakma.
+
+311
+00:52:18,931 --> 00:52:22,851
+Yani onun nasıl çıkarıldığını anlatmayacağım. Hiç de gerek yok çünkü.
+
+312
+00:52:24,192 --> 00:52:37,931
+Buradan geometrik seviye açılımından devam ederek şu şekilde şeyi bulma, linear probing ile eleman yerleştirmek için...
+
+313
+00:52:38,880 --> 00:52:45,880
+kaç adım ilerleyeceğinizin beklendik değeri ortalama hesaplarıyla bu şekilde bulunuyor.
+
+314
+00:52:45,880 --> 00:52:52,880
+O zaman eğer lambda'nın 0.5 ise 2.5 adım sonra
+
+315
+00:52:56,371 --> 00:53:19,851
+boş yer bulabiliyorsunuz. Mesela lambdanız 0,8 ise 13 adım sonra boş yer bulabiliyorsunuz. İşte mantık bu. Şöyle size özellikle şeyi göstermek istiyorum.
+
+316
+00:53:21,108 --> 00:53:36,108
+Lambda'nın 0.1 ise, yani Lambda'nın 0.1 olması demek, %90'ı boş bir tablo demek. Yani eniniz 10 ise şeyiniz...
+
+317
+00:53:36,628 --> 00:53:49,927
+M'iniz 100, yani 10 eleman için 100'lük bir tablo açtınız demek. O zaman 1.11 aramada, yani tabii bu matematiksel olarak hesaplandığı için tam sayı değil, şeyi görmenizi istiyorum.
+
+318
+00:53:49,927 --> 00:54:01,628
+Yani 2'den küçük 1'e yakın, yani yaklaşık 1 şeyde, search'te ortalama boş yeri buluyorsunuz. Birincide boş yer buluyorsunuz.
+
+319
+00:54:04,628 --> 00:54:23,387
+1.28 adında boş yer buluyorsunuz. Ortalama tabi bunlar. Şimdi bakın nasıl değiştiğine bakın.
+
+320
+00:54:30,547 --> 00:54:46,668
+06'da bakın pat diye değişecek şimdi. 3.62, 07'de 6.06, 08'de 13, 09'da 50.5.
+
+321
+00:54:46,668 --> 00:54:52,668
+Şimdi bu mantıkla şunu görüyoruz.
+
+322
+00:54:53,684 --> 00:55:01,684
+04 ve 05 arasında çok büyük bir fark yok. O yüzden emin yaklaşık iki en olması yani...
+
+323
+00:55:02,643 --> 00:55:30,203
+efektif bir şey için, tablo için, elin yaklaşık iki en olması yeterli. Çünkü yani bakacak olursanız, çok böyle ideal olsun istiyorsanız yüzde onu dolu tablo yaparsınız. Ama yani ortalama olarak zaten yani bu şu demek değil, her aradığımı iki adım sonra, her aradığım için iki adım sonra boş yer buluyorum demek değil. Bu ortalama.
+
+324
+00:55:30,643 --> 00:55:49,383
+Hemen buluyorum, bazen iki adım sonra buluyorum falan. Ama baktığınız zaman yüzde ellisi şey olan nedir? Boş olan bir tabloda iki buçuk adımda ben aradığım elemana ulaşabiliyorum. Yani search süren iki buçuk.
+
+325
+00:55:49,383 --> 00:55:57,823
+İşte insert süren yani boş yer bulma süren iki buçuk. 0.6 olduğunda bu bozuldu bakın. Birdenbire çat diye bozuldu.
+
+326
+00:55:58,643 --> 00:56:24,983
+07 olduğunda artık 6 adımda buluyorum. 08 olduğunda 13 adımda buluyorum. %90'ı yani nidenin neyse n şeyken bu şu demek mesela n 90'ken 100 almanız demek. O zaman iş işte bozulmuş hale geliyor. 50 adımda aradığım elemanı buluyorum. Bir şey buradan kaynaklanıyor. Yani aslında olasılıksal olarak.
+
+327
+00:56:25,556 --> 00:56:35,796
+Niçin biz tablo uzunluğunu enin iki katı alıyoruz? Buradan çıkan bir şey. Bununla ilgili sormak siz ışınlar mı?
+
+328
+00:56:37,492 --> 00:56:43,172
+Peki hocam, Average Case'i Big-O anotasyonuna göstermek istersek O1 diyebilir miyiz kelime bulmak için?
+
+329
+00:56:43,252 --> 00:56:48,772
+O1, evet evet kesinlikle. Zaten bir kere daha şimdi dersin başında verdim gibi atıyorum ilk derste.
+
+330
+00:56:48,772 --> 00:56:56,736
+Bir kere daha vereceğim şimdi o şeyleri. Average Case'de şey yani...
+
+331
+00:56:56,735 --> 00:57:11,135
+3 ile 5 arası deniyor genellikle. Yani o 1 o yüzden de. Yani 3-5 aramada mantıklı bir şey verdiysen, tablo uzunluğu verdiysen, 1 denmesinin sebebi bu.
+
+332
+00:57:11,456 --> 00:57:24,635
+Halbuki şeylerde mesela sequential search'ta average case'iniz n, binary search'ta log n, işte binary search'ta aynı şekilde average case'iniz log n.
+
+333
+00:57:24,735 --> 00:57:26,735
+Ama burada...
+
+334
+00:57:27,795 --> 00:57:43,515
+Open Addressing'de de, Second Chain'de de bu karmaşıklık şey, işte 3 ile 5 arasında en fazla aramayla tablo uzunluğunuza bağlı olarak şeyi buluyorsunuz.
+
+335
+00:57:44,175 --> 00:57:50,935
+Nedir? Aradığınız elemanı buluyorsunuz. N'e bağlı değil. O yüzden aynen arkadaşınızın dediğini buraya yazıyorum.
+
+336
+00:57:55,795 --> 00:58:05,215
+Insert etmenin ve Search etmenin karmaşıklığı O1. Dediğim gibi Delete'i ayrı değerlendirmek gerekiyor Open Address için.
+
+337
+00:58:05,375 --> 00:58:17,315
+Separate Chain'in de O1 ve Separate Chain'in de az önce söylediğim gibi onda da Optimum şeyin, tablo büyüklüğünün en bölü 5 olduğu,
+
+338
+00:58:17,435 --> 00:58:22,275
+yani 100 elemanımız varsa 20 olmasının yeterli olacağı bulunmuş.
+
+339
+00:58:22,275 --> 00:58:23,795
+Buraya kadar sormak istedim.
+
+340
+00:58:23,795 --> 00:58:29,015
+Bir şey yoksa son bir şey anlatıp ne işlerle ilgili anlatacaklarını bitireceğim. Var mı?
+
+341
+00:58:34,132 --> 00:58:57,132
+Yani bunu kanıtlanmış olması güzel çünkü insan genelde ya çatışırsa ya öyleyse ya böyleyse bir şey yapıyor, tereddüt ediyor. Hatta ilk derste sizlerden de böyle ya nasıl olur ki falan diye şey gelmişti, yorum gelmişti. İşte böyle oluyor yani matematiksel olarak olasılık hesabıyla. Bu kanıtlanıyor ve...
+
+342
+00:58:58,356 --> 00:59:07,416
+Şurada mesela işte şey aldığınızda, lambda'yı burada 0.5 aldığınızda burası 2.5 oluyor.
+
+343
+00:59:07,676 --> 00:59:13,115
+Tamam yani 2.5 adımda da ben aradığım elemanı eşyorsam daha ne isterim?
+
+344
+00:59:13,176 --> 00:59:16,655
+Şimdi gelelim ilk derste konuştuğumuz ikinci konuya.
+
+345
+00:59:17,135 --> 00:59:20,056
+Neden asal sayı alıyoruz? Bunu anlatmadın değil mi?
+
+346
+00:59:23,572 --> 00:59:26,692
+Bunu anlatıp anlatmadım hatırlamıyorum. Anlattın mı?
+
+347
+00:59:31,027 --> 00:59:43,027
+Anlatmadım peki. Şimdi diyelim ki tabloya yerleştirmek istediğim sayılar bunlar olsun ve tablo uzunluğunuzda...
+
+348
+00:59:47,188 --> 00:59:48,387
+Sekiz olsun.
+
+349
+00:59:50,507 --> 00:59:58,467
+Diyeceksiniz ki zaten yedi tane sayım var, sekizlik tabloya yerleştirmek istiyorsun. Ne olmasını bekliyorsun.
+
+350
+00:59:58,467 --> 01:00:01,108
+İsterseniz azaltayım yani şunları.
+
+351
+01:00:01,788 --> 01:00:03,068
+Azaltayım mı?
+
+352
+01:00:03,284 --> 01:00:24,003
+Neyse, boşver uğraşmayalım. Şey görmenizi istiyorum, problemi görmenizi istiyorum. Şimdi bunu Dinejil metotla yaparsam ne yapacağım? X-Mod 8 diyeceğim. O zaman bakın 64, 128, 200 ve 400 sıfırıncı adrese yerleşmeye çalışacaklar.
+
+353
+01:00:26,420 --> 01:00:50,420
+300 ve 500 de 4. adresle yerleşmeye çalışacaklar. Çünkü neden? Ortak bölümlerin en büyüğü dediğimizde bunların 200, 300, 400, 500 ve 8'in
+
+354
+01:00:52,532 --> 01:01:09,532
+Ortak bölenlerin en büyüğü 4. Dolayısıyla, yani bunların hepsi bir şeyde birleşiyorlar, ortak bölenlerinde birleşiyorlar. Ondan ötürü de sürekli bir çakışma oluyor. Şimdi bu eğer asal olmayan bir sayı...
+
+355
+01:01:09,715 --> 01:01:37,715
+tablo uzunluğumuz asal olmayan bir sayı olursa ve bizim zaten hash fonksiyonumuz basitçe bir mod alma işlerinden ibaret olduğu için çakışma miktarımız çok olur. Biz şimdi elimizden geldiğince çakışmaları basit çözümlerle elimine etmeye çalışıyoruz. Bu nedenle de bunlardan birisi de bu çözümlerden birisi de tablo uzunluğunu asal sayı aldık.
+
+356
+01:01:37,715 --> 01:01:53,708
+Neden? Çünkü eğer ben tablo uzunluğunu örneğin 11 alsaydım, bu 64, 100, 128, 200, 300, 400, 500 ve 11'in...
+
+357
+01:01:55,380 --> 01:02:11,059
+En büyük ortak bölene 1 olacaktı. Bunlar 11 bir asal sayı olduğu için ancak 11'in öyle bir şey olacak ki bütün buradaki sayılar 11'in katları olacak bizim şansımızla. O zaman bir yığılma olacaktı.
+
+358
+01:02:11,420 --> 01:02:17,760
+Halbuki şu anda bir de burada hep şeye dikkat edin yalnız normal dağılım olmasına dikkat edin.
+
+359
+01:02:18,000 --> 01:02:23,500
+64, 9. göze yerleşecek, 101'e yerleşecek, 128, 7'ye.
+
+360
+01:02:24,307 --> 01:02:50,708
+202'ye, 303'e, 404'e, 505'e yerleşecek. Dolayısıyla, yani olabilirdi tabii yine birbiriyle çakışan birileri mutlaka olacak olabilir, olmalı da, bir sıkıntı yok burada. Ama biz bir asal sayı tablo uzununu seçerek bu şeyi azaltmaya çalıştık.
+
+361
+01:02:52,179 --> 01:03:20,179
+çakışma olasılığını azaltmaya çalışır. Bu yüzden her zaman tablo uzunlukları, eğer ki hash fonksiyonunuz keymod M şeklinde mod alarak yapılan bir fonksiyonsa, tablo uzunluğunu asal sayı alarak bu çakışma problemini biraz olsun daha azaltmış oluyoruz. Yani demek ki ne yapacağız? Birincisi, open adreste tablo uzunluğunu
+
+362
+01:03:20,179 --> 01:03:48,179
+eleman sayısının iki katı kadar alacağız. Separate Chain'in de tablo uzunluğunu eleman sayısının beşte biri kadar alacağız. Böylece bir çakışma problemini azaltma işlemini gerçekleştirmiş olacağız. İkinci olarak da tablo uzunluğunu crime aldığımızda mod alma işlemini sırasında bölgede işte
+
+363
+01:03:48,179 --> 01:03:56,179
+şeyden ötürü, tablo uzunluğun katı olma ihtimalini azaltmaktan ötürü bir avantaj sağlayacaksınız.
+
+364
+01:03:56,179 --> 01:04:04,179
+Üçüncü yapmanız gereken, bunlar bu sonuncusu artık, şimdi burada bitireceğim. Siz elinizden geleni yaptınız fakat,
+
+365
+01:04:04,179 --> 01:04:15,179
+siz başlangıçta işte eleman sayınızın en fazla 100 olacağını düşünüyordunuz. Tablo uzunluğunu da ona göre belirlediniz. Ha bir şey daha anlatacağım.
+
+366
+01:04:15,572 --> 01:04:24,332
+ve şey oldu, ne derler, gittikçe böyle eleman gelmeye başladı ve bu sizin farkında olduğunuz bir şey değildi.
+
+367
+01:04:26,752 --> 01:04:29,332
+Load faktörü şey olduğunda...
+
+368
+01:04:30,132 --> 01:04:37,132
+%80'i falan bulduğunda mutlaka bir hash yapmanız gerekir.
+
+369
+01:04:37,132 --> 01:04:40,132
+Çünkü tehlikeli sınırlara girmişsinizdir.
+
+370
+01:04:40,132 --> 01:04:46,132
+Bakın şurada gördünüz, %80 olduğunda 13. adımda yerleşecek doğru yere.
+
+371
+01:04:46,132 --> 01:04:50,132
+%80'i dolu bir tabloda 13. adımda yerleşecek doğru yere.
+
+372
+01:04:50,132 --> 01:04:58,132
+Yani şeyi kontrol edip, tablo size'ınız %70'leri falan geçtikten sonra
+
+373
+01:04:58,132 --> 01:05:25,692
+Mutlaka rehash yapmanız gerekiyor. Rehash de şu demek, yeni yer allocate edeceksiniz veya işte dosyaysa yeni bir dosyaya geçeceksiniz ve elemanların hepsini yeniden yerleştireceksiniz. Çünkü table size'ımız değişti. Artık herkes başka bir yere gelecek demektir bu. Elemanların hepsini yeniden yerleştireceksiniz. Birincisi bu. İkincisi de rehash yaparken
+
+374
+01:05:26,132 --> 01:05:29,452
+Mutlaka şeye dikkat edeceksiniz.
+
+375
+01:05:29,452 --> 01:05:31,452
+Nedir?
+
+376
+01:05:31,452 --> 01:05:40,492
+Tablo uzunluğunu yine prime number almaya asal sayı olmasına dikkat edeceksiniz.
+
+377
+01:05:40,492 --> 01:05:43,012
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+378
+01:05:47,539 --> 01:05:50,739
+Baya uzun anlattım.
+
+379
+01:05:52,260 --> 01:05:53,420
+Sağ mısınız? Sağsınız?
+
+380
+01:05:53,420 --> 01:05:55,880
+İki cümle daha bir şey söyleyebilir miyim eşlerle ilgili?
+
+381
+01:05:56,039 --> 01:05:57,019
+Yani dayanabilecekseniz.
+
+382
+01:05:58,679 --> 01:06:00,039
+Dayanabilecekseniz söyleyeceğim.
+
+383
+01:06:00,400 --> 01:06:02,300
+Ondan sonra...
+
+384
+01:06:02,300 --> 01:06:02,880
+Tabii hocam.
+
+385
+01:06:09,619 --> 01:06:17,619
+Başka konuya geçeceğim. Dineros Service Effects, bu aslında çok da fazla yapılan bir saldırı türü değil.
+
+386
+01:06:17,619 --> 01:06:26,619
+Ama şöyle bir şey var, diyelim ki işte şey yapıyorsunuz, ne bileyim işte...
+
+387
+01:06:27,539 --> 01:06:46,420
+her şey için bilgileri biz aslında hash tablolarında saklıyoruz. Diyelim ki böyle bir şey var, işte hash tablosunda birtakım bilgileri saklıyoruz ve gösteriyoruz. Birisi de şey yapıyor, sizin şey nedir?
+
+388
+01:06:49,492 --> 01:06:56,492
+hash fonksiyonunuzu öğreniyor ve hash fonksiyonunuzu öğrenerek atak düzenliyor.
+
+389
+01:06:56,492 --> 01:07:06,492
+Yani öyle bir atak düzenliyor ki mesela separate chain uyguladığınızda böyle tren gibi arka arkaya bütün elemanların dizildiği.
+
+390
+01:07:06,492 --> 01:07:08,492
+Çünkü az önce biz ne gördük?
+
+391
+01:07:08,492 --> 01:07:12,492
+Uniform dağılımı olduğunda bunlar böyle dizilmezler mantıken.
+
+392
+01:07:12,492 --> 01:07:17,492
+Ama öyle bir şey yapıyor ki hepsi örneğin 5 numaralı adresi üreten keyler gönderiyor.
+
+393
+01:07:17,492 --> 01:07:26,912
+size. Ondan sonra ve böyle bir durumda every retrieval time ne olacak? N olacak. Yani N eleman varsa hepsini ucuca dizerseniz N olacak.
+
+394
+01:07:27,672 --> 01:07:35,852
+Bundan kurtulmak için şöyle bir şey yapılıyor. O da şu. Farklı hash fonksiyonları var.
+
+395
+01:07:40,628 --> 01:07:42,628
+Burada bir
+
+396
+01:07:47,188 --> 01:08:11,568
+Random hash fonksiyonu seçiliyor. Yani random hash fonksiyonu seçilmesi demek, işte tablo uzunluğunun değişik olması örneğin veya double hash yaparken kaç adım sonraya öplejin olduğunda yerleştireceğinin değişik olması gibi bir hash fonksiyonu seçiliyor ve bunun ile tablo oluşturuluyor.
+
+397
+01:08:13,460 --> 01:08:36,739
+o atağı yapan, saldırıyı yapan kişinin de hangi eş pomosyonunuzu seçtiğinizi bilemeyeceği için bu şeyi engellemiş oluyor, atağı engellemiş oluyor. Böyle gibi bir şey var, yöntemde var. Peki, şuraya kadar sormak istediğiniz bir şey var mı?
+
+398
+01:08:38,771 --> 01:08:42,192
+Hocam bunu random seçiyoruz dedik ya, hash fonksiyonlarını.
+
+399
+01:08:42,492 --> 01:08:42,951
+Ama hep onu kullanıyoruz.
+
+400
+01:08:42,951 --> 01:08:48,391
+Saldıran adam bilmeyecek bunu da, biz nereden bileceğiz hangisini seçtiğimizi. Onu anlamadım.
+
+401
+01:08:49,492 --> 01:08:57,572
+Sen derken kişi olarak senin bilmen gerekmiyor. Sistem onu seçip ona göre şey yapıyor. Nedir?
+
+402
+01:08:58,951 --> 01:09:04,171
+Hash tablosunu kuruyor. Java da oluyormuş mesela bu.
+
+403
+01:09:05,363 --> 01:09:15,363
+Java'da, Java apilerinden bulunarak yapılıyormuş bu saldırı şekli. Bunu buluyor, ondan sonra...
+
+404
+01:09:16,532 --> 01:09:41,832
+Aynı adreste ki üretiyor? Senin sisteminde diyor ki bunu önlemek için ben diyor runtime'da diyor, bir hash tablosunu random seçerim diyor. Yani hash fonksiyonunu random seçerim. Tabloyu da bu fonksiyona göre oluşturdu. Sen de diyor onu bilemeyeceğin için, benim hangi hash fonksiyonuyla çalıştığımı bilemeyeceğin için bu hatayı yapamazsın diyor. Yani bu şekilde yapılan bir çözüm.
+
+405
+01:09:44,532 --> 01:10:00,000
+Bunu sordum, güvenlikte falan kullanıyor mu böyle bir şeyler diye. Çok sık rastlanılan bir problem değilmiş. Aklınızda bulunsun diye anlattım. Şimdi bir de şeyi söyleyerek böyle böyle akşam oldu.
+
+406
+01:10:01,011 --> 01:10:24,011
+Bitti, bitti diyerek. Aslında şeyde çok, hash işlemi, hash ink işlemi çok fazla kullanılan bir şey, yöntem. Çünkü doğrudan erişme avantajı sağlaması açısından çok tercih ediliyor. Mesela siper çekürlerde...
+
+407
+01:10:29,908 --> 01:10:49,688
+Bir kelime doğru yazılmış mı diye key olarak kelimeyi kullanıp ondan sonra hash tablosunda da dictionary var. Ne oluyor? O kelimenin dictionary'de olup olmadığına bakabiliyorsunuz. Sizin öde bu muydu? Bunu mu sordum biz size?
+
+408
+01:10:55,252 --> 01:11:04,811
+Mesela Browser'da şeyleri, URL adreslerine, şeyleri mesela hangi sayfalara gidildiğini bulmaya çalışıyorsunuz.
+
+409
+01:11:05,731 --> 01:11:09,372
+Hashtable'da sayfaların bilgilerini tutuyorsunuz.
+
+410
+01:11:09,712 --> 01:11:18,152
+Key'inizde URL, o URL gidilmiş sayfalar o URL ile hash tablosuna erişip o sayfaya gidilip gidilmediğini.
+
+411
+01:11:20,020 --> 01:11:24,020
+kontrol edebiliyorsunuz. Mesela işte...
+
+412
+01:11:25,363 --> 01:11:32,483
+spam filterde, spamleri elmek için key olarak IP adresini tutabilirsiniz mesela.
+
+413
+01:11:33,423 --> 01:11:44,463
+Hash tablonuzda da spam olan adresler var. Ondan sonra böylece bu IP adresinin işte hash tablosuna bakarak spam olup olmadığını anlayabilirsiniz.
+
+414
+01:11:45,323 --> 01:11:53,343
+Mesela credit card fraud detectionlarda, kredi kartının numarasından şeyler tutuluyor mesela.
+
+415
+01:11:53,363 --> 01:11:59,523
+Çalıntı kartların bilgileri tutuluyor. Sizin kartınız çalıntıların arasında var mı? Bunu anlayabilirsiniz.
+
+416
+01:11:59,963 --> 01:12:13,723
+Mesela şöyle bir şey anlattılar bize. Bu gerçek yani bir bilgi. Bu meşhur internet alışverişleri falan sırasında bu çok büyük bir şeyin bütün kart bilgileri çalınıyor.
+
+417
+01:12:14,676 --> 01:12:20,036
+İşte hani böyle trend yok hepsi burada, N11 falan bir şeyler var ya, kim olduğunu söyleyeceğim.
+
+418
+01:12:21,316 --> 01:12:31,076
+Çalınıyor. Fakat bankaların kart sahiplerine şey vermesi, yeniden kart vermesi pahalı bir işlem.
+
+419
+01:12:31,156 --> 01:12:34,096
+O kartlar işte 5 dolar mı dediler tanesi öyle bir şey.
+
+420
+01:12:34,695 --> 01:12:37,636
+Yani mesela diyordum ki 1 milyon kişinin kartı çalındı.
+
+421
+01:12:37,636 --> 01:12:42,615
+Bu milyon kişiye yeniden kredi kartı verilmesi masraf.
+
+422
+01:12:42,676 --> 01:12:51,216
+olduğu için şey yapıyorlarmış, gri bölge diye bu çalıntı kartların bilgilerini bu şekilde tabloda saklıyorlar.
+
+423
+01:12:52,755 --> 01:13:00,675
+Bunlarla yapılan şeylerde, ne diyeyim, şüpheli işlemlerde o tabloya gidip bakıyor acaba...
+
+424
+01:13:01,524 --> 01:13:11,184
+o çalıntı kartların arasında bu kartın da bilgisi var mı diye. Yani gerçekten bu tür uygulamalar gerçek dünyada da kullanıyor.
+
+425
+01:13:11,284 --> 01:13:18,484
+Mesela bizim hazırladığımız ödevde de bu aslında search engine'ler şeyleri öyle arıyorlar.
+
+426
+01:13:18,484 --> 01:13:25,284
+Yani ne yapsın, sizin sorguladığınız her kelimede serverlardaki bütün dokümanlara bakacak hali yok.
+
+427
+01:13:25,444 --> 01:13:29,424
+Aslında o kelimenin geçtiği dokümanların listesini tutuyor.
+
+428
+01:13:29,524 --> 01:13:35,164
+eş tablosundan onlara erişerek buluyor. Peki, sorunuz var mı?
+
+429
+01:13:38,224 --> 01:13:47,704
+Sağ kalan kaldı mı? A kaldı çünkü biraz böyle uzun oldu. Özellikle bu şey için. Peki, o zaman uzun olduğu için uzun bir ara veriyorum.
+
+430
+01:13:49,784 --> 01:13:56,804
+14, 17, 20 desek 10, 15, 35'e kadar, 3 ay 25 kalaya kadar bir ara verelim. Tamam mı?
+
+431
+01:13:58,836 --> 01:13:59,467
+Tamam ya.
+
+432
+01:30:38,579 --> 01:30:50,579
+Evet arkadaşlar, şimdi kaldığımız yerden devam edelim. Bugün aslında yeni bir konuya başlayacağız. O da dinamik programlama.
+
+433
+01:30:54,579 --> 01:31:03,020
+Şimdi bugüne kadar gördüğümüz tasarım şekillerinden farklı bir tasarım göreceğiz.
+
+434
+01:31:03,020 --> 01:31:13,260
+Rekürsif olmayan, rekürsif olan algoritma tasarımları görmüştük. Bu farklı bir bakış açısıyla problemlerin çözülmesini sağlayan bir yaklaşım.
+
+435
+01:31:13,260 --> 01:31:21,020
+Aslında dinamik programlamadaki programlama, programlı olmadan geliyor.
+
+436
+01:31:23,444 --> 01:31:32,140
+Eğer şeyse, üst üste çakışan bir günün devamı olan işler varsa bunları yine...
+
+437
+01:31:32,659 --> 01:31:38,659
+küçük alt problemlere bölerek çözmek için kullanılan bir yaklaşım.
+
+438
+01:31:38,659 --> 01:31:45,659
+Ve 1950'lerde Richard Berman tarafından geliştirilmiş bir yaklaşım.
+
+439
+01:31:45,659 --> 01:31:49,659
+Yani yükseğe ortamında kullanılsın diye geliştirilmemiş.
+
+440
+01:31:49,659 --> 01:31:55,500
+Buradaki şey eğer birbirine bağlı alt problem var, alt problem var...
+
+441
+01:31:55,667 --> 01:32:03,047
+Bunların küçük parçaları bölelim, küçük parçaları çözerek programın tamamını çözebilir hale gelelim.
+
+442
+01:32:03,380 --> 01:32:15,380
+şeyden farklı, böl ve yönet mantığından farklı. Böl ve yönette aslında biz problemleri bağımsız parçalara ayırıp, bölüp çözüyorduk.
+
+443
+01:32:16,000 --> 01:32:30,880
+Burada ise problemler birbiriyle bağlantılı. Yani birinin sonucunu alıp devamında başka bir yerde kullanıyoruz. Yani böyle bir şey var, overlap var aslında burada.
+
+444
+01:32:31,699 --> 01:32:44,299
+Yani burada, onu yazayım madem, alt problemlerin, şöyle gideyim sap.
+
+445
+01:32:50,003 --> 01:32:56,003
+birbirlerine bağlı olduğu kabul ediliyor. Şimdi bunu bir örnekle göstermek istiyorum.
+
+446
+01:32:56,904 --> 01:32:59,583
+Fibonetçi sayıları vardır. Hatırlar mısınız?
+
+447
+01:33:05,427 --> 01:33:29,067
+Hani böyle sıfır, bir, bir, iki, üç, beş, sekiz, on üç diye gider. Her sayı kendisinden önceki iki sayının toplamına eşittir. Bu şekilde bir Fibonacci serisi elde edilir.
+
+448
+01:33:30,707 --> 01:33:39,707
+Şimdi, aslında şey değil ama rahat anlaşılırlık açısından. Bunu rekürsit yazmak çok da akülkar değil ama...
+
+449
+01:33:43,283 --> 01:33:48,003
+İlk n fibonacci sayısını bulmak için bir rekürsif fonksiyon yazsak.
+
+450
+01:33:48,423 --> 01:33:50,003
+Şimdi burada neyi görüyoruz aslında?
+
+451
+01:33:50,743 --> 01:33:55,083
+N. fibonacci sayısı neye eşit?
+
+452
+01:33:55,243 --> 01:34:01,384
+N-1. fibonacci sayısıyla N-2. fibonacci sayısının toplamına eşit değil mi?
+
+453
+01:34:01,384 --> 01:34:08,384
+Yani 8 aslında 3 ile 5'i topluyorsunuz, 8'i elde ediyorsunuz.
+
+454
+01:34:09,108 --> 01:34:22,768
+Dolayısıyla ben bunu eğer, bu benim eğer, rekürans bağıntım olursa, nasıl yazabilirim recursive fonksiyonunu?
+
+455
+01:34:23,148 --> 01:34:31,208
+Verilen n sayısı için, ilk n, bir bonitçe sayısını bulmak istersem, durma şartı n'in 0 veya 1 olması.
+
+456
+01:34:38,579 --> 01:34:49,515
+n1 ise return 1. Ondan sonrasını artık hesaplayarak bulacağız. Eğer n0 veya 1 değilse o zaman
+
+457
+01:35:01,716 --> 01:35:10,976
+n-1 ve n-2 değerleri için şeyi çağıracağım, fibonacci fonksiyonunu çağıracağım ve bunların toplamını alacağım. Yaptığım şey bu.
+
+458
+01:35:12,416 --> 01:35:20,115
+Peki o zaman diyelim ki bu fonksiyonu n eşittir 6 için çağırırsam ne olacak?
+
+459
+01:35:24,083 --> 01:35:30,243
+aynı fonksiyonu n eşittir 5 ve n eşittir 4 için çağıracak. Çünkü bunların toplamını alıyor.
+
+460
+01:35:31,743 --> 01:35:38,644
+Rekürsif olduğu için n eşittir 5 için olan kimi çağıracak? 4 ve 3 için olanı çağıracak.
+
+461
+01:35:39,724 --> 01:35:49,963
+Bu 3 ve 2 için olanı çağıracak. 2 ile 1 için olanı çağıracak.
+
+462
+01:35:56,819 --> 01:36:05,300
+Bu burada bitti, bu burada bitti. Bu aşağıya devam edecek, bu aşağıya devam edecek. Bu yine aynı mantıkla aşağıya devam edecek.
+
+463
+01:36:05,300 --> 01:36:14,300
+Şimdi burada ne dikkatinizi çekiyor? Burada şunu görüyorsunuz. Aslında şey...
+
+464
+01:36:15,667 --> 01:36:28,167
+F6'yı hesaplamak için F5 ile F4'ü çağırdım ama F4'ü burada da çağırdım. F5'i hesaplamak için F4 ile F3'ü çağırdım ama F3'ü burada da çağırdım.
+
+465
+01:36:28,307 --> 01:36:38,627
+Yani rekürsif yaptığımız zaman bu işi şeyin bir hafızası olmadığı için, rekürsionda bir şey olmadığı için o sadece ne yapıyor?
+
+466
+01:36:38,627 --> 01:36:43,427
+Böyle gidiyor, ondan sonra böyle gidiyor. Gittiği yerden de.
+
+467
+01:36:43,667 --> 01:37:10,667
+geri dönerek problemi çözüyor. Ama orada aynı 4 değeri için aynı fonksiyonu 2 defa çağırıyor. 3 için mesela şurada da 3'ü çağıracak falan. Yani böyle aynı n değeri için aslında başka bir noktada hesaplamış olmasına rağmen fonksiyonu defalarca çağırıyor. O zaman yani bu şekilde eğer benim
+
+468
+01:37:11,667 --> 01:37:18,247
+Daha önceden hesapladığım bir şeyi, yani bir problemi tamam parçalara bölerek çözeceğim bu şekilde.
+
+469
+01:37:18,967 --> 01:37:29,347
+Ama daha önceden hesapladığım bir sonucu bir sonraki adımlarda kullanma şeyim varsa, imkanım var ise,
+
+470
+01:37:29,347 --> 01:37:39,187
+o zaman benim bunu rekürsif yapmamam, rekürsif yapmak yerine bayağı bildiğim,
+
+471
+01:37:45,427 --> 01:38:04,408
+Örneğin dizi kullanarak özellikle gösteriyorum, sayıla da yaparız biliyorsunuz da, şeyle görün diye yani mesela bu i-1. ile i-2. hesapladım, i için kullandım. Yani 10 defa dönüp dönüp aynı şeyleri hesaplamama gerek yok.
+
+472
+01:38:04,787 --> 01:38:16,787
+Dolayısıyla dinamik programlamada bizim yaptığımız şey bazı bilgileri sürekli her seferinde tekrar hesaplamak yerine...
+
+473
+01:38:18,739 --> 01:38:46,579
+elde ettiğim bir önceki sonucu şey yapmak. Bu arada şunu ben hep yazıyorum, unutmayın. Böyle bir rekürsif fonksiyonla çözdüğünüzde n'e bağlı olarak bu eksponansiyel bir şey, aslında rekürsif ve hızlı yaptığımızı zannederken 1.6 üzeri n toplama yapılıyormuş bu işlerini gerçekleştirmek için.
+
+474
+01:38:46,739 --> 01:38:50,980
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+475
+01:38:56,756 --> 01:39:11,756
+Peki, o zaman şimdi önce şey yazacağım, dinamik programlamada işleri nasıl yapıldığının adımlarını yazacağım. Arkasından da size örnek üzerinden bunu anlatacağım.
+
+476
+01:39:11,756 --> 01:39:20,756
+Şimdi, bir problemi dinamik programlamayla çözerken, birinci yapacağımız şey...
+
+477
+01:39:21,247 --> 01:39:35,327
+Tıpkı aslında işte Divide and Concorde falan da yaptığımız gibi bunu nasıl parçalara bölebileceğimizi, parçaların ne olabileceğini, parçada ne yapabileceğimizi belirlemek.
+
+478
+01:39:35,707 --> 01:39:42,627
+Yani alt problemleri, bu bütünün oluşturan alt problemleri belirlemek.
+
+479
+01:39:48,564 --> 01:40:00,000
+Rekürans bağıntısını yazmak. Şimdi burada da, dinamik programlamada da problemler aslında rekürans bağıntılarıyla çözülüyor. Neden? Yani burada da bir rekürans...
+
+480
+01:40:00,000 --> 01:40:12,000
+rekürans işlemi var. Yani eninci adımdaki problem, en eksik birinci adımdaki elde edilen sonuca bağlı olabiliyor veya işte başka bir adıma şimdi göreceğiz.
+
+481
+01:40:12,140 --> 01:40:18,240
+Rekürans bağlantımıza bağlı olarak önceki adımlarda elde edilmiş sonuçlara bağlı oluyor.
+
+482
+01:40:18,760 --> 01:40:27,920
+Fakat burada sistemin belleği var. Yani şeyler, o sonuçları her seferinde yeniden hesaplamıyoruz. Hesaplanmış sonuçları.
+
+483
+01:40:28,000 --> 01:40:33,420
+bir tabloda, dizide, matriste, neyse bir yerde tutarak kullanıyoruz.
+
+484
+01:41:14,355 --> 01:41:41,935
+Yani burada bizim yaptığımız şey, önce alt problemimizin ne olacağını bu ana problemi çözmek için belirleyeceğiz. Onun için gerekli rekürans bağıntısını yazacağız. Arkasından şey yapacağız, bu rekürans bağıntısını çözmek için gerekli tasarımı yapacağız ama her adımda hesapladığımız şeyleri nedir, sonuçları bir dizidir.
+
+485
+01:41:42,355 --> 01:41:50,355
+bir mantristi bir yerle saklayacağız. Mesela fibonacci için o zaman ben rekürans bağıntısını yazarsam şöyle yazacağım.
+
+486
+01:41:50,355 --> 01:41:58,355
+Fibonacci n, fibonacci n-1 artı fibonacci
+
+487
+01:42:00,564 --> 01:42:20,423
+N-2'ye eşit, N büyük eşittir 2 için. Mutlaka bir rekürans bantınız var ise ilk durumlarınızı da belirlemeniz gerekir. Çünkü rekürans bantısı geriye giderek problemleri çözüyor.
+
+488
+01:42:22,836 --> 01:42:45,456
+Dolayısıyla bir başlangıç durumu olması gerekiyor. Yani en geriye gittiğimizde bir başlangıç durumu olması gerekiyor. Bu da şu demek, ilk değerleri bir yerde belirleyeceksiniz ve sonucu da bir dizidir, matristir, övlemin çözümü için ne gerekiyorsa orada.
+
+489
+01:42:47,539 --> 01:42:52,880
+Saklayacağız. Yani şurada hesapladıkça sonucu saklayacağız.
+
+490
+01:42:53,060 --> 01:43:00,100
+Fibonacci rekürans bağlantımızı kullanarak şeyi oluşturacağız, vektörü oluşturacağız ve sonucu saklayacağız.
+
+491
+01:43:00,739 --> 01:43:06,760
+Şimdi şey demeyin lütfen. Doğru çünkü Fibonacci sayılarımızı denizde saklamaya gerek yok.
+
+492
+01:43:06,960 --> 01:43:15,520
+Sadece bu örnek çok anlaşılır olarak, hani hem rekürans bağlantısını yazması çok kolay, göstermesi çok kolay.
+
+493
+01:43:15,539 --> 01:43:27,980
+O yüzden Fibonacci'yi örnek olarak anlattım. Yoksa evet, orada dizi kullanmaya hiç gerek yok. Normal değişkenler üzerinden de Fibonacci sayılarını hesaplayabiliriz.
+
+494
+01:43:28,640 --> 01:43:31,760
+Buraya kadar sormak istediğiniz bir şey var mı öncelikle?
+
+495
+01:43:38,003 --> 01:43:42,503
+İyi misiniz? Dinleyebiliyorsunuz değil mi? Beni şu anda görüyorsunuz. Şu an ekranı hiçbir sıkıntı yok.
+
+496
+01:43:42,503 --> 01:43:43,264
+Evet hocam.
+
+497
+01:43:43,264 --> 01:43:44,703
+Peki.
+
+498
+01:43:46,384 --> 01:44:03,523
+Peki, o zaman şeyle devam edelim. İkinci problemle devam edelim. Bu gerçekten dinamik programlamayla çözülen bir problem.
+
+499
+01:44:07,315 --> 01:44:17,315
+01, Napsack problem. Şimdi burada şöyle bir şey var, bir tane hırsız var. Bu hırsızın...
+
+500
+01:44:17,684 --> 01:44:42,684
+Bir nefs eklediği şey sırt çantası aslında. Bir çantası var ve bu çantaya gittiği evdeki eşyaları doldurup götürecek. Fakat şöyle bir sıkıntı var. Tabii ki bir çanta olduğuna göre onun bir kapasitesi var. Diyelim ki çantası 15 kiloyuk alıyor ve o zaman ne yapması lazım? Bu çantaya...
+
+501
+01:44:43,167 --> 01:45:05,167
+15 kiloyu geçmeyen ama bizim deyimimizle yükte hafif pahada ağır olan şeyleri yerleştirmesi lazım. Eşyaları yerleştirmesi lazım. Bunu nasıl yapacak? Şimdi normalde...
+
+502
+01:45:07,699 --> 01:45:24,039
+Şuradaki sıfır şeyi gösteriyor. Alma, bir de al. Yani bu sıfır bir nefsek problem demelerinin sebebi, işte şeyi alacak mıyım, herhangi bir eşyayı alacak mıyım, almayacak mıyım?
+
+503
+01:45:24,340 --> 01:45:37,899
+Ona karar vermek için. Şimdi benim sırt çanta sırsızım diyelim ki VW ağırlığında olsun, büyük V, bu şöyle, büyükeyim bunu ben. Ve N tane de
+
+504
+01:45:41,268 --> 01:45:54,387
+şey olsun, alabileceği, çalabileceği eşya olsun. Şimdi böyle bir durumda biz nasıl en iyi belirlemek için ne yapabiliriz en kötü ihtimalle?
+
+505
+01:45:59,347 --> 01:46:23,887
+En kötü ihtimalle her şeyi deneriz. Yani şunu deneriz. Birinci eşyayı alayım. Birinciyi almışken, ikinciyi de yani bu NP-iteminde şeyleri var. Nedir? Value'ları var. Yani kaç lira ettikleri var, değerleri var. Bir de öyle bir şey var. Hem şeyleri var, nedir? Ağırlıkları var, hem de değerleri var.
+
+506
+01:46:29,268 --> 01:46:31,104
+Nasyepağızı sepunol.
+
+507
+01:46:31,104 --> 01:46:34,224
+Kendimiz yapıyor olsak, deneye yanına yapıyor olsak.
+
+508
+01:46:34,644 --> 01:46:40,884
+İşte birinci eşyayı aldım, ondan sonra sırt çantasını attım, 5 lira tutuyordum.
+
+509
+01:46:41,224 --> 01:46:45,724
+İkinciyi de aldım, o da 8 lira tutuyor, 13 liralık mal aldım şu anda.
+
+510
+01:46:46,684 --> 01:46:52,984
+Ondan sonra günden üçüncüyü de alırsam sırt çantası taşıyorum, taşırsa kaç lira kazanmış oluyorum.
+
+511
+01:46:52,984 --> 01:46:59,104
+Yani bunu böyle her türlü şeyi, kombinasyonu deneyerek yaparsak.
+
+512
+01:46:59,104 --> 01:47:07,364
+eğer, en tane item için iki üzeri Android var. Bu brute force, yani olabilecek her türlü durumu deneme işi, brute force.
+
+513
+01:47:07,884 --> 01:47:19,743
+Buna exhaustive search deniyor. Yani hiçbir şey düşünmeden bütün olasılıkların denenmesi, işte bir, iki, üçümü alsam, işte yok bir, iki, dördümü alsam falan.
+
+514
+01:47:27,155 --> 01:47:44,576
+2 üzeri n şeyimiz oluyor, olasılığımız oluyor denememiz gereken haliyle 5 tane şey item için, 2 üzeri 5 desem, 2 üzeri 5 dediğim 32 olasılık hırsız o evi soyamadan çıkar dışarı.
+
+515
+01:47:44,695 --> 01:47:53,936
+Eğer böyle çok şey birisi ise, illa en iyi sonucu alacağım falan diye düşünen birisi ise o evi soyamadan çıkar.
+
+516
+01:47:55,155 --> 01:48:15,316
+Şimdi o zaman bizim başka bir yol bulmamız gerekiyor. Yani biz şunu yapmak istediğimizi biliyoruz. Acaba kombinasyonları görmemiz gerekiyor bizim. Yani hadi biri alsam, bir ile ikiye alsam, peki bir ile üçü alsam, işte bir üçü almışken beşi alsam ne olur falan diye kombinasyonları görmek istiyorum.
+
+517
+01:48:23,155 --> 01:48:34,256
+1-3-5'e algılım ne oldu? Görebileceğim bir yapı kurarsam, böyle tek tek çünkü şimdi öbüründe şöyle bir sıkıntı var.
+
+518
+01:48:35,636 --> 01:49:01,636
+Hep bozuk bir de başa dönüyorum. Yani aklımda tutmadan, bozuk başa dönüp başka kombinasyonları veriyorum. Bunların bir önceki bilgilerimi de tutarak olasılıkları hesaplasam, acaba bu problemi çözebilir miyim? Evet, dinamik programlamayla bunu bizim yapabilmemiz mümkün. Yani ben...
+
+519
+01:49:02,228 --> 01:49:15,907
+Şöyle bir şey yapsam, benim diyelim ki en tane itemim olsun. Bu item'ların ağırlıkları
+
+520
+01:49:20,340 --> 01:49:34,479
+V1'den VN'e kadar değişsin.
+
+521
+01:49:40,627 --> 01:49:41,587
+Neb-seeyim.
+
+522
+01:49:45,524 --> 01:49:59,524
+ve kiloluk eşya taşıyabilsin. Ben bütün bunları kullanarak bu problemi acaba nasıl çözebilirim?
+
+523
+01:50:01,264 --> 01:50:10,524
+Şimdi burada benim yapmak istediğim şey aslında şu, toplam kazancımı, yani yükte hafif, pahada ağır meselesi.
+
+524
+01:50:15,828 --> 01:50:30,988
+taşıyabileceğim yüke bağlı olarak maksimaliz etmeye çalışıyorum. Şey belli, ne kadar yük taşıyabileceğim belli. O yüke bağlı olarak en büyük, en fazla ağırlığı bulmaya çalışıyorum.
+
+525
+01:50:33,087 --> 01:50:36,148
+Buraya kadar sormak istediğiniz bir şey var mı? İlerleyebilir miyim?
+
+526
+01:50:48,532 --> 01:50:49,891
+Bekliyorum, ilerleyeyim mi?
+
+527
+01:50:51,612 --> 01:50:52,471
+Olur hocam.
+
+528
+01:50:53,992 --> 01:51:02,712
+Beni dinleyen bir tek sen mi varsın? Bir şey alayım. Şu an bir yoklama alma ihtiyacı duydum. Mesela bakarak söyleyeyim. [öğrenci], burada mısın?
+
+529
+01:51:05,112 --> 01:51:06,091
+Buradayım hocam.
+
+530
+01:51:06,712 --> 01:51:08,572
+Barış Yerlikaya. Çok merak ettim.
+
+531
+01:51:08,731 --> 01:51:09,591
+Buradayım ben hocam.
+
+532
+01:51:11,492 --> 01:51:12,692
+[öğrenci].
+
+533
+01:51:13,108 --> 01:51:14,028
+Buradayım hocam.
+
+534
+01:51:14,507 --> 01:51:16,448
+Çok etkilendim. [öğrenci].
+
+535
+01:51:17,368 --> 01:51:18,108
+Buradayım hocam.
+
+536
+01:51:21,627 --> 01:51:25,948
+Yalnız siz konuşunca sıranız da yaşıyor. Bu iş çok zor. [öğrenci] ayar.
+
+537
+01:51:28,847 --> 01:51:30,667
+[öğrenci] da olmadı. Peki.
+
+538
+01:51:31,288 --> 01:51:32,247
+[öğrenci].
+
+539
+01:51:34,608 --> 01:51:35,347
+Buradayım hocam.
+
+540
+01:51:36,307 --> 01:51:37,828
+Tamam. Bir dakika.
+
+541
+01:51:38,568 --> 01:51:39,828
+[öğrenci].
+
+542
+01:51:42,931 --> 01:51:44,051
+Onda da olmadı.
+
+543
+01:51:44,792 --> 01:51:46,231
+Buradayım.
+
+544
+01:51:46,231 --> 01:51:48,532
+Buradayım mısın peki? [öğrenci].
+
+545
+01:51:48,711 --> 01:51:49,612
+Buradayım hocam.
+
+546
+01:51:51,631 --> 01:51:52,731
+[öğrenci].
+
+547
+01:51:57,939 --> 01:52:00,059
+[öğrenci]'de yok. [öğrenci].
+
+548
+01:52:01,000 --> 01:52:01,819
+Buradayım hocam.
+
+549
+01:52:02,479 --> 01:52:04,800
+İyi, hiç fena değil. [öğrenci].
+
+550
+01:52:06,439 --> 01:52:07,159
+Buradayım hocam.
+
+551
+01:52:07,739 --> 01:52:09,760
+Aa, güzel. Buğuracay'ın derdi yok.
+
+552
+01:52:10,179 --> 01:52:11,119
+Buradayım hocam.
+
+553
+01:52:12,059 --> 01:52:14,139
+Güzel, peki. [öğrenci].
+
+554
+01:52:14,539 --> 01:52:15,059
+[öğrenci].
+
+555
+01:52:18,059 --> 01:52:19,340
+Orada fail etti.
+
+556
+01:52:20,479 --> 01:52:21,639
+[öğrenci].
+
+557
+01:52:24,148 --> 01:52:28,688
+Hocam, ben de buradaydım ama ben [öğrenci] değil. [öğrenci], beni geçmişsiniz.
+
+558
+01:52:29,528 --> 01:52:36,508
+Hayır, zıplayarak gidiyorum çünkü konuştukça siz şeyler koyuyorsun. Benim gözümün önündeki sıra koyuyorsun. [öğrenci].
+
+559
+01:52:37,588 --> 01:52:38,368
+Buradayım hocam.
+
+560
+01:52:38,847 --> 01:52:45,427
+Tamam, güzel. Fener değilmiş yani oldukça. Buradasınız, dinliyor musunuz peki? Dinleyebiliyor musunuz, anlayabiliyor musunuz?
+
+561
+01:52:46,739 --> 01:52:52,159
+Diyoruz hocam ama çok kalabalık. Herkes 68 kişi cevap verirse biraz sıkıntı olur.
+
+562
+01:52:52,619 --> 01:52:57,680
+Ama arada birkaç kişi versin hep aynı kişinin sesini diyorum. Görmüyorum da kim dönüp bakamıyorum.
+
+563
+01:52:57,760 --> 01:53:01,779
+Yok hocam evet bir tane sözcü oluyor genelde hep o konuşuyor ama dinliyoruz.
+
+564
+01:53:02,500 --> 01:53:04,199
+Tamam peki çok teşekkürler.
+
+565
+01:53:05,844 --> 01:53:26,324
+Az önce yeğenimi aradım bir şey sormak için. Dersteymiş, hocanın sesi geliyor öbür tarafta. Orada ders var, sen benimle konuşuyorsun dedim. Evet, ne olacak dedi. Yani o şekilde olma ihtimali beni çok endişelendiriyor. Bir tarafta ders, açık radyodunlar gibi bir tarafta ders ve bir tarafta.
+
+566
+01:53:27,604 --> 01:53:38,604
+Başka işler olabiliyor. Peki, güzel sevindim. Şimdi arkadaşlar, şu mantığı şöyle anlatayım. Bir kere dinamik programlamayla bir problem çözerken...
+
+567
+01:53:38,752 --> 01:54:02,192
+Önce şuna karar vermemiz gerekiyor. Ben hani önceki bilgileri kullanarak bir şey yapmaya odaklandım ya şu anda. Buradaki önceki bilgilerimle birinci eşyayı aldım, ikinci eşyayı aldım, şimdi üçüncüyü almalı mıyım? Veya bir aldım, ikiye almadım, üçü aldım, dördü almalı mıyım gibi bilgiler yani önceki bilgiler bu. Kim aldım, kime almadım bilgisi.
+
+568
+01:54:02,511 --> 01:54:11,511
+Peki, şimdi böyle bir şeyi ben vektörde mi saklamalıyım, matriste mi saklamalıyım? Önce ona karar vermem gerekir.
+
+569
+01:54:11,511 --> 01:54:16,511
+Tek boyutlu dizide mi saklamalıyım, matriste mi saklamalıyım? Önce ona karar vermem gerekir.
+
+570
+01:54:16,511 --> 01:54:23,511
+Genelde ya dizidir ya matristir öyle üç boyutlu bilgiye gitmem hiçbir zaman. Öyle problemlerle çalışmadık.
+
+571
+01:54:23,511 --> 01:54:27,511
+Şimdi, benim aldığım...
+
+572
+01:54:27,859 --> 01:54:32,519
+Eşyamın nelerini bilmeye ihtiyacım var babamın çözerken?
+
+573
+01:54:37,011 --> 01:54:38,731
+Bir daha sorabilir misiniz hocam? Diyamadım da.
+
+574
+01:54:39,671 --> 01:54:57,911
+Tabii, sorayım. Şimdi soru şu. Ben diyorum ki, kimlere alacağıma karar vereceğim. Neye göre karar vereceğim? İki tane parametre var benim için önemli olan. Birincisi ağırlığı. Yani durmadan alırsan, nefseğinin ağırlığından fazla bir hale gelebilir. İkincisi de values'u.
+
+575
+01:54:58,571 --> 01:54:58,971
+Pahası.
+
+576
+01:54:59,971 --> 01:55:00,331
+Efendim?
+
+577
+01:55:01,291 --> 01:55:02,491
+Değeri, pahası.
+
+578
+01:55:03,796 --> 01:55:20,796
+Evet, Değeri, yani aldığım şeyi de boşu boşuna almamalıyım. Yani iki kiloluk iki tane şey var, artık son alabileceğim iki kilo, biri üç lira, biri dokuz liraysa dokuz lira olanı seçmem lazım. Bu durumda benim...
+
+579
+01:55:23,220 --> 01:55:29,620
+Bu bilgileri tutmak için, yani hangi bilgileri saklamaya ihtiyacım var? Önce ona karar verelim.
+
+580
+01:55:30,620 --> 01:55:35,780
+Şeylerle ilgili, eşyalarla ilgili hangi bilgileri kullanarak mı problemi çözeceğim?
+
+581
+01:55:44,404 --> 01:55:45,844
+Ağırlık ve değer mi hocam?
+
+582
+01:55:46,264 --> 01:56:03,423
+Aynen öyle, ağırlığı ve kaç lira ettiği. O zaman bu iki bilgiye birden ihtiyacım var ise, ben bu ikisine bağlı olarak çözeceksem, vektör bana yeterli olur mu?
+
+583
+01:56:04,180 --> 01:56:31,100
+Dizide bunu yapabilir miyim? Hem ağırlığını bilmem gerekiyor, hem hangi eşyadan bahsettiğimi bilmem gerekiyor. Hem de eşyaları topladıkça, hem toplamda kaç lira kazandığımı görmeliyim. Birinciyi aldım, ikinciyi aldım, toplamda kaç lira aldım? Hem de birinciyi aldım, ikinciyi aldım, şu anda sırt çantamda kaç kilo yük var? Bunu görmem lazım.
+
+584
+01:56:31,636 --> 01:56:57,536
+Değil mi? İki bilgiyi biliyor olman lazım. Bir de üçüncü olarak şeyi biliyor olman lazım. Kaçıncı şeyden bahsediyorum şu anda? Eşyadan bahsediyorum. Yani hangi eşyaları aldığımda bu durumdayım onu bilmem lazım. O yüzden bunu vektörle çözebilmeme, yani tek boyutlu... Aa niye böyle oldu? Ha şey... Nasıl oldu bu?
+
+585
+01:56:59,315 --> 01:57:20,315
+Tamam. Bunu şeyle çözebilmeme imkan yok benim. Yani bir dizide bu kadar şeyi bir arada tutmama imkan yok. Önce ona karar veriyorsunuz. Yani ben nasıl bir şey tutmalıyım bu bilgiyi saklamak için? Önce ona karar veriyorsunuz. O zaman ben bunu matriste saklasam, e şöyle desem, matrisin sütunları...
+
+586
+01:57:20,467 --> 01:57:24,828
+Elimde kaç kilo biriktiğini göstermek için kullanılsın.
+
+587
+01:57:25,387 --> 01:57:30,127
+Matrisin satıldığı da, kaçıncı eşyaya geldim?
+
+588
+01:57:30,608 --> 01:57:34,268
+Mesela birinci eşya, ikinci eşya bunu göstermek için kullanılsın.
+
+589
+01:57:34,967 --> 01:57:43,228
+Ve buradaki değer de o anki toplam kazancı göstersin.
+
+590
+01:57:43,604 --> 01:57:58,576
+Yani şunu demek istiyorum. Birinci eşya ile ikinci eşyayı aldım. Örneğin 3 kilo toplam 2 kilo toplamda bu.
+
+591
+01:57:58,576 --> 01:58:13,556
+Birinci eşyadayım, bir ile ikiyi aldım, toplamda iki kilo ve sekiz lira da kazandım. Yani bu göz onu gösteriyor. Birinci eşyaya kadar olan yani şu nokta, profitin P'si bu.
+
+592
+01:58:38,195 --> 01:59:01,131
+Yani i. item'a geldiğimde, şurası i. item. Şurası i. item. Şurası i. item. Burada je in. kilo iken, o noktadaki...
+
+593
+01:59:01,171 --> 01:59:17,515
+maksimum kazancım nedir? Yani olabilecek en fazla kazancım nedir? Bunu saklayın. O yüzden P-I-J bana o noktadaki maksimum kazancı göstersin. O zaman P-İ-J
+
+594
+01:59:17,652 --> 01:59:31,372
+W diye söyleyebiliriz. İşte I burada item'ı gösteriyor, W da weight'i gösteriyor. Buraya kadar sıkıntı yoksa devam edeceğim.
+
+595
+01:59:32,275 --> 01:59:53,355
+Peki. Şimdi arkadaşlar, şeyi kapatacağım, öbür taraftan, bir sonraki dersten devam edeceğim, bunu kapatacağım. Çünkü o tarafta hiç yapmıyormuşuz gibi gözüküyor bu uzadığı için. O yüzden şeyden devam edeceğim, bir sonraki dersten, yani ona tıklayın, tekrar bağlanın, olur mu? Kapatıyorum bunu.
+
+596
+01:59:54,255 --> 01:59:54,795
+Tamam hocam.
+
+597
+01:59:57,595 --> 01:59:58,895
+Tamam hocam, geliyorum.

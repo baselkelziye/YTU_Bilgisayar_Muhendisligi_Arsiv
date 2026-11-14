@@ -1,0 +1,723 @@
+1
+00:00:19,827 --> 00:00:20,716
+Teşekkürler.
+
+2
+00:02:13,939 --> 00:02:15,939
+Tak, tak.
+
+3
+00:03:44,692 --> 00:03:46,692
+Yani, çıplı dağılık, dağılık, dağılık, dağılık.
+
+4
+00:03:51,283 --> 00:03:59,963
+Çıkmakta halkı da etmeyelim. Daha az 9.5 geçiyor. En azından bir 9.5'a kadar burada olsam yoruluşu gelmesi bile.
+
+5
+00:04:12,340 --> 00:04:25,860
+Peki, şimdi [öğrenci] sormuş. Diyor ki, projelerin maksimum ders ve kredi sırasını kullanmıştığını istiyoruz. Ama program harç çalışında kullanıcı farklı değerler girebilir. Bu durumu tutarsak yaratmaz mı?
+
+6
+00:04:32,115 --> 00:04:57,115
+Bu parametreler değişebilir. Müfredat değişikliği yapıyoruz. Biz 4-5 senede bir, genel bilgi de vermiş olayım. 4-5 senede bir müfredat ufak değişiklikler yapıyoruz. Burada bazen büyük amaçlarımız olabilir. Bologna uyumluluğunu sağlamak, müdek uyumluluğunu sağlamak gibi. Veya daha küçük amaçlarımız olabilir. Böyle büyük bir amaç gündemde yoksa bu mevcut müfredatı değer...
+
+7
+00:05:04,211 --> 00:05:31,871
+Dönemi değişebilir, kredileri değişebilir. Bu nedenle bu tutağsızlık yaratmaz. Fakat eğer konu alanı istiyorsanız, projeyi daha çeşitlendirmek için bu kesinlikle gerekli değil. Öncelikle proje isterlerine odaklanın. Onun dışında ekstra şeyler kodlamak isterseniz yapabilirsiniz. Bazen belli bir anda birden fazla müfredat da yürürlükte olabiliyor.
+
+8
+00:05:32,211 --> 00:05:37,851
+Bir süre bunu yaptık. Mesela, Yusuf 2003 ve Yusuf 2008 programları paralel yürüdü mesela.
+
+9
+00:05:38,240 --> 00:06:06,240
+Fakat Bologna sürecine geçince 2008'den 2012'ye geçtik diyelim. O da 2008-2012 paraya yürüdü ama ondan sonra Bologna uyumluluğuna geçince artık süreç paraya yürümedi. 2012'deki herkesi Bologna uyumlu eğitim süreciye intibak ettik. Ders saydırma işlemleri yaptık. O şekilde devam etti mesela. Bu nedenle belki de bu maksimum ders sayısı kredisi...
+
+10
+00:06:06,240 --> 00:06:13,540
+Bu konuda kullanıcıları belki isterseniz, o zaman istediğiniz bu bilgileri ayrı bir dosyaya kaydedebilirsiniz.
+
+11
+00:06:13,540 --> 00:06:16,240
+Parametre dosyası gibi bir şey.
+
+12
+00:06:16,240 --> 00:06:23,540
+Ve eğer kullanıcı parametre dosyasını değiştirmek istemediği sürece, o parametrelerle program çalışırız.
+
+13
+00:06:23,540 --> 00:06:28,235
+Her açıldığında ve kaldığı yerden devam ettiğinde. Öyle diyebilirim mesela.
+
+14
+00:06:32,692 --> 00:06:44,372
+Ayrıca şeylere de bakın şimdi proje iftiharlarında söylesin söylemesin mesela çok az bir ders sayısı, iki ders, üç ders, iki ders sayısı olmaz mesela.
+
+15
+00:06:44,372 --> 00:06:54,912
+Bir dönemde bir insanın mesela dört beş dersten az bir ders olmuyor. Sekiz dönem olduğunu düşünürseniz yani.
+
+16
+00:06:56,148 --> 00:07:15,248
+Kırk bile az bir ders sayısı mesela. Bir minimum limit koyabilirsiniz. Örneğin çok az bir değer girdiğiniz gibi. Veyahut da belki de şey, örneğin iki senelik ön lisans veyahut da iki senelik belki tesis yüksek lisans programları olabilir. Onlarla da az ders.
+
+17
+00:07:16,819 --> 00:07:18,719
+Geçerdi söz konusu tabii ki.
+
+18
+00:07:19,219 --> 00:07:21,199
+Ya şimdi şu, çok da ezberden konuşmayayım.
+
+19
+00:07:21,500 --> 00:07:24,639
+Şu proje dokümanına da bir bakayım.
+
+20
+00:07:24,639 --> 00:07:25,519
+Bu arada.
+
+21
+00:07:26,939 --> 00:07:30,600
+Şimdi bunun proje dokümanına çekeyim.
+
+22
+00:07:31,740 --> 00:07:32,500
+Paylaşalım mı?
+
+23
+00:07:35,059 --> 00:07:36,500
+Ders Kreatür Galvası.
+
+24
+00:07:37,363 --> 00:08:05,243
+Evet, burada mesela bunun hangi ders olduğu, hangi ne tür bir program olduğu falan yazmıyor. Bu şu belli olabilir. Bir sürekli eğitim merkezinin SEM dersi olabilir. SEM kapsamında belki üç ya da dört ders veriliyordur. Bilgi güvenliği uzmanı. Burada mesela sekiz dersten dördünü seçiyorsunuz. Veyahut da bizim tesis yüksek lisansı organı alan dışarı.
+
+25
+00:08:05,363 --> 00:08:31,743
+Bilgi Teknolojileri. On tane ders alıyorsun. Bir de dönem projesi alıyorsun. Sistemde kayıtlı yirmi tane ders var. Bunlardan istediğini alıyorsun. Kredi sayısı daha az. Her ders üç kredi. Yani otuz kredi. Bir de dönem projesinde mesela dokuz kredilik ders tamamladık. Otuz dokuz kredilik kredi. Hadi yuvarlan olsun. Kırk gibi. Böyle değişik durumlar söz konusu olabileceği için farklı şeyler olabilir.
+
+26
+00:08:33,364 --> 00:09:01,284
+Mesela kullanıcı sizin yazacağınız programın bir kopyasını lisans programı için bir başka bir dizinde çalıştıracağı başka kopyasını da değişik tesis, yüksek lisans, tezli tesis, yüksek lisans programları için çalıştırmak istiyoruz. Öyle bir şey de olabilir. Bir programda başka ayarlar ve bir programda başka ayarlarla program yürüyor olabilir. Bunlarda hiçbir tutarsızlık veya sakınca yok. Aksine olabilecek senaryolar, makul ve mantıklı senaryolar.
+
+27
+00:09:06,067 --> 00:09:10,668
+O yüzden en azından belki negatif kredi girilemez kontrol yapabilirsiniz.
+
+28
+00:09:11,187 --> 00:09:14,347
+Sıfır ders sayısı girilemez kontrol yapabilirsiniz.
+
+29
+00:09:14,347 --> 00:09:18,927
+Ama bir derslik bile duruma göre program olabiliyor.
+
+30
+00:09:19,327 --> 00:09:21,028
+Sürekli eğitim merkezinin programı gibi.
+
+31
+00:09:23,127 --> 00:09:25,028
+Bilmiyorum herhalde bu söylediklerim.
+
+32
+00:09:25,427 --> 00:09:30,988
+Sorunuzda yeterli yanıt sağlamıştır, içerik sağlamıştır, malzeme sağlamıştır diye ümit ediyorum.
+
+33
+00:09:35,731 --> 00:10:00,000
+Peki ayrıca dosyayı ağır tığla açığımızda o kontrol yapmamız gerekmez değil mi? Atent ve okumak yok. Hayır, gerekmez. Çünkü o olmazsa o dosyayı orada açar. Ama belki şu olabilir. Belki hiç dosyayı açma yetkiniz yoktur. Kendi bilgisayarınızda çalışmıyorsunuzdur. Veya yarışıklı bir sisteminizin girilmiştir. O zaman küçük bir ihtimal olsa da dosyayı açın.
+
+34
+00:10:00,000 --> 00:10:06,019
+Söz konusu olabilir. Siz yine kontrolünüzünü yapın arkadaşlar. Çünkü birçok şey ters gidebiliriz.
+
+35
+00:10:06,480 --> 00:10:12,940
+Dostyalında tükçü karakter kullanmışsınızdır. Garip bir karakter kullanmışsınızdır. Oluşturmamıştır dosyayı.
+
+36
+00:10:12,940 --> 00:10:21,460
+Yani müeve kuralları her an devreye girebiliyor. Sınav kontrolü yapın yerde. Bir problem olmaz.
+
+37
+00:10:26,004 --> 00:10:28,564
+Yani Now Control yapmanızda bir problem olmaz.
+
+38
+00:10:40,563 --> 00:10:48,563
+Tabi bu arada proje kapsamında konuştum da, genel amaçlı olarak iş ediyorsanız olsun, aynı şey, narkotur yaparsınız.
+
+39
+00:10:48,563 --> 00:10:57,563
+İstihar fonksiyonlarla ilgili sadece ekranı mı yastıracağız? Evet, ekranı yastırma söz konusu. Ne bileyim, bir Excel dosyasını export etmek falan söz konusu değil.
+
+40
+00:10:57,563 --> 00:11:04,563
+Keza kaldı ki direkt Excel formatında yazmayı bilmiyorsunuz. Onun için biraz kurcalamanız lazım, o formatın ne olduğunu falan.
+
+41
+00:11:08,563 --> 00:11:25,024
+Ya da metin formatında kaydedersiniz ama her bir alanın arasına slash t tab sekme karakteriyle ayırırsınız. Böylece o tek dosyasına Excel'de bir iki basit hamleyle açabilirsiniz mesela. Öyle bir şey söz konusu olabiliyor.
+
+42
+00:11:35,392 --> 00:11:49,032
+Şöyle bir göstereyim size. Tüm ekran paylaşayım mesela. Ve diyelim ki biz metin dosyası oluşturayım mesela. Buraya girer diyeyim mesela.
+
+43
+00:12:02,131 --> 00:12:03,511
+Kırk dört mesela.
+
+44
+00:12:06,211 --> 00:12:06,811
+Evet.
+
+45
+00:12:07,811 --> 00:12:12,011
+Kırk dört olsun mesela.
+
+46
+00:12:23,283 --> 00:12:37,344
+Şahıs 9 olsun mesela bu gibi. Biz formatta alanları birbirine sekme ile ayırmış olduk. Kaydediyorum mesela. Sonra bir ekseli açtığımızda.
+
+47
+00:12:44,052 --> 00:12:45,271
+İki sayada baş bakalım.
+
+48
+00:12:52,275 --> 00:12:59,875
+Şimdi de bütün dosyalar demem lazım. Bilgiler tekstili açıyorum. Sınırlandırılmış diyorum.
+
+49
+00:12:59,875 --> 00:13:08,875
+Şimdi UTF-8 sorabilir ama şu an Windows altında çalıştığım için Türkçe, Windows, Türkçe karakterlerde en doğru kodlamayı sağlar.
+
+50
+00:13:08,875 --> 00:13:12,375
+Gerçi burada bile Türkçe karakterlerin sonunsuz olduğunu görebiliyorum.
+
+51
+00:13:12,375 --> 00:13:17,875
+Esas bakım Türkçe deyince bir grip yaptı. İlginç. Peki.
+
+52
+00:13:18,035 --> 00:13:23,035
+Türkçe İso A. Peki, UTF-8 böyleymiş. Bu denk geldi.
+
+53
+00:13:23,956 --> 00:13:47,255
+Sekme ile ayrılır, seçilir olduğunda bakkın diye eksekme ile ayırt. Başka karakterler de söz konusu olabilir. Sonra bir yerden bilgi alırken mesela bunlar sayı ama bu sayı olmasın tek sorarak saklayacağım gibi bazı seçenekleriniz olabiliyor. Bitirdiğinizde bakın işte. Daha sonra buna Excel formatında saklanmanız daha doğru olabilecektir. Excel ile uğraşacaksınız bu dosya üstünde.
+
+54
+00:13:49,587 --> 00:14:08,587
+Veya bir Excel dosyasını, sizin yazacağım bir Excel dosyasını metin dosyası olarak da kaydedebilirsiniz. Bunun için save us dediğinizde mesela metin...
+
+55
+00:14:09,908 --> 00:14:17,307
+Metin mesela diyebilirsiniz. Metin olarak kaydettiğinizde an anlamı sonuna noktaları virgül ekliyor.
+
+56
+00:14:17,307 --> 00:14:29,647
+Yani onun birbirinden noktaları virgül ayırıyor gibi. Bu şekilde ufak tefek dönüşüm ihtiyaçlarınız olabilir. Herhangi bir vesileyle onu da söylemiş oldum diye.
+
+57
+00:15:13,203 --> 00:15:24,823
+Valla kullanmamı bu söylemişsiniz de bu her türlü değişken için geçerli mi? Hayır tabii ki her türlü değişken için geçerli değil. Ne zaman dinamik bellek ayırmamız gerekiyorsa o zamanlar için geçerli.
+
+58
+00:15:24,823 --> 00:15:32,603
+Örneğin, tekrar şu şeyi alayım. Böyle şeyi paylaşma geçtirelim mesela.
+
+59
+00:15:35,764 --> 00:15:53,923
+[öğrenci], İslam'da en adet ders, en adet öğrenci, en adet kritik ilişkisi olacağı için bunların mallok ile yönetmeniz en doğrusu olacaktır. Programdan çıkılacağı zaman da her şeyi sırasıyla free yapıp çıkarsınız.
+
+60
+00:15:57,652 --> 00:16:25,512
+Mesela Altkan diyor ki, C'de bir sayfaya yazdığımızı sonuçlanır başka C kutuna aktarmak için sadece inkludu yapmamız yeterli mi? Tabii ki sadece inkludu yeterli. Ama tabii ki inkludu görebilmesi için, hatırlarsınız bir küçüktür büyüktür içine koymak, bir de tırnak içine koymak. İki ayrı inklud etme yöntemi vardı. Küçüktür büyüktür sadece sistem kütüphane dosyaları için geçerli. Tırnak istesin herhangi bir lokasyonda genelde.
+
+61
+00:16:25,652 --> 00:16:41,631
+O lokasyon DLC dosyalarımızla aynı dizin olacaktır. Ama olmuyorsa da o dosyaları proje dizinini kopyalamayı falan deneyin. Bu değişik değişik idelerde değişik değişik davranışlar söz konusu olabiliyoruz.
+
+62
+00:16:50,868 --> 00:16:52,868
+Mesela bir deneme yapalım mı?
+
+63
+00:16:52,868 --> 00:16:54,868
+Yapalım şöyle bir şey yapalım.
+
+64
+00:16:56,868 --> 00:17:00,868
+Screen Paylaşım şeklinde gidelim. Örnek.
+
+65
+00:17:00,868 --> 00:17:03,868
+Ben de DSP 4'te denemedim ama.
+
+66
+00:17:03,868 --> 00:17:05,867
+Bakalım.
+
+67
+00:17:05,867 --> 00:17:09,867
+Mesela şu proje bir denemizde bir şeylerimiz var.
+
+68
+00:17:09,867 --> 00:17:11,867
+Peki şimdi mesela bu neymiş?
+
+69
+00:17:13,940 --> 00:17:41,920
+Kayıt oluşturma, isimleri oluşturma, ondan sonra dosyaya yazma ile ilgili bir şeymiş. Bir dosya yazma değil de şey yapalım mesela. Bir de bu listeleme şeyleri olsun. Ama tabii onu isteyebilmek için o stack'ın aynı şeyde olması lazım. Aynı dosyada tanımında olması lazım. Peki tamam bu stack tanımını çekelim bakalım yani. Bir onu yapmaya çalışalım.
+
+70
+00:17:41,940 --> 00:17:50,019
+Bir şey yapmaya çalışalım bakalım. Bunun için ne olduğu yerine gidelim bakalım.
+
+71
+00:17:54,195 --> 00:18:13,036
+Kürdük Project 1 de Untitled Bizi. Evet, bu ne oldu ya. Peki, şimdi madem öyle bir bitim belgesi olmuşlarım, adımı da bilgi.h.
+
+72
+00:18:18,451 --> 00:18:29,731
+Şu tarifleri oradan keselim.
+
+73
+00:18:31,872 --> 00:18:32,951
+Ülgeye yapıştırayım.
+
+74
+00:18:34,291 --> 00:18:35,372
+Onunla aynı dizinde.
+
+75
+00:18:41,236 --> 00:18:44,276
+Bakalım olacak mı?
+
+76
+00:18:47,076 --> 00:19:01,115
+Evet, hiçbir problem olmadı. Yoksa illa derleme hatası verildi. Bundan sonra ekleyebildik. Yani başka türlü person'ın stat burada derleme hatası verildi. Bu şekilde yeter.
+
+77
+00:19:01,756 --> 00:19:03,556
+Peki, şimdi beşer demiş ki.
+
+78
+00:19:03,872 --> 00:19:22,932
+Dosyelerdeki kayıt ismeleri, kayıt güncelleme için ek geçici dosya kullanmaktan başka bir çözüm var mı? İmleciğin yeni değişiklerinin uzun yıllar sonrası olmadığı bir işitim sistemine göre değişiyor sonuçta. Ne oluruz? Olabilir. O yüzden geçici dosya kullanmak güzel bir çözümdür bence. Öyle devam edelim.
+
+79
+00:19:23,251 --> 00:19:51,172
+İlla ki aynı dosyaya yazılacak gibi bir kısıtlı sınav ya da kısıtlı proje değil bu. Nasıl düzgün şekilde çalıştırabiliyorsanız öyle yapın. Taşınabilir ve de evet dikkat edin arkadaşlar. Mesela kiminiz değişik linux dağıtımlarında kodluyor, kiminiz değişik windows dağıtımlarında kodluyor, kiminiz mac bilgisayarlarda kodluyor. Ama sonra ödevi değerlendirirken biz bunu hangi bilgisayar sisteminde açacağız orası şu an belli değil. O nedenle taşınabilir.
+
+80
+00:19:51,251 --> 00:19:57,652
+Nereye dikkat edin arkadaşlar? [öğrenci] sayesinde genel bir yapıcı vermiş olduk.
+
+81
+00:20:01,231 --> 00:20:04,152
+Evet, bir şey diyeyim ne demek. Başka sorumuzda bekliyorum.
+
+82
+00:20:10,420 --> 00:20:21,720
+Çünkü birçok yeni gibi dönersen, belki de mesela, et projek var mesela, en hangi bir sidosun başka bir dizinde de olsa buraya eklememiz söz konusu olabilir.
+
+83
+00:20:23,860 --> 00:20:26,559
+Ama tabii o iddeneğe değişiyor.
+
+84
+00:20:28,559 --> 00:20:30,700
+Ama tabii siz ödürü teslim ederken...
+
+85
+00:20:31,380 --> 00:20:40,240
+Hem kodu, kaynak kodu hem de Executable dosyayı paylaşacaksınız. Yapımıyorsam. Evet. Yapımda kaynak kodu. Executable istemiyor ama.
+
+86
+00:20:41,120 --> 00:20:48,660
+Eğer değişik değişik kütüphanelerden değişik değişik şeyleri toparladıysanız onların hepsini vermeniz gerekiyor. Bu durumda.
+
+87
+00:20:50,067 --> 00:21:17,867
+Örneğin, şuradaki örneğimizde Ante Hatta 1C ve Bilgi H. İkisi de aynı dizinde olması ve ikisini birlikte sıkıştırıp top 4Tek dosya haline getirip yollamanız en doğrusu olacaktır. Bu Ante Hatta 1 başka dizinde bilgi, sizin belki kod kitaplığı dizinizde, onlar ayrı ayrı yerlerde olursa ve o bağlantıyı şurada proje ayarlarından yaptıysanız belki o sıkıntı çıkartabiliriz.
+
+88
+00:21:18,067 --> 00:21:30,027
+O yüzden ya tek dosyada yapın veyahut da işte bu şekilde aynı dizine alın inklud ettiğiniz dosyaları. Hepsini birlikte verin. Öyle öneriyorum.
+
+89
+00:21:37,491 --> 00:21:40,331
+Tekrar paylaşımına şu PowerPoint'e çekeceğim.
+
+90
+00:21:44,627 --> 00:21:46,571
+Soğuz beklemeye devam edelim.
+
+91
+00:22:28,627 --> 00:22:35,627
+Az önce kodu açar mısınız?
+
+92
+00:22:35,627 --> 00:22:48,627
+Bunu görebilirsiniz arkadaşlar. Bir önceki dersimizden kalan kodu.
+
+93
+00:22:54,804 --> 00:22:55,764
+Sonra gel bakalım.
+
+94
+00:22:57,624 --> 00:22:58,764
+Tamam, bir tehlike diyor.
+
+95
+00:24:03,796 --> 00:24:12,516
+Bugün ne bulacak mı? Lab ile ilgili bir şeyimiz yok şu an. Bir bilgi gelmedi. Büyük ihtimalle olmayacak. Ama bir kontrol edelim yine de.
+
+96
+00:24:14,876 --> 00:24:21,115
+Evet tamam. Bu resmini araşıyoruz. O sırada ben maillerimi kontrol edeyim. Sabah bakmadım.
+
+97
+00:24:58,451 --> 00:25:03,711
+Bak, Türkiye Normal Yıldız adresinde yeni bir şey yok. Cümelinde yeni bir şey yok.
+
+98
+00:25:04,231 --> 00:25:06,751
+Bak arkadaşlar, bugün nap saatimiz olmayacak.
+
+99
+00:26:39,316 --> 00:26:41,100
+Fek, bu kadar.
+
+100
+00:26:41,491 --> 00:26:46,471
+Her şeyin skilya kimse değişimliğinizi izin vermiyor mu yoksa geliştirilirisi bunu kolay yok mu?
+
+101
+00:26:46,751 --> 00:26:55,451
+Geliştirilirisi dosya en taşınabilir yolu arkadaşlar. Kolaylık kişiye göre değişir ama ben de geliştirilirisi dosyayla çalışmayı daha kolay bulurum.
+
+102
+00:26:55,451 --> 00:27:04,152
+Öyle söyleyeyim. Seyi imci değiştirip iskiniz konuları gelip veri eklemliğe izin veriyor ama yani bunun taşınabilirliği daha düşük.
+
+103
+00:27:04,872 --> 00:27:09,451
+O kod bir bilgisayar sisteminde çalışıp başka bilgisayar sisteminde çalışıp...
+
+104
+00:27:09,491 --> 00:27:28,231
+O yüzden benim genel önerim, geçici dosyalar üzerinden çalışmaktır. Zaten çok büyük dosyalar olmayacak oluşturacağımız şeyler. O yüzden işlem sürenizde bir önemli problem olmayacaktır. Kolay yolu ve taşınabilir yolu geçici dosya kullanmaktır arkadaşlar.
+
+105
+00:27:45,875 --> 00:27:54,135
+Kodu paylaşıyordum. Herhalde arkadaşımın yerimi çıkmıştık. Tekrar şu ara PowerPoint'te geçelim tekrar paylaşıma.
+
+106
+00:28:07,188 --> 00:28:22,827
+Evet, peki. Örneğin diyor ki, öğrenci kayıt ekleme ile silme ile yanaşı kayıt düzenleme kısmı var. O ne işe yarıyor? Şimdi yanaşı anlamadım. Orada bir yazım hatası var galiba. Orada ne demek istediniz?
+
+107
+00:28:36,884 --> 00:28:50,144
+Kayıt ekleme, kayıt silme, ekleme silme, düzenleme, öğretim üyesi verdiği ders listeleme, kayıt öğrenci listeleme, bunlardan listeleme. Bunlar hep listeleme.
+
+108
+00:28:50,144 --> 00:28:59,763
+Yani her dosya için yapılacak ekleme silme, güncelleme. Açık buradan daha ne soru anlayamadım yani doğrusu sorumuz.
+
+109
+00:29:27,700 --> 00:29:46,039
+Önemli dersi nasıl güncelleyecek? Bunu sormuşlardı arkadaşlar. Genel olarak işleri yazdık. Bazı durumlarda geçerli olmayabilir. Ama burada şöyle bir geçerli bir durum var.
+
+110
+00:29:46,451 --> 00:29:59,991
+Her bir dosya için yapılışı eklesinme, güncelleme. Öğrenci ders öğretim üniversitesi için ders ekleme, ders sinme, ders güncelleme. Bir dersin bilgisinde güncelleme yapılabilir. Dersin kodu değiştirilebilir, adı değiştirilebilir.
+
+111
+00:30:00,000 --> 00:30:23,299
+Öğrencin kendisine normalde ders ekler, ders silah. Ders güncelleme diye özel bir şey yoktur. Ama bir dersin güncelleme işlemi vardır. Bir öğretim üyesinin güncelleme işlemi vardır. Dersin adı kodu değiştirilebilir. Öğretim üyesinin adı ünvanı.
+
+112
+00:30:23,892 --> 00:30:42,471
+Şusufu değiştirilebilir. Tabii ki öğrenci için güncelleme yok. Ama ders için ekleme silme güncelleme, öğretim üniversitesi için ekleme silme güncelleme, öğrenci için ders ekleme silme söz konusu olacaktır. Yani öğrenci için ders güncelleme o yok.
+
+113
+00:30:47,892 --> 00:31:08,711
+Şimdi bu şekilde yazınca daha kompakt oluyor. Öbür türlü daha uzun oluyor. Bir sayfaya da sığdırmaya çalışıyoruz genelde böyle şeyleri ne derse. Ama neyse açıkladık. Böylece açığa kavuşmuştuk herhalde. Ayrıca sizler de çekinmeyi sonra arkadaşlar hocam şurası açık değil. Biz de konuşuruz.
+
+114
+00:31:08,711 --> 00:31:13,271
+Şimdi arkadaşlar normal yazılım geliştirme sürecinde zaten iletişim çok önemli.
+
+115
+00:31:15,412 --> 00:31:25,052
+Analiz ekibi, yazılım mühendisliği dersinde bunları, hatta sistem analizi dersinde bunları konuşuyor olacağız. Daha ailen kısımda yazılım mühendisliği dersinde konuşuyor olacağız.
+
+116
+00:31:27,380 --> 00:31:55,340
+Projenin isterlerini belirlerken illaki müşterinin konu uzmanı kişisiyle bir konuşma içerisinde olmak, gereksinimleri netleştirmek çok önemli bir etkinlik. Binanın temelini sağlam atmayla aynı mantık bizde gereksinimlerin net belirlenmesi. O yüzden karşılıklı sorularla ve bir süreç adımları içerisinde gereksinimlerin belirlenmesi, ayrıntılandırılması, işlenmesi.
+
+117
+00:31:55,380 --> 00:32:01,800
+adımlar olacak. Bundan önemli konuşu yol olacağız önümüzdeki dönemlerde.
+
+118
+00:32:03,960 --> 00:32:05,140
+Hocam bir şey soracağım.
+
+119
+00:32:05,640 --> 00:32:05,980
+Buyurun.
+
+120
+00:32:06,932 --> 00:32:22,331
+Burada en son şey diye konuşulmuştu. Dersin kodu, dersin idisi yerine geçecek. Bu durumda ilişki dosyasında falan da öğrencinin aldığı ders yanında onu yazacağız aslında.
+
+121
+00:32:22,951 --> 00:32:31,652
+Şimdi ders kodu güncellenebilir dediniz. Bunu bilerek mi bu şekilde istiyorsunuz? Ders kodu güncelleyince her yerde değiştirelim diye mi?
+
+122
+00:32:32,435 --> 00:32:42,935
+Yoksa ekstra bir zorluk katıyor ya, orada farklı bir ID yöntemini kullansak olur mu diye soracaktım. Yoksa bunu bilerek mi böyle ekleyebilirim?
+
+123
+00:32:43,892 --> 00:33:00,912
+Şimdi, değişik arkadaşlı öğrenciler değişik kapsam, çerçeveler de yapacak. Mesela değişik anladığımız kısımlar olur veyahut da zamanı kalan arkadaşlar ek yetenek kazandırmak isteyebilirler. Bu kapsamda düşünüyoruz bunları.
+
+124
+00:33:11,892 --> 00:33:38,571
+Bütün onların güncellenmesi gerekecektir elbette. Fakat eğer öbür tarafta siz iki ayrı müfredat bir anda yürüyebilir diye düşünüyorsanız o başka ama o işi fazla kalma açıklaşılıyor. İsterseniz o açıya hiç girmeyelim. O güncelleme ders bilgisi güncelleme olursa siz o diğer dosyalarda da gerekli düzenleme işlemlerini yapmanız gerekiyor. Öyle konuşalım.
+
+125
+00:33:39,892 --> 00:33:58,231
+Yusuf 2003 ve 2008 gibi bir hikaye müfideler tanınmak için ekstradan menü seçenekleri, ekstra dosyalar, ekstra ilişkiler gerekiyor. Girmeyin o işlere diyelim. En mantıklısı o ilişkinin geçtiği her dosyada kod değişikliğini tekrarlamak olacak.
+
+126
+00:34:11,987 --> 00:34:26,967
+Evet, şimdi arka plan gürültüsü nedeniyle sizi kesmek zorunda kaldım ama tekrar sorunuz varsa lütfen gürültüyü kapatıp kendinize tekrar sesli almaktan çekinmeyin lütfen. Çetten de yazı çekebiliriz tabii ki.
+
+127
+00:34:50,739 --> 00:34:57,099
+Evet, özellikler için taktik çeneminde yaşılmamız sorun olur mu? Ekleme şeklinde yaparsanız hiç problem olmaz.
+
+128
+00:34:58,452 --> 00:35:21,712
+Çünkü projeyi test ederken, stack yapısının da zıt pıt değişiklikler bizim projeyi değerlendirmemizi zorlaştıracaktır. Belki eksik puan olarak bile düşünülebilir. Yani eksik içerik. O nedenle ek şeklinde düşünün. Temel çekirdek isterlerin üstüne konulacak ekler şeklinde düşünün.
+
+129
+00:35:22,291 --> 00:35:26,851
+Değiştirin ama bunu silme olarak değil, üstüne katma şeklinde yapın.
+
+130
+00:36:33,076 --> 00:36:47,536
+Katılımcısınız bayağı artmış. Katılan arkadaşlar teşekkür ederiz. Biraz daha bekleyelim bakalım. Çok sorular geldi. Güzel sorular geldi. Bir konuştuk. Biraz daha beklemekte yarar var bence.
+
+131
+00:38:05,268 --> 00:38:06,547
+Çekilmiş burada, pardon.
+
+132
+00:38:07,608 --> 00:38:14,387
+Mutkan diyor ki, while not eof Highpoint dosyaya sonra geldikten sonra dosyanın başına gelmek için dosyayı kıpkıp açmak lazım.
+
+133
+00:38:14,967 --> 00:38:20,288
+Hayır, fseek var ya, fseek ile devam edebilirsiniz.
+
+134
+00:38:22,288 --> 00:38:31,707
+fseek 0 ve seek set dosyanın başından 0.byte konumuna gel şeklinde fseek yapım kapatıp açmaya gerek yok.
+
+135
+00:38:39,572 --> 00:38:47,572
+Tabi, şimdi ek bir terslik olmasın. Şu ders notlarından bazı şeyleri hatırlayalım bakalım şimdi.
+
+136
+00:38:47,572 --> 00:38:54,572
+Evet, doğru. Çünkü sadece Binary moddaydı. Ha, Stacks modunda yapıyorsunuz.
+
+137
+00:38:54,572 --> 00:39:02,572
+Peki. Yani kapatı başmak bu durumda platik çözüm oluyor ama bir bakalım şimdi ders notlara bakayım. Ezbere bilmiyorum ben.
+
+138
+00:39:07,380 --> 00:39:09,720
+Hocam, ben de bu arada... Buyurun.
+
+139
+00:39:10,019 --> 00:39:12,360
+...şarabinin soru ile ilgili ufak bir şey soracağım.
+
+140
+00:39:13,920 --> 00:39:24,100
+Şimdi biz dersin kodunu ID olarak kullandığımızdan hem loglarda hem öğrenci listesinde hem instructor dosyasında her birini de tutuyoruz.
+
+141
+00:39:24,659 --> 00:39:50,359
+Log'da belki tutmayabilirsiniz. Log'a satır eklersiniz. Şu kod dersin kodu şu şekilde değişti şeklinde. O bir kısa yol olarak düşünülebilir. Çünkü geçmişe dönüp log arkadaşlar bir şeyin ayrıntılı ayak izidir. Eğer ders kaydı değişmişse bırakın log'da eski haliyle kalsın. Bundan sonrakilerde log'a yeni kodu ile eklersiniz.
+
+142
+00:39:52,659 --> 00:39:58,239
+Dersin kodu değişti. Onu load dosyasına ekleyin diye düşünüyorum. Ben aslında öyle kaldım.
+
+143
+00:40:00,000 --> 00:40:27,699
+Teşekkür ederim ama şöyle bir sorun oluşuyor bu seferde. Bizim öğrencinin aldığı ders sayısını tuttuğumuz herhangi bir dosya yok. Yani belirttiğiniz özelliklerde. O yüzden gidip loglardan aldığı ders sayısını saymak zorundayız. Ona göre de ders almak istediği zaman şu kadar sınırı aştığın, aşmadığın şeklinde uyarı veriyoruz. Bunun yerine ek bir ID verip dersler için kullanabilir miyiz? Kullanamazsak bu sefer hani ders kodunu çünkü dönem içinde de mesela ders kodu değişikliği.
+
+144
+00:40:28,000 --> 00:40:39,239
+Söz konusu olmuyor herhalde. Dönem bittiğinde de o öğrencinin aldığı dersi güncellemek her yeni bir ders geldiğinde veya ismi değiştiğinde söz konusu olmuyor herhalde.
+
+145
+00:40:39,480 --> 00:40:42,039
+Yani siz daha iyi bilirsiniz bilmiyorum ama nasıl yapalım diyorsunuz.
+
+146
+00:40:42,400 --> 00:40:55,840
+Ben olsaydım bunun için ayrıca bir dosya tutardım. Yani bir öğrencinin şu an kadar aldığı dersleri ayrıca log dosyasından tanımak yerine belki bu amaçlı ben ayrı bir dosya açardım.
+
+147
+00:40:57,440 --> 00:40:59,000
+Öyleyse o da bir alternatiftir yani.
+
+148
+00:41:08,052 --> 00:41:10,851
+Tekrar bakalım şimdi.
+
+149
+00:41:11,311 --> 00:41:26,891
+Anladım hocam. Teşekkür ederim. Ben enrollment bu arada log deyince enrollment demek istedim. Hani bu kullanıcıların şu derse kaydoldu deyince oraya bir satır ekliyorduk ya. Herhalde orada yanlış anlattım. Teşekkür ederim.
+
+150
+00:41:26,891 --> 00:41:28,311
+Bir şey yapalım.
+
+151
+00:41:36,275 --> 00:41:57,815
+Hayır, bakın yani Fsig tekste olabiliyor. Bakın offset'te mesela, Fsig'in satın ayı için şimdi offset parametresi var. Bind is the number of bytes. Tekste ise ya sıfır olur veyahut da Ftel'in döndürdüğü yer ile olur. Yani olabiliyor. Metin dosyasında da herhangi bir yere gidebiliyorsunuz arkadaşlar. Önem yok gibi gözüküyor.
+
+152
+00:42:04,019 --> 00:42:10,480
+Karakitap, evet karakitap. Oluyor, oluyor. Problem yok orada arkadaşlar. Yapabilirsiniz yani.
+
+153
+00:42:16,884 --> 00:42:25,264
+Araya birkaç soru girince yanıtlamayı atlamış olduğum bir şey olabilir. Varsa lütfen tekrar sorun. Hocam şu kısmını yanıt alamadım falan diye.
+
+154
+00:44:19,251 --> 00:44:41,131
+Aynı şeyi tekrar soruyormuşuz gibi olacak da. Aslında derslerde autoincrement bir ID şekli kullansak ve ders kodu sadece bir bilgi gibi olsa yani dersin adı gibi onu aslında relation dosyasına falan kullanmasak olur mu?
+
+155
+00:44:41,831 --> 00:44:43,471
+Olur, olabilir. Olur.
+
+156
+00:44:44,591 --> 00:44:45,631
+Tamamdır hocam sağ olun.
+
+157
+00:44:46,132 --> 00:44:51,712
+Yalnız bu şekilde yaptığınız şeyleri rapor döksünüzde mutlaka belirtin. Tamam mı?
+
+158
+00:44:53,992 --> 00:45:06,351
+O aynı bilgi sağlar bize. Ya arkadaş burada ne yapacağım? Çözmeye çalışmak şekilde olmasın. Bu yaptığınız, verdiğiniz ekstra kararları, yaptığınız şeyleri mutlaka rapor döksünüzde belirtin arkadaşlar.
+
+159
+00:45:07,492 --> 00:45:08,311
+Tamamdır hocam.
+
+160
+00:46:41,715 --> 00:46:58,055
+Evet, soru geldi. Boşluk isimlerde boşluk yerine underscore sokasak sıkıntı olun. Arkadaşlar, boşluk kullanın. Yani iki isimli birisi illaki olacaktır. Onu çözmeye çalışın. Hiç çözemezseniz.
+
+161
+00:46:59,092 --> 00:47:26,891
+Under School Koryn. Tamam mı? Recall yapısı kullanırsanız ki orada da boşluk konusunda sıkıntı çekeceğinizi zannetmiyorum. Öğrenci ismi 20 karakter. Soyad 20 karakter derseniz mesela. Ki bunu 20 demeyin de 2'nin katı şeklinde 32 diyelim mesela. Eğer öyle bir şey olursa Yunus boşluk emri ama daha geride o kadar half-fastness strike boyutunda 32.
+
+162
+00:47:27,092 --> 00:47:29,092
+...dediğiniz için oraya kadar...
+
+163
+00:47:29,092 --> 00:47:31,092
+...okuyacaktır. O yüzden...
+
+164
+00:47:31,092 --> 00:47:32,392
+...lütfen Andascord...
+
+165
+00:47:32,392 --> 00:47:34,152
+...fikrinden hoşlanmadım arkadaşlar.
+
+166
+00:47:34,612 --> 00:47:36,012
+Slackla falan yaparsanız...
+
+167
+00:47:36,012 --> 00:47:36,652
+...problem olmaz.
+
+168
+00:47:38,152 --> 00:47:40,271
+Siz eğer arka planda...
+
+169
+00:47:40,271 --> 00:47:42,059
+...kodlama yaparken...
+
+170
+00:47:43,496 --> 00:47:53,496
+Bu konuda,
+
+171
+00:47:42,963 --> 00:47:52,304
+Boşlukla kaydediyorsunuz dosyayı ama daha sonra ekranda gösterirken o underskorları boşluğa çevmek şeklinde iş yaparsanız, olur kabul edilir.
+
+172
+00:47:52,684 --> 00:48:02,824
+Arka planda boşluklarını underskorla kaydediyorsunuz. Yükledikten sonra underskorlara boşluk yapıyorsunuz. Olabilir. Ama ben gerek olacağını zannetmiyorum doğrusu.
+
+173
+00:48:07,539 --> 00:48:25,159
+Veya TextMode'da eğer uğraşıyorsanız, o zaman da boşluk görene kadar değil de, satır satır okuma yaparsanız, boşlukları ek bir kayıt bilgisi olarak ele almayacaktır.
+
+174
+00:48:25,159 --> 00:48:31,360
+Yani bence yapabilirsiniz, o işin altından boşluklu olarak kalkabilirsiniz diye düşünüyorum.
+
+175
+00:50:15,188 --> 00:50:25,547
+Şimdi ara vermeyi düşünmüyorum arkadaşlar. Hiç ders yapmayacağız ya. O yüzden ben biraz daha ders oldu bekleyin. Erken bitiriz bu haftayı.
+
+176
+00:53:41,748 --> 00:53:46,028
+Arkadaşlar, o zaman soru yoksa artık kapatayım. Bu kadar diyelim.
+
+177
+00:53:47,028 --> 00:53:52,748
+Şeye bakarsak biraz. Şu haftalık sorumuzu daha önce bakarsak.
+
+178
+00:54:01,876 --> 00:54:21,436
+Evet, şimdi haftaya telafi ara sınavı olabilir. O konuda sık da tarihten yazık geldi ama ben henüz bakmadım. Kim telafi sınavına girecek, ne olacak? Haftaya özellikle bir ders yok ama sınava girilmesi gereken öğrencilerim varsa onlar için bir sınav ayarlayacağız. O kadar.
+
+179
+00:54:22,164 --> 00:54:30,503
+Onun dışında zaten bu ders ve projelerimiz falan vardır. Onlara çalışırsınız arkadaşlar.
+
+180
+00:54:30,503 --> 00:54:40,503
+Ben yeni bir şey yoksa bile böyle bir açarım. En azından bir saatlik, bir ders saatlik ya da sizlerden ne kadar sporu falan gelirse o kadar bir çalışmamız olur.
+
+181
+00:54:40,503 --> 00:54:44,396
+Böyle kalan sınırlıksız. Sadece bakalım. Haftaya görüşmek üzere.

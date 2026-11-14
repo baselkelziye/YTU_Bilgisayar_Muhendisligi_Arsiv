@@ -1,0 +1,1987 @@
+1
+00:07:26,163 --> 00:07:41,963
+Merhaba arkadaşlar. Hepinize iyi bir hafta diliyorum. Merhabalar hocam. Merhabalar hocam. Merhaba, güzel. Sesinizi duyeyim. Herkes bir merhabaya desin. Merhaba hocam. Merhaba.
+
+2
+00:07:43,091 --> 00:07:44,271
+Merhabalar hocam.
+
+3
+00:07:44,291 --> 00:07:59,091
+Merhaba hocam. Evet, lütfen. Bak ne güzel oldu. Çalıştığı ortamdan dolayı mikrofonunu açamayanlar var, biliyorum. Evet, chatten de selam verenler var. [öğrenci], teşekkürler.
+
+4
+00:08:00,471 --> 00:08:07,931
+Umarım iyisinizdir. Dönem hızla ilerliyor bu hafta. Yedinci haftaya başlıyoruz.
+
+5
+00:08:10,675 --> 00:08:19,615
+Neler yaptık bugüne kadar? Biraz onları konuşalım. Bundan sonraki planlarımız üzerinde biraz da değerlendirme yapalım istiyorum.
+
+6
+00:08:27,827 --> 00:08:28,487
+Şöyle
+
+7
+00:08:33,268 --> 00:08:47,268
+Hemen kors silibisi açtım. Bu dönem Computer Vision dersinde ne yapmaya karar vermiştik ve ne aşamadayız bunları görelim istiyorum.
+
+8
+00:08:47,268 --> 00:08:57,927
+Biz bu hafta 7. haftadayız ve bu haftaki konu başlığımız Interest Point Detection, Harris Corner Detector and Hog Features olacak.
+
+9
+00:08:59,923 --> 00:09:12,463
+Bugüne kadar ilk altı haftada temel olarak klasik bir bilgisayarla görü dersinin içeriği olacak.
+
+10
+00:09:12,463 --> 00:09:23,463
+Altı ve yedinci haftadan sonraki haftalarda ise daha çok derin öğrenme ile vision çalışmaları...
+
+11
+00:09:23,796 --> 00:09:46,475
+Nasıl oluyor? Onlara bakacağız demiştim. Temel yöntemleri öğrenmemiz gerçekten çok önemli. Bir konvolüsyon işlemini, filtreleri, birinci dereceden ikinci dereceden türev işlemlerini mutlaka bilmeniz gerekiyor. Bu kavramlar çok temel kavramlar çünkü.
+
+12
+00:09:50,100 --> 00:10:02,340
+Baktığımızda biz derste Python'la ilerleyeceğimiz için bir Python NumPy tutorial verdim ikinci hafta. Üçüncü hafta...
+
+13
+00:10:03,539 --> 00:10:14,539
+Image Understanding Intensity Transformation kavramları. Intensity Transformation'da değişik dönüşüm eğrilerinden, gamma eğrilerinden bahsettik.
+
+14
+00:10:14,539 --> 00:10:31,539
+Ve kısaca spatial filter kavramına giriş yaptık. Noise Reduction, en basit şekliyle bir averaging filter kullanarak gürültü indirgeme işlemlerini gördük. Daha sonra Image Sharpening işlemini gördük.
+
+15
+00:10:31,539 --> 00:10:43,759
+İmid sharpening'de kullandığımız ikinci dereceden türev, birinci dereceden türev kavramlarını daha sonra edge detection'da nasıl kullanacağımızı gördük.
+
+16
+00:10:43,759 --> 00:10:58,980
+Ve geçen hafta half transform'unu gördük hatırlarsanız. 2D transformation ile birlikte bir half transform kavramını gördük. Half transform ile line detection.
+
+17
+00:10:59,539 --> 00:11:12,059
+Circle Detection yapabiliyoruz dedik. Circle Detection için de size bir ödev verdim hatırlarsanız. Üzerinde çalıştığınız ödev. İkinci ödeviniz oldu.
+
+18
+00:11:14,932 --> 00:11:30,672
+Bu Integro Differential Operator dediğimiz operatör, Dogman tarafından geliştirilen operatör, görüntü içerisindeki daire formundaki şekilleri tespit etmekte çok elverişli.
+
+19
+00:11:30,672 --> 00:11:39,672
+Iris Detection için kullanmış Dogman bu operatörü. Daha sonra farklı alanlarda da kullanımlarını...
+
+20
+00:11:41,248 --> 00:11:46,248
+Görebilirsiniz. Biz medikal görüntüler üzerinde...
+
+21
+00:11:47,572 --> 00:11:57,091
+Kemikbaşı vs. gibi circular formdaki bölgeleri tespit etmek için kullanıyoruz.
+
+22
+00:11:58,192 --> 00:12:07,052
+Bu hafta öğreneceğimiz konu başlığı hem Harris Corner Detector, bir görüntü içerisinde köşeler nasıl tespit edilir,
+
+23
+00:12:07,052 --> 00:12:14,892
+bir de Hog Features dediğimiz öz niteliklerin nasıl tespit edildiğinden bahsedeceğim.
+
+24
+00:12:15,572 --> 00:12:36,771
+Bu kavramlar belki derin öğrenmeyle birlikte gerekliliğini yitirdi gibi anlaşılıyor ama oradaki matematik ve kullanılan yöntemlerin aslında farklı problemlerde karşımıza çıkan benzer sorunların çözümünde hala kullanılabilir olduğunu belirtmek isterim.
+
+25
+00:12:36,771 --> 00:12:43,572
+O yüzden bu yöntemlerin üzerinden geçmemiz gerekiyor. Bu kavramları bitirdikten sonra haftaya artırılır.
+
+26
+00:12:43,572 --> 00:12:53,672
+Artık böyle derinlemesine bir convolutional neural network ve deep neural network kavramlarına giriş yapacağız.
+
+27
+00:12:55,764 --> 00:13:13,983
+Kullanılan konvolüsyon katmanın görevleri, max pooling işlemi nedir, ne işe yarar, soft max operation nedir, neden kullanılır gibi temel işlemleri epey detaylı olarak konuşacağız.
+
+28
+00:13:16,659 --> 00:13:36,220
+Biz şu anda dediğim gibi yedinci haftadayız. Değerlendirmede iki tane ödevimiz olacak demiştik. İki tane ödevi verdim. Birincisi geldi. İkincisi 3 Mayıs'ta teslim edilecek. Önümüzde bir midterm var. Dokuzuncu haftada yapacağım. O da 3 Mayıs'ta.
+
+29
+00:13:37,779 --> 00:13:50,019
+Dersin projesi, proje konularını zaten seçtiniz. Daha sonra son haftalarda bu proje sunumlarını gerçekleştireceğiz.
+
+30
+00:13:50,019 --> 00:13:59,480
+Akışımız böyle. Şimdi şöyle yapalım.
+
+31
+00:14:03,827 --> 00:14:18,067
+Tablet üzerinden yazarak, çizerek şu konuları üzerinden geçelim. Buraya kadar bana dönem ve süreçle ilgili sormak istediğiniz herhangi bir şey var mı?
+
+32
+00:14:21,268 --> 00:14:22,067
+Ödev.
+
+33
+00:14:23,307 --> 00:14:30,008
+Hocam ben bir şey sorabilir miyim? Ben bu en son verdiğimiz ödevle ilgili bir kod incelemiştim de.
+
+34
+00:14:31,615 --> 00:14:43,796
+Binary üzerinden değil, resmin kendisi üzerinden yapmış ama siz yanlış hatırlamıyorsam, kendi ile önce kenarları bulup Binary'ye çevirelim, sonra onun üzerinden yapalım diye söylemiştiniz değil mi?
+
+35
+00:14:44,355 --> 00:14:45,096
+Evet, evet.
+
+36
+00:14:45,155 --> 00:14:46,375
+Tamam, emin olun.
+
+37
+00:14:47,175 --> 00:14:53,155
+Yani o işi daha kolaylaştırır, öbürü biraz daha uğraştırır diye düşünüyorum.
+
+38
+00:14:54,435 --> 00:14:55,395
+Tamam, teşekkür ederim.
+
+39
+00:14:55,395 --> 00:14:56,615
+Rica ederim.
+
+40
+00:14:57,364 --> 00:15:05,264
+Ama karşılaştırabilirsiniz sonuçlarını. Acaba diğer türlü yapsak ne olurdu gibi.
+
+41
+00:15:05,264 --> 00:15:16,203
+Evet, şimdi bu haftaki konu başlığımız Hock Features, Hock Histogram of Oriented Gradients'den geliyor.
+
+42
+00:15:23,091 --> 00:15:44,172
+Evet, chatte soru geldi konuya giriş yapmadan önce. Proje sunumuyla ilgili. Proje sunum sırası neye göre yapılacak? Aslında ben ilk hafta gönüllü var mı diye soruyorum. Gönüllü anlatacak kimse yoksa random olarak listeden seçiyorum.
+
+43
+00:15:44,628 --> 00:16:08,428
+O şekilde ilerliyoruz ama bütün üç hafta sunum yapacak öğrencilerin hepsi ilk hafta zaten raporunu vermek zorunda. Herkes ilk hafta sunum yapacakmış gibi hazırlıklı olmak mecburiyetinde. Sonrasında kim hangi sırada anlatacak onu dediğim gibi gönüllülük usulüne göre götürebiliriz.
+
+44
+00:16:10,868 --> 00:16:31,508
+İlk olarak Histogram of Oriented Gradients konu başlığıyla başlayacağım. Bu yöntem Dalal ve Trix tarafından, bakın CVPR 2005'te sunulmuş bir bildiri ve sonra çok popüler oluyor.
+
+45
+00:16:34,303 --> 00:16:51,004
+Şu anda atıf sayısını bilmiyorum ama oldukça fazla atıf alan çalışmalardan biri. İlk olarak ne amaçla oluşturuldu ona bakacak olursak. Human Detection için oluşturulmuş bir çalışma.
+
+46
+00:16:57,139 --> 00:17:10,299
+Görüntü içerisinde, bunu aslında derin öğrenmeyle zaten artık bir görüntüde etiketli insanlar üzerinden eğitilmiş bir derin ağ modeliyle human detection yapabiliyoruz.
+
+47
+00:17:10,299 --> 00:17:19,559
+Ama o yıllarda yapılan çalışmalarda klasik bilgisayarla görü yöntemlerinden biri olarak geliştirilmiş.
+
+48
+00:17:25,140 --> 00:17:27,360
+olduğu bir şey
+
+49
+00:17:27,360 --> 00:17:29,380
+belli bir açı vardır
+
+50
+00:17:29,380 --> 00:17:31,040
+diye düşünüyor. İşte
+
+51
+00:17:31,040 --> 00:17:32,780
+kollar, ayaklar
+
+52
+00:17:32,780 --> 00:17:34,480
+ve gövde
+
+53
+00:17:34,480 --> 00:17:37,160
+ve bu genel
+
+54
+00:17:37,160 --> 00:17:39,500
+vücut hatlarını oluşturan bu çizgiler
+
+55
+00:17:39,500 --> 00:17:41,300
+bir
+
+56
+00:17:41,300 --> 00:17:43,320
+edge detection ile
+
+57
+00:17:43,320 --> 00:17:44,800
+tespit edilip
+
+58
+00:17:44,800 --> 00:17:46,580
+daha sonra bunların açılarına
+
+59
+00:17:46,580 --> 00:17:49,060
+bakılarak dikey doğrultuda
+
+60
+00:17:49,060 --> 00:17:50,940
+bu şekilde var olan açılar
+
+61
+00:17:50,940 --> 00:17:53,140
+üzerinden bir insan
+
+62
+00:17:53,140 --> 00:18:01,228
+Bu örneğe bakalım.
+
+63
+00:18:01,460 --> 00:18:13,619
+Yönelimleri olan, yani açıları olan çizgiler barındırıyorsa eğer burada bir insan vardır şeklinde bir tespit yapılıyordu Human Detection işleminde.
+
+64
+00:18:13,619 --> 00:18:28,340
+Fakat zaman içerisinde bu geliştirilmiş olan Histogram of Oriented Gradients dediğimiz yöntem bir Feature Extraction yöntemi olarak farklı alanlarda da kullanılmaya başlanmış.
+
+65
+00:18:29,460 --> 00:18:41,340
+algoritmanın adımlarına bakacak olursak, burada 7 adımda özetlenmiş güzel bir mantığı var.
+
+66
+00:18:42,228 --> 00:18:57,228
+Belli bölgelerde kullanılan matematik özellikle benim çok dikkatimi çekti. Bunlar hep aslında size kendi yapacağınız uygulamalarda.
+
+67
+00:18:57,971 --> 00:19:03,692
+Tıkandığınız noktalarda bir çözüm ışığı olabilir diye düşünüyorum.
+
+68
+00:19:05,231 --> 00:19:10,031
+Yedi madde var dedik Hawk Feature Extraction için.
+
+69
+00:19:10,031 --> 00:19:14,592
+İlk olarak birinci madde de diyor ki,
+
+70
+00:19:16,468 --> 00:19:22,048
+Compute Centered Horizontal and Vertical Gradients with No Smoothing.
+
+71
+00:19:22,048 --> 00:19:27,048
+Görüntü üzerinde birinci dereceden türev işlemini...
+
+72
+00:19:27,539 --> 00:19:52,360
+Yatay ve dikey doğrultuda uyguluyor. Yani hani biz bir Sobel filter öğrenmiştik. Görüntü üzerindeki yatay ve dikey çizgileri bulmak için kullanılan mask gibi bir mask yardımıyla yatay ve dikey doğrultuda birinci dereceden türev işlemi uyguluyor.
+
+73
+00:19:56,468 --> 00:20:17,827
+Compute Gradient Orientation and Magnitudes. Eğer X ve Y doğrultusunda türev bileşenlerimiz varsa, biz bu türevin magnetüdünü yani büyüklüğünü ve bu türevin orientation'ı yani yönelimini hesaplayabiliriz.
+
+74
+00:20:22,387 --> 00:20:32,288
+Bize verilmiş olan görüntü üzerinde bu iki adımı uyguladıktan sonra görüntüyü belli bloklara bölecek.
+
+75
+00:20:32,288 --> 00:20:44,667
+Bu bloklama işlemini tarif ederken burada bir varsayımda bulunuyor ve diyor ki varsayalım ki elimizde ki görüntü 64x128'lik bir görüntü olsun.
+
+76
+00:20:48,884 --> 00:20:56,223
+Blokları ayırma işlemini yaptığımda kaç tane blok elde ederim? Bunların sayısı ne olur?
+
+77
+00:20:57,940 --> 00:21:14,660
+Açıklamak için bu görüntü boyutundan ilerleyecek bundan sonra ve işlemde kullandığı blokların boyutunu burada hemen tayin ediyor. Bunlar tabii ki değişken olabilir uygulamaya göre.
+
+78
+00:21:14,660 --> 00:21:18,840
+Bir görüntü var elimizde. Bu görüntü üzerinde.
+
+79
+00:21:20,211 --> 00:21:35,751
+Fakat 16 çarpı 16'lık bloklar oluşturacağız diyor. Yani 16 piksele 16 piksel. 16 çarpı 16'lık böyle bloklar oluşturacağız diyor. Bu alanın şeyi blok diye isimlendiriliyor.
+
+80
+00:21:40,372 --> 00:21:51,251
+Pardon. Bunların %50 overlap etmesi planlanmış. Yani bu noktada ikinci bloğu çizerken, ikinci bloğu çizerken.
+
+81
+00:21:55,988 --> 00:22:06,367
+Birinci ile şöyle bir örtüşme olacak aralarında. Bu B2 dediğim blok olsun. Diğeri de B1 dediğim blok olsun mesela.
+
+82
+00:22:10,259 --> 00:22:18,119
+Şuna da blok B1 diyelim. Bunların arasında %50 örtüşme olacak diyor.
+
+83
+00:22:21,119 --> 00:22:25,119
+Sonra tabii bu %50 örtüşme...
+
+84
+00:22:28,723 --> 00:22:35,483
+Yani satır doğrultusunda yaptık. Bir de sütun doğrultusunda baktığımızda da benzer örtüşmenin olması gerekiyor.
+
+85
+00:22:35,483 --> 00:22:42,523
+Onu da belirteyim. Yani bir üçüncü bloğu ikinci satıra çizmek istesem şöyle çizmem gerekir.
+
+86
+00:22:44,683 --> 00:22:52,483
+Şöyle çizmem gerekir. Bu da yine satır doğrultusunda yaptığım işlemin.
+
+87
+00:22:56,692 --> 00:23:06,412
+%50 overlap ettiğini gösteriyor. Sonra beşinci adımda diyor ki her bir blue
+
+88
+00:23:06,612 --> 00:23:19,952
+2x2'lik hücrelere bölelim. Böyle bir hücre yapısı oluşturmak demek her hücrenin 8x8 piksel boyutunda olması anlamına gelir.
+
+89
+00:23:19,952 --> 00:23:25,952
+Hock burada başlıyor 6. adımda. Burada diyor ki...
+
+90
+00:23:35,700 --> 00:23:58,760
+Altıncı adımda Gradient Orientations dediğimiz yönelimleri, yani açı bilgisini 0 ile 180 derece arasında değişen açıları 9 tane bölgeye ayıralım diyor.
+
+91
+00:24:03,316 --> 00:24:17,355
+Elimizdeki pikselin eğer bir edge yani bir kenar noktası ise bu kenarın orientation'a yönelim açısının bu böldüğümüz aralıklardan hangisine düştüğüne bakalım.
+
+92
+00:24:25,844 --> 00:24:30,284
+İlgili orientation aralığına bir oy atalım.
+
+93
+00:24:30,284 --> 00:24:39,744
+What is the gradient magnitude? Ama bu oyun miktarı türevin magnetütü kadar olacak diyor.
+
+94
+00:24:40,344 --> 00:24:42,744
+Ve şurada yine önemli güzel bir açıklama.
+
+95
+00:24:42,744 --> 00:24:47,744
+Interpolate what bilinerli between...
+
+96
+00:24:48,208 --> 00:25:07,807
+Neighboring Bin Centers. Bunu birazdan açıklayacağım. Çok güzel bir çözümü var orada. Yani oyları aslında birbirine komşu olan binlere, açı aralıklarına bölüştürme işi yapıyor.
+
+97
+00:25:08,304 --> 00:25:26,683
+Ve en son, what can also be weighted with Gaussian to downweight the pixels near the edges of the blocks demiş. Farklı Gauss ile ağırlıklandırılmış çözümlerde kullanılabilir şeklinde bir açıklaması var.
+
+98
+00:25:35,443 --> 00:25:53,443
+Sel adını verdiğimiz her hücre için bir feature ürettik. Bu feature 9 uzunluklu. 9 tane orientation range'i.
+
+99
+00:25:53,587 --> 00:26:02,788
+Bu aralıkların içerisine düşen açılar için o gözlere verilmiş oylar toplamı var.
+
+100
+00:26:02,788 --> 00:26:13,788
+Yedinci adımda bu dokuz tane açı aralığı için oluşturulmuş olan öz nitelikleri,
+
+101
+00:26:13,907 --> 00:26:22,907
+Arka arkaya concatenate ederek, birbirine ekleyerek görüntüyle ilgili bir öz nitelik oluşturuyoruz diyor.
+
+102
+00:26:22,907 --> 00:26:30,707
+Oluşturduğumuz öz niteliğin boyutu ne olur sorusunu ise şu şekilde açıklıyor.
+
+103
+00:26:31,147 --> 00:26:32,907
+Biz yukarıda...
+
+104
+00:26:33,460 --> 00:26:46,340
+16'ya 16'lık %50 örtüşen bloklar tanımlamıştık. Elimizdeki 64 x 128 bir image için.
+
+105
+00:26:46,703 --> 00:27:03,124
+Bu bir örnek, bir görüntü madresi. Burada 105 tane blok oluşuyordu. Şimdi burada matematikte bunu şöyle açıklıyor. Diyor ki 105 tane blok var diyor. Her birinin içerisinde ikiye ikilik hücreler oluşturmuştuk.
+
+106
+00:27:14,703 --> 00:27:25,663
+Aralığı oluşturduğumuz için çarpı 9 diyerek oluşturduğumuz öz nitelik vektörünün boyutunun ne olacağını burada söylüyor.
+
+107
+00:27:26,364 --> 00:27:35,224
+Şimdi bu maddeleri aslında adım adım nasıl yapıldığını sonraki slaytlarda biraz daha detaylı da görebiliriz.
+
+108
+00:27:35,224 --> 00:27:40,584
+En başta birinci madde de türev alma işleminden başlayalım.
+
+109
+00:27:40,980 --> 00:27:51,520
+Ve türevden sonra da türev vektörünün magnetüdünü ve orientation'ını hesaplayacağımızı söylemiştik.
+
+110
+00:27:51,860 --> 00:27:54,500
+Burada bu işlemlerin nasıl yapıldığı anlatılmış.
+
+111
+00:27:54,500 --> 00:28:04,420
+Diyor ki, X ve Y doğrultusundaki türev için burada gördüğümüz gibi bir boyutlu bir mask kullanabiliriz.
+
+112
+00:28:06,099 --> 00:28:27,519
+X doğrultusunda ve Y doğrultusunda türev almak için. Daha sonra ikinci maddede bu türev işleminin magnetüdünü, yani türev operatörünün büyüklüğünü bulmak istiyoruz ve orientation'ını.
+
+113
+00:28:27,859 --> 00:28:37,379
+Bu işlemleri derste yaptık diye hatırlıyorum. Örneklerde yapmıştık değil mi? Biz x'e doğrultusunda, y'e doğrultusunda türevi alma diye.
+
+114
+00:28:37,379 --> 00:28:46,839
+Hocam, türevi almıştık ama bu eksi bir sıfır bir şeklinde değil, sağdakinden çıkartarak, yani soldakini sağdakinden çıkartarak yapıyorduk.
+
+115
+00:28:49,460 --> 00:29:14,259
+Burada da benzer bir işlem. Aslında sıtra çok önemli değil. İşaret değişir en fazla. Orada da zaten şurada kare aldığımız için işaretle ilgili herhangi bir sıkıntı olmayacaktır. Yani sağdaki pikselden soldaki pikseli çıkartıyoruz. Burada da aynı mantık var. Sağdaki pikselden soldaki pikseli çıkartıyoruz. Merkez noktası için türev hesaplarken.
+
+116
+00:29:17,460 --> 00:29:27,779
+Türev işlemini ve bunun sonucunu gösteriyor SX dediğimiz değişken.
+
+117
+00:29:28,079 --> 00:29:54,379
+S'ye de y doğrultusunda benzer işlemi gösteriyor. Sonuçta bunların karelerinin toplamının kare kökünü aldığında x doğrultusunda ve y doğrultusunda türevlerin kareleri toplamının kare kökü bize bunun magnetüdünü ve arktanjant S'ye bölü S'x dediğimiz işlemde de bunun orientation'ını hesaplamış oluyoruz.
+
+118
+00:29:56,079 --> 00:30:10,940
+Temme adını veren Histogram of Oriented Gradient diyorduk ya, yani gradient dediği türev işlemi, türev işleminin yöneliminin histogramlarını almaktan bahsediyoruz.
+
+119
+00:30:12,372 --> 00:30:19,611
+İlk adımı gerçekleştirdik. Yani türev işlemi tamam. Türevlerin yönelimlerini de hesapladık.
+
+120
+00:30:20,091 --> 00:30:29,912
+Şimdi dört ve beşinci adımlarda diyordu ki görüntüyü bloklara böl, sonra da her bloğu sel adını verdiğimiz bölgeleri ayır diyordu.
+
+121
+00:30:29,912 --> 00:30:40,372
+Ve yine aynı örnek bir görüntüm adresi üzerinden gidiyoruz ki hesaplamalarda kaç tane blok çıkar, kaç tane sel çıkar bunların üzerinde.
+
+122
+00:30:40,372 --> 00:31:05,632
+Bir sayısal sonuç verebilelim diye. Sağ tarafta bir görüntü madresi var. Görüntü madresinde kırmızıyla işaretlenmiş olanlar blokları gösteriyor. Burada kırmızı ile işaretli alan 16x16'lık, 16x16 pikselden oluşan blokları gösteriyor.
+
+123
+00:31:06,163 --> 00:31:21,224
+Her blok, bakın overlap etmiş ve her bloğun içerisinde açık bir sarı renkle, bazı yerde yeşil gözüküyor, ikiye ikilik alanlar oluşturulmuş.
+
+124
+00:31:33,203 --> 00:31:47,863
+Şu alan sel diye isimlendiriliyor. Ve sel adını verdiğimiz şu alan 8 çarpı 8 piksel boyutlarında bir alan olmuş oluyor.
+
+125
+00:31:51,284 --> 00:32:04,384
+Türev işleminin yönelimleri için oluşturduğumuz histogramı bu 8x8 yani 64 tane piksel üzerinden oluşturuyoruz.
+
+126
+00:32:04,384 --> 00:32:18,223
+Bu 64 tane pikselin türev yönelimlerini yani tete açılarına bakıyoruz. Bu tete açıları için bir histogram oluşturuyoruz.
+
+127
+00:32:18,579 --> 00:32:37,839
+Tamam. Sonuçta diyor ki bu görüntü boyutu için 64 çarpı 128. Burada verdiği boyut şöyle. Şurası 64, burası 128.
+
+128
+00:32:40,180 --> 00:32:47,140
+Matris gibi, satır sayısı, sütun sayısı gibi değil de x, y gibi vermiş. Şurası 64.
+
+129
+00:32:49,395 --> 00:33:04,675
+Sonuç, bu formda bir bölme işlemi uygulandığında 105 tane blok çıkıyor. İşte nedir? 64'ü aslında 8'e bölüyor gibi düşünün.
+
+130
+00:33:04,675 --> 00:33:14,675
+Ama hani blok sayısı olarak baktığımızda ve %50 overlap ettiğinden bir tane eksik olacak orada. Şurası da...
+
+131
+00:33:15,155 --> 00:33:37,316
+128'i 8'e bölüp 16 bulursunuz. Orada da bir eksiği 15 yani çarptığımızda 105 tane blok var anlamına geliyor. Şu kırmızıyla işaretli alanların sayısı, blok sayısı 105 olur diyor bu görüntü boyutu için.
+
+132
+00:33:37,779 --> 00:33:51,379
+Sonra işte bunun içerisinde, her bir bloğun içerisinde 2x2'lik alanlar oluşturduk. Bunlara da sel dedik. Aşağıda da bununla ilgili bir çizim verilmiş.
+
+133
+00:33:52,859 --> 00:34:04,659
+Şimdi gelelim bu türevin yönelimleriyle ilgili işleme. Burada ne yapıyoruz?
+
+134
+00:34:05,844 --> 00:34:13,724
+Az önce demiştim ki bu yönelim açısı 0 ile 180 derece arasındadır.
+
+135
+00:34:14,356 --> 00:34:25,736
+Ve bu 0 ile 180 derece arasındaki açı değişimlerini ben 9 tane bölgeyi ayırmak istiyorum.
+
+136
+00:34:25,736 --> 00:34:35,556
+9 tane bölgeyi ayırmak demek, 180'i 9'a bölersem 20 derecelik açılar ve aralıklar demek.
+
+137
+00:34:35,776 --> 00:34:38,155
+0'dan 20'ye, 20'den 40'a.
+
+138
+00:34:38,512 --> 00:34:43,771
+Bu şekilde toplamda 9 tane aralık çıkacak karşıma.
+
+139
+00:34:45,844 --> 00:35:02,783
+Ve aşağıda da bakın bu önce aralıkları işaretledik. Yani şurada gördüğümüz şekilde sıfırdan 180 dereceye olan açı bölgesini 20-20 nasıl böldüğümüzü gösteriyor.
+
+140
+00:35:02,783 --> 00:35:12,283
+Alttaki grafikte ise bu aralıkların her birinin arkadaşlar bir merkez noktası var.
+
+141
+00:35:12,592 --> 00:35:23,811
+Bu merkez noktaları ile göstermiş. Bakın ilk açı aralığının merkezi 10'dur. 20 ile 40'ın merkez noktası 30'dur.
+
+142
+00:35:23,811 --> 00:35:34,172
+Buna göre aşağıda 10, 30, 50, 70 şeklinde bu aralıkların merkezleri işaretlenmiş.
+
+143
+00:35:40,307 --> 00:35:59,627
+Örnek yapalım. Elimizde bir piksel var. Bu 8x8'lik selin içerisinde yer alan 64 tane piksel var. Bu piksellerden her biri için ben işlem yapıyorum.
+
+144
+00:36:00,831 --> 00:36:18,372
+İncelediğim piksellerden birinin türev vektörünün yönelimi 85 derece çıkmış olsun örnek.
+
+145
+00:36:18,372 --> 00:36:24,612
+Bu durumda 85 derece aslında şu aralığın içine düşer. Doğru mu?
+
+146
+00:36:25,364 --> 00:36:40,104
+Yani 80 ile 100 aralığı içerisindedir. 80-100 aralığının orta noktası ya da merkezi dediğimiz nokta açı değeri 90'dır.
+
+147
+00:36:41,384 --> 00:36:48,724
+60 ile 80'nin arasında ise 70 dediğimiz bir uzaklıkta şey var.
+
+148
+00:36:49,632 --> 00:37:03,252
+Merkez noktası var. O aralığın merkezi var. Şimdi 85 dediğimiz açı değeri şöyle bir yerdedir. Yani şuradadır.
+
+149
+00:37:11,891 --> 00:37:30,172
+Aralık merkeze 5 birim uzaklıktadır. Yani 90 olan bu aralığın merkezine 5 birim uzaklıkta. Aynı zamanda kendisine komşu olan şu merkeze ise 15 birim uzaklıktadır.
+
+150
+00:37:33,427 --> 00:37:40,708
+İçinde bulunduğu alanın merkezine ise beş birim uzaklıktadır diyor.
+
+151
+00:37:40,708 --> 00:37:50,708
+Dolayısıyla bizim elimizde bir gradiyent magnetütü dediğimiz o noktanın...
+
+152
+00:37:51,219 --> 00:38:02,639
+Türevinin Magnetü'nü var. Yani türev vektörünün büyüklüğü var. Bir de türev vektörünün açısı var. Açının 85 derece olduğunu söyledik.
+
+153
+00:38:02,639 --> 00:38:16,619
+Şimdi, oylama işlemine geçiyoruz. Yani nasıl oy vereceğiz? Aslında bu piksel için...
+
+154
+00:38:16,659 --> 00:38:30,340
+İki göze de oy atmak gerekir diyor. Yani hem merkezi 70 olan aralığa hem de merkezi 90 olan aralığa her ikisine de belli oranda oy atmalıyım.
+
+155
+00:38:30,340 --> 00:38:40,479
+Bu oranın ne olacağını ise bu açının o merkeze olan uzaklığına göre karar veririz diyor.
+
+156
+00:38:40,851 --> 00:38:53,132
+Ve diyor ki burada, Distance to the Bean Center 70 and 90 are 15 and 5 degrees respectively demiş.
+
+157
+00:38:55,211 --> 00:38:59,831
+70 ve 90'a olan uzaklıklarını bu şekilde belirlemiş.
+
+158
+00:39:05,311 --> 00:39:09,511
+Oy miktarı tabii ki orası daha uzak olduğu için daha az olmalı.
+
+159
+00:39:12,771 --> 00:39:17,692
+Yakın olduğu merkeze atacağı oy miktarı ise daha fazla olmalı.
+
+160
+00:39:17,692 --> 00:39:31,471
+Buradan yola çıkarak diyor ki normalde zaten aralığın toplam büyüklüğü 20 idi ya, bunun üzerinden yakın olduğu merkeze 3 bölü 4 oranında oy atarken
+
+161
+00:39:32,148 --> 00:39:53,148
+Yani 90 merkez noktasına 3 bölü 4 oranında oy atarken uzakta olan 70 merkezine ise 1 bölü 4 oranında oy atmalıdır. Bu 1 bölü 4, 3 bölü 4 neyin 1 bölü 4'ü veya 3 bölü 4'ü? Gradient magnetüdünün.
+
+162
+00:40:00,000 --> 00:40:15,480
+Bu yüzün 25'i 70 merkezine, 75'i ise 90 olan merkeze olmalıdır diye bir dağılım yapıyor.
+
+163
+00:40:17,072 --> 00:40:35,471
+Interpolate Vots Linearly Between Neighboring Bin Centres dediğimiz şu yöntem ile açıklıyor. Bu matematik mesela burada benim çok hoşuma giden bu matematik. Yani doğrudan şunu yapmıyor bakın.
+
+164
+00:40:37,619 --> 00:41:00,139
+Elimizdeki açı değeri 85 derece, 85 derece bu aralıkların içerisinde 80-100 aralığındadır. Bütün oyu 90 merkez noktasına atayım demiyor. Bunun yerine uzaklıklara göre bölüştürüyor, komşuyla bir paylaşım yapıyor.
+
+165
+00:41:00,596 --> 00:41:14,735
+Bu fikir bence güzel. Böylece bütün aralıklar için, bütün aralık merkezleri için, burada ikinci grafikte görüyorsunuz bunu, bir oylar toplamı oluşturuluyor.
+
+166
+00:41:14,735 --> 00:41:23,956
+Yani açısı 10 derece merkezli olanların oy toplamı şu kadar çıkmış.
+
+167
+00:41:24,335 --> 00:41:50,855
+Açısı 30 derece olan aralığın içerisindeki şu bölge için oylar toplamı bu kadar çıkmış. Böyle oyları üst üste topluyor. 64 tane pikselin verdiği tüm oyları bu şekilde topluyor ve şekilde gördüğümüz histogramı oluşturuyor. Bu histogram oylar toplamını gösteriyor bize.
+
+168
+00:41:53,108 --> 00:42:00,968
+Histogram of Oriented Gradient dediğimiz yöntemin adı da zaten buradan geliyor.
+
+169
+00:42:00,968 --> 00:42:08,968
+Görüntü içerisindeki tüm kenar noktalarının açı bilgileri...
+
+170
+00:42:09,300 --> 00:42:23,500
+Burada gördüğümüz gibi belli bir açı aralığının içerisine düşüyor ve o açı aralığına bir oy atıyor. Bu oylar üst üste toplanıyor ve bir histogram oluşturuyor. Nihai şekli bu.
+
+171
+00:42:27,000 --> 00:42:29,140
+Devam ediyorum. Soru var mı burada?
+
+172
+00:42:31,827 --> 00:42:35,568
+Hocam, burada açı dediğimiz Magnetüt mu acaba?
+
+173
+00:42:36,068 --> 00:42:36,927
+Orientation.
+
+174
+00:42:37,708 --> 00:42:38,387
+Tamam.
+
+175
+00:42:38,528 --> 00:42:40,068
+Açı dediğim Orientation.
+
+176
+00:42:40,768 --> 00:42:46,007
+Şurada bir üst kısımda nasıl hesaplandığını vermiştik.
+
+177
+00:42:46,108 --> 00:42:46,947
+Orientation.
+
+178
+00:42:46,967 --> 00:42:47,688
+Tamam hocam.
+
+179
+00:42:47,688 --> 00:42:51,628
+Arc tangent, SE bölü SX'den hesaplanıyor.
+
+180
+00:42:53,447 --> 00:42:55,344
+Magnetüt ise...
+
+181
+00:42:55,344 --> 00:43:01,644
+Türev bileşenlerinin kareleri toplamının kare kökünden hesaplanıyor.
+
+182
+00:43:03,668 --> 00:43:24,847
+Hocam, benim de küçük bir sorum var. Şimdi ben bu histogramı o zaman şöyle yorumlamalıyım. Elimde bir görüntü var. Yatayda işte tamamen baktığım histograma göre yorumluyorum. İşte merkezi 10 derece olanda, 130 ve 150 derece olanlarda kenarlar var. Hani oralarda çizgiler var. Değil mi? Doğru yorumluyorum.
+
+183
+00:43:24,847 --> 00:43:27,827
+Evet, evet. Sonucumuz bu. Tamam, teşekkür ederim.
+
+184
+00:43:27,827 --> 00:43:31,627
+Evet, evet. Yani onların çubukları daha yüksek çıkacak.
+
+185
+00:43:31,668 --> 00:43:45,668
+10 derece ve işte 130 ya da 170 derece olan şeylerin histogram çubukları daha yüksek çıkacak, diğerlerinin daha düşük çıkacak.
+
+186
+00:43:47,923 --> 00:43:49,864
+Hocam bir de benim küçük bir sorum var.
+
+187
+00:43:50,123 --> 00:43:50,543
+Buyurun.
+
+188
+00:43:50,723 --> 00:43:58,643
+[öğrenci] ben. Buradaki komşulara göre dağıttık ki hocam, hep bir önceki komşuya göre mi yoksa en yakın komşuya göre mi dağıtıyoruz?
+
+189
+00:43:58,643 --> 00:44:04,043
+Yani mesela 95 olsaydı 100-120 arasındaki 110 merkezliğe mi dağıtım yapacak?
+
+190
+00:44:04,063 --> 00:44:14,643
+Evet, aynen öyle [öğrenci]. Dediğin gibi hangi tarafa yakınsa o bölgeye komşu olan alana bölüştürmesi gerekiyor.
+
+191
+00:44:15,476 --> 00:44:29,816
+Bu verdiğimiz örnekte 85 olduğu için 60-80 aralığına da oy verdi. Ama senin dediğin gibi 95 olsaydı bu durumda 100-120 aralığına oyu bölüştürecekti. Tamam?
+
+192
+00:44:30,276 --> 00:44:30,736
+Tamam, teşekkür ederim.
+
+193
+00:44:30,736 --> 00:44:31,756
+Güzel doğru anlamışsınız.
+
+194
+00:44:35,380 --> 00:44:58,720
+Ben özellikle bu noktaya dikkatinizi çekmek istedim. Mesela bu tarz problemlerle başka noktalarda da karşılaşabilirsiniz. Yöntemin adının histogram of oriented gradient falan olmasına gerek yok. Siz bir iş yaptınız, böyle açı hesapladınız falan. Sonra bunun üzerinden bir iş yapmak istiyorsunuz. Bu yöntem aklınıza gelebilir.
+
+195
+00:45:03,380 --> 00:45:26,380
+Kullanılabilir mi? gibi aklınızda bunlar kalsın istiyorum. Yoksa yani Hogue zaten internette hazır algoritmaları var. Alın, kullanın. Ama içerideki matematiği bilirseniz eğer sonradan bunu başka yerlerde de kullanma şansınız oluyor. Ve bence gerçekten güzel bir matematik var burada.
+
+196
+00:45:29,076 --> 00:45:44,576
+Şimdi biz bu işlemi yaptık da bundan sonra ne olacak? Son adım diyordu ki concatenation of histograms and normalization. Yani her hücre için bizim elimizde bir blok var.
+
+197
+00:45:44,576 --> 00:45:51,555
+Bloğu dört tane sele ayırdık. Şunların her birinin adı bir sel.
+
+198
+00:45:52,532 --> 00:46:12,472
+Ve bu sellerin her biri 8 çarpı 8 boyutunda. Diyor ki burada bunların her birinin oluşturduğu histogramı birbiri arkasına sıralayarak bir feature vektör oluşturalım diyor.
+
+199
+00:46:14,996 --> 00:46:31,635
+Şöyle bir problem yok mu sizce? Mesela ben bu blokları %50 overlap ettiğime göre, %50 overlap ettiğime göre. Mesela şu şey, şu bölge bir sonraki blok içinde.
+
+200
+00:46:32,371 --> 00:46:59,511
+Öbür bloğun seli olacak. Birebir aynı. Aynı işlemleri orada tekrar mı yapacağım? Değil mi? Veya aynı sonucu oraya götürüp dizecek miyim? Burada bir normalizasyon işlemi var arkadaşlar. Ona dikkatinizi çekmek istiyorum. Normalizasyonda da şunu yapıyor. Diyor ki bizim bir bloğumuzun içerisinde dört tane sel vardı. Demek ki her bir bloktan ben dört tane histogram oluşturuyorum.
+
+201
+00:47:00,371 --> 00:47:21,191
+Dört tane histogramı bakın burada kendi içerisinde normalize ediyor. Diyor ki oluşan her histogramı bu dört tane selin k eşit birden iki çarpı iki çarpı dokuz. Dört çarpı dokuz yani demek bu. Bunun bütün bileşenlerinin.
+
+202
+00:47:21,811 --> 00:47:49,132
+Karelerini alıyor, topluyor, bir arttırıyor ve buna oranlıyor. Yani bir normalizasyon işlemi var burada. Bir blok içerisinde yer alan dört tane selin tüm histogram çubuklarının karelerini alıp topluyor. Daha sonra bunun kare kökünü alıp tüm histogram çubuklarını bununla normalize ediyor.
+
+203
+00:47:49,652 --> 00:48:07,952
+Kendi içinde bir blok içi normalizasyon adımı ekliyor. Aksi takdirde tekrar söylüyorum, aynı değer, aynı histogram değeri bir sonraki blok içinde çıkardı. Ama şimdi öyle bir durum söz konusu olmayacaktır.
+
+204
+00:48:10,675 --> 00:48:22,555
+Ve final feature vector demiş. İşlem sonucunda bulduğumuz feature vector, işte burada gördüğümüz gibi arka arkaya bunları concatenate etmek demek.
+
+205
+00:48:22,555 --> 00:48:30,555
+Yani ilk sel için 8x864 pikselden üretilen histogramı koyuyorsunuz.
+
+206
+00:48:31,668 --> 00:48:39,028
+Altı uzunluklu bir dizi. Onun peşine öbür diziyi ekliyorsunuz. Onun peşine öbür diziyi ekliyorsunuz.
+
+207
+00:48:39,028 --> 00:48:57,288
+Concatenate histograms demiş. Ve bu şekilde one dimensional vector aslında, length içinde 3780 uzunluklu bir feature vector oluşturursunuz.
+
+208
+00:48:58,260 --> 00:49:01,380
+Bu işlemin sonucunda.
+
+209
+00:49:02,980 --> 00:49:06,620
+Bu sayı nasıl çıktı? Tekrar konuşalım.
+
+210
+00:49:08,000 --> 00:49:11,080
+Blok sayısı kaç demiştik biz yukarıda?
+
+211
+00:49:13,780 --> 00:49:16,920
+Yüz beş. Yüz beş tane bloğumuz var.
+
+212
+00:49:17,240 --> 00:49:19,040
+Şimdi o sayıya nereden ulaştık?
+
+213
+00:49:19,820 --> 00:49:21,360
+Yüz beş tane blok var.
+
+214
+00:49:22,547 --> 00:49:27,647
+Çarpı her bloğun içerisinde 4 tane sel var.
+
+215
+00:49:31,668 --> 00:49:43,148
+Ve her bir sel içinde dokuz tane aralık var. Doğru mu? Bunları çarparsak 3780 çıkıyor mu?
+
+216
+00:49:47,987 --> 00:50:03,887
+Acaba benden önce biri çarpacak mı? 105 çarpı 4 çarpı 9. 3780 çıkıyor. Evet, sanıyorum anlaşıldı. Bu şekilde bir feature vector oluşturmuş oluyoruz.
+
+217
+00:50:05,423 --> 00:50:22,644
+Aldığımız bir görüntü bloğu için bir feature vektör oluşturuyoruz. Diyor ki ben bunu aslında visualize edebilirim. Yani hani oluşturduğum histogramı açılar şeklinde de görüntüleyebilirim.
+
+218
+00:50:32,628 --> 00:50:53,807
+Her bir seller. Sonra her bir sel için oluşturulmuş açı bilgisi. Şurada denizin üstünde şöyle çizgiler var. Görüyor musunuz? Bilmiyorum ama. Bunlar bakın yatay çizgi olarak çıkmış. Adamın silüeti dikey çizgiler olarak görünüyor şekilde.
+
+219
+00:50:54,547 --> 00:51:03,768
+Ama denizin üstündeki şu yatay çizgiler o suyun üstündeki dalgalardan oluşmuş gibi anlıyorum ben.
+
+220
+00:51:05,204 --> 00:51:26,603
+İkinci verdiği örnek görüntüyle ilgili oluşturduğu histogramı da çizdirmiş. Burada görüntülemede şunu yapıyor. Hani dokuz tane aralık açı aralığı var dedik ya bu açı aralıklarında en büyük açının olduğu aralık hangisi ise onu o açıyla gösteriyor.
+
+221
+00:51:26,603 --> 00:51:33,204
+Yani şu blok içerisinde baskın olan açı işte efendim diyor ki 90 derece. Bu blok içerisinde...
+
+222
+00:51:33,204 --> 00:51:47,324
+Bu da bunun görselleştirilmiş formu.
+
+223
+00:51:50,739 --> 00:52:10,779
+Eski bir yöntem ama içeride kullanılan matematik açısından baktığımızda ilginç bir yöntem. Farklı alanlarda da feature vektör oluşturabiliyoruz bu tekniği kullanarak. Mesela biz tıbbi görüntülerde doku sınıflama için kullandık.
+
+224
+00:52:10,779 --> 00:52:16,559
+Hawk feature'lerini bu bir alternatif fikir olabilir.
+
+225
+00:52:20,115 --> 00:52:41,015
+Şimdi size bu bölümle ilgili bir Jüpiter kodu vardı. Onu da göstereceğim. Soru varsa yine lütfen sormaktan çekinmeyin. Çünkü bunu burada anlarsak burada biter, iyi olur.
+
+226
+00:52:56,115 --> 00:52:56,615
+Hmm.
+
+227
+00:53:17,012 --> 00:53:26,132
+Şimdi Jüpiter ekranında size bununla ilgili kısa bir açıklama yapacağım.
+
+228
+00:53:26,132 --> 00:53:32,832
+Şimdi bu bölüm Histogram of Oriented Gradients Features.
+
+229
+00:53:33,856 --> 00:53:46,856
+Başlığı. Derste anlattığımız örnek ve onun öz niteliklerinin nasıl çıkarıldığıyla ilgili açıklamalardan sonra burada bir...
+
+230
+00:53:47,188 --> 00:54:03,908
+Kendi PsycImage kütüphanesinin altında yer alan data folder'ı var. Oradan bir görüntü alıyor. Daha sonra bu görüntüyü RGB to Gray ile Gray Level bir image'e dönüştürüyor.
+
+231
+00:54:04,908 --> 00:54:13,268
+Sonra burada yine PsycImage Feature altında hazır HOG çözümü var.
+
+232
+00:54:23,411 --> 00:54:27,831
+Chrome'da yeni açtığım tabu görebiliyorsunuz değil mi arkadaşlar?
+
+233
+00:54:29,152 --> 00:54:30,311
+Evet hocam görünüyor.
+
+234
+00:54:30,311 --> 00:54:31,031
+Tamam.
+
+235
+00:54:33,251 --> 00:54:42,692
+Buradan hog için, şurada nasıl kullanıldığını gösteriyor, parametrelerini vs.
+
+236
+00:54:43,987 --> 00:55:06,687
+Ne giriyoruz parametre olarak? Orientation'ı kaç aralığa böleceğiz? Pixel per cell, şeyde de yaptığımız gibi, slide'da gösterdiğim gibi, cell'in kaç pikselden oluşacağını siz seçebiliyorsunuz.
+
+237
+00:55:07,219 --> 00:55:24,939
+Burada 8x8 örneğini vermiş. Aynı algoritmayı geliştiren grubun yaptığı gibi. Ama çalışmada sizin mesela daha küçük doku değişimleri varsa mesela bu selin size'ını değiştirebilirsiniz.
+
+238
+00:55:35,219 --> 00:55:38,999
+Burada 3x3 örneğini vermiş.
+
+239
+00:55:42,036 --> 00:56:04,036
+Block Normalization için, biz block içerisinde kalan tüm sellerin bir normalizasyonundan bahsetmiştik. Normalizasyonda biz karelerini toplayıp bir normalizasyon yaptık ya, o L2 norm oluyor. Onu değişik seçebiliyorsunuz.
+
+240
+00:56:05,876 --> 00:56:10,036
+Visualize kısmı, falls through o anda görüntü.
+
+241
+00:56:10,036 --> 00:56:20,715
+Görüntülesin, görüntülemesin seçenekleri var. Bunlar bu hazır fonksiyonun içerisindeki parametreler.
+
+242
+00:56:21,204 --> 00:56:35,184
+Şimdi çözüme bakacak olursak, biz, yani ben kendi örneğimde aynı Dalal'ın kendi algoritmasındaki gibi 0-180 derece aralığını 9 tane parçaya böldüm.
+
+243
+00:56:35,184 --> 00:56:38,564
+Pixels per cells demiş.
+
+244
+00:56:40,628 --> 00:56:49,728
+Hücre içerisindeki piksel sayısını 8'e 8 verdim. Blok içerisindeki hücre sayısını 2'ye 2 verdim. Birebir.
+
+245
+00:56:50,228 --> 00:57:05,288
+Bildiride araştırmacıların geliştirdiği şekliyle kullanıyorum. Visualize'ı true yaptım. Bana oluşturduğu şekli göstermesini istiyorum vs. Şimdi sonuca bakacak olursak.
+
+246
+00:57:08,916 --> 00:57:18,756
+512'ye 512'lik şu astronot imaj dediğimiz imajı burada görebilirsiniz. Grayscale bir imaj olarak görüntüledim.
+
+247
+00:57:22,696 --> 00:57:30,576
+Sonra şu sağ tarafta, acaba ekranımı görebiliyor musunuz çizgileri?
+
+248
+00:57:32,563 --> 00:57:53,283
+Sağ tarafta. Histogram of Oriented Gradients'te oluşan her 8x8'lik sel içerisindeki, hücre içerisindeki yönelimin baskın olan açı yönü neyse onu beyaz renkle çizdiriyor.
+
+249
+00:57:59,092 --> 00:58:18,851
+Output üretiyor bize. Sonuçta bu bir doku sınıflamada ya da şekil tanımada kullanılabilecek bir öz nitelik olarak çok yerde de sonraki çalışmalarda kullanıldığını görüyoruz.
+
+250
+00:58:21,396 --> 00:58:41,036
+Ben burada mesela birkaç farklı deneme yaptım. Pixels, Perseels bunu büyütebiliyoruz. Mesela bakın şöyle bir şey yapayım. Bunu 16'ya 16 yaptığımda yine 2'ye 2 olsun şey. Şunu tekrar çalıştıracak olursak.
+
+251
+00:58:46,068 --> 00:58:49,008
+Hocam 16'ya 19 yazdınız da o yüzden anladın.
+
+252
+00:58:49,448 --> 00:58:50,888
+Hay Allah, öyle mi yaptım?
+
+253
+00:58:51,891 --> 00:58:56,371
+Ara sıra. Teşekkürler. Düzeltin beni. Yaparım öyle hatalar.
+
+254
+00:58:57,731 --> 00:59:08,191
+Evet. Histogram of Oriented Gradients'i bakın çizdirdiği hücreler büyüdüğü için 16 yoğun altılık alanlar diye tanımladım.
+
+255
+00:59:08,191 --> 00:59:14,211
+Bu defa daha büyük alanlarda o çizimlerin yapıldığını görebilirsiniz.
+
+256
+00:59:15,476 --> 00:59:17,896
+Güzel bir yöntem. Buyurun.
+
+257
+00:59:18,356 --> 00:59:28,356
+Şunu merak ettim. Normalizasyon kısmında payda da artı biri vardı. Burada mesela hiç eylem olmayan kısımlarda da payda sıfır çıkmaması için mi yapılmış?
+
+258
+00:59:28,356 --> 00:59:36,315
+Aynen öyle. Aynen öyle. Şey düşünün, o sel içerisinde hiç şey yok. Bakın şöyle, simsiyah bir bölge, edge yok.
+
+259
+00:59:36,755 --> 00:59:46,035
+Edge yoksa eğer, kenar yoksa eğer, türe ve yönelimi, magnetü ve şeyi sıfır çıkacak. Onu önüne geçmek için herhalde.
+
+260
+00:59:48,115 --> 00:59:59,835
+Evet, bu böyle. Ben bu konuyu özellikle matematiğine dikkatinizi çekmek istediğim için verdim.
+
+261
+01:00:06,963 --> 01:00:16,423
+Şöyle bir hemen slide üzerinden size bir açıklama geçeceğim. Bunu en son yapacağım ama şurada da söyleyeyim.
+
+262
+01:00:25,172 --> 01:00:45,852
+Burada. Şimdi arkadaşlar, benim bu yaptığım işlem, bugün burada size gösterdiğim yöntem, traditional machine learning flow'da bir input image var. Ben bu input image üzerinden feature extraction yapıyorum. Ne tür özellikler çıkartıyorum?
+
+263
+01:00:52,179 --> 01:01:08,359
+Öniversitesi, Hog Features gibi öz nitelikler üretiyorum. Feature Extraction kısmında. Daha sonra bu öz nitelikleri bir makine öğrenmesi algoritmasına veriyorum ve bu bana bir output üretiyor.
+
+264
+01:01:17,780 --> 01:01:33,760
+Kullanmaya başladığımız diyelim son aşağı yukarı 10 yıldır Deep Learning yapısı içerisinde öz nitelik çıkarma işlemi derin öğrenme modelinin CNN katmanında.
+
+265
+01:01:34,291 --> 01:01:52,411
+Convolutional Neural Network katmanı dediğimiz katmanın da otomatik olarak yapılıyor. Siz doğrudan bir tek input imici veriyorsunuz. İçeride Deep Learning algoritması bir Convolutional Neural Network ile bize bu öz nitelikleri çıkartıyor.
+
+266
+01:01:52,884 --> 01:02:11,044
+Ve aslında insanın aklına gelen corner, edge, hog features gibi öz niteliklerin ötesinde daha kompleks öz nitelikler de bulabiliyor. O yüzden bu kadar başarılılar. Derin ağ dediğimiz yapıların başarısı biraz da buradan geliyor.
+
+267
+01:02:16,083 --> 01:02:29,583
+Şimdi bir ara vereceğim 10 dakika. Aradan sonra size bu köşe bulma algoritmasının yapısından bahsedeceğim. Yine amacım matematiğe dikkatinizi çekmek.
+
+268
+01:02:29,967 --> 01:02:46,347
+Bu matematik başka yerde sizin işinize yarayabilir. Belki feature extraction için kullanmayacaksınız ama farklı alanlarda, farklı şekillerde kullanmanız gerekebilir. Bu matematiği öğrenmenizi o yüzden isterim.
+
+269
+01:02:49,927 --> 01:02:55,107
+Evet, ekranımı paylaştım değil mi? Görebiliyorsunuz bu yazdıklarımı.
+
+270
+01:02:56,307 --> 01:02:56,907
+Görünüyoruz.
+
+271
+01:02:57,427 --> 01:03:10,768
+Efendim? Görünüyor. Görünüyor. Ha tamam. Bazen çünkü ben atlıyorum da arkadaşlar. Peki. 10 dakika ara veriyoruz. 10 dakika sonra devam edeceğim.
+
+272
+01:15:25,427 --> 01:15:28,587
+Evet sevgili arkadaşlar, tekrar merhaba.
+
+273
+01:15:30,127 --> 01:15:31,167
+Merhabalar hocam.
+
+274
+01:15:31,188 --> 01:15:32,727
+Merhaba hocam.
+
+275
+01:15:33,028 --> 01:15:34,967
+Merhaba.
+
+276
+01:15:36,047 --> 01:15:40,307
+Evet, kimler bilgisayarının başında acaba? Bir göreyim elleri bakayım.
+
+277
+01:15:47,699 --> 01:15:57,380
+Derse alan 37 kişi var. Derse katılan 25 kişi ve 25 kişinin şu an 11'i el kaldırdı. Yarıyı bulamadık yani.
+
+278
+01:15:59,180 --> 01:16:09,239
+12, 13 evet yarıyı geçtik. Peki, teşekkür ediyorum katıldığınız ve dinlediğiniz için.
+
+279
+01:16:11,239 --> 01:16:12,579
+Şimdi devam edelim.
+
+280
+01:16:22,068 --> 01:16:24,968
+Corner Detection konusuyla devam edeceğiz.
+
+281
+01:16:29,971 --> 01:16:32,891
+Önce biraz interest point'ten bahsedelim.
+
+282
+01:16:36,851 --> 01:16:52,891
+Interest point detection konusu aslında geleneksel bilgisayarla görme yöntemlerine baktığımızda...
+
+283
+01:16:56,564 --> 01:17:23,904
+Köşe, kenar gibi belli noktaların önce tespit edilmesi. Bunlara interest point diyoruz. Daha sonra bu noktaların etrafından, bu interest point detection işleminden sonra bu noktaların etrafındaki alandan çıkartılmış bir tanımlayıcı descriptor kullanılarak.
+
+284
+01:17:24,564 --> 01:17:41,123
+Görüntü üzerindeki belli noktalar işaretleniyor. Daha sonra aradığımız bir nesne, mesela kedi ya da köpek gibi değişik formlardaki nesneler için,
+
+285
+01:17:42,739 --> 01:17:54,639
+Elimizdeki görüntüde var olan, işte kedi köpek resminde var olan bu tür interest point dediğimiz noktalar ve bunların etrafından çıkılmış descriptorlarla.
+
+286
+01:17:56,692 --> 01:18:11,692
+Yeni incelediğiniz görüntü üzerindeki descriptorlar arasında bir eşleştirme yapılıyor ve bu iki obje birbiriyle aynı mıdır? Bu tespit edilmeye çalışıyor.
+
+287
+01:18:11,692 --> 01:18:23,332
+Burada örnek olarak görüntüde bize bir dağ görüntüsü verilmiş, karlı bir dağ. İki farklı açıdan çekilmiş görüntüler bunlar.
+
+288
+01:18:24,692 --> 01:18:38,692
+Bu iki görüntü acaba aynı mıdır? Bunu bulmaya çalışıyor. Az önce dediğim gibi bu bir kedi, köpek, kamyon, insan gibi de olabilir. Bu tür çözümlerde…
+
+289
+01:18:40,275 --> 01:18:51,895
+Interest Point olarak işaretlenmiş şu noktaların etrafından belli descriptorlar, tanımlayıcılarıyla öz nitelikler çıkartılıyor demiştik. Daha sonra bunlar eşleştirilmeye çalışılıyor.
+
+290
+01:18:51,895 --> 01:19:07,695
+Bu örnekte gördüğümüz gibi işte dağın tepesinden alınan bir öz nitelik diğerinde de benzer bir noktayla eşleşmiş. Sonra diğer küçük olan tepenin üstündeki noktalar da bir eşleşme.
+
+291
+01:19:08,275 --> 01:19:23,235
+Ve bu eşleşen noktaların sayısı üzerinden, tabii bunların geometrisine de bakılarak bu iki şeklin aynı olup olmadığı tespit edilmeye çalışılıyordu önceki yöntemlerde.
+
+292
+01:19:23,235 --> 01:19:32,235
+Bu sözünü ettiğimiz interest point dediğimiz noktaların...
+
+293
+01:19:33,011 --> 01:19:55,531
+Repetability yani tekrarlanabilir olma özelliği aranıyordu. Mesela birinin bulduğunu diğerinin de benzer görüntüde aynı noktayı bulması bekleniyor. Mesela şu dağın tepesinde bulduğunuz nokta burada çıkmamışsa eğer bu repeatability özelliğinin yani tekrarlanabilir özelliğinin olmadığını gösteriyor.
+
+294
+01:20:00,000 --> 01:20:28,000
+Bu tarafta aynı noktada bir şey, interest point bulunmamış. Şimdi baktığımız zaman iki görüntü aslında birbiriyle farklı ölçek ve açılarda çekilmiş aynı yere ait görüntü olmasına rağmen bulduğu interest pointler birbirlerinden tamamıyla farklı noktalarda olduğu için böyle bir çalışmada bu interest pointler arasında eşleştirme yapmak mümkün.
+
+295
+01:20:28,000 --> 01:20:36,539
+Mümkün olmayacaktır. Çünkü benzer noktalarda interest pointleri bulamamış olduğunu görüyoruz. Bu bir problem.
+
+296
+01:20:41,684 --> 01:21:04,904
+Interest Point olarak az önce belirttiğimiz gibi köşeler, kenarlar kullanılabiliyor demiştik. Bu köşe bulma konusu bilgisayarla görmede üzerinde önceden çok çalışılan konulardan biri. Burada da yine ilginç bir matematik var. O yüzden burayı da size anlatmak istiyorum.
+
+297
+01:21:09,684 --> 01:21:29,424
+Doğruluğunu göstermek için iki tane test görüntüsü alıyor. Biri sentetik bir görüntü. Sol tarafta gördüğümüz bir sentetik görüntü. Sağ tarafta ise bir gerçek görüntü var. Bu iki görüntüde işte corner diyebileceğimiz noktaların bulunması gerekiyor.
+
+298
+01:21:36,659 --> 01:21:49,859
+Burası bir köşe noktasıdır. Evin pencerelerinin, kapılarının köşeleri gibi noktaları, şu borunun geçtiği yerdeki köşe noktalarını bulmasını bekliyoruz.
+
+299
+01:21:49,859 --> 01:22:01,799
+Değil mi? Yani amaç bu. Diğerinde ise sentetik görüntüde zaten kırmızıyla işaretlenmiş noktalar köşe noktası olarak.
+
+300
+01:22:02,256 --> 01:22:08,916
+Gösteriliyor ve bunları bu Corner Detection yöntemlerinin bulması bekleniyor.
+
+301
+01:22:11,976 --> 01:22:21,256
+Şimdi Harris Corner Detector, tabi bu alanda geliştirilmiş onlarca belki yöntem var ama en yaygın kullanılan ve...
+
+302
+01:22:23,028 --> 01:22:31,747
+Başarılı olduğu söylenen yöntemlerden biri. O yüzden ben de bu dersin kapsamında Harris Corner Detector'dan bahsedeceğim.
+
+303
+01:22:34,747 --> 01:22:43,628
+Corner'ın önce tanımını yapıyor. Corner Point Can Be Recognized in a Window demiş. Bir pencere içerisinde.
+
+304
+01:22:44,724 --> 01:23:11,384
+Tanınabilir, algılanabilir. Burada kırmızıyla işaretlediği resimde gördüğümüz kırmızıyla işaretli alanlar işte bu sözü edilen pencereler gibi düşünülebilir. Sonra diyor ki önce bir pencere tanımlayacağız. Daha sonra bu pencereyi shifting a window in any direction should give a large change in intensity demiş.
+
+305
+01:23:12,724 --> 01:23:14,543
+Tanımladığımız Windol,
+
+306
+01:23:16,692 --> 01:23:30,112
+Sağa sola, yukarı aşağıya doğru shift ettiğimde ben bu pencereyi, eğer görüntü içerisinde bir değişim meydana geliyorsa, diyor ki burada bir köşe vardır diyor.
+
+307
+01:23:30,832 --> 01:23:37,231
+Şimdi bunu aşağıya doğru baktığımızda biraz daha detaylandırmış. Çok güzel bir açıklama bu.
+
+308
+01:23:37,231 --> 01:23:44,291
+Yani bir corner detector'ı anlatmak için bu şeklin çizip bunun üzerinden anlatmalısınız derim ben.
+
+309
+01:23:44,692 --> 01:24:04,832
+Eğer burada gördüğümüz sarı çizilmiş şekil window'u gösteriyor. Eğer ben flat region dediğim, yani hiçbir değişimin olmadığı background'a ait bölgeyi tarıyorsam, bu window'u bakın.
+
+310
+01:24:05,199 --> 01:24:19,319
+Köşelerinden oklar çıkarmış. Bunun anlamı şu demek, bunu sağa sola, yukarı aşağıya değişik yönlerde hareket ettiriyorum diyor. Ama tabii belli bir ölçüde mesela iki piksel sağa, iki piksel sola.
+
+311
+01:24:20,020 --> 01:24:31,980
+İki piksel yukarı, iki piksel aşağıya gibi gezdirerek yani kaydırarak bir önceki çerçevenin olduğu yerle bir sonraki bulunduğu yer arasında ne kadar değişim olduğuna bakıyor.
+
+312
+01:24:31,980 --> 01:24:40,780
+Eğer bu bir flat region ise yani background'a ait bir bölge ise burada pencereyi kaydırdığımda hiçbir değişiklik olmaz.
+
+313
+01:24:41,040 --> 01:24:48,020
+Aynı bölgeyi görüyormuş gibi olursunuz o window'un içerisinde. Dolayısıyla bu şekilde değişim.
+
+314
+01:24:48,020 --> 01:25:06,120
+Yoksa diyor, no change in all directions dediği bu. Bütün yönlerde hareket ettiriyorsunuz ve hiçbir değişim olmuyorsa pencere içerisindeki görüntüde, flat bridge'in, düz bir background üzerinde çalışıyorsunuz anlamına gelir.
+
+315
+01:25:14,228 --> 01:25:21,208
+İçin şunu söylüyor. No change along the edge direction.
+
+316
+01:25:22,644 --> 01:25:39,863
+Ben window'u kenarın doğrultusunda eğer yukarı aşağıya hareket ettirirsem, yani şu alanı kenar doğrultusunda yukarı aşağıya hareket ettirirsem, kenarda bir süreklilik gösterdiği için yine herhangi bir değişim göstermeyecek.
+
+317
+01:25:39,863 --> 01:25:50,644
+Kenar doğrultusunda hareket ettirdiğimde. Ama sağa sola hareket ettirdiğimde değişim gösterecek. Yani bir yönde değişim olmazken diğer yönde.
+
+318
+01:25:50,644 --> 01:26:04,623
+Her yönde baktığımda değişim olduğunu görüyorum. Bu durumda diyor ki bir kenar bölgesini gösteriyor window'unuz diyor. Corner için ise şöyle bir değerlendirme yapmış.
+
+319
+01:26:04,623 --> 01:26:09,564
+Significant change in all directions.
+
+320
+01:26:11,347 --> 01:26:33,227
+Bakın köşeye denk geldiği zaman bu pencere, siz bu köşe noktası üzerine oturttuğunuz pencereyi sağa kaydırdığınızda da pencere içerisinde bir değişim olur. Yukarı aşağıya kaydırdığınızda da değişim olur. Böyle bir durumda bir corner'ı görüntülediğinizi bilirsiniz diyor.
+
+321
+01:26:39,347 --> 01:26:55,288
+Ve matematiğe şöyle, matematiğe bakacak olursak, görüntü madresi üzerinde şurada IXY dediğimiz imic matrisini gösteriyor.
+
+322
+01:26:55,288 --> 01:27:01,288
+IX artı U, Y artı V dediği ise belli bir kaydırma.
+
+323
+01:27:02,127 --> 01:27:19,407
+U ve V kadar, X ekseninde U kadar, Y ekseninde de V kadarlık bir kaydırma yapıldığında diyor. Yani o pencereyi kaydırdığımızda. Window'u da şuraya koymuş. Window Function dediği bir fonksiyonu da buraya yerleştirmiş.
+
+324
+01:27:19,407 --> 01:27:30,108
+Yani ne yapıyoruz? Bir tane whole image dediğimiz bütün bir görüntü var. Bu görüntünün içerisinde belli bölgeleri window'lar ile şey yapıyoruz.
+
+325
+01:27:30,127 --> 01:27:34,127
+Tarıyoruz. Değişimi var mı yok mu şeklinde.
+
+326
+01:27:35,727 --> 01:27:40,127
+Window fonksiyonu çarpı...
+
+327
+01:27:41,908 --> 01:28:00,128
+Bu window'nun içerisinde kalan alanda U kadar kaydırılmış, U ve V kadar kaydırılmış bir görüntü alan var. Bir de görüntünün orijinal ilk koyduğunuz, maskı ilk oturttuğunuz yeri diye düşünebilirsiniz.
+
+328
+01:28:00,128 --> 01:28:09,908
+Bu ikisi arasındaki farkı alıp, fark biliyorsunuz negatif de çıkabilir, karesini alıp üst üste toplayarak bir E değeri dediği değer.
+
+329
+01:28:09,908 --> 01:28:30,868
+E-D dediği değer hesaplıyor. Burada kullanılabilecek window için, şu W maskı için, WXM maskı için diyor ki bu bir dikdörtgen formunda bir mask olabilir veya Gaussian function şeklinde bir mask olabilir.
+
+330
+01:28:34,131 --> 01:28:47,531
+Tanımladığım window'un orta noktasında kat sayısı en yüksek olacak. Sağa sola doğru gidildikçe ağırlığı azalacak gibi düşünülebilir.
+
+331
+01:28:49,531 --> 01:28:52,531
+Şimdi bu matematiği anlatırken,
+
+332
+01:28:56,340 --> 01:29:11,479
+Kaydırma işlemi vs. matriz formunda gösteriyor ve diyor ki ben bu matriz yapısını şöyle bir yapıya indirgeyebilirim diyor. Bakın burada koyduğu matrizlerin anlamını söylüyorum.
+
+333
+01:29:24,340 --> 01:29:49,980
+X yönünde değişimi temsil eden bu. Bunun karesini al diyor. Bu fark yani türevin, X doğrultusundaki türevin karesini al diyor. Şu terim hem X doğrultusunda hem de Y doğrultusunda türev alınmış görüntülerin output'larının çarpımı demek oluyor.
+
+334
+01:29:50,771 --> 01:30:10,851
+Matrisin bu gözü yine aynı şekilde x doğrultusunda türev, y doğrultusunda türev maskının sonuçlarının çarpımı demek. Bu da y doğrultusunda, dikey doğrultuda türev işleminin karesi demek.
+
+335
+01:30:16,659 --> 01:30:36,619
+Her piksel için ikiye ikilik bir matris oluşturuyoruz. Şurada gördüğümüz W maskı ile ağırlıklandırılmış. Buna M matrisi diyor. M ikiye ikilik bir matristir diyor. Computed from image derivatives.
+
+336
+01:30:37,427 --> 01:30:47,688
+Görüntü türevleri üzerinden üretilmiş ikiye ikilik bir matristir diyor M matrisi için. Daha sonra bu M matrisi üzerinden...
+
+337
+01:30:53,043 --> 01:31:15,104
+Bir öz değer, eigenvalue hesaplıyor. M matrisi dediğimiz matris iki boyutlu olduğu için lambda 1 ve lambda 2 şeklinde iki tane öz değer buluyor. Bu öz değerler aslında işte değişimin olduğu eksenleri gösteriyor diyor.
+
+338
+01:31:20,783 --> 01:31:21,623
+Ön.
+
+339
+01:31:21,971 --> 01:31:34,971
+Window'u bir yönde değişim gösteriyorsa edge'dir, iki yönde hareket ettirdiğimizde de değişim gösteriyorsa bir corner'dır şeklinde bir açıklama yapmıştık.
+
+340
+01:31:34,971 --> 01:31:42,011
+Buna dayanarak aslında şöyle bir değerlendirme düzlemi oluşturuyor.
+
+341
+01:31:49,971 --> 01:32:09,420
+Burada örneğe bakalım.
+
+342
+01:32:10,836 --> 01:32:26,636
+Şurası lambda 1 çok çok küçük. Burası yine lambda 2'nin çok çok küçük olduğu alan. Bu bölge diyor flat region'dır diyor. Değişimin az olduğu bölge flat region'dır diyor.
+
+343
+01:32:38,836 --> 01:32:48,876
+Lambda 1, Lambda 2'den büyükse, yani şu tanımladığı alan içerisinde ise dikey doğrultuda bir edge vardır diyor.
+
+344
+01:32:49,655 --> 01:32:57,396
+Benzer bir incelemeyi Lambda 2 içinde yapıyor. Bakın burada Lambda 1 küçük, Lambda 2 büyük.
+
+345
+01:32:57,576 --> 01:33:06,056
+Bu durumda da diyor ki yine bir yönde sadece değişim var. Bu da yine bir yatay doğrultuda bu defa kenarı gösterir.
+
+346
+01:33:06,528 --> 01:33:22,188
+Corner için ise şurada bir alan tanımlamış. Diyor ki hem lambda 1 hem de lambda 2 değeri büyükse eğer şu gördüğümüz bölge için bir corner tanımı yapılabilir diyor.
+
+347
+01:33:23,288 --> 01:33:28,927
+Harris Corner Detector mantığı bu şekilde çalışıyor.
+
+348
+01:33:30,931 --> 01:33:39,692
+Dediğim gibi, yani burada da matematiği yine dikkatinizi çekmek istediğim bir konu. Bununla ilgili...
+
+349
+01:33:45,363 --> 01:33:46,563
+Pardon.
+
+350
+01:33:55,123 --> 01:34:00,743
+Şu Jüpiter ekranını tekrar açacağım.
+
+351
+01:34:05,492 --> 01:34:22,552
+Evet, burada Corner Detection için az önce konuştuğumuz konu, Flat Region, Edge ve Corner için Window hareketine göre nasıl bir algılama yaptığını anlatıyor.
+
+352
+01:34:32,595 --> 01:34:45,175
+PsycImage Feature altında CornerHarris hazır bir fonksiyon olarak burada var.
+
+353
+01:34:59,188 --> 01:35:18,188
+Corner Harris. Bakın burada Corner Detection için alternatifleri de görüyorsunuz. Extract Fast Corners. Ondan sonra Forstner diye bir yöntem. Harris Corner Detection. Kitchen...
+
+354
+01:35:18,739 --> 01:35:41,260
+Rosenfeld diye bir yöntem. Moravec yine Harris'den önce çalışan bir araştırmacı, onun kodu var. Yani epey bir corner detection için alternatif olduğunu görebilirsiniz. Biz Harris Corner Detector için bakacak olursak, Harris Corner Detector'da...
+
+355
+01:35:44,148 --> 01:35:48,247
+Computerist Corner Measures Response Image Damage.
+
+356
+01:35:51,667 --> 01:36:11,667
+A corner detector uses information from the autocorrelation matrix A. Burada az önce konuştuğumuz x'e göre türevin karesi, x'in türevi çarpı y'nin türevi şeklinde bir ikiye ikilik bir...
+
+357
+01:36:12,435 --> 01:36:26,996
+Matris yapısı oluşturuyor. Daha sonra bu matrisin öz değerlerini, eigen value'larını hesaplıyor ve onun üzerinden buluyor demiştik. Kısaca bunu anlatmış.
+
+358
+01:36:33,908 --> 01:36:47,168
+Parametrelerini bu yöntemin vermiş ve return kısmında da Harris Response Image'i bir output olarak döndürdüğünü söylüyor.
+
+359
+01:37:02,036 --> 01:37:12,015
+Hazır görüntüler içerisinden checkerboard bir satranç tahtası formunda bir görüntü üzerinde çalışacağız.
+
+360
+01:37:12,175 --> 01:37:21,935
+Fakat satranç tahtasının normalde siyah beyaz geçişleri çok belirgin 90 derecelik açılara sahip.
+
+361
+01:37:22,676 --> 01:37:34,676
+Diyor ki ben bu yöntemi biraz zorlamak adına bunu warp edeceğim. Yani biraz bükeceğim bu şekli ki o açılar tam 90 derece görünmesin.
+
+362
+01:37:34,676 --> 01:37:45,436
+Ve böylece aslında yöntemi biraz zorlamış olalım diyor. Ve böyle bir warping işlemi uyguluyor.
+
+363
+01:37:46,292 --> 01:37:56,832
+Bu bükme işleminden sonra ayrıca görüntü üzerine, bakın bükme işleminden sonra şu çıkıyor karşımıza.
+
+364
+01:37:56,932 --> 01:38:00,452
+Buraya bu resmin içerisine ayrıca şu bölgeleri ekliyor.
+
+365
+01:38:00,452 --> 01:38:12,392
+Yani bir elips şekli. Elipsin merkez noktasının 310'a 175. Yok o mu o?
+
+366
+01:38:14,931 --> 01:38:36,311
+300, dur bakayım. Evet, doğru. 310'a, evet, 175. Ve dikey doğrultuda ve yatay doğrultudaki değişimlerini 10'a 100 vermiş. Yani bir elips veriyor. Dolayısıyla tek bir R değeri yok.
+
+367
+01:38:38,239 --> 01:38:43,519
+İki tane dikdörtgen alan ekliyor. Bakın onlarda şurada gördüğümüz alanlar.
+
+368
+01:38:43,519 --> 01:38:58,640
+İşte diyor ki 180'den 230'a, şurada 180'den 230'a, 10'dan 60'a şu beyaz kareyi ekliyor.
+
+369
+01:38:59,104 --> 01:39:16,724
+Sonra görüntüye 230'dan 280'e, 60'dan 110'a dediğim, şuradaki beyaz kare alanı ekliyor. Hem 90 derece açıya sahip şekiller olsun, sentetik bir görüntü oluşturmak amaç.
+
+370
+01:39:18,036 --> 01:39:36,636
+Hem de 90 derece dışında işte böyle 120 falan olan açılar da ekliyor ki hani ne kadarını yakalayabiliyoruz bunu görelim diye. Aslına bakarsanız işaretli olan artıyla işaretli olan köşelerde şuraları mesela yakalayamadığını görüyoruz.
+
+371
+01:39:45,728 --> 01:40:06,188
+120 civarı bir açı var burada. Belki daha fazla olabilir. Mesela bunu işaretleyememiş Corner olarak. Ama normal kare verilen şeklin tüm köşelerini Harris Corner Detector algılayabilmiş.
+
+372
+01:40:09,652 --> 01:40:27,591
+Yaptığı uygulamada Corner Peaks, Harris Corner Image. Burada bir de minimum distance 5 diye bir ölçü vermiş. Belki hani o ölçülerle, parametrelerle bunları kapsayacak hale getirilebilir.
+
+373
+01:40:27,591 --> 01:40:31,411
+Minimum distance parametresine bakalım.
+
+374
+01:40:41,203 --> 01:40:43,444
+Sürümleri farklı belki. Elips.
+
+375
+01:40:45,783 --> 01:40:57,384
+0.05k değeri midir? Float. Sensitive Factor to Separate Corner from Image. Hayır, bu 0 ile 0.02 arasında değer alan.
+
+376
+01:40:59,524 --> 01:41:03,984
+Sharp Corners. Normalization Factor.
+
+377
+01:41:06,868 --> 01:41:10,028
+Ve sigma değeri diye parametreler vermiş.
+
+378
+01:41:11,568 --> 01:41:17,768
+Yani oluşturduğu output'u bu şekilde görebiliriz.
+
+379
+01:41:17,868 --> 01:41:22,768
+Şuradaki minimum distansı, o haris corner'ın değil, onun parametresi değil.
+
+380
+01:41:23,128 --> 01:41:27,028
+Corner peek'in parametresiymiş. Evet, şimdi fark ettim.
+
+381
+01:41:28,148 --> 01:41:33,748
+Şunun default parametrelerini kullanıyor. O orada yok zaten.
+
+382
+01:41:35,188 --> 01:41:39,568
+Bu da bir Corner Detection yöntemi.
+
+383
+01:41:40,028 --> 01:41:42,967
+Şimdi ben bu kadar şeyi size niye anlattım?
+
+384
+01:41:43,228 --> 01:41:44,387
+Tekrar oraya gelelim.
+
+385
+01:41:47,188 --> 01:41:50,188
+Bizim dersimizin bundan sonraki bölümü...
+
+386
+01:41:54,292 --> 01:42:16,212
+Tekrar slide'a dönecek olursak. Dersimizin bundan sonraki bölümü Deep Learning ile devam edecek. Çünkü geleneksel computer vision uygulamalarında feature extraction işlemini hep kullanıcının aklına gelen öz nitelikler üzerinden.
+
+387
+01:42:17,108 --> 01:42:40,368
+Yaptık geçmişte. Kenarları, köşeleri bulduk, hoc featureleri bulduk. Sonra bu featureleri bir feature vektörü haline getirdik ve bunu makine öğrenmesi yöntemlerine verdik. Ama artık işler öyle gitmiyor. Bu noktada artık derin öğrenme yöntemlerini kullanıyoruz.
+
+388
+01:42:44,948 --> 01:42:54,128
+1998'de kullanılmış olan Lennet Framework'ünden bahsediyor.
+
+389
+01:42:54,928 --> 01:43:02,208
+Ve input image olarak 32x32'lik bir giriş görüntüsü veriyor.
+
+390
+01:43:04,208 --> 01:43:08,168
+Daha sonra bir konvolisyon katmanı var.
+
+391
+01:43:10,579 --> 01:43:25,119
+Pardon, burada ne yapmış? Evet, konvolüsyon işleminde 6 tane farklı filtre ile bir konvolüsyon işlemi yapmış.
+
+392
+01:43:28,083 --> 01:43:44,344
+Burada kullandığı muhtemelen, iki oradan gitti, iki oradan gitti, dört. Beşe beşlik filtreler kullandığını söyleyebilirim. Çünkü görüntüyü, 32'ye 32'lik görüntü 28'e 28 boyutlarına düşmüş.
+
+393
+01:43:45,344 --> 01:43:55,944
+Sağdan soldan, üstten alttan şeyden dolayı yiyor. Eğer padding yapmazsak işlem sırasında küçülecektir.
+
+394
+01:43:56,083 --> 01:43:58,083
+Konvolüsyon işlemi sonrası görüntü.
+
+395
+01:43:58,944 --> 01:44:03,243
+Konvolüsyon işlemi, yani burası bir konvolüsyon katmanını gösteriyor.
+
+396
+01:44:03,583 --> 01:44:06,064
+Bir convolution layer diyelim.
+
+397
+01:44:14,963 --> 01:44:35,923
+Daha sonra bir subsampling işlemi uygulamış ve görüntü üzerinde ikiye ikilik alanı temsil eden bir piksel seçmiş ve subsampling işlemin sonunda gördüğünüz gibi 28'e 28 olan görüntü boyutu 14x14 boyutuna düşmüş.
+
+398
+01:44:37,063 --> 01:44:41,943
+Yine 6 tane filtrenin çıktısı üzerinden çalışıyor.
+
+399
+01:44:42,963 --> 01:44:51,083
+Bu konvolisyon işlemi kullanmış. Bu konvolisyon işleminde bakıyoruz.
+
+400
+01:45:02,100 --> 01:45:18,040
+Böyle layer üretiyor. Yani bu 16 tane filtre kullandığı anlamına geliyor. Görüntü sağdan soldan 4 yine küçülmüş. Yine 5'e 5'lik konvolüsyon filtresi kullanmış.
+
+401
+01:45:18,880 --> 01:45:26,760
+Bunun sonucunda oluşan bu görüntüye tekrar burada bir subsampling işlemi uygulamış. Küçültme işlemi uygulamış.
+
+402
+01:45:26,760 --> 01:45:30,100
+Ve görüntü yarı yarıya küçülmüş. 10'a 10 olan boyun.
+
+403
+01:45:30,100 --> 01:45:39,100
+5'e 5 boyutuna düşmüş. 16 tane output. Yine aynı 16 tane output olarak burada mevcut. Sonra bunu...
+
+404
+01:45:39,712 --> 01:45:59,312
+Bir flatten işlemi, yani bir vektöre dizme işlemi gerçekleştirmiş ve vektör üzerinde yerleştirdiği bu feature vektör ile fully connected layer dediğimiz layer'a input olarak bu öz nitelik vektörünü vermiş.
+
+405
+01:45:59,312 --> 01:46:07,652
+Ama şu kısım, yani şuraya kadar olan bölüm feature extraction işlemini gerçekleştiriyor.
+
+406
+01:46:07,712 --> 01:46:21,252
+Yani bizim Computer Vision'da interest point bulalım, hoc feature çıkartalım, cornerları bulalım diye yaptığımız işlerin yerine gelen katman.
+
+407
+01:46:22,676 --> 01:46:36,036
+Convolutional Neural Network katmanı dediğimiz katman oluyor. Bu katman burada gördüğümüz gibi iki tane konvolüsyon katmanından oluşuyor. Yani arka arkaya iki defa konvolüsyon işlemi yaptı.
+
+408
+01:46:36,036 --> 01:46:50,676
+Yani günümüzdeki ağlara baktığımız zaman bu konvolüsyon katmanlarının sayısı yüzü buluyor arkadaşlar. Yüz tane konvolüsyon katmanı. Düşünebiliyor musunuz? Yani bu öz nitelikleri…
+
+409
+01:46:50,676 --> 01:47:04,216
+Oluşturmak için kullandığı konvolüsyon işlemlerinde birinci ve ikinci katmanları az çok tahmin edebiliriz. İkinci katmanda varsayalım ki ikinci türevi falan buldu.
+
+410
+01:47:04,216 --> 01:47:16,436
+Ama sonrasında üst üste uyguladığı bu konvolüsyon işlemleriyle insanın aklına gelmeyen kompleks öz nitelikleri üretebiliyor bu.
+
+411
+01:47:18,387 --> 01:47:25,707
+O nedenle bu kadar başarılı olabiliyorlar.
+
+412
+01:47:25,707 --> 01:47:28,707
+Şimdi, convolutional neural networkler için...
+
+413
+01:47:30,131 --> 01:47:46,631
+Burada güzel bir örnek vermiş. Consider learning an image diyor. Some patterns are much smaller than the whole image. Mesela işte burada kuşun gagası diye bir şeyi almış ve bu gagasını tespit etmek istiyor.
+
+414
+01:47:57,268 --> 01:48:19,968
+Oluşturduğu konvülisyon katmanında kullandığı filtreler, görüntünün içerisinde belli bölgelerde hangi filtre daha yüksek bir output veriyorsa, yani tanımada daha başarılı oluyorsa o bölgeye odaklanıyor ve onun weightini, ağırlığını arttırarak bu sistemin daha başarılı çalışmasını sağlıyor.
+
+415
+01:48:21,587 --> 01:48:48,368
+Şimdi şöyle bir örnek vereceğim. Aşağıda ilerleyen kısımlar da var. Konvolisyon işleminin nasıl yapıldığını hatırlıyorsunuz. Elimizde bir input image var, elimizde bir kernel var. İşte burada üçe üçlük bir mesela filtre maskı verilmiş. Daha büyük boyutta bir giriş görüntüsü verilmiş.
+
+416
+01:48:49,587 --> 01:49:00,627
+Kernel'ı görüntünün sol üst köşesine oturtuyoruz. Karşılıklı gelen değerleri çarpıp toplayarak bir merkez piksel için bir output üretiyoruz.
+
+417
+01:49:00,627 --> 01:49:14,847
+Ve böylece bütün noktalar için bu output'u üretebiliyoruz. Ama sonuçta bunu oturttuğumuz ilk şöyle bir alanda.
+
+418
+01:49:17,587 --> 01:49:43,148
+Bu örneğe bakalım.
+
+419
+01:49:43,412 --> 01:49:59,552
+Filtreler, mesela diyor ki burada bir input image verilmiş. Şu bizim giriş görüntümüz olsun. Burada bir filtre verilmiş. Birinci filtre, ikinci filtre, birden fazla filtre ile output üretiyoruz.
+
+420
+01:50:00,412 --> 01:50:06,912
+Birinci filtrenin görevi, diagonal doğrultudaki çizgileri tespit etmek.
+
+421
+01:50:07,699 --> 01:50:27,799
+İkinci filtrenin görevi dikey doğrultudaki çizgileri tespit etmek. Çünkü görüyorsunuz oradaki kat sayılar aslında bize bunu gösteriyor. Ve bu filtre kat sayıları, bakın burada çok önemli bir nokta, these are the network parameters to be learned diyor.
+
+422
+01:50:28,176 --> 01:50:45,136
+Bu parametreler network parametreleridir ve öğrenilmesi gereken parametrelerdir diyor. Yani bu filtreleri değişik filtre katsayılarıyla deneyerek hangisinin uygun olduğunun seçilmesi gerekiyor.
+
+423
+01:50:46,707 --> 01:51:03,487
+Şimdi bunun nasıl uygulandığını da hemen hatırlayalım. Çünkü bu işlemleri ezbere gitmeyelim. Her şeyi anlayıp yaparsak, inanın çıkan sonucu yorumlayabilecek yeteneğiniz olur.
+
+424
+01:51:03,487 --> 01:51:14,487
+Şimdi elimizde bir giriş görüntüsü var ve bir de filtremiz var. Yapacağımız işlem konvolüsyon işleminde. Bu üçe üçlük filtreyi görüntünün sol üstü...
+
+425
+01:51:14,707 --> 01:51:22,387
+tarafına çakıştırdık. Ve filtre kat sayıları ile
+
+426
+01:51:23,315 --> 01:51:42,535
+Image matris üzerinde yer alan intensity değerlerini çarpıyoruz. Burada verilen input image kolay olsun diye binary bir image olarak verilmiş. Ama sonuçta bizim elimizde bir grayscale image de olabilirdi. Ama dediğim gibi bu örnekte bir binary image verilmiş bize.
+
+427
+01:51:48,115 --> 01:52:10,016
+Konvolüsyon işlemini dersin başında anlatmıştım. Hatta dedim size bunu sınavda da sorabilirim. Yani bir giriş görüntü matrisi verdim, bir 3'e 3'lük filtre verdim. Bu filtrenin konvolüsyon sonucu, bu görüntü için üreticiye konvolüsyon sonucu ne oluru hesaplayabilmelisiniz.
+
+428
+01:52:16,115 --> 01:52:25,796
+Tüm kat sayıları parlaklık değerleriyle çarpıp üst üste topladığımda bu piksel için üreteceği output kaç çıkar?
+
+429
+01:52:28,787 --> 01:52:29,887
+3 çıkacaktır.
+
+430
+01:52:29,887 --> 01:52:54,867
+Evet, 3 çıkacaktır değil mi? Ve elimizde 2, 4, 6'ya 6 boyutunda bir giriş görüntüsü var. 6'ya 6'lık giriş görüntüsünün, giriş görüntüsünün filtre, yani konvolüsyon işlemi sonunda size ne olacaktır, boyut ne olacaktır?
+
+431
+01:53:02,163 --> 01:53:04,083
+4'e 4.
+
+432
+01:53:04,263 --> 01:53:26,583
+4'e 4 değil mi? Küçülecek ve 4'e 4 boyutlarında olacak. Çünkü ne yaptık? Bakın ilk yaptığımız örtüştürme işleminde buradaki merkez piksel için sonuç ürettik biz. Daha sonra işte bunun için üretecek ve şunun için üretebilecek. Çünkü bu 3'e 3'lük maddesi buraya oturttuğumda çıkacaktır.
+
+433
+01:53:30,163 --> 01:53:45,423
+Birer piksel kaybettim. Neden? Çünkü elimdeki maskın boyutu 3x3 ve bunun merkez piksele göre sağında solunda kalan boşluklara baktığımda ne olacaktır?
+
+434
+01:53:45,803 --> 01:53:57,603
+Görüntüde sağdan, soldan, üstten ve alttan birer piksel eksilecek ve konvolüsyon işleminin sonucunda dörde dörtlük bir output üreteceğim.
+
+435
+01:53:58,163 --> 01:54:05,703
+Bu sorunu eğer padding yaparsak üstesinden gelebiliriz demiştik.
+
+436
+01:54:05,703 --> 01:54:09,643
+Padding işlemi yani şu görüntünün etrafına.
+
+437
+01:54:10,355 --> 01:54:30,115
+Ekstra gözler açıp dolgu yapmak demek. Ama bu konvolüsyon işleminde özellikle convolutional neural networklerde hiç uygulanmıyor padding işlemi. Genelde küçülmüş bir output üzerinden konuşuyoruz.
+
+438
+01:54:37,619 --> 01:54:53,079
+Gene şuraya oturtulması durumunda nereye oturttuk? Sarı renk, yeşil renkle çizeyim. Yine buraya oturtsam ikinci filtreyi bunun output'u ne olur diye sorayım.
+
+439
+01:54:54,359 --> 01:54:55,420
+Bir mi olur?
+
+440
+01:54:57,171 --> 01:55:14,771
+Ama şey var. Eksi birileri unuttum. Eksi birileri unuttum. Eksi biriler var orada. Evet. Eksi iki artı bir. Eksi bir olacak. Değil mi? Doğru. Peki, ikinci filtrenin en yüksek output üreteceği bölge neresi olacak?
+
+441
+01:55:14,771 --> 01:55:19,251
+Görüntüye bakın. Dikey doğrultuda.
+
+442
+01:55:20,243 --> 01:55:41,743
+Bir dizilim görebiliyor musunuz? En sağ alt köşe değil mi? Şu bölge bakın en yüksek output'u verecek olan bölge. Çünkü filtre 2'nin görevi dikey doğrultudaki çizgileri tespit etmek. O alanda en büyük çıktığı üretecektir bize.
+
+443
+01:55:43,764 --> 01:56:02,243
+Dolayısıyla bu filtrelerin sayısı yani filter 1, filter 2 dedik. Yukarıdaki şekilde de hatırlarsanız şurada bakın 6 tane output üretmiş. Burada 6 tane konvolüsyon filtresi.
+
+444
+01:56:02,612 --> 01:56:25,231
+Bunun sonucunda 6 tane 28'e 28'lik bir output üretilmiş diyor. Mesela şuradaki konvolisyon katmanına baktığımda burada da 16 tane 5'e 5'lik filtre kullanılmış. Bunu az önce size söylemiştim. O da resmin boyutundan çıkarttım tabii ki ben bunu.
+
+445
+01:56:27,412 --> 01:56:48,712
+5 çarpı 5'lik filtre kullanılmış. Burada 6 tane 5 çarpı 5'lik filtre kullanılmış. Bu filtre içerisindeki kat sayılarda rastgele seçilerek yani hangi değerler daha iyi oluyor diye deniyor sistem.
+
+446
+01:56:52,815 --> 01:57:13,395
+Hangi kat sayılar daha uygundur? Kendisi öğreniyor. Bu da yani dikey çizgilere mi bakayım, yatay çizgilere mi bakayım gibi kabaca konuşacak olursak hani daha kompleks özüntelikler var ama bunun gibi bir değerlendirme yapıyor nihayetinde.
+
+447
+01:57:16,435 --> 01:57:34,895
+Konvolüsyon işleminde bir de stride parametresi dediğimiz bir parametre var arkadaşlar. Biz konvolüsyonda hep filtre ile görüntüyü çakıştırıp sonra bir piksel kaydırıyorduk. Bu stride'in bir olması demek.
+
+448
+01:57:40,627 --> 01:57:49,127
+Stride 2 olmuş oluyor. Yani böyle bir şey de var. Alternatif de var. Bir başka parametre daha ekleniyor böylece.
+
+449
+01:58:05,876 --> 01:58:21,876
+Sonra bu filtreyi stride 1 ile 1 piksel kaydırdığımda, örtüştürdüğüm alan içerisinde baktığımda eksi 1 sonuç verdiğini söylüyor.
+
+450
+01:58:24,016 --> 01:58:29,036
+Bu şekilde devam edecek tamamlamaya.
+
+451
+01:58:32,851 --> 01:58:55,172
+Sonraki göz de eksi 3 üretecek. Şu aradakini atlamış. Ve nihai durumda 3, 1, eksi 1, eksi 3, eksi 1 gibi değerler görüyorsunuz. Bunun 6'ya 6'lık bir image üzerindeki output'u burada verilmiş.
+
+452
+01:59:00,180 --> 01:59:18,100
+İki tane göz için üç sonucu var. Bu sonuçlar ana diagonal üzerinde çizgiye sahip olan bölgeleri bize işaret ediyor.
+
+453
+01:59:24,756 --> 01:59:28,136
+Detection or Recognition işlemi yapabiliyoruz.
+
+454
+01:59:28,976 --> 01:59:31,256
+Burada ikinci filtre örneğini vermiş.
+
+455
+01:59:33,296 --> 01:59:38,396
+İkinci filtre bu defa dikey doğrultuda çizgileri tanımak için verilmişti.
+
+456
+01:59:38,396 --> 01:59:50,496
+Aynı giriş görüntüsüne bunu uyguladığında bakın şuradaki alanda sadece pik yaptığını ve maksimum sonuç ürettiğini görebilirsiniz.
+
+457
+01:59:52,435 --> 01:59:56,496
+İkinci filtrenin sonucunu da buraya bir output olarak vermiş.
+
+458
+01:59:57,895 --> 02:00:02,135
+Son olarak bu konuyu da söyleyip dersi bitireceğim bu hafta.
+
+459
+02:00:03,135 --> 02:00:15,315
+Renkli görüntülerle çalışırken arkadaşlar, konvolüsyon işlemini red-green-blue paletleri üzerinde gerçekleştiriyoruz.
+
+460
+02:00:15,876 --> 02:00:17,135
+RGB paletlerin...
+
+461
+02:00:17,712 --> 02:00:23,192
+Her biri bir matris olarak karşımıza çıkıyor. Derste renkli görüntü örneği yapmıştık.
+
+462
+02:00:23,692 --> 02:00:35,292
+Bunun için arkadaşlar, kullandığımız filtrenin de 3x3x3 olması gerekiyor.
+
+463
+02:00:35,292 --> 02:00:43,232
+Yani 3x3'lük 3 tane filtre arka arkaya olacak. Her biri ayrı bir renk paleti için.
+
+464
+02:00:44,051 --> 02:00:46,491
+Buna bir filtre diyeceğim.
+
+465
+02:00:58,836 --> 02:01:16,716
+Bir input image verdiğim zaman bu filtrenin, filtre birin output'u bu üç tane katmanın bütün gözleri için yaptığı çarpma işleminin sonucunu topluyor ve bir tane output üretiyor.
+
+466
+02:01:16,716 --> 02:01:26,716
+Dolayısıyla filtre bir ile konvolüsyon işlemi uyguladığınız zaman bu 6'ya 6'lık bir görüntüye bunun boyunca...
+
+467
+02:01:26,836 --> 02:01:48,536
+Bu ne oldu? Sağdan soldan ve üstten alttan birer piksel eksildi. Bir de bir tane filtrenin bir tane output'u çıkıyor. Çünkü filtrenin boyutu 3x3x3. Bundan bir tane output üretiyor. Ona lütfen dikkat edin.
+
+468
+02:01:50,976 --> 02:01:52,476
+Söylemek istediğim anlaşıldı değil mi?
+
+469
+02:01:53,427 --> 02:01:55,328
+Hocam bir daha tekrar edebilir misiniz?
+
+470
+02:01:57,028 --> 02:02:12,587
+Renkli görüntülerle çalışırken Red, Green, Blue 3 paletimiz var. Dolayısıyla giriş görüntüsünü, input image'i tarif ederken, input image'i ne dedim? 6x6x3'dür dedim.
+
+471
+02:02:15,412 --> 02:02:40,412
+Filtre birinci filtreyi uyguluyorum. Filtre birin boyutu 3x3x3. Yani her renk paleti için bir katmanı var filtrenin. Ve bu filtre 3x3 boyutunda. Bu filtreyi aynı az önce yaptığı iki boyutta yaptığımız gibi bu defa bütün renk katmanları için oturtuyorsunuz.
+
+472
+02:02:41,332 --> 02:03:00,792
+Ve örtüştüğü piksellerle çarpma işlemini yapıp, normalde bir katmanda biz 9 tane çarpma işlemi yapıp topluyorduk ya, bunda 27 tane çarpma işlemi yapıp, 27'sinin sonucunu toplayıp bir tane output üretiyorsunuz.
+
+473
+02:03:00,792 --> 02:03:04,572
+O yüzden çıkış görüntüsü, output imajınız.
+
+474
+02:03:05,043 --> 02:03:23,843
+Output imiciniz 4x4 boyutunda çıkıyor. Bir tane output verdiği için, bir filtre. Anlaşıldı mı? Ne demek istedim şimdi? Tamamdır hocam, teşekkürler. Evet, yani burası dediğim gibi RGB görüntülerle çalışırken buna lütfen dikkat.
+
+475
+02:03:25,300 --> 02:03:28,320
+Hocam, bu konuyla ilgili bir soru sorabilir miyim?
+
+476
+02:03:28,680 --> 02:03:29,240
+Buyurun.
+
+477
+02:03:29,240 --> 02:03:51,160
+Bir çalışmayı izlerken orada da insanlarla heykeli ayıramıyordu. Yine aynı bu 4x4'e indirdiği için renkler farklı olsa bile oradaki değer yüksek çıktığında ikisini de insan olarak düşündüğü için gri veya renkli ayırt edemeyecek mi bu filtre acaba?
+
+478
+02:03:51,828 --> 02:04:11,468
+Öyle düşünmüyorum. Şöyle bir durum var. Çünkü burada birinci filtrenin aslında üç renk paletinde kullandığını görüyorsunuz. Yani bir şey yapmıyoruz. Mesela RGB to Gray deyip Grayscale bir image dönüştürüp input olarak vermiyoruz.
+
+479
+02:04:19,828 --> 02:04:23,448
+Bu da artık renk bileşenleri ortadan kalkmış oluyor.
+
+480
+02:04:24,788 --> 02:04:25,568
+Anladım hocam.
+
+481
+02:04:26,028 --> 02:04:40,307
+Fakat aslına bakarsanız renk bileşenlerini birinci filtrenin içerisinde ben yani bütün kanallar için, renk kanalları için ayrı kat sayılar kullandığım için kullanıyorum aslına bakarsanız.
+
+482
+02:04:41,608 --> 02:04:43,807
+Orada bir kayıp yok yani renk anlamında.
+
+483
+02:04:44,688 --> 02:04:45,368
+Anladım hocam.
+
+484
+02:04:46,644 --> 02:04:59,180
+Önümüzdeki hafta artık bu convolutional neural networklerden başlayarak standart frameworkleri…
+
+485
+02:04:59,572 --> 02:05:22,811
+İnceleyerek devam edeceğiz. İncelediğimiz her framework için yani işte AlexNet, GoogleNet, VGG19 vesaire gibi frameworklerin her birinde konvolüsyon katmanında kaç filtre kullanılmış, size'ı ne, bunun output'u ne oluru biz kağıt üzerinde hesaplayabileceğiz.
+
+486
+02:05:27,572 --> 02:05:43,471
+Böylece aslında kullanılan filtrenin ne iş yaptığını, ne output üreteceğini, ürettiği outputun sayısının ne olacağını hayal edebiliyor olmanız gerekiyor. Benim çabam bu.
+
+487
+02:05:43,471 --> 02:05:53,052
+Evet, bu haftalık benim söyleyeceklerim bu kadar. Evet, sorunuz var mı acaba?
+
+488
+02:06:04,595 --> 02:06:16,435
+Çeti kapatayım en iyisi. Evet, herhangi bir soru yok. Şu an kaç kişiyiz? 26 kişiyiz. Peki.
+
+489
+02:06:18,707 --> 02:06:38,327
+Soru yoksa eğer bu haftalık bu kadar diyeceğim. Önümüzdeki hafta bu konulara giriş yapacağız. Önümüzdeki haftanın ders notlarını şimdiden paylaşabilirim. Bu konulara öncesinde siz de bakarsanız aslında derse daha hazırlıklı gelmeniz mümkün olur diye de düşünüyorum.
+
+490
+02:06:39,467 --> 02:06:46,127
+Peki arkadaşlar, hepinize iyi bir hafta diliyorum. Sağlıkla kalın. Görüşmek üzere, hoşçakalın.
+
+491
+02:06:46,547 --> 02:06:47,488
+İyi günler hocam.
+
+492
+02:06:47,748 --> 02:06:49,168
+Teşekkürler hocam.
+
+493
+02:06:49,307 --> 02:06:50,387
+Görüşmek üzere. Hoşçakalın.
+
+494
+02:06:50,387 --> 02:06:51,108
+İyi günler hocam.
+
+495
+02:06:51,368 --> 02:06:53,228
+Güle güle. Görüşürüz arkadaşlar.
+
+496
+02:07:12,115 --> 02:07:16,815
+Evet, 4 kişi kaldı dersin sonuna. Bilgisayarınızın başında değilsiniz. Neden?
+
+497
+02:07:23,444 --> 02:07:24,804
+Peki, hoşçakalın.

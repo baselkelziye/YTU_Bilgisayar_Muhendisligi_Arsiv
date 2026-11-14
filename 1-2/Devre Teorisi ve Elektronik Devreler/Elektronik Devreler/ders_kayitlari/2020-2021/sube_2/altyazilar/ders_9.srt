@@ -1,0 +1,1647 @@
+1
+00:04:56,819 --> 00:05:03,199
+Merhaba arkadaşlar. Sesim geliyor mu? Merhaba hocam. Evet, geliyor.
+
+2
+00:05:03,199 --> 00:05:22,120
+Tamam. Hepiniz sağlıklı, sıhhatli bir şekilde derse katılım yapıyorsunuzdur. Malum vakal sayıları çok artmaya başladı. Hepiniz dikkatli olalım. Çok fazla dışarıya çıkmamaya çalışalım. Hepinize inşallah sağlıklı günler diliyorum.
+
+3
+00:05:24,148 --> 00:05:29,248
+Evet, derse başlayabiliriz. Sarıldı, biraz bekledim ama saat kaç oldu?
+
+4
+00:05:37,139 --> 00:05:44,139
+Bir 5 dakika daha bekleyelim. Malum Cuma günü yemek yiyen arkadaşlar da olabilir.
+
+5
+00:05:44,139 --> 00:05:48,139
+Bir 5 dakika daha bekleyelim arkadaşlar. Çevrek geçe başlayalım.
+
+6
+00:06:02,420 --> 00:06:04,040
+Ben bir soru sorabilir miyim hocam?
+
+7
+00:06:05,139 --> 00:06:05,860
+Evet, tabii.
+
+8
+00:06:06,500 --> 00:06:08,400
+Bu lab saatleriyle ilgili.
+
+9
+00:06:08,939 --> 00:06:14,939
+Hani yılın başında bir mail gelmişti ama önceki labı saat 4-5 arası yapmıştık ya bizim grup.
+
+10
+00:06:15,460 --> 00:06:15,860
+Evet.
+
+11
+00:06:16,019 --> 00:06:18,580
+O tüm lablar için geçerli olacak mı 4-5 arası?
+
+12
+00:06:18,580 --> 00:06:20,519
+Öyle olması beklenir.
+
+13
+00:06:20,699 --> 00:06:26,580
+Ta ki eğer ki Uzem, yani bu online Yıldız Ede.tr'yi tasarlayan...
+
+14
+00:06:27,091 --> 00:06:44,531
+Kişiler eğer 4-5 arasına koymuşsa, yani şimdi baktığımda öyleydi en son ama işte sonraki maillerle vesaire kontrol edelim şimdi hatta. Bir bakayım ben. Orası 4-5-5-6 ise yani 2 saat 4-6 arasıydı.
+
+15
+00:06:44,551 --> 00:06:45,951
+Hatta 4-6 yazıyor direkt.
+
+16
+00:06:45,951 --> 00:06:52,951
+Tamam. Evet ben de şimdi gördüm. O zaman 4-6 olarak olacaktır yani. 4'te başlayacaktır.
+
+17
+00:06:53,651 --> 00:06:55,271
+Tamam, teşekkürler hocam.
+
+18
+00:06:55,791 --> 00:06:59,851
+Piyazda da onu güncellemedi mi arkadaşlar sanki?
+
+19
+00:07:00,851 --> 00:07:03,651
+Ya tam fark edemedim, bir baktım ama...
+
+20
+00:07:03,987 --> 00:07:12,207
+Gözüme mi çarpmadı artık veya güncellenenler tekrar mesaj olarak gelmiyor mu onu ben mi anlamadım? Piyazadan pek şey yapamadım, göremedim ama.
+
+21
+00:07:12,648 --> 00:07:17,827
+Lab sıfır saatlerinin güncellemesine ait bir duyuru konmuş. Dörde çekilmiştir denmiş.
+
+22
+00:07:18,228 --> 00:07:20,887
+O her hafta için olacak mı diye düşünüyorum.
+
+23
+00:07:20,887 --> 00:07:29,687
+Her hafta için olacaktır diye düşünüyorum. Çünkü önceki 5-6-6-7 arasındaki duyuru onları önce konmuş.
+
+24
+00:07:30,548 --> 00:07:54,608
+Her hafta için ayrı bir duyuru koymamışlar ama 4-5, yani 4-6 arasıdır. Çünkü ötek türlü 5-6'ya yetiştiremezsiniz. Belki yani, onu bilmiyorum ama 4-6 arasıdır diye düşünüyorum. Bugün dersten sonra hemen 4'te dilabın başlayacağını öngörüyorum ben.
+
+25
+00:07:56,747 --> 00:07:57,707
+Tamam, teşekkür ederim.
+
+26
+00:09:21,556 --> 00:09:34,376
+[öğrenci] burada mısın? Bir bakıyorum. [öğrenci] boyayacak. Şimdi aklıma geldi. Senin mailine cevap yazamadım ama buradan bilgi vereyim.
+
+27
+00:09:38,899 --> 00:09:41,644
+Evet, [öğrenci]'nin boyacıyı yok herhalde aramızda.
+
+28
+00:09:50,131 --> 00:09:50,491
+Sür.
+
+29
+00:10:19,379 --> 00:10:24,839
+Evet, başlayabilirdi bence artık. Yeterli bir şey. Bekledik, 60 kişi olmuş zaten.
+
+30
+00:10:28,639 --> 00:10:37,259
+Hocam, ben geçen haftaki bu kondansatör olanlarda nasıl şarjı olduğunu, hangi yönde şarjı olduğunu anlayamadım. O konudan tekrar edebilir misiniz?
+
+31
+00:10:37,259 --> 00:10:47,244
+Evet, biraz zaten tekrar edeceğim hepsini baştan. O clapper'lardan önceki clipper'lara da değineceğim. Bu hafta biraz daha hani...
+
+32
+00:10:47,347 --> 00:11:10,268
+Tekrar gibi olacak. Azıcık da transistöre giriş yapacağım sadece. Girişini, yine MPM, junction kısmını anlatacağım. Hesaplamalarına girmeden bitireceğim. Dersin akışı bu şekilde olacak. O yüzden yine aynı şekilde geçen haftaki analiz ettiğimiz gibi analiz edebiliriz. O sırada tekrardan değinmiş olacağız.
+
+33
+00:11:11,124 --> 00:11:35,244
+Diyotun zaten genel çalışma prensibini doğru polarma ve ters polarma olarak anlatmıştık. Doğru polarmada eğer ki ideal değilse bunu çok üzerinde vurguluyorum arkadaşlar. Çünkü biz şimdiye kadar yaptığımız bütün işlemlerde ideal diyotmuş gibi graf çizdik veya çizeceğiz. İşte bu Clipper ve Cramp'larda da idealmiş gibi düşüneceğiz.
+
+34
+00:11:35,700 --> 00:11:47,519
+Ama yani sorularda tabii ki illa ideal olması söz konusu değil. Misal burada silisyum CI yani buradaki işareti ideal ol...
+
+35
+00:12:12,851 --> 00:12:26,572
+Burada silisyum olduğu açıkça belirtildiği için biz bunun ideal değil de normal gerçek pratikte ne olduysa, silisyum materyali olduğundan dolayı buna göre değerlendireceğiz.
+
+36
+00:12:26,951 --> 00:12:28,851
+Ola ki sorularda böyle bir ibare yok.
+
+37
+00:12:29,235 --> 00:12:44,235
+Soru da ideal de demediyse, böyle bir ibare yoksa zaten ideal olarak algılayacağız. Soru da ideal deyip CIA'yı koymanın anlamı yok. Öyle bir şey olamaz zaten. Ama velev ki işte CIA'yı gördünüz ve ideal denmiyorsa kesinlikle...
+
+38
+00:12:44,511 --> 00:13:02,231
+Pratikte nasıl 0.7'lik veya materyale göre germanyum ise 0.3'lük bir ters olarak artısına eksi artı şeklinde bir içinde 0.7 voltluk derin kaynağı varmış gibi düşüneceğimiz bir diyot yapısı olacak.
+
+39
+00:13:04,019 --> 00:13:18,500
+Bunu göz önünde bulunduracağız. Bu yüzden hep üzerinde duruyorum. Çünkü ideal olmayan sorulardaki bu 07'yi kaçırırsanız grafınız farklı çıkacaktır. Bunu dikkatle önem gösterelim.
+
+40
+00:13:18,868 --> 00:13:44,248
+Şu kaydıyla bahsettik. Diyot eğer ki iletimde ise, yani diyotun artı polarması anota ve 0.7 voltun üstünde bir değerle veriliyor ise diyotun üzerindeki VD gerilimi, yani şuraya ben bir VD gerilimi voltmetre bağladığımda, paralel bağlanma voltmetre zaten,
+
+41
+00:13:45,524 --> 00:13:54,584
+Voltmetreyi bağladığımda şöyle, şu voltmetrede ölçeceğim değer benim silüsyumdan kaynaklı ters tarafa bağlanmış 0.7 volt ölçeceğim.
+
+42
+00:13:55,783 --> 00:14:07,183
+Eğer ola ki işte ters bir polarma verdiysen, zaten bu kesimde olacağı için E gerilimini neyse, bunun ucunda bu bir itme geçmeyeceği için,
+
+43
+00:14:12,303 --> 00:14:29,503
+Görmüş olacağım. Bu kaydeyi her zaman analiz ederken devrelerde, devrenin üzerindeki bu eğitimde olma durumu, voltmetre nasıl bağlandıysa, mesela direncin üzerine bağlansaydı o zaman farklı bir şey olacaktı.
+
+44
+00:14:29,503 --> 00:14:36,384
+Yani iletimde olduğunda VR'yi okuyabilecektik, kesimde olduğunda, mesela ben buraya bir voltmetre bağlasaydım.
+
+45
+00:14:37,875 --> 00:14:53,076
+dilancın üzerindeki VR gelinimi çizin deseydim. 0,7'nin üstünde olduğu her senaryoda VR oluşacaktı. Nasıl oluşacaktı VR? E'ye eşit olacaktı. Daha doğrusu E-0,7'ye eşit olacaktı.
+
+46
+00:14:58,676 --> 00:15:15,416
+Kesimde olduğu vakit, yani iletimde olmadığı vakitte, buradaki voltmetre ile ölçeceğim değer benim sıfır volt olacaktı. Değil mi? Buradaki gibi değil. Biraz farklı. O yüzden voltmetre sorularda nerenin değerini ölçtüğüne bakmak lazım.
+
+47
+00:15:15,792 --> 00:15:22,392
+Mesela diyotu paralel bağladığımızda biz, ileride devrelerden, mesela şunu direkt açalım.
+
+48
+00:15:22,392 --> 00:15:29,392
+Mesela burada biz direncin üzerindeki geylim üzerinden bir grafik çizerken, başka sorularda...
+
+49
+00:15:31,155 --> 00:15:36,915
+Bunları anlattığımız için tekrar tekrar değineceğim ama şimdi pratikte göstermek için.
+
+50
+00:15:37,235 --> 00:15:44,735
+Mesela burada direnzyon üzerindeki bir gerilimi ölçeceğimiz vakit diyotun iletimde olma durumunu göz önünde bulundururken,
+
+51
+00:15:44,735 --> 00:15:51,035
+öteki tarafta şurada diyotun kesimde olma durumunu göz önünde bulundurmamız gerekiyor.
+
+52
+00:15:51,495 --> 00:15:55,975
+Niye? Çünkü diyot kesimde olacak ki girişteki gerilim benim V0'dan ölçülebilsin.
+
+53
+00:15:57,491 --> 00:16:05,831
+Bu aradaki voltmetreyi nerenin değerini ölçtüğünü analiz etmek birinci önemli şey.
+
+54
+00:16:07,923 --> 00:16:14,443
+Sonra nelerden bahsettik geçen hafta? İki diyotu yayına bağladığımızda aslında bu iki tane eş diyot.
+
+55
+00:16:14,443 --> 00:16:24,083
+Bu pratikte pek mümkün olmasa da teoride ikisi de silisyum olan diyotu bağladığımızda akımların eşit olarak dağılacağını,
+
+56
+00:16:24,223 --> 00:16:32,943
+çünkü aslında ikisinin de aynı re iç direncine sahip ettikten dolayı aynı akımı çekeceğinden bahsetmiştik.
+
+57
+00:16:38,035 --> 00:16:38,923
+Tablet.
+
+58
+00:17:35,508 --> 00:17:37,388
+Gelelim de zaten burada...
+
+59
+00:17:48,084 --> 00:18:05,764
+D1 ve D2 üzerindeki gerinimde baktığımızda iletimdeyken zaten E-07 kadar silüsyundan dolayı kesimdeyken de zaten şuradaki E değeri bunlar açık devre olduğu için V0'dan direkt ölçüden değer olacak diyeceğiz değil mi?
+
+60
+00:18:05,764 --> 00:18:13,844
+Daha doğrusu E'yi öyle ölçmeyeceğiz tabii. Ne olacak? Bir de burada direnci ben görmedim. Bu direncinin üzerine Vresi kadar bırakacak.
+
+61
+00:18:14,644 --> 00:18:22,264
+Ben bu v0'dan ne ölçeceğim? Eğer bunlar kesimde ise e-vr kadar bir değer ölçüyor.
+
+62
+00:18:22,264 --> 00:18:23,264
+Bilmiyorum.
+
+63
+00:18:29,715 --> 00:18:51,495
+Şimdi yarı doğrultucu ve tam doğrultucu devrelerden bahsettik geçen hafta. Aradaki tek fark neydi? Yarı doğrultucular alternatif akım dediğimiz artı ve eksisi zamana bağlı değişkenlik gösteren sinyali, daha doğrusu akımının yönünün zamana bağlı olarak değişen sinyallerdi.
+
+64
+00:18:55,923 --> 00:19:15,763
+Yarı doğrultucular tek kanallı, yani tek işaret yönündeki akımı geçinen devrelerdi. İstersek bunun artı yönünü geçirtebilir, istersek eksi yönünü geçirtebilir. Bir tarafı tamamen baskılayabildiğimiz devrelerdi. Bunun için tek diyor ve R yapısı yeterliydi. Bunlardan bahsetmiştik.
+
+65
+00:19:25,587 --> 00:19:48,587
+Burada da mesela RT'yi geçilen ama negatif geldiğinde bu zaten kesime gittiği için geçinmeyen bir mimari var demiştik. Burada kaydemiş şudu, alternatif akım neticesinde doğrulttuğumuz sinyali bir DC bileşen içeren, yani işte bir DC devreye giriş olarak verdiğimizde ölçtüğümüz değer...
+
+66
+00:19:49,619 --> 00:20:09,599
+Alternatif akımdaki peak noktası dediğimiz Vm gerilinin, yani şuradaki peak noktasının 0.318 katı kadarını hisseden, yani hissedilen gerilim bizim için devrede besleyeceğimiz, bu sinyalle besleyeceğimiz devre için 0.318 Vm seviyesindeydi.
+
+67
+00:20:10,016 --> 00:20:27,776
+Bunun nedeni de zaten Average'ini aldığı için ve yarısının olmamasından dolayı, yani negatif kolarma kısmını sildiğimizden dolayı sadece 0.318'lik bir DC akım varmış gibi gerilim seviyesi 0.318GM seviyesinde örtülüyor.
+
+68
+00:20:30,900 --> 00:20:57,519
+Tam doğrultuculara bakmıştık. Buradaki en büyük avantaj bizim bir fazın yani sinyalin işaretinin akım yönünün tek yönü değil, çift yönü geçirmesi ama öteki akım yönünde yine birinci sekansla yani nasıl ayarladıysak biyot diagramımızı geçirdiği yönde geçirmesiyle mümkün. Yani geçirmesinin mümkünü kılan bir doğrultucu devrelerdi.
+
+69
+00:21:06,963 --> 00:21:26,463
+Bu devrelerdeki en büyük kazancımız bizim yarı doğrultucularda 0.318 peak point'in gerilimin değeri 10 volt ise mesela alternatifi bakımda 3.1 volt ölçerken full wave rectifier'larda bu 6.3 volt ölçmemizi yarıyor diye.
+
+70
+00:21:26,463 --> 00:21:33,284
+Çünkü ikinci sekans olan şu kısımda birinci sekansın üstüne binerek bir ortalama hesaplamasına sağladığından.
+
+71
+00:21:34,387 --> 00:21:37,467
+En çok kullanılan köprü tipi.
+
+72
+00:21:37,467 --> 00:21:44,907
+Çok enteresan. Bir saniye arkadaşlar. Şunu bir paylaşım da durdurayım. Bazen böyle yapıyor.
+
+73
+00:21:56,339 --> 00:22:10,339
+En çok kullanılan tam doğrultucu devreler, bugün de lab konumuzda preliminare stadiy olarak verilmiş zannedersem size, ön çalışması olarak yani, köprü tipi doğrultma devresi.
+
+74
+00:22:10,339 --> 00:22:22,000
+Köprü tipi doğrultma devresindeki en kritik nokta şu esasında, bir adet köprüde dengeyi sağlayan redirengi üzerindeki kolorizasyon yönünde,
+
+75
+00:22:22,483 --> 00:22:48,344
+Bizim bir Vm sinyalimiz oluşuyor. Yani şunu demek istiyorum. Biz eğer artı eksisini bu şekilde bir ayarladık. Yani bizim şu an voltmetrenin artısı bu tarafa, eksisi yani yenide veya komucu bu tarafa bağladığımda ben akımın yönü diyor artı sekansla geldiğinde böyle bir akım yönü oluşturduğu için, artıdan girdiği için ilk artıyı çizdirdim.
+
+76
+00:22:49,491 --> 00:23:10,951
+Negatif sekans geldiğinde de şu taraf veya tersten artından hareket eden artından eksiğe doğru gittiğini düşünürsek akımın şu taraftan geldiğini düşünelim. Yani artısı bu tarafta. Yine akımın artından girmesinden dolayı ben her seferinde pozitif, polar malı bir gelinim ölçüyorum.
+
+77
+00:23:13,299 --> 00:23:19,299
+Bu diyot konfigürasyonunda buraya artı ucu, buraya eksi ucu bağlasaydım nasıl bir kolarıma okurdum.
+
+78
+00:23:19,299 --> 00:23:28,299
+Yine artı böyle gelecekti ama bu sefer eksiden girdiği için benim voltmetremde gözüken değer tam tersi olacaktı.
+
+79
+00:23:28,299 --> 00:23:30,028
+Şu tarz bir...
+
+80
+00:23:30,067 --> 00:23:56,228
+Görüntü söz konusu olacaktı. Birinci, sinyali tersten okumak bu. Ama genelde böyle yapılmaz. Sırf negatifleri geçinmek istenen bir devre tasarlanmak istense genelde diyot diyarlamını tam tersine çevirebilirler. Çünkü bu sefer artısı burası olmayacak. Yine aynı mantı açıklıyor ama artısı burası olacak. Yani şunu demeye çalışıyorum. Bu diyotu şöyle.
+
+81
+00:23:57,587 --> 00:24:25,587
+Buradaki diyodu da bu hale getirdiğimde artı sekansı da bu sefer burası artı olacak. Ama ben yine elindeki problarla artısını buraya, komunu buraya bağladığım için yine benim nazarımda bu ters bir sinyal olmuş olacak. Yani iki tarz olabilir. Ya probların yerini değiştirirsiniz bilgisayarında ya da diyotların yeri değişir, problar sabit kalır. İkisi de bizim negatif sadece negatif.
+
+82
+00:24:25,587 --> 00:24:37,987
+Yani ters işaretin, eksi işaretin sinyalin gözü geçmesini sağlayıp bizim gerilimimizin negatif gerilim seviyesinde olmasını ölçmemiz sağlayan bir yaklaşım olacaktır.
+
+83
+00:24:38,548 --> 00:25:05,688
+Burada sıkıntı şuydu, her sekansda, her fazla, her fazla iki diyot üzerinden geçiyor. Böylelikle bizim girişteki ideal bunlar şu an, ideal olduğu için VM'nin 0.6'sı dedik direkt ama ideal olmasaydı eğer, şurada mesela, ideal olmayıp realistik olsaydı iki tane 0.7'nin üzerinden geçtiği için, bakın, oralarda kayıplar yaşayacaktık.
+
+84
+00:25:05,983 --> 00:25:17,384
+Bu Bridge Rectifier'ın dezavantajlarından biriydi. Çünkü bizim ola ki işte 2 voltluk bir pik veriyoruz alternatif akımında. 1.2 volt geçmesi lazım değil mi?
+
+85
+00:25:17,384 --> 00:25:31,983
+Bunun 1.4'ü şu hesaplamaya göre burada sünümlenecek. Öyle olunca ikinci diyot aktif olamayacak. Çünkü ikinci diyotta 0.7'den sonra 0.5'lik bir gerilim kalacak akım.
+
+86
+00:25:33,044 --> 00:25:59,704
+Bu seviyede bu eşitliği içemediği için ikinci pilot çalışmayacak ve aslında benim iki voltluk bir alternatif akım ile beslenen bridge köprü tipi doğrultma devren çalışmayacak. O yüzden iki voltluk yüksek seviyesi gereksiz bir seviye çalıştıramayacak bu devre.
+
+87
+00:26:00,339 --> 00:26:25,399
+Bunun gibi dezavantajlarından dolayı ikinci bir yaklaşımdan bahsettik. Transformatör dediğimiz, Türkçesi, Transformer devreyle geçen İngilizcesi, bir Rectifier çizgimiz var. Bu Transformatör devre dediğim amacı şu, kesinlikle iki katına çıkar mı genlik seviyesinde? Öyle bir yanlış iddaz mı oldu herhalde geçen hafta? Yani 2VM'yi yapmıyorum.
+
+88
+00:26:25,971 --> 00:26:42,132
+VMA'yi, yani şu fazı iki kanaldan vermeye yarıyor. Birinci kanal ve ikinci kanal diye tabir ettiğimiz sinyali replike ediyor diyebiliriz. Bu replikasyonda yönler aynı kalıyor. Hiçbir zaman yön değişmiyor.
+
+89
+00:26:46,624 --> 00:27:13,023
+Devreyi kendini tamamlarken, altta da aynı yöneğlerine dönmesi beklenen şu sinyal, burada kısa devre olduğu için dönemiyor. Açık devre olan bir devre tasarımında akım oluşmaz. Akım oluşmayacağı için de bu direncik polarizasyonu sadece yukarıdaki kısımdan gelen sinyal ile oluyor. Artı olacak şekilde.
+
+90
+00:27:14,228 --> 00:27:31,028
+Negatif sinyali geldiğinde ise bu sefer yukarısı kesimde aşağısı kesimde olduğu için aşağıdan yani şöyle bir sinyal gelmiş olacak. Aşağıdaki artı polarizasyon sağlanacak ve tekrardan ikinci fazı biz görmüş olacağız.
+
+91
+00:27:31,028 --> 00:27:38,847
+Burada da yine 0.6.6'lık bir ortalama ile VDS'i yani DC gerilim hakkında bir gerilim eklediyor.
+
+92
+00:27:39,488 --> 00:27:49,488
+Hocam bir şey sorabilir miyim? Burada oluşan DC gerilim 0.6 katı diyoruz ya, birebir oranında oluşturmak için ne yapabilirdik?
+
+93
+00:27:50,188 --> 00:28:03,567
+Aslında birebir oluşması mümkün değil. Çünkü DC gerilim bizim için neden önemli? Biz bir elektronik devrelerde, ufak devrelerde yani hep devri DC gerilimle besleriz.
+
+94
+00:28:04,115 --> 00:28:11,435
+Yani DC gerilim hattında akımın yönü değişmemesi kaydesiyle beslenir o devreye.
+
+95
+00:28:11,796 --> 00:28:39,136
+Şimdi bizim elimizde bir şebekede normalde işte prizlerde bu var. Yani bir AC gelinimiz var. Bunu DC moda getirebilmek için, yani bunu direkt ben devreye versem zaten devrenin algılayabileceği, tabii müşrik boyutlar da üzerine walk-out'undan yanacaktır ama eğer düşük seviyede olsaydı devrenin algılayınca bunun için sıfırdı. Çünkü devrenin DC bileşeninin yani ortalamasını alarak hesaba katması ters konusu.
+
+96
+00:28:39,796 --> 00:28:52,336
+Bunu bu yüzden biz sıfırdan yukarıya ne kadar çekebiliriz diye doğrultuyoruz. Şimdi yüzde yüze çekmem imkanı yok çünkü elimizde olmayan kısımlar var.
+
+97
+00:28:53,172 --> 00:29:12,471
+Olmayan kısımları %100'e çekmek mümkün değil ama şöyle bir devre yapılabilir. Tabii o da yoktan var etmek sadece Allah'a mahsustur. Onu var etmek anlamında değil, sadece kontrol mekanizmasında şöyle bir yaklaşım yapılabilir. Bununla bir transistör tetiplersin.
+
+98
+00:29:13,140 --> 00:29:24,240
+Yani işte buradaki DC bileşenle atıyorum 10 volt verdin 6 volt düştü. Bu 6 volt ile sen bir transüstörü, önümüzdeki hafta işleyeceğiz, transüstörü beslersin burayı.
+
+99
+00:29:24,788 --> 00:29:40,507
+Yukarıda da 10 volt almak istiyoruz. Buraya da 10 volt DC birleşimi verirsen, burası içinde 20 volt belki ne yapar bilmiyorum ama 10 volt karşılığını elde edebilmemiz için herhalde 15 gibi bir değer olması lazım.
+
+100
+00:29:42,031 --> 00:30:06,451
+Öyle bir değer vermen lazım. Oraya da ayrı bir devre eğsil gelin verirsin. Anca öyle birebir de bir buradaki akımı buradaki anahtarlamayla geçirip devreyi buradaki kolektör akımıyla beslersin. Ama tabii bu da aslında çok saçma bir yaklaşım. Çünkü zaten yani eğsil sinyalin varsa direkt ver. Yani niye anahtarlıyorsun?
+
+101
+00:30:06,996 --> 00:30:17,676
+Onun dışında %100 almak mümkün değil. Çünkü elimizde %100'lük, yani şöyle bir hatta gerilim mevcut değil. Şuralar yok çünkü.
+
+102
+00:30:19,115 --> 00:30:20,396
+Anladım hocam, teşekkür ederim.
+
+103
+00:30:22,996 --> 00:30:31,756
+Zaten şey, bu çok pahalıya satılan güç kaynakları var. Pahalı sahbiller diye geçiyor.
+
+104
+00:30:32,208 --> 00:30:55,788
+Hatta üzerinde %80, %90, %95. Buradaki sinyali ne kadar sıklaştırırsanız paz aralarını, o kadar ortalamayı yükseltebiliyorsunuz. Çünkü aralardaki kayıtlar azalıyor. Ama bunu yapmak için de çok yüksek frekansta sinyallerin üretilmesi lazım. O da biraz tehlikeli ve maliyetli bir iş.
+
+105
+00:30:57,172 --> 00:31:20,652
+Normalde bizim şebekler 50 Hz'dir. 50 Hz çok yüksek bir frekans değil. Ama işte 50 MHz düşünün. 50 MHz çok çok yüksek bir sinyal. Ama ona acayip gücü yönetebilecek bir parası hakkı lazım. Yani hiçbir zaman Vm'ye erişmez ama sinyalin frekansını arttırırsak Vm'ye doğru gider. Anlatabildim mi?
+
+106
+00:31:22,652 --> 00:31:24,192
+Evet hocam, teşekkür ederim.
+
+107
+00:31:26,195 --> 00:31:42,836
+Evet, sonra Clipper'lara bakmıştık. Clipper'larda amaç aslında doğrultma devreleri bir Clipper'dı. Yarı doğrultma devreleri bir Clipper'dı diyelim. Ama Clipper devreleri farklı farklı amaçlara da yönlendirebilir.
+
+108
+00:31:54,067 --> 00:32:18,067
+tutabileceğimiz veya öteki fazın üstüne ekleyebileceğimiz yapılar da memnun. Yani Clipper Devresi kapsamında incelemiştik. Bunun için işte bir besleme, Dias gerilimi dediğimiz bir gerilimle ilklendiriyorduk diyordu. Bu örnekten gidecek olursak, 0 volt verdiğimde zaten bu 5 voltla bu iletime geçirdiğimiz için diyordu.
+
+109
+00:32:18,259 --> 00:32:34,180
+Buradan R direnci üzerinde sıfır noktasında bir 5 volt okuyacaktık. Çünkü iletimde zaten. Ne zamanki işte 20 volt seviyelerinin çıktığında 20 artı 5'te 25 voltla bunu doğru polarıma ama ne zaman eksi 5?
+
+110
+00:32:34,644 --> 00:33:00,324
+Yani şuradaki nokta eksi beş gerilimlerine indiğimizde anca sıfırlanacak. Çünkü anca o zaman bunun kesime götürdüğünden bahsetmiştik. Yani Clipper devreleri, evet kırkıcı devreler ama tam doğrultucu devreler değil. Ama tam yarı doğrultucu devreler değil. Ama yarı doğrultucu devreler bir Clipper devresidir diyebiliriz. Bundan bahsetmiştik.
+
+111
+00:33:01,907 --> 00:33:18,907
+Bunda da herhalde çok problem yoktu. Paralel Clipper ile seri Clipper'lar arasındaki en büyük fark tekrardan belirtiyorum. Burayı çünkü sınavlar da karıştırıyorsunuz. Diyotun iletimde olduğunda benim ölçücünün değer...
+
+112
+00:33:19,344 --> 00:33:38,364
+Diyotun üzerindeki iç 0.7 voltun dışında bir de burada bir şey koymuşsa eğer, işte bir V gerilimi, onun değerini ölçüyoruz değil mi? Çünkü diyot iletimde. Ama diyot ne zaman kesime gitti? O zaman ben girişteki gerilimi ölçüyordum.
+
+113
+00:33:38,740 --> 00:33:49,059
+Bu aradaki farkı iyi analiz edelim. Buradaki örnekleri de seri yönteminden bir daha bakalım. Şu ikisine baktık zaten. Onları geçiyorum.
+
+114
+00:33:49,556 --> 00:34:17,556
+İklendirme noktasında bir bias gerilme verilirse her zaman bir T0 anında yani hiç gerilim vermeden bu diyol nasıl davranıyor bu güç kaynağıyla buna bir bakmamız lazım. Şu an misal T0 anında bu bir iletime geçiyor değil mi? Eksi eksisine verilmiş. İletime geçtiği için de benim şu an V0 üzerinde bir V gerilimim olacak ama negatif bir V gerilimim olacak. Çünkü benim polarizasyonum artı eksi şeklinde burada gösteriyor.
+
+115
+00:34:17,556 --> 00:34:42,380
+Ama ben buradan negatif bir sinyallerin bunu iletine söküyorum. O yüzden de eksi ve yani şuradaki artı eksi polarizasyonun benim bunun tam tersi. Normalde akım yani artı yönden aktığı vakit şöyle bir akım yönü olacak değil mi? Burayı artı yapması lazım. Burayı eksi yapması lazım ki ben doğru polarizasyonu okuyayım. Ama şu an...
+
+116
+00:34:42,452 --> 00:34:55,052
+Artı eksisi, şurada V0 yani voltmetrenin toklarını koyduğum direncin üzerindeki artı eksisi, akımın yönünün artı eksisinin tersi olduğu için eksi V değerinde bir gerilimi ölçtü.
+
+117
+00:34:56,352 --> 00:35:02,832
+Bunu devlet yavaşından hatırlıyorsunuzdur diye çok üzerinde durmuyorum ama bir kısaca girelim isterseniz.
+
+118
+00:35:03,572 --> 00:35:04,832
+Mesela buraya V1 dedim.
+
+119
+00:35:07,188 --> 00:35:31,788
+Buraya da V2 derim. Eğer ki V1 büyük V2 ise, yani V1 noktasındaki yerinin V2 noktasından büyükse akım oluşacak değil mi? Büyük yerden küçük yere. Bu yanına doğru akım oluştuğu vakit, V1'den V2'ye doğru benim direncin üzerindeki polarizasyonum artı eksi şeklinde oluyor. Değil mi?
+
+120
+00:35:32,403 --> 00:35:44,764
+Bu artı eksi şeklindeki polarizasyonu bu şekilde. Şimdi V2, V1 büyük olma durumunda ise benim akımım bu tarafa olması lazım ve polarizasyonun artı eksi olması lazım.
+
+121
+00:35:44,764 --> 00:35:51,144
+Şimdi biz ilk dedik ki artı eksi bu şekilde olacak. Yani bir kayda belirledik ve dedik.
+
+122
+00:35:51,456 --> 00:36:01,176
+Şöyle bir kaydemiz var. Akım eğer böyle akarsa, benim ekranımda yani voltmetre veya ölçü kaynağının ekranımda bu negatif bir yön olarak yazıyor.
+
+123
+00:36:02,976 --> 00:36:06,815
+O yüzden eksile seviyesinde bir ölçüm yapıyoruz dedi.
+
+124
+00:36:09,115 --> 00:36:15,256
+Sonra, tabii biz artı verdiğimiz için pozitif hazı analiz ediyoruz.
+
+125
+00:36:15,472 --> 00:36:27,292
+Pozitif fazla. Artı verdikçe yavaş yavaş bunu kesime götürecek. Bunun etkisi 5-4-3-2-5 volt olduğunu düşünelim. 5-4-3-2-1 diye birbirini sönümlendirerek gidecek.
+
+126
+00:36:27,472 --> 00:36:41,972
+Ta ki işte diyot kesime gidene kadar. Diyot sıfırda yani artı volarmaya geçti. 6 voltta, 7 voltta. Kesime gittiği için de ben herhangi bir şey okuyamayacağım. Çünkü ben direncim üzerindeki gerilimi okuyorum.
+
+127
+00:36:42,739 --> 00:37:09,039
+Ve burası açık devre kaldığı için de dirençten bir akım geçmedi. Ve akım geçmediği için de gerilim oluşmuş. O yüzden de 0 voltu okudum. Ta ki tekrardan işte 5 kronun yani artı 5 voltun altına düştüğünde 4'e 3'e 2'ye düştüğünde artık tekrardan bu eksi 5 olduğu için bunu iletime geçilecek ve ben tekrardan eksi değerlerde bir gerilim artımı okuyacağım demiştim.
+
+128
+00:37:11,092 --> 00:37:23,572
+Tam tersine bakalım. Yani doğru polarizasyon değil de ters polarizasyon verirse T0'a zaten kesimde hiç herhangi bir şey yok. Bütün pozitif saykılda zaten kesimde herhangi bir şey yok.
+
+129
+00:37:23,572 --> 00:37:36,771
+Ta ki negatif saykılda şuradaki değeri geçene kadar. Buradaki değeri geçtiğimiz anda artık bu iletime geçecek. İletime geçtiğimizde direncin üzerinde o geçtiği kısım kadar.
+
+130
+00:37:37,871 --> 00:37:43,112
+Tepe noktasındaki bölgeye kadar değerli okunuş olacaktır demiştim.
+
+131
+00:37:45,112 --> 00:37:49,251
+Buradaki V'leri arkadaşlar şey olarak algılayabilirsiniz. Yani misal,
+
+132
+00:37:52,492 --> 00:38:00,751
+eksi artı, şurası değil mi? Yani bunun iç yapısında aslında şu silistü, eğer 07.60 gibi analiz edebilirsiniz.
+
+133
+00:38:01,972 --> 00:38:20,412
+Değil mi? Yani onları nomine edebilir. Yani buradakiler biz hep ideal diyottan bahsediyoruz ama olakis orada biz ideal diyot demediysek ne yapacaksınız? Buradaki de 5 volt olduğunu verilsin. Bunun ucuna bir tane daha 0.7 volt varmış gibi daha devam edeceğiz.
+
+134
+00:38:21,412 --> 00:38:28,072
+Ters olarak yani anotunda pozitif, katotunda ne kadar?
+
+135
+00:38:29,523 --> 00:38:37,703
+Evet, anotunda negatif, katotunda pozitif olacakmış gibi ters bir bağlantı olmuş diye 07 volttan bahsediyoruz.
+
+136
+00:38:41,748 --> 00:39:07,788
+Bunları da aynı şekilde zaten hepsi birbirinin tersi analizler. Bunları da değinmiştik zaten. Geçen öteki seri değil paralel yapılara. Paralel yapılarda da önemli olan kaydayı tekrar buluyorum. Neydi? Eğer ki biyot iletimdeyse biyotun iç gerilimi veyahut da önüne arkasına bağlanan gerilim seviyesinde bir şey okunacak.
+
+137
+00:39:08,500 --> 00:39:29,779
+Ama diyot kesimde ise, iletime geçmediyse, girişteki gerilimi okumamız beklenir. Değil mi? Bunları anlattık, bunları hızlıca geçiyorum. Şu tarafa gelelim. Misal burada diyotumuz T0 anında. Nasıl bir yöneylemde? Kesimde. Yani burada bir şeyimiz yok değil mi?
+
+138
+00:39:30,835 --> 00:39:40,815
+Bir değer okuyamıyoruz. Diyot T0 anında zaten kesimde olduğu için 0 değeri okuyacağız V0'dan. Çünkü bunu iletime sokamıyor.
+
+139
+00:39:42,275 --> 00:39:57,815
+Diyota ben ufacık 0.7 voltu geçtiği anda veyahut da işte derse normal 0'ı geçtiği anda iletime soktuğunda ne okumam lazım? Bu iletimde olduğu için.
+
+140
+00:39:58,835 --> 00:40:25,795
+Bu V'yi geçene kadar, şuradaki V değerini geçene kadar zaten okuyacağım üzerinden geçen akımı. Yavaş yavaş artını okuyacağım. Çünkü daha aşağı inemiyor. Yani devre tamamlanamıyor. V sıfır üzerinden okuma yapabiliyorum. Çünkü burada birikiyor benim şuradan verdiğim artı. Buradaki de artı eksi ya ters bir kolarma var. Birbirine karşılıklı olarak bantılıyor. Yani orada bir rampa koyuyor.
+
+141
+00:40:26,579 --> 00:40:53,440
+Öyle olunca diyot iletime geçiyor. Evet. Ama diyotu tamamen iletime geçirebilecek seviye ancak V'yi geçtiği vakit. O zamana kadar ben girişteki artan gerilimimi, yani şuraya kadar mesela burası V olsun, şu kısmı zaten okuyacağım. V sıfırı dönemine. Çünkü attığı vakit, yani tamamen burası iletime geçtiği vakit ben V sıfırı sabitliyorum. Neye sabitliyorum? Diyotun iç gerilimine.
+
+142
+00:40:55,380 --> 00:41:14,579
+Ne zaman buradaki V'yi geçti, girişteki V'ye in geriliminin? Geçtikten sonra artık o an buradan aktığı için sadece ben şuradaki V gerilimini okuyabilirim. Yani burası artık kısa devre oldu. Sadece ben şöyle bir devre yapısından bahsediyorum.
+
+143
+00:41:18,516 --> 00:41:45,376
+Buradaki de B olan yeri. Bundan sonra benim arttırma seviyemin hiçbir önemi yok. Çünkü zaten diyot iletimde. Ta ki negatif polarmada yine bunun etkisiyle bu diyot kesime giderse, kesime gittiği anda tekrardan ben değerlerimi, yani şehirdeki değerimi, girişteki değerimi üzerine biriktirdiği için okuyorum.
+
+144
+00:41:46,996 --> 00:41:53,216
+Şu düşen değeri. Negatiflerde zaten kesin olduğu için bütün değerleri üstünde okuyorum.
+
+145
+00:41:56,775 --> 00:41:58,536
+Pozitif polarmasına bakalım.
+
+146
+00:41:59,516 --> 00:42:02,716
+Hocam burada Vm değeri V i değerin eşit mi oluyor?
+
+147
+00:42:03,936 --> 00:42:04,796
+Vm mi?
+
+148
+00:42:05,336 --> 00:42:06,596
+Eksi Vm var ya hocam.
+
+149
+00:42:08,036 --> 00:42:09,856
+Şuradaki eksi Vm değeri.
+
+150
+00:42:10,963 --> 00:42:15,043
+Vİ değeri girişteki alternatif akımın değerinde eşit mi oluyor?
+
+151
+00:42:15,963 --> 00:42:28,423
+Vİ dediğimiz zaten şuradaki işaretin aynısı. Bu işaret buraya veriliyor. En son Vİ'deki en tepe noktalar VMI artı VMI ile eksi VMI oluyor.
+
+152
+00:42:28,903 --> 00:42:30,264
+Tamamdır. Teşekkür ederim.
+
+153
+00:42:31,635 --> 00:42:55,632
+En nihayetinde de eksi Vm'ye kadar şey yapıyorum. Burada tekrardan söyleyeyim, bu bir Klepper devresi değil. Klepper devresi. Klepper olabilmesi için içerisinde o gerilimi biriktirecek bir devre elemanı lazım. Nedir bu devre elemanı? Kondansatördür. Eğer bir devrede kondansatör yoksa, burada gördüğümüz eksi Vm artı Vm...
+
+154
+00:42:55,632 --> 00:43:19,652
+Artacak seviyelere, onun üstüne çıkacak seviyeye çıkamaz. Kırpabilir. Vm'den aşağı, burada V'ye kadar gitmiş, üstüne gitmemiş. Eksi Vm'ye gitmiş ama daha üste gitmemiş. V1-V2 arasında kalmış. Clipper, ismi de belli zaten, kırpıyor. Clamper üstüne çıkartıyor.
+
+155
+00:43:20,563 --> 00:43:24,563
+Ama böyle de şey yapabiliriz. Kabunu da kurgulayabiliriz.
+
+156
+00:43:25,268 --> 00:43:48,288
+Eğer siz bir graf çizdiniz, kondansatör yok, bir şey yok ama bulduğunuz grafta eksi vm'den şöyle bir şey yazdınız. Eksi vm artı eksi v. Ne bileyim, eksi vm artı v gibi bir şey yazdınız. Ne bileyim. Bu tarz bir mentaliteyle şey yapamayız. Yani böyle bir clipper devresinde böyle bir yapı yok.
+
+157
+00:43:49,715 --> 00:44:11,555
+Negatife bakalım. Bir kere hiçbir şey vermediğimde zaten bunu iletime soktuğu için, değil mi? Burası eksi eksisine verilmiş. Burada sadece şu, yani bu kısa devre oluyor. Kısa devre olduğu için bu V'yi okuyacağım. Nasıl okuyacağım ama? Eksi artıya gitti ve artı ekside kaldığı için eksi V seviyesinde okuyorum.
+
+158
+00:44:12,395 --> 00:44:16,835
+Ta ki ne zaman? Bunu sönümlendiren V'in birinimine kadar.
+
+159
+00:44:17,184 --> 00:44:32,504
+Bunu sönemlendiren V'ye girilimi de aslında şuradan verdiğimiz eksi sinyal. Yani bu diyotun şuraya gelen akımın yönünün eksi olması lazım.
+
+160
+00:44:32,644 --> 00:44:36,884
+Ta ki şuradaki doğru polarizasyonu sağlayan eksi V'yi geçene kadar.
+
+161
+00:44:37,300 --> 00:44:49,720
+Geçtiği vakit diyot kesime gidecek. Diyot kesime gittiği için de şu noktalar arasında benim potansiyel farkım ve inin V'den yani eksi V'den daha az olduğu kısımlar olacak.
+
+162
+00:44:51,460 --> 00:44:53,300
+Yani şu tepe kısmı olacak.
+
+163
+00:44:56,420 --> 00:45:03,940
+Anlaşıldı mı? Herhalde. Burada çok problem yok. Genelde klemper devrelerinde bir problem yaşıyoruz.
+
+164
+00:45:07,123 --> 00:45:10,703
+Pozitifleri de bunun aynısı. Anlattığımızın aynısı zaten.
+
+165
+00:45:11,184 --> 00:45:37,524
+Şurada ikili diyot yapısı var. Burada da aslında pozitif ve negatif paralel alt üst kırpıcı devresi denir. Bu iki yaklaşımın birleşimi şeklinde amaç V1'i, yani birinci diyot diyelim, şuna da ikinci diyot diyelim. Birinci diyotu iletimde tutan gerilimin V1 ile limitlendirilmesi, ikinci diyotunu iletimde tutan gerilimin V2 ile limitlendirilmesi.
+
+166
+00:45:39,184 --> 00:45:43,684
+Aynı yukarıdaki analizlere göre yaptığımız bir bağlantı şeması.
+
+167
+00:45:46,684 --> 00:45:50,984
+Şimdi bir clipper'lar daha var. Bunlar da aynısı.
+
+168
+00:45:53,124 --> 00:45:57,524
+Bu sefer serinin önüne koymuşuz değil mi de onu işlememiştim.
+
+169
+00:46:01,104 --> 00:46:03,324
+Evet bunlar aynı arkadaşlar.
+
+170
+00:46:03,564 --> 00:46:06,124
+Slide tekrar olmuşlar mı dersen.
+
+171
+00:46:08,659 --> 00:46:10,099
+Evet, ailesi değil mi?
+
+172
+00:46:13,320 --> 00:46:14,940
+Evet, ailesi fark edin mi?
+
+173
+00:46:18,516 --> 00:46:33,556
+Evet, bir de klemperlarımız var. Klemperlarda arkadaşlar, esas amacımız şu. Bir enerji depolama birimi. Şu an kondansiyonu ötülanılmış. Neden? Çünkü gerilim seviyesinde bir enerji depolama birimi.
+
+174
+00:46:34,556 --> 00:46:37,315
+Şeyde hatırlarsınız, devlet öresinde.
+
+175
+00:46:37,744 --> 00:46:48,744
+Kondansatör ile bobinde iki şeyden bahsediyorduk. Kondansatör dediğimiz yapılar bizim gerilim boyutundaki yani gerilimlerin de kullanmasını sağlayan yapılardı.
+
+176
+00:46:49,224 --> 00:46:58,364
+Bobinler ise manyetik alanı oluşturarak akımı üzerinde tutan elemanlardı. O yüzden kondansatörde gerilim üzerinde birikecek diyeceğiz.
+
+177
+00:46:58,364 --> 00:47:03,984
+Burada şimdi artı eksi, şöyle kare sinyal geldiğini düşünelim.
+
+178
+00:47:06,579 --> 00:47:28,059
+Kare sinyalinin artı fazında ne olacak? Devre iletime geçecek. Yani şu diyot üzerinden devre kendini tamamlayacak. Şimdi kondansiyon çalışma planlisi şöyle. Devre eğer bir akım oluşuyorsa, ki şu an bir akım oluşuyor, bu akımın yönünün tersine şarj olur.
+
+179
+00:47:28,467 --> 00:47:42,407
+Yani artı olarak bu taraftan oluyorsa bunun artı eksi şeklinde şarjı var. Şu an artısı sol tarafta, eksisi şu tarafta olacak şekilde şarj oluyor.
+
+180
+00:47:42,719 --> 00:47:53,259
+Bu neden böyle? Çünkü bu bir kutuplu kondansatör ve uzun bacak dediğimiz veya burada yatay olarak çizilmiş ama uzun bacaktır. Bu o yüzden yatay çevirebilir.
+
+181
+00:47:53,259 --> 00:48:03,699
+Yani sembolü bu kondansatörün şunun da, burası artı burası eksidir misal. Başka şekillerde de gösterilebilirdi de bu şekilde gösterilmiş.
+
+182
+00:48:04,211 --> 00:48:26,672
+Artı bacağı, artı sekansı geldiğinde, fazla geldiğinde şarj olmaya başlar. Ne zaman artı bacağına negatif bir sinyal gelirse, zaten bu bir batarya misaliyle artı eksi şeklinde bir bataryaymış gibi davranır olacak. Çünkü eklenecek üstüne.
+
+183
+00:48:27,699 --> 00:48:54,440
+Kondansatörün şarjı ve deşarjı bu şekilde arkadaşlar. Art ucuna artı bir sinyal geldiğinde şarj olur. Eksi bir sinyal geldiğinde ise artı eksi artı eksi yani iki tane batarya ard arda takılmış gibi deşarj olur. Deşarj olmasından dolayı zaten iki tane batarya ilmiş gibi devreyi besler. Anlaşıldı mı kondansatörün bu kısma?
+
+184
+00:48:55,572 --> 00:49:04,552
+Şimdi burada şarj olacak artı sekansında tam ters polarizasyona. Ne zamanki eksi işaret geldi?
+
+185
+00:49:07,552 --> 00:49:09,912
+Artı bu taraftan gelecek ya.
+
+186
+00:49:10,516 --> 00:49:34,096
+Eksi işaret geldi. Artık, yani şurası eksi, burası artı. Burada bir V gerilimim var. Artı eksi. Burada da bir V'ye şark olmuştu. Artı eksi. 2V ile bu kondansörte deşark olacak. Ama bu kesime gittiği için, biletimde kalmadığı için nasıl deşark olacak? Böyle geçemeyecek tabii buradan.
+
+187
+00:49:36,340 --> 00:49:55,240
+Şöyle geçecek. Değil mi? Böyle geçecek ama bunun işaretin yolu, yani gördüğünüz gibi benim okuduğum değerin, yani polarizasyon sağladığım artı eksinin tam tersinde. Normalde akım şöyle bir polarizasyon sağlaması lazım.
+
+188
+00:49:55,240 --> 00:50:00,000
+Ama ters bir okuma yapacağım için negatif.
+
+189
+00:50:00,000 --> 00:50:08,280
+Bu klem yapmış olacak. Anlaşıldı mı?
+
+190
+00:50:09,420 --> 00:50:14,380
+Hocam, burada diyotun üstündeki gerilim de aynı değil mi? Eğer ölçersek.
+
+191
+00:50:15,260 --> 00:50:16,380
+Diyot ama şu an...
+
+192
+00:50:16,380 --> 00:50:17,720
+Direnç olmasaydı.
+
+193
+00:50:18,840 --> 00:50:20,880
+Ama diyot kesimde, iletimde değil ki.
+
+194
+00:50:22,420 --> 00:50:27,039
+Yani burası açık devre, şu noktaları mı ölçseydik diyorsun?
+
+195
+00:50:27,260 --> 00:50:28,800
+Evet.
+
+196
+00:50:31,580 --> 00:50:35,820
+Hocam, 2V mi olur yoksa V mi olur? O diyotların üstünde ölçsek.
+
+197
+00:50:36,580 --> 00:50:38,300
+Duyamıyorum, ses az geldi.
+
+198
+00:50:40,140 --> 00:50:46,360
+Kondansatörün gerilimiyle beraber yani 2V mi olacak o diyotları da ölçtüğümüz zaman yoksa sadece V mi olacak?
+
+199
+00:50:46,500 --> 00:50:47,280
+2V olacak.
+
+200
+00:50:47,980 --> 00:50:48,580
+Tamam hocam.
+
+201
+00:50:55,507 --> 00:51:17,047
+Tamam mıyız? Başka soru varsa? Şimdi tabii hep diyorum işler bu kadar basit değil. Çok karışık güzel devrelerimiz var. Ve bunları ben geçen hafta özellikle ödev vermiyorum dedim ama lütfen bütün diagramları farklı farklı versiyonlarla, işte kafanızda ya şuraya bir 5 volt koysam ne olur?
+
+202
+00:51:17,047 --> 00:51:22,547
+İşte şuraya bir örnek verelim. Ben derim ki buraya 1-2 volt koysak ne olur?
+
+203
+00:51:23,219 --> 00:51:37,039
+Bunları hep kafamızda böyle kurgulayıp devrede, yani P-SPAJ'ta veya işte multisimde veya işte herhangi bir simülasyon ortamında bunları deneyelim arkadaşlar lütfen.
+
+204
+00:51:37,659 --> 00:51:46,900
+Çünkü ya ödev veririz, yani ödev vermekte bir sıkıntı yok ama ya bunları siz denemezsiniz kendiniz bireysel.
+
+205
+00:51:46,900 --> 00:51:50,400
+Ki biliyorum hani denemeyecek adam yine ödevde de denemeyecek.
+
+206
+00:51:50,751 --> 00:52:10,771
+Yani çok çok iddileyemiyorsunuz. Burada ne kadar anlatsak da, farklı farklı ne kadar çok örnek koysak da bir şekilde denemedikten sonra, kendimiz o şeyi tecrübe etmedikten sonra oturmuyor tam. O yüzden deneyelim bunları.
+
+207
+00:52:10,771 --> 00:52:16,911
+Mesela burada bir 10 volt koymuşum.
+
+208
+00:52:18,739 --> 00:52:35,679
+Bu 10 volt koyduğumuzda yine aynı şekilde. Şimdi kondansatörün dezavantajı şu. Biz bu sinyali sonsuzdan başlatıyoruz normalde değil mi? Böyle sonsuzdan başlayıp bir sinyal var.
+
+209
+00:52:35,679 --> 00:52:42,000
+Ve biz bu kondansatörün içerisinde ilk etapta sıfır sekansını analiz etmiyoruz bu graflarda.
+
+210
+00:52:42,324 --> 00:52:58,084
+Yani kondansiyonun içi boş kendini yok burada. Çünkü bu sonsuzdan geldi ve biz bir zaman kırttık, yani buradan kestik. Ne görüyoruz altlıkta onu çizdirdik. Öyle bir sene. Öyle olunca kondansiyonun içinde zaten bir şeyler vardı nazarıyla bakıyoruz.
+
+211
+00:52:58,771 --> 00:53:25,771
+Bu nedenle de T0 anını kondansörlü yapılarda analiz etmek çok mantıklı değil. Mesela T0 anında ben şunu diyebilirdim. Baktım buna, artı, eksi, şurası, eksi, burası, artı. Bu kesimde olduğu için, yani diyot iletimde tutmuyor, kesimde olduğu için ben V0'dan, gerçi şu an aynı anlam çıkıyor ama artı 10 volt değil, eksi volt 10 volt ölçebilirdim diyebilirdim.
+
+212
+00:53:26,771 --> 00:53:44,132
+Çünkü burası kesimde gerekiyor diyemezdik de. Yani kondansatörün neye şarkı olduğunu önceden bir hesaplamak lazım. O yüzden çizmeden önce ben her zaman diyorum ki burada artı eksili bir başlayalım.
+
+213
+00:53:44,467 --> 00:54:11,707
+Artı sekansda bu kondensör kesimde zaten. Buradan bir şey atmayacak. Bu da buna iletime getirmiyor zaten. O yüzden ben V0'ı direkt artı sekansda şöyle bir şey okuyacağım değil mi? Direkt buna benzeyen bir şekilde. Çünkü kondensörde şark oluyor bu eğrimde. Dediğim gibi bakın daha ben hala şu V0'ın ilk sekansını yani T0 anını çizdirmiyorum.
+
+214
+00:54:12,467 --> 00:54:26,407
+Sonraki T0 anını çizdireceğim. Çünkü kondosyonu niye şarj olduğunu bir bilmem lazım çizdirebilmek için. İşte B yine şarj oldu. 20 volta yani. Sonra negatif geldiğinde.
+
+215
+00:54:27,059 --> 00:54:54,480
+Ne yapmamız lazım? Buradaki ile beraber, 20 volt ile beraber yansıtacağız. Ama ilk negatif geldiğinde bu iletime geçecek. Ama burada da bir negatiflik var. Ta ki 10 volta kadar bu iletim tam olarak geçilemeyecek. Değil mi? Öyle olunca aslında bu kondansatör 10 volta şarjı olmuş olacak. Çünkü kondansatör anca iletimde olunan değere şarj olacak.
+
+216
+00:54:55,123 --> 00:55:06,723
+10 Volta şarj olduğunda benim kondansatör bu iletime geçtiğinde, yani şuradaki diyot iletime geçtiğinde V0'dan ölçeceğim gerilim 30 Volta olacak.
+
+217
+00:55:06,723 --> 00:55:16,723
+Kesime gittiğinde de eksi 10 Volta olması beklenir. Çünkü artık yani şuradaki eksi değerle bu diyot kesim...
+
+218
+00:55:16,911 --> 00:55:24,112
+Artı değerli kesime gittiğinde sadece eksi 10 voltu buradan görmem lazım. O da kondansatöre şarj olduğu için.
+
+219
+00:55:25,112 --> 00:55:30,471
+Bu kesime gittiğinde eksi 10 voltu ben kondansatör üzerinden görüyorum.
+
+220
+00:55:32,911 --> 00:55:33,612
+Tamam mıyız?
+
+221
+00:55:35,951 --> 00:55:43,072
+Kondansatör tarzı analizlerde ilk bu kondansatör neye şarj oluyor onu bir çıkartmak lazım.
+
+222
+00:55:44,692 --> 00:56:04,751
+Burada 20-10'dan o zaman iletime geçtiğinden 10 volta şarj oluyor. 10 volta şarj olduğu için de bu diyot iletime 20-10'dan 30 volta doğru polarizasyonda, R direnci üzerinden. Ters polarizasyonda ise 10 volta kormansatörden dolayı B0'dan okuyoruz diyeceğiz.
+
+223
+00:56:08,211 --> 00:56:17,931
+Tabii bunun da gene farklı versiyonları mevcut demiştik. Zaten şunu demin çözdük.
+
+224
+00:56:17,931 --> 00:56:35,452
+Yok. Şunu demin çözdük. Farklı farklı yaklaşımlarımız mevcut. Misal şunu analiz edelim. Artı bir gerilim geldiğinde bunu iletime geçireceği için
+
+225
+00:56:35,824 --> 00:56:46,304
+Ama ta ki ne zamana kadar? V1'i geçene kadar iletime geçmeyecek ve ben V0'dan o V1'i geçeseye kadar V iğnemi göreceğim.
+
+226
+00:56:47,103 --> 00:56:55,784
+Ta ki V1'i geçeceğim, yani buradaki eşit yerini geçtikten sonra bu tamamen artık iletime geçecek.
+
+227
+00:56:56,264 --> 00:56:58,923
+İletime geçtiği vakit kondansatörüm şarj olacak.
+
+228
+00:56:59,891 --> 00:57:13,311
+Kondansatör şarj olduktan sonra da bunu kesime götürdüğümüz negatif saykılda kondansatör R direnç üzerinden boşalacak ve bizim 2V'lik gelinim gözükecek negatif saykılda.
+
+229
+00:57:13,512 --> 00:57:14,711
+Hocam bir şey sorabilir miyim?
+
+230
+00:57:15,032 --> 00:57:15,311
+Evet.
+
+231
+00:57:15,532 --> 00:57:19,951
+Burada bizim diyotumuz kesimdeyken direnç üzerinden akım akmıyor mu?
+
+232
+00:57:21,331 --> 00:57:22,652
+Bu kesimdeyken mi?
+
+233
+00:57:22,851 --> 00:57:23,112
+Evet.
+
+234
+00:57:23,699 --> 00:57:28,759
+Evet, zaten o zaman dirençlerindeki akım aktığından dolayı V0'ı ölçüyoruz.
+
+235
+00:57:28,779 --> 00:57:31,019
+O sırada kondansatör şarj olmuyor mu?
+
+236
+00:57:32,519 --> 00:57:32,960
+Evet.
+
+237
+00:57:34,779 --> 00:57:40,119
+Yani orayı kafam karıştı da, hani dediniz ya, diyotun akım attığı zaman kondansatör şarj oluyor sonra.
+
+238
+00:57:40,119 --> 00:57:43,799
+Hayır, hayır. Akım attığı vakit kondansatör şarj oluyor dedim.
+
+239
+00:57:44,500 --> 00:57:51,051
+Yani şöyle, misal, positive cycle'da geldi, şu an artı...
+
+240
+00:57:51,059 --> 00:58:08,059
+Eksi ya bu. Bu direkt zaten direnç üzerinden aktığı vakit şarj olmaya başladı. Bu da, şuradaki V1'i geçtiği vakit de şarj, yani geçtiği, bunu akıma geçirdiği vakit de zaten kondansatör şarj olmaya devam ediyor. Yani V'ye şarj oluyor kondansatör şu an.
+
+241
+00:58:09,460 --> 00:58:10,280
+Tamamdır hocam.
+
+242
+00:58:10,800 --> 00:58:17,500
+Hocam, akım durmayacak mı o kondansatör diyotun üstünden geçmeyi ve V1'i açmayı başardığı zaman?
+
+243
+00:58:18,452 --> 00:58:28,331
+V1'i geçtikten sonra diyot buradan geçecek. Ne durmayacak mı dedin? Akım mı?
+
+244
+00:58:28,612 --> 00:58:36,251
+Akım evet. Şey olacağı için. Gerilim farkı olmayacağı için. Orası şey gibi görüyor ya. Kısa devre gibi.
+
+245
+00:58:37,251 --> 00:58:42,871
+Tamam. Burası kısa devre. Ben burada 10 volt veriyorum misal. Burası 5 volt.
+
+246
+00:58:43,891 --> 00:58:47,391
+Şu an 5 volt buradan bu geçmez mi?
+
+247
+00:58:48,391 --> 00:58:51,491
+Evet, diğer 5 volt da şu en üstünde kalıyor.
+
+248
+00:58:51,491 --> 00:58:53,391
+Evet, 5 volt da burada kalacak.
+
+249
+00:58:53,391 --> 00:58:54,391
+Tamamdır hocam.
+
+250
+00:58:56,291 --> 00:59:03,192
+Ters polarizasyonunda bu 5'i de şu eksi 10 volta takıp, R direnç üzerinden geçeceğiz.
+
+251
+00:59:08,980 --> 00:59:27,739
+Şu tarafa bakalım. Şunu analiz edelim isterseniz. Bakın, artı eksi geldiği vakit diyot kesimde. Diyot kesimde olduğu için de kondansör R direnci üzerinden gene şarj olacak. Artı geldiği için V'ine şarj oldu. Pozitife yani. Artı V'ye.
+
+252
+00:59:33,492 --> 00:59:52,472
+Şu saykıldan, yani şunun bir ön saykılında ilk T0 anında bu gördüğümüz değer aslında bizim ilk etapta V, yani şuradaki V gelinme. Ama şarj olduktan sonra negatif polarma geldiğinde bunu V1'i geçişiye kadar iletime sokamayacak.
+
+253
+01:00:00,148 --> 01:00:15,907
+Zaten bu iletime geçecek ve iletime geçtiği için de biz negatif balarmada sadece V'ini okuyacağız. Çünkü bu iletime geçmiş olacak. Ve iletime geçtiğinden şuradaki V0 benim için V1 olacak sadece.
+
+254
+01:00:17,688 --> 01:00:27,108
+Öteki tarafta kesime gittiğinde de zaten kondansatör artı V'inle beraber benim çıkışımdaki 2V'ye kadar bir klip.
+
+255
+01:00:27,476 --> 01:00:29,416
+Klamper Devresi yaptırıyor.
+
+256
+01:00:36,724 --> 01:00:56,944
+Başka şu son ekşinimde bu kadarmış. Dediğimiz gibi arkadaşlar çok fazla versiyon üretilebilir. Lütfen bunları deneyelim. Dediğim gibi ödev veririm ama siz yine yapmadıktan sonra bir anlamı yok. Kendiniz bunları lütfen kurun.
+
+257
+01:00:57,460 --> 01:01:07,700
+Sonuçlarına bakın. Hatta işte V1'i sınır eşit gerilimi yaparsam ne olur? Bunları analiz edin. Farklı farklı. Çok varyasyon çıkacaktır.
+
+258
+01:01:11,200 --> 01:01:21,540
+Zener diyotlardan bahsetmiştik. Herhalde geçen hafta buraya gelmedik. Önceki sunumda kalmıştık. Zener diyotlardan ilk bahsettiğimizde özelliği şuydu.
+
+259
+01:01:22,291 --> 01:01:38,371
+Normal diyor ters yönde akım geldiğinde yani anota artı katota eksi değil de anota eksi katota artı geldiği vakit hiçbir şekilde tabii teoride akım geçirmiyor ve sonsuz direnç gösterdiğinden dolayı
+
+260
+01:01:38,672 --> 01:01:53,532
+Açık devre dediğimiz Open Circuit özelliği gösteriyor. Zenerin özelliği ise şu. Zenerin üzerinde yazan bir zener voltaj dediğimiz bir voltaj seviyesi vardır.
+
+261
+01:01:53,771 --> 01:02:04,532
+Ters polarizasyonda da bu voltaj seviyesini geçtiğimizde bizim zener biyotumuz iletime geçerek kısa devre gibi. Yani normal biyotun...
+
+262
+01:02:04,559 --> 01:02:26,719
+Forward BIAS özelliğinde iletime geçilir devre. Bunu göstermek istediğimizde aslında içerisinde 0, silüksyonda nasıl 0,7'yi böyle gösteriyorduk. Yani katod, anod, değil mi? Katod, anod.
+
+263
+01:02:27,315 --> 01:02:47,675
+Tam içerisinde ters olan artı ve eksili bir VZ bataryası varmış gibi düşünebiliriz. Ne zaman şuradan verdiğim negatif veya şuradan verdiğim pozitif sinyal V gerilimi VZ'den büyükse bu iletime geçecek.
+
+264
+01:02:54,132 --> 01:02:59,712
+Yine aynı normal diyotta olduğu gibi kesimde kalacak dediğimiz bir özel diyot.
+
+265
+01:03:01,772 --> 01:03:16,732
+Zener diyota ait işte VI dediğimiz şuradaki giriş gerilimi, Zener'in geriliminden büyük olduğunda, şöyle bir akım oluştuğunda, Zener'in şuradaki iç geriliminden büyük olduğunda IZ oluşacak.
+
+266
+01:03:17,235 --> 01:03:39,276
+Bu IZ neye eşit olacak? Normal bildiğimiz not analizinde yaptığımız gibi IRE eksi, yani IRE buradan gelecek, IRE de şuradan geldiğini düşünelim. Hani burada da bir devre tasarımı olsun. Oradan da bir akım gelecek sonuçta. IZ, yani zelerin üzerinden geçen akımı bulacağımız vakit IRE eksi IRE diyeceğiz.
+
+267
+01:03:39,923 --> 01:03:52,123
+Bunu hesaplamamız gerekecek. Zener'in üzerindeki gücü hesaplayacağımız vakit ise Zener çarpı yani Zener'in üzerindeki voltaj çarpı IZ akımı diyeceğiz.
+
+268
+01:03:53,703 --> 01:03:59,063
+Şimdi mesela Zener, VZener 50 volt. Biz girişte 70 volt veriyoruz.
+
+269
+01:03:59,860 --> 01:04:12,820
+Hiçbir zaman 70 çarpı ızı yapmayacağız. Her zaman zenerin üzerinde biriken güç, zener voltajı çarpı geçen akım üzerinden hesaplanır. Bunu karıştırmayalım.
+
+270
+01:04:14,387 --> 01:04:35,127
+Zener'in üzerindeki gerilimde zaten 50 voltluk bir gerilim oluşacak. Çünkü o iletime geçince, biz her zaman diyoruz ya, diyot iletime geçince iç gerilimini yansıtı. Mesela silüsünde 0.7 yansıtı dedi. Zener'de de aynı mantık. Eğer ki tersten iletime geçerse, yanlış şey mi geçeceğim?
+
+271
+01:04:35,795 --> 01:05:02,396
+İletime geçtiği vakit, zenerin üzerindeki 50 voltu biz göreceğiz. Zenerin üzerindeki VZ gelimi olarak. Eğer ki giriş gelimimiz zaten VZ'den ufaksa, zenerimiz açık devre olacak ve tek bir akımımız var bizim için. Şöyle giden bir akım, devre ana kol akımımız olacak. Burası zaten işlemek daha bir tutunmayacak diyeceğiz.
+
+272
+01:05:04,596 --> 01:05:13,255
+Anlaşıldı mı? Size nerede önemli bir konu arkadaşlar? Ben böyle önemli olan yerlerde belirtiyorum. Dikkati alın lütfen.
+
+273
+01:05:19,603 --> 01:05:29,683
+Ziner'le alakalı. Zaten bunlar normalde devlet teorisinden öğrendiğimiz bazı formüller. Misal örnek verelim.
+
+274
+01:05:30,643 --> 01:05:33,784
+Eğer ki ı-le-mil dediğimiz neymiş bir dakika.
+
+275
+01:05:42,291 --> 01:06:03,103
+Yani eğer ben şöyle bir yapı sorsaydım, böyle bir örnek yapsaydım. RL direnci üzerinde minimum gerilim kalsın. Veyahut da RL direnci üzerinden geçen akımı minimize edelim. O zaman ne yapacağız? IR'yi oynatmamız veya IZ'yi oynatmamız gerekecek. Zaten biz de demiştik ki...
+
+276
+01:06:03,103 --> 01:06:24,523
+Şuradaki ı r artı ı r'nin ı z'ye eşit olma kaydesi var. Ondan biz ı r'yi çekip o ayarlamayı yapabiliriz. Başka yük direncini öyle bir ayarlayın ki, yine hepsi aynı soru aslında bunlar. Yük direncini öyle bir ayarlayın ki zenerin üzerinden geçen ı z akımı minimum olsun.
+
+277
+01:06:24,947 --> 01:06:41,327
+Yani veyahut da zeneri aktive eden ıze gerilim minimum kalsın. Şimdi biz burada 70 volt veriyoruz. Buraya öyle bir reyle ayarlamam lazım ki benim buraya 50 volt kalsın sadece. Ki zeneri iletime geçirsin ıze de minimum olsun.
+
+278
+01:06:42,643 --> 01:07:01,744
+Gibi farklı sorular üretilebilir. Derin bir zener önemli, güzel bir konu. Burada genelde kaydelerimiz belli. Misal RL direncini hesaplamak istediğimizde neye göre yapmamız gerektiğini, bunların ikisi paralel olduğundan VZ'ye gerekli olan 50 volt, buraya da gerekli olacak.
+
+279
+01:07:01,744 --> 01:07:10,543
+50 volt bölü ÖD'den akan akımı hesaplarsam, yani ÖD'yi minimize ederek hesaplarsam, RL'yi maksimize etmiş olacağım.
+
+280
+01:07:10,643 --> 01:07:26,684
+Veya tam tersi yapacağım gibi bir mantıkla farklı farklı yaklaşımlarda sorular çözebilir. Bunlar bildiğimiz zaten akımın dağılımı, mod analizi ve gerilimlerin paralel kollardaki eşitliği kaydesine dayalı.
+
+281
+01:07:31,188 --> 01:07:38,907
+Evet, burada da işte RL'yi minimum yapanı bulmak için de işte nasıl bir yaklaşım yapabiliriz?
+
+282
+01:07:38,907 --> 01:07:49,228
+Şöyle aslında zeneler arasındaki, neyse o da aynı şey zaten, ana koldaki eşdeğer divenci çarpma sorusu.
+
+283
+01:07:51,748 --> 01:07:54,068
+Var mı arkadaşlar burada soru?
+
+284
+01:08:03,315 --> 01:08:28,675
+Şimdi farklı farklı gerilimleri katlayan devreler söz konusu diyotlarla yapılır. Aslında diyot kondansatör kombinasyonu, kleper dediğimiz kombinasyon yani, pek çok farklı devre tasarımlarında gerilimi katlamak için kullanılan bir yapı. Bunlar işte ikiye katlayan, üçe katlayan ve dörde katlayan gerilim katlayıcılar söz konusu.
+
+285
+01:08:30,800 --> 01:08:38,600
+Bu normalde bir yarı doğrultucu devre ama katlayarak yarı doğrultuyor. Nasıl katlıyor? Null grafı vardı herhalde.
+
+286
+01:08:39,480 --> 01:08:39,800
+Bir dakika.
+
+287
+01:08:41,319 --> 01:08:41,880
+Aynı.
+
+288
+01:08:43,520 --> 01:08:50,239
+Misal ilk başta artı, eksi, sekans geldi. Dediğimiz gibi kondansör, yani şuradan tabii ki iletime geçti.
+
+289
+01:08:50,319 --> 01:08:56,300
+Çünkü burası eksi olduğundan, burası kesime geçti. Burası iletime geçtiği için kondansör şart oldu.
+
+290
+01:08:57,332 --> 01:09:18,272
+Kondansatör neye şarj oldu? İlk etapta ki Vm'ye şarj oldu. İkinci eksi artı sekansla, yani artı bu taraftan gelecek. Buradaki kondansatör bu sefer neye şarj olacak? İki Vm'ye şarj olacak. Çünkü burası şöyle bir Vm artı Vm yapısı oluşturur. Değil mi?
+
+291
+01:09:18,771 --> 01:09:41,031
+2VM'yi şuradaki kondansütör şarj oluyor bu sefer ve buradan iletim oluyor. Yani normalde diyot devreyi tamamlıyor. Bu 2VM'ye şarj olduğu için de zaten ölçeceğim değer, tabii eksi artı şeklinde buradaki değer kondansütör üzerindeki 2VM şarj olmuş değer olacak.
+
+292
+01:09:42,003 --> 01:09:49,744
+Böylelikle ben iki VMA yapmış olacağım ve ayrıca doğu okuducu bir devre olmuş olacak.
+
+293
+01:09:55,507 --> 01:10:22,467
+Bunlar da triple ve quadroplular dediğimiz devreler, yani 3 katı ve 4 katına çıkaranlar. Mantık aynı. Artı geldiğinde birinci VM buraya şarj oldu. Eksi sekans da şöyle akacağı için 2 VM buraya şarj oldu. Sonra tekrardan artı sekans geldiğinde, çünkü şu var, şimdi niye akım buradan aşağı indi düz de gidebilir diyebilirsiniz.
+
+294
+01:10:22,975 --> 01:10:40,036
+Akım her zaman kolay. Yani bilenci az yoldan ilerler. Öyle olduğu için de teoride, tabii pratikte bu kadar net arttırmayacaktır. Ama teoride burası kısa devre olduğu için devre kendini tamamlayacak ilk sekansla.
+
+295
+01:10:40,435 --> 01:10:50,675
+İkinci sekansda 2VM'lik hatta, buradaki kondansör 2VM'lik moda şarj olacak.
+
+296
+01:10:53,235 --> 01:10:56,675
+Şuradan akacak, burası zaten negatif olduğundan gitmeyecek.
+
+297
+01:10:56,675 --> 01:11:02,675
+Burası zaten şu an ben 3 katına çıkartmış oldum. Niye? Çünkü şurada...
+
+298
+01:11:02,868 --> 01:11:15,728
+Şurası arası, yani 2VM burada, VM de burada. 3VM'lik bir gelinim elde etmiş olduk. Son sekansla da artık şurada 2VM, burada da 2VM olduğu için şu...
+
+299
+01:11:16,304 --> 01:11:36,984
+Hat boyunca yani şu noktalar arasında 4VM'lik bir gerilim arttırımına sağlamış olduk. Yani aslında Clamper devrelerinde kullanılan kondansörlerinin arda arda kullanılması. Clamper devrelerini arda arda kullanmakla mümkün. Diyotlarda da iletim kesim, iletim kesim şeklinde bir dizayn yapılması gerekiyor.
+
+300
+01:11:41,363 --> 01:11:42,583
+Burada soru var mı?
+
+301
+01:11:46,260 --> 01:11:58,040
+Evet, şimdi diyotların kullanımıyla alakalı yerleri incelemeye çalıştık. Bu rectifier circuit'lar, yani doğrultucu devreler pek çok AC-DC devrelerinde kullanılıyor.
+
+302
+01:11:58,040 --> 01:12:09,420
+İşte batarya şarjlama cihaz devrelerinde, işte bu adaptörler var ya, telefonları taktığımız vesaire, bunlarda da normalde içerisinde AC-DC konutu mevcut.
+
+303
+01:12:12,851 --> 01:12:33,231
+Bazı şeyleri, devreleri yüksek akımlara, alternatif akımdaki negatif akımlara karşı korumak için de biyoti akım alıyor. Buna Protective Circuit deniyor. Negatif sinyalin gelmesini engellemek için bir biyoti de doğru polarizasyonu sağlayan yüksek biyoti kullanılıyor.
+
+304
+01:12:36,231 --> 01:12:38,131
+Hocam bir şey sorabilir miyim?
+
+305
+01:12:39,444 --> 01:12:44,444
+Az önceki, bir önceki slide'da iki farklı devre birbirine bağlıydı ya, biyortlarda.
+
+306
+01:12:44,444 --> 01:12:45,444
+Evet.
+
+307
+01:12:45,444 --> 01:12:55,444
+Biz voltaj için çizdiğimiz grafikler oluyordu. O tarz bir örnek yapma şansımız var mı veya bu kadar değerim gelir mi?
+
+308
+01:12:55,444 --> 01:12:58,444
+Nasıl yani anlayamadım tamam mı?
+
+309
+01:12:58,444 --> 01:13:04,444
+Geçen hafta şey yapmıştık ya, voltajlar için bir grafikler çizmiştik. Clamper devreler için falan.
+
+310
+01:13:04,916 --> 01:13:08,136
+Onları nasıl değiştirdiğine dair gelen E'si yakın.
+
+311
+01:13:08,136 --> 01:13:09,796
+Sinyalin çıktısı nasıl olur mu?
+
+312
+01:13:11,716 --> 01:13:17,796
+Böyle bir sinyalin nereden aldığına bağlı. Şuradan alırsan eğer, şuradan aldığımızı düşün.
+
+313
+01:13:17,796 --> 01:13:25,615
+Şu sinyalin çıktısı 3 katına çıkmış bir doğrultucu devredir.
+
+314
+01:13:27,216 --> 01:13:32,416
+3V biraz karıştı ama. V ise 3V olmuş bir doğrultucu devredir.
+
+315
+01:13:35,604 --> 01:13:44,543
+Pardon, şu olmayacak. Sadece tekniği şurası olacak. Half wave çünkü bunlar. Üç katına çıkartılmış bir doğrultucu devredir.
+
+316
+01:13:47,004 --> 01:13:55,904
+Negatif cycle'dır çünkü negatifini ölçemiyoruz. Sadece artı eksi polarizasyonuna bağlı 3VM kadar ölçebiliyoruz.
+
+317
+01:13:58,484 --> 01:13:59,564
+Tamamdır.
+
+318
+01:14:00,467 --> 01:14:26,567
+Bu aslında şimdi konuyu işleyince benim de aklıma geldi. Bir arkadaşım sormuştu. Hani alternatif akımdaki şu sinyali biz ortalamasına alarak sıkı 636 vesaire yapıyoruz. Bununla bir şekilde o şeye getirebiliriz. Mesela örnek verelim. 10 volt artı eksi verelim. Bizim 3VM'de bu ne olacak? 30 volt olacak değil mi?
+
+319
+01:14:27,091 --> 01:14:52,471
+30 volt olacak şöyle. Tabi bu half wave olduğu için de 30'ın 0.318 oldu. Öyle bir şeyle çarpıyoruz. Bunu çarptığımızda ne elde ediyoruz? 9 küsur 1 volt geliyor değil mi? Neredeyse 3 katına çıkartmışız gibi, 10 volta erişmişiz gibi bir şey elde edebiliriz bu mantıkla.
+
+320
+01:14:54,963 --> 01:15:02,484
+Bu devrede de, bu şekilde katlayıcı bir devreyle de aslında AC sinyaldeki o kaybı bir tık önleyebiliyoruz.
+
+321
+01:15:05,876 --> 01:15:07,456
+Tamamdır hocam, teşekkürler.
+
+322
+01:15:10,156 --> 01:15:14,056
+Ama tabii burada göz önünde bulundurmamız lazım.
+
+323
+01:15:14,056 --> 01:15:30,816
+Şimdi bu şöyle şark olurken, yani burada bir diyottan geçtiği için ve bu gerçek bir diyot, yani normalde 0.7 voltluk bir şey olduğu vakit bu C1 kondansörü VM7, VM-07'ye şarkı olacak.
+
+324
+01:15:32,724 --> 01:15:38,724
+Sonra şuradaki, misal 2VM'ye değil, neye şarj olması lazım?
+
+325
+01:15:39,904 --> 01:15:51,824
+VM-0.7, şuradaki artı VM-0.7. Yani 2VM-1.4'e şarj olacak değil mi?
+
+326
+01:15:54,043 --> 01:15:59,324
+Gibi yani ideal olmama durumunda tabii orada da bir kayıp olacak diye.
+
+327
+01:16:06,260 --> 01:16:13,120
+Tamam arkadaşlar o zaman. Herhalde konularımız en azından Biot anlamında bu kadardı.
+
+328
+01:16:13,120 --> 01:16:23,620
+Şimdi ara vermek istemiyorum. Çünkü çok ilerlemeyeceğim. Transüktöre ufak bir giriş yapıp dersi bitirmek niyetindeyim.
+
+329
+01:16:25,079 --> 01:16:28,700
+Veya isterseniz ara verelim derseniz ara verelim.
+
+330
+01:16:36,340 --> 01:16:38,239
+Var mı ara verelim diyen var mı?
+
+331
+01:16:39,120 --> 01:16:42,920
+Bence de devam edelim hocam. Lapların önce biraz daha bakınmaya zaman kalır.
+
+332
+01:16:49,939 --> 01:16:51,920
+[öğrenci] geldi mi peki?
+
+333
+01:17:00,851 --> 01:17:02,072
+Kırtısına cevap da verin.
+
+334
+01:17:05,619 --> 01:17:23,819
+Evet, şimdi yeni bir konuya başlıyoruz. Yarı iletkenler demiştik. Yani semi-conductor diye yarı iletkenler mentalitesinde devre elemanlarını elektronik değiştireceğimizden bahsetmiştik ve bunlardan birincisi diyottu.
+
+335
+01:17:24,307 --> 01:17:36,307
+Diyodun bir junction meselesi vardı. PN junction diye tabir ettiğimiz. Ve arada aslında bu PN metalyelleri, yani birinin pozitifliğinin, negatifliklerinin ağır olduğu iki metalyelin…
+
+336
+01:17:37,844 --> 01:17:53,583
+Kutuplaşması ile alakalı bir arada depreation layer diye tabir ettiğimiz bölgeyi azaltıp arttırmayla beraber bir kontrol doğru akımda iletime, ters akımda yani ters polarizasyonunda kesime götüren bir devre elemanı olduğundan bahsetmiştik.
+
+337
+01:17:54,003 --> 01:18:08,203
+Aslında burada transüktör diye tabir ettiğimiz mimari de aynı yapım söz konusu. Yarı iletken zaten yine aynı mentalite de PN Junction mimarisinde tasarlanmış bir devre elemanı.
+
+338
+01:18:09,076 --> 01:18:29,536
+Tek farkı üç terminale sahip olması. Normalde diyotta anlattığımızda iki materyal, iki pi ve n materyal dediğimiz iki materyalle doping edilmiş iki terminalde bir elektronik devre elemanı olduğundan bahsetmiştik.
+
+339
+01:18:36,180 --> 01:18:50,980
+Bu üç materyale, üç terminale ayrı ayrı dop edilmiş, yani bazı terminalin pi materyali fazla, bazı terminalin en materyali fazla olacak şekilde bir polarizasyon sağlanmış bir devre elemanı.
+
+340
+01:18:51,940 --> 01:19:02,180
+İki tipi var. PNP ve NPN diye tabir ettiğimiz iki transistör tipi var. Bu tipler tamamen materyallerin, yani terminallerin.
+
+341
+01:19:02,612 --> 01:19:26,992
+DOP edildiği materyallerdeki fazlalık oranına göre isimlendirilen yapılar. Bu terminalden üç terminal dedik. Nasıl diyotta anot kaput yerini netelendirdiysek burada da üç ismi var. Emiter terminali, E ile göstereceğiz. Base diye tabir ettiğimiz B ile gösterdiğimiz Base terminali ve Collector diye tabir ettiğimiz C terminali.
+
+342
+01:19:27,923 --> 01:19:54,583
+Şimdi MPN ve PNP arasındaki en büyük fark, Bayesian'in ne olacağı, yani nasıl bir materyalle dop edileceği ile alakalı. Eğer ki Bayesian benim en materyali fazla olan, yani negatifliklerin fazla olduğu bir materyalsin, bir maddeyle dop edildiyse, o zaman PNP dediğimiz trans-4 tipe oluşacak. Eğer ki Bayesian'in pozitif.
+
+343
+01:19:54,912 --> 01:20:04,412
+Yüklerin fazla olduğu bir materyal ile doh edildiyse o zaman NTN diye tabir edeceğimiz öteki transüstörü göstereceğim.
+
+344
+01:20:04,412 --> 01:20:07,452
+Transüstörlerde arkadaşlar,
+
+345
+01:20:08,271 --> 01:20:13,492
+Transüstörlerin,
+
+346
+01:20:14,003 --> 01:20:40,764
+Çalışma prensibi nasıl diyotta anota artı katota negatif gelerek depletion layer, aradaki depletion region'un sıfıra indirmek kaydısı ise, burada da bir tarafı aynı mantıkla depletion layer region'a sıfıra indirmek ama öteki tarafı maksimize etmek hedefini bileceğiz.
+
+347
+01:20:41,332 --> 01:21:07,692
+Burada emitter-base diye tabir ettiğimiz E ve B terminalleri arasındaki polarizasyonun forward bias mantığıyla, yani misal emitter bunun pozitif yükleri fazla, base'i negatif yükleri fazla, yani emitter P-type, base'i N-type ise o zaman emitter ucuna artı, base ucuna eksi bir gerilim beslemesi.
+
+348
+01:21:08,095 --> 01:21:09,575
+yapacağız ki
+
+349
+01:21:09,575 --> 01:21:11,435
+hatırlarsanız biz
+
+350
+01:21:11,435 --> 01:21:13,975
+biyot'ta anlatırken buradaki yükler
+
+351
+01:21:13,975 --> 01:21:16,035
+pozitif olduğu için ben buradan
+
+352
+01:21:16,035 --> 01:21:17,875
+pozitif bir polarmayla akım
+
+353
+01:21:17,875 --> 01:21:20,115
+verdiğimde buradaki pozitif yükler
+
+354
+01:21:20,115 --> 01:21:22,035
+içeri doğru geçiyor. Buradaki
+
+355
+01:21:22,035 --> 01:21:23,575
+negatif n-type olduğu için
+
+356
+01:21:23,575 --> 01:21:25,815
+n-tikleri elektronlar fazla olduğu için
+
+357
+01:21:25,815 --> 01:21:26,875
+burada da n-
+
+358
+01:21:26,963 --> 01:21:44,384
+Yani negatif tarafından verdiğimiz için buradaki de negatiflikleri kendi iç direniyle buraya giderek buradaki adaptation region'ı birbiri içerisinde balansa neden olduğu için ne yapıyor diyordu? Azaltıyor, ufaltıyor demişti.
+
+359
+01:21:45,684 --> 01:22:10,884
+Öteki tarafta ise, yani kollektör ve base tarafındaki depletion region'ı ise maksimize etmemiz lazım, büyütmemiz lazım. Bunun için de kollektör bacağı termileri p-type ise eğer, oraya bizim negatif yani eksi ucunu bağlamamız lazım ki işte içerideki fazla p-type'ı balanslasın kendi içerisinde.
+
+360
+01:22:13,684 --> 01:22:24,064
+Pozitif vereceğiz ki ufak bir IB akımıyla bunu kendi içerisinde yine nötrlesin ve buradaki Deployation Region bölgemiz artsın.
+
+361
+01:22:25,123 --> 01:22:37,564
+Transfer'ün o zaman özetçe geçeceksek, transfer'ün çalışma prensibinde emitter-based-dor polarma, base-collector-negative-tors polarma olmak zorunda.
+
+362
+01:22:38,260 --> 01:23:02,020
+Entype'de emitter'e ben artı vermem lazım. Tabi bunu ezberlemek değil mantık ama işte PMP type bir şeyse bu transitor ise PMP'yi ben biliyorum ki şurası base'i neymiş? Burası emitter, burası da collector.
+
+363
+01:23:03,988 --> 01:23:14,168
+Emiteri P, B'si, N ise ben bunlara şöyle bir bağlantı yapmam lazım ki depreşim değil bu arada azalsın.
+
+364
+01:23:14,644 --> 01:23:32,944
+Öteki tarafta ise Bayes'in benim negatif olduğundan dolayı pozitif bir şey yapacağım ki oradan Bayes'deki elektronları çekeyim. Öteki tarafa da negatif vereceğim ki oradaki protonları çekeyim. Çünkü bu aradaki depreşini max yapmak, şuradaki depreşini min yapmak istiyorum.
+
+365
+01:23:34,355 --> 01:23:48,515
+PNT'de böyle. NPN'de ise, bu varmış, NPN'de ise ikinci tip kullanılan transütör ve en çok elektronik devrelerde kullanılan transütör tipi NPN'dir arkadaşlar.
+
+366
+01:23:49,115 --> 01:23:54,895
+NPN transütörlerde ise bu tam tersi, işte N-type olduğu için buraya negatif.
+
+367
+01:23:55,247 --> 01:24:09,068
+Eksi taraf, işte P-type da pozitif, öteki tarafın N-type'ına pozitif, P-type'ına negatif vermek kaydesiyle bu transütörü biz kullanılabilir duruma getiriyoruz.
+
+368
+01:24:09,268 --> 01:24:13,327
+Şimdi kullanmaktan kazık pek çok senaryo su var transütörünü kullanabilecek.
+
+369
+01:24:13,760 --> 01:24:32,019
+Anahtarlama elemanı olarak kullanılıyor. Güç kontrol mekanizması için kullanılıyor vs. Bunlara değineceğiz. Haftaya ama o kısımlara gireceğim. Şimdi sadece genel olarak akımların yönleri ve neyin neye eşit olduğuna alakalı bilgileri verelim.
+
+370
+01:24:33,019 --> 01:24:35,279
+Evet, çalışma plansibi bu.
+
+371
+01:24:37,747 --> 01:24:58,947
+Ve hep şunu, şu kaydıyı gözüteceğiz. Bütün problemlerde arkadaşlar şunu kullanacağız. Emiter akıma, kollektör ve beyz akımının toplamadır. Bu aslında not analizine geliyor. Yani ben işte not analizi, KCL ne derdi bize devleti öresinde? Şunu derdi.
+
+372
+01:25:04,884 --> 01:25:07,684
+Çıkan akımlara eşit olmak zorunda.
+
+373
+01:25:08,204 --> 01:25:13,904
+Ve emiter burada çıkan akım noktasında, bezle kollektörde giren akım.
+
+374
+01:25:13,904 --> 01:25:22,923
+Öyle olunca bezle kollektörün toplamı emitere eşit olacak diyeceğiz ve biz bu kayıdayı soruları çözerken çok sıkça kullanacağız.
+
+375
+01:25:26,195 --> 01:25:47,015
+Burada sembolleri var. Bu sembolleri de çok karıştırıyoruz arkadaşlar. Çok net şunu bileceğiz. Oku gördüğüm uç emiter ucudur. Okun yer aldığı uç transistör sembolünde emiter ucudur. Ve okun yönü her zaman en tayti gösterir.
+
+376
+01:25:47,247 --> 01:26:13,627
+N materyörünü gösteriyor. Misal. Örneğin okun bu ok buradaymış. Burası emiter. Kesin biliyorum. Zaten base dediğim ortak uç. O da belli. Kollektör de burası. Burası emiter, base, kollektör. Okun ucu her zaman N tipini gösterir. Okun ucu base'i gösteriyor. O zaman base'im N type. N type ise zaten bunlar P type olmak zorunda.
+
+377
+01:26:14,195 --> 01:26:36,095
+Bu bir PNT Transistor'dur deriz. Okunucu dışarıya emitteri göstermiş. O zaman burası n-type. Emitteri n olan ne var? NPN Transistor'dur. Başka bir transistör şekli yok zaten. NNT gibi bir şey yok. NPN Transistor.
+
+378
+01:26:37,524 --> 01:26:58,524
+Bu neden önemli? Çünkü burada PMT mi, MPM mi olması benim bu transistörün emitter base arasını ve base kolektör arasını nasıl bağlayacağımı söyleyecek. Bu amaçla, bu nedenden dolayı bu sembollerin nasıl bir transistör olduğunun bilinmesi çok önemli.
+
+379
+01:27:00,203 --> 01:27:03,524
+Yukarıda zaten bahsettiğim şeyler var. Her zaman...
+
+380
+01:27:03,923 --> 01:27:11,003
+IE yani emitter akımı kolektör ve beynizin toplamına eşit olacak. Bunu hiçbir zaman unutmuyoruz.
+
+381
+01:27:15,123 --> 01:27:39,163
+Tamam mıyız arkadaşlar? Soru yok herhalde. Şimdi bundan sonra kullanımlarıyla alakalı graflar var. Bunları izah edeceğiz. Karakteristiklerine bakacağız ama bunları haftaya girelim. Bu haftalık bu kadar yeter diyelim. Zaten yeterli olur. Sorumuz var mı genel olarak?
+
+382
+01:27:40,851 --> 01:27:48,011
+Hocam, MPN transistöründe de şey var değil mi? O depletion regionlar var yine iki tarafta da.
+
+383
+01:27:48,332 --> 01:27:52,112
+Tabii, var. Aynen. Orada da yine aynı mantıkla...
+
+384
+01:27:52,112 --> 01:27:53,971
+Tabii şunu kapattım herhalde.
+
+385
+01:27:54,492 --> 01:28:00,652
+Peki o emitterler arasında geniş, pardon, daha dar, diğer tarafta daha geniş bir aralık var.
+
+386
+01:28:00,992 --> 01:28:08,851
+Evet. Yani emitter base arasını depletion değerine minimize etmek, kollektör base arasını de maksimize etmek. Onda da aynı şey.
+
+387
+01:28:08,851 --> 01:28:18,692
+Tek fark eden bu koşulu sağlayan giriş gerilimlerindeki polarizasyon MTN'e göre tam tersi olacak.
+
+388
+01:28:19,032 --> 01:28:24,372
+TMQ ve MTN'e göre tam olacak. Tek farkın bu olduğunu söyleyebiliriz.
+
+389
+01:28:28,948 --> 01:28:45,668
+Başka sorumuz yoksa arkadaşlar, sorunumuz varsa cevaplayabiliriz. Ders notlarını parsa, herhalde bir WhatsApp grubunuz var. Ben herkese paylaşırım dedi. Ben de koymadım piyazaya.
+
+390
+01:28:51,667 --> 01:29:05,927
+Yani PR öyle deyince herkese ulaşabilir diye düşündüm ama paylaşılmadı mı? O zaman bir dakika hemen dersleyken ben onu bir piyazaya koyayım. Sonra benim de aklımdan çıkıyor.
+
+391
+01:29:35,956 --> 01:29:37,956
+Hepsini zip hale etmeyeyim.
+
+392
+01:30:02,068 --> 01:30:04,787
+Bu beşinci hafta mı arkadaşlar? Altıncı hafta mı?
+
+393
+01:30:11,731 --> 01:30:12,712
+Beşinci atlıyorum.
+
+394
+01:30:16,115 --> 01:30:18,115
+5 haftalık kısmını kıyıyorum.
+
+395
+01:31:14,676 --> 01:31:31,956
+Preliminary'de paylaşmışlar arkadaşlar sizle zannedersem. Baktık mı onlara? Güzel hazırlamışlar bence. Bence iyice bakın, araştırın. Güzel olmuşlar bence.
+
+396
+01:31:51,283 --> 01:32:04,444
+Şu an bir ders sunumları başlığında bir duyuru paylaştım. Gözüküyor mu yazdada? Bakalım. Genelde. İndirebiliyor musunuz? Bir de ona bakın.
+
+397
+01:32:05,203 --> 01:32:06,363
+Evet hocam iyi şu anda.
+
+398
+01:32:58,355 --> 01:33:11,235
+Ayrıca arkadaşlar bu CREV'de paylaşılan bir video var herhalde. O adamı mümkünse takip edin. Elektro Bond diye bir kanalı vardı herhalde YouTube'da. Bir resim var ya.
+
+399
+01:33:11,235 --> 01:33:21,976
+The Mother of Old Spirit Repetive. Ama bu video değil herhalde. Bir bakayım ben kanalın ismini bulayım size.
+
+400
+01:33:24,787 --> 01:33:29,347
+Güzel, değişik bir elektrik deneyleri yapıyorlar.
+
+401
+01:33:49,395 --> 01:33:52,155
+İlginç deneyleri var.
+
+402
+01:34:09,203 --> 01:34:11,823
+Aynı.
+
+403
+01:34:16,115 --> 01:34:23,795
+Bulmuş bir de zaten. Evet. Tam paylaşıcı yaptım. Aynen. Çetin biraz geç.
+
+404
+01:34:27,988 --> 01:34:30,908
+Mesela burada ben bir tane video öneriyiz.
+
+405
+01:34:30,908 --> 01:34:32,408
+İkişade bir video oldu.
+
+406
+01:34:55,412 --> 01:34:56,412
+Neyse.
+
+407
+01:34:59,012 --> 01:35:01,812
+Çok video atmış ya, ben bayağı da takip etmedim.
+
+408
+01:35:08,212 --> 01:35:13,612
+Bir tane diyotlar, kremplerle alakalı diyagram sunmuşlar. Güzel bence.
+
+409
+01:35:30,612 --> 01:35:33,231
+Bugün bana sormak soruya benzer bir soru gördüm burada.
+
+410
+01:35:37,684 --> 01:35:38,444
+Arkadaşlar.
+
+411
+01:35:49,300 --> 01:36:12,479
+Neyse, tamam. Güzel anladınız. Bence verimli geçecektir. Ama ön çalışmasını lütfen yapın. Çünkü güzel bir ön çalışma da hazırlamışlar. Asıl platformuza da baktım. O da güzel. Umarım faydalı olur hepimize. Başka soru varsa alabiliriz. Yoksa dersi bitirebiliriz. Genelde sorabilirsiniz.
+
+412
+01:36:26,420 --> 01:36:43,300
+Herhalde sorumuz yok arkadaşlar. Hepinize labınızla başarılar diliyorum. Hepiniz inşallah faydalı, güzel bir lab geçirirsiniz. Hepiniz sağlıcakla kalın. İyi günler hocam. İyi günler. İyi çalışmalar. İyi günler hocam.

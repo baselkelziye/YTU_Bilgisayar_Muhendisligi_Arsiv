@@ -1,0 +1,911 @@
+1
+00:06:40,851 --> 00:06:43,411
+Merhaba arkadaşlar, hoş geldiniz.
+
+2
+00:06:51,187 --> 00:06:52,939
+Nasıl? Çalışabildiniz mi?
+
+3
+00:06:58,516 --> 00:07:15,576
+Bence Gökhan Hoca da hani biraz insaflıymış. Ben biraz daha şey zor olur zannediyorum. Sandığınızdan da bence kolay olacak. Her şeyi bırakıp, güzel. Bence sandığınızdan kolay olur diye düşünüyorum.
+
+4
+00:07:17,516 --> 00:07:23,576
+Çünkü ben diğer grubun videosunu bilerek istedim en son. İşte Cumartesi günü onun için çok fazla...
+
+5
+00:07:24,500 --> 00:07:46,139
+Bir şey yapmayalım dedim, kafanızı karıştırmayayım. Sorular da hakikaten hani o şeye uygun geldi. Gökhan Hoca da hazırladı, ben de hazırladım. Sonra onları birleştirdik. Dört soru olacak. İlk iki soruyu ben on dakikaya kalmadan çözdüm hatta öyle söyleyeyim.
+
+6
+00:07:47,187 --> 00:07:52,767
+Üçüncü soru da bir 10 dakikada çözülse, belki dördüncü soru 15 dakika ne oldu?
+
+7
+00:07:53,647 --> 00:07:56,567
+10, 20, 35 dakika, 75 dakika çok rahat yeter.
+
+8
+00:08:00,908 --> 00:08:06,127
+İki ile çarpsak bile yani rahat rahat çözerseniz diye tahmin ediyorum.
+
+9
+00:08:10,100 --> 00:08:16,500
+Yani tabi derse katılmak, ne bileyim bazı temel şeyleri bilmek kaydı şartıyla, yani yoksa
+
+10
+00:08:17,520 --> 00:08:21,620
+Hiçbir şey bilmeden de tabiki zor olabilir.
+
+11
+00:08:23,160 --> 00:08:25,980
+Öyle derler yani bilene kolay, bilmeyene zor.
+
+12
+00:08:29,684 --> 00:08:54,744
+Sağ olun. Yani şey, anlatmadığım yerden zaten sormak, yani hoca da aynı şekilde sorularla gelince sınav sorusu hazırlamak da benim açımdan zor olmadı. Hani bir ortak bir noktamız olmayan bir durum olsaydı ya hocam bunu anlatmadık falan diye o zaman hani birazcık uğraşırdık karşı taraftaki hocayla, diğer uygun hocasıyla.
+
+13
+00:08:55,988 --> 00:08:58,708
+Çok şükür ben, uyumlu gidiyoruz, öyle söyleyeyim.
+
+14
+00:09:06,100 --> 00:09:18,100
+Yani kısmi integrallik, U'ları, V'leri bilmeniz yeterli. Kime U, kime V diyeceksiniz. Bence bu sınavda ona bile gerek kalmayabilir.
+
+15
+00:09:19,100 --> 00:09:24,100
+Yani o Fourier'ı sormadınız burada değil mi? O Fourier finallik sorudur. Fourier'la ne uğraşıyorsunuz?
+
+16
+00:09:24,100 --> 00:09:28,100
+Fourier serisi var. Tabii seriler var da.
+
+17
+00:09:29,460 --> 00:09:34,340
+Ama onu siz bile çözlerken o kadar zorlandınız. Biz nasıl çözelim hocam yani?
+
+18
+00:09:34,759 --> 00:09:39,580
+Ama ben anlattım. Dedim ki bu integral sorarsam çok zor olacak bir integral sormam.
+
+19
+00:09:40,000 --> 00:09:41,379
+Yok biliyorum biliyorum.
+
+20
+00:09:41,480 --> 00:09:44,060
+Partial integration gerektirmiyor.
+
+21
+00:09:46,539 --> 00:09:50,680
+C0 ile C1'leri bulurken bile neyse. Hadi bakalım.
+
+22
+00:09:50,840 --> 00:09:56,139
+Yapacağınız şey formülü de yazdık. Formülüleri yerine koymak arkadaşlar.
+
+23
+00:09:57,683 --> 00:10:02,644
+Yani değişkenleri yerine koyduğunuz zaman çok rahat çıkacağını düşünüyorum ben.
+
+24
+00:10:03,803 --> 00:10:16,963
+Ders notları da serbest. Hani normal zamanda olsam da ben ders notları kullanma konusunda bu derste yani ne derdim formül ezberletmek, ne efendim kural ezberletmek.
+
+25
+00:10:18,223 --> 00:10:23,683
+Yani ders notlarını kullanmak her zaman bu ders için serbest. Mesela başka derslerde...
+
+26
+00:10:24,048 --> 00:10:38,048
+Örgün eğitimde bazı şeyler de olmaz da, bu ders için öyle bir problem de yok. Zaten evinizdesiniz. Çayınızı kahvenizi alıp, üniversite sınavının hazırlıktan rahat bir sınavı olur öyle söyleyeyim size.
+
+27
+00:10:43,700 --> 00:11:04,519
+Evet, şimdi 5 dakika veya 3-4 dakika kala soruları açıklayacağım önce. Arkadaşlar, bilmiyorum bu grupta söyledim mi de tekrar edeyim. A4'e çözüyorsunuz temizce. Her sayfaya mavi mürekkepli kalemle at suyat imza atın lütfen.
+
+28
+00:11:05,652 --> 00:11:16,812
+Hangi sırada çözdüğünüz çok önemli değil ama yani 1-2-3-4-5 sırasına koyarsanız 4 soru var. Okurken biz ona karıştırmayalım.
+
+29
+00:11:18,012 --> 00:11:23,772
+Sonra tarıyorsunuz veya fotoğrafını çekiyorsunuz. Şimdi mobil uygulamalarda Adobe'un uygulaması var.
+
+30
+00:11:23,772 --> 00:11:29,932
+Adobe Scandi, hem iOS'da hem de Android'de vardır. Çok rahat kağıdı tutarsınız.
+
+31
+00:11:30,548 --> 00:11:40,148
+Kaç tane kağıtsa, arda arda fotoğrafını çekip o PDF haline getiriyor. Hiçbir şeye uğraşmanıza gerek yok. Sonra bilgisayarınıza atıp bilgisayarınıza sisteme yüklersiniz.
+
+32
+00:11:40,148 --> 00:11:50,548
+Ben bunları birçok yerde söylüyorum da söylemişsem kusura bakmayın tekrar etmekte de sıkıntı yok. Word değil PDF istiyoruz arkadaşlar.
+
+33
+00:11:51,120 --> 00:12:00,519
+Bu dediğim programı kullanamadınız, kaç tane ise fotoğrafı çekersiniz, o fotoğrafları Word'a atarsınız sırasıyla, Word'ü de PDF olarak kaydedersiniz. O da bir çözümdür.
+
+34
+00:12:00,759 --> 00:12:11,539
+Word'ün farklı kaydet özelliğinden PDF olarak kaydetme imkanınız var. Bunlar hani sizin için belki çok kolay şeyler de arada bir kişiye bile faydası olursa söyleyelim istiyorum.
+
+35
+00:12:13,556 --> 00:12:25,916
+Süre fazlasıyla yeter ama şu şekilde tanımladım. Öğrenci arkadaşım 2-3 dakika geç kalmış olabilir. Öyle 5 dakikalık bir girişte pay var. Ama sizin sınav süreniz normalde 75 dakika.
+
+36
+00:12:27,996 --> 00:12:37,676
+Fazlasıyla yeteceğini düşünüyorum. Yani emin olun. Bu konuda abartma kendime göre düşünmüyorum. Size göre, sizin tarafınızdan bakarak düşünüyorum.
+
+37
+00:12:38,868 --> 00:12:54,067
+Bir şey oluşmuş, elektronik bölümünde pointerlara karşı, burada da birkaç derse karşı böyle bir antipati oluşmuş. İnşallah bu sınav vasıtasıyla bu dersi olan antipati yıkılır diye tahmin ediyorum.
+
+38
+00:12:56,032 --> 00:13:04,732
+Hocam, derse karşı bir antipati yok, derse karşı, sakın yanlış anlaşma olmasın. Eskiden dersi verenlere karşı bir maalesef.
+
+39
+00:13:04,732 --> 00:13:05,632
+Anladım.
+
+40
+00:13:05,632 --> 00:13:09,032
+Yani ben özellikle dile getireyim, siz getirmeyin de ben getireyim.
+
+41
+00:13:09,032 --> 00:13:10,032
+Anladım.
+
+42
+00:13:10,032 --> 00:13:19,032
+Çocuklarda zaten hepsi katılıyor, biliyorlar. Özellikle alttan alanlar benim gibi. Maalesef. Neyse inşallah zamanı... Ama çok güzel oldu.
+
+43
+00:13:22,131 --> 00:13:34,432
+İnşallah. Gerçi Oğuz Hocam iyidir. Yani bizzat ismini de söyleyebilirim. Güzel anlatıyor ama İngilizce konusunda ben yetersizdim. Oğuz Hocam'ın bir şeyi yok. Ben öyle diyeyim. Ben çok yetersizim İngilizce konusunda. O yüzden zorlanıyorum.
+
+44
+00:13:34,432 --> 00:13:46,411
+Ama bu dersin mesela Türkçe yapılması çok büyük bir, çok güzel bir şey oldu. Yani ne diyeyim, iyi bir şey oldu yani. Yoksa bir de bunu İngilizce olarak...
+
+45
+00:13:46,548 --> 00:13:47,427
+Neyse, hadi.
+
+46
+00:13:47,788 --> 00:13:54,307
+Ya insanlara mezun olduklarında, ya ben böyle bir ders aldım, işte işaretleri frekans düzleminde inceledik.
+
+47
+00:13:54,407 --> 00:14:03,147
+[öğrenci], hemen söz vereceğim. Frekans düzleminde kısmen inceledik, ne bileyim, örnekleme nedir, z-dönüşümü nedir, sistem nedir, sinyal nedir.
+
+48
+00:14:04,228 --> 00:14:10,447
+Temel konular hakkında bilgi sahibi olduk. İleride de ne bileyim, bir yüksek lisans gibi bir şey yaparsak veya bir yerde karşımıza çıkarsa.
+
+49
+00:14:11,059 --> 00:14:24,419
+Hani bilmiyormuş gibi bakmayız. Bence bu ders için yeterli. Elektronikçilere bu dersin içeriğinden bazı şeyler sordum bizim elektronik bölümünde. Bunları biz bile anlatmıyoruz dedi.
+
+50
+00:14:25,620 --> 00:14:43,819
+Mesela benim geçenlerde Marmara Üniversitesi'ndeki hocam sorularını paylaştı. O hakikaten, o da Yıldız mezunundur, zorlamış çocukları. Yani zorlamış derken işlem kalabalığı çok fazla. O da şöyle bir imkan vermiş ama ona da hak veriyorum. Yani soruyu göndermiş, işte 5 veya 6 soru muydu neydi?
+
+51
+00:14:44,275 --> 00:14:58,475
+5 saat süre vermiş. 5 saat içerisinde bir take-home tarzında yapın gönderin. Ona göre tabii süreyi biraz uzatacak işlem sayısını kavartmış. Yani bir integral alıyorsan aynı integralı belki 3 defa alıyorsun. Öyle. Evet [öğrenci] söyle seni dinliyorum.
+
+52
+00:14:59,775 --> 00:15:06,755
+Hocam az önce bir zoomdan düştüm geldim de tam sınav hakkında bilgi verirken tekrar edebilir misiniz diye soracaktım.
+
+53
+00:15:07,316 --> 00:15:28,135
+Sınav hakkında iyi şeyler konuşuyoruz. Güzel olacak falan değil. Daha detaylı bilgi vermedi içeriğine dair. Sadece kağıtlarınızın her birisinde mürekkepli kalemle at soyat imza olsun. Onları güzel bir şekilde, net bir şekilde tarayın. Fotoğraf makinesi veya cep telefonunun fotoğraf bölümüyle falan. PDF olarak sisteme zamanla yükleyin.
+
+54
+00:15:28,536 --> 00:15:30,235
+Mürekkepli kalem dediğiniz hocam şey mi?
+
+55
+00:15:30,415 --> 00:15:31,316
+At soyat imza.
+
+56
+00:15:32,307 --> 00:15:34,307
+Onlar mı sadece mürekkep?
+
+57
+00:15:34,307 --> 00:15:35,307
+Evet.
+
+58
+00:15:35,307 --> 00:15:36,307
+Tamamdır.
+
+59
+00:15:36,307 --> 00:15:42,307
+Yani o, bulunsun, düzene dikkat edelim.
+
+60
+00:15:42,307 --> 00:15:44,307
+Şeyden yüklersiniz.
+
+61
+00:15:44,307 --> 00:15:46,307
+Nedir o?
+
+62
+00:15:46,307 --> 00:15:48,307
+Online Yıldız, ET Yıldız'dan.
+
+63
+00:15:48,307 --> 00:15:56,307
+Dosya isimleri, numaranız ve şey zaten siz dosya ismini ne verirseniz verin, online sistem şimdi bir otomatik bir şey yapmış.
+
+64
+00:15:57,139 --> 00:16:02,960
+numaranız adınız şeklinde ama siz yine numaranız bulunsun. Tek bir PDF arkadaşlar.
+
+65
+00:16:02,960 --> 00:16:20,899
+Hocam çok özür diliyorum. RAR da oluyor herhalde öyle değil mi? Yani 4 sayfayı PDF yapıp onları toplayıp çünkü tek dosya kabul ediyor bildiğim kadarıyla onları RAR olarak da gönderebilirsin ama hepsi sonuçta PDF'tir ama tek dosya RAR.
+
+66
+00:16:21,460 --> 00:16:28,460
+Yani RAR şöyle, PDF yaptıktan sonra RAR yapmaya bir daha gerek yok. Belki sıkıştırmak amacıyla yapabilirsiniz de.
+
+67
+00:16:28,460 --> 00:16:33,460
+İnan 4 sayfanın nasıl PDF olacağı hakkında henüz bir fikrim yok ama öğrenirim çok.
+
+68
+00:16:33,460 --> 00:16:43,460
+Şöyle, Word'u açarsınız, Word'e tek tekre 4 sayfa sayfa ekleyin. Ben size şöyle göstereyim bir dakika. Share screen diyelim.
+
+69
+00:16:48,916 --> 00:16:57,816
+Böyle bir Word açtık. Dört tane de fotoğraf bulalım. Şimdi fotoğraf bulmak da zor bir şey de. Şöyle bir şey yapayım, Snipping yapayım.
+
+70
+00:16:58,196 --> 00:17:01,436
+Fotoğraf değil hocam, 4 PDF'i tek bir PDF yapma olayını.
+
+71
+00:17:02,196 --> 00:17:11,276
+Aha, o şey, PDF birleştirme uygulamaları lazım. Yani o birazcık bazı uygulamalarda şey. Onun yerine fotoğrafı yapmanız daha kolay.
+
+72
+00:17:12,019 --> 00:17:17,519
+Fotoğrafı yaparım, fotoğrafı yaparım. Fotoğrafı hatta şeyde bile publisher'da daha rahat yaparım PDF'de.
+
+73
+00:17:17,519 --> 00:17:34,000
+En kolayı o. Net bir fotoğraf çektikten sonra Word'de 4 tane fotoğraf ekliyorsunuz. Bunu dosya, farklı kaydet, göz at dedikten sonra şuradan PDF'i seçeceksiniz. Tek bir PDF'e 4 tane resmi arda arda ekleyebilirsiniz.
+
+74
+00:17:34,432 --> 00:17:47,492
+Ama onun için o zaman diyorsunuz ki makineyle fotoğraf çekin, onları yükleyin. Yani telefondan fotoğraf çekip... Ben normal yazıcıdan, scanner'dan taratıp, ben PDF olarak taratıp şey yapacaktım ama tamam, jpeg olarak taratıp öyle PDF yaparız. Tamam, tamam.
+
+75
+00:17:47,492 --> 00:17:47,751
+Olur.
+
+76
+00:17:48,751 --> 00:17:56,592
+Android'de Camp Scanner varmış diyor bir arkadaşımız. Small PDF diye bir şey varmış. I Love PDF varmış. Böyle güzel şeyler yazıyor arkadaşlar.
+
+77
+00:17:58,451 --> 00:18:07,751
+FileName'i söyledim ama tekrar söyleyeyim. FileName'de olacak şey, numaranız olsun. Zaten sistem ayrıca bir isimlendirme yapıyor ona.
+
+78
+00:18:11,284 --> 00:18:13,284
+Sorular şu sekmede bu arada.
+
+79
+00:18:14,784 --> 00:18:16,284
+Süresi gelince açacağım.
+
+80
+00:18:54,259 --> 00:18:55,539
+Bir saniye arkadaşlar.
+
+81
+00:19:33,587 --> 00:19:35,587
+Baya bir şey gelmiş.
+
+82
+00:19:36,788 --> 00:19:40,507
+Yani Adobe'un ki gayet güzel. Yani şey olsa
+
+83
+00:19:41,708 --> 00:19:47,467
+Onu da gösteririm ama Adobe'da direkt istediğiniz kadar fotoğraf çekip tek bir PDF halinde
+
+84
+00:19:48,387 --> 00:19:49,587
+kullanabiliyorsunuz.
+
+85
+00:20:12,468 --> 00:20:15,728
+Ses gitti. Sesim geliyor değil mi arkadaşlar?
+
+86
+00:20:16,288 --> 00:20:17,128
+Geliyor hocam sıkıntı.
+
+87
+00:20:17,168 --> 00:20:17,988
+Geliyor hocam.
+
+88
+00:20:23,220 --> 00:20:46,319
+Şeyden sonra ders yapmayacağız. Bundan sonra iki haftamız var bildiğim kadarıyla. Yirmi dokuzu ve beşi. Bir haftamız daha var mı? Yok galiba. Bir haftamızda Z-Transform, bir haftada Laplace Transform üzerine çalışacağız. Rahatlıkla yetiştiririz. Yani üç saat içerisinde hatta iki saatte lok onlar biter.
+
+89
+00:20:47,155 --> 00:20:53,596
+Yani birisi zaten ayrık zamanda bir şey, diğeri sürekli zamanda bir teknik, Fourier dönüşümüne ek olarak.
+
+90
+00:20:54,915 --> 00:20:59,355
+Bundan sonra bir de sampling konusu var, kısaca ondan bahsedeceğiz. Yani üç çeptir aslında.
+
+91
+00:21:00,496 --> 00:21:03,355
+Ama sampling konusu daha çok sayısal işaret işlemenin konusu.
+
+92
+00:21:04,275 --> 00:21:09,155
+Şimdi bu ders öyle bir şey ki, size aslında anlatmak istiyordum. Hatta şimdi birazcık...
+
+93
+00:21:10,228 --> 00:21:16,228
+Hani kafanızı karıştırmayın. Biraz böyle geçenlerde farklı bir şey yaptık. Burada da kısaca bahsedeyim.
+
+94
+00:21:18,228 --> 00:21:29,228
+Kontrolcülerin, elektrikçilerin, elektronikçilerin, biyomedikalcilerin ve bizim hatta bazı zaman serileriyle uğraşan iktisatçıların bile ortak konusu Sinyal.
+
+95
+00:21:29,228 --> 00:21:32,875
+Yani Sinyal & Sistem burada tam orta noktada.
+
+96
+00:21:33,779 --> 00:21:58,380
+Bunun öncesinde ne var? Mühendislik matematiği var, mühmat. Ondan sonra Linear C1 var, Differential Equation var, olasılık var. Onların öncesinde kalkulusu bilmem neyi falan söylüyoruz. Kısmen devre teorisi ama çok fazla da değil. Bundan sonra bizim DSP olarak görüyoruz.
+
+97
+00:21:59,827 --> 00:22:09,827
+Ama çok da hani DSP yani bunu çok iyi açıklamıyor. Onun için yani bizim yolumuz böyle gidiyor. DSP görüntü işleme. Şöyle bir şey çizmek daha doğru.
+
+98
+00:22:09,827 --> 00:22:20,827
+İşte bu Computer Engineering için DSP dersi var. Ondan sonra Image Processing var. Ondan sonra Video Processing, Speech Processing var.
+
+99
+00:22:20,827 --> 00:22:23,827
+İşte Machine Learning'e kadar gidiyor bu serüven.
+
+100
+00:22:24,756 --> 00:22:36,756
+DSP ile başlıyor. Tabi bunların başına Advanced DSP, Advanced Image Processing eklerseniz bir de öyle ikiye katlarsınız. Sonra Kontrol ve Elektronik için
+
+101
+00:22:36,756 --> 00:22:50,175
+Otomatik Kontrol Sistemleri diye bir dersleri var onların. Sürekli zamandaki sistemleri inceliyorlar. Kontrol sistemindeki kasıt bizim buradaki sistemlerde
+
+102
+00:22:50,804 --> 00:23:14,744
+Hani şöyle sistemleri bağlıyoruz ya, orada eğer bir feedback varsa kontrol sistemine giriyor. Sınav hakkında daha bir şey konuşmadık. Otomatik kontrol sistemleri sürekli zamanlarla uğraşıyor. Bir de sayısal digital kontrol sistemleri dediğimiz, sürekli zaman, ayrık zamanlarla uğraşan bir şeyler var, dersleri var.
+
+103
+00:23:15,571 --> 00:23:23,891
+Ve onların da yine DSP'si falan aynı şekilde, dijital kontrol sistemleri ile beraber DSP'ler aynı şekilde kullanıyorlar. Kontrolcüler ve elektronikçiler.
+
+104
+00:23:23,891 --> 00:23:35,971
+Haberleşmede de yine DSP diye, ondan sonra haberleşme sistemleri diye analog haberleşme, analog communication system, communication control.
+
+105
+00:23:36,372 --> 00:24:02,672
+Digital Communication System, yine bakın sistem. Oradaki sistem de böyle feedbackli değil de normal işte arda arda gelen şeyler düşünün, elemanlar düşünün. Sistemler onların o şekilde. Yine bunlara DSP eklersiniz vesaire. Böyle bir serüveni var bunların. Yani baya onlar da işte farklı farklı noktalara işte istatistiksel analog kontrol sistem veya analog haberleşme sistemleri diye böyle gidiyor. Bu ders birçok şeyin aslında göbeği.
+
+106
+00:24:03,316 --> 00:24:05,316
+Öncesi var, sonrası var.
+
+107
+00:24:08,316 --> 00:24:17,316
+Ben bunlardan hangilerini aldım derseniz, önce bilgisayar ve kontrol okumuştum. İki bölüm adı öyleydi bizim zamanımızda.
+
+108
+00:24:17,316 --> 00:24:28,076
+Sinyal ve sistemlerden sonra şu kontrol sistemleri aldık. Şunu alamadık. Bunun içinde ikisinin birleştiği kontrol sistemleri diye bir şey vardı.
+
+109
+00:24:28,564 --> 00:24:53,903
+Haberleşme Sistemleri dersini de aldım Marmara'dayken. Onların hepsi tabii bu sinyal sisteme dayanıyor. Sinyal sistemden önce de bunu aldık, bunu aldık, bunu aldık, bunu aldık. Şey vardı yani o zamanlar böyle bayağı bir matematiksel ağırlıklıydı. Ne kadar işime yaradı? Yani sadece Fourier dönüşümünü burada şey olarak kullandık, aktif bir şekilde doktoratezimde veya yüksek seans çalışmalarında.
+
+110
+00:24:54,451 --> 00:25:04,451
+Ama bu konuda teorik çalışmak isteyenler veya farklı alanlarda çalışmak isteyenlerin yolu, sinyal sistemlerle bir şekilde kesişir.
+
+111
+00:25:04,451 --> 00:25:14,251
+Hani piyasaya çıkıp şunu yapabilirsiniz. Hocam ben işte web programlama, frontend, backend, yeni teknolojiler veya webmining tamam güzel ayrı bir konu.
+
+112
+00:25:14,771 --> 00:25:19,891
+Ama ne bileyim, biraz daha işin içine böyle matematiksel bir şeyler karıştırınca işin içine sinyaller giriyor.
+
+113
+00:25:20,072 --> 00:25:26,371
+Sinyallerle beraber işte bu matematiksel, yani Fourier, Laplace artık ne kullanıyorsan ve sistemle uğraşıyoruz çünkü.
+
+114
+00:25:27,511 --> 00:25:34,911
+Geçen hafta bir örnek vermiştim size. Bizim Çok Disiplinli Tasarım Projesi dersinde öyle bir konu vardı.
+
+115
+00:25:35,604 --> 00:25:45,604
+Yani bir şekilde o sistemi tasarlamak gerekiyor. O sistemden inputları, outputları almak gerekiyor. Bilgisayarcının orada yapacağı bir iş var. Kontrolcünün yapacağı başka iş var.
+
+116
+00:25:45,604 --> 00:26:02,003
+Böyle aslında güzel ama tadını çok şey yapmamak lazım, ayarını kaçırmamak lazım. Hani haberleşmecinin bileceği şeye gidip sulanmamak gerekiyor. Bilgisayarcı bilgisayarcı kadar bilsin. Elektronikçi elektronikçi kadar bilsin.
+
+117
+00:26:02,720 --> 00:26:27,160
+Yoksa kimse kimsenin, herkes herkesin işine kalkışınca bu sefer kötü oluyor yani. Kimse bir şey yapamıyor. Yani ben şu kadar ders aldım. Ne hatırlıyorsan, yani kontrol sistemlerinde bu sistemler üzerinde o kadar çok konu var ki. Sistemlerin kararlılığı, şusu, busu, yani PID kontrolörler vesaire. Hep gördük yani, integraller çözdük vesaire ama hepsini unuttum, emin olun.
+
+118
+00:26:29,587 --> 00:26:42,288
+Çünkü bana gereksiz yere verildiğini düşünüyorum. O zamanlar doğru düzgün şey verilmemişti mesela. Data Structure dersi, yani öyle Java'da Data Structure öğrendik. C'de öğrenseydik daha kaliteli olurdu.
+
+119
+00:26:46,483 --> 00:26:49,043
+Akşam kontrolüleri ile sizi andık hocam.
+
+120
+00:26:53,844 --> 00:27:04,923
+Tabii tabii, dün üç dört tane benim çocuklardan aradılar. Ya dediler Ahmet Hoca, Ahmet Elbir. Dedim oğlum ne istiyorsunuz onun gibi hocayı? Yok yok çok iyi hocam dediler de.
+
+121
+00:27:05,299 --> 00:27:11,299
+Bizi biraz fazla, ben kontrolü verdiğinizi bilmiyordum, elektroniğe verdiğinizi biliyordum da kontrolü de verdiğinizi bilmiyordum.
+
+122
+00:27:11,559 --> 00:27:15,500
+Bizim şeyin aynısı, yapısalın bir light hali.
+
+123
+00:27:16,940 --> 00:27:17,579
+Öyle değil mi?
+
+124
+00:27:18,079 --> 00:27:21,779
+Evet, biraz daha light halini oraya veriyorum. Ama onlar kendileri cahillik ettiler.
+
+125
+00:27:21,919 --> 00:27:32,000
+Yani kalkıp da 200 kişilik grupta sen sınav sorusunu, sınav saatinde ekran görüntülerini paylaşırsan, 15 kişi sıfır aldı.
+
+126
+00:27:32,403 --> 00:27:43,083
+Ama benim çocuklar bile şunu dedi, abi dedi olan bize oluyor dedi ya, yemin ederim dedi. Yani o kadar uğraşıyoruz, uğraşıyoruz. Herif geliyor, bir şekilde bize yazık oluyor dedi.
+
+127
+00:27:43,083 --> 00:27:45,203
+Şey var mı onlardan sıfır alan var mı?
+
+128
+00:27:45,203 --> 00:27:46,963
+Oğlum sen nasıl?
+
+129
+00:27:46,963 --> 00:27:48,403
+Sıfır alan var mıymış?
+
+130
+00:27:48,403 --> 00:27:54,884
+Benimkilerden yok. Benimkiler olmaz. Benim çocuklardan çalan olmaz.
+
+131
+00:27:54,884 --> 00:27:56,884
+Şey çünkü yani bu bir...
+
+132
+00:27:57,268 --> 00:28:03,988
+Üst, şey, dersi alttan alan, dördün sınıf olup alttan alanlar falan var orada. Yani birkaç kişi...
+
+133
+00:28:03,988 --> 00:28:05,168
+Yok, benim sınıflar yine aynı ikinci sınıf.
+
+134
+00:28:06,768 --> 00:28:14,548
+İkinci sınıflar, evet [öğrenci]. Kontrol ikiler. Onlar önce MATLAB görmüşler, sonra işte C görülüyor.
+
+135
+00:28:15,468 --> 00:28:21,508
+Tabii bizim yapısal programlamanın yine benzer konuları yani structure falan anlatıyoruz da, daha light seviyede.
+
+136
+00:28:22,508 --> 00:28:23,968
+Daha malloklara yeni geleceğiz orada.
+
+137
+00:28:25,332 --> 00:28:36,332
+Pointer'dan onun için korkuyorlar dedim yani burada bir sinyal korkusu, orada bir Pointer korkusu. Onun için bu hafta bir daha sınav yapacağım Pointer'ı dahil etmedim.
+
+138
+00:28:36,332 --> 00:28:52,332
+CEO anlatabilecek en güzel hocadır dedim, son cümleye koydum, herkes biliyoruz abi, biliyoruz dediler. Onlar şimdi olayı bilmedikleri için yani aynı bizim bu sinyal sistemi uzaklığımız gibi onlar da CEO uzaklar. O yüzden biraz şeyleri vardı ama...
+
+139
+00:28:52,596 --> 00:28:54,615
+Ama öyle bir şey ki tam
+
+140
+00:28:54,615 --> 00:28:56,096
+bu sise notları gireceğim.
+
+141
+00:28:57,355 --> 00:28:58,756
+Bir bize bir final yapacağım orada.
+
+142
+00:28:59,695 --> 00:29:01,036
+İşte size de paylaştım.
+
+143
+00:29:01,155 --> 00:29:01,895
+Aman dikkat edin.
+
+144
+00:29:02,056 --> 00:29:03,395
+Aklınızı başınıza alın.
+
+145
+00:29:03,556 --> 00:29:04,576
+Yani atlamayın diye.
+
+146
+00:29:05,375 --> 00:29:06,135
+Bir tane mail.
+
+147
+00:29:06,316 --> 00:29:07,336
+30 tane fotoğraf.
+
+148
+00:29:07,615 --> 00:29:08,855
+Yani yazışmalar var.
+
+149
+00:29:10,155 --> 00:29:11,596
+Yani yazışmaların içerisindeki
+
+150
+00:29:11,596 --> 00:29:13,955
+geçen şeyler muhabbet önemli değil.
+
+151
+00:29:14,076 --> 00:29:14,375
+Ne olur.
+
+152
+00:29:14,496 --> 00:29:15,375
+İsterse küfür etsin.
+
+153
+00:29:15,375 --> 00:29:16,016
+Problem ne ama.
+
+154
+00:29:16,531 --> 00:29:26,531
+Adam sorunun fotoğrafını çekmiş, biri cevaplamış. İşte birisi zaten herkesin sorusunda cevap veriyor. Bayağı biliyor o konular herhalde. Böyle bir durum şimdi.
+
+155
+00:29:26,531 --> 00:29:38,531
+Dışarıdan geliyor, dışarıdan. Dışarıdan başka birileri, yani dışarıdan sınavlara eklentiler geliyor. Neden bilmiyorum. Geçen mesela başka bizimle alakası bir servis dersi.
+
+156
+00:29:38,708 --> 00:29:45,208
+Dışarıdan bir grup var, 5-10 bin kişilik, bayağı güzel cevapları veriyor.
+
+157
+00:29:45,208 --> 00:29:55,708
+Haa, evet bence de güya yardımcı oluyor. İşin kötü tarafı yardım bilgilerinin kimliği veya herhangi bir bilgisi de yok. Kimi yardım ettiğini de kimse bilmiyor.
+
+158
+00:29:55,708 --> 00:29:59,708
+Çocukta yardım geldiğini, ki ben de dahil, ben de aldım.
+
+159
+00:30:00,000 --> 00:30:08,000
+Yok, eğer suçsa bazı cevapları, sonuçta seçmeli cevaplar bunlar, yani şıklı cevaplar bunlar.
+
+160
+00:30:08,000 --> 00:30:12,000
+Yani boş bırakacağımı hemen orada bir şıkkı işaretledim.
+
+161
+00:30:12,000 --> 00:30:13,000
+Ama...
+
+162
+00:30:13,567 --> 00:30:35,567
+Yani bak hoca tutanlar evet harbiden öyle ya. Ama dediğim gibi yani sonuçta bu işin 5-6 sene sonrası var. Orada işe girerken hoca tutmak çok zor olacak ya. Yani ben işe gidiyorum. Yanımda 4-5 tane büyük insan. Eee işe başvuracağım. İşte bu arkadaşlarla bitirdik biz üniversiteyi. Bunların katkısı.
+
+163
+00:30:35,567 --> 00:30:39,567
+Ben en son şeyi yaptım işte.
+
+164
+00:30:39,776 --> 00:31:06,836
+Bir kişi vardı, o bir kişi de dışarıdan bir arkadaşının yerine telefonuyla gruba girmiş, o arkadaşı paylaşmıyor fotoğrafları, o kişi de benim sınıf listemde çıkmıyor. Dedim, bu arkadaş çıkmazsa herkesi disipline vereceğim, kusura bakmayın. Ondan sonra geldi, hocam dedi böyle böyle, ben bağlandım falanca arkadaşım adına. Tamam, o zaman söylediksem ben de disipline vermiyorum. Geldin doğru bir şekilde, hatanı kabul ettin.
+
+165
+00:31:07,347 --> 00:31:32,028
+dedik 10 veya 12 kişi 0 aldı, birkaç kişi %50 falan kesildi. 3-5 kişi de vardı, onlarla da sadece görüştüm. Dedim var mı böyle bir şey? Biliyorum biliyorum, zaman geçirmek için biraz şey yapıyorum. 3-5 kişiye de sadece ihtar verdik. Sınav başlamadı arkadaşlar. Sınav başlamadı.
+
+166
+00:31:35,155 --> 00:31:58,135
+Sınav. Herkes gergin. 14.30. Şimdi arkadaşlar, ben bir dakika sonra soruları yayınlayacağım. Açıklayacağım. 15 dakika kadar sorularınız varsa buradan sorabilirsiniz. Çok nettir. Evet, sorusu olan [öğrenci] sorabilirsin.
+
+167
+00:31:58,963 --> 00:32:03,483
+Hocam, benim sınavla ilgili değil de ben evde mavi tükenmez kalem bulamadım, mor buldum.
+
+168
+00:32:03,603 --> 00:32:06,463
+Olur olur, yani siyah dışında bir şey olsun da olur.
+
+169
+00:32:06,823 --> 00:32:07,423
+Tamam, okey.
+
+170
+00:32:08,123 --> 00:32:13,283
+Renkli olsun ki sizin imzaladığınız anlaşılsın, yani kurşun kalemden ayırt edebilirim.
+
+171
+00:32:13,543 --> 00:32:14,043
+Tamamdır.
+
+172
+00:32:16,627 --> 00:32:27,027
+Her sayfaya isim, soy isim ve imza atıyorsunuz arkadaşlar. Zannediyorum en fazla iki sayfa tutar çözümler. O kadar da hani dört sayfa, beş sayfa da etmez. İçinizi biraz daha rahatlatayım.
+
+173
+00:32:28,847 --> 00:32:36,487
+Evet, başka sorunuz yoksa ben şimdi size şey paylaşacağım. Sormak istediğiniz bir şey var mı? Sınavın işleyişiyle alakalı.
+
+174
+00:32:37,027 --> 00:32:40,627
+PDF olarak yüklüyorsunuz, online sisteme yüklüyorsunuz, zamanında yüklüyorsunuz.
+
+175
+00:32:41,268 --> 00:32:51,868
+Mail ile kabul edemiyoruz. Ona çok dikkat edelim arkadaşlar. Ödev olsa mail ile belki kabul edilir de, sınav olunca o biraz problemli. Ona dikkat edin lütfen.
+
+176
+00:32:53,048 --> 00:33:04,048
+Şimdi, evet. Birinci sorumuz, böyle bir XT işareti verilmiş. Bunu Kosinus Sinyalli'nin birleşenlerini bulacak şekilde analiz ediyorsunuz.
+
+177
+00:33:07,412 --> 00:33:18,112
+O fi işareti, fi miydi, tetamiydi, neyse, o nedir? Onu aşağıdaki şu işaretten buluyorsunuz. Kosünüs işareti olacak şekilde düşünüyorsunuz. Tamam mı?
+
+178
+00:33:19,012 --> 00:33:25,472
+Bunun B maddesinde de işareti örneklemek istersek en düşük örnekleme frekansı kaç olmalıdır diye buluyorsunuz.
+
+179
+00:33:26,152 --> 00:33:32,212
+Şimdi her bir sorunun İngilizcesi ikinci sayfada var. İngilizce ihtiyaç duyanlar için burada açıklamalar var.
+
+180
+00:33:32,640 --> 00:33:44,320
+Sinizoidal expression, sinizoidal expression, please find the cosinist component of the signal, amplitude, frequency and pace, A, omega and theta.
+
+181
+00:33:45,160 --> 00:33:51,020
+And please find the minimum sampling frequency for this signal.
+
+182
+00:33:52,380 --> 00:33:53,540
+Birinci soru bu şekilde.
+
+183
+00:33:54,840 --> 00:33:56,740
+İkinci soruda böyle bir işaret verilmiş.
+
+184
+00:33:57,587 --> 00:34:10,327
+Bu işaretten yola çıkarak şu üç tane işaretin şeklini çiziyorsunuz. Şimdi birinci soruda bu şekli alıp tekrar defterinize çizmeyin arkadaşlar. Birinci sorunun cevabı A seçeneği. İşte A'sı budur, şusu budur, bu'su budur, bu kadar.
+
+185
+00:34:10,835 --> 00:34:17,295
+Nasıl yazdığınızı kısa bir açıklamayla, B seçeneği de aynı şekilde tekrardan çizmenize gerek yok.
+
+186
+00:34:17,415 --> 00:34:19,576
+A bu, B bu, bu kadar.
+
+187
+00:34:20,315 --> 00:34:22,695
+İkinci soru da XT'yi çizeceksiniz.
+
+188
+00:34:23,215 --> 00:34:35,855
+Diğer o 3 sinyali de yanlarına, birinci, eksi T bölü 2 budur, 2 çarpı T artı 2 budur, eksi T artı 1 budur şeklinde kısa kısa açıklamalarla çizersiniz, yeterli olur.
+
+189
+00:34:36,724 --> 00:34:51,944
+İngilizce açıklama isteyen varsa yastın ona şey yaparım.
+
+190
+00:34:51,944 --> 00:34:57,564
+İngilizce açıklama ihtiyacınız var.
+
+191
+00:34:57,564 --> 00:35:01,304
+Üçüncü soru.
+
+192
+00:35:04,672 --> 00:35:27,532
+Yn konvolüsyon işlemini yapmanız isteniyor. Böyle bir sinyal, ayrık zamanla. Bunu da adım adım göstereceksiniz. Sonucu budur diye. Gayet basit. Dördüncü soru da hızlıca söyleyeyim. Aşağıda böyle bir periyodik fonksiyon verilmiş. Bunu ck, yani şuradaki fonksiyonu kullanarak, Fourier kat sayılarını bulan işlemi yapıyorsunuz. Herhalde...
+
+193
+00:35:27,923 --> 00:35:39,523
+çözdüğümüz örneklere çok çok benziyor. Sadece fonksiyon birazcık kıvrımlı bir fonksiyon olmuş ama zor bir integral değil. En azından biraz önce söylenen integral kurallarına falan ihtiyacımız yok.
+
+194
+00:35:40,783 --> 00:35:43,384
+Herhangi bir soru var mı? 3 ve 4'ü İngilizce'de açıklayacağım.
+
+195
+00:35:45,903 --> 00:35:51,844
+Üçüncü soruda bu fonksiyonu kullanıyorsunuz. Yani adım adım göstereceksiniz. Analitik çözüm gibi olacak.
+
+196
+00:35:53,172 --> 00:36:11,172
+Grafik çözümü, yani şey gibi değil arkadaşlar. Yani bu girdiği aldık, bunu aldık, direkt sonuç budur değil. Detaylı, adım adım şununla şunu çarptık, bunu bulduk. İsterseniz formül formatında yazın, isterseniz tablo formatında yapın. Onu size bırakıyorum. Ama pat diye sonucu yazmayacaksınız.
+
+197
+00:36:14,391 --> 00:36:16,011
+Dördüncü soru da zaten açık.
+
+198
+00:36:18,003 --> 00:36:30,804
+4th question, 3rd, please the convolution of x of n and h of n or output y and s geliyor.
+
+199
+00:36:34,164 --> 00:36:54,963
+For the output yn, convolution of x of n and h of n, fine, by using analytical or tabular solution, not only enough, direct solution, okay? You should give explanation and some details about it.
+
+200
+00:36:55,956 --> 00:37:09,275
+Question 4 is find the CK coefficients, Fourier coefficients by using this formula and by using this periodic signal.
+
+201
+00:37:10,556 --> 00:37:16,456
+Any questions about these questions? Sorular hakkında sorusu olan var mı? Hepinize başarılar dilerim.
+
+202
+00:37:18,036 --> 00:37:21,076
+Rahat rahat bence çözeceğinizi düşünüyorum.
+
+203
+00:37:24,884 --> 00:37:30,923
+Hocam bir şey sorabilir miyim? Türkçe mi açıklama bir şey yazmamız gerekirse yazalım, İngilizce mi?
+
+204
+00:37:31,463 --> 00:37:36,063
+Dersin dili İngilizce ama Türkçe yazabilirsiniz, problem değil. İsteyen İngilizce, isteyen Türkçe yaz.
+
+205
+00:37:36,144 --> 00:37:36,743
+Sağ olun hocam.
+
+206
+00:37:37,163 --> 00:37:39,663
+Explanations may be in English or Turkish.
+
+207
+00:37:44,947 --> 00:38:05,887
+Hangi soruda açıklama var derken? Yani ikinci soruda, birinci soruda da kısaca açıklamalarda bulunacaksınız. Yani buradan pat diye A eşittir, şu B eşittir, bu yazmayacaksınız. Bunun nasıl geldiğini kısa kısa açıklamanız yeterli. Ondan sonra 2'de de var, aynı şekilde 3'de de var. 4'te doğrudan formülü yazmak gerekiyor.
+
+208
+00:38:07,764 --> 00:38:13,003
+Ben size nasıl geçen hafta soruları çözdüysem o şekilde küçük küçük açıklamalar yeterli.
+
+209
+00:38:14,024 --> 00:38:17,463
+Çok bir şey yazmış olmanız doğru yapmış olduğunuz anlamına da gelmez.
+
+210
+00:38:17,664 --> 00:38:19,624
+Çok fazla gereksiz açıklamalara da boğmayın.
+
+211
+00:38:20,344 --> 00:38:22,963
+Dedim ki bu soruların çözümün maksimum iki sayfa yeterli.
+
+212
+00:38:23,904 --> 00:38:28,543
+Hocam o kadar yazdım puan alamamışım diyeniyor ama o kadar yazdığım içerisinde hiçbir tane doğru yok.
+
+213
+00:38:29,104 --> 00:38:30,324
+O nedenle ona da dikkat edelim.
+
+214
+00:38:30,324 --> 00:38:33,324
+Ben kısa öz sonucu söyleyen...
+
+215
+00:38:34,324 --> 00:38:37,224
+Sonucu açıklayan, sonucu belirten açıklamalar yeterli bana.
+
+216
+00:38:42,132 --> 00:38:43,132
+Başka sorumuz?
+
+217
+00:38:48,148 --> 00:38:49,996
+Bakalım kimler girmiş?
+
+218
+00:38:55,603 --> 00:38:57,603
+Önceden görüyorduk, şimdi onu da mı göremiyoruz?
+
+219
+00:39:09,268 --> 00:39:13,587
+15 geçiye kadar buradayım. Yazılı veya sözlü soru sorabilirsiniz.
+
+220
+00:39:14,747 --> 00:39:18,028
+Direct mesaj göndermeyin. Herkes görsün sorunuzu.
+
+221
+00:39:47,731 --> 00:39:57,112
+Sisteme giremeyen var mı? Girebilen var mı? En azından ben girdim hocam diyebilirsiniz. Merak ettim, önceden görülüyordu çünkü.
+
+222
+00:39:57,452 --> 00:39:58,731
+Girdim hocamdan sıkıntı yok.
+
+223
+00:39:58,791 --> 00:40:00,471
+Tamam, teşekkür ederim, sağ olun.
+
+224
+00:48:00,403 --> 00:48:02,764
+Herhangi bir soru yoksa arkadaşlar çıkabilirsiniz.
+
+225
+00:48:07,539 --> 00:48:11,979
+Diğer derslerde görüşmek üzere. Bu derste haftaya görüşmek üzere.
+
+226
+00:48:25,204 --> 00:48:30,963
+Bir problem olursa şeyden yazarsınız, gerekirse ben tekrar size bir link açarım.
+
+227
+00:48:33,844 --> 00:48:37,043
+Uygulamadan, Televram'dan.
+
+228
+00:48:39,764 --> 00:48:41,284
+Peki, kolay gelsin.

@@ -1,0 +1,3867 @@
+1
+00:01:06,260 --> 00:01:08,560
+Günaydın arkadaşlar. Sesim geliyor mu?
+
+2
+00:01:09,660 --> 00:01:12,800
+Günaydın hocam.
+
+3
+00:01:21,396 --> 00:01:44,936
+Bugün sunumlarımızı yapıyoruz, doğru mu? Evet hocam. [öğrenci] sen hazırsın. Aynen hocam. Tamam, ben seni şimdi host yapıyorum. Sen de bir sonraki arkadaşı host yaparsın, bu şekilde gideriz. Tamamdır. Hocam host yapmadan da paylaşılabiliyor galiba.
+
+4
+00:01:45,748 --> 00:01:47,288
+Ekran paylaşımı yapabiliyoruz.
+
+5
+00:01:47,668 --> 00:01:50,268
+Paylaşım için aynen. Host olmaya gerek yok sanırım hocam.
+
+6
+00:01:51,608 --> 00:01:54,308
+Tamam. Öyleyse sen yap bunu [öğrenci]. Yapabiliyorsun.
+
+7
+00:01:54,308 --> 00:01:56,508
+Tamamdır. Diniyorum.
+
+8
+00:01:58,367 --> 00:01:59,348
+Şu an görüntü var mı hocam?
+
+9
+00:02:00,408 --> 00:02:02,647
+Var. Tamam. Demek ki oluyormuş.
+
+10
+00:02:03,367 --> 00:02:08,987
+Tamamdır. İlk olarak ben anlatacağım makalenin orijinalini göstermek istiyorum.
+
+11
+00:02:09,876 --> 00:02:35,956
+Makale mobilya stillerinin çıkarılması üzerine yoğunlaşıyor. Bunun için bir derin öğrenme tekniği kullanıyor. Keras üzerinde VGG16 yapısı kullanılmış. Genel olarak rapordan bahsetmek gerekirse çok güzel hazırlandığını söyleyebilirim. Görsel olarak çok iyi bir anlatım benimsenmiş. Ben de bununla ilgili bir çıkarım raporu. Ardından da kendi yaptığım demoyu gösteren ek bir rapor daha hazırladım.
+
+12
+00:02:37,651 --> 00:02:49,211
+Dün yine sunumu zenginleştirmek adına bir tane de slide gösterisi hazırladım. Hocam, önden göndermek için bir link paylaşacağınızı söylemiştiniz ama ben onu göremedim. Acaba paylaşmış mıydınız siz?
+
+13
+00:02:49,711 --> 00:02:51,771
+Yok, onu sonra paylaşacağım dedim.
+
+14
+00:02:52,211 --> 00:02:55,851
+Tamamdır hocam. Ben şu an bir sunumu hazırladım. Onun üzerine devam edeceğim.
+
+15
+00:02:56,231 --> 00:03:02,671
+Rapor sunulacak ya bugün. Yani sunulacaktı. O rapor linkiyle karıştırabilir insanlar diye.
+
+16
+00:03:03,316 --> 00:03:08,036
+Bugün gün içinde hazırlarım ben onu. Teneffüste vesaire paylaşırım sizinle.
+
+17
+00:03:08,376 --> 00:03:16,295
+Tamamdır hocam. Makalenin tam adı etkileşimli 3D sahne modellemesi için görsel üzerinde mobilya stili eşleştirme.
+
+18
+00:03:16,295 --> 00:03:21,292
+Böyle süreğin çok karmaşık geliyor ama aslında makalenin içeriğine baktığımızda...
+
+19
+00:03:21,331 --> 00:03:46,251
+Belli bir tarzı sahip ortamların tasarlanması için normalde uzmanlar çalışıyor. Bunlar iç mimarlar olabilir, sanatkarlar olabilir. Bunu doğrudan bilgisayar eliyle yapan az sistem var. Bu makalede de bunun üzerine bir sistem geliştirilmiş. Farklı mobilya örnekleri veriliyor sisteme. Daha sonra bu mobilyaların çeşitli parametreleri incelenerek mobilyalar birbirleriyle eşleştiriliyor.
+
+20
+00:03:46,963 --> 00:04:11,164
+İlk olarak müşteri için beklentilerine uygun bir sahne oluşturularak işe başlanıyor. Müşteriden birkaç tane tercih alınıyor. Daha sonra bu tercihlerine uygun şekilde uyumlu olabilecek mobilya seçenekleri müşteriye sunuluyor. Ayrıca bir tek bu şekilde öneri yapan sistemde kalmayıp bir de 3D modelleme şeklinde bir sağ sahne oluşturan bir sistem de yine entegre edip makalede bunu da sunmuşlar.
+
+21
+00:04:12,276 --> 00:04:23,716
+Altyapısına baktığımızda bizim için önemli olan kısım bir derin öğrenme mimarisi var. BGL 94 temelli input kullanan VGG 16 mimarisine sahip bir keras alı kullanılıyor.
+
+22
+00:04:23,716 --> 00:04:38,716
+Tabii doğrudan olduğu gibi kullanılmamış bu. Son iki katmanlı değişiklikler yapılmış. Bununla ilgili ayrıntıları raporunda vermiştim. Çok fazla detay yapı olmadan eğitim seti, test seti ve validasyon seti olarak %80, %10, %10 şeklinde bir bölüme sahip.
+
+23
+00:04:40,276 --> 00:04:50,836
+Yani 672 bin görsel üzerinde çalışılmış ve tabii çok fazla bir üzerinde çalışıldığı için bunu Nvidia'nın Tesla işlemcisi üzerinde gerçekleştirmişler.
+
+24
+00:04:51,716 --> 00:04:55,216
+Yaklaşık 5 saat gibi bir zaman eğitim tamamlanmış.
+
+25
+00:04:56,216 --> 00:04:58,276
+Sistemin işleyişinde...
+
+26
+00:05:01,843 --> 00:05:23,963
+Şöyle yapalım. Öne çıkan noktalarla devam edeyim. Zaman alacak çünkü. Öne çıkan noktalara baktığımızda aslında Ikea'nın, Pinterest'in, Wayfair'in benzer işi yapan uygulamaları var. Hali hazırda da bunu müşterilere seçenek sunmak için kullanıyorlar. Ancak onlar daha çok geometri temelli yaklaşımlar benimsemişler. Yani köşe bulma gibi yöntemden kullanıp geometrisi üzerinden tanımlama işlemi yapıyorlar.
+
+27
+00:05:24,627 --> 00:05:41,887
+Buradaysa sadece geometrik üzerinde çalışılmamış, farklı açılardan çekilmiş görsellerin benzerlik bağlantısını kurmayı kolaylaştıran kumaş, renk, farklı tarzlar gibi parametreler üzerinde de çalışılmış. Ayrıca etiketlerin oluşturulması gerekiyor.
+
+28
+00:05:41,887 --> 00:05:52,627
+670.000 görsel üzerinde. Bunun için de uzmanlardan destek almışlar. Birçok uzmandan destek almışlar. Birbirlerinden farklı da zevklere sahip olabilir bunlar. Onlar da farklılık gösteriyor.
+
+29
+00:05:52,627 --> 00:06:19,588
+Bunu da yönetebilmek için karşılaştırma etiketi adı verilen yeni bir yapı kullanmışlar. Bu sayede doğrudan 0-1 mantığıyla değil de puanlama mantığıyla sisteme bunu öğretebilmişler. Stil önerileri verebilen bir ürün ortaya konmuş ayrıca. Yani doğrudan önerimiz bu diye tekst olarak vermek yerine bunu 3D bir sahne olarak oluşturabildiğini söylüyor makalede.
+
+30
+00:06:20,980 --> 00:06:48,060
+Hızlıca sonucuna geçtiğimizde neler yapılabilir, neleri iyi yapmışlar, gelecek çalışmalarda neler daha iyi yapılabilir? Gelecek çalışmalarda daha fazla stil ve kategori ekleyerek çalışmalar gerçekleştirilebilir. Stil olarak burada birçok seçim var. Modern, geleneksel gibi seçenekler var ancak tabii stilin sonu yok. Yenileri eklenerek çalışmalar yapılabilir. Daha az stil üzerinde performanslı sonuçlar alınabilecek bir mimari tasarımı da mümkün.
+
+31
+00:06:48,980 --> 00:06:53,340
+Mobil uygulamaları üzerinde kullanmak için böyle seçenekler çok uygun oluyor.
+
+32
+00:06:53,340 --> 00:07:01,780
+Dünya ihtiyaçlarının adaptasyonu hızlandırmak ve mobil cihazlar üzerinde çevrim dışı tarım imkanları sunmak gerçekten çok önemli.
+
+33
+00:07:01,780 --> 00:07:04,939
+Bunun için de ağın boyutunu düşürmek gerekiyor.
+
+34
+00:07:04,939 --> 00:07:12,540
+Bir de bu model doğrudan çekilmiş fotoğraf 2D görselleri üzerinde çalışmış. Doğrudan 3D girdi alması mümkün olabilirdi.
+
+35
+00:07:12,540 --> 00:07:14,939
+Çünkü zaten kendisi 3D çıktılar verebiliyor.
+
+36
+00:07:15,411 --> 00:07:21,311
+Şimdi asıl eğlenceli kısma geliyoruz. İkinci bölüm geçmiş projeler ve deneysel çalışmalar.
+
+37
+00:07:21,875 --> 00:07:49,156
+Aslında bu konunun ilgimi çekmesinin bir sebebi var. 2017 yılında ben bir galer uygulaması geliştirmiştim. Amaç özel birlikte yapmıştık bunu. Orada Google Cloud'ın Vision API'yini kullanan bir yapı vardı. Cloud tabanlı olarak etiketlerini de oradan alabiliyordum görselleri. Burada sadece mobilyalar üzerinden bir etiket çıkarımı, kategorizasyon söz konusuyken Google Cloud Vision API bunu çok uç seviyelere taşımış durumda.
+
+38
+00:07:49,875 --> 00:08:04,875
+Herhangi bir sahneden çok detaylı görsel etiketlerini alabiliyorsunuz. Örneğin, sol tarafta şu an bir karlı ortam fotoğrafı görüyorsunuz. Burada rüzgar, fırtına, donma, birçok etiket size geri dönüyor.
+
+39
+00:08:04,875 --> 00:08:14,795
+Ki bu bir araba fotoğrafı olduğunda arabanın modeline kadar, parça özelliklerine kadar sınıflandırabileceğiniz birçok kategorik etiket size geri dönmüş oluyor.
+
+40
+00:08:15,091 --> 00:08:18,231
+Bu açıdan da çok büyük benzerlik kurduğum bir proje oldu.
+
+41
+00:08:20,175 --> 00:08:30,255
+Şimdi ben bir kod geliştirmesi yaptım. VGG16 Keras tarafında açık bir yapı. Doğrudan çok basit bir şekilde kullanılabilen bir mimari.
+
+42
+00:08:30,255 --> 00:08:38,415
+Ayrıca internet üzerinden yaklaşık 4500 tane mobilya fotoğrafı buldum. Doğrudan datasyon buldum Keral üzerinden.
+
+43
+00:08:38,415 --> 00:08:44,415
+Bunlardan da 500 tanesini seçtim çünkü işlemesi çok zaman alıyor. Benim elimde çok güçlü bir ekran kartı yoktu.
+
+44
+00:08:44,415 --> 00:08:48,175
+Bunlardan yatak, sandalye, koltuk, döner...
+
+45
+00:08:48,176 --> 00:08:54,396
+Sandalye ve masa içeren her birinden 100'er tane olmak üzere toplam 500 tane kendime veris eti belirliyordum.
+
+46
+00:08:55,028 --> 00:09:23,028
+Bunlar üzerinde kategorizasyon gerçekleştirdim. Aslına bakarsanız Keras ilk önce bunlardan özellik çıkarını yapıyor. Daha sonra K-Mease kullanarak siz kümeleme işlemi gerçekleştiriyorsunuz. Ben 500 örneği özelliklerden çıkardım. Daha sonra bir sınıflandırma işlemi gerçekleştirdim. Açıkçası VGD-16'nın bu kadar başarılı sonuçlar vermesini ben de beklemiyordum. Çok büyük oranda başarılı denilecek sonuçlar verdi. Bir iki seçenek birbiriyle karıştırdım.
+
+47
+00:09:23,028 --> 00:09:34,347
+Mesela grafik üzerinden çok hızlı şekilde onu da anlatmak istiyor. Ben keymiği size hümelediğim için 0'dan 4'e kadar numaralar verdim. Hangisinin neye karşı geldiğine başla bilmiyoruz.
+
+48
+00:09:34,803 --> 00:09:59,023
+Klas 0 olarak etiketlediğimiz çok büyük çoğunlukla yataklara karşılık geldi. Klas 1 olarak etiketlediğimiz %100 oranla masalara denk geldi. Bu ikisi çok başarılı sonuçlar. Klas 2 olarak etiketlenen küme yine %100 oranında döner sandalyeleri içeriyor. Ancak klas 2 ve klas 4 arasında çok büyük bir karmaşı söz konusu.
+
+49
+00:10:00,000 --> 00:10:19,259
+Orada çok başarılı çalışamadığını söyleyebilirim. Bir de yatak ve koltukları birbirine çok fazla karıştırmamış durumda hocam. Yani bilmiyorum orada artık yine kumaş yapısı tekstür olarak VGG 16'da bakıyor mu yeni sürümlerinde bilmiyorum ama %50-%50'ye yakın şekilde yataklar ve koltuklar birbirine karıştı diyebilirim.
+
+50
+00:10:21,172 --> 00:10:39,011
+Bunun dışında bayağı bir kaynaktan faydalandım. Bunları da sizinle paylaştım. Slide'da da, raporda da. Çok hızlı bir şekilde ben kodumu da göstermek istiyorum. Genel olarak etiketleri oluşturan bir modülüm var. Daha sonra bunları kümeleyen bir modülüm var. Şurada.
+
+51
+00:10:39,375 --> 00:11:04,875
+Bunları daha sonra ben klasörlere dağıtıyorum. Görüntüsü, incelemesi kolay olsun diye. Ayrıca bundan da sonra istatistik çıkaran BIF kol parçam daha oldu. Ayrıca bunları grafikleştirmek için de Excel tarafında yine bir geliştirmem oldu. Açıkçası eğlendiğimi söyleyebilirim hocam. Benim için çok eğlenceli bir ödüm olduğunu söyleyebilirim. Fazla da sözü uzatmadan ben bu noktada bitirebilirim. Arkadaşlarımın sorusu var, soru da alabilirim.
+
+52
+00:11:07,379 --> 00:11:17,919
+Tamam. O incelediğin paperın mimarisi neydi? Kullandığı ağının vesairenin anlatmış mı?
+
+53
+00:11:18,451 --> 00:11:38,231
+Ötürü hocam anlatmış durumdaydı. Sunum süremiz kısıtlı olduğu için çok fazla bu derinlere girmedi. Yoksa bunun dışında matematiksel ifadeleri ne kadar anlatılmış durumdaydı bunlar. Son iki katmanında bir değişikliğe gidilmişti. Özellikle onu not aldım ben. İsterseniz detay olarak hızlıca onu paylaşabilirim.
+
+54
+00:11:38,231 --> 00:11:45,911
+Fully Connected Layer ve aktivasyon fonksiyonları da Softmax kullanıldığı detayları özellikle verilmiş.
+
+55
+00:11:46,451 --> 00:11:52,231
+Son katmanda da yine Rally'e yer verilmiş. Bunlar standart BGG-16 üzerinde yapılan değişiklikleri olmuş onların.
+
+56
+00:11:53,591 --> 00:12:00,351
+Bu GAN kullanmamış mı? Ben şimdi yanlış mı anladım? Henüz raporlarınıza da bakmadım da.
+
+57
+00:12:03,220 --> 00:12:10,500
+Yani hangi network, hangi ağları kullanmış? A tiplerini inceleyelim.
+
+58
+00:12:10,500 --> 00:12:21,660
+Farklı ağ katmanları ile karşılaştırmalarını da vermişti. Kendisi BGL94 kullanmıştı ama aynı noktaya denk geliyor mu bilmiyorum. Doğrudan görmedim açıkçası.
+
+59
+00:12:21,660 --> 00:12:27,660
+Yani bu ama bir oluşturuyor diye mi? Kendisi ben şimdi sen sınıf...
+
+60
+00:12:27,892 --> 00:12:36,831
+Sınıflama şeklinde anlattın. Daha doğrusu örneğini öyle yaptım da anladın. Bu bir görme yapıyor değil mi? Üretici bir ağ.
+
+61
+00:12:36,831 --> 00:12:49,252
+Tabii hocam, üretici bir ağ. Kendisi modern, geleneksel, cottage ve coastal'dı. Ne anlama geldiğini bilmiyorum. Bu şekilde çıkarımlar yapıyor görseller üzerinden, mobilyalar üzerinden.
+
+62
+00:12:49,831 --> 00:12:55,112
+Ve bu daha detaylı şekilde hocam, raporda anlatmıştım da çok hızlı geçtiğim için bazı detaylar kayboldu, onu da belirteyim.
+
+63
+00:12:55,892 --> 00:13:05,372
+Bu görsellerden daha sonra bir ortam oluşturuyor. Bunların belli noktaları eşleşiyor diyerek bunlardan sonunda bir set çıkartmış oluyor.
+
+64
+00:13:05,752 --> 00:13:14,072
+Ayrıca input olarak da gerçek görselleri ve sanal görselleri birlikte kullanmış. Bu da yine onun kazanımlarından bir tanesi.
+
+65
+00:13:14,432 --> 00:13:22,072
+Yani şunu yapabiliyor. Doğrudan bir mobilya dükkanının katalogunu taratıp bunun üzerinden mobilyaları gösterebiliyorsunuz sisteme.
+
+66
+00:13:27,892 --> 00:13:40,832
+Sunumları çok başarılı hocam. Onu söyleyebilirim. Açıkçası görsel anlatım anlamında çok başarılı bir makale hazırlanmış. O konuda takdirimi sunuyorum yazanlara.
+
+67
+00:13:44,052 --> 00:13:46,452
+Sen yükledin değil mi?
+
+68
+00:13:47,192 --> 00:13:49,012
+Evet hocam. Sunum hariç şu an.
+
+69
+00:13:50,292 --> 00:13:50,712
+Anladım.
+
+70
+00:13:55,059 --> 00:14:00,340
+Enteresan, biraz şeyi bekliyordum. Mesela sen GAN falan direkt kullanılmasını bekliyordun da.
+
+71
+00:14:06,000 --> 00:14:06,879
+Bakalım.
+
+72
+00:14:07,500 --> 00:14:13,620
+Hazır adan faydalandığı için hocam bir noktada geliştirmekin full olarak üstlenmediklerini söyleyebilirim.
+
+73
+00:14:13,936 --> 00:14:24,936
+Çünkü Keras bu ağı çok hazır bir şekilde sunuyor. Yani ben bile çok fazla efor sarf etmeden doğrudan bunu kullandım. Ayrıca kullandığım görselleri de göstermek istiyorum.
+
+74
+00:14:24,936 --> 00:14:33,936
+Çıktılarını daha doğrusu göstereyim. Şu şekilde görseller kullandım ben de eğitimde. Daha doğrusu testte. Zaten eğitilmiş bir ağ kullanıyoruz.
+
+75
+00:14:33,936 --> 00:14:39,936
+Burada gördüğünüz üzere arka planı doğrudan beyaz olanlar da var.
+
+76
+00:14:40,244 --> 00:14:42,463
+Gerçek bir ortamda çıkanlar da var.
+
+77
+00:14:42,764 --> 00:14:48,543
+Senin ürettiğin ağ sınıflama mı yapıyor? Yeni bir tasarım yapıyor mu peki?
+
+78
+00:14:48,644 --> 00:14:55,443
+Benzer şekilde özellik çıkarımını yapıyor. Özellik çıkarımından da vaktim sınırlı olduğu için doğrudan sınıflama işlemi gerçekleştirdim.
+
+79
+00:15:08,244 --> 00:15:11,803
+Bu konuyu değerlendirebileceğimiz bir yapı ortaya koyabilmişler.
+
+80
+00:15:11,803 --> 00:15:12,524
+Bak halde.
+
+81
+00:15:13,683 --> 00:15:16,764
+Peki. Tamam, teşekkürler.
+
+82
+00:15:18,104 --> 00:15:19,323
+Rica ederim hocam.
+
+83
+00:15:19,343 --> 00:15:20,203
+[öğrenci].
+
+84
+00:15:21,583 --> 00:15:22,624
+Soru durdurum.
+
+85
+00:15:23,463 --> 00:15:27,024
+Tamam. Sorunuz var mı herhalde arkadaşlar?
+
+86
+00:15:31,635 --> 00:15:48,635
+Tamam, güzel bir çalışma. Sırada kimi demişiz? [öğrenci] demişiz. [öğrenci] burada mısın? Evet hocam buradayım. Tamam, sen başla istersen sunuma.
+
+87
+00:15:54,451 --> 00:15:56,591
+Evet.
+
+88
+00:16:01,395 --> 00:16:02,395
+Eee...
+
+89
+00:16:04,395 --> 00:16:05,395
+Ne sebaşta.
+
+90
+00:16:13,203 --> 00:16:25,003
+Hocam, benim projem Oldify projesi. Bu proje, sunum planından da bahsedeyim önce. Sunum planında,
+
+91
+00:16:25,683 --> 00:16:32,883
+Oldify projesinin ne olduğundan bahsedeceğim. Kullandığı yöntemleri, performans analizi ve sonuçlarını göstereceğim.
+
+92
+00:16:39,091 --> 00:16:55,692
+Bu projenin paperı yoktu hocam. Paperı bir nevi ben hazırlamış oldum bu proje için. Ama ben de kodlama kısmından yırtmış oldum diyebilirim.
+
+93
+00:16:59,692 --> 00:17:03,892
+Filmlere de renklendirebiliyor hocam.
+
+94
+00:17:05,491 --> 00:17:06,571
+Zaten...
+
+95
+00:17:06,771 --> 00:17:11,172
+Filmi seri oynatılmış resimler olarak düşünübiliriz.
+
+96
+00:17:12,491 --> 00:17:17,031
+Uzunluan yöntemlere gelecek olursak, Gan mimarisini de hazırlamış hocam.
+
+97
+00:17:17,031 --> 00:17:19,672
+Derin öğrenme modelini en başlarda.
+
+98
+00:17:21,112 --> 00:17:24,391
+Daha sonra Nogen mimarisine geçmiş, Natomigen.
+
+99
+00:17:25,891 --> 00:17:32,771
+Gan mimarisine gelecek olursak, sıkça hırsız.
+
+100
+00:17:33,107 --> 00:17:52,748
+Kalpazan Polisi Kilisine benzetiyor bu mimari. Bu mimari de 2014 yılında Ay'ın ve arkadaşları tarafından tanıtıldı. Bu mimari de hocam ikisini rağ bulunmaktadır. Biri jeneratör, diğeri diskriminatör adıdır.
+
+101
+00:17:57,011 --> 00:18:11,031
+Biri üretiyor, diğeri bunun gerçek veya yanlış olduğunu sınıflandırmaya çalışıyor. Toplamları sıfır olan bir oyun gibidir. Bir ağın kazanç değeri diğer ağ için loss değerine denk düşüyor.
+
+102
+00:18:13,951 --> 00:18:18,451
+Gun eğitimi bu iki ağın eş zamanlı olarak eğitilmesiyle gerçekleşiyor.
+
+103
+00:18:21,451 --> 00:18:24,031
+Kalpazan polis örneği sık çevirilmekte hocam bu.
+
+104
+00:18:24,531 --> 00:18:44,971
+Mimari için. Kalpazan sürekli polisi yanıltmak için daha iyi paralar üretmeye çalışacak. Polis de bu sahte paraları yakalamak için kendi yöntemlerine yenilecek. Böyle böyle bu ikisinin gelişmesiyle daha iyi sonuçlar üretilmiş oluyor.
+
+105
+00:18:49,203 --> 00:18:53,343
+Jason Antik bu GAN yapısını biraz daha geliştirmiş.
+
+106
+00:18:53,823 --> 00:18:57,763
+Nogen olarak nitelemiş bu ağın yapısını.
+
+107
+00:18:59,203 --> 00:19:04,743
+GAN öyle ki tek başına geliştirilmesi için hocam çok fazla süre isteyen bir şey.
+
+108
+00:19:04,743 --> 00:19:09,903
+CPU ile eğitim yapıldığında günler sürebilmekte.
+
+109
+00:19:10,403 --> 00:19:16,907
+Fakat Nogen ise jeneratör ağını önceden bir eğitime sokarak
+
+110
+00:19:16,980 --> 00:19:31,799
+Jeneratör ağının gan eğitimine girmeden daha iyi sonuçlar verebilecek, daha idare edebilecek hale getiriyor. Daha sonra gan eğitimiyle beraber daha gerçekçi sonuçları yakalamış oluyorlar diskriminatör ağıyla beraber.
+
+111
+00:19:33,380 --> 00:19:43,579
+Ayrıca ganı normal olarak yettiğimizde hocam yapay oluşumlar çok fazla oluşuyor. Jason Antik bunu artifak demiş.
+
+112
+00:19:44,884 --> 00:19:51,864
+Bunların çok sıkça oluştuğunu görmüş. Fakat Nogen eğitimiyle beraber bunların daha az yapıda oluştuğunu belirtmiş.
+
+113
+00:19:57,715 --> 00:20:19,215
+Burada Nogen A'nın nasıl eğitildiğinden bahsettim. Ayrıca eğitim sırasında Gauss gürültüsü uygulamış örneklere. Bu da gürültülü örneklere daha iyi sonuçlar üretebilmesi için böyle bir yönteme gitmiş.
+
+114
+00:20:23,728 --> 00:20:38,827
+Performans analizine gelecek olursak, hocam ben 50 örnek için performans analizi yapmak istedim. Çünkü internette herhangi bir performans analizi bulamadım. Zaten paperada olmadığı için.
+
+115
+00:20:51,667 --> 00:21:14,907
+Kaba kuvvet yaklaşımıyla bir benzerlik hesapladım. Yani her kanaldaki değeri projenin tahmin ettiği değerden çıkararak, daha sonra ne kadar birbirinden uzakta bunları toplayarak ve toplam piksel sayısına bölerek bir benzerlik oranı hesapladım.
+
+116
+00:21:17,811 --> 00:21:33,951
+Karşılıklı olarak piklerlerde tam rengi tutturduğu oran binde beş olarak karşımıza çıkıyor hocam. Bu oran çok çok düşük bir oran. Ama genel olarak resmin benzerlik oranında yüzde yetmiş gibi bir oranı bulabiliyoruz.
+
+117
+00:21:34,851 --> 00:21:44,171
+Bunun sebebi renklendirmede bazen hatalar yapabiliyor hocam. Yani orijinal rengini yakalamada.
+
+118
+00:21:44,528 --> 00:21:58,768
+Hatta bazen değil, büyük hatalar yapabiliyor. Ama genel resmin benzerliğinde, genel tonları tutturmada başarılı oluyor hocam. Bunun sebebini böyle açıklayabiliriz.
+
+119
+00:22:00,248 --> 00:22:07,768
+Yaklaşık olarak benzer bir şey çıkarıyor galiba. Bu %72'yi nasıl bulmuştun? Onu kaçırdım ben.
+
+120
+00:22:08,908 --> 00:22:10,528
+Hocam 50 tane örneği...
+
+121
+00:22:11,284 --> 00:22:31,284
+Kendim bir orijinal resmi koydum. Bunu gris skalaya çevirdim. Daha sonra o gris skala resmi The Old Defy ile renklendirdim. Daha sonra orijinal renkli resimle The Old Defy'ın ürettiği resim arasındaki şeylere baktım. Benzerlikleri hesaplayarak buldum.
+
+122
+00:22:35,124 --> 00:22:44,163
+Jason Ante'ye göre de bu rengi tutturma işlemi hocam hala büyük bir challenge olarak bu alanda duruyor mu?
+
+123
+00:22:44,163 --> 00:22:49,163
+O zaten çok zor değil mi? Yani orijinal şimdi...
+
+124
+00:22:52,403 --> 00:23:08,463
+Orjinal resmi direkt tak diye bulmak bilmiyorsun. Şu anda benim şu resmime bakıyorum. Kameradaki resmime. Arkada da işte o şey var. Görüntü var.
+
+125
+00:23:10,603 --> 00:23:13,103
+Ne olduğunu nereden bileceksin?
+
+126
+00:23:17,268 --> 00:23:20,087
+İmkanlı mı sence? Zaten mümkün mü ki?
+
+127
+00:23:22,167 --> 00:23:29,987
+Çok zor bir şey hocam. Sonuçta siyah beyaza döndürdüğümüzde biz her zaman kayıplı bir iş yapmış oluyoruz.
+
+128
+00:23:30,268 --> 00:23:32,487
+Aynen. Bilgi kaybediyoruz esasen.
+
+129
+00:23:32,507 --> 00:23:33,587
+Bilgi kaybediyoruz, evet.
+
+130
+00:23:34,907 --> 00:23:40,768
+Dolayısıyla hani onu nereden bilecek, değil mi?
+
+131
+00:23:40,768 --> 00:23:44,967
+Evet. Çok zor bir şey. Çok zor bir soru.
+
+132
+00:23:46,228 --> 00:23:53,268
+Peki sen o zaman o kodu indirdin, çalıştırdın değil mi?
+
+133
+00:23:54,228 --> 00:23:56,627
+İnternetle direkt hazır API'yi vardı hocam.
+
+134
+00:23:58,587 --> 00:24:02,107
+API kullandın, direkt web sitelerine mi gönderdin?
+
+135
+00:24:02,107 --> 00:24:03,847
+Evet hocam, web sitelerine gönderdim.
+
+136
+00:24:08,548 --> 00:24:10,948
+Hocam birkaç örnek resim de koydum.
+
+137
+00:24:11,248 --> 00:24:16,248
+Evet, biraz göstersene bize bir şey var. Resim görelim.
+
+138
+00:24:16,248 --> 00:24:26,248
+Golden Gate Köprüsü'nün inşaatı halindeyken bir resim görmüş.
+
+139
+00:24:26,248 --> 00:24:32,248
+Direkler kırmızı değil hocam. O da buna şaşırmış biraz.
+
+140
+00:24:32,248 --> 00:24:39,244
+Acaba demiş, yapım aşamasında beyazlı da sonradan mı kızıl renge döndürdüler diye.
+
+141
+00:24:39,796 --> 00:24:42,876
+Yapım aşamasındayken de kızıl renkliyim.
+
+142
+00:24:43,596 --> 00:24:45,996
+Rengi tam tutturamıyor ama
+
+143
+00:24:46,596 --> 00:24:49,876
+göze çok hoş gelecek şekilde boyamayı yapabiliyor.
+
+144
+00:24:51,076 --> 00:24:53,876
+Örneklerle bariz bir...
+
+145
+00:24:53,876 --> 00:24:57,276
+Zaten öyle bazı renkleri...
+
+146
+00:24:57,276 --> 00:25:02,196
+Dediğim gibi losslu kayıplı bir döngü var. Bazı renkliler...
+
+147
+00:25:02,900 --> 00:25:12,240
+Griye çevirdiğinde diğer renklerle aynı griye çevrilecektir. Doğal olarak hani onu bilemeyecek, onu artık neye göre seçilecek.
+
+148
+00:25:13,240 --> 00:25:28,204
+Ama veri seti hazırlaması kolay bir problem. Güzel tarafı bu problemin, hoşuma giden tarafı. Yani elinde tüm interneti dolaşabilirsin, bütün resimleri indirebilirsin, sonra onların...
+
+149
+00:25:28,468 --> 00:25:50,248
+Renkli resimleri griye çevirebilirsin. Sonra da tekrar veri seti diye verebilirsin yani. Ama şey griye çevirirken de farklı çevirme yöntemleri var. Yani nasıl çeviriliyor aslında griye?
+
+150
+00:25:53,299 --> 00:25:57,299
+Veya sen nasıl çevireceksin sorusu var veselsen değil mi?
+
+151
+00:25:57,819 --> 00:25:58,700
+Evet hocam.
+
+152
+00:26:02,099 --> 00:26:09,979
+Diğer örneklere de geçeyim hocam. Bu da 1911 yılından bir fotoğraftı yanlış hatırlamıyorsam.
+
+153
+00:26:15,092 --> 00:26:18,551
+Tamam. Arkadaşların sorusu varsa alabilirim hocam.
+
+154
+00:26:20,551 --> 00:26:26,291
+Aslında siyah beyaz değil, Sephya'dan da çevirmiş gibi. Örnek ilk de doğrudan siyah beyaz değil.
+
+155
+00:26:28,172 --> 00:26:31,112
+Evet. Yani onları da başarı göstermiş aslında.
+
+156
+00:26:35,604 --> 00:26:39,903
+Yani şu ikisi arasında tabii yine de güzel bir, büyük bir fark var.
+
+157
+00:26:43,263 --> 00:26:45,183
+Bu da hocam, kendi çevirdin resim.
+
+158
+00:26:47,943 --> 00:26:48,584
+Tamam.
+
+159
+00:26:52,023 --> 00:26:54,283
+API'yi ücretsiz mi kullandırıyor?
+
+160
+00:26:55,043 --> 00:26:57,683
+API ücretsiz hocam. Ücretli sürümü de var.
+
+161
+00:26:58,403 --> 00:26:59,423
+Sınırları vardır.
+
+162
+00:27:00,423 --> 00:27:01,604
+Evet, o da...
+
+163
+00:27:02,420 --> 00:27:04,420
+İyi sonuçlar verdiğini söylüyor.
+
+164
+00:27:05,420 --> 00:27:06,220
+Tamam.
+
+165
+00:27:08,600 --> 00:27:10,340
+Anlatacaklar mı bu kadar hocam benim?
+
+166
+00:27:11,080 --> 00:27:11,860
+Tamam o zaman.
+
+167
+00:27:14,640 --> 00:27:16,440
+Dediğiniz için teşekkür ederim.
+
+168
+00:27:16,500 --> 00:27:17,660
+Ben teşekkür ederim.
+
+169
+00:27:27,892 --> 00:27:38,392
+Peki, sonra kimi dedik? [öğrenci] demişiz. Merhabalar. [öğrenci] sen başla istersen sununa.
+
+170
+00:27:52,564 --> 00:27:55,124
+Oyuncu şu an ekran görüntüsü ile ilgili bir sınıfımız yok değil mi?
+
+171
+00:27:55,564 --> 00:27:56,524
+Yok, görüyoruz.
+
+172
+00:27:56,764 --> 00:27:57,784
+Tamam hocam, teşekkür ederim.
+
+173
+00:27:58,604 --> 00:28:08,404
+Hocam, incelediğim çalışmada TAPA meyvesinde görülen hastalıkların keskip bir res kıklandırılması üzerine yapılan makine görev tabanlı bir çalışma ile ilgili bilgiler sunacağım sunum tatsamında.
+
+174
+00:28:10,544 --> 00:28:13,404
+Sunum tatsamında aşağıdaki konu başlıklarına değinecektir.
+
+175
+00:28:14,271 --> 00:28:25,311
+Çalışmanın amacı konuya giriş, kullanılan sistem imarisi, araştırma metodolojisi, hastalık tanımı ve özellik çıkarımı, deneysel sonuçları değerlendirilmesi ve çalışma sonuçları.
+
+176
+00:28:27,851 --> 00:28:34,571
+Çalışmanın amacı olarak Bangladeş'te yetiştirilen papaya meyvesine görülen hastalıkları tespiti üzerine yapan bir çalışma.
+
+177
+00:28:35,151 --> 00:28:38,911
+Neden çalışma alanı olarak burası seçilmiş sorusuna gelince de şu yanıtlar belli.
+
+178
+00:28:40,435 --> 00:29:05,855
+Bangladeş nüfusun önemli bir kısmından tarımla uğraşması. Bu yaklaşık %47.47 bir değer. Tarımsal ürünün kalitesi uygun bir özenle muhafaza edilmesinin önemi. Tarımla uğraşan nüfusun çoğunluğunu okuma yazma bilmemesi, tarımla uğraşan kesimin teknoloji ve çiftçilik konusunda yeterli eğitime sahip olmaması ve tarımsal alanlara ulaşımı zorluğu bu makalanın ana çerçevesini oluşturan usullar olarak karşılığa çıkıyor.
+
+179
+00:29:07,508 --> 00:29:26,488
+Bu çalışma teknolojik gelişmeler sayesinde çiftçilerin güncel gelişmelerinden faydalanması açısından kapay hastalığının tespitleri ve bu sorunun çözüm üretmenin yanında bu alanda yeterli araştırma yapılmamış olması ve görüntü tabanlı teknolojideki ilerlemeler, olumlu gelişmeler bu soruna iyi bir çözüm bulma noktasında araştırmacıların ilgisini çekiyor.
+
+180
+00:29:27,188 --> 00:29:54,188
+Bakay hastalığı tanıma, tabi ki zorlu problemi içeriyor. Bunlardan birisi hastalığın tespiti, birisi hastalığın sınıflandırılması. Bu sorular ele alındı da çiftçilerin sorunları daha hızlı çözüme için mobilyada taşınabilir bir cihaz vasıtasıyla bir görüntüyü yakalayıp bu görüntünün çevrim içi çalışan bir makine görme tabanlı bir uzman sistemde değerlendirilmesi bağlamında çalışma öneriliyor. Ve önerilen uzman sistem...
+
+181
+00:29:54,836 --> 00:29:58,836
+Sistemi faydasını görmek için de çalışma kapsamında bazı deneysel çalışmalar yapılıyor.
+
+182
+00:30:01,836 --> 00:30:02,836
+Bu yansıda da,
+
+183
+00:30:03,836 --> 00:30:12,836
+Bangladeş'te oldukça popüler olan ve Türkiye'de de Muğla'nın Dacia ilçesinde yetişen ve propietal bir meyve özeli olan Papaya meyvesine ait görüntüleri görüyoruz.
+
+184
+00:30:14,836 --> 00:30:19,836
+Şimdi de çalışma kapsamında kullanılan sistem mimarisine göz atalım.
+
+185
+00:30:20,435 --> 00:30:26,435
+Bu şekilde de görüleceği üzere bu mimaride çiftçi dediğimiz kullanıcılar hastalıktan etkilenen...
+
+186
+00:30:27,508 --> 00:30:52,367
+Hastalıktan itilen kokay meylesinin görüntüsü, mobil uygulamanın yüklü olduğu cep telefonuyla ya da taşınabilir bir aygıt ile görüntünün girdiği olarak alınmasına sağlanır ve ardından uygulama üzerinden görüntü önerilen uzman sistemi gönderilir. Görüntü internet üzerinden örgü yazılımdan alınır. Uzman sistemin kurulu arka uç dediğimiz sunucuya gönderilir. Bu uzman sistem girdiği olarak aldığı veri üzerinden geri bildirimde bulunur.
+
+187
+00:30:52,788 --> 00:30:58,548
+Ö3 yazılım aracıyla kullanıcım cihazına SMS olarak geri bildiğinde bulunması sağlanır.
+
+188
+00:31:00,327 --> 00:31:07,127
+Bu yansıda da araştırma metodolojisi olarak hastalıklı papayağı dediğimiz renkli bir görüntü girdisiyle başlar.
+
+189
+00:31:07,127 --> 00:31:13,127
+İlk olarak görüntü bir kübük interpearlasyon kullanılarak sabit boyutlu bir görüntüye dönüştürülüyor.
+
+190
+00:31:13,127 --> 00:31:18,127
+Ardından histogram eşitleme tekniği kullanılarak görüntü bir kontrat değeri artırılıyor.
+
+191
+00:31:20,531 --> 00:31:35,531
+RGB renk uzayından Cloud renk uzayı uzayına dönüştürülüyor. Buradaki renk uzayındaki L değeri, L değeri oluşturuyor tonlama ve duygunluk değerleri de AB ile gösteriyor.
+
+192
+00:31:35,531 --> 00:31:39,531
+L bir rengin açıklığını AB ise rengin renklerini oluşturuyor.
+
+193
+00:31:39,892 --> 00:31:51,652
+Bu dönüşümün K-Mens ortalaması RGB renk uzayının piyasa, renk uzay alanında görüntüleri çok daha iyi segmentlere ayrıldığı belirliği gerçekleştiriyor bu çalışmada.
+
+194
+00:31:51,652 --> 00:32:00,531
+Daha sonra görüntü K-Mens kümeleme teknik kullanılır. Bir dizi bölgeye dönülür. Böylece hastalık ısımlar, hastalık ısımlarından ayrılmış olur.
+
+195
+00:32:00,559 --> 00:32:21,880
+Hastalıkların analizine dayanarak hastalıkları tanımlaması için istatistiksel ve giriş seviye eş oluşum matrisi özelliklerinden oluşan bir özellik seti kullanılır. Bu özellik vektörleri sevimlerde yani vektör doğrusal destek vektör matrislerinde kullanılır. Bu şekilde arasımın metodolojisi ilerliyor.
+
+196
+00:32:25,811 --> 00:32:30,511
+Hastalık tanımı ve özellik çağrımı noktasında da şu şekilde bir tanımlama yapılıyor.
+
+197
+00:32:30,511 --> 00:32:49,111
+Belli hastalık türleri belirleniyor. Bu hastalık türleri meyvedeki siyah benekler, küllenme, yaprak üzerindeki küllenme, haberin gibi benekler, fitoporal yanıklığı ve entropnas şekli hastalık türleri belirleniyor.
+
+198
+00:32:49,111 --> 00:32:53,811
+Özellikleri çağrımı için istatistik ve giriş seviye eş oluşum madresi özelliklerinden oluşan bir...
+
+199
+00:32:53,811 --> 00:32:54,751
+Özellik seti kullanılıyor.
+
+200
+00:32:56,851 --> 00:33:03,611
+Bu yansıları bir önceki yansıda bahsettiğimiz meyverde görülen hastalık tedarına ait bir görüntü sunuldu.
+
+201
+00:33:06,192 --> 00:33:14,271
+İstatistiksel özellik çıkaramına da ortalama, standart satma, varyans, basıklık ve çarpıklık gibi istatistik değerleri hesaplanır.
+
+202
+00:33:14,655 --> 00:33:26,955
+Bu formüllerde geçen hastalıklı bölgeler n piksel, hastalıksız bölgeler n piksel ve hastalıklı bölgelerde pikselin grid tonlamalı renk yolunu GS ile gösteriliyor.
+
+203
+00:33:29,203 --> 00:33:42,923
+Giriş seviye eş oluşumu matrisi özelliklerinin görüntülerden iki piksel arasındaki ilişki göz önünde bulundurarak ilgilenilen pikseldeki doğu kısalt özellikten çıkarılmasına yararlı bir yöntem olan beş özellik kullanılıyor.
+
+204
+00:33:46,163 --> 00:33:51,363
+Bunlar da konstrat, korelasyon, enerji, entropi ve homojenlik.
+
+205
+00:33:54,579 --> 00:34:03,579
+Burada da yapılan denesel çalışmalar değerlendiriliyor. Hastalık ve hastalık tığız, papagara ait 129 tane görüntü verisi alınıyor.
+
+206
+00:34:03,579 --> 00:34:11,579
+Kullanıcı ve cihaz değişkenine bağlı olarak alman görüntüler farklı boyutlarda olduğu için, harikalı görüntüler 300x300 piksel boyutuna dönüştürülüyor.
+
+207
+00:34:11,579 --> 00:34:22,347
+Renk yoğunluğu haritası ile konstrat ayarı yapılıyor. Renk haritası, kümlenme algoritması kullanılarak bir dizi bölgeye ayrılıyor. Böylece hastalıklı parçalar, hastalıklı parçalardan ayrılmış oluyor.
+
+208
+00:34:24,211 --> 00:34:35,211
+Bu yansıda da belirlenen hastalıklar orjinal görüntü verisi, yeniden boyutlanılmış görüntü, konsaf ayarı yapılmış görüntü ve ayrılmış hastalıklı bölgelerin görülmene dair bir görüntüsü oldu.
+
+209
+00:34:36,211 --> 00:34:49,003
+Bu yansıda hamiyesi kümeleme segmentasyonu, pergumansı değerlendirmek için manuel olarak etiketlenmiş ya da belirlenmiş referans görüntüleri kullanarak performans sonuçları Fablobil'de veriliyor.
+
+210
+00:34:49,204 --> 00:35:15,024
+Bu tabloda görüleceği üzeri seçili hastalıklı bölgelerin tespitinde sapmalarda olduğu görülüyor. Örneğin %59 fazlalık oranında pitof tara yanıklığı sapması görülmüş. Eksi %10 oranında da siyah belek hastalığı sapması görülmüş. Şekil altında da hastalıklar hastalıklı bölgelerin manuel olarak belirlenmesi ve tahminin kümeleme ile hastalıklı bölgelerin tahminine dair görüntü verisi sunulmakta.
+
+211
+00:35:17,780 --> 00:35:32,300
+Çalışmada kullanılan 129 görüntü veri seti, eğitim ve test veri seti olarak iki bölüme ayırıyor. Eğitim veri seti için 84 renkli görüntü, test verisi için, test seti için de 45 renkli görüntü kullanılıyor.
+
+212
+00:35:32,600 --> 00:35:41,140
+Modelin düşük eğitim hatası ve düşük genelleme hatasından kaçınması için bir doğrulama seti kullanılıyor. Bu yaklaşma uygun olarak da veri seti için.
+
+213
+00:35:42,068 --> 00:36:07,984
+Bu örneğe bakalım.
+
+214
+00:36:07,983 --> 00:36:20,523
+5 kez bulunan sonuçların ortalama sağlanarak çok sınıflı karışıklık madresi oluşturuyor ve sonuçlar tablo 2 ve 3'te gösterildiği gibi 6 ikili karışıklık madresi şeklinde sunuluyor.
+
+215
+00:36:21,804 --> 00:36:27,443
+Bu yansımda da verilen tablolarda ikili sınıflandırıcı performansını arzalık etmek için kullanılıyor.
+
+216
+00:36:27,443 --> 00:36:32,563
+Tablo 5'te gösterildiği gibi nihai ikili karışıklık madresi oluşturuyor.
+
+217
+00:36:32,563 --> 00:36:34,603
+Daha sonra tablo 6'ta gösterildiği gibi
+
+218
+00:36:34,800 --> 00:36:46,200
+Bu matrislerin doğruluk, duyarlılık, özgürlük, kesinlik, yanlış pozitif oranı, yanlış negatif oranı hesapladıyor ve sınıfa göre doğruluk tablo 7'de sunuluyor.
+
+219
+00:36:47,200 --> 00:36:54,800
+Tablo 6'dan doğruluk oranı %95.2 olduğunu görüyoruz. Bu genel tanımlam oranı yeterince iyi olduğunu gösteriyor.
+
+220
+00:36:54,943 --> 00:37:01,344
+Hassasiyet %85.6 bu hatasız örnekleri tanıma oranı çok yüksek olmadığı anlamına geliyor.
+
+221
+00:37:01,344 --> 00:37:14,144
+Bu yüzden yanlış negatif oranı biraz yüksek çıkıyor. Yine özgürlük %97.12 bu hatasız örnekleri tanıma oranı biraz yüksek olduğu anlamına geliyor.
+
+222
+00:37:14,144 --> 00:37:16,943
+Bu yüzden yanlış negatif oranı biraz düşük çıkıyor.
+
+223
+00:37:17,715 --> 00:37:26,055
+Hassasiyet %85.6. Bu da hatası numara oranının yüksek olmadığı anlamına geliyor.
+
+224
+00:37:27,995 --> 00:37:40,475
+Hastalık tanıma sistemli bir karışık maddesi kullanılarak doğruluğu, duyarlılığı kesinliği, yanlış pozitif oran ve yanlış negatif oran da sunuda verilen denkleme vasıtasıyla hesaplanıyor.
+
+225
+00:37:42,420 --> 00:38:08,019
+Tablo 8'de de diğer iki sınıflandırıcı ile karşılaştırılması yer almakta. Kullanan sınıflandırıcı, karar ağacı ve naif payısı ile deneksel sonrasını karşılaştırılması yer almakta. Sevemeden altı performans ölçütü açısından diğer iki sınıflandırıcıdan daha iyi performans gösterdiği görülüyor. Burada karar ağacı sınıflandırıcısı bu altı performans ölçütü açısından naif payısı sınıflandırıcıdan biraz daha iyi bir performans gösterdiği sonucuna erişiliyor.
+
+226
+00:38:09,492 --> 00:38:26,452
+Sonuç olarak bu makalede üzerinde durulan çalışmada makine görmesi tamamen bir uzman sistem öneriliyor. Burada papaya meyvesine ait hastalığı tanımak için toplam 10 özellikler oluşan 2 özellikli sert kullanıldı. Özellikleri çıkarmak için de görüntü işleme teknikleri kullanıldı.
+
+227
+00:38:30,099 --> 00:38:55,400
+Bu çalışma kapsamında sevemiyle yapılmış ve daha sonra benzer çalışmaların sonuçları analiz edilerek çalışmaların yönetili yaraları değerlendirilmiş bu çalışma kapsamında. Çalışmaların denizsel sonuçları da %9.15'lik bir doğrultu değeriyle elde ediliyor. Yaralandığı kaynak bu hocam. Akademizliğine kaynağı. Diyemediğiniz için teşekkür ediyorum. Bu şekilde hocam.
+
+228
+00:38:57,235 --> 00:38:59,235
+Peki. Soru varsa alabilir miyim?
+
+229
+00:39:00,235 --> 00:39:04,235
+Bir kod yazdın mı? Sen bunu denedin mi?
+
+230
+00:39:04,235 --> 00:39:07,235
+Hocam, ben bu çalışmaların eskilenerek şöyle bir çalışma yapmaya çalıştım.
+
+231
+00:39:08,235 --> 00:39:11,235
+Cilt panseri teşhisiyle ilgili bir çalışma yapmak istedim.
+
+232
+00:39:11,235 --> 00:39:15,235
+Ama yetiştiremedim. Random bir saranlamada yapmıştınız.
+
+233
+00:39:15,235 --> 00:39:18,235
+Sağlıklı bir soru soru elde etmeyince paylaşamadım sizlerle.
+
+234
+00:39:19,235 --> 00:39:21,235
+Yani bu bağlı bir çalışma yapmak istiyordum.
+
+235
+00:39:21,235 --> 00:39:24,235
+Yine sizin de izniniz olursa...
+
+236
+00:39:24,639 --> 00:39:32,419
+Dersinizin sonuna doğru artık, dönem sonuna doğru bir yetiştirme anlamında bir çalışmam olursa, netice alabilirsek paylaşmak isterim.
+
+237
+00:39:33,419 --> 00:39:40,139
+Aslında olabilir. Burada hoşuma giden şeyler de var. Asıl sen şey de yapabiliriz.
+
+238
+00:39:40,139 --> 00:39:48,139
+Oradan cilt kanseri biraz hoşuma gitti hocam. Biraz teradült araması falan da yaptım. Biraz örtüşebilir, bir şeyler yapabilir gibi bir...
+
+239
+00:39:48,628 --> 00:40:00,068
+Evet. Esasen bir konferans makalesi falan da gönderebiliriz bunların bazılarında. İsteyen varsa aranızda.
+
+240
+00:40:00,108 --> 00:40:07,348
+Doğrusu hocam bu hafta da bu üçüncü sorumlu oluyor. Ders sorumlu oluyor. Haliyle biraz yoğun bir sürece dahil oldum.
+
+241
+00:40:07,488 --> 00:40:14,508
+Hani random bir sıralama yapıyorduk. Sıralamaya da şey yapmak istemedim. Dariyle de bulunmak istemedim. Yine de elimde geldiğince bir şeyler sunmaya çalıştık sizlere.
+
+242
+00:40:15,268 --> 00:40:15,708
+Anladım.
+
+243
+00:40:16,371 --> 00:40:23,071
+Şey, tabii dersler üst üste gelince projenin bunları vesaire üst üste biniyor değil mi?
+
+244
+00:40:23,152 --> 00:40:31,571
+[kişisel bilgi]
+
+245
+00:40:32,112 --> 00:40:33,271
+Nerede çalışıyorsunuz?
+
+246
+00:40:33,391 --> 00:40:35,391
+[kişisel bilgi]
+
+247
+00:40:35,860 --> 00:40:52,280
+Kolay gelsin. Teşekkür ederim, sağ olun. [kişisel bilgi]
+
+248
+00:40:52,592 --> 00:40:54,812
+60-65 km uzaklıkta gidiyor mesela.
+
+249
+00:40:56,172 --> 00:40:58,612
+Online ne işler? Gidip geliyor musun devamlı?
+
+250
+00:40:58,632 --> 00:41:01,932
+Hocam, idari görevlerim var. Haliyle fiziki olarak gidip geldiğim çok oluyor.
+
+251
+00:41:02,412 --> 00:41:07,392
+Toplantılar da keza, yönetici bağlamda toplantılarımız arara oluyor. Çevrim içi ağırlıklı.
+
+252
+00:41:08,992 --> 00:41:11,192
+Nesin orada? İdari görevin nedir?
+
+253
+00:41:11,672 --> 00:41:13,632
+[kişisel bilgi]
+
+254
+00:41:14,291 --> 00:41:16,711
+Meslek Yüksek Okulu'nda müdür yardımcısın.
+
+255
+00:41:17,103 --> 00:41:20,683
+Evet hocam. Ne yapıyorsun? Haftada kaç gün gidiyorsun mesela?
+
+256
+00:41:21,283 --> 00:41:31,283
+Bu değişkenlik gösteriyor hocam. İş yolu da bağlı olarak. Çıkarılması gereken yönetim kurulu zararları oluyor. Sürekli bazı raporların oluşturulması gerekiyor. Islak imzalı gönderilmesi gerekiyor.
+
+257
+00:41:31,283 --> 00:41:32,163
+Evet.
+
+258
+00:41:34,708 --> 00:42:02,708
+Tamam. [kişisel bilgi] Bir de şey vardı hocam. Aslında ben size mail olarak da göndermiştim ama dersinizi ben 3. hafta seçtim. Bu 3. haftada teslim edilmesi gereken bir ödev vardı. Ben durumu belirten bir mail dağıttım ama dönüş alamadım. Derste de biraz hani ödeden teslim konusunda bir hassasiyetiniz olduğunu gördükten sonra da çok şey yapmak istedim.
+
+259
+00:42:28,340 --> 00:42:35,720
+Bir şey yapabilir miyiz acaba diye düşünüyorum. Normalde tabii geç kalan ödevleri falan sıfır veriyorum da.
+
+260
+00:42:36,119 --> 00:42:41,599
+Evet, bir iki arkadaşımız durumlarını belirtiyor. O bir hassasetinizi görünce, ben de sürece ayak uydurmaya çalıştım hocam.
+
+261
+00:42:41,599 --> 00:42:43,480
+İki şeyimi kaybettim.
+
+262
+00:42:44,115 --> 00:42:45,836
+Hangi ödevleri yetiştirelim?
+
+263
+00:42:46,135 --> 00:43:07,416
+Birinci ödevi derse kayıttan dolayı teslim edemedim. İkici ödevde bir şeye denk geldi. Yoğun oldum bir tempoya denk geldi. Bu ders kayıttarımız vardı. Dersin ayarlaması vardı. [kişisel bilgi] Hem öğrenci boyutunda karşılaşılan sıkıntıları çözmeye çalışıyoruz. Hem eğitmeden karşılaştığı sıkıntıları çözmeye çalışıyoruz sistemsel anlamda.
+
+264
+00:43:10,291 --> 00:43:19,271
+Birinci ödev için bir şeyler yapılabilir o zaman. Kayıt olduğunuz zaman falan o bilgiyi nereden görebilirim acaba?
+
+265
+00:43:19,372 --> 00:43:24,092
+Yani tarihlerini de ben size belli olarak da göndermiştim hocam. Tekrar teyit amaçlı da size gönderebilirim.
+
+266
+00:43:28,372 --> 00:43:29,992
+Gönder bir bakalım.
+
+267
+00:43:30,592 --> 00:43:33,932
+Tamam hocam. Teşekkür ederim hocam.
+
+268
+00:43:34,132 --> 00:43:35,572
+Rica ederim. Kolay gelsin.
+
+269
+00:43:35,572 --> 00:43:36,312
+Sağ olun hocam.
+
+270
+00:43:37,523 --> 00:43:59,083
+Şimdi bir sonraki sunuma geçmeden önce bir kısa ara verelim bence. Saat 10'a kadar bir ara verelim. Sunumdan saat 10'dan sonra. [öğrenci] burada mı? [öğrenci].
+
+271
+00:43:59,083 --> 00:44:00,223
+Buradayım hocam.
+
+272
+00:44:00,659 --> 00:44:08,399
+Tamam, sen 11'den, 10'dan itibaren sen başlarsın. Bir 10 dakikada verelim arkadaşlar.
+
+273
+00:44:13,076 --> 00:44:23,096
+Bu Zoom toplantısının linkini ben alabiliyor muyum? Biliyor musunuz? Birini atmak istiyorum da.
+
+274
+00:44:24,755 --> 00:44:30,536
+Hocam katıldığınızda bizi otomatik olarak meli düşüyor. İsterseniz şu anki size gönderebilirim.
+
+275
+00:44:30,775 --> 00:44:36,436
+Hocam o participant'ın orada invite diye bir seçenek de var.
+
+276
+00:44:36,947 --> 00:44:40,867
+Orada Copy Invite linki var. Ben direkt atayım chat o zaman.
+
+277
+00:44:43,867 --> 00:44:49,107
+Participants'ın orada bir küçük ok var ya, oradan basınca invite seçeneği geliyor.
+
+278
+00:44:51,587 --> 00:44:54,067
+Ben de küçük ok göremiyorum.
+
+279
+00:44:55,847 --> 00:44:57,827
+Hocam, participant atıp bence en altta.
+
+280
+00:44:59,347 --> 00:45:02,347
+Ha, şimdi gördüm. Tamam. Invite dedim.
+
+281
+00:45:03,219 --> 00:45:05,779
+Buradan e-mail ile invite edebileceğim sanırım.
+
+282
+00:45:05,980 --> 00:45:08,699
+Ya da sol altta copy invite link var.
+
+283
+00:45:09,159 --> 00:45:11,259
+Oradan da link alabiliyorsunuz.
+
+284
+00:45:11,719 --> 00:45:13,219
+Tamam, tamam. Teşekkürler.
+
+285
+00:45:13,219 --> 00:45:15,219
+Teşekkürler.
+
+286
+00:58:55,668 --> 00:58:59,508
+Evet arkadaşlar, sesimiz duyuluyor değil mi?
+
+287
+00:59:01,648 --> 00:59:02,588
+Evet, hocam geliyor.
+
+288
+00:59:02,688 --> 00:59:06,528
+Evet, [öğrenci] sen başla öyleyse. [öğrenci].
+
+289
+00:59:14,228 --> 00:59:15,847
+Geldi değil mi hocam görüntü?
+
+290
+00:59:16,527 --> 00:59:16,827
+Evet.
+
+291
+00:59:18,347 --> 00:59:25,728
+Benim makalem karaciğer lezyonlarının sınıflandırılmasında CNN performansının arttırılması için
+
+292
+00:59:25,728 --> 00:59:30,168
+GAN tabanlı yapay medikal imge büyütme.
+
+293
+00:59:32,692 --> 00:59:52,872
+Bugün genel olarak konuşacağım başlıkları şöyle bir özetlemem gerekirse. Makalenin özetini vereceğim, girişini vereceğim. Karacel lezyonların sınıflandırmasından bahsedeceğim. Burada CNN yapısına birazcık gireceğim. Daha sonra yapay karacel lezyonlarının oluşturulması. Burada da gan mimarlarından bahsedeceğim. Yapılan deneyler, sonuçlar ve tartışmaları.
+
+294
+01:00:00,000 --> 01:00:11,280
+Bilgisayar Mühendisliği bölümünde kompütü tomografi görüntülerinden elde edilen karacel lezyonlarının sınıflandırmasını yapıyorlar.
+
+295
+01:00:12,180 --> 01:00:21,380
+Ve 182 adet lezyon imgesi var. Bunlardan 53 tanesi kist sınıfına ait, 64 tanesi metastaz ve 65 tanesi de hemangiom sınıflarına ait.
+
+296
+01:00:23,476 --> 01:00:41,655
+Yaptıkları şey ilk olarak imgeleri geleneksel yöntemlerle büyütmek. Yani bu bizim derste gördüğümüz Translation, Rotation, Scaling gibi yöntemler. İkinci olarak da GAN kullanarak büyütme yapmak ve daha sonra bu verileri ayrı ayrı CNN'e verip eğitip performans karşılaştırması yapıyorlar.
+
+297
+01:00:42,400 --> 01:00:57,079
+Klasik yöntemlerle elde edilen sistemin performansları %78.6 cm ve %88.4 cm iken, GAN ile bu performans artıyor. %85'e 7'ye ve %92.4'e çıkıyor.
+
+298
+01:00:58,867 --> 01:01:12,748
+Burada problem, sağlık alanındaki veri setlerinin yeterince büyük olmamasından bahsediyorlar ve bu supervised makine öğrenmesi algoritmalarında geniş ve etiketlenmiş veri istiyorlar daha iyi performans gösterebilmek için.
+
+299
+01:01:13,708 --> 01:01:22,268
+Bu GAN'lardan önce genellikle klasik yöntemlerle veri artırma işlemi yapılıyormuş ama buradan elde edilen ek bilgiler çok fazla olmuyormuş.
+
+300
+01:01:22,931 --> 01:01:27,391
+O yüzden de üretici modellerin fayda sağlayabileceğini düşünmüşler.
+
+301
+01:01:28,132 --> 01:01:30,931
+Temalde iki birleşenler oluyor bu üretici modeller.
+
+302
+01:01:31,072 --> 01:01:34,431
+Generative yani üretici dediğimiz ve discriminative, ayırt edici.
+
+303
+01:01:35,092 --> 01:01:38,851
+Generative bizim bağımızda sahte lezyon imgeleri üretiyor.
+
+304
+01:01:39,652 --> 01:01:45,592
+Discriminative de bu üretilen sahte karacay lezyon imgelerinin gerçeklikle sahtelik durumlarını ayırt ediyor.
+
+305
+01:01:47,539 --> 01:02:15,539
+Karaciğer lezyonları ikiye ayrılıyor. Kötü huylu ve iyi huylu olarak. Kötü huylulara, malignant huylulara benaynıyoruz. Metastazik özellik gösterenler kötü huylu olarak geçiyor. Hemajiyon ve hepatik kistler de iyi huylu olarak geçiyor. Buradaki problem aslında hemajiyonlarla metastazik özellik gösteren sınıfın birbirleriyle çok karışabilecek özelliklere sahip olması. Bu nedenle de sistemin performansını arttırmak önemli bir hale geliyor.
+
+306
+01:02:15,539 --> 01:02:26,239
+Karaciğer de en fazla metastaz gösteren organlardan biri olduğu için arttırılmış bir sistemle çalışmak çok büyük bir yarar sağlayabilir düşüncesindeler.
+
+307
+01:02:28,211 --> 01:02:46,271
+Dediğim gibi 180'in ki adet iki boyutlu kompütü tomografi görüntülerini kullanıyorlar. Açık bir veri kullanmamışlar. Şeba Medikal Merkezi'ndeki verilerden yararlanmışlar. Hastane etikolulunun da onayıyla almışlar. Bunu 2019 ve 2014 yılları arasındaki veriler.
+
+308
+01:02:47,188 --> 01:03:01,347
+Sağ tarafta da görebilirsiniz bir örneğini. Burada bir radyolog tarafından lezyon bölgeleri işaretleniyor. Kırmızıyla görüntülenen yerler. Daha sonra bu bölgelerden biyopsi veya klinik takiple de teşhisi yapılıyor.
+
+309
+01:03:15,188 --> 01:03:29,427
+Sınıflandırma için CNN kullanıyorlar. CNN 64x64'lük lezyon imgesi veriyorlar. Parlaklıkları 0-1 arasında yeniden ölçeklendiriyorlar.
+
+310
+01:03:29,427 --> 01:03:41,768
+Ve input olarak verilmeden önce bu imgelerden ortalama değerleri her bir imgeden çıkartıyorlar. Aşağıdaki görüntüde de kesme, pastaz ve hemen jamsın örnekleri görebilirsiniz.
+
+311
+01:03:44,211 --> 01:04:10,192
+Ben birazcık mimari yapılara daha derinden değinmek istedim aslında. Şimdi üç çift convolutional layer kullandık diyorlar CNN'de. Onlar çift olarak belirtmişler. Ve her bir konvolüsyon katmanının aydınlığına max pooling layer yapmışlar şeyi küçültmek için boyutu. En sonunda da softmax katmanı yine bitiriyorlar. Bu softmax katmanı sınıfların tahmini için bir olasılık dönüşüyor. Yani 0-5 oranında.
+
+312
+01:04:11,155 --> 01:04:27,556
+Metastasik sınıfa ait gibi. Aktivasyon fonksiyonu olarak RELU kullanmışlar her birinde. Ve en sonunda şu sağda görebileceğiniz mimaride bir Dropout Layer var. Bu Dropout Layer'ı da overfitting yönlemek amacıyla kullanmışlar 0-5 olasılıkla.
+
+313
+01:04:28,148 --> 01:04:47,788
+Peki bu Dura-Puad Layer ile eğitim boyunca bu girişleri, inputları bir oran, yani burada 0.5, rastgele 0'a ayarlıyor. Ve 0'a ayarlanmayan girişlerde girişlerin toplamı değişmesin diye 1 bölü 1 eksi oran şeklinde ölçekleniyormuş. Bu da overfitting'i önlüyormuş.
+
+314
+01:04:50,728 --> 01:04:54,628
+Training için batchler haline train ediyorlar. Batch size'ları 64.
+
+315
+01:04:55,251 --> 01:04:59,512
+Learning Rate olarak 0.01 ve 150 EpoC boyunca çalıştırmışlar.
+
+316
+01:05:01,032 --> 01:05:06,132
+Optimize etmek için de Stochastic Gradient Design kullanmışlar ama farklı bir versiyonunu.
+
+317
+01:05:06,852 --> 01:05:10,092
+Nestro Momentum Update denen bir versiyon.
+
+318
+01:05:10,412 --> 01:05:14,472
+Bu da şeymiş, mevcut konumdaki türevi hesaplamak yerine
+
+319
+01:05:14,835 --> 01:05:24,635
+İleri pozisyondakini hesaplıyormuş. Yani böylece atlama durumu olmasın ve yaklaştığında o minimal noktaya yavaş yavaş yaklaşabilsin diye.
+
+320
+01:05:28,724 --> 01:05:51,124
+Şimdi de lezyon imgelerinin oluşturulmasıyla ilgili konuşacağım. İki yöntemle veri genişlettiler demiştim. Birincisi klasik. Bu da Translation Rotation Scaling, Flipin ve Sharing. Ama Sharing'i çok kullanmıyorlar. Çünkü Share yaptığınız zaman lezyonlar özelliklerini kaybedebiliyorlarmış o şeyden oturu. İkinci de üretici modeller.
+
+321
+01:05:52,148 --> 01:06:12,947
+İlk olarak ben şimdi klasik yöntemlerle ne yaptıklarını söyleyeceğim. 0 ile 180 arasındaki açılarla 30 kere döndürüyorlar. Daha sonra bu döndürdükleri imgeleri yukarı aşağı sağa sola çeviriyorlar 3 kere. 7 kere öteliyorlar bir P, xP artı P aralığında. P'nin de böyle bir şeyi var.
+
+322
+01:06:13,327 --> 01:06:33,967
+Lezyon yarı çöpüyle çarpıp 4 veya bu minimumunu alıyorlarmış ve 5 kere de ölçekliyorlar. Bu yanda klasik veri büyütmeden elde ettikleri bazı görüntüler var. Toplam şey sayısı da, oluşturulan imge sayısı da bu formülü ifade edilmiş. Zaten bu en rot edilen flip edildiği için.
+
+323
+01:06:34,547 --> 01:06:41,728
+Mantıklı bir formül. Her bir imge içinde yaklaşık 480 tane klasik yöntemle yeni imge oluşturmuş oluyorlar aslında.
+
+324
+01:06:45,427 --> 01:07:06,127
+İkinci veri genişletme yöntemi de GAN. GAN'ın da iki farklı mimarisini kullanmışlar. Bir tanesi solda gördüğünüz Deep Convolutional GAN, DC GAN diye geçiyor. Sağdaki de Exulari Classifier GAN yani AC GAN. İlk olarak DC GAN uyguluyorlar. Burada dediğim gibi Generator ve Discriminator var.
+
+325
+01:07:11,476 --> 01:07:28,316
+Random veriler alıyor. Ama bu veriler aslında gerçek imgenin dağılımlarını öğreniyor. Ve bu üreteceği imgenin de bu gerçek dağılımı uygun olmasını istiyor. Ama random olarak, giriş olarak bazı sayılar alıyor.
+
+326
+01:07:35,791 --> 01:07:40,611
+Bu ağda gerçek olma olasılığını dönüyormuş.
+
+327
+01:07:46,132 --> 01:07:54,552
+Bu ağlar, çekişmeli ağlar, loss fonksiyonunu optimize etmek üzerine kurulmuş. Yani iki oyunculuğu min-max game gibi düşünülmüş.
+
+328
+01:07:55,252 --> 01:08:05,752
+Loss fonksiyonunu bu şekilde belirtilmiş. Şimdi generator, generate ettiği şeyi discriminator tarafından maksimum olarak döndürülmesini istiyor.
+
+329
+01:08:05,752 --> 01:08:13,672
+Çünkü discriminator gerçeklik oranını dönüyordu. Yani bir eksi dg'yi de minimize etmeyi amaçlıyor bu sağ taraftaki şeyi.
+
+330
+01:08:14,420 --> 01:08:31,260
+Discriminator da kendisine gelen o X verisinin gerçek veriyle benzer olduğu durumlarda ürettiği şeyi maksimize etmeyi amaçlıyor gibi düşünebiliyor.
+
+331
+01:08:35,444 --> 01:09:02,364
+Bu ağda üreteceği input olarak 100 tane rastgele sayıdan oluşan bir vektör almış. Çiftli olarak da 64'e 64'lük lezyon imgeleri üretmiş. Burada 4x4x1024 boyutunda bir full connected layer kullandık demişler. Ondan sonra da 4 tane deconvolutional layer. Bu deconvolutional layerler de imgeyi genişletmeye yarıyor. Bunu nasıl yapıyor peki? Katman piksellerinin arasına 0 ekliyormuş.
+
+332
+01:09:03,283 --> 01:09:27,363
+Çıktı katmanı için tanış. Diğer katmanlarındayız. Aktivasyon konusyonu olarak RELU kullanmışlar. Her bir katmanda da, çıktı katmanına aç, her bir katmanda batch normalization yaptık demişler. Bu batch normalization da bu her bir mini batch de yani 64, 64 ve 63'lük şekildeydi batchler. Bu her bir batchlerde ortalama 0'a ve varyansı 1 olacak şekilde normalize ediyorlar.
+
+333
+01:09:31,412 --> 01:09:47,551
+Diskriminator da tabii input olarak 64x64'lük giriş imgeleri alıyor. 4 adet convolutional layer ve bir tane fully connected layer varmış burada. Yine batch normalization yapılmış. Bu sefer giriş ve çıkış kasmanı ayrıca ama.
+
+334
+01:09:48,340 --> 01:10:04,819
+Burada boyutu düşürmek için pooling değil de strided convolution kullanmışlar ama stride sayısının kaç olduğunu belirtmemişler. Neden pooling layer değil de strided convolution? O da yazmıyordu. Onu bilmiyorum o yüzden.
+
+335
+01:10:05,716 --> 01:10:12,016
+Aktivasyon fonksiyonu için çıkış katmanı sigmoid kullanmışlar. Diğer katmanlarda leak rel'i kullanmışlar.
+
+336
+01:10:12,016 --> 01:10:20,076
+Leak rel'inin normal rel'dan farkı bir tane leak kat sayısı geliyor. Burada da 0,2 olarak belirlemişler onu.
+
+337
+01:10:23,475 --> 01:10:33,335
+Bu DC Gun'ın eğitiminde batchler kullanılmıştı demiştim, 64'lük. Eğitimden önce imgeleri eksi bir bir aralığında ölçeklemişler.
+
+338
+01:10:34,335 --> 01:10:40,456
+Ve Generator'a da yine eksi bir bir aralığında bu uniform dağılmış şey vermişler örnek.
+
+339
+01:10:41,296 --> 01:10:50,296
+Weightleri belirlerken normal dağılımdan, sıfır merkezi 0-0-2 standart satmalı bir normal dağılım olarak initialize etmişler weight'i.
+
+340
+01:10:50,644 --> 01:11:16,924
+70 yap oku boyunca çalıştırmışlar. Bu sefer yine optimizasyon için stokastik grediyemizat ama başka bir versiyonu Edim Optimizer. Bu Edim Optimizer'de birinci ve ikinci moment parametreleri var. İşte bu B1 ve B2 dedikleri bu şekilde tanımlamışlar. Birinci momenti hesaplıyor yani mean'i. İkinci momenti hesaplıyor, varyansı hesaplıyor. Oradan bir çıkarım yapıyor.
+
+341
+01:11:18,644 --> 01:11:23,764
+Her bir parametre için farklı şey üretebiliyor bunları kullanarak.
+
+342
+01:11:26,899 --> 01:11:54,899
+İki farklı GAN kullanıldı demiştim. Az önce bahsettiğim bu DC GAN, soldaki. Bir de AC GAN kullanmışlar. Burada discriminator, gerçek ve sahte ayrımı yaparken bir de sınıf etiketi de üretiyormuş. Bunu da Exitler'ı Decoding Network sayesinde yapıyormuş. Daha iyi başarıyı DC GAN'dan aldıkları için bunun mimarisine çok detaylı girmemişler. Genel olarak böyle bahsetmişler sınıf etiketi.
+
+343
+01:11:54,899 --> 01:12:00,479
+Daha sonra işte aynı gam yapısı gibi generator da çalışıyor.
+
+344
+01:12:04,627 --> 01:12:26,647
+CNN'i Keras'ta, GAN içinde TensorFlow'u kullanarak yapmışlar. 980 TiGPU kullanmışlar. 3-fold cross-validation yapmışlar. Herbifold'da yaklaşık aynı değerler var. 63-62 şeklinde. Ve 3 tane metreye bakıyorlar performans içinde. Accuracy, Sensibility ve Specialist'i.
+
+345
+01:12:28,532 --> 01:12:37,932
+İlk olarak klasik veri büyütüme yapmıştı demiştik bu Translation Notation. Ona CNN Augmentation'ı kısaltması şeklinde ifade etmişler.
+
+346
+01:12:39,272 --> 01:12:47,092
+İkinci olarak da GAN kullanılarak. CNN Augan buradaki GAN ama bu DC GAN. O AC GAN ikinci versiyonu olan değil.
+
+347
+01:12:49,043 --> 01:12:59,423
+İlk olarak eğitirken A'ın veriye hiç yeni örnek eklenmeyip şeyine bakmışlar sistemin performansına. Daha sonra eklenen veriyi her bir adımda arttırarak gitmişler.
+
+348
+01:12:59,731 --> 01:13:05,072
+Bu aşağıda da örnek sayısını görebiliyoruz. 0, 500, 1000 gibi arttırarak gidiyorlar.
+
+349
+01:13:05,931 --> 01:13:10,412
+Klasik yöntemle her bilgiye için 480 tane demiştim zaten önce.
+
+350
+01:13:11,332 --> 01:13:14,752
+Bu da her bir lezyon sınıfı için ortalama 30.000 örneğe tekabül ediyor.
+
+351
+01:13:14,752 --> 01:13:19,832
+Yaklaşık her bir lezyondan 60 tane vardı desek 30.000 örnek oluyor.
+
+352
+01:13:21,332 --> 01:13:26,752
+Ama ganı yaparken veri seti çok küçük diye düşünüyorlar.
+
+353
+01:13:27,252 --> 01:13:36,132
+O yüzden önce bir klasik veriyle veriyi genişletip, o genişlettikleri yerden alıp, daha sonra o genişletilmiş veriyi gana yetmek için kullanıyorlar.
+
+354
+01:13:37,231 --> 01:13:41,712
+O noktaya da şimdi optimal nokta diyorlar. Onu da birazdan grafikte göstereceğim.
+
+355
+01:13:41,852 --> 01:13:45,372
+Burada da yine Herbifold eklenen veri grupları artarak devam ediyor.
+
+356
+01:13:47,212 --> 01:13:54,372
+Bu grafik accuracy skorlarını veriyor. Bu kırmızı, klasik yöntemle veri geniştirmenin...
+
+357
+01:13:54,931 --> 01:14:06,072
+Çizgisi. Mavi olan gan kullanılarak. Bir de yeşil olan var. Bu yeşil de medikal merkezden daha fazla gerçek örnek istemişler. Bir karşılaştırma yapabilmek için.
+
+358
+01:14:07,155 --> 01:14:35,136
+Kırmızının ilk noktası sıfırıncı, yani hiç eklenmediği yer. Burada doğruluk %57. Bu muhtemelen overfitikten dolayı diyorlar. Daha sonra bu performans belli bir noktaya kadar artıyor ama belli bir noktadan sonra sabit kalıyor. Yani sizin ne kadar verirsenin verin, daha çok yükselmiyor. Buraya da optimal nokta demişler. Bu da yaklaşık 5000. şeye denk geliyor. Orada da %78.6'ymış tam ek.
+
+359
+01:14:35,155 --> 01:14:58,216
+Sonra bu noktadan, yani bu %78.6'nın olduğu yerden alıyorlar tekrar. Buradan Ghana eğitmeye başlıyorlar. Buradan Ghana ittiklerinde de %85.87'ye çıkıyor ama Ghana bir süre sonra, hani daha da çok yükseltmiyor belli bir süre sonra. O da sabit duruma edilmedi. O da yaklaşık 8000 noktasına geliyormuş.
+
+360
+01:15:01,684 --> 01:15:09,783
+Dediğim gibi bu yeşil çizgi medikal merkezinden ek gerçek veriler. 78 tane veri almışlar.
+
+361
+01:15:10,707 --> 01:15:29,387
+Bu 78 tane veriyi de yine klasik yöntemlerle genişletmişler. Bu yaklaşık %2'lik bir performans arttırmasına sebep olmuş. Buradan da bu aradaki mavi eşit çizgilerin arasındaki farka bakarak da şöyle bir sonuca varmışlar. Biz GAN kullandığımızda aynı zamanda çeşitliliğe de sebep oluyoruz.
+
+362
+01:15:33,460 --> 01:15:51,940
+Son deneyde bu klasik yöntemler, GAN tabanlı yöntemlerinin yanısına başka yaklaşım, A tabanlı olmayan yaklaşım kullanmışlar. Burada bir sözlük oluşturma mantığı varmış ama ben bu şeyi çok anlayamadım açıkçası. Zaten çok da değinmemişler bir paragraf kadar.
+
+363
+01:15:52,916 --> 01:16:01,896
+Ek olarak da bir Support Vector Machine Sınıfı'lı ID'yi kullanmışlar. Farklı varyasyonlarda. Yine en başarılı sonucu GAN elde etmiş.
+
+364
+01:16:05,619 --> 01:16:16,659
+Toparlayacak olursam hemen amaç neydi? İşte CNN performansı iyileştirmesi yapmak ve bunun için GAN iyi bir sonuç elde etmemizi sağlıyor mu sağlamıyor mu ona bakmak.
+
+365
+01:16:17,840 --> 01:16:30,520
+Üç farklı lezyonu CNN kullanarak sınıflandırıyorlar. GAN'la büyütüyorlar, GAN'sız büyütüyorlar ve GAN'la büyüttüklerinde verinin sistemin performansının daha iyi olduğu ortaya çıkıyor.
+
+366
+01:16:32,051 --> 01:16:47,471
+Geliştirilebilir özellikleri de iki tane özellikten bahsetmişler. Birincisi iki boyutlu veriyle çalışmışlardı. Bunlar üç boyutlu veriyle çalışılabilir demişler. Diğeri de gamlar her lezyon sınıfı için ayrı ayrı eğitiliyorlar. Bu yüzden de karmaşıklık artıyor.
+
+367
+01:16:47,988 --> 01:17:13,827
+Eğer hani biz multi-class örnekler üreten daha mimarileri incelersek daha faydalı olabilir demişler. Aslında bu ikinci bahsettiğim ACG'nin performansının daha iyi olmasını bekliyorlarmış. Çünkü daha önceki çalışmalarda daha iyi sonuç vermiş o A. Ama bu kişilerin çalışmasında öyle bir durum olmamış. Benim söyleyeceklerim bu kadar. Soru varsa alabilirim.
+
+368
+01:17:14,739 --> 01:17:36,500
+Aslında şey yapmak istedim, implementasyon yapmak istedim ama veri problemim, işte bir veri bulmak gerekti. Çünkü hiç açık kaynak değil. Verileri gizli olduğu için, şeyleri gizli olduğu için. Ama bir implementasyon yapmak istiyorum. Bir de hani yetişmedi. Hiç daha önce gam falan da çalışmadığım için benim için çok yeni bir adam.
+
+369
+01:17:36,500 --> 01:17:37,380
+Evet.
+
+370
+01:17:38,659 --> 01:17:39,819
+Bu şekilde.
+
+371
+01:17:41,876 --> 01:18:00,756
+Tamam. Soracağım soruları cevapladın temelde. Direkt soracağım soruları. Güzel bir sunum, güzel bir makale. Hoşuma gitti esasen. Yani programlarla augmentasyon yapıyor değil mi?
+
+372
+01:18:00,756 --> 01:18:01,756
+Evet.
+
+373
+01:18:02,675 --> 01:18:06,576
+Biraz tavuk yumurta problemi yok mu burada sence?
+
+374
+01:18:09,427 --> 01:18:13,827
+Şimdi nihai amaç ne burada? Yine sınıflandırma, doğru mu?
+
+375
+01:18:14,448 --> 01:18:15,128
+Evet, doğru.
+
+376
+01:18:16,028 --> 01:18:30,288
+Nihai amaç sınıflandırma ama bir sınıflandırıcıyı veri üretmek için kullanıyor.
+
+377
+01:18:30,948 --> 01:18:31,667
+Evet.
+
+378
+01:18:32,568 --> 01:18:33,948
+Ne dersin bu konuda?
+
+379
+01:18:35,539 --> 01:18:57,819
+Yani açıkçası ben şöyle düşündüm. Hani ganı kullanırken veri az olduğu için, ilk benim gözüme çarpan makalde veri az olduğu için yine klasik yöntemleri kullanmak zorunda kalmışlar. Ondan klasik yöntemlerin üstüne ganı kurduklarında tabii ki performans doğal olarak bence artmış ki artardı.
+
+380
+01:19:00,467 --> 01:19:20,868
+Evet, orada zaten şey yapmışlar. Hem klasik yöntemi, aslında burada sadece karşılaştırma yapmış olmuyor. Ganlarla en iyi sonucu bu şekilde elde ettiğim gibi onu da sunuyor. Sonuçta klasik yöntemle karşılaştırılması, yaptığı karşılaştırma çok adil gözükmüyor değil mi?
+
+381
+01:19:20,887 --> 01:19:24,907
+Adil gözükmüyor çünkü klasik yöntemi de kullanıyor aslında gana eğitmek için.
+
+382
+01:19:24,907 --> 01:19:27,907
+Evet, onun üzerine onu kullanıyor.
+
+383
+01:19:28,692 --> 01:19:37,432
+Ganlarla ama bir şey üretiyor. Yani resimleri var mı?
+
+384
+01:19:37,432 --> 01:19:37,992
+Üretiyor.
+
+385
+01:19:37,992 --> 01:19:42,631
+Ganı var mı? Gösterebilir misin?
+
+386
+01:19:42,932 --> 01:19:45,612
+Var. Açayım hemen paper hocam bir saniye.
+
+387
+01:20:13,427 --> 01:20:26,368
+Geldi değil mi? Bunlar bu A olan kisler için, B olan metastazlar için, C olan da hemajyam sınıfına ait ganın ürettiği imgeler.
+
+388
+01:20:32,851 --> 01:20:33,351
+Evet.
+
+389
+01:20:35,672 --> 01:20:41,851
+Tabii ben hani böyle bakınca anlamlı şeyler mi üretmiş, çok bana şey gelmiyor tabii.
+
+390
+01:20:41,971 --> 01:20:53,692
+Biraz konuyu da bilmek gerekiyor bu konularda. Yani o veri setini, çalıştığın medikal alanı biraz bilmek gerekiyor.
+
+391
+01:20:56,148 --> 01:21:18,587
+Bizde işte bir öğrencimin üzerinde çalıştığı şey vardı sanırım. Papsymeyer görüntüleri vardı. Onlar üzerinde bir çalışma yapmıştı öğrenci. Keşke önceden konuşsaydık seninle belki o veriyi falan verebilirdik. Benzer bir şey sen de yapmaya çalışabilirdin. Güzel bir şey olabilirdi.
+
+392
+01:21:18,587 --> 01:21:19,708
+Evet.
+
+393
+01:21:20,828 --> 01:21:21,708
+Tamam.
+
+394
+01:21:25,619 --> 01:21:42,559
+Teşekkür ederiz. Sıradaki arkadaşımız kim olması gerekiyor? [öğrenci] burada mısın? [öğrenci].
+
+395
+01:21:50,228 --> 01:21:51,547
+[öğrenci] yok.
+
+396
+01:21:54,487 --> 01:21:56,087
+[öğrenci] burada mı?
+
+397
+01:22:01,043 --> 01:22:12,923
+Hocam ben bir şey söyleyebilir miyim? Bu implementasyonu yapıp belli bir süreye kadar teslim etme şansımız olacak mı? Yapabiliriz demiştiniz ama yapalım mı? Yapacak mıyız?
+
+398
+01:22:26,579 --> 01:22:30,519
+Notlamaya yetiştirmek istiyorum, yapmak istiyorum hocam dersen.
+
+399
+01:22:31,680 --> 01:22:33,559
+Ben yapmak istiyorum aslında.
+
+400
+01:22:33,559 --> 01:22:42,119
+O zaman şey yaparız, zaten onu 20 puan bonus olarak eklemiştik.
+
+401
+01:22:42,680 --> 01:22:46,379
+Yol sağlıkımızı sabit tutarız, bonus için ek süre veririz.
+
+402
+01:22:47,100 --> 01:22:51,559
+Önem sonuna kadar, finallere kadar süre verebiliriz.
+
+403
+01:22:52,459 --> 01:22:54,059
+Notlama sonu o zamana kadar.
+
+404
+01:22:54,579 --> 01:22:58,539
+Yapım güzel olur yani.
+
+405
+01:22:59,359 --> 01:23:00,520
+Tamam hocam. Sağ olun.
+
+406
+01:23:00,819 --> 01:23:02,840
+Tamam. Peki.
+
+407
+01:23:06,500 --> 01:23:07,879
+[öğrenci] burada mı?
+
+408
+01:23:12,500 --> 01:23:19,979
+O da yok. [öğrenci] burada mı? [öğrenci].
+
+409
+01:23:23,667 --> 01:23:29,907
+Daha sunmayan birçok arkadaş var değil mi? Bu arkadaşlar yapamadı mı acaba?
+
+410
+01:23:33,619 --> 01:23:44,819
+Bir ikinci [öğrenci] burada mı? Buradayım hocam. Tamam. Sen [öğrenci] değil mi? Evet. Evet. Tamam. Sen başlayabilirsin [öğrenci].
+
+411
+01:24:01,011 --> 01:24:03,832
+Bir saniye. Sizde görünüyor değil mi sunum?
+
+412
+01:24:05,111 --> 01:24:07,671
+Göz görünüyor. Görünüyor.
+
+413
+01:24:07,671 --> 01:24:12,611
+Tamam. Ben şimdi ilk defa görüyorum da sunumu paylaşmak biraz garip göründü.
+
+414
+01:24:12,611 --> 01:24:20,211
+Evet. Ama sonraki slide'ı falan göstermezsine gerek yok esasında. Onu kapatacağız.
+
+415
+01:24:22,931 --> 01:24:28,912
+Sonraki slide'ı da tamamen senin görümünü görüyoruz. Sen ekran paylaşıyorsun değil mi?
+
+416
+01:24:30,912 --> 01:24:33,072
+Oldan ikinci sembol olabilir belki.
+
+417
+01:24:33,451 --> 01:24:34,551
+Tamam, şimdi oldu.
+
+418
+01:24:35,092 --> 01:24:35,992
+Şimdi oldu mu?
+
+419
+01:24:37,211 --> 01:24:37,652
+Tamam.
+
+420
+01:24:38,992 --> 01:24:40,252
+Zoom'un mu kapandı?
+
+421
+01:24:41,131 --> 01:24:45,131
+Evet, Zoom'un kapandı. Yani şey, PowerPoint'i görüyoruz.
+
+422
+01:24:47,031 --> 01:24:48,971
+Ne demiştim? Birisi bir şey söylemişti.
+
+423
+01:24:49,652 --> 01:24:57,492
+Hocam tam ekrandayken soldan ikinci sembol belki sunucu gömünümüyle reprezentasyon gömünümünü değiştirebilir.
+
+424
+01:24:57,492 --> 01:24:59,492
+Onu bir dener misin?
+
+425
+01:24:59,492 --> 01:25:01,492
+Sol...
+
+426
+01:25:01,492 --> 01:25:03,492
+F5 yapabilir misin tekrar?
+
+427
+01:25:03,492 --> 01:25:06,492
+Evet.
+
+428
+01:25:06,492 --> 01:25:09,492
+Soldan ikinci bir karelik sembol var büyük ihtimal o.
+
+429
+01:25:09,492 --> 01:25:14,492
+Yok değilmiş. Ben de yollum.
+
+430
+01:25:14,492 --> 01:25:16,492
+Onu denem.
+
+431
+01:25:18,068 --> 01:25:24,768
+Bu karartma düğünü geç. Orada sunucu görünümünü gizle gibi bir sefer. Onun üstündeki.
+
+432
+01:25:25,827 --> 01:25:29,307
+Şu. Şimdi oldu mu?
+
+433
+01:25:31,368 --> 01:25:35,408
+Yok. Şimdi PowerPoint görüyorum.
+
+434
+01:25:35,667 --> 01:25:42,108
+O zaman share screen'den direkt ekranı göstereyim. Şimdi oldu mu?
+
+435
+01:25:42,408 --> 01:25:43,068
+Oldu.
+
+436
+01:25:43,068 --> 01:25:44,448
+Tamamdır.
+
+437
+01:25:45,492 --> 01:26:12,288
+Tamam, başlayalım.
+
+438
+01:26:12,287 --> 01:26:28,647
+UTK Face ve Flickr Faces HQ diye. Python dilinde yazdım şeyi ve model eğitim içinde collab kullandım. Burada da örnek bazı sonuçları görüyoruz.
+
+439
+01:26:39,412 --> 01:27:02,292
+Çıkmış bir generatif model. Yapısında iki tane farklı ağ bulunuyor. Bir tanesi generator, bir tanesi discriminator. Eğitim bunların ikisinin birbiriyle hırsız polis gibi. Birisinin sahte verileri yakalamaya çalışırken, diğeri de daha iyi sahte veri üretmeye çalışıyor.
+
+440
+01:27:03,604 --> 01:27:12,844
+Generator, input olarak random bir noise alıyor. Bu noise'u up sampling ile bir resim haline getiriyor.
+
+441
+01:27:13,543 --> 01:27:21,423
+Discriminator da direkt resmi alıp real ya da fake olup olmadığını gösteriyor.
+
+442
+01:27:22,863 --> 01:27:27,423
+Birçok an çeşidi mevcut. Bunların bazıları...
+
+443
+01:27:28,916 --> 01:27:52,676
+Hata fonksiyonlarının farklı olmasından kaynaklanıyor. İşte WGAN, LSGAN vardı, Lease Square ErrorGAN tarzı. Bazıları da modelin mimarisindeki değişikliklerden dolayı çeşitleniyor. Bazısı da yaptığı işlemli olarak farklılaşıyor.
+
+444
+01:27:53,300 --> 01:28:17,220
+DC Gun, normal Gundan farklı olarak işte Convolutional Layer kullanıyor kendi iç mimarisinde. Mesela Progressively Growing Gun diye bir Gun modeli var. Bu daha keskin, daha net büyük resimler üretmek için eğitim sırasında ilk başta küçük adımlarla başlayıp...
+
+445
+01:28:17,488 --> 01:28:34,328
+Bunları belirli eğitim adımlarının iterasyonlarında büyüterek çok büyük ve net resimler üretebiliyor. Şimdi GAN'ların biraz büyük resimlerle sıkıntısı var. Bunu aşmak için geliştirilmiş bir yöntem.
+
+446
+01:28:35,091 --> 01:28:51,591
+İşte burada Conditional Gun'lar var. Resme sadece bir noise vermek yerine bir de sınıf bilgisi veriliyor. Bir de AC Gun denilen işte çıktı olarak discriminator'dan bir sınıf bilgisi alıyor.
+
+447
+01:28:52,659 --> 01:29:05,520
+Bir de Cycle Gun dediğimiz, amaç olarak farklı amaçlı gunlardan bir resim üretmek yerine bir Image Translation yapan gun modelleri var.
+
+448
+01:29:07,220 --> 01:29:15,520
+Gun eğitimi biraz zor. Çünkü gunlar stabil değiller. Bu nedenle...
+
+449
+01:29:16,800 --> 01:29:24,159
+Eğer herhangi bir eşitsizlik olursa generator ve discriminator arasında eğitim çöküyor.
+
+450
+01:29:25,619 --> 01:29:28,920
+Bu çökme iki tipte gerçekleşiyor.
+
+451
+01:29:29,840 --> 01:29:37,420
+Birincisi mod collapse dediğimiz generator'ın sadece tek tip veri üretmeye başlaması olayı.
+
+452
+01:29:43,060 --> 01:30:01,020
+İstediğiniz gibi giderilebiliyor. Mesela WGAN dediğimiz GAN tipi bunu biraz stabilize edebiliyor. İşte AC GAN da mesela bu konuda çok iyi. Çünkü discriminator'dan bir de sınıf bilgisi aldığı için hata olarak aynı tipte veri üret.
+
+453
+01:30:02,547 --> 01:30:29,227
+Şöyle, discriminator bir de sınıf tahmini yapıyor. O yüzden aynı tipte veri üretirse bu çok büyük hataya yol açtığı için bunu biraz engellemiş oluyor. Bir de convergence failure dediğimiz generator'ın bir veriyi öğrenememesi ve gürültü üretmesi. Bu iki tipte eğitim en büyük problemler. Bunun dışında çok daha farklı hatalarda karşılaşabiliyoruz.
+
+454
+01:30:29,684 --> 01:30:30,684
+Evet.
+
+455
+01:30:31,347 --> 01:30:43,828
+Bu hataların çözümü için farklı modeller, farklı hata fonksiyonları işe yarıyor. Ancak Google'ın yaptığı bir makalede bu farklı GAN tiplerinin karşılaştırması yapılıyor.
+
+456
+01:30:43,828 --> 01:30:58,268
+Ve orada görülüyor ki farklı bir GAN modeli kullanmak yerine ya da farklı bir hata fonksiyonu kullanmak yerine iyi bir hyperparametre optimizasyonu yaklaşık olarak bütün GAN modellerinde aynı sonucu verebiliyor.
+
+457
+01:30:59,315 --> 01:31:06,635
+Bu yüzden hyperparametre optimizasyonu en önemli adım bu GAN eğitimleri sırasında.
+
+458
+01:31:07,655 --> 01:31:12,795
+Şimdi asıl konumuza gelirsek, burada anlatacağım iki tane makale var demiştim.
+
+459
+01:31:13,675 --> 01:31:18,335
+Bu makalelerin ilki Face Aging Conditional GAN deniliyor.
+
+460
+01:31:18,335 --> 01:31:26,795
+Bu da kişinin yaşlı halini elde ediyor. Ancak bunu Conditional GAN kullanılarak yapıyor.
+
+461
+01:31:27,412 --> 01:31:46,212
+Şimdi bu işlemi ilk başta generator noise alıyor dedik ya, bu noise yerine bir resmin latent vektörünü alıyor. Bu latent vektörü de autoencoderlarla oluşturuyor. Autoencoder yapısı da şey, resim.
+
+462
+01:31:46,644 --> 01:31:56,744
+küçültülerek bir bottleneck layerına kadar küçültülerek geliyor ve daha sonra bu bottleneck layerından sonra büyütülerek resmin orijinal haline gidiliyor.
+
+463
+01:31:56,744 --> 01:32:06,744
+Bu orijinal haliyle orijinal resmin arasındaki farkı göre de model eğitilip o bottleneck layerı bir latent vektöre çevriliyor.
+
+464
+01:32:07,884 --> 01:32:10,463
+Yani resmi temsil eden bir vektör.
+
+465
+01:32:11,699 --> 01:32:34,520
+Bu vektör generator'a verilip bir resim üretiliyor, yaşlı hali üretiliyor. Ancak burada kimlik konusunda bir sıkıntı yaşıyorlar. Burada ürettikleri şeylerde, yani orijinal resim, bu pixel-wise şey oluyor. Hani dediğim alt-encoder.
+
+466
+01:32:35,347 --> 01:32:51,847
+Bu da üretilen latent vector'daki sonuç oluyor. Burada kimlik bilgisinin biraz kaybolduğunu görebiliyoruz. Aslında bu pixel wise şey, bu kimlik sorununa başka bir makalenin getirdiği bir çözüm.
+
+467
+01:32:54,804 --> 01:33:18,667
+İyi bir sonuç üretilmemiş onunla bile. Bu yüzden makale yazarları Identity Preservation Optimization diye bir teknik üretiyorlar. Burada AutoEncoder eğitim sırasında direkt resimle pixel wise bir karşılaştırma yapılmıyor da, face detection...
+
+468
+01:33:19,028 --> 01:33:26,228
+Yapan bir modelin içinden bir embedding vektörü üretiliyor ve bu vektörlerin arasındaki farka bakılıyor.
+
+469
+01:33:27,688 --> 01:33:32,528
+Yani benim bir resmim var. Bu resmi face detection'a veriyorum.
+
+470
+01:33:32,528 --> 01:33:42,444
+Buradan bir embedding alıyorum. Sonra autoencoder'larda oluşturduğum resmi de aynı face detection yapan modele verip farklı bir...
+
+471
+01:33:42,515 --> 01:34:02,955
+Embedding Vector'ı oluşturuyorum. Sonra bu ikisinin farkına göre Auto Encoder'ı oluşturuyorum. Eğitip Latent Vector'ı oluşturuyorum. Böylece Face Detection Identity'yi bulmaya çalıştığı için Auto Encoder'da Identity'yi korumuş oluyor.
+
+472
+01:34:04,083 --> 01:34:21,384
+Burada IP dediğimiz olay da bu. Biraz daha iyi olmasına rağmen çok çok da kimliği koruyamadığını yine görüyoruz. Makalede öyle söylemiş ama ben çok başarılı bulmadım makalenin sonuçlarını.
+
+473
+01:34:30,608 --> 01:34:49,148
+Kondisyon olarak verdiği yaş grubu. Bu yüzden ben mesela 15 yaşındaki bir kişinin resmini işte 25 yaşında, 35 yaşında, 45 yaşında diye ayrı ayrı farklı yaş gruplarında resim üretebiliyorum. Bu çok iyi bir avantaj.
+
+474
+01:34:49,652 --> 01:35:02,951
+Makalede bahsedilmese de benim farklı GAN makalelerinden bildiğim kadarıyla bu yöntemde ayrıca daha büyük değişiklikler de yapılabilir resim üzerinde.
+
+475
+01:35:04,612 --> 01:35:14,112
+GAN'ın tam adını hatırlamıyorum ama üretilen resmi bir vektörle kontrol eden bir GAN tipi var. Bu da aynı, bu tipte çalışıyor o da.
+
+476
+01:35:14,836 --> 01:35:31,996
+Oradaki mantık kullanılırsa bu modelden muhtemelen gözlüklü bir resim ya da farklı profildeki bir resim tarzında farklı tipte gam model resimler de oluşturabilir. Sadece yaşlı.
+
+477
+01:35:32,627 --> 01:35:58,148
+Halin değil de resim üzerinde daha büyük değişiklikler yapılabilir. Ama bunun bazı dezavantajları var. Model eğitiminde aslında iki tane farklı model eğitiliyor. Bir Gun eğitiliyor, bir de Alter Encoder eğitiliyor. İşte kimlik yapısı hala kayboluyor. Ben başarı bulmadım sonuçları. Bir de yaş grubunu belirtmek iyi bir şey.
+
+478
+01:35:58,579 --> 01:36:13,300
+Ama eğitimi biraz karmaşıklaştırıyor. Yani projenin konusu sadece yaşlı halini elde etmek olduğu için projenin kapsamını biraz daha karmaşık hali olarak gördüm. Bu yüzden Cycle Gun adında farklı bir model kullandım.
+
+479
+01:36:15,572 --> 01:36:37,351
+Unpaired Image to Image Translation algoritması. Image to Image Translation bir resmi, bir domeynde bulunan bir resmi, farklı domeynde bulunan bir resme çevirmek. Yani buradaki örnekte gördüğünüz gibi işte input gerçek bir resimken bunu farklı ressamların domeynlerine taşımak, translation etmek.
+
+480
+01:36:37,908 --> 01:36:54,948
+Cycle Gun Unpaired olarak çalışıyor. Yani benim gerçek resimle işte Van Gogh'un domeninde bulunan bir resim aynı resim olmak zorunda değil. Farklı farklı resimler olsa da bu domenlerde bu translation işlemini gerçekleştirebiliyor.
+
+481
+01:36:56,115 --> 01:37:18,836
+Bu yüzden çok iyi. Diğer image translationlarda böyle bir kısıtlama var. O yüzden veri seti sıkıntısı yaşıyorlar. CycleGan'da böyle bir sıkıntı yok. CycleGan içerisinde iki tane gun bulunduruyor. Her domen için bir gun. Yani A domeninde bir resim elde etmek için olan bir gun, bir de B domeninde resim elde etmek için olan bir gun.
+
+482
+01:37:21,555 --> 01:37:32,956
+Ama amaç resmin orijinalini koruyabilmek olduğu için, gerçek resmin farklı domeninde elde etmek olduğu için bu ikisi ayrı eğitim yapıldığı zaman bunu başaramıyor.
+
+483
+01:37:36,095 --> 01:37:46,536
+Eğitim sırasında normal olarak discriminator'dan alan bir los alıyor. Bu resmin gerçek mi değil mi olduğunu belirtmek için. Ama orijinalini korumak için.
+
+484
+01:37:47,123 --> 01:38:14,764
+Makalenin yazarları Cycle Consistency Loss ve Identity Loss diye iki tane farklı loss ekliyor. Bu aslında doğal dil işlemede kullanılan bir yöntem. Ben mesela İngilizcedeki bir metni Türkçe'ye çevirmek istediğim zaman bu çevirinin iyi olup olmadığını anlamak için İngilizcedeki metni Türkçe'ye çeviriyorum. Sonra Türkçe'deki metni tekrar İngilizce'ye çevirdiğim zaman aradaki farkına bakıyorum.
+
+485
+01:38:15,699 --> 01:38:38,100
+Yani Cycle Gun'da da aynı mantık çalışıyor. Ben A domenindeki bir resmi B domenine çeviriyorum. Sonra diyorum ki eğer bu resim, bu işlem doğru olarak çalışıyorsa ben bu B domenindeki resmi tekrar A domenine çevirdiğim zaman aynı resmi elde etmem gerekiyor. Ya da yakın resimler elde etmem gerekiyor.
+
+486
+01:38:42,355 --> 01:38:49,835
+Çevirmeden sonra, yani bu cycle'dan sonraki pixel-wise mean absolute difference oluyor.
+
+487
+01:38:49,915 --> 01:38:57,575
+Her ikiyinde öğrenmiş oluyor öyleyse. Yani o domain'den o domain'e geçişi de öğreniyor. O domain'den o domain'e geçişi de öğreniyor.
+
+488
+01:38:57,575 --> 01:38:59,615
+Evet, iki taraflı işliyor.
+
+489
+01:39:00,095 --> 01:39:00,855
+Çok güzel.
+
+490
+01:39:01,247 --> 01:39:16,247
+Identity Loss da diyor ki ben eğer A domeninden B domenine çeviren bir Ghana B domeninden bir resim verirsem bana tekrar B domenindeki bir resim vermesi gerekiyor. Yani orijinal resmi vermesi gerekiyor.
+
+491
+01:39:16,707 --> 01:39:19,687
+Gençleştirmeyi de öğreniyor bu network.
+
+492
+01:39:19,687 --> 01:39:20,367
+Evet.
+
+493
+01:39:24,275 --> 01:39:49,096
+Bu yüzden toplamda üç tane farklı loss'umuz oluyor. İşte discriminator loss şeyi öğreniyor. Resim gerçek mi değil mi onu öğrenmek için olan bir loss. Cycle consistency loss işte cycle yaptıktan sonra değişim yani ikisi arasındaki ilişkiyi öğreniyor. Identity loss da kendisi içerisindeki değişimi biraz da öğreniyor.
+
+494
+01:39:51,060 --> 01:40:11,140
+Model olarak da normal gunlardan biraz farklı. Discriminator da basit olarak patch gun adında bir discriminator kullanılıyor. Burada output olarak normal discriminatorlar tek bir değer verirken patch gun bir matris veriyor.
+
+495
+01:40:11,731 --> 01:40:37,851
+Bu maddesin her elemanı, bunu çok detaylı bir biçimde ağırlıklara falan bakarak, geriye dönerek bir işlem yapıyorlar matematiksel. Her bir elemanı resmin belirli bir kısmına bakıyor. İşte burada sanırım 250'lik bir resimde bunu şey yapmışlar. 70'e 70'lik bir kısma bakıyor o tek bir eleman.
+
+496
+01:40:38,192 --> 01:40:58,192
+Gerçek mi, değil mi diye. Bunu işte dörde dörtlük bir matris verdiği zaman sanki resmi yetmişe yetmişlik parçalara ayırıp böyle farklı discriminatora verip sonuç üretmiş gibi bir sonuç çıkıyor ve daha iyi bir sonuç üretmiş oluyor.
+
+497
+01:40:58,192 --> 01:41:00,231
+Daha hızlıdır değil mi bu?
+
+498
+01:41:01,203 --> 01:41:05,063
+Daha hızlı değil, normal hızında diyebiliyorum.
+
+499
+01:41:05,443 --> 01:41:08,203
+Çünkü 70'e 70'e böldüğüne göre?
+
+500
+01:41:08,603 --> 01:41:13,923
+Yok, 70'e 70'e bölmüş gibi oluyor. Yani buna denk oluyor. Ama normalde işlem yaparken bölmüyor.
+
+501
+01:41:14,843 --> 01:41:20,783
+Resmin tamamını veriyor ama sonuç olarak dörde dörtlük bir matriz üretiyor.
+
+502
+01:41:21,143 --> 01:41:25,923
+Bu da her bir elemanı 70'e 70'lik kısımlara denk geliyormuş gibi oluyor.
+
+503
+01:41:27,063 --> 01:41:27,384
+Peki.
+
+504
+01:41:28,916 --> 01:41:45,216
+Generator'da da ResNet blokları kullanıyor. İlk başta resmi küçülterek belirli bir encoding yapıyor. Bu encoding yaptığı kısmı ResNet bloklarına veriyor.
+
+505
+01:41:45,216 --> 01:41:53,336
+Bu bloklarda şey, elimde iki tane convolutional layer'lar var. Bu bloğa giren input'u birinci layer'dan geçiriyorum.
+
+506
+01:41:53,908 --> 01:42:09,648
+Sonra birinci layer'ın sonucunu ikinci layer'dan geçiriyorum ve bir sonuç elde ediyorum. Bu sonucu bloğa giren inputla birleştirip üçüncü bir convolution layer'a veriyorum ve bunun çıkışı benim bloğumun çıkışı oluyor.
+
+507
+01:42:11,467 --> 01:42:20,948
+Bu bloklardan işte dokuz tane kullanıyor bizim model ama farklı sayıda kullanılabilir. Sonra bu blokların çıkışında da
+
+508
+01:42:21,171 --> 01:42:41,591
+Teknik Üniversitesi, Decoding Yapım, Resmi orijinal haline getiriyor. İç yapısı da Cycle Gun'ın böyle. Bu iki şeyde de, iki Gun'da da öyle oluyor. Avantajları Ampere'de olması çok büyük bir avantaj. Veri seti sıkıntısı olmuyor.
+
+509
+01:42:42,931 --> 01:42:55,612
+Genel olarak başarısı da Style Transfer'i bayağı başarılı bir biçimde gerçekleştiriyor. Ampere'de olmasına rağmen çok iyi öğreniyor veri setini. Ama dezavantajı One to One Mapping.
+
+510
+01:42:56,564 --> 01:43:11,224
+Benim elimde iki tip domen var sadece. Hani Conditional Face Agent ile geçenki modeldeki gibi farklı yaş gruplarını yapamıyorsun, üretemiyorsun. Bu büyük bir dezavantaj.
+
+511
+01:43:12,264 --> 01:43:18,604
+Farklı yaş grupları için farklı cycle gun'lar eğitsin.
+
+512
+01:43:21,076 --> 01:43:39,456
+En oluyor. Yani işte 15 yaş, 25 yaş, 15 yaş, 35 yaş, 35 yaş, 45 yaş. Aynen. Hepsinin birbiriyle ilişkisi olması gerekiyor. Yani bayağı zorlar diye öyle yapmadım ben. Esnek değil.
+
+513
+01:43:41,460 --> 01:43:56,899
+Üretilen resim bir domeninde oluyor ama bu resim üzerinde aslında çok bir kontrolünüz yok. Yani işte Van Gogh resmi üretiyorsunuz ama işte bunun bir renk şeması falan kontrol edemiyorsunuz. Sadece o domeneğine taşıyor. Domeneğini nasıl öğrendiyse.
+
+514
+01:43:58,520 --> 01:44:04,119
+Uygulama olarak iki veri setini birleştirdim demiştim.
+
+515
+01:44:04,500 --> 01:44:31,199
+Bu UTK Face dediğimiz 20 binden fazla 100 olan bir veri seti. Flickr Face HQ'de 70 binden fazla. Bunda yaş bilgisi yoktu. Başka birisinin yaptığı bir projede bu işte Flickr Face'e yaş, Age Detection modelinden bir yaş belirlemişler. Ben bu veriyi kullanarak.
+
+516
+01:44:31,667 --> 01:44:47,687
+Oluşturdum yaşları. Çok detaylı bir, keskin bir yaşa ihtiyacım yoktu. Çünkü sana şu da ikisini de gruplayacağım. Bu yüzden çok önemli değildim. Yani 25 ile 26 yaş arasında benim için çok bir fark yok.
+
+517
+01:44:49,587 --> 01:44:55,427
+Dağılım olarak da aşağıdaki dağılımdaki gördüğünüz gibi çok dengesiz bir veri seti.
+
+518
+01:44:56,083 --> 01:45:09,784
+O yüzden burada bazı kesmeler yaptım veri setinde. Bunların hepsini 128'e 128'lik boyuta taşıdım. Sonra da 20 yaş ve 30 yaş arasını genç olarak aldım.
+
+519
+01:45:09,784 --> 01:45:21,284
+Yani çünkü hepsini alırsam biraz veri set çok fazla dengesiz olacaktı. O yüzden belli bir sayısı aldım veri setinden. 50 yaştan büyükleri de yaşlı dedim.
+
+520
+01:45:23,891 --> 01:45:45,271
+Bazı sıkıntılar çıkardı çünkü 50 yaş o kadar da yaşlı değil. Bazı resimler ileride göreceksiniz. Bir değişim var, bir yaş artmış belli ama tam istediğiniz gibi kırışık bir yüz oluşmamış. Sadece biraz daha yaşını arttırmış oldu.
+
+521
+01:45:47,731 --> 01:46:07,331
+Eğitimin başında, ilk 2000-3000 iterasyonda, yüzün sadece nerelerine geliyormuş gibi öğrendi. Hiçbir değişiklik yapmadan sanki yüz nerede değişiklik yapılacak, onları öğreniyormuş gibi.
+
+522
+01:46:11,376 --> 01:46:31,416
+Öncü, ilk iterasyonlardan sonuçlar. Daha sonra yavaş yavaş değişiklikler yapmaya başladı ama çok gerçekçi değişiklikler değil bunlar. Tam öğrenememiş ne değişiklik yapmaya çalıştığını.
+
+523
+01:46:36,948 --> 01:46:40,887
+Değişiklikler yapıp güzel sonuçlar üretmeye başlıyor.
+
+524
+01:46:41,967 --> 01:46:44,427
+O üçüncü bayanı bayağı bir şey yapmışsın.
+
+525
+01:46:44,427 --> 01:46:44,587
+Evet.
+
+526
+01:46:44,587 --> 01:46:47,427
+Yani herhalde öyle olur gibi geliyor.
+
+527
+01:46:48,887 --> 01:46:49,707
+Bayağı evet.
+
+528
+01:46:51,868 --> 01:46:56,988
+Burada da farklı model, farklı iterasyonlardaki şeyler.
+
+529
+01:46:58,068 --> 01:47:03,827
+Burada mesela 153.000'in iterasyondaki ilk şey gayet güzel gibi görünüyor.
+
+530
+01:47:05,203 --> 01:47:11,943
+Şu da kötü değil. Birinci kısmın son resmi. Benim mouse'um görünüyor mu?
+
+531
+01:47:13,703 --> 01:47:14,203
+Görünüyor.
+
+532
+01:47:14,203 --> 01:47:28,743
+Tamam. Bu da çok kötü değil. Ama işte en son eğitimin sonlarına doğru daha net bir biçimde güzel resimler çıkartmaya başlıyor.
+
+533
+01:47:33,587 --> 01:47:40,667
+Resimleri tek tek incelemeye gerek yok. Genel olarak çok kötü bir resim çevirisi görmüyorum.
+
+534
+01:47:44,180 --> 01:48:09,680
+Ama bazı problemler var. Bu veri setinin kendi içerisindeki değişiklikler, dengesizliklerden dolayı cinsiyette bazen sıkıntı yaşayabiliyor. Burada biraz bıyık eklemiş gibi kadının yüzüne. Bir de ırkta da sıkıntı yaşayabiliyor. Irksal dengesizlik var veri setinde.
+
+535
+01:48:10,260 --> 01:48:17,540
+Bu yüzden yani siyahiler de özellikle hiç değişiklik yapmadan sonuç verebiliyor.
+
+536
+01:48:23,028 --> 01:48:28,367
+Ama burada arada güzel sonuçlar da çıkartabiliyor.
+
+537
+01:48:28,488 --> 01:48:35,547
+Senin veriş setin şey değil mi? Yani aynı insanın belirli yaşlardaki resmi yok sende.
+
+538
+01:48:35,768 --> 01:48:36,068
+Yok.
+
+539
+01:48:36,068 --> 01:48:41,807
+Sadece bir sürü belirli yaşta insanların resimleri var.
+
+540
+01:48:42,047 --> 01:48:42,268
+Evet.
+
+541
+01:48:42,587 --> 01:48:47,068
+Oradan mesela bir şekilde...
+
+542
+01:48:47,731 --> 01:49:13,731
+Önce onlar arasında sınıflama yapan bir ön ağı ekleyebilseydin bence. Mesela kız mı erkek mi, bayan mı erkek mi, kadın mı erkek mi veya cinsiyet, ırk, ten rengi tarzı temel o datayı önce bir...
+
+543
+01:49:14,260 --> 01:49:18,840
+Bu konuda bir şey yapabilseydin. Kaç tane veri vardı orada?
+
+544
+01:49:20,600 --> 01:49:27,640
+20.000 ile 70.000 teknik orijinal veri setinde. Ama benim şu anda kullandığım veri seti 38.000.
+
+545
+01:49:28,140 --> 01:49:33,920
+38.000 tabii 50 ayırt edilecek bir durum değil. Fakat hani şey olsa olur da.
+
+546
+01:49:35,347 --> 01:49:59,347
+Amazon Mechanical Turk gibi veya ciddi bir para olsa yaptırılabilir de. Ama onun şey yapılabilir belki, önüne bir ön sınıflayıcı ekleyip belirli temel sınıfları ayırt ederse o da muhtemelen senin eğitimine...
+
+547
+01:50:00,212 --> 01:50:17,612
+Ben Cycle Gun'ı ilk defa kullanıyorum. Gun'la ilgili çalışmıştım. Bu yüzden öğrenirken bu kadar büyük bir fark olacağını düşünmemiştim. Yoksa aslında sanırım UTK'da şey var.
+
+548
+01:50:26,515 --> 01:50:28,176
+Tamam, devam edelim.
+
+549
+01:50:29,355 --> 01:50:32,555
+Ama diğerinde de bulunabilirdi, evet.
+
+550
+01:50:35,376 --> 01:50:40,216
+Evet. Sonra işte bazı çıktığı örnekleri var.
+
+551
+01:50:44,996 --> 01:50:50,956
+Yani bunları detaylı olarak bakalım mı? Yoksa bir göz gezdirip geçelim mi hocam?
+
+552
+01:50:51,988 --> 01:51:10,668
+Şöyle bir göz gezdirir istersen. Bakalım. Evet. Devam etsen yani bunların tabii çok fazla zamanımız da yok şu anda. Temel sorunları söyledin değil mi?
+
+553
+01:51:10,668 --> 01:51:18,648
+Evet. Başarı olarak güzel bir başarı aldığına inanıyorum. Genel olarak.
+
+554
+01:51:19,347 --> 01:51:25,328
+Şey çok güzel, mesela şu başörtülü gayet güzel.
+
+555
+01:51:25,828 --> 01:51:33,248
+Burada mesela yukarıdaki daha önceki iterasyonlardan çıkan bir sonuçtu. Aşağıdaki daha sonra, eğitim sonlarına doğru.
+
+556
+01:51:33,248 --> 01:51:38,507
+Onu sonra görmedim ben. Ama burada dediğin sanki ikincisini de biraz erkekleştirmiş mi?
+
+557
+01:51:38,627 --> 01:51:45,507
+Evet. Biraz ben de öyle bir sıkıntı gördüm ama yine de bakınca sanki kadın olduğu belli oluyor.
+
+558
+01:51:46,771 --> 01:51:58,672
+Tabii. Ama şu ortadaki bayağı bir aynı insan olduğunu ve yaşlı olduğunu hissedebiliyorsun.
+
+559
+01:52:00,811 --> 01:52:12,712
+Burada anladığım kadarıyla şöyle güzel veri seti, tabii o büyük bir veri seti çok büyük fark oluşturacak.
+
+560
+01:52:13,488 --> 01:52:40,627
+Veri setinin önden sınıflandırılması çok büyük fark yaratacak gibi geliyor bana. Yani birbirine benzeyen insanları önceden belirleyebilirsen bir şekilde bir sınıflayıcıyla, sonra onun temelinde bir eğitim yaparsan büyük ihtimal çok çok daha başarılı soruşlar gelecek gibi gözüküyor.
+
+561
+01:52:44,884 --> 01:52:45,764
+Peki, tamam.
+
+562
+01:52:46,503 --> 01:53:08,983
+Hocam, aslında benim çalışmam tam da buna yönelikti. Daha önceden bir embedding'e sokuyorlar. O embedding'e göre benim çalışmam da style transferdi. O style'ı ilk önce öğreniyor, ondan sonra o style'a göre bir reconstruction yapıyor.
+
+563
+01:53:11,123 --> 01:53:14,463
+Ne yapıyor? Önce sınıflıyor mu şeyleri?
+
+564
+01:53:15,344 --> 01:53:20,523
+Gibi denebilir. Bir tane embedinge yerleştiriyor çıkardıkları feature vektörü.
+
+565
+01:53:20,523 --> 01:53:27,803
+İşte mesela beş tane stilimiz var diyelim ya da burada bu konuda mesela beş farklı yaş aralığı olsun.
+
+566
+01:53:28,819 --> 01:53:37,059
+Ondan sonra bunları öğrenirken bir feature vektörlerini tek tek embedding'e yerleştiriyor.
+
+567
+01:53:37,059 --> 01:53:44,019
+Ondan sonra yeni bir veri geldiğinde o embedding'e gidip bakıyor ilk önce. Ondan sonra ona göre bir condition atıyor.
+
+568
+01:53:44,019 --> 01:53:54,731
+Mesela 15 yaşındaki gelen stil imici bende iki tane input var. Bir tanesi original image, bir tanesi de...
+
+569
+01:53:54,963 --> 01:54:02,804
+İlk önce stil imicini anlıyor, 15 yaşında olduğunu. Ondan sonra Reconstruction'ı yapmaya başlıyor.
+
+570
+01:54:03,804 --> 01:54:06,043
+Senin sunumun hangi haftaydı?
+
+571
+01:54:06,923 --> 01:54:09,304
+Benim galiba ikinci haftaya kalacak.
+
+572
+01:54:09,779 --> 01:54:11,779
+Hazır mı peki sunumun?
+
+573
+01:54:11,779 --> 01:54:18,380
+Yani çok hazır olduğunu söyleyemem. Zaten hala train ediliyor.
+
+574
+01:54:18,980 --> 01:54:20,520
+Ya şu an üzerinde çalışıyor musun?
+
+575
+01:54:21,020 --> 01:54:23,159
+İkinci hafta sunsam daha iyi gibi.
+
+576
+01:54:23,880 --> 01:54:29,980
+Anladım. Keşke bilseydik, arka arkaya bu ikisi beraber güzel giderdi.
+
+577
+01:54:30,739 --> 01:54:36,119
+Neyse, çünkü ikinci hafta dediğim zaten iki hafta sonra olacak değil mi?
+
+578
+01:54:37,524 --> 01:54:42,404
+Yılbaşı tatili olması lazım.
+
+579
+01:54:42,404 --> 01:54:45,604
+Ben de hatırlatmış olurum haftaya.
+
+580
+01:54:45,604 --> 01:54:53,364
+Evet, neyse ama güzel olur. İkisini beraber bakarsak güzel olur.
+
+581
+01:54:54,564 --> 01:55:03,404
+Tamam [öğrenci], güzel bir çalışma. Sen de güzel bir şey yapmışsın. Artık aklına sağlık duyuyorum.
+
+582
+01:55:03,988 --> 01:55:20,328
+Bir ara verelim isterseniz. 10 dakika ara verelim. Ondan sonra da herhalde iki tane daha dinleyebiliriz.
+
+583
+01:55:24,908 --> 01:55:29,348
+11 saat, 11-10 geçeğe kadar ara verelim arkadaşlar.
+
+584
+01:55:33,395 --> 01:55:46,215
+Geldiğimizde kim olacak? [öğrenci], bir dakika ne yaptık? [öğrenci]'ten sonra [öğrenci] var. [öğrenci] burada mısın? [öğrenci] gözüküyor burada.
+
+585
+01:55:53,716 --> 01:55:57,736
+[öğrenci] hazır değilmiş bu hafta. [öğrenci], sen hazır mısın?
+
+586
+01:56:04,884 --> 01:56:12,083
+Yok. Bundan sonraki arkadaşlar herhalde bu hafta yetişeceğini düşünmediler diye düşünüyorum.
+
+587
+01:56:15,203 --> 01:56:24,884
+Onu tam tabii haftalara, ha şey, iki kişi de yapmayınca değil mi? Böylece iki kişi öne...
+
+588
+01:56:26,195 --> 01:56:36,435
+Geldi. Peki o zaman boşuna o zaman şeyi bitirelim. Hazır olan var mı? Başka sunumu hazır olup da sunabilecek var mı?
+
+589
+01:56:36,935 --> 01:56:40,815
+Hocam ben ikinci haftayı erteletmiştim [öğrenci]'i.
+
+590
+01:56:41,536 --> 01:56:42,336
+Evet.
+
+591
+01:56:43,555 --> 01:56:48,615
+Hazır çalıştım, bir şeyler hazırlamaya çalıştım. Sunabilirim aradan sonra.
+
+592
+01:56:50,068 --> 01:56:50,588
+Tamam.
+
+593
+01:56:51,148 --> 01:56:57,548
+Garantiyosun bir haftaya mail atmıştım, erteleyelim diye. Siz de teşekkürler ertelemişsiniz. Ama yine de isterseniz anlatabilirim.
+
+594
+01:56:58,828 --> 01:57:15,908
+Tamam. İyi olur. O zaman kısa bir ara verelim. Beş dakika bir ara verelim. Uzun bir ara vermeyelim. Sonra beş dakika sonra [öğrenci] da artık sunumunu yapsın. Sonra da artık dersi bitiririz. Tamam mı arkadaşlar?
+
+595
+01:57:16,708 --> 01:57:17,468
+Tamam hocam.
+
+596
+02:01:17,300 --> 02:01:27,420
+Evet, beş dakika geçti değil mi arkadaşlar? Saate de bakmadım ben çıkarken. [öğrenci] sen müsaitsen başlayabilirsin.
+
+597
+02:01:27,579 --> 02:01:29,420
+Evet hocam, paylaşıyorum bir saniye.
+
+598
+02:01:30,359 --> 02:01:31,899
+Hocam bir şey sorabilir miyim?
+
+599
+02:01:32,239 --> 02:01:32,760
+Tabii ki.
+
+600
+02:01:33,260 --> 02:01:37,460
+Eğer sıkıntı olmayacaksa ben de sunum yapabilirim. Sunumum hazır.
+
+601
+02:01:38,996 --> 02:01:49,856
+Tamam, seni de alırız o zaman. Çünkü bu dersi kullanalım. İki sunumluk zamanımız var. O iki sunumu yapalım öyleyse.
+
+602
+02:01:55,764 --> 02:01:56,764
+Başlayayım hocam.
+
+603
+02:01:56,764 --> 02:01:57,764
+Başlasın.
+
+604
+02:02:01,619 --> 02:02:03,000
+Ekranım görünüyor herhalde.
+
+605
+02:02:04,420 --> 02:02:04,619
+Evet.
+
+606
+02:02:07,059 --> 02:02:23,679
+Evet. Benim inceleyeceğim makale, burada görünen makale, çelik köprülerdeki yorgunluk çatlakları denilen, sürekli değişken yüklere maruz kaldığı için çatlaması anlamına geliyor bu ifade.
+
+607
+02:02:24,179 --> 02:02:27,880
+Video özellik, video izleme yöntemiyle görüntü tabağında tespit edilmesi.
+
+608
+02:02:28,916 --> 02:02:36,616
+Bu yapılarla ilgili bir mühendislik alanına da girdiği için daha temel teknikler kullanılmış.
+
+609
+02:02:36,616 --> 02:02:42,516
+Yani diğer arkadaşların anlattığı konuları görünce buradaki konular daha temel seviyelerde kalıyor.
+
+610
+02:02:43,356 --> 02:02:51,856
+Ama bizim dersimizi direkt ilgilendiren ilgi noktası yani feature point ve feature point tracking yöntemleri kullanılacak.
+
+611
+02:02:52,576 --> 02:02:54,756
+Onları anlatmış olacağım bu uygulamada.
+
+612
+02:02:55,412 --> 02:03:03,171
+Bu çatlakların video kayıtları üzerinden incelenmesi, tespit edilmesini anlatan bir uygulama, bir makale.
+
+613
+02:03:04,431 --> 02:03:15,912
+Bu çatlaklar neden oluşuyor? Uzun yıllar kullanıldığı için çelik köpler ve üzerindeki yükler sürekli değiştiği için araç yükü veya rüzgar gibi yükler de olabilir belki bunlar.
+
+614
+02:03:16,591 --> 02:03:22,631
+Sürekli değiştiği için esnek bir yapıya sahip. Bu esneklik de zamanla çatlamaya sebep olabiliyor.
+
+615
+02:03:24,564 --> 02:03:43,884
+Tekrarlı yük altında bu çatlama problemi oluşuyor. Zamanla zarar görmesine sebep oluyor köprülerin. Daha sonra da bu yapıların çökmesine ve can ve mal kayıplarına sebep oluyor. Onun için bu problemin çözülmesi amacıyla bu makalede bir çalışma yapılmış.
+
+616
+02:03:44,344 --> 02:03:50,384
+Çözüm olarak klasik yöntemler var. En klasik yöntem periyodik.
+
+617
+02:03:50,735 --> 02:04:10,216
+Gözlem yapılması ve bu çatlakların büyümeden tespit edilmesi. Bunun için daha önceden kullanılan klasik yöntemler insan gözleme veya sensör bağlanarak bu metal yapılar üzerine ölçüm yapılması, elektronik olarak ölçüm yapılması veya akustik olarak da ölçüm yapılıyormuş.
+
+618
+02:04:10,216 --> 02:04:15,216
+Makalede anlatıldığına göre. Bunlar dışında da...
+
+619
+02:04:15,507 --> 02:04:42,768
+Bunları bu slide'da da detaylı görselleştirdim. Akustik emisyon denilen bir yöntem var. Bir de piezoelektrik sensörleri ile yapılan bir test yöntemi var. Bu bizim makale dışında kullanılan yöntemler. Bunların bazı dezavantajları var. Örneğin fazla zaman gerektiriyor, yoğun emek harcanması gerekiyor ve güvenilir değil.
+
+620
+02:04:43,507 --> 02:05:03,207
+Bunların dışında, bunlara alternatif olarak da temel görüntü işleme teknikleri kullanılabilir demiş makalede. En temel görüntü işleme tekniklerinden birisi kenar tespiti. Bunun için de keni ve sobeli görmüştük zaten.
+
+621
+02:05:07,891 --> 02:05:21,631
+Kenny ve Sobey dışında gelişmiş görüntü işleme teknikleri de var. Bunlarla ilgili daha önce makale çalışmaları yapılmış. Ancak en gelişmişi digital image correlation denilen bir yöntem.
+
+622
+02:05:25,203 --> 02:05:43,443
+Ancak bu yöntem biraz dezavantajları çok etkili bir yöntem ama pahalı ekipmanlar gerekiyor. Mikroskop, özel ışık kaynakları, ön hazırlık süreci, yüzeyin işaretlenmesi gibi şeyler var. Ön hazırlık süreçler var. Bu da bunların dezavantajı, bu yöntemin dezavantajı.
+
+623
+02:05:47,155 --> 02:06:02,996
+Burada önerilen yaklaşım ise, bu çelik parçaların yüzeyleri üzerinde değişken yük altında oluşan hareketlerin video kaydı ve görüntü işleme teknikleri kullanılarak tespit ve takip edilmesi.
+
+624
+02:06:02,996 --> 02:06:13,855
+Bunun için de Feature Point Detection denilen ilgi noktası tespiti yöntemi kullanılmış.
+
+625
+02:06:14,387 --> 02:06:21,048
+İkinci olarak da Feature Tracking denilen bu ilgi noktalarının video kareleri boyunca takip edilmesi.
+
+626
+02:06:22,068 --> 02:06:27,708
+Üçüncü olarak da Localization yani çatlak bölgesinin bu ilgi noktaları kullanılarak tespit edilmesi.
+
+627
+02:06:29,488 --> 02:06:32,048
+Şu şekilde bir test ortamı hazırlanmış.
+
+628
+02:06:34,108 --> 02:06:41,008
+Değişken yük uygulayabilmek için böyle bir mekanizma kurulmuş.
+
+629
+02:06:41,876 --> 02:07:03,496
+Kameramız burada. Aynı zamanda bu işlemin doğruluğunu tespit edebilmek için şu sensör ile elde edilen sonuçlar, görüntü işleme teknikleri ile elde edilen sonuçlarla karşılaştırılıyor. Şurada kullanılan metalde de bir çatlak mevcut. Şu şekilde gösterelim.
+
+630
+02:07:04,595 --> 02:07:12,275
+Şurada Fetgü Tırek denilen yorgunluk çatlağı, yani sürekli değişken yüke maruz kalmaktan kaynaklı bir çatlak mevcut.
+
+631
+02:07:12,595 --> 02:07:22,655
+Ve farklı yükler, farklı boyutta yükler uygulandığında, kuvvetler uygulandığında bu çatlağın farklı görüntülerini burada görebiliyoruz.
+
+632
+02:07:23,475 --> 02:07:27,675
+Sağdaki ifadede yükün değişkenliğini gösteren bir grafik.
+
+633
+02:07:29,055 --> 02:07:31,895
+Yani uygulanan kuvvetin değişkenliğini gösteriyor.
+
+634
+02:07:33,524 --> 02:07:45,324
+Bizi ilgilendiren kısım ise, görüntü işlemiyle ilgili kısım ise, bu parçanın video kaydı sırasında elde edilen görüntülerin, görüntüde ilgi noktaları tespit ediliyor.
+
+635
+02:07:45,424 --> 02:07:49,544
+Bu kırmızıyla ilgi işaretlenen noktalar, ilgi noktaları yani feature pointler.
+
+636
+02:07:51,024 --> 02:08:00,544
+Daha sonra da bunların filtrelenmesi gerekiyor. Tüm feature pointler ile değil, sadece dağın etrafındaki feature pointlerin.
+
+637
+02:08:01,011 --> 02:08:18,091
+tespit edilmesi gerekiyor. Bu çalışmada da bu yapılmış. Feature Point yani ilgi noktası tespitinin çok farklı kullanım alanları var. Derste de görmüştük zaten bazı yöntemleri. Vehicle, araç takibi, görüntü moza ekleme.
+
+638
+02:08:19,636 --> 02:08:23,676
+3 boyutlu reconstruction gibi arkadaşlarımız da anlattı.
+
+639
+02:08:23,676 --> 02:08:29,676
+Ve Object Recognition gibi konularda Feature Point Detection kullanılıyor zaten.
+
+640
+02:08:30,876 --> 02:08:37,876
+Bizim derste de kullandığımız Feature Point Detectors'lardan Harris var.
+
+641
+02:08:37,876 --> 02:08:41,236
+Bu uygulamada sheetomasi algoritması kullanılmış.
+
+642
+02:08:42,003 --> 02:08:51,643
+Bunun dışında da SIRT, FAST ve SIFT dersleri de size anlatmıştınız. Algoritmalarıyla, yöntemleriyle ilgi noktalar tespit edilebiliyor.
+
+643
+02:08:52,844 --> 02:08:58,344
+Dediğim gibi burada sheetomasi denilen bir ilgi noktası tespit yöntemi uygulanacak.
+
+644
+02:09:00,463 --> 02:09:03,683
+Bu yöntem nasıl bir yöntem? Ondan bahsedeyim.
+
+645
+02:09:04,183 --> 02:09:07,123
+Halis köşe bulma yöntemine çok benziyor.
+
+646
+02:09:07,828 --> 02:09:21,628
+Yine imgenin gradiyan değerleri üzerinden second moment matris hesaplanıyor. Bu aşağıda da birinci denklemde görülüyor. Yine bu matrisin öz değerlerine yani eigenvalue değerlerine bağlı olarak ilgi bölgeleri hesaplanıyor.
+
+647
+02:09:31,636 --> 02:09:46,636
+Determinant ve Trace'lerine göre bir R parametresi, R sonucu elde ediliyordu. Burada ise bir Threshold değerine göre en iyi eigenvalue'lar ya da en yüksek eigenvalue değerleri kullanılıyor. Tek farkı bu.
+
+648
+02:09:46,636 --> 02:09:58,572
+Yani hiç öyle trace değil de, çünkü o trace bir hızlandırmak için düşünülen bir şey değil mi? Determinant ve trace. Bu direkt eigenvalue'yu kullanırım ben diyor yani.
+
+649
+02:09:58,707 --> 02:10:19,627
+Evet, sağda da görselde de Harris yöntemiyle çok daha fazla nokta bulunabiliyor ama bu yöntem, Sheet-Thomas yöntemi en iyilerini bulmak için tasarlanmış diye anladım ben. Dolayısıyla en yüksek aygın value değerlerine sahip olan belli bir trash oldun üzerindekileri dikkate alarak ilgi noktalarını tespit ediyor.
+
+650
+02:10:24,351 --> 02:10:37,811
+Fonksiyonu var. Yani hazır olarak kullanılabiliyor. Uygulama olarak da göstereceğim. Good Features to Track metodu ile, yöntemiyle OpenCV'de hem Harris hem de Hitomasi ilgi noktaları tespiti yapılabiliyor IMG üzerinde.
+
+651
+02:10:40,332 --> 02:10:51,132
+Bu uygulamada da köprü görüntüleri üzerinde. Tabii burada çok uzaktan çekilmiş bir görüntü var. Bu örnek olarak verilmiş. Normal çatlak tespitinde bu kadar uzaktan çekilmesi.
+
+652
+02:10:51,568 --> 02:11:00,328
+Çok iyi sonuçlar vermeyecektir. Ama bu örnek olması açısından uzak görüntü üzerinden ilgi noktaları tespit edilmiş. Makaleden aldığım bir görüntü.
+
+653
+02:11:02,248 --> 02:11:13,927
+Region of Interest, yani belli bir nokta, belli bir bölge seçiliyor. Ve o bölge üzerinde bu Feature Point Detection algoritması, yani sheetomasi algoritması uygulanıyor.
+
+654
+02:11:14,336 --> 02:11:26,416
+İlgi noktaları tespit ediliyor ve bu ilgi noktaları etrafındaki 11'e 11 piksellik patchler, yani bölgeler üzerinde işlem yapılıyor.
+
+655
+02:11:29,115 --> 02:11:41,235
+İkinci işlemde, ilgi noktalarını tespit ettikten sonra yapılması gereken ikinci işlemde bunların hareketi, bunların video kaydı, yani farklı karelerde nasıl hareket ettiğinin analiz edilmesi.
+
+656
+02:11:41,716 --> 02:12:08,896
+Örneğin sağdaki görüntüde görüyoruz. Bir araç hareket ediyor video görüntüsünde. Onun hareketini kırmızı çizgilerle izlendiğini görebiliyoruz. Yani nereden nereye gittiğini, görüntü üzerinde nasıl bir hareket yaptığını tespit edebiliyoruz. Birçok feature point tracker var. Bizim burada kullanacağımız tracker yöntemi de KLT. Yani Kanede, Lucas ve Tomasi'nin geliştirdiği.
+
+657
+02:12:09,363 --> 02:12:22,363
+Tracker yöntemi. Diğer yöntemler de yine Python içerisinde, OpenSevli Kütüphanesi'nde var. Ben burada makalede geçtiği için bunu anlatıyorum.
+
+658
+02:12:22,363 --> 02:12:33,363
+KLT Feature Tracker nasıl çalışıyor, ondan bahsedelim. İlk olarak videonun ilk karesinde ilgi noktaları tespit ediliyor.
+
+659
+02:12:33,716 --> 02:12:55,816
+Bu belli bir bölge seçerek, region of interest seçerek de yapılabiliyor. Veya ben uygulamada otomatik seçmesi, kendi seçmesini istediğim için en yüksek değere sahip ilgi noktalarını, 10 tane ilgi noktasını seçecek veya rakam olarak değiştirebiliyorsunuz, threshold'u değiştirebiliyorsunuz. Daha sonra da ardışık karelerde bu ilgi noktaları aranıyor.
+
+660
+02:12:56,404 --> 02:13:00,404
+Yani bir sonraki karede o ilgi noktası etrafında arama yapılıyor.
+
+661
+02:13:00,404 --> 02:13:07,404
+Ve bulunduğu noktada yeni koordinatlar üzerinden bu arama işlemi diğer karelerde devam ediyor.
+
+662
+02:13:07,404 --> 02:13:18,404
+Ve bu yer değişimi tabii bir vektör olarak kaydediliyor. Yani nereden nereye gitmiş, nasıl hareket etmiş bu bir vektöre dönüştürülüyor.
+
+663
+02:13:24,275 --> 02:13:46,076
+Bu yöntem yani KLT Feature Tracker kullanılabiliyor. Bir de şunu söyleyeceğim. Sadece yatay ve dikey eksenli nesnenin hareketi değil, yakınlaşması veya uzaklaşması da burada problem. Bunun önüne geçmek için de şu şekilde aynı derste gördüğümüz Difference of Gauss yandı galiba.
+
+664
+02:13:46,543 --> 02:13:53,543
+Farklı ölçekte sample'lar alınıyordu. Burada da ona benzer bir teknik kullanılıyor.
+
+665
+02:13:53,543 --> 02:14:04,543
+Eğer görüntü çok büyüdüyse, önceki karelerdeki görüntü ile yeni büyüyen görüntünün arasında karşılaştırma yapabilmek için bu sub-sample'larda da arama yapılıyor.
+
+666
+02:14:04,543 --> 02:14:09,228
+Dolayısıyla boyut değişimini de takipte kaçırmamış oluyor.
+
+667
+02:14:09,779 --> 02:14:21,619
+Tabi hesaplama maliyetini artıran bir işlem. Ama video görüntülerinde bu yakınlaşma ve uzaklaşma kaçınılmaz bir şey olduğu için bunun da bu problemin de çözülmesi gerekiyor.
+
+668
+02:14:23,100 --> 02:14:31,279
+Bu yöntemi ortaya çıkaran akademisyenler, tabi tek aşamada, tek seferde bu yöntem ortaya çıkmamış.
+
+669
+02:14:33,747 --> 02:14:42,847
+Lucas ve Kanada yöntemi geliştirmiş. Daha sonra 91'de de şu anki kullandığımız KLT algoritması ortaya çıkmış.
+
+670
+02:14:43,487 --> 02:14:51,728
+94'de de bu OpenSevide kullandığımız iyi özelliklerin takip edilmesi yöntemi Thomasin ve Sheer tarafından geliştirilmiş.
+
+671
+02:14:53,728 --> 02:15:00,728
+Bu algoritma, az önce bahsettiğim işlem basamaklarını burada da detaylı ekledim.
+
+672
+02:15:02,100 --> 02:15:27,480
+Kanuç Melon Üniversitesi'nin ders slide'larından aldım. Yine burada da eigenvalue'ların belli bir eigenvalue eşlik değerinden yüksek olması gerekiyor. Bu Thomas-E-Shee, Shee-Thomas-Ee algoritmasında, bilgi noktası tespitinde. Bizim makalemize gelecek olursak, burada video görüntülerinin farklı karelerle ifade edildiğini görebiliyoruz.
+
+673
+02:15:28,340 --> 02:15:55,800
+Bu video karelerinde, ilk karede daha doğrusu ilgi noktaları tespit ediliyor. Birçok ilgi noktası var ama bize bunların hepsi değil, sadece çatlak etrafındaki ilgi noktaları gerekiyor. Onun için bunların elenmesi gerekiyor. Bunları nasıl eleyeceğiz? Öncelikle her bir ilgi noktası için değişken yük altında bu parçanın hareketi sonucunda bir grafiğe dönüştürüyor bu noktaların hareketi.
+
+674
+02:15:56,180 --> 02:15:59,520
+Her bir nokta bu şekilde bir hareket eğrisine sahip olacak.
+
+675
+02:16:00,440 --> 02:16:08,840
+Daha sonra her bir noktanın etrafındaki dairesel bir bölge, localized circle region anlamına geliyor.
+
+676
+02:16:08,840 --> 02:16:11,788
+Bu dairesel bölge içerisinde diğer komşuluklarıyla...
+
+677
+02:16:11,923 --> 02:16:34,224
+Hareketinin ortak olup olmamasına bakılıyor. Eğer aynı hareketi yapıyorsa diğer komşuları, diğer ilgi noktaları, komşuluktaki dairesel bölgedeki ilgi noktaları aynı hareketi yapıyorsa burada herhangi bir çatlak yok anlamına geliyor. Ancak farklı harekete sahip komşuları varsa orada bir çatlak olduğu fikri ortaya çıkıyor.
+
+678
+02:16:37,775 --> 02:16:45,136
+Hareketi sahip ilgi noktaları işaretleniyor. Yani filtreleniyor. Diğerleri kaldırılıyor. Sadece onlar kalıyor.
+
+679
+02:16:46,096 --> 02:16:46,556
+Dolayısıyla...
+
+680
+02:16:46,556 --> 02:16:56,775
+Bir süreklilik geldi bana. Bu nasıl çalışıyor ki? Pek aklıma yatmadı esasen. Yani çatlak yerdeki ilgi noktaları...
+
+681
+02:16:58,636 --> 02:17:03,695
+Bir süreklilik olmuyor orada. Yani rigid bir yapı...
+
+682
+02:17:03,695 --> 02:17:10,855
+Çatlak olmayan bölgelerde aynı hareket. Şöyle göstereyim isterseniz.
+
+683
+02:17:10,855 --> 02:17:17,256
+Şimdi şu benim yaptığı, göstereceğim uygulamayla ilgili bir ekran görüntüsü.
+
+684
+02:17:17,256 --> 02:17:24,175
+Mesela paper üzerinde yani kağıt üzerindeki ilgi noktaları ve kağıdın kenarındaki ilgi noktaları var görüyorsunuz.
+
+685
+02:17:24,175 --> 02:17:28,523
+Çatlak olarak böyle birbirinden bağımsız iki yapı olarak düşünürsek.
+
+686
+02:17:28,884 --> 02:17:48,103
+Kamerayı oynattığımda veya kağıdı oynattığımda diğer noktalar çok oynamıyor. Ama kağıdın üzerindeki ilgi noktaları daha farklı bir hareket gösteriyor. Çatlakta da buna benzer bir şey düşünülebilir. Çatlağın üst tarafı ile alt tarafı arasında bir hareket farklılığı olacaktır. O şekilde anladım ben.
+
+687
+02:17:51,636 --> 02:18:10,495
+Bu şekilde çatlağın etrafındaki hareketin, şu bir sonraki slide'da da buna benzer bir grafik var. Çok ufak da olsa bir farklılık oluyor. Yani sizin dediğiniz gibi çok büyük bir fark yok. Ama şu değişken yük altında örneğin sağlam bir bölgede ya da işte çatlağın olmadığı bir bölgede.
+
+688
+02:18:10,579 --> 02:18:35,420
+Noktalar arasında herhangi bir hareket farklılığı olmuyor. Ancak çatlağın her iki tarafında, çatlağın yakının da bir nokta seçildiğinde, çatlağın diğer tarafındaki nokta hafif de olsa farklı bir harekete dönüşüyor. İlk hareketten ya da merkez noktadan farklı bir harekete sahip olmuş oluyor. Dolayısıyla çatlağın etrafındaki noktalar bu şekilde işaretlenmiş oluyor.
+
+689
+02:18:38,644 --> 02:18:44,164
+Son olarak da bu çatlak bölgesi iki kareyle iki kutucukla işaretleniyor.
+
+690
+02:18:44,724 --> 02:18:48,863
+Ve bu iki kutucuk arasındaki hareket farkından çatlağın boyutu tespit ediliyor.
+
+691
+02:18:49,863 --> 02:18:54,824
+Yani ne kadar farklı hareket ediyorsa o kadar büyük bir çatlak anlamına geldiğini söyleyebiliriz.
+
+692
+02:18:55,824 --> 02:19:03,203
+Burada hesaplama yapılırken kullanılan yöntemler de matematiksel olarak makalede ifade edilmiş.
+
+693
+02:19:04,371 --> 02:19:19,871
+Her bir noktanın X ve Y değerlerinin kareleri alınarak, daha sonra da kare kökü alınarak bir değişim grafiği çizilmiş her nokta için. O noktanın komşuluğundaki, dairesel bölgedeki diğer komşuları arasındaki...
+
+694
+02:19:20,095 --> 02:19:31,315
+Fark, şurada çıkarma işlemi yapılıyor. İlk nokta ile ikinci nokta arasında bir çıkarma işlemi yapıldığı için ikinci noktada herhangi bir fark olmuyor grafik üzerinde.
+
+695
+02:19:31,935 --> 02:19:39,095
+Aynı şekilde diğer noktalarda da herhangi bir fark olmadığı için ilk noktaya göre bunlar bu şekilde...
+
+696
+02:19:39,924 --> 02:19:57,504
+Düz bir görüntüye sahip, hareketsiz olduğunu söyleyebiliriz göreceli olarak birinci noktaya. Daha sonra bunların standart satması alınıyor ve bir değişim kat sayısı, coefficient of variation diye ifade edilmiş makalede, değişim kat sayısıyla skalar bir değere dönüştürülüyor.
+
+697
+02:20:07,763 --> 02:20:18,984
+Listelendiğinde, görselleştirildiğinde bu threshold'un üzerindeki noktalar çatlak noktalar olarak, çatlağın etrafındaki noktalar olarak işaretleniyor aşağıda gördüğümüz gibi.
+
+698
+02:20:20,211 --> 02:20:43,711
+Bu çatlak olan bölgedeki grafiğe bakacak olursak da yine merkez nokta olarak 21 ilgi noktasını almış burada. 22, 23 ve 24 aynı bölgede olduğu için çatlağın üst kısmında olduğu için 21. noktaya göre herhangi bir şeyi yok. Farklı hareket sergilemiyor.
+
+699
+02:20:48,211 --> 02:20:55,851
+Tahtanın diğer tarafında olduğu için az da olsa 21. noktaya göre farklı bir salınım gerçekleştiriyor diyebiliriz.
+
+700
+02:20:58,731 --> 02:21:07,432
+Bu şekilde farklı salınım değerleri ile hesaplanan değişim kat sayısı trash oldun üzerinde bir değer olmuş oluyor.
+
+701
+02:21:07,432 --> 02:21:13,451
+Bu trash oldun üzerindeki değerler de ilgi noktası olarak tahtanın etrafında toplanmış oluyor.
+
+702
+02:21:14,548 --> 02:21:24,868
+Şimdi şöyle bir uygulama var zaten hocam. OpenCV ve Python içerisinde böyle bir uygulama var. Hazır olarak kullanıyorum ben bunu.
+
+703
+02:21:24,868 --> 02:21:31,868
+Telefonumun kamerasıyla göstermek istiyorum eğer. Başarabilirsem yoksa.
+
+704
+02:21:44,564 --> 02:21:48,923
+Görebiliyor musunuz? Spider ekranını acaba?
+
+705
+02:21:50,443 --> 02:21:51,224
+Görüyorum.
+
+706
+02:21:59,283 --> 02:22:02,203
+Şimdi kamera görüntüsü gelmiş olması gerekiyor. Geldim acaba.
+
+707
+02:22:02,203 --> 02:22:03,484
+Geldi.
+
+708
+02:22:04,804 --> 02:22:05,804
+Örneğin,
+
+709
+02:22:07,884 --> 02:22:14,283
+şurada görüyorsunuz 10 tane ilgi noktası ben tespit etmesini istedim. Bunu sınırlayabiliyoruz.
+
+710
+02:22:15,283 --> 02:22:23,283
+Tespit ettiği 10 tane ilgi noktasını video üzerinde, kareler üzerinde takibini yapabiliyor.
+
+711
+02:22:23,924 --> 02:22:28,924
+Görünüyor acaba? Evet, evet gözüküyor. Takipçi edebiliyor yani. O noktaları kaçırmıyor.
+
+712
+02:22:28,924 --> 02:22:34,924
+Tabii çok hızlı kamera hareketinde kaybediyor. Ben de ufak bir ekleme yaptım sadece bu kodlara.
+
+713
+02:22:34,924 --> 02:22:46,924
+Görüntüler ekrandan kaybolduğunda program hata veriyordu. Ben de yeniden farklı ilgi noktaları tespit etmesini sağlayacak eklemeler yaptım.
+
+714
+02:22:46,924 --> 02:22:50,700
+Yani ilk ilgi noktaları kaybolduğunda yeni ilgi noktaları...
+
+715
+02:22:51,379 --> 02:23:15,239
+Buluyor hocam. Bu şekilde. Şunu demek istiyordum. Az önce de bilmiyorum şu anda olacak mı? Yani farklı nesneler hareket ettiğinde farklı izler ortaya çıkıyor. Dolayısıyla çatlakta da çatlağın her iki bölgesi farklı bölge olarak düşünürsek az da olsa farklılık olacaktır hareket grafiğinde diye düşünüyorum.
+
+716
+02:23:16,788 --> 02:23:18,628
+Böyle bir uygulama yaptım hocam.
+
+717
+02:23:18,628 --> 02:23:19,868
+Yaklaşım benim için.
+
+718
+02:23:22,227 --> 02:23:26,288
+Peki, [öğrenci] sen de güzel bir iş yapmışsın.
+
+719
+02:23:28,028 --> 02:23:35,488
+Kod da gösterdim. Bir de aslında tracking'i de anlatamadık dersimizde.
+
+720
+02:23:35,727 --> 02:23:40,328
+Yani o da tracking de önemli bir uygulama. Bilgisayarla göre uygulaması.
+
+721
+02:23:44,404 --> 02:24:07,123
+Birazcık uzaktan eğitimde nedense ben yavaş gidiyorum, onu fark ediyorum. Biraz o yüzden yavaş gittik. Biraz da ders gitti. Bir de o yapay sinir ağları ile ilgili, derin öğrenme ile ilgili dersleri katılım deyince bir kısım konuları anlatmamış olduk.
+
+722
+02:24:12,819 --> 02:24:35,840
+Orada da önemli şeyler var. Optical Flow gibi var. O KLT Tracker'lar falan var. Sen de bir şekilde bunu mini bir introduction yapmış oldun. Yani tracking, video üzerinde noktaların veya nesnelerin izlenmesi problemini de bir şekilde bize biraz anlatmış oldun. O da güzel oldu.
+
+723
+02:24:38,772 --> 02:24:44,532
+Sunumunu da güzel hazırlamışsın. Teşekkür ediyoruz. Ben teşekkür ediyorum.
+
+724
+02:24:50,260 --> 02:24:59,159
+Bir sonrasında, şimdi ne yaptık? [öğrenci] anlattı.
+
+725
+02:25:06,131 --> 02:25:08,191
+[öğrenci]'dan sonra.
+
+726
+02:25:13,427 --> 02:25:16,448
+Şimdi bir [öğrenci] miydi? [öğrenci] sen mi anlatabilirim?
+
+727
+02:25:16,487 --> 02:25:16,968
+Evet hocam.
+
+728
+02:25:17,687 --> 02:25:20,768
+O zaman sen başla. Sen de bize anlat.
+
+729
+02:25:22,207 --> 02:25:23,027
+Tamam hocam.
+
+730
+02:25:32,884 --> 02:25:35,184
+Şu an sunum görünüyor herhalde değil mi hocam?
+
+731
+02:25:35,184 --> 02:25:35,664
+Görünüyor.
+
+732
+02:25:36,804 --> 02:25:41,943
+Ben truba sisteminin derinli öğrenme için kullanımı konusunu seçmiştim.
+
+733
+02:25:42,824 --> 02:25:45,064
+Bu konu bir makaleye bağlı değil.
+
+734
+02:25:45,404 --> 02:25:48,724
+TÜBİT'a'nın geçtirdiği bir sistem var truba diye.
+
+735
+02:25:48,824 --> 02:25:50,164
+Onun tanıtımını yapacağım.
+
+736
+02:25:50,404 --> 02:25:52,864
+Bir de ufak bir kod patçası yazıp çalıştırdım.
+
+737
+02:25:53,184 --> 02:25:53,984
+Onu göstereceğim.
+
+738
+02:25:54,623 --> 02:25:55,884
+İçerik olarak...
+
+739
+02:25:56,244 --> 02:26:03,943
+Şöyle, sesini, sözünü kestim. Sisteme kayıt olabildin mi, girdin mi?
+
+740
+02:26:03,963 --> 02:26:08,384
+Oldum hocam. En baştan beri onu anlatmaya başlıyorum.
+
+741
+02:26:08,384 --> 02:26:10,204
+Nasıl kayıt olabildin?
+
+742
+02:26:13,427 --> 02:26:28,768
+İçerik olarak truba nedir? Truva kaynakları. Truva sistemine ulaşım. Truvanın bir üst menüsü var. En son yaptığım uygulamayı anlattım. En son sonuçlar ve ufak bir demo gösterimi yapacağım. Sisteme nasıl ulaşılır, nasıl ulaşılması gerekiyor gibi.
+
+743
+02:26:32,079 --> 02:26:42,420
+TÜBİTAK Ulusal Bilim E-Alt Yapısının bir kısaltılmışı. Bu TÜBİTAK Ulusal Bilim Yüksek Başlangıları ve Grip Grip Hesaplama Merkezinin adı aslında.
+
+744
+02:26:43,028 --> 02:27:03,368
+Üyelik için portal.tru.gov adresini kullanıyoruz. Burada E-Devlet ile giriş yapılıyor. E-Devlet olması gerekiyor. E-Devlet'te de Göksüz Entegrasyonu var. Göksüz Entegrasyonundan kullanıcının akademisyen mi, araştırmacı mı yoksa doktor öğrencisi mi olduğu anlaşılıyor.
+
+745
+02:27:04,468 --> 02:27:21,348
+Bundan yaklaşık bir sene öncesine kadar yüksek sans ve lisans öğrencilerine de bu sisteme izin veriliyormuş iyi olmalarına. Ama sistemde yoğunluk olduğundan dolayı şu an lisans ve yüksek sans öğrencilerine bu turun sistemi kullanımı kapatılmış.
+
+746
+02:27:24,468 --> 02:27:45,248
+Sistemin işleyişi bu şekilde ilk üye olunması. İki günle yedi gün arasında bir mail ile geri dönüş var. Kullanıcı adı ve şifre bilgisi geliyor. Bana dördüncü gün mü ne geldi? Ama sistem iki ile yedi gün arasında geri dönüş yapılıyor gibi bir ifade vardı.
+
+747
+02:27:50,835 --> 02:28:06,876
+128'e kadar çekirdek kullanımı toplam 4000 saat oluşturma çekirdek saati 1 terabayttır Dix kotası veriyor. Bu defalt olarak her kullanıcıya verilen bir şey.
+
+748
+02:28:18,324 --> 02:28:26,783
+Adresine mail atılması gerekiyor. Bunun hiçbir ek ücreti yok. Kaynak tahsisini arttırmanın hiçbir ücreti yok.
+
+749
+02:28:27,316 --> 02:28:44,316
+Sadece şunu istiyorlar. Bir yayın çıktığı an o yayında teşekkür, Turba'ya teşekkür edilmesi ve yayınlandıktan sonra da Turba'da yayınlar kısmı var. Yayınlar kısmına o yayının eklenmesini istiyorlar. Böyle bir şartı var.
+
+750
+02:28:44,316 --> 02:28:50,996
+Eklent'i biliyorlar. Değil mi? Eklent'i biliyorlar. Değil mi? Eklent'i biliyorlar. Teşekkür edildiğin İngilizcesi, değil mi?
+
+751
+02:28:51,276 --> 02:28:51,835
+Evet hocam.
+
+752
+02:28:55,316 --> 02:28:57,916
+Yazıp, trubayı yazman isteniyor.
+
+753
+02:28:58,096 --> 02:29:21,855
+Evet, onun örneği de var. Bir örnek yazım şeklinde vermişler. Ben o raporunda belirtmiştim. Burada dahil etmedim. Sadece sözel olarak bahsederim diye. Sadece onu istiyorlar. Diğer türlü bir ücret falan tahsis etmiyorlar. Ama şöyle bir şey okumuştum. Belli bir süre kullanılmayan hesaplarda temizleme yapılıyormuş. Yeni yer açılması için.
+
+754
+02:29:23,028 --> 02:29:49,727
+Böyle bir şey var. Turbo 2013'ten beri geliştirilen bir sistemmiş. Daha eskiden açık değilmiş. Direktubitak'taki kullanıcılara ait bir sistemken. Daha sonra bu araştırmacılara, akademisyenlere verilmeye başlamış. En baştan beri farklı isimlerle kümeler oluşturulmuş. Lusra Dostra sistemi var Linux'ta.
+
+755
+02:29:50,708 --> 02:30:14,768
+Dolayısıyla onunla geliştirilmiş kümeleri kullanıcıya sıra sıraya açmaya başlamışlar. Şu an aktif olarak bir levrekte bir lüfer kümesi var. Lüfer kümesinin de bazı yerlerde devre dışı olduğunu, bazı yerlerde kullanıldığını böyle bir belirsizliği var. Şu an aktif ya da değil, belli değil yani. Bazı yerlerde çalışıyor görünüyor, bazı yerlerde devre dışı bırakıldığından bahsediyor.
+
+756
+02:30:16,564 --> 02:30:42,283
+Ben hesap oluşturulduktan sonra bana Levrek 1 kümesinden bir sunucusundan bir yer verdi. Levrek 1 sunucusundan. Levrek kümesi 128 adet toplam bir sunucu var. Bu HP sunuculardan. Her sunucu 8 çekirdekten oluşuyor. 250 GB bellekleri var. CentOS işletim sistemi var.
+
+757
+02:30:43,924 --> 02:30:52,424
+İki versiyonu var. Levrek 1 ve Levrek 2 versiyonu var. Benim sunucum Levrek 1 sunucusunda.
+
+758
+02:30:59,123 --> 02:31:15,103
+Sisteme ulaşım eğer ULACnet'e bağlı bir bilgisayardan bağlanıyorsa hiçbir ek güvenlik prosedürüne, sertifikaya gerek kalmadan bağlanabiliyor. Ben bunu üniversitedeki bilgisayardan denediğimde bir sıkıntı olmadan bağlanabildim.
+
+759
+02:31:23,476 --> 02:31:46,716
+Tuba'nın Wiki sayfasında adım adım bahsediyor. OpenVPN kurulduktan sonra bir konfig dosyası veriyor. Tuba sistemi üzerinde var. O konfig dosyasını OpenVPN'e set ettikten sonra bağlan dediğimiz an sağ tarafta yer alan kullanıcı ve şifre bilgilerine girdikten sonra OpenVPN'le bağlanabiliyoruz.
+
+760
+02:31:47,436 --> 02:31:50,896
+Ben sisteme ulaşım için uzakması üstü yapmadım.
+
+761
+02:31:51,827 --> 02:32:08,547
+Open On Demand teknolojisi olduğu için Truva sisteminde ben bunu tarayıcı üzerinden çalıştırdım. Tarayıcı için 172.16.0.200 adresi verilerek, bu adresine giderek sisteme ulaşım sağlayabildim.
+
+762
+02:32:13,139 --> 02:32:27,219
+Şimdi turbanın genel bir yapısından bahsedeceğiz burada. Toplamda altı tane bir üst menümüz var. Files, jobs, cluster, interactive apps, non-interactive apps ve my interactive session diye.
+
+763
+02:32:28,211 --> 02:32:35,731
+Burada faiz kısmı dosya sistemine ulaşım, dosya sisteminin yönetilmesi, dosyalarla ilgili yapılacak her şey buradan yapılabiliyor.
+
+764
+02:32:35,731 --> 02:32:45,311
+İşte datanızı yükleme işlemi, datanın indirilmesi ya da orada herhangi bir kodun ya da başka bir şeyin indirilmesi işlemi buradan çok kolay bir şekilde yönetiliyor.
+
+765
+02:32:46,412 --> 02:32:51,432
+Kendi araçları da var ya da siz oradan direkt dosya diziline ulaşabiliyorsunuz.
+
+766
+02:32:52,051 --> 02:32:56,651
+Ayrıca buradan direkt Shell katmanında bir terminalde açımı yapılabiliyor.
+
+767
+02:32:57,912 --> 02:33:04,092
+Jobs kısmında aktif çalışan işlerimizi görebiliyoruz.
+
+768
+02:33:04,291 --> 02:33:07,711
+Şu an o an sistemde çalıştırdığımız işlerimizi.
+
+769
+02:33:08,072 --> 02:33:09,912
+Ve de yeni bir iş de oluşturabiliyoruz.
+
+770
+02:33:11,171 --> 02:33:13,432
+Cluster kısmında sadece tek bir şey var.
+
+771
+02:33:13,771 --> 02:33:15,631
+Shell ekranının açılmasını sağlıyor.
+
+772
+02:33:16,531 --> 02:33:18,092
+Ek olarak başka bir özellik yok.
+
+773
+02:33:18,868 --> 02:33:37,227
+Burada benim en çok üzerinde çalıştığım yer interaktif uygulamalar kısmı oldu. Çünkü burada Truva'nın bütün Truva sisteminin üzerinde olan hazır yapılmış, hazırlanmış uygulamaların olduğu yer.
+
+774
+02:33:46,144 --> 02:34:13,443
+Cuneplot, Metlab, RStudio, VMD ve Jupyter Notebook'un da hazır olarak geldiği bir kısım. Ben de bunların içinde ilk bir oluştururumda bir hevesle Metlab'a baktım nasıl diye. O hata verdi. Onun neden hata verdiğini çözemedim. Turbo Desktop'la Jupyter Notebook'u kullandım. Şöyle ama ben ilk hesabım aktif olduğu ilk hafta ben Jupyter Notebook'a hiçbir şekilde ulaşamadım.
+
+775
+02:34:13,808 --> 02:34:34,148
+Mail hatalar falan alıyordum. Mail falan attım. Baktım çözümle kendim Kondayı kurmak zorunda kaldım. Ana Kondayı kurdun sisteme. Öyle çözdüm. Ama şeyde direkt olarak bazı sunucularda çalışıyormuş. Kullanan başka bir hoca buldum ben aynı okulda.
+
+776
+02:34:34,548 --> 02:34:43,608
+O kullanabilmiş. Ben kullanamadım. Mesela benim sunucumdan mı kaynaklanıyordu? Onu ben anlamadım ama en son haliyle ben şu an kullanabilir hale geldim.
+
+777
+02:34:45,888 --> 02:34:54,548
+Non-Interactive uygulamalarda Gaussian diye bir Gaussian uygulaması var. En sonunda My Interactive Session'da da şu an çalışan...
+
+778
+02:34:54,835 --> 02:35:03,415
+Ya da çalışması bitmiş ama 6 günlük blokların kontrol edilmesi için bırakılan uygulamaları görebildiğim bir ekranım var.
+
+779
+02:35:05,736 --> 02:35:07,515
+Bu kısımda söyleyeceklerim bu kadar.
+
+780
+02:35:08,175 --> 02:35:14,695
+Truva'da ama şöyle bir şey var. Desktop kısmında falan ufak tefek bir hatalar alınıyor.
+
+781
+02:35:15,827 --> 02:35:32,587
+Bu wiki sayfasında bunun çözümü yazmıyor. Biraz kurcalayıp işte Linux bilgisinin de olması gerekiyor bu konuda. Ben internetten arattıra arattıra bazı hatalara giderdim ama hala bazen ufak tefek hatalar alabiliyorum.
+
+782
+02:35:35,540 --> 02:35:58,320
+Uygulama giriştirme aşamasını ben Jupyter Notebook üzerinden yaptım. Datamı Windows üzerinden zipledim. Ziplediğim dosyayı da files menüsünden sistemime attım. Ziplediğim dosyayı Linux'ta çıkartamayacağım için bunu da kod üzerinden çıkarttım. Jupyter Notebook üzerinden çıkarttım.
+
+783
+02:35:59,924 --> 02:36:19,144
+Jupyter Notebook başlatıcısını başlattıktan sonra yaklaşık 1-2 dakika bir sürede bize artık hazır hale getiriyor. Bu Jupyter Notebook başlatıcısı için de sağ taraftaki birbir bize ekran açıyor. Burada account dediği özel bir isim varsa.
+
+784
+02:36:19,603 --> 02:36:40,723
+Orada özelleşmiş, truba sisteminde özelleşmiş bir ismi varsa, kaynak yönetimi olsun diğer şeylerde özelleşmiş bir hesap ismi varsa onu giriyoruz. Kaç saat çalışmasını istiyorsak, ikinci kısma kaç saat çalışmasını istiyorsak onu giriyoruz ve kaç tane not istiyorsak onu girip launch'a tıklayıp belli bir süre bekliyoruz.
+
+785
+02:36:41,652 --> 02:37:01,492
+Bu yaklaşık 2-3 dakika gibi bir şey sürdü ama bu süre istenilen not ve saate göreni değişeceğini belirtiyorlar. Eğer daha fazla not ve daha fazla saat çalışacak bir uygulama istediğinizde daha fazla beklemeye ihtimaliniz var.
+
+786
+02:37:05,396 --> 02:37:30,976
+Burada uygulama geçtiği aşamasından bahsettim biraz. Benim dataset'im, şu an topladığımız bir data var. Ben onun üzerinde çalıştım. Datayı tam toplamadık. Daha data toplaması bitmedi. Kendimiz oluşturuyoruz. Bizim datamız şarapnel parçalarının bıraktığı izlerin görüntülerinden oluşan bir dataset. Bu hala şarapnel parçalarının bıraktığı izleri toplamaya devam ediyoruz.
+
+787
+02:37:33,332 --> 02:37:48,531
+Bunu sisteme yükleyip anzip ettim. Zip dosyası olduğu için direkt Linux üzerinden bunu çıkartamayacağımız için direkt Jupyter Notebook üzerinden çıkarttım.
+
+788
+02:37:49,716 --> 02:38:01,456
+Şöyle, sistemi ilk biz kullandığımız için, sunucu ilk bize ayrıldığı için, sunucunun o kısmı bize ayrıldığı için büyük ihtimal DACR gibi bir sistem var. Bize onu veriyorlar. Benim anladığım kadarıyla bununla ilgili bir detay yok.
+
+789
+02:38:02,995 --> 02:38:14,192
+DACR gibi yeni bir cluster metodundan bir yer verdikleri için sanırım anladığım kadarıyla komple bir sonraki için tertemiz bir sayfa açılıyor ve de hiçbir...
+
+790
+02:38:14,191 --> 02:38:35,211
+Şey yok hani kütüphaneler falan. Kullandığımız kütüphaneleri tek tek indirmemiz gerekiyor sistemimize. Onları indirdim. Data sayımız az olduğu için de data arttırılması işlemini yaptım. Biraz datayı arttırmam gerekiyordu. Toplamda 500 tane falan bir resim var. Onu arttırmam gerekti.
+
+791
+02:38:38,036 --> 02:38:54,456
+Diplonik modelini kendim yazmaya çalışıyorum. Çünkü biz çalışmada ilk bir diplonik, işte bir CNN oluşturup en son transfer learningle bir karşılaştırma yapmayı planlıyoruz. Onun bu ilk kısmını da kendim yazmaya başladım.
+
+792
+02:38:57,551 --> 02:39:16,191
+Katmanlar var. Convolution, Dropout, Max, Bull, Dance gibi. Burada ben aktivasyon fonksiyonlarında Relo ve Softmax kullandım. Softmax benim en çıkış katmanım. Softmax'ı kullanmamın nedeni 7 tane sınıfım var benim. Sınıflandırmada 7 sınıf kullandığım için Softmax kullandım.
+
+793
+02:39:20,915 --> 02:39:31,635
+Optimizer Hyper Parametresi olarak RMS Probe'u kullandım. Normalde EDM'ı da denedim ama EDM'da sonuçlar daha kötüydü.
+
+794
+02:39:32,995 --> 02:39:40,915
+RMS Probe daha iyi sonuçlar verdi. Bu Gaussian yöntemini kullanarak Optimizer bir yöntem.
+
+795
+02:39:42,835 --> 02:40:07,395
+Burada da loss fonksiyonumu kategorikal cross entropy seçtim. Bunu seçmemin nedeni de softmax ile uyumlu bir loss fonksiyonu. Çünkü bu softmax bana 7 tane sınıftan herhangi bir tanesini üreteceği için kategorik bir sınıflandırma işlemiydi. Kategorik sınıflandırma işlemi için de cross entropy.
+
+796
+02:40:08,180 --> 02:40:30,559
+Loss Function'ı kullandım. Fit işleminde de fit ederken 100 epoch ile başlattım ben. 100 epoch kullandım. Her epoch 100 adımdan oluşuyor. Validation'ı da 100 adımdan oluşturdum. Ama buraya ben bunu sonradan epoch'u ben arttıracağım bu sistemi kullanırken.
+
+797
+02:40:30,896 --> 02:40:45,736
+Arttıracağım için de bir callback fonksiyonu yazdım. Bu callback fonksiyonunda da validation accuracy 0.7'den daha fazla olduğu an artık approach'a devam etmemesini sağlıyorum.
+
+798
+02:40:51,476 --> 02:41:11,996
+Model değerlendirirken de şöyle ufak bir kod parçası kullandım. Burada grafik falan oluşturulmadım. Dediğim gibi sonuç burada çok iyi bir sonuç vermiyor. Bu datanın azlığından da kaynaklanabilir. Belki Diplonik tarafında katmanlarda biraz oynamam gerekebilir. Bunun üzerine biraz uğraşmam gerekiyor.
+
+799
+02:41:17,075 --> 02:41:43,895
+Şimdi ilk başta, sol tarafta Truba'nın avantajları ve dezavantajları var. Truba sisteminin avantajlarından bir tanesi, kısıtlı ve yeterli kaynağa sahip olmayan kişilerin derin öğrenme çalışmalarını, işte Big Data çalışmalarını yapabilmesini sağlıyor. Bu büyük bir avantaj. Sonra TÜBİTAK gibi bir kuruma bağlı, hani herhangi bir kurum değil.
+
+800
+02:41:44,595 --> 02:42:02,515
+Bu konuda devamı olabilecek bir proje olduğunu da göstergesi. Bir güvenlikle TÜBİTAK tarafına ait. Geliştirmeye hala devam edildiği söyleniyor. Hala devam edildiği söyleniyor ama 2018'de en son sunucularla ilgili bir iyileştirme eklemeler yapılmış.
+
+801
+02:42:03,987 --> 02:42:17,787
+İkinci avantajı da ücretsiz olması. Jupyter Notebook için mesela ben Colab'la Data1X kullanmıştım. Colab'da datayı sürekli yüklemek gerekiyor. Bir gün, iki gün aradan sonra sürekli yüklemek gerekiyordu. Bu çok bir dezavantaj.
+
+802
+02:42:18,644 --> 02:42:33,323
+Ya da işte Drive gibi bir yerden çağırmak gerekiyordu. Data Brick sitede, tamam datayı yükleyebiliyoruz ama orada da belli bir data kısıtlaması var, ücretli. Bu büyük bir sıkıntıydı. Benim için bu sistem daha iyi oldu.
+
+803
+02:42:33,323 --> 02:42:42,523
+Çünkü istediğim datayı yükleyebiliyorum. Tabi internet hızıma da bağlı olarak. Çünkü 1 GB'lık bir dosyayı 12-13 saatte ancak gönderebildim.
+
+804
+02:42:45,427 --> 02:43:08,427
+Diğer bir avantajı da ücretsiz olması. Dezavantajı, hala oturmamış bir sistem var. Çok bir stabil değil. Hatalarla karşılaşılabiliyor. Hatanın çözümü de yok. Wiki sayfasında yok. Gizip arattırmak falan gerekiyor. Dokumentasyonu oldukça kısıtlı. Bir Wiki sayfası var. O Wiki sayfasından hani...
+
+805
+02:43:08,736 --> 02:43:35,816
+Neyi nasıl yapacağınızı temel manada gösteriyor ama daha detaylı bir şeyler yapmaya çalıştığında öyle bir ayrı şey yok. Ben kondayı yüklerken mesela sadece bir kondayı yükleme için bir tane yer göstermiş. Oraya kondayı yükleyin diyor ama dediği yerde kondayı yüklerken hatalar alıp duruyorsunuz. Viki sayfasında bunun çözümü yok yani. Kondayı yükleyin diyor ama yüklemenin bir ilerleyen sayfasını aşamasını göstermiyor.
+
+806
+02:43:37,268 --> 02:44:01,087
+Diğer bir dezavantaj da ilk sunumlarda bahsettiğim gibi lisans ve yüksek sans öğrencilerinin şu an kapalı. Bizim bir de modelimiz kötü sonuç vermişti. Bunun en büyük nedeni data sayımızın yetersizliği olabilir. Çünkü hani 7 tane sınıf var, 500 tane toplam bir data var test ve train dahil. Bundan dolayı bir kötü sonuç alma ihtimalimiz yüksek.
+
+807
+02:44:01,440 --> 02:44:17,620
+İkinci neden de şarapnel parçalarının bıraktığı izlerin görüntüleri olduğu için bunlarda çok ayırt edici özellik yer almıyor. Diplonik bunları öğrenemiyor gibi geliyor bana. Öğrenmesi için bir ağırlık veremiyor diye tahmin ediyorum.
+
+808
+02:44:18,355 --> 02:44:29,976
+Çünkü sınıflar arasındaki fotoğraflarda benzerlikler, gözle görülür benzerlikler var. O benzerlikleri de deep learning ile çok ayırt edemiyor gibi geliyor.
+
+809
+02:44:34,548 --> 02:44:44,788
+Şimdi hemen ufak bir demo göstereceğim. Şu an Trubo sayfasını görüyor musunuz acaba?
+
+810
+02:44:44,788 --> 02:44:46,228
+Görüyoruz.
+
+811
+02:44:48,068 --> 02:44:58,788
+Burada benim o an oluşturduğum, şu an çalışmayan sistemlerim var. Oluşturduğum uygulamalar var. İşte Trubo desktop ile Jupyter Notebook oluşturmuşum.
+
+812
+02:44:59,092 --> 02:45:06,952
+Buradan herhangi bir Jupyter Notebook ya da desktop'a da seçip oradan da çalıştırabiliriz ama Jupyter Notebook üzerinden çalışması daha kolay.
+
+813
+02:45:06,952 --> 02:45:12,952
+Bir test aşaması olduğu için daha hızlı olur.
+
+814
+02:45:12,952 --> 02:45:19,192
+Şimdi bu sırada sanırım boş bir server bekliyorsun.
+
+815
+02:45:19,192 --> 02:45:22,792
+Evet hocam. Belli bir süre bekliyor.
+
+816
+02:45:22,943 --> 02:45:36,163
+Daha doğrusu şöyle, Levrek ilk versiyonu atıyor. İkinci versiyonu atamadı şu ana kadar. Belki kaynak tahsisi istediğim zaman mı ikiye atacak? Onunla ilgili de bir bilgi yok.
+
+817
+02:45:36,623 --> 02:45:38,363
+Onu istemedin ek kaynak.
+
+818
+02:45:38,803 --> 02:45:40,223
+Yok, şu anlık istemedim.
+
+819
+02:45:40,223 --> 02:45:47,683
+Bir ara baktığımda bir de GPU'lar vardı diye hatırlıyorum. Onların dikkatini çekti mi?
+
+820
+02:45:48,691 --> 02:46:10,071
+Hocam, şu an onunla ilgili ben hiçbir bilgi görmedim. Sadece şunu diyor, ek kaynak isterseniz mail atın diyor, istediğiniz kaynağı. Ama hani bunda ne istiyorsunuz, ne yapıyorsunuz gibi bir şey yok hani. Bir bilgi yok. Ben de tekrar bir ek kaynak istemedim. Çünkü şöyle ben hatayı bildirdiğim halde yaklaşık bir ay oldu ben hataları bildireli.
+
+821
+02:46:10,644 --> 02:46:16,644
+Bir geri dönüş de alamadım. Kaynak taslesi istesem de alamayacağım gibi düşündüm.
+
+822
+02:46:16,644 --> 02:46:32,943
+Bunlarla uğraşan adamlarla tanıştım esasen ben. Bir konferansta burada neydi o konferansın ismi? Yüksek Başarım Konferansı mıydı? Neydi? Bir konferans. Ona katılıyor bunlar.
+
+823
+02:46:36,020 --> 02:46:46,960
+Yani kısıtlı bir bütçe ve kısıtlı eleman ile çalışmaya çalışıyoruz.
+
+824
+02:46:52,147 --> 02:47:08,827
+Dolayısıyla tahminim gelen istekleri de sınıflandırıyor olabilirler. Problem çözme isteğini bir kenara atıyor olabilir ama ek kaynak isteğini yapıyor olabilir.
+
+825
+02:47:09,459 --> 02:47:22,259
+İşte o, ya hocam dedim ki, wiki sayfası da çok bir yardımcı olmuyor. Nasıl bir yol izlememiz gerektiğini, ne yapmamız gerektiğiyle ilgili bir bilgi yok. O da çok büyük sıkıntı. Çünkü wiki sayfası da bayağı da güncellenmemiş mesela.
+
+826
+02:47:22,259 --> 02:47:31,559
+Ben de işte yıllar önce kullanmayı denedim. Aynen senin karşılaştığın sorunlar. Yani yeterli bilgi yok.
+
+827
+02:47:32,115 --> 02:47:38,515
+Bunlar da yoktu. Bu Jupyter Notebook falan da yoktu. Bu web arayüzü hiç yoktu yani.
+
+828
+02:47:38,576 --> 02:47:40,296
+2019'da geçmiş hocam.
+
+829
+02:47:40,476 --> 02:47:53,236
+Evet, evet. Direkt böyle Command Line sistemle girip işte OpenMP falan kullanman gerekiyordu vesaire. Hazır oldu galiba senin için.
+
+830
+02:47:53,236 --> 02:47:53,615
+Evet hocam.
+
+831
+02:47:53,615 --> 02:47:54,396
+Bakalım.
+
+832
+02:47:55,028 --> 02:48:00,448
+Buradan Connect to Jupyter dediğimizde bize Jupyter Notebook ekranını açacak.
+
+833
+02:48:01,108 --> 02:48:01,368
+Evet.
+
+834
+02:48:02,788 --> 02:48:10,108
+Benim Dextap'ta Fitre Proje diye bir tane ismi oluşturdum. Şuraya Define gibi Jupyter Notebook dosyası oluşturdum.
+
+835
+02:48:10,548 --> 02:48:17,368
+Mesela burada şey de var hocam. Job görevi oluşturma, iş oluşturma ile ilgili bir tane örnek vermiş.
+
+836
+02:48:17,808 --> 02:48:22,208
+Mesela ben onu özelleştiriyorum ama gidip benim Python kodumu çalıştırmıyor.
+
+837
+02:48:22,868 --> 02:48:28,427
+Kendi defal olarak çalıştırıyor. Benim yazdığımı çalıştırmaya hata da vermiyor mesela.
+
+838
+02:48:29,327 --> 02:48:30,288
+Nasıl anlamadım?
+
+839
+02:48:31,407 --> 02:48:36,727
+Şuradan, sistem üzerinden şuradan yeni bir job oluşturmaya çalıştım ben.
+
+840
+02:48:38,788 --> 02:48:40,868
+O yeni işi mesela kendi üzerindeki hazır...
+
+841
+02:48:42,355 --> 02:48:53,915
+Yapı çalıştırıyor ya da benim şurada oluşturduğumu da gösteriyor. Ama ben tekrar bir şuradan manuel bir yap oluşturmaya çalıştığımda ne hata veriyor ne şey veriyor yani şurada.
+
+842
+02:48:56,531 --> 02:49:05,191
+Evet, yani biraz şey gibi değil mi? Kullanabilirsen kullanırsın, kullanamazsan da kullanamazsın gibi bir durum var.
+
+843
+02:49:05,391 --> 02:49:11,451
+Aynen. Sadece benim için şöyle bir kar oldu. Ben kolap yata tata biriküsü üzerinden çalışıyordum.
+
+844
+02:49:12,531 --> 02:49:15,331
+Oraya üzerinden çalışıyordum. Artık bura üzerinden çalışıyorum.
+
+845
+02:49:15,331 --> 02:49:18,991
+Ve bana bir avantajı bu oldu mesela.
+
+846
+02:49:20,275 --> 02:49:23,376
+Yani Colab'ı tercih ediyorsun ya da Data Bricks'e?
+
+847
+02:49:23,655 --> 02:49:46,615
+Şöyle, Colab'ın gücüne yetişemez. Çünkü Colab daha hızlı sonuçlar veriyor. Burada çok daha yavaş sonuçlar aldım. Sadece benim için en büyük avantajı Colab'dan bir avantajı datayı sürekli burada barındırabiliyorum. Drive'a ya da başka bir yere atmama gerek yok. Data Bricks'ten de avantajı ücretsiz olması. Bunlara bağlı olarak ben bunu tercih ederim diyorum.
+
+848
+02:49:48,275 --> 02:49:58,475
+Şunları artık çalıştırmıyorum. Benim projemin ilk haliydi. Kodu çalıştırayım mı şu an? Ben sadece nasıl...
+
+849
+02:49:58,475 --> 02:49:59,556
+Yok, gerek yok.
+
+850
+02:50:00,000 --> 02:50:08,479
+Şöyle koda bakalım ne yapıyorsun? Konda install yani gerekli paketleri bu şekilde kurduruyorsun baştan değil mi?
+
+851
+02:50:08,600 --> 02:50:13,600
+Çünkü yok, hiç yok. Bundan sonraki yeni bir notebook oluşturduğunda bunu kurmama gerek kalmıyor.
+
+852
+02:50:13,600 --> 02:50:18,739
+Çünkü artık o Docker klasterıma yüklenmiş oluyor.
+
+853
+02:50:18,799 --> 02:50:22,600
+Anladım. Sonra importla...
+
+854
+02:50:23,860 --> 02:50:25,740
+İlk importlarını yaptım.
+
+855
+02:50:25,760 --> 02:50:28,540
+Ne almışsın? Kurulmadığı için mi acaba?
+
+856
+02:50:30,360 --> 02:50:35,280
+Hocam, bunlar da şeyler veriyor ama sıkıntı olmuyor. Tekrar kurduklarım balan da olmuş benim.
+
+857
+02:50:35,540 --> 02:50:37,900
+Bunlar deprecated falan, warning galiba.
+
+858
+02:50:38,040 --> 02:50:40,000
+Evet, hocam hata vermedi.
+
+859
+02:50:40,520 --> 02:50:44,500
+Evet, TensorFlow'u kurduğunu çalıştırabiliyorsun.
+
+860
+02:50:44,500 --> 02:50:45,800
+Evet, hocam.
+
+861
+02:50:46,220 --> 02:50:47,400
+Akeras'ı kurdu.
+
+862
+02:50:48,979 --> 02:51:01,959
+Keras da kurdun, TensorFlow'u da kurdum hocam. İkisini de ayrı ayrı da deneyeyim dedim. Şöyle bir callback fonksiyonu yazdım. Burada validation accuracy'e bakarak ilerledim.
+
+863
+02:51:02,379 --> 02:51:09,899
+Anladım. Burada şimdi güzel özetlemiş olduk esasen beraber.
+
+864
+02:51:11,347 --> 02:51:25,268
+Lokalden daha hızlıdır muhtemelen. Lokalde bir şeyin yoksa, GPU'nun yoksa ama öbür taraftan çok da hızlı da değil anladığım kadarıyla.
+
+865
+02:51:25,268 --> 02:51:37,807
+Ama şey var, esasen bu ek kaynak isteminde işte keşke onu da isteseydin de onu görmüş olsaydık keşke.
+
+866
+02:51:39,443 --> 02:52:02,163
+GPU verebiliyor mu acaba? İstemedim. İsterseniz isterim hocam. İklerim. İste bir bakalım ya. Haber versen bize onu. Yani GPU'lu özellikle klasterınız var mı? Erişim sağlayabilir misiniz? Falan gibi bir soru. Mail atayım hocam bugün. Bir zahmet. Tamam hocam.
+
+867
+02:52:03,059 --> 02:52:09,719
+Ama öbür taraftan da işte şey durumu var. Yani takıldın mı da sanırım takılırsın değil mi?
+
+868
+02:52:10,279 --> 02:52:16,279
+Hocam ben ne zaman mail attım? Hemen şuradan bir maillerimden bakıyorum hocam.
+
+869
+02:52:16,279 --> 02:52:27,059
+Çünkü ben hatalarla ilgili bir mail attım. Nasıl çözülmesi gerekiyor diye. Hemen bakacağım hocam.
+
+870
+02:52:42,739 --> 02:52:58,860
+Mesela hocam, 30 Kasım'da atmışım. Şöyle bir mail atmışım, jubitar notbook çalışmıyor diye. Farklı bir şey mi yapmam gerekiyor diye. 30 Kasım'da atmışım. Hala bu mailim çözüm yok yani. Ben kendim artık Anaconda'yı falan yükleyip öylelik çözüldü olay.
+
+871
+02:53:08,979 --> 02:53:32,180
+Yardımcı olsa daha iyi olur gibi geliyor ama esasen onu da çok da istemiyor olabilirler. Çünkü zaten anladığım kadarıyla kaynak da çok yok. Çok da iyi de olursa kullanımı millet de üzerine çullanırsa, herkes de kullanmak isterse tamamen de...
+
+872
+02:53:32,531 --> 02:53:37,771
+Kullanılmaz hale gelebilir sistemi. Sıra gelmeyebilir.
+
+873
+02:53:38,371 --> 02:53:42,111
+Belki de onun için çok geliştirme taraftarı değiller.
+
+874
+02:53:42,711 --> 02:53:48,311
+Bilmiyoruz artık. Neyse. Arkadaşlar iyi niyetli. Ben tanıştım dediğim gibi o kişilerle.
+
+875
+02:53:49,371 --> 02:53:57,911
+Fakat orada bir tane iki tane adam var benim anladığım. Böyle bir kocaman bir birim olur.
+
+876
+02:53:58,868 --> 02:54:05,587
+Böyle işte 10-15 kişilik, milyon dolarlık bütçeleri falan olan böyle bir şey değil yani.
+
+877
+02:54:06,948 --> 02:54:13,368
+Bir de ücretsiz sundukları için, o da bir dezavantaj onlar için. Hani belki bir ücretli gibi bir şeyler yapsalar.
+
+878
+02:54:14,772 --> 02:54:30,871
+Yani mesela BAP'a falan bağlasalar, bana kalırsa mesela şey olsa, bizim üniversitede BAP projesi var biliyorsunuz. BAP projesi verebiliyoruz. O BAP projesinden insanlar gidiyor, kendisine sunucu alıyor.
+
+879
+02:54:34,072 --> 02:54:40,291
+Yani o da ne oluyor? Kendisine alınan sunucu, hocanın ve öğrencinin kendine aldığı sunucu.
+
+880
+02:54:40,948 --> 02:55:00,368
+Birçok kuvvetli olmaz. İki kişi kullanıyor bir müddet sonra atıl oluyor muhtemelen. Bunun yerine orada alacakları 15-20 bin lirayı buraya yöneltmeyle ilgili bir sistem olsa.
+
+881
+02:55:01,203 --> 02:55:05,263
+Aynen. Yani 5 bin liralık turba sistemi kullanımı gibi bir şey yapılar.
+
+882
+02:55:05,263 --> 02:55:19,263
+Yani aynen. 10-15 bin liralık turba sistemi kullanımı bu adamlara da parayı verseler, bu adamlar da ona göre işte personel ve hardware alımlarını falan yapsa, sistemlerini iyileştirse.
+
+883
+02:55:19,700 --> 02:55:41,800
+Bence çok daha mantıklı bir şey olur. Veya böyle bir şeyi Yıldız kendi içinde kursa, Yıldız Üniversitesi mensubu olarak diyorum. Yıldız BAP projesinden insanlara 15 bin lira, 20 bin lira bir de hani vermektense veya 50 bin lira şimdi en son ne oldu bilmiyorum ne kadar veriyor.
+
+884
+02:55:42,675 --> 02:56:01,956
+Ama şu anki tek yıldızın imkanı BAPA proje vereceksiniz. Kabul olursa iyi kötü bir idare eder bir server yapabiliyordunuz.
+
+885
+02:56:02,708 --> 02:56:21,708
+En son bu pahalılaşmadan sonra durum nedir? Onu da tam da inceleyebilmiş değilim. Kaç para veriyorlar, onunla ne tür bir şey alınabilir? Onu da bilmiyorum ama yine şu anki tek şey o.
+
+886
+02:56:21,708 --> 02:56:30,088
+Yani bir hocanın bir öğrencisiyle yapacağı şey, öğrenci çalışmaya başlarken bir proje verecek.
+
+887
+02:56:30,548 --> 02:56:55,548
+Master ya da doktora çalışmasına başlarken o da işte bir dönem içinde falan çıkacak. O sırada da literatür taramasını falan yapacak öğrenci. Çıktıktan sonra da işte beraber alacaklar o şeyi. Sistemlerini kuracaklar. Bir tane, o da bir tane server olur yani olsa olsa. O server üzerinden çalışılacak. Şu anki...
+
+888
+02:56:56,051 --> 02:56:57,832
+Durum bunu gösteriyor.
+
+889
+02:56:58,291 --> 02:57:07,752
+TÜBİTAK kendi öğrenci projelerine falan da yönlendirmiyor. Mesela ben TÜBİTAK bir proje yapmıştım ama ben bu turmayı sizden duydum mesela.
+
+890
+02:57:08,891 --> 02:57:14,772
+Yani dediğim gibi adamlar zaten kısıtlı imkanlarla çalışan bir grup.
+
+891
+02:57:15,471 --> 02:57:22,471
+Şeyi de bilmiyordum, yüksek lisansları artık kaldırtmışlar demek ki zaten şey yapamıyorlar, yetişemiyorlar.
+
+892
+02:57:23,379 --> 02:57:39,439
+Öyle yani bu konuda bir sıkıntımız var. Yani Türkiye'deki araştırmacılar olarak bence bir sıkıntı var bu noktada. Hardware, güçlü hardware konusunda bir sıkıntımız var.
+
+893
+02:57:41,939 --> 02:57:44,479
+O Databricks falan kaç liraydı?
+
+894
+02:57:46,067 --> 02:57:51,947
+Ben geçen sene bir ara aldım. 15 dolar almıştım mesela.
+
+895
+02:57:52,007 --> 02:57:52,487
+Aylık mı?
+
+896
+02:57:53,207 --> 02:58:07,767
+Aylık hocam. Aylık da değil. Şöyle, gene bir sınır var hocam. Bu her şeyden sonra gene attırıyor. Ondan sonra Amazon'u kullandım. Amazon iki ayda 70 dolara mal oldu bana. Amazon'un servisini kullanmak.
+
+897
+02:58:08,211 --> 02:58:11,871
+Tamam, geçen sene dolar bu kadar yüksek değil de ama.
+
+898
+02:58:13,171 --> 02:58:15,152
+Dolar da gittikçe uçtuğu için.
+
+899
+02:58:15,851 --> 02:58:20,811
+7 liradan hesaplasak bile 500-600 lira para yapıyor aylık ortalama.
+
+900
+02:58:21,311 --> 02:58:28,572
+Evet, çalışan bir öğrenciysen bir aylık 1000 lirayı falan anladığın kadarıyla rahatlıkla buna vereceksin.
+
+901
+02:58:36,500 --> 02:58:47,440
+Ne diyelim, trendinin de devam edeceğini tahmin ediyorum. Umarım etmez ama. Yani gittikçe bu iş daha da pahalılaşacak gibi geliyor.
+
+902
+02:58:49,180 --> 02:58:56,820
+Şimdi tamam, teşekkür ederiz [öğrenci]. Sen kimle çalışıyorsun? Ne çalışıyorsunuz?
+
+903
+02:58:56,820 --> 02:59:00,620
+Ben araştırma görevlisiyim hocam Çankırı'da.
+
+904
+02:59:00,948 --> 02:59:25,208
+[kişisel bilgi] Burada kullandığım dataset yazmadığımız projenin dataset'i. Bu şarapnel parçaları bir zeminde vesaire iz bırakıyor ya hocam. Bunların tek tek ölçümesi falan biraz zaman alıyormuş.
+
+905
+02:59:26,388 --> 02:59:42,548
+Bunu otomatik değiştirebilecek bir şey yapmaya çalışıyoruz, hedefliyoruz. Görüntü üzerinden hemen tanımlama gibi bir şey üzerine çalışıyoruz. Hala ama datayı toplayamadık. 400-500 datamız var. O eksimiz var.
+
+906
+02:59:43,068 --> 02:59:46,948
+Savunma sanayisiyle mi, savunma projesi mi düşünüyorsunuz?
+
+907
+02:59:47,388 --> 02:59:51,448
+Bu daha çok kriminal, emniyet genel müdürlüğü.
+
+908
+02:59:51,468 --> 02:59:53,428
+Emniyet genel müdürlüğü, peki.
+
+909
+02:59:55,572 --> 03:00:16,591
+Tamam, teşekkür ediyoruz. Arkadaşlar, ben şimdi bu şeye kağıda not aldım. Kim ne yapmış falan gibi biraz kırılım yapmaya çalıştım. Onları bugün muhtemelen veya bir süre sonra bu paylaştığım spreadsheet'e eklerim.
+
+910
+03:00:17,620 --> 03:00:23,340
+Burada bir eksikliğim falan varsa siz de tekrar bana hatırlatırsınız. O eksikliği düzeltebiliriz.
+
+911
+03:00:24,640 --> 03:00:30,520
+Dediğim gibi kodu yazmak istiyorum diyen varsa güzel olur.
+
+912
+03:00:31,340 --> 03:00:36,820
+Onun için bunlara henüz UCS'e falan girmiyorum. Sadece notları vs. buraya not alacağım.
+
+913
+03:00:38,200 --> 03:00:42,860
+En son artık finallere kadar onun için vakit var diyelim.
+
+914
+03:00:43,924 --> 03:01:01,324
+Güzel de çalışmalar var. Dönem bittikten sonra vesaire de bu çalışmayı tamamlayalım, bir yere gönderelim diyeniniz varsa, onda beraber bakabiliriz. Güzel olur.
+
+915
+03:01:09,012 --> 03:01:23,912
+[öğrenci]'den itibaren başlayacağız gibi gözüküyor. Bugün gelmeyen [öğrenci] ve [öğrenci]. Bu iki arkadaş ne yaptı bilmiyorum.
+
+916
+03:01:24,691 --> 03:01:26,231
+Haftaya ders var mı hocam?
+
+917
+03:01:26,231 --> 03:01:35,592
+Ya bir ilan falan yok. Bir ilan falan yok.
+
+918
+03:01:37,043 --> 03:01:58,264
+Yani normal olarak tatil olur diye düşünüyorum. Dolayısıyla normalde haftaya yok diye düşünüyorum. Yılbaşı günü oluyor değil mi? Dolayısıyla muhtemelen haftaya değil de sonraki haftaya devam edeceğiz.
+
+919
+03:02:05,780 --> 03:02:21,120
+Yine birkaç kişi hazır olabilirse, en azından şu [öğrenci], [öğrenci], [öğrenci], [öğrenci] her ihtimale karşı hazır olsa olur mu?
+
+920
+03:02:22,440 --> 03:02:30,079
+Şey olursa en azından birkaç tane sunum yapalım. Ders yapmış oluruz.
+
+921
+03:02:32,020 --> 03:02:36,020
+Büyük ihtimalde olmaz diye düşünüyorum arkadaşlar. Tamam mı?
+
+922
+03:02:37,520 --> 03:02:46,520
+Hocam, ben bir şey ekleyebilir miyim? Kodları, raporu, diğer dokümanları ben size raporun içinde bir link aracılığıyla gönderdim.
+
+923
+03:02:46,520 --> 03:02:55,319
+Raporun ilk sayfasında tıklayan hızlı bir kısım var. İlk testimde rapor istediğiniz için sadece PDF göndermek istedim. Ondan dolayı böyle bir yol izlemiştim.
+
+924
+03:02:55,319 --> 03:02:59,719
+Bu şekilde olması uygun mudur? Yoksa farklı bir yol ara size yeteyim mi?
+
+925
+03:03:00,020 --> 03:03:09,800
+Şimdi sen onu iyi hatırlattın. Aslında ben hemen şuraya bir link koyayım. Kod ve sunum diyeyim.
+
+926
+03:03:14,868 --> 03:03:15,368
+Evet.
+
+927
+03:03:29,652 --> 03:03:35,252
+Hocam, ben de rapor ve kodu göndermiştim. Sunumu daha sonra eklemeyi düşünüyordum.
+
+928
+03:03:36,152 --> 03:03:46,212
+O çok büyük fark etmez. Aslında hepsini birden tek bundle olarak yükleseniz ya.
+
+929
+03:03:48,952 --> 03:03:55,492
+Yani şimdi nasıl olsa bir zip göndereceksiniz de. İçine raporunuzu da tekrar yükleseniz.
+
+930
+03:03:56,340 --> 03:04:05,000
+Hocam öyle daha iyi olabilir. Çünkü benim sunum neredeyse bitti ama hala kodda ufak tefek eksikliklerim var. Onları tamamlamam lazım haftaya kadar da.
+
+931
+03:04:26,548 --> 03:04:27,108
+Kod
+
+932
+03:04:27,108 --> 03:04:32,108
+yükleme adresi diyelim.
+
+933
+03:04:37,043 --> 03:04:41,783
+Hocam kod olarak Colab adresi linki atsak yeterli olur mu?
+
+934
+03:04:43,503 --> 03:04:53,283
+Yok, onları indirin. Çünkü linkler geçici. Bunlar şimdi kayıt olarak altında bulunsun istiyorum ben.
+
+935
+03:04:53,283 --> 03:05:00,283
+Yani bir iş yaptığınıza dair bir iki yıl saklanması gereken bir şey.
+
+936
+03:05:01,363 --> 03:05:12,363
+Şimdi linkler ne oluyor? Colab linkleri falan silinebiliyor. Siz silebilirsiniz, unutabilirsiniz. Bilmiyorum yani her türlü şey olabilir.
+
+937
+03:05:12,363 --> 03:05:25,195
+Dolayısıyla siz Colab ek olarak yani linkini de koyun bir devamlı bir zahmet indirip şeyi...
+
+938
+03:05:26,004 --> 03:05:31,264
+Asıl kodları da gönderin bana. Jupyter Notebook'ları da gönderebilirsiniz.
+
+939
+03:05:40,788 --> 03:05:43,488
+Bilgisayarla Görme.
+
+940
+03:05:49,628 --> 03:05:52,108
+Son paket, son paket diyelim.
+
+941
+03:05:54,847 --> 03:05:59,028
+Bir de hocam, arkadaşların raporlarını, kodlarını biz görebilir miyiz?
+
+942
+03:06:00,828 --> 03:06:05,628
+Olabilir aslında. Neden olmasın? Ben onu size şey edeyim şimdi.
+
+943
+03:06:07,540 --> 03:06:13,740
+Daha sunumları tabii yüklemediler ama raporları şehr edebiliriz.
+
+944
+03:06:18,739 --> 03:06:19,699
+Çok iyi olayım hocam.
+
+945
+03:06:24,564 --> 03:06:41,963
+Raporları değil de sunumları paylaşalım. Raporlar kalsın ama sunumları paylaşalım. Onu nasıl yapacağız? Ama o zaman sunumları da ayrı yüklemeyin. Tam bir paket yapın demiştim değil mi?
+
+946
+03:06:42,963 --> 03:06:51,224
+Hocam direkt paketi görsek? Yani şu an hemen paylaşmanıza gerek yok. Herkes kodu yükledikten sonra görelim. İlerleyen zamanlarına bakmak için.
+
+947
+03:06:55,188 --> 03:07:21,128
+Son paket demeyelim de sunum diyelim. Veya paketi de görebilirsiniz. Şimdi şöyle, raporları görmenizi istemiyorum. O zaman onun için de ayrı bir şey yapayım. Bilgisayarla görü.
+
+948
+03:07:21,536 --> 03:07:25,316
+Son rapor.
+
+949
+03:07:29,236 --> 03:07:29,935
+Diyeyim.
+
+950
+03:07:36,020 --> 03:07:38,319
+Bunun için bir deadline koymuyorum.
+
+951
+03:08:04,531 --> 03:08:05,371
+Son sunum.
+
+952
+03:08:11,636 --> 03:08:16,255
+Rapor artı sunumu ayrı koyun, kodu ayrı koyun. Son rapor artı.
+
+953
+03:08:22,579 --> 03:08:24,280
+Rapor artık kodu diyecektim.
+
+954
+03:08:33,492 --> 03:08:36,412
+Açıkçası kodu görmek istiyordum.
+
+955
+03:08:36,412 --> 03:08:38,012
+Sen kodu mu görmek istiyordun?
+
+956
+03:08:38,012 --> 03:08:40,572
+Evet, kodda incelemek istiyordum.
+
+957
+03:08:40,572 --> 03:08:49,051
+Onu şey yap istersen ya, merak ettiğin arkadaşına bir şey yap. Kendisi paylaşsın sana.
+
+958
+03:08:49,051 --> 03:08:56,811
+Tamamdır. O zaman ikisini birleştirebilirsiniz bence. Sadece sunumu görmek ve videoları izleyebiliyoruz tekrardan.
+
+959
+03:08:56,811 --> 03:08:58,492
+Tamam öyle yapalım.
+
+960
+03:09:35,412 --> 03:09:36,532
+Bir yoktu annyan bir.
+
+961
+03:09:49,940 --> 03:10:00,520
+Bunun için bir tarih koymadım. Bununla ilgili artık ek bir kod yazdım hocam vs. derseniz bunu paylaşırız.
+
+962
+03:10:03,000 --> 03:10:04,819
+Tamam arkadaşlar.
+
+963
+03:10:08,084 --> 03:10:14,024
+Peki haftaya veya artık tatil durumuna göre sonraki haftaya görüşürüz arkadaşlar.
+
+964
+03:10:14,604 --> 03:10:15,584
+Görüşmek üzere hocam.
+
+965
+03:10:15,664 --> 03:10:16,704
+Görüşürüz hocam.
+
+966
+03:10:16,724 --> 03:10:17,264
+İyi günler.
+
+967
+03:10:17,704 --> 03:10:19,724
+İyi günler hocam. Teşekkürler.

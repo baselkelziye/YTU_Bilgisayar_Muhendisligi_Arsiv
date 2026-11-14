@@ -1,0 +1,1575 @@
+1
+00:06:47,923 --> 00:07:12,403
+Evet, günaydın arkadaşlar. Sesim geliyor mu? Her şey yolunda mı? Evet. Tamam, teşekkürler. Şimdi yavaş yavaş sayımız artacak ama hani her seferinde artık beş dakika, on dakika, on beş dakika neyse ekstra beklemek bence biraz fazla şey.
+
+2
+00:07:12,660 --> 00:07:21,660
+Large olmaya başladı olay. Kötüye de kullanılmaya başlandığını düşünüyorum. O yüzden artık beklemeyeceğim. Zaten dersler kayıt altına olmuyor.
+
+3
+00:07:21,660 --> 00:07:36,660
+Kaçıran arkadaşlar, geç kalan arkadaşlar kayıt altından izleyebilirler diye düşünüyorum. Bundan sonra artık dersleri saatinde başlatacağım. Bunu da bilgilendirme olarak buradan söyleyeyim.
+
+4
+00:07:39,028 --> 00:07:44,028
+Sizden, yüz yüz üzerinden mesaj atıp iki tane yazılım indirmenizi istemiştim.
+
+5
+00:07:44,028 --> 00:07:46,795
+Bir tanesi...
+
+6
+00:07:48,244 --> 00:08:08,884
+VMware yazılımı, Workstation Player, Windows versiyonunu indirecektiniz. Bir diğeri de Ubuntu'nun, Ubuntu işletim sisteminin kurulum sivjesi. Şimdi bugün önce başlamadan önce ne yapacağımızı yaptığımız şeyin ne olduğunu bir tariflemek istiyorum. Ondan sonrasında da adım adım nasıl yapacağımızı konuşuyor olacağız.
+
+7
+00:08:10,004 --> 00:08:37,004
+Şimdi teknik olarak yapacağımız şey şu, bizim bilgisayar sistemimize bakacak olursanız altta bir donanım katmanımız var. Yani sizin işlemciniz, belleğiniz, diskiniz vs. donanım katmanından bahsediyoruz. Bunu yöneten ve kullanan, daha doğrusu kullanmanızı sağlayan bir işletim sistemi var. İşletim sistemi üzerinde de ne yapıyoruz? Uygulamalar çalıştırıyoruz. Bugün yapacağımız şey aslında bu sistemi
+
+8
+00:08:37,524 --> 00:08:40,844
+sanal ortamda
+
+9
+00:08:42,903 --> 00:08:48,783
+çalıştırmamızı sağlayacak yapıyı oluşturmak. Şimdi sanallaştırma zaten günümüzde çokça duyduğumuz bir şey.
+
+10
+00:08:50,131 --> 00:09:04,131
+Aslında bir tarafta baktığınızda olmayan kaynakları birilerine allocate ediyorsunuz. Sanal ifadesi biraz oradan geliyor. Olmayan kaynakları biraz açmak lazım belki.
+
+11
+00:09:04,131 --> 00:09:18,091
+Şimdi öncelikle sanallaştırma farklı farklı katmanlarda yapabileceğiniz bir şey. Misal, fiziksel katmanlarda yapabilirsiniz. Yani sizin donanımınızın özelliklerine bağlı olarak.
+
+12
+00:09:18,419 --> 00:09:43,899
+Siz aslında tek bir makine içerisinde yer alan işte sekiz tane farklı işlemcinizi ve işte bir terabaitlik memurinizi fiziksel olarak farklı makinelarmış gibi donanım seviyesinde bölükleyebilirsiniz. Bunu yapabilen sistemler var.
+
+13
+00:09:43,984 --> 00:09:59,984
+Bu sistemlerimizi sadece desktoplarımızda kullanmıyoruz. Nerede kullanıyoruz? Daha çok sunucu sistemlerde kullanıyoruz ve görüyoruz. Hangi sunucu sistemlerinde? P serisi diye tabir edilen IBM'in P serisi diye tabir edilen risk makinelerde daha çok.
+
+14
+00:10:00,000 --> 00:10:27,000
+Bu özellikler görülüyor. Daha eskiden beri var. X serisi olan yani Intel tabanlı mimariler, Kisk mimarilerinde ise yine benzer şekilde sunucu sistemlerinde yaygın olarak yapılabilen bir şey. Bunu bir üst seviyede sanallaştırabilirsiniz. Yani işletim sistemi seviyesinde sanallaştırabilirsiniz. Biz ise bugün aslında uygulama seviyesinde sanallaştıracağız. Yani işletim sistemi...
+
+15
+00:10:27,700 --> 00:10:45,700
+değil, istedim sistemi üzerinde çalışan bir uygulama sayesinde bu sanallaştırmayı yapacağız. Sanallaştırmayı yapacağız derken aslında bu makine üzerinde istediğimiz fiziksel özelliklere sahip yeni bir makine.
+
+16
+00:10:46,740 --> 00:11:08,740
+tanımlayabilmemizi sağlayan bir ortam kuracağız. Bu makinenin üzerinde işletim sistemine uygun tüyüklüyeceğiz. Yani yapacağımız şey bu. Bugün yapacağımız kurulumlar sonucunda aslında makinemizde ikinci bir işletim sistemi olmayacak teknik olarak. Makinenin üzerinde oluşturduğunuz sanal bir makine üzerinde bir işletim sistemi kuruyor olacaksınız.
+
+17
+00:11:10,035 --> 00:11:34,035
+Bunun artısı, eksisi nedir? Aslında çok fazla şeyi tartışabiliriz. Normalde bu kurulumu, Linux kurulumunu, Windows kurulumu makinemizin yanında dual boot olacak şekilde, ikinci bir işletim sisteminde boot edilecek şekilde de kurabilirsiniz. Ancak meleken o noktada şu an girmenizi istemeyeceğim bazı riskler var. Örneğin bu sektörde bir hata yapmaz, bir sıkıntı.
+
+18
+00:11:36,275 --> 00:11:45,995
+oluşması durumu illa siz hata yaptığınız için değil, başka şeylerden dolayı da oluşabilir. İşletim sistemlerinin konfigürasyonları ile ilgili bir problemden dolayı da olabilir.
+
+19
+00:11:45,995 --> 00:11:52,395
+Farklı seçeneklerden dolayı da olabilir. Bir anda makinenizi kullanamaz hale getirebilirsiniz.
+
+20
+00:11:52,395 --> 00:11:54,955
+Bir diğer şey,
+
+21
+00:11:57,515 --> 00:12:00,596
+Bu Dual Boot
+
+22
+00:12:04,692 --> 00:12:06,692
+Dual boot durumunda
+
+23
+00:12:09,292 --> 00:12:10,831
+şey yapmamız lazım
+
+24
+00:12:12,372 --> 00:12:18,771
+iki işletim sisteminden birini ancak herhangi bir tahanında kullanabiliyoruz ve birini boot edeceğiz ve diğerini boot edeceğiz.
+
+25
+00:12:19,531 --> 00:12:20,812
+O şekilde çalışıyoruz.
+
+26
+00:12:21,331 --> 00:12:23,372
+Ancak sanatlaştırma ile
+
+27
+00:12:23,700 --> 00:12:44,700
+Bu işi yaptığımızda zaten çalışmakta olan Windows işletim sisteminiz içerisinde sanal makineyi oluşturduğunuz yazılım da çalışıyor olacak. Onun içerisinde bir Gigi Linux işletim sistemi çalışıyor olacak. Dolayısıyla bunları aslında bir nevi aynı anda aynı makine üzerinde çalıştırıyor olacaksınız. Bakın size artısı eksisi ne? Artısı şu.
+
+28
+00:12:45,779 --> 00:12:52,019
+farklı bir işledim sistemini sanki bir uygulama çalıştırıyormuş gibi çalıştırıp daha sonra kapatma şansınız var.
+
+29
+00:12:52,019 --> 00:13:06,579
+Eksisi ne? Sonuçta sanal bir makinede olsa arka tarafta fiziksel kaynakları kullanılır. Dolayısıyla eğer bilgisayarınızın kaynakları yeterince fazla değilse, ikisini aynı anda çalıştırmak zaman zaman sizi zorlayacaktır ya da sıkıntı yaratacaktır.
+
+30
+00:13:08,307 --> 00:13:35,107
+Şimdi bu genel bilgileri verdikten sonra kuruluma geçeceğiz. Kurulumda birinci adımız sanallaştırma yazılımı kurmak olacak. Sanallaştırma yazılımı kurmaktan kastım da indirdiğimiz Workstation Player'ı çalıştırmak.
+
+31
+00:13:35,347 --> 00:13:38,347
+Şimdi bir saniye bir ekran paylaşımı yapacağım.
+
+32
+00:13:50,772 --> 00:14:01,572
+Şu an ekranımı görüyor musunuz? Yani sadece VMware... Aha. Kendi kendine bir kapattı bir daha.
+
+33
+00:14:01,572 --> 00:14:16,211
+Şu an ekranı görebiliyor musunuz? Evet, evet hocam. Tamam, süper. Bir saniye, chat'e biri bir şey yazdı. Sor [öğrenci], ne soracaksın?
+
+34
+00:14:28,820 --> 00:14:38,500
+Bilmiyorum. Yani, ne demek istediğini de tam anlamadım. Yani macOS kullandığını anladım. VMware ona Fusion versiyonu vardı.
+
+35
+00:14:38,500 --> 00:14:44,500
+Ne demek? Yani VMware orada da kurabiliyor olman lazım. Yani...
+
+36
+00:14:46,980 --> 00:14:49,300
+Fusion versiyonu vardı.
+
+37
+00:14:50,131 --> 00:15:03,491
+Anlamadım ne demek istediğini. Sonuçta VMware Workstation Player ya da herhangi bir player'ını kuruyorsan, player kurmanızı istememenin temel nedeni şu, normal şartlarda VMware
+
+38
+00:15:04,148 --> 00:15:11,947
+Aslında profesyonel lisanslı sanallaştırma ürünleri satıyor. Dikkat edin satıyor, bedava kullandırtmıyor.
+
+39
+00:15:11,947 --> 00:15:17,947
+Zaman içerisinde ürünlerine farklı farklı isimler verdi, farklı farklı platformlarda.
+
+40
+00:15:17,947 --> 00:15:23,947
+Mesela aslında daha çok sunucu tarafında kullandığımız
+
+41
+00:15:24,692 --> 00:15:36,091
+ESX Server var. Ama bir Workstation versiyonu da var. Bunların bir de Player versiyonu var. Eskiden sıradan bir Player versiyonu vardı. Şimdi Workstation Player var.
+
+42
+00:15:36,091 --> 00:15:50,692
+Vesaire vesaire isimler değişebiliyor. Ama bunun güzel tarafı şu Player kısmının. Size sanal makine oluşturması, sadece bir tane oluşturmak zorunda değilseniz birden fazla sanatlı makine oluşturmanız, bunları yükleme yapmanız vesaire için imkan sağlıyor. Sadece
+
+43
+00:15:58,868 --> 00:15:59,868
+Sadece
+
+44
+00:15:59,868 --> 00:16:09,868
+Education olarak kullanılabilmesi, her şeyi yapabilmeniz için birileri istedim. Arkadaşlar şimdi sorularınızda
+
+45
+00:16:09,868 --> 00:16:19,760
+ana fikri kaçırdığınızı görüyorum. Saçma sorular olmaya başladı bu sorular. Bir yerden sonra.
+
+46
+00:16:19,759 --> 00:16:31,759
+Benim size derdim bu ders kapsamında Ubuntu kurdurup, Ubuntu'nun 20.4 versiyonunu kurdurup, orada da başka şeyler yaptırmak vs. değil.
+
+47
+00:16:31,759 --> 00:16:43,307
+Linux'a adım atmanızı sağlayabilmek. Bunu kullanıyorsanız, VirtualBox'da kurduysanız, BindemneBox'da kurduysanız, Linux kullanıyorsanız, bu işi yapmak istemiyorsanız yapmazsınız.
+
+48
+00:16:43,892 --> 00:17:05,892
+Olayın lütfen ana fikrini unutmadan soru sorun. Öbür türlü biraz boş oluyor sorular, öyle söyleyeyim. Yani Ubuntu 16 kullanıyorsan [öğrenci], 20'ye geçmek gibi bir zorunluluğun da yok, 18'e atlamak gibi bir zorunluluğun da yok vs. de yok.
+
+49
+00:17:06,644 --> 00:17:30,347
+Ne olacaktır? Yarın öbür gün bir sonraki laboratuvarda tahminen başka bir şey yapacağız ama iki hafta sonra ya da üç hafta sonra laboratuvarda C ile ilgili konuşmaya başladığımız zaman ders içerisinde bu laboratuvarda bu Linux ortamında C'de ne yapacağınızı, nasıl yapacağınızı vesaire anlatıyor hocam. Yani bir Linux kurulu olması yeterli. Temel...
+
+50
+00:17:31,251 --> 00:17:40,371
+İşleri yapabileceğiniz, yoksa on sekiz miymiş, beş miymiş, yirmi beş miymiş, çok da mühim bir şey değil. Özellikle sizin yapabileceğiniz işler düşünüldüğünde.
+
+51
+00:17:41,652 --> 00:17:47,491
+Evet, şimdi, öncelikle sanallaştırma yazılımını kuracağız demiştik.
+
+52
+00:17:49,892 --> 00:17:57,572
+Yalnız bu sanallaştırma yazılımın kurulumu sanırım her arkadaş ekran değiştirdiğinde patlayacak.
+
+53
+00:17:57,844 --> 00:18:01,284
+Şöyle yapalım, şöskrini.
+
+54
+00:18:10,932 --> 00:18:14,932
+Şu an şeyi görebiliyor musunuz peki? Bana onu bir söyler misiniz?
+
+55
+00:18:14,932 --> 00:18:16,932
+Evet hocam görebiliyorum.
+
+56
+00:18:16,932 --> 00:18:17,932
+Evet hocam var.
+
+57
+00:18:17,932 --> 00:18:18,932
+Şeyini görüyorsunuz değil mi?
+
+58
+00:18:18,932 --> 00:18:22,932
+Lisans agreement falan filan kısmına süper.
+
+59
+00:18:22,932 --> 00:18:25,932
+Böyle şey edince daha düzgün olacaklar var.
+
+60
+00:18:25,932 --> 00:18:28,932
+Ne ekstiyorum? Burada şöyle bir sıkıntımız var.
+
+61
+00:18:30,932 --> 00:18:34,932
+Benim zaten makinemde VMware Workstation 15 gruluymuş.
+
+62
+00:18:34,932 --> 00:18:36,932
+Yani şey çevirmeyeceğim bunu merak etmeyin.
+
+63
+00:18:37,715 --> 00:18:44,835
+o origami programlarına çevirmeyeceğim. Burada kurulmuş var, burada yapılmış var, burada çalıştırılması var.
+
+64
+00:18:44,835 --> 00:18:54,275
+Yaşaya girmeyeceğim ama şöyle ufak bir farklılık olacak sizin instalasyonunuzda.
+
+65
+00:18:54,275 --> 00:19:02,755
+Benim instalasyonumda devam ederken tahminen bana şey sorusunu soracak.
+
+66
+00:19:03,763 --> 00:19:24,163
+Mevcutta zaten bir on beş var. Ben on altıya upgrade ediyorum diye soracak. Sizde onun yerine düz bir installasyon noktası olacak. Zaten installasyon noktasında aslına bakarsınız teknik olarak çok da böyle bilinmedik vesaire bir şey yok. Şu ana kadar geçtiğim ekranlara dikkat ettiyseniz.
+
+67
+00:19:24,319 --> 00:19:51,319
+Sadece bir iki tane tıkı kaldırdım ya da ekledim. Kaldırdığım ve eklediğim tıklar da aslında sistemin çalışmasına bire bir etkileyecek yapılar değil. Çünkü bugünün fokusu zaten bu değil. Orada tıklediğim şeylerden bir tanesi şeyin, nedir o? VMware'in User Experience programına katılıp katılmak istemediğim, katılmak istemediğim için o işe pas geçtim tabii ki.
+
+68
+00:19:53,076 --> 00:20:00,000
+Boşa boşuna bilgi topla, gönder vesaire gibi bir şeye girmek istemediğim için. Sonuçta ben burada upgrade diyorum. Siz orada tahmin edin.
+
+69
+00:20:00,000 --> 00:20:25,000
+install diyeceksiniz. Arada bir de instalasyon bitini falan belki size soracaktır. O kadar. Arada göreceğiniz ekran farkı bu olacaktır. Bu instalasyon bitsin o sırada ben [öğrenci]'in sorsasına cevap vereyim. Windows 7 var ama VMware ile Windows 7'yi desteklemiyor. Virtualizmi var mı? Yok. Yani VMware 7'yi desteklemiyorsa o zaman virtualbox gibi bir...
+
+70
+00:20:25,460 --> 00:20:28,900
+sanallaştırma yazılımına geçebilirsin [öğrenci]. Çözümü bu olur.
+
+71
+00:20:28,900 --> 00:20:34,660
+Yani Workstation 16 şuan bunu desteklemiyorsa
+
+72
+00:20:34,660 --> 00:20:43,300
+ya destekleyen eski bir versiyonuna geçeceksin ki o da sıkıntı. Zaten sıkıntı olmasa eskide kalmaz versiyon.
+
+73
+00:20:43,440 --> 00:20:51,680
+Ya da VirtualBox'a geçeceksin. Ya da canının çektiği kafana yatan başka bir sanallaştırma ortamı varsa ona geç.
+
+74
+00:20:51,680 --> 00:20:59,559
+Yani benim alışkanlığım Myanmar olduğu için Myanmar'a da devam ediyorum. Daha önce de söyledim başka bir arkadaşınızın sorusuna galiba Sly'di.
+
+75
+00:20:59,559 --> 00:21:08,440
+Hani hangi sanallaştırma ortamını kullandığınızın benim açımdan esprisi yok. Önemli olan
+
+76
+00:21:09,428 --> 00:21:20,428
+kısmı sizin kullandığınız ortamda bir şekilde uyumlu olması, sizin performansınızı etkilemeden çalışabilir olması. Dolayısıyla hangisi olacaksa o olsun. Öyle bakın.
+
+77
+00:21:34,483 --> 00:21:39,923
+Bu arada ders notlarını paylaşmıştım. Onunla ilgili bir link paylaşmıştım. Mesaj olarak da gönderdim.
+
+78
+00:21:39,923 --> 00:21:51,384
+Oraya eriştiniz mi? Notları aldınız mı? Bir sıkıntı var mı? Onu da sorayım beklerken. Aradaki beklemelerde başka sorunuz varsa onları da sorabilirsiniz bu arada.
+
+79
+00:21:51,384 --> 00:21:55,943
+Hocam ulaştık. Bir sıkıntı yok.
+
+80
+00:21:57,587 --> 00:22:05,907
+Tamam, teşekkürler bilgilendirme için. Bir de bir şey rica edeceğim. Geçen derste de istemiştim sizlerden. Özellikle konuşurken...
+
+81
+00:22:06,291 --> 00:22:10,971
+Şu an chat ekranını biraz daha rahat görebiliyorum. Ekrana bir şeyler yazmam vesaire gerekmiyor ama
+
+82
+00:22:10,971 --> 00:22:18,831
+Özellikle konuşurken lütfen şey yapın, kendinize bir tanıtın. Şu an sınıf ortamında değiliz maalesef.
+
+83
+00:22:19,011 --> 00:22:27,511
+Sınıf ortamında sizleri en azından yüz yüze görmem gerekiyordu. Görebiliyordum daha doğrusu. Görmem gerekiyordu deyip özür dilerim.
+
+84
+00:22:28,131 --> 00:22:31,071
+Ama burada arada bir ses geliyor.
+
+85
+00:22:31,763 --> 00:22:51,723
+Biriyle konuşuyorum ama gayetten ses veriyor gibi oluyor benim için çoğu zaman. Çünkü katılımcının o an konuşma çıkıyor sonra kayboluyor. Göz ucuyla bunu yakalayamazsam ya da uzun süreli bir konuşma değilse zaten yakalamam çok mümkün değil. Kimle konuştuğumu bile bilmiyorum. Yani soruyu soruyorum kim olduğunu bile bilmiyorum. O yüzden...
+
+86
+00:22:52,243 --> 00:23:06,643
+Bu kısa açıklamadan sonra sizden ricam konuşmadan önce ya da konuşmaya başladığınızda öncelikle kendinizi tanıtmanız. Yani isminizi bir söyleyiniz ki ben de en azından geri hitap ederken sizi şey yapabileyim, adresleyebileyim.
+
+87
+00:23:06,643 --> 00:23:13,123
+Şimdi sanırım sonunda şeyimiz bitti.
+
+88
+00:23:13,123 --> 00:23:17,123
+İnstallasyonumuz bitti.
+
+89
+00:23:18,548 --> 00:23:25,268
+Haa, buradaki kötü şeylerden bir tanesi restart gerektirecek. Bu installasyon.
+
+90
+00:23:32,884 --> 00:23:47,884
+Şimdi, gördüğünüz üzere uygulamayı çalıştırdığınız zaman size şunu soruyor. Commercial ise bir lisans ki non-commercial sayıtıracaksanız hiçbir şey yapmadan devam ediyorsunuz. Ben de non-commercial seçtim tabii ki. Şimdi...
+
+91
+00:23:50,228 --> 00:24:17,228
+Burada adım adım gidelim. Belki de programı hemen çalıştıramayacağız. Çünkü normal şartlarda imtülasyondan sonra bir restart edilmesi gerekiyor sistemin. Restart etmezsek tamamen düzgün bir şekilde fonksiyonlarını yemeye getiremeyebilir, ne olacağını ne olmayacağını bilmiyorum. O yüzden öncelikle bir temel şeye başlayalım. Şimdi VMware Workstation'ı açtığınız zaman
+
+92
+00:24:17,683 --> 00:24:22,443
+Diğer birçok sanallaştırma uygulamasında da benzer bir yapı vardır.
+
+93
+00:24:22,443 --> 00:24:30,403
+Sol tarafta hazır kurulu ya da oluşturulmuş makinelerinizi görürsünüz. O makinelerin üzerine geldiğiniz zaman durumunu görürsünüz.
+
+94
+00:24:30,403 --> 00:24:42,763
+Hangi işletim sistemi yüklüyor, hangi Workstation versiyonuyla oluşturulmuş, RAM'i ne kadar vesaire gibi. Sonra da editleyip o cihazın işlemci sayısından memori miktarına
+
+95
+00:24:43,539 --> 00:25:05,139
+USB kontrollerinden, displayine kadar her şeyi değiştirebilirsiniz. Burada yapacağımız şey şu, player'a gelip, file'e gelip yeni bir sanal makine oluşturacağımızı söylemek. Şimdi bu noktada birkaç tane seçme şansımız var.
+
+96
+00:25:05,311 --> 00:25:26,251
+Bir tanesi normalde eskiden fiziksel olarak elimizde aldığımız CD ya da DVD'lerin imajları var artık. O imajlar da ISO formatında oluyor. Sizden indirmenizi istediğim Ubuntu 20.04 ve bir aslında instalasyon DVD'sinin imajı. Şimdi bunu şöyle...
+
+97
+00:25:26,420 --> 00:25:51,859
+Installer Disk Image File, ISO diye seçip, indirilenler kısmına koymuşum ben. Bu ISO imajını seçip devam edebilirsiniz. Bunu böyle seçtiğiniz zaman, dikkat edin ne diyor bu imaj diskini seçtiğimiz için aşağıda Ubuntu 64 bit 20.04.1 Detekted. This operating system will use easy install.
+
+98
+00:25:52,372 --> 00:26:00,491
+Easy Install dediği şey şu, normalde bir işletim sistemi, bir Linux işletim sistemi yüklenmesi sırasında size bir grup ahiret sorusu soracaktır.
+
+99
+00:26:00,491 --> 00:26:09,491
+Şimdi ahiret sorusu olarak goy goy yapıyorum ama toplamda aslında size sorması gereken bir grup soru var.
+
+100
+00:26:09,491 --> 00:26:16,572
+Biz de bu soruları aslında birebir görmek istiyoruz. Dolayısıyla Easy Install kullanmayacağım.
+
+101
+00:26:16,852 --> 00:26:37,011
+Easy Install kullandığınız zaman bir kullanıcı adı, bir şifre, bir kullanıcı adı, soyadı vs. gibi bir bilgi veriyorsunuz. Onun dışında da neredeyse hiçbir şey vermeden tıkı tıkır işletim sistemin kurulduğunu görüyorsunuz. Kendi başına yürüyor her şey. Şimdi biz olayı biraz daha şey yapmak istiyoruz.
+
+102
+00:26:38,036 --> 00:26:46,316
+Nedir o? Advanced yapmak istiyoruz. Yani arkada neyi nasıl seçtiğimizi, nasıl yaptığımızı bilerek ve konuşarak gitmek istiyoruz.
+
+103
+00:26:46,316 --> 00:26:49,396
+Hocam, ben [öğrenci] bir şey sorabilir miyim?
+
+104
+00:26:49,396 --> 00:26:50,396
+Söyle [öğrenci].
+
+105
+00:26:50,396 --> 00:26:56,036
+Bende bu hani Installer Disk kısmında da gözüküyor indirdiğim Ubuntu.
+
+106
+00:26:58,387 --> 00:27:04,627
+Installor disk de nasıl gözüküyor? Evet ben indirdim, direkt disk olarak gözüküyor bilgisayarda.
+
+107
+00:27:04,627 --> 00:27:25,827
+Eee sen o indirdiğin şeyi nereye koydun? Ben hiç dokunmadım, sadece indirdim. Yani dokunmadım diyorsun ama içimden bir his şey yaptığını söylüyor. Nedir o? O diski bir şekilde sağ tık sol tık vesaire ile mount ettiğini
+
+108
+00:27:26,355 --> 00:27:48,355
+söylüyor. Nedense. Yani, şunu görüyor musun? Şöyle yapalım, bu bilgisayar diyeyim. Böyle sıraya disklerine baktığın zaman burada bir yerlerde bir CD-ROM vesaire. Evet, evet. Ubuntu orada gözüküyor. Tamam, sen onu mount etmişsin otomatik olarak. O yüzden. Ama aşağıda sizin yaptığınız gibi de yapabiliyorum yani.
+
+109
+00:27:48,788 --> 00:28:12,788
+Tamam, bitireyim cümlemi. Sen bunu yani indirdiğin ISO'yu bir şekilde işletim sistemine ya otomatik olarak mount etmesini söylemişsin, open falan dediysin indirirken ya da daha sonra çift tıklayarak vesaire yaparak mount etmişsin. O CD imajını unmount edersen şeydeki...
+
+110
+00:28:13,779 --> 00:28:31,180
+Bu bilgisayar kısmına gelip burada gözüken CD'ye sağ tıklayıp bunu unmount et dersen o zaman o ortadan kalkacaktır. Installer disk olarak gözükmeyecektir. Normal disk image file olarak gözükecektir. Yani
+
+111
+00:28:31,311 --> 00:28:51,991
+Şu anda da ISO'ya erişebilirsin ama sadece erişmende biraz yavaşlık vesaire olabilir. Diğer tarafta da mount edildiği için olmayabilir. Bakarız. Her neyse biz zaten şu an bu yoldan ilerleyeceğiz. Sadece bir makine yaratacağız. İnstalasyonu daha sonra kendimiz yapacağız.
+
+112
+00:28:54,991 --> 00:28:58,191
+Bir saniye arkadaşlar, bir kapı problemi var.
+
+113
+00:29:40,211 --> 00:29:45,092
+Hocam benim adım [öğrenci]. Link gönderebilir misiniz hocam? Ben göremiyorum.
+
+114
+00:29:49,140 --> 00:29:50,140
+Çunku geç kaldım.
+
+115
+00:30:12,019 --> 00:30:14,019
+Evet, şimdi biriniz konuştu.
+
+116
+00:30:17,380 --> 00:30:24,019
+Ama kim konuştu vesaire, ne söyledi? Onların hiç beni duyamadım. Çünkü ne dedim? Bir kapı problemi var, kapı çalındı. Ben de oradaydım.
+
+117
+00:30:24,019 --> 00:30:29,867
+Bu yüzden soruyu soran bir daha sorsun. Öyle cevap vereyim.
+
+118
+00:30:40,372 --> 00:30:51,712
+Hocam ben geç kalmışım. Benim adım [öğrenci]. Linki attınız mı mailden galiba? Tamam şimdi mailimi kontrol edeceğim.
+
+119
+00:30:51,712 --> 00:30:57,372
+Linki vesaire bugün değil hani... İndirmek istiyordum hocam.
+
+120
+00:30:58,195 --> 00:31:09,195
+Evladım, anlatamadığım şey şu galiba, biri 2.5 GB, biri 700-800 MB. 3 GB şey, yani senin indirmene bekleyecek durumunuz yok, onu önceden yapıyor olman lazımdı.
+
+121
+00:31:09,195 --> 00:31:17,195
+Yani şu an geç kalmışım. Hocam, önceden yapmıştım ama yapamadım, yapamazdığım için şimdi soruyorum hocam.
+
+122
+00:31:17,195 --> 00:31:25,195
+Valla, kusura bakma ama sorularda ben hiçbir mantık takibi yapamıyorum. Şu an sadece dersi bir palt alıyorsun.
+
+123
+00:31:25,791 --> 00:31:42,791
+Yani önceden yaptıysan nasıl yaptın linklerin olması lazım. O linkleri kullanmışsındır. Şimdi nereden olacak, nasıl olacak diyorsun. Hiç mantıklı gelmiyor bu üçleme. Daha fazla da bunu tartışmayacağım dediğim gibi. Dersi baltalıyorsun. Devam ediyoruz. Şimdi.
+
+124
+00:31:42,791 --> 00:31:45,791
+Bir makine...
+
+125
+00:31:50,963 --> 00:32:01,203
+Araya girip teşekkürler vesaire falan deme, illa bir teşekkür etmek istiyorsan nazik bir davranış sağolasın. Ama dersi bölmeden aşağıda chat'e teşekkürler yazarak da geçebilirsin.
+
+126
+00:32:01,203 --> 00:32:10,324
+Şimdi sanal makine oluştururken bu seçenekten ilerliyoruz.
+
+127
+00:32:10,740 --> 00:32:21,740
+Nasıl bir işletim sistemi kuracağınızı soruyor size. Bu da versiyonunu, uvrını kıvrını belirtebilirsiniz. 64 bitlik bir Ubuntu kuracağız. Size de zaten 64 bitlik versiyonunu indirttim.
+
+128
+00:32:21,740 --> 00:32:28,740
+İşletim sistemi de Linux zaten. Makinenize bir isim vermemiz lazım. Ne verdiğinizin bir önemi yok.
+
+129
+00:32:28,740 --> 00:32:38,731
+Hani isterseniz Ubuntu yazın, isterseniz başka bir şey yazın. Ben BBG olarak, hatta BBG 1 diyelim.
+
+130
+00:32:39,539 --> 00:32:41,539
+işaretleyeceğim. Şimdi,
+
+131
+00:32:42,039 --> 00:32:46,339
+makineniz, bu sanal makinenin oluşturma sırasında makineyle ilgili çeşitli
+
+132
+00:32:47,740 --> 00:32:53,539
+dosyalar oluşturulacak. Bu dosyaların nerede oluşacağını program size otomatik olarak söylüyor.
+
+133
+00:32:53,740 --> 00:33:00,539
+Document's altında, virtual machines altında, BBG1 diye bir klasör oluşturacak ve bunun içerisinde açacak. Ama istiyorsanız değiştirebilirsiniz.
+
+134
+00:33:00,740 --> 00:33:06,740
+Yer probleminiz, diske erişim hızınız vesaire ile ilgili farklı kriterleriniz varsa onu kullanın.
+
+135
+00:33:07,539 --> 00:33:09,219
+Şimdi
+
+136
+00:33:12,723 --> 00:33:16,804
+oluşturacağınız makinenin diskinin boyutunun ne olmasını istiyorsunuz?
+
+137
+00:33:16,804 --> 00:33:23,364
+Şimdi, kaba taslak söylemek gerekirse aşağı yukarı 8 GB bir alana ihtiyacımız var.
+
+138
+00:33:23,364 --> 00:33:32,644
+Linux grubumu yaptığınız zaman, hani aslında biraz daha az ama hani biraz rahat hareket edebilmek vesaire için en az 8 GB ihtiyacımız var.
+
+139
+00:33:32,644 --> 00:33:34,324
+İsterseniz onaltılık yapın.
+
+140
+00:33:35,539 --> 00:33:41,539
+İsterseniz yirmilik yapın, isterseniz onluk yapın, isterseniz on sekizlik yapın. Bu karar size kalmış.
+
+141
+00:33:43,539 --> 00:33:57,539
+Buradaki bir diğer seçenek, bu sanal riskin, yani oluşturacağınız sanal makine içerisinde yer alan harddiskin tek bir dosyamı birden fazla dosyamı olması.
+
+142
+00:33:59,220 --> 00:34:14,340
+Durumu. Şimdi bunda şöyle bir şey var. 20 GB'lık bir sistem diskiniz olacaksa bunun tek dost olarak oluşturulması biraz sıkıntılı. Şöyle sıkıntılı. 20 GB oluştursunuz tek dost olarak ama bir yerden bir yere taşımak için ne yapmanız lazım?
+
+143
+00:34:15,380 --> 00:34:36,380
+Büyük bir diske ihtiyacınız var. Daha küçük parçalar halinde oluşturursanız ki, burada 2 GB falan şeyler oluşturmak mümkün, parçaları oluşturmak mümkün. O zaman taşıma işlemini daha farklı şekillerde, daha küçük medyalarla vesairelerle de sağlayabilirsiniz. Bir diğer şey...
+
+144
+00:34:36,672 --> 00:34:46,672
+Aslında bu alt taraftaki sisteminizin nasıl çalıştığı, kaç tane diski olduğu, o disklere nasıl eriştiği ile falan da alakalı.
+
+145
+00:34:46,672 --> 00:34:57,672
+Zaman zaman file sistemi, daha doğrusu buradaki storage kısmını farklı parçalara bölmek erişim anlamında da biraz daha hızlı ve rahat olmanızı sağlayabilir.
+
+146
+00:34:57,672 --> 00:35:01,516
+O yüzden ben Multiple Files olarak seçeceğim.
+
+147
+00:35:02,675 --> 00:35:27,956
+Şimdi bazı şeyleri zaten VMware kendisi bizim adımıza belirledi. Misal, 4 GB memory, iki tane işlemci çekirdeği, işte Network Adapter'da Network Adress Translation'i görüyorsunuz. Bu şu demek, aslında bilgisayarınızın bir network bağlaması var. Ancak ve lakin
+
+148
+00:35:28,884 --> 00:35:49,884
+İçeride oluşturduğun sanal mekanın teknik olarak bir network bağlantısı yok. O network bağlantısı, o mekanın dış dünyayla bağlanabilmesi için VMware'in ya da diğer bütün sanallaştırma ortamlarının size sunduğu birkaç tane yol var. Bir tanesi network cihazını, fiziksel network cihazını bu sanal...
+
+149
+00:35:52,371 --> 00:36:20,371
+makineye sanki orada da bir network cihazı varmış gibi tanıtmak ve devam etmek. Yani fiziksel network'unuza bu bilgisayarın da direkt çıkıyor olmasını sanmak. Bir diğer şey içeride bir sanal switch oluşturmak. Bu switch'in bir ucuna fiziksel bilgisayarınızın dış dünyaya bağlanan internet bağlantısını koymak. Diğer uçlarına da oluşturduğunuz sanal makineleri yerleştirmek ve içeride istediğiniz gibi network trafiğini yönetebilmek üzerine. Zaten şöyle kastım.
+
+150
+00:36:20,371 --> 00:36:22,371
+hardware derseniz,
+
+151
+00:36:25,051 --> 00:36:29,131
+burada da network bağlantısının işte bridge mi olacağı, not mı olacağı,
+
+152
+00:36:29,131 --> 00:36:36,771
+ya da sizin farklı şeyler yapmak istiyorsanız iç tarafta, onlarla ilgili ayarları göreceksiniz.
+
+153
+00:36:37,771 --> 00:36:42,371
+Şimdi bu haliyle bizim için aslında yeterli teknik olarak.
+
+154
+00:36:43,572 --> 00:36:44,771
+Baktığınız zaman,
+
+155
+00:36:45,088 --> 00:36:52,088
+bir sanal makinemiz oluştu. Bu sanal makinede çalıştır dediğimiz zaman, ristalt etmediğimiz için
+
+156
+00:36:56,019 --> 00:36:56,779
+Yes.
+
+157
+00:36:59,099 --> 00:36:59,859
+Zaten
+
+158
+00:37:00,380 --> 00:37:03,180
+Yani normal bir fiziksel makinenin
+
+159
+00:37:03,960 --> 00:37:04,980
+Boot sırasında
+
+160
+00:37:05,239 --> 00:37:06,779
+Gördüğünüz BIOS mesajları
+
+161
+00:37:07,019 --> 00:37:07,539
+Gibi
+
+162
+00:37:07,800 --> 00:37:11,119
+Mesajları görüyorsunuz ama herhangi bir şekilde bu makinenin boot etmesi
+
+163
+00:37:11,380 --> 00:37:12,139
+Mümkün değil.
+
+164
+00:37:12,659 --> 00:37:13,180
+Buradan
+
+165
+00:37:13,420 --> 00:37:14,199
+Shutdown
+
+166
+00:37:14,460 --> 00:37:15,220
+Guest
+
+167
+00:37:15,220 --> 00:37:15,980
+Diyeceğiz
+
+168
+00:37:17,260 --> 00:37:20,079
+Bu fiziksel sanal makineyi kapatmış olacağız
+
+169
+00:37:20,859 --> 00:37:21,619
+Tekrar
+
+170
+00:37:22,420 --> 00:37:24,420
+VM player'ı açalım.
+
+171
+00:37:25,420 --> 00:37:27,420
+Şimdi bu sanal makinemizin
+
+172
+00:37:28,420 --> 00:37:29,820
+ayarlarına geleceğiz.
+
+173
+00:37:29,820 --> 00:37:34,020
+CD-ROM'una geleceğiz. ISO file'ı kullanmasını isteyeceğiz.
+
+174
+00:37:34,020 --> 00:37:39,220
+O ISO file olarak da indirilenler altında benim için
+
+175
+00:37:39,220 --> 00:37:42,220
+Ubuntu CD'sini vereceğiz.
+
+176
+00:37:42,220 --> 00:37:47,420
+Şimdi tekrar play ettiğimiz zaman CD'den boot etmeyi deniyor olması lazım.
+
+177
+00:37:53,139 --> 00:37:56,219
+CD'den boot etmeye karar verdiği zaman da
+
+178
+00:37:56,719 --> 00:37:58,779
+şöyle yaparsam daha kolay olabilir
+
+179
+00:37:59,279 --> 00:38:00,559
+Remind in Laptor
+
+180
+00:38:01,079 --> 00:38:04,659
+böyle bir menü göreceksiniz. Bu menüde
+
+181
+00:38:07,219 --> 00:38:08,500
+Ubuntu kurulumunu
+
+182
+00:38:09,779 --> 00:38:10,799
+şey yapmadan
+
+183
+00:38:10,799 --> 00:38:11,579
+nedir o
+
+184
+00:38:14,139 --> 00:38:16,699
+instalasyon yapmadan deneme şansınız var
+
+185
+00:38:20,596 --> 00:38:26,275
+Bunu grafik versiyonunu farklı bir şekilde deneme şansınız var. İnstolasyon yapma şansınız var.
+
+186
+00:38:28,315 --> 00:38:31,596
+Sonuçta kurduğunuz şey nedir o?
+
+187
+00:38:33,596 --> 00:38:46,076
+İşletim sistemi imajı, şu an yüklediğimiz CD imajı, bunun fiziksel bir sanal bir makinada olduğunu bilmiyor ama fiziksel makinada yapılan kontrolü verilen bir tanesi, memorinin düzgün olup olmadığı. Dolayısıyla memori.
+
+188
+00:38:46,675 --> 00:38:56,996
+testi yapma şansı veriyor ya da eğer instalasyon yapmayacaksınız harddiskten zaten yükselen bir şey varsa bunu boot etme şansı veriyor. Biz install Ubuntu diyeceğiz.
+
+189
+00:39:08,019 --> 00:39:25,260
+Şimdi burada başlangıçta aslında kendi içerisindeki CV imajin içerisindeki file sistem mi bir kontrol ediyor? Her şey yanında mı? Yani instalasyon medyası intact mi? Onu kontrol ediyor. Ctrl C'ye basarak bunu iptal edebiliyorsanız ki ben de Ctrl C'ye basarak iptal ettim.
+
+190
+00:40:06,996 --> 00:40:12,436
+Şimdi, instalasyonu İngilizce devam edeceğim ben. Genel yapı gereği.
+
+191
+00:40:15,556 --> 00:40:31,628
+Keyboard layout'umuz benim için Turkish Queue. Dolayısıyla Turkish'e gelip Turkish'i seçeceğim. Şurada da Türkçe karakterleri test edip her şeyin yerinde olup olmadığını...
+
+192
+00:40:33,523 --> 00:40:35,523
+kontrol ediyor olacağım.
+
+193
+00:40:36,243 --> 00:40:37,523
+devam diyorum.
+
+194
+00:40:41,268 --> 00:40:55,667
+Burada zaman zaman şeyler değişiyor. Nedir o seçenekler, instilasyon yapısı vesaire değişiyor. Ama biz normal instilasyon seçelim.
+
+195
+00:40:55,667 --> 00:41:07,667
+Install sırasında ben update'lerin download edilmesini seçmeyeceğim. Çünkü bu instilasyonun o kadar uzun sürmesini istemiyorum. Dolayısıyla devam diyeceğim.
+
+196
+00:41:24,467 --> 00:41:38,467
+Şimdi, instillasyon sırasında yapacağımız şey, bu sanal mekanın o sanal diskini bir şekilde biçimlendirmemiz lazım. Biçimlendirmemizden kısım aslında eee...
+
+197
+00:41:39,027 --> 00:41:55,027
+o diski partitionlara bölmek, o partitionların hangisinin hangi formatta olacağını, hangi boyutta olacağını vs. söylemek. Şimdi bu da şey yaparsanız, Array, Disk and Install Ubuntu derseniz,
+
+198
+00:41:56,596 --> 00:42:07,315
+Bizim zaten 20 GB'lık bir diskimiz var buraya, esayn ettiğimiz sanal bir disk var. Ubuntu bu diski kafasına göre parçalayacak, bölecek ve kullanacak.
+
+199
+00:42:20,659 --> 00:42:21,659
+Şimdi
+
+200
+00:42:24,460 --> 00:42:31,659
+Bizim istediğimiz hani biraz daha farklı yani arka tarafta ne olduğunu ne bittiğini görebilmek.
+
+201
+00:42:33,059 --> 00:42:34,059
+Dolayısıyla
+
+202
+00:42:36,059 --> 00:42:37,460
+Şeyi seçiyoruz
+
+203
+00:42:37,859 --> 00:42:40,859
+Something Yars'ı seçiyoruz, devam ediyoruz.
+
+204
+00:42:42,164 --> 00:43:06,963
+Şimdi bir kere bu elimizdeki disk hani gidip kendi fiziksel makinanız için dışarıdan aldığınız internal bir disk kadar temiz ve bakir hiçbir şey yok üzerinde. Öncelikle bu diskin partition'ın geni yani parçalanmasını nasıl olacağını söyleyen bir partition table oluşturmamız lazım. Partition table oluşturduktan sonra
+
+205
+00:43:07,411 --> 00:43:18,411
+Artık ne görüyoruz? FreeSpace diye bir kısım görüyoruz. 20GB tekabül eden, biraz daha fazlasına tekabül eden bir kısım var. Şuradan artıya tıkladığınız zaman
+
+206
+00:43:18,411 --> 00:43:30,411
+Size çeşitli sorular soracak. Bunlardan birincisi size. İkincisi partition'ın primary mi logical mi olduğu. Üçüncüsü
+
+207
+00:43:33,811 --> 00:43:52,131
+verdiğimiz boyuttaki partition mevcut boş alanın sonuna doğru mu, başına doğru mu yerleştirileceği. Dördüncü soru, bu partition file sistemin ne olacağı? Burada farklı farklı birçok seçenek görüyorsunuz.
+
+208
+00:43:58,771 --> 00:44:15,172
+X2, X3, X4 vesaire diye gidiyor. Yani şu an by default eğer bir şey yapmazsanız X4'ü kullanacaktır. Ancak ve lakin CFS, XFS, BTRFS vesaireyi de kullanabilirsiniz. Bunlar
+
+209
+00:44:15,172 --> 00:44:26,371
+Linux'un ve Unix'in doğasında olan faal sistemler. FAT16 ve FAT162'ye zaten kullanmamanız gereken sistemler. Bunlar daha çok üyün de olsun.
+
+210
+00:44:26,559 --> 00:44:37,279
+Daha doğrusu eski Windows sistemleri kullandığı file sistemler. Burada onlarla devam etmenin bir esprisi yok. Şimdi, burada aslında birkaç tane şeyi konuşuyor olmamız lazım.
+
+211
+00:44:37,279 --> 00:44:46,180
+Bir, kaç tane partition oluşturacağız? İki, bunların hangisine hangi şey vereceğiz?
+
+212
+00:44:49,715 --> 00:45:01,715
+En basit ve en temel instalasyonumuz şu olabilir. Bir tane partition oluşturursunuz. Mount Point'ini Root olarak seçersiniz. File Sistemi de Extort dersiniz.
+
+213
+00:45:04,715 --> 00:45:12,715
+Ve hayatınıza devam edersiniz. Bu bir yöntemdir. Burada sıkıntı şu.
+
+214
+00:45:15,827 --> 00:45:18,187
+Şöyle şey yapayım, change diyeyim.
+
+215
+00:45:19,547 --> 00:45:23,147
+Baktığınız zaman farklı farklı mount point'lar olduğunu söylüyor size.
+
+216
+00:45:24,728 --> 00:45:29,527
+Yaratabileceğiniz, kullanabileceğiniz, oluşturduğunuz partition'a assign edebileceksiniz.
+
+217
+00:45:29,647 --> 00:45:29,887
+Çünkü
+
+218
+00:45:31,476 --> 00:45:50,996
+Unix'de File System root'tan başlar, o slash de gördüğünüz yer, root, File System'in kökü yani en başlangıç noktası. Altında da belli bir yapısı vardır. Nasıl şu an kullandığınız Windows işletim sistemlerinde genelde partitionları c, d, e, f, y, işte x, y, z diye görürsünüz.
+
+219
+00:45:58,099 --> 00:46:21,099
+C partition içerisinde herhangi bir klasöre vesaire ulaşmak istediğiniz zaman ne yapıyorsunuz? C iki nokta diyorsunuz, slash, işte users, slash, cihan, slash vesaire diye gittiğiniz bir yapı var. Yerarşik bir yapı var. FileSystem zaten aslında size diski kullanmanızı sağlayan lojik bir yapı.
+
+220
+00:46:21,364 --> 00:46:48,748
+hiyerarşik bir düzen. Şimdi Linux'da bu hiyerarşik bir düzen kökten, root'tan başlıyor. Root partition'ı root, file sistemdeki root noktasını bir partition yaptığınız zaman aslında hiyerarşik olarak root'un altında boot, home, tmp, user, var, srv, opt, sbin, lib,
+
+221
+00:46:48,820 --> 00:46:56,019
+işte ETC vesaire gibi farklı klasör üleri içeren hiyerarşik bir yapı oluştuğunu göreceksiniz.
+
+222
+00:46:56,788 --> 00:47:21,788
+Ancak melakin, burada şöyle bir esneklik ve güzellik var. Siz root'un altında ya da root'un altındaki herhangi bir klasör altında yer alan başka bir klasörü de bir partition'a endeksleyebilirsiniz, birleştirebilirsiniz. Yani, instalasyonun sırasında isterseniz bir tane root partition'i yaratıp, onun dışında bir tane boot partition'i yaratabilirsiniz, bir tane swap partition'i yaratabilirsiniz.
+
+223
+00:47:24,788 --> 00:47:45,188
+partition'ı yaratabilirsiniz. Şimdi bunları neden ve niye yaratırsınız? Linux file sistemine baktığımız zaman, her bir noktanın farklı amaçları var. Mesela rastgele gidecek olsam, var partition'ı aslında variable'ın kısaltılması, devamlı değişkenlik gösteren bir yer.
+
+224
+00:47:45,619 --> 00:47:57,920
+Devamlı değişkenlik gösteren yer denmesinin nedeni şu, orada var altında, log klasörü altında bütün loglar duruyor. Bütün loglardan kısık birçok uygulamaların logı, sistemin kendi logı.
+
+225
+00:47:57,920 --> 00:48:09,119
+Dolayısıyla oraya devamlı bir yazma ihtiyacı var. Bu da neyi getiriyor? Eğer tek bir root partition yapıp bir bütün halinde her şeyi oraya koyarsanız
+
+226
+00:48:14,068 --> 00:48:34,068
+Çalışma mantığını oluşturmazsanız bir bakmışsınız ki makineniz bir anda diski doğmuş, birçok komisyonu yerine getiremiyor, komutların yarısı çalışıyor, yarısı çalışma makine canlı ama bir taraftan da ölü gibi vesaire bir durum oluşabilir. Bir diğer şey...
+
+227
+00:48:35,411 --> 00:48:53,411
+Bazı medyalarınız ya da bazı ortamlarınızın özellikle farklı bir part yaşında durmasını isteyebilirsiniz. Misal, Home klasörü aslında sistemdeki kullanıcılara ait kendi ürettikleri dokümanların durduğu yer.
+
+228
+00:48:54,612 --> 00:48:59,612
+Yani bu sistemde şimdi çalıştırırken göreceksiniz bir tane cihan kullanıcısı yaratacağız.
+
+229
+00:48:59,612 --> 00:49:05,612
+Ama yarın öbür gün ikinci bir başka kullanıcı, üçüncü, beşinci, onuncu, yirmiinci kullanıcıları yaratabiliriz.
+
+230
+00:49:05,612 --> 00:49:09,612
+Her biri için Home klasörü altına yeni bir klasör açılacak.
+
+231
+00:49:11,315 --> 00:49:31,955
+Şimdi eğer bu kullanıcılar benim kişisel bilgisayarında canımın çektiği için oluşturduğum bilgisayar kullanıcılar değil de bir sunucu ortamında hizmet alan kullanıcılar olsaydı, bu kullanıcıların oluşturdukları bilgi ve belgeler önemli olacaktı.
+
+232
+00:49:33,043 --> 00:49:58,523
+Belki de o bilgi ve belgeleri ekstra daha hızlı erişilmesini, yazılmasını vesaire isteyecektim. Dolayısıyla o zaman belki de home partition'ı ayrı bir partition yapıp onu da fizikse olarak başka bir diske assign edecektim. Yani sda1e değil de sdbye ya da sdcye ya da bambaşka bir diske allocate edecektim.
+
+233
+00:50:02,547 --> 00:50:12,547
+Bunu bu şekilde çoklayabiliriz. FileSit'in üzerindeki her klasörün farklı bir görevi var. Mesela Boot'un altındakiler. Boot anında çalışması gereken yerler.
+
+234
+00:50:12,547 --> 00:50:22,547
+Buraya normal şartlarda sizin gelip de bir şeyi yazmıyor, etmiyor olmanız lazım. Dolayısıyla zaman zaman özellikle sunucu kurulumlarında şeyi görürsünüz.
+
+235
+00:50:22,547 --> 00:50:30,547
+Boot ayrı bir partition olarak oluşturulur. Read on ile oluşturulur. Sadece Boot anında oradan okuma yapılsın diye oluşturulur.
+
+236
+00:50:30,547 --> 00:50:45,547
+Kimse oraya yazamasın diye özellikle korunur. Böylece Vutanı ile ilgili herhangi bir operasyon, bir saldırı vs. olması durumunda da etkilenmemesi sağlanır. Bunun dışında...
+
+237
+00:50:46,675 --> 00:50:54,115
+Mesela burada görmediğiniz BIN klasörü var. Sistemin BIN'leri, yani çalıştırılabilir programlarının durduğu yer.
+
+238
+00:50:54,115 --> 00:51:00,675
+S-BIN diye bir klasör var. O da aslında süperyüzü.
+
+239
+00:51:01,076 --> 00:51:07,235
+Yani root'un binary, sadece root tarafından görülebilen binary'lerin olduğu bir klasör.
+
+240
+00:51:07,235 --> 00:51:11,556
+Root dedim, aslında root diye de bir klasör var, burada yine görmüyorsunuz.
+
+241
+00:51:11,556 --> 00:51:19,556
+Linux'ta kullanıcılar, hiyerarşik bir yapıda. Farklı kullanıcılar var.
+
+242
+00:51:20,275 --> 00:51:37,259
+haklar mertebesinde bir organizasyonu var, gruplar mertebesinde bir organizasyonu var ama temel olarak baktığınız zaman, hani Windows'da genelde Administrator olarak görürsünüz ya da admin olarak görürsünüz. Linux'da her zaman için bir root kullanıcısı vardır. Her şeyin...
+
+243
+00:51:38,036 --> 00:51:46,496
+sistemdeki her türlü yetki ona aittir. Ancak ve lakin şimdi instalasyonun da gerekli adıma gelince göreceğiz.
+
+244
+00:51:46,496 --> 00:51:56,996
+Bize root kullanıcısı yarattırmaz, instalasyon bize bir kullanıcı yarattır. Ona da root grubuna ekler, root hakkı verir.
+
+245
+00:51:59,188 --> 00:52:19,188
+Genel olarak Linux işletim sistemlerinde, özellikle de desktop versionlarında, Root kullanıcısının sisteme login olması istenmez. Çünkü Root, her şeyi yapma hakkına sahip bir kullanıcıdır. Yani yanlışlıkla mesela bin klasörünü silebilirsiniz. Kimse de sana, aa niye siliyorsun diyemez.
+
+246
+00:52:19,891 --> 00:52:24,092
+Çünkü sen roots'un ve yapma hakkın var ve yapabilirsin. Belki de yapman gerekiyor.
+
+247
+00:52:24,092 --> 00:52:31,291
+O yüzden çok ters hareketlerle, çok anlık, yanlış kararlarla sistemi bir anda çalışmaz hale getirebilirsiniz.
+
+248
+00:52:31,291 --> 00:52:43,092
+O yüzden normal şartlarda, dynuxlarda, özellikle de grafik loginlerde sadece normal, sıradan bir kullanıcıyla sizi login eder.
+
+249
+00:52:43,411 --> 00:53:10,411
+Özel bir şey çalıştırmanız gerektiği zaman, root hakkı alabilmek için su ile ya da su ile root kullanıcısına geçersiniz, kullanıcı değiştirirsiniz ya da su ile root sanki root kullanıcısıymışsınız gibi bir programı ya da bir komutu çalıştırırsınız. Bunun için tabii ki bu geçiş sırasında çalıştırabilme sırasında da size root'un şifresini soracaktır. Neyse, bu kadar uzun.
+
+250
+00:53:11,059 --> 00:53:23,859
+anlatıdan sonra şöyle yapacağım. Bunları zaten tek tek parçalamak vesaire yapmak yerine Arrayedisk and install Ubuntu diyeceğim. Ki, instalasyon bittikten sonra
+
+251
+00:53:23,859 --> 00:53:33,460
+şey yapabilelim, nedir o? Üzerine konuşabilelim, neyi nasıl yaptığını görelim.
+
+252
+00:53:33,695 --> 00:53:48,695
+Burada beni şey için uyarıyor, sonuçta disk üzerinde bir şeyler yazacak, daha önceden orada yazılmış olan bir şeyler varsa her şey gelecek, ortalık bir karışacak. Dolayısıyla partition table oluşturuyorum. Sonra da şu iki tane partition'ı oluşturuyorum.
+
+253
+00:53:48,695 --> 00:53:57,483
+Tamam mı, emin misin? diye soruyor. Ben de eminim tabii ki diyorum. Ve devam ediyoruz.
+
+254
+00:54:00,659 --> 00:54:09,059
+Şimdi, nerede olduğumuz sistemin zamanını set edebilmek adına önemli. Haritadan da seçebilirsiniz, kendiniz de yazabilirsiniz.
+
+255
+00:54:09,059 --> 00:54:10,379
+Yorlayın.
+
+256
+00:54:16,724 --> 00:54:37,724
+BDG, özür dilerim, [öğrenci]. Şifre, çünkü [şifre] vereceğim ben. Siz de ne verdiğinizi lütfen unutmayın. Bunu daha sonra kullanacağız. Denizler şekilde burada verdiğiniz şifre aynı zamanda sistemdeki root kullanıcısının da şifresi olacak.
+
+257
+00:54:39,092 --> 00:54:45,692
+Buradaki kullanıcı adımız sisteme girmek için kullanacağımız kullanıcı adı olacak. Devam ediyoruz.
+
+258
+00:54:45,692 --> 00:54:55,492
+Şimdi zaten biz bu seçenekleri işaretlerken o arka tarafta şey yapmaya, dosya kopyalamaya, instalasyonu yapmaya başladı, devam ediyor.
+
+259
+00:55:41,940 --> 00:55:44,740
+Evet, bu arada sizin bir sorunuz varsa onu alayım.
+
+260
+00:55:51,139 --> 00:55:53,139
+Burada ne oluyor? Bir şeyler dönmüş.
+
+261
+00:55:53,139 --> 00:55:58,740
+Hocam ben hep kendim dışına kaçırdım, sana tekrar döndürür misiniz?
+
+262
+00:55:58,740 --> 00:56:04,340
+Maalesef şu an hani hangi işlemi kaçırdığını bilemiyorum [öğrenci]. Dolayısıyla şey yapamayacağım.
+
+263
+00:56:12,019 --> 00:56:19,699
+Sanırım bunu Mountpoint'u ne seçtim hocam? Kaçırdım orayı. Mountpoint'te bir şey seçmedim.
+
+264
+00:56:23,860 --> 00:56:38,500
+Mountpoint'i seçmek yerine geri gittim. Ondan sonra da installasyonu Ubuntu'nun kendi kafasına göre yapmasını seçtim. Res, Disc and Install dedim. Yani kendi kendine yaptı.
+
+265
+00:56:38,500 --> 00:56:49,780
+Zafer, yani anlamadığının ne olduğunu anlamadım diyeyim. MacOS için sen sormamış mıydın? Karıştırıyor muyum?
+
+266
+00:56:55,059 --> 00:57:20,940
+VMware Fusion var, o sorun olur mu falan diye sordum. Ben de bilmiyorum dedim. Yani MacOS ile ilgili bir şey de anlatmadım şu ana kadar. Sonrasında bakarız. Yani MacOS için normal şartlarda şey olmasını bekliyorum. Mesela şuradan bakayım kenardan. VMware
+
+267
+00:57:24,340 --> 00:57:26,739
+Evaluation, bakalım
+
+268
+00:57:28,539 --> 00:57:29,340
+Var mı?
+
+269
+00:57:35,860 --> 00:57:42,260
+Yok, yok. Tamam. Burada yok. O zaman şöyle yapalım.
+
+270
+00:57:51,860 --> 00:57:54,360
+MacOS için mesela,
+
+271
+00:57:56,460 --> 00:57:59,860
+Oracle Mian mutual box var. Onu kura edersin.
+
+272
+00:58:00,211 --> 00:58:03,891
+Onun üzerinden gidebilirsin. Böyle biriniz soru mu soracak?
+
+273
+00:58:03,891 --> 00:58:11,251
+Arkadan ımm, döng diye bir homurdantı geliyor. Sormayacaksa mikrofonunu kapatsın lütfen.
+
+274
+00:59:15,284 --> 00:59:20,284
+Bu arada [öğrenci] senin için baktım.
+
+275
+00:59:24,628 --> 00:59:32,308
+Evet, şeydeki, MacOS'daki versiyonu, VMware Fusion 12. Ancak ve lakin...
+
+276
+00:59:36,179 --> 00:59:37,963
+Orda
+
+277
+00:59:43,092 --> 00:59:46,059
+Aaaaahhhhhh
+
+278
+01:00:00,019 --> 01:00:06,340
+Fusion'ın Player versiyonunu non-commercial olarak ücretsiz şekilde kullanabiliyorsun.
+
+279
+01:00:06,340 --> 01:00:11,139
+Bu Personal View License diye geçiyor.
+
+280
+01:00:11,139 --> 01:00:18,099
+Bir account oluşturman, oradan indirmen falan lazım. Onu indirdiğin zaman çalışır diye görüyorum.
+
+281
+01:00:18,099 --> 01:00:21,300
+Burada da linki var. Şimdi diğerlerine bakalım.
+
+282
+01:00:27,507 --> 01:00:32,507
+Yani, bir yeri bir gün için açak anıdısını korkuyoruz.
+
+283
+01:00:32,507 --> 01:00:33,931
+Bu, sadece bir sürü tutuşma.
+
+284
+01:00:34,068 --> 01:00:56,068
+Yükleyemediysen ders bittikten sonra yüklersin [öğrenci]. Yani şeyi söyledim, bende sonuçta on beş vardı, onaltı, Uyembe Workstation 16'ya geçtim. Geçiş sırasında restart etmeniz gerekiyor dedi. Ama dersi kapatıp açmamak için bende restart etmedim. Sadece şans eseri tahminen...
+
+285
+01:00:57,108 --> 01:01:12,108
+Zaten onbeşin Execute Bull'larının olduğu yere onaltı her şeyi koyduğu için ben restart etmemiş olsam da bir şeyler çalışmaya başladı. Sizde bu böyle olmak durumunda değil. Özellikle de sonuçta Airbnb'ye yüklenirken
+
+286
+01:01:12,532 --> 01:01:31,291
+ihtiyaç duyduğun başka executable'ları ya da library'leri de yüklüyor olabilir. Bunların yüklenmesinden dolayı imdere start ediyor olmanız da olabilir. Sizinki devam edemeye bilir. Sorun değil. Ne yapacaksınız? Ders gidecek. Buradaki şeyleri izleyebilirsiniz zaten. Sonrasında bunları izleyerek tekrar devam edersiniz.
+
+287
+01:01:33,452 --> 01:01:39,291
+Bu sorunun cevabını zaten demin vermiş oldum [öğrenci].
+
+288
+01:01:44,211 --> 01:01:53,692
+Yani çok şeye dayanıyor. Benim için şu an olmadı. Sizin için olabilir. Başka zaman başka yerlerde başka şekilde her şey olabilir.
+
+289
+01:01:53,692 --> 01:02:10,331
+Dolayısıyla bu senin bilgisayarın başında olmadığım sürece söyleyebileceğim, özellikle bu kadar donayı da söyleyebileceğim bir şey değil. Restart etmeniz gerekiyor diyorsa, bu olma şartlarda restart ediyor olmanız gerekir. Bu kadar basit.
+
+290
+01:04:30,228 --> 01:04:48,228
+Şimdi restarttan kaçış yok tabiki. Sanal makinemiz içerisindeki işletim sisteminin kurulumu da tamamlandı ve o da kurulum tamamlandığı için restart etmek istiyor. Bu restart sadece sanal makinemiz restartı. Dolayısıyla restart etmekte hiçbir sıkıntı yok. Restart now diyeceğiz.
+
+291
+01:04:59,635 --> 01:05:24,635
+Şimdi bu installasyonu biz kendimiz ayarladık ve başlattık. Başlatırken de ne yaptık? İlk başta şeyimizi, nedir o? CD-ROM'umuzu elimizdeki şeyle değiştirdik. Nedir o? ISO imajıyla bağladık. Restype için...
+
+292
+01:05:24,735 --> 01:05:48,735
+Diyor ki, instalasyon yapan işletim sistemi, instalasyon mediumunu kaldırın yani CD-ROM'u çıkartın sonra da Enter'a basın. Şimdi, instalasyon için kullandığımız removable device'ı buradan istersek bağlı, connect, disconnect vesaire yapabiliyoruz. Şimdilik yapmayacağım bir şey, sadece Enter'a basacağım ve restart etmesini isteyeceğim. Restart sırasında
+
+293
+01:05:58,900 --> 01:06:00,340
+Zaten aslında
+
+294
+01:06:04,083 --> 01:06:08,083
+Ha, şu an bağlamış. Tamam. Bakalım ne yapacak?
+
+295
+01:06:12,083 --> 01:06:20,083
+Otomatikman VMware onu şey yaptı, bağlantısını koparttı. Dolayısıyla biz login olacağız. Neyle login olacağız?
+
+296
+01:06:22,083 --> 01:06:28,083
+Belirlediğimiz şifreyle, benim şifrem [şifre] idi. Onunla login olduk.
+
+297
+01:06:28,083 --> 01:06:31,019
+Login olduğumuz şey grafik ekran olacak.
+
+298
+01:06:32,820 --> 01:06:44,820
+Grafik ekran zaman zaman şey içerisinde böyle küçük bir ekran şeklinde görebilirsiniz. Zaman zaman daha büyük görebilirsiniz.
+
+299
+01:06:44,820 --> 01:06:58,820
+Bunu ayarlamak elimizde, sizin de elinizde, benim de elimde. Ama şu an yapmayacağım. Biraz daha sonra halledeceğiz. Önce şu Online Account'dır, Uğur'dır, Kıvur'dır kısmını halledelim.
+
+300
+01:07:01,364 --> 01:07:06,224
+Down diyelim bitti. Şimdi bir masaüstü görüyorsunuz. Bu masaüstünde
+
+301
+01:07:08,523 --> 01:07:09,563
+Bir bakalım
+
+302
+01:07:10,063 --> 01:07:11,864
+Ayarlar kısmında
+
+303
+01:07:15,443 --> 01:07:17,744
+Şekli Şemali biraz değişmiş
+
+304
+01:07:29,204 --> 01:07:30,403
+Display, ha.
+
+305
+01:07:32,204 --> 01:07:34,403
+Resolution'u bir değiştirelim önce.
+
+306
+01:07:37,804 --> 01:07:39,204
+Appline diyelim.
+
+307
+01:07:41,204 --> 01:07:44,204
+Reverse, biraz fazla yük oldu.
+
+308
+01:07:45,204 --> 01:07:47,603
+Demek ki bin...
+
+309
+01:07:48,204 --> 01:07:49,804
+Şu mu acaba demek ki?
+
+310
+01:07:49,804 --> 01:07:52,403
+Bu biraz daha mavfik.
+
+311
+01:07:52,755 --> 01:07:57,755
+Ekranı bu şekilde büyütebildik. Nereden büyüttük? Bir daha göstereyim.
+
+312
+01:07:57,755 --> 01:08:10,755
+Bir dakika. Settings'e geliyorsunuz. Settings'ten Displays'e geçiyorsunuz. Buradaki çözümünürlüğünüzü değiştiriyorsunuz. Size uygun çözümünürlüğü neyse ona geçiyorsunuz.
+
+313
+01:08:10,755 --> 01:08:17,755
+400'e dinleyelim yapsam biraz daha iyi olacak.
+
+314
+01:08:17,908 --> 01:08:25,908
+Şimdi burada gördüğünüz yapı aslında Windows'da alışkın olduğunuz yapıya çok benzer.
+
+315
+01:08:25,908 --> 01:08:38,908
+Yani grafik bir arayüz. File sistemde gezinmek için şeye tıklıyorsunuz, klasörünüze tıklıyorsunuz, geziniyorsunuz. Benzer şekilde doküment, sound, müzik vesaire falan gibi yerler var.
+
+316
+01:09:05,108 --> 01:09:13,108
+Yerimide bir şeyleri değiştirmişler. Yapı birliğinden biraz farklı olmuş. Ona da geleceğiz.
+
+317
+01:09:13,108 --> 01:09:17,108
+SPS, şunun da şey yapalım.
+
+318
+01:09:19,108 --> 01:09:22,764
+Tekrar edeyim, biraz bir üstün çeşireceğiz.
+
+319
+01:09:40,148 --> 01:09:43,827
+Şimdi alt etikliğe basıp
+
+320
+01:09:47,636 --> 01:09:57,636
+Alt ve F2 tuşuna beraber basarsanız, buraya bir komut çalıştırma şansı veriyor size. Ben o komut kısmına gnomtre terminal yazdım.
+
+321
+01:09:57,636 --> 01:10:08,636
+Bu da bana bir tane command prompt açılmasını sağladı. Yani işlediğim istemiyle ilgili komutlarını çalıştırabileceğim bir alan sağladı.
+
+322
+01:10:10,292 --> 01:10:32,292
+fwd diye bir komutla hangi klasörde, file scheme üzerinde hangi klasörde olduğumu görebiliyorum. Ki gördüğünüz üzere slash home yani root altında home altında cihan klasöründeyim. Şimdi şöyle bir şey yapacağım. Root directory'sine geçeceğim. Change directory ile cd slash ile. Burada ls dediğim zaman
+
+323
+01:10:32,787 --> 01:10:39,647
+Hani instillasyonun en başında konuşmuştuk ya, farklı farklı klasörler var. Root'un altında
+
+324
+01:10:40,787 --> 01:10:47,947
+Bir organizasyon vardı, BIM Directors'ı var çünkü orada Binary'lar duruyor. İşte Boot Directors'ı var, orada
+
+325
+01:10:48,756 --> 01:10:58,756
+şey duruyor, boot loader ile ilgili dosyalar duruyor. CD-ROM, yani her zaman olmak zorunda değil, her dağıtımda burada olmak zorunda değil. Opsiyonel bir şey aslında.
+
+326
+01:10:58,756 --> 01:11:13,756
+MNT ya da media klasörlerinin altında olabilir. Dev directorisi var. Dev aslında Linux'ta bütün device var. Yani donanım serisinde takmış USB, stick de işte ne bileyim...
+
+327
+01:11:15,444 --> 01:11:36,444
+Ekstrenör noktaki, diskte vesaire de her şeyde bir device. Bu device sisteme bağlandığı zaman ilgili driver yükleniyor. O driver da dev altında bir dosya oluşmasını sağlıyor. Bu dosya karakter ya da block device özelliğinde oluyor. Siz de aslında o dosyayı yazıp o dosyadan okuyarak device ile iletişim kuruyorsunuz.
+
+328
+01:11:43,891 --> 01:12:02,891
+Şu an ise Everything to configure yani Everything'in e'si, to'nun t'si, configure'ın c'si etc şeklinde isimlendiriyorlar bazı kaynaklarda. Şu demek, bu sistemde çalışan bütün uygulamaların, servislerin vesaire konfigürasyon dosyası etc altında duruyor.
+
+329
+01:12:03,539 --> 01:12:31,539
+sistemin konflikasyonunu genel olarak oradan yapıyorsunuz. Home klasörü zaten yukarıda gördüğünüz yapıdan da anlayacağınız üzere sistemdeki kullanıcılara ait klasörlerin olduğu, yani burada herkesin kendi klasörü var, kendi kullanıcısına ait bilgilerin tutulduğu, bir kullanıcı diğerinin bilgilerine özel bir yetkisi vesairesi yoksa erişemiyor. LIB, aslında sistemdeki uygulamaların kullanacakları kütüphaneler, library...
+
+330
+01:12:31,539 --> 01:12:55,467
+%3264 vesaire gibi versiyonları var. Biraz bu dağıtımla alakalı bir şey. Her dağıtımda böyle değil. Medya genel amaçlı bir klasör. O medya klasörü altına farklı klasörler açıp sisteme bağladığınız mesela external risk'in, mesela USB'nin oraya ilişkilendirilmesini, mount point'in orası olmasını sağlıyorsunuz.
+
+331
+01:12:56,020 --> 01:13:04,140
+Bunu zaman zaman başka dağıtımlarda MNT altında görürsünüz. Bazılarında hem medyada görürsünüz, hem MNT'de görürsünüz.
+
+332
+01:13:04,140 --> 01:13:19,260
+Şeye bakacak olursanız ilerisinde PROC mesela aslında sanal bir...
+
+333
+01:13:19,507 --> 01:13:39,507
+yapı, sistemle ilgili bütün bilgileri tutuyor. Yani prog altında sizin işlemcinizin ne olduğu, onun üzerindeki firmware'in ne olduğu, onun donanım seviyesinin ne olduğu, belleğinizin durumunun ne olduğu vesaire falan gibi birçok şey var. Hop tuttu, atlamıştım galiba. Hop da...
+
+334
+01:13:41,203 --> 01:13:56,644
+Aslında, sizin, yani Optional'ın Optu, bu dağıtımla beraber gelen paketleri yüklüyorsunuz, kuruyorsunuz. Bir kısmı BIN'in altında, bir kısmı SB'nin altında, bir kısmı başka bir yerlerde duruyor.
+
+335
+01:13:56,644 --> 01:14:05,683
+Ve fakat, hani, sonuçta bu işletim sistemine sizin dışarıdan bulduğunuz kaynak kodunu getirip, compile edip, yüklediğiniz yazılımlar da olacak.
+
+336
+01:14:06,292 --> 01:14:14,852
+ya da hariz, yani dağıtımla birebir gelmeyen yazılımları da paketlenmiş halde yükleyeceksiniz. Opt bu iş için kullanılan yer.
+
+337
+01:14:14,852 --> 01:14:25,652
+Root, zaten sistemde bir Root kullanıcısı var, onun da bir Home directory olması lazım. Ama onu Home altında diğer kullanıcılarla beraber saklamıyoruz. Root bir ayrı bir klasör var, orada saklıyoruz.
+
+338
+01:14:25,652 --> 01:14:34,292
+Run benzer bir şekilde, aslında geçmişten günümüze gelen bir directory değil, sonradan oluşturulmuş bir directory.
+
+339
+01:14:34,292 --> 01:14:48,292
+Sistem servislerinin ve proses işlemlerinin çalışmaları sırasında oluşturdukları geçici bilginin saklandığı yer.
+
+340
+01:14:48,627 --> 01:14:55,347
+SBIN'in SuperUser için olan versiyonu gibi düşünebilirsiniz.
+
+341
+01:14:55,347 --> 01:15:03,747
+SRV eğer bu sistem üzerinde bir servis verecekseniz, mesela web hosting vs. gibi yani web sitesi host edecekseniz bir şey yapacaksanız
+
+342
+01:15:03,747 --> 01:15:12,387
+ya da bir domain name service DNS çalıştıracaksanız bununla ilgili dosyaları sakladığınız yer.
+
+343
+01:15:13,363 --> 01:15:33,363
+TMTEMP dosyaları oluşturduğunuz kısım, yani sadece sizin değil bütün kullanıcıların ve çalışan servislerin, uygulamaların vesairenin geçici amaçla oluşturduğu bilgiyi sakladığı yer.
+
+344
+01:15:40,500 --> 01:15:56,500
+Atladım, SYS'eyim mi atladım? Evet, SYS de yine sanal klasörlerden bir tanesi. Prog ve dev gibi düşünebilirsiniz biraz daha. Sadece bağlı olan cihazlarla ilgili temel bazı bilgileri gösteriyor size.
+
+345
+01:15:58,131 --> 01:16:08,751
+Var zaten instalasyon sırasında uzunluklu konuştuk. Variable'ın kısaltması. Orada bol miktarda log dosyası göreceksiniz. Örneğin, bir saniye.
+
+346
+01:16:25,811 --> 01:16:33,811
+...
+
+347
+01:16:33,811 --> 01:16:40,811
+... liste şeklinde varlog klasörü altındaki dosyaları istediğimiz zaman dikkat edin, authorization log'u, bootlog'u, bootstrap log'u...
+
+348
+01:16:41,619 --> 01:17:00,019
+d messages yani sistemin açılması sırasında çıkan mesajlar, syslog sistemin aktif bir şekilde mesajları, sistemle ilgili mesajları döktüğü yer vesaire şeklinde sadece log dosyları var. Dolayısıyla var genel olarak bu yüzden variability isimlendiriliyor. Şimdilik...
+
+349
+01:17:00,948 --> 01:17:09,268
+Bugün aslında üç aşağı beş yukarı konuşacaklarımız bunlardı. Yani instillasyon yapmak ve işledim sistemi çalıştırmaktı.
+
+350
+01:17:09,268 --> 01:17:22,708
+Instillasyon sırasında sorun yaşadıysanız, daha sonra işledim sistemini açmakla ilgili sorun yaşarsınız vs. olursa bununla ilgili bana mail atabilirsiniz.
+
+351
+01:17:43,155 --> 01:17:56,435
+oluyorsa ScreenShot ile, olmuyorsa detaylı açıklamasıyla, çıkan hata mesajının ne olduğuyla, hata veriyor demek ki, hata mesajının ne olduğunu söyleyerek falan mail atarsınız. Bununla ilgili size dönüş yaparım.
+
+352
+01:17:57,043 --> 01:18:18,543
+Bu hafta burada keseceğiz. Önümüzdeki hafta bu sistemi kullanma ile ilgili biraz daha fazla şey konuşuyor olacağız. Yani şu komut satırındaki konuştrabileceğiniz komutlar, neler olduğu, ne işe yaradığı, ne yapıldığı. Burada bir şu ana kadar sistem sisteminde tek bir şey kullanmadık diye, bir browser nasıl kullanırsınız? Bunu konuşacağız.
+
+353
+01:18:26,644 --> 01:18:30,004
+Sizin bir sorunuz varsa buyurun sorun.
+
+354
+01:18:48,115 --> 01:18:49,735
+Evet, sorusu olan var mı?
+
+355
+01:18:58,452 --> 01:19:01,852
+Hocam, Linux kullanmanın diğer sistemlerinin avantajları nedir?
+
+356
+01:19:02,852 --> 01:19:06,652
+Diğer işletim sistemlerinden kastın ne?
+
+357
+01:19:07,152 --> 01:19:13,852
+Yani mesela birebir hepsini birbiriyle karşılaştırmamı istersen biz ona işletim sistemin kitabı diyoruz.
+
+358
+01:19:13,852 --> 01:19:19,252
+Hani çünkü orada da karşılaştırıyoruz. Windows ile örnek olarak dersen...
+
+359
+01:19:20,979 --> 01:19:45,979
+Yani şimdi genel bir kullanıcı perspektifinden sormadığını düşünüyorum. Yani bilgisayar mühendisliği öğrencisi olarak hani Linux kullanırsam ne olur, Windows kullanırsam ne olur diye sorduğunu düşünüyorum. Yani herhangi bir kullanıcı gözüyle bakmıyoruz olabilir diye düşünüyorum. Şimdi bir...
+
+360
+01:19:46,868 --> 01:20:04,868
+Aslında desktop makinelerine baktığın zaman pazar payı olarak ya da kullanım geleneği olarak Windows böyle çok yaygın olsa da Windows iyi bir işletim sistemi değildir. Birçok yönden sıkıntısı vardır.
+
+361
+01:20:06,868 --> 01:20:12,868
+Bunu biraz da tarihsel gelişimini bildiğin zaman daha rahat anlıyorsun ve takip edebiliyorsun.
+
+362
+01:20:13,235 --> 01:20:34,355
+Windows tek bir versiyon, tek bir sürün değil. Windows 3.1 vardı, ondan sonra 5 vardı, NT vardı, MI vardı, XP vardı, 7 vardı, 10 vardı vesaire derken gidiyor ama bunlar hep desktop versiyonları. Bir de sunucu sistemleri vardı.
+
+363
+01:20:35,636 --> 01:20:56,936
+Microsoft Server değil, NT ile başlayan ve üzerine giden bir yapı vardı. Şimdi, her ne kadar yapı olarak bu sunucu versiyonları biraz daha sağlam, stabil vesaire olarak addedilse de Windows işletim sistemi genel olarak o kadar da stabil bir işletim sistemi değildir.
+
+364
+01:20:57,152 --> 01:21:13,391
+Zaman zaman yaptığını söylediği şeyleri de gerçek anlamda yapamadığını görürsünüz. Zaman zaman belirtildiği özelliklerde çalışmadığını görürsünüz. Şu an çok da deneyimliyorum çünkü bir anda iki sene birden ileri gidiyor olmamız lazım.
+
+365
+01:21:14,100 --> 01:21:19,100
+O detayda anlatırsam. Sadece kabataslık olarak söyleyeceğim bazı şeyleri.
+
+366
+01:21:19,100 --> 01:21:32,100
+Unux ise aslında çıkış noktası olarak yapısı gereği, çıkma tarihi gereği, sonrasında community desteği alması ve yürümesinden dolayı da genellikle sunucu sistemlerinde çalışır.
+
+367
+01:21:32,916 --> 01:21:47,916
+Sunucu sistemlerinde çalıştığı için Desktop versiyonu da aslında sunucu sistemlerinde çalışan versiyonun bir şekilde biraz kırpılmış, biraz da eklenmiş bir halidir. Eklenmişten kısıt mesela grafik arayüzleri vesairesi ekleme kısmı olur.
+
+368
+01:21:48,692 --> 01:22:06,092
+Ama şöyle düşünmeyin, oradaki grafik arayüz sistemi bile zaten sunucu olarak çalışmak üzere tasarlanmış bir grafik arayüz sistemidir. Yani arka tarafta bir X-Window servisi vardır.
+
+369
+01:22:06,420 --> 01:22:22,819
+Ona lokalden bağlanan bir Window Manager, Session Manager vardır. Dolayısıyla ayrık yapılan. Normalde standardı arkadaki o X server'ın çok sayıda kullanıcıya hizmet verebilmesidir. Yani...
+
+370
+01:22:23,923 --> 01:22:50,324
+Şöyle söyleyeyim, şimdi Windows'da son 10 senedir falan çok yaygın ve rahat olan remote desktop ile yaptığınız erişimi Linux'un ilk versiyonundan beri yapabiliyordunuz. Yani tasarımsal ve yapısal olarak böyle bir avantajı vesairesi de var. Dezavantajı, dezavantajı ne? Windows daha yaygın. Eğer oyun oynayacaksınız, böyle daha multimedya işler vesaireler yapacaksınız.
+
+371
+01:22:51,091 --> 01:22:58,251
+Windows'da daha çok uygulama bulmanız, bunları daha rahat kullanmanız, daha çok tutorial bulmanız vs. mümkündür.
+
+372
+01:22:58,251 --> 01:23:03,451
+Ancak ve lakin sizin bilgisayar mühendisliği öğrencisi olarak bence
+
+373
+01:23:04,372 --> 01:23:25,971
+Birinci dakikadan itibaren bir Linux işletim sistemi kullanıyor olmanız gerekir. Çünkü işletim sistemi noktasında tariflediğimiz zaman, bir işletim sistemi ne yapmalı diye tariflediğimiz zaman, bu tariflerin %90-95'ini yerine getiren işletim sistemi Linux'tur. Windows'ta ise bunların büyük bir kısmı yoktur.
+
+374
+01:23:27,060 --> 01:23:40,740
+Yani Resource Management anlamında da yoktur. Protected çalışma anlamında da yoktur. Yoktur da yoktur. İleride özellikle hani ne yapacaksınız bilmiyorum.
+
+375
+01:23:41,492 --> 01:23:44,811
+Dahileden siz de bilmiyorsunuz. Herhangi biriniz özelinde
+
+376
+01:23:44,811 --> 01:23:55,692
+zaten şu an bunu söylemek çok zor. Ama yaptığınız her iş illa uvrundan kıvrından neredeyse Linux'a ulaşacaktır. Dolayısıyla
+
+377
+01:23:55,692 --> 01:24:06,492
+şu an Linux kullanmanızın daha iyi olduğunu düşünüyorum. Hocam bu kurduğumuz sağ makinada işlediğimiz sistemleri kablosuz bağlantıyı eklinleştirme şansınız varmış? Var tabii ki.
+
+378
+01:24:09,652 --> 01:24:25,652
+Akademik takvimde vize haftasının 23 ve 28 arasında gözüküyor. Bizim DDG dersinin vize sınavı kesin tarihi ne zaman belli olur? Bilgisayar mühendisliği bölümünün yöneticileri ne zaman ilan ederse o zaman belli olur. Çünkü vize haftasıyla...
+
+379
+01:24:26,195 --> 01:24:27,716
+sınavları yapıyoruz.
+
+380
+01:24:28,155 --> 01:24:30,135
+Vize haftasında vize takvimi
+
+381
+01:24:30,135 --> 01:24:32,336
+bölüm yönetimi tarafından
+
+382
+01:24:32,336 --> 01:24:34,195
+belirleniyor. Onlar tarafından
+
+383
+01:24:34,195 --> 01:24:36,135
+duyuruluyor. Duyurulmadan
+
+384
+01:24:36,135 --> 01:24:37,975
+hemen önce zaman zaman bize
+
+385
+01:24:37,975 --> 01:24:40,115
+soruyorlar. Hocalar uygun mudur bir bakın
+
+386
+01:24:40,115 --> 01:24:42,175
+diye. Bazen de sormuyorlar.
+
+387
+01:24:42,235 --> 01:24:44,155
+Bizim de haberimiz olmuyor. Dolayısıyla ilan
+
+388
+01:24:44,155 --> 01:24:46,235
+edildiği zaman hep beraber haberimiz olacak.
+
+389
+01:24:46,235 --> 01:24:47,576
+Ne zaman ilan olur?
+
+390
+01:24:47,988 --> 01:25:01,668
+Genelde bu Türkiye'nin genel sıkıntısıdır, yumurta kapıya gelince ilan olur. Yani bir hafta öncesinde falan ilan ederler. Bu durumda önümüzdeki hafta diğerlerde ilan ediyor olmaları bekleyebiliriz.
+
+391
+01:25:01,668 --> 01:25:05,668
+Başka sorunuz var mı gençler?
+
+392
+01:25:14,068 --> 01:25:20,728
+O zaman başka sorunuz yoksa bugünlük bu kadar diyorum. Dediğim gibi önümüzdeki hafta bu işe kaldığımız yerden devam ediyor olacağız.
+
+393
+01:25:23,128 --> 01:25:33,747
+İşle işle ilgili içeride kullanabilecekleriniz, yapabileceklerinizle ilgili konuşulacak bir tarz sık olmazsa. Ekstra bir şey olursa da zaten size derste duyuruyorlar. Şunu da yapacağız, bunu da yapacağız, şunu hazırlayalım diye.
+
+394
+01:25:35,128 --> 01:25:37,228
+Görüşmek üzere, hepinize iyi haftalar.

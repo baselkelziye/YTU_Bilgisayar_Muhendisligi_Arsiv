@@ -1,0 +1,4955 @@
+1
+00:05:34,387 --> 00:05:35,587
+Günaydın arkadaşlar.
+
+2
+00:05:38,327 --> 00:05:40,507
+Bakayım katılım 24.
+
+3
+00:05:41,247 --> 00:05:42,767
+Sayımız gitgide azalıyor.
+
+4
+00:05:44,007 --> 00:05:47,147
+Derse zaten katılan nüfusun yarısı anca burada.
+
+5
+00:05:47,507 --> 00:05:47,827
+Neyse.
+
+6
+00:05:49,967 --> 00:05:52,127
+Hem Ramazan ayındayız.
+
+7
+00:05:53,027 --> 00:05:54,007
+Hem de vize geçmiş.
+
+8
+00:05:54,227 --> 00:05:56,627
+Artık yarıyı geçmişiz değil mi?
+
+9
+00:05:57,387 --> 00:05:58,587
+Önümüzde final kalmış.
+
+10
+00:06:00,531 --> 00:06:04,611
+Bu hafta belki biraz böyle daha az katılımla devam edebilir.
+
+11
+00:06:05,871 --> 00:06:13,471
+Şimdi öncelikle derse başlamadan ilk saat isterseniz vizedeki soruların üzerinden geçelim.
+
+12
+00:06:16,291 --> 00:06:20,931
+Şöyle bir şey açayım ben. Bir beyaz tahta.
+
+13
+00:06:22,851 --> 00:06:23,891
+Çok büyük oldu.
+
+14
+00:06:25,391 --> 00:06:26,831
+Biraz da ufaltalım.
+
+15
+00:06:27,475 --> 00:06:36,336
+Şimdi biz buraya şöyle alsak yapıştırabiliyor muyuz? Ona bakalım.
+
+16
+00:06:41,684 --> 00:07:09,224
+Gayet güzel. Tamam. Rengini de siyah yapalım. Evet, şuradan başlayalım. Tamamdır. İlk sorumuz bu şekildeydi. Aşağıdaki işlemlerin hangisinde veya hangilerinde? Şunu şöyle biraz daha çekiştireyim. Ben çünkü kendi açımdan ekranı verimli kullanmam gerekiyor.
+
+17
+00:07:09,812 --> 00:07:23,812
+Tamam, evet. Hangisinde ya da hangilerinde linkli liste kullanmak, hemen linkli listenin altını çiziyoruz. Dizi kullanımına göre genel olarak...
+
+18
+00:07:25,331 --> 00:07:41,692
+Daha avantajlıdır. Tamam. Şimdi biz demek ki birkaç farklı operasyon verilmiş bize. Bu operasyonlar içinde acaba linkli liste mi daha avantajlıdır yoksa dizi mi daha avantajlıdır? Bunları hızlıca bir düşünüp tartmamız gerekiyor.
+
+19
+00:07:42,100 --> 00:07:50,180
+Şimdi hatırlayacak olursanız linked listinin en güzel yanı ekleme ve silmenin kolaylığıydı.
+
+20
+00:07:50,740 --> 00:07:55,740
+Dizinin mesela arasından bir elemanı silerseniz hepsini kaydırmak zorunda kalıyordunuz.
+
+21
+00:07:56,300 --> 00:07:58,500
+O en mertebesinde işlem yapabilirdiniz.
+
+22
+00:07:59,000 --> 00:08:03,740
+Fakat burada sadece silinecek olan nodu kaldırmanız yeterli oluyordu.
+
+23
+00:08:03,840 --> 00:08:08,340
+Yani ekleme ve silme işlemleri daha avantajlı diziye göre.
+
+24
+00:08:08,340 --> 00:08:10,100
+Bunu uzun uzun konuşmuştuk hatırlarsın.
+
+25
+00:08:10,100 --> 00:08:18,100
+Ama güncelleme konusunda dizide direkt olarak indisteki gözü değiştirdiğinizde güncellemiş oluyorsunuz.
+
+26
+00:08:18,100 --> 00:08:24,100
+Fakat burada önce bir arama yapmanız, linked listede bulmanız ve öyle değiştirmeniz gerekiyor.
+
+27
+00:08:24,100 --> 00:08:31,100
+O yüzden güncelleme işleminde dizi tabii ki çok daha hızlı, çok daha efektif çalışacaktır direkt indist erişimi sayesinde.
+
+28
+00:08:38,100 --> 00:08:46,000
+Düşündüğünüzde dizi üzerinde, hele bir de sıralı dizi üzerinde arama işlemlerinin çok daha efektif bir şekilde yapılabildiğini biliyoruz.
+
+29
+00:08:46,240 --> 00:08:52,299
+Ama linked liste üzerinde bunu yaparken zorlanıyoruz. Yine çünkü next next şeklinde ilerlemek zorunda kalıyoruz.
+
+30
+00:08:52,980 --> 00:08:57,279
+Demek ki arama işlemleri içinde dizi kullanmak daha avantajlıdır.
+
+31
+00:08:57,420 --> 00:09:00,340
+Linked listenin daha fazla bir avantajı mevcut değildir.
+
+32
+00:09:01,000 --> 00:09:09,180
+Keza min max bulma problemi de yine linked listede ekstra bir avantaj getirmiyor.
+
+33
+00:09:09,620 --> 00:09:11,840
+O yüzden bunu da silebiliriz.
+
+34
+00:09:11,840 --> 00:09:14,480
+Yani buradaki cevabımız 1 ve 2 olacaktı.
+
+35
+00:09:14,539 --> 00:09:20,539
+Ya da şöyle beklediğimiz format ile 1,2 şeklinde bir cevap bekliyoruz.
+
+36
+00:09:20,816 --> 00:09:48,796
+Tabii daha okumadım soruları. Sadece göz gezdirdim diyeyim. Hani 1,2 ay hocam ben şöyle yazdım. 1,2 yazdım. Onu da kabul edeceğiz. Ya da hocam ben 1,2 yazdım. Onu da kabul edeceğiz. Ama lütfen bundan sonra hani bizim de okuma kolaylığımız açısından, sistemin otomatik notlandırabilmesi açısından şöyle verdiğimiz örnek cevap formatı neyse ona uygun olacak.
+
+37
+00:09:48,816 --> 00:09:52,256
+Bu şekilde yaparsanız cevaplarınızı seviniriz diyelim.
+
+38
+00:09:52,656 --> 00:09:54,136
+Evet, ilk sorumuz bu şekilde.
+
+39
+00:09:54,876 --> 00:09:56,376
+Burada zorlandığınızı düşünmüyorum.
+
+40
+00:09:56,836 --> 00:10:00,855
+Büyük bir ihtimalle herkes rahat rahat bunu halletmiştir.
+
+41
+00:10:01,416 --> 00:10:03,776
+Şimdi gelelim ikinci sorumuza.
+
+42
+00:10:04,036 --> 00:10:07,796
+İkinci sorumuz da şunu şöyle biraz daha düzeltelim.
+
+43
+00:10:08,316 --> 00:10:09,816
+Tamam, gayet iyi.
+
+44
+00:10:10,376 --> 00:10:13,016
+Şimdi şu ikiyi şey yapalım.
+
+45
+00:10:14,636 --> 00:10:15,496
+Şöyle ayırayım da.
+
+46
+00:10:16,115 --> 00:10:32,276
+Tamam. 5, 8, 9, 12, 24, 48, 64 şeklinde bir sıralı dizi veriliyor. Ve bu diziden ikili arama ağacı oluşturmamız isteniyor. Şimdi belli bir kurula göre oluşturulan ağaç en iyi durumda en kötü durumda. İki tane durum.
+
+47
+00:10:40,628 --> 00:10:51,448
+Yani, evet, büyük ihtimalle 0 puan. Çünkü orada tartışılacak bir nokta yok. Yani diğer üçünün linked listesinin avantaj getirmediği çok açık.
+
+48
+00:10:51,988 --> 00:10:53,768
+O yüzden 1-2'yi kabul ediyorum.
+
+49
+00:10:55,208 --> 00:11:10,968
+Tabii şeye bir bakayım, diğer gruplarla da konuşup onların notlandırmasında eğer böyle bir şey kabul, hani 1-2-3'lere mesela tam puan değil de işte 1 puan verdik gibi bir şey varsa ben de o şekilde değerlendiririm merak etmeyin.
+
+50
+00:11:11,860 --> 00:11:14,860
+Şimdi, elimizde sıralı bir dizi var.
+
+51
+00:11:15,100 --> 00:11:17,440
+Şimdi, önce en kötü durumdan başlayalım isterseniz.
+
+52
+00:11:17,579 --> 00:11:24,059
+En kötü durumda, belli bir kurala göre dediğimizde, mesela bir kuralımız, öğrendiğimiz kural neydi?
+
+53
+00:11:24,579 --> 00:11:27,680
+Hep böyle, büyükler sağına, küçükler soluna.
+
+54
+00:11:27,680 --> 00:11:37,960
+İşte 5, 8, 9, şöyle devam edelim, 12, sonra 24.
+
+55
+00:11:39,860 --> 00:11:41,500
+Evet, 48.
+
+56
+00:11:41,500 --> 00:12:10,392
+48.
+
+57
+00:11:45,235 --> 00:12:08,735
+64. Hep büyük olduğu için maalesef zincir şeklinde böyle aslında bir linked liste oluşturmuş olduk. Bir ağaç ama linked liste şeklindeki bir ağaç bu. Demek ki en kötü durumda böyle bir ağaç elde edebilirim. Kaç seviyesi var bunun? Ne demişiz? Kök sıfırıncı seviye. 0, 1, 2, 3, 4, 5, 6. Demek ki şuraya 6 yazmam gerekiyor.
+
+58
+00:12:09,971 --> 00:12:16,551
+Ağacın kökünde en kötü durumda kaç varmış? 5 varmış. Demek ki o zaman ben buraya 5 yazmalıyım.
+
+59
+00:12:16,980 --> 00:12:31,980
+Ondan sonra şimdi en iyi duruma bakalım. En iyi durum, tabii burada bakarak bir karar vermeniz gerekiyor. Normalen hani derste de hatırlarsanız bahsetmiştim ama anlatmayacağımızı söylemiştim. AVL tree mesela bu şekilde çözüyor.
+
+60
+00:12:32,799 --> 00:12:44,720
+Dengelemek için, log n mertebesinde yüksekliği tutmak için bir operasyon, bir shift operasyonu düzenliyordu. Ama burada bizim bunu bilmemize de gerek yok. Şimdi mantık olarak ben böyle bir ağacım.
+
+61
+00:12:44,820 --> 00:13:03,980
+Dengeli oluşturmak istiyorsam ne yaparım? Bana sıralı verildiğine göre bir kere dengeli olması için ortadaki elemanın, yani şöyle işaretliyim, 3 bu tarafında şöyle ve 3 bu tarafında eleman olacak şekilde bir dizilim yakalarsam ağacım çok güzel dengelenebilir.
+
+62
+00:13:04,380 --> 00:13:08,700
+Zaten bunlar sıralı. Demek ki ben en ortadaki elemanı kökeye almalıyım.
+
+63
+00:13:10,323 --> 00:13:16,644
+Tabii böyle bir şey, hani biz bir varsayım ile en iyi durumu, belli bir kuralı bulduk. Ortadan başla dedik.
+
+64
+00:13:17,223 --> 00:13:19,983
+Şimdi o zaman ben bu ağacın soluna gideyim.
+
+65
+00:13:20,683 --> 00:13:27,043
+Sola gittiğinizde de sol alt ağacın, yani daha doğrusu alt dizinin, şöyle 5, 8, 9'un yine ortasına alın derim.
+
+66
+00:13:27,604 --> 00:13:31,663
+Tamam mı? Bakın kural size. Hep orta al. 8. Tamam.
+
+67
+00:13:33,003 --> 00:13:36,263
+Sonra bu 8'in de artık solun da 5, sağın da 9 olacak.
+
+68
+00:13:37,844 --> 00:13:39,464
+5 ve 9.
+
+69
+00:13:40,544 --> 00:13:41,844
+Şunları da yazalım.
+
+70
+00:13:42,403 --> 00:13:44,284
+Şimdi sağ ağaca gidelim.
+
+71
+00:13:44,424 --> 00:13:47,104
+Yine tam ortayı al ve ekle.
+
+72
+00:13:47,844 --> 00:13:48,724
+48 buraya.
+
+73
+00:13:52,004 --> 00:13:53,564
+24 soluna.
+
+74
+00:13:54,564 --> 00:13:54,984
+Şuradan.
+
+75
+00:13:55,984 --> 00:13:57,284
+64 de sağına.
+
+76
+00:13:59,624 --> 00:14:00,264
+64.
+
+77
+00:14:01,620 --> 00:14:07,579
+Şimdi ne oldu? Bakın gayet güzel. Hatta böyle perfect bir binary tree oluşturmuş oldum.
+
+78
+00:14:08,019 --> 00:14:34,740
+Şimdi bakalım en iyi durum bu. Bundan daha iyisi olabilir mi? Olamaz. Neden olamaz? Çünkü zaten 1, 2, 3, 4, 5, 6, 7 eleman var. 7 eleman en fazla 3 seviyede bulunabilir. Bundan daha iyisini zaten yapamam. Demek ki en iyi durum bu. Bakın gayet de güzel dengeli bir ağaç oluşturmuş oldum. Kaç seviye var? 0, 1, 2 seviye var. Ondan sonra en iyi durumda ağacın kökünde kaç var? 12.
+
+79
+00:14:36,307 --> 00:14:52,067
+Yani cevap 2,6,12,5 olacaktır.
+
+80
+00:14:53,707 --> 00:14:56,127
+2'yi de şöyle daha güzel yapalım. Tamam oldu.
+
+81
+00:14:57,127 --> 00:15:02,028
+Okey. Bu soru da böyle. Herhalde büyük bir çoğunluğunuz bunu da...
+
+82
+00:15:02,100 --> 00:15:05,440
+sıkıntısız olarak halletmiştir diye düşünüyorum.
+
+83
+00:15:05,880 --> 00:15:06,480
+Soru var mı?
+
+84
+00:15:11,283 --> 00:15:11,803
+Yok.
+
+85
+00:15:12,163 --> 00:15:15,824
+Kökün sıfırın içi seviye olarak kabul edilmesi biraz kötü olmuş hocam.
+
+86
+00:15:16,624 --> 00:15:17,903
+Ama yazlık özellikle.
+
+87
+00:15:18,604 --> 00:15:20,724
+İşte biz okumamış olabiliriz ama.
+
+88
+00:15:23,724 --> 00:15:27,444
+Yani şimdi biliyorsun ilk emir ne? Oku. Değil mi?
+
+89
+00:15:27,444 --> 00:15:30,364
+O yüzden okuyun lütfen.
+
+90
+00:15:31,224 --> 00:15:31,944
+Temizliyorum.
+
+91
+00:15:35,984 --> 00:15:37,024
+Üç.
+
+92
+00:15:39,091 --> 00:15:40,651
+Hemen sorumuzu alalım.
+
+93
+00:15:49,748 --> 00:15:50,148
+Böyle.
+
+94
+00:15:53,148 --> 00:15:55,207
+Yok, bir dakika, şöyle daha iyi oldu, tamam.
+
+95
+00:15:55,788 --> 00:16:03,008
+Evet, aşağıdaki her işlem için kullanılabilecek en uygun veri yapısını sırayla yazınız demişiz.
+
+96
+00:16:04,128 --> 00:16:09,927
+Evet, bir derleyicinin fonksiyonlara gidip dönme işlemlerini düzenlemek için.
+
+97
+00:16:10,748 --> 00:16:12,927
+Derste birebir aynı örnekten bahsettik.
+
+98
+00:16:13,028 --> 00:16:15,548
+Function call stack dedik hatırlarsanız, değil mi?
+
+99
+00:16:15,548 --> 00:16:16,687
+Yani yığın.
+
+100
+00:16:17,524 --> 00:16:26,024
+A şıkkı için yazmamız gereken şey yığın. Ha, stack de olur tabii ki. Şöyle yazayım da. Tamam. Merak etmeyin, ikisini de kabul ediyoruz.
+
+101
+00:16:27,024 --> 00:16:31,303
+B şıkkı. Bir klavyede basılan tuşları ekrana yazarken.
+
+102
+00:16:31,923 --> 00:16:54,683
+Bundan aslında bahsetmedik ama şu çok mantıklı değil mi? İlk yazdığınız karakterin önce çıkması lazım. Son bastığınız tuşun da en sonra yazılması lazım. First in, first out bir yapı kurulması lazım. O zaman benim bütün o keypresslerimi, keypress eventlerimi hangi tuşa basıldığını bir kuyrukta tutmam gerekiyor. Değil mi? First in, first out. Queue ya da ikisini de kabul.
+
+103
+00:16:58,964 --> 00:17:12,704
+Dengeli olmayan bir ikili ağacı saklamak için. Belki burada hatırlayanlarınız vardır ama şimdi şöyle bir şey çizmiştik. Belki şey yaparsınız. Şöyle bir ağaç çizmiştim.
+
+104
+00:17:13,364 --> 00:17:29,364
+P, R, V, Z vardı şöyle hatırlarsanız dengesiz bir ağaçtı. Şimdi ben bunu linked listeyle tutarsam sadece 4 node, aralarında da 3 tane link, hadi şuradan da null pointerı da koy, yani 4 tane node ile şu işi bu ağacı gösterebiliyorum.
+
+105
+00:17:29,364 --> 00:17:41,144
+Fakat bunun aynısını eğer diziyle tutsaydım, şuradaki boş gözleri de doldurmam gerekecekti, hayali olarak bile olsa.
+
+106
+00:17:41,364 --> 00:17:50,563
+Çünkü onlar boş olacak. Şu alttakilerin artık şeylerini çizmeyeyim. Pardon, bu değil. Şu. Değil mi? Tamam.
+
+107
+00:17:51,063 --> 00:17:59,183
+Yani toplamda 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 tane göz açmam lazım.
+
+108
+00:18:00,435 --> 00:18:14,375
+Ve içinde sadece işte bir göz dolu, bir göz dolu, bir tane göz dolu, son göz dolu gibi böyle bir sürü şuralarda alan kaybı, yer israfı yapacaktım.
+
+109
+00:18:14,695 --> 00:18:16,576
+Ama linked listeyle ben bunu tutarsam.
+
+110
+00:18:17,203 --> 00:18:21,364
+Gayet rahat bir şekilde işimi halledebilir.
+
+111
+00:18:21,523 --> 00:18:26,463
+Efektif bir şekilde, memory efficient ya da space efficient olacak şekilde bu işi halledebilirim.
+
+112
+00:18:26,563 --> 00:18:38,223
+O zaman kuyruk queue C şıkkı içinde linkli liste ya da linked list ya da bağlantılı liste hepsini kabul ederim.
+
+113
+00:18:39,412 --> 00:18:41,572
+Bunu bu şekilde yapmamız gerekir.
+
+114
+00:18:41,652 --> 00:18:42,851
+Şimdi geldik değişiklığına.
+
+115
+00:18:43,351 --> 00:18:48,331
+Satranç oyununda bir sonraki hamleyi belirlemek için acaba nasıl bir veri yapısı kullanılabilir?
+
+116
+00:18:49,311 --> 00:18:53,172
+Şimdi burada biraz tabii düşünmeniz gerekebilir.
+
+117
+00:18:53,371 --> 00:19:00,552
+Bir satranç oyununda bir sonraki hamlenin ne olacağı aslında önceki hamlelere bağlı olarak da planlanmak zorunda biliyorsunuz.
+
+118
+00:19:00,552 --> 00:19:03,291
+Bunun için nereye kadar gidebilirim?
+
+119
+00:19:03,991 --> 00:19:06,412
+Yani ilk harekete kadar geri dönebilirim.
+
+120
+00:19:07,412 --> 00:19:16,951
+Peki ben ilk harekete kadar olanları hep tutabiliyor olmam lazım. Ondan sonraki bütün olasılıkları da yol olarak çizebiliyor olmam lazım.
+
+121
+00:19:17,471 --> 00:19:23,891
+Aslında bunları söylerken, düşünürken sesli olarak hemen şunun oluşmaya başladığını görebilirim.
+
+122
+00:19:24,351 --> 00:19:25,912
+İlk hareketim kökte.
+
+123
+00:19:26,451 --> 00:19:39,072
+İlk hareketten sonra olası kaç tane hareketim var? İşte satrançta 8 mi 10 mu? Hani açılıştan sonra işte neyse bütün kombinasyonlar. Şöyle 3 tane olsun tamam mı?
+
+124
+00:19:39,796 --> 00:19:59,576
+Bu hareketleri yapabilirim. Bu hareketi yaptıktan sonra şu iki hareketi yapabilirim. Ya da bunlardan işte beş tane hareket farklı farklı yapabilirim. Bla bla bla böyle aşağı doğru gidiyor. Ne bu? Ağaç. Yani bir sonraki hamleyi belirlemek için her zaman için bir önceden yaptığım hamleleri de bir şekilde takip edebilmem açısından.
+
+125
+00:20:00,000 --> 00:20:09,240
+Bir ağaç veri yapısı kullanmam gerekiyor. Onu da şuraya şöyle ekleyelim ya da tree derseniz yeterli olacaktır.
+
+126
+00:20:09,920 --> 00:20:20,180
+Evet, bu sorunun da cevabı stack, queue, linked list ve tree şeklinde ya da yığın, kuyruk, linked list ve ağaç şeklinde olacaktır.
+
+127
+00:20:20,420 --> 00:20:23,279
+Burada herhangi bir not yazmamışız. O yüzden sıkıntı yok.
+
+128
+00:20:24,756 --> 00:20:28,716
+Burada şimdi 4 puan ya, her biri 1 puan gibi düşünebilirsiniz.
+
+129
+00:20:32,356 --> 00:20:34,196
+Sonraki soru.
+
+130
+00:20:36,036 --> 00:20:36,756
+Şöyle.
+
+131
+00:20:38,115 --> 00:20:39,696
+Problemli soruya geldik.
+
+132
+00:20:40,596 --> 00:20:42,756
+Yani bir ufak yazım hatası yapmışız.
+
+133
+00:20:43,176 --> 00:20:43,716
+Olay çıktı.
+
+134
+00:20:45,696 --> 00:20:47,615
+Bence boş yere olay çıktı ama neyse.
+
+135
+00:20:48,696 --> 00:20:50,115
+Şöyle siyah yapalım.
+
+136
+00:20:50,416 --> 00:20:50,696
+Tamam.
+
+137
+00:20:51,796 --> 00:20:52,176
+Pardon.
+
+138
+00:20:52,751 --> 00:21:04,991
+Şimdi. Diyor ki, aşağıdaki program parçası çalıştırıldığında kuyrukta 1, 2, 3, 4 sayıları bulunmaktadır. Hemen şuraya bir kuyruk çizelim.
+
+139
+00:21:07,731 --> 00:21:14,971
+1, 2, 3, 4. Kuyruğumuz bu şekilde oluşmuş.
+
+140
+00:21:16,500 --> 00:21:21,420
+Bir kuyruğun en başında, şuraya front diyelim, şuraya da rear diyelim.
+
+141
+00:21:22,460 --> 00:21:23,340
+Tamam dedik.
+
+142
+00:21:24,159 --> 00:21:27,139
+Dörtte en sonundadır. Yani ilk işlem görecek olan birmiş.
+
+143
+00:21:27,279 --> 00:21:29,800
+Stack de boş. Şuraya da demek ki bir stack çizeceğiz.
+
+144
+00:21:30,519 --> 00:21:32,119
+Boş bir stack çizelim, çizdik.
+
+145
+00:21:33,039 --> 00:21:38,200
+Çalışma bittiğinde kuyrukta bulunan elemanları baştan itibaren sırayla yazalım.
+
+146
+00:21:38,300 --> 00:21:39,259
+Bakalım ne yapıyormuş.
+
+147
+00:21:39,259 --> 00:21:43,579
+Şimdi tabi burada ben buraya kopyalayıp yapıştırınca indentation gitti.
+
+148
+00:21:43,968 --> 00:22:03,768
+İdare edin. While not is queue empty queue. Yani queue boş olmadığı sürece şuradaki döngü çalışacak. Ne yapıyormuş bu döngü? Value eşittir. İşte hata şu. Yani nQQ deyip sadece Q'yu vermişiz ve buradan bakın kuyruktan bir fonksiyon çağırıp dönen değeri bir yere atamışız.
+
+149
+00:22:04,112 --> 00:22:16,452
+Burada aşağıda da gerçek nQ var. nQ gerçekten nasıl yapılırdı? Verilen bir değeri kuyruğa eklerdi değil mi? Ve genelde void bir şey döndürmezdi. Şunun dQ olması lazım. Tamam mı? Bunu yanlış yapmışız.
+
+150
+00:22:16,992 --> 00:22:30,731
+Şey hatası, tipo hatadan yapmışız. Burada açıkçası ben olsam, ben sınava giriyor olsam baktığımda bunun bir dQ işlemi olduğunu çok rahat anlamalıyım.
+
+151
+00:22:31,347 --> 00:22:58,288
+Ama yine de bunu değerlendireceğim. Orayı en son konuşuruz. Şimdi burada dequeue ediyoruz. Dequeue ettik. Neyi dequeue ettik? Biri dequeue ettik. Şöyle karalayayım. Tamam mı? İdare edin. Sonra bunu, bakın değeri siteye push ediyorum. Buraya push ettim. Sonra dequeue ediyorum, push ediyorum. Dequeue ediyorum, push ediyorum. Dequeue ediyorum, push ediyorum.
+
+152
+00:22:59,092 --> 00:23:23,432
+Sonra, bu bitti artık, bu while'dan çıktım. Şimdi ikinci while, while not is stack empty. Staki boş olmadığı sürece şunları yapacağız. Ne yapacakmışız? Pop ediyop, kuyruğa ekliyorum. Şimdi şuraya kuyruğu tekrar çizeyim. Kuyruğa ekledim. Dört. Pop ettim. Şunu sil. Pop et, kuyruğa ekle. Üç. Pop et, kuyruğa ekle. İki.
+
+153
+00:23:25,172 --> 00:23:27,451
+Poppet kuyruğu ekle, bir
+
+154
+00:23:28,756 --> 00:23:37,596
+Stack empty'den true döndüğü için buradan da çıktım. Devam ediyorum. Kuyruk nasıl? 4, 3, 2, 1. Yani cevap normalde 4, 3, 2, 1 olması gerekiyordu.
+
+155
+00:23:38,096 --> 00:23:52,215
+Şimdi burada açıkçası bilmiyorum. Ben çok hoşuma gitmedi gelen maillerde okuduklarım. Bunun nasıl enkü olduğunu, bunun da aşağıda enkü olduğunu, bu yüzden kafanızın karıştığını söylemişsiniz.
+
+156
+00:23:52,215 --> 00:23:56,215
+Okey, bu soruda herkese 4 puan vereceğim.
+
+157
+00:23:56,756 --> 00:24:01,135
+Tamam. Okey. Benden.
+
+158
+00:24:03,556 --> 00:24:10,316
+Fakat sorunun aslında ne kadar basit olduğunu gördünüz. Burada hiçbir karışıklık yok.
+
+159
+00:24:10,932 --> 00:24:16,451
+Şurada sadece nQ yazmışız, dQ yazılması gerekiyordu. Tamam, evet, haklısınız.
+
+160
+00:24:17,071 --> 00:24:27,211
+Fakat şu izi gördüğünüzde, şu imzayı gördüğünüzde bunun aslında bir dQ işlemi olduğunu anlamalısınız bence.
+
+161
+00:24:27,211 --> 00:24:33,731
+Eğer anlamadıysanız ben zaten size Q'yu anlatamamışım ya da temel fonksiyonlarını öğretememişim demektir.
+
+162
+00:24:33,892 --> 00:24:37,211
+Şuradaki aldığı Q parametresi ve döndürdüğü.
+
+163
+00:24:37,907 --> 00:24:47,927
+Değer yüzünden bunu söylüyorum. Aşağıda da aldığı değer parametresini aldığı kuyruğa ekleyen bir ikinci fonksiyonu zaten görüyoruz.
+
+164
+00:24:48,427 --> 00:24:57,627
+Yani dq, nq, push ve pop. Dört tane temel işlem. Yapmaya çalışacağımız şey de q'yu tersine çevirmek aslında. Başka hiçbir şey değil.
+
+165
+00:24:59,367 --> 00:25:01,048
+Okey. Var mı soru?
+
+166
+00:25:05,940 --> 00:25:06,779
+Yok galiba.
+
+167
+00:25:07,980 --> 00:25:10,299
+Tamam. Şimdi geldik diğer soruya.
+
+168
+00:25:15,316 --> 00:25:16,456
+Hemen yapıştıralım.
+
+169
+00:25:20,147 --> 00:25:28,087
+Bir ikili arama ağacında 5 sayısı aranırken, hemen 5'imizi şöyle işaretleyelim.
+
+170
+00:25:28,607 --> 00:25:35,107
+5 sayısı aranırken, ağaçta bulunan elemanlara hangi sıra ile bakılamaz?
+
+171
+00:25:35,968 --> 00:25:38,167
+Haydi, bu nasıl soru? Hocam ne yaptın?
+
+172
+00:25:38,768 --> 00:25:43,587
+Çok güzel bir soru bence. Herhalde çoğunuz doğru yapmıştır diye düşünüyorum.
+
+173
+00:25:44,115 --> 00:25:49,376
+Ne demek bakılamaz? Yani bunların hangisi ikili arama ağacı değildir demeye çalışıyoruz aslında soruda.
+
+174
+00:25:49,996 --> 00:25:56,596
+Bakalım şimdi şöyle olsa 10, 10'un 9 daha küçük olduğu için solunda olur.
+
+175
+00:25:56,596 --> 00:26:05,576
+8 daha küçük, 7 daha küçük, 6 daha küçük ve 5 daha küçük olduğu için böyle bir yapı kurgulanması beklenir.
+
+176
+00:26:06,064 --> 00:26:25,784
+10, 9, 8, 5'i arıyorum ya. 5, 10'dan küçüktür, soluna git. 9, 5, 9'dan küçüktür, soluna git. 5, 8'den küçüktür, soluna git. 5, 7'den küçüktür, soluna git. 5, 6'dan küçüktür, soluna git. 5'i buldum. Demek ki ben buna bakabilirim. Şuraya şöyle tik koyayım.
+
+177
+00:26:26,324 --> 00:26:29,724
+İkincisi, 1, 10, 2, 9, 3, 5.
+
+178
+00:26:30,064 --> 00:26:34,624
+1 kökte, 10, 10'dan büyük olduğu için sağında duracak.
+
+179
+00:26:34,744 --> 00:26:35,464
+Şöyle çizelim.
+
+180
+00:26:35,644 --> 00:26:38,664
+2, 10'dan küçük olduğu için sağında duracak.
+
+181
+00:26:38,904 --> 00:26:41,484
+9, 2'den büyük olduğu için sağında duracak.
+
+182
+00:26:42,144 --> 00:26:45,164
+3, 9'dan küçük olduğu için solunda durabilir.
+
+183
+00:26:45,424 --> 00:26:48,184
+Ve 5 ve 3'den büyük olduğu için sağında durabilir.
+
+184
+00:26:48,915 --> 00:27:07,895
+Şey oldu mu ikili arama ağacı? Evet oldu. Evet o yani çok kötü oldu ama yine bir linked liste yapısına ulaştık ama evet böyle bir şey olabilir. Arayalım işte 5 birden büyük sağına git. 10 5 daha küçük olduğu için soluna git. 2 5 daha büyük sağına git.
+
+185
+00:27:08,307 --> 00:27:14,368
+9, 5 daha küçük soluna git, 3, 5 daha büyük sağına git, işte buldum.
+
+186
+00:27:14,748 --> 00:27:18,608
+Demek ki ben bu sırayla da bakabilirim. Bu da olasılık dahilinde.
+
+187
+00:27:20,188 --> 00:27:27,067
+Şunları temizleyeyim. Pardon, undo. Böyle yapınca her şey gitti.
+
+188
+00:27:29,288 --> 00:27:30,668
+Şuraları nasıl seyicez?
+
+189
+00:27:34,195 --> 00:27:36,035
+Biraz temizlik yapmaya çalıştım da.
+
+190
+00:27:37,435 --> 00:27:38,915
+Onu yapmamalıyım, anladım.
+
+191
+00:27:39,475 --> 00:27:40,815
+Şöyle kalsın orası, idare edin.
+
+192
+00:27:41,775 --> 00:27:43,415
+Sonra üçüncü şık.
+
+193
+00:27:44,455 --> 00:27:49,435
+İki, yedi, üç.
+
+194
+00:27:51,835 --> 00:27:53,255
+Daha küçük olduğu için solunda.
+
+195
+00:27:53,915 --> 00:27:54,475
+Sekiz.
+
+196
+00:27:55,195 --> 00:27:57,095
+Sekiz nerede durur? Burada durması lazım.
+
+197
+00:27:57,652 --> 00:28:16,152
+4 nerede duracak? 2'den büyük, 7'den küçük, 3'den büyük, 4 burada duracak. 5 nerede duracak? Büyük, küçük, büyük, büyük. Böyle duracak. Değil mi? Ancak bu şekilde bir ikili arama ağacı yapabilirim.
+
+198
+00:28:25,556 --> 00:28:28,735
+3 daha küçük, 5 daha büyük. O zaman sağına gittim.
+
+199
+00:28:29,735 --> 00:28:32,275
+Soruda 8 var. Ben burada 4 görüyorum.
+
+200
+00:28:32,775 --> 00:28:35,056
+Demek ki ben bu sırayla bakamam.
+
+201
+00:28:35,915 --> 00:28:36,455
+Cevap C.
+
+202
+00:28:38,275 --> 00:28:52,096
+D şıkkını merak edenler için de 1, sağında 2, sağında 10, solunda 4, sağında 8 çünkü 10'dan daha küçük ve solunda 5.
+
+203
+00:28:52,627 --> 00:28:54,067
+Bu şekilde bir ağaç olur.
+
+204
+00:28:55,187 --> 00:28:57,127
+5 daha büyük sağına git.
+
+205
+00:28:57,327 --> 00:28:59,208
+2, 5 daha büyük sağına git.
+
+206
+00:28:59,367 --> 00:29:00,947
+10, 5 daha küçük soluna git.
+
+207
+00:29:01,667 --> 00:29:03,208
+5 daha büyük sağına git.
+
+208
+00:29:03,847 --> 00:29:05,268
+5 daha küçük soluna git.
+
+209
+00:29:05,807 --> 00:29:06,087
+Buldum.
+
+210
+00:29:06,647 --> 00:29:07,627
+Demek ki bu da olabiliyor.
+
+211
+00:29:09,728 --> 00:29:10,827
+Pardon, E şıkkı değil.
+
+212
+00:29:10,947 --> 00:29:11,567
+Yanlış yaptık.
+
+213
+00:29:12,048 --> 00:29:13,728
+D şıkkı da olabiliyor.
+
+214
+00:29:13,728 --> 00:29:16,387
+Bu da hepsi doğru değil.
+
+215
+00:29:16,847 --> 00:29:17,667
+Hepsi doğru değil.
+
+216
+00:29:17,768 --> 00:29:19,268
+Ama bakamadığımız C şıkkıdır.
+
+217
+00:29:20,627 --> 00:29:21,627
+Tamam.
+
+218
+00:29:22,627 --> 00:29:24,627
+Hocam C ile ilgili bir şey sorabilir miyim?
+
+219
+00:29:24,627 --> 00:29:25,259
+Sor.
+
+220
+00:29:26,067 --> 00:29:35,968
+Şimdi ben diyelim ki bu ikili arama ağacında ikili yediği ben insert ettim şeye, benim dizime ya da tuttuğum elemanlara daha doğrusu ağacıma.
+
+221
+00:29:36,687 --> 00:29:44,667
+Sonrasında 10 elemanı geldi. Onu da işte 7'nin sağına yerleştireceğim. Sonrasında sırayla 3, 4, 5, 8 elemanları geldi.
+
+222
+00:29:44,667 --> 00:29:53,347
+Yani bu şekilde belli elemanlar oluşturarak o istediğimiz ağaç yapısını oluşturabiliriz ve bu şekilde de arama yapılabilir.
+
+223
+00:29:54,067 --> 00:29:58,687
+İyi de sana 6 tane rakam vermişim burada, başka rakam kullanabilirsin diye bir durum yok ki.
+
+224
+00:29:59,208 --> 00:30:01,947
+Bunlarla sınırlı denmemiş hocam, hep farklı elemanlar da olabilir.
+
+225
+00:30:02,228 --> 00:30:07,107
+Ooo o zaman evrendeki bütün sayılarla istediğim her şeyi yapayım. Böyle şey olur mu?
+
+226
+00:30:07,947 --> 00:30:17,048
+Yok hayır ben şöyle anladım, daha büyük elemana mesela 2'ye baktığı zaman daha büyük elemana bakıyor mu yoksa daha küçük bir elemana mı bakıyor?
+
+227
+00:30:17,048 --> 00:30:18,028
+Ben o şekilde anladım.
+
+228
+00:30:18,387 --> 00:30:21,208
+2'ye 2 görüyorsun tamam mı? Ağaçta 2 görüyorsun.
+
+229
+00:30:21,652 --> 00:30:23,991
+Sen 5'i arıyorsun. 2 görünce ne yaparsın?
+
+230
+00:30:24,592 --> 00:30:25,811
+Daha büyük yerine geçerim.
+
+231
+00:30:26,172 --> 00:30:27,612
+Tamam, sağına geçersin değil mi?
+
+232
+00:30:27,632 --> 00:30:27,872
+Evet, sağına.
+
+233
+00:30:27,872 --> 00:30:34,592
+Sağına geçtim. Şimdi 7 görüyorsun. 7 görünce ne yaparsın? Soluna geçersin.
+
+234
+00:30:34,612 --> 00:30:35,731
+Daha küçüksün soluna, evet.
+
+235
+00:30:36,652 --> 00:30:39,392
+Tamam. Şimdi 3 görüyorsun. Ne yaparsın?
+
+236
+00:30:40,192 --> 00:30:41,832
+4'e, yani daha büyük bir yerine.
+
+237
+00:30:42,092 --> 00:30:44,912
+Ama 8'de olmaz mıydı?
+
+238
+00:30:45,051 --> 00:30:47,531
+8 görüyorsun. 8 burada durabilir mi?
+
+239
+00:30:49,299 --> 00:30:51,419
+Burada 7 varken 8 buraya gelebilir mi?
+
+240
+00:30:52,059 --> 00:30:53,479
+Hocam başka elemanlar varsa.
+
+241
+00:30:53,679 --> 00:30:55,059
+Ben bunlarla sınırlı değilim.
+
+242
+00:30:55,059 --> 00:30:55,939
+Başka eleman yok ki.
+
+243
+00:30:56,679 --> 00:30:58,019
+Hocam ama böyle bir şey der mi?
+
+244
+00:30:58,219 --> 00:31:00,899
+Ben karşılaştırırken gördüğün elemanları söylüyorum sana.
+
+245
+00:31:00,999 --> 00:31:03,279
+Sen karşılaştırırken burada 8'i göremiyorsun.
+
+246
+00:31:03,763 --> 00:31:14,403
+Anladım. Çünkü bir ikili arama ağacında bütün elemanlardan geçmek zorunda değiliz ağır. Yani burada hangi sırayla bakılamaz dediğinizde hani bunlarla ama öyle düşünmemizi istemişsiniz demek ki. Anladım. Teşekkür ederim.
+
+247
+00:31:14,403 --> 00:31:22,384
+Yani çünkü bu bir ağaç değil. Yani bu pardon ikili arama ağacı ise eğer böyle olmak zorunda. Şöyle çizeyim beşi hariç bırakarak.
+
+248
+00:31:23,923 --> 00:31:26,463
+O yüzden burada 3'den sonra 8'i göremezsin.
+
+249
+00:31:26,663 --> 00:31:27,564
+Çünkü burada 7 var.
+
+250
+00:31:27,963 --> 00:31:30,084
+8, 7'nin sağında durmak zorundadır.
+
+251
+00:31:30,604 --> 00:31:32,683
+Eğer durmuyorsa bu bir ikili arama ağacı değildir.
+
+252
+00:31:34,284 --> 00:31:34,884
+Değil mi?
+
+253
+00:31:37,140 --> 00:31:42,620
+Hocam, bunlarla sınırlıysa zaten ben dediğinizde katılıyorum ama bunlarla sınırlı olduğunu düşünememiştim.
+
+254
+00:31:42,840 --> 00:31:52,440
+Çünkü bir arama ağacında ben istediğim yoldan gittiğim zaman tüm elemanlardan geçmek zorunda değilim.
+
+255
+00:31:52,640 --> 00:31:54,140
+Yani bir ikili arama ağacında ben biliyorum.
+
+256
+00:31:54,160 --> 00:31:58,300
+Peki, sen bana şunu söyle. Bir ikili arama ağacında şöyle iki var, yedi var tamam mı?
+
+257
+00:31:58,380 --> 00:32:03,519
+Sekizi nereye koyabilirsin? Şuralarda bir yerlerde yani yedinin solunda sekiz durabilir mi?
+
+258
+00:32:05,364 --> 00:32:07,544
+Hayır duramaz, evet. Şimdi oldu.
+
+259
+00:32:07,844 --> 00:32:07,864
+Anladın mı?
+
+260
+00:32:07,864 --> 00:32:08,744
+Şükür ederim. Doğal.
+
+261
+00:32:08,864 --> 00:32:10,984
+Tamam, okey. Mantık bu yani.
+
+262
+00:32:12,324 --> 00:32:16,484
+Okey, peki. Sen nasıl oldun bu arada, iyi misin?
+
+263
+00:32:18,584 --> 00:32:23,264
+İyiyim hocam, çok teşekkür ederim. Yani yeni geçti. Şu an çok iyiyim.
+
+264
+00:32:23,663 --> 00:32:26,764
+Aman geçmiş olsun. Ağır mı geçti, hafif mi geçti, iyi mi geçti?
+
+265
+00:32:27,539 --> 00:32:32,679
+Yani baya uzun ve ağır geçti açıkçası. Ama atlattık şükür.
+
+266
+00:32:33,099 --> 00:32:36,539
+Neyse geçmiş olsun. Kendine iyi bak. Herkes kendine iyi baksın.
+
+267
+00:32:37,619 --> 00:32:48,059
+Şey oldu şimdi. Herkes vatan satına yayıldı yine. 17 gün şehit var diye. Kısıtlama var diye. İnşallah daha kötüye doğru gitmeyiz.
+
+268
+00:32:49,519 --> 00:32:53,220
+Tamam. Bir diğer sorumuz geliyor.
+
+269
+00:32:56,627 --> 00:32:58,867
+Gelemiyor. Geliyor. Tamam.
+
+270
+00:33:00,047 --> 00:33:03,227
+En küçük elemanın kökte yer aldığı en elemanlı bir heap ağacında.
+
+271
+00:33:03,587 --> 00:33:05,707
+Min heap varmış bir tane.
+
+272
+00:33:06,347 --> 00:33:08,567
+En küçük eleman kökte ise bu min heaptır.
+
+273
+00:33:09,147 --> 00:33:12,787
+En küçük 3 elemanı silmenin karmaşıklığı ne olur? En kötü durumda.
+
+274
+00:33:13,867 --> 00:33:14,287
+Ne olur?
+
+275
+00:33:22,644 --> 00:33:36,704
+Evet. Birisi söylesin ya. Ben mi söyleyeyim? Peki. Hadi ben söyleyeyim. Tamam. Çizerek yapayım yine. Şimdi şurada en küçük eleman var. Dur güzel yapamadım. Şuraya min yazacağım. Tamam mı?
+
+276
+00:33:40,692 --> 00:34:05,392
+Şöyle bir heap ağacımız olsun. Şöyle bu kadar olsun yeter mi? Yeter çok abartmayalım. Extract min yapmak ne demektir? Ben bunu bilerek ve isteyerek hatırlayalım. Şuraya koyuyordum. Ondan sonra bunun bağını, bunu da tabi buraya koyuyordum. Şöyle yapayım, iki taraflı ok yapayım da hani anlayın siz. Sonra da bunun bağını koparıyordum.
+
+277
+00:34:05,811 --> 00:34:33,492
+Bu bozuldu. Artık min heap değil. Heapify yapıyordum. Bu bir şekilde aşağılara bir yere doğru kayıp gidiyordu. Mesela şuraya, şuraya, şuraya diyelim. Nereye? Büyük ihtimalle ya buraya gelecek ya bir şeyler olacak. Bir yerlere gidecek. Bunun karmaşıklığı neydi? Yani bir extract min işleminde gördüğünüz gibi bir O1, bir tane de log n var. Demek ki ben en küçük elemanı log n karmaşıklıkla heap ağacından çekebiliyorum. Çıkartabiliyorum.
+
+278
+00:34:34,068 --> 00:34:43,688
+İkinci kere yaptığımda 2 logen. Yani logen artı logen. Üçüncü kere yaptığımda 3 kere logen.
+
+279
+00:34:44,668 --> 00:34:48,387
+Big O notasyonuyla gösterin demişiz. Big O notasyonunda bunlar yok.
+
+280
+00:34:49,307 --> 00:34:56,268
+Hemen bunu böyle logen mertebesine başına da bir tane O koyalım. Böyle alırız ve gördüğünüz gibi
+
+281
+00:34:56,755 --> 00:34:58,715
+O log n mertebesinde olur.
+
+282
+00:34:59,095 --> 00:35:05,735
+3 tane log n'lik işlem yaparım ama mertebesi bir konutasyonuyla log n'dir karmaşıklık olarak.
+
+283
+00:35:06,155 --> 00:35:06,555
+Cevap bu.
+
+284
+00:35:08,255 --> 00:35:09,215
+Kolay değil mi?
+
+285
+00:35:16,628 --> 00:35:17,928
+Bir diğer sorumuz.
+
+286
+00:35:34,003 --> 00:36:00,423
+Şimdi bunu konuştuk biliyorsunuz. Dersde de aslında yaptık. Verilen bir ifadede parantezlerin dengeli olup olmadığını kontrol etmek için stack veri yapısı çok uygundur. Stack veri yapısıyla bunu rahatlıkla, hızlı bir şekilde algoritmasını tasarlayabiliriz demiştik. Ne yapıyoruz? İşte mesela burada ne demiş? Rastgele bir sıralamayla 4 açılış, 5 kapanış parantezi verilmiş. Şöyle bir şey yapalım. Rastgele sırayla işte 1, 2,
+
+287
+00:36:01,588 --> 00:36:05,028
+Hepsini aynı yapayım. Farklı da olsa hiç sıkıntı değil de.
+
+288
+00:36:07,807 --> 00:36:09,068
+3'e 1 oldu.
+
+289
+00:36:11,568 --> 00:36:17,608
+Şimdi ne oldu? 1, 2, 3, 4, 4'e 5 oldu.
+
+290
+00:36:18,048 --> 00:36:19,068
+Galiba oldu değil mi?
+
+291
+00:36:19,668 --> 00:36:23,508
+1 açılış, 2 açılış, 3 açılış, 4 açılış.
+
+292
+00:36:23,887 --> 00:36:30,127
+1, 2, 3, 4, 5 tane de kapanma parantezidir. Rastgele kafanıza göre hiç önemli değil.
+
+293
+00:36:30,507 --> 00:36:37,488
+Şimdi ne yapacağız? Hemen sitemizi buraya çizeceğiz. Ne yapıyorduk? Açılma parantezi gördüğünde siteye push ediyorduk.
+
+294
+00:36:37,488 --> 00:36:43,488
+Kapanma parantezi gördüğümüzde de en üsttekini pop edip karşılaştırıyorduk. Bunlar okey deyip...
+
+295
+00:36:44,052 --> 00:37:04,332
+Bu tarafı sildik. Sonra bir tane açılma gördüm, push at. Şurası dolu olduğu için şuraya yazdım. Bir tane daha gördüm, push at. Kapanma gördüm, bunu pop at karşılaştır, okey. Kapanma gördüm, pop at karşılaştır, okey. Şu ve şu gitti. Şimdi kapanma gördüm.
+
+296
+00:37:04,692 --> 00:37:30,152
+Ama stackte pop edebildiğim eleman yok. Yani işleme devam edemiyorum. Çünkü bir eşleşme durumu yok. Çünkü buradan null ya da false geldi diyelim. O yüzden burada parantezler dengeli değildir diyebiliyorum. Bu rastgele geldi. Peki, rastgele geldiğine göre bize neyi soruyor? Herhangi bir anda stackte maksimum parantez kaç tane durabilir? Kaç tane açılma parantezi stackte yer alabilir?
+
+297
+00:37:31,123 --> 00:37:33,983
+Bunun olabilecek n uç noktası nedir?
+
+298
+00:37:34,543 --> 00:37:37,623
+4 tane açılış parantezi arka arkaya bir yerlerde gelir.
+
+299
+00:37:37,723 --> 00:37:39,783
+Hiç aralarda kapanma parantezi gelmez.
+
+300
+00:37:40,443 --> 00:37:46,323
+Ondan sonra bir yerlerde 3, 4, 5 tane hani aralarda başka şeyler de olabilir de.
+
+301
+00:37:46,803 --> 00:37:48,923
+Bu şekilde kapanma parantezleri de gelir.
+
+302
+00:37:49,063 --> 00:37:56,283
+Yani benim stack ile tutabileceğim maksimum eleman sayısı maksimum açılma parantez sayısı kadardır.
+
+303
+00:37:56,283 --> 00:37:59,123
+Buradaki soru da 4 tane açılış parantez.
+
+304
+00:37:59,123 --> 00:38:01,703
+Karantezi olduğuna göre cevap 4.
+
+305
+00:38:03,183 --> 00:38:08,643
+Işıklar karışık geldiği için hani şeyini bilemeyeceğim size nasıl geldi ama 1, 3, 4, 6, 7 demiştik.
+
+306
+00:38:09,363 --> 00:38:11,823
+4. Bunun doğru cevabı olacaktır.
+
+307
+00:38:12,163 --> 00:38:16,703
+Yine çok kolay bir dakika bile sürmeyecek bir soru olduğunu düşünüyorum.
+
+308
+00:38:22,195 --> 00:38:25,536
+Geldik 8. sorumuza.
+
+309
+00:38:27,395 --> 00:38:32,975
+Hemen yapıştıralım. İnşallah buradaki kod güzel çıkar. Evet.
+
+310
+00:38:33,735 --> 00:38:36,195
+Açık geniş yapınca bir sıkıntı yaşamadık.
+
+311
+00:38:36,876 --> 00:38:39,315
+Şimdi verilen bir fonksiyon var C kodu demiş.
+
+312
+00:38:39,596 --> 00:38:43,775
+En kötü durumda çalışma zamanı karmaşıklığını Bigo notasyonunda ifade ediniz.
+
+313
+00:38:44,015 --> 00:38:47,456
+Yine Bigo geldi karşımıza. Şuraya şöyle çizelim.
+
+314
+00:38:48,083 --> 00:39:04,463
+Bir go notasyonunda diyor. Bakalım neymiş bu? I, J, K eşittir sıfır. K'yı sıfırlamış. Tamam. Şimdi for I eşittir n bölü 2. I küçük eşit n. I artı artı. Bu kaç kere döner? Hemen yanına yazalım.
+
+315
+00:39:04,916 --> 00:39:14,516
+n bölü 2'den başlayıp n'e kadar gittiğine göre, işte mesela n eşittir 10 olsun, ne yapacak? 5'den 10'a kadar. 5, 6, 7, 8, 9, 10 dahil gidecek.
+
+316
+00:39:15,115 --> 00:39:16,076
+n bölü 2
+
+317
+00:39:16,076 --> 00:39:24,356
+Ay, pardon. Yazı diye çizgiyi almışım. Şuraya n bölü 2 yazalım.
+
+318
+00:39:26,356 --> 00:39:26,756
+Çarpı
+
+319
+00:39:27,476 --> 00:39:35,936
+Neden çarpı? Çünkü bunun içinde, kod bloğunun içinde yer alıyor. İkinci blok şöyle, şurayı idare edin. Şimdi undo yapayım.
+
+320
+00:39:36,655 --> 00:39:46,956
+J eşittir 2'den n'e kadar ikişer kat olarak artıyor. Ne demek bu? 2, 4, 6, 8 diye gidiyor.
+
+321
+00:39:47,476 --> 00:40:00,000
+10'a kadarsa 2, 4, 6, 8 işte 5 kere ya da 100'e kadarsa ne oluyor? 2, 4, 6, 8, 16, 32, 64 diye gidiyor. 2'nin katları şeklinde gidiyor burası. İçinde de sadece...
+
+322
+00:40:00,000 --> 00:40:04,360
+Bir tane atama ve bölme işlemi yapılmış.
+
+323
+00:40:05,039 --> 00:40:07,519
+Özetle iki tane sabit işlem var.
+
+324
+00:40:08,239 --> 00:40:11,880
+Sabit sayıda işlem olduğu için burada n'e bağlı bir karmaşıklık mevcut değil.
+
+325
+00:40:12,360 --> 00:40:16,440
+Şurada belki kafanız karışır diye n yazdım ama bu n bölü 2 zaten en sabit bir sayı.
+
+326
+00:40:17,331 --> 00:40:33,451
+Yani bunu bir kere yaptığınızı düşünün. Sadece toplama işlemi ya da her seferinde yaparsanız bir toplama bir bölme işlemi yapıyorsunuz. İki tane sabit işlem. Nedir bu? İkinin katı şeklinde gittiğine göre konuşmuştuk hatırlarsanız. Yazamadım.
+
+327
+00:40:37,204 --> 00:40:39,824
+İki tabanını yazmıyorum biliyorsunuz.
+
+328
+00:40:40,284 --> 00:40:41,844
+Şimdi ne oldu bu?
+
+329
+00:40:42,304 --> 00:40:47,024
+n bölü 2 çarpı log n karmaşıklıkta bir fonksiyonmuş demek ki.
+
+330
+00:40:47,684 --> 00:40:49,264
+Ama Big O notasyonda diyor.
+
+331
+00:40:49,804 --> 00:40:51,484
+Big O notasyonunda ne yapıyorduk?
+
+332
+00:40:51,564 --> 00:40:53,003
+Kat sayıları atıyorduk.
+
+333
+00:40:53,003 --> 00:40:56,104
+Ve n log n.
+
+334
+00:40:57,324 --> 00:40:58,083
+Şöyle.
+
+335
+00:40:59,188 --> 00:41:07,448
+Big O notasyonunda buradaki fonksiyonun karmaşıklığının nlogan olduğunu rahatlıkla söyleyebiliriz.
+
+336
+00:41:07,948 --> 00:41:10,088
+Bunu da herhalde hepiniz yapmışsınızdır diye düşünüyorum.
+
+337
+00:41:18,579 --> 00:41:27,899
+Şimdi geldik 9. soruya. Burada büyük bir ihtimalle heap'i kopyalayamayacağım size. Şöyle gelelim.
+
+338
+00:41:31,639 --> 00:41:39,639
+Kendim elimle yapayım. 3. Neymiş bu? 13.4.91.
+
+339
+00:41:44,947 --> 00:42:08,288
+13, 4, 91, 49, 29, 98, 49, 29, 98, 32, 30, 15, 32, 30 ve 15. Şunları da halkalara alalım.
+
+340
+00:42:18,547 --> 00:42:19,767
+Şöyle de çizelim.
+
+341
+00:42:21,647 --> 00:42:22,227
+Evet.
+
+342
+00:42:22,767 --> 00:42:23,747
+Gayet güzel oldu.
+
+343
+00:42:24,947 --> 00:42:29,647
+Müthiş çizim yeteneğimle heapimizi oluşturduk.
+
+344
+00:42:29,967 --> 00:42:33,467
+Şimdi elimizde binary değil, turner'ı bir heap, min heap yapısı var.
+
+345
+00:42:33,876 --> 00:42:36,896
+Hocam ne yaptın? Hepler binary olmuyor muydu? Hayır.
+
+346
+00:42:37,416 --> 00:42:47,776
+Çeşit çeşit heap olduğunu bizim sadece ders kapsamında binary heplere odaklandığımızı ama bu heplerin farklı farklı ağaç yapılarıyla da implement edilebileceğini söylemiştik.
+
+347
+00:42:48,256 --> 00:42:51,276
+Şimdi turnary heap ne demektir diye yine de tanımını da yapalım.
+
+348
+00:42:51,736 --> 00:43:00,596
+Her ebeveyn düğümün kendinden büyük değere sahip, min heap olduğu için daha büyük değere sahip, 3 tane alt düğümü var ve tam bir complete yani bir ağaç, 3'lü ağaç.
+
+349
+00:43:00,960 --> 00:43:11,599
+3, her bir daldan, her bir nottan 3 tane düğüm çıkıyor. Complete olduğu için de bunlar tam olarak soldan dolu son şey seviye.
+
+350
+00:43:12,559 --> 00:43:21,779
+Olabilir mi? Olabilir. Dörtlü olur mu? Olur. Ama dörtlü zaten ikiliyle bir şekilde dönüştürülebilir. Gerçi bunu da isterseniz dönüştürürsünüz de şimdi oralara girmeyelim.
+
+351
+00:43:22,708 --> 00:43:34,387
+Şöyle bir heap verilmiş bize, üçlü heap verilmiş. En küçük elemanı silin diyor. Yani extract min yapacağız. Extract min yapmak ne demek? Üçü al, şuraya yaz, on beşi al, buraya yaz demek.
+
+352
+00:43:35,068 --> 00:43:45,748
+Yani ve bunun bağını kopar demek. Şöyle koparalım. On beşi buraya yazmam gerekiyor değil mi? Sonrasında şu anda ben heap'i bilerek ve isteyerek bozdum.
+
+353
+00:43:46,324 --> 00:43:59,504
+Şimdi benim bunu heapify etmem lazım. Hadi edelim. 15. Çocuklarına bakalım. 13, 4, 91. Kimin yukarı çıkması lazım? Daha doğrusu 15'in nereye inmesi lazım?
+
+354
+00:44:00,304 --> 00:44:08,264
+Heap yapısını, min heap yapısını bozmamak için, garanti etmek için 3 tane çocuk içindeki en küçüğü kendi yerine dönüştürmesi gerekir.
+
+355
+00:44:08,264 --> 00:44:12,984
+Yani 4 yukarı, 15 buraya.
+
+356
+00:44:16,115 --> 00:44:41,596
+Yetti mi? Bakalım. 15'i çocuklarıyla karşılaştırıyorum. 32 var, 30 var. 15 daha küçük olduğu için heap'i garanti etmiş. Yani heap'i bozmuyor heap yapısını. Sadece gördüğünüz gibi tek bir yer değiştirmeyle ben buradaki sorunun çözümüne ulaşmış oldum. Yani ben 4, ondan sonra ikinci seviyeye geçtiğimde şuradan 13, 5, 91.
+
+357
+00:44:43,251 --> 00:45:03,472
+13, 5 değil ya bu. 13, 15. Kendi yazdığımı okuyamadım ha. Şuradaki 15 zaten. 13, 15, 91. Sonra alt taraf değişmedi. 49, 29, 98. Şurada da 32 ile 30 kaldı. Bu kadar. Cevap bu.
+
+358
+00:45:06,291 --> 00:45:27,231
+Kafa karışıklığı yaratmamıştır diye düşünüyorum. Bu da oldukça kolay ve bir dakika bile değil sadece 15 saniyede çözebileceğiniz kolaylıkta bir soruydu. Çok çetrifilli bir heapify durumu da söz konusu değil. Özellikle kolay olsun diye. Üçlü heap tek farkı ne olacak? İki çocuk yerine üç çocukla karşılaştıracaksın. Aradaki temel fark bu.
+
+359
+00:45:28,451 --> 00:45:33,552
+Bunu da yaptık. Şimdi bunu kopyalayınca acaba ne çıkacak?
+
+360
+00:45:33,920 --> 00:45:35,079
+Ben de merak ediyorum.
+
+361
+00:45:39,443 --> 00:45:41,043
+Tablolu soru var ya bir tane.
+
+362
+00:45:42,263 --> 00:45:43,323
+Şey, sıralama sorusu.
+
+363
+00:45:46,243 --> 00:45:47,543
+Ayy, çok kötü çıktı.
+
+364
+00:45:49,123 --> 00:45:49,343
+Ama
+
+365
+00:45:49,343 --> 00:45:51,083
+Şöyle
+
+366
+00:45:51,083 --> 00:45:55,183
+Sizin için bir düzeltme yapacağım.
+
+367
+00:45:58,996 --> 00:45:59,996
+Evet.
+
+368
+00:46:09,108 --> 00:46:09,987
+Galiba oldu.
+
+369
+00:46:11,987 --> 00:46:12,827
+Tamam.
+
+370
+00:46:13,967 --> 00:46:14,867
+Aaa yapma bunu.
+
+371
+00:46:17,188 --> 00:46:18,027
+Eyvah.
+
+372
+00:46:19,307 --> 00:46:20,987
+Bozuluyormuş arkadaşlar ya.
+
+373
+00:46:21,387 --> 00:46:21,847
+Ne yapacağız?
+
+374
+00:46:23,628 --> 00:46:24,327
+Bir daha yazalım.
+
+375
+00:46:29,235 --> 00:46:35,576
+Şöyle bir daha yapıp mouse'u ellemeden üzerinde konuşayım.
+
+376
+00:46:39,123 --> 00:46:39,844
+Şöyle
+
+377
+00:46:45,811 --> 00:47:03,672
+That buraya, that, that, from, that day. Tamam, oldu. Mouse'a tıklamayacağım. Text modu kapattığım anda gidiyor çünkü. İdare edelim.
+
+378
+00:47:04,271 --> 00:47:13,032
+Şimdi ne diyor? En soldaki stün orijinal veri dizisidir. Birinci, ikinci, üçüncü stünlarsa üç farklı sıralama algoritmasının herhangi bir adımında oluşan dizilerdir.
+
+379
+00:47:13,588 --> 00:47:18,768
+Hangileridir acaba diye soruyor. Yani bu sütunlardaki sıralama algoritmaları ne olabilir?
+
+380
+00:47:19,307 --> 00:47:22,968
+Şimdi burada tabii hocam ne yaptın? Biz nereden bileceğiz hangi algoritma?
+
+381
+00:47:22,968 --> 00:47:30,548
+Hemen açıp şıklara bakıyoruz ve şıklarda sadece 3 tane algoritmanın kombinasyonları oluşturulmuş.
+
+382
+00:47:31,128 --> 00:47:32,888
+Insertion, Selection ve Heapsort.
+
+383
+00:47:33,307 --> 00:47:41,588
+Tamam, şimdi ben hatırlarsanız böyle ilk 2 haftada hani algoritmaların, sıralama algoritmalarından falan da bahsederken
+
+384
+00:47:41,588 --> 00:47:56,728
+Derserken, algoritma mantığını oturtmak, sonrasında karmaşıklık analizini yapmak üzere Selection Sort ile başlayalım. Selection Sort ne yapıyordu? Körlemesine. Her seferinde sona kadar gidip en küçüğünü bulup birinci göze.
+
+385
+00:47:57,204 --> 00:48:07,443
+1 artı 1. göze, işte 2 artı 1. göze, yani şey, i'inci göz diyelim, hep böyle i artı 1, i artı 2, i artı 3. göze düzelte, düzelte gidiyordu.
+
+386
+00:48:07,724 --> 00:48:19,204
+Demek ki benim eğer selection sort yapıyorsam her zaman böyle 1. göze, 2. göze hep böyle en küçük elemanları bulmam gerekiyor, görmem gerekiyor ve bunu garanti ediyor.
+
+387
+00:48:19,204 --> 00:48:25,124
+Yani ilk iterasyonunda en küçük elemanı bulup 1. göze yerleştiriyor. Şimdi buradaki en küçük eleman ne?
+
+388
+00:48:25,204 --> 00:48:52,224
+Yani hani alfabetik olarak A'ya en yakın ya da A olan kim? Bakıyoruz. T'ler, W'ler, H'ler bilmem ne var. Şurada bir tane B var. B. O zaman bir selection sort algoritması ilk iterasyonda bunu alıp en tepeye taşır. Bitti zaten. Şunun selection sort olduğunu kaptım. Değil mi? Yine de kenarda dursun. Ondan sonra ne yapmış? Bakalım. B var, F var, G var, H var, K var.
+
+389
+00:48:52,755 --> 00:49:17,235
+T'ler var, deadler dizilmiş. Tamam mı? Şurada işte Y falan henüz daha yerini bulmamış. W'dan sonraya gitmemiş. Yani şuralara bir yerlere kadar bunu sıralamış. Neden? Her iterasyonda kalanların en küçüğünü alıp o göze yerleştirdiği, sıradaki göze yerleştirdiği için. Demek ki burası bir selection sort. Başka bir şey olmamalı.
+
+390
+00:49:18,452 --> 00:49:24,952
+Bakalım hemen şıklara. Zaten 3 tane şık elendi, 2 tane şık kalıyor. Çünkü selection sortun 3 olduğu 2 tane şık var sadece.
+
+391
+00:49:25,732 --> 00:49:31,552
+Sonrasında ikinci gözde kombinasyonunda ya heap ya insert ya da bir de insert ya da heap var.
+
+392
+00:49:31,552 --> 00:49:39,272
+Şimdi isterseniz önce 2'ye bakalım. İkinci kolona bakalım. Şuraya. Bakıyorum.
+
+393
+00:49:39,412 --> 00:49:42,632
+Your, with, will, this, they, want. Allah Allah ne bu?
+
+394
+00:49:43,188 --> 00:50:06,907
+Sanki burada bir max heap yapılmış değil mi? Önce kökte ye var. Ye'nin çocukları sol çocuğu, with, sağ çocuğu, will. Ondan daha şeyler. Alfabetik olarak daha önceler. Ondan önce disler falan var. Bir tarafın, will'in altında want var. Will bir daha gelmiş. Burada bir heap yapısının oluştuğunu görüyorum.
+
+395
+00:50:07,380 --> 00:50:30,580
+Aslında. Yani onu ağaç olarak çizsem daha güzel görünür tabii ama. Yani baktığımda bunu zaten çözdüm. Şurası heap mi insert mi? Bunu anlamaya çalışıyorum. Şu insert olabilir mi diye bakalım. Insertion sort ne yapıyordu hatırlayalım. Elimizdekileri böyle kart dizilimi gibi anlatmıştım. Alıp yerine koyuyorduk. Kaydıra kaydıra öne doğru taşıyorduk.
+
+396
+00:50:33,423 --> 00:50:36,104
+Kaydıra kaydıra öne doğru taşıyorduk.
+
+397
+00:50:36,371 --> 00:51:02,871
+Şimdi buna baktığımda your, with, will diye gittiğine göre burada büyükten küçüğe doğru bir sıralama var. Yani ters bir sıralama var. O zaman bu insertion sort zaten olamaz. Yani herhangi bir şekilde şuradaki elemanın şundan daha büyük olması doğru değil. Bu zaten heap yapısı. O zaman bu bir heap sort diyebilirim. Tamam mı? İkincisi de heap sort dedim. Şimdi bire bir daha bakalım. Insertion sort olabilir mi ya da gerçekten öyle mi?
+
+398
+00:51:03,315 --> 00:51:30,795
+F, H, K, T diye gidiyor. Bakın şu kendi içinde sıralanmış bir dizi var burada. Ama en küçük eleman birinci gözde değil. O ana kadar görmemiş bir şekilde. Tamam mı? Mesela nereye kadar gelmiş? Deadler doğru, they, this doğru, will'ler doğru, your doğru. Bakın want mesela şurada kalmış. Şuraya kadar aslında kendi içinde sıralı. Mouse'umu görüyorsunuz değil mi? Cursor'ı.
+
+399
+00:51:31,795 --> 00:51:36,215
+From, have, know, that, yani F, H, K, T, T, T, T, T, T.
+
+400
+00:51:42,336 --> 00:51:45,135
+Ama hatta your'u da katalım, your da olsun tamam mı?
+
+401
+00:51:45,416 --> 00:51:49,556
+Sondaki dört eleman want, bean, that ve good henüz daha yerini bulmamış.
+
+402
+00:51:50,096 --> 00:51:51,476
+Want nereye kadar kayacak?
+
+403
+00:51:52,056 --> 00:51:55,195
+Tık, tık, tık, tık buraya kadar kayacak değil mi?
+
+404
+00:51:55,715 --> 00:51:56,796
+Araya insert edeceğim.
+
+405
+00:51:57,775 --> 00:51:59,576
+Sonrasında bean nereye kadar kayacak?
+
+406
+00:51:59,576 --> 00:52:00,316
+En kötü durum.
+
+407
+00:52:00,416 --> 00:52:03,076
+Tak tak tak tak tak tak tak tak tepeye kadar çıkması lazım.
+
+408
+00:52:04,596 --> 00:52:11,715
+Çok bariz bir şekilde insertion sortun şuraya kadar sort edilmiş hali, yorum sonuna kadar sort edilmiş halidir diyebilirim.
+
+409
+00:52:12,076 --> 00:52:18,996
+Yani ışıklardan gittiğinizde zaten bunu yine böyle selection'ı bulup gerisini 10 saniye, 15 saniyede halledebilirsiniz.
+
+410
+00:52:18,996 --> 00:52:22,768
+Hadi olsun bir dakika bu şekilde sorumuzu...
+
+411
+00:52:22,768 --> 00:52:32,988
+Birinci kolon insertion sort, ikinci kolon heap sort, üçüncü kolon selection sort şeklinde çözebiliriz.
+
+412
+00:52:33,907 --> 00:52:43,887
+Tamam. Şuraya yazayım. Şöyle bir insertion, ondan sonra iki heap sortlarını da yazalım.
+
+413
+00:52:47,380 --> 00:53:08,820
+Selection sort. Evet. Selection'da yazamadık anlayın. Bu da böyleydi. Biraz göz korkutucu ama aslında özü çok basit ya da özü çok iyi olan bir soru. Tamam. Şeyler bitti. Birinci oturumun sonuna geldik.
+
+414
+00:53:09,168 --> 00:53:24,488
+İkinci oturuma geçiyoruz. Niye bunları oturum oturum yapıyoruz? Çünkü bir işte algoritma sorularıyla test soruları birbirine karışmasın. Hani zaman problemini, hocam o soru bana önce geldi, öbür soru sonra geldi diye karışıklık yaşanmasın diye bunları oturumlar halinde yapıyoruz.
+
+415
+00:53:30,228 --> 00:53:49,228
+Bir soru için belirli bir süre tanıyoruz size. Eğer iki soruyu aynı sesinde sorarsak belki de bir soruyu seçip iki katı zamanda çözersiniz. Bunu engellemek için her soruyu da ayrı bir sesin olacak şekilde hazırlayıp size veriyoruz.
+
+416
+00:53:49,228 --> 00:53:54,387
+Şimdi geldik şu soruya. İlk algoritma sorumuz.
+
+417
+00:53:56,052 --> 00:54:02,012
+Saat kaç oldu bu arada? 10.53. Neyse, devam edeyim değil mi? Daha ara vermeyelim. Bitirelim öyle ara veririz.
+
+418
+00:54:03,552 --> 00:54:08,032
+Bunun şimdi oturup tabii size kodunu yazmayacağım da sadece nasıl çözmeniz gerektiğinden bahsedelim.
+
+419
+00:54:08,192 --> 00:54:15,032
+Bir matriz üzerinde tutulan bilgilerin yarısından fazlası sıfırsa buna spars matriz, seyrek matriz Türkçesi adını veririz.
+
+420
+00:54:15,539 --> 00:54:32,319
+Bu tür maddeslerin bilgileri bellek miktarını azaltmak için bir sürü sıfır var ya, gereksiz yer kaplamasın diye linked listeyle saklanır. Nasıl bir linked listeyle saklanır? Bir tane struct yapacaksınız. İçinde neler varmış? Bakalım. Satır.
+
+421
+00:54:33,012 --> 00:54:46,672
+numarası, yani satır indisi, sütun indisi ve değer. Yani bir de next var tabii ki. İçinde hani üç tane data tutan bir struct, bir tane de next pointer tutan bir struct şeklinde bir şey hazırlamanız gerekir.
+
+422
+00:54:47,612 --> 00:54:58,032
+Şimdi linked liste yapısında n çarpı m'lik bir sparse matriz bilgisi verilecek ya da okunacak. Sonra hangi sütunların, hemen çizelim altını.
+
+423
+00:55:01,396 --> 00:55:05,896
+Tamamen sıfırlardan oluştuğunu bulan programı kodlayınız.
+
+424
+00:55:06,295 --> 00:55:08,996
+Matristen linkli liste dönüşümü falan beklemiyoruz.
+
+425
+00:55:09,076 --> 00:55:13,195
+Direkt olarak linkli liste formatında okuyorsunuz inputlarınızı.
+
+426
+00:55:13,956 --> 00:55:16,175
+Şimdi ve şöyle bir matris vermişiz.
+
+427
+00:55:16,356 --> 00:55:18,396
+Baktığımızda üzerini şöyle çizeyim.
+
+428
+00:55:18,956 --> 00:55:24,076
+Bakın sıfırıncı indisin hepsi sıfırın üstünün hepsi sıfır.
+
+429
+00:55:24,563 --> 00:55:39,183
+Üçüncünün hepsi 0, bir de dördüncünün hepsi 0. Şurada 5 var, bozuyor. Burada 1, 4, 2 zaten bozuyor. Burada 2 var, bozuyor. Burada da 3 ve 1 var, bozuyor değer olarak. Tamam. Satırları sormuyoruz. Sadece sütunları soruyoruz.
+
+430
+00:55:39,539 --> 00:55:42,460
+Evet, buradaki çözüm yolu nasıl olabilir?
+
+431
+00:55:42,599 --> 00:55:47,639
+Şimdi önce tabii hani struct'ı oluşturduğunuz, linkli listeyi okudunuz.
+
+432
+00:55:47,860 --> 00:55:52,340
+Yani elinizde şu anda linkli listede tutulan bir matriz yapısı var.
+
+433
+00:55:53,099 --> 00:55:54,420
+Ne yapmanız lazım?
+
+434
+00:55:55,039 --> 00:56:05,199
+Size sütunlar sorulduğuna göre bir kere kaç tane şey varsa, maksimum sütun varsa o kadarlık, hani ben olsam en kolay hızlı çözüm, o kadarlık bir dizi açarım.
+
+435
+00:56:05,780 --> 00:56:33,120
+Şöyle, tamam mı? Burada mesela şey kaç var? 1, 2, 3 ama 1 diyeyim ben, sıfırdan başlıyor da sayı olarak. 1, 2, 3, 4, 5, 6, 7. Yani 7 elemanlı bir dizi açarım, tamam mı? Şöyle. 3, 4, 5, 6, 7. İdare edin, biraz yamuk yamuk oldu. Sonrasında hepsine tabii işte şey yazarım.
+
+436
+00:56:33,472 --> 00:56:46,932
+kodlamanıza bağlı olarak ya bir ya sıfır yazalım. Hadi bir yazalım. Yani hepsi şeydir, çıktıdır şeklinde ya da hepsi sıfırdır şeklinde. Yani true ya da false tamamen size kalmış.
+
+437
+00:56:47,552 --> 00:57:00,912
+Sonrasında işte şeyi gezeceksiniz linkli listeyi. Satırları okuyacaksınız. Değeri, pardon şeyleri okuyacaksınız. Tabii ki sadece dolular var değil mi?
+
+438
+00:57:01,427 --> 00:57:25,607
+Dolu değeri okudunuz. Bunun sütun bilgisini, işte bu kaçıncı sütun mesela? Birinci sütun ya. Şurayı sıfır yapacaksınız. Yani burası cevap olamaz diye. Tamam. Sonraki mesela bu. Bunun next diye okuduğunuzda bize şu değeri verecek. Neden? Çünkü hatta ilk birkaç nodu yazayım şuraya. Şöyle.
+
+439
+00:57:27,027 --> 00:57:28,748
+Şu 3 için ne yazacak?
+
+440
+00:57:29,827 --> 00:57:34,608
+0. satır, 1. sütun, değeri 3.
+
+441
+00:57:36,367 --> 00:57:37,608
+Şöyle bir node.
+
+442
+00:57:38,847 --> 00:57:44,728
+Sonra 0. satır, 6. sütun mu bu?
+
+443
+00:57:45,628 --> 00:57:47,387
+6. sütun, değeri 1.
+
+444
+00:57:49,967 --> 00:57:51,447
+Böyle bir node var.
+
+445
+00:57:51,840 --> 00:57:58,739
+Sonraki not, birinci satır, 0, 1, ikinci sütun, değeri 2.
+
+446
+00:58:02,039 --> 00:58:04,239
+Sonra şunu da yazayım, bitireyim.
+
+447
+00:58:04,820 --> 00:58:09,519
+Birinci satır, altıncı sütun, değeri 4.
+
+448
+00:58:11,440 --> 00:58:13,840
+Böyle böyle gidiyor benim linked listem diye.
+
+449
+00:58:14,480 --> 00:58:16,099
+Tamam mı? Ne yaptım?
+
+450
+00:58:17,159 --> 00:58:18,840
+Şimdi birinci...
+
+451
+00:58:19,315 --> 00:58:45,976
+Sütun değeri 3 olduğuna göre ben birinci sütünü sıfırladım. Ondan sonra altıncı sütün değeri 1 olduğuna göre altıncı sütünü sıfırladım. Falan filan böyle gidersiniz, gidersiniz. Tamam. Sonunda bazı sütünler hiç ellenmemiş olacaktır. Ki burada işte sıfır, hiç sıfırla başlayan şey olmadığı için, şurada hiç sıfır görmediğiniz için böyle bir değerinde kalacaktır.
+
+452
+00:58:46,356 --> 00:58:49,856
+Şurası mesela zaten sıfırlanmıştı. Şurada bir daha sıfırlanacak.
+
+453
+00:58:50,296 --> 00:58:55,976
+Buraya baktığınızda şu iki değeri yüzünden iki inci göz sıfırlanır.
+
+454
+00:58:58,136 --> 00:59:04,416
+Dört değeri zaten altıyı sıfırlamıştık. Şuraya zaten sıfırlamıştık. Bu zaten sıfırlanmıştı.
+
+455
+00:59:05,907 --> 00:59:20,788
+Şurada bir taneyi kaçırdım mı? Ha, şunu kaçırdım. Şu beş yüzünden de en son şey, altıncı satır, beşinci pardon, altıncı sütun mu oluyor? 0, 1, 2, 3, 4, beşinci sütun.
+
+456
+00:59:21,627 --> 00:59:28,907
+5, güzel bir zamanım, 6, 5, değeri de 5 ya, bu da linkli listenin sonu.
+
+457
+00:59:29,684 --> 00:59:53,824
+Şuradan da nal yapalım. Burayı da sıfırlamış oldum. Tamam. İşte benim sonuç dizim budur. Yani bunu da bir gezersiniz ya da işte sıfırdan farklı olanları şunlardır diye yazdırırsınız. Boş olan gözler, sütunlar. Sıfırıncı sütun. Bir, iki değil. Üçüncü sütun ve dördüncü sütun. Tamam.
+
+458
+00:59:54,224 --> 01:00:16,544
+Yani ya sıfırla başlayıp gördüğünüzde bir yaparsınız ya birle başlayıp gördüğünüzde sıfır yaparsınız. Tamamen size kalmış orası. Ne oldu? İşte ben böyle bir toplam sütun sayısı kadar harici bir dizi kullanarak tek bir linkli liste iterasyonuyla bunu işte halledebilirim. Burada size karmaşıklığını sormamış mıyız? Niye sormamışız ya?
+
+459
+01:00:18,195 --> 01:00:37,195
+Neyse, hadi bak iyisiniz. Karmaşıklığında sormamış. Lineer mertebede bir karmaşıklıkla çözüm falan dememişiz. Tek bir iterasyonla, tek bir linked listeyi gezerek şuradaki değerler zaten sıfırdan farklı değerler sadece tutuluyor. Sıfırdan farklı değerlerin sütün değerlerini...
+
+460
+01:00:38,963 --> 01:00:52,703
+Ya sıfırlayacaksınız ya birleyeceksiniz. Yani hani bir şey gibi sigorta, semafor gibi dizi tutup ondan sonra da bu dizideki mesela bir kalanları ya da sıfır kalanları bana yazdıracaksınız. Bütün olay bu kadar.
+
+461
+01:00:55,203 --> 01:01:00,923
+30 puan. Güzel soru bence. Basit yani. Zorlanan oldu mu?
+
+462
+01:01:05,876 --> 01:01:12,936
+Olmadı. Peki. Soru var mı? Soruyla ilgili ya da çözümle ilgili.
+
+463
+01:01:14,476 --> 01:01:21,156
+Hocam ben yol adım C dosyasının adını numaram yapmayı unutmuşum da sıkıntı olur mu acaba?
+
+464
+01:01:23,296 --> 01:01:29,036
+He. Yok. Şöyle onu da söyleyeyim. Yeri gelmişken sorduğun için teşekkür ederim.
+
+465
+01:01:30,164 --> 01:01:45,824
+Şimdi size ne diyoruz? Özellikle öğrenci numarası nokta C dosyalarını verin diyoruz. Çünkü 3 grubun toplam kodlarının hepsini benzerlik analizinden geçiriyoruz. Bu sebeple öğrenci numaralarıyla ayırt etmek açısından bu dosyaları istiyoruz.
+
+466
+01:01:46,824 --> 01:01:56,164
+Şimdi sistem zaten siz yüklediğinizde zip olarak yüklüyorsunuz ya tam olarak şöyle bir dosya ismi veriyor. Şurayı ben temizleyeyim.
+
+467
+01:01:56,436 --> 01:02:13,276
+İşte mesela ne diyelim işte 18.011 olmayan bir numara yazalım 444. Alt çizgi işte Ahmet ne olsun soyadı Koç.
+
+468
+01:02:14,196 --> 01:02:16,916
+Şeyli mi yazıyordu bakayım onu da hemen bakayım.
+
+469
+01:02:17,427 --> 01:02:25,227
+Evet, gayet Türkçe yazıyormuş. Ahmet yazmayalım o zaman. Oğuz yazalım. Yumuşak G. Oğuz, Koç.
+
+470
+01:02:26,347 --> 01:02:39,467
+Ve mesela tam olarak hangi saatte yüklediniz? Diyelim ki 15, 55. Dur bakayım precision'unu kaç veriyorlar? Tamam.
+
+471
+01:02:40,211 --> 01:02:59,251
+15, 55, ondan sonra da şey, virgülden sonra 4 tane var. Bu ne oluyor? İşte saniye, mesela 34 ve salise. Ne diyelim salisesi de 23 olsun. Tamam mı? Nokta zip. Şöyle bir dosya formatını da bize veriyor.
+
+472
+01:02:59,860 --> 01:03:19,059
+Yani numaranız, adınız ve yüklediğiniz tam saat timestamp olacak şekilde bir şey ile veriyor. O yüzden ben burada ayırt edebildim. Hani işte bu Oğuz Koç'un zipini tıklayıp açtığımda içinde görüyorum ki mesela cevap 2.c dosyası yazmış.
+
+473
+01:03:21,519 --> 01:03:40,200
+Yaklaşık 3 ya da 4 arkadaşta falan vardı bu durum. Onu elimle gidip şöyle 18.0.11 kaydederken 444.c olarak değiştirdim ve kaydettim. Bu da üzerine yazdı. Tamam. Bu seferlik affettik ama lütfen bundan sonra dikkat edin.
+
+474
+01:03:40,460 --> 01:03:49,519
+2 kere 3 kere kontrol etmek zorunda kalıyorum. Bir yanlış olmasın diye. Sizden ricam böyle işte kodları mutlaka şey olarak verin.
+
+475
+01:03:49,519 --> 01:04:01,639
+[öğrenci] ucu ucuna yetiştirmiş, zorlanmış. [öğrenci], yanlışlıkla sıfırsız sütunlar şeklinde yazdım. Dolu sütunları mı yazdırdın yani?
+
+476
+01:04:03,780 --> 01:04:08,519
+Benim örnekteki birleri değil de sıfırları yazdırdın o zaman.
+
+477
+01:04:14,452 --> 01:04:41,932
+Eee? 0, 3, 4 çıktıları verdi diyor. Doğru yapmışsın. Ha şey printf'i yanlış yazdın. Mesaj yanlış. Tamam okey. O sorun değil. Heyecan diyelim ona. Tamam. Şimdi geldik son sorumuza. Şöyle kopyalayalım. Bakayım güzel yapıştırabilecek miyiz? Yine örnek tablo falan var.
+
+478
+01:04:42,931 --> 01:04:49,931
+Tamam. Şöyle yazalım. Okunuyor değil mi? Okunuyor.
+
+479
+01:04:54,835 --> 01:04:55,235
+Tamam.
+
+480
+01:04:57,275 --> 01:04:58,635
+Şunlar kaydı.
+
+481
+01:04:59,695 --> 01:05:01,295
+Bunları ben elimle düzeltirim.
+
+482
+01:05:01,455 --> 01:05:01,555
+Tamam.
+
+483
+01:05:01,735 --> 01:05:02,575
+Şuraya şey yapalım.
+
+484
+01:05:04,835 --> 01:05:06,295
+Şöyle alalım.
+
+485
+01:05:07,435 --> 01:05:07,875
+11
+
+486
+01:05:07,875 --> 01:05:10,415
+26
+
+487
+01:05:10,415 --> 01:05:12,275
+43
+
+488
+01:05:12,275 --> 01:05:14,555
+75
+
+489
+01:05:14,555 --> 01:05:17,435
+Sayfa sayıları da
+
+490
+01:05:17,435 --> 01:05:18,235
+5
+
+491
+01:05:18,235 --> 01:05:19,935
+1
+
+492
+01:05:19,935 --> 01:05:21,415
+7
+
+493
+01:05:22,483 --> 01:05:34,363
+2, bunun işte 11 şey kuyrukta dururken mesela işleniyor print edilirken sonrasında 43'ü sildirmişiz. Şöyle yapalım.
+
+494
+01:05:36,363 --> 01:05:45,623
+26 ve 75 haline gelmesini istiyoruz.
+
+495
+01:05:46,239 --> 01:05:55,479
+Şimdi soru şu, bir ağ üzerinde bulunan bilgisayarlara hizmet veren bir yazıcıya gelen dosyalar sayfa sayısıyla birlikte bir kuyrukta tutuluyor.
+
+496
+01:05:55,739 --> 01:05:59,219
+Neden? Çünkü işler gelme sırasıyla basılacak, yazdırılacak.
+
+497
+01:06:00,219 --> 01:06:04,239
+First in, first out bir queue yapısı burada kurgulamak zorundayız.
+
+498
+01:06:05,019 --> 01:06:06,099
+Hemen onun altını çizelim.
+
+499
+01:06:07,099 --> 01:06:08,299
+Şöyle kuyrukta.
+
+500
+01:06:10,299 --> 01:06:10,479
+Bir.
+
+501
+01:06:10,996 --> 01:06:20,255
+Her sayfanın bir döngü adımı süresinde basıldığını varsayarak bir iş bittiğinde kuyruktaki sıradaki işe hizmet veren fonksiyonu yazınız.
+
+502
+01:06:20,396 --> 01:06:26,175
+Yani print out falan gibi bir tane ya da yazdır çıktı al diye bir tane fonksiyon yazmanız gerekiyor.
+
+503
+01:06:26,755 --> 01:06:30,155
+Ne yapacak bu fonksiyon? Yani burada ne bekliyoruz? Hemen hızlıca söyleyeyim.
+
+504
+01:06:30,956 --> 01:06:36,615
+Kuyruğun birinci elemanını deque edecek. Yani daha doğrusu zaten neyi edecek deque? Deque edecek.
+
+505
+01:06:36,976 --> 01:07:03,635
+Şimdi ben de queue ettiğimde burada ne göreceğim? Pardon. Şöyle rengini de değiştirelim. 11 numaralı işi göreceğim. 11 numaralı işte ne varmış? 5 tane sayfa varmış. Hemen buraya bir tane aslında şey bekliyoruz. Dummy bir tane for döngüsü. İşte for eşit birden sayfa sayısına. Tamam mı? Her seferinde print out one page yazdırın mesela.
+
+506
+01:07:04,307 --> 01:07:29,587
+Ya da 11'in birincisi yazdırıldı, 11'in ikincisi yazdırıldı. Çok basit bir şey yapabilir. Hiçbir şey yapmasanız da olur. Boş bir for beş kere dönseniz de olur. Hani beş sayfanın işlendiğini göstermeniz açısından. Tamam. Ne demişiz? Sayfa sayısı dört ise döngüde dört defa dönüldüğünde basılma işlemi tamamlanmış olur. Şey yaparsanız çok daha güzel olur tabii ki. Birinci sayfa çıktı, ikinci sayfa çıktı diye ekrana yazdırsanız yeterli bizim için.
+
+507
+01:07:29,940 --> 01:07:43,640
+Böyle bir fonksiyon. Burayı konuştuk. Böyle bir print. Ne yapacak? Dekü edecek. Ve sayfa sayısı değeri kadar for dönecek. Ya printf yapacak ya hiçbir şey yapmayacak. Bu kadar.
+
+508
+01:07:46,931 --> 01:07:59,091
+Bir kullanıcının kuyrukta bekleyen yazma isteğini bekleyen diğer isteklerin sırasını bozmadan silebilmesini sağlayan, eğer silinmesi istenen dosya kuyrukta yoksa uyarı veren bir fonksiyon yazınız.
+
+509
+01:07:59,631 --> 01:08:04,811
+Kuyruktan sil ya da cancel print gibi bir fonksiyon yazmanızı istiyoruz.
+
+510
+01:08:05,300 --> 01:08:21,440
+Şimdi burada da örnek olarak ne demişiz? Mesela burada ben şu işi yollamışım. 7 sayfalık bir çıktı. Ama fark etmişim ki yanlış. Daha da prosese girmemiş. Yani kuyrukta deku edilmemiş duruyor.
+
+511
+01:08:21,876 --> 01:08:42,536
+Üçüncü sırada duruyor. Tamam mı? Bu bir sonraki aslında iş 11 olacak diyebiliriz. Ben bu 43'ü bu kuyruğun arasından çekip çıkarmak istiyorum. Böyle bir fonksiyon yazmanızı istiyorum. Zaten sorunun tek ne derler? Hani can alıcı noktası burası. Biraz sonra soruyu kaldırıp çözüme geçeceğim. Çünkü yer yok beyaz tahtada.
+
+512
+01:08:44,020 --> 01:08:57,180
+Üçüncüye bakalım hemen. Kullanına yazma isteklerini alan, yani bir enqueue eden bir şey. Print this deyip mesela şeyi de alabilirsiniz ya da rastgele bir sayı da atayabilirsiniz. Hiç fark etmez.
+
+513
+01:08:57,620 --> 01:09:04,460
+Hani id'sini ve sayfa sayısını alın, okuyun ve enqueue edin. Tamam mı? Bir tane de enqueue eden bir fonksiyon lazım.
+
+514
+01:09:09,652 --> 01:09:19,652
+Kuyruktan dequeue edip işte n kere, şuradaki sayfa sayısı kere for dönen iki tane fonksiyonunuz olacak. Bir de aradan silme fonksiyonunuz olacak.
+
+515
+01:09:20,079 --> 01:09:24,199
+Tamam, cancel print diye bir tane isim olarak atabilirsiniz, önemli değil.
+
+516
+01:09:24,659 --> 01:09:26,619
+Hani ben mantıklı olsun diye böyle söyledim.
+
+517
+01:09:26,680 --> 01:09:28,319
+Cancel print diye bir tane fonksiyon.
+
+518
+01:09:28,659 --> 01:09:30,059
+Şimdi oturup bunu konuşacağız o zaman.
+
+519
+01:09:30,139 --> 01:09:32,180
+Bunu nasıl yapacağımızı konuşmamız gerekecek.
+
+520
+01:09:32,819 --> 01:09:35,680
+NQ, DQ ve exempte işlemleri hazır var.
+
+521
+01:09:35,960 --> 01:09:38,659
+Onlar hazır olduğunu varsayıp tekrar yazmayın dedik.
+
+522
+01:09:38,659 --> 01:09:43,020
+Ki zaten siz büyük bir ihtimalle kendiniz yazmışsınızdır ve direkt kullanmışsınızdır.
+
+523
+01:09:43,440 --> 01:09:46,340
+Defalarca hani bunları yazın, deneyin, edin demiştim ya.
+
+524
+01:09:47,039 --> 01:09:48,079
+İşinize yaramıştır.
+
+525
+01:09:48,079 --> 01:10:07,359
+diye düşünüyorum. Ve yine şey, hepsi unique olsun kolaylık açısından. Aynı ID'li bir şey olmasın diyoruz ki, hani ay ben bunu da buldum, şunu da buldum gibi bir durum oluşmasın diye. Tamam. Şimdi şunu temizleyelim. Evet. Kuyruğu bir daha yazayım. 11.
+
+526
+01:10:08,692 --> 01:10:11,111
+Ya da böyle yazmayayım, tekst olarak yazayım.
+
+527
+01:10:11,771 --> 01:10:15,891
+11, 26, 43, 75.
+
+528
+01:10:17,332 --> 01:10:17,692
+Tamam.
+
+529
+01:10:18,211 --> 01:10:22,371
+Ve ben bunun içinden mesela 43'ü silmek istiyorum.
+
+530
+01:10:22,791 --> 01:10:23,152
+Aradan.
+
+531
+01:10:23,791 --> 01:10:26,391
+Şimdi diyeceksiniz ki, hocam biz zaten bunu dizide tutuyoruz.
+
+532
+01:10:26,471 --> 01:10:29,811
+Dizide arama yaparak 43'ü bulurum, silerim, kaydırırım.
+
+533
+01:10:30,231 --> 01:10:35,451
+Hayır, biz bunu queue işlemleriyle yapılması gerektiğini söylemiştik soruda.
+
+534
+01:10:36,532 --> 01:10:41,231
+Birinci maddedeki fonksiyonu sırayla tüm queue'yu yazdırıyor sandım.
+
+535
+01:10:44,712 --> 01:10:49,252
+Aslında zaten mantık olarak öyle çalışması beklenir.
+
+536
+01:10:49,372 --> 01:10:53,811
+Yani siz bir printerssınız, sürekli kuyruktaki işleri dequeue edip çağırırsınız değil mi?
+
+537
+01:10:53,932 --> 01:10:57,072
+Yani while not empty print dersiniz.
+
+538
+01:10:57,852 --> 01:10:59,752
+Çözüm değerlendirmeye alınır.
+
+539
+01:11:00,435 --> 01:11:25,695
+sıkıntı yok. Şimdi gelelim şu şeye. Madem öyle, söyle bakalım buradaki 43'ü kuyruk operasyonlarıyla nasıl silebilirim? Evet, ne dedik? İkinci bir kuyruk kullanabilirsiniz dedik. İkinci kuyruğu da şuraya koydum. Şöyle gözlerinde yapayım.
+
+540
+01:11:30,644 --> 01:11:38,164
+Hatta dur bakayım bir tane daha. Şöyle o kuyruğu yukarıda şey yapalım. Şunu da şöyle yazalım. Daha bir güzel olsun.
+
+541
+01:11:45,076 --> 01:11:47,995
+Bu şeyleri de içine yazalım.
+
+542
+01:11:47,995 --> 01:11:56,056
+11, 26, 43, 75.
+
+543
+01:11:57,095 --> 01:11:58,115
+Tamam.
+
+544
+01:11:59,956 --> 01:12:02,995
+Evet, çözen bir arkadaş anlatsın. Ben yoruldum.
+
+545
+01:12:03,975 --> 01:12:05,095
+Biraz boğazım dinlensin.
+
+546
+01:12:09,043 --> 01:12:10,104
+Kimse çözmedi mi?
+
+547
+01:12:13,876 --> 01:12:15,996
+O zaman ben olası bir çözüm söyleyebilirim.
+
+548
+01:12:16,355 --> 01:12:17,336
+Hadi söyle yazayım.
+
+549
+01:12:18,576 --> 01:12:26,876
+İkinci bir kuyrukta yine bu şekilde dequeue ede ede buradaki dequeue ettiğimiz nodları oraya enqueue edebiliriz.
+
+550
+01:12:27,976 --> 01:12:32,976
+11'i dequeue ettim, enqueue ettim. 26'yı dequeue ettim, enqueue ettim.
+
+551
+01:12:34,163 --> 01:12:40,884
+Kuyruk uygulana kadar veya istediğimiz elemanı aradığımız elemanı bulana kadar devam ediyor bu işlem.
+
+552
+01:12:41,323 --> 01:12:42,743
+Tamam, bunu buldum. Şimdi ne yapacağım?
+
+553
+01:12:43,443 --> 01:12:46,863
+Degio edip çöpe atacağım. Hiçbir şey yapacağım.
+
+554
+01:12:47,203 --> 01:12:50,423
+Tamam, okey. Çarpı koyayım şöyle. Bunu ne yapacağım?
+
+555
+01:12:51,507 --> 01:12:57,847
+Hiçbir şey yapmayacağım. Tekrar gidip o dequeue ettiğim elemanları enqueue edeceğim.
+
+556
+01:12:58,188 --> 01:13:00,087
+Bu queueue mu? Üstteki queueue mu?
+
+557
+01:13:00,367 --> 01:13:01,167
+Anaqueue, evet.
+
+558
+01:13:01,507 --> 01:13:06,007
+Buna hiçbir şey yapmadın. Şimdi bunu dequeue edip buraya enqueue edersen bu buraya gelir.
+
+559
+01:13:06,431 --> 01:13:08,431
+DQ edip enQ ederse buraya gir.
+
+560
+01:13:08,511 --> 01:13:12,451
+Tam tersi, o kalan elemanı enQ edeceğim, kalan elemanları enQ edeceğim.
+
+561
+01:13:12,671 --> 01:13:16,931
+Ve geçici kuyruğu yeni ana kuyruk olarak kullanacağım.
+
+562
+01:13:17,931 --> 01:13:20,332
+Tamam, bak şimdi o zaman şöyle geri alalım biraz.
+
+563
+01:13:21,751 --> 01:13:25,631
+11, 26'yı buraya, yani yedek kuyruk dedik şimdi buna.
+
+564
+01:13:25,731 --> 01:13:27,832
+11 ve 26'yı buraya enQ ettik.
+
+565
+01:13:28,391 --> 01:13:31,531
+43'ü bulduk, sildik, yani deQ ettik, attık gitti.
+
+566
+01:13:32,291 --> 01:13:33,771
+Hiçbir şey yapmadık onunla ilgili.
+
+567
+01:13:34,323 --> 01:13:46,443
+Ama kuyruk boşalana kadar aslında devam ediyor olmam lazım. Demek ki ben bu 75'i de buradan alıp buraya eklemeliyim. Değil mi? Enküetmeliyim.
+
+568
+01:13:46,443 --> 01:13:54,983
+Sonra da ana pointerı bu şey gösterecek. Bu noktada iki tane çözüm var. Nasıl?
+
+569
+01:13:55,572 --> 01:13:57,371
+Sınavda olmayınca yapılıyor hocam.
+
+570
+01:13:58,451 --> 01:14:17,351
+Tamam, bak şimdi şöyle. Bu çözüm çok güzel bir çözüm. Eğer bunu düşünürseniz, hani bir flag koyup hangi kuyruktan print ediyorum diye, onun pointerını print fonksiyonuna yollarsanız çok güzel bir çözüm olur. Bu optimum çözüm. Hani bunu yapanınız olduysa harika. Tam 30 puanı alır.
+
+571
+01:14:18,011 --> 01:14:23,072
+Ne yapacağım? Artık ben şu kuyruktan işlem vermeye devam edeceğim. Burası benim yedek kuyruğum olacak.
+
+572
+01:14:23,891 --> 01:14:45,952
+Ya da hani sınav stresiyle hiç bu şeye derde girmeden tekrar şunu alıp şurayı temizleyeyim. Nerede bunun silgisi? Şunları şöyle silelim. Hadi be silsene. Arada şeyi de sildik. Neyse çizelim onu. Kuyruğumuzu.
+
+573
+01:14:46,420 --> 01:15:00,600
+Tamam. Tekrar bu yedek dizi ya, hani yedek kuyruk ya, ben sadece bu kuyruktan çalışıyorum ya mesela, tekrar buradan hepsini enq, zaman deq edip gerçek birinci şeye deq ederim.
+
+574
+01:15:01,819 --> 01:15:13,300
+Enq ederim. Yani 11'i buradan alırım, deq ettim, 11'i buraya yazarım. 26'yı deq ederim, buraya enq ederim, 75'i deq ederim.
+
+575
+01:15:13,811 --> 01:15:14,771
+Enküe ederim.
+
+576
+01:15:15,731 --> 01:15:15,912
+Tamam.
+
+577
+01:15:16,332 --> 01:15:20,471
+Yani yedek dizi, pardon, yedek kuyruk işte bu şekilde kullanılabilir.
+
+578
+01:15:20,672 --> 01:15:22,832
+Yani oradan doldur boşalt yapmanız gerekiyor.
+
+579
+01:15:24,172 --> 01:15:26,111
+Boşalt doldur yapmanız gerekiyor.
+
+580
+01:15:27,011 --> 01:15:31,351
+Deyim olarak doldur boşalt diyoruz ama operasyon olarak boşaltıp dolduruyoruz tabii ki.
+
+581
+01:15:31,731 --> 01:15:55,391
+Ya da arkadaşlarınızın da dediği gibi bir tane daha bir şey kullanıp bir switch pointerı hangisini kullanıyorum diye. Burası zaten enqueue ettim. Artık olması gereken temizlenmiş şey burasıdır, kuyruk burasıdır deyip o print bilmem ne fonksiyonuna bu kuyruğu yazdır diye buradan devam edebilirsiniz. Bu da bir çözüm.
+
+582
+01:15:55,731 --> 01:15:57,471
+Hocam tek kuyruk üzerinde olmaz mı?
+
+583
+01:15:58,671 --> 01:15:59,211
+Nasıl olacak?
+
+584
+01:15:59,631 --> 01:16:03,631
+Kuyuluktaki eleman sayısını biliyorsak, sondan çıkarıp tekrar arkasını yapabilirsin.
+
+585
+01:16:03,631 --> 01:16:05,231
+Circleer Q ile yapabilirsin, evet.
+
+586
+01:16:06,051 --> 01:16:07,931
+Yapamadım ama şu an geldi aklıma.
+
+587
+01:16:08,391 --> 01:16:13,771
+O da bir yol ama o biraz daha düşünmeniz ve şey yapmanız gereken bir yol.
+
+588
+01:16:13,851 --> 01:16:19,652
+Circleer Q ile de yapabilirsin, evet. O zaman hiçbir şeye gerek yok dediğin gibi. Sen söyle.
+
+589
+01:16:20,243 --> 01:16:27,563
+Yedek dizi kullanmadan ama orada da pointerları dikkatli, front rearları bilmem ne de dikkatli şey yaparak halledebilirsin.
+
+590
+01:16:30,343 --> 01:16:35,303
+Ama en basit çözüm bu. Ben olsam böyle çözerdim sınavda.
+
+591
+01:16:36,043 --> 01:16:37,403
+Ben bir soru sanıyorum.
+
+592
+01:16:38,243 --> 01:16:41,503
+Bir saniye. [öğrenci] bir şey yazdı. Önce onu bir okuyayım.
+
+593
+01:16:42,103 --> 01:16:45,067
+Sileceğimiz sayfaya ulaşana kadar kuyruktan...
+
+594
+01:16:45,076 --> 01:17:00,935
+Çıkardığımızı geri aynı kuyruğa tamam. Evet. Ama işte circular bir mantık kurgulamanız lazım. Onu söyledim. Dikkat ederseniz eğer yaptıysanız, yapabildiyseniz o da kabul. Yani gördüğünüz gibi üç farklı yol. Üçüncü yolu da circular queue ile söyledik. Evet. Şimdi seni dinliyorum.
+
+595
+01:17:00,935 --> 01:17:07,855
+Ben yedek kuyruğu ana kuyruk yaptım. Ama ana kuyruğu yedek kuyruk yaptım. Ona free list ettim.
+
+596
+01:17:08,627 --> 01:17:11,987
+Algoritmaların başında mallotla yedek kuyruğu bulun.
+
+597
+01:17:12,927 --> 01:17:15,967
+Her seferinde yedek kuyruğu yeniden mi oluşturuyorsun?
+
+598
+01:17:16,287 --> 01:17:16,527
+Evet.
+
+599
+01:17:18,387 --> 01:17:24,887
+Peki, oluştur. Tamam. Yani gereksiz bir iş yüküyor ama olur. Çözüm. Yani yanlış bir çözüm değil.
+
+600
+01:17:25,387 --> 01:17:27,907
+İyi, yani doğru ama efektif değil diyelim.
+
+601
+01:17:29,067 --> 01:17:29,627
+Ne oldu hocam?
+
+602
+01:17:30,267 --> 01:17:32,407
+Ama olabilir. Yani o da mantık dahilinde.
+
+603
+01:17:32,756 --> 01:17:37,956
+Ben olsam, ya dediğim gibi, ben çözecek olsam, bu kuyruğun bir tane duplikesini yaratırım.
+
+604
+01:17:38,916 --> 01:17:45,756
+Ondan sonra da aradan sil fonksiyonu çalıştığında, demin gösterdiğimiz gibi buradan boşaltıp buraya doldururum.
+
+605
+01:17:46,556 --> 01:17:48,395
+O hariç, sildiğim eleman hariç.
+
+606
+01:17:48,975 --> 01:17:53,836
+Sonra da bundan devam et kardeşim diye bir tane pointer artık bu şeyden yollarım.
+
+607
+01:17:54,155 --> 01:17:59,056
+Bio, bio, bio, bio şeklinde devam eden bir yapı kurgulardım diye düşünüyorum.
+
+608
+01:18:00,500 --> 01:18:22,760
+Peki, okey, bu da tamam. Bu soruda bir sıkıntı olmuş sistemde. 30 dakika kalmış, o yüzden 25 geçemine sistem kapanmış. Bu konuda mağdur olduğunu düşünen ve bu sorunun yerine ben bu soruyu istemiyorum, yani bu çözümümü istemiyorum. Onun yerine başka soru istiyorum diyen var mı?
+
+609
+01:18:24,300 --> 01:18:25,320
+Yani güzel olur bence.
+
+610
+01:18:26,003 --> 01:18:28,963
+Tabii gelecek sorunun da düzeyi aynı olursa.
+
+611
+01:18:29,523 --> 01:18:34,183
+Gelecek sorunun düzeyi aynı olur ama hani bu şey gibi böyle bir inline mazeret gibi düşünün bunu.
+
+612
+01:18:36,163 --> 01:18:43,683
+Yükleyemeyen kim var? Aslında kimse yok galiba çünkü mail attı herkes ve aslında atanların da hepsi yüklemişti.
+
+613
+01:18:45,263 --> 01:18:53,323
+Sadece bir arkadaş var. Ben hani 5 dakika kala hala yükleyemedim diyen sadece bir arkadaş var.
+
+614
+01:18:54,036 --> 01:19:03,175
+O yüzden hani şimdi güzel olur ayrı bir şey ama ben çözmüştüm ama son işte 5 dakika kala kapandığı için yükleyemedim diyen sadece bir kişi var.
+
+615
+01:19:03,735 --> 01:19:06,935
+Hocam yüklemekte de şöyle bir sıkıntı oldu ben de mail atmıştım size.
+
+616
+01:19:07,456 --> 01:19:12,195
+Ben 30 dakika olduğunu bildiğim için erkenden sisteme soruyu yükledim ama daha çözümü bitirmeden yükledim.
+
+617
+01:19:12,564 --> 01:19:24,924
+Ondan sonra sistem kapandı doğal olarak. Sınavın mailde 35 dakika diyordu. Ondan sonra tekrar 35 dakika süresi uzatma oldu mu 35 dakikaya? Olmadı. Olmadı mı? Herkes 30 dakika üzerinden. Herkes aynı.
+
+618
+01:19:25,460 --> 01:19:44,440
+Kimseye uzatma olmadı. O da şeyden dolayı olmuş. Aşağıda dakikayı puanla yanlış yazmışım. Yani 30 puan ya soru. Dakika diye puanı yazmışım. Böyle işte şeyler oluyor. Keşke 30-30 kalsaydı. Normalde 30'du da bizi sonradan 5 dakika daha verelim diye konuştuk aslında.
+
+619
+01:19:44,440 --> 01:19:48,060
+O şekilde olunca aslında soruyu biz 30'da alet atamadık.
+
+620
+01:19:48,500 --> 01:20:00,000
+Yani sorunun hakkı 30 dakikaydı, öyle söyleyeyim size. Sonradan hadi 5 dakika daha verelim dedik. O yüzden arayı kısalttık, sesini birbirine oturtturduk. Zaten fark etmişsinizdir. Ama orada 30...
+
+621
+01:20:00,000 --> 01:20:24,579
+Sos kalınca sistem kapatıyormuş. Açıkçası ben kapatmasını beklemiyordum. Sonuçta ben orada kapanma saatini zaten vermişim. Garip orayı ben de şey yapamadım. Tam olarak algılayamadım. Yazmazsan ne olur mesela? Hiç mi açmayacak soruyu? Mesela dakikayı girmedim. Ne olacak o zaman? Ya da dakikayı sıfır yazdım. Ne olacak? Hiç mi göremeyeceksiniz o soruyu?
+
+622
+01:20:25,108 --> 01:20:26,547
+Bir garip saçma bir durumu.
+
+623
+01:20:26,547 --> 01:20:36,367
+Oradaki başlangıç bitir saati. Mesela siz aralığı uzun tutarsanız kişi istediği zaman girip 30 dakika sınav alıp çıkabiliyor. Mesela 3 saat yapıp 30 dakikalık sınav yapabilirsiniz.
+
+624
+01:20:36,487 --> 01:20:38,268
+Listen istediği zaman girer. O yüzden yani.
+
+625
+01:20:38,688 --> 01:20:40,287
+He mantık o muymuş orada?
+
+626
+01:20:40,807 --> 01:20:43,127
+Evet. Duration aslında sınav süresi.
+
+627
+01:20:43,387 --> 01:20:50,207
+Anladım. Ben de şimdi yeni öğrendim. Neyse. Nihayetinde hepiniz 30 dakika verildiği için aslında bir sıkıntı yok diyelim o zaman.
+
+628
+01:20:50,447 --> 01:20:53,108
+Madem ki bunu biliyorsunuz o zaman 35 dakika...
+
+629
+01:20:53,108 --> 01:20:59,148
+30 dakika olarak kullanın. Bir sıkıntı yok. Herkes aynı şekilde yaptı çünkü. Tamam.
+
+630
+01:20:59,827 --> 01:21:01,567
+Hocam ben bir şey sorabilir miyim? Sor.
+
+631
+01:21:02,327 --> 01:21:06,667
+Soruları nasıl okuyorsunuz? Çalıştırıyor musunuz bunları yoksa direkt şey mi? Göz kontrolü mü?
+
+632
+01:21:06,787 --> 01:21:17,587
+Önce okuyorum. Önce bir benzerlik analizine bakıyoruz. Ortak çalışma var mı diye. Ondan sonra şeye bakıyoruz. Koda bakıyoruz.
+
+633
+01:21:19,220 --> 01:21:35,220
+Anlattım ya, algoritması nasıl diye bakıyoruz. Ondan sonra da çalıştırıyoruz. Eğer algoritması doğru ve düzgün çalışıyorsa, sıkıntısız çalışıyorsa puanı alıyor, tam puanı. Eğer çalışmıyorsa mesela, kodda hatalar varsa...
+
+634
+01:21:35,615 --> 01:21:45,975
+O zaman ona göre dereceli olarak kırıyoruz. Ama algoritma yanlışsa doğal olarak mantıklı bir çözüm değilse o zaman tabii ki daha da fazla kırılıyor.
+
+635
+01:21:45,975 --> 01:21:53,975
+Yani şimdi verilen bütün inputlar için doğru çalışması beklenir. Sadece printf034'den de cevap olmaz. Onu demek istiyorum.
+
+636
+01:21:54,456 --> 01:22:00,956
+Peki bizim kendi yazdığımız main içerisinde biz kendimiz mesela bir test yazdıysak sadece ona mı bakıyorsunuz? Kendiniz bir test uyguluyor musunuz?
+
+637
+01:22:00,975 --> 01:22:03,355
+Kendimiz uyguluyoruz canım. Test case'ler bizde.
+
+638
+01:22:03,615 --> 01:22:05,916
+İyi valla.
+
+639
+01:22:08,216 --> 01:22:14,456
+Hiç şeylere girmiyor musunuz? Hacker rank bilmem ne, ıvır kıvır yerlerden test çözmüyor musunuz?
+
+640
+01:22:15,296 --> 01:22:17,456
+Sınavlardan pek vakit kalmıyor hocam.
+
+641
+01:22:17,855 --> 01:22:30,475
+Ama çalışın, çözün yani onları. Neden çözün diyorum biliyor musunuz şimdiden? Hani daha ikinci sınıftasınız ama büyük bir ihtimalle seneye hepiniz part time falan çalışmaya başlayacaksınız. Dördüncü sınıfta da hatta çoğunuz full time çalışacak.
+
+642
+01:22:30,868 --> 01:22:41,427
+Bütün iş görüşmelerine gittiğinizde önce şunu çöz de bir puanını görelim diye size bu algoritma sorularını hacker rankten, lead code'dan oradan buradan verecekler.
+
+643
+01:22:42,547 --> 01:22:54,087
+Çözmenizi bekleyecekler. O yüzden eliniz alışsın. Şimdiden hazır daha bilgiler tazeyken, sıcakken, algoritmik tasarlama ve çözüm geliştirme yönünüzü geliştirirseniz sizin için iyi olur.
+
+644
+01:22:54,087 --> 01:22:58,347
+Şimdiden şey olarak düşünün bunu bir abi tavsiyesi olarak düşünün.
+
+645
+01:22:58,868 --> 01:23:02,728
+İş hayatında önemli bir kriter olarak karşınıza çıkacak.
+
+646
+01:23:04,087 --> 01:23:08,188
+Hocam açıkçası ben yapmak isterim ama okul sınavlarında bir daha hiç yüzüne bakmayacağım.
+
+647
+01:23:08,307 --> 01:23:12,448
+Ders bile o kadar zorlayınca yani ödevdi buydu şuydu.
+
+648
+01:23:12,708 --> 01:23:14,228
+Ya pek zaman kalmıyor açıkçası benim adım.
+
+649
+01:23:14,248 --> 01:23:15,948
+Kimin olun hayat daha çok zorlayacak sizi.
+
+650
+01:23:17,648 --> 01:23:19,627
+Daha bir şey yok ortada.
+
+651
+01:23:21,148 --> 01:23:22,268
+Bunlar iyi günleriniz.
+
+652
+01:23:22,648 --> 01:23:23,087
+Ne güzel.
+
+653
+01:23:23,748 --> 01:23:24,887
+Evet, maalesef.
+
+654
+01:23:25,264 --> 01:23:32,984
+Evet, [öğrenci] seni de dinleyeyim. Ondan sonra bir ara verelim. Saat 11.30'a geliyor. Daha bu konuya başlayamadık bu haftaki.
+
+655
+01:23:33,984 --> 01:23:37,423
+Evet hocam, son soruyla ilgili ben de bir şey söylemek istiyorum mümkünse.
+
+656
+01:23:38,804 --> 01:23:57,804
+Açıkçası ben keşke hani şu olsa dediğim bir konu var. NQVDQ. Ben yazdım. Hani benim kendi yazdığım şey var. İplantasyon var. Ama herkesin hani CEO olduğu için herkesin implantasyonu çok farklı olabilir. Global değişkendir, işte nodların adresleri atama vesaire. Yani benim orada yazdığım mesela sizin...
+
+657
+01:23:58,576 --> 01:24:17,576
+Kurguladığınız yatıyla nasıl çalışacak ve main fonksiyonu içinde hiçbir şey yazmadım. Şu an bana saçma geliyor ama sınav esnasında benim düşündüğüm şuydu. Kullanıcı girecek, interaktif bir platform var. Sürekli o yolladığı konutları belli bir zaman sonra gerçekleştiriyor.
+
+658
+01:24:17,952 --> 01:24:24,952
+Bu da thread gerektiriyor. Böyle bir şeyin zaten sınav esnasında yapılması bana çok imkansız geldi ve onu çok düşündüm.
+
+659
+01:24:24,952 --> 01:24:32,952
+15 dakika kadar bir baktım ki 10 dakika kalmış sistemde. O yüzden baya bir karışık oldu hocam.
+
+660
+01:24:32,975 --> 01:24:50,635
+O bakımına. Keşke nQVDQ işlemlerini verseydiniz ve keşke üçüncü madde biraz daha açık olsaydı. Çünkü main fonksiyonunda ben mesela hiçbir şey yazamadım. Çünkü nasıl bir output beklediğinizi bilmiyordum. Diğer sorularda mesela output'u vermiştiniz. Keşke öyle olsaydı diyorum açıkçası.
+
+661
+01:24:55,315 --> 01:24:56,576
+Mikrofonunuz kapalı hocam.
+
+662
+01:25:00,979 --> 01:25:16,399
+Pardon. Ana programı C dilinde yazın diyor. Yani ben anlamadım. Bu fonksiyonları kullanarak yazma isteklerini alan, yazılmasını sağlayan ve silme isteklerini yapan ana programı C dilinde yazınız. Ana program ne demek? Main değil mi?
+
+663
+01:25:17,235 --> 01:25:37,875
+Evet, main ama işte oraya nasıl bir autot bekliyorsunuz? Nasıl çıktı bekliyorsunuz? Kullanıcı mı interaktif olarak print diyecek? İşte ondan sonra printler otomatik mi print ediliyor? Yoksa kendisi mi demesi gerekiyor yazıcıya? Hadi sen hani oradan yazdın vesaire. Yoksa otomatik orada sadece bir takım fonksiyonlar çalıştırılıp.
+
+664
+01:25:38,015 --> 01:25:44,595
+Orası size kalmış. Yani ben dedim ya forun içinde sadece printf yaz. Hani sayfa yazdırıldı diye. Yeter bir şey istemiyoruz ki orada.
+
+665
+01:25:45,587 --> 01:25:48,748
+Yani hocam açıkçası nQVDQ hani...
+
+666
+01:25:48,748 --> 01:25:58,587
+Starter kod konusu var [öğrenci] söylemiş. Onu da açıkçası biz konuştuk. Özellikle size bıraktık. Aslında nQVDQ burada sizden beklemiyoruz. Sizden beklediğimiz diğer fonksiyonlar.
+
+667
+01:25:58,988 --> 01:26:06,887
+Yani şu yedek ya da circular bir kuyruk mekanizmasını kurgulayıp dolduru boşaltı düzgün yaptınız mı yapmadınız mı? O kodda ona bakacağız.
+
+668
+01:26:07,328 --> 01:26:11,028
+Ama nQDQ olmadan test edemiyoruz ki hocam. Çalıştıramıyoruz programı yani.
+
+669
+01:26:11,148 --> 01:26:22,587
+Sen merak etme. Elimizde uygun nQDQ'lar da var. Hani linkli listeli olanı da var, dizili olanı da var. Büyük ihtimalle çalıştırırız yani. Sıkıntı yaşamayız.
+
+670
+01:26:24,768 --> 01:26:52,387
+Daha hızlı olsun diye nQ'de queue'yu zaten yazmayın dedik. Onu mesela verseydik de şöyle bir sıkıntı vardı. Ben mesela linked listeyle verirdim onu. Ondan sonra siz bana diyeceksiniz, o hocam zaten şu kadar şeyde şöyle uğraşıyoruz, şunu dizili olsaydı niye linked listeyle yaptınız? Ya da niye biz bunu böyle uğraşıyoruz? Ben bunu böyle yazmamıştım, diziyle yazmıştım diyebilirsiniz. O yüzden orası açık, size kalmış durumda. nQ'de queue istediğiniz gibi düşünün, kullanın.
+
+671
+01:26:52,768 --> 01:26:56,887
+Vurgunuzu ona göre yapın. Diziyle yapabilirsiniz. Linkli listeyle yapabilirsiniz.
+
+672
+01:26:57,528 --> 01:27:01,788
+Yani ikisinin de doğal olarak fonksiyon çözümleri, beklediğimiz fonksiyonları farklı olacak.
+
+673
+01:27:02,323 --> 01:27:30,323
+İkisi de doğru ama. Hani şey değil. Ama ben size özellikle birini verseydim öbürünü yazan arkadaşların şeyi patlayacaktı, kodu patlayacaktı ya da hani ben bunu yazmamıştım, ben bunu linkli listeyle yapmamıştım diyeceklerdi. O da ekstra bir ne derler haksızlık doğurabilir diye özellikle böyle bir starter kod size vermedik. Yani hazır fonksiyonları vermedik. Vermeyi yalnız düşündük, konuştuk, tartıştık ve vermemenin, size bırakmanın ve sizden de bunları bekleyin.
+
+674
+01:27:30,323 --> 01:27:32,563
+Beklememenin daha doğru olduğunu düşündük.
+
+675
+01:27:33,083 --> 01:27:38,443
+Yani bu sorudaki esas beklenti biraz önce konuştuk ya yedek dizi kullanımı.
+
+676
+01:27:38,923 --> 01:27:47,803
+Hele bir de üzerine yapabilirseniz hani ekstra bir şeyle bir semaforla bu kuyruk şu kuyruk diye yollayabilmeniz print fonksiyonuna.
+
+677
+01:27:47,803 --> 01:27:52,143
+Bu çok güzel olur ama beklemiyoruz. Yani direkt tekrar kopyalayabilirsiniz geri.
+
+678
+01:27:52,564 --> 01:28:01,544
+Ya da circular queue üzerinde bunu bir şekilde yapabilmeniz. Yani bu aslında sorunun odak noktası. Çözdünüz mü çözmediniz mi noktası burası. Okey?
+
+679
+01:28:03,824 --> 01:28:04,704
+Anladım hocam.
+
+680
+01:28:06,984 --> 01:28:19,904
+Şimdi saat 11.29 oldu. 11.30 desek. Kaç dakika ara vereyim? 15 dakika bir ara vereyim. 11.45'te dersimize geçelim, blok yapalım, bitirelim.
+
+681
+01:28:20,372 --> 01:28:20,811
+Tamam.
+
+682
+01:28:23,032 --> 01:28:26,632
+Peki, o zaman 11.45'te görüşüyoruz.
+
+683
+01:28:27,032 --> 01:28:29,172
+Şöyle konumuzu da açalım.
+
+684
+01:28:29,752 --> 01:28:32,252
+Öncelikli kuyruk, priority queue.
+
+685
+01:28:33,692 --> 01:28:35,492
+Memory leakler ne kadar sorun?
+
+686
+01:28:36,712 --> 01:28:41,192
+Yani segmentation fault veriyorsa sorun, vermiyorsa çok sorun değil.
+
+687
+01:28:43,028 --> 01:28:49,167
+Dizilerde uç nokta kontrolü falan gibi mi? Döngülerde sıkıntı mı oldu? Bilmiyorum, bakacağız.
+
+688
+01:28:51,068 --> 01:28:59,828
+Free etmek mi? Etseniz iyi olur, etmezseniz de bu etmemiş, çalışmıyor, al sana sıfır diye bir durum yok.
+
+689
+01:29:02,007 --> 01:29:08,368
+Tamam, peki. Hadi bakalım. Biraz 15 dakika ara. Çeyrek gala. Başlıyoruz.
+
+690
+01:46:21,779 --> 01:46:28,699
+Evet arkadaşlar, 9. haftadayız ve yolumuza devam ediyoruz.
+
+691
+01:46:29,019 --> 01:46:35,519
+Şimdi bu haftaki konumuz öncelikli kuyruk yani Priority Queue veri yapısı.
+
+692
+01:46:36,019 --> 01:46:43,679
+Aslında yeni bir veri yapısı değil. Geçen haftayla, vizeden önceki haftayla çok benzeşiyor.
+
+693
+01:46:43,839 --> 01:46:47,979
+Zaten aynı veri yapısını kullanarak aslında implementasyonunu gerçekleştireceğiz.
+
+694
+01:46:48,564 --> 01:46:57,543
+Biraz daha böyle kod detaylarını falan da paylaşacağım. Bu haftaki derste ilerleyebilirsek.
+
+695
+01:46:59,804 --> 01:47:10,043
+Nedir şimdi bu öncelikli kuyruk mekanizması? Nerelerde kullanılabilir? Ne işe yarar? Ve bunu nasıl gerçekleştirebiliriz? Bunları öğrenmeye başlayalım.
+
+696
+01:47:10,612 --> 01:47:21,271
+Şimdi bu yine bir veri yapısı ve bir eleman kümesinden oluşuyor. Yani aynı tipteki elemanlar kümesinden oluşan, bunları bir arada tutan bir veri yapısı.
+
+697
+01:47:21,952 --> 01:47:29,152
+Farkı ne peki? Farkı, değerlerimizin hepsini bir anahtar değer ile ilişkilendirerek tutmaya çalışıyoruz.
+
+698
+01:47:29,152 --> 01:47:35,920
+Yani bir anahtar değer bunların büyük ya da küçük olmasına göre...
+
+699
+01:47:35,920 --> 01:47:46,640
+Ben bir nodu, bir elemanı önceliklendirebilirim ve önceliklendirdiğim sıra ile bunları işlemek ya da bunlara hizmet vermek isteyebilirim.
+
+700
+01:47:48,160 --> 01:48:01,820
+Bunu bir heap mekanizması ile tasarlarsam eğer, işlenecek eleman, işte mesela en büyük önceliğe sahip ya da en küçük sıra numarasına sahip eleman gibi düşünebilirsiniz.
+
+701
+01:48:02,336 --> 01:48:05,876
+Her zaman birinci gözde olacağı için bize kolaylık sağlar.
+
+702
+01:48:06,016 --> 01:48:16,276
+Yani hipten çektiğimizde ya da hipteki birinci elemanın kim olduğuna baktığımızda O1 ile bakarız ama çektiğimizde de login karmaşıklıkta bu işlemi gerçekleştirebiliriz.
+
+703
+01:48:16,276 --> 01:48:26,556
+En tane elemanın olduğu bir yerde login karmaşıklıkla sıradaki kişiye hizmet verip ondan sonra sırada kimin geleceğini de hazırlamış.
+
+704
+01:48:27,220 --> 01:48:42,060
+Ve yani bir sonraki hizmet alacak olan node'un ya da kişinin ya da işte elemanın kim olduğunu da yine login karmaşıklık içinde çözmüş ya da halletmiş, kuyruğu tekrar organize etmiş oluruz.
+
+705
+01:48:42,820 --> 01:48:45,840
+Dediğim gibi priority queue temelde aslında bir heap.
+
+706
+01:48:46,300 --> 01:48:50,840
+Heap'te de tuttuğumuz değerler aslında onların öncelik numaraları olacak.
+
+707
+01:48:51,475 --> 01:49:17,015
+Şimdi önce bir şeye bakalım. Max priority queue'ya bakalım. Yani max heap ile yapabileceğimiz öncelikli kuyruğa bakalım. Ne demek bu? Yüksek önceliğe sahip olan önce hizmet alacaktır demek. Şöyle bir şey düşünelim. İşletim sistemimiz var. Zaten işletim sistemlerindeki process schedulerlar bu şekilde çalışır. Çalışan işletim sistemleri mevcuttur.
+
+708
+01:49:19,475 --> 01:49:35,175
+Şimdi işlemin nesi var? Process ID'si var. Process ID'si ile birlikte bağlı bir sürü değişken değerleri bilmem neleri var. Şimdilik onlara girmeye da adresleri var. Bellek adresleri ve kod adresleri gibi.
+
+709
+01:49:36,340 --> 01:49:59,380
+Ama işletim sistemi açısından baktığınızda bu bir hizmet almak isteyen proses, sistem kaynaklarına erişmek isteyen bir proses ve ben bunları bir şekilde önceliklendirmeliyim ki onun her birinin nasıl hizmet alacağını ya da sistem kaynaklarına ne kadar erişebileceğini ya da onları ne kadar kullanabileceğini önceliklendirebileyim ya da organize edebileyim.
+
+710
+01:50:00,000 --> 01:50:07,139
+Şimdi bunun için ben her bir prosese bir öncelik değeri atarım.
+
+711
+01:50:07,599 --> 01:50:11,119
+Şimdi diyelim ki mesela en yüksek öncelik değeri işte mesela 100 olsun.
+
+712
+01:50:11,279 --> 01:50:12,699
+Hani 100 üzerinden düşünelim.
+
+713
+01:50:13,539 --> 01:50:16,559
+100 öncelikli bir iş demek ölümcül bir iş.
+
+714
+01:50:16,559 --> 01:50:23,239
+Yani başka her şey dursun mutlaka o çalışsın gibi bir iş olacaktır.
+
+715
+01:50:25,344 --> 01:50:32,283
+Ya da işte bir öncelikliyse de çok düşük öncelikli bir ara çalışır, bir ara ona da hizmet veririz diyebiliriz.
+
+716
+01:50:35,023 --> 01:50:42,163
+Ben bir iş bittiğinde, mesela proses bitti, yüksek öncelikliye hizmeti verdim.
+
+717
+01:50:42,319 --> 01:51:10,319
+Ondan sonra ya da o kesintiye uğradı, ayrılan zaman içinde çalışmasını bitiremedi. Bir sonraki işe bir şekilde, bir sonraki önceliğe sahip olan işe hizmet vermek isteyeceğim. Ne yapacağım? Aslında buradaki scheduler, şey proses scheduler yani zamanlayıcımız, sıradaki en yüksek önceliğe sahip olan işlemi kendi içinde tuttuğu öncelikli sıradan, priority queue içinden sadece tek bir...
+
+718
+01:51:10,319 --> 01:51:15,899
+Extract Max işlemi yaparak alabilir ve ondan sonra da o prosesi çalıştırabilir.
+
+719
+01:51:16,679 --> 01:51:26,159
+Bu zamanlayıcı yine proses scheduler herhangi bir anda herhangi bir öncelikle kuyruğa yeni eleman ekleyebilir.
+
+720
+01:51:26,931 --> 01:51:36,912
+Yani daha yüksek öncelikli bir iş de gelebilir, daha düşük öncelikli bir iş de gelebilir mevcut kuyruktaki işlerden. Arada bir yere, olması gereken yere bir şekilde onu eklemesi gerekir.
+
+721
+01:51:36,912 --> 01:51:50,152
+Ya da mesela işte şeyde Windows'da görev yöneticisine tıklayıp orada çalışan proseslere sağ tıkladığınızda set priority diye bir şey var mesela önceliğini arttır ya da azalt diye.
+
+722
+01:51:51,475 --> 01:51:57,376
+Bence gerektiğinde bir işin, bir prosesin önceliğini arttırabiliriz.
+
+723
+01:51:57,536 --> 01:51:59,576
+Ya da tam tersi tabii ki düşürebiliriz.
+
+724
+01:51:59,716 --> 01:52:02,635
+Daha aşağılarda daha sonra hizmet almasını da sağlayabiliriz.
+
+725
+01:52:03,155 --> 01:52:10,796
+Yani scheduler bunların hepsini bir şekilde öncelikli kuyruk üzerindeki işlemler ile hızlı ve efektif bir şekilde yapabilmeli.
+
+726
+01:52:10,796 --> 01:52:19,475
+Bunun için de aslında bir heap veri yapısı kullanarak hangi önceliğe sahip prosesse hizmet...
+
+727
+01:52:19,475 --> 01:52:42,195
+Yani sistem kaynaklarını sunacak. Ondan sonra onun işi bitti. Sırada hangi proses çalışmalı? Bir sonraki yüksek öncelikli şey kim, proses kimdir? Yine extract max yaparak heapten bunu öğrenip o prosesi devreye alabilir. Bu şekilde tabii sonsuza kadar ya da işletim sistemi kapatılana kadar bu işlem devam edebilir.
+
+728
+01:52:47,475 --> 01:53:00,536
+heap kullanarak yapabiliriz. Burada tabii, pardon, şeyden bahsetmedik. İşlemler nelerdir? İşte insert, max heap de. Max aslında sadece bakmak, birinci elemana bakmak.
+
+729
+01:53:01,492 --> 01:53:11,351
+En yüksek öncelikli elemanı kuyruktan çekmek ve mevcut bir elemanın anahtar değerini yani key values'unu arttırmak.
+
+730
+01:53:11,532 --> 01:53:22,971
+X önceliğine sahip de K önceliğine sahip olsun. K büyük eşit X olacak şekilde değerini arttırmak şeklinde, yukarı doğru onu taşımak şeklinde işlemler gerçekleştirilebilir.
+
+731
+01:53:24,724 --> 01:53:35,184
+min priority queue'ye geçtiğimizde de max yerine minler gelecek. Extract min ve sadece min, en küçük eleman nedir şeklindeki bakışlar yapılacak.
+
+732
+01:53:35,704 --> 01:53:46,604
+Şimdi buna örnek olarak şey verilebilir, olay güdümlü simülatör deyince böyle bir heyecan şey oluyor, event driven simulator. Ne demek bu?
+
+733
+01:53:46,604 --> 01:53:52,724
+Şimdi ben elimde bir simülatör var ve gelen işleri bir şekilde simüle etmeyeceğim.
+
+734
+01:53:52,724 --> 01:54:10,224
+Bu olayların gerçekleşme zamanları bunların anahtar değerleri. Ne demek istiyorum? Önce gerçekleşen bir olayın bir şekilde daha önce oluşması gerekiyor. Sonra gerçekleşen bir olayın daha sonra simülasyonda yer bulması gerekiyor.
+
+735
+01:54:14,836 --> 01:54:22,916
+Bir olayın simülasyonu, mesela gelecekte başka olayların olmasına ve bunların da simüle edilmesine neden olabilir.
+
+736
+01:54:23,676 --> 01:54:30,996
+Demek ki ben arada yeni şeyler ekleyebilirim, yeni düğümler buradaki öncelikli kuyruğa ekleyebilirim.
+
+737
+01:54:31,279 --> 01:54:35,179
+Ya da mevcut olayların sıralamasını belki de değiştirebilirim.
+
+738
+01:54:35,419 --> 01:54:41,359
+İşte ben böyle bir simülatörde zaman sıralamasıyla ya da zaman önceliğiyle çalışan bir simülatör yapmak istiyorsam,
+
+739
+01:54:41,719 --> 01:54:45,039
+hani şu olay oldu, bu olay oldu diye bunları çalıştırmak istiyorsam,
+
+740
+01:54:45,419 --> 01:54:54,519
+her seferinde ExtractMin ile en eski olan değeri, en küçük zaman değerine sahip olan değeri çekebilirim.
+
+741
+01:54:56,692 --> 01:55:04,811
+Mesela bu olayın olmasıyla beraber ileride başka olaylar da doğdu fakat mevcutlardan daha öncelikli olarak o olayın çalışması gerekiyordu.
+
+742
+01:55:05,211 --> 01:55:12,851
+İşte arada bir yere gelecek. Bunun için de insert kullanarak aslında mean priority queue'ya ekleme yapabilirim.
+
+743
+01:55:12,851 --> 01:55:17,851
+Bunun gündelik hayattaki bir diğer uygulaması.
+
+744
+01:55:17,887 --> 01:55:39,728
+Bankalar bilirsiniz. Şimdi bankalarda kuyruk, kümatik var. Hani şey geliyorsunuz. Direkt olarak numara alıyorsunuz. Şimdi numara aldınız. Bastığınız tuşa. Hani bir numara verdi. Ne verdi? 342. Sonrasında 343, 344 diye devam ediyor. Tabii ki hani sırayla veriyor bunları. İşte bunlar aslında sizin bankaya geliş sıranız.
+
+745
+01:55:40,467 --> 01:56:06,188
+Siz bugün gelen işte 300, tabii 300 demeyeyim de 42. müşterisiniz diyelim tamam mı? Sizden sonra gelip de düğmeye basan 43 numaralı. Aslında 43. sırada gelen müşteri falan filan. Bu şekilde devam ediyor. Peki ben bunları önceliklendirirken nasıl önceliklendireceğim? Önce 342'ye hizmet vereceğim düğmeye bastığında. Ondan sonra 343'e de hizmet vereceğim falan.
+
+746
+01:56:08,467 --> 01:56:15,108
+gelmiş, müşteri numarasını yazarak bir numara almış ve o bir şekilde 120 diye bir numara almış mesela.
+
+747
+01:56:15,967 --> 01:56:20,668
+120 numara alınca doğal olarak sizden daha öncelikli bir hale geldi.
+
+748
+01:56:20,788 --> 01:56:25,608
+Yani daha küçük değere sahip ya daha yüksek önceliğe sahip bir değer aldı.
+
+749
+01:56:25,608 --> 01:56:34,228
+İşte aslında oradaki kuyruk mekanizması 120 numarasını önceliklendirdiği için ve minimum değer olarak en tepeye atacağı için
+
+750
+01:56:34,771 --> 01:56:41,132
+eleman düğmeye basıp da bir sonraki müşteriyi çağırdığında aslında oluşan olay şu.
+
+751
+01:56:42,652 --> 01:56:44,771
+Sıradaki gelecek, ne gelecek?
+
+752
+01:56:44,971 --> 01:56:49,271
+İşte en küçük önceliğe sahip olan, 120 değerine sahip olan birisi gelecek.
+
+753
+01:56:49,712 --> 01:56:50,712
+Ama şöyle düşünelim.
+
+754
+01:56:51,351 --> 01:56:53,572
+Şuradan hemen şeyimizi alalım.
+
+755
+01:56:54,132 --> 01:56:56,192
+Şimdi 120 buraya geldi.
+
+756
+01:56:56,811 --> 01:56:57,172
+Tamam mı?
+
+757
+01:56:57,252 --> 01:57:02,752
+120'nin altında da işte şöyle 342 ve 343 burada durmaya devam.
+
+758
+01:57:02,771 --> 01:57:29,532
+devam ediyor diyelim şöyle heapimizde, priority queue'muzda. Şimdi şey geldi, daha da yağlı bir müşteri geldi ve gitti o da işte ne bileyim 10 numarayı aldı. Şimdi ne yapacak? 10 numarayı aldığı için 10 buradan yukarı buradan yukarı çıkacak. Aslında 10 en tepeye çıkıp, değil mi? 10'un altında işte bunlar yer değiştirdiğinde 120.
+
+759
+01:57:30,676 --> 01:57:34,155
+120'nin altında 342 ve
+
+760
+01:57:34,543 --> 01:57:56,644
+İşte 343 falan şeklinde şöyle kötü yazdım idare edin bir şey olacak ve hani kuyrukta beklerken tamam şimdi sıradaki kişi ben olacağım diyen 120 bilet numarasına ya da fiş numarasına sahip olan arkadaşın da önüne geçen bir anda 10 önceliğine sahip daha yağlı bir müşteri gelmiş olabilir.
+
+761
+01:57:57,003 --> 01:58:02,224
+Extract min yaptığında doğal olarak bu çıkacak ve ondan sonra işte 300 şey buraya gelecek.
+
+762
+01:58:02,543 --> 01:58:14,224
+Tekrar dizilecek. Nihayetinde 10 işlem gördükten sonra 120 işlem görmeye devam edecek ya da bekleyecek sırasını. O arada 342 ve 343 hala beklemeye devam edecek.
+
+763
+01:58:14,547 --> 01:58:33,027
+Genellikle bankalardaki biliyorsunuz kuyruk mekanizmaları bu şekilde işler ve aslında bir min priority queue ile bu arkasında çalışan algoritma tam olarak bir min priority queue kullanan çok basit bir sıradaki gelsin. Extract min diye çalışan bir algoritmadır.
+
+764
+01:58:34,228 --> 01:58:38,367
+Şimdi en küçük ya da en büyük elemanı bulmak, bunları hatırlayacağız heap'ten aslında.
+
+765
+01:58:38,648 --> 01:58:40,167
+Yine kopyaladık, yapıştırdık buraya.
+
+766
+01:58:40,247 --> 01:58:41,228
+Heap'in kök elemanı.
+
+767
+01:58:41,587 --> 01:58:43,547
+Şimdi en büyük üzerinden devam edelim, tamam mı?
+
+768
+01:58:43,608 --> 01:58:47,627
+Max heap üzerinden ya da max priority queue üzerinden devam edelim.
+
+769
+01:58:48,108 --> 01:58:53,108
+Oradaki max'ların hepsini mine çevirdiğinizde de doğal olarak hani min priority queue'yu yapmış olursunuz.
+
+770
+01:58:53,827 --> 01:58:56,188
+Buna bakmak heap maksimum nedir?
+
+771
+01:58:56,327 --> 01:58:57,268
+İşte return A1.
+
+772
+01:58:57,427 --> 01:58:59,967
+Yani A1'deki değeri sadece okuyoruz.
+
+773
+01:59:00,768 --> 01:59:01,448
+Çekmiyoruz.
+
+774
+01:59:02,228 --> 01:59:30,148
+C değerin ne olduğunu öğreniyoruz. O bir karmaşıklıkta neden tek bir işlem yapıyoruz. Bu nedenle de o bir karmaşıklıkla en küçük elemanın değerini ya da en büyük elemanın değerini okuyabiliyorum. Burada herhangi bir sıkıntımız yok. Şimdi extract max yapalım. Extract max tamamen heap'teki extract max ile birebir aynı. Ne yapmam lazım? İlk yapmam gereken kontrol heap'in boş olmaması gerekir.
+
+775
+01:59:30,228 --> 01:59:47,568
+Boş heap de extract max yapamam. Kök elemanın kopyasını çıkartırım. Şurada max eşittir A1 dedim. Sabit işlem. A1 eşittir AN diyerek hatırlayalım. En sondaki elemanla yerlerini değiştirdik. Ondan sonra son düğümü kök düğümü yaptık. Bilerek ve isteyerek.
+
+776
+01:59:48,020 --> 01:59:57,140
+Öncelikli kuyruk mekanizmamızı bozduk ve sonrasında eleman sayısını biraz azaltarak en eksi bir tane elemanla çünkü o kuyruktan çıktı artık.
+
+777
+01:59:57,619 --> 02:00:03,000
+Max heapify edip tekrardan heap özelliğine olmasını garanti ederiz.
+
+778
+02:00:03,860 --> 02:00:07,980
+Ve max değerini de beni çağrına veririm. Yazdırırım ya da döndürürüm.
+
+779
+02:00:08,920 --> 02:00:11,560
+Ekranda, led ekranda onun yazılmasını sağlarım.
+
+780
+02:00:11,560 --> 02:00:13,560
+Eğer bir şeydeysek, bankadaysak.
+
+781
+02:00:15,412 --> 02:00:24,952
+Maxi P5 yaptığımız için, öncesinde de sabit sayıda işlem yaptığımız için en kötü durum karmaşıklığımız log n mertebesinde olacaktır.
+
+782
+02:00:25,512 --> 02:00:42,272
+Yani şöyle düşünelim, işte 1024 tane müşteri kuyrukta bekliyorsa siz sadece 10 adımda bu en öncelikli müşteriyi kuyruktan çekebiliyorsunuz.
+
+783
+02:00:42,771 --> 02:01:08,332
+Yani böyle log n mertebesindeki karmaşıklık. Eğer 1 milyon kişi bekliyorsa ona göre oranlayın işte. Kaç oluyor? 2 üzeri ona göre şey yaparsınız. Çok daha efektif bir şekilde özellikle de sayı büyüdükçe sıradaki hizmet verecek, alacak kişinin hesaplanması için ya da bulunması için çok daha az sayıda log n mertebesinde işlem yapmamız yeterli olacaktır.
+
+784
+02:01:08,659 --> 02:01:15,220
+Bu yine aynı örnek heap'teki ile. Şimdi bunun bir max priority queue olduğunu düşünelim. Tamam mı?
+
+785
+02:01:15,519 --> 02:01:22,680
+Yani bunlar prosesler diyelim. Tamam mı? Bu proses, işte birinci proses ya da idc ne olsa olsun öncelik değeri 20'ymiş.
+
+786
+02:01:23,252 --> 02:01:31,512
+O zaman ben bir işletim sistemi olarak hadi gel şimdi sen çalış diye scheduler'da çağırdığımda kim gelecek?
+
+787
+02:01:31,752 --> 02:01:36,672
+Extract max yapmam gerekecek. Extract max yapmak demek aslında şunu almak demek.
+
+788
+02:01:37,112 --> 02:01:43,832
+Bunu almak da ne demekti? Hatırlayalım. 1 ile 20 yer değiştirecek. 20 buraya, 1 buraya gelecek.
+
+789
+02:01:44,112 --> 02:01:48,352
+Bir özellikle isteyerek ipi bozacak şekilde buraya koyduk.
+
+790
+02:01:48,948 --> 02:02:11,468
+Sonrasında 1, 15, 8'e bakacağız. 15 yukarı çıkacak. 1 buraya gelecek. Hala çocuklarıyla karşılaştırmam lazım. 1, 10 ve 5. 10 buraya gelecek. 1 buraya gelecek. Hala çocukları var ve karşılaştırmam lazım. 1, 2, 9. 9 yukarı çıkacak.
+
+791
+02:02:13,971 --> 02:02:41,671
+Tekrar buraya gelecek. Zaten en küçük değer olduğu için. Yani önceliği bir olan proses, garibim, büyük bir ihtimalle bu kadar prosesten sonra çalışacak. Zaman gelirse kendisine. Tamam. İşte bu şekilde. Ha, arada tabii şey yapılabilir. Mesela bu birdi ya, bunun şeyi yükseltilebilir, önceliği yükseltilebilir. O zaman o da bir şans bulabilir kendisine. Bunun gibi tabii işletim sistemlerinde pek çok daha farklı şeyler de yapılıyor.
+
+792
+02:02:41,971 --> 02:02:58,931
+Şimdi o detaylara girmeyelim ama her zaman için en yüksek önceliğe sahip olan elemana hizmet vermek istiyorsam bir priority queue kurgularım. Bunun için de maxi heap kullanırım. Maxi hipteki bütün işlemler priority queue'daki gereken işlemleri aslında birebir karşılayacaktır.
+
+793
+02:03:00,724 --> 02:03:21,364
+Şimdi elemanın değerini, bir olan elemanın değerini özellikle arttırmak isteyebilirim. Sen artık daha yüksek önceliğe sahipsin. Daha önce hizmet almanı istiyorum diyebilirsin. Bunu şey olarak da düşünebiliriz. Bankada siz normal sıra numarası almıştınız ve 343 numarayı almıştınız. Her gelen sizin önünüze geçiyordu ya.
+
+794
+02:03:21,747 --> 02:03:33,027
+Bıktım deyip gidiyorsunuz bankamatikten siz de işte kredi kartınızı geçirip sizin de aslında banka müşterisi olduğunuzu değerlendirmesini sağlıyorsunuz ve size yeni bir numara veriyor.
+
+795
+02:03:33,027 --> 02:03:40,547
+İşte diyelim ki ne veriyor? 160 diye bir numara veriyor. Ne oldu? Siz 343 anahtarını 160'a yükselttiniz.
+
+796
+02:03:41,043 --> 02:03:45,364
+Tabii min private queue olduğu için daha ufak bir değere doğru getirmiş oldunuz.
+
+797
+02:03:45,864 --> 02:03:50,003
+Max olduğunda da kuyruktaki anahtarın değerini arttırmamız gerekiyor.
+
+798
+02:03:50,564 --> 02:03:54,043
+Şimdi buradaki yeni değer mevcuttan tabii ki büyük eşit olması gerekir.
+
+799
+02:03:54,123 --> 02:03:55,404
+Bu kontrolü yapmalıyız.
+
+800
+02:03:55,524 --> 02:03:56,703
+Şurada gördüğünüz gibi.
+
+801
+02:03:57,703 --> 02:04:00,243
+Eğer büyükse ne yapacağız?
+
+802
+02:04:00,463 --> 02:04:02,344
+İyinci göze anahtar değerini atacağız.
+
+803
+02:04:02,344 --> 02:04:06,284
+Ondan sonra da onu yukarı doğru taşımaya başlayacağız.
+
+804
+02:04:06,703 --> 02:04:07,824
+Şurada olduğu gibi.
+
+805
+02:04:08,344 --> 02:04:09,043
+Şimdi dört değer.
+
+806
+02:04:09,043 --> 02:04:35,043
+Bu değerli vardı. Diyelim ki bu yine şey olsun, ne olsun? Proses scheduler olsun. Bizim işletim sistemindeki. Bu dört önceliğine sahip olan prosesi sen artık on beş önceliğine sahip ol diye bir yükleme, bir arttırım yapmış olalım. Ne yapacağız? Bunun değerini on beşte dönüştüreceğiz. Şimdi ne yapacağız? On beş daha büyük bir değer ya. Bunu biliyoruz. Bunu kontrol ettik. Sonrasında
+
+807
+02:04:37,876 --> 02:04:45,956
+Pardon. 15'i parentlarıyla karşılaştıracağız ve büyük olduğu yere kadar, yani taşıyabildiğimiz yere kadar taşıyacağız.
+
+808
+02:04:46,416 --> 02:04:54,615
+15 ile 8'i karşılaştır. 15 daha büyük olduğu için heap olarak ve öncelikli kuyruk olarak yukarıda durması gerekir. Yukarı çıktı.
+
+809
+02:04:55,115 --> 02:05:00,175
+15 ile 14'ü karşılaştırdım. 15 daha büyük olduğu için yukarı çıkması gerekir. Çıktı.
+
+810
+02:05:00,175 --> 02:05:05,876
+15 ile 16'yı karşılaştırdım. Yok, o kadar da değil. Sen ilk hizmet...
+
+811
+02:05:05,876 --> 02:05:21,475
+hizmet alacak kişi olamıyorsun, köke geçemiyorsun. Burada kal, bekle diyoruz. Ve 16'dan sonra ancak 15, yeni başka bir eleman gelmez ya da başka bir öncelik değişikliği olmazsa ikinci sırada hizmet alacak. İkinci maksimum eleman olarak heap de duruyor.
+
+812
+02:05:22,756 --> 02:05:29,996
+Tabi burada durmak zorunda değil, burada da durabilirdi biliyorsunuz. Yeter ki parent çocuklardan daha büyük bir değere sahip. Sadece bunu biliyoruz.
+
+813
+02:05:32,340 --> 02:05:59,720
+Yeni bir eleman ekleyebiliriz. Aslında bunu da çalıştık heplerde. Yine hatırlayacak olursak. Nasıl ekleyeceğiz? İşte elimizde bir tane heap increase key diye bir fonksiyon vardı. Yani bir değeri ekleyip ondan sonra onu yukarı doğru parentlarıyla karşılaştırarak taşıyabiliyorduk. O zaman ben heapte yeni bir göz açarım. Son eleman. Son eleman anahtar değeri olarak da bir max heap olduğu için eksi sonsuzu atarım. Bunun için limit saçtan falan faydalanabilirsiniz tabii ki.
+
+814
+02:06:00,115 --> 02:06:08,595
+Ve sonrasında bunu heap increase key deyip k değeriyle değiştiririm. Ne oldu? K değerini yukarı doğru taşımaya başlarım.
+
+815
+02:06:08,595 --> 02:06:17,635
+Bu da yine gidebileceği en yüksek yer ağacın kökü olduğu için log n mertebesinde bir karmaşıklığa sahip olacaktır.
+
+816
+02:06:18,095 --> 02:06:21,036
+Heap olması sebebiyle.
+
+817
+02:06:22,292 --> 02:06:31,252
+Bunun biraz kodlarına bakalım isterseniz sizlerle birlikte. Max Priority'nin, Max Priority Q'nun C koduna bakalım.
+
+818
+02:06:31,452 --> 02:06:37,852
+Yani aslında bir heap implementasyonunu iş üzerinde nasıl kullanabiliriz ya da bunun için neler yazmamız gerekir buna bakalım.
+
+819
+02:06:38,472 --> 02:06:44,052
+Şimdi sabit boyutlu bir heap kullanıyoruz. Gördüğünüz gibi tree array size'ımız 20'ymiş.
+
+820
+02:06:44,431 --> 02:06:50,431
+heap size'ımız da başta 0, heap size da aslında bizim esas priority queue'un boyutu.
+
+821
+02:06:51,171 --> 02:06:59,271
+Şimdi burada infinite diye bir şey tanımlamışız, 100.000. Normalde burada limits hash'ın içindeki int max'ı kullanmak daha doğru olacaktır.
+
+822
+02:06:59,751 --> 02:07:08,431
+Fakat hani kod basit olsun diye herhangi bir kütüphanede dahil etmeyelim diye 100.000 diye bir değeri buraya artı sonsuz olarak koymuşuz.
+
+823
+02:07:10,612 --> 02:07:27,051
+Node'ları böyle swap edeceğiz ya ya da değerleri dizi içinde swap edeceğiz ya. Onun için çok basit bir temporary değişken, temp eşittir birinci değişken, birinci değişken, ikinci değişken, ikinci değişken temp şeklindeki dönüşümü yapan bir fonksiyon yazalım.
+
+824
+02:07:27,051 --> 02:07:35,572
+Onun için de swap diyelim. Yani A adresindeki ve B adresindeki değerleri birbiriyle değiştirecek olan çok basit bir fonksiyonumuz da olsun.
+
+825
+02:07:37,300 --> 02:07:42,939
+Heap'teki değerleri yukarı doğru taşırken bunu mutlaka kullanmak zorunda kalacağız.
+
+826
+02:07:43,507 --> 02:08:11,208
+Şimdi, burada özellikle biraz daha fazla kontrolü olan bir kod paylaşıyorum sizinle. Hani böyle daha tam teşekküllü bir kod olması açısından. Bunlar da yine aslında hizmet fonksiyonlarımız. Nedir? Bakın sağ çocuğu al, sol çocuğu al ve ebeveynin parentını al. Get right child, get left child ve get parent. Nereden alacak bunları? Heap'ten alacak.
+
+827
+02:08:11,507 --> 02:08:17,068
+Şuradaki A dizisinden aslında alacak ve şu index tekinin sağ çocuğunu alacağız.
+
+828
+02:08:17,068 --> 02:08:25,887
+Şimdi verilen bir index'in şöyle hemen üç tane şeyimizi çizelim şuraya, nodumuzu çizelim.
+
+829
+02:08:27,028 --> 02:08:29,128
+Aralarındaki çizgileri de koyalım.
+
+830
+02:08:31,583 --> 02:08:36,644
+Şimdi verilen bir şöyle heapimiz olmuş, priority queue'umuz olmuş olsun burada.
+
+831
+02:08:37,064 --> 02:08:40,984
+Şimdi index olarak şurayı verdim. Tamam mı? Bu gözü, birinci gözü verdim.
+
+832
+02:08:41,423 --> 02:08:43,764
+Şimdi ne yapmam lazım get right child için?
+
+833
+02:08:44,404 --> 02:08:46,664
+İlk olarak şunun kontrolünü yapmam lazım.
+
+834
+02:08:47,444 --> 02:08:58,184
+2i artı 1 adresinin dizinin boyutundan küçük olması ve indisin de birden büyük olmasını garanti etmeliyim.
+
+835
+02:08:59,583 --> 02:09:21,644
+Şu indis verildiğinde, şurada üzerinde durduğum indis verildiğinde get right child dersem hata alırım değil mi? Çünkü bunun çocuğu yok. O zaman neden? Tree size mesela geçiyor. Bu kontrolü mutlaka yapmalıyım. Tamam. Eğer böyleyse 2i artı bir indisini geri döndürüm. Ne demektir bu? Şuradayım diyelim. Şunu adresini geri döndürebiliyorum.
+
+836
+02:09:27,520 --> 02:09:29,760
+Tree Array Size'ı geçiyorum burada.
+
+837
+02:09:30,800 --> 02:09:32,480
+Left child'da da aynı şekilde.
+
+838
+02:09:32,640 --> 02:09:37,180
+Bu sefer sadece iki i'ye bakıyorum ve ona göre iki i'yi ya da eksi biri döndürüyorum.
+
+839
+02:09:37,760 --> 02:09:45,360
+Get parent'da da yine indeksin birden büyük olmasını ve tree array size'dan küçük olmasını kontrol etmeliyim.
+
+840
+02:09:45,360 --> 02:09:51,699
+Eğer bu ikisi birlikte doğruysa, yani bir lane arasındaysa, o zaman i bölü ikiyi integer olarak.
+
+841
+02:09:52,627 --> 02:10:18,268
+tepesindekini yani parent'ını döndürebilirim. Eğer birden küçük bir değer verdiysem olur ya özellikle yanlış bir şey gelmiştir ya da mevcut boyuttan daha büyük bir şey verdiysem o zaman burada eksi bir diye yine hata mesajımı geri döndürmem gerekir. Bunlar da yine hizmet fonksiyonlarımız aslında. Şimdi gelelim esas noktaya.
+
+842
+02:10:19,155 --> 02:10:21,015
+Şöyle yapalım. Max heapify.
+
+843
+02:10:23,096 --> 02:10:24,536
+Altını çizelim.
+
+844
+02:10:26,155 --> 02:10:26,395
+Tamam.
+
+845
+02:10:26,975 --> 02:10:27,596
+Ne yapacağız?
+
+846
+02:10:28,216 --> 02:10:33,096
+Verilen bir indis için heap olma özelliğini sağlamayı garanti edeceğiz.
+
+847
+02:10:33,096 --> 02:10:34,876
+Şöyle geri geleyim.
+
+848
+02:10:36,735 --> 02:10:37,655
+Algoritmasına.
+
+849
+02:10:39,376 --> 02:10:40,256
+Şurası.
+
+850
+02:10:41,203 --> 02:10:51,604
+Maxi Pify, hatırlayalım. Bunu nasıl yapabiliriz? Şimdi buna bakacağız. Aslında yukarıda orada taşıma increase key ile söylemiştik onu da göstereceğim.
+
+851
+02:10:54,963 --> 02:11:02,984
+Sol çocuğunu al. Ne yapıyordum Maxi Pify ederken? Çocuklarla karşılaştırıyordum değil mi? Ve hangisi en büyükse onu yukarı doğru taşıyordum.
+
+852
+02:11:03,524 --> 02:11:09,203
+Taşıdıktan sonra da kalan alt ağaç içinde tekrardan Maxi Pify işlemine çağırmak zorunda kalıyordum.
+
+853
+02:11:09,203 --> 02:11:19,203
+Şimdi bakalım. Önce bir largest indesi bulmam gerekecek. Şöyle yine şeyi çizelim. Üç tane nodumuzu.
+
+854
+02:11:20,047 --> 02:11:24,688
+Ve aralarındaki bağlantılarını şöyle çizmiş olalım. Tamam, bu yine burada dursun.
+
+855
+02:11:25,887 --> 02:11:36,507
+Şimdi, şunun için maxi pify yaptığımda ne yapacaktım? Sol çocuğun adresine ihtiyacım var, sağ çocuğun adresine ihtiyacım var. Kontrolle, hani dışarı taşmıyorum diye kontrolle bunları alıyorum.
+
+856
+02:11:37,568 --> 02:11:42,007
+Ve bu üç değerden bir tanesi en büyük. İlk olarak diyelim ki largest bu.
+
+857
+02:11:42,368 --> 02:11:48,188
+Hemen şuraya L koyalım. Largest olan bu indiste verilen değerdir.
+
+858
+02:11:48,568 --> 02:11:59,427
+Şimdi eğer sol çocuğun indisi heap size'dan küçükse ve sol çocuğun indisi sıfırdan büyükse o zaman şeye bakacağız.
+
+859
+02:11:59,847 --> 02:12:03,288
+Şurası düzgün bir şekilde heap sınırları içindeyse diye baktım.
+
+860
+02:12:03,891 --> 02:12:12,051
+Eğer buradaki değer buradaki değerden büyükse o zaman mesela büyük diyelim largest budur diye burayı etiketlemiş olmamız lazım. İşte bu.
+
+861
+02:12:13,091 --> 02:12:18,971
+Sonrasında sağ tarafı da aynı kontrolü yapıyorum. Eğer bu daha büyükse şununla tabii ki largest burasıydı şimdi.
+
+862
+02:12:19,452 --> 02:12:22,671
+Karşılaştırdım diyelim ki değil. O zaman largest burayı gösteriyor.
+
+863
+02:12:22,671 --> 02:12:29,032
+Şimdi ne yapacağım? Largest index'e eşit değil ise
+
+864
+02:12:29,619 --> 02:12:51,039
+kontrolü. Eğer largest buysa zaten hiçbir şey değiştirmeme gerek yok. Zaten heap özelliğini koruyor demektir. Eğer largest buraya eşit değilse, verilen indise eşit değilse, yani şu ya da şu geldiyse o zaman swap etmem gerekecek. Nasıl swap edeceğim? Bir önceki hizmet fonksiyonuma dönüp indisteki değerle, yani bu adresteki değer ile
+
+865
+02:12:51,520 --> 02:12:55,220
+largesttaki değeri birbiriyle yer değiştir diyorum.
+
+866
+02:12:55,840 --> 02:12:57,500
+Tamam, işte bu mesela şuraya gitti.
+
+867
+02:12:58,280 --> 02:12:59,460
+Bu değer de buraya geldi.
+
+868
+02:13:00,380 --> 02:13:01,680
+Bu dövüşüm yapılmış oldu.
+
+869
+02:13:01,680 --> 02:13:06,980
+Şimdi buradaki değeri buraya taşıdık ya, bunun yine kendi çocukları olabilir.
+
+870
+02:13:07,536 --> 02:13:26,195
+Ve bunları şimdi kendi içinde tekrar Maxi Pifa'yı çağırarak çalıştırmam lazım. Yani burada yaşadığımızı tekrar şuradaki altı ağaçta. Diyelim şuraya gitti. Varsa işte şöyle çizelim. Şunlar olmuş olsun. Bu tabii bunlar da var. Bunları unutmayalım.
+
+871
+02:13:26,899 --> 02:13:43,140
+Şöyle complete binary tree olması lazım. Şuradaki alt ağaçta tekrar yaptım gibi gibi. Yani şurası, şurası, şurası ilerlemesini sağladım. Buradaki değerin aşağı doğru gitmesini sağladım. Maxi pify'ı tekrar tekrar kalan alt heap de çağırarak.
+
+872
+02:13:45,640 --> 02:13:46,359
+Tamam.
+
+873
+02:13:49,235 --> 02:14:07,435
+Max heap yapmak için kodumuz bu şekilde. İki tane yöntem anlatmıştık hatırlarsanız. Hani priority queue oluşturmanın da yolu ikisiyle birebir aynı. Build max heap de heap size'ın yarısından itibaren bire kadar geri geri gidip her birini max heap ifay ediyorum.
+
+874
+02:14:07,435 --> 02:14:14,996
+Ne yapıyordum? Tekrar üzerinden geçelim ve hatırlayalım. Şöyle hemen heapimizi buraya çizelim.
+
+875
+02:14:16,115 --> 02:14:17,895
+Şu şekilde olsun heapimiz.
+
+876
+02:14:19,395 --> 02:14:20,815
+Çizgilerimizi de çekelim.
+
+877
+02:14:20,996 --> 02:14:23,496
+Bağlantılarımızı göster olarak göstermiş olalım.
+
+878
+02:14:24,195 --> 02:14:24,456
+Tamam.
+
+879
+02:14:25,235 --> 02:14:32,255
+Şimdi ben burada aslında parent yani çocuğu olanlara bakmam gerekiyor.
+
+880
+02:14:33,555 --> 02:14:35,655
+Hadi şuraya da çizeyim şöyle bir tane.
+
+881
+02:14:35,895 --> 02:14:36,235
+Tamam mı?
+
+882
+02:14:36,295 --> 02:14:36,755
+3 olsun.
+
+883
+02:14:36,895 --> 02:14:37,235
+Daha iyi.
+
+884
+02:14:37,795 --> 02:14:38,036
+Tamam.
+
+885
+02:14:38,295 --> 02:14:39,755
+Şu 4, şu 5.
+
+886
+02:14:40,532 --> 02:14:52,471
+Şu da 6. Şimdi 5 olsaydı 5 bölü 2'den ne gelecekti? 2. Sadece 2 ve 1'e bakacaktım da. Azıcık daha karmaşık olsun diye 3'ü de ekledim. 3 bölü 2'den 6'ı ekledim. 6 bölü 2'den 3 gelsin.
+
+887
+02:14:52,471 --> 02:15:07,112
+Şimdi çocuğu olan düğümler nerede duruyordu heap dizisinde hatırlayalım. Heap dizisi şöyle. Sıfırı boş geçmiştik. 1, 2. Şurası n bölü 2. Şurası da n. Tamam mı? Gözlerimiz böyle.
+
+888
+02:15:08,243 --> 02:15:09,864
+Şurada da şöyle gözler olsun.
+
+889
+02:15:10,503 --> 02:15:13,144
+n bölü 2'ye kadar olanlar çocuğu olanlardı.
+
+890
+02:15:13,264 --> 02:15:15,144
+n bölü 2'den sonrasının çocuğu yoktu.
+
+891
+02:15:15,224 --> 02:15:17,484
+Çünkü onların hepsi yaprak düğüm olması gerekiyordu.
+
+892
+02:15:17,484 --> 02:15:21,923
+İşte ben de burada aslında şuradan işaretleyelim.
+
+893
+02:15:22,323 --> 02:15:29,123
+1'i, 2'yi ve 3'ü gezmem yeterli olacaktır. Çocuğu olanları heapify edersem yeterlidir.
+
+894
+02:15:29,623 --> 02:15:35,743
+Aynı şekilde aslında build max priority queue da birebir aynı şey olacak.
+
+895
+02:15:35,743 --> 02:15:38,484
+Çünkü aslında bir max heap kullandığı için.
+
+896
+02:15:39,003 --> 02:15:45,644
+Şimdi şöyle yapalım. Ne yapacağız? 3'ten başlayacağız. Önce şu parçayı max heapify edeceğiz.
+
+897
+02:15:46,131 --> 02:15:55,231
+Ondan sonra şu parçayı maxi pify edeceğiz. Ondan sonra da bunu maxi pify edeceğiz.
+
+898
+02:15:55,731 --> 02:15:59,372
+Bunu max heap edince belki şunlara bir daha bakmak zorunda kalabiliriz.
+
+899
+02:15:59,431 --> 02:16:02,212
+Recursive Yapı yüzünden. Onu şu anda göremem.
+
+900
+02:16:02,212 --> 02:16:09,771
+Ama bu şekilde 3, 2, 1 sırasıyla heap heap edersem bütün ağacın tamamen heap olmasını da garanti ederim.
+
+901
+02:16:09,891 --> 02:16:15,091
+Ve bir max heap ya da max priority queue oluşturmuş olurum.
+
+902
+02:16:17,524 --> 02:16:22,384
+Peki, şimdi hizmet vereceğimiz sıradaki mesela prosesi nasıl çekeceğiz?
+
+903
+02:16:22,544 --> 02:16:28,424
+Extract max ile çekeceğiz. Bu da extract max kodu. Çok basit. Aslında hiçbir şey yok.
+
+904
+02:16:29,704 --> 02:16:36,344
+Algoritmasını çizmiştim hatırlarsanız. A1'deki değeri kopyaladım. Şuraya maksimum diye bir yere kopyaladım.
+
+905
+02:16:37,084 --> 02:16:41,244
+Sonra bunu en son eleman ile yer değiştirdim.
+
+906
+02:16:41,907 --> 02:16:45,108
+heap size'daki yani son elemanı A1'e koydum.
+
+907
+02:16:45,567 --> 02:16:50,727
+Heap'in boyutunu bir azalttım ve bir az elemanla aslında max heap ifay ettim.
+
+908
+02:16:50,807 --> 02:16:52,288
+Neyi max heap ifay ettim? Biri.
+
+909
+02:16:52,788 --> 02:16:55,448
+Çünkü bilerek ve isteyerek köke bunu eklemiştim.
+
+910
+02:16:55,547 --> 02:16:56,288
+Şöyle geri geleyim.
+
+911
+02:16:58,167 --> 02:17:00,987
+Bunu bilerek ve isteyerek şuraya taşımıştım ya.
+
+912
+02:17:01,332 --> 02:17:09,051
+İşte bu yapıldıktan sonra bunu tekrar heapify ederek aşağı doğru taşımam gerekiyor. Bunun da kodu aslında bu kadar.
+
+913
+02:17:09,492 --> 02:17:12,912
+Gördüğünüz gibi her şey aslında dönüyor dolaşıyor, max heapify'a geliyor.
+
+914
+02:17:13,551 --> 02:17:19,211
+Max heapify için de kodumuz şu. Sol çocuk, sağ çocuk indislerinden largest olanını bul.
+
+915
+02:17:19,772 --> 02:17:25,432
+Ondan sonra yer değiştirmesi gerekiyorsa yer değiştir ve kalan alt tarafta da max heapify'a devam et.
+
+916
+02:17:25,907 --> 02:17:33,867
+Bu kodu düzgün yazdıktan sonra hem heap'teki hem de priority queue'daki bütün operasyonları çok rahat bir şekilde yapabiliyorsunuz.
+
+917
+02:17:33,987 --> 02:17:36,367
+Log n mertebesindeki karmaşıklıkta.
+
+918
+02:17:36,987 --> 02:17:41,707
+Increase key'e geldiğimizde de burada yine ekstra kontrollerimiz var.
+
+919
+02:17:49,840 --> 02:17:59,139
+Yine indeksten küçük olmasını sağladıktan sonra, yani bu şart doğru olduğu sürece yukarı doğru taşımamız gerekiyor.
+
+920
+02:17:59,680 --> 02:18:03,940
+Her seferinde kendisini parent ile değiştireceğiz.
+
+921
+02:18:04,520 --> 02:18:05,840
+Eğer bu şart doğruysa.
+
+922
+02:18:06,780 --> 02:18:06,880
+Tamam.
+
+923
+02:18:07,240 --> 02:18:11,619
+Ve sonrasında da kendisi ve parent'ını güncelleyeceğiz.
+
+924
+02:18:12,380 --> 02:18:16,260
+Decrease key'de de aşağı doğru göndermemiz gerekiyor.
+
+925
+02:18:16,260 --> 02:18:17,260
+Ne yapacağız?
+
+926
+02:18:18,036 --> 02:18:42,096
+Verilen gözü verilen değer ile değiştireceğim. Bilerek ve isteyerek bozdum. Bu bir max prior to queue idi. Yani max heap idi. Max heap özelliğini özellikle bozarak bir değeri azalttım. O zaman heapify etmem lazım. Direkt max heapify diye çağırıp o göz her neyse o gözün altındaki ağacın heap olmasını garanti ederek prior to queue'nun
+
+927
+02:18:42,899 --> 02:18:45,819
+düzgün şekilde kalmasını sağlayabilirim.
+
+928
+02:18:46,159 --> 02:18:52,840
+Buradaki yaptığım şey de aslında şöyle yine pardon nereye gitti o?
+
+929
+02:18:53,420 --> 02:18:55,600
+Burada yaptığım pseudo kod.
+
+930
+02:18:56,500 --> 02:18:59,939
+Yeni bir değeri ekleyip onu increase key ile yukarı doğru çıkartmak.
+
+931
+02:19:00,404 --> 02:19:11,504
+Ya da örnek üzerinden, resimli örnek üzerinden gösterecek olursak, işte şu 4'tü ya, bunu 15 yaptım, ondan sonra parent ile karşılaştırdım, gerekiyorsa swap ettim.
+
+932
+02:19:11,923 --> 02:19:23,164
+Parent ile karşılaştırdım, gerekiyorsa swap ettim, parent ile karşılaştırdım, burada şart sağlanmadığı için çıktım, swap etmedim, durdum diyorum.
+
+933
+02:19:23,743 --> 02:19:27,384
+Nerede o? Hemen gelelim, işte şurası, şu döngü doğru olduğu sürece.
+
+934
+02:19:27,871 --> 02:19:40,752
+Şu koşul doğru olduğu sürece, parent'ıyla yer değiştirmesi gerektiği sürece, direkt swap işlemini yap ve kendi yeni durduğu yer ile yukarı bir üstündeki parent'ına bak diyoruz.
+
+935
+02:19:41,971 --> 02:19:47,971
+Bunun da kodu increase key ve gerekiyorsa decrease key key kodları da bu şekilde yazılabilir.
+
+936
+02:19:49,231 --> 02:19:53,811
+Yeni bir eleman eklemek, bu da son eleman olarak ekliyoruz.
+
+937
+02:19:54,355 --> 02:20:13,155
+Tamam, eksi sonsuz ile heap size'ı 1 arttırdım. Arttırdığım göze, yeni açtığım göze şeyi koydum, infinity'yi koydum, eksi sonsuzu. Ondan sonra da bunun değerini arttırarak yukarı doğru parentlar ile karşılaştıra karşılaştıra taşımaya gayret ettim.
+
+938
+02:20:13,556 --> 02:20:21,216
+Evet, bunlarla, bu da şey, main, hani driver fonksiyonuna da bakacak olursanız, print heap diye bir şey yazılabilir.
+
+939
+02:20:21,416 --> 02:20:26,355
+Main'de işte bakın bir tane heap oluşturuyorsunuz ya da ben oluşturmuşum diyelim.
+
+940
+02:20:26,936 --> 02:20:31,456
+Sonrasında prosesler geliyor ve prosesleri ben heap'e insert ediyorum.
+
+941
+02:20:31,576 --> 02:20:32,976
+Bakın 20 öncelikle geldi.
+
+942
+02:20:33,427 --> 02:20:42,768
+15 öncelikli geldi, 8 öncelikli geldi, 10 geldi, 5 geldi, 7, 6, 2, 9, 1 öncelikli prosesler yaratıldı ve geldi.
+
+943
+02:20:43,227 --> 02:20:44,788
+Process Scheduler'da bekliyorlar.
+
+944
+02:20:44,907 --> 02:20:47,808
+İşte process Scheduler'ın mevcut durumunu print eepli yazdırdım.
+
+945
+02:20:48,327 --> 02:20:53,788
+Sonrasında mesela şurada gelen 5 öncelikli olan prosesi 22 önceliğine çıkarttım.
+
+946
+02:20:54,355 --> 02:21:01,135
+Acaba durum ne? Process Scheduler hangi priority ile kime hizmet verecek onu yazdırdım.
+
+947
+02:21:01,515 --> 02:21:08,495
+Sonrasında mesela 13 olanı, pardon 1 olanı, yok ne yapmışız burada ya?
+
+948
+02:21:10,795 --> 02:21:14,216
+1 indisindekinin önceliğini 13'e indirdim.
+
+949
+02:21:14,755 --> 02:21:19,075
+İşte 22'ydi tabi doğal olarak o yukarı taşınmıştı en yüksek öncelikli olarak.
+
+950
+02:21:19,536 --> 02:21:21,315
+13'e indirdim. Aralarda bir yere gitti.
+
+951
+02:21:21,824 --> 02:21:31,123
+Maximumuna baktım. Bir elemanı çektim ve hizmet verdim. Sonra kalan duruma, bir sonra kime bakacağıma yine print heap ile baktım.
+
+952
+02:21:31,123 --> 02:21:43,623
+Bu şekilde birkaç kere extra max, extra max yapıp heap'i boşalttım diyebilirsiniz. Hani böyle bir proses skeçlerinin nasıl çalışacağını simile edebilirsiniz.
+
+953
+02:21:43,623 --> 02:21:47,372
+Yaptığımızda gördüğünüz gibi sadece max heap kullanmak.
+
+954
+02:21:47,379 --> 02:22:00,819
+Ya da min heap kullanmak. Uygulamaya göre öncelik değeri düşük sayı mı önceliklidir, yüksek değer mi önceliklidir? Çözdüğünüz probleme göre kullanmanız gereken iki ayrı heap.
+
+955
+02:22:01,167 --> 02:22:05,167
+Sadece heap operasyonlarıyla da bir öncelikli kuyruk oluşturabiliyorsunuz.
+
+956
+02:22:05,768 --> 02:22:10,707
+Tabi burada biz sadece integer'lar kullanıyoruz ama normalde bunların birer struct olması lazım.
+
+957
+02:22:11,328 --> 02:22:16,308
+Ve onların key değerleri, integer'lar mesela olarak tanımlanması gerekir.
+
+958
+02:22:16,968 --> 02:22:25,988
+Bu şekilde heap'inizi struct'lar ile yaptığınızda ve struct'ın key alanını da heap'in key olarak kullandığınızda
+
+959
+02:22:25,988 --> 02:22:29,167
+implementasyonunuz bir anda priority queue veri yapabilir.
+
+960
+02:22:29,167 --> 02:22:41,628
+yapısına dönüşmüş oluyor ve bu sayede işlem önceliği, hizmet önceliği sıradanmasını log n karmaşıklıkla organize edebilir hale geliyorsunuz.
+
+961
+02:22:41,628 --> 02:22:56,488
+İşte heapler o yüzden çok sevdiğim veri yapılarından biri. Log n mertebesinde karmaşıklık ile benim pek çok işi düzgün bir şekilde sıra ile yapabilmemi garanti ettikleri için.
+
+962
+02:22:57,075 --> 02:22:57,595
+Şimdi
+
+963
+02:22:57,595 --> 02:23:01,355
+Hocam bir şey sorabilir miyim?
+
+964
+02:23:01,815 --> 02:23:02,235
+Sor.
+
+965
+02:23:03,252 --> 02:23:16,632
+Bu tuttuğunuz değerleri ki dedik ya benzersiz olduğunu hani o şekilde ben anlıyorum. Benzersiz olmama durumu da olabilir mi? Mesela işte dayısı olmayan kişi ya da işte çok parası olmayan kişilerin sıralaması aynı olabilir vesaire.
+
+966
+02:23:16,932 --> 02:23:24,731
+Olabilir. Aynı şey olabilir. E orada senin implementasyonun önemli olacaktır. Şurada insert neredeydi?
+
+967
+02:23:27,252 --> 02:23:29,551
+Nereye gitti bu? Şu insert var ya.
+
+968
+02:23:30,100 --> 02:23:44,400
+Burada increase key'i çalıştırıyorsun ya, şimdi increase key'e gelelim. Şuradaki kontrole göre hani nereye, daha yukarı doğru mu taşıyayım yeni geleni, yoksa eşitlik gördüğümde yoksa aşağıda mı kalsın da senin karar veriyor olman lazım.
+
+969
+02:23:45,268 --> 02:23:46,327
+Anladım, sağ olun.
+
+970
+02:23:46,648 --> 02:23:50,247
+Yani ikisi de olabilir ama implementasyon, probleme göre değişir bu.
+
+971
+02:23:50,747 --> 02:24:04,407
+Tamam, eğer aynı değerlere izin veriliyorsa ki verilebilir, o yeni gelen aynı değer, eski aynı değerden yukarı mı çıksın, aşağıda mı kalsın, onu siz hani probleminiz neyse ona göre kodlamanız gerekir.
+
+972
+02:24:05,207 --> 02:24:07,468
+Ama olabilir, aynı değerler evet olabilir.
+
+973
+02:24:09,087 --> 02:24:09,987
+Olmaz diye bir şey yok.
+
+974
+02:24:10,579 --> 02:24:20,739
+Şimdi başka bir örnek. Aslında bildiğiniz sayısal analizde mi gördünüz siz Ufman ağacını? Bir yerde görmüş olmanız lazım.
+
+975
+02:24:21,799 --> 02:24:24,540
+Ayrıkta biraz değindik. Biraz böyle.
+
+976
+02:24:25,459 --> 02:24:52,959
+Tamam, okey, ayrık matematikte şey yapmıştınız. Şimdi biz burada aslında Hufman ağacı dediğimiz olayın ne olduğunu üzerinden bir daha geçip, implementasyonunda bu priority queue'nun ne kadar bizi kolaylaştırdığını işlemlerimize ona bakacağız. Yani bir priority queue implementasyonu olarak Hufman ağacını inceleyeceğiz. Şimdi Hufman ağacı nedir? Önce ona bakalım. Neden kullanılır? Önce bir onu hatırlayalım.
+
+977
+02:24:53,940 --> 02:25:16,819
+Ben elimde bir veri var. Özellikle de karakterlerden oluşan, mesela bir metin dosyası gibi bir veri var. Bu veriyi, mesela roman, romanı bir şekilde karşı tarafa yollamak istiyorum. Ama roman çok uzun. İşte milyonlarca karakterden oluşuyor ya da işte bin sayfadan oluşuyor. Ve bunu bir şekilde sıkıştırıp karşı tarafa yollamak istiyorum.
+
+978
+02:25:20,564 --> 02:25:38,963
+Türk alfabesinde işte 29 harf var. İngiliz alfabesinde 26 mı vardı? 26 idi galiba yanlış olmasın. Hangisinden gidelim? 26'dan gidelim hadi. Daha az olsun sayısı. Biliyorum ki Happy Top'u 26 tane karakter. İşte şeyleri de koy. Nedir? Boşluk.
+
+979
+02:25:39,412 --> 02:26:04,792
+Büyük harf, küçük harf gerekirse onları da koy. Ondan sonra noktaları, ünlemleri, virgülleri falanları, filanları koy. Hadi ASCII karakteri olarak düşün. 256 tane karakter var. Ki onların da 32 tanesi zaten romanda yer almaz. 200 civarı karakter kullanıldın ki onların da pek çoğu yine sembol. Hadi 200 olsun en kötü ihtimalle. 200 tane farklı aslında karakterim var benim.
+
+980
+02:26:05,139 --> 02:26:12,419
+Ki aslında çok daha az, yani yüz civarı falandır bir romandaki unique karakter kauntu.
+
+981
+02:26:13,259 --> 02:26:20,379
+Ben bunu aslında biliyorum ki işte dil modeli yapısı gereği.
+
+982
+02:26:20,724 --> 02:26:23,544
+Bazı karakterler çok kullanılır.
+
+983
+02:26:23,684 --> 02:26:25,923
+İşte sesli harfler, A'lar, E'ler gibi.
+
+984
+02:26:26,704 --> 02:26:29,164
+Bazı karakterler ise çok az kullanılır.
+
+985
+02:26:29,283 --> 02:26:30,324
+Hani Türkçeden örnek verelim.
+
+986
+02:26:30,404 --> 02:26:32,004
+İşte yumuşak G mesela.
+
+987
+02:26:32,344 --> 02:26:33,584
+Belli yerlerde kullanılır.
+
+988
+02:26:34,504 --> 02:26:41,443
+Harflerin kullanım sıklıkları, karakterlerin normal bir doğal dili kullanım sıklıkları birbirinden farklıdır.
+
+989
+02:26:41,963 --> 02:26:44,184
+Ki buradan da aslında dilin entropisi ortaya çıkar.
+
+990
+02:26:44,304 --> 02:26:45,744
+Neyse o tarafına hiç girmeyelim şimdi.
+
+991
+02:26:48,308 --> 02:26:52,268
+Ben acaba şöyle bir çözüm geliştirebilir miyim sıkıştırma için?
+
+992
+02:26:53,688 --> 02:27:02,908
+En çok kullanılan karakter, benim romanımda çok geçiyor ya, olabilecek en kısa uzunlukla kodlayayım ben bunu.
+
+993
+02:27:03,228 --> 02:27:05,308
+Uzunluktaki bir...
+
+994
+02:27:05,876 --> 02:27:17,776
+Ne derler? Sayıyla ya da bir gösterim ile kodlamaya çalışayım. Her biri 8 bit ya normalde. Ben acaba bu 8 bitten daha düşük bir şeyle kodlayabilir miyim? Mesela romanın yarısı A harfinden oluşuyorsa.
+
+995
+02:27:18,159 --> 02:27:29,079
+A harfini 8 bit yerine 1 bitle ya da 2 bitle kodlarsam bir anda 4 kat ya da 8 kat yer tasarrufu yapmış olurum.
+
+996
+02:27:29,079 --> 02:27:37,279
+Hani 2 bitle kodladığınızı düşünün. 1 bölü 4, 2 bölü 8, 1 bölü 4, %75 oranında tasarruf.
+
+997
+02:27:37,639 --> 02:27:45,979
+Aynı bilgiyi %25'lik bir alanda sıkıştırmış olurum. %75'lik bir tasarruf ortaya koymuş olabilirim.
+
+998
+02:27:46,164 --> 02:27:49,943
+En az kullanılanın da mümkün olduğunca daha uzun bir kodla.
+
+999
+02:27:50,443 --> 02:27:53,584
+Tabii 8 biti geçebilir ama geçmemesi tercih sebebidir.
+
+1000
+02:27:54,043 --> 02:27:57,364
+Bu şekilde bir kodlamaya acaba dönüştürebilir miyim?
+
+1001
+02:27:57,844 --> 02:27:59,164
+Şimdi ne diyorum ben?
+
+1002
+02:27:59,564 --> 02:28:07,123
+Aslında burada söylemeye çalıştığım şey, hani dilim döndüğünce, algoritmik düşünme mantığını bunu tercüme ettiğimizde,
+
+1003
+02:28:07,123 --> 02:28:09,844
+acaba karakterleri mi?
+
+1004
+02:28:10,675 --> 02:28:18,155
+Romandaki toplam geçiş sayılarına göre, yani kullanım sıklıklarına göre önceliklendirebilir miyim?
+
+1005
+02:28:19,355 --> 02:28:26,155
+Önceliklendirirsem ne olur? Ben daha öncelikli olanı daha kısa bir kodla ifade ederim.
+
+1006
+02:28:26,559 --> 02:28:40,899
+Daha az öncelikli olanı daha uzun bir kodla ifade ederim. Bu da aslında o ağaçtaki peti, yani o gitmem gereken yolu sıfır ve birlerle kodlayarak oluşturabilirim buradaki sinyali ya da ifadeyi.
+
+1007
+02:28:41,200 --> 02:28:55,139
+Ve bu sayede sık kullanılan karakterlerin kısacık bitlerle, kısa bit sayılarıyla, çok az kullanılanların da daha uzun bit sayılarıyla kodlanmalarını sağlayabilir.
+
+1008
+02:28:55,139 --> 02:29:00,040
+Şimdi burada ne dedim? Karakterleri kullanım sıklıklarına göre önceliklendirsem dedim.
+
+1009
+02:29:00,860 --> 02:29:06,880
+Önceliklendirme dediğime göre zaten hemen içine ya ben burada bir karakter önceliklendirmesi yapıyorum.
+
+1010
+02:29:07,412 --> 02:29:18,371
+O zaman ben bunları bir priority queue da tutayım. Bu priority queue ile bunların kullanım sıklıklarına göre önceliklerini ayarlayayım diyebilirim.
+
+1011
+02:29:18,711 --> 02:29:24,412
+Ve bu sayede en sık kullanılan karaktere en kısa, en az kullanılan karaktere de en uzun kodu verebiliriz.
+
+1012
+02:29:25,132 --> 02:29:29,412
+Ve bu sayede sabit kod uzunluğuna göre çok daha kısa bir çıktığı üretebiliriz.
+
+1013
+02:29:29,531 --> 02:29:35,031
+Yani zipleme mantığı gibi aslına bakarsınız. Bir de kayıpsız. Yani geri döndürülebilir olması.
+
+1014
+02:29:35,412 --> 02:29:37,472
+İnsanın tekrar üretilebilir olması esas.
+
+1015
+02:29:38,031 --> 02:29:40,652
+Şimdi bazı karakterler denk sıklıkta olabilir.
+
+1016
+02:29:40,832 --> 02:29:48,792
+Örneğin işte ne diyeyim U harfi ve O harfi ikisi de romanımda 600 kere geçmiş olabilir.
+
+1017
+02:29:48,792 --> 02:29:51,691
+Ya da yakın sayılarda olabilirler.
+
+1018
+02:29:51,891 --> 02:29:54,132
+U 610 kere geçmiştir.
+
+1019
+02:29:54,711 --> 02:29:58,811
+O 587 kere geçmiştir gibi.
+
+1020
+02:30:00,000 --> 02:30:04,139
+Yine yakın sayılar, yakın frekanslar ya da kullanım sıklıkları.
+
+1021
+02:30:05,139 --> 02:30:09,939
+Bunlar da doğal olarak aynı uzunlukta kodlara sahip olacaklardır.
+
+1022
+02:30:10,199 --> 02:30:14,939
+Yani çok kullanılana kısa kod, az kullanılana uzun kod.
+
+1023
+02:30:15,299 --> 02:30:20,979
+Aynı sayılarda ya da yakın sayılarda kullanılanlara da benzer uzunluklarda kodlar atamam gerekiyor.
+
+1024
+02:30:21,399 --> 02:30:23,959
+Peki, şimdi ilk çözmem gereken problem şu.
+
+1025
+02:30:24,379 --> 02:30:26,559
+Ben karakterleri önceliklendirmeliyim.
+
+1026
+02:30:26,939 --> 02:30:29,699
+Çok kullanılanı en öncelikli hale getirmeliyim.
+
+1027
+02:30:29,699 --> 02:30:30,979
+Şimdi bunu nasıl yapacağım?
+
+1028
+02:30:31,280 --> 02:30:36,479
+Bunun için ilk akla gelen çok kullanılanı önce alayım diyorum ya, max priority queue kullanmak değil mi?
+
+1029
+02:30:36,959 --> 02:30:43,420
+Fakat unutmayalım ki sonrasında ben bir işlem daha yapıp bunlara erişmeye çalışacağım.
+
+1030
+02:30:43,420 --> 02:30:53,079
+O yüzden en sık rastlanılanı kökte, yani en yüksek frekansa sahip olan değeri kökte tutmak yerine olayı tersten ele alıp,
+
+1031
+02:30:53,780 --> 02:31:12,280
+En az kullanılan elemanı kökte tutmaya çalışırım. Bu yüzden de min priority queue kullanırım. Ne demektir bu? En az sıklıktaki karakteri öncelikli olarak çekip işlerim. Önce işlediğim için de ağacımda aşağıda yer alır.
+
+1032
+02:31:21,075 --> 02:31:31,495
+Çok sıklıktaki karakterler yukarılarda kalır ve kökten başlayarak sadece 1 ya da 2 hopla sık kullanılan karakterlere gidebilirim.
+
+1033
+02:31:32,235 --> 02:31:38,075
+Ama daha uzun 6-7-8 hopla da ağaç içinde daha az kullanılan karakterlere erişebilirim.
+
+1034
+02:31:39,015 --> 02:31:44,295
+Bu yüzden max priority queue yerine min priority queue kullanarak
+
+1035
+02:31:44,788 --> 02:31:53,528
+En az kullanılanları daha öncelikle işlemeye çalışıp, nihai ağaçta da en altta kalmalarını sağlamaya çalışacağım.
+
+1036
+02:31:54,067 --> 02:31:55,907
+Peki, nasıl yapacağım ben bunu?
+
+1037
+02:31:56,347 --> 02:32:01,028
+Şöyle, şimdi burada aslında bir kuyruk mekanizması işletmemiz gerekiyor.
+
+1038
+02:32:01,608 --> 02:32:03,308
+Şimdi öncelikle kuyruk mekanizması.
+
+1039
+02:32:04,268 --> 02:32:06,448
+Elimdeki şeyleri saydım.
+
+1040
+02:32:06,727 --> 02:32:08,727
+Romandaki bütün karakterleri saydım.
+
+1041
+02:32:09,368 --> 02:32:09,788
+Yanına da...
+
+1042
+02:32:10,255 --> 02:32:12,935
+Kaç kere geçtiklerini, frekanslarını yazdım.
+
+1043
+02:32:13,056 --> 02:32:13,175
+Tamam.
+
+1044
+02:32:13,735 --> 02:32:15,755
+Ve bunlar bir öncelikli kuyrukta duruyor.
+
+1045
+02:32:15,915 --> 02:32:17,335
+Min priority queue'da duruyor.
+
+1046
+02:32:17,896 --> 02:32:19,695
+İki kere extract min yaparım.
+
+1047
+02:32:20,515 --> 02:32:27,935
+Böylece kuyruğumdaki iki tane minimum frekanslı pardon şurayı çizmeye çalıştım.
+
+1048
+02:32:28,435 --> 02:32:31,455
+İki tane minimum frekanslı düğümü alırım.
+
+1049
+02:32:32,355 --> 02:32:34,175
+Sonra bunların frekanslarını toplarım.
+
+1050
+02:32:35,175 --> 02:32:36,595
+Kullanım sıklıklarını.
+
+1051
+02:32:36,912 --> 02:32:40,612
+Ve bunu kullanım sıklığı olarak bir ara düğme atarım.
+
+1052
+02:32:40,731 --> 02:32:41,811
+Niye ara düğme atıyorum?
+
+1053
+02:32:42,432 --> 02:32:44,292
+Çünkü bu artık tek bir karakter değil.
+
+1054
+02:32:45,152 --> 02:32:50,832
+İki tane minimum frekansa sahip karakterin toplam kullanım sıklığı bir ağaç oluşturmaya çalışıyorum.
+
+1055
+02:32:51,492 --> 02:32:52,932
+Ve bunu kuyruğa eklerim.
+
+1056
+02:32:53,191 --> 02:32:53,811
+Bu değeri de.
+
+1057
+02:32:54,051 --> 02:32:54,152
+Tamam.
+
+1058
+02:32:55,512 --> 02:32:57,852
+Bu ara düğümü kuyruğuma eklerim.
+
+1059
+02:32:58,852 --> 02:32:59,711
+Nereye ekliyorum?
+
+1060
+02:32:59,972 --> 02:33:01,211
+Priority queue'ya ekliyorum.
+
+1061
+02:33:01,551 --> 02:33:03,211
+Mean priority queue'ya ekliyorum.
+
+1062
+02:33:03,567 --> 02:33:10,487
+min private queue'ya eklediğim için bir şekilde o insert sayesinde bir yerlere kadar çıkabilecek.
+
+1063
+02:33:12,007 --> 02:33:17,667
+Ve sonrasında tekrar iki kere extract min yaparım.
+
+1064
+02:33:20,047 --> 02:33:25,507
+Böyle böyle extract min yap, topla, ara düğüm oluştur, kuyruğa ekle.
+
+1065
+02:33:25,968 --> 02:33:28,628
+Topla, ara düğüm oluştur, kuyruğa ekle diye diye.
+
+1066
+02:33:29,007 --> 02:33:34,507
+Kuyrukta tek bir düğüm kalana kadar ikinci ve üçüncü adımları tekrarlarım.
+
+1067
+02:33:36,128 --> 02:33:48,608
+Ve bu sayede bütün frekansla sahip olan karakterleri ve bunların bileşkelerinin hepsini işleyerek bir ağaç oluşturmuş olurum.
+
+1068
+02:33:48,863 --> 02:33:57,703
+İşte kalan son düğümde ağacın köküne yerleşir ve bu da aslında en yüksek frekansa sahip olan karakterdir.
+
+1069
+02:33:58,063 --> 02:34:05,563
+Şimdi bir sayısal örnek üzerinden ne yapmaya çalıştığımızı ya da buradaki öncelikli kuyruğun nasıl çalıştığını anlatmaya çalışayım.
+
+1070
+02:34:06,263 --> 02:34:10,843
+Şöyle, şimdi romanımda basit olsun diye 6 tane karakter var sadece.
+
+1071
+02:34:10,843 --> 02:34:14,984
+Tamam, A, B, C, D, E, F karakterlerinden oluşuyormuş.
+
+1072
+02:34:16,863 --> 02:34:38,664
+Şunları sileyim. En sık geçen F karakteri 45. En az geçen de A karakteri frekansı 5'miş. Tamam. Ben bunları kuyruğa attım. İşte 5, 9, 12, 13, 16, 45 diye yerleştiler. Aslında min prior tüküyor da bunlar duruyor. İki kere extract min yapıyorum. İlk yaptığımda kim gelecek? 5 gelecek.
+
+1073
+02:34:39,987 --> 02:35:06,987
+Tamam. İkinci yaptığımda kim gelecek? 9 gelecek. Tamam. Şu anda bunları çektim. PriorityQ'da yoklar. İki değeri topladım. 14. 5, 9 daha 14. Karakter değeri yok. Yani burada ya da istiyorsanız hani aynı nodları kullanmak istiyorsanız oraya şeyde yazabilirsiniz. Şurayı şöyle yapayım. Ondan sonra...
+
+1074
+02:35:09,203 --> 02:35:14,223
+Şöyle pointerları, sol pointerı, sağ pointerı ve değerleri ya.
+
+1075
+02:35:15,004 --> 02:35:23,083
+Buraya gelip, şuraya 14 yazıp istiyorsanız hani buraya da A, B yazabilirsiniz.
+
+1076
+02:35:24,644 --> 02:35:25,223
+Önemli değil.
+
+1077
+02:35:25,620 --> 02:35:43,320
+Burası çok mühim bir yer değil yani. Ara düğüm olduğunu ben sadece şöyle şekilde yuvarlakta göstermek istedim. Bakın bu bir uç nokta beş uç düğüm. Çünkü bunların pointerları yok. B'de aynı şekilde yaprak düğümü olarak ağacımızda yer alacak.
+
+1078
+02:35:44,244 --> 02:36:06,144
+Şimdi aslına bakarsanız niye ben burada mean priority queue kullanıyorum? Önce en düşük frekansa sahip olanları işleyeyim ki ağaçta bunlar aşağılarda kalsın. Böyle tepelerine başka şeyler gelsin. Tamam. Ve buralardakiler, yukarıdakiler daha yüksek frekanslardan oluşsun.
+
+1079
+02:36:06,579 --> 02:36:21,719
+Aşağıdakiler de daha düşük. Yani 0, 0, 1 şeklindeki uzun kodlara sahip olsunlar. Ama şuradaki mesela, şuradaki değer sadece 1 değeriyle erişilebilir olsun. Bunu sağlamak için düşük frekansları önce işlemeye çalışıyorum.
+
+1080
+02:36:23,000 --> 02:36:33,040
+Şunları temizleyebiliriz. Şimdi ne yaptık? 5 ve 9'u çektik, topladık. Değerini 14 olarak buraya koyduk. Ne yapacağım? 14'ü kuyruğa ekleyeceğim. Ekliyorum.
+
+1081
+02:36:34,067 --> 02:36:45,827
+ekledim. Şuradaydım ya, 12, 13, 16, 45 değerlerim vardı. Kuyruğa ekledim, şuraya gelmiş. 12, 13, 14, 16, 45 değerlerim min prior to queue'da duruyor.
+
+1082
+02:36:46,587 --> 02:36:54,487
+İki kere yine şey yaptım, extract min yaptım. 12'yi ve 13'ü kuyruktan, heap'ten çıkarttım.
+
+1083
+02:36:54,832 --> 02:37:02,792
+12 ile 13'ü topladım 25. Bir ara düğüm olarak buraya ekledim 25. Sol çocuğu 12, sağ çocuğu 13 olarak burada duruyor.
+
+1084
+02:37:04,152 --> 02:37:18,011
+Sonra ne yapacağım? 25 değerini de buraya insert edeceğim. Edelim. Ettim.
+
+1085
+02:37:18,515 --> 02:37:37,515
+Şimdi şöyle geri geleyim. Bakın 12.13 gitti. 14.16.45 vardı. Şimdi 25 geldi. 14.16.25.45 Min Priority Q'daki dizilimleri. 14 ile 16'yı çekeceğim. Bakın bunlar internal node. Ama isterseniz dediğim gibi A, B de bilmem ne değerlerini burada yazabilirsiniz. Çok önemli değil.
+
+1086
+02:37:38,036 --> 02:37:56,175
+14 ile 16'yı topladım. 30 değerini elde ettim. 30'u da bir ara düğüm olarak buraya ekledim ve kuyruğa ekledim. Şimdi ne olacak? Bunlar gitti kuyruktan. 30 geldi. Yani kuyruk 25, 30 ve 45'ten oluşacak. Bu arada Hufman ağacım da oluşuyor bakın burada.
+
+1087
+02:37:56,175 --> 02:37:58,256
+Şöyle.
+
+1088
+02:37:58,963 --> 02:38:18,164
+25, 30 ve 45'ten oluşuyor. Tekrar iki kere extract min yaptım. 25 ile 30'u topladım. İkisi de internal nottu zaten. 55 değerini elde ettim. Sol çocuğu 25, sağ çocuğu 30, kendisi 55. 55'i tekrar insert ettim. 45 ve 55.
+
+1089
+02:38:19,316 --> 02:38:29,736
+İki değer var. İki kere extract mean yaptım. Ne oldu? Topla 90, 100 yaptı. 100 değerini şuraya yazdım. Sol çocuğu 45, sağ çocuğu 55.
+
+1090
+02:38:30,515 --> 02:38:58,515
+Tamam. Sonra yüzü tekrardan buraya insert ettim. Tek değer kaldı. Orada durdum. Bitti. Şimdi burada oluşan ağaç yapısı, gördüğünüz şey yapı, bir ağaç yapısı, ikili ağaç. İşte biz buna Huffman ağacı adını veriyoruz. Gördüğünüz gibi priority queue'da sadece tek bir not kaldı. Heap'imde yani. Burada durma noktam olması açısından. Ve şu şekilde bir ağaç oluşturmuş.
+
+1091
+02:38:58,515 --> 02:39:08,275
+Şimdi ben burada nasıl bir kodlama yapacağım? Şu şekilde bakın. Sola gidenlere 0, sağa gidenlere 1 verelim.
+
+1092
+02:39:08,975 --> 02:39:18,675
+Sola gidene 0, sağa gidene 1. Buraya 0, buraya 1. Buraya 0, buraya 1. Buraya 0, buraya 1. Tamam.
+
+1093
+02:39:25,139 --> 02:39:27,459
+Ne olsun?
+
+1094
+02:39:28,119 --> 02:39:39,899
+F, B, ondan sonra bir daha F ve D, C.
+
+1095
+02:39:42,959 --> 02:39:43,879
+Şu da D.
+
+1096
+02:39:44,079 --> 02:39:44,199
+Tamam.
+
+1097
+02:39:44,859 --> 02:39:46,139
+Niye ben bunu şeyle yazdım ki?
+
+1098
+02:39:46,299 --> 02:39:47,399
+Şunu da yazsaydım daha iyiydi.
+
+1099
+02:39:47,500 --> 02:39:49,939
+F, D, F, D, C.
+
+1100
+02:39:50,500 --> 02:39:51,680
+F, B, F dedik değil mi?
+
+1101
+02:39:52,595 --> 02:40:00,475
+F, D, C şeklinde bir, şunları silelim, tamam böyle bir string yazmaya çalışayım.
+
+1102
+02:40:00,975 --> 02:40:09,576
+Şimdi ben bu stringi yazdığımda normalde her biri 8 bit çarpı 5 eşittir.
+
+1103
+02:40:09,955 --> 02:40:12,475
+Toplamda 40 bit harcıyordum değil mi?
+
+1104
+02:40:13,095 --> 02:40:14,216
+Şimdi F'yi yazalım.
+
+1105
+02:40:15,135 --> 02:40:16,376
+Ağacımdan bakarak.
+
+1106
+02:40:16,515 --> 02:40:17,576
+F'yi kodlamak istiyorum.
+
+1107
+02:40:17,940 --> 02:40:20,060
+Sadece tek bir bitle kodlayabiliyorum.
+
+1108
+02:40:20,380 --> 02:40:20,900
+Sıfır.
+
+1109
+02:40:21,700 --> 02:40:21,920
+Tamam.
+
+1110
+02:40:22,540 --> 02:40:24,560
+Sonra B'yi kodlayalım.
+
+1111
+02:40:25,520 --> 02:40:28,619
+B'yi kodlamak için doğal olarak buraya gitmem lazım.
+
+1112
+02:40:30,319 --> 02:40:31,119
+Bir.
+
+1113
+02:40:32,340 --> 02:40:35,139
+Sonra yine sağa gitmem lazım.
+
+1114
+02:40:35,299 --> 02:40:35,619
+Bir.
+
+1115
+02:40:36,740 --> 02:40:38,299
+Sonra sola gitmem lazım.
+
+1116
+02:40:38,500 --> 02:40:38,959
+Sıfır.
+
+1117
+02:40:40,060 --> 02:40:40,500
+Şuradayım.
+
+1118
+02:40:40,659 --> 02:40:41,920
+Sonra sağa gitmem lazım.
+
+1119
+02:40:42,079 --> 02:40:42,319
+Bir.
+
+1120
+02:40:43,079 --> 02:40:44,720
+Bir, bir, sıfır, bir ile kodladım.
+
+1121
+02:40:45,459 --> 02:41:07,403
+Ondan sonra bir daha F geldi. 0. Sonra D geldi. 1, şuradayım. 0, buradayım. 1, buradayım. Doğru yaptım değil mi? 1, 0, 1. Doğru yapmışım. Tamam. Sonra bir de C geldi. O da...
+
+1122
+02:41:08,691 --> 02:41:12,791
+Yok, bir dakika, F, tamam, B, D, bir de C geldi.
+
+1123
+02:41:13,331 --> 02:41:20,511
+Bir, şuradayım, sıfır, buradayım, sıfır, buradayım.
+
+1124
+02:41:20,992 --> 02:41:25,131
+Bu sayede zaten hiçbir kod birbirinin aynısı da olmaz ve rahatlıkla çözülebilir.
+
+1125
+02:41:25,251 --> 02:41:28,731
+Yani ben bunları aslında böyle bitişik de yazsam hiçbir sıkıntı yaşamam.
+
+1126
+02:41:28,731 --> 02:41:32,715
+Kaç bit oldu? Hadi bir de isterseniz...
+
+1127
+02:41:33,556 --> 02:41:58,056
+ne e koyalım? Gerek yok. Bence bu yeterli. Şimdi bitleri sayalım. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. Ne oldu? 12 bit. Şunu da şöyle yapalım. 12 bit. Yani ne kadarlık bir karım var? Şey yapın. 28 bölü 40 mı?
+
+1128
+02:41:59,443 --> 02:42:15,435
+Evet, yani şöyle o da kabaca değil, gerçekten 7 bölü 10. Yani %70 sıkıştırmış oldum. Sadece bir...
+
+1129
+02:42:15,476 --> 02:42:19,195
+min priority queue kullanıp nihayetinde bir ağaç oluşturarak.
+
+1130
+02:42:19,515 --> 02:42:22,156
+Diyeceksiniz ki hocam bu ağacı da karşıya yollamamız lazım.
+
+1131
+02:42:22,296 --> 02:42:24,916
+Evet doğru, ağacı da karşıya yollamamız lazım.
+
+1132
+02:42:24,916 --> 02:42:31,556
+Hani bu sıfırda F'e gidersin, işte bir sıfırla C'ye gidersin gibi gibi gibi.
+
+1133
+02:42:31,976 --> 02:42:35,216
+Ağaç yapısında artı şuraya hani koyalım.
+
+1134
+02:42:35,536 --> 02:42:49,816
+Artı ağaç overhead diyelim şuraya ama bir roman düşündüğünüzde ya da megabaytlarca, kilobaytlarca veri düşündüğünüzde birkaç baytlık veriyi de tepesine eklemek açıkçası şuradaki oranı çok fazla değiştirmeyecek.
+
+1135
+02:42:49,896 --> 02:42:51,935
+Hadi burada değiştirsin, %60'a indirsin gibi.
+
+1136
+02:42:54,076 --> 02:43:01,496
+Sonuçta ben bir temelde heap kullanan bir min priority queue yapısını kullanıp
+
+1137
+02:43:01,843 --> 02:43:15,343
+Akıllı bir şekilde sık kullanılan karakterleri az bit sayısıyla, az kullanılan karakterleri çok bit sayısıyla ki burada 4 bit sayısıyla kodlayabildim.
+
+1138
+02:43:15,343 --> 02:43:25,343
+İşte bu şekilde ben toplamda en sık geçenleri en kısa kodlarla ifade edeceğim için neredeyse mesela yarısı...
+
+1139
+02:43:25,747 --> 02:43:40,307
+A harfinden oluşuyordu ya benim romanımın. %50 zaten kafadan. 1 bölü 8 ne oluyor? 1 bölü 8 yarısıydı. 2 bölü 8, 1 bölü 4. Yani %75 zaten sadece A'lardan bir kar elde etmiş olurum.
+
+1140
+02:43:40,659 --> 02:43:54,659
+Diğerlerinden de daha fazla kar elde edeceğim ama bazı karakterlerden de zarar elde etmiş olabilirim. 8 bit de belki geçebilir. Nihayetinde yine böyle %70'ler mertebesinde sadece karakterlerden oluşan bir veriyi sıkıştırabilirim.
+
+1141
+02:43:56,500 --> 02:44:07,780
+Şunları temizleyelim ve son slide. Evet, bu da zaten yazmışım ben buraya. Bir daha üzerinde karalamaya gerek yokmuş. İşte F için 0.
+
+1142
+02:44:08,239 --> 02:44:23,000
+C için 1.0.0, D için 1.0.1 gibi yani bu bitleri, kod wordleri de şu karakterlere karşılık kod wordlerim bunlardır diye bir overhead ile yollamanız gerekecek. Yani şu ağaç yapısını karşı tarafa vermeniz gerekecek.
+
+1143
+02:44:23,600 --> 02:44:35,140
+Bu ağacı oluşturmak için de tekrar ediyorum. Az kullanılanları en aşağılarda, derinlerde tutmaya çalışıyorum. Sık kullanılanları köke yakın tutmaya çalışıyorum.
+
+1144
+02:44:35,520 --> 02:44:42,960
+O nedenle öncelikle az kullanılanları işlemeliyim ki onlar ağaçta aşağılarda kalsın diyorum.
+
+1145
+02:44:43,460 --> 02:44:45,720
+Bu nedenle de min priority queue kullanıyorum.
+
+1146
+02:44:46,140 --> 02:44:48,520
+Min priority queue'daki anahtar değerlerim neler?
+
+1147
+02:44:49,079 --> 02:44:52,680
+Karakterlerimin geçiş sıklıkları ya da frekansları.
+
+1148
+02:44:52,680 --> 02:44:56,496
+İşte bu sayede ben gördüğünüz gibi...
+
+1149
+02:44:56,495 --> 02:45:09,855
+Temel bir veri yapısını heap kullanıp bir priority queue implementasyonu, priority queue kullanarak da bir veri sıkıştırma uygulaması, çok temel ve sık kullanılan bir veri sıkıştırma uygulamasının nasıl yapılacağını görebiliyorum.
+
+1150
+02:45:10,255 --> 02:45:16,255
+Bunu tabii çok daha iyi hale, çok daha efektif hale getirebilirsiniz ki veri sıkıştırma zaten bunun üzerine çalışıyor.
+
+1151
+02:45:16,255 --> 02:45:24,255
+Ama işte zip olsun, lzv olsun bunların hepsi aslında bir şekilde kullanım sıklıklarını farklı ağaçlarına...
+
+1152
+02:45:24,495 --> 02:45:49,515
+yapılarıyla bilmem nelerle gösterip temeli hani mantık olarak temeli buraya dayanan yani kupon ağacına doğru dayanan yöntemler ve algoritmalar kullanıyor diyebiliriz. Evet, priority queue'lar bu kadar arkadaşlar. Şimdi önümüzdeki hafta 10 Mayıs tarihi. Bir saniye hemen.
+
+1153
+02:45:51,987 --> 02:45:55,927
+Bir dakika... Şuraya bir bakayım.
+
+1154
+02:45:57,907 --> 02:46:25,907
+Henüz bunu duyurmamışlar ama. Bilmiyorum tabii size haber geldi mi gelmedi mi, duyuruldu mu duyurulmadı mı. Fakat şöyle bir haber dolaşıyor. Ama ben yine de resmi kanaldan bu bilgiyi teyit etmedim. Önümüzdeki hafta bu idari izin olmuş kamuda. Bayram tatili 9 gün diyorlar ya onun gibi bir şey olmuş. Yani özetle 10, 11 ve 12.5 Mayıs'taki dersleri...
+
+1155
+02:46:25,907 --> 02:46:46,807
+Dersimiz yapılmayacakmış idari izin olması nedeniyle. %95 üzeri kesinliğe sahip bir bilgi. Yani %100 diyemiyorum. Çünkü dediğim gibi bana bir resmi tebligat yapılmadı bu konuda. İşte böyle anlayacağınız önümüzdeki hafta dersimizi yapamayacağız.
+
+1156
+02:46:50,004 --> 02:47:01,124
+Gibi görünüyor. Eğer yapılırsa yaparız tabii ki ama büyük bir ihtimalle sizlere de duyurulacaktır diye düşünüyorum. Eğer bilgisi olan varsa şimdi benimle yine paylaşabilir arkadaşlarımızla tabii ki.
+
+1157
+02:47:05,075 --> 02:47:07,435
+Kimse de yok. Peki. Tamam.
+
+1158
+02:47:08,995 --> 02:47:13,415
+Şimdi sıradaki konu, yani haftaya 10 Mayıs'ta normalde isteyeceğimiz konu graflardı.
+
+1159
+02:47:14,235 --> 02:47:18,475
+Graflardan sonra da minimum yayılımlı ağaca, minimum spanning tree'ye bakacaktık.
+
+1160
+02:47:20,155 --> 02:47:26,216
+Ondan sonra da böl ve yönet yöntemi ve böl ve yönet algoritmalarına bakacaktık.
+
+1161
+02:47:27,216 --> 02:47:31,475
+Sonrasında da sıralama algoritmaları...
+
+1162
+02:47:32,211 --> 02:47:34,751
+ve arada bir şey daha vardı. Ne vardı?
+
+1163
+02:47:35,891 --> 02:47:37,072
+String search.
+
+1164
+02:47:37,371 --> 02:47:56,231
+String search'ler var, doğru. Bunlara bakacaktık. Bakalım artık belki sıralama algoritmaları yetişmez ama yetiştirmek için elimizden geleni yapacağız. Gerekirse belki şeyleri kullanırız. Uygulama saatlerini kaldık kaldık. Onlara da daha ödev falan yapacağız. Öyle şeylerimiz, uygulamalarımız da var.
+
+1165
+02:48:03,059 --> 02:48:19,059
+Bu hafta asistan arkadaşlarım sizinle uygulama saatinde çözecekler. Özetle uygulama saatinde ben olmayacağım ama link paylaşacağız. Büyük bir ihtimalle herhalde bizim...
+
+1166
+02:48:19,347 --> 02:48:37,047
+Şeyi paylaşırız diye düşünüyorum. Sırada sanki biz grup 2 olduğumuza göre bizim uygulama saatimizin olması lazım. Yani benim oturumu açmam gerekecek. Bir şekilde o linki paylaşıp çarşamba günkü dersi yapacağız. Gereken bilgiyi ben size yine duvardan paylaşırım.
+
+1167
+02:48:37,492 --> 02:48:41,611
+O şekilde, tamam, onu da söyledik.
+
+1168
+02:48:42,332 --> 02:48:46,511
+Tamam, yani çarşamba günü Ödev 2'nin çözümüyle alakalı bir uygulamamız olacak.
+
+1169
+02:48:46,691 --> 02:48:49,111
+Bunun dışında ekstra bir şey yapmayacağız.
+
+1170
+02:48:51,667 --> 02:49:16,847
+Tamam ve haftaya da görünen o ki dersimiz tatil olmuş gibi görünüyor. Dediğim gibi %100 doğrulayamasam da sanki öyle olmuş gibi duruyor. O yüzden görüşemezsek de şimdiden hepinize iyi bayramlar diyeyim. Çünkü bayramdan sonraya kadar başka bir ders, teorik dersimiz olmayacak gibi görünüyor.
+
+1171
+02:49:18,195 --> 02:49:21,536
+Hocam ben size bir şey sorabilir miyim sınavda? Sormayı unuttum.
+
+1172
+02:49:21,895 --> 02:49:22,275
+Sor.
+
+1173
+02:49:23,335 --> 02:49:29,155
+Sınavda birinci klasik soruyu ben yollarken şey dönmüştü böyle gönderiliyor diye.
+
+1174
+02:49:30,555 --> 02:49:34,115
+Ondan sonra o bayağı bir uzun sürdü bir dakika gibi.
+
+1175
+02:49:34,755 --> 02:49:37,935
+Sonra süre bitmişti ama tamamlandığı yazıyor.
+
+1176
+02:49:38,335 --> 02:49:42,395
+Şeye bakınca hani tamamlandığı yazınca göndermiş mi oluyor acaba?
+
+1177
+02:49:43,195 --> 02:49:44,175
+Dur numaran kaç?
+
+1178
+02:49:44,915 --> 02:49:52,595
+18, 0, 11, 616
+
+1179
+02:49:52,595 --> 02:49:54,235
+Yok, yollamamış.
+
+1180
+02:49:54,695 --> 02:49:55,396
+Yollan mı işin?
+
+1181
+02:49:55,775 --> 02:49:56,976
+Yok, maalesef.
+
+1182
+02:49:58,175 --> 02:49:59,296
+Bir daha kontrol ediyorum.
+
+1183
+02:50:00,876 --> 02:50:01,796
+Yok.
+
+1184
+02:50:02,515 --> 02:50:03,775
+18, 0, 11
+
+1185
+02:50:03,775 --> 02:50:08,915
+Yok, maalesef.
+
+1186
+02:50:10,595 --> 02:50:10,935
+Yok.
+
+1187
+02:50:11,667 --> 02:50:33,667
+[öğrenci], [öğrenci] ve [öğrenci] var. En son, 18'lerde. Maalesef yollamamış. Evet. Normalde hocam, yollamadığı zaman tamamlanmadı yazması gerekmiyor mu? Yani bu zaman kadar öyleydi ama. Valla ne bileyim, bilmiyorum. Yani bir şey diyemeyeceğim. Bir buçuk yıl boyunca bir sistemin hala bozuk olması.
+
+1188
+02:50:34,708 --> 02:50:44,348
+Yani son dakikalara bırakmamakta fayda var. Özellikle yükleme dahildir diye yazıyoruz ama maalesef böyle şeyler olabiliyor.
+
+1189
+02:50:46,548 --> 02:50:55,868
+Yine bakıyorum ama yok. Yok valla. Yani yapacak bir şey yok.
+
+1190
+02:50:56,371 --> 02:51:11,291
+Slide'ı paylaşma imkanımız olursa çok iyi olur. Olur, paylaşırız. Şimdi şey yapayım hemen unutmadan duvara atayım. Peki arkadaşlar, dediğim gibi şimdiden hepinize mutlu ve sağlıklı günler ve iyi bayramlar diliyorum.
+
+1191
+02:51:11,752 --> 02:51:13,912
+İyi bayramlar. Hocam bir şey sor.
+
+1192
+02:51:13,912 --> 02:51:14,291
+İyi bayramlar hocam.
+
+1193
+02:51:14,871 --> 02:51:15,211
+Sor.
+
+1194
+02:51:16,352 --> 02:51:20,531
+Benim birinci soruyla ilgili bu mail göndermiş, size gelmiş.
+
+1195
+02:51:21,971 --> 02:51:23,291
+[öğrenci]'da.
+
+1196
+02:51:24,948 --> 02:51:28,448
+Neydi? Neydi mailin? O kadar çok mail geliyor ki.
+
+1197
+02:51:33,967 --> 02:51:36,987
+Konusu neydi? Ne demiştim? Ben cevap verdim mi? Vermedim mi?
+
+1198
+02:51:38,487 --> 02:51:43,948
+Ha tamam. 16 104 değil mi?
+
+1199
+02:51:44,587 --> 02:51:44,887
+Evet.
+
+1200
+02:51:45,307 --> 02:51:47,467
+Bakayım hemen kontrol edeyim.
+
+1201
+02:51:55,796 --> 02:51:56,587
+Evet.
+
+1202
+02:52:01,780 --> 02:52:04,340
+Bir dakika, zip'in içinde var. Tamam.
+
+1203
+02:52:08,500 --> 02:52:21,300
+Ama içindeki kodun 044 diye kayıtlı. Farkında mısın? Senin numara 044 ile mi bitiyor? 104 ile mi bitiyor?
+
+1204
+02:52:25,139 --> 02:52:27,399
+Evet, 160, 110, 44.
+
+1205
+02:52:28,959 --> 02:52:33,439
+Tamam, doğru, okey, kaydetmişim. Sıkıntı yok.
+
+1206
+02:52:36,439 --> 02:52:38,499
+Evet, o var, listede var, tamam.
+
+1207
+02:52:41,159 --> 02:52:43,699
+Hocam, ben de ikinci klasik soru hakkında bir şey sorabilir miyim?
+
+1208
+02:52:44,119 --> 02:52:45,759
+Sor, hadi sen de sor.
+
+1209
+02:52:46,128 --> 02:52:51,228
+Orada hani birinden de queue yapıp diğerinden de en queue yaptık ya, 43'e gelince de bir şey yapmadık.
+
+1210
+02:52:51,228 --> 02:52:51,488
+Hı.
+
+1211
+02:52:51,628 --> 02:52:57,328
+Yani silinecek. Ben o silinirken hani bastırıp silince, aradan bastırmak gibi düşünmüştüm.
+
+1212
+02:52:57,448 --> 02:53:01,448
+43'e gelince bastırdım da o nasıl bir değerlendirme olur diye soracaktım.
+
+1213
+02:53:01,768 --> 02:53:05,768
+Yani şey queue'ların oluşumu doğru da o 43 bastırmıştım.
+
+1214
+02:53:06,007 --> 02:53:08,667
+Yani bir şeyler gider ama şu anda ne gider bilmiyorum.
+
+1215
+02:53:09,780 --> 02:53:10,820
+Tamam, teşekkürler.
+
+1216
+02:53:10,980 --> 02:53:14,560
+Tamam, yani orada hani siliyoruz ya, onu print etmememiz gerekiyor.
+
+1217
+02:53:15,560 --> 02:53:17,760
+Bunlar Türkçe paragraf sorusu gibi olunca...
+
+1218
+02:53:17,760 --> 02:53:20,120
+Tamam, fazla bir işlem yapmış ama tamam.
+
+1219
+02:53:20,120 --> 02:53:26,440
+Ya şimdi haklısınız, yani herkes haklı gibi bir durum oluşuyor burada.
+
+1220
+02:53:26,900 --> 02:53:33,700
+Şöyle ki, şimdi uzaktan olunca biz sınava müdahale edemiyoruz.
+
+1221
+02:53:33,900 --> 02:53:35,884
+Normalde sınıfta hani...
+
+1222
+02:53:35,987 --> 02:53:45,808
+Bizde olunca açıklama yapıyoruz, siz soru soruyorsunuz ıvır kıvır. Mesela o hani test sorusunda nQ yazmışız ya, onu mesela sınıfta yapsaydık direkt düzeltecektik.
+
+1223
+02:53:45,868 --> 02:53:56,087
+Aa bu yanlış basılmış, dq olacak diye. Düzeltir, yolumuza devam ederdik. Maalesef uzaktan eğitimin hem yararları hem de zararları var.
+
+1224
+02:53:57,247 --> 02:54:01,208
+Şey soruları da böyle, algoritma soruları da böyle. Mesela algoritma soramıyoruz.
+
+1225
+02:54:01,843 --> 02:54:21,283
+Kod sormak zorunda kalıyoruz uzaktan olunca. Kod üzerinden algoritmik yaklaşımınızı görmeye ve test etmeye, değerlendirmeye çalışıyoruz. Keşke akış diagramı üzerinden yapsak. Normal, daha doğrusu, daha sağlıklısı o. Ama uzaktan eğitimde her şey tam olarak yapılamayabiliyor.
+
+1226
+02:54:21,727 --> 02:54:28,007
+Bazı farklı yollara sapmak zorunda, direkt kod dosyaları sormak zorunda kalabiliyoruz.
+
+1227
+02:54:28,727 --> 02:54:35,187
+Biz mutlu muyuz? Hayır, biz de değiliz. Sınıftaki eğitim bence daha iyi. Etkileşim daha iyi.
+
+1228
+02:54:37,459 --> 02:54:42,439
+Sınavlarda bile görüyorsunuz. Çok basit bir şey yüzünden bazen yanlış anlamalar olabiliyor.
+
+1229
+02:54:42,959 --> 02:54:55,999
+Halbuki hocam diye sınıfta bir parmak kaldırıp soru sorduğunda, olur mu şu şöyle zaten falan ya da şunu şöyle kabul edeceksiniz diye bir açıklama yapıldığında çok daha rahat bir şekilde o soru çözülebiliyor.
+
+1230
+02:54:56,564 --> 02:55:21,344
+Neyse, işte bu şekilde bakalım. Bu gidişatı sürdürmeye gayret edeceğiz. Siz siz olun, bol bol egzersiz yapın. Hem fiziksel olarak hem de algoritmik olarak. Tavsiyem odur. 10 gün şey yapmayın. Suspend state'e geçmeyin. Çalışmaya devam. Biz de çalışacağız çünkü. Bir ödevimiz var mıydı? Onu bir kontrol edeceğim. Bir saniye.
+
+1231
+02:55:25,108 --> 02:55:27,108
+Ama yok, bu hafta zaten...
+
+1232
+02:55:27,108 --> 02:55:31,268
+Yok yok, tamam, doğru ya. O zaten tatil haftasıydı diye hatırlıyorum.
+
+1233
+02:55:32,347 --> 02:55:33,247
+Yanlış mı hatırlıyorum?
+
+1234
+02:55:38,907 --> 02:55:41,727
+Hızlıca bir kontrolümü yapayım da öyle kapatayım arkadaşlar.
+
+1235
+02:55:43,867 --> 02:55:48,188
+Tamam, okey. Resmi tatil demişiz. Tamam, onda sorun yok.
+
+1236
+02:55:49,028 --> 02:55:50,108
+Oldu, o zaman...
+
+1237
+02:55:50,611 --> 02:55:53,291
+Bayramdan sonra görüşmek üzere. Hoşçakalın.
+
+1238
+02:55:53,311 --> 02:55:54,991
+İyi bayramlar hocam.
+
+1239
+02:55:54,991 --> 02:55:55,991
+Size de hepinize.

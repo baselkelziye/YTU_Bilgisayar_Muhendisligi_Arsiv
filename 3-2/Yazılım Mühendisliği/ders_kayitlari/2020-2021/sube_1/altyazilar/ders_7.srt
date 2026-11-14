@@ -1,0 +1,1951 @@
+1
+00:02:22,099 --> 00:02:22,719
+Merhaba, ciao.
+
+2
+00:04:36,564 --> 00:05:03,244
+Merhabalar, bugün uygulama yapacağız. Geçen haftada konuşmuştuk. Bu uygulamayı Elçin Hanım size verecek. Bir on dakika sonra arkadaşlarınız da tamamlandığında uygulama tanımına Elçin Hanım başlayacak.
+
+3
+00:05:15,507 --> 00:05:18,207
+Tamamdır hocam, hostluk zaten bende şu an.
+
+4
+00:05:18,527 --> 00:05:18,867
+Tamam.
+
+5
+00:05:19,387 --> 00:05:20,927
+Bundan sonrasını hallederim inşallah.
+
+6
+00:05:21,747 --> 00:05:23,288
+Tamam, başarılar diliyorum.
+
+7
+00:05:23,447 --> 00:05:24,387
+Teşekkür ederim.
+
+8
+00:15:24,884 --> 00:15:27,384
+Yavaş yavaş başlayabiliriz sanıyorum hocam.
+
+9
+00:15:38,451 --> 00:15:42,052
+Uyananlar da uykuya dalmadan uygulamamıza geçelim.
+
+10
+00:15:43,912 --> 00:15:50,772
+Arkadaşlar merhabalar, ben Elçin. Geçen dönemden veritabanıyla bundan bilenleriniz biliyordur.
+
+11
+00:15:53,211 --> 00:15:59,772
+Bugün beraber bir uygulama dersi yapacağız. Birkaç senaryomuz, örneğimiz var.
+
+12
+00:16:00,403 --> 00:16:08,043
+Bu örneklerde bize bir sistemin çeşitli gereksinimleri, istekleri verilmiş. Sistem neler yapabiliyor, neler yapamıyor.
+
+13
+00:16:10,203 --> 00:16:19,083
+Bu senaryolar üzerinden de ne yapacağız? Çeşitli diagramlarını çizdireceğiz.
+
+14
+00:16:19,083 --> 00:16:25,744
+İşte use case diagramı olacak, sınıf diagramı olacak bunlar, etkinlik şemalarımız olacak.
+
+15
+00:16:28,692 --> 00:16:30,312
+Ekranımı da paylaşayım.
+
+16
+00:16:50,484 --> 00:17:05,683
+Şimdi dedik örnekler üzerinden gideceğiz. Önce sistemin tanımını inceleyeceğiz. Daha sonrasında da bunu nasıl modellemişiz, çeşitli UML gösterimleri var. Bunlarla çizimlerine bakacağız.
+
+17
+00:17:06,584 --> 00:17:17,683
+Şimdi bir örneğimize başlayalım. Bu örnekte online anket yönetim sistemi var. Bir anket hazırlayıp.
+
+18
+00:17:17,728 --> 00:17:27,807
+Anketin kullanıcılara sunulması üzerine tasarlanmış, kullanıcıdan alınan bilgilerin toplanması üzerine tasarlanmış bir sistemin örneğini göreceğiz şimdi.
+
+19
+00:17:29,108 --> 00:17:40,728
+Detayına bakalım. Diyor ki, internet üzerinden anket yapmamıza yarayacak ve bu anketle ilgili de bize raporlar verecek bir bilgi sistemi istiyoruz.
+
+20
+00:17:42,099 --> 00:17:51,299
+Anketlerle ilgili özellikler nelermiş? Her anketin bir başlangıcı, bir de bitiş süresi olacakmış.
+
+21
+00:17:52,539 --> 00:18:01,299
+Anket seçenekleriyle ilgili bir bilgi var. Ne diyor? Sadece metinden oluşmayacak, bazen resim de içerebilecekmiş bu anket soruları.
+
+22
+00:18:03,460 --> 00:18:09,279
+Ve ankete oy verecek kişiler ancak o sistemdeki kayıtlı kullanıcılar olacakmış.
+
+23
+00:18:10,740 --> 00:18:19,940
+Ve anket ne diyor? Ancak o anketin yöneticisi olarak atanmış bir kullanıcı tarafına oluşturulabilmeli.
+
+24
+00:18:21,200 --> 00:18:33,519
+Yani sistemde kayıtlı kullanıcılar var. Anketi yapan kişi de yine bu kayıtlı kullanıcılardan bir tanesi. O anketin yöneticisi olmuş olacak. Böyle bir sistemimiz var.
+
+25
+00:18:35,519 --> 00:18:37,000
+Şöyle kaydedeyim bir yandan.
+
+26
+00:18:39,347 --> 00:18:41,167
+Sınıf şeması da görünsün.
+
+27
+00:18:59,155 --> 00:19:25,295
+Şimdi dedik, anketimiz var. Anket bir sınıf olarak düşündük, onu hayal ettik. Sonra sistemde kimler vardı? Kullanıcılar vardı. Ve ne dedik? Admin de yani anketin yöneticisi de bu kullanıcılardan biri. Dolayısıyla burada şöyle bir mantık yürütebilirim.
+
+28
+00:19:25,584 --> 00:19:33,844
+Eğer admin de bir kullanıcıysa, Nesne Dayalı'nın programlama dersinde de bunları sıkça görmüştünüz geçen yıl.
+
+29
+00:19:36,144 --> 00:19:42,504
+Bu, budur. İze ilişkilerinde ne yapıyorduk? Böyle bir kalıtım kullanabiliyorduk.
+
+30
+00:19:42,504 --> 00:19:49,704
+Yani admin bir kullanıcıysa o zaman bu sınıfa temsil eden bir başka alt sınıf olabilir diyorum.
+
+31
+00:19:49,864 --> 00:19:52,804
+Burada adminler için ayrı bir sınıf gösterimi yapabiliyorum.
+
+32
+00:19:54,259 --> 00:20:05,079
+Anket için ne olayım var? Anket ile admin arasında bir anketin bir admini bir yöneticisi olacağı için burada bakın birebir bir ilişki kurmuşum.
+
+33
+00:20:06,559 --> 00:20:15,039
+Ve yine anketin özelliklerini yazmışım. Ne demişti? Bir başlangıç tarihi olacak, bir de bitiş tarihi olacak, date tipinde.
+
+34
+00:20:15,635 --> 00:20:26,255
+Bunları da verdim ve bu anketi birden fazla kullanıcı cevaplayabilir. O yüzden bire çok ilişki verdim anket ve kullanıcı sınıfı arasına.
+
+35
+00:20:28,355 --> 00:20:33,315
+Ve bir de bize şurada anketin seçenekleriyle ilgili bir bilgi vermişti şu cümlede.
+
+36
+00:20:33,576 --> 00:20:38,875
+Demek ki seçeneklerle alakalı da ayrı bir sınıf oluşturmam daha güzel bir tasarım yapmamı sağlayacak.
+
+37
+00:20:42,675 --> 00:21:00,515
+Birden çok seçenek olabilir. Orada da yine bir bire çok ilişki kurdum. Peki seçeneklerle ilgili ne özellikler vardı? Metinden oluşur. Ek olarak resim de içerebilir. O zaman bir resim dosyası da alabilecek şekilde onu bir tanımladım.
+
+38
+00:21:01,515 --> 00:21:09,255
+Ve bununla ilgili bize ne diyordu? Kaç kişi bunu seçmiş? Yani seçenekler üzerinde de benim o raporlamayı yapabilmem için.
+
+39
+00:21:10,132 --> 00:21:17,251
+Her bir seçenekte seçen sayısı değerini de şurada bir sınıf değişkeni olarak tutabiliyorum.
+
+40
+00:21:19,092 --> 00:21:27,751
+Böyle bir örnek sınıf şavamız, olası bir sınıf şavamız bu şekilde tasarlılıp gösterilebilir bu anket sistemi için.
+
+41
+00:21:39,539 --> 00:21:46,799
+Sınıf şamamızı bu şekilde detaylandırdıktan sonra kullanım senaryosu örneğine bakalım bir de.
+
+42
+00:21:47,900 --> 00:21:52,980
+Kullanım senaryoları farklı farklı konularda olabilir. Burada seçtiğimiz senaryo neymiş?
+
+43
+00:21:52,980 --> 00:22:04,019
+Anket oluşturma üzerine. Anket oluşturma işinin akışı bakalım nasıl ilerliyormuş.
+
+44
+00:22:07,155 --> 00:22:21,096
+Şimdi senaryomuzun ismi anket oluşturma dedik. Her bir senaryoda nedir? Aktörleri oluyor. Birinci bir aktörü var. Buradaki aktörümüz, anket oluşturacak kişi, anket yöneticisi olacak.
+
+45
+00:22:21,096 --> 00:22:34,096
+Bu kişiyle alakalı kısımlar neler bizim için? Anket yöneticisinin, diğer adıyla adminin atandığı anketi diyor, başkasını değiştirmesini istemezsin.
+
+46
+00:22:44,180 --> 00:22:46,140
+15 dakika erken olmuyor mu hocam?
+
+47
+00:22:50,132 --> 00:22:54,172
+Ben böyle bir başlarım, bir saat falan gibi giderim diye düşünmüştüm ama.
+
+48
+00:23:12,084 --> 00:23:17,204
+Anket yöneticimiz dedik, kendi anketi üzerinde sadece kendi işlem yapmak istiyor.
+
+49
+00:23:18,564 --> 00:23:27,443
+Diğer kullanıcıların yapmak istediği işlem ne? Onlar da anketlerde oy kullanmak istiyorlar ve anket sonuçlarını da görmek istiyorlar.
+
+50
+00:23:28,224 --> 00:23:38,284
+Şimdi buradaki ön koşulumuz, giriş koşulumuzun ne olması lazım? Anket yöneticisinin sisteme girmesi gerekiyor öncelikle bu anketi oluşturması için.
+
+51
+00:23:38,963 --> 00:23:46,683
+O bu girişi yaptıktan sonra ana senaryoya geçiyoruz. Ne diyor? Yönetici yeni bir anket oluşturur.
+
+52
+00:23:48,063 --> 00:23:59,043
+Oluşturdu. Daha sonra anketin sorularını oluşturacak. Anketiyle ilişkilendirecek bu soruları. Daha sonrasında da anketi yayamayacak.
+
+53
+00:24:00,643 --> 00:24:06,523
+Burada alternatif olarak ana senaryoya alternatif bakışlarımız da oluyor. En son bunları da belirtiyordu.
+
+54
+00:24:07,155 --> 00:24:15,336
+Şu ikinci maddede soruları hazırlarken demiştik ki bir sorunun metni olur, bir de resimde içerebilir bu soru.
+
+55
+00:24:15,336 --> 00:24:31,836
+O sebepten ne diyoruz? Alternet bakışta eğer soru resim içeriyorsa, soru resim içeriyordur. O zaman anket yöneticisi bu soru için sisteme bir de resim dosyasını yükleyecektir.
+
+56
+00:24:34,836 --> 00:24:37,615
+alternatif olarak göstermiş oluyoruz.
+
+57
+00:24:42,804 --> 00:24:52,744
+Anket sistemimizle ilgili neler gösterdik? Örnek bir kullanım senaryosu ve bir de örnek bir sınıf diagramı basitçe bir şekilde ifade edilebiliyordu.
+
+58
+00:25:00,852 --> 00:25:05,872
+O kısımla ilgili soru varsa bakalım. Yoksa diğer örneğimize geçebiliriz.
+
+59
+00:25:09,587 --> 00:25:12,867
+Alternatif akışa niye iki numara dedik?
+
+60
+00:25:15,567 --> 00:25:21,827
+Şimdi ana senaryonun kaçıncı maddesinde bu alternatife giriyoruz? Onu belirtmek için.
+
+61
+00:25:23,008 --> 00:25:23,887
+Tamam, teşekkür ederim.
+
+62
+00:25:23,907 --> 00:25:34,148
+İkinci maddeden o alternatife çıkacağımız için buraya onu belirttik. Daha sonra orada olay neymiş? Soru resim içeriyormuş. Tamamen şunu belirtmek alın.
+
+63
+00:25:39,476 --> 00:25:50,856
+Daha sonrasında da bu alternatif bakışları bu şekilde, sanki böyle altı kırılmış gibi, mesela şurada yazsam 2A2B olacakmış gibi, bu da ABC diye numaralandırıyoruz.
+
+64
+00:25:59,892 --> 00:26:02,112
+Anket sistemimiz bu şekildeydi.
+
+65
+00:26:07,476 --> 00:26:16,576
+Bu daha basit bir örnek olduğu için örnek 2'den başlamıştım. Şimdi kaydırayım örnek 1'e gidelim. Biraz daha uzun senaryosu olan bir örnekle devam edeceğiz.
+
+66
+00:26:18,196 --> 00:26:24,396
+Bu örneğimiz bir kütüphane yazılımı, kütüphane yönetimi sistemi olacak bizim için.
+
+67
+00:26:26,396 --> 00:26:31,376
+Şimdi senaryosunu inceleyelim, anlamaya çalışalım. Bizden istenenler nelermiş?
+
+68
+00:26:34,420 --> 00:26:50,079
+Öncegüdeki bir kütüphane yönetim sistemi olacak. Kütüphanede ne diyor? Süreli yayın yönetimi yazılımına ihtiyacımız var. Süreli yayın yönetimi dediği süreli yayınlar anlayacağımız dergiler.
+
+69
+00:26:51,539 --> 00:26:55,380
+Belli bir periyotlarla belli bir sürede yayınlanan.
+
+70
+00:26:55,955 --> 00:27:05,016
+Ne diyor? Aylık olabiliyor bu yayınlanma süreleri dergilerin veya 3 ayda bir yayınlanıyor veya 4 ayda bir yayınlanıyor. Onların bir periyot bilgileri var.
+
+71
+00:27:05,715 --> 00:27:14,096
+Mesela şimdi cümleyi okuduğumuzda bile hemen kafamızda canlanıyor. Demek ki bir süreli yayın sınıfı var. İşte bunun periyot diye bir attribute, bir özelliği var mesela.
+
+72
+00:27:15,556 --> 00:27:20,435
+Her derginin böyle bir periyodu varmış. Ve bir de yayın ismi var.
+
+73
+00:27:24,231 --> 00:27:25,231
+Ayrıca...
+
+74
+00:27:23,443 --> 00:27:46,743
+Periyodular ismi var. Bir de her süreli yayının ismi ve kendisini diğerinden ayırt eden 8 karakterlik ISSN numarası bulunuyormuş. Bu da onların, hani bir kimlik numarası gibi her derginin kendine özgü bir numarası var. 8 karakterlik bir ISSN diye isimlendiren bir numaraları varmış bu dergilerin.
+
+75
+00:27:52,051 --> 00:28:02,271
+Bu numarayla ilgili açıklamayı yapmış. İlk 7 karakteri sayı, son karakteri de sayı veya x olarak belirtilmiş.
+
+76
+00:28:03,911 --> 00:28:09,431
+Mesela diyor, Nature isimli derginin ISS'ini şu şekildeymiş.
+
+77
+00:28:11,667 --> 00:28:23,447
+Daha doğru bir terminolojiyle ne diyor? Örneğine Nature bir aylık süreli bir yayındır ve kütüphane bu yayına 2014'ten beri aboneymiş.
+
+78
+00:28:28,427 --> 00:28:34,067
+Bir de şöyle bir bilgi var. Arada kütüphaneye ulaşmayan sayılar bulunabiliyormuş.
+
+79
+00:28:35,487 --> 00:28:37,707
+Aylık bir dergi 2014'ten beri abonelik var.
+
+80
+00:28:38,132 --> 00:28:42,271
+Ama arada ulaşmamış, elimizde olmayan sayılar da olabiliyor.
+
+81
+00:28:43,872 --> 00:28:46,572
+Şimdi dergilerle ilgili özellikler bunlar.
+
+82
+00:28:47,332 --> 00:28:48,832
+Ekstra bir özellik daha geliyor.
+
+83
+00:29:00,511 --> 00:29:06,451
+Yani dergi fiziksel olarak da elimize alabileceğimiz şekilde bulunuyor kütüphanede veya elektronik ortamda.
+
+84
+00:29:07,511 --> 00:29:09,672
+İnternet online şekilde erişiliyor.
+
+85
+00:29:10,632 --> 00:29:17,172
+İşte diyor elektronik yayınlar için derginin bütün sayılarının erişim için tek bir URL'e sahibiz.
+
+86
+00:29:18,451 --> 00:29:22,911
+O URL girildiği takdirde derginin bütün sayılarına erişim sağlanıyor.
+
+87
+00:29:27,316 --> 00:29:37,375
+Bu geriye dönük dedik bütün sayılarına da erişim var. Geriye dönük kaç yıllık sayılarına erişimimizin olduğu da backfile isimli bir değişkende tutulacak.
+
+88
+00:29:38,956 --> 00:29:46,476
+Kaç tane, kaç yıllık sayıya erişimim olduğunu da backfile isimli bir vintage'ir değişkende tutacağım.
+
+89
+00:29:48,336 --> 00:29:53,875
+Ne diyor? Bazı elektronik yayınlardaysa böyle bir backfile sınırı da bulunmuyormuş.
+
+90
+00:29:55,028 --> 00:29:57,987
+Yani demek ki şart değilmiş, waterfall'ın olması.
+
+91
+00:29:59,807 --> 00:30:02,447
+Basılı yayınlar için ise ne diyor?
+
+92
+00:30:03,567 --> 00:30:09,208
+Derginin kütüphanemizde bulunan her sayısı için yıl ve sayı bilgileri saklanır.
+
+93
+00:30:10,647 --> 00:30:14,507
+Her bir basılı yayın geldikçe demek ki sisteme işlenmiş.
+
+94
+00:30:15,447 --> 00:30:18,947
+Hangi yılda, kaçıncı sayısı var? Bütün bunlar tutuluyor.
+
+95
+00:30:19,988 --> 00:30:24,567
+Yeni bir basılı dergi geldiği zaman, kütüphaneci ne yapıyor?
+
+96
+00:30:26,628 --> 00:30:40,048
+Ne diyor? Kütüphaneci yeni gelen basılı dergi sayısında sisteme gireceği zaman, derginin mevcut sayılarının her biri bir kutucuk içerisinde yıl, sayı ve durum bilgilerine göre gösterilir.
+
+97
+00:30:40,807 --> 00:30:44,688
+Yeni bir dergi geldi. Kütüphaneci ne yapıyor? Yeni sayı geldi.
+
+98
+00:30:45,332 --> 00:30:49,652
+Ona bu bilgiler gösteriliyor, durum bilgisi gösteriliyor.
+
+99
+00:30:51,512 --> 00:30:56,711
+Olası durumlar diyor ki bir dergi için ya geldidir ya da bekleniyordur.
+
+100
+00:30:59,412 --> 00:31:04,772
+Eğer tarihi gelmişse artık bekleniyor olarak gösterilir o sistemde.
+
+101
+00:31:05,211 --> 00:31:10,812
+İlgili ay girmişse veya o 3 aylık periyot bitmiş gelmişse artık dergi bekleniyor olarak görünür ve
+
+102
+00:31:11,539 --> 00:31:17,039
+Eğer gelirse de, ne diyor kütüphaneci onu? Geldi olarak işaretler değiştirir.
+
+103
+00:31:18,900 --> 00:31:24,460
+Bu sebepten kütüphanecini tekrar edelim yapabileceği işlemler neler?
+
+104
+00:31:25,259 --> 00:31:28,880
+Derginin mevcut sayıları ona gösteriliyor bu bir.
+
+105
+00:31:30,867 --> 00:31:39,487
+O daha sonra derginin o sayısının durumunu değiştiriyor. Bekleniyor diyorsa ve dergi gelmişse bunu geldi yapabiliyor.
+
+106
+00:31:39,788 --> 00:31:45,907
+Ayrıca eski sürümlere de, eski sayı dergilerine de ulaşabiliyor aynı şekilde kütüphane için.
+
+107
+00:31:48,607 --> 00:31:53,867
+Kütüphanemizle ilgili ne dedik? Dergilerimiz var. Bu dergiler...
+
+108
+00:31:54,432 --> 00:31:58,932
+Fiziksel olarak basılı da olabiliyor veya elektronik ortamda olabiliyor.
+
+109
+00:31:59,192 --> 00:32:05,692
+Elektronik ise eğer tek bir yörel bilgisi var. Bununla bütün eski sayılara ulaşabiliyor.
+
+110
+00:32:06,132 --> 00:32:12,951
+Fakat bunda da bir olayımız var. Kaç yıllık sayıya erişimim olacağını backfile isimli bir değerde tutuyorum.
+
+111
+00:32:13,951 --> 00:32:17,867
+Basılı olanlarda ise onların...
+
+112
+00:32:18,003 --> 00:32:30,463
+Elimde hepsi bulunmayabilir. Evet, belli bir yıldan itibaren üyeyimdir ama arada elimde bulunmayan sayılar olabilir. Sistemde bunların hepsinin bilgisi tutuluyor. Hangisi var, hangisi yok biliniyor.
+
+113
+00:32:31,864 --> 00:32:41,723
+Ve ilgili derginin yeni sayısı gelmişse, kütüphaneci bunu o bekleniyor durumundan çıkarıp geldi durumuna işaretleyebiliyor.
+
+114
+00:33:09,556 --> 00:33:28,695
+Kütüphaneci sisteme girecek. ISSN numarasını girecek sisteme dergilen. Çünkü talamayıcı numarası buydu hatırlayalım. Eğer sistemde bu kaydı bulamazsa o zaman kütüphaneci ne yapacak? Bunun aboneliğini yapacak. Yeni bir kayıt oluşturacak yani.
+
+115
+00:33:29,748 --> 00:33:38,387
+Ne yapacak? ISS'nin ne girecek? Periyot bilgisine girecek. Periyot bilgisi dediğimiz derginin kaç ayda bir yayınlandığı bilgisi.
+
+116
+00:33:39,228 --> 00:33:49,288
+Derginin adının numarasını ve periyot bilgisini girip bu abonelik basılı mı olacak, elektronik mi olacak veya her ikisi de olabiliyor bir dergi için.
+
+117
+00:33:49,428 --> 00:33:56,048
+Hem elektronik erişimimiz olabilir hem basılı erişimimiz olabilir. Bununla alakalı bilgileri sisteme girecek.
+
+118
+00:33:58,420 --> 00:34:02,519
+Ve yeni bir kaydı, yeni bir aboneliği oluşturmuş olacak.
+
+119
+00:34:03,580 --> 00:34:05,800
+Eğer zaten varsa bu abonelik ne demiştik?
+
+120
+00:34:06,420 --> 00:34:09,199
+Sadece gelen sayıyı geldi olarak işaretleyecekti.
+
+121
+00:34:09,280 --> 00:34:11,239
+Başka yapacağı bir durum yoktu kütüphanecine.
+
+122
+00:34:13,820 --> 00:34:17,840
+Şimdi sistemimizi genel olarak anladıysak bir bakalım.
+
+123
+00:34:20,500 --> 00:34:26,159
+Olası alan modellerimiz, yani sınıf şamalarımız neler olabilir bu örnek için?
+
+124
+00:34:32,148 --> 00:34:47,088
+Öncelikle dedik ki bizim bir süreli yayım diye bir sınıfımız olsun. Bu derginin bilgilerini tutacağı alanları da nelerdi? Derginin bir ismi olacaktı ve bir ISS ne olacaktı?
+
+125
+00:34:47,668 --> 00:34:53,368
+ISSM'de bir X karakteri de olabileceği için string olarak tanımlamışım.
+
+126
+00:34:53,827 --> 00:34:57,007
+Çünkü numara numara numara bir de bir X karakteri gelebilme ihtimali var.
+
+127
+00:34:57,668 --> 00:35:04,028
+Derginin ismi, numarası ve periyoduda kaç ayda bir yayınlandığı bilgisi bulunacak.
+
+128
+00:35:05,148 --> 00:35:10,668
+Sonra burada bu dergiye ait sayılar var.
+
+129
+00:35:13,331 --> 00:35:20,911
+Şu sayılı dergisti. Her derginin böyle bir yıla göre, o aylık perioda göre numaraları var.
+
+130
+00:35:22,791 --> 00:35:34,211
+Ne yapacağım? Diyeceğim ki bu yayında bende şu sayılar var. O zaman burada bir toplama ilişkisi gibi bir aggregation kurabilirim.
+
+131
+00:35:35,987 --> 00:35:43,987
+Yayının sahip olduğu sayılar şunlar şunlar diye bunları burada bir dizide tutabilirim.
+
+132
+00:35:43,987 --> 00:35:46,127
+Sahip olduğum sayılar hangisi ise.
+
+133
+00:35:48,568 --> 00:35:52,007
+Bir de evet süreli yayın var.
+
+134
+00:35:52,247 --> 00:35:53,987
+Sahip olduğum sayılar var.
+
+135
+00:35:54,688 --> 00:35:55,547
+Bir de ne vardı?
+
+136
+00:35:56,403 --> 00:36:07,684
+Elektronik dergi vardı. Elektronik derginin olayı, böyle bir dergi için, bir süreli yayın için bir sürü bir sürü elektronik dergisi yoktu. Tek bir URL'den hepsini listeleyebiliyordum.
+
+137
+00:36:07,684 --> 00:36:21,903
+Doğal olarak şunu diyorum, bir süreli yayınım vardır. Bunu bir dedim. Bunun ya hiç elektronik aboneliği yoktur, yani o sadece basılı olarak elimde bulunuyordur. O zaman elektronikte bir işim yoktur.
+
+138
+00:36:23,315 --> 00:36:33,995
+Bir süreli yayınımın bir tane elektronik versiyonu da elektronik aboneliğimde bulunuyordur. O zaman burada bire, ya sıfır ya da birebir bir ilişki kurmuş olacağım.
+
+139
+00:36:34,815 --> 00:36:50,155
+Elektronik derginin de kendi üye alanları nelerdi? Bir URL'i vardı. Bir de backfile bilgisi, kaç adet geçmişe yönelik kaç yıllık sayılara erişebildiğim bilgisini tutuyordu bana. Bu bir tasarım.
+
+140
+00:36:50,963 --> 00:36:52,323
+Böyle gösterebiliyorum.
+
+141
+00:36:54,323 --> 00:36:57,443
+Sonra, diğer bir tasarım örneğime geçeyim.
+
+142
+00:36:57,844 --> 00:36:59,083
+Burada nasıl düşünmüşüm?
+
+143
+00:37:00,443 --> 00:37:09,243
+Burada da demişim ki, eğer basılı yayın da bir süreli yayın, elektronik dergi de bir süreli yayınsa,
+
+144
+00:37:09,243 --> 00:37:17,243
+sanki burada da böyle bir iz-e ilişkisi, bir kalıtım ilişkisi gibi kursam, sonuçta her birinin...
+
+145
+00:37:17,331 --> 00:37:38,131
+Diğer süreli yayın oldukları için ortak alanları var, isimleri var, ISSN'leri var, periyotları vesaireleri var. Basılı yayın da bunlara sahip. Basılı yayın ek olarak ne alanları içeriyor? Hangi yılda yayınlandı? Kaçıncı sayı? Bununla ilgili her basılı sayının ayrı ayrı bir bilgisi var.
+
+146
+00:37:39,131 --> 00:37:44,791
+Tabii bir de şurada söylemiyordum, durum bilgisi de var. Geldi mi? Bekleniyor mu? Belki de gelmemiş olabiliyor.
+
+147
+00:37:45,907 --> 00:37:51,667
+Elektronik dergide ise alanlarımız, yörel alanı ve backfile alanı var demiştik.
+
+148
+00:37:56,500 --> 00:38:08,720
+Bu tasarım bu şekilde. Burada da süreliyeli yine abstract yapmışız. Bir de bunu şu şekilde de ifade edebiliriz demişiz.
+
+149
+00:38:13,043 --> 00:38:23,563
+Sayıları, burada şu örnekte de dediğimiz gibi şu gösterimde de bir süreli yayında birden fazla sayısı olacağı için ben bunları yine bir dizide tutayım.
+
+150
+00:38:24,783 --> 00:38:29,183
+Yine bir bire çok ilişki kurayım. O derginin işte şu kadar şu kadar sayıları var.
+
+151
+00:38:30,243 --> 00:38:40,023
+Elektronik dergide buna bir ek alan gibi bir şey olur. Yani bir süreli yayını ek olarak bir de elektronik dergi yöreli vardır diye.
+
+152
+00:38:40,400 --> 00:38:46,619
+Onu da şöyle bir sınıfta, bir alt sınıfta gösterebilirim şeklinde böyle bir ifadede bulunabiliyorum.
+
+153
+00:38:53,427 --> 00:38:58,107
+Evet, bu şekilde olası alan modellerimiz de görmüş olduk.
+
+154
+00:39:03,251 --> 00:39:12,112
+Şimdi soruda bizden istenen diğer bir kısımda yine bir kullanım senaryosu yazmamız beklenmiş.
+
+155
+00:39:14,112 --> 00:39:17,251
+Neyle ilgiliymiş bu kullanım senaryosu?
+
+156
+00:39:18,492 --> 00:39:19,851
+Yeni sayı girişi.
+
+157
+00:39:21,952 --> 00:39:30,471
+Yani kütüphaneye bir derginin yeni sayısı geldiğinde bunu yapacak olan kişi kim, aktörü kim bu işin? Kütüphaneci.
+
+158
+00:39:30,931 --> 00:39:48,511
+Birinci aktörümüz kütüphaneci. Diğer bir ilgilimiz var mı bu konuyla ilgili? Yok. Olay sadece kişi ve sistem arasına geçiyorsa tek bir aktörümüz oluyor. Ama bir kişi var, bir sistem var, başka bir kişi varsa burada diğer ilgilileri de yazmamız gerekebiliyor.
+
+159
+00:39:49,371 --> 00:39:58,351
+Şimdi yeni bir sayı geldiğinde kütüphanecinin sistemi yapacağı işlemler var. Hemen bir ilgi alanı olayına da girelim. Kütüphanecinin alanı nedir?
+
+160
+00:39:59,251 --> 00:40:05,132
+Yeni eski her dergi sayısının bilgilerini doğru olarak görmeyi ve işaretlemeyi isteyecektir.
+
+161
+00:40:07,011 --> 00:40:11,351
+Ve bu senardaki ön koşulumuz tabii ki sisteme bir giriş yapılması gerekiyor.
+
+162
+00:40:12,891 --> 00:40:15,431
+Ön koşullu da kütüphancı sisteme giriş yapacak.
+
+163
+00:40:15,431 --> 00:40:19,612
+Son koşullu da işlemin tamamlanmasıyla ne olması gerekecek?
+
+164
+00:40:20,311 --> 00:40:25,511
+Yayınlar, sayı kayıtları sisteme girilmiş, güncellenmiş olacak.
+
+165
+00:40:26,356 --> 00:40:30,695
+Bu şekilde bir senaryomun genel görünümü böyle olacakmış.
+
+166
+00:40:30,856 --> 00:40:33,256
+Şimdi ana senaryoya geçelim.
+
+167
+00:40:33,376 --> 00:40:40,155
+Bakalım adım adım hangi işlemlerle yeni bir sayı geldiğinde kütüphaneci sisteme bakacak sayı.
+
+168
+00:40:40,815 --> 00:40:47,676
+Eğer neydi abone esek zaten çıkacaktı ve oradaki bekleniyor ifadesini geldi yapacaktı.
+
+169
+00:40:48,275 --> 00:40:50,735
+Eğer abone değilse de yeni bir üyelik yapacaktı.
+
+170
+00:40:50,815 --> 00:40:53,716
+Bakalım bunları senaryoda madde madde nasıl ifade etmişiz.
+
+171
+00:40:55,123 --> 00:41:03,963
+Şimdi ana senaryomuz şöyle. Kütüphaneci dedi, tamam kütüphaneye yeni bir dergi geldi ve onun ISS'nin ilgiler.
+
+172
+00:41:05,344 --> 00:41:10,123
+Girişini yaptı, numarasını girdi. Şimdi dergiyle ilgili bilgileri gösterecek.
+
+173
+00:41:10,323 --> 00:41:18,443
+İkinci maddede de derginin basılı aboneliği varsa adı ISS'nin periyot bilgileri gösterilecek.
+
+174
+00:41:21,427 --> 00:41:28,207
+Daha sonra yine bu abonelik varsa bu yıla ait sayılar kutucuklar içinde gösterilecek.
+
+175
+00:41:29,167 --> 00:41:35,947
+Mevcut sayıların durumunu sistemden elde edip gelecek sayıların durumu bekleniyor olarak gösterilecek.
+
+176
+00:41:35,947 --> 00:41:44,027
+Mevcut sayılar gelmiştir geldi diye yazıyorlar. Gelecek sayılar da bekleniyor olarak gösterilmesi gerekiyor.
+
+177
+00:41:46,708 --> 00:41:55,568
+Ayrıyeten bir de ne dedik? Bazı dergilerin elektronik abuneliği olabiliyor. Eğer böyle bir durum varsa da bu derginin URL ve backfile bilgisi de gösterecek.
+
+178
+00:41:57,208 --> 00:42:05,927
+Daha sonra kütüphaneci ona ekranda sunulan bilgileri alacak, güncelleyip onay düğmesine basıp işlemi tamamlayacak.
+
+179
+00:42:09,840 --> 00:42:17,060
+Bekleniyor'dan neye döndürdü durumlarını, geldiğe döndürdü ve bu şekilde güncellemesini yapıp çıkışı gerçekleştireceğiz.
+
+180
+00:42:18,000 --> 00:42:21,220
+Şimdi alternatif senaryo olarak şunu yazabiliriz burada.
+
+181
+00:42:22,579 --> 00:42:24,980
+Bu kütüphaneci ne dedi?
+
+182
+00:42:25,100 --> 00:42:34,260
+Daha ilk adımda derginin ISS'ine girdiğinde eğer o dergi sistemle kayıtlı bir dergi değilse doğal olarak ne yapması gerekiyor bu kişinin?
+
+183
+00:42:34,608 --> 00:42:38,148
+Orada bir yeni abonelik oluşturması, yeni bir kayıt oluşturması gerekiyor.
+
+184
+00:42:38,868 --> 00:42:41,467
+O yüzden ona gelip birinci maddede diyorum.
+
+185
+00:42:42,628 --> 00:42:48,568
+Şuradaki birinci maddemde artık yeni bir abonelik alternatif senaryom var.
+
+186
+00:42:49,047 --> 00:42:51,268
+Bunu bira olarak göstermişim.
+
+187
+00:42:51,268 --> 00:42:54,688
+Ve bunun altında madde madde neler yapacağım şimdi?
+
+188
+00:42:54,827 --> 00:42:57,748
+Yeni aboneliği de bunun altında detaylandıracağım.
+
+189
+00:42:59,155 --> 00:43:06,655
+Eğer sistem derginin ISS'ini bulamamışsa, kütüphaneci orada yeni abonelik oluştur diye bir şeye tıklayacaktır.
+
+190
+00:43:08,096 --> 00:43:19,635
+Daha sonra bu önerisi onaylanınca sistem kütüphaneciden neler isteyecek, derginin adını isteyecek, ISS'ini isteyecek ve periyodunu alacak kaç ayda bir yayınladığı bilgisini.
+
+191
+00:43:21,476 --> 00:43:22,876
+Ekstra olarak
+
+192
+00:43:23,231 --> 00:43:32,791
+Bir elektronik abonelik varsa bu sefer neler isteyecek? Onunla ilgili iki bilgi vardı. Yürel ve Backpile bilgileri. Bunu da yazacak kütüphanece.
+
+193
+00:43:34,431 --> 00:43:39,612
+Ve derginin basılı aboneliğine ait yıl ve sayı bilgilerini de girecek.
+
+194
+00:43:40,612 --> 00:43:46,551
+Onun hangi elindeki dergi kaçıncı yıla ait, kaçıncı hangi sayı dergi olduğunu yazacak.
+
+195
+00:43:46,551 --> 00:43:48,791
+Ve sistem ne yapacak?
+
+196
+00:43:49,076 --> 00:43:52,735
+Girilen bu sayının durumunu geldi olarak otomatik bir şekilde atayacak.
+
+197
+00:43:54,496 --> 00:44:01,576
+Eline gelen yeni bir derginin ISS'in ne girdi, sistem onu bulamadı. Bu sefer kütüphaneci ne yaptı?
+
+198
+00:44:01,576 --> 00:44:13,516
+Adım adım yeni aboneliği oluşturdu. Derginin bilgilerine girdi. Adını, numarasını, periyodunu. Ekstra bir elektronik abonelikte oluşturulacaksa yörel ve backfile girildi.
+
+199
+00:44:16,115 --> 00:44:26,195
+Ne yaptı? Elindeki derginin yıl ve sayı bilgilerine de girdi ve sistem bunu artık bu elimizdeki bir dergi olduğu için geldi olarak atamış oldu.
+
+200
+00:44:27,876 --> 00:44:33,395
+Şimdi alternatif senaryomuzda bir başka madde de şu olabilir diyor.
+
+201
+00:44:35,676 --> 00:44:39,195
+Hani kütüphaneci dergiyle ilgili bilgileri listelediğinde.
+
+202
+00:44:40,436 --> 00:44:49,275
+Şöyle ISS'e girmişti hatırlayalım ana senaryoda. ISS'e girdi. Basılı abonelik varsa derginin bilgileri yayınlandı.
+
+203
+00:44:49,275 --> 00:44:53,275
+Ve üçüncü maddede o dergiye ait...
+
+204
+00:44:56,724 --> 00:45:00,284
+Hangi sayılar olduğu da gösterilmiş oldu bize.
+
+205
+00:45:01,864 --> 00:45:08,324
+Şimdi bu noktada belki kütüphaneci önceki yıla ait bir sayının işlemini yapmak istiyordur.
+
+206
+00:45:13,811 --> 00:45:37,192
+Bu tamam, o yılki sayıları gösteriyor, gelecekte ki sayıları. Ama kütüphaneci belki önceki yıla ait bir sayının işlemini yapmak istiyor. Eski bir dergi sistemi kütüphaneye ulaştı. Onun da elinde geldiğini, önceki yıla ait bir derginin de girişini yapmak istiyor. O zaman kütüphaneci şöyle de bir imkan verilmesi lazım. Görmek istediği yılı belirtebilmeli.
+
+207
+00:45:39,572 --> 00:45:57,112
+Sistemde girilen bu yılı alıp bu sefer onun kutucuklarını çizerek o sayıların durumlarını verebilmek. Yani listeleyecek işte 2012 yılında şu şu sayılar bulunuyor, bulunmuyor, geldi gelmedi ve kütüphaneci yine oradan yapacak.
+
+208
+00:45:57,112 --> 00:46:06,251
+Eğer gelen varsa durumunu değiştirip geldi şeklinde de güncelleyebilecek veya sadece gösterimini sağlamış olacak.
+
+209
+00:46:07,635 --> 00:46:14,355
+Ana senaryodan alt kırılımı ayırdığımız alternatif senaryolarımız da dedik bu şekilde olabiliyor.
+
+210
+00:46:16,695 --> 00:46:24,336
+Ya bir yeni abonelik oluşturma durumu alternatif olarak olabiliyor veya önceki yıla ait sayının işleminin yapılması.
+
+211
+00:46:29,811 --> 00:46:44,551
+Şimdi sistemle ilgili yer göreceğimiz bir UML tipi de use case diagramlarını nasıl çizmişiz? Olası use case'ler neler olabilir?
+
+212
+00:46:47,251 --> 00:46:51,271
+Şimdi birkaç uygun gösterimimiz var. Bunları inceleyelim.
+
+213
+00:46:53,211 --> 00:46:55,831
+Önceki use case'lerde neydi? Bir aktörümüz.
+
+214
+00:46:56,788 --> 00:47:05,148
+Bulunuyor ve eğer bu bir insansa bunu bir çöp adam şeklinde gösteriyorduk. Altında da ismini yazıyoruz. Kütüphaneci diye belirttik.
+
+215
+00:47:06,368 --> 00:47:15,307
+Şimdi onu yapabileceği işlemler neler vardı? Bir, önce şuradan başlayalım mesela, sisteme giriş yapar dedik.
+
+216
+00:47:17,088 --> 00:47:20,688
+Daha sonra yeni bir sayı geldiğinde ona dair bir takım işlemleri var.
+
+217
+00:47:22,324 --> 00:47:24,624
+O sayına sisteme girilmesiyle alakalı.
+
+218
+00:47:26,564 --> 00:47:31,904
+Veya bir de sıfırdan bir abonelik yeni bir kayıt oluşturmasına daire yaptığı bir takım işlemler var.
+
+219
+00:47:33,164 --> 00:47:34,503
+Bunun aktiviteleri bulunar.
+
+220
+00:47:35,944 --> 00:47:39,043
+Tabii burada bu çok temel bir gösterim.
+
+221
+00:47:39,463 --> 00:47:46,463
+Daha bunu böyle genişletip include ve extendlerle alt detaylarını da verebilmemiz mümkün.
+
+222
+00:47:46,463 --> 00:47:49,404
+Bunu nasıl yapmışız? Mesela bir uygun şemeye bakalım.
+
+223
+00:47:50,452 --> 00:48:17,172
+Demişiz ki, yeni bir sayı geldiğinde, bu durum bu sayının eski abonelik olmasıyla yeni abonelik olmasına göre takım değişiklikler arzu ediyordu. Bu şekilde bu işlemi genişletmişiz. Mesela eski abonelikse hemen ekrandan hızlı bir şekilde ne yapıyordu, durumunu güncelliyordu, geldi şeklinde yazıyordu, var olan bir abonelikse.
+
+224
+00:48:17,748 --> 00:48:23,547
+Ama işte yeni abonelik durumunda yeni sayı gelişinde farklı işlemler yürütülüyordu bu sefer.
+
+225
+00:48:23,688 --> 00:48:26,547
+Yeniden bir kayıt oluşturma, giriş yapma vs. gibi.
+
+226
+00:48:27,587 --> 00:48:28,947
+Şimdi bu bir düşünce biçimi.
+
+227
+00:48:29,847 --> 00:48:38,988
+Ama burada aboneliklerle ilgili bir durum olduğu için belki bunu abonelik kısmında belirtmek daha doğru bir tasarım olabilir.
+
+228
+00:48:39,603 --> 00:48:46,263
+O yüzden diyoruz ki bizim sistemimize göre belki şu gösterim çok daha iyi olacaktır.
+
+229
+00:48:47,623 --> 00:48:51,884
+Yani kütüphanecinin yapacağı işlemlerden biri de abonelikti.
+
+230
+00:48:51,884 --> 00:48:57,123
+Bu abonelik işleminin gerçekleştirilmesi de neydi?
+
+231
+00:48:58,416 --> 00:49:03,336
+Elektronik aboneliği için farklı bir takım bilgiler giriliyordu.
+
+232
+00:49:04,016 --> 00:49:08,896
+Basılı abonelik durumunda farklı bir takım bilgilerle işlemler yapıyordu.
+
+233
+00:49:09,316 --> 00:49:14,655
+Yani bu işlem bu şekilde biraz genişletilmiş oluyordu, detaylandırılmış oluyordu.
+
+234
+00:49:17,376 --> 00:49:20,676
+Böyle bir düşünce şeklimiz.
+
+235
+00:49:21,088 --> 00:49:31,008
+Oluyordu. Tabii sadece elektronik, sadece basılı değil, her ikisinin de olduğu abonelik şeklimiz var. Yani üç şekilde bu derginin aboneliği sağlanıyordu.
+
+236
+00:49:33,828 --> 00:49:39,668
+Peki şöyle bir tasarımdaki durum doğru mudur, yanlış mıdır? Buna bir bakalım.
+
+237
+00:49:41,448 --> 00:49:46,467
+Burada da abonelik, evet. Yeni sayı gelişi, evet.
+
+238
+00:49:47,699 --> 00:49:50,639
+Bu sefer burada bir include ilişkisi demişiz.
+
+239
+00:49:51,839 --> 00:49:57,039
+Include'te ne vardı? Bu işlem bu işi içermeli.
+
+240
+00:49:58,199 --> 00:50:04,219
+Yeni sayı gelişinde, evet basılı ve elektronik olma durumlarına göre bir işlem var ama.
+
+241
+00:50:04,755 --> 00:50:21,715
+Sanki burada bir şart durumu var değil mi? Include'da çünkü böyle bir şartımız var. Bu kesinlikle bunun içerisinde olmalı gibi. Ama bizde illa elektronik aboneliğimizin olması gibi bir şartımız yok mesela.
+
+242
+00:50:22,291 --> 00:50:47,231
+Yani yeni sayı geldiğinde basılı aboneliğimiz bile olmayabilir. Neden? Diyoruz yeni bir abonelikte oluşturmamız gerekiyor. O yüzden yeni sayı gelişine dair işlemleri yapabilmek için sadece illaki bir basılı abonelik inklud olsun, elektronik abonelik inklud olsun ifadesi aslında mantık gereği yanlış bir ifade olmuş oluyor.
+
+243
+00:50:48,211 --> 00:50:52,152
+O yüzden şu şekilde göstermemiz en uygun ifade.
+
+244
+00:50:53,011 --> 00:51:01,471
+Yani aboneliği elektronik ve basılı olması cinsinde extend etmek, genişletmek en mantıklı yapacağımız işlem olacak bu noktada.
+
+245
+00:51:03,511 --> 00:51:10,231
+Ona göre aboneliğin elektronik ve basılı olduğuna dair belgilerine girebiliyoruz.
+
+246
+00:51:13,684 --> 00:51:19,084
+Evet, bu örneğimizde hem bir eklemimiz daha varmış şurada gereksinim belgemize.
+
+247
+00:51:21,164 --> 00:51:21,764
+Ne dedi?
+
+248
+00:51:25,844 --> 00:51:29,123
+Gereksinimlerimize şunu eklesek nasıl olur?
+
+249
+00:51:30,203 --> 00:51:33,923
+Kütüphanecinin, şöyle gelelim.
+
+250
+00:51:35,963 --> 00:51:42,884
+Neymiş? Kütüphanecinin içine tıklayarak değiştirebildiği, okuyucuların ise değiştirmeden içeriğini okuyabilir.
+
+251
+00:51:43,884 --> 00:51:51,483
+Şimdi bir check-in kartı var. Check-in kartı dediğimiz bir olay var. Bu kart dergiye ait bir kart.
+
+252
+00:51:53,172 --> 00:52:07,851
+Kütüphaneci ne yapıyormuş? Bunu tıklıyor, değiştirebiliyor. Okuyucu ise değiştirmeden görüyor. Dergiyle ilgili bilgilerin olduğu, kaç sayısının bulunduğu vesaire gibi bir check-in kartı olabilir bu.
+
+253
+00:52:08,672 --> 00:52:16,071
+Kütüphaneci doğal olarak bunun üstünde işlemler yapıyor. Ama okuyucu da bunu görüntüleyebilme imkanına sahip.
+
+254
+00:52:16,071 --> 00:52:20,771
+O zaman bu use case'de ne yapacağım? Bir aktörüm kütüphaneci olacak.
+
+255
+00:52:21,139 --> 00:52:47,800
+İkinci bir aktörüm de bu sefer okuyucu da olacak. Okuyucunun yaptığı işlem sadece görüntülemek. Herhangi bir oynama yapamıyor burada. Kütüphaneci neler yapabiliyor? Kütüphaneci de görüntülüyor ama kütüphaneci şu işlemler dolayısıyla bu check-in kartı üzerinde de oynamalar yapabiliyor.
+
+256
+00:52:48,403 --> 00:53:14,723
+Mesela ne yapıyor? Yeni bir sayı geldiğinde doğal olarak o yeni sayı gelişi check-in kartı gösterimini içermeli. Bu benim şartım. Yani o kartı göreceğim ki yeni gelen sayı, evet diyeceğim şunu işaretle bu geldi, bu geldi şeklinde işaret atabilmem için bu işlem, yeni sayı gelişi işlemi inklud etmeli, içermeli check-in kartı gösterimini.
+
+257
+00:53:40,751 --> 00:53:49,511
+İşte dergiyle ilgili bilgileri giriyorduk, giriyorduk. Ha bu durum check-in kartı gösterimiyle extent edilebilir. Çünkü zaten var olan bir kart yok orada.
+
+258
+00:53:50,387 --> 00:54:17,528
+Ancak bilgileri yazdım, tamamladım. Daha sonra bir de ekstra check-in kartına da o sıra bakabilirim. Zaten o sırada oluşturuyorum. Abonelikle oluşturuyorum aslında olan check-in kartını. O yüzden burada bir aboneliği yazdım, yazdım, bilgileri yazdım. Belki o bilgileri bir tekrardan görmek, kontrol etmek adına bu sefer buraya bir extent ilişkisi diyorum. Check-in kartı gösterimi, abonelik işleminde bir extent olur.
+
+259
+00:54:17,936 --> 00:54:26,695
+Ama yeni sayı geldiğinde tekrar edelim. Mutlaka o check-in kartını görmem lazım ekrana. Dergiyle ilgili gelen bilgiler benim check-in kartım oluyor.
+
+260
+00:54:28,695 --> 00:54:31,376
+Bu da bir de check-in kartı gösterimini.
+
+261
+00:54:31,956 --> 00:54:46,296
+Düzenlenme olarak da bir de extend etmişiz. Yani sadece gösterme değil, bir de ne yapılıyor da üstünde işlemler, işaretlemeler yapılabileceği için bu işlemi de bu şekilde extend ile genişletebilirim diyorum, gösterebilirim diyorum.
+
+262
+00:54:48,676 --> 00:54:53,596
+Okuyucu zaten ne yaptı? Gösterimini sağlamış oldu.
+
+263
+00:54:56,083 --> 00:55:03,403
+Böyle bir kütüphane sistemimiz de bu şekildeydi. Bununla ilgili de aynen başka diagramımız kalmamış.
+
+264
+00:55:03,703 --> 00:55:05,023
+Göz case'ini gördük.
+
+265
+00:55:11,380 --> 00:55:22,240
+Soruya bakalım. Bir sınıf birden fazla kez, extend yapılabilir mi? Java'da olmaz ve yönelde farklı mı?
+
+266
+00:55:25,160 --> 00:55:29,900
+Şu sınıf diagramındaki olaydan mı bahsediyorsun [öğrenci]?
+
+267
+00:55:34,483 --> 00:55:45,543
+Tekrar bakalım oraya. Hangisi? Şöyle numara vereyim. 1, 2, 3. Şu ikinci de kimi?
+
+268
+00:55:46,708 --> 00:56:04,987
+Aslında bir sonraki slidedekini kastetmiştim de burası da olur. Burada süreli yayını bir soyut sınıf olarak tanımlamışız da, yani hem basılı hem elektronik olma durumunu nasıl gösterebileceğiz şu diagramda? Yani ya basılı ya elektronik dergi olur gibi görünüyor. Ortak olanı nasıl olur?
+
+269
+00:56:07,147 --> 00:56:08,487
+Evet, bakalım ona.
+
+270
+00:56:12,211 --> 00:56:15,991
+Basılı sayılarımızın dedik, sayı numarası yılı var.
+
+271
+00:56:17,851 --> 00:56:20,043
+Elektronik dergilerinde...
+
+272
+00:56:23,219 --> 00:56:46,539
+Şöyle planlayabiliriz bunu. Süreli yayın, derginin kendisi burada. ISSM'le onun tanımını orada yapıyorum aslında. Bunun altı olarak o basılı sayı da bulunabiliyor. Elektronik sayısı da olabiliyor.
+
+273
+00:56:48,340 --> 00:56:50,220
+Bunların ne kremelerinde yapabiliyoruz?
+
+274
+00:56:50,580 --> 00:57:04,060
+Mesela veri tabanında şey görmüştük ya, overlap ya da disjoint kısımları vardı. Biri her iki sınıf ya da birden fazla sınıf da olabiliyordu. Diğeri ayrı sınıflar olmak zorundaydı. Burada nasıl gösterebiliriz onu soracaktım.
+
+275
+00:57:09,748 --> 00:57:13,788
+Ya da belki ben şu an tam ilgilenip biraz daha bakayım. Teşekkürler.
+
+276
+00:57:14,368 --> 00:57:24,748
+Yoksa güzel soru sordun. Çünkü aslında evet, UML gösterimine bakıldığında bunların iki ayrık sınıf gibi düşünülmesi gerekiyor.
+
+277
+00:57:26,028 --> 00:57:32,248
+UML'de de biz hep zaten böyle gösterirdik. Aslında daha mantıklı gösterim diğerleri.
+
+278
+00:57:33,528 --> 00:57:36,628
+Burada çünkü tamamen birbirleriyle ayrı gibi olmuş.
+
+279
+00:57:40,211 --> 00:57:53,751
+Ama işte burada göstereceğim, hani bunları böyle bir ayrık şekilde düşünüp, elektronik derginin de bir ismi var, ISS'i var, periyodu var, üstüne bir de URL'i var, backfile'i var.
+
+280
+00:57:53,751 --> 00:58:02,812
+İşte basıl sayının da yine şu alanlar artı, şu şu şu özellikleri var gibi bir mantık yürütülmüş anladığım kadarıyla bu çizimde.
+
+281
+00:58:05,907 --> 00:58:20,327
+Kalıtım ilişkisi gibi hem bu alanlara sahip bu sınıf hem de ekstra bunları var. Elektronik derginde hem şunlara sahip hem de bu alanları var gibi o şekilde düşünüp böyle ayrı ayrı tanımlamışız gibi.
+
+282
+00:58:22,188 --> 00:58:31,387
+Ama hani diğerlerinde mesela şurada evet basılı sayıyla belki elektronik dergiyi direkt ilişkilendiremiyorum. Hani ayrı ayrı gösteriyorum bunları.
+
+283
+00:58:31,764 --> 00:58:47,224
+Bir tarafta basılı sayılar var, bir tarafta elektronik dergiler var. Ama diğer tarafta mesela şunda, yayını direkt bir elektronik dergi olarak alta indirdiğim zaman sayılarıyla da direkt ilişkilendirebiliyorum.
+
+284
+00:58:48,924 --> 00:58:57,624
+Ama şu gösterim, evet, direkt basılı sayıyla belki çok da bir ilişki kurdurmuyor bizi. Elektronikler bir tarafta, basılı sayılar bir tarafta ayrı ayrı gösterim olmuş oluyor.
+
+285
+00:59:01,523 --> 00:59:08,764
+Teşekkür ediyorum sorun için. Başka sorusu olan var mı? Bu örnekle alakalı.
+
+286
+00:59:16,947 --> 00:59:20,088
+Tüphan örneğimizi geçiyorum öyleyse.
+
+287
+00:59:25,076 --> 00:59:26,876
+Online anketi de yaptık.
+
+288
+00:59:30,136 --> 00:59:35,096
+Şimdi aslında yine evet kütüphane ile alakalı bir başka örneğe geldik.
+
+289
+00:59:36,536 --> 00:59:40,256
+Burada da bir ödünç verme sistemini göreceğiz.
+
+290
+00:59:42,196 --> 00:59:51,156
+Kütüphane yazılımında kişilerin, bu sefer kullanıcıların bir kitabı ödünç alıp alamaması ile ilgili kısım var.
+
+291
+00:59:52,788 --> 00:59:56,208
+Bununla ilgili de birkaç bizden yine diagram isteyecek.
+
+292
+00:59:57,987 --> 01:00:03,067
+Şimdi, kitap ödünç verilirken izlenen yola bakalım.
+
+293
+01:00:04,627 --> 01:00:07,507
+Yani bu sistemin adımları nelermiş, neler oluyormuş.
+
+294
+01:00:14,291 --> 01:00:30,131
+Önce okuyucunun üstünde kaç kitap olduğuna bakacakmışız. Çünkü bir kitap alma sınırı var okuyucu için. İşte aynı anda o an kaç tane kitap almış olabilir? Elinde iki kitap mı beş kitap mı ne kadar barındırabildiğine dair bir sınırı var.
+
+295
+01:00:31,131 --> 01:00:40,411
+Eğer kullanıcı yeni bir okuyucu yeni bir kitap almak istiyorsa ama elindeki kitaplarla o sınırı doldurmuşsa yeni kitap vermiyoruz.
+
+296
+01:00:41,684 --> 01:00:54,943
+Diğer bir kısıtımız, okuyucunun üstündeki toplam para cezasının okuyucu için önceden tanımlanmış cezalardan fazla olup olmadığına bakacağız toplam cezaya.
+
+297
+01:00:54,943 --> 01:01:04,943
+Şimdi bu toplam cezayı da diyor ki şöyle hesaplayacaksın. Bu kişinin geçmişte aldığı cezalar var, ödediği cezalar var. Bir de bunun üstüne.
+
+298
+01:01:06,420 --> 01:01:13,920
+O an elinde bulundurduğu kitaplardan, iade tarihi geçmiş kitaplardan dolayı da bir cezası var çünkü bunun. Daha ödememiş.
+
+299
+01:01:14,560 --> 01:01:28,300
+Ama o ceza miktarını da topladığımda, bunun eski cezalarına ve ödemesi gereken cezayı topladığımda artık belli bir sınırı da aşıyorsa, orada da yine okuyucu sınıfına bir sınır vereceğim demek ki, bir ceza sınırı var.
+
+300
+01:01:28,960 --> 01:01:32,180
+Artık bunu aşacaksa da yeni bir kitap daha vermeyeceğim.
+
+301
+01:01:32,628 --> 01:01:53,547
+Sistemin bir de böyle bir kısıtı olacak. Yani okuyucu ile ilgili iki temel kısıtım o zaman olacak. İki temel kontrolüm var. Bir tanesi kitap sayılarına bakacağım. Sınırı doldurmuş mu, doldurmamış mı? Kitap sınırı diye bir, demek ki bir integer değişkenim olacak ki orada bir kontrol yapacağım. Bir tanesinde de bir ceza sınırı olacak.
+
+302
+01:01:54,347 --> 01:02:00,208
+Bunu nasıl hesaplıyormuşum? Bu kişinin bir önceki cezaları var. Buradan bir tutarı var.
+
+303
+01:02:00,692 --> 01:02:10,792
+Artı bir de şu an elinde olan kitaplardan dolayı ödemesi gereken, iade etmediği kitaplardan dolayı bir gecikmesi varsa,
+
+304
+01:02:10,792 --> 01:02:16,652
+onu da nasıl anlayacağım, işte bugünün tarihini geçmişte eğer getirmesi gereken kitapları,
+
+305
+01:02:17,432 --> 01:02:26,211
+buradan alacağı cezayı da toplayıp o kişinin bir toplam ceza parasını hesaplayacağım ve bu da ceza sınırına aşıyorsa diyeceğim ki ödünç veremiyorum.
+
+306
+01:02:28,659 --> 01:02:49,119
+Evet, ceza sınırı maşılmışsa okuyucuya yeni kitap veremiyorum. Aksi halde bir ödünç kaydı oluşturarak okuyucu kaydı ile ilişkilendiriyorum. Eğer bu şartlarla ilgili bir sıkıntı yoksa, her ikisinden de düzgün bir şekilde geçilmişse kaydını oluşturuyorum ve kitabı veriyorum.
+
+307
+01:02:50,324 --> 01:02:58,784
+Ödünç kaydında alış tarihi, bugünün tarihi, dönüş tarihi ise istenen kitabın kaç günlüğüne ödünç verileceğine bakarak belirleniyor.
+
+308
+01:02:58,884 --> 01:03:06,163
+Şimdi kafamda biraz biraz oluşmaya başladı o zaman. Mesela kitapla ilgili bazı bilgiler olacak.
+
+309
+01:03:07,503 --> 01:03:12,963
+İşte kitabın kaç günlüğüne ödünç verileceği bilgisi olacakmış mesela bunu bir tutacağım bir sınıfta.
+
+310
+01:03:13,652 --> 01:03:37,072
+Daha sonra bir okuyucuya ait bir okur sınıfı olacak, okuyucu sınıfı olacak. Bu sınıfla ilişkilendireceğim. Mesela ödünç kayıtları diye bir sınıf olacak. Her bir kayıtta çünkü aldığı gün, işte dönüş tarihi ne zaman ki o tarihi hesaplarken de yine ilgili kitabın sınıfına gidip bakacağım bu kitap kaç günlüğüne ödünç verilebilir.
+
+311
+01:03:37,715 --> 01:03:42,255
+Oradan hesaplayıp ne zaman geri getirmesi gerekiyor gibi bilgileri tutacağım.
+
+312
+01:03:42,896 --> 01:03:46,556
+Ayrıca yine okuyucu sınıfında ne bilgisini tutmam gerekiyor?
+
+313
+01:03:48,255 --> 01:03:53,235
+Toplam para cezası ne kadar ödemiş? Geçmişteki para cezaları ne kadarmış? Bunu tutacağım.
+
+314
+01:03:54,235 --> 01:04:01,175
+Ve elinde tuttuğu kitaplardan dolayı ona uygulanacak gecikmeleri, ona uygulanacak ceza paralarını da yine.
+
+315
+01:04:01,811 --> 01:04:18,491
+Gideceğim, hesaplayacağım kitap sınıfından işte her bir kitabın ne kadar gecikme, gecikmesinden dolayı ödenecek para miktarı nedir? Bunların hepsini hesaplayıp toplayıp toplam para cezasını çıkarmış olacağım.
+
+316
+01:04:20,311 --> 01:04:27,131
+Şimdi sistem genel olarak böyle bir ödünç alma, kayıt oluşturma sistemi dedik.
+
+317
+01:04:28,052 --> 01:04:31,792
+Bununla ilgili örnek bir alan şaması kabaca nasıl olabilir? Buna bir bakalım.
+
+318
+01:04:34,492 --> 01:04:42,692
+Hem de sistemde dedim ki okuyucularım var. Bu kişilerle ilgili çeşitli adı, soyadı ve üye numarası vermişiz.
+
+319
+01:04:45,272 --> 01:04:50,172
+Kaç kitap tutabilir elinde? Kaç miktar cezası nedir? Bunların bilgilerini de tutuyorum.
+
+320
+01:04:51,188 --> 01:05:06,588
+Daha sonra bu kişileri ilişkilendirdiğim bir denek ödünç kayıtları var. Bir okuyucu birden fazla ödünç kaydı olabilir. Her bir ödünç kaydında çünkü ayrı ayrı bilgiler tutmam gerekiyordu. Ne zaman almış, ne zaman getirmesi gerekiyor.
+
+321
+01:05:08,047 --> 01:05:17,947
+Getirmediği takdirde şimdi yan sınıfı diyorum, kitap sınıfından da cezaları çekeceğim. Eğer getirmiyorsa ne kadarlık bir günlük cezası olacak bunları öğreneceğim.
+
+322
+01:05:19,380 --> 01:05:32,380
+Şimdi kitap kopyası ve kitap sınıfları. Buradaki mantığımız şöyle. Bir kitabın adı olur, yazarı olur, numarası olur belki, ISP'nin, basım yılı vs.
+
+323
+01:05:32,380 --> 01:05:43,119
+Bu kitaptan kütüphanede birden fazla bulunabileceği için bunu böyle bir kitap kopyası gibi düşünün. Her bir kitabı çünkü...
+
+324
+01:05:43,119 --> 01:05:51,199
+Bir başka kullanıcıyla ilişkilendireceğim. Aynı kitaptan üç tane var. Farklı farklı kullanıcılara vereceğim belki bu kitapları.
+
+325
+01:05:51,859 --> 01:05:55,519
+O yüzden buradan bir kitap kopyası sınıfı oluşturmak da mantıklı olabilir.
+
+326
+01:05:57,479 --> 01:06:02,919
+Bu kitap kopyası sınıfında da işte kitapla ilgili diğer bilgilerini bulunduruyorum.
+
+327
+01:06:03,507 --> 01:06:10,927
+Ödünç süresinde mesela buraya yazmışım. Bu kitap kaç günlüğüne ödünç verilebilir? Bu bilgiyi buradan alıyorum.
+
+328
+01:06:13,027 --> 01:06:20,127
+Ödünç kaydında da tabii ki bir kayıtta sadece bir kitap olabilir. Her kitapta bir kayıt olacağı için birebir ilişki kurdum.
+
+329
+01:06:21,007 --> 01:06:28,307
+Dediğim gibi bir kullanıcın, bir okuyucunun da birden fazla kayıt olabileceği için burada da yine bir parça bütün.
+
+330
+01:06:28,788 --> 01:06:31,988
+Bir de çok ilişki göstermiş oldum.
+
+331
+01:06:34,528 --> 01:06:40,248
+Burada biraz hani neden mesela şu akla gelebilir.
+
+332
+01:06:41,768 --> 01:06:43,828
+Şurada da işte bire çok ilişki dedik.
+
+333
+01:06:44,248 --> 01:06:46,307
+Sadece bir dedik yıldız diye gösterdik.
+
+334
+01:06:46,428 --> 01:06:52,448
+Burada neden şu işte baklava dilimi mi diyelim, elmas mı diyelim, oruçluyken baklava dilimi olarak görünüyor.
+
+335
+01:06:53,608 --> 01:06:54,708
+Bunu niye kullandık?
+
+336
+01:06:56,692 --> 01:07:00,931
+Hatırlarsanız, biraz daha kuvvetli hale getiriyordu bu olay.
+
+337
+01:07:01,791 --> 01:07:12,231
+Yani, burada sadece evet, bir kitap birden fazla kopya oluşturuyor ama burada öyle bir olay var ki, ödünç kaydı direkt bir kullanıcı ile alakalı bir şey.
+
+338
+01:07:13,451 --> 01:07:17,331
+Ödünç kayıtları da ayrı ayrı tanımlanıyor, okey ama direkt bir kullanıcıya atanıyor.
+
+339
+01:07:18,471 --> 01:07:23,051
+O yüzden aralarında böyle daha kuvvetli bir bağlantı, daha kuvvetli bir ilişki oluyor bunların.
+
+340
+01:07:23,603 --> 01:07:31,304
+O yüzden burada mesela böyle bir aggregation kullanmışız. Hatta bunun bir tık üstünde daha kuvvetli bir ilişkide mesela ne diyorduk?
+
+341
+01:07:31,864 --> 01:07:41,483
+İşte kompozisyon oluyordu, içi dolu oluyordu şunu. O zaman diyorduk şu sınıfın bilgileri direkt bu sınıfın içerisinde oluşturdu.
+
+342
+01:07:41,483 --> 01:07:46,344
+Yani bu sınıf şu sınıftan ayrı düşünülemez gibi o kadar kuvvetli bir ilişki oluyordu aralarında.
+
+343
+01:07:47,443 --> 01:08:02,864
+Ama burada da yine bir tık kuvvetli bir ilişki var. Çünkü bir ödüncü kaydını diyoruz. Toplaka bir okuyucuyla ilişkilendiriyorum. Bir okuyucuya ait oluyor. O yüzden böyle bir aggregation ifadesi göstereyim. Daha mantıklı olabiliyor bu noktada.
+
+344
+01:08:04,543 --> 01:08:12,923
+Şimdi temel olarak sınıflarım böyle dedim. Burada sınıf şeması bu şekilde görünüyor.
+
+345
+01:08:13,748 --> 01:08:40,268
+Bizdansur da ne istemişti? Demişti ki bize bir tasarım modeli oluştur, alan şeması göster. Bu sınıf şeması alan şeması olarak söyleyebiliriz. Bir de etkileşim şeması göster bize dedi. Etkileşim şemalarını biz ikiye ayırıyoruz. Bunlardan biri işbirliği, collaboration diagram diye geçiyor. Diğeri de sequence diagram.
+
+346
+01:08:41,395 --> 01:09:07,495
+Burada nesneler arasındaki etkileşim nasıl oluyor, olaylar nasıl ilerliyor, hangi mesajlar gönderiliyor, hangi sırada yapılıyor. Bunları göstermemize yarıyor bu etkileşim şemaları. Etkinlik şeması ile karışmasın. Etkinlik şeması başka bir aktivitif diagram. Etkileşim şeması nesnelerin etkileşimi olarak aklımızda kalsın. Aralarındaki bağlantılar nasıl birbirlerine mesaj gönderip mesaj alıyorlar.
+
+347
+01:09:08,212 --> 01:09:32,811
+Burada da biz bir sekvens diagram örneği görüyoruz şimdi. Sekvens diagramın olayı neydi? Bu diagramda, şurada belli nesnelerim var. Bunlarla ilgili şu benim işte gösterdiğim bir notasyonla. Sıra sıra bir noktadan bir noktaya, bir nesneden bir nesneye, bir sınıftan bir sınıfa ne göndereceğim?
+
+348
+01:09:33,524 --> 01:09:54,124
+Mesaj göndereceğim, bir request yapacağım, bir istek yapacağım, bir şeyi isteyeceğim oradan o sınıftan, bir metodu çağıracağım. Daha sonra bana bir response dönecek, bir cevap gelecek, istediğim şeyin cevabı gelecek. Böyle böyle işlemlerimi, şu içi dolu okla mesajımı gönderdim, şu kesik kesikliği de istediğim cevabı aldım diye görüyorum.
+
+349
+01:10:00,000 --> 01:10:06,239
+Üstünde böyle ardışıl diagram olarak geçtiği için zaman çizelgesi benim için önemli.
+
+350
+01:10:06,340 --> 01:10:11,380
+Yani şöyle sıralamaya dikkat ederek bu metod çağrımlarını yazmam gerekiyor.
+
+351
+01:10:11,780 --> 01:10:14,000
+En üstteki en önce olacak demektir.
+
+352
+01:10:14,420 --> 01:10:16,899
+Daha sonra bu gelecektir.
+
+353
+01:10:17,319 --> 01:10:19,479
+Burada böyle bir sıra sıra işlemler var.
+
+354
+01:10:19,619 --> 01:10:23,220
+Yani kapama göre şu metodu çağırayım önce bu metodu diyemiyorum.
+
+355
+01:10:23,220 --> 01:10:25,500
+Nasıl işlem sırası nasıl ilerliyorsa.
+
+356
+01:10:26,387 --> 01:10:36,648
+Yazdığım metodda hani derleci onu nasıl çalıştırıyorsa sanki benim de o mantıkla bu sıra sıra diagramda bu gösterimleri yapmam gerekiyor.
+
+357
+01:10:38,208 --> 01:10:48,148
+Şimdi burada ödünç alma sisteminin bir sequens diagramı var. Ödünç alma olayında gerçekleşecek, çağrılacak, çalıştırılacak metotları burada göreceğim.
+
+358
+01:10:50,208 --> 01:10:50,927
+Hemen bakalım.
+
+359
+01:10:52,407 --> 01:10:53,807
+Kütüphanecimiz geldi.
+
+360
+01:10:54,304 --> 01:11:08,863
+Önce sisteme bir giriş yapıp, neyi gönderdi sisteme? İlgili okuyucu gelmiş elinde kitabıyla, bunun diyor kaydını açın bana, ben bu kitabı almak istiyorum.
+
+361
+01:11:09,684 --> 01:11:17,384
+Önce kütüphaneci ne yapacak? Sisteme bir kere bu okurun bilgisini gönderecek. O kişinin bir üye numarası bir şey vardır.
+
+362
+01:11:18,203 --> 01:11:21,283
+Buradan okur barkod demişiz bu fonksiyon için parametresi.
+
+363
+01:11:21,684 --> 01:11:38,384
+Okuyucu bul diye bir metodu var demek ki bu sınıfta. İşte ona da okurun numarasını gönderiyorum. Ve sistemden bana dönmesini istediğim bilgi okurla ilgili bilgi. Okur nesnesi bana gelecek. Okurla ilgili bütün bilgileri listeleyeceğim.
+
+364
+01:11:38,384 --> 01:11:43,423
+Şimdi okurun bilgisini aldım. Bundan sonra ne yapıyorum?
+
+365
+01:11:44,948 --> 01:12:00,628
+Bir kere iki tane koşulumuz vardı hatırlayalım. Bu kişinin kitap sayısına bakacağım. Bir de ceza miktarına bakacaktım. Bu iki koşul sağlanıyorsa, yani kitap sınırı aşılmamış, ceza sınırı aşılmamış, ancak o zaman kitap verebiliyorum. O zaman kitap sayısına bakmakla başlayabilirim.
+
+366
+01:12:01,828 --> 01:12:10,828
+Ne yapacağım? Bu okur bilgisini get kitap sayısı deyip okuyucu sınıfına göndereceğim. Oradan kitap sayısı bilgisini çekeceğim.
+
+367
+01:12:11,283 --> 01:12:22,463
+Okuyucu sınıfında bu bilgi var. O kişinin kaç kitaba sahip olduğu. Get kitap sayısı metoduyla bana, şurada döndürdü, arttık kitap sayısı.
+
+368
+01:12:24,283 --> 01:12:31,384
+Daha sonra bu kişiye atanmış bir kitap sınırı var. Karşılaştırma yapabilmeyi için o sınırı da bilmem lazım.
+
+369
+01:12:32,123 --> 01:12:36,703
+Kitap sınırı diyorum, o zaman get kitap sınırı. Bu metodu da göndereyim okuyucu sınıfına yine.
+
+370
+01:12:37,332 --> 01:12:47,492
+Böyle bir istek yapayım, kitap sınırını almak. Sonra şuradan bana o kişinin ne kadar, en fazla kaç kitap alabileceğine dair o bilgi de döndürülüyor.
+
+371
+01:12:48,672 --> 01:12:57,752
+Artık kütüphaneci bunlara sahip. O kucun elinde kaç kitap var ve o kişinin kitap sınırı kaç. Buradan bir çıkarım yapabilir.
+
+372
+01:12:58,692 --> 01:13:04,731
+İkinci kısma geldik. Kitap sayısı ve sınırlarını öğrendikten sonra ceza hesaplama kısmına geldik.
+
+373
+01:13:05,427 --> 01:13:08,467
+Burada da ne yapacak?
+
+374
+01:13:09,547 --> 01:13:12,467
+Cezada dedik birkaç aşamalı bir işlem var.
+
+375
+01:13:12,467 --> 01:13:21,847
+Şimdi okuyucuda get toplam ceza deyip şuraya geldiğinde, bakın şurada bir kabaca şimdi detayına ineceğiz, bir takım işlemler olacak.
+
+376
+01:13:22,448 --> 01:13:27,288
+Toplam ceza birkaç farklı sınıfı ilgilendirerek hesaplanacak.
+
+377
+01:13:28,108 --> 01:13:29,167
+Oradaki olay da neydi?
+
+378
+01:13:29,788 --> 01:13:32,487
+Kişinin hem geçmiş cezasının toplamını alacaktım.
+
+379
+01:13:33,108 --> 01:13:41,528
+Hem de o an elinde bulundurduğu kitapların, işte günlük ceza miktarlarını öğreneceğim kitap sınıfına gidip, şuralarda hep onu yapacağım.
+
+380
+01:13:42,667 --> 01:13:49,788
+Ve işte ne zaman almış mesela ödünç kaydına da gideceğim, işte ne zaman almış, kaç günde getirmesi gerekiyormuş, getirmemiş, oradan o günü çekeceğim.
+
+381
+01:13:50,308 --> 01:13:58,808
+Ve o kitabın da ceza miktarını öğreneceğim kitap kopyası sınıfından. Böyle bir hesaplamayı yapıp yapıp yapıp en son toplam cezaya döndüreceğim.
+
+382
+01:13:59,347 --> 01:14:06,608
+O zaman başlayalım ilk adımla. Get toplam ceza diye ben isteğimi yaptım. Cezaya getir.
+
+383
+01:14:07,448 --> 01:14:15,347
+Şimdi okuyucu sınıfında, evet o kişinin geçmiş cezalarına dair toplam cezası var. O yüzden mesela sınıf...
+
+384
+01:14:16,595 --> 01:14:24,155
+Bir nesneyle o sınıf içinde yine bir metodu çağırıyorsam, bulunduğum sınıftaysam, şöyle bir kendine mesaj gibi bir ifade yapıyoruz burada.
+
+385
+01:14:24,595 --> 01:14:29,895
+Yine hani buradan bir metodu çağırdım gibi. Mesela şurada başka bir sınıftan başka bir sınıfa bir metod çağrısıydı.
+
+386
+01:14:30,335 --> 01:14:36,255
+Bu aynı sınıftaysa şöyle yine küçük bir kutucuk yapıp yine tekrar oradan bir döndürüyorum, bir çağırıyorum gibi bir anlamı var.
+
+387
+01:14:37,075 --> 01:14:42,755
+Şimdi okuyucu sınıfından tamam o kişinin geçmiş cezalarını aldım, toplam cezasını.
+
+388
+01:14:43,731 --> 01:14:49,031
+Ama bu sefer buna ek olarak bakmam gereken bir şeyler daha var bununla toplayacağım.
+
+389
+01:14:50,152 --> 01:14:57,832
+Ne dedim? Ödünç kaydına bakacağım bu kişinin. Ödünç kayıtlarında tarihi geçmiş kitaplarına bakacağım.
+
+390
+01:14:57,832 --> 01:15:02,451
+O zaman yet dönüş tarihini alayım ödünç kayıtlarında.
+
+391
+01:15:03,832 --> 01:15:09,252
+Yani elinde bulundurduğu kitaplara dair ne zaman vermesi gerekiyormuş?
+
+392
+01:15:09,876 --> 01:15:22,275
+O kayıtlara gidip dönüş tarihini alayım. Bana bir tarih döndürsün. Sonra tarih bana döndü şu kesik kesiklerle. Bu tarihle ilgili bir karşılaştırma yapayım.
+
+393
+01:15:22,275 --> 01:15:30,576
+Şu sequence diagramında şöyle köşeli parantezler içinde yazıyorsam.
+
+394
+01:15:31,252 --> 01:15:38,252
+Bu bir koşul ifadesi gibidir. Eğer bu böyleyse, işte hesabını şöyle şöyle yap demeye çalışıyorum.
+
+395
+01:15:38,252 --> 01:15:50,252
+Eğer tarih bugünün tarihinden küçükse, yani bu kişinin bunu davetler getirmiş olması gerekiyorsa, çünkü...
+
+396
+01:15:51,028 --> 01:15:55,688
+Eğer tarihi geçmemişse kitabın, düşünün bugün ayın işte 20'si atıyorum.
+
+397
+01:15:56,167 --> 01:15:59,568
+Kitabın tarihi 30'unda bitiyor. O zaman tarih büyük olur.
+
+398
+01:16:00,507 --> 01:16:04,688
+Ama tarih küçükse, mesela ayın 10'unda getirilmesi gerekiyor. Bugün 20'si olmuş.
+
+399
+01:16:05,468 --> 01:16:08,768
+O zaman orada bir küçüklük var. Tarih geçmiş.
+
+400
+01:16:09,288 --> 01:16:11,388
+Ve cezasını artık nasıl hesaplıyorum?
+
+401
+01:16:14,739 --> 01:16:26,260
+Bugünden o tarihi çıkarıyorum, orada gün sayısını buluyorum ve get günlük cezayla ne kadarlık bir cezası olacaksa bununla çarpıyorum.
+
+402
+01:16:26,819 --> 01:16:36,539
+Şimdi günlük ceza miktarını nereden öğrenmem gerekiyor? Ödünç kaydına geldim, tamam get günlük ceza diyorum ama ödünç kaydında bulunmuyor günlük ceza miktarı.
+
+403
+01:16:36,539 --> 01:16:41,539
+O nerede bulunuyor? Kitapla ilgili bilginin olduğu sınıfta bulunuyordu. Bir de onu o zaman o...
+
+404
+01:16:41,887 --> 01:16:56,747
+Kitapla ilgili bilginin bulunduğu, kitap kopyası demiştik o sınıfa. Kitap kopyası sınıfına gidip oradan acaba o kitabın gecikmesi durumunda her bir gün için ne kadarlık bir ceza miktarı varmış o bilgiyi oradan alıyorum.
+
+405
+01:16:57,967 --> 01:17:07,887
+Ceza bilgisini de oradan aldım. Buraya geldim. Burada o aldığım günlük cezayla gün sayısını çarpıp buradan...
+
+406
+01:17:08,500 --> 01:17:25,000
+Neyi döndürdüm? Elinde bulundurduğu kitaplardan dolayı alacağı cezayı döndürdüm. Şuradan. Sonra elimdeki toplam cezayla da bunlar birleşince bana neyi vermiş oldu? Toplam ceza miktarda.
+
+407
+01:17:28,000 --> 01:17:32,100
+İşlem biraz burada dediğimiz gibi dallandı, budaklandı.
+
+408
+01:17:32,532 --> 01:17:42,731
+Hem geçmiş toplam cezalarını aldık, hem de şuradaki kısımla elinde bulunduğu kitaplardan dolayı alacağı cezayı hesapladık.
+
+409
+01:17:43,832 --> 01:17:46,452
+Tarihi geçmiş mi diye bir kere kayda gittik, baktık.
+
+410
+01:17:48,291 --> 01:17:54,391
+Eğer geçmemiş bir durum olduysa, zaten toplam ceza direkt şuradaki kadar olup geri dönecekti.
+
+411
+01:17:54,452 --> 01:17:55,932
+Herhangi bir işlem yapmayacaktı.
+
+412
+01:17:56,564 --> 01:18:04,704
+Ama eğer o tarih kontrol ettiğimizde bugünün tarihinden küçükse yani süre geçmişse o zaman bir ceza hesabına gitmem gerekecekti.
+
+413
+01:18:04,704 --> 01:18:20,884
+Bu şekilde buradan da ne dedik? O günlük cezasıyla bir kitabın günlük cezasıyla kaç gün geciktiğinin çarpımını yapabilmem için de kitaba ait günlük ceza miktarında kitap kopyası sınıfından elde edecektim.
+
+414
+01:18:21,963 --> 01:18:22,944
+Onun için de bir de buradan.
+
+415
+01:18:23,311 --> 01:18:26,391
+Bu sınıfa gidip yetkilinlik ceza metodumu çağırdım.
+
+416
+01:18:27,391 --> 01:18:32,311
+O bana ne kadarlık bir ceza miktarı uygulayacağımı döndürdü.
+
+417
+01:18:32,731 --> 01:18:36,631
+Ben de onu çarparak kaç gün oldu bilgisini burada edinmiştim.
+
+418
+01:18:36,631 --> 01:18:41,431
+Bu şekilde işlemi yapıp toplam cezayı döndürüyorum kütüphaneciye.
+
+419
+01:18:43,612 --> 01:18:45,832
+Şimdi ceza miktarı hesaplandı.
+
+420
+01:18:46,971 --> 01:18:48,851
+Bu sefer bir kontrol var.
+
+421
+01:18:50,612 --> 01:19:02,971
+Cezayı biliyorum toplam tutarı. O zaman sınırla bakalım sınırı aşmış mı aşmamış mı? Her bir kullanıcıya çünkü bir sınır tanımlanmış. En fazla bir kişi şu kadar ceza alabilir gibi.
+
+422
+01:19:05,631 --> 01:19:14,512
+İlk etapta hatırlayın kitap sayısı içinde böyle bir kontrol yapmıştık. Kullanıcının elindeki kitapların sayısını elde etmiştik. Sonra sınırına bakmıştık bir de.
+
+423
+01:19:14,863 --> 01:19:19,323
+Şimdi cezayı elde etti kütüphaneci. Bir de gidip sınırına bakması lazım.
+
+424
+01:19:19,884 --> 01:19:22,603
+Onu da direkt okuyucu sınıfından elde edebiliyor bu bilgiyi.
+
+425
+01:19:24,183 --> 01:19:27,363
+Get ceza sınırı dedi şu okla.
+
+426
+01:19:28,283 --> 01:19:33,363
+Gitti ceza sınırı bilgisini buradan döndürdü.
+
+427
+01:19:35,863 --> 01:19:38,363
+Şimdi elimizde...
+
+428
+01:19:38,452 --> 01:19:46,932
+Kitap sayısı, kitap sınırı bilgisi, ceza miktarı, ceza sınırı bilgisi var. Kütüphanecinin elinde bu bilgiler var. O zaman ne yapacak?
+
+429
+01:19:48,711 --> 01:20:02,932
+Ödünç ver metodunu çalıştırabilmesi için, yani bir kullanıcıyı, bir okuru, bir kitapta ilişkilendirip yeni bir kayıt oluşturabilmesi için, şurada da bir...
+
+430
+01:20:03,055 --> 01:20:07,855
+Açıklama yapmak istediğimizde şu ters kutucuklar kullanılıyorduk UML diagramlarında.
+
+431
+01:20:08,975 --> 01:20:11,155
+Buradaki şartımızı ne olarak söylüyoruz?
+
+432
+01:20:11,735 --> 01:20:19,175
+Toplam ceza, bu ceza sınırının altındaysa, kitap sayısı da bu sınırın altındaysa bu işlemler gerçekleşiyor.
+
+433
+01:20:20,275 --> 01:20:24,475
+Ödünç ver işlemini için otomasyon sistemine bir giriş yapıyoruz.
+
+434
+01:20:24,775 --> 01:20:28,115
+Okurun numarasını veriyoruz, okurun kimlik numarası gibi bir şey.
+
+435
+01:20:28,564 --> 01:20:31,484
+Ve kitabın numarasını veriyormuşuz sisteme.
+
+436
+01:20:33,463 --> 01:20:42,884
+Daha sonra, nedir? Yeni bir ödünç kaydı için, bakın diagramdaki şu da nesnelerimi tık tık tık sıralıyordum.
+
+437
+01:20:43,604 --> 01:20:49,324
+En boş yere gidip bir kutucuk daha açıyorum ve oraya yeni bir kayıt nesnesi oluşturuyorum.
+
+438
+01:20:49,324 --> 01:20:53,523
+Ödünç kaydı sınıfından. Bunu da nüble oluşturdum.
+
+439
+01:20:54,100 --> 01:21:07,720
+Bu şekilde ne yaptık? Yeni kaydımızın bilgilerini giriyoruz. Daha sonra okuyucuyla da bu kaydı ilişkilendirmem lazım. Çünkü ödünç kaydını orada bir tanımladım.
+
+440
+01:21:07,720 --> 01:21:21,720
+İşte tamam şu okur, işte şu ödünç kaydını tekrar bir hatırlayalım neleri vardı. Alış tarihi, o günün tarihini yazacak, dönüş tarihini yazacak. Kayıtta bunları girdim. Sonra...
+
+441
+01:21:22,323 --> 01:21:28,804
+Bu özellik kaydını da kiminle ilişkilendireceğim bu yeni kaydı? Şuradaki okur sınıfıyla ilişkilendireceğim.
+
+442
+01:21:28,923 --> 01:21:36,583
+Onda kitap ekle diye bir metodum varmış. Bunu çağırarak, bunu yazarak buraya gidiyorum ve yeni kaydı oluşturduyorum.
+
+443
+01:21:36,724 --> 01:21:40,183
+Burada geri dönüşüm, herhangi bir şeye ihtiyacım yok. Yani bir request.
+
+444
+01:21:40,948 --> 01:21:52,208
+Daha doğrusu cevap beklediğim bir request yapmıyorum. Sadece oluşturuyorum. Burada da oluşturuyorum. Geriye bir şey döndürmesini istemediğimde de sadece tek yönlü bir oku işimi bitirmiş oluyorum.
+
+445
+01:21:53,427 --> 01:22:05,568
+Okuyucu sınıfında kitabımızı eklerken ne dedik? Yeni kaydı bu şekilde yazmış olunca o okur sınıfında bunu, o ödünç kaydını ilişkilendirmiş oluyoruz.
+
+446
+01:22:08,627 --> 01:22:10,707
+Diyagramımız da bu şekildeydi.
+
+447
+01:22:14,547 --> 01:22:17,087
+Etkileşim şeması örneği olarak dedik.
+
+448
+01:22:17,768 --> 01:22:23,667
+Sequence diagramımızı yazmış, çizmiş, göstermiş olduk.
+
+449
+01:22:26,307 --> 01:22:29,407
+Eklemek, sormak istedikleriniz varsa konuşabiliriz.
+
+450
+01:22:39,347 --> 01:22:56,228
+Tekrar etmek gerekirse tekrar edebiliriz. Biraz detaylı bir şey var ama iş akışlarına dediğim gibi dikkat etmeniz gereken sıra sıra metotların sıra sıra çağrılması çok önemli bizim için. Sıralamanın dikkat edilmesi gerekiyor sıralamaya.
+
+451
+01:23:00,340 --> 01:23:08,340
+Şimdi bu soru için de istediğimiz bir diğer diagramı örneği de state diagram, durum diagramıydı.
+
+452
+01:23:10,340 --> 01:23:14,340
+Durum diagramında da yine bu ödünç alır alamaz durumlarına bakacağız.
+
+453
+01:23:15,340 --> 01:23:17,340
+Durum şamalarının olayı neydi?
+
+454
+01:23:19,340 --> 01:23:23,340
+Bir başlangıcı, bir bitişi var.
+
+455
+01:23:23,340 --> 01:23:26,340
+Nesnelerin durumlarıyla ilgili de bilgi veriyor bize.
+
+456
+01:23:26,836 --> 01:23:45,496
+Şimdi başlangıçlar şöyle içi dolu, yuvarlaklar halinde gösteriliyor. Bitiş durumu da, sonlanması durumu da şöyle o yuvarlakların içinde bir tane daha çember çizmiş oluyoruz. Böyle bir start end gösterimi oluyor durum şamalarında.
+
+457
+01:23:47,496 --> 01:23:50,855
+Şimdi bir okuyucunun ödün çalma durumuna bakalım.
+
+458
+01:23:51,923 --> 01:24:01,923
+Kütüphaneye kayıt oldu. Şimdi burada bir M'ler mesaj anlamında bir mesaj gönderiyorum. Okuyucu kütüphaneye kayıt oldu. Artık bu kişi nedir? Ödünç olabilir durumda.
+
+459
+01:24:06,739 --> 01:24:10,819
+Ödünç alabilir durumunun devamı neyle sağlanır?
+
+460
+01:24:12,860 --> 01:24:16,600
+Ödünç limitini aşmayacak, ceza limitini aşmayacak.
+
+461
+01:24:16,600 --> 01:24:18,180
+End diyorum burada.
+
+462
+01:24:19,119 --> 01:24:20,260
+Şöyle koşul ifadem.
+
+463
+01:24:21,159 --> 01:24:26,819
+Ödünç limiti ve ceza limiti aşılmadığı müddetçe ödünç alma durumunda kalabiliyorum.
+
+464
+01:24:27,880 --> 01:24:30,799
+Şimdi bir durum geçişi değişimi olacak. Ne zaman olacak?
+
+465
+01:24:31,796 --> 01:24:44,076
+Her ikisinden birinde bir aşma yaptığım zaman, yani ödünç limitini veya ceza limitini aştığı zaman artık ödünç alamaz durumuna geçecek bu kişi.
+
+466
+01:24:48,756 --> 01:24:54,976
+Bu limitler aşılmadığı müddetçe devam ediyoruz. Aşılığı takdirde de ödünç alamaz durumundayız.
+
+467
+01:24:56,855 --> 01:25:03,156
+Ödünç alamaz durumundan tekrar ödünç alabileceği geçebilmesi için nedir?
+
+468
+01:25:03,855 --> 01:25:12,916
+Mesela kitap limitini aşmışsa, ödünç limitini aşmışsa, ödünç limiti dediğimiz elindeki kitapların alması gereken sınırdan fazla olması.
+
+469
+01:25:14,836 --> 01:25:26,456
+Eğer bunu iade eder de, daha sonrasında kitap sınırında bir düşme olursa, ödünç limit altında düşülürse ne yapabilir? Bu tekrar ödünç alabilir.
+
+470
+01:25:30,068 --> 01:25:48,968
+Fakat, iade etse dayı artık ceza limiti aşılmışsa, o sürekli bir nevli kalacak, özün çalamaz durumunda kalacak ve en son çıkışı zaten kitabı alamayıp sistemden ayrılacak, kütüphaneden ayrılacak.
+
+471
+01:25:50,468 --> 01:25:51,908
+Tekrar edelim.
+
+472
+01:25:57,268 --> 01:26:06,028
+Ya cezayı ödeyip limitin altına indirir veya kitabı verip limitin altına düşerse tekrar ödünç alabilire geliyorum.
+
+473
+01:26:07,148 --> 01:26:14,327
+Ama limit bir kere aşılmış, iade edildiği takdirde de aşılıyor.
+
+474
+01:26:14,887 --> 01:26:21,427
+Artık ne diyorum, ödünç alamaz durumunda bu kişi ve bu şekilde kütüphaneden ayrılıyor.
+
+475
+01:26:22,487 --> 01:26:24,067
+Kabaca basitçe.
+
+476
+01:26:24,532 --> 01:26:29,532
+Bir ilk okuyucunun ödünç alma alamamı durum geçişlerini de böyle modelleyebiliyoruz.
+
+477
+01:26:31,932 --> 01:26:37,592
+Cezasını öder, iadesini yaparsa limitin altına düşüp tekrar alabilir hale geliyor.
+
+478
+01:26:39,252 --> 01:26:47,852
+Fakat limiti aşmışsa veya o an iade durumundaysa ödünç alamaz halde bulunuyor.
+
+479
+01:26:58,036 --> 01:27:17,296
+Ödün çalma ile ilgili durum şamamızı gördük, sekans diagramımızı gördük ve sistemin genel bir sınıf diagramını da alan şamasında bir şekilde görmüş, çizmiş olduk.
+
+480
+01:27:26,003 --> 01:27:31,903
+Evet arkadaşlar, sorusu olan varsa alabilirim. Yoksa bugün çözeceğimiz örnekler bu kadardı.
+
+481
+01:27:39,220 --> 01:27:45,159
+Böyle bir uygulama dersimiz oldu sizin de sanırım. Proje ödevleriniz de veriliyor yavaş yavaş.
+
+482
+01:27:47,600 --> 01:27:51,560
+Orada da kullanacaksınızdır zaten bu diagramları daha detaylı olarak.
+
+483
+01:27:55,444 --> 01:28:01,344
+Başka soru katılım yoksa dersi bitirebiliriz de.
+
+484
+01:28:13,235 --> 01:28:14,235
+ve sonunda.
+
+485
+01:28:17,747 --> 01:28:20,067
+Hepinize hayırlı günler diliyorum.
+
+486
+01:28:21,367 --> 01:28:22,167
+Teşekkürler hocam.
+
+487
+01:28:22,327 --> 01:28:23,407
+Teşekkürler, iyi günler.
+
+488
+01:28:23,747 --> 01:28:26,047
+İyi günler hepinize, görüşmek üzere.

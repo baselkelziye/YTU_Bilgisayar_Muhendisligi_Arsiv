@@ -1,0 +1,1827 @@
+1
+00:07:27,956 --> 00:07:40,696
+Evet, derste başlıyoruz. Herkes katılsın diye bekledim. Ama herhalde bu sayının üstüne çıkmayacak. Geçen hafta duyabiliyorsunuz değil mi sesimi?
+
+2
+00:07:44,468 --> 00:07:45,888
+Evet hocam duyabiliyoruz.
+
+3
+00:07:46,088 --> 00:07:47,487
+Tamamdır, teşekkürler.
+
+4
+00:07:48,148 --> 00:07:49,108
+Bir dakika birisi.
+
+5
+00:07:50,008 --> 00:07:50,628
+Evet.
+
+6
+00:07:51,588 --> 00:07:58,728
+Şimdi, geçen hafta, ilk hafta sistem tanımını yaptık.
+
+7
+00:07:58,888 --> 00:08:04,788
+Dersin nasıl bir yol izleyeceğini konuştuk.
+
+8
+00:08:06,248 --> 00:08:09,927
+Hangi sınavlarımız olduğundan bahsettik.
+
+9
+00:08:12,564 --> 00:08:35,624
+Tanımını verdim. Proje tanımıyla ilişkili bugün akşam online yıldız sistemine yerleştireceğim bir proje tanım dosyası olacak. Projenizdeki süreçler nasıl işliyor onu anlatan.
+
+10
+00:08:36,148 --> 00:08:54,768
+Geçen hafta ilk haftaki sistem tanımı ve dersin tanımından sonra geçen haftada bilgi sistemi nedir? Bilgi sistemi adımlarında neler gerçekleştiriyoruz? Ve bilgi sistemi türleri üzerinde durduk daha çok.
+
+11
+00:08:57,748 --> 00:09:09,488
+Özellikle kurumlarda hangi tür bilgi sistemleri kullanılıyor, hiyerarşi nedir, birbiriyle ilişkileri nelerdir bunların üzerinde durduk.
+
+12
+00:09:09,488 --> 00:09:14,028
+Şuradan özetle görebileceğiniz gibi.
+
+13
+00:09:14,548 --> 00:09:30,748
+İşte işlemsel bilgi sistemleri, Transaction Processing Sistem, MIS yönetim bilgi sistemleri, karar destek sistemleri, Decision Support Sistem ve üst yönetim bilgi sistemleri ve bunların arasındaki ilişkileri anlattık.
+
+14
+00:09:30,748 --> 00:09:42,548
+Ve bilgi sistemi geliştirme sırasında yeni bir bilgi sistemi geliştiriyorsak kimler çalışıyor? Bunları gördük. Kullanıcı, yönetim.
+
+15
+00:09:42,548 --> 00:10:00,000
+programcı, bilgi sistemi destek personeli. Bunları tanımladım derste. Proje yöneticisi, üst düzey yönetici var. Yazılım geliştirme, daha doğrusu bilgi sistemi geliştirme çalışmaları.
+
+16
+00:10:00,000 --> 00:10:16,079
+Bu kapsamda çalışan yönetici, program geliştiren, yazılım geliştirici ya da programcı. Bu noktada case kavramından söz ettim.
+
+17
+00:10:16,464 --> 00:10:34,784
+Computer Aided Software Engineering, bilgisayar destekli yazılım mühendisliği, program yazılım geliştirenler bu konuda da bilgi sahibi olmalıdır. Ayrıca sistem analistleri de bu konuda bilgi sahibi olmalıdır. Operasyonel sistemin çalışmasını sağlayan personel.
+
+18
+00:10:35,251 --> 00:10:54,192
+Bu yani destek hizmeti derken sadece tekniker seviyesindekiler değil de bu network'ün, güvenliğin, donanımın çalışmasını sağlayan mühendisleri de bu kapsamda tanımlayabiliriz.
+
+19
+00:11:00,340 --> 00:11:10,360
+Çok temel tanımlama içinde işte iş analisti, sistem analisti gibi türlerden bahsedebiliriz.
+
+20
+00:11:10,360 --> 00:11:28,340
+Sistem analisti özellikle yazılım geliştirici grup ve işi isteyen grup, kullanıcılar arasındaki köprüyü oluşturur ve işin ihtiyaçları, sorunlarının ortaya konulması.
+
+21
+00:11:28,340 --> 00:11:45,740
+Yardımcı olur ve problem çözümüne yardımcı olur. Problem çözümünde neler gerçekleştirir? Önce problem nedir? Problemin araştırmak ve anlamak. Problemin çözüm maliyetini belirlemek ki bugün üzerinde duracağız, fizibilite analizi.
+
+22
+00:11:46,227 --> 00:12:02,747
+Fizibilite konusunu ve bugün ilk dersimizde saat 2'ye kadar biz bu analiz aşamasında gerçekleştirilen fizibilite analizi üzerinde duracağız.
+
+23
+00:12:13,168 --> 00:12:34,968
+Bununla ilişkili uygulamada Gantt ve Pert diyagramlarını nasıl çiziyoruz, nasıl düşünüyoruz? Onlarla ilişkili çalışacaksınız. Dolayısıyla problem çözümünün maliyetine karşılık sağlayacağı faydaları belirlemek, yine sistem analistinin görevi çözüm ihtiyaçlarını belirlemek, alternatif.
+
+24
+00:12:35,312 --> 00:12:56,132
+Çözümler nelerdir? Onları ortaya koymak. En iyi çözümü belirlemek alternatif çözümler arasında ve seçilen çözümün ayrıntıları neler olacaktır? Analiz yapmak ve bunların sonuçlarını elde edildiğinden emin olmak, izlemek.
+
+25
+00:13:00,467 --> 00:13:13,407
+Önceden istenenlere doğru hareket ediyor muyuz bunu anlamakta. Analistin problem çözümüne yaklaşımı ve katkılarını gösterecektir.
+
+26
+00:13:13,407 --> 00:13:22,528
+Sistem analistinin becerilerini şu şekilde belirtebiliriz.
+
+27
+00:13:25,043 --> 00:13:40,923
+Sistemin hedeflerini doğru anlayacak, kalite faktörlerinin neler olduğunu anlayacak, üretim ihtiyaçlarını, maddi zaman kısıtlarını ve sorunu doğru anlayacak ve karşı tarafa doğru anlatacak olmalı.
+
+28
+00:13:43,063 --> 00:13:51,283
+Hangi bilgilere sahip olmalı? Bir defa analitik düşünme. Analitik düşünme dediğimiz zaman,
+
+29
+00:13:52,692 --> 00:14:06,991
+Sistemin yerine getireceği, çözeceği problemin ne olduğunu anlamak ve büyük resmi kaybetmeden sistemin parçalarını inceleyebilmek.
+
+30
+00:14:07,991 --> 00:14:18,292
+Sistem analistinin görevi sadece problemi belirlemek ile sınırlı değil, çözüm alternatiflerini de belirlemektir.
+
+31
+00:14:20,692 --> 00:14:41,711
+Gerekir. Teknik bilgi ve beceri sahibi olması gerekir. Yani işletim sistemleri, veri tabanı yönetimi, haberleşme protokollarını bilecek ki bilgi sisteminin programlama dillerini ne yapılabilir ne yapılamaz bunu yorumlayabilmesi gerekecek.
+
+32
+00:14:43,155 --> 00:14:58,195
+Ayrıca yönetim ve iş, business konusunda da bilgili olması gerekiyor ki karşı tarafın, müşterinin isteklerini anlayabilsin.
+
+33
+00:14:58,735 --> 00:15:05,475
+Hangi departmanda hangi iş yapılıyor bunun bilmesi gerekiyor.
+
+34
+00:15:07,764 --> 00:15:13,703
+Kaynak yönetimi, proje yönetimi, risk yönetimi gibi bilgilere de sahip olması gerekiyor.
+
+35
+00:15:13,703 --> 00:15:19,703
+Ve en sonunda da insan ilişkileri bilgisinin olması gerekiyor.
+
+36
+00:15:20,703 --> 00:15:28,703
+İnsan ilişkileri dediğimiz zaman hem yönetim kademesiyle hem ekip içindeki kişilerle hem...
+
+37
+00:15:29,908 --> 00:15:53,207
+Yazılım geliştirileceği kullanıcılar ile ne dediğini, ne istediğini anlatmak ve anlayabilmek için doğru soru sorabilme, verilen cevapları anlayabilme ve iletişim kurabilme yeteneğine de.
+
+38
+00:15:53,908 --> 00:16:12,268
+sahip olması gerekir. Bir defa yazılım bilgi sistemi geliştirme sürecinde hangi aşamalar var? Problemin tanımı, problemi ortaya koymak, ihtiyaçları belirlemek, fizibilite çalışması, projenin kapsamı ve hedeflerini ortaya koyarak olabilirliğini belirlemek, fizibilite.
+
+39
+00:16:12,724 --> 00:16:25,284
+Olurluluk demek, fizibil, çözüme ulaştıracak şeylerin olurluluğunu anlamak.
+
+40
+00:16:25,924 --> 00:16:30,884
+Analiz, problemin çözüm, sistem analizi, problemin çözümlerini ortaya koymak.
+
+41
+00:16:31,796 --> 00:16:35,596
+Genel tasarım sistemin nasıl gerçekleşeceğini belirlemek.
+
+42
+00:16:35,676 --> 00:16:47,276
+Ayrıntılı tasarım, genel tasarımda belirlenen sisteme ait alt sistemlerin tanımlanması, gerçekleştirme, programı yazma, yükleme ve test etme.
+
+43
+00:16:48,563 --> 00:17:07,744
+Bundan sonra zaten artık kullanıma geçiyor. Daha sonra da bakım sürecine geçiyor. Hangi yani bu adımları yapacak, hangi yazılım geliştirme süreç modelleri var? Klasik süreç, waterfall model.
+
+44
+00:17:08,500 --> 00:17:28,660
+Şu şekilde yürüyor. Analiz, tasarım, kodlama, test, biri bitiyor, diğeri başlıyor şeklinde. Model oluşturma, RAT model, spiral model. Bunların üzerinden daha sonra da geçeceğiz kısaca.
+
+45
+00:17:34,740 --> 00:17:47,180
+Son yıllarda artık tamamen bu yolla yazılım geliştirmeye geçilen ecayin çevik yaklaşımlar. Bunların üzerinde de duracağız.
+
+46
+00:17:47,180 --> 00:18:00,480
+Şimdi yazılım geliştirme sürecindeki işlemler nelerdir? Yazılım geliştirme sürecinde gerçekleştirdiğimiz işlemler.
+
+47
+00:18:02,804 --> 00:18:05,884
+Ön inceleme ve fizibilite çalışması.
+
+48
+00:18:06,443 --> 00:18:13,804
+Fizibilite çalışmasındaki amaç, projenin olabilirliğini araştırmak.
+
+49
+00:18:13,804 --> 00:18:17,564
+Proje şurada.
+
+50
+00:18:22,003 --> 00:18:30,183
+Fizibilite aşamasında öncelikle ön inceleme yapılır. Projeye gerçekten ihtiyaç var mı?
+
+51
+00:18:30,708 --> 00:18:51,867
+Bu konuda geliştirilmesi için neye ihtiyaç var? Ne kadar süreye ihtiyaç var? Tahmini bütçe nedir? Bunlar çok genel bilgiler. Daha sonra fizibilite analizini daha ilerlettiğimizde zaman fizibilitesinde bunu daha ayrıntılı görüyoruz.
+
+52
+00:18:59,251 --> 00:19:17,951
+Şu anda günümüzdeki yazılım donanım imkanlarıyla bu soruna çözüm bulabilir miyiz? Bir defa ona karar vereceğiz. Bulabilirsek hangi yollarla bulabiliriz? Yolları nelerdir? Bunu ortaya koymak.
+
+53
+00:19:17,951 --> 00:19:26,971
+Ekonomik yani yazılım geliştirme işinin olasılığı nedir?
+
+54
+00:19:27,251 --> 00:19:44,711
+Olurluluğu nedir? Olasılığı değil de olurluluğu nedir? Ekonomik fizibilite yeni bir proje bir risk getirir, yani bir maliyet getirir. Ekonomik açıdan uygun mudur?
+
+55
+00:19:46,771 --> 00:20:10,112
+Sadece eşittir maliyet değil, ekonomik fizibilitede maliyetinin araştırılması değil sadece. Bu maliyetle ne kadar kar sağlayabiliriz bu çözüm? Bize faydası ne olacaktır? Maliyet fayda analizi.
+
+56
+00:20:11,155 --> 00:20:31,335
+Dediğimiz zaman işte bu ekonomik fizibilitedir. Gerçekleştirecek sisteme ait maliyetler içinde örneğin kullanılacak donanım, yazılım harcamaları, personel harcamaları, sistem analizi, sistem tasarımcısı, programcısı gibi çalışanların şurada özellikle adam saat ücretleri.
+
+57
+00:20:31,923 --> 00:20:50,923
+Bu maliyetlerin yatırım yapıldıktan sonra ne kadar süre sonra geri dönüşü sağlanacaktır? Bunun için maliyet fayda analizleri hesaplanır. Bu hesaplar arasında bazı şeyler var. Net bugünkü değer, başa başa...
+
+58
+00:20:50,963 --> 00:20:57,663
+... noktası, geri ödeme süresi gibi analizler yer alır ekonomik fizibilitede.
+
+59
+00:20:58,203 --> 00:21:06,203
+Bugünkü değer yöntemi farklı dönemlerdeki nakit giriş ve çıkışlarının arasındaki ilişkiler.
+
+60
+00:21:06,203 --> 00:21:12,203
+Yani bugün yaptığımız yatırım ileride karşılığını alacağız ama...
+
+61
+00:21:12,948 --> 00:21:25,108
+Bugün yaptığımız harcamanın iki sene sonra bu sistemin sonucunu aldığımızda karşılığı nedir bunu bulmak?
+
+62
+00:21:26,948 --> 00:21:34,788
+Nakit girişi ve çıkışlarının bugünkü değer bazında hesaplanması.
+
+63
+00:21:35,508 --> 00:21:39,988
+Bu yatırımda önemli bir şey.
+
+64
+00:21:41,988 --> 00:21:51,488
+Yatırımın gelecekte oluşturacağı öngörülen nakit akışlarının bugünkü değere indirgenmesidir.
+
+65
+00:21:51,688 --> 00:21:53,128
+Bunun şöyle bir formülü var.
+
+66
+00:21:54,483 --> 00:22:17,323
+Bu formülü ezberleyin demiyorum ama bugünkü değer dediğimizde neyle ilişkilidir veya ekonomik fizibilitede hangi ekonomik fizibiliteyi gerçekleştirmek için hangi analizleri gerçekleştiririz dediğimizde bunu bilmeniz gerekiyor.
+
+67
+00:22:20,660 --> 00:22:41,740
+Nakit akışlarının belirlenmesi, yatırımın başlangıç yatırım tutarından büyük olması koşulunda elde edilecek kar.
+
+68
+00:22:42,160 --> 00:22:52,980
+Bu yatırım kabul edilebilir. Ama elde edecek karın bugünkü değer açısından hesaplanması gerekiyor.
+
+69
+00:22:54,980 --> 00:23:03,200
+Başa baş noktası dediğimiz şey nedir? Bir de iç verim oranı var.
+
+70
+00:23:08,627 --> 00:23:22,647
+ömrünü dikkate alır. Bir yatırım yapılıyor. Yani bir yazılım projesi geliştirmek üzere yazılım geliştirmeye ve donanım almaya para ayrılıyor.
+
+71
+00:23:23,251 --> 00:23:29,612
+Bu yatırım projesi için bir karlılık oranı belirlenir.
+
+72
+00:23:29,612 --> 00:23:37,571
+İşte bu karlılık oranı da nasıl hesaplanacak?
+
+73
+00:23:38,771 --> 00:23:50,391
+Yatırım maliyetinin, yatırımın yıllar itibariyle elde ettiği gelirlere göre ifade edilmesi.
+
+74
+00:23:51,028 --> 00:24:05,927
+Bir de başa baş noktası var. Başa baş noktası bir projenin işletme açamasına geçtikten sonra toplam giderleri ne kadar karşılayacak?
+
+75
+00:24:06,927 --> 00:24:11,587
+Mesela bir yazılım geliştirme işi.
+
+76
+00:24:14,996 --> 00:24:41,316
+Başlangıç noktasında hiçbir karı yok. Daha kullanılmaya başlamadı. Kullanılmaya başladıkça bu toplam gelirre katkısı olacak. Bu yazılımın faydası ortaya çıkacak. Yazılımın geliştirilmesi için ilk harcanan sabit maliyetler var. Alınan donanım, alınan yazılım.
+
+77
+00:24:41,715 --> 00:24:46,955
+İşte çalışacak, geliştirmek için çalışacak personel.
+
+78
+00:24:47,475 --> 00:24:49,695
+Şurası, şu düz nokta.
+
+79
+00:24:50,215 --> 00:24:53,795
+İlk geliştirme aşamasında harcananlar.
+
+80
+00:24:53,795 --> 00:24:54,795
+Ama...
+
+81
+00:24:54,991 --> 00:25:14,151
+Bu sadece böyle düz kalmıyor tabii. Çalıştırmak için de bir maliyet var. Dolayısıyla toplam maliyet dediğimiz şey sabit maliyet artı çalıştırmak için harcanan giderler.
+
+82
+00:25:14,612 --> 00:25:18,812
+Bu sistemi çalıştırmak için harcanan giderler.
+
+83
+00:25:19,272 --> 00:25:25,032
+İşte bu ikisinin birleştiği nokta başa baş noktası.
+
+84
+00:25:28,032 --> 00:25:40,652
+Toplam satışlarla toplam giderin birbirine eşit olduğu nokta, başa baş noktası.
+
+85
+00:25:41,299 --> 00:26:08,599
+Ve burada bir de geri ödeme süresi var. Geri ödeme süresi, yatırımın yapılıp yapılmayacağını anlamak için en çok kullanılan yöntemlerden bir tanesi. Mesela yazılımı geliştirmek için bir maliyet gerekiyor. Bu maliyeti biz ne zaman, kaç sene sonra karşılığını alacağız?
+
+86
+00:26:09,395 --> 00:26:11,935
+elde edilen faydaya göre.
+
+87
+00:26:14,675 --> 00:26:18,695
+İşte bu da yine yukaraki grafikten anlatabilirim.
+
+88
+00:26:21,695 --> 00:26:22,475
+Şurada
+
+89
+00:26:25,715 --> 00:26:47,076
+Birkaç birim sattığımızda bunu gideriyor. Mesela bir paket program hazırladınız. Paket program hazırlamak için bir maliyet harcadınız. İlk kişi kullandı, sonra sattıkça bunu karşılıyorsunuz. Başka kurumlara sattıkça, başka kişilere sattıkça.
+
+90
+00:26:53,715 --> 00:27:00,535
+Bu sistem kendini karşılayacaktır. Bu başa baş noktası dediğimiz nokta.
+
+91
+00:27:01,855 --> 00:27:10,235
+Geri ödeme süresi dediğimiz şeyde yatırımın yapılıp yapılamayacağını anlamak için
+
+92
+00:27:10,235 --> 00:27:19,895
+mesela kaç sene sonra bunu seneye vurursak bu başa baş noktasındaki toplam gelir ve
+
+93
+00:27:20,912 --> 00:27:44,812
+Toplam maliyeti. Kaç sene sonra kendini ödeyecek? Geri ödeme süresi, yatırım tutarı, bölü yıllık nakit akışı, yatırımın işletmeye açılması sonucunda elde edilen yıllık fayda arasındaki ilişki.
+
+94
+00:27:44,812 --> 00:27:47,432
+Evet, birisi parmak kaldırdı.
+
+95
+00:27:48,435 --> 00:27:53,955
+Hocam bu sabit maliyet dediğimiz ilk başta işi kurmak için gereken maliyet mi?
+
+96
+00:27:53,975 --> 00:28:05,596
+Evet, evet. Yani bizim açımızdan bakarsak donanımı satın aldık, yazılımı geliştirdik, kullanıma geçtik.
+
+97
+00:28:05,836 --> 00:28:15,695
+İşte yazılımı geliştirmek için, donanımı satın almak için harcadığımız para sabit maliyet.
+
+98
+00:28:16,531 --> 00:28:41,271
+Bundan sonra çalıştırma aşamasında, çalıştırma aşamasında da destek personeli var, işlem akışı var. Bunlar da bizim harcamalarımız içinde olacak. Toplam gelir dediğimizde hepsi birlikte. Toplam maliyet artı çalıştırma maliyeti.
+
+99
+00:28:42,111 --> 00:28:43,411
+Tamamdır hocam, teşekkür ederim.
+
+100
+00:28:43,700 --> 00:28:44,540
+cevaat yaram.
+
+101
+00:28:53,364 --> 00:29:08,364
+Evet, bunlar ekonomik fizibilite dediğimiz zaman ne anlıyoruz? Yani bazı örnekleri gösterdim. Çok fazla bu formüller üzerinde de durmak istemiyorum ama bizim…
+
+102
+00:29:09,332 --> 00:29:37,332
+Bazı kararlar aşamasında yatırım yapıldığında, çalıştığımız şirkette yeni bir yazılım projesine girildiğinde, bir bilgi sistemi geliştirme işine girildiğinde bu değerlendirmelerde neler baz alınıyor, hangi değerlendirmeler yapılıyor, hangi yöntemler kullanılıyor bu yöntemlere yabancı olmamanız için verilir.
+
+103
+00:29:37,332 --> 00:30:03,272
+Şimdi, zaman da bizim için çok önemli. Zamanın planlanması gerekiyor. Zamanı nasıl planlayacağız? Belirlenen süre çerçevesinde önerilen projenin tamamlanıp tamamlanmayacağı araştırılır. Bu amaçla da
+
+104
+00:30:03,667 --> 00:30:18,827
+Birçok teknik kullanılır ama Gantt ve Pert teknikleri, bunun için çizilen diagramlar en fazla kullanılanları.
+
+105
+00:30:18,827 --> 00:30:29,968
+Zaman fizibilitesi dediğimizde aslında bunu yazılım mühendisliği dersinde yazılım proje yönetimi kapsamı içinde göreceğiz.
+
+106
+00:30:30,900 --> 00:30:48,900
+Şimdi, genel olarak bir bilgi sistemini geliştirme sürecinde zamanı nasıl yöneteceğiz, zamanın olabilirliği nedir, olurluluğu nedir, bunun üzerine çalışmalar.
+
+107
+00:30:49,320 --> 00:30:57,400
+Yani, size şu anda mesela derslerde, çoğu derste proje veriliyor.
+
+108
+00:30:57,971 --> 00:31:18,311
+Bu proje için bir olurluluk çalışması yaptığınızda işte verilen iş mesela hocalar da bunu dikkate alarak işte mümkün olduğunca erken tanımlamaya çalışıyoruz projeleri ki bir ekip kuracaksınız.
+
+109
+00:31:18,311 --> 00:31:24,311
+İşte iş nedir onu anlayacaksınız, konunuzu belirleyeceksiniz, işi anlayacaksınız.
+
+110
+00:31:25,971 --> 00:31:43,912
+Modellemeyi yapacaksınız, diagramları çizeceksiniz, kodu geliştireceksiniz, aranızda etkileşim yapacaksınız. Bu iş için işte bir iki aylık süre gerekiyor. Bunu fazla fazla düşünerek veriyoruz.
+
+111
+00:31:46,932 --> 00:31:58,211
+İşte bu süreyi planlamak, doğru planlamak ve yapılabilir hedefler koymak doğru olanı.
+
+112
+00:31:58,211 --> 00:32:01,211
+Siz mesela...
+
+113
+00:32:02,036 --> 00:32:22,776
+Problemi anlamak için ne kadar zaman ayırıyorsunuz? Analiz yapmak için, sistem analizi sırasında modellerinizi kurmak, ne olduğunu anlamak üzere bir veri akış diyagramlarını oluşturmak, ER diyagramlarını oluşturmak için ne kadar süre ayırıyorsunuz?
+
+114
+00:32:23,435 --> 00:32:30,036
+Hangi işler var? Bu işlerin başlama süresi, bitiş süresi minimum ne kadar olmalı?
+
+115
+00:32:30,036 --> 00:32:54,016
+Hangi yoldan giderseniz daha etkili çalışırsınız. Bütün bunlar zaman fizibilitesinin içinde. Aynı zamanda zaman fizibilitesiyle kaynak yönetimi de iç içe ve bu Gant diyagramları, PERT diyagramları da bunu çizmek için size olanak sağlıyor.
+
+116
+00:32:57,332 --> 00:33:14,832
+Bu diagramları daha iyi oluşturmak için proje yönetim araçları var, yani paket programlar var. Biz bunlardan MS Project'i, Microsoft Project'i kullanacağız.
+
+117
+00:33:18,420 --> 00:33:24,680
+Bunun dışında da çok sayıda program var. Bunu daha kolay bulunabildiği için kullanıyoruz.
+
+118
+00:33:26,299 --> 00:33:32,299
+Ve şimdi PERT nedir? GANT nedir?
+
+119
+00:33:41,460 --> 00:34:08,539
+Çok eski kullanılan bir yöntem, bir teknik. Zaman, araç, maliyet kontrolü için bu diagram bir cevap sağlıyor. Microsoft Project ile de bunu daha hızlı ilk tanımlamalardan sonra çizilmesini sağlayacak bir ortam oluşturmuş oluyoruz.
+
+120
+00:34:09,523 --> 00:34:23,203
+PERT çizimi için bir defa PERT'in dışında başka yöntemler de var.
+
+121
+00:34:23,804 --> 00:34:33,043
+CPM gibi yani Critical Pet Method gibi ama burada biz PERT kullanıyoruz uygulamalarımızda.
+
+122
+00:34:36,851 --> 00:34:58,231
+Tam belirli değil. Yani mesela bir analizi ne kadar sürede yapacaksınız, tasarımı ne kadar sürede yapacaksınız, kodlamayı ne kadar sürede yapacaksınız. Bu bir kimyasal analiz gibi, kimyasal proses gibi sürecin bütün adımları dakikasıyla zamanıyla belirli olan bir şey değil.
+
+123
+00:35:01,876 --> 00:35:19,876
+Sistem analizini şu kadar sürede yapabiliriz. En kötümser şu kadar sürebilir. En yaklaşık süre budur. İyimserle kötümser arasında bir süre. Böyle bir tam belirlilik yoksa…
+
+124
+00:35:19,956 --> 00:35:29,136
+Her bir iş adımının süresinde o zaman pert kullanmak daha doğru. Çünkü bu sürelerin ortalamasını alır.
+
+125
+00:35:31,219 --> 00:35:44,579
+Her işlem için bir beklenen süre hesaplanır. Bu da nedir? İyimser süre, kötümser süre ve en olası süre.
+
+126
+00:35:57,844 --> 00:36:13,524
+çarpı, en olası, en yaklaşık süre, bir iyimser süre, bir kötümser süre, bir de en olası süreyi 4 ile çarpıp 6'ya bölüyoruz.
+
+127
+00:36:15,524 --> 00:36:22,764
+Burada aralarındaki değişim de bazen bize
+
+128
+00:36:24,980 --> 00:36:40,019
+En yaklaşık süre, beklenen süre için ne kadar değişim gösteriyor? Bunu da hesaplamamız gerekir.
+
+129
+00:36:41,588 --> 00:37:05,568
+PERT hazırlanırken mantıksal bir sıra takip edilecek ama nasıl? Yani olayların mantıksal süresi nedir? Bizim yazılım geliştirme sürecimiz açısından önce sistem analizi yapılır, sonra tasarım yapılır, sonra gerçekleştirme yapılır kodun geliştirilmesi.
+
+130
+00:37:08,596 --> 00:37:21,695
+Kendinden önceki işlemler bittikten sonra. İşte bu PERT diagramını oluşturabilmek için bizim aslında hangi yazılım geliştirme süreci modelini kullanacağımız da önemli.
+
+131
+00:37:22,515 --> 00:37:28,635
+Biri tamamen bittikten sonra diğeri başlayacak diyorsak, yani waterfall kullanacaksak.
+
+132
+00:37:29,043 --> 00:37:52,363
+Yazılım geliştirme, bilgi sistemi geliştirme süreci olarak. O zaman olaylar arka arkaya girecek. Yani birinci olay bitecek, analiz bitecek, ikinci olay başlayacak. İkinci olay bitecek, üçüncü olay başlayacak. Ama her şey böyle gitmez. Mesela alternatif yol da olabilir.
+
+133
+00:37:53,204 --> 00:38:21,204
+1, 2, 5, 7, 8 mi gidecek? 1, 4, 6, 7, 8 mi gidecek? Bunlar değişebilir. Buradaki hangi yol izlenecek? Birinci yolu izlersek bu şekilde, ikinci yolu izlersek bu şekilde, üçüncü bir yolda şurada, işte üçten başlayabiliriz.
+
+134
+00:38:21,204 --> 00:38:45,704
+4, 6 gibi. Yani hangi geliştirme süreç modeli ya da sıralamayı nasıl yapacağız? Bunlar da önemli. Bunlar genel şeyler. Yani sadece yazılıma özgü değil. Herhangi bir proje için
+
+135
+00:38:46,063 --> 00:39:08,523
+Bu bir kimya projesi olabilir, inşaat projesi olabilir, PERT veya bir sosyal proje olabilir. Ne bileyim işte seçim çalışmaları için olacak işler veya bir tanıtım projesi. Bu tanıtım projesi kapsamında gerçekleştirilecek işler.
+
+136
+00:39:08,927 --> 00:39:24,827
+Tabii ki süre çok önemli. Mesela deadline'ı olan bir şeydir. Ürünün tanıtımı Temmuz'da olacaksa burada süre çok önemli.
+
+137
+00:39:27,539 --> 00:39:49,539
+Temmuz'da tanıtımı olacak bir işi. Siz çok iyi yaparsınız ama Ağustos'ta biter. Bu hiç anlamlı değil. Zaman planınız önemli. Aynı şey sizin için çok geçerli. Ekip çok iyi çalışır, bitirir ama…
+
+138
+00:39:50,032 --> 00:40:03,292
+Haziran'ın ortasında bitirirse ders için hedef bitmiş olur. Projenizin ne kadar iyi olduğu önemli değil o noktada.
+
+139
+00:40:10,324 --> 00:40:20,463
+Evet, bu PERT'in alternatifi CPM demiştim.
+
+140
+00:40:20,463 --> 00:40:32,384
+CPM'de ortalama süre hesaplanır ve o geçerli olur.
+
+141
+00:40:38,835 --> 00:40:45,475
+Projede o olayın ortalama süresi bellidir ve bir tane süre gelinir.
+
+142
+00:40:45,536 --> 00:40:57,675
+Halbuki PERT'te biraz daha belirsizlik sırasında da iyi çalışacak yoldur PERT diyagramı.
+
+143
+00:40:58,643 --> 00:41:06,983
+Peki Gant nedir? Şimdi biraz sonra arkadaşlarla da onun uygulamasını yapacaksınız.
+
+144
+00:41:06,983 --> 00:41:19,947
+Gant çizelgesi problemin tanımından sistemin işletilmesine kadar olan süre içinde gerçekleştirecek olan...
+
+145
+00:41:20,532 --> 00:41:27,052
+Aktivitelerin ne zaman başlayıp ne zaman biteceğini gösterir.
+
+146
+00:41:27,852 --> 00:41:39,052
+Gant çizelgesinde ayrıca sistemin geliştirme sürecindeki önemli durak noktaları, kilometre taşları da gösterilir.
+
+147
+00:41:47,092 --> 00:41:53,092
+Milestone olarak yer alıyor.
+
+148
+00:41:55,092 --> 00:41:56,431
+Şuraya yazalım.
+
+149
+00:42:05,588 --> 00:42:16,907
+Milestone, kilometre taşı demek. Milestone kavramı bizim için ne anlama geliyor?
+
+150
+00:42:18,327 --> 00:42:27,208
+Yazılım bilgi sistemi geliştirme sürecinde önemli aşamalar nelerdir?
+
+151
+00:42:32,467 --> 00:42:57,668
+Yazılım geliştirme projesinde sistemin analizini yapmak işi bittiğinde birinci önemli adımdır. Tasarım ikinci önemli adımdır. Gerçekleştirme aşamasının tamamlanması başka bir adımdır. Bunu daha geniş ayrıntıda düşünürsek.
+
+152
+00:42:58,739 --> 00:43:02,879
+Daha alt adımlara da birer milestone yerleştirebiliriz.
+
+153
+00:43:04,039 --> 00:43:13,259
+Yani nasıl ki hayatınızdaki dönüm noktaları var, bilgi sistemi geliştirme süreci içinde dönüm noktaları var.
+
+154
+00:43:13,379 --> 00:43:16,499
+Bu dönüm noktaları da kilometre taşları diyoruz.
+
+155
+00:43:20,628 --> 00:43:25,907
+Ve bunları Gant diagramında gösteriyoruz.
+
+156
+00:43:26,508 --> 00:43:40,807
+Yapılacak işleri tarih sırasıyla gösteren durak yerlerini, iş yoğunluğunun az olduğu işlemleri belirten bir Gant çizelgesi.
+
+157
+00:43:42,268 --> 00:43:47,708
+Burada bir örneğini görüyoruz.
+
+158
+00:43:48,179 --> 00:43:50,019
+yöneticinin
+
+159
+00:43:56,403 --> 00:44:05,683
+Yapılacak işleri tarih sırasıyla belirten, milestone'ları belirten tanımlamaları olmalıdır.
+
+160
+00:44:06,963 --> 00:44:15,463
+Her işlemin süresi en erken ve en geç başlama bitme tarihlerini gösteren bir görev durumu çizelgesi.
+
+161
+00:44:15,856 --> 00:44:21,576
+İşlem sırasına göre görev paylaşımını gösteren bir çizergi diyebiliriz.
+
+162
+00:44:22,356 --> 00:44:37,256
+Ve üzerinde kritik yolu belirleyen, yani kritik yoldan kastımız hiç gecikme olmadan ilerlemesi gereken yol nedir?
+
+163
+00:44:38,536 --> 00:44:41,756
+Bunları görebiliyoruz.
+
+164
+00:44:45,139 --> 00:45:05,780
+Öncelikle müşterilerle görüşme, ürünün tanımlanması müşteriler tarafından, sonra sistem analizi, donanım yazılım işlevleri neler olacak, yazılımın proje planlaması, ön tasarım, test planlama, ayrıntılı tasarım gibi alt başlıklar.
+
+165
+00:45:11,476 --> 00:45:27,476
+Bir proje sürecinin tanımlanmasını belirtiyoruz. Bu daha genel adımlar ve bunun altındaki adımlar şeklinde de olabilir. Arkadaşlar buna örnek verecekler.
+
+166
+00:45:38,547 --> 00:45:58,707
+gibi başka adımlar gösterilebilir. Mesela projenin planlaması şurada. Projenin izlenmesi proje planlamadan başlayarak projenin sonuna kadar izleme devam ediyor.
+
+167
+00:45:58,707 --> 00:46:01,067
+Ön tasarım.
+
+168
+00:46:01,940 --> 00:46:16,019
+test planlaması ve uygulama, daha sonra ön tasarım bittikten sonra ayrıntılı tasarım gibi böyle birbiriyle grift olarak da görünebilir.
+
+169
+00:46:16,780 --> 00:46:24,039
+Dediğim gibi bu konuları biraz daha uygulamada ayrıntılı göreceksiniz.
+
+170
+00:46:24,039 --> 00:46:29,640
+Şimdi başka hangi fizibiliteler var?
+
+171
+00:46:29,940 --> 00:46:50,760
+Yani projenin olurluluğuna bakıyoruz. Yani ne kadar yapılabilir bu proje? Neler gördük şimdiye kadar? Hangi fizibiliteleri gördük? Teknik fizibilite, ekonomik fizibilite, zaman fizibilitesi gördük. Sosyal fizibilite nedir?
+
+172
+00:46:56,019 --> 00:47:04,559
+Önerilen sistem, acaba kullanıcılara ne kadar yakın? Yani kullanıcılar bunu benimseyecek mi?
+
+173
+00:47:07,284 --> 00:47:26,284
+Önerilen sistemi doğrudan kullanıcıların bakması gerekecek. Çok iyi bir sistem kurmuş olabilirsiniz. Donanım açısından baktığınızda yenilikler içerebilir. Yazılımı çok etkindir ama kullanıcı alışkın değilse...
+
+174
+00:47:26,896 --> 00:47:50,596
+Buna hep bir örnek veriyorum ben. Bankalarda bu banka çalışanlarının çok önceki yıllarda daha hızlı çalışması, işte dokunmatik ekranlar koyarak daha iyi çalışacak.
+
+175
+00:47:51,027 --> 00:47:58,387
+düşünülmüş ve donanımda bir yenilenmeye gidilmiş.
+
+176
+00:47:59,867 --> 00:48:14,687
+Ama kullanıcılar klavye kullanmaya ve bunda hız kazanmış, klavye kullanmaya alışkın ve hız kazanmış kişiler olduğu için dokumatik ekranlar her şeyi daha yavaşlamış.
+
+177
+00:48:15,103 --> 00:48:32,103
+Ve başarısız bir proje yani sadece yazılım geliştirme değil donanım araçlarının doğru seçilmesi bir bütün olarak bilgi sistemi diye baktığınızda her şeye doğru karar vermek ve burada da hedef kitleyi göz önünde bulundurmak.
+
+178
+00:48:32,103 --> 00:48:36,743
+Kim kullanacak bu sistemi? Bu çok önemli.
+
+179
+00:48:39,987 --> 00:48:52,727
+Sisteme yönelik yasal fizibilite kavramı, yönetim fizibilitesi, yeni sistem, organizasyonla yani uç kullanıcıları söyledik.
+
+180
+00:48:53,687 --> 00:49:06,127
+Üst yönetim ile ilişkisi nedir? Üst yönetimin tam desteğini almak çok önemli projelerde.
+
+181
+00:49:06,612 --> 00:49:16,792
+Başarı olması için, işte üst yönetim bunu fizibil buluyor mu?
+
+182
+00:49:17,268 --> 00:49:21,887
+Bu çözümü ve bu projeyi destekliyor mu? Bu da önemli.
+
+183
+00:49:22,667 --> 00:49:37,248
+Yasal fizibilite nedir? Önerilen sistemin yasalara uygunluğu, yani bir patent, lisans, bir şey hakkı var mı? Bunun araştırılması.
+
+184
+00:49:42,739 --> 00:50:00,519
+Fizibiliteyi gerçekleştirdik yazılım açısından, donanım açısından yani teknik olarak yapılabilir mi? Ekonomik olarak uygun mu? Yasal bir problemi var mı?
+
+185
+00:50:01,139 --> 00:50:09,480
+kullanıcıların sosyal hayatına uygun mu, yönetim için uygun mu? Bunlara baktık.
+
+186
+00:50:11,159 --> 00:50:15,259
+Farklı çözümler için hep bunlara bakmamız gerekebilir.
+
+187
+00:50:15,259 --> 00:50:17,259
+Alternatif...
+
+188
+00:50:18,996 --> 00:50:31,655
+sistemlerin değerlendirilmesi, yani madem ki bilgi sistemi geliştirme tek bir çözümlü bir şey değil, birden fazla çözümü değerlendireceğiz.
+
+189
+00:50:31,655 --> 00:50:41,655
+Yani donanım konfigürasyonu, yazılım yapısı farklı bir sürü çözümü olabilir bir problemin.
+
+190
+00:50:46,996 --> 00:51:06,556
+Buna biz alternatif fizibilite diyoruz. Önerilen sistem 1, önerilen sistem 2, önerilen sistem 3. Hepsini teknoloji, ara birim, veri, işlemleri konusunda değerlendiriyoruz.
+
+191
+00:51:11,987 --> 00:51:16,687
+sistemi teknik olarak değerlendirdikten sonra
+
+192
+00:51:17,235 --> 00:51:33,955
+Ekonomik fizibilite olarak, yani şurada biz teknik fizibiliteyi, teknolojisi, alt ara birimleri, veri kullanımı, işlemleri açısından tekniği detaylandırmış olduk.
+
+193
+00:51:50,260 --> 00:52:08,520
+Önerilen sistem 1, önerilen sistem 2, önerilen sistem 3. 3 tane teklifiniz varsa teknik fizibilite açısından hepsinin olurluluğu değerlendirilir. Ekonomik fizibilite açısından ne kadara mal olacak?
+
+194
+00:52:09,331 --> 00:52:30,911
+Ve yakışık tabii ki daha ilk başta ne kadar kar getirecek? Ekonomik fizibilitesi karşılaştırılır. Zaman hangisi ne zaman bitecek? Dediğim gibi zamanı çok kritik bir faktör olarak bakabiliriz projelerde.
+
+195
+00:52:35,923 --> 00:52:53,923
+Buna göre bir sıralama yapılır. Teknik, ekonomik, zaman, sosyal olarak hangisi ön plana çıkacaktır? Bu kararlar verilebilir. Bir tane örnek oluşturduk.
+
+196
+00:53:01,108 --> 00:53:22,608
+İşte önerilen sistem bir nedir? Önerilen sistem ikinin durumu nedir? Önerilen sistem üçün. Yani her birinde farklı bir yazılım altyapısıyla veri tabanı yönetim sistemi farklı olabilir. Hazır bir paket alınabilir.
+
+197
+00:53:24,659 --> 00:53:39,039
+Farklı bir sistemle geliştirilebilir. Teknik fizibilite açısından bir puanlama verilir ve teknik fizibilitenin önemi yüzde otuz. Ekonomik fizibilitenin oranı yüzde otuz.
+
+198
+00:53:41,715 --> 00:54:03,695
+Ne kadara mal olacak? Ne kadara mal olacak? Ne kadara mal olacak? Geri dönüşümü ne kadar? Geri dönüşümü 4,5 yıl. Hani gördük yukarıda geri ödeme süresi. Geri ödeme süresi 3,5 yıl, geri ödeme süresi 3,3 yıl. Ve net getirisi nedir?
+
+199
+00:54:06,324 --> 00:54:26,003
+Ekonomik açıdan bu daha iyi. Zaman olarak da, işte tabii ki bu yeni alınacak bir sistem, hazır alınacak bir sistem. Bunun zamanı daha kısa. Operasyonel fizibilite kullanımı sırasında
+
+200
+00:54:26,579 --> 00:54:38,739
+Kullanıcılara şeyi nedir işletim fizibilitesi? Aslında bu sosyal fizibiliteyle eş anlamlı kullandığımız bir şey. Kullanıcıların işletimi nasıl?
+
+201
+00:54:40,692 --> 00:54:56,832
+Görülüyor ve toplamına baktığımızda işte hangisi ön plana çıkıyor? Tabii ki burada da sadece sayılar değil, yorumlama da önemli ama bu sayılarla bir başlangıç yapılmış oluyor.
+
+202
+00:54:58,672 --> 00:55:03,472
+Şimdi buraya kadar sorunuz var mı?
+
+203
+00:55:21,780 --> 00:55:25,840
+İlk baştakilere soruyoruz, biraz daha sona doğru geçelim.
+
+204
+00:55:30,643 --> 00:55:54,603
+[öğrenci], burada mı? [öğrenci]? Sesini mi açamıyorsun? Sesini açabiliyor musun? Peki, ekonomik fizibilite nedir [öğrenci]? Yazabilirsin.
+
+205
+00:55:57,523 --> 00:55:59,143
+Ekonomik fizibilite nedir?
+
+206
+00:56:06,099 --> 00:56:07,619
+Başka birisini bulalım.
+
+207
+00:56:17,940 --> 00:56:28,267
+Nahit [öğrenci]
+
+208
+00:56:28,267 --> 00:56:32,227
+Burada mısın?
+
+209
+00:56:37,715 --> 00:56:38,876
+[öğrenci] burada mı?
+
+210
+00:56:40,916 --> 00:56:42,036
+Buradayım hocam.
+
+211
+00:56:42,735 --> 00:56:45,936
+Tamam. O zaman sana sorayım ekonomik fizibiliteyi.
+
+212
+00:56:46,816 --> 00:57:01,195
+Ekonomik fizibilite bir işin ekonomik olarak maddi boyutunun ne kadar yapılabileceği, gelirinin maliyetleri karşılayıp karşılayamayacağı ve ileride ne kadar gelir getireceğinin ölçümü mü?
+
+213
+00:57:01,619 --> 00:57:25,219
+Evet, yani sadece maliyeti değil, bu kadar maliyetle yaptığımız bir projenin sonunda elde ettiğimiz ürünün ne kadar gelir getireceğiyle ilişkili bir kıyaslama. Yani işte attığımız taş ürküttüğümüz kurbağaya değecek mi? Cevabı.
+
+214
+00:57:30,356 --> 00:57:31,656
+Evet, [öğrenci].
+
+215
+00:57:33,196 --> 00:57:34,676
+[öğrenci], bu ne?
+
+216
+00:57:35,676 --> 00:57:36,016
+Tamam.
+
+217
+00:57:36,976 --> 00:57:39,036
+[öğrenci] Gant diagramı nedir?
+
+218
+00:57:43,635 --> 00:57:44,216
+Gant.
+
+219
+00:57:46,216 --> 00:57:50,336
+Yani unuttum ya dersin başında söylemiştin ama.
+
+220
+00:57:50,776 --> 00:57:51,175
+Tamam.
+
+221
+00:57:51,696 --> 00:57:52,236
+Cırlayamadım.
+
+222
+00:57:53,196 --> 00:57:56,296
+Tamam. O zaman bir ara verelim.
+
+223
+00:57:59,576 --> 00:58:01,175
+Yine on dakika diyelim.
+
+224
+00:58:17,588 --> 00:58:19,328
+Evet, bu aradan sonra
+
+225
+00:58:24,563 --> 00:58:49,743
+Bu derste bahsettiğim zaman fizibilitesi, kaynak fizibilitesi ile ilişkili kullanılan MS Project konusunda aradan sonra Hatice Hoca'nız uygulamayla açıklayacak bu konudaki işlemleri.
+
+226
+00:58:50,463 --> 00:58:51,923
+Evet, sorusu olan var mı?
+
+227
+00:58:59,347 --> 00:59:03,128
+Evet, şimdiden sonra 10 dakika ara veriyoruz.
+
+228
+01:09:16,916 --> 01:09:18,996
+Arkadaşlar, merhaba, sesim geliyor mu?
+
+229
+01:09:23,636 --> 01:09:24,496
+Geliyor hocam.
+
+230
+01:09:26,756 --> 01:09:29,796
+Ekran paylaşmıştım. Ekranı görüyor musunuz şu an?
+
+231
+01:09:30,576 --> 01:09:31,436
+Görünüyor hocam.
+
+232
+01:09:32,336 --> 01:09:33,096
+Tamamdır.
+
+233
+01:09:34,576 --> 01:09:38,096
+Oya hoca size Gant diagramını anlatmıştı.
+
+234
+01:09:38,676 --> 01:09:41,516
+Ben de kısa bir şekilde Gant diagramının üzerinden geçeceğim.
+
+235
+01:09:42,336 --> 01:09:46,636
+Daha sonra da MS Project üzerinde sizinle bir uygulama gerçekleştireceğiz.
+
+236
+01:09:49,971 --> 01:10:00,000
+Gant diyagramlarıyla biz iş akış planını gerçekleştiriyorduk. Gant çizelgesi 1910'larda proje planlama ve kontrol için geliştirilmiş.
+
+237
+01:10:00,000 --> 01:10:24,239
+Geliştiren kişinin ismini alıyor hatta. Gant çizelgesinde projenin işlem adımları, faaliyet olarak isimlendiriliyor. Bu faaliyetlerin süresi, başlangıç ve bitiş zamanları, hangi kaynakların bu faaliyet için kullanacağı diagram üzerinden çıkartabiliyor. Aslında biz kaynak kontrolünü ve zaman kontrolünü sağlıyoruz Gant çizelgesinde.
+
+238
+01:10:26,996 --> 01:10:45,716
+Burada da örnek bir gant şeması var. Kitap satış web sitesi gerçekleştiriyor. Bu kitap satış web sitesi altındaki alt adımlar başta analiz, tasarım, geliştirme ve test. Bu adımları yine bir kırılımla uğratarak yine bir alt adımlara bölüyor.
+
+239
+01:10:46,159 --> 01:10:59,739
+Bu işlemlerin kaç gün süreceği, ne zaman başlayıp ne zaman biteceği, bunların yanında da öncüleri var. Hangi işlemden sonra hangi işlemin başlayıcı ya da işlemler arasındaki ilişkileri belirleyen.
+
+240
+01:11:00,948 --> 01:11:07,048
+kriterlerimiz var, öncülerimiz var. Daha sonra bu işlemler içinde kaynak ataması yapabiliyoruz.
+
+241
+01:11:07,048 --> 01:11:13,448
+Fizibilite çalışmasını analist bir yapsın, iş analisti bir diye isimlendirmişiz.
+
+242
+01:11:13,968 --> 01:11:20,748
+Gereksinimlerin belirlenmesini de analist iki gerçekleşsin diye bu şekilde bir kaynak ataması gerçekleştirebiliyoruz.
+
+243
+01:11:24,851 --> 01:11:43,871
+Work Breakdown Structure ifadesiyle her bir faaliyet alt faaliyetlere bölünebiliyor. Yani alt kırılımlara sahip oluyor. Daha önceki slayda da belirttiğim gibi analizin altında fizibilite çalışması, gereksinimlerinin belirlenmesi, analiz birim toplantısının olması gibi.
+
+244
+01:11:44,627 --> 01:12:02,847
+Faaliyetler için başlangıç tarihi ve süresi belirtilende otomatik olarak bitiş tarihi de hesaplanıyor. Bunu MS Project'te biz kendimiz beliyoruz. Yani otomatik olarak başlangıç ve bitiş tarihinin kendisi ekliyor. Biz süresini veriyoruz işlemin. O tarihleri kendisi ayarlıyor.
+
+245
+01:12:03,764 --> 01:12:20,423
+Bir işin başlangıç zamanı başka bir işe bağlı olabiliyor. Bunu da öncül tanımlama olarak söylemiştim bir önceki slide'da. Öncülleri ben tanımlıyorum. Ona göre işin başlangıç ve bitiş tarihini MS Project kendisi ayarlayabiliyor.
+
+246
+01:12:22,764 --> 01:12:27,804
+Bizim önemli olarak, burada dikkat etmemiz gereken faaliyetler arası ilişkiler var.
+
+247
+01:12:29,203 --> 01:12:45,943
+Bitiş ve başlangıç demiş, finish to start. Bir faaliyetin başlaması için bağlı, bağlantılı başka bir faaliyetin tamamlanmış olması gerekiyor. Örneğin tasarımın başlaması için analizin bitmiş olması gerekiyor mesela. Böyle bir öncül verebiliyoruz biz.
+
+248
+01:12:47,028 --> 01:13:06,768
+Başlangıç, başlangıç olarak geçiyor Türkçe'de start to start. Bir faaliyetin başlaması için bağlı bağlantı başka bir faaliyetin de başlamış olması gerektiğini gösteriyoruz burada. Koşlu olarak bunu verdiğimizde birim testlerin başlaması için geliştirme aşamasında başlaması gerektiğini belirtebiliyoruz.
+
+249
+01:13:07,636 --> 01:13:20,396
+Bitiş, bitiş var. Bir faaliyetin tamamlanması için bağlı, bağlantılı bir başka faaliyetin de tamamlanmış olması gerekiyor. Bilim testlerin bitmesi için kodlama aşamasında bitmesi gerektiği gibi.
+
+250
+01:13:21,496 --> 01:13:29,576
+Başlangıç, bitiş. Bir faaliyetin tamamlanması için bağlı, bağlantılı başka faaliyetlerin başlamış olması gerektiğini gösteriyor bizlere.
+
+251
+01:13:31,412 --> 01:13:54,872
+Bizim Gant şemamızda kritik yollarımız var. Yani bu kritik yollardaki işlemler uzadığında bizim projeyi bitirme süremiz de artıyordu. Biz bunları Gant şemasında kırmızı olarak gösteriliyor bu işlemle. Kırmızı olarak gösteren işlemleri biz herhangi bir Gant şemasına baktığımızda bunun kritik yol olduğunu, kritik bir işlem olduğunu anlamamız gerekiyor.
+
+252
+01:13:58,612 --> 01:14:19,412
+Bizim bir de kilometre taşlarımız var, bir liston. Bunlar da bizi süresiz sıfır olarak tanımlanıyor. Sıfır olarak tanımlandığında MS Project bunları kilometre taşı olarak algılıyor ve bizim projemizin genelde bunlar sonunda gerçekleştiriliyor.
+
+253
+01:14:19,412 --> 01:14:26,612
+Mesela siz bitirme projesi yaptığınızda danışman toplantısı bir kilometre taşı olabilir. Burada bir değerlendirme yapabiliriz.
+
+254
+01:14:26,612 --> 01:14:40,631
+Ne yapıyorsunuz? Bir günden daha az sürüyor. Sıfır gün olarak beliriyoruz. Buna herhangi üç gün, dört gün sürmüyor. Kısa bir toplantı yaparak işte bu mesela literatür taraması adımınızı değerlendirmiş oluyorsunuz bu işlemin sonucunda.
+
+255
+01:14:42,852 --> 01:14:48,332
+Bunu uygulama yaparken tekrar göreceğiz sizinle zaten. Bir de bizim bolluklarımız var.
+
+256
+01:14:50,195 --> 01:14:56,915
+Bolluk kavramı kritik yol üzerinde bulunmayan esnek faaliyetlerin zamanlamasında yapabilecek kayma miktarını ifade ediyor.
+
+257
+01:14:57,835 --> 01:15:02,915
+Kritik olmayan faaliyetler Gant şeması üzerinde mavi renkle gösteriliyor.
+
+258
+01:15:04,555 --> 01:15:07,555
+Bolluklarda gri uzun çizgilerle ifade ediliyor.
+
+259
+01:15:09,136 --> 01:15:12,335
+Bir de biz Gant şemalarında kaynak atamaları yapıyorduk.
+
+260
+01:15:12,335 --> 01:15:17,115
+Kaynak proje faaliyetlerinin ilerleyebilmesi için ihtiyaç duyulan her şeydir.
+
+261
+01:15:17,471 --> 01:15:27,871
+Yani insan, ekipman, para gibi projenin tamamlanması için gerekli olan her şey kaynağı ifade ediyor bizim için. Biz Gantş yaması üzerinde kaynak kontrolünü de yapabiliyoruz.
+
+262
+01:15:31,828 --> 01:15:36,828
+MS projek ile faaliyetler ve proje geneli için detaylı kaynak atamaları yapılabilmektedir.
+
+263
+01:15:37,228 --> 01:15:42,208
+Kaynaklar, kişiler veya materyaller olabilir. Bunu bir önceki slide'da söylemiştik.
+
+264
+01:15:43,248 --> 01:15:49,988
+Burada yazılımcının, analistin, test uzmanının ne kadar ücret alacağını beliriyoruz.
+
+265
+01:15:50,148 --> 01:15:55,168
+Saatlik, haftalık. Bunlar MS projek üzerine değiştirilebiliyor.
+
+266
+01:15:55,168 --> 01:15:58,748
+Genel olarak, ben kaynaklarımı veriyorum.
+
+267
+01:15:59,828 --> 01:16:15,068
+işlerimin saatlik, haftalık ücretlerini belirliyorum. Daha sonra mesela bu Gant şeması üzerinde ben bu projenin bana maliyetini detaylı bir şekilde görmüş olabiliyorum. Maliyetini genel olarak hesaplamış olabiliyorum.
+
+268
+01:16:17,492 --> 01:16:21,832
+Daha sonra Gant şamasından ayrı bir PERT diyagramımız var bizim.
+
+269
+01:16:22,871 --> 01:16:28,291
+PERT diyagramı da proje yönetimi ve analizi için kullanılan istatiksel bir araç.
+
+270
+01:16:28,871 --> 01:16:32,391
+PERT diyagramı graf temelli bir yöntem.
+
+271
+01:16:32,791 --> 01:16:38,131
+Projedeki faaliyetler düğümlere ve faaliyetler arasındaki bağlantılarda kenarlarla gösteriliyor.
+
+272
+01:16:38,771 --> 01:16:52,492
+Gantt çizelgesi faaliyetlerin paralelliğini göstermek için başarılı fakat PERT diagramı bu işlemlerin paralelliğini gösterme konusunda Gantt diagramına göre biraz daha yetersiz kalıyor.
+
+273
+01:16:53,871 --> 01:17:01,431
+PERT diagramı da bu şekilde. Yine mesela bizim şurada görselde gördüğünüz gibi kritik görevlerimiz yine kırmızıyla gösteriliyor.
+
+274
+01:17:02,572 --> 01:17:05,931
+Şu işte yine elmas şekline benzeyen bir kilometre taşımız var.
+
+275
+01:17:06,899 --> 01:17:12,000
+Daha sonra kritik olmayan görevlerimize yine mavi ile gösteriliyor.
+
+276
+01:17:13,719 --> 01:17:22,319
+Bunu yine Gant şemasını oluşturduktan sonra PERH diyagramını oluşturup bizim yaptığımız proje üzerinde de PERH diyagramını tekrardan inceleyeceğiz arkadaşlar.
+
+277
+01:17:24,319 --> 01:17:30,760
+Kısa bir özet geçtikten sonra sizinle birlikte bir uygulama gerçekleştirelim.
+
+278
+01:17:33,076 --> 01:17:42,476
+Sizde de MS Project varsa, dersten sonra kendiniz deneyebilirsiniz. Boş bir proje açıyorum.
+
+279
+01:17:47,891 --> 01:17:49,791
+Ben yukarıdaki şeyleri göremiyorum.
+
+280
+01:18:03,572 --> 01:18:09,652
+Bu şekilde yapayım arkadaşlar. Şu biçim şeyleri uzun şeyinden görünmüyor. İşaretleyemiyorum.
+
+281
+01:18:10,512 --> 01:18:17,752
+Biçim diyelim. İlk önce biz bir projemize özet görev girelim. Yani projemizin ismini girelim.
+
+282
+01:18:18,352 --> 01:18:24,992
+Bu proje özet görevinde işte projemizin kaç gün süreceği, ne zaman bahçe ve ne zaman biteceği genel olarak yazsın.
+
+283
+01:18:29,108 --> 01:18:39,087
+Biz sizinle birlikte bir bitirme projesi yapalım. Siz de dördüncü sınıfta bitirme projesi yapıyorsunuz. Ona bir örnek yapalım.
+
+284
+01:18:41,528 --> 01:18:53,087
+Sizin de hatta bitirme projelerinizde gant şeması isteniyor. Hem de sizin için iyi bir örnek olmuş olur. Siz de kullanırsınız projelerinizde de.
+
+285
+01:18:58,676 --> 01:19:01,356
+Nitratür taraması ile başlayalım ilk olarak.
+
+286
+01:19:04,948 --> 01:19:21,927
+Buna otomatik zamanlamaya versin. Otomatik olarak kendisi zamanlasın. Literatür taramasının şimdi alt adımlarını oluşturacağım. Literatür taramasında biz farklı veri tabanlarını inceleyip bir literatür taraması gerçekleştirelim.
+
+287
+01:19:25,587 --> 01:19:29,587
+Üç gün sürsün. Başka veri tabanlara daha girelim.
+
+288
+01:19:40,532 --> 01:19:47,112
+Bu üç gün süslüm. Bunlar da otomatik zamanmıştır. Kendi tarihlerini aradasın.
+
+289
+01:20:12,435 --> 01:20:14,975
+Bunun ismini değiştireyim. İlk önce bunu yazmayayım.
+
+290
+01:20:22,899 --> 01:20:24,260
+Bu da üç gün sürçün.
+
+291
+01:20:25,439 --> 01:20:27,500
+Bunu da aynı şekilde otomatik zamanlayalım.
+
+292
+01:20:27,920 --> 01:20:32,059
+Tarihleri biz de girebiliriz ama otomatik zamanlama daha kolay.
+
+293
+01:20:32,199 --> 01:20:33,920
+Bizim tarihleri bizim yerimizi ayarlıyor.
+
+294
+01:20:34,000 --> 01:20:35,340
+Ben gününü verdikten sonra.
+
+295
+01:20:45,363 --> 01:20:47,683
+Bunu da 4 gün verelim süresine.
+
+296
+01:20:49,423 --> 01:20:52,203
+Yine aynı şekilde otomatik zamanlanmış diyelim.
+
+297
+01:20:52,863 --> 01:20:56,304
+Şuraya yeni sütun ekle diyelim.
+
+298
+01:20:58,003 --> 01:21:00,563
+Burada neden yaptığımızı da biraz anlatacağım.
+
+299
+01:21:02,703 --> 01:21:03,423
+Burada
+
+300
+01:21:04,916 --> 01:21:19,155
+Çalışma çözümleme yapısı olarak geçiyor bunun adı. Work Breakdown Structure yani İngilizcesi de biz Work Breakdown Structure ile bir kırılım oluşturuyorduk. Bu kırılımları yapabilmek için bunu da ekledik.
+
+301
+01:21:22,676 --> 01:21:32,236
+Mesela literatür taramasının içine, IML veritabanının incelenmesi, bunun bir kırılımı oluyor. Google Scholar'ın incelenmesi, bunun bir kırılımı oluyor.
+
+302
+01:21:32,716 --> 01:21:43,556
+Şimdi ben bu literatür taramasının altına kırılımlar eklediğimde, bunları günlerini toplayarak otomatikman literatür taramasının kaç gün süreceğini yazıyor.
+
+303
+01:21:43,556 --> 01:21:47,056
+Mesela burada toplam dedi ki, literatür taraması 4 gün sürecek.
+
+304
+01:21:47,604 --> 01:22:11,324
+Bunların başlangıçlarını çünkü ne yaptı? Aynı tarih olarak aldı. İşte ben bütün veri tabanların incelenmesine aynı tarihte başlayacağım. En uzun süren neydi? Google Scholar 4 gün sürüyordu. O yüzden bunu literatür taramasının toplam süresine 4 gün dedi. Ama ben bunları şimdi öncülü ekleyeceğim. Bu öncülerle birlikte işte literatür taramasının bitişinin süresi değişecek.
+
+305
+01:22:13,716 --> 01:22:22,176
+Diyeyim ki ben Google Scholar'ı ilk önce Elsevier'i bitirmeden başlamayayım. Oraya bir öncül ekliyorum.
+
+306
+01:22:26,323 --> 01:22:28,363
+Yerinde, IEEE diyeyim.
+
+307
+01:22:28,943 --> 01:22:33,703
+İşte Springer'ı incelemesine, IEEE'yi incelemeden buna başlamayayım.
+
+308
+01:22:33,783 --> 01:22:36,743
+Öncüleri bu şekilde belirtebiliyorum arkadaşlar.
+
+309
+01:22:38,384 --> 01:22:40,644
+Daha sonra buraya kaynak ataması yapabiliyorum.
+
+310
+01:22:40,763 --> 01:22:48,123
+Mesela siz de projelerinizde iki arkadaşınızla yaptığınız yerim ya da üç arkadaş yaptığınız, kaynak atamalarını bu şekilde yapabilirsiniz.
+
+311
+01:22:48,884 --> 01:22:52,103
+Şimdi Ali ilk veritabanı incelemesini Ali yapsın.
+
+312
+01:22:52,627 --> 01:23:00,587
+Daha sonra Veli yapsın, daha sonra Ali yapsın. Böyle bu şekilde iş paylaşımlarını yapabilirsiniz.
+
+313
+01:23:02,108 --> 01:23:07,647
+Daha sonra ben literatür taramasını bitirdim. Literatür taraması işlemimi gerçekleştirdim.
+
+314
+01:23:08,507 --> 01:23:12,387
+Daha sonra ben ne yapacağım? Danışmanımla bir toplantı gerçekleştireceğim.
+
+315
+01:23:22,228 --> 01:23:36,307
+Danışman toplantısı gerçekleştiriyorum. Bunun gününe de ben sıfır gideceğim. Şimdi ben demiştim ki, ben sıfır girdiğimde bu benim bir kilometre taşım oluyordu. Yani benim literatür taraması işlemin sonucunda gerçekleştireceğim bir toplantı.
+
+316
+01:23:39,167 --> 01:23:45,307
+Sıfır gün yazdığımda MS Project bunu otomatik olarak bir kilometre taşı olarak algılıyordu.
+
+317
+01:23:46,452 --> 01:23:58,452
+Ben buradaki öncülleri, yani Google Scholar için öncülleri ben kendim elimle gemiştim. Buraya çık tıkladım da hücreye. Buradan öncüller dedim de kimliğini gireceğim şimdi.
+
+318
+01:24:00,452 --> 01:24:08,252
+Beş diyorum. Ne yapsın? Benim bu Google Scholar incelememden sonra başlasın.
+
+319
+01:24:08,787 --> 01:24:20,627
+Bu bittikten sonra başlasın. Hatta bir gün sonra başlasın. Ben Google Spor inceleyeyim, bitsin. Bir gün sonra da ben danışmanımla toplantı gerçekleştireyim.
+
+320
+01:24:22,087 --> 01:24:33,347
+Dörtte gireyim. Hatta ben Springer Link'in bu veri tabanı inceledikten sonra başlasın diyorum. Buna herhangi bir öteleme eklemiyorum.
+
+321
+01:24:35,636 --> 01:24:36,516
+Elenem!
+
+322
+01:24:43,699 --> 01:24:45,420
+Bu şekilde yaptık.
+
+323
+01:24:49,716 --> 01:24:58,256
+Tamamdır. Daha sonra, ben bunu eklememişim galiba, sütun ekle diyorum.
+
+324
+01:25:02,771 --> 01:25:09,192
+Bir dakika arkadaşlar, küçüktüm. Evet, eklemişim. Burada da benim şimdi literatür taramasını bir olarak algılıyordu.
+
+325
+01:25:09,583 --> 01:25:15,043
+Daha sonra ne yaptı? Bunları 1, 1, 1, 2, bunları 6 numaraları olarak ekledi.
+
+326
+01:25:15,644 --> 01:25:19,943
+Ben şimdi biçime geldim. Benim kritik görevlerim ve bolluklarım vardı.
+
+327
+01:25:20,064 --> 01:25:23,543
+Gördüğünüz gibi burada hiçbir görevi kritik görev olarak almadı.
+
+328
+01:25:24,043 --> 01:25:31,503
+Ben kritik görevlerim ve bolluklarım görünsün istiyorsam, biçimden gelip kritik görevler ve bolluğu işaretlemem gerekiyor.
+
+329
+01:25:31,503 --> 01:25:33,203
+Şu an gördüğünüz gibi.
+
+330
+01:25:33,908 --> 01:25:51,988
+Mesela maviler benim kritik olmayan görevlerimde, kırmızılar kritik olan görevlerim. Şurada Ali'nin yaptığı Springer veritabanı araştırmasında bir bolluk işlemim var. Bunu da görüyorsunuz. Bu adıma kadar herhangi bir sorunuz var mı arkadaşlar?
+
+331
+01:25:53,847 --> 01:25:59,068
+Hocam, benim danışmanın toplantısına koyduğumuz öncüyle alakalı bir sorun var.
+
+332
+01:25:59,956 --> 01:26:01,796
+Şunu mu? Bu öncü.
+
+333
+01:26:01,796 --> 01:26:11,695
+Evet. İki tane öncü koşul koyduk galiba ona. Onlar iki farklı öncü olunca ayarlanıyor.
+
+334
+01:26:12,615 --> 01:26:23,216
+Şöyle bir şey. Şundan iki farklı öncül koydum. İkisi de bittikten sonra başlasın demek senin danışman toplantı. Yani bu iki tane veri tabanı incelemem bitsin.
+
+335
+01:26:23,796 --> 01:26:37,096
+Daha sonra başlayayım istedim. Şu bir gün ötelemeyi de size bu bolluğu göstermek için yaptım. Yani bolluğun nasıl oluşturulacağını, şimdi böyle bir örnek oluşturabilmek için yaptım açıkçası.
+
+336
+01:26:38,420 --> 01:27:04,880
+Yani şu bir gün ötelemeyi eklemeyi de bilirdim. Derdim ki işte benim Google Sikoları incelemem bitsin, bittikten sonra başlasın. İşte Springer veri tabanını inceledikten sonra da başlasın deyip direkt 4-5 de yazabilirdim. Ama şu öteleme miktarını görün. Yani böyle bir şeyi de oluşturabilirsiniz öncülerde. O yüzden göstermek istiyorum. Yani şuradaki oluşan bolluk, şu bir gün ötelemeden dolayı bir oluşuyor bolluk.
+
+337
+01:27:06,355 --> 01:27:07,675
+Anladım, teşekkürler.
+
+338
+01:27:11,380 --> 01:27:15,739
+Yine bir sorunuz varsa arkadaşlar, atabilirim.
+
+339
+01:27:17,720 --> 01:27:18,840
+Buyurun dinliyorum sizi.
+
+340
+01:27:18,899 --> 01:27:23,239
+İlk paramalarda Ali'nin işi kritikteyken, Veli'ninki kritik gözüküyor. Onun sebebi nedir?
+
+341
+01:27:25,620 --> 01:27:26,680
+Bakıyorum hemen.
+
+342
+01:27:33,971 --> 01:27:51,171
+Bu öncülerden dolayı olabilir. Bak şimdi, Ali'nin ki bittikten sonra başlayacak. Veli'nin ki de 3 gün sürüyordu Veli'nin yaptığı iş. Daha sonra Veli Google Scholar incelemesine de başlayacak.
+
+343
+01:27:51,171 --> 01:27:58,391
+Bunun da kritik olduğu için bunun süresinden dolayı. 4 gün dedim buna kritik görevler oluşması için.
+
+344
+01:28:02,739 --> 01:28:07,139
+Bu dört gün sürecekti. Bunun da öncülü üçüncü görevde.
+
+345
+01:28:10,600 --> 01:28:17,799
+Yani hocam Ali'nin ilk yaptığı iş aslında gecikse bile Ali'nin boş vakti olduğu için fazladan kritik olmuyor değil mi?
+
+346
+01:28:18,279 --> 01:28:22,559
+Evet. Bu kritik görevleri verdiğim gün sürelerine göre de ayarlıyor.
+
+347
+01:28:24,372 --> 01:28:40,352
+MS Project. Yani şöyle bir şey var. Aslında belki bu planlamayı kendimiz yapsaydık direkt kritik görevleri biz kendimiz göremeyebilirdik ama burada MS Project üzerinden gün ayarlamalarını biz kendimiz, günleri biz kendimiz giriyoruz.
+
+348
+01:28:40,352 --> 01:28:45,352
+Hatta öncüllerini de biz kendimiz belirliyoruz. Öncülleri belirledikten sonra...
+
+349
+01:28:46,036 --> 01:29:10,296
+MS Project bize bu hangi görevin kritik olduğunu, bolluk sürelerini kendisi belirliyor. Burada da yapmak istediğimiz, bu öncüleri verdik ki, kritik görevler oluşsun, aynı zamanda bolluklar oluşsun. Mesela şu bir gün ötelemeyi de onun için verdik. Verdiğimiz örnekte, slide'da gösterilen örnekleri de görebilin diye.
+
+350
+01:29:12,180 --> 01:29:19,280
+İsterseniz siz mesela uygulamadan sonra bunları değiştirip, öncülleri değiştirip deneyebilirsiniz.
+
+351
+01:29:19,479 --> 01:29:21,659
+Hani kritik görev oluşup oluşmama durumunu.
+
+352
+01:29:26,804 --> 01:29:34,484
+Daha sonra, burada sorunuz yoksa arkadaşlar, diğer adıma geçeceğim. Sorunuz varsa alabilirim.
+
+353
+01:29:39,380 --> 01:29:41,200
+Sorunuz yoksa geçiyorum.
+
+354
+01:29:44,200 --> 01:29:54,659
+Ne yapalım? Şimdi biz literatür tarımasını yaptık. Görüntü işlediğimizi varsayalım. Veri seti oluşturalım. Veri seti oluşturma adımına gelelim.
+
+355
+01:30:08,243 --> 01:30:22,123
+Bunu otomatik olarak belirlesin zamanını yine. Burada günü girmiyorum. Bu günü ben alt adımım, alt kırımları girdikten sonra veri suyeti oluşturma adımının gününü kendisi hesaplıyor.
+
+356
+01:30:23,804 --> 01:30:29,804
+Bunun altında görüntü toplama diyelim. Bu sizin yapacağınız çalışmaya göre değişir buradaki adımlar.
+
+357
+01:30:33,876 --> 01:30:48,155
+Şu an mesela bir bitirme projeleriniz veya ara projeleriniz çok büyük ölçekli veri projeler olmadığı için belki de hani bu zamanı rahat bir şekilde kontrol ediyor olabilirsiniz.
+
+358
+01:30:50,579 --> 01:31:00,600
+Ama daha sonra işe başladığınızda, bir projeye girdiğinizde bu işte Gantt diagramları sizin için daha önemli hale gelecek.
+
+359
+01:31:00,600 --> 01:31:14,020
+Yani sonuçta çalışan kişi sayısı fazla, herkes farklı işleri gerçekleştiriyor. Bunları kontrol etmek Gantt diagramı üzerinde daha kolay.
+
+360
+01:31:15,980 --> 01:31:17,520
+Bu arada 8 gün diyelim.
+
+361
+01:31:23,155 --> 01:31:27,675
+Görüntü toplanımız danışman toplantısından sonra başlasın.
+
+362
+01:31:28,015 --> 01:31:29,915
+Danışmanımız da toplantımızı gerçekleşecek.
+
+363
+01:31:29,935 --> 01:31:31,735
+Bak burada ID numaralarını veriyorum.
+
+364
+01:31:32,855 --> 01:31:39,835
+ID numarasını verdiğimde işte görüntü toplama işlemi danışman toplantısından sonra başlayacak.
+
+365
+01:31:42,035 --> 01:31:46,595
+Daha sonra da diyorum ki görüntü toplama işlemi.
+
+366
+01:31:47,220 --> 01:31:53,199
+Görüntü etiketleme, pardon görüntü toplama demişim yine buna. Görüntü etiketleme diyecektim.
+
+367
+01:31:59,412 --> 01:32:16,612
+Görüntü etiketleme diyorum. Görüntü etiketleme ile görüntü toplamı işim diyorum benim aynı anda devam etsin. Yani başlangıçları aynı olsun. Ona da geliyorum buraya. Sekiz diyorum. Buraya değil.
+
+368
+01:32:24,916 --> 01:32:43,036
+Başlangıç, başlangıç diyeyim buna. Başlangıçları aynı olsun. Yani ben görüntülerimi toplayıp aynı zamanda etiketlemeye devam edeyim. Bir yandan görüntü toplayayım, bir yandan da görüntülerimi etiketlemeye devam edeyim. Bunlar aynı zamanda birbirleriyle devam etsin istiyorum.
+
+369
+01:32:43,036 --> 01:32:47,175
+Bu şekilde devam ediyor.
+
+370
+01:32:49,524 --> 01:32:57,243
+Daha sonra görüntü topladım, görüntülerimi etiketledim. Ben bunları yaptıktan sonra ben bir ara rapor yazımına başlayayım.
+
+371
+01:33:06,420 --> 01:33:09,539
+Bu narsun, bu benim temel adımım.
+
+372
+01:33:10,539 --> 01:33:12,920
+Ara rapor yazılımında özet, giriş.
+
+373
+01:33:19,988 --> 01:33:22,467
+Bunların hepsi otomatik zamanlanmış olsun.
+
+374
+01:33:25,488 --> 01:33:27,688
+Özet giriş için 4 gün diyorum.
+
+375
+01:33:30,347 --> 01:33:32,927
+Otomatik olarak başlangıç ve bitişleri etkileniyor.
+
+376
+01:33:32,927 --> 01:33:37,927
+Daha sonra metodumuzu yazalım raporda.
+
+377
+01:33:39,796 --> 01:33:54,156
+Bu da otomatik zamanlanmış bizim için. Bunları bir girintileye bakalım. Bunlar ara rapor yazımının alt işlemleri. Bunları bu şekilde girintileyelim. Şu yukarıdan yapıyorum onu biçim içerisinden. Şurada gördüğünüz gibi.
+
+378
+01:33:57,496 --> 01:34:00,656
+Metot yazımını da üç gün sürtsün.
+
+379
+01:34:01,939 --> 01:34:08,079
+Bunu otomatikman yine ayarlıyor tahilleri benim verdiğim sürelere göre. Birazdan da bunların öncülerini vereceğim.
+
+380
+01:34:10,379 --> 01:34:12,399
+Rapor teslimi diyelim buraya da.
+
+381
+01:34:21,235 --> 01:34:35,035
+Rapor tesliminde ben ne yapacağım? Bunu danışmanıma raporumu teslim edeceğim. Bu yine bizim ara rapor yazımındaki bir kilometre taşımız olsun. Bunun da tarihi otomatik olarak zamanlanmış olsun.
+
+382
+01:34:36,035 --> 01:34:41,155
+Rapor teslimi diyorum. 11-12.
+
+383
+01:34:45,011 --> 01:34:51,991
+Yani benim rapor testimi, dur bir dakika bunu yapmadan önce, ilk önce biz ara rapor yazımımıza bir öncül verelim.
+
+384
+01:34:55,475 --> 01:35:21,595
+Buradaki öncül ile diyeyim ki ben 9, bizim 9 kimlik numarasına ait olan neydi? Görüntü etiketlemeydi. Görüntü etiketleme bittikten sonra başlasın, bir gün ötelemem olsun diyeyim. Daha sonra da 8 bittikten sonra da başlasın. Yani iki tane öncül veriyorum. Yine buraya bir öteleme koydu.
+
+385
+01:35:22,739 --> 01:35:50,460
+Tamam diyorum. Yani benim ara rapor yazım işlemim görüntü toplam ve görüntü etiketlemeden sonra başlayacak. Bunları aynı anda olsun istemiyorum. Bir öncül tanımladım. Çünkü bunların hepsini yaptıktan sonra ben ne yapacağım? Ara raporuma ekleyeceğim. Yani bu işlemlerimin bitmiş olması gerekiyor zaten. Buraya da bir tane bir gün öteleme koydum. Bunu sizin yapacağınız projeye göre tabii ki de bu öncüller değişebilir. Yapacağınız adımlara göre değişebilir.
+
+386
+01:35:50,739 --> 01:35:59,359
+İşlerin paralelliğine göre değişebilir. Bunları siz projenize uygun olarak gerçekleştireceksiniz bu öncüleri. Yani projenize uygun olarak vereceksiniz.
+
+387
+01:36:01,380 --> 01:36:09,760
+Daha sonra ben rapor tesliminde ne yapmam gerekiyor? Benim özet giriş metot kısımlarımı yazdıktan sonra gerçekleştirmem gerekiyor.
+
+388
+01:36:11,340 --> 01:36:16,880
+Bunu elimle de girebilirim. Elimle şu iki noktalı virgül koyduğumda bunu iki öncülü algılıyor.
+
+389
+01:36:18,963 --> 01:36:25,144
+Bu içip tıklayarak da girebiliyordunuz öncüleri. Mesela çip tıkladığımda bu ikisini öncün olarak almış.
+
+390
+01:36:27,403 --> 01:36:39,663
+En sonunda ne yapayım ben? Uygulamamı gerçekleştireyim. Ben ara raporumu danışmanıma teslim etmiştim rapor tesliminde. Daha sonra da uygulama gerçekleştireceğim.
+
+391
+01:36:40,923 --> 01:36:45,163
+Uygulamam da benim 20 gün sürsün.
+
+392
+01:36:46,931 --> 01:36:50,331
+Bunu da ne yapıyordu? Otomatik olarak zamanlıyordu arkadaşlar.
+
+393
+01:36:56,819 --> 01:37:08,819
+Ne yapacağım? Ben şimdi burada gördüğünüz gibi şöyle geliyorum. O işlemleri tamamladım. Çok fazla farklı adımlar da ekleyebilirdik. Ama hani siz...
+
+394
+01:37:09,587 --> 01:37:19,187
+Daha rahat görün, yani bu kısa bir özet gibi oldu aslında bir itirme projesi. Bunları daha farklı adımlara bölebilirsiniz, daha farklı kırılımlar ekleyebilirsiniz.
+
+395
+01:37:19,367 --> 01:37:26,347
+İşte verizleti toplama kısmında, rapor yazımı kısmında. Ben sadece işte bazı adımları ekledim, çok detaylandırmadım.
+
+396
+01:37:26,931 --> 01:37:37,371
+Burada görüyorsunuz arkadaşlar, mesela şeyde şunları, bunlar 13 Mart 2023 demiştim, mesela pazartesi, salı, çarşamba. Bunlar günleri ifade ediyor burada.
+
+397
+01:37:37,371 --> 01:37:40,371
+Bugünlerde cumartesi, pazarı...
+
+398
+01:37:41,011 --> 01:37:53,371
+gri olarak gösteriyor. Yani cumartesi, pazar günlerini çalışmıyor olarak, MS Project otomatik olarak cumartesi, pazar günlerinde çalışılmıyormuş gibi bir planlama gerçekleştiriyor.
+
+399
+01:37:53,851 --> 01:37:58,371
+Ben ama ne yapacağım şimdi bu çalışma günlerine cumartesi, pazarı da ekleyeceğim.
+
+400
+01:37:58,703 --> 01:38:11,543
+Bu ne olacak? Ekledikten sonra benim çalışma sürem azalmayacak. Yani günlerim azalmayacak. Ben aynı gün çalışmış olacağım proje için. Fakat başlangıç ve bitiş tarihlerimiz değişmiş olacak. Onu nasıl yaptığımıza bakalım.
+
+401
+01:38:13,983 --> 01:38:19,723
+Kendiniz de projenizde öğrenci olduğunuz için cumartesi pazarda çalışıp projenizi tamamlamanız gerekiyor.
+
+402
+01:38:19,723 --> 01:38:25,723
+Çalışma zamanı değiştir diyorum. Geldim buraya. Çalışma haftaları diyorum.
+
+403
+01:38:26,804 --> 01:38:34,043
+Varsayılan olarak pazartesi, salı, çarşamba, perşembe, cuma çalışılıyormuş olarak düşünüyor MS Project.
+
+404
+01:38:34,463 --> 01:38:39,724
+Ben geleceğim, cumartesi içinde çalışma saatleri ekleyeceğim buraya.
+
+405
+01:38:43,380 --> 01:38:44,440
+Ne yazmıyor?
+
+406
+01:38:45,440 --> 01:38:49,500
+Bu belirli çalışma zamanlarını benim ayarlamam gerekiyor.
+
+407
+01:38:56,115 --> 01:38:58,496
+Buraya istediğiniz saat dilimlerini girebilirsiniz.
+
+408
+01:39:07,380 --> 01:39:20,860
+Tamam diyor. Aynı şekilde pazar günü için, cumartesi günü için yapmıştım. Yaptığım şeyi pazar günü yapacağım. Bunu işaretlemem gerekiyor. Bu belirli çalışma zamanları için gün ayarlayı işaretlemem gerekiyor saat girebilmem için.
+
+409
+01:39:31,507 --> 01:39:32,947
+Gavur ediştirme yaşam.
+
+410
+01:39:53,619 --> 01:40:12,519
+Tamam diyorum. Buraya da tamam dedikten sonra gördüğünüz gibi cumartesi, pazar günlerindeki gıgrilik kalktı. Proje bitiş tarihimde değişmiş oldu. Yani benim projemin ne kadar gün süreceği değişmedi, sadece bitiş tarihimde bir değişiklik olmuş oldu.
+
+411
+01:40:14,739 --> 01:40:22,259
+Daha sonra bir kaynak sayfasına gidelim arkadaşlar. Benim kaynaklarım neydi? Kişi olarak Alibe Veli'ydi.
+
+412
+01:40:24,259 --> 01:40:29,299
+Dosya değil, neyi görelim. Buradan. Yok değil.
+
+413
+01:40:33,171 --> 01:40:45,351
+Gant grafiği, kaynak sayfası diyorum. Burada benim otomatik olarak bu Ali ile Veli'yi kaynak olarak dediğimde buraya kaynak adı olarak almış. Bunların baş ahlerinde kısaltma olarak kullanmış.
+
+414
+01:40:45,951 --> 01:40:55,051
+Burada haftalık bunların çalışma için aldıkları ücretler var. Buraya ne diyeyim kafamı atıyorum şu an 30 dedem buraya.
+
+415
+01:40:59,699 --> 01:41:01,039
+Buraya da 30 diyorum.
+
+416
+01:41:02,260 --> 01:41:02,819
+Girdim.
+
+417
+01:41:04,939 --> 01:41:07,659
+Daha sonra Gant çizelgeme geri geldim.
+
+418
+01:41:07,659 --> 01:41:10,500
+Mesela Ali üzerine tıkladığımda,
+
+419
+01:41:12,399 --> 01:41:13,019
+bir dakika,
+
+420
+01:41:15,636 --> 01:41:33,636
+Kaynaklar diyorum. Mesela Ali'nin bu iş için maliyeti 18 olmuş. Yani haftalık ben ücret girdiğimde saatlik olarak maliyetlerinde kendi Gantt çizagesi üzerinden görebiliyorum. Saatlik olarak maliyetleri ya da günlük olarak saatlik olarak maliyetleri kendisi belirliyor.
+
+421
+01:41:33,636 --> 01:41:43,196
+3 gün çalışmış bunun maliyeti 18. Haftalık 30 girmiştim. Bu şekilde maliyetleri de görebiliyoruz her bir iş için.
+
+422
+01:41:44,532 --> 01:42:04,072
+Biz ne yapmıştık? Şimdi ben şeyi anlatmıştım. İlk girişte PERT diyagramını da anlatmıştım. Gant diyagramından PERT diyagramına nasıl geçeceğiz ona da bakalım. Gant diyagramını da şurada detaylı olarak bir göstereyim. Çünkü şu şeyden zoomdan göremiyordum. Şöyle biraz genişleteyim.
+
+423
+01:42:05,072 --> 01:42:11,852
+Bir yana kaydırarak oluşturulan Gant diyagramını da göstereyim. Şurada bolluklarımız var.
+
+424
+01:42:12,500 --> 01:42:16,799
+Şu her kalın çizgiyle gösteren ifade bizim her bir adımımızı gösteriyor.
+
+425
+01:42:17,039 --> 01:42:19,299
+Yani şurası veri seti oluşturma kısmı.
+
+426
+01:42:20,419 --> 01:42:22,759
+Şurası da benim ara rapor yazım kısmı.
+
+427
+01:42:23,339 --> 01:42:25,179
+Bunlar bizim kilometre taşlarımız.
+
+428
+01:42:27,179 --> 01:42:29,679
+Bu şekilde görüyoruz arkadaşlar.
+
+429
+01:42:30,539 --> 01:42:36,639
+Daha sonra ben Gant grafiğinden fert diyagramına nasıl geçiş yapıyorum ona da bakalım.
+
+430
+01:42:37,171 --> 01:42:45,011
+Türkçe olarak burada A diyagramı yazıyor. İngilizce olarak kullanıyorsanız PERT diyagramı yazıyor olabilir. Şu an bende Türkçe var.
+
+431
+01:42:46,251 --> 01:42:57,311
+A diyagramı dediğimizde de bunu PERT diyagramına dönüştürüyor. İşte projenin ismisi var burada. Kaç gün sürdüğü, başlangıç tarihi ve bitiş tarihi.
+
+432
+01:42:58,231 --> 01:43:02,971
+Daha sonra literatür taraması var. Buradaki gerçekleştiren adımları gösteriyor.
+
+433
+01:43:04,020 --> 01:43:08,940
+Veri seti oluşturmayı gösteriyor. Bunların incelediğim kaynaklar var.
+
+434
+01:43:10,760 --> 01:43:18,000
+Mesela burada fark etmişsinizdir, PERT diagramında, şunu bir büyütteyim ilk önce de size rahat görün.
+
+435
+01:43:18,580 --> 01:43:26,540
+PERT diagramında bazı şeylerin paralelliklerini göremiyoruz. Net bir şekilde işlemlerin paralelliğini göremiyoruz.
+
+436
+01:43:26,540 --> 01:43:28,540
+Sadece bunlar arasındaki ilişkileri görebiliyoruz.
+
+437
+01:43:29,216 --> 01:43:42,796
+IEEE'den sonra Smirnger link veritabanının incelenmesi gerektiğini, daha sonra danışman toplantısının gerçekleştiğini görebiliyoruz ama danışman toplantısı da mesela bizim bir kilometre taşımızdı, onun şeklini farklı gösteriyor.
+
+438
+01:43:42,856 --> 01:43:49,596
+Yine bir ERMAS'a benziyor diyebiliriz. Bu şekilde bir PERT diyagramı oluşturabiliyoruz.
+
+439
+01:43:52,307 --> 01:44:09,007
+İşler arasındaki, yani gerçekleştirilmiş işler arasındaki ilişkileri PERT diyagramında görebiliyoruz. Fakat paralellik konusunda Gant kadar iyi değil. Gant diyagramında işlerin paralelliğini daha rahat görebiliyoruz. Kaynak atamasını daha rahat görebiliyoruz.
+
+440
+01:44:11,252 --> 01:44:20,212
+Daha net bir, yani yapacağımız görev için daha net bir şekilde bütün görevlerin paralelliğini, sürelerini daha rahat görüyoruz.
+
+441
+01:44:20,612 --> 01:44:24,412
+Buraya tıkladığımda da Gantt diagramıma geri dönebiliyorum.
+
+442
+01:44:25,892 --> 01:44:29,372
+Bu şekilde arkadaşlar, eğer bir sorunuz varsa alabilirim.
+
+443
+01:44:29,716 --> 01:44:52,956
+Siz de kendiniz de deneyebilirsiniz. Bu arada öğrenci maillerinizle ücretsiz olarak indirebiliyorsunuz MS projekti. Kendiniz de indirip hatta ara bitirme projelerinde de kullanabilirsiniz. Raporlarınıza zaten eklemeniz isteniyor. Bu şekilde kaynak atamalarınızı rahat bir şekilde yapabilirsiniz. Belki de şu an farklı projelerde çalışıyor olabilirsiniz.
+
+444
+01:44:53,456 --> 01:44:58,076
+O projelerde de bu Gant diagramından yararlanabilirsiniz arkadaşlar.
+
+445
+01:44:58,796 --> 01:45:03,276
+Sorularınız varsa alabilirim. Beni dinlediğiniz için de teşekkür ederim.
+
+446
+01:45:05,716 --> 01:45:07,376
+Bir sorum olacaktı.
+
+447
+01:45:07,756 --> 01:45:08,276
+Buyur.
+
+448
+01:45:09,316 --> 01:45:13,116
+Kullandığınız dosyaları ve silahları acaba paylaşabilir misiniz?
+
+449
+01:45:13,656 --> 01:45:15,476
+Tamam, paylaşırım.
+
+450
+01:45:17,300 --> 01:45:21,840
+Oya hocaya, Oya hocaya iletirim, Oya hocada sizinle paylaşır.
+
+451
+01:45:22,960 --> 01:45:31,200
+Ya da öyle yapmayalım, ben kendi sayfamdan paylaşırım, Avesiz sayfamdan, oradan alırsınız arkadaşlar.
+
+452
+01:45:33,300 --> 01:45:38,860
+Siz de kendiniz deneyebilirsiniz, sonuçta bitirme projelerinde de kullanacaksınız bunu, Gantt diagramını.
+
+453
+01:45:39,360 --> 01:45:44,180
+Kendiniz de deneyebilirsiniz, öncüleri değiştirebilirsiniz, kendi projelerinize göre.
+
+454
+01:45:46,579 --> 01:45:48,840
+Sorularınız varsa alabilirim arkadaşlar.
+
+455
+01:45:50,320 --> 01:45:52,720
+Yoksa da paylaşımı durduracağım.
+
+456
+01:45:57,300 --> 01:45:59,440
+Umarım sizin için de verimli geçmiştir.
+
+457
+01:46:08,500 --> 01:46:12,340
+Beni dinlediğiniz için teşekkür ederim. İyi günler arkadaşlar.

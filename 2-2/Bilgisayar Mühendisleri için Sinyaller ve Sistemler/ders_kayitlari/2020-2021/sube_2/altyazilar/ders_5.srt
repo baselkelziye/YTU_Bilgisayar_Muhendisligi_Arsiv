@@ -1,0 +1,3207 @@
+1
+00:10:15,572 --> 00:10:18,012
+Evet arkadaşlar, merhabalar, hoş geldiniz.
+
+2
+00:10:28,083 --> 00:10:30,083
+kaç kişiyiz? 50 kişi olmamışız.
+
+3
+00:10:35,316 --> 00:10:38,696
+Pekala, şimdi başlayalım.
+
+4
+00:10:49,587 --> 00:10:53,887
+Geçen hafta 4. chapter'a başlamıştık diye hatırlıyorum.
+
+5
+00:10:55,668 --> 00:10:59,028
+Sistemlerin özelliklerinden konuşmuştuk en son.
+
+6
+00:11:01,447 --> 00:11:03,048
+Şöyle ekranı paylaşayım.
+
+7
+00:11:06,247 --> 00:11:07,827
+Bu slide'a başladık değil mi arkadaşlar?
+
+8
+00:11:11,604 --> 00:11:13,544
+Başladık, linear etiyle kaldık.
+
+9
+00:11:13,864 --> 00:11:14,084
+Tamam.
+
+10
+00:11:15,704 --> 00:11:19,663
+Şimdi bir eski, önceki slide'dan birkaç soru gelmişti.
+
+11
+00:11:20,364 --> 00:11:22,084
+Onları en sona bırakayım o zaman.
+
+12
+00:11:23,224 --> 00:11:24,544
+Bu slide'ı hızlıca bitirelim.
+
+13
+00:11:25,004 --> 00:11:26,224
+Soru çözeceğiz.
+
+14
+00:11:26,744 --> 00:11:27,344
+Şu ana kadar.
+
+15
+00:11:28,544 --> 00:11:28,944
+Ne kadar?
+
+16
+00:11:29,984 --> 00:11:31,384
+Ondan sonra dersimizi bitiririz.
+
+17
+00:11:31,384 --> 00:11:33,444
+Belki bir buçuk saatte de biter arkadaşlar.
+
+18
+00:11:33,704 --> 00:11:35,924
+Dersin ilerlemesine bağlı olarak.
+
+19
+00:11:36,884 --> 00:11:39,344
+Şimdi bir sonraki chapter'a baktığımda o neymiş?
+
+20
+00:11:41,563 --> 00:11:49,484
+Şimdi impulse response ile alakalı sonraki chapter birazcık arkadaşlar şeye kaçıyor, elektronikçilerin anlamına kaçıyor.
+
+21
+00:11:50,364 --> 00:11:52,524
+Sürekli zaman üzerinden gidiyor hep şeyler.
+
+22
+00:11:53,903 --> 00:12:00,344
+Konvolüsyon falan anlatacağız ama hep ayrık zamanlı şey yani bilgisayarla alakalı olan kısmı...
+
+23
+00:12:01,203 --> 00:12:06,723
+ikinci planı atmış. Mesela burada da sürekli zaman çoğunlukta kalmış. Diskret, konvolüsyon falan var.
+
+24
+00:12:07,803 --> 00:12:15,883
+Zaten beşinci slide'ı sizlerle paylaşmadım diye hatırlıyorum. Beşinci ders notunu. Bunlar da bazı revizyonlara gideceğiz.
+
+25
+00:12:15,883 --> 00:12:27,339
+Çünkü bugün biraz daha hocayla konuştuk da hep ters içeriği şey üzerinden giriyor. Sürekli üzerinden giriyor.
+
+26
+00:12:27,539 --> 00:12:31,699
+Dördüncü slide'ı paylaşmış olmam lazım şeye bakarsak.
+
+27
+00:12:34,639 --> 00:12:36,679
+Ders duvarına baktınız mı?
+
+28
+00:12:38,539 --> 00:12:39,860
+Neredeydi? Şuradaydı.
+
+29
+00:12:45,683 --> 00:12:47,683
+SAS 0 1 2 3
+
+30
+00:12:51,604 --> 00:12:58,844
+3'e kadar var. Tamam, 4'ü de isterseniz şimdi şey yapabilirim arkadaşlar. Hani not almak istiyorsanız üzerine falan.
+
+31
+00:12:58,844 --> 00:13:02,564
+Gerçi çıktı almanız gerekir ama ben bunu PDF yapayım.
+
+32
+00:13:18,451 --> 00:13:20,291
+yap yapamadık. Başka bir şey oldu.
+
+33
+00:13:34,323 --> 00:13:36,323
+Evet, 5 ve sonrakiler.
+
+34
+00:13:37,323 --> 00:13:39,323
+Burada çok bir düzenleme yok.
+
+35
+00:13:52,596 --> 00:13:56,056
+Nasıl bir hata oluşmuş? Bir dakika eksik bir şey yüklemeyin de.
+
+36
+00:14:02,227 --> 00:14:07,227
+Uyarı verdi ama arkadaşlar, bakarsınız eğer derstekiyle bir sıkıntı varsa uyuşmazlık.
+
+37
+00:14:10,227 --> 00:14:13,067
+Bunu şimdi paylaşıyorum arkadaşlar, bir dakika.
+
+38
+00:14:17,812 --> 00:14:22,572
+İşlediğimizde bir uyumsuzluk varsa söylersiniz. Tekrar yayın veririm. Şimdi şuradan.
+
+39
+00:14:49,203 --> 00:14:58,503
+Dersin içeri ilerleyen haftalarda böyle devre teorisinin biraz daha ileri versiyonuna dönüşmüş. Onun için biz... Ne oldu?
+
+40
+00:15:01,663 --> 00:15:13,663
+Yukarıya geliyormuş. Tamam, şu an indirebiliyor olmanız lazım arkadaşlar. Onun için bazı revizyonlar yapmamız gerekiyor. Yoksa ders çok anlamsız bir yere gidiyor.
+
+41
+00:15:16,244 --> 00:15:17,204
+Şimdi arkadaşlar
+
+42
+00:15:23,220 --> 00:15:37,139
+Sinyaller ve özelliklerinden, yani devre teorisi kısmen, yani bu dersin içerisinde de çok böyle devre ile işimiz yok.
+
+43
+00:15:38,720 --> 00:15:49,420
+Şimdi devre teorisi işin analog tarafı, orada inputlar ve outputlar analog olduğu için buradaki konuları anlamanızda devre teorisi bilmeniz fayda olur, fayda sağlar.
+
+44
+00:15:50,035 --> 00:15:53,995
+Ama yani bu ders tamamen %100'le ona bağlı bir şey değil.
+
+45
+00:15:55,075 --> 00:15:58,375
+Devre teorisi almadan bu dersi almanız, bilmiyorum, o da şey olmuş tabii.
+
+46
+00:16:00,055 --> 00:16:01,535
+Bilmiyorum kaçıncı sınıfsınız.
+
+47
+00:16:02,675 --> 00:16:08,035
+Genellikle bunlar birbirini takip eden dersler ama ciddi anlamda bir ön koşul değil.
+
+48
+00:16:09,795 --> 00:16:12,015
+Sistemlerden bahsettik arkadaşlar.
+
+49
+00:16:12,535 --> 00:16:13,415
+Bir sistem neydi?
+
+50
+00:16:15,096 --> 00:16:17,096
+Input sinyalini alıp, input'u alıp.
+
+51
+00:16:17,683 --> 00:16:31,683
+Yani sinyal dediğimiz şeyde bir bilgi, data olarak kabul edecek olursak, onu alputa dönüştüren bir yapı, transformer.
+
+52
+00:16:33,683 --> 00:16:38,683
+Aynı zamanda bunu bir matematikçi bakış açısıyla bakarsak, bunu bir fonksiyon olarak söylemiştik.
+
+53
+00:16:39,764 --> 00:16:49,064
+Bu çalışmalarımızda daha çok Single Input, Single Output olarak kullanacağız. İşte aşağıdakiler notasyonlarımızdı.
+
+54
+00:16:49,663 --> 00:16:54,764
+Block diagramından bahsettik. Block diagramı verinin girişinin alakalıydı.
+
+55
+00:16:55,163 --> 00:17:06,864
+Burada bir sistem, inputun önündeki katsayıya göre eğer birden büyük bir şeyse bu Amplifier oluyordu.
+
+56
+00:17:07,539 --> 00:17:17,539
+Birden küçükse Attenuator sönümlendirici diye şey yapıyorduk. Sıfırdan küçükse de Inverting yapıyordu.
+
+57
+00:17:17,539 --> 00:17:28,907
+İşte 1-5 gibi sinyali Inverter'a verirsek artı 5 yapabiliyoruz gibi veya hem Invert edip hem Amplify veya Attenuator etme gibi bir durumumuz da vardı.
+
+58
+00:17:31,251 --> 00:17:52,511
+Bundan sonra yaptığımız şey bir Differentiator ve Integrator işlemi. Şimdi bunlar arkadaşlar dediğim gibi hep sürekli zaman, zamana bağlı şeyler. Biz bunun daha çok neyle ilgileneceğiz? Ayrık zamanıyla da ilgileneceğiz. Çünkü kodlamada karşımıza daha çok bunlar gelecek bilgisayar mühendisi olarak.
+
+59
+00:17:53,107 --> 00:18:01,028
+Bir sürekli zaman sisteminde türev böyle alınırken, ayrık zamanda türevin tanımından yola çıkarak çok rahat alınabilir.
+
+60
+00:18:02,048 --> 00:18:06,387
+Bizim ayrık zamandaki verimiz nasıl temsil ediyordu? Şöyleydi değil mi arkadaşlar?
+
+61
+00:18:07,987 --> 00:18:08,748
+Xn idi.
+
+62
+00:18:09,667 --> 00:18:13,268
+Şimdi ben bu xn'in türevini almak istersem şöyle bir şey yapabiliriz.
+
+63
+00:18:13,268 --> 00:18:16,327
+Şimdi türev tanımından, şuraya yazalım.
+
+64
+00:18:19,380 --> 00:18:21,940
+Bu ekran da biraz aslında büyük olsa daha yolcu.
+
+65
+00:18:23,000 --> 00:18:26,519
+İşte böyle bir fonksiyon ayrık da olabilir, sürekli olabilir.
+
+66
+00:18:27,340 --> 00:18:30,519
+İşte bir noktadaki türevi bulurken belli bir miktar artım veriyordum.
+
+67
+00:18:30,640 --> 00:18:33,039
+İşte şuraya x noktası diyelim.
+
+68
+00:18:34,740 --> 00:18:38,280
+fx'e belli bir h kadar artırım gerçekleştiğinde
+
+69
+00:18:38,280 --> 00:18:45,380
+bu fx'in genliğindeki değişimin fx'deki değişime oranı
+
+70
+00:18:46,003 --> 00:18:48,563
+Biz aslında türevi veriyordu. Yani şöyle bir şeydi.
+
+71
+00:18:49,523 --> 00:18:52,903
+Tabii şuradaki fonksiyonun değerine fx diyeceğiz.
+
+72
+00:18:54,103 --> 00:18:57,243
+Şuradakine de ne diyeceğiz? fx artı h diyeceğiz.
+
+73
+00:18:58,683 --> 00:19:02,623
+Şöyle diyeceğiz. x artı h'taki değişim şöyle gösterilir.
+
+74
+00:19:04,843 --> 00:19:10,683
+x eksenindeki değişim de x artı h eksi x olarak gösterilir.
+
+75
+00:19:11,443 --> 00:19:31,743
+Dolayısıyla doğru yaptık değil mi? Şurası x dedi, şurası da x artı h olur. x artı h'tan x'i çıkartacağız. Bu oranı dikkate aldığımızda, bu sürekli zamanda böyle. Şimdi ayrık zamanda elimizde diziler olduğu için böyle n'ler, x'ler yerine n'ler gelecek.
+
+76
+00:19:31,743 --> 00:19:38,403
+n'ler şimdi kaçar kaçar değişiyor, yani sınırlı sayıda değişiyor, sınırsız değişmiyor, yani çok küçük değişim yok.
+
+77
+00:19:38,640 --> 00:19:48,840
+Burada verebileceğimiz en küçük değişim miktarı, h için 1 olur. Dizinin değişimini birer birer incelersek,
+
+78
+00:20:00,000 --> 00:20:12,940
+H yerine 1 verdiğimizde, niye eksi yerine 1 verdiğimizde diyoruz. Buradan da burası 1-0'dan 1 gelecektir. Yani basit bir şekilde, en kolay bir şekilde dizinin birinci dereceden türevi ne olacak?
+
+79
+00:20:12,940 --> 00:20:17,259
+Xn-
+
+80
+00:20:17,259 --> 00:20:18,340
+Pardon.
+
+81
+00:20:23,316 --> 00:20:47,395
+xn n artı bir, eksi xn olacaktır. Bu şekilde çok rahat bir türev alabiliriz. Yani değişimi incelemek için bu şekilde bir operasyon yapılabilir. Bu bize bir bilgi verici operasyon arkadaşlar. Çünkü hızdaki değişim bize neyi veriyor? Fizikte ivmeyi veriyor. İşte bir sinyal, bir ses.
+
+82
+00:20:48,243 --> 00:20:57,323
+Zamana göre veya ayrık zamandaki en değişkenine göre nasıl değişiyor? Bunu incelemek için basit bir şekilde türevini alabilirsiniz gibi.
+
+83
+00:20:58,163 --> 00:21:03,983
+İntegral işlemiz arkadaşlar, tabii bu türeviye biz çıkarma dersek, integrale de bir anlamda toplama diyeceğiz.
+
+84
+00:21:04,103 --> 00:21:08,603
+Altta kalan alanlardan bahsediyoruz. Sürekli zamanda bu şekilde gösteriliyor.
+
+85
+00:21:09,543 --> 00:21:14,483
+Bir şeyin integralini alırken de aslında topluyoruz. Yani elemanları toplaya toplaya gidiyoruz.
+
+86
+00:21:14,976 --> 00:21:40,135
+kümülatif toplam gibi düşünebiliriz. Bunlara daha sonra örnek olay incelersek bakarız. Shift sistem ne yapıyordu? Normalde bir sinyali, zamanda shift etmek ne demekti? Ötelemek yapmak demekti. Ya ileriye alıyorduk ya da geriye alıyorduk. Burada da eğer bir sisteme böyle bir görev yüklersek,
+
+87
+00:21:41,140 --> 00:21:43,900
+Buna da shift sistem, time shifting sistem diyoruz.
+
+88
+00:21:44,720 --> 00:21:54,840
+Time shifting sistemlerde belli bir zaman gecikmesi veya belli bir zaman öne alması için, işte T gibi bir operatör belirledik, değer.
+
+89
+00:21:57,720 --> 00:22:03,960
+Bu sistem öne almayla veya işte geriye almayla ne oluyor? Yeni bir sinyal üretiyor.
+
+90
+00:22:03,960 --> 00:22:08,500
+Şimdi biz ileride diyeceğiz ki lineer sistemler konuşacağız.
+
+91
+00:22:08,847 --> 00:22:20,248
+Linear sistemlerin genel olarak iki özelliği vardır. Birincisi çarpma özelliği, çarpım sağlık, diğeri toplam sağlık özelliği. İşte o toplam sağlık özelliğini time shifting'e göre test edeceğiz.
+
+92
+00:22:22,708 --> 00:22:30,648
+Konvolüsyon sistemi, bu da çok önemli bir şey. Konvolüsyon arkadaşlar, bir anlamda korelasyondur.
+
+93
+00:22:32,180 --> 00:22:48,700
+Ne demek korelasyon? İki tane bir şey var, verimiz var. Bu iki verinin birbiri arasında bir ilişki var mı? Doğru orantılı veya ters orantılı bir ilişki var mı? Veya bir benzerlik var mı? Onu bulmaya yarıyor.
+
+94
+00:22:49,619 --> 00:22:58,180
+İşte şu benim sinyalim. Bu da, tabi bu orijinal sinyalim. Bu da o orijinal sinyal içerisinde aradığım belli bir başka sinyal.
+
+95
+00:22:58,771 --> 00:23:05,192
+İşte yüz fotoğrafı dersek, yüzün içerisinde göz arayacaksak, şurası gözü ifade ediyor, burası yüzün kendisi.
+
+96
+00:23:06,052 --> 00:23:10,672
+Dome büyük olan şey, verimiz burada, onun içerisindeki arayacağımız küçük bir şey.
+
+97
+00:23:11,511 --> 00:23:18,331
+İşte buna genel olarak Mother Function deniyor.
+
+98
+00:23:19,432 --> 00:23:21,932
+Ondan sonra Filtre deniyor.
+
+99
+00:23:23,132 --> 00:23:25,132
+Kullanılan aramana göre başka ne var?
+
+100
+00:23:25,211 --> 00:23:26,211
+Kernel deniyor.
+
+101
+00:23:29,076 --> 00:23:31,076
+Başka başka ne vardı?
+
+102
+00:23:33,076 --> 00:23:45,076
+Şimdi bunlar aklıma gelenler. Bu dediğim gibi daha küçük aranan sinyal. Nerede arıyoruz? Şu sinyalin içerisinde arıyoruz. Tabi bu sinyalin içerisinde ararken belli bir zaman ötelemesi olacak mı? Olacak.
+
+103
+00:23:45,076 --> 00:23:56,076
+Çünkü şöyle bir sinyal var. O zaman ötelemesini yapmamız lazım. Bu sinyalin başından sonuna doğru işte ne yapacağız? İşte şu aradığımız küçük sinyalle ne yapacağız? Bu sinyali tamamen gezeceğiz.
+
+104
+00:23:56,384 --> 00:24:10,224
+Nerede geziyorsak, bu bize şöyle bir şey verecek mesela, sonuç verecek bu çarpma, bu integralin sonucu. İşte eğer şuna, şuradaki sinyal, ne bileyim, şöyle bir sinyal olsun, küçük bir sinyal.
+
+105
+00:24:10,708 --> 00:24:16,088
+Şimdi bu küçük bir sinyali şuradakilerle çarpıp çarpıp toplarsak ne olur? Şuralarda küçük bir şey elde ediyoruz.
+
+106
+00:24:16,088 --> 00:24:22,228
+Ama şöyle bir bölgeye gelirsek, burada bir pik yaptığını göreceğiz. Daha sonra tekrar yavaşlayacak.
+
+107
+00:24:22,228 --> 00:24:28,447
+İşte şurada biraz daha pik yapacak. Buna göre böyle sonuçlar elde edeceğiz ve bu zaman değerleriyle
+
+108
+00:24:28,447 --> 00:24:34,228
+diyoruz ki şuradaki çıkan piklerden dolayı böyle bir benzerlik vardır, buna benzeyen bir şey vardır.
+
+109
+00:24:34,228 --> 00:24:36,228
+Tabii %100 benzerliğe bakmıyor.
+
+110
+00:24:38,804 --> 00:24:46,403
+Buna H ismi daha çok veriliyor. Bununla alakalı ileride diyor çok fazla şey duyacaksınız. Konvolüsyon ile alakalı.
+
+111
+00:24:47,144 --> 00:24:55,044
+Sistemlerin özelliklerine baktığımızda, şu chat ekranını siz görmüyorsunuz da ben görüyorum.
+
+112
+00:24:56,164 --> 00:25:00,484
+Tabii sizin sorularınız olur diye herkes mikrofon kullanamıyor.
+
+113
+00:25:01,923 --> 00:25:05,784
+Nereye koysam, şimdi pencerede koyunca bu sefer anlattığım şeyi göremiyorum bir saniye.
+
+114
+00:25:06,675 --> 00:25:07,996
+Şimdilik şöyle dursun.
+
+115
+00:25:09,855 --> 00:25:13,635
+X1 ve X2 inputlar için bir toplama sistemi arkadaşlar.
+
+116
+00:25:13,855 --> 00:25:18,175
+Şu şekilde iki sistemin toplamını yeni bir sistem olarak yazabiliyoruz.
+
+117
+00:25:18,315 --> 00:25:23,755
+Aynı şekilde bir fark sistemi, difference sistemi de çıkartmayla gelişiyor.
+
+118
+00:25:23,755 --> 00:25:30,996
+Yani buradaki aslında nedir? İki fonksiyonun, iki ayrık veya sürekli zaman fonksiyonun,
+
+119
+00:25:31,071 --> 00:25:36,371
+Toplaması, çıkartması olacak. Çarpma da benzer şekilde iki fonksiyonun çarpımıdır.
+
+120
+00:25:38,951 --> 00:25:51,371
+Şimdi sistemlerin özelliklerine baktığımızda aynı bileşke fonksiyonlarda olduğu gibi sistemler birbirleriyle kaskat veya seri şekilde bağlanabiliyor.
+
+121
+00:25:51,971 --> 00:25:55,071
+Aslında bu şeydekinin aynısı. Tabi burada birazcık daha işin...
+
+122
+00:25:55,476 --> 00:26:12,476
+Nesine bakıyoruz? Daha global haline bakıyoruz. Şimdi iki direnci birbirine bağlamanın bir metodu var değil mi? İki direnç birbirine bağlanınca toplanıyordu. İki kapasitörü bağlayınca sıralar toplanmıyordu da herhalde bu aritmetik ortalama şey bir bölü...
+
+123
+00:26:12,788 --> 00:26:19,188
+CH, C-Equivalent, 1 bölü C1 artı 1 bölü C2 miydi? Böyle bir fons şeyi vardı.
+
+124
+00:26:19,967 --> 00:26:28,427
+Şimdi bu ikisi birbirine kaskat bağlanmış. Artık nasıl bir davranış sergiliyorsa iki sistemde, mesela dirençse doğrudan toplayacaksın.
+
+125
+00:26:29,508 --> 00:26:32,927
+Diğer durumdaysa, işte buradaki gibi toplayacaksın kapasitörse.
+
+126
+00:26:33,987 --> 00:26:37,947
+Bunların ikisinin birleşkesini ya da seri bağlanmasını ifade ediyor.
+
+127
+00:26:39,903 --> 00:27:04,104
+fonksiyonu tek bir seferde yazabiliyoruz. Bileşkin fonksiyon şeklinde. Geldiğimizde paralel bağlama kısmına geldiğimizde o da aynısı. Buradaki paralel bağlama ikisini birbirlikte işte fx artı gx şeklinde birbiriyle doğrudan toplama yapar gibi kullanabiliyoruz. Birisi de çarpımsal özellik. Yani bu kaskat ifadesi biraz daha çarpıma benziyor. Diğeri de toplama benziyor.
+
+128
+00:27:09,460 --> 00:27:33,779
+Şimdi geri beslemeli sistemler, elde ettiğimiz bir sistem, sistemden elde edilen bir çıktı. Beklenen çıktığıyla arasında ne kadar uyum var? Bunun sisteme geri yansıtılması isteniyorsa, işte burada geri besleme kullanıyoruz. Örneğin, sisteme bir input girdi, o inputun karşılığını şimdi biliyoruz. Ne bileyim, elimizde bin tane data var.
+
+129
+00:27:34,708 --> 00:27:40,288
+1000 tane datayla bir sistem eğitmek istiyoruz, eğitim yapacağız veya yapay zeka olur, başka bir şekilde olur.
+
+130
+00:27:41,568 --> 00:27:50,028
+Mesela arkadaşlar, siz sayısal analiz dersinde regresyon modellerini gördünüz. Ondan sonra interpolasyonu gördünüz.
+
+131
+00:27:50,847 --> 00:27:57,048
+Orada nasıl bir mantık var? Elinizde 100 tane veri var, 100 tane veriyle bir eğri uydurmaya çalışıyorsunuz.
+
+132
+00:27:57,048 --> 00:28:01,648
+Ya regresyon ya da interpolasyon, ikisinin farklı mantıkları var da.
+
+133
+00:28:02,003 --> 00:28:10,003
+Şimdi orada belli bir hata oluşuyor değil mi? O hatayı ne yapıyorsunuz? Sisteme geri yansıtıyorsunuz her bir adımda.
+
+134
+00:28:10,003 --> 00:28:15,003
+İşte bu geri yansıtma işlemi buradaki feedback'e karşılık gelir. Ona çok benzerdir.
+
+135
+00:28:15,988 --> 00:28:30,708
+Elinize bin tane veriniz var. Artık bin birinci veri geldiğinde hatalarından olabildiğince arındırılmış, olabildiğince öğrenmiş bir veri gelir. İşte o bin birinci verinin gerçek olmayan ama beklenen, tahmin edilen karşılığını bulursunuz.
+
+136
+00:28:30,708 --> 00:28:37,708
+İşte en basiti hava durumları gibi sistemler. Şu ana kadar işte hava durumunun belli parametreleri var. Onların sistem...
+
+137
+00:28:37,824 --> 00:29:00,744
+Denklemleri yazılıyor. Yani fonksiyonları veya denklemleri diyelim biz onlara. O denklemlerde hangi parametre durumunda neler ortaya çıkmış bu biliniyor. Oradan eğitilen sistemin hatası minimize edilen sistemin artık yarın için hava durumu nasıl olacak? İşte parametrelerimiz bunlar. Bunları input olarak verdiğimde output olarak bunları elde edeceğim.
+
+138
+00:29:01,332 --> 00:29:18,952
+Şeklinde bir sistem gerçekleştiriliyor. Bu geri besleme, bu açıdan bizim için önemli. Yani şu an bu derin öğrenmeciler, yapay zekacılar, bilgisayar görmesi çalışanlar bunların hepsi aslında ne yapıyorlar? Bir geri besleme yapıyorlar. Burada bazı neler var? Ölçütler var.
+
+139
+00:29:19,700 --> 00:29:41,820
+O ölçütlere göre karar veriliyor. Bu sistemi biz bu şeyde kullanabilir miyiz? İleriye yönelik veri tahmininde kullanabilir miyiz? Yoksa kullanamaz mıyız diye. Mesela en basit bilinen veri şey kriteri, başarım kriteri. Aslında günümüzde de bunu çok diyorsunuz. Accuracy, Precision,
+
+140
+00:29:43,667 --> 00:29:53,607
+Recall. Belki çoğunuz birinci sınıf olduğu için bu isimlerle bilmiyorsunuz ama şimdi söyleyince bunlar bu muymuş diyeceksiniz.
+
+141
+00:29:54,347 --> 00:29:59,927
+Şimdi gerçek değer ile beklenen değer arasındaki eşleşmeyi Ekürisi belirtiyor.
+
+142
+00:30:01,527 --> 00:30:08,807
+Hastalık üzerinden gidelim. Gerçekte bu kişi hasta, hasta artı, beklenen değeri de hasta eksi veya
+
+143
+00:30:09,460 --> 00:30:18,619
+Gerçekte hasta eksi, beklenen değeri de hasta eksi. Ne kadar bunları doğru eşleştirebilirse, 300 tane hasta vardı, 300'ün de hasta oldu.
+
+144
+00:30:19,199 --> 00:30:23,559
+İşte 200 tane hasta olmayan vardı, 200'ün de hasta olmayan da bu şekilde buldu. İşte buna Ekürisi diyoruz.
+
+145
+00:30:24,159 --> 00:30:34,159
+Bu sistemin Ekürisi bize bir bilgi veriyor. Bu yetmiyor. Şunlar hangisiydi? Mesela gerçekte hasta olmasını hasta diyebiliyoruz.
+
+146
+00:30:34,867 --> 00:31:01,607
+Gerçek olarak hasta ama sistem bize hasta değil diye tahmin etti. En basit örnek COVID. Hepimizin başında olan şey, [kişisel bilgi] Hasta olanları biliniyor, işte 300 tane hasta var, gelecek. Ama 300 hastadan, işte örnek alıyorsun, sisteme sokuyorsun, 250'sini tespit edebilmiş. İşte bu bir 250 bölü 300'lük bir durumdur. Tamam mı? Recall.
+
+147
+00:31:02,016 --> 00:31:08,715
+Veya gerçekte, tabi o recall olmuyor, bir dakika şöyle yapalım. Gerçekte hasta olduğunu biliyoruz ama hasta olmayanlar.
+
+148
+00:31:09,695 --> 00:31:19,475
+Gerçekte, şey, hasta olarak işaretledik, bu hasta olarak işaretlediklerimizden kaç tanesi, bunu şöyle okula göstereyim,
+
+149
+00:31:20,155 --> 00:31:26,776
+hasta olarak işaretlediklerimizden kaç tanesi gerçekte hasta? Adama boş boşuna ilaç veriyor muyuz, vermiyor muyuz?
+
+150
+00:31:27,923 --> 00:31:40,963
+Sağ olun arkadaşlar, iyi mi? [kişisel bilgi] Gerçekte hastalık, gerçekte hasta olanların kaç tanesi hasta olarak işaretlenmiş? Şuraya artı yazmamız gerekiyor.
+
+151
+00:31:42,084 --> 00:31:51,104
+Hasta olarak işaretlediklerimizden acaba kaç tanesi gerçekte hasta? Bunlar bu şey, bunu belirliyor. Ve bu sistem bu feedback ile eğitilmiş.
+
+152
+00:31:53,044 --> 00:32:03,984
+durumun sonunda bu metriklerle başarımı ölçülüyor. Bakın, yani bu konu ta şeyden, hani derin öğrenme vs. bu konu ta bu sistem özellikleriyle alakalı bir şeydir.
+
+153
+00:32:10,420 --> 00:32:12,040
+Bunları konuştuk herhalde.
+
+154
+00:32:13,920 --> 00:32:19,680
+Şimdi, tabi bu sistem özelliklerinde örnek bir sistem, Integrator with Feedback demiş.
+
+155
+00:32:20,860 --> 00:32:24,920
+Bir integral alma sistemi var, ama bir yada bunun feedback'i var.
+
+156
+00:32:25,920 --> 00:32:27,100
+Bu şu demek arkadaşlar.
+
+157
+00:32:28,580 --> 00:32:30,080
+Günlük hayattan örnek verelim buna.
+
+158
+00:32:30,519 --> 00:32:34,420
+Aslında bu yine basit bir şey de, bunun daha...
+
+159
+00:32:36,788 --> 00:32:58,107
+Şimdi hayatta insan tecrübelerinden ne yapıyor? Ders çıkarıyor. Bu tecrübeleri ne yapıyorsunuz? Belli bir seviyede, yani belli bir beklentiniz var. O beklentiye ulaşmak istiyorsunuz. Artık bu beklentiniz maddi olur, manevi olur, ne olursa olur. Bunu bir fonksiyon gibi düşünün. O fonksiyonun ulaşması gereken böyle bir değer var şurada.
+
+160
+00:32:59,251 --> 00:33:07,251
+Siz input'ları veriyorsunuz, input'lara karşılık bir output geliyor. Bu output arkadaşlar, hemen size istediğiniz output'lar gelmiyor tabii ki.
+
+161
+00:33:09,251 --> 00:33:23,251
+Bu output'ları elde ederken, şu sapmalar, bunlara hata diyoruz, ne yapıyor? Sizin feedback'iniz de size katkı sağlıyor. Yani bir konuyu öğrenirken hatalarınızı minimize ederseniz, o zaman ne yaparsınız?
+
+162
+00:33:24,596 --> 00:33:31,096
+Konuyu daha iyi öğrendiğinizi anlarsınız. Önemli olan bildiklerinizi tekrar etmek güzel bir şeydi, hatalarınızı minimize etmek.
+
+163
+00:33:31,096 --> 00:33:44,716
+İşte bu integral işlemi, bir toplama işlemi yaparak, şu anki durumdaki verileri toplayarak, yani T anındaki verileri toplayarak ve belli bir süreç içerisinde bu işlemi yaparak ne yapıyor?
+
+164
+00:33:46,036 --> 00:34:10,615
+Bir bilgi birikimi, tecrübe birikimi oluşturuyor. Tecrübe zaten aslında birikim zaten. Şimdi bu tecrübeyi bir de feedbacklerinizle, geri beslemeyle bir arada kullanırsanız ne demek? Ya önceden başıma şu iş gelmişti, şunu bekliyordum, şu oldu. Demek ki hata yapmışım. Bundan sonra bunu minimize edeyim, aynı hatayı yapmayayım demektir.
+
+165
+00:34:11,007 --> 00:34:18,768
+İşte bu Türev ve Integral'in bu şekilde, şuradaki Türev aslında bir toplama yapıyor, bu feedbackle bir çıkarma yapıyor. Ne yapacaktır?
+
+166
+00:34:19,507 --> 00:34:30,487
+Integration with feedback mekanizmasını ortaya koyacaktır. Hatalarımızdan ders çıkararak, hatalarımızı, önceki yapmış olduğumuz hataları tekrar etmeyerek ne yapıyoruz?
+
+167
+00:34:30,487 --> 00:34:33,087
+İstenen çıkışa en uygun sonucu veriyoruz.
+
+168
+00:34:35,123 --> 00:34:44,563
+Yapay sinir ağları diye duymuşsunuzdur. Orada şöyle bir algoritma vardır. Belki dersi üst sınıflardan alanlarda bilirler ama alt sınıftakiler belki duymamıştır.
+
+169
+00:34:44,563 --> 00:34:47,304
+Backpropagation dediğimiz
+
+170
+00:34:51,539 --> 00:35:11,340
+Bir algoritma var. Hatanın geri yayılmasını sağlıyor. Bu hataları minimize ederek herkes oradaki yapay zekadaki kullanılan parametrelerin, yapay sinir ağlarındaki kullanılan parametrelerin hataya olan katkılarını minimize ederek sistemi eğitmeye çalışıyor. Aynen bu mantık orada vardır.
+
+171
+00:35:18,771 --> 00:35:45,612
+Belli bir zamanda elde edilen çıktı. Yani şu expected varıyor, beklenen değer, bu observed varıyor, gözlenen değer. Bu gözlenen değeri belli bir kast sayıyla çarparak ne yapıyoruz? Buradan bir hata buluyoruz. Bu hataların toplamı sonra tekrar x ile çarpılarak, bir sonraki iterasyonunda x ile çarpılarak ne oluyor? Sistemin denklemini oluşturuyor.
+
+172
+00:35:46,003 --> 00:36:01,083
+Bunun şeyini aldığımızda, bunu bir diferansiyel denklem şeklinde yazdığımızda, x'lerden elde edilen çıktıkları çıkarak hatayı bulacağız ve bu sistemin türeviyle eşleştiriliyor.
+
+173
+00:36:01,083 --> 00:36:10,443
+Bu sistemi ilerleyen zamanlarda eğer, biz bu derste var mıydı bilmiyorum içeriğinde, diferansiyel denklem şeklinde çözüp y eşittir,
+
+174
+00:36:10,996 --> 00:36:26,376
+Hatta FT formatında bir şekilde yazıp bir formüle veya FX formatında yazarsak ne olacak arkadaşlar? O zaman sistemin denklemini, sistemin davranışını çözen denklemi bulmuş olacağız.
+
+175
+00:36:27,956 --> 00:36:28,775
+Devam ediyoruz.
+
+176
+00:36:30,256 --> 00:36:34,275
+Şimdi sistemlerin özellikleri herhalde buradaydık geçen hafta.
+
+177
+00:36:36,215 --> 00:36:37,056
+Şunu şuraya alalım.
+
+178
+00:36:38,931 --> 00:36:45,831
+Şimdi sistem özelliklerinde arkadaşlar, birincisi linearlik, doğrusallık. Nedir bu doğrusallık?
+
+179
+00:36:50,547 --> 00:37:14,707
+Eğer bir sistemimiz şu iki özelliği sağlıyorsa, buna lineer olarak söyleyeceğiz. Birincisi homojenlik. Buna çarpımsallık özelliği de deniyor. Eğer bir x değişkenimiz herhangi bir a kat sayısıyla çarpılıyorsa ve bu elde edilen sistemin sonucu, sistemin
+
+180
+00:37:16,436 --> 00:37:30,556
+A kas sayısıyla çarpılmamış halinin sonucunun A ile çarpılması durumunda birbirine eşit oluyorsa, birazdan örnekleri var bunun arkadaşlar, sisteme homojendir diyoruz.
+
+181
+00:37:30,756 --> 00:37:36,876
+Mesela sisteme X diyelim. Bizim sistemimiz X olsun.
+
+182
+00:37:38,115 --> 00:37:39,436
+Fx eşittir X mesela.
+
+183
+00:37:39,436 --> 00:37:42,115
+Şimdi homojenliği kontrol etmek çok kolay.
+
+184
+00:37:44,532 --> 00:37:50,332
+A çarpı x eşit midir? A çarpı fx. Yani bu eşitliği kontrol ediyoruz.
+
+185
+00:37:50,332 --> 00:37:59,572
+Şimdi x için bakalım. Bir de x artı 2'nin karesi için bakalım mesela.
+
+186
+00:38:03,572 --> 00:38:22,351
+Tamam. Şu x için baktığımızda ne olacak? x gördüğümüz yere sistem x olduğu için ax yazacağız. a çarpı x doğrudan geliyor. Burada a yazıyoruz, x'in kendisini yazıyoruz. Zaten a x. Bu x'i birbirine eşit olduğu için sistem homojendir diyoruz.
+
+187
+00:38:26,708 --> 00:38:37,948
+Ax yazdığımızda, Ax artı 2, işte ne oluyor? Ax artı 2'nin, tabi sistemimizin denklemi şimdi bu, başka bir denklem bu.
+
+188
+00:38:39,528 --> 00:38:44,048
+Ax artı 2'nin karesi. Burada bunu yazdık.
+
+189
+00:38:46,448 --> 00:38:49,748
+X gördüğümüz yere A yazdık sadece, eşittir.
+
+190
+00:38:52,755 --> 00:38:54,895
+x artı 2'nin karesine.
+
+191
+00:38:55,655 --> 00:39:12,315
+Şimdi şuna baktığımızda, a x kare, tabi a kare x kare artı 2ax, 4ax artı 4 eşittir a çarpı x kare artı 4 x artı 4.
+
+192
+00:39:12,315 --> 00:39:16,215
+Mesela şuradan a karenin olmadığını görerek,
+
+193
+00:39:16,724 --> 00:39:23,724
+Eğer A bir gibi bir kas sayı değilse, birden farklı bir sayı ise bu sistemi homojen olmadığını söyleyebiliriz.
+
+194
+00:39:24,704 --> 00:39:31,684
+Pardon, zaten A'nın biri, evet A bir ise hiçbir etkisi yoktur diyebiliriz.
+
+195
+00:39:31,764 --> 00:39:36,984
+Evet, bir ise eşi çıkar ama birin dışında bir sayı ise ne olacaktır? Homojen değildir.
+
+196
+00:39:37,444 --> 00:39:39,628
+Birinci özelliğimiz bu, sistemlerin...
+
+197
+00:39:39,956 --> 00:39:44,655
+kontrolünde. Buna çarpımsallık özelliği diyoruz. Yani bir şeyi bir şeyle çarpınca.
+
+198
+00:39:45,316 --> 00:39:52,556
+Superposition teoremi de iki farklı sinyal için iki sinyali birbiriyle bu şekilde topladığımızda,
+
+199
+00:39:53,776 --> 00:40:03,776
+yani bir fx sinyaline, fx şapka sinyaline topladığımızda eğer bunların sonucu ayrı ayrı toplamlarının sonucuna eşitse,
+
+200
+00:40:07,476 --> 00:40:10,976
+Süperpozisyon teoremine uygundur diyeceğiz.
+
+201
+00:40:11,536 --> 00:40:15,176
+Ve bu ikisini sağlıyorsa diyeceğiz ki lineerdir.
+
+202
+00:40:15,655 --> 00:40:19,976
+Şu çarpımsallık dedik, buna da toplamsallık özelliği diyorlar Türkçe kaynaklarda görürsünüz.
+
+203
+00:40:22,556 --> 00:40:27,976
+Linearlık arkadaşlar, buradan yola çıkarak biraz daha farklı bir ifadeyle söyleyecek olursak.
+
+204
+00:40:28,288 --> 00:40:50,248
+Çarpımsallığı biz Scale yapmıştık biliyorsunuz, hatırlarsanız sinyalleri. Bu bir şeyi Scale etmek demektir. Eğer sistemi öncesinde ve sonrasında Scale edince bir değişiklik olmuyorsa, aynı zamanda sisteme Shifting, bu da Shift'e benziyor, yani toplama birazcık Shift'i, ya ileriye doğru ya geriye doğru.
+
+205
+00:40:55,476 --> 00:40:57,316
+İşte bu zaman lineardır diyeceğiz.
+
+206
+00:40:58,516 --> 00:41:01,695
+Mesela şu 2x artı 5.
+
+207
+00:41:02,996 --> 00:41:09,896
+Bu lineardeydir arkadaşlar. Bu afin deniyor genelde. Bunu kriptolojiler afin diye söylüyorlar. Matematikçiler de böyle bir şey söylüyorlar.
+
+208
+00:41:10,576 --> 00:41:15,735
+Mesela x yerine a yazdığımızda buradaki elde edilen değerle
+
+209
+00:41:16,275 --> 00:41:24,395
+X yerine X artı K yazdığımızda elde edilen değer birbirinden farklı oluyor. Onların örneklerine bakacağız da. Bugün bir örnek çözme saatimiz olacak.
+
+210
+00:41:27,315 --> 00:41:33,235
+Bunu blok olarak, blok diagramlarla gösterelim dersek.
+
+211
+00:41:37,652 --> 00:42:02,992
+Örneğin şu neydi? Bu çarpımsallıktı arkadaşlar. Bir sistemi A ile çarpmak, pardon girişi A ile çarptığımızda elde edilen çıkış, girişi sisteme verdiğimizde elde edilen çıkışı A ile çarpmak demektir. Bu ikisi birbirine ne olacaktı? Hiç de olacaktı. Buna biraz önce şurada söylediğimiz denklemdeki homojenlik özelliğini söyleyebiliriz. Yani bunu homojeneti diyelim.
+
+212
+00:42:03,764 --> 00:42:10,384
+Şurada da iki tane sinyali sisteme vermeden önce toplayıp bir çıktı elde ediyoruz.
+
+213
+00:42:11,304 --> 00:42:17,963
+Sinyalleri sisteme ayrı ayrı verip elde ediğimiz çıktıları topladığımızda bir başka çıktı elde ediyoruz.
+
+214
+00:42:18,064 --> 00:42:23,524
+İşte bu ikisi birbirine eşitse, buna da şurada söylediğimiz süperpozisyon teoremi.
+
+215
+00:42:24,043 --> 00:42:25,564
+Toplum sağlık ilkesi diyoruz.
+
+216
+00:42:26,663 --> 00:42:28,864
+Önemli olan bazı diner sistemler.
+
+217
+00:42:29,619 --> 00:42:48,019
+Şimdi ölçekleme sistemleri, Türev sistemleri, İntegral sistemleri, Running Average. Running Average şudur arkadaşlar. Ben bu sinyali böyle çizdim. Şöyle 3'er 4'er tane dizi alarak, yani 3 elemanlı veya 4 veya 5 elemanlı.
+
+218
+00:42:48,724 --> 00:42:54,484
+Küçük bir dizi alıyorum bir sinyalle, bunları topluyorum, ortalamasını alıyorum, topluyorum ortalamasını alıyorum, bir yandan da kaydırıyorum.
+
+219
+00:42:54,583 --> 00:42:59,744
+Yani sona doğru bu işi yapıyorum. İşte bu bir Running Average'dır. Ne yapar? Sinyali yumuşatır.
+
+220
+00:43:00,963 --> 00:43:10,163
+Time-shift sistemleri belli bir zamanda öteleme, konvolüsyon, modülatörler, örnekleyici sistemler, bunlar lineer sistemlere örnek veriliyor.
+
+221
+00:43:10,516 --> 00:43:34,675
+Non-linear sistemler, işaret dedektedici bir sistemi veriyorsunuz işaretini. Çarpma sistemleri, komparatörler, kuantaz ayırlar, adaptif filtreler, bunların da non-linear sistemleri örnek arkadaşlar. Mesela, comparator, iki sinyali birbiriyle karşılaştırma biraz zor bir şey. Bunlara biraz daha bakacağız.
+
+222
+00:43:38,547 --> 00:43:51,287
+Sistemin modülatör olarak çarpıcı olan özelliği, işte YT demiş, XT sinyalini cos2PFT ile çarpıyor.
+
+223
+00:43:52,607 --> 00:43:55,807
+Buna linear bir sistem örneği verebiliriz.
+
+224
+00:43:55,807 --> 00:44:05,807
+Neden? Şu XT sinyalini toplamsallık ve çarpımsallık testlerinden geçirirseniz,
+
+225
+00:44:06,356 --> 00:44:28,736
+elde edilen YT sinyali o iki şartı sağlayacaktır. İşte bir kare alma sistemi, bir x gelecek, bu gelecek, bu non-dener. Aslında doğrusal ve doğrusal olmayan fonksiyonlar konusunda benziyor. Ama bazı ekstra özellikleri var sistemlerin. Sistemlerde bellek durumu arkadaşlar.
+
+226
+00:44:31,923 --> 00:44:36,784
+Şimdi bu casualty nedensellikle de bir ara ilişkili.
+
+227
+00:44:38,324 --> 00:44:54,943
+Şimdi bir sistem eğer şimdiki inputa, sadece şimdiki inputa bağlıysa, şuradaki söylediği gibi, bu zaman işte ne oluyor? Bu belleksiz bir sistem oluyor.
+
+228
+00:44:59,795 --> 00:45:07,715
+Veya gelecekteki bir input'a bağlıysa bu da bellekli bir sistem oluyor.
+
+229
+00:45:08,115 --> 00:45:13,155
+Şimdi geleceğe nasıl bağlı olur? Bu biraz ideali ifade ediyor. Daha sonra göreceğiz.
+
+230
+00:45:13,155 --> 00:45:22,115
+Ama geçmişe genellikle bağlı oluyor. Mesela an eşittir an-5 artı an-3 diyoruz mesela.
+
+231
+00:45:22,516 --> 00:45:29,176
+Fibonacci sayılarının mesela Recurition Relation'larında da böyle bir şey gelecek, ayrık matematikte anlatacağız.
+
+232
+00:45:29,176 --> 00:45:38,136
+O bir mesela Sistem açısından incelenirse, bellekli bir sistemdir, hep önceki değerlere gider. Niye? Çünkü Fibonacci sayılarını hatırlarsanız,
+
+233
+00:45:39,423 --> 00:45:48,923
+2, 3, 5 diye gidiyor. Şu anki değer kendisinden önceki iki tane değere, inputa karşılık gelerek hesaplanıyor. Bu bir bellekli sistem oluyor.
+
+234
+00:45:48,923 --> 00:45:55,724
+Tabi bunu geleceğe yönelik yapanlar da var. O ideal olarak söyleniyor. Biz daha çok geçmişe yönelik değerlerle çalışacağız.
+
+235
+00:45:55,724 --> 00:46:06,724
+İşte ideal amplifier'lar, Transmission or Level Mechanical Sistemler bunlara, bu sistem ve belleksiz sistemlere örnek verilebilir.
+
+236
+00:46:07,135 --> 00:46:16,376
+Örneğin, Energy Storage Circuit Elements, işte kapasitörler ve indüktörler, bobinler, bellekli sisteme karşılık geliyor.
+
+237
+00:46:18,456 --> 00:46:24,655
+Mekanik sistemdeki Moving Mass veya Springler de bellekli sisteme örnekler.
+
+238
+00:46:24,655 --> 00:46:26,416
+Nedensel sistem,
+
+239
+00:46:27,347 --> 00:46:42,148
+Bunun içerisinde nedensel sistem, bellekli sistemin aslında bir alt kümesi. Sadece neye bağlı? Geçmişe ve şimdiki değerlere. Yani bir şeyin nedeninin varlığı onu tetikleyen bazı şeylere bağlıdır.
+
+240
+00:46:42,707 --> 00:46:53,807
+İşte şu bir mesela nedensel sistemdir. A'nın şu anki değeri, n'in eninci noktadaki değeri neye göre oluşuyor? n-3'teki ve n-5'teki değerleri. Bunlarda yapılan bir değişiklik.
+
+241
+00:46:54,260 --> 00:46:56,160
+Şunu ne yapıyor? Etkileyecektir.
+
+242
+00:46:57,680 --> 00:47:01,380
+Örneğin fiziksel bir değer veya mekanik bir değer.
+
+243
+00:47:01,519 --> 00:47:06,760
+Aslında bizim biraz önce şurada uzun uzun anlattığım, yapay rekat edin, bir sürü şey edin, neredeydi o? Şu.
+
+244
+00:47:07,380 --> 00:47:10,440
+Bunlar da bir şekilde ne vardır? Nedensel bir sistemdir arkadaşlar.
+
+245
+00:47:12,099 --> 00:47:16,180
+Geleceğe yönelik tahmin yaparken şimdiki durumlarımızdan konuşuyoruz.
+
+246
+00:47:17,039 --> 00:47:19,960
+Time invariant, zamanla değişmemezlik.
+
+247
+00:47:19,960 --> 00:47:21,740
+Zamanla değişmezlik sistemi.
+
+248
+00:47:22,387 --> 00:47:33,688
+Zamanda belli bir öteleme yapıldığında sistem, mevcut sistem durumuyla aynı sonucu elde ediyorsa buna da zamanla değişmez diyoruz.
+
+249
+00:47:34,188 --> 00:47:37,967
+Yani böyle bir sinyalim var mesela. Şurada şöyle bir değer veriyor.
+
+250
+00:47:38,668 --> 00:47:47,427
+İşte buna 5 birim öteleme yaptığımda yine aynı değeri, işte belli bir T'ye kadar öteleme yaptığımda elde edebiliyorsam bu zamanlama değişmezliktir.
+
+251
+00:47:49,331 --> 00:47:57,011
+Burada yapacağımız test şu şekilde arkadaşlar. yt eşittir fxt sistemine t yerine t eksi to gibi bir şey yazacağız.
+
+252
+00:47:58,011 --> 00:48:06,311
+Burada elde edilen değer şuradaki eşitliğe eşitse ne yapacağız? Sonuç aynıdır diyeceğiz.
+
+253
+00:48:10,311 --> 00:48:14,092
+Şimdi retard geciktirme sistemleri.
+
+254
+00:48:15,764 --> 00:48:39,764
+Dediğimiz şey, zamanda gecikme gibi söyleyebiliriz. Bir girişte yapılan bir gecikme değeri, girişe verilen bir gecikme değeri, çıkışta belli bir sonuç elde ediyor. Eğer ben girişe herhangi bir gecikme yapmadan çıkışa aynı gecikme miktarını yansıtırsam ve aynı sonucu elde edersem, işte bu...
+
+255
+00:48:40,623 --> 00:48:43,583
+DLI, işte Commute sisteme ifade ediyor.
+
+256
+00:48:46,403 --> 00:49:02,223
+Bu sistemlerin analizinde zamanla değişmezlik, ondan sonra bu DLI, belli bir parametreyle gecikmezlik, ne yapabilir, şey nedir arkadaşlar, ileride çok çok kullanacağımız bir özellik olacak.
+
+257
+00:49:03,123 --> 00:49:05,423
+Sistemlerin stabilliği.
+
+258
+00:49:07,284 --> 00:49:14,884
+Şimdi birçok uygulamada arkadaşlar sistemler, özellikle mühendis uygulamalarında şöyle çalışması lazım.
+
+259
+00:49:16,044 --> 00:49:22,084
+Belli bir kısıtlar altında çalışıyoruz. Bu kısıtlarımız inputları kısıtlı hale getiriyor, outputları kısıtlı hale getiriyor.
+
+260
+00:49:22,784 --> 00:49:29,804
+İşte belli bir bounded input dediğimiz sınırlı bir inputta elde ettiğimiz sınırlı değerler var.
+
+261
+00:49:33,235 --> 00:49:48,235
+Bu sınırlı değerlere karşılık olarak elde edilen çıkış değerleri de sınırlı oluyorsa, bounded input, bounded output sistemler, stable, stabil olarak ifade ediliyor.
+
+262
+00:49:48,235 --> 00:49:57,235
+Örneğin burada işte belli bir finite pozitif numberlar olacakmış MX ve NBA. Sınırlı girişe karşılık sınırlı şeyler.
+
+263
+00:49:57,235 --> 00:50:00,000
+Şimdi buraya kadar anlattıklarımda şöyle bir şey var arkadaşlar.
+
+264
+00:50:00,000 --> 00:50:13,039
+Biz Sinyal ve Sistemleri büyük bir küme, evrensel küme olarak düşünürsek sistemleri, bunların içerisinde lineerleri var. Ondan sonra lineer veya non-linear. Bu açıdan değerlendiriliriz.
+
+265
+00:50:13,619 --> 00:50:19,940
+Zamanla değişme var, zamanla değişmeyen Time Invariant diyelim. Zamanla değişebilen, zamanla değişmeyen var.
+
+266
+00:50:20,436 --> 00:50:32,936
+Bir sürü alt hükümelere bölünüyor kendi içerisinde sistemler. Bizim bu dersimizde daha çok ilgileneceğimiz şey, işte bu Dinerlik ve Time Invariant kısmının kesişimi, bu özellikleri sağlayan sistemleri daha çok inceleyeceğiz.
+
+267
+00:50:34,536 --> 00:50:46,076
+Örnek, işte Cruise Control sistemi. Şimdi istenen bir hıza ulaşmak istiyoruz. İstenen hıza ulaşınca işte ne yapacağız belli bir miktar?
+
+268
+00:50:47,572 --> 00:50:54,812
+Gaz yapacağız. Burada bir hata oluşursa, bu hata bize geri yansıyacak ve bu hata arabayı harekete geçirecek.
+
+269
+00:50:54,972 --> 00:51:07,772
+Sonucumuz işte Y, istenen sonucumuz Y. Sistemimiz H sistemi. Bu H sistemine bir K gibi bir değerle, bir değişkenle bir input çarpılıyor.
+
+270
+00:51:07,772 --> 00:51:13,732
+Bu input çarpılmadan önce mevcut hatalarımız, yani gaza çok bastıysak,
+
+271
+00:51:13,967 --> 00:51:21,707
+Ayağımızı çekmemiz lazım. Az bastıysak ne yapmamız lazım? Gazı biraz daha yüklenmemiz lazım.
+
+272
+00:51:23,827 --> 00:51:34,187
+Bu şuradaki fark sistemine, hata sistemine dikkate alarak ve bu hatayı belli bir kast sayıyla çarparak ne yapıyoruz? İstediğimiz huza erişmeye çalışıyoruz.
+
+273
+00:51:34,748 --> 00:51:40,927
+Şimdi şuradaki elde edilen şeyi iyi yorumlamak lazım. Buradan bir hata geldi. X-Y'yi hesapladık şurada.
+
+274
+00:51:42,003 --> 00:51:48,584
+Bu arkadaşlar, sisteme input olarak nasıl yansıyacak? Hatanın tersi olarak yansıyacak.
+
+275
+00:51:49,064 --> 00:51:52,524
+Yani hızlı gidiyorsun, yavaş istiyorsun, o zaman biraz daha yavaşlaman lazım.
+
+276
+00:51:53,024 --> 00:51:54,403
+Burada çıkan hatanın tersini.
+
+277
+00:51:54,943 --> 00:51:56,664
+Yavaş gidiyorsun, hızlanmak istiyorsun.
+
+278
+00:51:57,564 --> 00:51:59,704
+Ne yapacaksın? O zaman biraz daha hızlı arttıracaksın.
+
+279
+00:51:59,704 --> 00:52:03,704
+Hatanın tersi yönde. Yaptığın hatanın tersini yaparsan mantığıyla...
+
+280
+00:52:03,923 --> 00:52:08,223
+Ne oluyor? Sistemin istenen değere ulaşmasını sağlıyoruz.
+
+281
+00:52:08,223 --> 00:52:23,364
+Pozitif error, gazı artırır. Delay kar, velocity change, speed, overshoot. Belli bir hızda gecikme sağlama falan.
+
+282
+00:52:26,164 --> 00:52:49,184
+Gazı kesmek anlamında. Bu tarz durumda işte belli bir bekle hızı değiştir. Speed, undershot. İşte bu adımları tekrarlaya tekrarlaya, biraz önce şurada çizdiğim grafikte olduğu gibi istediğim bir şey var. Buna ulaşana kadar sistem hataları yapacak, hatalarından öğrenecek ve eğitilecek. Şimdi sistemlerin dönüşümü.
+
+283
+00:52:51,956 --> 00:53:08,036
+Şimdi bir sisteme verilen input sinyali, iki sinyali, sistemin tersi, sistemin tersine verildiğinde aynısı elde edilebiliyorsa invertible sistemdir.
+
+284
+00:53:09,496 --> 00:53:16,016
+Özellikle biz bunu dönüşümlerde, transformationlerde, transforms,
+
+285
+00:53:16,659 --> 00:53:21,880
+Çok kullanacağız. İşte bir Laplace dönüşümü alan bir sistem veya Fourier dönüşümü alan bir sistem.
+
+286
+00:53:22,480 --> 00:53:33,740
+Input sinyalini aldık, output sinyali elde ettik. Output sinyalini tekrar ters bir sisteme, ters bir dönüşüm sistemine verdiğimizde tekrar input'a elde edebiliyorsak bu dönüştürülebilir sistemdir.
+
+287
+00:53:34,771 --> 00:54:02,211
+Ve sistemin tersiyle kendisinin çarpımı Identity Operatörünü veriyor. Bunu çok fazla kullanmayız da, Invertible Sistem tanımı nedir, ne işe yarar? Özellikle dönüşümlerde çok fazla karşımıza gelecek. Bir dönüşüm yapıyorsanız, onun şu özelliği, yani Invertible özelliğin olması gerekir. Yoksa çok fazla bu anlam ifade etmiyor. Orijinal veriyi tekrar elde edebilmek lazım bir dönüşümden.
+
+288
+00:54:03,827 --> 00:54:21,788
+Şimdi diferansiyel denklemlerle ifade edilen sistemlerimiz var. Saatimiz kaç oldu? Bakalım. Şu 10 dakikada zannediyorum bunu bitiririz. Aradan sonra örnek çözmeye başlarız. Bu SlidePiece'in 28 sayfaydı zannediyorum. Daha fazlasa bir ara veririz. 4-5-6 sayfa daha ilerleyin.
+
+289
+00:54:26,260 --> 00:54:38,980
+Şimdi, eğer ki sistemimiz diferansiyel denklemlerle, yani içerisinde türe olan, integral olan operatörlerle tanımlanıyorsa, buna diferansiyel denklemlerle tanımlanan sistemler diyoruz.
+
+290
+00:54:38,980 --> 00:54:42,980
+Ve diferansiyel denklemlerle tanımlanan sistemlerde
+
+291
+00:54:43,476 --> 00:54:51,635
+Biliyorsunuz, diferansiyel denklem neydi? İşte y'nin türevi eşittir, y'nin ikinci türevi artı 2y artı x gibi böyle.
+
+292
+00:54:51,635 --> 00:55:01,716
+Denklemin içerisinde hem türevler var, hem integral türevler var, fonksiyonun kendisi var. Bizim burada amacımız y'yi bulmak. y eşittir fx gibi bir şeyi bulmaktı.
+
+293
+00:55:02,324 --> 00:55:10,603
+Ve burada bu diferansiyel denklemleri ifade ederken, diferansiyel denklemler bunlar da kendi içerisinde farklı sınıflara ayrılıyor.
+
+294
+00:55:10,684 --> 00:55:18,204
+İşte sabit katsaylı diferansiyel denklemler, sabit katsaylı olmayanlar, homojenler, homojen olmayanlar falan bir sürü konusu var onda.
+
+295
+00:55:18,204 --> 00:55:26,224
+Bizim burada lineer ve sabit katsaylı sıradan diferansiyel denklemler dediğimiz,
+
+296
+00:55:26,675 --> 00:55:33,215
+sistemleri söyleyen, sistemleri ifade eden diferansiyel denklemler üzerinde çalışıyoruz.
+
+297
+00:55:33,215 --> 00:55:42,456
+İşte şu bir, şöyle bir diferansiyel denklem bakın, işte farklı dereceden, en inci dereceden, mertebeden türevleri var, birden başlamış diye gitmiş.
+
+298
+00:55:43,056 --> 00:55:44,916
+Bunların önündeki AN'ler,
+
+299
+00:55:45,396 --> 00:55:59,275
+İşte ANA1 bunlar sabit kasaylı yani N'e bağlı bir şey değil. Normalde şurada AN yerine N olsaydı bu N'e bağlı olacaktı. Sabit kasaylı olmuyordu. Bunları birbiriyle dönüştürmek, bunlar üzerinde işlem yapmak.
+
+300
+00:56:00,980 --> 00:56:05,000
+Diferansiyel denklemlerle ifade edilen sistemleri ifade ediyor arkadaşlar.
+
+301
+00:56:05,800 --> 00:56:08,280
+Tabi burada başlangıç koşullarını vermek gerekiyor.
+
+302
+00:56:08,280 --> 00:56:16,960
+İşte y'nin n. dereceden n-1.de mertebeden türevin 0 konu 0 olduğunda n eşittir 0 değer için sistemin sonucu nedir?
+
+303
+00:56:17,100 --> 00:56:21,519
+İşte 1. dereceden türevi için sistemin sonucu nedir? 0 verdiğimizde sistemin sonucu nedir?
+
+304
+00:56:22,019 --> 00:56:26,019
+Bunlar ne için kullanılıyor? Şu denklemi çözerken kullanılan başlangıç değerleridir.
+
+305
+00:56:26,708 --> 00:56:37,068
+Buradaki N sistemin derecesi, yani diferansiyel denklemlerin derecesi veya mertebesi bize bunu ifade ediyor. Bu B'ler, A'lar da sistemdeki kas sayılar.
+
+306
+00:56:38,128 --> 00:56:47,487
+Tabii biz bu derste diferansiyel denklem çözmek konusunda çok fazla, belki de hiç girmeyeceğiz. Bunları daha kısa yoldan çözmek için WAPTAS Transform'unu kullanacağız.
+
+307
+00:56:48,527 --> 00:56:51,927
+O biraz daha çünkü işi kolay çözmeyi sağlıyorum.
+
+308
+00:56:57,076 --> 00:57:11,516
+Şimdi bütün linear katsa, doğrusal katsa ile ordinal diferansiyel denklemler arkadaşlar, eğer bütün şartlar sıfırsa linear olarak ifade ediliyor.
+
+309
+00:57:12,516 --> 00:57:18,416
+Ve biz birçok sistemi bu diferansiyel denklemlerle temsil edebiliyoruz.
+
+310
+00:57:18,476 --> 00:57:24,215
+Mesela siz RLC devresi gördünüz. RLC devrelerini nasıl çözüyordunuz hatırlayan var mı?
+
+311
+00:57:24,884 --> 00:57:31,884
+Ben en son fizik, şeyde, üniversitede, fizikte veya işte şeyde görmüştüm, Diabre Teorisi dersinde görmüştüm.
+
+312
+00:57:31,884 --> 00:57:45,884
+Ya vektörlerle çözeceğiz, fizikçilere göre. Ya diferansiyel denklemini falan kullanacağız. Akıma bağlı değişim, işte gerilime bağlı değişim falan. O akıma bağlı değişim bize bir diferansiyel denklemi ifade edecek.
+
+313
+00:57:46,516 --> 00:58:03,496
+İşte bu bir RLC devresinin sisteminin temsil edilmesi, denkleminin gösterilmesi. O denklemi çözerseniz RLC devresinin işte R değeri, L değeri ve C değerine göre sistemin akım durumunu, sistemin bütün parametrelerini ne yapabiliyorsunuz, analiz edebiliyorsunuz.
+
+314
+00:58:08,755 --> 00:58:13,435
+Bu sistemi lineer bir sistem olarak yazabiliyoruz.
+
+315
+00:58:16,916 --> 00:58:41,636
+Yani bu tarz bir sistemde işte XT'ler, YD'ler, YT'ler ve bunların türevleri birbiriyle ilişki içerisinde. Yani biraz önce yazdığım şuradaki denklemin sözler olarak halini ifade ediyoruz arkadaşlar. Yani buraya Y'yi eklersiniz, Y'nin türevlerini eklersiniz, X'i eklersiniz. Peki ikinci dereceden türev, üçüncü dereceden türev nereden gelmesi lazım? Hani neye göre geliyordur?
+
+316
+00:58:43,188 --> 00:58:57,147
+Bileniniz, tahmin edeniniz var mı? Bir sistemin davranışını modellerken, yeğenin ikinci mertebe türevi, birinci mertebe türevi, bunları neye göre yazmamız gerekiyordur?
+
+317
+00:58:59,307 --> 00:59:00,467
+Biz tahmin yapın bakalım.
+
+318
+00:59:12,820 --> 00:59:13,804
+Evet.
+
+319
+00:59:18,036 --> 00:59:25,056
+Şimdi, geçen hafta şöyle bir şey konuştuk. Bir arkadaşınız yazmıştı, [öğrenci] yazmıştı. X eşittir VT demişti değil mi?
+
+320
+00:59:27,816 --> 00:59:28,776
+[öğrenci] burada mı?
+
+321
+00:59:31,436 --> 00:59:32,896
+Şimdi bu nedir arkadaşlar?
+
+322
+00:59:34,756 --> 00:59:41,836
+Bir hızlanan bir cismin T anındaki, evet buradaymış, T anındaki
+
+323
+00:59:43,027 --> 00:59:53,748
+aldığı, T zamana göre aldığı yolu bulan bir şey. Şimdi bu bir, aslında zamana göre değişim var, burada biz türevi ve integral'i kullanabiliyoruz.
+
+324
+00:59:54,708 --> 01:00:00,788
+İşte hatta hızdaki değişimde neyle bulabiliyorduk? Hızdaki değişim bize ivmeyi ifade ediyordu.
+
+325
+01:00:00,887 --> 01:00:03,967
+İvmenin de bir değişimi vardı, Jack mi ne demiştim, öyle bir şey söylemiştim.
+
+326
+01:00:04,148 --> 01:00:10,587
+Şimdi eğer ben elimde hıza, şey, konuma dair bir şey varsa, aldığım yola dair bir şey varsa,
+
+327
+01:00:11,027 --> 01:00:33,007
+Ben buradan X, V, İ, M, J, buna da J diyelim. Buradan buna bağlı bir denklem elde edeceksem ve işin içinde de değişim varsa, bakın bu birinci dereceden türev, ikinci dereceden türev, üçüncü dereceden türev. Dolayısıyla bundan yola çıkarak bunu elde edeceğim bir denklemde üçüncü mertebeden bir türev olması gerekiyor.
+
+328
+01:00:33,847 --> 01:00:36,288
+Aslında derece demem yanlış, mertebe demem daha doğru.
+
+329
+01:00:36,659 --> 01:00:52,899
+Veya hızdan yola çıkarak işte CERK'e gideceksem ikinci mertebeye gerek var. Dolayısıyla kullandığınız problem, üzerinde çalıştığınız problem, en fazla böyle kaçıncı dereceden türevi işaret istiyorsa ona göre bir diferansiyel denklem üretiyorsunuz.
+
+330
+01:00:52,899 --> 01:00:57,499
+Şimdi bazı sinyallerle alakalı, sistemlerle alakalı özellikler demişiz.
+
+331
+01:00:58,420 --> 01:01:12,420
+Scaling Sistem, örneğin A0 eşittir 1, B0 eşittir A demiş, yani biraz önceki şu şeye benziyor. Ne olabilir? İşte bu bir Scale işlemi. Bir ikisi ne yapıyorsunuz? Belli bir kasayla Scale'i diyorsunuz.
+
+332
+01:01:13,259 --> 01:01:17,299
+İntegral alıcı sistem, işte A1 eşittir 1, B0 eşittir 1 için.
+
+333
+01:01:17,844 --> 01:01:42,184
+Y eşittir, şey, X. Bunu DY bölü DX diye yazıp ondan sonra X yaparsanız ne yapıyorsunuz? İşte iki tarafın da integralini alınca Y ne oluyor? X çarpı DX oluyor şöyle. Buradan da Y'yi X kare bölü 2 artı C gibi bir şeyle, başlangıç koşullarını da burada yerine yazdığınızda Y'nin X'e bağlı durumunu elde ediyorsunuz. Bir diferansiyel denklendi.
+
+334
+01:01:43,443 --> 01:01:52,144
+Bunları kalkulusta gösterdiler mi siz arkadaşlar? Şu diferansiyel denklemlerle alakalı. Mesela Y ikinci türev artı Y türev artı Y.
+
+335
+01:01:52,144 --> 01:01:54,844
+Ne bileyim, böyle böyle bir şey. Hiç gördünüz mü?
+
+336
+01:01:54,844 --> 01:02:02,943
+Ya bu derse gelmeden önce bu tarz bir şeyler görmüş olmanız iyi olur aslında da.
+
+337
+01:02:06,483 --> 01:02:15,343
+Yok hocam, nerede ya? Hiçbir şey gördüğümüz yok. İkisi de iki sene üst üste, kalkın üst köste, bir de hiç. Söyle bir şey yok yani.
+
+338
+01:02:15,763 --> 01:02:22,003
+Tamam. Yani şey, türev ve integral çözmeyi gördük diyenler de var. Nerede gördün [öğrenci]?
+
+339
+01:02:25,012 --> 01:02:28,012
+Onlar görmüştür hocam, onlar başka ünlü müştür.
+
+340
+01:02:31,012 --> 01:02:34,012
+Yok yok şaka bir yana gösterdiler, gösterdiler.
+
+341
+01:02:34,012 --> 01:02:37,012
+Onlar güzel öğrenciler ya hocam hemen öyle atlarlar, gördük hocam.
+
+342
+01:02:37,012 --> 01:02:41,012
+Bunu biliyor musunuz diye soruyor, hepsini her şeyi biliriz derler.
+
+343
+01:02:41,012 --> 01:02:43,012
+Hep böyle hocam yaptık derler.
+
+344
+01:02:43,012 --> 01:02:48,012
+Bu tip öğrenciler işte [öğrenci], [öğrenci] etsin o da onlardan biri.
+
+345
+01:02:48,436 --> 01:03:11,016
+Şimdi, türev ve integral çözmeyi gördük de, onu demiştiniz, tamam, cihatın dediği doğru. Arkadaşlar, böyle bir denklem verilince, şuradaki basit örneği çözmeyi herhalde görmüşsünüzdür. Bunu lisede de, lise bilgisiyle bile şuradaki benim yaptığım işlem hallolur. Ama şu tarz, işte Y, ikinci türev, hatta başına bir X getirelim.
+
+346
+01:03:13,016 --> 01:03:13,516
+Şöyle.
+
+347
+01:03:14,452 --> 01:03:35,436
+Y'ye birinci türe önüne bir Y'ye getirelim. Böyle bir şey görmediniz, yani genelde şeyde göstermezler bunu Kalkulus'ta. Bizde de önceden şey dersi vardı, mühendislik matematiği dersi vardı, orada da anlatılıyordu bu konu ama şu ana kadar ben görmediğinizi düşünüyorum. Normalde işte bu dersin belli bir aşamasında sürekli zaman...
+
+348
+01:03:35,539 --> 01:03:49,460
+Sinyal sistemler veya sürekli zaman sinyal işlemede bunlar da anlatılıyor da işte biz bunları size çok fazla uğraştırmayacağız. Çünkü görmemişsiniz. Yani ben calculus'ta da görülmediğini öyle tahmin ediyordum. Demek ki doğru tahmin etmişim.
+
+349
+01:03:52,279 --> 01:03:59,059
+Türev alma işlemi de arkadaşlar işte ne yapıyorsunuz? X'in belli bir türevini alıyorsunuz. Sürekli zaman olarak da düşünebilirsiniz.
+
+350
+01:03:59,635 --> 01:04:07,795
+Ayrık zaman olarak da düşünebilirsiniz. İşte x'de belli bir değişim olduğunda sonucun etkisi nedir? Ona bakılıyor.
+
+351
+01:04:08,755 --> 01:04:17,056
+Aynı şekilde işte feedbackli bir sistemde işte a eşittir 1, a sıfır eşittir, a ve b sıfır eşittir 1 için böyle bir denklem.
+
+352
+01:04:18,076 --> 01:04:26,415
+Tabi bu çok basit bir feedback sistemi. Şöyle feedback sistemleri de var. Sistemin şu anki çıktısına n diyelim, şey pardon y diyelim.
+
+353
+01:04:26,751 --> 01:04:34,251
+Bir sonraki çıktısı Y artı 1, bir sonraki çıktısı Y artı 2, işte bir önceki Y eksi 1, bir önceki Y eksi 2.
+
+354
+01:04:34,931 --> 01:04:44,371
+Y'nin, yani Y'nin iki önceki, üç önceki sistemlerinin çıktılarına, hatalarına ve onların ortalamalarına bakarak şu denklem ne oluyor?
+
+355
+01:04:44,371 --> 01:04:47,831
+Daha da ilerleyebiliyor. İşte o zaman ikinci dereceden, üçüncü dereceden.
+
+356
+01:04:48,436 --> 01:04:54,256
+Sistemler ortaya çıkıyor. İkinci mertebe, üçüncü mertebe diferansiyel denklem sistemleri ortaya çıkıyor.
+
+357
+01:04:54,776 --> 01:05:02,896
+İşte basit benim hiç sevmediğim RLC devresi. İşte bir XT akım var. İşte gerilim var. Bu gerilim belli bir akım meydana getiriyor.
+
+358
+01:05:02,896 --> 01:05:10,156
+İşte R'den geçiyor, L'den geçiyor, C'den geçiyor. Bu işte Kirchhoff'un bilmem ne kanunu, Kirchhoff pardon Kirchhoff değil.
+
+359
+01:05:11,396 --> 01:05:14,256
+Voltaj kanununa göre bu sistem yazılınca
+
+360
+01:05:14,291 --> 01:05:27,192
+LI üzerinde oluşan şey bir türev alma işlemi. Bunu akımın da zamana göre, zamana bağımlı olarak değiştiğini düşünerek ikinci dereceden bir sisteme alıyoruz.
+
+361
+01:05:27,852 --> 01:05:36,791
+İşte bu linear kas sayıda, bakın şunlar şey, sabit kas sayıda, yani şunlar belli sabit sayılar, herhangi bir şekilde zamana bağlı şeyler değil.
+
+362
+01:05:37,331 --> 01:05:44,491
+doğrusal bir sistemi ortaya çıkarıyor. Bu diferansiyel denklemi çözerseniz, neyi buluyorsunuz?
+
+363
+01:05:45,391 --> 01:05:52,711
+Sistemin davranışını buluyorsunuz. Elinizde L var. L 5 olsun, R 2 olsun, C 3 olsun falan.
+
+364
+01:05:53,371 --> 01:06:00,092
+T eşittir, 10 anında sistemdeki akım değeri, gerilim değeri nedir veya L'nin üzerindeki akım gerilim değerleri nedir?
+
+365
+01:06:03,443 --> 01:06:21,523
+Sistemle alakalı bütün parametreleri o çözülen denklem sayesinde buluyorsunuz. İşte bu bir sistem arkadaşlar, sistemin çözümü. Dersin gayesi aslında öğrenci şeylere, mühendislere böyle sistemlerin tasarlanması, sistemlerin analizidir.
+
+366
+01:06:23,824 --> 01:06:29,264
+Normalde siz görmezsiniz de şeycilerde, elektronikçilerde devre sentezi diye bir şey vardır.
+
+367
+01:06:29,844 --> 01:06:35,563
+Şimdi analiz etmek istediğinizde bu devreyi ne yapıyorsunuz? İşte çözüyorsunuz. Buradan geçen akım şudur, şunlar şudur. İşte böyle çözülüyor.
+
+368
+01:06:37,143 --> 01:06:45,164
+Bir de dönüyor ki bana şu özellikleri sağlayan devreyi yap. Önce ne yapacaksınız? Bir analiz mantığıyla bu şekilde bir denklem oluşturacaksınız.
+
+369
+01:06:46,291 --> 01:06:54,291
+Bu elde ettiğiniz denklemi çözüp, istediğiniz devreye uygun parametreleri belirleyip, ne yapacaksınız? Sistemi tasarlamış olacaksınız.
+
+370
+01:06:54,291 --> 01:07:12,291
+Mekanik bir sistem, arabanın gövdesinde bir durdurma sistemi var, süspansiyon sistemi, belli bir şeyde mesela arabada olmayabilir deprem sırasında bir binanın...
+
+371
+01:07:12,724 --> 01:07:24,724
+süspansiyonu olabilir. Bunlar ne oluyor arkadaşlar? Bakın ikinci mertebeden bir diferansiyel denklemle sistem modelleniyor. Ben bu dersi ilk aldığımda şöyle bir örnek vermişti hocamız.
+
+372
+01:07:24,724 --> 01:07:39,724
+Şimdi son slide'ım galiba, son iki slide'ım. Bunu da bitirelim, onu da sonra ara verelim. Bu çok Newton'un, bu gerçi, bakıyım, displacement place.
+
+373
+01:07:41,043 --> 01:07:45,463
+Şimdi bu Newton'un bir denklemi, bir de Newton'un soğuma denklemi var. Yani bir cisim var.
+
+374
+01:07:47,844 --> 01:07:54,243
+Bu cismi alıyorsunuz, işte T anında bir ölçüm yapıyorsunuz, sıcaklık ölçüyorsunuz, işte belli bir süre sonra tekrar sıcaklık ölçüyorsunuz.
+
+375
+01:07:54,323 --> 01:08:02,663
+Yani örneğin T eşittir 5 anında 40 derece ölçtünüz, 40 santigrat derece. Daha sonra 35 santigrat derece ölçtünüz.
+
+376
+01:08:03,663 --> 01:08:06,243
+Belli bir zaman sonra. İşte bu cismin bir kütlesi var.
+
+377
+01:08:06,675 --> 01:08:18,412
+Soğuma denklemi diye bir şeydi bu. Örneğin bir ceset. Cesedin ne zaman öldüğünü, cinayetin veya herhangi bir şeyleri ne zaman...
+
+378
+01:08:18,452 --> 01:08:26,452
+vefat ettiğini bulmanız gerektiğinde, işte nedir normal insan sıcaklığı, vücut sıcaklığı? İşte 47 derecedir.
+
+379
+01:08:26,452 --> 01:08:35,452
+40'dan 35'e geçişi, lineer bir durum yok burada, kütleye bağlı bir durum var veya başka diğer parametrelere de bağlı bir durum yok.
+
+380
+01:08:35,988 --> 01:09:00,988
+Daha bağlı durum var arkadaşlar. Bu durumlardan yola çıkarak elde edilen, Newton'un soğuma denklemiyle elde edilen bir sistem oluşturup, 47 derece acaba ne zamandı? Şu an 5. saniyede. Şimdi saat mesela 13.30, buradan eksi 10 dakika önce veya 11 saat önce deyip, tam tahmini ölüm saatinin...
+
+381
+01:09:01,247 --> 01:09:08,927
+belirlenmesi gibi uygulamaları var. O da dediğim gibi buradaki şeye benziyor, şuradaki diferansiyel denkleme benziyor.
+
+382
+01:09:10,467 --> 01:09:19,768
+Aslında biz bunu üniversite sınavına hazırlanırken, işte havuz problemi, işçi problemi gibi konular da biz bunu yapıyoruz. Sistem oluşturuyoruz.
+
+383
+01:09:19,768 --> 01:09:24,768
+Ne oluyor? Sistemin denklemini kuruyoruz değil mi? Sadece orada kurduğumuz denklemler,
+
+384
+01:09:25,971 --> 01:09:33,251
+Genellikle tek bir değişkene bağlı. İşçi şu kadar saatte çalışıyor, öbürü şu kadar saatte çalışıyor, ortak bir denklem ortaya çıkıyor.
+
+385
+01:09:33,951 --> 01:09:49,391
+Halbuki işçinin, mesela bir musluk 5 hızla, metre bölü saniye hızla veya araba diyelim, 6 metre bölü saniye hızla bu işi yaptığını kabul ediyoruz.
+
+386
+01:09:49,967 --> 01:10:07,967
+Ama bu hep durmadan bu işçi veya bu musluk hep aynı hızla olacak değil. Eğer hep sürekli ila nihaye aynı olursa o zaman oradaki kurduğumuz denklemler doğru. Onu bir ortalama gibi alarak biz kabul ediyoruz günlük uygulamaları ama bu hızı...
+
+387
+01:10:08,435 --> 01:10:17,636
+kendi içerisinde zamana göre değişkenlik gösterebilir. Yani 4.8 olur, 5.0 olur, 5.2 olur. Böyle bir değişkenlik gösterir bu hız.
+
+388
+01:10:18,056 --> 01:10:28,895
+Bu değişkenliği, musluğun o değişkenliğini dikkate alarak havuz ne kadar dolacak, ne zaman boşalacak, o hesabı yapmak burada bu işin devreye girdiği yer.
+
+389
+01:10:29,515 --> 01:10:33,395
+Herhalde derdimi anlatabildim burada. Sorun var mı arkadaşlar burada?
+
+390
+01:10:36,243 --> 01:10:41,484
+Buraya kadar ki söylediğimiz şeyler, soru varsa yazın, açıklayalım, hemen ara vereceğiz.
+
+391
+01:10:42,703 --> 01:10:52,724
+Sistem, şimdi bu sistemde kullandığımız değişkenler eğer sürekli zaman değişkenler ise inputlar ve outputlar, o zaman neyi kullanıyoruz, nedir sistemi?
+
+392
+01:10:52,963 --> 01:11:03,703
+Sürekli zaman sistemidir. Ama kullandığımız şeyler eğer ayrık zamanlı verirlerse, ayrık zamanda elde edilmiş verirlerse, buna da ayrık zamanda sistemler diyoruz.
+
+393
+01:11:05,171 --> 01:11:13,431
+Ayrık zamanlı sistemler de bu sistemlerin özelliklerini sağlıyor. Scale işlemi, delay işlemi, mesela şu bir bakın.
+
+394
+01:11:13,908 --> 01:11:37,728
+Zaman gecikmesi. Şunlar bir scale işlemidir. Şunlar girişlerimiz ve bunlar girişlere karşılık elde edilen çıkışlar. Bu bir diferansiyel denklem özelliğini de sağlıyor. İşte şu anki durum bu. Bundan bir önceki durum buydu. Dolayısıyla bu iki durum arasındaki fark bize diferansiyelliği sağlayacak. X n'lerimizin input y n'lerimizin output olduğunu söylüyoruz.
+
+395
+01:11:41,908 --> 01:11:46,667
+G'ler, T'ler gitti. Yerine köşeli parantez içerisinde N gibi bir şey geldi.
+
+396
+01:11:49,388 --> 01:11:57,328
+Bana göre, yani keşke bu dersi biz değil de elektronikçiler alsa, bu dersin asıl olması gereken şey,
+
+397
+01:11:59,708 --> 01:12:08,108
+yani olayların gidişatından yola çıkarak, şuradaki, arkadaki mantığı anlayarak,
+
+398
+01:12:08,595 --> 01:12:31,255
+Neyi yapabilmek? Şu denklemi kurabilmek arkadaş. Bu denklemi kurduktan sonra bu denklemi zaten Mettep kendi çözüyor. İlerleyen haftalarda ben size Mettep ile nasıl diferansiyel denklemler çözülür anlatacağım. Denklemin kaç sayılarını veriyorsunuz, dereceler, mertebeler var. Inputları veriyorsunuz, sistem zaten kendi çözüyor. Zaten integrali falan da çözüyor Mettep veya Python'da.
+
+399
+01:12:31,764 --> 01:12:57,023
+Önemli olan bana göre, bir mühendis olarak, tabii biz o mühendis adayları değiliz çünkü elektronikçi değiliz. Şu arkadaki mantığı çözüp neyi yapabilmek? Şu denklemi kurabilmektir. Denklemi çözmek mevzu değil. İş zaten biraz da o yüzden yürüyor. Örneğin bir ayrık zamanlı sistem örneği varmış. Bakalım. İşte bir sisteme bir giriş uygulanıyor.
+
+400
+01:12:57,587 --> 01:13:06,067
+Bu girişte öncelikle bir hata değeri, belli bir hata değeri ölçeklenerek geliyor ve bu hata değeri şurada sistemin girişine yansıtılıyor.
+
+401
+01:13:06,788 --> 01:13:15,407
+Xn'den A çarpı yn gibi bir şey yansıtılıyor ve bu sistem daha sonra belli bir gecikmeyle çıktı olarak gönderiliyor.
+
+402
+01:13:15,407 --> 01:13:21,067
+Bu gecikmeye de işte belli bir ne kadar süre olarak ifade edilebilirse o yansıtılacak.
+
+403
+01:13:25,555 --> 01:13:40,555
+gibi bir sonuç verecek. Niye n-1? İşte burada biz gecikmeye bir değerini verirsek, yani her şu anki çıkış bir önceki çıkışla ilişkili olsun dersek, yn...
+
+404
+01:13:40,851 --> 01:13:46,871
+X'in bir önceki ve çıktığının bir önceki değerinin farkıyla elde edilen bir şeymiş.
+
+405
+01:13:46,951 --> 01:13:51,592
+Tabi burada A'yı mesela 1 alabiliriz. Gecikmeyi de 1 alabiliriz.
+
+406
+01:13:51,692 --> 01:13:54,592
+A'yı 1 aldığımız için herhangi bir etkisi olmayacaktır şurada.
+
+407
+01:13:55,172 --> 01:13:57,971
+2 alırsak 3 alırsak oradaki etkiyi arttırırız demektir.
+
+408
+01:13:58,672 --> 01:14:01,192
+Gibi gibi özellikler var.
+
+409
+01:14:03,192 --> 01:14:07,172
+Evet, sorumuz yoksa arkadaşlar, şimdi 10 geçiyor.
+
+410
+01:14:08,404 --> 01:14:25,704
+15 dakika ara verelim mi? Yeterli mi? Gelince yine blok yaparız. Herhalde yeterli olur. O zaman 25 geçe, hatta 26 geçe, 11 geçiyor. Görüşmek üzere. Gelince biraz örnek bakalım.
+
+411
+01:29:15,091 --> 01:29:36,311
+Evet arkadaşlar, şimdi buraya kadar ki gördüğümüz konularla alakalı, geçen sene hocaların sorduğu, bir de benim böyle birkaç önemli gördüğüm bazı soruları çözmeye çalışalım. Bir kısmını size çalışma sorusu olarak vereyim. Ondan sonra dersimizi bitiririz.
+
+412
+01:29:37,811 --> 01:29:41,171
+Şu pdf'i Nizahmet Hoca'nın sayfasında da bulabilirsiniz.
+
+413
+01:29:42,804 --> 01:29:45,283
+Sinyaller sistemlerle alakalı kısımda.
+
+414
+01:29:47,363 --> 01:29:50,923
+Bir kısmını doğrudan göstereceğim, bir kısmını çözeceğiz.
+
+415
+01:29:53,023 --> 01:29:56,163
+Şimdi böyle bir sinyal verilmiş.
+
+416
+01:29:57,363 --> 01:30:03,443
+Sıfırdan dörde kadar zaman aralığında sıfırdan üçe doğru diner artıyor.
+
+417
+01:30:04,863 --> 01:30:06,703
+Bunu diyor ki t-2.
+
+418
+01:30:06,703 --> 01:30:08,103
+Şimdi t-2 neydi?
+
+419
+01:30:09,844 --> 01:30:11,844
+Neye karşılık geliyor arkadaşlar?
+
+420
+01:30:19,828 --> 01:30:21,028
+Şöyle bir şey
+
+421
+01:30:22,628 --> 01:30:23,828
+Yapabilirsek
+
+422
+01:30:24,228 --> 01:30:25,628
+Piyasayn diyelim
+
+423
+01:30:31,667 --> 01:30:33,667
+Şu, evet.
+
+424
+01:30:36,268 --> 01:30:39,867
+Zamanda ötelemeye, değil mi? Şu zamanda ölçekleme.
+
+425
+01:30:39,867 --> 01:30:44,667
+Tabi bu ölçekleme 2 ile çarpınca daraltma gibi bir şey oluyordu.
+
+426
+01:30:44,667 --> 01:30:47,268
+Sinyal daralacak. Şu öteleme olacak.
+
+427
+01:30:47,268 --> 01:30:53,067
+2'ye bölünce genişleme oluyordu. Şurada da negatifini alıyorduk. Bunlar temel bildiğimiz operatörler.
+
+428
+01:30:53,300 --> 01:31:20,200
+Şimdi, eksi iki birim demek ne demek arkadaşlar? Bu zamanda öteleme demek. Yani T anı, T zamanındaki bir şey, T eksi iki de gelecek. İki birim saniye, iki birim zaman sonra gelecek demek. İster sürekli olsun, ister ayrık olsun, ikisinde de aynı. Dolayısıyla bu iki birim ötelenmiş bir sinyal olacak. Şu şekilde, diğer herhangi bir sinyalin durumunda başka bir değişiklik yok.
+
+429
+01:31:20,756 --> 01:31:37,836
+Şuna baktığımızda ikiye bölmek istediğimizde, şimdi dört no'lu zamandaki bir değer kaçtır? Dört no'lu zamanda üçe karşılık giriyor. O zaman dört no'lu zamandaki değer yarı yarıya zamanda ölçekleme yaptığımız için yine üç değerinde ama iki no'lu zamanda.
+
+430
+01:31:38,228 --> 01:31:59,128
+1 nol 2 nol zamandaki değer, 2. t eşittir 2 anındaki değer 1'e gelecek. O da doğrusal bir şekilde ölçekleniyor. Sinyali bu şekilde sıkıştırmış oluyoruz. Tam tersinden düşünürsek 4, 8'e gidecek. İşte 2, 4'e gidecek. 1, 2'ye, 3, 6'ya gidecek. Ve şuna benzer.
+
+431
+01:32:01,203 --> 01:32:23,743
+Bir sonuç elde edeceğiz. Bakın yine genlik değeri aynı. Genlik değerinde herhangi bir değişim yok. Bu sinyalin zamanda tersini aldığımızda, eksi T'yi aldığımızda yine eksi 4 anında, T'ye eşittir eksi 4'te, yine 3'ü gösterecek şekilde ve doğrusal olarak artıyor o alakta diğer durumlarda sıfır. Böyle bir sonuç elde ediyoruz.
+
+432
+01:32:27,507 --> 01:32:35,507
+Bu sürekli zamanda, kontinüüs zamandaki sinyali ayrık zamanda yapmak istediğimizde nasıl bir değişim varmış?
+
+433
+01:32:35,507 --> 01:32:45,507
+İşte 3'te ve 4'te 3'ü gösteriyor. Diğer 5'ten sonra 0, 3'e gelene kadar işte arada 1 ve 2 değerlerini alıyormuş.
+
+434
+01:32:45,507 --> 01:32:47,019
+Yani dizimizin...
+
+435
+01:32:47,252 --> 01:33:07,292
+elemanları nasıl arkadaşlar? x eşittir 0 da 0. Dizinin 0. elemanı 0. c ile yazacağımızı düşünürsek, sonra 1, sonra 2, sonra 3, 3 diye gidiyor. Hemen hemen ona benzer bir şey. Diğerleri zaten önü sonu 0 olduğu için orada herhangi bir şey yok. n-2, 2n, eksi n ve eksi n artı 2.
+
+436
+01:33:07,828 --> 01:33:34,528
+durumlarına baktığımızda, şimdi şunlar, burada bir ölçekleme olduğunu söylüyoruz. Burada önce bir ölçek, ters çevirme var, sonra iki birim geriye götürme var. İlkine baktığımızda iki birim ötelemek ne demek? Şurada ilk defa bir nolu zamanda bir gösteren sinyal, üç nolu zamanda bir gösterecek demektir. Diğerleri otomatik olarak iki birim kayıyordur. Şimdi iki seçittir iki n'e baktığımızda, iki n ne yapıyordu arkadaşlar?
+
+437
+01:33:37,140 --> 01:34:04,500
+4 nolu zamandaki sinyali 2'ye getireceğiz. Yine aynı genlikte. Şuradaki 3 nolu zamandaki veriyi 1.5 falan oraya getireceğiz. Biraz daha arada olacak. Burada belki tam birinin üzerinde çıkmıştı. Tam öyle şu arada bir şey var. Ama burada bir kayıp olacak. Şimdi o kaybı yazamıyoruz. Niye? Bunu şu şekilde yapabilirsiniz. 0'dan 2'ye.
+
+438
+01:34:05,011 --> 01:34:10,011
+0'dan 2'ye giderken 1 ne oluyordu? Hariç tutuluyordu. O zaman 2'yi 1'e getiriyoruz.
+
+439
+01:34:11,011 --> 01:34:16,851
+2'yi 1'e getirdik burada. Aradaki şey ne oldu? Yok oldu. Onu tekrar 0.5 gibi bir şey çıkarıp yazmıyoruz burada.
+
+440
+01:34:17,211 --> 01:34:22,211
+Çünkü verleyi Downsampling ile yarı yarıya veriyi küçültmüş olduk.
+
+441
+01:34:22,644 --> 01:34:32,904
+Üç nolu şey de normalde bir buçuğa gelecek ama bir buçuk nolu zaman diye bir şey olmadığı için o da kayboluyor. Dört nolu zamandaki şeyi n eşittir dört için ikiye getiriyoruz ve bu şekilde bitiriyoruz.
+
+442
+01:34:33,744 --> 01:34:42,064
+Eksi n için yaptığımız neydi arkadaşlar? Tam tersini almak. Her bir değeri zamanda tam ters değerlerini gelecek şekilde yazıyoruz.
+
+443
+01:34:43,023 --> 01:34:45,443
+Eksi n artı iki dediğimiz şey nedir?
+
+444
+01:34:46,163 --> 01:34:57,484
+eksi n aldığımızda bu şekilde gelen şey, artı iki olarak öteleme yaptığımızda ne olacak? Bu tarafa doğru, yani şu eksi n'a doğru kayacaktır. Bu şekilde yazmış olacağız.
+
+445
+01:35:00,443 --> 01:35:11,644
+Şimdi biraz daha karmaşıklaştık. Bizim bazı spesifik sinyallerimiz vardı, değil mi? Bunlar mesela Rectangular sinyaldi. Belli aralıkta çizemiyorum da şu an şuraya çizmeye çalışayım.
+
+446
+01:35:23,380 --> 01:35:49,355
+Neydi bunlardan bir tanesi? Rectangle olandı, ondan sonra üçgen olandı, sonra unit step vardı, bu çok kolay bir şeydi, şuradan itibaren sıfırdan itibaren. Sonra birim impuls vardı, o da şurada şey yapıyordu, çok çizemiyorum ama bilinen şeyler, bu u, şu drag delta, bu triangle, bu rectangle sinyalleri bildi. Herhangi bir sinyali bunlarla çarpınca,
+
+447
+01:35:49,716 --> 01:36:06,496
+Bakalım nasıl sonuçlar gelecek. 2T sinyalimiz buymuş. Bunu 1-T ile çarpacağız. Şimdi 1-T ile bunu çarpmak demek ne demek? Önce bunu bulmamız lazım. Sonra bunu bulduktan sonra bunun sıfır anına göre
+
+448
+01:36:07,796 --> 01:36:18,796
+Bir yerden itibaren bir, bir yerden önce kalan kısımlar sıfır oluyordu. O sıfır olan kısımlar birbirine karşı çarpılacağı için etkisiz yutan eleman olacak.
+
+449
+01:36:18,796 --> 01:36:20,796
+Ve neyi bulacağız?
+
+450
+01:36:20,796 --> 01:36:26,796
+Neyi bulacağız? Bir kısmı söndürülmüş, bir kısmı yok edilmiş bir sinyal elde edeceğiz.
+
+451
+01:36:26,796 --> 01:36:33,796
+Şimdi şurada baktığımızda bu, xd çarpı u1-t.
+
+452
+01:36:35,231 --> 01:36:39,592
+Şöyle diyeyim, u-t nedir arkadaşlar? u-t şöyle bir işarettir.
+
+453
+01:36:40,652 --> 01:36:43,992
+Bunu bir birim ötelersek, bir birim şuraya kadar gelecektir.
+
+454
+01:36:44,872 --> 01:36:46,992
+Şu şekilde, yani şurası da dahil olacaktır.
+
+455
+01:36:48,492 --> 01:36:53,452
+Birden itibaren geriye doğru bütün değerler aynen kalacak.
+
+456
+01:36:54,351 --> 01:37:00,112
+Şu birden itibaren bütün değerler u sinyalinde şöyle kalacağı için, sıfır olacağı için bunlar da yok olacak.
+
+457
+01:37:00,752 --> 01:37:01,672
+Dolayısıyla biz ne yapacağız?
+
+458
+01:37:02,484 --> 01:37:10,484
+Birden itibaren sinyalin değerlerini koruyoruz. Şuradan itibaren. Şunlar ne oluyor? Şuradaki birleşenler sıfır oluyor demektir.
+
+459
+01:37:10,484 --> 01:37:27,484
+Şimdi şuna baktığımızda UT nasıl bir şeydi? Şöyle çizebilirsem. Bu da o kadar şey çiziyor ki. Kalın çiziyor. Şöyle yapalım. UT buydu.
+
+460
+01:37:28,916 --> 01:37:56,215
+UT-1 neydi? Evet UT-1'miş o da. Onu da şöyle çizersem. Bir birim ötelenmiş bir şey. Şimdi UT'den UT-1'i çıkarmak ne demek? Şuradaki değerler, yani burada bunun sıfırı var. Bu birden şu sıfırları çıkartırsam ne olacak? Burası 1 olarak kalacak. Onu da şöyle neyle çizeyim?
+
+461
+01:37:57,363 --> 01:38:21,103
+Şunu da çizelim. Yani burası 0, 0, 0, 0 devam edecek. Şimdi buradan birlerden sıfırları çıkartırsam ne olacak? Burada biri çıkacak, burada 1, 1, 1 kalacak. Şurada da birlerden birleri çıkartırsam ne olacak? Şöyle bir sinyal kalacak. Şu aralıktaki zaman bileşenlerini olduğu gibi geçiren, diğer bileşenleri bastıran bir sinyal elde ediyorum.
+
+462
+01:38:22,452 --> 01:38:37,832
+Buralar 0, şuralar 1. O zaman şu aralık nedir? Bana bu lazım. Ne kadar ötelemiştik UT sinyalini şurada? UT-1 kadar ötelemiştik. O zaman şurası T en eşittir bir durumu.
+
+463
+01:38:39,311 --> 01:38:47,932
+Orijinal sinyalle de çarptığımız için, şununla da çarptığımız için, 0-1 arasındaki değerler olduğu gibi kalacak. Diğer değerler sönümlenecek.
+
+464
+01:38:48,724 --> 01:38:54,564
+Hangi cevapta o? B seçeneği? Evet. Bakın 0-1 arası kalıyor, diğerleri sönümleniyor.
+
+465
+01:39:00,304 --> 01:39:13,043
+Şuna baktığımızda, öncelikle x'i bir genişletelim diyoruz. Şimdi x'i genişletince bu ne demek? T bölü 2 genişletmek. 2'deki değer 4'e gidecek.
+
+466
+01:39:13,844 --> 01:39:15,944
+Şunun bir görüntüsünü alayım da.
+
+467
+01:39:24,500 --> 01:39:26,060
+Şuraya, yapıştıralım.
+
+468
+01:39:35,475 --> 01:39:46,975
+Ne lazımmış? X, T bölü 2. Şimdi bunu X, T bölü 2'ye uyarlayacak olursak, 4 nolu zamanda 2 nolu değere gidiyoruz.
+
+469
+01:39:48,295 --> 01:39:52,935
+2 nolu zamanda nereye gidiyoruz? Şöyle bir şey olacak.
+
+470
+01:39:57,939 --> 01:39:59,939
+0'dan
+
+471
+01:39:59,939 --> 01:40:07,659
+eksi 1'den nereye gideceğiz? Şuraya eksi 2 diyelim arkadaşlar. Eksi 2'den şöyle gelecek 1'e.
+
+472
+01:40:08,939 --> 01:40:10,779
+1'den buraya doğru böyle gelecek.
+
+473
+01:40:12,460 --> 01:40:13,600
+Arada şunlar hop.
+
+474
+01:40:19,859 --> 01:40:24,719
+Şuralar yok arada. Şöyle bir sinyal edeceğiz.
+
+475
+01:40:31,539 --> 01:40:32,119
+Değil mi?
+
+476
+01:40:33,079 --> 01:40:37,879
+Bir ne olduğu zamandaki, işte birden ikiye geçiş ikiye geldi.
+
+477
+01:40:38,679 --> 01:40:40,239
+İşte şurada bir var.
+
+478
+01:40:41,299 --> 01:40:42,879
+Arada iki üç var, onlar önemli değil.
+
+479
+01:40:43,779 --> 01:40:45,859
+Eksi bir, eksi ikiye gitti.
+
+480
+01:40:46,419 --> 01:40:48,039
+Zamanla böyle bir ölçekleme yaptık.
+
+481
+01:40:48,919 --> 01:40:50,859
+Burada herhalde mutlaka bakız.
+
+482
+01:40:52,399 --> 01:40:55,119
+Geldiğimiz zaman şurada ne ile çarpı yapmışız?
+
+483
+01:40:55,279 --> 01:40:56,939
+Drag delta T bir buçuk.
+
+484
+01:40:58,499 --> 01:40:58,879
+Tamam.
+
+485
+01:41:02,771 --> 01:41:03,171
+Şu.
+
+486
+01:41:04,951 --> 01:41:07,011
+T-1.5
+
+487
+01:41:07,011 --> 01:41:10,291
+Şimdi bu Dragg-Delta'nın özelliği neydi?
+
+488
+01:41:11,511 --> 01:41:13,431
+T eşittir sıfır anında 1 veriyordu.
+
+489
+01:41:14,051 --> 01:41:18,112
+Bu eksi 1.5 ötelendiğinde neyi verecek arkadaşlar?
+
+490
+01:41:19,231 --> 01:41:20,311
+Eksi 1 birim ötelendi.
+
+491
+01:41:20,571 --> 01:41:26,531
+Şuradaki artı 1.5 değerinde 1 birim genlik verecek.
+
+492
+01:41:26,612 --> 01:41:27,571
+Şuradaki değer yok olacak.
+
+493
+01:41:27,571 --> 01:41:30,347
+Ve bu ikisini ben...
+
+494
+01:41:31,188 --> 01:41:44,568
+x t bölü 2 ile drak delta t eksi bir buçuğu çarparsam, şu bir buçuk zamanında denk gelen o andaki değer kalacak.
+
+495
+01:41:46,287 --> 01:41:51,188
+Bir buçuk zamanında, işte o da şurada bir yerde. Ve oradaki değerimiz kaç? 1.
+
+496
+01:41:51,967 --> 01:41:57,927
+Oradaki 1 ile buradaki 1 çarpıldığında orada bir birim işaret göreceğiz.
+
+497
+01:41:58,739 --> 01:42:21,659
+Geri kalan, şunun kendi sıfırları, bunun bu kısmındaki değerleri sıfırlayacak. Bunun yine buradaki sıfırları da bunları sıfırlayacak. Yani şunlar 1x0, 1x0 sıfırlanacak. Sonuç olarak ben neyi göreceğim? Burada tek bir böyle bir pals sinyali gibi bir şey göreceğim. Evet, hemen hemen şöyle bir şey. Genliğin olacak bunun.
+
+498
+01:42:24,884 --> 01:42:51,943
+Tabii geleneğini bir dakika şöyle tayin ettik. Bir buçuk zamanı, affedersiniz arkadaşlar şurada hata yaptık. Bir buçuk zamanı burada üçe denk geleceği için, şurada şey olacak, buraya gelecek sinyal. Şimdi burada bunun değeri bir, bunun kendi değeri iki. Dolayısıyla şurası yok artık. Buradaki iki değeriyle şuradaki bir çarpıldığında iki. Niye böyle yaptık? Çünkü önce sinyali,
+
+499
+01:42:53,171 --> 01:43:02,572
+Genişlettik, genişlettikten sonra t-1.5 yaptıktan sonra ne yapıyoruz? Bu sonucu elde ediyoruz.
+
+500
+01:43:02,572 --> 01:43:06,731
+Böyledir diye. Evet, 1.5.
+
+501
+01:43:10,868 --> 01:43:12,368
+x-3 bölü 2
+
+502
+01:43:12,368 --> 01:43:15,168
+Şimdi
+
+503
+01:43:15,168 --> 01:43:18,808
+Eksponansiyel olarak
+
+504
+01:43:18,808 --> 01:43:22,868
+Azalan şu sinyalin
+
+505
+01:43:23,528 --> 01:43:26,748
+Enerji bileşenini bulun demiş.
+
+506
+01:43:26,748 --> 01:43:27,868
+Şimdi bir şeyin
+
+507
+01:43:29,028 --> 01:43:32,608
+Enerjisini hesaplarken ne yapıyorduk?
+
+508
+01:43:32,688 --> 01:43:33,088
+Sinyalin
+
+509
+01:43:33,747 --> 01:43:52,527
+Mutlak değerinin karelerini alıp, zamana göre integre ediyorduk. Bana öncelikle o zaman ne lazım? Şu integreyle hesaplamam lazım değil mi? Enerji hesaplarken, X, T, karesi, D, D.
+
+510
+01:43:53,619 --> 01:44:03,500
+O zaman öncelikle şu XT'nin karesini bulalım diye, mutlak değerinin karesini bulmak istediğimizde, E üzeri X2T'nin karesi ne oluyor? E üzeri X4T oluyor.
+
+511
+01:44:04,920 --> 01:44:16,680
+Sonra bu ifadeyi, X sonsuzdan, tabii şu integral, enerji hesabında X sonsuzdan artı sonsuza doğru yapılacak bir iş.
+
+512
+01:44:17,140 --> 01:44:40,220
+Şimdi eksi sonsuzluğa bakıyorum da, eksi sonsuzdan sıfıra kadarki bütün değerlerde durum sıfır. O zaman ne yapacağız? Bu aralığı sıfıra çekeceğiz. Çünkü sıfır birleşenleri anlamsız. Sıfırdan sonsuza kadar bu integrali kullanacağız. Şimdi sıfırdan sonsuza kadar eksi e üzeri e üzeri eksi 4T'yi
+
+513
+01:44:40,692 --> 01:44:57,311
+İntegralini aldığımızda, işte eksi 1 bölü 4 çarpı e üzeri eksi 4 de çıkıyor. Burada da integralin sınırlarını yazdığımızda, eksi 4 çarpı sonsuz artı, aradaki eksiler birbirine art yapıyor, eksi 4 çarpı 0.
+
+514
+01:44:58,036 --> 01:45:12,815
+Şimdi e üzeri eksi 4 çarpı sonsuz, bu sıfır demektir arkadaşlar. Burası ne olacak? Eksi 1 bölü 4 çarpı sıfır gelecek. Şuradan da e üzeri sıfır 1 gelecektir. Bu da artı 1 bölü 4. Sonuç ne olacak? Bunun 1 bölü 4 olacak.
+
+515
+01:45:13,975 --> 01:45:22,815
+Şimdi bu değer sonsuz bir şey çıktı mı? Çıkmadı. Belli bir sayı çıktı. Dolayısıyla bu bir...
+
+516
+01:45:23,123 --> 01:45:37,863
+Enerji sinyaldir. Soru da vermiş mi? Determine whether this signal is energy signal or not. Yani böyle bir soru da gelebilir. Bu sinyal enerji sinyali midir, değil midir? Bunu belirleyin.
+
+517
+01:45:38,423 --> 01:45:50,264
+İşte belirlerken burası sonsuz çıkmadığı için, pardon enerji sonlu çıktığı için, yani şuradaki finite çıktığı için ne yapıyoruz? Bunu enerji sinyali diyoruz.
+
+518
+01:45:54,195 --> 01:46:15,095
+Şimdi şöyle bir şey, bir sinizoidal işaret var, A'nın pozitif, real bir sabit olduğunu söylüyor. Bunun bir periyot boyunca neyini bulmamız lazım? Enerjisini bulmamız lazımmış. İkincisi de ortalama gücünü bulacağız.
+
+519
+01:46:21,652 --> 01:46:45,652
+Benim eksi sonsuzdan artı sonsuza bunu çözmem lazım değil mi? Ama zaten bu periyodik bir işaretse o zaman benim bir periyod boyunca bunu analiz etmem yeterli. Peki analiz edeceksen bir periyod, periyodun başlangıç ve bitiş sınırlarını, zaman bilimlerini yazmam lazım. Onu bulduktan sonra ne yapacağız? Enerjisini ve...
+
+520
+01:46:46,195 --> 01:46:49,996
+Ortalama gücünü bulacağız. Şimdi periyot bulurken yaptığımız şey neydi?
+
+521
+01:46:51,935 --> 01:46:54,095
+A cos omega t. Şuraya yazayım da.
+
+522
+01:46:54,275 --> 01:46:55,076
+Hani buradan gidelim.
+
+523
+01:46:57,956 --> 01:47:01,675
+A çarpı cos omega t.
+
+524
+01:47:02,536 --> 01:47:05,815
+Şimdi omega dediğimiz şey, omega sıfır mıydı? Değildi. Tamam.
+
+525
+01:47:06,756 --> 01:47:09,796
+V eşittir 2 pi f.
+
+526
+01:47:10,956 --> 01:47:11,576
+Değil mi arkadaşlar?
+
+527
+01:47:12,243 --> 01:47:22,043
+Buradan periyoda geçmek istersek, 2P bölü, yani tabi önce periyoda geçmeden önce frekansı, şey, F'yi çekeceğiz.
+
+528
+01:47:23,143 --> 01:47:33,663
+F eşittir, Omega bölü 2P, buradan da T yerine, F yerine 1 bölü T yazarsak, 2P bölü Omega bunu buluyoruz.
+
+529
+01:47:36,692 --> 01:47:40,532
+Sınırlarımız 2P bölü Omega olacakmış.
+
+530
+01:47:41,032 --> 01:47:44,471
+Eksi 2P bölü Omega artı 2P bölü Omega.
+
+531
+01:47:44,891 --> 01:47:47,591
+Tabi bunu T0 olarak şimdilik yazdık.
+
+532
+01:47:48,452 --> 01:47:54,851
+Ve bunu bir periyot boyunca yapmak için T0 bölü 2, eksi T0 bölü 2'den artı T0 bölü 2'ye.
+
+533
+01:47:54,851 --> 01:47:56,872
+Yani bir periyotu bu şekilde ifade edebiliyoruz.
+
+534
+01:47:57,492 --> 01:48:00,752
+Sinyalin ve mutlak değerinin karesini zamana göre integre edeceğiz.
+
+535
+01:48:01,395 --> 01:48:04,416
+Sinyalimiz A çarpı cos omega t'nin karesidir.
+
+536
+01:48:05,715 --> 01:48:11,935
+Şurada cos omega t'nin karesinin açılımının böyle bir şey olduğunu biz size sorularda veririz.
+
+537
+01:48:11,935 --> 01:48:14,935
+Eğer böyle bir şeye ihtiyaç varsa trigonometrik bir eşitliktir.
+
+538
+01:48:16,036 --> 01:48:16,935
+Nedir bu arkadaşlar?
+
+539
+01:48:17,435 --> 01:48:22,815
+cos x, cos kare x'in açılımı 1 artı cos 2 x bölü 2.
+
+540
+01:48:26,868 --> 01:48:31,587
+kare şey çıkıyor, omega t'ye çıkıyor.
+
+541
+01:48:32,268 --> 01:48:36,908
+a kare dışarıya çıkınca benim şu integralı çözmem gerekecek.
+
+542
+01:48:37,507 --> 01:48:42,887
+Şimdi kosünüs karenin cevabı da şurada verildiği için ne yapacağız?
+
+543
+01:48:42,948 --> 01:48:45,568
+1 artı kosünüs 2 omega t bölü 2 yazacağız.
+
+544
+01:48:46,707 --> 01:48:49,587
+Sonra şu 2'yi de dışarıya A bölü 2 olarak atıyoruz.
+
+545
+01:48:49,887 --> 01:48:54,727
+A bölü 2 atıldıktan sonra burada bir birli terim var, bir de kosünüstü terim var.
+
+546
+01:48:55,227 --> 01:48:55,547
+Değil mi?
+
+547
+01:48:55,847 --> 01:49:00,787
+Bunu iki farklı integral şeklinde burayı birli terim için, burayı da kosünüstü terim için yazarsak,
+
+548
+01:49:01,407 --> 01:49:02,687
+integral'i çözmüş olacağız.
+
+549
+01:49:05,047 --> 01:49:11,687
+Geldiğimizde, birli terimin cevabının, integral'in t olduğunu,
+
+550
+01:49:12,787 --> 01:49:15,188
+Bu t'yi
+
+551
+01:49:15,188 --> 01:49:18,867
+periyodumuza uygularsak, işte
+
+552
+01:49:18,867 --> 01:49:20,987
+a kare çarpı t bölü 2
+
+553
+01:49:20,987 --> 01:49:22,827
+a kare bölü 2 baştaydı.
+
+554
+01:49:23,487 --> 01:49:26,007
+t bölü 2'den eksi t sıfır bölü 2'ye
+
+555
+01:49:26,007 --> 01:49:30,148
+sınırları yazdığımızda, buradan a kare bölü 2 t geliyor.
+
+556
+01:49:30,747 --> 01:49:32,768
+Şimdi ikinci integrali çalıştırdığımızda
+
+557
+01:49:32,768 --> 01:49:35,347
+1 bölü 2 omega sinüs 2 pi t
+
+558
+01:49:35,347 --> 01:49:38,807
+integralin sonucu sınırları yazdığımızda
+
+559
+01:49:39,152 --> 01:49:48,652
+Ne gelecekmiş, şu gelecekmiş. Şimdi şu bileşene, bu bileşeni topluyoruz. Ne oluyor? Nihai olarak buradaki sonucumuz,
+
+560
+01:50:05,011 --> 01:50:30,551
+2P bölü Omega'yı buluyoruz. Buradan da A0 bölü 2 bulunuyor. Bu ikisinin toplamı ne olacakmış? Şurada 0'ı verecek. Ortalama gücü istediğimizde E0'ı, şuradaki E0'ı alıp T0'a böldüğümüzde ne oluyor? A kare bölü 2'yi bulmuş oluyoruz.
+
+561
+01:50:32,083 --> 01:50:50,083
+Herhalde çok zor değildir. E0'ın nasıl geldiğini şurada bakın. İki tane integral, tek integral ile de ayrı ayrı çözebilirdi de. Burada bu var. Burada bulduğu bunu şuradaki sıfırla çarpıyor. Niye sıfır geldiğini anlamayan var mı?
+
+562
+01:50:54,228 --> 01:50:55,728
+Niye? Sıfır geldi?
+
+563
+01:50:59,444 --> 01:51:01,444
+Herhalde benden daha iyi biliyorsunuzdur onu.
+
+564
+01:51:07,475 --> 01:51:09,395
+Sonuç niye sıfır geldi arkadaşlar şurada?
+
+565
+01:51:15,188 --> 01:51:39,707
+Hiç bilmiyoruz hocam karıştın. Sinüs 2P, sinüs 180P, 2P şey olduğu için, tamam. Ne olacak? Oradan 0 gelecek. Bu 0 ile, buradaki 0 ile şunu topladığınızda E0'ın değeri bunu buluyoruz. E0'ı da bir periyod boyunca periyoda böldüğümüzde ne yapıyor? Ortalama gücünü buluyoruz. A kare bölü 2'ymiş.
+
+566
+01:51:44,595 --> 01:52:01,435
+Sinyalimiz böyle bir şey ise, diyor ki enerji ve güç birleşenlerini bulunuz. Öncelikle ne lazım? Yine integralin eksi sonsuz artı sonsuz aralığında XT'nin karesi lazım. XT'nin karesini alırken de işte E üzeri eksi 2T olarak aldık.
+
+567
+01:52:01,695 --> 01:52:11,376
+Yalnız burada şöyle bir şey var. T'yi incelememiz gerekiyor. T sıfırdan küçük olduğu durumlarda sinyalimiz E üzeri 2T gibi.
+
+568
+01:52:11,807 --> 01:52:27,887
+büyük olduğu durumlarda e üzeri eksi 2T gibi davranıyor. Sinyal bu şekilde dönüştü. Şimdi ben bu sinyale, o zaman ne yapacağım? İntegrale uygularken, yani parçalı bir fonksiyon olduğu için FT'nin karesi, şöyle diyelim,
+
+569
+01:52:29,728 --> 01:52:32,948
+bu da niye bu kadar uzun yazıyor, şey yazıyor, anlamıyorum, DT.
+
+570
+01:52:36,340 --> 01:52:38,760
+İntegrali iki parçaya bölmek durumundayız.
+
+571
+01:52:39,860 --> 01:52:45,240
+Eksi sonsuzdan sıfıra kadar ki sıfırdan küçük olduğu yerlerde sinyal bu şekilde davranış gösteriyormuş.
+
+572
+01:52:45,960 --> 01:52:48,660
+Diğer durumda sinyal bu şekilde davranış gösteriyormuş.
+
+573
+01:52:49,780 --> 01:53:00,240
+Şunun integralini aldığımızda, bu integrali hesapladığımızda, yani şurayı hesaplarsak gelen değer, ondan sonra burayı hesaplarsak gelen değer buymuş.
+
+574
+01:53:03,764 --> 01:53:07,484
+Sonlu bir değer, sonsuz çıkmadığı için buna bir enerji sinyali diyoruz.
+
+575
+01:53:08,224 --> 01:53:12,764
+Bunun ortalama gücünü hesaplarken de ne yapacağız?
+
+576
+01:53:14,444 --> 01:53:16,784
+Bir periyot boyunca işareti analiz edeceğiz.
+
+577
+01:53:17,064 --> 01:53:21,284
+İşaretin periyoduna eksi t bölü 2 artı t bölü 2 dersek,
+
+578
+01:53:22,100 --> 01:53:43,680
+Burada yine işaretin karesini alıyoruz. Sınır 1 bölü T, bu da ortalama almak demek, periyoda böldük işareti. Ne geliyor? 2 bölü T. Sıfırdan T bölü 2'ye sinyalimiz E üzeri 2T şeklinde çalışacak. Çünkü pozitif değerlerde kabul ettik. 1 bölü T çarpı 1 eksi E üzeri T.
+
+579
+01:53:49,043 --> 01:53:54,463
+Şimdi şu gelen değer sonsuz çıkmadı ya, yani integralin sonucu sonsuz çıkabilirdi.
+
+580
+01:53:56,703 --> 01:54:08,483
+Mesela integralin sonucu T çıksa, sıfır sonsuz aralığında T yerine sonsuz yazarsın, sonsuz eksi sıfır sonsuz olur. Öyle değil mi?
+
+581
+01:54:09,203 --> 01:54:09,763
+Bir çıktı.
+
+582
+01:54:10,676 --> 01:54:23,236
+Bu bir çıktığı için bir de şu sınır değerleri yazarsan herhangi bir şey anlam ifade etmeyecek. Onun için bu sonlu bir değer. Oldu mu? Sonsuz çıkmadı yani. 3, 5, 10 gibi bir sayı çıktığı için onun için diyoruz.
+
+583
+01:54:35,764 --> 01:55:01,404
+Bu periyodun ortalama gücü bu. Biz bu periyodu sonsuz periyodda yaparsak, yani limitini alırsak ne olacakmış? E üzeri eksi t bölü t olacakmış. Bu sinyalden elde edilen, yani yerine bu sinyalleri limit değerlerini koyarsak P'nin sıfıra yaklaştığını ve enerji sinyali olduğunu söylüyoruz.
+
+584
+01:55:01,811 --> 01:55:03,811
+P'yi sıfır olarak görüyoruz arkadaşlar.
+
+585
+01:55:05,572 --> 01:55:12,912
+E mi şurada E üzeri eksi sonsuz bölü sonsuz, e üzeri eksi sonsuz sıfır oluyor da sıfır bölü sonsuz mu oluyor bu da?
+
+586
+01:55:13,912 --> 01:55:16,992
+Öyle bir şey var, hani hopital kuralı falan uygulayarak.
+
+587
+01:55:17,811 --> 01:55:22,112
+Bunu yapabiliyorsunuz. Biz burada gerekli formülleri böyle bir soru da size veririz arkadaşlar.
+
+588
+01:55:22,971 --> 01:55:29,712
+Şimdi tek ve çift sinyallere gelmeden önce, gerçi buradaki soru neydi? Gerçi o sinyallerle alakalı bir dakika.
+
+589
+01:55:31,051 --> 01:55:33,231
+Şöyle birkaç örnek soru hazırlamıştım.
+
+590
+01:55:46,644 --> 01:55:50,284
+Sinyalin gücü ve enerjisi. Bir özellik bu sadece.
+
+591
+01:55:53,003 --> 01:56:11,244
+Yani sayı sabit değer. Aslında bu şudur. Ayrık zamanda düşünürsek, mesela sinyalimiz 1, 2, 3 değerlerin olsun. Bunun gücünü hesaplarken, enerjisini hesaplarken 1'in karesi, artı 2'nin karesi, 3'ün karesi dersini toplarsın. O çıkan şey bir sinyal özelliğidir.
+
+592
+01:56:11,859 --> 01:56:38,859
+Sonsuz çıkmadığı için buna enerji sinyali denir. Ortalama enerjisini bulmak için ne kadar periyodu varsa ona bölersin periyodun değerini. Ortalama gücünü falan bulursun. Bunlar tamamen sayısal değerler. Ama bunları biz ne için kullanıyoruz? Sayısal işaret işlemede, yapay zekada özellik olarak kullanıyoruz. İki müzikten mesela hangisi güçlüyse ona göre yorum yapabilirsin. İki kişinin sesinden hangisi güçlüyse ortalama...
+
+593
+01:56:38,996 --> 01:56:46,635
+Enerjisi hangisi daha fazlaysa ona göre yorum yapabilirsin. Bunlar sayısal değerler sadece. Önemli olan sonsuz mu çıktı, sonlu mu çıktı?
+
+594
+01:56:48,076 --> 01:56:53,216
+Şimdi bir dakika arkadaşlar. Zamanda ölçekleme. Gerçi bu sistemler üzerinde.
+
+595
+01:56:59,060 --> 01:57:00,900
+Buraya kadar geçen yapmıştık, neyse.
+
+596
+01:57:02,120 --> 01:57:03,120
+Şundan devam edelim.
+
+597
+01:57:04,120 --> 01:57:07,760
+Şimdi sinyalin tek ve çift bileşenlerini bulun diyor.
+
+598
+01:57:07,880 --> 01:57:12,100
+Yani şimdi biz sinyalleri tek sinyal ve çift sinyal olarak ikiye ayırmıştık.
+
+599
+01:57:12,800 --> 01:57:14,100
+Tek sinyalin özelliği neydi?
+
+600
+01:57:14,100 --> 01:57:19,000
+XT eşittir, X-T, şey çift sinyalin özelliği XT eşittir, X-T olacaktı.
+
+601
+01:57:20,020 --> 01:57:25,100
+Tek olmasının özelliği de XT eşittir, eksi XT, X-T olacaktı.
+
+602
+01:57:25,844 --> 01:57:34,004
+Eğer bu şartı sağlayırsa tek ve çift olacaktı. Şimdi buradan yola çıkarak XT ile X-T'nin toplamını yarıya
+
+603
+01:57:34,004 --> 01:57:41,624
+böldüğüm, ikiye böldüğümüzde burada bir even bileşenlerini bulabiliyorduk. Odd bileşenlerini bulmak için de XT'den
+
+604
+01:57:41,624 --> 01:57:47,744
+X-T'yi çıkarıp ikiye böldüğümüzde neyi bulabiliriz? Odd bileşenlerini bulabiliriz. Bunları sadece yerine koyacağız.
+
+605
+01:57:53,300 --> 01:58:20,559
+Toplayıp ikiye böleceğiz. Ne yapmış işte? x-t'nin sonucu bu. x-t'yi burada yerine koyduğunda 4 cos t bölü 2, burada da 2 cos t geliyor. Demek ki 2 cos t bunun çift bileşeni. Tam tersinden yazdığımızda, x sin t artı 3 sin t cos t. Bu da tek bileşenleri. Aslında burada bunu gözle de söyleyebiliriz. Nasıl?
+
+606
+01:58:21,039 --> 01:58:45,760
+Kosünüs demiştik ya arkadaşlar, çift bir sinyaldir. Doğrudan buradaki ifadeyi çift. Sinüs oldu mu, sinüste tek yapıyordu. Bu zaten kendi tektir. Şurada her ne kadar kosünüs olsa da sinüs onu tek hale getiriyor. Bunu da bu şekilde söyleyebiliriz. Burada birleşenleri eksi sinüste artı 3 kosünüs t, 3 çarpı sinüs t, kosünüs t olarak bulabiliyoruz.
+
+607
+01:58:46,931 --> 01:59:04,011
+Evet, şimdi sistemlerle alakalı. Zannediyorum bir tane daha o example'lar vardı da, bu dursun şimdilik. Ben şurada hazırladığım başka soruları çözelim. Gerekirse haftaya böyle biraz daha soru varsa çözel sorucanın sayfasında.
+
+608
+01:59:04,011 --> 01:59:10,351
+Şimdi arkadaşlar, YN
+
+609
+01:59:10,351 --> 01:59:13,652
+YN
+
+610
+01:59:14,131 --> 01:59:22,531
+eşittir. 8x² artı, yok 8x² artı değilmiş.
+
+611
+01:59:28,756 --> 01:59:29,696
+n-2
+
+612
+01:59:29,696 --> 01:59:38,656
+Bu şekilde bir sistemin doğrusallığını inceleyiniz.
+
+613
+01:59:38,776 --> 01:59:45,116
+Şimdi doğrusallık için toplamsallık ve çarpımsallık özelliğini sağlaması gerekiyordu.
+
+614
+01:59:47,076 --> 01:59:52,016
+Toplamsallık için ne yapacağız? İki sinyali toplayacaktık.
+
+615
+01:59:53,011 --> 01:59:57,831
+Çarpımsallık için de iki sinyalin belli bir katsayıyla çarpılıp sonucunu buluyor.
+
+616
+01:59:58,231 --> 02:00:05,711
+Şimdi ben Xn yerine, yani n yerine veya şöyle diyelim,
+
+617
+02:00:09,211 --> 02:00:13,511
+tabi bu bir Xn, Xn yerine şöyle bir şey yapsam,
+
+618
+02:00:14,931 --> 02:00:19,431
+A, Xn gibi bir dönüşüm yapsam.
+
+619
+02:00:20,595 --> 02:00:43,715
+Bu bizim sinyalimiz ne olacak? Mesela buna fonksiyon da diyebiliriz. Xn yerine veya X gördüğümüz yere ax yazsak bu ifade ne olacak? 8 a² x² n-2 olacaktır. Bu ifade
+
+620
+02:00:46,260 --> 02:00:54,220
+Acaba eşit midir? Neye eşit midir? A çarpı Yn eşit midir?
+
+621
+02:00:57,844 --> 02:01:11,963
+Şimdi Y'nin ben şu olduğunu biliyorum. 8 A kare x kare n eksi 2 eşit midir? A çarpı 8 x kare n eksi 2.
+
+622
+02:01:14,644 --> 02:01:19,043
+Şimdi bu ikisinin birbirine eşit olmadığı nereden açık? Şurada A'nın karesi var.
+
+623
+02:01:19,043 --> 02:01:23,384
+Tabii A'nın burada değerini vermiş mi? Birden farklı olması gerekir de.
+
+624
+02:01:24,595 --> 02:01:27,375
+A'yı biz normal herhangi bir sayı olarak kabul edelim.
+
+625
+02:01:28,635 --> 02:01:31,235
+A'nın birden farklı olacağını düşünüyoruz.
+
+626
+02:01:32,655 --> 02:01:33,835
+A farklıdır birden.
+
+627
+02:01:34,935 --> 02:01:39,295
+Bu şart sağlanmadığı için nedir arkadaşlar?
+
+628
+02:01:39,995 --> 02:01:41,235
+Doğrusal değildir diyeceğiz.
+
+629
+02:01:46,868 --> 02:01:52,844
+Şimdi şöyle bir örnek daha var. Onu da yapalım.
+
+630
+02:01:56,404 --> 02:01:58,404
+Y en eşittir.
+
+631
+02:02:00,804 --> 02:02:07,404
+Parantezlerim arkadaşlar biraz şey, yani onu köşeli parantez olarak anlayabilirsiniz. Bütün parantezler burada köşeli parantez.
+
+632
+02:02:08,404 --> 02:02:13,404
+İşte bir fonksiyon, x enlilere bağlı fonksiyon olacakmış.
+
+633
+02:02:14,104 --> 02:02:16,404
+Onu da şöyle x
+
+634
+02:02:20,051 --> 02:02:21,071
+Şöyle edeceğiz.
+
+635
+02:02:42,804 --> 02:02:44,804
+İşaretimiz şu şekilde arkadaşlar.
+
+636
+02:02:45,804 --> 02:02:46,804
+N küp
+
+637
+02:02:46,804 --> 02:02:48,283
+x
+
+638
+02:02:48,283 --> 02:02:50,483
+n artı bir
+
+639
+02:02:54,068 --> 02:03:07,108
+Yine toplamsallık ve çarpımsallık testini yapmamız lazım. Yani bir A gibi bir kastayla çarpıp bir de bir başka sinyalle ne yapabileceğiz? Toplayabileceğiz.
+
+640
+02:03:07,108 --> 02:03:20,467
+Şimdi Xn yerine şunu yazsak şurada. A çarpı X1n artı B çarpı X2n.
+
+641
+02:03:22,228 --> 02:03:23,228
+Ancak da
+
+642
+02:03:26,292 --> 02:03:27,652
+Bir a kas sayısı var.
+
+643
+02:03:30,132 --> 02:03:38,172
+Böyle bir şey yazdığımızda, sinyalimizin sonucu, acaba şuna eşit olacak mı?
+
+644
+02:03:39,472 --> 02:03:53,552
+a çarpı, şunu f olarak düşünün arkadaşlar, fonksiyonun f'si, a çarpı f, x bir n, artı, soru işareti bu,
+
+645
+02:03:54,228 --> 02:03:55,728
+B çarpı F
+
+646
+02:04:00,819 --> 02:04:02,420
+x2n
+
+647
+02:04:02,420 --> 02:04:11,939
+Eğer buna eşit olacaksa, o zaman bu işaret nedir? Doğrusaldır diyeceğiz.
+
+648
+02:04:12,899 --> 02:04:18,220
+Şimdi şurada bu ifadeyi şurada x yerine yazdığımızda
+
+649
+02:04:18,220 --> 02:04:24,220
+mesela doğrudan yazarsak
+
+650
+02:04:24,220 --> 02:04:27,220
+n küp
+
+651
+02:04:28,659 --> 02:04:35,659
+A x1n artı b x2n
+
+652
+02:04:35,659 --> 02:04:38,960
+Yazamadım. Bir dakika şöyle yapalım.
+
+653
+02:04:50,547 --> 02:05:01,047
+Hocam, pardon. Bir şey sorabilir miyim? Soru hakkında çözerken. Denklemi okuyabilir misiniz tekrar? Biraz karıştı da. Parantez mi yoksa F mi? Anlamadım.
+
+654
+02:05:01,047 --> 02:05:01,887
+Dur, şöyle yapalım.
+
+655
+02:05:02,267 --> 02:05:03,907
+Orijinal halini anlayamadım ya.
+
+656
+02:05:12,275 --> 02:05:13,036
+Şöyle yazalım.
+
+657
+02:05:15,596 --> 02:05:18,136
+Yani şunu f gibi bir fonksiyon, yani ne demek bu?
+
+658
+02:05:18,235 --> 02:05:20,036
+X'nin bir fonksiyonudur, Yn.
+
+659
+02:05:21,076 --> 02:05:22,676
+Demek için bunu böyle yazıyor.
+
+660
+02:05:24,356 --> 02:05:28,056
+N küp artı, N küp çarpı x, N artı bir.
+
+661
+02:05:28,056 --> 02:05:29,136
+Anladım.
+
+662
+02:05:29,576 --> 02:05:30,476
+Bu şekilde.
+
+663
+02:05:32,876 --> 02:05:35,416
+Şimdi burada yazacağımız şey,
+
+664
+02:05:36,176 --> 02:05:39,056
+f'in içerisinde,
+
+665
+02:05:40,083 --> 02:05:43,344
+yazdığımız ax1n artı bx2n
+
+666
+02:05:43,344 --> 02:05:46,083
+eşit midir a çarpı f
+
+667
+02:05:46,083 --> 02:05:48,543
+x1n artı b çarpı f
+
+668
+02:05:48,543 --> 02:05:49,243
+x2n
+
+669
+02:05:49,243 --> 02:05:52,344
+şunu eğer gösterebiliyorsak
+
+670
+02:05:52,344 --> 02:05:54,144
+tamam, o zaman
+
+671
+02:05:54,144 --> 02:05:56,644
+işaret şey dediği, şurayı silelim şöyle.
+
+672
+02:05:57,384 --> 02:05:59,484
+o zaman bana önce ne lazım arkadaşlar, şuradaki
+
+673
+02:05:59,484 --> 02:06:02,083
+xn yerine
+
+674
+02:06:02,083 --> 02:06:06,583
+x yerine şunu yazmam gerekiyor.
+
+675
+02:06:07,155 --> 02:06:34,735
+n küp, tabi başında A var, A çarpı n küp x1, n artı 1, artı B çarpı n küp x2, n artı 1. Bu grafik tablette yazma o kadar zorluyor ki bu şey. Şimdi x1n yazdığımızda
+
+676
+02:06:35,923 --> 02:06:45,684
+Şu nedir arkadaşlar? Şuraya yazdığımızda A çarpı, X yerine X1 yazacağız. X1 çarpı, pardon önce bir N var.
+
+677
+02:06:47,684 --> 02:07:01,623
+A çarpı, N küp çarpı, X1 çarpı, N, pardon N yerine şunu yazacağız ya. Bir dakika nasıl bir şey yaptık?
+
+678
+02:07:03,988 --> 02:07:09,528
+A çarpı n küp çarpı x1 n artı 1 artı B çarpı n küp çarpı x2
+
+679
+02:07:09,528 --> 02:07:22,828
+Şunu şöyle yazarsak, A çarpı n küp x1 çarpı n artı 1 olacak.
+
+680
+02:07:22,828 --> 02:07:30,068
+Artı, burada bunu yerine, yani B yerine
+
+681
+02:07:30,612 --> 02:07:54,311
+ikinci kısmı yazıyorum. B çarpı n küp çarpı x2 n artı 1. Tamam mı? Birincisinde x gördüğümüz yere burayı tamamen yazdık. Diğerinde ayrı ayrı yazdık. Şimdi baktığımız zaman bu ikisi birbirine terim terime eşit çıkıyor. Dolayısıyla doğrusaldır diyoruz.
+
+682
+02:07:56,372 --> 02:07:57,692
+Tamam, ilk başta tabii...
+
+683
+02:07:57,692 --> 02:08:03,332
+Bu örnekte kafam karıştı da, neden x1 ve x2'leri ayırdık?
+
+684
+02:08:03,851 --> 02:08:10,172
+Şimdi şöyle, iki fonksiyonun toplamsallığı derken ne yapacaktı? İki tane sinyal seçiyoruz, x1 ve x2 diye.
+
+685
+02:08:10,952 --> 02:08:17,511
+Yani x1 bir değişken bir değer, x2 bir başka değer. O toplamsallık ilkesi. Şu da çarpımsallıkla alakalı.
+
+686
+02:08:18,547 --> 02:08:24,227
+Bu ikisini birden sağladığını göstermek için ne yapacağız? X1 ve X2'yi kullanmamız gerekiyor.
+
+687
+02:08:24,307 --> 02:08:28,607
+Şey yaptınız yani, hem toplamsalık hem çarpımsalık ikisini aynı anda mı test etmiş olmak?
+
+688
+02:08:28,607 --> 02:08:30,567
+Aynen, ikisini aynı anda. Onun için birazcık.
+
+689
+02:08:30,967 --> 02:08:31,827
+Okey, okey anladım.
+
+690
+02:08:33,027 --> 02:08:34,367
+Ayrı ayrı yapabiliriz herhalde değil mi?
+
+691
+02:08:35,187 --> 02:08:39,767
+Olur, onu da denemeniz, yani şey yapmak gerekiyor, yukarıda olduğu gibi tek tek yapmanız gerekiyor.
+
+692
+02:08:39,867 --> 02:08:40,727
+Okey, tamamdır.
+
+693
+02:08:41,007 --> 02:08:42,767
+Zamanla değişmezlikle alakalı.
+
+694
+02:08:44,115 --> 02:08:48,476
+Bir sinyal vereceğiz. Bu sinyal zamanla değişiyor mu değişmiyor mu? Bunun
+
+695
+02:08:50,256 --> 02:08:52,816
+Testini yapmak için. Bu daha kolay.
+
+696
+02:08:57,395 --> 02:08:58,636
+Şöyle yapabiliriz.
+
+697
+02:09:01,416 --> 02:09:06,576
+Eğer ki arkadaşlar bir fonksiyonumuzda ne zamanla değişkenlik?
+
+698
+02:09:07,615 --> 02:09:23,395
+Şöyle diyelim, x n-k yani bir k kadar bir x yerine x n-k yazdığımızda sonucumuz y n-k'ya eşit oluyorsa zamanla değişmezlik vardır diyoruz.
+
+699
+02:09:23,988 --> 02:09:25,887
+Örnek olarak Yn eşittir.
+
+700
+02:09:29,587 --> 02:09:31,107
+4N
+
+701
+02:09:31,107 --> 02:09:34,047
+XN
+
+702
+02:09:34,047 --> 02:09:42,487
+Artık şunları yuvarlak yazayım da, onu kafaya takmayın. Normalde köşeli yazmak lazım. Köşeli yazmak daha zor oluyor.
+
+703
+02:09:45,047 --> 02:09:53,847
+Buradaki zamanla değişmezliği ifade etmek açısından arkadaşlar, N yerine N-K yazacağız. Yani Y-K'yı bulacağız önce.
+
+704
+02:09:55,123 --> 02:09:57,863
+Bu Y n-k eşittir. Şuradaki
+
+705
+02:09:57,863 --> 02:10:02,503
+Pardon, şöyle yapalım.
+
+706
+02:10:04,123 --> 02:10:05,123
+F n-k
+
+707
+02:10:05,123 --> 02:10:09,123
+eşittir. Y çarpı
+
+708
+02:10:09,123 --> 02:10:14,123
+Tabii Y'yi doğrudan yazmıyoruz. Şöyle 4 çarpı
+
+709
+02:10:14,123 --> 02:10:16,823
+n çarpı
+
+710
+02:10:16,823 --> 02:10:17,344
+x
+
+711
+02:10:17,344 --> 02:10:21,763
+n-k yapmamız gerekecek. Eğer bu şart sağlıyorsa
+
+712
+02:10:22,963 --> 02:10:48,884
+yaptığımız iş doğru. Şimdi fy n-k'nın değerini biz nedir diyebiliyoruz. Şurada 4n xn. Pardon, 4n çarpı x n-k diyebiliyoruz. Burada, pardon ya burası değil arkadaşlar.
+
+713
+02:10:50,868 --> 02:10:59,328
+Şu ifadeyi yerine yazdığımızda, yani n yerine y, n-k yazdığımızda
+
+714
+02:11:03,347 --> 02:11:04,688
+Şurada bir hata yapmışım.
+
+715
+02:11:06,108 --> 02:11:07,507
+Şurası xn olacak arkadaşlar.
+
+716
+02:11:08,707 --> 02:11:10,768
+xn yerine xn-k yazacağız.
+
+717
+02:11:12,268 --> 02:11:18,068
+Buradan şu ifadeyi çekersek, fxn-k nedir bu?
+
+718
+02:11:18,068 --> 02:11:19,648
+Şöyle iki parantez.
+
+719
+02:11:20,768 --> 02:11:27,967
+Burada yerine yazdığımızda, 4 çarpı n yerine n-k geldi.
+
+720
+02:11:29,427 --> 02:11:55,427
+Sonra x n yerine n-k geldi. Şunu bulduk. Bu ifade şuna eşit midir? Buna bakacağız. Görüldüğü kadarıyla şu ifadeler eşit de dörtler. n-k'ya işte n eşittir k eşittir bir için mesela ne olur? Bu sistem eşit olmadığı görülüyor. Dolayısıyla
+
+721
+02:11:56,148 --> 02:11:57,568
+Birbirine eşit çıkmıyor.
+
+722
+02:11:59,128 --> 02:12:04,148
+Eşit çıkmadığı için zamanla değişmez değildir veya zamanla değişirdir.
+
+723
+02:12:05,348 --> 02:12:07,868
+Zamanla değişmez diyemiyoruz, zamanla değişir diyoruz.
+
+724
+02:12:10,228 --> 02:12:12,968
+Zamanla değişmeyen de bir örnek yapalım.
+
+725
+02:12:13,188 --> 02:12:16,248
+Biraz daha açıklayıcı olur belki.
+
+726
+02:12:18,388 --> 02:12:19,208
+Şuymuş o da.
+
+727
+02:12:22,388 --> 02:12:23,588
+Yn eşittir.
+
+728
+02:12:27,028 --> 02:12:29,028
+xn artı
+
+729
+02:12:29,028 --> 02:12:32,427
+2xn-1
+
+730
+02:12:32,427 --> 02:12:41,648
+Sistemin zamanla değişip değişmediğini gösteririz. Yani burada yn için şöyle bir şey diyebiliyoruz arkadaşlar.
+
+731
+02:12:42,648 --> 02:12:45,087
+Neyin fonksiyonu? xn'in bir fonksiyonu.
+
+732
+02:12:45,747 --> 02:12:49,068
+yn xn'lere göre değişiyor diyeceğiz.
+
+733
+02:12:49,652 --> 02:13:13,932
+Yapacağımız şeyde ne olacak? n yerine n-k gibi bir şey yazacağız. xn yerine n-k yazacağız. Bu n-k, yn'de yukarıda olduğu gibi, şeyle, şununla değişiyor mu? Yani n yerine n-k yazınca, xn yerine xn-k yazmakla sonuç değişiyor mu? Değişmiyor mu? Ona bakacağız.
+
+734
+02:13:17,043 --> 02:13:18,163
+xn yerine
+
+735
+02:13:18,163 --> 02:13:25,003
+xn yerine xn-k yazacağız.
+
+736
+02:13:25,003 --> 02:13:27,323
+Yazabilirsek.
+
+737
+02:13:33,652 --> 02:13:50,412
+Burada xn yerine xn-k yazarsak, bu art 2 çarpı x, xn-k, n-1-k, bu da ne oluyor? Şöyle n-1-k oluyor.
+
+738
+02:14:02,003 --> 02:14:09,003
+Yn'in sonucunda n yerine n-k yazdığımızda elde edilen değeri eşitmiş. Şimdi yn neydi? Şuydu.
+
+739
+02:14:12,340 --> 02:14:14,960
+Direkt yazalım. Şöyle yapayım.
+
+740
+02:14:16,800 --> 02:14:18,220
+Y en yukarıda görünüyor.
+
+741
+02:14:20,320 --> 02:14:21,600
+Y en eksi k'yı bulalım.
+
+742
+02:14:21,980 --> 02:14:23,960
+Y en eksi k, x en yerine
+
+743
+02:14:23,960 --> 02:14:28,120
+direkt y en eksi k yazacağız.
+
+744
+02:14:28,120 --> 02:14:29,820
+Yani şey en yerine en eksi k yazacağız.
+
+745
+02:14:29,820 --> 02:14:32,520
+Buradan en eksi k gelecek. Artı 2 çarpı x
+
+746
+02:14:32,520 --> 02:14:37,320
+en çarpı eksi bir eksi bir k.
+
+747
+02:14:38,420 --> 02:14:40,020
+Şimdi bu ikisi birbirine eşit
+
+748
+02:14:40,020 --> 02:14:43,199
+geldiği için
+
+749
+02:14:43,199 --> 02:14:45,439
+zamanla değişmeyen
+
+750
+02:14:45,439 --> 02:14:48,680
+Time Invariant
+
+751
+02:14:48,680 --> 02:14:51,579
+olarak
+
+752
+02:14:51,579 --> 02:14:53,260
+söyleyeceğiz.
+
+753
+02:14:55,260 --> 02:14:57,020
+Yani şu ifade
+
+754
+02:15:00,948 --> 02:15:03,768
+bir anlamda da, ni eşittir, F
+
+755
+02:15:09,619 --> 02:15:12,119
+x n-k
+
+756
+02:15:12,119 --> 02:15:17,460
+Birazcık fonksiyonlara aslında benziyor.
+
+757
+02:15:18,159 --> 02:15:24,440
+y'deki n-k, yani fonksiyonun görüntüsünden belli bir miktar öteleme yaparsak,
+
+758
+02:15:25,520 --> 02:15:32,760
+bu öteleme miktarı eğer fonksiyonun girişine verilen x değişkeninde yapılan öteleme ile aynı sonucu veriyorsa,
+
+759
+02:15:33,619 --> 02:15:35,060
+zamanla değişmeziz diyoruz.
+
+760
+02:15:38,131 --> 02:15:45,091
+Şimdi bazı sorular var. Onları da size yazalım. İsterseniz not alın.
+
+761
+02:16:02,739 --> 02:16:08,859
+Aşağıdaki elemanlar diyor, bir A dizisi var.
+
+762
+02:16:14,260 --> 02:16:15,800
+1 bölü kök 2'ye
+
+763
+02:16:19,380 --> 02:16:24,320
+1, 1 bölü kök 2, araya virgül koyayım da karışmasın.
+
+764
+02:16:26,600 --> 02:16:27,060
+0,
+
+765
+02:16:28,380 --> 02:16:29,840
+eksi 1 bölü kök 2,
+
+766
+02:16:33,556 --> 02:16:34,936
+Heksi 1
+
+767
+02:16:38,932 --> 02:16:40,932
+eksi 1 bölü kök 2 sıfır.
+
+768
+02:16:45,139 --> 02:17:08,479
+Bu bir dizi arkadaşlar ve bu dizi A çarpı kosünüs omega 0 n artı fi. Yani n eşittir 0 için fonksiyonun sonucu buymuş, n eşittir 1 için buymuş, n eşittir 2 için buymuş, n eşittir 3 için bu, n eşittir 4, n eşittir 5, n eşittir 6.
+
+769
+02:17:09,459 --> 02:17:14,659
+Bakayım 6 tane bir değer. 1, 2, 3, 4, 5, 6, 7, 8. Bir dakika ben...
+
+770
+02:17:14,659 --> 02:17:18,939
+1, 2, 3, 4, 5, 6, 7, evet. 8 tane değer var.
+
+771
+02:17:19,899 --> 02:17:31,399
+Şimdi bu değerleri kullanarak buradaki A'yı, Omega'yı ve Fi'yi bulmanızı istiyoruz.
+
+772
+02:17:31,399 --> 02:17:35,840
+En eşittir sıfır noktasından başlamak üzere.
+
+773
+02:17:50,675 --> 02:17:51,975
+Bir soru daha bakıyorum.
+
+774
+02:17:59,956 --> 02:18:01,416
+B seçeneğini de verelim.
+
+775
+02:18:04,884 --> 02:18:07,224
+Bu da şöyle bir diziymiş arkadaşlar, B dizisi.
+
+776
+02:18:08,443 --> 02:18:13,644
+Eksi 3, 0, 3 ve 0.
+
+777
+02:18:14,283 --> 02:18:19,064
+Eğer dizimiz buysa n eşittir 0 için bu, n eşittir 1 için bu, n eşittir 2, n eşittir 3 için.
+
+778
+02:18:19,984 --> 02:18:27,664
+A değeri, omega değeri ve faz değeri nedir? Bunları bulmanızı istemiş.
+
+779
+02:18:29,204 --> 02:18:30,904
+Bir de çizim sorusu.
+
+780
+02:18:35,443 --> 02:18:36,723
+Veya şunu yapalım.
+
+781
+02:18:44,244 --> 02:18:53,923
+Aşağıdaki sinyallerin özelliklerini belirleyiniz. Hangi özellikleri, pardon sistemlerin nedensel
+
+782
+02:18:57,139 --> 02:19:06,519
+Kararlı, doğrusal, zamanla değişmeyen
+
+783
+02:19:10,644 --> 02:19:18,844
+Bunları uygun bir şeyle yapacaksınız. Uygun bir sırayla yaparsanız zamanla değişmezlik aslında nedenseyle de etkiliyor. Yn eşittir.
+
+784
+02:19:20,443 --> 02:19:25,704
+A, xn artı b. Bunun hangi özellikleri sağlayıp sağlamadığına bir bakın.
+
+785
+02:19:25,704 --> 02:19:31,623
+Sonra, yn eşittir.
+
+786
+02:19:37,139 --> 02:19:38,699
+x n-1
+
+787
+02:19:41,379 --> 02:19:44,079
+Evet, bu kadar yeterli olur herhalde.
+
+788
+02:19:47,572 --> 02:19:48,731
+Sorunuz var mı arkadaşlar?
+
+789
+02:19:51,572 --> 02:19:56,231
+Bunları çözerseniz, şöyle ekran görüntüsü almak isterseniz şey yapalım.
+
+790
+02:20:00,000 --> 02:20:01,280
+Şu kısmın
+
+791
+02:20:01,280 --> 02:20:03,799
+Şurada
+
+792
+02:20:03,799 --> 02:20:07,680
+Soru işareti, burada soru işareti
+
+793
+02:20:14,548 --> 02:20:15,788
+Yok, cevapları vermeyeceğim.
+
+794
+02:20:19,379 --> 02:20:46,860
+Yani ben cevapları versem çünkü size hiçbir faydası olmuyor. Şöyle yapabiliriz, çözümler yapılır. Belki sınavdan önce bir tekrar amaçlı bunların çözümünü yaparız. Haftaya çözmeyiz de işte sınav öncesi. Bu tarz. Ama söz vermeyeyim. Şimdi bunu deyince nasıl olsa hoca sınavdan önce çözer deyip aranızda hiç yapmayanlar olacaktır.
+
+795
+02:20:48,244 --> 02:21:01,804
+Şimdi Gökhan Hoca ile konuşmuş olsam şöyle bir şey diyebilirdim, böyle voksiyon yapabilirdim. Çözene işte bonus puan diyebilirdim ama çünkü onu ders öncesinde Hoca ile konuşmadığımız için iki grup denk gitmesi lazım.
+
+796
+02:21:03,824 --> 02:21:14,524
+Çözmeye çalışın arkadaşlar. Size paylaştığımız o Udemy videolarında da belki bunun çözümü vardır. Ben o Hoca'nın kitabı kullandığını düşünüyorum.
+
+797
+02:21:15,860 --> 02:21:36,639
+Ahmet Hamdi Kayra'nın kitabında bir soru bu. Kitabı almanız için bunu söylemiyorum. Hatta kitabı almayın bile. İşinize yaramaz. Çünkü biz bu kitaptan, bakayım kaç sayfa, 320 sayfa, 30-40 sayfasını ancak kullanacağımız için kitabı hiçbir şekilde, yani size hitap eden kitabı. Basit bu sorunları çözmeniz, biraz uğraşırsanız çözersiniz arkadaşlar.
+
+798
+02:21:38,388 --> 02:21:49,407
+Şimdi tekrar edelim, linearlikte yaptığımız şey toplamsallığı ve çarpımsallığı ayrı ayrı veya ikisini birlikte gösterebiliyorsak sisteme lineerdir diyebileceğiz.
+
+799
+02:21:50,128 --> 02:21:58,907
+Zamanla değişmezlikte, yani en basit şunu bir deneyin arkadaşlar, 2x artı 3, fx eşittir, 2x artı 3.
+
+800
+02:21:59,924 --> 02:22:11,664
+Bu sistem linear midir? Veya bu sistem zamanla değişir mi? Değişmez. Bunu kendi kafanızda oturtursanız, bunun mantığını, denklemin değişmiş, uzamış olması çok bir anlam ifade etmez.
+
+801
+02:22:13,324 --> 02:22:17,084
+Pekala, sorunuz yoksa hepinize iyi haftalar. Görüşmek üzere.
+
+802
+02:22:22,484 --> 02:22:24,268
+Hoşçakalın arkadaşlar.

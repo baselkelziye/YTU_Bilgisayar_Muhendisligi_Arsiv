@@ -1,0 +1,2371 @@
+1
+00:12:32,659 --> 00:12:37,659
+Evet, merhaba arkadaşlar, hoş geldiniz derse. Bugün yine katılımımız yavaş başladı.
+
+2
+00:12:37,659 --> 00:12:40,659
+36 kişiyiz.
+
+3
+00:12:45,940 --> 00:12:48,900
+Notumuzu silelim ve dersimize başlayalım.
+
+4
+00:12:49,760 --> 00:12:53,920
+Şimdi geçen hafta bildiğiniz gibi hatırlayanlarımız vardır.
+
+5
+00:12:54,840 --> 00:13:00,020
+Akış diyagramlarına, algoritmaları temsil yöntemindeki akış diyagramlarına giriş yapmıştık.
+
+6
+00:13:00,800 --> 00:13:08,680
+Şimdi hızlıca bir hızlı tekrar yaparak elemanlarımızı diyagramdaki her bir anlam ifade eden
+
+7
+00:13:09,076 --> 00:13:14,776
+Shape şekillerimizin üzerinden geçeceğiz. Ondan sonra da yine örnek problemlerle yolumuza devam edelim.
+
+8
+00:13:16,851 --> 00:13:26,731
+İlave olarak bir de dizi kullanımı konusunda, özellikle algoritmalarda dizi kullanımı konusunda da yine bir örnek ile konu anlatımına devam edeceğiz.
+
+9
+00:13:27,231 --> 00:13:44,812
+Hatırlarsak, her algoritmanın mutlaka bir başlangıcı ve bir de bitişi, dur ya da bitir ya da stop şeklinde ifadelerle, elips ya da üstü ve altı düz kenarları parantez şeklindeki bir şekilde.
+
+10
+00:13:44,851 --> 00:14:08,791
+ifade ediyorduk. Sonrasında akışlarımızı mutlaka ok şeklinde olmasına özen gösteriyorduk ve girdi için şu şekilde bir delikli kartı sembolize eden sol üst köşesi çentikli diktörtgeni tercih ediyorduk. Genellikle, tabi bundan bunu güzel çizemedim size, hemen bunu silelim yeniden.
+
+11
+00:14:09,716 --> 00:14:13,676
+daha şöyle ok ile bile gösterebiliriz. Daha da güzel olacaktır.
+
+12
+00:14:13,676 --> 00:14:21,516
+Sonrasında çeşitli işlemlerimiz olabilir. İşlemlerimiz içinde yani proseslerimiz içinde
+
+13
+00:14:21,516 --> 00:14:25,395
+şuradaki düz kutuları kullanıyorduk hatırlarsanız.
+
+14
+00:14:25,395 --> 00:14:27,395
+Ve
+
+15
+00:14:27,923 --> 00:14:51,864
+Karar mekanizmalarımız vardı. Karar mekanizmalarımız için de temel olarak biz şöyle içine de özellikle fazlaca bilgi ve lojik kontrol yazabilmek için uzatılmış, gelişletilmiş bir altıgen kullanıyorduk. Ve mutlaka karar mekanizmalarında iki tane çıktığımızın, en az iki tane, yoksa bile boş geçerek şurayı.
+
+16
+00:14:52,384 --> 00:15:00,104
+False kolunu mutlaka göstermemiz gerektiğini ve akışında yönleriyle ifade etmemiz gerektiğini söylemiştik.
+
+17
+00:15:00,104 --> 00:15:10,043
+Burada mesela ben True kolunun içinde şöyle bir de adım sayısı belli olan bir döngü kurgulamak isteyeyim.
+
+18
+00:15:10,543 --> 00:15:14,423
+Hemen üç tane kompartmandan oluşan bir dikdörtgenimi çiziyorum.
+
+19
+00:15:14,964 --> 00:15:20,324
+Bunu çizdikten sonra şuraya işte başlangıç ataması ya da ilk değer atamasını
+
+20
+00:15:20,384 --> 00:15:48,384
+i eşittir birden, şurada da son değer kontrolümüz en genellikle olacağı şekilde ve sağ üst köşedeki kompartmanını bölmeye de artımdaki adım sayımızı yazarak devam ediyorduk. Bundan sonra işte burada yapmamız gereken başka işlemler, atamalar, operasyonlar varsa tamamlayıp şuradaki döngü bloğuna geri geliyorduk. Şu anda tabi uzun programının whiteboardunu kullanıyoruz.
+
+21
+00:15:48,384 --> 00:15:51,303
+alamandığım için şuradaki çizgileri yumuşaklaştırıyor.
+
+22
+00:15:51,824 --> 00:15:53,563
+Biz bunları biliyorsunuz sevmiyoruz.
+
+23
+00:15:53,663 --> 00:16:00,584
+Bunların yerine mümkün olduğunca düz çizgiler işte şu şekilde.
+
+24
+00:16:00,584 --> 00:16:03,584
+Şöyle, pardon, şöyle.
+
+25
+00:16:04,324 --> 00:16:05,663
+Ondan sonra bir tane daha.
+
+26
+00:16:06,204 --> 00:16:07,543
+İşte şöyle yukarı.
+
+27
+00:16:08,004 --> 00:16:09,043
+Sonra bir tane daha.
+
+28
+00:16:10,707 --> 00:16:19,887
+Şuradan dönüş yap şeklinde çizgiler çizmemiz, oklar ve akışları bu şekilde oluşturmamız daha doğru olacak.
+
+29
+00:16:19,887 --> 00:16:33,467
+Peki, sonrasında başka ne gibi ifadelerimiz vardı bunları hatırlayalım. Şimdilik burayı bu şekilde tamamladıktan sonra, hani şu false columnda da hiçbir şey yapmamış olalım.
+
+30
+00:16:35,764 --> 00:16:42,764
+Bu ikisini de birleştirip aşağıya doğru bir ok ile bu şekilde indiriyoruz.
+
+31
+00:16:42,764 --> 00:16:46,764
+Çıktılarımızı neyle ifade ediyorduk? Bunu da hemen bir hatırlayalım.
+
+32
+00:16:49,940 --> 00:17:17,940
+Çıktısı anlamında hani printer çıktısı anlamında şu şekilde altı dalgalı kesilmiş bir kağıdı gösteren temsil eden sembolü kullanarak çıktılarımızı burada yazıyorduk. Genel olarak kullandığımız elemanlar bu şekildeydi diyagramda. Şimdi şuradaki adım sayısı belli olan döngü yerine acaba ben başka ne gibi döngüler kurgulayabilirim diyecek olursak şundan bahsedeceğiz.
+
+33
+00:17:17,940 --> 00:17:37,140
+algoritma yukarıdan bir yerden geldi, aktı ve burada yine bir karar mekanizması, bir koşul kontrolü gerçekleştiriyorum. O nedenle de aynı bir if yapısında olduğu gibi altı kelime kullanıyorum. Şimdi burada şu şekilde aşağı doğru çıkıp
+
+34
+00:17:37,428 --> 00:18:04,307
+Bu da yeni atamalar, yeni işlemler, yeni döngüler, yeni kararlar, yeni dallanmalar yaratabilirim. Şimdi basit olsun diye sadece bunu bıraktık. Sadece tek bir işlem kutusu içinde bunu bıraktım ve şuradan geri dönüp tekrar buraya girmek suretiyle şuradaki koşulun kontrolünün doğru olup olmadığına bakmamız gerekiyor. Şimdi diyelim ki şurada ben J
+
+35
+00:18:04,948 --> 00:18:13,807
+Küçüktür, N şeklinde bir kontrol yapıyoruz. Bu döngü bloğunun içinde mutlaka bir yerlerde şuradaki J'nin
+
+36
+00:18:13,807 --> 00:18:20,307
+genelde N yukarıda sabit olarak okunduğu ya da tanımlandığı için pek değişmez.
+
+37
+00:18:20,307 --> 00:18:28,708
+Ama döngü iteratörü olarak kullandığımız değişkenin mutlaka buradaki döngü gövdesi içinde ki onu da şöyle
+
+38
+00:18:28,980 --> 00:18:34,420
+hemen bir sarı blok içine alalım. Şuradan
+
+39
+00:18:35,220 --> 00:18:50,220
+Pardon olmadığım için şuradan başlayarak şu şekilde döngünün gövdesi içinde mutlaka bir yerlerde bir zamanda J değişkeninin mutlaka güncellenmesini unutmayalım. Şuraya J yazılım.
+
+40
+00:18:50,220 --> 00:19:03,220
+J mesela eşittir J artı bir ya da J eksi bilmem kaç ya da başka bir şey ama mutlaka buradaki iteratörün modifiye edilmesi gerektiğini döngü blonun içinde yapmamız gerek.
+
+41
+00:19:03,220 --> 00:19:20,220
+Yapmazsak ne olur? Buradan çıkamayız. Buradan çıkamazsak sonsuza kadar içinde kalır ve sonsuz döngüye girmiş oluruz. Peki, şimdi burada buna bir while döngüsü adını vermiştik hatırlarsanız. Başka ne olabilir? Örneğin, ben buradaki döngü bloğunun...
+
+42
+00:19:20,832 --> 00:19:22,512
+Gördüğüm kadarıyla
+
+43
+00:19:22,512 --> 00:19:27,972
+Hiç çalışmadığı durumla karşılaşabilirim. Yani ben yukarıdan geldim.
+
+44
+00:19:28,492 --> 00:19:30,932
+J küçüktür, N mi diye bir kontrol yapıyorum.
+
+45
+00:19:31,352 --> 00:19:35,972
+Ve bakıyorum, J N'den küçük değil. Mesela eşit ya da daha büyük bir değere sahip.
+
+46
+00:19:35,972 --> 00:19:45,072
+O zaman ne olacak? Ben buradaki sarıyla işaretlediğim döngünün gövdesinin, buradaki bloğun hiçbir şekilde çalışmadığını göreceğim.
+
+47
+00:19:45,412 --> 00:19:48,832
+Ve hiçbir şey olmadan, koşul yanlış olduğu için aşağıdan...
+
+48
+00:19:48,832 --> 00:20:11,592
+yoluma devam edip, algoritmanın geri kalanındaki adımlarla, adımları çalıştırmaya devam edeceğim. Peki ben mesela, kurgumda, buradaki gövdenin en azından bir kere çalışmasını ve kontrolünün daha sonra yapılmasını istersen ne yapacağım? Böyle bir şey yapabilir miyim? Evet, yapabilirim. Bunun da yolu, do while dediğimiz.
+
+49
+00:20:12,084 --> 00:20:27,084
+Alternatiften geçiyor. Şimdi onun çizimini göstereceğim sizlere. Yine benzer şekilde algoritmımız geldi. Şöyle okla aşağı kadar indiğimizi düşünelim. Sonra ben burada bir iş yaptım.
+
+50
+00:20:27,392 --> 00:20:33,152
+Hatta belki bir iş daha yaptım. Belki döngü, belki bir dallanma, her şey olabilir.
+
+51
+00:20:33,152 --> 00:20:39,392
+Şimdilik basit kalması açısından sadece belirli işlem kutuları, şöyle iki tane işlem kutusu çizelim. Tamam mı?
+
+52
+00:20:39,392 --> 00:20:47,392
+Bunları yaptıktan sonra, şimdi ben yukarıdan geldim, buradaki işlem gerçekleşti, buradaki işlem gerçekleşti.
+
+53
+00:20:47,392 --> 00:20:55,392
+Bunlar yapıldıktan sonra, işte burada artık bir, aynı şuradaki koşul kontrolünü
+
+54
+00:20:55,392 --> 00:21:22,392
+koyabilirim. Tamam koydum ve mesela ben yine buraya buraya açık diyeyim diye tamam ve ben burada bu koşul doğruysa koşul doğru olduğu sürece şuradaki bloğu çalıştır şeklinde bir ifadeyle bunu alıp tekrardan buraya bir ok ile bağlarım.
+
+55
+00:21:22,900 --> 00:21:32,900
+Şöyle ok yapmaya çalışalım size. Tamam. Şimdi ne oldu? Ben burada ne yapmış oldum? Ben burada bir işlem yapıyorum. İşte işlem yazalım şuraya.
+
+56
+00:21:32,900 --> 00:21:40,748
+İşlem 1 diyelim. Burada da işlem 2'yi yapıyorum mesela. Bunlar...
+
+57
+00:21:42,163 --> 00:22:10,163
+Yapılır. Yukarıdan aşağıya geldiği için algoritmanın akışı. Bunlar gerçekleştirilir. Ondan sonra şuradaki koşula bakılır. Yine buradaki blokta, onu da turuncuyla şu şekilde işaretleyelim. Şöyle işaretlediğimiz blokun içinde buradaki koşul değişkeninin mutlaka modifiye edilmesinin bir şekilde değişikliğe uğramasının garanti edilmesi gerekir. Eğer etmezseniz ne olur?
+
+58
+00:22:10,163 --> 00:22:31,163
+Yine ben burada sonsuza kadar dönmek zorunda kalırım. Ve bu zamanda algoritma tanımına zaten aykırı bir hareket yaptığım için ve sonsuz döngüye girmiş ve algoritma tanımına uymayan bir çizim ile ya da bir tasarım ile yola devam etmeye çalışır şekilde kalırım. Peki, ben burada bunları yaptım. Bak koşul doğru. Koşul doğruysa...
+
+59
+00:22:32,980 --> 00:23:00,980
+Döngünün Do kısmına tekrar geri gelecek. Buradan itibaren, burada turuncuyla işaretlemiş olduğum alandaki döngünün gövdesi içindeki bütün eylemleri, işlemleri, atamaları, ne varsa hepsini yapacak tekrar. Sonrasında tekrar buraya geldiği için bir Kontrol daha. Kontrolden sonra diyelim şart hala doğru. Tekrardan dönecek. Buradaki bloğu işletecek, işletecek. Sonra diyelim ki bu şart yanlış. Artık ben döngü...
+
+60
+00:23:00,980 --> 00:23:12,180
+gövdesini tekrardan işletmek zorunda kalmayacağım ve burada algoritmam, akışım aşağı doğru yoluna devam ederek, bunu da turuncu ile çizdik bu sefer.
+
+61
+00:23:13,044 --> 00:23:34,544
+hemen silelim ve uygun mavi tonumuzla tekrardan kalemimizle bunu avuçtaalım. Evet, buna da do while döngüsü adını veriyoruz. Peki, yani aslında while döngümüz var. Do while döngümüz var.
+
+62
+00:23:41,044 --> 00:23:45,204
+ve buradaki koşul doğru olduğu sürece işte sarı blok çalışıyor.
+
+63
+00:23:45,619 --> 00:24:03,619
+Do While döngüsünde ise, bunun alternatifi olarak, önce en azından bir kere blok çalışıyor. Blok bir kere çalıştıktan sonra kontrol yapılıyor ve bu kontrol ile doğru olduğu sürece buradaki akış tekrar tekrar tekrar çalıştırılıyor döngü gövdesindeki turuncu alan.
+
+64
+00:24:03,619 --> 00:24:09,619
+Peki, başka bir tane daha var aslında. Onun da ismini ben şuraya şu şekilde yazayım.
+
+65
+00:24:13,619 --> 00:24:21,440
+Aynı düşünebilirsiniz. Yani birinde koşul doğru olduğu sürece, birinde de koşul doğru olana kadar şeklinde okuyabilirsin.
+
+66
+00:24:21,920 --> 00:24:28,659
+Mesela bazı dillerde Repeat Antil mevcut. Örneğin Pascal gibi dillerde var. Ama C'de mesela yok. Neden yok?
+
+67
+00:24:28,779 --> 00:24:35,920
+Çünkü ben şuradaki şartı doğruluğunu değil, tersini alıp da yanlışlığını kontrol ettiğimde aslında Repeat Antil'i yapmış oluyorum.
+
+68
+00:24:35,920 --> 00:24:41,619
+Yani ben Do-While döngüsüyle bütün Repeat Antil'i de kapsamış oluyorum.
+
+69
+00:24:41,619 --> 00:24:53,619
+olduğundan dolayı başına sadece bir tane NAT koyarak düşünebilirsiniz. Tekrardan başka bir döngü ismi kurgulamaya gerek yok, kullanmaya da gerek yok. Bu şekilde
+
+70
+00:24:53,619 --> 00:25:03,619
+do while bizim için ya da while yeterli olacaktır. Şimdi burada do while ve while döngüleri arasında
+
+71
+00:25:03,759 --> 00:25:28,000
+Örneğini vermiştim dün. Burada size de vereyim. Şimdi bunlardan bir tanesi Roadrunner, bir tanesi de Coyote. Coyote de işte çizgi filmdeki çakal. Eminim izlemişsinizdir. Bilmeyen var mı? Roadrunner diye böyle bir deve kuşu mudur? Nedir? Çok hızlı koşan bir kuş var. Bir de onu sürekli yakalamaya çalışan bir çakal var. Şimdi aslında
+
+72
+00:25:29,715 --> 00:25:33,715
+Şöyle düşünebiliriz. Hemen şuradan yeni bir sayfa açalım.
+
+73
+00:25:33,715 --> 00:25:40,715
+Ve işte Roadrunner, şuna kısaca Roadrunner diye işaret koyalım. Şu şekilde işliyor aslında.
+
+74
+00:25:40,715 --> 00:25:46,715
+Notkenar diyeyim şuraya.
+
+75
+00:25:46,715 --> 00:25:52,715
+Bu ünlem yapmaya çalıştım. Galiba olmadı. Hemen temizleyelim.
+
+76
+00:25:52,715 --> 00:25:56,715
+Şuraya şöyle noktayı biraz daha aşağı koyalım.
+
+77
+00:25:58,771 --> 00:26:12,672
+Not kenar diyorum, tamam. Kenarda olmadığım sürece, kenara gelmediğim sürece ya da öyle okuyalım. Şurada bir döngünün gövdesinde koşacağım.
+
+78
+00:26:13,011 --> 00:26:40,991
+Tamam, bunu yapan aslında Roadrunner, böyle koşuyor burada. Tamam, koşma işlemini böyle basitçe anlatmış olalım. Şimdi şöyle de yoluna devam ediyor. Ama buna karşılık Koyote ne yapıyor çakalımız? Aslında o da Do While döngüsü çalıştırıyor. Yani eylemlerinde. O şöyle yapıyor. Önce diyor ki koş koş koş koş. Mutlaka koşmalısın. Bu şey normal dikdörtgen bu arada. Input gibi oldu. Koş diyor.
+
+79
+00:26:41,011 --> 00:27:07,132
+Tamam mı? Yukarıdan geldi ve sonra da şurada kenar olmadığı sürece kontrolünü yapıyor. Şimdi fark ne? Farka bakalım birlikte. Şunu da hemen döngünün gövdesini şöyle bağlamış olalım. Tamam. Şimdi kodronur yola başladı. Şuraya da şöyle şeyi çizelim. Uçurum tamam mı? Şurası da kenar.
+
+80
+00:27:07,763 --> 00:27:34,523
+Şöyle noktayı çizelim. Şimdi Rodroner buradan geliyor, koşuyor. Sürekli olarak kenarda mıyım? Kenar değilse koş diyor. Mesela şöyle şeyler yapalım. Her bir T adımını çizmiş olalım. Kenarda mıyım? Değilim. Koş. Buraya geldi. Kenarda mıyım? Değilim. Koş. Buraya geldi. Kenarda mıyım? Değilim. Koş. Buraya geldi. Kenarda mıyım? Değilim. Koş. Buraya geldi. Kenarda mıyım? Değilim. Koş. Buraya geldi. Kenarda mıyım? Evet. O zaman artık bu yanlış olduğu için çıkacak. Yani Rodroner şurada çizmeye çalışayım.
+
+81
+00:27:35,380 --> 00:27:41,380
+Şurada kuş, şöyle gagası olsun, tamam mı? Kanatları var. Roadrunner burada duruyor.
+
+82
+00:27:42,195 --> 00:28:10,175
+Fakat Kojote ne yapıyor buna karşı? Diyor ki koş, koştu, kenarda mıyım? Hayır. Koş, koştu, kenarda mıyım? Hayır. Koş, koştu, kenarda mıyım? Hayır. Koş, koştu, kenarda mıyım? Kenarda mıyım? Kenarda mıyım? Burada bir daha koşu çalıştırıyor. Ondan sonra şuradayken kenarda mıyım diye kontrol yapıyor. Ama tabii ki artık çok geç. Kenarı bir kere daha fazla çalıştırdığı için koşu aslında buradan aşağı doğru çivur diye gidiyor. Bu da işte çizgi filmde seyrettiğiniz kısım. Bunun da algoritmik kod karşılığını.
+
+83
+00:28:10,195 --> 00:28:18,975
+bu şekilde ifade edebiliriz. Peki, döngülerle ilgili anlatacaklarım da temel olarak bu kadar. Şimdi gelelim dizi kavramına. Bu dizi
+
+84
+00:28:20,788 --> 00:28:29,907
+değişkenlerden oluşan diziler ne demektir, ne anlama gelir ve algoritmalarımızda bunları nasıl kullanabiliriz? Bununla ilgili bir tanımlar ve örneklerle yolumuza devam edelim.
+
+85
+00:28:30,587 --> 00:28:40,347
+Şimdi dizi aynı türden elemanların bir arada durduğu topluluklara verilen, veri topluluklarına verilen isim. Ne demek istiyorum?
+
+86
+00:28:47,135 --> 00:29:09,536
+Ne bileyim ise sekiz, bir, üç, tamam. İki, beş, sekiz, bir, üç diye sayılarım var. Ben ne yapabilirim? Bunların her birini ayrı bir değişkende tutabilirim. Yani şöyle, hepsini şöyle şey yapalım. Şu bir değişken, bu bir değişken, bu bir, bu bir, bu bir, tamam. İsim de verebilirim ben bunlara.
+
+87
+00:29:11,412 --> 00:29:19,231
+Diyelim ki bu A değişkeni olsun, bu B değişkeni olsun, bu C değişkeni, B değişkenleri olsun. Çok güzel.
+
+88
+00:29:19,584 --> 00:29:27,983
+Ben mesela bunlar üzerinde bütün elemanların toplam değerini bulmak istiyorum. Geçen hafta yapmıştık hatırlarsanız akış diyagramını çizmiştik.
+
+89
+00:29:27,983 --> 00:29:33,983
+Teker teker elemanları okuduk. Toplam değerlerini ayrı bir değişken de şurada toplam diye bir değişken tuttuk.
+
+90
+00:29:33,983 --> 00:29:47,583
+O toplamı sürekli güncelleyerek toplaya toplaya devam etmiştik hatırlarsınız. Şimdi ben burada madem ki aynı türden birden fazla değer tutuyorum ve bunların üzerinde bir gezinti mekanizması hepsine bakma gibi ya da sorgulama gibi işlemler yapacak.
+
+91
+00:29:47,584 --> 00:30:08,584
+Ben neden bunların her biri için ayrı bir değişken ismi bilmek zorundayım? Şöyle bir yapı olsa, şurada mesela büyük A desek, tamam mı? A eşittir diye bir şey yapsak ve şu, niye böyle oldu? Hemen, pardon yanlış, aracı seçtik. Şöyle bir...
+
+92
+00:30:09,140 --> 00:30:17,900
+kutu yapı tutma hani container yapısı oluştursam ve ben bunu böyle bu şekilde
+
+93
+00:30:17,900 --> 00:30:24,500
+biraz fazla uzun yapmışız. Şöyle şunu da silelim.
+
+94
+00:30:24,607 --> 00:30:52,548
+Tekrardan kutumuzu şuradan gelecek şekilde oluşturalım. Tamam, harika oldu. Bu şekilde tek bir kutu, yan yana duran, mesela bellek organizasyonundan bahsetmiştik. Burası bir adres. 0xf1 adresi, burası 0xf2, 0xf3, 0xf4 diye birer bytes mesela gidiyor. Aslında dizi dediğimiz kavram tam olarak böyle bir yapı.
+
+95
+00:30:52,607 --> 00:31:18,087
+ha bellekle illa böyle birbirini takip eden adreslerde durmak zorunda değil. Aralarda boşluklarda olabilir ama önemli değil. Ben sonuçta diziyi kendi uygulamamda ya da algoritmamda tek bir bütün olarak görüp kullanabilirim. Peki ne değişti burada? Aslında ben burada fark olarak bunların indislerini kullanabiliyorum. Şimdi şuraya indislerini yazıyorum. Tamam mı?
+
+96
+00:31:18,192 --> 00:31:21,771
+Bir iki üç dört beşinci göz. Ne demek bu?
+
+97
+00:31:22,355 --> 00:31:48,556
+Dizinin birinci elemanı. Örneğin burada, diyelim ki iki değerini tutuyorum. Dizinin ikinci gözüne beş değerini yazmışım. Dizinin üçüncü gözüne sekiz, sonra bir ve sonra da üç değerlerini yazmışım. Şimdi burada ben diyelim ki bir dizinin bütün elemanlarının yani buradaki bütün sayılarının toplam değerini oluşturmak istiyorum. O zaman ben artık çok hızlı bir şekilde şöyle bir kod yapabilirim.
+
+98
+00:31:50,355 --> 00:32:17,291
+okunduğunu varsayalım. Biraz sonra onda nasıl okunması gerektiğini anlatacağım. Ama şurada hemen bir for döngüsü içinde mesela bir i değişkeni tamam birden beşe kadar birer birer artacak şekilde her adımda toplam
+
+99
+00:32:18,612 --> 00:32:21,612
+artı dizimin
+
+100
+00:32:22,812 --> 00:32:23,772
+ilgili
+
+101
+00:32:24,772 --> 00:32:26,772
+indisinde duran
+
+102
+00:32:26,772 --> 00:32:28,052
+değer diyebilirim.
+
+103
+00:32:28,612 --> 00:32:30,612
+İşte temeldeki
+
+104
+00:32:30,612 --> 00:32:33,412
+akış diagramlarında dizi kullanmanın
+
+105
+00:32:33,412 --> 00:32:36,772
+mantığı bu şekildedir. Ne yapmış oldum? Şimdi bunu açalım.
+
+106
+00:32:37,412 --> 00:32:40,772
+Analizini yapalım. Şimdi i değerimiz tamam mı?
+
+107
+00:32:41,332 --> 00:32:45,572
+Burada da a i değerimiz var. a i ne demek? a i şu demek.
+
+108
+00:32:46,163 --> 00:32:49,064
+dizinin iyinci gözünde duran değer.
+
+109
+00:32:50,003 --> 00:33:16,723
+Notasyon olarak biz akış diyagramlarımızda köşeli parantez ile buradaki indisleri gösteririz. Tamam. İğinerden geldi? Benim döngü değişkenim, iteratörüm gördüğünüz gibi. O da buradaki sayı değeri. Şimdi iğinin ilk değeri nedir? Döngü de 1'dir. O zaman ben burada A1 değerini alacağım. A dizisinin birinci indisindeki değer kaç? 2. Yani 2 değerini aldı.
+
+110
+00:33:17,172 --> 00:33:25,971
+Bir kere daha döndüm. İ2 değerini aldı. İ2 değerini aldığında burası ne oldu? A2. A2'de kaç var? Sayısal değeri burada 5.
+
+111
+00:33:26,400 --> 00:33:34,480
+Tamam, bu şekilde birden 5'e kadar gideceğim ve A5 gözünde 3 değerini alacağım ve bu değeri kullanacağım.
+
+112
+00:33:34,660 --> 00:33:49,900
+İşte ben aynı türdeki verileri üzerinde dolaşacaksam, bazı imdizlerinde, bazı elemanlarda duruma göre seçip de işlem yapacaksam ya da bütün hepsi üzerinde işlem yapacaksam bu yapı benim işimi çok kolaylaştırıyor.
+
+113
+00:33:49,900 --> 00:33:54,400
+İşte buna da biz dizi adını veriyoruz. Aynı türdeki verileri tutacağız.
+
+114
+00:33:54,400 --> 00:34:21,800
+Şimdi gelelim dizinin indis mantığına. Ben burada, özellikle de akışlarımızda birden ene şeklinde, kolay okunması, kolay anlaşılması için birden ene olacak şekilde hep yazıp ifade edeceğiz. Fakat gerçeklerken bunları illaki adreslerimizin, şuradaki indislerimizin pardon, birden ene doğru sayılardan oluşmasına gerek yok. Başka alternatifler de olabilir. Örneğin sıfırdan başlayıp, bir.
+
+115
+00:34:22,356 --> 00:34:34,115
+iki üç ve dört şeklinde gidebilirim. Şimdi ne oldu burada? Mesela başlayacağız. C programlama dilinde bunları nasıl gerçeklenecekleri göreceğiz.
+
+116
+00:34:34,115 --> 00:34:46,516
+Bütün dizler sıfırdan başlar. İndisleme sıfırdan başlar. Demek ki ben o zaman sıfırdan n-1'e kadar gitmeliyim. Şimdi a'nın eleman sayısı kaç?
+
+117
+00:34:50,356 --> 00:35:14,756
+n-1'e kadar, n-1'e kadar olacak şekilde ben döngülerimi kurulamadım. Biz akış diyagramı tekrar söylüyoruz. Çizerken genellikle 1'den i eşittir, 1'den n'e kadar demeyi daha anlaşılır bulduğumuz için tercih ediyoruz.
+
+118
+00:35:15,007 --> 00:35:42,987
+Fakat siz tabii ki şunu da yapabilirsiniz. Birebir aynı şey olacaktır. Ama dediğim gibi biz birden N olanı daha çok tercih ediyoruz. Ben burada oturup i eşittir sıfırdan N-1'e kadar olacak diye de aynı döngüyü kurgulayıp A0, A1, A4'e kadar diye gezebilirim. Demek ki ben burada başlangıç ve son bitiş değerlerine dikkat etmem.
+
+119
+00:35:43,007 --> 00:35:50,007
+gerekir. Şu anda henüz bir kodlama ya da bir gerçekleştirme karşılığı olmadığı için bir notasyonunu kullanmayı tercih ediyoruz.
+
+120
+00:35:50,007 --> 00:35:58,608
+İleride şu anda değil ekstra olsun diye söylüyorum bunların sayı olmasına bile gerek olmayacak. Belki bazı programlama
+
+121
+00:35:58,608 --> 00:36:04,407
+dinlerinde bunların enumerasyon karşılıklarının olduğunu da göreceksiniz. Yani bunlara belki de karakter,
+
+122
+00:36:04,407 --> 00:36:09,407
+belki de kelimelerle ifade edeceksiniz. Yani mesela buraya işte elma yazacaksınız.
+
+123
+00:36:10,579 --> 00:36:12,579
+Oraya armut yazacaksınız.
+
+124
+00:36:12,579 --> 00:36:13,355
+Tamam.
+
+125
+00:36:14,164 --> 00:36:42,164
+Buraya işte muz yazacaksınız gibi. Ne oldu? Ben A dizisinin muz indisindeki elemanı dediğimde aslında şuradaki 8 değerine erişmiş olacağım. Şimdi bu kafanızı karıştırmasın tamam mı? Ekstra bilgi olarak bunu hatırlayın ama illa böyle sayısal indisler olmak zorunda değil. Metin karşılıkları ya da enumerasyon gibi dizi indisleri de olabilir. Belirli programlama dillerinde ve ortamlarında. Ama şimdilik biz dediğim gibi akış...
+
+126
+00:36:42,164 --> 00:36:55,564
+kodlarımızda birden N'e, kodlamalarımızda özellikle C kodlamalarımızda sıfırdan N-1'e olacak şekilde dizilerimizi kullanmaya devam edeceğiz. Peki, anladık mı bir soru var mı şimdi bu noktaya kadar bir bakalım.
+
+127
+00:37:00,244 --> 00:37:02,244
+Yok, peki devam ediyorum.
+
+128
+00:37:03,244 --> 00:37:05,244
+Yeni bir sayfa açarak.
+
+129
+00:37:05,244 --> 00:37:18,244
+Geçen hafta en tane elemanı okuyup, bir döngü içinde, sonrasında da toplam ve ortalama değerlerini hatırlarsanız hesaplamıştık.
+
+130
+00:37:18,244 --> 00:37:22,244
+Şimdi bunun aynısını döngü, pardon özür dilerim, dizi kullanarak yapalım.
+
+131
+00:37:22,655 --> 00:37:38,655
+Nasıl yapacağız? Aradaki farkı ve özellikle de okuma noktasında dikkat etmeniz gerekenleri söylemesi için aynı örneği tekrar yapacağım. Şimdi algoritmam buradan başladı. İlk olarak ben değerlerimi okumam lazım.
+
+132
+00:37:38,835 --> 00:38:05,955
+Hemen okuma sembolünü buraya koymuş olayım. Ne okumam lazım? Benim ilk olarak kaç tane eleman okuyacağımı bilmem lazım. O yüzden şurada bir n değerini okudum. Virgül koydum. Şimdi de diziyi okuyacağım. Değil mi? Bir dizi halinde bana mesela beş tane elemanın ya da altı tane sayının verilmesini istiyorum.
+
+133
+00:38:06,387 --> 00:38:16,887
+Bakışlarınızda özellikle çok uzun yer kaplamaması adına şu şekilde siz dizi okuma işlemlerinizi gösterebilirsiniz.
+
+134
+00:38:16,887 --> 00:38:31,228
+Fakat burada dikkat etmeniz gereken en önemli şey şudur. İlk önce uzunluğu okumalısınız ki o kadar sayıda elemanı okudur. Önce uzunluk sonra dizinin teker teker elemanı.
+
+135
+00:38:33,907 --> 00:38:42,407
+Çizelim. Aslında ben şöyle diyebilirdim bunu. Bir tane n değerini okurum.
+
+136
+00:38:42,407 --> 00:38:50,407
+n değerini okuduktan sonra hemen bir tane döngü oluştururum ve i eşittir.
+
+137
+00:38:55,123 --> 00:39:17,443
+Birer birer artacak şekilde ve şuradan aşağı indirip her bir adımda şöyle okuma kutusu içinde A'nın i'inci gözlerini teker teker okuyabilirim. Şöyle de döngümüzü tamamlayalım. Buradan da aşağı doğru yoluma devam ederim.
+
+138
+00:39:17,748 --> 00:39:29,748
+Değil mi? Bunu da yapabilirim. Yani aynı şey ama buradaki gösterim tek bir okuma kutusunun içinde kompakt bir halde sizin bütün dizi elemanlarınızı okuduğunuzu göstermeniz için daha faydalı olacaktır.
+
+139
+00:39:29,748 --> 00:39:36,715
+Peki, şimdi aşağıda ne yapıyorduk? Hatırlayalım. Bir toplam değerimiz vardı.
+
+140
+00:39:36,884 --> 00:39:40,463
+Onu bir ilk değer ataması olarak sıfıra eşitlemiştik.
+
+141
+00:39:40,463 --> 00:39:45,583
+Burada benim tabii n'in sıfır olmaması gerektiğini kontrol etmem gerekmişti.
+
+142
+00:39:45,844 --> 00:40:00,184
+Onu burada tekrar yazmayacağım ama burada gerekiyorsa bir kontrol daha eklemeniz gerek veya n'in sıfırdan büyük olduğunu direkt olarak girdik isteyecek şekilde varsayarsak o kontrol de eklememize şu anda gerek kalmaz.
+
+143
+00:40:00,563 --> 00:40:07,563
+Tamam, toplam sıfır, ortalama da sıfır. Ben bunları hemen böyle bir işlem kutusunda atamaları olarak gerçekleştirdim.
+
+144
+00:40:07,563 --> 00:40:11,563
+Sonrasında ne yapmam lazım? Benim...
+
+145
+00:40:13,563 --> 00:40:15,563
+Çok mu kesildi ses?
+
+146
+00:40:16,563 --> 00:40:21,563
+Bir ara bir internet bağlantısında stabilite problemi yaşandı ama...
+
+147
+00:40:24,755 --> 00:40:27,335
+Evet, sorun yaşayan da var, yaşamayan da var.
+
+148
+00:40:27,335 --> 00:40:30,915
+Gerekiyorsa başka bir network'e geçeyim.
+
+149
+00:40:32,915 --> 00:40:35,635
+Ya da geçeyim ben bir saniye.
+
+150
+00:40:43,059 --> 00:40:45,059
+Şimdi şuradan kopalım.
+
+151
+00:40:47,059 --> 00:40:49,931
+Umarım bir sıkıntı yaşamayız.
+
+152
+00:41:09,108 --> 00:41:11,108
+Bir dakikanızı rica ediyorum.
+
+153
+00:41:28,307 --> 00:41:35,228
+Tamam. Network değiştirdim. Umarım şimdi daha iyi gelir.
+
+154
+00:41:35,228 --> 00:41:47,108
+Evet, döngümüzü hemen oluşturalım. Ne yapacağız? N tane elemanımızın değerlerini birer birer toplayacağız değil mi?
+
+155
+00:41:52,628 --> 00:42:17,468
+Her bir adımda, aslında bir önceki sayfada şurada göstermiştim. Şu işlemi yapacağız. Toplam eşittir toplam artı. Aa iyi diyeceğiz yani toplam eşittir toplam artı dizinin inci gözündeki elemanın değeri.
+
+156
+00:42:17,972 --> 00:42:33,972
+Evet, döngüde sadece şimdi bu işlemi gerçekleştirdim. Geçen haftaki örnekte hatırlarsanız, her bir adımda tek bir değeri okuyup, şuraya okuduğum değeri ekleyecek şekilde bu algoritmayı oluşturmuştum. Şimdi bu şekilde gerçekleştirdim.
+
+157
+00:42:47,411 --> 00:43:12,612
+Bölü, EN, şurada Bölü. Bu işlemi de yaptıktan sonra, çok yakın oldu şurası. Ama siz burdan döngünün blü olduğunu biliyorsunuz. Bunları yazdıracağım. Toplam değerimi ve ortalama değerimi ekrana yazdıracağım. Ve duracağım.
+
+158
+00:43:13,204 --> 00:43:22,164
+Evet, bu şekilde de dizilerimizi okuyup algoritmalarımızda her bir dizinin elemanını bu şekilde kullanabiliriz.
+
+159
+00:43:22,164 --> 00:43:28,804
+Peki, şimdi mesela ben burada bir modifikasyon yapmak istesem.
+
+160
+00:43:28,804 --> 00:43:30,564
+Şunu da şöyle.
+
+161
+00:43:31,411 --> 00:43:47,492
+Sadece şu kısmı gelişidir şeklinde bırakalım. Ben diyelim ki en alemanlı bir diziyi okudum. Tamam, şuraya kadar geldim. Ve çift sayıları ayrı, tek sayıları ayrı toplamak istesem. Acaba ne yaparım? Pikli olan var mı?
+
+162
+00:43:54,036 --> 00:43:56,115
+Nasıl bir modifikasyon yapmam gerekir?
+
+163
+00:44:06,867 --> 00:44:12,148
+Şöyle, iki tane toplam değer tutmam lazım.
+
+164
+00:44:12,148 --> 00:44:24,148
+O zaman benim, şu ortalama boş verin, hani ortalama değil sadece iki tane toplam değerinin olduğunu düşünelim. Onları da koyu ne renkte yapalım şöyle bordo ile yazalım.
+
+165
+00:44:24,148 --> 00:44:34,547
+Evet, mod 2 eşittir 0 ile bir kontrol yapmam lazım. Şimdi ben şurada o zaman toplam tek eşittir 0 ve
+
+166
+00:44:34,559 --> 00:44:35,840
+Toplam çift
+
+167
+00:44:36,359 --> 00:44:40,960
+Eşittir sıfır diye iki tane değişkene ihtiyacım var. Şurayı
+
+168
+00:44:41,720 --> 00:44:44,039
+Döngü bloğunu, gövdesini
+
+169
+00:44:44,039 --> 00:44:45,059
+Aslında
+
+170
+00:44:45,559 --> 00:44:46,599
+Şu şekilde
+
+171
+00:44:46,840 --> 00:44:48,640
+Güncellemem gerekir.
+
+172
+00:44:49,920 --> 00:44:51,720
+For döngüsünden geldim.
+
+173
+00:44:51,960 --> 00:44:53,000
+Tamam mı? Şuradayım.
+
+174
+00:44:53,239 --> 00:44:54,279
+Şu nokta.
+
+175
+00:44:54,779 --> 00:44:56,319
+Bu noktada geldiğimde
+
+176
+00:44:57,079 --> 00:44:57,859
+Önce
+
+177
+00:44:57,859 --> 00:44:59,140
+Şuna bakmalıyım.
+
+178
+00:45:00,159 --> 00:45:01,699
+Eğer ben
+
+179
+00:45:04,052 --> 00:45:05,072
+Döngünün
+
+180
+00:45:08,947 --> 00:45:23,447
+İteratöründe, üzerinde bulunduğum adımda, ikiye bölünebiliyorsam ya da bölümümden kalan sıfır ise ne demektir? Ben çift sayıyım demektir. O zaman TC
+
+181
+00:45:25,331 --> 00:45:53,331
+Yani çift değerim demektir. Eğer değer çift ve tek ise bakın yani indis tek ve çiftleri ayrı toplamak istiyorsanız bu şekilde yaparsınız ya da değerler tek mi çift mi diye kontrol edeceksiniz de o zaman A'nın i inci gözündeki değeri ikiye bölerek tek sayımı çift sayımı şeklinde bir kontrol de yapabilirsiniz. Tamam şu mod tabi.
+
+182
+00:45:53,331 --> 00:46:16,132
+tabii yüzde işareti. Bunu modlu yazabilirsiniz, yüzdeyle de gösterebilirsiniz. Tek indisleri ayrı, çift indisleri ayrı toplamak istiyorsanız bu ya da x sayıları ayrı, çift sayıları ayrı toplamak istiyorsanız bu. Tamam. TC eşittir. TC artı artı AI şu tarafta.
+
+183
+00:46:20,179 --> 00:46:22,179
+Eğer tekse de
+
+184
+00:46:22,179 --> 00:46:45,899
+ne yapacağız? Tek fark burada TT eşittir. Yani tek sayıların toplamı eşittir. Eski toplam artı AI olacak şekilde algoritmamızı ufak bir modifikasyondan geçirmemiz gerekir. Şunlar böyle birbirine girdi. Kusura bakmayın muhabbet kadar oluyor. Tamam, bu.
+
+185
+00:46:45,907 --> 00:46:49,028
+ve döngünün tekrardan hop diye
+
+186
+00:46:50,228 --> 00:46:54,028
+for döngüsüne geri gelmem gerekiyor. Şurada da fordan gelmiş istim.
+
+187
+00:46:54,028 --> 00:46:56,028
+Bunu da göstermiş olalım. Tamam.
+
+188
+00:47:00,692 --> 00:47:20,211
+Şimdi mod 2 kontrolünde 0 ise çift eşittir, çift artı 1. Eğer 1 ise tek eşittir, tek artı 1. Evet evet, aynen öyle. Zaten şurada Mor'la ya da Bordo'yla yazdım o algoritmayı. [öğrenci] de demiş ki birinde a i artı 1. Niye a i artı 1?
+
+189
+00:47:24,500 --> 00:47:51,079
+Yanlış oldu, tamam. Okey, onu düzeltmiş olalım. Evet, peki, şimdi ben o zaman en azından o AI artı bir ile ilgili şöyle bir şey yapalım. Diyelim ki ben hemen yeni bir sayfa açalım. Dizi okudum. Biraz yavaş oluyor maalesef tek tek bunları yazmak. Dizi okuyorum.
+
+190
+00:47:55,059 --> 00:48:09,299
+N elemanlı, N dizisini okudum. Tamam. Şimdi amacım şu, dizinin takip eden iki şer gözündeki değerleri toplayayım ekrana yazdırayım.
+
+191
+00:48:09,299 --> 00:48:15,059
+Tamam, madem [öğrenci] böyle bir şey söyledi, biz de hadi şimdi o örnek gibi bir şey yapalım. Ne yapmam lazım?
+
+192
+00:48:16,059 --> 00:48:22,059
+Hemen şuraya bir tane for döngüsü, i eşittir, birden N'e kadar.
+
+193
+00:48:22,900 --> 00:48:29,940
+Birer birer artacak şekilde şu n bu w gibi oldu ama n olduğunu biliyorsunuz.
+
+194
+00:48:29,940 --> 00:48:33,880
+Tamam şimdi ne yapacağım ben mesela burada direkt ekrana yazdırayım.
+
+195
+00:48:34,039 --> 00:48:36,780
+Şöyle kocam an bir yazdırma şeyi yapalım.
+
+196
+00:48:47,668 --> 00:48:55,668
+Artı birinci gözündeki elemanı topla değerini ekrana yazdır. Döngü tamamla ve dur.
+
+197
+00:48:59,347 --> 00:49:19,228
+diye böyle bir algoritma çizelim. Evet, mesela şimdi [öğrenci] atladı hemen, dedi ki, hocam ne yaptın? A artı bir olur mu? I artı bir olur mu orada? Şimdi bakalım olur mu olmaz mı? Bunu özellikle zaten yaptım. Hatayı özellikle yaptım. Şunu N haline getirmeye çalışıyorum. O güzel olmadı.
+
+198
+00:49:21,268 --> 00:49:31,268
+Bunu tekrardan güzel bir N olarak yazayım. Şimdi ben bunun analizini yaptığımda diyelim ki N eşittir 3 olsun hızlı bir şekilde.
+
+199
+00:49:31,268 --> 00:49:41,268
+I eşittir 1'den 3'e kadar değer alacak. I tamam mı? Diziyi de şuraya şöyle 2, 4 ve 6 değerlerinden oluşan bir dizimiz oluşmuş olsun. Tamam mı?
+
+200
+00:49:42,324 --> 00:50:06,403
+Ha bu şeyle whiteboard şurada sonuymuş zaten dizide bu A dizisi. Böyle bir değer okunmuş olsun. Şimdi i1, i2 ve i3 değerlerini alacak döngüde. 3 değerini çalıştıktan sonra 4 olduğunda çıkacak döngüde. Peki şimdi i eşittir 1 için hangi değerleri toplayacak? a1 ve a2'yi toplayacak. Yani 2 artı 4.
+
+201
+00:50:06,771 --> 00:50:30,031
+değerlerini ekrana yazacak. İşte 6. İ 2 olduğunda 2 artı 3'ü yazdıracak. Yani 4 ve 6 değerlerinin toplamını ekrana yazdıracak. Yazdır. 10 diye yazdı. İ eşittir 3 oldu. İ 3 olduğu için A3 ve A4'ü yazdırmaya çalışacak. Nasıl yani? A4 tanımlı değil. Hemen şuraya çizelim.
+
+202
+00:50:30,547 --> 00:50:50,547
+kırmızıyla mesela burada eksi 312 diye bir rakam olsun tamam mı? Bellekte bir alan değil mi bu? Böyle bir şey olmuş oldu. Şimdi ben aslında burada, buradan tekrar maviye geleyim, 6 artı A4'e gitmeye çalışıyorum. A4 diye bir şey tanımlı değil.
+
+203
+00:50:58,128 --> 00:51:18,128
+seneye ikinci sınıf olduğunuzda Array Index Out of Bounce Exception adında öğreneceksiniz. Fakat hani şu anda biz burada dizinin toplam eleman sayısının dışına taştığımızı görüyoruz. Bu durumda ben bir yanlış yaptım, bir hata yaptım. Dizinin
+
+204
+00:51:18,356 --> 00:51:44,896
+Üç elemanla dizinin dördüncü elemanını okumaya çalışıyorum. Burada bir hata. Peki nasıl düzelteceğim? İşte algoritmanın analizi buradaki değerlerle test edilmesi bu yüzden önemli. Mutlaka uç değerlerini kontrol, tekrar tekrar kontrol edin. Ben burada n değil de aslında n-1'e kadar dönmeliydim. Neden? Ben burada üç değerini almamam gerekirdi.
+
+205
+00:51:45,460 --> 00:52:11,000
+n3 iken n-1 nedir? 2 değil mi? Yani i değerinin sadece 1 ve 2 değerlerini almasını ekrana da 2 artı 4, 6, 4 artı 6, 10 değerlerini yazdırıp sonradır durmasını, döngüyü tamamlayıp çıkmasını garanti etmem gerekir. Bunu etmezseniz burada gördüğünüz taşma hatasını yaşayabilirsiniz. Eksi tarafa doğru da taşıyabilirsiniz, artı tarafa doğru da taşıyabilirsiniz.
+
+206
+00:52:11,456 --> 00:52:38,656
+İki tarafta olabilir, buna dikkat etmeniz lazım. Şimdi gelelim şuradaki göze. Ben bunu niye yazdım? Şimdi mesela C gibi dillerde, ele böyle diziyi dinamik olarak falan allocate edecekseniz bellekte, buradaki taşma kontrolünün sorumluluğu tamamen sizin üzerinizde. [öğrenci] sana cevap vereceğim, şunu anlatayım, bitireyim. Mesela bu kod, diyelim i eşittir birden n olacak şekilde kodladığınız çalıştığı ya da 0'dan n-1'e.
+
+207
+00:52:39,251 --> 00:52:40,204
+Ve
+
+208
+00:52:40,244 --> 00:53:06,824
+Burada neye erişmeye çalıştım ben? Olmayan bir dizi gözüne. Ama aslında o dizi gözü, dizide ayrılan bellekle bir sonraki göz. Hani ilk dersimizde tekrar şey yaparsak, bellek organizasyonunu düşünürseniz. Bir sonraki bellek gözü orası başka bir şey değil ve orada diyelim Hasbelkader bir yerden eskiden bir eksi 312 diye bir değer kalmış. O zaman ne olacak? Ben burada ekranda eksi 306 gibi alakasız, saçma ve yanlış bir değer göreceğim.
+
+209
+00:53:08,244 --> 00:53:25,244
+Dillerde özellikle esnek olan ve tamamen kontrolün sizde olması için, bırakılması için tasarlanmış dillerde böyle sıkıntılar yaşayabilirsiniz. Hata almadan sonuç elde edebilirsiniz ama aslında algoritmanız gördüğünüz gibi yanlış çalıştı. O yüzden bunlarda çok dikkatli olmamız gerek.
+
+210
+00:53:26,036 --> 00:53:40,896
+[öğrenci] demiş ki, A0 eşittir 0 diye bir şey yazmamalı mıyız? Hayır, yazabilirsin. Dediğim gibi tekrardan C'deki indisler 0'dan başlayacaktır. Yani aslında senin o dizindeki ilk elemanın olacak. O yüzden yazabilirsin, tamam? Ama...
+
+211
+00:53:41,235 --> 00:54:09,235
+Mesela i eşittir sıfırdan diye başladın burada. Tamam mı? Eğer senin burada birden başladık ya, o zaman sıfırıncı gözünün olması lazım. O burada gözükmeyeceği için yine hata alabilirsin. Mesela şuraya i eksi bir deseydim tamam mı? i eksi bir bu taraftan taşma olacaktı. Soldan taşma olacaktı bu sefer. Bu da ayrı bir dert, ayrı bir sıkıntı. O yüzden siz her başlangıçtan son değer kontrollerinde...
+
+212
+00:54:09,235 --> 00:54:28,295
+Özellikle dizilerde taşıyor muyum, taşmıyor muyum diye çok dikkatli kontrol ederek yolunuza devam etmeniz gerekiyor. Peki. Şimdi bir örnek daha yapalım. Dizilerle ilgili söyleyeceklerim temelde bu kadar. Problemimiz şu.
+
+213
+00:54:29,012 --> 00:54:53,516
+Bana üç tane sayı veriliyor. Bunun dizi olmasına gerek yok. Tamam mı? Üç tane değeri ayrı ayrı görmemiz açısından A, B ve C şeklinde üç tane değişken okumak istiyorum. Bu okuduğum üç tane değeri ortanca olanını ekrana yazdırmak istiyorum. Problem bu. Yani şöyle örnekleyeyim. İşte üç, beş,
+
+214
+00:54:54,132 --> 00:55:21,012
+Ve sekiz olsun. Tamam mı? Bu üç değerin ortancası nedir? Beştir. Bana bunu ekrana bulup yazdırmanızı istiyorum. Ya da, böyle sıralı verilmek zorunda değil. Sekiz, üç, beş şeklinde verildi. O zaman yine beş değerini yazdırmanızı. Ya da beş, sekiz, üç şeklinde verildi. Beş değeri yine ortanca. Bunu yazdırmanızı istiyorum. Ya da
+
+215
+00:55:21,300 --> 00:55:37,800
+eksi iki sıfır iki diye verildi sıfır değeri ortanca bunu yazdırmanızı istiyorum gibi burada tabi eşitlik de olabilir mesela üç üç sekiz ortanca olan hangisidir
+
+216
+00:55:38,079 --> 00:56:02,519
+Ya budur, ya budur. Önemi var mı? Hayır, yok. Yani A'da diyebilirsiniz, B'de diyebilirsiniz bana. Çünkü ikisinin de taşıdığı değer eşit, değil mi? Ya da 3, 3, 3 olsaydı herhangi birini söylemek yeterli olur diyorum. Tamam mı? Yani birini bulsanız yeterli. İlla sağdakini ya da soldakini diye bir şey yok. Eşitliklerde herhangi biri benim için doğru cevaptır. Peki, böyle bir problemi acaba nasıl çözebiliriz?
+
+217
+00:56:04,436 --> 00:56:27,436
+Dizi olarak değil, hayır hayır. Dizi kullanmanızı istemiyorum çünkü sadece üç tane sayı var, hani A1, A2, A3 kafayı daha çok karıştırmasın diye. Herhangi bir şekilde bunları alıp sıralamanızı ve en bölü ikinci elemanı seçmenizi istemiyorum çünkü o böyle kulağınızı şuradan şöyle tutup göstermek gibi oluyor.
+
+218
+00:56:32,436 --> 00:56:37,436
+Sadece üç sayımız var tamam mı? Bu artmayacak. Yani üç tane sayıyı sadece karşılaştırıp ortancısını almak istiyorum.
+
+219
+00:56:40,436 --> 00:56:52,436
+Şimdi ilk aklına gelen mesaz [öğrenci]'in dedi ki dizi olarak sıralayalım yoksa değişken şeklinde mi? Max 1, Max 2, mid. Max 1, Max 2 de istemiyorum. Mid. Sadece mid elemanı istiyorum. Bu kadar. Başka hiçbir şey değil.
+
+220
+00:56:52,436 --> 00:56:56,172
+Ben hemen şuraya başlayayım. Start diyeceğim.
+
+221
+00:56:59,795 --> 00:57:01,795
+Şöyle ve
+
+222
+00:57:03,795 --> 00:57:05,795
+Hemen değerlerimizi okuyalım. A
+
+223
+00:57:06,995 --> 00:57:07,795
+B
+
+224
+00:57:07,795 --> 00:57:09,795
+C değerlerini
+
+225
+00:57:09,795 --> 00:57:11,795
+kullanıcıdan aldık.
+
+226
+00:57:15,827 --> 00:57:39,827
+Şu şekilde aldık. Tamam. Şimdi, aslında benim burada yapmam gereken karşılaştırma yapmak. Mesela şöyle düz bir mantık. Acaba AB'den küçük mü? AB'den küçükse neye bakmam lazım? Acaba AC'den küçük mü diye bakabilirim? Ya da AC'den büyük mü diye bakabilirim değil mi? Eğer AB'den küçükse ve A'da
+
+227
+00:57:41,331 --> 00:57:46,331
+C'den büyükse, bundan küçüğüm, bundan büyüğüm. Zaten ortanca benimdir değil mi?
+
+228
+00:57:46,331 --> 00:57:59,331
+Yani şurada, neredeki o? Şuradaki olay. A, B'den küçük. O kalemi görebiliyorsunuz değil mi? Mouse gibi. Oynatıyorum şurada.
+
+229
+00:57:59,331 --> 00:58:00,331
+Evet hocam.
+
+230
+00:58:00,335 --> 00:58:13,655
+Tamam, 5, 8'den küçük ve 5, 3'den büyük. O zaman bu durumda ben zaten ortancı diyelim. Peki, şöyle yapalım. Hemen yazalım bunu bir, tamam mı? Unutmamak için. AB'den küçükse
+
+231
+00:58:18,099 --> 00:58:21,779
+dedik. Biraz çizim kötü oldu idare edin.
+
+232
+00:58:22,500 --> 00:58:24,019
+Şuraya true diyelim.
+
+233
+00:58:24,259 --> 00:58:25,539
+Sonrasında neye baktım?
+
+234
+00:58:25,539 --> 00:58:28,340
+AC'den büyükse diye baktım değil mi?
+
+235
+00:58:29,299 --> 00:58:33,860
+Fakat burada şimdi eşitliği kontrol etmemiş oluyorum.
+
+236
+00:58:33,860 --> 00:58:36,900
+Hani şu durumda ne olacak?
+
+237
+00:58:37,204 --> 00:59:01,884
+gibi ya da hani 833 olduğunu düşünün. O zaman benim bir yerde bir eşitlik kontrolü yapmam lazım. Şuraya A büyük eşittir C mi diye bakayım. Böylece A ve C eşit olduğunda da doğru olurum. O zaman da işte bunu mu bunu mu ikisinden biri zaten aynı değerde de var demiştik. Tamam. Şimdi o zaman ben burada şuraya true dediğim tarafa ne yapacağım? İşte ortanca.
+
+238
+00:59:03,699 --> 00:59:05,860
+Eşittir A diyeceğim.
+
+239
+00:59:07,139 --> 00:59:10,319
+A değeri ortanca değerdir diye bir şey.
+
+240
+00:59:10,319 --> 00:59:11,599
+Direkt yazdırabilirdim.
+
+241
+00:59:11,599 --> 00:59:12,500
+Neyse.
+
+242
+00:59:12,500 --> 00:59:14,099
+Burada dursun.
+
+243
+00:59:14,099 --> 00:59:15,699
+Şimdi, burada
+
+244
+00:59:15,699 --> 00:59:17,699
+Şuraya foskolunu yapacağım.
+
+245
+00:59:19,539 --> 00:59:20,900
+Foskolunu çizelim.
+
+246
+00:59:21,652 --> 00:59:42,051
+A, C'den büyük değil. Tamam mı? O zaman ne oldu? A, C'den küçük. Neye bakmam lazım? A, B'den küçük, A, C'den küçük. Demek ki ben hep A olarak en küçük. Bu durumda B ve C'nin kendi aralarında bir karşılaştırmaya tabi tutulması gerekir. B küçük müdür C'den diye bakalım.
+
+247
+00:59:42,931 --> 01:00:09,811
+Olur mu? Olur. Neden olmasın? Olur. Eşittir diye de bakabilirdik ama eşitliği yukarıda şurada A'nın C eşitliğini kontrol ettik. B'nin C'yi eşitliğini tekrar kontrol etmeme gerek görmüyorum. Sebebi de yani eğer eşiti buraya koyarsanız ortancayı B bulursunuz. Eğer eşiti koymazsanız ortancayı C bulursunuz. Ne olacak? Yani çok da önemi yok. İkisinin de değeri zaten aynı olacağı için. Hani burada
+
+248
+01:00:10,516 --> 01:00:37,716
+Ekstra eşitlik kontrolüne ihtiyaç duymuyoruz. Şimdi, A, B'den küçük, A, C'den de küçük. Ha, A en küçük. O zaman B, C'den küçük mü diye bakıyorum. Eğer B'de C'den küçükse ne demektir? B ortanca eleman demektir. Şuraya hemen ort yazalım. Eşittir. B değerini burada yazdırmam ya da işte bir katama yapmam gerekiyor. Tamam.
+
+249
+01:00:38,612 --> 01:00:45,012
+Bu durumda, buraya ne kaldı? Artık herhalde tahmin edersiniz ortancanın C olduğu durum kaldı.
+
+250
+01:00:45,012 --> 01:00:56,532
+Evet, tamam. Şimdi bu tarafı tamamlayalım. False call'u bitti. Bakın böylece iç içe ifler de gerçekleştirmiş olduk.
+
+251
+01:00:56,532 --> 01:01:04,731
+Tamam. Bu da bitti. Şimdi gelelim bu tarafa.
+
+252
+01:01:06,996 --> 01:01:08,276
+Şurayı sileceğim.
+
+253
+01:01:09,816 --> 01:01:11,596
+Çünkü biraz alana ihtiyacım var.
+
+254
+01:01:15,764 --> 01:01:25,364
+Tamam. Tekrar kalemimi elime aldım. Biraz daha bunu sağa doğru yazsaydım daha güzel olacaktı ama idare edelim. Şimdi geldik false calluna.
+
+255
+01:01:25,876 --> 01:01:51,156
+Aslında burada A'nın küçük olduğu tarafı taramış olduk. Peki ya A, B'den büyük eşitse? Değil mi? Şimdi o tarafı taramamız gerekecek. Bunu da False tarafında yapacağız. Ne yapmamız lazım? Yine A, B, C'ye bakmamız lazım. Demin A büyük mü C'den diye bakmıştık. Şimdi A'nın B'den küçük olduğunu bildiğim için o zaman tam tersine burada da A küçük mü C'den diye kontrol yaparım.
+
+256
+01:01:51,635 --> 01:01:56,635
+Neden böyle bir şey yaptım? Şimdi sorulara evet, hayır cevabını verdiğimizde göreceğiz.
+
+257
+01:01:56,635 --> 01:01:58,635
+Şuraya true diyelim.
+
+258
+01:01:58,635 --> 01:02:01,635
+A, B'den küçük mü? Hayır.
+
+259
+01:02:01,635 --> 01:02:05,635
+Demek ki B küçük tamam mı? B, A'dan küçük.
+
+260
+01:02:05,635 --> 01:02:11,635
+A da C'den küçük ise o zaman nasıl sıralanmaları gerekir?
+
+261
+01:02:11,635 --> 01:02:17,635
+Ortanca kimin durması gerekir? A'nın durması gerekir. Hemen ben buraya ortanca değer.
+
+262
+01:02:19,635 --> 01:02:21,755
+A değişkenidir diye
+
+263
+01:02:21,755 --> 01:02:23,475
+A
+
+264
+01:02:23,475 --> 01:02:25,915
+Atamayı yapabilirim.
+
+265
+01:02:25,915 --> 01:02:29,115
+Peki bu da yanlışsa
+
+266
+01:02:29,115 --> 01:02:30,635
+Ne yapacağız?
+
+267
+01:02:30,635 --> 01:02:32,435
+Aslında
+
+268
+01:02:32,435 --> 01:02:34,235
+Şuradakinin
+
+269
+01:02:35,027 --> 01:02:39,747
+Tam tersine nasıl burada tersine aldık? Burada da bunun tam tersine almam gerekecek.
+
+270
+01:02:39,747 --> 01:02:44,307
+Ve B büyük mü C'den diye bakmam gerekecek.
+
+271
+01:02:44,307 --> 01:02:52,307
+Farkındasanız burada hiç eşitlik kontrolü yapmadık. O yüzden burada bir B eşit mi C'ye kontrolünü koyabilirim.
+
+272
+01:02:52,307 --> 01:02:55,987
+Peki, bu doğruysa ne demektir?
+
+273
+01:02:56,371 --> 01:03:11,851
+C, A'dan büyük, pardon C, A'dan küçük, B'de C'den büyük. O zaman ortada duran elemanın B olması gerekiyor. Şurada da A, B'nin de A'dan büyük olduğunu biliyorum. Yani A küçük, B.
+
+274
+01:03:12,436 --> 01:03:30,436
+Ve C büyük B. O zaman, pardon B büyük C ne oldu? A, B, C şeklinde sıralandığı için ortalamanın değerinin B olması gerekir. Bunu da burada atamasını gerçekleştirdik. Peki bu da değilse geriye ne kaldı?
+
+275
+01:03:33,748 --> 01:03:39,867
+Bc'den büyüklüğü ise o zaman C daha büyük demektir. Yani C ortadaki eleman demektir.
+
+276
+01:03:39,867 --> 01:03:46,108
+Ve burada da ort eşittir C şeklinde atamamı gerçekleştirebilirim.
+
+277
+01:03:46,987 --> 01:03:49,108
+Gerçekleştirelim oldu.
+
+278
+01:03:49,507 --> 01:03:53,027
+Ve şu false call'unu da bitirdik.
+
+279
+01:03:53,427 --> 01:03:56,507
+Şu da şuraya geldi. Tamam.
+
+280
+01:03:56,507 --> 01:04:00,507
+Şimdi artık true call'unun tamamı
+
+281
+01:04:01,811 --> 01:04:28,211
+False column'un tamamını aslında birini küçüktür, birini büyüktür kontrolüyle bitirdim. Siz burada A ve B'den başladın ben ama siz B ve C'den başlayabilirdiniz. O zaman tabii A'ları aşağıya doğru C'nin yerine A'ları kontrol edecek şekilde bir değişiklik yapmanız gerekecekti. Ekrana yazdırmamı istemiştim. Ort anca değeri, ort değişkenini ekranıma yazdırdım ve durdum.
+
+282
+01:04:30,931 --> 01:04:41,771
+Bu şekilde durarak algoritma tamamladım. Nasıl? İşte ne dedik? Biz sadece tek bir karar vermek zorunda değiliz.
+
+283
+01:04:43,771 --> 01:04:52,131
+Koşulların içinde alt koşulları da kontrol edebiliriz. Bunun doğru olduğunda bir if daha, bunun yanlış olduğunda bir if daha şeklinde.
+
+284
+01:04:52,131 --> 01:04:57,451
+Öyle istediğimiz kadar dallanıp budaklanabiliriz.
+
+285
+01:04:57,744 --> 01:05:21,824
+Tabii burada unutmamanız gereken, akışlarda unutmamanız gereken şeylerden biri, bunun bir akış olduğu, okların yönlü olduğu, bir döngü mekanizmasının bu kararlarının içinde yer almadığı. Yani ben kalkıp da mesela şuradan alıp, hop diye buraya ya da buraya yukarıya tekrar bir geri dönüş sağlayamam. Burada bir döngü mekanizması kuruluyamam.
+
+286
+01:05:22,047 --> 01:05:31,407
+her zaman bunların blok yapılarında olduğunu iç içe yani nested dediğimiz şekillerde oluşturulmaları gerektiğini hatırlayalım, bunu unutmayalım.
+
+287
+01:05:31,407 --> 01:05:43,887
+Peki ben acaba end operatörünü kullanıp a küçüktür ve or a büyüktür c tabii çözebilirdiniz.
+
+288
+01:05:45,300 --> 01:06:13,300
+Sonra [öğrenci] de demiş ki olabilir. Bu tek doğru yol değil. Bakın, akış tasarlamak, yani bir algoritma tasarlamak, bir problemi çözen tek bir doğru yol vardır. O da budur demek değildir. Bu problem farklı düşüncelerle, farklı bakış açıları ile, farklı algoritmik çözüm yöntemleri ile farklı şekillerde çözülebilir. Ben bunu niye böyle çözdüm? Temel olsun diye. Ve bir algoritmada karar mekanizmalarının iç içe, alt altı.
+
+289
+01:06:13,300 --> 01:06:38,080
+alta böyle parça parça kurgulanabileceğini size tekrardan göstermek için, açık bir şekilde göstermek için. Tabii ki bu en iyi yol değil. Çok fazla gördüğünüz gibi karşılaştırma yapıyoruz. Mesela [öğrenci] demiş ki, ilk başta A'yı ortanca yapsak, sonra onunla B ve C'yi karşılaştırsak. Ama B ve C'nin değerlerinin ikisini aynı anda karşılaştırman gerekecek. Değil mi?
+
+290
+01:06:39,092 --> 01:06:45,211
+Yani B'nin büyük C'nin küçük olduğunu ya da C'nin büyük B'nin küçük olduğunu aynı anda karşılaştırman gerekecek.
+
+291
+01:06:46,932 --> 01:06:59,211
+Sen şey demek istiyorsun aslında, [öğrenci]'un dediği gibi mesela hani A B'den küçükse, o gerçi Or yazdı ama mesela V deyip A da C'den büyükse şeklinde yapılabilir.
+
+292
+01:06:59,632 --> 01:07:02,972
+Bu da bir yol. Başka aklına fikir gelen var mı?
+
+293
+01:07:05,652 --> 01:07:15,572
+Özellikle, mesela ben bir tane yol çizdim, daha doğrusu yaptım, buldum diyelim. Onu da sizinle paylaşacağım.
+
+294
+01:07:18,291 --> 01:07:41,112
+Dediğim gibi, hibrit yani entleyerek de yapabilirsiniz bu ifleri ama yine de karar konusunda size çok fazla, en azından iften kurtulma konusunda çok fazla bir şey kazandırmayacaktır. Peki, şimdi sadece fikir olsun diye ya da hani aa böyle de olabiliyor muymuş bir farklı bakış açısı size kazandırmak adına aynı problemi ben bir de şu şekilde çözmek istiyorum.
+
+295
+01:07:42,387 --> 01:07:56,687
+Üç değerin ortalamasını bulup ortalamaya en yakın olana. Peki, güzel. Bunu dün de tartıştık. Yani diyorsun ki üç değeri topla, üçe böl. Üçe böldükten sonra ortalamaya olan farklarına bak.
+
+296
+01:07:57,523 --> 01:08:23,984
+Ondan sonra şeyde patladık dün. İşte orada onların içinde en yakın olanı ya da en küçük olanını bul şeklinde bir şeye gittik. Ve yine aslında bir önceki şuradaki tahtamızdakin çok benzeri bir problemi bu kadar şeyi yaptıktan, ortalama hesabı falan yaptıktan ve de işte çıkarttıktan sonra mutlak değerlerini aldıktan sonra yine bu tip karşılaştırma yapmak zorunda kaldığımızı gördük.
+
+297
+01:08:23,984 --> 01:08:25,523
+[öğrenci]'in de söylediği...
+
+298
+01:08:25,524 --> 01:08:33,904
+Bir gün mesela 01333 böyle bir değer olduğunda ortalamaya en yakın olan ne olacak gibi şeyler olabilir.
+
+299
+01:08:34,203 --> 01:08:41,324
+330'ya çok daha yakın olacaktır ortalama. O zaman patlarız. Peki. Ama bu güzel bir fikir. Bak farklardan gidiyorsunuz.
+
+300
+01:08:41,404 --> 01:08:49,203
+Ben aslında ikilileri karşılaştırıyorum. İkilileri karşılaştırıyorsam ikililer arasındaki farklar benim için bir anlam ifade etmeli.
+
+301
+01:08:49,943 --> 01:08:52,203
+Buradan acaba bir şey yakalayabilir miyiz? Bakalım.
+
+302
+01:08:52,756 --> 01:09:18,195
+Şimdi yazamadım. Hemen geri alalım. A, B, C değişkenlerimi okudum. Bunları okuduktan sonra dedim ya farklarına bakıyoruz diye. Şimdi ben bunların ikili farklarını alsam x eşittir a eksi b değerine baksam. Ondan sonra y eşittir
+
+303
+01:09:19,859 --> 01:09:21,859
+B eksi C ye baksam
+
+304
+01:09:23,299 --> 01:09:27,219
+Z eşittir desem, burada da C eksi A ye baksam
+
+305
+01:09:27,859 --> 01:09:29,859
+Hep ikililerin farklarını alsam
+
+306
+01:09:30,420 --> 01:09:52,540
+Şimdi, burada niye ben bunları aldım? Ben bunların çarpımlarına bakacağım. Çarpımlarına bakmak ne demek? Aslında büyük ya da küçük olduklarını birlikte entleyerek test etmek demek. Mesela A büyük ve B küçükse, AB'den büyükse burası pozitif çıkacaktır değil mi? Ama tam tersi AB'den küçükse X değeri negatif bir değere alacaktır.
+
+307
+01:09:52,884 --> 01:10:19,503
+İşte bu şekilde, acaba A mı büyük, B mı büyüğü bir sayısal eksi artı notasyonuna çevirmiş olabilirim. Aradaki sadece farkları alarak. Bunları aldıktan sonra ikisinin çarpımına bakabilirim. Yani aslında, şurada x çarpı y yazalım önce bir. x çarpı y pozitif mi? Yani ya ikisi de pozitif olacak ya ikisi de negatif olacak. Hatırlarsanız negatif sayılarında olabileceğini söylemiştim.
+
+308
+01:10:20,783 --> 01:10:39,343
+Bu durumdaysa ben neyi garanti etmiş olurum? Şimdi ikisinin pozitif, ikisinin negatif olması aslında aynı tarafa bizi götürecek. O yüzden sadece pozitifliğe bakalım. Bu sıfırdan büyükse ikisinin de işareti aynı demektir. Yani AB'den büyük, B'de C'den büyüktür. Bu durumda ortanca nedir? Tabii ki B'dir değil mi?
+
+309
+01:10:43,568 --> 01:11:09,247
+iki farkın V'lenmesi gibi çalıştığını da görebiliyoruz. Yani ikisi de artıysa okey. Ya da ikisi de eksiysa yine okey. Değil mi? Tamam. Ortanca nedir? B değeridir. Şuraya True yazmayı unutmadık. Bunu lütfen alışkanlık haline getirin. Her zaman için True Foster'ı yazın. Okları da şöyle koyun. Ben hızlı yaparken bazen atlayabiliyorum. Bunları siz atlamayın. Sonra ne yapacağım?
+
+310
+01:11:10,836 --> 01:11:17,775
+Diyelim ki bu şart doğru değil. O zaman ortancanın A ya da C olma durumu var demektir.
+
+311
+01:11:18,127 --> 01:11:31,467
+Ben şimdi A ve C'nin durumunu da AB ve CA üzerinden karşılaştırabilirim. Ya da Z'nin direkt olarak işaretine de bakabilirim. Değil mi? Bu da olabilir. Bu eksi ise ne demektir?
+
+312
+01:11:32,467 --> 01:11:43,287
+A büyük demektir. Değilse yani artıysa o zaman da işte C büyük demektir. Ya da bunu çarpımlarına da bakarak yapabilirim. X çarpı Z'ye bakarım.
+
+313
+01:11:44,595 --> 01:11:48,175
+Yine aynı şekilde büyük mü sıfırdan diye kontrol ederim.
+
+314
+01:11:52,979 --> 01:11:59,519
+Şu büyüktür, yine şey oldu, biraz taştı. Burası doğru taraf. O zaman ortanca C'dir.
+
+315
+01:12:02,868 --> 01:12:05,167
+Değer değilse geriye ne kalıyor?
+
+316
+01:12:06,968 --> 01:12:11,068
+Sadece A'nın ortanca değer olma şartı ya da durumu kalıyor.
+
+317
+01:12:11,308 --> 01:12:13,628
+Ortanca değer benim A değişkenimdir.
+
+318
+01:12:14,648 --> 01:12:17,208
+Bunu da burada atamasını gerçekleştiririm.
+
+319
+01:12:17,968 --> 01:12:19,248
+Burası bitti.
+
+320
+01:12:20,028 --> 01:12:23,868
+Şuradaki işlem kutucuğunu unutmuşuz, onu da bitirelim.
+
+321
+01:12:24,368 --> 01:12:25,908
+Sonra şurada
+
+322
+01:12:27,220 --> 01:12:36,400
+Ya yapımız tamamlandı. Ortanca değeri yazdırdım. Yazdırayım. Yazdırdım ve durdum.
+
+323
+01:12:40,243 --> 01:12:56,823
+Evet, şimdi ne oldu? Sadece iki tane if ile buradaki yapıyı, aynı yapıyı kurgulamış olduk. Geri dönelim. Bu ya da bu. Analizini gerçekleştirebilirsiniz. Analizlerini yaparken de mutlaka şöyle çalışın.
+
+324
+01:12:57,119 --> 01:13:22,639
+Ben şimdi burada elimle yazmak, tahta yazmak gibi olmuyor. Mesela ne dedik size? 3-5-8 örneğini verdik. Bunu böyle 3-5-8, 5-3-8, ondan sonra ne kaldı? 5'i sona alalım şöyle. 3-8-5, 8-3-5 ve 3'ü sona alalım. 5-8-3.
+
+325
+01:13:23,667 --> 01:13:47,887
+8, 5, 3. Bütün kombinasyonlar için çalıştırın. Bakın, doğru çalışıyor mu? Ondan sonra iki negatif sayılı, eksi 2, eksi 3, 1, bunun kombinasyonlarını alın. İçinde sıfır olanını alın. Tamam mı? Mesela işte eksi 5, 0, 5. Alın, bakın. Hepsini sıfır alın. Yani bütün değerleri birbirine eşit alın. Bakın. Şimdi mesela şu duruma bakalım.
+
+326
+01:13:48,595 --> 01:13:52,675
+Tamam mı? Ya da bu duruma bakmıyorum. Hepsi sıfır. Farklar hep sıfır çıkacak.
+
+327
+01:13:52,675 --> 01:13:59,235
+Ve doğal olarak false false'a gidip ortanca A diyeceğiz. Herhangi birini söylesem yeterli. Sıfır demiş olacağım.
+
+328
+01:13:59,235 --> 01:14:05,315
+Mesela işte ne olsun? Eksi iki, eksi iki, eksi iki.
+
+329
+01:14:06,323 --> 01:14:27,543
+Tamam. Şimdi burası nedir? A-B sıfırdır. Zaten burada B-B hepsi sıfır çıkacak zaten. Doğru. Evet. Şöyle bir şey olabilir. Eksi 2 artı 2 eksi 2 gibi değere bakabilirsiniz. Yine aslında burada ya A'ya ya C'ye gideceksiniz. Bakalım hangisine gidiyormuş.
+
+330
+01:14:27,920 --> 01:14:37,639
+Mesela eksi iki artı iki eksi iki değerleri için eksi iki eksi ikiden bu eksi dört olduğu x y değeri
+
+331
+01:14:37,887 --> 01:15:05,887
+iki artı ikiden dört oldu, artı dört. Z değeri de eksi iki eksi eksi ikiden eksi iki artı iki sıfır oldu değil mi? Tamam. X çarpı Y nedir? Negatiftir. O zaman bu tarafına gittim. Otomatikman zaten ortanca B gitti. İstediğiniz tarafına gidin, hiç fark etmez zaten ortanca değeri bulmuş olacaksınız. Ama bakalım, X çarpı Z'ye bakıyoruz. Negatif ortanca değer A'dır dedim ve şu değeri.
+
+332
+01:15:05,887 --> 01:15:10,688
+eksi iki değerini size göstermiş oldum. Ne oldu? Bakın
+
+333
+01:15:11,123 --> 01:15:38,984
+Sadece ben burada biraz kafayı farklı şekilde çalıştırıp, ya madem ben hani demin de arkadaşlarım zaten ortalamaya olan uzaklıklarına bakalım falan dedi. Bu sayıların arasındaki farkların bir anlamı olması gerekir. Büyüklük ve küçüklükleri direkt negatif pozitif sayı haline getirir diye bir kavram ile yola çıktım. Ve x, y, z diye aralarındaki sayıların farklarını bulmuş oldum. Bu farklardan sadece pozitif mi?
+
+334
+01:15:39,123 --> 01:15:48,984
+Negatif mi diye bakarak, o zaman bu kesin ortancı olmalıdır ya da o zaman kesin bu ortancı olmalıdır diye iki kontrolle sadece bu işi gerçekleştirebildiğim.
+
+335
+01:15:50,003 --> 01:15:58,163
+Entleyerek, orlayarak da bunları tasarlayabilirsiniz tabii ki. Fakat gördüğünüz gibi buradaki okuma, buradaki yalınlık orada olmayacaktır.
+
+336
+01:15:58,224 --> 01:16:03,923
+Bir de karar mekanizmalarınız ne kadar karmaşık hale gelirse, analiz yaparken onları da tabii o kadar zor.
+
+337
+01:16:04,340 --> 01:16:32,340
+gerçekleşeceksinizdir ya da testlerini gerçekleştireceksinizdir. Bu nedenle farklı farklı düşünme şeklilerine şimdiden alışmanız için bu örneği verdim. Aynı şeyi buluyoruz. Sadece üç sayının ortanca diye buluyoruz ama birinde şöyle geri geldiğimizde bol bol durum kontrolü üzerinden geçmem gerekiyor. Diğerinde ise yine böyle bir ufak bir trik, ufak bir farklı bakış açısından.
+
+338
+01:16:32,340 --> 01:16:58,340
+problemi, tabi burada x, y, z diye üç tane fazla değişken kullanıyoruz, onu unutmayalım. Bir değişiklik yaparak çok daha sade, yalın bir şekilde çözebiliyorum. Okey. Peki. Saatimiz üçü on geçmiş. Şimdi bir ara verelim. Bir on dakika ara verelim, ondan sonra on beş yirmi de yolumuza devam edelim. On beş yirmi de görüşürüz.
+
+339
+01:30:20,435 --> 01:30:40,815
+Evet, arkadaşlar, aradan sonra devam edelim. Bir iki dakika geldim. [öğrenci]'in sorusunu cevaplayalım. [öğrenci] yine ortadaki olmaz mı? Olmaz. Sağ taraftaki çok büyük olduğu için ortalama oraya kayacaktır. Ortalama en yakın, en büyük değer olacaktır. O yüzden yanlış olur o yaklaşım.
+
+340
+01:30:41,716 --> 01:30:49,756
+Fazla değişken mi kullanmak daha maliyetlidir, fazla if yapmak mı? Şimdi bu kesin cevabı olmayan bir soru. Şöyle ki, geçen hafta ne demiştik?
+
+341
+01:30:49,756 --> 01:31:08,896
+Algoritmanın iyiliğinden ya da başarımlarından karşılaştırmak üzere bahsetmiştik. Şimdi buradaki iyi kavramız sizin hedefinize göre değişir. Eğer bir tarafı 10 milyon yaptığında ne oluyor mesela?
+
+342
+01:31:09,395 --> 01:31:10,415
+Kaca gidiyor?
+
+343
+01:31:11,435 --> 01:31:15,536
+Bir tarafa eksi bir yap, bir tane ya da iki tanesi sıfır olsun
+
+344
+01:31:16,315 --> 01:31:18,876
+Ya da bir tanesi eksi bir, bir tanesi sıfır
+
+345
+01:31:20,155 --> 01:31:21,435
+Otomatikman şey yapacak
+
+346
+01:31:26,739 --> 01:31:44,319
+Bir şekilde her zaman doğru olacak diye bir şey söz konusu değil. Mesela sıfır, bir milyon, bir milyon. Ha o zaman oluyor zaten. Sıfır, sıfır, bir milyon. Üçte biri üçe yakın. Bir tarafı eksi verdiğinde ne oluyor?
+
+347
+01:31:47,123 --> 01:31:54,684
+eksi beş yüz artı bir falan gibi o farklı değerlerde tam olarak ispatlayamayabiliriz. Şimdi oraya çok takılmayalım.
+
+348
+01:31:54,684 --> 01:31:57,684
+ııı şeye devam edeceğim şimdi
+
+349
+01:31:57,684 --> 01:32:01,963
+ne yapacaktık
+
+350
+01:32:02,100 --> 01:32:30,100
+Ne diyorduk? Fazla değişken ve maliyetliydi, fazla if mi? Şimdi eğer sizin için hızlı çalışması önemli, yani çok hızlı olsun mümkün olduğunca her bir karar sizi yavaşlatacaktır. Her bir dallanma sizi yavaşlatacaktır. Eğer sizin için hız önemliyse o zaman ikinci yöntemi kullanmayı tercih edebilirsiniz. Ama diyelim ki gömülü bir sistem gerçekleştiriyorsunuz ve çok kısıtlı bir bellek...
+
+351
+01:32:30,100 --> 01:32:58,100
+alanınız var. Çok değerli. Tamam mı? O kaynak çok değerli. Sizin için önemli olan bırak yavaş çalışsın, uzun sürebilir. Beş saniye yerine on saniyede cevap versin. Ama bellek çok az kullansın. Çünkü benim için bellek çok değerli. Ben onu kesinlikle harcayamam. Harcadığım her bir bellek gözü benim için çok önemli maliyet kaybı demek. Böyle bir şeyiniz varsa da o zaman değişken kullanmamayı tercih edersiniz. Fazla değişken kullanmamayı. Bu nedenle bunun tek bir doğrusu
+
+352
+01:32:58,100 --> 01:33:24,660
+Doğru cevabı yok. Tamamen sizin iyi kavramınızın, daha iyi kavramınızın hedefinin ne olduğuna göre değişir. Eğer bellekse o zaman az değişken kullanılır. Ama hız ise o zaman biraz daha fazla değişken kullanarak kararları azaltmak yoluna gidebilirsiniz. Bu daha doğru bir tercih olacaktır. Biz şu anda mümkün olunca daha basit, daha kolay okunu, daha yalın kodlar oluşturmaya.
+
+353
+01:33:25,300 --> 01:33:34,700
+kod demeyelim de akış diyagramları oluşturmaya çalışıyoruz. Bu nedenle akışlarınızın daha anlaşılır okunabilir ve sade olmasını şu anda tercih ediyoruz. Peki.
+
+354
+01:33:35,380 --> 01:33:36,659
+Rica ederiz ne demek?
+
+355
+01:33:38,460 --> 01:33:41,219
+Başka bir basit örnek yine yapalım.
+
+356
+01:33:42,219 --> 01:33:50,739
+Burada da özellikle değerlerin birbirine pas edilmeleri, parametre pas edilmeleri konusunda biraz aslında örnek olsun diye seçtim.
+
+357
+01:33:51,159 --> 01:33:52,920
+Fibonacci sayılarını hesaplayalım.
+
+358
+01:33:53,059 --> 01:33:55,619
+Şimdi Fibonacci sayıları nasıl tanımlanıyor?
+
+359
+01:34:02,384 --> 01:34:23,923
+Ondan sonra her zaman için fn eşittir fn eksi 2 artı fn eksi 1 tamam virgül en büyüktür 2 için
+
+360
+01:34:24,239 --> 01:34:50,180
+Tabii bunu şöyle altını çizeyim kırmızıyla. Neden çiziyorum? Çünkü ben bunu en başta girdi uzayımın kısıtı olarak vermiş durumdayım. Yani bir daha böyle algoritmamın içinde ay ben bunu kontrol etmeli miyim? N2'den küçükse hata vermeli miyim? gibi bir kontrol istemiyorum akışta. O yüzden burada N2 için diye özellikle belirtiyorum. Peki ben bunu nasıl tasarlayabilirim? Hemen başlayalım.
+
+361
+01:34:51,475 --> 01:35:12,475
+Şöyle diziyle yapabilirim, dizi kullanarak yapabilirim ya da sadece minimum sayıda değişken kullanarak da yapabilirim. Şimdi ikisini de ayrı ayrı yapalım. Şöyle, sadece değişken kullanarak şunu çözelim daha hızlı olsun tamam mı? N'e kadar olan
+
+362
+01:35:12,851 --> 01:35:19,692
+n'e kadar olan yani verilen bir sayıya kadar olan bütün Fibonacci sayılarını ekrana yazdırmaya çalışalım.
+
+363
+01:35:19,692 --> 01:35:27,971
+Hemen şuradan başlayalım start diye. Start başladık. Neyi okumam lazım?
+
+364
+01:35:28,787 --> 01:35:35,787
+Hangi değere kadar olacaksa onu okumam lazım. Buna da N dedik değil mi? N'i bir şekilde okumalıyım.
+
+365
+01:35:35,787 --> 01:35:53,547
+Sonrasında şu ilk değer atamalarını mutlaka gerçekleştirmem lazım. A diyelim bir sayıya değişkenimize. A değişkenimizin değeri 1 olsun. B değişkenimizin, yani Fibonacci 1 ve Fibonacci 2 bunlar aslında. B değişkeninin değeri de 1 olsun. Tamam.
+
+366
+01:35:53,587 --> 01:36:17,188
+atamalarımı gerçekleştirdim. Şimdi artık, ben burada dedim ya hani en büyüktür iki diye zaten kısıtladığım için, tekrardan böyle en ikiden büyük mü diye bir kontrol yapıp da ona göre yazdırmak istemiyorum. Direkt yazdıracağım. Şimdi ben en başta A ve B değerlerini zaten ekrana bir göstermeyle yazdırmalıyım. Hemen şu A, B diye ben bunları yazdırdım. Sonra
+
+367
+01:36:18,036 --> 01:36:38,615
+Ne yapmam lazım? Sıradaki sayıyı hesaplamam lazım. Şuradaki formülü işletmem lazım. O zaman buna da C diyelim. C değişkeni eşittir. Kendisinden önce gelen iki tane değeri, yani Fibonacci 1 ve Fibonacci 2'yi tutan şu andaki A ve B değişkenlerinin değerlerinin toplamı olsun. Evet topladık.
+
+368
+01:36:39,731 --> 01:37:00,992
+Nereye kadar hesap yapmak istiyorum? N'e kadar olan sayıları hesaplamak istiyorum. Demek ki ben burada bir koşullu döngü kurmalıyım. N'e kadar aynı işlemi tekrar tekrar hesaplamalıyım. Aynı sayının bir sonrakini tekrar tekrar hesaplamalıyım. Peki nerede benim sıradaki sayım? C'de duruyor. O zaman C üzerinden bir kontrol gerçekleştirmeliyim.
+
+369
+01:37:01,395 --> 01:37:08,815
+C küçük eşittir n olduğu sürece n'i de bana kullanıcı vermişti. Mesela 20 verdi diyelim tamam mı?
+
+370
+01:37:08,815 --> 01:37:10,815
+n 20 olsun şuraya yazalım.
+
+371
+01:37:11,024 --> 01:37:38,484
+20'ye kadar olan Fibonacci sayılarını yazmam lazım. 1'i yazdırdım, 2'yi yazdırdım. Aslında 3. 4. bakalım kaça kadar gidiyor. Onları yazdıracağız. Nasıl yazdıracağız? Şimdi ben burada zaten Fibonacci 3'ü zaten hesapladım döngüye girmeden önce. Bunu 3 verildiyse ne olacak? Zaten yine eşittikten dolayı en az bir kere burada yazdırmış ya da içine girmiş olacağım. Önce ekranda şu C değerini bir yazdıralım.
+
+372
+01:37:39,252 --> 01:38:06,192
+Yazdırdıktan sonra şimdi her bir elemanı artık daha iki öncekini bilsem yeterli, üç öncekini bilmeye, onun değerini tutmaya ihtiyacım yok. Bu nedenle bir kaydırma operasyonu yapacağım. Nasıl yapacağım? Hani Fibonacci 1 demiştik ya şuna, A dedim, A en başa yakın olan anlamında, en uzak anlamında olsun. A eşittir B.
+
+373
+01:38:07,699 --> 01:38:30,699
+Aynı şekilde B eşittir C dedim ve son olarak C'yi tekrar güncellemem lazım. Kendisinden önce gelen iki değerim toplamayı da hatırlarsanız C eşittir A artı B şeklinde bir hesaplama ile aslında sıradaki fibonacci sayısını hesaplayıp
+
+374
+01:38:30,815 --> 01:38:40,815
+Döngüye al bunu kontrol et, koşul doğru mu? Doğruysa doğru olduğu sürece tekrar tekrar yazdır, kaydır, yazdır, kaydır diye devam ettik.
+
+375
+01:38:40,815 --> 01:38:44,815
+Bunun sonrasında ne yapacağız? Burada stop edeceğiz. Artık durduk.
+
+376
+01:38:44,815 --> 01:38:49,815
+Peki, burada hemen bir analizini gerçekleştirelim.
+
+377
+01:38:50,224 --> 01:39:09,724
+Geçen hafta bunları test demiştim hatırlarsanız ama bundan sonra daha çok analiz kelimesini kullanacağım. Çünkü biz bu ders kapsamında bir giriş seviyesindeyiz ve algoritma analizinin gerçek performans analizlerini burada gerçekleştirmeyeceğiz sizinle. O yüzden hani analiz dediğimde anlamanız gereken kavram bundan sonra hep şu olsun. Algoritmanızın analizini yapınız dediğimde.
+
+378
+01:39:10,547 --> 01:39:21,648
+Bu akışı oluşturduktan sonra değişkenlerin aldıkları değerler ile akışınızın doğru şekilde işleyip doğru sözleştüğünü ve durduğunu emin olun, bunu ispatlayın demiş olacağız.
+
+379
+01:39:22,067 --> 01:39:30,427
+Peki, en eşittir 20'ye kadar olanlar dedik. Ekranda ne göreceğiz? Ekran çıktılarını şöyle kırmızı ile yazalım. Şurası da bizim ekranımız olsun. Şöyle.
+
+380
+01:39:30,427 --> 01:39:37,667
+Tamam. Nedir? A'yı ve B'yi yazdırdık. Biri yazdırdım, biri yazdırdım. Sonra C'yi hesapladım.
+
+381
+01:39:38,547 --> 01:40:01,247
+Küçüktür N olduğu sürece C'yi yazdırdım. C nedir? 1 artı 1, yani 2. İki değerli ekranda yazıldı. Şimdi burada yaptığım şey aslında tam olarak şu. Burada değişkenlerimin nasıl değişiklerini takip etmek için, bunları da buraya ABC olarak yazayım. A'nın ilk değeri 1'di, B'nin ilk değeri 1'di, C'nin de ilk değeri şuradan gelen 2 idi.
+
+382
+01:40:02,195 --> 01:40:11,316
+İşte bu ilk başta kafa karıştırıcı gelebilen A, A eşittir B diyoruz. Nasıl yani? Aslında bu bir atama, unutmayın. Aslında ben şunu yazıyorum burada.
+
+383
+01:40:11,316 --> 01:40:28,356
+Bu. Yani buradaki bellek gözüne şu bellek adresindeki değeri al ve kopyala, bunu buraya taşı demiş oluyorum aslında. Ya da şurada gösterecek olursak şöyle bir ok çiziyorum ve biri buraya taşıyorum.
+
+384
+01:40:29,652 --> 01:40:54,552
+İkiyi de B eşittir C atamasından bu C değerini de B'nin gözüne yazmış oluyorum. Yani bu da buraya taşınıp iki oluyor. Sonra da C eşittir A artı B diyorum. Önce A artı B'yi hesaplayalım. Bir artı iki. Üç. Değil mi? C gözüne de ikiyi ezip üzerine belleklik o gözle üç yazın. Döndüm. Geldim. Üç küçük mü yirmiden? Doğru.
+
+385
+01:40:54,863 --> 01:41:20,423
+Geldim içine tekrar girdim döngünün gövdesine. C'yi yazdırdım ekrana. C'nin değerine 3. 3'ü yazdırdım. Tamam. Tekrar kaydırdım. A eşittir B olduğu için A gözüne B'nin değerini yazdım. B eşittir C atamasından 3 değerini 2 gözüne yani B'nin gösterdiği gözeyi aldım. 3 bu. Yanlış yazdık. 3 yazdırdık.
+
+386
+01:41:22,484 --> 01:41:23,724
+Temizliğim güzel ezeyim.
+
+387
+01:41:24,864 --> 01:41:25,704
+Üç
+
+388
+01:41:26,384 --> 01:41:30,024
+Ve C eşittir A artı B'den beş. O da burada.
+
+389
+01:41:30,524 --> 01:41:37,744
+Geldim tekrar. Beş küçük en doğru. O zaman tekrar içine girdim. Beşi ekrana yazdırdım.
+
+390
+01:41:38,624 --> 01:41:45,844
+Kaydırdım. Artık okları göstermeyeceğim. Üç beş topladım. Sekiz.
+
+391
+01:41:47,028 --> 01:42:14,148
+Geldim. 8 küçük mü 20'den? Evet. 8'i ekrana yazdırdım. Kaydırdım. 5, 8, 5, 8 daha 13. Tamam. Geldim. 13 küçük mü 20'den? Evet. 13'ü ekrana yazdırdım. Ondan sonra kaydırma işlemlerini yaptım. 8, 13, 8, 13 daha 21.
+
+392
+01:42:15,380 --> 01:42:40,760
+21. Geldim. 21 küçük mü 20'den? Hayır. Çıktım. Stop. Bitti. Durdu. Ekranda ne gördüm? Ekran çıktım nasıl oluştu? İşte 20'ye kadar olan Fibonacci sayılarını ekranda yazdım şu oldu. 1, 1, 2, 3, 5, 8, 13 şeklinde. 21'i niye yazdırmadım? Çünkü 20'ye kadar olanları dediğim için. Okey? Bu bir yol.
+
+393
+01:42:41,587 --> 01:43:05,068
+Başka ne dedik? Mesela ben bunu dizi kullanarak da yapabilirdim. O zaman da nasıl hemen şunu da tekrar güncelleyip şöyle yeni bir şey yapalım, sayfa açalım. Başlayacağım. Burada da mesela bir adım sayısı belli. N'e kadar değil de N tane yapalım tamam mı? Start. N'i okudum.
+
+394
+01:43:06,707 --> 01:43:12,927
+Şöyle okudum. Dizi kullanmak istiyorum. Niye bilmiyorum ama hani dizi kullanalım. Tamam.
+
+395
+01:43:12,927 --> 01:43:25,987
+A'nın birinci gözü eşittir işte bir değerinde. A'nın ikinci gözü bir değerinde. Bunları atadım.
+
+396
+01:43:25,987 --> 01:43:32,787
+Ondan sonra bir adım sayısı belli döngü içinde.
+
+397
+01:43:36,243 --> 01:43:52,443
+1'den N'e kadar Fibonacci sayılığını hesaplayıp bizye yazalım. Pardon, 1'den değil, 3'ten N'e kadar. Neden? Çünkü Fibonacci 1 ve 2'yi zaten burada atardık. Hemen. [öğrenci], niye düzeltmedin beni?
+
+398
+01:44:04,979 --> 01:44:06,979
+Eşittir
+
+399
+01:44:06,979 --> 01:44:08,979
+A'nın
+
+400
+01:44:10,979 --> 01:44:12,979
+i eksi
+
+401
+01:44:12,979 --> 01:44:15,979
+i eksi ikinci gözü
+
+402
+01:44:17,979 --> 01:44:19,979
+Beğenmedim, bir daha yazacağım.
+
+403
+01:44:23,572 --> 01:44:25,072
+kulumardı.
+
+404
+01:44:25,072 --> 01:44:26,772
+A'nın
+
+405
+01:44:30,260 --> 01:44:33,140
+i eksi ikinci gözü
+
+406
+01:44:33,140 --> 01:44:34,260
+değer
+
+407
+01:44:34,260 --> 01:44:36,780
+artı a'nın
+
+408
+01:44:36,780 --> 01:44:39,320
+i eksi
+
+409
+01:44:39,320 --> 01:44:41,100
+birinci gözündeki
+
+410
+01:44:41,100 --> 01:44:41,659
+değer
+
+411
+01:44:41,659 --> 01:44:45,020
+olarak yapıldı.
+
+412
+01:44:46,480 --> 01:44:47,780
+Burada bir de
+
+413
+01:44:47,780 --> 01:44:49,039
+a i'yi
+
+414
+01:44:49,039 --> 01:44:51,039
+tekrar yazdırabilirim ekrana.
+
+415
+01:44:53,680 --> 01:44:55,480
+Ekrana yazdırdı demiştik ya.
+
+416
+01:44:56,320 --> 01:44:57,619
+Onu da buraya yazmış olalım.
+
+417
+01:44:59,859 --> 01:45:18,859
+Ve n tane, bu sefer n'e kadar değil dikkat edin, n tane fibonacci sayısını hesaplayıp ekrana yazdırdım. Ama bunları dizide tuttum. Hemen şuraya bir dizi açalım. Şuraya açalım. Tamam. Mesela n eşittir 6 girilmiş olsun.
+
+418
+01:45:25,524 --> 01:45:51,604
+İkinci göz, üçüncü göz, dördüncü göz, beşinci ve altıncı gözler. Şuraya da bir, iki, üç, dört, beş ve altı diye indislerinde yazalım. Tamam. Hesapladıklarımızı da kırmızıyla ekleyelim. Şimdi üçten ene kadar gidiyoruz. Üçten altıya kadar. Şuraya altıyı yazayım. Tamam. A üç. İ eşittir üç için.
+
+419
+01:45:53,460 --> 01:46:18,139
+Nedir? A1 ve A2'nin toplamı. Yani 2. 1 artı 1 değerlerini topladım. 2 buraya gözüne eklemiş oldum. İlgili gözü ekrana bastırdım ve geri geldim. I4 oldu. 4 olduğunda A4 eşittir. A2 artı A3. Yani 1 artı 2'den buraya 3 geldi. Tamam. Yazdırdım, döndüm. I5 oldu.
+
+420
+01:46:19,667 --> 01:46:40,347
+A5 eşittir A3 artı A4 hop hop buraya 5 geldi. Tamam yazdırdım döndüm 6 oldu eşittikten dolayı tekrar girdim. A6 eşittir A4 artı A5 yani 3 artı 5 değerlerinden 8 buraya geldi.
+
+421
+01:46:40,496 --> 01:47:00,496
+i7 oldu döndüm 7 altıdan büyük olduğu için çıktım ve durdum burada durmuş oldum tamam buru tabi oklarını yine unuttuk siz çizmeyi tekrar tekrar söylüyorum unutmayın evet akışımızın düzgün temiz bir şekilde gözükmesi için ne oldu
+
+422
+01:47:02,068 --> 01:47:10,188
+Bu sefer de hem bir dizi kullanmış olduk hem en tane Fibonacci sayısını dizinin eski gözlerini kullanarak hesap etmiş olduk.
+
+423
+01:47:10,268 --> 01:47:16,028
+Burada dikkat etmem gereken şey ne? Başlangıç ve son değerlerin düzgün seçildiğinden emin olmak.
+
+424
+01:47:16,428 --> 01:47:24,028
+Onun için de analizimi burada gerçekleştirdim ve bunlara bağlı olarak değerlerimi hesaplayıp ilgili dizinin gözlerini de gösterdim.
+
+425
+01:47:24,028 --> 01:47:26,668
+Burada A dizisi olduğunu ekleyelim.
+
+426
+01:47:27,444 --> 01:47:29,444
+Başka bir dizi değil tabii. Okey.
+
+427
+01:47:29,444 --> 01:47:37,444
+Böyle de işte mesela Fibonacci sayılarını hesaplayıp, dizi kullanarak, dizi kullanmadan, bir while döngüsüyle ya da
+
+428
+01:47:37,444 --> 01:47:45,444
+bir for döngüsüyle yani adımları belli ya da belirsiz iki farklı örneği de göstermiş olalım.
+
+429
+01:47:45,444 --> 01:47:55,307
+Peki, şimdi sıradaki problemimiz şey olsun, size bir sayı veriliyor. Hatta hiç uğraşmadan direk sayıyı size şöyle vereyim.
+
+430
+01:47:55,667 --> 01:48:02,667
+Artık bunları hep yapıyoruz. Burada başladı algoritmamız. Bir n değeri okudunuz.
+
+431
+01:48:02,667 --> 01:48:15,667
+Şimdi sizden istediğim şey şu. Verilen bir sayının kat sayılarını, yani tam bölenlerini yazdırmanızı istiyorum. Nasıl yaparız?
+
+432
+01:48:15,667 --> 01:48:20,667
+Birden n'e kadar olan tam bölenler.
+
+433
+01:48:23,123 --> 01:48:26,203
+Biraz küt bir yöntemle yapacağım.
+
+434
+01:48:29,003 --> 01:48:31,323
+Bir sayının bölenleri nasıl buluruz?
+
+435
+01:48:37,811 --> 01:48:39,091
+Yazın bakayım.
+
+436
+01:48:49,076 --> 01:48:52,676
+Asal çarpanlarını çarparak. Asal çarpanlarını nasıl ayıracağız?
+
+437
+01:48:57,524 --> 01:49:24,083
+Ooo, [öğrenci] direkt cevabı verdi. Peki, yapalım bakalım. X, ben anlatarak yapayım. Birden n'e kadar tam bölenlerine bakmak istiyorum. O zaman birden n'e kadar olan bütün sayıları tek tek denerim. Eğer oradaki sayı n'e kalansız bölünüyorsa, ne demektir? Bu benim kat sayım demektir değil mi? Tam bölenim demektir. Eğer bölünmüyorsa değildir, onu ekrana yazdırmam. O zaman.
+
+438
+01:49:24,500 --> 01:49:32,500
+Birden n'e kadar demiştik. Bir kontrol yapmam lazım yine. X küçük eşit n diye bir kontrol.
+
+439
+01:49:32,500 --> 01:49:41,500
+Ve bu doğru olduğu sürece dönmem lazım. Bir şeyler yapmam lazım. İşte burada da tam olarak [öğrenci]'un söylediği şeyi yapacağız.
+
+440
+01:49:41,500 --> 01:49:50,500
+O for'la yaptı. Ben for'la değil, while'la yapmış olayım. For'la da yapabilirsiniz tabii ki. Yapmam lazım.
+
+441
+01:49:52,435 --> 01:49:53,435
+Mod.
+
+442
+01:49:53,435 --> 01:49:56,435
+Bunu böyle de yazabiliriz.
+
+443
+01:49:56,435 --> 01:49:58,435
+Hadi bu sefer mod ile yazalım.
+
+444
+01:50:02,612 --> 01:50:04,771
+Şu eni de güzel yazamamışım yine.
+
+445
+01:50:04,771 --> 01:50:12,931
+Yani hep böyle normal kalemle yazma şeklinde olduğu için açılıyor.
+
+446
+01:50:12,931 --> 01:50:29,731
+En mod x eşitse sıfıra ne demektir? Ben bu sayıya kalansız bölümünü biliyorum demektir değil mi? Eğer bu doğruysa o zaman x'i ekrana yazdırırım.
+
+447
+01:50:33,876 --> 01:50:54,876
+Şimdi, burada şuna dikkat etmenizi istiyorum. Mesela, bazı arkadaşlar böyle buradaki false callunu çıkartıp direkt buraya falan bağladı. Bu kesinlikle olmaz. Döngünün mutlaka şuradan gelip bir şekilde bu bloktan...
+
+448
+01:50:55,667 --> 01:51:21,527
+dönüp gelip tamamlanması gerekir. Tamam mı? Böyle bir şey kesinlikle yapmayın. Yanlıştır. Zaten bunu gerçekleştiremezsiniz. Şimdiden onu da söylemiş, göstermiş olalım böyle kırmızılar ile. Peki, hemen maviye geri geldi. Ne yapacağız? FalseColol'unda herhangi bir şey yapmamıza gerek var mı? Yok. O zaman sadece True tarafı doğru olan bir kontrol. Sonra ama
+
+449
+01:51:22,355 --> 01:51:23,355
+Ne yapacağız?
+
+450
+01:51:25,355 --> 01:51:26,355
+Döngümüzü
+
+451
+01:51:28,355 --> 01:51:30,355
+Tamamlayacağız ve
+
+452
+01:51:31,355 --> 01:51:33,355
+Şurada da duracağız. Bitti.
+
+453
+01:51:34,355 --> 01:51:36,355
+X, n'e vardığında zaten
+
+454
+01:51:37,355 --> 01:51:41,355
+Eşitlikte de yazdırmış oluruz. Sonra da biteriz. Nasıl oldu?
+
+455
+01:51:46,515 --> 01:51:48,235
+Kim kaldırıyor elini? Dur bir dakika.
+
+456
+01:51:48,955 --> 01:51:51,575
+Hocam, x'i arttırmadık ama x'e...
+
+457
+01:51:51,575 --> 01:51:54,515
+Bravo. Harika.
+
+458
+01:51:55,775 --> 01:52:01,075
+Ne yaptım? Size dersin başında anlattığım şeyi özellikle yanlış yaptım.
+
+459
+01:52:01,575 --> 01:52:06,375
+Buradaki döngü koşulu değişmedi bakın arkadaşlar. Ben burada sadece bir kontrol yaptım.
+
+460
+01:52:06,875 --> 01:52:10,995
+Endmode x sıfıra eşit mi diye baktım. Yani kalan sıfır mı değil mi diye baktım.
+
+461
+01:52:11,347 --> 01:52:28,648
+n üzerinde ya da x üzerinde herhangi bir modifikasyon, yani esas x üzerinde bir modifikasyon gerçekleştirilmedi. Sonsuz döngü. Birde kaldı değil mi x? Sürekli olarak mesela sayımız kaç olsun? 5 olsun. Tamam mı? 5 bölü 1 kalanı yok. Yazdırdım.
+
+462
+01:52:29,108 --> 01:52:55,988
+Biri döndüm, beş bölü bir, biri yazdırdım, beş bölü bir, biri yazdırdım, yazdırdım, yazdırdım, yazdırdım, sonsuza kadar dönüyorum, patladım. Demek ki benim burada mutlaka, burada kırmızıyla yapalım, x eşittir x artı bir diyerek bir artım gerçekleştirmem lazım.
+
+463
+01:52:56,479 --> 01:53:09,799
+Bu artımı gerçekleştirdikten sonra buradaki döngüyü tamamlayıp durmam gerekiyor. Evet, güzel. Bunu da unutmamış olduk. Çok güzel.
+
+464
+01:53:11,959 --> 01:53:23,559
+Başka bir örnek daha yapalım. Madem ki bugün bol bol örneklerle algoritmik düşünmemizi arttırıyoruz. Ben şimdi çarpım yapmak istiyordum ama elimde çarpım operatörü yok.
+
+465
+01:53:23,904 --> 01:53:31,584
+Unutmuşuz, hemen tentmemişiz. O yüzden de toplamalar sayesinde çarpma yapmak istiyorum. Nasıl yapabilirim?
+
+466
+01:53:31,584 --> 01:53:36,704
+Şurada yapalım, onun yanına çizelim biraz. Start diyelim.
+
+467
+01:53:39,584 --> 01:53:50,784
+X çarpı Y değerini hesaplamak istiyorum. O zaman ilk önce bir X ile Y'yi okuyayım. Tamam? X çarpı Y. Şunu yapmak istiyorum. X.
+
+468
+01:53:51,220 --> 01:54:00,340
+Çarpı Y değerini, şuradaki çarpı operatörüm olmadığı için toplamlar şeklinde yapmam gerekiyor.
+
+469
+01:54:00,340 --> 01:54:05,860
+M bölü 2. Düşünelim.
+
+470
+01:54:10,260 --> 01:54:13,060
+Ha, en bölü 2'den yüksek şey yoktur diye mi?
+
+471
+01:54:14,560 --> 01:54:15,860
+Tam böyle ne?
+
+472
+01:54:19,091 --> 01:54:19,931
+düşünüyorum.
+
+473
+01:54:23,956 --> 01:54:25,015
+Evet, doğru.
+
+474
+01:54:26,015 --> 01:54:29,076
+Daha hızlı olur. Bravo. Ne yapmış oldunuz? Hemen görelim.
+
+475
+01:54:29,735 --> 01:54:32,215
+Burada ben en adım yürümüş oldum.
+
+476
+01:54:32,756 --> 01:54:34,135
+Değil mi? Toplamda.
+
+477
+01:54:34,815 --> 01:54:37,576
+Ama siz dediniz ki, ben biliyorum, bu bir gerçek.
+
+478
+01:54:38,155 --> 01:54:41,456
+Hiç bir katlayısı olamaz.
+
+479
+01:54:41,615 --> 01:54:45,775
+O yüzden bunu m bölü 2 şeklinde de yapabilirim.
+
+480
+01:54:47,923 --> 01:54:50,483
+Bu ne? Bir dakika, kendisi. Ha kendisi var değil mi?
+
+481
+01:54:51,264 --> 01:54:58,483
+Şöyle yapabilirsiniz, hem böyle ikiye kadar gidip ondan sonra bir de kendisine evi yazdığı, o da olabilir değil mi?
+
+482
+01:55:04,916 --> 01:55:09,416
+en tek sayısı
+
+483
+01:55:15,315 --> 01:55:29,315
+Floruna kadar gidersin yani sen de yukarı yuvarlarsın ondan ne olacak? Evet mesela böyle ince noktaları görerek biraz daha az iş yapmak, biraz daha hızlı çalışmak konusunda iyileştirmeler her zaman gerçekleştirebilirsiniz.
+
+484
+01:55:29,315 --> 01:55:42,315
+Peki ben şimdi burada nasıl yapacağım? X ve Y'yi toplayarak, toplaya toplaya çarpımı bulmaya çalışacağım. Çarpımı C'de tutmuş olalım tamam mı? Şöyle başta bir sıfırlayalım.
+
+485
+01:55:42,739 --> 01:56:04,980
+Ondan sonra uzun uzun yazmayayım çarpan diye, çarpım diye. Bir kere ben burada kaç tane toplama yapmalıyım arkadaşlar? Belli mi bu? Bence belli. Sizce de belli. Eminim bunu ilkokulda yapmışsınızdır, hatırlarsınız. Şimdi benim burada i eşittir birden nereye kadar gitmem lazım?
+
+486
+01:56:05,876 --> 01:56:09,195
+y tane x'i toplamam lazım değil mi? Mesela
+
+487
+01:56:09,195 --> 01:56:12,276
+3 çarpı 2 ne demektir?
+
+488
+01:56:12,276 --> 01:56:22,516
+2 tane 3'ü toplamak demektir aslında. 3 artı 3 yapmak demektir. O zaman ben burada birden y'ye kadar yani y tane
+
+489
+01:56:22,516 --> 01:56:30,195
+toplam yapmalıyım. O da şöyle çarpım eşittir çarpım artı x değil mi?
+
+490
+01:56:30,899 --> 01:56:57,899
+y tane x'i topladım farkındaysanız. Hemen bunu da böyle bitirdim. Sonra çarpımı yazdıralım. Yazdırdık ve durduk. Okey. Bu da böyle çarpım yapmadan aslında bir döngüyle y tane x'i toplayarak x çarpı y işlemini gerçekleştirmenin sonucu.
+
+491
+01:56:58,260 --> 01:57:09,460
+Peki, madem öyle o zaman x bölü y de yapılabilir. x bölü y'yi nasıl yaparız? Burada ama bir fazla kavram gelmesi lazım. Tam bölünme durumu ya da tam bölünmeme durumu.
+
+492
+01:57:09,747 --> 01:57:13,847
+Demek ki benim burada bir de kalan sayıya ihtiyacım var. Değil mi?
+
+493
+01:57:13,847 --> 01:57:20,247
+Bunu nasıl yapabilirim? Bu da nedir? X'den çıkarabildiğim kadar Y'yi çıkartmam lazım.
+
+494
+01:57:20,247 --> 01:57:23,847
+İşte o çıkarabildiğim kadarı da saydığımda bölümü söyleyebilirim.
+
+495
+01:57:23,847 --> 01:57:29,847
+Kalan nerede kalacaktır? Kalanda zaten X'de kalacaktır. X'de çıkaramadığım kadar kısım kalacaktır.
+
+496
+01:57:29,847 --> 01:57:36,747
+Mesela 10 bölü 3. Değil mi? Hemen bakalım. Nedir bu? 10'dan 3'ü çıkarttım.
+
+497
+01:57:37,332 --> 01:58:04,152
+7 kaldı. Şuraya da bir kere çıkarttım diye yazayım. 7'den 3'ü çıkarttım, bir kere daha çıkarttım, 4 kaldı. 4'den 3'ü çıkarttım, bir kere daha çıkarttım, bir kaldı. 1'den 3'ü artık çıkartamıyorum. Kaç kere çıkartmışım? 3 kere. Demek ki bölüm 3'tür. Kalan kimdir? Kalan da budur. Kalan da 1'dir. Hemen bunu bir akış diyagramı haline getirelim.
+
+498
+01:58:06,131 --> 01:58:07,931
+Start dedik.
+
+499
+01:58:08,372 --> 01:58:31,892
+Yine x ve y'yi okumam gerekiyor haliyle. Bunları unutmayın, bunlara elinizi çok iyi alıştırın her zaman için mutlaka. İlk değer atamalarınız gerekiyorsa ki mesela işte ben burada bir bölüm tutmam gerekiyor. Bölüm eşittir sıfır diye sayaç var ya şurada saydığım bir bir bir diye arttırdım. Onu böyle sıfır diye burada tutmam gerekiyor. Peki sonrasında ne yapacağım?
+
+500
+01:58:34,420 --> 01:58:39,860
+Büyük Eşit Y olduğu sürece çıkartma işlemine devam etmem lazım değil mi?
+
+501
+01:58:39,860 --> 01:58:52,580
+Evet, peki hemen devam edelim. Ne yapacağız? X eşittir. X eksi Y. Şurada yaptığım işlemi yapıyorum. Başka hiçbir şey değil.
+
+502
+01:58:52,580 --> 01:58:57,780
+Bir de bölümü bir arttırmam lazım. Bölüm eşittir. Bölüm artı bir.
+
+503
+01:58:58,676 --> 01:59:05,976
+Burada ne yaptım? Bunu saydım, 1, 2, 3 diye saydım ya, şurada 3 dedim toplamda, bu işlemi yapmalıyım. Peki bunu da yaptım.
+
+504
+01:59:08,076 --> 01:59:24,276
+Ve geldim, döngümü tamamladım. Şimdi ne yapacağım? Kalan ifade de x'te kaldım söylemiştim. O zaman ben burada bölümü ve kalanda x'teydi ya, x'i kalanda yerini
+
+505
+01:59:24,627 --> 01:59:29,227
+yazdırabilirim yazdırdıktan sonra da durabilirim.
+
+506
+01:59:30,507 --> 01:59:31,027
+Durdum.
+
+507
+01:59:33,587 --> 01:59:51,507
+Analizini yaptığımızda işte on ve üç için mesela ondan üç çıkarttım bir yedi kaldı yediden üç çıkarttım bir iki bu sayaç b sayıcı iki oldu dört kaldı dörtten üç çıkarttım bir bir üç oldu bölüm sayıcım bir değil mi bir büyük mü üçten
+
+508
+01:59:51,891 --> 02:00:17,231
+Hayır, o zaman şart bozuldu. Geldim. Bölüm nedir? Bölüm 3'tür. Yazdırdım. Kalan nedir? X'tir. 1'di. Yazdırdım. Olay bitti. Evet, bu da böyle yine döngüler, artımlar, değer taşımalar, ilk değer atamaları, okumalar ile ilgili bir güzel bir başka örneğimiz olarak karşımıza çıktı. Başka ne yapalım, ne yapalım?
+
+509
+02:00:18,131 --> 02:00:23,451
+Peki, o zaman sizinle nasıl olsa Fibonacci'yi yaptık.
+
+510
+02:00:23,451 --> 02:00:25,511
+O başka bir örnek görmeye gerek yok.
+
+511
+02:00:25,511 --> 02:00:34,731
+Son bir örnek yapalım ve ondan sonra bu haftaki konularımızı tamamlamış olalım.
+
+512
+02:00:35,155 --> 02:00:56,916
+Akış diyagramlarıyla alakalı, algoritma tasarımıyla alakalı olarak. Peki, size şöyle bir problem vermek istiyorum ki bu problemi çok eski zamanlarda ben bir sınav sorusu olarak da düşünüp tasarlamıştım. Kendi çözdüğüm, kendi girdiğim bir sınav için. Şöyle bir şey var, siz söyleyin adını. Saatimiz var.
+
+513
+02:00:57,363 --> 02:01:22,363
+Şimdi saatimizin bildiğiniz gibi, işte şuradan bir tane akribimiz vardır. Bir tane de işte şöyle, hatta şey yapalım dur bir dakika, andu. Şu anda saat mesela 15.54 değil mi? 54'ü şöyle çizelim. 15'de tabii şey.
+
+514
+02:01:25,460 --> 02:01:40,820
+Tam 3 olsaydı böyle olurdu ama maalesef biliyorsunuz saat ilerliyor. Burada 4'e çok yakın bir yerde. Şimdi şöyle, şurası 12 olsun, şurası 6, şurası 3, şurası 9. Tamam mı? Şunlar...
+
+515
+02:01:44,140 --> 02:01:47,980
+3, 4, 5, 6. Bunu biraz daha ilerletmem lazımmış.
+
+516
+02:01:50,539 --> 02:01:51,820
+Çok gitmiş pardon.
+
+517
+02:01:52,243 --> 02:01:56,083
+Şunu hemen dırda yakın haline yitirelim.
+
+518
+02:01:56,844 --> 02:01:57,623
+Tamam.
+
+519
+02:02:03,572 --> 02:02:04,992
+Hocam bir şey sorabileyim ya.
+
+520
+02:02:05,712 --> 02:02:05,952
+Tabii.
+
+521
+02:02:06,851 --> 02:02:08,452
+Bu soruya başlamadan önce
+
+522
+02:02:08,452 --> 02:02:11,051
+geçen soruya dönme şansınız var mı?
+
+523
+02:02:12,152 --> 02:02:12,551
+Var.
+
+524
+02:02:13,072 --> 02:02:13,492
+Döndüm.
+
+525
+02:02:15,612 --> 02:02:16,792
+Hocam burada
+
+526
+02:02:16,792 --> 02:02:18,692
+X 10 ise Y'de
+
+527
+02:02:18,692 --> 02:02:19,572
+9 ise
+
+528
+02:02:19,572 --> 02:02:22,672
+başına bir arttırdık.
+
+529
+02:02:23,072 --> 02:02:24,731
+Bence hatta
+
+530
+02:02:24,731 --> 02:02:26,332
+bir şey yapmış olabiliriz.
+
+531
+02:02:27,231 --> 02:02:28,712
+Bakalım. Hemen deneyelim.
+
+532
+02:02:29,572 --> 02:02:30,771
+10 bölü 9 dedin değil mi?
+
+533
+02:02:31,380 --> 02:02:56,559
+Bakalım hatamız var mı? 10 ve bölü 9. Şimdi x, y'den bölüm sıfırla başladık. x, y'den büyük mü? Evet. Değil mi? Büyük. Evet hocam. x eşittir x eksi y yaptım. Yani burada 1 kaldı. Bölümü de 1 arttırdım. Bölümü de şöyle şuraya yazalım. 1. Tamam mı? Şöyle dikdörtgenle dursun. Geldim.
+
+534
+02:02:56,960 --> 02:03:10,319
+Bir büyük mü dokuzda? Hayır. Aşağı indim. Bölümü yazdırdım. Bir. Onu dokuza böldüğümüzde bölüm nedir? Birdir değil mi? Kalan nedir? O da bir. Bir sıkıntı yok.
+
+535
+02:03:10,960 --> 02:03:13,739
+Tamam oldu. Teşekkür ederim. Ben yanlış baktım.
+
+536
+02:03:14,068 --> 02:03:39,048
+Olur, olur, olur. Bakın, hiç sorun yok. Düşünün, sürekli sorgulayın. Sizden istediğim en önemli şey bu. Hep düşünün, hep alternatifleri değerlendirin. Uç noktaları mutlaka kontrol edin. Daha iyi yapabilir miyim? Bu döngüyü böyle yazmalı mıyım? Ya da bu kontrolü böyle yapmalı mıyım? Şu atama acaba gerekli mi yoksa fazla mı? Değişkini başka türlü düşünebilir miyim? Başka bir yerde tutabilir miyim? Bunların hepsini düşünerek bu.
+
+537
+02:03:39,507 --> 02:03:45,627
+algoritma tasarımlarınızı gerçekleştirmeniz lazım. Dediğim gibi tek bir doğru yok. Herkes başka türlü oluşturabilir ama
+
+538
+02:03:45,627 --> 02:03:54,027
+sizin için olabilecek en iyi çözümü ya hız ya az yer kaplama ya da çok kolay gerçekleştirilebilme gibi
+
+539
+02:03:54,027 --> 02:03:58,967
+hedefiniz neyse ona uygun tasarımı gerçekleştirmeniz gerekiyor.
+
+540
+02:04:00,627 --> 02:04:04,327
+Evet, geldik bu saat problemimize geri.
+
+541
+02:04:08,180 --> 02:04:19,180
+Şöyle, şu ne dedik? 55 demiştik değil mi saatte? Tamam şu 55 de olsun şöyle. Demin 15.55 demiştik. Evet, pardon.
+
+542
+02:04:19,180 --> 02:04:23,020
+Şöyle bakabilirsiniz.
+
+543
+02:04:28,884 --> 02:04:43,003
+Şimdi, ben şunu istiyorum sizden. Problem şu, herhangi bir analog saat bu, 12'lik saat. Ne demek oluyor? Hemen oraya da kısıtlarımızı yazalım. Saatlerimiz 1 ile 12 arasında değer alabiliyor.
+
+544
+02:04:43,503 --> 02:04:45,503
+dakikada
+
+545
+02:04:45,503 --> 02:04:47,003
+sıfırla
+
+546
+02:04:47,003 --> 02:04:53,743
+elli dokuz arasında değerler alabiliyor demektir bu. Yani altmış tane dakikamız, on iki tane saatimiz var demektir bu.
+
+547
+02:04:54,503 --> 02:04:57,384
+Şimdi size soru şu, şurada verdiğim
+
+548
+02:04:57,384 --> 02:05:00,904
+a alfa ya da neyse açısının değerini
+
+549
+02:05:00,904 --> 02:05:03,224
+verilen herhangi bir
+
+550
+02:05:03,224 --> 02:05:06,123
+saat değeri için nasıl hesaplayabiliriz? Yani
+
+551
+02:05:06,123 --> 02:05:11,484
+bir saat için saat kolları arasındaki açıyı hesaplayan
+
+552
+02:05:11,503 --> 02:05:19,604
+algoritmanın akış diyagramını oluşturunuz. Soru bu. Nasıl oluşturunuz? Fikir var mı?
+
+553
+02:05:23,315 --> 02:05:26,395
+Formül kullanabiliriz. Formülü mü varmış bunun?
+
+554
+02:05:30,131 --> 02:05:40,931
+Varmış, çok iyiymiş. Peki. Üsünelim şimdi. Biz şimdi formülü yazalım tamam mı? Şimdi ben bir kere şurada hemen startımı koyayım.
+
+555
+02:05:40,931 --> 02:05:52,351
+Ve saat ve dakika değişkenlerimi bir okuyayım değil mi? Bunları unutmayayım.
+
+556
+02:05:52,851 --> 02:06:02,931
+Şurada şöyle saati ve dakika yok. Şimdi, neyi biliyoruz? Bu kadran kaç derece arkadaşlar? Mademki şeyden bahsediyoruz, açısal değerlerden bahsediyoruz.
+
+557
+02:06:03,731 --> 02:06:17,851
+360 derece değil mi? 360 tane derecem var, çok güzel. Peki, şimdi ben bir saat kolu olarak, burada biraz fazla uzun çizdik ama, ne kadar alan...
+
+558
+02:06:17,904 --> 02:06:32,724
+süpürüyorum. Her bir dakika geçtiğinde ne kadar ilerlemem gerekiyor? Sadece bu sabit kalmıyor biliyorsunuz burada. 3 dakika kalıp da saat 4 olduğunda pat diye buraya düşmüyor. Yavaş yavaş ilerliyor. Şimdi, kaç saatimiz var?
+
+559
+02:06:33,235 --> 02:06:46,135
+On iki saatimiz var değil mi? On iki saat. Yani ben aslında şurada hani on iki ile bir arasındaki alanda toplamda bir otuz derecelik, üç yüz altmış böyle on ikiden.
+
+560
+02:06:46,496 --> 02:07:14,496
+360 derece, böyle 12 dereceden 30 derecelik bir alan tarıyorum. Peki ben bu 30 derecelik taradığım alanı kaç dakikada yürüyorum? Yani her dakikada ne kadar yürüyorum? Ona bakalım. Ne yapmam lazım? 30'u da 60 dakikaya bölmem lazım. Ne çıktı? Tabii tam böleceğim. 0.5 derece. Bakın, saat kolu her bir dakika ilerlediğinde 0.5 derece kadar ilerlemek zorunda. Peki, o zaman ben bir saat değişikliği...
+
+561
+02:07:14,496 --> 02:07:41,996
+İkiliklerinin toplam kaç dakika yürüdüğünü nasıl bulurum? Benim için bir saat, bir saat altmış dakika demek. Altmışla çarparım. Ama bu sadece saat yürümüyor. Belirli bir dakika da ilerlemiş olabilir. O zaman onu da koymalıyım. Mesela diyelim yirmi dakika ilerledi, on derece ilerlemiş olacak değil mi? Şurada üçte birini, şu aralığın, üçte birini geçmiş olması lazım. Tam şurada durması lazım. Değil mi? A arttı, M'yi de buraya koymalıyım.
+
+562
+02:07:42,420 --> 02:07:59,660
+Ve bu benim saat akrep dediğimiz kısa saat kolunun toplam her bir dakikada yürücü süpürücü alan. Ve bu her bir adımda sıfır şurada bulduk 0.5 derece ilerlemek zorunda.
+
+563
+02:07:59,660 --> 02:08:06,660
+Peki buna da saat kolunun H'nin açısı diyelim tamam mı HA.
+
+564
+02:08:06,863 --> 02:08:30,563
+Bu kısa kolun yürüme hızı, toplam kaç derece süpürdüğü. Peki dakikanın kaç derece süpürdüğünü nasıl hesaplayabilirim? Ona da ne diyelim MA diyelim ya da A diyelim direkt sadece açı diyelim ki son değişken de orada. Yine 360 derece var. Kaç dakika var bir saatte yani bir tam turda 60 dakika var değil mi?
+
+565
+02:08:31,155 --> 02:08:56,436
+60 aslında şu, şuradan geldi 60. Yani her bir dakika ilerlediğinde, her bir dakikada ben 6 derece ilerliyorum. Yani kovan dediğimiz uzun kol açı eşittir dakika değeri çarpı kaçmış? 6 derece değil mi? 6 derece.
+
+566
+02:08:57,203 --> 02:09:17,444
+Bu da dakikanın hızı. Şöyle, daha da kısa yapalım. Dakika bu kadar ilerliyor. Ama bu ilerliyor da bu da ilerliyor. O zaman ben buradaki HA dediğimiz saat kulunun yaptığı açıyı da bundan çıkartmam gerekir ki HA'yı
+
+567
+02:09:17,615 --> 02:09:39,376
+İkisi arasındaki gerçek açıyı hesaplayabilirim. Ya da ben buna MA derdim. Altta da açı eşittir MA-HA derdim. Yani aynı şey. Burada sadece bir değişken az kullanıp biraz daha size az yazma ve az eziyet çektirme için bu şekilde yaptım. Şu çarpı. Bunu da güzel yapalım.
+
+568
+02:09:42,868 --> 02:10:07,448
+Çarpı. Tamam. 6 derece. Her dakika 6 derece süpürdü ama o arada kısa kolda yürümeye devam etmişti şu kadarcık. Onu da çıkartarak aradaki açıyı buldum. Şimdi burada negatif değerlere düşme olasılığım var. O zaman şöyle bir şey yapabilirim hemen. Eğer açı küçükse sıfırdan deyip
+
+569
+02:10:11,956 --> 02:10:36,956
+Eğer böyleyse, açıyı tersine ya da mutlak değerini almam lazım. Ya da basitçe negatif olduğunu bildiğim için eksi 1 ile çarpsam olur herhalde değil mi? Yani bunu pozitif hale geçirmem gerekir. Açıyı da pozitif hale getirdim. A değerini. Bu da tamam. Tamam. Şimdi ne yapmam lazım?
+
+570
+02:10:37,199 --> 02:10:59,219
+Ben burada bir açı hesapladım da, negatif değil, pozitif hale getirdim. Ama şöyle bir sıkıntı var. Sıkıntı demeyeyim de şöyle bir durum var. Ben bunu da şunu da hesaplamış olabilirim duruma göre. Hangisini tercih edersiniz söylemeyi? Doğal olarak aradaki dar açıyı söylemeyi tercih edersiniz değil mi? O zaman ben burada hemen bir kontrol yapmalıyım.
+
+571
+02:10:59,600 --> 02:11:13,600
+Benim bir açı değerim var. Bunu daha uzun da yapabiliriz ama burada bu şekilde yapalım. Açı küçük mü? Toplamın 360 olduğunu biliyorum neyse ki matematik sağolsun. 360 eksi açı.
+
+572
+02:11:14,003 --> 02:11:39,403
+Hangisi küçük diye bakıyorum yani aslında. Eğer açı değeri zaten 360'dan daha küçükse yani burada, ya da açı küçük 180 de diyebilirdik. Pardon, şunu yanlış çizdik. Böyle bir kontrol yapmış olalım. Eğer açı 360'dan daha küçükse direkt olarak onu yazdırdım, sonuç olarak. Yazdırıyorum, yazdırdım.
+
+573
+02:11:39,551 --> 02:11:57,551
+Eğer değilse, o zaman öbür tarafı yazdırmam lazım. Yani 360 eksi açıyı yazdırmam lazım. Hemen oraya da çıktı ya. 360 eksi açı değeri diyerek sonucumu yazdırdım ve şurada da durdum.
+
+574
+02:12:01,140 --> 02:12:01,640
+Stop.
+
+575
+02:12:04,380 --> 02:12:04,640
+Okay.
+
+576
+02:12:10,996 --> 02:12:37,956
+Böyle matematiksel, aslında çok basit ama şurada saat dakika yürüyor, her dakika 6 derece ilerliyor ama saat de yarım derece ilerliyor. Demek ki onun taradığı alan kadarı da bir hesap yapıp açıda bulmalıyım ve buradaki toplam açıdan çıkartmalıyım ve böylece net açıyı, gerçek açıyı bulmalıyım. Eğer negatifse pozitife çevirip 360'dan küçük, yani 180'den küçük olan tarafını ekrana yazdırmalıyım şeklinde.
+
+577
+02:12:38,996 --> 02:12:48,996
+operasyonları arka arkaya gerçekleştirip kontrolü üzerinden sonucu elde edebilirim. Açı ya da 360x açı olacak şekilde. Bu da
+
+578
+02:12:48,996 --> 02:13:03,996
+farklı, özellikle de matematiğin içinde olduğu bir örnekti. Bu şekilde. Sorunuz var mı? Sorumuz geldi. Evet şimdi
+
+579
+02:13:05,971 --> 02:13:29,271
+Şeylerden bahsedeyim, üç tane merak ettiğiniz husus vardır. Ben üçünlüğü sırasıyla anlatmış olayım size. Birincisi ödev. İkinci ödevinizi bu akşam saat 17 itibariyle göreceksiniz. Yani saat bu akşam 5'te açılacak. Süreyi hafta sonuna kadar demiştik ama biraz daha uzatıp pazartesi akşamına kadar olacak şekilde ayarlayacağız.
+
+580
+02:13:29,779 --> 02:13:56,079
+gerekli direktifler, zevkli eğlenceli bir ödev, belki de bildiğiniz bir problem, belki de yaşadığınız, hatta belki de eskiden gördüğünüz bir şey de olabilir. Bunun algoritmik tasarımını gerçekleştireceksiniz. Öde, özetle bu akşam 5'te başlayıp pazartesi akşamına kadar sürecek. İkinci husus, pazartesi günkü uygulama saatimizdeki laboratuvar çalışması.
+
+581
+02:13:56,595 --> 02:14:24,595
+Burada da yine şey yapacağız, küçük böyle hani quiz tadında bir online çalışma gerçekleştireceğiz. Yine bütün grupları tanımlayacağız. Online Yıldız Edip.tr üzerinden gireceksiniz. Saat 10.30 gibi yine aktif edip 11.30'a kadar yani bir saat sürecek. Bir yine bir saat içinde çözebileceğiniz bir algoritmik problemle karşı karşıya kalacaksınız. Onu tasarımını gerçekleştireceksiniz. Pazartesi günü unutmayın. Böyle bir değerlendirme.
+
+582
+02:14:24,595 --> 02:14:31,515
+olaylarına geliştirmeniz olacak. Zaten timeline ile şeyde online yıldızda düşüyor biz onları tanınadığımız zaman.
+
+583
+02:14:34,868 --> 02:14:58,368
+Yine burada hem ödev için hem de lab sırasında yapacağınız çalışmanın sonucunu yüklemeniz için bir uyarıda bulunmak istiyorum ya da bir dilekte bulunmak istiyorum. Size ilk ödevde şey söylemiştik, okunaklı olsun demiştik ama bunun çok abartanlar var, 500 megabayet dosyalar falan var, boyutları. Lütfen...
+
+584
+02:14:58,676 --> 02:15:26,676
+Çok derin çözünürlükler kullanmayın. Ekranda biz onu net bir şekilde, yani siz okuyabiliyorsanız ekranda net, okunaklı, temiz yazdıysanız biz de okuyabiliriz. Böyle abartıp da hani binanın duvarına poster yapacak kadar çözünürlüklerde yollamayın. Çok ciddi hani kaynak israfı oluyor network tarafında da ve bilgi sisteminin depolaması tarafında da. Hani iki megabayta geçmesin tamam mı dosya boyutlarınız lütfen, pdf'leriniz. Yeterli.
+
+585
+02:15:26,676 --> 02:15:45,576
+Bu da ikinci hususta. Üçüncü hususta vizeyi merak edenler vardır. 22 Kasım haftasında. Şu anda tam kesin belli olmadı sanıyorum ama aslında bir taslak vardı.
+
+586
+02:15:46,260 --> 02:16:09,780
+Perşembe günü gibi olacaktı. Çünkü online değil de yüz yüze gruplarımız Perşembe günü biliyorsunuz. Ve hepsini aynı anda yapmamız gerekiyor. Bütün grupları ortak yapmamız gerekiyor. Fakat orada ufak bir zaman çakışma problemi vardı. Onu çözmek için çalışmalar da devam ediyor. Bu nedenle günü saati tam belli değil. Değişebilir. O yüzden tam söylemek istemiyorum. Siz duyuruları takip edin.
+
+587
+02:16:10,100 --> 02:16:34,092
+Evet, fakat kesin olan bir şey var ki sınav yüz yüze olacak ve 60 dakikayı geçmeyecek. Bu da kesin. Bu iki bilgi dışında günü ve saati değişebilir. Evet, [öğrenci]'in sorusunu da bu şekilde cevapladıktan sonra bugünkü dersimizin, bu haftaki dersimizin sonuna geldik. Dediğim gibi bu akşam ödev. Sonrasında da...
+
+588
+02:16:34,260 --> 02:16:45,760
+Pazartesi Lab değerlendirmesi quiziyle yolumuza devam edeceğiz. Peki, şimdiden hepinize iyi hafta sonları ve ödevinizde başarılar diliyorum. Evet [öğrenci].
+
+589
+02:16:49,268 --> 02:16:50,547
+şey mi söyleyeceksiniz?
+
+590
+02:16:54,291 --> 02:16:56,268
+Söylüyorsan da ben duymuyorum.
+
+591
+02:17:00,788 --> 02:17:04,468
+Peki. Evet arkadaşlar, o zaman
+
+592
+02:17:04,468 --> 02:17:09,988
+Ekranımızı kapatalım ve
+
+593
+02:17:14,708 --> 02:17:21,907
+Dediğim gibi ödevde ve lafta başarılar. İyi hafta sonları. Sağlıklı, mutlu günler diliyorum. İyi akşamlar, hoşçakalın.

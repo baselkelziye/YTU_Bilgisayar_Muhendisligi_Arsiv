@@ -1,0 +1,1847 @@
+1
+00:00:03,732 --> 00:00:09,731
+birç
+
+2
+00:00:20,307 --> 00:00:22,219
+Arkadaşlar sesim geliyor mu?
+
+3
+00:00:26,132 --> 00:00:27,132
+Evet, geliyorum.
+
+4
+00:00:27,132 --> 00:00:47,132
+Tamam. Sizin sesinizi duymakla biraz zorlanıyorum. Şu an üniversitede ofisliyim. Buradaki speaker ile ilgili biraz bir sıkıntı var. O yüzden konuşmalarınızı duyamayabilirim. Aklınızda olsun. Lütfen chat kısmından yazıyor olun genellikle.
+
+5
+00:00:49,043 --> 00:00:57,043
+Şimdi şey başlarken ders başladığımızda yani katılım hakkında bir daha bunu hatırlatacağım ama hatır başlamışken şöyle bir de.
+
+6
+00:01:02,835 --> 00:02:21,627
+Evet.
+
+7
+00:02:21,627 --> 00:02:41,627
+Tekrar merhaba arkadaşlar. Şimdi bugün laboratuvar saatinde geçen hafta perşembe günü dersi konuştuğumuz sihir programlamayla ilgili kısmın bir parçasını
+
+8
+00:02:42,228 --> 00:02:46,788
+Küçük bir kısmını uygulamaya geçireceğiz. Küçük bir kısmını diyorum. Şundan da iyi.
+
+9
+00:02:46,788 --> 00:02:53,388
+Orada gördüklerimizin bütün veri yapıları, bütün kontrol atı bakışları vesaire içeriyordu.
+
+10
+00:02:53,388 --> 00:02:57,028
+Fakat biz hani bugün ufak ufak başlayacağız en temelden.
+
+11
+00:02:57,028 --> 00:03:01,028
+Daha önce de Linux problemunda sizlere şey anlatmıştım.
+
+12
+00:03:01,028 --> 00:03:04,228
+Ubuntu...
+
+13
+00:03:05,044 --> 00:03:10,544
+kurulumunu, sanal makine oluşturmayı, uyguntu kurulumunu, üstüne uyguntayı kurduğunuzda
+
+14
+00:03:10,544 --> 00:03:20,544
+Development tool'ların içerisinde olmayışını, o development tool'u nasıl kuracağımızı, yani burada bizim üzerimizde GCC'yi nasıl install edeceğimizi vs.
+
+15
+00:03:20,544 --> 00:03:29,036
+Dolayısıyla şu an hazır bir platformumuzun olmuş olması lazım. O platform üzerinden devam ediyor olacağız. Nasıl devam edeceğiz? Şöyle.
+
+16
+00:03:30,036 --> 00:03:32,475
+Öncelikle ben şöyle bir klasör yaratacağım.
+
+17
+00:03:34,475 --> 00:03:36,475
+Burada da bdg diyeceğim.
+
+18
+00:03:37,195 --> 00:03:39,515
+Şunun içerisine güzel,
+
+19
+00:03:40,475 --> 00:03:44,635
+çılgını bir adam olarak bir klasör daha yaratacağım.
+
+20
+00:03:47,436 --> 00:03:49,436
+Lab01 diyeyim.
+
+21
+00:03:49,716 --> 00:04:02,716
+Bu hafta yapacağımız örneklerin hepsini de bunun içine koyuyor olacağım. Şimdi dikkat edip masaüstünde bir klasör vardı. Bu klasörün içerisine bir klasör daha var. Dolayısıyla konsolda da
+
+22
+00:04:02,716 --> 00:04:14,716
+Önce desktop klasörün içerisine geçeceğim. Burada L, A dediğim zaman B, V, G klasörünü görüyorum. Burada B, V, G klasörün içerisine geçeceğim. Burada da
+
+23
+00:04:18,740 --> 00:04:34,740
+Laf öneri görüyorum. Burada baktığım zaman içine boş olduğunu görüyorum. Şimdi, bu arada ben el alışkanlığıyla biraz fazla hızlı bir şeyler yazabilirim. Ya da görsel olarak takip ettiğiniz için.
+
+24
+00:04:35,444 --> 00:04:52,844
+şey olabilir, mouse'un hareketi ya da ekran hareketleri çok hızlı olabilir. Detayı göremeyebilirsiniz, fark edemeyebilirsiniz. Bu ve benzer durumlarda durdurup sorun hani o nasıl oldu, bu nasıl oldu diye sıkıntı yok. Adım adım gidiyor olacağız.
+
+25
+00:04:52,844 --> 00:05:00,844
+Şimdi, öncelikle bir tane dosya yaratalım. Nasıl yaratacağız şimdi?
+
+26
+00:05:01,139 --> 00:05:09,139
+Ne demiştim? Bir editör kullanacağız, bir de compiler'ımız var. Şu an ayrı ayrı parçalar şeklinde bir yapı kullanacağız.
+
+27
+00:05:09,139 --> 00:05:18,659
+Daha sonra buna biraz hatim olduktan sonra, siz buna alıştıktan sonra işleri biraz daha kolaylaştıracak bir Integrated Development Environment'a bir IDE'ye geçeceğiz.
+
+28
+00:05:18,659 --> 00:05:26,819
+Bunun hangisi olduğunun çok bir önem yok, bir de bağımlı olmak gibi bir derdimiz yok. Tam tersi bağımsız olmayı tercih ediyoruz. Yani herhangi bir...
+
+29
+00:05:27,028 --> 00:05:35,187
+Development unuttum olmadan da kendi başımıza bir şeyler yapabilir olmalıyız bence. Şimdi bu açıklamadan sonra
+
+30
+00:05:35,187 --> 00:05:53,508
+Editör olarak çok standart kullanabileceğimiz g-edit var. G-edit'i çalıştırmak için alt f'i k'ye basıyorsunuz mesela, g-edit diyorsunuz, enter'a basıyorsunuz ve sivik editör ekranı boş bir şeyle beraber açılıyor.
+
+31
+00:05:53,843 --> 00:06:15,243
+Şimdi yapacağımız şey bu dosyayı kaydetmek. Kaydet dediğimiz zaman otomatikman nereye kaydeteceğini soruyor. Biz de bunu dvdlab1 altına kaydedeceğiz. Buna bir isim veriyor olmamız lazım. Siz hani hiçbir şey vermeseniz bile boş olarak isimlendiremiyorsunuz. Oraya otomatikman Untitled Document 1 diye bir şey giriyor.
+
+32
+00:06:15,668 --> 00:06:43,668
+Fakat bu şekilde dosyalarınızı isimlendirmemeniz lazım. Bunu da konuşmuştuk. Ne olması lazım? Şu an biz bir C programı yazacaksak bunun C programı olduğunu anlamak için, en azından dışarıdan bakan benim anlaması için buna uygun bir uzantı veriyor olmanız lazım. Aynı zamanda bu uzantıyı verdiğimizde ne oluyor? Editör de bunun bir C dosyası olduğunu biliyor ve buna göre davranıyor. Buna göre davranıyor ne demek? Şöyle.
+
+33
+00:06:43,668 --> 00:06:49,908
+Öncelikle ismini bu şekilde kaydedeyim. Untitled Document bir efsanevi isim zaten. Kaydettik.
+
+34
+00:06:49,908 --> 00:06:59,108
+Şimdi kaydettiğimiz zaman burada klosyonun içerisinde, lab01'in içerisinde görüyoruz. Burada da l ise türele dediğim zaman
+
+35
+00:06:59,108 --> 00:07:03,708
+türele a dediğim zaman
+
+36
+00:07:04,192 --> 00:07:14,192
+Burada bu isimini görüyorum. Şimdi şöyle yaparsam hepsini farklı bir yere taşırsam ekranda daha rahat ve takip edilebilir olacak her şey sanki.
+
+37
+00:07:21,267 --> 00:07:23,267
+Bu da burada konsolda kalsın.
+
+38
+00:07:24,867 --> 00:07:36,067
+Şimdi, ne fakat bunun içerisinde mesela standart olarak ne yapmamız lazım? C'de include kullanacağımız library'ı önce söylememiz lazım demiştim.
+
+39
+00:07:37,667 --> 00:07:40,867
+Include std.io dedim, kaydettim.
+
+40
+00:07:41,267 --> 00:07:45,267
+Bir şeyler renklendirir gibi yaptı ama çok da düzgün olmadı.
+
+41
+00:07:45,267 --> 00:07:48,267
+Şimdi, ha inc...
+
+42
+00:07:49,267 --> 00:07:59,027
+Filebrowser burada akıllı olduğu için bu dosyanın ismi noktası ile bitmese bile bunun bir C dosyası olduğunu içerisindeki include satımından anladım.
+
+43
+00:07:59,027 --> 00:08:13,507
+Ve fakat bu işin daha doğru düzgün ve şey olması adına, anlaşılabilir olması adına sizin bunu şöyle file name'in üstüne gelip sağ tık rename de diyebilirsiniz.
+
+44
+00:08:13,620 --> 00:08:32,620
+Burada tıklayıp f2'ye de basabilirsiniz. Bir şey çevirir olmanız lazım. Hello.c'ye çevirdim ben. Ki iş biraz daha düzgün olsun. Şimdi buradan sonra ne yapacağız? C fonksiyonel bir dil demiştik. Dolayısıyla o fonksiyonel dilin...
+
+45
+00:08:34,451 --> 00:08:45,451
+Bir başlangıç noktası, Executable'ın bir başlangıç noktası olması lazım. Bunun da main fonksiyonunu söylemiştik. Yani yazdığımız her Executable için bir tane main fonksiyonu olması lazım.
+
+46
+00:08:45,451 --> 00:08:50,451
+O main fonksiyonun geri dönüş değeri int olacak.
+
+47
+00:08:52,884 --> 00:09:01,504
+Şu an mainfonsiyon bir parametre almayacak. O parametre kısmını aslında bu ders kapsamında zaten konuşmayacağız ve yapısal programlamada konuşuyor olmanız lazım.
+
+48
+00:09:01,504 --> 00:09:12,884
+Bu mailin geri dönüş değeri, çalıştırdığınız yani daha doğrusu yazdığınız kod çalışmaya başladığında bir prosese, bir işleme döndüğünde gerekli
+
+49
+00:09:14,100 --> 00:09:21,600
+çalışmayı tamamladıktan sonra kendisini çalıştıran diğer bir başka prosesle durumunu bildirmek için kullandığı kısım.
+
+50
+00:09:21,779 --> 00:09:49,779
+By default, yazılı bir kural olmasa da, Unix işletim sistemleri, Unix'in türevi işletim sistemlerinde her proses değer başarıyla tamamlandıysa geri dönüş değeri sıfırdır. Dolayısıyla ben bu fonksiyonun en sonuna return sıfır yazabilirim. Benzer şekilde diğer yöntem exit'i kullanmak olabilir. Fakat exit kullanırken dikkat etmemiz lazım. Yani main'in içerisinde son noktasında return sıfır ya da exit sıfır yapmanın bir farkı yok.
+
+51
+00:09:49,779 --> 00:09:51,779
+herhangi bir fonksiyon içerisinde
+
+52
+00:09:52,579 --> 00:09:56,980
+Return o fonksiyonundan geri dönmeyi sağlar. Exit ise programı termine eder. Yani
+
+53
+00:09:57,779 --> 00:10:00,980
+Kaş yapım derken göz çıkartabilirsiniz. Dikkatli olun.
+
+54
+00:10:01,579 --> 00:10:08,179
+Şimdi bu ilk örneğimiz, bu örnek basit bir örnek olacak. Ne olacak? Her programla mı denir? Temel örneği olan
+
+55
+00:10:08,579 --> 00:10:11,779
+Ekrana Hello World yazdırmak olacak. Dolayısıyla
+
+56
+00:10:16,500 --> 00:10:18,740
+Ne yazdırırken, slash neyle yazdıracağım.
+
+57
+00:10:20,520 --> 00:10:25,379
+Fakat önce, ney'siz halini yazdırayım. Bazı şeyler açıklarkı oluşusu.
+
+58
+00:10:25,879 --> 00:10:29,840
+Heller var nokta nokta, nokta üç tane nokta yazdı.
+
+59
+00:10:30,660 --> 00:10:37,220
+Şimdi bu program, bakalım, bu klasörün içerisinde C dosyası olarak gözüküyor.
+
+60
+00:10:38,020 --> 00:10:39,900
+Bu programı compile etmek için,
+
+61
+00:10:41,360 --> 00:10:42,420
+gcc demeniz,
+
+62
+00:10:42,864 --> 00:10:47,864
+akabinde de hello c demeniz yeterli.
+
+63
+00:10:49,864 --> 00:10:54,864
+Şimdi bu Compileye işlemini bu şekilde yapabilirsiniz. Bu en basit hali.
+
+64
+00:10:54,864 --> 00:11:00,864
+Sonunda dikkat edin altta şu kısımda ne oldu? Bir dosya oluştu. a.out diye.
+
+65
+00:11:00,864 --> 00:11:03,820
+O dosyayı çalıştırmak için a...
+
+66
+00:11:03,892 --> 00:11:12,232
+nokta slash yani bu içinde bulunduğunuz klasörde olan bir executable çalıştıracağınızı söylüyorsunuz. Nokta slash koyma mesleesi bu.
+
+67
+00:11:12,232 --> 00:11:15,532
+a.out yazıyorsunuz. Bunu koymadığınız zaman
+
+68
+00:11:16,432 --> 00:11:20,451
+normal şartlarda sistemin, işledim sistemin genelinde
+
+69
+00:11:20,451 --> 00:11:24,892
+yüklü olan uygulamalar arasında bir
+
+70
+00:11:25,395 --> 00:11:32,395
+A.out programı olduğu ve onun çalıştırılması gerektiğini düşünüyor işte sistemi. Böyle dediğiniz zaman ise
+
+71
+00:11:34,395 --> 00:11:40,395
+şu an içerisinde bulunduğunuz klasördeki o programı çalıştırmaya çalışıyoruz. Şimdi bastığımız zaman çalıştı.
+
+72
+00:11:41,395 --> 00:11:44,395
+Çalıştı ama buradaki çıktığa lütfen dikkat edin.
+
+73
+00:11:44,395 --> 00:11:51,395
+Hello World yazdı, nokta nokta nokta, ondan sonra benim promptum başladı. Bu şundan dolayı biz ekran çiftçi olarak
+
+74
+00:11:51,827 --> 00:11:57,827
+bit çıktı verdik ama çıktıya new line yapacağını söylemedik. Şimdi
+
+75
+00:12:01,028 --> 00:12:11,827
+Bu arada yukarı ve aşağı ok duşlarıyla daha önce yazdığımız komutlar arasında gidip gelebilirsiniz. Böyle bir kolaylıkla her şeyi tekrar tekrar yazmak zorunda değilsiniz. gdcheldo.c dediğim zaman
+
+76
+00:12:11,827 --> 00:12:17,579
+bu programı tekrar kompile ettim. Dikkat edin.
+
+77
+00:12:17,716 --> 00:12:28,836
+A.out'un zamanı yanlış ve fakat şeyden daha güncel, bir önceki halinden daha güncel.
+
+78
+00:12:30,435 --> 00:12:39,315
+Benim herhalde zaman ayarlarını yapmamışım bu makinede, bir şeyler kaymış. Neyse, şimdi A.out'u tekrar çalıştırıyorum.
+
+79
+00:12:39,668 --> 00:12:52,668
+Ve bu sefer ne görüyoruz? Mesajı yazıyor, sonra alt satıra geçiyor, prompt ondan sonra çıkıyor. Yani daha düzgün bir şey oluyor. Şimdi bütün çıktılarınızda bu ve benzeri şeyleri takip etmek sizin sorumluluğunuzda.
+
+80
+00:12:52,668 --> 00:13:03,668
+Buna uygun ve düzgün şekilde takip ederseniz programınızın çalışıp çalışmadığını, çıktısının nerede gittiğini vesaireyi daha rahat anlarsınız, daha rahat analiz edebilirsiniz.
+
+81
+00:13:04,851 --> 00:13:12,611
+Şimdi, buraya kadar sormak istediğiniz bir şey var mı? Takip edebildiğiniz bir şey var mı? Herhangi bir sıkıntı var mı?
+
+82
+00:13:12,611 --> 00:13:17,812
+Bunu da tamamsak, yeni bir şeye geçeceğiz.
+
+83
+00:13:17,812 --> 00:13:21,892
+Nedir o? Programa geçeceğiz.
+
+84
+00:13:41,043 --> 00:13:59,843
+Şimdi, o zaman devam ediyorum. Ne yapalım? Daha önce akışını çizdiğimiz programlardan gideceğim ki programı takip etmeniz daha kolay olsun. Faktöryel hesabını yapmıştık sizinle diye hatırlıyorum.
+
+85
+00:14:08,628 --> 00:14:15,628
+Evet, bu kadar.
+
+86
+00:14:18,707 --> 00:14:26,867
+Şimdi bu dosyayı farklı kaydettim. Tek yaptığım şey farklı yaptım. İçeri aynı oldu ve fakat bu printf vesaire ismine ihtiyacım yok.
+
+87
+00:14:26,867 --> 00:14:33,267
+Faktoryal hesabı yapacağız. Yani dışarıdan mesela on değeri girildiği zaman on faktoryal hesabı yapacağız.
+
+88
+00:14:34,836 --> 00:14:41,076
+İşte yirmi değeri girildiği zaman yirmi faktoriye ile satacağız. Dolayısıyla neye ihtiyacımız var?
+
+89
+00:14:41,076 --> 00:14:45,875
+Faktoriye ile ilgili daha önce çizdiğimiz bakışı hatırlayın.
+
+90
+00:14:45,875 --> 00:14:51,235
+Aslında öncelikle dışarıdan bir değer okuyacağız.
+
+91
+00:14:51,235 --> 00:14:54,436
+Tercihen x ya da n diyebileceğimiz bir değer.
+
+92
+00:14:54,436 --> 00:14:58,028
+Dolayısıyla öncelikle integer tipinde bir...
+
+93
+00:14:58,580 --> 00:15:09,379
+değişken yaratalım. Diyelim ki ismin n olsun. Sonra bir döngü içerisinde aslında n'e kadar olan sayıları çarpa çarpa ilerleyeceğiz.
+
+94
+00:15:09,379 --> 00:15:20,179
+Dolayısıyla burada bir döngü kullanacağımız için bir döngü değişkeni ihtiyacımız var. Bir de bu çarpımları tutacağımız başka bir değişkene ihtiyacımız var.
+
+95
+00:15:26,196 --> 00:15:34,196
+Multiplication'ın bulu diye düşünebilirsiniz. Buna bir deru olarak çarpmaya başlarken ne yapacağız?
+
+96
+00:15:34,196 --> 00:15:41,196
+Birden başlayıp çarpmaya devam edeceğiz. Dolayısıyla buna bir değerini baştan atayabilirim.
+
+97
+00:15:42,484 --> 00:16:04,484
+Hatırlayın, değişkenleri, tanımladığınız değişkenleri şey yapabilirsiniz, bu şekilde eklendirebilirsiniz diye konuşmuştuk. Bu değişkenlerin tanımlanmalarıyla ilgili, sıralarıyla ya da ayrı ayrı tanımlanmalarıyla ilgili herhangi bir kısı olmadığını da konuşmuştuk. Şimdi ilk yapacağımız şey, dışarıdan kullanıcıdan hangi
+
+98
+00:16:05,107 --> 00:16:18,388
+sayının faktörüyle hesaplanmasını istediğini öğrenmek. Dolayısıyla bununla ilgili uygun bir mesaj bilimi olmamıyoruz. Adamın ne yapacağını bilimi olması için.
+
+99
+00:16:18,388 --> 00:16:21,268
+And number diyelim.
+
+100
+00:16:21,268 --> 00:16:24,707
+Sonra ne yapacağız?
+
+101
+00:16:25,779 --> 00:16:33,779
+Dışarıdan girilen sayı okuyoruz. Girilen sayı integer olduğunu biliyoruz. Hangi değişkeni okumak istiyoruz? N değişkenini.
+
+102
+00:16:33,779 --> 00:16:45,611
+Tasarımız ve planımız bu yönde. Dolayısıyla ne yapıyoruz? N'nin adresini okuma yapılabilmesi için önüne alt persen koyuyoruz ve bu değeri N'ye okuyoruz. Bundan sonra yapacağımız şey ne?
+
+103
+00:16:46,292 --> 00:17:02,292
+Aslında birden başlayarak bu sayıları çarpı çarpı devam etmek. Dolayısıyla bir for birleşik for döngüsü oluşturacağız. Nereye kadar çarpma işlemini yapacağız? Aslına bakarsanız.
+
+104
+00:17:08,948 --> 00:17:10,188
+İkilik an.
+
+105
+00:17:14,163 --> 00:17:20,163
+iyi de her seferinde bir dakika bir arttıracağız.
+
+106
+00:17:22,163 --> 00:17:34,163
+Şimdi burada for'da da if'de de while'da da hep benzer bir şey konuşmuştuk. Bu döngü içerisinde ya da kontrol içerisinde gerçekleştirilmesini istediğiniz işlemler bir tane ise
+
+107
+00:17:35,163 --> 00:17:40,163
+bunlar için şey yapmanıza gerek yok diye
+
+108
+00:17:41,715 --> 00:17:57,955
+blok oluşturmanızı gerek yok diye ama ben genel ulaşkanlık olması ve hatayı önlemek adına buralara her seferinde körlü braceler açık kapayarak bloklar oluşturacağım. Sizin de aslında bu şekilde ilerlemeniz çoktan mantıklı olacaktır.
+
+109
+00:17:57,955 --> 00:18:04,835
+Şimdi bu hesabı kitabı yaptıktan sonra ekrana ne yazdıracağız?
+
+110
+00:18:18,644 --> 00:18:26,244
+N-Faktoriyenin hesaplanması istenmişti. Bunu hesapladık. Akabinde de sonucunu yazdıracağız.
+
+111
+00:18:26,244 --> 00:18:37,443
+Şimdi yapacağımız şey şu. Yine gcc diyeceğiz. Bu sefer şeyimizin ismine, bug.c.
+
+112
+00:18:37,443 --> 00:18:38,988
+Ne oldu?
+
+113
+00:18:41,011 --> 00:18:50,731
+Hata verdi. Neden? Çünkü ben deyim mi burada klavye tuşlarına basarken bir şeyler birbirine girmişti. Yukarıya bir artı karakteri girmiş bir kendiliğinden. Şimdi
+
+114
+00:18:51,771 --> 00:18:59,132
+Burada neye dikkat ediliyor olmanız lazım şu ekranda? Biz Compilation için komuta girdik. Compiler'da bize
+
+115
+00:18:59,988 --> 00:19:13,988
+Bir grup hata verdi. Bir hata verdiği zaman hangi dosyada olduğunu bu hatanın, kaçıncı sutun satırda olduğu ve kaçıncı sutunda olduğunu söylüyor. Hatta böyle gösteriyor. Şu an şanslıyız. Yaptığımız hata...
+
+116
+00:19:16,115 --> 00:19:18,596
+çok güzel bir yere denk geldi.
+
+117
+00:19:19,735 --> 00:19:20,355
+Ve fakat
+
+118
+00:19:20,355 --> 00:19:23,175
+yaptığınız hatanın ne olduğuna bağlı olarak
+
+119
+00:19:23,175 --> 00:19:25,296
+hata mesajını çok alakasız bir yerden de
+
+120
+00:19:25,296 --> 00:19:27,215
+alabilirsiniz. Yani bir tanımlama süresinde
+
+121
+00:19:27,215 --> 00:19:29,155
+yaptığınız hata, mesela bilimaklı
+
+122
+00:19:29,155 --> 00:19:31,155
+tanımlılardan koyduğunuz noktalı bir
+
+123
+00:19:31,155 --> 00:19:33,316
+hatanın tam olarak
+
+124
+00:19:33,316 --> 00:19:35,235
+bambaşka bir yerde gözükmesine neden olabilir.
+
+125
+00:19:35,415 --> 00:19:37,596
+Şimdi hata mesajını böyle yukarıdan aşağıya
+
+126
+00:19:37,596 --> 00:19:38,796
+doğru aslında
+
+127
+00:19:38,796 --> 00:19:41,115
+compiler'ın fark ettiği ilk hata
+
+128
+00:19:41,115 --> 00:19:42,975
+itibaren listelenir.
+
+129
+00:19:43,536 --> 00:19:44,096
+Bu hata
+
+130
+00:19:44,115 --> 00:19:54,115
+Mesajlarını aklınızda olsun, şu an çok sayı olarak az olduğu için hepsini aynı ekranda görüyoruz ama alt altta listelendiğinde böyle takip edilemez bir haline gelebilir.
+
+131
+00:19:54,115 --> 00:20:00,115
+Burada yapmanız gereken şey şu, her zaman hataya, her zaman bug'a yaklaşım en baştan başladı.
+
+132
+00:20:00,115 --> 00:20:06,115
+İlk hata mesajı nerede? Çünkü ilk hatanız tahminen aşağıda başka hataların da oluşması neden oluyor.
+
+133
+00:20:06,115 --> 00:20:11,852
+Bu şekilde yaklaşıyor olmalı. Biz değişikliği yaptık, dosyayı kaybettik, compile ettik.
+
+134
+00:20:12,307 --> 00:20:29,307
+Compile edildi. Yalnız şimdi burada dikkat etmemiz gereken bir şey var. Demin bizim bir a.out dosyamız vardı. Ad.lo noktasıyı Compile ettiğimiz zaman çıkan. Şimdi de a.out dosyası oluştu. Yani yeni executor'umuz eskisinin yerine geçti. Eskisi uçtu gitti.
+
+135
+00:20:30,099 --> 00:20:55,947
+Şimdi, bunun düzgün ya da doğru yapılabilmesi için bu işin her programınızın isminin A.out olması çok saçma ve tuhaf bir yaklaşım olur. Ne yapıyor olmamı lazım? Ya compile edeceksiniz ve sonra dosyanın ismini değiştireceksiniz ya da compilation sırasında aslında üreteceğiniz şekilde dosyasının isminin ne olmasını istiyorsanız onu vereceksiniz. Buna için bir türe O duysunuz.
+
+136
+00:20:59,988 --> 00:21:05,988
+Bunu bu şekilde yaparsam benim fac diye executable'ım oluşacak. Bakalım.
+
+137
+00:21:08,188 --> 00:21:16,988
+fac zaten burada da yeşil olarak executable olduğu için yeşil olarak gözüküyor. a.outta dikkat edin aynı boyutta çünkü aslında aynı program sadece işimiz farklı.
+
+138
+00:21:20,188 --> 00:21:24,988
+Şimdi kafa karıştırmaması adına şu a.outta ortadan bir kaldıralım.
+
+139
+00:21:28,019 --> 00:21:54,019
+koduriyel hesabı için olan sayıya girelim. Basit bir işlemle başlayalım. 5. 5'in 5 makturyel nedir? 120 demişiz. Doğru mu? Kontrol edelim. 5 çarpı 4, 20. 3 ile de çarptınız. 62 ile çarptınız. 120. 1 ile çarptınız. 120. Buraya kadar bir sıkıntı yok. Şimdi bu koda geri dönelim. Birkaç kişiyi değiştirelim.
+
+140
+00:21:56,115 --> 00:22:09,796
+Bence bu 1'i 2 yapabiliriz. Çünkü şey değil, nedir o? Hani 1'i 1'le çarpının bir esprisi yok bu noktada. Dolayısıyla bir daha bir komple edelim.
+
+141
+00:22:15,667 --> 00:22:18,427
+Sonuç yine aynı, tutarlanını da kontrol edelim.
+
+142
+00:22:18,427 --> 00:22:21,667
+Şimdi, buradan sonra
+
+143
+00:22:21,667 --> 00:22:27,267
+Başlayacağımız ya da devam edeceğimiz noktalardan bir tanesi şu.
+
+144
+00:22:27,267 --> 00:22:34,067
+Compile işlemi sırasında şu ana kadar yazdığımız şeyler çok da böyle karman çorman işler değil.
+
+145
+00:22:34,067 --> 00:22:36,867
+Çok daha düz, çok daha temiz şeyler.
+
+146
+00:22:36,867 --> 00:22:40,867
+Yazarken yine hata yapabilirsiniz, onun da hiçbir engelle de sıkıntı yok.
+
+147
+00:22:41,203 --> 00:22:48,324
+Gayet mümkün ve makul. Ve fakat C compiler'ın bu hataları görmezden gelecektir. Eğer bu şekilde
+
+148
+00:22:48,324 --> 00:22:55,124
+bir compilation'e giderseniz. O yüzden benim size tavsiyem, burada
+
+149
+00:22:55,124 --> 00:23:06,003
+bütün warningları aç şeklinde tire w o yani bütün uyarıları aç şeklinde yaklaşmanız.
+
+150
+00:23:06,016 --> 00:23:19,816
+Zaten kodunuzda uyarılacak bir nokta yoksa sizi uyarmıyor. Fakat hani böyle tuhaf, alışılmış dişi herhangi bir şey gördüğü zaman compiler bununla ilgili de hata değil uyarı verecek.
+
+151
+00:23:19,816 --> 00:23:29,615
+Ki bizim için önemli bu. Özellikle yeni öğrenmeye başladığınız için işin gelişimi açısından önemli bir şey.
+
+152
+00:23:31,188 --> 00:23:54,867
+Şimdi biraz daha karıştıralım ortalığı, daha farklı bir şeyle devam edelim. Şöyle bir kolaylık yapacağım gene. Say evi diyeceğim. Bu sefer de üzerinde çok çok konuştuğumuz Newton'ı yapalım. Dosyayı farklı kaybettim. Newton'un noktası şeklinde. Şimdi yapacağım şey.
+
+153
+00:23:55,347 --> 00:24:00,727
+içini boşaltmak ve gene kaydetmek. Böylece şeyim gene hazır.
+
+154
+00:24:00,727 --> 00:24:03,548
+Nedir o?
+
+155
+00:24:03,548 --> 00:24:06,867
+Programım gene hazır. Şimdi
+
+156
+00:24:06,867 --> 00:24:12,507
+Neye ihtiyacımız vardı Newton'da? Hatırlayın çizdiğimiz akışı.
+
+157
+00:24:12,507 --> 00:24:15,567
+Daha doğrusu akışları diyeyim.
+
+158
+00:24:15,567 --> 00:24:18,647
+Öncelikle ne yapıyorduk?
+
+159
+00:24:18,647 --> 00:24:22,227
+Newton'da bir sayı alıyorduk dışarıdan.
+
+160
+00:24:23,443 --> 00:24:51,443
+Hangi sayının kara kökünün bulunmasını hesaplanması istiyorsak o sayıya dışarıdan kullanıcıdan alıyorduk. Bir diğer şey, her iteratif çalışan bir yapı, her bir iterasyonda yeni bir değer hesaplıyoruz. Eskisiyle yenisi arasındaki farka bakıyoruz. O fark belirlediğimiz bir thresholdun altında olmadığı sürece de devam ediyoruz. Dolayısıyla bir de threshold değeri lazım bize. Bir de onu alalım. Şimdi o zaman bir x değerine ihtiyacımız var. Bir threshold değerine ihtiyacımız var.
+
+161
+00:24:51,443 --> 00:24:55,243
+Öğrenç olup değil ne istiyahı, mas var.
+
+162
+00:25:04,307 --> 00:25:09,587
+yeni ve eski değerleri tutmak için birer değişkene ihtiyacımız var. Bir tane de
+
+163
+00:25:09,587 --> 00:25:11,988
+eğer şey
+
+164
+00:25:11,988 --> 00:25:22,788
+nedir o? Bu işi kaçıncı adımda bulduğumuzu tespit edebilmek bir şekilde monitoring için şeye ihtiyacımız var.
+
+165
+00:25:23,635 --> 00:25:39,235
+kaçıncı adımda yapımsadık, kaçıncı adımda bulduk vesaireyi takip edebilmek için biz de döngü için kullanacağımız değişkenlik de yapmak. O işte bir tane döngü değişkeni kenara koyuyorum. Kenara koyuyorum diyorum. Şuradan dolayı...
+
+166
+00:25:47,443 --> 00:25:53,683
+Bunu aslında sadece döngün içerisinde döngü arttırmak için kullanıyor olacağız. Şimdi
+
+167
+00:25:55,523 --> 00:26:05,604
+Neye ihtiyacımız var? Dışarıdan alacağımız bir sayıya ihtiyaç var. Kara kutunu hesaplayacağımız bir sayıya ihtiyaç var. Bunun dışında
+
+168
+00:26:13,683 --> 00:26:24,683
+hesapladığımız yeni değere ihtiyaç var, eski değere ihtiyaç var. Bir de threshold'a ihtiyaç var. Eski ve yeni değere arasındaki farkı da
+
+169
+00:26:24,683 --> 00:26:34,683
+aritmetik olarak hesaplarken kullanabileceğimiz bir error değişkeni olabilir. Mesela ya da fark değişkeni. Disk de diyebiliriz.
+
+170
+00:26:34,683 --> 00:26:40,619
+Fark yokmaz. Ben buna kısaca e deyim. Öyle devam edelim.
+
+171
+00:26:40,627 --> 00:26:43,627
+Şimdi, anj, ikaduna, nab, just clear tab.
+
+172
+00:26:52,147 --> 00:27:06,547
+Dışarıdan bir float değişkenine okuma yapacağız. Dolayısıyla anakarsam x diyebiliriz. Bir adım sonra bir link de...
+
+173
+00:27:17,683 --> 00:27:18,804
+Bu da bizim için
+
+174
+00:27:19,804 --> 00:27:20,804
+Load 1
+
+175
+00:27:22,443 --> 00:27:23,483
+Örüşken
+
+176
+00:27:23,483 --> 00:27:26,683
+Bu kolay şey yok ki, yani şurada bu okumayı yapacağız.
+
+177
+00:27:29,284 --> 00:27:30,564
+Akabinde
+
+178
+00:27:40,660 --> 00:27:42,340
+yapmamız gereken.
+
+179
+00:27:48,211 --> 00:28:00,932
+İlk yaklaşımımız şeyin bir olduğu yönüdeydi. İlk başlangıç noktamız, onu unutmayın. Yeni hesapladığımız yerin ne olmasını bekliyoruz?
+
+180
+00:28:08,564 --> 00:28:12,964
+İki formüloydu. Bu durumda da
+
+181
+00:28:12,964 --> 00:28:14,964
+Farkın
+
+182
+00:28:14,964 --> 00:28:17,264
+Ne olması lazım?
+
+183
+00:28:30,003 --> 00:28:36,063
+Bu işin şey yapılması lazım.
+
+184
+00:28:36,063 --> 00:28:49,743
+Ne durum? Mutlak değerle yapılması lazım. Çünkü farkın hani bir sonra hesapladığınız yerin daha yüksek ya da daha büyük olacağını bilmiyorsunuz. Dolayısıyla mutlak değerle gitmemiz lazım demiştik.
+
+185
+00:28:49,743 --> 00:28:52,543
+Şimdi hesapladığımız
+
+186
+00:28:53,236 --> 00:29:01,476
+fark ya da hata ne derseniz artık threshold değerinden büyük olduğu sürece işlerimizi takip edeceğiz.
+
+187
+00:29:03,476 --> 00:29:09,796
+Burada ne yapacağız? Her adımda mesela yaptığımız
+
+188
+00:29:18,003 --> 00:29:21,124
+hesabın ne olduğunu, ne durumda olduğunu
+
+189
+00:29:22,124 --> 00:29:23,124
+bunun
+
+190
+00:29:26,836 --> 00:29:29,836
+Adım adım gözlenebilmesi için
+
+191
+00:29:31,836 --> 00:29:34,836
+Adım sayısını da bir saniye şöyle yapalım.
+
+192
+00:29:35,836 --> 00:29:36,836
+İterasyon
+
+193
+00:29:37,836 --> 00:29:39,836
+Şöyle yapalım.
+
+194
+00:29:48,307 --> 00:30:14,907
+i slash, hold için, hold, new için new hatta için de e koyduk. Her seferinde i'ye bir arttıracağız. Sonraki iterasına geçerken. Eski değerine yeni değere atayım. Yeni i ne yapacağız? Tekrar hesaplayacağız. Nasıl hesaplayacağız? Aynı mantıkla hesaplayacağız.
+
+195
+00:30:26,804 --> 00:30:27,364
+Yardım.
+
+196
+00:30:28,564 --> 00:30:29,524
+Yedi formül.
+
+197
+00:30:32,724 --> 00:30:34,744
+X bölü
+
+198
+00:30:34,744 --> 00:30:36,744
+Folt bölü 2.
+
+199
+00:30:37,184 --> 00:30:38,284
+Yanlış hatırlamıyorsam.
+
+200
+00:30:38,564 --> 00:30:39,344
+Öyle bir şeydi.
+
+201
+00:30:41,163 --> 00:30:42,403
+Sonunda da
+
+202
+00:30:42,403 --> 00:30:44,824
+tekrar hata değerini
+
+203
+00:30:44,824 --> 00:30:45,604
+hesaplayacağız.
+
+204
+00:31:04,243 --> 00:31:06,243
+eee
+
+205
+00:31:07,843 --> 00:31:14,243
+Merhaba [öğrenci], [öğrenci]. Biz Bekirko, şu işimiz bitti, seninkere döneriz.
+
+206
+00:31:16,143 --> 00:31:22,243
+Ve fakat bunu bu saate bırakmıyor olmanız lazımdı, onu da baştan ifade edeyim.
+
+207
+00:31:25,743 --> 00:31:28,811
+eee...
+
+208
+00:31:47,092 --> 00:32:02,092
+Neyin karakik normı? X'in sonuç ne bulduk? En son bulduğumuz neyi? Kaçıncı itirasyonu bulduk? Yinci itirasyonu bulduk.
+
+209
+00:32:04,092 --> 00:32:05,092
+Şimdi
+
+210
+00:32:11,892 --> 00:32:14,892
+Newton, Newton, Newton.
+
+211
+00:32:16,692 --> 00:32:20,892
+Heaps, Detection of Function, Fabs. Yani, şimdi,
+
+212
+00:32:22,892 --> 00:32:26,892
+Fabs birleşkinli Fabs fonksiyonunu kullanabilmek yani,
+
+213
+00:32:26,892 --> 00:32:33,892
+yani, floatlar için abs fonksiyonunu kullanabilmek için buraya bir library ekliyor olmamak lazım.
+
+214
+00:32:33,892 --> 00:32:38,892
+Mach-Mod, Caffa, Şurada, compiler, bizi bunu kullanmak için.
+
+215
+00:32:39,571 --> 00:32:50,691
+şeyini verdi, uyarısını verdi. Zaten altına da önce warning günü verdi, sonra notunu düştü. Geçti de akıllandı için kendisi. Burada da
+
+216
+00:33:08,051 --> 00:33:34,051
+Formül yanlış yazmışım. Formül yanlış zaten. New. Şurada söylediği şey, New değişkenliğinin in-size edilmeden kullanılıyordu. Doğru in-size etmemiştim. Şurada yazdım haliye. Direkt New yazmıştım. Alt art New bölü iki şeklinde yazmışım. Artık o sırada kafam nereye gittiyse. Ama olması gereken şuradaki gibi Newton'un formülüne uygun şekli olmasıydı. Şimdi onu da düzelttik.
+
+217
+00:33:37,011 --> 00:33:58,011
+Compile ediyoruz. Compile edildi. Compile ediliyor olması bir programın sorunsuz bir muhteşem çalışıyor anlamına gelmiyor. Bunun için çalıştırıp gerçekten çalışmadığını kontrol ediyor olmamız lazım. 1024 diyelim. Threshold değer olarak da 0.001 girelim.
+
+218
+00:33:59,892 --> 00:34:27,891
+Gördüğünüz üzere çok muhteşem bir çift oluştu. Neden böyle oldu bu çift? Çok basit. Burada yazdığımız mesajı aslında formatlamadığımız, slash ne'yi koymadığımız ve adım adım durumu takip edemedik. Şimdi bu şoku hayi bir işini kontrol etmek çok zor. Size de an başından söyleme içerisindeki şey buydu. Dolayısıyla ne yapacağız? Oradaki slash ne'yi koyacağız? Bir daha çalıştıracağız. Minya'lı 4. Thresh olduğunda 0.0001 vereceğim.
+
+219
+00:34:27,891 --> 00:34:48,532
+Dokuzuncu iterasyonda bunun ne olduğuna karar vermişiz. 32 olduğuna karar vermişiz. İlk iterasyon 1512 vs. falan filan değil gidiyor. Aslında bulduğumuz değer ne? 32.000.0008.
+
+220
+00:34:51,123 --> 00:35:03,663
+Bunu farklı sayılarda, farklı şekillerde deneyebilirsiniz. Şimdi, gelelim şeyin, nedir o? [öğrenci]'in sorusuna.
+
+221
+00:35:11,155 --> 00:35:19,155
+[öğrenci] diyor ki, merhaba hocam, command gcc not command, but can be installed with sudo update?
+
+222
+00:35:19,155 --> 00:35:34,699
+Tamam, sudo apt install gcc yazmayı mücüzü olacağım. Öncelikle eğer sistemini ilk kez bir uygulama yüklemeye vesaire şey yaptıysam, sudo apt update
+
+223
+00:35:34,739 --> 00:35:56,099
+deyip şu an mesajı yazdım. Senin işletim sistemine paket yüklemek için kullandığın AppGet'in ya da App uygulamasının güncelleşmesini sağlamak lazım. Şimdi bu App ve AppGet aslında çeşitli repositorlardan, internet üzerinde bulunan çeşitli repositorlardan.
+
+224
+00:35:57,427 --> 00:36:03,647
+Mevcut dağıtımla ilgili paket bilgilerini alıyor. O paket bilgileri uyuyor içerisinden de senin mesela
+
+225
+00:36:03,647 --> 00:36:15,647
+Update Install GCC ya da Up Install GCC dediğin zaman GCC'yi yüklemek istediğini alıyor. GCC'yi yüklemek için senin sistemine yüklenmesi gereken diğer paketlerin listesini çıkartıyor.
+
+226
+00:36:15,647 --> 00:36:25,147
+Bunların içini indiriyor ve kuruyor. Fakat Update'i ilk kurumda update edip bu repositorları güncellemezsen bir şey kuramayabilirsin.
+
+227
+00:36:25,748 --> 00:36:28,148
+sıkıntılardan bir tanesi bu olabilir.
+
+228
+00:36:28,148 --> 00:36:33,507
+Sudo, App, Install, GCC yazdığımda da bir çözüme ulaşamadım demişsin ama
+
+229
+00:36:33,507 --> 00:36:36,868
+onun yazdığın zaman ne olduğunu söylememişsin.
+
+230
+00:36:36,868 --> 00:36:38,708
+Yani bir şey bulamıyor olabilir.
+
+231
+00:36:38,800 --> 00:36:41,800
+Başka bir hata mesajı veriyor olabilir vs.
+
+232
+00:36:41,800 --> 00:36:45,800
+Öncelikle şu söylediğim mesajı lütfen yaz.
+
+233
+00:36:45,800 --> 00:36:47,800
+Sudo up get update diye.
+
+234
+00:36:47,800 --> 00:36:51,800
+Ve repository bilgisini update et.
+
+235
+00:36:51,800 --> 00:36:57,800
+Ondan sonra sudo up install gcc diyeceksin.
+
+236
+00:36:57,800 --> 00:37:02,800
+Ve bir adım son olduğunu söyleyeceksin.
+
+237
+00:37:02,800 --> 00:37:04,800
+Ondan sonra her şey çözülecek inşallah.
+
+238
+00:37:06,228 --> 00:37:12,228
+Çözülmezse de bakacağız. Sen bu arada bununla uğraşa dur diyeceğim.
+
+239
+00:37:14,228 --> 00:37:29,132
+Durumun ne olduğu konusunda bizi güncellersin. Seni beklemeyelim. Biz işimize devam edelim. Sen de bir taraftan yapmaya çalışın. Bu arada, hani geçen hafta Perşembe dersi yaparken söylemiştim.
+
+240
+00:37:29,844 --> 00:37:50,844
+Bir grup arkadaşımıza zaten konuyla ilgili ulaştı. Pazartesi günü laboratuvar yapacağız. Makinelerinizi hazır bulundurun, hazır olun diye bir önceki lafta bu GCC yüklemleri vesaire ile ilgili de konuşmuştuk. Dolayısıyla lütfen bu konularda böyle son dakikaya bırakmayın. Öncesinde yazın sorunuz, sıkıntınızı.
+
+241
+00:37:52,628 --> 00:38:04,628
+Yani tam bir net oran veremem ama büyük oranda hepinizin mesajlarına geri dönüyorum. Sadece bazen çok yoğun ve çok fazla olduğunda aradan kaçabilir. Ona da bir şey diyemiyorum.
+
+242
+00:38:06,628 --> 00:38:18,608
+Evet, şimdi buraya kadar herkes her şeyi takip etti mi? Her şey yolunda mı? Bir problem, bir sorun anlamadığınız, kafanıza takılan yere sormak istediğiniz bir şey var mı?
+
+243
+00:38:18,608 --> 00:38:22,208
+hazır. Şurası şeyden burayı da
+
+244
+00:38:22,208 --> 00:38:24,608
+zaten biraz daha görsel
+
+245
+00:38:24,608 --> 00:38:25,608
+takıntımı
+
+246
+00:38:26,408 --> 00:38:27,408
+gidereyim.
+
+247
+00:38:45,748 --> 00:38:46,467
+As-salam.
+
+248
+00:38:50,195 --> 00:38:57,195
+Evet, biraz daha şekil oldu. Evet. Canliye var mı?
+
+249
+00:38:57,195 --> 00:39:15,087
+[öğrenci] daha. Heh, [öğrenci] ne dedim? While duygusu içerisindeki, ilk print içindeki kısmını anlayamadım. Niye anlayamadın? Şey yapabilir misin? Hani anlamadığın kısmı...
+
+250
+00:39:15,088 --> 00:39:20,028
+Açıklamak adına bana bir daha net bir done sunabilir misin?
+
+251
+00:39:34,963 --> 00:39:39,364
+galiba. O zaman şöyle, şimdi.
+
+252
+00:39:42,771 --> 00:39:44,311
+Şunu kaldırayım öncelikle.
+
+253
+00:39:48,244 --> 00:39:51,604
+Aynı şeyleri yapalım.
+
+254
+00:39:54,604 --> 00:39:55,604
+Sonuç aynı.
+
+255
+00:39:56,164 --> 00:39:59,284
+Oradaki printf'in tek amacı var, bize bilgi vermek.
+
+256
+00:39:59,284 --> 00:40:04,404
+Yani her iterasyonda, ben yeni değerini ne hesapladım, eskisi neydi,
+
+257
+00:40:05,444 --> 00:40:10,244
+aradaki fark neydi, bir adım sonra ne oldu, bunları takip edebilmek.
+
+258
+00:40:10,244 --> 00:40:11,844
+Öncelikle bunu da anlaşalım.
+
+259
+00:40:12,844 --> 00:40:13,844
+Pardon.
+
+260
+00:40:14,963 --> 00:40:42,643
+Akabinde, şimdi burayı tek tek irdeleyelim. Buradaki DS tamamen benim fantezi şey olması adına, hoş gözüksün vesaire. Neden? Burada ekran çıktısı olarak ne yapıyoruz? DS1, DS2, DS3 adım adım iterasyonların numaralarını görüyoruz. İstiyorsanız ki iteration number y böyle bir şey de yazabilirsiniz.
+
+261
+00:40:42,864 --> 00:40:52,223
+Şuradaki büyük işareti tamamen benim fantezim. Hani bununla ilgili olduğunu göstermek için isterseniz buraya parantez koyun.
+
+262
+00:40:53,223 --> 00:41:00,183
+Yani bunun iterasyon sayısını gösteriyor. Sonra da benim alt değerim buraya text olarak geliyor zaten.
+
+263
+00:41:00,183 --> 00:41:05,099
+%f ile buraya bir değişken basacağımı, buraya bir değişkenin değerini koyacağımı söylüyorum.
+
+264
+00:41:06,324 --> 00:41:20,824
+Aynı satırda hani bold ne hesaplamışım, new ne hesaplamışım, aradaki fark neymiş bilgisini görebilmek adına ve okunabilir olması adına bunları, türe ile işte new iki nokta sonra yüzde hep de buraya bir değer yazılacağını söylüyorum.
+
+265
+00:41:20,824 --> 00:41:26,824
+Türe e iki nokta diyorum, sonra buraya bir değer yazılacağını söylüyorum. Sonra da yeni satıra geçeceğimi söylüyorum.
+
+266
+00:41:26,824 --> 00:41:30,824
+Şimdi iterasyonun hangi iterasyonda olduğunu takip etmek için
+
+267
+00:41:31,251 --> 00:41:54,492
+Zaten iyi diye bir değişkenim var onu kullanacağım. Olduğum değerini burada yazdırmak istiyorum. Oldu koyacağım. Bir sonraki adımda new yazdırmak istiyorum. New'u koyacağım. Terror'u yazdırmak için de en iyi koyacağım. Dolayısıyla böyle yaptığım zaman, şimdi bir daha compile edelim. Değişiklik yaptık. ExecuteEV'a yansıması için çalışabilir kod yansıması için bir daha compile etmek lazım.
+
+268
+00:41:55,059 --> 00:42:00,419
+Fantezik bir sayı olsun. 712 ya da 140
+
+269
+00:42:02,980 --> 00:42:04,659
+140, 1 olsun.
+
+270
+00:42:06,579 --> 00:42:08,139
+12 olarak zaten
+
+271
+00:42:08,459 --> 00:42:14,019
+bulduk, geçtik. Dikkat edin yazım şeklinde işte iteration number bilmem ne bilmem ne bilmem ne
+
+272
+00:42:14,019 --> 00:42:20,739
+Burada diyez ile gözüküyordu. Burada böyle gözüküyor. Yani benim nasıl olmasını istediğimle alakalı bu printf'in içi.
+
+273
+00:42:24,307 --> 00:42:32,628
+[öğrenci], teşekkürler hocam dedim. Anladın o zaman diye tahmin ediyorum. Bir sıkıntı yok. Kafaya takılan bir şey.
+
+274
+00:42:38,356 --> 00:43:00,356
+Yani bu anlattığım kısım mıydı bütün kapağına takılan? Tamam, okey, süper. Hah [öğrenci], ooo bravo. Hallettim derken şu an GCC yazdığın zaman sana şey yapıyor mu, kompany, bu kalalık yapıyor mu? Yanında dosya ismi vermezsen, öyle yapmazsan, böyle yapmazsan diye. O derece mi hallettim her şeyi?
+
+275
+00:43:04,884 --> 00:43:10,884
+Yapma yapacağını sağ ol. İyi peki. Tamam, güzel. O zaman...
+
+276
+00:43:10,884 --> 00:43:13,884
+O zaman...
+
+277
+00:43:13,884 --> 00:43:19,884
+[öğrenci], bu da senin için gelsin. Sen de bir kod yaz.
+
+278
+00:43:19,884 --> 00:43:22,884
+Ben şu ana kadar çok takip edemedim herhalde.
+
+279
+00:43:22,884 --> 00:43:25,884
+Yazdığım bir şey var mı yok mu bilemiyorum.
+
+280
+00:43:25,884 --> 00:43:28,884
+Fakat en azından...
+
+281
+00:43:28,884 --> 00:43:31,851
+Seni de şeye taşıyayım.
+
+282
+00:43:31,987 --> 00:43:35,427
+Medro olayla ilgili bir noktaya taşıyorum.
+
+283
+00:43:35,427 --> 00:43:47,027
+Ne vardı? Şey akışı vardı. En çok sevdiğiniz, hoşunuza giden diyeyim. Üçgen.
+
+284
+00:43:47,027 --> 00:43:55,907
+Hatırlarsanız üçgenlere verilen bir üçgenin cinsinin ne olduğunu söyleyen bir...
+
+285
+00:43:56,016 --> 00:44:00,376
+program oluşturalım, buna ait akışı oluşturalım diye konuşmuştuk.
+
+286
+00:44:00,376 --> 00:44:03,976
+Reangle.cd'me.
+
+287
+00:44:03,976 --> 00:44:07,416
+Şimdi burada gene dosyayı farklı kaydettim.
+
+288
+00:44:07,416 --> 00:44:08,976
+İçeriğini uçuracağım.
+
+289
+00:44:08,976 --> 00:44:14,655
+Sonra da üç tane değişken tanımlayacağım. Sizin de tahmin edeceğiniz üzere.
+
+290
+00:44:15,576 --> 00:44:16,976
+A, B,
+
+291
+00:44:17,735 --> 00:44:18,856
+ve C.
+
+292
+00:44:21,615 --> 00:44:22,615
+Enter.
+
+293
+00:44:51,860 --> 00:45:17,139
+Üç tane, bunun için hatırlarsanız ne yapıyorduk? Üç ayrı boyutumuz var. Üç ayrı boyutu alacağız. Dolayısıyla birinci, ikinci ve üçüncü boyutların girilmesini isteyeceğiz. A'yı, B'yi, C'yi girerken. Dolayısıyla biraz copy paste yardımıyla bu işi çok hızlı halledebiliriz.
+
+294
+00:45:26,452 --> 00:45:39,452
+Şimdi, o akışı hatırlıyor musunuz? Bilemiyorum ve fakat orada yapmamız gereken şey hatırlarsanız önce iki kenarı kontrol etmekte.
+
+295
+00:45:41,452 --> 00:45:51,452
+Eğer iki kenar eşitse zaten elimizde ya eşkenar ya iki. İkiz kenar bir üçgen olduğunu kabul ediyorduk. Dolayısıyla
+
+296
+00:45:53,619 --> 00:46:15,619
+olmaması durumu için tekrar kontrollere devam ediyor olmamız lazımdı. İlk A ve B birbirine eşitse bir adım sonra ne yapacağız? B ya da A fark etmez. C'ye de eşit mi kontrol ediyor olacağız? Eğer bu iki kenarda birbirine eşitse zaten
+
+297
+00:46:19,572 --> 00:46:20,572
+Nedir?
+
+298
+00:46:22,572 --> 00:46:23,572
+Neyimiz vardır?
+
+299
+00:46:26,572 --> 00:46:28,572
+Eşken, öbür tükenimiz vardır.
+
+300
+00:46:34,996 --> 00:47:01,396
+Eğer bunlar, pardon, alıştığım klavyeden biraz farklı bir klavye, o yüzden biraz sıkıntı oluyor. Eşkenar değil, ikiz kenar üçgen olacak. Eğer bir farklılık varsa yani A, B'ye eşitse ama B, C'ye eşit değilse burasıyla ikiz kenar bir üçgenimiz var demek. Bundan sonra ne yapacağız?
+
+301
+00:47:03,315 --> 00:47:05,315
+A ve B birbirine eşit değilse
+
+302
+00:47:05,315 --> 00:47:11,315
+Önce tekrar B ve C'yi kontrol ediyor olabiliriz.
+
+303
+00:47:16,371 --> 00:47:37,371
+B ve C'ye eşitse, AB'ye eşit değilken, B, C'ye eşit ise, o zaman bizim burada aslında iki üst kenar bir üçgenimiz var. Şunu şöyle kenara bir alayım. Copy paste ile nasıl yazılır isimli kursumuza hoş geldiniz gibi oldu ama.
+
+304
+00:47:47,795 --> 00:47:57,795
+Tamam. Şimdi bundan sonra ne yapacağız? A, B'ye eşit değil, B de C'ye eşit değil. Bir şey daha kontrol etmemiz gerekiyor, hatırlayın.
+
+305
+00:48:00,795 --> 00:48:02,347
+A, C'ye eşit değil.
+
+306
+00:48:09,300 --> 00:48:13,300
+Peki, A, C'ye eşit ise ne oluyor gene?
+
+307
+00:48:13,300 --> 00:48:16,300
+Gene bir iki skenar tükenimiz var.
+
+308
+00:48:21,556 --> 00:48:30,675
+Son durum, hiç kimsenin hiçbir şeye eşit olmaması durumda oluyor aslına bakarsanız. Şuraya.
+
+309
+00:48:34,036 --> 00:48:35,036
+Şişit kerar.
+
+310
+00:48:49,076 --> 00:48:57,036
+Bu kadar. Pypon ve Clang-V sıkıntısından sonra bakalım doğru yazmış mıyız kodu?
+
+311
+00:49:00,500 --> 00:49:06,500
+dcc, warning all, yani bütün warningleri aç. Ki mutlaka bir yerlerde bir hata yaptık.
+
+312
+00:49:06,500 --> 00:49:10,500
+triangle.cv yapalım.
+
+313
+00:49:12,500 --> 00:49:20,500
+Vay arkadaş yapmamışız. Dur bakalım. Sintaktik hatamız yok, lojik hatamız var mı? Onu kontrol edelim.
+
+314
+00:49:20,500 --> 00:49:23,500
+triangle çalıştırıyoruz.
+
+315
+00:49:24,148 --> 00:49:42,948
+En güzeli 3, 4, 5, vermek çeşit kenar üçgen. Bir daha çalıştıralım. 6, 6, 6, eşkenar üçgen. 4, 4, 5, ikiz kenar üçgen. 3, 4, 4, ikiz kenar üçgen.
+
+316
+00:49:43,795 --> 00:49:54,115
+olabilecek kombinasyonların bir kısmını denedik. Hiçbirinde bir sıkıntı çıkartmadı. Dolayısıyla işler yolunda varsayabiliriz.
+
+317
+00:49:54,115 --> 00:50:00,115
+Buraya kadar takip edemediğiniz bir şey var mı, bir sıkıntı var mı?
+
+318
+00:50:15,059 --> 00:50:16,059
+Güzel.
+
+319
+00:50:18,059 --> 00:50:21,059
+Şimdi gene aynı kurnazlığı yapacağım.
+
+320
+00:50:21,059 --> 00:50:26,059
+Ve daha evlatıcım evergis.cd.
+
+321
+00:50:35,539 --> 00:50:59,532
+Bu arada met.hashi boşu boşuna burada inklued ettik. Dolayısıyla o gereksizdir. Biz bir an önce göründükte Too much copy paste sıkıntılarından bir tanesi. Şimdi yapacağımız şey ne? Bu sefer de ortalama hesabı işini yapalım derken şeyi kastediyorum. Verilen bir dizinin ortalamasını bulan programdan bahsediyoruz.
+
+322
+00:50:59,956 --> 00:51:22,700
+Şimdi burada birkaç şeyi bir arada kullanacağız. Adım adım gidelim. Neye ihtiyacımız var? Bir diziye ihtiyacımız var. Dizi kaç elemanlı olacak? En elemanlı olacak. Bu dizinin elemanları içerisinde bir tarif bir şekilde ilerleyeceğiz. Bir for döngüsü ile ilerleyeceğiz. Dolayısıyla o for döngüsü için bir döngü değişkenli ihtiyacımız var.
+
+323
+00:51:22,708 --> 00:51:37,908
+Onun beşinde neye ihtiyacımız var? Bir diziye ihtiyacımız var. Dizinin orijinal bir kalp ne kadar elemana sahip olacağını bilmiyoruz. Ne zaman öğreneceğiz? Runtime ile öğreneceğiz. Yani kullanıcı bize boyut bilgisine girdikten sonra öğreneceğiz.
+
+324
+00:51:37,908 --> 00:51:45,428
+Ve fakat o zamana kadar kullanıcının gireceğinden daha büyük olduğunu düşündüğümüz bir dizimizin olması lazım.
+
+325
+00:51:45,492 --> 00:52:03,172
+Şimdi burada değişkenimizin boyutunu stik olarak belirliyoruz. Bunu dinamik de yapabilirsiniz. Ve fakat bunu dinamik yapabilmek için dinamik memori adukasyonunu görmüş, çözmüş ve biliyor olmanız lazım. Onu bilene kadar genel varsayımımız şu olacak, onu öğrenene kadar.
+
+326
+00:52:03,764 --> 00:52:23,764
+şeyiniz var, belli büyüklükte bir diziniz var ve dışarıdan girilen eleman sayısı o dizinin boyutundan çok daha küçük. Ona göre değişken tanımlıyor olacağız. Ortalama hesabı yapacağız. Yani bir average değerimiz olması lazım. Onu da ilklendirelim. Aha.
+
+327
+00:52:26,804 --> 00:52:32,164
+Şimdi ne yapıyoruz? Öncelikle akışımıza uygun şekilde
+
+328
+00:52:47,380 --> 00:52:50,660
+ne yapacağız?
+
+329
+00:52:50,660 --> 00:52:53,960
+d
+
+330
+00:52:53,960 --> 00:52:55,320
+nereye okuyacağız?
+
+331
+00:52:55,320 --> 00:52:59,520
+elemanı, bununla dizilin eleman sayısını okuduk şu ana kadar sadece.
+
+332
+00:53:01,360 --> 00:53:02,940
+bundan sonra ne yapacağız?
+
+333
+00:53:02,940 --> 00:53:07,100
+şimdi i eşittir sıfırdan i
+
+334
+00:53:48,692 --> 00:53:57,192
+%100'ı nereye okunacak? Dizinin elemanını okunacak.
+
+335
+00:53:59,491 --> 00:54:00,692
+Sonra ne yapacağız?
+
+336
+00:54:42,387 --> 00:54:48,387
+Şimdi, bakalım, bakalım bakalım, kompa yödebiliyor muyuz? Öncelikle.
+
+337
+00:54:51,764 --> 00:55:18,764
+kompa yetti. Bakalım düzgün çalışıyor mu? Average kaç eleman olsun? Beş eleman olsun başlangıç. Bir, iki, üç, dört, beş. Hmm. Bir hatamız var. Nedir o hatamız? Average değerini hesapladık. Nasıl hesapladık? Bütün dizinin elemanlarını topladık. AVG'yi ve fakat AVG'yi
+
+338
+00:55:18,996 --> 00:55:25,876
+En son ne yapıyor olmamız lazımdı? N'e bölüyor olmamız lazımdı. Bölmemişiz. Şuraya bir daha compile ediyoruz.
+
+339
+00:55:25,876 --> 00:55:35,396
+5, 1, 2, 3, 4, 5, 3. Şu an daha mantıklı bir sonuç elde ediyoruz. Şimdi, bu yazdığımız koda geri döneceğiz.
+
+340
+00:55:35,396 --> 00:55:39,795
+Hem bazı şeyleri diye isteyeceğiz, hem de bazı şeyleri tartışacağız, geri deneyeceğiz. 1.
+
+341
+00:55:46,931 --> 00:55:49,811
+Döngü oluştururken, for döngüsü oluştururken hep
+
+342
+00:55:49,811 --> 00:55:53,651
+Döngü değişkenini birden başlatıyoruz.
+
+343
+00:55:53,748 --> 00:56:19,692
+ve fakat burada dikkat edin, hem burada hem burada bu döngü değişkeni sıfırdan başlattım. Akışta birden başlattığım şey burada niye sıfırda başlattım? Çünkü akış programlama dilinden bağımsız bir orta. C ise bir programlama dilinden ve kendi kuralları var. Nedir o kurallar? Mesela dizinin sıfırıncı, dizinin elemanları sıfırdan başlıyor, birden başlanıyor. Dolayısıyla ben sıfırıncı indekse ulaşabilmek için döngümü sıfırdan başlatarak yaptım.
+
+344
+00:56:21,043 --> 00:56:46,483
+Bu şekilde kurdu adım. Ha, bunu birden başlatıp burada indiz üzerinde hesap yapabilirsiniz, başka şeyler yapabilirsiniz vs. ama bunların hepsi gereksiz olur. Sadece akışta birden başlayıp çizdiğiniz, ene kadar çizdiğiniz yapıyı buraya da ona uygun şekilde aktarıyor olmalısınız. Uygunluktan kastım diye. Akışta birden başlayıp ene kadar gittiğiniz zaman aslında toplam en adım atmış olursunuz. Burada ise ne yapıyoruz?
+
+345
+00:56:46,675 --> 00:57:08,675
+uyarlarken i sıfırdan başlayacağı için i'nin n'den küçük olmasını işaretten koyuyoruz. Dolayısıyla i n olduğunda zaten bu döngüden çıkmış olacak. Yani elinci adım için işlemi yapmayacak. n-1'de duracak. Fakat birden değil sıfırdan başladığı için de toplam n adımı gitmiş olacak. Tamam mı? Burası for döngüsünün adaptasyonuyla ilgili. Bir diğer kısım.
+
+346
+00:57:09,023 --> 00:57:14,783
+Şu, kod içerisinde bu ve benzeri sabitlerin olmasını istemeyiz.
+
+347
+00:57:19,891 --> 00:57:30,691
+Buraya bir makro tanımlamak ve daha doğrusu yukarıda bir makro tanımlamak, max size'ı diyen ve ona bir değer vermek her zaman için daha iyidir.
+
+348
+00:57:30,691 --> 00:57:44,491
+Böylece bu max size'ı başka yerlerde başka yerlerde bu kod içerisinde bir daha kullanmanız gerektiğinde ve sonra da değiştirme ihtiyacı olduğunda sadece tek bir noktadan değiştirir, tek bir noktadan maintain edebilirsiniz.
+
+349
+00:57:44,884 --> 00:57:48,443
+Şimdi bu değişiklikleri yaptıktan sonra kodumuzu bir daha
+
+350
+00:57:49,723 --> 00:57:52,804
+kompile ediyoruz. Bu sefer 10 bölüm.
+
+351
+00:57:52,804 --> 00:57:56,364
+1, 2, 3, 4, 5, 6, 7, 8, 9,
+
+352
+00:57:58,163 --> 00:57:59,163
+5, 50.
+
+353
+00:58:06,996 --> 00:58:24,275
+Şimdi soru gelmiş arada. Bir şekilde bir sıkıntı var. Zoom beni uyarmıyor. Öbür ekranda çalışırken, arada döndüğüm zaman görüyorum. [öğrenci] bir sorusu var. Neden Average 0.0 dedik? Float Average eşittir 0 desek olmaz mı? Olur.
+
+354
+00:58:24,275 --> 00:58:31,476
+Yani bu Float bir değişken. Buna zaten sıfır atanızsanız da otomatikman 0.0 diyecek. Ve fakat
+
+355
+00:58:31,539 --> 00:58:51,779
+hani float olduğu için, benim de canım öyle istediği için 0.0 dedim. Siz isterseniz şey yapın, sadece 0 yıkın. Bir şey değişmeyecek. Öyle söyleyeyim. Teknik olarak bir farkı yok. Teknik olarak tek farkı şu.
+
+356
+00:58:54,003 --> 00:59:08,203
+şeyi anlatmıştım, veri tiplerinin ve veri tiplerinin bir arada kullanılması noktasında şunu anlatmıştım. Bir hiyerarji vardı sunumu hatırlarsanız slide'ları. En altta int var, sonra yükseliyor long double'a kadar gidiyor.
+
+357
+00:59:10,603 --> 00:59:11,603
+Şimdi
+
+358
+00:59:14,603 --> 00:59:17,804
+Dolayısıyla AVG eşittir 0 dediğimiz zaman
+
+359
+00:59:18,452 --> 00:59:25,252
+Yani şu an şurada gördüğünüz şekilde dediğiniz zaman, siz otomatikman Compiler'a şunu söylüyorsunuz aslında.
+
+360
+00:59:25,252 --> 00:59:37,092
+Bir integer'ı bir float'a atacağım. E bunu yapmak için adam önce upscale edecek, boşu boşuna. Ama ben 0.0 yazdığım zaman iki tarafta şöyle bir şey var.
+
+361
+00:59:37,092 --> 00:59:44,132
+Float diye atacak. Aradaki fark var. Hatta aslında baktığımız zaman burayı double olarak görecek. Öbür float.
+
+362
+00:59:44,244 --> 00:59:51,603
+Recizion'dan dolayı gene bir şeylere 40-Jak edecek ama daha hızlı olabilir. Ama orada takılacağımız bir nokta değil. Şimdi
+
+363
+00:59:54,884 --> 00:59:56,884
+Bir soru daha vardı, bir saniye.
+
+364
+00:59:58,804 --> 01:00:09,204
+[öğrenci], neden iki farklı for döngüsü kullandık? Çünkü iki farklı for döngüsü kullanmanız gerekiyor. Şimdi burada yaptığımız iş temel olarak
+
+365
+01:00:09,907 --> 01:00:35,711
+Birincisinde diziyi okumak. İkincisinde ortalamayı hesaplamak. Birincisini okuma işlemi için, ikincisini ortalamayı hesaplamak için kullanıyoruz. Aslında sadece toplamayı yapmak için. For kısmı okumak. Sonrasını diliyoruz. Bunları özellikle akışta da birbirinden ayrı kullanıyoruz. Çünkü şu alışkanlığı ediniyor olmanız lazım. Evet, burada diziye böyle tık tık tık okuma yaparken
+
+366
+01:00:35,711 --> 01:00:39,472
+Burada bu toplama işlemi de bir taraftan yapabilirsiniz. Ama her zaman
+
+367
+01:00:40,192 --> 01:00:43,952
+inputunuz o şekilde gelmek zorunda değil.
+
+368
+01:00:45,231 --> 01:00:51,392
+Nasıl diyeyim, bulk halinde bir device'dan ya da dosyadan ya da benzeri noktadan okuma yapıyor olabilirsiniz.
+
+369
+01:00:51,392 --> 01:00:54,112
+Böyle bir durumda o işi
+
+370
+01:00:54,672 --> 01:00:56,672
+şey yapmak nedir o?
+
+371
+01:00:57,876 --> 01:01:11,876
+Böyle adım adım yapmak size zaman kazandırmaz, tam tersi zaman kaybettirir. Dolayısıyla bu bir alışkanlık. Bu ikisinin bir arada olmasına gerek yok. Ayrı ayrı yapabilirsiniz. Bunu görün diye böyle yapabilirsiniz.
+
+372
+01:01:13,876 --> 01:01:21,876
+[öğrenci] ve [öğrenci] cevaplarını aldılar diye umutuydu. Geri dönüş yapmadıkları için özellikle [öğrenci] ve [öğrenci]'in bir daha geri verdim zaten.
+
+373
+01:01:28,659 --> 01:01:40,659
+Şimdi, buraya kadar başka sorusu olan var mı? Kafasına takılan, tamamdır rahmet, sağ ol. Kafasına takılan bir şey olan var mı? Bir şey sormak isteyen var mı?
+
+374
+01:01:54,452 --> 01:01:55,732
+Tamam, güzel.
+
+375
+01:01:57,272 --> 01:02:01,872
+Kimse bir şey sormadığına göre, by default hani...
+
+376
+01:02:03,152 --> 01:02:05,212
+Ne yapalım? Ha, [öğrenci].
+
+377
+01:02:05,712 --> 01:02:08,532
+Tamam, ben cümlem tamamladım. Sonra [öğrenci]'inkine cevap veriyorum.
+
+378
+01:02:08,792 --> 01:02:14,932
+Size özellikle hani şeyi serbest bırakıyorum. Anlatım süresinde istediğiniz sorabilirsiniz vs.
+
+379
+01:02:14,932 --> 01:02:19,412
+Sonunda da hani kalkıp sormak istediğiniz bir şey var mı diye soruyorum.
+
+380
+01:02:19,519 --> 01:02:35,519
+Ve fakat bunların hepsi sonra sorular bittiğinde ve kimse başka bir şey sormadığında her şeyin anlaşıldığında, her şeyin net olduğunu otomatikman düşünmek zorunda kalıyorum. Her ne kadar güreyim ona inanmasa da. Dolayısıyla varsa kafanıza takılan bir şey rahat rahat sorun.
+
+381
+01:02:35,519 --> 01:02:37,519
+Yazmak istedik.
+
+382
+01:02:37,519 --> 01:02:45,519
+Sıfırıncı elementler ne? Çok basit emir. Yani şunu demek istiyorsan çok basit tabi. Doğru anladıysam seni.
+
+383
+01:02:47,507 --> 01:02:51,187
+D diyoruz ya, D yedi İ ile yazıyoruz.
+
+384
+01:02:51,187 --> 01:02:55,027
+I artı bir dersek buraya
+
+385
+01:02:55,027 --> 01:03:03,827
+5 gireceğim, tekrar tekrar çok uzun yapmayayım diye
+
+386
+01:03:03,827 --> 01:03:10,067
+Yani birinci eleman, ikinci eleman, üçüncü eleman, dördüncü eleman, beşinci eleman hepsini bir arttırmış olursun.
+
+387
+01:03:10,067 --> 01:03:12,067
+Evet ve
+
+388
+01:03:14,900 --> 01:03:21,620
+şey yaparız yani, soru buydu herhalde, tamam doğru anlayalım soruyu, başka bir yer değildi.
+
+389
+01:03:21,620 --> 01:03:23,620
+aha, bir dakika.
+
+390
+01:03:23,620 --> 01:03:25,620
+mesela bu gibi programlar...
+
+391
+01:03:25,620 --> 01:03:30,340
+... kontrolümüz gerek yok.
+
+392
+01:03:30,867 --> 01:03:49,867
+Yani şu noktada değil, öyle söyleyeyim. Mesela şeyi de beklemiyordum sizden, beklemiyorum. Bir önceki örnekle. Yani girilen üçgenin üçgen olup olmadığını da kontrol etmenizi beklemiyorum. Yani 1-1-15 değerleri üçgen mi değil midir ya da...
+
+393
+01:03:50,867 --> 01:03:56,367
+Üç, beş, yirmi, yedi üçgen midir, değil midir? Bunları kontrol etmiyoruz.
+
+394
+01:03:56,367 --> 01:04:02,367
+Tamam mı? Ve fakat hani gerçek hayatta birçok şeyi kontrol etmeniz gerekiyor. Bunların hepsini kontrol etmeniz gerekiyor.
+
+395
+01:04:02,367 --> 01:04:17,867
+Ama bu şu anda hani net olarak ya da mantık olarak aslında beklentiğimiz şey yönünde ana soruna yönelmek şeklinde. Tamam mı?
+
+396
+01:04:32,019 --> 01:04:37,779
+Bir saniye, çok hızlı ilerliyor. [öğrenci]'ınkini tamamladık. Hocam, float yapısı mı? Double yapısı mı?
+
+397
+01:04:41,748 --> 01:04:44,187
+ve sida, bari de pot.
+
+398
+01:04:52,179 --> 01:04:54,179
+şey nedir o?
+
+399
+01:04:56,179 --> 01:04:57,179
+spesifikasyon,
+
+400
+01:04:57,979 --> 01:05:00,179
+sabit, yani real değerler,
+
+401
+01:05:00,179 --> 01:05:03,179
+real ve sabit olan değerleri için double der.
+
+402
+01:05:03,215 --> 01:05:21,456
+Dolayısıyla siz bunu float'a atarken bunu downgrade eder. Ha, implementasyon spesifik olarak bir compiler kalkar, ben sabitleri double değil float şey yaparım derse, bu ayrı bir konu. O bizi ilgilendiren ya da bağlayan bir konu değil.
+
+403
+01:05:21,456 --> 01:05:30,795
+Hocam main içindeki void inandı oraya yazmasa kullanım. Şimdi main içerisindeki void inandı kastı şu galiba şey, [öğrenci]'ın.
+
+404
+01:05:31,603 --> 01:05:33,603
+Şimdi bu şu anlama geliyor.
+
+405
+01:05:33,603 --> 01:05:40,603
+Bakın printf bir fonksiyon ve bu fonksiyonla parantez açtıktan sonra içerisine parametre veriyorsunuz.
+
+406
+01:05:40,603 --> 01:05:47,603
+Nasıl parametre veriyorsunuz? Bazen sadece tek bir parametre veriyorsunuz. Çift tırnakla bulunduğumuz bir...
+
+407
+01:05:48,820 --> 01:06:00,220
+Formatstring veriyoruz. Bazen bir Formatstring veriyoruz. Formatstring'in içerisinde eğer bir FormatSpecif al geçiyorsa onunla ilgili değişikliği de veriyoruz. Yani iki parametre veriyoruz.
+
+408
+01:06:00,220 --> 01:06:06,619
+Main'e de benzer şekilde parametre aktarabilirsiniz. Nasıl aktarabilirsiniz?
+
+409
+01:06:15,572 --> 01:06:41,732
+şeklinde aktarabilirsiniz. Ve fakat bu şu anın konusu değil. Bunu ne zaman, nereden aktarırsınız, nasıl kullanırsınız, ne yaparsınız? Ayrı konular. Şu an oralara girmeyeceğim. Oralar şu anın konusu değil. Ve fakat buraya eğer parametre aktarmayacaksanız şey olan, makul ve mantıklı olan void yazmaz. Void'u hiç yazmazsanız compiler
+
+410
+01:06:42,036 --> 01:06:47,155
+Sizin yerinize oranın void olduğunu düşünüp işine devam edecektir.
+
+411
+01:06:47,155 --> 01:06:57,655
+5, 1, 6, 2, 3, 4, 5 ve aynı iş olacaktır. Bir sıkıntı çıkmayacaktır.
+
+412
+01:07:01,235 --> 01:07:04,916
+[öğrenci]'a cevap verdiydim. [öğrenci] cevap verdi.
+
+413
+01:07:06,356 --> 01:07:08,916
+[öğrenci] niye aynı soruyu iki kere yazıyorsun?
+
+414
+01:07:13,556 --> 01:07:16,275
+Kaldı ki ben bunu zaten cevapladım.
+
+415
+01:07:17,155 --> 01:07:18,356
+Anladım.
+
+416
+01:07:19,916 --> 01:07:22,115
+Yani dinlemeniz lazım arkadaşlar.
+
+417
+01:07:22,115 --> 01:07:25,956
+Yani sonuçta buradaki tek kişi siz değilsiniz.
+
+418
+01:07:25,956 --> 01:07:27,755
+Hani eee...
+
+419
+01:07:28,556 --> 01:07:30,556
+Sorular yazıldıkça
+
+420
+01:07:30,795 --> 01:07:33,956
+her birine tek tek cevap veriyorum. Bir sırayla cevap veriyorum.
+
+421
+01:07:33,956 --> 01:07:35,956
+Dolayısıyla hani bu şekilde...
+
+422
+01:07:36,079 --> 01:07:56,139
+Şey yapmayın, chat'i kirletmeyin ki, hani ben en azından kaldığım yeri daha rahat takip edebileyim. Olur da ben soruyu atlarsam, hani bu da hani bir dakika içerisinde olmasın. Biraz zaman verin, üç dakika, beş dakika gibi hani biraz daha ileride şey yapın, hatırlatın.
+
+423
+01:07:57,811 --> 01:08:04,211
+[öğrenci], sen de cevabını aldın diye tahmin ediyorum. Okey, var mı başka sorusu olan gençler?
+
+424
+01:08:12,211 --> 01:08:22,211
+O zaman her şey tamam mı? Hocam önce en diğerini alın. Hayır yapamazsınız. Çok net demiş. Öyle bir şey olmaz.
+
+425
+01:08:24,211 --> 01:08:39,887
+Sihlim çalışma prensibine aykırıdır ve fakat bunu yapan, bunun çalıştığını iddia eden, ne olacak canım oluyor diyen arkadaşlarınız çıkacak. Onlara inanmayın.
+
+426
+01:08:39,887 --> 01:08:47,647
+Hocanıza inanın. Uzun açıklamanın kısası olmaz. Neden olmaz? Şöyle ki…
+
+427
+01:08:51,507 --> 01:08:59,787
+n değerini runtime'da alıyorsunuz. Tamam mı? Yani şimdi [öğrenci]'nın sorusuna cevaplıyorum.
+
+428
+01:08:59,787 --> 01:09:11,227
+Şunu diyor [öğrenci]. Bir dakika, hatta bunu hiç şey yapmayayım. Bayağı saygıyız. [öğrenci] diyor ki...
+
+429
+01:09:18,163 --> 01:09:27,603
+Bu da olmasın. Bunlar kalsın. Şuraya şöyle yazsam. Bu iş olur mu olmaz mı? Değil mi? Doğru anladın mı?
+
+430
+01:09:27,603 --> 01:09:33,203
+Hocam önce kullanıcından en değerini istedikten sonra ben de geçerim.
+
+431
+01:09:33,203 --> 01:09:36,884
+Tamam, peki. Okey, pardon. Düzeltiyorum.
+
+432
+01:09:36,884 --> 01:09:41,283
+Ya, [öğrenci] diyor ki...
+
+433
+01:09:50,260 --> 01:10:17,068
+Oldu mu [öğrenci]? Evet hocam, bunu demek istedim. Şimdi bir, her şeyden önce main fonksiyonu içerisindesiniz. Her bir fonksiyonun içerisinde makul ve mantıklı olan takip edilebilirliği ve anlaşılabilirliği sağlayacak olan şey şudur. Önce değişkenliğinizi tanımlarsınız, sonra statement tanımlarsınız. Böyle statement diyerek sonra değişkenli tanımlamaya kalkarsanız sıkıntıdır.
+
+434
+01:10:17,171 --> 01:10:43,171
+Bir diğer şey. Şimdi standard C bunu desteklemez ve bu çalışmaz. Çalıştığını sanırsınız ama aslında çalışmaz, yanlış çalışır. Çünkü bu en değerini runtime'da alıyorsunuz. Ancak ve lakin bu dizinin boyutunun compilation sırasında belirtilmesini istiyorsunuz. Dolayısıyla bu iş olmaz, yürümez. Nasıl yürür?
+
+435
+01:10:43,475 --> 01:10:57,876
+Şöyle yürür, yapmamanız gereken bir ton şeyi art arda yaparsanız yürür. Misal, bu C programını kalkıp bir C++ programıymış gibi compile ederseniz yürür.
+
+436
+01:11:01,619 --> 01:11:05,300
+Ve fakat bizim derdimiz ve şeyimiz bu değil.
+
+437
+01:11:05,300 --> 01:11:22,020
+Bunun detayını daha sonra yeri geldiğinde, yapısal programda, BBGK'de, belki de bu dersin son haftasında vesaire, sivriyle ilgili daha etmez şeylerle ilgili biraz değinirken, konuşurken anlatırım. Ama şu an yeri değil.
+
+438
+01:11:22,020 --> 01:11:25,619
+Ve fakat, ben özetimi söyleyeyim.
+
+439
+01:11:25,760 --> 01:11:44,960
+Çok da uzatmadan. Bu ve benzeri şeyler gördüğüm zaman otomatikman hiçbir şey olmadan, devamı vesaires önemli olmadan, o artık sınav kıyıdımı, laboratuvar uygulaması mı, ödeyeyim, ne olduğu önemli değil. Alacağınız not sıfırdır.
+
+440
+01:11:46,036 --> 01:11:57,235
+Şimdi bu adam hani temel olarak en basit yapması gereken şeyi bilmiyor ya da anlamamış ya da neyin ne olduğu konusunda fikir sahibi değil düşüncesi yerleşiyor.
+
+441
+01:12:21,268 --> 01:12:46,768
+Evet. Okey. Yani dediğim gibi şu an çok net anlamamış olabilirsin belli kısımlarını. Çünkü şu anın konusu değil. Hani derdimiz uç noktalar ya da C implementasyonu ya da işletim sistemi ya da compiler değil. Bu sorduğun soru bunların hepsinin ucundan kenarından kapsayan konular. Dolayısıyla şu an detayına girmek için çok erken.
+
+442
+01:12:49,460 --> 01:12:58,819
+See the four döngüsü canım istediğin yerden başlar. See the four döngüsü nereden başlar diye bir soru olmaz. İstediğin yerden başlar. İstersen on beş bin'den başlar zaten.
+
+443
+01:12:58,819 --> 01:13:13,699
+Dizinin indeksinin sıfırdan başlaması diye bir durum var. Dolayısıyla bir döngü içerisinde diziyle ilgili bir şeyler yapıyorsan, ona uyumlu şekilde başlıyor ve
+
+444
+01:13:19,220 --> 01:13:23,340
+Devam ediyor olman lazım. Sorunun cevabını verdim.
+
+445
+01:13:24,340 --> 01:13:25,620
+Diye düşünüyorum.
+
+446
+01:13:27,420 --> 01:13:33,100
+Ve fakat hani sizden daha önce de rica etmiştim. Bir daha rica ediyorum. Ama artık son kez rica ediyorum.
+
+447
+01:13:34,579 --> 01:13:44,620
+Burası hani Twitter değil, Whatsapp değil, arkadaşlarınızla geyik muhabbet yaptığınız herhangi bir chat ortamı değil. Sorularınızı
+
+448
+01:13:46,355 --> 01:14:00,355
+Bir şey sinisilesi içerisinde, mantık sinisilesi içerisinde, parça parça pinçik halde değil, tam ve bütün şekilde net olarak ve net ifade etmeye çalıştığımızla uyumlu şekilde sorunlu.
+
+449
+01:14:03,315 --> 01:14:31,315
+Tamam mı? Hani kavramları düzgün ve yerinde kullanmak önemli. Bunlarla ilgili her hata yaptığınızda tekrar düzelteceğim. Bundan da yılmayacağım. Sizin de hani yılmadan bunları dinleyip kendinizi düzeltiyor olmanız lazım. Ve fakat hiç düzeltmeden aynen devam ediyor olmanızın bir esprisi yok. Özür dilemenin de bir esprisi yok. Hani çünkü özür dileme beklentisiyle, özür dileme beklentisiyle bunu söylemiyorum.
+
+450
+01:14:31,315 --> 01:14:56,036
+Bunu hani bir alışkanlık haline getirin, düzgün şekilde iletişim kurun, ne demek istediğinizi net şekilde ifade edebilin, bunu istiyorum. Ama sadece kendim için değil, bundan sonraki derslerinizde de, bundan sonraki profesyonel yaşamınızda da bu önemli olacak. Çünkü çok karmaşık kavramlar üzerinde, daha doğrusu alt tarafta birinden fazla şeyi ifade eden…
+
+451
+01:14:56,692 --> 01:15:17,372
+Oldukça karmaşık kavramları kullanarak anlaşacaksınız karşınızdaki. Dolayısıyla o kavramı yanlış kullanmanız demek, birbirinizi yanlış anlamanız demek. Yanlış anladığınız zaman da ne oluyor? Bir kar topu etkisiyle çiğ gibi birbirine saçma sapan durumlar oluşabiliyor. Tekrar ediyorum.
+
+452
+01:15:17,747 --> 01:15:25,247
+C programlama dilinde döngüler istediğiniz yerden başlar, istediğiniz yer de gider. Dizilerin indisi ise sıfırdan başlar.
+
+453
+01:15:25,247 --> 01:15:39,247
+Dolayısıyla, eğer dizi ile ilgili bir şey yapacaksanız, bu fordönüksünü ona göre oluşturmanız, düzenlemeniz gerekir. Tamam mı?
+
+454
+01:15:39,247 --> 01:15:42,247
+Başka bir sorunuz var mı gençler?
+
+455
+01:16:01,011 --> 01:16:27,332
+O zaman görünen o ki sorusu olan yok. Sorusu olan yoksa bu yöntemini burada keseceğim. Bu yeterli. Şimdi bundan sonra aslında şunları yapıyor olmanız lazım. Bir, üç aşağı beş yukarı bir akış içerisinde kullandığımız bütün ekipmanı ekipmanı demeyeyim de bütün sembolü yani for'u, while'ı.
+
+456
+01:16:27,764 --> 01:16:40,764
+İki kontrol akışı içerisindeki kullanımını gördüğünüz gibi uygulama noktasında. Veri tipinin nasıl tanımlayacağı, değişkenin nasıl tanımlayacağı şeyin...
+
+457
+01:16:41,971 --> 01:17:08,971
+Bir fonksiyonun nasıl yazılacağını, main fonksiyonunun, bu programı nasıl değerleyeceğiniz vesaire hepsini konuşmuş olduk. Dolayısıyla bundan sonra yapmanız gereken kadar hayata geçirmeniz gereken şey şu. Elimizde şu ana kadar çizdiğimiz bir grup akış var. O akışları alacaksınız, C'de kod haline getireceksiniz. Yazmayı deneyeceksiniz, compile etmeyi deneyeceksiniz, çalıştıracaksınız, kullanmayı deneyeceksiniz.
+
+458
+01:17:10,355 --> 01:17:16,855
+Buralardaki hataları ve sıkıntıları göreceksiniz, düzeltmek için uğraşacaksınız, baktığınız olmayı soru soracaksınız. Tamam mı?
+
+459
+01:17:18,355 --> 01:17:25,855
+Bu da sizin bu lap sonrasındaki pratiğiniz. Tamam mı?
+
+460
+01:17:26,355 --> 01:17:36,855
+O zaman hala kimseden bir soru olmadığına göre her şeyin tamam olduğunu düşünüyorum. Paylaşımı kapatayım. Hepinize iyi günler. Parşambir günü görüşmek üzere gençler.
+
+461
+01:17:37,811 --> 01:17:39,631
+İzlíkis
+
+462
+01:17:47,764 --> 01:17:49,264
+Tamam, buzomun, kapatür.

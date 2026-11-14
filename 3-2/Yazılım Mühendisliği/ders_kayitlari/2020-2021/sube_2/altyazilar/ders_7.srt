@@ -1,0 +1,1919 @@
+1
+00:13:35,860 --> 00:13:42,000
+Evet günaydın arkadaşlar. Şuna bakıyorum bakalım kaç kişiyiz? Ben dahil 32 kişi.
+
+2
+00:13:49,107 --> 00:13:50,107
+Şimdi...
+
+3
+00:13:54,772 --> 00:13:57,932
+Bir anket yapmak isteyeceğim önce sizinle.
+
+4
+00:13:59,532 --> 00:14:01,332
+Şimdi şu açayım.
+
+5
+00:14:02,812 --> 00:14:04,412
+Bir yandan da şunu yapayım şimdi.
+
+6
+00:15:09,235 --> 00:15:10,775
+Mısayga, yazılım neştirmalık.
+
+7
+00:15:37,203 --> 00:15:56,703
+Evet arkadaşlar, şimdi önce sizden şu ufak anketi bir yanıtlanmanızı rica ediyorum. Bunun için bir iki dakika veriyorum. Ondan sonra çalışmamıza başlayacağız.
+
+8
+00:17:12,147 --> 00:17:16,807
+Evet, bakalım. İki dakika olmuş ben bu soruyu sorayım. Biraz daha ekleyelim.
+
+9
+00:17:37,523 --> 00:17:42,883
+Bu arada sonra sizlerden de alacağım için bir dakika.
+
+10
+00:17:47,443 --> 00:18:12,364
+Şimdilik bir stop share yapacağım arkadaşlar. Sonuçlara bir bakacağım. 23 oy gelmiş. Biraz daha oy gelebilir aslında. Tekrar yollayayım. Belki yeni gelen arkadaşlarım olmuştur bu sırada. Biraz da geç gelenler görmemiş olabilirler.
+
+11
+00:18:13,076 --> 00:18:16,256
+Anketi tekrar linkini gönderdim.
+
+12
+00:18:16,496 --> 00:18:17,336
+Biraz tanıt bakalım.
+
+13
+00:18:22,836 --> 00:18:24,956
+Evet, tutan biraz daha artıyor biraz.
+
+14
+00:18:45,203 --> 00:18:49,963
+Tamam, peki güzel. O zaman konusları şimdi bir açalım bakalım.
+
+15
+00:18:55,380 --> 00:19:06,400
+Evet, peki. Sonuç olarak o dosya üstünde daha önceden çalışan arkadaşımın sırası çok az. Bu nedenle uygulamamızı dosya üzerinden yapacağız.
+
+16
+00:19:07,316 --> 00:19:34,635
+Şimdi bugün arkadaşlar bu vize öncesinde bir alıştırma niteliği taşıyacak bugünkü çalışmamız. Üstten konuyu duyuran bir mesajı dün atmıştım. Ondan önce benim bu mesajı atmamdan önce hocam bu çarşamba ne yapacağız falan diye soru soran arkadaşlarıma teşekkür ederim. Onlar genel duyuru yapmanın yerinde olacağını ayrıca hatırlattılar. Kafamdaydı ama şuralarda o kadar çok şey var ki bazı şeyleri atlayabiliyorum.
+
+17
+00:19:35,604 --> 00:19:48,004
+Şimdi haftaya yapacağımız sınavda, sınavımız genelde 3 sorudan oluşuyor. Sınav formatından bahsedeyim biraz. Genelde 3 sorudan oluşuyor.
+
+18
+00:19:48,004 --> 00:19:59,963
+2 soru, 25'e puanlık 2 soru teorik kısımdan diyelim. Ders notlarını çalışarak, oradaki konuları anlayarak, hatırlayarak rahatlıkla yapabileceğiniz sorular.
+
+19
+00:20:00,000 --> 00:20:17,660
+Yanıtlayabileceğiniz soru lazımlar. Yalnız tabii o soruları anlatırken ben ders sırasında anlatığım konularda bazı şeyleri özellikle vurguluyordum, anlatıyordum. O konuları değmeye atlamazsanız eğer genelde not alıyorsunuz o kısımdan, teori kısımdan.
+
+20
+00:20:17,660 --> 00:20:28,000
+Uygulama kısmında ise işte bugün labda yapacağımız gibi konular olacak. O da tek başına bir 50 puanlık soru olacak. Burada yapacağımız şeyler önce...
+
+21
+00:20:28,000 --> 00:20:49,380
+Önce şurada, aslında dersle yaptığımız Next Gen Post örneği gibi yapacağımız şey o aslında. Doğal dille yazılmış bir gereksinimler belgesi vereceğiz. Bu gereksinimler belgesini verdikten sonra üç tane şık soracağız.
+
+22
+00:20:52,915 --> 00:21:00,875
+Bir sistemdeki use case'leri belirten ve aradığınız ilişkileri gösteren bir UML use case çiziması çizimiz.
+
+23
+00:21:01,940 --> 00:21:21,620
+Ve açıkçası bu biraz daha ayrıntılı bir içerik. Burada bizden fazla use case tabii ki keşfedip şifrasını çizebileceksiniz. Bu use case'lerden örneğin nedir? Şurada ne diyoruz mesela? Diyeceğiz ki yeni gelen süreçlerle ilgili ilişkili kullanım senaryosunu yazın diyeceğiz.
+
+24
+00:21:29,940 --> 00:21:37,600
+Giriş bölümünün alt maddeleri, birinci reaktör, ilgiler, ilgi alanları, ön koşullar, son koşullar bölümleri olan.
+
+25
+00:21:37,600 --> 00:21:41,759
+Ana senaryoda, ana senaryonun adımlarını mutlaka alınmanlandırıldığı.
+
+26
+00:21:42,320 --> 00:21:50,140
+Alternatif senaryolar kısmında ise yine ana senaryolaya da referans edebilecek şekilde alınmanlandırma yöntemi vardı.
+
+27
+00:21:50,400 --> 00:21:51,940
+Şimdi bu uyduğunu da hatırlarız.
+
+28
+00:21:52,320 --> 00:21:57,880
+Onu da içeridecek şekilde, en az bir alternatif senaryonu içeridecek şekilde senaryonuzu yazıyorsunuz.
+
+29
+00:21:57,940 --> 00:21:59,539
+Sonra C şıkkıda işte
+
+30
+00:22:02,996 --> 00:22:10,096
+Bu işte gereksinimlerden yine yola çıkarak bir UML sınıf çaması şeklinde alan modelini oluşturunuz diyeceğiz.
+
+31
+00:22:10,476 --> 00:22:14,796
+Onda da hatırlarsanız bir UML sınıf çaması sadece metotlar yok.
+
+32
+00:22:14,956 --> 00:22:18,756
+Onun dışında her şey var. Uya alanlar ve aradaki ilişkiler.
+
+33
+00:22:19,376 --> 00:22:20,516
+Bu da elli puan.
+
+34
+00:22:20,996 --> 00:22:23,135
+Tabii üç aşağı beş çıkarı ağırlıklar değişebilir.
+
+35
+00:22:23,696 --> 00:22:28,316
+Üç çıkıya belki on beş, on beş, on beş derece aşağı bu kırk beş puan olur.
+
+36
+00:22:28,316 --> 00:22:29,356
+Ama daha düşmez.
+
+37
+00:22:30,996 --> 00:22:58,996
+Bunun için de, şimdi teori kısmında 25 ban 2 soru dedim 50 ama belki yine 50'yi veya işte 55'i tamamlayacak 3 soru da olabilir. Ama genel format bu şekilde. Klasik sınavımızda, birinci vizemizde. İkinci vize test usulü olacak, final sınavı yine klasik usulü olacak. Bu sefer yine vize gibi olacak fakat bu sefer tabii ki analizle ilgili değil, tasarımla ilgili kısımlardan sonra.
+
+38
+00:22:58,996 --> 00:23:09,996
+Bir UML, state veya activity diagram çizim diyeceğiz. Bir de ayrıntılı alan modeli oluştuğunu filan diyeceğiz. Öyle bir sınavlardan geçeceksiniz inşallah.
+
+39
+00:23:11,615 --> 00:23:15,896
+Evet, pekala. Şimdi o zaman şöyle başlayacağız arkadaşlar.
+
+40
+00:23:18,451 --> 00:23:34,912
+Ayrıca bu açtığım dosya gördüğünüz üzere arası sayfamda şu an en son dosya olarak yer alıyor. Oturun sonunda isterseniz bu dosyayı ayrıca indirip inceleyebilirsiniz. Şunu kaçırdım falan diye üzülmeyin.
+
+41
+00:23:35,251 --> 00:23:57,192
+Şimdi o zaman şöyle başlıyoruz. Öncelikle sizlerden şu süreli yayın yönetim yazılımı konulu başlıklı gereksinimler belgesini bir okumanızı istiyorum. Bunu okuyup okumanın ardından ilk yapacağımız şey bir kullanım senaryosu yazmak olacak.
+
+42
+00:23:59,923 --> 00:24:07,384
+Bunu yapmadan önce, işte dediğim gibi okumanızı istiyorum. Bir beş dakika bekleyeceğim, bunu güzelce okuyayım.
+
+43
+00:24:09,124 --> 00:24:18,003
+Gereksinimlerde anlamadığınız bir kısım varsa, sesinizi açın, hocam deyin, sorun veyahut da mikrofon falan, kısımda chatten de yazabilirsiniz.
+
+44
+00:24:20,423 --> 00:24:21,963
+Bunu bir başlayın.
+
+45
+00:24:22,324 --> 00:24:35,004
+Ben de şunu da ayrıca hatırlatayım. Gengs'in mühendisliği dersini işlerken gördük, okumaları işlerken gördük. Müşteri her zaman istediğini çok açıkça anlatamaz.
+
+46
+00:24:35,423 --> 00:24:50,523
+Belki ben de buralarda bir şeyleri anlatmayı unutmuşumdur. Zamanında ben bu kütüphancılık alanında bir sistem yöneticisi olarak çalışmıştım ama o yüzden belki de benim kafamda bir beklenen gereksinim var belki de.
+
+47
+00:24:50,523 --> 00:25:02,844
+Onu beklenen bir gereksinim olduğu için, bu çok kolay, herkes bilir diye düşündüm ama siz bu alana belki daha yeni giren bir devir olarak.
+
+48
+00:25:03,423 --> 00:25:12,423
+Belki de bilmiyorsunuzdur. O yüzden kafanızda soru olabilir. Bir okuyun bakalım. Ondan sonra sorularınızla devam ederiz.
+
+49
+00:25:14,923 --> 00:25:17,043
+Önce biraz okumak süresi veriyorum size.
+
+50
+00:25:40,019 --> 00:25:49,619
+Hatta belki eğer isterseniz şu an bu dosyayı abesis sayfamdan indirip oradan da okuyabilirsiniz eğer isterseniz daha net okumak istiyorsanız.
+
+51
+00:25:50,440 --> 00:25:57,099
+Onun dışında şey de yapabilirsiniz, trend screen alıp kaydedip, istediğiniz gibi büyütüp o da olabilir.
+
+52
+00:25:57,659 --> 00:26:05,039
+Çünkü sonra birlikte kullanım sağlamı sütmetli yazarken bazen ben alt tab yapacağım, pencere değişmesi yapacağım.
+
+53
+00:26:06,900 --> 00:26:16,140
+Belki siz, o sadeye, hocam değiştirme diyecektiniz ama diyemediniz durumları olabilir. O yüzden öyle bir alternatif yapabilirsiniz.
+
+54
+00:31:01,268 --> 00:31:12,648
+Peki hala. Şimdi eğer açıkta olmayan bir konu yoksa o zaman şimdi A şıkkıyla başlayabiliriz.
+
+55
+00:31:13,023 --> 00:31:36,943
+Öncelikle bu konuda biraz sizin başlangıç yapmanızı istiyorum. Her ne kadar aşağıda bir olası bir yanıt falan olmakla da birlikte, önce bir kendi ifadelerinizle, kendi çalışmanızla bir kullanım senaryosu metni oluşturun arkadaşlar. Bu kullanım senaryosu metnini Word'de yapabilirsiniz mesela.
+
+56
+00:31:38,675 --> 00:32:06,675
+Bir oluşturun, bunun için size mesela 10-15 dakika vereyim. Gönüllü bir arkadaş tamamladıktan sonra bir paylaşsın. Ben şu an herkese paylaşım yapma yetkisi vermiş oldum. Önce bir hocam deyip dikkatimi çekin. Ondan sonra çalışmanızı bir paylaşın. Sanki işte sınav kardına yapmış gibi. Ben de onun üstünden notlamalarda...
+
+57
+00:32:06,675 --> 00:32:30,763
+Bu ne?
+
+58
+00:32:36,084 --> 00:32:51,903
+Şimdi acaba bu arada şöyle bir şey yapsam, şunu azıcık küçültsam. Mesela şöyle yapsam. 75'te kalmaya devam etsin. Ama bu kenara bir şeyler açar yazar ederiz belki.
+
+59
+00:33:17,236 --> 00:33:21,176
+Aslında Excel daha uygun ama şunun bir şeyinin içinde aslında.
+
+60
+00:33:30,195 --> 00:33:31,995
+Bununla aynı matı yaptığınız adresi.
+
+61
+00:48:33,043 --> 00:48:42,523
+Peki arkadaşlar, şimdi acaba aranızda yaptıklarını paylaşıp fikir almak isteyen arkadaşım var mı? Varsa buyursun lütfen.
+
+62
+00:48:58,132 --> 00:48:58,811
+Yok moda.
+
+63
+00:49:23,764 --> 00:49:31,704
+Açalım. Kimse yoksa ben biraz walkthrough gibi anlatacağım. Ne yaptım, ne ettim gibisinden.
+
+64
+00:49:32,463 --> 00:49:36,003
+Hocam ben paylaşabilirim ama çok da bir şey bulamadım.
+
+65
+00:49:37,224 --> 00:49:37,684
+Olsun.
+
+66
+00:49:38,764 --> 00:49:39,064
+Tamam.
+
+67
+00:49:40,583 --> 00:49:41,364
+Buyurun.
+
+68
+00:49:43,164 --> 00:49:46,184
+Sadece yazdığımı paylaşmam yeterli mi?
+
+69
+00:49:46,943 --> 00:49:47,784
+Tabii tabii.
+
+70
+00:49:47,784 --> 00:49:48,644
+Tamam.
+
+71
+00:49:52,467 --> 00:49:53,807
+Şu an görüyor musunuz?
+
+72
+00:49:54,148 --> 00:49:58,107
+Tamam, evet. Pekala. Anlatın bakalım biraz.
+
+73
+00:49:59,067 --> 00:50:08,007
+Şöyle düşündüm ben, Kütüphancı tarafından girebilmesi olan iki tane durum var.
+
+74
+00:50:08,087 --> 00:50:13,467
+Yeni bir dergi gelebilir, yeni bir abonelik ya da hali hazır olan abonelik.
+
+75
+00:50:13,467 --> 00:50:15,707
+Yeni bir dergi elimize gelebilir.
+
+76
+00:50:19,456 --> 00:50:31,695
+Yani kayıtlı olan bir dergi aboneliğinden yeni bir sayı geldiyse, aboneliklerin olduğu listeden ilgili derginin seçilebileceğini düşündüm.
+
+77
+00:50:33,456 --> 00:50:46,539
+Ondan sonra mesela bir aylık bir, yani ayda bir çıkan bir dergi olsa ve en son girilen dergi bir aydan fazlaysa, sistemin kendi otomatik olarak bir ay sonra bekleniyor halinde bir...
+
+78
+00:50:46,708 --> 00:51:00,588
+Yeni dergi için slot oluşturabileceğini düşündüm. Bu halihazırda bekleniyor aşamasında olan dergiyi kütüphane memuru tarafından gerekli bilgiler girerek geldiği haline geçirebileceğini düşündüm.
+
+79
+00:51:01,876 --> 00:51:15,796
+Kayıtlı olmayan bir, daha doğrusu yeni bir dergi şeklinde girildiyse, isimleri ve ISSM numaralarını veri tabanına bakıp, daha önceden eksik olan dergilerden biri olup olmadığına bakabiliriz.
+
+80
+00:51:15,796 --> 00:51:25,916
+Eğer ismi kayıtlı olan dergilerden biriyle eşleştiyse, acaba bu mu diye önümüze sunabilir.
+
+81
+00:51:26,739 --> 00:51:46,219
+Eğer öyleyse zaten o dergin o sayı bekleniyor durumunda olacaktı. Onu geldi olarak değiştirebiliriz. Öyle değilse sıfırdan yeni bir abonelikse bu sefer çıkış periyodu ya da backfile süresi girilmesi istenebilir yeni bir abonelikse.
+
+82
+00:51:51,827 --> 00:51:56,487
+Dergin Nurel ise eğer backfile süresi doğulmuşsa da sistem tartışına silinebilir.
+
+83
+00:51:57,487 --> 00:51:59,407
+Bu durumu düşündüm.
+
+84
+00:51:59,679 --> 00:52:23,119
+Tamam. Yeterli malzeme çıkarmışsınız diyelim o zaman. Fakat tabii bu malzemeyi kullanım senaryosu metnin biçimine çekmeniz lazım. Onun için şimdi size şurada iki tane alternatif görüyorum. Birincisi kayıtlı bir süre yayın için olan akış. İkincisi yeni bir aboneliğin ardından olacak olan akış.
+
+85
+00:52:27,679 --> 00:52:32,659
+işleminiz lazım. Ötekisini ise alternatif senaryo olarak işleminiz lazım.
+
+86
+00:52:32,976 --> 00:52:59,756
+Onun dışında kullanım senaryosu metni yazarken bu giriş bölümünde yazmayı unutmayın. Burada mesela birinci aktör kim? Şöyle bir bakıyorum. Burada genelde bu işi yapan kütüphane memurudur adımlara baktığımda. O zaman birinci aktör kütüphane çalışanı olur. Başka aktör göremedim doğrusu aslında. Aklıma da gelmiyor. Gerek de yok. Ondan sonucuma ön koşul ne olabilir?
+
+87
+00:53:00,976 --> 00:53:14,735
+Düşünelim bunun için. Genelde burada bize bir joker veren kullanıcının bilgi sisteminde login olmasıdır. Bu bize genel bir joker verir yani. Hiçbir ön koşul bulamazsak bunu yazabiliriz. Hiçbir şey olmasa bile.
+
+88
+00:53:15,715 --> 00:53:28,976
+Onun dışında belki bu yazdığınız içerikten de önlerde olan bir adımı veya belki bir ön koşulu olabileceğini düşündüğünüz bir adımı ön koşulu olarak belirtebiliriz.
+
+89
+00:53:28,976 --> 00:53:44,536
+Son koşulda da, senaryonun sonunda ne olacak? İster kayıtlı derginin sayısı olsun, ister yeni abonelik olsun, yeni gelen sayının kayıdı sisteme girilmiştir.
+
+90
+00:53:44,536 --> 00:53:47,195
+Son koşul kısmına yazabilirsiniz.
+
+91
+00:53:47,891 --> 00:54:09,231
+Sonra ben şu ikisinden herhalde sürelerin kayıtlıysa kısmını birinci ana senaryo olarak seçerim. Yeni bir dergi aboneliğini alternatif senaryoya yazmayı seçerim. Çünkü genelde kütüphanelerdeki iş akışına baktığımızda bu abonelikler sürekli değişmez.
+
+92
+00:54:37,684 --> 00:54:49,503
+Ve yeni dergi çıkmasına çok sık olmuyor. Bu nedenle bunları da düşünerekten sürelerin kayıtlı olmasını ana senaryo olarak seçelim ben.
+
+93
+00:54:50,931 --> 00:55:07,111
+Öbürkünü de seçseniz çok dert değil. Burada ne deseniz haklısınız. Yeni derginin gelmesini ara senaryo, abonelik olan derginin alternatif senaryoları olarak işlerseniz herhalde itiraz etmem diye düşünüyorum.
+
+94
+00:55:07,827 --> 00:55:23,027
+Peki, teşekkür ederim. Bunu sınavda bu şekilde bırakmayacaksınız. İşte dediğim gibi giriş bölümü, ana senaryo, alternatif senaryo şeklinde numaralandırmalarına da dikkat ederekten yapmanızı beklerim. Öyle yaparsanız sorun yok.
+
+95
+00:55:23,648 --> 00:55:24,447
+Teşekkürler hocam.
+
+96
+00:55:24,827 --> 00:55:29,208
+Peki, ben de teşekkür ederim. Başka paylaşımda bulunmak isteyen arkadaşım var mıdır?
+
+97
+00:55:32,851 --> 00:55:35,231
+Hocam, ben paylaşımda bulunabilirim.
+
+98
+00:55:35,331 --> 00:55:36,152
+Buyurun lütfen.
+
+99
+00:55:42,675 --> 00:55:48,155
+Ben de o kadar fazla şey aklıma gelmedi ama bu şekilde yazılmıştım.
+
+100
+00:55:48,695 --> 00:55:51,476
+Tamam, bakalım. Bilinci aktör kütüphaneci, tamam.
+
+101
+00:55:52,195 --> 00:55:54,056
+Ha, kurye demişleriz. Peki, tamam.
+
+102
+00:55:56,211 --> 00:56:23,792
+Güzel. Kurye şeydir herhalde, yani kurye'nin görevi aslında teslim etmektir diyelim. Ondan sonra kütüphancının başında durup hadi bunu işte demez herhalde. Fakat şey isteyebilir belki, alındı belgesi isteyebilir. Veyahut da işte ne İr Saliye ile gider ya vallaha falan onun bir yerine kaşe ister belki falan. Öyle değiştirebiliriz diyelim. Çok da dert değil ama.
+
+103
+00:56:24,244 --> 00:56:47,704
+Peki, ön koşulu yok demeyelim işte arkadaşlar. İlla ki burada bir joker hakkımız olan login'i koyalım, yapıştıralım olaya. Başka bir şey bulursak onu da yazabiliriz tabii ki. Son koşullar, yeni gelmiş kitap demeyelim arkadaşlar. Bu süreli yayın yani dergi ve dergi sayısı. Kütüphane sisteminde var olması ve eleştirilir olması. Tamam.
+
+104
+00:56:49,972 --> 00:57:13,731
+Buradaki zaman kelime kalıbını da koyarken genelde, şimdi bu son koşul ana öykü tamamlandıktan sonra ki sistemin durumu ya, artık bu tamamlanmış bir iş. Bu nedenle zaman kipini seçerken ona yönelik seçmek daha şık duruyor. Öyle söyleyeyim. Yoksa yine itiraz edeceğim bir şey değil.
+
+105
+00:57:13,731 --> 00:57:16,932
+Burada bir şey aklıma geldiği şey de söylüyorum.
+
+106
+00:57:17,972 --> 00:57:43,312
+VELAT'ın amacı da bu. Ne yapılır, nasıl yapılabilir, nasıl yaparsak, nasıl bir değerlendirme söz konusu olabilir? Bunu rahat rahat bir notlama stresi olmadan yapalım. Amacımız bu, bu LARP çalışmasıyla. Peki, ana öykü bakalım. Yayın kütüphaneye ulaşıyoruz. Mesela bunun ön koşu olarak bile yapılabilir. Yayın kütüphaneye gelmiş olması mesela.
+
+107
+00:57:44,211 --> 00:57:52,231
+Kütüphaneci yayının ASP'nin numarası sisteme girer, kütüphaneci yayının periyodunun sisteme girer, kütüphaneci yayının sistemdeki durumunu uygun şekilde ayarlar.
+
+108
+00:57:52,652 --> 00:57:57,952
+Artık öyküler, eğer bu ASP'nin numarası kayın kaydı yoksa yeni kayıt oluşturur. Tamam, peki.
+
+109
+00:57:58,751 --> 00:58:04,872
+Üçlü artırsız, eğer bu ASP'nin numarası kayının bu periyodu zaten mevcut ise kayıtlarda bir şeyin değişmesi gerekmez.
+
+110
+00:58:05,311 --> 00:58:07,572
+Tamam, peki. Bakın şimdi bu ilginç bir madde.
+
+111
+00:58:08,947 --> 00:58:28,207
+Bu şekilde kullanılabilir bir madde. Diyelim ki işte bir akış var. Bu akışta bir şeyin belki yapılması gerekmiyor ise bu şekilde alternatife yazabilirsiniz. Okey, tamamdır. İyi gelmiş aklınıza. Böyle bir şey yapılabilirsiniz. Güzel, peki.
+
+112
+00:58:29,907 --> 00:58:41,259
+Şöyle bir bakalım onun dışında. Belki biraz daha ayrıntılı mantık ekleyebiliriz belki ama neydir bakalım? Şöyle bir öte yandan...
+
+113
+00:58:59,507 --> 00:59:01,507
+Bakalım şimdi...
+
+114
+00:59:01,907 --> 00:59:28,287
+Durumunu uygun şekilde, mesela burada uygun şekilde biraz daha üstü kapalı olmuş. Yanına parantez açaraktan, işte bu metinde demiştik ya, geldi veya bekleniyor falan gibi. Onun olası durumları açık olarak yazmakta yarar var diyorum. Uygun şekildenin yanına parantez içinde. Ama dışında evet, uygundur. Teşekkür ederim.
+
+115
+00:59:30,195 --> 00:59:33,855
+Başka paylaşmak isteyen arkadaşım var mıdır?
+
+116
+00:59:45,652 --> 00:59:46,492
+Yok mudur?
+
+117
+00:59:51,795 --> 00:59:58,195
+O zaman alıştırmada ne yapmışız? Bir ona bakalım. Kaynakta ne yapmışız? Bir ona bakalım.
+
+118
+00:59:58,195 --> 01:00:01,715
+Amdur bir dakika önce ekran paylaşım demem gerekiyor galiba.
+
+119
+01:00:02,515 --> 01:00:03,295
+Share screen.
+
+120
+01:00:04,015 --> 01:00:04,876
+Screen, evet.
+
+121
+01:00:06,735 --> 01:00:07,975
+Tamam, şimdi oldu.
+
+122
+01:00:13,652 --> 01:00:20,292
+Şimdi, evet, bilinçlaka tör kütüphaneci, belki bulabildi onu, başka ilgiyi yok olabilir.
+
+123
+01:00:20,815 --> 01:00:47,415
+Kütüphaneci nedir? Eskiye'nin her dergisi sayısını doğal olarak işleyebilmeyi ister. Peki uygun. Ön koşullar, Joker ön koşullar kütüphaneci sisteme girmişti. Son koşullar, kayıtlar sisteme girilmiş veya güncellenmiştir. Nihayetinde ister belki alternatif ana senaryadan tamamlanacak, belki alternatif senaryadan tamamlanacak. Bu nedenle veya gibisinden ifadeler de belki kullanabilirsiniz.
+
+124
+01:00:48,820 --> 01:00:58,220
+Ben beş adımlık bir şey yazmışım. Biraz daha da dikkat ederseniz alt ayrıntılı adımlar şeklinde yazmışım.
+
+125
+01:00:58,220 --> 01:01:11,820
+Ve onun dışında bu gereksinim metnindeki ayrıntıları mümkün olduğu kadar çok olarak bu senaryoya aktarmaya çalışmışım.
+
+126
+01:01:12,115 --> 01:01:29,775
+Ne demiştim? Kütüphancı'ya gelen derginin ayarısını girer. Derginin basal aboneliği varsa Ayaslan'ın periyot bilgileri gösterilir. Basal aboneliği varsa bu yıla ait sayılar kutlu çıkar şeklinde gösterilir. Mevcut sayıların durum sistemden elde edilir. Gelecek sayının durumun bekleniyor olarak gösterilir.
+
+127
+01:01:29,775 --> 01:01:38,275
+Çünkü hani diyelim ki nedir? Şu an 2021 Nisan'dayız diyelim ki işte Nisan sayısı geldi. Belki Mart sayısı gelmemiş olabilir.
+
+128
+01:01:38,900 --> 01:01:41,659
+Ondan sonra o hala stand back dönüyor, kalmıştır.
+
+129
+01:01:41,659 --> 01:01:43,779
+Veya...
+
+130
+01:01:45,492 --> 01:02:01,892
+Stajyer kütüverci yanlış bir giriş yapmıştı. Daha sonra o mantırsı aslında gelmemişti. Gel diye çekmek söz konusu olabilir belki. O yüzden şimdi veya önceki yılların veya önceki aylanın sayılığı da belki listelenebilir.
+
+131
+01:02:13,492 --> 01:02:29,811
+Az önce söylediğim gibi ayrıntıları, yazacağınız kısım, kabul ve kısıtlar alanı, oraya yazacağınız ek içerikle proje ödevlerinizi geliştirecek ve farklılaştıracaksınız bir ödevinizden.
+
+132
+01:02:30,452 --> 01:02:54,212
+Ya da mesela diyelim ki hiç alternatif senaryoluk bir şey bulamadınız. Alternatif senaryoları çıkartacak şekilde kabul ve kısıt ekleyeceksiniz. Böylece bir alternatif senaryoları en azından bir alternatif ekleyebilmelisiniz kullanım senaryolarına. Hem projelerde hem de mutlaka bu üç bölümü de görmek istiyoruz.
+
+133
+01:02:55,059 --> 01:03:04,960
+Peki, işte neymiş? Dergin elektronik abanıyla varsa, yuvalar, backfire bilgileri de gösteriliriz. Kütüphane Çıkkı'nın sonranı tüm bilgiye gerekli şekilde günceler, onlar düğmesine basar. İyi, peki.
+
+134
+01:03:05,715 --> 01:03:25,536
+İki tane arttırma ödüşmüşüm. Birisi yeni abonelik, ötekisi öncelikle A5 sayının işlemini yapmak. Peki yeni abonelikte İslam Dergi'nin arasını bulamamıştır. Kütüphaneci abonelik oluşturmayı öneririz. Öneri o ailen olsa kim aslında kütüphaneci? Burada belki kütüphaneci öneriyi onaylarsa...
+
+135
+01:03:25,811 --> 01:03:38,851
+Belki daha net olurdu. Mümkün olduğu kadar idilgen değil, etken gibi kullanım demiştik. Sistem kütüphanecinden derginin adını, elsesini periyodan alır. Dergin elektronik abaneli, varsa, yarar, backfire bilgileri küçük pariyacılar alır.
+
+136
+01:03:38,851 --> 01:03:53,811
+Şimdi aslında bakın, birçok yerde ifse, yani varsa, if koşulu şeydi. Bunun elselerinin pek ihtiyacı yok. Mesela ana senaryonun dördüncü adımında dergin elektronik abaneli, varsa, yarar, backfire bilgileri gösterir.
+
+137
+01:03:53,811 --> 01:04:18,811
+Yoksa bir şey yapılmaz. Bunu isterseniz yazabilirdiniz belki ama şu ayrıntılı bir senaryoda buna gerek yok. Bir önceki arkadaşım demişler, yoksa bir şey yapılmaz falan. Orada bir ihtiyaç vardı. Çünkü çok fazla alternatif akış adımı yoktu. Bunu bu şekilde koyarak o ihtiyacı karşıladı gayet güzel biçimdi diyebilirim.
+
+138
+01:04:20,436 --> 01:04:32,016
+İşte yani bu şekilde. Üçüncü adımda da bu sayıya değil, önceki yıla ait bir sayın işimi yapılacaksa diye bir şey aklıma gelmiş. Şeyde var mıydı hatırlamıyorum. Bakayım.
+
+139
+01:04:42,579 --> 01:04:49,599
+yeni gelen süreli yayınlar dediğimize göre aslında önceki yıl kısmı bu gereksinimlerde yazmıyor.
+
+140
+01:04:49,599 --> 01:04:51,599
+Yani belki biraz...
+
+141
+01:04:52,340 --> 01:05:11,039
+Zorlama olmuş gibi diyebilirim belki. Şeyde yazmıyor çünkü. Yetimde yazmıyor. Fakat yine de eğer siz şu bir a'yı bulamasaydım, diyelim ki hiçbir alternatif bulamadım, o zaman belki şurada varsalardan bir tanesini alternatife çekerdim.
+
+142
+01:05:11,039 --> 01:05:18,600
+İlla bir şeyler yapardım, yeter ki bir alternatif koyabileyim senaryoma diye. 3 a biraz ekstra olmuş.
+
+143
+01:05:19,092 --> 01:05:21,112
+Kendi çıkarımın olmuş değilim.
+
+144
+01:05:23,092 --> 01:05:38,751
+Peki, bu arada bu kullanım senaryosu, metni yazmaktan, hazırlamaktan sorusu olan veya kendi yaptığı bir şeyde, hocam ben şöyle yaptım, ne düşünürsünüz demek isteyen başka arkadaşım varsa lütfen buyursunuz, ses etsin.
+
+145
+01:05:48,211 --> 01:05:50,731
+Buyurun [öğrenci].
+
+146
+01:05:52,311 --> 01:05:59,872
+Üçünü olsun istiyor dediniz ya, normal senaryo, alternatif senaryo bir de neyi demiştiniz? Hani sınavlarda, videolarda, projelerde demiştiniz.
+
+147
+01:06:00,132 --> 01:06:15,572
+Evet, şimdi giriş kısmı, burada işte birinci reaktör, diğer ilgiler, ilgi alan, ön koşullar, son koşullar. Buraya kadar olan kısma giriş. Adını da unutmayın, kullanım senaryosu şu adını da vererekten. Şurası giriş bölümü.
+
+148
+01:06:16,851 --> 01:06:41,951
+Ana senaryo bölümü ve alternatif senaryo bölümü aşağıdan devam ediyor. Ana senaryoda mutlaka maddelerin numaralanması. Çünkü şuradaki örnekte gerekmedi ama NextGenPost örneğinde hatırlarsanız belki işte şurada kütüphaneci tüm kayıtları için 2 ila 4, 3. adımları tekrarlar falan gibi bir şeyler söyleniyor olabilir.
+
+149
+01:06:42,463 --> 01:06:51,003
+Alternatif senaryolarda da, şimdi şurada bir A geçmesi bu birinci alternatif senaryo olduğu anlamına gelmiyor arkadaşlar.
+
+150
+01:06:51,423 --> 01:06:58,824
+Ana senaryonun birinci adımındaki biz ilk olası alternatif yani A anlamına geliyor.
+
+151
+01:07:00,043 --> 01:07:07,743
+Bu şekildeki iki bileşenli ve anlamlı alternatif senaryo numaralandırmasını da unutmayın.
+
+152
+01:07:07,743 --> 01:07:10,403
+Burada tek tek bakacağım mesela. Yine abone eklemişsiniz.
+
+153
+01:07:10,463 --> 01:07:23,503
+Nereye demişiniz? 1A. 1A'ya giriyorum. Bu gerçekten yeni abonelikin alternatifi olabileceği bir içerik mi? Öyleyse ne ala? Yoksa o kısımdaki puanı vermiyorum gibi.
+
+154
+01:07:25,427 --> 01:07:47,768
+O yüzden dikkatli olun. Burada şimdi önce şunu bir clear yapayım. Burada mesela şu bir ay yer almayabilirdi bile diyelim ki ama üç ay yer alırdı. Kütüphaneci önceki yıl ayet bir sayın işlemini yapmak ister. Peki, üçüncü adıma anasını öde gidiyorum. Bursana bulunursa şunu bir şeyler bir şeyler yaparız. Tamam mantıklı geliyor. Tamam yapmış öğrenci diyelim.
+
+155
+01:07:50,708 --> 01:07:51,967
+Evet, başka soru soran.
+
+156
+01:07:52,208 --> 01:07:52,807
+Teşekkür ederim.
+
+157
+01:07:53,268 --> 01:08:03,244
+Bir şey değil, ne demek? Ben soru soran bütün arkadaşlarıma teşekkür ederim dersi. Renklendiriyorlar, zenginleştiriyorlar, diğer arkadaşlarıma da yardımcı olmuş oluyorlar.
+
+158
+01:08:09,172 --> 01:08:13,452
+Tamam, peki o zaman. Bir şey sorabilir miyim?
+
+159
+01:08:14,192 --> 01:08:15,391
+Tabii lütfen [öğrenci], buyurun.
+
+160
+01:08:16,032 --> 01:08:24,012
+Ya aslında burada ben şeyi fark ettim de, doğru mudur? Yukarıda mesela if else gelecek her şeyi biz aşağıya bir koşul olarak yazıyoruz gibi.
+
+161
+01:08:24,112 --> 01:08:29,051
+Evet, if'in ana koşulunu yukarıya, else'ini aşağıya. Aynen öyle.
+
+162
+01:08:29,431 --> 01:08:31,771
+Bu da alternatif senaryo oluşturmamıza yardımcı oluyor aslında.
+
+163
+01:08:32,192 --> 01:08:33,112
+Tabii, tabii ki.
+
+164
+01:08:33,631 --> 01:08:34,771
+Tamam hocam, teşekkürler.
+
+165
+01:08:34,771 --> 01:08:36,131
+Aynı olmaktık bir şey diye.
+
+166
+01:08:36,948 --> 01:08:37,608
+Başka.
+
+167
+01:08:57,460 --> 01:09:25,460
+Peki, şimdi şöyle devam edelim. Ufak bir itirafta da bulunayım. Yama kullanım şeması aslında biraz sonradan bu örnekte düşünmüşüm. Önce alan modelini düşünmüşüm. Ama normalde şeyde de akışta ne yapıyorduk? Hem derste hem şeyde gerçek bir akışta. Öncelikle bir kullanım senaryosu metnini önce yapıyorduk şu an AŞK'ında yaptığımızda. Ondan sonra bu senaryoları ayrıntılandırıp bunların...
+
+168
+01:09:25,460 --> 01:09:33,899
+Bunda arandaki ilişkiyi kullanım şaması çizerekten gösteriyorduk. Gerçi bu, yani o yüzden şu C aslında B olmalı diyelim.
+
+169
+01:09:34,600 --> 01:09:40,220
+Sonra da ayrıca C diye soğana eklendiği biraz bariz aslında. Dikkatlenen arkadaşlar anlayabilir.
+
+170
+01:09:40,680 --> 01:09:44,720
+B'yi sonra yapacağız. Şimdi sırada kullanım şaması çizmek olacak.
+
+171
+01:09:46,140 --> 01:09:49,260
+Ayrıca şunu da söyleyeyim, hatırlatayım. Ders de söylediğimi düşünüyorum.
+
+172
+01:09:49,819 --> 01:09:53,460
+Kullanım şaması çizmek ile kullanım serviyon metinleri niye...
+
+173
+01:09:53,460 --> 01:10:07,460
+İlla şundan başlayacağım ve onu bitirip sonra öpkene geçeceğim şeklinde düşünmeyin. Bu biraz o, biraz o şeklinde iteratif olabilir. Bunları oturttuktan sonra en son olarak...
+
+174
+01:10:08,528 --> 01:10:20,128
+alan modelini, yani sınıf şamasını çizmek en doğru olacak. Öyle söyleyeyim. O yüzden şimdi bu kullanım şaması çizmek üzerine konuşalım.
+
+175
+01:10:20,128 --> 01:10:29,188
+Şimdi burada dikkat ederseniz aslında birkaç bir şeyler var.
+
+176
+01:10:31,604 --> 01:10:58,884
+Bakalım buradan kaç tane use case çıkartabileceksiniz ve onların arasında ne gibi ilişkiler kuracaksınız. Hatırlatım, extens ve include ilişkileri vardı. Bunu da yaparken sadece gereksinimler belgesinde kalmayın. Kullanım senaryosu metnine de bakın arkadaşlar. Çünkü Next Campos örneğinde, derste gördüğünüz örnekte de oradan da hatırlarsınız.
+
+177
+01:10:59,604 --> 01:11:16,503
+İkisinden birden çeşitli use case'ler keşfetmiştik. O yüzden her ne kadar şu an benim ekranımda bu şey varsa da, belge varsa da gerek sizin yazdığınız, yaptığınız çözüm olabilir.
+
+178
+01:11:16,984 --> 01:11:27,384
+Gerekse ben şu an bu sayfayı ekranda tutuyorum. Siz de az önceki örnek, benim yazmış olduğum kullanım senaryo metnini mesela kendi ekranınızda tutarsınız.
+
+179
+01:11:27,604 --> 01:11:52,923
+Bir ona bir ona bakıp bir de wireless UML'i açıp ne use case var olabilir ve onları belirlemeye çalışın. Use case çizimalarını Word veya başka çizim programıyla da çizmek mümkün olabilir. Çünkü çok zor değiller. Yani yuvarlak çizmek, ondan sonra iki yuvarlak arası ok çizmek, okum üstüne bir şey yazabilmek. İlla okum üstüne bir şey yazmak gerekmiyor.
+
+180
+01:11:55,604 --> 01:11:58,524
+Ne deniyordu ona ya?
+
+181
+01:12:02,579 --> 01:12:23,779
+Metin kutusu ekleyerekten, onu da ilgili okun yanına yaklaştırarak, hatta biraz çevirerekten falan filan yapabilirsiniz. Ama sınır işlemesi çizmek zor yani zörtle. Sınır işlemesi çizmek için bence Valid Uyamel veya başka bir program en doğrusu. Bunları da hazırlayın çünkü sınırda ihtiyacınız olacak. Çizin diyeceğiz.
+
+182
+01:12:30,579 --> 01:12:58,399
+Şöyle düşünün, şey de olacak, teorik soru da olacak, onu da mı elle yazacaksınız? Ben peki yazı yazmayı sevmeyen birisi olarak da Word'de yazmayı tercih ederdim. Ama çizim programım yoksa da, bir terslik olmuşsa da, o zaman bari şekilleri kağıda çizip, ondan sonra fotoğrafını çekip, ondan sonra resmi, bilgisayarını aktarabiliyorsam aktarıp, siz o şeylerde benden daha bileğisinizdir belki, ve Word'un içerisine gömerdim şekli.
+
+183
+01:12:58,579 --> 01:13:06,420
+Veyahut da ne bileyim, bir şeyler bulurum. En rahatı bence şu varbitiYameli'yi kurmanız şekilleri, onunla çizmeniz.
+
+184
+01:13:07,539 --> 01:13:19,619
+Peki, şimdi bu amaçla saat kaç? 10.05. 15 dakika yine bir zaman ayıralım bunun için.
+
+185
+01:13:21,199 --> 01:13:25,139
+Kullanım senaryosu, kullanım şemaları çizelim.
+
+186
+01:13:27,091 --> 01:13:39,431
+Çizimi diyelim. 15 dakika süre. Çizim, ondan sonra çizdiğiniz şamalar üstünde tartışalım.
+
+187
+01:13:43,271 --> 01:13:47,131
+Ben bu sırada ufak bir ara vereceğim. Ama döneceğim.
+
+188
+01:28:20,404 --> 01:28:27,623
+Peki arkadaşlar, bir yüz kez şahası çizmiş olan ve paylaşmak isteyen arkadaşım var mıdır?
+
+189
+01:28:39,060 --> 01:28:43,300
+Tavallamaya az kalmış olsa da olur. Son göstererek çizelsiniz mesela.
+
+190
+01:29:02,452 --> 01:29:03,252
+Yılk mutlu.
+
+191
+01:29:26,036 --> 01:29:31,275
+Tutsam, şunu fazla da %75'ten azaltmadan, ha dur şunu yapabiliyoruz, iyi.
+
+192
+01:29:32,376 --> 01:29:32,956
+Kıram.
+
+193
+01:29:37,011 --> 01:29:38,011
+Ne yaptım daha acaba?
+
+194
+01:29:45,235 --> 01:29:45,876
+Bu, şöyle.
+
+195
+01:29:57,684 --> 01:29:59,484
+Et, yukum paylaştığım eksterno.
+
+196
+01:30:10,868 --> 01:30:20,948
+Burada şunu da söyleyeyim. Tabii ki aslında çizmiş olacağımız iş ama yazmış olduğumuz kullanım senaryosunun metnine göre de değişik olabilecektir.
+
+197
+01:30:22,528 --> 01:30:31,388
+Burada ben değerlendirmeyi yaparken ona uyumluluğa da bakıyor olacağım bir noktada.
+
+198
+01:30:33,855 --> 01:30:50,435
+Tek bir şama şekli yok. Eğer aşağı inip benim yaptığım alternatif çeşitli farklı use case şamalarına bakarsanız, değişik değişik şeyler var. Yani burada çekinmeyin. Ne hakkınıza gelmişse, biz bize burada açın, anlatın, gösterin.
+
+199
+01:31:00,659 --> 01:31:05,260
+Çok da mecbur ben bir şeyler yapacağım sizin adınıza göstermek isteyen yoksa.
+
+200
+01:31:09,587 --> 01:31:11,868
+Hocam 5 dakika daha diyorsanız o da olur.
+
+201
+01:31:32,083 --> 01:31:43,603
+Yani ekstra verebilirim. Dans vaktimiz var. Bütün egzersizi de yapmayacağız. Bu sürelerin yönetimi yazılım üzerinden gideceğiz. Diğerlerini sizin çalışmanız ve değerlendirmeniz için bırakmış oluyorum.
+
+202
+01:31:56,756 --> 01:32:04,876
+Yalnız da gönüllü yoksa o zaman ben doğaçlamar bir şekilde şimdi şuradaki metne bakıp bir şeyler çizmeye çalışacağım.
+
+203
+01:32:05,115 --> 01:32:08,655
+Hocam, tekrar ben gösterebilir miyim?
+
+204
+01:32:08,956 --> 01:32:10,195
+Tamam, tabii lütfen buyurun.
+
+205
+01:32:14,612 --> 01:32:38,612
+Burada kendi yazdığım use case durumundan başka şeyi de eklememeye çalıştım. Elektronik durumunda. Ama elektronik durum sadece şurayı kapsıyor. Onun dışında tam kararsız kaldım genel olarak. Mesela burada eğer elektronik kısım yapılırsa...
+
+206
+01:32:38,676 --> 01:32:43,156
+Aslında yayın sayısının durumu geldi olarak değiştirmesi gerekmiyor sanırım.
+
+207
+01:32:44,716 --> 01:32:45,436
+Doğru.
+
+208
+01:32:47,936 --> 01:32:54,936
+Bu da tam olmuyor herhalde. O zaman şu elektronik kısmı komple çıkarmam mı gerekir?
+
+209
+01:32:55,828 --> 01:33:12,128
+Şimdi bir değerlendirelim. Ama önce şunu söylemek istiyorum. Siz use case'lerinizi çok ince kırılımı yapmışsınız. Öyle söyleyeyim. Aslında buradaki use case'ler sanki bir daha bir esas bir use case'in adımları gibi.
+
+210
+01:33:23,828 --> 01:33:41,828
+2-3'den fazla adımı olmayacak etkinlikler gibi. Yani benim burada okuduklarım sanki bir ya da iki adımlık şeylermiş gibi gözüküyor. O yüzden biraz ince ayağı kırılıma gitmişsiniz dedim. O yüzden böyle söyledim.
+
+211
+01:33:51,828 --> 01:33:58,368
+Gelebiliyorsa, hatta belki alternatif senaryo bile içerebilecek. O zaman okey diyeceğim mesela.
+
+212
+01:34:00,020 --> 01:34:27,560
+Tabii bunu sınavda anlamak çok kolay değil. Yani sizin kafanızdan ne geçiyor kısmını. Projede bu daha kolay anlaşılır. Bakacağım şimdi. Burada 1, 2, 3, 4, 5, 6 tane use case vermişsiniz. Bu 6 use case'in de acaba kullanım senaryosu metinlerini proje ödevinizde yer alıyor mu? Yoksa acaba 1, 2 tane kullanım senaryosu metinin adımları mı bunlar?
+
+213
+01:34:28,047 --> 01:34:55,368
+Eğer ikinci durum söz konusuysa, oradan bir puan kılmam gerekecek. Ama birinci durumsa, okey, eyvallah diyeceğim. Ve tabii ki belki bu durumda, dedim ki bunların, buradaki altı tane, use case'in altısı da senaryo olarak proje ödeviniz de var. Ama bunlar sadece bir iki adımlık işlemler ise, o zaman ya kullanım senaryosundan birazcık puan kılacağım, ya şamadan birazcık puan kılacağım.
+
+214
+01:34:56,047 --> 01:35:02,448
+Yani iki adımlık, üç adımlıktan daha fazla adım içermelidir bir senaryo diye düşünüyorum.
+
+215
+01:35:02,927 --> 01:35:08,768
+Bakın, ilk gösterdiniz. Böyle bir şeyi ben söylemeyi, açıklamayı düşünmemiştim bu derste mesela.
+
+216
+01:35:09,147 --> 01:35:12,288
+Ne güzel, şimdi ortaya çıktı. Çok güzel. Teşekkür ederim.
+
+217
+01:35:15,503 --> 01:35:24,644
+Bir extend durumu oluştururuz ya, aslında bu durum ve extend durumu kendi başına bir use case içinde bulunması gerekmiyor mu? İki use case olamaz, iki farklı mesela.
+
+218
+01:35:25,644 --> 01:35:39,123
+Şöyle olabilir, biri kullanım senaryosu metnin ana akışında, ötekisi alternatif akışında yer alıyorsa, o zaman bu ikisi aynı kullanım senaryosunun içerisinde yer alır.
+
+219
+01:35:40,884 --> 01:35:44,683
+O durumda çok bir sıkıntı olur mu?
+
+220
+01:35:44,984 --> 01:35:45,963
+Hiç sıkıntı olmaz.
+
+221
+01:35:48,083 --> 01:36:02,904
+Şimdi, şu an sizden daha fazla bir düşündüğünüzü öğrenmeden, diyelim ki breakbox olarak da, şimdi bakalım buradaki acaba extensörü ve inkludutların doğru oluşturduğumuzu düşünecek miyim, düşünmeyecek miyim? Ona bakalım şimdi.
+
+222
+01:36:04,043 --> 01:36:13,443
+Şimdi, yayının gelen periyodunun eklenmesi, gelen periyodu değil de gelen sayısı demek istiyorsunuz herhalde burada diye anlıyorum. Değil mi?
+
+223
+01:36:13,908 --> 01:36:35,488
+Evet. Tamam. Yanlış terim kullanmışsınız. Periyot, şey işte, aylık, üç aylık falan gibidir. Ama siz dergi aslında, yani sayı, genel sayı demek istemiş. Herkese sayı. Eğer tabii bu daha yeni bir abonelikse o zaman yayının yıl ve sayısının oluşturulması gibi bir durum var. Tamam, burada extens uygun gözüküyor.
+
+224
+01:36:35,967 --> 01:37:03,967
+Include'e bakayım. Pirodun eklenmesi, yayın sayısının durumun geldiği olarak değiştirilmesi. Evet, eklerken mutlaka bu durumda yapılıyor. O yüzden Include doğru. Pirodun eklenmesi, kaydının oluşması. Yeni abonelik ise evet kaydının oluşması gerekiyor. Ama yeni abonelik değilse sadece yeni gen sayıyı ekliyorsunuz. Buradaki Extensi de doğru gözüküyor. Yeni kaydının olmuş ise Backlog miktarının belirlenmesi. Bu sadece elektronik abonelik ise yapılacak bir şeydi. O yüzden Extensi.
+
+225
+01:37:03,967 --> 01:37:09,807
+Yine doğru. URL'nin belirlenmesi de yine elektronik aboneliyse yapılan bir şey. Yine extensi doğru.
+
+226
+01:37:10,467 --> 01:37:16,528
+Şimdi dikkat ederseniz, bütün include extensileri tek tek baktım, doğru mu, mantıklı mı diye değerlendirdim.
+
+227
+01:37:17,188 --> 01:37:21,887
+Hepsi doğru geçiyor. Buradan önemli bir puan alındı mesela. Öyle söyleyeyim.
+
+228
+01:37:22,323 --> 01:37:32,443
+Öte yandan aktörler ile yüz kezleri sadece düz çizgi ile birleştirdiğinizde görüyorum. Tamam, buradan da puan alındı.
+
+229
+01:37:32,851 --> 01:37:56,072
+Belki şurada şey diyecektim. Ama tabii şimdi şeyde bu yok. Vali Tiyamar'da bu yok. O yüzden çizmemişsiniz. Kütüphane sistemi aslında insan olmayan aktör. O yüzden onu normalde dikdörtgen çizmek gerekirdi. Sınıf gibi çizmek gerekirdi ama ben de bakıyorum şimdi. Evet, bende Vali Tiyamar'da bu yok. O zaman ona baktım yoktu.
+
+230
+01:38:00,851 --> 01:38:07,231
+Eski versiyonu olmasından kaynaklanıyor duru, bilemiyorum. Sizdeki hangi versiyonu?
+
+231
+01:38:08,372 --> 01:38:09,192
+Yeni indirdim.
+
+232
+01:38:09,192 --> 01:38:23,912
+Yeni, aa tamam. Bende 0.21 eski versiyonu, belki yeni versiyonu da var diyecektim ama sizinki de yeni versiyonuymuş zaten. Tamam peki, yapacak bir şey yok. Evet, sizde 2. Evet, tamam.
+
+233
+01:38:25,108 --> 01:38:30,307
+Neyse, şu an şu problem değil. Ama bunu ben hatırladım, tekrar iyi oldu.
+
+234
+01:38:31,427 --> 01:38:33,108
+Onun dışında...
+
+235
+01:38:33,427 --> 01:38:44,047
+Okey, dediğim gibi şu an burada tek eleştirim şey, kullanım senaryosu adımların fazla ince kırılımda yapmışsınız, bir oradan eleştireceğim.
+
+236
+01:38:45,047 --> 01:38:49,427
+Hani Allah'tan şey yapmamışsınız, ben bunu derste, gerda söylüyorum.
+
+237
+01:38:50,167 --> 01:38:55,507
+Rufkes şamaları, bir işin hangi sırada yapıldığının anlatıldığı şamalar değildir arkadaşlar.
+
+238
+01:38:55,987 --> 01:38:59,688
+Bunun için ne gördük? Aktivite diagramları gördük. O orada yapılır.
+
+239
+01:38:59,688 --> 01:39:01,427
+Burada sadece inkluder.
+
+240
+01:39:01,427 --> 01:39:12,167
+ve aktörlerin, use case, primary aktör, bilincil aktör, hangi use case ile ilişki? Sadece onun gösterdiği işlemadır. Bu açıdan doğru anlaşılmış bir şama. Teşekkür ederim.
+
+241
+01:39:14,147 --> 01:39:16,528
+Evet, başka paylaşmak isteyen arkadaşım var mı?
+
+242
+01:39:54,612 --> 01:39:57,452
+Peki, doğaçlama bir işler yapalım o zaman.
+
+243
+01:39:59,012 --> 01:40:05,391
+Diyelim ki, şimdi bir kere kütüphaneciyi bilincil aktör olarak düşündük.
+
+244
+01:40:08,332 --> 01:40:10,711
+Aslında kütüphaneci demek ki kütüphane satan.
+
+245
+01:40:11,971 --> 01:40:15,112
+Çok da doğru bir terim değil ama neyse artık kütüphaneci diyelim.
+
+246
+01:40:18,676 --> 01:40:23,956
+Şimdi bakalım, bütün gereksinimlere bakacağız.
+
+247
+01:40:23,956 --> 01:40:33,876
+Şimdi, şuradan ben ilk paragraftan aslında şuradan bir ISSN numarasına bir bakıyorum.
+
+248
+01:40:34,536 --> 01:40:36,356
+Ha, gel şu bakın burada yazmamışım.
+
+249
+01:40:37,236 --> 01:40:45,596
+Burada aslında bu ISSN numarası kendi içerisinde bir check-sum özelliği olan bir sayıdır.
+
+250
+01:40:46,064 --> 01:41:02,028
+Onun bir algoritması vardı. Şu an en azıbı hatırlamıyorum. Ama her bir basama bir şey yapıyorduk. 11 ile, 11 gibi değişik bir sayıla çarpıyorduk. Çarptıktan sonra...
+
+251
+01:41:02,260 --> 01:41:22,180
+Bir şeylerin modlarını alıp ondan sonra onları toplayıp bunun modunu aldığımızda son basamağı elde etmeliyiz. Son basamak, bu da mod 11'e göre olacağından mod 11'de sonuçta 0 ile 10 arasında yer alabilir. X'de o yüzden 10 anlamına gelmektedir. Bir şey vardı, unuttum.
+
+252
+01:41:22,180 --> 01:41:29,180
+Şimdi onun check sound kontrolünden bahsetmemişim hiç şu metin içerisinde.
+
+253
+01:41:30,260 --> 01:41:47,399
+Bahsetseydim, eğer burada bunu çeksem kontrolü şöyle olur deseydi, o zaman hemen buraya bir ISSN geçerli kontrolü yüz kesin yapıştıracaktım. Ama yok, yazmamışım. Bunu da siz medium değilsiniz, mini bilemersiniz. O yüzden öyle bir şey beklemiyorum tabii ki.
+
+254
+01:41:57,268 --> 01:42:00,667
+Bir kere abonelik bir use case'in var. Tamam, bir onu yazalım yani.
+
+255
+01:42:02,067 --> 01:42:07,507
+Bazı dergere yeni abonede olabiliyorduk. O senaryo metnini de hatırlıyorum şimdi.
+
+256
+01:42:12,407 --> 01:42:16,507
+Yeni abonelik...
+
+257
+01:42:17,076 --> 01:42:31,736
+Söz konusu olabiliriz. Şimdi bütün bu aslında bir kullanım senaryosu metninde yaptığımız şey sayı girişi idi. Ne demiştik adını? Aynı isimleri vermemiz uygun. Yeni sayı girişi. Çekin tamam.
+
+258
+01:42:38,868 --> 01:42:50,988
+Şimdi bir kere zaten öncelikle buna bakıyorduk. Bunu yapalım. Ondan sonra diğer gereksinim metniye de bakaraktan oradan da fazladan yüz case'leri bulmaya çalışabiliriz.
+
+259
+01:42:50,988 --> 01:43:06,828
+Yeni sayı girişinde belki de bu mevcut aboneliktir, belki eski aboneliktir. Yeni sayı geldiğinde bunun yeni abonelik ise ayrıca işlemleri olacaktı. O yüzden yeni abonelikten yeni sayı girişine doğru bir ekstant işlemi yapıyoruz.
+
+260
+01:43:06,868 --> 01:43:16,708
+Onun dışında, evet ilk başta bu şeyden, metinden giderekten yapalım dedik. Kullanım senaryosu metninden yaparken gidelim dedik.
+
+261
+01:43:16,708 --> 01:43:33,368
+Şimdi ön koşu olarak hani kütüphane cinsleme girmesinde login'i yazıyorsak belki bir use case olarak çizebiliriz. Eğer eksik use case bulursam, yani fazla değil bulduğum şey gibi düşünürsem o zaman onu koyabilirim. Şu anda koymayayım bakalım.
+
+262
+01:43:34,387 --> 01:43:42,967
+Onun dışında, şimdi bakalım, yeni sayı gelişi nedir? ASL'e giriyor, basılı aboneliği varsa bir şeyler gösterilir.
+
+263
+01:43:43,247 --> 01:43:48,708
+Şimdi, ad ASL'e pilot bilgisi göstermek, bunu bir şey olarak, yüz kere sorarak düşünmüyorum.
+
+264
+01:43:48,708 --> 01:43:49,708
+Tek bir...
+
+265
+01:43:50,387 --> 01:44:03,467
+Raporla mı? Tek bir gösterim çünkü. Peki. Şimdi dergin basırabilin ilması bu yıl AYT sayı kutu cükrar şeklinde gösterir. Mevcut sayıların durumu sistem ana erdedir. Gelecek sayıların durumu bekleniyor olarak gösterir.
+
+266
+01:44:03,467 --> 01:44:17,847
+Şimdi belki bunu, şimdi kendi içerisinde epey bir madde var ya, belki dergi kutusu çizme şeklinde bir use case olarak düşünebilirim belki.
+
+267
+01:44:18,996 --> 01:44:24,056
+Buna aslında kütüphanecilik literatöründe check-in kartı diyorlar.
+
+268
+01:44:28,236 --> 01:44:35,716
+Ben o yüzden böyle bir isim verdim. Yoksa hani kutucuk çizme şeklinde de, adlandırı kutucuk çizme.
+
+269
+01:44:35,855 --> 01:44:38,316
+Yazı şöyle diyeyim. Bu parantez içinde olsun.
+
+270
+01:44:40,155 --> 01:44:41,195
+Dergi kartı.
+
+271
+01:44:41,652 --> 01:45:06,471
+Evet, dergi kartı dememem şimdi. Deseydim, buraya öyle yazmanız en doğrusu olacaktı. Sayı kutuları, kutucukları, sizi mi? Diyelim. Bunu bir yazabiliriz ve her yeni sayısı gelişinde bu ana senaryoda yer aldığı için bunu include şeklinde çizebiliriz mesela.
+
+272
+01:45:15,891 --> 01:45:42,652
+Şimdi bir extant bulabildim mi? Buldum. Bunu belki yazmasam da olur. URL, backfile bilgileri göstermek. İsterseniz yazabilirsiniz yani. Burada yine tek bir maddeyi, tek bir işlem yapılan şeyi bir use case olarak göstermeyin dedim ama bir extant bulamadıysanız yazabilirsiniz. Ama şimdi yazmayalım. Neyse o zaman bir extant çıkartabildim.
+
+273
+01:46:11,315 --> 01:46:14,755
+Yıl'a ait
+
+274
+01:46:14,755 --> 01:46:18,315
+işlemesi derim.
+
+275
+01:46:18,956 --> 01:46:31,735
+Eğer bu böyle çok kocaman dev gibi bir elips çıkartırsa bana bir Enter'a basarım. Biraz daha böyle düzgün oranlara sahip bir şey elde ederim.
+
+276
+01:46:31,735 --> 01:46:35,015
+Şimdi şunu biraz şöyle yaparsak.
+
+277
+01:46:35,796 --> 01:46:37,215
+Şu Sidebar'da
+
+278
+01:46:37,524 --> 01:46:41,024
+Çok fazla bölmez diye düşünüyorum.
+
+279
+01:46:42,304 --> 01:46:42,463
+Evet.
+
+280
+01:46:44,604 --> 01:46:50,944
+Peki, mesela şu an buna baktığımda böyle bir şey çizdim diyelim.
+
+281
+01:46:51,524 --> 01:46:57,363
+Daha sonra bunu biraz daha zenginleştirmek için gereksinimler metnine bir giderim bakalım.
+
+282
+01:46:57,363 --> 01:47:03,644
+Diyelim ki, okuyam şöyle bir, Ayselan'dan bahsediyor falan filan.
+
+283
+01:47:05,555 --> 01:47:18,655
+Peki, yeni abonelik bu üçtür olabiliyor. Basılı, elektronik veya ikisi birden.
+
+284
+01:47:19,444 --> 01:47:34,844
+Basılı ve veya elektronik. Şimdi burada bunlar veya yani alternatif. O yüzden ben yeni aboneliği de include şeklinde değil de extend şeklinde basılı ve elektronik şeklinde işaretleyeceğim.
+
+285
+01:47:36,424 --> 01:47:43,944
+Şunları koyayım. Şu extendleri de çizeyim. Ondan sonra select yapıp şu paneli kapatayım.
+
+286
+01:47:44,851 --> 01:48:09,851
+Şurada beni müdahale ediyor konuşma penceresi. Onu aşağıya koyayım. Basılı abonelik. Şuraya da elektronik abonelik diyorum. Bu şekilde yapıyorum. Burada include demem doğru olmaz. Çünkü illaki basılı...
+
+287
+01:48:10,100 --> 01:48:31,280
+ve abonelik oluyor. Alternatifli, eğer seçimlik elektroniktir gibi bir şey olsaydı o zaman belki 7 abonelikten basılıyor, include, ama elektronik'i de extant diyebilirdim. Ama burada böyle bir durum yok. Açık açık yazılmış. Bazen sadece basılı, bazen sadece elektronik, bazen ikisi bizden. O yüzden bunların extant olması en doğru.
+
+288
+01:48:35,444 --> 01:48:48,104
+Backfire filan filan filan her sırada sütünün sayı bilgiye satılanı. Yeni gelen dergisayar sisteme geleceği zaman yeni sayı gelişi. Onlardan filan filan bahsediyor. Yeni gibi bir süreç kaydın yoksa yeni kayıt.
+
+289
+01:48:48,564 --> 01:49:15,104
+oluşturma. Yani yeni abonelik diyelim ki işte orada. Pörök belgin girer, elektronik konsasyonu girer, kalın mevcutsa elektronik yukarıdan belirtilen şekilde sayı sistemeye geldiği olarak işler. Tamam. Peki. Bunları bulabildim. Başka bir şey pek aklıma gelmedi. Bu benim yaptığımla ilgili sorusu olan arkadaşım var mı? Şu an doğaçlama yaptığım konu üzerinde.
+
+290
+01:49:24,243 --> 01:49:28,183
+Yoksa alıştırmadığı yer alanlarla bir karşılaştırma yapalım bakalım.
+
+291
+01:49:29,324 --> 01:49:31,083
+Şimdi burada biraz büyütebilirim.
+
+292
+01:49:32,503 --> 01:49:36,243
+Bir soru geldi sanki ama sesiniz çok kısık geldi.
+
+293
+01:49:37,603 --> 01:49:38,203
+Geliyor mu?
+
+294
+01:49:38,703 --> 01:49:40,163
+Şimdi geldi [öğrenci] Hanım, buyurun.
+
+295
+01:49:40,692 --> 01:49:59,692
+Hocam, şu en son işlediğimiz basılı abonelik ve elektronik abonelik, onları ben 100 kez olarak düşünmezdim herhalde ilk olarak, aklıma gelmezdi. Yine abonelikle ilgili, iki türlü abonelik şekli var dedik ya, basılı elektronik hem basılı hem elektronik olabilir. Bunlarla ilgili...
+
+296
+01:50:00,000 --> 01:50:12,219
+Elektronik olması durumunda başka işlem uygulanacak, basılı abonilik olması durumunda başka işlem uygulanacak diye düşünerek mi bunları da ayrı use case şemalar olarak belirledin?
+
+297
+01:50:12,219 --> 01:50:18,039
+Evet, çünkü ayrıca benim bunları ayrı use case olarak düşünmemdeki bir sebep de şu.
+
+298
+01:50:18,579 --> 01:50:28,000
+Bakın, bu metin içerisinde eğer elektronik derdikliyse işte backfile ve erişim URL'i bilgileri var.
+
+299
+01:50:28,000 --> 01:50:30,280
+Bu bilgilerin sisteme girilmesi gerekecek.
+
+300
+01:50:30,960 --> 01:50:38,440
+Eğer basılı abonelikse kütüphacı birinci adımda URL'i girer, ikinci adımda backfile'ini girer.
+
+301
+01:50:39,440 --> 01:50:50,260
+Onun da kendi içimde alternatif senaryoya bir maddelik derdim ki, eğer sığmısız backfile ise sıfır mı girer falan gibisinden ayrıntılarda bulmuşum.
+
+302
+01:50:56,000 --> 01:51:12,460
+Alternatif 0 girme sayısını bir use case olarak çizmem. Tek adımlık bir şeyse onun bir use case olması mantıksız diye düşünüyorum. Tamam, senaryo metniği yazarken alternatif senaryoya yazacağız ama tek bir adımlık bir şey olduğu için ayrıca şemada göstermeyeceğiz diyorum.
+
+303
+01:51:12,851 --> 01:51:31,731
+Öte yandan basılı abonelikse de işte derginçler periyodu girilmeli, adı ISS'in şunlar bunlar girilmeli. Yani yapılacak birkaç adımlık işler var. O yüzden bunların da kendi senaryo metinleri tanımlanabilir diye düşünüp bu şekilde yazdım ekledim.
+
+304
+01:51:32,115 --> 01:51:42,435
+Ama o işlemleri, adımları burada ayrıca belirtmemize gerek yok, use case diagramında değil mi? Mesela hani test sesinin oluşturulması ya da URL'nin oluşturulması gibi.
+
+305
+01:51:42,435 --> 01:52:00,115
+Yok, use case şamasında zaten hiç gerek yok. O alt adımları göstermiyoruz gördüğünüz üzere. Ama sınavda diyelim ki, şimdi sınavda ekstent olarak çeşitli use case'ler belirledim. Bunların da senaryo metnini yazacak mıyız? Hayır, sınavda kesinlikle yazılmıyor.
+
+306
+01:52:00,115 --> 01:52:28,115
+Zaman da yetmez çünkü. Sınavda sadece yeni sayı gelişi için olanını yazın diye. Şurada mesela A çıkkında açık açık. Sadece onu yazın demişim. Ama proje evinde vaktiniz olacak. Ekip çalışması yapıyor olacaksınız. Bu nedenle eğer kendinizi böyle bir şey çizerken görüyorsanız, ben bunu akıl ettim. Projenin kendi içerisinde söylenmemiş ama...
+
+307
+01:52:28,115 --> 01:52:41,655
+Mantıklı bir şey. Ben bunu kabul kısıtları da yazayım ve işte bizim projemiz daha farklı olsun değerlerinden gibisinden düşünüp o zaman projede yazarsınız bunların ayrıntılarını ama sınavda yazmazsınız.
+
+308
+01:52:42,716 --> 01:52:44,155
+Çok teşekkürler hocam. Sağ olun.
+
+309
+01:52:44,496 --> 01:52:48,296
+Ne demek. Evet, başka sorusu olan arkadaşım var mı?
+
+310
+01:53:36,671 --> 01:54:00,311
+Hiçbirinin arasında bir ilişki yoksa o zaman kendinizi bir sorgulayın. Bunların içerisinde illa bir ilişkiler olması gerekiyor. O yüzden ne kadar uygun dediysem de şu şema tam not alacak bir şema değil takdir edersiniz. Aradaki mutlaka inkülünt ve ekstans ilişkini göstermiş yanınızdadır demişim ama siz onu gereklidir diye algılayın lütfen.
+
+311
+01:54:05,171 --> 01:54:05,931
+Şuna bakalım.
+
+312
+01:54:06,484 --> 01:54:34,244
+Şimdi işte neymiş? Bu abonelik yeni sayı geliştirmeyi biraz geliştirmeye çalışmışım. Ne olmuş? Yeni sayı geldiğinde eski abonelik veya yeni abonelik olma durumu var. Aslında bunlardan bir tanesi yani mevcut abonelik varsayılan case'imdi. Aslında o senaryo metnine dönersem şu kısmı hiç göstermesem olurmuş. Bu ekstrendi çizdim.
+
+313
+01:54:34,484 --> 01:54:56,984
+Ama bir include de göstermem lazım. Şimdi siz sınavda diyelim ki veya projede böyle bir şey yazdığınızda tek şamanız da buysa diyelim ki tamam extend ilişkisini doğru gördüğünüzü anladım ama include ilişkisini doğru anladığınızı ifade edemediniz. Oradan puan kırılabilirsiniz. Kırılırız diyelim.
+
+314
+01:54:58,984 --> 01:54:59,344
+Sonra.
+
+315
+01:55:23,636 --> 01:55:33,876
+Şurada pek include görmedim. Bu aşama da uygun desem de, ikisini de görmek istiyorum arkadaşlar. Güncelleyim ben en iyisi. Bu arada kendime de bir notlaşayım da.
+
+316
+01:55:48,083 --> 01:55:48,564
+Evet.
+
+317
+01:55:55,060 --> 01:55:57,900
+Bu şeylere, includes.
+
+318
+01:56:01,492 --> 01:56:07,731
+Ekle ve bu şu noktalarını düzenle.
+
+319
+01:56:12,787 --> 01:56:14,188
+Ben de diyorum.
+
+320
+01:56:14,627 --> 01:56:14,827
+Peki.
+
+321
+01:56:18,747 --> 01:56:22,147
+Evet, peki. O zaman ben bunu iptal etmem. Saklarım.
+
+322
+01:56:22,887 --> 01:56:24,227
+O şekilde devam ederiz.
+
+323
+01:56:26,887 --> 01:56:29,287
+Bir şey daha var şu arada. İyi peki.
+
+324
+01:56:30,100 --> 01:56:48,220
+Tamam, peki. Ayrıca egzersizi biraz daha ilerletmek şeklinde. Bu arada şunu da söylemeyi unutmayayım. Yeni sayı gelişi bu basılı ve elektronik include şeklinde göstermek doğru değil. Extend olarak göstermek gerekiyor. Onu da unutmayın. Tartıştık zaten.
+
+325
+01:56:49,140 --> 01:56:53,500
+Peki, şimdi gereksinimler belgesine son bir paragraf eklersek ne olmuşmuş? Bakalım.
+
+326
+01:56:54,340 --> 01:57:05,420
+Kütüphancasının içerisine tıklayarak değiştirebileceği, okuyucuların ise değiştiremeden sadece içeriğini görebilme yetkisinin sahip olduğu yukarıda anlatılan ekrana dergenin check-in kartı denilir.
+
+327
+01:57:05,420 --> 01:57:12,040
+Ha, check-in kartı buraya yazmışım. Peki, tamam, güzel. O zaman nasıl bir şey söyleyebilirim?
+
+328
+01:57:13,319 --> 01:57:17,140
+İşte yeni sayısı gelmişse mutlaka check-in kartı...
+
+329
+01:57:17,140 --> 01:57:45,020
+gösteriliyor. Eğer, şimdi şunu anlamadım doğrusu, şunlaki extensi anlamadım ne düşünmüşüm. Ama check-in kartı gösterildiğinde eğer bu kütüphaneciyse, hakkı varsa onun düzenlenmesi söz konusu olabilir. Ama okuyucuysa o düzenleyemez. Bu anlamda şu extensi uygun ve hatta şu kütüphaneciden check-in kartı düzenlenmesini bir okta çizemişseymişim aslında daha güzel olabilirmiş.
+
+330
+01:58:09,779 --> 01:58:23,299
+Abonelik, metne gideyim bakayım. Belki oradan abonelik ve kart gösterimi orada bir şeyler bulabilirim belki. Şimdi bakalım. Bu kutu gösterimi burada. Alternatifte.
+
+331
+01:58:28,340 --> 01:58:49,239
+Haa, şurada bakın, alternatifte 3 radyo kütüphancı önceki araç sayının işlemini yapmak isterse, işte sistem gerilen yeni kucaklarını çizerek sayıların durumlarının yitabından alın. Burada bir check-in card olayı var. Peki şurada var mı? Burada da var. Yani hem ana senaryoda geçiyor, hem alternatif senaryoda geçiyor. Haa, ama bir dakika.
+
+332
+01:58:50,384 --> 01:59:14,043
+Basılı aboneliği varsa şu gösterir. Basılı aboneliği varsa bu yıl ait sayılar kutucuk olarak gösterir ama basılı aboneliği yoksa da gösterilmez. O yüzden belki de, ha ama bir dakika, şurada diyor ki önceki yıl ait sayının işlemi yapmak isterse bu önceki yıl ait sayı basılı da olabilir, basılı olmalıdır çünkü kutucuk söz konusu.
+
+333
+01:59:18,931 --> 01:59:19,412
+Hmm.
+
+334
+01:59:21,011 --> 01:59:31,992
+Eh, yani, tamam, peki. Şuradaki alternatif, önceki ile ait işlemi olması durumunda bu gösterildiği için, o bir extends, tamam, şimdi oturdu diyelim ki.
+
+335
+01:59:32,492 --> 01:59:40,531
+Böyle sizin de mesela, şimdi arada bir şeyin ne çizdiğinizi, include extends, doğru çizdiğinizi anlamak için tabii ki geri dönüp bu metne bakacağım.
+
+336
+01:59:41,591 --> 01:59:48,332
+Nerede yazdınız, alternatifle geçiyorsa, extends, okey, tamamdır, şeklinde oraya tikimi atacağım.
+
+337
+01:59:49,011 --> 01:59:50,171
+Bunu anlamışsınız diyeceğim.
+
+338
+01:59:51,471 --> 01:59:51,691
+Peki.
+
+339
+01:59:54,412 --> 01:59:54,652
+Evet.
+
+340
+01:59:55,231 --> 01:59:59,311
+Nihayetinde günün sonunda bu işama daha güzel gözüküyor.
+
+341
+02:00:00,000 --> 02:00:28,000
+Bakın, abonelik yeni sayı gelişi. Şu şeyi de bir çizmek lazım aslında. Şu basır elektroniği de çizmek lazım. Burada biraz parça parça vermişim noktada. Şu işin şu aspektini, şu bakış açısını incelenirken şu şemayı çizmişim. Öbür bakış açısını çizerken şu şemayı çizmişim gibi olmuş. Ama buradaki, yukarıdaki üç tane uygun şemayı aslında şu şu an birlikte çizdim.
+
+342
+02:00:28,000 --> 02:00:46,000
+Bizim şema şeklinde göstersek daha doğru. Öte yandan, şunu da iyi anlaşılmış oluyor. İyi, böyle bir şema. Peki, soru soran arkadaşım var mı? Buraya kadar yaptıklarımızdan.
+
+343
+02:00:53,140 --> 02:01:10,920
+Yoksa o zaman son adımımıza geçebiliriz. O da C şıkkı olan, aslında C şıkkı olması gereken alan modelini oluşturmak. Bunun için yapacağımızı hatırlatırım. Kullanım senaryosu metnine bakacağız. Buradaki bütün isimleri.
+
+344
+02:01:11,347 --> 02:01:23,788
+aday sınıf olarak belirleyeceğiz. Eğer sıfat görüyorsak bunları direkt aday sınıflardan birinin üye alanı olarak ilişkilendirebiliriz.
+
+345
+02:01:23,788 --> 02:01:39,247
+Ama bunu ikinci geçişle de yapabiliriz. Yani önce bütün adayları listeledik geniş bir biçimde. Ondan sonra bazı adaylara bakarken bu aslında bir üye alanı olmak için uygun. Hangisi için olabilir? Tüm listeyi gözden geçelim.
+
+346
+02:01:39,347 --> 02:01:45,648
+Ha, şu üye alanı olabilir diye yanına yazarım. Birlikte yapmıştık ya. O şekilde gidebilirsiniz.
+
+347
+02:01:45,648 --> 02:02:04,167
+Veya hani o şekilde gitmeden de ana hatlarıyla metni kafanızda oturtabiliyorsanız, nesne yönet programlama dersinden de edildiğiniz deneyimle belki tek geçişte de hem varlıkları hem üye alanları oturtmaya çalışabilirsiniz.
+
+348
+02:02:07,347 --> 02:02:16,528
+Hem aslında bu doğal dille yazılmış gereksinimlere hem de kullanım senaryosu metnine ikisine birden bakmak yararlı olacak.
+
+349
+02:02:17,087 --> 02:02:22,847
+Çünkü yani hiçbir şey olmasa bile kullanım senaryosu metninde alternatif senaryolar var.
+
+350
+02:02:23,327 --> 02:02:26,347
+Onlar bizim şeyde de işimize yarayacak. Tasarımda işte metotlar...
+
+351
+02:02:26,996 --> 02:02:41,175
+Belirlerken de işe yarayacak. Ama şu an vize alıştırması yapıyoruz. Bu nedenle metotları olmayan ama diğer geri kalan her şeyin olduğu bir UML sınıf işlemesi oluşturur.
+
+352
+02:02:45,024 --> 02:03:08,504
+15, daha mı fazla süreversem? Çünkü hadi geleneksel yöntemle, yani bütün isimleri yazmak falan gibi çalışmak biraz daha uzun sürebilir. O yüzden şimdi 10, 55, 20 dakika dersek 11, 15 oluyor. Daha da fazla uzatmayalım.
+
+353
+02:03:09,811 --> 02:03:20,412
+Çok da saat 12'de geçirmeyelim ders süremizi. 10-15-11-15 arası alan modeli oluşturma diyelim.
+
+354
+02:03:22,912 --> 02:03:29,131
+Şunu şimdi yine bir şu şekilde yapıp, şunu küçültebilirim.
+
+355
+02:03:39,347 --> 02:03:41,907
+90'da ya da Fitbit de diyebilirdim.
+
+356
+02:03:43,427 --> 02:03:45,087
+Genişliğe sıvız.
+
+357
+02:03:46,368 --> 02:03:47,268
+Tamam, peki.
+
+358
+02:03:48,507 --> 02:03:50,047
+Biraz daha büyütsen şöyle.
+
+359
+02:03:52,167 --> 02:03:53,688
+Tamam, peki arkadaşlar.
+
+360
+02:03:53,948 --> 02:03:57,448
+Hadi size 20 dakika vakit bir alan modeli oluşturun bakalım.
+
+361
+02:03:58,067 --> 02:04:02,788
+Ondan sonra gönüllü bir arkadaşımın, bir iki arkadaşımın alan modelini birlikte tartışacağız.
+
+362
+02:23:38,708 --> 02:23:48,268
+Evet arkadaşlar, bu arada süreniz anlada oldu diyelim. Yaptıklarını paylaşmak isteyen arkadaşın varsa lütfen buyursun.
+
+363
+02:24:16,691 --> 02:24:21,611
+Ya da hocam, bir beş dakika sonra olacak diyen arkadaşım varsa o da olabilir.
+
+364
+02:24:23,691 --> 02:24:25,051
+Evet, sağ olsiniz.
+
+365
+02:24:43,379 --> 02:24:51,639
+Yoksa şunları tartışabilirim. Çözümlerimizi paylaşabilirim. Daha doğrusu çözümlerini tartışabilirim. Zaten paylaşmışım.
+
+366
+02:24:52,799 --> 02:25:06,739
+Şimdi burada üç tane temel varlığımız var. Süreinler, elektronik dergiler ve basılı dergiler. Daha doğrusu terbiye araştırmalı diyeceğim. Sorum var.
+
+367
+02:25:08,435 --> 02:25:10,115
+Ben gösterebilir miyim?
+
+368
+02:25:10,456 --> 02:25:14,315
+Buyurun lütfen, ben stop şey ederim, siz bir göstereyim.
+
+369
+02:25:20,500 --> 02:25:22,880
+Anlatın bakalım tasarımınızı.
+
+370
+02:25:24,639 --> 02:25:32,579
+Burada bütün kütüphane içindeki bütün yayınlar bulunacak. Bununla ifade edilecek.
+
+371
+02:25:33,700 --> 02:25:45,020
+İçinde bu süreli yayın her yayının mutlaka ISSN ve ismi olmalı. Bu elektronik olursa sadece URL olur.
+
+372
+02:25:46,963 --> 02:26:06,963
+Yürel ve backlog olur. Çünkü bir yürelden bütün sayılarına erişebileceğini müzis yazıyordu. Basılı olursa da sayıları vardır. En az bir sayı içerisindedir. Bir basılı yayın varsa en az bir sayısı olmalıdır. O yüzden bu şekilde yaptım.
+
+373
+02:26:06,963 --> 02:26:14,023
+Ve sayının da hangi yılda bulunduğu, hangi sayı olduğu.
+
+374
+02:26:14,708 --> 02:26:21,708
+Ve durumu bilgileri saklanıyor. Durum bilgisinde sadece geldi ve bekleniyor. İki durumu olabilir dediği için bunu yaptım.
+
+375
+02:26:22,208 --> 02:26:22,488
+Tamam.
+
+376
+02:26:23,316 --> 02:26:48,876
+Tamam. Peki, uygundur. Şimdi ufak tefek bir şey söylemek istiyorum. Üye alanları çizerken, nesneye elimden hatırlayın, üye alanları veri gizleme ilkesine uymak için her zaman için private tanımlıyorduk. O yüzden şeyi çizerken, mesela işte ISSM, isim, yörar, beklok, bunlar üye alan. Başlarına eksi koyup bir tane boşluk bırakmayı unutmayın. Private üye alanlar oldukları gözüksün.
+
+377
+02:26:49,492 --> 02:27:08,511
+Öte yandan, şimdi şurada siz parça bütün ilişkilerini kullandınız, elmas ile gösterim. O açıdan bir sorun yok ama şunu söylemek istiyorum. Eğer elmas değil de bireç oklu sahiplik normal ok olsaydı diyelim ki sadece çizgi şeklinde bırakmayı mutlaka ok ucu görmek istiyoruz diyeceğim.
+
+378
+02:27:08,511 --> 02:27:17,492
+Ama zaten bu elmas gösteriminde zaten bu parça bütün ilişkisi ve öbür uçta da bir ok zaten anlaşılır. O anlama gelmek istiyor.
+
+379
+02:27:17,492 --> 02:27:45,452
+O açıdan bu şemada bir risk yok ama elmas kullanıldığı için risk yok. Elmas kullanılmasaydı o zaman oka dikkat etmek gerekirdi ve hatta bunların üstündeki niceliklere yani işte bir basılı dergi bir ya da daha fazla sayı ile ilişkiledir şeklinde okun üzerine ilgili sınıf tarafına ilişkinin niceliklerini de yazmak gerekir.
+
+380
+02:27:45,492 --> 02:27:58,171
+Bunu unutmayın. Ama elmas kullandığınız için o zaten o anlama gelmektedir. Bu şema için problem yok. Bu şema için problemim. Bu eksileri çizmeyi unutmayın. Üye alanların tarihli olduğunu göstermeyi unutmayın.
+
+381
+02:27:58,708 --> 02:28:26,247
+Öte yandan, şimdi şunu bir değerlendirelim birlikte. Yayınlar söyleyen şeklinde olacak. Bunun iki tane alt sınıfı var. Elektronik, basılı. Tamam, çok güzel. Şimdi basılı derginin sayılarını falan check-in kartında göstermek gerekecek. Elektronik dergi için böyle bir şey yok. Tek bir tane sayı akıyor. Backlog'a göre şeylenecek. Ama bir şekilde şunu da unutmayın. Bütün bu yayınlar eş biçimli olarak işlenebilmeli.
+
+382
+02:28:26,708 --> 02:28:36,407
+Bütün yayınlanımı dök dediğinde, bu kalıtımda çok biçimlilik ilişkisi gereğince, hem elektronik olanlar hem basılı olanlar bir listelenecek diyelim ki.
+
+383
+02:28:36,407 --> 02:28:49,488
+Ama eğer diyelim ki bir basılı yayının sayılarını da görmek istiyorsa, belki kullanıcı bu basılı bir derginin üstüne tıklayınca onun ayrıntılı check-in kartı da gözükebilecektir diyelim ki.
+
+384
+02:28:54,708 --> 02:29:08,468
+Sınıfta tanımlanmış olmalı. Gerçi daha tasarımı şey etmiyoruz ama yeri gelmişken söyleyeyim. Ayrıca analizde de tasarımda hiç gözlerinde bulundurmadan yapılan alan model de çok zor bir şey değil. O yüzden aklımızda ufak bir kenarında o da yer alabilir.
+
+385
+02:29:09,308 --> 02:29:22,708
+Şeyde bir sakınca yok. Yani işte süre yayınlara işte sayı bir check-in kartı göster metodu eklemenin bir sakıncası yok. Gerçi elektronik oranda bu olmayacak ama onda da check-in kartı göster...
+
+386
+02:29:22,708 --> 02:29:31,848
+Yerine işte URL backfile bilgilerini yazacak. O zaman belki check-in kartı göster gibi bir metot ismi yerine Surreyya'nın sınıfında.
+
+387
+02:29:32,628 --> 02:29:55,907
+Ek bilgi göster metodu olur. Eğer bu bir elektronik dergisi, ek bilgi gösterme, URL backlog bilgilerini göstermek şeklinde olur. Eğer bu basılı yayınlısı, o zaman tüm sayılarının, check-in kartını göstermek şeklinde olur. Herhangi bir nesline yönelik ilkeyi çiğnemeden hepsine uygun biçimde bu işi yapabildik.
+
+388
+02:30:00,000 --> 02:30:23,520
+Onu söyleyeyim. Şimdi eğer bir dergi hem elektronik hem basılıysa ne olacak? Nasıl modellenecek? Yani nasıl sisteme kaydedilecek? O zaman şöyle olur. O süreç yayının elektronik aboneli için ayrı bir süreç yayının nesnesi, basılı versiyonu için ayrı bir süreç yayının nesnesi koymak zorundayız.
+
+389
+02:30:28,000 --> 02:30:42,119
+Bu türden birden abonelerimiz varsa o zaman iki nesne olmak zorunda. Biri elektronik nesnesi, biri basılı nesnesi olmak üzere. Bunların da ISSN'leri aynı olacak. Farklı değil.
+
+390
+02:30:42,119 --> 02:30:55,299
+Orada belki işte sisteme yeni bir süre eklerken duplike ISSN olabileceğini gözden kaçırmamamız lazım. Bu önemli bir şey. ISSN bir tekit tanımlayıcıdır.
+
+391
+02:30:56,000 --> 02:31:07,639
+Mesela Nesli Yenik programlama derslerinde hatırlarsanız, mesela diyelim ki galeride arabalar yer alıyor. Galeriye yeni bir araba konulacağı zaman, işte aynı plakalı bir araç var mı yok mu?
+
+392
+02:31:07,639 --> 02:31:20,500
+Onun bir bakmak gerekiyordu. Aynı plakalı aracı iki kere eklemeyelim söz konusu vardı. Burada da benzer şekilde şimdi aynı dergi iki kere eklenmemeli ama o zaman şöyle bir şey yapmamız gerekecek.
+
+393
+02:31:24,000 --> 02:31:49,860
+Casting yapmamız gerekecek. Tip kontrolü type casting. Şimdi, diyelim ki yayınlara yayın ekle metodu var. Bir tane süreli yayın eklenecek. Gerçi o tasarımın konusu ama hani şimdiden bir söyleyeyim, konuşmakta yarar var. O zaman o yayın ekle metodunda öncelikle bakacağız. Şimdi aynı ISS'ine sahip bir yayın var mı? Peki, eğer varsa hemen kafadan reddetmemeliyiz. Onu bir kontrol etmeliyiz.
+
+394
+02:31:52,000 --> 02:32:17,420
+Eğer işte o yayın instance of elektronik ise ve yeni eklenecek olan da instance of basılı ise o zaman buna izin ver ama kafadan reddetme şeklinde biraz. Çok da güzel olmayan app kodu yazmamız gerekecek. Bunu ancak bu tasarımı düşündüğümde bu kalıtım kullanmanın bu ufak dezavantajını algılayabiliyorum.
+
+395
+02:32:20,000 --> 02:32:37,040
+Böyle bir çözüm hiç de yanlış değil. Olabilecek bir çözüm. Ama sonra bunu tasarımı aktardığımızda böyle ufak bir dezavantaja sahip olacak bir çözüm. Ama problem yok. Hepsi bence aynı puanlıktır demek istiyorum. Teşekkür ederim.
+
+396
+02:32:37,760 --> 02:32:46,060
+Hocam, bu da interfej yapsam field yazamıyordum elektronik bir basılıyor. Böyle bir sıkıntı oldu.
+
+397
+02:32:46,060 --> 02:32:46,940
+Evet.
+
+398
+02:32:47,540 --> 02:32:54,159
+Doğru düşünürüz. Belki şey yapabilirsiniz ama, süreç sınıfını abstrak yapmayı düşünebilirsiniz belki.
+
+399
+02:32:57,907 --> 02:33:19,387
+Olabilir. Çünkü madem iki ayrı söylediğiniz iyi oldu, hatırlattığınız iyi oldu. İlk anda gözünün dikkatinden kaçmış. Şimdi bir süreli yayın ya elektronik olacak ya basılı olacak. Başka bir alternatifimiz yok. O yüzden herhangi bir süreli yayın nesnesi aslında olmamalı sistemle süreli yayını abstract yapmamız daha doğru olacaktır diyebilirim mesela.
+
+400
+02:33:21,876 --> 02:33:43,656
+Ama şöyle bir durum söz konusuysa, diyelim ki mutlaka dergi aslında basılıdır, süreğin basılı, süreğindir. Ama elektroniği de varsa o zaman bir alt sınıfı, yani şu basılı sınıfı hiç olmadan sadece elektronik koyup, eğer süreğin basılıysa onu bu üst sınıf olarak düşünmek de söz konusu olabilir.
+
+401
+02:33:43,656 --> 02:33:49,276
+Ama bence şu şekilde ve süreğini abstrakt yapmak daha doğru, öyle söyleyeyim.
+
+402
+02:33:51,572 --> 02:33:53,632
+Peki [öğrenci], sizin başka sorunuz var mı?
+
+403
+02:33:54,592 --> 02:33:55,531
+Söylediklerim hakkında.
+
+404
+02:33:56,691 --> 02:33:57,971
+Tamam, teşekkür ederim [öğrenci].
+
+405
+02:33:58,492 --> 02:34:01,092
+Başka paylaşmak isteyen arkadaşım var mı?
+
+406
+02:34:02,652 --> 02:34:04,891
+Kalıtım dışında da çözümler olabiliyor çünkü.
+
+407
+02:34:05,612 --> 02:34:06,832
+Zaten aşağıda görüyorsunuz ama.
+
+408
+02:34:07,592 --> 02:34:08,311
+Göreceksiniz ama.
+
+409
+02:34:18,484 --> 02:34:19,435
+Teşekkürler.
+
+410
+02:34:22,548 --> 02:34:23,368
+Tam paylaşıyorum.
+
+411
+02:34:23,775 --> 02:34:51,775
+Peki, şimdi bu durumda doluğun tasarımı şu sağ üstteki yaptığım tasarımla benziyor. Biraz daha ayrıntılısı. Yani kalıtım kullanan bir tasarım. Kalıtımı biraz daha değişiklik kullanabilirdik. Şu alttaki az önce sözde söylediğimin şimdi burada şemasını görüyorsunuz. Söyleyin aslında basılıdır. Sayılar içerir mutlaka. Eğer elektronik dergi ise o zaman URL back...
+
+412
+02:34:51,775 --> 02:35:07,015
+File bilgisi de vardır. Ama şimdi burada sadece basılı ya da sadece elektronik veya her ikisi bizden türünden aboneli nasıl ele alacağız? Bir onu da düşünelim. Buna aykırı bir şey olmasın yaptığımız çözüm.
+
+413
+02:35:08,015 --> 02:35:15,036
+Şimdi birinci case sadece basılı ise o zaman hiç problem yok. Söyleye yayın nesnesi oluşturulur. İlgili sayılar veririz.
+
+414
+02:35:19,775 --> 02:35:33,036
+Sayılar oluşturulmaz. Sürelerin alt sınıfından olan elektronik dergi sınıfından mesle oluşturulur. Her ne kadar onda sayılar üye alanı çok anlamlı olmasa da, çünkü basılı sayıları yok.
+
+415
+02:35:35,891 --> 02:35:57,492
+Bu sayılar dizisi alt sınıfa kalıtımla geçmekle birlikte kullanılmayacak. Bu bir aslında sıkıntı diyebilirim. Hata değil ama nesneye yönelimin çok da güzel bir kullanımı değil. Öyle söyleyeyim. Bu nedenle alttaki mi, üstteki mi derseniz ben üstteki derim.
+
+416
+02:36:03,891 --> 02:36:22,772
+Hepsettiğim instant soft yapmak gerekecek. O daha ufak bir sakınca diyelim. Ama alttaki çözümümde üst sınıftan alta hiç kullanılmayacak bir üye alanın geçmesi bence daha büyük bir kusur diyelim. Hata değil ama kusur şeklinde nitelendireyim bunu.
+
+417
+02:36:23,332 --> 02:36:30,731
+Peki, bu alttaki tasarımda hem basılı hem elektronik ise ne olacak? O zaman bakın, o dönemde hiç problem yok.
+
+418
+02:36:31,891 --> 02:36:45,992
+İngiliz sayılar bu sefer, bu sayılar dizisi alt sınıfta anlam kazanmış olacak, yer alacak bunlar. Hem de elektronik dergi olmasına ait bilgiler de yer alıyor olacak. O zaman bir problem olmayacak o örnekler için.
+
+419
+02:36:59,891 --> 02:37:25,572
+O senaryoyu da destekleyebilecek bir çözüm alttaki. Ama hiç kalıtım kullanmadan da bir çözüm yapabiliriz arkadaşlar. O da soldaki çözüm. Süreli yayında, hemen hemen bütün bilgiler süreli yayında. Eğer bunun elektronik aboneliği varsa, işte birebir sahiplik ki ok yönünde aslında şuraya bir ok çizsem iyi olurmuş.
+
+420
+02:37:26,291 --> 02:37:52,651
+Şu tarafa, şuna. Elektronik derginin süre yayını bilmesine gerek var mı? O biraz kodda belli olacak diyelim ki. Şunu da sarı olarak çizeyim. Sarı olanda olan yön soru işareti. Yani olsa olmalı mı bilemiyorum. O yüzden hani şu aşamada hiç koymayayım diyelim.
+
+421
+02:37:53,040 --> 02:38:03,280
+Andu, andu. Evet. Ama belki sonra tasarımımı yaparken bu öbür yönde ilişkiyle koymam gerektiğini keşfedebilirim. O zaman koyarım.
+
+422
+02:38:03,924 --> 02:38:29,824
+Ama en azından bu kadar süreç yerinden bir elektronik dergiye doğru olan ok olmalı diye düşünüyorum. Ama zaten şu an ok çizmemiş olsam da bakın süreç yerine E-dergi, elektronik dergi türünden üye alan koyduğuma göre zaten bu ok var. Yani üye alan olarak göstermişim. Ok olarak çizmesem de olur. Ama yani bu oklar çizemeyi bir bakışta anlamak için iyi bir yönlendirici oluyorlar.
+
+423
+02:38:31,924 --> 02:38:42,024
+Eğer bir şeyi tembellik edeceksen oku çizip şunu yazmamak, E-dergi alımını yazmamak belki daha tercih edilir.
+
+424
+02:38:42,432 --> 02:39:01,132
+İkisay tercihidir ama neyse. Yapmışken ikisini de yapalım diyelim. Şöyle de o çizmek daha güzel olacak. Ve süreliğin sayıları ise işte bir parça bütün ilişkisiyle sayı sınıfından nesnelerle dizi şeklinde veya işte Linked List Table neyse hangisi daha uygun olursa yapılır.
+
+425
+02:39:01,132 --> 02:39:10,412
+Buradaki üç tasarımdan hangisini tercih edersin derseniz bu sol üsttekini tercih ederim. En iyisi bu, bu aşamada.
+
+426
+02:39:11,631 --> 02:39:39,572
+Yandaki kalıtım ikinci tercih, alttaki kalıtım üçüncü tercih şeklinde bunu değerlendirebilirim. Çünkü yani işin özünde kalıtım daha ağır sıklet bir ilişki, sınıf düzeyinde bir ilişki. Yani bir şuradaki tasarımda örneğin basılı sayı ve elektronik dergiyi, süreyeyim art sınıfı ise yani bütün basılı sayı nesneleri de bir aslında süreyeyim örneği olacak mesela. Yani kalıtım aslında sınıf düzeyinde tanımlanmış olan.
+
+427
+02:39:39,631 --> 02:39:44,391
+Ama parça bütün sahiplik gibi ilişkiler nesne düzeyinde tanımlı bir ilişki.
+
+428
+02:39:44,612 --> 02:39:47,432
+Belirli bir süreliğin elektroniklerde aboneliği yok mu?
+
+429
+02:39:47,752 --> 02:39:51,791
+Tamam, o zaman oradaki e-dergi üyesinin değerini ne alın?
+
+430
+02:39:52,492 --> 02:39:59,252
+Mesela. Ondan sonra sayı geldi. Ondan sonra o sayı nesnesini eklerim o ilgili süreliğe.
+
+431
+02:40:00,000 --> 02:40:16,819
+Neler arasında kurulmuş oluyor aslında ilişki. Sonra diyelim ki o derginin o sırasında bir şey oldu, yırtıldı, bir şey oldu falan. O zaman o nesneyi sileceğim. Yani bu ilişkiler nesneler arasında ve çalışma zamanında değiştirilebilir türden ilişkiler. Ama kalıltımı bir kere tonladınız mı?
+
+432
+02:40:18,260 --> 02:40:44,559
+Sınıf düzeyinde olduğu için tüm nesnelere etkileyen bir ilişkidir şeklinde diye düşünebiliriz. Bu nedenle genelde kalıtımın daha ağır skret bir ilişki olmasından dolayı deneyimli tasarımcılar daha çok kalıtım yerine parça bütün gibi ilişkiler kullanabiliyorlarsa o çözümü tercih ediyorlar. O yüzden ilk tercihimin bu konumdaki tasarım olduğunu beyan ettim.
+
+433
+02:40:46,131 --> 02:40:54,511
+Evet, bu dediklerimden sorusu olan veyahut da hocam ben de şöyle bir şey düşünmüştüm falan diyen arkadaşlarım varsa konuşalım, tartışalım.
+
+434
+02:41:00,691 --> 02:41:02,111
+Annotation'ı kapatabilirim.
+
+435
+02:41:14,004 --> 02:41:16,084
+Evet, buyurun lütfen varsa konuşalım.
+
+436
+02:41:56,020 --> 02:41:59,139
+Giri yoksa o zaman kapatacağız dersi yavaş yavaş.
+
+437
+02:42:13,012 --> 02:42:18,032
+Peki, önce bir ufak bir anket daha yapmak aklıma geldi.
+
+438
+02:42:18,032 --> 02:42:19,132
+Bu arada.
+
+439
+02:42:20,852 --> 02:42:22,032
+Şimdi bir...
+
+440
+02:42:22,772 --> 02:42:24,512
+Tekrar girelim şuraya.
+
+441
+02:42:29,332 --> 02:42:32,332
+Şimdi normalde laboratuvar çalışmasını...
+
+442
+02:42:33,652 --> 02:42:54,211
+Aslında genelde laboratuvarı değil, notlandırılan bir çalışma geliyor daha çok aklımıza. Fakat birçok dersimizde notlandırılmayan sadece birlikte problem çözümü şeklinde uygulama çalışmaları da yapıyoruz. Burada olduğu gibi veya işte nesne öyle bir programlarında falan olduğu gibi.
+
+443
+02:43:01,652 --> 02:43:24,731
+Daha çok hoşunuza gittiği ve tercih edersiniz. Yoksa benim size sınav gibi soruyu sorup, hiçbir şekilde geri bildirimde bulunmayıp, sonra size yanıtlarınızı notlamam ve daha sonra çözümleri yayınlamam gibi bir notlanan laboratuvar şeklinde mi yapmayı tercih edersiniz?
+
+444
+02:43:24,731 --> 02:43:26,072
+O olacak.
+
+445
+02:43:29,811 --> 02:43:37,572
+Lab uygulamasının nasıl olmasını tercih edersiniz.
+
+446
+02:43:37,572 --> 02:43:55,452
+Birinci şık, notlanan ve çözümleri ile notları sonradan çıkılan lab.
+
+447
+02:43:56,435 --> 02:44:23,155
+Şeklinde. İkincisi ise notlanmayan, öğrenci çözümleri ve alternatif hoca çözümlerinin kalkışılıp değerlendirildiği
+
+448
+02:44:24,371 --> 02:44:42,371
+Uygulama seçeneklerimiz bunlar. Create poll diyorum. Ve şimdi bakayım şu şöyle oldu. Buraya kopyalım, chatten yapıştırayım.
+
+449
+02:44:47,603 --> 02:44:55,443
+Niye görmüyorum ben chat'i? Stop share mı diyeyim önce? Evet, stop share demem gerekiyormuş. Bir yazayım, göndereyim, tekrar paylaşalım.
+
+450
+02:44:57,903 --> 02:45:04,043
+Sadece şey mi paylaşayım? Mesela şunu paylaşayım. Tamam, peki.
+
+451
+02:45:05,923 --> 02:45:13,203
+Evet, oylarınızı bekliyorum arkadaşlar. Bakalım ne çıkacak merak ediyorum. Bir dakika bekleyelim bunun için.
+
+452
+02:46:09,876 --> 02:46:18,456
+Her şekilde paylaşayım bir tekrar şu işi ben. Ama yani parçam yaparken chat ekranını ayrıca görememem de kötü bir şey ya.
+
+453
+02:46:20,015 --> 02:46:28,596
+Chat tıklıyorum. Ha geldi. Ya bir şekilde o zaman bir odak problemi oldu herhalde chatim sistemimle ilgili. Neyse tamam.
+
+454
+02:46:40,275 --> 02:46:52,275
+Kaç oy verilmiş neçmiş merak ediyorum ama daha oylamayı kapatmadığım için Rizat'a basarsam belki henüz oy vermemiş olanların oyunu etkilemem söz konusu olabilir diye daha Rizat'a bakmıyorum.
+
+455
+02:46:56,595 --> 02:46:58,435
+11.40'a kadar oylama yapalım.
+
+456
+02:47:02,695 --> 02:47:08,335
+Top share deyip ben kendim bir göreyim bakalım. Kaç oy verirmiş. Top share deyip.
+
+457
+02:47:10,855 --> 02:47:12,075
+Zaten bakayım.
+
+458
+02:47:14,415 --> 02:47:23,275
+Şimdi bir 24 oy falan vermiş. Geçen ankette de hemen hemen o kadar oy vardı ama 25 oy. Tam bir oy daha geldi bu arada.
+
+459
+02:47:24,211 --> 02:47:24,511
+Peki.
+
+460
+02:47:26,691 --> 02:47:33,252
+Hani şunu için, herkes oyunu kullanmışsa boş boşta beklemeyelim diye bir yandan da ona bakmak istiyorum da o yüzden.
+
+461
+02:47:39,347 --> 02:47:54,968
+Peki, herhalde yine oy vermeyi istekli, görüş bildirmeyi istekli arkadaşlarım. Şu an katılan hepsi değil de işte 24-25 falan yarısı kadar olduğunu düşünüyorum. O zaman şimdi bir sonuçları göstereyim yine size.
+
+462
+02:47:56,435 --> 02:48:09,916
+Basın tepsiyi paylaşayım. Evet. Sonuçta uygulama şeklinde olması ağırlık kazandı. Genelde bizim düşüncemiz oydu da o yüzden hep bir şekilde genelde uygulama şeklinde yapıyoruz. Aslında bu laboratuvar sahip.
+
+463
+02:48:10,611 --> 02:48:29,011
+Peki arkadaşlar, teşekkür ederim. Katılın arkadaşlara teşekkür ederim. Aktif katılın arkadaşlara bir ekstra teşekkür ederim. Haftaya sınavımız var. Sınavdan konuştuk aslında, anlattım. Ama yine de sorunuz varsa, kapımıza takılan bir şey varsa buyurun sorun.
+
+464
+02:48:32,884 --> 02:48:39,623
+Hocam, bence uygulama böyle güzel oldu vize oyuncusu. Teşekkürler. Böyle doldurtmasını düşündüğünüz için.
+
+465
+02:48:39,984 --> 02:49:07,984
+Bir şey diyelim, ne demek? Normalde bu uygulamayı asistan arkadaşlarla yapıyoruz. Bu haftayı biz dersin hocalarla başka bir şeyler yapmak falan anlamında kullanıyoruz. Ama şimdi bazı kıdemli asistanlarımız ayrıldılar, yeni asistanlarımız geldi, onların arasında daha var, yapmayan arkadaşlarımız vardı. O yüzden bu nedenle ben...
+
+466
+02:49:07,984 --> 02:49:19,103
+yaptım uygulamayı. Aramızda dinleyici asistan hocalarımız da var, yeni katılanlar. Onlar da bu şekilde deneyim kazanmış oldular seneye. Onlar yapacaklar bu şeyleri.
+
+467
+02:49:20,244 --> 02:49:35,923
+çalışmaları diyelim. Evet, şimdi chatten bakıyorum. Keşke daha fazla olabilse diyor ve altı izleyenler var. Yani iki tane yapabiliyoruz ancak. Birini vizeden önce, birini de finalden önce.
+
+468
+02:49:37,384 --> 02:49:47,923
+Aslında kafamızda şöyle bir şey var. Tool support, yani tool olarak sadece basit bir wild2ML kullanıyoruz falan. Daha sektörde kullanılan...
+
+469
+02:49:48,244 --> 02:49:59,443
+Bu zaman araçlarla belki daha böyle bir ayrıntılı lab çalışması resmi ya da gayri resmi yapılabilir ama bu kısa vadede yapabileceğimiz bir şey değil.
+
+470
+02:50:00,000 --> 02:50:04,000
+Daha orta vadede düşündüğümüz bir şey bu, Oya Hoca ile.
+
+471
+02:50:05,560 --> 02:50:09,900
+Ben şu uygulamayı koymadık ama aslında başlı başına bir başka ders bile olabilir.
+
+472
+02:50:09,900 --> 02:50:27,900
+Yani uygulamalı yazılım mühendisliği gibi, laboratuvar ortamında ilk başta sizleri yönlendirdiğimiz, daha sonra bu proje ödevinizi diyelim ki, bunu bir tool defteğiyle iş planlarınızı, görevlerinizi Jire ile tanımlayıp ilgili arkadaşlarınızı yapabilirsiniz.
+
+473
+02:50:28,000 --> 02:50:46,200
+Arkadaşlara atıp falan yani böyle bir şeyden dolayı, kodun örneğin GitHub'da tutacağınız birkaç kodlayıcı varsa onların kodu havuzda paylaşacağı falan gibi öyle bir şeyler yapmak niyetimiz de var ama daha hiç platiğe dökemedik. O yüzden bu işi orta var dediği şekilde söylüyorum.
+
+474
+02:50:47,400 --> 02:50:48,720
+Peki buyurun.
+
+475
+02:50:49,231 --> 02:50:56,371
+Bir de şey söyleyeyim ama bu laboratuvarın puanı %10 görünüyordu. Şimdi mesela bu şekilde yapılacaksa o %10 nereye eklenecek?
+
+476
+02:50:58,051 --> 02:51:00,471
+Sınavlara ve projeye eklenecek arkadaşlar.
+
+477
+02:51:00,912 --> 02:51:03,152
+Tamam. Teşekkürler.
+
+478
+02:51:03,672 --> 02:51:04,412
+Bir şey dinledim.
+
+479
+02:51:07,652 --> 02:51:12,971
+O zaman Allah'a ısmarladık diyorum arkadaşlar. Haftaya sınavda hepinize başarılar diliyorum.
+
+480
+02:51:13,391 --> 02:51:18,512
+Görüşmek üzere, sağa takın, sağa takın. İyi günler hocam, teşekkürler. Teşekkürler hocam, iyi günler.

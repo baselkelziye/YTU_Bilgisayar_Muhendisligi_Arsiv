@@ -1,0 +1,4223 @@
+1
+00:13:00,019 --> 00:13:01,299
+Arkadaşlar günaydın.
+
+2
+00:13:06,548 --> 00:13:07,347
+Günaydın hocam.
+
+3
+00:13:18,899 --> 00:13:22,759
+Hocam, başlamadan bir şey sorabilir miyim? Geçen hafta anlattığınız kodlarla ilgili.
+
+4
+00:13:23,100 --> 00:13:23,639
+Olur, tamam.
+
+5
+00:13:24,559 --> 00:13:33,799
+Siz bu ikili ilişkileri anlatırken, hani set owner ve mesela arabanın sahibiyle adamın arabasını aynı anda değiştiriyorduk ya.
+
+6
+00:13:34,259 --> 00:13:34,480
+Evet.
+
+7
+00:13:34,480 --> 00:13:42,480
+Orada eğer arabanın sahibini ileride tekrar değiştirirsek ama diğer adamda o arabaya hala erişebiliyoruz.
+
+8
+00:13:42,559 --> 00:13:46,480
+Yani arabadan eski sahibine erişemiyoruz ama eski sahibinde araba hala...
+
+9
+00:13:46,735 --> 00:13:48,735
+Duruyor yani yaptığımız kodlarda.
+
+10
+00:13:50,115 --> 00:13:52,475
+İkisini de aynı, arabaya sahipmiş gibi oluyor.
+
+11
+00:13:53,415 --> 00:13:56,735
+Doğru. Yani şimdi...
+
+12
+00:13:57,940 --> 00:14:16,440
+Ben yeni bir, hani bu örnekte daha önceki sahibini, sahibiyle o arabaya olan ilişkiyi öldürmedik. Ama önemli olan hani arabanın arabaya sorduğunda senin sahibin kim diye doğru kişiyi göstermesi gerekli.
+
+13
+00:14:17,920 --> 00:14:20,300
+Buna önlem olarak ne yapabilirdik?
+
+14
+00:14:22,580 --> 00:14:34,379
+Şey olmayan yani araba tarafından sahipliği teyit edilmeyen bütün araba sahiplerinin şeylerini kabul etmezdik.
+
+15
+00:14:34,580 --> 00:14:40,680
+Yani bundan sonra yazacağımız başka sınıflar varsa bunu kontrol ederek yazardık.
+
+16
+00:14:40,820 --> 00:14:47,879
+Yani birisi ben bir arabanın sahibiyim diyorsa mutlaka arabanın da onu teyit etmesini check ederdik.
+
+17
+00:14:49,427 --> 00:14:53,508
+Tamamdır.
+
+18
+00:14:55,947 --> 00:15:08,628
+Let me just briefly review what we covered in the previous lecture and then I will go on an example of composition relationship.
+
+19
+00:15:08,987 --> 00:15:09,388
+Okay.
+
+20
+00:15:11,508 --> 00:15:13,908
+First, let me open my camera.
+
+21
+00:15:15,067 --> 00:15:15,427
+Okay.
+
+22
+00:15:19,016 --> 00:15:21,016
+Arkadaşlar, ok.
+
+23
+00:15:18,100 --> 00:15:23,700
+Now, in previous lecture, we started with the object relations.
+
+24
+00:15:24,600 --> 00:15:36,600
+And we said that there are, when we write object-oriented code, there are different relations between the objects.
+
+25
+00:15:37,000 --> 00:15:37,139
+Okay.
+
+26
+00:15:37,379 --> 00:15:39,440
+So one of them is association.
+
+27
+00:15:39,840 --> 00:15:42,420
+That's the ownership relationship.
+
+28
+00:15:42,964 --> 00:15:44,764
+The other one is aggregation.
+
+29
+00:15:44,984 --> 00:15:50,164
+That is still ownership relationship.
+
+30
+00:15:51,264 --> 00:15:56,224
+But this is a little bit stronger than the association.
+
+31
+00:15:56,224 --> 00:16:04,284
+With aggregation, the first object has one or more.
+
+32
+00:16:04,639 --> 00:16:07,339
+Arkadaşlar, the second object.
+
+33
+00:16:08,460 --> 00:16:30,919
+So in the association relationship, the first object may have zero or more, the second objects in it, but in the aggregation, so we have a little bit stronger relationship, which says that you can have, you must have at least one or at least two of the objects and more.
+
+34
+00:16:31,296 --> 00:16:36,696
+And the composition relationship a little bit stronger than that.
+
+35
+00:16:36,816 --> 00:16:41,296
+In the composition relationship, the second object can only belong to one...
+
+36
+00:16:44,820 --> 00:16:46,640
+Type of the first object.
+
+37
+00:16:47,000 --> 00:16:47,140
+Okay.
+
+38
+00:16:47,380 --> 00:16:52,180
+So I gave the example of team and player.
+
+39
+00:16:52,600 --> 00:16:52,779
+Okay.
+
+40
+00:16:53,180 --> 00:16:58,940
+A team may have multiple players and a player may only belong to one team.
+
+41
+00:16:58,940 --> 00:17:05,539
+For aggregation example, I gave the bus route and bus stop example.
+
+42
+00:17:06,100 --> 00:17:11,900
+One bus route must at least, must have at least two bus stops.
+
+43
+00:17:12,279 --> 00:17:12,460
+Okay.
+
+44
+00:17:12,819 --> 00:17:15,659
+Arkadaşlar, and it can have obviously more bus stops.
+
+45
+00:17:16,159 --> 00:17:21,259
+Arkadaşlar, and for association relationship, I gave the example customer and order.
+
+46
+00:17:21,779 --> 00:17:24,579
+Arkadaşlar, customer may have zero or more orders.
+
+47
+00:17:25,019 --> 00:17:31,740
+Arkadaşlar, and the dependency relationship, so for association, aggregation, and composition.
+
+48
+00:17:32,359 --> 00:17:39,199
+Arkadaşlar, remember the second object must appear in the data member fields of the first object.
+
+49
+00:17:39,199 --> 00:17:39,639
+Arkadaşlar, okay.
+
+50
+00:17:40,199 --> 00:17:40,779
+So therefore,
+
+51
+00:17:40,819 --> 00:17:47,819
+Or if so, if we see that in the data member field section.
+
+52
+00:17:48,692 --> 00:18:02,031
+Arkadaşlar, so this, the second object is defined, then we say that, okay, there is either the association or aggregation or composition relationship between these two objects, okay?
+
+53
+00:18:02,711 --> 00:18:14,231
+Arkadaşlar, and for dependency relationship, in the dependency relationship, the second object is only defined in the methods of the first object.
+
+54
+00:18:14,231 --> 00:18:16,672
+Arkadaşlar, so it does not appear in the member field.
+
+55
+00:18:16,692 --> 00:18:27,132
+Arkadaşlar, class, object, it only appears in the data, in the methods, in the method body or the arguments of the methods.
+
+56
+00:18:27,132 --> 00:18:39,251
+Arkadaşlar, okay. And we say that the first object is dependent on the second object because the second object is being used in the methods or the method body.
+
+57
+00:18:39,251 --> 00:18:39,871
+Arkadaşlar, okay.
+
+58
+00:18:42,036 --> 00:18:46,115
+So we talked about the association relationship.
+
+59
+00:18:46,736 --> 00:18:46,876
+Okay.
+
+60
+00:18:49,456 --> 00:18:56,115
+We talked about how we are showing the association relationship and also how we are showing the dependency.
+
+61
+00:18:56,115 --> 00:18:56,956
+Okay.
+
+62
+00:18:58,324 --> 00:19:01,864
+And we talked about one-way association.
+
+63
+00:19:02,364 --> 00:19:06,164
+And so the example that we gave person and car.
+
+64
+00:19:06,164 --> 00:19:06,684
+Okay.
+
+65
+00:19:07,264 --> 00:19:17,324
+And later also we also showed the two-way association of this example where the car also has an owner as a person.
+
+66
+00:19:19,624 --> 00:19:24,584
+And I will move forward.
+
+67
+00:19:25,423 --> 00:19:25,864
+Okay.
+
+68
+00:19:26,932 --> 00:19:32,251
+And so, yeah, we talked about two-way association.
+
+69
+00:19:34,867 --> 00:19:42,067
+We discussed how we can improve the lines of codes in the two-way association.
+
+70
+00:19:42,728 --> 00:19:50,248
+We discussed that you can set the second object in the first object.
+
+71
+00:19:50,248 --> 00:19:59,248
+While doing this, you can also use the reference of the second object and also set...
+
+72
+00:20:00,531 --> 00:20:03,911
+Arkadaşlar, the first object in the second object.
+
+73
+00:20:04,132 --> 00:20:09,851
+Arkadaşlar, you can do it in one method, as you see here, for both,
+
+74
+00:20:11,132 --> 00:20:18,471
+Arkadaşlar, especially we are doing this in the setter method, setter method of the first object, setter method of the second object.
+
+75
+00:20:18,471 --> 00:20:18,991
+Arkadaşlar, okay.
+
+76
+00:20:20,751 --> 00:20:24,771
+Arkadaşlar, and we discussed all that two-way association.
+
+77
+00:20:26,099 --> 00:20:28,219
+We talked about the aggregation.
+
+78
+00:20:28,699 --> 00:20:37,819
+And as we talked about aggregation in the UML diagram, remember, sometimes instead of having one here, we may have a diamond sign here.
+
+79
+00:20:37,819 --> 00:20:38,219
+Okay.
+
+80
+00:20:38,859 --> 00:20:52,019
+And so this means that one of the first objects may have, in this particular example, two or more second objects.
+
+81
+00:20:53,299 --> 00:21:08,700
+Okay. In the composition relationship, the only difference is that here in the UML diagram, you see that you have a dark diamond here. Okay. And again, in the composition relationship, the first object has zero or more.
+
+82
+00:21:10,387 --> 00:21:22,427
+As second objects, but as you see, the second object must have only one of the first objects.
+
+83
+00:21:22,427 --> 00:21:27,268
+So the second object may not belong to more than one object.
+
+84
+00:21:27,387 --> 00:21:30,087
+So that's the composition relationship.
+
+85
+00:21:30,087 --> 00:21:30,768
+Okay.
+
+86
+00:21:32,372 --> 00:21:50,772
+Now, so let us give an example to composition relationship. That's where we left off. Okay. Now this example is as in the following. Here, what we are trying to do, we are trying to do, create a gallery. Okay.
+
+87
+00:21:52,192 --> 00:21:58,872
+Autoshop or gallery. So where multiple cars are being sold. Okay.
+
+88
+00:21:59,700 --> 00:22:03,320
+And this means that we will have another class, which is gallery.
+
+89
+00:22:04,559 --> 00:22:04,659
+Okay.
+
+90
+00:22:05,039 --> 00:22:09,800
+And we have it, obviously, from the previous examples, we have the class car.
+
+91
+00:22:10,500 --> 00:22:11,840
+You already know this.
+
+92
+00:22:12,900 --> 00:22:18,320
+And so here, and also, so what else?
+
+93
+00:22:19,039 --> 00:22:21,300
+And obviously, so we have.
+
+94
+00:22:30,432 --> 00:22:36,791
+Bir galeriye sahip bir galeriye sahip bir galeriye sahip.
+
+95
+00:22:36,791 --> 00:22:42,312
+Bir galeriye sahip bir galeriye sahip.
+
+96
+00:22:42,312 --> 00:22:46,551
+Bu bir galeriye sahip.
+
+97
+00:22:46,551 --> 00:22:51,551
+İçin gibi bir galeriye sahip.
+
+98
+00:22:51,551 --> 00:22:55,632
+Çünkü, bu da bir galeriye sahip.
+
+99
+00:22:55,632 --> 00:22:58,432
+Bu da bir galeriye sahip.
+
+100
+00:22:58,432 --> 00:23:18,992
+Arkadaşlar, association relationship. So one object may have zero or more second type object, but the only difference is that, so as you see, one car may only belong to one gallery. So you cannot, that car cannot appear in two different galleries. Okay. Let's now take a look at the UML diagram.
+
+101
+00:23:31,443 --> 00:23:43,324
+Now, as you see in the UML diagram, from the previous example, we have the same person class, and also we have the same car class.
+
+102
+00:23:44,123 --> 00:23:44,243
+Okay.
+
+103
+00:23:44,743 --> 00:23:58,364
+Now, as you see here, so this is a two-way association relationship, so which means that in the data member field section of these two classes,
+
+104
+00:23:58,816 --> 00:24:10,876
+I will see that a variable of the other class type is defined.
+
+105
+00:24:11,876 --> 00:24:13,135
+Arkadaşlar.
+
+106
+00:24:13,556 --> 00:24:41,556
+Bir association ilişkisi görüyorsanız, mutlaka bu association ilişkisinde mesela okun şu yönlü olanı düşünün. Bu durumda bu birinci objekt olmuş oluyor ve bu ikinci objekt. Her zaman Data Member Field sectionında bu ikinci objektin tanımlanmış olması lazım. Yani bu ikinci tipteki class'ı burada görmem lazım. Bu class tipinde bir değişken burada tanımlanmış.
+
+107
+00:24:41,556 --> 00:25:09,556
+Tanımlanmış. Eğer burada bir varsa burada bir tane olacak şekilde tanımlanmış. Eğer burada yıldız varsa burada ne olarak tanımlanması gerekirdi? Ya bir Array olabilirdi ya da şu anda öğrenmediğiniz daha başka data structure'lar var, vektörler var, list var. Onları dersin ilerleyen zamanlarında öğreneceğiz. Ama burada tek bir değişken yerine multiple değişken olurdu. Aynı şekilde bakın şimdi bu sefer okun diğer yönünü tanımlanmış.
+
+108
+00:25:09,556 --> 00:25:21,635
+Bunu gördüğüm zaman şunu düşünüyorum. Demek ki bu birinci object, bu ikinci object. Birinci object'in Data Member Field section'ında mutlaka ikinci object tipi kullanılmış demektir.
+
+109
+00:25:22,296 --> 00:25:37,416
+Person. Ondan sonra da bunun kaç tane olacak? Karşı tarafta bir yazdığı için bir tane tanımlıyorum. Eğer burada yıldız olmuş olsaydı ya da daha işte bir ile işte on arası gibi bir değer olmuş olsaydı burada
+
+110
+00:25:37,556 --> 00:25:38,936
+Bir array tutmam gerekirdi.
+
+111
+00:25:39,615 --> 00:25:39,816
+Okey?
+
+112
+00:25:41,011 --> 00:25:47,571
+Arkadaşlar, now let's apply what we learned right now with the gallery and the person.
+
+113
+00:25:47,891 --> 00:25:52,172
+So as you see, there is an association relationship.
+
+114
+00:25:52,931 --> 00:26:05,091
+And you see that one, so since there is an association relationship, you must remember that the gallery, in the data member field section of the gallery, I should see a person type.
+
+115
+00:26:05,391 --> 00:26:07,672
+So let's see, okay, you see the person type.
+
+116
+00:26:08,000 --> 00:26:32,039
+Okay. And since one gallery has one, so one person, so therefore, so I need to have only one variable here. So gallery owner. Instead of an array, I should have just only one global variable. Okay. Now let's take a look at the relationship between gallery and car.
+
+117
+00:26:32,756 --> 00:26:36,496
+Arkadaşlar, now you see that there is a composition relationship.
+
+118
+00:26:36,776 --> 00:26:40,615
+So one gallery, okay, have zero or more.
+
+119
+00:26:41,779 --> 00:27:08,940
+Arkadaşlar, car in it. Okay. So therefore, and so I know that in the data member field section of the gallery, I should have a data structure. Okay. And data structure in this case is array. Okay. Which means that there is an array which has a type car. Okay. One gallery may have zero or more car sense.
+
+120
+00:27:09,491 --> 00:27:22,991
+Arkadaşlar, ok. Arkadaşlar, now, what else do we have in gallery? So I need to keep the number of available cars in the gallery. So I have, I need to have a car count, ok.
+
+121
+00:27:24,571 --> 00:27:28,891
+Arkadaşlar, and I also, this gallery should have a name, ok.
+
+122
+00:27:29,875 --> 00:27:37,375
+And obviously, gallery has an owner. I already talked about this. Now let's take a look at the member methods of the gallery.
+
+123
+00:27:38,715 --> 00:27:47,135
+Now, so as you see, there is a constructor. So when you, so you see that the constructor has two parameters. One is
+
+124
+00:27:47,503 --> 00:27:56,364
+Arkadaşlar, the name of the gallery, one is to set the name of the gallery, the other one is to set the owner of the gallery.
+
+125
+00:27:56,364 --> 00:28:04,483
+Arkadaşlar, okay, so this means that whenever you create a gallery, the gallery by default should have an owner.
+
+126
+00:28:05,076 --> 00:28:09,715
+Arkadaşlar, and the gallery by default should have a name.
+
+127
+00:28:10,336 --> 00:28:10,456
+Okay.
+
+128
+00:28:10,755 --> 00:28:17,516
+But as you see, I didn't create a constructor with three parameters where I also...
+
+129
+00:28:18,163 --> 00:28:38,163
+Arkadaşlar, initiate car objects in the gallery. The reason is that when you first start your gallery, you may not have cars at that point, okay? But having a name and having an owner, it's important. Therefore, I have two parameter constructors here.
+
+130
+00:28:46,163 --> 00:29:04,663
+gallery name. And so what else? I have an add car method which allows me to add cars into this gallery. Okay. And I have remove car method which allows me to remove cars.
+
+131
+00:29:05,172 --> 00:29:18,451
+Arkadaşlar, from the gallery, as you see, remove cars returns car, okay, which means that it removes the car and also it returns the reference of that car object.
+
+132
+00:29:18,932 --> 00:29:30,291
+Arkadaşlar, but on the other hand, add car, add car is just removing the car and if the operation is successful, then it returns true, otherwise it returns false.
+
+133
+00:29:31,028 --> 00:29:35,567
+Arkadaşlar, now you see that I have two search car methods.
+
+134
+00:29:36,168 --> 00:29:45,987
+Arkadaşlar, one is taking the object reference of the car that you are searching and checks the gallery if that particular car is available.
+
+135
+00:29:46,228 --> 00:29:49,427
+Arkadaşlar, if yes, it will return true, otherwise it will return false.
+
+136
+00:29:49,847 --> 00:29:55,467
+Arkadaşlar, the other one is taking the license place number and searching the gallery.
+
+137
+00:29:56,107 --> 00:29:59,028
+Arkadaşlar, if the car is there, then it returns.
+
+138
+00:29:59,028 --> 00:30:01,627
+So, object reference for that car.
+
+139
+00:30:02,728 --> 00:30:02,987
+Okay.
+
+140
+00:30:04,596 --> 00:30:23,775
+Now, I have also one other method. This method takes the license plate number, which I want to sell because this is a sell car method, and also the new owner, okay, the object reference to the new owner.
+
+141
+00:30:23,956 --> 00:30:32,576
+And then, so if I call this method, it will return true or false. If the operation is successful true, otherwise it will return.
+
+142
+00:30:32,596 --> 00:30:40,256
+And I have introduced self method just like I had introduced self method for the car class and the person class.
+
+143
+00:30:41,016 --> 00:30:41,135
+Okay.
+
+144
+00:30:41,496 --> 00:30:50,715
+Now, this is the UML diagram, as you see, and you need to pay attention to the relations and the number that you have in these relations.
+
+145
+00:30:51,115 --> 00:30:51,276
+Okay.
+
+146
+00:30:51,675 --> 00:30:53,435
+All these needs to be correct.
+
+147
+00:30:54,003 --> 00:30:56,104
+And also I have a main method.
+
+148
+00:30:56,604 --> 00:31:01,563
+And this time you see that main method has a dependency relationship between car and gallery.
+
+149
+00:31:02,355 --> 00:31:12,536
+Arkadaşlar, why? Because the car class and the gallery class is being mentioned in the main method of the main program.
+
+150
+00:31:12,536 --> 00:31:28,736
+Arkadaşlar, okay? So therefore, so the main program, which includes the main method, this is another class, remember, this class is dependent on the car class and also it's dependent on the gallery class.
+
+151
+00:31:29,907 --> 00:31:32,407
+Ok, let's now take a look at the code.
+
+152
+00:31:34,028 --> 00:31:34,567
+Ok.
+
+153
+00:31:45,172 --> 00:31:58,832
+Now, in the gallery code, in the gallery class, so remember I had four different parameters, okay, gallery name, cars array, car count and gallery owner.
+
+154
+00:31:59,347 --> 00:32:15,227
+Arkadaşlar, okay. And all these needs to be defined as private. Why? Because as you see in the UML diagram, I have here minus, okay, which indicates that it needs to be defined as private, okay. Now in the exams,
+
+155
+00:32:15,695 --> 00:32:19,175
+We are going to give you a UML diagram like this.
+
+156
+00:32:19,415 --> 00:32:25,795
+And we are going to ask you to write the code corresponding to a certain class.
+
+157
+00:32:26,015 --> 00:32:30,175
+For example, we may ask you to write code for the gallery class.
+
+158
+00:32:30,576 --> 00:32:41,375
+Arkadaşlar, okay. So in this case, what you need to do, you need to study the UML diagrams and starting from the UML diagram, you need to be able to write the Java code.
+
+159
+00:32:42,115 --> 00:32:49,516
+Arkadaşlar, okay. That's what you are going to encounter in the midterm exam and also in the final exam.
+
+160
+00:32:49,516 --> 00:32:50,115
+Arkadaşlar, okay.
+
+161
+00:32:50,644 --> 00:33:02,023
+And this is how I, the way that I am going to explain this is always I'm going to go back to the UML diagram and then go to the code.
+
+162
+00:33:02,023 --> 00:33:08,903
+Okay. Now I started writing my gallery class. First I wrote all my...
+
+163
+00:33:09,332 --> 00:33:30,112
+Data member fields, as you see, I have a gallery name, which is a string type. I have the cars variable, which has the car, cars array variable, which has the car array type, and car count, integer, gallery owner, and the type of this is person.
+
+164
+00:33:30,963 --> 00:33:56,863
+Okay. Now, then I go back to UML diagram. I see that there is a two-parameter constructor. As you see, I have my two-parameter constructor. So remember, what was the purpose of the constructor? Okay. The purpose of the constructor to initialize every data member fields. Okay. Now, here, I need to initialize all the data member fields in my class.
+
+165
+00:33:57,332 --> 00:34:16,052
+How do I do that? You see that so the gallery constructor is taking the gallery name, which is the name of the gallery. So you see I am assigning the gallery name to the global member fields. Okay. So remember if the local argument parameter name.
+
+166
+00:34:16,628 --> 00:34:25,088
+If it is the same as the global data member field name, in that case, I need to use this.
+
+167
+00:34:25,456 --> 00:34:35,615
+Keyword in order to distinguish the global member field from the local argument name.
+
+168
+00:34:36,236 --> 00:34:36,396
+Okay.
+
+169
+00:34:36,655 --> 00:34:49,356
+So you see that since they both have the same name, so therefore I needed to use this keyword so that I can refer to this object's global member field gallery name.
+
+170
+00:34:49,972 --> 00:35:16,132
+Arkadaşlar, now that was the first initialization. Now the second one, I need to set the gallery owner, okay, to the, so which has a type person to the global member field. It is the same thing. So their names are the same. So therefore I use the keyword this in order to assign this value to the global member field.
+
+171
+00:35:17,012 --> 00:35:24,172
+And then the car count at the beginning when I first create the gallery, the number of cars that are available should be zero.
+
+172
+00:35:25,172 --> 00:35:25,252
+Okay.
+
+173
+00:35:26,072 --> 00:35:31,432
+And when I create the car cars array.
+
+174
+00:35:31,912 --> 00:35:32,372
+Okay.
+
+175
+00:35:32,932 --> 00:35:35,771
+So I'm going to create the array.
+
+176
+00:35:36,132 --> 00:35:41,132
+So in this particular case, I decided to create an array of size 30.
+
+177
+00:35:41,832 --> 00:35:42,152
+Okay.
+
+178
+00:35:43,668 --> 00:35:53,768
+Now, in this, in the UML diagram, I don't specifically say how, say that how many cars will be available in the, in the gallery.
+
+179
+00:35:54,268 --> 00:36:04,668
+But, so in the question, in the text body of the questions that you will be asked in the exams, you will be told how many cars that are available in the gallery, for example.
+
+180
+00:36:07,059 --> 00:36:13,279
+Now, you see that here I am creating an array of size 30.
+
+181
+00:36:13,899 --> 00:36:20,899
+And I am assigning the reference to this array to the cars variable which has a type car array.
+
+182
+00:36:22,059 --> 00:36:25,539
+Now, there is a question now.
+
+183
+00:36:26,019 --> 00:36:33,859
+When I create the array, when I first create the array of type car, now did I create the car objects?
+
+184
+00:36:38,164 --> 00:36:47,444
+Okay, now the answer is no, because I only created the array which is supposed to carry this car objects.
+
+185
+00:36:48,083 --> 00:36:51,484
+Okay, so there should be no confusion about this.
+
+186
+00:36:51,484 --> 00:36:58,684
+Okay, we I created the array which is supposed to carry these car objects.
+
+187
+00:36:59,083 --> 00:36:59,244
+Okay.
+
+188
+00:37:01,304 --> 00:37:01,903
+So.
+
+189
+00:37:02,835 --> 00:37:15,335
+Arkadaşlar, so let me again, since this is important, I'm going to show this again on the white blackboard.
+
+190
+00:37:27,411 --> 00:37:38,831
+Arkadaşlar, benim görüntümü büyütebilirsiniz. Aralarda tahtada anlatmak istediğimi göstereceğim.
+
+191
+00:37:38,831 --> 00:37:48,692
+Eğer bir tane Array yaratıyorsam, buradaki örnekle yaptığım gibi,
+
+192
+00:37:54,996 --> 00:37:56,136
+New card.
+
+193
+00:38:00,532 --> 00:38:03,032
+Böyle bir Array yarattım.
+
+194
+00:38:05,132 --> 00:38:11,471
+Bu Array'in içerisinde 30 tane hücrem var.
+
+195
+00:38:12,471 --> 00:38:20,011
+Şimdi bu Array'i yarattığım zaman bu Array'in Physical Memory'de bir address space'i olmuş oldu.
+
+196
+00:38:27,920 --> 00:38:54,260
+Address space'ı olmuş oldu. Yani physical memory'deki bir lokasyonu olmuş oldu. Bu lokasyonu, yani bu array'in bulunduğu referansı, Java 3'in içerisinde bulunduğu referansı, ben ne yaptım? Bu cars array değişkenini atadım. Bunun da tipi, daha önceden tanımlamıştık, cars array tipinde bir tane değişken.
+
+197
+00:38:55,920 --> 00:39:13,860
+class içerisinde class tipindeki objeleri taşıyacak bir tane Array yarattım. Ama içinde şu anda hiçbir obje var mı? Yok. Bunların hepsinin içindeki değerler null şu anda. Yani bunlar herhangi bir objeye referans etmiyorlar.
+
+198
+00:39:18,867 --> 00:39:28,028
+Any object, but I created the array which is supposed to carry the objects of the car class.
+
+199
+00:39:28,028 --> 00:39:28,847
+Okay.
+
+200
+00:39:32,371 --> 00:39:35,112
+Tekrar dan sliklere denebilirim.
+
+201
+00:39:37,031 --> 00:39:39,711
+Now, let's go back to the other methods.
+
+202
+00:39:40,152 --> 00:39:44,311
+Remember, I had in the UML diagram, I had the getter and setter methods.
+
+203
+00:39:44,711 --> 00:39:44,831
+Okay.
+
+204
+00:39:46,331 --> 00:39:50,671
+So, for the gallery name, so you see I have a gallery name.
+
+205
+00:39:51,531 --> 00:39:57,671
+So, get gallery name and for the gallery name, I also have a set method.
+
+206
+00:39:58,671 --> 00:39:58,891
+Okay.
+
+207
+00:39:59,612 --> 00:40:00,000
+Now, that...
+
+208
+00:40:00,000 --> 00:40:11,480
+Then I have an introduce self method, an introduce self method just like the introduce self method in the car class and the person class.
+
+209
+00:40:11,856 --> 00:40:28,336
+I am writing some information onto the console, onto the screen, the gallery name and the gallery owner name and the number of available cars in the gallery.
+
+210
+00:40:29,336 --> 00:40:30,036
+Okay.
+
+211
+00:40:33,427 --> 00:40:50,747
+Now, I'm going to go over the add car method. Now, so before I write the add car method, I need to check. So it's a public method and it returns a boolean value and its argument parameter is has a type car. Perfect.
+
+212
+00:40:51,795 --> 00:41:19,795
+Now, it's a public method and return value is Boolean. The name is add car and it takes one parameter which has a type car. Now, I wrote the signature of that method. Now, the first, the method body and the argument all together is called signature of the method. Okay. I wrote the signature of the method and the curly parenthesis. Now, I can go into the method body of the add car.
+
+213
+00:41:19,795 --> 00:41:32,275
+Arkadaşlar, okay. Now, you see that in, at first, what I'm going to do, I am going to check if I can add this car into the gallery.
+
+214
+00:41:33,015 --> 00:41:41,315
+Now, when I, when I want to control if I can add this car into the gallery, then I need to check two conditions.
+
+215
+00:41:42,579 --> 00:41:50,980
+Arkadaşlar, two conditions. The first condition, whether this car is already available in the car array.
+
+216
+00:41:51,760 --> 00:42:00,480
+Arkadaşlar, now the second condition is that, is there an available space for within the car array?
+
+217
+00:42:01,139 --> 00:42:08,359
+Arkadaşlar, now let's check the second condition. The second condition, first,
+
+218
+00:42:08,916 --> 00:42:16,155
+Arkadaşlar, the cars length gives me the total length of the cars array.
+
+219
+00:42:16,695 --> 00:42:30,076
+Okay, if I call the length of any array, it will give me the maximum number of cars that this array can keep.
+
+220
+00:42:30,076 --> 00:42:36,315
+So since it is defined as 30, so it will return the value of 30.
+
+221
+00:42:37,172 --> 00:42:42,112
+Now, the car count, so remember, I defined this as a global variable.
+
+222
+00:42:42,992 --> 00:42:48,688
+I'm going to keep this car count to count the number of cars that are available in the...
+
+223
+00:42:48,688 --> 00:43:11,448
+Arkadaşlar, gallery. So this is a global variable and I will keep update this variable as I add new cars into the gallery. And if I remove any cars from the gallery, I need to also update it, which means that I need to decrement this value. So therefore, the car count will always give me the available.
+
+224
+00:43:12,019 --> 00:43:14,380
+Arkadaşlar, number of cars in the gallery.
+
+225
+00:43:15,199 --> 00:43:25,159
+Arkadaşlar, here you see that I am checking whether the available number of cars is less than the maximum allowed number of cars, which is cars.length.
+
+226
+00:43:25,907 --> 00:43:34,367
+Arkadaşlar, now that's the first thing that I need to check. This check is basically checking whether I have enough space to add this car.
+
+227
+00:43:34,747 --> 00:43:43,747
+Arkadaşlar, now the first, the other check that I need to do, I need to check whether this car is available in the gallery.
+
+228
+00:43:44,608 --> 00:43:51,367
+Now, then I go back to the UML diagram and I look at the search car methods.
+
+229
+00:43:52,403 --> 00:44:16,304
+Arkadaşlar, because these search car methods are doing exactly the same. They are checking whether that car is available there. Okay. Now, so the first search car method is suitable for me because it returns true or false. It returns boolean value. And it takes the car object as an input.
+
+230
+00:44:16,688 --> 00:44:25,847
+In searches the gallery, if it if the car is available there, OK, then it will return true. Otherwise, it will return false.
+
+231
+00:44:27,188 --> 00:44:33,628
+OK, now you see that I have not seen the implementation of search car so far.
+
+232
+00:44:34,771 --> 00:44:47,652
+But even without seeing the implementation of search card, I know what this method is going to do by checking the output of that method and also checking the input of that method.
+
+233
+00:44:47,652 --> 00:44:59,652
+Okay. Even though I did not implement it, I know what kind of result that is going to return. So therefore, I'm using it here. So you see that search card.
+
+234
+00:45:00,371 --> 00:45:06,771
+It takes the object reference to the car object and it returns true or false.
+
+235
+00:45:07,231 --> 00:45:09,291
+Now, let's say the car is available.
+
+236
+00:45:09,811 --> 00:45:09,952
+Okay.
+
+237
+00:45:10,152 --> 00:45:12,931
+If the car is available, it's going to return true.
+
+238
+00:45:13,431 --> 00:45:19,992
+And you see the negation here, which means that when it returns true, then this here will become false.
+
+239
+00:45:20,596 --> 00:45:36,716
+If this becomes false, okay, then since there is an end-end operation, since there is an end operator, if one of the conditions is zero, then the whole if condition will be false.
+
+240
+00:45:37,168 --> 00:45:41,948
+Arkadaşlar, if one of the conditions is false, then the whole condition will be false.
+
+241
+00:45:42,427 --> 00:45:47,448
+Arkadaşlar, therefore, the inside of the if statement is not going to be executed.
+
+242
+00:45:48,047 --> 00:45:54,927
+So the Java Virtual Machine will skip this part and it will come to this line and it will return false.
+
+243
+00:45:55,568 --> 00:46:02,047
+Arkadaşlar, meaning that this car is available in the gallery because search car return true.
+
+244
+00:46:02,643 --> 00:46:17,543
+Okay, now let's say if the car is not available there. In that case, search card will return false. Okay. And since you see that there is negation here, then the false. So here, this thing will be true.
+
+245
+00:46:17,887 --> 00:46:31,447
+And this here will be true. And this here, this here. So if this is also true, then the whole if condition will be true. Then the inside of the if method can be executed.
+
+246
+00:46:32,115 --> 00:46:54,556
+Okay. Now, let's say what we are doing in the inside of the if method. Now, at the beginning, remember the car count is zero. Okay. This is how we initialized. Okay. Remember, at the beginning, we initialized the car count as zero. Okay. Now,
+
+247
+00:46:55,315 --> 00:47:07,135
+What I am doing here, I am assigning the object reference of the car object that I want to add to the first cell of the cars array.
+
+248
+00:47:07,135 --> 00:47:13,956
+So, remember, arkadaşlar, tekrardan benim görüntüme gelecek olursanız.
+
+249
+00:47:16,211 --> 00:47:33,551
+Buradaki Array'de indisler sıfırdan başlıyor. 0, 1, 2, 3, nereye kadar gidecek? Elimde 30 tane hücresi olan bir Array olduğu için 29'a kadar gidecek.
+
+250
+00:47:34,172 --> 00:47:39,872
+Dolayısıyla ilk başta car count neyi gösteriyordu? Car count'u ben sıfıra eşitlemiştim.
+
+251
+00:47:41,364 --> 00:47:55,043
+Car count demek ki sıfıra eşitlemişsem birinci hücre olan sıfır indeksli hücreyi gösteriyordu. Ben yeni bir car objesini ekleyeceksem şu yeni bir car objesi olmuş olsun.
+
+252
+00:47:56,211 --> 00:48:22,012
+ekar objesi olmuş olsun. Bu objenin bulunduğu referansı, referansı da şuraya xxx diyelim. Bunun referansını, bulunduğu adresi götürüp ne yapıyorum? Sıfırıncı hücreye yazıyorum. Artık sıfırıncı hücre neye point ediyor? Bu yeni oluşturmuş olduğu objeye point etmiş oluyor.
+
+253
+00:48:24,211 --> 00:48:30,351
+Bunu yaptıktan sonra car count'ı ne yapıyorum? Car count'ı sıfırdan bire arttırıyorum.
+
+254
+00:48:30,351 --> 00:48:30,951
+Okay?
+
+255
+00:48:32,532 --> 00:48:38,711
+Now, I updated the car count, then I'm going to return true.
+
+256
+00:48:39,112 --> 00:48:39,231
+Okay?
+
+257
+00:48:39,552 --> 00:48:47,851
+Which means that I already added, so I successfully added one more car into the gallery.
+
+258
+00:48:48,251 --> 00:48:48,491
+Okay?
+
+259
+00:48:49,460 --> 00:49:02,540
+So when I return, when I call the return statement, then execution will go back to whichever location this add car was called.
+
+260
+00:49:02,540 --> 00:49:11,100
+Okay, it's not execute return false. It's going to execute return true and it will go back to the location where the add car method is called.
+
+261
+00:49:13,880 --> 00:49:15,520
+Okay, now,
+
+262
+00:49:17,012 --> 00:49:31,472
+I used the search car method without seeing it, okay, without seeing its implementation because I knew so what kind of input type it's going to take and what kind of return type it's going to return, okay.
+
+263
+00:49:31,752 --> 00:49:34,272
+Now let's take a look at the implementation of it.
+
+264
+00:49:35,632 --> 00:49:40,392
+And so here is the first search car, as you see the argument.
+
+265
+00:49:41,588 --> 00:50:00,188
+Arkadaşlar, type is car class. Okay. It takes a car object as an input. Okay. And you see that within the, and it returns true or false. It returns Boolean value. Now, in the method body of the search car, you see that a for loop.
+
+266
+00:50:01,460 --> 00:50:27,579
+Now, this is the first time that you are seeing this type, this kind of for loop. Now, there are two, four loops in Java. One is the traditional one, in which case you have three segments for the for loop, just like this. You see that here, the first kind of for loop, okay? And you see that it has three segments. The first initial condition.
+
+267
+00:50:28,032 --> 00:50:48,351
+Arkadaşlar, the second bus is the stop condition. The third one is that how we increment the for loop variable. Okay. Now, initial, so this is the classical for loop. So in this case, so you initialize the for loop variable. Okay.
+
+268
+00:50:48,815 --> 00:50:54,815
+And here is the operation that you will do every time you come back to the beginning of the for loop.
+
+269
+00:50:55,155 --> 00:50:57,535
+So you're going to operate this.
+
+270
+00:51:03,535 --> 00:51:04,535
+This formula.
+
+271
+00:51:04,935 --> 00:51:09,375
+OK, so if you it could be increment, it could be decrement, whatever it is.
+
+272
+00:51:09,811 --> 00:51:22,251
+Arkadaşlar, and this is the stopping condition. So when you come back, every time we will check whether it is true. If this condition is true, then we will execute the for loop. If this condition is not true, then we will exit the for loop.
+
+273
+00:51:23,071 --> 00:51:30,391
+Now, this is the second type of for loop. Now, this is called for each loop, for each loop. Now, as you see,
+
+274
+00:51:31,315 --> 00:51:41,375
+In this loop, we are using the data structure. In this particular case, the data structure is array.
+
+275
+00:51:42,075 --> 00:51:47,555
+So later in the class, we will see that we might have different kinds of data structures here as well.
+
+276
+00:51:47,875 --> 00:51:52,995
+We might have linked list, we might have array list, we might have hash map, etc.
+
+277
+00:51:52,995 --> 00:51:55,895
+But now, we are using an array.
+
+278
+00:51:56,288 --> 00:52:07,148
+Arkadaşlar, you see that you remember that this cars is an array of type car, which means that it includes the objects of type car.
+
+279
+00:52:08,028 --> 00:52:15,188
+Arkadaşlar, now you see that and this I have a variable here, which is car, which has a type car.
+
+280
+00:52:15,668 --> 00:52:31,708
+Now, this for loop says that every time you execute, you go through this for loop, you will take one object from the cars array, you will assign to this local car variable.
+
+281
+00:52:32,168 --> 00:52:36,548
+Okay, then execute the for loop body.
+
+282
+00:52:37,268 --> 00:52:39,208
+Okay, and then you will come back.
+
+283
+00:52:39,503 --> 00:53:01,259
+Arkadaşlar, and then go to the next car object in the cars array and assign it to the car, execute it, and then come back to the third one. Once there are no car objects available in the cars array, then you need to exit. Okay, so this is how the for each loop works. Now, so when you take...
+
+284
+00:53:02,099 --> 00:53:21,300
+Arkadaşlar, a car objects from the cars array and assign it to car. Let's look at the inside body of the for loop. Now you see that in the method body of the for loop. Okay, now there is a if statement. Now the if statement checks whether the a car.
+
+285
+00:53:21,300 --> 00:53:30,099
+Arkadaşlar, okay, variable equals to the car variable. So what does this mean? I am searching whether the
+
+286
+00:53:30,099 --> 00:53:52,259
+Arkadaşlar, object, car object that I'm passing to this method, okay, is available in the cars array. So therefore, I need every time. So when I look through this cars array, I will pick one and I will check the reference with the reference of the object that I am searching.
+
+287
+00:53:52,851 --> 00:54:07,751
+If yes, I will return true. So what does this mean? This means that yes, there is a car object is available in the car server. Now, if this for loop, okay.
+
+288
+00:54:08,275 --> 00:54:12,996
+Arkadaşlar, cannot find any a car object in the cars array.
+
+289
+00:54:13,536 --> 00:54:13,695
+Okay.
+
+290
+00:54:14,056 --> 00:54:20,596
+Once the cars array is completed, then it will just exit the loop and it will return false.
+
+291
+00:54:21,275 --> 00:54:21,856
+Okay.
+
+292
+00:54:24,516 --> 00:54:27,235
+Now, let's take a look at the other search car method.
+
+293
+00:54:27,576 --> 00:54:31,436
+This time, I am searching the car with license plate number.
+
+294
+00:54:32,403 --> 00:54:41,243
+Now, in order to do this, what I need to do, I need to check the license plate number of every car in the cars array.
+
+295
+00:54:41,884 --> 00:54:44,304
+Okay, now how do I do this?
+
+296
+00:54:45,396 --> 00:54:50,276
+Arkadaşlar, in this particular case, I prefer to use the for classical for loop.
+
+297
+00:54:50,616 --> 00:55:07,596
+Arkadaşlar, now in the classical for loop, so you see that I started with initializing the loop variable by zero and then some my operation on the loop variable is increment.
+
+298
+00:55:07,596 --> 00:55:13,256
+Arkadaşlar, okay. And here you see that I will start from zero all the way to car.
+
+299
+00:55:13,396 --> 00:55:18,316
+Arkadaşlar, which is the available number of cars, and I will increment the value of i.
+
+300
+00:55:18,956 --> 00:55:32,476
+Arkadaşlar, and every time in the for loop, what I'm going to do, I am going to pick the car object from the cars array corresponding to that in this, okay, for corresponding to the loop variable value.
+
+301
+00:55:33,136 --> 00:55:39,496
+Arkadaşlar, and after I access to that car object, I will call the getPlate.
+
+302
+00:55:40,532 --> 00:56:01,251
+Method of that object. And this in turn will return me a string value. Now, since it is string, remember that there was a compare to method of the string object so I can call the compare to method. And I when I call the compare to method, I'm going to compare it with the plate.
+
+303
+00:56:01,748 --> 00:56:06,248
+Arkadaşlar, number that I'm passing to this method.
+
+304
+00:56:06,588 --> 00:56:06,748
+Arkadaşlar, okay?
+
+305
+00:56:07,108 --> 00:56:18,548
+Arkadaşlar, compare the license plate number of the object that is available in the cars array and with the plate number that I'm passing here.
+
+306
+00:56:19,068 --> 00:56:24,887
+Arkadaşlar, now if they both are equal to each other, remember the compare two will return the value of zero.
+
+307
+00:56:24,887 --> 00:56:26,367
+Arkadaşlar, if this is yes,
+
+308
+00:56:26,835 --> 00:56:32,835
+Then I am going to return the object reference to that car object.
+
+309
+00:56:33,375 --> 00:56:34,495
+OK, that is available.
+
+310
+00:56:34,815 --> 00:56:39,555
+So you see that I am returning the object reference or to that car object.
+
+311
+00:56:40,395 --> 00:56:46,495
+If I cannot find it in the cars array, if this loop finishes and it cannot.
+
+312
+00:56:46,864 --> 00:57:05,364
+Arkadaşlar, it cannot pass this if statement. In that case, it will finish and it will come here and then I will return null, which means that there is no car that has this particular plate number. Okay. Now this is the second method.
+
+313
+00:57:05,679 --> 00:57:27,759
+In the first method, I am returning true or false, meaning that this car is available or is not available. In the second one, I am returning the object reference of the car, which is in the in the gallery. If the car is not available there, then I will return the value now.
+
+314
+00:57:28,759 --> 00:57:29,399
+Okay.
+
+315
+00:57:36,628 --> 00:57:40,048
+Let's see how we are doing from the time perspective.
+
+316
+00:57:40,328 --> 00:57:41,288
+So we have time.
+
+317
+00:57:41,648 --> 00:57:41,788
+Okay.
+
+318
+00:57:43,448 --> 00:57:45,408
+We have time till first break.
+
+319
+00:57:46,148 --> 00:57:46,428
+Okay.
+
+320
+00:57:46,488 --> 00:57:48,468
+If you have any questions, please stop me.
+
+321
+00:57:48,588 --> 00:57:50,768
+And so ask your questions.
+
+322
+00:57:50,768 --> 00:57:53,868
+So you can turn on your microphone.
+
+323
+00:57:54,048 --> 00:57:56,948
+So you can raise your hand using the Zoom tool.
+
+324
+00:57:57,708 --> 00:58:01,868
+You can write your questions on the Zoom chat.
+
+325
+00:58:02,628 --> 00:58:03,228
+All.
+
+326
+00:58:03,632 --> 00:58:05,351
+R, okey.
+
+327
+00:58:07,172 --> 00:58:15,451
+Hocam, önceki for döngüsü için bir şey soracaktım. Orada bütün kar dizisini dönüyor mu yoksa ilk nal karakterde duruyor mu?
+
+328
+00:58:16,731 --> 00:58:18,132
+Hangisi için? Bu söz...
+
+329
+00:58:18,132 --> 00:58:19,051
+Üstteki, evet.
+
+330
+00:58:19,351 --> 00:58:19,951
+Üstteki için.
+
+331
+00:58:21,460 --> 00:58:45,480
+Sadece ilk gördüğü null karaktere kadar dönüyor. Yani sanki bunun yaptığı gibi car count'u şey yapıyor diye düşünebilirsiniz. Yani kendi içerisinde kaç tane şey olduğunu takip ediyor. Kaç tane obje varsa onun kadar dönüyor. Bulamazsa ne yapıyor? False döndürüyor.
+
+332
+00:58:45,480 --> 00:58:46,799
+Tamamdır hocam.
+
+333
+00:58:51,764 --> 00:58:53,024
+Hocam, bana bir şey sorabilir miyim?
+
+334
+00:58:53,444 --> 00:58:53,904
+Tabii ki.
+
+335
+00:58:53,904 --> 00:59:01,204
+Bu karşılaştırma için compared to şeydeki gibi, yukarıdaki gibi eşit eşitle karşılaştırma yapabiliyor muyuz stringlerde?
+
+336
+00:59:04,804 --> 00:59:09,744
+İki tane string objesi için de yapabilirsin.
+
+337
+00:59:10,708 --> 00:59:36,208
+Ama bunu deneyebilirsin istersen. Yani iki tane elinde get played şeyi var. Bununla şunu deneyip acaba aynı davranışı gösteriyor muyu sen de deneyebilirsin. Ama string classının getirmiş olduğu bu compare to metodu ile beraber ben bir güzel avantaj daha elde ediyorum.
+
+338
+00:59:38,708 --> 00:59:46,067
+Lexical, Graphical Order'a göre, diyelim ki bir tanesi A ile başlıyor, bir tanesi T ile başlıyor.
+
+339
+00:59:46,688 --> 00:59:49,387
+A öncesinde ise artı döndürüyor.
+
+340
+00:59:50,188 --> 00:59:55,168
+İşte ya da işte T birincisi ise ikincisi A ise eksi döndürüyor.
+
+341
+00:59:55,168 --> 01:00:01,527
+Buna dayalı olarak hani bunların şeyi, içeriğini de karşılaştırma imkanına sahip oluyorsun.
+
+342
+01:00:02,768 --> 01:00:06,268
+Anladım hocam, ne avantajı var diyecektim. Ben de cevapladınız. Teşekkür ederim.
+
+343
+01:00:07,284 --> 01:00:07,784
+Tamam.
+
+344
+01:00:10,124 --> 01:00:12,144
+[öğrenci]'dan bir tane yorum geldi.
+
+345
+01:00:12,264 --> 01:00:12,864
+Onu da bakalım.
+
+346
+01:00:14,612 --> 01:00:18,912
+Eşit eşittir de isimlerden ziyare aynı adresi. Aynen. Aynen.
+
+347
+01:00:19,752 --> 01:00:31,552
+Şimdi biz ne yapıyorduk? Hani objelerin, şimdi string de bir obje, car da işte car'ın bir objesini yarattığımız zaman da bir obje.
+
+348
+01:00:32,472 --> 01:00:35,592
+Biz bunları referanslarıyla takip ediyoruz.
+
+349
+01:00:35,592 --> 01:00:42,592
+Yani bir objenin tanımladığınız zaman bu tanımladığınız objeye...
+
+350
+01:00:42,612 --> 01:00:50,432
+karşılık gelen bir tane objeyi new keyword ile yarattığınız zaman artık new keyword'ü memoride yaşayan bir tane objeyi yaratıyor.
+
+351
+01:00:51,292 --> 01:00:57,352
+Buna takip etmek için kullandığınız referans da o objenin address space'ini işaret ediyor.
+
+352
+01:00:57,748 --> 01:01:23,927
+Aynı [öğrenci]'in dediği gibi eğer iki tane string objesini sen eşit olarak karşılaştır, içeriğine bakmıyor. Bunların address space'leri aynı mı diye bakıyor. Aynı şeyi gösteriyorlarsa direkt sana okey diyecek. Ama bu compare to ile beraber stringin o içeriğine de giriyorsun. İçerikleri aynı mı, birbirinden büyük mü, küçük mü bunları da karşılaştırma imkanına sahip oluyorsun.
+
+353
+01:01:25,748 --> 01:01:27,347
+Ok, let's continue.
+
+354
+01:01:28,748 --> 01:01:30,087
+[öğrenci], teşekkür ederim.
+
+355
+01:01:32,007 --> 01:01:35,007
+So let's now look at the remove car.
+
+356
+01:01:35,007 --> 01:01:49,708
+Now, again, going back to the UML diagram, ok, you see that remove car takes string, ok, as an input and it returns the car class type, ok.
+
+357
+01:01:50,228 --> 01:01:52,688
+Now I can implement the remove car.
+
+358
+01:01:53,347 --> 01:01:59,728
+And so the return value has a type car and the input value has a type string.
+
+359
+01:01:59,728 --> 01:02:00,248
+Okay.
+
+360
+01:02:00,627 --> 01:02:03,768
+Now let's look at the inside of the remove car.
+
+361
+01:02:04,567 --> 01:02:13,807
+Now I need to check the available objects in the car array.
+
+362
+01:02:14,291 --> 01:02:25,152
+So therefore, what I need to do, I need to do a loop on the cars array for the available cars.
+
+363
+01:02:25,932 --> 01:02:31,831
+So I don't want to loop on the whole array.
+
+364
+01:02:31,831 --> 01:02:33,472
+I just want to loop through.
+
+365
+01:02:34,036 --> 01:02:51,056
+On the cells where which carry the car objects. So therefore, the loop starts from zero in this, and it will stop at the car count, which indicates the last, which, which is the available number of cars, cars. Okay.
+
+366
+01:02:52,576 --> 01:03:00,615
+Now, inside the for loop, so see what, what is happening. Okay. So you see that I have a if condition.
+
+367
+01:03:01,235 --> 01:03:14,575
+Now, the if condition checks the object's license plate number with the license plate number that I am passing to this method.
+
+368
+01:03:14,575 --> 01:03:26,335
+Okay. Now, every time I look through the array, okay, I get the license plate number of that object there.
+
+369
+01:03:26,672 --> 01:03:31,552
+And then compare it with the license plate number that I'm passing here.
+
+370
+01:03:31,832 --> 01:03:35,932
+If they both are equal to each other, then so this will be zero.
+
+371
+01:03:36,231 --> 01:03:42,432
+Okay, which means that that object with the same license plate number is in the array.
+
+372
+01:03:43,092 --> 01:03:47,652
+Now, let's say if this is in the array, let's see what's going to happen.
+
+373
+01:03:48,332 --> 01:03:51,932
+Now, the first thing that I'm going to do, first, I am going to...
+
+374
+01:03:52,659 --> 01:04:03,579
+Get the reference of that car objects from the index of the cars array to a temporary car variable, the car.
+
+375
+01:04:04,519 --> 01:04:04,839
+Okay.
+
+376
+01:04:05,899 --> 01:04:15,399
+Now, the second thing that I'm going to do, now that I, my purpose is to remove that car from the cars array.
+
+377
+01:04:15,819 --> 01:04:16,059
+Okay.
+
+378
+01:04:16,059 --> 01:04:19,259
+So what I'm going to do, I am going to.
+
+379
+01:04:19,699 --> 01:04:23,980
+Arkadaşlar, class, object,
+
+380
+01:04:36,788 --> 01:04:47,027
+And here, let's say I found the car object in the cars array, let's say in the zero in this.
+
+381
+01:04:47,487 --> 01:04:47,647
+Okay.
+
+382
+01:04:47,927 --> 01:04:57,728
+So in this case, what I'm going to do, I'm going to assign the value of in this where I found this object to this initial condition of the for variable.
+
+383
+01:04:58,420 --> 01:05:13,540
+Then, starting from the initial condition of the four variable all the way to the car count, okay, which is the available number of cars in the array, okay?
+
+384
+01:05:13,980 --> 01:05:24,860
+And then, within this for loop, what I'm going to do, I'm going to move the object reference from the next cell to the previous cell, okay?
+
+385
+01:05:25,344 --> 01:05:29,763
+And I will do this until I reach the end of the cars array.
+
+386
+01:05:30,844 --> 01:05:43,483
+Now, what I have done so far to this line is that first, I found that that car object that I'm looking for is in the cars array.
+
+387
+01:05:43,983 --> 01:05:50,864
+Then I copied the object reference of that car to a temporary value.
+
+388
+01:05:51,380 --> 01:06:02,000
+Then, starting from that position all the way to the end of the car array, all the way to the car count, which is the last available.
+
+389
+01:06:03,539 --> 01:06:06,380
+Arkadaşlar, car object in the array.
+
+390
+01:06:06,940 --> 01:06:26,659
+Arkadaşlar, and I moved the address spaces, I shift the address spaces to one cell before so that so I can so that there is no empty space, okay, within the car array.
+
+391
+01:06:26,659 --> 01:06:31,539
+Arkadaşlar, and once I complete this task, okay, then I know.
+
+392
+01:06:31,539 --> 01:06:37,820
+Arkadaşlar, class, object,
+
+393
+01:06:53,108 --> 01:06:59,168
+to the last cell of the cars array.
+
+394
+01:06:59,168 --> 01:07:04,448
+And then I need to increment the car count.
+
+395
+01:07:05,448 --> 01:07:12,368
+Arkadaşlar, şu şeyde tekrardan gösterecek olursam, tekrardan şu şeye bakın.
+
+396
+01:07:15,008 --> 01:07:18,868
+Şurada diyelim ki
+
+397
+01:07:23,539 --> 01:07:27,879
+Şurası car count'un olduğu değerdi.
+
+398
+01:07:31,731 --> 01:07:32,072
+Ok?
+
+399
+01:07:42,291 --> 01:08:07,451
+Şurası car count'un olduğu değerdi. Şurada bir objemiz vardı diyelim. Şurada da bir objemiz vardı diyelim. Şimdi car count'un olduğu yerde ne değeri var? Null değeri var. Yani car count aslında neyi gösteriyor? 2'yi gösteriyor. Aslında indis olarak bunu düşünecek olursanız.
+
+400
+01:08:10,516 --> 01:08:15,056
+İlk nal değerinin olduğu noktayı gösteriyor car count.
+
+401
+01:08:16,243 --> 01:08:38,583
+Şey olarak düşünecek olursanız, obje sayısı olarak düşünecek olursanız, Array'daki obje sayısını gösteriyor. Yani iki şekilde kullanıyorsunuz. Bir tanesi, ilk Array'daki ilk karşılaştığınız nal değerin olduğunu gösteren indisi gösteriyor. İkincisi ise kaç tane kar olduğunu gösteriyor.
+
+402
+01:08:38,583 --> 01:08:44,003
+Şimdi ben ne yapıyorum? For döngüsü içerisinde öncelikle sıfırdan başlıyorum.
+
+403
+01:08:45,363 --> 01:08:55,323
+Bu nereye kadar gideceğim? Car count'a kadar gideceğim. Car count neyi gösteriyordu? Bu ilk nal değerinin olduğu yeri gösteriyordu.
+
+404
+01:08:55,323 --> 01:09:05,703
+Şimdi ben gittim, sıfırdan başladım. Diyelim ki sıfırdan başladığında ilk eleman benim aradığım obje çıktı.
+
+405
+01:09:06,323 --> 01:09:13,323
+Bu durumda ne yapıyorum? Bu arkadaşın referansı neydi? Şurada diyelim ki referansı...
+
+406
+01:09:13,363 --> 01:09:32,863
+DS, DS, işte X0A. Böyle bir adres spaysi var. Burada da o yazıyor. DS, X0A. X0A. Bunu bir tane değişkeni atıyorum. The car diye. Car, The car diye bir tane değişkeni atıyorum.
+
+407
+01:09:35,028 --> 01:09:39,268
+Artık the car değişkeni bu yeni objeyi göstermeye başladı.
+
+408
+01:09:39,788 --> 01:09:43,108
+Ama hala buradaki referansı silmedim.
+
+409
+01:09:44,108 --> 01:09:45,688
+Ondan sonra ne yapıyorum?
+
+410
+01:09:45,827 --> 01:09:54,847
+For döngüsü içerisinde bunu bulmuş olduğum indisi, indisten başlayarak yine car count'a kadar ne yapıyorum?
+
+411
+01:09:54,847 --> 01:09:58,847
+Bir sonraki hücredeki objenin...
+
+412
+01:10:00,000 --> 01:10:08,000
+Değerini, referansını getirip buraya atıyorum. Şunun üzerine ezmiş oluyorum. Artık birinci sel bunu göstermiyor, şunu gösteriyor.
+
+413
+01:10:08,000 --> 01:10:14,000
+Okey. Ondan sonra bu işlemi tamamladıktan sonra...
+
+414
+01:10:15,412 --> 01:10:31,072
+Bunu car count kadar yani 1 ve 2 için döndürmüş oluyorum. Bu for döngüsünden çıktıktan sonra şimdi şurada hala bir obje var değil mi? Bu objeyi benim null yapmam gerekiyor.
+
+415
+01:10:31,444 --> 01:10:43,924
+Bu durumda ne yapıyorum? Car count'un değerinden bir tane çıkartıyorum. Bir çıkarttığım zaman ne oldu? Artık bir tane kaldı. Sonra car count hem available carları gösteriyordu hem indisi gösteriyordu.
+
+416
+01:10:44,384 --> 01:10:51,463
+Bu cars array içerisinde bir indisinde bulunan arkadaşın üzerine de ne yapıyorum? Null yazdırıyorum.
+
+417
+01:10:51,984 --> 01:10:56,804
+Ne yapmış oldum? Bir kaydırdım. En sonundakine de null değerini yazdırdım.
+
+418
+01:10:56,904 --> 01:11:01,003
+Car count değerini de neye düşürmüştüm? Bire düşürmüştüm.
+
+419
+01:11:01,384 --> 01:11:06,583
+Ve artık ben the car şeyini geri döndürebilirim.
+
+420
+01:11:06,583 --> 01:11:11,583
+The car neyi döndürecekti? Bu array'den silmiş olduğum...
+
+421
+01:11:12,384 --> 01:11:15,484
+Bu objenin referansını return belge olarak döndürüyorum.
+
+422
+01:11:16,043 --> 01:11:16,244
+Okey?
+
+423
+01:11:19,796 --> 01:11:22,576
+Okey, tekrardan slide'lara dönüşürüz.
+
+424
+01:11:23,396 --> 01:11:27,816
+Hocam, bu for döngüsünün sonunda zaten null yapmıyor muyuz car count'tan bir önceki değeri?
+
+425
+01:11:28,775 --> 01:11:31,615
+J artı bir car count'u göstermiyor mu burada?
+
+426
+01:11:33,556 --> 01:11:38,416
+Car count'a daha gelmeden bunu yapıyorum. Yani car count'un değeri 2 idi ya.
+
+427
+01:11:38,931 --> 01:11:57,311
+Yani iki olmuyor. Ne oluyor? Sıfırdan biri denemiş oluyorum. Yani ilk başta sıfır için döndüm. Sonra bir için döndüm. Sonra iki için geldiğimde condition'a. Condition iki, ikiden küçük olmadığı için onu egzeküt etmiyor.
+
+428
+01:11:58,152 --> 01:12:04,391
+Ama cars bire cars iki atamıyor mu burada? Bu döngüde. Mesela j bir oldu diyelim.
+
+429
+01:12:05,971 --> 01:12:14,291
+Mesela ilk başta eğer sıfırıncı şeyde bulduysam, J sıfırdan başlayacak değil mi? Evet.
+
+430
+01:12:14,291 --> 01:12:32,231
+Car count'ı iki. Şimdi sıfırdan başladım. Biri ne yaptım? Şeye atadım. Sıfıra. Sıfıra atadım. Tamam. Ondan sonra tekrardan geldim. Bu sefer bire geldim.
+
+431
+01:12:32,979 --> 01:12:40,959
+Bir car count'tan küçük, tekrardan geldim. Bu sefer ikiyi bir'e atamış oldum.
+
+432
+01:12:41,279 --> 01:12:43,859
+İki burada zaten nal değil mi hocam, biri atadığımız?
+
+433
+01:12:45,979 --> 01:12:57,859
+Ama bir saniye, şimdi sıfırdan başladım, biri atadım. Yukarıya geldiğimde benim değerim...
+
+434
+01:13:00,051 --> 01:13:04,671
+J değerin 0 mı 1 mi 1.
+
+435
+01:13:09,140 --> 01:13:33,900
+1'i car count ile karşılaştırıyorum. Burada ne olmuş oldu? 2'yi bu sefer 1'e atamış oldum. 2'yi 1'e atamış oldum. Ondan sonra tekrardan geldiğimde bu sefer 2 ile 2'yi karşılaştırdım ve şeyden çıktım.
+
+436
+01:13:40,659 --> 01:13:44,079
+Evet, bir yorum var. Ne demiş bakalım arkadaşınız?
+
+437
+01:13:47,475 --> 01:13:53,075
+İkiyi bire atayınca ikide o değer var olmaya devam ediyor. Sadece bir önceki indise kopyalıyoruz.
+
+438
+01:13:53,075 --> 01:14:11,215
+Bu ikideki değeri ben ne yaptım? Şuraya nal değerini kopyaladım. Nal değerini kopyaladıktan sonra nal değeri olmamış olsaydı, başka bir değer olmuş olsaydı buraya kopyalamış olduğumu düşünelim.
+
+439
+01:14:15,475 --> 01:14:43,475
+car count eksi bir değerine ne yapmış oldum? Null değerine atamış oldum. Yani car count ikiydi, şuraya null değerini kopyalamış oldum. Yani aslında şunu şu şekilde düşünelim, hani for döngüsünde dediğimde haklısın. Yani şu ikideki, ben bu for döngüsü içerisinde bire atamış oldum. Ama bu daha önceden başka bir şey varsa burada, ben bunu buraya kopyaladım.
+
+440
+01:14:43,475 --> 01:14:51,775
+Anlamışsam bile ben bunun üzerine tekrardan for döngüsünü bitirdiğim zaman üzerine null yazmak durumundayım.
+
+441
+01:14:52,635 --> 01:14:55,655
+Null yazmakla şunu diyorum.
+
+442
+01:14:57,095 --> 01:15:07,615
+Ben bu for döngüsünde ileride tekrardan herhangi bir şey aradığım zaman ilk available null car count indisinin göstermiş olduğu nokta olmalı.
+
+443
+01:15:07,923 --> 01:15:16,543
+Yeni bir tane obje ekleyeceğim zaman ne yapıyorum? Ben buraya ekliyorum ve car count'u bir ileriye alıyorum.
+
+444
+01:15:18,564 --> 01:15:28,923
+Okey, haklısın. Yani buradaki for döngüsü içerisinde şunu da buraya kopyalamış olduk ama mutlaka for döngüsünden çıktıktan sonra car count'un...
+
+445
+01:15:29,332 --> 01:15:39,032
+indis olarak işaret ettiği hücreye null değerini to be on the safe side atamam gerekiyor.
+
+446
+01:15:40,432 --> 01:15:41,252
+Peki hocam.
+
+447
+01:15:41,692 --> 01:15:43,592
+Tamam. Teşekkür ederim bunu yakaladığın için.
+
+448
+01:15:45,932 --> 01:15:49,872
+Okay. Let's now go to the next method.
+
+449
+01:15:50,387 --> 01:15:56,387
+Now, in the next method, you see that I have another sell car method.
+
+450
+01:15:56,927 --> 01:16:02,807
+Now, this time, so it's a new method.
+
+451
+01:16:02,907 --> 01:16:10,407
+It's not the remove car, but it is also going to remove one car from the gallery because you are selling the car, right?
+
+452
+01:16:10,467 --> 01:16:12,967
+Because that car needs to be removed from the gallery.
+
+453
+01:16:13,524 --> 01:16:35,784
+Now, obviously, when you sell a car, you sell to a person. Therefore, it takes two parameters. One is the new owner. The second one is the plate number. OK, now you see that in the method body of the sell car, since I need to remove this car, OK, I'm going to call the remove car method. OK, now you see that.
+
+454
+01:16:36,500 --> 01:16:41,800
+When I implement the cell car, I did not implement the whole remove car method.
+
+455
+01:16:42,700 --> 01:16:50,739
+So I have shown you what is the implementation of remove car, but let's say if I did not show you the implementation, okay?
+
+456
+01:16:51,140 --> 01:16:56,860
+So you should assume that, so there is a function which is supposed to remove the car.
+
+457
+01:16:57,000 --> 01:17:01,640
+It takes a plate number and it returns the car object which is removed.
+
+458
+01:17:02,036 --> 01:17:07,636
+So, you can use this method in order to implement this cell car method.
+
+459
+01:17:08,476 --> 01:17:12,435
+Arkadaşlar, sınavda en büyük yaptığınız zaman kaybı bu oluyor.
+
+460
+01:17:12,835 --> 01:17:18,255
+Bir metodun içerisinde implement ederken bir başka metodu kullanmanız gereken durum olacak.
+
+461
+01:17:18,855 --> 01:17:19,576
+Olacak yani.
+
+462
+01:17:20,576 --> 01:17:22,036
+Burada yapmanız gereken...
+
+463
+01:17:22,768 --> 01:17:49,167
+UML diagramı okumak. Yani cell car. Zaten ne diyor? Bir tane aracı satacaksın. Aracı sattığın zaman ne yapman gerekir? Galeriden çıkartman gerekir. Galeriden çıkarmak için yapman gereken bir kod var. Benim galeriden çıkarmak için yapacağım işi implement etmiş bir kod var mı burada? Bir metot var mı? Bakıyorsun remove car var. Tamam o zaman ben cell car'ın içinde remove car'ı kullanacağım.
+
+464
+01:17:50,292 --> 01:17:56,692
+Bunu yapmak yerine gidip sel karın içerisinde remove kar metodu kullanmanızı istemiyorum.
+
+465
+01:17:57,052 --> 01:18:05,012
+Yani şunu tekrardan gidip sıfırdan sanki remove kar metodu yokmuş gibi sel kar metodu içinde kullanmanızı istemiyorum.
+
+466
+01:18:14,996 --> 01:18:22,915
+UML Diagram. Even though I do not ask you to implement it, I want you to use it as if it's already there.
+
+467
+01:18:23,279 --> 01:18:27,659
+Arkadaşlar, now, cell car method is going to use the remove car method.
+
+468
+01:18:28,239 --> 01:18:32,859
+Arkadaşlar, so you basically pass the license plate number to remove car method.
+
+469
+01:18:33,020 --> 01:18:39,159
+Arkadaşlar, it will return the object reference to the car which is removed from the array.
+
+470
+01:18:39,520 --> 01:18:49,520
+Arkadaşlar, so as you see by calling the remove car method, it's going to remove it and it's going to send back to the object reference of the removed car.
+
+471
+01:18:51,060 --> 01:18:57,780
+Now, if the removed car is not null, which means that the car is there and it is removed.
+
+472
+01:18:58,680 --> 01:18:58,819
+Okay.
+
+473
+01:18:59,380 --> 01:19:07,940
+If it is null, which means that, so the remove car method could not find that car in the, in the gallery.
+
+474
+01:19:08,220 --> 01:19:12,819
+So therefore, this if condition will not be executed and they will return false.
+
+475
+01:19:14,460 --> 01:19:15,720
+If it is there.
+
+476
+01:19:16,532 --> 01:19:19,311
+Then this condition will be true.
+
+477
+01:19:19,711 --> 01:19:27,872
+Then what we are going to do, we are going to call that object by calling the setOwner method.
+
+478
+01:19:28,432 --> 01:19:37,211
+And we are going to set the new owner to that owner method, to that owner object, to that car object, sorry.
+
+479
+01:19:37,211 --> 01:19:42,811
+We are going to set the person as a new owner to that car object.
+
+480
+01:19:43,347 --> 01:19:44,887
+And then we will return true.
+
+481
+01:19:45,507 --> 01:19:52,827
+If the if condition is false, which means that the car is not available in the car gallery, then we will return false.
+
+482
+01:19:53,368 --> 01:19:53,768
+Okay.
+
+483
+01:19:58,676 --> 01:20:02,816
+Evet arkadaşlar, bir 10 dakika ara veriyorum. Ondan sonra devam edeceğiz.
+
+484
+01:31:32,787 --> 01:31:34,227
+Arkadaşlar, sesim geliyor mu?
+
+485
+01:31:42,996 --> 01:31:44,716
+Sesimin geldiğini bir teyit eder mi?
+
+486
+01:31:44,716 --> 01:31:45,835
+Evet hocam, sesiniz geliyor.
+
+487
+01:31:46,275 --> 01:31:48,615
+Okay.
+
+488
+01:31:49,456 --> 01:31:56,255
+Let's take a look at the main program, which we showed in the UML diagram.
+
+489
+01:31:56,595 --> 01:31:59,136
+So let's go back to the UML diagram.
+
+490
+01:32:00,396 --> 01:32:00,655
+Okay.
+
+491
+01:32:00,735 --> 01:32:06,876
+Remember, so we had a main program, which we said that we are going to use it.
+
+492
+01:32:07,247 --> 01:32:14,527
+Arkadaşlar, in order to run this program, which in that case, it has to have a main method.
+
+493
+01:32:14,527 --> 01:32:21,007
+So therefore, we have this main program, 0 for class, which includes a main method.
+
+494
+01:32:21,608 --> 01:32:21,727
+Okay.
+
+495
+01:32:21,987 --> 01:32:30,108
+So in the main method, as you see, now, the first thing that I do is I create an object of a gallery class.
+
+496
+01:32:30,547 --> 01:32:39,207
+Okay. And then I assign this object to this variable which has a type gallery.
+
+497
+01:32:39,868 --> 01:32:42,967
+Now let's look at the object of the gallery class.
+
+498
+01:32:43,427 --> 01:32:52,087
+Now you see that in the object, when I create the object of the gallery with the new keyword, okay, I pass two arguments.
+
+499
+01:32:52,087 --> 01:32:53,647
+The first one is a string.
+
+500
+01:32:54,627 --> 01:32:56,608
+Now the second one is an object.
+
+501
+01:32:57,203 --> 01:33:01,943
+Now, the second one is an object of what? It's an object of person class.
+
+502
+01:33:02,996 --> 01:33:11,155
+Now, but you see that here, what I'm doing is that I am creating the object right where I am within the arguments.
+
+503
+01:33:11,155 --> 01:33:11,915
+Okay.
+
+504
+01:33:12,576 --> 01:33:21,036
+Instead, I could have initiated this person object one line before.
+
+505
+01:33:21,536 --> 01:33:21,695
+Okay.
+
+506
+01:33:21,935 --> 01:33:30,996
+And I could have assigned this object to a temporary value, temporary value, which is a person type, and then use that.
+
+507
+01:33:30,996 --> 01:33:32,476
+That temporary value here.
+
+508
+01:33:33,115 --> 01:33:43,255
+But I prefer to use the, I prefer to create the object right here because I know that I'm not going to use this object again.
+
+509
+01:33:43,255 --> 01:33:55,175
+So instead of assigning it to a temporary value here, I created the object right where I pass the arguments to this construct.
+
+510
+01:33:57,171 --> 01:34:07,451
+Then I'm creating a car object. You see that here, this license plate number, since the car initially does not have an owner, so therefore it is null.
+
+511
+01:34:07,451 --> 01:34:19,332
+And another object, Audi, so I'm creating an object and assigning its reference to this Audi variable.
+
+512
+01:34:21,011 --> 01:34:22,451
+Then I'm...
+
+513
+01:34:22,804 --> 01:34:25,024
+ad car method
+
+514
+01:34:25,024 --> 01:34:26,344
+of the
+
+515
+01:34:26,344 --> 01:34:29,163
+gallery object. So remember we had
+
+516
+01:34:29,163 --> 01:34:31,224
+an ad car method and
+
+517
+01:34:31,224 --> 01:34:32,444
+that method was
+
+518
+01:34:32,444 --> 01:34:34,604
+taking the
+
+519
+01:34:35,252 --> 01:34:41,252
+A car object as an input and it was returning a boolean value as an output.
+
+520
+01:34:41,952 --> 01:34:45,311
+Now, if the operation is successful, it's going to return true.
+
+521
+01:34:45,592 --> 01:34:47,912
+So we will execute this statement here.
+
+522
+01:34:48,072 --> 01:34:50,172
+Otherwise, it's going to execute false.
+
+523
+01:34:50,271 --> 01:34:54,452
+Then we will execute the else statement.
+
+524
+01:34:56,435 --> 01:35:04,456
+Then I have an add car method, which in this case I'm adding the second object that I created here.
+
+525
+01:35:05,576 --> 01:35:06,215
+Okay.
+
+526
+01:35:06,815 --> 01:35:14,815
+Then I'm calling the introduce self method of the disk gallery.
+
+527
+01:35:14,815 --> 01:35:15,475
+Okay.
+
+528
+01:35:17,524 --> 01:35:26,184
+And then next, what I do is that I'm calling the introduce self method for the BMW, which is the car object.
+
+529
+01:35:27,124 --> 01:35:32,904
+And then I am searching the gallery for this BMW.
+
+530
+01:35:33,664 --> 01:35:39,724
+If this car is already in the gallery, it is going to return true.
+
+531
+01:35:40,304 --> 01:35:43,764
+And the first, this statement will be executed.
+
+532
+01:35:44,604 --> 01:35:44,864
+Okay.
+
+533
+01:35:46,195 --> 01:35:58,596
+So in this particular case, since I already added BMW, it should return true and we should return this statement. We should see this statement in the console.
+
+534
+01:35:59,975 --> 01:36:12,716
+And then what I'm doing is that I'm calling the remove car method with the object of the car, Audi car.
+
+535
+01:36:13,524 --> 01:36:16,504
+Now, look at what I'm doing here.
+
+536
+01:36:17,344 --> 01:36:17,544
+Okay.
+
+537
+01:36:18,384 --> 01:36:20,844
+And I am calling the object.
+
+538
+01:36:21,404 --> 01:36:25,744
+I'm calling the remove card with the license plate number.
+
+539
+01:36:25,844 --> 01:36:26,044
+Sorry.
+
+540
+01:36:26,684 --> 01:36:30,884
+I'm getting the license plate number from the audio object.
+
+541
+01:36:31,084 --> 01:36:31,644
+Okay.
+
+542
+01:36:31,684 --> 01:36:33,244
+Which I already created here.
+
+543
+01:36:33,716 --> 01:36:36,956
+And I am passing to do remove car method.
+
+544
+01:36:37,336 --> 01:36:48,655
+Now remove car method, remember, it is going to remove the car and it is going to return to me the object reference to that car which is removed.
+
+545
+01:36:49,492 --> 01:36:57,731
+So in this particular case, it is going to remove it and it is going to send me back the reference to that audio object.
+
+546
+01:36:57,852 --> 01:37:08,832
+Now, if that reference is equal to the reference, which is the reference that is pointing to audio object, in that particular case, so the result will be true.
+
+547
+01:37:09,312 --> 01:37:11,532
+In that case, if condition will be true.
+
+548
+01:37:11,923 --> 01:37:18,144
+Then I, so this statement, remove operation succeeded statement will be executed.
+
+549
+01:37:19,864 --> 01:37:25,364
+And then, so I have another if condition.
+
+550
+01:37:25,923 --> 01:37:33,724
+I will search to gallery with the Audi car, whether the Audi car is in the gallery.
+
+551
+01:37:34,644 --> 01:37:39,043
+Since I already removed it and remove operation is succeeded, so this time.
+
+552
+01:37:39,507 --> 01:37:44,247
+When I search for it, it will return false.
+
+553
+01:37:45,347 --> 01:37:45,607
+Okay.
+
+554
+01:37:47,267 --> 01:37:51,247
+Sorry, the search card will return false, yes.
+
+555
+01:37:51,967 --> 01:37:54,067
+False and false will equal to each other.
+
+556
+01:37:54,067 --> 01:37:54,727
+So, therefore,
+
+557
+01:37:59,956 --> 01:38:01,856
+Hold on.
+
+558
+01:38:03,220 --> 01:38:14,520
+If the Audi is there, it will return true. If the Audi is there, it will return true. True equal to false, then this statement will be false.
+
+559
+01:38:15,060 --> 01:38:28,080
+Then, so the Java Virtual Machine will execute the second statement, which means last operation has incorrectly succeeded, which means that, so we did not.
+
+560
+01:38:28,595 --> 01:38:33,475
+remove the car because the search car return true.
+
+561
+01:38:34,215 --> 01:38:36,895
+But previously, we removed the car here.
+
+562
+01:38:37,435 --> 01:38:37,595
+Okay.
+
+563
+01:38:37,975 --> 01:38:40,395
+Let's say it returns false.
+
+564
+01:38:40,395 --> 01:38:48,355
+In that case, so let's say it returns false.
+
+565
+01:38:49,108 --> 01:38:53,988
+Arkadaşlar, which means that it could not find the car in the gallery.
+
+566
+01:38:53,988 --> 01:38:58,648
+Arkadaşlar, now false equal to false, this is true statement, okay?
+
+567
+01:38:59,127 --> 01:39:08,507
+Since this is true, so which means that, so the if condition is correct, okay?
+
+568
+01:39:09,927 --> 01:39:15,347
+And the last operation has correctly failed.
+
+569
+01:39:17,524 --> 01:39:28,104
+Now, if this is... Now, there is a mistake here, I think. So, the two statements should be switched. Okay.
+
+570
+01:39:28,104 --> 01:39:43,004
+Eğer Audi başarılı bir şekilde remove edilmişse, bana döndüreceği şey false olmalı. Yani orada herhangi bir şey bulamadı.
+
+571
+01:39:43,667 --> 01:39:48,067
+False ve false birbirine eşit olduğu durumda burası true olacaktır.
+
+572
+01:39:51,087 --> 01:39:58,427
+Bu durumda yukarıdaki operation gerçekleşmiş demektir.
+
+573
+01:39:58,427 --> 01:40:05,667
+Eğer burada bana true'yu döndürecek olursa, yani search car varsa,
+
+574
+01:40:06,579 --> 01:40:26,260
+Bu durumda burası yani search card bunu bulmuşsa true, false. Bu durumda bu condition doğru olmayacaktır. Dolayısıyla da aşağıdaki execution çalışacaktır. Bu şekilde düşünebilirsiniz.
+
+575
+01:40:27,260 --> 01:40:32,079
+Hocam search card bulduğunda karı mı döndürüyoruz yoksa true mu döndürüyoruz?
+
+576
+01:40:32,079 --> 01:40:33,619
+İki tane vardı.
+
+577
+01:40:35,475 --> 01:41:01,935
+Bir tanesinde boolean döndürüyordu, bir tanesinde car objesi döndürüyordu. Yani bizim şu anda kullandığımız bu. Eğer buluyorsa, şeyde varsa true döndürüyordu, bulamıyorsa false döndürüyordu. Burada ben şeyi kontrol ediyorum. Şimdi burada ben bu arkadaşı remove ettiğimi düşünelim. Yani remove operation'ın başarılı bir şekilde gerçekleştirdiğini düşünelim.
+
+578
+01:41:02,484 --> 01:41:20,344
+Artık benim galerimde Audi arabası yok. Şimdi burada ben Audi arabasını search ediyorum. Search ettiğimde başarılı bir şekilde remove etmişse bana bunun false döndürmesi gerekir.
+
+579
+01:41:21,011 --> 01:41:26,011
+Bu false ise false ile false equal olduğu için bu kondişinin true olması gerekir.
+
+580
+01:41:26,371 --> 01:41:35,391
+O zaman eşit eşit false'u kaldırsak sadece cars for you, search car, holiday diye bıraksak zaten o kısım sadece yetecek.
+
+581
+01:41:35,391 --> 01:41:42,491
+O daha iyi olurmuş evet. Yani search car'ı şey yapmış olsaydık o zaman remove operations succeeded olacaktı.
+
+582
+01:41:42,691 --> 01:41:48,791
+Burada ekstradan bir şey yapmaya çalışıyoruz ama bu statementlar şey yani bu failed ya da succeeded'i
+
+583
+01:41:49,011 --> 01:42:06,431
+Kaldıralım. Şurada last operation has correctly worked. Last operation has incorrectly worked diye biletli biliriz. Ya da last operation succeeded. Last operation has not succeeded diye dönüştürebiliriz.
+
+584
+01:42:10,996 --> 01:42:21,176
+Okay, let's now jump to another object relation, which is inheritance.
+
+585
+01:42:23,016 --> 01:42:24,416
+Let me set the timer.
+
+586
+01:42:33,652 --> 01:42:34,152
+Okay.
+
+587
+01:42:36,152 --> 01:42:45,932
+The inheritance relationship is used when you want the properties of one object to be inherited by another object.
+
+588
+01:42:46,812 --> 01:42:46,972
+Okay.
+
+589
+01:42:47,632 --> 01:42:55,532
+So there is a parent object and there is a child object in the inheritance relationship.
+
+590
+01:42:55,912 --> 01:42:55,992
+Okay.
+
+591
+01:42:56,672 --> 01:42:59,152
+Now, the...
+
+592
+01:42:59,283 --> 01:43:14,783
+Objects of class A, okay, is the parent objects and the objects of class B is the child objects and class B is inherited from class A.
+
+593
+01:43:15,523 --> 01:43:18,643
+Okay, now you see that here I have two classes.
+
+594
+01:43:19,155 --> 01:43:22,155
+B class is inherited from A.
+
+595
+01:43:22,716 --> 01:43:26,775
+OK, so A is the parent and B is the child.
+
+596
+01:43:27,256 --> 01:43:37,256
+OK, which means that the objects of class A is the parents of the object of class B.
+
+597
+01:43:37,976 --> 01:43:44,076
+OK, now in the inheritance relationship, the reason that we are using inheritance relationship.
+
+598
+01:43:44,595 --> 01:44:08,255
+Sometimes we may have classes, okay, who may have generalization and specialization relationship, which means that you may have sometimes some classes which needs to be a generalized class, and you may have some classes that needs to be a specialized class.
+
+599
+01:44:08,671 --> 01:44:32,771
+Arkadaşlar, okay? And if that's the case, then the specialized class classes should have specific methods that should not be in the generalized version of that class. Let me show you this. For example, take a look at this. For example, printer and the laser printer. Now there is a generalization and specialization relationship.
+
+600
+01:44:33,268 --> 01:44:51,687
+Arkadaşlar, in the inheritance relationship. Now, one class is a generalized class, okay, which should have methods that should only belong to a generalized version of that thing. In this particular case, that thing is printer.
+
+601
+01:44:52,287 --> 01:44:58,687
+Arkadaşlar, and also specialized class is a specialized version of that generalized class.
+
+602
+01:44:59,600 --> 01:45:09,420
+And that specialized class should have some methods that is particular to that specialized item.
+
+603
+01:45:09,820 --> 01:45:11,800
+In this particular case, laser printer.
+
+604
+01:45:13,180 --> 01:45:13,660
+Ne diyoruz?
+
+605
+01:45:13,780 --> 01:45:16,740
+Hani generalization relationship ilişkisidir.
+
+606
+01:45:17,619 --> 01:45:36,739
+Eğer benim kuracağım object-oriented programda böylesi classlar varsa, yani bazı classlar daha kapsayıcı classlar, bazı classlar ise daha spesifik classlar ise bu durumda bunlar arasında ben ilişki yaratabilirim.
+
+607
+01:45:36,739 --> 01:45:45,619
+Bu ilişkiyi de kullanarak ne yapmış olurum? Daha az kod yazarak bir üst sınıfın içindeki...
+
+608
+01:45:45,619 --> 01:45:56,639
+alttaki metotları alttaki classlarda kullanıp sadece alttaki classlarda alttaki classların yapması gereken spesifik metotları kullanabilirim.
+
+609
+01:45:56,819 --> 01:46:01,099
+Mesela diyelim ki şunda dört tane metot var printer'ın içerisinde.
+
+610
+01:46:03,179 --> 01:46:07,119
+Alttakilerde ise her bir tanesine ekstra birer tane metot var.
+
+611
+01:46:07,239 --> 01:46:11,300
+Ama bu ekstra birer metotlar sadece bunlar için kullanılması gereken metotlar.
+
+612
+01:46:11,956 --> 01:46:13,956
+Bu durumda şunu diyebilirim.
+
+613
+01:46:15,076 --> 01:46:27,956
+Ya ben bundaki dört tane metodu her birisinde yazmak yerine ben bir tane generalized class kullanayım.
+
+614
+01:46:28,636 --> 01:46:30,336
+Buraya bu dört metodu buraya yazayım.
+
+615
+01:46:30,735 --> 01:46:57,355
+Bu arkadaşların içleri neyse sadece birer metot yazayım. Bu durumda bu arkadaşların her birisi yukarıdaki generalized class'ın o dört tane metodunu inherit etsin. Sadece burada bir tane. Peki bunun alternatifi ne olurdu? Bunun içindeki dört metodu bunun içerisinde bunların her birisine yazacaktım. Zaten bunlarda bir tane bunlara özel bir tane metot vardı. Dört metot, dört metot, dört metot ekstradan kod yazmış olacaktım.
+
+616
+01:46:58,452 --> 01:47:20,091
+inheritance relationship ile ne yapmış oluyorum? Diyorum ki arkadaş benim bir tane generalized class'ım olsun içerisinde alttaki sınıfların hepsinin ortak kullanacağı metotları koyayım ve alttaki sınıfların kendilerine özel olan metotları varsa da onların içerisinde kalsın ve bunlar da yukarıdakini inherit etsinler.
+
+617
+01:47:21,043 --> 01:47:42,024
+Inheritance ilişkisi bu kadar basit. Ve bu ilişkiyi konuşurken de buna is a relationship diyorum. Yani bu generalized versiyonu, bunların hepsinin generalized versiyonu. Dolayısıyla da alttaki sınıfın bir objesi üstteki sınıf tipindedir. Yani is a relationship vardır.
+
+618
+01:47:42,024 --> 01:47:49,043
+Hani bunun bir objesi, dot matrix printer'ın bir objesi aynı zamanda printer'ın bir objesidir. Yani şurada.
+
+619
+01:47:49,043 --> 01:48:07,043
+is a relationship. Bu child class'ın objelerinin beklendiği her yerde üst class'ın tipi kullanılabilir. Yani ben dot matrix'ten bir tane obje yarattım. Bu objesin tipi olarak hem dot matrix'ı kullanabilirim hem printer'ı kullanabilirim.
+
+620
+01:48:07,043 --> 01:48:13,043
+Okey. Laser'ın bir objesini yarattım. Bu objenin takip ederken
+
+621
+01:48:13,971 --> 01:48:20,151
+Hem printer class tipini kullanabilirim hem laser'ı kullanabilirim. Az sonra bunu göreceksiniz.
+
+622
+01:48:20,151 --> 01:48:30,051
+Ama aklınızda kalması gereken generalized specialization relation söz konusuysa ben ne yapıyorum? Inheritance relationship'ini kullanıyorum.
+
+623
+01:48:30,416 --> 01:48:51,316
+Temel avantajı daha az kod yazmış olmuyorum. Az önce örneğini verdim. Yani her birisinde beşer tane farklı metot yazmak yerine bunların kesişimi olan dört tane metot var. Bu dört tane metodu bir üst sınıfa çıkartıyorum, bir üst sınıf daha yıratıyorum. Hepsini bundan inherit ediyorum. Bunlara sadece farklı olan birer metodu yazıyorum. Böyle bir avantajı var.
+
+624
+01:48:56,307 --> 01:49:11,587
+Arkadaşlar, how infer inheritance works. Now, all member fields and methods of the parent are transferred to the child. So, which means that the child object can inherit both not only the member methods, but also the member data fields. Okay.
+
+625
+01:49:13,507 --> 01:49:14,087
+And
+
+626
+01:49:15,444 --> 01:49:21,444
+However, the children cannot access the inherited private members.
+
+627
+01:49:22,084 --> 01:49:22,184
+Okay.
+
+628
+01:49:22,364 --> 01:49:33,904
+So, which means that in the parent class, if there are private members, global private members, the child class, okay, cannot directly access to the private member.
+
+629
+01:49:34,584 --> 01:49:35,264
+Okay.
+
+630
+01:49:35,264 --> 01:49:42,304
+It needs to use one of the public methods of the parents in order to access to that private member.
+
+631
+01:49:42,804 --> 01:49:59,023
+Arkadaşlar, ok? But it will inherit the private, so it will inherit the data member fields. Ok, it can use it, but in order to access them, so it needs to use the public methods of the parent.
+
+632
+01:50:00,787 --> 01:50:12,247
+Arkadaşlar, okay. Now, protected members, remember when we talked about access modifiers, we also talked about a protected access modifier. Now, we are going to talk about protected.
+
+633
+01:50:12,647 --> 01:50:28,167
+Previously, we talked about the public access modifier and private access modifier. Now, we are going to talk about protected access modifier. Now, protected members, it could be either the data member fields or the data methods, okay.
+
+634
+01:50:28,659 --> 01:50:36,499
+Those members can be accessed by children, okay, but they are not accessible by other classes, okay?
+
+635
+01:50:36,499 --> 01:50:53,679
+Now, the child of an, the child object of an, the child class of a parent class, okay, it can access to protected members, data member fields, it can access to
+
+636
+01:50:55,060 --> 01:51:11,060
+Arkadaşlar, protected methods. Okay. But any other objects of other classes, they cannot see these protected data member fields and or methods. Okay.
+
+637
+01:51:11,539 --> 01:51:24,819
+Yani protected ile private aslında başka sınıfların objeleri için aynı şey demek. Yani hem protected'ı hem private'ı başka sınıfların objeleri göremiyorlar.
+
+638
+01:51:36,800 --> 01:51:42,900
+protected memberlarını görebiliyor ama private memberlarını göremiyor.
+
+639
+01:51:48,340 --> 01:51:51,460
+Now let's take a look at the inheritance relationship further.
+
+640
+01:51:52,260 --> 01:51:56,600
+Okay, now the subclass cannot reject a member from the superclass.
+
+641
+01:51:56,600 --> 01:52:01,800
+So which means that the child class will inherit everything that comes from the parent class.
+
+642
+01:52:02,439 --> 01:52:09,800
+Okay, now in the child class, you can overwrite the parent method.
+
+643
+01:52:10,500 --> 01:52:13,119
+Okay, so which means that?
+
+644
+01:52:13,555 --> 01:52:18,855
+Let's say in this particle example, let's say this printer has a print method, right?
+
+645
+01:52:19,595 --> 01:52:30,295
+Now, laser class might also have a print method. In that case, that print method will overwrite the parents print method.
+
+646
+01:52:31,055 --> 01:52:37,055
+Okay, let's say I created an object of the laser. Okay, class.
+
+647
+01:52:37,471 --> 01:52:42,032
+Now I have an object and that object has the print method.
+
+648
+01:52:42,032 --> 01:52:53,132
+Now when I execute that print method, since this print method is overwrite, say, the parent's print method, this print method will be executed.
+
+649
+01:52:53,952 --> 01:52:54,552
+Okay.
+
+650
+01:53:00,051 --> 01:53:11,331
+And another thing. So remember, when we talked about final keyword and we talked about final can also be used not only the member fields, but also the methods.
+
+651
+01:53:11,331 --> 01:53:23,851
+If the method is also defined as final, this means that in the child class final method cannot be overridden. OK.
+
+652
+01:53:23,851 --> 01:53:26,863
+Now, let's say if you want.
+
+653
+01:53:26,863 --> 01:53:34,023
+So, remember we said that generalization and specialization relationship.
+
+654
+01:53:34,643 --> 01:53:34,743
+Okay.
+
+655
+01:53:35,343 --> 01:53:38,963
+Now, let's take a look at the person and student.
+
+656
+01:53:39,203 --> 01:53:41,723
+Now, student is inherited from person.
+
+657
+01:53:42,383 --> 01:53:42,443
+Okay.
+
+658
+01:53:42,883 --> 01:53:46,863
+Now, so here, let's say person has a vatandaşlık numarası.
+
+659
+01:53:47,183 --> 01:53:47,443
+Okay.
+
+660
+01:53:48,703 --> 01:53:52,063
+But student has a student ID as well.
+
+661
+01:53:52,532 --> 01:54:04,591
+A person may or may not have student ID, therefore, I am using the student ID, data member field, in the student class.
+
+662
+01:54:05,251 --> 01:54:10,532
+Now, for the person, I am using a generalized ID, which is vatandaşlık numarası.
+
+663
+01:54:11,028 --> 01:54:24,547
+Now, if I want to add additional methods to student, for example, get student ID or set student ID, those methods needs to go in the student class, not to the person class.
+
+664
+01:54:25,087 --> 01:54:28,627
+Okay. New members can be added to the subclasses.
+
+665
+01:54:28,627 --> 01:54:29,188
+Okay.
+
+666
+01:54:32,500 --> 01:54:35,639
+And the subclass can also be the parent of other classes.
+
+667
+01:54:35,779 --> 01:54:37,539
+For example, let's think of employee.
+
+668
+01:54:37,719 --> 01:54:41,960
+Employee is the parent class of other classes here, director and part-time.
+
+669
+01:54:44,859 --> 01:54:45,380
+Okay.
+
+670
+01:54:46,079 --> 01:54:50,019
+Now, as you see,
+
+671
+01:54:50,019 --> 01:54:51,300
+and
+
+672
+01:54:51,859 --> 01:54:55,339
+I can create a tree structure like this.
+
+673
+01:54:55,519 --> 01:55:10,479
+I can, so, so if, if I have such classes, like one class is parent of other classes at the same time, it's child of another class, and I can create a tree structure, okay?
+
+674
+01:55:10,839 --> 01:55:14,279
+And such tree structure is called inheritance tree.
+
+675
+01:55:14,804 --> 01:55:23,604
+Arkadaşlar, but when we write code, we need to pay attention that the three inheritance tree should not be too deep.
+
+676
+01:55:24,404 --> 01:55:27,564
+Arkadaşlar, so you see that this tree has three levels.
+
+677
+01:55:28,404 --> 01:55:33,364
+Arkadaşlar, if I keep continue like this and if I create a tree which has 10.
+
+678
+01:55:33,728 --> 01:55:55,347
+Arkadaşlar, you know, levels, okay, then it becomes a problem because so when when the depth of a tree inheritance tree is too big, okay, then it it is it makes it difficult for the programmer to manage it. Okay, because if one of the
+
+679
+01:55:55,764 --> 01:56:02,184
+A pend classes, okay, is change, it's going to affect many other child classes.
+
+680
+01:56:03,064 --> 01:56:11,104
+Okay, so therefore, what we are going to do when we write our code, we are going to pay attention that our tree is not too deep.
+
+681
+01:56:11,104 --> 01:56:11,724
+Okay.
+
+682
+01:56:15,796 --> 01:56:21,855
+Now, we talked about generalization and specialization relationship, okay?
+
+683
+01:56:22,176 --> 01:56:25,216
+And we also talked about the easy relationship.
+
+684
+01:56:25,395 --> 01:56:31,716
+And one thing that you should remember, the child can be used whenever the parent is expected.
+
+685
+01:56:31,716 --> 01:56:39,515
+Again, for example, I created an object of G class, okay?
+
+686
+01:56:41,652 --> 01:57:07,351
+Arkadaşlar, now that I have a jeep object, okay, I can keep track of this jeep object with two things. I can use the jeep class in order to reference to this jeep object. I can also use the car class in order to reference to this jeep object. Okay. Whenever a child can be used whenever the parent is expected. Okay.
+
+687
+01:57:08,340 --> 01:57:16,700
+So, if I define a car variable here, if I define a variable where the type is car, okay,
+
+688
+01:57:17,203 --> 01:57:28,483
+And you may think that, okay, since I defined a car type variable, I need to create an object of the car, okay?
+
+689
+01:57:29,343 --> 01:57:40,268
+Wherever the parent is expected, I can also use the child, which means that after I define the car variable, I can also assign the...
+
+690
+01:57:40,340 --> 01:57:46,100
+Arkadaşlar, child object to this parent variable. So you will see examples of this in a minute.
+
+691
+01:57:48,420 --> 01:58:04,220
+Arkadaşlar, now take a look at the inheritance relationship, how we can build an inheritance relationship. So whenever you use the inheritance relationship, you should always ask whether there is a relationship. Now here you see that somebody
+
+692
+01:58:05,235 --> 01:58:21,956
+Arkadaşlar, created a inheritance three, but it is a wrong inheritance three. Why? Because see, this is, these are colors, right? And this is the graphical user interface button, GUI button. Now look at this. Red is GUI button.
+
+693
+01:58:23,096 --> 01:58:32,655
+The yellow is a GUI button. Purple is a GUI. It does not fit. It does not work. Okay. Now these are the properties of a GUI button.
+
+694
+01:58:33,007 --> 01:58:41,608
+They are not actually the GUI button. So there is no is a relationship here. OK, so therefore this modeling is wrong.
+
+695
+01:58:41,608 --> 01:58:50,887
+Now, let's take a look at this one. You see that the parent class is GUI button and the child class is a regular GUI button.
+
+696
+01:58:50,887 --> 01:58:57,771
+OK, now this is GUI button and this is also GUI button. So which means that it is OK that.
+
+697
+01:58:58,292 --> 01:59:05,992
+Now, this can be extended, the GUI button can be extended from the regular GUI button, okay?
+
+698
+01:59:05,992 --> 01:59:20,872
+And you see that I have a color and I can use any types of color as the properties, okay?
+
+699
+01:59:25,043 --> 01:59:34,543
+Now, inheritance is a class relationship that cannot be changed during runtime.
+
+700
+01:59:35,264 --> 01:59:35,403
+Okay.
+
+701
+01:59:35,823 --> 01:59:42,344
+So, so we need to pay attention to the correct modeling when we model our program.
+
+702
+01:59:44,024 --> 01:59:44,743
+Okay.
+
+703
+01:59:45,427 --> 01:59:52,047
+And so we need to have a clear understanding of generalized and specialization relationship.
+
+704
+01:59:52,347 --> 01:59:58,108
+And we need to make sure that we know that there is a relationship.
+
+705
+01:59:58,787 --> 02:00:04,087
+Otherwise, other relations such as association, composition and aggregation can be used.
+
+706
+02:00:04,960 --> 02:00:14,340
+So always, always when you use inheritance relationship, you need to check whether there is a relationship between the two classes.
+
+707
+02:00:15,539 --> 02:00:16,460
+Okay.
+
+708
+02:00:17,420 --> 02:00:26,619
+Now, with the inheritance, in object-oriented programming, we have a nice advantage called polymorphism.
+
+709
+02:00:27,220 --> 02:00:28,179
+Okay, with the inheritance,
+
+710
+02:00:29,395 --> 02:00:31,835
+Arkadaşlar, we take advantage of this property.
+
+711
+02:00:32,515 --> 02:00:32,655
+Arkadaşlar, okay.
+
+712
+02:00:33,095 --> 02:00:35,155
+Arkadaşlar, so what is polymorphism?
+
+713
+02:00:35,715 --> 02:00:35,875
+Arkadaşlar, okay.
+
+714
+02:00:36,335 --> 02:00:47,515
+Arkadaşlar, now you see that the person class is the parent class and from person class, three other classes are inherited from the person class.
+
+715
+02:00:47,895 --> 02:00:51,135
+Arkadaşlar, there is a student, there is the employee, there is the retired person.
+
+716
+02:00:51,796 --> 02:01:03,076
+Okay. Now, in each of these classes, you see that there is introduced self method, which you know that they are overriding the parents introduced self method.
+
+717
+02:01:04,296 --> 02:01:05,015
+Okay.
+
+718
+02:01:07,155 --> 02:01:14,756
+Now, let's say I created an array of type person.
+
+719
+02:01:15,536 --> 02:01:16,175
+Okay.
+
+720
+02:01:16,948 --> 02:01:19,807
+I created an array of type person.
+
+721
+02:01:20,408 --> 02:01:22,747
+Then I inserted.
+
+722
+02:01:23,747 --> 02:01:25,228
+Person objects.
+
+723
+02:01:25,967 --> 02:01:26,127
+OK.
+
+724
+02:01:27,188 --> 02:01:31,488
+Which the objects which are created from person class.
+
+725
+02:01:31,488 --> 02:01:35,648
+Then I also inserted student objects.
+
+726
+02:01:36,115 --> 02:01:54,956
+Can I do that? Remember, whenever a person, parent class is expected, a child class can be used in inheritance relationship. This array was a person array, so therefore I can also insert student object as well.
+
+727
+02:01:55,828 --> 02:02:09,228
+Then I inserted the employee object. Then I inserted the retired object. Now in this person array, now I have four different type objects, person, student, employee, and retired.
+
+728
+02:02:09,228 --> 02:02:12,588
+Okay. Now let's say,
+
+729
+02:02:13,984 --> 02:02:23,484
+I do a for loop on this array and always whenever I encounter an object I call the introduce self method.
+
+730
+02:02:24,467 --> 02:02:48,007
+Arkadaşlar, okay. Now, when I call the introduce self method of the person object, this introduce self method will be executed. When I call the introduced self method of student objects, remember, student overwrote the introduce self of parent, so this will be executed. For employee, this will be executed. For retired, this will be executed.
+
+731
+02:02:48,692 --> 02:03:03,692
+Okay, now, at the end of it, now you see that even though so you have the same type of objects in the same array, they all behave differently.
+
+732
+02:03:03,692 --> 02:03:07,692
+During the execution time. Okay.
+
+733
+02:03:07,692 --> 02:03:16,427
+Keshitlilik, they all behave differently. So this mechanism is called polymorphism. So with the inheritance.
+
+734
+02:03:16,435 --> 02:03:27,435
+You end up with çeşitlilik, çeşitli davranış. Yani bir sınıfın farklı davranışlarını ben implement edebiliyorum inheritance'ta.
+
+735
+02:03:27,836 --> 02:03:34,435
+Person sınıfının student davranışı var, employee davranışı var, detailed davranışı var. Hepsi person tipinde.
+
+736
+02:03:34,963 --> 02:03:48,784
+Aynı tipte olan objelerin farklı davranışlarını, aynı metot için bakın, farklı davranışlarını gerçekleştirebiliyorum. Demek ki polymorphismi gerçekleştirebiliyorum inheritance'la.
+
+737
+02:04:02,228 --> 02:04:03,868
+Now, um...
+
+738
+02:04:08,884 --> 02:04:33,684
+Arkadaşlar, in case, what should we do if needed, if we needed to access overridden methods preview version as coded during, in, within the child class. Now, so let's say in the student class, there is the introduced self method, right? It is overriding the parents introduced self method. But let's say in the student class, we also need to execute
+
+739
+02:04:34,112 --> 02:05:00,112
+Introduce self method of the parents class. OK. Now, if I directly call the introduce self method in the student class, this introduce self method will be executed. But if I wanted to call introduce self method of the parents class, then I need to use another keyword super. OK. Before I used to use the keyword this.
+
+740
+02:05:00,336 --> 02:05:04,456
+This was used in order to refer to object of the current class.
+
+741
+02:05:05,376 --> 02:05:11,376
+Now, super is used in order to refer to object of the parent class.
+
+742
+02:05:11,855 --> 02:05:20,456
+Okay, if I am in the student class and if I wanted to execute the parents introduced submethod, then I'm going to use the super method.
+
+743
+02:05:20,456 --> 02:05:21,256
+Okay.
+
+744
+02:05:25,203 --> 02:05:27,043
+Now, let's take a look at an example.
+
+745
+02:05:28,263 --> 02:05:28,483
+Okay.
+
+746
+02:05:29,303 --> 02:05:31,383
+Here, I have a UML diagram.
+
+747
+02:05:31,543 --> 02:05:34,483
+You see that person is the parent class.
+
+748
+02:05:34,683 --> 02:05:35,743
+It has one parameter.
+
+749
+02:05:36,543 --> 02:05:41,903
+And then it has one constructor and one getter method.
+
+750
+02:05:42,823 --> 02:05:43,903
+And employee is...
+
+751
+02:05:44,319 --> 02:06:08,999
+Extending the parent class. Now you see, I used another word, extending. Extend means inherited in the inheritance relationship, which means that employee extends person. I will keep using this word, this keyword throughout the course, extend. Employee extends person.
+
+752
+02:06:09,619 --> 02:06:16,220
+Now you look at the employee, you see that employee has one additional parameter, global member field.
+
+753
+02:06:16,220 --> 02:06:28,020
+Okay. Now, know that employee inherits the name as well. Now, if I create an object of the employee.
+
+754
+02:06:28,692 --> 02:06:38,552
+That object will include both name and salary data member face because name is inherited from the parent class.
+
+755
+02:06:38,772 --> 02:06:44,832
+Now you see that I have three methods in the employee class.
+
+756
+02:06:45,292 --> 02:06:50,812
+One is the constructor. It takes two parameters. The other one is set and get methods for the salary.
+
+757
+02:06:52,115 --> 02:06:57,695
+Now look at, I have another class, manager class, manager class extends the employee.
+
+758
+02:06:58,355 --> 02:06:58,456
+Okay.
+
+759
+02:07:00,015 --> 02:07:04,775
+Now here in the manager class, I have additional member field, which is bonus.
+
+760
+02:07:06,076 --> 02:07:06,695
+Okay.
+
+761
+02:07:07,055 --> 02:07:09,716
+And I have three member fields, manager.
+
+762
+02:07:10,676 --> 02:07:20,956
+Arkadaşlar, which is the constructor, two-parameter constructor. I have a set method for this global member field, and I have get method for the salary.
+
+763
+02:07:21,695 --> 02:07:38,076
+Now, you see that the get method for the salary is not exist, is also exist here. Okay. Now, since I have the get salary method, which means that I will overwrite the parents get salary method.
+
+764
+02:07:40,307 --> 02:08:01,028
+Arkadaşlar, okay? Now, you also see that there is no set, there is no getName and getSetCelery method here. GetName is inherited from here and getName, this method inherits getName from here. GetCelery is inherited from here, okay?
+
+765
+02:08:01,779 --> 02:08:07,199
+Even though you don't see it, getCelary and getName, but you should know that they are here.
+
+766
+02:08:07,600 --> 02:08:12,859
+Even though you don't see name and salary member fields, you should know that they are here.
+
+767
+02:08:13,060 --> 02:08:19,359
+Objects of the manager will inherit from the data member fields and the member methods from the parallel class.
+
+768
+02:08:20,948 --> 02:08:26,188
+And here I have another class which I'm using in order to run this example.
+
+769
+02:08:26,827 --> 02:08:28,648
+And you see that I have a main method.
+
+770
+02:08:28,807 --> 02:08:32,807
+In the main method, both employee and manager classes are used.
+
+771
+02:08:32,927 --> 02:08:34,667
+Therefore, there is dependency relationship.
+
+772
+02:08:36,747 --> 02:08:40,908
+Now let's take a look at the person class.
+
+773
+02:08:42,676 --> 02:08:49,496
+It's exactly the same class notation that we have learned so far.
+
+774
+02:08:49,496 --> 02:08:54,115
+So here is, I'm defining the class, it's a public class.
+
+775
+02:08:54,836 --> 02:09:00,296
+And it has one global member field and it is defined as private.
+
+776
+02:09:00,956 --> 02:09:03,916
+And I have two methods, one constructor.
+
+777
+02:09:04,936 --> 02:09:08,536
+In the constructor, I am initializing the value of global member field.
+
+778
+02:09:08,916 --> 02:09:13,016
+And I have one get name method which returns string.
+
+779
+02:09:13,916 --> 02:09:15,896
+Now take a look at the employee.
+
+780
+02:09:16,576 --> 02:09:19,275
+So employee extends the person.
+
+781
+02:09:20,136 --> 02:09:26,496
+Now you see that in the definition of the class, I use the keyword extends.
+
+782
+02:09:26,996 --> 02:09:29,216
+Okay, you will also do the same.
+
+783
+02:09:30,195 --> 02:09:31,836
+Employee extends person.
+
+784
+02:09:32,356 --> 02:09:34,315
+Okay, so this is how we're writing.
+
+785
+02:09:34,996 --> 02:09:41,695
+Arkadaşlar, the inheritance relationship for the child class, employee, extends, person.
+
+786
+02:09:43,375 --> 02:09:49,935
+Arkadaşlar, you see the curly parenthesis and within this, so you have the code body for the class.
+
+787
+02:09:50,715 --> 02:09:57,695
+Arkadaşlar, and in the data member field section, you see that there is one member field, which is salary.
+
+788
+02:09:58,695 --> 02:09:59,975
+Arkadaşlar, okay, it's a private member.
+
+789
+02:10:00,000 --> 02:10:26,139
+Type is integer. And then I have a constructor, which is here, employee, two parameter constructor. Now this constructor takes two parameters, name and salary. Okay. Now you see that in this constructor, I am calling, I'm using the super keyword. Okay. And I'm passing the name parameters.
+
+790
+02:10:27,188 --> 02:10:31,188
+Now, this here is how we are calling the parents constructor.
+
+791
+02:10:32,568 --> 02:10:33,087
+Okay.
+
+792
+02:10:34,288 --> 02:10:37,507
+This is how we are calling the parents constructor.
+
+793
+02:10:37,688 --> 02:10:41,248
+Now, we are calling the parents constructor in order to set the...
+
+794
+02:10:41,247 --> 02:10:57,907
+Name to the global member field of the parent. Remember, this class is inheriting all the data member field and also the methods. So we need to also initialize the parents' global member field. So this is how we are initializing the parents' member field.
+
+795
+02:10:59,188 --> 02:11:06,868
+And then what we are going to do, we are going to initialize the global member field of the current object, which is employee objects.
+
+796
+02:11:06,868 --> 02:11:14,807
+Here I'm assigning a value. I'm assigning the past argument to the global member field salary.
+
+797
+02:11:16,148 --> 02:11:24,047
+Then you see that I have get salary and I have set salary methods for the salary global member fields.
+
+798
+02:11:26,228 --> 02:11:30,847
+Now, let's take a look at the third class is the manager class.
+
+799
+02:11:32,148 --> 02:11:35,368
+Now, this time, manager class extends employee.
+
+800
+02:11:36,688 --> 02:11:36,927
+Okay.
+
+801
+02:11:37,268 --> 02:11:44,788
+Now, you see that in the global member field section, I have a bonus variable where the type is integer.
+
+802
+02:11:47,220 --> 02:11:49,079
+And I have one constructor.
+
+803
+02:11:49,939 --> 02:11:53,539
+You can see this constructor from the UML diagram.
+
+804
+02:11:53,760 --> 02:11:56,500
+It takes two parameters, one string, the other one integer.
+
+805
+02:12:00,275 --> 02:12:09,036
+And in that constructor, I'm calling super, which is the parents, which is the parents constructor.
+
+806
+02:12:09,235 --> 02:12:10,956
+It is a two parameter constructor.
+
+807
+02:12:11,536 --> 02:12:13,015
+I'm passing name and salary.
+
+808
+02:12:14,715 --> 02:12:21,675
+And I also initialize the current class global member field by assigning zero.
+
+809
+02:12:22,875 --> 02:12:23,115
+Okay.
+
+810
+02:12:23,675 --> 02:12:26,855
+Then you see that I have a setter method for bonus.
+
+811
+02:12:27,923 --> 02:12:31,043
+And I have a getter method for salary.
+
+812
+02:12:31,983 --> 02:12:37,043
+Now, so look at the get salary implementation.
+
+813
+02:12:37,843 --> 02:12:50,923
+Now, in the get salary implementation, what I do is that now the manager has the same salary calculation like the employee.
+
+814
+02:12:51,923 --> 02:12:55,383
+So, therefore, I need to call the get salary method.
+
+815
+02:12:55,828 --> 02:12:58,488
+Of the parent class.
+
+816
+02:12:59,828 --> 02:13:04,648
+How do you call the get salary method of the parent class?
+
+817
+02:13:04,748 --> 02:13:07,868
+Because this manager has also, you see, that get salary method.
+
+818
+02:13:08,568 --> 02:13:11,088
+How do you call the parents get salary method?
+
+819
+02:13:11,548 --> 02:13:13,448
+To do this, you use the super keyword.
+
+820
+02:13:14,468 --> 02:13:20,788
+Now, here you see one usage of super keyword, which we use in order to call the constructor.
+
+821
+02:13:21,279 --> 02:13:28,559
+Here you see the other usage of the super keyword which we use to call one of the methods of the parent class.
+
+822
+02:13:29,999 --> 02:13:34,319
+Okay, now we call the get salary of the parent class.
+
+823
+02:13:35,412 --> 02:13:43,332
+And then we add the bonus because the manager has additional bonus, okay, which employee does not have.
+
+824
+02:13:43,332 --> 02:13:51,092
+So therefore, when we calculate the get salary of a manager, so we need to add the bonus to the usual get salary.
+
+825
+02:13:53,432 --> 02:13:53,992
+Okay.
+
+826
+02:13:55,332 --> 02:13:55,892
+Now.
+
+827
+02:13:56,336 --> 02:14:03,376
+So one thing to remember, we can only use super once, so we cannot write super dot super.
+
+828
+02:14:03,376 --> 02:14:05,076
+So for example,
+
+829
+02:14:05,568 --> 02:14:09,928
+You cannot access the parent's parent by using super.super.
+
+830
+02:14:10,708 --> 02:14:22,808
+The objects of this class can only access to this objects of this class, which means that I can only use super keywords.
+
+831
+02:14:23,748 --> 02:14:25,768
+So if I wanted to access...
+
+832
+02:14:26,484 --> 02:14:35,324
+To parents parent, first, this class should have a method that accesses to parents method.
+
+833
+02:14:35,804 --> 02:14:39,884
+And this one, you will use that particular method.
+
+834
+02:14:40,024 --> 02:14:44,963
+By using parents method, it can access to the parents parent.
+
+835
+02:14:50,387 --> 02:15:05,427
+Now, let's take a look at the main program, okay, which was the company, I believe, yeah, this is company class, which we use in order to execute the whole thing, okay.
+
+836
+02:15:06,127 --> 02:15:10,707
+Now, you see, in this particular class, I have a main method.
+
+837
+02:15:11,027 --> 02:15:17,487
+Now, in this main method, you see, I am creating an array of employee type.
+
+838
+02:15:18,836 --> 02:15:20,856
+And the size of the array is three.
+
+839
+02:15:22,536 --> 02:15:28,076
+Now, the first thing is that first I'm creating a manager object.
+
+840
+02:15:28,536 --> 02:15:30,536
+Okay, here is the name.
+
+841
+02:15:30,996 --> 02:15:33,176
+And also here is the bonus.
+
+842
+02:15:36,756 --> 02:15:42,676
+Now, when I create, so, and then I'm setting the bonus to this manager object.
+
+843
+02:15:44,636 --> 02:15:56,616
+And in the first cell of this employee, I am assigning the value, the reference value to this object to the first cell.
+
+844
+02:15:58,296 --> 02:15:59,476
+Now, remember.
+
+845
+02:16:00,115 --> 02:16:27,155
+Wherever the parent object is accepted, expected, the child object can be used. Here, this is a child object of the parent employee. So here, one, you would expect an object of the employee class. But here, since there is an inheritance relationship, I can also assign the child class classes object, which is, which in this case, manager object is
+
+846
+02:16:28,115 --> 02:16:55,596
+Boss. Now, the first cell is now pointing to a manager object, even though, remember, this array is an employee array. Now, in the second object that I'm creating is an employee object, okay, and the third object that I'm creating, again, employee 2 object, employee 1, employee 2 objects, okay?
+
+847
+02:16:58,995 --> 02:17:04,975
+Now, I have three objects that are assigned to this employee.
+
+848
+02:17:05,635 --> 02:17:09,935
+And now I can do a for loop on this employee array.
+
+849
+02:17:10,795 --> 02:17:13,335
+Okay, I can do a for each loop.
+
+850
+02:17:13,335 --> 02:17:17,595
+So every object that I found in this array will be assigned to.
+
+851
+02:17:18,515 --> 02:17:22,415
+This local variable, which has a type employee.
+
+852
+02:17:23,255 --> 02:17:34,995
+And here you see that in the for loop body, when I call a get name, okay, so they will give me, they will write the name of the employee.
+
+853
+02:17:35,435 --> 02:17:39,576
+Even the manager object will write the name of the manager.
+
+854
+02:17:40,236 --> 02:17:43,455
+And when I call the get salary method, okay.
+
+855
+02:17:43,904 --> 02:17:50,044
+When I call the getCelary method, for the manager object, this method will be executed.
+
+856
+02:17:50,564 --> 02:17:50,684
+Okay.
+
+857
+02:17:51,204 --> 02:17:57,463
+For the employee object, this getCelary method will be executed.
+
+858
+02:17:58,164 --> 02:17:58,404
+Okay.
+
+859
+02:17:59,024 --> 02:18:01,783
+So this is what we call polymorphism.
+
+860
+02:18:02,783 --> 02:18:03,364
+Okay.
+
+861
+02:18:08,180 --> 02:18:18,520
+Arkadaşlar, tekrardan bir ara verelim. Ondan sonra son dersimizin kalan kısmını da tamamlamaya çalışacağım. Bir 10 dakika ara verelim.
+
+862
+02:18:19,440 --> 02:18:22,600
+Hocam, benim bir sorum olacaktı ara vermeden.
+
+863
+02:18:23,540 --> 02:18:28,760
+Ben geçen hafta mıydı? Ondan önceki hafta LAP uygulaması vardı.
+
+864
+02:18:29,440 --> 02:18:34,540
+Ve ben sisteme biraz yabancı olduğumdan yani ödevi bitirmiştim fakat yükleyemedim.
+
+865
+02:18:35,280 --> 02:18:41,080
+Sonra asistana mail olarak yolladım. Size de yolladım ama bir cevap gelmedi.
+
+866
+02:18:42,240 --> 02:18:43,280
+İsmin neydi?
+
+867
+02:18:44,799 --> 02:18:45,780
+[öğrenci].
+
+868
+02:18:46,080 --> 02:18:51,100
+[öğrenci], tamam. [öğrenci], senin ödevini ben asistana yolladım.
+
+869
+02:18:51,540 --> 02:19:17,380
+Durumun farkındayım. Senin ödelini kontrol etmiş olması gerekiyor. Senin şey yapacağız. Senin lap notunu vereceğiz. Tamam. Peki hocam. Bu kadardı. Tamamdır. Evet, bir on dakika ara veriyoruz. Ondan sonra tekrar beraberiz.
+
+870
+02:19:19,028 --> 02:19:19,388
+Ok.
+
+871
+02:30:28,755 --> 02:30:32,076
+Evet, arkadaşlar sesimin geldiğini bir teyde de öyle başlayayım.
+
+872
+02:30:33,095 --> 02:30:36,576
+Hocam ben tekrar sorum olacaktı, araya giriyorum, pardon.
+
+873
+02:30:37,076 --> 02:30:38,896
+O zaman sesim geliyor, tamam, söyleme.
+
+874
+02:30:38,896 --> 02:30:48,855
+Evet, maillere mi bakmalıyız yoksa çünkü maillerde bir şey göremedim, acaba yoksa UCS sisteme mi gireceğiz, onu soracaktım.
+
+875
+02:30:49,299 --> 02:30:51,599
+Ne için [öğrenci]?
+
+876
+02:30:52,219 --> 02:30:55,259
+Laplar için, sizden gelen cevaplar için.
+
+877
+02:30:57,219 --> 02:30:58,419
+Mail'lerine bakıyorsun, evet.
+
+878
+02:30:58,619 --> 02:30:59,159
+Mail'lere.
+
+879
+02:30:59,599 --> 02:31:07,799
+Şey, bundan sonraki laplara katılman gerekiyor ama değerlendirmenle ilgili notumu Asistan Hocam sana iletecek.
+
+880
+02:31:08,299 --> 02:31:10,939
+Tamam, yani mail'lerden bakıyoruz, anladım.
+
+881
+02:31:11,419 --> 02:31:11,680
+Evet.
+
+882
+02:31:12,399 --> 02:31:13,779
+Tamam, bilgi teşekkürler.
+
+883
+02:31:15,359 --> 02:31:15,739
+Evet.
+
+884
+02:31:16,979 --> 02:31:19,200
+So, kalzim seyadan devam edelim.
+
+885
+02:31:20,719 --> 02:31:29,639
+Okay, let's now look at the sequence diagram of this main method.
+
+886
+02:31:30,200 --> 02:31:30,360
+Okay.
+
+887
+02:31:31,239 --> 02:31:38,419
+Now, in this sequence diagram, you see that the company is the class which has the main method, right?
+
+888
+02:31:39,188 --> 02:32:01,047
+And remember, the company is being called by the Java Virtual Machine because we said at the beginning of the class, when we write java.exe, then if we write the name of the class file, okay, Java Virtual Machine runs the main method within that class.
+
+889
+02:32:06,611 --> 02:32:32,752
+Main method in it. Okay. So therefore, this is an object which is called by main method, general virtual machine. Now in the main method, first, what is being done is that we are creating an employee array. Okay. You see that. So here we are creating an employee array. And right after we create an employee array,
+
+890
+02:32:33,396 --> 02:32:38,056
+We created the first object, which is the manager object.
+
+891
+02:32:38,716 --> 02:32:38,855
+Okay.
+
+892
+02:32:39,296 --> 02:32:42,096
+You see that we created the first manager object.
+
+893
+02:32:42,996 --> 02:32:49,816
+Then what we did, we called the bonus, set bonus method of that manager object.
+
+894
+02:32:50,616 --> 02:32:55,136
+You see that we are called, we called set bonus method of that manager object.
+
+895
+02:32:55,596 --> 02:32:59,636
+Then what we did is we assigned.
+
+896
+02:33:00,595 --> 02:33:07,175
+That object that we created into the first cell of this array.
+
+897
+02:33:08,556 --> 02:33:17,315
+And you see that we assigned, which means that we added that object that we created into this employee.
+
+898
+02:33:18,095 --> 02:33:21,895
+To assigning is shown here by the means of add.
+
+899
+02:33:22,056 --> 02:33:24,855
+So you can also do it in the exams just like this.
+
+900
+02:33:25,907 --> 02:33:28,227
+Then we are creating another object.
+
+901
+02:33:28,948 --> 02:33:32,027
+You see that here we are creating another object.
+
+902
+02:33:33,108 --> 02:33:38,108
+And that object is then added to the second cell of that array.
+
+903
+02:33:38,108 --> 02:33:40,948
+Then we created another object again.
+
+904
+02:33:41,427 --> 02:33:42,587
+That's employee object.
+
+905
+02:33:43,647 --> 02:33:51,207
+And then object, that object is added into the employee array again.
+
+906
+02:33:52,167 --> 02:33:52,827
+Then.
+
+907
+02:33:53,363 --> 02:34:03,223
+In the code, you see that we are doing for loop, okay, for each loop on this particular array, and then we call getName and getCelery method.
+
+908
+02:34:04,051 --> 02:34:08,871
+And you see that here we are doing a for loop on the employee.
+
+909
+02:34:09,252 --> 02:34:17,891
+And you see getName and getSelary method has a star in front of them, which means that this is done more than once.
+
+910
+02:34:17,891 --> 02:34:18,491
+Okay.
+
+911
+02:34:19,072 --> 02:34:24,431
+So we are calling getName and getSelary more than once by doing a loop on the employee.
+
+912
+02:34:24,651 --> 02:34:29,891
+So this is how we are showing the sequence diagram of the main method.
+
+913
+02:34:30,227 --> 02:34:39,027
+So, you should study this because this is the kind of question that you should expect in the exam.
+
+914
+02:34:40,187 --> 02:34:40,768
+Okay?
+
+915
+02:34:46,067 --> 02:34:58,847
+Now, remember, earlier in the class, we talked about overloading.
+
+916
+02:34:59,147 --> 02:35:09,847
+So what was overloading means if in the class, if you have more than one method which has the same name, but the signature is different.
+
+917
+02:35:10,548 --> 02:35:20,188
+Then we call this overloading. Multiple methods having the same names but with different parameters. In other words, with different signatures. Okay?
+
+918
+02:35:21,247 --> 02:35:33,608
+Now we learned in this lecture, we learned overriding. What was overriding? If you overwrite a method of a parent class, okay?
+
+919
+02:35:35,059 --> 02:35:41,500
+If you write the same signature method in the child class, you are overriding the parents class.
+
+920
+02:35:42,119 --> 02:35:42,260
+Okay.
+
+921
+02:35:43,119 --> 02:35:46,420
+And so overriding, therefore, is this.
+
+922
+02:35:46,579 --> 02:35:52,819
+So we use the same name class, same name method, but we use it in the child class.
+
+923
+02:35:53,720 --> 02:35:58,920
+And so we have the same signature as the parent class.
+
+924
+02:35:59,327 --> 02:36:07,468
+So therefore we are overriding that method in the child class, but with the overloading, overloading happens in the same class.
+
+925
+02:36:07,468 --> 02:36:15,128
+So we can have the same name method in the same class, but with different signature.
+
+926
+02:36:16,755 --> 02:36:19,755
+Okay, so we just saw overriding example.
+
+927
+02:36:19,956 --> 02:36:23,576
+This getSelery method was available both in manager and employee.
+
+928
+02:36:24,275 --> 02:36:31,876
+So this getSelery method in the manager class overwrote the getSelery method in the employee class.
+
+929
+02:36:34,615 --> 02:36:38,435
+Okay, now let's take a look at the overloading example.
+
+930
+02:36:38,435 --> 02:36:40,736
+So remember, in the manager class,
+
+931
+02:36:41,427 --> 02:37:00,907
+I had only one constructor with two parameters. Here you see that this is the constructor with two parameters. Now, so if I wanted to have one more constructor with three parameters, which has name, salary, and bonus in it, so in that particular case, that will be overloading.
+
+932
+02:37:00,907 --> 02:37:08,507
+So I overload by adding same name method, but with different signatures into the same class.
+
+933
+02:37:15,507 --> 02:37:30,268
+Now, one thing that you should also remember, now, remember, so far, we generally, when we wrote our classes, we wrote data member fields with private access keyword, access modifier.
+
+934
+02:37:31,187 --> 02:37:37,407
+When we wrote our methods in the class, we usually use public access modifier.
+
+935
+02:37:38,644 --> 02:38:01,224
+Arkadaşlar, okay. This is how we usually write our programs. But sometimes there may be some methods that we want to have, we want to define as private methods. Okay. Now, in that case, if that method is defined as private, then that method will not visible by other objects. Okay.
+
+936
+02:38:02,904 --> 02:38:03,543
+Now,
+
+937
+02:38:04,275 --> 02:38:09,495
+Private methods of a superclass can be overridden by the child classes.
+
+938
+02:38:10,495 --> 02:38:10,636
+Okay.
+
+939
+02:38:10,936 --> 02:38:15,275
+For example, you can have a private method in the parent class.
+
+940
+02:38:15,476 --> 02:38:21,355
+You can have in the child class a same name method in the child class as well.
+
+941
+02:38:22,015 --> 02:38:27,716
+That method will overwrite the parents' private method.
+
+942
+02:38:27,716 --> 02:38:30,716
+But we cannot access to...
+
+943
+02:38:31,188 --> 02:38:36,927
+From child class objects, we cannot access to parents' private methods.
+
+944
+02:38:37,567 --> 02:38:37,707
+Okay.
+
+945
+02:38:38,448 --> 02:38:45,028
+In any way, even by using the super keyword, we cannot access to parents' private methods.
+
+946
+02:38:45,788 --> 02:38:46,007
+Okay.
+
+947
+02:38:46,507 --> 02:38:54,148
+Now, the private method or private member field can only be used within the parents' class.
+
+948
+02:38:55,188 --> 02:39:15,927
+Okay. If the method or the member field is defined as private, child objects, child class objects cannot access either the parent private member fields or private method directly. Okay. You should keep that in mind.
+
+949
+02:39:16,827 --> 02:39:18,028
+Hocam, bir şey sorabilir miyim?
+
+950
+02:39:18,028 --> 02:39:18,648
+Tabii.
+
+951
+02:39:19,283 --> 02:39:30,963
+Super keyword'ünü kullanmak yerine protected olarak tanımlasak değişkenleri ya da metotları ya da neden Super kullanmaya zorunluyuz desem?
+
+952
+02:39:32,324 --> 02:39:40,783
+Şöyle yani protected dediğin vakit ne yapmış oluyorsun?
+
+953
+02:39:41,280 --> 02:39:46,840
+O metodu önceliklerini member field olarak düşünelim.
+
+954
+02:39:47,799 --> 02:39:52,760
+Şimdi her zaman inheritance relationship'i kullanmayabilirsin.
+
+955
+02:39:52,959 --> 02:39:57,880
+Yani öncelikle programlamaya başlarsın o ilişkileri oluştururken.
+
+956
+02:39:57,880 --> 02:39:59,880
+Öncelikle...
+
+957
+02:40:00,000 --> 02:40:05,559
+Ben işte association relationship kuracağım bu iki sınıf arasında. Ondan sonra bir üçüncü sınıf eklersin.
+
+958
+02:40:05,559 --> 02:40:14,919
+Tamam burada bir kompozisyon ilişkisi var. Ondan sonra bu data member filteri belirlerken öncelikle public ya da private olmasından başlıyorsun.
+
+959
+02:40:15,139 --> 02:40:20,119
+Daha doğrusu member filteri private tanımlıyorsun. Metotları ise public tanımlıyorsun.
+
+960
+02:40:20,788 --> 02:40:38,788
+Eğer bir ilişki yani inheritance ilişkisi kuracaksan ve bundan yüzde yüz şey isen o durumda member filterini protected tanımlayabilirsin. Bu durumda ne olacak? Member filterin sadece...
+
+961
+02:40:41,268 --> 02:40:50,507
+parent class tarafından direkt accessible olmayacak bir de child class tarafından, child class'ın objeleri tarafından da accessible olacak.
+
+962
+02:40:51,308 --> 02:40:54,827
+Aynı şekilde metotlarını da protected tanımlayabilirsin.
+
+963
+02:40:55,547 --> 02:40:59,527
+Sadece parent class değil, child class içerisinden de şey yapacak.
+
+964
+02:40:59,527 --> 02:41:02,867
+Ama eğer protected tanımladığın zaman metotlarını
+
+965
+02:41:03,296 --> 02:41:12,096
+Public değil de metotlarını protected tanımladığın zaman başka sınıfların objeleri o metotlara ulaşamaz, onları göremez bile.
+
+966
+02:41:13,172 --> 02:41:34,192
+Oysa ki biz hani ne istiyoruz? Hani bu objelerin birbiriyle konuşarak yapmaları gereken işi yapmalarını istiyoruz ya. Dolayısıyla da biz metotları public tanımlamak istiyoruz genelde. Yani diğer sınıfların objeleri de benim ana sınıfımın yahut da child sınıfımın metotlarını görsün, invoke edebilsin, yani çağırabilsin.
+
+967
+02:41:34,932 --> 02:41:42,792
+Ama öyle metotlar olur ki ben bunların başka sınıfların objeleri tarafından çağrılmaması konusunda eminimdir.
+
+968
+02:41:42,792 --> 02:41:57,972
+Yani bu benim için şöyle düşünebilirsin. Utility metotlar. Yani kendi sınıfımın implementasyonunda kullandığım ama dış dünyaya expose istemediğim özellikler.
+
+969
+02:42:00,340 --> 02:42:24,860
+İçin neler konuşmuştuk? Arabanın gazına basarsın, vitesini değiştirirsin, frenine basarsın, kapısını açarsın. Bunlar bu aracın dış dünyayı ekspoz etmek istediği özellikler. Ama kendi içerisinde işte ne bileyim su seviyesinin kontrol edilmesi yahut da işte aracın içerisindeki benzin seviyesinin kontrol edilmesi için de fonksiyonları var.
+
+970
+02:42:25,363 --> 02:42:30,384
+Bunları kendi içerisinde private metotlar olarak tanımlayabilir.
+
+971
+02:42:31,243 --> 02:42:37,403
+Ve public metotlar yapmaları gereken işi yaparken bu private metotları çağırabilir.
+
+972
+02:42:38,344 --> 02:42:41,083
+Bunları protected şeklinde de tanımlayabilirsin o durumda.
+
+973
+02:42:41,203 --> 02:42:47,304
+Yani o child sınıfın altındaki sınıflar da o metotları kullansın diyorsan.
+
+974
+02:42:47,891 --> 02:42:55,351
+Ama bunlar dış dünyadaki, yani ne olmuş olacak? Başka sınıfların objeleri tarafından görülmemiş olacak.
+
+975
+02:42:55,351 --> 02:43:11,131
+Yani convention olarak öncelikle eğer benim inheritance relationship kullanacağımdan eminsem, bu durumda protected da tanımlayabilirim değişkenlerimi, private da tanımlayabilirim.
+
+976
+02:43:11,211 --> 02:43:15,891
+Her ikisi de benim değişkenlerimin başka sınıfların objeleri tarafından görülmemiş olacak.
+
+977
+02:43:15,891 --> 02:43:22,371
+tarafından değiştirilmesini önlüyor. Ama protected diye tanımladığımda şunu da bilmem gerekiyor.
+
+978
+02:43:22,371 --> 02:43:30,572
+Bu durumda aşağıdaki sınıflar üstteki data member field'ların değişkenlerini direkt sanki kendi değişkinliymiş gibi ulaşıp değiştirebilir.
+
+979
+02:43:31,131 --> 02:43:37,432
+Zaten o ilişkileri kuran da ben olduğum için yani çağ sınıfları da ben yazdığım için bunda bir sorun yok.
+
+980
+02:43:37,843 --> 02:43:44,483
+Ama hiçbir zaman public tanımlamıyorum. Yani public tanımladığım zaman gerçekten special bir case'e ihtiyacım var.
+
+981
+02:43:45,139 --> 02:44:09,159
+Metotlar için de aynı şekilde. Eğer ben dış sınıfların objeleri, bu metotları kullanacak metotlarım varsa bunları public tanımlamam gerekiyor. Çünkü artık bu sınıfın özellikleri var. Bunları başkalarına kullandırmam lazım. Ama bazı metotlar olur ki bunlar utility metotlardır. Sadece benim kendimin kendi iç programımda kullanması gerekir.
+
+982
+02:44:13,139 --> 02:44:27,359
+Onları yine private tanımlayabilirim. Ama bu utility metotları olur da aşağıdaki sınıfların, charge sınıfların içerisinde de kullanmam gerekliliğini hissediyorsam bunları protected tanımlamam gerekir.
+
+983
+02:44:28,211 --> 02:44:55,391
+Sen süper keywordını hiç kullanmama durumu olabilir mi? Niye süperde ihtiyacımız var demiştin. Şimdi bir de onu yanıtlayayım ondan sonra duracağım. Şimdi süper için de şöyle bir şey söz konusu. Şimdi ben generalization ve specialization diyorum ya, generalization'da ben bütün alt sınıfların kullanabileceği member fieldları generalized classla toplamaya çalışıyorum.
+
+984
+02:44:56,275 --> 02:45:22,036
+Yani işte bizim buradaki örneğimizde name metodu vardı. Name data member field vardı. Hepsinde olduğu için employee ve manager da ben bunu parent'a taşırım. Ve ben bununla ilgili yani name ile ilgili metotlara ulaşabilmek için diyelim ki mesela get name bir de set name diye iki tane metodum var bu name metodu için.
+
+985
+02:45:23,059 --> 02:45:47,939
+Aşağıda bir tane daha sınıfım var, employee. Employee'nin içerisine de bir tane get name metodu yazma ihtiyacı oldu. Bu sefer get name'in içerisinin başına şey koydum. Dedim ki employee-name yani aşağıdakinin get name'ini çalıştırırken başına employee stringini eklemesi gerektiğini düşündüm. Öyle bir ihtiyaç da oldu.
+
+986
+02:45:48,319 --> 02:46:04,559
+Ama yine aynı kod içerisinde öyle bir ihtiyaç daha doğdu ki yukarıdaki getneyimi olduğu gibi alma ihtiyacı duydu. Yani içerisine employee stringi olmadığı şeklinde kullanmam gereken durum doğdu.
+
+987
+02:46:05,012 --> 02:46:32,332
+O durumda ben neyi okuyacağım? Süper'e ihtiyacım var. Yani hem aşağıdaki getneyimi kullandığım hem de üstteki getneyimi kullandığım durumlar da söz konusu olabiliyor. Bu durumda da mecburen üstteki süper'i, üstteki fonksiyonu o şekilde oluşuyorum. Bir de mesela constructor. Name'i initialize ederken süper'i kullanarak üstteki constructor'ı çağırıyorum. Bunlar sorularına yanıtlı oldu mu?
+
+988
+02:46:32,979 --> 02:46:34,560
+Oldu hocam, çok teşekkür ederim.
+
+989
+02:46:35,700 --> 02:46:36,020
+Tamam.
+
+990
+02:46:37,840 --> 02:46:43,840
+Okay, so I will stop in a minute, but just take a look at this example here.
+
+991
+02:46:44,239 --> 02:46:48,520
+Now here I am showing you two different modeling.
+
+992
+02:46:49,056 --> 02:46:56,916
+Now, here, let's say I gave you an example text in the exam, and this example text is as of the following.
+
+993
+02:46:57,296 --> 02:47:08,436
+Let's say it says, it reads like this. We should keep track of the patient names, okay, its ID numbers, birthdays, and cell numbers, okay.
+
+994
+02:47:08,996 --> 02:47:14,996
+Now, from this statement that you just read, you should understand that there is a class called patient.
+
+995
+02:47:16,788 --> 02:47:31,547
+Okay. Now, then I continue reading the rest of the text. Now, this information should be stored for doctors too. Now, by reading the second statement, I understand that now there is another class, doctor.
+
+996
+02:47:33,747 --> 02:47:46,667
+Then I move on. In addition, it is required by law to keep the diploma numbers of doctors, okay, which means that so in the doctor's class, I should keep track of the diploma numbers.
+
+997
+02:47:47,628 --> 02:47:56,727
+Then I read, I move on. We should keep records of treatments applied to patients too.
+
+998
+02:47:57,268 --> 02:48:01,567
+Then I understand that now there is another class treatment.
+
+999
+02:48:02,828 --> 02:48:08,648
+Okay, now you see that now I know that there is doctor, there is treatment, there is patient.
+
+1000
+02:48:08,988 --> 02:48:11,468
+I extracted three class classes.
+
+1001
+02:48:12,788 --> 02:48:21,788
+Now, the first thing that one can do, so you can create a relationship between these classes like this, you can see that.
+
+1002
+02:48:22,144 --> 02:48:45,824
+Patient has, may, one patient may have zero or more treatment. Now, this relationship is okay. This is true. Okay. Now, now, the second relationship that I can create from this is a doctor is inherited from patient, which means that remember, inheritance is, is a relationship. Doctor is a patient.
+
+1003
+02:48:46,899 --> 02:49:04,799
+Now, this is not correct. Not every doctor is a patient. Maybe some doctors may be ill. Because of that, there may be a patient in the hospital, but not all the doctors are patients. So, therefore, I need to think another modeling.
+
+1004
+02:49:05,363 --> 02:49:30,123
+Okay. Now, so again, I go back to text and I read it again. You see that, you know, patients have ID numbers, birth cell, cell numbers. Now, the second statement said this information should be stored for doctors too. Now, this tells me that, okay, the patients and the doctors has common information.
+
+1005
+02:49:31,316 --> 02:49:39,976
+Now, if there is a common information notion, then I should always remember the inheritance relationship.
+
+1006
+02:49:40,736 --> 02:49:44,776
+Okay. Now, the doctor and the patient has some common information.
+
+1007
+02:49:45,336 --> 02:49:52,936
+Now, then I can think, okay, why not have to have another class, okay, which should keep the common information.
+
+1008
+02:49:53,076 --> 02:49:57,916
+What is the common information? Name, ID number, and the cell number, and the birth date.
+
+1009
+02:49:58,484 --> 02:50:04,584
+Okay. And then I can inherit both doctor and the patient from the person.
+
+1010
+02:50:06,064 --> 02:50:13,443
+And for doctor, I can keep the diploma number. And for patient, I can keep track of the treatments.
+
+1011
+02:50:13,804 --> 02:50:21,724
+And you see that one patient may have zero or more treatment. This was the true relationship. I already had have that.
+
+1012
+02:50:22,064 --> 02:50:27,664
+But now you see that every doctor is a person, every patient is a person.
+
+1013
+02:50:28,103 --> 02:50:30,603
+And now, so this is the correct modeling.
+
+1014
+02:50:31,463 --> 02:50:35,443
+Now in the exam, I may give you text like this.
+
+1015
+02:50:35,744 --> 02:50:41,484
+And I may ask you to write the UML diagram starting from this text.
+
+1016
+02:50:43,092 --> 02:50:52,292
+So therefore, you should read, you know, you should write text like this to prepare yourself.
+
+1017
+02:50:52,292 --> 02:50:58,051
+And starting from this text, you should extract the UML diagram first.
+
+1018
+02:50:58,512 --> 02:51:03,772
+Once you extract the UML diagram, and then you can start writing your code.
+
+1019
+02:51:04,292 --> 02:51:04,452
+Okay.
+
+1020
+02:51:04,952 --> 02:51:11,092
+So if you ask yourself, how should I prepare the midterm exam of...
+
+1021
+02:51:11,092 --> 02:51:16,692
+Object-oriented programming, or how should I prepare for final exam for object-oriented programming?
+
+1022
+02:51:17,192 --> 02:51:18,672
+This is the way to study.
+
+1023
+02:51:19,051 --> 02:51:21,632
+First, you can start from the text.
+
+1024
+02:51:22,051 --> 02:51:35,612
+Okay, given a text example, so you can extract the, you can create the UML diagram by reading the text, and then by reading the problem, and then starting from the UML diagram.
+
+1025
+02:51:38,963 --> 02:51:49,804
+Starting from the UML diagram, you can write the code for every class and even you can write the main program, class.
+
+1026
+02:51:51,324 --> 02:51:56,603
+Okay. And then you can write the sequence diagram for the main method that you just wrote.
+
+1027
+02:51:57,783 --> 02:52:04,903
+Now, starting from, if you do all of this, then you would be well prepared for the exam.
+
+1028
+02:52:06,484 --> 02:52:15,283
+Arkadaşlar, az önce ben size sınavada nasıl çalışabileceğinizi, nasıl kendinizi hazırlayabileceğinizi söylemiş oldum.
+
+1029
+02:52:17,623 --> 02:52:30,484
+One more thing that I should mention is that in Java, every class is inherited from a superparent class called Java.lang object.
+
+1030
+02:52:31,156 --> 02:52:45,236
+So this is implicit superclass, which means that in Java programming language, the Java dotlang object is the superclass of all classes.
+
+1031
+02:52:46,036 --> 02:52:59,695
+So, which means that every object, every method that belongs to Java.lang.object class can also be overwritten in the classes that you write.
+
+1032
+02:52:59,916 --> 02:53:13,615
+And usually we overwrite the toString method and we can write whatever we want in the toString method, which will overwrite the objects, Java.lang.objects toString method.
+
+1033
+02:53:13,984 --> 02:53:19,943
+And so we can write, for example, we have written introduced self method so far.
+
+1034
+02:53:20,524 --> 02:53:20,783
+Okay.
+
+1035
+02:53:20,924 --> 02:53:26,224
+So we can write whatever we have in the introduced self method within the two string methods.
+
+1036
+02:53:26,224 --> 02:53:26,604
+Okay.
+
+1037
+02:53:26,644 --> 02:53:29,623
+Which will overwrite the existing two string methods.
+
+1038
+02:53:30,548 --> 02:53:32,128
+Now, I will stop here.
+
+1039
+02:53:33,087 --> 02:53:39,008
+This is the abstract classes is another way of implementing the inheritance relationship.
+
+1040
+02:53:39,008 --> 02:53:45,067
+Now, so far, we have implemented the inheritance relationship by using the regular classes.
+
+1041
+02:53:45,768 --> 02:53:48,708
+Next class, we will talk about the abstract classes.
+
+1042
+02:53:50,468 --> 02:53:50,688
+Okay.
+
+1043
+02:53:51,308 --> 02:53:52,587
+Arkadaşlar, burada duruyorum.
+
+1044
+02:53:53,075 --> 02:54:10,495
+Gelecek hafta abstract classes'dan devam edeceğiz. Biraz size inheritance ile ilgili başka örnekler de göstereceğim. Sorunuz olursa gelecek hafta da sorabilirsiniz. Onun dışında sorusu olanlar ayrıca bana Office Havrum'da da sorabilirler.
+
+1045
+02:54:11,515 --> 02:54:16,056
+Hocam, önceki UML diagramında date class mıydı yoksa?
+
+1046
+02:54:16,595 --> 02:54:20,655
+Bir tutma formatı mı var öyle? Bird, date diye tutmuş ya person.
+
+1047
+02:54:20,655 --> 02:54:30,576
+Evet, date bir sınıf. Aynı random classını öğrenmiştik, mat classını öğrenmiştik, string classını öğrenmiştik.
+
+1048
+02:54:31,056 --> 02:54:35,396
+Java.util package'i altındaki kullandığımız sınıflardan bir tanesi.
+
+1049
+02:54:36,315 --> 02:54:41,635
+Date class olduğu için date tipinde demek ki bir tane değişkenimiz var.
+
+1050
+02:54:42,004 --> 02:55:00,484
+Biz bu date sınıfını da kullanıyor olacağız arkadaşlar. Bu date sınıfıyla daha çok örneklerde karşılaşacaksınız. Ayrı bir slide göstermedim. Bir date'i gün olarak alabilirsiniz, yıl olarak alabilirsiniz, zaman olarak alabilirsiniz. Date sınıfının da metotlarını öğrenmeniz gerekiyor.
+
+1051
+02:55:01,364 --> 02:55:01,963
+Tamam hocam.
+
+1052
+02:55:04,904 --> 02:55:06,244
+Başka sorusu olan?
+
+1053
+02:55:09,716 --> 02:55:16,655
+Tamamdır arkadaşlar. Teşekkür ederim katılımınız için. Haftaya dersimizde görüşmek üzere o zaman.
+
+1054
+02:55:18,876 --> 02:55:20,155
+Teşekkürler. İyi günler hocam.
+
+1055
+02:55:20,376 --> 02:55:21,095
+İyi günler hocam.
+
+1056
+02:55:21,296 --> 02:55:22,515
+İyi dersler. Görüşmek üzere.

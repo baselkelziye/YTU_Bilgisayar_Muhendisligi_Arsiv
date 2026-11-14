@@ -1,0 +1,131 @@
+1
+00:01:01,683 --> 00:01:04,483
+Hocam, ben bir şey sorabilir miyim ödevle ilgili? Burada mısınız?
+
+2
+00:01:06,323 --> 00:01:07,804
+Evet, evet, buradayım. Buyur.
+
+3
+00:01:07,884 --> 00:01:15,003
+Bu ödevin son kısmında, hani bulduğumuz iki koduda karşılaştırmanın karmaşıklığı maksimum O, N diye belirtmişsiniz ya.
+
+4
+00:01:15,343 --> 00:01:19,683
+Burada karşılaştırma kodunu kendimiz yazmamız gerekiyor. Direkt string, compare, fonksiyonlar.
+
+5
+00:01:19,683 --> 00:01:22,323
+Hayır, hayır, hayır. Siz yazacaksınız.
+
+6
+00:01:22,664 --> 00:01:23,063
+Tamam.
+
+7
+00:01:23,519 --> 00:01:27,039
+String compare'li olur mu? Aman ha.
+
+8
+00:01:27,039 --> 00:01:28,739
+Yorum ajantım o zaman.
+
+9
+00:01:28,859 --> 00:01:29,259
+Sakın.
+
+10
+00:01:29,259 --> 00:01:29,739
+Teşekkür ederim.
+
+11
+00:01:30,659 --> 00:01:35,159
+Orada bir şeye dikkat etmeniz lazım. Karakter dizisi olarak verdiğimizi söylüyoruz.
+
+12
+00:01:35,719 --> 00:01:38,799
+Demek ki onları bir şekilde karakter karakter işlemeniz gerekiyor.
+
+13
+00:01:39,939 --> 00:01:43,239
+Direkt öyle string and compare'li bilmem neyle yapamazsınız.
+
+14
+00:01:43,840 --> 00:01:51,960
+Artı zaten o n olması için dikkatli bir şekilde veri yapılarını düşünüp kullanmanız gerekiyor.
+
+15
+00:01:53,900 --> 00:01:55,099
+Anladım hocam, teşekkür ederim.
+
+16
+00:01:55,560 --> 00:02:02,060
+Hazır, aman ha string compare fonksiyonu kullanmayın. Yazık olur ödevinize.
+
+17
+00:02:02,820 --> 00:02:09,900
+Hocam o n dediği kısım sadece karşılaştırma kısmı mı yoksa mesela şifreyi çözme falan onlar dahil değil mi?
+
+18
+00:02:10,419 --> 00:02:14,120
+Yani karşılaştırabilmek için şifreyi çözmeniz lazım değil mi?
+
+19
+00:02:14,799 --> 00:02:20,799
+Şifreyi ayrı bir yerde çözsek yani saf haline getirsek daha sonra karşılaştırsek o olmuyor mu?
+
+20
+00:02:21,399 --> 00:02:27,620
+Ya o da olur ama şöyle o zaman şifre çöz diye bir fonksiyon yapacaksın sonra da karşılaştır diye bir fonksiyon yapacaksın.
+
+21
+00:02:27,620 --> 00:02:33,120
+Burada esas olan iki şifrenin çözülüp de karşılaştırılmasındaki karmaşıklığın o ayını geçmemesi.
+
+22
+00:02:34,099 --> 00:02:38,860
+Tamamdır. İkisi de geçmeyecek yani. Ötekinde n kare yapsak yine olmuyoruz.
+
+23
+00:02:40,000 --> 00:02:47,780
+Olmaz. Yani n kare olmasını istiyoruz. Zaten n kare çok düz bir çözüm. Onu yaparsınız. Ama önemli olan o enle çözmek.
+
+24
+00:02:48,400 --> 00:02:49,560
+Tamamdır. Şuan teşekkürler.
+
+25
+00:04:14,068 --> 00:04:20,987
+Hocam bir de tek stack üzerinde çalışma zorunluluğumuz var mı? Yani iki kod için iki farklı stack kullansak bir sorun olur mu?
+
+26
+00:04:22,848 --> 00:04:24,888
+Bilmiyorum. Orası size kalmış.
+
+27
+00:04:29,908 --> 00:04:35,468
+Hocam, ben de siteyi derste gösterdiğiniz gibi global değişkenle yapabilirim size soracaktım.
+
+28
+00:04:37,448 --> 00:04:40,528
+Fonksiyonsa global değişken kullanmanız çok doğru olmaz.
+
+29
+00:04:42,348 --> 00:04:46,627
+Yani stack oluşturdum mesela, siteyin nerede kaldığını tutuyorum global değişkenle.
+
+30
+00:04:49,620 --> 00:04:59,939
+Yani şimdi iki tane kodu çözüp karşılaştıracak bir fonksiyon yazmanız lazım. Global stack kullanırsanız ya da global başka bir veri yapısı kullanırsanız iyi bir çözüm olmaz değil mi?
+
+31
+00:05:00,279 --> 00:05:01,419
+Anladım evet anladım.
+
+32
+00:05:01,419 --> 00:05:02,019
+Okey.
+
+33
+00:05:02,963 --> 00:05:18,403
+Çünkü bunu yarın öbür gün belki de bir şey yapacağız, embed edeceğiz bir yerlere. Casusların cebinde hazır duracak bu, anladın? Karşısındakinin bar kodunu ya da kodunu okutup devam edecek hayatına. O yüzden hani global değişken bilmem ne, olmasın.

@@ -1,0 +1,2279 @@
+1
+00:00:06,131 --> 00:00:10,952
+Şimdi nasıl yapıyoruz? Patronucular da aynı yapıyorduk.
+
+2
+00:01:11,828 --> 00:01:13,828
+Evet, [öğrenci], hoşgeldin.
+
+3
+00:01:13,828 --> 00:01:15,828
+Hoşbulduk hocam, merhaba.
+
+4
+00:01:15,828 --> 00:01:20,828
+Evet, şimdi bir gördüm gittin, açtın kapattın herhalde.
+
+5
+00:01:20,828 --> 00:01:24,828
+Aynen hocam, ben tekrar şey yapayım.
+
+6
+00:01:24,828 --> 00:01:32,828
+Yoo, tamam. Şey, ne bileyim, belki bu problem olmadığından emin olalım diye.
+
+7
+00:01:32,828 --> 00:01:37,828
+He, yoo, şey yapıyom, kamerada bir sorun var mı diye, aç kapıya attım hocam oraya.
+
+8
+00:01:39,763 --> 00:01:49,364
+Peki şimdi bakın ne yapacağız? Şöyle yapacağız. Katılacağına bakıyorum. [öğrenci] üstüne tıklıyorum. Oturun sağa bir yat. Evet.
+
+9
+00:01:50,563 --> 00:01:55,364
+Evet. Kolay gelsin. Teşekkür ederim hocam. Sağ olun. İnşallah.
+
+10
+00:08:37,076 --> 00:08:49,316
+Arkadaşlar merhaba, başlamadan önce çok kısa bir şey soracağım ama burada şu an katılanlar az önce WhatsApp kanalından gelen linkte mi geldiler yoksa online yıldızdaki ders kapsamından mı geldiler?
+
+11
+00:08:53,683 --> 00:09:06,083
+Şu yüzden soruyorum, yani acaba online yıldızda gözükmüyorlar mı? Online yıldızda böyle bir ders şeyi gözükmüyor mu şu an arkadaşlar? Ders kapsamında bir uygulama linkidir veya şudur budur.
+
+12
+00:09:12,532 --> 00:09:16,292
+Gözüküyor orada, oradan açılmadı toplantı. Allah Allah.
+
+13
+00:09:19,192 --> 00:09:26,292
+Neyse. Biraz bekleyelim o zaman arkadaşlar. WhatsApp'da şimdi herkes görmeyebilir. Yani siz kendi grubunuzda vardır mutlaka.
+
+14
+00:09:26,292 --> 00:09:33,372
+WhatsApp'da oradan da izleyebilirsiniz. Eğer online yıldız açılmıyorsa, işte WhatsApp kanaldan, linkten girebilirsiniz diye.
+
+15
+00:09:37,395 --> 00:09:39,415
+5 dakika bekleyelim, sonra başlarız.
+
+16
+00:13:02,419 --> 00:13:06,859
+Evet güzel insanlar, nasılsınız, iyi misiniz, her şey yolunda mı, nasıl gidiyor?
+
+17
+00:13:13,395 --> 00:13:19,455
+Hemen derse başlayamadım biraz, bir iki kelam edelim, öyle başlamak istedim. Nasılsınız, iyi misiniz?
+
+18
+00:13:36,884 --> 00:13:38,283
+Ben de iyiyim, sağ olun.
+
+19
+00:13:38,683 --> 00:13:45,584
+Havalar ısındı. Havalar ısınca da, normalde ilk uygulamayı hatırlıyorum. 50-60 kişi girerken şimdi 22 kişiyiz.
+
+20
+00:13:46,104 --> 00:13:48,663
+Doğru, normal. Sonradan izlerim.
+
+21
+00:13:48,923 --> 00:13:54,803
+Bu sıcak havada, bu güzel havada şimdi uygulaymamı gireceğim demiş olabilirler. Sağlık olsun.
+
+22
+00:13:55,824 --> 00:13:59,923
+Biz burada 22 kişiyle güzel bir şekilde uygulamamızı yapacağız. Şimdi gençolar.
+
+23
+00:14:02,163 --> 00:14:06,264
+Sizinle paylaşılmış olması lazım. Bu uygulamada...
+
+24
+00:14:06,447 --> 00:14:30,248
+Çözeceğimiz soru hakkında bir döküman olması lazım. Sizlerden de geri bildirim almışken, öncesinde bilsek ne çözüleceğini, bizle uğraşırız gibi güzel bir istek gelmişti. O dökümanda sizde duruyordur diye tahmin ediyorum. Paylaşıldı diye biliyorum. Yavaştan genel anlamda uygulama dışında soracağınız bir şey yoksa uygulamaya başlayalım.
+
+25
+00:14:38,067 --> 00:14:39,268
+Tamam yok galiba.
+
+26
+00:14:53,844 --> 00:14:57,744
+Güzel insanlar, ne diyor bizim üçüncü uygulamamız?
+
+27
+00:14:58,451 --> 00:15:08,611
+Bir şirket çalışanları varmış. Tamam. Bu çalışanların bilgilerini saklamak ve yönetmek amacıyla iki farklı veri yapısı kullanarak gerçekleşen bir veri tabanı uygulaması gerçekleştireceğiz. Tamam.
+
+28
+00:15:08,611 --> 00:15:22,251
+Ne olacakmış bu programda? Bir menü üzerinden çalışarak kullanıcı çalışan ekleme, isme göre arama, silinme, listeleme ve tabi bu işlemler dinamik olarak gerçekleşeceği için bu dinamik belleğin serbest kurumakısı olacak. Tamam, güzel.
+
+29
+00:15:22,251 --> 00:15:24,531
+Bu veri tabanında ne saklayacağız?
+
+30
+00:15:25,235 --> 00:15:33,235
+Çalışan bilgisinin iki strc kullanılacak. Tamam, kullanalım. Job strc neymiş? Çalışanın meslek bilgisini temsil eden bir karakter dizisini içerecekmiş. Tamam.
+
+31
+00:15:34,135 --> 00:15:47,735
+Person strc çalışının adını ve yaşını tutmanın yanında ilgili iş bilgisini saklamak için job yapısına saklıyor. Yani diyor ki benim bir job strc olacak. Tamam, bunu tanımladık. Daha sonra da person strc olacak. Tamam, güzel. Onda da ad ve yaşını tutacakmışım.
+
+32
+00:15:53,491 --> 00:16:07,551
+Ancak normalde ben bu işi tek bir değişkenle de tanımabilirdim. Ancak burada diyor ki, bu da bir strc şeklinde tanımlı, karakter dizisiyle beraber. O, job stran'ı bir daha person içerisinde bir şeyle birbirine bağla diyor. Tamam.
+
+33
+00:16:08,788 --> 00:16:26,067
+Tamam, bu işlemi ne şekilde yapmamızı istiyor? Bir array taban yaklaşım gibi, database ile diyor. Çalışanlara person tipindeki verilerin tuttuğu bir dinamik array içerisinde saklanacaktır. Tamam, yani benim bir sürü doğal olarak kişilerim var bu database'in de. Database ne demek? Veri tabanı demek. Veri tabanı demek. Verilerin saklandığı yer demek.
+
+34
+00:16:26,751 --> 00:16:39,231
+Bu şeyler, person'daki veriler, bir dinamik array ile tutacak. Okey. Başlangıçta belirli bir kapasite ile oluşturan array, highlight eklenmesi sırasında dolarız, kapasitesi, o zaman ilkelen. Tamam. Zaten dinamik belleğinde...
+
+35
+00:16:40,083 --> 00:16:55,443
+kullanma amaçlarımızdan bir de neydi? Normal statik bir şekilde şu kadar elemanlı bana yer ayırt değil de kullanıcı işlemleri tabanlı önce şu kadar belirleri sonra onu arttırırız veya azaltırız şeklinden dinamik bir şekil yerlemenin bir avantajıdır dinamik bellek kullanma. Okey.
+
+36
+00:16:56,467 --> 00:17:17,627
+Bunu anladık. İkinci şey ne? Aynı işlevselde çalışan linker yüzüne değil de neyi de yapalım? Link liste yapalım. Tamam. Bu versiyonu çalışan her çalışan linker ise ayrı bir node ile tutulacaktır. Tamam. Yani her bir link liste dediğiniz gibi node'lar vardır. O her person ayrı bir node ile tutulsun diyor. Normal burada bir dizide tutuldu iken burada bir node ile tutulsun diyor. Tamam.
+
+37
+00:17:19,124 --> 00:17:23,544
+Veri ekleme ya da silme işlemleri, ERA tabanlı yönteme göre daha farklı bir konu. Tamam.
+
+38
+00:17:23,544 --> 00:17:31,044
+Veri tabanlı, avantajlı, dezavantajlı özellikle, bunu zaten kodluyu şey yaparken anlatırız.
+
+39
+00:17:31,044 --> 00:17:37,384
+Dinamik birazdan malloc, calloc, realloc, solucu kullanı. Tabii ki de. Zaten dinamik bellekli. Bu üç şeyi kullanıyoruz.
+
+40
+00:17:37,384 --> 00:17:42,463
+Dinamik, stupfoksunu üzerinden gerçekleştirin. Güzel, silme işlemleri ve free ile şey yapın. Tamam.
+
+41
+00:17:43,059 --> 00:18:03,639
+Yani ana şey ne arkadaşlar? Bizim bir uygulamamız var. Bu uygulamalarda bir çalışan bir şirket düşünün burayı. Bu şirketteki çalışanların bilgilerini tutan, iş bilgilerini şey yapan şeklinde bir veri tabanımız olacak. Bunun da o verileri tutma şekli birinde database array yaklaşımıyla diğerinde linked list ile yapacağız. Aynı işlemleri hep de sadece farklı türlerde göstereceğiz.
+
+42
+00:18:04,852 --> 00:18:17,632
+O zaman hazırsanız yavaştan koda geçelim. Şimdi şunu hatırlıyorum arkadaşlar, BBG'de geçen dönem, BBG'de birinci uygulamada da yine ben gelmiştim. Bunu söyleme sebebim şu, orada size şöyle bir cümle kullanmıştım.
+
+43
+00:18:19,316 --> 00:18:46,936
+Bundan sonra önünüze ne tarz problem gelirse gelsin. Karmaşık olur, basit olur, biz önce ne yapıyorduk diyorduk. Kafamızda bir akış diagramı vardı hatırlarsanız. O zamanlar daha bilmediğiniz zamanlarda o algoritma kavramını oluşturmamız gerekiyor demiştik. Yani ne demek istiyorum? Bir problem geldiğinde bu problemde kaba taslık önce ne yapmalıyız gibi bir koda geçmeden önce planlamanız gerekiyor. Bu soru için özelliğinde neydi? Tamam işte bir kişimiz var, işimiz var.
+
+44
+00:18:47,316 --> 00:19:11,516
+struct'larını oluşturacağız. Okey. Ama bu person'ın da bir dinamik array'de tutulmasını istiyor. O zaman person pointer şeklinde, person'ların adreslerinin tutulu bir array olması gerekiyor. Ekstra alan. Okey. Daha sonra ben bu her bir alanları soruşa, işte dinamik memory ile oluşturacağım. Onlara işte ulaşacağım, ekleyeceğim, çıkartacağım gibi bir şey çıkarmamız gerekiyor.
+
+45
+00:19:12,531 --> 00:19:38,531
+Tamam, şeye gelelim şimdi, hot kısmına gelelim. Şimdi ne demiştik en başta? Bir struct tanımı oluşacaktık. Bizden öncelikle kesin olarak istediği neydi? Jobstruck ile person struct. Okey. Jobstruck da ne istiyor bizden? Meslek bilgisini temsil eden bir karakter dizisi. Tamam. Artık karakter dizisinin zaten nasıl, hatta önce özür dilerim, struct tanımından başlayayım önce. Şimdi biz struct kavramını gördünüz. Struct kavramı niçin kullanılıyordu? Normalde biz...
+
+46
+00:19:39,028 --> 00:19:47,208
+Bir program yazdığımızda integer şeklinde bir şey tanınmarız, char şeklinde bir şey tanınmarız, bunların dizilerini tanınmarız.
+
+47
+00:19:47,288 --> 00:19:51,768
+Ancak her bir tiple tanınmadığımızda sadece o tipte veriler olur doğal olarak.
+
+48
+00:19:51,768 --> 00:19:59,708
+Ancak biz bütün programa dilleri olsun, bütün programlama algoritma orosu şuna maçlar.
+
+49
+00:20:00,000 --> 00:20:04,860
+Bu main dediğimiz yerde biz orayı olabildiğince az tutmaya çalışırız.
+
+50
+00:20:05,180 --> 00:20:06,000
+Yani ne demek istiyorum?
+
+51
+00:20:06,240 --> 00:20:11,360
+Dizi tanımlamayı orada yap, şeyi burada yap, şey onun içine bunu ekliyorum ama main de çok az.
+
+52
+00:20:11,460 --> 00:20:12,619
+Ana şeyleri tanımlarız.
+
+53
+00:20:12,940 --> 00:20:14,259
+Şimdi struct yapısı da nedir?
+
+54
+00:20:14,639 --> 00:20:17,119
+Bu struct yapısında biz sadece tek bir veri tutmayız.
+
+55
+00:20:17,500 --> 00:20:22,139
+Char pointer tutarız, ink pointer tutarız, normal integer tutarız, struct'ın içine struct pointer tanımlarız.
+
+56
+00:20:22,139 --> 00:20:26,220
+Yani bir yapı içerisinde bir sürü yapıları tanımlayabilir struct'tan.
+
+57
+00:20:26,539 --> 00:20:27,759
+Bunun kullanımı amacı budur.
+
+58
+00:20:28,596 --> 00:20:56,596
+Bunun oluşturulma şekli nedir? İki farklı şekilde görebilirsiniz. Bir normalde struct, job deyip direkt bu şekilde şey yapabilirsiniz. Bir de bizim typedef diye bir işimiz var. Bu typedef'i bir lakap takma gibi görebilirsiniz. Yani ne demek istiyorum? Normalde ben şimdi main'i hemen göstermeyeyim. Ben şu şekilde oluşturduğumu düşünün sadece, job, struct diye. Ben normalde bunun nesnesini oluştururken şöyle derdim, yanına bir şey derdim onu tanımlamak için. Ancak ne diyordum ben? Olabildiğince kısa tutmaya çalışırız bizim main tarafını. Hem satır bas...
+
+59
+00:20:56,596 --> 00:20:59,915
+bazı yazılansı hem de sayısal anlamda.
+
+60
+00:20:59,915 --> 00:21:08,316
+Şimdi bu tarz her ben bir şey tanımlamak istediğimde bu job, struct ile ilgili sürekli başına şunu yazıp daha sonra da işte tanımlama yapmak istemiyorum.
+
+61
+00:21:08,316 --> 00:21:09,875
+Böyle üç tane şey yazmak istemiyorum.
+
+62
+00:21:09,875 --> 00:21:16,596
+Type Def ile bu struct, struct yazmam gereken her yer yerine şu attaki ismi yaz.
+
+63
+00:21:16,788 --> 00:21:32,608
+gibi bir şey yapıyorum burada. Main'de göreceksiniz bunu nasıl kullanımlı. Yani ne demek istiyorum? Type, defi bir lakap olarak düşünün. Bu struct, job şey, lakap olarak job ismini kullanıyoruz. Bu struct tanınmamak için, kullanmak için. Tamam.
+
+64
+00:21:33,460 --> 00:21:59,327
+Bunu da bir tekrar yaptık. Char, ne diyor? Bir karakter dizisi tutacağız sonuçta. Nemi. Bunu da Char pointer name olarak tanımduruz. Tamam, süper, bir sorun yok. Yine aynı şekilde Person struct'ına geliyorum. Burada da ne yapıyorum? Person struct da benden ne istiyordu? Çalışanların adını, yaşını tutmamı. Güzel. Ve ilgili iş bilgisini yani jobs için job yapısına da sahip olacaktı. Yani bana şunu demek istiyor. Tamam, sen normal düz...
+
+65
+00:21:59,327 --> 00:22:02,087
+int, h ve charpoint'ın name'i tanınma.
+
+66
+00:22:02,507 --> 00:22:07,967
+Ancak job'u da diyorum normal bunlar gibi bir job name gibi bir şey yapmıyor.
+
+67
+00:22:08,027 --> 00:22:10,067
+Ben job için ayrı bir struct oluşturdum diyorum.
+
+68
+00:22:10,507 --> 00:22:11,688
+Bu struct'ın...
+
+69
+00:22:12,211 --> 00:22:22,672
+Adresi tipine, yani biz bu pointer'ları niçin kullanıyorduk arkadaşlar? Burada bu tipi, o pointer'ın gösterdiği adreste ne tarz bir veri tuttuğunu tanımlar bize burada.
+
+70
+00:22:22,672 --> 00:22:35,391
+Mesela integer pointer'lar vardı neydi? O adresin gösterdiği yerde integer bir veri tutuyordum demekti. Burada da job pointer ne demek? Bu pointer'ın gösterdiği adresin yerinde ben job struct tipinde bir veri tutuyorum demekti.
+
+71
+00:22:35,672 --> 00:22:39,751
+Yani burada da diyor ki size, o zaman job pointer şeklinde bir pointer tanımlıyorum.
+
+72
+00:22:40,211 --> 00:22:56,211
+bir job olsun. Ben person içinden şu pointer sayesinde, bu adres sayesinde buraya ulaşabilirim gibi bir şey tanımlıyor. Tamam buraya kadar sıkıntı da yok. Job struct'ımızı oluşturduk, person struct'ımızı oluşturduk. Şimdi diyor ki,
+
+73
+00:22:56,660 --> 00:23:04,280
+Şimdi şöyle düşünün arkadaşlar. Bunların her biri tekil. Yani Perlis'lerim benim tek kişidir. Değil mi? Crafım da ona bağlı olarak bir şeydir.
+
+74
+00:23:04,800 --> 00:23:14,660
+Şimdi biz veri tabanı ne demek kısaca? Veri tabanı aslında dersin 3. sınıfta çok daha detaylı, kapsamlı bir şekilde göreceksiniz ama veri tabanı aslında şöyle bir Excel düşündüm.
+
+75
+00:23:15,519 --> 00:23:19,660
+Veri tabanı benim verilerim tutuldu. Kayıt, not deftiri gibi düşünebilirsiniz. Bu veri tabanımda benim...
+
+76
+00:23:20,884 --> 00:23:27,544
+Ne istiyordu? Şurada bakalım. Personal, Venotip, dinamisi haklanacak, başlamak kapasite, elektri, falan filan.
+
+77
+00:23:27,544 --> 00:23:37,483
+Tamam, benim bu veri tabanımda aslında ne var? Kişiler var, cevaplar var. Bir de ne düşünelim mesela? Bu veri tabanımda kaç kişi bilgisi var? Kaç kişi diyelim buraya?
+
+78
+00:23:38,963 --> 00:23:44,304
+Değil mi? Kaç kişi? O veri tabanının kaç kişi? Ve veri tabanının kapasitesi de önemli.
+
+79
+00:23:45,107 --> 00:24:09,688
+Bir de bunun ana verisi var. Ne diyelim? Person diyelim. Yani kişiler diyelim. Ancak biz bu mesela Ahmet, Mehmet gibi bu kişiler diyelim bunu. Ancak biz bunu veri tabanında böyle Ahmet, Mehmet değil de, çünkü bu da ayrı bir yapı, person yapısı. Bu her bir kişinin kişi nesnesi düşünelim. Kişinin adreslerini tutarız. Yani bu aslında, şuramız.
+
+80
+00:24:10,675 --> 00:24:21,935
+Person pointer tipi olur. Yani bu satırımıza ne olur? Bu her bir person, Ahmet adlı person adresini tutar. Yani burası ne bileyim bin adresi olsun, iki bin adresi olsun, şudur budur.
+
+81
+00:24:21,935 --> 00:24:23,815
+Person.
+
+82
+00:24:24,352 --> 00:24:36,112
+Pointer tipinde olması lazım ki, bu dinamik bellek şeyini de daha rahat işlememiz lazım. Direkt bir adres tuttuğumuz için, o adresteki person'a giriyoruz ve onun bilgilerini işleriz bu database ile.
+
+83
+00:24:36,112 --> 00:24:46,272
+Şimdi, bu person point tipinde tutuyorum. Evet, yani ne var bu person point ne demek? Bu içerisindeki bilgiler pointer tipinde, pointer şeyinde adresler.
+
+84
+00:24:52,352 --> 00:25:00,772
+ulaşmam için de bir pointerın daha olması lazım. Çünkü önce bir pointerla bu adreslere ilişirim.
+
+85
+00:25:01,811 --> 00:25:05,751
+Bir sonraki pointerla da o person'un ilgili alanlarına erişelim.
+
+86
+00:25:05,971 --> 00:25:07,091
+Burada iki aşama var.
+
+87
+00:25:07,331 --> 00:25:08,091
+Tekrar alalım burayı.
+
+88
+00:25:08,152 --> 00:25:09,172
+Burası en önemli kısım.
+
+89
+00:25:09,692 --> 00:25:11,331
+Şimdi ben person'ları tutacağım ya.
+
+90
+00:25:11,571 --> 00:25:14,251
+Ancak person'ların ben adreslerini tutmam gerekiyor.
+
+91
+00:25:14,591 --> 00:25:15,451
+Person'un adresi demek.
+
+92
+00:25:15,511 --> 00:25:16,411
+Person pointer demek.
+
+93
+00:25:16,531 --> 00:25:17,911
+Yani o person'ların adresleri demek.
+
+94
+00:25:17,911 --> 00:25:19,692
+1000-2000'i şeklinde tutuyorum.
+
+95
+00:25:19,791 --> 00:25:19,911
+Ancak...
+
+96
+00:25:20,480 --> 00:25:32,720
+Ben, tamam, person'a ulaşacağım ama person'ın da sonuçta bazı bilgileri ile ilgili bir işlem yapacağım. O yüzden person double pointer diyorum ki, ilk pointer'ımla onun adresine ulaşırım, bir sonraki pointer'ımla da onun verisine ulaşırım.
+
+97
+00:25:32,720 --> 00:25:39,800
+Ben iki aşamada bir gerçekleştirmek istediğim için person, çift pointer şeklinde oluşturuyorum bunu, bunu data olarak adlandırıyorum.
+
+98
+00:25:40,403 --> 00:26:00,483
+Yani bu şekilde geniş şehten baktığım. Çünkü bu data dediğimiz şey, tekrar az önce yazdığım gibi data bir şey düşünelim, dizi düşünelim. Bunun içinde person pointer'lar var. Bu person pointer'lar ne demek? Her bir person'ı temsil eden adresi demek. Ben bu adreslere nasıl oluşacağım? Pointer'lar oluşturacağım. O yüzden çift pointer kullanıyorum burada.
+
+99
+00:26:01,943 --> 00:26:04,423
+Tamam bunlar zaten şey.
+
+100
+00:26:04,980 --> 00:26:12,340
+İnsan sayısı, kaç kişi var o an database'de ve database'deki toplam kapasiteler.
+
+101
+00:26:12,340 --> 00:26:15,860
+Orada soru da ne diyordu bana? Şurada bir şey demesi lazımdı.
+
+102
+00:26:15,860 --> 00:26:19,220
+Eğer kapasite dolarsa bunun iki katını çıkar diyor.
+
+103
+00:26:19,220 --> 00:26:23,539
+O da kapasiteyi kontrol etmek yok. Database count diye bir değişken tanımadım.
+
+104
+00:26:23,539 --> 00:26:27,460
+O an database'de kaç kişi var diyor. Tamam.
+
+105
+00:26:27,460 --> 00:26:30,420
+Şimdi ilk üç anayapıyı oluşturdukça...
+
+106
+00:26:30,607 --> 00:26:42,768
+Person ve database şeklinde. Şimdi bunları artık pointer sayesinde, dinamik bellek ile bunlara alanlar açacağız, velilerine erişeceğiz, doğru çıkaracağız, bir sürü işlemler yapacağız.
+
+107
+00:26:43,507 --> 00:26:45,127
+Şimdi ana yere gelelim, main'e.
+
+108
+00:26:46,967 --> 00:26:48,127
+Tamam, önce...
+
+109
+00:26:49,971 --> 00:27:07,012
+Benim bu şeyimde 0 kişi var doğal olarak ve countumda 1. Şu an 1 kişi alabilmesi için 1 kişi tanımlayalım önce. Ve bu struct'a yani database struct'ına ulaşabilmek için bir tane değişken tanımlayalım. Database struct yapımda, person database. Tamam.
+
+110
+00:27:07,988 --> 00:27:25,988
+Bu çıkış konusunu. Çünkü bizden ne diyordu şurada? Bir menü oluşturun diyordu. Nerede diyordu onu? Bir menü üzerinden çarpıp bunu ekleme çıkarmak için bunu görünce aklınızdan hemen ne geliyor? Switch case geliyor. Yani hani kullanıcının şey birse choice'u, ikisi şusu bulaşı gibi bir şey. Tamam. Şimdi burada her adımda...
+
+111
+00:27:26,612 --> 00:27:37,172
+Kullanıcılar liste eklerken, burada hemen geçici olarak çarp dizisi ve isim dizisi falan. Bir daha bunu dinamik ile açmaya gerek yok.
+
+112
+00:27:37,759 --> 00:28:05,159
+Zaten bir kere kullanıldık bir şey. Tamam, yaşımızı tanımlayalım. Şimdi daha sonra burada ben database'ime sonuçta bir kişi nesli objesi göndermem lazım. Bu objeyi oluşturduktan sonra bunun adresi ile o dataya bilgi vermem gerekiyor. Tamam, o yüzden person pointer şekli. Yani bir kişi nesli oluşturduktan sonra onun adresini döndürecek şekilde bir new person.
+
+113
+00:28:06,579 --> 00:28:28,480
+değişkeni oluşturuyorum. Daha sonra data struct da şunu biliyorsunuz. Ben eğer struct'tan bir değişken oluşturursam, bunun elemanlarına nokta diye ulaşıyorum. Yani person database nokta. Bizim elemanlarımız neydi database struct'cınında? İşte data, people count ve database count diye elemanları vardı. Bunların noktayla. Yani struct.
+
+114
+00:28:28,819 --> 00:28:37,699
+şeklinde bir değişken oluşturulduysa struct tipinde, bunun elemanlarına noktayla ulaşırım. Bu da bir biliyor olarak söylüyorum.
+
+115
+00:28:38,119 --> 00:28:43,940
+Tamam, şimdi zaten bunlar integer değişken olduğu için direkt değer atamasını yapıyorum burada başlangıçta. Tamam, güzel.
+
+116
+00:28:45,460 --> 00:28:47,099
+Şimdi burada biz ne demiştik arkadaşlar?
+
+117
+00:28:47,796 --> 00:28:55,036
+Burada neden chip pointer kullandığımızı, şimdi bunu bellekle bir yer açmamız gerekiyor bu tipte.
+
+118
+00:28:55,576 --> 00:28:57,355
+Dinamik bellek olarak tutmamız gerekiyor.
+
+119
+00:28:57,476 --> 00:29:03,076
+Hemen yine Person.data eşittir. Ne tipindeydi? Person chip pointer tipindeydi.
+
+120
+00:29:03,175 --> 00:29:07,476
+Malloc ile açıyorum. Malloc vardı, calloc vardı, realloc vardı.
+
+121
+00:29:07,836 --> 00:29:15,795
+Malloc'da ne oluyor? Siz şurada ne kadar şey istiyorsunuz? Ne taz verip tutacaksınız içinizde? Person pointer şeklinde tutuyorsunuz.
+
+122
+00:29:15,796 --> 00:29:29,796
+Onun size kadar bana yer aç, işte countum ne kadardı? 1'di, 1 çarp, şu kadarlık yer açtı. Mesela calloc'dan malloc arasında küçük bir fark, hemen şunu söyleyeyim. Malloc, siz şu kadar yer ayın diyorsunuz bana bellekte, o an size o yer ayırıyor ama o ayırdığı yer...
+
+123
+00:29:30,548 --> 00:29:35,827
+Başka bir programda kullanılmış ve bırakılmış. İçinde başka bir veriler olabilir.
+
+124
+00:29:35,827 --> 00:29:45,587
+İçini biz değiştireceğiz sonuçta. Dert değil ama o malloc'ta ayırdığı yeri yazsanız, hiçbir şey yapmadan başka tipte veriler görebilirsiniz.
+
+125
+00:29:45,587 --> 00:29:49,548
+Ancak calloc da yine sizi ayırıyor öyle bir yer ama içini sıfılla dolduruyor.
+
+126
+00:29:49,607 --> 00:29:55,107
+Hani tamamen sana ayırdım ve içini de boşalttım gibi bir şey farkını söyleyebilirim malloc'ta.
+
+127
+00:29:55,188 --> 00:29:56,203
+Ama çok büyük bir...
+
+128
+00:29:56,627 --> 00:30:02,067
+Şey olmaz, sadece bellek kullanımı açısından böyle bir fark söyleyebilirim. Tamam.
+
+129
+00:30:03,627 --> 00:30:13,107
+Bir dinamik bellek dizimi oluşturdum burada. İçinde ne olacaktı? Person pointer'a mı olacaktı? Yani o kişilerin adreslerinin bulunduğu bir veri olacaktı.
+
+130
+00:30:13,107 --> 00:30:18,148
+Bunu bu şekilde oluşturdu. Tamam, süper. Şimdi menü kısmımıza gelelim.
+
+131
+00:30:19,124 --> 00:30:46,424
+Ne istiyorsun burada? Bir seçersem ekleme yapsın, iki seçersem arama, silme, listeleme, çıkış ve klasik senin seçiminle, bunları biliyorsunuz zaten onları çok şey yapmıyorum, hızlı geçiyorum buraları. Seçimimizi alıyoruz ve switch case ile giriyoruz. Eğer ekleme yapmak istiyorsan, götürüz zaten şu an database'imiz boş olduğu için önce bir ekleme yaparız. Tamam, PINITEP'de kişi adını alıyoruz.
+
+132
+00:30:47,731 --> 00:30:54,631
+Yaşını alıyoruz ve iş adını alıyoruz. Buraya bir daha detaylı girmeme gerek yok. Buraları biliyorsunuz zaten arkadaşlar.
+
+133
+00:30:54,631 --> 00:31:10,831
+Şimdi ben ne demiştim en başta? Bizim programlamadaki ana amaçlarımızdan birisi nedir? Main olabildiğince şey tutmaktır. Daha az şeyle tutmaktır. Bunun da yapmamızın şeylerinden birisi nedir?
+
+134
+00:31:11,200 --> 00:31:18,019
+fonksiyonel bir programla mı kullanmaktır? Yani sürekli yapacağımız işleri, sürekli bunu main'le doldurmak olmaz.
+
+135
+00:31:18,099 --> 00:31:24,679
+Bunu fonksiyon ile, sürekli o fonksiyonu çağırarak bu işlemleri yapmayı sadı. Mesela buradaki menü de bir fonksiyona bağlanabilir.
+
+136
+00:31:24,679 --> 00:31:32,359
+Yani şu kadar işlemi sadece bir menü fonksiyonuyla çağırıp yapabilir. Bu daha da şık olur. Ama görmek amacıyla şu an onu şey yapmadık.
+
+137
+00:31:33,559 --> 00:31:36,556
+Tamam. Şimdi önce ben database'e...
+
+138
+00:31:36,788 --> 00:32:03,387
+person kaydedeceğim ancak önce o person şeyini oluşturmam lazım. Bilgilerini doldurup bir o bellekte o bilgileri saklamam gerekiyor. Önce bir tane yeni bir person oluşturmak için init new person diye bir fonksiyon tanımlıyoruz. Ve buraya name'ini, edge'ini ve job name'ini oluşturup şöyle bir şurada oluşturduğumuz new person adres şeyi vardı ya arkadaşlar. Buraya da o adresi atacağız. Tamam. Şimdi init new person.
+
+139
+00:32:05,491 --> 00:32:06,511
+fonksiyona gidelim.
+
+140
+00:32:08,311 --> 00:32:10,711
+Şimdi biz orada ne bekliyorduk geri dönüşünde?
+
+141
+00:32:10,811 --> 00:32:12,631
+Person pointer şeklinde bir şey bekliyorduk.
+
+142
+00:32:12,692 --> 00:32:14,411
+Yani adres bekliyorduk.
+
+143
+00:32:14,531 --> 00:32:16,351
+O person struct'ın adresini.
+
+144
+00:32:16,351 --> 00:32:20,351
+Burada da yine o fonksiyonumuzun dönüş değeri, yani return'deki...
+
+145
+00:32:21,076 --> 00:32:37,255
+değişkenin tipi person pointer şeklinde olmalı. Bakın bu da fonksiyonlardaki en önemli şeydir. Eğer sizin fonksiyon adından önce şuraya yazdığını değişken neyse, değişken tipi neyse, return'de de döndüreceğini değişken tipi o olmalıdır.
+
+146
+00:32:38,387 --> 00:32:48,587
+Çünkü buradaki bu, ben bu fonksiyon bittiğinde return'de bu şekilde bu değişken tipine bir şey döndüreceğini söylersiniz. Tamam. Bunu da zaten biliyorsunuz tekrar ettik.
+
+147
+00:32:49,867 --> 00:32:58,507
+Şimdi ne yapmamız gerekiyor? Bir person, yani new person şeklinde bir mallocla yer açıyorum. Tamam, güzel. Yine aynı şekilde.
+
+148
+00:32:59,827 --> 00:33:14,827
+NeveJub'da da yani, job struct şeyinde bir dinamik dizide, bellekli bir gereksiyonu. Tamam ve sizeof'ları da bu struct tipindeki struct'ın boyutu ne kadarsa o kadar şekilde oluşturuyor. Tamam, güzel. Şimdi new person'u...
+
+149
+00:33:15,104 --> 00:33:41,604
+oluşturdum. Bunun, şimdi biz normalde ne demiştik? Struct'ı oluşturduğumuz onun elemanlarına nokta ile oluşuyorduk. Doğru. Ama hocam burada işte eksi ve ok işareti ile beraber kullanıyoruz. Şimdi arkadaşlar bu struct'ı eğer siz direkt şurada onun kendi direkt değişkenli tipinde oluşturursanız nokta ile ulaşırsınız. Ancak eğer bir pointer ile oraya ulaşırsanız orada bunu kullanmanız gerekiyor.
+
+150
+00:33:41,971 --> 00:33:45,571
+New person name'i. Tamam şimdi name'im benim neydi?
+
+151
+00:33:47,651 --> 00:33:53,891
+Bir chypointer tipinin, yani bir dizi tipinin olacak. Ve ben bu diziyi mallocla oluşturuyorum.
+
+152
+00:33:53,891 --> 00:33:55,171
+Dinamik diziyi.
+
+153
+00:33:56,131 --> 00:33:58,211
+Burada normalde şurada gördüğünüz gibi...
+
+154
+00:33:59,796 --> 00:34:27,796
+Tamam, çarp şeyinde olacak ama hep burada mesela bir çarp diyorduk, bir çarp bir tek şeydi. Ama burada neden ben strler name artı bir düşkü? Bu bir string dizi yani. Daha doğrusu çar dizisi ve string bir kelime. Ben şunu görmüşüm, bu stringler, daha doğrusu çarlar şeyde bellekle nasıl saklanıyordu? İşte mesela saydım k, k, a, a, n en sonunda enter string konudur. Yani o kelimenin bittiğini göstermek. O yüzden artı bir şeklinde name ismini direne.
+
+155
+00:34:27,795 --> 00:34:42,755
+dinamik bellekte yer açıyorum. Daha sonra diyorum ki, tamam ben bu oluşturduğum new person'ın name'ini oluşturdum bellekten. Bunun içini doldurmam gerekiyor. Tamam bunun içini nasıl olduracağım peki? Ben burada bir dizi göndermiştim.
+
+156
+00:34:43,088 --> 00:35:02,088
+Dizinin adresi, char pointer şeklinde ben bunu göndermiştim. Bu strcpy şu işe yarıyor. Senin şurada vereceğin iki adreste, yani New Job Name'deki adresin başlangıç yeriyle, o diğer gelen dizinin başlangıç adresini önce string diye kontrol ediyor ve daha sonra sağdaki...
+
+157
+00:35:03,987 --> 00:35:10,867
+şeyi arka arkaya nereye kadar gidiyorsa entrosikten nereye kadar gidiyorsa onu alıp soldakini kopyalıyor.
+
+158
+00:35:12,115 --> 00:35:19,115
+Çünkü yoksa burada tek tek neymiş, sıfırı, şuydu, buydu gibi bir şey yapmamız gerekiyor. Ancak burada strcpy ne yapıyor? Tekrar onu unutuyorum.
+
+159
+00:35:19,115 --> 00:35:28,115
+İki tane o dizinin başlangıç adresini, çünkü bu neyması nedir? Bunlar direkt bunların başlangıç adresidir bu oluşturulan dizilerin. Yani sıfırıncısı demek.
+
+160
+00:35:28,115 --> 00:35:34,115
+O sıfırıncısından başlayarak, sağdaki nereye kadar gidiyorsa, soldakini oraya kadar kopyalıyor.
+
+161
+00:35:34,115 --> 00:35:37,115
+strcpy.
+
+162
+00:35:37,115 --> 00:35:39,115
+Daha sonra ne yapıyor? Bu...
+
+163
+00:35:39,987 --> 00:36:05,127
+Benim özür dilerim, şuradaydım. NAMYI'ni kopyalıyordu. Şimdi NIRJAP'la da yine aynı şekilde. Benim bir NIRJAP'ım vardı, onun da bir NAMY'i vardı. O NAMY'i de yine ben JAPNAME'nin parametre ile gelen JAPNAME ile bunu strcpy ile onun adresindeki ilk değerini eşleştirip kopyalıyor ve yazıyor. Bu strname belleğine, belleklik adresteki yerine.
+
+164
+00:36:06,099 --> 00:36:16,180
+Tamam, Person'un adını doldurdum. Şurada zaten direkt basit bir şekilde age'i direkt age'i eşit. Bu direkt tek bir değer. Bir dizi değil. Direkt tek bir değerle. Bunu eşitleyebilirsiniz.
+
+165
+00:36:18,139 --> 00:36:21,500
+Şimdi hocam, tamam. Bunu ayrı oluşturduk.
+
+166
+00:36:22,835 --> 00:36:40,835
+Bunu ayrı oluşturduk, bunu ayrı oluşturduk ama bir de şöyle bir durum vardı. Yani bu oluşturulan işin bu kişiye ait olduğunu da göstermemiz gerekiyor. Yani bu job, bu person'a ait, yani daha doğrusu bu job, bu person'dır gibi şeklinde dememiz için de bu near person...
+
+167
+00:36:42,291 --> 00:37:07,291
+şey, işte ok, job eşittin, new job diyoruz. Yani ne demek istiyoruz? Biz burada job pointer tipinde bir şey bekliyorduk bu struct'a. Ben zaten burada job pointer şeklinde bir değiş kelime oluşturdum bellekte. Ve bunun artık job adresinde saklanan değer bu new job struct'ındaki adrese tekabül ediyordu. Yani artık ben...
+
+168
+00:37:07,956 --> 00:37:24,956
+Bu struct ile ilgili bir işlem yapmak istediğimde, bunun artık yaşını biliyorum, ismini biliyorum ve ona ait olan işin struct'ın yani, bellekte saklanan adresini de biliyorum artık ve gidip o job ile ilgili bir işlem yapmak istediğimde, bu job pointer ile buraya ulaşabilirim.
+
+169
+00:37:24,956 --> 00:37:32,652
+Ne yaptık biz böylece? New person'da isimlerini oluşturduk, yaşını girdik ve job...
+
+170
+00:37:32,659 --> 00:37:42,420
+şeyini de ayrıyeten oluşturup onu da ona bağladık adres ile ve artık benim new person adlı bir struct'ım oluştu ve onun adresini de döndürüyorum burada.
+
+171
+00:37:43,859 --> 00:37:46,259
+Bunun adresini niçin döndürüydük burada?
+
+172
+00:37:49,172 --> 00:37:53,891
+Çünkü ben burada init new person'a gönderdiğimde bir new person bekliyordum.
+
+173
+00:37:53,971 --> 00:38:00,692
+Yani new person'da neydi? Bir person pointer. Yani o kişinin bellekte, strc olarak saklanan bellekte adresini istiyordum.
+
+174
+00:38:00,851 --> 00:38:09,971
+Tamam. Ben artık bu new person ile o oluşturduğum person'ın adresini tuttuğum için istediğim bir şekilde o kişiyle ilgili bir işlem yapabilirim.
+
+175
+00:38:11,443 --> 00:38:38,943
+Önce şey yapalım, doğru oluşturduk mu, şey yaptık mı bu new person'e ulaşabiliyor muyuz adresiyle gerçekten diye. Print person adlı bir fonksiyonu tanımdık. Yani direkt kişinin o pointer ile bilgilerine ulaşalım ve gerçekten ulaşabiliyor muyuz, doğru cevap veriyor mu bize şeklinde bir fonksiyon tanımdık. Tamam. Bu fonksiyon ne yapacak? Şimdi void'de nedir arkadaşlar? Şimdi biz şurada ne dedik?
+
+176
+00:38:39,411 --> 00:38:51,911
+Eğer sen fonksiyon tanı, isminden önce void dışında bir şey tanımlıyorsan return olarak o tipte bir şey dönmüyor. Ama eğer void olarak tanımlarsan bu şu demek.
+
+177
+00:38:52,500 --> 00:39:17,880
+Bir şey tipinde döndürmene gerek yok. Return ile bir şey döndürmene gerek yok. Burada kullanılan return şu anlama gelir. Hani fonksiyon bitti buradan çık anlamında. Boş döndürürsün burası. Az sonra anlatacağım. Hani hocam return yoktu niye burada return var derseniz geliyorum. Bu hani bir koşul var ki o koşulun olmasını istemiyor. Eğer olursa da çık demenin anlamıdır bu. Yoksa return ile bir şey döndürme yapmayız boyut tipindeki fonksiyonlarda. Tamam güzel hocam.
+
+178
+00:39:19,347 --> 00:39:20,387
+Person'u aldık.
+
+179
+00:39:21,307 --> 00:39:21,488
+Değil mi?
+
+180
+00:39:21,568 --> 00:39:28,148
+Artık ben bu person'un içindeki adres ile o person struct'ını ulaştırıp o adreste bulunan bilgilere ulaşabilirim.
+
+181
+00:39:28,587 --> 00:39:31,648
+Şimdi biz burada person oluşturulmanı yapıp bunu yazdıralım diyorduk.
+
+182
+00:39:31,708 --> 00:39:32,688
+Önce bir kontrol yapalım.
+
+183
+00:39:32,768 --> 00:39:34,528
+Belki de bir sıkıntı var mı yok mu diye.
+
+184
+00:39:34,528 --> 00:39:40,688
+Eğer person'daki şeyin ne alıysa, name'i ne alıysa, job iş ne alıysa veya pardon.
+
+185
+00:39:42,164 --> 00:40:05,184
+isminin alaysa gibi bir hani bütün değerleri bir kontrolü alaysa böyle bir person yoktur gibi bir şey diyelim burada dedik. Tabi bu kod size göndeririz ama burada yine farklı farklı şeyler deneyemezsiniz. Belki sadece person'a bakarsınız. Direkt nesliyotu bir daha bu kadar şeye gerek yoktu diyebilirsiniz. Yani benim için belki cap ismi boşta olabilir. Niye illa bu nalda yok diyebilirsiniz. Bu ayrı bir hani programlı bir şey. Genel mantığıyla konuşurum. Tamam daha sonra da ne yapalım?
+
+186
+00:40:07,476 --> 00:40:22,296
+Printf ile bu person'a ait name bilgisini, age bilgisini önce job'a ulaşıp job'ın içinden job name'ine ulaşalım şeklinde bilgileri yazdıralım dedik. Tamam.
+
+187
+00:40:23,576 --> 00:40:31,416
+Print person şeyi de bu şekilde, fonksiyonu bu şekilde. Yani ne yaptık? Önce person nesne şeyimizi oluşturduk, objemizi oluşturduk.
+
+188
+00:40:31,416 --> 00:40:35,180
+Daha sonra onu gidelim yazdıralım dedik. Tamam. Ama ben şu an hala...
+
+189
+00:40:35,443 --> 00:40:42,443
+O kişiyi, o person pointer şeklinde adres olarak tutulan şeyi hala ben veri tabanıma eklemedim.
+
+190
+00:40:42,443 --> 00:40:44,443
+Oluşturdum sadece.
+
+191
+00:40:44,443 --> 00:40:45,443
+Dinamik bellek.
+
+192
+00:40:45,443 --> 00:40:49,443
+Ama benim dediğim o data şeyim vardı ya şurada oluşturdum.
+
+193
+00:40:50,387 --> 00:40:57,587
+person bilgilerini sakladın, database dediğin. Lahariye buraya ekleme yapmadın bu kişiyi. Şimdi o eklemenin kısmını görüyoruz. Buna da add new diyoruz.
+
+194
+00:40:58,148 --> 00:41:03,307
+New person'ımı direkt bir şekilde gönderelim ve burada diyorum ki, bakın person database'in adresini gönderiyoruz.
+
+195
+00:41:03,307 --> 00:41:09,467
+Çünkü biz burada, mesela bunda böyle bir şey kullanmadık. Bu zaten pointer tipinde oluşan bir şeydi ama bu,
+
+196
+00:41:14,963 --> 00:41:24,283
+Pointer ile bir şey, tanımlanan bir şey, direkt düz bir değişkendi. Ancak ben bu neyi temsil ediyordum? Bu database temsil ediyordum ama ben bunun üzerinden bir işlem yapacağım ya.
+
+197
+00:41:24,283 --> 00:41:32,963
+O yüzden onun adresiyle beraber gönderiyorum ki pointer ile işte, aslında onu göstereceğim fonksiyonla onunla ilgili bir işlem yapayım. Burada bunu yazmadım çünkü zaten bu pointer.
+
+198
+00:41:33,364 --> 00:41:36,184
+Tipinde olduğu için direkt onunla işlem yapabiliyorum. Tamam.
+
+199
+00:41:36,443 --> 00:41:41,304
+Ne yapıyoruz şimdi? Kişimizi oluşturduk. Ekrana yazladık. Şimdi bunu database'e ekleyelim.
+
+200
+00:41:41,304 --> 00:41:43,344
+Adniv fonksiyonuna gidiyorum.
+
+201
+00:41:46,931 --> 00:42:02,431
+Tamam, add-in fonksiyonunda ne bekliyoruz şimdi? Yine void tipinde bir fonksiyonumuz. Ben bunun adresini göndermiştim, person database'in. Onun adresini alabilmem için de bir pointer tanımlıyorum. Aynı tipte database tipinde. Ve zaten new person'ımız vardı. Bunda bir sıkıntı yok.
+
+202
+00:42:02,431 --> 00:42:13,631
+Şimdi ne yapmamız gerekiyor? Şimdi bizim datamız vardı, değil mi şurada? Person chip pointer gibi bir datamız vardı.
+
+203
+00:42:15,027 --> 00:42:27,047
+Bu data da neydi? Şurada tekrar göstermiştim. Person pointer'ları tutan, yani person'ların adreslerini tutan bir diziydi, dinamik bir diziydi.
+
+204
+00:42:29,619 --> 00:42:42,739
+Datamız. Ve bunun mesela sıfırıncı elemanı, ilk kişinin yani buradaki bunun sıfırıncı elemanı, şu person pointu belki de bu person pointu neyi temsil ediyor? 1000 NULL'ı adresteki bir kişiyi temsil ediyor bu person pointu.
+
+205
+00:42:43,380 --> 00:42:50,439
+İşte sıfırıncı elemanla yeni bir eleman ekleyeceğiz değil mi? Şimdi benim people countum kaçtı ilk tanımda? Şu an sıfır kişi.
+
+206
+00:42:51,800 --> 00:42:57,099
+Şimdi programlamada şöyle bir şey vardır arkadaşlar. Bakın burada önemi geldiğince güzel olmuş.
+
+207
+00:42:57,876 --> 00:43:25,276
+ata mı işlemi yapılırken, mesela buradan aslında bu ne? Burası sıfır aslında değil mi? Sıfırıncı elemanına new person ata demek bu aslında. Burada ne yapılıyor? Tamam, people countenleştik ama bir artı artı var. Şimdi bu şov anlamı mı geliyor sizce? Yani person'ın sıfırıncısına değil de, people count'ı sıfır olduğu için sıfır diyorum. Sıfırıncısına değil de acaba birincisine mi new person'ı ata demek midir?
+
+208
+00:43:25,748 --> 00:43:49,168
+Hayır. Bu şu an atama işleminde bu artı artıyı görürseniz bu şu anlama gelmektedir. Önce buradaki değer neyse mesela sıfır ya buradaki. Önce data sıfırınca new person'ın o şeyini ata yani adresini ulaşa binse neyse işte person pointer şeklinde. Daha sonra people count'un değerini bir arttır.
+
+209
+00:43:50,804 --> 00:43:54,804
+Bu o anlama gelmektedir. Mesela şöyle olsaydı,
+
+210
+00:43:56,804 --> 00:44:00,804
+Artı artı şeklinde olsaydı bu şu anlama geliyordu. People count'un değerini bir arttır,
+
+211
+00:44:01,940 --> 00:44:19,420
+Son onu, new person'ın değerini ona git ata. Yani git people count'ın değeri 1 olacaktı, git o data 1'in 1'e new person'ı ata demekti. Ama biz onu istemiyoruz. Biz önce değeri neyse ona new person'ı ata, daha sonra değerini 1 arttır. Bunu programlamada çok görürsünüz.
+
+212
+00:44:20,220 --> 00:44:27,539
+Yoksa hani bunu şurada yapabiliriz, burayı silerdik. Direkt bunu ata daha sonra da people count değerini 1 arttır da yapabiliriz. Bu ne oldu benim?
+
+213
+00:44:28,403 --> 00:44:53,884
+1 arttır da diyebilirdik. Ama böyle güzel bir programlama kısa oldu diyelim size burada. Yani önce artı artı görürseniz eğer atama işlemlerinde, önce şu soldaki değeri neyse onunla atama işlemini yap, sonra o değeri 1 arttır demek. Tamam. Ne yaptık biz burada? Database'in sıfırıncı elemanına bu new person'ın adresini atadık ve daha sonra bize diyordu ki soruda, nerede diyordu?
+
+214
+00:44:55,539 --> 00:45:09,619
+Cancı ağzım diyordu, başlangıç evli kapasitesi oluşan ererek kayıt eklemesini eğer dolarsa diyor, yani people count değerim database'in kendi değerine eğer eşit olursa diyor, artık bu eray doldu demek, bunun kapasitesini iki kata çıkar diyor.
+
+215
+00:45:09,619 --> 00:45:21,420
+Tamam, o zaman biz ne yaptık burada? Önce sıfırıncı elemanına new person'ı atadık, değerini bir arttırdık, artık kontrol etmemiz gerekiyor. Benim person database'im ki people count'un...
+
+216
+00:45:21,780 --> 00:45:23,780
+Database countumu eşit mi?
+
+217
+00:45:24,180 --> 00:45:33,579
+Hoppala eşit çıktı. O zaman ne yapıyor? Bizi iki katına çıkartıyor. O zaman database countumu iki katına çıkartıyorum. Yani iki diyorum. Tamam ama bunu ben ikiye çıkarttığımda iki olmuyor.
+
+218
+00:45:33,940 --> 00:45:40,579
+Bunu oluşturdum, bu datada oluşturdum, malloc vardı ya, person, chip pointer şeklinde.
+
+219
+00:45:40,739 --> 00:45:47,220
+Onun size of'unu arttıracaksın diyor. Size of'unu bu database count da genişlet diyor.
+
+220
+00:45:47,579 --> 00:45:54,659
+O zaman kullanacağım şey benim realloc'tur. Bu realloc o an eğer siz database ile dinamik bellekte,
+
+221
+00:45:55,859 --> 00:45:59,940
+belleğin boyutuyla oynamak istiyorsanız, arttırmak istiyorsanız, bunu realloc ile yapacaksınız.
+
+222
+00:46:00,851 --> 00:46:07,451
+Ve diyeceksiniz ki, bunun ilk parametresi, o hangi ben belleyi, diziyi genişletmek istiyorum?
+
+223
+00:46:07,692 --> 00:46:14,452
+Person'da tabii data da, data tipindeki, özür dilerim, aynen, data adlı diziyi genişletmek istiyorum.
+
+224
+00:46:14,551 --> 00:46:17,011
+Tamam, ne şeklinde genişletmek istiyorsun?
+
+225
+00:46:17,112 --> 00:46:19,851
+Yine size of a person pointer olan ama...
+
+226
+00:46:20,532 --> 00:46:48,396
+Count'u artık değiştiği için, database count'u o an neyse, o kadar çarpı şeklinde genişletiliyoruz. Böylece ne yapıyoruz? Bu ikiyle çarpıldığı için, benim data dinamik belleyim iki katını çıkarttırmış oldu. Gördüğünüz gibi. Tamam hocam, güzel. Bunu da yaptık. Önce kişi nesnemi oluşturdum. Bunu gidip yazdırdım. Daha sonra o...
+
+227
+00:46:48,563 --> 00:46:54,963
+Tamam, kişiye oluşturuyorum ama bunu ben hala data adlı belleğimde saklamıyorum.
+
+228
+00:46:54,963 --> 00:46:56,563
+Hani databaseimi hala eklemedim.
+
+229
+00:46:56,563 --> 00:47:02,163
+Bunu da işte, person database değişkeniyle bunun adresini gönderecek şekilde burada
+
+230
+00:47:04,851 --> 00:47:25,771
+Onun artık kaçıncı elemanı, şu an people count'um sıfırdı. Sıfırıncı elemanı neyparosuna ekle. Daha sonra bunun değerini bir arttır. Daha sonra kontrol ile people count'u eşitse, database count'un iki katına çıkar ve bu şekilde realloc ile database'in, yani dinamik bellek, dinamik dizi olarak adlandırma üzerin boyutunda iki katına çıkarmış olduk. Tamam, güzel.
+
+231
+00:47:27,891 --> 00:47:30,771
+Ve bu şekilde bu kişi database'e eklenmiştir.
+
+232
+00:47:32,307 --> 00:47:45,307
+Daha sonra bilgilerini, database'in kiş sayısı bu, database'in boyutu şudur diye printf ile yazdırıyoruz ve birinci şıkkı bitiriyoruz.
+
+233
+00:47:45,307 --> 00:47:52,307
+Ekleme kısmında. Tamam. Güzel. İkinci şıkkı ne yapmamızı istiyor? Arama yapmamızı istiyor. Tamam.
+
+234
+00:47:52,307 --> 00:47:54,307
+Şimdi arama yaptığımızda ne olacak?
+
+235
+00:47:54,835 --> 00:48:22,835
+Nasıl arama yapabilir? Şimdi burada hani normalde istenilen şey, günlük, günlük demeyeyim de gerçek programada bir arama işlemi yapıyorsunuz. Normalde her bir kişiye ait bir ID atanır, günlük bir değer atanır. Hani ID saklanır, mesela TC kimlik numaramız gibi düşünün veya sizin okul numaranız gibi düşünün. O kişiyi aramak istediğinizde adıyla aramazsınız. Hani burada kısa olsun de adlı hemen şey yaptık, bir daha ekstra bir alan açmadık. ID'nizi arayın, okul numaranızı aranırsınız veya TC'nizi aranırsınız. Çünkü kişilerin isimleri aranırsınız.
+
+236
+00:48:22,835 --> 00:48:31,835
+Yaşı aynı olabilir, işi aynı olabilir. Normalde arama işlemini i ile yapmanız daha doğru olur. Burada isimle yapalım. Tamam.
+
+237
+00:48:31,835 --> 00:48:43,835
+Şimdi isim girin diyoruz burada ve o kişi database ile var mı diye kontrol edeceğiz. Tamam bunda ne yapıyoruz? Yine ayrı bir fonksiyon tanımlıyoruz. Search database ile ve o database'e ulaşmak için person database değişikliğimizi kullanıyoruz.
+
+238
+00:48:43,835 --> 00:48:46,443
+Aramak hangi isim mi arıyoruz, neyimi arıyoruz. Tamam.
+
+239
+00:48:48,052 --> 00:49:09,412
+Neredesin sen? Buradasın abim. Tamam şimdi, search database. Yine neydi? Person database'imi gönderdiğim için pointer tipini bir şeyle alıyorum onu. Direkte char pointer yani isim stringiğimizi. Bunu da alıyorum. Ne yapmam lazım benim burada? Database'in o an kaç kişi varsa, mesela 3 kişi var bu database'de, 3 ile o for'a döneceğim.
+
+240
+00:49:09,780 --> 00:49:25,880
+Her bir ismi, yani database'deki o person adresindeki o adresi bulacağım, person adres tipindeki olanı ve o adres ile gidip name'i alacağım. O name ile benim name'im eşleşiyor ama bunu kontrol edeceğim. Tamam.
+
+241
+00:49:26,980 --> 00:49:31,540
+Şimdi burada birinci gideceğimiz şey strcmp komutanı, yani compare şeyinde.
+
+242
+00:49:33,204 --> 00:49:59,204
+İki dizi olarak verilen şekilleri tek tek kontrol ediyor her sırayla. Eğer aynıysa sıfır değeri dönüyor. Yani evet bu şeydir diyor. Aynı isimdir yani bellek de tek tek karakter karakter şeyler eşleşiyor diyor. Tamam ama ben bu değeri nasıl uğraştırıyorum? Şimdi biz ne demiştik şurada? Yine en başta dönüyorum. Data chip pointer tanımlama amacım burada buydu. İlk önce person pointer ile...
+
+243
+00:50:00,000 --> 00:50:26,860
+İçini bu şekilde ödüm. Bu person pointer'la ne diye bir adres tutuyordu. Daha sonra bir pointer sayesinde, ekstra bir pointer sayesinde, o person'ın bilgilerine gidiyorum. Çünkü bu bilgi ne saklıyordu bana burada mesela? Name'ini, job'tı, işte h'ti gibi. Yani önce ilk pointer ile bunun adresini buluyorum o kişinin. Daha sonra bir pointer ile o adresine gidip artık hangi şeylerine erişmek istiyorsam. Tamam.
+
+244
+00:50:27,891 --> 00:50:29,891
+Nerede benim search fonksiyonum?
+
+245
+00:50:30,891 --> 00:50:32,891
+Güzel fonksiyonum nerede? Aynen.
+
+246
+00:50:32,891 --> 00:50:35,891
+Şimdi ne yapıyorum burada? Tek tek dolaşacağım değil mi?
+
+247
+00:50:35,891 --> 00:50:43,891
+Data'nın i'incisi yani ilk Person Pointer'ıdakinin yerine git ve onun name'ine bak.
+
+248
+00:50:43,891 --> 00:50:52,891
+Onun name'i ile benim gönderdiğim name eğer compare, string compare, eğer tek tek kontrol ediyor, eğer eşitsiz diyor. Tamam, bu kişi bulundu diyor.
+
+249
+00:50:53,460 --> 00:51:06,000
+ve git print person ile bu adresindeki, bak data i'deki burada ne bileyim adres istiyordum. Bu adresteki kişiyi yazdırdı. Biz print person'a zaten bakmıştık. Nerede o print person?
+
+250
+00:51:08,559 --> 00:51:16,759
+Tekrar bakıyorum şurada. Print person'a ne yapıyordu? O person'ın adresini bekliyordu burada. O adres ile bütün değerleri ulaşıyordu burada. Ve en son yazdırıyordu.
+
+251
+00:51:21,235 --> 00:51:30,915
+Nerede? Şurada. Aynen. Print person'la çağırıyorum ya. O adresteki git, o person pointer ile o adrese git, person'daki onun bilgilerini yazdır diyorum. Ve burada da şey kaçıncı indekste ise.
+
+252
+00:51:33,475 --> 00:51:38,155
+Buradan ne yaptık? Kaçıncı indekste ise onu şey yaptık, döndürdük de bunu bir şey eşitlemiyoruz. Neyse, dert değil.
+
+253
+00:51:40,355 --> 00:51:42,615
+Bu şekilde o kişiyi arıyoruz arkadaşlar.
+
+254
+00:51:44,307 --> 00:51:54,307
+Tamam, şimdi daha önemli bir kısım, deleting kısmı. Silme işlemi, bakın arkadaşlar, bütün programlamada silme işlemi en önemli işlerden biri. Ya bir şeyi...
+
+255
+00:51:54,387 --> 00:52:16,827
+Mesela boş yere database'e bir şey ekleyebilirsiniz. Bu hani çöp bir veriminde bazen olabilir. Gereksiz eklemeleri önemli. Ama yine ana şeyi bozmaz o kadar. Çünkü genellikle database'e sona ekleme olduğu için ana şeyiniz sizin başlığı. Ancak delete işlerimi bakın çok önemli bir iştir. Çünkü hele bir de C programlama da belleğe direkt adres ile ulaştığınızda
+
+256
+00:52:17,523 --> 00:52:44,864
+Buralar şimdi ödevilmiş yaptım dediğimde o çok dertli de ben gerçek hayattır demeye çalışıyorum. Yanlış bir adrese, çünkü C'de ne var? Siz pointer ile bellerin her yerine erişebilirsiniz neredeyse. Hem bir avantajdır hem de bir kullanmayı bilmiyorsunuz demeyelim de, dikkatli olmazsanız istemediğiniz bir alana erişip onun bilgilerini değiştirip veya silme gibi bir durum olur. O yüzden delete işlemi çok önemli bir iştir.
+
+257
+00:52:45,268 --> 00:52:54,887
+Tamam, şimdi delete işlemi yapacağız. Burada da ne yapacağız? Yine o database ulaşmamız için, person database kullanıcı, yine arama işlemini isim ile arayalım.
+
+258
+00:52:56,467 --> 00:52:58,228
+Tamam, delete person'a gidelim.
+
+259
+00:53:00,587 --> 00:53:01,867
+En önemli kısma geldik.
+
+260
+00:53:04,487 --> 00:53:06,467
+Şimdi delete person'da ne yapacağız?
+
+261
+00:53:07,687 --> 00:53:09,268
+Şimdi bir kişiyi silmemiz için...
+
+262
+00:53:11,251 --> 00:53:26,091
+Onu bulmamız lazım o database'de değil mi? Normalde şey dediğim gibi gerçek şeylerde, programlamlarda, o kişiyi siz database'de aradığınızda onun id'si dönen normalde. Hani şu id'li kişidir. Şimdi biz name'le aratıyoruz ya o id dönerdi. Şimdi bir search database'de ne yapmıştık?
+
+263
+00:53:27,635 --> 00:53:39,996
+O kişiyi buluyorduk ya burada, istimuli aratıp ve en son neydi? Bir i değeri döndü. Bu i de neydi? Aslında o data şeyindeki kaçıncı index olduğunu buluyorduk burada. Hani bunu id gibi düşünebiliriz. O i'yi döndürüyorduk burada. Tamam.
+
+264
+00:53:40,724 --> 00:54:08,268
+O i'yi al diyoruz burada. Person Position diyor. Yani o kaçıncı indeks de bu diyor. Eğer zaten eksi bir döndürüdü. Burada onu yapmış mıyız? Aynen. Eğer kişiyi buluyorsak zaten i ile döndürüdük. Ama eğer person yoksa eksi bir döndürüdük burada. Burada da diyoruz ki eğer o kişiyi yoksa yani eksi bir dönmesi zaten öyle birisi yoktur. Sininlemedi değil. Return'e dönüyoruz. Tamam. Sıkıntı yok. Daha sonra ne yapacağız? O...
+
+265
+00:54:08,500 --> 00:54:35,500
+Kişi kaçıncı şeyde? Şöyle gösterelim. Bir dizi düşünelim. Şuralarda adresler olduğunu düşünün. Tamam mı? Sallıyorum şu an hiç. Takılmayın derler. 1000, 2000, 3000 gibi gibi. Gidiyorum ya. Benim bulduğum indeksi şurada. Ben şu 2000...
+
+266
+00:54:36,179 --> 00:54:40,900
+adresindeki kişiyi silmek istiyorum. Şimdi burada ne yapacağım ben?
+
+267
+00:54:41,940 --> 00:54:45,900
+Silmek istediğimde, tamam şunu buldum güzel abi, buldum bunu, sen buradasın.
+
+268
+00:54:45,900 --> 00:54:52,179
+Şimdi bunu ben sileceğim ya. Şimdi bunu sildiğimde, sonuçta burası boş kalamaz.
+
+269
+00:54:52,179 --> 00:54:57,179
+Ne olacak? Bu bunun yerine gelecek. Bu da bunun yerine gelecek.
+
+270
+00:54:57,179 --> 00:55:00,179
+Daha sonra ben bunu free edeceğim.
+
+271
+00:55:01,235 --> 00:55:12,235
+Bunların hepsi bir dinamik bellekte saklanıyordu. Ben eğer bir silme işlemi yapmak istediğinde veya onunla ilgili bir işim bittiğinde bunu free etmem gerekiyor. Yoksa orada boşluğu boşluğu yer kalkma dinamik bellekte.
+
+272
+00:55:12,235 --> 00:55:24,811
+Tamam, bunlar bir daha ne yapıyorum? Ben bunu sileceğim ya. Tamam sildim diyorum ama burası boş kalamaz. O yüzden bu şeydeki indeksini sonra bir başı alacağım, bir eksisini alacağım. Burada da bunu yapıyorum.
+
+273
+00:55:26,068 --> 00:55:48,908
+Orada kaçıncı pozisyondan başlayıp, yani şu, nerede, bununla bir işim yok, bu zaten yerinde. Artık buradan başlayıp, bunun bir sonraki, bunun bir önceki ne gelecek şekilde for new işlemini yapıyorum. Bu şekilde ne yapıyorum? Data i'mdeki yerim artık ne oluyor? Data i artı birimdeki yerine geliyor. Yani böylece ne yapmış oluyorum? Bu artık yeni dizim benim.
+
+274
+00:55:53,300 --> 00:56:03,300
+Ve 4000 oluyor. Ancak, tamam, dizimin içindeki değeri şey yaptım, neden onu?
+
+275
+00:56:05,300 --> 00:56:10,300
+i artı 1 i atadım ve burada bir an sürekli people count diye bir değişkenim vardı.
+
+276
+00:56:11,315 --> 00:56:18,315
+Database'de o an kaç kişi var olduğunu kontrol etmem gerekiyordu. Bunu da bir eksiltmeyi unutmayız arkadaşlar.
+
+277
+00:56:18,315 --> 00:56:24,315
+Ve PeopleCount'um artık delete işlemi yaptığım için bir şekilde azalttım burada.
+
+278
+00:56:24,315 --> 00:56:32,315
+Tamam, deletePerson şeklinde kişiyi de burada sildik. Daha sonra List Database olsun.
+
+279
+00:56:34,132 --> 00:56:46,292
+Yani bütün kişileri listemiyor ama da search database'de ben bir kişiyi buluyordum. Ancak ben bütün o an kim varsa şey yapmak istiyorum. Neden ona? Listelenmek istiyorum.
+
+280
+00:56:46,292 --> 00:56:54,372
+Bu da doğal bir şekilde sıfırdan başlayayım. People count'um kaç ise şeyleri listele. Print person'inde kişileri listele şeklinde.
+
+281
+00:56:55,539 --> 00:57:11,159
+Bir şeyle list database ile onu çok basic bir şekilde tamamlıyoruz. Daha sonra exit control, eğer sıfır ise çıkış yapıyordum. Default, wrong, herhangi bir şey yapıyordu. Ve en sonunda bütün database'i, bunun en önemli kısım, işimizi bitirdikten sonra free edip, bellekten o alanların hepsini siliyoruz.
+
+282
+00:57:12,439 --> 00:57:13,839
+İşte bu örnek arkadaşlar.
+
+283
+00:57:14,324 --> 00:57:34,324
+Benim job tipinde bir struct oluşturuyorum, person tipinde bir struct oluşturuyorum. Daha sonra tüm personların adresleriyle beraber saklayacağım bir database oluşturuyorum. O database'i pointerlar sayesinde, dinamik bellekle oluşturduğum için bütün alanları, pointerlar sayesinde ekleme, çıkarma, silme gibi işlemler yapıyorum.
+
+284
+00:57:35,635 --> 00:58:01,135
+Bunun diğer tipi var. Bu array tabanlı bir yaklaşımdı. Bir de bunun linked list kısmı vardı. Ama isterseniz şu an 52 geçiyor. Bir 8 dakika ara verelim. Saat 3'te bir daha buluşalım. Orası önemli bir kısım. Orada da linked list kavramını bir tekrar edeceğiz üzerinden. Oraya biraz yorgun girmeyelim. Biraz daha dinlenip bir şey girelim. Sizin için de uygunsa saat 3'te görüşelim arkadaşlar. Tamam mı?
+
+285
+01:06:18,068 --> 01:06:20,068
+Merhaba tekrardan gençler.
+
+286
+01:06:22,068 --> 01:06:30,068
+Şimdi ne yapmıştık? Aynı soruyu yine çözeceğiz aslında ama farklı bir veri tipi kullanarak soruyu çözeceğiz.
+
+287
+01:06:30,068 --> 01:06:37,068
+Yani ne demek istiyorum? Bir array oluşturmuştuk. O array'de person pointer'larımız vardı ve o adresler sayesinde onları oluşuyduk.
+
+288
+01:06:37,068 --> 01:06:39,068
+Tamam, bu da bir yöntemdir.
+
+289
+01:06:39,411 --> 01:06:45,411
+Bağlı listeler dediğimizde, linked listler gibi bir kavram vardır. Öncelikle çok kısa şunu soracağım sizlere.
+
+290
+01:06:45,411 --> 01:06:52,411
+Linked list konusunu gördünüz mü? Gördüysek hocam sadece bir giriş yaptık, öyle mi? Yoksa detaylanmasına bayağı işledik mi?
+
+291
+01:06:52,411 --> 01:06:59,411
+Gibi sizden bir geri dönüş alırsam ona göre ben de cümlelerimi veya anlatacağım şeyi ona göre güncellerim.
+
+292
+01:07:00,411 --> 01:07:07,051
+Öyle bir küçük geri dönüş alabilir miyim size? Ne kadar olur linked liste gireli? Girdiyseniz ne kadar işlediniz tahminince falan?
+
+293
+01:07:30,708 --> 01:07:31,588
+Hadi genci olar.
+
+294
+01:07:38,867 --> 01:07:40,779
+Son dersi girmediniz mi yoksa?
+
+295
+01:07:47,380 --> 01:07:53,380
+Son ders yönü sözü biraz giriş yapmamış, online olmuştu ders.
+
+296
+01:07:53,380 --> 01:07:55,380
+Ha, online olmuştu ders.
+
+297
+01:07:56,380 --> 01:07:59,380
+Yani böyle bir giriş yaptı kısaca diye üstüne şöyle bir şey yaptı. Tamam.
+
+298
+01:08:00,380 --> 01:08:10,380
+Zaten bu hafta yine geç çarşamba tatil, yine online ders mi yapar hocam bilmiyorum. Neyse, şunu demeyse, devam eder Linkedlisleri giriş yapmışsa. Ben de...
+
+299
+01:08:10,943 --> 01:08:17,523
+Önceden de biraz görmüş olursunuz, mantığını da bir daha kısaca tekrar etmiş oluruz gibi gibi güzel bir ders olur burada yine.
+
+300
+01:08:18,664 --> 01:08:21,664
+Hemen tekrar ekranımı paylaşayım.
+
+301
+01:08:22,144 --> 01:08:24,344
+Şimdi neydi burada bizden istedi?
+
+302
+01:08:24,344 --> 01:08:26,344
+Bir saniye şey yapayım.
+
+303
+01:08:29,011 --> 01:08:47,011
+Bizden istediği şey neydi? Aynı işlevli, çalışan bilgilerin bir error üzerine değildi. Tamam. Linked list yapı üzerinde kullanarak gerçekleştirilir. Bu verasiyonun her çalışan bir ilgisi Person verisine sahip ayrı bir not ile tutulacaktır. Veri ekleme evresi var, error etabili yöntemleri farklı bir not falan filan filan şeyler tamam okeydir. Şimdi...
+
+304
+01:08:50,452 --> 01:08:52,452
+Linked List kısmına geliyorum.
+
+305
+01:08:52,952 --> 01:08:55,952
+Şimdi Linked List neydi aslında öncelikle?
+
+306
+01:08:56,692 --> 01:08:59,692
+Yani bağlı listeler diyelim.
+
+307
+01:09:00,851 --> 01:09:02,851
+Şöyle bir yapım olduğunu düşünün.
+
+308
+01:09:10,612 --> 01:09:11,372
+kapatlayalım.
+
+309
+01:09:21,844 --> 01:09:22,844
+Next.
+
+310
+01:09:22,844 --> 01:09:23,844
+Diye de.
+
+311
+01:09:23,844 --> 01:09:26,844
+Şimdi biz normalde dinamik bellek kullanılıyor.
+
+312
+01:09:26,844 --> 01:09:29,844
+Herhangi bir bellekte bir şey yaptığımız, Atama işlemi filan.
+
+313
+01:09:29,844 --> 01:09:33,844
+Bir adresten başlar, arka arkaya işlemini yapar.
+
+314
+01:09:33,844 --> 01:09:36,844
+Ve hemen bir sonrakine ulaşmak istediğinde mesela
+
+315
+01:09:37,395 --> 01:10:00,000
+Şeyi de nasıl yapmıştık bir öncekinde? Bir person pointer dizim vardı şurada 1000 nolu adres, 2000 nolu, 3000 noludur. Ben bir tanesine ve herhangi bir sonuç maksini yine bir dizide tutup bunu, şey iyincisi, birincisi, ikincisi, üçüncüsü gibi şekilde o şeylere ulaşabiliyordum. Aynı dizide bulunan elemanlara o şekilde ulaşabiliyordum. Burada da diyor...
+
+316
+01:10:00,000 --> 01:10:25,000
+Ne yapıyorlar ki bu arkadaşlar? Ya ben böyle error şeklinde değil de, bir şöyle buna node diyorlar, bu node yapısı. Bir node'um diyor benim, şöyle iki parçadan oluşsun diyor. Birincisi diyor ben burada ne tarz bir veri saklamak istiyorum? Struct, integer, char, aklına ne geliyorsa. Bu da tabii, tamam verim burada saklansın, infom burada olsun. Burada da diyor ben, işte...
+
+317
+01:10:25,108 --> 01:10:44,068
+Mesela burada kişiler vardı ya mesela o dizi içerisinde kişiler vardı. Ben burada da yine aynı tipte bir şey saklıyorum ya. Yine böyle bir nodum olsun benim diyor. Mesela bu bir tane person'ın nodu, bu başka bir person'ın nodu. Çünkü nodda tutun diyor ya burada her bir person'a bak neredeydi. Person'a ayrı bir nod ile tutulacaktır diyor şurada.
+
+318
+01:10:45,876 --> 01:11:08,036
+Tamam, ben burada ama bu birinci kişiye, ikinci kişiye, üçüncü kişiye nasıl oluşturdum? O dizinin sıfırıncısıydı bu, birincisiydi bu. Peki ben burada mesela bir tane node ulaştığım diyelim buradaki node'a. Ben bir sonraki node'a nasıl ulaştığım? İşte buradaki next olarak adlandırılan yer bir sonraki node'un mesela bunun da adresi saldırıyorum, 2000 olsun yine aynı şey. 2000 olsun.
+
+319
+01:11:08,627 --> 01:11:23,028
+Şu da nodunun adresi. Bu next yerine ben aslında burada 2000 yazıyor burada. Yani bir sonraki nodun adresini saklıyoruz burada linked list kavramında.
+
+320
+01:11:23,028 --> 01:11:31,427
+Yani bağlı listelerin, buradaki bütün nodlar, böyle arka arka bir sürü nod oluşturduğumu düşünün sağa doğru. Bunlar bir bağlı liste.
+
+321
+01:11:34,804 --> 01:11:39,924
+Next olarak adlandırılan kısımda ben bir sonrakinin adresini saklıyorum.
+
+322
+01:11:40,884 --> 01:11:41,344
+Şurada.
+
+323
+01:11:42,584 --> 01:11:44,144
+Yani bu bunu gösteriyor artık.
+
+324
+01:11:44,484 --> 01:11:45,524
+Şimdi buna bağlı liste deneyim.
+
+325
+01:11:45,584 --> 01:11:47,184
+Bunun mesela çeşitli türleri var.
+
+326
+01:11:48,004 --> 01:11:51,824
+Çift bağlı list, döngüsel bağlı list, yani dairesel bağlı list gibi.
+
+327
+01:11:52,004 --> 01:11:54,184
+Ben bunu farklı tepkler, onları daha görürsünün sonrasında.
+
+328
+01:11:54,264 --> 01:11:56,524
+Ama burada tek yönlü bir bağlı list düşünelim.
+
+329
+01:11:56,524 --> 01:12:01,324
+Yani sağdaki bu Next olarak adlandırdığımız şu kısım.
+
+330
+01:12:04,819 --> 01:12:07,699
+Next olarak adlandırdığımız şu kısım ne yapıyor?
+
+331
+01:12:08,083 --> 01:12:15,963
+Alabilirsem inşallah. Ne yapıyor? İçinde sakladığı değer bir sonraki nodun adresini saklıyor.
+
+332
+01:12:15,963 --> 01:12:24,564
+Yani ben böyle bu şekilde, burada nasıl dizinin sıfırıncı elemanı, birinci, üçüncü, dördüncü gidiyorum ya. Burada da nodlara da işte, bu benim başlangıç nodum olsun.
+
+333
+01:12:24,984 --> 01:12:30,344
+İşte bunun değeri burada zaten okuyor. Peki ikinci yere nasıl gideceğim? İşte bunun nextine git diyeceğim.
+
+334
+01:12:30,463 --> 01:12:36,083
+Yani nextine git ne demek? Şuradaki adrese git demek aslında kabaca. Ama şekilsel anlamda bu şekil.
+
+335
+01:12:36,083 --> 01:12:59,844
+link de siz bağlı listeler. Bu işin avantajı ne peki normal array'e göre? Ne demişim ben? Array'de bunlar hep sırayla saklanır ya, sıfırıncı bir, böyle arka arkaya. Burada illa bunlar sıralı olmak zorunda değil. Gidip bu sekiz birinci yerde saklanır, bu birinci yerde saklanır. Ben nasıl olsa adresini bildiğim için bu link bellek de istediği yerde ulaşabiliyor. Dinamik şey tarafından.
+
+336
+01:13:00,595 --> 01:13:12,935
+İlla arka arkaya gelmelerine gerek yok. Ben nasıl olsa adresini biliyorum. Sen nereye saklanırsan saklan, ben senin bilginin, lokasyonu bildiğim için hemen seni bulabilirim diyorsun burada. Linkedlis'in böyle bir avantajı var burada. Tamam.
+
+337
+01:13:14,075 --> 01:13:23,935
+Şimdi zaten şu person ve neden ona, job'da bir farklılık yok, struct tipinde. Şimdi burada ben artık bir...
+
+338
+01:13:24,243 --> 01:13:28,724
+Dizi saklamıyorum. Biz burada ne yapmıştık? Person chip pointer kullanmıştık şurada.
+
+339
+01:13:30,003 --> 01:13:34,643
+Neden? Çünkü ben bir dizi oluşturmuştum ve dizimin içinden person pointer'lar vardı.
+
+340
+01:13:35,103 --> 01:13:40,743
+Ancak burada ben bir node oluşturuyorum. Şöyle tekin node'lar. Nereye gitti o? Şöyle tekin node'lar oluşturuyorum.
+
+341
+01:13:41,123 --> 01:13:44,243
+Bunları ben ayrı bir dizide tutmadığım için...
+
+342
+01:13:44,916 --> 01:13:55,636
+Şu an chip pointer ile oluşturmama gerek. Zaten ben bunları next ile istediğim kaçıncı eleman kadar ulaşabilirim. O yüzden direkt person pointer şeklinde bir şey oluşturmam yeterlidir.
+
+343
+01:13:55,636 --> 01:14:02,916
+Daha sonra next ile gidip o notta zaten ulaşabilirim. Bir daha ekstra bir pointer yapmama gerek yok.
+
+344
+01:14:03,252 --> 01:14:29,051
+Ve daha sonra ben next ile ulaşıyorum ya burada. Ancak bu next içinde tamam adres tutuyor doğru. Yani bir pointer şeklinde. Ama neyin pointer? Yani neyin, yani o adrese gittiğimde ben ne görüyorum? Ne tarz bir veri görüyorum? Bir node yapısı görüyorum. Yani bir struct yapısı görüyorum. Onun adresini ben burada tutuyorum. O yüzden benim de pointer'ım ne tipinde olmalı? Struct node tipinde olmalı. Yani şu, kendisi tipinde.
+
+345
+01:14:29,555 --> 01:14:56,376
+Kendi içinde kendi tipine bir şey oluşturuyorum. Görüyorsunuz? Struct'ın avantajlarından biri de bu yani. İstediğin tür veride kendi de dahil olmak üzere onun pointer oluşturur. Kendi içinde bir daha aynı tipte veri oluşturabilirim. Struct'tan böyle güzel bir avantajı var. Tamam. Anladık değil mi burada? Yani ilk şu data dediğimiz kısımda ben aslında person tutuyorum. Person'ın adresi aslında burada. Person pointer da o ulaşmak istediğim kişinin adresini tutuyorum.
+
+346
+01:14:58,292 --> 01:15:19,292
+Burada da onun işte bir sonraki struct'ın diğer adresini istiyorum. Next dedi. Tamam. Güzel, hoştur. Aynı yere geri geliyorum şimdi. Benim bu klasik bir menüm vardı. Şurada job name, name, new person'ım da vardı zaten. Bir kişi oluşturmak istediğim. Şimdi burada...
+
+347
+01:15:19,764 --> 01:15:26,984
+Head diye bir kavram var arkadaşlar. Bu isim değişebilir tabii de genel klasik hep aynı kullanıldığı için söylüyorum. Head ne demek istiyorum?
+
+348
+01:15:28,064 --> 01:15:40,504
+Şimdi, biz dizilerde ne yapıyorduk? Bir dizinin olduğunu ben biliyordum. Bunu dinamik bellek 0.sı dediğimde ben biliyordum ki bu dizinin ilk elemanına gidecek.
+
+349
+01:15:41,076 --> 01:15:54,076
+Ancak ben notlar aslında oluşunda birbirinden bağımsız oluşuyor diyordum. Ve daha sonra ben aslında içinde değer atama yaparak arka planda bağlıyorum. Yani burayı bir sonraki oluşan adresini atadığımda bağlamış oluyorum. Ancak...
+
+350
+01:15:54,484 --> 01:16:02,084
+Şu ilk eleman, yani bu linked bağlı liste dediğimiz ilk elemanın da adresini ben bir şekilde tutmam lazım.
+
+351
+01:16:02,463 --> 01:16:04,283
+Yani benim başlangıcım burada hemen lazım.
+
+352
+01:16:04,564 --> 01:16:12,123
+Burada dizi sıfır, diyorduk ya, ben burada da bunun sıfırıncısını işaret eden bir geçici bir değişken tutuyorum.
+
+353
+01:16:12,463 --> 01:16:14,504
+Head diye bir değişken, yani pointer daha doğrusu.
+
+354
+01:16:15,344 --> 01:16:16,703
+Şuraya yazayım, head diye.
+
+355
+01:16:18,324 --> 01:16:19,664
+Bu da bir pointer aslında.
+
+356
+01:16:20,564 --> 01:16:28,764
+ve node tipine. Ben sonuçta bu pointer neyin adresini gösterecek? Şu node'un, node adlı struct'un adresini, yani şurayı.
+
+357
+01:16:28,764 --> 01:16:37,963
+Başlangıcını. Bu head pointer'ım, ilk oluşturacağım, şu an bomboş her şey.
+
+358
+01:16:37,984 --> 01:17:05,404
+oluşturacağım bu linked list'in bağlarında ilk elemanı geliyorum. Benim başı kaybetmemem gerekiyor. Çünkü ben sonraki elemanlara gidebilmem için başı bilsem yeter bana. Next, next, next deyip gidebilirim. Ama bu başı bilmem gerekiyor. O başı kaybetmeyeyim diye bir tane head diye bir pointer oluşturuyorum. Ki bu başı göstersin. Daha sonra ben artık ne taze işlemleri yapacaksam next deyip, öncesi sonrası deyip ama o başı kaybetmemem gerekiyor. Bu da anlaşılmıştır. Önce NULLY şıkıyorum. Şu an boş.
+
+359
+01:17:06,836 --> 01:17:33,836
+Tamam, bu güzel abimiz yine ne istiyor? Eklem, arama falan filan, intermilen, tamam. Klasik aynı menü zaten. Şimdi init new person ile ne yapıyorduk biz? O new person ile biz hani ne yapmıştık bir öncekinde? O structta kişilerin bilgilerini doldurmuştuk. Değil mi? Person ile malloc ile yer açıp işte new person'ın ismi bu, iş ismi bu, işte strcpy ile...
+
+360
+01:17:35,252 --> 01:17:42,752
+Aynı şeyleri sırayla kopyalamış gibi gibi. Bu new person oluşturmayı zaten şurada görmüştüm. Burada bir farklılık yok. Kişiyi oluşturuyor.
+
+361
+01:17:42,752 --> 01:17:49,752
+Ama önemli olan neydi? Şimdi o new person oluşturduktan sonra ben bir öncekinden ne yapıyordum? Database ekleme vardı. Bak new person aynı şey.
+
+362
+01:17:49,752 --> 01:17:58,052
+Ama burada gördüğünüz gibi bir database ekleme kısmı vardı. Şimdi burada ise iki kısım var. Bunu iki kısımda göstermiyoruz. Bir add new.
+
+363
+01:17:58,996 --> 01:18:03,996
+Bir de add new last. Normalde biz database'de ne yapıyorduk? Direkt sona ekliyorduk.
+
+364
+01:18:03,996 --> 01:18:11,996
+Ekle, sonra database'i bir arttır. Ekle, bir arttır yapıyorduk. Her yeni gelen ama en sona ekleniyordu.
+
+365
+01:18:11,996 --> 01:18:18,996
+Ancak linked liste şunu da yapabiliriz. Aslında dizide de yapabiliriz de, sadece çeşidi olarak göstermek amacıyla yazıyoruz.
+
+366
+01:18:18,996 --> 01:18:26,507
+Bir başa ekleme var bu add new diye. Bir de son anlatacağım, add new last var. Yani sona ekleme gibi. Önce başa ekleme yapalım.
+
+367
+01:18:28,275 --> 01:18:32,275
+Şimdi burada, ben ne göndermiştim, add new'de?
+
+368
+01:18:34,275 --> 01:18:42,275
+Heed, yani şu, node pointer şeklinde, yani struct'ın adresini tutacak şekilde bir head göndermiştim.
+
+369
+01:18:42,275 --> 01:18:45,275
+Bunun adresini göndermem gerekiyor. Tamam.
+
+370
+01:18:47,923 --> 01:18:53,923
+Onun adresini, şimdi not pointer şeklinde gönderdiğim için, bir de onun adresini gönderdiğim için aslında çift pointer ile tutmam gerekiyor.
+
+371
+01:18:53,923 --> 01:19:00,923
+Onun da çift pointer'ın yine sebebini, ben tamam, hid ile ulaşıyorum ama sonuçta...
+
+372
+01:19:01,492 --> 01:19:09,932
+Yani şunu çift yine yapı olarak düşünüyorum. Aynı burada nasıl bunlar bir adres, adresin içinde aslında bir yeri işaret ediyordu. O yüzden çift pointer ile yapıyordum.
+
+373
+01:19:09,932 --> 01:19:19,192
+Tamam, bu da bir adresi ifade ediyorum. O per, yani şuradaki person adresini. Ama onun da sonuçta bir yere gideceği bir yer var. O yüzden çift pointer ile bunu alıyorum. Tamam.
+
+374
+01:19:20,412 --> 01:19:24,271
+Şimdi burada nodumu oluşturuyorum. Bir tane nod oluşturuyorum. Burada ne yapıyorum?
+
+375
+01:19:24,979 --> 01:19:30,679
+Dinamik bellek de, şu iki alan için yer açıyor. Person pointer ve struct node pointer diye. Tamam.
+
+376
+01:19:30,679 --> 01:19:49,739
+Neredesin? Tamam. New node'umu oluşturdum. Şimdi new node'umu person'una, ben, yani new node ne demekti burada? Şu oluşturduğum yeni node'una. Bu gelecek kişinin adresini atıyorum. Yani ben normal bir person oluşturmuştum ya, şu yukarıda.
+
+377
+01:19:51,764 --> 01:19:59,144
+init new person struct tipinde. O kişiyi oluşturmuştum. Onun adresini artık buraya atabıyorum. Bu person alanındaki.
+
+378
+01:19:59,144 --> 01:20:10,884
+Yani benim şuradaki alanıma ne gelsin? 1000 gelsin, karışır. 1500 olsun. Şu an sallama sürem. Bu person'ı sakladım. Bellekteki sakladım. Alanın değeri geliyor. Şurada person yazalım.
+
+379
+01:20:12,020 --> 01:20:29,900
+Daha net anlaşılsın, person diye. Yani ben o kişiyi bellekle, nerede saklıyorsam, o init new person fonksiyonum vardı ya, o sonuçta kişiye oluşturduğunda bir adres dönüyordu. O adresi gel buraya yazıyorum. Ben artık o kişiye ulaşmak istediğimde person yerine girip adresinden onun bilgileriyle artık bir şey yapmak istiyorsam ulaşabilirim. Tamam, süper.
+
+380
+01:20:39,347 --> 01:21:02,768
+Normalde neydi? Benim new node next'im vardı ya, şu beni neyi göstersin diyordum. Şu an başka bir node olmadığı için null'ı göstermesin. Çünkü şu an boş. Bu zaten null dönmüş. Nerede oluşturmuştum ben? Şurada oluşturmuştum. Head null diye. Daha sonra ben bu head ile ilgili bir işlem yapmadım. O yüzden null gitti oraya. Şu an zaten null olmasın. Çünkü başka bir değer yok.
+
+381
+01:21:08,532 --> 01:21:17,532
+Şimdi artık, şöyle başa alayım, new nodumun next'i. Şu an başka bir değer yok, başka bir nod oluşturdu. Şu yok şu an.
+
+382
+01:21:17,532 --> 01:21:19,532
+Şunu silebiliyor muyuz?
+
+383
+01:21:19,532 --> 01:21:26,532
+Şu an kafamız karışmasın şimdi, sanki iki tane varmış gibi. Şu an bir tane nod oluşturdum, şunu da silelim.
+
+384
+01:21:26,532 --> 01:21:29,532
+Ve buraya nal değerini ekledim.
+
+385
+01:21:29,532 --> 01:21:34,532
+Naldan nereden biliyorum?
+
+386
+01:21:35,060 --> 01:21:38,239
+Head şu an bir şeyi göstermediği için burayı nala ekledim. Tamam.
+
+387
+01:21:39,560 --> 01:21:43,860
+Ve daha sonra diyorum ki artık Head'imi, bu buradaydı ya, artık bunu göstermem gerekiyor.
+
+388
+01:21:43,960 --> 01:21:50,280
+Bak, Head, sen artık şunun değerini tut. Burayı göster. Birinci linked listimi göster diyorum.
+
+389
+01:21:50,640 --> 01:21:55,940
+O yüzden de ne yapıyorum? New Note, bu böyle demek ne demek? Aslında bunun başlangıç adresidir aslında bu New Note.
+
+390
+01:21:57,880 --> 01:22:01,420
+Head'imin ilk göstereceği değere git.
+
+391
+01:22:02,452 --> 01:22:29,291
+Eşitte yani. Yani benim headim chief pointer'lıydı ya. Head'i ben bir kere yıldız yaparsam ne olur? Bir tane ilk gidece adresindeki değer demektir. O nereye yap diyorum? New node'umun, yeni oluşturduğum şu node'un adresini eşitlediyorum. Artık ne oldu? Bak gördüğünüz gibi. Head'i ben artık oluşturduğum ilk node eşitledim. Süper. Bir tane node'umu oluşturdu. Peki. Hocam ben bunu ekledim.
+
+392
+01:22:30,131 --> 01:22:33,511
+Tamam, güzel, iyi, hoş. Bir tane daha ekleseydin mesela.
+
+393
+01:22:34,351 --> 01:22:35,511
+Ne olacaktı?
+
+394
+01:22:35,771 --> 01:22:37,051
+Bir daha ekleyelim.
+
+395
+01:22:38,572 --> 01:22:42,171
+Oradaki bazı karnamlar daha net anlaşılır. Yine başa ekleyelim ama.
+
+396
+01:22:42,171 --> 01:22:47,791
+Silelim.
+
+397
+01:22:47,791 --> 01:22:52,412
+Şurayı bir daha silelim, kafamız karışmasın. Zaten baş kısmını anladık neden onu.
+
+398
+01:22:53,691 --> 01:22:55,471
+Şunları tek olarak sileyim.
+
+399
+01:23:04,916 --> 01:23:24,716
+Head'im dursun, head'i şöyle başa alalım ki gösterin. Şimdi ben bir ne yapmıştım? Şöyle bir node oluşturmuştum değil mi? Bu birinci node. Şimdi ben bir node daha oluşturuyorum.
+
+400
+01:23:28,404 --> 01:23:33,604
+Şöyle olsun. Şimdi bu nereye gösteriyordu? Bu buraya gösteriyordu. Hate değişkenim az önce.
+
+401
+01:23:35,684 --> 01:23:37,524
+Nexo şurasının naldı şu an.
+
+402
+01:23:42,579 --> 01:23:59,180
+Burada da bir tane person 0.sı artık neyse başka bir person bir şey tutuyor. Benim ilk oluşturdum person adresini tutuyor. Neyse. Şimdi ben bir şey daha oluşturdum. Şöyle person tipine bir not daha oluşturdum. Ama ben burada ne yapmak istiyorum mesela?
+
+403
+01:23:59,539 --> 01:24:13,079
+Bu ilke eklenmek, yani başa eklenmek. Başa eklediğimizde ne yapıyorduk biz burada? Tamam, person, new person şeyini eşitliyorduk. Yani şuradaki şey ne eklenecek? İşte benim oluşturduğum kişinin adresi eklenecek. Tamam, bunda sıkıntı yok.
+
+404
+01:24:14,039 --> 01:24:26,899
+Peki benim ne yapmam lazım başa artık bunu geçtirmem için? New node'un next'i, new node'un benimlemiyor, şunun next'i.
+
+405
+01:24:27,380 --> 01:24:29,380
+Değil mi? Şuradaki next.
+
+406
+01:24:32,979 --> 01:24:46,979
+Şimdi ben bunu başa aldığımdan ne olması lazım arkadaşlar? Aslında şu yapı var ya, buraya gelmesi lazım değil mi? Bak bunu ben başa aldım. Normalde böyleydik. Yeni bir node ekledim ama ben bunu başa gelmesini istiyorum.
+
+407
+01:24:46,979 --> 01:24:56,555
+Yani olayın şöyle çözülmesini istiyorum ama şu an şu oku alabilirsem. Neyse oku şu an şey yapmıyorum. Aslında bu head şu an hala burada. Şu an ekledim ama.
+
+408
+01:24:56,756 --> 01:25:23,296
+Şu an böyle. Peki ben ne yapabilirim ki bunun başta olduğunu gösterebilirim? İki şey yapmamız lazım. Birincisi, bu linked list yapısında neydi? Başta olanın next'i bir sonrakini göstermeli değil mi? O zaman ben önce diyeceğim ki, buranın next'ine şunun adresini atar. Ama şu an ben bunun adresini nerede saklıyorum? Bak şu an head'i hala değiştirmedim. Head de saklıyorum. Head buraya gösteriyor ya. O zaman ben buna diyorum ki, bu new node'un next'i, head eşitti.
+
+409
+01:25:24,307 --> 01:25:28,987
+Head'e eşitleyince ne oluyor? Artık burası mesela 2000 adresi olsun diyelim. 2000 diyelim şöyle.
+
+410
+01:25:30,268 --> 01:25:34,268
+Burası artık 2000'i gösterecek. Bak, 2000'u şu an bağladım.
+
+411
+01:25:34,827 --> 01:25:41,067
+Ama şu an hala Head burayı gösteriyor. Tamam, artık ben ne yapacağım? Şuradaki oku geleceğim, burayı alacağım.
+
+412
+01:25:42,268 --> 01:25:47,987
+Onda da ne yapmam lazım? Head'in gösterdiği değer artık ne olacak? Nimload'un adresi olacak.
+
+413
+01:25:48,387 --> 01:25:49,907
+Gördüğünüz gibi şuradaki...
+
+414
+01:25:50,260 --> 01:25:54,980
+Şey artık silinmiş olacak.
+
+415
+01:25:56,900 --> 01:25:59,220
+Ve artık head burayı göstermiş olacak.
+
+416
+01:25:59,220 --> 01:26:00,980
+Gördünüz mü? İki aşama var şimdi.
+
+417
+01:26:00,980 --> 01:26:05,140
+Head'i en son her zaman işlem hakkında. Çünkü bu head'i kaybetmememiz lazım.
+
+418
+01:26:05,140 --> 01:26:09,300
+Önce node'um buydu. Head burayı gösteriyordu.
+
+419
+01:26:09,652 --> 01:26:35,012
+İlk oluşturduğum düğüm. Daha sonra ikinci düğümü ekliyorum. Ama neyle ekliyorum? Sona ekliyorum. Sona eklediğinde ne oluyor? Bizim Linked List'teki yapımız neydi? Şuradaki next'im benim. Bir sonraki düğümü göstermeli. Tamam ben bu bir sonraki düğümü göstereyim ama ben bunun adresini nereden biliyorum? Şu an bunun adresini tutan tek yer head değişkeni. O zaman diyorum ki headdeki değeri al. Yani yıllıs head dediğimde değeri al.
+
+420
+01:26:35,475 --> 01:27:00,315
+Benim bunun next'imi eşitle. Tamam, eşitledim. Bu önceki gibi gözüküyor ama ben sonuçta bir şeyin başı olarak gösterdiğim bu head değişikliğini de güncellemem gerekiyor. Belki arkipiranda sen bunun yerlerini değiştirdin ama head hala bunu gösteriyor. Yanlış, o zaman gitti. Head'i de bu yeni oluşturduğunun adresiyle eşleştiriyorum ve bu şekilde add new'de başta ekleme yapmış oluyorum. Tamam, gayet güzel.
+
+421
+01:27:02,315 --> 01:27:03,019
+Şimdi...
+
+422
+01:27:04,404 --> 01:27:06,404
+Son eklemek istesem.
+
+423
+01:27:08,404 --> 01:27:10,404
+Yani ne demek istiyorum?
+
+424
+01:27:11,404 --> 01:27:14,404
+Şunu silelim, tekrar başa alalım.
+
+425
+01:27:25,587 --> 01:27:27,967
+Şimdi benim şöyle bir şeyim vardı.
+
+426
+01:27:29,188 --> 01:27:31,807
+Nodum vardı. Bu ilk oluşturduğum nod.
+
+427
+01:27:33,688 --> 01:27:35,188
+Bu head de bunu gösteriyordu.
+
+428
+01:27:36,087 --> 01:27:38,188
+Tamam. Şimdi ben başka bir nod ekliyorum.
+
+429
+01:27:43,220 --> 01:28:06,100
+Ve bunun şunu göstermesini sağlamam lazım. Değil mi? Peki ne yapabilirim? Şimdi nodumu oluşturdum. Bu nodunun person kısmı oluşturdum. Bu yeni person. Ve eşleştiriyorum. Ve nextine, sonuçta bu sona geldiği için, şu an bu son nod olduğu için, bunun next olarak adlandırdığımız yerde null olması lazım.
+
+430
+01:28:06,100 --> 01:28:07,760
+Mükemmel bir null.
+
+431
+01:28:09,876 --> 01:28:15,695
+Burada null göstermez. Bu son olduğunu anlıyoruz. Çünkü mesela bunu liste elemede göreceksiniz.
+
+432
+01:28:16,076 --> 01:28:22,536
+Linked listleri aramaya başladığımda şunu diyeceğiz. En son ki node'u, next'u, null ise olana kadar guess.
+
+433
+01:28:22,935 --> 01:28:29,716
+Bütün listeyi demek istiyorum. Bu yüzden bu linked listin son elemanı olduğunu göstermek için next kısmından anlatıyorum.
+
+434
+01:28:30,596 --> 01:28:30,855
+Tamam.
+
+435
+01:28:32,435 --> 01:28:33,736
+Şimdi şöyle bir kontrol yapıyoruz.
+
+436
+01:28:34,323 --> 01:29:01,683
+Son ekleme yapıyoruz. Bu aslında baş eklemede de bu kontrol yapılabilir. O an hani şeyde başka node yoksa yani hani head değişkenli şu an null eklemesi yapılmadıysa artık bu yeni nodum baş nodum olsun gibi bir şey yapabiliriz. O çok dert değil. Böyle bir şey de yapıyoruz burada. Hani bu eklediğim node eğer başka bir node yoksa ilk node ise hani head burayı göster şeklinde yapıyoruz. Tamam.
+
+437
+01:29:03,412 --> 01:29:23,412
+Eğer değilse, tamam yani artık içeride demek ki başka notlar var. Şimdi ben, demiştim ya şeyi gezmem lazım. Sondaki yeri bulmam lazım. Daha hani nasıl gideceğiz, böyle gezecek. Şimdi şöyle hatta anlaşılması için bir not daha, iki üç not daha ekleyeyim şöyle.
+
+438
+01:29:26,412 --> 01:29:27,912
+Şöyle not ekleyeyim bir sürü.
+
+439
+01:29:29,811 --> 01:29:31,492
+Şuradaki nalı da sileyim.
+
+440
+01:29:37,524 --> 01:29:39,524
+Ya, abu şeymiş ya.
+
+441
+01:29:46,963 --> 01:29:47,963
+Şimdi, spaya.
+
+442
+01:29:51,380 --> 01:30:01,619
+Böyle bir üsünün node var olduğunu zaten düşünün. Bu da şöyle gelsin, şöyle. Bu da böyle. Şimdi yeni node eklenecek ya, buraya en son ekleyeceğim.
+
+443
+01:30:01,619 --> 01:30:06,500
+Şimdi benim ne yapmam lazım? Önce şurasının aldı zaten. Önceden daha eklenmedi. Şurasının aldı.
+
+444
+01:30:10,323 --> 01:30:13,623
+En son nodum bu. Bunu ekleyip listeyi güncellemem gerekiyor.
+
+445
+01:30:14,203 --> 01:30:18,343
+Ben diyorum ki, while ile, şimdi head'i bırakmamak için.
+
+446
+01:30:18,343 --> 01:30:21,663
+Ben normalde head ile geçip başlangıcı nodumu head'de biliyorum ya.
+
+447
+01:30:21,663 --> 01:30:26,523
+Ancak ben head ile hani neksin neksine git git dersem, head'i kaybedebilirim.
+
+448
+01:30:26,564 --> 01:30:30,384
+O yüzden head'i geçici bir değişken olan körüntü eşitliyorum.
+
+449
+01:30:30,644 --> 01:30:33,523
+Hani arama, dizide arama yaparken temp gibi düşündüm bunu körüntü.
+
+450
+01:30:34,163 --> 01:30:37,463
+Hani ana yeri kaçırmayayım, ana yer burada dursun. Ben Q onut da gezeyim.
+
+451
+01:30:38,452 --> 01:31:03,272
+Tamam, current'ın herhangi bir nodu işaretliyor bu current. Herhangi bir nodun next'in null olana kadar bütün listeyi gez. Bak, bununkin null mı değil, burayı gösteriyor. Bununkin null mı değil, bunu gösteriyor. Bununkin null mı? Evet, null. Tamam, listenin sonuna geldim. Current burada şu an. Daha sonra ben diyorum ki, current'ın null olana kadar göz...
+
+452
+01:31:03,380 --> 01:31:13,380
+Bu şekilde current, current'ın next olacak şekilde diziyi geziyorum. Yani hani current normalde burayı gösteriyordu ya, daha sonra current'ın bu şeye geçmesi için bunun next'ine geçmesi lazım.
+
+453
+01:31:13,380 --> 01:31:26,380
+Yani current eşittir, current next oluyor. Current bunun next'ine geçmesin, current eşittir, current next oluyor şeklinde bu temp değişkeni sürekli geziyorum. Tamam, sona geldim mi? Geldim. Artık diyorum ki current'ın next'i yani ben şuradayım ya.
+
+454
+01:31:27,667 --> 01:31:35,667
+Bu Null'du ya, Null'a kadar geziyordum. Artık bunun Next'i, arkadaşlar benim şurada oluşturduğum New Node'dur artık. New Node'un adresidir.
+
+455
+01:31:35,667 --> 01:31:39,667
+Yani ne yapmış oluyorum artık? Bunu burada artık Null değil.
+
+456
+01:31:43,891 --> 01:31:46,591
+Artık bunun adresi neyse bin olsun.
+
+457
+01:31:48,811 --> 01:31:49,971
+Bin yaptık.
+
+458
+01:31:50,951 --> 01:31:51,991
+Artık burada bin yazıyor.
+
+459
+01:31:52,531 --> 01:31:53,311
+Bini tutuyor burada.
+
+460
+01:31:55,311 --> 01:31:56,031
+Anlaşıldı mı?
+
+461
+01:31:56,111 --> 01:31:59,991
+Yani benim bu zamankadır 4 tane nodum olduğunu düşünün burada.
+
+462
+01:32:00,211 --> 01:32:01,692
+Normalde burada null yazıyordu.
+
+463
+01:32:01,771 --> 01:32:02,931
+Bu son eleman olduğu için.
+
+464
+01:32:04,500 --> 01:32:30,420
+Listeyi gezmem gerekiyor. Normalde head ile ben başlangıç adresini söylüyorum. Burada normalde nextNest deyip gezebilirim. Ancak ben head'i kaybedebilirim ve geri dönemem. Sonuçta ben head'i buraya getirdiğimi düşünün. Eee ben başa nasıl geri döneceğim? Bunun bir öncekini tutan bir bilgim yok ki. Head'i kaybetmiş olacağım. O yüzden head dursun. Temp değişkenliyle ben bu aramayı yapayım. Tamam başlıyorum burada. Current'ın next'i null değil mi? Değil. O zaman artık current eşit de current next. Current buraya geldi.
+
+465
+01:32:31,252 --> 01:32:57,212
+NULL mı? Değil. Bir next'e geç. Değil mi? Bir next'e geç. Geldim buraya. NULL mı? NULL. Hoppala. Geldik sona. Tamam artık ne yapıyorum? Artık sen Current Next'in NULL'ı gösterme. Yeni oluşturduğum node'un adresini göster diyorum ve böylece yeni oluşturduğum node'u bağlı olduğum linked list'e bağlıyorum. Ve bunun sonunda NULL'a eşitliyorum. Böylece son ad eklemeyi yapmış oluyoruz. Linked list'e. Tamam.
+
+466
+01:32:59,123 --> 01:33:07,204
+eklemiş olduk böylece. Yine kişi bazı bir arama yapalım mesela. Search ile.
+
+467
+01:33:10,996 --> 01:33:13,456
+Yine head değişkenim var benim.
+
+468
+01:33:13,536 --> 01:33:15,636
+Şeydeki head değişkenim.
+
+469
+01:33:15,956 --> 01:33:16,816
+Başlangıç şeydeki.
+
+470
+01:33:17,056 --> 01:33:18,456
+Bunu yeni bir current atıyorum.
+
+471
+01:33:18,556 --> 01:33:19,436
+Head'i kaybetmeyeyim.
+
+472
+01:33:20,136 --> 01:33:21,496
+Çünkü sadece arama yapıyorum burada.
+
+473
+01:33:21,876 --> 01:33:25,756
+Bir değiştirme, bir atama işlemi, bir arama yapıyorum.
+
+474
+01:33:25,856 --> 01:33:26,336
+Var mı? Yok.
+
+475
+01:33:28,076 --> 01:33:28,396
+Tamam.
+
+476
+01:33:29,276 --> 01:33:30,596
+Ne yapıyorum bu current ile?
+
+477
+01:33:30,596 --> 01:33:32,596
+Şimdi current...
+
+478
+01:33:33,332 --> 01:33:41,672
+Ne olmayana kadar devam ekleyeceğim burada. Yani böyle bir not şeyi var olduğu sürece o notdaki şeyler arayacağım.
+
+479
+01:33:41,672 --> 01:33:48,212
+İsimleri arayacağım. Yani current'a geldim. Current bir person alanı vardı. Neredeydi? Şurada.
+
+480
+01:33:48,212 --> 01:33:55,332
+Bir person alanı vardı. O person'a neydi? Person pointer'dı. Person pointer ile gideceğim. Buradaki name'i alacağım.
+
+481
+01:33:55,332 --> 01:33:58,731
+Neredeydi? Şurada.
+
+482
+01:33:58,899 --> 01:34:06,199
+C programlama dili. Person'a gittim, adresine gittim. O adresi buldum. O adresiyle gittim.
+
+483
+01:34:06,199 --> 01:34:18,699
+Olma struct'ına gittim. Oradaki ismi buldum. O ismiyle bu fonksiyonumu satılarsanız bir önceki şeyde de anlatmıştı. Karşılaştırma yapıyordu. Stringlerim. Eğer eşleşme varsa tamam. Arkadaşlar bunu bulduk.
+
+484
+01:34:22,420 --> 01:34:27,239
+Direkt o gönderdiğim kişinin adını soyadan ne şeysi varsa yazdırıyordu.
+
+485
+01:34:28,020 --> 01:34:42,680
+Tamam, bu da güzel. Yani birinde gördüğünüz gibi arkadaşlar, database arama yaparken hani o i, i, j anlamda diyorum yani index anan, o ona eşit mi diye bakıyorduk. Burada da nodları geziyoruz. Var mı böyle birisi diye.
+
+486
+01:34:44,800 --> 01:34:46,619
+Sadece farklı bir yapı, gezme işlemi aynı.
+
+487
+01:34:48,404 --> 01:35:13,804
+Name'i bulduk. Tamam, şimdi yine en önemli kısım, yine dediğim gibi delete kısmı. Delete person dediğimiz, yani o şeyi silmemiz gerekiyor. Kişiyi, nodu, şudur, budur. Delete person'a geliyorum. Şimdi burada önemli olan şey şu. Biz şeyde ne yapmıştık? Yeni bir tane oluşturabiliyor muyum? Açıklama değil de.
+
+488
+01:35:16,372 --> 01:35:17,372
+Bir saniye.
+
+489
+01:35:17,372 --> 01:35:23,372
+Bir daha sileyim o zaman. Sürekli sil sil şey yapmak istemiyorum da yine açabiliyor muyum diye baktım. Neyse sileyim.
+
+490
+01:35:35,859 --> 01:35:44,179
+Şimdi benim şöyle modlarım olduğunu düşünüyor yine. Şekil ekleyebiliyorum bir saniye.
+
+491
+01:35:44,179 --> 01:36:01,539
+Kare olabilir. Bir de bakayım. Ha böyle daha geliyor. Şu birinci modum olsun. Şu ikinci modum olsun. Şu üç olsun. Şu dört olsun.
+
+492
+01:36:02,804 --> 01:36:05,804
+Bu da beş tane nodum var benim, tamam mı?
+
+493
+01:36:18,996 --> 01:36:22,996
+Çünkü ben örneğin, şu elemanı silmek istiyorum.
+
+494
+01:36:24,055 --> 01:36:27,036
+Tamam, şu nottaki adresi şunlar da birbirine bağlı.
+
+495
+01:36:31,923 --> 01:36:36,423
+Şuna baktım. Bu da şuna baktım.
+
+496
+01:36:39,604 --> 01:36:43,963
+Şimdi ben bu elemanı silmek istiyorum. Şimdi kesinlikle yine dediğim gibi kaybetmeyeceğim.
+
+497
+01:36:43,963 --> 01:36:45,884
+Bu head buraya gösteriyor. Current ile bunu arayacağım.
+
+498
+01:36:48,104 --> 01:36:48,484
+Neyse.
+
+499
+01:36:49,644 --> 01:36:51,724
+Bir de previous diye bir şey var.
+
+500
+01:36:52,364 --> 01:36:53,844
+Bu previous'i neden kullanıyorum?
+
+501
+01:36:55,344 --> 01:36:55,963
+Şimdi biz...
+
+502
+01:36:56,787 --> 01:37:02,787
+database'de olan kısımda ne yapmıştık? O elemanı bulmuştuk. Daha sonra ne yapmıştık?
+
+503
+01:37:02,787 --> 01:37:10,787
+Sonraki, öncekini atama yapmıştık. Mesela ikinci elemanı silmiştik orada da. Üçüncü eleman artık 2'yi göstersin.
+
+504
+01:37:10,787 --> 01:37:16,787
+Dörtte 3'ü göstersin. Öndekini geri almıştık. Ama şimdi burada direkt öndekini geri almışım.
+
+505
+01:37:18,127 --> 01:37:21,768
+Orada direkt, sonuçta indeksini biliyordum, direkt atama yapabiliyordum.
+
+506
+01:37:21,908 --> 01:37:23,667
+İ'si, i artı bir eşit olsun diye böyle.
+
+507
+01:37:23,707 --> 01:37:24,587
+Ama burada öyle değil.
+
+508
+01:37:24,927 --> 01:37:30,988
+Burada mecburen ben işaretçilerle önceki ve son neyi tutmam gerekiyor.
+
+509
+01:37:31,288 --> 01:37:33,688
+Yani önceki not bu, sonraki not bu şeklinde.
+
+510
+01:37:34,127 --> 01:37:37,887
+Tutacağım ki, atama işlemi yaptığımda işte current'ı previous atayacağım.
+
+511
+01:37:38,007 --> 01:37:38,547
+Onu buna atın.
+
+512
+01:37:38,587 --> 01:37:40,148
+Yani sonrakine, öncekine atayacağım.
+
+513
+01:37:40,467 --> 01:37:42,127
+Gibi bir fark var burada LinkedListe.
+
+514
+01:37:42,996 --> 01:37:47,036
+Tamam, burada ne demek istiyorum? Current şu an heady gösteresin ve previous'de null olsun şu an.
+
+515
+01:37:47,396 --> 01:38:04,436
+Tamam. Şimdi ben burada şunu yapıyorum. Current'dan olmayana kadar, yani son boş not, olmayan bir not bulmayana kadar ve eşit olana kadar şeyi döndür.
+
+516
+01:38:07,155 --> 01:38:08,876
+While'i döndür. Yani ne demek istiyorum?
+
+517
+01:38:10,355 --> 01:38:27,211
+Şimdi karşılaştırma yapacağımı, current burada, previous null şuan. Şeye bakıyor current, böyle bir nerede o? Current'ın person name'i şuradaki name'i eşit mi? Pardon. Değil. O zaman current buraya geldi şuan. C burada.
+
+518
+01:38:27,252 --> 01:38:51,572
+Ve ben artık sonuçta yeni şeyim bu ya ama eskiyi de kaybetmemem gerekiyor. Previous'i de buraya atıyorum. Ya ne yapıyorum? Current'ın önceki ilk halini previous atıyorum. Bak bir öncekini kaybetmeyeyim diye adresini. Current'a current next oluyor. Yani P'yi buraya atadım, C buradaydı. C'yi next atıp buraya geldim. Kontrol ediyorum var mı? Yok. Artık C buraya geldi, P buraya geldi.
+
+519
+01:38:53,332 --> 01:39:12,512
+Kontrol ediyorum yok. Geldim buraya. C buraya geldi. P buraya geldi. Hoppala. Buldum şimdi. O aradığım name'deki k ismi burada. Tamam mı? Normalde burada adres var. O adresin de içindeki bulunduğu değer var. Buraya yanlış anlayamıyorum. Burada direkt isim yok. Adres var.
+
+520
+01:39:19,315 --> 01:39:43,315
+Adresim bulundu, kane ismi. Anlaşılsın diye yazıyorum buraya. Kan var burada. Kan'ı buldu mu buldu. Tamam zaten körün şeyse böyle bir şey yoktur diyeceğiz zaten. O dert değil. Şimdi, şu ne demek? Previous eşit eşittir nal ise. Yani neden ona? O an...
+
+521
+01:39:44,627 --> 01:40:09,207
+Başlangıç düğümümdeyim ben ve başlangıç düğünümde o ismi şey yaptıysam, neden ona, bulduysam zaten, current'ın ne eksini direkt bir sonraki şey olarak atayabilirim. Yani mesela ne demek istiyorum? Ben şuradakini buldum ya mesela, şurayı buldum. Aradığım isim, Khan ismi burada aslında, direkt en başta.
+
+522
+01:40:09,811 --> 01:40:37,091
+O zaman ben en baştakini sildiğimde ne yapmam lazım? Sileceğim ama şuradaki head değişkenin de artık başım burası değil, burası olması lazım. O yüzden current'ın nexini atıyorum head değişkeni ve bunu artık o zaman siliyorum. Hani aradığım index ila 4.5'ini direkt başta da olabilir. Direkt başta olursa ne olacak? Ben başta olduğunu da nasıl anlıyorum? Previous eğer NAL'sa hala, demek ki ben hala bir adım ilerlememişim. Previous hayran NAL'da kalıyor. O zaman başlangıçtayım.
+
+523
+01:40:37,471 --> 01:40:55,351
+Ve benim head'im gösterdiğinde artık current'ımın next olması lazım diyorum. Artık bunu tamamen şeyden sürüyorum. Aynen, head'i gösterdiğinde artık current'ın next'idir diyorum. Çünkü benim silmek istediğim node en baştaki node. Ama değil ise, yani dördüncü indekste ise buradaki gibi ne yapıyorum?
+
+524
+01:40:59,351 --> 01:41:01,195
+Şimdi benim...
+
+525
+01:41:01,652 --> 01:41:11,231
+Şimdi silmediğimi düşün, daha şu an hala silmedim. Ben dördüncü indekste bunu buldum. Üçüncü indekste de previous'im var. Benim artık previous'im ne yapmalı?
+
+526
+01:41:13,692 --> 01:41:23,391
+Normalde bu previous'im next'i bu körüntü gösteriyor diyor şu an burada yani. Artık bunun next'i şunu göstermeli. Şuradaki bağı koparmalıyım.
+
+527
+01:41:25,235 --> 01:41:50,235
+Bağlıklı nasıl koparıyorum? Bu current şu an burada ya. Ben bunun next'i, bunun adresini tutmuyor muydu? Şu an current burada. [öğrenci]'ı buldum ya ben. Bunun next'i buraya tutuyordu ya. Heee, o zaman previous'in next'ini, current'ın next'ini eşitliyorum. Anlaşıldı mı? Şuraya tekrar silsen zaten aynen, şu şeyler gider. Bak. [öğrenci]'ı burada bul... Asla dur, [öğrenci] şöyle...
+
+528
+01:41:50,804 --> 01:41:57,524
+Alabiliyor muyum şunu? Belki artık okla kafanızı karıştırır ama süper. Şöyle olsun, şunları da silelim.
+
+529
+01:42:03,475 --> 01:42:09,695
+Ben şurada buldum ya, current'ım buradaydı bulduğum için, previous'ım da buradaydı.
+
+530
+01:42:10,255 --> 01:42:14,935
+Şimdi kana bulduğum bağlantısı şöyle, şöyle.
+
+531
+01:42:16,735 --> 01:42:20,495
+Bu current'ın next'i burayı gösteriyordu. Ben artık bunu silmem gerekiyor.
+
+532
+01:42:21,076 --> 01:42:26,335
+Ama bağlantıyı da kaybetmemem gerekiyor. O yüzden previous'ın next'i artık burayı göstersin istiyorum.
+
+533
+01:42:26,675 --> 01:42:29,076
+Buranın adresini nasıl bulayım? Şu an current'ı hala silmedim.
+
+534
+01:42:29,076 --> 01:42:30,375
+Current'ım next'i.
+
+535
+01:42:30,868 --> 01:42:57,748
+Privacy index olsun. Böylece buradaki bağlantıyı çıkartmış oluyorum. Daha sonra da hem sildiğim için kişiyi de siliyorum, o nodu da siliyorum. Böylece hem bellek haksız anlamında da yapmam gereken bir işlemi de yapıyorum. Burası da anlaşılmıştır diye umuyorum. Daha sonra print liste, ne demiştik print liste? Current ile NULLON'a kadar.
+
+536
+01:42:58,323 --> 01:43:09,063
+Devam et ve print person ile o kişiyi yazdırıyoruz. Print person ile neredeydi? Adı soyadı şudur budur şeklinde
+
+537
+01:43:09,063 --> 01:43:16,264
+yazdırıyoruz. Daha sonra exit control şudur budur ve en son bütün
+
+538
+01:43:16,304 --> 01:43:29,304
+Headden başlayarak bütün şeyi neden ona listeyi, bağlı listeyi hepsini free edip şeyimizi tamamlıyoruz neden ona programımızı tamamlıyoruz.
+
+539
+01:43:29,764 --> 01:43:35,943
+Şimdi genel anlamda anlaşılmayan bir durum var mı arkadaşlar database'de olsun linked list olsun.
+
+540
+01:43:35,943 --> 01:43:39,483
+Yani hocanız zaten linked liste yine şey yapar neden ona.
+
+541
+01:43:41,043 --> 01:43:47,043
+Daha detaylı olmasını incelerim ama burada hani ben olabildiğince, dilim döndüğünce anlatmaya çalıştım burada.
+
+542
+01:43:47,043 --> 01:43:53,543
+Basit bir şekilde, sadece tek yönlü bir liste olduğunda. Mesela burada ne oldu? Hani çift yönlü bir liste de var demiştim size.
+
+543
+01:43:53,543 --> 01:43:59,043
+Normalde biz burada Previous ve Current diye bir değişik anlatımdır. Önceyi, sonrayi tutalım diye.
+
+544
+01:44:02,612 --> 01:44:09,612
+Next'i tutan olacak, previous'i tutan olacak, ortada bir data olacak mesela. Böylece önceki ve sonrasını da bilebiliyorum.
+
+545
+01:44:09,612 --> 01:44:23,532
+Tek yönlü ama dairesel listeler var. Yani biz geliyoruz, geliyoruz, burada bitiriyoruz ya, bunun Next'i de gidiyor, başı gösteriyor mesela. Böyle bir dairesel şekli de listeler var. Bunları zaten ileride daha detaylı şekilde görürsünüz.
+
+546
+01:44:24,340 --> 01:44:38,340
+Bu şekilde de Linked listemizi de tamamlamış olduk. Burada ekstradan küçük bir ekvi, bu sorudan bağımsız, şuradaki sorudan bağımsız şöyle bir şey anlatacağım size. Anlatacağım da çok 5 dakikanız bile anlayacak.
+
+547
+01:44:38,340 --> 01:44:52,340
+Şimdi biz bütün programlarda gördüğünüz gibi .c dosyamızda işte fonksiyonel olsun, struct yapısı ile olsun, güzel bunları yapıyoruz, bunlarda bir sıkıntı yok. Bir de görmüşsünüzdür, duymuşsunuzdür veya yeni şey olabilir.
+
+548
+01:44:52,340 --> 01:45:00,119
+Biz burada hep şeylerden ne yapıyorduk? Haş kütüphaneleri vardır. İçinde ne var ne yok bilmiyoruz aslında. Büyük bir kütüphaneler.
+
+549
+01:45:00,480 --> 01:45:05,180
+Ve bütün o kütüphanelerin içindeki şeyler sonuçta burada yazacak değiliz. Bunları hazır kullanıyoruz.
+
+550
+01:45:05,560 --> 01:45:12,079
+İşte bu şekilde hazır bazı fonksiyonlar mesela bizim oluşturduğumuz bir haş kütüphanesinde tanınmayıp
+
+551
+01:45:12,756 --> 01:45:17,136
+O kütüphanelerin içindeki fonksiyonları da kullanma şeklinde de yapabiliriz.
+
+552
+01:45:17,155 --> 01:45:20,275
+Yani ne demek istiyorum? Burada iki tane hash kütüphanesi tanımlanmış.
+
+553
+01:45:20,376 --> 01:45:24,636
+Menu hash diye veya işlem hash diye olarak adlandırılan.
+
+554
+01:45:25,016 --> 01:45:28,756
+Ben bazı şeyleri o hash kütüphanesinde tanımlayıp burada direkt çağırabilirim.
+
+555
+01:45:28,996 --> 01:45:30,516
+Bunu da nasıl yapayım? Önün menu hash var.
+
+556
+01:45:30,976 --> 01:45:35,176
+Burada hash şeyleri mutlaka şu üç şey kullanılması lazımdır arkadaşlar.
+
+557
+01:45:35,176 --> 01:45:38,056
+Eğer if not defined definition olarak adlandırılır.
+
+558
+01:45:38,096 --> 01:45:40,756
+Yani eğer tanımlı değilse diye menu hash diye.
+
+559
+01:45:40,756 --> 01:45:50,356
+diye bir şey tanımla. Tamam. Define menu diye bir makro şey oluştur. Ve bu menüyü ben gördüğümde ne yapsın? Şunları yazsın.
+
+560
+01:45:51,731 --> 01:46:11,251
+Şeklinde bir tanımlıyorum bu define menu olarak gönderdiğimde. Bak şurada da onu çağırıyoruz hatta menü diye şurada. Daha sonra işlem yapmak istediğimizde de örneğin bir fonksiyon, makro bir fonksiyon tanımlamak istediğimizde yine aynı şekilde if ne def olarak adlandırılan yani şuradaki 3 isim de aynı isim de olmalı.
+
+561
+01:46:11,667 --> 01:46:39,667
+İki isim, üzüldüm, aynı isim de olmalı. Eğer tanımlı değilse, tanımma şeklinde böyle. Ve bunu da, şu fonksiyonlarını, işte, topla, fonksiyonunu geldiğinde, işte, x'e y'yi topla, çıkar, çarp, böl dediğimizde, yine burada buraya gelip, bu fonksiyonları, gördüğünüz gibi, topla fonksiyonu neyin içinde? Şunun içinde. Bu fonksiyonu çarp dediğimizde, x'ye'yi gönderip, bu x'ye de bunu toplama, çıkarma, bölme şeklinde şeyinizi de yapabilirsiniz. Bu da bir ekstra bilgi olarak bundan göstermek.
+
+562
+01:46:39,667 --> 01:46:48,367
+normalde uygulama sorusundan bağımsız. Yani burada hep hazır olarak kullandığımız kütüphaneler içerisinde aslında bu tarz yapılar var. Bunu göstermek istedik burada.
+
+563
+01:46:48,867 --> 01:46:57,527
+Biz herkesin bütün programların kullanabileceği hazır fonksiyonlar şudur budur sonuçta her defasında bunu yazılması doğru olmaz. Bunların özel hazır kütüphaneleri var.
+
+564
+01:46:57,627 --> 01:47:01,967
+Biz de böyle hazır özel kütüphane oluşturabilir miyiz şeklinde bir örnek göstermek istedim.
+
+565
+01:47:03,123 --> 01:47:24,243
+Bu şekilde bunu da kullanabilirsiniz arkadaşlar. Hem zaten bu dersin de tekrarını yeniden dinleyebilirsiniz. Bu uygulama kodlarını da yine sizinle paylaşacağız. Zaten diğer birinci, ikinci uygulamanın kodları, labbirin kodlarını da o WhatsApp grubunda bir link paylaşılmıştı sizinle. Yine bunu da şey sonrasında bugün, yarın ve en geç bu hafta içerisinde bu kodları sizinle paylaşacağız.
+
+566
+01:47:24,787 --> 01:47:41,207
+Ben dinlediğiniz için teşekkür ederim arkadaşlar. İnşallah iyi anlatabilmişimdir. Siz de iyi şekilde anlayabilmişsinizdir. Ben dinlediğiniz için teşekkür ederim. Buraya gelmeyebilirdiniz. Daha sonra da dinleyebilirsiniz. Ama 20 kişi.
+
+567
+01:47:42,327 --> 01:47:51,167
+Ben şeylere her zaman, bunu BBG'de de demiştim diye tutuyorum. Bu tarz uygulamalara gelenlere her zaman ayrı bir saygım şeyim vardır.
+
+568
+01:47:52,307 --> 01:48:12,787
+Gidip dışarıda da olabilirdiniz. Özel iş, drum falan, onu bilmem. Acil işlerden dolayı katılma, ona alsız adafım yok ama vaktinizi ayırıp burada iki saatte kendinizi geliştirmek için, eksik yönlerinizi tamamlamak için geldiniz katılın, iki saat dinlediniz. Ben dediğim gibi tekrar dinlediğiniz için teşekkür ederim. Var mı bir eklemek istediğiniz bir şey, herhangi bir şey?
+
+569
+01:48:15,028 --> 01:48:21,548
+Normal uygulama hakkında olur, genel işleyiş hakkında olur, böyle bir şey olur. Genel anlamda da. Sonunuz varsa da alabilirim.
+
+570
+01:48:34,547 --> 01:48:42,627
+Ben teşekkür ederim [öğrenci]. Tamamdır o zaman arkadaşlar. Eğer bir şey yoksa ne dinlediğiniz için tekrar teşekkür ederim. Hepinize iyi günler diliyorum. İyi günler.

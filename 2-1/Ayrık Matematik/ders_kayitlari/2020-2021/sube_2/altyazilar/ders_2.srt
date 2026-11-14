@@ -1,0 +1,4015 @@
+1
+00:00:08,724 --> 00:00:10,508
+Günaydın arkadaşlar.
+
+2
+00:00:28,500 --> 00:00:30,500
+Günaydın [öğrenci], Merhaba.
+
+3
+00:08:06,259 --> 00:08:09,339
+Arkadaşlar merhaba, günaydın. Ses geliyor mu?
+
+4
+00:08:14,036 --> 00:08:16,255
+Günaydın hocam. Evet geliyorsa siz.
+
+5
+00:08:17,016 --> 00:08:18,896
+Tamamdır. Teşekkürler.
+
+6
+00:08:39,668 --> 00:08:41,668
+5 dakika sonra başlarız.
+
+7
+00:11:55,283 --> 00:11:58,163
+Arkadaşlar, derse girerken tek link vardı değil mi?
+
+8
+00:12:30,611 --> 00:12:31,611
+Tamamdır.
+
+9
+00:14:06,995 --> 00:14:09,155
+Evet arkadaşlar, hepinize tekrardan günaydın.
+
+10
+00:14:11,336 --> 00:14:12,415
+Nasılsınız, nasıl gidiyor?
+
+11
+00:14:19,443 --> 00:14:22,764
+dersleriniz, keyfiniz, sağlığınız, her şey güzeldir inşallah.
+
+12
+00:14:32,884 --> 00:14:40,943
+Ders notlarını Banu Hoca sayfasında yayınlıyor. Teşekkür ederim. Ben de iyiyim [öğrenci]. Teşekkürler.
+
+13
+00:14:42,964 --> 00:14:50,163
+Banu Hoca'nın sayfasındaki pdf'leri doğrudan indirebilirsiniz. Ortak işlediğimiz için herhangi bir fark yok.
+
+14
+00:14:52,084 --> 00:14:55,524
+Sadece ders işlememizde birazcık ufak tefek farklılıklar olabilir.
+
+15
+00:14:59,572 --> 00:15:00,572
+Günaydın [öğrenci].
+
+16
+00:15:04,307 --> 00:15:06,528
+[öğrenci], Günaydın, Günaydın [öğrenci].
+
+17
+00:15:10,548 --> 00:15:15,827
+Çok fazla dersim olmasa ben de daha iyi olacağım da 6 tane ders biraz yoğun oluyor.
+
+18
+00:15:16,788 --> 00:15:22,307
+Bir de bizim bilgisayar mühendisliğinin dersleri biraz daha hareketli, güzel, katılım var.
+
+19
+00:15:23,028 --> 00:15:30,067
+Diğer biyomedikal kontrol ve elektronik nispeten daha yorucu oluyor.
+
+20
+00:15:31,107 --> 00:15:32,467
+Ama yapacak bir şey yok.
+
+21
+00:15:38,196 --> 00:15:42,916
+Şimdi kaldığımız yerden devam edeceğiz.
+
+22
+00:15:44,036 --> 00:15:49,316
+Ama önce bugün Proof konusunda gireceğimiz için geriden bir tekrar alalım.
+
+23
+00:15:57,652 --> 00:16:00,772
+Şu an slide geldi herhalde arkadaşlar.
+
+24
+00:16:03,092 --> 00:16:04,772
+Evet, burası grup 2.
+
+25
+00:16:28,115 --> 00:16:36,675
+Şöyle, geçen hafta tek grup olarak açıldığı için ilk önce ders grup ayrımı tanımlamaları gerçekleştirilmemişti.
+
+26
+00:16:38,816 --> 00:16:43,235
+Dolayısıyla siz doğrudan o gruba, çoğunuz doğrudan o gruba gönderildi.
+
+27
+00:16:43,235 --> 00:16:53,076
+Ben ama Usis'ten mail gönderdim. Yani Usis maillerinizi STD, Yıldız, EduTR uzantılı maillerinizi zaman zaman kontrol edin arkadaşlar.
+
+28
+00:17:05,971 --> 00:17:09,791
+Şu an slide'ı görüyorsunuz değil mi arkadaşlar? Bir hatamız olmasın.
+
+29
+00:17:16,852 --> 00:17:29,612
+Mantık konusuyla başladık. Birleşik önermelerde kullandığımız operatörler vardı. Bunların birbiri cinsinden nasıl ifade edildiğini konuştuk.
+
+30
+00:17:33,140 --> 00:17:38,539
+Şimdi ise bağlacı, şartlı önermeler.
+
+31
+00:17:40,340 --> 00:17:55,320
+Bunun birazcık önemli arkadaşlar. Neden önemli? Bu operatörü mantıkta kullanmakla birlikte programlamada da kullanıyoruz. İspatta çok kullanılıyor.
+
+32
+00:17:55,320 --> 00:18:00,039
+İşte bunun 3 farklı varyasyonu vardı. Şimdi ona geleceğiz.
+
+33
+00:18:00,819 --> 00:18:09,679
+Ne yapıyorduk arkadaşlar? P ise Q. Genel olarak bunu ezberlemek isterseniz, 1-0 durumunda 0, diğer durumlarda 1 oluyordu.
+
+34
+00:18:10,639 --> 00:18:22,619
+Ama o ezber mantığı, işin çözerken kolaylığı, arkasındaki mantık bir şartın yerine gelmesinin, diğer şartın yerine gelmesiyle ilişkisini inceliyoruz.
+
+35
+00:18:26,548 --> 00:18:28,887
+Genel doğruluk tablosu bu şekilde dedik.
+
+36
+00:18:29,887 --> 00:18:34,307
+Şimdi burada P'ye hipotez, Q'ya sonuç demiştik.
+
+37
+00:18:35,087 --> 00:18:40,327
+Ama hipotez olmadan da sonuca ulaştığımız, yani sonucun doğru olduğu durum vardı değil mi arkadaşlar?
+
+38
+00:18:41,008 --> 00:18:45,168
+Yani sıfıra bir durumunda da biz bir sonucunu elde edebiliyorduk.
+
+39
+00:18:46,548 --> 00:18:50,927
+Ancak if diğer çift yönlü durumda
+
+40
+00:18:51,923 --> 00:18:55,463
+Bu ikisi de 0, 0 veya ikisi de 1, 1 olması gerekiyor.
+
+41
+00:18:56,563 --> 00:19:02,163
+Sonucun gerçekleşmemesi, hipotezin gerçekleşmemesi durumu da vardı.
+
+42
+00:19:02,963 --> 00:19:05,243
+O zaman da ne oluyordu? Yine 1 geliyordu.
+
+43
+00:19:05,523 --> 00:19:06,963
+1'e 1 durumunda da 1 vardı.
+
+44
+00:19:07,743 --> 00:19:10,403
+Tek 1'e 0 durumunda 0 geliyordu.
+
+45
+00:19:11,943 --> 00:19:16,584
+Burada arkadaşlar, gerekli şart ve yeterli şart kavramları bizim için önemli.
+
+46
+00:19:18,804 --> 00:19:25,564
+Yeterli şart, sonucun bir olması için yeterli ifade ediyor.
+
+47
+00:19:26,684 --> 00:19:31,064
+Gerekli şart da sonuç tarafından ifade ediyor.
+
+48
+00:19:31,084 --> 00:19:35,464
+Birisi hipotezle alakalı, birisi sonuç tarafından ifade edilen şarttır arkadaşlar.
+
+49
+00:19:36,364 --> 00:19:39,504
+Bunları proof'ta inceleyeceğiz.
+
+50
+00:19:40,464 --> 00:19:42,304
+Mantıksal denklikten bahsettik.
+
+51
+00:19:44,788 --> 00:20:02,028
+Tabi bu ifadeyi kullanırken ikisini, iki konuyu aynı anda anlatmış oluyoruz. p ise q'yu diğer temel operatörlerle ifade etmek istersek, temel operatörler dediğimiz neydi? Ya tilde'ydı, ya and idi, ya da ordu. Bu üçü cinsinden.
+
+52
+00:20:02,827 --> 00:20:08,728
+Tilda'da dediğimiz şey zaten bizim not operatörü. Şöyle de yazabiliriz veya şöyle de olur. Hatta şu da oluyor.
+
+53
+00:20:09,711 --> 00:20:12,572
+Birini programlamada, birini başka yerde kullanıyoruz.
+
+54
+00:20:13,791 --> 00:20:18,592
+Bunu bu şekilde ifade etmek istediğimizde şöyle açabiliriz.
+
+55
+00:20:18,731 --> 00:20:22,331
+Şimdi bunu açtığımızda burada p'nin değili nedir?
+
+56
+00:20:22,892 --> 00:20:24,592
+True ise false, false ise true olacak.
+
+57
+00:20:25,392 --> 00:20:28,372
+P'nin değili veya q ne olacaktır?
+
+58
+00:20:29,031 --> 00:20:31,471
+İşte false veya true, true.
+
+59
+00:20:32,271 --> 00:20:34,351
+False veya false, false.
+
+60
+00:20:35,796 --> 00:20:38,196
+True veya True, True.
+
+61
+00:20:39,635 --> 00:20:41,615
+True veya False, False.
+
+62
+00:20:42,096 --> 00:20:42,536
+Şey, True.
+
+63
+00:20:43,855 --> 00:20:49,276
+Şimdi bu üçü, şey bu dördü bu geldikten sonra bir de bizim daha önce elde ettiğimiz bu şeyler var.
+
+64
+00:20:49,436 --> 00:20:51,376
+Bakın ikisi birbirinin tamamen aynısı çıktı.
+
+65
+00:20:52,036 --> 00:20:54,776
+Buna logic equivalence diyoruz.
+
+66
+00:20:54,776 --> 00:21:00,155
+Aynı zamanda biz ise bağlacını nasıl yazabiliriz? Bu şekilde de yazabiliriz.
+
+67
+00:21:00,196 --> 00:21:03,056
+Birinci tarafın değili veya ikinci diye.
+
+68
+00:21:07,155 --> 00:21:24,195
+Şimdi bu şeye geldikten sonra 3 tane ise bağlacının karşılığını görmüştük. Bunu tekrar edelim. Birincisi Converse idi. Converse neydi? Doğrudan P ise Q yerine Q ise P yazıyorduk.
+
+69
+00:21:24,915 --> 00:21:35,195
+Örnek olarak da ne vermiştik? İşte bugün cumartesi ise yarın pazardır önermesini verdiğimizde bunun konversu yarın pazarsa bugün cumartesidir şeklinde oluyor.
+
+70
+00:21:37,155 --> 00:21:44,596
+Ve bu iki önermesinin de arasında bir mantıksal denklik olması söz konusu değil. Her zaman olacak diye bir şey. Hatta değildir de yani şeyi yoktur.
+
+71
+00:21:44,596 --> 00:21:52,435
+Çünkü ne oluyor? Sıralar yer değişiyor. Şurada bir, şu satırlarda yer değişikliği görüyoruz.
+
+72
+00:21:54,259 --> 00:22:02,639
+Bundan sonra, Converse'den sonra bir de Inverse vardı ama ondan önce Contra Positive Slide'da geliyor. Belki o şeyi de daha sonra ekleriz.
+
+73
+00:22:03,700 --> 00:22:06,400
+Inverse'ü. Çünkü Inverse'ü de kullanacağız arkadaşlar.
+
+74
+00:22:07,400 --> 00:22:13,139
+Contra Positive'de de hem yerler değişiyordu hem de değilleri alınıyordu. Bu şekilde bir sonucu var.
+
+75
+00:22:13,139 --> 00:22:21,559
+Ve buna baktığınızda, bakın True True, False False, True True, yani burada bir mantıksal eşdeğerlik.
+
+76
+00:22:22,324 --> 00:22:46,104
+vardır. İşte örneğini verdiğimizde bugün cumartesi ise yarın pazar demiştik. İşte yarın pazar değilse bugün de cumartesi değildir şeklinde bir şey. Bu önemli arkadaşlar. Bu devrik ispat tekniklerinde kullanacağız. Bir de ne vardı? Inverse vardı. Onu şuraya hızlıca yazayım. Inverse. Inverse'ı nasıl ifade ediyorduk?
+
+77
+00:22:47,284 --> 00:22:51,684
+Aynen kalacaktı P'nin değeri P ve Q ama değillerini alacaktık.
+
+78
+00:22:52,364 --> 00:22:56,224
+İşte bu da ne? Bugün cumartesi değilse yarın pazar değil demektir.
+
+79
+00:22:57,264 --> 00:22:59,444
+Bu örnekleri hatırlatmak istedim.
+
+80
+00:23:00,184 --> 00:23:04,664
+Daha sonra iki yönlü, çift yönlü önermeden bahsetmiştik.
+
+81
+00:23:05,764 --> 00:23:13,524
+İşte bunun iki yönlü olması demek ancak girişlerin ikisinin de true veya false olduğu durumlarda sonuç doğru çıkacak.
+
+82
+00:23:14,195 --> 00:23:23,415
+Diğer durumlarda sonuç yanlış çıkacaktı. Eğer ben bunu B kapısı ve ise bağlayıcıyla ifade etmek istersem şu şekilde yazabiliriz.
+
+83
+00:23:23,495 --> 00:23:27,815
+P ise Q ve Q ise P'nin birleşimidir, şey kesişimidir.
+
+84
+00:23:29,015 --> 00:23:34,556
+Bunu, bu ifadeyi biraz daha temel bağlayışlarla açmak istersem ne yapacağım?
+
+85
+00:23:34,556 --> 00:23:41,076
+O zaman şunu yazacağım. P'nin değili veya Q şu taraf.
+
+86
+00:23:41,652 --> 00:23:53,251
+ve q'nun değili veya p. Bu şekilde AND, OR ve NOT kullanarak da oluşturabiliriz.
+
+87
+00:23:57,556 --> 00:24:06,976
+Şimdi totoloji neydi? Eğer bütün elde edilen doğruluk tablosundaki sonuçlarımızın hepsi doğruysa bu bir totoloji oluyordu.
+
+88
+00:24:07,416 --> 00:24:13,235
+Bakın P ise P veya Q. Bütün sonuçlar nedir arkadaşlar? Doğrudur.
+
+89
+00:24:13,996 --> 00:24:17,755
+Bu ise bağlacının sonucunun hepsi doğru olduğu için burada bir totoloji vardır.
+
+90
+00:24:17,755 --> 00:24:23,755
+Çelişkide de bütün sonuçların yanlış olmasını söylüyoruz.
+
+91
+00:24:24,723 --> 00:24:37,503
+Demorgan kuralı da çok fazla kümelerden de bildiğiniz şey, bir şeyi tersine alırsak, bir ifadenin değinini alırsak, o ifadedeki bütün önermeler yer değiştiriyor.
+
+92
+00:24:38,223 --> 00:24:51,063
+Yer değiştirme demek tersi alınıyor. Örneğin P ise P'nin değinini alıyorsunuz. V'ya yerine V geliyor, V yerine de V'ya geliyor. Bu önemli bir kural.
+
+93
+00:24:52,115 --> 00:25:19,576
+Bu neden önemli? Örneğin arkadaşımız if içerisine bir şart yazıyor. C dilinde veya herhangi bir dilde. Çok uzun ve anlaşılması güç bir şey. Belki bunun değili, yazdığın şartın değili. Çünkü arada ne var? Entler var. Şöyle ampersand operatörüyle kullanılan entler var. Veya orlar var. İşte bu uzun ve anlaşılması güç şeyi bir de demorgan kuralından geçirip daha kısa sürede yazabilirsin. İşte p veya q.
+
+94
+00:25:20,211 --> 00:25:41,271
+Bunun tabi bu ise anlamındaki işaret değil arkadaşlar. Sadece ok işareti. Nedir bunun denkliği? Yani hatta şuraya denk işareti de yazabiliriz. P'nin değilini alacağız. V'ya operatörünün yerine V gelecek. Bir de Q'nun değilini alacağız. Aynı şekilde burada da P'nin değil alınacak. V yerine V'ya gelecek. Q'nun değili.
+
+95
+00:25:45,460 --> 00:25:58,059
+Q, böyle bir şey olsaydı ne yapacağız? Bunun değilini aldığımızda değilinin değeri kendisi olacak. Aradaki işaret şu, daha sonra bu gelecek. Bu şekilde çözebileceğiz.
+
+96
+00:25:58,539 --> 00:26:08,139
+Soru var mı arkadaşlar burada? Bir de şunu sorayım. Bakalım belki bunu yapmamış, gerçi yaptık da tekrar edelim.
+
+97
+00:26:09,139 --> 00:26:11,019
+Şunun sonucu nedir arkadaşlar?
+
+98
+00:26:13,364 --> 00:26:14,364
+ve İzsepe.
+
+99
+00:26:18,387 --> 00:26:28,387
+Bir de değil mi? Sonuçta çift yönlü ise bağlacında iki tarafta aynı ise sonuç bir. Diğer durumlarda sonuç olur. Yani şu durumda da...
+
+100
+00:26:32,180 --> 00:26:33,180
+sıfır bulacağız.
+
+101
+00:26:33,180 --> 00:26:36,180
+Şu nedir?
+
+102
+00:26:45,107 --> 00:26:56,947
+Hı hı. Tabii şurayı çizelim. P'dir. Yani sıfırsa sonuç sıfır. Birse sonuç bir oluyor. Yani P'ye bağlı olarak değişiyor. Doğrudan P'dir diyeceğiz. Başka da durum yok zaten.
+
+103
+00:26:59,847 --> 00:27:09,528
+Şimdi bundan sonra Quantifier kısmına geçen hafta burada kalmıştık. Buradan devam edelim. Şimdi arkadaşlar bir önerme yaparken
+
+104
+00:27:10,612 --> 00:27:23,972
+üzerinde çalıştığımız veriler belli bir sınırda, belli bir kümede olabilir. Bu kümeleri ifade ederken ve bu kümeler üzerinde önerme yazarken bazı sembollere ihtiyaç duymuşlar.
+
+105
+00:27:25,032 --> 00:27:36,612
+İşte ters A'ya benzer şey bundan bir tanesi. Bir de şu vardı galiba. İşte bu evri demek her...
+
+106
+00:27:38,099 --> 00:27:40,500
+Bu da işte sum bazıları demek.
+
+107
+00:27:42,159 --> 00:27:43,299
+Herhalde böyleydi şimdi gelecek.
+
+108
+00:27:44,239 --> 00:27:44,619
+Örneğin,
+
+109
+00:27:45,980 --> 00:27:48,460
+px, x değişkeniyle alakalı bir önerme olacak.
+
+110
+00:27:49,879 --> 00:27:52,699
+2x çift tam sayı diye bir önermemiz var.
+
+111
+00:27:53,819 --> 00:27:54,359
+Px için.
+
+112
+00:27:55,279 --> 00:27:56,719
+Buradaki d domainimiz,
+
+113
+00:27:58,199 --> 00:28:04,099
+her x değeri için px'in doğru olduğunu veya px'le alakalı bir önerme olduğunu kabul ediyoruz.
+
+114
+00:28:04,819 --> 00:28:15,919
+Burada mesela diyeceğiz ki x eleman tam sayı, x eleman doğal sayı gibi şeyler diyeceğiz.
+
+115
+00:28:17,199 --> 00:28:30,019
+Bu daha genel bir kümeden daha ayrıntılı kümeye indirilmesi d olarak, domain olarak ifadeli veya domain of discourse bazı sembollerle yapılıyor.
+
+116
+00:28:33,523 --> 00:28:37,963
+Bazı şeylerde göreceğiz, bazı uygulamalarda göreceğiz arkadaşlar.
+
+117
+00:28:40,364 --> 00:28:42,723
+Örneğin, bir denklem verilecek.
+
+118
+00:28:44,623 --> 00:28:47,043
+Bu evri ve herlerle, şey, SAM'la alakalı.
+
+119
+00:28:47,763 --> 00:28:52,403
+Bu denklemi, yukarıda verilen önermeye göre sözel ifadeye dönüştürünüz.
+
+120
+00:28:52,543 --> 00:28:55,803
+Veya sözel ifadeden denklem yazınız, önermeyi yazınız gibi.
+
+121
+00:28:56,403 --> 00:28:58,743
+Matematiksel biçimde yazınız gibidir.
+
+122
+00:29:01,236 --> 00:29:06,996
+Ve bu domayindeki her x değeri bizim önermemizi doğru veya yanlış yapacak.
+
+123
+00:29:08,016 --> 00:29:14,096
+Bütün bir tam sayılar kümesini değil de o tam sayılar kümesinde belli bir kurala uygun kümeyi ifade etmek için kullanı.
+
+124
+00:29:14,436 --> 00:29:16,996
+Örnek olarak n² artı iken tek sayıdır.
+
+125
+00:29:18,856 --> 00:29:21,716
+B kümesi pozitif tam sayılardan olsun demişiz.
+
+126
+00:29:21,716 --> 00:29:26,356
+Yani domaynimiz z artı.
+
+127
+00:29:26,640 --> 00:29:33,060
+Eğer n tek ise sayı tektir, n çift ise sayı tek değildir. Bu sonuca varabiliyoruz.
+
+128
+00:29:34,960 --> 00:29:37,480
+Bu sınıftakiler 18 yaşından büyüktür.
+
+129
+00:29:38,580 --> 00:29:46,700
+Şimdi d kümesi sınıftaki öğrenciler ama öğrencilerden bazıları önermeyi doğru yapıyor, bazıları yanlış yapıyor diyelim.
+
+130
+00:29:46,700 --> 00:29:48,980
+Tabii sizin sınıfta herhalde yoktur 18'den küçük.
+
+131
+00:29:50,932 --> 00:30:01,112
+İfadeye, işte şu bazılarının önermenin doğru yapılması, bazılarının önermeyi yanlış yapması mevzusu burada inceleyeceğimiz konu olacak.
+
+132
+00:30:02,311 --> 00:30:05,331
+Ve burada her ve bazı sembolleri var.
+
+133
+00:30:07,331 --> 00:30:14,112
+Şimdi her üçgen için iç açılar toplamı 180 derecedir. Bu her zaman doğrudur diyebiliriz.
+
+134
+00:30:14,112 --> 00:30:15,512
+Tabii üçgen kuralına uyarsa.
+
+135
+00:30:18,420 --> 00:30:19,920
+İşte buradaki bu
+
+136
+00:30:23,667 --> 00:30:32,047
+Domain of discourse'u sembolize etmek için, göstermek için kullanılan semboller bizim bu quantifier'larımız oluyor.
+
+137
+00:30:33,307 --> 00:30:35,167
+Matematikçiler artık bunu bulmuşlar.
+
+138
+00:30:37,007 --> 00:30:40,927
+İşte px önermesi d kümesi içerisindeki her x değeri için doğru olmalıdır.
+
+139
+00:30:40,927 --> 00:30:42,927
+Yani bu ne demek? Bir önermeniz var.
+
+140
+00:30:43,987 --> 00:30:47,927
+Bu önermenizin doğruluğunu her x değeri için...
+
+141
+00:30:49,172 --> 00:31:11,332
+doğrudur diye ifade etmek isterseniz normalde şunu şu şekilde her x için px doğrudur diyebiliriz veya bütün x'ler için px doğrudur diyebiliriz veya bunu biraz daha matematiksel bir dille her x px ne demek? px önermesinin içerisindeki her x de x değeri için bu önerme doğrudur gibi.
+
+142
+00:31:12,084 --> 00:31:20,943
+Her öğrenci sınaftaki her öğrenci işte calculus dersini çalıştı veya dersini aldı veya dersi geçti gibi bir şey söyleyeceğiz.
+
+143
+00:31:21,943 --> 00:31:29,644
+İşte px dediğimiz şey böyle bir önerme. Bunu matematiksel olarak her x px'dir.
+
+144
+00:31:31,443 --> 00:31:35,844
+Bir x öğrencisi işte dersi aldı, başarılı oldu gibi bir şeyimiz var.
+
+145
+00:31:36,372 --> 00:31:47,412
+Bunu bütün x'ler için ifade etmek istediğimizde, şu ifadeden yola çıkarak bunu matematiksel bir dille yazmak istediğimizde neyi elde ediyoruz? Bunu elde ediyoruz.
+
+146
+00:31:48,032 --> 00:31:49,152
+Soru var mı arkadaşlar burada?
+
+147
+00:31:51,332 --> 00:31:54,852
+Sadece aslında bir notasyon. Başka bir şey değil.
+
+148
+00:31:59,124 --> 00:32:24,204
+Ama burada şöyle bir şey var. Burada aslında şu bağlaçta gizli bir ne var arkadaşlar? Bir operatör var. Gizli bir AND operatörü var. Tamam mı? Aslında gizli bir çarpım sembolü. Bu çarpım sembolünde bütün Px önermeleri i eşittir.
+
+149
+00:32:25,236 --> 00:32:38,676
+sıfırdan en ince elemana kadar P, i, x önermeleri ne olacak? Çarpılacak, çarpılacak ancak sonuç 1 olacak. O zaman hepsinin ne olması lazım? 1 olması lazım ki sonuç 1 olsun.
+
+150
+00:32:39,676 --> 00:32:51,936
+Bütün elemanlar bu şartı sağlasın ki sonuç önermemiz doğru olsun. En az bir tane eleman burada sağlamazsa, yani bir tanesi sıfır olursa bu çarpımda ne olacaktır?
+
+151
+00:32:52,788 --> 00:32:53,988
+Sonuç sıfır olacaktır.
+
+152
+00:32:59,763 --> 00:33:10,084
+Aynen burada da onu söylüyor. Yani bir çarpma işleminden veya bir V işleminden veya bir kümelerdeki neye karşılık geliyor?
+
+153
+00:33:11,903 --> 00:33:13,443
+Kesişim yani intersection.
+
+154
+00:33:17,332 --> 00:33:18,732
+işlemine karşılık geliyor.
+
+155
+00:33:20,772 --> 00:33:32,092
+Bütün eğer siz işleri, elemanları, x1'den xn'e kadar sıralarsanız, bunların doğrulukları, önermeleri işte px1, px2'dir.
+
+156
+00:33:32,992 --> 00:33:42,332
+Ve bu her x, px, şu ifade bunun eşitidir veya, tabii bu ancak ve ancak ne zaman doğrudur? Bütün hepsi,
+
+157
+00:33:42,420 --> 00:33:46,480
+doğru olduğundadır. Biraz önce söylediğimizi, biraz daha burada Sözel yazmış.
+
+158
+00:33:49,440 --> 00:33:58,079
+Şimdi önerme fonksiyonun doğruluğu. İşte her x için px ifadesi doğrudur veya yanlıştır dememiz için ne diyeceğiz arkadaşlar?
+
+159
+00:33:59,039 --> 00:34:04,960
+Eğer px doğruysa biraz daha tersinden gidiyoruz. px'imiz doğruysa o zaman diyeceğiz ki bütün x'ler
+
+160
+00:34:05,587 --> 00:34:16,228
+bu eleman için, yani bu şartı sağlıyordur. Eğer doğru değilse bazı x'ler, en az bir tane x, bu şartı bozuyordur diyebiliriz.
+
+161
+00:34:18,748 --> 00:34:32,448
+İşte bir önerme fonksiyonu pn, n kare artı 2n tek sayıdır. Şimdi buna baktığımızda, her n eleman diskorsu, bütün tam sayılar diskorsunda,
+
+162
+00:34:33,396 --> 00:34:54,936
+Bu doğru olur mu? Olmaz. Şu ifade ne olmaz? Doğru olmaz değil mi arkadaşlar? Şu durumda. Neden doğru olmaz? Çünkü çift sayılar olduğunda yanlış oluyor. Sadece tek sayılar durumunda doğru oluyor. O zaman diskorsumuzu bu şekilde tanımlayamayız. Doğru olmasını istersek. Bütün tek tam sayılar diyebiliriz ama.
+
+163
+00:35:01,907 --> 00:35:02,768
+Şimdi burada
+
+164
+00:35:02,768 --> 00:35:09,287
+sesleri duymuyorsunuz değil mi? Şey var, animasyon koymuş yine Banu Hoca, zil sesleri falan geliyor.
+
+165
+00:35:10,587 --> 00:35:12,127
+Slide, ha duyuyor musunuz?
+
+166
+00:35:14,287 --> 00:35:16,987
+Evet, her real sayı için
+
+167
+00:35:16,987 --> 00:35:18,027
+x
+
+168
+00:35:18,027 --> 00:35:20,907
+her real sayı için
+
+169
+00:35:20,907 --> 00:35:27,127
+x, her real x sayısı için x kare büyük eşit midir sıfırdan? Doğrudur.
+
+170
+00:35:27,956 --> 00:35:36,496
+Değil mi? Peki şunu sorayım. Aynı durumda x kare büyük eşit midir birden?
+
+171
+00:35:41,492 --> 00:35:42,492
+Neden?
+
+172
+00:35:45,972 --> 00:35:46,472
+Hayır.
+
+173
+00:35:48,731 --> 00:35:49,532
+Evet.
+
+174
+00:35:50,192 --> 00:35:53,892
+Bütün real sayılara baktığımızda şurada bir exception var.
+
+175
+00:35:53,992 --> 00:35:55,312
+Bu exception ne arkadaşlar?
+
+176
+00:35:56,872 --> 00:35:59,072
+Şöyle bir aralık ifade edebiliriz.
+
+177
+00:36:00,032 --> 00:36:00,892
+1 olmayacak.
+
+178
+00:36:01,032 --> 00:36:02,392
+Birden küçük sayılar olacak.
+
+179
+00:36:03,312 --> 00:36:04,752
+Zannediyorum bir de eksi 1 olmayacak.
+
+180
+00:36:05,712 --> 00:36:07,632
+İşte eksi 0.9.
+
+181
+00:36:07,872 --> 00:36:12,012
+Bunun karesini alırsanız, tamam pozitif bir şey gelir de hiçbir zaman
+
+182
+00:36:12,659 --> 00:36:23,480
+birden büyük bir şey bulamıyorsunuz. Logaritmik bir durum var. Aynı şey burada 0.9 içinde var. Bu aralıktaki 0 dahil bütün durumlarda bu false oluyor.
+
+183
+00:36:31,507 --> 00:36:33,507
+Şurayı silelim, diğer yerleri.
+
+184
+00:36:35,507 --> 00:36:37,907
+Evet, her real sayı için
+
+185
+00:36:41,427 --> 00:36:44,587
+x birden büyükse bu ifade doğru mudur arkadaşlar?
+
+186
+00:36:52,916 --> 00:37:03,276
+Her x ray sayısı için bir de ne olacak? x birden büyük olacak. Yani 1,1 bile verseniz illaki şu ifade doğru olacaktır.
+
+187
+00:37:03,876 --> 00:37:10,836
+Şimdi şurada bunu şu şekilde de düşünebiliriz. x artı 1, 1 artı 0 vardır.
+
+188
+00:37:12,115 --> 00:37:16,176
+Şimdi toplama işlemi olduğundan x büyüktür, 1 zaten şuradan sağlıyor.
+
+189
+00:37:19,635 --> 00:37:27,956
+İleride bir şey göstereceğim, bir konuya geleceğiz, orada da benzerini kullanacağız. Yani diyeceğim ki orada n factorial mi büyüktür?
+
+190
+00:37:27,956 --> 00:37:39,076
+Şey açısından, fonksiyonların büyümesi, growth of fonksiyon diye bir konu var. n kare mi büyüktür?
+
+191
+00:37:41,416 --> 00:37:45,355
+Yani n factorial büyük müdür n kare? Bunu daha sonra göreceğiz arkadaşlar.
+
+192
+00:37:46,579 --> 00:37:54,739
+veya başka fonksiyonlar üzerinde de yapılabilir. Bu tarz bir şey orada da kullanacağız. Evet, sonuç doğru. Buna ne dersiniz?
+
+193
+00:38:04,916 --> 00:38:08,596
+Yanlış. Neden yanlış? Çünkü arada yine değerler var.
+
+194
+00:38:11,987 --> 00:38:20,747
+0 sonucunu getirdiğimde, yani 0'ı alırsak, göz önüne alırsak ne olacak? Sonuç olmaz. Ama 0,1 olsa o zaman sorun yok.
+
+195
+00:38:21,947 --> 00:38:30,707
+Her pozitif tam sayı için, ne pozitif ise bu prime mıdır? Bu da bayağı iddialı bir şey olmuş.
+
+196
+00:38:37,619 --> 00:38:46,779
+N çift olacak, pozitif olacak. N kare artı N 19 artı 19 asal sayı olacak.
+
+197
+00:38:47,979 --> 00:38:56,519
+Şimdi bunu birazdan ispatla da göreceğiz arkadaşlar. Bunun doğruluğunu göstermek biraz zor bir şey.
+
+198
+00:38:58,059 --> 00:39:02,979
+Doğruluğunu göstermek yerine ne yapacağız? Çelişki dediğimiz metotla.
+
+199
+00:39:04,403 --> 00:39:10,104
+Doğru olmadığını göstereceğiz. Doğru olmadığını gösterince ne yapıyorsunuz? Yanlış olduğunu göstermiş oluyorsunuz.
+
+200
+00:39:11,384 --> 00:39:15,844
+Doğru olmadığını göstermek için de bir teknik daha var. Aksine örnek bulmak.
+
+201
+00:39:16,983 --> 00:39:21,043
+Örneğin bir verdiğimizde ne oluyor? 19, 20, 21 asal.
+
+202
+00:39:22,503 --> 00:39:30,144
+İki verdiğimizde ikinin karesi 4, 6, 19, 4, 6 daha 25. Değil mi? En eşittir iki için.
+
+203
+00:39:30,804 --> 00:39:38,543
+endepozitif tanımcısı. O zaman bu sonuç 25 asal olmadığı için bu önerme de oradan ikinci denemede çöpe gidiyor.
+
+204
+00:39:40,083 --> 00:39:42,904
+Tamam mı? Bunu birazdan yine ispatla göreceğiz.
+
+205
+00:39:50,900 --> 00:39:54,619
+Şimdi verilen cümleyi mantıksal ifadelerle yazınız demiş.
+
+206
+00:39:56,340 --> 00:40:06,000
+You cannot ride a roller coaster if you are under four feet tall unless you are older than sixteen years.
+
+207
+00:40:08,140 --> 00:40:17,559
+Şimdi birinci önermemiz, işte can veya cannot şeklinde bunu sürebilirsin, Q önermesi.
+
+208
+00:40:18,996 --> 00:40:24,676
+Diğeri, işte 4 feet uzunlukta olmak.
+
+209
+00:40:25,816 --> 00:40:30,716
+Diğeri de, işte 16 yaşından büyük olmak.
+
+210
+00:40:32,856 --> 00:40:38,856
+Bu ifadeyi arkadaşlar, şu şekilde, Cannot Ride the Roller Coaster.
+
+211
+00:40:39,896 --> 00:40:42,836
+Binebilirsin, ancak ne zaman binebilirsin?
+
+212
+00:40:48,884 --> 00:40:49,764
+altında
+
+213
+00:40:49,764 --> 00:40:54,724
+olmak şartıyla, yani şunun tersi, bu ikisini V yapıyoruz.
+
+214
+00:40:55,503 --> 00:40:55,703
+Ve
+
+215
+00:40:55,703 --> 00:40:57,823
+16 yaşından
+
+216
+00:40:57,823 --> 00:41:03,063
+büyük olma şartı, işte İSE bağlayıcı dedik, bu şekilde yapılabilir.
+
+217
+00:41:05,023 --> 00:41:05,423
+Veya
+
+218
+00:41:05,423 --> 00:41:10,123
+şunu tersine alıp, bu ifadelerin tersine alıp
+
+219
+00:41:10,123 --> 00:41:11,864
+aslında ne yapıyoruz?
+
+220
+00:41:12,804 --> 00:41:14,364
+Biraz daha farklı bir dille yazıyoruz.
+
+221
+00:41:14,364 --> 00:41:15,483
+Demorgan gibi.
+
+222
+00:41:16,052 --> 00:41:32,211
+veya S diyoruz şu ifade, ise Q. Bu şekilde mantıksal bir ifadeyle, tabii bu kişinin şuradaki önermeleri alıp, şuradaki cümleyi yorumlamasına bağlı.
+
+223
+00:41:38,739 --> 00:42:03,380
+Şimdi existential quantification arkadaşlar, bir elemanda, şey bir kümede bir eleman var bu işlemi doğru yapan. Ama bütün elemanlar bunu doğru yapmıyor. Bu da varlığı, çözümün mümkün olduğu durumları ifade etmekte veya önermenin doğru olabileceği durumları ifade etmekte kullanılıyor.
+
+224
+00:42:05,844 --> 00:42:26,123
+Sıralama zor bir problem. Peki sıralamanın çözümü var mı? Belli durumlar altında vardır. Çözümü olmayan bir problem değil. Şu şartlar altında çözümü vardır gibi veya şu eleman bu önermeyi doğru yapar gibi en az bir tane x değerinin var olduğunu ifade etmek için kullanılan operatör.
+
+225
+00:42:35,411 --> 00:42:38,731
+Bunu doğru yapan derize bir tane olabilir.
+
+226
+00:42:40,411 --> 00:42:42,511
+Şeklinde genellikle ifade edilebiliyor.
+
+227
+00:42:43,271 --> 00:42:45,211
+Bu da neye karşılık geliyor arkadaşlar?
+
+228
+00:42:46,791 --> 00:42:52,431
+Veya operatörüne veya kümelerin birleşimine veya Sigma işlemine karşılık gelecek.
+
+229
+00:42:53,591 --> 00:42:59,411
+En az bir tane birimiz varsa, doğrumuz varsa, şurada olduğu gibi sonucumuz ne olacak?
+
+230
+00:42:59,411 --> 00:43:00,671
+Doğru olacaktır.
+
+231
+00:43:03,380 --> 00:43:11,239
+Bazı, bakın bazı ifadesi burada önemli. Biraz öncekinde ne vardı? Her vardı, evri vardı. Burada bazı diyoruz artık.
+
+232
+00:43:12,140 --> 00:43:25,800
+Bazı real sayılar için x, x sayıları için x bölü x kare artı bir eşittir iki bölü beş. Nedir bu? x eşittir iki mesela. Öyle değil mi?
+
+233
+00:43:26,600 --> 00:43:29,760
+Belki başkaları için de denklem çözerseniz başka bir şey bulabilirsiniz.
+
+234
+00:43:30,516 --> 00:43:37,456
+Bunun doğruluğu bazı real sayıları için en az bir tane örnek bulacağımız için kullanılabiliyor.
+
+235
+00:43:37,615 --> 00:43:40,796
+Şimdi bu da nerede mantıkta daha çok karşımıza çıkar?
+
+236
+00:43:42,716 --> 00:43:44,936
+Bir şeyin yokluğu ispat edilmez.
+
+237
+00:43:46,136 --> 00:43:49,956
+Falanca önerme yoktur gibi denmez.
+
+238
+00:43:50,115 --> 00:43:54,456
+Bu problemde böyle bir x değeri yoktur gibi bir şey yokluğun ispatı olmaz.
+
+239
+00:43:54,556 --> 00:43:56,216
+Çünkü real sayılar sonsuz tane.
+
+240
+00:43:57,172 --> 00:44:21,152
+Sonsuz taneyi deneyip ispat yapmak mümkün değil. Ama yokluğu ispat yerine var olmadığını iddia ederiz, varsayarız. Bunun çözümü şu an için yoktur, varsayılır. Onun için kanun durumunda olmuyor, teori durumunda en fazla kalabiliyor. Örnek vereyim.
+
+241
+00:44:21,748 --> 00:44:41,488
+Belki yapısal programında veya başka bir derste söyledim. A üzeri 4, B üzeri 4, C üzeri 4, D üzeri 4. Bu A, B, C'de bir 4 basamaklı sayı bu zamanında böyle iddia edilmiş, böyle bir şey yoktur gibisinden. Acaba yok mudur veya var mıdır?
+
+242
+00:44:42,675 --> 00:44:50,536
+Bunun yok olmadığı, işte 1600 küsürlü bir sayıdı zannediyorum. Tam 1617 miydi neydi öyle bir şey? Tam hatırlamıyorum da.
+
+243
+00:44:51,675 --> 00:45:02,596
+Bunun doğru olmadığı ne zaman ispat edildi? İşte sayısal bilgisayarlar ortaya çıkınca ispat edilmiş bir şey. Böyle bir eşitlik var. Yani bu ifade, böyle bir önerme yanlış oluyor.
+
+244
+00:45:07,476 --> 00:45:10,436
+Ne olacak arkadaşlar? Önermemiz doğru olabilecek.
+
+245
+00:45:11,296 --> 00:45:22,775
+Bazı pozitif integer tam sayı, n tam sayıları için eğer n tam sayıysa n artı 1, n artı 2, n artı 3, n artı 4 neymiş?
+
+246
+00:45:24,396 --> 00:45:28,896
+Eğer n asal sayıysa bunlar asal değildir diyoruz.
+
+247
+00:45:30,516 --> 00:45:35,456
+2 için baktığımızda 3 asal değil ama 4, 3 asal, 4 asal değil.
+
+248
+00:45:36,735 --> 00:45:39,436
+Gibi mesela n eşittir 23.
+
+249
+00:45:40,496 --> 00:45:44,596
+Bunun mesela 2 için baktık doğru çıkmadı çünkü end diyor.
+
+250
+00:45:45,456 --> 00:45:49,256
+Ama 23 için baktığınızda yani bu baya zor bir problem aslında.
+
+251
+00:45:49,416 --> 00:45:51,516
+23'de bunu bulabiliyorsunuz.
+
+252
+00:45:52,356 --> 00:45:56,816
+Şimdi 23 asal, 24 asal değil, 25 asal değil.
+
+253
+00:45:57,460 --> 00:46:24,180
+26 asal değil, 27 asal değil. Bütün hepsini sağladığı için, not prime adı şartını sağladığı için böyle bir önerme doğrudur deriz. Bunu da her yerine sum x, işte px diyeceğiz. Sonra px de işte if x asal ise x asal ise
+
+254
+00:46:27,795 --> 00:46:36,795
+x artı 1, x artı 2, x artı 3, x artı 4, asal değil şeklinde bir şey yazacağız.
+
+255
+00:46:36,916 --> 00:46:42,916
+İşte şu bize bu ifadeyi bazı asallar, bazı x değerlerinin bu önermeyi doğru yapacağını ifade ediyor.
+
+256
+00:46:46,643 --> 00:46:49,304
+Cümleleri lojik ifadelere dönüştürmek.
+
+257
+00:46:51,023 --> 00:46:56,723
+Örneğin, everyone has exactly one best friend.
+
+258
+00:46:57,403 --> 00:47:02,963
+Herkesin tam olarak kesinlikle bir tane en iyi arkadaşı vardır.
+
+259
+00:47:04,743 --> 00:47:09,483
+Bx, y ifadesi, y is the best friend of x.
+
+260
+00:47:09,643 --> 00:47:13,543
+Yani y, x'in en iyi arkadaşıdır şeklinde böyle bir şey var.
+
+261
+00:47:15,668 --> 00:47:38,668
+Şimdi bu cümleden yola çıkarak her x kişisi için bir y kişisi vardır ve bu y kişisi x'in en iyi arkadaşıdır ve z bir diğer kişidir, kişi ise z x'in en iyi arkadaşı değildir.
+
+262
+00:47:42,260 --> 00:47:48,500
+Bu Z kişisi X'in en iyi arkadaşı olmayacak. Cümleyi mantıksal olarak yazalım demiş.
+
+263
+00:47:49,579 --> 00:48:08,280
+Şimdi X var, Y var ve Z var. Diyeceğiz ki arkadaşlar, her X kişisi için, bu X kişinin arkadaşlarından bazıları, Y'lerden bazıları, bunun
+
+264
+00:48:09,076 --> 00:48:13,016
+en iyi arkadaşı olması fonksiyonunu ifade ediyor, ifadesini B.
+
+265
+00:48:14,516 --> 00:48:20,815
+Aynı zamanda bu Z kişileri ne olacak?
+
+266
+00:48:22,115 --> 00:48:29,556
+Y'den farklı olacak ve bu Z kişileri X'in en iyi arkadaşı olmayacak.
+
+267
+00:48:35,632 --> 00:48:39,112
+operatörleri kullanan bu cümle bu şekilde
+
+268
+00:48:39,112 --> 00:48:42,851
+lojik bir ifade şeklinde yazılabilir.
+
+269
+00:48:44,372 --> 00:48:46,632
+Her x kişisi için
+
+270
+00:48:46,632 --> 00:48:50,912
+bazı y kişileri vardır ki bu
+
+271
+00:48:50,912 --> 00:48:53,372
+x'in en iyi arkadaşıdır.
+
+272
+00:48:55,891 --> 00:48:56,532
+Ondan sonra
+
+273
+00:48:56,532 --> 00:48:59,032
+ama her z kişisi
+
+274
+00:48:59,032 --> 00:49:01,931
+y'den de farklı olan z kişileri
+
+275
+00:49:02,900 --> 00:49:06,260
+x'in en iyi arkadaşı değildir.
+
+276
+00:49:11,603 --> 00:49:23,223
+Eğer birisi erkek ve bir ebeveyn ise bu kişi birisinin annesidir.
+
+277
+00:49:25,743 --> 00:49:30,303
+Pardon, erkek, bayansa bu kişi birisinin annesidir.
+
+278
+00:49:30,303 --> 00:49:38,303
+Şimdi x is female, x is parent ve annelik işlemi de şöyle bir...
+
+279
+00:49:38,800 --> 00:49:42,159
+ikili operatörle tanımlanmış olsun. X is the mother of y.
+
+280
+00:49:43,640 --> 00:49:45,680
+Bu cümleyi ifade ederken arkadaşlar,
+
+281
+00:49:46,900 --> 00:49:47,820
+bir, ne olacak?
+
+282
+00:49:48,680 --> 00:49:51,400
+Kişi female olacak. Yani fx sağlayacak.
+
+283
+00:49:52,619 --> 00:49:55,380
+Aynı zamanda bir ebeveyn olacak.
+
+284
+00:49:55,960 --> 00:49:56,820
+O da sağlayacak.
+
+285
+00:49:57,680 --> 00:49:58,800
+Bu ikisiyle birlikte,
+
+286
+00:50:00,800 --> 00:50:01,159
+bu
+
+287
+00:50:01,159 --> 00:50:03,980
+kişi
+
+288
+00:50:05,300 --> 00:50:31,900
+Ne olacak? Anne olacak. Bu kişinin anne olması, pardon, bu kişi kimin annesi olacak? Yeğenin annesi olacak. Yeğenin annesi olma şu şekilde. Ama herkesin annesi olamaz. Bazılarının annesi olacak. İşte burada bir bazı ifadesi kullanıyoruz. Her x ifadesi de bütün kişiler için bu önerme geçerlidir.
+
+289
+00:50:32,884 --> 00:50:37,603
+Bütün kişiler, bütün bayanlar için bunu söyleyebiliriz.
+
+290
+00:50:38,203 --> 00:50:41,543
+Tabi bu ye bir başka insanı ifade ediyor.
+
+291
+00:50:47,380 --> 00:51:03,980
+Şimdi counter example baktığımızda, işte biraz önce söylediğimiz şey, bazı x'ler px'i yanlış yaparsa, universal statement'ta yani her x'de yanlış oluyor.
+
+292
+00:51:05,500 --> 00:51:11,420
+Dolayısıyla birbiriyle beraber kullanılıyor. İşte her x px ifadesindeki px yanlış yapan x değeri,
+
+293
+00:51:12,083 --> 00:51:29,163
+Karşıt örnektir. Bunu birazdan tekrar göreceğiz. Her x diğeri bir asal sayıdır her tam sayı için. Şimdi 4 mesela karşıt bir örnektir. Biraz önce konuştuk. Aksine bir örnek bulduğumuzda bu ifade yanlış oluyor.
+
+294
+00:51:30,663 --> 00:51:37,163
+Demorgan kuralına baktığımızda eğer bu ifadeyi bize demorganla yapmak istersek,
+
+295
+00:51:37,715 --> 00:51:49,875
+Her x için px önermesinin doğruluğu veya yanlışlığı her yerine bazı operatörünü kullanarak nasıl yazarız? Bunun bir defa değini alacağız.
+
+296
+00:51:50,715 --> 00:51:57,855
+Buradaki her yerine, bakın ne oldu? Demorgan'da her yerine bazı sum işlemi geldi.
+
+297
+00:51:59,215 --> 00:52:05,175
+Bazı x değerleri için px önermesi doğru değildir.
+
+298
+00:52:05,811 --> 00:52:12,052
+Bu her x için doğru, tabi bunun parantez için söyleyeceğiz, şu kısım.
+
+299
+00:52:13,811 --> 00:52:21,112
+Bunun değilini alırsak, bazı x'ler için doğru değil.
+
+300
+00:52:25,940 --> 00:52:39,220
+Mesela x eleman asal sayı x kare küçüktür 10. Px önermesi. x is prime.
+
+301
+00:52:42,320 --> 00:52:48,020
+Her x için bu px doğru mudur arkadaşlar? Her x için false'dur.
+
+302
+00:52:49,364 --> 00:53:04,163
+Değil mi? Bunu bir de nasıl ifade ederiz? Bunun değilini alırsak, bunun değilini alırsak, bazı x'ler için px'dir. Yani bazı x'ler için yanlıştır. İşte bu da birbirinin aynısı oluyor.
+
+303
+00:53:07,860 --> 00:53:12,360
+Tabii ben yine önden yazdım. Karışmasın şunlar.
+
+304
+00:53:15,440 --> 00:53:23,160
+Aynısını tam tersinde de kullanınız. Eğer bazı x'ler için px önermesi doğrudur veya yanlıştır diye diyeceksek,
+
+305
+00:53:24,320 --> 00:53:31,540
+bazı x'ler için kısmı her x içine, buradaki ifade de bunun tam tersine dönüşecek.
+
+306
+00:53:36,275 --> 00:53:52,135
+Şimdi, sınıftaki her öğrenci, calculus dersini aldı. Bu, bir sınıfı evrensel küme olarak kabul ettiğimizde, ne oluyor? Şu ifadeye karşılık geliyor. Universal bir quantification oluyor.
+
+307
+00:53:54,876 --> 00:54:01,795
+Ve buradaki P, işte, X öğrencisi, calculus dersini aldı.
+
+308
+00:54:02,164 --> 00:54:16,404
+Bunun negation'ı yani değil'i, it is not the case that böyle bir durum yoktur ki sınıftaki her öğrenci bu kalkulüs dersini almış olsun.
+
+309
+00:54:17,924 --> 00:54:24,824
+Şimdi bunun değil'ini alıp yorumlamak biraz zor gibi değil mi? Yani cümle biraz daha şey oluyor. Her öğrenci bu dersi aldı.
+
+310
+00:54:26,420 --> 00:54:32,320
+Her öğrencinin bu dersi almadığı durumda vardır. Durum değildir gibisinden.
+
+311
+00:54:32,320 --> 00:54:50,539
+Bunu böyle söylemek yerine, ifadenin demorganını aldığınızda, sınıfta bir öğrenci vardır, hangi öğrenci, işte bu dersi almamış bir öğrenci vardır demek, bazen daha kolay olabiliyor yorumlamak açısından.
+
+312
+00:54:52,755 --> 00:55:02,175
+Bu existential quantification yani bir eleman örnek gösterme işlemiyle negation'ını göstermekte şu şekilde yazılıyor.
+
+313
+00:55:03,655 --> 00:55:12,315
+Burada böyle yazdığımız bir şeyi. Burada bunun herin değili buydu. Px'in değili de neydi arkadaşlar? Şuydu.
+
+314
+00:55:13,895 --> 00:55:16,935
+Bu example neyi gösteriyor? Aşağıdaki eşitliği gösteriyor.
+
+315
+00:55:21,076 --> 00:55:46,835
+Px önermesi bütün öğrenciler için doğru değildir. Bazı öğrenciler için Px önermesi doğrudur gibi veya Px önermesinin doğruluğu bütün öğrencilere ait değildir. Px önermesi bazı öğrenciler için yanlıştır şeklinde ifade edebiliriz. Şunun fotoğrafını mı?
+
+316
+00:55:51,923 --> 00:56:05,784
+Slide'ın fotoğrafını mı yoksa benim yazdığım şeyleri mi? Çünkü slide'larda bu var, Banu Hocanın sayfasında. Ayrıca fotoğraf çekmenize onun için gerek yok, onun için söyledim yani.
+
+317
+00:56:10,403 --> 00:56:15,284
+Şey var, Banu Hocanın sayfasına girin, Avesiz sayfasına.
+
+318
+00:56:16,532 --> 00:56:19,952
+Oradan indirebilirsiniz. Hoca kendisi yayınladığı için ben ayrıca şey yapmıyorum.
+
+319
+00:56:29,108 --> 00:56:32,827
+Şimdi örnek olarak bir de tam tersinden yapalım demiş.
+
+320
+00:56:34,927 --> 00:56:38,128
+Sınıfta dersi alan bir öğrenci vardır.
+
+321
+00:56:40,088 --> 00:56:43,288
+Şu şekilde ifade edilebiliyor.
+
+322
+00:56:43,867 --> 00:56:45,088
+Existential olarak.
+
+323
+00:56:46,768 --> 00:56:54,927
+Buradaki Qx, işte x, calculus dersini aldı şeklinde ifade edildiğinde
+
+324
+00:56:56,788 --> 00:57:05,467
+tersi, it is not the case that there is a student in this class who has taken a course in calculus.
+
+325
+00:57:06,367 --> 00:57:10,268
+Bu dersi alan bir öğrencinin olduğu durum yoktur gibi bir şey.
+
+326
+00:57:11,608 --> 00:57:18,827
+Bu aynı zamanda her öğrenci, bu sınıftaki her öğrenci dersi almadı.
+
+327
+00:57:18,827 --> 00:57:21,307
+Sadece bazıları aldı demektir.
+
+328
+00:57:23,860 --> 00:57:31,860
+ifade ediliyor. Yani bunu da şuradaki gibi Demorgan kuralını yazarak elde edebiliyoruz. Özetlersek,
+
+329
+00:57:31,860 --> 00:57:46,443
+şunun ekvivalenti bu olacak, bunun ekvivalenti bu olacak. Her x için px false tur veya
+
+330
+00:57:47,092 --> 00:57:51,492
+Bazı x'ler için, en az bir tane x için px truedur.
+
+331
+00:57:53,492 --> 00:57:56,932
+Öyle bir x vardır ki, px'i false yapar.
+
+332
+00:57:58,072 --> 00:57:58,972
+Spesifik bir x.
+
+333
+00:58:00,492 --> 00:58:03,092
+Her x için px truedur.
+
+334
+00:58:05,592 --> 00:58:08,592
+Gibi söyleyebiliriz.
+
+335
+00:58:13,364 --> 00:58:18,364
+Gelelim ispat konusuna gelmeden önce bir ara verelim.
+
+336
+00:58:19,364 --> 00:58:25,364
+Saat 9.50 10'da görüşürüz arkadaşlar. Hatta isterseniz şöyle yapalım.
+
+337
+00:58:25,364 --> 00:58:30,364
+Onu 5 geçe, 15 dakika ara verelim. Geldiğimizde blok yaparız.
+
+338
+00:58:31,364 --> 00:58:33,364
+İspat konusunu bitiririz.
+
+339
+00:58:33,364 --> 00:58:35,364
+Bazı örneklerimiz var.
+
+340
+00:58:36,244 --> 00:58:41,104
+Ondan sonra yeni konuya geçmeyiz herhalde. Bir bakalım da. Gerekirse geçeriz.
+
+341
+00:58:43,744 --> 00:58:45,443
+Onu beş geçe görüşmek üzere.
+
+342
+01:13:37,460 --> 01:13:41,199
+Evet arkadaşlar, devam edelim.
+
+343
+01:13:50,292 --> 01:14:00,072
+Şimdi ispat konusu ile bunun bazı teknikleri var. Onlara bakacağız, onlarla ilgileneceğiz.
+
+344
+01:14:10,515 --> 01:14:18,876
+Şöyle, şu an rahat görünüyor mu arkadaşlar? Swite görünümüne bir not açacağım da başka şey de yazacağım.
+
+345
+01:14:19,775 --> 01:14:20,536
+Görünüyor hocam.
+
+346
+01:14:21,075 --> 01:14:21,615
+Tamamdır.
+
+347
+01:14:24,015 --> 01:14:30,175
+Şimdi matematikte arkadaşlar tanımlanmış terimler, tanımlanmamış terimler var.
+
+348
+01:14:31,252 --> 01:14:40,292
+Bu matematik sistemde tanımlanmamış terimler daha çok kabullerle ortaya attılan aşağıya. İşte nokta gibi, doğru gibi tanımlanmamış terimler vardır. Geometrede kullanılanlar.
+
+349
+01:14:41,891 --> 01:14:49,072
+Bundan yola çıkarak bir de tanım dediğimiz bir şey var. Yeni bir, biraz önceki tanımlanmamış terimdi.
+
+350
+01:14:50,292 --> 01:14:56,852
+Yeni bir kavram yaratmak amacıyla önceden kabul edilmiş kavramlar ve tanımlanmamış terimlerden bir önerme oluşturmaktır.
+
+351
+01:14:57,555 --> 01:15:07,955
+Yani daha önceden kabul edilen kavramlar var ve tanımlanmamış terimler var. Bunlardan ortaya çıkarak yeni bir önerme oluşturma kısmında tanım yapmak diyoruz.
+
+352
+01:15:08,995 --> 01:15:15,515
+Örneğin iki üçgenin karşılıklı kenarları ve açıları birbirinin aynı ise bu iki üçgen eş üçgendir. Böyle bir tanım.
+
+353
+01:15:16,615 --> 01:15:23,115
+İki açının toplamı 180'dir ise bunlara tamamlayan, bütünleyen açı denir gibi tanımlar.
+
+354
+01:15:25,300 --> 01:15:39,680
+Açı tanımlanmamış bir terim aslında. Biz onun varlığını doğrudan farklı şekilde ispat ediyoruz. Bundan yola çıkarak tamamlanmamış açılar diye bir tanım gerçekleştiriyoruz.
+
+355
+01:15:41,040 --> 01:15:50,739
+Aksiyom ise matematiksel bir sistem içerisinde ispat yapmaksızın doğru kabul edilen bir önerme. İspat yapmadan doğru kabul edeceğiz.
+
+356
+01:15:53,076 --> 01:16:01,736
+Aksiyonun Türkçesinde ne vardı ya? Bir şey daha, bir Türkçe karşılığı vardı da şu an hatırlayamadım.
+
+357
+01:16:03,456 --> 01:16:09,476
+Örneğin, Öklit geometrisindeki aksiyonlar iki nokta verilmiş olsun, bu noktadan geçen bir doğru her zaman mevcuttur.
+
+358
+01:16:10,916 --> 01:16:16,076
+Bunun ispatı yapılmamıştır ama böyle bir kabul bile, yani doğruluğu genellikle kabul ediliyor.
+
+359
+01:16:20,148 --> 01:16:25,268
+Şöyle bir şey yapmak lazım. Ya bütün olasılıkları denemek gerekiyor. O da imkansız bir şey.
+
+360
+01:16:26,167 --> 01:16:30,547
+Veya aksine ispat, çelişki gibi tekniklerle yapmak gerekiyor. Bir saniye arkadaşlar.
+
+361
+01:17:10,579 --> 01:17:19,199
+Diğer örneğimiz, bir doğru ve doğru üzerinde yer almayan bir nokta mevcut olsun. Bu noktadan geçen doğruların bir tanesi verilen doğruya mutlaka paraleldir.
+
+362
+01:17:20,019 --> 01:17:24,899
+Bunu da bir kabul ile, ispat yapmadan, doğru kabul ederek yaptığımız işlem.
+
+363
+01:17:25,899 --> 01:17:33,479
+Eğer önceden ispatlanmış teoremleri, aksiyonları, tanımlamaları kullanarak ve P'nin doğru olduğunu farz ederek
+
+364
+01:17:34,579 --> 01:17:43,180
+P eşittir Q formunda bir önerme varsa bu da teorem oluyor arkadaşlar. Bundan yola çıkarak teoremleri de ispat edeceğiz.
+
+365
+01:17:43,280 --> 01:17:46,000
+Genellikle bakın hep ise bağlacını kullandık.
+
+366
+01:17:47,420 --> 01:18:00,539
+Şimdi ispat çeşitlerine baktığımızda birincisi tabii ispat teoremin doğruluğunu belirlemek için kullanılan bir çıkarım, mantıksal çıkarım yöntemi.
+
+367
+01:18:01,395 --> 01:18:16,855
+Doğrudan ispat yöntemi var. Bu P ise Q tarzı işlemlerde Q önermesinin doğru olduğunu elde etmek için P önermesinin doğruluğu kabul edilerek çözüme ulaşmaya çalışıyoruz.
+
+368
+01:18:18,075 --> 01:18:18,956
+Doğrudan ispatta.
+
+369
+01:18:28,467 --> 01:18:48,188
+çözeceğimiz problemde yapacağımız ispatla P ise Q tarzı bir ispat olmuyorsa, bunun indirect olarak, yani counter pozitifini alarak Q'nun değil ise P'nin değil'i, bunun çelişkisinden yola çıkarak çözüme ulaşabiliyoruz.
+
+370
+01:18:54,260 --> 01:18:59,460
+ifade edilen bir ispat çeşididir. Bunlara örnek vereceğiz.
+
+371
+01:19:00,739 --> 01:19:03,739
+Şimdi doğrudan ispat, indari ispat.
+
+372
+01:19:08,724 --> 01:19:34,344
+Bir diğer ispat tekniği arkadaşlar, tümevarımsal, matematiksel induction. Şimdi bir SN formunda bir eşitlik, özellikle özdeşlik olabilir. Elimizde bir şey varsa bu özdeşliğin ispatında kullanılan bir yöntemdir. Tümevarım konusu bizim zamanımızda lisede anlatılıyordu. Sizde anlatıldı mı? Lisede gördünüz mü?
+
+373
+01:19:41,108 --> 01:19:45,268
+Gördük veya görmedik diye söylemeniz veya yazmanız.
+
+374
+01:19:46,587 --> 01:19:50,288
+Ayrıntısı zaten bir matematikçi kadar ayrıntıya gerek yok arkadaşlar.
+
+375
+01:19:50,748 --> 01:19:52,468
+Gördünüz, görmüşsünüz. Tamam.
+
+376
+01:19:53,427 --> 01:19:55,468
+Bizim zamanlarda da çok ayrıntılı değildi belki.
+
+377
+01:20:07,347 --> 01:20:13,647
+Doğrudan ispat konusunda pek üniversite sınavında test sorusu sorulmadığı için, o nedenle ikinci plana atılan konulardan.
+
+378
+01:20:16,787 --> 01:20:18,807
+Üstün körü geçiliyor genelde.
+
+379
+01:20:20,188 --> 01:20:21,927
+Genellikle özdeşliklerde kullanılıyor.
+
+380
+01:20:22,087 --> 01:20:26,727
+İşte n çarpı n artı bir bölü iki gauss toplamı doğru mudur?
+
+381
+01:20:28,368 --> 01:20:29,448
+Şeklinde bir şey.
+
+382
+01:20:31,127 --> 01:20:32,227
+Buna bakacağız arkadaşlar.
+
+383
+01:20:33,727 --> 01:20:34,227
+Şurada
+
+384
+01:20:34,836 --> 01:20:36,836
+Slides lardan da daha sonra
+
+385
+01:20:41,971 --> 01:20:43,011
+başka örnekler var.
+
+386
+01:20:46,171 --> 01:20:46,871
+Demek ki
+
+387
+01:20:46,871 --> 01:20:49,391
+doğrudan ispat,
+
+388
+01:20:50,211 --> 01:20:51,931
+dolaylı ispat, induction,
+
+389
+01:20:52,931 --> 01:20:53,871
+bir de iki tane daha
+
+390
+01:20:53,871 --> 01:20:55,011
+tekniğimiz var.
+
+391
+01:20:55,871 --> 01:20:58,011
+Onları slide'dan değil de
+
+392
+01:20:58,011 --> 01:21:01,131
+şu uygulamadan
+
+393
+01:21:01,131 --> 01:21:04,011
+yapalım.
+
+394
+01:21:12,115 --> 01:21:13,115
+ve dro.
+
+395
+01:21:18,515 --> 01:21:19,195
+Evet.
+
+396
+01:21:24,180 --> 01:21:33,140
+Şimdi arkadaşlar, doğrudan ispat dediğimiz şey, p ise q yöntemiyle yapılan ispat çeşitleri.
+
+397
+01:21:42,292 --> 01:21:55,292
+Genellikle bu p dediğimiz şey daha basit bir işlemi, çıkarımı. Bu daha kompleks bir ifadeyi gösterecek.
+
+398
+01:21:55,292 --> 01:21:59,820
+Örneğin, şöyle örnek diyelim.
+
+399
+01:22:04,180 --> 01:22:06,060
+n tek sayı ise
+
+400
+01:22:06,060 --> 01:22:09,399
+tek sayı
+
+401
+01:22:09,399 --> 01:22:13,180
+n kare tektir.
+
+402
+01:22:14,860 --> 01:22:18,280
+n'in tek sayı olduğunu bulabilmemiz P önermesi.
+
+403
+01:22:19,700 --> 01:22:21,640
+n karenin tekliği Q önermesi.
+
+404
+01:22:23,360 --> 01:22:26,860
+Şimdi bu biraz daha basit, bu biraz daha kompleks bir eşitliği gösteriyor.
+
+405
+01:22:30,963 --> 01:22:40,903
+M ve N çift sayı ise M artı N çifttir.
+
+406
+01:22:43,423 --> 01:22:50,564
+Şimdi bu M ve N'nin çift sayı olması P önermesi, M artı N'nin sayılması Q önermesi.
+
+407
+01:22:51,943 --> 01:22:57,163
+Bu taraf biraz daha basit olacak. P tarafı, Q tarafı daha karmaşık.
+
+408
+01:22:57,844 --> 01:23:06,164
+n küp, n kare gibi eşitlikler olacak. Bunun genel olarak üç adımı var. Önce p'yi doğru kabul ediyoruz.
+
+409
+01:23:06,164 --> 01:23:11,283
+p doğru kabul edilir.
+
+410
+01:23:14,771 --> 01:23:15,771
+Sonra
+
+411
+01:23:16,971 --> 01:23:20,252
+Q'nun doğruluğu gösterilmeye çalışılır.
+
+412
+01:23:25,011 --> 01:23:26,731
+gösterilmeye
+
+413
+01:23:28,731 --> 01:23:30,131
+çalışılır.
+
+414
+01:23:32,431 --> 01:23:33,451
+3.
+
+415
+01:23:34,811 --> 01:23:40,731
+PSQ'nun doğruluğu söylenir. Bu en temel diğerleri de bundan türüyor.
+
+416
+01:23:45,011 --> 01:23:50,011
+PSQ doğruluğu söylenir veya belirtilir.
+
+417
+01:23:51,511 --> 01:24:00,511
+Genel yapısı budur arkadaşlar. Yazmada bir problem var mı? Yani anlaşılıyor değil mi? Biraz grafik tableti öğreniyoruz yazmayı yavaş yavaş.
+
+418
+01:24:02,211 --> 01:24:05,811
+Şimdi gelelim bununla alakalı örneğimize.
+
+419
+01:24:09,811 --> 01:24:11,692
+en çift sayı ise
+
+420
+01:24:18,547 --> 01:24:31,547
+n kare çift sayıdır. Böyle bir önerme. Bu önermenin doğruluğunu ispat ediniz, önermesini ispat ediniz dediğinde.
+
+421
+01:24:32,307 --> 01:24:41,728
+Şimdi ne yapacağız arkadaşlar? P'yi doğru kabul edeceğiz. Yani P dediğimiz şey ne burada? n çift, q n kare çift.
+
+422
+01:24:43,220 --> 01:24:46,819
+Tabi matematik ve mantık burada iç içe giriyor.
+
+423
+01:24:49,120 --> 01:24:51,720
+Bunu kaydedebilir miyim bilmiyorum da.
+
+424
+01:24:53,020 --> 01:24:58,120
+İsterseniz ekran görüntüsünü alabilirsin ama çok da hani böyle kapsamlı şeyler değil.
+
+425
+01:24:58,319 --> 01:24:59,319
+Herhalde
+
+426
+01:25:00,520 --> 01:25:02,319
+Belli bir formatta
+
+427
+01:25:06,292 --> 01:25:08,412
+Share dersem ne olur? Yok olmaz.
+
+428
+01:25:10,632 --> 01:25:11,992
+Bu PDF olarak
+
+429
+01:25:18,355 --> 01:25:20,355
+print dersek herhalde
+
+430
+01:25:21,716 --> 01:25:23,716
+print preview diyelim
+
+431
+01:25:24,355 --> 01:25:27,355
+evet, bir pdf olarak kaydederiz bunu, tamam.
+
+432
+01:25:29,355 --> 01:25:32,355
+örneğimizde p önermesi çift,
+
+433
+01:25:32,595 --> 01:25:38,355
+q önermesi n çift p için, q önermesi n karenin çift olduğudur.
+
+434
+01:25:38,555 --> 01:25:41,195
+şimdi birinci adımımız
+
+435
+01:25:43,731 --> 01:25:57,611
+P'nin doğruluğu kabul edilecek. Şimdi diyeceğiz ki n eşittir, 2k gibi bir sayı olsun ve k eleman tam sayı olsun. Bu doğru kabul ediliyor.
+
+436
+01:26:00,111 --> 01:26:01,891
+Kabul edilir.
+
+437
+01:26:02,791 --> 01:26:04,631
+n yerine 2k dedik.
+
+438
+01:26:05,072 --> 01:26:07,291
+O zaman n² dediğimiz şey
+
+439
+01:26:08,212 --> 01:26:11,632
+2k'nın karesi, 4 çarpı k'nın karesi.
+
+440
+01:26:12,452 --> 01:26:14,391
+Şimdi bunu şu şekilde yazarsak,
+
+441
+01:26:18,260 --> 01:26:20,260
+2 çarpı
+
+442
+01:26:21,260 --> 01:26:23,260
+2k'nın karesi formatında
+
+443
+01:26:25,860 --> 01:26:26,860
+ve burada
+
+444
+01:26:27,659 --> 01:26:29,659
+2k'nın karesi için
+
+445
+01:26:33,268 --> 01:26:36,007
+Şöyle bir eşitlik yapalım.
+
+446
+01:26:37,148 --> 01:26:39,547
+P eşittir, 2k'nın karesi olsun.
+
+447
+01:26:41,167 --> 01:26:44,547
+Ve P eleman doğal sayı.
+
+448
+01:26:45,827 --> 01:26:49,327
+Buradan elde ettiğimiz sonuç ne olacak? 2p olacak değil mi arkadaşlar?
+
+449
+01:26:52,288 --> 01:26:58,368
+Üçüncü adımda n kare için 2p tarzında bir şey değil.
+
+450
+01:26:58,467 --> 01:26:59,688
+Şimdi biz 2k'ya
+
+451
+01:27:01,555 --> 01:27:08,555
+bir çift sayı formatı demiştik. Burada da 2k benzeri 2p gibi bir şey oldu. Burada
+
+452
+01:27:09,155 --> 01:27:13,755
+çift sayı, tabii biz burada ne yaptık birisi doğru kabul etmiştik.
+
+453
+01:27:14,435 --> 01:27:17,956
+Eldettiğimiz bu doğruluğu burada gösterdik.
+
+454
+01:27:19,155 --> 01:27:26,155
+Şurada da göstermeye çalıştık 2p olarak. n karede 2p formatında çift sayı formatıdır dedik.
+
+455
+01:27:28,979 --> 01:27:31,619
+olduğu için
+
+456
+01:27:36,340 --> 01:27:47,380
+Şöyle, as a result of veya sonuç olarak deyip, n kare çift sayıdır diyebiliyoruz.
+
+457
+01:27:49,260 --> 01:27:53,100
+Tamam mı? Bundan anlaşılmayan bir şey var mı?
+
+458
+01:27:56,819 --> 01:27:58,059
+Hocam bir şey sorabilir mi?
+
+459
+01:28:00,179 --> 01:28:06,239
+Şey, şurada hani ikinci adımda PHT 2K kare dediniz ya, orayı anlamadım ben.
+
+460
+01:28:07,119 --> 01:28:08,659
+O PHT 2T mi?
+
+461
+01:28:09,099 --> 01:28:13,299
+Benim işim, şöyle söyleyeyim, çift sayı formatım 2 çarpı bir şey.
+
+462
+01:28:14,639 --> 01:28:16,420
+R tam sayı, tamam mı?
+
+463
+01:28:18,079 --> 01:28:19,079
+Genel formatımız.
+
+464
+01:28:19,572 --> 01:28:45,032
+elde ettiğim 2k'yı n karede yerine yazdığımda n de 4k'nın karesini elde ediyorum. Bu 4k'nın karesini de 2x2x2k kare şeklinde yazıyorum. Buradan tekrar şu 2k'ya benzer bir eşitlik bulmaya çalışıyorum. Diyorum ki 2k'nın karesi p gibi bir sayıya eşit olsun.
+
+465
+01:28:45,492 --> 01:28:49,492
+p eleman doğal sayı durumunda. 2p'yi buluyoruz.
+
+466
+01:28:50,192 --> 01:28:51,311
+Sonuç olarak.
+
+467
+01:28:51,311 --> 01:28:54,811
+Ve n kare eşittir, 2p gibi bir eşitlik elde ediyoruz.
+
+468
+01:28:55,072 --> 01:29:00,772
+Bizim başta kabul ettiğimiz çift sayı formatına uygun bir formata geldik yine.
+
+469
+01:29:01,432 --> 01:29:05,932
+Aynı formatta üretebildiğimiz için bu da çift sayı formatındadır.
+
+470
+01:29:06,192 --> 01:29:09,832
+Dolayısıyla n kare, shift sayıdır diyebiliriz.
+
+471
+01:29:09,984 --> 01:29:14,084
+Hocam yani o P'nin şey, mantıktaki P ile bir alakası yok değil mi? Herhangi bir şey.
+
+472
+01:29:14,264 --> 01:29:18,024
+Yok yok değişken. P eleman doğal sayı dedik yani. Bu şey önerme değil.
+
+473
+01:29:18,584 --> 01:29:18,863
+Anladım.
+
+474
+01:29:19,543 --> 01:29:19,783
+Tamam.
+
+475
+01:29:22,424 --> 01:29:27,123
+Şimdi mesela arkadaşlar, şöyle bir şey burada doğrudan ispatla mümkün değil.
+
+476
+01:29:28,764 --> 01:29:30,244
+N kare çift ise
+
+477
+01:29:30,244 --> 01:29:33,884
+N çift sayıdır.
+
+478
+01:29:37,268 --> 01:29:38,507
+ispatlayınız.
+
+479
+01:29:43,412 --> 01:29:52,131
+n karenin çift olduğunu p önermesi olarak burada yazamadığımız için burada doğrudan ispatla bunu yapmak mümkün değil arkadaşlar.
+
+480
+01:29:56,916 --> 01:30:15,855
+Neden doğrudan olmaz? Diyeceğiz ki n kare eşittir 2k. K eleman doğal sayı. Şey pardon tam sayı. Şimdi bu şekilde yazacağız. Şimdi bana lazım olan şey daha basit bir ifade.
+
+481
+01:30:21,171 --> 01:30:43,211
+Kökünü aldığımız bir şey ne olacak? En eşittir. Kök 2 çarpı, kök k gibi bir şey veya kök 2k. Bu ifadeden k'nın değerine göre bir k'nın doğal sayı olması gibi bir şey söz konusu olamıyor. Yani kesin bulamıyorsunuz. Doğrudan ispat o nedenle burada yetersiz kalıyor.
+
+482
+01:30:45,271 --> 01:30:46,391
+Tamam mı arkadaşlar?
+
+483
+01:30:47,188 --> 01:30:50,007
+Bu tamamsa dolaylı ispata geçelim.
+
+484
+01:30:55,891 --> 01:30:57,011
+Şimdi dolaylı
+
+485
+01:30:57,011 --> 01:31:01,412
+indirect
+
+486
+01:31:01,412 --> 01:31:07,331
+olmayana ergi
+
+487
+01:31:07,331 --> 01:31:09,511
+veya
+
+488
+01:31:09,511 --> 01:31:12,451
+kontra pozitif
+
+489
+01:31:16,020 --> 01:31:19,560
+Zaten asıl şey arkadaşlar burada bu. Counter positive.
+
+490
+01:31:23,380 --> 01:31:34,300
+Genellikle, şu doğrudan ispatla yapılamayan bu tarz eşitliklerin, bu tarz önermelerin ispatında kullanılır. Örnek.
+
+491
+01:31:37,971 --> 01:31:39,731
+n kare tek ise
+
+492
+01:31:39,731 --> 01:31:43,691
+n tek sayıdır.
+
+493
+01:31:46,331 --> 01:31:48,851
+Birçok kitapta bu örnekleri bulabilirsiniz.
+
+494
+01:31:49,091 --> 01:31:50,851
+Daha bu ve benzerilerini.
+
+495
+01:31:52,131 --> 01:31:52,931
+m artı n
+
+496
+01:31:52,931 --> 01:31:54,451
+tek ise
+
+497
+01:31:54,451 --> 01:31:58,931
+m ve n tek
+
+498
+01:31:58,931 --> 01:32:00,291
+sayıdır.
+
+499
+01:32:02,291 --> 01:32:02,971
+Diyelim.
+
+500
+01:32:04,051 --> 01:32:08,851
+Şimdi bu ifadelerden doğrudan bir ispat yapılamadığı için
+
+501
+01:32:08,851 --> 01:32:10,931
+diyeceğiz ki arkadaşlar
+
+502
+01:32:10,931 --> 01:32:14,451
+P ise Q yerine
+
+503
+01:32:14,451 --> 01:32:19,771
+P ise Q'nun karşı tersi
+
+504
+01:32:19,771 --> 01:32:21,871
+Q'nun değil ise
+
+505
+01:32:21,871 --> 01:32:24,171
+P'nin değili kullanarak
+
+506
+01:32:24,171 --> 01:32:27,191
+ne yapıyoruz?
+
+507
+01:32:28,091 --> 01:32:29,412
+Doğrudan ispat yapıyoruz.
+
+508
+01:32:32,243 --> 01:32:36,323
+kullanarak doğrudan ispat dolaylı bir şekilde yapılır.
+
+509
+01:32:47,091 --> 01:32:51,572
+Aslında yine doğrudan ispat var da doğrudan ispatı dolaylı olarak yapıyoruz.
+
+510
+01:32:52,251 --> 01:32:53,351
+Örneğimize gelelim.
+
+511
+01:32:54,691 --> 01:32:56,791
+Örneğimizde P önermesi nedir arkadaşlar?
+
+512
+01:32:58,191 --> 01:33:00,152
+N kare tek sayı. Doğru mu?
+
+513
+01:33:01,691 --> 01:33:02,652
+Q önermesi ne?
+
+514
+01:33:04,471 --> 01:33:05,992
+N tek sayı.
+
+515
+01:33:07,331 --> 01:33:12,131
+Bana karşı tersi, counter pozitif lazım olduğu için P'nin tersini bulmam lazım.
+
+516
+01:33:12,251 --> 01:33:13,231
+P'nin tersi nedir?
+
+517
+01:33:14,003 --> 01:33:14,884
+söyleyin bakalım.
+
+518
+01:33:24,435 --> 01:33:26,935
+n kare tek sayıysa p'nin tersi nedir?
+
+519
+01:33:29,195 --> 01:33:30,355
+n kare çift sayı.
+
+520
+01:33:31,015 --> 01:33:32,195
+Evet, güzel.
+
+521
+01:33:33,655 --> 01:33:34,695
+Başka durum yok çünkü.
+
+522
+01:33:36,155 --> 01:33:38,675
+n kare tek değildir olmuyor. Bunun tersi
+
+523
+01:33:38,675 --> 01:33:42,415
+n kare çift sayıdır.
+
+524
+01:33:44,935 --> 01:33:46,895
+Olumsuzu başka, tersi başka.
+
+525
+01:33:48,235 --> 01:33:51,415
+Q'nun değili de n çift sayıdır.
+
+526
+01:33:54,868 --> 01:33:59,868
+diyeceğiz ve önermemizin yeni hali
+
+527
+01:34:02,167 --> 01:34:04,568
+n çift sayı ise
+
+528
+01:34:11,252 --> 01:34:24,252
+n çift sayı ise n kare çift sayıdır haline geliyor. Öyle değil mi? Yani q'nun değili ise p'nin değili formatına getirdik.
+
+529
+01:34:24,252 --> 01:34:35,788
+Şimdi biz bunun logic equivalent olduğunu biraz önce söylemiştik. Öyle değil mi arkadaşlar? Şimdi şuradan yukarıya
+
+530
+01:34:40,532 --> 01:34:42,391
+Şöyle ayrı bir sayfa açayım.
+
+531
+01:34:44,152 --> 01:34:44,971
+P ise Q.
+
+532
+01:34:46,711 --> 01:34:48,431
+Neydi bunun doğruluk tablosu?
+
+533
+01:34:48,551 --> 01:34:52,612
+0'a 0, 0'a 1, 1'e 0, 1'e 1.
+
+534
+01:34:52,832 --> 01:34:54,192
+0'a 0'da 1.
+
+535
+01:34:54,951 --> 01:34:56,152
+0'a 1'de 1.
+
+536
+01:34:56,992 --> 01:34:58,351
+1'e 0'da 0.
+
+537
+01:34:59,092 --> 01:34:59,971
+1'e 1'de 1'di.
+
+538
+01:35:00,971 --> 01:35:03,791
+Q'nun değili ise P'ye bakalım.
+
+539
+01:35:03,891 --> 01:35:04,791
+P'nin değiliğine bakalım.
+
+540
+01:35:05,939 --> 01:35:19,199
+Q'nun değili 1'dir, p'nin değili 1'dir, 1'e 1'de ne olur? 1 olur. Ondan sonra Q'nun değili 0'dır, p'nin değili 1'dir, 0'a 1'de ne oluyor? Yine 1 oluyor.
+
+541
+01:35:20,319 --> 01:35:30,763
+Q'nun değili 1'dir, p'nin değili 0'dır, 1, 0'da 0 olur. Q'nun değili 0'dır, p'nin değili 0'dır, 0, 0'da 1 oluyor. Bakın bu ikisi...
+
+542
+01:35:30,771 --> 01:35:40,832
+Lojik olarak, mantıksal olarak eş değer geldiği için ne diyeceğiz? Burada da mantıksal eş değerlikten yola çıkarak Counter Pozitif'ini gidiyoruz, buluyoruz.
+
+543
+01:35:41,371 --> 01:35:46,791
+Ve artık bu aşamadan sonra yapacağımız şey doğrudan ispat oluyor.
+
+544
+01:35:46,791 --> 01:35:49,051
+Tamam mı?
+
+545
+01:35:52,011 --> 01:35:54,711
+Örnek olarak birinci aşamada
+
+546
+01:35:56,404 --> 01:35:58,744
+Yine doğrudan ispatı çalıştıracağız.
+
+547
+01:36:00,244 --> 01:36:03,584
+N eşittir, işte 2k, k eleman
+
+548
+01:36:07,091 --> 01:36:07,911
+Tam sayı.
+
+549
+01:36:09,871 --> 01:36:11,311
+İkinci durumda,
+
+550
+01:36:13,492 --> 01:36:16,511
+işte n kare eşittir 4k'nın karesi.
+
+551
+01:36:17,551 --> 01:36:20,251
+Bu da 2 çarpı 2k'nın karesi dedik.
+
+552
+01:36:21,751 --> 01:36:25,251
+Ne bileyim, hani karışmasın diye
+
+553
+01:36:25,251 --> 01:36:28,291
+2k'nın karesine u diyelim.
+
+554
+01:36:29,871 --> 01:36:31,691
+u eleman tam sayı olsun.
+
+555
+01:36:31,691 --> 01:36:33,511
+Veya pozitif olmasına gerek yok.
+
+556
+01:36:33,691 --> 01:36:34,411
+Tam sayı olsun.
+
+557
+01:36:41,652 --> 01:36:48,971
+Üçüncü durumda ne yapacağız? n kare eşittir. 2k'nın karesi 2u gibi bir formül elde edeceğiz.
+
+558
+01:36:49,652 --> 01:36:56,452
+Buradan da diyeceğiz ki n kare çift sayıdır.
+
+559
+01:36:58,572 --> 01:37:08,572
+Ve doğrudur. Ne doğru olan ne yeni önermemiz doğru olan Q'nun değili ise P'nin değili doğrudur arkadaşlar.
+
+560
+01:37:09,235 --> 01:37:13,556
+Şimdi bu doğru olduğu için bunun karşı tersi olan dolayısıyla
+
+561
+01:37:13,556 --> 01:37:16,355
+as a result of
+
+562
+01:37:16,355 --> 01:37:18,735
+p ise q
+
+563
+01:37:18,735 --> 01:37:20,815
+önermesi
+
+564
+01:37:20,815 --> 01:37:22,695
+de
+
+565
+01:37:22,695 --> 01:37:25,216
+doğrudur.
+
+566
+01:37:26,796 --> 01:37:29,895
+Yani n kare tek sayı ise n
+
+567
+01:37:29,895 --> 01:37:32,956
+tek sayı olarak ispat ediliyor.
+
+568
+01:37:34,175 --> 01:37:35,235
+Bunda anlaşılmayan bir şey.
+
+569
+01:37:38,707 --> 01:37:39,528
+Yok hocam.
+
+570
+01:37:42,487 --> 01:37:43,247
+Pekala.
+
+571
+01:37:46,931 --> 01:37:56,931
+Şimdi üçüncü ispat tekniğimiz Proof by Contradiction çelişki ile ispat.
+
+572
+01:38:07,636 --> 01:38:25,956
+Burada arkadaşlar bir önermenin olumsuzu, p önermesi veya p ise q önermesi olsun, bunun önermesinin olumsuzu diyelim.
+
+573
+01:38:29,300 --> 01:38:33,440
+ispat edilir. Kendisi değil olumsuzdur. Dikkat edelim.
+
+574
+01:38:38,676 --> 01:38:46,615
+Olumsuzluğunu ispat ederek ne yapacağız peki? Kendisinin ispatını dolaylı olarak yorumlamış olacağız.
+
+575
+01:38:48,916 --> 01:39:02,275
+P önermesi için mesela P'nin yanlışlığı doğru olmadığı, P ise Q tarzında bir önermeyi de nasıl yapacağız arkadaşlar?
+
+576
+01:39:02,275 --> 01:39:04,136
+Şimdi bunun yanlışlığını bulabilmemiz için.
+
+577
+01:39:04,627 --> 01:39:21,868
+Bunu o zaman diyeceğiz ki P'nin değili Q şeklinde yazacağız. Bunun yanlışlığını bulurken, değilini alacağız. Değilini almak ne demek? Demorgandan P ve Q'nun değili ile yanlışlık ispatı yapılır. Tamam mı?
+
+578
+01:39:23,387 --> 01:39:25,868
+İspat edilir.
+
+579
+01:39:31,123 --> 01:39:55,243
+Örneklere geleceğiz de. Dikkat edin, burada yanlışlık var arkadaşlar. Bir şeyin yanlışlığını çelişkiyle ispat ediyoruz. Örneğin size desem ki, kare kök 4. Bunun tam sayı olmadığını ispat ediniz. Tam sayı olduğu ispat edilir. Tam sayı olmadığı ispat edilemez.
+
+580
+01:39:55,891 --> 01:40:20,512
+Dolayısıyla ne oluyor? Yanlışlığı ispat edildiği için bu şey başka türlü, bir başka yoldan ispat gerçekleşiyor. Veya çok kullanılan işte nedir? Kök 2. Bunun irrasyonel bir sayı olduğunu ispat ediniz. Bunun irrasyonel bir sayı olduğunu ispat etmek yerine rasyonel olmadığı ispat edilir.
+
+581
+01:40:21,716 --> 01:40:25,036
+Bu şekilde gerçekleştir. Mesela bunu birazdan bakacağız.
+
+582
+01:40:31,572 --> 01:40:33,572
+Şimdi örnek mesela
+
+583
+01:40:36,572 --> 01:40:38,072
+en tek ise
+
+584
+01:40:41,235 --> 01:40:44,595
+n kare de tek sayıdır.
+
+585
+01:40:46,755 --> 01:40:49,015
+Bunu çelişki ile ispat edelim.
+
+586
+01:40:51,296 --> 01:40:55,136
+Şimdi bana bu tarz bir önerme verilmiş mi verilmiş? Şurası P.
+
+587
+01:40:56,876 --> 01:40:58,195
+Burası da Q.
+
+588
+01:41:00,595 --> 01:41:06,155
+Bunu çelişki ile ispat edin diyorsa bir kere bunun
+
+589
+01:41:06,771 --> 01:41:17,172
+değilini alacağım arkadaşlar. Yani P ise Q'nun değilini alacağım. P ise Q var elimde. O zaman bunun değilini almak ne demek? Önce bunu bir değilini alabilmem için
+
+590
+01:41:17,172 --> 01:41:26,551
+bunun normal bir ifadeden kurtarmam lazım. Temel ifadeler cinsinden yazacağım. P'nin değili veya Q idi bu. O zaman bunun değilini alacağım.
+
+591
+01:41:26,551 --> 01:41:32,412
+Bunun bir daha değilini almak, demorgan almak demek P ve Q'nun değili.
+
+592
+01:41:33,043 --> 01:41:40,804
+İster şöyle hesaplarsınız. Tabi bu ekstra işlem gerektirir. Bakın bu biraz daha basit bir şey. Şunu ispat etmeye çalışacağız.
+
+593
+01:41:44,064 --> 01:41:59,283
+Tamam mı? Peki bana burada ne lazım? P var, Q var. Q'nun değili lazım. O zaman Q'nun değiliğine bakalım. Q'nun değili n kare tek sayıdır, n kare çift sayıdır diye kabul ediyoruz.
+
+594
+01:41:59,828 --> 01:42:25,828
+Yani n kare tek ise n kare çift sayı, n kare tektir ifadesini n kare çift sayı değildir yoluyla ispat etmeye çalışıyoruz. Burayı anladık mı? Buranın farkı bu. Biraz önce n kare tek ise n kare teki doğrudan bir şekilde ispat edebiliyoruz. Ama n tek ise
+
+595
+01:42:26,452 --> 01:42:31,051
+n² çift değildir mantığıyla ispat etmek yine bizi aynı yola çıkarıyor.
+
+596
+01:42:32,012 --> 01:42:34,272
+Şimdi o zaman bu yanlışlığı
+
+597
+01:42:34,272 --> 01:42:38,891
+p ve q'nun değili
+
+598
+01:42:38,891 --> 01:42:41,132
+yanlışlığını
+
+599
+01:42:41,132 --> 01:42:44,092
+ispat edelim.
+
+600
+01:42:46,391 --> 01:42:48,832
+Yine aynı doğrudan ispatta olduğu gibi
+
+601
+01:42:48,832 --> 01:42:49,231
+1
+
+602
+01:42:49,231 --> 01:42:53,051
+n eşittir
+
+603
+01:42:54,771 --> 01:42:59,211
+tek sayı formatı 2k artı 1 gibi bir şeydir değil mi? K eleman,
+
+604
+01:43:00,372 --> 01:43:01,971
+eee k eleman,
+
+605
+01:43:07,252 --> 01:43:08,012
+Tam sayı.
+
+606
+01:43:09,812 --> 01:43:11,432
+Bunu doğru kabul ediyoruz.
+
+607
+01:43:12,292 --> 01:43:13,412
+Bu bir P önermesi.
+
+608
+01:43:16,212 --> 01:43:19,512
+Tabii bir dakika, burada bir de şu var arkadaşlar, şurayı unuttuk.
+
+609
+01:43:23,475 --> 01:43:27,055
+Önce yukarıdaki ifadeyi de doğru kalacağız. Yani n tek ise
+
+610
+01:43:27,055 --> 01:43:29,655
+burada
+
+611
+01:43:29,655 --> 01:43:31,735
+n kare
+
+612
+01:43:31,735 --> 01:43:32,655
+çift
+
+613
+01:43:32,655 --> 01:43:34,775
+sayıdır.
+
+614
+01:43:37,615 --> 01:43:40,195
+P ise Q'nun değil'e.
+
+615
+01:43:40,915 --> 01:43:41,175
+Bunu
+
+616
+01:43:41,175 --> 01:43:43,956
+doğru kabul ediyoruz arkadaşlar önce.
+
+617
+01:43:46,395 --> 01:43:47,375
+İkinci aşamada
+
+618
+01:43:47,956 --> 01:43:58,476
+n dediğimiz şeyin 2k artı 1 gibi bir şey olduğunu, işte k eleman tam sayı olduğunu, bunu da doğru kabul ettik.
+
+619
+01:44:00,355 --> 01:44:01,176
+Doğru dedik buna.
+
+620
+01:44:02,916 --> 01:44:08,336
+Şimdi bu doğruluktan yola çıkarak bu doğruluğu şu şekilde n karede göstereceğiz.
+
+621
+01:44:09,355 --> 01:44:12,376
+2k artı 1'in karesini alacağız n kare için.
+
+622
+01:44:13,171 --> 01:44:17,091
+4k'nın karesi artı 4k artı 1 geliyor burada.
+
+623
+01:44:18,451 --> 01:44:21,471
+Şurada ifadeyi şu şekilde düzenlersek,
+
+624
+01:44:22,652 --> 01:44:30,411
+2 parantezinde 2k'nın karesi artı 2k artı 1 şeklinde geldi.
+
+625
+01:44:31,431 --> 01:44:36,711
+Buradan yine 2k'nın karesi artı 2k'yı ne diyelim, t diyelim.
+
+626
+01:44:36,711 --> 01:44:40,451
+T eleman doğal.
+
+627
+01:44:40,756 --> 01:45:01,716
+tam sayı olsun. O zaman bu ne oluyor? 2t artı bir formuna geliyor. 2t artı bir formuna geldiği için biz diyoruz ki n kare şuradan nedir? Tek sayıdır. Öyle değil mi?
+
+628
+01:45:08,884 --> 01:45:28,503
+kabul etmiştik. Şimdi buradan dolayısıyla birinci maddedeki kabul yanlış olur. Bu birinci maddedeki kabul yanlış olduğu için
+
+629
+01:45:32,404 --> 01:45:52,284
+kabulün tersi doğru olur. Ne demekti? n² tek ise n² çift sayıdır. Yani n² burada yanlış çıktığı için ifadenin kendisinin tersi doğru oluyor.
+
+630
+01:45:54,164 --> 01:45:59,963
+Dolayısıyla sonuç olarak olumsuzu yanlış olarak ispat edilen önermede
+
+631
+01:46:00,916 --> 01:46:09,796
+gerçek önerme, asıl önerme doğru olarak bulunmuş oluyor. Yani şöyle de yazabiliriz. P ise Q için
+
+632
+01:46:09,796 --> 01:46:25,036
+P ve Q'nun değil'i önermesi yanlış. Dolayısıyla ne doğru? Şimdi P'nin, aslında bunu şöyle de yazacağız ya, onu da tekrar yazayım.
+
+633
+01:46:28,692 --> 01:46:29,471
+Doğru.
+
+634
+01:46:30,912 --> 01:46:32,192
+Bu yanlışsa bu doğru.
+
+635
+01:46:33,332 --> 01:46:36,832
+Şimdi bunun yanlışlığını şu şekilde de bulabiliriz arkadaşlar.
+
+636
+01:46:38,112 --> 01:46:39,391
+Şu maddelerimize gelelim.
+
+637
+01:46:41,872 --> 01:46:42,692
+Şimdi dedik ki
+
+638
+01:46:42,692 --> 01:46:44,872
+n tek ise
+
+639
+01:46:44,872 --> 01:46:48,431
+n kare çift sayıdır.
+
+640
+01:46:49,431 --> 01:46:50,612
+P ise Q'nun değili.
+
+641
+01:46:51,652 --> 01:46:52,211
+Burada biz
+
+642
+01:46:53,171 --> 01:47:01,071
+Bir kabul yapıyoruz. Eni tek kabul ettik doğruluğunu. P'ye bir dedik değil mi? P'ye birdir arkadaşlar. Yani trudur veya.
+
+643
+01:47:02,851 --> 01:47:10,871
+Şimdi şurada geldiğimizde n kare çift sayıdır dedik. Burada da Q'nun değilini bu şekilde kabul ettik.
+
+644
+01:47:11,380 --> 01:47:16,800
+Burada bu sonuç acaba doğru olacak mı? Yani çift sayıdır önermesi doğru mu? Onu da şurada bulacağız.
+
+645
+01:47:17,579 --> 01:47:24,760
+Geldik geldik, n kare tek sayıdır geldi. Yani Q'nun değil ne oldu? Sıfır oldu. Dolayısıyla Q'nun değil'i yanlış oldu.
+
+646
+01:47:25,600 --> 01:47:29,699
+Şimdi P'ye 1 bulmuştuk, Q'nun değil'i de sıfır bulmuştuk. Getirin burada yerine yazın.
+
+647
+01:47:30,659 --> 01:47:37,020
+1 ve Q'nun değil'i sıfır. 1 ve sıfır nedir? Sıfırdır. Dolayısıyla bu sonuç
+
+648
+01:47:37,587 --> 01:47:46,387
+bize ne yapıyor? Önermenin, bu önermenin yanlış olduğunu, bunun yanlış olması da P ise Q önermesinin doğru olduğunu söylüyor.
+
+649
+01:47:48,147 --> 01:47:49,487
+Burası anlaşıldı mı?
+
+650
+01:47:55,123 --> 01:48:20,764
+Şimdi size soracağımız sorularda, sınavda veya herhangi bir yerde. Bir, bir eşitlik verdi. Derse ki size bunu şu teknikle doğrudan ispatla çözün, dolaylı çözün, contradictionla çözün derse hiç sorun yok. Onun kurallarını uygulayacaksınız. Kurallarınız uygularken de, işte dolaylıysa işte P önermesi şudur. Yani şöyle şurada yazalım.
+
+651
+01:48:21,747 --> 01:48:40,627
+İşte bir cümle verildi size. Siz buradan bir çıkarım yaptınız. Dediğiniz ki, şurası P önermesi, bu kısım Q önermesi. Ben buradan P ise Q'yu doğrudan yöntemle birinci adım, ikinci adım, üçüncü adım ve as a result of these steps,
+
+652
+01:48:41,652 --> 01:48:51,652
+bula bula bula işte doğru veya yanlış gibi bir sonuç üreteceksiniz. Hangi teknik olursa olsun zaten üçü de gördüğünüz gibi bir anlamda aynı şeyi yapıyor. Tamam mı?
+
+653
+01:48:51,652 --> 01:49:04,652
+Veya şöyle soru sorabiliriz. İşte bir eşitlik verildi. Buradan konteksti anlayıp dersiniz ki bu tekste göre burada doğrudan
+
+654
+01:49:05,716 --> 01:49:10,936
+Proof kullanabilirim veya Direct yerine dolaylı kullanabilirim.
+
+655
+01:49:11,596 --> 01:49:13,096
+İşte Çelişki kullanabilirim.
+
+656
+01:49:14,336 --> 01:49:15,876
+Bunu gerekçesini yazarsınız.
+
+657
+01:49:16,916 --> 01:49:19,676
+Çünkü deyip bir gerekçe yazarsınız.
+
+658
+01:49:21,096 --> 01:49:24,316
+Sonra yine yukarıda olduğu gibi
+
+659
+01:49:24,316 --> 01:49:28,576
+niye kalem ucu görünmüyor?
+
+660
+01:49:32,148 --> 01:49:40,068
+yukarıda olduğu gibi P'leri belirtirsiniz. P'ler şuradan bir yerden, Q'lar buradan bir yerden gelir. P ve Q belirlenir.
+
+661
+01:49:42,967 --> 01:49:49,807
+Ondan sonra ispat adımlarına, işte birinci adım, ikinci adım, üçüncü adım, işte sonuçlar vs. bunları ifade edersiniz.
+
+662
+01:49:51,007 --> 01:49:55,087
+Genel olarak yaklaşımınız bu şekilde olacak arkadaşlar. Buraya kadar bir soru var mı?
+
+663
+01:50:02,739 --> 01:50:16,899
+Şimdi yaz okulunda ders verirken şöyle bir şeyle karşılaştık. Biraz da komik yani üniversite öğrencilerinin bunu yapması, yani yapan arkadaşlar da dersi ikinci defa alan arkadaşlardı. Onu size söyleyeyim.
+
+664
+01:50:18,920 --> 01:50:22,220
+Tabii soruyu bir bulayım bir dakika size zahmet. Bir saniye bekleteceğim.
+
+665
+01:50:30,804 --> 01:50:31,523
+Ayrık.
+
+666
+01:50:50,868 --> 01:50:54,868
+Bir saniye indireceğim arkadaşlar. Şeye yüklemiştim. Oradan indireyim.
+
+667
+01:50:54,868 --> 01:50:57,868
+Online Campus
+
+668
+01:51:23,507 --> 01:51:24,507
+Bendev.
+
+669
+01:51:30,387 --> 01:51:36,387
+yaz okulu olduğu için işte bir ödevde birden fazla ödevi şey yapmıştım böyle bir ödev sorusu vardı.
+
+670
+01:51:41,235 --> 01:51:55,836
+Herhalde şuydu. Pozitif sayılar kümesinden olan x üzeri 4, y üzeri 4, 625 ifadesinin çözümünün olmadığını, olmadığının ispatını, hangi ispat yöntemini kullandığınızı belirterek açıklayınız. Ne anlıyorsunuz buradan?
+
+671
+01:51:59,539 --> 01:52:07,859
+Yani A kare artı B kare eşit midir 620 şey? Böyle bir AB ikilisi var mı?
+
+672
+01:52:09,899 --> 01:52:10,659
+Soru bu.
+
+673
+01:52:19,220 --> 01:52:20,220
+Evet.
+
+674
+01:52:22,100 --> 01:52:24,100
+Nasıl ispat edebilirsiniz?
+
+675
+01:52:28,083 --> 01:52:32,984
+Bir arkadaşımız tersine ispat dedi. Tamam, tersine ispat yapmamız için ne yapacağız?
+
+676
+01:52:35,564 --> 01:52:38,844
+P ise Q tarzında yazıp bunun tersini alacağız.
+
+677
+01:52:39,944 --> 01:52:42,323
+A kare artı B kare eşittir 625.
+
+678
+01:52:43,804 --> 01:52:48,144
+İfadesini doğru yapan A virgül B gibi bir eşitlik var mıdır?
+
+679
+01:52:50,064 --> 01:52:52,764
+Şey, ikili var mıdır? A, B ikilisi var mıdır?
+
+680
+01:52:54,463 --> 01:52:55,264
+Bunu çözeceğiz.
+
+681
+01:53:03,636 --> 01:53:08,316
+625'te a kare artı b kare eşittir. 25'in karesi oluyor.
+
+682
+01:53:09,196 --> 01:53:14,236
+Mesela bunu matematik kullanarak ispat edilebilir, başka şekilde ispat edilebilir.
+
+683
+01:53:14,236 --> 01:53:22,356
+Ben burada tabii hangi ispat yöntemini kullanacağını falan hani sadece böyle biraz vakit geçtiğinden de tartışalım diye soruyorum.
+
+684
+01:53:32,500 --> 01:53:59,599
+Olmadığını göstermek, evet zor bir şey. Olduğunu göstermemiz lazım. Peki. Olduğunu göstermek için de elimizdeki yöntemler belli. Ya direct, ya indirect, ya işte contradiction veya şimdi birkaç tane daha yöntem göstereceğim. Onlardan biri. İspat bu şekilde yani yöntemlerle yapılır arkadaşlar. Bilimsel yöntemler. Şimdi öğrencinin cevabı şu.
+
+685
+01:54:00,787 --> 01:54:14,547
+Fermat'ın teoremine göre, yani bu öğrenci bu arada ikinci defa alıyor ders. İspatı işte şu şu değerler için falandır deyip cevap ediyor. Şimdi bu ispat mı arkadaşlar?
+
+686
+01:54:30,899 --> 01:54:32,899
+Mantık konusuna göre değil.
+
+687
+01:54:34,299 --> 01:54:37,499
+Ama ispat zaten mantıkla alakalı bir şey.
+
+688
+01:54:39,099 --> 01:54:42,099
+Veya işte matematikle alakalı bir şey. Sonuçta bilimsel bir şey.
+
+689
+01:54:46,420 --> 01:55:10,199
+Falancanın teoremine göre, falancanın şeyine göre. Evet, kendisi ispatı şöyle, yeni bir önermeyle, evet, o da doğru. Aslında bir çelişkiye düşüyor. Şimdi arkadaşlar, bu bir ispat değil. Neden ispat değil? Falancaya göre, filancaya göre denerek bilimsel metotta, bu ispat metotlarında bir şey ispat edilmez. Bu ancak rivayettir.
+
+690
+01:55:11,444 --> 01:55:33,024
+Bakın size dersin başında şöyle bir şey söyledik. A üzeri 4, B üzeri 4, C üzeri 4, eşittir D üzeri 4 dedik. Bu birinin önermesi ispatı mümkün değil demiş. Eğer biz onun önermesini falan C'ye göre böyledir deseydik, hala bunun çözülemediğini kabul ediyor olacaktık günümüzde değil mi?
+
+691
+01:55:35,664 --> 01:55:38,423
+Yani bir de bunu alan arkadaş ikinci defa almış.
+
+692
+01:55:39,188 --> 01:55:51,188
+Onun için bu tarz ve aynı kişi, aynı cevabı birden fazla kişi verdiği için muhtemelen internetten kopyala yapıştır bir bilgi.
+
+693
+01:55:51,188 --> 01:56:04,488
+Yani ben doğrudan geçen, iki buçuk ay önce karşılaştığımız şey. Dolayısıyla bir şeyi kopyalayıp yapıyorsanız, bari usulüne uygun, dersin içeriğine uygun, bu yapılan şey.
+
+694
+01:56:05,268 --> 01:56:19,548
+Dersin içeriğiyle bu oradan uyuşmayan bir şey. Onun için dikkat etmek gerekiyor. Hem yanlış bilgi alıyor, hem o aldığı bilgiyi sorgulamıyor. Olduğu gibi kopyalayıp yapıştırmış. Yani kendisine yazık ediyor.
+
+695
+01:56:22,548 --> 01:56:31,748
+Yani ondan sonraki şeyde bu arkadaşın çok iddialı, bu tarz insanların çok iddialı konuşmaları karşı tarafta çok şey uyandırmaz.
+
+696
+01:56:33,108 --> 01:56:46,547
+güvenilirliğini yitiriyor. Tamam mı? Bunu söyleyebilirim. Bu konuda bir de iddia falan, ya işte hocam, tamam bari Fermat'ın nasıl yaptığını yazsaydın da ben hani onun doğruluğunu görseydim dedim.
+
+697
+01:56:46,547 --> 01:56:59,887
+Yani doğrudan bir cümle Fermat'a göre böyledir. Bana göre de böyle değildir. O iş birazcık bilimsel değil, ona dikkat edelim. Size gelecek sorular bu şekilde olur arkadaşlar.
+
+698
+01:57:02,131 --> 01:57:26,331
+Çelişki yöntemi de bu şekilde. Şimdi bir diğer yöntem, ben bilmem fermat bilir demiş. Yani fermat bilmiyorsa ben nasıl bilebilirim? O da bir şey. Hani bir Türkçe ben bir yerde görmüştüm. İşte bu yapabiliyorsa ben hayli hayli yaparım. Bu yapamıyorsa ben nasıl yapayım? Hani orada başka sıfatlar kullanıyor da o sıfatları kullanmak istemiyorum.
+
+699
+01:57:27,188 --> 01:57:47,947
+Hani fermat yapmışsa biz yapabiliriz falan diye yorumlar var. Bir diğer yöntemimiz arkadaşlar tümevarım yöntemi. Bunu ilerleyen zamanlarda tekrar bir inceleyeceğiz. Genellikle özdeşliklerin ispatında kullanılır.
+
+700
+01:57:56,500 --> 01:58:05,159
+Özdeşlikler veya bazı teoremler bir merdiven gibi düşünün.
+
+701
+01:58:07,699 --> 01:58:13,579
+Bu merdivenin sağlamlığı en alt basamaktan en üst basamağa tutarlılıkla alakalı.
+
+702
+01:58:13,579 --> 01:58:17,819
+Yani bu sağlıyorsa bu sağlıyorsa bu sağlayabilir, bu sağlıyorsa bu sağlayabilir.
+
+703
+01:58:18,420 --> 01:58:23,939
+Şunun sağlaması bir öncekinin sağlamlığına, güçlülüğüne bağlıdır.
+
+704
+01:58:24,564 --> 01:58:33,224
+Dolayısıyla, bu mantıktan yola çıkarak, biz de ispatlarımızı gerçekleştireceğiz.
+
+705
+01:58:33,304 --> 01:58:42,524
+Örneğin, 1 artı 2 artı n, hepinizin bildiği n çarpı n artı 1, bölü 2.
+
+706
+01:58:43,583 --> 01:58:46,744
+Bunu ispat edin derken, şimdi n'imizin kümesi ne arkadaşlar?
+
+707
+01:58:47,804 --> 01:58:49,304
+Kümenin elemanları önemli.
+
+708
+01:58:50,579 --> 01:59:16,560
+n'e kadar gidiyor. Yani bir için merdiven ilk basamağı, sonra ikinci basamak, k'ıncı basamak, k artı birinci basamak, n-1. basamak, n'inci basamak. Birinci basamağı sağlıyorsa, ikiyi sağlıyorsa, diyeceksin ki ilk elemanlar sağladı. O zaman ben k'ıncı basamağı da sağladığını göstereyim. Sonra k artı birinci basamağı sağladığını kabul edelim. İşte ona göre çıkarım yapalım. Bunun da üç adımı var. Bir.
+
+709
+01:59:17,492 --> 01:59:44,152
+Önce kümenizin ilk elemanı neyse. Bakın burada kümemizin ilk elemanı 1. Ama ben bir teorem ortaya atsaydım. 3'ten başlayıp işte beşer beşer artarak işte bilmem kaça kadar giden sayıların şöyle bir notasyonla gösteririm. O zaman önce 3'ü deneyecektiniz. Merdivenin ilk basamağı burada 1. Yani n eşittir 1 için bu doğru mudur bakacağız. 1 çarpı 2 bölü 2 eşittir.
+
+710
+01:59:45,171 --> 01:59:50,231
+Nedir? Bire eşit midir? Buna bakıyoruz. İşte bu doğru oluyor.
+
+711
+01:59:52,791 --> 01:59:59,371
+Sonra isterseniz iki içinde, üç içinde yapabilirsiniz. Onları da hep doğru olarak, doğruluğunu göstermek gerekiyor burada.
+
+712
+02:00:00,307 --> 02:00:23,747
+Eğer 2 için yanlış çıkarsa bir sonraki adıma geçmeye gerek yok veya 1 için yanlış çıkarsa bir sonraki adıma geçmeye gerek yok. Sonra en eşittir aradan bir k gibi bir şey diyorum. Yani 1 artı 2 artı nokta nokta artı k. Bu nedir? k çarpı k artı 1 bölü 2'dir. Bu arkadaşlar doğru varsayıdır, kabul edilir.
+
+713
+02:00:26,452 --> 02:00:29,412
+Bu önemli bir ifade. Biz bunu doğru kabul ediyoruz şu an.
+
+714
+02:00:30,671 --> 02:00:37,952
+Bu basamak doğruysa bundan bir sonraki basamağın da doğru olmasını ne yapacağız?
+
+715
+02:00:38,372 --> 02:00:39,872
+İspat edeceğiz, göstereceğiz.
+
+716
+02:00:40,811 --> 02:00:42,492
+En eşittir k artı bir için.
+
+717
+02:00:43,511 --> 02:00:49,372
+1 artı 2 artı nokta nokta artı k artı k artı bir elemanımız var.
+
+718
+02:00:50,252 --> 02:00:50,792
+Bu da nedir?
+
+719
+02:00:50,792 --> 02:00:52,492
+Bu da k artı bir çarpı.
+
+720
+02:00:53,652 --> 02:01:03,372
+k artı iki bölü ikidir. Şimdi bunu bulduktan sonra acaba bu doğru mu? Tabii bunu doğru göstermeye doğruluğunu ispat edeceğiz.
+
+721
+02:01:03,372 --> 02:01:12,851
+Bu ispat edilir diyelim. Doğruluğu ispat edilirken bir önceki basamaktaki
+
+722
+02:01:14,579 --> 02:01:18,560
+Doğrulukla bunu kabul ettiğimiz doğruyla bunun tutarlı olması lazım.
+
+723
+02:01:18,699 --> 02:01:22,380
+Şimdi bir önceki basamakta birden k'ya kadar kabul ettiğimiz doğru neydi?
+
+724
+02:01:23,380 --> 02:01:26,960
+k çarpı k artı 1 bölü 2 idi.
+
+725
+02:01:27,319 --> 02:01:29,300
+Artı burada ne var? Bir k artı 1 var.
+
+726
+02:01:31,140 --> 02:01:32,899
+Acaba bu eşit midir?
+
+727
+02:01:34,239 --> 02:01:38,199
+k artı 1 çarpı k artı 2 bölü 2'ye.
+
+728
+02:01:39,199 --> 02:01:40,640
+Eğer bu eşitlik
+
+729
+02:01:41,492 --> 02:01:45,811
+Birebir doğru çıkarsa, diyeceğiz ki doğruluğu ispat edildi.
+
+730
+02:01:47,752 --> 02:01:51,851
+Hepimizin bildiği çarpma bölme falan işte işte.
+
+731
+02:01:51,971 --> 02:01:56,792
+2k artı 1, 2 tane k artı 1, k tane k artı 1 var.
+
+732
+02:01:56,952 --> 02:02:04,851
+Yani işler dışlar çarpım yaparsak, k artı 1 parantezinde k artı 2 gelecek.
+
+733
+02:02:05,311 --> 02:02:07,372
+Doğru mu arkadaşlar? Şurayı anlamayan var mı?
+
+734
+02:02:10,644 --> 02:02:15,783
+Biraz lise öğrencisi değilsiniz. Yani iki tane k artı bir var. Orada da k tane k artı bir var.
+
+735
+02:02:15,884 --> 02:02:28,003
+K artı bir parantezinde bir tarafta k geldi, öbür taraftan iki geldi. Bölü iki. Eşit midir acaba k artı bir çarpı k artı iki bölü ikiye?
+
+736
+02:02:28,003 --> 02:02:35,003
+Evet, eşit çıktı. İşte bu eşittir şu diyelim. Dolayısıyla burası...
+
+737
+02:02:35,988 --> 02:02:45,988
+Doğru oluyor. Bu doğruluktan dolayı, diyoruz ki bu söylenen söz konusu eşitlik, özdeşlik, doğru olarak gösterilir.
+
+738
+02:02:49,716 --> 02:02:51,196
+Problem var mı arkadaşlar?
+
+739
+02:02:52,476 --> 02:02:57,116
+Hocam şey, birinci adımda yanlış çıksa diyelim, ikinci adıma geçmenize gerek yok değil mi?
+
+740
+02:02:57,116 --> 02:03:01,576
+Yok, birinci adım, birinci basamak yanlışsa öbür basamaklara bakmanıza gerek yok.
+
+741
+02:03:02,796 --> 02:03:05,156
+Yani n çarpı n artı 2 bölü 2 değil.
+
+742
+02:03:06,776 --> 02:03:11,776
+Zaten orada bir çarpı işte 3 bölü 2 geldi, bir olmadı sonuç.
+
+743
+02:03:12,896 --> 02:03:17,056
+Sonra baktığınız zaman buradaki sonuçlar da ne oluyor? Şuradaki şeyler yine yanlış olacak.
+
+744
+02:03:17,779 --> 02:03:23,960
+Mesela, n çarpı n artı, hadi 3 diyelim, bölü 2.
+
+745
+02:03:25,259 --> 02:03:30,059
+Birden n'e kadar olan sayıların toplamı.
+
+746
+02:03:31,539 --> 02:03:34,799
+n eşittir 1 için baktığımızda, 1 çarpı 4 bölü 2.
+
+747
+02:03:36,799 --> 02:03:39,579
+Eşit değil, 2'ye.
+
+748
+02:03:40,859 --> 02:03:42,819
+Pardon, bu eşit değil, 1'e.
+
+749
+02:03:43,460 --> 02:03:44,920
+Çünkü 1 için bakıyoruz.
+
+750
+02:03:45,652 --> 02:04:01,152
+n eşittir k için baktığımızda nedir? k çarpı k artı 3 bölü 2. n eşittir k artı 1 için baktığımızda birden k'ya kadar olan sayılar artı k artı 1 için bakacağız.
+
+751
+02:04:02,012 --> 02:04:08,832
+Bu da k artı 1 için k artı 1 çarpı k artı 5 bölü 2.
+
+752
+02:04:09,300 --> 02:04:15,020
+Şimdi bu zaten yanlış olduğu için bakmana gerek yok da buradan da bir doğru düzgün sonuç bulamayacağız.
+
+753
+02:04:15,619 --> 02:04:29,600
+Şimdi birden k'ya kadar k çarpı k artı 4 bölü 2 artı k artı 1 k artı 1 çarpı k artı 5.
+
+754
+02:04:30,319 --> 02:04:32,199
+Bakmaya gerek yok diyorum da bakmayacağız zaten.
+
+755
+02:04:34,739 --> 02:04:55,059
+k artı 4, k artı 1. Bir dakika, hata yapmadık değil mi? k çarpı k artı 4 bölü 2 artı k artı 1. Şimdi şurayla 2k artı 2, 2 tane k artı 1, k tane k artı 4. Buradan bir şey çıkmıyor. Yani bu eşitliği çıkartamıyorsun. Bakalım yine hesaplamaya çalışalım.
+
+756
+02:05:02,576 --> 02:05:28,355
+K'nın karesi artı, şuradan 5K, buradan 1K, 6K, artı 5, bölü 2. K'nın kareleri gitti. Bunlar gitti. 2 eşit midir 5'e? Değildir. Onun için burada da bakın doğrudan yanlış çıktı. Herhalde şurada tam yok değil mi arkadaşlar? K'nın karesi 4K. 2K artı 2, evet.
+
+757
+02:05:29,300 --> 02:05:32,119
+K'nın karesi 5K, 6K, 5.
+
+758
+02:05:33,240 --> 02:05:35,760
+Hocam şey, 4 dedik.
+
+759
+02:05:36,060 --> 02:05:42,260
+4 dediniz. Ya şunu 4 yapsanız olur aslında. İlk baştakini. En çarpı en artı 3 bölü 2, 4 yapsanız.
+
+760
+02:05:44,360 --> 02:05:48,180
+Şunu yapacağız. Bir dakika, bir daha deneyelim. Merak ettim ben bunu.
+
+761
+02:05:49,600 --> 02:05:52,240
+Birinci basamak yanlışsa zaten devam etmemek gerek.
+
+762
+02:05:52,260 --> 02:05:54,480
+Hocam şey 3'e göre deyip 4'e göre yaptınız.
+
+763
+02:05:55,680 --> 02:05:56,020
+Anladım.
+
+764
+02:05:57,332 --> 02:05:58,332
+videa bakalım.
+
+765
+02:06:07,091 --> 02:06:34,091
+k çarpı k artı 3 bölü 2. Buradan bunu bulacağız. Şimdi birden k'ya kadar artı k artı 1 var. Burada k artı 1 çarpı k artı 4 oluyor. Bölü 2. Doğru muyuz? k artı 1, k artı 4 bölü 2. Şimdi şurada k çarpı
+
+766
+02:06:34,515 --> 02:06:39,255
+k artı 3 bölü 2 artı k artı 1 eşittir.
+
+767
+02:06:41,795 --> 02:06:52,555
+k'nın karesi 3k, 2k'da buradan 5k, artı 2 gelecek.
+
+768
+02:06:54,095 --> 02:06:58,855
+k'nın karesi 3k artı 2k artı 2, k'nın karesi artı 5k artı 2, evet.
+
+769
+02:07:01,300 --> 02:07:27,220
+K'nın karesi, 4K, 5K, artı 4, böyle 2, işte ne oldu? 2 var, 4 var, onun için eşit değil. Şimdi herhalde doğru yaptım ama eşitlik sağlanmadığı için zaten burada da yanlış. Ki gerek yok. Şuradan itibaren, yani düğmeyi yanlış iliklerseniz,
+
+770
+02:07:28,467 --> 02:07:30,787
+aşağıda da yanlışa ulaşıyorsunuz.
+
+771
+02:07:34,260 --> 02:07:34,980
+Pekala.
+
+772
+02:07:37,279 --> 02:07:38,859
+Şimdi bu da bir yöntem.
+
+773
+02:07:40,699 --> 02:07:42,079
+Bir iki yöntem daha var.
+
+774
+02:07:42,260 --> 02:07:45,960
+Tabii bunlar kısaca söylenip geçecek şeyler.
+
+775
+02:07:47,199 --> 02:07:48,640
+Şurayı silsem.
+
+776
+02:07:52,372 --> 02:07:54,316
+Large eraser diyelim.
+
+777
+02:08:13,779 --> 02:08:20,799
+Microsoft'un Whiteboard diye bir şeyi var ama onu bu işletim sistemine kuramadım. Nedense sağlamıyor galiba.
+
+778
+02:08:38,003 --> 02:08:41,083
+Bu dönem olasılık istatistik alıyor musunuz arkadaşlar?
+
+779
+02:08:43,383 --> 02:08:44,663
+Alıyoruz hocam.
+
+780
+02:08:45,163 --> 02:08:46,203
+Nasıl gidiyor?
+
+781
+02:08:49,523 --> 02:08:54,903
+Biraz şey, yani normalde bu dersin de içeriğinde var da biz tabii o ayrı bir ders olduğu için
+
+782
+02:08:55,663 --> 02:08:56,943
+buraya girmiyoruz.
+
+783
+02:08:57,723 --> 02:09:03,603
+Normalde counting falan anlatılıyor değil mi? Kümeler, permütasyon, kombinasyon onlar da
+
+784
+02:09:05,108 --> 02:09:09,487
+O dersin içeriğinde var diyebiliyorum. Ondan sonra olasılık fonksiyonlarına falan giriyorlar.
+
+785
+02:09:10,887 --> 02:09:21,547
+Olasılık önemli bir ders. Hatta geçenlerde ben [öğrenci] Bey ile size bir şey gönderdim. Udemy'de bir hocamız, Gebze Üniversitesi'nden bir hocamız bir ders vardı. Üç tane ders.
+
+786
+02:09:21,927 --> 02:09:26,087
+Sinyal işleme, sinyal sistem, olasılık, istatistik. Oradan da faydalanabilirsiniz.
+
+787
+02:09:28,148 --> 02:09:47,508
+Önemli bir ders. İleride faydasını görürsünüz. Tabi hocalar nasıl zorluyor mu, nasıl anlatıyor onu bilmiyorum. Bazı arkadaşlar çok zor falan diyorlardı. Onu bilemem. Rica ederim. Şimdi arkadaşlar şöyle devam edelim. Counter Example.
+
+788
+02:09:51,956 --> 02:09:58,556
+karşıt örnek. Burada önermenin doğruluğu değil, yanlışlığı.
+
+789
+02:10:03,220 --> 02:10:27,779
+Ama önermenin yanlıştı. Biraz önce önermenin ne yaptık? İşte p ise q tarzında bir önermenin tersinin doğruluğunu ispat ettik. Burada da aksine bir örnek vererek, counter example vererek yine yanlışlığı ispat etmek mümkün.
+
+790
+02:10:29,363 --> 02:10:31,643
+Örneğin, tüm asal sayılar tek sayıdır.
+
+791
+02:10:34,943 --> 02:10:40,503
+Tüm asal sayılar tek sayıdır.
+
+792
+02:10:41,463 --> 02:10:42,703
+P önermesi.
+
+793
+02:10:43,763 --> 02:10:48,123
+Bu önermenin doğruluğunu ispat etmek pek mümkün değil.
+
+794
+02:10:48,843 --> 02:10:51,683
+Ama yanlış olduğunu ispat edebiliriz.
+
+795
+02:10:51,723 --> 02:10:54,543
+Çünkü önerme dediğimiz şey sonuçta doğru veya yanlış olacak.
+
+796
+02:10:55,503 --> 02:10:56,063
+Deriz ki,
+
+797
+02:10:56,564 --> 02:10:57,924
+2
+
+798
+02:10:57,924 --> 02:11:00,384
+için
+
+799
+02:11:00,384 --> 02:11:03,124
+önerme yanlıştır.
+
+800
+02:11:09,171 --> 02:11:18,771
+Ondan sonra biraz önce şey demiştik, her x eleman real sayı için x kare büyük sıfır.
+
+801
+02:11:20,771 --> 02:11:25,811
+Önermesi doğru mudur, yanlış mıdır?
+
+802
+02:11:28,791 --> 02:11:29,931
+True, all, false.
+
+803
+02:11:30,851 --> 02:11:31,551
+İspat ediniz.
+
+804
+02:11:32,692 --> 02:11:37,012
+Yani doğru veya yanlış. Neden doğru, neden yanlış? Soru bu şekilde de gelebilir.
+
+805
+02:11:37,752 --> 02:11:42,452
+Şimdi diyeceğiz ki x eşittir sıfır için
+
+806
+02:11:42,452 --> 02:11:47,292
+genelde sıfırları şöyle yazıyorum da bazen unutuyorum.
+
+807
+02:11:48,292 --> 02:11:55,652
+x eşittir sıfır için nedir arkadaşlar? Sıfırın karesi büyük değildir sıfırdan.
+
+808
+02:11:56,652 --> 02:11:58,892
+Yanlış. Nasıl ispat ettik?
+
+809
+02:11:59,572 --> 02:12:00,811
+aksine örnekle.
+
+810
+02:12:03,231 --> 02:12:05,072
+İspat edilir.
+
+811
+02:12:06,032 --> 02:12:09,051
+Çelişki ve aksine örneği dikkat edin arkadaşlar.
+
+812
+02:12:09,211 --> 02:12:11,671
+Burada doğrudan spesifik bir örnek gösteriyoruz.
+
+813
+02:12:12,451 --> 02:12:17,211
+Önermenin üzerinde herhangi bir değil işlemi almadık.
+
+814
+02:12:17,331 --> 02:12:18,991
+Demorgan falan yapmadık. Dikkat edin.
+
+815
+02:12:20,612 --> 02:12:25,291
+Bir de brute force veya deneme dediğimiz
+
+816
+02:12:26,644 --> 02:12:36,203
+TryError, deneme yanılma veya BruteForce, kaba kuvvet, tekniği var arkadaşlar.
+
+817
+02:12:36,203 --> 02:12:41,884
+İşte P önermesi veya P-SQ tarzında bir önermeniz var.
+
+818
+02:12:54,292 --> 02:12:56,592
+Finite set.
+
+819
+02:12:58,891 --> 02:13:01,752
+Sonlu bir küme üzerinde işlem yapıyoruz. Örneğin,
+
+820
+02:13:03,072 --> 02:13:05,912
+x eleman, x şu küme olsun,
+
+821
+02:13:08,132 --> 02:13:09,532
+küme olduğu için şey,
+
+822
+02:13:10,011 --> 02:13:11,832
+bir sıfır, şu dedik.
+
+823
+02:13:13,252 --> 02:13:14,752
+x kare küçük müdür dört.
+
+824
+02:13:16,500 --> 02:13:22,219
+Diyeceksiniz ki yani bunun dörtlüğün küçüklüğünü ispat etmek için işte bir program yazarım. Brute Force.
+
+825
+02:13:23,139 --> 02:13:30,099
+Eksi birin karesi ve şöyle yapalım.
+
+826
+02:13:33,159 --> 02:13:37,500
+Eksi birin karesi küçüktür dört ve
+
+827
+02:13:41,203 --> 02:13:48,423
+Ondan sonra 0'ın karesi küçüktür 4 ve 1'in karesi küçüktür 4.
+
+828
+02:13:49,764 --> 02:13:50,063
+Niye?
+
+829
+02:13:55,444 --> 02:14:02,764
+Şimdi bakacağız, eğer bunların hepsi sağlıyorsa, o zaman doğru. İşte bu doğru, true, bu true, bu true.
+
+830
+02:14:02,764 --> 02:14:09,124
+Bunların V'leri de nedir? Sonuçta doğrudur deyip ispatı gerçekleştiriyorsunuz.
+
+831
+02:14:09,124 --> 02:14:14,044
+Deneme yoluyla. Try error veya işte brute force dediğimiz teknik.
+
+832
+02:14:14,044 --> 02:14:19,044
+Slide tabii geri dönerim, burada soru yoksa.
+
+833
+02:14:22,484 --> 02:14:27,024
+Benim anlattıklarımın benzeri burada da var. Zaten bir kısmını Banu Hoca slide'a geçirmiş.
+
+834
+02:14:29,203 --> 02:14:36,904
+Şurada sayfadaki slide'larda dün Banu Hoca aramıştı. Şu anki hali hazırda bulunan slide'da.
+
+835
+02:14:38,043 --> 02:14:42,163
+Şurada 4K kareden sonra şurayı yeni ekledim arkadaşlar.
+
+836
+02:14:43,163 --> 02:14:49,923
+Çünkü şurada muhtemelen 2K yazıyor. 2K olduğu için 2K'yı P'ye eşitlersek ne olacak?
+
+837
+02:14:51,060 --> 02:15:08,020
+2 çarpı p kare olacak. Dolayısıyla 2 çarpı p kareden çiftlik doğrudan ifade edilmiyor. Aslında edilir de 2 ile çarpıldığı için. 2p formatında şu formatta yazmamız gerektiğini ifade etmek adına şurada şöyle bir değişiklik ve şurada şu şekilde bir değişiklik yaptım. Geri kalan her şey aynı.
+
+838
+02:15:10,520 --> 02:15:14,859
+Örneğin, bu da bizim yaptığımız şeyin aynısı.
+
+839
+02:15:20,051 --> 02:15:27,171
+n1 tam sayı ve 3n artı 2 tek ise n'in tek olduğunu ispatlayınız. Şimdi doğrudan ispat yapacağız.
+
+840
+02:15:28,931 --> 02:15:37,612
+Diyeceğiz ki 3n artı 2 tek ise herhangi bir k tam sayısı için 3n artı 2'yi biz 2k artı 1 formatında yazıyoruz.
+
+841
+02:15:38,051 --> 02:15:41,671
+Yani 3n artı 2 tektir ve biz bunu 2k artı 1 yazdık.
+
+842
+02:15:41,671 --> 02:15:47,332
+O zaman 3n artı 1 2k oluyor.
+
+843
+02:15:48,979 --> 02:15:54,880
+Fakat n değerinin tek olduğunu herhangi bir şekilde buradan ispat edemiyoruz.
+
+844
+02:15:55,880 --> 02:15:57,939
+Çünkü 3n artı 1, 2k.
+
+845
+02:15:58,519 --> 02:16:04,019
+Hani sadece n gibi bir şey olsun ki o zaman ne yapabiliriz?
+
+846
+02:16:04,319 --> 02:16:05,479
+Tam ispat edebiliriz.
+
+847
+02:16:06,439 --> 02:16:08,380
+Geldik, dolaylı ispatla yapalım dedik.
+
+848
+02:16:08,839 --> 02:16:11,319
+n çift ise dolaylı ispat neydi arkadaşlar?
+
+849
+02:16:13,099 --> 02:16:14,439
+Dolaylı ispatla ne yapıyorduk?
+
+850
+02:16:15,572 --> 02:16:17,252
+Counter pozitifini alıyorduk değil mi?
+
+851
+02:16:19,771 --> 02:16:24,632
+N1 tam sayı, işte N çift ise 3N artı 2 de çifttir.
+
+852
+02:16:25,052 --> 02:16:27,391
+3N artı 2 tek ise N tekti.
+
+853
+02:16:27,612 --> 02:16:31,532
+3N artı 2 şey, N çift ise 3N artı 2 de çifttir diyoruz.
+
+854
+02:16:32,652 --> 02:16:37,672
+Sonra, 1K tam sayı için N eşittir 2K kabulluğunu yapıp,
+
+855
+02:16:37,672 --> 02:16:41,311
+3N artı 2'nin K cinsinden karşılığını bulduğumuzda,
+
+856
+02:16:42,272 --> 02:16:42,952
+işte ne oluyor?
+
+857
+02:16:43,572 --> 02:17:03,432
+6k artı 2 geliyor. Bu 6k artı 2'yi de 2 parantezinde 2 çarpı 3k artı 1 formatında yazıyoruz. Bu da 3k artı 1'i bir şey gibi yani bir x gibi değişkenle ifade edersek bu ifadenin çift olduğunu gösteriyor.
+
+858
+02:17:09,716 --> 02:17:19,256
+Bunun counter pozitifi, yani 3n artı 2 tek ise n'in tek olduğunu söyleyen pozitifi önermesi otomatik olarak doğru oluyor.
+
+859
+02:17:20,316 --> 02:17:23,695
+Ve bu şekilde önermenin doğruluğu ispat ediliyor.
+
+860
+02:17:25,175 --> 02:17:31,556
+Induction dediğimiz şey bizim burada yaptığımızı, genel olarak bu induction'ı şu şekilde ifade edebiliriz.
+
+861
+02:17:32,296 --> 02:17:34,636
+İlk elemanla doğruluğu teyit edilir.
+
+862
+02:17:35,603 --> 02:17:41,023
+Daha sonra aradan bir i inci eleman, k inci eleman doğruluğu kabul edilir.
+
+863
+02:17:42,363 --> 02:17:52,164
+i artı birinci eleman için ikinci maddedeki kabul edilen doğruluğa göre doğruluk ispat edilir ve doğrudur, yanlıştır sonucuna varılır.
+
+864
+02:17:54,984 --> 02:18:03,123
+Bütün adımda birinci adıma basic step diyoruz, sonra inductive step, ikinci adım, en sonunda da konkurajına varıyoruz.
+
+865
+02:18:04,020 --> 02:18:05,580
+Şurada da yaptığımız örneğin
+
+866
+02:18:05,580 --> 02:18:08,080
+aynısı var.
+
+867
+02:18:09,840 --> 02:18:11,340
+n pozitif tam sayıyken
+
+868
+02:18:11,340 --> 02:18:13,639
+n küp eksi n'nin
+
+869
+02:18:13,639 --> 02:18:16,760
+3'e tam olarak bölünebildiğini ispatlayınız.
+
+870
+02:18:18,080 --> 02:18:18,319
+Şimdi
+
+871
+02:18:18,319 --> 02:18:20,040
+burada ne yapacağız?
+
+872
+02:18:20,940 --> 02:18:23,440
+n küp eksi n bölü 3 kalan
+
+873
+02:18:23,440 --> 02:18:26,979
+mod işleminden kalan 0 olacak.
+
+874
+02:18:27,667 --> 02:18:32,788
+Şimdi n eşittir 1 için buna baktığımızda pozitif tam sayıların ilk elemanı nedir? 1'dir.
+
+875
+02:18:33,907 --> 02:18:35,227
+1'in küpü eksi 1.
+
+876
+02:18:39,067 --> 02:18:40,027
+Sonuçta 0.
+
+877
+02:18:40,687 --> 02:18:42,288
+0 mod 3.
+
+878
+02:18:43,047 --> 02:18:43,967
+0 mıdır? Evet.
+
+879
+02:18:44,527 --> 02:18:44,948
+Bölünüyor.
+
+880
+02:18:45,788 --> 02:18:47,067
+2 için de bakabiliriz.
+
+881
+02:18:47,587 --> 02:18:50,108
+İlla hemen k'ya geçmemiz gerekmiyor.
+
+882
+02:18:51,147 --> 02:18:52,387
+2 için baktığımızda
+
+883
+02:18:52,387 --> 02:18:55,047
+8 eksi 2, 6 bölü 3, 2.
+
+884
+02:18:56,147 --> 02:19:18,147
+6 geliyor. 6 mod 3, 2 bölünebiliyor. Özleştik gibi bir, yani denklem eşitlik olduğu için bu şekilde ispat mümkündür. Sonra k için baktığımızda k küp eksi k bölü 3 mod 0 olarak kabul ettik. Tamam mı? Sonra bunu k artı 1 için yapacağız.
+
+885
+02:19:23,028 --> 02:19:28,508
+Bunu açtığımızda, işte k küp artı 3k'nın karesi artı 3k artı 1, eksi k artı 1.
+
+886
+02:19:29,528 --> 02:19:34,587
+Buradan gelen eşitlik şu geliyor, birler gidecek.
+
+887
+02:19:36,008 --> 02:19:37,828
+Sonra 2k kalacak.
+
+888
+02:19:38,788 --> 02:19:44,148
+Neyse, burayı k küp eksi k artı 3k'nın karesi artı 3k şeklinde yazdı.
+
+889
+02:19:45,396 --> 02:20:04,296
+Sonra k küp eksi k artı 3k'nın karesi artı 3k'yı da yukarıdaki şuradaki eşitlikle denkleştirmeye çalıştı. Her ikisi de bölülebiliyorsa dedi ki doğrudur gibi bir sonraki adımla bir önceki adımı eşleştirip sonuca ulaşıyoruz.
+
+890
+02:20:04,296 --> 02:20:09,876
+Şimdi geçenki şu slide'da bir eksik yerimiz kalmıştı ona da bakalım.
+
+891
+02:20:15,059 --> 02:20:18,020
+Soru cevap 1. Herhalde buradaydık.
+
+892
+02:20:19,639 --> 02:20:21,099
+Bunun hepsini bitirdik mi arkadaşlar?
+
+893
+02:20:21,659 --> 02:20:22,739
+Ha, bitirmedik pardon.
+
+894
+02:20:25,860 --> 02:20:28,340
+Şunun bir totoloji olup olmadığını göstermiştik.
+
+895
+02:20:28,340 --> 02:20:39,239
+Şimdi bir karşıt örnek bulun eğer mümkünse diyor bu Discourse'un domain içinde farklı bir örnek var mı?
+
+896
+02:20:39,731 --> 02:20:43,971
+Her x ve bazı y'ler için x eşit midir bir bölü y'ye?
+
+897
+02:20:45,871 --> 02:20:53,731
+Örneğin x eşittir sıfır olduğu durumda sıfır eşittir bir bölü y gibi bir integer değeri bulunamaz.
+
+898
+02:20:54,952 --> 02:20:56,851
+Dolayısıyla buradaki bir önerme olmuyor.
+
+899
+02:20:57,932 --> 02:21:00,832
+Her x için bazı y'lerde şu mümkün müdür?
+
+900
+02:21:02,324 --> 02:21:27,763
+x işte bir integer olsun, işte eksi yüzden küçük olabilir gibi. Her x ve her y için x kare eşit değil midir y küpe? İşte sıfır sıfır ve birbir de karşı örnekleri bulabiliyoruz. Tamam mı? Yani işte eksi yüzden küçük bir değer verdik şu x'te, işte ne bileyim eksi yüz elli.
+
+901
+02:21:29,683 --> 02:21:38,883
+eksi 150 ise bir şeyin karesi veya ne bileyim eksi 525 verdiniz artı 625 olur. y de 25 olabilir.
+
+902
+02:21:39,804 --> 02:21:43,223
+Öyle bir karşı örnek bulabiliyoruz. Dolayısıyla bu önermeler bu şekilde değiştiriliyor.
+
+903
+02:21:43,984 --> 02:21:51,304
+Hangisi negation'la tersini bulun demiş. Sadece öğrenciler pizza yer. Doğru mu?
+
+904
+02:21:56,595 --> 02:22:03,095
+Pizza yer, yiyebilir sadece öğrenciler değil. Bunun tersi bu oluyor. Bütün öğrenciler pizza yer.
+
+905
+02:22:04,475 --> 02:22:15,435
+Valla öğrencilik hayatım boyunca hiç yemedim. Pizza yemeyen bir öğrenci vardı. Daha sonra yedim de dışarıda yemedim tabii ki.
+
+906
+02:22:16,615 --> 02:22:18,635
+Bazı öğrenciler sadece pizza yer.
+
+907
+02:22:21,203 --> 02:22:24,664
+Pizza yiyen, sadece pizza yiyen öğrenci yoktur.
+
+908
+02:22:27,043 --> 02:22:30,144
+Tüm öğrenciler sadece pizza yemez.
+
+909
+02:22:31,243 --> 02:22:37,183
+Something, pizzadan başka şeyler değer. Bu şekilde cümleler yazabiliyoruz.
+
+910
+02:22:37,344 --> 02:22:40,223
+Bu cümlelerden karşınıza gelir arkadaşlar.
+
+911
+02:22:42,963 --> 02:22:47,804
+N bir pozitif tam sayıysa ve N çift ise
+
+912
+02:22:52,147 --> 02:23:17,687
+7n artı 4'ün çift olduğunu gösteriniz. Önce demiş ki n'in çift olduğunu kabul ediyoruz. 2k. İşte 7n artı 4'ü bu şekilde yazdık. Bu da çifttir. Mesela bunun tersini, konverzini göstermek için n eşittir 2k artı 1 şeklinde bir kabul aldık. Bazı k değerler için.
+
+913
+02:23:18,227 --> 02:23:28,247
+7n artı 4'ü şu şekilde yazdık. 7n artı 4'te 2 çarpı k artı 1 formatına geliyor. Bu da tektir. Dolayısıyla karşılığı da doğru oluyor.
+
+914
+02:23:32,691 --> 02:23:39,171
+Şimdi arkadaşlar, Sherlock Holmes, Sherlock Holmes is başarılı.
+
+915
+02:23:41,171 --> 02:23:48,531
+Profesör Albert will be apprehended. Bu başarılı ise Albert takdir edilecek.
+
+916
+02:23:49,331 --> 02:23:55,083
+Dr. Watson does not sleep up, Sherlock Holmes will locate the missing clue.
+
+917
+02:23:55,507 --> 02:24:07,667
+If Sherlock Holmes locates the missing clue, he is successful. Dr. Watson does not slip up, so Professor Albert will be apprended.
+
+918
+02:24:07,667 --> 02:24:18,387
+Bakın bunlar her biri birer şey, önerme. Şuradaki önerme arkadaşlar, P ise Q önermesi.
+
+919
+02:24:20,979 --> 02:24:23,979
+R önermesini yapmazsa, pardon,
+
+920
+02:24:23,979 --> 02:24:29,979
+doktorasının V önermesini yapmazsa,
+
+921
+02:24:29,979 --> 02:24:36,979
+işte şu arkadaş S önermesini yapacak, şu.
+
+922
+02:24:36,979 --> 02:24:44,979
+Eğer S önermesini olursa, doğruysa ise,
+
+923
+02:24:48,852 --> 02:24:50,152
+olacak. O da şu.
+
+924
+02:24:52,731 --> 02:24:53,372
+Dolayısıyla
+
+925
+02:24:53,372 --> 02:24:56,192
+Dr. Weston does not sleep up.
+
+926
+02:24:56,932 --> 02:24:58,332
+Bu da R'nin tersi.
+
+927
+02:24:59,032 --> 02:25:00,552
+Conclusion is Q demiş.
+
+928
+02:25:00,672 --> 02:25:01,932
+Conclusion yerine de şu
+
+929
+02:25:01,932 --> 02:25:04,012
+sembolü kullanabiliyoruz.
+
+930
+02:25:08,020 --> 02:25:09,300
+Bunda bilginiz olsun.
+
+931
+02:25:10,659 --> 02:25:11,979
+Bakalım bir daha ilerleyelim.
+
+932
+02:25:14,600 --> 02:25:16,020
+Doğruluk değerlerini bulunuz.
+
+933
+02:25:16,200 --> 02:25:18,139
+İşte her x için x kare artı x.
+
+934
+02:25:18,319 --> 02:25:20,040
+Bunları zaten bir kısmını yaptık arkadaşlar.
+
+935
+02:25:20,220 --> 02:25:20,740
+Yanlıştır.
+
+936
+02:25:20,880 --> 02:25:21,760
+Örneğin bir bölü iki.
+
+937
+02:25:22,740 --> 02:25:24,680
+Counter example olarak bakın ne yapıyoruz.
+
+938
+02:25:24,740 --> 02:25:26,100
+Bunları çürütebiliyoruz.
+
+939
+02:25:27,819 --> 02:25:29,840
+x kare artı y kare eşittir 9 mudur?
+
+940
+02:25:29,920 --> 02:25:32,460
+Her x ve her y için yanlıştır.
+
+941
+02:25:32,460 --> 02:25:33,680
+İşte karşı örneği var.
+
+942
+02:25:34,164 --> 02:25:41,443
+Sum x ve sum y için x² artı y² 9 mudur? Evet, işte 1'e kök 8 gibi.
+
+943
+02:25:43,263 --> 02:25:53,103
+Sonra, sum x ve sum y için x² artı y² sıfıra eşit midir? Bütün y'ler ve x eşittir sıfır için doğrudur diyebiliriz.
+
+944
+02:26:01,236 --> 02:26:11,236
+Bu dersin sorusu değil, diğer matematikle alakalı. Bunu alalım buradan.
+
+945
+02:26:15,156 --> 02:26:15,956
+üç hatta
+
+946
+02:26:33,172 --> 02:26:35,172
+Evet, sorunuz var mı arkadaşlar?
+
+947
+02:26:42,388 --> 02:26:45,148
+yok. Şimdi şöyle bir şey yapacağız.
+
+948
+02:26:47,328 --> 02:26:48,948
+Saat 20 geçiyor.
+
+949
+02:26:53,043 --> 02:26:55,763
+Sizden şöyle bir çalışma yapmanızı isteyeceğim.
+
+950
+02:26:58,623 --> 02:27:11,523
+Kök 3 sayısının irrasyonel olduğunu ispat ediniz.
+
+951
+02:27:11,963 --> 02:27:14,683
+Yöntemi yazacaksınız, ispat adımlarını yazacaksınız.
+
+952
+02:27:14,883 --> 02:27:19,683
+İlk 10 kişiye, hızlı olan ilk 10 kişiye bonus.
+
+953
+02:27:24,115 --> 02:27:37,115
+Bu bonuslar sizin temel, yani dönem sonu ortalamanızda yansıtılacak şeyler. Ne yapıyorsunuz? Bana şu adresime mail gönderiyorsunuz.
+
+954
+02:27:37,115 --> 02:27:39,115
+al1.
+
+955
+02:27:44,724 --> 02:27:53,123
+numaranız, adınız, çözümünüz, bir fotoğrafını çekersiniz düzgünce.
+
+956
+02:27:55,824 --> 02:28:02,724
+Burada ilk 10 kişi şöyle, şimdi başladı süre, şimdi başlayabilirsiniz.
+
+957
+02:28:03,644 --> 02:28:06,684
+30 geçe süre bitiyor.
+
+958
+02:28:06,684 --> 02:28:09,403
+Tamam, başlayabilirsiniz.
+
+959
+02:28:11,572 --> 02:28:16,131
+Hangi yöntemi kullandınız, nasıl yaptınız onları tek tek ifade edeceksiniz.
+
+960
+02:34:08,115 --> 02:34:09,135
+Şuraya yazıyorum.
+
+961
+02:36:02,036 --> 02:36:04,036
+Bir dakika arkadaşlar, bakacağım.
+
+962
+02:36:43,796 --> 02:36:45,796
+[öğrenci]'tan geldi.
+
+963
+02:36:47,876 --> 02:36:49,876
+Başka gelen şu an
+
+964
+02:36:52,036 --> 02:36:52,844
+yok.
+
+965
+02:37:01,299 --> 02:37:02,840
+Hemen yansımayabilir.
+
+966
+02:38:08,500 --> 02:38:20,180
+[öğrenci] ilk mesajın hoş gelmiş. Şöyle göstereyim arkadaşlar. [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+967
+02:38:22,180 --> 02:38:31,380
+Süre tamam arkadaşlar. Bu saatten sonra, yani 31 geçeden sonra gelenlere bakmıyorum.
+
+968
+02:38:37,108 --> 02:38:38,388
+Bir daha yenileyeceğim.
+
+969
+02:38:46,835 --> 02:38:48,155
+Hemen düşmeyebiliyor.
+
+970
+02:38:49,295 --> 02:38:50,835
+[öğrenci] gelmiş.
+
+971
+02:38:52,235 --> 02:38:53,735
+[öğrenci] ve [öğrenci].
+
+972
+02:38:55,235 --> 02:38:56,415
+Aynı kişiler mi?
+
+973
+02:38:57,515 --> 02:38:58,415
+[öğrenci] gelmiş.
+
+974
+02:39:09,139 --> 02:39:11,139
+Bundan sonra gönderilenleri dikkate almayın.
+
+975
+02:39:13,599 --> 02:39:29,099
+Bir sınıf listesi, sheet olarak vize sınavlarınız, final sınavlarınız ve bu tarz verdiğimiz çalışmaların bonusları size duyurulacak arkadaşlar. Bir link paylaşacağım.
+
+976
+02:39:32,099 --> 02:39:34,059
+Evet, [öğrenci].
+
+977
+02:39:34,528 --> 02:39:45,628
+[öğrenci] diye yazıyor. [öğrenci]. [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+978
+02:39:47,968 --> 02:39:50,808
+Yani 31 geçeden sonra geldiyse onları almıyorum.
+
+979
+02:40:01,363 --> 02:40:06,123
+Geçmişte bile, yani süresinde geldiyse
+
+980
+02:40:09,811 --> 02:40:11,811
+10. kişiden sonrasını almayacağım.
+
+981
+02:40:26,164 --> 02:40:28,164
+TC Kimlik numarası niye yazdın ki?
+
+982
+02:40:37,012 --> 02:41:01,731
+Önce [öğrenci], kabul edilen. Sonra [öğrenci]. Sonra [öğrenci]. Sonra [öğrenci]. Sonra [öğrenci], kaç oldu? 3-5. Sonra [öğrenci] 6. [öğrenci] 7. [öğrenci] 8. [öğrenci] 9. [öğrenci] 10. Ondan sonra gelenlere dikkat alıyorum. Zaten 10 kişiyi bulduk.
+
+983
+02:41:03,412 --> 02:41:06,412
+Arada böyle çalışmalar yaparız arkadaşlar.
+
+984
+02:41:08,412 --> 02:41:11,811
+Şimdi gelecek hafta bu gördüğümüz lojik konusunun
+
+985
+02:41:13,112 --> 02:41:18,811
+Lojik Devreler dersinde de gördüğünüz ilgili kısmını uygulama tarzında
+
+986
+02:41:20,012 --> 02:41:27,412
+bir de elektronik bilgisayarcı olarak nasıl kullanırız diye başlayıp o konulara gireceğiz.
+
+987
+02:41:28,788 --> 02:41:36,468
+Banu Hoca zannediyorum Logic Devreler isminde slide'ı yükledi. Öyle hatırlıyorum.
+
+988
+02:41:39,028 --> 02:41:40,828
+Şey yapabilirsiniz arkadaşlar.
+
+989
+02:41:42,868 --> 02:41:44,148
+Bir dakika.
+
+990
+02:41:48,468 --> 02:41:51,788
+Slide'ı indirip hazırlıklı gelebilirsiniz. Daha rahat olur.
+
+991
+02:41:53,708 --> 02:42:02,668
+Dersin chapter'larını daha önceden kitabımızın ilgili sayfalarından okuyabilirseniz daha iyi olur.
+
+992
+02:42:04,668 --> 02:42:08,008
+Yani bir üstün körü bakmak hazırlıklı gelmek adına fena değil.
+
+993
+02:42:08,008 --> 02:42:12,768
+Şimdi bizim chapter'larımıza baktığımızda gelecek haftada
+
+994
+02:42:13,459 --> 02:42:24,539
+Ondan sonraki birkaç haftada daha böyle temel, belki çoğunun bildiğiniz şeyler olacak ama bu dersin ilerleyen zamanlarında algoritmalar kısmında onları detaylı olarak göreceğiz.
+
+995
+02:42:25,699 --> 02:42:28,259
+Söylemek istediğiniz, sormak istediğiniz bir şey var mı?
+
+996
+02:42:40,948 --> 02:43:08,368
+Evet. Yoksa hepinize iyi günler, iyi hafta sonları. Sorunun çözümünü haftaya şey yaparız. Hangi yöntem kullanılmış? Yani bakalım arkadaşlarımızın cevaplarından hangisi anlattığımıza uygun. Hatta onları şey yapacağız, Banu Hoca ile öyle konuşmuştuk. Bu 10 tane gönderen arkadaş kısa kısa bize bir sunum yapacak. Şurada şunu düşündüm, burada bunu yaptım diye. Siz onu dinleyeceksiniz. Arada soru soracaksınız.
+
+997
+02:43:09,236 --> 02:43:12,316
+sorduğunuz sorularla belki size de bir bonus veririz.
+
+998
+02:43:12,816 --> 02:43:14,096
+O şekilde
+
+999
+02:43:15,116 --> 02:43:17,676
+bir çalışma dersin başlangıcında yaparız.
+
+1000
+02:43:18,195 --> 02:43:19,216
+Onun dışında
+
+1001
+02:43:19,476 --> 02:43:21,516
+hepinize iyi hafta sonlar arkadaşlar.
+
+1002
+02:43:21,776 --> 02:43:22,796
+Kendinize iyi bakın.
+
+1003
+02:43:24,076 --> 02:43:25,116
+Görüşmek üzere.
+
+1004
+02:43:45,652 --> 02:43:47,595
+Sağ olun, iyi günler arkadaşlar.

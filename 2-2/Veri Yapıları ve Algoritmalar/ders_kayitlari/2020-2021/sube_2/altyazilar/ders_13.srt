@@ -1,0 +1,3647 @@
+1
+00:06:04,052 --> 00:06:13,932
+Evet, günaydın arkadaşlar. Yeni bir hafta, yedinci haftamız. Sesim normal geliyor değil mi? Bir test etmek istiyorum.
+
+2
+00:06:15,232 --> 00:06:15,852
+Evet hocam.
+
+3
+00:06:16,432 --> 00:06:25,112
+Gayet iyi duyuyorsunuz değil mi? Çünkü setup'ı biraz değiştirdim de ses değişti mi diye o yüzden bir kontrol edeyim dedim. Okey, güzel. Bir sorun yoksa.
+
+4
+00:06:26,004 --> 00:06:33,824
+Şimdi bu hafta derse başlamadan önce şu quiz 2 notlarını açıkladım, görmüşsünüzdür.
+
+5
+00:06:34,524 --> 00:06:41,684
+Sorularını şöyle bir üzerinden geçmek istiyorum hızlıca. Yani hepsini belki tam çözmesek de en azından bir konuşalım.
+
+6
+00:06:41,903 --> 00:06:45,624
+Nerede daha çok yanlış yapılmış o konulara bakalım istiyorum.
+
+7
+00:06:46,264 --> 00:06:50,744
+Şimdi şöyle bir whiteboard açtım. Buraya ben kopyalayıp yapıştırabiliyor muyum acaba?
+
+8
+00:06:52,019 --> 00:06:54,359
+Yapıştıramıyormuşum ya, hay Allah, kötü oldu.
+
+9
+00:06:55,779 --> 00:06:58,539
+Şöyle yazsak, evet olmuyormuş.
+
+10
+00:06:59,019 --> 00:07:02,560
+O zaman elle yazacağız ağacı, başka çaremiz yok bu durumda.
+
+11
+00:07:03,459 --> 00:07:05,579
+Şunları aşağı indireceğim.
+
+12
+00:07:07,419 --> 00:07:08,459
+Bir saniye.
+
+13
+00:07:10,036 --> 00:07:20,576
+Evet, tamam. Şimdi önce ağaçtan başlayalım. Elimle yazsam daha rahat olacak sanki. Şöyle, şurada 25.
+
+14
+00:07:21,908 --> 00:07:41,048
+Kök düğümümüz olarak yer alıyor. Şurada bir 19, 37. Verdiğimiz ağaç aynı zamanda ikili arama ağacı kriterlerinde gördüğünüz gibi karşılıyor aslında. Her alt ağaçta kendi içinde bir ikili arama ağacı. Hemen onun da üzerinden tekrardan bir geçmiş olalım.
+
+15
+00:07:49,555 --> 00:07:57,555
+50. Tamam, şöyle de bağlantılarını yapalım. Şu şöyle, şu şöyle.
+
+16
+00:07:58,259 --> 00:08:19,019
+Solunda, sağında, sol çocuk, sağ çocuk olacak şekilde. Evet, böyle bir ağacımız vardı. Preorder gezmeyi istemişiz. Yani kök önde gezinti. Ne yapmamız gerekiyordu? Viziti öne almamız. Ondan sonra da L, R şeklinde, sol ağaç ve sağ ağaç şeklinde rekürsif gezintiyi tamamlamamız gerekiyordu.
+
+17
+00:08:19,019 --> 00:08:23,019
+Şimdi buna baktığımızda...
+
+18
+00:08:23,956 --> 00:08:51,956
+Nereden başlayacağım? Tabii ki kökten başlayacağım. Yani ilk gezmem gereken 25 olacak. Şuraya 1 yazalım. Sonra ne yapacağım? Vizit ettiğime göre sola gideceğim. Sola gittim. 19'u gördüm. Tekrardan aslında önce vizit yaptığım için 19'u ikinci olarak gezeceğim. Sonra yine leftine gideceğim. 5. 5'i vizit edeceğim. Üçüncü olarak bu düğümü gezmiş oldum. Ondan sonra...
+
+19
+00:08:51,956 --> 00:09:19,816
+Vizit ettim, left yok, right'ına gittim. Dördüncü olarak sekizi gezdim. Ondan sonra bitti, visit left right bitti, geri gel, visit bitti, left bitti, right var, right'ına git. O zaman sekizden sonra beşinci olarak yirmi ikiyi gezeceğim. Sonra vizit ettim, left'ine git, altıncı adımda yirmi sayısını gezmiş olacağım. Yine left yok, right yok.
+
+20
+00:09:19,956 --> 00:09:30,456
+Geri gel, left'i bitti, right'i yok, geri gel, geri gel. Şimdi ne oldu? İkinci gezdiğim 19 değeri için hem sol alt ağacı hem sağ alt ağacı hem L'yi hem R'yi bitirmiş oldum.
+
+21
+00:09:31,124 --> 00:09:57,824
+Geri geldim. Buraya geldiğimde de birinci olarak gezdiğimin viziti tamam, left'i tamam. Olduğu gibi bitti. Şimdi right'ına gidiyorum ve vizit ediyorum. Nerede? 7 numaralı olarak 37'yi gözdüm. Left'i yok. O yüzden right'ına gittim. Şurası yok. Şuraya geldim. 44'ü vizit ettim. 8. olarak. Sonrasında bunun soluna gittim. Vizit ettim. 9.
+
+22
+00:09:58,868 --> 00:10:03,828
+Sol sağa yok, geri gel, solu bitti, sağa git, visit, on.
+
+23
+00:10:04,851 --> 00:10:09,471
+Ondan sonra da solu yok, sağ yok, geri gel, geri gel, geri gel, geri gel, bitti.
+
+24
+00:10:09,831 --> 00:10:14,291
+Viziti de bitirdiğimiz için zaten left to right'ı da bittiği için kökün tamamlanmış oldu.
+
+25
+00:10:14,771 --> 00:10:26,831
+Yani 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 sırasıyla ya da cevap olarak da 25, 19, 5, 8 diye giden diziyi verdiğinizde tamam.
+
+26
+00:10:26,831 --> 00:10:32,511
+Bu soruyu genellikle herkes doğru yapmış. Herhangi bir çok az kişide hata vardı.
+
+27
+00:10:32,851 --> 00:10:38,851
+Onun dışında yani bu gezintilerin oturduğunu, bu konuyu anladığınızı düşünüyorum.
+
+28
+00:10:39,991 --> 00:10:43,652
+Ağaç konusunda şeyleri yazdınız mı hiç?
+
+29
+00:10:44,912 --> 00:10:50,072
+İkili arama ağacında eleman ekleme, eleman silme kodlarını çalışmalarınız oldu mu?
+
+30
+00:10:52,980 --> 00:10:57,759
+Eklemeye başladım ama silme işlemi birazcık oturmadı hala kafamda.
+
+31
+00:10:58,180 --> 00:11:00,460
+O yüzden yarıda kaldı biraz o.
+
+32
+00:11:00,819 --> 00:11:03,019
+Tamam, gerekirse bugün bir daha anlatırım.
+
+33
+00:11:03,019 --> 00:11:05,000
+Yani aslında üç durum var.
+
+34
+00:11:05,720 --> 00:11:07,879
+Üç durum içinde kontrol yapmanız gerekiyor.
+
+35
+00:11:07,980 --> 00:11:08,480
+Tek şey yok.
+
+36
+00:11:08,839 --> 00:11:10,100
+Tekrar üzerinden geçeriz.
+
+37
+00:11:10,639 --> 00:11:18,000
+Derse başlamadan, bu haftanın konusuna geçmeden, geçen haftanın son ağaç konusundan, ikili arama ağacından bir daha bahsederim.
+
+38
+00:11:18,500 --> 00:11:20,779
+İkinci soru, 21.
+
+39
+00:11:20,980 --> 00:11:28,980
+Kişilik bir sınıf var. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13. Şöyle.
+
+40
+00:11:29,491 --> 00:11:30,632
+İlerletelim.
+
+41
+00:11:31,172 --> 00:11:37,491
+On, on dört, on beş, on altı, on yedi, on sekiz, on dokuz, yirmi, yirmi bir.
+
+42
+00:11:37,951 --> 00:11:39,132
+Şimdi ne yapacağız?
+
+43
+00:11:39,711 --> 00:11:42,731
+Bu şey sorusu biliyorsunuz Romalı problemi aslında.
+
+44
+00:11:43,451 --> 00:11:44,572
+Şöyle şey yapalım.
+
+45
+00:11:44,572 --> 00:11:54,711
+Şimdi hani anlatırken de zaten hatırlarsanız söylemiştim bunu bir circular link list ile tutarsanız çok hızlı bir şekilde gerçekleyebilirsiniz demiştik.
+
+46
+00:11:55,471 --> 00:11:56,971
+Nereden başlıyoruz?
+
+47
+00:11:57,491 --> 00:12:23,439
+1'den başlayarak her 3. öğrenciyi eliyoruz. Yani 1, 2, 3 gitti. Şeyi hatırlarsanız hani 3, 6, 9'a kimse geçmek istemiyordu ama komutan şey yapıyordu, zorluyordu onları hani o şekilde. 3, 6, 9 yani işte şöyle sayalım. 1, 2, 3 gitti. 1, 2, 3 gitti. 1, 2, 3 gitti. 1, 2, 3 gitti. Ondan sonra 1, 2, 3.
+
+48
+00:12:23,440 --> 00:12:24,280
+3 gitti.
+
+49
+00:12:24,580 --> 00:12:26,100
+1, 2, 3 gitti.
+
+50
+00:12:26,420 --> 00:12:28,840
+1, 2, 3 öldü.
+
+51
+00:12:29,040 --> 00:12:30,080
+Çıktı çemberden.
+
+52
+00:12:30,460 --> 00:12:34,540
+1, 2, 3 sonra 1, 2, 3.
+
+53
+00:12:34,540 --> 00:12:47,380
+1, 2, 3.
+
+54
+00:12:47,880 --> 00:12:49,700
+1, 2.
+
+55
+00:12:50,323 --> 00:13:12,163
+3, 1, 2, 3. Kaç kaldı? 3 kaldı şu anda. 1, 2, 3. Bu da öldü. Geriye kimler kaldı? 2 numaralı öğrenci ve 16 numaralı öğrenci kaldı. Bu ikisi sınıf başkanı ve yardımcısı olarak seçildi.
+
+56
+00:13:12,563 --> 00:13:35,983
+Bu soruda hata, yani yarı yarıya diyebilirim. Herhalde 1-2-3 sayarken şaşırdınız heyecandan ya da süre kısıtından dolayı diye düşünüyorum. Yoksa bu yapılmayacak bir soru değil. Oldukça basit bir soruydu diye düşünüyorum. Bilmiyorum. Hani derste de zaten birebir aynı örneği vermiştik. Komutan ve mağarada.
+
+57
+00:13:36,432 --> 00:13:46,211
+Josephus'un arkadaşıyla birlikte, 40 arkadaşıyla 41 kişi şey kalmaları demiştik. 9 ve 5'te de bir örneğini çözmüştük hatırlarsanız.
+
+58
+00:13:46,872 --> 00:13:55,192
+Şimdi üçüncü soru şöyleydi. Elimizde bir şey var, bir stack var ama bu stack özel bir stack.
+
+59
+00:13:55,192 --> 00:14:04,192
+Pardon, şöyle, burada biraz daha çizgiler değişik davranıyor, whiteboard'ta. Şöyle bir stack ama...
+
+60
+00:14:04,432 --> 00:14:08,432
+Bizim burada normal push'umuz var, pop'umuz var.
+
+61
+00:14:08,432 --> 00:14:11,432
+Bir de enteresan bir şekilde bir reverse işlemimiz varmış.
+
+62
+00:14:11,432 --> 00:14:13,432
+Reverse işlemi ne demek?
+
+63
+00:14:13,432 --> 00:14:18,432
+Reverse işlemi şu demek, yani aslında diyelim ki stack'te bir...
+
+64
+00:14:18,495 --> 00:14:45,615
+2 ve 3 rakamları olsun. Şöyle hani şu datalar duruyor olsun. İdare edin biraz yamuk oldu. Reverse ettiğinizde şöyle re diyelim. Aslında şöyle bir işlem yapıyormuş stack. 1, 2, 3 yapıyor bunu. Tamam. Elimizde böyle bir stack yapısı var. Yani hazır bir fonksiyonu yazılmış. Şimdi ben bunu kullanarak queue yapmak istiyorum. Queue neydi? Hatırlayalım. First in, first out.
+
+65
+00:14:46,899 --> 00:15:02,719
+Değil mi? Şu queue, queue diyelim. Ama stack neydi? Last in, first out. Peki, o zaman şunu biliyorum. Her zaman için enqueue etmek demek kuyruğun en sonuna eklemek demektir.
+
+66
+00:15:03,120 --> 00:15:08,559
+Bu durumda ben mesela şöyle bir stack vardı ya. Biraz daha şurayı büyütelim ya da şuraya yazalım.
+
+67
+00:15:09,364 --> 00:15:36,563
+Bir vardı, iki vardı. Anlaşılsın diye hep böyle örneği sıralı vermeye gayret ediyorum. Dört geldi. Tamam mı? Dördü enq ediyorum. Ne yapacağım? Aslında kuyruktan son çıkmasını isteyeceğim. Değil mi? Çünkü en son geldi o arkadaş. Dördü alıp buraya koymam lazım. Yani aslında benim enq işlemim sadece bir pushla yapılabilir. Kuyruğun en sonuna geldi. Enq diyelim şuraya.
+
+68
+00:15:37,139 --> 00:16:03,000
+Şöyle sadece bir push işlemiyle bunu yapabilirim. Peki o zaman de queue etmek istediğimde kimi edeceğim ben? Şunu etmem gerekiyor değil mi? Peki ben buraya nasıl erişeceğim? N tane pop mu yapacağım? Böyle şey olmaz. Zaten reverse diye bir şey tanımlanmış. Bakın reverse ettiğinizde ne olur? 4, 3, 2, 1 olur değil mi? Sonra pop edersiniz. Böylece
+
+69
+00:16:03,264 --> 00:16:12,864
+Kuyruktaki birinci kişiyi, en önce gelen arkadaşı, şuraya pop yazalım, çekmiş olursunuz hop diye. Ne kaldı?
+
+70
+00:16:13,844 --> 00:16:28,464
+2, 3, 4 kaldı. Değil mi? Ama bu halde bırakamayız. Çünkü yine nQ ve dQ işlemleri devam ediyor olabilir. O yüzden benim bunu bir kere daha başlangıçtaki durumuna geri getirmek için reverse etmem lazım.
+
+71
+00:16:29,324 --> 00:16:37,744
+2, 3 ve 4. Tamam mı? Şimdi bu andayken artık ben push edersem buraya gelir. Değil mi?
+
+72
+00:16:38,128 --> 00:17:02,948
+5 numara. Şöyle onu sileyim şimdi geri. Ya da şu anda yine bir dequeue etmek istesem. Ne yapacağım? Reverse, iki yukarı çıktı pop, ikiyi aldım. Reverse, 3-4 kaldı. Tamam. Bu durumda ben reverse, pop ve reverse yaparsam her zaman dequeue'yu garanti etmiş oluyorum.
+
+73
+00:17:03,827 --> 00:17:25,288
+yazabildim idare edin. Reverse, pop, reverse. Okey. Bu şekilde bir mantıkla kurgulamanız gerekir. Yoksa böyle en tane push ederim, pop ederim falan gibi şeyler vardı. Elimizde zaten reverse var ve mümkün olan en şey efektif şekilde bu işlemleri yapmamız gerekir. Tek bir stack kullanarak.
+
+74
+00:17:25,748 --> 00:17:35,468
+Tabii özel reverse olan bir stack kullanarak bir queue mekanizmasını da sadece push, reverse pop reverse ile halledebiliriz.
+
+75
+00:17:36,807 --> 00:17:43,807
+Bunun süresi 3 dakikaydı tahmini süresi ama yani burada da yarı yarıya diyebilirim hani yapma oranına.
+
+76
+00:17:45,587 --> 00:18:04,508
+Evet, bu soruyu da şey yaptık. Sonra bir yine casus stringimiz var. Casus stringimizi hemen şuraya yazayım sizin için. A, B, C. Kopyalayamadığım için. Whiteboard'a pardon. İzin vermiyor. O yüzden böyle 2FGH.
+
+77
+00:18:06,867 --> 00:18:31,847
+1, i, j, k, sonra 0, l, yanlış bastık, 0, l, m, n, 3, ve OPRS 1. Tamam. Şimdi böyle bir kod için boşluk doldurma sorusuydu bu. Verilen kod için dıdıdıt veri yapısı kullanılması uygundur.
+
+78
+00:18:32,468 --> 00:18:35,307
+Zaten bunu ödevde de hatırlarsanız sormuştuk.
+
+79
+00:18:36,528 --> 00:18:41,268
+Bunun için en efektif, en uygun veri yapısı stack veri yapısı olacaktır.
+
+80
+00:18:41,668 --> 00:18:48,008
+Nasıl olacaktır? Şöyle hemen siteğimizi çizelim. Şöyle büyük bir stack çizelim.
+
+81
+00:18:49,807 --> 00:18:55,028
+Ondan sonra şöyle tamam alalım kalemimizi.
+
+82
+00:18:55,028 --> 00:18:57,867
+Şimdi A geldi, push ederim.
+
+83
+00:18:58,644 --> 00:19:07,884
+B geldi, push ederim. C geldi, push ederim. D geldi, push ederim. E geldi, push ederim. Şunları şöyle sileyim, tamam mı?
+
+84
+00:19:08,563 --> 00:19:16,963
+Sonra rakam geldi, yani sayı geldi. Alfanümerik bir şey değil, değer değil. İki tane pop ederim, tamam mı? Pop, pop.
+
+85
+00:19:17,583 --> 00:19:24,743
+Yani ne yaptım? Bunları silmiş oldum. Sonra F geldi, G geldi.
+
+86
+00:19:25,683 --> 00:19:49,364
+H geldi. Sonra 1 geldi. Ne demek? Bir tane pop yap. E'yi pop ettim. Şunu da seveyim. I, J, K geldi. I, J, K. 0 geldi. 0 tane pop edeceğim. Hala kalmaya devam edecek. Şuradan devam edeceğim. L, M.
+
+87
+00:19:50,003 --> 00:20:12,923
+N geldi. Sonra da 3 geldiği için şunlar geri 3 tane popla silindi. Şöyle silelim. O, P, R, S. Bunları da şöyle yazalım. O, P, R, S. Ve 1 geldi. Yani S'yi de pop ettik. Gitti. Şimdi ne yapacağım? Ben bunları sırasıyla pop ederim. Ve ne kaldı işte?
+
+88
+00:20:17,364 --> 00:20:22,983
+O, K, tabi ben şu anda ters den, siz onu terse çevirirsiniz.
+
+89
+00:20:23,884 --> 00:20:30,144
+İ, böyle A, B, C, neyse C, B, A şeklinde bir şey çıktı.
+
+90
+00:20:30,144 --> 00:20:30,624
+Evet.
+
+91
+00:20:31,700 --> 00:20:45,019
+Özetle, böyle bir kod çözme işlemi için, çok basit sadece push ve poplarla, O1 karmaşıklıktaki işlemlerle, toplamda da n eleman için, O-n işlemle bu işi halledebilirim.
+
+92
+00:20:45,380 --> 00:20:49,960
+Yani lineer zamanda kalmamı sağlayan bir stack veri yapısı bunun için uygun olacaktır.
+
+93
+00:20:50,840 --> 00:20:56,019
+Tabii ha, diziyle de yaparım diyebilirsiniz de, o zaman başka şeyler kullanmanız gerekir.
+
+94
+00:20:56,019 --> 00:20:59,019
+Şimdi mesela ben bunları dizinin gözlerinde tutsaydım,
+
+95
+00:20:59,700 --> 00:21:03,980
+Şöyle bir clear, ağa bunu clear ol deyince hepsi gidiyor.
+
+96
+00:21:04,723 --> 00:21:32,723
+Neyse, idare edin. Dizinin gözlerini tutsaydım. O zaman burada iki görünce başka bir döngüyle, mesela while döngüsüyle bundan bir önceki ve iki öncekini sil şeklinde bir şey yapacaktım. Ondan sonra bir görünce bir while döngüsüyle bundan bir öncekini sil yapacaktım. Sıfır görünce sıfır öncekini sil gitti falan yapacaktım. Üç öncekileri sil diye böyle bunları mesela eksi bir yazacaktım diyelim. Tamam mı? Sonra bir döngü daha ve o döngü...
+
+97
+00:21:32,723 --> 00:22:00,723
+Döngüde de işte kalanları yazdır gibi bir şey yapacaktım diyebiliriz. Ama biraz daha gördüğünüz gibi karmaşıklığı yüksek. Mertebesine baktığınızda düzgün yazarsanız yine O'ende kalmasını garantileyebilirsiniz ama bir döngü içinde bir döngü yaptığınız için en üzeri mertebesine çıkacağınız söylenebilir. Bir for hepsini gezmek için. Sonra da şuradaki geri dönüşler için yine for ya da while döngüleri kurmanız lazım.
+
+98
+00:22:00,723 --> 00:22:11,703
+O yüzden n çarpı n mertebesine, tabii birkaç sayıyla beraber mesela atıyorum, bir bölü k çarpı n çarpı n gibi bir şey olacak.
+
+99
+00:22:12,503 --> 00:22:19,443
+Yine o n'de kalmasını garantileyemiyoruz. Böyle bir dizi kullanırsak. O yüzden stack kullanmak bizim için burada daha mantıklı.
+
+100
+00:22:20,443 --> 00:22:22,667
+Neyse, toplamda...
+
+101
+00:22:23,124 --> 00:22:34,864
+boşluk defa boşluk fonksiyonu, boşluk defa boşluk fonksiyonu çağrıldığında diyor. Bakarsanız aslında biz burada toplamda kaç tane karakteri push ediyoruz? Şey kadar.
+
+102
+00:22:35,380 --> 00:22:53,880
+Siz söyleyin, sadece harfler kadar push ediyoruz. Ama sonuçta bütün rakam, bütün şeyleri işlememiz gerekiyor. Burada saydığımızda da 18 tane rakam var. Doğal olarak en sonunda kalanları da pop etmem gerekeceği için 18 push, 18 pop yapmam gerekiyor diyebiliriz.
+
+103
+00:22:54,820 --> 00:23:03,380
+Toplam kalan casus kodunda silme işlemlerinden sonraki karakter sayısı da 11 olarak kalıyormuş. Burada sadece sayısal değerler.
+
+104
+00:23:03,380 --> 00:23:08,840
+Çoğunluk bu soruyu da yapmıştı zaten ödevden elde ettiğiniz deneyimle birlikte.
+
+105
+00:23:09,519 --> 00:23:11,740
+Sonrasında şeye gelelim.
+
+106
+00:23:13,907 --> 00:23:32,927
+Doğru yanlış sorusuna. Birinci şıkkı şöyleydi. Derleyiciler bazı işlemler için ağaç yapısı kullanabilir. Bu doğru, evet kullanabilir. Özellikle nerede kullanır? Mesela aritmetik operasyonlarda ya da değişkenlerin çağrı ağaçlarını bilmem nelerini tutmak için kullanabilir.
+
+107
+00:23:33,567 --> 00:23:41,867
+Derleyiciler yığın yapısını kullanabilir demişiz. Bu da doğru. İşte function call'larda bundan bahsetmiştik. Function call stack demiştik.
+
+108
+00:23:41,907 --> 00:24:04,307
+Hatta adına. Dosya sistemleri ikili ağaç yapısından faydalanır. Burada bir şey var, trik, belki hızlı okurken ikili ağacı görmeden direkt ha ağaç evet evet doğru deyip geçebilirsiniz. Ama bu yanlış. Dosya sistemleri ağaç yapısı kullanır. Normal yani çoklu ağaç yapısı kullanır. Direkt ikili ağaç yapısıyla implementasyonu gerçekleştirilmez.
+
+109
+00:24:08,756 --> 00:24:19,456
+Double linked listte yer alan herhangi bir elemanı silmek için silinecek elemanın adres bilgisi yeterlidir. Doğru mu yanlış mı? Var mı fikri olan?
+
+110
+00:24:22,576 --> 00:24:24,096
+Doğru bence hocam.
+
+111
+00:24:24,476 --> 00:24:33,096
+Bence de doğru. Neden? Hatırlayın. Şey yapmıştık. Şöyle çizeyim. Burada bir double linked list şöyle çizelim. Hemen.
+
+112
+00:24:34,451 --> 00:24:37,511
+Hem öndekine hem de arkasındakine adresine ulaşabiliyoruz.
+
+113
+00:24:37,672 --> 00:25:02,291
+Aynen öyle. Şimdi ben buna bir pointerım varsa eğer, zaten bunun preview'su deyince buna geliyordum. Preview'sun next'i deyince buna geliyordum. Benim next'im deyince buna geliyordum. Next'imin preview'su deyince kendime geliyordum. Yani ben aslında bu double link list sayesinde hem şu hem de bu sayesinde ileri bir, geri bir elemana rahatlıkla erişip onlara şey yapabiliyorum. Onların adreslerine de.
+
+114
+00:25:02,451 --> 00:25:14,432
+kullanabiliyorum. Tabii şeye dikkat etmemiz gerekiyordu hatırlarsınız silmede. Hani hangi sırayla 1-2-3-4 şeklinde bağları koparalım ki eski hani öncekine ve sonrakine linkleri.
+
+115
+00:25:15,284 --> 00:25:25,544
+Kaybetmeyelim. Ona dikkat etmeniz gerekecek. Ama sadece tek bunu bilsem, öndekine de, arkadakine de, pardon öndekine ve arkadakine de erişebileceğim için bu da doğrudur.
+
+116
+00:25:25,544 --> 00:25:38,884
+Sadece bunu tek bir adres bilgisiyle, tek bir pointerla bundaki silme işlemini ve dört tane linkin güncellenmesi, yani aslında şunu şuraya bağlama, şunu da şuraya bağlama işlemlerini gerçekleştirebilirim.
+
+117
+00:25:40,004 --> 00:25:41,544
+Son soru.
+
+118
+00:25:42,771 --> 00:25:51,151
+Bu belki biraz yine kafa karıştırabilir ama hani iki dakikanın bir dakikasında bunu çözersiniz diye düşünüyorum. En elemanlı sıralı bir dizi var.
+
+119
+00:25:51,604 --> 00:26:03,884
+Elimizde ve şöyle hatta şey yapalım, yazalım bir tane n elemanlı sıralı dizi yazalım şuraya işte 2, 4, 6, 8, 10 tamam mı? Böyle bir dizimiz var işte 5 elemanlı.
+
+120
+00:26:03,884 --> 00:26:14,804
+Şimdi buraya yeni bir eleman geliyor. Diyelim ki mesela hani şey en kötü durum dediğine göre 1 gelsin tamam mı? Şuraya şöyle 1 gelecek.
+
+121
+00:26:15,284 --> 00:26:19,604
+Şimdi ben bu 1'i acaba insertion sortla sıralarsam en kötü karmaşık.
+
+122
+00:26:19,604 --> 00:26:23,644
+Ne olur? Hatırlayalım insertion sortu. Nasıl çalışıyordu? Bunu alıyordu.
+
+123
+00:26:24,531 --> 00:26:34,151
+Şöyle şey yapalım. Alıyordu, karşılaştırıyordu. Küçük olduğu için yer değiştiriyordu. Swap. Karşılaştırıyordu. Karşılaştırıyordu. Nereye kadar gitmesi gerekiyor? Buraya kadar.
+
+124
+00:26:34,771 --> 00:26:44,271
+Bir swap, iki swap, üç swap, dört swap, beş swap ile bu işi hallediyordu. En kötü durumda bu biri alıp buraya böyle yazabiliyordu. Yani O en de kalabiliyor insertion sort. Güzel.
+
+125
+00:26:44,271 --> 00:26:52,051
+Ama gel gelelim. Bubble sort'ta bir sıkıntı var. Bubble sort biliyorsunuz şöyle tarama yapıyordu.
+
+126
+00:26:52,531 --> 00:27:13,751
+4, 6, 6, 8, 8, 10, 11. Onunla biri karşılaştırıp yer değiştirecek. Olmadı. Ondan sonra bir daha, bir daha, bir daha, bir daha. Yani bu n mertebesinde değil. Hani bir ilk iterasyonda buraya, ikinci iterasyonda buraya, üçüncü iterasyonda buraya böyle böyle taşına taşına gidecek. n kare maalesef bunun karmaşıklığı olacak.
+
+127
+00:27:13,751 --> 00:27:19,611
+Özetle insertion sort evet ama bubble sort n karede olduğu için bu soru yanlış.
+
+128
+00:27:20,531 --> 00:27:26,611
+İkisinde de O n değil, birinde O n, birinde O n kare mertebesinde bir karmaşıklık bizi bekliyor.
+
+129
+00:27:27,791 --> 00:27:31,511
+Özetle, bunun paterni doğru doğru yanlış, doğru yanlış şeklinde.
+
+130
+00:27:31,611 --> 00:27:33,291
+D, D, Y, D, Y olacaktı.
+
+131
+00:27:33,811 --> 00:27:36,171
+Fena değil buradaki cevaplarda, yine çoğunluk doğru.
+
+132
+00:27:36,171 --> 00:27:38,731
+Mesela burada şey yapmadık, puanlamada.
+
+133
+00:27:39,971 --> 00:27:40,939
+Diyelim ki...
+
+134
+00:27:41,779 --> 00:27:56,779
+Şey, bir tanesini yanlış yaptınız ya, sekiz aldınız. Ya da iki tanesini yanlış işaretlediyseniz altı aldınız. Hani o yanlışlar doğruları götürür şeklinde bir şey yapmadık. O yüzden de herkes böyle şey...
+
+135
+00:27:57,203 --> 00:28:09,104
+Diğerlerinde de aynı şekilde boşluk doldurmalarda falan bu şekilde yaptığımız için notlandırmayı herkes böyle 10, 20, 30, 40 diye almadı notları. Aralardaki şeyler de var. Ara notlarımız da bu şekilde oluştu.
+
+136
+00:28:10,244 --> 00:28:25,044
+Sonraki soru onu şöyle hızlıca yine yazayım. Ne demişiz? For k eşittir bir. Ondan sonra k küçüktür n. Küçüktür'ü de yazamadık klavye şeyinden. Ondan sonra k eşit k.
+
+137
+00:28:25,203 --> 00:28:35,584
+çarpı 2 demiş ve şuraya da sum artı artı demişiz. Buradaki toplam kaç tane kaç kere toplama işlemi yapılır?
+
+138
+00:28:35,703 --> 00:28:48,384
+1n ikişer tane artıyor. Bunu konuşmuştuk hatırlayanlarınız vardır. Çarparak gittiğimiz için ikinin katları şeklinde gittiğimiz için bunu logaritmasını almamız gerekecek.
+
+139
+00:28:53,203 --> 00:28:56,107
+64 şeklinde arttığı için toplamda...
+
+140
+00:28:56,307 --> 00:29:04,028
+n mertebesindeyken log n tane çarpma, aman toplama şuradaki işlem gerçekleşecektir.
+
+141
+00:29:04,028 --> 00:29:09,988
+Bunun çarparak, ikiyle çarparak büyüdüğü için cevap log n. Yani C şıkkı olacaktı.
+
+142
+00:29:10,087 --> 00:29:13,988
+Tabii herkes de C diye mi çıkıyor bilmiyorum ama şıkları da karıştırıyor olabilir.
+
+143
+00:29:14,548 --> 00:29:16,128
+Cevap log n olacaktı.
+
+144
+00:29:16,988 --> 00:29:22,208
+Diğer şıklarda da n var, n bölü iki var, n çarpı n var, bir de hiçbiri vardı.
+
+145
+00:29:22,728 --> 00:29:24,307
+Burada hata yapan...
+
+146
+00:29:24,307 --> 00:29:26,188
+Anlar yine yarı yarıya diyebilirim.
+
+147
+00:29:26,867 --> 00:29:32,867
+O civarlarda tabii hepsinde tam istatistik tutmadım ama bu şekilde bir oran yine karşıladı bizi.
+
+148
+00:29:34,067 --> 00:29:36,607
+Yedinci soru mu oldu? Kaçıncı soru oldu?
+
+149
+00:29:37,347 --> 00:29:42,987
+Şey var, bu soruda herkes demeyeyim de büyük bir çoğunluk soruyu galiba yanlış anlamış.
+
+150
+00:29:43,447 --> 00:29:49,147
+O yüzden sıralama yapmaya çalışmışsınız böyle iki, üç, bir, dört şeklinde ama derdimiz o değil.
+
+151
+00:29:49,147 --> 00:29:54,867
+Bakın ne diyor? Aşağıdaki senaryolarda uygun olan...
+
+152
+00:29:54,867 --> 00:30:01,927
+En iyi algoritmayla en kötü durum karmaşıklığı sırasıyla birincide ne olur, ikincide ne olur, üçüncide ne olur, dördüncide ne olur?
+
+153
+00:30:02,447 --> 00:30:15,167
+Sırasız dizide verilen bir elemanın yerini bulmak. Ne yapabilirsiniz? Sırasız dizi olduğuna göre yapabileceğiniz en iyi şey teker teker bakmak olacaktır.
+
+154
+00:30:20,211 --> 00:30:46,912
+En kötü durum karmaşık. Burada en iyi, en kötü yazanlar da var. O1, ON falan yazmışsınız. Onları da kabul ettim. Fakat hani burada n mertebesinde aslında bir işlem yapmamız gerekir. Neden? Çünkü sırasız bir dizi. Sıralarsam zaten n-logen gidecek. Bir daha sıraladıktan sonra işte logenle arasam n-log kare n mertebesine çıkacağım. O yüzden tek tek baksam en iyisi olur. Sırasız dizide n.
+
+155
+00:30:48,211 --> 00:30:59,251
+Sıralı dizi demiş. Sıralı dizide ne yapabilirim? Direkt olarak binary search kullanabilirim. Böyle böyle ararım yani. Buna da log n dememiz ya da o log n dememiz yeterli.
+
+156
+00:30:59,991 --> 00:31:05,211
+Sonrası sıralı linkli listeymiş. Ne yapabiliriz sıralı linkli listede?
+
+157
+00:31:06,163 --> 00:31:19,304
+Link liste olduğu için sıralı da olsa burada şey kullanamam, binary search'u kullanamam. Çünkü indis bilgim yok. Şöyle bir iyileştirme yapabilirsiniz.
+
+158
+00:31:21,779 --> 00:31:34,819
+En sondaki elemanın adresine de sahipseniz, hani head var ya, bir de tail diye bir tane linkiniz varsa, bir aşama daha iyi olabilir ama her seferinde yine orta noktayı bulmak için n bölü iki tane next yapmanız gerekecek.
+
+159
+00:31:35,240 --> 00:31:42,859
+O yüzden de linked liste yapısı dolayısıyla burada da n mertebesinde bir karmaşıklık bizi bekler.
+
+160
+00:31:42,859 --> 00:31:45,700
+Bu da sıralı.
+
+161
+00:31:46,067 --> 00:31:50,227
+çift yönlü linkli liste.
+
+162
+00:31:51,827 --> 00:32:16,248
+Aslına bakarsanız üstündekinden hiçbir farkı yok. Çift yönlü olması bir şey değiştirmiyor. Bize bir iyilik açıkçası arama konusunda bir iyilik getirmiyor. Yine bir taraftan başlayıp teker teker baka baka ilerlemem gerekecek. O yüzden de bunun da karmaşıklığını en iyi durumda, pardon en iyi algoritmayla en kötü durum olarak n diyebilirim. Hani sona kadar giderim deyip bunu n olarak vermem gerekir.
+
+163
+00:32:19,827 --> 00:32:21,387
+O bir
+
+164
+00:32:21,824 --> 00:32:49,824
+virgül, o, n şeklinde yazanlarınız da var. Bunları da kabul ettim. Doğru olarak kabul ettim. Özetle n, log n, n beklediğimiz cevaptı. Neden 2, 3, 1, 4 şeklinde çoğunluk sıraladı anlamadım. Çünkü burada sıralayınız demiyor. Akarmaşıklıklar sırası ile ne olur diyor. Neyse bu şekilde sorun da cevabını üzerinden geçmiş olalım.
+
+165
+00:32:49,824 --> 00:33:01,824
+8. soru. Labirentte çıkışı arayan fare problemi için en uygun veri yapısı nedir? Acaba nedir? Var mı fikri olan?
+
+166
+00:33:02,943 --> 00:33:05,263
+Stack. Evet, neden stack?
+
+167
+00:33:09,556 --> 00:33:10,996
+Stack de neden Stack?
+
+168
+00:33:20,468 --> 00:33:22,468
+Stack diyen kim dedi stack diye?
+
+169
+00:33:22,771 --> 00:33:23,671
+Neden stack?
+
+170
+00:33:23,891 --> 00:33:26,371
+Stack olduğunu biliyorum ama neden olduğunu bilmiyorum.
+
+171
+00:33:26,611 --> 00:33:31,771
+Hayda bir arkadaş. Tamam peki, hadi üzerinden geçelim tamam mı?
+
+172
+00:33:31,771 --> 00:33:44,851
+Şimdi tabii ben bundan derste bahsetmedim. Fakat biraz düşündüğünüzde, yani mantığı biraz kurguladığınızda kullanabileceğiniz veri yapısının ne olacağını kolaylıkla bulabilirsiniz.
+
+173
+00:33:50,771 --> 00:34:12,591
+Ağaç gördük değil mi? Başka bir şey görmedik. Şimdi labirent şöyle modellenir genellikle. Gidebildiklerimize bir yazılır. İşte gidemedik, girilmeyen gözlere de şey yazılır. Genellikle sol üstten başlanıp sağ alt köşeden çıkmak istenir gibi. Şöyle şuralara bir yazalım tamam mı? Öyle bir yol olsun ki, şunlar sıfır, bunlar duvar yani.
+
+174
+00:34:14,675 --> 00:34:38,355
+Şuraya duvar yapayım mı? Şöyle yapayım. Yani basit bir labirent olsun tamam mı? Şöyle olsun. Sıfırlar, birler, şuraya da sıfır yapalım. Şöyle. Bu da bir olsun. Tamam. Bu birde. Bu da bir, bir, bir. Hatta şuraya da yine.
+
+175
+00:34:39,027 --> 00:34:45,027
+Yok, buraya 0 yaparsak çıkamıyor. 1, 0, 1, 0. Şimdi...
+
+176
+00:34:45,867 --> 00:34:47,747
+Derin öncelikli arama mı yapacağız hocam?
+
+177
+00:34:48,447 --> 00:34:48,707
+Yok.
+
+178
+00:34:49,507 --> 00:34:55,947
+Yani gittiği bütün yolu siteye aktarıp sonra eğer gidecek yolu kalmadıysa çekerek başka bir yol alana kadar...
+
+179
+00:34:55,987 --> 00:35:10,288
+Evet, yani şöyle yaklaştık, güzel mantık şu. Ben bir şekilde hedefe ulaşmaya çalışıyorum ve yapabileceğim hareketler belli. Ben sola gidebilirim, ben sağa gidebilirim, ben yukarı gidebilirim, ben aşağı gidebilirim.
+
+180
+00:35:11,027 --> 00:35:26,807
+Tamam, tamam, left, right, up ve down gidebilirim. Tamam, başka bir şeyim yok, hareket kabiliyetim yok. Ben burada bir strateji belirlerim, yani en basiti, bu şey aptal fare. Hep aynı sırayla, hep aynı hareketleri yapmaya çalışırım. Şimdi buraya geldim, bir.
+
+181
+00:35:27,411 --> 00:35:45,151
+Tamam mı? Ben buradayım. Ve sonra yapmam gereken hareket, yani seçmem gereken ilk hareket ne? Sol. Sola gidebiliyor muyum? Evet. Sola giderim ama gittiğimi şurada tutarım. Left diye. Tamam? Stackte. Şimdi ne yapacağım? Yine sola gitmeye çalışacağım. Aa gidemiyorum.
+
+182
+00:35:45,456 --> 00:35:49,115
+Sıfır var. O zaman ne yapmam lazım? Benim buradan geri gelmem lazım.
+
+183
+00:35:49,796 --> 00:35:54,476
+Ve bir geri gelmek için bir tane pop etmem. Eski halime geri gelmem lazım.
+
+184
+00:35:54,615 --> 00:35:58,956
+Left yapmıştım ya, right yapmam lazım. Bunun tersini yapmam gerekir.
+
+185
+00:35:59,336 --> 00:36:03,275
+O zaman işte stackten pop etmem gerekir. Buraya geldim geri diyelim.
+
+186
+00:36:03,396 --> 00:36:12,176
+Şuraya gidemedim, şuraya geri geldim. Şöyle ikinci left'i yapamadığımızı görüp bunu pop edip right yaptık onun yerine.
+
+187
+00:36:12,176 --> 00:36:13,456
+Tamam mı? Buradayım.
+
+188
+00:36:13,456 --> 00:36:41,456
+Şimdi ne yapacağım? Left yapamadım. Tabi bu left right deyince geri gidiyor buraya. Geri gidebilirim. O zaman bu böyle left right left right kalır. Bunu left up right down da diyebiliriz. Sonra diyelim ki ben buradayım. Yukarı gidebiliyor muyum? Hayır. Aslında bu sol kontrolünde yine stack de var mı diye yapabiliriz. Down yapmam gerekiyor. Down yapabiliyor muyum? Evet yapabiliyorum. İşte o zaman down yaptım diye siteye koyuyorum. Sonra yine left yapmıyorum.
+
+189
+00:36:41,456 --> 00:37:08,456
+yapmaya çalışıyorum, yapamıyorum. Write yapmaya çalışıyorum, yapamıyorum. Up yapamam çünkü zaten oradan geldim. Down yapabiliyor muyum? Yapabiliyorum. İşte bir down daha yapayım. Böyle gidip gidip bir yerde sıkıştığınızda, şurada sıkıştık diyelim, buradan bir adım, iki adım, üç adım geri gelmem lazım diyorum. Eski şeylerimi hatırlamam lazım ve gittiğim sırayla hatırlamam lazım. Yani en son yaptığım işlemi ilk olarak geri almam lazım. Tam bir undo problemi.
+
+190
+00:37:09,456 --> 00:37:13,536
+Bu problem olduğu için de bizim için en uygun veri yapısı stack olacaktır burada.
+
+191
+00:37:13,956 --> 00:37:19,296
+Neden? Dediğim gibi geriye doğru hareketlerimi teker teker geri almam gerektiği için.
+
+192
+00:37:19,996 --> 00:37:26,456
+Bu mantıkla stack ile bu işi yani labirentten çıkma işini halledebiliriz.
+
+193
+00:37:28,916 --> 00:37:32,936
+Şimdi bir kod var. Hemen onu yazalım.
+
+194
+00:37:34,675 --> 00:37:41,076
+Node'u yazmaya gerek yok da direkt mystery fonksiyonumuzu yazalım.
+
+195
+00:37:41,076 --> 00:37:46,976
+Ve aldığı şey de struct node pointer şeklinde bir head alıyor.
+
+196
+00:37:47,956 --> 00:37:49,516
+Şurayı biraz büyütelim.
+
+197
+00:37:51,195 --> 00:37:51,556
+Tamam.
+
+198
+00:37:53,016 --> 00:37:55,336
+Sonra şöyle bir kod yazmışız.
+
+199
+00:37:55,536 --> 00:38:01,576
+If head eşit null return demişiz.
+
+200
+00:38:03,956 --> 00:38:31,556
+Tamam. Ondan sonra, şurada kendimizi geri çağırmışız. mystery, head next ile çağırmışız. head next, seal, tamam. Sonra ne yapmışız? printf, %d, virgül, head, data demişiz.
+
+201
+00:38:34,132 --> 00:39:00,511
+Tamam. Ve blok bitmiş. Evet, bu kod ne yapar? Hadi bakalım. Şimdi şöyle hemen linked listemizi çizelim. Örnek bir tane linked liste çizelim. Şöyle dört eleman olsa yeter herhalde. İçlerine de değerlerine işte mesela burada iki olsun. Burada dört olsun. Burada alt olsun.
+
+202
+00:39:01,108 --> 00:39:15,327
+Burada da 8 olsun. Şu şunu gösteriyor. Şu şunu, şu da şunu. Şuralarına da linklerini koyalım. Bu da null'ı gösteriyor. Tamam. Head burası.
+
+203
+00:39:18,827 --> 00:39:28,608
+Evet. Şimdi girdik fonksiyona. Head eşitlerini al mı? Hayır. O zaman return etmiyorum. Devam ediyorum. Mystery head next.
+
+204
+00:39:29,268 --> 00:39:42,268
+Ne yaptım? Buraya geldim. Tekrar mystery'yi çağırdım. Head eşitlerini alma. Hayır. O zaman bir daha mystery head next. Hop, buraya geldim. Sonra...
+
+205
+00:39:43,539 --> 00:39:59,519
+Yine head eşittir null mı? Head burası ya şu anda. Yeni gelen şuradan dolayı head burası. Null mı? Değil. O zaman misteri head next yap. Buraya gel. Head eşittir null mı? Hayır. Burayı gösteriyor. O zaman bir daha next yap. Buraya gel.
+
+206
+00:40:00,115 --> 00:40:26,715
+Nala geldik. Head eşittir Nal mı? Evet. O zaman return ettim. Nereye return ettim? Buraya return ettim. Yani şu kod satırına geldim. Printf head data yazdırdım. 8. Sonra bitti. Geri geldim. Nereye geri geldim? Head next'in çağırdığımdan sonraki aşamaya. Yani burada gelmiştim. Ben kim çağırmıştı? Bu. O zaman şimdi buradan son satır işleyecek. Printf 6.
+
+207
+00:40:27,476 --> 00:40:55,396
+Tamam, ben bittim. Geri gel. Şunun çağırdığı kimdi? 4. Bunun işi bitti. Bir alt satır olan printf, 4 yazdırdı. Sonra bu da bitti. Geri gel. Şunu kim çağırmıştı? 4'ü 2 çağırmıştı hatırlarsanız. Buraya geldim. 2'yi de yazdırdım. Beni çağıran ilk mystery'i, ilk hede kadar geri gelmiş oldum printflerle. Ne görüyorum ekranda? 8, 6, 4, 2.
+
+208
+00:40:55,476 --> 00:41:11,936
+Yani linked listenin bütün düğümlerinin değerlerini sondan başa doğru ekrana yazdırmış oldum. Bunu da genellikle doğru yapmıştınız. Tamam linked liste konusundaki bir soruydu bu da.
+
+209
+00:41:23,731 --> 00:41:28,152
+Ne demek dairesel kuyruk? Başı sonuna bağlı demek aslına bakarsınız.
+
+210
+00:41:29,280 --> 00:41:53,539
+n elemanlı bir dizi diyor. Yani aslında boyutu da sabit. Şimdi rear sadece elimizde bize mesela rear pointerı verilmiş. Tamam mı? Ve bu son eleman. Tamam. Ben yeni gelen bir elemanı nereye ekleyeceğim? Doğal olarak rear artı bire ekleyeceğim. Rear artı bire ekleyeceğim de bu bir circle'ır. Yani aslında bir şekilde başa dönebilmem lazım. Değil mi? Yani ilk aklımıza gelen doğru olan şu.
+
+211
+00:41:54,068 --> 00:41:57,868
+Mantık olarak rear artı bire yazmam gerekiyor ki
+
+212
+00:41:58,579 --> 00:42:24,380
+şey yapabileyim. Bir sonraki yani son eleman olarak bunu ekleyebileyim. Tamam da rear artı bir mesela şöyle gittiğimizi düşünelim. Rear artı bir burası da toplamda n eleman var. Yani benim n'i de geçmemem gerekiyor. Ne yapacağım? Rear artı biri şöyle hemen mod n yaparım ve bu şekilde benim bir sonraki elemanımı koyacağım gözü bulabilirim.
+
+213
+00:42:26,579 --> 00:42:47,679
+Değer varsa onu koymamamız lazım. Onu düşünmenize gerek yok. Ezgeç. Yani sonuçta adam yeni gelen elemanı ekle demiş ve dizinin boyutu sabit. Yapabileceğimiz şey bizim bir sonraki göze gitmek. Ama rear artı bir dersem sıkıntı. Çünkü benim circular yapı nedeniyle başa dönebiliyor olmam lazım. Nasıl başa dönerim? En kolay yolu modern.
+
+214
+00:42:48,047 --> 00:42:55,127
+Modern yaptığınızda, işte direkt olarak ilk gözden itibaren yaza yaza gitmeye devam edersiniz.
+
+215
+00:42:55,787 --> 00:42:58,507
+Tabii ben bunu büyük yazmışım şeydi. Burada küçük yazdık.
+
+216
+00:42:58,647 --> 00:43:00,867
+Anla, idare, rear. Şöyle yazalım.
+
+217
+00:43:02,647 --> 00:43:03,507
+Evet, tamam.
+
+218
+00:43:05,587 --> 00:43:09,387
+Evet, quiz bu şekildeydi. Umarım hoşunuza gitmiştir.
+
+219
+00:43:10,907 --> 00:43:11,587
+Beğendiniz mi?
+
+220
+00:43:13,527 --> 00:43:14,507
+Şunu kapatalım.
+
+221
+00:43:15,476 --> 00:43:34,196
+Şimdi chat'i daha yeni görebiliyorum. Bir dakika, daha fırsat, queue yazdım en son. Tamam. Çalışan kodu gösterseniz daha iyi olur. Ödev için mi diyorsunuz? Bu stack olayındaki mi?
+
+222
+00:43:35,923 --> 00:43:38,884
+Genel olarak söylemiştim hocam onu. Neyse artık ben ömrüm.
+
+223
+00:43:39,184 --> 00:43:44,364
+Onu zaten şeyde geçen hafta uygulama saatinde Fuat Hoca anlattı.
+
+224
+00:43:44,644 --> 00:43:47,224
+Tabi algoritmasını çizerek ya da kodunu yazarak anlatmadı.
+
+225
+00:43:47,324 --> 00:43:52,483
+Çünkü o kadar gerek yok diye düşündük biz detayına girmeye.
+
+226
+00:43:52,583 --> 00:43:57,083
+Ama mantık kavrandıktan sonra siteye push-pup işlemlerini zaten yazmıştınız.
+
+227
+00:43:57,664 --> 00:44:00,384
+Bu şekilde devam edersiniz diyelim.
+
+228
+00:44:00,384 --> 00:44:02,684
+Şimdi şeyi arıyorum. Bir dakika.
+
+229
+00:44:03,539 --> 00:44:06,539
+Şöyle
+
+230
+00:44:06,539 --> 00:44:13,539
+Şuradan bir paylaşım yapayım hemen
+
+231
+00:44:13,539 --> 00:44:15,052
+Şöyle
+
+232
+00:44:15,603 --> 00:44:31,183
+Şöyle açalım. Bir ikili arama ağacının üzerinden tekrar bir geçelim. Ve ilk saatimiz en azından onunla bitmiş olsun. İkinci saatte de bu haftanın konusuna başlarız. Şuradan share edelim. Tamam.
+
+233
+00:44:34,323 --> 00:44:39,363
+Düşündürücüydü. Hangisi düşündürücüydü? Son soru mu düşündü? Yani şey, rear artı bir modern mi?
+
+234
+00:44:42,099 --> 00:44:43,719
+Arkadaşlar, genel.
+
+235
+00:44:44,115 --> 00:44:56,295
+Yani sonuçta bu biraz zamana karşı bir yarış. Hızlı düşünmenizi ve işte dersleri ne kadar dinlediğinizi ve derslerden ne kadar çıkarım yapabildiğinizi aslında ölçmeye çalıştık.
+
+236
+00:44:56,295 --> 00:45:05,916
+Bir de mümkün olduğunca çok özellikle uzaktan eğitimde mümkün olduğunca çok değerlendirme noktası kullanmaya gayret ediyoruz.
+
+237
+00:45:06,115 --> 00:45:11,675
+Toplamda 3 quiz, 3 ödev ve 1 proje daha büyük ödev şeklinde.
+
+238
+00:45:12,115 --> 00:45:19,215
+Bir tane değerlendirme olunca onların hepsi birleşip bir not oluşturacağı için sizin de şansınız artıyor aslında.
+
+239
+00:45:19,396 --> 00:45:26,335
+Bazı şeyleri mesela üç soruyu görmeseniz de nihayetinde çoğunluk aslında bu şekilde davranmış olacak olduğu için.
+
+240
+00:45:28,980 --> 00:45:36,000
+Hak geçmemiş oluyor diyeyim en azından. Bu şekilde değerlendirme sayısını arttırmaya gayret ediyoruz.
+
+241
+00:45:36,500 --> 00:45:41,980
+Şimdi ikili arama ağacı dediğimiz gibi önceden geçen hafta bahsettik. Bir daha üzerinden geçelim.
+
+242
+00:45:43,400 --> 00:45:51,079
+Sol alt ağaç daha küçük elemanlardan oluşur. Sağ alt ağaç daha büyük elemanlardan oluşur. Verilen bir düğüm için.
+
+243
+00:45:51,079 --> 00:45:56,920
+Bu verilen düğüm şurası olsaydı yine aynı tanım geçerliydi. Sol alt ağaç her zaman kendisinden.
+
+244
+00:45:56,980 --> 00:46:05,139
+Küçüklerden oluşur, sağ altı ağaç kendisinden büyüklerden oluşur. Eğer bu şartı sağlamıyorsa zaten ikili arama ağacı değildir demiştik. Şimdi eleman ekleme.
+
+245
+00:46:05,780 --> 00:46:31,620
+Ben önce eleman arayalım. 25'i aramak için kökten başlayacağım. 44. Nereye gitmem lazım? 25 daha küçük. O zaman sol ağaca doğru yönlenmem lazım. Gittim. Ne gördüm? 17. 17, 25. 25 daha büyük. O zaman benim sağ alt ağaca doğru yönlenmem lazım. 32 gördüm. Şimdi daha küçüğüm. 25. O zaman sol alt ağaca doğru gitmem lazım.
+
+246
+00:46:32,307 --> 00:46:37,147
+28 gördüm. Yine sol alt ağaca. Pardon, gitmem lazım.
+
+247
+00:46:38,036 --> 00:46:43,916
+Null gördüm. Demek ki bulamadım. O zaman bu ağaçta 25 değeri yoktur diyebilirim.
+
+248
+00:46:44,195 --> 00:46:55,376
+76'yı ararken ne yapacaktım? 76 daha büyük. Sağ ağaca git. 88 daha küçüğüm 76 olarak. O zaman solda aramam lazım.
+
+249
+00:46:55,896 --> 00:47:00,376
+65 sağda aramam lazım. 82 solda aramam lazım.
+
+250
+00:47:06,036 --> 00:47:13,416
+A ile bakmanız da gerekebilir. Oradan da yakalayabilirsiniz. İmplementasyona göre değişir ama özellikle 82 sola gittim 76.
+
+251
+00:47:14,135 --> 00:47:21,536
+Kendime eşit olduğu için evet buldum. Ağaçta burada duruyorum şeklinde bir sonuç elde ettim.
+
+252
+00:47:21,635 --> 00:47:29,476
+Ben bunu aradım buldum da ne oldu diyeceksiniz. İşte bu bir şey olabilir. Öğrenci numaraları ve bu da aslında bir straktır.
+
+253
+00:47:29,476 --> 00:47:33,695
+Öğrenci numarasıyla arıyorum ama öğrencinin başka bilgileri de var içinde.
+
+254
+00:47:34,036 --> 00:47:38,516
+Adı soyadı, adres et bilmem ne not ortalaması. O bilgilere de erişmiş oldum.
+
+255
+00:47:38,655 --> 00:48:06,655
+Nasıl bir karmaşıklıkla erişmiş oldum? Log n mertebesinde. Neden? Çünkü bu bir ikili ağaç. Olabilecek maksimum yükseklik log n mertebesinde olacak. O yüzden benim de sağ sol gidişlerim log n'den fazla olamayacak. Hep ikiye böle böle gittiğim için. Değil mi? Şu tarafa gittiğimde sol tarafı yani sol yarıyı olduğu gibi diskart ediyorum. Burada da işte sağ yarıyı olduğu gibi diskart ediyorum. Hep ikiye bölerek gittiğimden dolayı log n mertebesinde bir...
+
+256
+00:48:06,655 --> 00:48:25,036
+karmaşıklıkla arama işlemini gerçekleştirmiş oldum. Eleman eklerken ne yapmam lazım? İki şey kontrol yapmam lazım. Bir, eğer hani baktım baktım baktım gittim. Mesela 25'i eklemeye çalışalım. 44, 17, 32, 28 dallanmasından sonra sola gittim. Null gördüm.
+
+257
+00:48:32,563 --> 00:48:35,043
+Buraya da 25 değerini yazmam gerekiyor.
+
+258
+00:48:35,923 --> 00:48:43,203
+Eğer böyle nalı görene kadar gidip orada bunu yazmam gerekiyor.
+
+259
+00:48:43,583 --> 00:48:46,623
+Peki oraya kadar olan gidişatı nasıl kurgulamam lazım?
+
+260
+00:48:46,623 --> 00:48:47,623
+Yine aynı şekilde.
+
+261
+00:48:47,803 --> 00:48:49,623
+Eğer benim...
+
+262
+00:48:49,876 --> 00:49:06,855
+insert etmeye çalıştığım data daha küçükse sol tarafa gidip insert demem. Eğer daha büyükse sağ tarafa gidip insert demem lazım. Hemen geri gelelim. 25'i insert etmeye çalışalım. Ne olacak? Sola git insert et dedi.
+
+263
+00:49:07,443 --> 00:49:35,403
+17 ile karşılaştırdı, 25 daha büyük, sağa git insert et dedi. 32 ile karşılaştırdı, sola git insert et dedi. 28 ile karşılaştırdı, sola git insert dedi ve şuradaki nalı gördüğü için de, tamam ben boş bir yer buldum, pardon yanlış gittik, boş bir yaprak şeyi buldum, yapraktan çıkan bir düğüm var. Buraya yeni bir düğüm yarat, değeri koy, hadi.
+
+264
+00:49:35,443 --> 00:50:00,000
+Döndür şeklinde buraya eklemiş olduğum. Ekleme de bu. Yani aslında hiçbir zorluğu yok. Aslında arıyoruz, boş görünce gidebildiğimiz boş yer neresiyse oraya gidip ekliyoruz. Mesela 75 eklemeye çalışalım. Git sağ alt ağaçta ekle diyecek. 88'i gördüğü için sol alt ağaca ekle diyecek. 65'i gördüğü için sağ alt.
+
+265
+00:50:00,000 --> 00:50:20,579
+Alt ağaca ekle diyecek. 82'yi gördü, 75 daha küçük, sol alt ağaca ekle diyecek. 76'yi gördü, 75 yine küçük, sol alt ağaca ekle diyecek. Ve buraya gelip, ah tamam yerimi buldum deyip hemen şuraya bir yeni node yaratıp 75.
+
+266
+00:50:21,972 --> 00:50:34,132
+değerini yazmış olacağız. Eğer 65'i eklemeye çalışsaydım ne olacaktı? 44, 88, 65 buldum, çıkmam lazım şeklinde implementasyonu gerçekleştirmem lazım.
+
+267
+00:50:34,272 --> 00:50:41,612
+Yani zaten var. Belki şey diyebilirsiniz, üzerine yazayım mı falan diyebilirsiniz. Böyle bir şeyler, kontroller size kalmış.
+
+268
+00:50:42,432 --> 00:50:48,312
+Eleman silmeye geldiğimizde de 3 tane durum var. Birinci durum şu.
+
+269
+00:50:48,820 --> 00:51:12,420
+Bu bir yapraktır. Yani solu da, sağı da naldır. Çok güzel. En temiz iş bu. Sil gitsin. Bunu buldum ya, aradım. 5'i sil dedi bana. 94. Sola git. 10. Sola git. 5. Yaşasın buldum. Solu var mı? Yok. Sağı var mı? Yok. Müthiş. Bunu sil gitsin. Ağaçta hiçbir şey bozulmaz. İkili arama ağacımda. Şöyle çizeyim.
+
+270
+00:51:12,916 --> 00:51:17,096
+Kalan ikili arama ağacımda herhangi bir organizasyon yapmama gerek kalmaz.
+
+271
+00:51:17,876 --> 00:51:18,996
+Birinci durum bu.
+
+272
+00:51:19,556 --> 00:51:21,816
+Şimdi ikinci durum, ya bunun bir tane çocuğu olabilir.
+
+273
+00:51:22,452 --> 00:51:44,692
+Sol çocuğu da olabilir, sağ çocuğu da olabilir. Şimdi mesela diyelim ki sol çocuğumuz olsun. 24'ü silmek istiyorum. Neden? Onun tek bir tane sol çocuğu var, sağ çocuğu yok. Ne yapacağım? 94. Sola git, onu gördüm, sağa git, 24'ü buldum. 24'ün solu var mı? Var. 24'ün sağı var mı? Yok. Tamam. Şimdi ne yapacağım? Bunun tek çocuğu var. Daha doğrusu 6 soyu bir tane.
+
+274
+00:51:45,056 --> 00:52:10,316
+Koldan gidiyor. Bu iş kolay. Hani bunun mirasını bölüştürmek kolay. Alıyorum. Bunu öldürüyorum. Şunun üzerini de öldüreyim. Bir dakika. Şunu da kırmızıya getirelim. Bunu tabii öldürmek için hani şöyle bir geçici değişken şunu tuttum. Tamam. Bunun çocuğunu aldım. Başıboş kalmasın alt soyu diye.
+
+275
+00:52:10,931 --> 00:52:21,572
+Geldim, bunun atasına bağladım ve bu sayede alt soy başıboş kalmadı. Ağaca bağlantısı devam etti. Bunu da free ettim.
+
+276
+00:52:24,612 --> 00:52:35,951
+Sonuçta ne oldu? 94, 10, solunda 5, sağında 11, 17 olan bir ağaç oluştu. Şuraya yazalım. 94, 10, 97.
+
+277
+00:52:37,172 --> 00:52:46,032
+5, 11, 17. Şöyle de şeylerini çizelim.
+
+278
+00:52:49,684 --> 00:53:01,204
+İşte bu. Bir durum daha var. Hani bunun tümleyeni. Aynı şeyi yapacağız. Sağ çocuğu olsun. Tamam mı? Mesela şuradaki 11'i silelim.
+
+279
+00:53:01,811 --> 00:53:26,671
+11'in sol alt soyu yok, sağ alt soyu var. Aynı şey tamamen. Ne yapmam lazım? Sol ile sağın hiçbir farkı yok. Tek sadece göstermiş olalım. Şunu şöyle bir geçici şeyle gösterdim diyelim. Bunun alt soyunu aldım dedesine bağladım. Babasıydı dedesiydi ya çocuk başıboş kalmasın diye torun dedeye, dedenin nüfusuna kayıtla oldu ve bunu free ettim.
+
+280
+00:53:28,671 --> 00:53:29,131
+Tamam.
+
+281
+00:53:29,588 --> 00:53:42,548
+Yani 94-10-97, onun çocukları 5 ve 24, 24'ün çocuğu da 17 oldu. Böylece ağaçta yine herhangi bir yapısal değişiklik oluşmadan silme işlemini gerçekleştirdim.
+
+282
+00:53:42,548 --> 00:53:44,488
+Son durum biraz karışık.
+
+283
+00:53:47,764 --> 00:53:51,483
+Hem sol hem de sağ alt soyun varsa bir sıkıntı olabilir.
+
+284
+00:53:52,064 --> 00:53:53,903
+Burada şunu yapmam lazım.
+
+285
+00:53:54,483 --> 00:53:57,604
+Ya hiyerarşiyi bozmamak için diyelim.
+
+286
+00:53:57,604 --> 00:54:08,624
+Ya soldaki en büyük elemanı bulup kendinin yerine koymam lazım ki buradakiler hala küçük kalsın.
+
+287
+00:54:09,023 --> 00:54:10,584
+Buradakiler de zaten büyüktü.
+
+288
+00:54:11,219 --> 00:54:12,839
+Bunu garanti edebileyim.
+
+289
+00:54:13,559 --> 00:54:25,959
+Ya da sağ alt ağaçtaki en küçük elemanı bulmam gerekiyor ki bu da en küçük olduğu için buraya çıkarttığımda yine bunlardan küçük kalmaya devam edecek.
+
+290
+00:54:26,619 --> 00:54:28,639
+Yani bunların hepsi büyük kalmaya devam edecek.
+
+291
+00:54:29,728 --> 00:54:35,148
+İlk başta sağ alt ağaçta olduğu için de zaten soldakilerin hepsinden büyük kalmaya devam edecek.
+
+292
+00:54:35,268 --> 00:54:41,508
+Yani soldakiler küçük, sağdakiler büyük hiyerarşisini bozmadan yoluma devam edeceğim.
+
+293
+00:54:41,508 --> 00:54:50,967
+Şimdi ben burada şunu yapabilirim. Soldakilerin en büyüğünü, zaten burada bir tane 5 varmış. Biraz daha büyütelim örneğimizi.
+
+294
+00:54:51,608 --> 00:54:53,648
+Şuradan şöyle 5.
+
+295
+00:54:54,324 --> 00:55:04,164
+2 ve 3 olsun. Tamam mı? Bunun da 6 şeyleri var. Tamam. Hadi 3 olmasın. Pardon 8 olsun. Yanlış yazdım.
+
+296
+00:55:05,543 --> 00:55:15,644
+3 olur mu? Olmaz. Daha büyük olması lazım. Şimdi ne yapabilirim? Ben 10'u silmek istediğimde ilk opsiyonum şu olabilir.
+
+297
+00:55:16,463 --> 00:55:20,184
+Sol alt ağaçtaki en büyük değer. Yani 8.
+
+298
+00:55:21,396 --> 00:55:34,516
+Bunu alırım, şöyle yazabilirim. Şuraya 94, 8, 97, ondan sonra ne vardı? 5,
+
+299
+00:55:38,804 --> 00:55:41,304
+Ve 5'inde zaten çocuğu 2 vardı.
+
+300
+00:55:43,104 --> 00:55:44,943
+Bu tarafta ne vardı?
+
+301
+00:55:46,104 --> 00:55:52,224
+24, 11 ve 17.
+
+302
+00:55:54,903 --> 00:55:55,144
+Tamam.
+
+303
+00:55:55,724 --> 00:55:56,544
+Ne yapmış oldum?
+
+304
+00:55:56,903 --> 00:56:02,264
+Sol alt ağaçtaki en büyük elemanı bunun yerine yazmış oldum.
+
+305
+00:56:03,344 --> 00:56:04,403
+Onu silmiş oldum yani.
+
+306
+00:56:05,324 --> 00:56:06,344
+Hiyerarşi bozuldu mu?
+
+307
+00:56:06,804 --> 00:56:34,804
+Bakalım, sağ altı aç zaten okeydi. Soldaki 94, 8 daha küçük, güzel. 8'in çocuklarına bakalım. 5 küçük, 24 büyük, sorun yok. 5'e bakalım, 2 küçük ve solda doğru. 24, 11 küçüktür 24'den solda. 17 büyüktür 11'den sağda. Herhangi bir sıkıntı yok. Dengeli bir ağaç değil, biliyoruz. O da hiç girmiyoruz şu anda. Ama bunu silerek, silmek için.
+
+308
+00:56:34,804 --> 00:56:46,003
+Bu yüzden sol alt soyundaki en büyük çocuğu alıp buraya koyabilirim. Bir opsiyonum daha var. Sağ alt ağaçtaki en küçük elemanı bulup tam tersi tam tümleyeni bunu yapabilirim.
+
+309
+00:56:53,876 --> 00:57:09,476
+En küçük değeri buraya taşıyabilirim. Taşıdım. Taşıdıktan sonra ne yapacağım? Bunu sileceğim aslında. Hani burada 8'i silmem gerekiyordu. 11'i silmek için ne yapmam lazım? Tek çocuğu ver. Çek çocuğunu onun yerine yaz gitsin. Oldu, bitti.
+
+310
+00:57:10,771 --> 00:57:30,771
+Tamam. Yani aslında yine üç durumdan biri oluşabilir. Yani ya yapraktır, direkt silerim. Ki sekiz örneğinde bunu gördük. Sekizi buraya taşıma örneğinde. Şunu da direkt silmiş oldum. Şöyle kesikli yazmaya çalışayım. Şunu yok ettik.
+
+311
+00:57:31,380 --> 00:57:36,980
+Ya da tek çocuğu olabilir, tek çocuk silme prosedürünü zaten uygularsınız.
+
+312
+00:57:37,160 --> 00:57:38,180
+Ya da iki çocuğu olabilir.
+
+313
+00:57:38,700 --> 00:57:44,039
+Tekrardan yine sol alt soydaki küçük ya da sağ alt soydaki büyük elemanı,
+
+314
+00:57:44,039 --> 00:57:50,560
+ama soldaki büyük sağdaki küçük elemanı kendisinin yerine taşıyarak bu işlemi gerçekleştirebilirsiniz.
+
+315
+00:57:51,019 --> 00:57:57,960
+Nihayetinde yine rekürsif olarak silmeyi çağıracağı için orada sizin tekrardan bir uğraş göstermenize gerek kalmaz.
+
+316
+00:57:59,443 --> 00:58:02,704
+Evet, silme de bu şekilde.
+
+317
+00:58:03,983 --> 00:58:09,523
+Find min ve find max isterseniz işte şey yapmışız, yazmışız.
+
+318
+00:58:09,844 --> 00:58:10,804
+Buna da bakabilirsiniz.
+
+319
+00:58:10,983 --> 00:58:15,423
+Eleman silmenin kodu da bu şekilde karşımıza çıkıyor.
+
+320
+00:58:16,324 --> 00:58:19,963
+Bu biraz tabii daha optimize bir kod diyeyim.
+
+321
+00:58:21,423 --> 00:58:25,523
+Ne yapıyorum? Bakın sağdaki minimumu buluyorum.
+
+322
+00:58:26,420 --> 00:58:28,239
+Öyle yapmışım implementasyonu.
+
+323
+00:58:28,280 --> 00:58:34,000
+Ya da siz bunu find max t'nin left'i de diyebilirsiniz.
+
+324
+00:58:34,159 --> 00:58:34,659
+Aynı şey.
+
+325
+00:58:35,199 --> 00:58:35,380
+Tamam.
+
+326
+00:58:35,920 --> 00:58:36,259
+O kadar.
+
+327
+00:58:38,000 --> 00:58:40,280
+Hocam sunumu ders duvarına yükleyebilir misiniz?
+
+328
+00:58:41,719 --> 00:58:42,519
+Sunumu ne yapayım?
+
+329
+00:58:43,199 --> 00:58:44,659
+Ders duvarına yükleyebilir misiniz?
+
+330
+00:58:45,179 --> 00:58:46,179
+Haa, eklememiş miyim?
+
+331
+00:58:46,771 --> 00:58:49,871
+Ağaç yok hocam. En son kuyruk yapısı var sanırım.
+
+332
+00:58:49,931 --> 00:58:54,491
+Kuyrukta mı kalmış? Tamam ekleriz ya. Bugün şey yapayım. Bugünkü dersten sonra ikisini de ekleriz.
+
+333
+00:58:56,491 --> 00:58:59,431
+Okey. Bu da tamam. O kadar.
+
+334
+00:58:59,987 --> 00:59:07,987
+İkili arama ağacında şeyi söyledik, konuştuk. En elemanlı bir ağaç en kötü durumda en yüksekte yerleşir linked liste olur.
+
+335
+00:59:07,987 --> 00:59:20,007
+O tabii şey, evet en kötü durumda ON. Ama rastgele ekleme ve silmeler olduğunda bu ortalamada log n mertebesinde yüksekte sahip olur.
+
+336
+00:59:20,447 --> 00:59:27,987
+Dengeli arama ağacıdır dedik. Biz en kötü yani OH ile arama eklemesi...
+
+337
+00:59:27,987 --> 00:59:45,927
+silme yapabiliriz ki bu da logene karşılık gelir. En kötü durumda ON olacaktır. AVL gibi dengeleme politikalarıyla ya da işte 2-3-4 ağaçları ya da red black tree'lerle bunlar daha dengeli olacak şekilde, logene koruyacak şekilde yapılabilir.
+
+338
+00:59:45,927 --> 00:59:55,827
+En basit de AVL mesela. Anlatmıyorum ama çok basit bir implementasyonu var. Bizim gösterdiğimiz temel ikili ağacın üzerinde
+
+339
+00:59:55,987 --> 00:59:59,987
+Aslında sadece eklerken ve silerken denge...
+
+340
+01:00:00,000 --> 01:00:09,760
+Denge kontrolü yapıp çocuklar arasında bir böyle shift işlemi böyle yapıp yüksekliği azaltma yönünde bir iyileştirme yapıyor.
+
+341
+01:00:10,740 --> 01:00:13,760
+İsterseniz incelersiniz diye geçen hafta söylemiştim.
+
+342
+01:00:14,760 --> 01:00:24,860
+Şey değil hani yükümlü değilsiniz ama ya bu ağaç niye böyle garip garip O'yene gidebiliyor yerine hep dengelik almasını da garanti edebilirsiniz.
+
+343
+01:00:25,684 --> 01:00:42,644
+Okey, şimdi bunu stop edelim ve yeni haftanın konusu heap. Saat 11 olmuş, bir ara verelim. 11.10 geçe heap konusuyla yolumuza devam edelim.
+
+344
+01:11:58,676 --> 01:12:19,015
+Evet arkadaşlar, şimdi bu haftanın konusu olan yeni veri yapımız heap nedir? Buna bakacağız. İlk saatte heap'i tanıyıp, ikinci saatte de bir heap uygulaması olan heap sortla yolumuza devam ederiz.
+
+345
+01:12:20,020 --> 01:12:37,579
+Şimdi ilk olarak heap nedir? Ondan bahsedelim. Bir tanıyalım bakalım bu heap veri yapısı ne demektir? Burada heap derken hep binary heplerden bahsedeceğiz. Başka bir heap yapısından bahsetmiyor olacağız. Daha farklı hepler de var. Onlara bu ders kapsamında girmeyeceğiz.
+
+346
+01:12:37,579 --> 01:12:47,319
+Fibonacci hepler falan gibi farklı yapılar da mevcut. Yine aynı mantıklı ama farklı implementasyonlarla çalışan veri yapıları.
+
+347
+01:12:48,020 --> 01:12:53,280
+Biz burada tamamen binary hepler üzerinden yolumuza devam edeceğiz.
+
+348
+01:12:53,440 --> 01:12:55,460
+Kafanız karışmasın, şimdiden onu söyleyeyim.
+
+349
+01:12:56,040 --> 01:12:56,739
+Nedir bu heap?
+
+350
+01:12:57,560 --> 01:13:04,640
+Heap aslında tam olarak tanımı şu, neredeyse complete binary tree şeklinde olan veri yapılarıdır.
+
+351
+01:13:04,739 --> 01:13:06,840
+Neydi complete binary tree hatırlayalım.
+
+352
+01:13:07,739 --> 01:13:08,840
+Son düzey hariç.
+
+353
+01:13:09,460 --> 01:13:34,420
+Yani son seviye hariç, level. Tüm düzeylerin tam dolu olduğu ve son düzeyinde en soldan başlayarak dolmaya başladığı ikili ağaçlara verilen isimdi. Evet, binary hepler ya da kısaca heap her zaman için complete binary tree yapısını gösterir. Göstermek zorundadır. Eğer göstermiyorsa zaten bu bir heap değildir. Örnekleriyle bakacağız.
+
+354
+01:13:37,460 --> 01:13:41,560
+Karışabiliyor. Siz de tabii Nestle Unique programları falan da aldığınız için.
+
+355
+01:13:42,195 --> 01:14:09,695
+Java'da mesela bir heap space var değil mi? Garbage collected bir depolama alanı, değişkenlerimiz orada duruyor. Ondan sonra işte sistem GC'yi çağırdığınızda o heap'teki boş olan kullanılmayan değişkenler temizleniyor. Böylece bellek alanı açılıyor falan. Lisp'te de benzer bir yapı var. Bu gibi dillerde işte bir garbage collected değişken tanımlama ve depolama alanına da heap denir.
+
+356
+01:14:10,195 --> 01:14:17,415
+Bizim veri yapısı olan heap ile bu heap'in uzaktan yakından hiçbir alakası yoktur.
+
+357
+01:14:18,136 --> 01:14:21,315
+Onu da baştan daha ilk slide'da söylemiş olalım.
+
+358
+01:14:21,735 --> 01:14:23,175
+Kafa karışıklığı olmasın.
+
+359
+01:14:23,995 --> 01:14:31,315
+İşte not enough heap space falan onu XMX ile arttıralım falan Java'da yapıyorduk gibi hemen kafanıza gelmesin.
+
+360
+01:14:31,315 --> 01:14:32,755
+O bambaşka bir ortam.
+
+361
+01:14:34,064 --> 01:14:52,764
+Bu uygulamanın işletilen değişkenlerinin saklandığı bir veri bellek alanı. Ama biz burada bir veri yapısından bahsediyoruz. Bir veri yapısı mantığından bahsediyoruz. Kesinlikle aynı şey değil. Onu mutlaka altını şöyle çizelim. Kalemimi alayım.
+
+362
+01:14:53,300 --> 01:15:08,800
+Ve şunun altını değildirin altını şöyle kalın kırmızı olarak çizelim. Bu kesinlikle ikisi farklı kavramlar. Şans eseri ikisine de aynı isim verilmiş durumda. Peki ne yapıyor bu heap? Niye var? Ya da yine ne iş için acaba birileri düşünmüş de bunu tasarlamış?
+
+363
+01:15:08,800 --> 01:15:20,800
+Bazı işlemlerde yine aslında binary tree yapısından gelen, onu görünce zaten hemen aklımıza log n gelmesi gerekiyor. Log n mertebesinde bir...
+
+364
+01:15:21,300 --> 01:15:33,479
+Karmaşıklık sayesinde bizim belli işlemleri yapabilmemizi ya da belli işlemlerde, algoritmalarda avantaj, karmaşıklık avantajı elde etmememizi sağlıyor.
+
+365
+01:15:33,619 --> 01:15:40,399
+Yani en yerine login mertebesinde bir seviyede yine bir işlem yapmamızı sağlıyor.
+
+366
+01:15:40,979 --> 01:15:56,039
+Mesela, örneğin, heap kullanarak sort yapabilirsiniz, sıralama işlemini gerçekleştirebilirsiniz ki bugün göstereceğim. Ne işe yarar peki heap kullanarak bir veri yapısı üzerinden sıralama yapmak ne işe yarar?
+
+367
+01:15:56,039 --> 01:16:08,799
+Bize şimdiye kadar n kare mertebesinde yaptığımız sıralamaları artık n log n mertebesinde yapabilmemizi sağlar. Hem de en kötü durumda n log n olacak şekilde.
+
+368
+01:16:08,979 --> 01:16:19,879
+Bir karmaşıklık ile sıralama işleminin yapılabilmesini bize sağlar. Demek ki bir anda n kareden logene düşürdü bizim mertebemizi.
+
+369
+01:16:19,879 --> 01:16:28,260
+Bu yüzden heap genellikle belli algoritmalarda yararlandığımız, kullandığımız, faydalarını gördüğümüz bir veri yapısı.
+
+370
+01:16:28,948 --> 01:16:39,568
+Şimdi hemen bir tanımını yapalım. Neredeyse bir complete binary tree'dir dedik de o onun yapısal özelliği yani şekli. Ama esas heap'i heap yapan şey o değil. Şimdi buna bakacağız.
+
+371
+01:16:39,568 --> 01:16:56,328
+Heap'in tanımı şudur. Bir düğümündeki değerin çocuklarından daha küçük ya da daha büyük, hep aynı şekilde olmasını garanti eden ağaç temelli veri yapısına heap adı verilir. Şimdi bu heap'in Türkçesi
+
+372
+01:16:56,724 --> 01:17:03,524
+diyeceksiniz. The heap'in Türkçesi yığıt. Ama bazı şeyler...
+
+373
+01:17:03,604 --> 01:17:13,944
+Çevirenler bunu da yığın olarak da çevirebiliyor. O yüzden böyle stack için biz yığın kullanıyoruz ya, orada bir kavram karmaşası yaşanabiliyor.
+
+374
+01:17:13,944 --> 01:17:27,084
+İşte bu yüzden biz yığın, yığıt falan demek yerine stack ve heap diyerek daha böyle net, hangi veri yapısı olduğunu net bir şekilde ifade etmeyi tercih ediyoruz.
+
+375
+01:17:27,664 --> 01:17:30,864
+Hani tam öz Türkçe konuşmamış oluyoruz ama biraz tarzancı oluyor.
+
+376
+01:17:31,507 --> 01:17:35,547
+En azından söylediklerimizden farklı farklı anlamlar çıkmıyor.
+
+377
+01:17:36,087 --> 01:17:41,347
+Şimdi, bir ağaç temelli veri yapısı olduğunu söyledik ve tek bir şeyi garanti ettiğini söyledik.
+
+378
+01:17:41,947 --> 01:17:45,768
+Bir düğümdeki değer çocuklardan daha büyüktür ya da daha küçüktür.
+
+379
+01:17:45,967 --> 01:17:50,507
+Bakın binary search tree'de de bu durum vardı hatırlarsanız ama orada şöyle diyorduk.
+
+380
+01:17:50,927 --> 01:17:54,447
+Soldakilerin hepsi daha küçüktür, sağdakilerin hepsi daha büyüktür diyorduk.
+
+381
+01:17:54,587 --> 01:17:57,108
+Burada bunu söylemiyoruz. Olmak zorunda değil.
+
+382
+01:17:57,747 --> 01:17:59,287
+Garanti ettiğim tek bir şey var.
+
+383
+01:17:59,507 --> 01:18:19,287
+Ben çocuklarımdan daha küçük ya da ben çocuklarımdan daha büyük bu kadar. Sadece bunu garanti ediyoruz. Bu ne demektir? Bakın recursive olarak gidelim. Yani şöyle hemen bir şey çizeyim şuraya. Çok fazla seviyesi olmayan bir complete binary tree çizeyim.
+
+384
+01:18:19,287 --> 01:18:24,947
+Tamam. Hatta şurada bir tane olsun. Bağlantılarını yapayım.
+
+385
+01:18:28,595 --> 01:18:40,595
+Evet, oldu. Şimdi ben neyi garanti ediyorum? Şu düğüm olarak, mesela büyük tarafından devam edelim, daha büyük olmayı garanti edelim. Bu düğümün...
+
+386
+01:18:40,640 --> 01:18:44,800
+Şu alt iki düğümün değerlerinden daha büyük olmasını garanti ediyorum.
+
+387
+01:18:44,960 --> 01:18:47,640
+Sırası önemli değil. Yani bu daha küçük, bu daha büyük olabilir.
+
+388
+01:18:48,120 --> 01:18:49,960
+Hani burada iki olabilir, burada beş olabilir.
+
+389
+01:18:50,360 --> 01:18:54,659
+Ama bunun mesela beşten de büyük, mesela sekiz gibi bir değer olduğunu garanti ediyorum.
+
+390
+01:18:55,380 --> 01:18:57,020
+Bu da aynı şekilde bundan daha büyük.
+
+391
+01:18:57,159 --> 01:19:03,140
+Yani şu anne ya da parent, ebeveyn çocuktan daha büyük bir değere sahip.
+
+392
+01:19:03,220 --> 01:19:04,239
+Bunu garanti ediyorum.
+
+393
+01:19:05,040 --> 01:19:06,180
+Bir üst seviyeye çıkalım.
+
+394
+01:19:06,707 --> 01:19:31,647
+Kök de bunlardan daha büyük bir değere sahip. O zaman ben buradan hemen şu çıkarımı yapabilirim. Büyük açısından değerlendirdim. O zaman benim elimde mesela 1, 2, 3, 4, 5, 6 tane eleman var. Tamam mı? Ve ben bu 6 elemanı bir heap de tutuyorsam her zaman için şunu garanti ederim. Kök düğüm en büyük düğümdür.
+
+395
+01:19:32,340 --> 01:20:00,000
+Buna da max heap adını veriyoruz. Tersten düşünelim, hep daha küçük olmasını garanti edelim. O zaman da diyeceğiz ki bu daha küçüktür alt çocuklarından. Bu da çocuğundan daha küçüktür. Bir üst seviyeye çıktığınızda buradaki parent yani esas böyle kökümüz bunlardan da daha küçüktür. Ne yapmış oldum? Dizimdeki ya da eleman tuttuğum bütün değerler içerisindeki en küçük değerin kök elemanı.
+
+396
+01:20:00,000 --> 01:20:01,399
+Olmasını Garanti ettim.
+
+397
+01:20:01,920 --> 01:20:06,120
+İşte heapin en büyük olayı budur arkadaşlar.
+
+398
+01:20:06,700 --> 01:20:11,140
+Eğer bir max heap diyorsak ya da bir min heap diyorsak ikisi de heap.
+
+399
+01:20:11,700 --> 01:20:13,760
+İkisinin de heap tanımına uygun yapısı.
+
+400
+01:20:14,260 --> 01:20:19,239
+Ama max heap dediğimizde her zaman için şu şartı sağladığını Garanti etmiş oluruz.
+
+401
+01:20:19,760 --> 01:20:22,979
+Parent i, büyük eşittir i.
+
+402
+01:20:22,979 --> 01:20:24,340
+Yani.
+
+403
+01:20:24,884 --> 01:20:44,963
+Bunu rekürsif olarak devam ettirdiğimizde de rahatlıkla şunu söyleyebiliriz ki en büyük eleman köklidir. Bu bize neyi getirir? Mesela bir algoritmanın çözümünde benim her zaman, her adımda en büyük elemana erişmem gerekiyorsa, yani kalanların en büyüğüne erişmem gerekiyorsa heap kullanırım.
+
+404
+01:20:45,811 --> 01:20:51,612
+Çünkü heap yapısı, heap veri yapısı bana her zaman için en büyük elemanın kökte olmasını garanti eder.
+
+405
+01:20:52,092 --> 01:20:57,231
+Yani O1 ile böyle tek bir kere gel kardeşim dediğinde en büyük elemanı kullanabilirsiniz.
+
+406
+01:20:57,551 --> 01:21:07,811
+Tersi de doğru. Min heap eğer var ise parent e indisindeki değerin e indisindeki değerden küçük eşit olduğunu her zaman için garanti etmiş oluruz.
+
+407
+01:21:08,172 --> 01:21:10,131
+O zaman da en küçük eleman köktedir deriz.
+
+408
+01:21:10,131 --> 01:21:13,811
+Ne yapabiliriz? İşte burada da hep kalanların en küçük elemanı.
+
+409
+01:21:13,811 --> 01:21:27,112
+En küçüğünü kullanarak çözümümüzle bir adım öteye gitmek istiyorsak da min heap kullanırız ve hep birinci eleman ya da kök elemanın en küçük olmasının garanti edilmesini sağlarız.
+
+410
+01:21:27,192 --> 01:21:41,211
+Tabi bunu nasıl yapacağız? Heap'in içindeki yine kendi özel fonksiyonları sayesinde yani heap'in heap olarak kalmasını garanti eden aslında davranışları fonksiyonları bizim oluşturmamız gerekecek.
+
+411
+01:21:41,971 --> 01:21:43,551
+Anladık mı heapin olayını?
+
+412
+01:21:44,351 --> 01:21:47,811
+Heap dediğimizde dediğim gibi max heap diyelim.
+
+413
+01:21:47,951 --> 01:21:51,451
+Max heap dediğimizde tek bir şeyi garanti ediyoruz.
+
+414
+01:21:52,111 --> 01:21:55,051
+Parent'lar her zaman child'lardan büyüktür.
+
+415
+01:21:55,992 --> 01:21:58,231
+Ve kök en büyük elemanttır.
+
+416
+01:21:58,771 --> 01:22:04,192
+Min heap açısından düşünürsek de parentler her zaman çocuklarından küçüktür değer olarak.
+
+417
+01:22:04,871 --> 01:22:08,711
+En küçük değer de doğal olarak kökte durur.
+
+418
+01:22:09,172 --> 01:22:17,612
+Bunu unutmadığımız sürece heplerde bir sıkıntı yaşamayız ve heap kullanarak bazı çözümleri, algoritmalarımızı gerçekleştirebiliriz.
+
+419
+01:22:18,032 --> 01:22:20,672
+Şimdi bakalım soldaki örnek heap mi acaba?
+
+420
+01:22:20,672 --> 01:22:23,451
+Şöyle şeyi alalım.
+
+421
+01:22:24,231 --> 01:22:25,152
+10.
+
+422
+01:22:26,228 --> 01:22:48,228
+Çocuklarına bakıyorum, 5 ve 7. Bunda sıkıntı yok. Şuraya geliyorum, alt ağaca bakalım, 5. Çocuklarına bakalım, 4 ve 2. Daha büyük, sıkıntı yok. Şu taraf kaldı, 7. Çocuğu kaç? 1. Daha büyük, sıkıntı yok. Bunların çocuğu zaten yok, o yüzden bunlara da naldan büyük oldukları için hani...
+
+423
+01:22:48,815 --> 01:23:07,015
+Dik koyabilirim. Demek ki burada gördüğüm yapı, şuradaki ağaç aslında bir max heap olarak karşıma çıkmış. Parent her zaman çocuklarından daha büyüktür. Bakın bir ikili arama ağacı falan değil bu.
+
+424
+01:23:07,264 --> 01:23:22,123
+Yani 5'e bakalım, 4 ve 2. Gördünüz mü? Hangisinin nerede durduğunu garanti etmez. Küçük solda mı, büyük sağda mı bunu garanti etmez. Tek bir şeyi garanti ediyoruz. Her zaman parent çocuklardan büyüktür. Max heap ise.
+
+425
+01:23:22,644 --> 01:23:31,963
+Buna bakalım. Bu bir heap midir? Şimdi 10'a bakıyorum. 5 ve 7. Okey. Max heap olma yolunda ilerliyor. 5'e bakıyorum. Sol çocuğu yok.
+
+426
+01:23:33,844 --> 01:23:35,123
+Şuraya bir ünlem koyuyorum.
+
+427
+01:23:38,996 --> 01:23:46,796
+O yüzden çarpı. Sağ çocuğu tamam. Ama sol çocuğu yok.
+
+428
+01:23:47,072 --> 01:24:11,372
+7'ye bakıyorum çocuk tamam, 1'e bakıyorum çocuk tamam. Burada 5'in sol çocuğu olmadığı için complete binary tree yapısını bozmuş durumdayım ve bunun bir heap olduğunu söyleyemem. Heap olmasını hep böyle parent'ın büyük olmasını garanti edemem. Yöntemim de özgün çalışmayacaktır. O yüzden bu bir heap değildir. Neden? Şu.
+
+429
+01:24:12,564 --> 01:24:39,623
+Çarpının, sol çocuğun olmaması yüzünden. Buna bakalım. Burada bir complete binary tree var. Çok güzel. Yani yapı birincisiyle aynı. Bu heap mi değil mi bakalım. 10 çocuklarından büyük. Güzel. 7 çocuğundan büyük. Güzel. Biri de zaten çocuğu olmadığı için tikleyelim. 5'e gelelim. 5 çocuklarına bakıyorum. 6. 6 büyüktür. 5.
+
+430
+01:24:40,627 --> 01:24:48,887
+Parent'ın daha büyük olma şartını bozdu. O zaman buraya da bir çarpı koyuyorum. 5 büyüktür, 2 doğru.
+
+431
+01:24:49,447 --> 01:24:58,528
+Yine bu da buradaki çocuğunun kendisinden daha büyük olması nedeniyle bir heap değildir diyoruz.
+
+432
+01:24:58,907 --> 01:25:05,067
+Demek ki iki şeyi kontrol etmemiz gerekiyor. Bir, soldan da olması lazım. Complete binary tree olması lazım.
+
+433
+01:25:08,627 --> 01:25:13,467
+Çocuklardan daha büyük bir değere sahip olması lazım. Max heap açısından.
+
+434
+01:25:14,847 --> 01:25:20,827
+Tersini söylediğimizde de daha küçük dediğimizde de hep min heap için doğru olanları ifade etmiş oluruz.
+
+435
+01:25:23,444 --> 01:25:31,304
+Şimdi ben bu binary heap'i acaba nasıl gösterebilirim? Hangi ortamda tutabilirim diyelim?
+
+436
+01:25:32,123 --> 01:25:36,824
+Bunu yapmanın en kolay, en çabuk, en güzel yolu aslında dizi kullanmak arkadaşlar.
+
+437
+01:25:36,824 --> 01:25:43,824
+Çünkü bu ebeveyn ve parent yani parent ve child ilişkisi hep iki...
+
+438
+01:25:43,967 --> 01:25:54,188
+2i ya da 2i artı 1 şeklinde ilerleyerek gelişilebildiğinden dolayı biz genellikle heapleri standart böyle düz diziler kullanarak gerçekleştiririz.
+
+439
+01:25:54,307 --> 01:26:00,287
+Çünkü genelde de heapimizin boyutu sabit olur. Maksimum ele, heapli duracak olan eleman boyutunu sabit tutarız.
+
+440
+01:26:00,747 --> 01:26:04,108
+Olmak zorunda mı? Değil. Dinamik diziyle de tabii ki yapabilirsiniz.
+
+441
+01:26:04,608 --> 01:26:07,188
+Linkli listeyle yapamaz mısınız? Evet, yapabilirsiniz.
+
+442
+01:26:11,967 --> 01:26:17,507
+Gidiş gelişleri biraz daha linked list mantığıyla, next next mantığıyla yapmanız gerekir.
+
+443
+01:26:18,307 --> 01:26:21,047
+Orada daha bir zorluklar yaşayabilirsiniz.
+
+444
+01:26:21,287 --> 01:26:26,108
+Ya da işte tree mantığıyla gidip sol çocuk, sağ çocuk şeklinde bir yapı kurgulayabilirsiniz.
+
+445
+01:26:26,627 --> 01:26:27,047
+Olabilir.
+
+446
+01:26:27,207 --> 01:26:34,167
+Yani linked listeyi neden yapmıyorsunuz ama biz şu anda en temel, en basit sadece dizi kullanarak heaplerimizi gerçekleştireceğiz.
+
+447
+01:26:34,167 --> 01:26:38,287
+Ve dizideki her bir eleman aslında bir düğümü tutacak.
+
+448
+01:26:38,467 --> 01:26:39,927
+Ya da heap açısından.
+
+449
+01:26:39,967 --> 01:27:07,967
+konuşacak olursak her düğümümüz bir dizi elemanı olacaktır. Nereden nereye gider? Hesap kolaylığı açısından sıfırıncı indisi kullanmamayı tercih ederiz. Genellikle hatta dizinin boyutunu ya da heapin size'ını falan yazmayı tercih ederiz. A1'den A length'e kadar olan kısım benim heapimi oluşturur. Yani sıfır küçük eşittir heap size, küçük eşittir length diyebiliriz buna. Tamam mı? Yani kökü sıfıra değil de birinci...
+
+450
+01:27:07,967 --> 01:27:20,368
+indise almayı tercih ediyorum. Bunun bir sebebi var. Sebebi de şuradaki ebeveyn ve çocuk aritmetiğinin daha düzgün bir şekilde ya da basit bir şekilde implement edilebilmesi.
+
+451
+01:27:20,368 --> 01:27:30,387
+Şimdi, i gözündeki bir node için parent nedir? i bölü 2. Yani şuraya bakalım. Mesela 2.
+
+452
+01:27:31,412 --> 01:27:47,712
+Ya da 4'e bakalım. 4'ün parent'ı kimdir? 4 bölü 2, 2. Bakın, hemen gidebiliyorum. 5'in parent'ı nedir? 5 bölü 2, floor edeceğiz tabii. 2,5'dan 2. Tamam. Yani ben sadece 2'ye bölerek benim parent'ıma ulaşabilirim.
+
+453
+01:27:48,412 --> 01:27:56,732
+Şimdi ben bir şu üçüncü gözde olayım. Sol çocuğuma gitmek istiyorum. Ne yaparım? 2 i'ye giderim. Yani 3 çarpı 2 eşittir, 6'ya giderim. Sol çocuktayım.
+
+454
+01:27:57,300 --> 01:28:06,819
+Sağ çocuğa gitmek istiyorsam 2i artı 1 indisine gitmem lazım. Yani 3 şarpı 2 artı 6 artı 1 eşittir 7. 6 artı 1 eşittir 7 indisine gittim.
+
+455
+01:28:07,140 --> 01:28:18,300
+İşte bu aritmetiyi çok kolaylaştırdığı için implementasyonda ve biraz sonra yapacağımız heap oluşturma ya da heapin heap kalmasını garanti etme çözümlerinde hızlı...
+
+456
+01:28:19,252 --> 01:28:25,912
+Bir şekilde bu işi gerçekleştirebilmek ya da basit bir şekilde gerçekleştirmek için birden başlamayı tercih ediyoruz.
+
+457
+01:28:26,112 --> 01:28:28,231
+Şöyle de görselleştirebiliriz.
+
+458
+01:28:28,712 --> 01:28:30,692
+Bir, bakın şurada.
+
+459
+01:28:37,412 --> 01:28:40,032
+Birinci göz burada.
+
+460
+01:28:40,992 --> 01:28:46,692
+İkinci göz burada diye devam ediyor.
+
+461
+01:28:47,123 --> 01:28:56,443
+Ve ben yine bu 2i, 2i artı 1 mantığıyla 16'nın çocukları kimdir? Bir ikinci ve üçüncü gözler.
+
+462
+01:28:56,851 --> 01:29:21,371
+14'ün çocukları kimdir? 4. ve 5. gözler. 10'un çocukları kimdir? Yani 3.ünki, 6. ve 7. gözler. 8'in çocukları kimdir? 8. ve 9. gözler. 5'in çocukları kimdir? 10. ve 11. gözler. Ama 11 zaten tanımlı değil. Bizimizde 10 eleman, 10 göz var. O yüzden sadece tek çocuğu olabilir deyip bırakmışız.
+
+463
+01:29:21,371 --> 01:29:22,831
+İşte bu şekilde.
+
+464
+01:29:23,667 --> 01:29:38,507
+Bir diziyle şuradaki complete binary tree olmasından sebebiyle de hiç boş göz kalmayacağını bildiğim için böyle bir dizi kullanarak heapimi kolaylıkla gerçekleştirebilirim.
+
+465
+01:29:39,127 --> 01:29:41,688
+Yani ben burada bir şey daha tabii ki görebiliyorum.
+
+466
+01:29:42,347 --> 01:29:47,867
+Hangileri yaprak değildir? Yani hangileri parent'tır? Yani ebeveyndir dediğimde aslında dizinin
+
+467
+01:29:48,500 --> 01:30:11,079
+İlk n bölü 2 elemanı şeyleri tutar. Parent olanları yani child olanları tutar. Nereden anlayacağım ya da nasıl bunu şey yapabilirim? Şimdi 10 tane eleman var. 10 bölü 2 nedir? 5. Yani aslında dizinin ilk 5 elemanı 1, 2, 3, 4, 5 sadece. Şöyle çizeyim.
+
+468
+01:30:11,891 --> 01:30:37,992
+Çocuğu olan ya da parent olan düğümlerdir. Bunun dışındakiler yani n bölü 2'den sonrakilerin hepsi zaten çocuk olmak zorundadır. Complete binary tree olması sebebiyle. 6, 7, 8, 9, 10. Gördüğümüz gibi bunların hepsi yaprak düğümleridir. Bu şekilde yine basit mesela çocuğu olanlar üzerinde işlem yapmak istiyorsam n bölü 2'ye kadar işlem yapsam yeterli olacaktır.
+
+469
+01:30:39,891 --> 01:31:00,891
+Yine, yukarıdan başlayıp doldura doldura geldiği için. O sayede...
+
+470
+01:31:01,876 --> 01:31:07,595
+Log n yüksekliğinde aslında bir ağaçla karşı karşıyayız. Bu da ne demektir?
+
+471
+01:31:08,095 --> 01:31:12,175
+Heap kullandığımızda bir mertebemiz log n olacaktır.
+
+472
+01:31:12,695 --> 01:31:18,855
+N tane eleman için heap kullanırsam n log n olacaktır diyebilirim kabaca.
+
+473
+01:31:19,699 --> 01:31:45,779
+Bunları anladık herhalde. Yani dizi kullanmanın ne kadar basit olduğunu, iki çocuğa, sol ve sağ çocuğa iki i ve iki i artı bir ile gidebildiğimizi, parentlara i bölü iki ile gidebildiğimizi ve yine complete binary tree olması sebebiyle ilk n bölü iki elemanın ebeveynlerden oluşması, kalanların da yaprak yani çocuğu olmayan düğümlerden oluşmasını garanti etmiş oluyoruz.
+
+474
+01:31:47,699 --> 01:32:00,639
+Hani hep parentler çocuklardan büyüktür ve bu complete binary tree'dir. İki tane varsayımı bir araya getirdiğinizde aslında heap tanımını yapmış oluyorsunuz.
+
+475
+01:32:04,787 --> 01:32:13,547
+Peki, bunu söyledik ama yine üzerinden bir geçelim. Heap'teki en büyük eleman nedir? Köktür.
+
+476
+01:32:14,036 --> 01:32:40,256
+Çünkü parent'ların da parent'ıdır. n parent birinci gözde durmaktadır. Yani heapin köküdür. O yüzden heapteki en büyük eleman nedir diye sorduğunuzda mesela heap maximum diye bir şey yazdınız, fonksiyon. Ne yapacaksınız? Heap'i verdiğinizde return a1 yapacaksınız. Yani o1 zaman sabit tek işlemle siz her zaman için heapteki en büyük elemanı bakıp kullanabileceksiniz.
+
+477
+01:32:42,036 --> 01:33:01,756
+O zaman da min heap minimum diye bir şey yazdığınızı düşünün. Burada da return a1 yapacaksınız yine. Çünkü min heapse de siz parent olarak değeriniz çocuklarınızdan daha küçük tür varsayımını yapmış.
+
+478
+01:33:02,271 --> 01:33:22,212
+kurgulamış olacaksınız. Peki, gelelim şimdi bu oluşturma işlemine. Şimdi, iki çeşit aslında heap oluşturma şekli var. Biri bottom-up, biri de top-down diyebiliriz. İkisine de bakacağız ve ikisinde de aynı heapin çıkamayacağını da göreceğiz. Olmak zorunda değil.
+
+479
+01:33:23,252 --> 01:33:39,352
+Yeter ki parent büyüktür ve complete binary treeleri sağlasın. Ben gerisiyle hiç ilgilenmiyorum. Yani 5, 2 mi durmuş alt tarafta, 2, 5 mi durmuş alt tarafta, 8'in altında benim için önemli değil. Yeter ki 8, 5 ve 2'den büyük olarak kalmaya devam etsin.
+
+480
+01:33:40,735 --> 01:33:57,515
+Bottom up, önce buna bakalım. Tamam mı? Genellikle bunu daha sık kullanıyoruz. Şimdi ilk adımda, yani sıfırıncı adımda, verilen sıra ile veri yapısını oluştururuz. Yani diziyi oluştururuz. Ne demek verilen sıra? Bana elemanlar karışık verilebilir demek.
+
+481
+01:34:03,636 --> 01:34:06,876
+Büyük değere sahip olmasını garanti ederek diziyi okuyamam.
+
+482
+01:34:07,356 --> 01:34:08,516
+Tamam, aldım diziyi.
+
+483
+01:34:09,216 --> 01:34:09,736
+Adım 1.
+
+484
+01:34:10,376 --> 01:34:17,436
+Şimdi, bütün ebeveynler için çocuğundan büyük müsün diye bir kontrol yapmam gerekir.
+
+485
+01:34:18,156 --> 01:34:25,816
+Eğer bütün ebeveynler çocuğundan büyük olmuş hale gelirse, zaten heap şartını sağlamış olurum.
+
+486
+01:34:26,236 --> 01:34:29,436
+Şimdi, bunun için de bir yerden başlamam lazım.
+
+487
+01:34:29,908 --> 01:34:45,948
+Hemen geri döneceğim şöyle. Ne demiştim ben? Parent'lar ilk n bölü iki elemanında yer alır demiştim. Sebebini de anlattım. Komplett binary olması sebebiyle dedik. O zaman ben parent'ı olan son düğümden başlamalıyım. Kimdir bu? İşte n bölü ikinci düğüm. Beş.
+
+488
+01:34:51,967 --> 01:35:11,367
+Parent ve Child ilişkisinin küçük-büyük durumunu kontrol edip yanlışsa düzeltmek. Sonra şuna bakmalıyım. Dördüncü göze. Çocuklarıyla olan ilişkisine bakıp yanlış bir şey varsa düzeltmem gerekir. Sonra üçe bakmalıyım.
+
+489
+01:35:13,908 --> 01:35:36,708
+Çocuklarıyla ilişkisine bakıp bir hata varsa düzeltmem gerekir. Sonra ikiye bakmalıyım. İkiyi şöyle çizeceğim. Sebebi de çocuklarına bakacağım. Ama buradaki bir değişiklik, mesela diyelim ki bunu şuraya aldım. Şurada tekrar bakmamı gerektirebilir. Çünkü ben hala daha aşağı gitmek zorunda kalabilirim.
+
+490
+01:35:36,975 --> 01:36:01,335
+Olabilir. O yüzden bütün alt ağaçlarıyla birlikte buradaki şeye bakacağım. Son olarak da birinci göz. Aslında birinci göz ne yapmış oldu? Alt taraf tamamen bitti. Hani hep öyle düşünebiliriz. Fakat bunu da yine bütün düğümlere, bütün alt ağaçlara da bakma şartıyla kontrol ederek gitmeliyim. Yani sadece biri iki üçle karşılaştırdım. Tamam deyip devam edemem. Bir değişiklik yapıyorsam.
+
+491
+01:36:01,747 --> 01:36:07,907
+O zaman değişiklik yaptığım noktadan alt tarafı da gözden geçirmek zorundayım.
+
+492
+01:36:09,407 --> 01:36:16,728
+Heapify dediğimiz heap haline getirme yaklaşımının özü aslında bu.
+
+493
+01:36:16,728 --> 01:36:19,728
+Yani en sağdaki ebeveyn düğümünden başlayarak...
+
+494
+01:36:20,979 --> 01:36:25,039
+heap parçasını, alt heap'i kontrol edip heap haline getiriyoruz.
+
+495
+01:36:25,319 --> 01:36:26,619
+Max heap'i fayı çağıracağız.
+
+496
+01:36:27,439 --> 01:36:32,619
+Eğer heap şartınız sağlamıyorsa da şartı sağlayana kadar yer değiştirmeye devam edeceğiz.
+
+497
+01:36:33,339 --> 01:36:37,359
+Sonra bir önceki ebeveyn düğüm için adım biri işleteceğiz.
+
+498
+01:36:37,639 --> 01:36:38,439
+Ne demektir bu?
+
+499
+01:36:38,539 --> 01:36:42,659
+Aslında 5, 4, 3, 2, 1 diye gittik mesela 10 elemanda.
+
+500
+01:36:42,659 --> 01:36:44,235
+O zaman ben...
+
+501
+01:36:44,243 --> 01:36:50,963
+n bölü 2'den 1'e doğru bir for döngüsüyle teker teker elemanlarımı gezebilirim.
+
+502
+01:36:51,443 --> 01:36:55,123
+Her biri için max heapify diye bir işlem yapmam lazım.
+
+503
+01:36:55,263 --> 01:37:01,823
+Yani buradaki heap kontrolünü gerçekleştir ve heap değilse düzelt işlemini gerçekleştirmem lazım.
+
+504
+01:37:02,503 --> 01:37:04,343
+Şimdi onu nasıl yapacağız? Basit.
+
+505
+01:37:05,843 --> 01:37:10,123
+Sol indisi L'ye aldım, sağ indisi de R'ye aldım.
+
+506
+01:37:10,183 --> 01:37:12,183
+Yani 2i, 2i artı 1'e aldım.
+
+507
+01:37:12,243 --> 01:37:38,603
+Şimdi, eğer sol çocuk daha büyükse, o zaman largest'ı soldur diye tutmam lazım. Yoksa parent hala largest demeliyim. Sağ çocuğu kontrol etmeliyim. Eğer sağ largest'dan büyükse, o zaman largest budur demeliyim. Yani şöyle, işte şurada mesela 7 var, şurada 8 var, burada da ne olsun, 12 var.
+
+508
+01:37:39,315 --> 01:38:01,275
+Tamam mı? Ve ben bir max heap yapmaya çalışıyorum. Parent'ım bu. Tamam. Şimdi left şurayı gösteriyor, right buraya gösteriyor. Şimdi max largest elemanı buraya almam lazım değil mi benim? Heap olayını garanti etmem için. Şöyle çizelim. Şimdi 7. 7 ile 8'i karşılaştırdım. Şuraya da large diyelim.
+
+509
+01:38:03,060 --> 01:38:25,180
+7 ile 8'i karşılaştırdım ve aslında 8'in daha büyük olduğunu biliyorum. Daha doğrusu indisini tutuyorum da ben şimdilik değerini yazdım buraya. Sonra sağ çocuğa bakıyorum. 12. 12 8'den büyük mü? Aa evet o zaman largest eşittir 12 dedim. Yani sağ çocuk daha büyüktür dedim. Yani ya sol çocuk ya sağ çocuk ya da ben daha büyüğüm. İki tane if ile onu buldum.
+
+510
+01:38:30,304 --> 01:38:36,304
+i ile largesi değiştireceğim ve kalan tarafta tekrar bir maxi p5 çağıracağım.
+
+511
+01:38:36,304 --> 01:38:44,004
+Yani ben 12 ile 7'yi değiştireceğim. 12, 8 ve 7 yapacağım.
+
+512
+01:38:45,284 --> 01:38:49,404
+Şimdi 7'yi yaptım ya, bunun belki daha alt ağacı vardı.
+
+513
+01:38:51,604 --> 01:38:56,944
+Orada da belki daha benden büyük değerler olabilir.
+
+514
+01:38:57,652 --> 01:39:23,412
+Mesela şurada 10, şurada 9 olduğunu düşünün. Çok karışık oldu. Şuraya yazayım. 7, 8, 12. Şunun kendi çocukları var. Onu unutmayın. 12'den sonra ne dedik? Mesela burada 10 var. Burada da 11 var.
+
+515
+01:39:24,340 --> 01:39:40,076
+Tamam. Şunları sileyim. Şuraları temizleyelim. Tamam. Şimdi ben burada 7 için bir kontrol yaptığımda...
+
+516
+01:39:45,268 --> 01:39:48,568
+Bir saniye, şey alamadım. Toolbox'ı kaçıyor.
+
+517
+01:39:49,668 --> 01:39:56,868
+Şimdi 7'nin kontrolünü yaptım. 8 ve 12'ye baktım. Largest'ın 12 olduğunu buldum.
+
+518
+01:39:57,548 --> 01:40:02,328
+Ve 12 ile 7'yi yer değiştirdim.
+
+519
+01:40:03,928 --> 01:40:09,448
+Tamam, kendi çocukları yine var. Fakat burada hala 10 ve 11 durmaya devam ediyor.
+
+520
+01:40:09,908 --> 01:40:32,128
+İşte şurada aslında kalanlarla da bir max CP fayı devam ettirmem lazım. Yani 7, 10 ve 11'e bakıp A largest 11'miş deyip aslında 12, 8, bunun kendi çocukları 11, 10 ve 7 değişimini de sağlamam lazım.
+
+521
+01:40:35,935 --> 01:40:44,575
+Hala çocuklardan daha küçük. O yüzden burada da bir yer değiştirme yapıp 7'nin T en aşağıya kadar gitmesi gerekiyor.
+
+522
+01:40:48,467 --> 01:40:49,467
+Evet, bu da siniz.
+
+523
+01:41:19,091 --> 01:41:28,711
+Kusura bakmayın. Malum salgından bazı hastalık ve ölüm haberleri geliyor. Kendinize dikkat edin.
+
+524
+01:41:33,108 --> 01:41:33,747
+Ne diyordum?
+
+525
+01:41:36,724 --> 01:42:02,963
+heapify'ı anlattık. Heapify'da özetle çocuklara bakıyoruz. Çocuklarda daha büyük olan varsa kendimizi onunla yer değiştiriyoruz. Ama bu yetmiyor. Onun da çocukları olabilir. Onları da tekrar tekrar gittiği yere kadar kontrol etmek zorundayız. Özetle mantık bu. Spisodokodu da bu şekilde. Şimdi örnek üzerinden bir heap oluşturmaya bakalım.
+
+526
+01:42:04,724 --> 01:42:15,423
+6 elemanlı bir dizi olsun. 2, 9, 7, 6, 5, 8 sırasıyla gelmiş olsun. Hemen ben bunu diziye koydum aslında. Ne yaptım? 2, hatta indislerini şöyle yazalım.
+
+527
+01:42:15,943 --> 01:42:29,563
+1. indis, 2. 3. indis, 4. indis, 5. indis ve 6. indis olarak karşımıza çıktı. Şimdi, yani 1 burada, 2 burada, 3 burada gibi.
+
+528
+01:42:31,699 --> 01:42:50,380
+5, 6. Parentları gezeceğim değil mi? Çünkü çocuklarla olan kontrolleri yapmam lazım. Son parent neresiydi? 6 bölü 2 eşittir. 3. Hindistan başlamam lazım. Önce şu ağacı kontrol edip şurayı heapify etmem lazım. Max heapify'ı burası için çağırdım yani. 7 ve 8.
+
+529
+01:42:51,380 --> 01:43:16,099
+Karşılaştırdım ve 8'in zaten sağ tarafı yok. 8'in daha büyük olduğunu gördüm. Yani aslında 8 yukarı çıkması lazım. 7 aşağı gelmesi lazım ki parent çocuğundan daha büyüktür şartını sağlasın. Bu işlemi değişikliği yaptığımda 8 ve 7 böyle oturdu ve burası bitti diyebilirim. Burası heap halinde. Heap'i garanti etti bu parça. Şimdi ne yapacağım?
+
+530
+01:43:16,659 --> 01:43:19,879
+For döngüsünü de bir azaltacağım i'yi ve 2'ye geleceğim.
+
+531
+01:43:20,319 --> 01:43:27,479
+2'ye bakalım. 9 yani 9'a bakacağız. 6'ya bakıyorum, 5'e bakıyorum. Largest hala kendimim.
+
+532
+01:43:27,899 --> 01:43:38,839
+O yüzden burada da herhangi bir değişiklik yapmama gerek yok. Burası da oldu. Şansıma 9 doğru yerdeymiş. Şurayı da zaten çekmiştik.
+
+533
+01:43:39,339 --> 01:43:44,599
+Şimdi ne yapacağız? i'yi bir azaltacağız. 3'e baktık, 2'ye baktık. Şimdi 1'e bakacağız.
+
+534
+01:43:44,659 --> 01:43:56,559
+Tamam, bakıyorum. 2, 9, 8. Ne olması lazım? 9'un buraya gelmesi, 2'nin de buraya gelmesi lazım.
+
+535
+01:43:56,919 --> 01:44:03,539
+Geldi, 9 yukarıda, 2 aşağıda. Yetiyor mu? Hayır, neden? Çünkü kendi çocukları da var bunun.
+
+536
+01:44:03,999 --> 01:44:07,959
+Onlarla da hala kontrole devam etmem lazım. Tekrar maxi ifade etmem lazım.
+
+537
+01:44:07,959 --> 01:44:11,939
+Şimdi ona bakıyorum. 2, tamam 9 yukarı çıktı.
+
+538
+01:44:12,595 --> 01:44:27,335
+Ama 2'yi kontrol etmem gerekiyor. 6 ve 5. 6 ve 5'e baktığımızda da 6'nın largesi olduğunu görüyorum. O yüzden bunu buraya taşıyıp 2'yi daha da aşağıya götürmem gerekiyor. Neyi garanti ettim?
+
+539
+01:44:27,695 --> 01:44:34,556
+Bu kendi çocuklarından daha büyük. Bu kendi çocuklarından daha büyük. Bu da kendi çocuğundan daha büyük.
+
+540
+01:44:35,016 --> 01:44:42,539
+Buyurun verilen diziyi sadece parentları sondan başa doğru gezerek ve her bir alt ağacı...
+
+541
+01:44:42,868 --> 01:44:49,628
+heap misin diye kontrol ederek, değilse düzelterek, max heapify ederek devam ediyoruz.
+
+542
+01:44:50,148 --> 01:44:55,688
+Yukarı doğru çıktıkça doğal olarak kendi alt çocukları, yani torunları da olabilir.
+
+543
+01:44:55,868 --> 01:45:00,468
+Torunlarla olan ilişkisini de rekürsif olarak kontrol etmek zorundayız diyoruz.
+
+544
+01:45:00,588 --> 01:45:05,928
+O da zaten algoritmada şurada kendimizi max heapify'ın içinde son adım olarak,
+
+545
+01:45:05,928 --> 01:45:10,528
+eğer şey size değiştirmemiz gerekiyorsa, kalan kısmı tekrar max heapify et diyerek.
+
+546
+01:45:10,868 --> 01:45:12,288
+Çağırmamız gerekiyor.
+
+547
+01:45:13,368 --> 01:45:17,388
+Evet, heap oluşturma örneği bu şekilde.
+
+548
+01:45:19,388 --> 01:45:20,828
+Pardon, yine.
+
+549
+01:45:22,928 --> 01:45:25,048
+Biraz kesintiyor orada ders.
+
+550
+01:45:47,380 --> 01:45:57,820
+Tamam. Heap oluşturmayı anladık mı? Anladık. Şimdi başka bir örnek yapalım. İyice anlayalım. Biraz daha büyük bir ağaç üzerinde bir heap oluşturalım.
+
+551
+01:45:58,452 --> 01:46:16,771
+Şimdi ikinci örnek nasıl gelmiş dizimiz? 4, 1, 3, 2, 16, 9, 10, 14, 8 ve 7 diye gelmiş. Yani benim indislerim yine birinci indis. Yani burada sıfırdan başlamadığımızı özellikle yine tekrar edeyim. Birden başlayarak kullandığımızı.
+
+552
+01:46:22,323 --> 01:46:47,423
+9 ve 10. 10 elemanlı bir dizi gelmiş. Şimdi ben bunu heap haline getirmek istiyorum. Yani ne demek istiyorum? Aslında burada 16'yı köke taşıyacağım. 16'nın işte çocukları sonrakiler olacak doğal olarak 14 ve 10 ama biri sağda biri solda olabilir. Hiç önemli değil. Yeter ki altında kalsınlar gibi gibi. Böyle en büyük yukarıda olsun. Garanti etmeye çalışıyorum. Yani parent büyük olsun'u garanti etmeye çalışıyorum.
+
+553
+01:46:50,323 --> 01:46:55,003
+Aslında ağaç gösterimine çevirdiğimde tam olarak bu. Yoksa normal bir dizide duruyor.
+
+554
+01:46:55,743 --> 01:46:56,743
+Nereden başlayacağım?
+
+555
+01:46:58,303 --> 01:47:05,143
+Çocuğa sahip olan en son düğümden. Yani 10 bölü 2 eşittir 5 indisinden yoluma başlayacağım.
+
+556
+01:47:05,603 --> 01:47:08,063
+İlk olarak şu ağacı kontrol ediyorum.
+
+557
+01:47:09,492 --> 01:47:33,352
+16, 7. Kendisi daha büyük. O yüzden burada herhangi bir değişiklik yapmama gerek yok. Bu parça heap özelliğini sağlıyor. Sonra 5'ten 4'e bir azalttım. 4'e geldim. Şimdi şuradaki ağaca bakıyorum. 2 yukarıda. Çocukları kim? 14 ve 8. Nasıl bir yer değiştirme olacak?
+
+558
+01:47:33,887 --> 01:47:44,447
+largest 14 olduğu için largest buraya gelecek, 2 buraya gelecek. Burada daha max heapify edebiliyor muyum? Hayır. Çünkü zaten çocuğu yok. O yüzden burada da bitti.
+
+559
+01:47:45,087 --> 01:47:54,427
+Ve şu parçanın da şurada gördüğünüz gibi 14.28 haline gelmesini sağladım. Burası da artık heap. Şurası da heepti.
+
+560
+01:47:55,796 --> 01:47:58,095
+Bunları garanti etmiş oldum.
+
+561
+01:47:58,355 --> 01:48:01,376
+Şimdi ne yapacağım? 1 azaltacağım, 3'e gideceğim.
+
+562
+01:48:02,036 --> 01:48:02,836
+3'e gidiyorum.
+
+563
+01:48:03,572 --> 01:48:15,292
+Üçün çocuklarına bakıyorum. Dokuz ve on. Ne olacak? En büyük olan bu olduğuna göre. On buraya, üç buraya. Daha fazla çocuğu olmadığı için de burayı da tamamlamış olacağım.
+
+564
+01:48:16,252 --> 01:48:28,452
+Bir azalttım. İkinci indise geldim. Parent'lı böyle yukarı doğru gördüğünüz gibi. Bottom up gidiyorum. Bottom neresi? Endip. Up neresi? Bir. Bottom'dan başlayıp up'a doğru gidiyorum.
+
+565
+01:48:31,572 --> 01:48:41,632
+Çocukları ne? 14 ve 16. Hangisi en büyük? 16 en büyük. O zaman 16'nın parent olması lazım. 16'yı buraya taşıyorum.
+
+566
+01:48:42,387 --> 01:49:08,568
+Biri de buraya taşıyorum. Fakat bir burada olsa da yeterli değil. Çünkü bunun hala çocuğu var. Tekrar maxi pify etmem lazım. Şurayı tamam mı? Yani bir ve yedi haline gelen o alt parçayı tekrar maxi pify edip biri daha da aşağıya yediği buraya taşımam gerekiyor. Yani bu parça şöyle oluştu. Birin yolculuğunu gördünüz değil mi? Bir buradaydı.
+
+567
+01:49:08,992 --> 01:49:18,291
+16 ile yer değiştirdi. Sonra da 7 ile yer değiştirdi. Ve 16, 7, 1 sırasıyla ben bu alt parçanın da heap olmasını garanti ettim.
+
+568
+01:49:18,391 --> 01:49:33,271
+Şimdi gelelim kökeye. İyi eşittir 1'e. Biraz attık. 4'e bakacağız. 4. Çocukları kim? 16 ile 10. Yani aslında 16 buraya gelecek. 4 buraya.
+
+569
+01:49:35,091 --> 01:49:58,992
+Yetti mi? Hayır. Yine çocukları var. O zaman heap if aya devam. 4, 14, 7. Nasıl bir yerde eşlikliği olacak? 14 yukarı, 4 buraya. Şöyle 4'ü sileyim. 4 kalsın. Yetti mi? Hayır. 4, 2, 8. O zaman 4 aşağıya, 8 de buraya gelecek. Ve nihayetinde 16, 14, 10.
+
+570
+01:50:00,000 --> 01:50:19,319
+8, 7, 9, 3, 2, 4, 1 sırasıyla heapimi oluşturmuş olacağım. Kontrol edelim. 16, 14 ve 10'dan büyük. 14, 8 ve 7'den büyük. 8, 2 ve 4'ten büyük. 7, 1'den büyük.
+
+571
+01:50:19,891 --> 01:50:45,332
+10, 9 ve 3'ten büyük. Çocuklara zaten bakmaya gerek yok. Kendi çocukları olmadığı için yapraklar apardı. O zaman ben Complete Binary tree şeklinde kaldım ve her bir parent'ın çarklarından daha çocuklarından, evlatlarından daha büyük olmasını da böyle yer değiştirmeyle garanti ettim ve elimde bir heap var. Bu heap neyi garanti ediyor?
+
+572
+01:50:46,484 --> 01:51:00,744
+En büyük eleman köktedir. Sadece bunu aslında garanti ediyor. İkincisi de her bir parent çocuklarından büyüktür. Yani ben aslında bu dizide sadece 16 değerine erişip kullanabiliyorum diyebilirim.
+
+573
+01:51:00,847 --> 01:51:03,407
+Çünkü onun en büyük eleman olduğunu biliyorum.
+
+574
+01:51:04,247 --> 01:51:06,407
+Min heapify da bunun tam tersi.
+
+575
+01:51:06,608 --> 01:51:10,507
+Orada da büyüklük değil, küçüklük kontrolü yaparak şeyi yapabilirsiniz.
+
+576
+01:51:10,507 --> 01:51:18,127
+Hani küçük parent değeri küçük olacak, child değerleri daha büyük olacak diyebiliriz.
+
+577
+01:51:19,587 --> 01:51:22,507
+Şimdi gelelim bir adım daha ilerleyelim.
+
+578
+01:51:22,627 --> 01:51:24,287
+Heap oluşturmayı anladık.
+
+579
+01:51:24,467 --> 01:51:25,067
+Anladık değil mi?
+
+580
+01:51:26,007 --> 01:51:26,807
+Anlamayan var mı?
+
+581
+01:51:32,851 --> 01:51:50,512
+Yok. Tamam. Bu en büyük eleman köktedir diyoruz ya. Hadi bakalım şimdi ben bu elemanı heapten alıp, yani söküp kullanmak istiyorum. Başka bir yerde kullanacağım. Yani heapte o elemanın artık durmamasını istiyorum.
+
+582
+01:51:50,847 --> 01:52:14,807
+Heap'ten eleman çıkartacağız. Nasıl yaparız? Basit. İlk yapmamız gereken kontrol heap'in boş olmaması kontrolü. Çünkü boş heap'ten eleman çekmeye çalışırsak hata olur. O yüzden ilk önce bir, n büyük eşit bir kontrolü yapmamız lazım. n1 ise zaten durmamız gerekir. Ne demek bu? Sıfırıncı göz sadece var, birinci göz yok. O zaman zaten eleman yok demektir. Durmamız gerekir.
+
+583
+01:52:16,307 --> 01:52:26,307
+En büyük elemanı heap'ten almak ne demek? Aslında şurayı hemen yine çizelim. Şöyle bir heap çizelim.
+
+584
+01:52:33,235 --> 01:52:55,415
+Şurada da olsun. Daha büyük bir heap olsun. Tamam. Şöyle de bağlantıları da gösterelim. Gösterdim. Evet. Tamam. Böyle oldu. Şimdi neyi biliyorum? En büyük elemanın şurada durduğunu biliyorum. Ve ben diyorum ki bu değeri heapten alacağım.
+
+585
+01:52:55,760 --> 01:53:15,940
+Eleman sayısını bir azaltacağım aslında. Değil mi? 10 eleman varsa artık 9 eleman kalmasını istiyorum. Ve heap yapısının hala heap kalmasını garanti etmeliyim. Yani kalanların en büyük elemanı yine burada olması lazım. Bunu nasıl yapabilirim? Şöyle yaparız. En basit çözüm şudur. En sondaki elemanı alırım.
+
+586
+01:53:16,724 --> 01:53:18,844
+Şunu da başka bir turuncu ile alayım.
+
+587
+01:53:20,184 --> 01:53:24,024
+Şöyle, en sondaki elemanı alırım.
+
+588
+01:53:25,484 --> 01:53:28,364
+Bunu götürüp, tabii bunu değerine aldım, tamam mı?
+
+589
+01:53:28,404 --> 01:53:30,484
+Max eşittir A1 diye, max'a aldım bunu.
+
+590
+01:53:31,184 --> 01:53:33,704
+Sonra A1 eşittir, AN ataması yaparım.
+
+591
+01:53:33,784 --> 01:53:34,404
+Ne demek bu?
+
+592
+01:53:34,923 --> 01:53:37,463
+Buradaki değeri alıp, buraya yazarım.
+
+593
+01:53:39,064 --> 01:53:41,164
+Bilerek ve isteyerek
+
+594
+01:53:41,876 --> 01:54:01,816
+Heap'in heap yapısını elimle bozdum. Niye bozdum? Çünkü biliyorum ki bunun parent'ı vardı. Yani bu aslında parent'tan küçüktü. Bunun da parent'ı vardı. Bu da aslında parent'ından küçüktü. Bunun da parent'ı vardı. Bu da bundan küçüktü. Yani aslında yukarıdaki böyle 3 seviyedeki parent'lardan da küçük olduğunu garanti ettiğim, bildiğim bir değeri
+
+595
+01:54:02,452 --> 01:54:13,391
+Kaldırdım, getirdim, buraya yerleştirdim. Elimle bozdum. Şu anda heap heap değil. O zaman ne yapacağım? Hemen bir eksik eleman sayısıyla heapify edeceğim.
+
+596
+01:54:13,844 --> 01:54:31,163
+Bunu yaptığım anda neyi garanti ederim? Tekrar fıkır fıkır fıkır. Şuradaki değerin nereye gitmesi gerekiyorsa buraya mı gidecek, şuraya mı gidecek, nereye akması gerekiyorsa akmasını ve bir eleman eksik olarak heap yapısının tekrar garanti edilmesini sağlarım.
+
+597
+01:54:32,180 --> 01:54:42,220
+Sonrasında da max'ı şuraya A1, eski A1'i buraya max'ı kopyalamıştım ya, bunu yazdırırım ya da beni çağırana geri dönüş değeri olarak max'ı burada döndürürüm.
+
+598
+01:54:42,220 --> 01:54:50,860
+Ve böylece en büyük elemanı heap'ten çekmiş olurum. Heap'in boyutunu da bir azaltmış olurum.
+
+599
+01:54:51,480 --> 01:54:55,560
+Buradaki en kötü durum ne? Hatta en kötü durum zaten ki kendimiz yaratıyoruz.
+
+600
+01:54:56,120 --> 01:55:00,060
+En alttaki elemanı buraya taşımak. En kötü durumda yine en alta gidecektir bu.
+
+601
+01:55:00,180 --> 01:55:18,640
+Aradaki bir eleman mesela şu buraya çıkacaktır diyebiliriz. Bu durumda benim ağaç yüksekliği mertebesinde işlem yapmam gerekir. Şuradaki maxcp file sayesinde yüzünden ve log n tane mertebede işlem yapmam lazım.
+
+602
+01:55:18,640 --> 01:55:26,780
+Log n tane maksimum ve bu da o log n mertebesinde bir karmaşıklık bize doğuruyor.
+
+603
+01:55:28,595 --> 01:55:52,115
+Anladık mı? Yani heap'teki en büyük elemanı alıp kullanmak ve heap'in boyutunu biraz azaltmak. Elimizle küçük olduğunu bildiğimiz bir değeri yukarı atıp, kök olarak atıp, heap özelliğini bilerek bozup ondan sonra heap ifayı çağırarak tekrar heap'i oluşturmak. Bunu yaptığımızda log n mertebesinde sıradaki en büyük elemanın kök olmasını garanti etmiş oluruz.
+
+604
+01:55:56,595 --> 01:56:05,095
+18, 15, 7, 6, 2, 9, 1 değerlerinden oluşuyor dizimiz. 10 tane elemanımız var. Yine heap yapısını bakalım.
+
+605
+01:56:05,095 --> 01:56:17,475
+20, 15 ve 8'den büyük. Şöyle kontrolümüzü de yapmış olalım. 15, 10 ve 5'den büyük. 10, 2 ve 9'dan büyük. 5, 1'den büyük. 8, 7 ve 6'dan büyük.
+
+606
+01:56:17,655 --> 01:56:24,195
+Evet, burada bir heap yapısı Complete Binary Tree'de olduğu için mevcut. Ne yapacağım? En büyük eleman nerede?
+
+607
+01:56:24,595 --> 01:56:26,215
+Burada max heap çünkü bu.
+
+608
+01:56:26,675 --> 01:56:30,355
+Şimdi ben bunu alıp max diye bir yere kopyaladım.
+
+609
+01:56:30,435 --> 01:56:32,055
+Yazdım değerini kaybetmemek için.
+
+610
+01:56:32,735 --> 01:56:38,335
+Elimle bilerek ve isteyerek sonuncu gözü alıp buraya koyuyorum.
+
+611
+01:56:38,335 --> 01:56:41,255
+Ve eleman sayısını bir azaltıyorum.
+
+612
+01:56:41,395 --> 01:56:44,335
+Yani aslında yaptığım şey şuradaki bağlantıyı da koparmak.
+
+613
+01:56:44,475 --> 01:56:44,555
+Tamam.
+
+614
+01:56:45,395 --> 01:56:45,795
+Böyle.
+
+615
+01:56:50,228 --> 01:56:54,287
+Bunun eleman sayısı 1 azaldı ve 1'i gidip köke koydum.
+
+616
+01:56:55,127 --> 01:56:57,867
+Şimdi ne yapacağım? Ne yapmam gerekiyor?
+
+617
+01:56:58,667 --> 01:57:02,307
+1'i bozdum ya heap'i. Heapify etmem lazım. Ne yapacağız?
+
+618
+01:57:02,587 --> 01:57:07,268
+1, 15, 8. Kim yukarı çıkacak? 15 yukarı çıkacak.
+
+619
+01:57:07,627 --> 01:57:11,287
+Bu 15 olacak. Şunu karalıyor. Burası da 1 olacak.
+
+620
+01:57:11,827 --> 01:57:13,847
+Yetti mi? Şimdi şurayı heapify edeceğim.
+
+621
+01:57:13,847 --> 01:57:15,887
+1, 10 ve 5.
+
+622
+01:57:16,819 --> 01:57:32,420
+10 yukarı çıkacak. 1 buraya gelecek. Yetti mi? Hayır. Hala çocukları var. 1, 2 ve 9. 9 buraya çıkacak. 1 buraya inecek. 15, 18.
+
+623
+01:57:33,108 --> 01:57:45,228
+9, 5, 7, 6, 2 ve 1 şeklinde sıralanarak bir sonraki en büyük elemanın yine heapin köküne itmesini sağlayacağım.
+
+624
+01:57:45,228 --> 01:57:53,228
+Evet, böyle bir taşımayla en büyük elemanı heapten alabilirim.
+
+625
+01:57:54,688 --> 01:57:59,127
+Evet, şimdi bir ara vereyim.
+
+626
+01:58:00,275 --> 01:58:18,176
+Ara verdikten sonra saatimiz 58 oldu. Kaç oluyor? 8 geçe tekrar devam edeyim. Bir 10 dakika dinlenelim. Sonrasında kaldığımız yerden devam ederiz. 8 geçe buradayım.
+
+627
+02:09:07,828 --> 02:09:10,828
+Arkadaşlar, kaldığımız yerden devam edelim.
+
+628
+02:09:14,228 --> 02:09:31,507
+Bakarsanız heap oluşturma, heap kalmasını garanti etme yani heapify bir heap için temel operasyonlarımız. Ama bunun dışında doğal olarak hani elemanın değerini maksimum elemanın değerini alıp kullanmak isteyebiliriz. Bu durumda ne yapacağız?
+
+629
+02:09:33,279 --> 02:09:42,380
+En son elemanı bilerek ve isteyerek yukarıya çıkartıp sonradan tekrar heapify edersek heap özelliğini korumayı garanti etmiş oluruz dedik.
+
+630
+02:09:43,159 --> 02:09:52,739
+Elemanı eklemek de aslında aynı şekilde. Nasıl elemanı eklerim? Son eleman olarak yer olduğunu varsayıyoruz heapimizde.
+
+631
+02:09:53,659 --> 02:09:58,819
+Son eleman olarak ekleyip ondan sonra heapify edebiliriz.
+
+632
+02:10:00,000 --> 02:10:13,819
+Buradaki benzer bir şey, çözüm ile de gerçekleştirebiliriz. Bir düğümün değerini arttırmak diyoruz buna. Ne demektir bu? Şimdi bir, şurada örneğini göstereceğim.
+
+633
+02:10:16,148 --> 02:10:33,208
+Elimizde bir yeni değer var, tamam mı? K değeri diyelim ve bu K değeri bir düğümün değerini değiştirmek istediğim, mesela 8'i 15 yapacağım gibi özellikle bir heap'teki bir elemanın değişmesini istediğimde ne yaparım?
+
+634
+02:10:33,548 --> 02:10:42,708
+Mevcut değerden bir kere büyük eşit olması gerekir. Zaten küçük olursa orada kalır. Yani yukarılara doğru taşınmasına gerek kalmaz.
+
+635
+02:10:44,148 --> 02:10:56,648
+Şimdi bu düğümün, hani buna x diyelim, değeri değişecek olan düğüm, x düğümünün değerini k yaparım ve büyük eşit ya hani heap'i özellikle elimle yine bozmuş olurum.
+
+636
+02:10:57,108 --> 02:11:02,148
+Normalde yukarılarda bir yerlerde durması gereken bir değeri aşağıda tutmuş olurum.
+
+637
+02:11:03,148 --> 02:11:10,847
+Ebeveynleriyle karşılaştırırım ve gerektiğinde yani ebeveynlerinden büyük olması durumunda
+
+638
+02:11:11,283 --> 02:11:28,003
+Ebeveyniyle yerini değiştirir. Bu sayede yine en kötü durumda, log n mertebede, ağaç seviyesi kadar mertebede değişiklik ile ben düğümün yeni yerini, olması gereken yerini tespit edebilirim.
+
+639
+02:11:28,003 --> 02:11:39,223
+İşte key diyelim buna. Key AI'den büyük ise, hemen küçük ise hiçbir şey yapmama gerek yok. Değerini azalttım demektir. Değerini azaltırsam zaten heap de aynı.
+
+640
+02:11:39,283 --> 02:12:00,863
+düğümde durmasında bir sakınca yok. Orada kalmaya devam eder. Sonuçta A, İ değerini key ile değiştirdim. Şu gözü şu değere getirdim diyorum. Sonrasında köke kadar bakıp parent E, A, İ'den küçük olduğu sürece bu değişikliği yapıp
+
+641
+02:12:01,055 --> 02:12:05,475
+Bir üstüne, yani parent'ına, çıka çıka ilerlemem gerekir.
+
+642
+02:12:06,035 --> 02:12:09,435
+Şimdi örneğini de gösterdiğimde aslında ne demek istediğimi daha iyi anlayacağız.
+
+643
+02:12:09,995 --> 02:12:12,195
+Şimdi bakın bu 2'yi de 22 yaptım.
+
+644
+02:12:12,655 --> 02:12:16,155
+22 buraya gitti, 15 ile karşılaştırdı, 22 buraya gitti.
+
+645
+02:12:16,435 --> 02:12:18,135
+En sonunda 22 tepeye geldi.
+
+646
+02:12:19,123 --> 02:12:42,064
+Şu şekilde 22'nin bu 2'yi de 22 yaptım. 22'nin yukarıya doğru yolculuğu parent'larıyla karşılaştırıyorum. Her seferinde parent bundan daha küçük ise parent'ı bunun yerine atıyorum. Bu sayede aslında hani başka çocuğa bakmama gerek var mı? Hayır, yok. Çünkü ben her zaman parent'ın büyük olmasını garanti ediyorum.
+
+647
+02:12:42,283 --> 02:12:47,123
+Sağdaki mi büyük, sağ çocuk mu daha büyük değerde, sol çocuk mu?
+
+648
+02:12:47,123 --> 02:12:56,344
+Bu daha büyük değerde. Böyle bir garantim yok. O yüzden sadece parentlara bakarak buradaki taşıma işlemini gerçekleştirebilirim.
+
+649
+02:12:56,948 --> 02:13:08,748
+Evet, bu sayede de bir düğümün değerini arttırarak olması gereken gerçek yer neresiyse heapte oraya taşınmasını sağlayabilir.
+
+650
+02:13:09,588 --> 02:13:18,628
+Başka bir örnek verelim. Mesela hani bu çok hareket ediyor, tam takip edemedim dediyseniz bir tane de statik örnek üzerinden, kitap örneği üzerinden devam edelim.
+
+651
+02:13:18,628 --> 02:13:20,448
+Şimdi, değerim 4.
+
+652
+02:13:21,939 --> 02:13:39,279
+Ben bunu 15 yapmak istiyorum. 4'ü sildim, yerine 15 yazdım. Ne yapacağım? Dediğim gibi parent ile karşılaştıracağım. Parent ile karşılaştırıyorum. 8, 15. Ben daha büyüğüm. O zaman bir max heap olduğuna göre benim bir üstte durmam lazım.
+
+653
+02:13:40,051 --> 02:13:49,532
+Parent'ımla exchange oldum. Oldum. Tamam. 15 ve 8. 8 aşağı gitti. Artık parent değil. Bu bir çocuk oldu. Ben parent oldum.
+
+654
+02:13:50,051 --> 02:13:56,632
+15. Devam edeceğim. Nereye kadar? Kökü kadar bir şekilde bakmam lazım. Ya da hani daha şey olan bir yeri görene kadar.
+
+655
+02:13:57,132 --> 02:13:59,572
+15. 14 ile karşılaştırıyorum parent'ıyla.
+
+656
+02:14:00,051 --> 02:14:15,391
+Hala ben parent'tan büyüğüm. O zaman burunda da bir exchange yapmam lazım. 14 aşağıya, 15 yukarıya. Değişikliği yaptım. Çocuklarla daha fazla kontrole gerek var mı? Hayır yok. Neden? Çünkü zaten eski parent çocuklarından daha büyüktü.
+
+657
+02:14:15,828 --> 02:14:29,927
+Ve ben ondan daha da büyüğüm. O zaman zaten bundan daha büyüğümdür. Yani benim yukarı çıkmamda herhangi bir sakınca yok. Hiyerarşiyi, heap hiyerarşisini bozmamaya devam ediyorum demektir. O yüzden bu çocuklara da bakalım, kontrolüne ihtiyaç duymuyoruz.
+
+658
+02:14:30,676 --> 02:14:52,816
+15 yukarı çıktı, 14 aşağı indi. Biliyoruz ki zaten eski parent'tı. Yani bunlardan zaten daha büyüktü. Çünkü bunun parent'ından daha büyüktü. Şuradaki halinde. O yüzden tekrardan bir daha burada da 14 aşağı indi. Daha aşağı inmesi gerekir mi? Kontrolüne ihtiyaç duymam. Çünkü zaten daha büyüktü eskiden. Onu garanti etmiştim heap olduğu için.
+
+659
+02:14:57,908 --> 02:15:11,868
+Daha fazla yukarı çıkamıyorum. Burada kaldım. Eğer bundan da büyük olsaydım köke kadar çıkacaktım bir önceki örnekte. 22 değeri köke kadar çıkmıştı hatırlayacaksınız. Ne oldu? İşte ben 4 değerine sahiptim.
+
+660
+02:15:12,532 --> 02:15:29,431
+15 değerine çıktım. Destek aldım diyelim. Bir şekilde beni büyüttüler, beslediler. O zaman ben de heap de yukarılara doğru çıkmam gerekiyor. Çıkabildiğim yer burası oldu. Artık ikinci düğüm olarak, 1-2-3 diye gidiyordu ya, ikinci düğüm olarak kendimi konumlandırdım.
+
+661
+02:15:30,163 --> 02:15:48,883
+Eski parent 14 buraya geldi. Onun da eski parent'ı 8 buraya geldi. Şuradaki 8 buraya, 14 buraya, 15 de buraya geldi. Hala complete binary tree'im. Hala parent'lar, child'lardan daha büyük. Ve bu sayede heap olma özelliğimi de devam ettirmiş oluyorum.
+
+662
+02:15:48,883 --> 02:15:56,703
+Bu şekilde elemanların değerleri değişirse heap olmasını nasıl garanti ederim?
+
+663
+02:15:58,163 --> 02:16:07,543
+demekten biraz daha farklı gördüğünüz gibi, daha basit. Sadece parentlarla karşılaştırmam, gidebildiğim yere kadar kendimi yukarı taşımam yeterli oluyor.
+
+664
+02:16:08,243 --> 02:16:12,263
+Yine mini heap için de bunun tersi, küçüktür kontrolleriyle yapabilirsiniz.
+
+665
+02:16:13,223 --> 02:16:20,083
+Şimdi geldik, neye baktık? Heapten eleman, heap oluşturmaya baktık. Heapten eleman çekmeye baktık.
+
+666
+02:16:20,823 --> 02:16:26,163
+En büyük elemanı çekiyoruz, aradan eleman çekmiyoruz. Her zaman için heapin birinci gözüne muhatabı.
+
+667
+02:16:26,163 --> 02:16:30,823
+kullanırken de her zaman birinci göz üzerinden gidiyoruz.
+
+668
+02:16:31,643 --> 02:16:34,004
+Heap'te var olan bir elemanın değeri değişebilir.
+
+669
+02:16:34,183 --> 02:16:36,824
+O zaman yine heap kalmasını nasıl garanti ederiz?
+
+670
+02:16:36,903 --> 02:16:37,504
+Ona baktık.
+
+671
+02:16:38,023 --> 02:16:38,956
+Son olarak...
+
+672
+02:16:40,211 --> 02:16:58,752
+Bakmamız gereken bir şey daha. Heap'e yeni bir eleman eklemek. Nasıl yapacağız? Şimdi biraz önce bir elemanın değerinin arttırılmasını öğrendik. Aslında bunu kullanacağız temelde. Ama nasıl kullanabilirim? Şimdi önce heap'imin boyutunu bir arttırmalıyım. Çünkü yeni bir eleman geldi.
+
+673
+02:16:59,188 --> 02:17:14,688
+Tamam, 8 boyutundaydım, 9 boyutuna çıktım. Ve son eleman, yani bir eleman ekledim. Şimdi ben oraya gidip de yeni gelen değeri direkt yazamam. Yazarsam ne olur? Ya iki tane durum var, ya hakikaten parentından küçükümdür.
+
+674
+02:17:15,412 --> 02:17:32,412
+Tutturdum. Hala heap kalmaya devam ediyorum diyebilirim. Ama parentımdan büyük de olabilirim. O zaman ne yapacağız? İşte onu bir şekilde yukarılara doğru taşımam gerekecek. Peki ben bu operasyonu nasıl yapacağım? Şöyle yaparım. Ben ilk olarak göze...
+
+675
+02:17:33,023 --> 02:17:50,563
+Yeni eleman geliyor diye bir arttırdım ya boyutu. Eksi sonsuz değerini atarım. Yani böyle olabilecek minimum integer değer neyse mesela onu atarım. Ve sonrasında onun değerini key ile değiştiririm. Yani bana yeni verilen şey ile değiştiririm.
+
+676
+02:17:50,863 --> 02:17:58,923
+Değer ile ve heap increase key'i çağırırım. Yani aslında şuradaki operasyonu, düğümün değerini arttırma operasyonu çağırırım.
+
+677
+02:17:59,563 --> 02:18:03,484
+Neden böyle bir şeyi çağırıyorum? Çünkü bu küçükse zaten aşağıda kalacak.
+
+678
+02:18:04,164 --> 02:18:09,403
+Eğer parent'tan daha büyük bir değerse bir şekilde bir yerlerden yukarı doğru taşımam gerekiyor onu.
+
+679
+02:18:10,324 --> 02:18:18,863
+Onun yüzden ilk başta eksi sonsuzla başlayıp yani olabilecek en küçük değersin deyip en sona koyup sonrasında da bunu increase key ile yukarıda.
+
+680
+02:18:18,863 --> 02:18:41,703
+Yarlarda durması gereken yere taşımam gerekir. Log n'di burası hatırlarsanız. En fazla seviyeye kadar gidebiliyorduk. Artı bir işlem geldi ama mertebemiz hala log n. Yani tek bir atlama eklemiş olduk aslında. O yüzden yine log n karmaşıklık ile ben heap'e bir eleman ekleyebiliyorum.
+
+681
+02:18:46,611 --> 02:18:59,991
+Önce eksi sonsuz koy ki heap olması garanti olmaya devam etsin. Bunu biliyoruz çünkü hiçbir parenttan daha büyük olamaz eksi sonsuz. Ondan sonra da onu gerçek değerle değiştir.
+
+682
+02:19:00,291 --> 02:19:10,851
+Şimdi evet bazı parentlardan büyük olabilirim. Hemen oraya increase key'i ilave et ve yukarı doğru gidebildiği kadar taşı diyebiliriz.
+
+683
+02:19:11,987 --> 02:19:32,108
+Bu da eleman ekleme. Aslında increase key ile yaptığımız, yani elemanın değerini arttırıp da yukarı doğru taşımayla birebir aynı şey. Eğer taşınamıyorsa da zaten orada kalmaya devam edecektir. Son eleman olarak kalıp heap yapısını bozmadan heap veri yapısında bütün verileri tutmaya devam ederiz.
+
+684
+02:19:33,332 --> 02:19:50,351
+Şimdi, ilk başta bottom up demiştik hatırlarsanız. Neydi bottom up? İşte 5, 4, 3, 2 diye parentları gezerek, ters sırada gezerek, en alttan köke doğru giderek heapify yapmaya çalışıyorduk.
+
+685
+02:19:50,351 --> 02:20:00,000
+Şimdi bu bir heap yaratma yöntemiydi. Alternatif bir yaratma yöntemim daha var şu anda. Nedir? Bana elemanlar teker teker...
+
+686
+02:20:00,000 --> 02:20:07,619
+Her eleman geldikçe insert ederim onu aslında. Son eleman olarak insert eder, sonra da yukarı taşırım.
+
+687
+02:20:07,680 --> 02:20:12,880
+Insert eder, gidebildiği kadar yukarı taşırım. Bu şekilde de ben bir heap yaratabilirim.
+
+688
+02:20:13,180 --> 02:20:19,920
+Buna da ne diyeceğiz? Top down diyeceğiz. Birden n'e doğru gittiğimiz için. Bakalım döngümüz ikiden başlıyor.
+
+689
+02:20:19,920 --> 02:20:21,959
+Length'e doğru gidiyor.
+
+690
+02:20:22,644 --> 02:20:33,324
+Her seferinde yeni gelen elemanı insert ede ede bir heap yaratırsanız burada da yine heap olmasını garanti etmiş olursunuz. Bu da alternatif.
+
+691
+02:20:39,379 --> 02:20:45,979
+Her zaman için aynı heapi oluşturma garantisi veremezsiniz.
+
+692
+02:20:46,119 --> 02:20:46,840
+Sebebi de şu.
+
+693
+02:20:47,259 --> 02:20:48,299
+Şimdi şuna bakalım.
+
+694
+02:20:48,799 --> 02:20:49,459
+1, 2, 3.
+
+695
+02:20:49,659 --> 02:20:50,979
+Elimizle yazalım hemen.
+
+696
+02:20:51,619 --> 02:20:52,379
+Şöyle.
+
+697
+02:20:52,959 --> 02:20:55,219
+Ben bunu ilk yöntemle yaptığımda ne yapıyordum?
+
+698
+02:20:55,419 --> 02:20:56,579
+Şurada yapayım önce.
+
+699
+02:20:57,279 --> 02:20:57,919
+Bir.
+
+700
+02:20:59,739 --> 02:21:00,659
+Bu rengi sevmedim.
+
+701
+02:21:01,139 --> 02:21:01,959
+Çok iyi görünmüyor.
+
+702
+02:21:02,819 --> 02:21:04,699
+Şuradan yine ben kırmızımı alayım.
+
+703
+02:21:05,459 --> 02:21:07,459
+Daha iyi görünüyor gibi.
+
+704
+02:21:07,459 --> 02:21:12,659
+Bir, yukarıda, iki ve üç.
+
+705
+02:21:12,659 --> 02:21:18,259
+Şimdi, n bölü iki ne? Bir. Yani tek parent var burada doğal olarak.
+
+706
+02:21:18,259 --> 02:21:22,860
+Değil mi? Şöyle bakıyoruz ağaç yapımıza.
+
+707
+02:21:22,860 --> 02:21:27,459
+Ve parent ile childları hatırlarsanız heapify'da kontrol ediyorduk.
+
+708
+02:21:27,459 --> 02:21:31,059
+Bir, iki ve üç. Bakıyorum.
+
+709
+02:21:31,507 --> 02:21:38,268
+Hangisi en büyük, largest hangisi 3? Yani 3'ün aslında parent olması lazım deyip 3'ü yukarı taşıyorum.
+
+710
+02:21:39,867 --> 02:21:42,968
+1'le yani yer değiştiriyorum. 1 buraya geldi.
+
+711
+02:21:44,084 --> 02:21:53,984
+Ve 2 de burada kalmaya devam etti zaten. Bu çocuktu. Bunu ellemedik. Yani ben 3, 2, 1 şeklinde bir ağaç oluşturdum. Bir heap oluşturdum.
+
+712
+02:21:55,084 --> 02:21:59,824
+Heap mi? Evet, bir max heap. Neden? Çocukların hepsinden daha büyük olmasını garanti ettim.
+
+713
+02:22:00,364 --> 02:22:09,164
+Şimdi gelelim şu yönteme. Bu yöntemle oluştursaydım yine 1, 2, 3 diye bana verilen şeyi, 2'den 3'e doğru gitseydim neler yaşayacaktım?
+
+714
+02:22:09,164 --> 02:22:10,684
+Şimdi önce 1'e ekledim.
+
+715
+02:22:11,827 --> 02:22:38,507
+Tamam. Bir geldi. Hiç yoktu zaten. Eksi sonsuz bir. Hiçbir şeyi değiştirmedi. Birinci gözle duruyor. İkinci eleman geldi. 2. Şuraya eklemem lazım. Önce eksi sonsuz, sonra 2 yaptım. Ve insert işlemiyle increase key'i çağırmış oldum. Yani 2'yi taşıyabildiğim kadar yukarı taşıyacağım. Şimdi 2'ye bakıyorum. 2.
+
+716
+02:22:38,976 --> 02:22:51,796
+Birden büyük mü? Evet. O zaman bu yer değiştirdi ve iki yukarıda, bir aşağıda olacak şekilde bir ağaç oldu.
+
+717
+02:22:52,195 --> 02:23:02,796
+Şimdi üçüncü eleman geldi. Üç. Yine şunu şöyle yaptım. Önce eksi sonsuz diye bir düğüm oluşturdum. Ondan sonra bunu sildim. Onun yerine üç yazdım.
+
+718
+02:23:04,628 --> 02:23:28,587
+Şimdi bunu insert ile şey yaptığım için, değerini arttırdığım için yukarı doğru taşımaya çalışacağım. Bakıyorum, şöyle yana doğru gidelim. 3, 2'den büyük, o zaman yer değiştirmesi lazım. 3, parent oldu. 2, buraya geldi. 1, zaten burada durmaya devam ediyor. O zaten daha büyük olduğu için garanti etmiş oldum.
+
+719
+02:23:32,180 --> 02:23:56,680
+Şuradan şöyle alalım. 3-2-1 şeklinde bir heap ağacı oluşturdum. Ama ikinci yöntemle yani top-down approach'la gittiğimde de 3-1-2 şeklinde bir çıktı oluşturdum. 3-2-1, 3-1-2. İkisi de heap mi? Evet, ikisi de heap. Ama gördüğünüz gibi aynı heap değiller. Birbirine eşit değil.
+
+720
+02:23:57,040 --> 02:24:01,720
+İki yöntemle birbirinden farklı heapler oluşturabilirsiniz.
+
+721
+02:24:02,319 --> 02:24:04,780
+Sadece tek garanti ettiğimiz iki şey var.
+
+722
+02:24:05,100 --> 02:24:10,220
+Bir, parentler, childlardan büyük değere sahiptir.
+
+723
+02:24:10,600 --> 02:24:13,580
+İki, her zaman için complete binary tree olmaya devam eder.
+
+724
+02:24:13,580 --> 02:24:15,700
+Bu iki yöntem.
+
+725
+02:24:16,340 --> 02:24:31,340
+Dediğim gibi ikisi de heap yaratabilir ama aynı sonucu elde etmek zorunda değilsiniz. Ki zaten burada yapılmışı var şeklinde şey olacak. 1-2-3 heapify ettiğimde...
+
+726
+02:24:31,667 --> 02:24:50,828
+Bir bakacak, iki ve üçten daha küçük. O yüzden en büyük üç, üç yukarı çıkacak. Üç, iki, bir oldu. Dizi bu şekilde. Ama ikinci yöntemle bir, eksi sonsuz, ikiye ekle, yukarı taşı. Ondan sonra üçe eklemek için eksi sonsuz, üç, ekle, yukarı taşı. Üç, bir, iki şeklinde bir dizi oluşturmuş olacak.
+
+727
+02:24:56,275 --> 02:25:15,835
+heapify'ı çağırarak oluşturuyor. Yine log n mertebesinde. Diğeri de heap insert'ü çağırarak, o da kendi içinde heap increase key'i çağırarak oluşturuyor. Bu da log n mertebesinde. İkisiyle de log n mertebesinde, n tane eleman olduğunda da n log n mertebesinde heap yaratabilirsiniz.
+
+728
+02:25:18,644 --> 02:25:24,844
+Sonrasında da bu yaratılmış heap'i algoritmalarınızda, yani bu veri yapısını kullanabilirsiniz.
+
+729
+02:25:27,283 --> 02:25:38,304
+Peki, şimdi bir örnek, en böyle temel heap ile anlatabileceğimiz kullanım alanı olan sıralama yöntemine bakmak istiyorum.
+
+730
+02:25:38,984 --> 02:25:41,963
+Şimdiki başlığımız heap sort.
+
+731
+02:25:42,515 --> 02:25:56,975
+Yani ben heap veri yapısını acaba sıralama işlemi için kullanabilir miyim? Nasıl kullanırım? Mantık ne olması gerekir? Ve bana nasıl bir iyileştirme sağlar bu veri yapısını kullanmak? Bu detaylara bakacağız.
+
+732
+02:25:58,355 --> 02:26:20,795
+Evet, heap sort tıkladık. Şimdi ne yapacağız? Önce bize bir dizi veriliyor. Giriş dizisi bir n şeklinde, a1'den a1 şeklinde bir dizi veriliyor. İlk önce bir kere bir max heap yapmam lazım. Build max heap'e bunları vermem gerekiyor. Yani benim heap sort yapmam için doğal olarak önce bir heap'e sahip olmam gerekiyor.
+
+733
+02:26:21,363 --> 02:26:37,100
+Burada da maxi pifa'yı çağırarak yani bottom up şeklinde yürüdüğümüzü düşünelim. Sonra işte buradan bir şey geldi. N tane işlem yaptık. O N geldi. Sonra neyi biliyorum? Her zaman...
+
+734
+02:26:37,172 --> 02:26:39,192
+En büyük eleman A1'de duruyor.
+
+735
+02:26:39,731 --> 02:26:43,551
+Ve ben bunu bilerek ve isteyerek dizinin en son elemanıyla yer değiştiririm.
+
+736
+02:26:43,772 --> 02:26:46,731
+Yani bilerek ve isteyerek diziyi bozarım, heap'i bozarım pardon.
+
+737
+02:26:47,652 --> 02:26:56,731
+Ve son elemanı görmezden gelip ya da heap boyutunu biraz altıp size'ı, en büyük elemanı son attım ya dizide,
+
+738
+02:26:57,452 --> 02:27:00,412
+yeni kök üzerinde tekrar heapify ederim.
+
+739
+02:27:00,652 --> 02:27:02,871
+Yani en eksi bir tane heapify ederim.
+
+740
+02:27:05,172 --> 02:27:32,012
+Her zaman bir azalacak zaten. Exchange O bir heap if I'da log n. Buradan da O n geliyor ve en küçük elemana kadar yani tek bir eleman kalana kadar heapin boyutunu bir azalta azalta. En büyük elemanı da hep oradaki son eleman olarak değiştire değiştire devam ettiğimde toplamda n log n mertebede ben sıralama işlemini gerçekleştirmiş olurum.
+
+741
+02:27:32,304 --> 02:27:44,664
+Diziyi bir heap olarak organize edip sonrasında da her seferinde en büyük elemanı yani birinci gözdeki elemanı olması gereken son değer olarak atamak yöntemiyle.
+
+742
+02:27:45,064 --> 02:27:49,664
+Şimdi sözle ifade edince biraz böyle muğlak kalmış olabilir.
+
+743
+02:27:50,164 --> 02:27:54,263
+Tam bir heap üzerinde yaptıklarımı anlatınca çok daha iyi oturacak.
+
+744
+02:27:54,263 --> 02:27:59,904
+Şimdi önceki slaytlardan örnek yaptığımız bir heap vardı ya kitaptan alınan.
+
+745
+02:28:00,304 --> 02:28:26,564
+Bakalım. 16, 14, 10. Şöyle hatta kontrollerimizi de gerçekleştirelim. 16, 14 ve 10'dan büyük. 14, 8 ve 7'den büyük. 10, 9 ve 3'den büyük. 8, 2 ve 4'den büyük. 7'de 1'den büyük. Complete tree. Okey, binary tree. O zaman bu bir heaptir. Şimdi, neyi biliyorum? En büyük eleman burada.
+
+746
+02:28:27,219 --> 02:28:32,439
+Yani ben bunu küçükten büyüğe sıralarken ne yapmam lazım? Bunu dizinin en sonuna atmam lazım.
+
+747
+02:28:33,000 --> 02:28:42,459
+Şöyle yapacağım. Ben bunu gidip şuraya yazacağım elimle. Tamam mı? Şu biri de aldım. Biri buraya koyacağım.
+
+748
+02:28:44,259 --> 02:28:53,000
+Şunları bir temizleyeyim. Bunu bir yapacağım. Bunu da 16 yapacağım.
+
+749
+02:28:53,716 --> 02:29:16,615
+Fakat bunu diziden koparacağım. Yani heap size'ı biraz azaltacağım. Ama bu hala dizinin son gözünde durmaya devam edecek. Şuraya taşıdığım. Tamam. Şimdi bir burada biliyorum ki heap bozuldu. Ne yapacağım? Heapify edeceğim. Nasıl edeceğim? Bire bakacağım. 14 ve 10. 14 yukarı. Bir aşağıya. Şimdi devam ediyorum heapify'a.
+
+750
+02:29:16,976 --> 02:29:29,336
+1, 8 ve 7, 8 buraya, 1 buraya, devam edeceğim hala çocukları var, 1, 2 ve 4, 1 buraya, 4 buraya.
+
+751
+02:29:31,376 --> 02:29:33,636
+Yani şuradaki yapı oluştu.
+
+752
+02:29:34,195 --> 02:29:41,756
+Ve 14, 8, 10, 4, 7, 9, 3, 2, 1 şeklinde heapim durmaya devam ediyor.
+
+753
+02:29:43,827 --> 02:29:52,087
+16 dizinin son gözü olarak, yani en büyük eleman şurada yerini buldu.
+
+754
+02:29:52,087 --> 02:30:03,448
+Tamam. Şimdi ne yapacağım? Ben burada yine alıp en büyük eleman hangisi? 14 değil mi? 14'ü alıp dizinin son elemanı olarak yazacağım.
+
+755
+02:30:04,207 --> 02:30:11,047
+Kalan dizinin son elemanı olarak. Yani şuradaki göze, 9. göze. 1, 2, 3, 4, 5.
+
+756
+02:30:11,504 --> 02:30:27,084
+6, 7, 8, 9. göze 14'ü yazacağım. Ve buradaki 1'i de alıp buraya koyacağım. Elimle ne yaptım? En küçük elemanı, yani daha doğrusu en ufak olması, diğerlerinden, parentlarından küçük olması garanti edilmiş olan elemanı yukarı taşıyacağım.
+
+757
+02:30:27,724 --> 02:30:37,884
+14'ün en büyük olduğu garantiydi heap sayesinde. Onu da sona attım. Ve şuraya kadar şu anda dizim sıralandı diyebilirim. Ne yapacağım?
+
+758
+02:30:38,255 --> 02:31:05,795
+Bunu da elemanını kopardım, bağlantısını kopardım. Yani aslında dizinin boyutunu heap size n-1 yaptım. Bir tane daha ufaltmış oldum. Şu anda heapim 8 elemandan oluşuyor. 1, 2, 3, 4, 5, 6, 7 ve 8. eleman. Yine bozdum. 1, 8 ve 10 ile karşılaştır. Bakın bu sefer 10 buraya geldi, 1 buraya geldi. Ondan sonra 1, 9 ve 3 ile karşılaştır. 9 buraya geldi, 1 buraya geldi.
+
+759
+02:31:07,316 --> 02:31:10,316
+Ve şuradaki yapıyı kavuştum.
+
+760
+02:31:11,076 --> 02:31:16,995
+Heapim böyle değişti. Bakın bir sol alt ağaçdaydı eskiden ama şimdi sağ alt ağacı geçti. Önemi var mı? Hayır.
+
+761
+02:31:17,495 --> 02:31:21,076
+Tek garanti ettiğim şey parentların daha büyük olması.
+
+762
+02:31:21,695 --> 02:31:25,796
+Onu da heapify ile zaten garanti edebiliyorum gittiği yere kadar aşağı atarak.
+
+763
+02:31:26,615 --> 02:31:33,256
+Şimdi ne yapacağız? On. Bunu çekmem gerekiyor. Bunu yine en son eleman olarak atıyorum.
+
+764
+02:31:33,811 --> 02:31:36,811
+Dizi boyutunu, heap boyutunu özür dilerim, biraz altıyorum.
+
+765
+02:31:37,311 --> 02:31:39,272
+Heap şuraya kadar artık geldi.
+
+766
+02:31:40,831 --> 02:31:42,191
+Onu buraya attım.
+
+767
+02:31:42,351 --> 02:31:43,612
+Yani ikiyi buraya attım.
+
+768
+02:31:44,851 --> 02:31:45,691
+Şurada on oldu.
+
+769
+02:31:47,051 --> 02:31:48,011
+Onu yazdık.
+
+770
+02:31:48,531 --> 02:31:49,551
+Bunu da kopardık.
+
+771
+02:31:50,752 --> 02:31:50,971
+Evet.
+
+772
+02:31:51,791 --> 02:31:53,072
+İki bozduğumu biliyorum.
+
+773
+02:31:53,992 --> 02:31:54,752
+Karşılaştırıyorum.
+
+774
+02:31:55,131 --> 02:31:55,551
+İki.
+
+775
+02:31:56,171 --> 02:31:58,211
+Onu sileyim kafamız karışmasın.
+
+776
+02:31:58,291 --> 02:31:59,551
+İki, sekiz, dokuz.
+
+777
+02:31:59,691 --> 02:32:00,272
+Dokuz buraya.
+
+778
+02:32:01,556 --> 02:32:20,816
+2 buraya, 2, 1, 3, 3 buraya, 2 buraya geldi. Ne haldeyiz? 9, 8, 3, 4, 7, 1, 2. Şu anda heapimde de 7 tane eleman var. Tamam. Zaten şunlar şöyle olsaydı.
+
+779
+02:32:22,291 --> 02:32:32,791
+Böyle bağlı olacaklardı diye çizebilirim. Tamam mı? Yani dizide durdukları için söylüyorum ama ben heap size'ı azalttığım için bunlar kopuk olarak göstermeyi tercih ediyorum.
+
+780
+02:32:33,412 --> 02:32:46,031
+Şimdi ne yapacağız? En büyük elemanı çek. Ne bu? 9. Yani şunu al, 9 ile yer değiştir, bağını kopart. Buraya 2 yaz. Şimdi 9 buraya geldi.
+
+781
+02:32:47,796 --> 02:33:09,136
+Heap'in boyutunu biraz azalttım. Yine heap ifay edeceğim. 2, 8 ve 3. 2 bu sefer buraya gitti. 8 buraya geldi. 2, 4 ve 7. 2 buraya geldi. 7 buraya geldi. Evet, yani 8, 7, 3, 4, 2, 1.
+
+782
+02:33:09,520 --> 02:33:13,920
+9'da aslında hala şurada ama bağlantısı yok heap size'ı azalttığımız için.
+
+783
+02:33:14,340 --> 02:33:16,940
+Şimdi ne yapacağız? 8 ile 1'i yer değiştireceğiz.
+
+784
+02:33:17,540 --> 02:33:22,319
+8 buraya geldi, 1 buraya geldi, 1.
+
+785
+02:33:22,840 --> 02:33:24,440
+Yine heapify ediyorum.
+
+786
+02:33:24,959 --> 02:33:25,880
+1, 7, 3.
+
+787
+02:33:26,159 --> 02:33:30,180
+1 buraya geldi, 7 yukarı çıktı, kök oldu.
+
+788
+02:33:31,180 --> 02:33:32,779
+1, 4 ve 2.
+
+789
+02:33:33,520 --> 02:33:35,619
+4 yukarı, 1 aşağıya.
+
+790
+02:33:36,755 --> 02:33:50,955
+Ne yaptık? 7, 4, 3, 1, 2 şeklinde heapimizi oluşturduk. Gördüğünüz gibi her seferinde de heap size 1, 1 azalıyor. N tane login işlem yapıyorum aslında. Tamam, bunu da yaptık.
+
+791
+02:33:51,540 --> 02:34:18,440
+Ne oldu? 8 buraya geldi. Şunu da şey yaptık. Yine heap size'ı biraz azalttık. Şu anda heap'imde neler var? 7, 4, 3, 1, 2 vardı. Şimdi 2'yi tekrar yukarı alıyorum. 7'yi aşağıya alıyorum. Bağını koparıyorum. 2, 4, 3'ten dolayı 4 yukarı 2 aşağıya. 2, 1 değişiklik yapmama gerek yok.
+
+792
+02:34:19,540 --> 02:34:37,360
+2, 3, 1 şeklinde heap oluştu. 7'yi de şuraya almıştık. Onu işaretlemedik. Sonra ne yapacağım? 4 aşağıya, 1 yukarı ve 4'ü kopar. Şunu yap yani. Değişikliği yap ve bunu da biraz alt.
+
+793
+02:34:38,611 --> 02:35:00,491
+4 aşağı gitti, 1 geldi buraya. 1 yazalım. 1, 2, 3 bakıyoruz. 3 yukarı, 1 aşağı gitti. 3, 2, 1 şeklinde kaldı. Şimdi 3 ile 1 yer değiştirecek. 1 yukarı, şu 1, 3 aşağı gitti. Bağını kopardık.
+
+794
+02:35:06,260 --> 02:35:24,540
+1 ile 2'ye baktık, yer değiştirdi. Şöyle. 2 ve 1 oldu. Sonra tekrardan en büyük maksimum şu anda kalanlar ne? 2. Kalanların maksimumu 2. 2 ile 1'in yerini değiştirirdik. 2'yi buraya yazdık. Bağını kopardık. Tamam.
+
+795
+02:35:25,012 --> 02:35:35,612
+Bunu da yaptık. Şimdi 2'yi de kopardığımıza göre burada 1 kaldı. 1'in çocuğu var mı? Şu anda heap size zaten 1.
+
+796
+02:35:36,031 --> 02:35:41,711
+O yüzden en büyük eleman zaten birdir. Kalanların en büyüğü birdir. O da zaten birinci gözde kalmaya devam etti.
+
+797
+02:35:42,412 --> 02:35:48,072
+Bu kadar işlem ile her seferinde login tane işlem yaptık aslında. Maksimum login yapabiliyoruz.
+
+798
+02:35:48,072 --> 02:36:00,912
+Ve hep bilerek bozup heapify, bilerek bozup heapify ederek kalan heap üzerinde tekrar tekrar bu işlemi yaptığımda dizimi, zaten dizide duruyordu heap.
+
+799
+02:36:01,456 --> 02:36:09,576
+1, 2, 3, 4, 7, 8, 9, 10, 14, 16 sırası ile gelecek şekilde kurgulamış oldum.
+
+800
+02:36:10,296 --> 02:36:11,256
+Şöyle bir temizlik yapalım.
+
+801
+02:36:13,056 --> 02:36:13,835
+Anladık mı?
+
+802
+02:36:16,216 --> 02:36:19,576
+Yaptığımız tek şey önce heap etmek.
+
+803
+02:36:22,484 --> 02:36:34,344
+heap edildikten sonra da her adımda teker teker maksimum elemanı yani kökü söküp son elemanı onun yerine koymak, bilerek bozmak.
+
+804
+02:36:34,824 --> 02:36:36,664
+Bozunca tekrar heap ifa etmek.
+
+805
+02:36:37,764 --> 02:36:40,324
+N tane log n işlem yapmak aslında.
+
+806
+02:36:40,904 --> 02:36:48,584
+Bu sayede heap kullanarak n kareden bir anda log n mertebesine, n tane log n'e düşmüş oluyoruz.
+
+807
+02:36:49,363 --> 02:36:50,863
+Hocam bir söz sorabilir miyim?
+
+808
+02:36:51,164 --> 02:36:51,583
+Sor.
+
+809
+02:36:51,883 --> 02:36:54,843
+Bu en yüksek değeri kopardığımız zaman onun yerine ne yazıyoruz?
+
+810
+02:36:56,343 --> 02:36:58,263
+Orada boşluk olarak kalmayacağına göre.
+
+811
+02:36:59,484 --> 02:37:00,843
+İşte en son değeri yazıyorsun.
+
+812
+02:37:01,396 --> 02:37:03,675
+Bak, 1 ile 16'yı yer değiştirdim.
+
+813
+02:37:03,776 --> 02:37:04,855
+Yer değiştiriyoruz değil mi?
+
+814
+02:37:05,216 --> 02:37:06,976
+Tabii tabii, bunun değerini alıp buraya yazıyorsun.
+
+815
+02:37:07,096 --> 02:37:14,256
+Özellikle bilerek ve isteyerek parentlarından daha küçük olduğunu bildiğin bir değeri, o da son eleman oluyor.
+
+816
+02:37:15,256 --> 02:37:18,396
+Yani bunları da yazabilirsin de, o zaman şey...
+
+817
+02:37:19,507 --> 02:37:26,147
+Sürekli olarak acaba hangisini yazacağım problemiyle tekrar bir if ile falan başa çıkman gerekir.
+
+818
+02:37:26,147 --> 02:37:30,527
+Biz burada varsayım olarak hep en sondaki elemanla yer değiştirmeyi seçiyoruz.
+
+819
+02:37:30,987 --> 02:37:34,727
+Bu sayede şimdiki örnekte daha iyi görünebilir belki. Şöyle bir örnek vereyim.
+
+820
+02:37:35,288 --> 02:37:40,427
+Dizi üzerinde direkt yapacağım tamam mı? Sonra bunu elimle de çizerim. Anlarız.
+
+821
+02:37:40,847 --> 02:37:41,907
+Şimdi verilen dizi bu.
+
+822
+02:37:42,451 --> 02:38:03,031
+2, 9, 7, 6, 5, 8. Önce heap oluşturmam lazım. Bu bir heap mi? Ona bakacağız. Nasıl yapacağım aslında? Hatırlayalım. Bu kök. Bunun çocukları kimdi? Bunlardı değil mi? Bunun çocukları bunlardı. Bunun çocuğu da buydu.
+
+823
+02:38:03,700 --> 02:38:21,720
+Biliyorum bunu. Ve şuradan aslında parentların hepsinin 2, 9, 7 yani ilk 3 eleman olduğunu biliyorum. Son 3 eleman mutlaka leaf yani yaprak ya da tamamen çocuklardan oluşuyor. Şimdi önce neye bakmam lazım? Kökten başlayarak 2 çocuklarıyla karşılaştır.
+
+824
+02:38:21,720 --> 02:38:26,639
+Tamam mı? Pardon yanlış söyledim. Şunu sileyim.
+
+825
+02:38:29,319 --> 02:38:30,299
+n bölü 2 ne?
+
+826
+02:38:30,736 --> 02:38:33,796
+3, bottom up ile gidelim yine.
+
+827
+02:38:34,736 --> 02:38:40,675
+M bölü 2'den başlayarak heap özelliğine Ctrl-Ede'ye de gitmem lazım.
+
+828
+02:38:41,296 --> 02:38:42,476
+Şimdi 7'ye bakıyorum.
+
+829
+02:38:43,655 --> 02:38:45,015
+7'nin çocukları kimdi?
+
+830
+02:38:47,515 --> 02:38:48,476
+Kimdi?
+
+831
+02:38:49,576 --> 02:38:51,155
+8'di değil mi sadece?
+
+832
+02:38:51,155 --> 02:38:52,056
+Evet.
+
+833
+02:38:52,691 --> 02:39:19,151
+Sadece 8. 7 ile 8'i karşılaştırıyorum. Çocuk daha büyük. O zaman yer değiştirmesi lazım. 7'yi alıp sona, 8'i alıp da 7'nin yerine koydum. Yani 8 ile 7 exchange edildi. Şöyle. Şimdi bunun, bu parent'ın heapini garanti ettim. Bir azalttım. Şimdi 9'a bakacağım. Buradaki 9 hedefim. 9'un çocukları kim?
+
+834
+02:39:19,603 --> 02:39:46,683
+6 ve 5 değerleri. Burada bir sıkıntı yok. 6 ile 5 doğru yerinde. 9 daha doğrusu 6 ve 5'ten daha büyük. O yüzden bunun için bir değiştirme yapmama gerek yok. Yani ben şunu ve şunu sonrasında da 9, 6, 5 kontrolüyle bunların yerlerini garanti etmiş olduğum. Şimdi gelelim bir azalttım. Köke geldim, ikiye geldim. Kimle karşılaştıracağım?
+
+835
+02:39:47,123 --> 02:39:59,824
+Şunları yine temizleyelim. 2'yi 9 ve 7 ile karşılaştıracağım. 2, 9, 7 kim buraya gelecek? 9 buraya gelecek. 2 ile yer değiştirecek. Yeterli mi?
+
+836
+02:40:00,020 --> 02:40:23,159
+Hayır, ikinin çocuklarına da bakmam lazım. Dördüncü indis ve beşinci indise de bakmam lazım. İki, altı, beşe bakıyorum. Maksimum ne? Largest ne? Altı. O zaman altıyla iki de yer değiştirmesi lazım. Tamam mı? Ve ilk aşamada ben heapimi oluşturdum. Dokuz, altı, sekiz, iki, beş, yedi şeklinde dizi organize edildi. Artık bu bir heap.
+
+837
+02:40:23,700 --> 02:40:35,920
+Nereden biliyorum? 9 büyüktür 6 ile 8'den. 6 büyüktür 2 ile 5'den. 8 büyüktür 7'den. Bütün parentler kendi çocuklarından büyük. Bu bir heap veri yapısı oldu diyorum.
+
+838
+02:40:37,012 --> 02:40:41,492
+Gördüğünüz gibi aslında sadece bir varsayım. Ağaç şeklinde gösterince güzel ve mantıklı görünüyor.
+
+839
+02:40:42,051 --> 02:40:51,132
+Ama aslında bellekle dizinin sadece sayısal organizasyonunu yapıyoruz ve bu organizasyonu da heap veri yapısı adını veriyoruz.
+
+840
+02:40:51,132 --> 02:40:57,132
+Şimdi ne yapacağız? İkinci aşamada her seferinde kökü alıp...
+
+841
+02:40:57,152 --> 02:41:04,391
+Sona atacağız ve bununla yer değiştireceğiz. Yani özellikle bilerek heap'i bozacağız ve her seferinde heap'i fay edeceğiz.
+
+842
+02:41:04,912 --> 02:41:14,011
+9 köküm. 9'u aldım. Sona atadım. Heap size'ı biraz alttım. Biraz alttığımı da şöyle bir çizgi, pipe ile gösterelim.
+
+843
+02:41:14,351 --> 02:41:24,051
+Yani dizinin bu tarafı sıralandı anlamına gelsin. Tamam. Şimdi 7'yi buraya taşıdım. Çocuklarıyla karşılaştıracağım.
+
+844
+02:41:24,399 --> 02:41:44,520
+6 ve 8. Kimle yer değiştirecek? 8 ile yer değiştirecek. 8 buraya geldi, 7 buraya geldi. 7'nin başka çocuğu var mı? 6. indis zaten yok. O yüzden 7'nin de çocuğu yok. Daha fazla kontrol yapmama gerek yok. Şimdi daha aşağı doğru bakmama gerek kalmadı.
+
+845
+02:41:45,172 --> 02:42:10,112
+8 şu andaki en büyük elemanım. Heap mi? Bakalım. 8 büyüktür 6 ile 7'den. 6 büyüktür 2 ile 5'ten. Doğru. 7'nin zaten çocuğu yok şu anda. O yüzden sıkıntı yok. Heap'i yine, pardon, dizinin geri kalanın heap olmasını garanti ettim. Şimdi 8'i son elemanla yer değiştiriyorum. 5 ile 8'i exchange ediyorum. 5 tepeye, 8 buraya geldi.
+
+846
+02:42:11,028 --> 02:42:25,528
+heap size'ı biraz azaltıyorum. Ne yaptım? Yani ayıracı şuradan şuraya taşımış oldum. Biliyorum ki tekrardan heap'i bozdum. 5 ile çocuklarına bakayım. 5, 6, 7.
+
+847
+02:42:25,971 --> 02:42:50,731
+Kimin parent olması lazım? 7'nin parent olması lazım. 7 ile 5 yer değiştirdi. 5'in başka çocuğu aşağı doğru giden var mı? Yok. O yüzden tekrar bir kontrol yapmama gerek kalmadı. 5 burada kaldı, 7 burada. Şimdi biliyorum ki kalan heap'teki maksimum eleman 7. Onu son elemanla yani 2 ile exchange ediyorum. 7 buraya, 2 buraya.
+
+848
+02:42:51,283 --> 02:43:01,763
+n-1 yapıyorum size'ı da ve heap size 3'e düştü. 7-8-9 kendi içinde sıralı kaldı. Özellikle 2 ile yer değiştirdiğim için yine heap'i bozdum.
+
+849
+02:43:02,484 --> 02:43:28,484
+Çocuklarıyla karşılaştırıyorum. 6, 5. Hangisi parent olması lazım? 6. 6 buraya geldi. Heap mi? 6 büyüktür 2'den, 6 büyüktür 5'den. Doğru, sıkıntı yok. Şu andaki en büyük elemanım 6. Şimdi yine tekrar 6 ile son elemanı exchange ediyorum. 5 buraya, 2 buraya. En eksi bir heap size'ı da azalttım. Oku buraya taşımış oldum. Heap size şurası. 5 ve 2.
+
+850
+02:43:30,484 --> 02:43:36,364
+Elimle bozdum ya, 5, 2'den büyük, sıkıntı yok. O zaman bir exchange yapmama gerek kalmadı.
+
+851
+02:43:37,584 --> 02:43:46,024
+Sonra, yani hala biliyorum ki en büyük eleman 5'miş. Kalan en büyük elemanı, yani rootdaki elemanı alıp son elemanla exchange ediyorum.
+
+852
+02:43:46,184 --> 02:43:51,824
+Tabi burada 2 ile 5'i aslında sadece yer değiştirdim. Heap size'ı biraz azalttım. Son eleman kaldı.
+
+853
+02:43:52,044 --> 02:43:58,484
+Daha fazla zaten ilerlememe gerek yok. Kalanların en büyüğü de bu olduğu için. Yani aslında minimum eleman 2'dir diyerek işi bitiriyor.
+
+854
+02:43:58,484 --> 02:44:04,584
+Ne oldu? Benim dizim 297658 şeklinde yola çıktı.
+
+855
+02:44:05,556 --> 02:44:09,796
+9, 6, 8, 2, 5, 7 şeklinde heap organizasyonuna kavuştu.
+
+856
+02:44:10,355 --> 02:44:16,616
+Sonrasında da her adımda kökü çekip sona atarak ilerledim.
+
+857
+02:44:17,216 --> 02:44:22,855
+Ve şurada da en eksi bir tane işlem ile sonunda tek bir eleman kaldığında zaten durmam gerekir.
+
+858
+02:44:23,436 --> 02:44:27,175
+2, 5, 6, 7, 8, 9 haline getirdim. Doğru mu?
+
+859
+02:44:27,736 --> 02:44:32,675
+2 büyüktür 5, büyüktür 6, büyüktür 7, büyüktür 8, büyüktür 9.
+
+860
+02:44:33,556 --> 02:44:35,355
+Pardon, küçüktür, ters yaptık.
+
+861
+02:44:36,736 --> 02:44:42,416
+Küçüktür, küçüktür, küçüktür, küçüktür, küçüktür, küçüktür.
+
+862
+02:44:42,896 --> 02:44:46,576
+Bu şartı sağladım. Sıralanmış diziyi elde ettim.
+
+863
+02:44:47,316 --> 02:44:50,396
+Bu da özellikle dizi üzerinde gösterdim.
+
+864
+02:44:50,695 --> 02:44:53,175
+Şimdi ben bunu elimle yazsaydım nasıl olacaktı?
+
+865
+02:44:53,175 --> 02:44:54,256
+Önce şuraya bakalım.
+
+866
+02:44:55,596 --> 02:44:56,195
+2
+
+867
+02:45:00,755 --> 02:45:17,876
+2, 9, 7, 6, 5 ve 8 vardı. Önce ne yapacağım? 7'den başlayarak bakacağım. 7 ve 8 yer değiştirmesi lazım deyip 8'i buraya, 7'yi buraya alacağım.
+
+868
+02:45:18,739 --> 02:45:41,539
+Sonra 9'a geçeceğim. 9, 6, 5. Burada bir değişiklik yapmama gerek yok. Sonra 2'ye geçeceğim. 2, 9, 8. Karşılaştır. 9 yukarı, 2 aşağıya. Yetmedi. 2, 6, 5. Karşılaştır. 6 yukarı, 2 aşağıya. Ve sonuçta 9, 6, 8. Şöyle temize geçeyim. 9.
+
+869
+02:45:42,031 --> 02:46:04,311
+6, 8, 9, 6, 8, şu 2'yi de değil mi? Evet. 2, 5 ve 7 heapini oluşturmuş oldum. Şöyle de çizgilerini çizelim. Tamamdır. Şuradan da silelim.
+
+870
+02:46:05,427 --> 02:46:31,587
+Evet, ipimiz bu şekilde oluştu. Şimdi ne yapacağım? Her aşamada önce 9'u çekeceğim. 9 ile 7'yi yer değiştireceğim daha doğrusu. Öyle diyelim. 9 şuraya geldi. Halkayı alalım. Burası 7 oldu. Özellikle bozduk. 7, 6, 8. 8 yukarı, 7 aşağı gitmesi lazım. 8.
+
+871
+02:46:33,332 --> 02:46:41,332
+Bakalım, kontrol edelim. 8, 6, 7, 2, 5. 8, 6, 7, 2, 5 halinde kaldı.
+
+872
+02:46:41,332 --> 02:46:51,332
+Şimdi 8'i çekip 5 ile yer değiştireceğim. 8 buraya geldi yani. 5 buraya geldi.
+
+873
+02:46:53,332 --> 02:46:56,332
+Bakıyorum 5, 6, 7, 2.
+
+874
+02:46:56,404 --> 02:47:20,203
+Şu 5'i silmeyi unuttuk. 7, 7 yukarı, 5 aşağıya. Şuradan devam edelim. 7, 6 soldaydı, 5 burada. 2 burada. Tamam, heap bu hale geldi. Kontrol edelim. 7, 6, 5, 2. Doğru. Sonra 2'yi buraya yazıp...
+
+875
+02:47:20,468 --> 02:47:44,728
+7'yi buraya yazacağım ya da işte aşağıya alayım sizin için. 7'yi buraya aldım. 2, 6, 5 kontrol ettim. 6 yukarı, 2 aşağıya gitti ve heapim 6, 2, 5 haline geldi. 5. O da şurası. Sonra 6 ile 5'i yer değiştirdim. 6'yı şuraya almış oldum.
+
+876
+02:47:48,500 --> 02:48:05,680
+5 pardon ve 2 oldu heapim. 5, 2, şurası. Bunu değiştirmeye gerek yok, doğru yerde. Ondan sonra 5'i buraya aldım. Şöyle biraz aşağı doğru kaydırayım. 5'i aldım. 2 ile yer değiştirdim.
+
+877
+02:48:06,868 --> 02:48:13,087
+5'i zaten sildim. Tek eleman kaldı 2. O da zaten son eleman olduğu için burada yerini aldı.
+
+878
+02:48:13,528 --> 02:48:17,308
+2, 5, 6, 7, 8, 9 şeklinde dizi organize edildi.
+
+879
+02:48:17,747 --> 02:48:21,568
+Heap gitgide azaldı en sonunda sadece 2 ya da 2'yi de aldığımda 0.
+
+880
+02:48:21,568 --> 02:48:33,808
+Boş heap kaldı diyebilirim. Heap'i boşaltına kadar her seferinde bir eleman çekip, son elemanla yer değiştirip, heapify ede ede bu işlemi gerçekleştirmiş olduk.
+
+881
+02:48:35,507 --> 02:48:41,047
+Evet, bu da dizi üzerinde nasıl yer değiştirdiklerini indis olarak gösterdiğimiz bir örnek.
+
+882
+02:48:41,047 --> 02:48:53,087
+Ama aynısını çok böyle güzel yazamasam da ağaç ya da görsel heap ile, ağaç şeklindeki görsel heap ile de oluşturmaya gayret ettik.
+
+883
+02:48:54,100 --> 02:49:14,079
+Evet, heap veri yapımız bu şekilde özelliğe sahip diyelim. Örnek bir kullanım alanı olarak da heap sortu vermiş olduk ve iç içe iki döngüden bize en azından bir veri yapısının özelliklerini kullanarak nasıl n kareden n logene düşürdüğünü inceledik.
+
+884
+02:49:14,079 --> 02:49:18,579
+Neden logene düşüyor? Çünkü log n tane işlem yapıyorum.
+
+885
+02:49:18,995 --> 02:49:20,995
+Yer değiştirme için maksimum.
+
+886
+02:49:21,376 --> 02:49:24,216
+N tane eleman için log n tane işlem yapıyorum.
+
+887
+02:49:24,376 --> 02:49:32,136
+Yani n log n tane işlem ile sıralamamı gerçekleştirebiliyorum diyerek heap sortun karmaşıklığını da özetlemiş olalım.
+
+888
+02:49:33,275 --> 02:49:34,695
+Evet, var mı sorunuz?
+
+889
+02:49:42,451 --> 02:49:58,191
+Evet, onun duyurusunu yapmayı unuttum. Hemen son dakikada onu da söylemiş ve öyle kapatmış olalım dersi. Bu çarşamba ödev vereceğiz arkadaşlar. Uygulama saati ödev verilecek.
+
+890
+02:50:00,000 --> 02:50:27,379
+Bu sefer büyük bir ihtimalle %100 demeyeyim ama %80 üzeri ihtimalle diyeyim daha uzun bir ödev olacak. Yani iki saatten uzun sürecek. Belki bir gün sürebilir. Kaç saat bir süre verelimi henüz daha kesinleştirmedik. Bu şekilde çarşamba günkü uygulama saatimizde ödev yapmaya başlayacaksınız. Ödev olduğu için de yine önceden söylemiş olalım.
+
+891
+02:50:28,000 --> 02:50:52,840
+Biz değil, ödev. Evet, [öğrenci], çarşamba günü uygulama saatinde ödev var. Evet diye cevap vermiş olayım. Şöyle herkese gitmiş olsun cevabımız. Evet, dersimizin de süresinin sonuna geldik bu haftalık. Çarşamba günü ödevimiz ile görüşmek üzere diyelim.
+
+892
+02:50:52,840 --> 02:50:54,659
+Hocam, ders dışı bir soru sorabilir miyim?
+
+893
+02:50:55,283 --> 02:50:56,443
+Ders dışı derken?
+
+894
+02:50:56,884 --> 02:50:59,183
+Yani mesleki etiyi ilgilendiren.
+
+895
+02:51:00,147 --> 02:51:09,647
+Mesleki etiği ilgilendiren bir soru. Peki sor. Ama ders bitti. İsteyenler çıkabilir. Ben de sorudan sonra kapatırım oturup. Buyur.
+
+896
+02:51:09,647 --> 02:51:24,327
+Hocam, bir adet alttan, bir adet üstten ders aldım ve ders programı öyle bir ayarlı ki cuma günü olan sınav 9'da başlıyor. Yaklaşık 1 veya 2'de bitiyor ve aralarında hiç vakit yok. Bu konu hakkında ne yapabiliriz? Hep 5 dakika bile arıyoruz sınavlar arası.
+
+897
+02:51:24,948 --> 02:51:29,048
+Her sınav sonrası 5 dakika verilmesi mümkün.
+
+898
+02:51:29,088 --> 02:51:31,468
+Her sınav slotu tamamen dolduracak mı?
+
+899
+02:51:33,007 --> 02:51:37,548
+Mesela mesleki hukuk ve etik için 1 saat ayrıldı.
+
+900
+02:51:38,228 --> 02:51:42,388
+Acaba 1 saat olacak mı mesela o sınav yoksa 40 dakika falan mı olacak?
+
+901
+02:51:42,388 --> 02:51:44,108
+Hocam, hocalara bağlı biraz.
+
+902
+02:51:45,396 --> 02:51:51,355
+Yani, ben senin de olsam, o günkü sınavların olduğu hocalara en azından bu durumu sorardım.
+
+903
+02:51:51,935 --> 02:51:55,876
+Sonrasında da çok zorlayan bir durum varsa bölüm başkanlığına bunu bildirirdim.
+
+904
+02:51:56,595 --> 02:51:57,755
+Tamamdır hocam, teşekkür ederim.
+
+905
+02:51:57,775 --> 02:52:01,216
+Zaten mesela slotlar bir buçuk saat galiba, yanlış hatırlamıyorsam.
+
+906
+02:52:03,296 --> 02:52:07,275
+Hani zaten bir saatse sınav, yarım saatiniz arada boş kalacak otomatikman.
+
+907
+02:52:07,827 --> 02:52:12,507
+O yüzden hani arka arkaya gibi görünse de fiiliyatta arada boşluklar oluşabilir.
+
+908
+02:52:12,907 --> 02:52:15,647
+Onu bir teyit edin ilgili derslerin hocalarıyla.
+
+909
+02:52:16,227 --> 02:52:18,007
+Ondan sonra bence bir aksiyon alın derim.
+
+910
+02:52:19,087 --> 02:52:20,407
+Teşekkür ederim hocam. İyi günler.
+
+911
+02:52:20,527 --> 02:52:21,007
+Rica ederim.
+
+912
+02:52:22,147 --> 02:52:24,827
+Evet, hadi kendinize iyi bakın. Sağlıkla kalın. İyi günler.

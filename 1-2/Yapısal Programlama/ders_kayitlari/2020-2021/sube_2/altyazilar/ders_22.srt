@@ -1,0 +1,2543 @@
+1
+00:15:22,004 --> 00:15:22,923
+Günaydın arkadaşlar.
+
+2
+00:15:35,956 --> 00:15:37,163
+Hemen başlayalım.
+
+3
+00:15:48,019 --> 00:16:01,720
+Haftalardan diyorum PreProcessor konusunda makrolar ve PreProcessor komutların bazılarını anlattık. Burada birkaç bir şey kaldı, onları konuşacağız.
+
+4
+00:16:40,371 --> 00:16:57,171
+Şimdi arkadaşlar, proje oluşturmak özellikle Cide çok zor bir şey değil ama bunu yaparken programınızı özellikle projenizi modüllerden meydana getirmeniz gerekiyor.
+
+5
+00:16:57,891 --> 00:17:03,971
+Bu sizin yapacağınız ders projesi ile alakalı değil. Ders projesinde biz tek dosya istiyoruz. O başka şey için lazım.
+
+6
+00:17:07,604 --> 00:17:14,144
+Projeniz birden fazla C dosyası veya bunlarla alakalı birden fazla header dosyasından oluşabilir.
+
+7
+00:17:15,744 --> 00:17:20,264
+Bunun yönetilmesiyle alakalı konuşalım.
+
+8
+00:17:25,203 --> 00:17:35,723
+Burada bazı kavramlar var. Pre-prosesör dediğimiz, bazı makro definition'ların veya bazı sabitlerin tanımlandığı bölüm.
+
+9
+00:17:37,844 --> 00:17:46,203
+Bu pre-prosesör sayesinde C dosyalarımızda bazı işlemleri makro olarak tasarlayıp işleri kısaltabiliyoruz.
+
+10
+00:17:47,403 --> 00:17:52,584
+Compiler ne yapıyor? Herhangi bir C kodunu assembly koduna dönüştürüyor. Bu önemli bir şey.
+
+11
+00:17:53,683 --> 00:18:19,663
+Assembler, oluşturulmuş assembly kodunu makine koduna dönüştürüyor. Yani C kodunu derlediğiniz zaman bazı kodlar assembly koduna makine kodunu çevrilir, bazı kodlar çevrilmez. Özellikle daha önceden derlenmiş olan kodlar tekrar derlenmez. Burada Assembler'lar derlenmiş olan kodların bağlanmasını sağlarlar.
+
+12
+00:18:20,948 --> 00:18:34,428
+Linker'da bu derlenmiş olan kodları getirip bizim programımıza bağlıyor. Ve sonunda executable dosya haline getiriliyor.
+
+13
+00:18:37,428 --> 00:18:45,028
+Demek ki burada biz bir kod yazsak, printf, scanf gibi. Onu derlesek, bir yerde saklasak.
+
+14
+00:18:45,587 --> 00:18:57,788
+Programı sıfırdan oluştururken, yani değerlerken tekrar onu değerlemeye gerek yok. Eğer bir değişiklik yapmadıysak, böyle bir iyi bir tarafıyla ortaya çıkıyoruz.
+
+15
+00:18:59,367 --> 00:19:08,028
+Program niye split edilir, parçalanır? İşte daha kolay yönetmek için, tekrar kullanılabilirliği arttırmak için.
+
+16
+00:19:10,163 --> 00:19:18,604
+Bu önceden çok yapılıyordu. Belki şimdi C'dekiler yapmıyorlar. Object Oriented kullanıyorsam da C'de biz bunu biraz daha az kullanıyoruz.
+
+17
+00:19:19,384 --> 00:19:24,503
+Çok kullanılan özellikle matematiksel işlemler olabilir, dosya işlemleri olabilir.
+
+18
+00:19:26,284 --> 00:19:35,243
+Komutları yazıp, derleyip bir yerde saklanırdı. Yani bellek de sıkıntılı olduğu zamanlar.
+
+19
+00:19:38,387 --> 00:19:43,887
+İderlenmiş kısımlar daha sonra Include yöntemiyle projeye dahil edilirdi.
+
+20
+00:19:45,887 --> 00:19:51,387
+İşte kendi data structure'nizi oluşturabiliyorsunuz. Tekrar kullanabilmek için.
+
+21
+00:19:51,887 --> 00:19:59,887
+Özellikle header file'ları biz burada fonksiyonların prototiplerini saklamak için.
+
+22
+00:19:59,887 --> 00:20:05,387
+Data structure definition, yani structure'ın definition'ları oluyor ya, type def ile.
+
+23
+00:20:05,652 --> 00:20:15,251
+Makro definition'larını saklamak için, global dataları saklamak için kullanıyoruz. Header file'ler .hedge uzantılı.
+
+24
+00:20:15,251 --> 00:20:29,052
+İşte stdio, standard input-output dosyası gibi. Bu programınızdakilerden bir tanesi de main fonksiyonunuzu bulunduran dosyanız oluyordu.
+
+25
+00:20:30,708 --> 00:20:34,028
+Ve bu ilgili dosyaları Inculti'ye ekliyorduk.
+
+26
+00:20:37,844 --> 00:20:44,884
+Bu ilgili C dosyası ve header dosyasının birbiriyle aynı isimde olması gerektiğini zaten biliyoruz.
+
+27
+00:20:46,004 --> 00:20:52,163
+Bu include kusüpte de iki tane form var. Bir tanesi bunu dönemin başında konuştuk.
+
+28
+00:20:53,644 --> 00:20:57,044
+Tırnakla, birisi de büyüktür, küçüktür ile yapılan bir şey.
+
+29
+00:20:58,683 --> 00:21:03,284
+include için ne yapıyor sizin çalıştığınız dosyada ve bütün dosyalar içerisinde
+
+30
+00:21:03,988 --> 00:21:12,807
+Burada yazdığınız header file dosyayı arıyor. Eğer böyle yazarsak bulunduğunuz klasörün altındaki yere bakıyor.
+
+31
+00:21:17,076 --> 00:21:30,096
+Şimdi olay şu. Benim bir mainc programım var. Bu mainc içerisinde bir main metodum var. Bir böyle fonksiyon kullanmışız. Yani printf gibi bir fonksiyon düşünebilirsiniz.
+
+32
+00:21:30,096 --> 00:21:38,576
+Bu fonksiyonu kullanabilmeniz için şu include ettiğiniz say.h dosyasına gidip bakılıyor.
+
+33
+00:21:42,324 --> 00:21:50,764
+Bir definition yapmış num diye. Bu definition'a eğer tanımlanmadıysa sil demiş.
+
+34
+00:21:52,824 --> 00:21:59,984
+Daha sonra bir değişken ataması yapılmış ve endifle burayı kapatmış. Burada bir ön işlemci var. Bir de fonksiyon prototibi var.
+
+35
+00:22:01,004 --> 00:22:07,403
+Bu dosyayla birlikte say hello metodunu, şimdi bu da header file'i alıyor.
+
+36
+00:22:07,827 --> 00:22:26,008
+sayHello metodu buradan çağrılıyor ve bizim programımız bu şekilde gidiyor. Bu metotla ilişkilendiriliyor. Ne vasıtasıyla? Şuradaki şey vasıtasıyla. Bakın bu da bunu inklut etmiş. Bu da bunu inklut etmiş. Böyle bir fonksiyon çağrısı var.
+
+37
+00:22:34,195 --> 00:22:59,455
+Bu sayHello file dosyasını derliyoruz. Bu derlenince bu da kendisi zaten derlenmiş olacak. İkisi de çünkü bu header file çalıştırıyor. Sonra bunlardan oluşan obje file'ları, main'den oluşan main.o, sayHello'dan oluşan sayHello file.o'yu ikisini bağlayıp tek bir main.p
+
+38
+00:23:00,211 --> 00:23:13,872
+Dosyası üzerinde birleştirebiliyoruz. Olay, özeti bu. Şimdi şunu düşünelim arkadaşlar. Bunun gibi 20-30 tane dosyanız var.
+
+39
+00:23:15,211 --> 00:23:20,072
+Her denemenizde, bunların hepsini de siz yazıyorsunuz. Hiçbiri değerlenmiş bir şey değil.
+
+40
+00:23:21,211 --> 00:23:26,892
+Her defasında bu 20-30 taneyi uzun uzun yazıp tekrar tekrar değerlemek yerine
+
+41
+00:23:27,700 --> 00:23:39,700
+Bu değerlemenin de kodunu yapan makefile işlemi var. Bu bize bir defa değerleme ile alakalı kodu yazıp, o ilgili kodu çağırmayı sağlıyor.
+
+42
+00:23:39,700 --> 00:23:53,196
+Şimdi baktığımızda, makefile kendisine verilen parametrelerle bir defa değerlenmişse ve değiştirilmemişse o dosyayı tekrar değerlemeye gerek duymuyor.
+
+43
+00:23:55,059 --> 00:24:08,539
+Örneğin sizin projeniz şu header'lardan ve C dosyalarından oluşsun. Burada bir dependency vardı. Yani şurada bir şey değiştirdiğinizde projenin tamamının değişeceğini biliyoruz.
+
+44
+00:24:08,539 --> 00:24:17,387
+Yani bunlardan bir tanesi değişti, projenin tamamı değişecek. Bu sürekli şuradaki proje 1 için...
+
+45
+00:24:17,619 --> 00:24:26,839
+Neler derlenecek? Yani GCC önce main'i derle, ondan sonra diğerini derle. Uzun uzun yazmayı gerektirecek bir şeyi ortaya atar.
+
+46
+00:24:27,919 --> 00:24:33,619
+Bunun yerine bu yazdığımız kısmı da bir defa yazıp her defasında onunla uğraşmayacağız.
+
+47
+00:24:33,619 --> 00:24:39,679
+Burada Dependence'nin nasıl çalıştığını kısaca konuşalım.
+
+48
+00:24:44,564 --> 00:25:04,064
+İçerisinde bir bug tespit ettiniz şu fonksiyonu, io.se içerisinde. Gittiniz ne yaptınız? Bunu edit yaptınız. Edit yaptıktan sonra bu edit yaptığınız kısımdan etkilenen ne olacak? Bunlar etkilenecek. Bunlardan da projenin geneli etkilenecek. Bunu biliyoruz.
+
+49
+00:25:08,852 --> 00:25:15,332
+Güncellenmesine ihtiyaç duyacağız. Bu bir büyük problem. Bir saniye arkadaşlar.
+
+50
+00:25:45,395 --> 00:25:51,395
+Ve böyle bir dependense durumu ortaya çıkıyor. Burada olduğu gibi.
+
+51
+00:25:53,975 --> 00:26:08,395
+Örneğin, data.se'de yapılan bir değişiklik veya data.se'de yapılan değişiklik kimleri etkiliyor? Ondan sonra main'de yapılan kimleri etkiliyor? Bunun bir dependense ağaç yapısı şeklinde çıkartılabilir.
+
+52
+00:26:08,395 --> 00:26:13,387
+Ve problemli bir şey. İşte bundan kaçınmak için.
+
+53
+00:26:13,875 --> 00:26:20,675
+Macfile kullanılıyor. Örnek bir Macfile.
+
+54
+00:26:32,307 --> 00:26:58,827
+Şu mesela örnek bir Make Finder arkadaşlar. Şöyle diyelim. Proje dediğimiz şey neleri oluşturacak? Şöyle yapalım önce. Buradaki bağımlılık durumuna göre yazıyoruz. Proje dediğimiz şey işte data.objet dosyası, main.objet dosyası, io.objet dosyasından oluşacak.
+
+55
+00:26:59,700 --> 00:27:16,579
+Gcc derleyicisine diyeceğiz ki, data.o'yu, main.o'ya, o'ya, io.o'yu al. Bunları bir hale getir ve proje bir executable file'ini oluştur diyoruz. Bu data.o'nun da nasıl oluşacağını şurada tanımlıyoruz.
+
+56
+00:27:27,923 --> 00:27:38,523
+dosyadır. Main.o için aynı şey ve io.o için aynı şey olacağını söylüyoruz. Şurada yazılanlar önce burada tanımlanıyor arkadaşlar.
+
+57
+00:27:39,824 --> 00:27:47,884
+Ve biz artık kodu derlerken sürekli bunu yazmayacağız. Ne yapacağız? Sadece bu makefile'in kendisini çağıracağız.
+
+58
+00:27:47,884 --> 00:27:51,743
+Burada bazı yine kuralları var.
+
+59
+00:27:55,892 --> 00:28:06,771
+Mac komutuyla bu yazdığımız Mac file'in adını çağırıyor. Aslında bizim devsi veya farklı idelerde aynı şeyi yapıyorlar.
+
+60
+00:28:06,771 --> 00:28:09,771
+Şimdi şu örneği açacağım.
+
+61
+00:28:33,364 --> 00:28:42,963
+Burada arkadaşlar genellikle Makefile ismi kullanılır. Hani böyle bir gelenekselleşmiş bir durum vardır.
+
+62
+00:28:44,403 --> 00:28:46,956
+Şuradan açayım şu örneği bir saniye.
+
+63
+00:29:31,443 --> 00:29:33,443
+Devsi de yaparken şey,
+
+64
+00:29:35,443 --> 00:29:37,443
+şey görmüyordu orada.
+
+65
+00:30:04,531 --> 00:30:10,923
+Bunu çağıran bir main failim de var da. Onu kullanmadım. Şunudur acaba?
+
+66
+00:30:14,003 --> 00:30:14,923
+Kudu ili?
+
+67
+00:30:29,076 --> 00:30:36,236
+Şu arkadaşlar bu C dosyası ile veya header dosyası ile ilişkili.
+
+68
+00:30:43,700 --> 00:30:46,519
+Öncelikle bunları terliyoruz.
+
+69
+00:30:51,028 --> 00:30:54,887
+Burada da devsinin azizliğine uğruyoruz.
+
+70
+00:30:58,963 --> 00:31:02,563
+Herhalde bunu proje olarak açmam gerekiyordu. Yeni bir proje diyelim önce.
+
+71
+00:31:04,563 --> 00:31:07,443
+Console Application C Project OK.
+
+72
+00:31:10,364 --> 00:31:12,563
+Desktop'da bir klasör seçelim.
+
+73
+00:31:25,971 --> 00:31:36,851
+Şimdi şurada bir C dosyam var. Buna bir dosya ekleyeceğim. Bu H dosyası olsun.
+
+74
+00:31:49,523 --> 00:31:55,623
+Boz dedim. Bir dosya daha oluşturuyorum. Bunu da salute.see.
+
+75
+00:32:11,667 --> 00:32:11,947
+Bye.
+
+76
+00:32:18,740 --> 00:32:28,980
+Bakın olay şu arkadaşlar. Makefile processor diye gitti. Make.exe dosyasını çaktı. Burada bir makefile oluştu.
+
+77
+00:32:28,980 --> 00:32:32,820
+Şu şeyi de şuraya getireyim.
+
+78
+00:32:37,491 --> 00:32:55,491
+Proje klasörünün altında obje file'leri var. Obje file'lere baktığımızda, bir kısmı asmd'ye dönüştürülmüş, bir kısmı dönüştürülememiş. Daha dönüştürülmeyi bekleyen şeyler göreceğiz. Bu önemli değil.
+
+79
+00:33:02,548 --> 00:33:08,688
+Bu projenin Makefile'nin içeriğine bakıyor. Bu Makefile işi çok uzun ve detaylı bir konudur.
+
+80
+00:33:10,488 --> 00:33:16,887
+Normalde dedik ya, proje diye bir bölüm olacak. O projeyle alakalı libraryleri bağlayacak.
+
+81
+00:33:17,387 --> 00:33:26,867
+Şurada Main.c'nin ne oluşturacağını, Salute.o'nun, Salute.c'nin ne oluşturacağını hepsini burada kendisi belirliyor.
+
+82
+00:33:27,188 --> 00:33:34,968
+Ayrıca bazı optimizasyonla alakalı, kod optimizasyonla alakalı mütüphaneler, objeler vs. şeyler birleştiriyor.
+
+83
+00:33:35,827 --> 00:33:45,847
+Yani şunların hepsi bir değişken gibi düşünün. İşte CPP G++ üzerinden, C normal standard C GCC üzerinden değerlenecek.
+
+84
+00:33:46,608 --> 00:33:49,708
+Windows diye bir program varmış, bu bununla bağlanacakmış.
+
+85
+00:33:50,420 --> 00:34:11,780
+Dev C++'nın Mac File yapısı bu şekilde. Daha bunun flag'leri var, optimizasyon flag'leri var, derleyici ayarları var, hangilerini nereden getireceğine bakıyor. Biz her programı derleye bastığımızda veya çalıştıra bastığımızda arkada olan şeyler bu. Mesela önceki dosyaların silinmesiyle alakalı bölümler falan da var burada. Böyle bir olay oluyor.
+
+86
+00:34:18,099 --> 00:34:43,899
+Önce macfile oluştu. Macfile'den bu macfile win oluştu. Bu win dosyası açılıyor. Açıldıktan sonra bu C dosyası olduğu için C ile alakalı bölümler işletiliyor. Ve derleme sonuçları görüyoruz. İşte bunu run diyelim. Ne olacak? Gidecek. İşte bu mesajı ne yapacak? Yazacak. Yazarken de yaptığı şeyini öncelikle salat.h'ı buraya getiriyor. Bu h dosyası.
+
+87
+00:34:44,436 --> 00:35:08,436
+Aynı zamanda işte şu C dosyasında bu dosya tarafından da çalışıyor. Bu ilgili dosya, bu fonksiyon gelecek buradan çalışacak. Yapı bu. Çok uzun projelerde dediğim gibi ne olur? Bu makefile bir defa yazılır ve derleme de kullanılır. Özellikle yani...
+
+88
+00:35:09,972 --> 00:35:15,312
+Eski işletim sistemlerinde veya gömücü sistemlerde bu hala kullanılıyor mu? Evet, kullanılıyor.
+
+89
+00:35:19,443 --> 00:35:37,724
+Mesela yine bu Macfile içerisinde makro tanımlanabiliyor. Bu da Macfile'in programlanılması ile alakalı bir şey. Diyoruz ki şöyle obje diye bir değişkenimiz var. Bu objeye bir makro gibi düşüneceğiz. Nerede o obje görürsen, bakın C kodundan bağımsız, herhangi bir şekilde noktalı virgül falan yok.
+
+90
+00:35:47,251 --> 00:35:54,251
+Daha sonra bu alanlar birleşecek, projenin dosyası olacak. Biraz daha kısaltmaya yönelik işlemler var.
+
+91
+00:35:54,251 --> 00:36:01,251
+Örneğin, biraz daha makefile kısa tutabiliyorsunuz bu sayede. Anlaşıldı mı arkadaşlar?
+
+92
+00:36:01,251 --> 00:36:09,228
+Şimdi bunun slide'larını paylaşırım. Buradaki kodları isterseniz kullanabilirsiniz. Bu nerede karşınıza gelir?
+
+93
+00:36:09,907 --> 00:36:36,327
+Valla böyle gömülüş sistemle alakalı veya low level programlamanın yapıldığı bazı yurt dışında yerler var. Bu konulara önem veriyorlar. Yani her şeyiyle kendi yazdığım bir program olacaksa burada bu önemli. Bizden mezun olup işte [öğrenci]'e giden bir arkadaşımız. Bunlarla çok uğraşıyoruz hocam dedi. O zaman karşınıza gelir.
+
+94
+00:36:38,612 --> 00:36:52,952
+Bir de yurt dışında yüksek lisans doktora yapmak isterseniz, bir programın gerçek anlamda derlenmesi ve programın sonucunun inşa edilmesiyle alakalı adımları,
+
+95
+00:36:53,972 --> 00:36:59,452
+adım adım, hiç böyle bir şey atlamadan, yani derleme aşaması nasıl oluyor, bağlama aşaması nasıl oluyor,
+
+96
+00:36:59,452 --> 00:37:04,452
+bunları hiç atlamadan bir anlatın diye sorabilirler. O zaman da...
+
+97
+00:37:04,916 --> 00:37:06,716
+Karşınıza böyle bir şey gelecektir.
+
+98
+00:37:09,276 --> 00:37:11,756
+Şimdi şöyle devam edelim.
+
+99
+00:37:14,195 --> 00:37:23,936
+Pre-prosesörlerle de alakalı. Ben bunu dönemin başında anlattığımı hatırlıyorum da. Hızlıca bazı yerleri tekrar özetlemek istiyorum.
+
+100
+00:37:23,936 --> 00:37:31,316
+Özellikle şeyde kullanılabilir. Pre-prosesör makrolar projede de kullanabilirsiniz. İyi olur.
+
+101
+00:37:34,996 --> 00:37:42,676
+Şimdi C Pre-Prosesörleri program çalışmadan önce kodlanmış bölümler. Bunu biliyoruz.
+
+102
+00:37:43,436 --> 00:37:47,036
+Burada genellikle biz define ve include kullandık.
+
+103
+00:37:48,556 --> 00:37:56,235
+Fakat bunların ekstra komutları var. Bunların bir kısmını gördüğümüzü tekrar edeyim ama bazılarını muhtemelen yine görmedik.
+
+104
+00:37:56,756 --> 00:37:59,836
+İlk defa göreceğimiz bölümler var.
+
+105
+00:38:01,844 --> 00:38:06,704
+Makro dediğimiz şey arkadaşlar, fonksiyon benzeri bir yapıydı.
+
+106
+00:38:07,484 --> 00:38:17,963
+Fonksiyondan farkı, fonksiyon çağrısı geldiğinde biz fonksiyonun bulunduğu yere jump yapıyorduk. Yani assembly'deki karşılığa oraya gidiyorduk.
+
+107
+00:38:19,003 --> 00:38:27,692
+İşte burada bazı bilgiler nerede saklanıyordu? Stack bölgesinde saklanıyordu. Özellikle program counter, flag register...
+
+108
+00:38:28,052 --> 00:38:49,372
+O anki bulunduğumuz programın değişkenlerinin değerleri bunlar siteye atılıyor. Bunun belli avantajları olduğu gibi bu siteye atma işi birazcık dezavantaj. Çünkü sürekli bir fonksiyon çaresi yapmak, sürekli dallanma yapmak demektir. O siteye kopyalama süreci ve tekrar geri dönme süreci birazcık uzayabiliyor.
+
+109
+00:38:54,612 --> 00:39:20,152
+C'de makro yazarken normal noktalı virgül kullanmadan birden fazla satırda makro yazılabiliyor. Eğer bir makronuz devam edecekse sonuna bir slash backslash ekleyip bunu devam ettirebiliyorsunuz. İşte burada bir string üzerinde bir işlem yapılmış, atama işlemi. Böyle birden fazla satırı kapsayan bir şey oluşturulmuş ve sonuna noktalı virgül koymuyoruz.
+
+110
+00:39:21,076 --> 00:39:24,476
+Bu önemli. Bir atama yaparken eşittir de koymuyoruz.
+
+111
+00:39:26,476 --> 00:39:28,796
+Ve bu bir arkadaşlar substitution'dır.
+
+112
+00:39:28,796 --> 00:39:41,296
+Ben bunu genelde şöyle özetliyorum. Nasıl bir fonksiyon çağrıldığında fonksiyon çağrıldığı yere gidiyorsak, makro ifadesi yazıldığında, yani çağrım yapıldığında,
+
+113
+00:39:43,603 --> 00:40:08,583
+O call işlemi, biz ona gitmiyoruz, onun bulunduğu, o bizim bu istediğimiz yere geliyor. Yani nerede biz bufferland 512 diye bir şey kullansak, bufferland diye bir şey kullansak, onun yerine bu kopyalanıyor. Aslında bir expansion'dır bu, genişletmedir. Program derlendiğinde, programımızın yazılmış haliyle derlenmiş hali arasında çok ciddi fark bulundur.
+
+114
+00:40:09,844 --> 00:40:28,623
+İşte bu affilen diye bir şey gördü. 512 veya bunu çok daha uzun işlemler içinde kullanabilirsiniz. Bir dosyanın açılmasıyla alakalı komut yazacaksınız. Fopen, dosya adı verdiniz falan. Nerede dosya açma ile alakalı bir işlem yapsanız bu yer değiştirecektir. Substation yapılacaktır.
+
+115
+00:40:30,724 --> 00:40:33,923
+O den de bazen dezavantajlar da oluyor.
+
+116
+00:40:35,411 --> 00:40:42,251
+Özellikle biz kendi programlarımızda bazı isimlendirmeler veya bazı kısaltmalarda bunu çok yapıyoruz.
+
+117
+00:40:42,411 --> 00:40:46,692
+İşte buffer size 256 olsun gibi böyle bir şey var.
+
+118
+00:40:48,311 --> 00:40:58,411
+Bunu fonksiyon benzeri bir makro haline getirmek için de makron adını verdikten sonra alınacak argümanları parantezde normal bir fonksiyon gibi alıyoruz.
+
+119
+00:40:58,411 --> 00:41:01,771
+İşte araya virgül de ekleyerek karşısına da bir boşluk bırakıp.
+
+120
+00:41:02,003 --> 00:41:13,884
+Macron'un gövdesini yazıyoruz. Burada çok fazla yapılan hata, işin sonunda noktalı virgül koymak birinci hatamız.
+
+121
+00:41:18,867 --> 00:41:23,568
+İkinci hatamız, makro definition'da eşittir kullanmak. Bu bir şekilde çözülebilir.
+
+122
+00:41:25,087 --> 00:41:31,668
+Üçüncü hatamız, side effect dediğimiz hatada, gelen parametreleri güvenli bir şekilde almak için,
+
+123
+00:41:33,028 --> 00:41:38,867
+şu parantezi burada kullanıyoruz ama şurada makronun gövdesinde her bir değişkeni,
+
+124
+00:41:38,867 --> 00:41:42,208
+kendi içerisinde ayrı parantezi almak için kullanmamız gerekiyor.
+
+125
+00:41:43,347 --> 00:41:47,228
+Bunun nedenini birazdan side effect kısmına girince göreceğiz.
+
+126
+00:41:47,347 --> 00:41:54,447
+Yani buna dikkat edeceğiz, buna dikkat edeceğiz. Şuradaki şu parantezlerin eklenmiş olmasına dikkat edeceğiz.
+
+127
+00:41:56,947 --> 00:42:05,648
+Örneğin iki sayıyı ikiye katlayan bir şey yapılmış. Bunun çağrımı kod içerisinde böyle olacaktır.
+
+128
+00:42:06,260 --> 00:42:30,720
+Bu kod içerisinde böyle olunca ne demek? Substitution. Biz buraya gitmeyeceğiz arkadaşlar. Şurada şöyle bir ifade genişletilecek. 5 artı 5 hesabı yapılacak. Bu hesabın sonunda j'in içerisine atılacak. Bunu iki buçuk içinde kullanabiliyoruz. Herhangi bir tip kısıtlaması burada yok tanımlama yaparken.
+
+129
+00:42:33,331 --> 00:42:40,751
+İki sayının hangisinin büyük olduğunu mesela bulan bir program, yani bir makro definişin hangisinin küçük olduğunu.
+
+130
+00:42:42,211 --> 00:42:50,112
+Bu da dikkat edin şu gelen parametreler, söylenen parametreler bu koruma altına alınmış.
+
+131
+00:42:51,152 --> 00:42:51,771
+Bu önemli.
+
+132
+00:42:53,811 --> 00:43:00,451
+Eğer ben makroyu şu şekilde çağırsam a-1, a'nın değeri de 3 gibi bir şey olsun.
+
+133
+00:43:01,268 --> 00:43:29,099
+Makro çağrılması demek oraya 3-1, 2 gidecek demek değil. Şu şekilde gidiyor. 3-1 gidiyor. 3-1 gidiyor. Eğer ben burada 2 ile çarpmayı, bu örnekte, şu toplama örneğinde yapınca bunun bir etkisini görmeyiz. Ne olacak? Yani burada hepsi eşit öncelikli operatörler olduğu için çok bir problem olmayacak. Ama arada bir çarpı olsaydı...
+
+134
+00:43:29,492 --> 00:43:40,332
+O zaman ne olurdu? 3-1 çarpı 3-1. Önce şuradan bir eksi 3 yapılacaktı. Bu eksi 3'ler artı 3'te girecekti. Sonuç eksi 1 kalacaktı.
+
+135
+00:43:40,332 --> 00:43:49,912
+İşte böyle bir side efekti önlemek için bunların gelen parametrelerin parantez içerisinde gönderilmesi gerekiyor.
+
+136
+00:43:54,931 --> 00:44:09,131
+Farklı örnekler. Sade efekt dediğimiz şey şu. Ben min a,b diye bir şey çağıracağım. Bir makro tanımladım. Bunu x++ ve y diye çağırdığımda ne olacak?
+
+137
+00:44:18,516 --> 00:44:24,395
+İfadeleri yazmak için işte A ve B'lere, yani bütün parametrelere şey ekliyoruz.
+
+138
+00:44:25,855 --> 00:44:26,935
+Parantez ekliyoruz.
+
+139
+00:44:28,115 --> 00:44:29,916
+Avantaj ve dezavantajlarına bakalım.
+
+140
+00:44:31,315 --> 00:44:36,155
+Makro genel olarak fonksiyondan daha hızlıdır.
+
+141
+00:44:36,155 --> 00:44:41,275
+Çünkü fonksiyon çağrımı ile alakalı sıkıntıdan bizi kurtarıyor.
+
+142
+00:44:43,251 --> 00:44:54,351
+Herhangi bir tip kısıtlaması yoktur argümanlar üzerinde. Yani integer için, float için, karakter için veya bir struct için bunu kullanabiliyorsunuz.
+
+143
+00:44:57,619 --> 00:45:20,619
+Normalde bir jenerik bir fonksiyon, bütün veri tipleri için yapmak pek mümkün olmuyor. Hani Boyd pointerlarla falan belki bu kısmen yapılır da. Fakat bunu makrolarla daha kolay yapabilme imkanı var. İşte bir şeyi print edeceksiniz. Kendisine gönderilen parametreyi...
+
+144
+00:45:20,884 --> 00:45:26,003
+Void pointer'lar vantıyla falan yapabilmek biraz daha makrolarla mümkün hale gelebiliyor.
+
+145
+00:45:26,764 --> 00:45:29,083
+Dezavantajlarına baktığımızda,
+
+146
+00:45:29,583 --> 00:45:32,403
+Şimdi fonksiyon bir defa değerlenir.
+
+147
+00:45:33,164 --> 00:45:35,724
+Program çalışmadan önce.
+
+148
+00:45:36,244 --> 00:45:38,804
+Siz değerlenmiş kodu çağırırsınız.
+
+149
+00:45:39,824 --> 00:45:43,403
+Dolayısıyla herhangi bir expansion gerçekleşmez.
+
+150
+00:45:43,664 --> 00:45:45,204
+Ama makrolarda
+
+151
+00:45:45,492 --> 00:45:51,892
+Her makro gövdesinin çağrılması tekrar bir kopyala yapıştırdığı gibi bir durum oluyor.
+
+152
+00:45:52,652 --> 00:46:01,372
+Eğer argümanlarınız burada side effect içerecek bir şekilde tasarlanırsa, bazı problemlere neden oluyor.
+
+153
+00:46:05,852 --> 00:46:13,132
+Makrolardaki expansion birazdan problem olabilen bir durum. Normalde fonksiyonlarda bir expansion yok.
+
+154
+00:46:15,956 --> 00:46:27,956
+Makrolar argüman tiplerini kontrol etmiyorlar. Sadece argümanların sayısını kontrol ediyorlar. Sizin gönderdiğiniz argümanların doğruluğu sizin sorumluluğunuzda.
+
+155
+00:46:28,956 --> 00:46:30,655
+Sinin genelinde olduğu gibi.
+
+156
+00:46:34,547 --> 00:46:50,507
+Bu makrolar üzerinde doğrudan debug yapmak, özellikle adım adım, step by step çalıştırmak zor bir şey. Çünkü doğrudan çalışır. Herhangi bir şekilde alt adımları analiz etmek mümkün değildir. Onun için bu da bir dezavantaj olarak söylenebilir.
+
+157
+00:46:51,467 --> 00:46:57,347
+Genel yapılan hatalar işte şu çok yapılıyor. Buna dikkat edelim.
+
+158
+00:47:00,596 --> 00:47:20,815
+Bu çalışır mı? Çalışır. Nasıl çalışır? Böyle bir şey yazdığınızda j eşit eşittir, yüz ifadesi olur, ortaya çıkar. Buradan bir initialization olmaz. Buradan bir veya sıfır gibi değer döner, programınız çalışmaya devam eder.
+
+159
+00:47:27,443 --> 00:47:29,844
+Programımız devam eder. Onun için dikkat edeceğiz.
+
+160
+00:47:31,764 --> 00:47:38,183
+Diğer şey de şudur. Böyle bir makro tanımladınız. Herhangi bir şekilde parantez yapmadınız bunlara.
+
+161
+00:47:39,463 --> 00:47:43,783
+Bu parantezi yapmadınız için şunu değerlendirmek istiyorsunuz.
+
+162
+00:47:44,683 --> 00:47:52,923
+Olacak olay işte square 3 artı 4. Ne olacak? 3 artı 4 çarpı 3 artı 4. Ne oluyor? 12, 16.
+
+163
+00:47:53,715 --> 00:48:04,655
+19 mu oluyor? 19, işte öyle 38 gibi bir şey buluyorsunuz. Halbuki siz 2 çarpı 7'nin karesini bulacaktınız. İstenen sonuca gidememe durumu var.
+
+164
+00:48:06,755 --> 00:48:10,515
+Şimdi şu makro üzerinde bir şey sorayım.
+
+165
+00:48:17,396 --> 00:48:25,516
+İki sayıdan en küçüğünü bulma. Bunu üç sayı için uyarlar mısınız? Çet ekranına yazın bakalım.
+
+166
+00:48:43,987 --> 00:48:46,891
+Nasıl bir şey olur? Görelim.
+
+167
+00:49:17,907 --> 00:49:18,927
+Yok, yazabilen.
+
+168
+00:49:26,708 --> 00:49:40,268
+Ali yaptığını doğru ben onu yapacaktım da. Makronun çağrılmasını sen uyarlı şey yaptın, kullandın yalnız. Güzel, zekice bir şey.
+
+169
+00:49:42,328 --> 00:49:53,068
+Ali'nin yaptığı arkadaşlar, aslında şunu kullanarak, istediğiniz yerde kullanacağınız makro definition'ı
+
+170
+00:49:54,068 --> 00:50:17,068
+Genişletmek. [öğrenci]'in yaptığı doğru. Uzun bir şekilde bunu definition ile makro definition ile üç sayı için kullanıyor. Ama bunun üç sayı için olanı var, dört için olanı var. Onun yerine, güzel, tamam yanlış demiyorum. [öğrenci]'in yaptığı olması gereken zaten sorum oydu. Bu uzar gider arkadaşlar. Bunun yerine...
+
+171
+00:50:18,579 --> 00:50:44,539
+Zaten makro definition'ı kendi içerisinde bu kodu işte minimum a, minimum b virgül c. Bu minimum b virgül c için şunu getirip buraya kopyalayacak. Aynısını minimum a virgül şuradaki şey için de bunu getirip kopyalayacak. [öğrenci] yazdığına geri geleceğiz. Onu bulacağız. Yani ondan sonra bunu isterseniz 3 sayı için kullanın.
+
+172
+00:50:45,204 --> 00:50:54,564
+Yani isterseniz 4 sayı için mesela minimum a virgül b, minimum c virgülde, şurada da bir minimum.
+
+173
+00:50:56,184 --> 00:51:09,684
+4 sayı için 4 sayıdan en küçüğünü bulmak. Burada biliyoruz ki hepsi birbirine replacement olacağı için, substitution olacağı için en basit halini yazmak.
+
+174
+00:51:10,900 --> 00:51:33,420
+ile şunu yazmak, yani bu dört sayı için gerekli olanı yazmak aslında farkı yok. Çünkü kopyalama yapılıyor zaten. Normalde size örgün zamanda normal sınav yapsaydık, ben basit bir makro veriyorum.
+
+175
+00:51:35,507 --> 00:51:40,107
+Bu makro çağırımı yoluyla Substitution sonucunu yazınız.
+
+176
+00:51:40,887 --> 00:51:43,707
+Yani şunu verdim size.
+
+177
+00:51:44,728 --> 00:51:51,127
+Sonra [öğrenci]'nin yazdığını verdim. [öğrenci]'nin yazdığından [öğrenci]'in yazdığını üretebilmeniz gerekir.
+
+178
+00:51:51,627 --> 00:51:53,688
+Yani normal zamanda olsaydık.
+
+179
+00:51:55,728 --> 00:52:00,811
+Orada bazı hatalar yapılıyor. O hataları bakalım ne kadar öğrenmiş, orada test ediyorduk.
+
+180
+00:52:04,851 --> 00:52:30,791
+Macro Definition'ı remove etmek de mümkün arkadaşlar. Define ettiğiniz bir şeyi, eğer üzerinde değişiklik yapacaksanız, öncelikle undefine edip daha sonra redefine edebiliyorsunuz. Undefine ettikten sonra etmek için yapacağınız şey şu. Undefine minimum. Yukarıdaki definition'ı iptal edin. Daha sonra kendiniz define edebilirsiniz.
+
+181
+00:52:31,411 --> 00:52:46,391
+Bu built-in makroları konuştuğumuzu hatırlıyorum. Hangi satırdayız, hangi dosyadayız, saat kaç, tarih kaç, ondan sonra standard, ansı standardını sağlayıp sağlamadığını söylüyor. Bunları built-in makro olarak kullanalım.
+
+182
+00:52:47,531 --> 00:52:53,051
+Şu örneği de verdiğimizi hatırlıyorum. Bu slide da içerisinde var zaten. Bunu geçiyorum doğrudan.
+
+183
+00:52:55,603 --> 00:53:03,103
+Define Check diye bir makro tasarlanmış. Bakın, Definition burada devam ediyor.
+
+184
+00:53:03,804 --> 00:53:12,804
+If a eşittir b, a b'den farklıysa, fail diye bir fonksiyon. Makro içerisinden bir normal fonksiyonu çağıracakmışız.
+
+185
+00:53:13,304 --> 00:53:18,903
+Burada da a parametresi, b parametresi hangi dosyadan, kaçıncı satırdan bir şey.
+
+186
+00:53:19,403 --> 00:53:22,903
+Sonra da diyor ki, check failed in the file at line.
+
+187
+00:53:23,507 --> 00:53:43,307
+Received, Expected, alınan şu, beklenen şuymuş gibi. Böyle bir mesaj. Bu mesaj, bu bir fonksiyon. Ama bu fonksiyonu tetikleyen bir makro. Bu da yapılabiliyor mu? Yapılabiliyor. Örneğin x ve 0'ı check et dediğinizde ne yapıyorsunuz? Önce makroyu çağırıyorsunuz. Makro içerisinde fonksiyon çağırıyor. Aradaki diğer makrolar kullanılıyor.
+
+188
+00:53:46,195 --> 00:53:54,635
+Bu tarz projelerinizde, özellikle bizim verdiğimiz projede kullanmanız size hem kolaylık sağlar hem de çeşitlilik sağlar.
+
+189
+00:53:55,675 --> 00:53:59,516
+Şimdi derleme yaparken arkadaşlar Conditional Compilation da mümkün.
+
+190
+00:53:59,756 --> 00:54:01,556
+Yani belli şarta göre derle.
+
+191
+00:54:02,315 --> 00:54:08,715
+İşte define edildiyse ona göre derle, define edilmediyse önce define it öyle derle gibi.
+
+192
+00:54:09,235 --> 00:54:29,795
+Bazı opsiyonlar var. If, Else statement'ları normal kullandığımız, CD kullandığımız statement'lara benzer şartlı durumlar var. İşte burada if, Else if, Else ve End if. Yani bir switch gibi düşünün bunu. Switch'in ilk kısmı şu, sonra case kısımları bu, şu da default kısmı.
+
+193
+00:54:36,032 --> 00:54:37,792
+Söyleyeceğimiz bir yapı.
+
+194
+00:54:39,452 --> 00:54:43,692
+Burada ilk case'i yazıyoruz. Daha sonra diğer case'leri alt alta yazıyoruz.
+
+195
+00:54:44,012 --> 00:54:45,952
+Ve sonunda endif ile bitiriyoruz.
+
+196
+00:54:47,271 --> 00:54:47,851
+Şöyle bakalım.
+
+197
+00:54:51,731 --> 00:54:57,011
+Herhangi bir şekilde parantez kullanmaya gerek yok burada arkadaşlar.
+
+198
+00:54:59,411 --> 00:55:08,891
+Ayrıca herhangi bir şekilde parantezden, buradaki şart parantezinden başka bloklar arasında parantez kullanmaya da gerek yok.
+
+199
+00:55:08,891 --> 00:55:16,452
+Diyoruz ki Conditional Compilation'da x eşit eşit bir ise bunu undefined önce.
+
+200
+00:55:16,980 --> 00:55:31,579
+Sonra tekrar define et, sıfır olarak define. İki ise define edip tekrar üç olarak tanımla diyoruz. Değilse doğrudan hiçbir şey yoksa, tanımlanmamışsa doğrudan default y4 olarak tanımla.
+
+201
+00:55:32,860 --> 00:55:34,640
+Ve en sonunda da bunu bitiriyoruz.
+
+202
+00:55:40,211 --> 00:55:54,211
+Örneğin bir debug modunda, debug yaparken, eğer debug tanımlıysa, şuradaki işlemleri yap gibi böyle bir opsiyonla bunu yapabilirsiniz.
+
+203
+00:55:54,211 --> 00:56:07,211
+Bunun değerlenmesi ile alakalı bilgi alırken, şu debug parametresi var. Bunlar önceden çok sık kullanılıyor da şimdi o kadar çağırmıyoruz.
+
+204
+00:56:07,956 --> 00:56:32,316
+Şimdi if ve define it kısımlarını daha kısaltan if def, if and def, if not def şeyi var. Eğer test isminde bir makro tanımlanmışsa, doğru veya yanlış veya tanımlanmamışsa gibi ifadeler de şunlar da kullanılabiliyor.
+
+205
+00:56:33,235 --> 00:56:40,615
+Örneğin, if Defined Test tanımlıysa, this is a test yap, değilse this is not a test yap, böyle bir kontrol.
+
+206
+00:56:41,295 --> 00:56:46,155
+Bunu, if not Defined False tanımlanmamışsa, False'u tanımla.
+
+207
+00:56:47,395 --> 00:56:50,695
+Ayrıca bir Defined kullanma durumuna gerek yok.
+
+208
+00:56:51,456 --> 00:56:58,496
+Else if, False'u böyle bir şey yoksa, önce Undefined, sonra tekrar Defined demiş.
+
+209
+00:56:59,635 --> 00:57:09,235
+Bunlar daha kısaltan bazı değişiklikler. Include'u zaten konuştuk biraz önce. Satır kontrolü örneğini de yaptık.
+
+210
+00:57:11,415 --> 00:57:19,235
+Sonra şöyle baktığımda, Split Program ile alakalı burada aynı örnekler var arkadaşlar.
+
+211
+00:57:21,940 --> 00:57:30,519
+Bu iki slide'ı hemen hemen aynısı ama ben ikisini de yükleyeceğim ders kısmına. Bunlara bakarsınız.
+
+212
+00:57:39,443 --> 00:57:56,743
+Bazı flaglerle alakalı özel makrolar var da bunlara çok fazla biz girmiyoruz. Hangisiydi ya? Şu makefile dosyası çok uzun bir şeydir. Çok detaylı bir şeydir. Özellikle ileride çalışmak isterseniz makefilele alakalı şunlara şu iki kaynağa bakabilirsiniz.
+
+213
+00:58:04,083 --> 00:58:11,983
+Bir de benim anlatmam gereken bugünlük sınavınızda olduğu için çok fazla uzatmayacağım ama bir ara yapacağız. Aradan sonra da devam edeceğiz.
+
+214
+00:58:13,743 --> 00:58:17,583
+Şey kaldı, Bitwise işlemler kaldı. Ona da bakalım hızlıca.
+
+215
+00:58:19,003 --> 00:58:29,543
+Bitwise işlemler hem gömülü sistemlerde hem de bizim uygulamalarımızla karşılaştığımız bir operatörlerden oluşan genellikle işlemler kümesi.
+
+216
+00:58:32,403 --> 00:58:36,503
+Logic'de kullandığımız birçok operasyonu burada kullanabiliyoruz.
+
+217
+00:58:36,503 --> 00:58:47,823
+İşte ne vardı? Logic AND, Bitwise olarak tabii konuşuyorum. Ondan sonra AND or NOT, EXOR, bir de Rotate işlemleri.
+
+218
+00:58:49,303 --> 00:58:57,343
+Şunu genelde arkadaşlar üst olarak kullananlar var. Bu üst değildir. Buna dikkat edelim.
+
+219
+00:58:58,516 --> 00:59:06,756
+Sayılar üzerinde genellikle ne yapıyoruz? BitFiles işlemleri, logikteki işlemlerin sonuçlarını görmeye yönelik çalışıyoruz burada.
+
+220
+00:59:08,115 --> 00:59:14,556
+A eşittir 60, B eşittir 13'müş, C eşittir 0, X eşittir 30'muş. Bunların binary karşılıkları bu.
+
+221
+00:59:15,236 --> 00:59:25,496
+Şimdi 60'ın binary karşılığı doğrudan bu da, integer olunca doğrudan bu değil. Çünkü integer dediğimiz şey 4 byte olduğunu kabul edelim.
+
+222
+00:59:26,068 --> 00:59:28,888
+Bunun 4 byte önünde neleri var? Sıfırları var.
+
+223
+00:59:29,528 --> 00:59:32,088
+30 dediğimiz şey artık
+
+224
+00:59:32,528 --> 00:59:35,448
+tabi burada sign it olarak konuşacağız.
+
+225
+00:59:36,048 --> 00:59:42,448
+Bir sürü kaç bytes ise bir sıfırlar ve geri kalan sıfır biriler karışımından oluşuyor.
+
+226
+00:59:43,468 --> 00:59:44,748
+Buna dikkat edelim.
+
+227
+00:59:44,748 --> 00:59:47,068
+Şimdi şu ifade
+
+228
+00:59:47,308 --> 00:59:48,848
+ent yapma işlemidir.
+
+229
+00:59:48,848 --> 00:59:50,908
+Ent yaparken biliyorsunuz
+
+230
+00:59:51,668 --> 00:59:53,708
+herhangi bir ifadede
+
+231
+00:59:54,420 --> 00:59:59,380
+Bütün değerler 1 ise ancak sonuç 1 elde ediyordu. Peki burada bu işlem nasıl olacak?
+
+232
+01:00:01,220 --> 01:00:09,500
+İşte 24 ile 17'yi logic end yapalım.
+
+233
+01:00:10,940 --> 01:00:12,559
+Arkada olan olay şudur.
+
+234
+01:00:15,240 --> 01:00:19,480
+2 üzeri 16, 1 olur. 2 üzeri 4, 16'dan 1 olur.
+
+235
+01:00:20,340 --> 01:00:36,019
+Şu 2 üzeri 3, 8'den 1 olur. Geri kalanlar 0'dır. Bunun 24'ün karşılığı bu. 17'ye baktığımızda bu 0 olacak. Bu 1 olacak. Bu da 17.
+
+236
+01:00:37,240 --> 01:00:41,420
+Bunu AND yapmak ne demek arkadaşlar? Karşılıklı olarak bitlere bakıyoruz.
+
+237
+01:00:42,420 --> 01:00:54,879
+Eğer ikisi de bir ise sonuç bir. Diğer durumdan 0, 0, 0, 0, 1 ve 0. Sonucumuz ne olacak burada? Ne göreceğiz? 8 göreceğiz değil mi? 1, 2, 4, 8.
+
+238
+01:00:58,059 --> 01:01:03,279
+Printf ile bunu bastırsak bunu göreceğiz. Bunu or yaptığımızda or işlemi yine karşılıklı olarak gelecek.
+
+239
+01:01:11,251 --> 01:01:15,251
+Bir dakika, şöyle olacak.
+
+240
+01:01:17,251 --> 01:01:27,251
+16, şöyle. Böyle olunca da sonucumuz 8 değil, 16 olacak. Teşekkür ederim.
+
+241
+01:01:28,251 --> 01:01:32,251
+Or yaptığımızda, karşılıklı bitlerin yine durumlarına bakıyoruz.
+
+242
+01:01:32,251 --> 01:01:36,108
+Yani orada şu, şöyle olacak. Tek çizgi.
+
+243
+01:01:37,043 --> 01:01:57,684
+İfin içerisindekilerle karıştırmayın arkadaşlar. Bunlar iki tane Conditional Statement'ın sonuçlarını yapıyor. Burada bitler, bit bazında bu işi yapıyoruz. Bu bir, bu sıfır, bu sıfır, bu bir, bu da bir. Bunun karşılığı nedir? 24, bir de buradan gelecek. 25 olacak herhalde.
+
+244
+01:02:05,235 --> 01:02:32,395
+Nedir diyeceğiz. Sonuç 0, farklıysa sonuç 1. Şurada, şu da logic olarak 1'e tümleyenini alıyor. Bu da çok rahat bilinebilecek, halledilecek bir şey. Rotate işlemi var. Rotate işlemi bir anlamda ikiye çarpma veya ikiye bölme gibidir. Eğer siz bitleri sola ötelerseniz, şuradaki operatörle
+
+245
+01:02:33,012 --> 01:02:47,412
+Bunu ikiyle çarpmış olursunuz. Sağ ötelerseniz ikiye bölmüş olursunuz. Ötelemede olan olay da şudur. Örneğin a eşittir 5 diyelim. Bunun bahaneleri karşılığı şudur.
+
+246
+01:03:01,364 --> 01:03:12,943
+4 byte'e kadar 0'lar var. Bunu öteleyince 0 ve 1'ler bu tarafa doğru gidiyor. 0, 1, 0, 1, önüne iki tane 0 koyalım. İşte ne oldu? Burada 10 olduğunu göreceğiz.
+
+247
+01:03:13,724 --> 01:03:23,724
+Değil mi? Yeni önünde geri kalanlar 0. Ben önüne iki tane 0'ı niye ekledim? Çünkü bunlar eklenince, sola doğru kayınca bulundukları yerlere 0 gelecek.
+
+248
+01:03:24,923 --> 01:03:26,564
+Sonuçta burada 10'u göreceğiz.
+
+249
+01:03:27,987 --> 01:03:55,467
+Sağ ötelediğimizi düşünelim, A5'e eşitken. Bu sefer 0, 1. Geri kalanlar böyle devam edip gidiyor. Ve sonuçta neyi görüyoruz? Bir defa öteledik, 5'i 2'ye bölün. Bir daha ötelediniz, 1. Buradan taşan 0 ve 1'ler başa gelmiyor arkadaşlar. Buna dikkat edelim. Taşanların yerine 0 kopyalanıyor, 0 geliyor.
+
+250
+01:03:56,851 --> 01:04:21,531
+Bu örneği de paylaşırım. Bu da bitwise işlemlerle alakalı bir örnek olsun. Görmedik demeyelim. Bunlar da daha çok mülakat tarzı şeylerde karşımıza geliyor. Gelmiyor değil. Şimdi 55 geçiyor. Bir 10 dakika ara verelim arkadaşlar. Gelince tekrar devam ederiz. Saat 05 geçe görüşmek üzere.
+
+251
+01:16:49,363 --> 01:16:57,003
+Evet arkadaşlar, devam edelim. Şimdi size bir RAR paylaştım. Onun içerisinde bazı açıklamalar var.
+
+252
+01:16:58,644 --> 01:17:04,224
+Güzel Türkçe döküman. Buradan da faydalanabilirsiniz. Özellikle projenizi yaparken.
+
+253
+01:17:06,903 --> 01:17:14,463
+Şeyden de paylaştım. Neydi o programın adı. Telegram'da. Örnekler falan da var.
+
+254
+01:17:17,587 --> 01:17:19,887
+Neyse, bu bir dursun şimdilik.
+
+255
+01:17:21,947 --> 01:17:26,807
+Arkadaşlar, programı split ederken, parçalara bölerken dedim ki
+
+256
+01:17:27,827 --> 01:17:29,627
+makro definitionları
+
+257
+01:17:30,647 --> 01:17:35,507
+bu include'lar, ondan sonra structure definitionları o header dosyalarında bulunur.
+
+258
+01:17:35,507 --> 01:17:38,067
+Header dosyalarına bazı arkadaşlar şunu yapıyor.
+
+259
+01:17:38,587 --> 01:17:40,367
+Programı bölmüş olmak için
+
+260
+01:17:41,147 --> 01:17:42,167
+fonksiyonların
+
+261
+01:17:42,192 --> 01:18:05,851
+Tanımlamalarına, implementasyonlarını atıyor. O doğru değil. Eğer bölecekseniz bu implementasyonları başka şurada olduğu gibi C dosyasında yapacaksınız. Header'larda sadece fonksiyon prototipleri, makro definition'ları, structure definition'ları olabilir. Onun haricinde burada bir implementasyon olmaz. Header'ın maksadı odur.
+
+262
+01:18:09,619 --> 01:18:17,420
+İnterfazlarda kullanıyoruz. O benzer mantıkla. Ona dikkat edelim. Bazen ödevlerde falan geliyor.
+
+263
+01:18:17,420 --> 01:18:23,699
+Bu ödevde biz hiçbir şekilde birden fazla dosya olsun istemiyoruz. Tek dosya gelecek.
+
+264
+01:18:23,699 --> 01:18:33,291
+Ödede arkadaş 5 farklı dosya açmış. Bir tane mainc var. 4 tane de hash dosyası var. Her bir hash dosyası da ayrı ayrı.
+
+265
+01:18:33,587 --> 01:18:38,587
+Şu fonksiyon tanımlamaları içerikleriyle beraber implementasyonları var. O yanlış.
+
+266
+01:18:38,587 --> 01:18:42,587
+Şimdi bu dursun. Bunu bir kapatalım.
+
+267
+01:18:42,587 --> 01:18:48,587
+Bugün bazı örnekler yapacağım ve dersi tamamlayacağız. Yapacağımız örnekler,
+
+268
+01:18:48,587 --> 01:18:55,403
+File Operation ile alakalı şu örneği yaptık mı diye bir bakıyorum.
+
+269
+01:19:29,619 --> 01:19:32,587
+Örneğin, şuradaki ikisi de aynı. Çünkü biz...
+
+270
+01:19:37,619 --> 01:19:41,100
+H dosyasını bununla ilişkilendirdik.
+
+271
+01:19:41,420 --> 01:19:43,059
+Yani gidip ona bakacak.
+
+272
+01:19:43,340 --> 01:19:46,920
+Ve main içerisinde de hiçbir şekilde salat noktasıyı çağırmıyoruz.
+
+273
+01:19:48,359 --> 01:19:49,659
+Aynı olmasına dikkat edeceğiz.
+
+274
+01:19:51,460 --> 01:19:54,600
+Şimdi şöyle bir örnek yapalım arkadaşlar.
+
+275
+01:19:59,667 --> 01:20:25,747
+Tred dışında anlatacak bir konu kalmadı. Bundan sonra örnek yapacağız. Farklı farklı konulardan bazı örneklerim var. Onları konuşacağız. Trede de vakit kalırsa hani şöyle sınava yönelik biraz çalışalım. Geçen hafta anlattıklarımızdan falan biraz daha tekrar mahiyetinde örnekler yapalım.
+
+276
+01:20:26,612 --> 01:20:30,612
+Ondan sonra vakit kalırsa thread konusunda gireriz.
+
+277
+01:20:32,612 --> 01:20:37,612
+İlk yapacağımız şey, geçen hafta belki çok az konuştuk,
+
+278
+01:20:37,612 --> 01:20:41,612
+Efreed Efrite ile bir dosyayı okumak olsun.
+
+279
+01:20:45,076 --> 01:20:47,076
+Dosyanın formatını şimdi göstereceğim.
+
+280
+01:20:59,731 --> 01:21:01,931
+Bir tane define kullanıyorum.
+
+281
+01:21:09,395 --> 01:21:33,315
+Şimdi bu tarz işlemlerde dosya okurken eğer yapımız, projede olduğu gibi dosyamız yapılandırılmış bir şeyse bunu strak üzerinden okumak kod yazarken çok avantaj sağlar. Özellikle her değişken için bir şey kullanmak, değişken bir virgül, değişken iki virgül, böyle şey gerek olmaz.
+
+282
+01:21:34,355 --> 01:21:43,355
+Integer no'su olsun, bir de Integer puan olsun. 3 tane bilgisi varmış öğrencinin. Bunu OGR olarak alalım.
+
+283
+01:21:45,796 --> 01:21:46,555
+Integer main.
+
+284
+01:21:49,235 --> 01:21:52,195
+Şimdi burada bir dosya açacağız.
+
+285
+01:21:55,988 --> 01:22:02,988
+Filesi
+
+286
+01:22:10,644 --> 01:22:23,364
+Ve okuduğumuz bu dosyayı da bir OGR türünde bir değişken de tutacağız. Yani yapacağımız şey sizin de ödevde zaten böyle şeyler olacak.
+
+287
+01:22:24,724 --> 01:22:27,404
+Printf. Dosya adı.
+
+288
+01:22:29,884 --> 01:22:35,543
+Hiçbir projede veya hiçbir şeyde kod içerisinden dışarıdan girilecek bir veri girilmez.
+
+289
+01:22:36,307 --> 01:22:45,307
+Yani siz gittiniz bir yere proje yaptınız. Adam, şu dosyayı okuyacağım dedi. Dur onu koddan açalım, değiştirelim denmez. Bunu kullanıcıdan alacaksınız.
+
+290
+01:22:45,307 --> 01:22:48,307
+Ona uygun tasarlamanız lazım.
+
+291
+01:22:48,307 --> 01:22:52,307
+%s, virgül dosya.
+
+292
+01:22:52,307 --> 01:23:02,028
+Öncelikle dosyaları ekrana yazdık, dosyalar içerisindeki şeyleri ekrana yazacak bir fonksiyon yazalım. Bu dosya şeyini gönderiyorum.
+
+293
+01:23:06,515 --> 01:23:11,895
+Sonra arkadaşlar, tabi önce fonksiyonu yazalım o zaman. Dosyayı açıp içerisinde bir kayıt arayalım.
+
+294
+01:23:13,435 --> 01:23:20,595
+Şurada dosya yazdırma fonksiyonumu yazıyorum. void printfile.
+
+295
+01:23:21,355 --> 01:23:26,219
+Buraya gelecek bir dosya adı gelecek. karakter ad 20 diyelim.
+
+296
+01:23:30,676 --> 01:23:40,556
+Karşılarının satırı var. Belki onun için bunu kullandım. Bir de i diyelim. O yere e değişkenim var. Bir file operation.
+
+297
+01:23:46,452 --> 01:23:47,092
+Fopen.
+
+298
+01:23:49,092 --> 01:23:50,412
+Ad yine aç.
+
+299
+01:23:51,891 --> 01:23:54,631
+Binary bir dosya olduğu için bunu Binary Mode'da açacağım.
+
+300
+01:23:57,431 --> 01:23:59,992
+Kaç tane öğrenci olduğuna bakmak istiyorum.
+
+301
+01:24:02,512 --> 01:24:03,992
+Bunu okuyunca...
+
+302
+01:24:10,996 --> 01:24:15,036
+Öğrenci sayısı kaç tanesi öğrenci okuyacağımızı da kullanıcıdan alacakmışız.
+
+303
+01:25:03,475 --> 01:25:06,795
+Formatlı bir okuma burada yapacağım. Yukarıda da
+
+304
+01:25:10,868 --> 01:25:23,868
+Yani şey, veri dosyaya, formatlı bir şekilde dosyaya yazmak istiyorum. Ama yok burada da formatlı değil, başka bir şey kullanmışım aslında. Şöyle diyorum arkadaşlar, fscanf.
+
+305
+01:25:25,868 --> 01:25:31,868
+Diyeceğim ama fscanf'i ne için kullanacağım? Klavyeden almak için kullanacağım. Standart input.
+
+306
+01:25:35,475 --> 01:25:41,075
+%s, %d ve %d alalım.
+
+307
+01:25:43,876 --> 01:25:47,075
+E.ada bir şey alıyorum.
+
+308
+01:25:47,075 --> 01:25:47,975
+Virgül.
+
+309
+01:25:49,075 --> 01:25:52,876
+Ante.e. numaraya bir şey alıyorum.
+
+310
+01:25:52,876 --> 01:25:56,975
+Ante.e. puana bir bilgi alıyorum.
+
+311
+01:25:56,975 --> 01:26:00,575
+Nereden alıyoruz? std in de aldığım için bunu kullanıcıdan alıyorum.
+
+312
+01:26:00,575 --> 01:26:02,175
+Kulavyeden alıyorum yani.
+
+313
+01:26:02,739 --> 01:26:29,199
+Bu kaydı, struct'ı tek bir seferde, tek bir blok halinde yazıyorum. Diyoruz ki burada fwrite, öncelikle bir pointer istiyor. Şu e'nin pointer'ını, adresini yaz. Size of OGR kadar yaz. Bir defa yaz. Nereye yaz? File pointer'ın gösterdiği yere yaz.
+
+314
+01:26:30,355 --> 01:26:34,715
+Kaç defa gireceksek, en defa kayıt gireceksek, en defa bu kayıt girdik.
+
+315
+01:26:34,715 --> 01:26:36,755
+F Close dedik.
+
+316
+01:26:36,755 --> 01:26:41,115
+By pointer'ı kapattık, çıktık.
+
+317
+01:26:41,115 --> 01:26:51,595
+Burada çıktıktan sonra, dosyalara verileri girdikten sonra ben şurada dosyayı tekrar açayım, okumayı da burada yapalım.
+
+318
+01:26:51,595 --> 01:26:55,595
+Aranan bir öğrencilere ait bilgileri veya bir...
+
+319
+01:26:55,615 --> 01:26:58,115
+Arandan öğrenci bilgisini kullanacağız.
+
+320
+01:27:02,036 --> 01:27:03,435
+diyorum ki if
+
+321
+01:27:06,515 --> 01:27:10,355
+İlkten önce şöyle bir File Pointer'ı açalım. File Pointer eşittir.
+
+322
+01:27:11,115 --> 01:27:12,155
+Fopen
+
+323
+01:27:13,435 --> 01:27:16,235
+Şuradaki dosya ismiyle
+
+324
+01:27:17,015 --> 01:27:19,575
+Bunu Binary olarak okuyacağız.
+
+325
+01:27:21,615 --> 01:27:22,395
+Eğer
+
+326
+01:27:24,435 --> 01:27:27,515
+Şöyle diyelim, File Pointer'ımız Null'dan farklıysa
+
+327
+01:27:30,075 --> 01:27:33,395
+Burada kullanıcıdan bir öğrenci numarası alalım.
+
+328
+01:28:02,100 --> 01:28:29,040
+Burada aranan öğrencinin bilgileri var mı yok mu diye şöyle bir kod buluyor. Şimdi dosyayı açtık. Bir kayıt okuyacağım. Şimdi bu kayıt eğer benim aradığım bir kayıt ise doğrudan buluruz. Veya dosyanın sonuna kadar arama yapmam gerekecek. Şurada bir f-read yapalım önce. İlk defa da bulabilme imkanımız var çünkü.
+
+329
+01:28:29,971 --> 01:28:33,152
+Bir de dosyanın formatına bir daha bakayım şuradan.
+
+330
+01:28:38,963 --> 01:28:53,963
+Şöyle bir formatta, yani binary format. Bunu açarken önce bir tane okumam gerekiyor. Muhtemelen burada numaralar da sıralıydı. Okuyunca şimdi daha rahat anlaşılır. Şunu önce kaydedelim. Save as diyelim.
+
+331
+01:28:59,891 --> 01:29:01,891
+Şurası mıydı?
+
+332
+01:29:01,891 --> 01:29:03,891
+File of
+
+333
+01:29:03,891 --> 01:29:05,891
+x1
+
+334
+01:29:07,891 --> 01:29:10,891
+Şu öğrencileri de aynı yere kayıtlayayım.
+
+335
+01:29:35,731 --> 01:29:37,731
+Buradan bir kayıt okuyacağım önce.
+
+336
+01:29:38,731 --> 01:29:41,731
+Diyoruz yine aynı, nasıl yazılıysa öyle.
+
+337
+01:29:41,731 --> 01:29:49,731
+Gideceğiz öğrenci struct'ın içerisine sizeofogr kadar bir kayıt oku.
+
+338
+01:29:51,731 --> 01:29:55,731
+Bunu bir defa oku ve file pointer'ın gösterdiği yerden oku.
+
+339
+01:29:57,731 --> 01:29:59,731
+Şimdi bunu okuduktan sonra...
+
+340
+01:30:00,000 --> 01:30:10,420
+Öğrenci içerisinde Öğrenci No değişkeninin altında bir şey var. Artık bir değişken var. Bir de bunu while döngüsüyle bütün kayıtları gezeceğim. Aradığım kaydı bulmak için.
+
+341
+01:30:11,559 --> 01:30:18,500
+Bunu da şöyle, sıra Öğrenci numarasına göre sıralı bir format var burada. Öğrenci No'nun No'su.
+
+342
+01:30:21,200 --> 01:30:27,159
+Küçükse No'dan diyelim. Bir bu şart, bir de diğer şart olarak.
+
+343
+01:30:27,636 --> 01:30:30,195
+Dosyanın sonuna gelene kadar.
+
+344
+01:30:30,195 --> 01:30:34,796
+File End of File, File Pointer deyince ne yapıyorduk?
+
+345
+01:30:34,796 --> 01:30:40,435
+Dosyanın sonuna gelip gelmediğimizi kontrol ediyoruz. Şöyle yaparsak bizim işimize daha çok yarar.
+
+346
+01:30:40,435 --> 01:30:45,296
+Şunu da şöyle End ile karışmasın, operatör önceliğini hatırlamıyorsak.
+
+347
+01:30:45,296 --> 01:30:49,396
+Böyle yaptığımızda dosyanın sonuna kadar arayacağız.
+
+348
+01:30:49,396 --> 01:30:52,172
+Şimdi yine aynı şekilde şurada...
+
+349
+01:30:52,340 --> 01:31:08,700
+Bir kayıt ara diyoruz. Bu şart sağlanana kadar. Yani while'e hiç girmeyebilir. Eğer girerse de şu şart bozulana kadar veya bu şartın olduğu duruma kadar bir şey gelecek. Şimdi buraya geldiğimizde if aradığımız kayıt bulundu mu bulunamadı mı ona bakalım.
+
+350
+01:31:20,115 --> 01:31:46,636
+Print F Bulunan Bilgiler. Siz de yapacaksınız ya, ne vardı? Ders kodu seçilen derse ait bilgilerin bulunması. İster Text Format'ta olsun, ister Binary Format'ta olsun. Dosya üzerinde arama yaparken bir şekilde sıralı işleme takılmak zorundayız. Aynı dizide arar gibi.
+
+351
+01:31:47,252 --> 01:31:58,512
+Yüzde s, yüzde de, yüzde de, bir backslash end'i şuraya alalım. Bu bulduğumuz bilgiler nerede var?
+
+352
+01:32:08,979 --> 01:32:09,979
+Şu ad olacak.
+
+353
+01:32:12,920 --> 01:32:13,819
+Ad no.
+
+354
+01:32:16,840 --> 01:32:22,719
+Şöyle bir şey sorayım arkadaşlar. Bu bahsettiğimiz kayıt numara değil de puan olsaydı.
+
+355
+01:32:25,439 --> 01:32:30,979
+Ve birden fazla gelme durumu vardı. Aranılan puanda kaç tane öğrenci var. O zaman ne yapmak gerekirdi?
+
+356
+01:32:36,372 --> 01:32:39,452
+Biz o kayıtları burada alıp belki düzenleyeceğiz.
+
+357
+01:32:47,699 --> 01:33:00,819
+Dosyadan okuyoruz ama okuduğumuz kayıt her defasında birden fazla kayıt var. İlla ki bir tane bir şey gelecek diye bir şey. O zaman nasıl bir çözüm önerirdiniz?
+
+358
+01:33:09,235 --> 01:33:14,235
+Bu tam veri tabanı ve object orientalının konusudur o tarz durumlar.
+
+359
+01:33:15,675 --> 01:33:20,695
+Örneğin, bir kitap sitesinden ürün arıyorsunuz.
+
+360
+01:33:20,935 --> 01:33:26,036
+Kitabın ilk karakterini yazdınız. O karakterle A yazdınız. A ile başlayan bütün kitaplar.
+
+361
+01:33:26,036 --> 01:33:31,036
+Ondan sonra L yazdınız. A ile başlayanlar. İ yazdınız. Ali ile başlayanlar.
+
+362
+01:33:31,975 --> 01:33:35,876
+Veya sildiğiniz tekrar A, L olanlar. Bir sürü kayıt geliyor değil mi?
+
+363
+01:33:36,851 --> 01:34:01,611
+Orada olan mevzu şu. Her bir sorgulama yapıldığında, ister veri tabanında, ister dosyada, nerede yapılırsa yapılsın. Eğer kullanacağınız kayıtlar, yani çekeceğiniz veriler size bir yerde gösterilsin istiyorsanız, grid üzerinde olabilir, alt alta sıralar halinde olabilir, alışveriş sitelerinde olduğu, o zaman tek bir değişken değil.
+
+364
+01:34:02,771 --> 01:34:16,692
+Dinamik olarak bir değişken, yani bu Structure dizisinden saklamanız gerekiyor. Bu Structure neyse artık hangi türse. Ve her bir okuduğunuz şeyi, şurada her bir okuduğunuzu ne yapmalı? O Structure dizisine eklemeniz lazım.
+
+365
+01:34:27,699 --> 01:34:51,139
+Buradaki structure bellek içerisinde bir yere bu veriler kopyalanacak. Çünkü onların doğrudan adresi yok. O bilgiler kopyalama yapılıyor. O sayede siz ilerleyen aşamalarda bunu kullanabilirsiniz. Biz sadece şu an bir öğrenci bulduğumuzda onun bilgisinin yazması. O zaman burada birden fazla satır olacaksa ben bunu nasıl tanımlayacağım?
+
+366
+01:34:53,684 --> 01:34:59,684
+100 tane, 300 tane, N tane. Nasıl tanımlamam gerekir?
+
+367
+01:35:08,083 --> 01:35:34,564
+Malok'la tanımayacağız. Güzel. Önce bir tanelik yer ayırırsınız. Kayıt buldukça onu genişletirsiniz. Veya şöyle bir strateji olabilir. Özellikle objekt oryantıtlarda array listler vardır. Array listin mantığı şudur. Dinamik bir dizi. Her türde tanımlanabiliyor. Örneğin önce bin tane diveri olsun. Bin tane açılıyor.
+
+368
+01:35:35,444 --> 01:36:02,744
+Siz içerisinde 500 kayıt kullandıysanız 500'lük kısmı belleğe iade ediyor. 1000'i doldurdunuz. 1.5 katı kadar kendi otomatik boyutu arttırıyor. Arkada aslında olan olaylar yine mallog, realog falan. Yani bir tane açıp veya bu istatistik konusudur. Yani önce başlangıçta 10 tane açıp ona ulaşınca 20-30 yaparsınız falan. Böyle bir dinamik şey olmak zorunda.
+
+369
+01:36:04,275 --> 01:36:29,796
+Hele buradan aldığınız bu veriyi, yani şurada dosyadan okuduğumuz bu veriyi, öğrencinin iyisine kopyaladık, tamam. Şöyle de bir durum var. Buradan aldığımız bunu, burada başka bir fonksiyona göndereceğiz. O fonksiyonun içerisinde işleyeceğiz, başka bir dosyaya kaydedeceğiz. O zaman ne lazım? Dinamik bellek yönetimini oluşturmak daha önemli oluyor. Yani normal bir dizi.
+
+370
+01:36:30,707 --> 01:36:32,108
+Bizi çok sıkıntıya sokar.
+
+371
+01:36:33,047 --> 01:36:33,948
+Derleyelim bakalım.
+
+372
+01:36:36,167 --> 01:36:36,827
+Return.
+
+373
+01:36:46,420 --> 01:36:54,880
+Multiple Main var demiş. Şunu şöyle yapalım. Bunu Close yapalım.
+
+374
+01:37:11,091 --> 01:37:16,271
+Undefined Reference. Şunu da şöyle alacağız.
+
+375
+01:37:20,532 --> 01:37:22,352
+Bunları kapatayım arkadaşlar.
+
+376
+01:37:48,212 --> 01:37:50,212
+Hadi ya şey mi oldu?
+
+377
+01:37:51,212 --> 01:37:53,212
+İnşallah üstüne yazmıştır.
+
+378
+01:37:55,212 --> 01:37:57,212
+Gerçi şurada txt olarak.
+
+379
+01:37:58,212 --> 01:38:00,212
+Bunu niye kaydetti ki?
+
+380
+01:38:00,212 --> 01:38:01,516
+File Location.
+
+381
+01:38:13,268 --> 01:38:14,891
+İlk filet.
+
+382
+01:38:20,532 --> 01:38:22,532
+Dosya adı giriniz.
+
+383
+01:38:22,532 --> 01:38:26,532
+Öğrenci.dat
+
+384
+01:38:28,532 --> 01:38:30,532
+Öğrenci sayısı giriniz.
+
+385
+01:38:30,532 --> 01:38:32,532
+Bilgiler.
+
+386
+01:38:32,532 --> 01:38:36,532
+Ali. Boşluk.
+
+387
+01:38:36,532 --> 01:38:37,868
+Numara 3.
+
+388
+01:39:01,876 --> 01:39:23,115
+Öğrenci numarasını artık ana programa döndük. Öğrenci numarayı arıyoruz. İkin oğlu öğrenciyi ara diyorum dosyadan. Kayıt bulunamadı çok güzel. Niye bulunamadı acaba? Bakalım dosyayı oluşturmuş muyuz?
+
+389
+01:39:29,844 --> 01:39:34,043
+Şuraya gelelim. O geriradat dosyası var.
+
+390
+01:39:37,652 --> 01:39:43,372
+Öğrencino 2. Yani burada bunu vurması lazım. Şunun içerisine bir daha bakayım.
+
+391
+01:40:00,500 --> 01:40:08,180
+Şöyle yapalım. Bir debug yapalım arkadaşlar. Nerede debug yapalım? Şurada debug işlemi yapalım.
+
+392
+01:40:19,507 --> 01:40:20,927
+OGR.dat
+
+393
+01:40:29,747 --> 01:40:31,563
+Ali Bir
+
+394
+01:40:49,140 --> 01:41:14,360
+Nextline dedik. 3 nolu kayda git. Şimdi bir OGR içerisinde bir şey çekti. AdWatch diyelim. Ali'yi aldı. Şuradan da şu no'yu AdWatch diyelim. Bakalım nerede hatamız var. Nextline diyorum. OGR.no. No'dan küçük mü? Evet.
+
+395
+01:41:15,764 --> 01:41:40,103
+Veriyi okudu bir şekilde. Tamam, doğru okuyoruz. Ayşe'yi okudu, çıktı. Ogr.no, eşit mi no'ya? Evet. Şimdi buldu. Biraz önce bir şey yanlış mı girdik acaba bilmiyorum da. Evet.
+
+396
+01:41:42,003 --> 01:41:51,003
+Belki bazı şeyleri, arada bir şey yanlış girmiş olabiliriz. Şu an çalışıyor. Sonra Next Line'da çıktık.
+
+397
+01:41:56,148 --> 01:42:06,007
+Bu örnek bu kadardı. Gelecek diğer örneklerimiz de olacak arkadaşlar bununla alakalı. Daha devam edeceğiz. Bunu da size paylaşırım.
+
+398
+01:42:10,836 --> 01:42:14,695
+Şimdi bir tane daha. Gerçi bu örneğimiz.
+
+399
+01:42:18,899 --> 01:42:20,319
+Recursion ile alakalı olacak.
+
+400
+01:42:22,659 --> 01:42:24,239
+Bunu bir kapatayım.
+
+401
+01:42:26,579 --> 01:42:29,179
+Şimdi Recursion'u biz çok kısa gördük.
+
+402
+01:42:30,500 --> 01:42:32,819
+Ben biraz daha detaya girmek istiyorum.
+
+403
+01:42:32,819 --> 01:42:38,119
+Çünkü LinkedDist'leri ve Binary Search Tree'yi anlatacağım.
+
+404
+01:42:38,219 --> 01:42:39,659
+Gelecek hafta örnekle anlatacağım.
+
+405
+01:42:39,799 --> 01:42:42,519
+Burada, oradaki bazı bilgiler bize lazım.
+
+406
+01:42:43,123 --> 01:42:51,663
+Özellikle Traverse yaparken Linked Listlerde ve Binary Search Trillerde şey kullanabiliyoruz, Recurgeon'dan faydalanabiliyoruz. Güzel de oluyor.
+
+407
+01:42:51,663 --> 01:42:57,663
+Bu veri yapıları ayrık matematik gibi derslerde işinize yarar.
+
+408
+01:42:57,663 --> 01:43:01,083
+Şimdi şöyle yapalım, Integer Main diyelim.
+
+409
+01:43:01,083 --> 01:43:06,384
+Bir Integer dizisi oluşturuyorum, Integer A.
+
+410
+01:43:06,384 --> 01:43:09,083
+Doğrudan basit bir dizi.
+
+411
+01:43:15,636 --> 01:43:17,676
+1-2
+
+412
+01:43:23,028 --> 01:43:43,028
+Reverse yapalım. A virgül 0 virgül. Şimdi şöyle bir şey yazdım arkadaşlar. Size of a desem, bölü size of a'nın birincisi desem ne gider oraya? Parametri olarak.
+
+413
+01:43:52,275 --> 01:43:55,796
+İkinci parametre olarak ne gider? Anlamı nedir?
+
+414
+01:44:05,811 --> 01:44:06,811
+Evet.
+
+415
+01:44:09,908 --> 01:44:11,908
+SizeOfA ne arkadaşlar?
+
+416
+01:44:13,908 --> 01:44:23,692
+Herayin boyutu güzel. 5 tane integer'dan bir şey var. SizeOfDizinin tamamının boyutu. O kadarlık yer ayrılmış çünkü default olarak.
+
+417
+01:44:27,315 --> 01:44:36,735
+İlk öğrencinin no'su sizin girdiğiniz no'dan büyük olduğu için mi girmedi İfem? Çalışmayan case'den mi bahsediyorsun?
+
+418
+01:44:40,819 --> 01:44:48,500
+Öyle bir şey mi yaptım? Belki sırasız girdiğim için olabilir. Doğru doğru onun için girmemiş olabilir.
+
+419
+01:44:48,500 --> 01:44:57,979
+Tabii kısıt olarak o arama kısıtında bakmamız lazım. Yani büyüktür küçüktür değil de farklı olduğu müddetçe dön diyebiliriz.
+
+420
+01:44:57,979 --> 01:45:05,659
+Yani şu örneği şöyle genel hale getirebiliriz o zaman.
+
+421
+01:45:11,796 --> 01:45:17,496
+Eğer sıralı olduğunu biliyorsanız böyle yapmak daha kolay. Özellikle siz şeyde autoincrement kullanacaksınız ya projede.
+
+422
+01:45:19,136 --> 01:45:22,016
+Farklı olduğu müddetçe diyebiliriz.
+
+423
+01:45:24,496 --> 01:45:29,855
+Şöyle. O zaman ne olur? Herhangi bir şekilde sıraya bakmadan bulabiliriz.
+
+424
+01:45:31,996 --> 01:45:36,456
+Burada zaten bulduysak bulmuşuzdur. Bulamamışsak hiç bizim olmamıştır.
+
+425
+01:45:37,076 --> 01:45:58,615
+Bulamamışsak burada bakacağız. Eğer burada bulabildiysek bulabiliriz. Yani burada da bulamazsak zaten şu file'an da file'den çıkarız. Sonuna kadar gelir. Burada da zaten bulup bulamadığımızı yazdırıyoruz. Şu daha şey bir çözüm. Hani jenerik bir çözüm olur o zaman. Doğru mu [öğrenci]? Herhalde şu an senin demek istediğine cevap vermiş oldum.
+
+426
+01:46:08,115 --> 01:46:11,115
+Evet, reverse edeceğiz. Diziyi reverse etmek.
+
+427
+01:46:16,979 --> 01:46:28,500
+Bu integer dizisi. Bunun farklı versiyonlarına bakalım. Dizinin reverse edilmesi için, yani burada reverse'den kastımız elemanlar yer değiştirsin mi? Değiştirsin.
+
+428
+01:46:29,939 --> 01:46:35,979
+Veya doğrudan elemanları ekrana yazdıralım diye düşünebiliriz. Yani dizinin orijinali aynen kalsın.
+
+429
+01:46:36,579 --> 01:46:43,100
+Diyorum ki if, tabi buraya gelecek parametreleri önce yazacağız. Buraya bir pointer geliyor. Yani dizinin.
+
+430
+01:46:43,988 --> 01:46:56,307
+İlk elemanını pointer olarak alabiliriz. Yıldız, ar diyelim. Bir i değeri gelecek. Bir tane de n değeri gelecek. Birisi ilk eleman, diğeri son eleman.
+
+431
+01:46:56,307 --> 01:47:06,988
+Şimdi buradaki i değeri n'den küçük olduğu müddetçe, n'den küçükken, reverse çağırıyorum. Bu reverse'ı çağırdığımda,
+
+432
+01:47:09,555 --> 01:47:15,475
+Array'i çağıracağım, i artı 1'i çağıracağım ve n'i çağıracağım.
+
+433
+01:47:21,716 --> 01:47:23,716
+Şurada da printer.
+
+434
+01:47:26,836 --> 01:47:31,316
+%d, virgül, array'in iyisini yazalım.
+
+435
+01:47:36,627 --> 01:47:39,608
+Şurayı şöyle bir alayım. Hatta şöylece alayım.
+
+436
+01:47:48,756 --> 01:47:53,316
+Şimdi ilk başta i0, n5 olarak geldi.
+
+437
+01:47:54,316 --> 01:47:56,056
+i küçük mü 5'ten? Evet.
+
+438
+01:47:57,316 --> 01:47:59,935
+Ne yapıyor? 1'e 5'i çağırıyor.
+
+439
+01:48:02,336 --> 01:48:06,916
+1'e 5'i çağırınca 1 küçük mü 5'ten? Evet. 2'ye 5'i çağırıyor.
+
+440
+01:48:08,136 --> 01:48:09,156
+3'e 5'i çağırıyor.
+
+441
+01:48:11,315 --> 01:48:34,635
+O 4'e 5'i çağırıyor. 4 küçük mü 5'ten? Evet. 4 5'ten küçük olduğu için bir daha çağırıyor. 5'e 5'i çağırıyor. 5'e 5'i çağırdıktan sonra 5 küçük mü 5'ten? Hayır. Hayır olduğu için bu kısımdan dönüyor.
+
+442
+01:48:39,444 --> 01:48:57,703
+4'e 5'in şu satırına geri geldi. Bu satırdan dönmüş oldu yani burada. Ne oldu? Array'in iyisini yazdı. Array'in iyisi kaç? 4. Yani son eleman işte 1, 2, 3, 4, 5 miydi? 3, 4, 5 gitti. 5'i ekrana yazdırdı.
+
+443
+01:48:59,764 --> 01:49:09,924
+Array'in 4'ü 5'i bunu yazdıktan sonra artık buradan çıkıyor, if'ten çıkıyor. Return etmiş oluyor. Sonra bunu kim çağırdı? Bakın stek mantığıyla düşüneceğiz.
+
+444
+01:49:09,924 --> 01:49:25,884
+Yani bunu aslında şöyle yapmak daha mantıklı. 0'a 5, 1'e 5, 2'ye 5, 3'e 5, 4'e 5'ten çıktıktan sonra ne oldu?
+
+445
+01:49:26,452 --> 01:49:50,772
+3'e 5'i çağıracağız. 3'e 5'te ne var? Eray'ın iyisini, yani üçüncüyü yazdırıyor. Gelip 4'ü yazdıracak. 3'e 5'ten sonra 2'ye 5'i çağıracak. 2'ye 5'te Eray'ın iyisinde 2 olan 3 var. Sonra 2 var. Sonra 0'a 5'i yazdırdıktan sonra 0 ve 5 de bitiyor.
+
+446
+01:49:51,231 --> 01:50:00,951
+Çağıracak başka bir fonksiyon kalmadı ve program reverse işlemi bitiyor. İşlem tamamladı. Bu şekilde ekrana tersten yazdırıyoruz.
+
+447
+01:50:02,451 --> 01:50:11,551
+Tabi bir de bunun swap işlemi yaparak, Array elemanlarını burada orijinal diziyi bozmadan yazacağız.
+
+448
+01:50:11,551 --> 01:50:17,172
+Bir de swap işlemi yaparak bu işi yapalım. Buna da reverse 2 diyeyim.
+
+449
+01:50:24,020 --> 01:50:25,900
+Tam je boy, Trivorski.
+
+450
+01:50:31,636 --> 01:50:37,676
+Bu gerçek anlamda hani bir reverse olacak. Yine integer array alacağız.
+
+451
+01:50:40,316 --> 01:50:45,015
+Integer i'ye alacağız. Integer n alacağız.
+
+452
+01:50:49,811 --> 01:50:51,811
+Bunu da şurada şöyle çağıralım.
+
+453
+01:50:53,711 --> 01:50:54,711
+Hatta nasıl diyelim?
+
+454
+01:50:57,711 --> 01:50:58,712
+Şöyle for.
+
+455
+01:51:05,363 --> 01:51:07,363
+Eşittir 0.
+
+456
+01:51:07,363 --> 01:51:08,811
+E küçük.
+
+457
+01:51:18,387 --> 01:51:20,387
+Şöyle bir şey yazsak arkadaşlar.
+
+458
+01:51:21,887 --> 01:51:22,887
+Define
+
+459
+01:51:24,587 --> 01:51:25,887
+Max desek
+
+460
+01:51:26,887 --> 01:51:28,387
+Bir bunu makro ile
+
+461
+01:51:29,688 --> 01:51:30,688
+çağırsak
+
+462
+01:51:37,332 --> 01:52:01,092
+Nasıl diyebiliriz? Yani sizeof a bölü sizeof a bölü a bir bunu yapmasını istiyoruz. Şöyle bir a parametresi alsak. Bu bize sizeof a'yı döndürse. Şöyle yapalım.
+
+463
+01:52:05,332 --> 01:52:10,124
+Burada da integer n diyorum eşittir. Maksimum.
+
+464
+01:52:13,876 --> 01:52:15,876
+Büyük yapacağım şunu.
+
+465
+01:52:17,876 --> 01:52:20,876
+Biraz daha gördüğümüz konuları incelemiş olalım.
+
+466
+01:52:20,876 --> 01:52:22,876
+A'yı gönder diyorum.
+
+467
+01:52:23,876 --> 01:52:25,876
+Bölü maksimum.
+
+468
+01:52:30,100 --> 01:52:39,399
+A1'i gönder. Şimdi bir test ederiz onu. Şurada da n gönderilecek.
+
+469
+01:52:39,399 --> 01:52:43,399
+i++
+
+470
+01:52:47,252 --> 01:52:49,252
+Şöyle ekrana yazdıralım.
+
+471
+01:52:49,252 --> 01:52:54,124
+printf %d boşluk
+
+472
+01:52:58,068 --> 01:53:00,068
+A'nın iyisini yazdır.
+
+473
+01:53:24,340 --> 01:53:26,340
+Sonucu görmedik biraz önce değil mi?
+
+474
+01:53:33,460 --> 01:53:45,900
+1, 2, 3, 4, 5, 5. Burada ende bir sıkıntı var. Şimdi Maximum A, Size of A bölü Maximum A1. Şöyle Breakpoint koyalım.
+
+475
+01:53:53,460 --> 01:54:02,159
+Max A'yı bir add watch dediğimizde 20 buldu. Tamam. Max A'yı bir add watch dediğimizde bunu buldu. Evet.
+
+476
+01:54:03,960 --> 01:54:05,500
+n dediğimiz şey
+
+477
+01:54:08,819 --> 01:54:09,840
+5 oldu.
+
+478
+01:54:23,859 --> 01:54:28,179
+Ar'nin iyisi. Ha, şurada şunu yapmadık arkadaşlar. Pardon.
+
+479
+01:54:35,060 --> 01:54:35,560
+Çek.
+
+480
+01:54:46,100 --> 01:54:49,119
+İçerideki kısım, o yukarıdaki ters yazan kısım.
+
+481
+01:54:50,579 --> 01:54:51,960
+Şurada da printfiz diyelim.
+
+482
+01:55:02,228 --> 01:55:06,587
+Amacımız gerçek anlamda, yani reverse 2 ile yer değiştirmek.
+
+483
+01:55:08,587 --> 01:55:11,528
+Sonra diyorum ki, reverse 2.
+
+484
+01:55:13,167 --> 01:55:16,108
+A'yı gönder, sıfırı gönder, n'i gönder.
+
+485
+01:55:18,228 --> 01:55:20,368
+Bunun içerisinde yapacağımız şey yine şu arkadaşlar.
+
+486
+01:55:20,547 --> 01:55:22,988
+Bir tane temporary değişikliğine yine ihtiyacımız var burada.
+
+487
+01:55:29,171 --> 01:55:39,051
+Aslında bu while'daki i küçük n gibi düşünebiliriz. Çünkü burada recursive bir döngü yapıyoruz.
+
+488
+01:55:39,991 --> 01:55:44,131
+Tmp'ye dizinin i. elemanını alıyorum.
+
+489
+01:55:47,507 --> 01:55:54,148
+Normal bir şekilde yer değiştiriyoruz. Array'in iyisi. Array'in en ince elemanı.
+
+490
+01:55:57,716 --> 01:56:01,636
+Bunu alıyoruz. Ha tabii şurada gönderirken artık n-1'i göndereceğiz.
+
+491
+01:56:03,155 --> 01:56:06,735
+Çünkü yer değişimi olacak. Oraya kadar gitmeyeceğimiz için.
+
+492
+01:56:07,815 --> 01:56:13,975
+Array'in n'i de tmp olacak.
+
+493
+01:56:14,975 --> 01:56:17,655
+Bu yer değişiminden sonra reverse tekrar çağırıyorum.
+
+494
+01:56:17,655 --> 01:56:18,576
+Array'i çağır.
+
+495
+01:56:20,036 --> 01:56:22,556
+i artı 1'i çağır.
+
+496
+01:56:23,556 --> 01:56:24,676
+n-1'i çağır.
+
+497
+01:56:28,372 --> 01:56:29,372
+Bu kadar devam et.
+
+498
+01:56:34,228 --> 01:56:38,268
+Başka bir şey yok. Şurayı bir kopyalayalım şimdi. Analiz edelim.
+
+499
+01:56:53,043 --> 01:57:16,184
+1, 2, 3, 4, 5. Biz buraya erayı gönderdik. Bir de 0 ve 4'ü gönderdik. Şimdi 0 ve 4 geldiğinde ilk başta 0 ve 4 geldi. 0 küçük mü 4'ten? Evet. Şunu biraz daha aşağıya çağıralım. 0 küçük mü 4'ten? Evet. Ne yapıyor? Eray'in iyisiyle.
+
+500
+01:57:17,076 --> 01:57:41,296
+Yani şu i eşittir 0, n eşittir 4 dedik. Aray'ın elemanı bu sıfırıyla aray'ın en ince elemanını bunu yer değiştiriyor. Yani 5, 2, 3, 4, 1 bunu yaptı. Bunu yaptıktan sonra aray'ı, bu mevcut aray'ı, i artı 1 ve n eksi 1 ile 0 ve 4 yerine 1'e 3 ile çağırdı.
+
+501
+01:57:42,003 --> 01:58:06,983
+1'e 3'le çağırdığı için iyi küçük mühenden evet, 1'le 3'ü yer değiştiriyor. Yani 5, 4, 3, 2, 1 oluyor. Sonra bunu tekrar reverse işlemi yapacak. Reverse yapınca 2'ye 2 oldu çağırınca. 2 küçük mühenden hayır. Hayır olduğu için girmedi. Girmediği için bu çıktı.
+
+502
+01:58:07,667 --> 01:58:27,768
+Yani şu kısım bitti. Bu çıkınca return etti 2'ye 2'den. 2'ye 2'den return ettikten sonra 1'e 3'e geldi. 1'e 3'ü çağırdığı yerde bu işlem tamamlandığı için, başka da işlem olmadığı için 1'e 3'den de return edecek. 1'e 3'den return ettiği yerde 0'a 4'te kalmıştı. 0'a 4'ten de burada return edecek.
+
+503
+01:58:28,916 --> 01:58:41,935
+Return ettikten sonra buraya tekrar gelecek. Bu da bitecek. Bu program Reverse 2 bitmiş olacak. Reverse 2 bittikten sonra 27. satırdan devam edecek. Şöyle yapalım şimdi. Şunu kopyalıyorum.
+
+504
+01:58:45,587 --> 01:58:47,507
+Verst key'i alalım. Kontrol.
+
+505
+01:58:49,607 --> 01:58:50,767
+Şurada bir daha yazdıralım.
+
+506
+01:58:51,587 --> 01:58:52,587
+Şuraya kadar bir...
+
+507
+01:58:57,524 --> 01:58:58,508
+Dbuck.
+
+508
+01:59:10,163 --> 01:59:20,163
+into function. Buraya geldik. addWatch, iyiWatchAt, anyWatchAt, bir de şu diziyiWatchAt.
+
+509
+01:59:24,787 --> 01:59:35,287
+Tabi diziyi doğrudan şöyle yapsak bir de array'in i'si ve array'in n'i diyelim bize yeterli olur.
+
+510
+01:59:36,567 --> 01:59:40,907
+Evet, i küçük n'den olduğu için next line dedik.
+
+511
+01:59:43,727 --> 01:59:46,027
+1 ile 5 yer değiştirdi.
+
+512
+01:59:46,807 --> 01:59:48,347
+into function diyorum.
+
+513
+01:59:49,627 --> 01:59:52,363
+O reverse'a gittik ya, reverse 2 yapacaktık.
+
+514
+01:59:53,140 --> 01:59:58,100
+Neyse problem değil. Next line diyorum. Into function diyorum. Buraya tekrar geri geliyor.
+
+515
+02:00:01,300 --> 02:00:02,820
+Ölümcül bir hata yaptık.
+
+516
+02:00:14,804 --> 02:00:16,804
+İlk devok.
+
+517
+02:00:16,804 --> 02:00:18,804
+Next line.
+
+518
+02:00:18,804 --> 02:00:20,804
+Bu skip de ademora.
+
+519
+02:00:20,804 --> 02:00:22,804
+Next line.
+
+520
+02:00:22,804 --> 02:00:24,804
+Neymar mother.
+
+521
+02:00:24,804 --> 02:00:26,804
+Sop tu.
+
+522
+02:00:26,804 --> 02:00:27,467
+Devok.
+
+523
+02:00:43,444 --> 02:01:06,984
+Doğrudan, şurada siz sonucu göremiyorsunuz da tekrar into function demem gerekirdi. Ne oluyor? Burada tersten yazdırabildik. Şurada tekrar şu adıma gelince tekrar into function demek gerekiyordu arkadaşlar. Bunu en kolay trace etmenin yolu stack çizmektir. Bilginiz olsun. Çünkü stack mantığıyla çalışıyor arka planda.
+
+524
+02:01:11,091 --> 02:01:13,251
+String'i reverse etmek istersek.
+
+525
+02:01:15,811 --> 02:01:18,912
+Onun için ayrı bir dosya oluşturayım mı? Hadi oluşturayım.
+
+526
+02:01:22,032 --> 02:01:29,112
+String'i ve String dizisini, yani 5 tane farklı string'im var. Onları reverse ederim. Onları da bitirip derste bitireceğim arkadaşlar.
+
+527
+02:01:29,912 --> 02:01:31,872
+Yani bir 40 satırda en fazla kod yazacağız.
+
+528
+02:01:32,831 --> 02:01:33,992
+Onun için hemen ara vermeyelim.
+
+529
+02:01:35,859 --> 02:01:38,899
+sddio.h
+
+530
+02:01:38,899 --> 02:01:48,159
+Bir de burada Recursive'de şöyle analiz yaparken bu kodun karmaşıklığı nedir diye kabaca
+
+531
+02:01:48,159 --> 02:01:54,600
+backward substitution, forward substitution ayrık da anlattık.
+
+532
+02:01:54,600 --> 02:01:58,460
+Veri yapılarında göreceksiniz daha detaylı olarak. Kabaca bunu nasıl yapılır?
+
+533
+02:01:59,579 --> 02:02:02,039
+Çok kısa sürede karar vermeniz gerekiyor.
+
+534
+02:02:02,515 --> 02:02:28,795
+Şimdi gelen veri birden n'e kadar birer birer azalıyor. Yani burada decrease işlemi var. Kaç defa recursive çağrısı var? Bir tane var. n'den bire doğru gittiği için burada tek bir tane olduğu için en üzeri birlik bir durum olduğunu görürüz. Yani n'lik bir karmaşıklık çıkar burada.
+
+535
+02:02:29,395 --> 02:02:43,135
+Eğer bunu yarılaya yarılaya gitseydik, yani ne bileyim n eşittir n bölü 2 şeklinde gidecek olsaydık, o zaman ne olurdu? Log n gibi bir şey olurdu. Buna dikkat edelim.
+
+536
+02:02:43,975 --> 02:02:56,676
+Eğer iki tane olsa, yani f function işte i gelecek. Fibonacci'yi düşünün. i-1 artı i-2.
+
+537
+02:02:58,323 --> 02:03:15,163
+Böyle bir şey olsa bu fonksiyon çağrısında, şimdi n'e doğru gidiyor. Her birisi kendi içerisinde n tane çağrıda bulunacak. Burada iki tane çağrı olduğu için iki üzeri n kadarlık bir karmaşıklık çıkıyor arkadaşlar.
+
+538
+02:03:16,003 --> 02:03:21,483
+Gibranat cedisinin zaten ağacını açtığınızda iki üzeri n'lik bir binary search tili gibi bir şey çıkaramıyor.
+
+539
+02:03:26,068 --> 02:03:52,507
+Her biri n'lik 3 üzeri n. 3 çağrının her birisi i-1 değil de i bölü 2 olsaydı her biri log n'lik. Buradan bir log n, buradan bir log n, buradan bir log n. O biraz daha farklılaşıyor. 3 üzeri log n gibi daha karmaşık bir şey oluyor. Yine eksponansiyel bir durum var ama
+
+540
+02:03:52,948 --> 02:04:00,887
+Karmaşıklığı biraz daha şey, hızlı karar vermek için, yani böyle Fibonacci gibi şeyler çok görürsünüz. İki değişkenli, üç değişkenli falan.
+
+541
+02:04:02,547 --> 02:04:10,867
+Azalışa bakmanız gerekiyor. Her bir azalış neyi gösteriyor bize? İşte burada end'lik bir azalış var, burada end'lik bir azalış var. Ona göre iki üzeren, üç üzeren diyebiliriz.
+
+542
+02:04:12,327 --> 02:04:14,967
+Gelelim şurada string ile alakalı şey.
+
+543
+02:04:27,507 --> 02:04:39,087
+Karakter dizisi oluşturacağım önce. Daha sonra karakter dizisini, karakter dizilerinin dizisini oluşturacağım. O başka olacak. Yapısal programlama.
+
+544
+02:04:43,028 --> 02:04:58,648
+Reverse A diyorum. Şimdi burada eleman sayısını bilmeme gerek yok. Neden gerek yok? Çünkü stringin sonunu bildiğime dair bir özel karakterim var. O da backslash 0. Onunla bu işi yapabilirim.
+
+545
+02:05:14,484 --> 02:05:32,364
+if str ise. Bu ne demek? Sonuna gelmemişsen demektir arkadaşlar. Çünkü sonuna gelirsek bu str'nin gösterdiği yerdeki değer backslash 0 olur. Yani null demektir. Sonuna gelmediysem bir sonrakine git diyorum.
+
+546
+02:05:39,347 --> 02:05:42,668
+Önce bir sonrakine gideceğim. str artı bir.
+
+547
+02:05:45,528 --> 02:05:46,307
+printf
+
+548
+02:05:46,307 --> 02:05:50,148
+yüzde c
+
+549
+02:05:50,148 --> 02:05:53,648
+virgül amperesant str
+
+550
+02:05:53,648 --> 02:05:58,427
+ona doğru gideceğiz, gideceğiz, gideceğiz. Ta ki en son
+
+551
+02:05:58,427 --> 02:06:00,128
+geldiğimizde
+
+552
+02:06:00,128 --> 02:06:03,328
+bir return edeceğiz. Bir return ettiğimizde
+
+553
+02:06:03,923 --> 02:06:16,404
+En son karakter, programlamanın A'sı. Sonra onu yazacağız. Sonra return edeceğiz. Ondan sonra geldiğimiz yer M'deki kısma geleceğiz. Şöyle çizecek olursam.
+
+554
+02:06:21,619 --> 02:06:47,859
+Yapısal diyelim burada. Burası da stringin sonu. Backslash 0. Buraya bir pointer adresi geliyor. Reverse. İlk başlangıçta yeğenin adresi geldi. Yani buradaki ilgili adres geldi. Sıfırdan farklı mı? Evet. O nedenle ne yapıyor? A'yı çağırıyor. Onun için şurada sıfırı attı siteye. A'yı attığında biri attı. Daha sonra ikiye attı. P için.
+
+555
+02:06:48,692 --> 02:07:06,091
+I için 3, 4, 5, 0, 1, 2, 3, 4, 5, 6, 6 geldi. Sonra 7'yi çağırıyor. 7'yi çağırdığında, aslında 7'yi de siteye atıyoruz.
+
+556
+02:07:06,091 --> 02:07:13,532
+7'yi çağırdığımızda, str farklı mı? 0'dan farklı. Yani str null.
+
+557
+02:07:13,971 --> 02:07:39,631
+Null olduğu için buraya girmeyecek. Buraya girmeyip ne yapacak? Buraya gelecek ve bunu görmesi ne demek? Return demektir. Assembledeki red komutu gibi aynıdır. O zaman buradan çıktı. Buradan çıkınca en son kimde kalmıştı? 6'da kaldı. 6'da kaldığı için l'yi gördü. Bu sıfırdan farklı mı? Evet. Buradan çıkması ne demek? Bunun şuradan devam etmesi ve printf'i yazdırması demek. O zaman l'yi yazacak.
+
+558
+02:07:40,372 --> 02:08:04,992
+L yazdıktan sonra bunun if'i bitiyor. If bittikten sonra program bitiyor. 6 tamamen bitti. 5'e geldi. 5'i nerede çağırmıştı? Burada çağırmıştı. Aslında stekte şunu da tutuyor arkadaşlar. 0'ı çağırdığında nerede kaldı? Hangi satırda kaldı? 4. satırda. Bundan sonra diyor ki 5. satırdan devam edeceksin. Şu satır numarası da orada saklanıyor program counter'da. 1'de de 5. satır, 2'de de 5. satır.
+
+559
+02:08:05,376 --> 02:08:25,176
+Üçte de beşinci satırda, dörtte de beşinci satırda, burada da beşinci satırda, bunda da beşinci satırda kalacağını söylüyor. Yedide olay ne? Şart doğrudan sağlamadığı için doğrudan return etti. Burada ama tekrar çağırmıştı. Altıda kaldığı için nereden devam edecek? Beşinci satırda. Yani printfle yaz diyor, çık.
+
+560
+02:08:25,747 --> 02:08:40,747
+Ondan sonra çıktıktan sonra return ediyor. 5'ten nereden kaldım? 5'in 5. satırından devam etti. Sonra 4'ün 5. satırı böyle aşağıya doğru tersten string yazıp gidiyor. Herhalde şu satır numarası ile biraz daha anlaşılmıştır.
+
+561
+02:08:41,568 --> 02:08:49,828
+Stake kullanmadaki mantık recursive de budur. Önemli bir şey yani. Özellikle trace ederken böyle stakeler kullanırsanız biraz daha rahat edersiniz.
+
+562
+02:08:51,828 --> 02:08:53,127
+Şunu değerleyelim.
+
+563
+02:09:02,612 --> 02:09:25,372
+Bakın, backslash'a kadar bu işi yapıyoruz. Şimdi son olarak bir de bizim stringlerimiz olsun. Yani kullanıcıdan stringler de alalım. Bu basit bir şeydi. Ahmet, Mehmet kaç tane string alacaksak. Bu stringleri dizi olarak ters çevirelim. Ona bakalım.
+
+564
+02:09:30,131 --> 02:09:37,211
+N tane stringim olacak. Onun için bir döngü tasarlayacağım.
+
+565
+02:09:39,851 --> 02:09:49,691
+Arada bir boşluk karakter, dummy karakter. Bir string'e girdikten sonra enter'a basma ile alakalı dummy karakter olur. Şunu da bir geçici karakter olarak bir yerde saklayayım.
+
+566
+02:09:55,347 --> 02:09:56,807
+Eleman sayısı.
+
+567
+02:10:00,227 --> 02:10:05,367
+Ben elemanlarımı saklarken burada bir nüans var. Yüzde D diyelim.
+
+568
+02:10:11,252 --> 02:10:19,132
+En tane string gireceğim. Şimdi bu en tane stringin arkadaşlar, her birisi bir tane dizi mi? Dizi değil mi?
+
+569
+02:10:20,932 --> 02:10:30,852
+Dolayısıyla bu en tane stringi, dinamik memori allokasyonuyla allocation yaparken nasıl bir karakter pointerı tanımlamam gerekiyor?
+
+570
+02:10:30,952 --> 02:10:34,092
+Tek pointer mı, çift pointer mı? Tek mi, çift mi?
+
+571
+02:10:43,091 --> 02:10:50,951
+Yani birinci stringim Ahmet, ikinci stringim Eleman, öbürü başka bir şey Ayşe, Veli, Hasan. Böyle stringler tanımlayacağız.
+
+572
+02:10:56,692 --> 02:10:58,172
+Tekpointer işimizi görür mü?
+
+573
+02:11:03,572 --> 02:11:04,572
+Ne dersiniz?
+
+574
+02:11:11,923 --> 02:11:13,724
+Niye bu kadar sessiz sınıf?
+
+575
+02:11:23,475 --> 02:11:40,635
+Array'in Array gibi. Array'ler dizisi, evet. Güzel. Şimdi arkadaşlar, şöyle diyelim. Bir string kullanıcıdan aldım, Ali dedim. Bunun ben neyini saklamam gerekiyor? İlk elemanın adresini saklamam lazım.
+
+576
+02:11:51,188 --> 02:12:15,208
+Ad dediğimiz bir şey Ali. Bu zaten kendisi bir pointer'dır aslında. Dolayısıyla ben bunun gibi bir sürü değişkeni saklayacağım. Ali, Salı vs. Bunların hepsini her birisi kendi içinde pointer olduğu için bunları tutacak bir üst seviyeden pointer'a itibaren. Onun için bu ikinci dereceden bir şey olacak. Bunların hepsi birinci dereceden.
+
+577
+02:12:17,587 --> 02:12:19,587
+İkinci dereceden bir pointer gerekiyor.
+
+578
+02:12:19,587 --> 02:12:22,587
+Ve allocation'ı buna göre yapacağız.
+
+579
+02:12:22,587 --> 02:12:25,587
+Diyelim ki kelimeler.
+
+580
+02:12:27,587 --> 02:12:35,587
+Eleman sayısına girdikten sonra diyoruz ki kelimeler eşittir.
+
+581
+02:12:35,587 --> 02:12:39,587
+Bir karakter pointer'ının pointer'ını tutacağız.
+
+582
+02:12:39,587 --> 02:12:44,587
+Clear allocation. N tane tutalım.
+
+583
+02:12:44,916 --> 02:12:50,076
+Her bir de size of. Her biri neyi tutacak? Karakter pointer'ı tutacak.
+
+584
+02:12:53,515 --> 02:12:58,235
+Her bir kelime kendi içerisinde ayrı bir dizi. Yani bir matris gibi bir şey var.
+
+585
+02:12:58,235 --> 02:13:06,095
+Olan olay, bunu matrissel formda yazacak olsak. Birinci satırında Ali var.
+
+586
+02:13:07,636 --> 02:13:34,936
+Üçüncü satırında daha uzun bir şey var. Belki öbüründe daha kısa bir string var. Her biri bellekte bir yerde kendi içinde bir yer tutuyor. Bir dizi. Ben bu dizilerin ilk elemanlarının adreslerini tutan bir diziye ihtiyacım var. Öyle bir şey olacak ki bu da işte en tane şey varsa her birinde şunların ilgili adreslerini saklayacağız. İşte bu burayı tutacak, bu burayı tutacak, bu başka bir yere tutacak.
+
+587
+02:13:35,444 --> 02:13:42,604
+Ona göre tasarlamamız gerekiyor. Onun için bu bir çift pointer bu tarz şeyler de bazen karışır dikkat edelim.
+
+588
+02:13:43,384 --> 02:13:48,504
+Eleman sayımıza girdik. Artık for döngüsü ile kullanılan stringler alalım.
+
+589
+02:13:49,004 --> 02:13:53,884
+i eşittir 0, i küçüktür n.
+
+590
+02:13:58,452 --> 02:13:59,631
+E art art.
+
+591
+02:14:03,604 --> 02:14:31,404
+Bir skenefle string alalım. Hani burada şey yazabiliyorduk. Geçenlerde ben de anlattım. Sevgi de anlattı size. Ama arada boşluk olmasın. Direkt böyle yazıverelim. Bir tane geçici kısma bunu alıyorum. Bunun bana neyi lazım? Uzunluğu lazım. Ne için? Çünkü şu c'nin her biri bir string tutacak. Kelimelerin her biri bir string tutacak. O tutacağı stringin uzunluğunu da
+
+592
+02:14:31,539 --> 02:14:34,619
+Burada ne girdiysem kullanıcına ona göre ayarlamam gerekiyor.
+
+593
+02:14:35,380 --> 02:14:38,500
+Yani M diyelim buna, STRL'e
+
+594
+02:14:42,003 --> 02:14:42,844
+Dummy diyelim.
+
+595
+02:14:45,783 --> 02:14:48,023
+Şuraya da M diye bir şey getiriyorum.
+
+596
+02:14:49,644 --> 02:14:53,583
+Artık bildiğimiz bir artık kullanıcıdan giren bir string olduğu için bunu böyle yapacağız.
+
+597
+02:14:53,743 --> 02:14:59,684
+Kelimelerin yiyinci karakteri eşittir.
+
+598
+02:15:00,063 --> 02:15:01,783
+Yiyinci elemanı eşittir.
+
+599
+02:15:02,783 --> 02:15:05,103
+Bir karakter dizisi saklayacak demektir.
+
+600
+02:15:06,304 --> 02:15:09,423
+Burada da Clear Allocation deyip
+
+601
+02:15:10,452 --> 02:15:34,271
+M artı bir tane diyorum. Çünkü bu M bana stringteki kelime uzunluğunu, karakter uzunluğunu veriyor. Break slash sıfırı vermiyor. Burada bir tane fazladan söylüyoruz. Size of char diyorum. Bu kadarlık bir yer ayır. Bu ayırdığın yere de şu girdiğimiz verileri kopyalar. Şimdi burada dip kopya yapmak zorundayız. Artık bu dummy sürekli değişecek çünkü.
+
+602
+02:15:34,804 --> 02:16:01,944
+Kelimelerin iyisinin gösterdiği yere bunu dipkopi ile yapmak zorundayız. Burada eşittir operatörünü kullanmak olmuyor arkadaşlar. Neden olmuyor? Bu bir dizi. Eşittir operatörü dizilerin elemanlarını tek tek kopyalamaya tanımlı değil. Dipkopi için. Eğer ben şunu bir değişken olsaydı ve burada da bir değişken tutacak olsaydım o zaman olurdu.
+
+603
+02:16:02,355 --> 02:16:14,675
+Ama burada bir dizi elemanının kaç tane string karakter varsa onların hepsini alacağımız için ne yapacağız? Bir strCopy işimizi görür veya memcopy kullanabiliriz. Memcopy strCopy'ni biraz daha genelleştirmiş hali.
+
+604
+02:16:14,675 --> 02:16:25,675
+Diyorum ki a'nın i'inci karakterine bu bir şeydir. Şuradaki dummy'yi kopyala diyoruz.
+
+605
+02:16:25,716 --> 02:16:43,195
+Eşittir bu iş için tanımlı değil arkadaşlar. Buna dikkat edelim. Sonra diyeceğim ki reverse str array fonksiyonunu çağır. Kelimelerle çağır. Sıfırdan n'e kadar kelimemizden onları çağır diyoruz.
+
+606
+02:16:44,776 --> 02:16:49,855
+Reverse str array. Hatta şöyle diyelim daha anlaşılır olsun.
+
+607
+02:16:51,763 --> 02:16:53,263
+Bu fonksiyonu tanımlayacağız.
+
+608
+02:17:00,211 --> 02:17:13,391
+Kelimeler dediğim şey karakter, yıldız, yıldız, kelimeler, k diyelim. Integer i var, integer n var. Başka da bir şey yok.
+
+609
+02:17:14,331 --> 02:17:25,971
+Burada yine bir reverse işlemi yapacağız. Reverse işlemi yaparken dizideki indisleri yer değiştirebilirsiniz.
+
+610
+02:17:27,379 --> 02:17:48,059
+Yani sıfırıncı neleri yer değiştirmek? Şu gösterilen yer. İşte şunu al, bunu sona koy. Bu kolay. Şuradaki mantıkla onu zaten size çalışmanız için söyleyeceğim. Ben şunu anlattım, bunu anlattım. Burada da bunu sizin yapmanızı isteyeceğim. Kolay bir şey. Ben şimdi normal olanını yapacağım. Aynı mantıkla siz onu kendiniz denersiniz.
+
+611
+02:17:56,051 --> 02:18:18,451
+Olacak olan şey, bunu reverse et. Reverse ederken ne yapıyorduk? Bakın şurada yaptığımız gibi. Bir sonrakini çağır. Önce ne yap? Bir sonrakine git. Reverse. K'ya git. Y artı bir'ye çağır. Y artı bir ve eni çağır.
+
+612
+02:18:24,691 --> 02:18:35,751
+Artık en son noktaya geldiği yerde %s, k'nın i'sini yazacağız.
+
+613
+02:18:40,115 --> 02:19:06,515
+Bu kadar. En sona geldiğimizde ne oluyor? Artık gidiyoruz, gidiyoruz, gidiyoruz. Yani ilerliyoruz. Siteye ekleye ekleye gittik. Siteye her eklediğimizde işte i'nin değerini ve bulunduğumuz satır numarasını veya bir sonraki satır numarasını eklersek işte i1 iken 11'i çağır, i2 iken 11'i çağır, i2 iken 11'i çağır. En son bulunduğumuz işte i n'e geldik.
+
+614
+02:19:07,156 --> 02:19:34,156
+Eşit oldu. Artık ne yapıyoruz? Geriye doğru gelmeye başlıyoruz. Bakın burada tekrar söylüyorum. K'nın bulunduğu yerde herhangi bir şekilde veriler şurada olduğu gibi yer değiştirmiyor. Sadece şuradakini yaptık. Bunu implement etmeniz çok zor değil. Buna bakacaksınız. Adresler, pointerlar ne olacak? Yer değiştirecek sadece. Ona bakmanızı istiyorum. Güzel bir örnek olur.
+
+615
+02:19:35,476 --> 02:19:36,476
+Çalıştıralım.
+
+616
+02:19:40,115 --> 02:19:41,115
+Buyurun.
+
+617
+02:19:42,276 --> 02:19:45,316
+Ben de onu diyecektim hocam. Yanlış şeyim.
+
+618
+02:19:47,115 --> 02:19:48,776
+Anladım. Tamam.
+
+619
+02:19:53,427 --> 02:19:58,307
+Şu incompatible declaration dediği de şu arkadaşlar.
+
+620
+02:20:00,807 --> 02:20:05,367
+Include standard library.h
+
+621
+02:20:05,367 --> 02:20:08,307
+Bunu göremediği için.
+
+622
+02:20:11,307 --> 02:20:15,547
+strln'de herhalde string.h'da olduğu için onu kızıyor.
+
+623
+02:20:32,084 --> 02:20:32,644
+Yerim.
+
+624
+02:20:39,507 --> 02:21:00,407
+Yıldız, Ayşe, Veli, Ali. Tamam. Ama bunlar aynı yerlerinde şeyde duruyor. Bellekte nasıl hangi yerlere aktarıldıysa. Mesela bunu debug yaparsınız. Kelimelerin iyisine burada tahsis edilen yerler. Hadi yapalım. Merak ettim ben.
+
+625
+02:21:13,587 --> 02:21:16,148
+Tabi şurada, evet, boş diyeceğim.
+
+626
+02:21:22,164 --> 02:21:23,164
+Şimdi debug edelim.
+
+627
+02:21:26,963 --> 02:21:30,283
+Bunu da yapabilmek için breakpoint gerekiyor tabi ki.
+
+628
+02:21:43,316 --> 02:21:53,695
+Kelimeler iyi. Nextline dediği böyle bir yer verdi bize. Sonra nextline dediği gittiği oraya bu değeri kopyaladı.
+
+629
+02:21:58,739 --> 02:21:59,619
+Bir daha girelim.
+
+630
+02:22:04,468 --> 02:22:14,748
+Şöyle kelimeleri add watch dersem, herhalde şimdi daha farklı farklı adreslere yapıldığını görüyoruz.
+
+631
+02:22:17,128 --> 02:22:23,168
+Tamam arkadaşlar, diğer şu uyarlamayı da siz isterseniz yapabilirsiniz çalışmak için.
+
+632
+02:22:24,508 --> 02:22:30,587
+Bugünlük hazırladığım örnekler bu şekildeydi. Gelecek hafta bu file operation.
+
+633
+02:22:31,667 --> 02:22:50,827
+Structure ve Recursive falan bu konuların uygulaması olan, Linkedlisklerde belki çoğu şeyi konuştuk da, Binary Search Tree implementasyonuna geleceğim. Bu bizim ayrıkta herkes görmüştür bu iki ders alanlar.
+
+634
+02:22:50,827 --> 02:22:59,128
+İşte in-order, pro-order, pre-order, post-order. Yani infix post-order dönüşümlerinde kullanılan ağaç yapısının aynısını.
+
+635
+02:23:00,020 --> 02:23:22,180
+İmplemente edeceğiz. Traverse işlemlerine bakacağız. Kısmen bir ağaç oluştururuz. Ağacı eklemesi, silmesi çok daha uzun şeyler ama mantığına bakarız. Vakit kalırsa thread konusuna gireriz. Belki thread konusunu bir hafta daha erteleyebilirim ama imkan olursa bakarız yine. Sormak istediğiniz bir şey var mı?
+
+636
+02:23:24,211 --> 02:23:45,231
+Bugün birçoğunuzun sinyal sınavı var. Hepinize öncelikle başarılar dilerim. Sistem saat iki buçukta aktif hale gelecek. Soruları o zaman göreceksiniz. İki de ders normal şekilde başlıyor. Hem Gülkan Hocanın hem de benim. Derste görüşürüz öğleden sonra. Kendinize iyi bakın. Hoşçakalın arkadaşlar.

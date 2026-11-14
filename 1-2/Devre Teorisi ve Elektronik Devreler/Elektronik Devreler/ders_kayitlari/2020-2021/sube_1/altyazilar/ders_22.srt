@@ -1,0 +1,1763 @@
+1
+00:02:24,467 --> 00:02:25,527
+Merhaba arkadaşlar.
+
+2
+00:02:32,051 --> 00:02:41,072
+Sesim geliyor zannedersem. Biraz daha sınıf mevcudumuz artsın. 5-6 geçe gibi dersimize başlayacağız.
+
+3
+00:06:34,036 --> 00:06:39,216
+Merhabalar arkadaşlar. Tekrar seste bir sorun var mı?
+
+4
+00:06:44,435 --> 00:06:45,975
+Sesim geliyor mu arkadaşlar?
+
+5
+00:06:47,875 --> 00:06:49,216
+Geliyor hocam, sorun yok.
+
+6
+00:06:49,216 --> 00:06:49,855
+Tamamdır.
+
+7
+00:06:51,055 --> 00:07:01,096
+Şimdi dersimize geçen haftanın hatırlatmasıyla başlayalım.
+
+8
+00:07:02,235 --> 00:07:07,216
+En son hatırlarsanız arkadaşlar, transistörlerin BJT...
+
+9
+00:07:08,307 --> 00:07:17,507
+Bipolar Jonksiyon Transistor standart versiyonundan, ilk geliştirilen versiyonun haricinde Filt Effect Transistor'lerle devam etmiştik.
+
+10
+00:07:17,507 --> 00:07:23,507
+Bunların çeşitlerini görmüştük. Burada da bir özet tablosu var.
+
+11
+00:07:23,507 --> 00:07:34,908
+Dediğim gibi FET'lerde oluşturulan kanallarla alakalı olarak N kanallı ve P kanallı olmak üzere her çeşidi ikiye ayrılıyor.
+
+12
+00:07:35,315 --> 00:07:42,535
+Şimdi bu özet tablosu arkadaşlar hep en kanallı için özetlenmiş.
+
+13
+00:07:43,195 --> 00:07:47,555
+Buradaki tabloların tam tersi ise P tipi için geçerli.
+
+14
+00:07:47,555 --> 00:07:49,655
+Bu özetimiz en kanallı.
+
+15
+00:07:50,615 --> 00:07:56,275
+Şimdi en kanallı olunca ilk gördüğümüz FET tipi JFET'ti.
+
+16
+00:07:58,035 --> 00:08:00,735
+İkinci tipimiz arkadaşlar.
+
+17
+00:08:01,843 --> 00:08:07,543
+Kanal ayarlamalı dediğimiz, kanal ayarlamalı.
+
+18
+00:08:11,252 --> 00:08:22,932
+D, V-type, V-mosfet olarak geçiyor. Üçüncü çeşitimiz ise kanal oluşturmalı.
+
+19
+00:08:27,891 --> 00:08:33,091
+Bu da İngilizce olarak şey yapacağız. E-Type MOSFET olarak geçiyor.
+
+20
+00:08:34,052 --> 00:08:53,812
+Gördüğünüz gibi son ikisi MOSFET olmalarına rağmen şuradaki IDVGS formüllerine baktığımızda Jifet ve kanal ayarlamalı MOSFET'imiz daha çok benzerlik gösteriyor.
+
+21
+00:08:54,644 --> 00:09:16,283
+Kanal oluşturmalı da ise biliyorsunuz arkadaşlar yapısı biraz daha farklıydı. Orada bir kanal oluşturuluyor öncelikli olarak. Bu kanal oluşturuluktan sonra akım akmaya başlıyordu. En temelde baktığımızda gate, drain ve source'dan oluşan 3 tane bacağı var. Bu her tip mosfetinde.
+
+22
+00:09:21,104 --> 00:09:35,104
+Akım Kontrollü Devre Elemanları derken FETler ise gerilim kontrolüdür.
+
+23
+00:09:37,104 --> 00:09:47,104
+Buradan kastımız şu, hatırlarsanız burada baz akımını önce, baz akımıyla beraber devrenin açılıp kapanması
+
+24
+00:09:47,443 --> 00:10:08,703
+Sağlanırken veya karakteristikleri sağlanırken gerilim kontrolü FET'lerde şuradaki şeyde de göreceğiniz üzere, grafiklerinde de göreceğiniz üzere VGS formülde de göreceğiniz gibi VGS yani Gate ile Source arasındaki gerilim temel belirleyici.
+
+25
+00:10:09,120 --> 00:10:27,340
+Bir parametre. Burada da FET'lerde de ID, VGS grafikleri bizim için çok önemli. Yani ana koldan, drain'den sorsa giden akımla beraber gate ve source arasına uygulanan gerilim bizim için önemli.
+
+26
+00:10:28,159 --> 00:10:36,340
+Şimdi burada bakacak olursak en başta kanal ayarlamalıyla Jifet'in birbirine çok benzediğini söylemiştik.
+
+27
+00:10:37,460 --> 00:11:01,480
+En kanal için konuşursak, okların yönü içeriği gösteriyorsa, şurada gördüğünüz gibi, her ikisinde de, ayarlanan kanal veya jifetin ana yapısındaki kanal, biliyorsunuz jifetleri nasıl tarif etmiştik, etrafını bir kuşak gibi saran bir malzeme vardı ama iç malzeme neyse bunlar P tipindeydi.
+
+28
+00:11:05,076 --> 00:11:32,256
+MOSFETlerde ise bir ucumuz vardı. Şöyle, burada Drain buradaydı. Burada ise Source'umuz buradaydı. Şurası ise Gate'e bağlıydı. Kanal ayarlama ve oluşturmalı değilse ne vardı arkadaşlar? Bizim Drain Source ucumuz buradayken, şurada bir yalıtkan tabakayla beraber
+
+29
+00:11:32,755 --> 00:11:52,235
+Gate'imiz bağlıydı. Eğer burada bir hali hazırda bir kanal varsa, bu kanalın genişliğini ayarlıyorsak buna D-Type MOSFET veya kanal ayarlamalı diyorduk. Eğer o kanal yoksa belli bir gerilim uygulandıktan sonra, gate source arasında o kanal oluştuktan sonra onun genişliğini ayarlıyorsak bu da kanal oluşturmalı diye oluşturuyordu.
+
+30
+00:12:00,755 --> 00:12:12,196
+N tipinde diyorduk. Devamlı. İşte bu oluşturulan ana yapı, substrate buradaki N tipinde ise jifette, hop içeriği gösteriyor. Biz buradan anlıyoruz ki N tipi malzeme.
+
+31
+00:12:12,196 --> 00:12:25,556
+Yine içeriği gösteriyorsa, oluşturulan kanalla alakalı olarak MOSFET'lerde, içeriği gösteriyorsa, şu şekilde bizim kanalım, oluşturulan kanalımız N tipinde demekti.
+
+32
+00:12:26,227 --> 00:12:39,488
+Şimdi tekrar grafiklerine ve akım, gerilim formülüzasyonuna bakacak olursak hepsinde temel olarak gate'ten geçen akım sıfır, id ise ıs'ya eşit.
+
+33
+00:12:40,248 --> 00:12:50,087
+Hepsinde bu geçerli. Yani gate'ten gelen akım yok. Drain ve source arasında ise akımlar birbirine tam eşit.
+
+34
+00:12:50,548 --> 00:13:03,407
+BJT'lerde ise yaklaşık IE eşittir. Yaklaşık olarak demiştik. Burada ise ID tam anlamıyla ISY eşit. Farklı olarak.
+
+35
+00:13:04,687 --> 00:13:10,467
+Şimdi en temelde jifeti gördüğümüzde N tipi, N kanal için konuşuyorum.
+
+36
+00:13:11,220 --> 00:13:32,240
+VGS'ye negatif bir gerilim uygulanmaya başlıyor. Belli bir pinch-off gerilimi var. Bu pinch-off gerilimi kanalın tamamıyla kapandığını, yani şuradaki oluşturulan malzeme, PN kanalının etrafında oluşan depletion region tamamıyla kapadığı zaman buna pinch-off gerilimi diyorduk.
+
+37
+00:13:32,240 --> 00:13:36,879
+Bu pinch-off gerilimi VGS'de örneğin eksili bir gerilimde.
+
+38
+00:13:37,812 --> 00:14:02,451
+Eksili gerilimlerde ve bu tamamıyla Gate Source arasındaki gerilim, PGS sıfırlandığında, yani hiç gerilim uygulanmadığında maksimum değerine ulaşıyor. Buna da IDSS diyoruz. Akacak maksimum akım budur. Demek ki N kanallı jifet için belli bir eksili gerilimden maksimum sıfıra kadar olan gerilimi uyguluyoruz.
+
+39
+00:14:03,059 --> 00:14:24,179
+Tabi ki formülizasyona bakacak olursak, VGS bizim ana inputumuz. Pinçok burada transistöre özgü bir parametre. IDSS de aynı şekilde transistöre özgü bir parametre. ID, VGS grafiğini çizerek biz bunu oluşturuyoruz.
+
+40
+00:14:27,796 --> 00:14:32,375
+Eğer bir matematikten düşünecek olursak eğrisel bir ifadeye dönüştürüyor.
+
+41
+00:14:33,296 --> 00:14:42,276
+Şimdi burada mavi olarak gördüğünüz eğri kabaca düşünecek olursak yardımcı çizim noktalarımız var bize.
+
+42
+00:14:42,276 --> 00:14:51,236
+Diyeceğiz ki IDSS'nin yarısı yaklaşık olarak Pinchoff'un 0.3 katına denk geliyor diyoruz.
+
+43
+00:14:51,316 --> 00:14:52,656
+Bir ara nokta belirliyoruz.
+
+44
+00:14:53,296 --> 00:14:54,355
+A ara noktası.
+
+45
+00:14:55,220 --> 00:15:10,559
+Pinchof'un yarısı ise şuradaki IDSS'nin dörtte birine gelir deyip B noktası belirleyeceğiz. Dolayısıyla Pinchof'umuzu biliyoruz, IDSS'imizi biliyoruz.
+
+46
+00:15:10,559 --> 00:15:22,319
+A ve B noktalarımızı biliyorsak bunların üzerinden geçecek bir eğri karakteristiği oluşturduğumuzda yaklaşık I, D, V, G, S karakteristiği ortaya çıkmış oluyor.
+
+47
+00:15:23,187 --> 00:15:37,587
+Peki, bunun haricinde ne demiştik? Kanal ayarlamalı yani D-type MOSFET ise aynı formülizasyon olarak bakalım. Aynı şekilde Jifet'e benziyor.
+
+48
+00:15:37,587 --> 00:15:47,340
+Burada hala hazırda bir kanal vardı. Bu kanalın gerilimleri, şuradaki oluşturulan kanalı kastediyorum. Bu kanal gerilimi...
+
+49
+00:15:47,412 --> 00:16:08,392
+Belli bir VGS geriliminden itibaren çalışmaya başlıyor. Belli bir negatif gerilimde tamamıyla bu kanal yok oluyor ve bu kanaldan akım akmıyor eğer VGS gerilimi negatifte belli bir değerden başlıyor. Aynen jifetlerde olduğu gibi.
+
+50
+00:16:10,960 --> 00:16:38,360
+Biz pozitif VGS'yi negatif gelimden sıfıra doğru yaklaştırdıkça ne olmuş oluyor arkadaşlar? Bizim buradaki enleri çekişimiz artıyor. Kanal genişlemeye başlıyor. Buradan Jifet'in aksine sıfırda durmuyoruz. VGS maksimum kanal genişliğine sıfırda ulaşıyordu. Sıfır değil pozitif gelimlere de geçebiliyoruz.
+
+51
+00:16:38,960 --> 00:16:48,679
+Düğünüz gibi pozitif alana da geçiyoruz. Pozitif alanın demesi ne demek? Buradaki kanalın gittikçe daha da artması demek. Maksimum şuralara kadar girebilir.
+
+52
+00:16:49,504 --> 00:17:04,503
+O kanaldan daha çok elektron geçebiliyor. Dolayısıyla IDSS'de durmuyor. Pozitif gerilimleri verdikçe kanal genişliği artmaya devam ediyor. Farkı bu, temel farkı. Formülizasyonu yine aynı şekilde.
+
+53
+00:17:18,291 --> 00:17:45,192
+Yaklaşık 0.3 ve Pinchoff gelinimine denk geliyor. Temel farkı bu. Peki, kanal oluşturmalı bunlardan tamamıyla farklı. Mosfet olmasına rağmen kanal ayarlamalıyla yaklaşık olarak Jifet birbirine eşitken, kanal oluşturmalı da arkadaşlar hatırlarsanız önce bir kanalımız yoktu.
+
+54
+00:17:45,940 --> 00:18:00,740
+Buradaki şu gate'e, yani şuradaki gate'e, şurası drain olmak istiyor, burası source olmak istiyor. Belli bir gerilim uyguluyoruz. Belli bir pozitif gerilim uyguladıktan sonra buradaki malzemeler n-tipi için anlatıyoruz tabii ki.
+
+55
+00:18:12,564 --> 00:18:23,584
+Burada da tabii ID, VGS grafiği varken belli bir trash pozitif gerilimde artık sıfırla VGS arasında belli bir pozitif gerilimde artık kanal oluşuyor.
+
+56
+00:18:23,584 --> 00:18:32,584
+Bu kanalın oluştuğu gerilim threshold gerilimi V threshold olarak adlandırılıyor. Ondan sonra...
+
+57
+00:18:33,460 --> 00:18:54,700
+Formizasyonu farklı. ID ile VGS burada neler arkadaşlar? Temelde bizim belirleyici parametrelerimiz. ID VGS grafiğini çiziyoruz. Arkasından şurada Vs eksik kalmış.
+
+58
+00:19:01,172 --> 00:19:25,271
+Beraber belli bir katsayıyla çarpıyoruz. Bu katsayı transistöre özgü. Buradaki threshold gerilimi de V threshold da aynı zamanda transistöre özgü. Demek ki VGS ile ID'nin grifiye çiriyoruz. Ama burada kareli bir ifade var. Buradaki threshold geriliminden sonra bu kareli ifadeye göre belli bir eğri çizerek yukarı doğru akım akıyor.
+
+59
+00:19:28,432 --> 00:19:49,052
+N kanal için. Eğer P kanal için düşünecek olursak bu eğriler tam tersi değil mi? Tam tersi olacak P kanal için. P'de artık VGS-ID grafiği bu sefer negatif bir threshold'dan başlayacak.
+
+60
+00:19:53,652 --> 00:19:59,711
+Burada da eğri pozitif bir pinch of'tan başladıktan sonra bu tarafa doğru yönelecek.
+
+61
+00:20:00,211 --> 00:20:04,832
+Aynı şekilde Jifet'te de tam tersi bir grafik olacak.
+
+62
+00:20:04,832 --> 00:20:13,972
+Belli bir pozitif gerilimden başladıktan sonra IDSS'ye sıfır noktasında varmış olacak.
+
+63
+00:20:14,172 --> 00:20:15,652
+Bunlar P kanallar için.
+
+64
+00:20:16,552 --> 00:20:19,052
+Kısaca yapacağımız özet bu arkadaşlar.
+
+65
+00:20:21,203 --> 00:20:23,583
+Burada sormak istediğiniz bir soru var mı?
+
+66
+00:20:30,036 --> 00:20:32,115
+3 kanalı 3 tipi de gördük.
+
+67
+00:20:32,596 --> 00:20:43,675
+Sormak istediğiniz bir soru yoksa yavaştan bu tarz devrelerin çözümüyle alakalı nasıl davranıyoruz onlara bakacağız.
+
+68
+00:20:43,816 --> 00:20:48,855
+Daha sonra mosfetlerle alakalı sorularımıza geçeceğiz arkadaşlar.
+
+69
+00:20:50,867 --> 00:21:09,127
+Şimdi hatırlarsanız BJT'leri gördükten sonra orada farklı devre yapılarından bahsetmiştik. Burada da Jifet'leri DC olarak çalışabilir bölgeye getirebilmek için çeşitli devre kurulumları var.
+
+70
+00:21:09,503 --> 00:21:34,983
+Üzerinde AC işaretler rahatlıkla ne yapabilsin? Çalışan bölgede stabil olarak çalışabilsin diye. Burada üç tane jifet yapımı karakteristiği veya konfigürasyonu var. Sabit gerilimli, kendinden gerilimli ve gerilim bölücü devre olmak üzere. D-Type MOSFET'te yani bizim kanal ayarlamalı da.
+
+71
+00:21:37,779 --> 00:21:50,660
+Kanal ayarlamalı ise yine arkadaşlar iki tip var. Kendinden gerilimli ve de iki gerilim bölücü yapısı var.
+
+72
+00:21:52,039 --> 00:22:00,420
+Üçüncü tipimiz kanal oluşturmalı. Bunda da geri beslemeli konfigürasyon varken.
+
+73
+00:22:00,915 --> 00:22:06,915
+Aynı şekilde voltaj gerilim bölcülüğü yapısı var.
+
+74
+00:22:07,576 --> 00:22:19,895
+Şimdi kısaca bunlara bakacak olursak, bunlar aynı zamanda sizi bir sonraki derste göreceğimiz FET sorularına da hazırlayan temelleri vermiş olacağız.
+
+75
+00:22:19,895 --> 00:22:25,175
+Dediğim gibi, gate gerilimi yaklaşık sıfır kabul ediliyor.
+
+76
+00:22:25,295 --> 00:22:27,135
+Gate'den akım atmıyor.
+
+77
+00:22:27,604 --> 00:22:41,364
+Hatırlarsanız BJT'lerde ise IB sıfıra çok yakında mikrolar seviyesindeydi. Bir de aklımızda tutacağımız için, bütün FET'ler için demiş bu da, ID, IS'ye eşittir dedik.
+
+78
+00:22:46,644 --> 00:22:53,463
+Temel şey ise jifetler ve kanal ayarlamalı mosfetlerin formalizasyonu bu şekilde.
+
+79
+00:23:08,559 --> 00:23:27,599
+yapıyoruz. I'de K çarpı VGS eksi VT'nin karesi şeklinde yapıyoruz. Burada bizim sabitlerimizi yuvarlak içine alayım. Gördüğünüz gibi sadece I'de VGS kaldı. Burada da aynı şekilde I'de VGS kalmış oldu.
+
+80
+00:23:27,599 --> 00:23:30,880
+Şimdi jifetten başlıyoruz.
+
+81
+00:23:32,627 --> 00:23:42,668
+Hatırlarsın, bu ne tip bir jifet arkadaşlar? Ok içeri gösteriyorsa. Ok içeri gösteriyorsa ne tip bir jifettir bu?
+
+82
+00:23:45,507 --> 00:23:46,407
+N tipi mi hocam?
+
+83
+00:23:47,107 --> 00:23:57,447
+Evet, N tipi. Peki, N tipi yapıda uygulanan VGS gelimi nasıldı? [öğrenci], Yılmaz.
+
+84
+00:24:05,011 --> 00:24:05,631
+[öğrenci].
+
+85
+00:24:12,980 --> 00:24:15,920
+Şu anda dersi dinleyenler bir el kaldırabilirler mi?
+
+86
+00:24:22,132 --> 00:24:24,312
+Bakalım yüzde kaç devamımız var?
+
+87
+00:24:29,587 --> 00:24:31,807
+Evet, devam ettim arkadaşlar.
+
+88
+00:24:35,700 --> 00:25:03,279
+Şu anda 18 kişi var. 19'a geldi. 20 kişiye geldi. Demek ki 13 kişi şu anda dinlemiyor. Onların akıllı bilgisayarları var. O bilgisayarları onları daha sonra anlatacak demek ki. Ben öyle anlıyorum. Bilgisayarlarına görev vermişler. Benim yerime dinle, akşam bana anlat diyorlar. Gerekirse soru sorsalar bilgisayarlara da soru sorduracaklar demek ki.
+
+89
+00:25:03,892 --> 00:25:13,372
+Kendileri bilirler arkadaşlar. Ama sadece bilgisayarı açıp gitmek çok mantıklı ve size yakışan bir davranış değil.
+
+90
+00:25:13,512 --> 00:25:14,132
+Onu söyleyeyim.
+
+91
+00:25:18,872 --> 00:25:23,612
+[öğrenci], Soner, söyle bakalım VGS'yi nasıl uygulayacaktık burada?
+
+92
+00:25:24,372 --> 00:25:26,912
+Gate ve Source gelimi Ent ve Jifet'te nasıldı?
+
+93
+00:25:29,252 --> 00:25:30,932
+Pozitif miydi, negatif miydi? Öyle sorayım.
+
+94
+00:25:32,403 --> 00:25:33,663
+Çalışan bölgede.
+
+95
+00:25:38,644 --> 00:25:38,963
+Evet.
+
+96
+00:25:44,339 --> 00:25:46,419
+Kime demiştik? [öğrenci]'e mi demiştik?
+
+97
+00:25:48,699 --> 00:25:50,619
+Evet hocam, chatten cevabını verdi.
+
+98
+00:25:51,799 --> 00:25:52,299
+Verdi mi?
+
+99
+00:25:53,179 --> 00:25:53,500
+Evet.
+
+100
+00:25:53,839 --> 00:25:56,019
+Bakıyorum. Tamam, negatif, doğru.
+
+101
+00:25:56,519 --> 00:25:58,159
+Hemen aklımıza şu grafik gelsin.
+
+102
+00:25:58,679 --> 00:25:59,939
+Bunun böyle bir grafiği var.
+
+103
+00:26:01,259 --> 00:26:07,319
+Şimdi, hakikaten de bakın burada, gate ve source arasına negatif bir gerilim uygulanmış.
+
+104
+00:26:07,979 --> 00:26:11,399
+Demek ki sabit gerilimli konflürasyonda, VDD'yi buraya bağlıyoruz.
+
+105
+00:26:12,019 --> 00:26:20,939
+Ondan sonra buradan bir ıd yakımı akıyor. Şurada bir direncimiz var. Sorsa sabitlemek amacıyla bir direnç atılmamış.
+
+106
+00:26:20,939 --> 00:26:33,619
+Burada basitçe yazacak olursak şuradaki devreye, devredeki yolu ne diyeceğiz? Vdd gelimi nedir? ıd çarpı rd.
+
+107
+00:26:34,195 --> 00:26:52,435
+ID çarpı RD. Yani bunun üzerinde düşen gerilim. VRD diyelim. Artı buraya geldiğimizde Drain ile Sors arasında bir gerilim düşecek. Artı VDS. Ondan sonra zaten toprağa gidiyoruz. Bu kadar yaptığımızda.
+
+108
+00:27:00,115 --> 00:27:12,815
+Burada vc demiş ama vc diye bir yer yok. Vd olacak burası. Vd, vds eşit. Hakikaten öyle mi? Bakalım vd eşittir. Vds mi?
+
+109
+00:27:14,035 --> 00:27:22,076
+Vds dediğimiz zaman ne gelecekti aklımıza? vd eksi vs gelecekti. vs sıfır olunca vd eşittir vs oluyor. Doğru.
+
+110
+00:27:27,955 --> 00:27:38,955
+Vgs ise, burada V demiş, Vgs demiş ama ne demek istemiş? Vgs'e işte, eksi Vgg. Yani buraya uygulanan DC gelimi kastediyor.
+
+111
+00:27:38,955 --> 00:27:52,955
+Şimdi Self-Bias Configuration dediğimiz zaman, hem Drain'e hem Source ucuna bağlı iki tane direnç var.
+
+112
+00:27:53,119 --> 00:28:04,079
+Aynı zamanda Gates Sources arasına da uygulanan gerilim bir paralel olarak düşünecek olursak, şuradaki Vg, bakın şunları birleştirebiliriz böyle.
+
+113
+00:28:05,139 --> 00:28:07,499
+Vg gerilim, Vg eşittir.
+
+114
+00:28:08,619 --> 00:28:19,079
+Vg yazacak olursak, Vgs, şuradan itibaren aşağı inersek, artı Is çarpı Rs'dir.
+
+115
+00:28:19,407 --> 00:28:34,927
+ISD neye eşit? ID'ye eşit olduğu zaman artık VG'ye uygulan gerilim neyse buradaki paralel koldan işte oradaki gerilim bunların toplamına eşit olacak. Bununla alakalı soruları da soracağız.
+
+116
+00:28:34,927 --> 00:28:45,107
+Aslında şöyle de diyebiliriz ona. Burada ne demiş? VGS eşittir. Indicated loop'a göre demiş.
+
+117
+00:28:45,875 --> 00:29:03,056
+Benim vs eşittir vs yazmış vs'yi eksi vs diyebilir miyiz? Çünkü buradan akım akmayacağı zaman buradaki gerilimiz 0 olmuş olacak. O zaman ne yapacak?
+
+118
+00:29:04,276 --> 00:29:11,115
+vs eşittir eksi vs çarpı vs veya buraya vs diyebilirsiniz.
+
+119
+00:29:11,955 --> 00:29:36,036
+Peki bu koldan gidecek olursak ne diyeceğiz? VDD eşittir. ID çarpı RD artı VDS artı VS çarpı IS. Şuradakiler birbirine eşit. Bu şekilde bir hesaplama yapıyoruz. Bunlarla alakalı sorular soracağız arkadaşlar. Dolayısıyla rahat rahat yapabilir seviyeye geleceksiniz.
+
+120
+00:29:37,236 --> 00:29:58,036
+Şimdi gerilim bölücü devre, en basitinden gerilim bölücü deyince aklınıza şu gelsin. Şurada iki tane direnç var diye düşünün. Şurada toprağa gidiyor. Tam bu orta noktadaki gerilimi bulmak istiyorsunuz. B noktasındaki. Buradan da bir V uygulamışsınız.
+
+121
+00:30:05,172 --> 00:30:11,711
+Basit bir oranla R2 bölü R1 artı R2 çarpı V'dir.
+
+122
+00:30:12,891 --> 00:30:23,011
+Örneğin, burası 10 volt olsun, burası 2 volt olsun, 2 kilo ohm olsun, burası da 3 kilo ohm olsun veya 2x birim 3x birim olsun.
+
+123
+00:30:23,711 --> 00:30:25,172
+Bu durumda ne olacak arkadaşlar?
+
+124
+00:30:25,940 --> 00:30:42,220
+Bunun üzerine düşen gelilim daha fazla olacak. 3'ün üzerine. 2'nin üzerine düşen gelilim. Burada oransal olarak paylaşıyorlar. Yani buraya 6 volt düşerken buraya 4 volt düşüyor. Bakın R1 artı R2 de onu sağlıyor zaten.
+
+125
+00:30:51,859 --> 00:30:59,940
+Ne olmuş oldu arkadaşlar? 2 bölü 5. Yani ben şu noktadan itibaren gerilimin 2 bölü 5'ini alırım.
+
+126
+00:30:59,940 --> 00:31:08,759
+Onunla çarparsan 4 voltunu ben alırım diyor. Çünkü buradaki temel şey ikisinin üzerinden de aynı akım geçiyor.
+
+127
+00:31:09,399 --> 00:31:18,879
+Aynı akım geçince hangi direnç daha yüksekse onda daha çok gerilim barınır. Niye? I çarpı R1.
+
+128
+00:31:19,731 --> 00:31:45,971
+Artı, değil mi? I çarpı R2 eşittir. 10 volt buradaki hesaba göre. Dolayısıyla I'lar eşitse, üzerinde hangisinin R'si daha büyükse, onda daha çok gerilim toplanacaktır. İkisi de eşit olursa R1, R2 ortada 5 volt. Yani eşit miktarda gerilimler paylaşacaktır.
+
+129
+00:31:47,220 --> 00:31:56,220
+Burada da aynı şekilde şu ıg'den geçen akım sıfır. Temelde hep bunu kabul edeceğiz.
+
+130
+00:31:57,019 --> 00:32:04,720
+Öncelikli olarak şu vg noktasındaki gerilimi şu r1 ve r2'nin oranlarından vdd üzerinden çıkarıyoruz.
+
+131
+00:32:04,720 --> 00:32:08,439
+Yani vdd üzerinden buraya belli bir gerilim uygulanıyor.
+
+132
+00:32:09,419 --> 00:32:14,359
+Şimdi vg ne durumda? vg eşittir.
+
+133
+00:32:15,251 --> 00:32:20,432
+V2 bölü, V1 artı V2 çarpı VDD.
+
+134
+00:32:21,471 --> 00:32:24,132
+Buradaki gelimi bulduk. Peki VG'miz ne bizim?
+
+135
+00:32:25,152 --> 00:32:32,652
+VG'miz VG eşittir. Yani buraya uygulamadan bir noktadan başladığınız A'dan B'ye kadar gidelim bakalım.
+
+136
+00:32:33,951 --> 00:32:36,352
+VG eşittir. Yani A noktası.
+
+137
+00:32:37,251 --> 00:32:41,652
+VGS, yani şu aradaki gelin. Şöyle gidiyoruz.
+
+138
+00:32:42,259 --> 00:32:47,420
+Artı Is çarpı Rs şeklinde yapılandırıyoruz.
+
+139
+00:32:48,100 --> 00:32:51,680
+Peki gidebileceğimiz ikinci bir yol var. Orası neresi? Şu kol.
+
+140
+00:32:51,680 --> 00:32:54,580
+Yani bu sefer B noktasından gidiyoruz.
+
+141
+00:32:55,060 --> 00:32:59,380
+B noktasının gerilimi ne? Vd'de eşittir.
+
+142
+00:33:00,019 --> 00:33:07,800
+Id çarpı Rs artı Vds artı Is çarpı Rs.
+
+143
+00:33:09,203 --> 00:33:18,223
+Şeklinde iki taraftan ID'leri ve VGS'leri bulabileceğimiz iki tane denklemimiz çıkmış oluyor.
+
+144
+00:33:19,503 --> 00:33:27,844
+Bakın burada da onu anlatmış. Demin size anlattığım VG'nin yani tam şu orta noktanın bulunuşuyla alakalı.
+
+145
+00:33:27,844 --> 00:33:33,323
+VGS işte ben ne demiştim? VGS.
+
+146
+00:33:34,195 --> 00:33:57,715
+Eşittir. Vg. İki tane noktasal. Yani V, Vg ve Vs'nin. Yani şuranın ve şu noktanın. Vs burası, burası da Vg farkı. Şu aradaki gelimi verir. Öyle değil mi? Şöyle bir kara kutu yapalım. Şurası A noktası, şurası B noktası. Bu direnç olur, kapasite olur.
+
+147
+00:33:58,516 --> 00:34:08,155
+Bunun üzerinde düşen gerilimi bulmak isterken ne diyoruz? VAB diyoruz. VAB eşittir. VA-VB diyoruz.
+
+148
+00:34:08,155 --> 00:34:21,456
+VG neydi? Zaten buradan bulmuştuk onu. VS ne? Tam bu noktanın toprağı olan gerilimi. IS çarpı RS şeklinde hesaplanıyor.
+
+149
+00:34:23,435 --> 00:34:25,876
+Devam edelim. Şimdi.
+
+150
+00:34:27,092 --> 00:34:43,952
+Benim bulduğum şu eğriye göre bakın Vg'yi buldum. Ondan sonra bu sabit gelmiyor. Bakın id ile Vgs'nin arasında lineer bir doğru çizilebileceğimiz yapı var.
+
+151
+00:34:43,952 --> 00:34:53,832
+Yani y eşittir c eksi a çarpı x.
+
+152
+00:34:54,579 --> 00:35:12,480
+Değişkenlerim neler? BGS ve IDEM. Bu burası, bu da burası. Dolayısıyla buradan bir nedir bu? Doğru denklemi. Dolayısıyla devrenin çalıştığı Q point'ine yani çalışma noktasını nasıl buluruz?
+
+153
+00:35:18,963 --> 00:35:40,604
+IDSS karakteristiklerini biliyorsak şu mavi var elimizde. Aynı zamanda sırasıyla şöyle bir denklem de kurmuştuk. Sırasıyla VGS'ye sıfır verdiğimizde ID'yi bulduğumuz, yani VGS'ye sıfır verdiğimiz yer burası. O anda ID'nin olduğu yer, şurayı buluruz.
+
+154
+00:35:40,911 --> 00:35:47,011
+ID'ye 0 verdiğimizde o denklemde bu sefer VGS eksenini kestiği yeri buluruz.
+
+155
+00:35:47,011 --> 00:35:55,011
+Buradan bir doğru çizdiğimizde şurası yani çalışma noktasını belirlemiş oluruz.
+
+156
+00:35:55,931 --> 00:35:59,751
+Bu VGS 0 iken ID neymiş? Şuradaki.
+
+157
+00:36:00,820 --> 00:36:23,079
+Linear denkleme göre bulunuyor. Demek ki bizim formüllerimiz bize neyi sağlıyorlar? Çalışma noktasını bulmamızı sağlıyorlar. Tam orada da neleri belirleyeceğiz? Tam bu noktanın VGS Q'sunu ve
+
+158
+00:36:23,487 --> 00:36:33,547
+I, D, S, I, D, Q'sunu bulmuş. Yani çalışmadaki Gate Source gelimiyle akımını, I, D akımını bulmuş oluyoruz.
+
+159
+00:36:35,647 --> 00:36:39,367
+Evet, buradan devam edelim.
+
+160
+00:36:41,867 --> 00:36:50,367
+Aynı şekilde, burada da işte bahsettiğim V, D, D noktasından itibaren...
+
+161
+00:36:51,027 --> 00:36:59,707
+Şurada yazmış olduğum şu akışa göre formülleri çıkarmışlar burada da.
+
+162
+00:37:00,667 --> 00:37:05,527
+VDS eşitti. Burada VDS'yi bir tarafa çekmiş. Ben öbür tarafta VDD ile başlamıştım.
+
+163
+00:37:06,427 --> 00:37:14,407
+Sırasıyla işte VD eşittir. VDD-ID çarpı RDE. Drain'in ucu ve source ucu.
+
+164
+00:37:14,407 --> 00:37:17,507
+Yani tam şuradaki uçlar olmuş oluyor.
+
+165
+00:37:18,291 --> 00:37:31,211
+Şurası Drain ucu. Yani bizim elektronik elemanımızın tam giriş yaptığı ucu. Devre elemanlarının bağlanmadığı. Burası da Vs, burası da Vd. Tam şurası da Vg.
+
+166
+00:37:36,083 --> 00:37:42,583
+Evet, şimdi D-Type MOSFET'lerde çözümler nasıl oluyor ona bir bakalım.
+
+167
+00:37:43,583 --> 00:37:55,283
+Burada arkadaşlar, şu mavi kutucuklarla verilenler size, verilenler transistörlere özgü karakteristikler.
+
+168
+00:37:55,283 --> 00:38:01,583
+Bakın burada da N tipi bir kanal ayarlamalı MOSFET var. Vermişler burada.
+
+169
+00:38:01,780 --> 00:38:08,020
+Burada da aynı şekilde şu Vg gerilimini şuradaki gerilim bölücü üzerinden oluşturuyorsunuz.
+
+170
+00:38:08,020 --> 00:38:12,460
+Bir de diğer yoldan devam edip ne yapıyorsunuz?
+
+171
+00:38:12,539 --> 00:38:15,200
+Kendi çözümümüzü buluyoruz.
+
+172
+00:38:15,980 --> 00:38:17,539
+Vg eşittir.
+
+173
+00:38:18,500 --> 00:38:19,800
+R2 diyelim şuna.
+
+174
+00:38:20,579 --> 00:38:24,180
+R2, R1, R2 bölü R1 artı R2.
+
+175
+00:38:25,204 --> 00:38:40,844
+Çarpı 18 Volt burada. Diğer yoldan gidecek olursak 18 Volt yani VD diyelim ona. Buna VD derler genellikle. VDD derler pardon. Direğini besleyen direkt uç.
+
+176
+00:38:52,371 --> 00:39:12,271
+Is çarpı 750. Bunun pin çofu eksi 3 voltmuş. I DSS'si 6 mA'miş. Bunu bize neden veriyor arkadaşlar? Şu yüzden veriyor. Bakın. I DSS'si 6 mA ve pin çofu eksi 3 volt.
+
+177
+00:39:12,271 --> 00:39:20,271
+Bize burada şu iki noktayı verdi. Biz de bu eğriyi yaklaşık olarak çizebiliriz.
+
+178
+00:39:20,724 --> 00:39:29,684
+Şunu biliyoruz, eğer bu kanal ayarlamalı ise ve n tipi ise şöyle olacak. Yani pozitif kısmada geçiş yapacak.
+
+179
+00:39:31,224 --> 00:39:36,604
+ıd vg seyrisi yaklaşık böyle olacak. Bize şurada iki noktayı vermiş.
+
+180
+00:39:38,124 --> 00:39:39,404
+Bizim burada
+
+181
+00:39:40,944 --> 00:39:45,564
+Yani şurada eksi bir buçukta yani Pinchoff'un yarısında
+
+182
+00:39:45,876 --> 00:40:07,076
+Yaklaşık olarak ne olacaktı arkadaşlar? IDSS'nin dörtte biri. IDSS kaç? Altı. Dörtte birine bir buçuk. Şu noktayı biz belirleyebiliriz. Peki, IDSS'nin yarısını 3 volt. Yaklaşık olarak da bu nereye denk gelecek arkadaşlar?
+
+183
+00:40:07,891 --> 00:40:32,211
+0.3 VP'ye gelecek. 0.3 VP'de yaklaşık 0.9 oldu. Bakın şu iki noktayı belirledikten sonra şuraya kadar geliriz. Artık bu noktayı belirlememiz için, şu dışarıdaki noktayı belirlememiz için başka bir VGS, başka bir VGS değerini de bilmemiz lazım ki.
+
+184
+00:40:32,628 --> 00:40:37,248
+O noktadan itibaren yaklaşık gittiği eğriyi çizebilelim arkadaşlar.
+
+185
+00:40:39,668 --> 00:40:42,427
+Onunla alakalı sorumuz da var. Aynı şekilde.
+
+186
+00:40:45,007 --> 00:40:49,788
+Şimdi aynı şekilde burada biz neyi elde etmiştik?
+
+187
+00:40:49,788 --> 00:40:56,327
+Şurada Vg eşittir. Aynı şeydeki gibi, Jifet'teki gibi. Vgs eşittir.
+
+188
+00:40:57,608 --> 00:40:59,748
+Pardon, Vg eşittir.
+
+189
+00:41:00,244 --> 00:41:15,224
+Vgs- Is çarpı Rs'den aynı şekilde, eğer biz buradan gelin bölücüden burayı buluyorsak, Vgs ve Is üzerinde lineer bir doğru denklem var.
+
+190
+00:41:26,771 --> 00:41:28,672
+Bula biliyoruz arkadaşlar.
+
+191
+00:41:33,492 --> 00:41:56,812
+Sıra geldik, E-Type MOSFET'leri. E-Type MOSFET'lerde biliyorsunuz, tipine göre burası mesela pozitif bir threshold gerilimine sahip. VGS gerilimine sahip. Threshold VGS'sine sahip. Şurada akım sıfır, artık belli bir noktadan sonra kanal ilk oluşmaya başladığından ona threshold gerilimini diyorduk.
+
+192
+00:41:57,396 --> 00:42:10,356
+Ne yapıyoruz arkadaşlar? N tipinde pozitif bir şey vardır. Tam tersine P tipinde ise tam tersi yönde ve negatif bir threshold gerilimi oluşur.
+
+193
+00:42:10,356 --> 00:42:20,776
+Bu devrelerin çözümünde K'nın bulunması önemli bir faktör. Onunla da alakalı ara noktaları vererek
+
+194
+00:42:21,108 --> 00:42:27,548
+Buradaki eğimin nasıl olacağına dair, K'nın ne olduğuna dair bir hesaplama yapmamız gerekiyor. Onu da göstereceğim.
+
+195
+00:42:28,927 --> 00:42:34,668
+Bu kanal içeri gösteriyor. Demek ki oluşacak kanal N tipindeymiş.
+
+196
+00:42:35,447 --> 00:42:40,807
+Kendinden beslemeli bu yapıda ne demiş? IG sıfır amperse.
+
+197
+00:42:41,396 --> 00:42:58,356
+V R G yani buradaki sıfırsa buradan da sıfır geçer. Dolayısıyla şurası V R G yaklaşık sıfırdır demiş. Buradaki gerilim, A noktasındaki gerilim aynen V G'de görünür. Niye?
+
+198
+00:43:05,344 --> 00:43:29,364
+G uçları arasındaki gelin farkı sıfırdır. Dolayısıyla şurası A noktası neye eşit olmuş oluyor? VDS'ye eşit olmuş. Artı, eksi olmak üzere VDS. VDS neye eşit aynı zamanda? V. D'ye eşit. Niye? VDS direkt toprağa bağlandığı için sıfıra eşit olmuş oluyor.
+
+199
+00:43:31,092 --> 00:43:45,032
+Bu feedback gerilimleme. Hakikaten buradan bir feedback yapıyoruz. Olabildiğince en düşük akım buradan geçtiği için direkt Vg'de Vd'nin gerilimi oluşmuş oluyor arkadaşlar.
+
+200
+00:43:47,032 --> 00:43:57,771
+Şimdi tabii ki buradaki Vgs'nin hesabını yapacak olursak, şöyle bakacak olursak, Vg'nin gerilimi
+
+201
+00:43:59,507 --> 00:44:20,087
+Vgs eşittir demiştik. Vgs eşittir, Vg'ye eşit demiştik. Vg neye eşitti? V a'ya eşitti buradaki. V a neye eşitti? V ds'ye eşit. V ds'yi nasıl yazarız? Şuradaki v ds'yi arkadaşlar.
+
+202
+00:44:26,260 --> 00:44:53,039
+Eşittir. ÜD çarpı RD artı VDS. Demek ki VDS yerine ne yazabiliriz? VDD eksi ÜD çarpı RD. Buraya VDD eksi ÜD çarpı RD. VA neydi bizim? VG'mizdi.
+
+203
+00:44:54,324 --> 00:45:14,844
+Vg aynı zamanda Vgse eşitti. Şu denklem çıkmış oluyor. Vd'de verilen bir gerilimiz, besleme gerilimiz. Şu da sabit. Buradan y eşittir. A eksi x çarpı b şeklinde bir.
+
+204
+00:45:15,603 --> 00:45:25,503
+Neyimiz var? Lineer denklemimiz var. Aynı şekilde eğer biz doğru bir şekilde bu eğriyi oluşturabilmişsek şayet ne yaparız?
+
+205
+00:45:25,503 --> 00:45:41,503
+Bu lineer denklemin sırasıyla ı d'ye sıfır verdiğimizde VGS ekranın eksenini kestiği yeri, VGS'ye sıfır verdiğimizde ise ı d eksenini kestiği yerleri buluruz.
+
+206
+00:45:43,411 --> 00:45:47,711
+Çalışma noktasını belirlemiş oluruz arkadaşlar.
+
+207
+00:45:49,331 --> 00:45:54,391
+Yine kanal oluşturmalıda da benzer bir yapı var.
+
+208
+00:45:56,291 --> 00:45:59,951
+Vg'yi artık biliyorsunuz buradaki geliminin nasıl hesaplandığını.
+
+209
+00:46:00,551 --> 00:46:02,591
+R2 bölü R1 artı R2'den geliyor.
+
+210
+00:46:03,431 --> 00:46:07,692
+Şuradan gidecek olursak Vg ise Vg eşittir.
+
+211
+00:46:09,108 --> 00:46:23,588
+Artı Is çarpı Rs'den Vgs'yi bir tarafa çekersek şunu elde etmiş oluyoruz. Diğer ana koldan gidersek de ne yazıyoruz? Vd'de eşittir.
+
+212
+00:46:31,764 --> 00:46:40,204
+Şurada VDS'yi bir tarafa çekecek olursak, buradaki gibi 3. denklam takımını da elde ediyoruz arkadaşlar.
+
+213
+00:46:42,523 --> 00:46:48,463
+Şimdi burada da kısaca şundan bahsetmiş. P kanallarda ne yapacağız?
+
+214
+00:46:49,364 --> 00:46:56,824
+Grafikler diyor, en kanallı grafiklerin aynalanmış şeklidir diyor. Hangi eksene göre?
+
+215
+00:46:57,364 --> 00:47:06,283
+Şuradaki y eksenine göre. Örneğin n tipi cifret de bu şekildeyken aynalayacak olursak bunu y eksenine göre.
+
+216
+00:47:06,283 --> 00:47:20,884
+Eğer y ekseni id idi. Vgs ekseninin tam sıfır olduğu noktaya göre şu eksene göre aynalanmış şeklidir arkadaşlar.
+
+217
+00:47:26,099 --> 00:47:40,739
+FET'lerle anlatacağım uygulamalar bu kadar. Artık yavaş yavaş bunlarla alakalı sorulara geçelim. Sizin şu ana kadar sormaksızdığınız bir soru var mı arkadaşlar?
+
+218
+00:47:45,748 --> 00:48:00,668
+Yok zannedersem. Şimdi sorular kısmına geldik. Şimdi arkadaşlar, dersle alakalı bütün slide'ları şuraya koydum.
+
+219
+00:48:02,291 --> 00:48:23,131
+Ders yuvarına gelecek olursak, bu hafta işlediğim ders Elektronik Devreler 12 slide'ı. Daha önce çözdüğümüz sorular, Elektronik Devreler Sorular 1 PDF'i de burada var. Aynı zamanda bu ders, şimdi çözmeye başlayacağım FET'lerle alakalı soruların içeren PDF'de burada var arkadaşlar.
+
+220
+00:48:33,427 --> 00:48:35,867
+İndirebiliyor musunuz arkadaşlar? Bir denermişsiniz.
+
+221
+00:48:39,443 --> 00:48:48,623
+İniyormuş. Evet, burada çözümler var. Başlıyoruz çözmeye.
+
+222
+00:48:48,623 --> 00:48:52,664
+Evet, gelelim.
+
+223
+00:48:59,063 --> 00:49:06,623
+Zaten dersin başında bahsetmiş olduğum en kanallar için...
+
+224
+00:49:07,027 --> 00:49:21,768
+N kanal için çözümler, grafikler burada var. Bu üç tipi bilmemiz gerekiyor. Hadi çözmeye başlayalım. Birkaç tane soru. Daha sonra önümüzdeki ders devam ediyoruz.
+
+225
+00:49:23,347 --> 00:49:34,288
+Şimdi demiş ki bir jifet için olacak. Ödss 12 mA ve pin çofu eksi 6 olsun demiş.
+
+226
+00:49:34,963 --> 00:49:45,463
+Bunu bir çizin demiş. Çizelim. Bize ıd sesini vermiş. Kırmızı ile yapayım bunu. Şurası 12 mA ve eksi 6'yı vermiş.
+
+227
+00:49:46,303 --> 00:49:50,683
+Şimdi bu mavi çizgiyi çizmemizi istiyor bizden. O yüzden ne yapacağız?
+
+228
+00:49:51,503 --> 00:49:58,403
+ıd bölü 2, m'ye denk düşecekti. ıd bölü 2, 6'ya denk geliyor.
+
+229
+00:50:00,000 --> 00:50:08,539
+Buradaki eksende kestiği nokta ise V-Pincho çarpı 0.3'dür. O da ne?
+
+230
+00:50:09,840 --> 00:50:20,119
+Eksi 6 çarpı 0.3, eksi 1.8. Demek ki şurası. Eksi 1.8 ile çakıştırdığımız yer şu D noktası olsun.
+
+231
+00:50:23,635 --> 00:50:49,735
+İkinci bir şeyimiz var. ID'nin yarısını yaptığımızda 0.3VP. Bir de Vp'nin yarısını yapalım. Burası da eksi 3. Vp'nin bölü 2. O da neye dengelecekti? IDSS bölü 4'e denk gelecekti. Kesiştirelim. Şurası da A noktamız olsun. Artık elimizde kaç nokta var? 1.
+
+232
+00:50:50,228 --> 00:50:59,547
+2, 3, 4 nokta. Artık şu şekilde yaklaşık olarak bunu çizebiliyoruz.
+
+233
+00:51:03,380 --> 00:51:29,599
+Şimdi jifvetler ve BJT'ler arasındaki benzerlik ve farklar neler? Her ikisi de 3 kollu, 3 tane bacağı olan bir devre elemanı. BJT'lerde neyimiz vardı? Kollektör ucumuz, baz ucumuz ve emetör ucumuz. Baz ile emetör arasına sabitlemiştik hatırlarsanız. 0.7 volttu. Bu silisyum.
+
+234
+00:51:30,003 --> 00:51:37,764
+Transistörler için IB çok düşüktü. IC yaklaşık IE'ye eşittir.
+
+235
+00:51:38,764 --> 00:51:48,244
+Ve de bakın ne demiş burada? IC yaklaşık olarak beta çarpı IB'ye eşittir. IC de yaklaşık IE'ye eşittir demiştik.
+
+236
+00:51:48,244 --> 00:51:53,244
+Ve baz emetöre ise sabit bir değer olan 0.7'yi vermiştik.
+
+237
+00:51:54,547 --> 00:52:06,567
+Peki jifetlerde hangi uçlarımız var? Drain, gate ve source uçlarımız var. Peki burada sabit olan değerimiz ne? Ög'nin sıfır olması yaklaşık olarak.
+
+238
+00:52:08,708 --> 00:52:15,788
+Peki eşitliklerimiz nelerdi? Ana koldaki yakın. Öd de yaklaşık. Aynı Öc'nin Öğe eşit olması gibi eşittir.
+
+239
+00:52:22,452 --> 00:52:34,231
+Biz burada ana değişkenlerimiz olan VGS ve ID'nin karesel bir formalizasyonu vardı. Bunları akılda tutacağız soru çözümleri için muhakkak.
+
+240
+00:52:36,612 --> 00:52:41,891
+Şimdi ne demiş? Bu sefer D-Type MOSFET.
+
+241
+00:52:45,748 --> 00:53:01,288
+Depletion Type MOSFET için çizim yapın demiş bize. Bu çizimi yaparken IDSS'yi vermiş 10 mA. IDSS'yi verdiyse şurayı bulduk demektir. Pinch of da eksi 4 volt. Orayı da bulduk.
+
+242
+00:53:02,008 --> 00:53:11,168
+Ne diyeceğiz? IDSS'nin yarısı yani 5'e denk gelen kısım yaklaşık pinch of'un 0.3 katı.
+
+243
+00:53:11,668 --> 00:53:38,367
+Yani eksi 4 çarpı 0.3, eksi 1.2. Şurası B noktamız. Peki, A noktası nasıl bulacağız? Pinchoff'un yarısı, yani eksi 2 volt. Nereye denk geliyordu? IDSS'nin 4'te biline yaklaşık. Artık şu 4 noktayı biliyoruz. Çizeceğiz ama bu sefer VGS'nin pozitif olduğu yere nasıl gideceğiz? Onun için de şunu kullanacağız arkadaşlar.
+
+244
+00:53:39,188 --> 00:53:42,508
+Formülizasyonumuz neydi bizim D-type MOSFET'lerde? Bu.
+
+245
+00:53:42,508 --> 00:53:47,168
+I-D-S-S'yi biliyoruz. Bu ara noktaları da aynı şekilde bulabilirsiniz.
+
+246
+00:53:47,927 --> 00:53:54,128
+1-VGS bölü VP'den ne yapıyorsunuz arkadaşlar? Yerine koyalım.
+
+247
+00:53:54,588 --> 00:54:00,568
+Bir de dışarıdan bir nokta belirlemek için VGS'nin artı 1 olduğu yerdeki değerini yazıyorsunuz.
+
+248
+00:54:01,008 --> 00:54:06,427
+O da yaklaşık 15.63 çıktı. Burası şöyle bir eğriymiş demek ki.
+
+249
+00:54:07,539 --> 00:54:20,879
+VGS'ye eksi 2 verdiğinizde yaklaşık IDSS'nin dörtte biri olan noktayı bulacaksınızdır.
+
+250
+00:54:22,132 --> 00:54:35,992
+Bakın, eksi 2 olduğu zaman 1-1 bölü 2 ne eder bu da arkadaşlar? 1 bölü 2'nin karesi çarpı ı ds ise kaç? 4'te biri. Bakın buraya denk gelmiş oluyor.
+
+251
+00:54:38,132 --> 00:54:49,992
+Evet, dediğim gibi MOSFET'lerde öncelikli olarak bizim çözümümüzü sağlayacak MOSFET'in karakteristiğini bilmemiz lazım ki,
+
+252
+00:54:50,164 --> 00:55:05,624
+Daha sonra devreden bulmuş olduğumuz lineer denklem takımıyla VGS ve ID'yi ilgilendiren bunları çakıştırarak yaklaşık nerede çalıştığını bulabilelim arkadaşlar.
+
+253
+00:55:05,624 --> 00:55:11,204
+O yüzden ilk başta o şeylerin çizimi önemli bizim için.
+
+254
+00:55:11,904 --> 00:55:13,444
+Mavi ile gösterilen.
+
+255
+00:55:13,972 --> 00:55:20,732
+ve MOSFET'e karakteristik olan eğrinin IDVGS eğrisinin bulunması önemli.
+
+256
+00:55:21,732 --> 00:55:31,012
+Evet, şimdi bir ara verelim isterseniz. 14.54 saat 3'ü 5 gece başlayalım. Bir sonraki ders.
+
+257
+00:55:31,012 --> 00:55:38,292
+E-type MOSFET'in eğrisi nasıl çizilir ile beraber devam edeceğiz.
+
+258
+00:55:39,539 --> 00:55:41,760
+3-5 geçe görüşmek üzere arkadaşlar.
+
+259
+01:06:23,188 --> 01:06:39,067
+Tekrar merhaba arkadaşlar. En son transistörlere uygun eğrilerin çizimi ile alakalı çalışıyorduk. En son kanal oluşturmalı, it-type mosfet için neler veriliyor?
+
+260
+01:06:48,788 --> 01:06:51,988
+Burada nerede belirtmiş?
+
+261
+01:06:54,228 --> 01:07:01,348
+Burada VGS10 ve Threshold gerilimi verilmişse 3.
+
+262
+01:07:02,108 --> 01:07:06,908
+VGS10 verilmiş. Herhalde burada gösterilmiyor ama verilmiş.
+
+263
+01:07:07,827 --> 01:07:17,407
+Burada ve de ID10 yani çalışmadaki VGS ve ID10'lara göre önce K kat sayısını çıkarıyoruz arkadaşlar.
+
+264
+01:07:17,407 --> 01:07:22,567
+K kat sayısının birimi amper bölü volt kare.
+
+265
+01:07:23,668 --> 01:07:29,168
+ID10 demek ki 3 ve 3 mA 10 volta denk gelen bir çalışma.
+
+266
+01:07:29,715 --> 01:07:46,436
+A ve B noktasını sahibiz. Dolayısıyla şu ara noktaları değerlendirerek, yani C, D, E ve F'leri değerlendirerek bunları bulabiliriz.
+
+267
+01:07:46,436 --> 01:07:53,436
+Burada tek eksiğimiz bizim şuradaki K idi. O da K'yı muhakkak verilen çalışmadaki.
+
+268
+01:07:53,940 --> 01:08:04,880
+Bir noktadan muhakkak vermeleri lazım. O da verilmiş. 3 mA 10V. Şurada göstermiyor mu? Zannedersem o kısım eksik.
+
+269
+01:08:04,880 --> 01:08:18,920
+Onu bulduktan sonra artık sırasıyla örneğin 5 için. Mesela burada 5 için vermiş. Yaklaşık 0.2 mA. Şuraya denk gelen kısım.
+
+270
+01:08:19,604 --> 01:08:37,884
+Alakalı yerler vermiş. Aynı zamanda 8 içinde hesaplayabiliriz bunu. Ve de dışarıdan bir nokta var olmak üzere 12 ve de 14 içinde bulduğumuz zaman şu eğriyi çizebilecek kalitede ara noktalara sahip oluyoruz arkadaşlar.
+
+271
+01:08:40,564 --> 01:08:44,744
+Evet, yavaş yavaş artık sorularımıza geçelim.
+
+272
+01:08:46,547 --> 01:09:00,047
+Burada bir tane jifet verilmiş. Verilenler IDSS'nin 10 mA olduğu, Pinchoff'un ise 8V olduğu bir yapı verilmiş.
+
+273
+01:09:00,404 --> 01:09:09,884
+Diyor ki, burada çalışmadaki akımı, gerilimi, VGS, IDQ'sini, VDS'ini, VD, VGS ve VSS'ini, bunu demiş.
+
+274
+01:09:09,884 --> 01:09:15,764
+Bu N tipi olduğuna göre ve N tipi bir cifret olduğuna göre şu şekilde bir eğrisi olacak.
+
+275
+01:09:15,764 --> 01:09:25,244
+Şimdi burada tam şu noktayı kestiği yer 10 mA, pinch-off gerilimi ise eksi 8 V.
+
+276
+01:09:25,244 --> 01:09:27,284
+Ve pinch-off gerilimi.
+
+277
+01:09:27,988 --> 01:09:32,688
+Şimdi burada, şurayı da VGS diyelim, muhakkak birimlerimizi yazalım.
+
+278
+01:09:34,528 --> 01:09:44,028
+Şimdi biz şunu buluyoruz. VGS'yi bulabilmek için, bakın burada sabit fixed bias olduğu zaman IG'nin sıfır olduğunu biliyoruz.
+
+279
+01:09:44,028 --> 01:09:53,128
+Dolayısıyla şuradaki 1 mega ohmluk direncin üzerinde düşen gerilim ne olacak arkadaşlar? 0 volt olacak.
+
+280
+01:09:53,684 --> 01:10:15,623
+Dolayısıyla ne dememiz lazım? Şuradaki A noktasına göre konuşacak olursak. VA noktası neye eşitti? Eksi 2 volta eşitti. Ters bağlanmış çünkü. Aynı zamanda neye eşit o? VGS'ye eşit değil mi? VGS'ye eşit. Tam şu A noktası için diyecek olursak.
+
+281
+01:10:21,235 --> 01:10:27,915
+ÖG çarpı 1 M.
+
+282
+01:10:31,764 --> 01:10:57,083
+Eksi, ters bağlandığı için eksi diyorum. Eksi 2 volt olması lazım. Buradan geçen akım 0 olduğu için ve A noktası o yüzden eksi 2 volt dedim. Ona da VGG gerilimi demiş. VGG gerilimi. Yani benim gate giden bacaktaki gerilim olarak orada VGSQ'yu direkt hiçbir çizim yapmadan bulmuş olduk. Eksi 2 volt.
+
+283
+01:10:57,587 --> 01:11:04,268
+Demek ki fixed gerilimlerde şuradan akım atmayacağını bildiğimiz için eksi 2 volt var.
+
+284
+01:11:05,947 --> 01:11:10,167
+Şimdi burada IDQ.
+
+285
+01:11:11,167 --> 01:11:13,507
+IDQ'ya bakalım arkadaşlar.
+
+286
+01:11:14,647 --> 01:11:16,087
+IDQ ise benim.
+
+287
+01:11:19,827 --> 01:11:22,047
+Formülümden çıkarabilirim. Niye?
+
+288
+01:11:24,595 --> 01:11:40,995
+Vgs gelimi biliyorum. Yani şunu bulmuş durumdayım. Direkt Idq'yu formalizasyonda yerine koyarak, ki burada vpin çok'u biliyorum size, x8 volt. Yerine koyduğumuzda 5.625 volt direkt bulunmuş oluyor.
+
+289
+01:11:51,220 --> 01:12:09,220
+2 kilo 10 artı VDS diyeceğim. Burası 16 volt eşittir. ID çarpı 2 kilo 10. ID nereden gelecek? Şurada bulmuştuk. 5.625 mili amper.
+
+290
+01:12:10,003 --> 01:12:31,224
+Çarpı 2 kilo ohm. Tabi burası 10 üzeri 3. Burası 10 üzeri x 3. Bunlar birbirini getirdik. Birimleri ve şeyleri tam anlamıyla yazmamız lazım. Artı VDS. Buradan 16'dan şu değeri, çarpımın değerini çıkardığımızda direkt VDS'yi buluyoruz. Burada da onu yapmış. 16.
+
+291
+01:12:31,828 --> 01:12:42,488
+Eksi 5, 625 çarpı 2. O da 4,75. Yani şuradaki gerilim 4,75'miş. Peki VD'deki gerilimi nasıl buluruz?
+
+292
+01:12:43,488 --> 01:12:57,708
+VD, VDS artı VS. VS zaten 0. Direkt toprağa bağlandığı için. Şurası 0. Demek ki direkt VD, VDS eşit.
+
+293
+01:12:58,452 --> 01:13:06,811
+Buradan da şunu söyleyebiliriz veya farklı bir şekilde bulmak istersek şudaki VD gerilimini.
+
+294
+01:13:06,811 --> 01:13:19,612
+VD eşittir 16 volt eksi 2 kilo ohm çarpı ID'den de bulabiliriz. Tersten de gidebiliriz yani.
+
+295
+01:13:22,163 --> 01:13:37,984
+En sonunda V'deydi. Vg zaten şurasıydı. Ne eşitti? Eksi Vgs'e eşitti. Vgs'e eşitti. Vg. O da eksi 2 volt. Vs'nin de 0 volt olduğunu söylemiş olduk zaten.
+
+296
+01:13:39,583 --> 01:13:46,423
+Şimdi burada bir tane de en kanal jifetimiz var.
+
+297
+01:13:47,220 --> 01:13:50,540
+Bunun konfigürasyonu nasıl arkadaşlar?
+
+298
+01:13:50,540 --> 01:13:55,920
+Gerilim bölücülü. Yani tam şu nokta Vg'ye denk geliyor.
+
+299
+01:13:57,200 --> 01:14:00,780
+Vg neydi arkadaşlar? R1 artı 2 Vd'di.
+
+300
+01:14:01,560 --> 01:14:05,900
+Şurası 270 KM, şurası 2.1 Mh verilmiş.
+
+301
+01:14:07,180 --> 01:14:14,860
+Şimdi burada yerlerine koyduğumuzda tam şu noktadaki gerilim bölücüden dolayı 1.82 V bulunmuş.
+
+302
+01:14:15,636 --> 01:14:23,016
+Bir de neyi biliyoruz biz arkadaşlar? Tam bu noktayı bildiğimize göre şuradan bir VG eşittir.
+
+303
+01:14:24,756 --> 01:14:28,236
+VGS, devam edelim. Şurası VGS.
+
+304
+01:14:30,236 --> 01:14:35,176
+Artı ID, aslında IS burası, ID diyebiliriz.
+
+305
+01:14:35,316 --> 01:14:37,615
+Çarpı 1,5 kilo.
+
+306
+01:14:37,615 --> 01:14:40,332
+Bu bizim...
+
+307
+01:14:40,435 --> 01:14:43,635
+Neyimiz arkadaşlar? Liner Denklemimiz.
+
+308
+01:14:44,815 --> 01:15:04,935
+Burada bir de verilenler var. Artık bunları yerine yerleştirip çalışmadaki akım ve gerilimi, VD'yi, onları bulduktan sonra sırasıyla noktasal gerilimleri, VD, şuradaki VS, VDS ve VDG'yi bulabileceğiz.
+
+309
+01:15:06,931 --> 01:15:24,551
+Bize ıdss 8 mA verilmiş. Pinch of gelimi extort word verilmiş. Burada nelere dikkat etmemiz lazım arkadaşlar? Bu eğriyi çizmemiz lazım. Bu eğriyi nasıl çizeceğiz?
+
+310
+01:15:28,884 --> 01:15:51,863
+Pinchoff'un 0.3'ü yani eksi 1.2'ye denk gelen kısmı. Şu ara noktayı bulduk. Ondan sonra neyi bulmamız gerekiyor arkadaşlar? Pinchoff'un yarısı da yaklaşık 4'te 1'i. Şu noktayı bulduk. Şu eğriyi çizdik. Kırmızıyla çizdiğim mavi eğriyi çizdik.
+
+311
+01:15:54,899 --> 01:16:00,819
+Şurada sırasıyla VGS'ye sıfır verdiğimizde ID'yi bulacağız.
+
+312
+01:16:02,068 --> 01:16:07,948
+Daha sonra ıd'ye 0 verdiğimizde Vgs'yi bulacağız. Sırasıyla burada onu vermişler.
+
+313
+01:16:08,068 --> 01:16:17,148
+ıd'ye 0 verdiğinde Vgs 1.82 volt. Vgs'ye 0 verdiğinde ıd 1.21 mA çıkmış.
+
+314
+01:16:17,148 --> 01:16:24,228
+Yani şu noktayı bulmuş. Ne zaman ıd'ye 0 verdiğinde ıd'nin 0 aldığı değer neyse burası.
+
+315
+01:16:26,228 --> 01:16:45,628
+Peki, aynı şekilde VGS'ye sıfır verdiği yerlerimiz burası. Orada da 1.21 mA. Dolayısıyla iki noktaya sahibiz. Şurası ve şurası. Çizdiğimizde yaklaşık olarak şu Q noktasını bulmuş oluyoruz arkadaşlar.
+
+316
+01:16:47,028 --> 01:17:14,407
+Oradan da yaklaşık olarak bakmış. 2.5 diyebilirsiniz. 2.4 diyebilirsiniz. Fark etmez. Bu 2.4 demiş. Aşağı indimdilse 2'den biraz aç. Eksi 1.8, eksi 1.9 diyebilirsiniz. Eksi 1.8 bulmuş. Bunlar benim çalışmadaki ıdq ve vdq. Bunları bildikten sonra artık her değeri sırasıyla bulabilirsiniz.
+
+317
+01:17:15,252 --> 01:17:29,172
+Burada VD'yi hesaplayacak olursak iki türlü bulabiliriz. VDD-ID çarpı RD diyelim buna da. RD eşittir.
+
+318
+01:17:30,452 --> 01:17:41,032
+Yani böyle geldik, şurada durduk. VDD kaçtı? 16 volt. Eksi ID'yi, Q'yu biliyoruz artık. O da yaklaşık kaçtı?
+
+319
+01:17:41,652 --> 01:17:58,592
+2.4 mA çarpı 2.4 kilo ohm. Bu da bizim Vd değerimizmiş. Bakalım. Burada 10.24'ü bulmuş.
+
+320
+01:17:58,592 --> 01:18:06,572
+Vs'yi hesaplayacak olursak, tam bu noktadan aşağı indiğimizde o da ne eşit? Vs eşittir.
+
+321
+01:18:06,579 --> 01:18:25,139
+Is çarpı Rs. Bu da Rs direnci olsun. Bu da ıd eşit ıs. 2.4 mA çarpı 1.5 kilo ohm. Çarptığımızda neyi bulmuşuz? 3.6 voltu bulmuşuz.
+
+322
+01:18:29,680 --> 01:18:41,680
+Vd-Vs diyerek Vds'yi bulabiliriz. Yani 10-24'den 3.6'yı çıkardığımızda Vds'yi bulabiliriz. Veya ne yaparız? Şöyle bir şey de yapabiliriz.
+
+323
+01:18:42,360 --> 01:18:51,760
+16 volttan şunun üzerinde düşen gerilimi, Vd'nin üzerinde düşen gerilimi ve Rs'nin üzerinde düşen gerilimi çıkardığımızda geriye ne kalıyor bize?
+
+324
+01:18:52,671 --> 01:19:19,511
+Şuradaki VDS gerilimi kalmış oluyor. Öbür türlü bulacağımız yol odur. Burada da onu yapmış zaten. İkisi birbirinin aynısı olmalı. Bakın, VD-VS 6.64 bulmuş burada. VDD 16-RD artı RS. Niye? IDH'tir, IS olduğu için. RS ile de aynı sayıyı çarpabilir. 6.64 bulmuş olduk arkadaşlar.
+
+325
+01:19:21,268 --> 01:19:32,127
+Vdg dediğimiz zaman da Vg'yi biliyoruz. Vd'yi biliyoruz. Onları çıkardığımız zaman da Vdg gelimini bulmuş oluyoruz arkadaşlar.
+
+326
+01:19:32,127 --> 01:19:49,127
+Evet, burada da aynı şekilde bizim kanal ayarlamalı yani D-Type MOSFET'imiz.
+
+327
+01:19:49,492 --> 01:19:50,492
+var.
+
+328
+01:19:50,492 --> 01:20:14,492
+Şimdi bu monsuetinin içerisinde bakın bize neleri vermişler. ıdss ve vps'ini vermişler. Bundan sonrakileri zaten aşağı yukarı biliyorsunuz arkadaşlar. Bizim şöyle ıd ve vgs grafiğimiz olacak.
+
+329
+01:20:14,944 --> 01:20:42,344
+Şöyle başlayacak ve birazcık dışarı çıkacak. Tam burayı kestiği yer 6 mA. Pin çofu eksi 3 volt. Eksi 3'ün yarısı şuraya denk geliyor. Eksi 1.5 daha. Nereye denk gelecek? Dörtte biri. Altının. O da 1.5'a denk geliyor. 3 volt. 3 mA pardon. 3 mA ise yaklaşık.
+
+330
+01:20:42,963 --> 01:20:53,103
+0.3 ile çarptığımızda, eksi 0.9. Buradaki eksiliklere, artılıklara muhakkak dikkat edin arkadaşlar. Şu ara yerleri de biliyorum.
+
+331
+01:20:53,103 --> 01:21:06,283
+Ve de ıd ile alakalı 1 eksi Vgs bölü Vpinçof'un karesinden, pardon şurada bir de ıdss çarpım vardı.
+
+332
+01:21:07,444 --> 01:21:14,684
+Artık dışarıda bir de nokta belirleriz. Artı 1 volttaki değerini de beliriz. Şu dışarıdaki eğriyi de elde etmiş oluruz.
+
+333
+01:21:16,203 --> 01:21:26,984
+Şimdi burada da onları yapmışlar. Dışarıda artı 1 volt verdiğinde VGS'ye yaklaşık 10.67'ye denk getirmiş. Yani şurası 10.67.
+
+334
+01:21:27,488 --> 01:21:47,188
+Tabii bunları siz soruları çözerken muhakkak ne yapıyorsunuz? Ölçekli. Yani 2, 3 yani artımlara eşit aralıklar vermeniz lazım ki daha sonra bizim doğru denklemizi verdiğimizde uygun bir dekü.
+
+335
+01:21:47,859 --> 01:22:00,260
+VGSQ değerlerini bulabilmeniz için. Öbür türlü çok kayma yapar. Bunu muhakkak kendi çizimlerinizde denemelerinizde eşitaralıkla yapmayı unutmayın arkadaşlar.
+
+336
+01:22:02,260 --> 01:22:14,079
+Bunu bulmuşuz. Daha sonra VG'nin hesabı gerekiyor. Burası 10 birim. Burası 1 birim.
+
+337
+01:22:14,868 --> 01:22:16,228
+Burası 11 birim.
+
+338
+01:22:16,847 --> 01:22:21,847
+Dolayısıyla 18 voltun kaçta kaçı şu VG'ye denk düşecek?
+
+339
+01:22:22,948 --> 01:22:26,448
+1 bölü 12'si çarpı 18 volt.
+
+340
+01:22:26,448 --> 01:22:27,808
+Ne eşit olacak?
+
+341
+01:22:28,588 --> 01:22:37,328
+Gate gerilimimize eşit olacak.
+
+342
+01:22:37,448 --> 01:22:38,668
+Bakın burada da onu yapmış.
+
+343
+01:22:39,288 --> 01:22:41,028
+O da 1,5 volt verilmiş.
+
+344
+01:22:41,423 --> 01:23:00,783
+Artı, şuradaki çevreden Vg eşittir. Vgs eksi Is çarpı Rs. Buradan geçen hakkımız Is. Is'de Id'ye eşit. Böylelikle doğru denklemimiz çıkmış oldu. Şu yani.
+
+345
+01:23:02,203 --> 01:23:08,423
+Artık bunun üzerinde sırasıyla Vgs'ye sıfır vereceğiz. Oradan Id'yi çekeceğiz.
+
+346
+01:23:09,268 --> 01:23:18,067
+ID bulunacak. Daha sonra ID'ye 0 vereceğiz. VGS'yi bulacağız. Örneğin ID'ye 0 verdiğimizde VGS direkt 1.5 oldu.
+
+347
+01:23:18,067 --> 01:23:21,768
+Denk geliyor. Yani şu siyahla gösterilen
+
+348
+01:23:22,676 --> 01:23:30,115
+Eksen kesim noktalarını bulacağız. ID'nin sıfır olduğu yer neresi? Burası. Şurada denk olacağız.
+
+349
+01:23:30,636 --> 01:23:38,496
+VGS'nin sıfır olduğu yer neresi? Şurası. Şu eksende şu noktayı bulacağız. Bunları da demin çizdirmiştik hatırlarsanız.
+
+350
+01:23:38,496 --> 01:23:49,115
+Tam düzgün bir şekilde orantılarak gidersek yaklaşık olarak 3 mA diyebilirsiniz. Burada 3.1 demiş.
+
+351
+01:23:50,003 --> 01:24:05,443
+Veya şurada 0.8 demiş kesim noktasına IDQ ve VGSQ'yu bulmuş. Sırasıyla bundan sonra bize sorulanlar neler? Bunu bulduktan sonra VDS'yi bulundurmuş.
+
+352
+01:24:16,724 --> 01:24:34,503
+18V eşittir. 1.8 Kilo Ohm çarpı I'd artı R'de artı I'de çarpı.
+
+353
+01:24:35,283 --> 01:24:45,283
+Veya Is Burası Çarpı Rs'yi yazarsınız. Artık bizim ıd'lerimizi bildiğimize göre bu çıkarmaların sonucunda Vd'si bulursunuz.
+
+354
+01:24:47,743 --> 01:24:51,923
+Evet, şuraya kadar gelmiş olduk.
+
+355
+01:24:53,583 --> 01:24:57,783
+Evet, o da 10.1 Volt'muş arkadaşlar.
+
+356
+01:24:59,783 --> 01:25:01,583
+Şimdi gelelim.
+
+357
+01:25:05,779 --> 01:25:12,599
+Şimdi gelelim farklı tipte bir kanal ayarlamanın farklı tipte bir konflüasyonuna.
+
+358
+01:25:13,739 --> 01:25:19,019
+Burada bakın Vg noktası neydi? Şurasıydı. Hatırlarsanız demek soruları.
+
+359
+01:25:19,019 --> 01:25:24,159
+Ig sıfır olduğu için Vg'yi neye işleyecektik direkt?
+
+360
+01:25:24,679 --> 01:25:30,519
+Vg eşittik. Vgs yani şurası.
+
+361
+01:25:34,036 --> 01:25:59,836
+Değil mi? Is çarpı Rs. Şöyle gittiğimizde. Fakat biz biliyoruz ki şuradan ıg akımı sıfır olduğu için şuradan da bir şey gelmediğini düşünün. Orası input yeri çünkü. Buradan geçen akım da sıfır olacak. Buradaki akım da sıfır olacak. Dolayısıyla burada bir gerilim düşümü yok. Gerilim düşümü olmaya gerek. Sanki Vg sıfır.
+
+362
+01:26:00,627 --> 01:26:24,507
+Burada Vg sıfır. Burada da yerine sıfır koyduğumuzda Vgs neye eşit olacak? Eksi Is çarpı Rs'ye eşit olacak. Veya Is'nin yerine Id de koyabilirsiniz. Vgs eşitir. Eksi Id çarpı Rs. Bize burada neyi soruyor peki? Idq ve Vgsq'yu soruyor.
+
+363
+01:26:24,948 --> 01:26:29,948
+Demek ki buradaki kanal ayarlamalının nesini bulacağız arkadaşlar?
+
+364
+01:26:30,788 --> 01:26:39,008
+Öncelik olarak Pinch Off'u eksi 8 volt verilmiş ve de IDSS'i 8 volt verilmiş.
+
+365
+01:26:39,968 --> 01:26:42,408
+Şimdi ara noktalarını tabii ki hesaplayacağız yine.
+
+366
+01:26:43,628 --> 01:26:45,708
+IDSS'nin yarısı 4.
+
+367
+01:26:46,307 --> 01:26:50,528
+Yaklaşık o Pinch Off çarpı 0.3 çarptığımızda 2.4'e denk geliyor.
+
+368
+01:26:50,668 --> 01:26:51,748
+Bir noktayı bulduk.
+
+369
+01:26:53,108 --> 01:26:57,728
+Aynı zamanda x8, x4'ün yarısı da neye eşitti arkadaşlar?
+
+370
+01:26:58,468 --> 01:27:01,388
+4'te 1'ine eşitti. Bu noktayı çizdik.
+
+371
+01:27:02,548 --> 01:27:04,428
+Dışarıdaki noktamızı da çizdik.
+
+372
+01:27:05,288 --> 01:27:07,288
+2 vererek bu sefer bulmuşuz.
+
+373
+01:27:07,288 --> 01:27:10,448
+Bakın, şurada 2 vererek bulmuşuz.
+
+374
+01:27:10,508 --> 01:27:12,468
+12,5 mA denk geliyormuş.
+
+375
+01:27:12,768 --> 01:27:13,208
+Şurası.
+
+376
+01:27:13,988 --> 01:27:14,988
+Eğrimizi çizdik.
+
+377
+01:27:15,968 --> 01:27:18,288
+Çünkü şimdi elimizde bizim...
+
+378
+01:27:18,931 --> 01:27:41,331
+Ne var? Vgs. Yani y eşitti eksi x çarpı a. Niye a dedim vs? Sabit bir değeri var çünkü. 2.4. Dolayısıyla bu doğru denklemi nereden geçecek? Orijinden geçecek. Evet, orijinden geçtiğini biliyoruz.
+
+379
+01:27:46,228 --> 01:28:11,087
+Kesim yaptığı yeri bulabilmek için artık buradan geçtiriyoruz. Dışarıda bir nokta veriyoruz. Örneğin, eksi 6'da aldığı değeri, VGS eksi 6 iken aldığı değeri verebiliriz. Şurada, eksi 6 için RS'yi biliyoruz. ID kaç olacak? Onu bulabiliriz. Burada onu yapmışlar. 2,5 mA denk getirmiş. Yani şurası 2,5 mA.
+
+380
+01:28:11,648 --> 01:28:23,347
+Şu noktayı da bulmuş. Orijinden geçtiğini biliyoruz. Kestirdik bunu buraya. Yaklaşık olarak IDQ 1.8 de diyebilirsiniz. 1.7 demiş bu mesela.
+
+381
+01:28:24,228 --> 01:28:37,347
+VGSQ'ya bakıyoruz. Tam şurayı kestiği yere. Eksi 4'ü biraz aşmış. Eksi 4.2 diyebilirsiniz. Eksi 4.3 demiş. Dolayısıyla çalışma akım ve gerilimlerini bulmuş.
+
+382
+01:28:38,899 --> 01:28:53,899
+Ardından VD'yi hesaplıyoruz. VD'de arkadaşlar gördüğünüz gibi, şuradaki denkleme baktığımda artık I, D'yi biliyorsanız şuradaki gelimi çok rahat bulabilirsiniz. Ne yapacaksınız?
+
+383
+01:29:06,515 --> 01:29:13,595
+Artı VDS artı ID çarpı 2.4 kilo.
+
+384
+01:29:14,435 --> 01:29:19,756
+ID ortak parantezini alırsanız ID'yi de biliyorsunuz.
+
+385
+01:29:19,756 --> 01:29:26,635
+Dolayısıyla 20 volttan bunların çarpımı çıkardığınız zaman, şuradaki gibi, pardon.
+
+386
+01:29:31,028 --> 01:29:50,967
+Burada VDS'yi bulmamış. VD'yi istemiş. VDD derken, Eksi ID çarpı RD derseniz, direkt tam şu noktadaki gerilimi bulmuş olursunuz. Sadece 20 volttan şunun, şunda düşen gerilimi düştüğünüz zaman VD noktasına gelmiş oluyorsunuz zaten.
+
+387
+01:29:58,739 --> 01:30:05,460
+Bu da ıd'ye eşit çarpı 2.4 kilo 10 olarak hesaplanıyor.
+
+388
+01:30:08,460 --> 01:30:08,839
+Evet.
+
+389
+01:30:12,399 --> 01:30:17,159
+Şurada da bakalım.
+
+390
+01:30:18,819 --> 01:30:22,500
+Burada direkt kanal ayarlamalı bir yapı ama
+
+391
+01:30:23,764 --> 01:30:48,764
+VGS'i ne bunun? Direkt toplağa bağlandığı için VGS'i sıfır. Sıfır olduğu zaman arkadaşlar, VGS'nin sıfır olduğu yerde kanal ayarlamalı da şöyle düşünelim. Burası I'deydi. Burası VGS. Ne tipte bir eleman bu? Kanal ayarlamalı. Şöyle dışarı çıkacak bu.
+
+392
+01:30:49,908 --> 01:31:14,448
+VGS'nin 0 olduğu yerde, yani burasılığında çalışma gelimi, çünkü başka türlü gerilim alamaz. VGS'nin 0 olduğu yer burası. O da neye eşit? Çalışmadaki akımı da IDSS eşit olacak. Yani 10 mA eşit olacak. Buradan da direkt çıkmış oluyor zaten. Sabit bir çalışma geliminde çalışıyor.
+
+393
+01:31:15,859 --> 01:31:35,139
+Buradan da VD'yi bulmak istiyorsak şayet ne yapacağız arkadaşlar? Bu 1.5 kilomun üzerinde düşen gerilimi VD'den çıkaracağız. Burada da onu yapmışlar. Ve de 5 voltluk bir gerilim varmış. Geri kalan 15 volt şu direncin üzerinde düşüyormuş.
+
+394
+01:31:42,484 --> 01:31:51,824
+Arkadaşlar, bir örnek daha yapalım. Burada da kanı oluşturmalının feedback yapısıyla çözümü var arkadaşlar.
+
+395
+01:31:51,824 --> 01:32:05,904
+Bakın verilenlere burada bizim K'yı bulmamız için ID 10'u vermiş 6 mA, VGS 10'u vermiş 8 V.
+
+396
+01:32:07,572 --> 01:32:26,052
+VGS Threshold demiş. O da 3 volt. Artık biz biliyoruz ki buradan bir K hesabı yapacağız. Ve de buradan IG sıfır olduğu için buranın gerilimi VG'ye eşit.
+
+397
+01:32:26,707 --> 01:32:35,207
+Buradan akan akım 0 ise, buradan akan akım da 0'dır. Dolayısıyla 10 mMΩ'un üzerinde düşen gerilim 0'dır.
+
+398
+01:32:35,207 --> 01:32:46,387
+Demek ki A, V, V, G ile V, D ucu arasında bir gerilim farkı bulunmamaktadır. V, D eşittir, V, G.
+
+399
+01:32:46,387 --> 01:32:50,147
+Şunu sileyim. Şöyle.
+
+400
+01:32:53,427 --> 01:33:11,228
+Şuradan akan akım 0 ise, buradan akan akım da 0'dır. Dolayısıyla, bunun uçları arasındaki yani Vg ile Vd arasındaki gelin farkı 0 ise şayet 0 volt düşüyor zayet. Ne diyebiliriz o zaman? Vd eşittir Vg.
+
+401
+01:33:12,567 --> 01:33:17,127
+Şimdi devam edelim bakalım çözümümüze. Ne demiş bize?
+
+402
+01:33:17,908 --> 01:33:21,948
+Çalışmadaki ÖD akımı ve VDS'yi bulun demiş.
+
+403
+01:33:23,007 --> 01:33:26,568
+ÖDS'yi onu verdiğine göre formülden K'yı çekeceğiz.
+
+404
+01:33:26,688 --> 01:33:29,768
+ÖDS onu vermiş, VGS onu vermiş, bunu vermiş.
+
+405
+01:33:29,768 --> 01:33:41,688
+Ve bu çarpımların sonucunda K kat sayısı 0.24 mAh bölü volt kare bulmuş.
+
+406
+01:33:44,083 --> 01:33:53,723
+Ben neyi biliyorum burada? Bir kere 6 mA-8V. Bir de 3'ten başlayacağını biliyorum.
+
+407
+01:33:53,723 --> 01:34:01,803
+Yani şu noktaları biliyorum. 3'ten başlayacağını biliyorum. Ve de ayrıca neyi biliyorum? Şuraya geleyim.
+
+408
+01:34:02,943 --> 01:34:09,863
+6 mA-8V biliyorum. 6 mA-8V. Bir de bu noktayı biliyorum.
+
+409
+01:34:10,579 --> 01:34:28,720
+K'yı bulduğuma göre, şimdi ara değerleme yapmam lazım. Yani şu iki noktayı bulmuş burada. Bir tanesini 6 seçmiş, bir tanesini 10 seçmiş. Sırasıyla 6 için, VGS 6 için kullanmış olduğu değeri kullanmış. 2.16 çıkmış.
+
+410
+01:34:33,492 --> 01:34:50,652
+Bir de 10 vereyim demiş. 10 vermiş dışarıda bir nokta. Buradan da 11.76 çıkmış. Böylece eğriyi elde etmiş. Şimdi bu eğri elde edildikten sonra ne demesi lazım arkadaşlar?
+
+411
+01:35:01,171 --> 01:35:21,111
+Vs. Burası neye eşit? Arkadaşlar, sıfıra eşit. Vs ucu sıfıra eşit. Demek ki Vgs Vg eşit. Aynı zamanda Vg neye eşittir arkadaşlar? Vd eşit. Yani şurayı bulduğumuz zaman biz Vg'deki kelime bulmuş olacağız arkadaşlar.
+
+412
+01:35:29,043 --> 01:35:48,043
+Hesaplayalım. Daha doğrusu VD'yi hesaplayalım. 12V eşittir. Pardon 12V eksi. ID çarpı. Buna da RD diyelim. RD eşittir. VD'yi eşit.
+
+413
+01:35:49,043 --> 01:35:52,844
+Buraya gelelim. Burada da onu yapmış tam anlamıyla.
+
+414
+01:35:53,492 --> 01:35:57,332
+Vgs'e işte Vdd. Vdd verilmiş mi? 12 olur.
+
+415
+01:35:57,912 --> 01:36:07,092
+Id çarpı Vd. Bakın Vgs ile beraber Id'nin değişken olduğu bir doğru denklemini bu sefer tam tersi yerden elde ettim.
+
+416
+01:36:07,572 --> 01:36:12,052
+Buradan çıkardım. Çünkü burası Vg eşit. Oradan çıkardım.
+
+417
+01:36:12,912 --> 01:36:18,972
+Sırasıyla Id'ye 10 mA ve de Vgs'e 0 verdiğim zaman
+
+418
+01:36:19,667 --> 01:36:46,627
+İkisine de 0 verdiğim zaman VGS ve ID'nin değerlerini 12 ve 6 olarak bulmuşum arkadaşlar. Yani şu noktayı buldum ve şu noktayı bulmuş oldum. Şuranın bu noktada şunun elde edilmesi önemli. VGS niye? VDD-ID çarpı RD eşit. Buranın önemli. Ne demiştik? Şurası VG'ye eşitti.
+
+419
+01:36:47,252 --> 01:37:12,292
+Vg neye eşitti? Vg'de direkt şuradan gördüğünüz gibi vs sıfır eşit olduğu için vgs eşittir vd. Demek ki şurası vg eşit dediğim yer aynı zamanda vgs eşit. Dolayısıyla ne diyeceğim? vdd eksi id çarpı vd eşittir vgs.
+
+420
+01:37:13,844 --> 01:37:26,324
+Şimdi buradaki burası biliniyor. 12. Burada ID bilinmiyor. RD biliniyor. Ne olmuş oldu arkadaşlar? Şuradaki doğru denkleme olmuş oldu.
+
+421
+01:37:26,324 --> 01:37:37,724
+Artık onu yerine koyacak olursak 6'yı biliyoruz. 12'yi biliyoruz. Doğru denklemini çizdiğimiz zaman şu çalışma noktasını bulmuştuk zaten.
+
+422
+01:37:38,195 --> 01:37:56,996
+2.75 mA, şuraya denk geliyor. 2.75 mA, 6.4 V çalışmadaki. Peki VGSQ neye eşitti? VDSQ, VGSQ'ye eşitti. O da 6.4 V olarak bulunmuş oldu arkadaşlar.
+
+423
+01:38:05,811 --> 01:38:24,811
+Şunu da çözelim. Burada da kanal oluşturmalı bir gerilim bölücü yapısı var. Öncelikle biz biliyoruz ki burada önce bir VG'yi bulmamız lazım. Orada VG 18 çıkmış. Arkadaşlar,
+
+424
+01:38:25,652 --> 01:38:48,091
+İkinci olarak denklemimizi oluşturmamız lazım. Vg eşittir. Vgs- Is çarpı vs. O da bunu yapmış. Is'nin yerine ıd demiş. 18 volt- ıd çarpı 0.82 kilo.
+
+425
+01:38:49,332 --> 01:38:53,431
+Burada yerine yerleştirdiğimizde bunları elde ettik.
+
+426
+01:38:54,492 --> 01:39:05,592
+Sırasıyla VGS'ye sıfır verdiğimizde ID'nin kaç değerini aldığını ve de IDS'ye sıfır verdiğimizde hangi değerleri aldığını bulacağız.
+
+427
+01:39:05,592 --> 01:39:14,271
+Tabii ki daha öncesinde şurada VGS 10 ve threshold noktalarından önce şunu bir çizdirmemiz lazım.
+
+428
+01:39:14,771 --> 01:39:19,091
+Orası da ne eşit? Şurasını vermiş, pardon hangisini vermiş bakalım.
+
+429
+01:39:19,091 --> 01:39:23,811
+VG Threshold 5 old, 3'e 10.
+
+430
+01:39:23,811 --> 01:39:27,251
+3'e 10'u vermiş.
+
+431
+01:39:27,251 --> 01:39:32,931
+Şöyle 3'e 10'u vermiş.
+
+432
+01:39:34,228 --> 01:39:44,228
+3'e 10, şurası. Bir de treş oldu vermiş. Sadece şu ikisiyle bulamayız. Oradan öncelikli olarak k'yı bulmamız lazım.
+
+433
+01:39:45,148 --> 01:39:56,168
+k'da buradan 0.12 çarpı 10 üzeri eksi 3 çıkıyor. Arkasından tabii ki artık şu k'yı bulduğumuza göre ara değerleri bulabiliriz.
+
+434
+01:39:56,168 --> 01:40:00,000
+Biz burada neyi vermiş? 15 vermiş, 20 vermiş.
+
+435
+01:40:00,000 --> 01:40:09,420
+VGS'nin yerine şu iki noktayı da bulduktan sonra şu maviyi çizdirebilmişiz. Şimdi bir de doğru denklemimiz neredeydi bizim?
+
+436
+01:40:09,420 --> 01:40:25,539
+Şu sırasıyla VGS'ye ve şeye sıfır verdiğimizde ID 21.95'te kesiyordu ekseni. Öbürkü ise ID'ye sıfır verdiğimizde VG'ye geçti. 18 voltta burayı kesiyor.
+
+437
+01:40:25,984 --> 01:40:51,043
+Şu iki ucu birleştirdiğimizde tam çalışma noktası burası. O da 6.7 mA yaklaşık 12.5 civarında bir değer. Evet bunları vermiş. Bundan sonra yapılacak şey örneğin VDS'yi sorduysa VDD'den dirençliğin üzerindeki akımı çıkardığımız zaman elde ettiğimiz gerilim.
+
+438
+01:40:51,359 --> 01:41:03,179
+Noktasal gelinler, farksal gelinler yani VD veya VDG, VDS gibi gelinleri de iyi bir şekilde bulmamız gerekiyor arkadaşlar.
+
+439
+01:41:05,859 --> 01:41:10,999
+Evet, şimdilik benim bu hafta anlatacaklarım bunlar arkadaşlar.
+
+440
+01:41:11,959 --> 01:41:17,559
+Haftaya çok az bir konumuz kaldı. Sizlerin sormak istediği bir konu var mı şu ana kadar?
+
+441
+01:41:21,908 --> 01:41:37,807
+Sorsu olan var mı arkadaşlar? Yok. O zaman önümüzdeki hafta son dersimizde kısa bir dersimiz olacak. Görüşmek üzere. Kendinize çok iyi bakın arkadaşlar. Kolay gelsin.

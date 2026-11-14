@@ -1,0 +1,2267 @@
+1
+00:11:11,764 --> 00:11:16,423
+Merhaba arkadaşlar. Ses geliyor mu? Bir problem var mı?
+
+2
+00:11:18,484 --> 00:11:21,043
+Merhaba hocam. Geliyor sesiniz.
+
+3
+00:11:21,884 --> 00:11:29,504
+Tamamdır. Merhabalar. Bu hafta ben yapacağım online dersinizi. Haftaya dokunucu devam edecek.
+
+4
+00:11:31,823 --> 00:11:36,244
+En son dediğine göre sinyal yani analog.
+
+5
+00:11:36,820 --> 00:11:45,060
+Tam dijitale geçme ve dijitalize etme, yani örnekleme dediğimiz puan talama konusunda bir değinmiş zannedersem.
+
+6
+00:11:47,400 --> 00:11:49,160
+Ekranı paylaşalım.
+
+7
+00:11:50,879 --> 00:11:52,460
+Hocam bir şey sorabilir miyim?
+
+8
+00:11:53,540 --> 00:11:54,080
+Evet.
+
+9
+00:11:54,644 --> 00:12:04,504
+Ben dersi yükseltmeye alıyorum da, derste lablardan muafiyetim geçerli olacak mı acaba? Normalde ben yüz yüze almıştım. Şu an online alıyorum yükseltmeye.
+
+10
+00:12:05,823 --> 00:12:16,704
+İşte bu, ya kim muaf olacak değil, işte lab notununla alakalı hesaplamayı asistanlar yapacak ama yüksekse notun, yani lab notun muaf olursun.
+
+11
+00:12:17,744 --> 00:12:18,943
+Tamamdır hocam, teşekkür ederim.
+
+12
+00:12:18,964 --> 00:12:20,183
+Lab'tan muaf olursun, aynen.
+
+13
+00:12:20,755 --> 00:12:28,135
+Bir de lab puanlarımız bir vize yerine geçiyordu değil mi? Normalde öyleydi. Şu an bilmiyorum nasıl işleniyor. İkisinin duramıyorum dersi.
+
+14
+00:12:29,015 --> 00:12:39,115
+Evet, yani beş tane veya dört tane labın ortalanması bir vize puanı gibi ödev vermezsek eğer bir vize notu olarak geçecek. Ama ödev verirsek biraz düşebilir.
+
+15
+00:12:39,836 --> 00:12:46,355
+Tamamdır hocam. Bir de bir şey daha sorayım. Ödevler gene bu online sisteme yüklenecek mi acaba verdiğiniz yoksa mail?
+
+16
+00:12:46,768 --> 00:12:49,807
+Veya işte ders size mi göstereceksiniz ödevin ne olacağını?
+
+17
+00:12:49,848 --> 00:12:55,067
+Ders de söylenir. Ders de söylenen ödevi bir sonraki hafta mail ile istenir.
+
+18
+00:12:55,748 --> 00:12:57,648
+Tamamdır hocam. Çok teşekkür ederim.
+
+19
+00:12:59,956 --> 00:13:11,916
+Evet arkadaşlar, geçen hafta bir işaretler, sayılar, daha doğrusu bir analog sinyalin ne demek olduğu ve analog sinyalin nasıl bir istatvize edildiğine dair bir giriş yapmışsınız.
+
+20
+00:13:11,916 --> 00:13:26,916
+Bu haftada sayılar, yani biraz buna değinip, bundan sonra sayı ve sistem, daha doğrusu sayıların nümerik olarak binary, heysa, oktav dediğimiz sayı sistemlerinde nasıl gösterildiğini ve bu sayı gösterimlerinde binary yani...
+
+21
+00:13:27,316 --> 00:13:37,375
+Mantıksal devre tasarımında binary, ikili sayı sistemi olarak tasarladığımız durumda nasıl mantıksal işlemleri gerçeklediğimizi kapılarla anlatacağız.
+
+22
+00:13:37,656 --> 00:13:40,176
+Yalnız benim tarif, benim çalışmımım.
+
+23
+00:14:46,899 --> 00:14:54,679
+Evet arkadaşlar, işaret dediğimiz şey aslında analog ve dijital diye iki tarz işaretten bahsetmiştir hocamız muhtemelen.
+
+24
+00:14:55,220 --> 00:15:08,179
+Analog dediğimiz işaret zaman domeninde yani X ekseni zamanı gösterirken Y eksenindeki nicelik dediğimiz birimin işte volt olur, amper olur, akım olur, gerinim olur neyse
+
+25
+00:15:08,179 --> 00:15:14,899
+diğerinin zaman skalasında değiştiği yani hep bir değişim gösteren sinyaller olarak tanımlıyor.
+
+26
+00:15:14,899 --> 00:15:38,899
+Ve biz bu analog sinyali dijitalize etmek için örnekleme veya İngilizcesi kuantalama, kuantalizasyon dediğimiz bir yöntemle aslında aralardan belirlediğimiz, define ettiğimiz aralıklarda sinyali örneklendirip o bir sonraki aralığa kadar seviyesini aynı tutmayı hedeflediğimiz yaklaşımla dijitalleştiriyoruz.
+
+27
+00:15:40,039 --> 00:15:42,419
+Peki dijitalleştirme ne için lazım? Şunun için.
+
+28
+00:15:42,899 --> 00:16:09,839
+Bu noktada bir sonlu makine bizim bilgisayarlarımız. Yani sonsuz bir sinyali, sonsuz bir zaman domeninde, sonsuz değerler içerisinde analiz edebilecek sistemler değil. Bir süre aynı değerleri gösteren sinyaller üzerinde işlem yapacağız. Bu aynı değerleri gösteren yerde zaten ayrıksa zaman domeninden, yani zamandan ayrıksağlaştırdığımız, diskrit duruma geçirdiğimiz bölgeler olarak tanımlayacağız.
+
+29
+00:16:10,224 --> 00:16:27,124
+Sistemler, sayısal sinyaller sistemler dersinde daha veyahut işaret işleme dersinde daha ileri seviyede bunu analiz edeceksiniz ama şu anda belli bir aralıklarla sinyalin örneklenerek dijitalize edildiğinden bahsedebiliriz.
+
+30
+00:16:27,124 --> 00:16:36,403
+Ve buradaki her bir step basamak bizim için dijital formatta yazabileceğimiz bir tag'e bir etikete tekabül gelecek.
+
+31
+00:16:36,916 --> 00:16:41,236
+İşte normalde şurada bir örneğimiz vardı.
+
+32
+00:16:41,456 --> 00:16:42,615
+Bakın şurada aynı.
+
+33
+00:16:42,976 --> 00:17:04,855
+Normalde misal eğer ki bir bitlik bir işaretle göstereceksek bu dijital bir sayıyla analog sinyalimizi bir adet threshold belirleyip bu threshold'un altındakilere sıfır, bu threshold'un yani eşiğin üstündekilere bir diyebileceğimiz bu sinyalini sadece bir bit ile gösterebileceğimiz forma sokabiliyor.
+
+34
+00:17:04,915 --> 00:17:28,715
+Bunu bir klima devresindeki tetikleme elemanı olarak düşünebiliriz. Buradan bir termostat değeri, sıcaklık ölçüyor klima. Belli bir sıcaklığın üstündeyse klimayı çalıştır, havayı soğut. Belli bir sıcaklığın altındaysa klimayı kapat, havayı yani o üfleme modundan çık gibisinden bir kontrol metanizmasında nasıl kullanıyorsak bir analog.
+
+35
+00:17:29,200 --> 00:17:46,660
+Sıcaklık bir analog işarettir. Yani biz 24.3 derece diyoruz ama aslında detayda 24.3, 2, 1 yani şey, örgülden sonraki çok değişken bir gerilim aralığına tekabül edebilir o aradaki sıcaklık değişimi.
+
+36
+00:17:46,660 --> 00:17:57,180
+Ama biz onu bir yeşil gerilimiyle aslında 1 ve 0 moduna sokmuş oluyoruz. Yani aslında analog bir simyeli 1 ve 0 ile gösterebileceğimiz bir bitli.
+
+37
+00:17:57,200 --> 00:18:01,820
+1 bitle gösterebileceğimiz dijital formata getirebiliyoruz.
+
+38
+00:18:02,600 --> 00:18:07,980
+Peki, yani 1 bit değil de 2 bitle göstersem veya 3 bitle göstermek ne demek?
+
+39
+00:18:08,240 --> 00:18:15,180
+Şu demek, analog işareti daha iyi, daha kısa aralıklarda örneklemek demek.
+
+40
+00:18:15,180 --> 00:18:23,960
+Neden? Çünkü şuradaki zaman domeninde ben bir threshold değil de 3 tane threshold, 2, 4 ve 6'yı belirlesem.
+
+41
+00:18:24,435 --> 00:18:40,596
+Ve bu 3 threshold'a göre, örneklediğim o alanlara bir binary karşılıkta, bu step aralıklarında binary karşılık atarsam, ne kadar çok step olursa, o kadar fazla binary dijit yazmam gerekiyor.
+
+42
+00:18:41,295 --> 00:18:45,915
+Yani normalde 2 bit ile 0, yani 5'in 6 veya 5'in üstü diyebilecekken,
+
+43
+00:18:46,304 --> 00:19:01,084
+Bir bitte, iki bitte artık ikinin altıyla sıfırın üstü, ikinin üstüyle dördün altı, dördün üstüyle altın altı gibi daha orijinal formata yakın bir dijitalize format sinyali elde edebiliyorum.
+
+44
+00:19:02,099 --> 00:19:17,359
+Bu anlamda bit kuvveti dediğimiz, yani bitin dijital formatta o analog sinyalin gösterilme çözünürlüğü tamamen dijitalize ettiğimiz sinyalin bitsel genişliğiyle alakalıdır.
+
+45
+00:19:17,715 --> 00:19:26,815
+Yani, mesela DAC ve ADC'lerden bahsediliyor. Şurada ADC dediğimiz mimariler analogdan dijitale çeviren mimarilerdi.
+
+46
+00:19:26,815 --> 00:19:41,807
+16 bitlik bir ADC demek, aslında bir sinyali ben 0 ile, yani tek bir 1 bit dijit ile 16 bit dijit arasında çözünürlüğe soktuğum...
+
+47
+00:19:41,807 --> 00:19:59,948
+Çevirici diyeceğim. 16 bitlik için. Mesela 8 bitlik bir ADC'de bu çözünürlük daha az olacak. Yani orijinal waveformum şuysa, 8 bitlikte, şimdi farazi tabii daha detaylı normalde ama, 8 bitlikte belki daha geniş.
+
+48
+00:20:00,000 --> 00:20:17,819
+aralıklarla olurken, 16 bitlikte bu sinyali çok daha kısa aralıklarla olacağı için, yani daha fazla basamağı gösterebileceğim için 16 bitte daha yüksek, daha hassas işlemleri yapabileceğim, dijitalize edilmiş sinyali elde etmişim diyebileceğim.
+
+49
+00:20:18,259 --> 00:20:21,559
+Buradaki bitsel anlam, kuvvet, genişlik bunu göstereyim.
+
+50
+00:20:22,036 --> 00:20:36,756
+Bunun bir hesabı da var. Çözünürlük dediğimiz arkayı biz analog sinyalinin maksimumunu dijitalize çevireceğimiz, dijital formata çevireceğimiz biz senin 2 üzerini şeklinde hesaplayabiliyoruz.
+
+51
+00:20:37,336 --> 00:20:45,135
+Örnek vereceksek, şurada bir örneğimiz var. 0 ile 15 mod arasında kesintisiz değerler alabilen bir sinyalimiz varmış.
+
+52
+00:20:45,996 --> 00:20:47,916
+Şöyle bir sinyalimiz var.
+
+53
+00:20:48,692 --> 00:20:56,412
+Tabii sıfır silgesini belki şöyle yapsak daha iyi olacak. Sadece şimdi şöyle bir sinyal yapalım.
+
+54
+00:20:57,932 --> 00:21:02,811
+Şöyle yapalım kapatör üstlenmesini. 15 volt'a kadar giden bir sinyalim var.
+
+55
+00:21:03,331 --> 00:21:09,412
+Bunu 100 milivolt duyarlılıkta kodlanmış sayı. Yani ne demek bu? Her bir 100 milivoltta...
+
+56
+00:21:10,355 --> 00:21:33,796
+Şurada basamaklardan giden ve basamak aralığı, şu iki basamak aralığı 100 milivolt olan bir dijitalize formata getirmek istiyoruz. Ne yapacağız? 1500 milivolt aslında bu 15 volt değil mi? 1500 milivoltu 2 üzeri N, bazıları yine eksibir yazar, çok mühim değil o, 100 volta gelecek olan N sayısını soruyoruz.
+
+57
+00:21:35,056 --> 00:21:36,536
+Buradan da
+
+58
+00:21:36,627 --> 00:21:47,067
+15 bin yapıyordu, 15 kop değil mi? 15 bin yapıyordu. 150 eşittir, 200'lere N'den, N buradan kaç çıkar arkadaşlar?
+
+59
+00:21:52,243 --> 00:21:54,463
+İç karutan, Uda mis.
+
+60
+00:21:59,316 --> 00:22:05,316
+Evet, yani 7 diyemeyiz. Çünkü 7 dersek 128 yapar. Ama 8...
+
+61
+00:22:07,700 --> 00:22:17,099
+8 bitlik bir ADC ile aslında ben 100 milivolt duyarlılıkta bir dijital format elde edebilirim diyebiliriz.
+
+62
+00:22:17,240 --> 00:22:27,159
+Tam tersine ait bir soru da var. Hani bir DAC dediğimiz, dijitalden alın alaka çevireceğimiz bir değer de 0, 0, 0, 0 dediğimiz 0 voltu gösteriyor.
+
+63
+00:22:27,299 --> 00:22:29,079
+4 bitlik bir DAC'ymiş.
+
+64
+00:22:29,523 --> 00:22:36,003
+Ne demiş? Bir, bir, bir, bir de 6 volt gösterir diyor. Yani aslında
+
+65
+00:22:37,844 --> 00:22:52,084
+Gönüşüm tablosu için ilk etapta bulmamız gereken buradaki adımdaki yani şu 0, 0, 0, 0 gösteriyorsa bir neyi gösterecek ki işte bir sonraki stepte iki neyi gösterecek, üç neyi gösterecek tabloyu oluşturalım.
+
+66
+00:22:52,224 --> 00:22:56,664
+Yani bu çözünürlük bitsel olarak neye tekabül gelecek bunu bulmamız lazım.
+
+67
+00:22:57,184 --> 00:23:03,704
+Bunun için de yine aynı şekilde 6 dolu bölüyor, 2 üzeri 4'ten aslında çözünürlüğü bulmuş olacağız.
+
+68
+00:23:03,704 --> 00:23:05,764
+Buradan da ne geliyor? 6 dolu da.
+
+69
+00:23:05,844 --> 00:23:29,423
+3 bölü, 3 bölü, 3 bölü, 8, o da ne yapıyor? 0, 375 mi? 375 bol olan bir aralıkta benim bunu dijitalleştirilmiş zimneli, analog'a çevirebilmemi sağlayan yaklaşım.
+
+70
+00:23:32,880 --> 00:23:47,000
+O dijitalize edilmiş sinyallerin tabii bilgisayar ortamında 1 ve 0'lardan oluşuyor ama okuduğumuz değerin belki de algoritmik olarak arka planda decimal olarak veya hexa olarak kaça geldiğini bazı uygulamalarda kullanmamız gerekecek.
+
+71
+00:23:47,460 --> 00:23:54,600
+Bunun için sayı sistemleri dönüşümlerini de izah edelim. Zaten bunlar taban aritmatiği konusunda belki matematikten hatırlayacağınız konular.
+
+72
+00:23:55,120 --> 00:24:00,720
+Normalde biz bir sayıyı nasıl ifade ediyoruz 10'luk tabanda? Çözümleme değil.
+
+73
+00:24:00,880 --> 00:24:08,000
+Diyorduk zannedersem buna değil mi? Çözümleme yaparak gösterimi mevcuttu. İşte birler basamağı, onlar ve yüzler basamağı diye.
+
+74
+00:24:08,000 --> 00:24:18,500
+Bir çarpı yüzler basamağı, yedi çarpı onlar basamağı gibi gidiyorduk. Gürgünün sahisi aslında on üzeri eksi bir basamak, on üzeri eksi iki basamak şeklinde de çözümlenebiliyordu.
+
+75
+00:24:18,880 --> 00:24:36,320
+Aynı bunun gibi onluk taban olmasına gerek yok. Sekizlik tabanda da sekizlik tabanındaki birler basamağı, sekizlik tabanında onlar basamağı. Bunların tek tek çözümlenerek bunu şey yapabiliyoruz. Arkadaşlar, bir telefon var. Hemen geliyorum.
+
+76
+00:26:11,316 --> 00:26:12,856
+Evet, arkadaşlar, buçukla bakmayın.
+
+77
+00:26:14,516 --> 00:26:36,056
+Şimdi, evet, sayı sistemlerinde normalde biz çözümleme dediğimiz şekilde gösterebiliyoruz sayıları değil mi? İkilik tabanda da hiçbir şey değişmiyor. Yani iki üzeri, yani ikilik tabandaki bir sayıyı onluk tabanda kaça tekabül geliyor veya başlı bir tabandaki sayıyı onluk tabanda neye tekabül geldiğini anlayabilmek için çözümleme yapacağız.
+
+78
+00:26:42,516 --> 00:26:56,576
+Bu tabirleri zaten haşimleşerseniz ama bir daha değinelim. Bit dediğim şey aslında şuradaki her bir dijite bir bit diyoruz değil mi? Misal bu 2, 4, 5, 5 bitlik bir sayı olduğunu söylüyor.
+
+79
+00:26:57,235 --> 00:27:02,155
+4 bitin yan yana gelmesi benim için nibal anlamı katıyor. Misal şurası bir nibal'dır.
+
+80
+00:27:02,579 --> 00:27:12,480
+8 bit bir byte'ı gösteriyor ve 2 byte'da yani 16 bit de benim için verb ifadesini oluşturan tabirlerdi. Tekrar hatırlamış olalım.
+
+81
+00:27:14,003 --> 00:27:20,063
+Evet, burada normalde bir dönüşüm tablosu var ama yani bunu tekrar tekrar izah etmeye gerek yok.
+
+82
+00:27:20,304 --> 00:27:23,283
+Yapacağımız şey çözümleme işlemi örneklerimizde var.
+
+83
+00:27:23,283 --> 00:27:39,683
+Misal ikilik tabandaki bir sayıyı 0, 2 üzeri 0, 1, 2, 3 şeklinde 1 çarpı 2 üzeri 3 artı 0 çarpı 2 üzeri 2, 1 çarpı 2 üzeri 1 ve 0 çarpı 2 üzeri 0'nın toplamı şeklinde 10'luk tabana çeviriyoruz.
+
+84
+00:27:39,864 --> 00:27:41,983
+Buna göre de bu değer 10 imiş.
+
+85
+00:27:42,003 --> 00:27:48,623
+Aynı şekilde başka bir örnek. Bunu çevirdiğimizde 25 sayısını elde etmişiz.
+
+86
+00:27:49,943 --> 00:27:59,523
+Gürgülden sağ tarafın tabii tekrardan 2 üzeri eksili şeklinde ilerlememiz lazım. Bunu da yaparsak, şurasının zaten 7 olduğunu görüyoruz.
+
+87
+00:27:59,855 --> 00:28:11,416
+7 gelecek buradan. Sağ tarafı ise 2 üzeri eksi 1 ile giderek 1 çarpı 2 üzeri eksi 1 artı 0 yazmıyorum. 1 çarpı 2 üzeri eksi 3 yazıyorum.
+
+88
+00:28:11,976 --> 00:28:22,135
+Burası ne? Eksi 2 olacak. Burası ne geliyor? 1 bölü 8 artı 1 bölü 2'den ne gelir?
+
+89
+00:28:22,655 --> 00:28:47,275
+4 bölü 8, 5 bölü 8, 0625 mi geliyor? Öyle bir şey sanki değil mi? Ne geliyor arkadaşlar? 5 bölü 8, ne gelir? 0 bölü 6, 8, 20, 625 gibi herhalde değil mi?
+
+90
+00:28:48,403 --> 00:28:52,264
+Yani 7,625'miş bu sayımız diyeceğiz.
+
+91
+00:28:57,715 --> 00:29:04,755
+Ondalıkları ikiliye döndürmede de bunun bir uzun yolu var bu şekilde olduğu gibi bölüm bölüm şeklinde gideceğiz.
+
+92
+00:29:04,755 --> 00:29:15,855
+Yani 33 sayısını ikilik tabanına nasıl gösteriyoruz? 33'ü ikiye böle böle gideceğiz ve kalanlar benim için tersten bir şekilde binary sayımı ikili sayımı oluşturacak.
+
+93
+00:29:16,395 --> 00:29:21,775
+Şimdi burada iki tabir var, LSB ve MSB. Bunları da tekrardan değinelim, çokça karşınıza gelecek.
+
+94
+00:29:25,715 --> 00:29:34,935
+En anlamlı biti, yani en soldaki biti, normal numarik yerde de işte 232'de misal, burası yüzler basamağı, burası birler basamağı diyoruz.
+
+95
+00:29:34,935 --> 00:29:41,735
+Yani burası daha anlamlı, yani buraya MSB, buraya da LSB diyeceğiz yani normal bitsel gösterimde.
+
+96
+00:29:42,895 --> 00:29:45,275
+Sadece bit lafı geliyor oraya.
+
+97
+00:29:47,731 --> 00:30:01,652
+En son elimizde kalan, kalan ibaresi mezhebemizi oluşturacak. Bu süreç boyunca da ilkinden itibaren en sona kadar ki kalanların hepsi benim için nümerik dijital binary sayımı oluşturmuş olacak.
+
+98
+00:30:01,652 --> 00:30:07,032
+Bu birinci yöntem, ikinci yöntem ise şu. Misal 172'den gidelim.
+
+99
+00:30:07,375 --> 00:30:13,456
+Gerçi %72 biraz daha şey ama, ya böyle böyle gidebiliriz şunu gibi veyahut da şunu yapabiliriz.
+
+100
+00:30:13,576 --> 00:30:24,336
+257, 128'dir, 2 üzeri 8, 256'dır. Bu hani artık haşineşir oldukça aklımıza kazıyacağımız üst seller, yakın üst seller.
+
+101
+00:30:24,755 --> 00:30:32,755
+2 üzeri 7, 128'dir. 128'i bundan çıkartırsam ne gelir? 4, 6, 4, 44 gelir.
+
+102
+00:30:34,548 --> 00:30:51,547
+5, 32'dir, sonra 12 kalır. 2 üzeri, işte hep böyle en yakın 2 üzerini bir ana sayıdan çıkararak devam ediyorum. 32'yi çıkartacağım, 12 kalacak, 12'de 2 üzeri 3 gelecek, 8'den 4 kalacak, 2 üzeri...
+
+103
+00:31:04,596 --> 00:31:06,276
+Ucunu değiştireyim arkadaşlar.
+
+104
+00:31:06,276 --> 00:31:09,415
+Şimdi geliyorum hemen.
+
+105
+00:33:28,884 --> 00:33:30,344
+Evet, bu olmalı.
+
+106
+00:34:26,547 --> 00:34:27,987
+Ekran gözüküyor mu arkadaşlar?
+
+107
+00:34:30,567 --> 00:34:31,688
+Sayı sistemleriyle.
+
+108
+00:34:33,487 --> 00:34:34,807
+Evet hocam gözüküyor.
+
+109
+00:35:05,715 --> 00:35:07,715
+Evet, 172'de kalmıştır.
+
+110
+00:35:08,271 --> 00:35:22,391
+172 için 27 dedik, 128 oradan 44 geldi, 2 üzeri 5 dedik, 32 oradan 12 geldi, 2 üzeri 3, 8 oradan 4 gelecek, 2 üzeri 2, 4 oradan sonra 0 gelecek misal.
+
+111
+00:35:22,391 --> 00:35:35,492
+Bu durumda şimdi 277'den itibaren 7'ye 1 koydum, 6'da bir şey yoktu, 5'e 1 koydum, 4'de bir şey yoktu, şurada bir yanlışlık yapılmış, 12'ye böldüğümüzde 5 gelir.
+
+112
+00:35:36,271 --> 00:35:44,572
+Şurasının sıfır olması lazım. Şunun da bir yanlışlık var. Dörtte bir şey yok. Üçe bir koydum, ikiye bir koydum.
+
+113
+00:35:45,271 --> 00:35:51,371
+Sıfı, çe bire sıfır koydum ve üçüze sıfıra da sıfır koyarak aslında sayımı uçturmuş oldum.
+
+114
+00:35:51,891 --> 00:36:02,791
+Burada dediğim gibi bir sıfır bir sıfır gelecek. Bir bir sıfır sıfır gelecek. Aynı şey, hani bu daha kolay, daha pratik ama böyle böyle de yapılabilecek bir yöntemi mevcut.
+
+115
+00:36:03,476 --> 00:36:25,476
+Bir başka, virgülden sonrakiler için nasıl ikilik formata geçireceğiz? 7 zaten belli, 1, 1, 1, 1 şeklinde geçti. 0, 8,125'i biz 2 ile çarparak bu sefer ondalıktan sol tarafa geçen, virgülün sol tarafını aşağıya alıyoruz ve aşağıda...
+
+116
+00:36:25,903 --> 00:36:48,243
+Vürgülün sonu, yani ilk çarptığımız sayı LSB, daha doğrusu MSB, Vürgülün sağındaki MSB şeklinde, en sondaki de Vürgülün en anlamsız pin olacak şekilde, ondalık tarafı, yani Vürgülün sol tarafına aktarımdaki sayıları Vürgül'den sona yazıyoruz ve ikili sayı oluşmuş oluyor.
+
+117
+00:36:48,704 --> 00:37:00,503
+Örnekte 0.81.25'i 2 ile çarptığımızda 1.625 çarpıyor. 1 alıyoruz. Sonra 625'i 1'e attıktan sonra devam ederek işlemi tamamlıyoruz.
+
+118
+00:37:02,643 --> 00:37:07,463
+Evet, sekizlik sayının ona dönüşümü de aslında ikiliğin ona dönüşümüyle aynı.
+
+119
+00:37:07,663 --> 00:37:16,603
+Çözümlemeyle, virgülden sonrası da sekizleri eksidir. Sekizleri eksiklik şeklinde çözümse vererek on tabanına geçirebiliyoruz sayıları.
+
+120
+00:37:17,983 --> 00:37:25,764
+Bu da gene sekiz üstü şeklinde de hesaplanabilir ama bunu tabii hesaplamak bir tık daha zor. Sonuçta şeyi bilemiyoruz.
+
+121
+00:37:26,483 --> 00:37:34,104
+347-8'in kaç üstüsel, bunu çıkaramayacağımız için böyle yapmak yerine 8'e bölerek gitmek daha mantıklı.
+
+122
+00:37:35,104 --> 00:37:41,344
+347-8'e bölünce de bölük kalanı, işte benim Vsb olacak ve Nsb olacak şekliyle yapıyoruz.
+
+123
+00:37:41,483 --> 00:37:50,443
+Ve sonucu da yine 8 ile çarparak öteki tarafın, yani virgülün sol tarafına taşan kısmının birleşiminden virgül sonrası sayıyı oluşturuyoruz.
+
+124
+00:37:52,755 --> 00:38:05,735
+İkilikten sekizde geçmenin bir kısa yolu var. Üçlük grup iki üzeri üçten sekizi gösterdiği için, sekiz sayısı sistemine nomine ettiği için, üçe üçe analiz ederek sekizliği direkt oluşturabiliriz.
+
+125
+00:38:05,855 --> 00:38:16,475
+Yani ikiliği ona çevireyim sonra böyle sekizi bulayım, mantıklı bir yaklaşım değil. Ürgülden sonrası için de gene üç, üç ama bu sefer şu tarafı.
+
+126
+00:38:17,139 --> 00:38:31,039
+Şu üçlüyü aldık, mesela buraya tam oturmuş ama, güvünün sağında eğer tam oturmayan bir biri olsaydı, mesela şöyle bir şey, bir tane bir, bu sefer bunun da böyle üçlüyü yazmamız gerekir.
+
+127
+00:38:35,860 --> 00:38:47,440
+Burada 8'li 2'ye çevirmek, tam tersi. Yine aynı şekilde bireysellerin 3 bitlik binary karşılığı benim için sayının binary sayı karşılığını oluşturacak.
+
+128
+00:38:48,079 --> 00:38:59,060
+7, 3 tane, 1, 1, 1, 1 ibaresi, 3 için 0, 11 birleştirdiğimde benim için binary normal 8 octal sistemdeki sayının binary karşılığını elde etmiş olacağım.
+
+129
+00:38:59,827 --> 00:39:19,248
+8'e decimalin desimale çevrilmesini çözümlemeyle onun üzere burada önemli olan A'nın 10, C'nin 11, C'nin 12, E, F'nin de 13, 14 ve 15'e tekrar bir geldiğini bilmemiz lazım çarpma işleminde.
+
+130
+00:39:19,248 --> 00:39:22,467
+Buna göre yapacağız.
+
+131
+00:39:24,340 --> 00:39:33,900
+Virgüden sonrasında yine 16-1 ile çarparak, virgül 0.1 kaçsa değeri, ana sayıya ekleyerek buluyoruz.
+
+132
+00:39:35,668 --> 00:39:44,847
+10'lu 16'ya çevirmek için yine böle böle gitme yöntemiyle yine aynı şekilde harp nominasyonuna dikkat ederek gerçekliyoruz.
+
+133
+00:39:44,908 --> 00:39:57,347
+Bu yüzden sonra eğer varsa bunu da yine 16 ile çarpıp kalanını, daha doğrusu ondalık tarafa geçen tarafı, eğer burada da bölümde bir şey kalmış olsaydı bu yüzden sonra devam ettiririz verimiz.
+
+134
+00:39:58,387 --> 00:40:00,288
+Bir yakın samaya da yazacak.
+
+135
+00:40:03,603 --> 00:40:17,163
+İkilik 16 vrdu arasında 2-lik 8 gibi, 3 bitin tek bir 8'lik düzenekte sayıya veyahut da 8'lik düzenekte ki her bir dijitin 3 bitlik binary karşılığını yazabilme olaydı.
+
+136
+00:40:17,243 --> 00:40:18,703
+Burada 4 bit için mümkün.
+
+137
+00:40:41,331 --> 00:40:46,831
+Her bir 4 bit için aynı çevrimi burada da gerçekleştirebiliyoruz.
+
+138
+00:40:56,307 --> 00:41:01,228
+Evet, aritematik işlemlerde toplama işleminde zaten çok sıkıntı yaşanmıyor.
+
+139
+00:41:01,228 --> 00:41:22,988
+Ama işte normalde nasıl yapıyorduk? Binary'de toplama işleminde, yani bir bir daha iki olma durumunu bu tarafa bir olarak, veya şuradan başlayalım, bir bir daha iki olma durumu buraya sıfır, sol tarafa bir tane birin gelmesi şeklinde tekrar toplayıp tekrar aktarma işlemini yaptığımız işlemlerde.
+
+140
+00:41:23,476 --> 00:41:35,356
+8'lik tabanlı da yine 3 ile 7'yi topladık 10 ama 8'den kalan 2'yi buraya yazıp bu tarafa normal 8'lik yani 6-5 daha normalde 11 yapar.
+
+141
+00:41:35,796 --> 00:41:46,195
+Ama işte 7'yi buraya ekleyerek bu 8'lik tabanına göre güncelliyoruz ve bu tarafa ekleyerek gidiyoruz.
+
+142
+00:41:46,784 --> 00:41:58,043
+16'lık düzlemde de aynı şekilde 7, 3 daha 10 yapar A misal, bir F daha 0 yapar ve bizim bu tarafa başka bir adet bir sayısı gelmesi lazım.
+
+143
+00:41:58,624 --> 00:42:03,923
+Ve buraya 1 geliyor, 10 ile de 2 topladığımızda 12 yapar, buraya da C sayısı gelir.
+
+144
+00:42:03,923 --> 00:42:11,564
+Burada da yine 1 eklemiştik ve kalanını aşağıya yazdık 12'nin, 8'den kalanının 4 olduğu için.
+
+145
+00:42:13,556 --> 00:42:17,676
+Herhalde buraları hızlı geçiyorum arkadaşlar. Çok problem yok diye düşünüyorum.
+
+146
+00:42:23,219 --> 00:42:25,139
+Yok, eldeleri yukarı yazmıştım.
+
+147
+00:42:27,479 --> 00:42:30,039
+Asıl problem biraz çıkarmada oluyor.
+
+148
+00:42:30,199 --> 00:42:32,379
+Çıkarmada da ilk şuna bakmak lazım.
+
+149
+00:42:32,920 --> 00:42:40,920
+Birinci sayıyla ikinci sayı, yani asıl yukarıdaki sayının büyük olma durumunda zaten bir problem yok.
+
+150
+00:42:41,039 --> 00:42:42,979
+Normal çıkarma işlemi birden bir çıktı.
+
+151
+00:42:44,019 --> 00:42:46,059
+Niye gidiyor bu tablet ya?
+
+152
+00:42:55,284 --> 00:42:58,884
+Arkadaşlar, biraz kendi bilgisayarım olmayınca böyle oluyor.
+
+153
+00:43:54,739 --> 00:43:56,380
+Biraz bekleteceğim arkadaşlar.
+
+154
+00:44:51,731 --> 00:44:58,731
+Evet, yani üstteki sayı alttakinden büyükse zaten bir problem olmuyor. Ama alttaki üsttekinden büyükse...
+
+155
+00:44:59,923 --> 00:45:21,764
+Şimdi şurada iki tarz yaklaşım çıkarmadı. Daha doğrusu bunda bir problem olmuyor ama normal çıkarmada yapacağımız işlem iki tarz farklı yaklaşımla yapacağız. Normal çıkarmada işte bundan bir aldık, ikiden bir çıktı, bir. İşte bunda bir kaldı, birden bir çıktı. Bunları almıştık zaten şeklinde yaptığımız bir işlemdi hatırlarsak.
+
+156
+00:45:22,387 --> 00:45:38,887
+Çıkarma işlemi ama bilgisayar sistemlerinde tabii demin yaptığımız gibi ondalık çıkarmayla yapılmıyor. İki tarz yaklaşım var. İlk başta ikiye göre tümleyen veya bire göre tümleyen diye tekabül ettiğimiz iki tane yaklaşım üzerine çıkarma işlemi yapılmış.
+
+157
+00:45:38,887 --> 00:45:50,347
+Daha doğrusu donumsal olarak yaptıkları sistemlerde bu mantığa, bu anlatacağım, ikiye göre çıkarmaya özellikle ikiye göre tümlemeye göre çıkarmayı baz alanı.
+
+158
+00:45:50,387 --> 00:46:02,988
+kullanarak oluşturmuş sistemler olacak. İleride toplama çıkarma devrelerini de göreceğiz. Şimdi şöyle bir sonraki, biri tümleyen aritmatiği ile çıkarmayı izah edelim.
+
+159
+00:46:03,056 --> 00:46:21,556
+Normalde sayımız, üstteki sayı alttakinden çıkıyor ve ilk kontrol edileceğiniz şey bence normal olarak da üstteki sayı büyük mü, ufak mı? Çünkü sonra bir ekstra işleme tekabili, ekstra işlem yapmamız gerekecek. Negatif bir sayı ise elde ettiğimiz sayı.
+
+160
+00:46:22,003 --> 00:46:30,724
+Şimdi buna baktığımızda üstteki sayı daha büyük. Tamam, işte normalde şu alttaki çıkan sayının birre tümleyenini almamız lazım.
+
+161
+00:46:31,283 --> 00:46:39,043
+Yani şu bir sıfır sıfır bir bir sayısını tümliyoruz. Bire tümleme şu demek, birleri sıfır sıfırları bir yaptığımız işlem.
+
+162
+00:46:39,823 --> 00:46:46,043
+Tümledikten sonra da sayımızı orijinal çıkartılan sayıdan toplamamız gerekiyor.
+
+163
+00:46:46,743 --> 00:46:48,043
+Topladıktan sonra...
+
+164
+00:46:48,947 --> 00:47:07,527
+Biraz kaymış burası ama alt alta geldiğini düşünün şöyle. Şunları topladığımızda şuradan bir elde gelecek. Bu elde de bunun fazladan bir elde oluşturmasını sağlayacak. Elde bir oluşmuş da bakın bu bire tümleyene göre.
+
+165
+00:47:07,887 --> 00:47:14,907
+Bir oluşmuşsa sonuç pozitiftir diyeceğiz ve gerçek sonuç eldenin en sağdaki basama eklenmesiyle.
+
+166
+00:47:15,027 --> 00:47:23,387
+Yani aslında şunu şurada bir daha topluyoruz yukarıdaki bulduğumuz sonuçta ve nihai sonucum benim bu olacak.
+
+167
+00:47:24,287 --> 00:47:28,887
+Ta ki bire göre tümleyen de toplama işlemin de elde oluşmuşsa.
+
+168
+00:47:30,108 --> 00:47:31,987
+Başka bir örnek daha yapalım.
+
+169
+00:47:33,744 --> 00:47:44,664
+Eğer bir oluşmamışsa, elde oluşmadığı senaryoda, şuna tersini alalım, 1, 1, 0, 1, ters aldım, 0, 0, 1, 0 yaptım, 1'e göre tümleyen bu.
+
+170
+00:47:44,963 --> 00:47:51,224
+Tekrardan belirtelim. Bu sayıyı normal üstteki sayımızla toplayacağız.
+
+171
+00:47:52,684 --> 00:48:00,003
+Çünkü bilgisayar sistemlerinde çıkarma işlemi yoktur arkadaşlar. Böyle 1'e veya 2'ye göre tümleyen alıp toplama işlemi vardır.
+
+172
+00:48:00,692 --> 00:48:12,851
+Tümleyen aldıktan sonra yine toplayacağız ve topladığımız sayıda elde oluşmuyorsa, ki burada oluşmadı gördüğümüz gibi, elde oluşmuyorsa bulduğumuz sonucun terslenmesi dediğimiz.
+
+173
+00:48:12,931 --> 00:48:20,771
+Yani gene bire göre tümleyenini alarak yapmamız lazım. Şu an bulduğumuz sonuç negatiftir. Çünkü bir pozitif şeyi vermedi.
+
+174
+00:48:21,492 --> 00:48:26,371
+Ve bulduğum sonucun tümleyeni benim nihai sonucumdur diyeceğiz.
+
+175
+00:48:26,835 --> 00:48:30,795
+Tekrar şurayı kontrol edersek, zaten şurası kaç yapacak? 9.
+
+176
+00:48:31,515 --> 00:48:34,576
+Şurası kaç yapacak? 13.
+
+177
+00:48:35,155 --> 00:48:37,916
+Yani 9 ile 13 çıktığımızda, eksi 4 olması lazım.
+
+178
+00:48:38,536 --> 00:48:43,376
+İşte eksilik, işte tümlerini aldım topladım, bir olmadığı için eksilik oradan geldi.
+
+179
+00:48:44,036 --> 00:48:45,335
+Tümlerini aldım topladım.
+
+180
+00:48:45,907 --> 00:48:54,827
+Elde ettiğim sayıda, işte tümleyenini tekrardan bire göre tümleyenini aldığımda, eksi 4 değerini bulmuş oldum.
+
+181
+00:48:55,667 --> 00:48:58,067
+Şunları yapacak olursak, bir iki tanesini yapalım.
+
+182
+00:48:58,627 --> 00:49:03,427
+Mesela şunu nasıl yapacağız? Şu ikinci sayının tümleyenini alacağız ve toplayacağız.
+
+183
+00:49:03,427 --> 00:49:11,667
+Yani yaptığımız işlem, bir sıfır bir bir ile sıfır bir bir bir'i toplamak.
+
+184
+00:49:12,884 --> 00:49:31,684
+Burası 0 gelecek. Bu tarafa 1 geldi. 1 gelecek ama bir tane daha bu tarafa gelecek. Burası 0 olacak. Buraya verdik. Burası da 0 olacak. Buraya verdik. Burası da 0 olacak. Buraya geldi. Şimdi buradaki 1 olduğu için yapacağımız işlem 1'i buraya alıp toplamak.
+
+185
+00:49:33,268 --> 00:49:34,788
+Aşağıya kadar dayandı.
+
+186
+00:49:36,007 --> 00:49:42,648
+Yani neticede benim için sonuç 0011 dediğimiz 3 sonucunu verdi.
+
+187
+00:49:42,887 --> 00:49:45,927
+Bakalım bir bu kaça tekabül geliyor arkadaşlar?
+
+188
+00:49:51,123 --> 00:49:53,003
+Kaça gidiyor burası? Şu.
+
+189
+00:49:56,384 --> 00:49:57,303
+Buradan biz acaba?
+
+190
+00:50:02,612 --> 00:50:09,532
+Evet, 19 olan bir sayı, burası da 10, kaç burası?
+
+191
+00:50:16,916 --> 00:50:20,536
+15 ve 4 bulmamız lazım değil miydi?
+
+192
+00:50:26,228 --> 00:50:27,448
+Nerede hata yaptık?
+
+193
+00:50:32,148 --> 00:50:33,948
+Hatay yok. 16 değil mi hocam?
+
+194
+00:50:34,628 --> 00:50:37,828
+Aynen. Bu değil bizim sayımız değil mi? Sayımız şuradaki.
+
+195
+00:50:39,148 --> 00:50:44,728
+Şuradaki 16 olduğu için de 19'da 16'ı çıkarttığımızda 300 arkenlenmesi bekleniyor.
+
+196
+00:50:45,588 --> 00:50:48,847
+Ondalık tarafta da kontrolünü sağlanabilir bu şekilde.
+
+197
+00:50:51,380 --> 00:51:17,779
+İkiye tümleyen aratmatiği ile çıkarmak, şu an bütün Sikri'lerin yaptığı işlem bu. İkiye tümler, sonra toplama işlemi yapar. Ama bunu yapması için oluşturacağımız lojik diagramında bir algoritma var. Bu algoritması da şu. Normalde yine ikinciye çıkarılan sayı tümlemesini alıyoruz ama ikiye tümlemesini almamız lazım. İkiye tümlemesi de şunu içeriyor. İlk başta bire tümle, yani birleri sıfır, sıfırları bir yap.
+
+198
+00:51:18,291 --> 00:51:38,631
+Sonra buna bir ekle, şu an bu ikiye tümlenmiş sayı demek. Yani bire tümlenen tek farkı artı bir eklenmesi. Ve bu artı bir eklenmesi sonuç pozitifse, yani bir oluşmuşsa ki bir toplama işini ortadan kaldırıyor doğal olarak. Çünkü zaten öncesinde toplamıştık.
+
+199
+00:51:39,056 --> 00:51:42,796
+ve elde ettiğiniz sonuç pozitiftir deyip bırakıyoruz.
+
+200
+00:51:43,396 --> 00:51:57,115
+Ama negatif olma senaryosunda, o burada yazmamışız herhalde, yani burası bir vermeseydi, o zaman da tekrardan bunun ikiye göre tümlenini alıp öyle yazmamız gerekecektir.
+
+201
+00:52:00,947 --> 00:52:10,768
+Sayı sistemleri bilgisayar ortamında iki şekilde gösteriliyor, iki ana başlıkta. Bir tanesi işaretsiz sayılar, yani aslında eksi değerin hiç olmadığı sayı sistemi.
+
+202
+00:52:10,768 --> 00:52:20,067
+Ve bu zaten mümkün değil, artık günümüzde kullanılmıyor. İşaretli sayıların gösteriminde ise bir işaret bitiyle gösterilmesi var.
+
+203
+00:52:20,567 --> 00:52:28,768
+Ki şu an bu da günümüzde kullanılmıyor ama eski bilgisayarlar bu şekilde kullanılıyordu. Ne demek bu? Bir sayı yazıyorum. Şöyle bir sayı...
+
+204
+00:52:28,947 --> 00:52:37,728
+Şu en soldaki pin veya bit neyse benim için artı mı, eksi mi olduğunu belirten bit olacak.
+
+205
+00:52:38,487 --> 00:52:43,567
+Yani bir koyduğum için ben buna eksi bir sayıymış diye direkt görüyorum.
+
+206
+00:52:43,728 --> 00:52:47,587
+Yani aslında bu sayı eksi altı olduğunu söylüyor.
+
+207
+00:52:47,747 --> 00:52:49,547
+Hiç tümleme mümkünme mantığı yok.
+
+208
+00:52:50,347 --> 00:52:51,347
+Sayın değer neyse o.
+
+209
+00:52:51,347 --> 00:52:53,347
+Bunun artı altısını yazmak için de ben...
+
+210
+00:52:54,260 --> 00:53:02,660
+Şöyle, burası benim artı olduğunu, şurası da 6 değeri olduğunu söyleyen yaklaşık.
+
+211
+00:53:02,896 --> 00:53:12,396
+Bu tabii sıkıntılı, neden sıkıntılı? Normalde işte bu yazacağımız sayının oluşması için binary gösterimi bir bit genişliğine sahip.
+
+212
+00:53:12,556 --> 00:53:17,155
+İşte 8 bitli bilgisayardan 16 bitli bilgisayarlar gibi, bitli işlemciler veya.
+
+213
+00:53:17,155 --> 00:53:28,596
+İşte burada bu bit sayısının en anlamlı sol üst köşesinin işaret bitini ayırmak aslında kendisine 16 bit değil 15 bitini veya 8 bit değil 7 bitini kullanmaya.
+
+214
+00:53:29,331 --> 00:53:47,992
+zor duyuyor. Birinci sıkıntı bu. İkinci sıkıntı da şu. Artı, eksi, sıfırın sıfır senaryosunda işte bir veri yazdım şöyle, bir veri yazdım böyle. Bu durumda ikisinin de sıfır olmasına rağmen artı ve eksi olması sorumsal yaşanıyor.
+
+215
+00:53:48,436 --> 00:54:02,316
+Bundan dolayı artık bu işaret bitiyle göstermeye yok. Ama ola ki işaretli sayı sisteminde soru soru olsa şu eksi 5'e, bu artı 5'e tekabül değerlerini bilmek lazım.
+
+216
+00:54:03,155 --> 00:54:12,235
+İkinci gösterim tümleyen aritmatiği. Yani aslında negatif sayılarda pozitif şeklinde gösteriliyor. Ama tümleyerek gösteriliyor.
+
+217
+00:54:12,876 --> 00:54:20,195
+Mesela 5 dediğimiz pozitif sayı. Bunun normallik karşılığı bu. 0, 1, 0, 1, baneri karşılığı.
+
+218
+00:54:20,556 --> 00:54:25,876
+Ben bunun eksi 5 olarak göstermek istiyorsam ilk başta artı 5'in 1'e tümlüyorum.
+
+219
+00:54:26,356 --> 00:54:48,536
+Yani birileri sıfır sıfırları bir yapıyorum. Bir sıfır bir sıfır yaptım. Sonra bunu ikiye tümlüyorum. Yani bir ekliyorum. Ve sayımı ben bilgisayar ortamında böyle gösteriyorum. Ta ki eksi beş göstermek istiyorsan. İşaret biti kullanmadan işaretli sayıların gösterilmesi. Yani tümleme aritmatiği ile göstermek.
+
+220
+00:54:48,815 --> 00:54:59,855
+Bilgisayarda da genelde sayılar bu şekilde gösterilir. Normalde işte burada eksi beş olarak gösterilen işaret bitiyle gösterilseydi bu örnek için konuşuyorum, eksi üçtü.
+
+221
+00:55:01,435 --> 00:55:03,195
+Birbirinden farklı iki değer.
+
+222
+00:55:03,827 --> 00:55:17,568
+O yüzden bu ibare işaret biti kullanılan bir sistemde veya işaret biti kullanılmayan bir sistemde tümlerin artımaklarında nasıl gösteriliyor gibi bir ibare varsa bu ikisini boyle değerlendirmekte fayda var.
+
+223
+00:55:20,755 --> 00:55:47,495
+Tümleme aritematik ile çıkarmayı demin anlattık ama burada bir iki örnekten daha yapalım. Onluk sayı düzleminde yapılmış ama olabilir. Bunda da gösterebiliriz. İkisinde de aynı. Mantık zaten tümleme mantığı şu demek. Yani ben ikinci hane'deki eksinin olduğu bu sayıyı tümleyerek gösterip onu toplamak. Yani tümlenen sayıyı bilgisayar ortamında bu tüm eksi 2164 diye gösterilmeyecek değil mi?
+
+224
+00:55:48,436 --> 00:55:58,276
+Gösteremiyorum, ben ne karşıda görebilecek, nasıl gösterilecek? Bunun tümleyenini, Tuls Komplimenti'ne göre gösterilmesi lazım.
+
+225
+00:55:58,735 --> 00:56:04,195
+Tuls Komplimenti ile ben aslında şu sayıyı toplarsam, çıkarma işlemi yapmış olacağım.
+
+226
+00:56:05,536 --> 00:56:10,135
+Tuls Komplimenti, bu ondalık sayıda nasıl hesaplayacağım?
+
+227
+00:56:12,244 --> 00:56:22,244
+4 bitli, 5 bitli dijitten kendisini çıkartacağım. Nasıl işte, normalde şurada şu pinin tümlerini biz aslında şöyle buluyoruz değil mi?
+
+228
+00:56:22,244 --> 00:56:32,244
+Yani bunun 0, 1'leri 0, 0'ları 1 yapıyoruz ama aslında bulduğumuz şey şuydu, birden bunu çıkartmak, birden bunu çıkartmak, birden bunu çıkartmak.
+
+229
+00:56:32,244 --> 00:56:38,244
+Yani alabileceği en yüksek değerden kendi değerini çıkartarak biz tümlerini buluyorduk.
+
+230
+00:56:38,483 --> 00:56:47,143
+Aynı şekilde burada da ondalık sayılarda da alabilecek en yüksek değer burada neyse ondan çıkartarak ondalık tabanlı tümlenini bulabiliriz.
+
+231
+00:56:47,503 --> 00:56:54,563
+Ve bulduğumuz ondalık tümlenini topladığımızda elde oluştuğu için sonuç pozitif diyeceğiz.
+
+232
+00:56:55,003 --> 00:56:57,903
+Ne eldesi oluştu? Hani dijikten fazla bir dijik geldi.
+
+233
+00:56:57,903 --> 00:57:02,603
+Ve açılacak çıkarma işlem sonucu direkt şurası.
+
+234
+00:57:03,123 --> 00:57:27,143
+olarak gösteriyoruz. Aynı bu ondalık sayılar nasılsa binary gösterimde de aynı olacak. Negatifte de dijit oluşmadığı için, tümleyenini aldım, 33.642 bunu normal topladım ve dijit sayısı artmadı. Yani taşma olmadı. Taşma olmadığı için de bu sayının tümleyenini, gene ikiye göre tümleyenini alacağım.
+
+235
+00:57:28,851 --> 00:57:33,612
+Ve bu sayı benim için bu işlem sonucudur diyeceğim.
+
+236
+00:57:35,172 --> 00:57:39,291
+Binerimde de aynı şekilde aynı şeylerden bahsetmek mümkün.
+
+237
+00:57:40,112 --> 00:57:43,652
+Zaten bozuları yiyoruz diye hızlıca geçtim.
+
+238
+00:57:47,188 --> 00:57:49,027
+Evet, aynen öyle. Doğru.
+
+239
+00:57:55,507 --> 00:58:07,767
+Peki, sunuma geçelim. Sayı sistemleri zaten bir background'ımızın olduğunu düşündüğüm için hızlıca anlattım. Ama soru varsa yine sorabilirsiniz.
+
+240
+00:58:18,996 --> 00:58:39,776
+10 tümleyende bilgisayar 10 tabanında çalışmıyor zaten. Sen 10 tabanında yazdığın bir bilgi bilgisayar arka planda ikili sayı sisteminde tutuyor. İkili sayı sisteminde tutularken mesela sen eksi 5 yazdın, o ondalık gösterimde veya eksi 6 yazdın, o ondalık gösterimde 4 olarak göstermez.
+
+241
+00:58:44,672 --> 00:58:51,951
+Demin dediğim gibi binary altının tümleyeninin, yani ikiye göre tümleyenin şeklinde kurulur.
+
+242
+00:58:58,867 --> 00:58:59,627
+Evet.
+
+243
+00:59:09,427 --> 00:59:23,587
+Evet, şimdi normalde güncel hayatta bir analog sinyali biz kodladık da diyebiliriz, bunu kuantalamada, örnekleme de diyebiliriz, 1 ve 0'lardan oluşan modüle getirdik.
+
+244
+00:59:23,927 --> 00:59:30,587
+Ama şimdi bu kodlama kısmı farklı yaklaşımlar içeriyor. Biz demin dedik ki işte 12.
+
+245
+00:59:31,251 --> 00:59:50,632
+12 normalde hani 4 bitlik bir sayı sisteminde gösterelim. Yani 4 dijitli bir yapıda. 1, 8, 4, 0, 0. Yani 12 bunu gösteriyor değil mi? Ama bu doğrudan kodlama dediğimiz bir yaklaşım. Bazı durumlarda farklı kodlama tabloları, farklı kodlama yaklaşımları uygulanabiliyor.
+
+246
+00:59:51,188 --> 01:00:01,208
+İşlemci bu kodlamayı ona göre algılıyor ve ona göre bir decoder ne yapılacaksa buna göre bir ayarlama kodçözü devresiyle anlaşmasını sağlıyor.
+
+247
+01:00:01,208 --> 01:00:17,968
+Bu kısım decoder kısmının ileride deneyeceğine olduğunu ama şu an bizim bu kodlama mantığında doğrudan kodlama dediğimizin dışında farklı nasıl bir sayı sistemi, bir decimal format olur veya bir bilgi nasıl tutulabilir onlara bakacağız.
+
+248
+01:00:18,835 --> 01:00:24,596
+İşte normalde oradan temsili kodlama dediğimiz şey, işte normalde alt olan sayısının gösterimi.
+
+249
+01:00:25,036 --> 01:00:31,596
+Mesela biz klavyeden A'ya giriyoruz. A harfine giriyoruz. Arkadaşlar, bir saniye, geliyorum.
+
+250
+01:01:21,396 --> 01:01:35,396
+Evet arkadaşlar, nerede kalmıştık? Evet, doğrudan kodlama dediğimiz yapılarda aslında arka planda bizim normal sayı sistemin dönüşümleri, işte 2 üzeri 1, 2 üzeri 2 falan çarptığımız sistemler...
+
+251
+01:01:35,952 --> 01:01:40,212
+O mantıkla çalışan bir algoritmayla bunun kodlaması söz konusu.
+
+252
+01:01:40,732 --> 01:01:46,012
+Şimdi ASC kodlama dediğimiz şey aslında o da bir tık doğrudan kodlama ama bunun bir tablosu var.
+
+253
+01:01:46,152 --> 01:01:47,992
+Tablo tabanlı kodlama. Ne demek bu?
+
+254
+01:01:48,392 --> 01:02:02,152
+Mesela biz klavyeden A girdik ama o ASC tablolara bakarak bizim A'nın resimler karşılığı 65 olan ve bunun da binary karşılığı olan yapıyı arka planda tutar.
+
+255
+01:02:02,643 --> 01:02:18,763
+Biz klavyeden girdiğimiz her bir letter, harf veya numerik değer neyse, hepsinin arka planda bir astri kodlama tablosundaki binary karşılığına gelen kısmı tuttuğu, yani böyle bir dönüşüm yapmışlar.
+
+256
+01:02:19,503 --> 01:02:27,323
+Bir başka, aslında o da doğrudan kodlama ama neyin doğrudan kodlaması? A'nın 65 numerik decimal değere gelenin doğrudan kodlaması.
+
+257
+01:02:27,731 --> 01:02:34,992
+Bunun dışında BCD bazı farklı kodlamalar var. BCD, 3 fazlalık icon ve bitişi kodlara bakacağız.
+
+258
+01:02:38,932 --> 01:02:44,731
+Evet, BCD dediğimiz kod bir tıp daha farklı. Mesela 24'ü biz doğrudan kodlamada...
+
+259
+01:02:47,764 --> 01:02:59,384
+24'ü biz doğrudan kodlamada nasıl kodluyoruz? 2 üzeri işte 2'ye böyle böyle oluşturduğumuz kalanlardan yapmaya çalışsak işte 11000 diye kodlanırız.
+
+260
+01:02:59,504 --> 01:03:06,024
+Hatta şurası 16, burası 8, o da 24'ü yapıyor zaten. Bu şekilde kodluyoruz.
+
+261
+01:03:06,124 --> 01:03:14,424
+Ama DCD kodlama dediğimiz şey, decimal ile dijitleri ayırarak her bir dijitli kendi başında binary karşılığını yazar.
+
+262
+01:03:15,059 --> 01:03:30,819
+Yani bu senaryoda 99 misal örneğinde aslında en fazla yapabileceği bu bir SD'nin 9 bir, öteki tarafa da 9. Bu şekilde her bir dijiti kendince binary olarak kodlayan bir kodlama.
+
+263
+01:03:31,480 --> 01:03:41,059
+25 bu senaryoda misal bu değil, artık 8 bitle gösterilen 2 tane 2 ve 5'in ayrı ayrı binary karşılığı şeklinde tutulur.
+
+264
+01:03:41,391 --> 01:03:47,911
+Bu bir PCD kodlama tablosu. Yani bu başka bir yaklaşım.
+
+265
+01:03:49,071 --> 01:03:52,831
+Üç fazlalık kodu, bu da değişik bir kodlama tekniği.
+
+266
+01:03:53,391 --> 01:04:01,891
+Her bir sayının binary karşılığı direkt alınmaz, sayının üç fazlasının binary karşılığı o sayıya tekabül verir.
+
+267
+01:04:01,891 --> 01:04:07,991
+Buna en çok örnek verirken şunu kullanıyorum ben.
+
+268
+01:04:09,204 --> 01:04:35,364
+Karşı tarafa bir veri göndereceksiniz. İşte Hamza. Şimdi tabii azçı kodla karşılıklarını bilmiyorum ama A'yı bilelim direkt, ondan söyleyelim. A'lar 65 olsun, MZH, N bilmiyorum. Bir stream yapıyorsunuz. Yani işte Hamza'nın H'sinden başladık. Hamza örnek veriyorum. Böyle değil ama 12 olsun. Tabii bunlar 8 bit gösteriminde olacak. Hamza'yı bir gönderdim. Hamza'nın H'sini.
+
+269
+01:04:35,728 --> 01:04:47,907
+Ama bunu 12 olarak, 12'nin binary karşılığı ne olsun? Şöyle bir şey değil mi? 12 bu. Böyle göndermiyorum da ben bunu 3 fazlalık koduyla kodladığımı düşünelim.
+
+270
+01:04:47,907 --> 01:04:58,748
+Bir, bir, pardon şunu isteyeceğim. 15 olarak göndereceğim. Değil mi? Karşı tarafı H'yi buradayken bu şekilde gönderiyorum gene.
+
+271
+01:04:59,539 --> 01:05:06,779
+Şimdi karşı taraf 3 fazlalık koduyla kodlandığını bilinen bu streamin bu akışı 3 fazlalık koduyla çözebilir.
+
+272
+01:05:07,400 --> 01:05:12,659
+Ama eğer ki karşı taraf sizin 3 fazlalık koduyla gönderdiğinizi bilmiyorsa bunu çözemez.
+
+273
+01:05:13,139 --> 01:05:24,659
+İşte bu gibi verileri farklı formatta, farklı yerden bir noktadan bir noktaya göndermek için kullanılan kodlama tekniklerinden bazıları da burada kullanılmış güven network'te.
+
+274
+01:05:26,132 --> 01:05:37,011
+A transferinde vesaire. 3 fazla kodunda da 9, 12 gibi, 6, 8, 9 gibi farklı bir 3 fazla sayının gönderilmesiyle oluşturulmuş.
+
+275
+01:05:38,260 --> 01:05:51,440
+Icon kodu dediğimiz, arada bir, şurada siyah bir çizgi var. Bu siyah çizginin kadar, yani 4 numarik olarak, 4 decimal olan sayıda, 4'e kadar kullan kodlama yine binary kodlamayla aynı.
+
+276
+01:05:51,659 --> 01:06:00,960
+Ama 4'ün üstü 5, benim için aşağıdan yukarıya doğru bire göre tümleyene alınmış sayılardır.
+
+277
+01:06:01,844 --> 01:06:16,324
+Böyle bir kodlaması var. Yani 5 artık benim için 4'ün tümleyini, 9, 3'ün tümleyini, 7, 2'nin tümleyini, 8, 1'in 1'e göre tümleyini, 9 da 0'ın 1'e göre tümleyini diyeceğimiz kodlama oluyor.
+
+278
+01:06:16,324 --> 01:06:25,864
+Yani bu örnekte işte normalde 18'i biz BSD olarak göndermek istesek, BSD olarak gönderelim.
+
+279
+01:06:28,083 --> 01:06:30,083
+Böyle bir sayı gidecekken,
+
+280
+01:06:33,083 --> 01:06:38,983
+Hatta şeyde, grey kodu da şey, grey nereden çıktı ya? 3. 3 fazlalığı da yazalım.
+
+281
+01:06:40,384 --> 01:06:55,043
+21'in binary kodunu göndermem lazım. 16, 20, 21 olur değil mi? 16, 20 ve 21 oldu. 3 fazlalıkta böyle göndermem gerekirken.
+
+282
+01:06:55,507 --> 01:06:57,887
+şeyde ay kandeması göndereceğim.
+
+283
+01:06:59,527 --> 01:07:01,647
+18'in birini normal göndereceğim.
+
+284
+01:07:04,487 --> 01:07:09,887
+8'i de 0, 1, 1'in tümleyeni şeklinde göndermem lazım.
+
+285
+01:07:10,107 --> 01:07:12,167
+Yani aşağıya yazmak zorunda kaldım.
+
+286
+01:07:12,851 --> 01:07:20,692
+Böyle göndereceğim bir kod olacak. Karşı tarafta, mesela örnek verim, network security üzerine bir veri gönderiyorsunuz ve ICANN koduyla gönderdiğinizi düşünün.
+
+287
+01:07:20,831 --> 01:07:31,032
+Yani o şekilde ayarladınız. Karşı tarafta bunu ICANN kodu tablosunda bu mentalitede oluşturduğu devre tasarımıyla çözerse veriyi anlamlandırmış olacak.
+
+288
+01:07:31,931 --> 01:07:36,012
+Bunun gibi verinin, yani sayısal decimal sayıların farklı gösterimleri mevcut.
+
+289
+01:07:36,911 --> 01:07:40,331
+Gray code dediğimiz şey esasında şunu söylüyor bize.
+
+290
+01:07:41,012 --> 01:08:03,911
+Bir kod tablosu oluşturmak istesek, sıfırdan bir, yani sıfır sıfır sıfır sıfır olarak, bir de normal olarak, ama bundan sonraki her basamakta grey kodu şunu söyler. Hem ikkısınız dediğimiz bir tabir var. Hem ikkısınız şunu söylüyor bize. İki bitlik bir sayıdan örnek verelim.
+
+291
+01:08:04,755 --> 01:08:14,755
+2-bitlik veya işte multi-bitlik sayıda bitler arası bir step sonrasında bitler arasındaki değişim bir dijit olmalı diyor. Misal 0-1.
+
+292
+01:08:15,539 --> 01:08:22,600
+Şu hale gelirse bir dijitli değişim, yani Heming'i, Heming Distance'ı bir olan bir değişim oluyor.
+
+293
+01:08:22,600 --> 01:08:31,799
+Ama bu sayı şu formata gelirse iki Heming Distance'a sahip bir sayıdır, sayı değişimidir diyoruz.
+
+294
+01:08:32,199 --> 01:08:40,579
+Yani her stepte bir bitin değişmesine izin var, Gray Code'da Heming Distance'ı bir olacak iki binary sayının.
+
+295
+01:08:40,912 --> 01:08:47,372
+Örnek verelim, şu bir tane sayımız, şu da öteki sayımız. Hem iklisnasları nedir bu iki sayı?
+
+296
+01:08:51,891 --> 01:09:16,431
+Nedir? Üçtür. Evet. Yani şuradaki üç bit değişimci sadece. Birler sıfır, sıfırlar bir olmuş ama şurası aynı kalmış. Üç hem ikisinin solan bir sayı. Ve bu kodlamaya göre, yani bir, iki, üç, dört diye böyle sırasal düzende ard arda gelemez bu ikisi. Hangi sayı ard arda gelebilir? Mesela şu sayı ard arda gelebilir.
+
+297
+01:09:17,235 --> 01:09:21,396
+Hem ilk disnesi bir olan sayıdan arda arda gelme algoritmasıdır mı?
+
+298
+01:09:21,976 --> 01:09:30,076
+Buraya baktığımızda da işte bir bu şekilde gösterilmiş, iki bir değişim yapacağımız için bir bir şeklinde gösterilmiş,
+
+299
+01:09:30,275 --> 01:09:34,376
+üç bir sıfır şeklinde bir tanesini silerek vesaire oluşturulmuş bir tablo.
+
+300
+01:09:34,720 --> 01:09:51,920
+Bunu biz en çok ileride göreceğiz. Karnaugh haritaları diye tabir ettiğimiz Karnaugh haritalarının üst teklerini oluşturmakta kullanacağız. Bunlar tek yani etiket diyelim bu kısımlara. Yani 0-0-0-1'den 1 hem iklimizons var.
+
+301
+01:10:00,000 --> 01:10:06,500
+Kray konuğunda yazılmış olması ve burada da mesela bir hemiklisiniz var.
+
+302
+01:10:08,380 --> 01:10:10,079
+Burada da bir hemiklisiniz var.
+
+303
+01:10:11,680 --> 01:10:17,899
+Buna bağlı kanılarak yazıldığından bu şekliyle kullanacağız karnıları.
+
+304
+01:10:20,916 --> 01:10:38,876
+Şimdi bu kodlamalar vesaire dediğim gibi hani soruda zaten veya soru olmasına da getirdik. Normalde hani gönderen ve alıcı arasındaki irtibata bağlı olarak değişebilecek yaklaşımlar. Farklı kodlamalar da var, sezar kodlama da var mesela örnek verelim vesaire. Onların lojik diyagramda kullanımları da mevcut.
+
+305
+01:10:39,283 --> 01:11:05,903
+Şimdi biz burada lojik devre temellerinden biraz bahsedeceğiz. Kapılara gireceğiz. İşte bu cebri dediğimiz o cebri ve o matematiğe biraz giriş yapacağız. Zaten birinci derste de anlatılmıştır. Lojik devre temelinde, lojikte bir demek benim için var demek, sıfır demek de benim için yok demek olacak. Yani bir ve sıfırdan oluşan bir bitlik veriyi kastedeceğim ben lojik anlamda.
+
+306
+01:11:06,452 --> 01:11:10,112
+Lojik devrelere ait, lojik işlemlere bakacağız.
+
+307
+01:11:10,551 --> 01:11:13,872
+Ven diagramla, Boole cebriyle bu haftayı bitireceğiz.
+
+308
+01:11:15,572 --> 01:11:25,652
+Lojik işlemlerde, şimdi her şeyin bir matematiği var. Aslında lojik devre tasarımında bir problemi çözmek için bir devre dizaynı düşünüyorsak bunun da bir matematiği olacak.
+
+309
+01:11:25,832 --> 01:11:35,512
+Ve biz buna F fonksiyonu diyeceğiz. Yani bir F fonksiyonu üretmek ve o F fonksiyonunu devre haline getirmek bizim asıl hedefimiz.
+
+310
+01:11:36,112 --> 01:11:40,311
+Bu F fonksiyonu da tamamen Boole cebriyle çıkacak olan bir fonksiyon olacak.
+
+311
+01:11:41,043 --> 01:12:02,263
+Burada Boole cebri içerisinde kullanılacak 3 tane lojik işlem var. V, veya ve tümleme işlemleri. Ve biz bütün problemleri bu 3 işlemler bazında analiz ederek çözeceğiz. Ve donanımsal olarak da bu 3 işlemlere ait olan kapıları kullanarak çözeceğiz.
+
+312
+01:12:06,996 --> 01:12:09,255
+kapılarından üretilmiş kapılar olacak.
+
+313
+01:12:10,452 --> 01:12:16,072
+Başka da lojik işlemlerde biz en çok bahsedeceğimiz doğruluk tablosu.
+
+314
+01:12:16,072 --> 01:12:25,032
+Doğruluk tablosu şunu söyleyecek bize, bir problem var, lafzen anlatılmış olan bir problem olsun, hani sözel bir problem olsun.
+
+315
+01:12:25,592 --> 01:12:38,452
+Bunun lojik diagramını, lojik devresini göstermek için bizim onu, bütün kombinasyonlarını deneyebileceğimiz, kombinasyonların hepsinde ne F fonksiyonu çıkartıp çıkartıp,
+
+316
+01:12:38,452 --> 01:12:55,412
+Bunu test edeceğimiz tablo. Yani o F-moksiyonun doğru olan çalışan noktalarında bir sonucunu, yani bu çalışıyor sonucunu verecek olan tablo, doğruluk tablosu olarak bize hazırlayacağımız bir tablo olacak.
+
+317
+01:12:56,467 --> 01:13:07,867
+Anahtar devresi aslında biraz da elektrikle alakalı ama gözümüzde canlanması için verilecek anahtar devresi bu ve veya ve tünleme işlemleri kapıları için.
+
+318
+01:13:08,467 --> 01:13:22,467
+Sonra, lojik devre gösterimleri, bu kapıların, daha doğrusu bu işlemlerin, operatörlerin lojik diyagramları, lojik devrenin oluşturulabilmesi için hazır kapı modülleri var.
+
+319
+01:13:22,827 --> 01:13:25,948
+Bu modüllerin lojik devre gösterişlerini göstereceğim.
+
+320
+01:13:26,787 --> 01:13:28,667
+Zamanlama diyagramlarını anlatacağım.
+
+321
+01:13:30,228 --> 01:13:33,747
+Bu lojik devre tasarımında kullanacağımız gösterimler olacak.
+
+322
+01:13:34,427 --> 01:13:38,988
+Şimdi V işlemiyle başlayalım. V işlemi zaten mantıssal yürütmede de ne demektir?
+
+323
+01:13:39,427 --> 01:13:42,847
+İşte iki önerme var örnek verelim. A var ve B var.
+
+324
+01:13:42,847 --> 01:13:48,528
+A olmadan B olmuyor, B olmadan A olmuyor önermesidir.
+
+325
+01:13:48,728 --> 01:13:50,288
+Yani laf sen söyleyecek olursan.
+
+326
+01:13:58,064 --> 01:14:17,804
+Nitelendirir diyeceğiz. Lojik devrede bir problemi analiz ettik ve dedik ki biz bunu gerçek bir devre tasarımında bunu modelleyebilmemiz için kullanacağımız B kapısının sematik gösterimi şu işte biraz huniye benzeyen bir yapı olacak.
+
+327
+01:14:18,424 --> 01:14:24,744
+F dedik hep. F dediğimiz şey aslında bizim üreteceğimiz çözümün.
+
+328
+01:14:25,235 --> 01:14:33,275
+Fonksiyonu. Fonksiyon dediğim işte bu lojik devrede çıktığı olarak kullanacağımız fonksiyon.
+
+329
+01:14:34,260 --> 01:14:40,960
+Şimdi gösterimi V kapılarının çarpı şeklinde, mentalitesi de o zaten, biri olmazsa biri olmuyor gibi.
+
+330
+01:14:42,020 --> 01:14:47,640
+Bunun doğruluk tablosuna baktığımızda, doğruluk tablosu bize bütün kombinasyonları söylerdi.
+
+331
+01:14:47,819 --> 01:15:02,159
+A ve B, iki tane girişi olan bir devrenin doğruluk tablosu, bütün olabilecek senaryoların test edildiği ve ona bağlı olarak F fonksiyonun çıktı da ne ürettiğini gösteren tablo demek olacak.
+
+332
+01:15:02,260 --> 01:15:06,319
+Burada şu an tabii sadece bir kapı var, iki girişli, bir çıkışlı, bir kapı.
+
+333
+01:15:07,479 --> 01:15:11,739
+Bu daha karmaşık yapılar olacak ve biz daha karmaşık doğruluk tabloları oluşturacağız.
+
+334
+01:15:12,620 --> 01:15:18,860
+Yani amaç burada bütün girişteki kombinasyonlarında çıkıştaki F fonksiyonun aldığı değeri göstermek.
+
+335
+01:15:21,876 --> 01:15:39,115
+Şimdi burada yazılışta hem ik distansa dikkat etmiyoruz. İki de olabilir, bir de olabilir. Bununla alakası yok ama genelde en anlamsız dediğimiz LSB ve en anlamlı dediğimiz MSB yapısında LSB her bit değişir.
+
+336
+01:15:39,636 --> 01:15:42,876
+İkinci, şu an bu iki giriş olduğu için...
+
+337
+01:15:43,155 --> 01:15:56,595
+Sonrası 2 bitti 1, sonrası 4 bitti 1, sonrası 8, 16 bitti 1 değişen şekliyle yazarsak, bütün kombinasyonları zaten denememize olanak sağlayan input kısmını oluşturmuş oluruz.
+
+338
+01:15:56,595 --> 01:15:57,775
+Doğruluk tablosunu.
+
+339
+01:15:59,891 --> 01:16:19,431
+Sağdaki zamanla doğru tablosuna bir bakalım. 0-0 iken 0 çıkar. 0-1 iken dediğimiz gibi hani önermelerin ikisinin de bir olduğu senaryo dışındakilerde 0-2 önermenin de bir olduğu senaryoda bir F fonksiyonu üreten kapıdır diyeceğiz veya operatördür diyeceğiz.
+
+340
+01:16:21,684 --> 01:16:39,684
+Bunun elektriksel anahtar devresini göstermekte, hani bir lamba bağlasak bir gerilim kaynağına, A, V, B iki tane input'undu, ikisi anca kapalı olacak ki, yani ikisi bir, bir olduğunda bu lamba bir oluyor devresini göstermek için canlandırma yaptığımız bir anahtar devresi.
+
+341
+01:16:41,184 --> 01:16:48,664
+Ne zaman ki bunlardan ikisinden bir tanesi, yani ikisi de bir olmazsa zaten efendim lambam yanmayacak ve sıfırı göstereceğim.
+
+342
+01:16:50,003 --> 01:17:07,283
+Zamanlama diyagramına bakalım. Zamanlama diyagramı şunu söylüyor bize. Her bir T domeninde, şuradaki T ağınında benim, şu çizgi hattı boyuncaki outputlarım, inputlarım ne? Bunu söylüyorum.
+
+343
+01:17:12,307 --> 01:17:24,347
+Ne zaman işte A bir olmuş, B sıfır hala, bu da sıfır oldu. Ne zaman bir, bir, bir, bir, bir, bir oldu. Çıkışında bir olduğunu gösteren zamanlama diyagramı.
+
+344
+01:17:26,612 --> 01:17:39,592
+Or işlemine bakalım. Bu da aslında önermelerden bir tanesinin bile doğru olduğu durumda çıkış önermesinin, kararın yani bir olduğunu gösteren operatörümüz.
+
+345
+01:17:40,211 --> 01:17:53,592
+Şematik gösterimi biraz daha değişik. Boole cebri'nde biz bunu artı ile göstereceğiz. Burası önemli. Boole cebri'ne geçtiğimizde tabii normal matematiksel denklemler de göstereceğiz her şeyi.
+
+346
+01:17:55,220 --> 01:18:03,140
+Bunun anahtar devresi de ikisinden bir tanesinin bir olduğunda anahtarın yandığını gösterilir olan paralel anahtar devresi olacak.
+
+347
+01:18:04,040 --> 01:18:12,220
+Zamanlama diyagramına da baktığımızda ne zamanki işte herhangi iki kesişim yerin birleşiminde bir olduğu alan benim için biri gösterecek.
+
+348
+01:18:12,920 --> 01:18:15,840
+Çünkü bir tane bir yeterli olan operatör.
+
+349
+01:18:18,068 --> 01:18:25,768
+Tümleme işlemine bakalım. Tümleme dediğimiz şey tek girişli bir terminlerdir tümleme işlemini yapacak olan kapı, lojik kapılar.
+
+350
+01:18:26,127 --> 01:18:32,087
+Girişte 0 varsa çıkışta 1 vardır, girişte 1 varsa çıkışta 0 vardır.
+
+351
+01:18:32,647 --> 01:18:44,567
+Tümlerini göstermek için farklı gösterimler var. Bir tanesi burada olduğu gibi A üstsel veya A apostrof dedikleri şu çentik olarak gösterebilir.
+
+352
+01:18:44,567 --> 01:18:53,448
+Bazı yerlerde, her yerde değil ama bazılarında bilgisayarda yazamadıklarından dolayı ünlem A şeklinde de gösterilebilir.
+
+353
+01:18:54,068 --> 01:19:08,427
+Yani veya slash A şeklinde de gösterilebilir bazı senaryolar. Bunların hepsi aslında A'nın tümleyenini yani A neyse A'nın O olmayanını gösterir, ibar eder.
+
+354
+01:19:09,203 --> 01:19:12,043
+0 ise 1, 1 ise 0 dediğim gibi.
+
+355
+01:19:12,563 --> 01:19:17,683
+Zamanlama diyagramına baktığımızda 0 ise 1, 1 ise 0 olan bir zamanlama diyagramı var.
+
+356
+01:19:18,083 --> 01:19:24,263
+Peki burada size soru, bunun elektriksel devresi nasıl olabilir?
+
+357
+01:19:26,144 --> 01:19:27,283
+Anahtar devresi.
+
+358
+01:19:32,532 --> 01:19:33,832
+Betiriyor türek var mı?
+
+359
+01:19:39,507 --> 01:19:41,567
+Katılım da çok az derse.
+
+360
+01:19:46,739 --> 01:19:50,579
+Kısa devre anahtarı. İyi kast ediyorsun [öğrenci].
+
+361
+01:19:53,639 --> 01:19:58,279
+Alabilirsin, herhalde ekrana size biliyorsun diye düşünüyorum.
+
+362
+01:20:01,971 --> 01:20:16,791
+Hocam, bu ampule bağlanan kablonun haricinde bir de ampule bağlanmayan, direkt geçen bir kablo olursa, o anahtar kapalı olursa, ampulden direkt geçmeyecek, o kabludan geçip devreyi tamamlayacak.
+
+363
+01:20:17,471 --> 01:20:22,951
+Diğerinde ise anahtar açık olursa, mecburen ampulün olduğu yerden geçmek zorunda kalacak gibi düşündüm.
+
+364
+01:20:23,572 --> 01:20:27,531
+Bir çizsene, sana yetki verdim. Herhalde vermiş olman lazım.
+
+365
+01:20:54,804 --> 01:21:14,523
+Evet, evet bu mantıkla şöyle düşünebiliriz. Misal şu an sıfır ama lamba yanıyor. Ne zaman bastım, yani biri nomine ettim, lamba söndü. Çünkü kısa devre yaptım. Değil mi? Bu mantıkla doğru. Teşekkür ettik çocuk.
+
+366
+01:21:17,083 --> 01:21:20,443
+Bunu acaba ben silebiliyor muyum? Sen misin ben lazım?
+
+367
+01:21:24,051 --> 01:21:24,715
+Evet.
+
+368
+01:21:29,171 --> 01:21:30,912
+Her sivri, kong, ben de sivri.
+
+369
+01:21:34,547 --> 01:21:59,627
+V değil işlemi var bir de. Şimdi normalde bilgisayarlarda arkadaşlar AND, yani V ve OR kapıları kullanılmaz. Genelde bilgisayar veya hardware donanımlarda, lojik tasarımlarda NAND ve NOR işlemleri kullanılır. Bunun iki nedeni var. Bir tanesi çok hızlı kapılar, daha hızlı kapılar ve tasarımlarda ikinci nedeni tasarımlarda
+
+370
+01:22:00,500 --> 01:22:18,840
+AND, OR gibi karmakaraşık yapılar birden fazla farklı entegren kullanımını sağlarken, tek bir haftası geldiğinde izah edeceğiz, NAND'la veya tek bir NOR kapısıyla hem AND'i hem OR'u beraber temsil edebileceğimiz kapılar bunlar.
+
+371
+01:22:19,315 --> 01:22:35,416
+O yüzden özel olarak üretilmiş tümleyen V işlemi, tümleyen V-A işlemi kapıları mevcut. Burada amaç şu aslında, AND olan yani V işlemine tabi olan doğrulu tablosunun tümlenmiş versiyonu.
+
+372
+01:22:35,923 --> 01:22:44,623
+İşte normalde girişteki iki önermenin doğru olduğu senaryoda anca bir üreten o V kapısı, V operasyonu.
+
+373
+01:22:45,144 --> 01:22:54,003
+Burada aslında girişte ne zamanki iki önermede doğru benim için çıkışım sıfırdır, diğer durumlarda birdir önermesine geçilecek.
+
+374
+01:22:55,043 --> 01:22:59,144
+Zaman diyagramına baktığımızda da işte zaten sıfır sıfırda bir olan.
+
+375
+01:22:59,923 --> 01:23:14,783
+1, 0'da normalde 0 olması gerekirken 1 olan, ne zamanki 1, 1'de 1 olması gereken V kapısı burada NAND olduğu için 0'ı gösteren kapıdır diyeceğiz.
+
+376
+01:23:15,164 --> 01:23:17,224
+Peki, anahtar devresi nasıl olur bunu?
+
+377
+01:23:19,804 --> 01:23:21,004
+Yorum yapacak var mı?
+
+378
+01:23:22,684 --> 01:23:26,164
+Normal V kapısını hatırlayacak olursak.
+
+379
+01:23:28,724 --> 01:23:31,404
+B kapısında şöyle bir anahtarımız vardı.
+
+380
+01:23:36,564 --> 01:23:43,244
+Ne zaman ikisine bastığımda bir, yani ışık yakan bir anahtar devresiydi.
+
+381
+01:23:44,543 --> 01:23:52,463
+Peki, V değil işleminde, tümleyen V işleminde veya nasıl olabilir bu bağlantı?
+
+382
+01:23:55,264 --> 01:23:59,423
+Mesela az önce arkadaşın çizdiği ek yoldan bir tane daha olursa.
+
+383
+01:24:00,584 --> 01:24:01,963
+Şöyle mi diyoruz?
+
+384
+01:24:03,988 --> 01:24:06,368
+Şuraya ben lambayı koydum mu?
+
+385
+01:24:07,927 --> 01:24:10,927
+Şuraya bir tane kapı, şey, A'yı koydum.
+
+386
+01:24:11,308 --> 01:24:12,448
+Aynen, bir tane daha.
+
+387
+01:24:13,408 --> 01:24:15,788
+Şuraya da B'yi koydum mu diyorsun?
+
+388
+01:24:16,628 --> 01:24:17,308
+Evet, aynen.
+
+389
+01:24:18,968 --> 01:24:20,808
+İkisini bastım, söndü.
+
+390
+01:24:21,587 --> 01:24:22,087
+Değil mi?
+
+391
+01:24:22,648 --> 01:24:25,548
+Ama bir tanesini bastım, yine söndü diyorsun.
+
+392
+01:24:25,948 --> 01:24:27,888
+İkisi de açık olduğunda da yandı.
+
+393
+01:24:28,548 --> 01:24:28,748
+Evet.
+
+394
+01:24:30,248 --> 01:24:30,847
+Doğrudur.
+
+395
+01:24:31,988 --> 01:24:38,528
+Böyle bir yaklaşımla yapılan kapı bizim için elektrik anahtar devresi de bunu gösterecektir.
+
+396
+01:24:39,768 --> 01:24:53,288
+VEA değil de VEA kapısının tümleyenin şeklinde normalde bir önermenin doğru olduğu yeterli olan devrede artık hiçbir önermenin doğru olmadığı durumda F'in bir olduğu devreyi izah edeceğiz.
+
+397
+01:24:54,087 --> 01:24:57,408
+Baktığımızda da şeyine, zamansal diagramına.
+
+398
+01:24:58,768 --> 01:25:05,828
+Genelde ikisinin de sıfır olduğu yerlerde bir ama genel diğer bütün durumlarda sıfır olduğunu göreceğiz.
+
+399
+01:25:06,048 --> 01:25:09,988
+Ne zaman ikisi de sıfır sıfırsa o zaman bir üreten bir devre.
+
+400
+01:25:10,368 --> 01:25:11,948
+Bunun nasıl olacak peki?
+
+401
+01:25:13,408 --> 01:25:14,388
+Anahtar devresi.
+
+402
+01:25:29,555 --> 01:25:30,955
+Var mı? Görüş.
+
+403
+01:25:33,455 --> 01:25:34,975
+Bir güç kaynamımız var.
+
+404
+01:25:40,020 --> 01:25:42,420
+Normalini yazayım ben. Buyurun.
+
+405
+01:25:42,640 --> 01:25:44,739
+Bir kısa devre yolu hocam ama iki tane anahtar.
+
+406
+01:25:47,120 --> 01:25:48,780
+Bir saniye, nasıl yani? Şöyle mi?
+
+407
+01:25:49,360 --> 01:25:52,940
+Daha yeni ilk [öğrenci] arkadaşımızın yaptığı yolun aynısı.
+
+408
+01:25:54,880 --> 01:25:57,819
+Orada kısa devre yolunda iki tane anahtar.
+
+409
+01:25:59,140 --> 01:25:59,920
+Şunu mu diyorsun?
+
+410
+01:26:01,659 --> 01:26:02,340
+Evet.
+
+411
+01:26:03,420 --> 01:26:04,200
+A ve B.
+
+412
+01:26:05,844 --> 01:26:29,224
+Evet, yani normalde tek bir A'yı veya tek bir B'yi veya ikisini de basmadığımda yanan mı? Şu an öyle oldu sanki. Ama yanması sadece ikisi açıkken yanıyor. Ama ben tekini kapatırsam, yani şu senaryoda misal, hala yanmaya devam ediyor senin bu örnekten. Değil mi?
+
+413
+01:26:34,355 --> 01:26:35,956
+O zaman ne olabilir?
+
+414
+01:26:36,515 --> 01:26:40,675
+Aslında az önceki, söylediğimiz böyle olacak sanki.
+
+415
+01:26:42,036 --> 01:26:42,556
+Şöyle mi?
+
+416
+01:26:43,835 --> 01:26:44,235
+Evet.
+
+417
+01:26:45,435 --> 01:26:54,015
+Orada bu iki, aynı devre yolunda iki tane anahtar olursa öbüründe yine sağlar ama bunda sağlamaz.
+
+418
+01:26:54,935 --> 01:26:59,015
+Yani ikisine bastığımda ben, sönecek.
+
+419
+01:26:59,444 --> 01:27:02,124
+Tekne bastığımda da sönecek mi?
+
+420
+01:27:03,584 --> 01:27:04,304
+Aynen.
+
+421
+01:27:05,164 --> 01:27:09,524
+O zaman bu devre içinde, deminki devredeki yanlıştı o zaman, öyle mi?
+
+422
+01:27:10,444 --> 01:27:13,444
+Deminki devredeki tasımda sağlıyor ama...
+
+423
+01:27:14,704 --> 01:27:20,984
+Hocam, deminki devrede de, az önceki devrede de, burada bir kablo üzerinde iki tane anahtar olması lazım.
+
+424
+01:27:22,104 --> 01:27:24,984
+Tamam, bunu bir daha çizelim o zaman.
+
+425
+01:27:27,667 --> 01:27:30,948
+Lambayı bağladım. Ne yapalım diyorsunuz?
+
+426
+01:27:32,067 --> 01:27:34,547
+Bir kabloya iki tane anahtar çekmemiz lazım hocam.
+
+427
+01:27:34,948 --> 01:27:35,208
+Aynen.
+
+428
+01:27:35,268 --> 01:27:35,587
+Şunu mu?
+
+429
+01:27:36,387 --> 01:27:37,807
+Aynen. Şimdi oldu.
+
+430
+01:27:38,728 --> 01:27:45,007
+Bakıyoruz. İkisine bastım. Lamba söndü. Bir tanesine bastım. Sövmedi. İkisine de basmadım. Sövmedi. Evet.
+
+431
+01:27:45,847 --> 01:27:47,847
+Yani demin ters mi yapmışız biraz?
+
+432
+01:27:48,587 --> 01:27:48,847
+Aynen.
+
+433
+01:27:50,452 --> 01:28:01,811
+Tamam, başka özel iki kapımız daha var. Bunlar EXOR ve EXNOR kapısı. Yani özel veya ötekisi de özel veya değil kapısı.
+
+434
+01:28:02,420 --> 01:28:18,340
+Bunları biz, daha doğrusu EXOR'u şurada kullanacağız arkadaşlar. Normalde bir sayının tümleyenini alarak bir işaret tutuyor demek değil mi? Aslında bu, o sayının tümleyenini al veya alma komudunu içerecek. İlk başta bir doğruluk tablosunu analiz edelim.
+
+435
+01:28:19,140 --> 01:28:24,239
+ATLAN şöyle kalabilir, iki terminal, bir output olan, iki girişi olan bir devre bu.
+
+436
+01:28:24,851 --> 01:28:41,231
+A ve B, yani iki girişten ikisi birbirinden farklıysa çıkışım 1, eğer iki giriş input birbirinin aynıysa çıkışım 0 olan devre operatörü, lojik devre operatörü diyeceğiz.
+
+437
+01:28:41,231 --> 01:28:47,192
+Şimdi bunu şöyle kullanabiliriz. Misal, EXOR kapısını şuraya.
+
+438
+01:28:50,260 --> 01:29:17,300
+Buradan da bir sayı stream ediyorsunuz. Sayı geliyor, akıyor diyelim arkadaşlar. Akıyor buraya. 1, 0, 1, 0 diye akan bir network var. Ben ne zaman buraya 0 verisi, burası da kontrol birimi, kontrol unit diyelim. Ben buradan 0 verisi verirsem bu sayının aynısı buradan gelir değil mi? Neden? Çünkü şöyle düşünelim, 1, 0. Farklıysa ne üretiyordu bu? 1 üretiyordu.
+
+439
+01:29:17,695 --> 01:29:41,195
+0, 0. Aynıysa ne üretiyordu bu? 0 üretiyordu. 1, 0. Farklıysa 1 üretiyordu. 0, 0. Aynıysa 0 üretiyordu. Yani bu sayının aynısı mı oldu? Aynısı oldu. Ama ben şu kontrol sinyalimi 1 verdim. Dedim ki bu sayının tümleyenini aldım.
+
+440
+01:29:42,036 --> 01:30:05,515
+Bunu nasıl yapıyor? Şuradan yazacağım. 0, 1. Farklı değil mi? Farklıysa 1 üret. 1, 1 aynı, aynıysa 0 üret. 0, 1 farklı, farklıysa 1 üret. 1, 1 aynı, aynıysa 0 üret. Baktığımızda 1'e göre tümleyenini almış olduk mu? Olduk.
+
+441
+01:30:06,163 --> 01:30:21,543
+Bu kapının özel kullanımı budur arkadaşlar. Yeri geldiğinde ileride tohum toplayıcı devrelerde vesaire buna değineceğiz geri ama burada hani XOR'un mantığı aynıysa sıfır, farklıysa bir üreten kapıdır diyebiliriz.
+
+442
+01:30:23,384 --> 01:30:26,503
+Bunu anahtar devresi nasıl olabilir peki?
+
+443
+01:30:32,372 --> 01:30:39,551
+Bunun anahtar devrisi gerçi biraz farklı. Belki iki anahtarla şey yapmak zor olacak ama.
+
+444
+01:30:52,500 --> 01:30:56,479
+Biraz daha şöyle değişik bir anahtar kusmandığını düşüneceğiz biz.
+
+445
+01:31:01,460 --> 01:31:03,619
+Bu bir çapraz anahtarı arkadaşlar.
+
+446
+01:31:04,300 --> 01:31:05,940
+B, B değil'e veriyor.
+
+447
+01:31:06,319 --> 01:31:07,840
+Daha doğrusu şöyle yapacaktık.
+
+448
+01:31:07,940 --> 01:31:08,220
+Pardon.
+
+449
+01:31:12,595 --> 01:31:25,095
+A değil, B değil, A, B değil mi? Şöyle baktığımızda A, A değinden verse, sırahtan, neyse buna çok da gerek yok.
+
+450
+01:31:25,395 --> 01:31:37,956
+Çok da değil mi? Kapı karıştırmaya gerek yok anahtar verilse de. Ama normalde mantığı, hani girişler aynıysa sıfır, farklı girişler varsa bir veren devredir diyebiliriz.
+
+451
+01:31:38,515 --> 01:31:53,095
+EGNOR için ise aslında deminkinin tam tersi, aynı ise 1, farklı ise 0 üreten kapılar diyeceğiz. Bunların, Boole cebinde kullanacağımız sembolleri bunlar olacak.
+
+452
+01:31:53,095 --> 01:32:00,815
+Tabii bunu açmak istediğimizde de, işte ne zaman F1 oluyor?
+
+453
+01:32:01,376 --> 01:32:17,435
+Onu açarak yazabiliriz. Ne dedik? Biz farklı iken bir olan, yani A0 ise, bu aynı satırı nomine ettiği için A0 ve A'nın bir olduğu, B'nin bir, B'nin sıfır olduğu senaryoyu gösteriyor.
+
+454
+01:32:17,435 --> 01:32:27,675
+Ne zaman işte bu ikisinin de ayrı ayrı bir olduğu, yani bu artısı zaten ikisinden bir tanesinin bir olması yeterli demek, benim için bunu gösterecek.
+
+455
+01:32:29,363 --> 01:32:36,944
+XOR kapısının F fonksiyonunu göstereceğiz. Öteki taraftan Boole cebri'nde çarpı şeklinde de gösterebiliriz.
+
+456
+01:32:37,304 --> 01:32:54,663
+XOR'un değili şeklinde de gösterebiliriz XOR için. Bunda da aynıysa bir, farklıysa sıfır olduğundan aynı olduğu senaryolar işte ikisinde bir veya ikisinde sıfır olduğu senaryolarda benim için F'i bir üreten kapıdır diyeceğiz.
+
+457
+01:32:55,828 --> 01:33:14,608
+Şimdi burada zaman diyagramları var. Bunlar bir kapıların diyagramları ne olabilir? Buna bir analiz edelim. Bir düşünelim isterseniz. Bu ne kapısı olabilir? Bu hangi kapıya ait olabilir? Bu da hangi kapıya ait olabilir? Sizden bekliyorum.
+
+458
+01:33:47,380 --> 01:33:49,020
+Var mı arkadaşlar cevap?
+
+459
+01:33:53,427 --> 01:34:05,707
+EXOR olabilir demiş biri. Analiz edelim [öğrenci]. Bakıyoruz. Aynı bir üretmiş. Şimdi EXOR ne diyordu bize? Veya şöyle de yazabilirsin.
+
+460
+01:34:07,747 --> 01:34:18,887
+EXOR'un dediği şey şuydu. Farklıysa bir, aynıysa sıfır üretecekti. Yani doğruluk tablosunu hatta şeyine formülünü yazmak gerekirse şöyle yazmıştık.
+
+461
+01:34:20,243 --> 01:34:21,503
+EXOR için diyorum.
+
+462
+01:34:23,503 --> 01:34:32,123
+A, B, A, B değil, artı, A değil, B.
+
+463
+01:34:32,923 --> 01:34:35,203
+Farklıysa bir üreten devreydi.
+
+464
+01:34:35,203 --> 01:34:42,884
+Ama bakıyorum, şu an aynı iken bir üretmiş, aynı iken bir üretmiş, aynı iken bir.
+
+465
+01:34:43,956 --> 01:34:50,255
+Aynıyken bir, farklıyken sıfır üreten bir kapı. O zaman ne olacak?
+
+466
+01:34:54,676 --> 01:34:55,756
+Burada mıyiz arkadaşlar?
+
+467
+01:34:58,615 --> 01:35:00,695
+XNOR olacak. Yani XOR değil.
+
+468
+01:35:02,115 --> 01:35:04,036
+XNOR bize şunu söylüyordu.
+
+469
+01:35:10,323 --> 01:35:25,224
+Aynıların biri oluşturduğunu söylüyordu. Sıfırlar bir, birler de biri oluşturuyor. Ne zamanki farklı bir input var, sıfır oluşturuyor, diyor. Bu kapı ne arkadaşlar, ikinci kapı?
+
+470
+01:35:32,659 --> 01:35:44,739
+AND kapısı deniyor. Bakıyorum, birken birken bir gelmiş, 0, 1, 0, birken bir, 0, 0, 0, 0 gelmiş. Evet, AND kapısı. Üçüncüsü ne olabilir?
+
+471
+01:35:54,387 --> 01:35:55,707
+İkinci kapı ne olabilir?
+
+472
+01:36:01,779 --> 01:36:27,679
+V değil, yani NAND kapısı olabilir mi? Bakalım, 0-0 iken 0 olması gerekirken 1 olmuş, 1-1 iken 1 olması gereken, yani daha doğrusu AND kapısında 1 olması gerekirken 0 olmuş, 1-1 iken 0, 0-0 iken 1 olmuş, 1-0 iken normalde AND kapısı 0 üretir, bu da 0 üretmiş. Normalde NAND'da bu 1 üretmez miydi?
+
+473
+01:36:29,300 --> 01:36:42,940
+NOR olabilir mi? Sıfır sıfırken sıfır olması gerekirken bir olmuş, bir birken birken sıfır olmuş, bir sıfırken normalde birken sıfır olmuş, evet, değil mi? NOR kapısı oluyor.
+
+474
+01:36:45,760 --> 01:36:50,320
+Özel veya değil ve veya değil şeklinde üç adet kapı.
+
+475
+01:36:51,140 --> 01:36:54,520
+Şimdi Boole cebri dediğimiz şey aslında temelde lojik.
+
+476
+01:36:54,836 --> 01:37:05,796
+Deminki gördüğümüz o kapıların bir matematiksel fonksiyonla birleştirip bir genel lojik devre tasarımını formülize ettiğimiz matematik olacak.
+
+477
+01:37:05,796 --> 01:37:11,756
+Yani biz sadece bir kapı değil, beş kapı kullanacağız. Bu beş kapının hepsi bir F fonksiyonunu verecek.
+
+478
+01:37:12,115 --> 01:37:14,636
+Ve bu F fonksiyonu benim için Boole cebri ile bulunabilir.
+
+479
+01:37:15,188 --> 01:37:23,308
+Şimdi bu Boole cebri aslında Venn diagramlarına bakıyor biraz daha. Biz diyoruz ki işte kesişim dediğimiz kısım A kesişim B'dir diyoruz değil mi?
+
+480
+01:37:23,308 --> 01:37:30,008
+İşte tümleme dediğimiz A'nın kendisi küme içerisindeki örnekleri ve dışındaki örnekleri tümleme diyoruz.
+
+481
+01:37:30,388 --> 01:37:36,908
+Bu Venn diagramlarından çıkarttığımız kavramlar aslında. Ve bu Venn diagramlarından biz şunu söyleyebiliriz.
+
+482
+01:37:40,627 --> 01:38:04,127
+OR-lansa, yani V-ya-lansa, biz kendi, yani bütün her yeri karalamış oluyoruz. Yani biri elde etmiş oluyoruz. Bunlar bu kavramlar, Boole cebinde kullanacağımız kavram. Ne zaman? Keşişim dediğimiz çarpma işlemi, yani kesişli nokta. Hiç A ile A'nın tümlerinin kesişli nokta olabilir mi? Olamaz. Sıfır geliyor buradan.
+
+483
+01:38:05,076 --> 01:38:16,836
+Birle A'yı toplamak, zaten uzayın hepsine bir dediğimiz için biri söylüyor. Birle işte A'nın kesiştiği nokta zaten A'nın kendisini vereceği için A'yı söylüyor.
+
+484
+01:38:17,276 --> 01:38:22,036
+Sıfırla, sıfır dediğimiz şey zaten hani herhangi bir yer olmayan sıfır.
+
+485
+01:38:22,420 --> 01:38:49,199
+durumu. A'nın birleşimi zaten A'yı verir ama kesişimi var mıdır sıfırın? Yoktur, sıfırdır kendisi. Bu matematikte de tanımladığımız kümelerde tanımlanan kavramlar Boole cebri de kullanılacak. Boole cebri dediğimiz gibi iki tane şeyi içeriyor. Bir aksiyon, bir de teorem. Aksiyon dediğim bir şey, bazı kurallar var. İspat etmeye gerek yok. Kabul edilmiş kurallar.
+
+486
+01:38:49,551 --> 01:38:53,871
+Teorem dediğimizde ispatlanabilen örneklemler, önermeler.
+
+487
+01:38:55,291 --> 01:39:00,231
+Aksiyonlar, mesela örnek verelim bir tanesi, 1 artı 1'in 1 olduğu.
+
+488
+01:39:00,351 --> 01:39:09,631
+Yani iki önermenin ikisi de doğru olduğunda önermenin doğru olduğunu söyleyen bu aksiyon, bunlar zaten kabul edeceğimiz kural var.
+
+489
+01:39:10,163 --> 01:39:18,724
+0'da 2 tane önerme, V ile 2 önermenin X'de yanlışsa, sonucunda birleşik önermenin de 0 olduğunu söyleyen önerme.
+
+490
+01:39:19,364 --> 01:39:23,724
+Bunlar V ile bağlanırsa da 0, 1 ile bağlanırsa 1 olma durumu.
+
+491
+01:39:24,463 --> 01:39:33,024
+Kendi işlerinde bir tane önermenin olma durumu zaten V ile 1 veriyor, V ile de 0 veriyor demiştik zaten.
+
+492
+01:39:33,460 --> 01:39:40,699
+Teoremler, bunlar matematikten gelen teoremler aslında Boole cebri'nde kullanacağımız. Boole cebri'ni şunun için kullanacağız arkadaşlar.
+
+493
+01:39:41,979 --> 01:39:46,720
+Bize dediğim gibi karmakarışık bir devre geldi veya devre çözüldü, karmakarışık bir yapıda.
+
+494
+01:39:47,279 --> 01:39:54,800
+Bunun bir F fonksiyonu var kapılardan oluşan ve o kapıların arka planındaki matematiksel formüllerle yazılmış bir F fonksiyonu var.
+
+495
+01:39:54,800 --> 01:39:59,800
+Bu F fonksiyonu biz en sade şekli matematiksel sade şekli...
+
+496
+01:40:00,000 --> 01:40:22,319
+Bu sadeleştirmeyi nasıl yapıyorsak, Boole cebri'nde de yapabileceğiz. Birinci yöntem Boole cebri ile sadeleştirme. İlk bunun üzerine yürüyeceğiz. Sonra Karnaugh haritaları vs. bunlarla da sadeleşebiliyor. Bunlara da değineceğiz. Ama ilk etapta Boole cebri üzerine sadeleştirmeyi öğreneceğiz. Bunun için de bu teoremleri, bu aksiyonları kullanacağız.
+
+497
+01:40:22,899 --> 01:40:47,579
+İşte değişme özelliği toplamda ve çarpımda nasıl oluyorsa matematik olarak burada da V ve V'ya önermelerinde değişim özelliği var. Birleşme özelliği mevcut. Dağılma özelliği. Burada belki hani matematikte görmediğimiz bir dağılma özelliği var veya operasyonun da dağılma özelliği var. Yani A veya B ve A veya C.
+
+498
+01:40:48,627 --> 01:40:51,327
+Formatuna bunu açabileceğiz.
+
+499
+01:40:52,287 --> 01:41:01,827
+Diğer zaten V önermesinin, yani V durumunda kullanılacak önermelerin birleşik dağılma özelliği, normal matematiksel çarpım işleminin dağılma özelliğiyle aynı.
+
+500
+01:41:03,155 --> 01:41:25,036
+Zaten bunlara bahsetmiştik. Bir adet önerme, öteki önerme ile birleşirse zaten önermenin kendisini oluşturur. Eğer ki kesişimle değilse zaten önermenin kendisidir. Yani ikisi de aynıdır bu ibareyi söylemiştik. Burada yine aynı şekilde bunu nasıl A'ya elde ettik, bunu açılabiliriz aslında. A artı A ile.
+
+501
+01:41:26,292 --> 01:41:31,292
+A artı B'dir aslında bu değil mi? Şu artıyı dağılma özelliğinden dağıtırsak.
+
+502
+01:41:31,812 --> 01:41:36,852
+Ve A artı A'nın ne olduğunu biliyorum. A olduğunu biliyorum. Değil mi?
+
+503
+01:41:37,252 --> 01:41:48,332
+A artı B'nin üzerinde de, yani şuradaki A artı B'nin ne olduğu önemsiz bir şekilde A olacağını biliyorum, çıkacağını biliyorum bundan.
+
+504
+01:41:49,592 --> 01:41:52,632
+Çarpma işleminde de aynı şekilde bunu çarparsak.
+
+505
+01:41:53,524 --> 01:42:10,564
+Yine aynı şekilde şeye girecek. Yani şöyle anlatalım, daha net olacak. Buradan A artı A'dan A geldi. Burada A artı B'ye şey yaparsak, tekrar dağıtırsak A artı A ile, pardon şöyle yapacağız bir saniye.
+
+506
+01:42:12,275 --> 01:42:17,176
+A ortak parantezini aldığımızda buradan ne gelecek? 1 artı B gelecek değil mi?
+
+507
+01:42:17,536 --> 01:42:20,216
+1 artı B'nin ben 1 olduğunu biliyorum zaten.
+
+508
+01:42:20,735 --> 01:42:28,216
+Yani bir şeyin bir önermeyle, bir olduğundan dolayı, B'ye adan dolayı buradan 1 geleceğini biliyorum.
+
+509
+01:42:28,216 --> 01:42:31,235
+O yüzden de bu A'yı buradan direkt bulmuş oluyoruz.
+
+510
+01:42:31,296 --> 01:42:37,496
+Aynı şekilde burada da A ortak parantezinde A ortak parantezinde B artı 1 gelecek.
+
+511
+01:42:37,836 --> 01:42:38,896
+O da A'ya eşit olacak.
+
+512
+01:42:39,412 --> 01:42:48,672
+B artı birin bir olma durumundan dolayı. Ve bir taraf birse ve çarpma işlemi, yani V önermesi varsa zaten A'nın kendisidir diyorduk.
+
+513
+01:42:49,672 --> 01:42:54,432
+Başka bir şey, üstün üstü kendisidir, kaidesi mevcut.
+
+514
+01:42:56,632 --> 01:42:59,472
+Demorgan kuralı en çok kullanacağımız kural olacak.
+
+515
+01:43:00,692 --> 01:43:06,232
+Bir parantezin içerisindeki genel bir üsvasa, bunu da şöyle yazalım, yani şu,
+
+516
+01:43:06,739 --> 01:43:08,879
+Arkadaşlar, çok yapılan bir hata.
+
+517
+01:43:11,159 --> 01:43:14,219
+Bu demek değil, kesinlikle değil.
+
+518
+01:43:15,779 --> 01:43:20,939
+Bu demorgan için analizlerde bu üsteli içeriye dağıtmanın bir formülü var.
+
+519
+01:43:21,159 --> 01:43:23,919
+Dağıtırken işareti değişir içeriğinin.
+
+520
+01:43:24,599 --> 01:43:33,479
+A'nın üsteli çarpı, B'nin üsteli şeklinde demorgan dediğimiz kural budur, bunu gösterir.
+
+521
+01:43:34,484 --> 01:43:37,924
+Bunu çok kullanacağız. Bu yüzden bu kural belki de en önemli kural.
+
+522
+01:43:38,524 --> 01:43:47,224
+Mesela A çarpı B'yi üstüne aldık. O zaman bu bize A değil artı B değil şeklinde geçer.
+
+523
+01:43:49,264 --> 01:43:58,564
+Diğer kuralları zaten A'nın kendi değiliğiyle orlanması 1, kendi değiliğiyle endlenmesi 0'ı gösterecek.
+
+524
+01:43:59,123 --> 01:44:07,063
+A'nın sıfırla orlanması, A'nın kendisini vs. Bunlar zaten matematikse olarak da bilindik kurallar.
+
+525
+01:44:08,343 --> 01:44:09,623
+Buna da değinmiştik.
+
+526
+01:44:11,183 --> 01:44:20,583
+Bunu çarparsanız B çarpı B değil olacağından dolayı çarpı işleminden bir sayının kendi üsteli değiliyle çarpılması sıfır verecek.
+
+527
+01:44:21,023 --> 01:44:23,723
+Bundan dolayı da buradan sadece A çarpı B gelecek.
+
+528
+01:44:24,212 --> 01:44:40,872
+Öteki tarafta B artı B değil de benim için ne olacak? Yani biri verecek. Ama öteki tarafta A artı B olacağı için, arada da çarpı olacağı için şunu çözümleyelim isterseniz. A artı B çarpı B değil artı B gelir.
+
+529
+01:44:41,247 --> 01:44:59,167
+Geliyor. Şurası zaten ne olmasını bekliyorum. Eğer ben birse burası sıfırdır. Eğer B sıfırsa burası birdir değil mi? Ne olduğu önemsiz. Ve iki senaryoda da buradan bir gelecek. Bir çarpı A artı B olduğundan dolayı da zaten direkt A artı B'yi verecek.
+
+530
+01:45:01,307 --> 01:45:07,607
+Bunu da parantez yerisinde çarparak yapılacağını gösterelim. İki tane örnek var orada da.
+
+531
+01:45:11,988 --> 01:45:36,328
+Örnek bir soru var şurada, onu yapalım. Misal böyle bir F fonksiyonumuz var. Bu şu demek, ben bir lojik diagram yapmıştım, bir soru varmış, ben bunu çözmüşüm ve bu kapılarla gerçekleyebileceğim, istenenler neyse, o istenenler ABC inputları olsun. Bu inputlar bu şekilde gelirse benim için F anlamlı sonuç üretiyor dediğim bir fonksiyon. Bunu ama sadeleştirmek.
+
+532
+01:45:37,108 --> 01:45:41,408
+İstersek, yani Boole cebriyle bunu sadeleştirmemiz gerekirse,
+
+533
+01:45:42,420 --> 01:46:05,120
+İlk başta Dadoz sadeleştirmeden önce sadece şey sorulmuş. F'in D'li. Yani F'in tüm yerini aldım demiş. Üstüne bir tane çizdim. Şimdi demorganı uygulayacağım. En sade forma getirme için. Demorgan bana der ki bu üstteki genel çizgiyi içeriğe dağıtırken işaretleri değiştirir. A'nın D'li yaptım. Aradaki AND işlemini OR yaptım.
+
+534
+01:46:05,427 --> 01:46:31,107
+Sonra burada üstün üstü oldu bir tane. O yüzden bu üst gitti bir sonraki aşamada ve direkt A'nın D'li de topladım. Sonra burada da bölerken tabii şu aralardaki işaretler değişti hep. Bütün parantezlerin içerisine böldüm. Burası A'nın kendisi geldi. Bu tarafı da tekrar dağıttım. Bu sefer B'nin D'li B'yi gösterdiği için B kaldı. Öteki tarafta da A arttı, C'nin D'li şeklinde kaldı.
+
+535
+01:46:32,020 --> 01:46:40,900
+Ve en nihayet şu a'yı da bunun içerisine çarptığımda elde ettiğim f fonksiyonu şuradaki f'in değeri şeklinde oldu.
+
+536
+01:46:42,140 --> 01:46:46,580
+Bir başka örnek f1 ve f2 verilmiş terslerini bulun denmiş.
+
+537
+01:46:46,720 --> 01:46:50,720
+Yani yine aynı mantıkla f1'in ve f2'nin demorganını yapın denmiş.
+
+538
+01:46:51,220 --> 01:46:53,680
+Bu şekilde yaptığımız bir yaklaşım.
+
+539
+01:46:56,000 --> 01:46:57,520
+Soru var mı arkadaşlar?
+
+540
+01:47:00,020 --> 01:47:02,060
+Sorumuz anlamadığınız bir nokta.
+
+541
+01:47:07,412 --> 01:47:22,052
+Dualite prensibi var bir de arkadaşlar. Aslında yani bir Boole cebri'nde işte duali dediğimiz yani eş değer devresi diye tablettiğimiz şey mantıksal çarpım ve toplumların bir ve sıfırların yer değiştirilmesiyle bulunuyor.
+
+542
+01:47:22,052 --> 01:47:34,351
+Mesela şurada X, Y artı sıfır diye bir Boole cebri ibaremiz olsun. Bunun dualitesi çarpım olan şu aranın toplam sıfırın bir olarak yazılması.
+
+543
+01:47:34,836 --> 01:47:55,376
+dual ifadesini veriyor. Buradan da aslında X artı Y'nin çıktığını biliriz. Yani direkt X artı Y'ye eşit olduğunu buradan da çıkartabiliriz. Bir başka dualite, işte X değiller, onlar kalıyor ama birler sıfır çarpımlarda toplam şekilde gösterimi, o F funksiyonun dualitesini gösterir.
+
+544
+01:47:57,296 --> 01:48:01,395
+Sorumuz var mı arkadaşlar? Genel veya bununla alakalı.
+
+545
+01:48:05,427 --> 01:48:21,407
+Sorumuz yok herhalde. Soru yoksa arkadaşlar, bu haftalık ders bu kadar yeter. Kapılar vesaire, Boole cebriye giriş yaptık. Haftaya doğruluk tablosu, soruların çözümü, işte minterm ve maxtermlere giriş yapacaksınız Gökhan Hoca ile.
+
+546
+01:48:23,547 --> 01:48:32,140
+Slideleri Google Classroom'a üye miyiz? Size duyuruldu mu onu bir söyleyeyim. Google Classroom'a üye miyiz? Sanki...
+
+547
+01:48:33,395 --> 01:48:36,076
+Duyurulmamış olabilir. Ben size duyurayım.
+
+548
+01:48:36,755 --> 01:48:37,655
+Kodunu vereyim.
+
+549
+01:48:37,996 --> 01:48:38,615
+Bir saniye.
+
+550
+01:48:41,115 --> 01:48:42,235
+Teşekkür ederim.
+
+551
+01:48:48,948 --> 01:48:51,288
+Muhtemelen klasını da ben paylaşırım.
+
+552
+01:48:58,996 --> 01:49:10,615
+Plastum'a girme arkadaşlar. Şu kodu, çekten yazdım. Kodu yazın. Lojik Devreler grubuna üye olursunuz. O da lab programı vesaire de zaten duyuruldu.
+
+553
+01:49:20,500 --> 01:49:25,079
+Varsa kendi çevrenizde arkadaşlarınız vs. paylaşım kurdu onlar da girsin.
+
+554
+01:49:29,587 --> 01:49:36,127
+Arkadaşlar, var mı sorumuz? Yoksa dersi yeterli seviyede durabiliyoruz.
+
+555
+01:49:36,127 --> 01:49:37,267
+Hocam, bir sorabilir miyim?
+
+556
+01:49:37,527 --> 01:49:38,167
+Evet, buyuruz.
+
+557
+01:49:38,567 --> 01:49:42,487
+Lablar şey mi olacak, yüz yüze mi olacak? Yani okula gidip gelecek miydi?
+
+558
+01:49:42,487 --> 01:49:48,207
+Geçen hafta belki anlatmıştır, ben deyinmedim onlara ama şöyle olacak.
+
+559
+01:49:48,847 --> 01:49:56,887
+İki tane labınız yüz yüze olacak. Yani buraya geleceksiniz. İki tane labınız online olacak. Dört lab olacak.
+
+560
+01:49:57,332 --> 01:50:06,771
+Ve o dört lab, işte bir tane vize notumuz şeklinde, şu an ödev verilmezse eğer, o şekliyle ayarlanacak.
+
+561
+01:50:08,432 --> 01:50:13,112
+Birinci labımız, tabii toplamda beş lab olacak ama birinci lab sıfır dedik biz ona.
+
+562
+01:50:13,592 --> 01:50:22,472
+Lab sıfırımız, işte bu online yapacağınız, işte deneyleri yapabileceğiniz platformların size izah edileceği bir lab olacak.
+
+563
+01:50:23,060 --> 01:50:31,040
+İşte veyahut da board'un size izah edileceği bir rap olacak. Sizden bir şey beklenmeyecek. Ama çok faydalı olur eğer ilk defa alıyorsanız.
+
+564
+01:50:33,660 --> 01:50:34,640
+Katılım yani.
+
+565
+01:50:37,160 --> 01:50:38,280
+Tamam mıyız arkadaşlar?
+
+566
+01:50:41,560 --> 01:50:43,520
+Sorumuz var mı acaba?
+
+567
+01:50:46,387 --> 01:50:53,768
+Yok herhalde. Teşekkürler derse katılımlarınız için. Hepinize iyi günler, iyi çalışmalar, sağlıklı günler diliyorum.

@@ -1,0 +1,2863 @@
+1
+00:13:22,580 --> 00:13:26,940
+Arkadaşlar, herkese günaydın. Sesim gidiyor bu. Bir teyit eder misiniz lütfen?
+
+2
+00:13:32,371 --> 00:13:32,771
+Geliyor.
+
+3
+00:13:34,551 --> 00:13:35,171
+Tamam.
+
+4
+00:13:49,556 --> 00:13:49,956
+Ok.
+
+5
+00:13:55,091 --> 00:14:10,731
+In the last lecture, we covered all the topics up until data types, okay, primitive and wrapper data types.
+
+6
+00:14:12,312 --> 00:14:17,552
+So we are at slide number 37.
+
+7
+00:14:20,351 --> 00:14:21,731
+Today I'm...
+
+8
+00:14:22,176 --> 00:14:25,336
+I'm going to explain the primitive wrappers.
+
+9
+00:14:25,596 --> 00:14:29,136
+So let's go back to the content of the course.
+
+10
+00:14:29,596 --> 00:14:32,496
+I'm going to talk about the primitive wrappers.
+
+11
+00:14:36,216 --> 00:14:46,276
+Method parameters, how you can call a method by call by value or by call by value of reference.
+
+12
+00:14:46,636 --> 00:14:48,316
+I'm going to talk about all this.
+
+13
+00:14:48,735 --> 00:14:58,336
+And I'm going to talk about some special classes that allows you to enter input to your Java program.
+
+14
+00:14:58,975 --> 00:15:03,995
+And that allows you to write an output onto the console.
+
+15
+00:15:05,576 --> 00:15:06,375
+And...
+
+16
+00:15:07,379 --> 00:15:21,259
+After all that, I plan on wrapping up the class before at this topic, which is object and class collaborations and relations.
+
+17
+00:15:21,919 --> 00:15:23,079
+So let's get started.
+
+18
+00:15:30,100 --> 00:15:37,899
+Okay. Last lecture, we said that in Java, we have primitive data types.
+
+19
+00:15:38,680 --> 00:15:43,039
+In fact, in every programming language, we have primitive data types.
+
+20
+00:15:43,720 --> 00:15:47,279
+In Java, so we have eight primitive data types.
+
+21
+00:15:47,600 --> 00:15:55,840
+These are integer, long, short, byte, double, float.
+
+22
+00:15:56,371 --> 00:15:58,291
+Karakter, and boolean.
+
+23
+00:15:59,672 --> 00:16:06,831
+Now, so you can see the size of these primitive data types.
+
+24
+00:16:07,211 --> 00:16:11,211
+For example, integer takes four bytes in the physical memory.
+
+25
+00:16:14,412 --> 00:16:17,351
+As you know, one byte is eight bits.
+
+26
+00:16:17,908 --> 00:16:24,748
+So, therefore, an integer is 8 multiplied by 4, which is 32 bits.
+
+27
+00:16:26,028 --> 00:16:31,807
+In turn, this means that an integer could be 2 to the power of 32.
+
+28
+00:16:32,468 --> 00:16:33,968
+So, you see that.
+
+29
+00:16:34,327 --> 00:16:38,388
+So, this number is here, is the 2 to the power of 32.
+
+30
+00:16:38,888 --> 00:16:39,187
+Okay?
+
+31
+00:16:39,731 --> 00:16:51,172
+And obviously you can have a negative value of the integer and this is the 2 to the power of 32 in the minus axis.
+
+32
+00:16:51,172 --> 00:17:05,851
+Okay, so basically what you can have between this range, okay, between the lower and higher range, you can have any integer number by using the integer primitive.
+
+33
+00:17:06,900 --> 00:17:07,420
+Okay.
+
+34
+00:17:08,080 --> 00:17:09,676
+Now, if you want...
+
+35
+00:17:10,548 --> 00:17:16,307
+A much bigger integer than you need to use long.
+
+36
+00:17:16,728 --> 00:17:17,087
+Okay.
+
+37
+00:17:17,627 --> 00:17:20,407
+And so in that case, you have now eight bytes.
+
+38
+00:17:20,887 --> 00:17:21,208
+Okay.
+
+39
+00:17:21,667 --> 00:17:24,288
+Now, so one byte is eight bits.
+
+40
+00:17:24,288 --> 00:17:29,387
+So therefore you have 64 bits for a long integer.
+
+41
+00:17:30,147 --> 00:17:33,188
+64 bits means that two to the above of 64.
+
+42
+00:17:33,688 --> 00:17:33,988
+Okay.
+
+43
+00:17:34,147 --> 00:17:36,327
+So which gives you this high end.
+
+44
+00:17:36,667 --> 00:17:36,788
+Okay.
+
+45
+00:17:37,488 --> 00:17:37,968
+And.
+
+46
+00:17:39,059 --> 00:17:54,019
+Arkadaşlar, if you have a smaller integer, in that case, you can use short primitive type. That would take two bytes.
+
+47
+00:17:54,415 --> 00:18:03,155
+And that's obviously 2 x 8 bit, that's 16 bit, 2 to the power of 16.
+
+48
+00:18:03,816 --> 00:18:07,015
+So that will give you this number.
+
+49
+00:18:07,515 --> 00:18:11,915
+And between this higher number and the lower number, you can have any integer.
+
+50
+00:18:12,475 --> 00:18:12,596
+Okay.
+
+51
+00:18:12,596 --> 00:18:20,355
+Now, as you see, for the other data types like byte, you see, so one byte obviously takes one byte.
+
+52
+00:18:20,915 --> 00:18:22,395
+And you see the double.
+
+53
+00:18:22,415 --> 00:18:29,355
+And how much space that they require in physical memory.
+
+54
+00:18:29,836 --> 00:18:32,635
+You see the character and you see the boolean.
+
+55
+00:18:33,175 --> 00:18:33,316
+Okay.
+
+56
+00:18:34,536 --> 00:18:38,295
+Now we are going to be using all of these primitive data types.
+
+57
+00:18:38,996 --> 00:18:39,115
+Okay.
+
+58
+00:18:39,875 --> 00:18:44,195
+Now, in addition to these primitive data types,
+
+59
+00:18:44,852 --> 00:18:49,532
+We also have some non-primitive data types.
+
+60
+00:18:50,072 --> 00:19:00,092
+So remember, when we are covering class, we said that in Java, class is also a type.
+
+61
+00:19:00,092 --> 00:19:04,412
+Okay, type of an object because objects.
+
+62
+00:19:04,816 --> 00:19:08,155
+Arkadaşlar, are created from the classes.
+
+63
+00:19:08,836 --> 00:19:12,056
+So therefore, that class becomes the type of that object.
+
+64
+00:19:12,596 --> 00:19:19,195
+So we will use some commonly used non-primitive data types.
+
+65
+00:19:19,316 --> 00:19:20,456
+One of them is string.
+
+66
+00:19:20,796 --> 00:19:26,875
+So we will talk about string in the coming slides.
+
+67
+00:19:28,735 --> 00:19:30,235
+Can I ask a question?
+
+68
+00:19:30,895 --> 00:19:31,155
+Sure.
+
+69
+00:19:32,115 --> 00:19:38,056
+Are these data sizes rather fixed, universal?
+
+70
+00:19:38,855 --> 00:19:45,435
+Because when we learned C, they told us that among CPUs, these tend to change.
+
+71
+00:19:45,796 --> 00:19:55,435
+Or does Java create a virtual data type so it is fixed, like 8 byte is universal across all CPUs, or does it change?
+
+72
+00:19:57,036 --> 00:19:57,935
+It is.
+
+73
+00:19:59,435 --> 00:19:59,976
+It's.
+
+74
+00:20:00,000 --> 00:20:03,220
+It is the same across different programming languages.
+
+75
+00:20:03,779 --> 00:20:08,180
+So obviously, Java is interpreted language, right?
+
+76
+00:20:08,299 --> 00:20:20,680
+Because so we said that Java creates its own virtual space and within its own virtual space, Java manages all the objects that are created within that virtual space.
+
+77
+00:20:21,056 --> 00:20:43,675
+But at the end of the day, what Java is doing, Java is converting all the methods that these objects have into machine code, which are instructions, and each instruction is either 32-bit or 64-bit.
+
+78
+00:20:43,675 --> 00:20:44,355
+Okay.
+
+79
+00:20:45,135 --> 00:20:49,056
+And so therefore, so Java is...
+
+80
+00:20:49,056 --> 00:21:17,827
+Arkadaşlar, class, object,
+
+81
+00:20:58,675 --> 00:21:26,675
+Which can be executed by the CPU. Obviously, CPUs are universal. So you can have 32-bit CPU, you can have 64-bit CPU. Okay? Obviously, these CPUs have different manufacturers and etc. But these data types are universal. So if you go to C, C+, C Sharp, Python, etc. So they will require the same.
+
+82
+00:21:28,675 --> 00:21:32,675
+Bu sorun.
+
+83
+00:21:32,675 --> 00:21:34,675
+Evet.
+
+84
+00:21:34,675 --> 00:21:36,675
+Bu sorun.
+
+85
+00:21:36,675 --> 00:21:38,675
+Şimdi,
+
+86
+00:21:38,675 --> 00:21:42,675
+bu sorunlarla ilgili birçok sorunlarla ilgili birçok sorunlarla ilgili.
+
+87
+00:21:42,675 --> 00:21:50,675
+Bu sorunlarla ilgili birçok sorunlarla ilgili.
+
+88
+00:21:51,855 --> 00:21:54,855
+ve abstract,
+
+89
+00:21:51,508 --> 00:21:54,807
+Arkadaşlar, on top of this primitive data types.
+
+90
+00:21:55,508 --> 00:21:58,528
+Arkadaşlar, so you see in the slides, so we have
+
+91
+00:21:58,528 --> 00:22:06,367
+Arkadaşlar, different arithmetic operators, plus, minus, multiplication, division, percentage.
+
+92
+00:22:07,448 --> 00:22:12,608
+And it's obviously, so you know from Matt that these operators have
+
+93
+00:22:12,608 --> 00:22:15,528
+Arkadaşlar, precedence.
+
+94
+00:22:17,203 --> 00:22:32,324
+Priorities, obviously, multiplication, division, percentage. So they have a priority compared to plus and minus. So summation and subtraction.
+
+95
+00:22:32,324 --> 00:22:41,443
+So this is what you know from the math, and this is the same thing in programming languages too.
+
+96
+00:22:41,940 --> 00:23:01,780
+Now, in every programming language, so we have some, we have some abstractions or some easy way to represent the arithmetic operations.
+
+97
+00:23:02,460 --> 00:23:03,019
+Okay.
+
+98
+00:23:03,360 --> 00:23:06,160
+You can call it as short-tense.
+
+99
+00:23:07,251 --> 00:23:32,971
+Now, you see that you have two plus sign together. So if you see two plus sign, so this means here, so you can see the meaning of this here. So let's say you have a variable, okay, and you want to increment it by one. In that case, what you do, you put two plus sign next to it, okay? So this means here.
+
+100
+00:23:33,395 --> 00:23:58,355
+is exactly the same as here. Okay. Increment the value of this variable by one. As you see, i equal to i plus one. Now, look at this here. And this is the same thing. Okay. This also says that increment the value of one, i by one, i equal to i plus one.
+
+101
+00:23:58,963 --> 00:24:06,744
+But there is a difference between when you put plus plus sign right after the variable or right before the variable.
+
+102
+00:24:06,744 --> 00:24:11,003
+So let's see the meaning, the difference here.
+
+103
+00:24:11,563 --> 00:24:13,244
+Let's take a look at this example.
+
+104
+00:24:13,903 --> 00:24:20,804
+In this particular example here, I'm assigning the value of 3 to i.
+
+105
+00:24:21,244 --> 00:24:25,344
+I'm assigning 3 to the variable i.
+
+106
+00:24:26,740 --> 00:24:43,159
+And then I have this statement here. This statement says that, okay, increment, so here I plus plus plus sign, which means that, so I want to increment the value of I by one, but.
+
+107
+00:24:43,551 --> 00:24:49,391
+So, when you see plus plus sign right on the right hand side of the variable.
+
+108
+00:24:50,071 --> 00:24:50,192
+Okay.
+
+109
+00:24:50,591 --> 00:24:58,692
+So, this means that so first I need to do the assignment first, then increment the value of i.
+
+110
+00:24:59,151 --> 00:24:59,411
+Okay.
+
+111
+00:24:59,672 --> 00:25:03,192
+Now, what was the value of i at this point?
+
+112
+00:25:03,351 --> 00:25:03,631
+Three.
+
+113
+00:25:04,351 --> 00:25:04,631
+Okay.
+
+114
+00:25:05,031 --> 00:25:10,931
+First, I'm going to need I'm going to do the assignment, which is assign the value of three to.
+
+115
+00:25:11,443 --> 00:25:18,203
+Here, variable a, then increment the value of i, which will make i 4.
+
+116
+00:25:19,223 --> 00:25:23,223
+Okay, now let's go one line below.
+
+117
+00:25:24,364 --> 00:25:29,243
+Now, so what was the value of a at this point?
+
+118
+00:25:29,384 --> 00:25:35,844
+A is 3 because when we did the assignment, okay, so we assigned 3 to a.
+
+119
+00:25:36,523 --> 00:25:38,463
+Okay, at this point, a is 3.
+
+120
+00:25:38,900 --> 00:25:44,320
+Now, this time, plus plus sign is on the left-hand side of the variable.
+
+121
+00:25:45,240 --> 00:25:52,200
+Now, this says that, if it is on the left-hand side, this says that, first, increment the value of a.
+
+122
+00:25:52,980 --> 00:26:02,840
+So, which will make it 4, because its value is 3, incremented by 1, it will make it 4, and then do the assignment.
+
+123
+00:26:03,519 --> 00:26:03,680
+Okay?
+
+124
+00:26:04,099 --> 00:26:07,059
+So, in that case, the value of B will be 4.
+
+125
+00:26:07,680 --> 00:26:07,900
+Okay?
+
+126
+00:26:08,440 --> 00:26:12,599
+Now, so, therefore, when you see plus, plus, and minus, minus,
+
+127
+00:26:13,587 --> 00:26:28,027
+So when you see these short hands, okay, so you need to understand that it has different meanings when it is on the right hand side of the variable, when it is on the left hand side of the variable, okay?
+
+128
+00:26:28,847 --> 00:26:39,987
+If it is on the right hand side of the variable, and so first you need to do whatever you need to do with this value first on that line, okay?
+
+129
+00:26:39,987 --> 00:26:41,467
+So in this particular.
+
+130
+00:26:41,587 --> 00:26:43,827
+We need to do the assignment, then increment it.
+
+131
+00:26:44,387 --> 00:26:53,467
+If you see on the left-hand side of the eye, before you do anything with this variable, first increment its value, then you do whatever you need to do.
+
+132
+00:26:53,768 --> 00:26:57,547
+In this particular case, the next thing that you need to do is the assignment.
+
+133
+00:26:57,847 --> 00:27:01,127
+First, you need to increment it, then you need to do the assignment.
+
+134
+00:27:02,036 --> 00:27:25,576
+Arkadaşlar, okay. Now this is a shorthand when you want to do an increment by one, okay, plus, plus and minus, minus. Minus, minus is the same thing this time. Instead of adding one, so you do a subtraction. So I minus one, okay. So instead of doing summation, you do the subtraction.
+
+135
+00:27:26,576 --> 00:27:27,096
+Now,
+
+136
+00:27:27,536 --> 00:27:31,256
+We also have other shorthands.
+
+137
+00:27:32,135 --> 00:27:34,576
+For example, let's take a look at this one.
+
+138
+00:27:34,576 --> 00:27:35,115
+Okay.
+
+139
+00:27:35,576 --> 00:27:41,576
+Now, if you see, okay, this...
+
+140
+00:27:43,284 --> 00:27:51,044
+Arkadaşlar, if you want to, for example, let's say you want to add a number to a variable, right?
+
+141
+00:27:51,564 --> 00:28:11,204
+Arkadaşlar, okay. Now, in that case, you can either write this, you can write explicitly, which means that A equal to A plus number, okay, which means that you want to add this number to the value of A, then do the assign and do the assignment, and which is assign the summation of this to
+
+142
+00:28:11,284 --> 00:28:30,403
+The value of a. Or what you can do, you can say a plus equals sign, then the number. Again, a plus equals sign and the number. Now, instead of writing this, so what you do, you put the variable.
+
+143
+00:28:31,059 --> 00:28:40,159
+Arkadaşlar, in front of plus equals sign here, and then you put a number that you want to add to this variable on the right hand side.
+
+144
+00:28:40,159 --> 00:28:43,920
+Arkadaşlar, okay, so which makes it much more simpler.
+
+145
+00:28:44,723 --> 00:29:09,284
+Arkadaşlar, to write. Now, if you see this here plus and equal sign, then you know what you need to do. So what does that mean? So it means that you want to add that number to that variable and assign again the same variable. Now, you can do the same thing with subtraction and equal sign.
+
+146
+00:29:09,748 --> 00:29:15,528
+Arkadaşlar, multiplication and equal sign, division and equal sign, percentage and equal sign.
+
+147
+00:29:15,788 --> 00:29:16,068
+Arkadaşlar, okay.
+
+148
+00:29:16,528 --> 00:29:18,208
+Arkadaşlar, they all have the same idea.
+
+149
+00:29:20,728 --> 00:29:21,088
+Arkadaşlar, okay.
+
+150
+00:29:22,168 --> 00:29:32,208
+Arkadaşlar, and so we already talked about, so these, the difference between plus plus i plus i plus plus, we already talked about this.
+
+151
+00:29:34,420 --> 00:29:53,440
+And so there are some static methods that we are going to use. In addition to these primitive operators, there is a round operation, there is absolute value operation, there is square root operation, there is power operation.
+
+152
+00:30:00,000 --> 00:30:05,720
+Learn this in the coming slides, which are available in a class called MAD.
+
+153
+00:30:06,324 --> 00:30:16,943
+Now, these operators that I just mentioned, we can just use it because they are part of the Java programming language.
+
+154
+00:30:17,364 --> 00:30:28,124
+But additional mathematical operations like power, round, finding the absolute value, so these are the methods that are implemented within the class.
+
+155
+00:30:30,548 --> 00:30:38,148
+Okay, now these are the arithmetic operations. There are also binary operations that we can use in Java, for example.
+
+156
+00:30:39,708 --> 00:30:48,948
+So between the two binary numbers, I can do an end.
+
+157
+00:30:49,811 --> 00:31:03,951
+I can do an or, okay, I can do an XOR, okay, I can do a not, okay, I can do all these operatives. Now, let's take a look how it works.
+
+158
+00:31:06,051 --> 00:31:11,771
+Let's say I have two integer numbers, one is 12 and the other one is 25.
+
+159
+00:31:12,276 --> 00:31:18,395
+Arkadaşlar, okay. What I want to do, I want to do an OR operation between these two integer numbers.
+
+160
+00:31:19,395 --> 00:31:27,215
+Arkadaşlar, okay. Now, as you know, OR operation is a binary operation, which means that it's a bitwise operation.
+
+161
+00:31:27,576 --> 00:31:36,715
+So, which means that what Java is going to do, it's going to convert this 12 into a binary number, as you see.
+
+162
+00:31:37,907 --> 00:31:57,487
+Arkadaşlar, so, so, it's converted this number into this binary number. This, this is in binary. If you calculate it, it's going to be, you know, its value is equal to 12. Okay. Now, 25, if you write it in binary, this is how it looks.
+
+163
+00:31:58,355 --> 00:32:03,895
+Now that I have two binary numbers, I can do an OR operation.
+
+164
+00:32:04,336 --> 00:32:16,395
+So you know that when I do OR operation between two binary numbers, starting from the first bit on the most right hand side, so you see 0 and 1.
+
+165
+00:32:16,395 --> 00:32:22,976
+So when you do OR, it's 1. 0, 0 when you do OR, 0. 1, 0 when you do OR, 1.
+
+166
+00:32:23,096 --> 00:32:26,355
+And this way, you can do OR operation.
+
+167
+00:32:26,355 --> 00:32:46,336
+operation bitwise between two these binary numbers. And once you have the resulting binary number, then you can convert it again to a decimal number, okay, so which in this case will be 29.
+
+168
+00:32:47,380 --> 00:33:12,200
+Okay, let's see the code. So how we can do the binary operations. So in this particular case here, you see that I have a class. Within this class, I have a main method, which we learned in the previous lecture. And within the main method, you see I have two variables, number one and number two, both of their integer, both of their type integer.
+
+169
+00:33:12,960 --> 00:33:13,559
+Okay.
+
+170
+00:33:14,132 --> 00:33:30,792
+And I have one more integer variable result. As you see now, so all these variables have a type integer because I have comma in between. And two of these integers.
+
+171
+00:33:31,279 --> 00:33:42,640
+So I assign their initial value. So you see that so I also have here assignment. But for results, I didn't do an assignment. I only declared its type.
+
+172
+00:33:43,763 --> 00:33:50,423
+Now, here you see the result equal to number one or number two.
+
+173
+00:33:50,723 --> 00:34:03,323
+Here, what I want to do is I want to take the value of number one, which is 12, okay, and I want to take the value of number two, which is 25, and I want to do a bitwise or operation.
+
+174
+00:34:03,483 --> 00:34:11,764
+As you see, after I conclude the bitwise or operation, which is going to be 29, I will assign the value of 29 to...
+
+175
+00:34:11,764 --> 00:34:15,083
+Result, and I will write it onto console.
+
+176
+00:34:15,724 --> 00:34:15,944
+Okay.
+
+177
+00:34:16,423 --> 00:34:18,423
+Now, this is an OR operation.
+
+178
+00:34:18,744 --> 00:34:20,884
+You can do the AND operation similarly.
+
+179
+00:34:22,944 --> 00:34:27,404
+Again, if you look at the code, everything is the same.
+
+180
+00:34:27,404 --> 00:34:34,444
+The only difference is that instead of doing the OR operation between these two numbers, I am doing an AND operation.
+
+181
+00:34:35,188 --> 00:34:43,547
+And bitwise operation, okay? And the resulting value here, as you see, is 8, and you will print the value of 8.
+
+182
+00:34:44,228 --> 00:34:52,807
+If you look at this, so this was our first binary value, which was 12. The second was the second binary value, 25.
+
+183
+00:34:53,387 --> 00:35:03,188
+So when you do an end between these two, so you need to go bitwise, 0 and 1. When you do end, it will be 0. 0 and 0, it will be 0.
+
+184
+00:35:03,188 --> 00:35:07,468
+1 and 0, it will be 0. 1 and 1, it will be 1.
+
+185
+00:35:07,807 --> 00:35:11,528
+It will continue like this and the resulting binary number,
+
+186
+00:35:11,968 --> 00:35:15,407
+then you will convert it into a decimal number.
+
+187
+00:35:15,968 --> 00:35:16,068
+Okay?
+
+188
+00:35:16,068 --> 00:35:27,008
+So this way, you can also do binary operations on the primitive data types as well.
+
+189
+00:35:32,596 --> 00:35:35,476
+Okay. So far, do you have any questions?
+
+190
+00:35:41,108 --> 00:35:42,608
+OK, no questions.
+
+191
+00:35:44,768 --> 00:35:49,208
+Now, now that we learned primitives, primitive data types,
+
+192
+00:35:51,728 --> 00:35:56,228
+so we should know that in every programming language,
+
+193
+00:35:58,028 --> 00:36:07,148
+so actually in object oriented programming languages, I should say, I'm rephrasing myself, in object oriented programming languages,
+
+194
+00:36:07,827 --> 00:36:14,907
+For the primitive data types, we have also wrapper classes.
+
+195
+00:36:16,367 --> 00:36:16,507
+Okay.
+
+196
+00:36:16,887 --> 00:36:30,847
+Now, what wrapper class is, we are creating a class, okay, which is going to create an object which is responsible for creating objects.
+
+197
+00:36:31,327 --> 00:36:31,927
+Okay.
+
+198
+00:36:32,532 --> 00:36:47,032
+And all within these objects, we will have some methods that are useful or necessary to do operations on the primitive data type.
+
+199
+00:36:48,311 --> 00:36:48,472
+Okay.
+
+200
+00:36:49,771 --> 00:36:51,912
+So what are we talking about?
+
+201
+00:36:51,992 --> 00:36:53,731
+What kind of operations that we have?
+
+202
+00:36:53,872 --> 00:36:57,252
+So let's give an example for integer wrapper.
+
+203
+00:36:57,760 --> 00:37:03,180
+Now, there is an integer primitive data type and there is an integer class.
+
+204
+00:37:03,920 --> 00:37:03,980
+Okay.
+
+205
+00:37:04,680 --> 00:37:15,180
+Now, if I, so what kind of methods that this integer class has, for example, there is a, it has a method called compare to.
+
+206
+00:37:16,180 --> 00:37:16,420
+Okay.
+
+207
+00:37:16,619 --> 00:37:21,579
+Now, you can compare one integer with another one.
+
+208
+00:37:21,940 --> 00:37:46,199
+Okay. Now, if the second one is bigger than the first one, then it will return minus one. If they are equal to each other, it will return zero. If the first one is bigger than the second one, then it will return plus one. Okay. Now, another method, int value. Okay.
+
+209
+00:37:47,635 --> 00:37:58,056
+Which means that it will give the data of the object as an integer.
+
+210
+00:37:58,855 --> 00:38:05,015
+Okay, so let me show this to you on the screen.
+
+211
+00:38:05,215 --> 00:38:05,996
+Give me a moment.
+
+212
+00:39:22,867 --> 00:39:23,247
+OK.
+
+213
+00:39:25,667 --> 00:39:49,268
+Now, if you make my video a little bit bigger so that you can see, or if you can pin my video stream so that you can see me in a better way.
+
+214
+00:39:50,835 --> 00:40:03,735
+Arkadaşlar benim kameramın görüntüsünü pin yaparsanız zoom'da tahtada yazdıklarımı daha rahat görebileceksiniz.
+
+215
+00:40:04,956 --> 00:40:13,315
+Okay. Now, so when we do primitive data type, okay, so this is primitive data type.
+
+216
+00:40:15,315 --> 00:40:16,036
+Okay.
+
+217
+00:40:16,532 --> 00:40:23,152
+For primitive data type in the physical memory, let's say, 4 byte.
+
+218
+00:40:23,832 --> 00:40:29,972
+So this is the space that are reserved in the physical memory when you do the primitive data type.
+
+219
+00:40:30,372 --> 00:40:30,472
+Okay.
+
+220
+00:40:31,092 --> 00:40:39,731
+Now, what we are saying is that for every primitive data type in object-oriented programming languages, we also have a class.
+
+221
+00:40:39,731 --> 00:40:40,572
+Okay.
+
+222
+00:40:44,628 --> 00:40:54,628
+And when you want to use the class instead of primitive data type, let's say, so this time, so let's say Y.
+
+223
+00:40:56,208 --> 00:40:56,768
+Okay.
+
+224
+00:40:57,288 --> 00:41:07,587
+And if you create an object of this integer class, which we are going to call wrapper integer class.
+
+225
+00:41:07,587 --> 00:41:08,188
+Okay.
+
+226
+00:41:08,507 --> 00:41:11,507
+Let's say new.
+
+227
+00:41:12,371 --> 00:41:13,091
+integer.
+
+228
+00:41:20,628 --> 00:41:27,568
+So in this case, what we are going to create, we are going to create an object in the physical memory.
+
+229
+00:41:28,608 --> 00:41:28,868
+Okay.
+
+230
+00:41:29,108 --> 00:41:34,668
+And remember when we talked about object, we said that object has the data.
+
+231
+00:41:36,847 --> 00:41:39,068
+And it has methods in it.
+
+232
+00:41:39,887 --> 00:41:41,188
+These are the methods.
+
+233
+00:41:41,927 --> 00:41:42,188
+Okay.
+
+234
+00:41:43,467 --> 00:41:44,108
+Now.
+
+235
+00:41:45,172 --> 00:41:52,131
+When you create an integer like this, let's say, let's give an initial value to this integer, let's give the value of 3.
+
+236
+00:41:53,612 --> 00:42:06,971
+Okay, and for this integer, let's assign the value of 3 here, initial value for the primitive data type x here, let's say, is going to be 3 also.
+
+237
+00:42:06,971 --> 00:42:12,172
+Now, if I create an object of the integer class,
+
+238
+00:42:12,916 --> 00:42:17,716
+Okay, so in that case, in the physical memory, it will be something like this.
+
+239
+00:42:18,676 --> 00:42:21,216
+And the value will be in the data section.
+
+240
+00:42:22,216 --> 00:42:22,476
+Okay.
+
+241
+00:42:22,936 --> 00:42:30,655
+And the methods of this object will be, as I said, one of them is compared to.
+
+242
+00:42:35,411 --> 00:42:39,331
+And you can have two string.
+
+243
+00:42:40,692 --> 00:42:44,771
+You can convert the integer value to string.
+
+244
+00:42:45,171 --> 00:42:46,711
+How you can do all this?
+
+245
+00:42:46,871 --> 00:42:50,471
+You can get the value of, you have value of.
+
+246
+00:42:53,588 --> 00:43:13,188
+Arkadaşlar, how you can call all these methods. So since this is an object, which all you need to do, you need to write the name of the object or the reference to this object, which is why, and then call its method, comparator.
+
+247
+00:43:17,619 --> 00:43:25,880
+Arkadaşlar, okay? You can compare the value of this object, which is 3, let's say, with another integer.
+
+248
+00:43:26,939 --> 00:43:36,539
+Arkadaşlar, okay? Now, with the primitive data type, all what we could do, so we had the arithmetic operations, right?
+
+249
+00:43:43,411 --> 00:43:45,231
+And we have the binary operations.
+
+250
+00:43:50,963 --> 00:43:59,203
+Okay. But here, if I use the wrapper class of an integer, I can do all these useful methods.
+
+251
+00:43:59,724 --> 00:44:05,463
+Okay. All these useful methods are already implemented within the integer wrapper class.
+
+252
+00:44:06,083 --> 00:44:14,323
+Okay. Now, similar to this, for every primitive data type, we have a wrapper class for double, for plot.
+
+253
+00:44:14,900 --> 00:44:28,220
+Arkadaşlar, so we have these repercussions and these repercussions provide these usable methods for us so that we can do more operations than the binary and arithmetic operations.
+
+254
+00:44:29,220 --> 00:44:32,520
+Arkadaşlar, now let's go back to the slides.
+
+255
+00:44:41,907 --> 00:44:45,127
+Okay, now you can make the slide bigger this time.
+
+256
+00:44:47,007 --> 00:44:56,068
+So here in this particular example, so you have two integer wrapper values.
+
+257
+00:44:56,307 --> 00:44:58,707
+So you have SARMA1 and SARMA2.
+
+258
+00:44:59,108 --> 00:45:03,688
+They both have a type of integer wrapper class.
+
+259
+00:45:03,688 --> 00:45:07,659
+Okay, and now...
+
+260
+00:45:08,532 --> 00:45:35,052
+Sarma 1 is equal to 1 and Sarma 2 is equal to 7. Now this is one thing that I should also teach you right now before we go further. Now what you can do, what Java is doing when you create, let's say, an integer.
+
+261
+00:45:35,632 --> 00:45:54,652
+A wrapper, if you define an integer wrapper variable, just like this, integer one, and if you assign, let's say, let's assign here four.
+
+262
+00:45:55,652 --> 00:46:02,032
+If you assign a normal variable, normal integer variable to this,
+
+263
+00:46:03,668 --> 00:46:06,307
+wrapper variable.
+
+264
+00:46:07,368 --> 00:46:21,328
+So what Java is understanding is that it understand that you want to create an object where the type is y and do the assignment to this variable.
+
+265
+00:46:21,887 --> 00:46:23,768
+So what Java is understanding this.
+
+266
+00:46:24,688 --> 00:46:26,927
+This is what you want to do.
+
+267
+00:46:32,596 --> 00:46:32,975
+Ok.
+
+268
+00:46:34,775 --> 00:46:36,855
+Now, this is called boxing.
+
+269
+00:46:41,780 --> 00:46:49,780
+Okay, but Java is understanding that, okay, you are assigning an integer, okay, to a...
+
+270
+00:46:50,324 --> 00:47:17,043
+Arkadaşlar, wrapper value, integer wrapper value, okay? To do this, normally what you need to do, you need to do this. You need to create an object of this wrapper class, an object of the integer class, and then to the constructor, you need to give the value of four, and then assign the reference to this object to this wrapper variable, okay?
+
+271
+00:47:17,487 --> 00:47:23,707
+But if you do that, so Java Virtual Machine automatically does this on your behalf.
+
+272
+00:47:23,707 --> 00:47:24,228
+Okay.
+
+273
+00:47:24,507 --> 00:47:29,608
+Now, similarly, you can do the other version of it.
+
+274
+00:47:29,747 --> 00:47:38,427
+For example, let's say here is your, okay.
+
+275
+00:47:39,207 --> 00:47:44,148
+So we already defined, let's say, integer m.
+
+276
+00:47:45,076 --> 00:48:04,655
+Okay, integer m. And here, let's say new integer 6. Okay.
+
+277
+00:48:09,652 --> 00:48:22,172
+So what Java is understanding is that you want to take the value of this wrapper object and assign it to a primitive data type.
+
+278
+00:48:22,612 --> 00:48:23,912
+Okay, if you do this.
+
+279
+00:48:23,912 --> 00:48:33,952
+So in that case, what it's going to do, it's going to call the int value method of this and assign it to this primitive data type.
+
+280
+00:48:34,792 --> 00:48:34,971
+Okay.
+
+281
+00:48:37,396 --> 00:48:40,936
+Now, that is called unboxing.
+
+282
+00:48:41,576 --> 00:48:42,896
+Okay, this is called boxing.
+
+283
+00:48:43,056 --> 00:48:44,155
+This is called unboxing.
+
+284
+00:48:49,300 --> 00:48:54,640
+Okay. Now, so let's go back to slides again.
+
+285
+00:48:56,060 --> 00:49:02,760
+Okay. You can remove the pin so that or you can make the slides bigger.
+
+286
+00:49:03,520 --> 00:49:10,000
+Now, if you look at the slides at the end of it, so we say that integer sarma1 is equal to 1.
+
+287
+00:49:10,000 --> 00:49:14,988
+So which means that here I'm assigning an int value to the...
+
+288
+00:49:16,179 --> 00:49:27,319
+Arkadaşlar, to do wrapper object, which means that I am going to do a boxing, which you can see one line below.
+
+289
+00:49:27,920 --> 00:49:37,039
+So new integer one, Java is doing this on our behalf and it creates an object of integer and assigns it to Sarmabal.
+
+290
+00:49:38,164 --> 00:49:50,484
+Arkadaşlar, okay. Now it will do the same thing for Sarma 2 as well. It will create an integer where the constructor takes number seven and it will create an object and it will assign to Sarma 2.
+
+291
+00:49:51,344 --> 00:50:00,000
+Now here I have two objects, okay, Sarma 1 and Sarma 2. And if I wanted to call
+
+292
+00:50:00,000 --> 00:50:06,279
+Arkadaşlar, class, object,
+
+293
+00:50:10,195 --> 00:50:37,495
+Arkadaşlar, integer object. In this case, I'm giving SARMA2. Now, if the second value is bigger than the first one, then the result will be minus one. If the second value is less than the first value, which means that if the SARMA2 is less than the SARMA1, the result was going to be plus one. If they both equal to each other, the result was going to be zero.
+
+294
+00:50:38,195 --> 00:50:44,695
+In this particular example, since SARMA 2 is bigger than SARMA 1, then the result is going to be minus 1.
+
+295
+00:50:44,695 --> 00:50:45,455
+Okay.
+
+296
+00:50:51,059 --> 00:51:04,380
+Now, this was the wrapper class example for integer, but we have wrapper classes for eight different primitive data types, and they all have similar useful methods.
+
+297
+00:51:05,099 --> 00:51:05,199
+Okay.
+
+298
+00:51:06,119 --> 00:51:09,380
+Now, let's take a look at the string class.
+
+299
+00:51:10,516 --> 00:51:24,276
+Now, the string class is not a primitive wrapper, okay? It's another class which is also a type.
+
+300
+00:51:24,884 --> 00:51:50,724
+Arkadaşlar, of a type that we will commonly use when we write program, okay? It's not one of the wrapper classes, but it's not actually a wrapper class of a primitive type, but it's a wrapper class and it's a type of data that we are going to commonly use.
+
+301
+00:51:51,219 --> 00:51:56,419
+Arkadaşlar, now the string class has also a different methods that are very useful.
+
+302
+00:51:56,419 --> 00:51:59,019
+Arkadaşlar, so you can get the length of a string.
+
+303
+00:51:59,559 --> 00:52:02,199
+Arkadaşlar, you can compare one string with another.
+
+304
+00:52:03,139 --> 00:52:13,259
+Arkadaşlar, you can make the string characters uppercase.
+
+305
+00:52:13,679 --> 00:52:16,779
+Arkadaşlar, you can make the string characters to lowercase.
+
+306
+00:52:17,199 --> 00:52:18,359
+Arkadaşlar, you can convert them.
+
+307
+00:52:18,672 --> 00:52:25,532
+You can check whether one string contains another string. All that useful method comes with the string class.
+
+308
+00:52:26,252 --> 00:52:38,432
+Now, let's take a look at an example here. So here you see in the main method, I am defining two different strings, string A and string B. They both have the type string.
+
+309
+00:52:39,251 --> 00:53:04,311
+Okay. Now, now in the second line, I am doing an assignment to the value of this variable. Here is string value. I'm assigning to the string A. In the third line, another string value you see within the parentheses, I'm assigning to the string B. Now I have two string objects. Okay.
+
+310
+00:53:05,780 --> 00:53:13,260
+I have two string objects where the values of the objects are assigned.
+
+311
+00:53:14,060 --> 00:53:26,180
+Now, once the value assignments are done, then I can do, I can call the methods of the string objects.
+
+312
+00:53:27,092 --> 00:53:36,592
+So string A is an object and I can call the its method. So one of its methods is compare to. So when I do the compare to.
+
+313
+00:53:38,532 --> 00:53:43,152
+So the method to compare to is going to take is another string object.
+
+314
+00:53:43,831 --> 00:53:52,351
+Now, if the second one is bigger than the first one in the lexicographical graphical order.
+
+315
+00:53:53,043 --> 00:53:57,384
+So, as you see, t is bigger than a in the lexical graphical order.
+
+316
+00:53:57,384 --> 00:54:05,983
+So, in that case, the resulting value will be minus, minus one, or minus number, I should say.
+
+317
+00:54:06,844 --> 00:54:08,384
+Now, if it is...
+
+318
+00:54:09,076 --> 00:54:23,496
+Arkadaşlar, if it is below, so let's say if, so if it is below, then the value, if the string A is bigger than the string B in the lexicographical order, then the resulting value will be plus a number.
+
+319
+00:54:24,175 --> 00:54:30,996
+Arkadaşlar, if they both are equal to each other, then the result will be what? Zero. Okay.
+
+320
+00:54:31,860 --> 00:54:35,819
+And with the string class, we have also these useful methods.
+
+321
+00:54:35,819 --> 00:54:38,039
+So contains, uppercase, lowercase.
+
+322
+00:54:38,380 --> 00:54:45,579
+So all those methods you will be using in the class as you write code.
+
+323
+00:54:48,219 --> 00:54:50,619
+Now let's take a look at this example.
+
+324
+00:54:53,012 --> 00:55:00,771
+So here I have a class within this package and in this class I have only one main method.
+
+325
+00:55:01,512 --> 00:55:18,911
+And so let's see in this main method in the first line I am defining a string ctrA and I'm also assigning a value to this string object.
+
+326
+00:55:20,244 --> 00:55:37,944
+I'm defining a string, as you see, and I'm assigning a value of this to this object. As you see, by putting the comma here, so we dismiss that the type of the of the sky is also string. Okay.
+
+327
+00:55:40,307 --> 00:55:43,847
+So this string is type for this variable and this variable.
+
+328
+00:55:43,847 --> 00:55:48,727
+And at the same time, as you see, I also did the assignment in the same line.
+
+329
+00:55:49,107 --> 00:56:00,147
+So Java and most programming languages allows me to do these so that the number of the lines of the codes will be much shorter.
+
+330
+00:56:01,427 --> 00:56:29,367
+Now, so let's see in the second line. So at the beginning of the class, so we have been, I have been showing to you the system out print line. Okay. Now, so out is an object which is underneath of a system class. It's an object. And this object has a method called print line. And what print line is going to take within the parentheses is going to take as this is
+
+331
+00:56:29,427 --> 00:56:31,527
+A string as an input type.
+
+332
+00:56:32,347 --> 00:56:37,087
+And when you do the system dot dot dot print line, what is going to do?
+
+333
+00:56:37,087 --> 00:56:41,627
+Whatever you give as an input is going to write it onto console.
+
+334
+00:56:42,307 --> 00:56:42,667
+OK.
+
+335
+00:56:43,699 --> 00:56:55,840
+Now, in this particular example, so what I'm doing is that string A contains string B, so which in this case is going to return true or false, okay?
+
+336
+00:56:56,619 --> 00:57:02,320
+Now, so does string A contain string B? No.
+
+337
+00:57:02,719 --> 00:57:08,440
+So Yildiz is not within the string Istanbul, therefore it will be false.
+
+338
+00:57:09,043 --> 00:57:17,543
+Okay, now, then what I'm going to do, I'm going to assign the value tan to string b.
+
+339
+00:57:17,824 --> 00:57:21,384
+So instead of yieldis, now, string b will be tan.
+
+340
+00:57:22,164 --> 00:57:27,184
+Then I'm going to do the method call again.
+
+341
+00:57:27,624 --> 00:57:34,944
+So this time I'm going to check whether string A, which is Istanbul, contains string B, which is Tan.
+
+342
+00:57:35,264 --> 00:57:40,444
+In this case, the result will be true because Tan is in Istanbul.
+
+343
+00:57:41,724 --> 00:57:41,964
+Okay.
+
+344
+00:57:42,403 --> 00:57:49,284
+Now, then what I'm going to do, I'm going to call another method, which is two uppercase.
+
+345
+00:57:50,195 --> 00:58:02,335
+What this is doing is that it's going to change the value of tongue to uppercase, okay, and it's going to update the value string B.
+
+346
+00:58:02,895 --> 00:58:13,855
+So when you call the two uppercase, okay, what it's going to do, it's going to change the small letters to capital letters, okay?
+
+347
+00:58:14,771 --> 00:58:19,532
+And then when I print it out, it will obviously write the capital letters.
+
+348
+00:58:20,492 --> 00:58:20,652
+Okay.
+
+349
+00:58:20,932 --> 00:58:32,072
+Then when I check whether the string A, which is Istanbul, contains the capital letters TAN, then the resulting will be false.
+
+350
+00:58:33,172 --> 00:58:33,512
+Okay.
+
+351
+00:58:38,804 --> 00:58:42,744
+Arkadaşlar, then the resulting value will be false.
+
+352
+00:58:42,963 --> 00:58:43,124
+Okay.
+
+353
+00:58:46,612 --> 00:58:51,371
+And this should be lowercase instead of uppercase.
+
+354
+00:58:51,371 --> 00:59:03,451
+So if I convert it again, ton to lowercase, and then this time I will convert the value of ton to the previous version.
+
+355
+00:59:03,931 --> 00:59:09,851
+And when I check it, this time it's going to be, again, it's going to print out true.
+
+356
+00:59:10,431 --> 00:59:10,692
+Okay.
+
+357
+00:59:15,507 --> 00:59:18,887
+Ok, so this was the string class.
+
+358
+00:59:20,128 --> 00:59:20,327
+Ok.
+
+359
+00:59:21,487 --> 00:59:28,947
+Now I'm going to give a ten minute break before I start with another important class, math class.
+
+360
+00:59:29,467 --> 00:59:29,668
+Ok.
+
+361
+00:59:30,208 --> 00:59:32,168
+Arkadaşlar, bir on dakika ara veriyorum.
+
+362
+00:59:33,027 --> 00:59:41,467
+Bir sonraki derste bu çokça kullanacağımız bu sınıfların üzerinde konuşmaya devam edeceğiz.
+
+363
+00:59:41,608 --> 00:59:42,788
+Math class ile başlayacağız.
+
+364
+00:59:44,947 --> 00:59:49,987
+Evet, saatim 19.50, saat 10'da tekrardan başlıyoruz.
+
+365
+01:10:23,123 --> 01:10:26,503
+Evet, tekrardan merhaba arkadaşlar. Sesim geliyor mu? Bir key dedin lütfen.
+
+366
+01:10:30,868 --> 01:10:31,788
+Geliyor hocam.
+
+367
+01:10:32,347 --> 01:10:32,628
+Tamam.
+
+368
+01:10:35,888 --> 01:10:36,528
+Okay.
+
+369
+01:10:37,728 --> 01:10:40,748
+Let's start with the math class.
+
+370
+01:10:40,908 --> 01:10:47,648
+Then we are going to be talking about a couple other important classes that we will be using throughout the course.
+
+371
+01:10:49,108 --> 01:10:52,587
+Now, one of them is math class.
+
+372
+01:10:52,587 --> 01:10:53,308
+Okay.
+
+373
+01:10:53,908 --> 01:11:03,668
+So, remember we said that when we were covering the arithmetic operations, there are, let's go back to that slide so that.
+
+374
+01:11:04,659 --> 01:11:17,960
+So I want to make sure that you remember. So when we talked about arithmetic operations, we also said that there are other operations that we can apply, mathematical operations that we can apply on the primitive data types.
+
+375
+01:11:18,780 --> 01:11:31,500
+And so these operations are implemented in a class mat, okay, which is under Java and .lunk package. So let's go to that class.
+
+376
+01:11:32,372 --> 01:11:41,532
+Now, the math class provides us a number of methods which we can apply on the primitive data types.
+
+377
+01:11:41,672 --> 01:11:46,372
+So let's start with the first method. The first method is the random method.
+
+378
+01:11:46,852 --> 01:11:49,252
+So this is basically a random number generator.
+
+379
+01:11:50,252 --> 01:11:55,152
+It generates a random number which is between 0 and 1.
+
+380
+01:11:55,828 --> 01:12:09,708
+Okay, it generates a double value. For example, if in your program you need a random number, so in this case you call the random method of the math class.
+
+381
+01:12:11,608 --> 01:12:18,507
+Now, one thing that you should realize here, as you see, now math is a class.
+
+382
+01:12:18,996 --> 01:12:26,076
+Now, when I call a method of a class, that method has to be classic.
+
+383
+01:12:26,596 --> 01:12:29,076
+So this is how I can call it directly.
+
+384
+01:12:29,236 --> 01:12:34,296
+Otherwise, I have to create an object of that class in order to call its method.
+
+385
+01:12:35,539 --> 01:13:02,979
+Arkadaşlar, okay? Now, this is something you should never forget. Now, as you see, random method is defined as static within the math class. Therefore, when I wanted to call the random class, I can directly write the name of the class and dot and then call its method, okay? And which in turn will give me a double value between 0 and 1.
+
+386
+01:13:03,572 --> 01:13:15,532
+Okay. If this was not a static method, then I would have to create a first object of the math method, math class, and then call the method of that object.
+
+387
+01:13:17,212 --> 01:13:29,152
+Okay. Bunu unutmuyoruz arkadaşlar. Bir sınıfın, eğer bir static metodu varsa, bu sınıfın bu static metodunu çağırmak için,
+
+388
+01:13:29,503 --> 01:13:35,203
+Yapacağımız şey sınıfın ismini yazmak, sonra sınıfın metodunu çağırmak.
+
+389
+01:13:36,023 --> 01:13:44,064
+Eğer bu bir statik metot değilse ve biz bu metodu çağırmak istiyorsak öncelikle bu sınıfın bir objesini oluşturacağız.
+
+390
+01:13:44,064 --> 01:13:54,543
+Nasıl oluşturuyorduk? New keyword ile oluşturuyorduk. Objesini oluşturacağız. Sonra objenin referansına yanına nokta. Ondan sonra da metodun ismini yazacağız.
+
+391
+01:13:58,292 --> 01:14:11,692
+Now, what other methods that the math class has? As you see, all the methods that the math class has, has static, which means that directly you write the name of the class and then call its methods.
+
+392
+01:14:12,652 --> 01:14:23,292
+Okay, what other methods that I have? So one of them is absolute value, ABC. So it takes the primitive data type.
+
+393
+01:14:23,583 --> 01:14:37,724
+Okay, whether it's a positive or a negative, okay, now it's going to return to its absolute value, okay, it's going to return a primitive data type, which is the absolute value of the input type.
+
+394
+01:14:38,836 --> 01:14:41,615
+Arkadaşlar, what other method do I have? The max method.
+
+395
+01:14:42,115 --> 01:14:45,896
+Arkadaşlar, this time, the max method takes two input parameters.
+
+396
+01:14:46,456 --> 01:14:50,115
+Arkadaşlar, they both have the primitive data type, A and B.
+
+397
+01:14:50,576 --> 01:14:55,456
+Arkadaşlar, and then it compares these two and it returns the maximum one.
+
+398
+01:14:55,816 --> 01:14:57,836
+Arkadaşlar, as you see here, there is an example.
+
+399
+01:14:58,416 --> 01:15:04,576
+Arkadaşlar, so here in this particular example, I'm calling the max method with double.
+
+400
+01:15:05,024 --> 01:15:10,404
+Primitive data type is going to compare the two and it is going to return the bigger one.
+
+401
+01:15:11,784 --> 01:15:15,404
+And similarly, there is also mean method under math class.
+
+402
+01:15:15,844 --> 01:15:15,963
+Okay.
+
+403
+01:15:16,244 --> 01:15:21,684
+It will take two primitive data types.
+
+404
+01:15:21,864 --> 01:15:25,623
+It will compare the two and it will return the minimum one.
+
+405
+01:15:27,104 --> 01:15:28,004
+What else?
+
+406
+01:15:28,364 --> 01:15:29,664
+There is a sale method.
+
+407
+01:15:29,664 --> 01:15:30,444
+Okay.
+
+408
+01:15:31,060 --> 01:15:35,880
+So, so basically you will give a double number to the sale method.
+
+409
+01:15:36,200 --> 01:15:36,480
+Okay.
+
+410
+01:15:36,900 --> 01:15:45,400
+And then what it's going to do, it's going to round it up to the higher number.
+
+411
+01:15:45,400 --> 01:15:53,840
+In this particular case, 3.1, it's going to round it to 4 and it's going to return the value of 4.
+
+412
+01:15:54,996 --> 01:16:07,876
+Just like the seal method, there is a floor method. This time it's going to return the downwards rounded value. If you give 30.1, for example, it's going to give the 3 as a result.
+
+413
+01:16:08,819 --> 01:16:22,739
+Arkadaşlar, or the round. Arkadaşlar, in this case, it's going to return the correctly rounded value. So if it is 3.5, it's going to return 4. If it is 3.1, it's going to return 3.0.
+
+414
+01:16:24,372 --> 01:16:37,832
+Arkadaşlar, and the square root, OK, karaköy. So whatever I give in the input is going to take the square, positive square root and return its value.
+
+415
+01:16:39,672 --> 01:16:40,292
+OK.
+
+416
+01:16:41,971 --> 01:16:53,811
+Now, all these methods that belong to Math class, we are going to be using in the class in different problems.
+
+417
+01:16:54,331 --> 01:16:54,371
+Okay.
+
+418
+01:16:54,791 --> 01:16:59,271
+So, over time, I want you to learn all these methods.
+
+419
+01:16:59,471 --> 01:17:03,631
+I want you to understand how to use them.
+
+420
+01:17:03,992 --> 01:17:04,111
+Okay.
+
+421
+01:17:04,412 --> 01:17:06,551
+Basically, how to use them is so simple.
+
+422
+01:17:06,871 --> 01:17:08,331
+You base similar to this.
+
+423
+01:17:08,851 --> 01:17:09,971
+Just write the name of the...
+
+424
+01:17:09,971 --> 01:17:14,511
+Arkadaşlar, class, and just dot and then call its method.
+
+425
+01:17:14,791 --> 01:17:16,072
+Arkadaşlar, that's all you need to do.
+
+426
+01:17:16,531 --> 01:17:19,971
+Arkadaşlar, and sometimes the method may take zero parameter.
+
+427
+01:17:20,131 --> 01:17:22,471
+Arkadaşlar, it may take one parameter, two parameters.
+
+428
+01:17:22,811 --> 01:17:30,691
+Arkadaşlar, you just need to pay attention to those, you know, how many parameters it takes and what it returns.
+
+429
+01:17:31,011 --> 01:17:33,652
+Arkadaşlar, you need to remember that.
+
+430
+01:17:36,231 --> 01:17:36,771
+Arkadaşlar, okay.
+
+431
+01:17:38,131 --> 01:17:47,751
+We said that if I wanted to create a random number, okay, I can use the random method of the math class, okay?
+
+432
+01:17:47,751 --> 01:17:58,131
+But there are other ways of creating a random value. Now, the other way is using the random class, okay?
+
+433
+01:17:59,699 --> 01:18:04,299
+Now, the random class is under java.util package.
+
+434
+01:18:04,819 --> 01:18:04,979
+Okay.
+
+435
+01:18:05,260 --> 01:18:08,659
+The math class was under java.langtman package.
+
+436
+01:18:17,108 --> 01:18:21,968
+So here, yeah, the math class is under java.lang package.
+
+437
+01:18:25,007 --> 01:18:28,268
+And the random class is under java.util package.
+
+438
+01:18:28,268 --> 01:18:39,728
+Now, all these classes, the wrapper classes, the random class, the math class, the string class, they all come with a Java software development kit.
+
+439
+01:18:40,228 --> 01:18:41,228
+So when you...
+
+440
+01:18:41,235 --> 01:18:49,175
+When you download the Java Software Development Kit, all these packages, they come by default.
+
+441
+01:18:49,556 --> 01:18:56,036
+So in your code, you can just use these classes as you write your Java programs.
+
+442
+01:18:57,779 --> 01:19:09,960
+Now, in when we use met, so when we use the random method of the met, since the random method was a static method, we were able to directly call the random method.
+
+443
+01:19:11,960 --> 01:19:16,159
+Let me start my clock so that I make sure that I'm not.
+
+444
+01:19:18,559 --> 01:19:19,639
+Let's see.
+
+445
+01:19:29,844 --> 01:19:55,943
+Okay. But when you use the random class instead of the math class, in that case, random class does not have static methods. As you see, all the methods that random class has, they are not static methods, which means that when you use random class, you need to create an object of the random class before you call its methods.
+
+446
+01:19:56,948 --> 01:20:06,007
+So what kind of methods does it have? It has the next boolean. It returns the randomly generated true or false. Okay.
+
+447
+01:20:07,108 --> 01:20:17,448
+You can call next double. It will return the random number between zero and one, just like what random method is doing.
+
+448
+01:20:18,355 --> 01:20:24,395
+When you call next float, it will do the same thing for float number.
+
+449
+01:20:24,796 --> 01:20:34,036
+When you call the next integer, it will return a value between minus 2 to the power of 32, 2 plus 2 to the power of 32.
+
+450
+01:20:34,036 --> 01:20:45,235
+Okay, so for every primitive data type, it will return a randomly generated value.
+
+451
+01:20:46,644 --> 01:20:52,144
+Now, let's take a look at how we are going to use the random class.
+
+452
+01:20:52,144 --> 01:20:56,963
+As you see here, I have a main method within a class called random ops.
+
+453
+01:20:58,324 --> 01:21:06,224
+And within this main method, I'm using the random class.
+
+454
+01:21:06,771 --> 01:21:23,072
+As you see, in order to use the random class, you see the import statement here, import java.util.star, which means that import all the classes underneath the java.util package, which includes the random class.
+
+455
+01:21:23,072 --> 01:21:30,951
+Okay, so I need this statement here, this import statement so that I can use the random class within this class.
+
+456
+01:21:32,051 --> 01:21:37,471
+Now, you see, I am creating an object of the random class.
+
+457
+01:21:37,591 --> 01:21:50,591
+You see here, I am creating an object, and I am assigning the object reference to this newly created object to this variable, generator, where the type of the variable is random.
+
+458
+01:21:51,347 --> 01:22:00,108
+Arkadaşlar, now I have a generator variable where the type is random, which is pointing to this newly created object.
+
+459
+01:22:00,747 --> 01:22:15,208
+Arkadaşlar, then when I call the next int method, in that case, so I'm going to call the next int method of the newly created object, which in turn is going to return to me an int value.
+
+460
+01:22:15,796 --> 01:22:27,355
+So what is the int value here? Let's see the next int. The int value will be between minus 2 to the power of 32, 2 plus 2 to the power of 32.
+
+461
+01:22:28,316 --> 01:22:35,355
+Okay, now once I get this int value, okay, then I can call the...
+
+462
+01:22:36,180 --> 01:23:03,300
+If I wanted to have a post, if I wanted to see the positive value, so what I can do, I can call the absolute method of the math class, but what it will return, it will take the, it will find the absolute value of whatever integer that I give here. If it is minus, then it will give me the positive value, okay? If it is positive, then it will give me the same value.
+
+463
+01:23:05,171 --> 01:23:16,671
+Okay. Now, after I did this, then I'm going to call another method for, of next integer. So, I'm, of random class, which is next integer.
+
+464
+01:23:18,191 --> 01:23:25,691
+Now, here, this time, I'm calling next integer, but this time I'm passing an integer value. What does this mean?
+
+465
+01:23:28,912 --> 01:23:32,211
+So, let me see if I have it here.
+
+466
+01:23:32,724 --> 01:24:00,064
+No, I don't have it here. So what this basically means that, so between 0 and 11, give me an integer, a randomly generated integer value. Okay. Now it is, so when you pass a parameter to next integer, it basically tells you that, so instead of giving me an integer value between
+
+467
+01:24:00,692 --> 01:24:16,692
+Arkadaşlar, minus 2 to the power of 32 and plus 2 to the power of 32. Give me an integer, a positive integer value between 0 and 11. Then it will give me a value, which in this case will be between
+
+468
+01:24:17,076 --> 01:24:20,675
+Arkadaşlar, so I can print it out here.
+
+469
+01:24:20,976 --> 01:24:33,836
+Arkadaşlar, so if I wanted to have a random value between a certain range, then I can indicate this when I call this method.
+
+470
+01:24:38,003 --> 01:24:50,463
+Okay, so far we learned the random class, we learned the math class, okay, we learned the string class, we learned the wrapper classes.
+
+471
+01:24:50,824 --> 01:24:54,664
+Wrapper classes are for all the primitive types.
+
+472
+01:24:54,804 --> 01:25:02,463
+We have wrapper class for Boolean, character, float, double, byte, short, long, integer, okay.
+
+473
+01:25:08,115 --> 01:25:14,056
+Now we are going to learn another class called Scanner class.
+
+474
+01:25:14,056 --> 01:25:14,655
+Okay.
+
+475
+01:25:15,456 --> 01:25:25,976
+Now, so far we learned how to write a value to the console.
+
+476
+01:25:26,536 --> 01:25:26,695
+Right.
+
+477
+01:25:27,216 --> 01:25:31,815
+And how we did that, we used system.out.
+
+478
+01:25:32,315 --> 01:25:33,695
+Out is an object.
+
+479
+01:25:34,136 --> 01:25:34,315
+Okay.
+
+480
+01:25:34,868 --> 01:25:38,068
+And which is in within the system class.
+
+481
+01:25:38,448 --> 01:25:38,587
+Okay.
+
+482
+01:25:39,007 --> 01:25:42,908
+And this out object has methods like print.
+
+483
+01:25:43,444 --> 01:26:11,384
+PrintLine, PrintF, okay? So PrintLine and Print. So these are the methods that Out object has, okay? And since these methods are static member fields, so I can directly call System.OutPrintLine in parentheses, whatever I want to write in onto console. So far, we have seen that. So as you see, System.OutPrintLine. Again, Out is an object.
+
+484
+01:26:11,444 --> 01:26:19,344
+Arkadaşlar, and it's a member of this system class, that's why I can directly call this.
+
+485
+01:26:19,824 --> 01:26:25,804
+Arkadaşlar, and this alt object has static member fields, one of them is print line, and I can call this.
+
+486
+01:26:26,264 --> 01:26:33,804
+Arkadaşlar, and when I do that, what it's going to do, it's going to print everything that I write here in the, between the parentheses, onto console.
+
+487
+01:26:35,604 --> 01:26:45,524
+Now, what I'm going to teach you is how you can get input from the console, okay, how you can get input from the user.
+
+488
+01:26:47,004 --> 01:26:55,144
+Now, in order to do this, under java.util package, there is another class called scanner class, okay.
+
+489
+01:26:56,043 --> 01:27:00,496
+Now, so this class takes...
+
+490
+01:27:00,496 --> 01:27:19,556
+Arkadaşlar, system.in, which is in is again an object, just like the out object, in is an object within the system class, and in object has a type, which is Java.io input stream, which you will learn later, okay?
+
+491
+01:27:19,556 --> 01:27:20,935
+And
+
+492
+01:27:23,731 --> 01:27:29,791
+So we are going to give this as an input to the scanner object.
+
+493
+01:27:30,072 --> 01:27:32,731
+Now the scanner object is going to...
+
+494
+01:27:33,039 --> 01:27:58,827
+...
+
+495
+01:27:59,524 --> 01:28:02,324
+Arkadaşlar, class,
+
+496
+01:27:59,412 --> 01:28:09,352
+Now, take a look at the code within the main method. In the first line, so I'm creating an object of the scanner class.
+
+497
+01:28:10,868 --> 01:28:22,028
+As you see, as I create the scanner object of scanner class, I'm calling one parameter constructor of the scanner class, and I'm passing system.in.
+
+498
+01:28:22,028 --> 01:28:34,128
+Okay, so system.in is the by default object, which I need to give to scanner object, which will allow me to retrieve value from the keyboard.
+
+499
+01:28:35,283 --> 01:28:43,603
+And then once I create this object, then I'm going to assign its reference to this variable where the type of this variable is scanner.
+
+500
+01:28:44,443 --> 01:28:44,663
+Okay.
+
+501
+01:28:45,923 --> 01:28:53,503
+Now I'm printing something to screen to tell the user that I want something, I want the user to enter something.
+
+502
+01:28:53,703 --> 01:28:56,523
+In this case, I want a string value.
+
+503
+01:28:57,652 --> 01:29:25,112
+Now, now that I have a scanner object, I can call its method. I'm calling the next line method. Now, when I call the next line method, okay, it's going to wait until the user, okay, enters something. So if the user enters something,
+
+504
+01:29:25,619 --> 01:29:34,260
+using the keyboard, then it will retrieve this value and assign it to this variable name.
+
+505
+01:29:35,520 --> 01:29:38,260
+Okay, then I will print something else.
+
+506
+01:29:39,000 --> 01:29:43,180
+And then I'm going to call another method of scanner object next int.
+
+507
+01:29:43,699 --> 01:29:49,260
+So this time I'm asking the user to enter a integer value.
+
+508
+01:29:49,600 --> 01:29:55,460
+So once the user enters an integer value, I will retrieve it and assign it to this value.
+
+509
+01:29:56,040 --> 01:29:56,239
+Okay.
+
+510
+01:29:56,680 --> 01:30:04,460
+And as you see, the two variables, name and age, I retrieved it from the keyboard from the user by using the scanner object.
+
+511
+01:30:05,363 --> 01:30:22,643
+Then I can call the system.out.println. I can write the value of name, which I retrieved it from the user, and I can also write the value of age, which I also retrieved it from the user, okay, onto the screen by using system.out.println.
+
+512
+01:30:23,203 --> 01:30:31,223
+Okay, and then whenever I use the scanner object, okay, I need to close this.
+
+513
+01:30:33,043 --> 01:30:43,644
+This object. So, so there is a clause method which I need to call every time I'm using this scanner object. Okay.
+
+514
+01:30:45,304 --> 01:30:49,043
+So, let's, let me show you some
+
+515
+01:30:49,043 --> 01:30:57,744
+examples of what I have been teaching you so far.
+
+516
+01:31:19,923 --> 01:31:20,324
+Okay.
+
+517
+01:31:24,115 --> 01:31:35,556
+Let's see. So we have talked about this. We have talked about this. We have talked about this.
+
+518
+01:31:38,156 --> 01:31:41,336
+Okay, let's see. Let's take a look at this one.
+
+519
+01:31:43,916 --> 01:31:50,496
+Okay. Now, as you see here,
+
+520
+01:31:52,275 --> 01:32:04,235
+In this class, I'm going to use the scanner object. Therefore, I need to have this import statement. Okay. I'm importing the scanner object, Java.util scanner object.
+
+521
+01:32:05,011 --> 01:32:09,751
+Now, within the main method in this class, I am creating a scanner object.
+
+522
+01:32:09,751 --> 01:32:24,691
+I'm writing something onto console, asking the user to enter a name, and I'm calling the next line method of the scanner object, which will wait until the user enters something.
+
+523
+01:32:31,028 --> 01:32:48,087
+Arkadaşlar, now you see that on the console, so I run, I just ran the program, on the console you see that at this line, at the line number 10, my program is waiting for user to enter something, okay?
+
+524
+01:32:48,448 --> 01:32:57,548
+Let's say the user enters something, in this case I just enter M, and then I clicked on the enter button.
+
+525
+01:32:58,547 --> 01:33:06,087
+Now, as you see, it retrieved the value that I gave at line number M.
+
+526
+01:33:06,547 --> 01:33:09,487
+And it assign it to the variable name.
+
+527
+01:33:09,907 --> 01:33:16,807
+And then it printed something else to the console, which is how old are you?
+
+528
+01:33:17,327 --> 01:33:23,907
+And then it is waiting another value for the user because I call the next method of the scanner object.
+
+529
+01:33:24,547 --> 01:33:24,667
+Okay.
+
+530
+01:33:24,987 --> 01:33:29,427
+Now, in this case, it is asking me to enter an integer value.
+
+531
+01:33:29,787 --> 01:33:30,028
+Okay.
+
+532
+01:33:30,227 --> 01:33:32,927
+Let's say I'm going to write a value.
+
+533
+01:33:32,927 --> 01:33:34,367
+Let's say I just wrote.
+
+534
+01:33:34,547 --> 01:33:51,427
+Okay. And I entered. So in that case, I was going to take the integer value and assign it to this integer variable. Okay. And then what it's going to do, it's going to print the
+
+535
+01:33:52,623 --> 01:34:12,384
+Arkadaşlar, the string value that I gave to it and it's going to print the value in this particular case, it's incrementing its value. It's going to print H plus one here.
+
+536
+01:34:13,171 --> 01:34:16,371
+Ok, now this is how we are using scanner object.
+
+537
+01:34:16,491 --> 01:34:23,371
+Remember, so we are using scanner object when we want to take an input from the user.
+
+538
+01:34:23,371 --> 01:34:24,231
+Ok.
+
+539
+01:34:30,163 --> 01:34:34,083
+Now, when you use scanner object, there is something that you should know.
+
+540
+01:34:35,583 --> 01:34:47,344
+So in this particular case, you see that first I call the next line, which means that first I wanted the user to enter first a string value.
+
+541
+01:34:47,344 --> 01:34:54,943
+After that, I wanted it to give me.
+
+542
+01:34:55,859 --> 01:35:17,719
+A primitive data type, okay, which is nextint. Now, if I wanted to do the vice versa, if I ask the user to enter a primitive data type, okay, if that's the case, what I need to do, I need to call the next line method, okay, without doing an assignment.
+
+543
+01:35:18,256 --> 01:35:46,256
+Then I need to call a next line. Arkadaşlar, scanner object'i kullanırken şöyle bir şey var. Eğer öncelikle bir string değerini user'dan alacaksanız, sonra primitive data type'ı alacaksanız bir sorun yok. Ama öncelikle bir primitive data type'ı alıp sonra string değerini alacaksanız, o durumda string değerini almadan bir sonraki...
+
+544
+01:35:46,256 --> 01:36:09,415
+Satıra geçiyor. Onu engellemek için de biz ne yapıyoruz? Öncelikle primitive data type'ı çağırmışsak, bu primitive data type'dan sonra next line'ı öncelikle bir çağırıyoruz. Ondan sonra artık bir sonra alacağımız string değeri için tekrardan next line'ı çağırıyoruz. Yani araya bir tane ekstra next line koyuyoruz.
+
+545
+01:36:09,415 --> 01:36:11,036
+So let's see how it works.
+
+546
+01:36:16,819 --> 01:36:35,639
+Okay. Now you see that it's asking me the age. So here I'm going to print one. Then it's going to ask me my name. Here I'm going to write a letter. Okay. Then it's going to print everything I just told you.
+
+547
+01:36:35,639 --> 01:36:44,819
+But remember, so the line 11 is important, but this is only important when you first ask the user to enter a primitive type.
+
+548
+01:36:44,819 --> 01:37:03,079
+First, okay. If the primitive type comes first, then you need to have a next line, okay, which the only purpose of this next line is so that we can catch the string value, which the user will give me next time, okay.
+
+549
+01:37:06,339 --> 01:37:07,019
+Okay.
+
+550
+01:37:09,427 --> 01:37:18,707
+Here again, so it is the same thing that I just explained to you. So here I'm...
+
+551
+01:37:18,963 --> 01:37:37,623
+Asking for the primitive data type right after that. Since the first value that I asked primitive data type, I call int next line without doing any assignment. Then I call the next line again. And this time I'm calling for in order to get its value. Okay.
+
+552
+01:37:40,123 --> 01:37:41,403
+Okay, so.
+
+553
+01:37:42,420 --> 01:37:46,939
+Now, this is the math class that I have shown you.
+
+554
+01:37:46,939 --> 01:37:48,579
+So remember the math class.
+
+555
+01:37:48,779 --> 01:37:52,300
+So I have the random method.
+
+556
+01:37:52,539 --> 01:37:54,099
+So let's run this.
+
+557
+01:37:54,340 --> 01:38:01,219
+So when I run this, the random method is going to give me a value between 0 and 1.
+
+558
+01:38:03,899 --> 01:38:09,359
+OK, as you see, the random method is giving me a value between 0 and 1.
+
+559
+01:38:10,355 --> 01:38:11,996
+Of course, it's a double value.
+
+560
+01:38:13,655 --> 01:38:15,735
+So what other operations that I have?
+
+561
+01:38:15,735 --> 01:38:24,175
+As you see, so here I have a round method.
+
+562
+01:38:24,724 --> 01:38:25,224
+Okay.
+
+563
+01:38:26,123 --> 01:38:33,923
+The round method is going to correctly round the value to whatever it needs to be rounded.
+
+564
+01:38:34,323 --> 01:38:36,384
+So the value is 3.5.
+
+565
+01:38:36,503 --> 01:38:37,064
+Let's see.
+
+566
+01:38:37,243 --> 01:38:39,304
+It should round it to number 4.
+
+567
+01:38:39,304 --> 01:38:39,944
+Okay.
+
+568
+01:38:41,163 --> 01:38:42,923
+So let's see.
+
+569
+01:38:43,783 --> 01:38:44,043
+Okay.
+
+570
+01:38:44,344 --> 01:38:48,484
+Now in this class, here is a random generator.
+
+571
+01:38:50,068 --> 01:38:59,768
+Okay, instead of a random method of the met class, this time I'm using the random class, which is under java.util package.
+
+572
+01:39:00,128 --> 01:39:07,908
+Here you see I'm importing the java.util star, which includes also the random class.
+
+573
+01:39:09,068 --> 01:39:15,884
+Since random class does not have static member fields, so I have to create a...
+
+574
+01:39:16,404 --> 01:39:37,064
+Object of the random class. Here I'm creating an object, assigning to the generated variable. And then I'm calling the next int method of the generator, okay, which should return to me a value between minus 2 to the power of 32, 2 plus 2 to the power of 32, okay?
+
+575
+01:39:37,716 --> 01:39:47,496
+And then I'm calling the absolute value method of math class, which should return the positive value, whatever integer that I give to this method.
+
+576
+01:39:48,016 --> 01:39:48,656
+Okay.
+
+577
+01:39:49,796 --> 01:39:54,756
+And then I'm calling another method, nextint method, but this time it's going to be bounded.
+
+578
+01:39:55,236 --> 01:40:00,156
+It will give me a value between 0 and 11.
+
+579
+01:40:00,416 --> 01:40:03,296
+Let's see how the program works.
+
+580
+01:40:06,323 --> 01:40:21,483
+Okay, so here the first thing is when you call the next int by default method, it's going to give me a random value between minus and plus 2 to the power of 32.
+
+581
+01:40:22,131 --> 01:40:36,612
+And if I give an integer value, which will then tell the random generator, okay, give me a positive integer value between 0 and 11, anything that you can, any randomly selected number between this range.
+
+582
+01:40:37,212 --> 01:40:39,671
+And here it is, it gives me number 3.
+
+583
+01:40:42,752 --> 01:40:43,391
+Okay.
+
+584
+01:40:44,971 --> 01:40:47,659
+Now, here is another...
+
+585
+01:40:48,115 --> 01:40:51,576
+Class, in this class, again, I'm using the random generator.
+
+586
+01:40:52,695 --> 01:40:56,836
+And here,
+
+587
+01:40:58,868 --> 01:41:21,768
+It's the same as the previous class, but this time, so I'm, after retrieving the next integer, when I asked, when I call the next integer with the default parameter 11, so I'm doing if and else on the value of the result, okay?
+
+588
+01:41:21,768 --> 01:41:26,868
+If the value is zero, then I have to write this. If the value is one, I have to write this.
+
+589
+01:41:26,868 --> 01:41:27,828
+I have to write this.
+
+590
+01:41:27,908 --> 01:41:30,628
+If it is anything bigger than this, I have to write this.
+
+591
+01:41:30,688 --> 01:41:31,268
+So let's see.
+
+592
+01:41:34,899 --> 01:41:48,379
+Okay, so the resulting value is 3, so therefore it goes to the third statement because it's not 0, it's not 1.
+
+593
+01:41:49,379 --> 01:41:54,499
+Then since it's 3, it's going to execute the third statement.
+
+594
+01:41:56,404 --> 01:42:16,364
+Let's take a look at this one. I have shown you this in the slides. So here I have two string, okay, and I'm going to call the compare two. So when I call this, if the second one is bigger than the first one in the lexical graphical order, it's going to give me a minus value.
+
+595
+01:42:19,796 --> 01:42:20,856
+A minus value.
+
+596
+01:42:21,136 --> 01:42:21,256
+Okay.
+
+597
+01:42:21,776 --> 01:42:26,816
+If it is vice versa, then it's going to give me a plus value.
+
+598
+01:42:26,996 --> 01:42:30,776
+If they are equal to each other, then it's going to give me a zero.
+
+599
+01:42:32,500 --> 01:42:39,359
+Okay, now I have shown you in the slides, I have shown you this in the slides, so let's execute this.
+
+600
+01:42:39,359 --> 01:42:48,220
+So in the first statement, string A contains string B. It's false because Istanbul does not have Yieldis in it.
+
+601
+01:42:48,819 --> 01:42:59,920
+So I assign TAN to string B. I check whether string A includes string B. That's true because now TAN is within the Istanbul.
+
+602
+01:43:00,500 --> 01:43:08,060
+Then I do the uppercase, which in this case I make the small letters as capital letters.
+
+603
+01:43:10,319 --> 01:43:11,119
+Okay.
+
+604
+01:43:11,520 --> 01:43:18,880
+And then I'm writing the value ton.
+
+605
+01:43:19,399 --> 01:43:21,460
+Okay.
+
+606
+01:43:21,579 --> 01:43:22,444
+Which is...
+
+607
+01:43:22,452 --> 01:43:30,131
+which is the uppercase. Then I check whether a string A includes string B. Then the value is false. Okay.
+
+608
+01:43:31,291 --> 01:43:38,631
+So all of this is what I explained to you in the slides. Okay.
+
+609
+01:43:39,539 --> 01:43:40,059
+Yes.
+
+610
+01:43:40,439 --> 01:43:49,019
+Bu uppercase fonksiyonunu string b'ye tekrar atamadığımız için küçük mü kalıyor yoksa o fonksiyonu çağırdığımızda o obje'nin harflerini büyük yapıyor mu?
+
+611
+01:43:49,279 --> 01:43:51,979
+String diye mi? Burada tan küçük kalmış sanki de.
+
+612
+01:43:53,899 --> 01:44:03,239
+To uppercase dediğim zaman tanı büyük hale getiriyor. Tanı büyük hale getirdiği zaman
+
+613
+01:44:03,891 --> 01:44:08,411
+Burada mesela yazdırmışım tekrar şeye bakalım.
+
+614
+01:44:10,831 --> 01:44:15,671
+Hocam ama alttaki fonksiyondan farkı yok yani orada bir atama var bir de üstüne.
+
+615
+01:44:17,152 --> 01:44:18,031
+İki satır altından.
+
+616
+01:44:20,431 --> 01:44:20,971
+Okey.
+
+617
+01:44:22,804 --> 01:44:49,923
+Okey, evet, haklısın. Yani burada ben atama yapmamışım. Yani uppercase'e getirmişim. Bu bana bir uppercase değeri döndürüyor. Atamadığım için hala küçük yazdırıyorum ve hala içinde var gözüküyor. Burada ise atamayı gerçekleştiriyorum string pay'e. Artık string pay'de büyük tan var ve kontrol ettiğimde bu sefer false çıkıyor. Tamam, orayı atalım. Haklısın. Teşekkür ederim.
+
+618
+01:44:50,387 --> 01:44:50,967
+Çalışı.
+
+619
+01:44:52,167 --> 01:44:58,967
+Okay, so let's now stop sharing this and then I'm going to...
+
+620
+01:45:56,692 --> 01:46:00,652
+Okay. Now we have talked all about this.
+
+621
+01:46:07,604 --> 01:46:12,084
+Okay, now, so now take a look at this code on the screen.
+
+622
+01:46:13,124 --> 01:46:32,804
+Here, I have a car class, and within this, I have one public global parameters, which is defined as private, which one global parameter, and I have set, I have one constructor here, one parameter constructor.
+
+623
+01:46:34,003 --> 01:46:37,264
+And then I have getter and setter methods.
+
+624
+01:46:37,743 --> 01:46:45,384
+Okay, remember, so as a convention, we are defining all the global member fields as private.
+
+625
+01:46:45,603 --> 01:46:50,143
+And for all the private member fields, we have getter and setter methods.
+
+626
+01:46:51,188 --> 01:46:53,908
+And I have also one method here, introduce self.
+
+627
+01:46:54,347 --> 01:46:54,488
+Okay.
+
+628
+01:46:54,688 --> 01:46:56,468
+This method does not return anything.
+
+629
+01:46:56,847 --> 01:46:58,408
+Therefore, I have void method.
+
+630
+01:46:58,908 --> 01:47:04,088
+Now, within the main method, as you see, I'm defining a variable a car.
+
+631
+01:47:04,807 --> 01:47:05,488
+Okay.
+
+632
+01:47:05,688 --> 01:47:10,347
+And then I'm creating an object of the scanner object.
+
+633
+01:47:11,068 --> 01:47:15,408
+So never forget scanner object takes system.in by default.
+
+634
+01:47:16,128 --> 01:47:16,288
+Okay.
+
+635
+01:47:16,756 --> 01:47:26,115
+And when you create an object of the scanner, I'm assigning to this object reference to this variable input where the type of the input is also scanner.
+
+636
+01:47:27,056 --> 01:47:27,296
+Okay.
+
+637
+01:47:27,655 --> 01:47:34,596
+And then I'm writing something to console so that user enters a value.
+
+638
+01:47:35,496 --> 01:47:41,296
+And then by calling the next line methods of the input object.
+
+639
+01:47:41,976 --> 01:47:42,155
+Okay.
+
+640
+01:47:43,475 --> 01:47:50,155
+I'm going to wait, the cursor is going to wait on the console so that the user enters something.
+
+641
+01:47:50,675 --> 01:48:00,575
+And when the user enters a string value, it will retrieve the string value and give this constructor car, okay, as an input.
+
+642
+01:48:01,011 --> 01:48:07,811
+Now here, the constructor car will retrieve the string value which the user entered as an input.
+
+643
+01:48:08,471 --> 01:48:12,452
+And with the new keyword, I will create an object here.
+
+644
+01:48:13,112 --> 01:48:17,431
+And I will assign the reference of this object to this variable here.
+
+645
+01:48:18,431 --> 01:48:24,152
+And then I will call introduce self method of this reference.
+
+646
+01:48:24,640 --> 01:48:48,220
+Okay, which will call this method. This method, so what it will do, it will write this here and it will call the getPlate value and getPlate will return to me the value of plate, which is already initialized by the initial license plate number, which is entered by the user.
+
+647
+01:48:49,171 --> 01:48:58,171
+And once I do this, and then, so I need to close the scanner object, therefore, input.close.
+
+648
+01:48:58,371 --> 01:49:06,651
+Every time I use the scanner object, I have to call the close method before I finish my code.
+
+649
+01:49:07,651 --> 01:49:11,231
+Okay, so this is an example how we are using the scanner object.
+
+650
+01:49:16,115 --> 01:49:16,676
+Okey.
+
+651
+01:49:21,939 --> 01:49:28,439
+So far, do you have any questions? Arkadaşlar, bu zaman ne kadar sorunuz var mıdır?
+
+652
+01:49:32,115 --> 01:49:45,136
+Hocam, bu skanırı kapatmamızın özel bir sebebi var mı? Yani mesela C'de eğer ki mallocları kapatmazsak belli bir sesörün belleği dolduruyordu. Burada mesela kapatmamamızın getirdiği dezavantaj ne ya da niye kapatıyoruz?
+
+653
+01:49:46,136 --> 01:49:59,136
+Şimdi bunu şu şekilde düşünebiliriz. Bu system.in bir de objesi kullanıcı, şimdi bir physical memory var bilgisayar.
+
+654
+01:50:00,000 --> 01:50:09,859
+Bir de bu physical memory dışında bizim veri sağlayıcımız olan işte physical disk var.
+
+655
+01:50:10,420 --> 01:50:29,900
+İşte keyboard var. Yani bilgisayarın memorisine data taşıyacağımız farklı device'lar var. Bizim yazmış olduğumuz kodlar instruction'lara dönüşüyor ve bu instruction'lara dönüştükten sonra physical memory de yerlerini alıyor.
+
+656
+01:50:37,568 --> 01:50:52,088
+Programımızın instructionlarını bu CPU'nun işleyebilmesi için bu instructionları ne yapıyor? CPU'nun register'ına getiriyor ve CPU bunları satır satır execute ediyor.
+
+657
+01:50:52,692 --> 01:51:10,231
+Şimdi benim bu physical memory'e bir veri getirebilmem için, kullanıcı tarafından verilmiş bir şeyi getirebilmem için bir tane pipeline açmam lazım, bir tane channel açmam lazım.
+
+658
+01:51:20,692 --> 01:51:21,411
+O...
+
+659
+01:51:21,460 --> 01:51:24,859
+Data aktarımını sağlayacak bir obje yaratmam lazım.
+
+660
+01:51:25,519 --> 01:51:27,179
+Şimdi bu objeyi ne yaptım?
+
+661
+01:51:28,019 --> 01:51:30,420
+Ben Scanner objesiyle yarattım.
+
+662
+01:51:30,519 --> 01:51:34,259
+Aslında Scanner objesinin içerisinde system.in ile yarattım.
+
+663
+01:51:34,519 --> 01:51:36,819
+Yani input stream diye bir class var.
+
+664
+01:51:37,239 --> 01:51:39,579
+In, input stream'in objesi aslında.
+
+665
+01:51:39,579 --> 01:51:45,719
+Ama onu da Scanner objesinin içerisine bir global member field olarak koymuşum.
+
+666
+01:51:45,819 --> 01:51:46,179
+Tamam mı?
+
+667
+01:51:46,539 --> 01:51:49,460
+Şimdi ben ne zamanki Scanner objesini açtığım zaman...
+
+668
+01:51:49,460 --> 01:52:07,500
+Şu an ben bu çanalı açıyorum. Ne zaman ki biz input stream ve output stream yani bir file sistemde bir file açtığımız zaman ya da bir kullanıcıdan bir data alacağımız zaman bu input streamleri açtığımızda bunları aynı zamanda kapatmak zorundayız.
+
+669
+01:52:15,344 --> 01:52:23,663
+Tekrardan bu işi neye bırakmış oluyorum eğer bunu kendim yapmayacak olursam Java Virtual Machine'e bırakmış oluyorum.
+
+670
+01:52:23,663 --> 01:52:40,163
+Yani Java Virtual Machine açılmış referanslı duran Java Virtual Machine dünyası içerisinde hala bir output device ile bir şeyler bekleyen bir tane objeyi boş yere tutmuş olacak.
+
+671
+01:52:43,344 --> 01:52:49,184
+tutmuş olduğum objelerin bu dış dünyadan veri bekleme durumlarını mutlaka kapatmalıyım.
+
+672
+01:52:49,323 --> 01:52:59,483
+Kapatmazsam bu durumda ne oluyor? Benim programımın dışarıdan herhangi bir ata kalması, dışarıdan dış veri gelmesi bu gibi durumları programımı açmış oluyorum.
+
+673
+01:52:59,891 --> 01:53:15,212
+O yüzden input stream kullandığım zaman, output stream kullandığım zaman benim programımla output device'larla veri alan ya da veri veren ne zamanki bir channel açtım mutlaka close metodunu çağırmam gerekiyor.
+
+674
+01:53:16,171 --> 01:53:17,731
+Anladım hocam, teşekkür ederim.
+
+675
+01:53:20,351 --> 01:53:20,731
+Ok.
+
+676
+01:53:22,731 --> 01:53:24,712
+Any more questions?
+
+677
+01:53:29,908 --> 01:53:48,648
+Bu arada tekrar hatırlatayım arkadaşlar. Lütfen ister Eclipse, ister NetBeans, ister IntelliC, hangi editörü tercih ediyorsanız bunu bilgisayarınıza indirin, kurun. Ders hızlı bir şekilde ilerliyor.
+
+678
+01:53:49,648 --> 01:53:57,428
+Çok yakın bir zamanda ilk vizenizle karşılaşacaksınız ve vizelerde kod yazmanızı isteyeceğiz.
+
+679
+01:53:57,807 --> 01:54:02,167
+Yine laboratuvarlarınız başladı. Laboratuvarlarda kod yazmanızı istiyoruz.
+
+680
+01:54:03,127 --> 01:54:11,087
+Bu editörleri indirin ve bunlar üzerinde benim sınıfta işlemiş olduğum kodları indirip,
+
+681
+01:54:11,087 --> 01:54:16,447
+aynı ben nasıl derse size Eclipse üzerinde gösteriyorsam bunları çalıştırın.
+
+682
+01:54:17,027 --> 01:54:19,507
+Nasıl çalıştığına bakın. Kodları değiştirin.
+
+683
+01:54:19,828 --> 01:54:25,088
+üzerinde çalıştığımız yeni öğrendiğimiz sınıfların metotlarını burada deneyin.
+
+684
+01:54:25,588 --> 01:54:27,128
+It is highly important.
+
+685
+01:54:28,048 --> 01:54:28,268
+Okay?
+
+686
+01:54:28,708 --> 01:54:30,248
+If you do not do this,
+
+687
+01:54:30,848 --> 01:54:32,408
+when during the exam,
+
+688
+01:54:32,608 --> 01:54:34,288
+if you are asked to write code,
+
+689
+01:54:34,728 --> 01:54:34,988
+okay,
+
+690
+01:54:35,648 --> 01:54:37,568
+we will assume that you already
+
+691
+01:54:38,131 --> 01:54:56,091
+Arkadaşlar, are accustomed to write the methods and the classes, okay, how to declare a method, private, public, protected, how to write, how to write the main method, etc.
+
+692
+01:54:56,091 --> 01:55:05,411
+We will assume that you will already, we'll be able to write this, okay, and then we will focus on the problem.
+
+693
+01:55:05,908 --> 01:55:22,387
+Okey. Yani sınavda problem üzerinde mi odaklanacaksınız yoksa ben bunları nasıl yazacaktım? Bunların acaba işte static'i Void'dan önce mi yazıyordum yoksa Void'dan sonra mı yazıyordum? Acaba main metodunda static var mıydı yok muydu?
+
+694
+01:55:22,768 --> 01:55:47,387
+Bunlarla uğraşmanızı istemiyorum. Bunları zaten kod yazarak artık alışmanızı istiyorum. O yüzden lütfen bunu tekrar tekrar söylüyorum. Neredeyse her ders söylüyorum. Yapın. Çünkü bunu yaptığınızı varsayarak size sınavlar hazırlanıyor. Size bir problem vereceğiz, bir description vereceğiz ya da bir class diagram vereceğiz. Diyeceğiz ki al bunun kodunu yaz.
+
+695
+01:55:51,444 --> 01:56:01,344
+Yapmanızı istediğimiz şey oradaki problemi çözerek o kodu yazmak. O yüzden lütfen bu söylediğimi aksatmayın.
+
+696
+01:56:06,100 --> 01:56:10,300
+Okay, so let's see.
+
+697
+01:56:24,180 --> 01:56:48,340
+Okay. I think I'm going to stop here. I'm going to cover the method parameters and control flow in the next lecture. And then I will go into the object relations in the next lecture. Arkadaşlar, bu hafta galiba ilk laboratuvarlarınızı oldunuz. Derslere girmeye başladınız.
+
+698
+01:56:49,363 --> 01:56:53,843
+Şu ana kadar hiç laplara girmeyen var mı?
+
+699
+01:57:01,043 --> 01:57:03,303
+Hocam bu hafta lab değil de uygulama vardı.
+
+700
+01:57:03,963 --> 01:57:05,443
+Bu hafta uygulamayla başladınız.
+
+701
+01:57:05,723 --> 01:57:05,923
+Evet.
+
+702
+01:57:06,183 --> 01:57:08,363
+Hocanız ekranda size şey yaptı.
+
+703
+01:57:09,043 --> 01:57:10,163
+Örnek bir kod yazdı.
+
+704
+01:57:10,803 --> 01:57:11,363
+Okey, tamam.
+
+705
+01:57:12,723 --> 01:57:12,983
+Okey.
+
+706
+01:57:13,643 --> 01:57:15,903
+Şimdi bu artık böyle devam edecek.
+
+707
+01:57:17,323 --> 01:57:24,123
+Gelecek hafta ben artık object relations'lara girmiş olurum arkadaşlar.
+
+708
+01:57:24,756 --> 01:57:40,296
+Ondan sonra birinci vizeye kadar işleyeceğiniz konuları, ben işlemeniz gereken konuları olabildiğince hızlı anlatmaya çalışacağım. Ondan sonra da örnekler üzerinde duracağız.
+
+709
+01:57:43,028 --> 01:58:02,268
+Tamam, bugünlük sorunuz yoksa bugünlük burada dersi sonlandıralım. Sizlerden isteğim gelecek haftaya kadar bu konuştuğumuz classları indirin ve kodları indirin ve Eclipse üzerinde şu ana kadar konuştuğumuz konuları lütfen çalışın.
+
+710
+01:58:05,108 --> 01:58:08,228
+Hocam, size bir konuda danışmak istiyorum da mail mi atmam gerekiyor?
+
+711
+01:58:09,368 --> 01:58:10,387
+Mail atabilirsin.
+
+712
+01:58:10,931 --> 01:58:12,231
+Tamamdır, teşekkür ederim.
+
+713
+01:58:12,971 --> 01:58:13,411
+Tamamdır.
+
+714
+01:58:13,871 --> 01:58:17,231
+Okey. Arkadaşlar, başka sorunuz yoksa bugünlük bu kadar.
+
+715
+01:58:18,192 --> 01:58:19,391
+Gelecek hafta görüşmek üzere.
+
+716
+01:58:23,988 --> 01:58:26,568
+Katılımınız için teşekkür ederim. İyi dersler arkadaşlar.

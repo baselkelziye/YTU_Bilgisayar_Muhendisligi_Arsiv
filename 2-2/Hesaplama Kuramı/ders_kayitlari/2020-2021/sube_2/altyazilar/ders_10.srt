@@ -1,0 +1,2367 @@
+1
+00:03:43,668 --> 00:03:46,487
+Arkadaşlar merhabalar sesim geliyor mu?
+
+2
+00:03:48,527 --> 00:03:49,807
+Evet hocam.
+
+3
+00:03:55,947 --> 00:03:57,487
+Nasılsınız?
+
+4
+00:04:00,307 --> 00:04:04,407
+Tekrar ısınabilirsiniz.
+
+5
+00:04:08,247 --> 00:04:11,827
+Uzun bir tatilden sonra.
+
+6
+00:04:18,420 --> 00:04:23,099
+pek bir tatil gibi değildi hocam daha çok projelerle eksik vermediği için.
+
+7
+00:04:23,099 --> 00:04:26,099
+Doğru. Doğrudur.
+
+8
+00:04:28,139 --> 00:04:32,119
+Sınavlardan hemen sonraki haftayı da projeleri harcadınız değil mi?
+
+9
+00:04:36,307 --> 00:04:41,147
+Neyse bir şey kalmadı bu ne oldu? 11. haftadayız değil mi?
+
+10
+00:04:44,755 --> 00:05:08,255
+Son 4 hafta. Evet. Bu 11, 12, 13, 14. Şimdi quizimiz var bir tane yapmamız gereken. Onu önümüzdeki hafta değil de sonraki haftaya düşünüyoruz. 13. haftaya. Bir de finalimiz var sınav olarak. 4 haftada ders işleyeceğiz.
+
+11
+00:05:08,255 --> 00:05:16,956
+başka bir tatil vesaire gözün görünmüyor. Hastalık vesaire olması.
+
+12
+00:05:30,579 --> 00:05:50,579
+Şimdi en son context-free grammar, gramerleri işlemiştik. Bugün pushdown automaton denilen bir yapıyı göreceğiz. Bunlar context-free gramerlerle eşdeğer.
+
+13
+00:05:50,579 --> 00:05:57,579
+Söyle start.
+
+14
+00:06:05,588 --> 00:06:09,187
+pushdown automata
+
+15
+00:06:21,492 --> 00:06:32,492
+These are abbreviated as PDA, by the way. So usually I will just say PDA.
+
+16
+00:06:34,771 --> 00:06:38,851
+pushdown automaton or PD.
+
+17
+00:06:38,851 --> 00:06:51,091
+So pushdown automaton is very similar to automata we have already seen.
+
+18
+00:06:51,091 --> 00:06:53,411
+So it has these states.
+
+19
+00:06:57,331 --> 00:07:21,012
+as usual. And between the states, there are transitions. And some of these states are accept states, some reject states, and there is a starting state. Now, also, we have an input tape.
+
+20
+00:07:25,396 --> 00:07:27,396
+or input string actually.
+
+21
+00:07:38,451 --> 00:07:49,651
+And here we have states. Now what is new in pushdown automata is we have a
+
+22
+00:07:59,827 --> 00:08:02,827
+So we have this stuck.
+
+23
+00:08:06,132 --> 00:08:34,511
+And you remember what stack is? Stack is a data structure that you put something on top, let's say, and then you pop it, pop from top. So it's a first in, sorry, last in, first out structure.
+
+24
+00:08:36,132 --> 00:08:44,771
+last in, first out structure.
+
+25
+00:08:47,731 --> 00:08:49,332
+So it's a LIFO.
+
+26
+00:08:59,635 --> 00:09:03,975
+You already know what stack is. So, uh,
+
+27
+00:09:06,475 --> 00:09:09,875
+Now, at the beginning, uh,
+
+28
+00:09:14,644 --> 00:09:42,644
+There is some initial special symbol on the stack usually. So at time zero, before we started doing any computation, usually at the top of stack, we only have this special symbol.
+
+29
+00:09:42,772 --> 00:09:58,772
+So at time zero, the stack of the PDA has a special,
+
+30
+00:10:03,155 --> 00:10:06,155
+symbol.
+
+31
+00:10:08,947 --> 00:10:09,947
+in it. And in this course, in general, we will use a dollar symbol, but you, it doesn't have to be dollar. And we will write or pushdown automata such that when there is dollar on the stack, the pushdown automata will understand that it is at the end of
+
+32
+00:10:38,947 --> 00:10:39,947
+stack.
+
+33
+00:10:39,947 --> 00:10:40,947
+Okay.
+
+34
+00:10:40,947 --> 00:10:41,947
+Uh,
+
+35
+00:10:41,947 --> 00:10:42,947
+.
+
+36
+00:10:46,899 --> 00:11:14,899
+We will write or pushdown automata that way. Okay. Or automata that way. And, so in addition to read right head on the input string, you can assume there is a stack head.
+
+37
+00:11:15,668 --> 00:11:23,668
+But it shows always the last, last inserted item. So it's always at the top.
+
+38
+00:11:29,668 --> 00:11:32,668
+Now the transitions, these transitions
+
+39
+00:11:35,668 --> 00:11:38,668
+now have this stuck
+
+40
+00:11:39,668 --> 00:11:44,668
+in their, in their definitions. So you might have
+
+41
+00:11:45,668 --> 00:11:50,668
+You might have, let's say, some Q1.
+
+42
+00:11:53,668 --> 00:11:57,668
+And that will transition to some Q2.
+
+43
+00:12:00,668 --> 00:12:10,668
+Here, in the previous automata, like DFA's, we were just writing A or B, whatever.
+
+44
+00:12:10,668 --> 00:12:16,668
+B, whatever, we were saying if we saw A in the input,
+
+45
+00:12:20,307 --> 00:12:45,307
+We can go to Q2. But now in pushdown automata, we also need to think about what do we have, what we have in this stack. Okay. So to be able to transition, we also...
+
+46
+00:12:45,491 --> 00:13:14,491
+Let's say, if we have B at the top of the stack, we must have B, okay, at the top of the stack for this transition, I am saying. And in addition to that, we also can specify what we will, so B will popped, okay. So this transition to happen, there must be B.
+
+47
+00:13:14,491 --> 00:13:44,172
+also, if this transition happens, B will be popped. Okay. This will be popped. And we can specify some value like C. And that's, that value will be pushed to the stack. Okay. Pushed down to the stack. So here,
+
+48
+00:13:44,491 --> 00:14:12,011
+For example, in this example, if the situation is like this, after this transition happens, we try that we'll move to the next symbol. And in the stack, B will be popped. And instead of that,
+
+49
+00:14:12,011 --> 00:14:14,891
+We'll see
+
+50
+00:14:24,019 --> 00:14:38,019
+C, this C. So a transition really in this case has three things now, input symbol,
+
+51
+00:14:40,980 --> 00:14:49,980
+and you can say this one, pop symbol.
+
+52
+00:14:49,299 --> 00:15:02,579
+and you can say to this one, push symbol. So you will push this symbol into the stack.
+
+53
+00:15:08,371 --> 00:15:14,371
+Now, we don't have to always push or pop something
+
+54
+00:15:16,371 --> 00:15:35,371
+in these transitions and we can show that with null. So you can have null in any of these instead of any of these ABCs. So instead of input symbol, you can have null.
+
+55
+00:15:35,371 --> 00:16:05,351
+If you have null, that means the transition can or will occur without reading anything from the input. And if you have pop, if you have null symbol in the pop place, that means we will not pop anything from the stack. And if you have null on the push symbol,
+
+56
+00:16:05,371 --> 00:16:17,371
+That means we will not push anything. So really you can have null in all of this. So let me write that here.
+
+57
+00:16:27,635 --> 00:16:28,635
+input, pop, or push symbols can be null. And in that case, then we do not, or the pushdown
+
+58
+00:16:57,635 --> 00:16:58,996
+automaton doesn't.
+
+59
+00:17:02,836 --> 00:17:22,155
+pushdown automata, does not read the input, does not pop, or does not push. So we have this comma in English.
+
+60
+00:17:23,763 --> 00:17:50,403
+Okay. And in fact, you can have more like, null can be all three of them or any two of them or any one of them. So you can have something like,
+
+61
+00:17:51,476 --> 00:18:16,476
+something like Q1. And let's say reads A, does not pop anything from the stack, does not push anything to the stack. So you can have such a transition and when this happens,
+
+62
+00:18:17,299 --> 00:18:41,299
+Let's say you have a dollar, A, B here in the stack. When this transition happens, nothing changes in the stack. Right? So B, A, dollar.
+
+63
+00:18:44,723 --> 00:18:58,003
+Now, what happens when the automaton attempts to pop from empty stack? So...
+
+64
+00:19:03,092 --> 00:19:06,092
+So if
+
+65
+00:19:08,980 --> 00:19:12,339
+if we have a stack in the stack, let's say,
+
+66
+00:19:18,420 --> 00:19:38,420
+nothing in the stack. So this is an empty stack, let's say. And we have a transition like this. Let's say you have your Q1 and you want to pop something.
+
+67
+00:19:38,420 --> 00:19:44,420
+.
+
+68
+00:19:41,619 --> 00:19:51,619
+So whatever, it doesn't really matter, but here you want to pop something.
+
+69
+00:19:57,332 --> 00:20:25,611
+You want to pop B from the empty stack, but the stack is empty. So there is nothing there. In this case, the automaton or PDA, pushdown automata, halts and rejects the input.
+
+70
+00:20:31,220 --> 00:20:59,419
+So, but when designing or pushdown automata, we will design them such that this will never happen. So usually at the bottom we will have a dollar and we will make sure to use dollar only at the end of the computations.
+
+71
+00:21:02,867 --> 00:21:30,867
+You might have noticed that I said that input symbol can be null. So you might remember that that means the automaton is non-deterministic. And in fact, that's right in this case, pushdown automata are non-deterministic.
+
+72
+00:21:44,180 --> 00:21:59,939
+and if you, what was non-determinism? Let's remember that. One thing is for any given
+
+73
+00:22:04,627 --> 00:22:31,888
+input, you might have the same, you might, or your transitions might go to different states. So you might have something like read A, pop B, push C, and transition to Q2. At the same time, you can have the same
+
+74
+00:22:34,627 --> 00:22:49,627
+same transition, let's say parameters, but you can go to Q3, Q3.
+
+75
+00:22:49,627 --> 00:22:51,827
+So this is a load.
+
+76
+00:22:55,508 --> 00:23:24,508
+Okay, no problem here. And another non-deterministic situation is, if you remember, you might transition without reading anything. So you might have something like Q1 transitions to Q2.
+
+77
+00:23:25,508 --> 00:23:52,307
+without reading anything from the, let's say something like this, without reading anything from the input. So again, this is allowed to. So these two properties make the pushdown automata non-deterministic. And if you remember,
+
+78
+00:23:59,508 --> 00:24:00,508
+In the case of non-determinism, what happens is like the computation machine, let's say, it replicates itself, right? So recall that
+
+79
+00:24:21,652 --> 00:24:32,452
+You call that in non-deterministic
+
+80
+00:24:37,875 --> 00:24:39,875
+transitions,
+
+81
+00:24:44,596 --> 00:24:46,596
+The machine
+
+82
+00:24:49,844 --> 00:25:14,844
+replicates itself. So it's like there are these two now parallel computations. So let's say you have this very simple machine, let's say.
+
+83
+00:25:15,443 --> 00:25:22,443
+So, let's say this is a pushdown automata.
+
+84
+00:25:31,604 --> 00:25:57,604
+and let's say, let it be very simple. So it reads A from the input and writes B, pops B, writes C. And it has this transition.
+
+85
+00:26:01,044 --> 00:26:03,044
+and so now transition, let's say.
+
+86
+00:26:07,683 --> 00:26:08,683
+And.
+
+87
+00:26:11,163 --> 00:26:13,243
+It, let's say, reads.
+
+88
+00:26:15,044 --> 00:26:17,603
+Nothing and writes.
+
+89
+00:26:19,363 --> 00:26:20,523
+See, let's see.
+
+90
+00:26:21,603 --> 00:26:23,403
+OK, now.
+
+91
+00:26:24,443 --> 00:26:28,603
+And here.
+
+92
+00:26:32,243 --> 00:26:33,243
+In addition to this, in a pushdown automata, we have this stack, right? Okay. And let's say we are reading some
+
+93
+00:26:51,988 --> 00:27:09,988
+input. And let's say we are here. Now at this point, what happens is, this is like a machine branch one.
+
+94
+00:27:21,523 --> 00:27:28,523
+and let's say here we have, let's say, an A. Sorry.
+
+95
+00:27:31,059 --> 00:27:44,739
+Okay. Now the machine replicates itself when this transition happens. Okay. So that means, and this transition happens without
+
+96
+00:27:48,339 --> 00:27:53,139
+reading any input. So that means now we have two machines.
+
+97
+00:27:55,299 --> 00:27:58,579
+And the new machine is similar. So
+
+98
+00:28:01,059 --> 00:28:04,659
+but it's
+
+99
+00:28:08,307 --> 00:28:11,307
+It's a current.
+
+100
+00:28:14,307 --> 00:28:20,307
+Let me write this way. It's current state is, so this is Q2.
+
+101
+00:28:22,307 --> 00:28:24,307
+So let's say,
+
+102
+00:28:26,307 --> 00:28:28,307
+let's say,
+
+103
+00:28:30,324 --> 00:28:35,324
+So we were here, let's see.
+
+104
+00:28:35,763 --> 00:28:37,124
+and the
+
+105
+00:28:45,299 --> 00:29:12,299
+Let's write A, B, C, A, C, C, let's see. Now, at this point, we are on Q1, let's say. Now, the machine, so we can, let us write this this way.
+
+106
+00:29:17,556 --> 00:29:42,556
+We are on state Q1. And the unread input is, let's say, BCACC. BCACC. And the stack contents are A and $.
+
+107
+00:29:49,236 --> 00:30:17,236
+So I kind of wrote the essential information about the current state, current situation. And this is, what is it called? Instant, instanti, instantiations, instantiations.
+
+108
+00:30:25,364 --> 00:30:31,364
+How do you read this?
+
+109
+00:30:33,971 --> 00:30:37,571
+I'll write to Google, instant...
+
+110
+00:30:38,372 --> 00:30:39,571
+...taniyavs.
+
+111
+00:30:46,163 --> 00:30:57,163
+instantaneous. Okay, so this is called an instantaneous.
+
+112
+00:30:58,612 --> 00:31:08,612
+instantaneous description.
+
+113
+00:31:11,380 --> 00:31:39,579
+OK. So before this transition occurs, the description of our machine was this. Now, since this transition happens, what happens is now we have two instantaneous descriptions because we have two machines.
+
+114
+00:31:39,579 --> 00:32:08,979
+and the new machine will be, what will it be? Q2. It will be on state Q2 after this transition. And it pops nothing, but so it doesn't read anything too. So the remaining input doesn't change. So B, C, A, C, C.
+
+115
+00:32:09,579 --> 00:32:36,459
+So, and finally, it doesn't pop anything from the stack, but it pushes a C there. So the stack will be CA$ now. So we have two machines. Machine one,
+
+116
+00:32:39,579 --> 00:32:41,579
+and this is all machine too.
+
+117
+00:32:44,788 --> 00:33:11,788
+And each of these machines will continue running in parallel. Okay. We will come to these instant instantaneous descriptions later.
+
+118
+00:33:30,132 --> 00:33:33,011
+So, uh,
+
+119
+00:33:35,571 --> 00:34:02,571
+Now, if, if an input is accepted by any of these machines, it is accepted, right? So we have these parallel machines. So we have these parallel.
+
+120
+00:33:58,708 --> 00:34:25,347
+machines. And if any of the replicas are original, so if any of the machine branches
+
+121
+00:34:21,300 --> 00:34:23,939
+If any of the machines accept,
+
+122
+00:34:29,059 --> 00:34:37,339
+we say, pushdown automata accepts, the input.
+
+123
+00:34:39,499 --> 00:34:40,339
+Okay.
+
+124
+00:34:51,092 --> 00:34:54,291
+and the
+
+125
+00:34:55,956 --> 00:35:01,956
+Let's see some examples of pushdown automatas.
+
+126
+00:35:04,916 --> 00:35:05,875
+So,
+
+127
+00:35:21,364 --> 00:35:26,364
+example, pushdown automata.
+
+128
+00:35:34,356 --> 00:35:38,435
+Here we will see a machine
+
+129
+00:35:41,375 --> 00:35:44,555
+Such that language of machine is
+
+130
+00:35:48,455 --> 00:35:51,515
+A to the N, B to the N
+
+131
+00:35:52,735 --> 00:35:55,575
+Such that N is greater than
+
+132
+00:35:57,875 --> 00:35:59,215
+or equal to zero.
+
+133
+00:36:04,356 --> 00:36:10,356
+So let's look at this, this pushdown automata.
+
+134
+00:36:10,356 --> 00:36:17,356
+M is, so we have a Q0.
+
+135
+00:36:17,356 --> 00:36:20,356
+It's an accepting state.
+
+136
+00:36:20,356 --> 00:36:25,356
+We have final state Q3.
+
+137
+00:36:25,356 --> 00:36:28,356
+Again, it's an accepting state.
+
+138
+00:36:28,356 --> 00:36:32,356
+We have Q1 and Q2.
+
+139
+00:36:32,356 --> 00:36:42,356
+these are non-accepting states and our transitions are
+
+140
+00:36:48,275 --> 00:37:10,275
+like this, we have this transition where everything is null. And we have a loop here. Read an A on the input. Pop nothing. Push that A.
+
+141
+00:37:10,275 --> 00:37:22,695
+and if we see, so we continue to do this as long as we have A's.
+
+142
+00:37:23,616 --> 00:37:34,415
+And then if we see a B, we pop an A and we push nothing.
+
+143
+00:37:36,356 --> 00:37:39,375
+And we continue doing this.
+
+144
+00:37:39,375 --> 00:37:55,535
+As long as we see these B's here, we pop those A's, we have pushed to the stack previously, and we put nothing there.
+
+145
+00:37:56,535 --> 00:38:08,095
+And we will do this as long as we have B's there.
+
+146
+00:38:08,095 --> 00:38:33,856
+So how are we going to get out of this loop? Well, we have here this check. So we don't need to read anything for this transition. But if the stack has dollars, that means we are at the end of stack.
+
+147
+00:38:33,855 --> 00:39:02,635
+remember dollar for our course is a special symbol. It doesn't have to be dollar, but we say it will be dollar. It says we are at the end of the stack. So each time we read anything from the input, there is kind of this check. It says that,
+
+148
+00:39:02,636 --> 00:39:03,915
+Okay.
+
+149
+00:39:08,307 --> 00:39:11,307
+Are we,
+
+150
+00:39:14,516 --> 00:39:34,075
+are we at the end of stack? And if we are at the end of the stack, we go to Q3. And if at that point we already finished the input, we say we accept. Okay. So let's try to run this on some inputs.
+
+151
+00:39:36,563 --> 00:39:44,563
+notice that this is kinda matching two things. So notice, uh,
+
+152
+00:39:46,612 --> 00:39:47,612
+This PDA. Matches. Two values. And in this case, it's like ends right number of. Number of A's. And. Number of B's.
+
+153
+00:40:11,603 --> 00:40:39,843
+of A's and number of B's and obviously just not just number, they have to be consecutive A's and B's, but you see what I'm saying. And in general, this will be the case. PDA can match two values. PDA's cannot match three or more values.
+
+154
+00:40:43,219 --> 00:40:44,219
+usually.
+
+155
+00:40:56,371 --> 00:41:02,371
+I'm not sure of that statement. So I am erasing it.
+
+156
+00:41:02,371 --> 00:41:08,172
+But I think a PDAK only match two values in general.
+
+157
+00:41:08,172 --> 00:41:23,571
+And the reason is they are equivalent to context-free grammars. As I said before, we will come to that later. And context-free grammars can match only two things.
+
+158
+00:41:23,571 --> 00:41:29,571
+so these loops kind of...
+
+159
+00:41:33,204 --> 00:42:01,763
+do things like this, this loop here, push A's to stack these A's. And this loop here, starting with this transition, start to match those A's with B's. So match B's.
+
+160
+00:42:03,204 --> 00:42:14,204
+with the A's in the stack or on the stack.
+
+161
+00:42:14,204 --> 00:42:16,204
+Okay.
+
+162
+00:42:16,204 --> 00:42:27,204
+And if at the end of input we have this situation, which means there is nothing on the stack.
+
+163
+00:42:27,204 --> 00:42:31,204
+That means number of A's and number of B's were the same.
+
+164
+00:42:31,204 --> 00:42:37,204
+then A's matched.
+
+165
+00:42:40,204 --> 00:42:45,204
+So all A's, let's see.
+
+166
+00:42:51,251 --> 00:42:53,251
+all A's
+
+167
+00:42:54,451 --> 00:42:56,451
+and B's
+
+168
+00:43:07,987 --> 00:43:27,987
+Let's work on this PDA with an input. So let's see. Let's say input is
+
+169
+00:43:29,172 --> 00:43:34,172
+A-A-A-B-B-B.
+
+170
+00:43:41,139 --> 00:43:50,739
+A, A, A, B, B, B. Now, at time zero,
+
+171
+00:43:52,659 --> 00:43:57,659
+What is the instantaneous description description?
+
+172
+00:44:02,099 --> 00:44:05,739
+Well, our state is Q0.
+
+173
+00:44:08,819 --> 00:44:19,819
+And our input that we didn't read yet is A, A, A, B, B, B.
+
+174
+00:44:19,819 --> 00:44:39,819
+instantaneous descriptions are like this. The first thing is the your current state current state. The second thing is in the top of the input that we didn't read yet. And the
+
+175
+00:44:44,628 --> 00:45:14,607
+The third thing is the stack. Okay. And in this case, as usual, I didn't write it here, but we have a stack since this is a pushdown automata. And we will start our stack with a special symbol. So our stack has our special symbol.
+
+176
+00:45:14,628 --> 00:45:15,267
+dollars.
+
+177
+00:45:19,251 --> 00:45:49,231
+Now this is on time zero, meaning we didn't start this machine yet. As soon as we read this machine, we start this machine, these transitions will start happening, right? So what will happen? Let's try to see.
+
+178
+00:45:49,251 --> 00:45:50,251
+and...
+
+179
+00:45:55,027 --> 00:45:56,027
+Well, first there is this all null transition. So it does nothing. And what will happen? Our new state will be Q1. We don't read anything. We don't push or pop anything. So what will happen is on time zero or on time zero,
+
+180
+00:46:25,027 --> 00:46:44,627
+time one is now we will have Q1, A, A, A, B, B, B, because we didn't read anything from the input and we didn't push or pop anything. So this doesn't change either. So we have the same situation now.
+
+181
+00:46:48,596 --> 00:46:49,596
+So we will continue like this. But let me create a new layer so that I can easily delete later. So, now on time one, now, instead of writing these times one other other, below each other,
+
+182
+00:47:18,596 --> 00:47:21,596
+we can use this notation.
+
+183
+00:47:21,596 --> 00:47:27,596
+So that means now this was time one, now I can write time two here.
+
+184
+00:47:36,019 --> 00:47:59,419
+Now we are at Q1. So it says that read an A and we have an A on our input. So we can read that A and this transition says that read an A, don't pop anything. So it doesn't care what we have on the stack and push an A.
+
+185
+00:48:00,139 --> 00:48:04,259
+So this transition is possible. We can use this.
+
+186
+00:48:06,019 --> 00:48:08,019
+So let's use it.
+
+187
+00:48:11,795 --> 00:48:20,795
+If there are no possible transitions that can occur, the machine halts.
+
+188
+00:48:23,923 --> 00:48:51,923
+So here, then that will be still Q1. Still here. Now this A is red. So because of this first transition, so the remaining input, sorry, it's like, uh,
+
+189
+00:48:55,891 --> 00:49:20,891
+So this is red. Now the remaining input is this AABB. So we have AABB. And we are pushing an A there in the stack. So now stack has A and dollar. Okay. So here now we have an A. Okay.
+
+190
+00:49:20,891 --> 00:49:33,531
+And now to continue, we now input, so let me write the input here too.
+
+191
+00:49:37,460 --> 00:49:40,940
+A, A, A, B, B, B.
+
+192
+00:49:45,460 --> 00:49:51,779
+Now this is done. We read this. At time two.
+
+193
+00:49:55,411 --> 00:50:25,391
+and in the next time three, what will happen is we will read this A. Okay. So now we will have ABB as remaining. ABBB. And we will be still at Q1 state.
+
+194
+00:50:25,411 --> 00:50:32,411
+And then we are now adding another symbol to the stack.
+
+195
+00:50:32,411 --> 00:50:35,411
+So we have AA dollar.
+
+196
+00:50:38,411 --> 00:50:44,411
+And then finally, for this loop, again, we will do the same thing.
+
+197
+00:50:44,411 --> 00:50:51,411
+So we will have Q1, we read this A, and we have BBB.
+
+198
+00:50:51,411 --> 00:51:18,712
+and then we push an A to the stack. So we have A, A, dollar. Okay. So this is kind of reading all these A to the Ns, right? So we read that. Now this is where our read-write hat is. And this is time three. This is time four.
+
+199
+00:51:18,711 --> 00:51:22,071
+change. Now on time five,
+
+200
+00:51:27,347 --> 00:51:29,588
+We will see some changes.
+
+201
+00:51:29,588 --> 00:51:29,947
+Why?
+
+202
+00:51:29,947 --> 00:51:34,308
+Because at this point on the input,
+
+203
+00:51:34,308 --> 00:51:36,887
+we don't have an A anymore.
+
+204
+00:51:36,887 --> 00:51:43,308
+So this transition does not match anymore.
+
+205
+00:51:43,308 --> 00:51:46,147
+We don't have an A on the input.
+
+206
+00:51:46,147 --> 00:51:48,567
+The next thing we will read.
+
+207
+00:51:48,567 --> 00:51:50,507
+And the stack is now A.
+
+208
+00:51:50,507 --> 00:51:53,688
+Let's continue writing the tool.
+
+209
+00:51:57,347 --> 00:52:00,467
+And now we have a B.
+
+210
+00:52:00,807 --> 00:52:03,167
+So the machine does not halt
+
+211
+00:52:03,167 --> 00:52:06,068
+because we cannot use this transition,
+
+212
+00:52:06,228 --> 00:52:09,807
+but we can use this transition.
+
+213
+00:52:10,248 --> 00:52:15,007
+We can use, we can read a B from the input
+
+214
+00:52:15,007 --> 00:52:17,787
+and pop an A and write nothing.
+
+215
+00:52:18,447 --> 00:52:20,367
+So let's do that.
+
+216
+00:52:20,787 --> 00:52:22,108
+We will read this B.
+
+217
+00:52:22,108 --> 00:52:25,428
+So the remaining will be B, B.
+
+218
+00:52:25,427 --> 00:52:27,427
+and
+
+219
+00:52:27,427 --> 00:52:32,867
+now the new
+
+220
+00:52:32,867 --> 00:52:36,827
+status state will be
+
+221
+00:52:36,827 --> 00:52:39,627
+q2 we changed our state
+
+222
+00:52:39,627 --> 00:52:42,907
+and now we are popping now
+
+223
+00:52:42,907 --> 00:52:46,467
+from the stack so kind of
+
+224
+00:52:46,467 --> 00:52:47,767
+we will
+
+225
+00:52:47,767 --> 00:52:54,187
+we should have an a here
+
+226
+00:52:54,187 --> 00:52:57,707
+I have forgotten to write that previously.
+
+227
+00:52:58,267 --> 00:53:00,567
+So now we will pop this.
+
+228
+00:53:01,727 --> 00:53:01,947
+Okay.
+
+229
+00:53:02,767 --> 00:53:07,067
+So we will have now a, a, and a dollar.
+
+230
+00:53:07,947 --> 00:53:14,627
+Notice how the remaining input and the contents of the stack are matching, right?
+
+231
+00:53:14,867 --> 00:53:17,927
+For each B here, we have an a here.
+
+232
+00:53:18,267 --> 00:53:19,987
+For this B, we have an a here.
+
+233
+00:53:19,987 --> 00:53:26,047
+So that's this design. This pushdown automata is designed for that.
+
+234
+00:53:28,507 --> 00:53:34,187
+And you can continue with this, right?
+
+235
+00:53:35,327 --> 00:53:37,487
+So let's do this.
+
+236
+00:53:39,987 --> 00:53:46,987
+So in the next time, we will be still in Q2.
+
+237
+00:53:46,987 --> 00:53:58,967
+we will read this b so we will unread input will be just b we will be popping that a so we have a
+
+238
+00:53:58,967 --> 00:54:12,868
+dollar a dollar there and then finally here we will be still q on q2 state q2 and there is nothing
+
+239
+00:54:12,867 --> 00:54:24,387
+in the input okay and then since we will be popping this there will be only a dollar
+
+240
+00:54:26,227 --> 00:54:35,507
+okay and instead of nothing if let us write null here meaning we don't have anything in the input okay
+
+241
+00:54:38,947 --> 00:54:39,187
+so
+
+242
+00:54:42,867 --> 00:54:46,367
+no more input.
+
+243
+00:54:48,427 --> 00:54:51,427
+So this now means there is no more input.
+
+244
+00:54:51,427 --> 00:54:53,267
+Now at this point,
+
+245
+00:54:54,287 --> 00:54:59,287
+this transition reading B cannot happen anymore.
+
+246
+00:55:00,807 --> 00:55:03,807
+So if Q2,
+
+247
+00:55:06,047 --> 00:55:10,807
+so we can, this transition doesn't work anymore,
+
+248
+00:55:10,807 --> 00:55:14,707
+But luckily at this point,
+
+249
+00:55:16,047 --> 00:55:19,727
+the machine replicates itself, right?
+
+250
+00:55:19,727 --> 00:55:20,567
+And now,
+
+251
+00:55:23,092 --> 00:55:53,071
+We have a new machine. So this will be machine, let's say, sub one, if you will, if you want. Okay. Machine sub one and in machine sub two, this transition will give us a new machine, machine two. And what will happen there? We will be on Q3. Okay.
+
+252
+00:55:53,092 --> 00:56:16,571
+and we didn't read anything. So there was no input, but we don't need to read anything. So no input still. And we read this dollar and write it back. So we have a dollar in the stack. So we have these two machines now.
+
+253
+00:56:16,571 --> 00:56:41,571
+Now, at this point, there are no more transitions going anywhere, right? The machine halts. Now, on this branch, since Q2 is not an accepting state, this branch rejects or this machine rejects.
+
+254
+00:56:41,571 --> 00:56:58,571
+But we have another machine, parallel machine if you want. And that machine is on Q3 and Q3 is an accepting machine. So this machine accepts.
+
+255
+00:56:58,571 --> 00:57:06,571
+So as a result, we say that this
+
+256
+00:57:14,996 --> 00:57:17,996
+pushdown automata at the end,
+
+257
+00:57:17,996 --> 00:57:20,075
+accepts this string.
+
+258
+00:57:20,075 --> 00:57:25,395
+Okay. This PDA accepts this string.
+
+259
+00:57:25,395 --> 00:57:27,715
+So,
+
+260
+00:57:32,436 --> 00:57:42,436
+I hope you understand what's going on here. We will give a break. Before the break, do you have any questions?
+
+261
+00:57:52,755 --> 00:58:01,755
+Okay, so let's give it break till 10, 10.
+
+262
+00:58:05,844 --> 00:58:14,224
+So, break till 10, 10.
+
+263
+01:10:39,828 --> 01:10:41,828
+sesim geliyor mu arkadaşlar?
+
+264
+01:10:54,100 --> 01:10:54,600
+You do.
+
+265
+01:11:02,420 --> 01:11:05,619
+Yeah, it's uh...
+
+266
+01:11:12,979 --> 01:11:13,979
+So that's how pushdown automata works. So just to make sure
+
+267
+01:11:29,460 --> 01:11:31,460
+pushdown automata
+
+268
+01:11:31,460 --> 01:11:36,579
+accepts a string
+
+269
+01:11:36,579 --> 01:11:39,139
+and
+
+270
+01:11:40,372 --> 01:11:41,351
+except
+
+271
+01:11:46,260 --> 01:11:48,260
+string
+
+272
+01:11:51,891 --> 01:12:02,891
+If there is a computation,
+
+273
+01:12:05,076 --> 01:12:07,076
+such that
+
+274
+01:12:10,100 --> 01:12:12,499
+all the input is consumed.
+
+275
+01:12:24,372 --> 01:12:52,372
+So we finish everything in the input. We read all of the input. And so the last state is an accepting state and the last state is an accepting state.
+
+276
+01:12:54,707 --> 01:13:13,707
+So we need to finish all of the input and the state we are in one of these parallel machine or parallel computations must be an accepting state. We don't care.
+
+277
+01:13:16,564 --> 01:13:17,564
+We do not care about the stack contents. We do not care about the stack contents at the end of the
+
+278
+01:13:46,564 --> 01:13:53,163
+of the accepting computation.
+
+279
+01:13:57,332 --> 01:14:01,332
+So you might have some stuff on the stack.
+
+280
+01:14:05,332 --> 01:14:08,332
+So you might have some A's, B's, whatever there.
+
+281
+01:14:10,332 --> 01:14:18,332
+But as long as you are on an accepting state and you finished all the input,
+
+282
+01:14:21,332 --> 01:14:24,332
+you read all of it, it's fine.
+
+283
+01:14:24,332 --> 01:14:45,332
+But in some other resources, I saw that they care about stuck content. So it may depend on the book you are reading, on the conventions of the resource you are reading.
+
+284
+01:14:45,332 --> 01:15:00,791
+So be careful about their convention. In this course convention, we will not care about contents of the stack at the end of the accepting computation.
+
+285
+01:15:06,963 --> 01:15:09,963
+So you can say accepting.
+
+286
+01:15:37,140 --> 01:15:47,140
+Let's look at another pushdown automata example. Or let's look at a...
+
+287
+01:15:48,659 --> 01:15:52,299
+Yeah, let's look at another pushdown automata example.
+
+288
+01:16:00,851 --> 01:16:25,851
+So here we have a language of the machine as V and V is reverse such that V is in the set of concatenations of AB.
+
+289
+01:16:25,851 --> 01:16:28,851
+.
+
+290
+01:16:30,323 --> 01:16:36,323
+And so the machine is, we have three,
+
+291
+01:16:39,539 --> 01:16:53,460
+states q0 q3 q1 q0 is starting so we have
+
+292
+01:16:56,739 --> 01:17:07,779
+read a pop nothing push a read b pop nothing push b
+
+293
+01:17:09,539 --> 01:17:16,539
+And if you have more than one trans one transitions.
+
+294
+01:17:16,539 --> 01:17:23,539
+On the same on the same state, you can write like that.
+
+295
+01:17:23,539 --> 01:17:27,539
+And.
+
+296
+01:17:27,539 --> 01:17:32,539
+So we have.
+
+297
+01:17:32,539 --> 01:17:36,539
+All now series.
+
+298
+01:17:36,539 --> 01:17:41,339
+And we have the usual.
+
+299
+01:17:41,339 --> 01:17:49,779
+Controlling the stack transition to the accepting state, which Q3 is.
+
+300
+01:17:49,779 --> 01:17:52,300
+This should be good Q2 actually.
+
+301
+01:17:52,300 --> 01:17:56,379
+So Q0, Q1, Q2.
+
+302
+01:17:56,379 --> 01:17:59,179
+So let's say this is Q2.
+
+303
+01:17:59,179 --> 01:18:04,620
+And we have this loop here.
+
+304
+01:18:04,620 --> 01:18:19,620
+read an A, pop the A, pop an A, write nothing, read a B, pop a B, write nothing, push nothing actually.
+
+305
+01:18:19,619 --> 01:18:24,199
+So I think you see how this might work.
+
+306
+01:18:24,199 --> 01:18:36,419
+So it kind of accepts the string like a, a, b, b, a, a.
+
+307
+01:18:36,539 --> 01:18:44,939
+So if we have v here, we will have its reverse on the other side.
+
+308
+01:18:44,939 --> 01:18:55,019
+And you can see that on this first q0 state in the loop,
+
+309
+01:18:55,019 --> 01:19:07,419
+we are kind of putting whatever we have into the stack.
+
+310
+01:19:07,419 --> 01:19:18,499
+And immediately we are doing a replication and we are also popping from that stack.
+
+311
+01:19:19,779 --> 01:19:23,519
+And kind of this works always in parallel.
+
+312
+01:19:23,519 --> 01:19:32,819
+And at the end of the input, we will check whether we are on an empty stack.
+
+313
+01:19:33,079 --> 01:19:36,779
+And if we are on an empty stack, meaning there's only dollar there,
+
+314
+01:19:37,419 --> 01:19:41,979
+we say that we are accepting this.
+
+315
+01:19:41,979 --> 01:19:44,379
+So that means we are kind of matching.
+
+316
+01:19:48,199 --> 01:19:53,199
+So we are kind of matching things here again.
+
+317
+01:19:55,539 --> 01:20:00,539
+So let me try to see how this works on an input.
+
+318
+01:20:01,739 --> 01:20:02,739
+So
+
+319
+01:20:08,372 --> 01:20:15,372
+So it's kinda, you don't have to think in parallel if you wish you can say,
+
+320
+01:20:15,372 --> 01:20:18,372
+you can say,
+
+321
+01:20:19,667 --> 01:20:33,267
+So this part is kinda pushing the V part. Push the V part, this V part here.
+
+322
+01:20:45,300 --> 01:21:11,300
+And then this part here kind of pops that V and it kind of sees whether we are matching what we pop and what we read. And it's kind of matching again.
+
+323
+01:21:12,819 --> 01:21:13,819
+v is reverse. Match v is reverse on input with the v in the stack. And this kind of, say, the resource I am using is says that it gets us middle
+
+324
+01:21:42,819 --> 01:21:44,819
+and load the input.
+
+325
+01:21:54,323 --> 01:22:04,723
+Let's see how this works on an example. Let's say the input is ABBA.
+
+326
+01:22:13,939 --> 01:22:20,939
+And again, this remember, writing our stack here.
+
+327
+01:22:24,619 --> 01:22:28,299
+And at time zero, what will we have?
+
+328
+01:22:29,879 --> 01:22:34,879
+So we will have Q0, ABBA, and dollar on our stack.
+
+329
+01:22:40,559 --> 01:22:43,459
+And this is time zero.
+
+330
+01:22:49,235 --> 01:22:52,235
+Now, uh,
+
+331
+01:22:56,435 --> 01:23:00,275
+Assume, even at time zero, notice that
+
+332
+01:23:03,635 --> 01:23:04,435
+we have
+
+333
+01:23:06,196 --> 01:23:07,955
+a parallel computation
+
+334
+01:23:09,075 --> 01:23:09,915
+because
+
+335
+01:23:12,356 --> 01:23:15,315
+or let's not say at time zero because
+
+336
+01:23:18,675 --> 01:23:20,995
+at the beginning we are like that. Now
+
+337
+01:23:22,116 --> 01:23:22,835
+here
+
+338
+01:23:26,435 --> 01:23:27,155
+uh,
+
+339
+01:23:31,636 --> 01:23:32,636
+at time one, we will read this A because there's a transition for it here. Okay. So, we will have again Q0 because
+
+340
+01:23:57,971 --> 01:24:12,271
+This is a loop. And we are reading the A, so unread input is BBA or NA to the stack. So stack contents will be A dollars.
+
+341
+01:24:22,387 --> 01:24:35,667
+So let me write this this way, time, one, two, BBA, $8. Let me write it here.
+
+342
+01:24:39,796 --> 01:25:03,796
+And now notice that we also at this point have this transition here. So from there,
+
+343
+01:25:10,163 --> 01:25:11,163
+from there, now you replicate, the machine replicate itself. So we are on Q1. And BBA. And A dollar. And here, again, we have a, this non-deterministic transition. So again,
+
+344
+01:25:40,163 --> 01:25:43,663
+machine itself replicates itself.
+
+345
+01:25:43,663 --> 01:25:48,163
+So this Q1, from Q1 we go to Q2.
+
+346
+01:25:51,163 --> 01:25:54,163
+And the input is still DBA.
+
+347
+01:25:56,163 --> 01:26:02,163
+And so this doesn't work because on here we have this.
+
+348
+01:26:15,444 --> 01:26:40,444
+Now this works because we are starting from here. So there is a dollar there and we pop that and we push that. So we have a dollar. So at time one, actually all these three states are active. Okay.
+
+349
+01:26:50,452 --> 01:27:20,431
+Now time to, we are reading the next B, right? We need to read the next B. So this B here, we need to read this in all of these computation branches. And now when you are on Q0, you can read a B because you have this transition.
+
+350
+01:27:20,452 --> 01:27:26,292
+and that will be again Q0.
+
+351
+01:27:26,292 --> 01:27:27,852
+Okay.
+
+352
+01:27:29,532 --> 01:27:30,452
+And
+
+353
+01:27:39,188 --> 01:27:45,427
+So, it reads a B, so we have BA.
+
+354
+01:27:45,427 --> 01:27:53,227
+And it pops nothing, pushes a B there. So we have BA dollar.
+
+355
+01:27:53,227 --> 01:27:58,347
+BA dollar for Q0.
+
+356
+01:27:58,347 --> 01:28:08,347
+Now, for this Q1 here, Q1 can read a B.
+
+357
+01:28:08,347 --> 01:28:10,347
+So what does it do?
+
+358
+01:28:13,347 --> 01:28:17,347
+This becomes Q1.
+
+359
+01:28:20,372 --> 01:28:48,611
+and the, but this B cannot work. Why? So I thought that there's a transition because there's a B to read here, but there is also for this transition to happen, the stack must have a B, but the stack does not have a B there. So this transition does not work.
+
+360
+01:28:54,036 --> 01:28:58,036
+So,
+
+361
+01:29:01,779 --> 01:29:08,779
+That means this computation branch here dies.
+
+362
+01:29:10,547 --> 01:29:38,547
+because all three transitions it has because epsilon or null needs an empty only dollar only stack. We don't have that. So this doesn't work and this doesn't work. This doesn't work. So all the transitions it had, none of the transitions it has actually work.
+
+363
+01:29:38,547 --> 01:30:00,547
+work. So that means this computation dies there, halts and rejects. And here, when we are on Q2, we cannot read anything, but we have input now, so this dies too.
+
+364
+01:30:00,547 --> 01:30:26,147
+So these two transitions or computation branches die immediately, halt and reject immediately. But we have this transition. We have this instantaneous description of a computation. So we have Q0BABA here.
+
+365
+01:30:26,147 --> 01:30:50,027
+And here notice that immediately when we are on Q0, we also need to remember that we have these epsilon transitions here.
+
+366
+01:30:50,027 --> 01:31:00,107
+So we also use this again and
+
+367
+01:31:04,627 --> 01:31:06,627
+I'm sorry.
+
+368
+01:31:10,228 --> 01:31:12,627
+Actually we will use this again here.
+
+369
+01:31:16,148 --> 01:31:21,148
+I think this should work like this.
+
+370
+01:31:22,447 --> 01:31:23,247
+Let's see.
+
+371
+01:31:29,524 --> 01:31:59,503
+So this replicates itself and then this replicates itself. Here again, Q0, this machine replicates itself because of this transition and state changes to Q1. And there's nothing to read or write. So we have BA and BA dollar.
+
+372
+01:31:59,524 --> 01:32:06,524
+and
+
+373
+01:32:09,235 --> 01:32:38,035
+So then this was wrong. Because this transition needs an empty stack. So let's delete this part. Okay. Okay. This is better. And if you want, you can tell this time one, time two, time three, time four. I think that may be a better naming of the times.
+
+374
+01:32:39,235 --> 01:32:45,695
+and
+
+375
+01:32:45,695 --> 01:32:55,695
+the
+
+376
+01:32:47,380 --> 01:33:17,359
+On the other hand, these are parallel. So since these are parallel, you can say times are true. So this is time one, this is time two. So these are parallel machines. Now we continue like that. And we read the first B. We read A.
+
+377
+01:33:17,380 --> 01:33:24,780
+we read a B and a time tree.
+
+378
+01:33:34,836 --> 01:33:35,836
+Now this machine will read a B and can it read a B? It can. So it will be Q0. And it reads a B. So only A remains. Pops nothing pushes B. So BBA$. Okay. And
+
+379
+01:34:04,836 --> 01:34:26,836
+Now this machine here, so this also will replicate itself immediately, right? So let's try to do that. So it goes to Q1 A B B A dollar.
+
+380
+01:34:26,836 --> 01:34:48,836
+Now, this machine here, now, will need to do its own thing. So, how can we write that? Let's write here, Q1, we have Q1BABA$.
+
+381
+01:34:48,836 --> 01:35:05,836
+controller, okay. And does it have a, so for its,
+
+382
+01:35:17,555 --> 01:35:26,555
+Let's continue here. So we have this guy.
+
+383
+01:35:28,212 --> 01:35:50,271
+and this replicates to there. And this guy will need to read a B. And can Q1 read a B? It can if the stack has a B2. And in this case, stack has a B2. So this will go to Q1.
+
+384
+01:35:50,271 --> 01:36:11,091
+it will read the B and pop this B. So there we have A in the input, A dollars in the stack. And does this work now? No, because stack is not empty.
+
+385
+01:36:11,091 --> 01:36:20,371
+Now, at time three, we have three parallel machines.
+
+386
+01:36:20,371 --> 01:36:21,011
+Okay.
+
+387
+01:36:21,931 --> 01:36:24,931
+So we have three parallel machines.
+
+388
+01:36:27,291 --> 01:36:30,431
+So you can go like this.
+
+389
+01:36:31,911 --> 01:36:41,051
+This is very detailed, but in practice, you don't, probably you will not think about all these parallel branches.
+
+390
+01:36:41,091 --> 01:37:01,091
+you will kind of think of what will actually work, right? But I am writing this to show you explicitly how the machine works. So at time 4.
+
+391
+01:37:06,899 --> 01:37:17,219
+So let's write this explicit or computation tree, let's say this is computation tree.
+
+392
+01:37:23,956 --> 01:37:32,956
+You don't have to create all the computation tree. Let me write.
+
+393
+01:37:49,076 --> 01:37:50,255
+and this students.
+
+394
+01:38:08,564 --> 01:38:10,564
+times zero,
+
+395
+01:38:13,492 --> 01:38:37,492
+So at time zero, we have only one machine, but at time three, we have three machines. Now at time four, what will happen? For Q0, again, it has an input A, and it can read it. So it will go to Q0.
+
+396
+01:38:37,492 --> 01:39:06,431
+and it will read A, so there will be no more input and it will push that A, so ABBA will be stuck contents and because of this transition it will replicate itself, but the state will change, so we will have Q1, null, ABBA,
+
+397
+01:39:07,492 --> 01:39:35,331
+and now what will happen to this machine? Right? Well, it was Q1 and can Q1 read an A when the stack top is B? Well, it can't. To read an A, the stack top must be A, but the top of the stack in this case is B.
+
+398
+01:39:35,331 --> 01:39:58,531
+So at this point, this guy, this computation halts. And now the third computation, does it continue? Well, this one is a Q1. To read an A,
+
+399
+01:40:09,171 --> 01:40:10,171
+to read an A, it needs an A on the stack and we have that. So this becomes what? It's still Q1. Okay. And then no more input is needed because that A, we read that and we pop that, pop this A,
+
+400
+01:40:39,171 --> 01:40:42,512
+So the stack content is just dollar.
+
+401
+01:40:45,392 --> 01:40:51,651
+Now, because of this transition, this non-deterministic null transition,
+
+402
+01:40:51,651 --> 01:40:55,271
+this immediately replicates itself.
+
+403
+01:40:57,131 --> 01:41:00,671
+So it replicates itself.
+
+404
+01:41:02,191 --> 01:41:07,951
+And what happens is the state becomes Q2,
+
+405
+01:41:09,171 --> 01:41:26,171
+and there is nothing to read, null, and dollar is popped and pushed, so we have a dollar, okay.
+
+406
+01:41:26,171 --> 01:41:38,171
+And this is the replica. So at this point, how many machines we have?
+
+407
+01:41:38,171 --> 01:42:06,011
+So what do we have? We have one, two, three, four machines. Or if you want four computations. Okay. We have four computations going on. Okay. Now, at time five or at this point, at time five, if you want,
+
+408
+01:42:08,171 --> 01:42:38,151
+at this point, all of these computations halt because there is no more input. Okay. So all four helps because no more input. Now, out of these four machines,
+
+409
+01:42:38,171 --> 01:42:51,671
+The first machine is on Q0 and Q0 is not an accepting state. So machine one rejects. So this one rejects.
+
+410
+01:42:56,212 --> 01:43:21,212
+This second machine again, it's on Q1. So this rejects two. Because Q1 is not an accepting state. This third one is on Q1 again. So this rejects. But this fourth one is on Q2 and Q2 is an accepting state.
+
+411
+01:43:21,555 --> 01:43:22,555
+So since Q2 is an accepting state, we say that this computation, we say that the machine M accepts ABBA. So we say that M accepts because computation
+
+412
+01:43:50,452 --> 01:43:53,452
+four is accepting.
+
+413
+01:44:00,372 --> 01:44:18,372
+Okay, this is this computation tree. You don't have to write this always, but it kind of helps on understanding what's going on under the hood.
+
+414
+01:44:24,500 --> 01:44:30,739
+Is there any question of on how pushdown automata works?
+
+415
+01:44:39,731 --> 01:44:41,831
+I'm cleaning this part of it.
+
+416
+01:44:49,203 --> 01:44:51,203
+um
+
+417
+01:45:21,427 --> 01:45:24,668
+Now, uh,
+
+418
+01:45:26,931 --> 01:45:38,931
+We have some shortcut notation. Let's talk about that. So shortcut notation.
+
+419
+01:45:43,859 --> 01:45:52,859
+So pushing and popping strings.
+
+420
+01:45:59,252 --> 01:46:25,252
+So you might, we might write actually something like a, read an a in the input. And instead of just a symbol here, we can write a string to pop. So you might say string one will be popped and string two will be pushed to go to Q2, let's say.
+
+421
+01:46:25,252 --> 01:46:29,252
+So these are strings.
+
+422
+01:46:36,404 --> 01:46:45,523
+It's possible to write that. So you might have something like,
+
+423
+01:46:53,908 --> 01:47:11,908
+and Q1 and if you read an A, pop E, B and push C, D, F and go to Q2.
+
+424
+01:47:14,676 --> 01:47:17,676
+Um...
+
+425
+01:47:21,747 --> 01:47:48,747
+In this case, the stack should have an EB there at the top. So you should have an EB and some other stuff. And now we are replacing that EB with CDF.
+
+426
+01:47:48,747 --> 01:48:16,328
+and
+
+427
+01:47:52,532 --> 01:47:53,532
+You are popping the EB, you are pushing the CDF. And this is actually just a shortcut. So the machine itself works symbol by symbol. So somehow under the hood, this might be something like you have Q1, then let's say you read an A,
+
+428
+01:48:22,532 --> 01:48:47,532
+and then you pop an E, right, and push nothing. So you go to some other state. We don't care its name now. And then you pop that B2 somehow and you don't need to read anything for that. Just pop the B, push nothing.
+
+429
+01:48:47,532 --> 01:49:17,511
+and some other state. And then now you start, so E and B are gone. Now you need to add which one first, C or F? You need to first add F, right? So you add or push F, no need to read anything, no need to pop, just push the F.
+
+430
+01:49:17,532 --> 01:49:19,532
+then,
+
+431
+01:49:23,572 --> 01:49:24,572
+no need to read anything, no need to pop anything, push that D there, some state. And then no need to read anything, no need to pop anything, push that C there. And now this is Q2. So it may be like that, it doesn't have to be. So, but possibly
+
+432
+01:49:53,572 --> 01:49:55,572
+under the foot.
+
+433
+01:50:10,899 --> 01:50:11,899
+notation, and we don't care what happens here. We don't know either. And an example of such a PDF, PDA is something like this. You might have a Q1.
+
+434
+01:50:41,235 --> 01:50:43,235
+Turing machine.
+
+435
+01:50:46,100 --> 01:50:47,100
+This transition is standard. Read nothing. Check whether they are at the end. And now we have this loop. And in this loop now we have six different transitions. So we have if we see an A. And we are at the end of the stack. Push a zero.
+
+436
+01:51:16,100 --> 01:51:44,360
+zero dollar. Now, this is what we are talking about, right? We are pushing a string now, just a symbol, but not just a symbol, but a string. Similarly, if you have an A, if you have a zero, add two zeros. If you have an A, and if you have one, add a null, so meaning push nothing.
+
+437
+01:51:46,100 --> 01:51:55,140
+and if you have a B at the end of the stack, might be dollars.
+
+438
+01:51:57,619 --> 01:52:06,739
+And if you have a B and stack has one, pop that, push two ones.
+
+439
+01:52:07,579 --> 01:52:12,820
+So you are kind of replacing single one with more than one once.
+
+440
+01:52:12,820 --> 01:52:36,939
+and if you have a B, zero, pop zero, and push nothing. So all of these are in this loop, all these six are in this loop. And this language, so this is your M, and the language of this M is,
+
+441
+01:52:36,939 --> 01:53:04,419
+this accepts strings, which are concatenations of AB, some symbols of AB, such that number of A's in the string is equal to number of B's in the string.
+
+442
+01:53:04,419 --> 01:53:28,419
+So notice that previously we matched number of A's and B's, but we also wanted them to be in the same order. Here, we don't care about order, right? So here, for example, we can have A, B, A, A,
+
+443
+01:53:28,419 --> 01:53:52,739
+A, B, B, B, B. This is fine because we have how many? No, this is not fine. So this is fine because we have four A's and four B's, right? So number of A's is four.
+
+444
+01:54:00,948 --> 01:54:16,948
+Similarly, number of pieces for here. So they are same. So this machine should accept this string.
+
+445
+01:54:18,963 --> 01:54:38,963
+And I will not go on the details of how this works. It's not that hard. I will not do this example, but check this at home or yourself.
+
+446
+01:54:39,828 --> 01:54:40,667
+So,
+
+447
+01:54:44,435 --> 01:55:02,435
+work on some inputs. So work on, let's say, something like A, B, B, B, A, A, yourself.
+
+448
+01:55:03,891 --> 01:55:07,091
+So,
+
+449
+01:55:09,844 --> 01:55:14,844
+Let's give another break here. Do you have any questions?
+
+450
+01:55:22,003 --> 01:55:32,003
+No, okay.
+
+451
+01:55:33,652 --> 01:55:44,691
+me
+
+452
+01:55:59,572 --> 01:56:02,511
+So, big element.
+
+453
+02:06:31,155 --> 02:06:33,155
+Evet sesim geliyor mu arkadaşlar?
+
+454
+02:06:37,171 --> 02:06:37,912
+Evet hocam.
+
+455
+02:06:38,511 --> 02:06:43,171
+Evet. Bir koptu. Siz herhalde tekrar mı bağlandınız?
+
+456
+02:06:45,871 --> 02:06:47,711
+Hayır bizde kopukluk olmadı.
+
+457
+02:06:48,171 --> 02:06:53,231
+Olmadı. Bende bir koptu tekrar geldi. Demek ki sizi tekrar atmadı.
+
+458
+02:06:54,071 --> 02:06:56,932
+Siz düşünceyi elinize başkasına host olarak atıyor hocam.
+
+459
+02:06:57,491 --> 02:06:57,911
+Efendim?
+
+460
+02:06:59,051 --> 02:07:03,751
+Siz düştüğünüz zaman yayından yerinize başkasına host olarak atıyor, yayın devam ediyor.
+
+461
+02:07:03,751 --> 02:07:05,251
+Ha, iyi.
+
+462
+02:07:05,251 --> 02:07:07,352
+Gözünüz arkada kalmasın yani.
+
+463
+02:07:07,671 --> 02:07:13,852
+Evet. Dedim herkes dağıldı şimdi. Neyse. Peki.
+
+464
+02:07:13,852 --> 02:07:13,872
+Peki.
+
+465
+02:07:16,591 --> 02:07:18,971
+Peki. So let's continue.
+
+466
+02:07:20,731 --> 02:07:24,691
+So let's look at formalities for PDAs.
+
+467
+02:07:39,572 --> 02:07:40,572
+meaning formal definitions and such. So one thing we know is there can be more than one state for. So from a state. For the same input ABC and input
+
+468
+02:08:09,572 --> 02:08:22,452
+pop and push all these three is a single, you say, parameter set, if you will. For the same ABC, you can have more than one.
+
+469
+02:08:22,452 --> 02:08:23,811
+Yoxuan.
+
+470
+02:08:25,652 --> 02:08:26,171
+Ah, tamam.
+
+471
+02:08:32,212 --> 02:08:34,212
+Yeah, the new.
+
+472
+02:08:36,212 --> 02:08:44,212
+Okay, so we are working on, we will see formalities for PD. So formal definitions, etc. And
+
+473
+02:08:47,251 --> 02:08:50,212
+the transition functions will be sets because
+
+474
+02:08:52,851 --> 02:09:01,891
+for a state, for the same parameters, you can have more than one resulting state. So
+
+475
+02:09:02,212 --> 02:09:07,212
+So, Q1 can go to Q2 and Q3 at the same time.
+
+476
+02:09:07,212 --> 02:09:14,212
+And so, so the transition function will be
+
+477
+02:09:20,564 --> 02:09:50,543
+and, you know, something like this. For example, if you are on Q1. And if you get symbol A. And now, and if you want to pop W. So instead of BC, or let's say if you put W, you can see that.
+
+478
+02:09:50,564 --> 02:10:17,784
+B. Now, if you are on Q1, and so there are two parameters here, okay? So on Q1, we want to be able to read A, and on the top of the stack, we want B. Okay. If that happens, what happens?
+
+479
+02:10:17,783 --> 02:10:37,343
+with transition to Q2 and C, so C, or transition to Q3.
+
+480
+02:10:37,343 --> 02:10:48,623
+and in fact, this doesn't need to be same. So we can have D here, let's say. So D.
+
+481
+02:10:55,796 --> 02:10:57,796
+and, um,
+
+482
+02:11:01,108 --> 02:11:29,587
+And at this point, we have two different transition function results in sets because of this situation, non-determinism. We have sets there. And in fact, this, these symbols, this does not have to be symbols. If you want, you can, these can be strings too. So,
+
+483
+02:11:31,028 --> 02:11:33,028
+Let's do that way.
+
+484
+02:11:35,028 --> 02:11:38,028
+You need to read A, let's say,
+
+485
+02:11:39,028 --> 02:11:41,028
+hook W1,
+
+486
+02:11:42,028 --> 02:11:44,028
+push W2,
+
+487
+02:11:44,028 --> 02:11:46,028
+read A,
+
+488
+02:11:46,028 --> 02:11:48,028
+hook W1,
+
+489
+02:11:48,028 --> 02:11:51,028
+push W3, let's say.
+
+490
+02:11:52,028 --> 02:11:55,028
+And now, instead of B,
+
+491
+02:11:56,028 --> 02:11:58,028
+C and D,
+
+492
+02:11:58,028 --> 02:11:59,028
+we need to read A,
+
+493
+02:12:01,908 --> 02:12:19,908
+and then, pop W1, push W2, push W3. So instead of symbols, you can have strings there in the transition function. And now,
+
+494
+02:12:24,180 --> 02:12:28,019
+Formal definition of pushdown automaton will be
+
+495
+02:12:49,011 --> 02:12:53,611
+It will be a tuple of how many elements.
+
+496
+02:12:55,391 --> 02:12:58,491
+Here it says seven elements.
+
+497
+02:12:58,491 --> 02:13:10,791
+So you have this tuple, q, sigma, gamma.
+
+498
+02:13:14,963 --> 02:13:29,603
+delta, Q0, Z, F. So this is a seventh tuple. So seventh element tuple.
+
+499
+02:13:33,203 --> 02:13:57,203
+And these are the usual stuff. Q are the states. Sigma is the input alphabet. The symbols that can be in the input. Gamma is the stack alphabet.
+
+500
+02:13:57,203 --> 02:14:24,203
+So, these two can, these two are separate. So, if you read an A in the input, you can put, I don't know, X to the stack. You don't have to put that A there. So, these are separate. So, delta is usual, as usual, transition function.
+
+501
+02:14:23,828 --> 02:14:27,828
+and Q0 is again initial state.
+
+502
+02:14:31,796 --> 02:14:51,796
+Z is stack start symbol. So this is specific to pushdown automata's stack start symbol. And F is the accepting states as usual.
+
+503
+02:14:57,811 --> 02:14:58,811
+I think in the book they are using a six tuple but it doesn't really matter why they don't have the stuck start symbol there.
+
+504
+02:15:32,627 --> 02:15:35,627
+So this text start symbol is sorry.
+
+505
+02:16:01,332 --> 02:16:27,891
+in Sipser's book, they don't have that, but it doesn't really matter. We already told instantaneous descriptions. We use them, but let us write them here. So let me write here. Instantaneous.
+
+506
+02:16:40,724 --> 02:16:56,083
+So, you have these three things. Q, U, S, let's say, and Q is the state. U is the remaining input.
+
+507
+02:17:01,492 --> 02:17:11,492
+and S is the stack contents, current stack contents.
+
+508
+02:17:15,572 --> 02:17:16,572
+and we talked about what instantaneous description is. So as an example, you might have something like Q1, AAB, and stuck might be AB dollar. So this kind of translates to
+
+509
+02:17:45,572 --> 02:17:49,572
+You are at Q1 now.
+
+510
+02:17:49,572 --> 02:17:51,572
+Okay.
+
+511
+02:17:58,515 --> 02:18:05,515
+and in the inputs.
+
+512
+02:18:06,644 --> 02:18:26,644
+You have A, A, B. And you read these things, whatever they are. And on the stack, you have this. So there's the A.
+
+513
+02:18:28,948 --> 02:18:31,948
+and the
+
+514
+02:18:34,579 --> 02:18:45,899
+using instantaneous descriptions, you can write computations. So computation.
+
+515
+02:18:48,564 --> 02:19:13,763
+is a list of these instantaneous descriptions. So maybe you have Q0, AAABBB, dollar at the beginning. This yields, so I am reading this as a yields, but I am not sure.
+
+516
+02:19:13,763 --> 02:19:39,763
+If you know what how this is read, please tell me. I need to read some, some, I need to listen to some videos or something to know what's this called. I couldn't see in the book I looked at, but I'm not sure.
+
+517
+02:19:39,763 --> 02:20:01,003
+So it doesn't really matter. I'll just say this yields. And then maybe this yields to Q1. And then A, A, A, B, B, B. And now maybe you have A dollars, et cetera.
+
+518
+02:20:01,003 --> 02:20:14,823
+and at the end, let's say you have Q3, null, and dollars.
+
+519
+02:20:16,463 --> 02:20:23,643
+So a computation might be something like that.
+
+520
+02:20:24,303 --> 02:20:29,703
+And we talk this, but the null here means no input, no more.
+
+521
+02:20:31,003 --> 02:20:57,004
+input to process. So usually a successful computation is like that because to accept a string you need to finish all of the input and you need to kind of finish everything in the stack but it's not required. This is not required.
+
+522
+02:20:57,004 --> 02:21:23,683
+but this is required. So input must be null. So although this sometimes can be abbreviated to this, so instead of writing all the steps in the computation, you can just use something like that.
+
+523
+02:21:23,683 --> 02:21:35,983
+When you are at this instantaneous description, let's say you have AA, B, B, B, dollars, like this.
+
+524
+02:21:37,483 --> 02:21:49,064
+Now, again yields, but now we have this star here, meaning we omit a lot of, or possibly, zero or more steps there.
+
+525
+02:21:49,064 --> 02:21:56,504
+So we may have omitted some steps there.
+
+526
+02:21:56,504 --> 02:22:02,504
+So let's say this Q3 null.
+
+527
+02:22:10,644 --> 02:22:30,644
+Now, based on this, this notation, we can describe language of PDA if you want. So, a language of PDA is, uh,
+
+528
+02:22:38,291 --> 02:22:39,291
+It is the set of strings. Language of the machine. Pushdown automata is the set of strings W such that. We start with an instant where we are on the first initial state.
+
+529
+02:23:08,500 --> 02:23:36,500
+and we have the full W as the input. And we only have the special stack symbol. What did we say to that? Stack start symbol. So usually dollar stack start symbol.
+
+530
+02:23:36,500 --> 02:23:55,760
+and after some computation, we go to some state, which is an accepting state. So, and accepting.
+
+531
+02:24:00,500 --> 02:24:05,500
+or an accept state, let's see.
+
+532
+02:24:10,772 --> 02:24:33,772
+and we consume all of this string. So now the meaning is the null. And we don't care what we have in as the stack symbols stack, but this is null. This is important. Okay.
+
+533
+02:24:33,772 --> 02:24:46,272
+So we can describe the language of pushdown automaton using these instant instantaneous descriptions.
+
+534
+02:25:00,371 --> 02:25:02,951
+and
+
+535
+02:25:27,891 --> 02:25:30,251
+So, um,
+
+536
+02:25:37,268 --> 02:25:39,268
+As an example,
+
+537
+02:25:48,051 --> 02:25:51,411
+if we start with, eh,
+
+538
+02:25:53,492 --> 02:26:12,811
+the initial state, AAA, BBB, and dollars. And finally get to Q3, null, dollars.
+
+539
+02:26:15,092 --> 02:26:45,071
+In the first example, let us give those examples a name. So what was the first machine we see? So let's call this example pushdown automata M1. So let's let this be M1. I want to refer to it later. And what did we also have?
+
+540
+02:26:45,092 --> 02:27:07,992
+Let us call this M2. M2. I think we used M somewhere else too, but it's not here. I deleted it, I think. So it's okay. So this machine is M1. Let's name it as M1.
+
+541
+02:27:13,876 --> 02:27:18,876
+And here in this example, this is M2.
+
+542
+02:27:26,195 --> 02:27:29,195
+and let's say this is M3.
+
+543
+02:27:39,507 --> 02:27:41,507
+and this is M3.
+
+544
+02:27:43,667 --> 02:27:45,667
+I think we are done, hopefully.
+
+545
+02:27:47,627 --> 02:27:55,347
+Now, remember, for this M1, what was it?
+
+546
+02:27:57,547 --> 02:28:07,547
+It was accepting A to the N, B to the N, such that N is greater than or equal to zero.
+
+547
+02:28:07,547 --> 02:28:17,627
+so it accepts things like AAABBB or AABB.
+
+548
+02:28:17,627 --> 02:28:19,627
+So,
+
+549
+02:28:26,804 --> 02:28:33,804
+So that then, so,
+
+550
+02:28:35,796 --> 02:28:58,796
+Then this AABBB is in the language of that N1. Okay. Remember we had Q0, Q2, Q1 and Q2 there and Q3 there. So it's in the language of M1.
+
+551
+02:29:02,484 --> 02:29:31,803
+And in general, we can say that since starting Q0, A to the N, B to the N dollar yields to Q3 null dollar. We say that A to the N, B to the N.
+
+552
+02:29:32,484 --> 02:29:36,083
+is in the language of M1.
+
+553
+02:29:56,852 --> 02:30:01,071
+So since this is that,
+
+554
+02:30:09,043 --> 02:30:23,043
+We can in fact say this way. So since this is the case, we can say that
+
+555
+02:30:23,603 --> 02:30:51,123
+language of M1 is A to the N, B to the N, such that N is greater than zero or equal to zero. So anyway, here we wrote a pattern. So since these patterns, all these patterns satisfy this implication, we say that language is that pattern.
+
+556
+02:30:53,603 --> 02:30:55,603
+is based on that pattern.
+
+557
+02:30:58,603 --> 02:31:00,603
+Is there any questions up to this point?
+
+558
+02:31:03,603 --> 02:31:04,603
+No.
+
+559
+02:31:07,924 --> 02:31:11,924
+Okay. Now,
+
+560
+02:31:14,131 --> 02:31:17,131
+Remember the context-free languages?
+
+561
+02:31:31,924 --> 02:31:35,123
+context-free languages.
+
+562
+02:31:40,659 --> 02:31:42,659
+and pushdown automata.
+
+563
+02:31:53,747 --> 02:31:54,887
+pushdown automata.
+
+564
+02:31:58,484 --> 02:32:08,723
+Well, context-free languages are equivalent to pushdown automata.
+
+565
+02:32:19,283 --> 02:32:24,283
+or context-free grammar, actually.
+
+566
+02:32:31,860 --> 02:32:46,860
+is equivalent to languages accepted by pushdown automata.
+
+567
+02:32:55,731 --> 02:33:04,731
+So that means that, so this is, let's say this is a theorem.
+
+568
+02:33:08,308 --> 02:33:13,587
+Okay, and how can we prove that?
+
+569
+02:33:15,731 --> 02:33:30,851
+Remember that when we have these equivalencies, we have to go and prove two things, right? So...
+
+570
+02:33:34,739 --> 02:33:35,739
+We have to prove that context-free grammars or context-free languages are a subset of language of PDAs.
+
+571
+02:34:01,268 --> 02:34:02,827
+languages
+
+572
+02:34:06,324 --> 02:34:11,603
+accepted by PDAs.
+
+573
+02:34:17,203 --> 02:34:18,203
+So first you need to prove that. Then you need to prove the other way. So context-free languages are a subset of languages accepted by pushdown automaton.
+
+574
+02:34:47,203 --> 02:35:15,443
+And also, we need to be able to convert here. If context-free grammars are a subset of languages accepted by PDAs, that means you can convert
+
+575
+02:35:17,203 --> 02:35:20,863
+any context-free grammar,
+
+576
+02:35:25,620 --> 02:35:27,620
+G to
+
+577
+02:35:31,620 --> 02:35:33,620
+a PDA
+
+578
+02:35:33,620 --> 02:35:35,620
+Pushdown automata
+
+579
+02:35:37,620 --> 02:35:39,620
+search that
+
+580
+02:35:42,484 --> 02:36:02,084
+their languages are same. So language of the G. We didn't name this pushdown automata. Let's say pushdown automata M. Pushdown automata M such that.
+
+581
+02:36:08,628 --> 02:36:10,287
+search that
+
+582
+02:36:14,772 --> 02:36:35,532
+language of the G is equal to language of M. So you can convert any context-free grammar to a pushdown automata. And it will give the same language. And similarly,
+
+583
+02:36:39,572 --> 02:36:40,572
+context-free languages being a superset of languages accepted by pushdown automata means that you can convert any pushdown automata M to a context-free grammar G such that
+
+584
+02:37:09,572 --> 02:37:12,491
+Değerilen gücü, arsitayım.
+
+585
+02:37:20,275 --> 02:37:21,275
+So I just...
+
+586
+02:37:26,739 --> 02:37:36,739
+Let me use some more space such that language of M is equal to language of G.
+
+587
+02:37:41,523 --> 02:37:48,523
+So they have the same language, languages.
+
+588
+02:37:48,523 --> 02:37:56,523
+So I am quite tired. Let's, let's.
+
+589
+02:37:56,523 --> 02:38:09,523
+So starting next week, we will do these two. So next week, let's say.
+
+590
+02:38:09,780 --> 02:38:27,579
+do these conversions. Okay. So let's finish here today. And,
+
+591
+02:38:31,860 --> 02:38:32,860
+Not, not the next week, but the week after that, we will have a quiz. Okay. So we had two quizzes. We will have one more quiz and then we will have a final. We will not have a second mid-turn. And those will be determining your grades. Any questions?
+
+592
+02:39:01,860 --> 02:39:31,839
+and the other one.

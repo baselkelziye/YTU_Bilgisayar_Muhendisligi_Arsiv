@@ -1,0 +1,2303 @@
+1
+00:01:07,668 --> 00:01:12,308
+Evet, biraz sayı artsın birkaç kişi daha diye bekliyorum. Başlayacağım. Merhaba arkadaşlar.
+
+2
+00:01:36,468 --> 00:01:58,468
+Şimdi şöyle ki, aslında bu hafta ders yapmayacağımızı konuşmuştuk sizinle. Fakat birkaç noktada açıklama yapmanın faydalı olacağına karar verdik Yukan Bey'le, Amaç Bey'le konuşup. O yüzden bugün bir saat bir ders yapıp...
+
+3
+00:01:58,927 --> 00:02:09,927
+hem ödevle ilgili biraz açıklama yapmak istedik hem de sınavla ilgili gelen az sayıda da olsa sorun eğitimi vardı.
+
+4
+00:02:09,927 --> 00:02:18,927
+Onlara ortak bir cevap verirsek belki soru sormamış ama aklımda sorusu olan kişilerin de cevabı olur diye düşünündük.
+
+5
+00:02:18,927 --> 00:02:26,927
+O yüzden şimdi önce bir ödevle ilgili bir açıklama yapacağım. Arkasından da sınavla ilgili kapatıp ekran paylaşayım.
+
+6
+00:02:43,348 --> 00:02:45,100
+Ekranımı görüyor musunuz?
+
+7
+00:02:47,283 --> 00:02:47,863
+Evet hocam.
+
+8
+00:02:47,863 --> 00:03:04,163
+Tamam, güzel. Şimdi sizinle şey diye konuşmuştuk aslında, işte ödevi olabildiğince basit yapacağız ki çok vakit harcamadan çözüm şeklinde konuşmuştuk ve o şekilde hazırladık.
+
+9
+00:03:15,283 --> 00:03:22,443
+Programlama, backtracking, farklı konularda ödevler yaparak bunlarla ilgili bir tecrübe kazandınız.
+
+10
+00:03:22,543 --> 00:03:25,483
+Bu daha genel bir ödev olsun diye düşündük.
+
+11
+00:03:25,843 --> 00:03:30,983
+Burada da popüler bir konu seçelim, onu gerçeklesinler diye düşündük.
+
+12
+00:03:32,383 --> 00:03:34,623
+Ve aslında çok kolay bir ödev.
+
+13
+00:03:35,163 --> 00:03:43,283
+Fakat 3-4 arkadaşımızdan mail geldi ve o mailleri okunca aslında amaç B'de ben...
+
+14
+00:03:43,283 --> 00:03:51,323
+Bende şey olarak üzüldük, ödevi anlayamayacak kadar demek ki biraz yetersiz durumdalar.
+
+15
+00:03:51,323 --> 00:04:01,963
+Çünkü mailde şöyle bir şey yazıyor, bu ödevi yapmak için veri madenciliğinin kütüphanelerini kullanmak gerekiyor falan yazıyor.
+
+16
+00:04:02,503 --> 00:04:11,143
+Halbuki hiç öyle bir şey yok ödevde. Belki başka şey anlayamayanlar da olmuş olabilir.
+
+17
+00:04:11,283 --> 00:04:19,183
+diye bir açıklama yapma ihtiyacı duydum. Önce oraya geçmeden o maillerle ilgili de şöyle bir yorum yapmak istiyorum.
+
+18
+00:04:20,024 --> 00:04:28,083
+Yani bir kişinin yazdığı uzun bir maili alıp hiçbir şey değiştirmeden aynen kullanan bir 5-6 kişi.
+
+19
+00:04:28,083 --> 00:04:36,083
+Çok fazla sayıda değil ama 5-6 kişi olmuş. Yani maili değiştirmeye üşenecek kadar...
+
+20
+00:04:38,644 --> 00:05:06,644
+Enerjisiz olmanız üzücü tabii. Samimi görüşlerimiz her zaman açığız zaten bunlar bizim için çok önemli. Elimizden geldiğince sizlerden gelen yorumlara, eleştirilere göre yaptığınız şeyleri şekillendirmeye gayret ediyoruz zaten. Ama tamamı yanlışlarla dolu bir mail yazmış birisi. Öbürküler de onu okumadan aynısını gönderiyor, forward ediyor. Hoş değil. Fikir sizin fikriniz.
+
+21
+00:05:06,644 --> 00:05:34,644
+Görüşler sizin görüşleriniz olmalı. Birisi oturmuş kendince AKTS hesaplamış ki hiç ilgisi yok. O AKTS'ye göre aslında iki vize var ama AKTS'nin üzerinde zaman harcatıyorsunuz falan diyor. Tamamen yanlış. O AKTS mantığına bakacak olursak bir ödev gerideyiz. Orada iki ödev gerideyiz. Altı ödev bir proje derken biz...
+
+22
+00:05:34,644 --> 00:05:50,220
+Biz dört ödev ve bir projede kaldık. Bir vizemiz yok. İki vize varken biz bir vize yaptık. Yani o AKTS hesabına girersem normalde aslında bizim çok daha fazla ağır bir...
+
+23
+00:05:50,324 --> 00:06:07,324
+Bir şey yapmamız gerekirdi. Fakat biz en baştan şey diye konuştuk, yani bu şartlar altında bize yapmak çok ölçme açısından faydalı olmuyor. Hem de uzaktan ders dinlemek çok güç bir şey. Ödev yaparak öğrenme...
+
+24
+00:06:08,692 --> 00:06:36,692
+Oranınızı arttıralım. Çünkü ödev yaptığınızda eminim ki sizler de benimle aynı fikirdesinizdir. İyi bir tecrübe kazanıyorsunuz. Dinlediklerinizin pekişmesi sağlanmış oluyor. Ama orada onu yaparken de yine sizin fark edeceğiniz şekilde geçen yıl, yani onu pek fark edemeyebilirsiniz geçen yılların ödevlerini bilmiyorsanız ama geçen yıllara oranda birazcık daha basit sormaya çalıştık. Yani ne bileyim mesela dinamik...
+
+25
+00:06:36,692 --> 00:06:43,692
+programlama da zaten Edit Distance'ın bağıntısı var. Bir önceki ödevdeki hashing bilgileri kullanılıyor filan.
+
+26
+00:06:43,692 --> 00:06:53,692
+Yani olabildiğince kısa sürede yapılabilecek ama size faydalı olacak ödevler yapmaya çalıştık. Ödev sayısını arttırmadık.
+
+27
+00:06:53,692 --> 00:07:01,692
+Bir biz de yapmamış olmamıza rağmen eski yıllarda olduğu gibi dört ödev bir proje şeklinde yaptık fakat
+
+28
+00:07:01,939 --> 00:07:28,219
+Projenin mesela şeyini azalttık. Önceki yıllarda daha ağır proje konuları gerçekten kapsamlı oluyordu projelerimiz. Onu basit değiştirdik. Yani elimizden geldiğince öğrenmemizi arttıracak ama bu dönemde yaşadığımız tabii ki güçlüklerle de dikkate alacak şekilde ilerlemeye çalıştık.
+
+29
+00:07:28,980 --> 00:07:30,980
+Çünkü...
+
+30
+00:07:31,379 --> 00:07:38,900
+Şeyde size bir haksızlık olur, yani her şeyi çok basite indirgersek, bu da gelişmeniz açısından size bir haksızlık olur.
+
+31
+00:07:39,660 --> 00:07:48,260
+Çünkü hayat devam ediyor, iki yıl sonra mezun olduğunuzda, yani hatta bir buçuk yıl sonra mezun olduğunuzda,
+
+32
+00:07:49,360 --> 00:07:57,160
+yani bir rekabet ortamının yüksek olduğu bir yerde iş bulmaya çalışacaksınız.
+
+33
+00:07:59,379 --> 00:08:27,060
+olmanızı sağlamaya çalışmamız gerekiyor. Biz sadece elimizden geldiğince bu konu çok samimiyim. Yani bunu yapalım ama yaşanan güçlüklerle daha da işlerini zorlaştırmadan yapalım diye uğraştık. O yüzden zaten bir vizeyi tamamen kaldırıp ödevlerden vize notu verme sebebimiz budur. Bunu da sizlerle konuşup kararı almıştık hatırlarsanız. Dolayısıyla uzun bir giriş oldu ama
+
+34
+00:08:27,379 --> 00:08:40,640
+Yani proje konusunda çok basitken bu şekilde yok kütüphaneler kullanılıyor, yok AKTS'ye geçiyorsunuz falan gibi desteği olmayan itirazlar açıkçası bizi üzdü.
+
+35
+00:08:41,720 --> 00:08:49,299
+Yine de dediğim gibi ödevi bir açıklamak istedim. Yaparken daha rahat yapabilmeniz açısından.
+
+36
+00:08:49,775 --> 00:08:59,056
+Şöyle ki, şey şu anda çok popüler, recommendation sistemler son yıllarda çok popüler.
+
+37
+00:09:00,096 --> 00:09:11,596
+Netflix, Amazon, Pinterest, YouTube, pek çok internet ortamında milyonlarca kullanıcısı olan şey, firma.
+
+38
+00:09:12,500 --> 00:09:26,799
+tavsiye sistemlerini kullanıyor. Mesela fark ediyorsunuzdur, Netflix kullanıyorsanız eğer Netflix size film öneriyor, diyor ki işte sen şunları şunları seyretmişsin, bunları da seyretmek isteyebilirsin diyor.
+
+39
+00:09:27,220 --> 00:09:34,180
+Hocam, ödüyorum ama acaba bir araya girebilir miyim? Hani siz tam ödevi açıklamadan daha önceki şeylerle alakalı.
+
+40
+00:09:35,180 --> 00:09:37,500
+Şeyi ben yazmıştım, maili hani...
+
+41
+00:09:37,875 --> 00:09:47,635
+Maili ben yazdım ve grupta paylaştım. Benim böyle sıkıntılarım var. Sizin de varsa hocaya iletin diye. Sanırım oradan bir kopyalama olmuş, şey yapılmış. Arkadaşlar tarafından atılmış.
+
+42
+00:09:48,895 --> 00:09:51,576
+AKTS ile ilgili, ben [öğrenci] hocam bu arada.
+
+43
+00:09:52,215 --> 00:09:53,195
+Tamam, peki.
+
+44
+00:09:54,135 --> 00:09:59,816
+AKTS ile ilgili hocam, 6 lap gözüküyor, 2 ödev gözüküyor, 2 vize gözüküyor.
+
+45
+00:10:00,019 --> 00:10:02,779
+Ben o yüzden iki lablarımız tamam.
+
+46
+00:10:03,779 --> 00:10:19,779
+Hayır, lablarımız tamam değil. Altı lab şu, ben sana açıklayayım o zaman. Altı lab denilen şey zamanında, bizim önceki yıllarda yaptığımız gibi, biz aslında ödev veriyoruz, labda o ödevleri gösteriyordunuz.
+
+47
+00:10:19,779 --> 00:10:28,019
+Yani lablar o. Yani lab dediğin yoksa hiçbir zaman bu derste labrotuvarda ne yapabilirsin ki? Dolayısıyla yani altı lab dediğin...
+
+48
+00:10:28,019 --> 00:10:56,019
+6 ödevdir o, üst sınırı. Biz onu 4 ödev her sene o şekilde yapıyoruz. Yani 4 ödev, bir de proje şeklinde. Bazı yıllar program müsait oluyor. 5 ödev bir proje şeklinde yapıyoruz. Dolayısıyla senin Labli'ye gördüğün şey, ki biz bunu zaten aslında anlatıyoruz da, Labli'yi o ödevleriniz, evde verilen ödevlerin Labli'yi size sorular sorulara yapıyoruz.
+
+49
+00:10:56,019 --> 00:11:03,259
+Yaptırılmasıdır. Biz bunu şeyden beri yapamadık. Geçen sene de yaptık. Bu COVID döneminin başından beri.
+
+50
+00:11:03,759 --> 00:11:12,459
+İşte bugün de mesela random öğrenci seçerek yapabileceğiz yine. Çünkü zaman yetmiyor aynı ortamda olmayınca.
+
+51
+00:11:12,839 --> 00:11:20,000
+Zaman yetmiyor. Dolayısıyla hele şey falan çok komik. Yani işte proje 10 saat yiyor ama bu 10 saatte bitmez.
+
+52
+00:11:20,000 --> 00:11:23,799
+İşte kusura bakma ama yani üzüldüm açıkçası.
+
+53
+00:11:24,019 --> 00:11:34,000
+Çünkü yani 10 saat bitiremiyorsan, yani o senin şeyin olabilir ama ortalamada o zaman, yani baktığınız zaman 4 tane ödev vermişiz.
+
+54
+00:11:34,079 --> 00:11:42,219
+6 yerine 4 ödev vermişiz. Bir vize yapmamışız. Sen bunları hepsinin ortalamasını niye hesaplamadan böyle bir hesaba giriyorsun? Bir.
+
+55
+00:11:42,639 --> 00:11:49,719
+İkincisi de bu bence güzel bir savunma değil. Yani ödevi yapmamak istemeyen birisi için.
+
+56
+00:11:52,019 --> 00:11:58,819
+Bir sürede bitmeyecek bir ödev bu çünkü. Bilmiyorum. Benim görüşüm açıkçası.
+
+57
+00:11:59,419 --> 00:12:07,219
+Daha önce şey yaptığınız mı bilmiyorum ama ödevlerimi incelediniz mi? Ben ödev yapmaktan kaçan biri değilim. Aksine hatta ödevlerim bonusuna kadar yaptım.
+
+58
+00:12:07,879 --> 00:12:14,959
+Her ödevimi de teslim ettim ve zamandan önce teslim etmeye özen gösterdim. Hani ödevden kaçma amacıyla değil,
+
+59
+00:12:15,923 --> 00:12:24,203
+Sadece hem bu hafta, genel olarak diğer derslerimizin de tamamında projelerimiz var ve ödevin yoğunluğu çok fazla.
+
+60
+00:12:24,603 --> 00:12:25,263
+Kaç ders de var?
+
+61
+00:12:26,043 --> 00:12:31,603
+Hocam benim veri tabanında ödevim var.
+
+62
+00:12:32,371 --> 00:12:39,771
+Şu anda veri iletişimi bir tane verecek, onu da şey yapmadık, vermedi, veri iletişimi bu hafta vereceğim dedi.
+
+63
+00:12:40,431 --> 00:12:46,431
+Onun haricinde finallerimiz var, işletim sistemleri vereceğim diyordu o, en son vermedim dedi.
+
+64
+00:12:47,431 --> 00:12:50,411
+Tamam, demek ki bir tane veri tabanı varmış değil mi?
+
+65
+00:12:50,740 --> 00:13:05,659
+Ama işletiğimiz şey, daha doğrusu diğer derslerimiz de var hocam. Ben 8 tane ders alıyorum ve önümüzdeki hafta finaller var. Hani finaller olmasa, bir hafta önce bu ödev verilmiş olsa gerçekten sesimi çıkartmaz oturur yapardım. Ama finallerle birlikte çok yoğun geçiyor.
+
+66
+00:13:06,100 --> 00:13:11,899
+[kişisel bilgi] Yoğunluk olarak zaten bir şey.
+
+67
+00:13:12,480 --> 00:13:21,059
+Şimdi biz bunu her zaman zaten bu şekilde veriyorduk. Çünkü dediğim gibi bu ödev sabah oturduğunda akşam bitirebileceğin bir ödev.
+
+68
+00:13:21,679 --> 00:13:28,199
+Yani bu seneye özgür, işte Covid'den ötürü son anda verilmiş falan bir dönemin sonunda,
+
+69
+00:13:34,100 --> 00:14:01,100
+yapar gibi oturup ödevi yapın diye. Yani bu ödev iki hafta çalışılacak falan bir ödev değil. Gerçekten sabah oturduğunda yani sınavda sorulabilir mesela hani ağır olur tabii de sınavda süre açısından. Sabah oturduğunda akşam bitirebileceğim basitlikte bir ödev. Yani on saatte falan ilgisi yok. Şimdi zaten anlatacağım. Anlattığın zaman sen de anlatacaksın. Kütüphanelerle, mütüphanelerle falan ilgisi yok. Keşke...
+
+70
+00:14:02,100 --> 00:14:10,959
+Biliyorum ki, bunlar başka şeylerdi, kütüphane kullanılarak hazır metotlar. Biz o metotları yazmamızı bekliyoruz.
+
+71
+00:14:10,959 --> 00:14:12,179
+Ya ama değil işte.
+
+72
+00:14:13,491 --> 00:14:41,491
+Yani gerçekten gerek yok. Şimdi yazacağımı göreceksin. İstersen bir dinle, ondan sonra hala, yani bunu birinci sınıf öğrencisine versek yapar yani o derece basitlikte. Çünkü algoritmik bir şey yok. Yani şey daha zordu bakın, backtracking ödeviniz daha zordu. Çünkü hani backtracking'i anlamış olmak lazım, bilmek lazım vesaire. Ama burada gerçekten temel bilgilerinizi kullanarak bir çözüm üretmek.
+
+73
+00:14:41,491 --> 00:14:49,251
+Yani bu ödevde bir zorluk yok. Seviye olarak geçen yıllarda biz hep şey falan soruyorduk.
+
+74
+00:14:49,692 --> 00:15:00,192
+İşte labirente dolaşma, işte web first search, bread first search kullanabileceğiniz oyunlar vs. böyle bayağı kapsamlı zaman alıcı ödevler soruyorduk.
+
+75
+00:15:00,291 --> 00:15:09,491
+Bakın şimdi bunu anlatacağım eğer okumadıysanız. Yani özellikle biz anlatmaya gerek kalmasın diye uzun uzun açıkladık bunu şeyde.
+
+76
+00:15:09,491 --> 00:15:35,271
+ödevde. Ama yine de şu anda anlatmanlık da belki daha faydalı olur diye anlatmak da istedik. Senin mailinden sonra açıkçası. Yani demek ki anlaşılmıyor belki de bizim yazdıklarımız diye düşünerek. Şimdi anlatayım ondan sonra hala daha bunu kütüphaneler kullanarak yapıyorlar diye düşünüyorsam o zaman zaten benim söyleyebileceğim bir şey kalmayacak.
+
+77
+00:15:37,491 --> 00:15:54,171
+Açıklık getirin. Ben herhangi bir şekilde saygısızlık ya da şey yapmak istemedim. Belki öyle düşünüyor olabilirsiniz ama ben sadece kendi sıkıntımı dile getirmeye çalıştım. Belki mailde yanlış bir şey söylemişsem ya da size karşı bir şey yapmışsam da onun için de özür dilerim.
+
+78
+00:15:54,207 --> 00:15:55,827
+Ona da şey demek istedim.
+
+79
+00:15:56,307 --> 00:16:05,527
+Teşekkür ederim. Zaten ben de bir şey, kırgınlık olmasını istemem ama yani dediğim gibi şey olarak kullanmaya çalışmak yok.
+
+80
+00:16:05,607 --> 00:16:11,127
+Ödevler açıklanmadı, sınavlar öyle oldu, böyle oldu demek farklı argümandır.
+
+81
+00:16:11,127 --> 00:16:16,887
+Şey farklıdır. Yani [öğrenci]'in o şekilde bir suçlayıcı tarzıydı.
+
+82
+00:16:16,947 --> 00:16:22,187
+Halbuki deseydin ki bu şekilde şey, ben zaten biz bunun farkında olduğumuz için çok yumuşattık.
+
+83
+00:16:22,207 --> 00:16:50,087
+Bütün ödevleri, bütün şeyleri elimizden geldiğince ama sizin seviyenizi yukarıda tutmak da bizim görevimiz olduğu için yani dengeyi bulmaya çalıştık açıkçası. Hem çok zorlamayalım ama mutlaka tecrübe kazansınlar diye. Ama mail daha çok böyle hani onlardan yan şeylerden dolaşıyor. Siz AKTS'ye uydunuz mu? Zaten siz de bilmem şunu açıklamadınız falan diye. O kısmı üzücüydü yoksa yani bu ödevi yetiştiremem.
+
+84
+00:16:50,207 --> 00:17:07,208
+falan deseydi, daha şey oldu. İstersen şöyle yapalım, çünkü ikide laboratuvar başlayacağı için ödevi mutlaka anlatmak istiyorum. Eğer konuşmak istediğin şeyler varsa sonra biz seninle ayrıca konuşalım. 20 geçti çünkü çok az zaman mı kaldı. Bir anlatmaya katılalım.
+
+85
+00:17:07,208 --> 00:17:07,268
+Tamam hocam.
+
+86
+00:17:07,268 --> 00:17:08,827
+Hocam ben bir şey sorabilir miyim?
+
+87
+00:17:09,236 --> 00:17:17,096
+Hayır, soramazsın. Şunu anlatayım, sonra sorun. Ne olur önce anlatayım, süremi kullanayım. Sorularınızın hepsini sonra alacağım, söz veriyorum.
+
+88
+00:17:17,496 --> 00:17:28,635
+Şimdi, burada şimdi kitap önerisi yapan bir sistem kurmanız istendi. Bunun için Collaborative Filtering, işbirlikçi filtre, işbirlikçi olması demek şu demek.
+
+89
+00:17:28,635 --> 00:17:33,635
+Eski sistemlerde şeyler tek değerlendiriyordu. Yani sizin...
+
+90
+00:17:34,067 --> 00:17:59,587
+Davranışınız tek değerlendiriyordu. Burada şöyle bir şey yapılıyor. Ya size benzeyen kişilerin nasıl seçimler yaptığına bakılıyor, size benzeyen kişilerin seçimleri öneriliyor. Yani size benzeyen nedir? İşte sizin seyrettiğiniz türde filmleri seyreden. Çünkü hepimiz tek düzey davranmıyoruz. Mesela sadece romantik komedi, sadece bir biyografi izlemiyoruz.
+
+91
+00:18:02,067 --> 00:18:13,887
+Yani bilmem o türü değil, ne bileyim işte bir kısım Recep İvedik türü izlerken, bir kısım Cem Yılmaz türü izliyor gibi farklı şeyler var, tarzlar var.
+
+92
+00:18:14,708 --> 00:18:26,867
+Dolayısıyla size benzeyen kişiler demek gerçekten sizin alışkanlıklarınıza benzeyen, yani sizin gibi filmler seçen kişiler veya sizin gibi kitaplar seçen kişiler demek.
+
+93
+00:18:26,867 --> 00:18:29,527
+Netflix ilk başlatan bu recommendation.
+
+94
+00:18:30,067 --> 00:18:40,547
+Sistemi o şekilde. İkincisi de bu size benzeyen kişiler, ikincisi de yaptığınız seçimlere bakarak seçimlerinize benzeyen şeyler önerme.
+
+95
+00:18:40,547 --> 00:18:56,427
+Yani birincisi user-based, yani size benzeyen kişiler. İkincisi item-based, yani işte daha önce sen şu filmleri izlemiştin veya şu kitapları okumuştun, şimdi de bunları izlersin şeklinde öneriler.
+
+96
+00:18:58,067 --> 00:19:13,708
+Sizin ödevde yapacağınız şey, user-to-user similarity. Bu şu anda şey, aslında bunu kullanmıyor ama basit olduğu için. Yani şu anda onlar item-based kullanıyorlar.
+
+97
+00:19:15,700 --> 00:19:36,259
+Genel olarak Netflix vs. Fakat kolay olması açısından biz User to User similarity'yi seçtik. Şimdi benzerlik ölçmek için neden faydalanılıyor? Co-variance'dan yani iki bilginin birlikte nasıl değiştiğinden faydalanılıyor.
+
+98
+00:19:36,259 --> 00:19:42,839
+Şimdi çok basit, kısacık hatırlatacağım. Bilmenize gerek yok ama yine de hatırlatacağım.
+
+99
+00:19:43,700 --> 00:20:02,960
+Bir x bilgisinin varyansı, x bilgisinin varyansı diyelim ki n tane örneğimiz var. Bunların varyansını görmek istiyorsunuz. Nedir? Birden n'e kadar değişirken x'i eksi mü x
+
+100
+00:20:03,375 --> 00:20:17,056
+Yani x'in ortalaması bölü m'dir. Değil mi? Bu şey gösteri, yani n tane örneğin birbirine göre değişimini gösteri. Bu da standart sapmanın karesi zaten.
+
+101
+00:20:18,276 --> 00:20:24,375
+Burada bizim yakalamaya çalıştığımız şey şudur aslında, varyans neyi gösteriyor standart sapma?
+
+102
+00:20:25,135 --> 00:20:30,375
+Ortalamaya göre nasıl değiştiğini gösteriyor. Neden? Çünkü örneğin...
+
+103
+00:20:32,211 --> 00:20:42,211
+Şöyle bir şeyin ortalaması ile ikisinin de ortalaması hesapladığınız zaman iki ediyor fakat dağılımları farklı.
+
+104
+00:20:42,211 --> 00:20:48,211
+Halbuki standart satmada ortalamaya göre değişime baktığınızda dağılımı anlıyorsunuz. Şimdi varyans bu.
+
+105
+00:20:48,211 --> 00:20:54,211
+Co-varians dediğimiz şey de iki bilginin birbirine göre değişimi.
+
+106
+00:21:03,443 --> 00:21:17,043
+Bu da iki bilginin birbirine göre değişimi. Böylece buradan da şeyi anlamaya çalışıyoruz. Yani bunların benzerliklerinin nasıl olduğunu anlamaya çalışıyoruz. Diyelim ki iki özelliğimiz olsun.
+
+107
+00:21:17,268 --> 00:21:20,427
+Boy ve kilo gibi iki tane özelliğiniz olsun.
+
+108
+00:21:22,107 --> 00:21:29,467
+Şöyle düşünün, işte boyu şu olanın kilosu da bu falan şeklinde değerler verildiğini düşünün.
+
+109
+00:21:29,567 --> 00:21:31,508
+Boy bir bilgi, kilo ikinci bilgi.
+
+110
+00:21:31,508 --> 00:21:38,387
+Şimdi mesela şu, büyük pozitif korrelasyon.
+
+111
+00:21:39,635 --> 00:21:58,615
+Yani bu birlikte artıyorlar. Mesela işte küçük çocuklar, özellikle şeylerde olur. Mesela küçük çocuklarda boyu artarken kilosu da birlikte artar. Mesela bu pozitif korrelasyon. İşte diyelim ki şu korrelasyon yok.
+
+112
+00:22:04,627 --> 00:22:14,768
+Şu da negatif korrelasyon. Mesela sigara içtikçe işte şey oluyorsunuz, ömrünüz kısalıyor mesela. Bu da negatif korrelasyon.
+
+113
+00:22:15,284 --> 00:22:20,524
+Dolayısıyla korrelasyon iki bilginin birlikte nasıl değiştiğini bulmak için kullanılıyor.
+
+114
+00:22:20,524 --> 00:22:28,984
+Ve şey, yani buradaki kovaryanslarında şeyleri görüyoruz biz.
+
+115
+00:22:29,104 --> 00:22:35,544
+Yani birlikte aralarındaki ilişkinin nasıl olduğunu görüyoruz.
+
+116
+00:22:36,964 --> 00:22:43,284
+Şimdi burada kullanılan şey, burada iki kullanıcının birbirlerine göre değişimine...
+
+117
+00:22:43,284 --> 00:22:50,284
+görmek için kullanılan şey, korrelasyon Pearson korrelasyonu.
+
+118
+00:22:51,824 --> 00:23:00,284
+Ve şu aslında Pearson korrelasyonu, X ve Y gibi iki bilgimiz varken, bunların Pearson korrelasyonu,
+
+119
+00:23:02,740 --> 00:23:13,819
+Sizin ödevde kullanacağınız bu aslında. Eksi bir ile artı bir arasında değişiyor. Eğer R sıfırdan büyükse bu pozitifli correlated.
+
+120
+00:23:17,748 --> 00:23:24,867
+R0'dan küçükse negatif correlation, R0 ise da aralarında ilişki yok demek.
+
+121
+00:23:25,327 --> 00:23:29,847
+Şimdi biz bize en çok benzeyen kişileri bulmaya çalışıyoruz.
+
+122
+00:23:29,988 --> 00:23:31,867
+O yüzden bu şeyi kullanıyoruz.
+
+123
+00:23:31,968 --> 00:23:33,087
+Pearson korrelasyonu.
+
+124
+00:23:33,147 --> 00:23:35,008
+Sizin yapacağınız şey aslında bu.
+
+125
+00:23:35,528 --> 00:23:40,548
+Farklı kullanıcıların birbirlerine benzerliğini ölçmek.
+
+126
+00:23:40,548 --> 00:23:45,688
+İki değişken arasında yani A kullanıcısı ile B kullanıcısı arasındaki.
+
+127
+00:23:45,748 --> 00:24:13,688
+benzerliği ölçmeye çalışıyoruz. Benzerlik ne kadar büyükse, değil mi? Yani bu iki kullanıcı birbirine o kadar çok benziyorlar demektir. Yani burada mesela bire yakın bir şey var, pozitif korelasyon var. Burada sıfır, hiç ilgileri yok birbirleriyle. Burada da negatif, eksi bir korelasyon var. Birbirlerine ne kadar benziyorlarsa, korelasyon o kadar yüksek çıkıyor. Şimdi benzerliği bulmak için Pearson korelasyonu.
+
+128
+00:24:13,748 --> 00:24:27,436
+kullanıyoruz. Şuradan şimdi ödevi açacağım bir saniye. Oradaki bandıyı tam aynı şekilde yazmak için. Şimdi bu A kullanıcısı, şu da B kullanıcısı. Tamam mı?
+
+129
+00:24:30,932 --> 00:24:57,932
+Bu ikisi arasındaki Pearson kats sayısına bakıyorsunuz. Şimdi buradaki şöyle bir yazayım önce. Ondan sonra bildiğiniz, az önce yazdığım ikisinin covariansı. Başka bir şey değil. Şu eşit biraz kötü geldi şurada.
+
+130
+00:25:03,412 --> 00:25:09,412
+Standart tapma aslında. Normalizasyon sağlıyor.
+
+131
+00:25:26,867 --> 00:25:34,907
+Şuradaki şeyler A ve B'nin ikisinin de okuduğu kitaplar.
+
+132
+00:25:39,380 --> 00:25:42,920
+Çünkü birinin okuduğu kitap üzerinden simileti ölçemezsiniz.
+
+133
+00:25:43,600 --> 00:25:53,240
+Şu A'nın reyting ortalaması, şu da B'nin reyting ortalaması.
+
+134
+00:25:53,240 --> 00:25:55,880
+Yani A'nın, şimdi şöyle bir şey vardı.
+
+135
+00:25:59,604 --> 00:26:11,923
+bir madde, aslında Excel tablo onu Word olarak kullan, şey özür dilerim, normal TX'te işte CSV nasıl kullanırsanız kullanın, Excel'i çözmeye çalışmayın, onu bir data file olarak kullanın.
+
+136
+00:26:12,384 --> 00:26:18,144
+Şimdi şurada user'lar var, şurada da book'lar var. Sekiz taneydi yanlış hatırlamıyorsam kitaplar.
+
+137
+00:26:19,984 --> 00:26:22,104
+Şurada da user'larımız var.
+
+138
+00:26:22,884 --> 00:26:23,364
+Konur mu?
+
+139
+00:26:23,964 --> 00:26:25,364
+Dolu gözler için...
+
+140
+00:26:27,124 --> 00:26:29,124
+Ortalamayı hesaplıyorsunuz.
+
+141
+00:26:31,124 --> 00:26:32,124
+Sonra da...
+
+142
+00:26:32,339 --> 00:26:47,319
+Her kitap için, bakın toplamını alıyorsunuz, var olan bütün kitaplar için birinci kitabın ortalamadan farkı çarpı, birinci kitap için beynin verdiği reytingin ortalamadan farkı, ondan sonra işte bunların toplamı.
+
+143
+00:26:47,439 --> 00:26:52,619
+Bu da standart sapma, şunlar zaten, A'nın standart sapması, B'nin standart sapması.
+
+144
+00:26:53,099 --> 00:26:55,839
+Normalizasyon için de buna bölüyorsunuz, olay bu.
+
+145
+00:26:55,839 --> 00:26:59,559
+Şimdi ne yaptınız? Şeyleri buldunuz.
+
+146
+00:27:00,339 --> 00:27:15,539
+Buradaki, biz şunu sormuştuk, üstte şeyler vardı, eski user'lar vardı, 1 ile 20 arasında, altta da new kısaltılmış o, 5 tane yeni user vardı.
+
+147
+00:27:15,539 --> 00:27:25,199
+Biz dedik ki, her user'ın, yani şu birinci user için, buradaki 20 kişiye benzerliğini ölçün dedik.
+
+148
+00:27:25,556 --> 00:27:31,676
+Ve en çok benzediği, şimdi benzerliğini ölçtünüz, şurada simlerimiz var sizin.
+
+149
+00:27:32,336 --> 00:27:44,456
+Mesela sim, işte new user 1'in, user 1'e, işte user 2'ye, böyle 20 tane user'a similatisi değerleri var.
+
+150
+00:27:45,036 --> 00:27:50,016
+Bunun en çok benzediği K kişi, K'ya 3 dedik galiba.
+
+151
+00:27:50,836 --> 00:28:10,756
+Ezbere hatırlamıyorum. Ne demişiz? 3 demişiz. K eşittir 3 için similatisi en yüksek 3 kişiyi seçiyorsunuz. Mesela en yüksek, diyelim ki 5'in yüksekmiş, 7'nin yüksekmiş, 2'nin yüksekmiş. En yüksek 3 kişi bunları seçtiniz şimdi.
+
+152
+00:28:11,347 --> 00:28:13,347
+En çok...
+
+153
+00:28:13,347 --> 00:28:17,347
+Onların yasuru olmayacak mı hocam? U5, U7.
+
+154
+00:28:17,347 --> 00:28:21,347
+Ay çok özür dilerim, haklısın. Çok teşekkür ederim düzelttiğim için.
+
+155
+00:28:21,347 --> 00:28:23,347
+Çok özür dilerim, kesinlikle.
+
+156
+00:28:25,347 --> 00:28:29,347
+Öyle kalmasın notlarda. U5, U7, U2 oldu.
+
+157
+00:28:30,347 --> 00:28:32,347
+Bu şekilde.
+
+158
+00:28:34,324 --> 00:28:53,324
+Şimdi elinde bu üç kullanıcı var. Bu üç kullanıcı için şey hesaplıyorsun. Şöyle göstereyim. Şimdi bu benim yeni kullanıcım bir. Tamam mı? Şu da işte...
+
+159
+00:28:54,708 --> 00:29:20,387
+Küçük yaptım, beş tane kitap diyelim ki varmış burada. İşte buna iki vermiş, buna bir vermiş, buna da dört vermiş. Ben şuna ve şuna verdiği puanları merak ediyorum. Verebileceği puanları merak ediyorum. Tahmin edeceğim, hangisine yüksek puan verir gibi gözüküyorsa onu önereceğim. Şimdi benim elimde U5, U7, U2 var.
+
+160
+00:29:20,915 --> 00:29:37,803
+U5, U7, U2, en benzer üç kişi. Tamam mı? Buna bakarak, bu New User 1'in kitaplar için...
+
+161
+00:29:41,299 --> 00:29:56,939
+Okumadığı kitaplar için tahmini verebileceği puanı hesaplıyorum. Çünkü yüksek puan verebileceğini düşündüğü kitabı önereceğim. O da nedir?
+
+162
+00:30:08,147 --> 00:30:31,987
+Okuyucunun diğer kitaplara verdiği şeyler, ortalama değerler ve bu da bu K kişi aslında, yani burada bizim için bu örnek için U5, U7 ve U2 kişileri, birinci kullanıcıya en çok, yani veya işte birinci okuyucuya en çok benzeyen 3 kişi.
+
+163
+00:30:36,079 --> 00:30:38,119
+Şunu alıyorum.
+
+164
+00:30:40,179 --> 00:30:44,859
+Bu birinci kullanıcıya olan benzerliklerini zaten hesaplamıştım.
+
+165
+00:30:44,939 --> 00:30:45,740
+Bunu alıyorum.
+
+166
+00:30:46,859 --> 00:30:56,559
+Ve o kitaplar için bu kullanıcının verdiği puanı alıyorum.
+
+167
+00:31:04,627 --> 00:31:09,248
+Bunu bu şekilde hesaplıyorum.
+
+168
+00:31:09,948 --> 00:31:17,428
+Şimdi bunu bir kullanıcı için yaptınız.
+
+169
+00:31:17,667 --> 00:31:20,127
+İşte iki tane puan buldunuz.
+
+170
+00:31:20,548 --> 00:31:25,087
+Hangi puan daha yüksekse o kitabı şeye öneriyorsunuz.
+
+171
+00:31:25,299 --> 00:31:51,559
+kullanıcıyı öneriyorsunuz. Bunu da işte beş tane vardı yanılmıyorsam, new user'du, beş kişiydi. Beş kişi için yapıyorsunuz, bir tablo yapın dedik. Tabloda işte beş kişi için şeyleri vermenizi istedik. Yani şurada en çok benzediği üç kişi
+
+172
+00:31:52,660 --> 00:32:10,460
+Yani iki tablo da yapabilirsiniz ama az bilgi olduğu için tek tabloya da sağ. Burada da önerilen kitaplar. Hatta şunu da yapabilirsiniz. Yani ben mesela görmek için yapardım sizin yerinizde olsam.
+
+173
+00:32:20,596 --> 00:32:30,596
+U7, U2 var ya, burada da bunların kitaplar hakkındaki verdikleri oylar. Buradan şeyi çok görürsünüz. Şimdi tabii bizim...
+
+174
+00:32:32,147 --> 00:33:00,147
+Küçük bir data file hazırladık ki şey olmasın diye, yani hani gözle görün çok, aslında bu gibi gibi falan bunlar yapılıyor. Gözle görün diye burada şeyi görebilirsiniz. Mesela bu 3 vermiş, ne bileyim, diyelim şöyle 4 vermiş, 5 vermiş. Bakıyorsunuz bu da 3 vermiş, işte 5 vermiş, 4 vermiş. Benziyorlar gerçekten birbirlerine. Mi yoksa benzemiyorlar mı falan. Bunu da görürsünüz mesela böyle her...
+
+175
+00:33:00,147 --> 00:33:28,087
+kullanıcı için en çok benzediği üç kişinin bilgilerini yazdırırsanız bunu da görme fırsatınız olur. Yani şimdi burada bir kere şey tamam kabul ediyorum pek çok konuda ağır şeyler var, hesaplar var ne bileyim ben mesela bugün şimdi size kalkıp da principal component analizle bilmem ne yapın desem onun kodu yazılmaz veya işte destek vektör yani verim aden.
+
+176
+00:33:28,147 --> 00:33:45,507
+Ancılığı alanlar için söylüyorum. Bu isimleri duymuşlardır bu yöntemleri. İşte bilmem destek vektör makinesi konusuyla ilgili kod yazın desem yazılmaz. Zaten biz de öyle bir şeyi sizden istemeyiz. Ama burada yapacağınız tek hesap bir ortalama hesabı yapacaksınız.
+
+177
+00:33:46,483 --> 00:34:12,023
+Bir de işte fark alıp, dinam, birbiriyle çarpma. Yani iç içe döngülerde yapılacak. Gerçekten şey yok burada. Yani böyle bir algoritmik ağırlık yok. Yani işte rekürsif çözüm, ondan sonra backtracking yapım falan yok. Biz sadece şey istedik. Yani bir algoritmayı baştan sona geliştirin. Yani ödevin hedefi şudur arkadaşlar.
+
+178
+00:34:14,483 --> 00:34:33,483
+Üçüncü sınıftayım. Algoritma geliştirebilme yeteneğim oturdu. Efektif bir şekilde bir algoritmayı, yani çok daha abuk subuk çözümler önermeden, baştan sona güzel bir şekilde yaparım. Bu algoritmam çalışır ve şu anda çok...
+
+179
+00:34:34,132 --> 00:35:01,751
+gündemde olan bir konuyla ilgili bir tasarım yaparım. Bu hoşunuza giderse belki bu yolda ilerlemeyi tercih edersiniz. Bu noktada da size bir şeydir yani bir başlangıç uygulamasıdır. Bunu yaparsın. Bunu mesela GitHub'ta şeylerimize koyun. Yaptığınız çalışmalara koyarsınız. İşte user to user, recommendation, collaborative filter kullanarak user to user.
+
+180
+00:35:02,132 --> 00:35:22,551
+The Commendation System yazdım, kitap önerdim falan. Sonra hoşunuza gider, araştırırsınız, geliştirirsiniz, başka şeyler yaparsınız. Ödemin hedefi buydu. Yani birazcık daha farklı, değişik bir gerçek hayat uygulamasını yapabildiğinizi görmenizi istedik. Şimdi sorunuz varsa alayım.
+
+181
+00:35:23,891 --> 00:35:33,231
+Ben şey soracaktım. Bu dataları ben program içerisinde tanımladım. O şekilde mi yapmamız gerekiyor yoksa?
+
+182
+00:35:33,231 --> 00:35:34,311
+O seda.
+
+183
+00:35:35,155 --> 00:36:03,135
+Dosyadan okuyun. Dur, göreyim ben seni. [öğrenci]'cim dosyadan okuyun. Çünkü datayı değiştirmeye kalksak, ödevi okurken, örneğin farklı bir datayla denemeye kalksak da çalışabilsin. Ama dosya Excel olmasın. Yani o Excel verdik diye Excel'den kişi okumaya falan çalışmayın. Yani bir TXT dosya olabilir. Ne olursa olsun küçük bir şey zaten. Yani 25 satıra 8.
+
+184
+00:36:03,155 --> 00:36:04,956
+Gizlik falan bir şey zaten. Olur mu?
+
+185
+00:36:05,376 --> 00:36:06,315
+Tamam hocam.
+
+186
+00:36:07,456 --> 00:36:09,036
+Hocam ben de bir şey sorabilir miyim?
+
+187
+00:36:09,115 --> 00:36:09,775
+Tabii buyurun.
+
+188
+00:36:11,016 --> 00:36:20,296
+TXT'ye çevirsek diyelim, mesela diyelim ki ilk satıra kitap isimlerini yazdık, sonraki satırlara da kullanıcılara, en son alt satıra da önerilecek olan kullanıcıları yazdık.
+
+189
+00:36:20,735 --> 00:36:26,436
+Bu oluşturduğumuz TXT'yi de göndermemiz gerekebilir mi? Çünkü ben diyelim farklı bir formatta oluşturdum.
+
+190
+00:36:26,815 --> 00:36:28,815
+Çok doğru söylüyorsun.
+
+191
+00:36:28,815 --> 00:36:32,815
+Çünkü siz farklı bir formatta denediniz, o zaman sıkıntı oldu.
+
+192
+00:36:32,815 --> 00:36:44,815
+Çok doğru söylüyorsun, haklısın. Biz orada birazcık hızlı davrandığımız için sanıyorum, orada herkesin farklı yapabileceğini atlamış olabiliriz.
+
+193
+00:36:44,815 --> 00:36:50,815
+Evet, lütfen şeyinizi de gönderin. Nasıl dosyayı, nasıl yazdıysanız onu da gönderin.
+
+194
+00:36:53,427 --> 00:37:07,487
+O şekilde olsun. Şimdi şu dakikada şey desem onunla ilgili de sorun çıkacaktır eminim ki. Biz size bir tip dosya gönderelim, siz öyle yapın falan desem. Ben yaptım, ben öyle, ben böyle olmasın. Herkes dosyasını da göndersin. Sıkıntı olmaz onunla ilgili.
+
+195
+00:37:07,927 --> 00:37:18,148
+Hocam şöyle bir öneri yapabilirim. Bu dosyanın uzantısını silip CSV olarak değiştirdiğinizde direkt CSV olarak açılıyor ve o kanalinden çok kolay bir şekilde bakabilirsiniz.
+
+196
+00:37:21,427 --> 00:37:33,688
+Başta bir dedim onu CSV olarak kullanabilirsiniz isterseniz diye. Yani isterseniz şöyle yapalım, sınıfçak herkes CSV yapsın, böylece herkesinkisi ortak olur.
+
+197
+00:37:34,324 --> 00:37:36,203
+Evet hocam, öyle daha iyi olabilir bence.
+
+198
+00:37:36,364 --> 00:37:41,063
+Tamam, bir sonradan. Çünkü aslında arkadaşlar da bazen sıkıntı yaşıyorlar. Efendim?
+
+199
+00:37:41,583 --> 00:37:47,183
+Excel'e bakmıştım. Excel için okuma, libraryler kullanılıyor ama onu da C'de de bulamadım hangisi kullanılıyor diye.
+
+200
+00:37:47,183 --> 00:37:58,423
+Çok haklısın. Tabii tabii çok haklısın. Kesinlikle. CSP bence onu çeviriyor zaten. Biz onu Excel öyle şey yaptık.
+
+201
+00:37:58,708 --> 00:38:08,708
+onu rahatlıkla istediğiniz şekilde yani CSP olsun herkes aynı yapsın, kullanalım. Başka var mı aklınıza takılan? Yani bakın gerçekten şey için söylemiyorum yani
+
+202
+00:38:10,579 --> 00:38:14,960
+Konu şu anda çok popüler, recommendation sistemler çok popüler.
+
+203
+00:38:15,860 --> 00:38:20,780
+Tabii şu anda derin öğrenmeyle yapılıyor bunlar, şey değil, çok geliştiği yöntemler.
+
+204
+00:38:21,200 --> 00:38:28,980
+Ama temelinden başlayıp, yani aslında göz korkutacak bir şey olmadığını görmeniz açısından temelde bir kovaryansa dayanıyor.
+
+205
+00:38:29,119 --> 00:38:33,880
+Yani iki bilginin birlikte değişmesine bakarak kovaryansa dayanıyor.
+
+206
+00:38:33,880 --> 00:38:38,440
+O açıdan rahatlıkla yapabilirsiniz, korkmayın.
+
+207
+00:38:38,579 --> 00:38:42,380
+Kısa sürede yapabilirsiniz. Gerçekten ben şimdi sınavda size...
+
+208
+00:38:42,771 --> 00:39:07,952
+İki tane dizi versem, kovaryansını hesaplayın desem, tak 20 dakikada bunu yaparsınız. Tabii ki bu kapsamlı bir ödev yani işin içinde dosyadan okudum, işte binden ona baktım buna baktım bir sürü hikaye var. O yüzden zamanınız olacaktır ama lütfen ödevi yapmak için uğraşın çünkü gerçekten yani bunu bütün samimiyetimle söylüyorum. Yapan var anladığım kadarıyla. Tünün ne kadar sürgü yapma?
+
+209
+00:39:09,331 --> 00:39:22,651
+İki günümü aldım, aralıksız değil hocam. Bir arada dersler falan vardı. Saat söyler misin? Saat söyleyecek olursam, bir sekiz saat falan sürmüştür.
+
+210
+00:39:23,219 --> 00:39:41,399
+Tamam, peki. Biz de yaklaşık o kadar olur diye hesaplamıştık. Çok uzun sürmeyecek, korkmayın. Ve zevkli, bence yapmaya çalışın. Yaparsanız iyi olur. Başka sorunuz yoksa bunu geçiyorum. Var mı aklınıza takılan sormak istediğiniz?
+
+211
+00:39:41,399 --> 00:39:51,219
+Benim var hocam bir tane sorum. Testlerin üçüncü maddesinde tablo olarak alınsın denmiş ya, o yani fail olarak alınsın.
+
+212
+00:39:51,219 --> 00:39:53,319
+yazdırmamız mı gerekiyor yoksa dost üzerine
+
+213
+00:39:53,319 --> 00:39:54,899
+yazdırmamız yeterli mi nasıl bir
+
+214
+00:39:54,899 --> 00:39:57,039
+anlayamadım ne demişiz
+
+215
+00:39:57,039 --> 00:39:59,239
+şey denmiş
+
+216
+00:39:59,239 --> 00:40:00,679
+testlerde üçüncü maddede
+
+217
+00:40:00,679 --> 00:40:03,379
+rapor da vereceksiniz
+
+218
+00:40:03,379 --> 00:40:05,719
+en çok önerilen kitabı
+
+219
+00:40:05,719 --> 00:40:07,659
+hani şey yapılıyor
+
+220
+00:40:07,659 --> 00:40:08,959
+ya bir dakika
+
+221
+00:40:11,411 --> 00:40:30,431
+Yani onu yazdıracak şekilde kodunuzu yazmanız gerekiyor. Yani tablo derken aman şey değil yani tablo tablo bir tablo değil. Yani satır satır yazacaksın yani öyle bir şey. Ekrana da yazdırırsınız. Dosya yazmanızı düşünmedik açıkçası yani ekrana yazdırırsanız yeter.
+
+222
+00:40:31,171 --> 00:40:32,431
+Tamam tamam teşekkür ederim.
+
+223
+00:40:32,811 --> 00:40:35,291
+Rica ederim. Var mı başka sorunuz?
+
+224
+00:40:35,891 --> 00:40:37,571
+Hocam son kez ben de sorabilir miyim?
+
+225
+00:40:37,571 --> 00:40:38,631
+Tabii lütfen.
+
+226
+00:40:39,380 --> 00:40:44,599
+O new userları, yani önereceğimiz kişileri farklı bir tekste tutsak olur mu?
+
+227
+00:40:44,599 --> 00:40:45,519
+Bir şey olarak?
+
+228
+00:40:46,771 --> 00:41:14,151
+Bence orada tutabilirsin. Şöyle bir şey yapabilirsin istersen. Ben aslında hepinize onu tavsiye ederim. İlla ki ilk 20 kişi falan değil, yukarıda şey bilgisini tutabilirsiniz. Yani kaç user var? User dediği aslında train settir arkadaşlar, onu söyleyeyim. New user dediği de test settir, veri madenciliği alanlar için. Yukarıda şey yazabilirsin.
+
+229
+00:41:14,771 --> 00:41:28,851
+Dosyadan okumak olur ama bence gerek yok. Yukarıya mesela ilk sayı user sayısını, ikinci sayı da test user sayısını gösterecek şekilde dosyanın en başında o bilgiyi de okuyabilirsin istersen.
+
+230
+00:41:29,831 --> 00:41:30,331
+Tamamdır hocam.
+
+231
+00:41:30,331 --> 00:41:32,111
+Anlatabildim mi ne demek istediğimi? Anlatmıyorum.
+
+232
+00:41:32,871 --> 00:41:34,851
+Tamam peki, çok teşekkürler. Başka?
+
+233
+00:41:36,131 --> 00:41:38,731
+Tamam, hızla bir şeye daha devam edebilir miyim şu anda?
+
+234
+00:41:40,659 --> 00:41:49,899
+Peki. Şöyle, ikinci söyleyeceğim. Bir dakika. Gruba şey yazacağım, labla ilgili.
+
+235
+00:41:54,931 --> 00:41:56,131
+Evet.
+
+236
+00:41:59,764 --> 00:42:10,764
+Tamam yazdım. Evet şimdi geri dönüyorum. Şimdi sınavlarla ilgili birkaç açıklama yapmak istiyorum sizi final sınavına da hazırlamak açısından.
+
+237
+00:42:10,764 --> 00:42:12,764
+Şimdi öncelikle...
+
+238
+00:42:13,588 --> 00:42:21,508
+Sınavda çok dikkatimizi çeken birkaç tane şey vardı. Bunları da bugün Amaç Bey de aynı şekilde kendi grubuna anlatacak.
+
+239
+00:42:22,408 --> 00:42:28,468
+Paylaşmak istedik. Bir takım şeyler vardı sınav notuyla ilgili. Ben beklediğimden düşük aldım.
+
+240
+00:42:28,528 --> 00:42:35,508
+Ve çok az sayıda öğrenciden mail geldi ama bu açıklamadan sonra eğer hala...
+
+241
+00:42:36,467 --> 00:42:43,507
+Yani notunuzun düşük olduğunu beklediğinizden düşünüyorsanız, o zaman yazın onu değerlendireceğim.
+
+242
+00:42:44,427 --> 00:42:49,687
+Çünkü bu açıklamanın genel bir şey olacağını düşünüyorum.
+
+243
+00:42:49,827 --> 00:42:51,067
+Şimdi orada bir soru vardı.
+
+244
+00:42:51,607 --> 00:42:56,827
+Altın madalya alan yarışmacıyı şeyle bulun diye, nedir?
+
+245
+00:42:56,967 --> 00:42:58,847
+Bölge yönet algoritmayla bulun diye.
+
+246
+00:43:00,587 --> 00:43:03,927
+Çok büyük bir çoğunluk bunu şeyle çözmüş.
+
+247
+00:43:04,467 --> 00:43:23,243
+altın madalya alan en küçük koşma süresi olan kişidir aslında. Çok büyük bir çoğunluk bunu diziyi sıralayarak çözmüş. Biz bunu hiç beklemiyorduk bir kere. Önce onu söyleyeyim. Çünkü yani hani...
+
+248
+00:43:23,251 --> 00:43:49,371
+Dizinin en büyük elemanını bulma. Aslında bizim birinci sınıfta gösterdiğimiz, sizin çok iyi bildiğiniz bir şey. Yani hiçbir zamanda en küçük eleman neyse işte bulmak için diziyi sıralamadınız. Yani öyle bir şeyin yapılabileceği bizim hiç aklımıza bile gelmemişti. Kağıtların çok büyük çoğunluğunda MergeSort veya QuickSort'da dizi sıralandığını görünce öncelikle çok şaşırdık.
+
+249
+00:43:51,251 --> 00:44:03,092
+İki sınıfta da aynı şekilde, hadi diziyi sıralayalım, tabii yapılmaması gereken büyüklükte hata ama devamında da yine bizi çok şaşırtan genel bir sıkıntı vardı.
+
+250
+00:44:03,931 --> 00:44:08,152
+Mesela hadi tamam diziyi sıraladım, bari sıfırıncı elemanını ekrana yazdır, değil mi?
+
+251
+00:44:08,307 --> 00:44:11,188
+O bile yok. Mesela dizinin tamamını yazdırıyorlar.
+
+252
+00:44:11,188 --> 00:44:18,548
+Yani bu biraz şey gibi, o kadar ne yaptığımın farkında değilim ki.
+
+253
+00:44:18,688 --> 00:44:20,847
+Neyi yazdırmam gerektiğini bile bilemiyorum.
+
+254
+00:44:21,307 --> 00:44:27,347
+Bütün diziyi yazdırayım var yani ne oldu ben de farkında değilim gibi yorumlanabilecek bir cevap.
+
+255
+00:44:27,807 --> 00:44:31,188
+Bir bu çok şaşırttı bizi. İkincisi de...
+
+256
+00:44:31,635 --> 00:44:43,635
+Hadi yine olmaması gereken bir şey ama diziyi sıraladı. Orada diyor ki, dakika, saniye, saat mi öyle bir şey diye anlıyorsam, süreleri veriliyor diyor.
+
+257
+00:44:43,635 --> 00:44:55,635
+Şimdi güzel bir, benim sınıfımda mesela amaçta da öyle olmuş. Toplamda 10 kişi falan şey yapmışlar veya 15 bilemiyorum şimdi yani ama yarısı değil sınıfın.
+
+258
+00:44:55,795 --> 00:45:23,655
+zamanı dönüştürmüşler. Ama geri kalanları ona bile gerek duymamış. Yani bir bilgiyi aktarıyor, öbür tarafta da sıralıyor. Yani hiçbir şekilde soruya özgü hiçbir dokunuş yok. Yani bari zamanı çevireyim, o çevirdiğim zamanı sıralasın. Hani hadi sıraladım. Bunlar da yok. Yani bunlar bizi bayağı bir şaşırttı. Şimdi bunun da devamı, tamam hadi.
+
+259
+00:45:23,795 --> 00:45:36,036
+Her şey kabul. Hadi diziyi sıraladı. Diyor ki altta brute force olarak nasıl şey yapardınız, yapsaydınız nasıl yapardınız diyor.
+
+260
+00:45:36,036 --> 00:45:50,795
+Yani daha mı iyi olurdu diyor. Orada da herkes demiş, yani herkes değil, çok büyük çoğunluğu, inanın o kadar az kişi, brute force'da bunun karmaşıklığı en olurdu demiş ki, artık iyice şaşırdık çünkü
+
+261
+00:45:51,347 --> 00:45:55,947
+Çoğunluk şey demiş, brute force daha kötü olurdu çünkü karmaşıklık Enkare demiş.
+
+262
+00:45:57,268 --> 00:46:01,567
+Yani şimdi bu sıkıntılı bir cevap.
+
+263
+00:46:01,887 --> 00:46:06,427
+Yani bu gerçekten brute force şey olurdu, nedir?
+
+264
+00:46:07,699 --> 00:46:23,420
+Daha kötü olurdu. En kare demek büyük bir ihtimalle yani o kadar aslında problemi diziyi sıralamadan çözeceğinin farkında değil ki şey diye düşünüyorum.
+
+265
+00:46:29,460 --> 00:46:33,820
+Dizi sıralanmadan çözülemez diye düşünüyor herhalde.
+
+266
+00:46:35,860 --> 00:46:40,460
+Yani buna ne diyeceğimi bilemedim açıkçası. O yüzden...
+
+267
+00:46:41,331 --> 00:46:50,032
+Ve biz buna puan verdik bu arada. 5 ile 10 arasında yapılan şeylerin içeriğine göre konuştuk. Kaç puan verelim diye.
+
+268
+00:46:51,431 --> 00:46:59,012
+Üçüncü sınıfta algoritmalarının sonuna gelmişken en küçük elemanı bulmak için dizi sıralanması, yani cinayetten öte bir şey.
+
+269
+00:46:59,152 --> 00:47:03,492
+Bir tarafta dinamik programlama anlatıyorsun, backtracking anlatıyorsun bilmem ne.
+
+270
+00:47:03,492 --> 00:47:09,331
+Öbür tarafta birinci sınıfta daha öğrettiğimiz bir konudan gol yemiş gibi o his.
+
+271
+00:47:09,331 --> 00:47:25,331
+Hissettik kendimizi. Ama yine de emeğe karşılık 5 ve 10 arasında bir puan verdik. Fakat dediğim gibi, hadi onu öyle yaptım. Devamında brute force'da bizim en küçük elemanını bulmanın karmaşıklığının en olduğunu söyleyememek herhalde çok...
+
+272
+00:47:26,527 --> 00:47:31,407
+sınavda telaşlandınız yaparken diye düşünmek istiyorum.
+
+273
+00:47:32,407 --> 00:47:34,867
+Yani şuna bile ben tama yakın puan verdim.
+
+274
+00:47:34,867 --> 00:47:37,887
+Bir şey miydi? Az önce konuşan [öğrenci] miydi?
+
+275
+00:47:38,487 --> 00:47:40,007
+İsmi uzun birisi vardı.
+
+276
+00:47:40,148 --> 00:47:41,847
+Evet hocam, [öğrenci]'yi de konuşuyoruz.
+
+277
+00:47:41,947 --> 00:47:45,007
+Sen, sanıyorum sen değil mi? Şey yapmışsın.
+
+278
+00:47:46,087 --> 00:47:48,608
+Sen misin? O öyle gibi kalmış aklımda.
+
+279
+00:47:48,967 --> 00:47:50,527
+Diziyi ikiye bölmüş birisi.
+
+280
+00:47:51,923 --> 00:47:53,804
+Bunun en küçüğünü bulmuş.
+
+281
+00:47:54,023 --> 00:47:55,443
+Evet hocam, ben öyle yapmıştım.
+
+282
+00:47:55,943 --> 00:47:58,144
+Buna ben tam ayakı puan verdim.
+
+283
+00:47:58,943 --> 00:48:05,224
+Çünkü Divayden Concord diyor ki, basit bir şekilde, iyi diyor ben bunu ikiye bölerim diyor.
+
+284
+00:48:05,403 --> 00:48:08,463
+Ondan sonra tek bir metamik iyi karşılaştırırım diyor.
+
+285
+00:48:08,463 --> 00:48:19,463
+Yani güzel, sizden tam çalışan her şey, şahane bir algoritma beklemiyoruz ama bunu akletmiş olmak ve çünkü Divayden Concord'un en önemli kullanım şeklinde...
+
+286
+00:48:19,923 --> 00:48:44,764
+Birisi paralel programlama için. Yani bunu iki işlemciye verirsin. Birisi bir tarafını yapar, birisi bir tarafını yapar. Sonucuda karşılaştırırlar. İş yükünü paralel çalıştırdığın için azaltırsın. Ama gerçekte olması gereken hali senin bu yaptığının aslında şu şekilde rekürsif olarak tekrar edilmesiydi.
+
+287
+00:48:45,231 --> 00:48:56,231
+Asi tamamını isterseniz yazayım, elinizde bulunsun. Bunu böyle böyle giderek, Nutsword'da yapıyorduk ya böyle böyle giderek,
+
+288
+00:48:58,579 --> 00:49:12,480
+En küçük birer eleman kalana kadar en küçük parça için iki elemanı yani birer eleman kalınca iki elemanı karşılaştırıp sonucunu yukarı döndüre döndüre gitmekte aslında yapmanız gereken şey.
+
+289
+00:49:16,500 --> 00:49:32,739
+Left'inizi veriyorsunuz. Right'ınızda aslında şeye çok benziyordu. Merge Soft'ta yaptığımız yaklaşıma çok benziyordu. İşte burada değişken deklarasyonunuz var. Left-Right'a eşitse, pardon şurada iki eşit olacak.
+
+290
+00:49:38,739 --> 00:49:47,960
+Left'in adresi, yani en küçük eleman iki tane şey, bir tane eleman kaldıysa kendisidir mantığıyla.
+
+291
+00:49:48,599 --> 00:50:00,199
+Durma noktası olarak, left-right'e eşitse dur, o eleman yani şeyi döndürüyor bu, en küçük elemanın adresini döndürüyor aslında.
+
+292
+00:50:00,199 --> 00:50:03,199
+Şimdi tek kalana kadar gidiyorsunuz.
+
+293
+00:50:04,179 --> 00:50:19,179
+Tek eleman kalana kadar gidiyorsunuz. Toplamı da şu şekilde yapıyorsunuz. Yani toplama derken geriye dönme. Rekürsif olarak gittiğiniz yerden geriye dönmeyi de şu şekilde yapıyorsunuz. İki parçaya bölüyorsunuz.
+
+294
+00:50:21,179 --> 00:50:27,179
+A dizinizi. [öğrenci] mi diyoruz, ne diyoruz sana?
+
+295
+00:50:29,179 --> 00:50:30,179
+Efendim hocam?
+
+296
+00:50:30,179 --> 00:50:31,179
+İki esin vardı.
+
+297
+00:50:31,503 --> 00:50:32,583
+Neyi kullanıyorsun?
+
+298
+00:50:33,023 --> 00:50:34,244
+Göktörünü kullanıyorum hocam.
+
+299
+00:50:34,503 --> 00:50:37,563
+Tamam oldu. Öbürü benim daha çok aklımda kalmış.
+
+300
+00:50:40,023 --> 00:50:44,523
+Yani dizi iki parça. Senin yaptığın aslında paralelde şöyle oluyor gerçekte.
+
+301
+00:50:46,003 --> 00:50:51,643
+Soldan ilk yarıya aldınız. İkinci yarıdan da sona kadar gittiniz.
+
+302
+00:50:53,003 --> 00:50:54,864
+Şey çağırıyorsunuz bu şekilde.
+
+303
+00:50:56,628 --> 00:51:06,228
+minimum bulma fonksiyonunuzu çağırıyorsunuz. Ondan sonra gelen değerlerden, yani tamamen WorkSort'taki mantığa benzer şekilde
+
+304
+00:51:23,315 --> 00:51:27,515
+Küçük olanını geri döndürmüş, küçük olanın adresini geri döndürmüş oluyorsunuz.
+
+305
+00:51:27,515 --> 00:51:33,895
+En son da, yani küçük olanın adresi, küçük elemanın adresi dönüyor.
+
+306
+00:51:34,175 --> 00:51:43,395
+Main programda şeyi yazdırdığımız zaman, örneğin şöyle diyeyim, mesela şu, şöyle yapayım.
+
+307
+00:51:46,775 --> 00:51:50,415
+Şu main programınız olsun.
+
+308
+00:51:52,403 --> 00:51:56,824
+Mesela işte burada yukarıda okumalar falan filan, hikayeler var.
+
+309
+00:51:57,864 --> 00:52:00,384
+Find minimumu ne için çağıracaksınız?
+
+310
+00:52:00,543 --> 00:52:05,463
+Sıfırdan en eksi bire kadar olan kısım için çağıracaksınız A dizisinde.
+
+311
+00:52:06,063 --> 00:52:08,804
+Ondan sonra da ne olacak?
+
+312
+00:52:09,604 --> 00:52:16,164
+A'nın mininci gözü en küçük elemanın adresini verecek size.
+
+313
+00:52:20,659 --> 00:52:27,960
+Bunu şey yapmaya çalışsaydınız, Divayden Concours'la yapmaya çalışsaydınız, mantık bu aslında.
+
+314
+00:52:28,079 --> 00:52:34,679
+Yapmanız gereken şey, sol taraf ve sağ taraf için geriye gide gide bunu çözmeye çalışmaktı.
+
+315
+00:52:35,460 --> 00:52:40,840
+Dediğim gibi, yani ben açıkçası şuna bile, yani tamam böldüm, iki parçayı karşılaştırdım.
+
+316
+00:52:41,719 --> 00:52:43,719
+Tama yakın yanılmıyorsam puan verdim.
+
+317
+00:52:43,719 --> 00:52:47,719
+Şimdi ezberi hatırlamıyorum, bir yerlerde ufak tefek kaçaklar vardı seninkisinde de.
+
+318
+00:52:48,659 --> 00:52:53,659
+Şimdi bununla ilgili önce bir açıklama yapacağım. Sonra size...
+
+319
+00:52:54,867 --> 00:53:00,227
+Söylemek istediklerinizle ilgili fırsat vereceğim, cevap hakkı vereceğim.
+
+320
+00:53:01,267 --> 00:53:04,847
+Yani dediğim gibi bir sayı soruyu sorarken şey diye sormuştuk.
+
+321
+00:53:05,087 --> 00:53:10,147
+Bir kere algoritmasına 20 puan verdim. Dedim ki ne yaptıklarını görelim.
+
+322
+00:53:10,247 --> 00:53:13,207
+Sonuçta o kadar böyle yönet vs. anlattık.
+
+323
+00:53:13,927 --> 00:53:16,487
+Yapabildikleri kadarına puan veririz.
+
+324
+00:53:16,567 --> 00:53:19,327
+Hakikaten çok büyük samimiyetle söylüyorum.
+
+325
+00:53:19,327 --> 00:53:22,827
+Hiç aklımıza sıralamaya çalışacağımız gelmedi.
+
+326
+00:53:22,867 --> 00:53:29,487
+Dediğim gibi yani onu daha birinci sınıftayken bile konuşmuyorduk biz en küçük eleman bulmak için bizi sıralamayı.
+
+327
+00:53:30,627 --> 00:53:32,667
+Ve yine devamında da şunu söyleyeceğim.
+
+328
+00:53:33,927 --> 00:53:42,327
+Hani onu yaptınız, en küçük eleman bulmanın karmaşıklığına en kare yazılması daha çok şaşırtıcı bir durumdu.
+
+329
+00:53:42,327 --> 00:53:43,687
+Yani çoğunluk tarafından.
+
+330
+00:53:44,547 --> 00:53:50,867
+Dolayısıyla bu soruda yani o on puan dediğim toplamda yani bütün sorudan toplamda...
+
+331
+00:53:50,867 --> 00:54:02,987
+yaklaşık 5 ile 10 arasında bir puan verdik. Aslında yani çok bir şey verilmemesi gerekirdi ama emek var diye puan verdik. O soruyla ilgili olay bu.
+
+332
+00:54:03,347 --> 00:54:14,487
+HASH ile ilgili şunu söylemek istiyorum. Orada da çok az kırdık ama genel bir şey olduğunu görmek açısından söylüyorum.
+
+333
+00:54:18,867 --> 00:54:21,867
+Ya kırmışımdır, ya kırmamışımdır. Çoğunluk
+
+334
+00:54:22,579 --> 00:54:50,579
+Tablo uzunluğunu dizi uzunluğu kadar almış. Biz bunu uzun uzun anlattık size. Dedik ki tablo uzunluğunun, dizi uzunluğunun yaklaşık iki katı kadar olması gerekir dedik. Bunu demiş olmama rağmen sınavda bir veya iki kişi dışında herkes tablo uzunluğunu dizi uzunluğu kadar almış veya daha kötüsünü, yani ikisi de kötü çünkü, tablo uzunluğu beşse, şey dizi uzunluğu...
+
+335
+00:54:50,579 --> 00:55:08,335
+tablo uzunluğunu 100 falan almış böyle. Yani bunun yanlış anlaşılmış olabileceğini düşündüğüm için burada özellikle söylüyorum. Yani puan kırma açısından değil çünkü gerçekten puan değeri...
+
+336
+00:55:08,335 --> 00:55:27,035
+önemli ama az puan kıldım ama demek ki burada bir yanlış anlaşılma oldu. Tablo uzunluğunun, vize uzunluğu kadar alınması. Buna dikkat etmenizi, bunu yani bir kez daha anlatılanları takip ederek nasıl alınması gerektiği konusunda şey yapmanızı istiyorum.
+
+337
+00:55:29,076 --> 00:55:49,955
+Yani genel olarak söyleyeceği bir bu kadar. Çok bariz birbirinden yani şey hissiyatı oluşan kağıtlar vardı. Testte de öyle yani çok bariz bir şekilde ortak hatalar yapılmış olan gruplar vardı yine.
+
+338
+00:55:50,579 --> 00:55:55,780
+Ama tabii ki o konuda herhangi bir şey yapmadık zaten. Yapma hakkımız da yok.
+
+339
+00:55:57,219 --> 00:56:05,119
+Algoritmalarda da yani çok yine belli böyle aynı mantıkta o kadar olmaması gereken benzerlikler vardı.
+
+340
+00:56:05,559 --> 00:56:11,780
+Fakat sadece biridir, artık yani uçuk açmış bir şekilde aynı olanlarda...
+
+341
+00:56:12,916 --> 00:56:30,256
+şey yaptık, öyle konuştuk aramızda da. Çok belli yani her şeyiyle birebir aynı olanlarda not kırdık. Benim sizden yani ricam şu şekilde, lütfen bunu yapmayın.
+
+342
+00:56:31,699 --> 00:56:53,699
+Hoş değil, çünkü sabah görüntü işleme dersinde de söyledim ben. Dedim ki arkadaşlar bakın siz piyasaya çıktığınızda, akademik hayata devam ederseniz bir açıdan kötü, öğrenci kağıtlarını okuyacaksınız ama siz kendiniz mesela diyelim ki kopya çeken kişi derseniz siz kendiniz zaten başta doğru ilerlemiyorsunuz.
+
+343
+00:56:59,699 --> 00:57:21,699
+gizliliğin çok önemli olduğu yerlerde çalışma ihtimaliniz var. Yani size bütün banka müşterilerinin datası emanet edilecek veya bütün telekom müşterilerinin yani herkesin bilgisine her şeyi görüp istediğinizi yapabilme şeyiniz olacak, gücünüz olacak. Orada etik şeylerle...
+
+344
+00:57:24,532 --> 00:57:41,311
+sınırlısınız. Yani sizin etik görüşleriniz ne yapacağınızı belirler. Yoksa her şeyi yapabilirsiniz aslında. Şimdi o yüzden ben hani şey olsam, bir firmada sizinle mülakat yapan kişi olsam ve
+
+345
+00:57:42,963 --> 00:58:10,963
+Şeyi görsem, yani not ortalaması yüksek olmasına rağmen aslında bilgilerin yetersiz olduğunu görsem, açıkçası hiçbir şekilde güvenip işe almak istemem. Olaya bir şey olarak bakmanızı da istemiyorum. Bir dakika dur bitireyim. Bunun cezası bu olur değil benim söylemek istediğim. Çok daha karmaşık bir şey. Bizim şeyleri kontrol edebilme imkanımız yok.
+
+346
+00:58:10,963 --> 00:58:27,824
+Yapılan kopyaları, kopya olmasa bile şu bile şey, sabah bir asistan arkadaş anlatıyordu, hocam böyle siteler var dedi, sorunuzu gönderiyorsunuz dedi, çözüp size sınav süresi içerisinde dedi, cevabını gönderiyor dedi.
+
+347
+00:58:27,824 --> 00:58:34,664
+Yani şimdi illa arkadaşlarınızla grup kurmanıza bile gerek yok, yani böyle çözümler de varmış, ben bunu bilmiyordum.
+
+348
+00:58:35,164 --> 00:58:38,824
+Dolayısıyla bizim bunu kontrol altında tutmamıza imkan yok, vicdanlığımızla...
+
+349
+00:58:38,963 --> 00:58:48,963
+Baş başasınız. Ben birkaç dersden önce söylemiştim. Şimdi yine aynı şeyi söyleyeceğim. Benim için...
+
+350
+00:58:49,523 --> 00:59:17,163
+Şey nedir? Yani bu sizin seçiminiz. Benim kontrol edip önleyemeyeceğim bir şey olduğu için bu sizin seçiminiz ve yani dediğim gibi hani artık yok artık denecek kadar bir dilinin aynı olmadığı sürece biz hiçbir şey yapmadık. Yani çok bariz kokusunu hissediyorsunuz ama yani sadece değişken adlarını değiştirmiş fakat geri kalan her şey bire bir aynı. O da zaten yanlış falan veya doğru fakat çok şey.
+
+351
+00:59:17,523 --> 00:59:21,203
+Onlarda sadece hakkımızı kullandık.
+
+352
+00:59:22,023 --> 00:59:30,203
+Dolayısıyla demek istediğim, pek çoğunda da siz de biliyorsunuz, aslında bir şey olmadı birlikte yapmış olmanıza rağmen.
+
+353
+00:59:30,643 --> 00:59:36,223
+Ama ne olur, bunu yapmayın. Bence vicdanınızla birlikte olun.
+
+354
+00:59:36,623 --> 00:59:38,523
+Şeyler çok daha değerliydi benim için.
+
+355
+00:59:40,911 --> 00:59:44,671
+Düşük not almış, yani içlerinde 20-30 alan kişiler var.
+
+356
+00:59:45,091 --> 00:59:48,911
+Veya 40 almış, 45 almış fakat çok belli ki kendi kendine yapmış.
+
+357
+00:59:49,871 --> 00:59:53,631
+Çok daha değerliydi, bilmiyorum yani ben oraya böyle yaklaşıyorum.
+
+358
+00:59:54,391 --> 01:00:01,631
+Siz de o konuda, çünkü şeye çok haksızlık oluyor yani ben çekmem diyene çok gerçekten haksızlık oluyor.
+
+359
+01:00:01,831 --> 01:00:04,391
+Söyleyeceğim bu kadar. Evet şimdi alayım söyleyeceğini.
+
+360
+01:00:04,851 --> 01:00:05,951
+10 dakikamız var hala.
+
+361
+01:00:06,771 --> 01:00:17,532
+Şunu sadece söylemek istiyorum da, finali düzgün, bir şekilde net, açık, böyle hani aklınızı okumamızı falan istemeyerek yaparsanız çok memnun olurum.
+
+362
+01:00:18,632 --> 01:00:23,532
+Vize'yi de öyle yaptık da ben de senden şunu rica edeyim, ben senin meyirini de hatırlıyorum.
+
+363
+01:00:23,872 --> 01:00:28,092
+Ne olur birazcık daha çalış da soruları anlamaya çalış çünkü sorular çok açık.
+
+364
+01:00:29,556 --> 01:00:57,556
+Bunun tartışmasını sen ne yapmayacağım? Yani olabilecek en açıklıkta sorulardı. Sen orada şey falan demişsin. Yani üçüncü sınıf öğrencisinin bunu demesi de üzücü. Yok işte ben bilmem neyi mi okuyacağım, onu mu yazacağım falan filan. Bak eğer anladıysam bizim nasıl değerlendirdiğimizden, biz genel olarak algoritmada ne yaptığımıza bakıyoruz. Yani şey çok saçmaydı. İşte string mi okuyacağız, sayı mı okuyacağız?
+
+365
+01:00:57,556 --> 01:01:15,976
+Bilmem ne? Yani orada açık açık yazıyor. İnşallah finalde soruları daha iyi anlayabilirsin. Çünkü senden başka hiç kimseden okuduğum soruyu anlayamadım diye bir yorum gelmedi. Anlamakla ilgili bir şey yok hocam. Net değil. Verinin tipi belli değil, sınırı belli değil. Hiçbir şey belli değil.
+
+366
+01:01:16,371 --> 01:01:32,711
+İşte diyorum senden başka maalesef bu konuda kimseden şey gelmedi. Yani ben soruları anlayamıyorum diye bir şey gelmedi. İnşallah finalde soruları daha iyi anlayacak şekilde çalışırsın.
+
+367
+01:01:32,711 --> 01:01:44,371
+Çünkü bu ders üçüncü sınıfta aldığınız bir ders. Artık sen birinci sınıf birinci dönemden itibaren yani söylenen şey...
+
+368
+01:01:44,371 --> 01:01:52,107
+Eğer bu dizinin şeyleri anlayamıyorsam, yani çok açık bir şekilde diyor ki, bir hash tablosunda diyor, kullanarak iki dizinin kesişimini bulunuyor.
+
+369
+01:01:52,179 --> 01:02:18,199
+diyor yani altta da yazıyor zaten diyor ki ipucu da verdik, vermeye de gerek yoktu. A'yı yerleştireyim, B'yi de arayın diyor. Yani daha açık ne denebilir? Sayı diyor yani. Sayı örnekleri veriliyor veya altta diyor ki altın madalya kazanan kimdir? Yani altın madalya kazanan kimdir? En kısa sürede koşandır. Daha açık ne sorulabilir ki? Saniye, dakika, saat diyor. Yani saniye, dakika, saati.
+
+370
+01:02:20,019 --> 01:02:32,016
+zaman birimini eğer sen nasıl alacağını bana soruyorsan üçüncü sınıfta, yani o zaman demek ki ikinci sınıfta C dersinden hakkıyla geçmelisin. Yani onu nasıl alacağını benim sana...
+
+371
+01:02:32,016 --> 01:02:38,996
+tane tane yazmanı mı bekliyorsun veya bir program karşısı verilmiş, diyor ki bunun karmaşıklığı ne olur diyor.
+
+372
+01:02:39,236 --> 01:02:42,936
+Yani daha ne desin sana? Yani daha ne kadar açıklanabilir bir soru?
+
+373
+01:02:43,376 --> 01:02:48,596
+Katılmıyorum, kusura bakma. Yani soruların açık olmadığı konusundaki görüşüne katılmıyorum.
+
+374
+01:02:48,776 --> 01:02:50,736
+Zor diyebilirsin, hak veririm.
+
+375
+01:02:51,155 --> 01:03:00,076
+değişik diyebilirsin, ne bileyim, yani ne istersen diyebilirsin ama bizim bence sınavlarda...
+
+376
+01:03:00,275 --> 01:03:25,855
+Gereğinden fazla, hatta şunu diyen arkadaşlarım daha haklılar. Çok uzun açıklıyorsunuz, bu kadar açıklama bana fazla geliyor diyenler oluyor. Gerçekten yani bunu şey diye söylemiyorum. Biz bazen hak veriyoruz ama sonra da diyoruz ki işte senin gibi anlayamayanlar için daha açık yazmamız gerekir ki sıkıntı çıkmasın diyoruz. Yani kabul etmiyorum, pek çok eleştirinizi kabul ediyorum ama sana katılmıyorum bu konuda.
+
+377
+01:03:27,188 --> 01:03:28,268
+Var mı başta?
+
+378
+01:03:28,807 --> 01:03:36,528
+Benim vardı hocam. Bir arkadaşım söyledi de, Amaç Hoca galiba hani ödev notlarının, ödev yüzdesini 25 olarak söylemiş de.
+
+379
+01:03:36,688 --> 01:03:48,327
+Aa, evet, evet, evet. Ben onu atladım ve kağıdımı da şu anda bulamıyorum. Biz Amaç Bey'le onu şey yaptık. Eyvah. Dur.
+
+380
+01:03:49,228 --> 01:03:52,188
+Hocam onu yapmasanız olur mu ya? Valla hocam...
+
+381
+01:03:52,188 --> 01:03:53,688
+Bir dakika, bir dakika, bir dakika.
+
+382
+01:03:57,523 --> 01:04:01,523
+Amacın söylediğini yüksek sesle söyler misin? Ben kağıd bulmaya çalışacağım şimdi.
+
+383
+01:04:02,243 --> 01:04:03,723
+Tamamdır hocam, bir saniye.
+
+384
+01:04:04,503 --> 01:04:07,643
+Çünkü o ortak karar, ben özür dilerim ama akladım.
+
+385
+01:04:08,643 --> 01:04:16,403
+Vize duruşu değil mi? Vize 25, ödev 25, dönem projesi 10 puan.
+
+386
+01:04:16,735 --> 01:04:18,055
+Evet hocam, finalde 40.
+
+387
+01:04:18,055 --> 01:04:43,355
+Tamam, evet, finalde 40. Şimdi finalin 40'ını değiştiremiyormuşuz. O yüzden onu elleyemedik. 25-25-10 yaptık. Onu yaparken de şeylerimize baktık. Ödeğin puanlarımız çok yüksekti. Yani bir sürü 100 var. Yani tam puan alan var. O yüzden zaten hani ikinci vize olarak sayacaktık. Bir şey değişmedi yani. %30.
+
+388
+01:04:44,735 --> 01:04:46,335
+Sayacağınıza yüzde yirmi beş saydık.
+
+389
+01:04:48,155 --> 01:04:50,115
+Sen ne istedin onu söyle [öğrenci].
+
+390
+01:04:50,255 --> 01:04:52,255
+Hocam otuz güzeldi ya öyle söyleyebilirim.
+
+391
+01:04:52,695 --> 01:04:55,015
+Yani üçüncüye alıyorum hocam dersi de geçmeye artık.
+
+392
+01:04:55,675 --> 01:04:58,415
+Hayır otuz güzeldi dediğin neyin otuzu güzeldi?
+
+393
+01:04:58,475 --> 01:04:59,355
+Ödevler için hocam.
+
+394
+01:05:00,295 --> 01:05:02,635
+İşte otuz beş oldu. Otuz değil otuz beş oldu.
+
+395
+01:05:03,055 --> 01:05:05,555
+Hocam yirmi beşe düşürdü. Otuz beş olmadı.
+
+396
+01:05:05,875 --> 01:05:07,055
+Yirmi beşe düşürdü bir söz.
+
+397
+01:05:08,371 --> 01:05:08,951
+Hayır.
+
+398
+01:05:08,951 --> 01:05:10,731
+Hocam normalde 30-30.
+
+399
+01:05:11,351 --> 01:05:12,092
+Hayır, hayır.
+
+400
+01:05:12,511 --> 01:05:14,692
+Birinci vize 30'du, ikinci vize 30'du.
+
+401
+01:05:15,431 --> 01:05:18,271
+Proje 10'du, final 40'du, şey 30'du.
+
+402
+01:05:18,643 --> 01:05:22,183
+Hani Diyarı Derslerimizde böyle yapılan şeyler oldu.
+
+403
+01:05:22,683 --> 01:05:46,463
+Şöyleydi arkadaşlar, bakın geçen yıllardaki halini söylüyorum. Biz başlarken, dönem başında bunu böyle konuşmuştuk. Her zaman biz şeyi 3. vize olarak değerlendiriyorduk, ödevleri. 3. vize olarak değerlendiriyorduk. O zaman 20-20-20 oluyordu. 2 vize artı 3. vize olarak. Bu sefer dedik ki şey nedir?
+
+404
+01:05:46,643 --> 01:06:14,643
+ödevleri ikinci vize olarak değerlendireceğiz dedik. Yani aslında birinci vize 20 oluyordu eskiden, ikinci vize 20 oluyordu, ödevde 20 oluyordu. Şimdi siz daha karlısınız çünkü birinci vizeyi 25 yaptık, şeyleri 35 yaptık. İkinci vize artı ödev hesabını 35 yaptık ve bunu gerçekten ödev ortalamalarınıza bakarak yaptık arkadaşlar. En efektif...
+
+405
+01:06:14,643 --> 01:06:15,643
+Çözüm buydu.
+
+406
+01:06:15,860 --> 01:06:20,100
+Hocam, mail atmıştınız da, orada final 30'du, finalin 10'luk...
+
+407
+01:06:20,100 --> 01:06:31,460
+Yapamıyormuşuz, hayır. Onunla ilgili şey geldi. Diğer hocalarınız nasıl yapıyor bilmiyorum. Finali %40 kabul edilmesi gerektiğine dair resmi şey var. Nasıl yapıyorlar onlar?
+
+408
+01:06:32,040 --> 01:06:43,860
+Hocam, şöyle oluyor, siz birinci vizede de parçalamıştınız, bir yazılı bir sözlük test diye. Orada da proje bir parçası oluyordu, diğer sınav...
+
+409
+01:06:43,860 --> 01:06:57,120
+sınavda bir parçası oluyordu. Hani sonuçak yine %40'tı ama şey değişiyordu, hani içeriği sınavı parçalanıyordu, öyle diyeyim. Hani o şekilde olsa daha avantajlı olabiliriz gibi.
+
+410
+01:06:58,003 --> 01:07:03,963
+Finale kaymasını mı diyorsunuz?
+
+411
+01:07:04,103 --> 01:07:09,523
+Final iki parçaya bölünüyordu. Proje %10 artı final notu %30.
+
+412
+01:07:09,684 --> 01:07:11,443
+Final sınavının notu %30.
+
+413
+01:07:11,844 --> 01:07:15,864
+Toplam final notumuzu oluşturup %40 olursa diğerleri 30-30 olabilir.
+
+414
+01:07:17,235 --> 01:07:19,275
+Yani bu...
+
+415
+01:07:19,275 --> 01:07:26,576
+Bir şey de olabilir. Projeyi final yerine de şey yapabilirsiniz. Yüzde on kısmını o şekilde düşürebiliriz finalden.
+
+416
+01:07:27,123 --> 01:07:30,683
+Hayır, size ödev fazla mı geldi, az mı geldi? Ben onu anlamadım.
+
+417
+01:07:30,863 --> 01:07:36,483
+Hocam, ödevler için çok uğraştık. Hani onun yüzdesi daha yüksek olsa daha iyi diye düşünüyorum.
+
+418
+01:07:36,563 --> 01:07:38,283
+E yüzdesini yüksek yaptık özellikle.
+
+419
+01:07:38,283 --> 01:07:38,803
+En azından ben.
+
+420
+01:07:39,443 --> 01:07:41,203
+Yok, doğru söylüyorsun da.
+
+421
+01:07:41,263 --> 01:07:44,863
+Hocam, ödev yüzlerimiz yükseldi ancak şuna göre biz düştü diyoruz.
+
+422
+01:07:44,983 --> 01:07:53,763
+Siz bize attığınız mailde bu dönem içi ödevlerimiz %30, projemiz %10, ilk vizemiz %30, son final sınavı da %30 şeklinde demiştiniz.
+
+423
+01:07:53,923 --> 01:07:54,383
+Evet, evet.
+
+424
+01:07:55,123 --> 01:07:58,623
+biraz daha düşmüş oluyor. Ama tabii geçen sene ögörü yükselmiş oluyor.
+
+425
+01:08:00,963 --> 01:08:03,523
+Biz o maili çok beğenmiştik hocam, evet.
+
+426
+01:08:04,423 --> 01:08:04,683
+Ne?
+
+427
+01:08:05,223 --> 01:08:07,403
+O maili çok beğenmiştik.
+
+428
+01:08:08,023 --> 01:08:12,083
+Bir daha bana söylesenize, vize bir yüzde otuzdu.
+
+429
+01:08:13,163 --> 01:08:16,144
+Ödevler yüzde otuz, proje on, final yüzde otuz.
+
+430
+01:08:16,756 --> 01:08:36,976
+Ödevler %30. Aslında biz bunu tartıştık. En son tartıştığımız hali buydu. Şu anda benim önümde yazıyor zaten. Vize 30, ödev 30, final 30, proje 10 diye tartıştık. Sonra da dedik ki ama resmen %40 final olacak deniyor. Onu içeri alalım dedik. Onun üzerine öyle yaptık.
+
+431
+01:08:37,356 --> 01:08:44,756
+Hocam, finali diğer şeyler gibi yapabilirsiniz. Hani iki parçalı sınav gibi düşünürsünüz. Bir %10'lu kısım projeler.
+
+432
+01:08:44,756 --> 01:08:58,976
+%30'lu kısım şeyden gelir, sınavın kendisinden gelir. Sonuç olarak sınavı iki parçaya bölünebiliyor, orada da benzer bir sistem kullanılabilir, hem bizim açımızdan da daha avantajlı olur.
+
+433
+01:09:00,180 --> 01:09:28,139
+Bunu bir konuşayım ben. Yani tek başıma karar vermeden Amaç Bey'le de bir konuşayım. Çünkü gerçekten biz notlara bakarak şey yaptık aslında. Değerlendirme yaptık. Ve dediğim gibi şeyi düşünerek yaptık. Yani %60, %40 meselesinden ötürü sıkıntı yaşamıyorum diye yaptık. Çünkü bunu kötü bir şey için söylemiyorum ama yani içimizde gerçekten şey yapan var. Yani bir açık yapayım da şikayet edeyim.
+
+434
+01:09:28,180 --> 01:09:32,680
+Ondan sonra sıkıntı olsun, bütün hocalar illallah demiş durumda bu problemden.
+
+435
+01:09:33,180 --> 01:09:42,420
+Şimdi %60, %40 denmişken bir şeyi bozarsak, ondan sonra siz niye %30 aldınız falan diye, sıkıntı çıkarsa diye düşündük açıkçası.
+
+436
+01:09:43,780 --> 01:09:44,800
+Bir bunu konuşayım ben.
+
+437
+01:09:45,479 --> 01:09:50,520
+Sonuç olarak ama şey %40'ınız değişmiyor. Yine final notunu, final sınavı ve proje oluşturuyor.
+
+438
+01:09:50,520 --> 01:09:55,100
+Final sınavı %40'den de anladım, final değerlendirmesi.
+
+439
+01:09:56,180 --> 01:10:04,720
+bakayım. Amaçla da konuşalım. Size haber veririz. Tamam. Başka var mı aklınıza takılan? Çünkü şimdi laba girmek gerekecek.
+
+440
+01:10:04,840 --> 01:10:09,800
+Hocam bir de son kez şeyi soracaktım. Bu labda sunacakların listesini nereden paylaşacaksınız acaba?
+
+441
+01:10:11,399 --> 01:10:16,399
+Bir dakika. Onunla ilgili mesela... Geçen sunanlar yine sunabilecek mi? Hani sunacak mı?
+
+442
+01:10:17,363 --> 01:10:25,683
+Şey bilmiyorum, random seçiyorlar. Random seçmelerini istiyoruz biz. Geçen sundun mu [öğrenci]?
+
+443
+01:10:26,863 --> 01:10:33,723
+Evet hocam sundum. Bir de ben Mac cihazda yazıyorum da, geçen sene sıkıntı olmuştu hocam.
+
+444
+01:10:34,583 --> 01:10:39,363
+Hani dev CPP'de çalıştırmak isteniyordu. Ben de video falan çektim, hani sıkıntı olmasın diye.
+
+445
+01:10:39,891 --> 01:10:42,471
+Hocam geçmek istiyorum gerçekten.
+
+446
+01:10:44,852 --> 01:10:46,131
+Herkes onu istiyor.
+
+447
+01:10:47,772 --> 01:10:52,111
+Hocam, Windows'larla ilgili öyle bir problem var.
+
+448
+01:10:52,332 --> 01:10:57,772
+Mac kullanıcıları, hani bizde derlenen çalışan şey bazen Windows'larda çalışmayabiliyor.
+
+449
+01:10:58,272 --> 01:11:03,172
+O noktada bizim kendi cihazımızda çalıştırsak, öyle sunsak daha avantajlı olabilir.
+
+450
+01:11:03,172 --> 01:11:04,231
+Oradaki kodu...
+
+451
+01:11:04,231 --> 01:11:07,391
+Orada siz atlıyorsunuz ama onlar bayağı acı çekiyorlar.
+
+452
+01:11:07,891 --> 01:11:13,891
+yüzlerce kişi var ve şey oluyorlar yani onların da hepsinin elinde mek yok haliyle.
+
+453
+01:11:13,891 --> 01:11:18,731
+Yani ne yapsınlar, gelen videoya mı baksınlar, yani öbür binden şeye mi baksınlar.
+
+454
+01:11:18,811 --> 01:11:20,951
+Çok zor gerçekten, onların da işi zor.
+
+455
+01:11:21,431 --> 01:11:25,631
+Az kişiler bir de, o yüzden gecikiyor, her şey birbirine karışıyor bir de.
+
+456
+01:11:25,991 --> 01:11:30,051
+Çünkü dört veya beş milyar şu anda, beş kişiler galiba.
+
+457
+01:11:30,831 --> 01:11:33,631
+Kaç tane dersin adı töreni birden onlar yaptırıyorlar.
+
+458
+01:11:33,831 --> 01:11:35,891
+Yani kaç dersin ödevi bir tane onlar okuyorlar.
+
+459
+01:11:35,891 --> 01:11:45,651
+O yüzden yani onların istedikleri şartlarda çalışması önemli. Yoksa senin cihazını o nereden bulsun, nasıl çalıştırsın? Öyle sıkıntılar var.
+
+460
+01:11:45,651 --> 01:11:50,971
+Hocam işte bizde de Windows cihaz yok. Hani bunun için bir daha temin etmemiz gerekiyor.
+
+461
+01:11:51,971 --> 01:11:55,871
+İşte Teams'de'yi parçaladığımız zaman Mac'de çok sıkıntı çıkartıyor.
+
+462
+01:11:56,051 --> 01:12:03,871
+Kesinlikle çözebilirsiniz. Bir arkadaşınıza gönderirsiniz. Dersiniz ki bir derle bakayım ne oluyor. Yani programınız çalışır hale geldikten sonra.
+
+463
+01:12:03,891 --> 01:12:11,631
+Standart C'de yazarsanız zaten problem olmuyordur bence. Yani standartta yazdığınızda olduğunu zannetmiyorum problem.
+
+464
+01:12:12,571 --> 01:12:15,011
+Hocam C99 şu an standart ama.
+
+465
+01:12:15,571 --> 01:12:20,811
+Ben de bekle yazıyorum. Standartta yazınca olmaması lazım ama en kötü ihtimalle.
+
+466
+01:12:20,811 --> 01:12:26,291
+Neyse zaten böyle bir konuda geldik arkadaşlar ama şimdi bütün ödevlerimize bakıldı.
+
+467
+01:12:27,699 --> 01:12:31,979
+O yüzden yapacak bir şey yok ama haklılar, onu söylemeye çalışıyorum.
+
+468
+01:12:32,119 --> 01:12:35,879
+Çünkü sen şimdi Mek dedin, öbürü de bilmem ne dedi.
+
+469
+01:12:36,579 --> 01:12:41,019
+Her durumun problemini çözmeye çalışacak kadar kalabalık değiller.
+
+470
+01:12:41,779 --> 01:12:45,699
+Öyle bir sıkıntı var orada. Bu da onların elinde olan bir şey değil.
+
+471
+01:12:46,612 --> 01:12:50,292
+Yani o kadar asistanlar yapılacak bir şey yok onlar açısından.
+
+472
+01:12:50,431 --> 01:12:52,712
+Elimden gelen o yüzden öyle oluyor.
+
+473
+01:12:53,032 --> 01:12:54,792
+Var mı hakkınıza takılan başka bir şey?
+
+474
+01:12:54,992 --> 01:12:59,912
+Hocam, ben ilk baştaki konuyla ilgili, mail ile ilgili şeyi açıklamak istiyorum.
+
+475
+01:13:00,072 --> 01:13:04,412
+Sizi suçlayıcı olarak belki mail de öyle gözükmüş olmuyor ama suçlama amacı da söylemedim.
+
+476
+01:13:05,051 --> 01:13:10,092
+Hani COVID döneminde sizin de işleriniz aksıyor, psikolojiniz uygun olmuyor.
+
+477
+01:13:10,252 --> 01:13:12,851
+Hani bunlar aksayabiliyor, ona belirtmek istemiştim.
+
+478
+01:13:12,851 --> 01:13:14,612
+Hani işte 40 gün sürdü işte bu açıklaması.
+
+479
+01:13:14,612 --> 01:13:22,511
+açıklanmadı, şu açıklanmadı derken, hani COVID dönemi hepimiz için kötü geçiyor ve gerçekten zorlanıyoruz anlamında söylemiştim.
+
+480
+01:13:22,632 --> 01:13:32,851
+Orada bir suçlayıcılık yoktu. Siz de benzer şeyleri bizimle yaşıyorsunuz demeye çalışmıştım ama sanırım o sizi suçlayıcılık olarak anlaşılmış biraz.
+
+481
+01:13:33,779 --> 01:14:01,319
+Teşekkür ederim açıklamanın için. Gerçekten okuduğumuzda yani öbür gruba da gitmiş çünkü şeyler. Üzüldük onu söyleyeyim. Ama samimiyetine inanıyorum, açıklamalarına da inanıyorum. Gerçekten yani şunu söyleyeyim yani şeyle ilgili hiçbir zaman hiçbir şeyim olmadı benim. Ya öğrencini nasıl zorlasak, nasıl geçemese. Yani mutlaka böyle hocalar vardır benim de öğrencimin sırasında.
+
+482
+01:14:01,779 --> 01:14:13,659
+ders aldım, öyle enteresan tipler olmuştu. Ama yani gerçekten bunca yıllık birbirimizi tanıyorsak eğer, bir kısmımız belki ilk defa benden ders almıştır ama veri yapıları alan var, bölücü işleme alan var.
+
+483
+01:14:16,884 --> 01:14:22,143
+Diğer grup arkadaşlarım da yani mesela bir yapıları verirken Göksel ve Amaç, şimdi Amaç.
+
+484
+01:14:22,523 --> 01:14:24,063
+Hiçbir zaman şey diye düşünmüyoruz.
+
+485
+01:14:24,184 --> 01:14:31,623
+Yani sizin nasıl daha fazla öğrenmenizi, nasıl daha bilerek bu dersten geçmenizi sağlarız.
+
+486
+01:14:31,623 --> 01:14:33,063
+Hakikaten onun peşindeyiz.
+
+487
+01:14:33,543 --> 01:14:35,623
+Yani onun için özel olarak derslere...
+
+488
+01:14:36,079 --> 01:14:42,779
+şeyler hazırlıyoruz, örnekler hazırlıyoruz, bu ödevleri düşüne taşına, onu mu sorsak, bunu mu sorsak hazırlıyoruz.
+
+489
+01:14:42,920 --> 01:14:52,439
+Bazen feylediyor. Mesela bu altın madalya kazanan sorusunda gerçekten böyle bir garip ezimet yaşandı.
+
+490
+01:14:52,639 --> 01:14:56,079
+Yani orada öyle bir olay oldu. Ama genelde...
+
+491
+01:14:56,659 --> 01:15:24,579
+Gelişime katkı sağladığını düşünüyoruz yaptığımız şeylere. Hakikaten bu ödevleri sorarken de biz hep şeyi düşündük. Çok farkındayım. Yani ailesinde hasta olanlar var. [kişisel bilgi] Kendisi yakalananlar, geçirenler var. İşsizlik problemleri var. Bu dönemde kapanan bir sürü iş yeri sizin ailelerinizdeki kişilerin de başına gelmişti.
+
+492
+01:15:24,659 --> 01:15:42,659
+Çok farkındayız her şeyin ama bu dönem bittiğinde güçlü çıkmanız gerekiyor. O yüzden hani dersin başına söyleyeyim bir şeyi tekrar edeceğim. Sizi şey yapmadan yani hani yıpratmadan öğrenmeniz...
+
+493
+01:15:43,188 --> 01:15:50,728
+sağlamaya çalışıyoruz, onu söyleyeyim. Bütün niyetimiz bu başka bir şey değil. Yoksa canını okuyalım falan kesinlikle değil yani öyle bir şey.
+
+494
+01:15:51,048 --> 01:15:58,708
+Yani ödevlerde dikkat ettiyseniz kimsenin herhangi bir sıkıntısı, problem olmamıştı. Sadece bu final projesiyle alakalı.
+
+495
+01:15:59,228 --> 01:16:11,148
+Orada da hocam vakitin darlığı yani bunu eğer bunun süresi bir hafta önceye kaysaydı ve yine aynı sürede teslim etseydik emin olun hiç kimseden problem çıkmayacaktı ama hem finallere hazırlanıyoruz hem
+
+496
+01:16:11,188 --> 01:16:15,368
+ödevleri, projeleri teslim ediyoruz. Böyle çok yoğun bir şekilde geçiyoruz.
+
+497
+01:16:15,368 --> 01:16:16,768
+Haklısın.
+
+498
+01:16:17,208 --> 01:16:18,847
+O yüzden bizde de problem oluyor.
+
+499
+01:16:19,268 --> 01:16:29,048
+Yoksa isyanımızın, şeyimizin sebebi o. Her şey bir anda oluyor. O yüzden zaten bu mail ve şey olayı ortaya çıktı yani.
+
+500
+01:16:29,468 --> 01:16:37,868
+Haklısınız. Fakat tekrardan söyleyeceğim. Süreyi gerçekten kısa yapılacak bir şekilde yaptık.
+
+501
+01:16:39,188 --> 01:17:07,188
+yaratıntı yaşamamanız lazım bir. İkincisi de gerçekten inanarak söylüyorum, algoritma analizi için ödevlerinizi düzgün yaptıysanız, final sınavı için yapmanız gereken tek şey sayfaları çevirip konulara şöyle bir bakmaktır. Yani şu avantajdan da faydalanabilirsiniz. Ben bunun da bir avantaj olduğunu düşünüyorum. Konuları çok iyi bildikten sonra, sınavda önünüzde defter zaten var. Yani çok basit bir...
+
+502
+01:17:07,188 --> 01:17:13,508
+Bir şeye, aa o önemliydi diye bakmak da bir avantajdı. Bu şey değil. Bu kopya da değil aslında. Zaten biliyorsun.
+
+503
+01:17:14,508 --> 01:17:23,248
+Hatırlamadığım bir şey o anda belki sınıfta olsa yapamayacağın bir şeye. O anda hemen tıklıya bakabilirsiniz de. Böyle bir avantajınız var.
+
+504
+01:17:24,148 --> 01:17:28,188
+Sizden sınavla ilgili şunu rica ediyorum. Lütfen...
+
+505
+01:17:28,404 --> 01:17:36,904
+Sisteme yüklemeye çalışın cevaplarınızı. Arkadan göndermeye çalışmayın. Sınava hazırlıklı, antrenmanlı gelin.
+
+506
+01:17:36,904 --> 01:17:47,923
+Yani işte ne bileyim sonradan şey olmasın. İşte fotoğrafı çekerken öyle oldu. Fotoğrafım 25 megabayt oldu. Sisteme yükleyemedim bilmem ne.
+
+507
+01:17:48,344 --> 01:17:56,404
+Yani bir test edin, kontrol edin. Vizeler boyunca sınavlara girdiniz. Aksilik olabilir ama bunu minimuma inceleyin.
+
+508
+01:17:56,404 --> 01:18:06,024
+indirmeye çalışın. Tabii ki başınıza bir sıkıntı gelebilir. Stres yapmayın. Ama hazırlıksız gelip de garip garip sebeplerden ötürü problem yaşamayın. Olur mu?
+
+509
+01:18:06,923 --> 01:18:08,583
+Hocam, teşekkür ederim.
+
+510
+01:18:09,363 --> 01:18:11,523
+O zaman dekte açmak serbest değil mi yani?
+
+511
+01:18:12,083 --> 01:18:19,243
+Evet, hep serbest. Ben görmüyorum ki dektenizi ama şunu demeye çalışıyorum. Ondan sonra süre yetmedi gibi bir şey anlamsız kalıyor.
+
+512
+01:18:19,243 --> 01:18:27,783
+Yani şuna bakmak için çok büyük bir, yani bakmazsın zaten. Ben hani bakmaya ihtiyaç olacak sorular sorduğumuzu düşünmüyorum.
+
+513
+01:18:28,363 --> 01:18:30,243
+Ama ne bileyim böyle çok...
+
+514
+01:18:30,771 --> 01:18:58,332
+Aklına gelmeyen basit bir şey için ya bu neydi diye bakmak isteseniz sizin şu anda öyle bir avantajınız var. Ama süre yetmez zaten, onu demeye çalışıyorum. Çalışmadan gelin her şeye defter kitaptan bakarım derseniz o süre ona yetmez zaten. Demek istediğim çok basit şeyler için benim açımdan bir sakıncası da yoktur bu dönemde. Tercih ederim açıkçası.
+
+515
+01:18:58,771 --> 01:19:18,512
+kopya çekmeyi tercih ederim. İkincisi de şunu söyleyeyim, bununla ilgili de, lütfen algoritmik soruları çözerken, önce size kolay gelenden başlayın ve onu tam yapmaya çalışın. İki soruyu yarım yarım yapacağınıza, bir soruyu tam yapsanız 30 puan alırsınız.
+
+516
+01:19:18,512 --> 01:19:25,572
+Hocam, yarım alınca puan alamıyor muyuz? Bitiriyorduk ama süre yetmedi, yarımını gönderdik.
+
+517
+01:19:26,771 --> 01:19:34,132
+Yani yarımın ne olduğuna bağlı. Gerçekten aslında algoritmalarımızda bayağı ben şey yapıyorum.
+
+518
+01:19:34,231 --> 01:19:39,252
+Tamam oradan onu yapmış, buradan da bunu yapmış falan diye yapıyorum ama yarımın ne olduğuna bağlı.
+
+519
+01:19:39,352 --> 01:19:40,952
+Yani ne kadar yarım yaptığına bağlı.
+
+520
+01:19:41,492 --> 01:19:56,712
+Sorunun ana fikri iki kezinin keseşimini bulmakken, bir tabloya A dizisini bile yerleştirme konusunda yarımsam sıkıntı. Ama birini yerleştirdim, search ederken problem yaşadıysam, onun değeri farklı.
+
+521
+01:19:57,292 --> 01:20:04,252
+Anladım. Hocam, peki final sınavının tarzı hakkında belli oldu mu? Yine çoktan seçmeli sorular olur mu?
+
+522
+01:20:05,171 --> 01:20:12,331
+Büyük ihtimalle yine çoktan seçmeli de olacak. Cevap yazma şeklinde de olacak. Yine o şekilde planlıyoruz.
+
+523
+01:20:13,331 --> 01:20:21,991
+Hazırlıklı olun büyük ihtimalle şey olacak. Önceki soruya bakılamaz, dönülemez şeklinde olmasını düşünüyoruz.
+
+524
+01:20:21,991 --> 01:20:27,671
+Yani o büyük bir derece biraz şeyi önleyici oluyor. Orada ben şey yapabiliriz diye düşündüm.
+
+525
+01:20:28,311 --> 01:20:33,131
+Onunla ilgili şey eleştirisi geldi diğer derslerde yapılması ile.
+
+526
+01:20:33,171 --> 01:20:39,271
+ilgili bir sorunun ne kadar sürede yapılabileceğini bilmediğimiz için panik oluyoruz dediler.
+
+527
+01:20:40,131 --> 01:20:46,311
+Orada soruların yanına yaklaşık tahmini öğrenci tarafından çözülme süresini yazmayı planladık.
+
+528
+01:20:47,311 --> 01:20:49,351
+Reski artık test olacak yani, ne olur mu?
+
+529
+01:20:50,131 --> 01:21:12,911
+Yok, yani yaparsak, arkadaşımız sordu ya, planlıyoruz yani şu anda soru hazırlamadık. Büyük bir ihtimalle şey de yapacağız hazırlığı, hafta sonunda yapacağız. Yani daha bir planımız yok o konuda ama yine bir kısmı şey olacak büyük bir ihtimalle, işte hani genel sorular olacak vize de olduğu gibi.
+
+530
+01:21:13,268 --> 01:21:17,987
+Ondan sonra bir de algoritma olacak. Yani tarzı değiştirmeyiz herhalde.
+
+531
+01:21:19,728 --> 01:21:20,867
+Hocam, [öğrenci] ben.
+
+532
+01:21:21,627 --> 01:21:23,327
+[öğrenci]'un sınavını tanımladınız mı?
+
+533
+01:21:24,847 --> 01:21:26,387
+Dörtte değil mi senin sınavın?
+
+534
+01:21:26,467 --> 01:21:27,947
+Dörtte. Göremedin mi?
+
+535
+01:21:28,607 --> 01:21:31,228
+Yok çünkü. Dörtte değil mi işte senin sınavın?
+
+536
+01:21:31,647 --> 01:21:32,207
+Dörtte.
+
+537
+01:21:32,768 --> 01:21:33,027
+Tamam.
+
+538
+01:21:33,687 --> 01:21:35,887
+Dörtte görmüş olacaksın. Sıkıcı yok.
+
+539
+01:21:36,367 --> 01:21:36,907
+Tamam.
+
+540
+01:21:37,627 --> 01:21:38,487
+Tamam. Peki.
+
+541
+01:21:39,507 --> 01:21:44,507
+O zaman arkadaşlar hepimize başarılar diliyorum sınavlar için şimdiden.
+
+542
+01:21:44,507 --> 01:21:51,507
+Şeyle devam ediyoruz. Labicim ben şimdi link gönderecekler herhalde. Link geldi mi?
+
+543
+01:21:51,507 --> 01:21:57,507
+Ha şimdi geldi. Bir saniye linki sizinle paylaşacağım şimdi. Bir saniye.
+
+544
+01:22:08,243 --> 01:22:11,563
+Buradan çekten paylaşacağım da, o yüzden bekletiyorum sizi.
+
+545
+01:22:18,836 --> 01:22:20,588
+şöyle yapalım önce
+
+546
+01:22:43,283 --> 01:22:46,184
+Bunu böyle göndermemde da, ama tabii o ne?
+
+547
+01:22:49,300 --> 01:22:50,500
+Öbür teorefā...
+
+548
+01:22:51,100 --> 01:22:51,600
+Mala.
+
+549
+01:22:54,707 --> 01:22:56,491
+Mail geç gidiyor da...
+
+550
+01:23:04,724 --> 01:23:06,724
+Bu arada sorusu olanı sorabilirim.
+
+551
+01:23:15,028 --> 01:23:17,887
+Her şey geldi, evet. Söyle.
+
+552
+01:23:18,247 --> 01:23:25,667
+Bahar dönemiyle alakalı bir şey var mı hocam bilginiz? Yüz yüze uzaktan bu konu hakkında?
+
+553
+01:23:25,667 --> 01:23:34,667
+Bugün konuşuldu, öyle kimsenin bir şeyi yok, umudu yok maalesef.
+
+554
+01:23:37,707 --> 01:23:39,368
+Anladım hocam, teşekkürler.
+
+555
+01:23:40,083 --> 01:23:43,083
+Sen ne düşünüyorsun sence?
+
+556
+01:23:43,731 --> 01:23:48,412
+Hocam, biz ne olursa kabulümüz neticede.
+
+557
+01:23:49,171 --> 01:24:08,011
+Yani şey diye konuşuldu, büyük bir ihtimalle, yani siz de öyle görüyorsunuzdur zaten, bahar döneminde mümkün olmayacağı, bir düzenmenin henüz olmadığı, bu da esas sorun çünkü üniversite öğrencilerinin çoğu farklı şehirlerden geldiği için yurtlarda kalmak zorunda kalıyorlar.
+
+558
+01:24:08,912 --> 01:24:11,731
+Şu anda böyle bir yapının desteklenemeydi.
+
+559
+01:24:11,731 --> 01:24:20,332
+düşünülüyor. Büyük bir ihtimalle açılmayacak bahar döneminde de. Ama yani bir gelmiş yoktan gelmiş bir karar yok henüz.
+
+560
+01:24:20,992 --> 01:24:23,692
+Hocam bir de ekstra bir soru daha sorabilir miyim?
+
+561
+01:24:24,332 --> 01:24:26,692
+Ama bu tarafa geçmeniz gerekiyor artık.
+
+562
+01:24:27,112 --> 01:24:33,332
+Şey hocam, bitirme projesi için size mail atabilir miyim? Erkenden bahar döneminde sizden almak istiyorum da.
+
+563
+01:24:34,072 --> 01:24:34,792
+Mümkün mü öyle bir şey?
+
+564
+01:24:34,792 --> 01:24:38,731
+Tabii, tabii. Atarsın. O şey yapanlarla...
+
+565
+01:24:39,507 --> 01:24:46,507
+Görüşüyoruz zaten Zoom'dan bir toplanıp konuşuyoruz. Eğer şey olursa...
+
+566
+01:24:46,996 --> 01:24:50,655
+Birlikte yapabileceğiniz bir proje olursa yapıyoruz. Tabii atabiliriz.
+
+567
+01:24:50,655 --> 01:24:53,076
+Aslında tamam hocam teşekkür ederim. İyi günler.
+
+568
+01:24:53,475 --> 01:24:59,215
+Ama niye, iyi günler, niye link gelmedi? Niye yükselme yazdın sen? Link gelmedi mi?
+
+569
+01:24:59,655 --> 01:25:03,015
+Hocam link geldi de kimler gidecek o linke? Herkes yani.
+
+570
+01:25:03,175 --> 01:25:08,836
+Herkes, herkes. Herkes gidiyor orada açıklayacaklar. Çocuklar daha yetiştirememişlerdi en son çünkü.
+
+571
+01:25:09,655 --> 01:25:09,895
+Tamam.
+
+572
+01:25:09,996 --> 01:25:13,735
+Orada açıklayacaklar. Bizde liste yok şu anda. Tamam mı?
+
+573
+01:25:13,735 --> 01:25:14,456
+Tamam.
+
+574
+01:25:14,996 --> 01:25:15,975
+Görüşürüz. Söyle.
+
+575
+01:25:16,376 --> 01:25:21,515
+WhatsApp grubuna liste geldi şu anda. Hani listede olmayanlar linke katılmak zorunda mı?
+
+576
+01:25:21,695 --> 01:25:30,395
+Ha geldi mi liste? Bir katılın isterseniz bir dinleyin. Ben ne olduğunu bilmiyorum çünkü. En son yetişmemiş. Bir dinleyin. Bir aksaklık olmasın. İyi günler.

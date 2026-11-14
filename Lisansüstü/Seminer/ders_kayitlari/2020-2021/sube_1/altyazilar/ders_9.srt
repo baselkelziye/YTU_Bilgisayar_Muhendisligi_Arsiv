@@ -1,0 +1,1719 @@
+1
+00:05:24,596 --> 00:05:25,435
+Merhaba arkadaşlar.
+
+2
+00:05:29,363 --> 00:05:30,263
+Merhaba hocam.
+
+3
+00:05:32,403 --> 00:05:35,583
+Merhabalar hocam.
+
+4
+00:05:37,323 --> 00:05:45,603
+Merhaba. Dersi alan sekiz kişi vardı. Şu anda gördüğüm kadarıyla altı kişi sadece gelmiş derse.
+
+5
+00:05:48,703 --> 00:05:54,303
+Uzun bir ara oldu. Sizlerle görüşmeyeli epey bir ara oldu.
+
+6
+00:05:57,331 --> 00:06:05,411
+Sunumlar artık dönemin bitmesine 3 hafta kaldı. Bu 2 hafta içinde sunumları bitirme planımız var.
+
+7
+00:06:05,908 --> 00:06:15,828
+Aslında ben danışmanlarınızı da davet etmeyi düşünüyordum ama baktım [öğrenci] geçenlerde zaten sunum yaptı. Danışmanına sunmuştur tahmin ediyorum.
+
+8
+00:06:15,828 --> 00:06:23,828
+Diğer arkadaşlar da artık ayrıca sunum yaparlar danışman hocalarına diye düşünüyorum.
+
+9
+00:06:32,755 --> 00:06:43,775
+Önce [öğrenci] sunum yapacak. Sizinle daha önce bunu paylaşmıştım. [öğrenci].
+
+10
+00:06:45,108 --> 00:06:54,708
+Coordination and Formation of Heterogenius Swarm Robotics Systems başlıklı bir tez çalışması yapıyor.
+
+11
+00:06:54,708 --> 00:07:02,228
+Ve bu çalışma kapsamında yaptığı literatür taramasını bizimle paylaşacak.
+
+12
+00:07:02,888 --> 00:07:11,708
+[kişisel bilgi] Önce onunla başlayacağız. İkinci sırada zaten biliyorsunuz.
+
+13
+00:07:13,108 --> 00:07:16,348
+Bu programı ben sizinle de paylaşmıştım.
+
+14
+00:07:17,492 --> 00:07:44,912
+[öğrenci] var. 13.30'da o başlayacak. Yani yarım saat her kullanıcının süresi. Biz şu anda 10 dakikayı harcadık. Bu dakikadan sonra yarım saatlik bir süre var [öğrenci]. Onu belirteyim. [öğrenci]'den sonra [öğrenci]. Ondan sonra da FETİ sunum yapacak. Bana sunum raporlarınızı mutlaka gönderiyorsunuz arkadaşlar. Çünkü bunlar enstitüye teslim edilecek dosyalar.
+
+15
+00:07:45,492 --> 00:07:56,852
+Bu sunum tarihlerini de orada ben fen bilimlerine verdim. Dolayısıyla kayıtlarda bunlar takip ediliyor. Bu programa göre sunum yapılıp yapılmadığı kontrol ediliyor.
+
+16
+00:07:57,052 --> 00:08:05,672
+Hocam ben raporu henüz hazırlayamadım ama yani bu hafta içinde size sunmayı planlıyorum. Bunda bir sıkıntı olur mu yoksa bugün mü istiyordunuz?
+
+17
+00:08:06,451 --> 00:08:11,751
+Raporlarınızı bugün vermenizi bekliyorum. Bir an önce tamamlayın o zaman. Oldu mu?
+
+18
+00:08:11,751 --> 00:08:12,312
+Tamam hocam.
+
+19
+00:08:12,611 --> 00:08:28,792
+Hocam, ben de bu noktada bugünkü programımızla ilgili aslında daha önce size mail ortamında da post olarak da bilgi vermiştim de ben [kişisel bilgi]
+
+20
+00:08:28,911 --> 00:08:34,011
+Literatür taraması ve tez konumla ilgili bir tek sizden istirham mı oldu?
+
+21
+00:08:34,451 --> 00:08:47,632
+Mümkün rahatı varsa ocak sonrasındaki salı 5 ocak gibi yapabilir miyim diye. Yoksa aksi durumda da gelecek döneme kalmış olacak benim Seminer dersimle ilgili durum.
+
+22
+00:08:48,052 --> 00:09:12,192
+Maalesef son hafta sunum yapamayız. Bu hafta ve önümüzdeki hafta sunumlar tamamlanacak. Bir de ben bir program yapıp enstitüye bildirdim. Dolayısıyla enstitü açısından bu kayıtlar önemli. Sadece size şöyle bir opsiyon sunabilirim. Bu hafta sunamadığınız ama önümüzdeki hafta bir hazırlık yapıp sunabilirseniz onu kabul edebilirim. Ama Ocak ayına bırakamayız.
+
+23
+00:09:16,052 --> 00:09:22,831
+Yeterli düzeyde olursa size bilgi verin. Yoksa artık gelecek dönem bir daha almak şeyini kullanırım.
+
+24
+00:09:23,251 --> 00:09:24,052
+Tamam. Teşekkür ederim hocam.
+
+25
+00:09:24,052 --> 00:09:36,112
+Ama sürenize falan dikkat edin. Hani öyle bir sıkıntı da olmasın. Bu dönem yapabiliyorsanız seminer dersi sorumluluğunu tamamlamaya gayret edersiniz.
+
+26
+00:09:36,612 --> 00:09:38,491
+Tamamdır hocam. Teşekkür ederim. Sağ olun.
+
+27
+00:09:39,251 --> 00:09:57,231
+Rica ederim. Evet, [öğrenci] ekran paylaşımı yapabiliyorsun. Sunumunu açabilirsin. Bir de sunum yapan arkadaşlardan rica edeceğim. Kameralarınızı açıyorsunuz sunum sırasında. Kimin konuştuğunu görmemiz gerekiyor. Çünkü kayıt altına alınıyor bunlar.
+
+28
+00:10:04,596 --> 00:10:06,895
+Evet, güzel görebiliyoruz. Buyurun.
+
+29
+00:10:08,675 --> 00:10:09,435
+Merhabalar.
+
+30
+00:10:09,936 --> 00:10:24,496
+Tanımayanlar için ben [öğrenci]. [kişisel bilgi]
+
+31
+00:10:24,496 --> 00:10:37,496
+Ben birazcık koordinasyon ve formasyonu ile ilgili biraz bir araştırma yaptım. Aslında bu benim konumla ilgili yaptığım ilk literatür araştırması ve...
+
+32
+00:10:37,936 --> 00:10:42,476
+Çok heyecanlandığımı söyleyebilirim konumla ilgili. Gerçekten güzel bir konuymuş.
+
+33
+00:10:43,256 --> 00:10:49,776
+Şimdi ilk önce biraz sürü sistemleri, bu swarm sistemler nelerdir? Onların genel özellikleriyle başlayacağım.
+
+34
+00:10:50,875 --> 00:10:53,936
+Sonra heterojen sürülerle ilgili bazı çalışmalar...
+
+35
+00:10:55,168 --> 00:11:07,827
+Literatürdeki bazı çalışmalara baktım. Sonra da yine bir survey içinden aldığım açık problemlere dair bir slide'ım da var.
+
+36
+00:11:08,755 --> 00:11:18,615
+Bunu da yine toplamda iki tane sörve okudum. Bir tanesi genel olarak swarm sistemlerle ilgiliydi.
+
+37
+00:11:18,615 --> 00:11:26,115
+Şimdi burada sürü deyince bu bir amaç için bir araya gelmiş. Aynı amaç için bir araya gelmiş.
+
+38
+00:11:26,755 --> 00:11:31,175
+Ve birbirleriyle iletişim halinde olan büyük bir robot grubundan bahsediyoruz.
+
+39
+00:11:31,336 --> 00:11:35,395
+Burada bazen bunlar birbirine karşı mücadele ediyor.
+
+40
+00:11:36,755 --> 00:11:56,735
+Bu olarak çalışmaların büyük kısmında aynı amaç için birbirlerine yardım eder durumdalar. Robotikte bir terim olarak ilk kez 89 yılında kullanılmaya başlasa da 40'lara kadar bu swarm sistemlerin çalışmaları uzanıyor.
+
+41
+00:12:02,323 --> 00:12:19,043
+Sürülerden esinlenerek oluşturuluyor. Karınca sürüleri, arı kolonileri, kuş sürüleri gibi. İlerideki, yani benim incelediğim çalışmaların içinde de yine arı davranışlarıyla ilgili bir, ondan esinlenmiş bir çalışma var.
+
+42
+00:12:27,508 --> 00:12:41,488
+Gördüm çalışmalarda. Ama askeri çalışmalarda bir de bu mesela orman yangını tarama tarzında çok büyük bölge tarama keşif çalışmalarında da yine swarmlar kullanılıyor.
+
+43
+00:12:44,244 --> 00:12:58,524
+Keşif görevlerinde daha hızlı oluyorlar birden fazla robotla birlikte tarandığı için. Mesela çok fazla bir robotun kendi başına yapamayacağı işleri birlikte yapabiliyorlar.
+
+44
+00:12:58,524 --> 00:13:09,524
+Ve farklı görevlerde özelleşmiş bireyler bir araya geldiği zaman işler biraz daha başarılı bir şekilde halledilebiliyor. Dezavantajlarıysa...
+
+45
+00:13:10,399 --> 00:13:25,000
+Genelde sürüde birey sayısı arttıkça yönetimi çok zorlaşıyor. O yüzden hem formasyonunda hem konfigürasyonunda ciddi zorluklar var aslında bu tür robot gruplarının.
+
+46
+00:13:25,000 --> 00:13:29,860
+Ve biraz sonra bahsedeceğim türlere göre çeşitli dezavantajları yine var.
+
+47
+00:13:33,395 --> 00:13:45,115
+Bireylerin özdeş olup olmadığına göre iki tür, heterojeniz ve homojeniz olarak tahmin edeceğiniz gibi homojen olanlar aynı donanıma ve yazılıma sahip, aynı robotlardan oluşuyorlar.
+
+48
+00:13:45,587 --> 00:13:58,387
+Heterojeniz olanlarda ya farklı donanımlar veya aynı zamanda farklı yazılımlar veya aynı donanıma sahip ama farklı yazılımlardan oluşan robot grupları olabiliyor.
+
+49
+00:13:59,688 --> 00:14:05,768
+Yönetim biçimlerine göre de centralized, decentralized ve hibrit olan türleri var.
+
+50
+00:14:12,788 --> 00:14:23,528
+Bu robot gruplarına hangi görevi kimin yapacağını aslında belirleyip onları yönlendiriyor.
+
+51
+00:14:24,528 --> 00:14:33,148
+Ve bu robotlardan alınan bilgileri de yine Centralized O merkezi bir yerde toplayıp birleştiriyor.
+
+52
+00:14:36,724 --> 00:14:59,484
+Haritalama tarzında görevlerde yapılıyor. Çünkü orada global bir bilgi gerektirdiği için yani her robot kendi alanını tarayıp mapini çıkardıktan sonra bir ortak bir yerde bunların toplanıp birleştirilmesi tarzında bu tür çalışmalar var.
+
+53
+00:15:01,940 --> 00:15:16,240
+Robotlar en yakın komşularına göre hareket ediyorlar daha çok. Hibritte olanlarda bazen iki düzeyde bir yönetim var.
+
+54
+00:15:28,596 --> 00:15:45,456
+İşte oluşturma ya da parçalama tarzında bir şeyle sadece bir yönetici var ve daha çok robotları kendi başına bırakıyor. Biraz daha centralized'a göre biraz daha yumuşak bir yönetim var diyebiliriz.
+
+55
+00:15:47,376 --> 00:15:51,096
+Temel davranışlarda self-organization bekleniyor genel olarak.
+
+56
+00:15:52,436 --> 00:16:16,656
+Çevresel değişiklikler ya da yeni bir robot sürüye katıldığı zaman yeniden bu duruma uyum sağlaması ya da bir engel çıktığı zaman ya da herhangi bir robotun başına bir iş geldiği zaman yeniden bu sürece adapte kendi başına olması demek bu.
+
+57
+00:16:20,628 --> 00:16:47,868
+Aslında ölçülebilirlik bu. Decentralized sürü türlerinde bunun sağlanması çok daha kolay oluyor. Ama bir bireyden, yani şöyle diyebiliriz, bir bireyden oluşan bir, birkaç bireyden oluşan bir sürü de olsa, binlerce bireyden oluşan bir sürü de olsa bu aynı şekilde çalışmaya devam edebilmesini.
+
+58
+00:16:48,240 --> 00:17:09,720
+Scalability diye tanımlanmış buradaki yazar. Robustness ise doğru çalışabilmesi olarak tanımlanmış. Formasyon ve bağlantı şekilleri bağlantı derken robotlar arasındaki aslında network'tan bahsediyorum, A'dan bahsediyorum.
+
+59
+00:17:12,980 --> 00:17:25,779
+Lisansta falan gördüğümüz topolojilerine benzer şeyler aslında bu şeyler. Birazcık gözü yani neyden bahsettiğim anlamınız için bunu da koydum slide'a.
+
+60
+00:17:38,228 --> 00:18:04,628
+Hangi robotun hangisiyle bağlı olacağını da belirliyor. Çünkü sadece gördüğünüz edge'lerin olduğu robotlar birbirine bağlı olacak. Bunları oluşturabilmek için graf teoriden yararlanıldığı zaten bayağı görünüyor ama bunun dışında da Voronoi diagramları ve Potential Fields çok iyi bilmemekle birlikte bunlar da kullanılıyorlar.
+
+61
+00:18:08,500 --> 00:18:29,659
+Bir diğer konu enerji tasarrufu. Şimdi burada önemli olan birbirine sürekli bağlı ve birbirine mesaj atıp duran robotların webde bataryalardan taşıdığını düşünürsek çok ciddi bir konu aslında enerji tasarrufu.
+
+62
+00:18:35,859 --> 00:18:50,920
+Yerleştirilmiş şarj istasyonlarıyla, mesela bu süpürgeler var ya, gidip kendini şarj ediyor. Ona benzer bir şarj istasyonu yerleştirilerek bunu üstesinden gelmeye çalışan yöntemler var.
+
+63
+00:18:51,536 --> 00:19:10,796
+Direkt iletişim yöntemlerindense indirekt iletişim yöntemleri kullanılıyor. Burada mesela bir robot geçerken bir iz bırakıyor mesela. Ondan sonraki robot o görevle ilgili başarımı bu bir önceki robotun bıraktığı izden.
+
+64
+00:19:12,276 --> 00:19:32,836
+Bu şekilde iletişim kurabiliyorlar. Ya da robotların start-stop sayılarını kısıtlayarak veya bağlantı alanlarını küçülterek veya veriyi basit dalga formunda göndererek enerjiden tasarruf etmeye yönelik çalışmalar var.
+
+65
+00:19:39,920 --> 00:20:02,300
+Review'a göre aşağıdaki 8 şey üzerine yoğunlaşıyor. Yönetim biçimi optimizasyonu, self-organization davranışı ve dezavantajlarının elimine edilmesi, scalable ve rebus sistemleri oluşturma, efektif enerji kullanımıyla ilgili uygun formasyonu bulma.
+
+66
+00:20:02,740 --> 00:20:11,320
+Yol planlama, engelden kaçınma, obje taşıma, enerjinin tükendiği noktada tüm sistemlerin devre dışı kalmasına çözüm arayışları.
+
+67
+00:20:11,728 --> 00:20:38,347
+Diye sıralamış. Yalnız burada şöyle bir sorun var. Bu çalışmalar, tüm bunları kapsayan çalışma sayısı yok. Yani en fazla beşini bu problemlerden beşini kapsayan çalışmalar var. O yüzden burada bir açık oluşuyor. Bunun bir sebebi de end-to-end sistem örneğinin olmamasından kaynaklanıyor.
+
+68
+00:20:38,996 --> 00:20:58,856
+Sadece bir assumption'lar altında bazı noktalarını çalıştırabiliyorlar. Yani aslında gerçek dünyada bir swarm oluşturup ondan sonra bunu da koşturmuş sonra da bunun sonuçlarını almış çalışma henüz bulunmuyor.
+
+69
+00:20:58,856 --> 00:21:01,856
+Bu açıdan birazcık.
+
+70
+00:21:03,604 --> 00:21:28,284
+Şanslı olduğumu düşünüyorum. Şimdi 2020'de en yeni çalışmayı buraya koydum. Çünkü bu aslında heterojen olarak bir ayrımdan bahsetmiyoruz. Burada swormu aslında homojen olarak tanımlamışlar. O yüzden bu çalışmayı önceye koydum. Bu 2020 yılında yeni yapılmış. Hatta Ekim ayında mı ne çıkmış bir çalışmaydı.
+
+71
+00:21:29,172 --> 00:21:45,452
+Genelde sürü tanımlanırken önce bir topolojiye karar verilip ondan sonra ona uygun formasyon tanımlanıyor ama bu sahada bazen bu formasyon tutmazsa sıkıntılar oluşabiliyor.
+
+72
+00:21:45,452 --> 00:21:51,452
+O yüzden bu motivasyonu kullanarak bu çalışmayı yapanlar da...
+
+73
+00:21:52,372 --> 00:22:15,372
+Bir formasyona uygun topoloji geliştirelim otomatik olarak diye düşünmüşler. Daha önce bir çalışma yapmışlar. 2013 yanlış hatırlamıyorsam. Orada Relation Invariable Persistent Formation diye bir formasyon yaratma metodu önermişler. Bu metoddan yararlanarak...
+
+74
+00:22:16,531 --> 00:22:33,591
+İki katmanlı bir formasyon yaratma mekanizmasına entegrasyonuyla bir çalışma yapmışlar. Burada bir graf teoriye baz alarak formasyon tanımlanıyor. Şurada bahsettiğim RIPF.
+
+75
+00:22:34,548 --> 00:22:53,067
+Formasyon tanımlanıyor. Buna göre sürünün bütünü bir directed graph. Bir robottan diğerine eğer bir edge gidiyorsa giden yani ulaştığı yerdeki bir öncekinden, tarafından lead ediliyor demek.
+
+76
+00:22:56,819 --> 00:23:18,660
+Bir vertex ve komşu robotlar arasında bağlantı da edge olarak tanımlanıyor. Tahmin edeceğimiz gibi. Burada formasyon robotların ilk pozisyonu baz alınarak bir tane formasyon oluşturuluyor. Ama bazı kısıtlar altında. Bu kısıtlarda neler? İşte her robot farklı pozisyonda olacak. Yani kollijanı engellemek için.
+
+77
+00:23:19,635 --> 00:23:28,395
+Sonra her robot komşularıyla bir D mesafesi uzaklığında olacak. Bir robotu lead eden en fazla iki komşu robot bulunacak.
+
+78
+00:23:28,395 --> 00:23:37,075
+Ve graftaki edge sayısıyla vertex sayısı arasında şuradaki tarzı bir bağlantı olacak.
+
+79
+00:23:37,075 --> 00:23:42,075
+Yani edge'lerin sayısı vertex'lerin iki katının üç eksiği olması.
+
+80
+00:23:42,740 --> 00:23:56,740
+Kısıtı konmuş. Şimdi algoritmada bu kısıta göre bir formasyon nasıl oluşturuluyor? Her robotun ilk pozisyon bilgisini alıyorlar. Sonra bunu Delunay Triangle'ı oluşturuyorlar.
+
+81
+00:23:57,480 --> 00:24:08,779
+Az önceki bu bağıntıya göre fazla olan edge'leri siliyorlar. Sonra gruptan birini de lider olarak atıyorlar. Böylece bir formasyon oluşturmuş oluyorlar.
+
+82
+00:24:09,971 --> 00:24:28,831
+Şimdi bunu burada bir formasyonu oluşturduk. Sonra geldik ilk katmanda pet planning level'da ne yapacak? Bu sürücü harekete başlayacak. Az önce oluşturduğumuz formasyona göre nasıl hareket edecek? Bunu da pet planning level'da oluşturuyorlar.
+
+83
+00:24:37,971 --> 00:24:44,971
+Bu kısıtlara göre atılacak bir sonraki adım da Gradient Descent ile belirleniyor.
+
+84
+00:24:44,971 --> 00:24:49,971
+Engellerden kaçınmak için robotlar engelin etrafından dolaşıyorlar.
+
+85
+00:24:52,660 --> 00:25:13,720
+Bunun için de engele belli bir mesafede, C mesafesinde yaklaşıldığı zaman robot oradan başını döndürüyor ve etrafından geçiyor diye düşünebiliriz. Engel geçildikten sonra yine düz yoluna devam edecek şekilde engel geçildikten sonra öbür tarafa dönüyor.
+
+86
+00:25:14,516 --> 00:25:34,656
+Ayrıca bu robotlar dönüşle birlikte yani çok sert dönüş olmasın diye bir referans pet tanımlanmış. Böylece dönüş açısı peyder pey böyle hafif hafif dönerek oluşturulmuş. Böylece küçültülmüş olmuş.
+
+87
+00:25:40,432 --> 00:25:59,852
+Bu formasyonu nasıl takip edeceğiz? İkinci katmanı da bu işi yapıyor. Burada da şu anki state ve olması beklenen state arasındaki hata tanımlanıyor. Ondan sonra hata oranına göre robotların uyacağı hızlanma formülü ediliyor.
+
+88
+00:26:08,468 --> 00:26:16,008
+Kinetik şeyleri var, motion modelleri var. Hep tekerlekli robotlar üzerinden yapmışlar.
+
+89
+00:26:16,548 --> 00:26:24,008
+Şimdi bu katmanın kontrolünü model prediktif kontrol stratejisiyle yapıyorlar. Burada da...
+
+90
+00:26:24,819 --> 00:26:47,539
+Şu anki ve bir sonraki pozisyonlar arasında bir bağıntı belirlenmiş ve bu bağıntı kullanılarak her adımda bir optimizasyon yapılıyor. Böylece optimal kontrol girdisi üretilmiş oluyor. Kontrol girdisi nedir? Bu robota işte mesela diyelim ki X1'den X2'ye git tarzında bir komuttan bahsediyorum.
+
+91
+00:26:52,564 --> 00:27:01,564
+Şurada bu random olarak robotlar dağılmış. Ondan sonra buna göre bu Delinoy...
+
+92
+00:27:02,483 --> 00:27:23,483
+Deli o önemli. Neyse işte. O şeyler, üçgenler oluşturuluyor. Ondan sonra edge'lerden fazla olanlar da silinmiş. Buradan bir tanesi de lead olarak şey yapılmış. Şimdi bu hareket edecek. Burada iki tane engel var. Gördüğünüz gibi engele denk gelenler buradan diğer...
+
+93
+00:27:25,395 --> 00:27:42,436
+Formasyonda zaten bu ikisi arasında bir D uzaklığı olduğu için buradan böyle, şuradan şöyle geçiyor. Ondan sonra buraya ulaşıyor. Burada şimdi gösterdiği şey, biraz büyütsen.
+
+94
+00:27:47,347 --> 00:28:07,147
+Şimdi şurada gösterdiği şey robotların şeyleri, velositeleri. Ondan sonra şurada da bu linear yani x ve y arası, x ve y düzeyinde bir hızdan bahsediyoruz.
+
+95
+00:28:09,875 --> 00:28:15,875
+Başını döndürme hızından bahsediyoruz aslında. Şuradaki şeyde ne kadar...
+
+96
+00:28:16,403 --> 00:28:37,563
+Farklı olduğu burada açıkça görülebiliyor. Aslında önemli olan sonuçları şu, tracking error'un verdiğini söyleyebiliriz. İlk önce bir dalgalanma olsa da ondan sonra error'un sıfıra yani neydi o şey? Şu anki state ile olmasını istediğimiz state arasındaki fark.
+
+97
+00:28:42,387 --> 00:28:47,147
+Y aksesindeki robotların erorları gösterilmiş.
+
+98
+00:28:48,567 --> 00:28:54,147
+Şimdi heterojen, bu homojen bir swarm örneğiydi aslında.
+
+99
+00:28:55,407 --> 00:28:57,067
+Yeni bir çalışma olduğu için aldım.
+
+100
+00:28:58,167 --> 00:29:03,487
+Şimdi heterojen swarm çalışmalarından en çok bahsedilenlerden bir tanesi.
+
+101
+00:29:04,211 --> 00:29:11,611
+Bu Swarm'la Humanoid'in birleştirilmesiymiş. Onlar kendileri öyle diyorlar.
+
+102
+00:29:12,468 --> 00:29:39,268
+Şimdi 2013 yılında end-to-end bir heterojen robot sürüsü yapmak istemişler ve üç farklı robot üretmişler bunun için. Yine bir yazılım mimarisi kendilerinin ürettiği. Burada üretilen üç farklı robot var. Bir tanesi footbot. Yani yürüyen iki küçük motor ve birbirinden ayrı hareket eden tekerleklerden oluşuyor.
+
+103
+00:29:40,084 --> 00:30:01,484
+RGB LED'lerle diğer robotlarla haberleşmesi sağlanıyor. Handbot'ta yere sabit duran bir platforma bağlı iki koldan oluşuyor. Bunlar dikey tırmanabiliyorlar, objeleri tutup kaldırabiliyorlar. Bir göreve yerine gitmek için futbotlara ihtiyaçları var. Diğer handbotlara veya futbotlara tutunabiliyorlar elleriyle.
+
+104
+00:30:01,971 --> 00:30:28,092
+iBot'ta yukarıdan bu dört pervaneli olan şeylerden ama iç mekan için biraz küçültülmüş yani minik bir şey. Burada dışarıda GPS kullanıyor ama içeride de yine ortama göre global lokalizasyonun navigasyonu sağlayabilmek için kamera ve lazer sensörleri kullanılıyor.
+
+105
+00:30:29,107 --> 00:30:47,607
+Diğer robotlarla Rengen Bairing sistemiyle bağlantı kuruyor. Yani 12 metre içindeki tüm robotlarla veri alışverişi yapabiliyor. Bunun görevi, bir görev verildiği zaman o görev yerini tespit etmek ve bunu footbotlarla handbotlara iletmek.
+
+106
+00:30:49,268 --> 00:31:11,887
+Şimdi burada gerçek dünya görevi verilmiş bir tane. Bir odada raflar var. Raflardan birinde bir kitap var. O kitabı alıp diğer rafa koyacaklar. İlk önce uzak olmuş bunlar. Ondan sonra iBot gitmiş, kitabın yerini tespit etmiş. Footbot ile Handbot'u almış. Ondan sonra görev yerine getirmiş.
+
+107
+00:31:14,675 --> 00:31:31,015
+Ve bu görevi yerine getirmişler. Daha fazla deney yapabilmek için bir simülasyon ortamı yaratmışlar. Argos diye. Bu da hala gazibo gibi kullanılan bir simülasyon ortamı.
+
+108
+00:31:39,571 --> 00:31:43,571
+Yerine getirilmesini göstermişler.
+
+109
+00:31:46,571 --> 00:31:53,571
+Şimdi heterojenliğin sürü davranışlarındaki performansa etkisini araştıran bir çalışma vardı.
+
+110
+00:31:53,571 --> 00:32:03,571
+Burada aslında amaçları şey, birbirinden farklı donanıma sahip değil bu robotlar.
+
+111
+00:32:04,276 --> 00:32:27,155
+Çünkü çalışmanın iddiasına göre bu robotların aynı donanıma sahip olması biraz daha ucuza geliyor. O yüzden davranışsal olarak bunları biz çeşitlendirelim. Bir tanesi bir davranış üzerinde, yani o davranışı öğrenerek bir davranış üzerinde yoğunlaşsın, özelleşsin.
+
+112
+00:32:27,763 --> 00:32:33,763
+Böylece hem homojenmiş gibi aynı şeyi kullanarak...
+
+113
+00:32:37,763 --> 00:32:40,763
+Homojenmiş gibi aynı...
+
+114
+00:32:41,683 --> 00:32:55,183
+Donanımı kullanalım. Hem de heterojenmiş gibi farklı davranışlar elde edelim demişler. Burada bir bal arasının çeşitli yaşlarda farklı bir davranışlar sergilediğini ilk önce gözlemliyorlar.
+
+115
+00:32:55,183 --> 00:33:09,183
+Ve hatta bir bal arasıyla bir deney yapıyorlar. İşte 24 saat olmuş doğalda bu bal arasından. Ondan sonra önce bir random walker oluyor. Ondan sonra yani bir...
+
+116
+00:33:09,683 --> 00:33:29,564
+Öyle random bir şekilde dolaşıyor. Sonra wall follower oluyor. Daha çok duvara yakın yerlere yöneliyor. Goal finder oluyor. Bu da sıcak yeri buluyor. Yine bu yaşının ilerlemesine göre farklı bir davranış biçimi sergiliyor.
+
+117
+00:33:35,380 --> 00:33:55,560
+Çok az hareketli veya tamamen duran bir şekilde gözlemlenmiş. Şimdi bu gözlem normalde homojen sürülerdeki homojen bir donanımdan faydalanıyorlar.
+
+118
+00:33:56,144 --> 00:34:12,204
+Bu normalde bu şey kullanarak bir algoritma yapılmış. B-Class diye. Ondan sonra bu B-Class'da normalde homojen şeyler kullanılıyormuş. Robotlar yani onlar için tasarlanmış.
+
+119
+00:34:15,155 --> 00:34:29,155
+B-class'tı kullanacaklar ama aynı zamanda bu arı üzerindeki yapılan deney sonuçlarını önce bir Grand Rote olarak şeye veriyorlar. Doğru davranış budur diye. Ondan sonra...
+
+120
+00:34:30,708 --> 00:34:58,708
+15 tane robot var. 15 tane robotun bazılarına arının wall follower olduğu zamanki, goal finder olduğu zamanki gibi şeylerine uygun davranışlarına doğru davranışlayıp onları ödüllendiriyorlar. Ondan sonra bir fitness fonksiyonu elde ediyorlar ve bu fitness fonksiyonunu maksimize etmeyi amaçlıyorlar. Burada bunu nasıl öğreniyorlar, nasıl yapıyorlar?
+
+121
+00:34:58,708 --> 00:35:15,347
+Genetik algoritmıyla yapıyorlar. Similasyon ortamında 15 robotluk bir sürüyle deney yapılmış. Ondan sonra bir de homojen olan yani davranışlarını şekillendirmesini istemedikleri bir sürüyle de yapmışlar aynı görevi.
+
+122
+00:35:17,148 --> 00:35:23,208
+Mesela bu nasıl olmuş? Mesela 15 robotun tamamının Wolf follower olmasını istemişler gibi.
+
+123
+00:35:28,148 --> 00:35:44,148
+Aradaki gibi bir kısmını, odanın bir kısmını ısıtmışlar ve oraya şey yapmasını beklemişler. Odanın dediğim simülasyonundan bahsediyorum. Şurada Evo ile gösterilen...
+
+124
+00:35:50,931 --> 00:36:06,671
+Evo ile gösterilen şeye giden, bu heterojen olarak yapılmış heterojen gruptan duvara doğru gidenlerin sayısını gösteriyor.
+
+125
+00:36:11,476 --> 00:36:19,476
+10 tanesi yaklaşık olarak uyum sağlamış. Burada da bir tane...
+
+126
+00:36:25,652 --> 00:36:35,652
+Burada da yine bir tane Global Goal Area var. Ondan sonra bir tanesi...
+
+127
+00:36:36,724 --> 00:37:00,423
+İki yerde sıcaklığın yüksek olduğunu varsayıyorlar. Ondan sonra bir tanesinde global goal araya, bir tanesinde de lokal olan. Ondan sonra bunlardan hangisini seçecek diye bir şey yapılmış. Ondan sonra burada yine homojen grubun, şunlar homojen grup. Homojen grubun heterojen gruptan daha arkada kaldığını göstermişler.
+
+128
+00:37:04,371 --> 00:37:10,211
+Saate bakıyorum. Bir 10 dakika daha devam edebilir miyim hocam?
+
+129
+00:37:10,211 --> 00:37:16,371
+Yok, süremizi aşmayalım. Şu anda son 2 dakika diyeyim.
+
+130
+00:37:20,371 --> 00:37:27,211
+Bir başka çalışma da, heterojen swarmların...
+
+131
+00:37:28,371 --> 00:37:47,051
+Heterojen swarmların optimizasyonunu, optimum sürüyü bulmayı amaçlıyor. Yani bir formasyon olacak, daha doğrusu bir görev verilecek bunlara. Ondan sonra bu görevi yapabilecek optimum sürüyü bulmayı amaçlıyor.
+
+132
+00:37:56,371 --> 00:38:00,311
+İktimize edilmiş olanların arasında bir impromutu olduğunu görmüşler.
+
+133
+00:38:03,251 --> 00:38:05,291
+Şunu geçeyim.
+
+134
+00:38:07,271 --> 00:38:15,091
+Bu asimetriyi de, bu enteresan bir çalışmaydı aslında ama vaktim olmadığı için open problemlara geçiyorum.
+
+135
+00:38:16,091 --> 00:38:16,371
+Burada...
+
+136
+00:38:17,300 --> 00:38:29,180
+Bu testlerin çok daha gittikçe her gün karmaşıklaşıyor bu görevler. Ondan sonra bunları alt gruplara ayırıp daha efektif çözümler üretebilmenin yolu açılabilir.
+
+137
+00:38:29,180 --> 00:38:39,360
+Ya da otonomus machine learning ile parametre ayarlamalarında bu otonomus machine learning kullanıldığı gibi dinamik çevre faktörünü tahminlemede de kullanılabileceği.
+
+138
+00:38:41,300 --> 00:39:07,900
+Yine Coalition Formation dediği mesela az önce anlatamadığım şuradaki gibi bir grup oluşturuyor, küçük bir grup oluşturuyor, bir sub-svorm oluşturuyor bir görevi yapmak için. Bunun formasyonun da yine hala insan faktörüyle yapılıyor. Birçok çalışmada burada ciddi bir şey var.
+
+139
+00:39:09,300 --> 00:39:36,260
+Simülasyon ve gerçek dünya deneyleri açısından ciddi bir açık var. Transfer Learning'de yine iki aynı senaryoyla karşılaşma olasılığı düşük olsa bile, önceki deneyimlerden öğrenilen bazı bilgileri yine yeni kararlar vermede ve onları geliştirmede kullanılabileceğini söylüyordu çalışma. Teşekkür ediyorum.
+
+140
+00:39:38,324 --> 00:39:39,324
+Dinlediğiniz için.
+
+141
+00:39:40,284 --> 00:39:42,064
+Evet [öğrenci], biz teşekkür ediyoruz.
+
+142
+00:39:44,364 --> 00:39:48,443
+Şu ana kadar 8 makale mi okudun bu çalışmayı yapmak için?
+
+143
+00:39:48,744 --> 00:39:51,564
+Güzel, baya detaylı bir inceleme yapmışsın.
+
+144
+00:39:52,804 --> 00:40:00,000
+Bu okuduğun makalelerin tarihleri, yayınlandığı tarihler baktığım zaman güncel olmuş.
+
+145
+00:40:00,000 --> 00:40:15,220
+Günümüze yakın tarihli olanların da epey olduğunu görüyorum. Bu çok önemli. İkincisi, bu makalelerin ne kadar atıf aldığıyla ilgili aslında sorum olacak. İnceledin mi atıf sayılarını?
+
+146
+00:40:28,000 --> 00:40:37,824
+25-26 gibi bir şeydi. Ama şunlar yüzleri aşıyordu yani bu sörviler. Onları yine...
+
+147
+00:40:37,824 --> 00:40:46,324
+Belki raporu ekleyebilirim onları. Şu an aklımda yok hepsinin ne kadar atıf aldıkları ama onlara göre seçtim yani.
+
+148
+00:40:46,324 --> 00:40:59,844
+Bu referans listesinin mesela her bir satırının sonuna parantez içinde kaç kez atıf aldığını, refere edildiğini yazabilirseniz benim için çok iyi olur.
+
+149
+00:41:00,284 --> 00:41:05,324
+Tabii ki 2020'de çıkmış bir makalenin atıf sayısı elbette az olacaktır ama…
+
+150
+00:41:05,824 --> 00:41:20,204
+O tarihlerle ilişkilendirerek zaten bunları değerlendirebiliriz. Güzel. Sekiz makale okumuş olman ve bunları değerlendirmiş olman. Böyle teze yavaş yavaş ısındırma hareketleri başlıyor yani.
+
+151
+00:41:20,204 --> 00:41:29,943
+Çok beğendim hocam. Gerçekten çok heyecanlı bir konu. Umarım başarılı olurum. Açık çok fazla alan var. Umarım bir şeyler yapabilirim yani.
+
+152
+00:41:30,584 --> 00:41:33,344
+Çok güzel. Ben de öyle ümit ediyorum.
+
+153
+00:41:33,824 --> 00:41:35,984
+Sorunuz var mı arkadaşlar [öğrenci]'e?
+
+154
+00:41:38,384 --> 00:41:39,764
+Soru sormak isteyen?
+
+155
+00:41:41,764 --> 00:41:43,443
+[öğrenci] seni alkışlıyorum.
+
+156
+00:41:44,184 --> 00:41:46,144
+Bak alkış da çıktı yukarıda.
+
+157
+00:41:48,664 --> 00:41:49,684
+Evet, tamam.
+
+158
+00:41:50,443 --> 00:41:52,044
+Biz teşekkür ediyoruz.
+
+159
+00:41:52,044 --> 00:41:55,044
+Evet, şimdi ikinci sırada...
+
+160
+00:41:55,044 --> 00:41:55,464
+Biz de dinleyenler olarak alkışlıyoruz hocam.
+
+161
+00:41:56,744 --> 00:41:57,664
+Efendim?
+
+162
+00:41:58,224 --> 00:42:00,604
+Biz de dinleyenler olarak alkışlıyoruz arkadaşımızı.
+
+163
+00:42:01,364 --> 00:42:07,344
+Görmedim reaksiyonlarda görmedim. Göreyim bakayım kimler alkışladı.
+
+164
+00:42:07,724 --> 00:42:12,443
+Daha alışmadık o zaman hocam. Bak orada ekranın altında reactions yazıyor.
+
+165
+00:42:12,443 --> 00:42:20,963
+Tamam okey. Oradan alkışlıyoruz. Evet çok teşekkür ederim. Bak [öğrenci] arkadaşlarında seni alkışladılar.
+
+166
+00:42:21,264 --> 00:42:27,824
+Çok teşekkür ederim sağ olun. Güzel hazırlanmışsın. Biz teşekkür ediyoruz. Evet [öğrenci] sıra sizde.
+
+167
+00:42:29,364 --> 00:42:31,324
+Ekran paylaşımı yapabilirsiniz.
+
+168
+00:42:36,019 --> 00:42:36,940
+Buyurun.
+
+169
+00:42:53,300 --> 00:42:54,500
+Sesim geliyor mu hocam?
+
+170
+00:42:56,660 --> 00:42:58,320
+Evet, geliyor. Gayet güzel.
+
+171
+00:42:59,080 --> 00:43:01,140
+Tamam, ekranıma herhalde paylaşabildim.
+
+172
+00:43:01,940 --> 00:43:02,280
+Evet.
+
+173
+00:43:03,300 --> 00:43:05,780
+Öncelikle herkese merhaba. Ben [öğrenci].
+
+174
+00:43:07,980 --> 00:43:12,360
+[kişisel bilgi]
+
+175
+00:43:14,760 --> 00:43:19,420
+Konumuz mikroservis tabanlı büyük veri ve makine öğrenmesi uygulamaları.
+
+176
+00:43:19,987 --> 00:43:31,227
+Bu kapsamda bir sistematik istatür taramması gerçekleştirdik. Fakat o tarama öncesinde aslında motivasyonumuzun ne olduğu ve genel bir yol haritamızı kısaca bahsediyor olacağım.
+
+177
+00:43:34,207 --> 00:43:43,767
+Öncelikle mikroservis mümariyeden biraz bahsedeceğim. [kişisel bilgi] Endüstriyede devamlı karşılaştığımız bir şey. Trend artık mikroservis mümariyeden doğru.
+
+178
+00:43:44,467 --> 00:44:02,127
+İlerledi. Dev firmalar dairendüstride uygulamalarını mikroservis mühendisliği taşıdılar. Aynı zamanda akademide de çok ciddi bir ilgi uyandırdı mikroservis mühendisliği ve son dönemler yazılım imarileri konferanslarında ve dairelerinde yazılım mühendisliği alanlarında oldukça yayın yapılmakta bu konuda.
+
+179
+00:44:02,771 --> 00:44:26,771
+Diğer önemli bir kayma da, yazılımdaki önemli bir kayma aslında yapay zeka. Çünkü yazılımın aslında temelinden değiştiren bir şey oldu günümüzde. Özellikle makine öğrenmesi artık sadece bir akademik alan değil, aynı zamanda bir uygulamalı bir alana evrildi artık. Bu yüzden biz makine öğrenmesi uygulamalarını yazılım mühendisliği bağlamında...
+
+180
+00:44:27,027 --> 00:44:32,427
+Mimarcisiyle ve süreçleriyle ele alınacağı şekilde dayandırılması gerektiğini düşünüyoruz.
+
+181
+00:44:34,007 --> 00:44:38,607
+Bu amaçla makine öğrenmelerini daha nasıl başarılı hale getiririz?
+
+182
+00:44:39,527 --> 00:44:43,907
+Mesela dayandığı en temel aslında yakıt olan veriyi nasıl yönetim yönetebiliriz?
+
+183
+00:44:44,347 --> 00:44:45,987
+Gibi sorularla karşı karşıyayız.
+
+184
+00:44:46,356 --> 00:45:01,756
+Bu amaçla da günümüzde artık büyük veri kavramı ortaya çıktı. Büyük veri de buradaki çok çeşitli, farklı banyasyondaki ve hızdaki ve hacimdeki verinin yönetilmesini sağlayan teknoloji ve mimari yaklaşımları kapsamaktı.
+
+185
+00:45:04,636 --> 00:45:11,796
+Ve aynı zamanda buradaki kalitesi ve iyileştirilmesi makine vermesi uygulamaların başarısını da direkt olarak çoğunlukla eklem etti.
+
+186
+00:45:12,659 --> 00:45:24,319
+Diğer ilgilendiğimiz nokta da yazılım ürün hatları. Bu tarz uygulamaları geliştirdiğimizde bu uygulamalı birleşenlerinin yeniden kullanabilirlerini arttırarak
+
+187
+00:45:24,820 --> 00:45:46,680
+Farklı ürünleri nasıl geliştirebiliriz de aslında odaklanıyor. Buradaki yeniden kullanımlı birisi bize aynı zamanda çok ciddi bir maliyet etkinlik ve kalitede ve iyileştirme sağlıyor. Bununla ilgili literatürde ne gibi şeyler incevendiğini ve ne gibi yöntemler olduğunu da ayrı bir araştırma yaptık. Son olarak da ilgilendiğimiz nokta değendirme yaklaşımları.
+
+188
+00:45:47,476 --> 00:45:57,376
+Bu tarz mimarilerin ne gibi ölçüklerle değerlendirmesini yapabiliriz? Nasıl bir yaklaşımlarımız var? Başarısını nasıl ölçeriz? gibi notalara girdik.
+
+189
+00:45:57,675 --> 00:46:03,336
+Tüm bu buradaki araştırma sorularıyla birlikte bir sistemik literatür taraması gerçekleştirildi.
+
+190
+00:46:04,336 --> 00:46:08,716
+Ve sizlere bunun sonuçlarını biraz bahsediyor olacağım. Ve buradaki açık programlara göre de...
+
+191
+00:46:08,976 --> 00:46:18,816
+Aslında şu an doktor tezimin de bu programların nasıl konumlandırılığını, konumlandırılacağını, nasıl bir yol ortamı olduğunu biraz bahsediyor olacağım.
+
+192
+00:46:21,476 --> 00:46:24,356
+Öncelikle yazıl mimarilerinden biraz bahsetmek istiyorum.
+
+193
+00:46:25,396 --> 00:46:43,335
+Yazılım mimarileri ağ teknolojilerindeki hız, güvenliğin altmasıyla birlikte yazılım sistemlerinin ağ tarafından enişilebilir, acil sistemlerle yönetilebilir ve dağıtık makineleri konuşlandırabilir olması ile birlikte aslında ciddi bir iğne kazandı.
+
+194
+00:46:43,731 --> 00:47:11,351
+Özellikle en çok hızlandıran unsurlarda bulut bilişim, sanatlaştırma ve kontrol edilmesi son teknolojileri oldu. Bunun yanında günümüzde IoT, Endüstri 4.0 gibi yeni trendlerin çıkması ve internet servislerine olan ihtiyaçların gün ve gün her gün artmasıyla birlikte karmaşık sistemde olan ihtiyaçlar da artmakta. Bu tarz sistemlerin geliştirilmesi için de bunların yazılım mimarisi boyutunda da aslında iz düşümü diyebiliriz mikro servis mühalleri. Bu ihtiyaçlara cevap verme için ortaya çıktı.
+
+195
+00:47:11,731 --> 00:47:22,611
+Kısaca yazım numarası, yazım sisteminin kendi içerisinde tutarlı iş fonksiyonları içeren, tek bir amacı olan küçük ve hafif servise ayıştırma üzerine odaklanmış diyebiliriz.
+
+196
+00:47:25,671 --> 00:47:30,891
+Aslında üzerinde anlatılması çok şey var ama tek bir konum olmadığı için detaylı çok fazla girmiyorum.
+
+197
+00:47:31,671 --> 00:47:35,771
+Temel olarak ama faydaları şunlar, bize öncelikle ölçeklenebilirliği sağlıyor.
+
+198
+00:47:36,340 --> 00:47:52,920
+Ve idam edilebilirlikte çok büyük bir kolaylık sağlıyor. Bunu biraz açabilirim idam edilebilirliği. Çünkü dağıtık ve mikro düzeyli servisler olduğu için farklı teknoloji siteleriyle farklı devoperler tarafından, farklı ekipler tarafından pek çok mikro servis geliştirebilir.
+
+199
+00:47:52,920 --> 00:47:58,520
+Ve bu mikro servis birbirleriyle kendiler içerisinde haberleşerek bir uygulamayı gerçekleştirebilir aslında.
+
+200
+00:47:59,092 --> 00:48:17,912
+Bu aynı zamanda kaliteyi arttıran bir şey ve geliştirici ürekendini de arttıran bir şey. Çünkü canlı bir şey yazalım ve süre geçtikçe de teknolojiler değişiyor ve yeni teknolojilerle birlikte yeni modernizasyon oldu çok haleleşiyor. Legacy sistemlerde yeni sistemleri eklemelendirebiliyorsunuz.
+
+201
+00:48:18,260 --> 00:48:41,220
+Bu teknoloji çeşitli bir avantaj. Aynı zamanda daha küçük ölçekli kod bezayla uğraşıldığı için de hem kod kalitesi artıyor hem de geliştirici motivasyon artıyor. Bu bizi aynı zamanda dayanılık, güvenirlik gibi avantajlar da sağlıyor. Kolay konuşandırmasında şöyle bir avantajı var. Sadece çok dar kapsamlı, tek iş fonksiyonu gerçekleştiren bir servis olduğu için.
+
+202
+00:48:41,684 --> 00:48:49,084
+Sadece orada bir bug varsa mesela, sadece ona hotfix yapıp, ona bir sürüm ve CRCD parklar işletiyoruz aslında.
+
+203
+00:48:49,084 --> 00:48:54,084
+Tüm uygulamanın diğer mikro servisine hiçbir şekilde dokunulmuyor aslında üretim ortamlarında.
+
+204
+00:48:54,084 --> 00:49:03,684
+Ve bunun build time'ları, test ve böyle daha sonunda geçen süreler oldukça daha hızlı. Çünkü daha mikro düzeyde bir kapsama sahip.
+
+205
+00:49:04,244 --> 00:49:13,444
+Bu oldukça avantajlı artık günümüzde. Her şey bulunduğu zaman çalışırken, MİK'a düzeyde artık bunu yönetebiliyor olmak bize oldukça hem verimlilik de sağlıyor ve hızla sağlıyor.
+
+206
+00:49:14,228 --> 00:49:38,688
+B1'in tabii getirdiği zorluklar da var. Özellikle bu kadar dağınık yapıdaki uygulamaların bir birerle haberleşmesi için bir servis keşfi gerekiyor. A-Mikro servisinin adresini ve sağlık durumunu, ayette olup olmadığını, replika sayısını biliyor olması lazım. Bunun için öncelikle bir kayıtlanması gerekiyor merkeze bir kayıtçıya. Ve aynı zamanda artık monetik uygulamardaki tek bir prosesle ayağa kalkmadığı için uygulama.
+
+207
+00:49:39,188 --> 00:49:44,467
+Bu dağıtıklı yapıda ve belki yüzlerce mikros servisler bunun güvenliğini sağlamak da oldukça güçleşti.
+
+208
+00:49:44,467 --> 00:49:49,467
+Bundan ilgili tabi belli örüntüler şeyler var ama ekstra bile getirdiğim zorluk.
+
+209
+00:49:49,467 --> 00:49:57,947
+Artık in-process bir haberleşme olmuyor. A objesini, B objesini çağırmıyor. Onun yerine A servisi, B servisini çağırıyor.
+
+210
+00:49:57,947 --> 00:50:00,947
+Bu bir metaylaşma alt yapısı üzerinden ilerliyor.
+
+211
+00:50:01,331 --> 00:50:07,411
+Bu da aynı zamanda entegra son noktasında ciddi bir maliyet olarak bize geliyor geliştiriciler açısından.
+
+212
+00:50:08,451 --> 00:50:11,491
+Diğer önemli noktası da veri yöntemine yetirdiği zorluk.
+
+213
+00:50:12,831 --> 00:50:22,671
+Dağıtık yapılar olduğu için özellikle senkron ve transaktional bütünlüğü olması gereken verileri istedip artık farklı bir şekilde ele almak gerekiyor.
+
+214
+00:50:22,671 --> 00:50:27,271
+Mesela A mikroservis içerisinde transaktional sınırında olan ve onunla göre kaydedilen bir data.
+
+215
+00:50:27,664 --> 00:50:47,443
+Web microservices'in de aynı şekilde sincron bir şekilde alınamıyor artık. Daha çok eventual consistency kavramıyla asinkron bir şekilde daha sonra onun tutarlı olacağını garanti ediyoruz. Ama o esnada garanti edemiyor. Aslında bu baya programatik olarak, düşüncel olarak temelden değiştiren bir şey.
+
+216
+00:50:48,083 --> 00:51:02,723
+Eğer böyle bir zorunluluk varsa da, özellikle finansda olabiliyor, atomistik olan temel işlemlerde, mikroservisinin sınırlarını ona göre belirlemek gerekiyor. Bu önemli bir aslında mikroservisinin nasıl ayıştırılması gerektiğine göre bir tasarım kararını belirleyen bir ölçüt.
+
+217
+00:51:05,543 --> 00:51:13,723
+Tüm bu faydalı ve zorluklarla beraber artık endüstri bunun ciddi bir şekilde adapte olduğunu söyleyebiliriz ve artık de facto bir yazılım miniversitesi stili günümüzde.
+
+218
+00:51:14,804 --> 00:51:38,244
+Hatta ben bunu şu kara kötürle biraz daha hoşuma giden dikkat edeyim. Fazla adapte olduğunu düşünüyorum. Çok trendi ve teki bir şey artık günümüzde. Sektörde çalışırken de çok başıma da geldi bu birebir yani iki üç defa da denk geldi aynı durum. Mesela müşteri şey istiyor, bunu cloud'a taşıyabilir miyiz? Bütün sorunlarımız çözmüyor mu?
+
+219
+00:51:38,639 --> 00:52:04,420
+Evet, taşırız ama bunu yeniden tasarlamam gerekiyor diyorum mesela. Bu çünkü cloud natif olması lazım. Sadece konteyner atlıyor bana ama konteyner içerisine koymak, uygulamaya çözmüyor meseleyi. Böyle teki şeyler söyleyerek çözemezsin diyorum. Bu saat Kubernetes diyor. Daha da ilerliyim. Aslında Kubernetes gerçekten pek çok şey çözüyor günümüzde artık. Günümüzün bulut tabağında işitim sistemi gibi diyebilirim. Ve her şey tüm konteyner orkestrasyonunu yönetiyor.
+
+220
+00:52:05,043 --> 00:52:15,203
+Ama aslında öncelikle uygulama düzeyinden başlayarak, diri ve uygulama koduyla, daha temel bütüncül tasarımı düşünmek gerekiyor. Bunlar sadece bir araç aslında.
+
+221
+00:52:15,764 --> 00:52:36,304
+Sadece bu araçlarla, polenler çözülmüyor yani. Demek istediğim aslında endüstri artık gereğinden fazla bu konuda bir haberdar ve trendleri takip ediyor, pek çok şey okuyor, iş dünyası özellikle. Ve buna göre teknik takımları da zorluyorlar. Buna geçen bir uygulayayım gibi. Bu yüzden fazla adapte oldu artık nüko servislere.
+
+222
+00:52:37,235 --> 00:52:56,995
+Diğer konu da makine vermesi uygulamaları. Cidden artık önemli bir kayma, bir paradigmatik bir değişim oluyor aslında yazılımda da. Ve her şey temelinden değiştiriyor. Özellikle artık tamamen bir uygulamalar alanına evlili diyebiliriz. Şu sektörde artık dev oyuncular da Google, Facebook, Research gibi şeyler de çok ciddi yayınlar yapıyorlar bu konularda.
+
+223
+00:52:57,876 --> 00:53:06,176
+Yani kısaca geçmiş verilerden öğrenerek tahminleme, muayene, planlama ve tanıma gibi karmaşık görevlileri yapabilen uygulamalar.
+
+224
+00:53:07,036 --> 00:53:11,916
+Ve her sene iş süreçlerin uyarlanması %25 her yıl artmakta.
+
+225
+00:53:12,836 --> 00:53:15,836
+Buradaki önemli iki nokta veri ve algoritma.
+
+226
+00:53:16,196 --> 00:53:18,896
+Makine öğrenmesi modellerinin performansı için oldukça kritik.
+
+227
+00:53:20,275 --> 00:53:23,675
+Bizim ilgi alanımızda biraz daha bu üzerine uyumlaşacak.
+
+228
+00:53:24,655 --> 00:53:38,655
+Algoritmalar aslında biraz daha akademik alanında çok fazla çalışmalar ama özellikle verin yönetilmesi ve verin manipülasyonu gibi depolanması pek çok kalite kontrolü gibi pek çok konu ise biraz daha farklı boyutlarda yalanması gereken şeyler.
+
+229
+00:53:38,875 --> 00:53:39,895
+Bunu biraz daha giriyor olacağım.
+
+230
+00:53:42,132 --> 00:54:08,411
+Diğer bir konuda büyük veri. Eğitilen makine vermesi modelleri çoğunlukla büyük veri ile daha iyi sonuçlar vermekte. Eğitilen veri kümesinin boyutu olduğu için önemli ama önce tabii kaliteli olması önemli. Kaliteli şekil toplanması, işlenmesi, sorgulanabilmesi bu uygulamaların ekli olabilmesini sağlıyor. Tabii buradaki pek çok bunu sağlayan araç gereği artık gelişmiş durumda hizmet.
+
+231
+00:54:08,851 --> 00:54:30,152
+Ama beraberinde ikisinin pek çok zorluk da var. Çünkü büyükleri arttıkça hesaplama gücü inanılmaz gerekiyor. Hatta bazı yayınlarda NLP'nin treningdeki harcadığı maliyetler artık küresel ısınma neden olduğu ile ilgili çalışmalar falan görmüştüm. O kadar maliyetli işlemler işlem gücü olarak.
+
+232
+00:54:30,739 --> 00:54:40,759
+Bu yüzden son dönemde Small Data veya Transfer Learning gibi yeni yaklaşımlar da popüler olmaya başlıyor anlaşılan bu sorunlarla çağır olmak için.
+
+233
+00:54:43,439 --> 00:54:55,459
+Tabi bu uygulamanın geliştirmesinde önemli zorluklar var. Çünkü özellikle akademin ele alışıyla makine öğrenmesini, endüstriğini ele alması ve gerçek programların uygulaması arasında önemli farklar mevcut.
+
+234
+00:54:56,083 --> 00:55:01,823
+Öncelikle algoritma tabii önemli ama diğer noktaları da az bütüncül düşünmek gerekiyor.
+
+235
+00:55:02,343 --> 00:55:07,923
+Kalite güvencesi oldukça önemli. Canlı bir sistem ve üretim ortamındaysa çok önemli.
+
+236
+00:55:08,436 --> 00:55:29,976
+Onun görev çünkü işteki süreçler direkt ekleniyor çünkü. Olası bir anomal bozukluk durumunda, arıza durumunda. Diğeri konu artık yeni unsurları var mimarimizde. Veri ve model. Bunun yönetimi de tüm yaşam döneminde ele alınması gerekiyor ve konuşandırılması üretim ortamında. Konuşanlığında bu uygulamanın ölçülebilir, erişilebilir ve güvenilir olması önemli.
+
+237
+00:55:30,527 --> 00:55:42,647
+Bunun ileri düzede bir monitörün altyapısı ve bu ihtiyaç yudu verinin de etiketlenmiş olması ve doğru etiketlenmesi gibi ihtiyaçlar da var. Çünkü bu eğitim setinde kullanılıyor bazen.
+
+238
+00:55:44,148 --> 00:55:58,268
+Böyle yeni problemlerimiz var artık. Yani normal yazılım mühendisliğinde belki bir yazılım sistemi geliştirirken artık bizim ihtiyaç yaşamadığımız sorunlardı bunlar ama bir yapay zeka uygulaması, bir makinatörü uygulaması geliştiriyorsa bunları da ele almamız gerekiyor artık.
+
+239
+00:55:58,268 --> 00:56:07,388
+Hatta bu geçen ay yenilen bir makalede Google'un gelen Facebook'un önderk yaptığı bir konferanstı.
+
+240
+00:56:08,527 --> 00:56:25,587
+Ken Birçin Üniversitesi'nde araştırmacıların yayınladığı bir survey var. Survey'de şey diyor mesela, özellikle veri ve makine öğrenmesinin izlenmesi ve onun üzerinden alanların üretilmesiyle ilgili anahtar metetlerinin anlaşılması konusunda toplum bayağı az, yani çok erken aşamada diyor.
+
+241
+00:56:26,099 --> 00:56:35,779
+Bu evrilen verinin izlenmesi, oradaki bayesinin tahmin edilmesi ve genel olarak tüm modelin performansının izlenmesi.
+
+242
+00:56:36,179 --> 00:56:39,539
+Tertörde açık bir problemdir diye birçok bir şeyler özelliğiyle.
+
+243
+00:56:40,379 --> 00:56:49,979
+Biz de aslında bunlardan yola çıkarak tüm buradaki zorlukları gideren, bütüncül bir yaklaşım izleyerek yazılım mimarisi yaklaşımlarına odaklandık.
+
+244
+00:56:53,268 --> 00:57:19,987
+Peki nasıl bir çözüm uygulayabiliriz? İlk başta en naif çözüm aslında buradaki bilindeki yazılım mimarisi örüntülerini bu da ihtiyaçları için özelleştirmek. İlk başta genel arasında buradaki mimari örüntüsü veri yönelik mimariler. Fakat uygulamada sahada çok fazla yansıması olmadı. Ve servis yönelik mimarlarda olduğu gibi merkezli yapıları olmasından ötürü belli ölçeklenme bilgisayar noktasında endişeler yaratıyor.
+
+245
+00:57:20,416 --> 00:57:47,956
+Onun yerine tamamen dağıtık, otonom, bağımsız olan mikroservislerle de aslında bu sorunlar giderilebilir. Nasıl giderilmesi gerektiğiyle ilgili de bizim araştırmamız aslında burada bir yenilik getirmek üzerine olacak. Özellikle mesela makinonelme sorgulamalarında veri keşfi, veri kümesi hazırlanma, model eğitimi, konuşlandırmadaki başarılı ölçümlemeleri gibi pek çok unsuru da mikroservis minyarları özelinde değindirip konumlandırmaya çalışacağız.
+
+246
+00:57:49,684 --> 00:58:02,964
+Bu tarz uygulamalarda mikro servisinin nasıl uygulandığı, nasıl çözdüğü, özellikle üretim ve canlı sistemlerde nasıl çare olduğu sorunlara en temel aslında odak noktamız diyebiliriz araştırmamızda.
+
+247
+00:58:04,104 --> 00:58:06,064
+Diğer bir nokta yazılım ürün hattı.
+
+248
+00:58:06,463 --> 00:58:23,344
+Bu yazılım ürün hattı aslında bir araba üretimindeki ürün hattı gibi benzer bir şekilde yazılım üretiminde de kullanılan bir yaklaşım. Ortak bileşenler var, değişen bileşenler var ve bu değişen bileşenleri yöneterek, konfigür ederek bir ürün halde diyorsunuz, bir yazılım ürünü.
+
+249
+00:58:23,775 --> 00:58:32,255
+Bunun avancını genel kullanabildiği çok arttırıyor ve genel kullanabildiği oldukça mahiyeti düşüren bir şey ve daha çok kaliteli bir uygulama geçtirmesi sağlıyor.
+
+250
+00:58:32,375 --> 00:58:36,675
+Şimdi bileşenler tekrar tekrar kullanıldığı için kalite güvencesi daha fazla sağlanabiliyor.
+
+251
+00:58:37,915 --> 00:58:45,875
+Burada makine armatisi sistemler geliştirilmesinde bu tekniğin nasıl kullanılması ve nasıl istifa etmemiz gerektiği üzerine bir araştırma sorumuz oldu ve bunu da araştırdık.
+
+252
+00:58:47,572 --> 00:59:04,652
+Değer bir konu, değendirme yaklaşımları. Yazılım mühendisliğinden gelen geleneksel metolojiler var bununla ilgili. Oldukça gelişmiş. Fakat makine öğrenmesi uygulamalarına el aldığımızda yeni gelişen ihtiyaçlara ve kaygılara göre nasıl değendirme metikleri ve kriterleri olması gerektiğini öncelikle tanınacağız.
+
+253
+00:59:04,652 --> 00:59:14,231
+Ve mikroservis tabağına geliştiren makine öğrenmesi uygulamalarının başarısının mimari perspektiften nasıl değendireceği cevabını aradığımız bir araştırma sorusu.
+
+254
+00:59:16,755 --> 00:59:29,755
+Bu kapsamda bir sistem literatür tanıması gerçekleştirdik. Bu sistem literatür tanımasında buradaki soruları cevap olmadığı için 5 tane araştırma sorusu sorduk.
+
+255
+00:59:29,755 --> 00:59:35,015
+Ve farklı kaynaklardan bu şeyleri aradık belli arama sorgularıyla.
+
+256
+00:59:35,635 --> 00:59:48,875
+Ve tanınadığınız bazı kriterlere göre de bir eliminasyon yaptı. İlk aşama bir eliminasyon. Sonra seçtiğiniz makaleleri de tamamını okuyarak bir kalite değendirmesi yaptık.
+
+257
+00:59:49,615 --> 01:00:00,715
+Bu makaleleri tekrar okuyarak veri toplama sürecinden sonra belli bulgular elde etmeye çalıştık. Bu bulgular bizim başta tanımladığımız araştırma sorularını cevaplar nitelikte oldu.
+
+258
+01:00:01,748 --> 01:00:28,348
+Kısaca şöyle bir süreci var, biraz daha detaya girersek. İki tane araştırma sorumuz oldu. Mikroservis ve Big Data kelimelerini dedik. Bir de Mikroservis ve Machine Learning. Bir de bunun farklı sprintlerini de denedik. Toplamda beş farklı veri kaynağından sorgulan çettik. İlk bir eliminasyonu tabi tuttuk. Sonra bu 104 makaleye kadar indi.
+
+259
+01:00:29,268 --> 01:00:38,988
+Sonra bir snowballing süreci yürüttük. Snowballing'de yaptığımız şey aslında bu makallere atıf yapan veya bu makale referans gösterdiği makallere de inceledik.
+
+260
+01:00:39,588 --> 01:00:44,268
+Ve bunları da esas olarak hem metnisel olarak tüm metini okuyarak da icremede bulunduk.
+
+261
+01:00:45,288 --> 01:00:49,028
+Tüm bu kalite değendirme sürecinden sonra da 45 makaleye kadar indirebildik.
+
+262
+01:00:49,548 --> 01:00:55,168
+Bu 45 makaleye göre de sorduğumuz araştırma sorularına göre cevaplar bulmaya çalıştık.
+
+263
+01:00:57,588 --> 01:01:06,708
+Bu denedirme aşamasında, kalite denedirmede belli bir aslında kuantitif şekli yerledik. Bunun bir tablosu vardı uzun bir şey, onu koymadım.
+
+264
+01:01:06,708 --> 01:01:15,148
+Bunun göre bir puanlama yaptık. Puanlama 8'den aşağı olan tüm makaleyi eledik. Sadece 9 ve 16 arasında skalada kalan makaleleri koyduk.
+
+265
+01:01:15,148 --> 01:01:24,307
+Aslında daha büyük bir kısmı elemiş olduk makalelerin. Açıkçası biraz böyle makalenin kalitesi noktasında biraz literatürde sıkıntı gördüm yani genel olarak.
+
+266
+01:01:24,367 --> 01:01:33,168
+Endüstri sürüklediği bir alan olduğu için diye olduğunu düşünüyorum. Mutlu olan temel bir bilim olsaydı, mutlu olan bu kadar sert bir eliminasyon olmayabilirdi.
+
+267
+01:01:34,028 --> 01:01:45,128
+Buradaki tablodaki anahtar kelimeleri kullanılarak veri çıkarmı yaptık ve bu çıkarımlara göre de bir sınıflandırma yaparak buradaki belli bulguları toparladık ve araştırma sorularımıza cevaplar bulmaya çalıştık.
+
+268
+01:01:47,027 --> 01:02:03,188
+Toplam 45 makale bulmuştuk. Bunun 37'si konferans bildirisi, 8'si dergi makalesi. Gördüğünüz üzere her yıl bir artış eğiliminde ve çoğunlukla da konferans bildirileri çoğunlukla. Dergi makaleleri biraz daha az olarak yayınlanmakta.
+
+269
+01:02:05,228 --> 01:02:10,967
+İlk sorumuz, büyük veri minvarlar ile mikroservisler aynı minvarda nasıl bir teyir alabilirler?
+
+270
+01:02:12,019 --> 01:02:22,219
+Son 5 dakika, özür dilerim, 5 dakikada toparlaman gerekiyor. Ona göre ayarla.
+
+271
+01:02:22,219 --> 01:02:23,759
+Tamam hocam.
+
+272
+01:02:24,307 --> 01:02:52,087
+Öncelikle aslında bulduğumuz cevaptan başlayıp diğer makalelerin tekrar hızlı hızlı geçmeyi düşünüyorum. Büyük veri mimarisi aslında yukarıdaki Lambda Architecture'i bunların bir tanesi. İki tane en fazla yürüntüsü var. Biri Kappa ve Lambda. Çoğunlukla literatür Lambda mimarisi raporlanmış. Bir tane de farklı spesifik bir öneri var mimari konusunda. Temel unsurları Split Layer ve Batch Layer ve Server Layer'dan oluşan ve akan veriyle.
+
+273
+01:02:52,307 --> 01:03:06,307
+Data address dediğimiz daha böyle immutable veri olan, read-on verinin arşivlenmiş datanın depolandığı başka bir katman, bir veri depolama teknolojilerinden bahsediyoruz aslında. Bunları komple bir merkeze oturtup...
+
+274
+01:03:07,092 --> 01:03:27,392
+Bunların üzerine mikroservisi nasıl konuşlandırabiliriz? Öncelikle buradaki processing layer oluşturarak bu prosesi yapan şeylerden her bir mikroservis olarak konuşlandırılabilir. En tipik görülen literatürdeki kullanım durumu bu şekilde. Diğer tarafta da servis katmanında bu mikroservise konularak analiti yapılmış.
+
+275
+01:03:27,856 --> 01:03:38,456
+Ve buradaki veriyi harici tüketicilere API olarak veya farklı bir şekilde bir arayüz olarak sağlayan mikroservisler olarak konuşlandırılmış.
+
+276
+01:03:38,456 --> 01:03:45,456
+Ve genellikle bütün mikroservislerin haberleşmesi de asenkron bir şekilde gerçekleştirilmiş çoğunlukla. Özellikle Profesant Layer'da.
+
+277
+01:03:46,115 --> 01:03:49,776
+Ve bu açıdan da reaktif mikroservis olarak tanımlıyor aslında çoğunlukla.
+
+278
+01:03:50,483 --> 01:03:56,884
+Aklımlar olduğu için bazı şeyleri hızlı hızlı geçeceğim. Çünkü beş tane sorun var.
+
+279
+01:03:56,884 --> 01:04:06,384
+Mesela şu makalede S21'de Compute Layer'da Async Worker'lar mikroservis ortamlanmış. Burada da Service Layer'da konumlandırılmış.
+
+280
+01:04:06,384 --> 01:04:10,483
+Bu değişebiliyor her çalışmada. Biz buna topluca değendirmesini yaptık.
+
+281
+01:04:10,655 --> 01:04:34,596
+Burada ise biraz da farklı yer alınmış. Aynı zamanda veri tabanı da aynı mikro servisinin bünyesinde müstakil olarak tanınanmış. Sadece bunların tamamı metaylaşma altyapısı üzerinde asekron haberleştirildiği belirtilmiş. Bu da bir örüntü aslında. Tanınanmış. Tüzyılık da geçerli bir örüntü. Hatta bunların örüntü olarak tanınarsak iki tane paten öne çıkıyor. Database per service ve shared database.
+
+282
+01:04:35,219 --> 01:04:40,219
+Az önceki şu makale, database server per service kullanmış.
+
+283
+01:04:40,219 --> 01:04:45,260
+Ama mesela bir önceki çalışmaların hepsi de her servis başına ortak bir veri katmanı kullanıyor.
+
+284
+01:04:45,340 --> 01:04:47,240
+Orada ama şema düzenini açtığına gitmiş.
+
+285
+01:04:48,059 --> 01:04:50,159
+Bunlar bizim genelde haritalandırdığımız buradaki örüntüler.
+
+286
+01:04:50,679 --> 01:04:52,360
+Buna detaylı da rapor alacağız çalışmalarımızda.
+
+287
+01:04:53,340 --> 01:04:56,199
+Diğeri, makine öğrenmesi uygulamaları mikro servise nasıl uyarlayabilir?
+
+288
+01:04:57,012 --> 01:05:11,932
+Burada aslında şu Google'un Hidden Technical Data in Machinery Systems makalesindeki bir figürdü. Aslında bir makine öğrenmesi uygulaması tasarlıyorsanız aslında içerisindeki makine öğrenmesi kodu en küçük kısmı oluşturuyor.
+
+289
+01:05:15,903 --> 01:05:43,884
+Yani model analizli gibi pek çok bambaşka konular var aslında. Normalde sadece algoritmayı belki yoğunlaşırken aslında gerçek canlı bir uygulamalı bir şey gerçekleştiriyorsanız gerçek programlar için bunu düşünmeniz gerekiyor ve bunun tüm minvari tarafından yansıması gerekiyor. Mesela aşağıda S4 çalışmasında böyle bir minvari önlerde bulunmuş ama mesela burada pek çok unsuru yok aslında ve buradaki data handler'a bir servis yapılmış, mikroservis. İşte prediction için bir servis yapılmış, feature engineering için bir feature servis.
+
+290
+01:05:43,903 --> 01:05:52,024
+Burada aslında amacımız bunun tam arttırmasına yapılarak hangi usulların olması gerektiği ve bundan değerlendirme ölçüleri neler olması gerektiği.
+
+291
+01:05:53,844 --> 01:05:57,224
+Bunu da geçiyorum. Bu da benzer bir şekilde cevaplamış sorumuza.
+
+292
+01:05:59,983 --> 01:06:04,983
+Mikroservis tabanlı makinomisi uygulamaları hangi endüstri anlamda yönelmiştir ve karşılaşan zorluklar nelerdir?
+
+293
+01:06:05,619 --> 01:06:16,740
+En çocuk IoT ve Endüstri 4.0 bağlamındaki uygulamalarda gördük. En temel problemler bu makalelerde okuduğumuz 45 makalede konuşlandırma, servis orkestasyonu ve denedirme yöntemleri üzerine oldu.
+
+294
+01:06:18,900 --> 01:06:23,460
+Son olarak dördüncü sorumuz da yazılım yöntemlerle nasıl uygulanabilir?
+
+295
+01:06:24,920 --> 01:06:33,140
+Burada genelde servislerle birleşenleştirme yaklaşımı öne çıkıyor. Bu servislerle birleşenleştirirken servis arasındaki cold dipendisleri, çağrım dipendisleri ele alınmış.
+
+296
+01:06:33,588 --> 01:06:57,188
+Ve bu Dependency'e göz önünde bulundurarak, bunların aslında bir alt kümesi seçilerek, o ürün için olması gereken mikro servis kümesi bir ürün oluşturuyor aslında. Ve her mikro servis kullanılırken de multi-trent bir şekilde kullandılarak yeniden kullandırılmasının yönüne açılmış. Bu multi-trent bir şey kullanılmış oluyor aslında. Farklı kiracılar üzerinde, farklı konflikasyon parametre de geçirerek çalışma anlamında aynı serviste, aynı kod beye sahip mikro servis kullanılabiliyor.
+
+297
+01:06:57,907 --> 01:07:06,347
+Aslında 4 tane makale var literatada bununla ilgili. SB1'in izleyiciline farklı araştırma gruplara da olsa aynı yöntemi kullanmışlar. Bu da tek görüntüye tespit ettik aslında.
+
+298
+01:07:07,387 --> 01:07:11,987
+Son olarak mikros tercih tabağında makine öğrenmesi uygulamalar için değerlendirme ölçütleri ve kriterleri nelerdir?
+
+299
+01:07:12,628 --> 01:07:21,068
+Bu aslında direkt makine öğrenmesi uygulamasında bu konuda ilgi hiç bir çalışma bulamadık. O yüzden sadece mikro servisler üzerinde denildi meşhur denelerdi diye baktık.
+
+300
+01:07:21,068 --> 01:07:34,148
+Orada dediğimiz şeylerde tem olarak aslında klasik yazılmıyorlsen gelen yaklaşımlar var. Burada işte kolite türklerin tanınlanması, sonra bunun servislerin özelliklerin tanınlanması ve metiklerin tanınlanması.
+
+301
+01:07:35,088 --> 01:07:39,487
+Metiklerde genelde servislerin çağrımı, senkron, asenkron gibi farklı metikler var.
+
+302
+01:07:40,851 --> 01:08:04,152
+Ama bu kadar verinin ve modelin öne çıktığı bir uygulamada, mesela verinin nasıl versiyon kontrol altında tutulacağı, nasıl kalitesine yapılacağı, bunun gibi peçok açık soru varken, peçok da metrik ekleyebileceğimizi düşünüyoruz bu alanda. Bu metriklerle de aslında buradaki kalite özelliklerini karşılayan, mesela idam edilebilirliğini arttıran yeni metrikler önererek bu uygulamaların başarısını değindirmeyi hedefliyoruz bu çalışmamızda.
+
+303
+01:08:07,599 --> 01:08:15,960
+Önümüzdeki dönemde Sistematik Nesut Araması çalışması adres dediği açık programlar üzerine eğilerek yeni yaklaşımlar, örüntüler ve değerlendirme yöntemlerine geçirme hedefliyoruz.
+
+304
+01:08:15,960 --> 01:08:24,379
+Ve bir uygulamalık kavram ve sipariş çalışması ile de bu çalışmamızın hakkında deneysel kanıtlar sunmaya hedefliyoruz.
+
+305
+01:08:27,000 --> 01:08:30,719
+Teşekkür ederim arkadaşlar. Sorunuz varsa da alabilirim.
+
+306
+01:08:34,036 --> 01:08:55,416
+Teşekkürler [öğrenci]. İlginç bir çalışma. Ben bu çalışmada aslında en çok senin search tekniğini beğendim. Yani mevcut makaleleri nasıl elediğini falan çok ilgimi çekti o bölüm. O yüzden örnek bir çalışma diyebilirim. Evet arkadaşlar sorunuz var mı [öğrenci]'ye?
+
+307
+01:08:59,412 --> 01:09:15,271
+Lütfen çekinmeden soru sorun. Amacımız burada fikir alışverişi yapmak. Belki [öğrenci]'nin aklına gelmeyen bir noktada [öğrenci]'ye fikir de vermiş olabilirsiniz. O yüzden soruların gelmesi gerektiğini düşünüyorum.
+
+308
+01:09:17,912 --> 01:09:21,572
+Evet [öğrenci] seni de alkışlıyoruz. Teşekkür ediyoruz sunum için.
+
+309
+01:09:21,572 --> 01:09:23,112
+Teşekkür ederim hocam. Çok sağ olun.
+
+310
+01:09:24,979 --> 01:09:37,659
+Dinleyiciler de seni alkışladılar. Teşekkürler. Şimdi sırada [öğrenci] var. [öğrenci] ekranını paylaşıp sunuma başlayabilirsin.
+
+311
+01:10:00,340 --> 01:10:01,260
+Hocam merhabalar.
+
+312
+01:10:03,159 --> 01:10:08,120
+Merhaba [öğrenci]. [kişisel bilgi] Çok güzel.
+
+313
+01:10:09,200 --> 01:10:11,800
+Hocam ekran paylaşımı da yaptım. Herhangi bir psikopumuz var mı acaba?
+
+314
+01:10:11,800 --> 01:10:18,159
+Yok, görebiliyoruz. Bir slide show yaparsanız tam ekran görebiliriz.
+
+315
+01:10:18,440 --> 01:10:24,500
+Sonun esnasında rica etsen kamerayı kapatabilir miyim? Işığı beni rahatsız ediyor da. Elbise olacaktı.
+
+316
+01:10:25,260 --> 01:10:27,120
+Tamam, kapatabilirsiniz.
+
+317
+01:10:28,083 --> 01:10:36,344
+Yani aslında benim de internetim biraz kötü. O yüzden ara ara kapatabilirim. Buyurun sizi dinliyorum.
+
+318
+01:10:36,623 --> 01:10:37,384
+Teşekkür ederim hocam.
+
+319
+01:10:47,956 --> 01:10:48,395
+Hmm.
+
+320
+01:10:53,716 --> 01:11:18,275
+Sonunda ilk defa ekran paylaşımı yaptığım için hocam, kusura bakmayın. Öncelikle herkese merhabalar. Sonuna başlamadan önce kısaca kendimi tanıtmak isterim. [kişisel bilgi]
+
+321
+01:11:20,467 --> 01:11:44,108
+Doktorat çalışma konusuyla ilgili ilişkili bir bölümü ele aldım bu semina konusunda. Sonu kapsamda aşağıdaki konu başlıklarına değineceğim. Konuya giriş, harita gösterimi, harita gösterim çeşitleri, harita birleştirme yöntemleri ve sonuç şeklinde başlıklar altında topladım konu kapsamda.
+
+322
+01:11:45,524 --> 01:12:05,924
+Günümüzde harit ve işlemi robotik alan için önemli bir problem olarak karşımda çıkmaktadır. Tekli robotlar için çözüm bulunmaktadır. Ancak çoklu robotlar yani birlikte çalışan robotlar veya robot istemleri için işin içine girince harit ve birleştirme işlemi bir sorun olarak gündeme gelmektedir.
+
+323
+01:12:09,076 --> 01:12:14,576
+Bu süreçte neden robotları kullanıyoruz? İlk yada karşıda çıkan soru olarak geliyor.
+
+324
+01:12:15,076 --> 01:12:34,475
+Biraz buna değinelim. İnsanlar için tehlike olabilecek alanlarda ve insanların yapması güç alan işlerde bunlar nelerdir? Mesela okyanus derinliklerinde, aktif volkanların çevresinde, doğal afetlerde arama tarama faaliyetleri, yer altı maden arama, deprem sorası hasarlı bina.
+
+325
+01:12:34,996 --> 01:12:45,896
+Denizaltı teşiflerinde, uzay araştırmalarında gibi birçok alanda robot kullanmaların ihtiyaç haline gelmiştir. Haliyle bu noktada robotlara ihtiyaç duyuyoruz.
+
+326
+01:12:47,252 --> 01:13:05,652
+Bu bağlamda karşımıza çıkan ilk etapta SLAM haritalama eş zamanlı konu belirme ve haritalama konusu ilk etapta karşımda çıkıyor. Zorlu koşullar altında çalışan otomobotlar için çerimci haritalar üretiliyor bu sayede SLAM uygulaması ile.
+
+327
+01:13:06,100 --> 01:13:15,700
+Bu saydık kısmen bilinen ya da hiç bilinmeyen bir ortamın eş zamanlı olarak haritalan bir konu verilmesinin yapılması da kolaylaşmış oluyor.
+
+328
+01:13:18,700 --> 01:13:27,000
+Haritalanacak ortamlar tanımlanırken, haritalanacak ortamın boyutu, haritalama süreci,
+
+329
+01:13:27,188 --> 01:13:31,188
+Haritama sürecini etkileyen kritik faktörler olarak karşısında çıkıyor.
+
+330
+01:13:31,188 --> 01:13:37,188
+Çünkü ortam ne kadar büyük olursa verileri toplamak ve haritayı oluşturmak o kadar uzun sürer.
+
+331
+01:13:37,188 --> 01:13:40,188
+Ve bir haritanın meydana gelme olasılığı o kadar yüksek olur.
+
+332
+01:13:40,188 --> 01:13:50,188
+Bundan dolayı bir ortamın haritanın sürecini minimum hata ve süreç elde edebilmek için çoklu robotlar olan SLAM teknolojilerine ihtiyaç duyuluyordu.
+
+333
+01:13:50,188 --> 01:13:54,060
+Ve ortam haritanın süreci ortam algılama.
+
+334
+01:13:54,131 --> 01:14:04,531
+Özüniklerinin çağrılması ve verilerin gösterimi aşamalarından oluşturularak haritaların tanınanması gerçekleştiriliyor.
+
+335
+01:14:06,931 --> 01:14:13,832
+Harita gösterileri iki bir haritalar için harita gösterilerin üç tane temsil karşımıza çıkıyor.
+
+336
+01:14:13,832 --> 01:14:19,031
+Yaptığım literatür taramasında doğrudan gösterim, özellik tabanlı gösterim.
+
+337
+01:14:19,380 --> 01:14:27,119
+Dolunluk ızgara gösterimi olarak üç aşamadan oluşuyor. Yani üç tane teknik olarak karşısında çıkıyor.
+
+338
+01:14:30,000 --> 01:14:43,340
+Bu sunum tapsamda harita gösterimlerinde iki boyutları ele aldım. Genelde bir terapik taramasında iki boyutlar tercih ediliyor. Üç boyutlar üzerinde çok çalışılmıyor veya harita gösteriminde çok tercih edilmiyor.
+
+339
+01:14:43,667 --> 01:14:52,167
+Belki daha iyi biraz da işin zorluk tarafını oluşturan derinlik boyutu işin içine katıldığı için olabilir diye düşünüyorum.
+
+340
+01:14:55,667 --> 01:14:59,667
+Doğrudan gösterim ilk gösterim yöntemi olarak karşımda çıkıyor.
+
+341
+01:14:59,667 --> 01:15:04,667
+Ham sensör taramaların kayıtlı bir listesi olarak temsil ediliyor bu gösterimde.
+
+342
+01:15:05,140 --> 01:15:11,140
+Bir algılama sistemi sensör veri dönüşümünden mavcut duruyor. Yani güncelerli veri işlemi alınmıyor.
+
+343
+01:15:11,140 --> 01:15:15,140
+Bununla birlikte bu gösterimde bir takım dezavantajlar da karşılığa çıkıyor.
+
+344
+01:15:15,140 --> 01:15:24,140
+Örneğin boş alanı modellemek gibi harita belirli ve sensörün doğrudan ölçemle değil alanda modellemek gibi unsuzlar da karşılığa çıkıyor.
+
+345
+01:15:24,140 --> 01:15:27,948
+Böyle bir gösterimde harita yönetmek zor oluyor haliyle.
+
+346
+01:15:32,500 --> 01:15:51,659
+Özellik tabanlı gösterimde ise sensör verilerinden çıkarılan bir özellik grubu temsil ediliyor. Bu özellikler yapay işaretler, dış mekan ağaçları veya nesneye ait çizgi bölümleri gibi doğal işaretler olabiliyor. Bu gösterim düşük.
+
+347
+01:15:52,532 --> 01:15:58,532
+Bedek gerektiğini ve harita üyesi ayarlamasında yüksek esnekliğe sahip olduğu için tercih ediliyor.
+
+348
+01:15:58,532 --> 01:16:16,532
+Yine bu harita gösterimleri bir dezavantajlı da diğer yöntem gibi karşımıza çıkan sadece belli özellikler çerçevesinde gösterimler gerçekleştiği için burada genel ortam hakkında bir bilgi veya fikir edinemiyoruz.
+
+349
+01:16:20,243 --> 01:16:27,243
+Dolunum ızgara gösteriminde ise yer yüzlemi dikdörtgen şeklinde hücrelere bölünüyor.
+
+350
+01:16:27,243 --> 01:16:33,243
+Yani burada hücrelere bölünüyor. Dikdörtgen şeklinde aslında matriz formatı da. İki boyutlu bir matriz formatı düşünülüyor.
+
+351
+01:16:33,243 --> 01:16:43,243
+Ve her bir hücre nesnenin işgal ettiği veya nesneden bağımsız hücrenin durumunu gösteren 0 ve 1 gibi iki değerle ilişkilendiriliyor.
+
+352
+01:16:47,136 --> 01:17:11,116
+Bilinmeyen bir durumda olduğu anlamına geliyor bu süreçte. Hücre değerinde ne kadar büyükse hücre dolu olma eğilimidir. Yani 1'e yakın bir değeri temsil ediyor. Hücre değerinde ne kadar küçükse hücre boş olma eğilimidir. Yani sıfıra yakın olma durumunda. Bu gösteri genel ortamını temsil etme ve harita belirsizliği modeli bilme noktası da avantaj sağlıyor.
+
+353
+01:17:16,051 --> 01:17:22,251
+Harita gösterimlerden sonra karşısında çıkan ikinci bir konu başlığı, ana konu başlığı harita birleştirme oluyor.
+
+354
+01:17:22,871 --> 01:17:30,011
+Harita birleştirme görüntü olabilecek bir dizi kısmı haritadan bir ortamın tek tutarlı haritasını oluşturma durumu olarak karşısında çıkıyor.
+
+355
+01:17:30,791 --> 01:17:37,591
+Harita birleştirme ünitemi demin ifade ettiğimiz gibi iki boyutlu veriler üzerinde çalışılıyor bu çalışma kapsamında.
+
+356
+01:17:37,591 --> 01:17:42,011
+Bu birleştirme işlemi toplamda verileri tamamen yeniden işlemek yerine.
+
+357
+01:17:42,579 --> 01:18:05,079
+Mevcut olan tamamlanmamış haritaların yeniden kullanılması, parçalayıp belli bir yönetme stratejisinin uygulanması gibi antajlara sahip olması bağlamında tercih ediliyor. Genel olarak karşımıza iki harita birleştirme yöntemi çıkıyor. Araç post tamir tabanlı yöntem ve harita tutarlılığı tabanlı yöntem olarak.
+
+358
+01:18:11,220 --> 01:18:36,400
+Araç pozisyon tahmini tabanlı yöntemler harita birleştirme için bir ağacın doğrudan başta bir araçın algıladığı ve algılama sonucundan tahmini değiller dediğimiz relatif yani ilişkili pozisyon tahminleri tahmin ettiği doğrudan vehicle to vehicle.
+
+359
+01:18:37,203 --> 01:18:55,303
+Prensibi doğrultulara çalışıyor. Yani araçtan araca bir tahmin noktası belirleme ile ilişki kurarak bu aşamanın ilk süreci başlıyor. Ve aşama 3 adımdan oluşuyor. Algılama, ilişkilendirme ve RP tahmini.
+
+360
+01:18:58,804 --> 01:19:08,804
+Her aracın evrenci bulaşıta bir konum erişimi olduğunda farklı araçlar yerel konum bilgisiyle algılayışlar aracılığıyla ortak bir konumla ilişkilendiriyor.
+
+361
+01:19:08,804 --> 01:19:14,804
+Unitem sayesinde. Fakat her aracın hassas bir gerçek konum bilgisine erişmek güçtür.
+
+362
+01:19:14,804 --> 01:19:22,804
+Yani günümüzde bile şu an baktığımız zaman GPS teknolojiden faydalanıyoruz ama GPS ile donatılmış olan birçok araçta bile şöyle bir...
+
+363
+01:19:23,636 --> 01:19:43,636
+Dezavantaj durum karşısına çıkıyor. Konuma erişimi birtakım hatalarla ölçebiliriz. Hatalar sonucunda hedefe varabiliyoruz. Hedef noktasına artı eksi bir uzaklık mesafesi ile erişim durumumuz söz konusu. Yüksek hassasiyetli.
+
+364
+01:19:43,923 --> 01:19:56,624
+GPS teknolojilerde kullanıldığı da yine ortamda var olabilecek olan sinyal bozulması ile ilgili bir takım usullardan dolayı burada bir takım hatalarla karşılaşabiliyor.
+
+365
+01:19:59,444 --> 01:20:10,844
+Harita tutarlarına dayalı yöntemlerinde de bu yöntemde tutarlık temelli yöntemler araç kuruşu veya araçtan araca göreceli pozisyonun doğru bir tahmini.
+
+366
+01:20:11,380 --> 01:20:20,980
+Tahmini gerektirmiyor. Harikalar arasında belirli bir tutarlık ölçüsüne göre iki harita doğrudan birleştirme mantığıyla çalıştırılıyor.
+
+367
+01:20:20,980 --> 01:20:34,180
+Ve bu yöntem üç kategoride inceleniyor. Özellik tabanlı yöntemler, yenilmediği en yakın nokta yöntemleri ve doğrudan optimizasyona dayalı yöntemler olarak karşımıza çıkıyor.
+
+368
+01:20:37,587 --> 01:20:47,587
+Özellik tabanlı yöntemlerde bu yöntem birleştirme yapıları açtırmak için bazı doğal ve yapay olarak belirlenen özellikler üzerinde işlem görüyor.
+
+369
+01:20:47,587 --> 01:21:00,587
+Yani nesneye ait şekil, renk gibi, boyut gibi bir takım özellikler göz önünde bulunurlarak bu yöntem üzerinden ilişkilendirme kuruluyor.
+
+370
+01:21:02,003 --> 01:21:14,903
+Bu özelliklerin üzerinde ilişkileme yapıldıktan sonra özellik tabanlı gösterimde özellik tabanlı bir yönetim genellikle özelliklerin varlığı, algıları ilişkilemesi sürecini kolaylaştırmış oluyor.
+
+371
+01:21:18,515 --> 01:21:32,515
+Diğer haritayı birleştirme yöntemleri karşımıza çıkan ISP yöntemlerinde ise haritaları özellikle çıkarmadan birleştirme işlemi uygulanıyor. Bu yöntem iki adımdan oluşan bir yenilemeden oluşuyor.
+
+372
+01:21:32,515 --> 01:21:34,219
+İlk adım...
+
+373
+01:21:34,707 --> 01:21:45,188
+En yakın nokta kuranına dayalı olarak, yetişi olarak iki algı arasında bir karşılıklık dizisi dediğimiz, karşılıklık nokta ilişkisi dediğimiz bir mantıkla çalışıyor.
+
+374
+01:21:45,188 --> 01:21:56,627
+Ve ikinci adımda, geri oluşturulan karşılıklık dizisindeki noktalar arasındaki toplam mesafelerin en aza indirilerek algı hizanlamasının tahmini yüceleniyor.
+
+375
+01:21:57,171 --> 01:22:07,171
+Uygun bir başlangıç değeri verildiğinde algı izle almasının tahmini normal olarak iki adlı bir dizinin yinelemesinden sonra yakınlaşmış oluyor.
+
+376
+01:22:07,171 --> 01:22:16,171
+Ve bu yöntemde yinelemeli yapı tercih edildiği için hatalar minimize edilmeye çalışılıyor.
+
+377
+01:22:16,171 --> 01:22:19,171
+Yani olguysa da hatalar minimize ediliyor.
+
+378
+01:22:21,300 --> 01:22:29,220
+Oda yönteminde ise iki yöntem karşımıza çıkıyor. Genelde iki bölümden oluşuyor.
+
+379
+01:22:29,220 --> 01:22:43,619
+Dirici adında bir harita hizalaması girdiği olarak anılır ve bu harita hizalaması arasındaki genel tutarlık derecesini gösteren bir değer, bir objektif fonksiyon olarak tanımlanır.
+
+380
+01:22:43,731 --> 01:22:52,731
+İkinci adımda belirli optimizasyon tekniği ile optimal harita hizalaması aranır.
+
+381
+01:22:57,300 --> 01:22:59,640
+[öğrenci], o da neyin kısaltılmışı?
+
+382
+01:23:01,039 --> 01:23:01,720
+İki saniye.
+
+383
+01:23:06,620 --> 01:23:12,240
+Bu kısaltmaları kullandığınız yerlerde açık şeklini de verseniz iyi olur.
+
+384
+01:23:12,240 --> 01:23:17,840
+Tamam, ICHP çok bilinen bir şey. Herhalde iteratif closest point'ten geliyor.
+
+385
+01:23:18,840 --> 01:23:21,079
+O da neyin kısaltmasıdır?
+
+386
+01:23:23,699 --> 01:23:34,379
+O bir şekilde direct şu şekilde hocam. Kusura bakma biraz daha şey oldu. Şu overall direct optimizesin diye geçen. Doğrudan optimizasyona dayalı. Yönetem olarak karşısında çıkıyor.
+
+387
+01:23:34,939 --> 01:23:42,379
+Anladım. Bunu bu slide'a başlık yaptığınızda bence açık halini oraya da yazarsanız iyi olur.
+
+388
+01:23:42,379 --> 01:23:46,939
+Bu şekilde yazmıştım da hocam. Onu slide'a başlık yaptığınızda gözlerim kaçtı.
+
+389
+01:23:47,439 --> 01:23:47,759
+Tamam.
+
+390
+01:23:50,163 --> 01:23:53,163
+Sonuç olarak bu çalışmamızda...
+
+391
+01:23:53,427 --> 01:24:20,427
+Robotların tercih edildiğini görüyoruz şu amaçlardan dolayı. Özellikle insanların erişiminin güç olduğu, afet bölgelerinde, insan hayatı için tehlikeli olabilecek ortamlarda, arama kurtarma faaliyetlerinde, uzay keşiflerinde, uzay araştırmalarında, deniz artı keşiflerinde ve daha birçok alanda insanlar için aslında tehlikeli olabilecek veya insanların erişiminin güç olabileceği noktalarda robotların tercih edildiğini görüyoruz.
+
+392
+01:24:20,787 --> 01:24:34,367
+Bu çalışmada diğer robotların çevre haritasını, kendi bireysel haritaları birleştirerek ortamı diğer bölümler iç yapısı hakkında entegre bir bilgi edinmeye ihtiyacı duyuyorlar. Şu sebepten dolayı.
+
+393
+01:24:35,060 --> 01:24:45,060
+Şimdi robotlar birlikte çalıştığı zaman ortak bir görev üstleniyorlar ve ortak görevin belli parçalarını için belli bir görev üstlenmiş oluyorlar.
+
+394
+01:24:45,060 --> 01:24:53,060
+Ve burada robotlar arası bir iletişim kurulduğu zaman sağlıklı bir, derimli bir süreç yönetilmiş oluyor.
+
+395
+01:25:02,547 --> 01:25:11,907
+Burada sürekli daha sağlıklı bir şekilde yönetilmiş oluyor. Birbirlerine iletişimi daha sağlıklı yönetilmiş oluyor.
+
+396
+01:25:12,787 --> 01:25:18,488
+İş birliği içerisinde çalışan otorlu robotlar kendinlikle harita birleştirme yöntemine ihtiyaç duyuyor bu sebepten dolayı.
+
+397
+01:25:18,488 --> 01:25:28,488
+Ve harita birleştirme yöntemi ele alındığında haritanın doğruluğunu birleştiren haritayı bilenmek için hangi birleştirme yöntemi tercih edileceği bir çözümleyi bekleyen bir sorun olarak karşıma çıkıyor.
+
+398
+01:25:28,488 --> 01:25:35,988
+Çünkü literatürde konu da biraz dağınık olarak karşıma çıktı. Ben birçok kaynaktan faydalanmaya çalıştım.
+
+399
+01:25:35,988 --> 01:25:40,787
+Ama kaynaklarda gördüm böyle bir harita birleştirme tekniklerini, harita birleştirme yöntemlerini.
+
+400
+01:25:40,787 --> 01:25:59,787
+Toplu bir şekilde bir kaynak dünyası ile barındıran kaynağa erişmek oldukça güç oluyordu. Genelde burada 3 boyutlu ve 2 boyutlu harikalar karşımızda. Çünkü ağırlık olarak çalışmaların 2 boyutlu harikaların üzerinde gerçekleştiğini görünce burada literatür konusu biraz ısıtlamanın olduğunu gördük. Diğer taraftan...
+
+401
+01:26:00,435 --> 01:26:11,435
+Burada haritaların gösteriminde de farklı harita tülleri karşısında çıkıyor. Uydu görüntülerden alınan bir görüntüler olabileceği gibi burada iki boyutlu haritalar da karşısında çıkıyor.
+
+402
+01:26:11,435 --> 01:26:20,435
+Burada her bir harita çeşitini kendi üzerinde değerlendirme, kendi üzerinde yönetebilme oldukça zaman alan bir durum. Bunun yanında bu araştırma keşfine atan robotlar...
+
+403
+01:26:21,300 --> 01:26:29,000
+Robotların neticede bir kamera, bir sensör, bir algılayıcı vasıtasıyla bir keşfe çıkıyor.
+
+404
+01:26:29,000 --> 01:26:38,000
+Burada algılayıcılardan alınan bilgilerden ne kadar sağlıklı ölçüde alındığı gibi bir problem de ikinci bir husus olarak karşımıza çıkıyor.
+
+405
+01:26:39,600 --> 01:26:41,600
+Kaynakları da bu şekilde listeledi.
+
+406
+01:26:41,747 --> 01:26:48,327
+Sağolun dinlenmiş için teşekkür ediyorum. Biraz heyecanlıydım hocam. Kusura bakmayın. Arkadaşlar ben de sizden de özür diliyorum.
+
+407
+01:26:50,827 --> 01:26:58,047
+Estağfurullah. Gayet güzel anlattınız. Hiç sorun yok. Bir referansları tekrar görebilir miyim?
+
+408
+01:26:58,047 --> 01:27:04,227
+Tabii hocam. Konu biraz dağılık hocam.
+
+409
+01:27:09,076 --> 01:27:31,936
+Bunların şimdi şöyle bir tarihlerine bakıyorum. 2018 var en yeni. 2018 var en yeni. 2018'den daha yakın tarihli. 2019 var bir tane ilk sırada. Diğer sayfaya geçelim.
+
+410
+01:27:31,936 --> 01:27:35,476
+4. kaynaklı 2020'in hocam.
+
+411
+01:27:36,083 --> 01:27:58,203
+Burada 2020 mi var? Evet, tamam. Bu kaynakların her birinin ne kadar atıf aldığını da raporunuza koyun. Şimdi ben online Yıldız Edütr sayfasında arkadaşlar, ödev ve sınav modülünün altına raporlarınızı upload edebilmeniz için bir alan açıyorum.
+
+412
+01:28:04,083 --> 01:28:14,983
+Önümüzdeki hafta ders gününe kadar hepiniz oraya upload ediyorsunuz. Bunlar enstitüye gönderilecek. O yüzden raporları teslim etmeniz çok önemli.
+
+413
+01:28:17,264 --> 01:28:20,423
+Hocam, format var mıydı? Ben mi kaçırdım?
+
+414
+01:28:21,492 --> 01:28:32,292
+Seminer raporuyla ilgili herhangi bir format yok. Yani test şablonu gibi de yapabilirsiniz. Çok sorun değil o.
+
+415
+01:28:32,292 --> 01:28:48,632
+Bugün içerisinde ben onu hazırlayacağım. Lütfen onu tekrar söylüyorum. Raporlarınız önümüzdeki hafta ders günü. Haftaya salı akşamına kadar oraya upload etmenizi bekliyorum.
+
+416
+01:28:49,043 --> 01:28:51,663
+Hocam ben size mail olarak da göndermiştim. Ulaştı mı acaba?
+
+417
+01:28:52,963 --> 01:29:08,343
+Mail attığınız doğru ama mailleri çok karışıyor. Ödev gönderen arkadaşlar da oluyor. Bu karışıklığın önüne geçmek adına tercihim oraya yüklemeniz. Yani e-maille kabul etmeyeceğim raporları.
+
+418
+01:29:09,043 --> 01:29:10,263
+Tamam hocam. Teşekkür ederim.
+
+419
+01:29:10,547 --> 01:29:35,547
+Hepinize başarılar diliyorum. Bu haftaki seminer sunumlarını tamamladık. [öğrenci] de sunumunu yaptı. [öğrenci] haftaya yapmak istediğini belirtti. Eğer yetiştirebilirse. Önümüzdeki hafta dört arkadaşı dinleyeceğiz. Ve eğer yetişirse [öğrenci] de yine sunumunu yapabilir. Bu haftalık bu kadar. Hepinize iyi bir hafta diliyorum.
+
+420
+01:29:35,967 --> 01:29:38,887
+Başarılar diliyorum. Hoşçakalın.
+
+421
+01:29:39,147 --> 01:29:40,867
+Teşekkürler hocam.
+
+422
+01:29:40,887 --> 01:29:44,727
+İyi günler hocam. Arkadaşların da ağzına sağlık. Görüşmek üzere.
+
+423
+01:29:44,747 --> 01:29:49,247
+Evet, [öğrenci]'i alkışlamayı unuttuk. Hemen onu da alkışladık.
+
+424
+01:29:50,187 --> 01:29:52,307
+Ben alkışlarımı bulamadım zaten.
+
+425
+01:29:53,667 --> 01:29:56,467
+Reaksiyonlar da olacak [öğrenci] orada var.
+
+426
+01:29:57,127 --> 01:29:57,587
+Tamam.
+
+427
+01:29:57,587 --> 01:30:00,427
+Peki. İyi günler arkadaşlar.
+
+428
+01:30:00,427 --> 01:30:02,267
+İyi günler. Herkese sağlık.
+
+429
+01:30:02,427 --> 01:30:02,907
+Günler.
+
+430
+01:30:03,328 --> 01:30:04,328
+İyi günler.

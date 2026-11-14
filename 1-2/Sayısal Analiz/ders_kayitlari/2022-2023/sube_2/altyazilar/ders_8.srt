@@ -1,0 +1,1467 @@
+1
+00:01:25,939 --> 00:01:28,739
+Arkadaşlar, merhabalar. Ses geliyor mu?
+
+2
+00:01:37,427 --> 00:01:39,427
+Duyuyor musunuz arkadaşlar?
+
+3
+00:01:39,427 --> 00:01:41,427
+Geliyor hocam sesini.
+
+4
+00:01:41,427 --> 00:01:43,427
+Tamamdır, teşekkür ederim.
+
+5
+00:01:44,427 --> 00:01:47,427
+Bir dakikaya kadar başlayalım, ben de hazırlıklarımı yapayım.
+
+6
+00:05:23,091 --> 00:05:49,331
+Evet, şimdi, bugünkü konumuz sonlu paklak konusu. Bu konu gelecek derslerde son iki konumuz kalıyor. Interpolasyon ve regresyon. Onlarda da kısmen kullanacağımız kolay bir konu, kısa da bir konu. Bitireceğim, dersi tamamlayacağız. Dersin sonrasında konuyu tamamladıktan sonra varsa sorularınız, sınava dair bazı şeyler açıklayacağım. Orada konuşuruz arkadaşlar.
+
+7
+00:05:49,939 --> 00:05:59,259
+Şimdi bunun çıkış noktası şu. Bunu daha önce ortaokulda falan anlatıyorlar aslında. Mesela şöyle bir sayı dizisi versem.
+
+8
+00:05:59,259 --> 00:06:11,379
+Bir vereyim, iki vereyim, dört olsun, yedi olsun, on bir olsun, on altı olsun, yirmi iki olsun. Bundan sonraki sayı ne olabilir sizce?
+
+9
+00:06:14,867 --> 00:06:41,548
+Örüntü bulma problemleri falan diyorlar. 29 olabilir hocam. 29 kim söyledi? Berzahan. Nasıl buldun ki? Önce 1.60, sonra 2.60, sonra 3.60, 4.60. Güzel. Yani artışa, artışı gördü arkadaşlar. Aslında artışın tersine bakarak burada bir işlem yapıyor.
+
+10
+00:06:41,843 --> 00:06:47,163
+İşte bundan bunu çıkardı, ikinci terimden birincisi de. Bundan bunu çıkardı, bundan bunu çıkardı.
+
+11
+00:06:47,163 --> 00:06:54,524
+Buna göre bir patern çıkıyor. Bakın burada 1 artmış, 2 artmış, 3 artmış, 4 artmış, 5, 6 demek ki bu şekilde gidiyor.
+
+12
+00:06:54,524 --> 00:07:04,644
+Aslında bu bir fonksiyon, fx fonksiyonu var. Bu fx fonksiyonla lineer olarak bir tam sayılara donlaşan x sayılara eklenmiş gibi düşünelim.
+
+13
+00:07:04,644 --> 00:07:09,563
+x artı fx yiymiş. Bunun başlangıç değeri sıfır. İşte şu bir.
+
+14
+00:07:09,779 --> 00:07:35,459
+Şu iki diye gidiyor. İşte üç, dört, beş. Böyle bir yapısı var. Mesela bunu şu şeylerde de görebiliyoruz. Mesela x ve x kare diye şey görelim. Bire bir olsun, ikiye dört olsun, üçe dokuz, dörde on altı. Yani bize bunu vermedi. Bir, dört, dokuz, on altı gibisinden bir şey söyledi.
+
+15
+00:07:36,915 --> 00:07:43,156
+Burada yapacağımız şey birinci dereceden fark almak aslında birinci dereceden türev almak gibi bir şey.
+
+16
+00:07:43,156 --> 00:07:47,635
+Bundan bunu çıkardık hatırlarsanız sayısal türevde buna benzer bir şey yapıyorduk.
+
+17
+00:07:47,635 --> 00:07:57,395
+Bir dizinin türevini almak, işte burada dörtten bir çıktı üç, dokundan dört çıktı beş, on alttan dokuz çıktı işte ne oluyor yedi mi o yedi oluyor.
+
+18
+00:07:57,395 --> 00:08:04,196
+Bunun bir daha türevini aldığında bakın sabit bir şey evlendirseniz. Çünkü x karenin birinci türevi x ikinci türevi ikidir ya.
+
+19
+00:08:04,244 --> 00:08:09,444
+Bir türev daha aldığınızda iki iki iki iki diye sabit bir noktaya ki şuna gelirsiniz.
+
+20
+00:08:09,444 --> 00:08:19,644
+Son farklar bu şey yaklaşık olarak yani normal farkı yaklaşık olarak bulmada ve dolayısıyla ara değer problemi gibi interpolasyonları kullanacağız.
+
+21
+00:08:19,644 --> 00:08:30,644
+Bazı regresyon problemleri de işimize yarayan bir şey. Geniş bir konu. Son farklar aritmeti deniyor. Bize lazım olan kadarıyla şey yapacağız.
+
+22
+00:08:30,672 --> 00:08:46,672
+Gerçek hayatta arkadaşlar size sadece veriler, datalar sunulur. Yani bir fonksiyon verilmez. Şimdi x vardır, fx vardır. Eğer fx'in kuralını biliyorsanız istediğiniz x değeri için fx'in sonucunu bulabilirsiniz. Bu kolay.
+
+23
+00:08:46,672 --> 00:08:56,672
+Ama size x'leri verdi, işte a dedi, f a'yı b sayısal olarak verdi, b dedi, f b'nin sayısal değerleri verdi. fx'in kuralı yok.
+
+24
+00:08:57,139 --> 00:09:08,139
+Yapmaya çalışacağımız şey bu A ve F-A ikililerinden, B, F-B ikililerinden, yani herhangi bir X ve FX sonuçlarından, veri kümesinden FX'i tahmin etmeye çalışacağız.
+
+25
+00:09:08,139 --> 00:09:18,751
+Interpolasyon yaparak bu tahmin ettiğimiz şeylere yeni değerler ekleme, işte ara değerler bulma veya yeni değerlerin tahmin edilmesi regresyonla gerçekleşecek.
+
+26
+00:09:18,751 --> 00:09:27,751
+Yapay zekanın bu alanda bazı çözümleri var. Bir de analitik yöntemler var. Analitik yöntemlerle beraber sayısal analiz yöntemleri geliştirilmiş.
+
+27
+00:09:27,751 --> 00:09:34,751
+Bizim için kullanış ve işimize yarayacak, gelecek hayatımızda çok kullanacağımız bir konudur.
+
+28
+00:09:34,751 --> 00:09:43,435
+Formüller yok bazı durumlarda. Biz verilerden formül üretmeye çalışıyoruz. Böyle özetleyebiliriz.
+
+29
+00:09:43,892 --> 00:09:49,892
+Fonksiyonun ayrık noktaları var, biz fonksiyonu tahmin etmeye çalışacağız.
+
+30
+00:09:49,892 --> 00:09:56,892
+Şimdi son farklarla alakalı operatörler dediğimiz şey var. Aslında burada yapacağımız şey çıkarma işlemi temel olarak.
+
+31
+00:09:56,892 --> 00:10:04,892
+Birbirini takip eden iki ayrık noktamız olacak. Yani bir x, i noktası ile x, i artı bir noktası olabilir.
+
+32
+00:10:07,892 --> 00:10:18,892
+Bu ikisi arasındaki farka fark aralığı diyoruz ve bunu h ile gösteriyoruz. Sayısal integralde de hatırlarsınız, bir x0 noktamız vardı, işte buna a noktası demiştik.
+
+33
+00:10:18,892 --> 00:10:26,292
+A, ondan sonra a artı h geliyor diyor. Bu da onun gibi söyleyeceğiz. Bu hı genel olarak şöyle yazabiliriz.
+
+34
+00:10:26,292 --> 00:10:33,892
+İşte x'in k artı birinci değerinden, x'in kıncı değeri, x dediğimiz şeyle sayı doğrudur, x eksenine bahsediyoruz.
+
+35
+00:10:35,316 --> 00:10:43,316
+Elimizde bu X0'a karşılık bunların fonksiyon görüntüleri de olacak. İşte bunlar son farklar aritmetini bize söyleyecek.
+
+36
+00:10:43,316 --> 00:10:55,316
+Kullandığımız operatörler şunlar, notasasyon olarak. İleri fark yukarıya doğru, geri fark aşağıya doğru, merkezi fark, buna drak delta diyoruz.
+
+37
+00:10:59,956 --> 00:11:06,276
+Yunan sembolü Yunan grek alfabesinin, bir de ortalama, bu da mü operatör.
+
+38
+00:11:06,276 --> 00:11:12,836
+Şimdi ileri farklı dediğim şey, ilerideki bir noktadan mevcut noktanın çıkartılmasıyla bulunuyor.
+
+39
+00:11:12,836 --> 00:11:18,196
+Yani bir haş kadar bulunuyor. Tugaktaki bir noktadan mevcut noktamızın arasındaki farkını bulunuyoruz.
+
+40
+00:11:18,388 --> 00:11:23,388
+Geri fark bunun tam tersi. Mevcut noktamızdan gerideki bir noktayı çıkartıyoruz.
+
+41
+00:11:23,388 --> 00:11:28,388
+Bunların arasında daha sonra bir bölme işlemi falan da gelecek de şimdilik gerek yok.
+
+42
+00:11:28,388 --> 00:11:34,388
+Merkezi fark bulunduğumuz noktanın h bölü iki kadar ilerisi ve gerisindeki noktalara bakıyoruz.
+
+43
+00:11:34,388 --> 00:11:44,388
+Bu doğrudan fark işlemi. Bu işlemi merkezi farkın ikiye bölümü de ortalama operatörü olarak karşımıza geliyor. Yani sadece burayı ikiye böleceğiz.
+
+44
+00:11:46,772 --> 00:12:03,932
+Şimdi bir de kaydırma shifting işlemi var. Buna da E demişiz. EFX dediğimizde de bulunduğumuz FX noktasına H kadar öteleme işlemi yapmak demektir. Bu da bu operatör kendinden sonra gelen ilk diyere FX fonksiyonunu yükseltiyor.
+
+45
+00:12:03,932 --> 00:12:13,412
+Mesela EFX dediğimizde aslında biz FX artı H'ı bulacağız. Eğer bunu ileri farklar yöntemiyle yazmak istersek, FX'in bir görüntüsü var.
+
+46
+00:12:13,683 --> 00:12:21,683
+Bir de Delta, yukarıya doğru Delta, fx var. Bunun aynısıdır. fx parantelini alırsak burada bunu diyorsunuz.
+
+47
+00:12:21,683 --> 00:12:30,683
+Kaydırma işlemi, bir birimlik şu kadar kaymak olacağını söyleyeyim. İki defa kaydırma yapmak istiyorsak de ne yapacağız?
+
+48
+00:12:30,683 --> 00:12:35,683
+İşte bunun bir defa kaydırdığımızı, bir defa daha kaydırma yapacağız. Bunu e-kare diyoruz.
+
+49
+00:12:35,827 --> 00:12:41,827
+Bir defa kaydırınca şunu bulmuştuk, bunu bir defa daha kaydırınca x artı 2h elde edeceğiz.
+
+50
+00:12:41,827 --> 00:12:46,827
+N defa kaydırmak istersek x artı mh kadar bir şey gerçekleştiriyoruz.
+
+51
+00:12:46,827 --> 00:12:55,827
+Özetle bulunduğum noktanın aslında en tane ötesine bitmeye, odaklanmaya, odaklanmayı mümkün kılıyor.
+
+52
+00:12:57,011 --> 00:13:17,011
+Şimdi iki veya daha yüksek dereceden ileri geri ve merkezi farklar. Şimdi merkezi farkların birincisi, işte bu birinci dereceden merkezi fark değil, ikisinin h kadar ruandaki ile f'in x kadar fx arasındaki farklılık. Bunun ikinci dereceden, üçüncü dereceden olunca şuralara derece ekleyeceğiz.
+
+53
+00:13:17,331 --> 00:13:29,652
+Diyelim ki noktalarımız şöyle verilsin. Yani bunlar x1 noktası, x0 artı h, x0 artı 2h, x0 artı nh şeklinde. Bunlar da fonksiyonda karşılık gelen değerler.
+
+54
+00:13:29,652 --> 00:13:40,091
+Fonksiyon verilmek zorunda değil. Size 2 verilmiş x olarak, y olarak da 10 verilmiş diyeceğiz gibi. Bunlar...
+
+55
+00:13:40,371 --> 00:14:07,971
+Bu şekilde verildiğinde herhangi bir x, y noktasındaki birinci derece ileri fark dediğimiz şey şu şekilde gösteriliyor. x'in y artı birinci değerinden y inci değerini doğrudan çıkartacağız. Bu kadar basit. Bakın fonksiyonda şu fi dediğim şey fonksiyonda, şöyle diyelim fi eşittir, fonksiyonda x'in y inci değerini yazıyor olabilirsiniz eğer fonksiyonun kuralı varsa.
+
+56
+00:14:08,340 --> 00:14:11,780
+Kuralı yoksa zaten tablo olarak bu değerler doğrudan verilmiştir.
+
+57
+00:14:12,660 --> 00:14:13,540
+Orada da şu denir.
+
+58
+00:14:13,720 --> 00:14:18,840
+Yani X, Y ile F, Y şeklinde size şey değerleri verir.
+
+59
+00:14:18,879 --> 00:14:20,000
+Şurada da Y değeri vardı.
+
+60
+00:14:20,080 --> 00:14:22,120
+Y sıfır, bir, iki, üç, dört, dört, dört.
+
+61
+00:14:22,259 --> 00:14:23,160
+Böyle devam eder gider.
+
+62
+00:14:23,980 --> 00:14:24,860
+İleri farkımız bu.
+
+63
+00:14:25,740 --> 00:14:31,139
+İkinci dereceden ileri fark aldığında bunu bir derece açmamız gerekiyor.
+
+64
+00:14:31,280 --> 00:14:33,920
+Şimdi ileri fark önce birinci dereceyi açacağız.
+
+65
+00:14:34,419 --> 00:14:47,019
+Sonra ikinci dereceyi açacağız. Şimdi birinci dereceyi açtığımızda sonuç şuydu. Bu dışarıdaki terimi içeriye dağıtırsak, şunun ileri farkı ile şunun ileri farkının farkı oluyor.
+
+66
+00:14:47,019 --> 00:15:02,019
+Şimdi bu ifadeyi i artı bir için açtığımızda, bunun ilerisi i artı birin bir ilerisi i artı ikidir. i artı ikiden i artı biri çıkartırsınız. Şunun bir ilerisi i artı biridir, i artı birden i'ye çıkartırsınız.
+
+67
+00:15:02,259 --> 00:15:07,259
+Şimdi bu ifadeleri şurada yerine koyduğunda bulacağının sonuç ne oluyor?
+
+68
+00:15:07,259 --> 00:15:10,259
+İkinci dereceden ileri fark formülü.
+
+69
+00:15:10,259 --> 00:15:16,259
+F i artı 2 eksi 2 i artı 1 artı f i.
+
+70
+00:15:16,259 --> 00:15:19,259
+Bu size bir şeyi hatırlatıyor mu arkadaşlar?
+
+71
+00:15:19,259 --> 00:15:25,259
+Bu dersle alakalıydı. Başka bir yerlerde gördüğünüz bir şeyle alakalı olabilir mi acaba?
+
+72
+00:15:36,628 --> 00:15:58,948
+Kombinasyon desen, evet, her zaman bir şey söyleyeceğim. Binom kat sayılarıyla bakın, aslında bu çıkabilir. Yani onunla da ilgisi var. Üçüncü dereceden ileri farkı almak istediğimizde de, bir, bir, bir, ne oluyor? Bir, iki, bir, bir, üç, üç, bir böyleydi.
+
+73
+00:15:59,508 --> 00:16:15,908
+Bu şekilde tek tek açarsanız, işte şuna girirsiniz. Tabi burada ileri fark aldığımızda, birinci terim artı, ikinci terim eksi, üçüncü terim artı, dördüncü terim eksi şeklinde yani. Bir artı bir eksi şeklinde gidiyor. Bundan da çıkabilir.
+
+74
+00:16:15,908 --> 00:16:22,908
+Özet olarak üçüncü deriden ileri farkta buymuş. Bunları biz kullanacağız.
+
+75
+00:16:23,155 --> 00:16:31,556
+Yani elimize biraz önce ilk örüntü probleminde nasıl bir fark işlemi aldıysak, arkadaşınız da tahmin ederken ona benzer bir şey yaptı.
+
+76
+00:16:31,556 --> 00:16:35,875
+Biz yeri geldiğinde ikinci dereceden fark, üçüncü dereceden fark alacağız.
+
+77
+00:16:35,875 --> 00:16:40,995
+İşte örüntü artık neye gösterdi? Biz biraz önce bir, iki, dört, yedi, on bir demiştik.
+
+78
+00:16:40,995 --> 00:16:44,115
+İşte aslında şurada ileri fark yapıyoruz.
+
+79
+00:16:44,115 --> 00:16:51,051
+Şu noktadan bunu çıkartıyoruz. Ne oluyor? İşte bir oluyor, bundan bunu çıkarıyoruz, iki oluyor, bundan bunu çıkarıyoruz. Bu birinci dereceden.
+
+80
+00:16:51,283 --> 00:16:56,283
+Bir daha alırsak ne oluyor? İşte buradan bunu çıkardık, buradan bunu çıkardık diye böyle devam ediyoruz.
+
+81
+00:16:56,283 --> 00:17:09,284
+Sonra bunları şuradaki değerleri kullanarak, buradaki fark değerlerini kullanarak fonksiyonun denklemini veya eşitliğini tahmin etmeye çalışacak çalışma şeyler yapacağız.
+
+82
+00:17:09,284 --> 00:17:14,284
+Geri farklar da aynı. Sadece burada da iyi noktasından.
+
+83
+00:17:14,996 --> 00:17:19,796
+i-1 noktasının çıkarılmasıyla elde edilen sonucu yazıyoruz.
+
+84
+00:17:19,796 --> 00:17:27,996
+Yine ikinci dereceden bunu uygulayacak olursak, ne oluyor? 1-1 şeklinde şey buluyoruz.
+
+85
+00:17:27,996 --> 00:17:32,996
+Üçüncü dereceden dersek yine aynı mantıkla devam edebiliriz. Bunlar bakın uzun uzun,
+
+86
+00:17:32,996 --> 00:17:39,996
+hani yazmıyorum, bildiğiniz basit şeyler yani lise matematiğinden bir de neredeyse aşağıda onlar.
+
+87
+00:17:40,756 --> 00:17:43,756
+Tekrar tekrar aynı şeyleri yazmaya gerek yok.
+
+88
+00:17:45,756 --> 00:17:54,756
+Şimdi merkezi farklara bakalım. Merkezi farklarda da bu sefer tabii şey var, i artı bir bölü iki gibi. Yani şimdi bizim i'lerimiz normalde integer.
+
+89
+00:17:54,756 --> 00:17:57,756
+Sıfırıncı nokta, birinci nokta, ikinci nokta.
+
+90
+00:17:57,756 --> 00:18:06,756
+Burada buna benzer şeyler gerçekten pek kullanılmıyor ama biz varmış gibi, i artı birinci nokta varmış gibi düşüreceğiz.
+
+91
+00:18:07,028 --> 00:18:30,228
+Şimdi i artı bir bölü iki ile i eksi bir bölü ikinin farkı, merkezi farkımızı söylüyordu birinci derece. Bunun ikinci derecesini alırsak aslında i artı bir ile i eksi bir noktalarını dikkate alarak burada işlem yapmamız gerekiyor. Yani bir i artı birinci noktadan, bir i eksi birinci noktadan.
+
+92
+00:18:30,451 --> 00:18:38,451
+işte bunu referans alırsak, bunun bir artı biri şurası, bir eksi biri burası. Bunun üzerinden yine mesele aynı noktaya gelecektir. Çok bir şey değişmiyor.
+
+93
+00:18:38,451 --> 00:18:52,451
+Bunlar 3. derece merkezi farkı. Bunun 4'ü 5'i kullanılabilir ama bir yerden sonra peki nereye gider bu merkezi farklarının sonuçları?
+
+94
+00:18:53,107 --> 00:19:02,307
+Bu formüllerden elde edilen sayısal sonuçlar olacak sonuçta. Neye ulaşır bu sonlar? Değerler. Ne dersiniz?
+
+95
+00:19:04,307 --> 00:19:10,307
+Sıfır ulaşacak değil mi? Az önceki şeyde, mesela 1, 2, 4, 7 tekrar yazalım.
+
+96
+00:19:14,644 --> 00:19:22,644
+1, 2, 4, 7, işte burada 1 var, burada 2 var, burada 3 var, işte burada 1 var, burada 1 var, ondan sonra ne var? 0 var.
+
+97
+00:19:22,644 --> 00:19:31,596
+Yani sonsuza kadar da gidecek şeyler değil. Tabii eşitlik olarak yazarsanız elbette sonsuza kadar genelleştirilir ki bu genel halini birazdan göreceğiz.
+
+98
+00:19:31,604 --> 00:19:43,003
+Ama size verilen veri kümesinde, bu verinin boyutuna göre, şu uzunluğuna göre, bir yerden sonra bu ne olacaktır? Sıfırlanmaya doğru gidecektir.
+
+99
+00:19:43,003 --> 00:19:57,204
+Bunu da söyleyen şey şu, şimdi bizim x'lerimiz var, bu x'e karşılık fx gibi düşünelim. Şimdi fx üçüncü dereceden bir polinom gibi olsa, bu en fazla dördüncü...
+
+100
+00:19:57,364 --> 00:20:16,563
+üç defa türevi alıyorsunuz, dördüncü türev ne oluyor? Türev aldığında sabit sıfıra geliyorsunuz. Beşinci şey olsa işte bir tane daha türev aldığında sıfıra geliyor. Dolayısıyla bir yerdeki sonra sıfıra ulaşması kesindir. Genelde de şunu da söyleyelim, fx'i bilmiyoruz uyduracağız dedik ya.
+
+101
+00:20:17,076 --> 00:20:34,675
+İçlere karşılık size bir fx verildiğinde literatürde en fazla kullanılan şey kolinom üçüncü mertebeden kolinom, üçüncü derece kolinom. Dolayısıyla biz tonlu farklarda bir yerde en fazla dört tane böyle fark alacağız ve orada bir yerden sonra zaten sıfıra ulaştığı için hiçbir etkisi olmayacak.
+
+102
+00:20:34,675 --> 00:20:40,875
+Şimdi ileri fark olsun, geri fark olsun hangisini yapacak olursak olalım.
+
+103
+00:20:41,076 --> 00:20:50,355
+Bunun şeyi aslında şu binom dağılımından geliyor. Biliyorsunuz hani bir kombinasyon gibi şey oluyor.
+
+104
+00:20:50,355 --> 00:21:03,796
+Burada da şu şimdi kombinasyonu şöyle hatırlatayım. Bir alt küme, aslında bir ağır kümemiz var. A kümesinin elemanlarından alt küme seçileceksiniz. Bunun uygulamalarını...
+
+105
+00:21:04,243 --> 00:21:27,243
+X artı y'nin eninci açılımı. Şimdi n dediğimiz bir sayı, bu sayı x ve y'ye farklı şekillerde dağıtılacak. Bu dağıtım kaç farklı şekilde yapılabilir? Mesela bunu 0'a n yaparız, 0'a n deriz, 1'e n-1 deriz, 2'ye n-2 deriz, 3'e n-3 deriz.
+
+106
+00:21:27,615 --> 00:21:50,115
+K'ya n-k deriz. Bir de bunlar tam tersten dönüş, tersten yazılır. Bu şekilde dağılımlarımız ortaya çıkıyor. Bu dağılımın en genel hali aslında şu binom formülüne çok çok benziyen, neydi x, y üzeri şöyle idat edildi, yukadarla binom formülü n'in k'lı kombinasyonunda.
+
+107
+00:21:50,516 --> 00:22:10,716
+x'in üzerine n-k yazıyorduk, y'nin üzerine k yazıyorduk. Çünkü şu ikisinin toplamı da n olacaktı. Bunları farklı farklı toplam sembolü ile yazdığınızda binom dağılımlarını, çarpanlar ayırmaktaki gördüğünüz açılımları yapabiliyordunuz. Aynısı burada da var.
+
+108
+00:22:12,019 --> 00:22:25,019
+n. dereceden ileri fark operasyonu yapacaksak, bir artı bir eksi demiştik hatırlarsanız. İlkincisi, birincisi, eksi bir üzeri sıfırdan artır diyecek, ondan sonra eksi gelecek.
+
+109
+00:22:25,019 --> 00:22:35,723
+İlk terimiz k'nın i. şeyi. Biz burada kaçıncı dereceden şeyi açacaksak, üçüncü dereceden açacaksak, üçün sıfırlı kombinasyonu birdir.
+
+110
+00:22:35,955 --> 00:23:00,955
+Şurada da fk-i yazıyoruz. Burada da k işte 3 ise 3-0'dan f3 dedik. Sonra f2 için bulunduracağız, f1 için bulunduracağız. Kasteler bu şekilde kombinasyon formülüyle açılabiliyor. Şunu biliyorsunuzdur mutlaka. Şimdi k'nın iyisi iyiliği kombinasyonu ile
+
+111
+00:23:02,768 --> 00:23:10,768
+A eksi iyili kombinasyonu birbirine eşit. Yani örnek vermek gerekirse 10'un 8'li kombinasyonunu hesaplamak biraz zor.
+
+112
+00:23:10,768 --> 00:23:14,768
+Onun yerine 10'un ikili kombinasyonunu hesaplamak daha kolay.
+
+113
+00:23:14,768 --> 00:23:24,768
+Bunun mantığı da şudur, eğer siz hükümden 10 tane elemanınız varsa, 8 tane eleman seçleniyorsa size, 8 eleman seçmek yerine ikisini seçersiniz.
+
+114
+00:23:24,768 --> 00:23:26,768
+Seçmedikleriniz de bir seçimdir.
+
+115
+00:23:27,539 --> 00:23:35,539
+Dolayısıyla ikisi birbirinin sayısı olarak aynısı oluyor durum sayısı. Bu eşitlikleri de burada kullanabiliyoruz.
+
+116
+00:23:35,539 --> 00:23:50,412
+Bunu biraz önce zaten daha kolay yolu da şeyden yapmak. Faskal üçgeniyle veya başkaları Ömer Hayyan üçgeni falan dönüyor. Artık ne üçgeniyse bu üçgenden çıkartabiliyoruz.
+
+117
+00:23:50,420 --> 00:24:16,420
+Şimdi beşinci dereceden ileri farklı formül için aslında beşinci türev alınız demişiz. Şimdi i eşittir sıfır için, bir için, iki için, dört için, beş için, yani toplam altı tane açılım yapacağız. Sıfırdan beşe kadar bütün değerleri yazıyoruz. Eksi bir üzeri sıfır. Yani önce bu artı olacağını söylüyor. Ondan sonra bu eksi olacağını söylüyor. Şu artı olacak.
+
+118
+00:24:16,627 --> 00:24:35,827
+Bu eksi olacak, bu artı olacak, bu eksi olacak. Bunun terimleri nedir? 1, 1, 1, 1, 1, 2, 1, 1, 3, 3, 1, 1, 4, 6, 4, 1, sonra şuna geliyor sıra. 1, 5, 10, 15, 1. Öyle bir şeyler duyacağız.
+
+119
+00:24:43,667 --> 00:24:51,227
+Hangi kombinasyonu? 5'in sıfırlı kombinasyonu, yani 5'in sıfırlı kombinasyonu demek aslında 5'in 5'lisi demektir.
+
+120
+00:24:51,227 --> 00:24:54,067
+Bunu buluyoruz ve şurada F5'in değerini yazıyoruz.
+
+121
+00:24:54,067 --> 00:25:06,227
+F5'te bizim size verdiğimiz, yani x ve y veya fx dediğimiz şeydeki değerler, bunun 0'ıncısı, 1'incisi, 2'incisi, 3'incisi, 4'incisi, 5'incisi gibi değerler var. Burada sayısal değerler var.
+
+122
+00:25:06,227 --> 00:25:08,867
+Burada oradan o sayısal değerin kendisiymiş.
+
+123
+00:25:09,140 --> 00:25:22,140
+Şu ikinci iyi eşitleri bir için baktığınızda f4 çarpı eksi 5 olacak. Buradan işte f3 çarpı 10 gelecek, f2 çarpı eksi 10 gelecek, f3 çarpı 5 gelecek, f0 çarpı eksi 1 gelecek.
+
+124
+00:25:22,140 --> 00:25:33,836
+Aslında şurayı şöylece bulmuş oldum. Bu türevi, bu denklemi yerine yazdığınızda, sizin ileri fark sonucunuzu bulmuş oluyorsunuz.
+
+125
+00:25:34,836 --> 00:25:58,155
+Normalde bunu uzun uzun vektörel olarak yazmak, hani biraz daha şey, yani bir satırı yazdık, biraz önce yaptığım gibi sonra bir daha al, bir daha al. Ama bunu doğrudan bulmanın yolu da işte şu formülü işletmek. Binom kas sayıları yazılır, bir artı bir eksi şeklinde yapılıp daha sonra değerler yerine kondurup da şuradan değerleri alıp işte şunların yerine getireceksiniz. Bu sonucu hesaplayabiliyorsunuz.
+
+126
+00:25:59,380 --> 00:26:07,060
+Şimdi bu işin bizimle alakalı, bize çok yarayacak şey aslında sonlu fark tablolar arkadaşlar.
+
+127
+00:26:07,060 --> 00:26:18,660
+Bu tablolar sayesinde biz verilen şu veri kümesindeki değişime, düzene bakıyoruz, örüntüye bakıyoruz.
+
+128
+00:26:18,660 --> 00:26:25,540
+Bu örüntüyle de denklemleri tahmin etmeye çalışıyoruz. Bunun bir kısmını bu hafta anlatacağım, bir kısmı şeyden sonra.
+
+129
+00:26:25,811 --> 00:26:50,011
+vizeden sonra geldik. Şimdi bir sonlu farkı, ileri farkı olarak düşünecek olursak, i artı birinci ile yininci nokta arasındaki şeyi demiştik. Bize bu bilgi verildi. Şimdi buraya yeni bir sütun ekliyorum. Bu sütunda bir kere f0'dan f-1 çıkartmamız mümkün değil. Dolayısıyla bunun ilk satırı boş olacaktır.
+
+130
+00:26:50,612 --> 00:26:56,072
+İkinci satırı F1'den F0'ın çıkartılması ile ayırtılması ile ayırtılması.
+
+131
+00:26:56,072 --> 00:26:59,572
+Şu üçüncü satırda F2'den F1'i çıkartıyoruz.
+
+132
+00:27:18,291 --> 00:27:28,891
+Bu bu şekilde devam ediyor. Bakın en son ne oldu? Burada bizim beş tane noktamız olduğu için en fazla dördüncüye kadar açabildik. Çünkü bundan sonra açacağımız bir durum yok.
+
+133
+00:27:28,891 --> 00:27:39,491
+Arada eğer şunlar eşit terimler olursa, eğer şu da şu ikisi aynı olsa işte ne olacak? Bu sıfır olacaktır. Bunların hepsi iki, iki, iki oldu. Burası ne olur? Sıfır, sıfır olur.
+
+134
+00:27:44,403 --> 00:28:11,403
+noktanız varsa, şuraya kadar aşacaksınız demektir. Bunu daha genel ifade şeklinde yazacak olursak, şu x0'larla x1 arasındaki ilişki, sabit uzunlukta olacağını söylemek istersek, buna x0 dersek, x0'ın h kadar fazlası, 2h kadar fazlası, 3h kadar fazlası ve fonksiyon görüntüsü olarak da eğer size sayısal sonuçlar verebilirse, genel olarak verilir.
+
+135
+00:28:11,667 --> 00:28:24,267
+Bunlar da şu şekilde gösteriliyor. İşte bu sonuçlarda ileri fark birinci mertebeden ileri farklar, ikinci mertebe, üçüncü mertebe, dördüncü mertebe ileri farkları gösteriliyor. Bunlara sonlu fark tabloları diyoruz.
+
+136
+00:28:24,267 --> 00:28:37,267
+Şuradaki sayısal değerlerin incelenmesi yoluyla arkadaşlar, hem bunları inceleyelim. Özellikle şuradakiler çok işimize yarayacak. Çünkü bunlar başlangıç değerleri.
+
+137
+00:28:37,523 --> 00:28:47,523
+bir fonksiyonu tahmin ederken kullanacağımız değerli oluydu. İşte buradan üçüncü mertebeden bir polinom, dördüncü mertebeden bir polinom gibi eşitlikler üreteceğiz.
+
+138
+00:28:48,523 --> 00:29:00,523
+Aynısını geri fark için söyleyecek olursak, geri farklarda da bundan bunu çıkartıyoruz, işte bundan bunu çıkartıyoruz, bundan bunu çıkardık, buraya yazdık, bundan bunu çıkardık, buraya yazdık, bundan bunu çıkardık, buraya yazdık.
+
+139
+00:29:00,819 --> 00:29:07,219
+Bundan bunu çıkartıp buraya yazıyoruz. Şuradan şurayı çıkartıp buraya yazıyoruz. Bundan bu buraya. Bundan bu buraya.
+
+140
+00:29:07,219 --> 00:29:14,219
+Herhalde zor bir şey görünmüyor arkadaşlar. Basittir çıkarma işlemi. Merkezi bir fark için yaptığımızda da
+
+141
+00:29:14,219 --> 00:29:25,619
+F1 için bakmak istediğim bir şey ne olacak? F1, F1 artı 1 bölü 2. Şimdi bunun 1 bölü 2'si yok. Şunun farkını alıp şuraya yazıyoruz.
+
+142
+00:29:26,163 --> 00:29:42,563
+Bununla bunun farkını alıp buraya yazıyoruz. Bununla bunun farkını alıp işte onu da şuraya yazıyoruz gibi noktalarını bu şekilde dolduracağız. I artı birleşe genel olarak çok kullanmadığımız bir şey de aklınızda bulunsun.
+
+143
+00:29:42,563 --> 00:29:50,563
+Şimdi, normalde size bundan sonraki konularımızda şu verilmeyecek arkadaşlar.
+
+144
+00:29:51,763 --> 00:30:00,163
+Sadece biz şimdilik bunun sağlaması gibi düşünelim, işe yaradığını göstermek için yapalım.
+
+145
+00:30:00,163 --> 00:30:08,963
+Diyecek ki, h-eşitleri 1 için eksi 3, 2 aralığında ileri fark tablosunu hesaplanıyoruz.
+
+146
+00:30:08,963 --> 00:30:12,364
+Şimdi biz eksi 3'ten başlayacakmışız, birer birer artacakmışız.
+
+147
+00:30:12,364 --> 00:30:16,563
+Eksi 3, eksi 2, eksi 2, yani birer birer arttığımızda h bize söylüyor.
+
+148
+00:30:16,563 --> 00:30:18,563
+Sıfır, 1 ve 2.
+
+149
+00:30:18,963 --> 00:30:44,963
+Bu değerleri doldurduk. Şimdi bunların fonksiyon karşılıklarını yerine yazdığımız bunlar geldi. Bu arada bu tabloda şu kısım, neyse onu güncelleyelim, biraz aşağıda olması gerekiyor. Mühim değil. Şimdi ne yapıyoruz? İleri fark tablosu dediği için ikiden bunu çıkarttık. 2-18, 18, 16. Bundan bunu çıkarttık. 4.
+
+150
+00:30:45,140 --> 00:30:51,140
+Bundan bunu çıkarttık, iki, bundan bunu çıkarttık, eksi iki, eksi iki, bundan bunu çıkarttık, dört.
+
+151
+00:30:51,140 --> 00:31:04,140
+Sonra dörtten on altıyı çıkardık, eksi on iki, işte şu eksi on iki, bir daha arkadaşlar, eğer şimdi yapabiliyorsam yapayım.
+
+152
+00:31:15,508 --> 00:31:24,508
+Bu şekilde. Eksi altıdan, eksi on ikiyi çıkardık, altı olacak. Sıfırdan eksi altıyı çıkardık, o da altı olacak. Altıdan sıfırı çıkardık, o da altı olacak.
+
+153
+00:31:24,508 --> 00:31:33,508
+Şunlar da zaten sıfır sıfır olacak. Bundan sonrasına bakın, gerek kalmıyor. Bunu düzeltiriz. Neyse, slide'ın sonuna gelmişiz.
+
+154
+00:31:40,948 --> 00:32:06,948
+Evet, bu bizim sonlu fark tablomuz. Bu n. dereceden bir polinomun n. dereceden farkı yani son işte şeyi aslında sabit bir sayıya geldi. Bundan sonraki hitlerim n artı birinci hitlerime neye gelmiş oldu? Sıfır oldu. Çünkü bunun sebebi şu, bunun birinci dereceden farkını almak demek aslında türevini almak demek, 3x kare. Bunun bir daha farkını almak işte 6x.
+
+155
+00:32:07,443 --> 00:32:13,443
+6-6 diye geliyor bakın şu altının katları. Onun bir daha türevini almışsa 6. Şuraya gelmiş oluyorsunuz.
+
+156
+00:32:13,443 --> 00:32:19,443
+Dağılımımız burada bakın üçüncü derece bir şey olduğu için. Aynısını diğer şeylerde de deneyebilirsiniz.
+
+157
+00:32:19,443 --> 00:32:32,443
+Bu şeklindeki bir polinomun üçüncü dereceden bir polinom için üçüncü farkı bakın şu şekilde gösteriyor. Yani bu binom formülünde de yazabileceğiniz bir şeydir.
+
+158
+00:32:32,880 --> 00:32:57,880
+6'nın iyilisi falan demiştik ya, öyle söyleyeceğiz. 6 çarpı A0 dediğimiz aslında şu bir sayımız H3 şeklinde ifade ediliyor. H'ı 1 ve A0'ı 1 alırsak burada 6 çarpı 1 şey olacak.
+
+159
+00:33:00,307 --> 00:33:10,307
+geldiğimizi göreceğiz. Şuradaki A0'ı 1 aldığımızda ki değer, mesela şurası, H'ı da 1 aldığımızda ki değer 6'ya oturuyor.
+
+160
+00:33:10,307 --> 00:33:17,307
+Bizim için anlamlı olan şeyler ilerleyen derste şu değerler anlamlı değerler var.
+
+161
+00:33:17,307 --> 00:33:25,307
+Şu eksi 3x'i tahmin ederken bunlardan faydalanıp ona göre bir polinom üretme yoluna gideceğiz.
+
+162
+00:33:26,996 --> 00:33:28,876
+Burada anlaşımdan bir şey var mı?
+
+163
+00:33:33,268 --> 00:33:47,668
+Şimdi, burada bir yayılma söz konusu arkadaşlar. Şimdi bakın, şurayı ne etkiliyor? Yani şöyle diyelim, şu eksi 6'yı etkileyen sonuç ne?
+
+164
+00:33:53,971 --> 00:33:55,971
+Fixaltıyı neye göre hesapladım ben?
+
+165
+00:34:02,612 --> 00:34:04,612
+Ayuda, akashabu, x-saltan evden elde.
+
+166
+00:34:08,340 --> 00:34:20,340
+Eksi iki, eksi dört. Eksi iki, eksi dört. Yani şundan bunu çıkardık ve bunu bulduk. Şundan bunu çıkardık. Peki bu eksi iki nereden geldi?
+
+167
+00:34:20,340 --> 00:34:35,340
+Bir solda sıfırı. Buradan geldi. Bu dört nereden geldi? Şuradan geldi. Yani bakın şu backtracking diyoruz. Altıyı hesaplamak için backtracking yaptım da bu ikiliyle karşılaşıyorum. Sonra bunları hesaplamak için baktığımda
+
+168
+00:34:35,391 --> 00:34:43,391
+Üçünü de karşılaşır. Sonra bunları hesaplamak için baktığımda, ne oluyor? Dört tane elemanla ilgili işlemleri yapalım.
+
+169
+00:34:43,391 --> 00:34:54,391
+Dolayısıyla şunun etkisi, yani bunu etkileyen iki, hep böyle bir artı, bir artı şeklinde, bir önceki kademede birer artı şeklinde geliyor.
+
+170
+00:34:54,391 --> 00:35:01,391
+Burada şunu görmek lazım. Şurada yaptığım herhangi bir hata veya arada yaptığım herhangi bir hata
+
+171
+00:35:01,940 --> 00:35:21,771
+Bundan sonraki tek bir şey değil, birden fazla şeyi etkileyebilir. Buna hatanın yayılması diyoruz. Sonlu part üzerindeki hatanın yayılması. Bakalım şimdi hata nasıl yayılacak? Şimdi ben fonksiyonu verildiğini kabul edelim ilk başta. X, E'miz var, buna karşılık F, X, E'miz var.
+
+172
+00:35:22,099 --> 00:35:34,099
+ve bunları gittik, değerlerini yerine yazdık. Ama x3 için ufak bir hata yaptık ve gerçeğinden bir ε kadar farklı bir değer hesapladık. Yani fonksiyonu yanlış hesapladığımız.
+
+173
+00:35:34,099 --> 00:35:44,099
+Şimdi bu neyi etkiliyor? Şununla şunun farkını alacağım için bir kere şunu etkiliyor. Şimdi bununla bunun farkını alacağım için bunu da etkiliyor.
+
+174
+00:35:48,083 --> 00:36:14,083
+Öbüründe eksi Epsilon kadar çıktı. Değil mi? Çünkü F3 artı Epsilon eksi F2 dediğimiz şey, olması gerekenden F3'ten F2'yi çıkaracaktım ama Epsilon kadar fazla bir terim eklemiş olup. Şurada da Epsilon kadar bir terim azaltmış, bir değer azaltım yapmış olup. Şimdi bunlar nereye etkileyecek? Bunlar da şuraya etkileyecek. Bakın bu yine Epsilon kadar etkiledi. Sonra bu nereye etkiliyor? Bu...
+
+175
+00:36:14,739 --> 00:36:41,739
+Bu eksi iki Epsilon kadar. Bakın, Epsilon'un dağılımına da baktığınızda, katsayılar 1-1, yani 1 öncesinde öbüründe sadece 1-1, sonra 1-2-1 oldu. Bir arada bir eksi var. Şurayı etkileyen de işte şuradaki Epsilon'dan dolayı etkilemiyor. Sonra bu Epsilon şurayı etkileyecek, bu burayı etkileyecek, işte bu burayı ve burayı etkileyecek.
+
+176
+00:36:42,036 --> 00:36:52,275
+Ne oldu? 1-3-3-3-1. Yani yine bir binom dağılımı gibi, şurada yapılan ufak bir hata, sonucu acayip bir şekilde etkileyecek duruma gidebiliyor.
+
+177
+00:36:52,275 --> 00:36:56,716
+Buradaki şeylerin binom kast sayıları olduğuna tekrardan dikkat etmemiz gerekiyor.
+
+178
+00:36:56,716 --> 00:37:02,556
+Evet, bizim amacımız bu sonlu fark tablolarını hazırlamak, bu bir ön işlemdi.
+
+179
+00:37:02,556 --> 00:37:09,556
+Konumuz için gidelim burada bu kadar. Bir diğer konuya giriş yapalım da tahminimden az...
+
+180
+00:37:09,760 --> 00:37:13,640
+Bu slide kananmasınca bunlar hızlı bitiyor arkadaşlar.
+
+181
+00:37:17,260 --> 00:37:19,140
+Şimdi yapacağımız şey
+
+182
+00:37:19,140 --> 00:37:21,120
+enterpolasyon.
+
+183
+00:37:22,440 --> 00:37:24,460
+Mantığını anlatayım. Birazcık giriş yapalım.
+
+184
+00:37:26,540 --> 00:37:27,500
+Bunları da kullanacağız.
+
+185
+00:37:38,739 --> 00:38:05,939
+Şimdi interpolasyon diye diğer kaynaklar karşımıza gelebilir. Elimizde arkadaşlar fonksiyon diye bir şey yok. X ve bu X'e karşılık Y veya FX noktası var. Yani burada 3, 8 olsun, burada 18 olsun, 9 olsun, 29 olsun böyle değerlerimiz var.
+
+186
+00:38:07,315 --> 00:38:14,555
+interpolation yapmak demek şudur. Şu, 8 ile 9 arasında örneğin 8.25'in değerini ben bulmak istiyorum.
+
+187
+00:38:14,555 --> 00:38:26,835
+Şimdi o zaman yapacağımız şey, verilen X ve Y ikililerinden geçen, bütün noktalarından geçen bir doğru eğri gibi bir şey üretmek.
+
+188
+00:38:26,835 --> 00:38:29,739
+Bakın, interpolasyon da anahtar şey...
+
+189
+00:38:29,876 --> 00:38:53,876
+Bütün noktaların üzerinden geçecek bir şey bulmak, işte buradan böyle bir şey geçirsem, şuradan şöyle bir şey geçirsem, buradan böyle bir şey, yani böyle noktalarım olsa, x ve y'lere karşılık, şöyle bir şey üretmek zorundayız. Noktaların üzerinden geçmesi gerekiyor. Sonra bu, işte şunlar size zaten verilen noktalar. Ara değer dediğimiz, herhangi bir ara değeri seçiyorsunuz, işte bunun değerini tahmin ediyorsunuz.
+
+190
+00:38:54,164 --> 00:39:18,164
+Bakın bu bir tahmimdir. Bir şeyi tayin etmek kesinlikle belirlemek değildir. İllaki bir hatanız elbette olur. Şurada ürettiğiniz şeyin gerçek verileri olan uyumluluğu veya bununla alakalı bazı parametrelerin seçilmesi hatanızı etkiliyor. Eğer elinizde çok az noktanız varsa, interpolasyon yapmak daha mantıklı.
+
+191
+00:39:18,900 --> 00:39:43,300
+Çok fazla sayıda nokta varsa, şimdi mesela şuradaki örnekte görüldüğü gibi bir sürü nokta var. Şimdi bu bütün noktalardan geçecek bir fonksiyon üretmek çok güç. Yani ne bileyim bundan ona geç, bundan buna geç yani neredeyse. Hatta bir yerden sonra fonksiyon bile olmuyor. Fonksiyon olması için biliyorsunuz hani x80'in üzerinde her bir fonksiyonun bir tane görüntüsü olacak. Şöyle bir şey olmaz mesela. Böyle bir dediğim gibi.
+
+192
+00:39:43,380 --> 00:39:52,380
+Şöyle bir fonksiyon olmaz değil mi? x80'in üzerinde bunun hem görüntüsü burada hem görüntüsü burada olmaz. Onun için regresyona bakacağız ilerleyen ders.
+
+193
+00:39:52,380 --> 00:40:11,115
+Şimdi, yapacağımız şey de, üreteceğimiz bu şey de bir doğru olabilir, bir logaritmik fonksiyon olabilir, eksponansiyel bir fonksiyon olabilir, polinom olabilir, ortogonal polinom dediğimiz interpolasyon olabilir. Bu birinci yaklaşım.
+
+194
+00:40:11,443 --> 00:40:39,436
+İkinci yaklaşım şu, aynı integralde olduğu gibi bir çözüm üretmek. Veri kümesini böyle başından sonuna, ilk noktadan son noktaya bırakıp tek bir fonksiyona uydurmak değil de buna spline deniyor interpolasyonda. Spline demek şerit gibi Türkçe'ye çevrilmiş. Diyoruz ki şu bölgede bir şey üreteyim, kalan şu bölgede bir başka şey üreteyim. Aslında kurallı ve
+
+195
+00:40:39,795 --> 00:41:06,795
+parçalı bir fonksiyona yakın bir şey yapmak gibi düşünelim. Bunların bileşkesini kullandığında, yani bileşkesini parçalı fonksiyon gibi kullanarak daha gerçeğe yakın sonuçlar üretiriz demişler. Bunun yaklaşımına bakacağız. Enterpolasyon, tablo halinde verilen bir değişkenin tabloda olmayan bir değerini bulma olarak tanımlanabilir. Yani ara değer buyururuz. Bir verilenler var, bu verilenlerin arasında olması gerekiyor.
+
+196
+00:41:06,804 --> 00:41:15,804
+Eğer bu verilenlerin dışında bir yer dersek mesela xn artı bir dersek buna interpolasyon değil ekstrapolasyon diyoruz. O da bir tahmin türü.
+
+197
+00:41:15,804 --> 00:41:21,804
+Üreteceğimiz fonksiyonlar ne olacak? Bir polinom olabilir, üstü fonksiyon olabilir, trigonometrik bir şey olabilir.
+
+198
+00:41:21,804 --> 00:41:29,804
+Yani şu Laptun'un şeyleri olabilir, özel tanımlı fonksiyonlardan bazıları olabilir. Bunlar tek bir fonksiyon olabileceği gibi
+
+199
+00:41:29,940 --> 00:41:39,940
+birden fazla fonksiyon da olabilir, parçalı fonksiyon şeklinde ifade edebiliriz. Örneğin 0 ile 8 arasında bir Px polinom şeklinde yazılsın.
+
+200
+00:41:39,940 --> 00:41:47,940
+9 ile 18 arasındaki değerler bir logaritma fonksiyonu şeklinde yazılsın diyebiliriz. Dağılım neyi gerektiriyorsanız.
+
+201
+00:41:47,940 --> 00:41:52,940
+Şimdi, polinomları tercih etmemizin sebebi
+
+202
+00:41:53,135 --> 00:42:03,135
+Sonlu farklar açısından çok güzel, basit, temiz fonksiyonlar. Türevini rahat alabiliyorsun, integralini rahat alabiliyorsun zaten. Bir de modellemesi de kolay.
+
+203
+00:42:03,135 --> 00:42:14,135
+Eğer periyodik değerleriniz varsa, öyle bir şey ki, işte X'e FX çıkmış, Y'ye F'ye çıkmış, D'ye bilmem ne çıkmış, ileride X kendisini tekrar etmiş.
+
+204
+00:42:14,135 --> 00:42:19,628
+Zaman, ben burada bir polinom, periyodik bir durum görüyorsam trigonometrik fonksiyonları tercih edebilirim.
+
+205
+00:42:19,668 --> 00:42:29,668
+Niye bunu tercih ediyoruz? Çünkü sinüs olsun, kosünüs olsun kendisini belli bir şeyden sonra hani dalgalar fiziğinden de hatırlarsınız. Tekrar eden fonksiyonları, bunlara modelleyebiliriz.
+
+206
+00:42:29,668 --> 00:42:45,668
+Şimdi bu iş için iki farklı teorem var, interpolasyon fonksiyonu seçiminde. Eğer fx fonksiyonunuz ab aralığında sürekli ise bu aralıkta bir polinom fonksiyonu kullanabilirsiniz.
+
+207
+00:42:47,635 --> 00:43:13,516
+elde edeceğiniz FX ile büyük FX arasındaki fark kabul edilebilir. Yani bulduğunuz gerçek değerlerle tahmin ettiğiniz değerler arasındaki farkın mutlak değeri küçük bir ε kadar olacak. Bunun sağlanması gerekiyor. Yani ben ne dedim? X'ler var dedim, Y'ler var dedim elimde. İşte 1'e 4 gelmiş, 2'ye 8 gelmiş, 3'e 18 gelmiş. Bir şey ürettim. Bu ürettiğim şey
+
+208
+00:43:15,891 --> 00:43:28,491
+Bu ürettiğim şey, buna da büyük y diyelim, dördü mesela on dört buldu, sekizi sekiz nokta üç buldu, on sekizde on sekiz buldu.
+
+209
+00:43:28,491 --> 00:43:34,092
+Şimdi ben hatalarına bakıyorum, bunda sıfır hata var, şunda sıfır nokta üç hata var, bunda on hata var.
+
+210
+00:43:34,092 --> 00:43:42,291
+Yani şu epsilon dediğimiz hata bütün durumları sağlayacak ama mesela şurada bir bozulma oldu. Başka bir polinom üretmek gerekecek.
+
+211
+00:43:42,516 --> 00:43:57,916
+Bunu dikkate anlamamız gerek. Eğer böyle bir şey yoksa, periyodda 2P olan sürekli bir fonksiyon çizmek istiyorsanız, bunu sinüs ve kosinüsler toplamış şeklinde bir şekilde yazmak daha kolay oluyor.
+
+212
+00:43:57,916 --> 00:44:02,916
+Sinüslerin kat sayılarına AK diyoruz, önündeki 3-5-10 gibi kat sayılar.
+
+213
+00:44:02,976 --> 00:44:11,175
+Pardon, cosinuslere ak diyoruz, sinüslere bk diyoruz. Ve bir trigonometrik fonksiyona çeviriyoruz buradaki verilerimizi.
+
+214
+00:44:11,175 --> 00:44:16,576
+Şimdi ak'ların ve bk'ların bulması ayrı bir konu, hatta çok detaylı bir konu.
+
+215
+00:44:16,576 --> 00:44:22,976
+Gelecek dönem Courier series diye bir konumuz var, sinyaller sistem dersinde.
+
+216
+00:44:22,976 --> 00:44:30,576
+Ben girersem, ben veya bir başka hocam gelirse, orada detaylı ak'ların ve bk'ların anlatılırlıklarını anlatacağız.
+
+217
+00:44:30,639 --> 00:44:39,639
+Yine aynı şekilde burada da üretilen şeyle gerçek nokta arasında belli bir ε değerinin korunması gerekiyor.
+
+218
+00:44:39,639 --> 00:44:43,639
+Şimdi gelelim doğrusal interpolasyonu anlatayım ve bitirelim.
+
+219
+00:44:43,639 --> 00:44:49,639
+Doğrusal interpolasyon aslında iki noktası bilinen doğrunun denklemini bulmak.
+
+220
+00:44:49,639 --> 00:44:57,612
+İki noktası bilinen doğru denklemini bulunacaksa sizin elinizde, yani size verilen noktalardan f ve fx'lerden
+
+221
+00:44:57,619 --> 00:45:14,219
+ne olması lazım? Bir A noktası olacak, buna karşılık F A değeri olacak, bir B noktası olacak, buna karşılık F B oluyor. Eğer iki tane nokta sayısal değer verilmişse size böyle bir şey, bu iki noktadan bir doğru çizebilirsiniz.
+
+222
+00:45:14,219 --> 00:45:24,420
+Üçüncü C noktanız, bakın burayı ayrı tutuyorum, bu da sizin tahmin etmek istediğiniz, ara değerini bulmak istediğiniz yeni bir noktadır.
+
+223
+00:45:24,755 --> 00:45:51,563
+Şuraya arkadaşlar biz veri setinin bu kısmına train diyoruz, şuraya da test diyoruz. Şimdi testi ne için yaparız? Normalde size aslında üç tane değer verilmiştir. Üç değerden ikisini seçersiniz. Train etmek için yani buradan bir doğru üretmek için seçersiniz. Şununla da ürettiğiniz bu şeyi test edersiniz. Bu modeli test edersiniz.
+
+224
+00:45:51,795 --> 00:46:02,795
+Mesela burada A, B, C verildiyse A ile C seçilebilir. A ile B seçilebilir veya B ile C seçilebilir. Yani üçün ikili kombinasyonlarından istediğinizi seçebilirsiniz.
+
+225
+00:46:02,795 --> 00:46:08,795
+Buna göre bir doğru üretir, seçmediğinizde de burayı test edersiniz. Trail test ayrımı bu.
+
+226
+00:46:08,795 --> 00:46:18,795
+Peki doğru denklemi dediğimiz şey neydi? İki noktası bilinen doğru denklemi. Yani bunu şu şekilde söyleyecek olursak, fx2'den
+
+227
+00:46:19,059 --> 00:46:33,059
+x1'i çıkarttığımızda, x2'yi x1'i oranladığımızda neyi buluruz? Bir eğim buluruz. Yani aslında burada doğru denklemin genel hali şudur. y eksi y2 bölü x eksi x2
+
+228
+00:46:33,300 --> 00:46:50,800
+y2-y1 bölü x2-x1'dir. İki noktamız var. Bu noktalarımız x1, y1 noktası, x2, y2 noktası. Şu y'ler ve x'ler de doğru denkleminde, denklem olarak yani değişken olarak yazılacak ifadeler.
+
+229
+00:46:50,943 --> 00:47:16,744
+Şimdi burada y2'ye fx2, y1'e fx1 demişiz. x2 ve x1'ler aynı. x3 dediğimiz şey de aslında şu y, ara değerini bulacağımız şeyin görüntüsü, x3 de x değişkenimiz. Bunları yerine yazdığımızda, yani şuradaki değerlerde yerine yazdığımızda bu doğru denklemi çıkmış oluyor. Aradaki herhangi bir değeri gidip yerine yazıp,
+
+230
+00:47:17,139 --> 00:47:45,067
+Bu değerin görüntüsünü ne yapabiliyorsunuz? Tahmin edebiliyorsunuz. Bakın bu bir tayin değildir. Hani dikkat edelim. Tahmin olması demek ne demek? Bir şeyin değerini bilmiyorum. Ona yakın bir şeyler bulmaya çalışıyorum. Şimdi burada interpolasyonun aslında sıkıntılı olmasının sebeplerinden bir tanesi bu. Eğer elinizde bir sürü nokta varsa.
+
+231
+00:47:45,748 --> 00:47:49,907
+eksi 2'den 6'ya kadar noktalarımız var.
+
+232
+00:47:50,907 --> 00:47:51,907
+Ve ben
+
+233
+00:47:52,507 --> 00:47:55,108
+iki noktasının sonucunu arıyorum.
+
+234
+00:47:55,947 --> 00:47:56,947
+Şimdi
+
+235
+00:47:57,108 --> 00:48:02,748
+ve doğursal interpolasyon yapmak istiyorum. Doğursal interpolasyon yapıyorsam iki tane noktaya ihtiyacım var.
+
+236
+00:48:02,748 --> 00:48:06,307
+Şimdi burada kaç tane var? Birinci nokta, ikinci nokta, üçüncü nokta, dördüncü nokta,
+
+237
+00:48:06,907 --> 00:48:11,307
+beş, altı, yedi nokta var. Şimdi yedi noktayla doğru üretemem.
+
+238
+00:48:12,436 --> 00:48:14,436
+Yedi noktayla neredeyse polinom üretiriz.
+
+239
+00:48:16,436 --> 00:48:21,436
+Ama doğru diyor. Şimdi o zaman iki tane nokta seçmem gerekiyor. Şimdi nokta seçimi burada benim hatamı etkiler.
+
+240
+00:48:23,436 --> 00:48:27,436
+Mesela demiş ki, bir ve üç noktalarını kullanarak...
+
+241
+00:48:28,436 --> 00:48:32,436
+Niye bir ve üç? Çünkü ikiye en yakın noktalar onlardır. Yani...
+
+242
+00:48:32,847 --> 00:49:00,248
+bir zoom yaparız ya, bir şeyin en net halini görmek için görüntüde zoom yaparız. Burada zoom yapmak isterseniz, 1 ile 3'ün olduğu aralığa bakarsınız. Yani 2'yi şu eksi 1 ile eksi 6, artı 6 belki çok ilgilendirmiyordur denerek bunu yapıyoruz. O zaman A seçeneğinde 1 ve 3'e göre yapacaksak, F3'den F1'i çıkartıyoruz. Aradığımız şey F2 olacak.
+
+243
+00:49:00,692 --> 00:49:06,932
+F2'den F2'yi çıkartıp 2'den 1'i çıkartıyoruz. Buradan F2'nin sonucu yaklaşık olarak şu geliyormuş.
+
+244
+00:49:08,932 --> 00:49:22,132
+Peki şurada diğer çözümde bakacak olursak, mesela 2 ile eksi 2 ile 6 arasındaki şeye bakacak olursak, yani bu veri kümesinin ilk ve son değerlerine bakacak olursak,
+
+245
+00:49:22,132 --> 00:49:26,132
+F6'dan F2'yi çıkarttık, 6'dan eksi 2'yi çıkarttık.
+
+246
+00:49:26,175 --> 00:49:42,675
+F2'yi zaten arıyoruz, ondan F6'yı çıkartacağız, 2'den de x6'yı çıkartacağız. Yerine koyarsınız. Oradan isterseniz de hesaplayayım, şu an hesaplamaya gerek yok. Bunun da F2 sonucu bir şey çıksın. Şimdi bu mu doğru, bu mu doğru sizce? Hangisi doğru olabilir?
+
+247
+00:49:51,539 --> 00:49:53,039
+Birinci mi, ikinci mi?
+
+248
+00:50:00,596 --> 00:50:18,315
+Birinci daha yakın olabilir hocam. Olabilir diyoruz değil mi? Bakın doğru bir yol. Yani bilemeyiz arkadaşlar. Burada sadece tahmini bir şey söyleyebiliriz. Şimdi birincinin daha yakın çıkmasının sebebi oraya daha çok böyle yaklaştık. Yani o aralıkta sonuçta bu bir...
+
+249
+00:50:18,931 --> 00:50:43,931
+Sürekli bir fonksiyon ise şöyle bir şey ise mesela, biz işte bir dediğimiz şey burası, üç dediğimiz şey burası, iki de zaten şu ortada bir yer. Şu iki arada bir şey olacak. Yani burada çok ciddi bir sürpriz yoksa, ne bileyim şöyle bir sürpriz olur, böyle acayip bir şey olur. O zaman bilemem, o karışır. Ama zaten şu bir ile üç arası normal bir şey ise, bir davranış gösteriyorsa...
+
+250
+00:50:44,032 --> 00:50:51,032
+Şu ikiyle altı arasına bakmaktansa, bir ile üç arasına bakmak daha doğru olabilir deriz. Ama kesin bir şey yine de söyleyemiyoruz.
+
+251
+00:50:51,032 --> 00:51:04,032
+Onun için bu tarz problemlerde veri setleri şu şekilde verilir. Bir kere zaten doğrusal interpolasyon yapılmaz da, veya doğrusal interpolasyon yapılacaksa, parça parça doğrusal interpolasyon.
+
+252
+00:51:04,032 --> 00:51:09,032
+Şimdi dersin ki şu aradığa bir doğrusal interpolasyon yapayım, şu araya ayrı bir şey yapayım.
+
+253
+00:51:09,440 --> 00:51:22,040
+Yani tek bir kural söylenmez. İşte her bir aralık için ayrı bir doğru üretilir ve bu doğruların hangisi, hangi aralığını kullanacaksak, işte ben şurada değerlendirme yapacaksam, buradakini kullanırım, şuradakiler beni ilgilendirmez derim.
+
+254
+00:51:22,040 --> 00:51:25,840
+Buna zaten spline diyoruz, şerif modeli diyoruz.
+
+255
+00:51:25,840 --> 00:51:32,040
+Burada şunu yaparız arkadaşlar, elimizde mesela...
+
+256
+00:51:32,467 --> 00:51:38,867
+Yüksek çözümlülükçü bir veri var. Ne demek yüksek çözümlülükleri? x'ler ve buna karşılık gelen y'ler olsun.
+
+257
+00:51:38,867 --> 00:51:51,268
+Örneğin x'imiz 0'dan başlasın, 0'dan sonra gelecek veri 0.001, 0.002 çok hassas değerler. Bunların karşılık değerleri de var.
+
+258
+00:51:51,268 --> 00:51:58,268
+Bu mesela 5'e kadar gidiyor. Yani burada 0.001 artırarak neredeyse 1000 tane falan data oluyor değil mi?
+
+259
+00:51:58,579 --> 00:52:22,899
+Pardon, 5000 taneye yakın data olur. 5000 datanın 5000'ini kullanmak yerine derseniz ki ben 0'dan 0.01'e kadar bir şey bakarak, ne derler? Yani 0'a bakayım, 0.01'e bakayım. Bunların görüntüleri de var. Buradan bir doğru üreteyim. Ürettiğim bu doğruyu şunlar üzerinde test edeyim.
+
+260
+00:52:23,731 --> 00:52:37,731
+Çünkü bunlar ara değerler. Zaten mevcut değerler, doğru değerleri de elimde var. Eğer bu test ettiğim değerlerle mevcut değerler, buradaki bulunan değerler arasındaki fark kabul edilebilir bir hatanın altındaysa tamam bu doğru bir şey. Yani burayı kullanabilirim.
+
+261
+00:52:37,731 --> 00:52:44,460
+Sonra bunu biraz geliştirebilirsiniz. 0.01'den 0.02'ye kadarki adalığa bakarsınız.
+
+262
+00:52:44,467 --> 00:52:54,268
+Veya dersiniz ki bu aralığı 0.01'e kadar değil de biraz daha genişletelim, yani şu doğruyu güncelleyelim. 0.01'e kadar. Yani biraz daha hani aralığı açalım.
+
+263
+00:52:54,268 --> 00:53:04,467
+Orada epsilona bakarsınız. Ve bu şekilde en doğru modeli tahmin etmeye çalışıyoruz. Çünkü elinizde gerçek değerler var, ürettiğiniz değerlere de bakacaksınız.
+
+264
+00:53:04,467 --> 00:53:11,275
+Şu gerçek değerlere literatürde şu ifade de çok kullanılıyor. Ground Truth.
+
+265
+00:53:11,699 --> 00:53:13,611
+Ştoyin uzman graf ki rupkezhi.
+
+266
+00:53:17,748 --> 00:53:20,148
+Üçkesinden çevirmeye çalışan da biraz şey oluyor tabi.
+
+267
+00:53:23,284 --> 00:53:27,884
+Yer doğruluğu gibi, aratınca ne çıkıyor?
+
+268
+00:53:32,484 --> 00:53:39,284
+Gerçek değer görsellerde aratınca çıkıyormuş. Markkand ismi çıkıyor gerçi.
+
+269
+00:53:48,275 --> 00:54:13,955
+Evet, mesela şu görüntü işlemede bir şey tahmin yapacaksınız. Şurada bakalım. Tahmin yapılacak olan gerçek bir veri var. İşte diyorsunuz ki burada böyle bir şey var. Ground truth imajımız var. Bir de ürettiğim, benim tahmin ettiğim şey var. Bu ikisi arasındaki farka bakarak ne kadar doğru tahmin etmişim bunun analizi yapılıyor. Mesela görüntü işlemecilerde bunu çok çok kullanıyordum. Mesela Ground truth şey.
+
+270
+00:54:14,387 --> 00:54:22,067
+Bir şeyin arabayı tespit etmeye çalışmış. Şurada demiş ki şöyle bir şey var. Burada çiçek falan var.
+
+271
+00:54:22,067 --> 00:54:31,268
+Arabanın bulunduğu lokasyonun bir de gerçek resmi vardı. Bu ikisi arasındaki farka bakarlar. Bu fark sıfıra yakın bir değer çıkıyorsa doğru bir işlem yapılmıştır.
+
+272
+00:54:31,268 --> 00:54:36,147
+Biz de bu Grand Route'u burada tek boyutlu verim üzerinde konuşabiliriz, söyleyebiliriz.
+
+273
+00:54:38,195 --> 00:54:47,996
+Devam edelim, çok az kaldı bitiriyorum. Doğrusal interpolasyonla yapacağımız şey arkadaşlar, fx eşittir ax artı b doğrusunu üretmektir.
+
+274
+00:54:47,996 --> 00:54:54,596
+Şimdi fx eşittir ax artı b'yi üretmek için benim neyi bulmam gerekiyor? a'yı bulmam gerekiyor ve b'yi bulmam gerekiyor.
+
+275
+00:54:54,596 --> 00:55:01,596
+Şimdi a'yı nasıl buluruz? a dediğimiz şey y eşittir mx artı n şeklinde ya, a eğimdir.
+
+276
+00:55:06,036 --> 00:55:20,795
+y ve fy noktası veya şöyle diyelim x1'e x1 diyelim x2'ye fx2 diyelim fx2'den fx1'i çıkarıp x2'den x1'i çıkarıp bunları oranlarsam a'yı bulmuş olurum.
+
+277
+00:55:20,795 --> 00:55:32,315
+Bu şey kolay. Elimde bir tane nokta var, eğimi yerine yazdım. Ondan sonra o noktalardan herhangi bir tanesini x ve y de yerine koyup burada da n'yi bulurum yani b'yi bulurum.
+
+278
+00:55:32,851 --> 00:55:42,331
+Dolayısıyla buradan elde edilecek A ve B ikilileri çok rahat, şurada olduğu gibi A'nın bulunması ve B'nin bulunması için gerekli şeyler burada yazıyor.
+
+279
+00:55:42,331 --> 00:55:52,572
+Bunu getirdiği mi yazdımda çok rahat elde edilecek değerlerdir. Bu zaten bildiğiniz bir şeydi. Sadece bunun adının doğrusal enterpolasyon olduğunu şu ana kadar belki bilmiyordunuz.
+
+280
+00:55:52,572 --> 00:55:58,652
+İki noktası bilinen doğru denklemi demek ki bir de doğrusal enterpolasyon için kullanılabiliyormuş.
+
+281
+00:55:59,731 --> 00:56:08,132
+Sonra bu doğruyu yerine yazdığımızda, yani şuradaki A ve B değerlerini yerine yazdığımızda bulacağınız şey de doğrusal interpolasyon oluyor.
+
+282
+00:56:08,132 --> 00:56:16,132
+Başka hiçbir şey yok. Şu A'yı getirdiniz, burada yerine yazdınız. B'yi getirdiniz, burada yerine yazdınız.
+
+283
+00:56:16,132 --> 00:56:20,291
+Gerisi doğrusal interpolasyonu denklemiyor.
+
+284
+00:56:20,291 --> 00:56:26,291
+Şimdi bundan sonra eğri interpolasyonu, diğer interpolasyon yöntemleri var. Burada bırakalım.
+
+285
+00:56:27,507 --> 00:56:36,267
+Bundan sonrası gelecek ders, sınavdan sonraki hafta konuşuyoruz. Şimdi bazı şeyleri sınavdan yakaladık söyleyeceğim. Sizin sorularınızı alacağım ve bitireceğiz.
+
+286
+00:56:36,267 --> 00:56:52,147
+Az önce bağımlı hocayla ders öncesinde konuştuk. Sınavın süresi 60 dakika olacak, 20 tane soru olacak. Bu 20 soru şu ana kadar gördüğümüz interpolasyon yok. Hatta sonlu farklar da yok.
+
+287
+00:56:52,628 --> 00:57:01,628
+integral, türev, doğrusal denklem takımları, doğrusal olmayan fonksiyonların çözümleri gibi bütün hata kavramları var.
+
+288
+00:57:01,628 --> 00:57:08,628
+Bunlarla alakalı ufak bilgiler, yani hatalarda ufak bazı şeyler anlattık. Bunlar dahil.
+
+289
+00:57:08,628 --> 00:57:16,628
+Hepsinden 20 tane sorumuz var. Bunların bazıları işlemli soru, bazıları bilgi sorusu.
+
+290
+00:57:17,204 --> 00:57:22,604
+Regula falsi yöntemi nedir mesela? Örnek sadece şey, sallıyorum böyle şeyler.
+
+291
+00:57:22,604 --> 00:57:28,604
+İşte açık yöntem, kapalı yöntem, ne bileyim orada anlattığımız kavramların her birisini test eden.
+
+292
+00:57:28,604 --> 00:57:35,003
+Dersi takip ediyorsanız, işte biraz da çalışma yaptıysanız çok rahat, yüz alınabilecek bir sınav.
+
+293
+00:57:35,003 --> 00:57:41,204
+Maalesef burada şey yapmıyoruz, sınıf çok kalabalık olduğu için klasik sınav yapamadık.
+
+294
+00:57:41,364 --> 00:57:53,364
+Online sistemde klasik sınavı final sınavına bıraktık. İkinci vizeyi de belki hibrit yapacağız. Yani bir kısmı test, bir kısmı klasik olabilir. Ama bu sınav sadece test oldu.
+
+295
+00:57:53,364 --> 00:58:07,364
+Çünkü daha önce yaptığımız klasik sınavlarda online olduğu için çok bir verim alamadık. Maalesef farklı şeyler kullanılıyor. Çalışanla çalışmayan çok ayırt edilemiyor. Bir de okuması hakikaten güç oluyor.
+
+296
+00:58:08,980 --> 00:58:13,139
+Onun için bu dönem, bu sınavı test olarak tercih ettik.
+
+297
+00:58:13,139 --> 00:58:22,819
+Dediğim gibi 20 soru, en son konumuz sayısal integral sorusu.
+
+298
+00:58:22,819 --> 00:58:28,579
+Bir şeyden yok, sonlu farklardan ve interpolasyonla alakalı konulardan yok.
+
+299
+00:58:28,579 --> 00:58:31,219
+Bu şekilde diyebiliriz.
+
+300
+00:58:31,219 --> 00:58:35,219
+Hesap makinesi gibi şeyleri kullanmanız gerekebilir.
+
+301
+00:58:35,487 --> 00:58:43,087
+Onun için sınavdan önce hesap makinesini bir kenarda hazır bulunduğunu veya Excel kullanabilirsiniz. Online hesaplayıcılar var, onları kullanabilirsiniz.
+
+302
+00:58:43,087 --> 00:58:52,687
+Çok böyle aşırı işlem gerektiren, sizi böyle yorucu, işte aman yetiştiremedim diyeceğiniz bir sınav olmayacak. Bunu sınav esnasında hissedersiniz.
+
+303
+00:58:52,687 --> 00:59:00,087
+Tabi bu söylediğim dersi dinleyen, anlayan, anlamadığını gerekirse soran birisi için.
+
+304
+00:59:00,211 --> 00:59:10,211
+Yani dersten hiç haberi olmayan birisi elbette zorlanabilir mi? Zorlanabilir. Yani ben bu yaptığım sınavın çok daha basitini başka bir üniversitede, özel üniversitede yapmıştık.
+
+305
+00:59:10,211 --> 00:59:20,211
+Ya hocam çok zordu ya falan. Halbuki ilkokul matematiği seviyesinde şeylerde işte özel üniversite olunca maalesef biraz öyle oluyor. Sizin burada zorlanmayacağınızı düşünüyorum.
+
+306
+00:59:27,507 --> 00:59:41,507
+Gerekirse bir klasik soru hibrit şeklinde yapmayı düşünüyoruz. Ona henüz karar vermedik. Birinci vizenin sonuçlarını bir görelim. Zaten hızlıca sonuçlar açıklanmış oluyor işte test sınavı olduğu için. İkinci vizeyi de ayrıca duyururuz.
+
+307
+00:59:41,507 --> 00:59:48,507
+Sınav saatimiz, sabah bir arkadaşımız söyledi de, arkadaşlar saat 17'de pazartesi günü.
+
+308
+00:59:48,788 --> 00:59:58,788
+Şeyi açınca, malesef bu pdf'in çözünürlüğü ile alakalı, ben acaba sadece kendi bilgisayarımda mı demiştim ama, sizden uyarı gelince herhalde herkeste bu sıkıntı var.
+
+309
+00:59:58,788 --> 01:00:08,788
+İşte şu sayfayı açtığımda, lisansa tıkladığımda, daha önce de açmışız, ilk gelen şu pdf'in çözünürlüğü ile alakalı bir sıkıntı zannediyorum.
+
+310
+01:00:08,788 --> 01:00:14,788
+Sayısalarımız sanki burada 16'da başlayacakmış gibi görünüyor. Sahip saat 17'de.
+
+311
+01:00:14,800 --> 01:00:20,320
+Biz zaten bununla alakalı sınav tanımlamasını yaptığımızda size de ayrıca bilgi vereceğiz.
+
+312
+01:00:20,320 --> 01:00:27,280
+İşte pazartesi günü saat 17. En fazla işte dedik ki 60 dakika 18'e kadar bu işlem bitmiş olur diye düşünüyoruz.
+
+313
+01:00:28,400 --> 01:00:29,680
+Sizin sorunuz var mı?
+
+314
+01:00:30,800 --> 01:00:34,080
+Hocam, önceki soruya geri dönme gibi bir şansımız olacak mı?
+
+315
+01:00:34,400 --> 01:00:42,240
+Bu sınavda sayısal analizde var. Yapısal programımla girişte olmayacak. Bu sınavda geri dönebileceksin.
+
+316
+01:00:42,771 --> 01:00:49,431
+Bu Bağan Hoca'nın isteğiyle ben de olmaz diyemedim ama biz diğer derste geri dönüşü yapmıyoruz.
+
+317
+01:00:49,431 --> 01:00:54,031
+Süreyi düzgün kullanırsanız geri dönmenize gerek bile kalmaz.
+
+318
+01:00:54,031 --> 01:01:03,511
+Burada şu şeyi de söyleyeyim arkadaşlar, yani bunu size söylemeye gerek yok da maalesef bazen bir kişi bile olsa bu tarz mail gönderiyor.
+
+319
+01:01:04,724 --> 01:01:13,724
+Bu mailler de bizim üzüyor açıkçası. İşte hocam falanca üçüncü soruya takıldım, öbür soruları yapmadım. Yani siz üniversite sınavı görmüş kişisiniz.
+
+320
+01:01:13,724 --> 01:01:21,724
+Sadece tek bir soruya takılıp da bu sınava geçip buraya gelmedin. Yapamadığın soruyu boş bırakırsınız, yüz almayın, doksan beş alın.
+
+321
+01:01:21,724 --> 01:01:32,236
+Yani bu tarz mazeretleri sunmanız şey, yani biz üç tane soru sorup da her soru otuz puan deyip, işte birini yapamadım, öbürlerini kaçırdım gibi bir şey yok. Yirmi tane sorunuz var.
+
+322
+01:01:32,275 --> 01:01:59,996
+On dokuz tanesini yapın, bir tanesini yapmayın. O ayrı mevzu. Zaten bu soruda geri dönüş de mümkün. Bu tarz mazeretler sizin konumunuzla çok uyuşmuyor. Onun için bu tarz mazeretlerin arkasına sığınmayalım. Yanlış doğruyu götürmüyoruz sınavda. Diğer sınavda da götürmeyecek. Yapısal programlamaya giriş projesini de okul Haziran'ın altısında mı kapanıyor arkadaşlar? Son haftamız herhalde Haziran altı.
+
+323
+01:02:02,452 --> 01:02:08,452
+Akademik takvime bakabilirseniz, finaller ne zaman başlıyormuş?
+
+324
+01:02:08,452 --> 01:02:18,452
+Yani finaller, Haziran'ın 6'sında ise biz Mayıs'ın ilk haftasında duyuracak şekilde şeyi duyururuz, yapısal programlama giriş projesini.
+
+325
+01:02:18,452 --> 01:02:24,452
+Neden? Onda da yeterince zaman olacak. Yani bir oyun planı yapmanızı isteyeceğiz.
+
+326
+01:02:24,452 --> 01:02:30,444
+Şimdi sayısal analizdeki projeyi erken duymamızın sebebi, buradaki yöntemleri kodlamak çok kolay.
+
+327
+01:02:30,931 --> 01:02:35,931
+Yapısal programlar da çok erkenden duyurursak, işte görmediğimiz bazı daha kavramlar var.
+
+328
+01:02:35,931 --> 01:02:43,931
+Rekürsüklere yeni yeni giriyoruz. Bu sizi birazcık şey yapabiliyor, yani hem cesaretinizi kırıyor, hem de aşırı soru geliyor.
+
+329
+01:02:43,931 --> 01:02:51,931
+Bu sorular böyle bir karman çorman hale geliyor. Bir de bir ay gerçekten fazla, şu an neredeyse şimdi versek bir buçuk ay kadar bir süre olur.
+
+330
+01:02:51,931 --> 01:02:57,931
+Onun için Mayıs'ın ilk haftasına kadar halletmiş oluruz. Derslerin son günü 3 Haziran gözüküyor.
+
+331
+01:02:58,483 --> 01:03:05,483
+3 Haziran ise biz de muhtemelen Mayıs'ın ilk haftası yapısal programlama giriş projenizi vermiş oluruz.
+
+332
+01:03:05,483 --> 01:03:13,483
+Haziran'ın ilk haftası da toplayıp asistanlara değerlendirmesi için havale ederiz. Başka sorumuz var mı?
+
+333
+01:03:15,483 --> 01:03:21,483
+Sınav saatlerinize dikkat edin. Ben yapısal programlamaya girişte, Pat Hoca ile de konuştuk.
+
+334
+01:03:22,483 --> 01:03:29,923
+demo sınav paylaştık. Yani demo sınavdan kastımız sadece saçma sapan değerler var. Test usulünün nasıl olduğunu görün diye ama
+
+335
+01:03:29,923 --> 01:03:37,244
+devre dersinde zaten daha önceden tecrübe etmişsiniz, öyle duyduk. Yine de yapın, yani sistemi bir kurcalayın.
+
+336
+01:03:37,244 --> 01:03:46,804
+Sistemin kendisine ait bir saati var. Bu saate çok güvenmeyin. Kendi saatinizle sınav saatini sürekli kontrol edin.
+
+337
+01:03:48,079 --> 01:03:59,599
+Sınav esnasında gördüğünüz saat, işte üç dakikanız kaldı, on dakikanız kaldı, tazelenmiyor. Sayfayı F5 yaptığınızda, önceki soruya geri dönemiyorsanız bu da bir sıkıntı oluşturuyor.
+
+338
+01:03:59,599 --> 01:04:06,760
+Ayrıca bir saatle sınav sürenizi kontrol edin. Buna göre süre planlamasını, zaman yönetimini kendiniz lütfen ayarlayın.
+
+339
+01:04:06,760 --> 01:04:13,679
+Bunları yani artık hatırlatma amaçlı söylüyorum. Yani ben söylemeye gerek bilmiyorum da, yine de bilginiz olsun.
+
+340
+01:04:19,155 --> 01:04:45,996
+Yapısal sınavı 10'da yöntemiz sabah. [öğrenci] neyin şeyi anlamadım, tam görüntüden kastım. Yani sen bu sayfaya girersen zaten bunu indirdiğinde sıkıntı olmaz. Şu sınav programını bahsediyorsan hani şu an zaten herhalde sana şu kadarı yeter. İstersen görüntü al. Yapısal sınavı saat 11'de. Hocam sanki şey 10'da da bize.
+
+341
+01:04:47,219 --> 01:04:49,219
+Hocam, onda bir.
+
+342
+01:04:51,219 --> 01:04:56,219
+Evet, hatta sıkıntı oldu. Bazılarında 10'da gözüküyor, bazılarında 11'de gözüküyor takvimde diye soruyor.
+
+343
+01:04:56,219 --> 01:05:02,219
+Tamam, ben hocayla konuşuruz onu. Yani saat 11'de çünkü şununla çakışmaması lazım.
+
+344
+01:05:02,219 --> 01:05:07,219
+Bu dersi alıp, şu dersi alanlar var. Fatih Hoca'ya söylerim.
+
+345
+01:05:07,219 --> 01:05:14,219
+Onu da söylediler hocam derste galiba. O da dedi ki, yüksek ihtimalle o 1 saat, 1.5 saatte bitecek sınavdır. İşte çakışmaz falan dedi.
+
+346
+01:05:14,739 --> 01:05:25,899
+Tamam, bir hocayla konuşuruz. Yani 10 olacaksa da ayrıca bilgi veririz, 11 olacaksa da ayrıca bilgi veririz. Muhtemelen hoca da şey görmüştür, yani şöyle açınca 10 gibi görmüştür.
+
+347
+01:05:27,739 --> 01:05:31,739
+Nerede bu? Evet. Yani şu şekil...
+
+348
+01:05:31,739 --> 01:05:35,179
+Tamam, ben onu Fatih Hoca'ya iletirim.
+
+349
+01:05:36,947 --> 01:05:43,547
+Yani siz 11 olacakmış gibi düşünün de, yine Fatih Hoca ayrıca bu konuda o gruba da bilgi gönderir.
+
+350
+01:05:43,547 --> 01:05:49,147
+Peki, dersimiz yapısal programlara giriş değil Sayısal Anamiz. Sayısal Anamizle'yle kalı sorunuz var mı?
+
+351
+01:05:54,963 --> 01:06:04,123
+O zaman arkadaşlar şimdiden hepinize sınavlarınızı başarılar, iyi bayramlar dilerim. Sayısal Analiz Projesi, onu da söyleyelim.
+
+352
+01:06:04,123 --> 01:06:20,523
+Şimdi bayramdan sonraki hafta, şöyle takvimimizi açayım. 26'sı sınav var. Sonra 3'ü haftası ders yapacağız, 10'a haftası ders yapacağız. 17. haftası vize 2'yi yapacağız.
+
+353
+01:06:21,235 --> 01:06:29,235
+Bu bize iki saatini o zamana yakın söyleriz, bir hafta öncesinde söyleriz, saat dört gibi yapabiliriz.
+
+354
+01:06:29,235 --> 01:06:40,971
+On yedisinin haftasında yani o tarihte saat birde proje kontrollerini yapacağız. Normalde son teslim yirmi üç Mayıs.
+
+355
+01:06:41,012 --> 01:06:50,012
+Ama erken teslim eden arkadaşları, diğer derslere de vakit ayırsınlar diye ben 17'sinden itibaren erken teslim eden arkadaşlara bir mail göndereceğim.
+
+356
+01:06:50,012 --> 01:06:58,012
+17'sinde biz proje kontrolü yapacağız. Konularımız yetişirse tabii, konularımız yetişmezse 17'sinde de ders yaparız.
+
+357
+01:06:58,012 --> 01:07:04,012
+17'sinde saat, sınav saatinde de sınavımızı yapmış olacağız. O hafta o şekilde.
+
+358
+01:07:04,052 --> 01:07:10,532
+Normalde 23 Mayıs'a kadar proje teslimi 23.59'a kadar proje teslimi mümkün.
+
+359
+01:07:11,251 --> 01:07:20,211
+24'ünde, 31'inde ve son hafta projelerin kontrollerini yapıyoruz. Başka da yapacağımız bir faaliyet olmuyor.
+
+360
+01:07:22,452 --> 01:07:31,731
+Şu an 1 Mayıs gösteriyor çünkü onu ileriye yönelik öteleme yaparım diye bir tedbiren 1 Mayıs yapmıştım. Onu ben 23 Mayıs'a 23.59'a öteleyeceğim.
+
+361
+01:07:34,003 --> 01:07:35,003
+Tamam mı?
+
+362
+01:07:37,603 --> 01:07:39,003
+Başka soru yoksa?
+
+363
+01:07:42,739 --> 01:07:44,739
+Şimdi Fatih Hoca'ya mail göndereyim.
+
+364
+01:07:44,739 --> 01:07:48,739
+Peki, hepinize şimdiden iyi bayramlar, ailelerinize selamlar arkadaşlar.
+
+365
+01:07:48,739 --> 01:07:53,739
+Sınavlarınızda başarılar diliyorum. Kendinize iyi bakın. Haftaya görüşmek üzere.
+
+366
+01:07:53,739 --> 01:08:03,739
+Sınavla alakalı da ben ayrıca bir gerekirse toplantısından öncesinde toplantı yaparım diye düşünüyorum ama test olacağı için çok gerek yok. O konuda da mail gönderirim belki.
+
+367
+01:08:03,739 --> 01:08:09,739
+Classroom'dan da duyurabiliriz. Hepinize iyi günler, iyi akşamlar arkadaşlar.
