@@ -1,6 +1,6 @@
 # İşletim Sistemleri Ders Kayıtları Altyazıları
 
-Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki İşletim Sistemleri (BLM3011 - 3. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki İşletim Sistemleri (BLM3011 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Dr. Ziya Cihan Tayşi
 * **Uygulama Saatleri:** Asistanlar tarafından yürütülmüştür (ders 15, 17, 20, 22 ve 24). Ders 20 ve 22'yi Betül Türkkol anlatmıştır.
