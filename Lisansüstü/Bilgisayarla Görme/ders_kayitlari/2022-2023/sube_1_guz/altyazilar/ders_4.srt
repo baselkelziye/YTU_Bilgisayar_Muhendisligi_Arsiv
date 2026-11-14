@@ -1,0 +1,2547 @@
+1
+00:07:13,939 --> 00:07:16,160
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:07:25,908 --> 00:07:26,828
+Geliyor hocam.
+
+3
+00:07:27,867 --> 00:07:28,948
+Peki, teşekkürler.
+
+4
+00:07:39,732 --> 00:07:57,832
+Tam hatırlamıyorum da, geçen hafta CNN mimarilerine bakmış mıydık? Google Net gibi, ResNet gibi. Bunlara bakmış mıydık sizinle?
+
+5
+00:08:07,923 --> 00:08:11,584
+AlexNet'ten başlıyor. En başta.
+
+6
+00:08:17,812 --> 00:08:21,708
+Alex Net'i tanıtıyor. Sonra işte...
+
+7
+00:08:28,596 --> 00:08:35,956
+ZFnet, daha büyük bir Alexnet. Sonra VGG mimarilerini tanıtıyor.
+
+8
+00:08:40,467 --> 00:08:42,467
+Kavuneti tanıtıyor.
+
+9
+00:08:46,467 --> 00:08:48,075
+Resneti tanıtıyor.
+
+10
+00:08:52,211 --> 00:09:03,572
+Bunlara bakmış mıydık arkadaşlar? Bu arada tabletten katıldığım için chat'i göremiyorum. Eğer bir şeyiniz varsa cevap verirseniz sesli olarak.
+
+11
+00:09:06,292 --> 00:09:08,032
+Hocam ben bahsettik diye hatırlıyorum.
+
+12
+00:09:08,032 --> 00:09:09,692
+Tamam.
+
+13
+00:09:16,244 --> 00:09:18,844
+O zaman bir sonrakine geçelim.
+
+14
+00:09:40,532 --> 00:09:52,132
+Bakalım burada Nöral Network'lerin eğitilmesi ile ilgili ayrıntılara bakıyor. Bunlara beraber bakalım.
+
+15
+00:10:00,083 --> 00:10:22,023
+İlk başta setup'ı nasıl yapacağız ona bir bakacak bugün veya bu slide'da herhalde. Sonra eğitimle ilgili ayrıntılara bakacak. Öncelikle activation functions onlara bakıyor.
+
+16
+00:10:27,827 --> 00:10:37,867
+Genel olarak bir yapay sinir ağındaki yapıda sinir hücresine benzer bir yapı var.
+
+17
+00:10:42,676 --> 00:10:58,696
+Nöronlardan, başka nöronlardan veya direkt giriş geliyor. Veitle çarpılıyor. Bu şekilde birçok giriş ilgili veitlerle çarpılıyor.
+
+18
+00:11:01,696 --> 00:11:09,496
+Sinir hücresinin içinde bunlar toplanılıyor. Biyazla da topluyoruz.
+
+19
+00:11:11,796 --> 00:11:20,796
+Sonra bir non-linearity'ye veriyoruz. Bu toplamı.
+
+20
+00:11:20,796 --> 00:11:23,176
+Non-linear bir.
+
+21
+00:11:29,268 --> 00:11:41,708
+Ve non-linearity'nin çıktısını çıktı olarak veriyoruz. Bu non-linearity'ye activation function deniliyor.
+
+22
+00:11:47,604 --> 00:11:50,084
+Geçen derslerde relü'yü gördük.
+
+23
+00:11:52,444 --> 00:11:58,764
+Ama bunun yanında literatürde kullanılmış olan birçok activation funksiyonu var.
+
+24
+00:12:00,644 --> 00:12:05,984
+Sigmoid, Tanayç, Lik, Relu, Elu, Gelu gibi.
+
+25
+00:12:09,484 --> 00:12:14,964
+Bunlardan sigmoid fonksiyonu bu şekilde.
+
+26
+00:12:16,724 --> 00:12:33,024
+Tanımlanıyor. Gördüğünüz gibi sıfır ile bir arasında değerler alıyor. Çok hızlı bir şekilde şuradan itibaren ve buradan itibaren sıfıra yakın değerler alıyor.
+
+27
+00:12:36,624 --> 00:12:40,764
+Bu biraz popüler olma nedeni neydi?
+
+28
+00:12:44,211 --> 00:13:06,052
+Gerçek sinir hücrelerinde böyle bir firing rate denilen bir durum var. Yani sinyal gönderme oranı. Bu orana benzetildiği için biyolojik olarak mantıklı gelmiş.
+
+29
+00:13:10,836 --> 00:13:20,576
+Zaman içinde şu fark edilmiş, nöral network eğitiminde gradiyanları öldürüyor bu.
+
+30
+00:13:37,971 --> 00:13:49,131
+Mesela şuradan bakalım. Bu backpropagation algoritmasının bir şeyi, yeniden bakılmış hali.
+
+31
+00:13:49,971 --> 00:14:05,251
+Hatırlarsanız backpropagation'da önce forward propagation yapılır, ileriye doğru hesaplamalar yapılır. Sonra da geri dönüş.
+
+32
+00:14:06,163 --> 00:14:31,144
+Ters yönde gradiyanlar geriye doğru dağıtılır. Lokal gradiyan alınır. Aşağı doğru dağıtılacak gradiyan, üstten gelen gradiyan çarpı lokal gradiyan olarak elde edilir.
+
+33
+00:14:33,524 --> 00:14:52,524
+Şimdi mesela x eksi 10 ise yani şuralarda falan, buralarda sigmoid fonksiyonunun eğimi çok düşük. Dolayısıyla buradaki gradiyan...
+
+34
+00:14:58,868 --> 00:15:25,708
+Sigmoidin x'e göre türevi sıfıra yakın. Dolayısıyla şu değer sıfıra yakın. Dolayısıyla aşağı gönderdiğimiz gradyan ne oluyor? Sıfıra yakın oluyor. Dolayısıyla sigmoidin altına doğru giden tüm gradyanlar sıfıra yakın oluyor.
+
+35
+00:15:26,611 --> 00:15:52,291
+Bu da tabii bizim istediğimiz bir şey değil. Çünkü gradiyan büyüklükleri bizim ne yapıyor? Optimizasyonda ne kadar hareket ettiğimizi belirliyor. Dolayısıyla gradiyan sıfıra yakınsa biz pek de optimize etmiyoruz. Bizim weightlerimizi pek de değiştirmiyoruz.
+
+36
+00:15:55,028 --> 00:16:06,427
+Aynı hikaye burada da var. Çünkü burada da artı onda da gradiyan yine sıfıra yakın. Çünkü neredeyse düzleşmiş.
+
+37
+00:16:09,347 --> 00:16:20,387
+X eşittir sıfırda ne oluyor burada? Burada da yaklaşık olarak şu şekilde bir şey var. Değil mi?
+
+38
+00:16:22,772 --> 00:16:49,772
+eğim var. Buralarda çalışıyor sigmoid fonksiyonu ve buralarda sanki bir lineer bir şey gibi çalışıyor. Aktivasyon fonksiyonu. Şuralarda biraz non-lineerlik var. Buralarda ama ne yapıyor? Sıfırlıyor.
+
+39
+00:16:50,644 --> 00:17:12,963
+Bir başka sorun da sıfır değil merkezi. Yani gradyanın merkezi sıfır değil. Bu da bir sorun olarak görülmüş.
+
+40
+00:17:27,604 --> 00:17:35,983
+Burada tabii bu Nangene Eyaleti'nin her zaman pozitif olması durumunda ne olduğunu sanırım anlatmış.
+
+41
+00:17:36,564 --> 00:17:38,124
+Bu slide'ı ilk defa görüyorum.
+
+42
+00:17:46,963 --> 00:17:54,003
+Her zaman pozitifse non-linearity, şu çıktı her zaman pozitif değil mi?
+
+43
+00:18:39,988 --> 00:18:58,008
+Evet, şunu demek istiyor herhalde. Şimdi, non-linearity her zaman pozitifse, bir önceki katmanın çıktısı da yine bu non-linearity'yi kullanıyor ya, bunlar her zaman pozitif. Burası her zaman pozitif.
+
+44
+00:19:04,115 --> 00:19:06,375
+Şeye göre, türev
+
+45
+00:19:13,491 --> 00:19:24,851
+Bu katmandaki bir ağırlığın türevine baktığında ne görüyor? Lokal gradiyanla yukarıdan gelen gradiyantın çarpımı olacak.
+
+46
+00:19:29,231 --> 00:19:34,512
+Bu da her zaman pozitif olduğu için burası da her zaman pozitif olacak.
+
+47
+00:19:35,731 --> 00:19:36,851
+Dolayısıyla...
+
+48
+00:19:36,980 --> 00:19:49,780
+Buradaki gradyantın sayını, yani pozitif mi negatif mi yukarıdan gelen gradyant ile belli olacak.
+
+49
+00:20:03,796 --> 00:20:28,796
+Burada, bu da bir şekilde gradyantın habire tamamen yukarıdan şeye göre, yukarıdan gelen gradyant tamamen ilk girişe bağlı olacak. Yani birinci gradyant yukarıya, sonraki gradyant yine yukarıya. En başta L'nin...
+
+50
+00:20:36,468 --> 00:20:39,307
+L'nin türevine bağlı olacak.
+
+51
+00:20:45,811 --> 00:20:55,871
+Bu da istenilen bir durum değil. Gradiyan bir oraya, bir buraya, bir oraya, bir buraya zıplıyor olacak.
+
+52
+00:20:57,671 --> 00:21:00,779
+Çünkü bir optimizasyon probleminde...
+
+53
+00:21:07,028 --> 00:21:09,347
+Gradient Descent yaparken...
+
+54
+00:21:12,435 --> 00:21:38,935
+Diyelim ki şurası x sıfır noktası. Burası da optimum. Bir boyutlu bir çizim yapıyorum. Ne yapmak isteriz? Doğru yönde yavaş yavaş adım atmak isteriz. Devamlı pozitif olursa aktivasyon fonksiyonu ne oluyor biraz?
+
+55
+00:21:39,635 --> 00:22:01,556
+Biraz bu yöne gidiyor, biraz tekrar bu yöne gidiyor, biraz tekrar bu yöne gidiyor, biraz tekrar bu yöne gidiyor. Yani biraz iki ileri bir geri şeklinde bir doğruya doğru gidiş durumu var. Bu bir boyutlu bakış açısı, şurada da iki boyutlu bakış açısını göstermiş. Dolayısıyla bu pek istemem bir durum değil.
+
+56
+00:22:15,188 --> 00:22:15,948
+Eeeh.
+
+57
+00:22:19,220 --> 00:22:25,460
+Burada tabii çok da aslında kötü değil diye tekrar bir geri adım attı. Neden?
+
+58
+00:22:27,900 --> 00:22:38,920
+Tek bir durumda, tek bir resim için eğitim yaparken böyle oluyor ama zaten nörel network eğitiminde genelde mini-beçler kullanılıyor.
+
+59
+00:22:47,539 --> 00:23:02,819
+Kullanılıyor. Dolayısıyla bu zigzag biraz azalmış oluyor. Bir de batch normalization da bu sorunu çözmede yardımcı olabiliyormuş.
+
+60
+00:23:02,940 --> 00:23:06,559
+Batch normalization'ı zaten çok çok tavsiye ediyorlar.
+
+61
+00:23:12,339 --> 00:23:20,079
+Bir başka şey de, burada Exponential alınıyor. Bu birazcık daha pahalı deniliyor.
+
+62
+00:23:20,079 --> 00:23:37,079
+Ama pratikte zaten bu çok önemli olmuyor. Çünkü GPU'larda şu gözlemlenmiş, aslında işlem hızını belirleyen...
+
+63
+00:23:38,163 --> 00:24:04,903
+Bu işlemlerin pahalılığı değil de GPU hafızasına erişim. Ne kadar hızlı. Yani olayı yavaşlatan şu anki GPU'lar da bu. Dolayısıyla bunun birazcık pahalı olması çok çok önemli bir durum değil. Eğer GPU kullanılıyorsa çok basit cihazlarda belki bir sorun oluşturabilir.
+
+64
+00:24:08,147 --> 00:24:31,083
+Pratikte ama gerçek problem şu olmuş oluyor. Buralarda gradiyan sıfır olduğu için aşağı doğru giden gradiyanlar hep sıfır gidiyor. Sıfır sıfır sıfır. Gradiyanlar yok oluyor. Dolayısıyla alt...
+
+65
+00:24:31,092 --> 00:24:35,791
+İlk başlardaki katmanlar eğitilememiş oluyor.
+
+66
+00:24:40,788 --> 00:25:07,788
+Bir başka aktivasyon fonksiyonu, Tan H. Gördüğünüz gibi sigmoidin yarım birim aşağı alınmış hali esasen. Dolayısıyla zero centred değerleri eksi bir bir arasına alıyor. Ama yine aynı sorun var burada da. Gördüğünüz gibi buradaki.
+
+67
+00:25:08,468 --> 00:25:28,407
+Gradyanlar sıfır. Dolayısıyla yüksek değerler geldiğinde, x yüksek değerler aldığında gradyanlar sıfırlanıyor. Aşağı doğru tüm gradyanlar sıfır gidiyor ve eğitim zor oluyor.
+
+68
+00:25:29,788 --> 00:25:35,988
+Şimdi bir başka fonksiyonu Relu, Rectified Linear Unit diye geçiyor bu.
+
+69
+00:25:38,644 --> 00:25:56,744
+fx eşittir 0'ın ya da x'in maksimumu. 0'a kadar yani x 0'a kadar relu fx 0 olarak geliyor.
+
+70
+00:25:59,144 --> 00:26:04,563
+x pozitife geçtikten sonra fx eşittir x olarak geliyor.
+
+71
+00:26:04,563 --> 00:26:06,163
+Şu şekilde.
+
+72
+00:26:10,099 --> 00:26:11,179
+Ö
+
+73
+00:26:15,412 --> 00:26:17,872
+Does not saturate demiş.
+
+74
+00:26:25,364 --> 00:26:51,004
+Bu ne demek tam anlamadım. Yani belirli bir değer de sigmoid gibi şu şekilde olmuyor sanırım. Onu demek istiyor. Çok hesaplaması kolay. Yani düşünürseniz bu fonksiyonu implemente ederken bir maddesiniz var diyelim ki.
+
+75
+00:26:51,892 --> 00:27:02,592
+Pratikte ne yaparsanız, ne yaparsınız? Maddesi gezersiniz, negatif value'lara sıfır atarsınız. Hepsi bu. Oldukça hızlı hesaplanıyor.
+
+76
+00:27:02,592 --> 00:27:16,831
+Ve pratikte de sigmoid ve tanayışa göre çok daha iyi converge etme, yani sonucu bulma görülmüş.
+
+77
+00:27:17,971 --> 00:27:25,291
+tavsiye edilen bir fonksiyon. Yani sigmoid ve tanne hiç artık kullanılmıyor. Pek relü kullanılıyor.
+
+78
+00:27:27,692 --> 00:27:34,092
+Burada yine zero centred değil output negatif olarak.
+
+79
+00:27:38,612 --> 00:27:42,291
+Tabi bir de şu var mesela x0 iken
+
+80
+00:27:42,579 --> 00:27:57,579
+x sıfırdan küçükken gradiyant ne? x sıfırdan küçükken gradiyant sıfır. Çünkü bu bir piecewise fonksiyon diye düşünün.
+
+81
+00:27:57,579 --> 00:28:06,579
+f x eşittir. x if x
+
+82
+00:28:08,211 --> 00:28:10,271
+Büyüktür sıfır diyelim.
+
+83
+00:28:14,003 --> 00:28:24,443
+0 if x küçük eşittir 0 diyelim. Şimdi f'in türevi de ne oluyor?
+
+84
+00:28:24,443 --> 00:28:31,864
+f'in türevi o zaman x'e göre türev aldığınızda x büyüktür 0 iken türev ne?
+
+85
+00:28:36,019 --> 00:28:43,700
+1. x küçüktür 0 iken türev ne? 0.
+
+86
+00:28:47,731 --> 00:28:58,652
+Dolayısıyla burada da esasen sanki şey var gibi görünüyor. Gradiyanların bir kısmı yok edilebilir gibi gözüküyor.
+
+87
+00:29:04,915 --> 00:29:06,235
+Dolayısıyla...
+
+88
+00:29:09,364 --> 00:29:12,884
+X mesela pozitifken sıkıntı yok.
+
+89
+00:29:14,884 --> 00:29:21,003
+Ama negatifken az önce bahsettiğimiz olay burada da var.
+
+90
+00:29:22,183 --> 00:29:32,003
+Aşağı doğru gradyanların negatif sıfır gitme durumu var.
+
+91
+00:29:33,107 --> 00:29:38,107
+X tam sıfırsa ne var? Burada aslında...
+
+92
+00:29:45,332 --> 00:29:56,832
+X tam sıfırsa da aslında burada bir discontinuity var. Burada türev olmaması lazım ama sanırım pratikte türevi sıfır atayıp geçiyorlar diye düşünüyorum.
+
+93
+00:30:04,980 --> 00:30:11,019
+Burada şöyle bir şey var.
+
+94
+00:30:15,251 --> 00:30:32,731
+Bu ZELU'nun sıfır olmasından dolayı şuralarda hiçbir zaman buradaki eğitim update'i olmayabilir. Böyle bir şüphe var.
+
+95
+00:30:36,231 --> 00:30:40,731
+Bunun önüne geçmek için şöyle bir şey yapılabiliyor diyor.
+
+96
+00:30:41,811 --> 00:30:47,852
+Reli neuronlarını biraz pozitif beyazlarla başlatılabiliyor diyor.
+
+97
+00:30:47,852 --> 00:30:56,852
+Yani W X artı B beyaz.
+
+98
+00:31:00,352 --> 00:31:07,832
+Aktivasyon fonksiyonlarına biraz pozitif beyaz verip, beyazı biraz pozitif başlatıp en azından
+
+99
+00:31:08,756 --> 00:31:18,715
+Relu'ya bunu verdiğinizde, Relu fonksiyonuna girişlerin daha çok pozitif olması sağlanabiliyor.
+
+100
+00:31:19,115 --> 00:31:21,836
+Öyle bir yaklaşım yapılabiliyormuş.
+
+101
+00:31:27,412 --> 00:31:37,011
+Bir başka şey, Leak Relu. Bu Relu'daki problemden dolayı geliştirilmiş bir şey.
+
+102
+00:31:40,791 --> 00:31:47,731
+Buradaki güzel olay şu, sıfırlanmıyor.
+
+103
+00:31:54,867 --> 00:32:04,827
+Burada pozitif bir gradyan var zaten biliyoruz. Burada ise bir gradyan var. Negatif bir gradyan var.
+
+104
+00:32:07,107 --> 00:32:15,168
+fx eşittir alfa x. Dolayısıyla buradaki türev ne?
+
+105
+00:32:16,748 --> 00:32:20,548
+fx eşittir alfa. Dolayısıyla
+
+106
+00:32:21,299 --> 00:32:23,840
+Bu alfa muhtemelen negatif bir değer.
+
+107
+00:32:43,251 --> 00:32:52,511
+Burada bir hata mı var acaba? Burası eksi sıfır bir olsa bana daha mantıklı gelir gibi geliyor. Belki burada bir hata olabilir.
+
+108
+00:32:52,511 --> 00:33:06,851
+Bu slide'larda görüyorsunuz her şey için ilgili paper'ları koymuş. Dolayısıyla ayrıntısına ilgili bu paper'lardan bakabilirsiniz arkadaşlar.
+
+109
+00:33:08,152 --> 00:33:10,331
+Şu grafik görüntüsüne baktığımda ben.
+
+110
+00:33:11,731 --> 00:33:13,991
+Ne anlıyorum?
+
+111
+00:33:18,259 --> 00:33:23,259
+Şurası eksi 1 miymiş? Sıfır olduğunu düşünüyordum buranın ama.
+
+112
+00:33:25,259 --> 00:33:29,259
+Y'deki eksi 1'dir muhtemelen bu.
+
+113
+00:33:31,259 --> 00:33:36,259
+Yani sıfıra kadar, şöyle yine doğrusal.
+
+114
+00:33:38,259 --> 00:33:41,259
+Sıfırdan doğru, ha doğru bu da pozitif.
+
+115
+00:33:41,259 --> 00:33:43,259
+Tamam buradaki eğim de pozitif.
+
+116
+00:33:43,923 --> 00:33:58,224
+Negatif eğim olması için şu olması lazım. Tam sıkıntı yok. Dolayısıyla her zaman pozitif bir eğime sahip bir fonksiyon gördüğünüz gibi.
+
+117
+00:34:01,024 --> 00:34:11,224
+Negatif değerleri yine negatif değerlere map ediyor. Ama bir küçülterek map ediyor. 0.1 gibi küçük bir eğimle map ediyor.
+
+118
+00:34:12,244 --> 00:34:30,244
+Leaky Relu diye geçiyor bu. Gördüğünüz gibi yine Saturate olmuyor. Hızlı, hızlı konverj oluyor ve ölmeyecek.
+
+119
+00:34:33,652 --> 00:34:59,391
+Buna benzer bir yaklaşım da alfa niye 0.1, niye 0.2 değil. Şöyle bir şey var. Alfayı bir parametre yapalım. Backpropagation'da alfayı da öğrenelim diye yaklaşımlar var. Buna da parametrik relu diyorlarmış. Bunun bir versiyonu.
+
+120
+00:35:02,675 --> 00:35:15,876
+Yine benzer Exponential Linear Unit var. Bir aktivasyon fonksiyonu. Grafiğin şeklini görebilirsiniz.
+
+121
+00:35:15,876 --> 00:35:23,475
+Yine RELU'ya benzer, hatırlarsanız ZELU'nunki şöyle bir grafikti.
+
+122
+00:35:30,291 --> 00:35:39,172
+Biraz daha outputlar sıfıra daha yakın. Hani outputlar her zaman pozitif değil.
+
+123
+00:35:45,523 --> 00:35:49,224
+Şuradaki Negative Saturation Rejim diyor, yani şurası.
+
+124
+00:35:53,224 --> 00:36:00,023
+Noise'e karşı biraz daha gürültüye karşı kuvvetlilik sağlıyor diyor.
+
+125
+00:36:00,144 --> 00:36:02,364
+Çünkü neden olabilir bu?
+
+126
+00:36:04,423 --> 00:36:08,743
+Negatif ne anlama geliyor?
+
+127
+00:36:13,204 --> 00:36:20,903
+İyi olmayan şeyler anlamında düşünebiliriz. Yani iyi olmayan çıktılar falan gibi düşünebiliriz.
+
+128
+00:36:22,364 --> 00:36:35,463
+Fonksiyon burada. Şurası da discontinuity yok. Yani her zaman için türevi alınabilir bir fonksiyon.
+
+129
+00:36:35,903 --> 00:36:39,644
+Negatif olarak biraz yine exponential var.
+
+130
+00:36:40,371 --> 00:36:44,971
+İşte biraz daha hesap almak pahalı olabilir.
+
+131
+00:36:51,507 --> 00:37:11,987
+Bir başka şey de Scaled Exponential Diner Unit diye geçiyor, SELU. Bu da az öncekine çok benzer ama az öncekinde alfayı 1 almışlardı. Ama yine bir hiperparametre sonuçta o.
+
+132
+00:37:21,684 --> 00:37:29,984
+İncelemişler bu parametreler nasıl değerler alabilir diye. Lambda parametresi var burada ve alfa parametresi var.
+
+133
+00:37:31,984 --> 00:37:45,984
+Ve ideal olarak şu değerlerin lambda ve alfa için derin networklerde daha iyi sonuç verdiğini görmüşler.
+
+134
+00:37:48,340 --> 00:37:55,276
+O kadar ki beş normalizasyona gerek kalmadan...
+
+135
+00:37:59,123 --> 00:38:05,863
+Deep Selo Network denilen networkleri bununla eğitebiliyorsunuz.
+
+136
+00:38:13,183 --> 00:38:21,463
+Tabii 91 sayfalık bir hesabı varmış. Yani o paper da ortaya çıkışıyla ilgili.
+
+137
+00:38:26,483 --> 00:38:51,963
+Gaussian Error Linear Unit. Şuna bakalım ne diyor? Burada belli bir yere kadar düz geliyor, sonra bir aşağı iniyor, yukarıya çıkıyor, bir noktadan sonra doğru sala dönüşüyor gibi duruyor. Yani relü hatırlarsanız böyleydi.
+
+138
+00:38:53,076 --> 00:38:58,056
+Burayı böyle biraz aşağı yapıp şöyle bir şey yapmışlar sanki.
+
+139
+00:39:11,315 --> 00:39:12,155
+Bu da ne diyor?
+
+140
+00:39:15,860 --> 00:39:40,300
+Girişi rastgele sıfır ya da bir ile çarpacakmışız. Ama büyük değerlerin bir ile çarpışma olasılığı daha büyük diyor. Küçük değerlerin sıfırla çarpılma olasılığı daha küçük. Böyle bir fikirden yola çıkılmış.
+
+141
+00:39:41,460 --> 00:39:54,480
+Data Dependent Dropout diyor. Yani veriye bağlı olarak Dropout yapmış oluyoruz. Yani verinin bir kısmını kullanmamış gibi bir şey yapıyoruz. Veya değerini azaltıyoruz.
+
+142
+00:39:56,340 --> 00:40:04,199
+Şu grafik de sanırım şeyden geliyor. Expectation'ın grafiği olması lazım.
+
+143
+00:40:12,244 --> 00:40:38,084
+Ne diyor? X is distributed by normal distribution. 0-1 arasında normal bir distribution ile dağılır diyor. Normal distribution'dan bir X elde etti. Elde edilen X'in bu değerden küçük olma olasılığı çarpı X.
+
+144
+00:40:38,612 --> 00:40:39,891
+Geliyor buna eşit diyor.
+
+145
+00:40:51,956 --> 00:40:55,956
+Yani girişi ne yapıyor?
+
+146
+00:41:06,324 --> 00:41:11,423
+Olasılıkla çarpıyorum diyor. Ama burada sıfırla veya birle çarpıyor diyor.
+
+147
+00:41:18,516 --> 00:41:45,475
+Buraya biraz daha bakmak lazım arkadaşlar. Bununla ilgili biraz belki araştırma yapmak lazım. Justin Johnson'ın 2019'daki videosuna bakmıştım ben. Onu izlemiştim. Oradan bunu hatırlayamıyorum. Belki yapmıştır ama şu anda hatırlayamıyorum.
+
+148
+00:41:45,972 --> 00:41:54,032
+Bu da 2022 slide'ları. Zaman içinde tabii slide'ları geliştiriyorlar.
+
+149
+00:42:00,148 --> 00:42:12,148
+Bununla ilgili kendi araştırmanızı yapıp daha ayrıntılı neymiş ne değilmiş onu görmek lazım. Erf fonksiyonu ne ondan da emin değilim.
+
+150
+00:42:16,148 --> 00:42:27,467
+Transformers architecture'larında çok yaygın diyor. Biliyorsunuz bunlar çok büyük architecture'lar. Bert çok büyük.
+
+151
+00:42:28,275 --> 00:42:49,815
+Natural Language Processing, yani doğal dil işleme, GPT, yine benzer, biti bilmiyorum. Bu çok büyük modern şeylerde kullanılan bir yöntem deniliyor.
+
+152
+00:42:57,427 --> 00:43:14,307
+Yaklaşık olarak şöyle bir fonksiyona getirdi. Bir nevi x eşittir x çarpı sigmoid 1.7 çarpı x gibi bir fonksiyon, aktivasyon fonksiyonu.
+
+153
+00:43:25,492 --> 00:43:38,992
+Bunu geçeceğiz. Dediğim gibi bunu not alabilirsiniz. Bir bakabilirsiniz. Ben de bir ara bir bakayım. Şuraya tabuma bir gelu yazayım.
+
+154
+00:43:53,844 --> 00:44:04,923
+Burada şeyler yapılmış. Relu, D2 Relu, Parametric Relu, SoftPlus, Elu, Selu, Gelu, bir de Switch diye bir şey var.
+
+155
+00:44:04,923 --> 00:44:16,184
+Şu paperda. Farklı networkler üzerinde bunların başarılarına bakılmış.
+
+156
+00:44:21,940 --> 00:44:26,440
+Bir şey görebiliyor musunuz burada? Kesin bir kazanan.
+
+157
+00:44:31,923 --> 00:44:45,703
+Kesin bir kazanan görünmüyor. Hepsinde iyi sonuç veren, ResNet'e bakılmış, Wide ResNet diye bir şeye bakılmış, DenseNet'e bakılmış. Kesin bir kazanan görülememiş.
+
+158
+00:44:58,931 --> 00:45:00,391
+Gelir şuydu değil mi?
+
+159
+00:45:05,396 --> 00:45:13,076
+Burada mesela Switch daha iyi sonuç vermiş. Şu Soft Plus dediği daha iyi sonuç vermiş.
+
+160
+00:45:16,155 --> 00:45:17,275
+Relu burada.
+
+161
+00:45:24,788 --> 00:45:37,387
+Dolayısıyla özetlemek gerekirse, çok da fazla bu konuya kafa yormanıza gerek yok. Relüyü kullanın gitsin diyor.
+
+162
+00:45:40,127 --> 00:45:46,347
+Relü ile biraz çalışın.
+
+163
+00:45:51,219 --> 00:45:59,880
+%1000'lik bir iyileştirme bile çok çok çok önemliyse o zaman farklı bunları tek tek deneyebilirsiniz.
+
+164
+00:45:59,880 --> 00:46:17,679
+Diğer versiyonları. Daha yeni mimariler Relu yerine biraz Gelu kullanıyor. Ama gains are minimal demiş. Kazanımlar çok çok da büyük değil.
+
+165
+00:46:19,923 --> 00:46:23,724
+Transformer gibi mimariler de geliyor, kullanılıyormuş.
+
+166
+00:46:32,659 --> 00:46:52,000
+Verinin ön işlemesine bakıyor biraz. Aktivasyon fonksiyonlarını geçtik. Verinin n çarpı d bir maddesi olduğunu düşünün. Her satırda bir tane gözlem var yani.
+
+167
+00:46:56,019 --> 00:47:07,119
+Yani şu satırın her biri bir imge gibi düşünebilirsiniz veya bunu Convolutional Neural Network için yapmıyor aslında bu yakın şeyi, tartışmayı.
+
+168
+00:47:10,899 --> 00:47:18,359
+Dolayısıyla herhangi bir gözlem, giriş her bir satır.
+
+169
+00:47:20,403 --> 00:47:25,604
+Dolayısıyla N tane gözlemimiz var. Her gözlemde D tane boyut var.
+
+170
+00:47:27,824 --> 00:47:37,224
+Şimdi ne yapabiliriz? Bir kere girişten ortalamasını çıkarabiliriz.
+
+171
+00:47:38,184 --> 00:47:44,003
+Ortalamayı alıyor. Aksi sıfır kolonlar boyunca ortalama olması lazım.
+
+172
+00:47:45,619 --> 00:48:12,340
+Kolonlar boyunca ortalamayı sıfırlıyor. Dolayısıyla her boyut, her kolon kendi içinde ortalaması elde ediliyor ve tüm veriden çıkarılıyor. Bunu yaptığımızda veri zero centred oluyor. Yani ortalamada verinin merkezi sıfıra oturmuş oluyor. Gördüğünüz gibi şurada sıfırda değil.
+
+173
+00:48:14,452 --> 00:48:26,512
+Bir de standardına bölüyorsunuz. Buna normalize edilmiş veri deniyor. Bilirsiniz istatistikte ne vardır?
+
+174
+00:48:28,652 --> 00:48:41,812
+Standard Normal Distribution, Normal Distribution'dan ortalamasını çıkartırsınız. Sonra standart sapmasına bölersiniz.
+
+175
+00:48:42,867 --> 00:49:05,587
+Bu işi yapıyor. Dolayısıyla verinin standart sapması, yani dağınıklık miktarı bir normalize edilmiş oluyor. Standart normal dağılıma dönüşmüş oluyor. Ona benzer bir şey oluyor.
+
+176
+00:49:25,364 --> 00:49:33,364
+Bir input nöronuna giriş her zaman pozitifse, hatırlarsınız, şöyle bir sorunla karşılaşabiliyorduk.
+
+177
+00:49:38,224 --> 00:49:51,204
+Gradiyan değerleri bir pozitif, bir eksi. Tamamen şeye bağlı olarak, x'e bağlı olarak, ilk baştaki x'e, ta network'ün en başında verdiğiniz x'e bağlı olarak.
+
+178
+00:49:54,739 --> 00:50:17,119
+Pardon, eksediği şeye bağlı olarak son output'tan bir öncekinin gradiyanın değerine bağlı olarak aşağı doğru gidiyordu. Bu da pek istediğimiz bir şey değildi. Dolayısıyla Zero Mean Data.
+
+179
+00:50:19,699 --> 00:50:27,179
+Verinin sıfır olması hoşumuza gidiyor. Sıfır ortalamada olması hoşumuza gidiyor.
+
+180
+00:50:35,027 --> 00:50:44,847
+Bazen Principal Component Analysis denilen bir yöntem var. Bu uygulanarak ne yapılabiliyor?
+
+181
+00:50:52,659 --> 00:51:19,859
+Verideki korelasyon da yok edilebiliyor. Ayrıca eğer bazı problemlerde çok fazla boyutunuz varsa, PCA ile daha önemli boyutları seçip onları alabiliyordunuz. Derin öğrenmede bu tarz yaklaşım yok diye düşünüyorum ama klasik bilgisayarla göre de kullanılabilen bir şey.
+
+182
+00:51:20,692 --> 00:51:40,692
+Verideki doğal eksenleri buluyor. O doğal eksenlere veriyi ne yapıyorsunuz? İz düşüm yapıyorsunuz.
+
+183
+00:51:40,692 --> 00:51:46,052
+Ve sanki bunlar bu bir x'miş gibi, bu bir y'miş gibi.
+
+184
+00:51:47,347 --> 00:51:49,347
+Hareket edebiliyorsunuz.
+
+185
+00:51:51,347 --> 00:51:57,347
+Whitening de covariance maddesi, identity maddesi yapma.
+
+186
+00:51:58,347 --> 00:52:01,347
+Bu nasıl yapılıyor bilmiyorum.
+
+187
+00:52:03,347 --> 00:52:08,347
+Buna da yine bakılabilir.
+
+188
+00:52:28,628 --> 00:52:30,628
+Normalizasyondan sonra...
+
+189
+00:52:35,315 --> 00:52:46,755
+Normalizasyon yapmadığınız zaman şöyle bir durumla karşılaşabiliyorsunuz. Veriniz böyle negatif bölgelerde.
+
+190
+00:52:50,355 --> 00:52:57,695
+Weight matrisi değiştirince tabii sınıflayıcınızın yeri değişiyor.
+
+191
+00:52:58,420 --> 00:53:25,184
+Şurada küçük bir değişiklik de bu aşağılarda kocaman bir değişikliğe denk düşebiliyor. Dolayısıyla weight maddesi çok küçük değişimlerde, weight maddesini az bir değiştirirseniz bile loss, kayıp çok fazla değişiyor. Dolayısıyla bunun optimize etmesi daha zorluyor. Normalize ettikten sonra veri...
+
+192
+00:53:25,184 --> 00:53:43,344
+Biraz daha merkeze yaklaşıyor. Ve yitlerdeki bu küçük değişiklikler, yani bu burada olmuş veya şurada olmuş, birazcık böyle olmuş, birazcık böyle olmuş, daha az sensitiv oluyor.
+
+193
+00:53:43,760 --> 00:54:04,760
+İngeler için
+
+194
+00:54:08,179 --> 00:54:35,159
+DataPro Processing neler olabilir? Buna bakıldığında. Mesela AlexNet'te şunu kullanmışlar. 32x32x3'lük imgeler veri seti var orada. GFR10 veri seti. Bu veri setinin ortalamasını bulmuşlar. Bir ortalama imge oluşmuş.
+
+195
+00:54:35,668 --> 00:55:00,648
+Bunu ne yapıyorsunuz? Eğitimde çıkartıyorsunuz. Sonra bu modeli kullanacaksanız ama bunu unutmamanız gerekiyor. Test sırasında da yine bu imgeyi kullanmanız gerekiyor. Yani test imgesinden bu ortalama imgeyi yine çıkaracaksınız. Aynı işlemleri yapacaksınız ki aynı sonucu bulasınız.
+
+196
+00:55:03,027 --> 00:55:15,947
+VGG.net'te ne yapmışlar? Subtract Per Channel Mean. Her bir kanalın ortalamasını çıkartıyorlarmış.
+
+197
+00:55:19,947 --> 00:55:22,947
+Yani her bir kanalın...
+
+198
+00:55:26,612 --> 00:55:32,092
+Üç kanal olduğunu ifade ediyor herhalde VGGNet'te. Dolayısıyla üç sayı.
+
+199
+00:55:33,811 --> 00:55:43,951
+ResNet'te o kanalın ortalamasını çıkarıp standartına bölüyorlar.
+
+200
+00:55:43,951 --> 00:55:47,951
+Yani kanal dediğimiz biliyorsunuz bir tane imge oluyor.
+
+201
+00:55:50,052 --> 00:55:53,012
+Aradaki imgelerin her birine bir kanal diyoruz. Channel.
+
+202
+00:55:54,387 --> 00:56:05,107
+Bunların bu ara imgeyi olduğu gibi kendi içinde ortalamasını çıkarıyor, standart sapmasına bölüyor tüm piksel değerlerini.
+
+203
+00:56:08,847 --> 00:56:16,107
+PCA ya da whitening yapma pek sık karşılaşılan bir şey değilmiş.
+
+204
+00:56:20,659 --> 00:56:32,500
+Weight Initialization'a bakacak ama buraya kadar sorunuz var mı? Bir ara verelim.
+
+205
+00:56:42,387 --> 00:56:49,168
+9.56 bu. 10.56, 10.56 geçeye kadar ara verelim arkadaşlar.
+
+206
+01:09:14,068 --> 01:09:16,608
+Arkadaşlar, tekrar merhabalar. Sesim geliyor.
+
+207
+01:09:44,851 --> 01:09:46,072
+Sesim geliyor mu arkadaşlar?
+
+208
+01:09:48,851 --> 01:09:49,611
+Geliyor hocam.
+
+209
+01:09:50,771 --> 01:09:52,111
+Geliyor, tamam sağ olun.
+
+210
+01:09:56,051 --> 01:10:05,031
+Neural Network'lerin programlanması, eğitimiyle ilgili ayrıntılara bakıyoruz.
+
+211
+01:10:11,315 --> 01:10:16,775
+Optimize edeceğimiz bu weightlerin nasıl başlatılacağı ile ilgili bir bölüm.
+
+212
+01:10:19,255 --> 01:10:26,456
+Mesela tüm weightleri ve biyazları sıfır olarak başlatırsak ne olur diye bir soru sormuş.
+
+213
+01:10:32,435 --> 01:10:55,536
+Tüm çıkışlar sıfır olur diyor. Tüm gradyanlar da aynı olur. Bir simetri breaking olmaz demiş. Yani bir fikir. Yani tüm W'ları sıfır olarak, B'leri sıfır olarak başlatsak mı? Bu pek iyi bir fikir değil.
+
+214
+01:11:00,819 --> 01:11:17,879
+Küçük rastgele sayılar atayalım. Mesela standart sapması 0.01 olan, ortalaması 0 olan bir Gaussuyan, rastgeleli Gaussuyan ile başlatalım.
+
+215
+01:11:23,252 --> 01:11:47,092
+Python'da da bunu şu şekilde yapabiliyoruz. NumPy, Random, RandN. İstediğimiz input satır sayısı, sütun sayısı. Bunları da standart sapmayı da 0.01 yapmak için bu şekilde çarpmış.
+
+216
+01:11:52,372 --> 01:11:59,532
+Küçük networkler için çalışıyor diyor ama daha derin networkler için problemler oluşturuyormuş.
+
+217
+01:11:59,532 --> 01:12:09,391
+Bu problemleri görmek için şöyle bir program yazıyor.
+
+218
+01:12:20,115 --> 01:12:33,556
+Katmandaki derin öğrenme ağlarının her bir katmanlarındaki aktivasyonların yani Relu'nun verdiği değerlerin istatistiklerine bakıyorlar.
+
+219
+01:12:35,835 --> 01:12:37,996
+Nasıl çalışıyor bu program?
+
+220
+01:12:45,300 --> 01:12:49,819
+Her katmanında 4096 şey var.
+
+221
+01:12:55,828 --> 01:13:19,708
+Değer var. Bunu bu şekilde oluşturuyor Python'da. Yani bu her biri 4096 olan 7 tane birleşeni olan bir dizi oluşturuyor. Python'da hani bu şekilde yaparsanız dizi oluşturuyor size. Her biri bu değere sahip olan.
+
+222
+01:13:20,851 --> 01:13:23,652
+TSI boş bir liste olarak başlattı.
+
+223
+01:13:25,391 --> 01:13:31,412
+X'i normal dağılımdan rastgele değerlerle başlattı.
+
+224
+01:13:32,631 --> 01:13:38,851
+16 satır ve 4096 sütun.
+
+225
+01:13:46,836 --> 01:13:53,136
+Doğrudur değil mi? Satır sütuna attım aslında. Rand'in şeyine bakmak lazım belki de.
+
+226
+01:13:56,500 --> 01:14:03,579
+Yazayım numpy random random diye yazdım.
+
+227
+01:14:03,579 --> 01:14:06,979
+Manüeline gidiyorum şimdi.
+
+228
+01:14:11,347 --> 01:14:15,728
+The dimensions of the returned array must be non-negative.
+
+229
+01:14:15,728 --> 01:14:18,587
+Tamam ama hangisi?
+
+230
+01:14:20,587 --> 01:14:22,127
+Burada bir örnek var.
+
+231
+01:14:23,307 --> 01:14:27,207
+Evet, dediğim gibi ilki satırı, ikincisi sütun sayısını veriyor.
+
+232
+01:14:28,887 --> 01:14:30,087
+Yani bu satır sayısı.
+
+233
+01:14:35,028 --> 01:14:37,028
+Sonra...
+
+234
+01:14:40,627 --> 01:14:55,627
+Ne yaptı burada? Dims bu muydu? Zipin... Şurada ne yaptı?
+
+235
+01:14:59,699 --> 01:15:26,439
+Zip iki diziyi alır, onları yan yana dizilip yeni bir dizi verir size. Yani Dims'in en başından bir sonuncusuna kadar, yani Dims şöyle bir şey ya, 4096, 4096, 4096, 4096.
+
+236
+01:15:29,043 --> 01:15:38,724
+Yedinciyi 4096-4096. Böyle varsayı sayalım.
+
+237
+01:15:45,524 --> 01:15:56,564
+Şunu alıyor. Burada. Burada da şunu alıyor. Benim gözümden kaçan bir şey mi var? Niye böyle bir şey yapıyor bu?
+
+238
+01:16:13,908 --> 01:16:40,968
+Neyse, ne yaptı? Bunlar D-in ve D-out oluyor. Yani giriş ve çıkış boyutları oluyor. O boyutlarda az önce görmüştük 0.01 standart sapmasına sahip bir ortalaması yine 0.
+
+239
+01:16:41,587 --> 01:16:57,887
+Normalde alımdan değerler elde ediyor. Öyle atadı W matrisini. Sonra X ile W'nun dot product'ını aldı. Normalde biz W çarpı X yazıyoruz.
+
+240
+01:17:03,188 --> 01:17:18,528
+Ama buradaki X'in satırları, yani matematiksel olarak yaptığımızda şunu şu şekilde yazmak ne demek? X bir sütun matrisi demek.
+
+241
+01:17:19,528 --> 01:17:28,407
+Ama burada pratikte veri setinin her bir satırı bir gözlem. Dolayısıyla X bir satır matrisi.
+
+242
+01:17:30,899 --> 01:17:44,819
+Dolayısıyla pratikte X çarpı şu W'nun transpozunu alıyor anladığım kadarıyla. Aynı hesaba gelmiş oluyor.
+
+243
+01:17:47,519 --> 01:17:54,179
+Dolayısıyla ne yaptı? Bir yazı da boş verdi şimdilik. Burada sadece bir istatistikler falan çıkaracak.
+
+244
+01:17:55,479 --> 01:17:58,299
+Elde ettiği çıktığı ne yaptı?
+
+245
+01:17:59,155 --> 01:18:11,435
+Hs'yi birleştirdi. Yani bir çıktıları bir noktaya kaydetti. Döngünün bir sonrasında bunu tekrar yaptı.
+
+246
+01:18:14,435 --> 01:18:22,855
+Hep aynı x mi çıkıyor? x değişmiyor mu hiç? Ha değişiyor. Tamam x değişiyor.
+
+247
+01:18:24,595 --> 01:18:40,835
+Dolayısıyla, ikisi nasıl gidiyor? Tanıyıç, Nani Nertisi var bu arada burada. Yani Relu değil. Tanıyıce veriyor.
+
+248
+01:18:45,652 --> 01:18:47,192
+Altı katmam var.
+
+249
+01:18:48,471 --> 01:18:49,228
+X
+
+250
+01:18:54,452 --> 01:19:05,452
+Bu şekilde devam ediyor. Ara katmanlarda oluşan X'leri de ne yapmak istemiş? Şu HS içerisine koyup sonra istatistiklerine bakmak istiyor.
+
+251
+01:19:05,452 --> 01:19:09,452
+Evet, yani koddan benim anladığım bu.
+
+252
+01:19:23,796 --> 01:19:28,996
+Bunu siz kendiniz de yazıp bence bir bakın güzel olur.
+
+253
+01:19:30,996 --> 01:19:41,516
+Şimdi bunların istatistiklerine bakıyor. Layer 1'deki HS'nin o girişi veya X.
+
+254
+01:19:54,420 --> 01:20:17,119
+İlk çıktı da ortalama 0, standart yapma 0.49. İkinci katmanda ortalama 0, standart yapma 0.29. Sonrakinde standart yapma 0.18, 0.11, 0.07, 0.05. Ne oluyor? Bu ne demek? Ortalamada hep 0.
+
+255
+01:20:21,876 --> 01:20:43,416
+Ara katman değerleri x'ler nasıl değerler alıyor arkadaşlar? Sıfıra doğru evriliyor. Ortalaması sıfır ve standart sapması da gittikçe küçülüyor. Ne demek? Değerleri daha çok sıfıra yakın hale gelmeye başlıyor.
+
+256
+01:20:44,416 --> 01:20:48,876
+Biz belki eksi bir ile bir arasında değerler olarak inişlaz ediyoruz.
+
+257
+01:20:49,908 --> 01:20:56,548
+Ama Network ne yapıyor?
+
+258
+01:21:00,548 --> 01:21:04,548
+Veitleri bu şekilde başlattığınız zaman...
+
+259
+01:21:16,884 --> 01:21:21,404
+Bu önemli bir nokta bence. Bunu da not alın.
+
+260
+01:21:23,963 --> 01:21:35,484
+Ne diyor? All Activations Tend to Zero for Deeper Network Layers. Evet, aktivasyonlar bu çıktılar. Yani şu çarpımlar sıfıra doğru gidiyor.
+
+261
+01:21:37,344 --> 01:21:39,344
+Gradiyanlar neye benziyor diyor.
+
+262
+01:21:46,868 --> 01:21:55,188
+Gradiyanlar da sıfır. Dolayısıyla öğrenim olmuyor diyor.
+
+263
+01:22:14,771 --> 01:22:20,771
+Mesela şurada bir yerde, X'ler çok küçük.
+
+264
+01:22:27,475 --> 01:22:35,556
+Dolayısıyla gradiyanlar da düşük olacaktır diyor. Burada tabii gradiyan hesabı yapmamış.
+
+265
+01:22:47,220 --> 01:23:03,700
+Daha büyük bir şey kullansak, fikri var başlangıçta. Mesela 0.0 öncekinde kaçtı? 1'di. 0.05'i bu sefer kullandı.
+
+266
+01:23:03,700 --> 01:23:09,700
+Bu sefer de beta dağılımı gibi biraz...
+
+267
+01:23:14,452 --> 01:23:28,811
+Tuhaf bir durum elde ediyor. Yani burada tam doğru sayıyı bulmak gerekiyor. 0.01 ya da 0.05. Burada da yine öğrenme yok diyor.
+
+268
+01:23:30,811 --> 01:23:38,971
+Burada tavsiye ettiği değer atama yöntemi, Zavier Initialization denilen bir yöntem.
+
+269
+01:23:41,971 --> 01:23:59,172
+Zavier Initialization'a biraz bakalım. Genel mantık standart sapmayı nasıl hesap edeceğiz? O 0.001 ya da 0.005 olan nokta şuradaydı.
+
+270
+01:24:10,228 --> 01:24:29,708
+Bir bölü, D'nin yani giriş input sayısının kolon sayısı yani. Kaç kolon, kaç tane feature'ınız var? Feature sayısına bağlı.
+
+271
+01:24:37,460 --> 01:24:38,319
+Birşey.
+
+272
+01:24:42,195 --> 01:24:45,956
+Veyt atama, veyt başlatma yöntemi.
+
+273
+01:24:47,956 --> 01:24:51,195
+Ve gördüğünüz gibi...
+
+274
+01:24:58,036 --> 01:25:15,576
+2010'larda yayınlanan bir şey bu. Paper'dan alınmış. Bu şekilde weightler daha uzun süre, daha geniş kalıyor.
+
+275
+01:25:25,427 --> 01:25:39,647
+Bu D'in yerine, kernelinizin karesi çarpı input kanalı diyor. Yani üç boyutlu kernel büyüklüğü olarak anlıyorum ben.
+
+276
+01:25:42,528 --> 01:25:48,647
+Yani 5 çarpı 5'lik konvolüsyon kullanacaksanız ve...
+
+277
+01:25:49,332 --> 01:26:01,332
+RGB resminiz varsa, input cannelları 3'tür. 3x5x5d imbu oluyor diyor. Bu formülde.
+
+278
+01:26:05,332 --> 01:26:12,332
+Nasıl, nereden geliniyor burada? Zavier Initialization nereden çıkıyor?
+
+279
+01:26:14,463 --> 01:26:26,203
+yapmaya çalışıyor. Yani girişte değerlerdeki var yansın, çıkıştaki değerlerin var yansına eşit olmasını isteyen bir yaklaşım.
+
+280
+01:26:41,140 --> 01:26:47,539
+Çıkış eşittir W çarpı x. Her iki tarafın varyansını aldı.
+
+281
+01:26:56,467 --> 01:26:59,407
+İçerinin varyansı üzerinde düşündü.
+
+282
+01:27:11,859 --> 01:27:15,840
+Bu şekilde. Şurada aslında D'nin karesi olması lazım bence.
+
+283
+01:27:15,840 --> 01:27:18,340
+Çünkü
+
+284
+01:27:31,220 --> 01:27:53,720
+Bir Varyans'ta sabit sayılar Varyans'ın dışına çıkarken karesiyle alınır diye düşünüyorum ben. Yanlış mı düşünüyorum? Şuradan y eşittir.
+
+285
+01:27:58,068 --> 01:28:07,248
+D in çarpı x. Ama bir toplama var tabi.
+
+286
+01:28:17,011 --> 01:28:26,251
+Burada aslında karesi olması lazımdı düşünüyorum ama burada da slide'da da şimdi D'in değil de D'nin kare kökü var.
+
+287
+01:28:33,268 --> 01:28:38,268
+Şu hesaba göre şunu görüyorlar. Eğer varyansı bir bölü değin alırsak...
+
+288
+01:28:45,652 --> 01:28:55,731
+Giriş ve çıkışın varyansı birbirine eşit oluyor.
+
+289
+01:29:01,524 --> 01:29:11,324
+Burada yalnız bir de ne var? Relu çok kullanıyoruz biz. Relu'da...
+
+290
+01:29:14,452 --> 01:29:31,452
+Negatif değerleri sıfırlıyoruz. Çünkü normal Xavier sıfır merkezli bir aktivasyon fonksiyonuna göre yapılmış, düşünülmüş.
+
+291
+01:29:41,811 --> 01:30:03,031
+Yine az önceki özelliği muhafaza etmek için, yani girişin varyansı çıkışın varyansına eşit olsun düşüncesi. Bunun için 2015'te yayınlanan bir paperda verilmiş bu.
+
+292
+01:30:09,300 --> 01:30:14,800
+Buna Chimink MS Array Initialization deniliyor.
+
+293
+01:30:32,243 --> 01:30:46,243
+Residual Network'lerde nasıl yapılırsa, nasıl yapılıyor bu işler? MSRA ile az önce öğrendiğimiz Xavier'in Relo için olan versiyonu.
+
+294
+01:30:50,068 --> 01:31:07,927
+Residual Networklerde çıkışa bir de şu X geliyor. Bu nedenle çıkışın X'i girişin X'inden daha büyük. Her bir blokta varyans büyüyor bu nedenle diyor.
+
+295
+01:31:12,807 --> 01:31:14,028
+Ne demiş?
+
+296
+01:31:16,595 --> 01:31:30,215
+Bu da 2019'daki bir makale. İlk konvolution'u MSRI ile yani şuradaki veyitleri MSRI ile.
+
+297
+01:31:34,579 --> 01:31:54,479
+Başlatıyor. Sekit konvoloşunu sıfırla başlatıyor. Yani buradaki weightlerde w eşittir sıfır. Böyle yaparsak diyor, girişteki varyansla çıkıştaki varyans birbirine eşit oluyormuş.
+
+298
+01:32:02,576 --> 01:32:25,775
+Girişteki ve çıkıştaki varyans, değerlerin varyansı eşit mi? Genel olarak özellikle yeni bir, demek ki neural network tasarlamak istiyorsanız mimarisi, bunu göz önünde bulundurup varyansı sabit tutacak şekilde atamalar yapmanız gerekiyor.
+
+299
+01:32:32,500 --> 01:32:48,619
+Düzgün nasıl başlatılır ve eğitler? Bu baya bir araştırma alanıymış. 2010'dan beri gelen yayınlar var burada. 2019'da en son yayın koymuş.
+
+300
+01:32:54,739 --> 01:33:21,199
+All you need is a good in it diyor. İyi bir başlangıç. Bu da araştırma için aranızda arkadaşlarınız, sizin aranızda, tabii master doktora yapıyorsunuz, konu olarak veya konunun bir parçasında bakacağınız bir şey olarak nasıl initialize edilebilir neural networklerin ve itleri?
+
+301
+01:33:22,484 --> 01:33:24,084
+Buna bakabilirsiniz.
+
+302
+01:33:31,604 --> 01:33:34,412
+Bir başka şey...
+
+303
+01:33:38,355 --> 01:33:57,415
+Modeliniz şimdi eğitilebiliyor ama overfit oluyor demiş. Overfit nedir arkadaşlar? Şudur. Eğitim setinde yapay zekanız, modeliniz çok güzel sonuçlar veriyor.
+
+304
+01:34:04,884 --> 01:34:30,083
+Doğruluk değerleri elde ediyorsunuz eğitim setinde. Ama bir de Validation seti kullanılıyor. Normalde set şöyle bölünüyor. Setin mesela belirli bir kısmı test için ayrılıyor. Belirli bir kısmı training için.
+
+305
+01:34:32,083 --> 01:34:35,103
+Belirli bir kısmı da validation için ayrılıyor.
+
+306
+01:34:41,300 --> 01:34:52,380
+Fikir şu, Validation Set'i birkaç farklı alan için kullanıldığını gördüm ben. Bir, hiperparametre optimizasyonu için kullanılıyor.
+
+307
+01:34:59,347 --> 01:35:17,587
+Yani diyelim ki bir sürü hiperparametre var. Mesela bir relüların bazılarında bir alfa vardı. Bu alfanın optimal değeri ne olmalı? Veya işte network'ümdeki katman sayısı ne olmalı? Falan gibi.
+
+308
+01:35:26,355 --> 01:35:51,095
+Validation Set kullanılıyor. Bir de şunun için kullanılabiliyor. Training yapıyorsun, Validation Setteki sonucunu görüyorsun. Eğer Training Setteki başarı artıyorsa ama Validation Set ile arasındaki o fark gittikçe açılıyorsa
+
+309
+01:35:53,171 --> 01:36:17,251
+Bu ne demek? Network'ünüz veriyi ezberliyor. Yeni verilerde genelleşemiyor. Yeni verilerde iyi sonuçlar veremiyor. Buna overfitting deniliyor makine öğrenmesinde. Buradaki grafikler çok kullanılıyor.
+
+310
+01:36:19,380 --> 01:36:21,380
+İki grafik görüyoruz burada.
+
+311
+01:36:27,731 --> 01:36:52,551
+Bu train loss yani eğitim setinin loss'unun grafiği. Burada bir scatter plot var. Yani her bir eğitim setinin sonucu ne yapılmış? Bir nokta ile her bir eğitim training loss'u, her bir epokta.
+
+312
+01:36:53,140 --> 01:37:09,140
+Batch Training yapıyoruz ya, mini batchlerle. Her bir mini batch'in loss'unda buraya ne yapıyoruz? Loss'u koyuyoruz. Bu bir Scatter Plot.
+
+313
+01:37:20,180 --> 01:37:30,180
+Ortalama alıyoruz. Yani diyelim ki son 10 mini-batch'teki şeyi...
+
+314
+01:37:36,051 --> 01:37:51,451
+Accuracy'yi Training ve Validation Set için ne yapıyoruz? Son N tane Mini 5'teki Accuracy'nin ortalamasını alıp ne yapıyoruz?
+
+315
+01:38:00,979 --> 01:38:12,579
+Cloth ediyoruz diye düşünüyorum ama emin değilim şimdi. Şurada bu grafiklerle ilgili daha önce çalışmış olan var mı? Şu train loss grafiği nasıl elde ediliyor arkadaşlar?
+
+316
+01:38:47,956 --> 01:39:10,275
+Lost Curves, nasıl? Tabii farklı şeyler var. Farklı praktikerler, farklı uygulayıcılar, farklı grafikler çizdirebilir ama Justin bunları bu ikisini devamlı çizdiriyorum ben diyor.
+
+317
+01:39:24,564 --> 01:39:38,503
+Burada şuradan şaşırdım. Şimdi mesela şu değer için, mesela 10.000 değerine bakalım. 10.000 değeri için birden fazla nokta mı var yoksa?
+
+318
+01:39:40,644 --> 01:39:45,304
+Mesela 10.000 bir için de bir nokta olduğu için de mi?
+
+319
+01:39:48,916 --> 01:40:14,876
+Noktalar üst üste gelmiş. Yani bu birden fazla çalıştırmanın ortalaması üst üste konulmuş bir grafik mi? Oradan biraz şüphelendim ama şu tarafla da ilişkilendirirsek burada da 20 bin var, burada da 20 bin var. Sanırım tekrar tekrar, ha işte oradan biraz şey yaptım. Tekrar tekrar çalıştırmanın ortalamaları mı var burada?
+
+320
+01:40:16,532 --> 01:40:17,811
+Öğ...
+
+321
+01:40:27,699 --> 01:40:43,920
+Bunlara genel olarak bu tarz şeylere, grafiklere bakılıyor arkadaşlar. Özellikle şu accuracy grafiği ve train loss grafiği zaman içinde ne yapmanız lazım? Tekrar tekrar çalıştırma olduğunu düşünmüyorum.
+
+322
+01:40:55,252 --> 01:41:13,252
+Bu şekilde artıyorsa, bir overfitting var ve bir regularization uygulanması gerekiyor. Regularization, overfitting'i engellemek için yapılan bir kısım uygulamalar.
+
+323
+01:41:27,123 --> 01:41:32,123
+Bu uygulamalardan bir tanesi, şuradaki loss fonksiyonunuza...
+
+324
+01:41:38,163 --> 01:41:40,984
+Diyelim ki şu normal loss fonksiyonumuz.
+
+325
+01:41:46,547 --> 01:42:04,227
+Bir tane daha şey ekliyorsunuz, terim ekliyorsunuz. Bu terim, weightlerin bir regularization fonksiyonu ve bir katsayıdan oluşuyor.
+
+326
+01:42:09,140 --> 01:42:21,140
+Regularization fonksiyonu olarak L2 Regularization'dan bahsediliyor. Yani yine weightlerin tüm değerlerinin karelerini alıp topluyorsunuz.
+
+327
+01:42:23,559 --> 01:42:36,620
+Buna weight decay de deniliyormuş. L1 Regularization'da yine weightlerin tüm değerlerinin mutlak değerlerini alıyorsunuz. Negatifleri pozitif yapıyorsunuz. Sonra topluyorsunuz.
+
+328
+01:42:37,555 --> 01:42:53,795
+Elastik net L1 ile L2'nin toplamı diyor. Yani bu var direkt şunun da bir beta ile çarpılıp ağırlıklandırıp eklenmesi.
+
+329
+01:42:59,347 --> 01:43:06,467
+Bu regularization, özellikle weight decay, duyuyorum bunu, çok sıkça kullanılan bir şey.
+
+330
+01:43:13,076 --> 01:43:38,155
+Bir başka regularization yöntemi dropout diye geçiyor. Her bir forward pasta, yani her bir çıkış hesabında bazı nöronların çıkışlarını sıfıra işitliyorsunuz rastgele.
+
+331
+01:43:39,636 --> 01:44:00,775
+Mesela bu dropping yani dışarıda bırakma veya atma diyebiliriz. Düşürme desek şimdi düşürme olasılığı değil de drop out, dışta kalma gibi.
+
+332
+01:44:00,775 --> 01:44:05,116
+Dışta kalma olasılığı, belli bir dışta kalma olasılığı.
+
+333
+01:44:05,779 --> 01:44:20,779
+ile bunu yapıyoruz. 05 çok kullanılan bir şey. Yani ne demek? Yaklaşık olarak yarısı kullanılmıyor. Her bir Forward Pass'ta.
+
+334
+01:44:24,779 --> 01:44:32,779
+Bu Full Network diyelim ki. Full sonuç hesap ederken, burası Forward Pass.
+
+335
+01:44:33,332 --> 01:44:48,132
+Ne yapıyoruz? Her katmanda bazı nöronları ne yapıyoruz? Susturuyoruz. Şu çarpıyla gösterilen nöronları susturuyoruz. Bunları kullanmıyoruz.
+
+336
+01:44:52,724 --> 01:44:56,684
+Burada ilgili bir kodu vermiş.
+
+337
+01:45:01,395 --> 01:45:03,395
+Olasılığı 0 almış.
+
+338
+01:45:07,395 --> 01:45:10,395
+Bir eğitim adımı nasıl alıyor?
+
+339
+01:45:13,395 --> 01:45:16,395
+X girişimiz var diyelim ki.
+
+340
+01:45:17,395 --> 01:45:21,395
+W1 ile X'in dat product'ını almış.
+
+341
+01:45:22,395 --> 01:45:24,395
+O katmandaki bir yazı da toplamış.
+
+342
+01:45:26,395 --> 01:45:28,395
+Maksimumunu almış.
+
+343
+01:45:29,140 --> 01:45:50,780
+Relu yani, H1 çıkışını elde etmiş. Şimdi çıkışların bir kısmını yok edecek. Yani bu dropout nasıl uygulanabilir onu anlatıyor. Çıkışların bir kısmını yok edebilmek için bir maske oluşturuyor.
+
+344
+01:45:57,332 --> 01:46:22,832
+0 ile 1 arası değerler döndürüyor. Bu değer sizin olasılığınızdan, burada 0.5 mesela olasılık. O olasılıktan küçük ise ne yapıyoruz? Pozitif değer alıyor. Şu eğer küçük değilse negatif değer alıyor. Bu bir maskesinin içerisindeki.
+
+345
+01:46:23,539 --> 01:46:33,139
+Bu tarz programlama çok iyi bir programlama tarzı. Bunu kullanmanız lazım.
+
+346
+01:46:34,420 --> 01:46:36,220
+Günümüz modern Python'unda.
+
+347
+01:46:37,220 --> 01:46:41,260
+Yani bunu bir döngü içinde yapmamanız lazım. Böyle bir maske oluşturuyorsunuz.
+
+348
+01:46:41,260 --> 01:46:47,420
+Hani iki tane iç içe for döngüsü. Tüm pikselleri dolaşayım.
+
+349
+01:46:51,315 --> 01:46:59,555
+Olasılıkla sıfır vereyim değil de bir maske hazırlayıp maske ile iş yapma.
+
+350
+01:47:01,555 --> 01:47:08,855
+Sonra ne yaptı? Çıkışı hazırladığımız maske ile ne yaptık? Çarptık.
+
+351
+01:47:08,855 --> 01:47:10,855
+Dolayısıyla...
+
+352
+01:47:10,855 --> 01:47:12,535
+Pardon.
+
+353
+01:47:17,684 --> 01:47:40,584
+Dolayısıyla şuradaki şeyde rastgele fonksiyonunun döndürdüğü değerler 0.5'ten küçük ise kalıyor. 0.5'ten daha büyükse ne yapıyor? Gidiyor.
+
+354
+01:47:44,212 --> 01:47:49,532
+Belirli bir olasılıkla değer seçme için güzel bir programlama örneği oldu.
+
+355
+01:47:52,272 --> 01:47:56,292
+Çarpım yapınca tabii sıfırlılar gidiyor, birliler kalıyor.
+
+356
+01:47:57,492 --> 01:48:00,012
+Aynı şeyi ikinci katman içinde yaptı.
+
+357
+01:48:00,812 --> 01:48:06,152
+Yani bu birinci çıkışları ikinci katmanda bir çıkış olarak almıştı.
+
+358
+01:48:10,771 --> 01:48:16,832
+Gördüğünüz gibi burada maksimum alma yok. Bir linear katmanla bir çıkış aldı.
+
+359
+01:48:29,235 --> 01:48:34,056
+Yine bununla ilgili introduce edildiği paper'ı vermiş.
+
+360
+01:48:37,587 --> 01:48:42,647
+Neden bu yararlı olabilir? Biraz tuhaf bir şey.
+
+361
+01:48:48,243 --> 01:49:02,923
+Network'ün Redundant bir representation diyor. Redundant ne demek? Birden fazla şekilde.
+
+362
+01:49:09,332 --> 01:49:23,552
+Kaydı bulunan, yani aynı şekili birkaç farklı yerde öğreniyor gibi. Bu da özelliklerin beraber adaptasyonunu engelliyor şeklinde bir şey var.
+
+363
+01:49:35,475 --> 01:50:00,015
+Büyük bir aslında dropout model ensemblu eğitiyor. Yani ensemblu yöntemleri var. Mesela diyorsunuz ki ben bu eğitim setinde 10 farklı modelimi eğiteceğim. Sonra gelen bir test imgesini 10 modele de vereceğim.
+
+364
+01:50:01,235 --> 01:50:18,856
+Bu 10 modelin çıktılarını bir şekilde birleştireceğim. Bu işte ne olabilir? Mesela en fazla hangi çıktı diyorlarsa onu kabul edebilirsiniz sınıflamada veyahut işte regresyonda bunları toplayabilirsiniz gibi.
+
+365
+01:50:19,356 --> 01:50:22,176
+Ensemble bu tarz yöntemlere deniliyor.
+
+366
+01:50:29,152 --> 01:50:52,012
+Dropout ettiniz bunları. Kalanlar bir network. Bir sonrakinde bunu dropout ettiniz, bunu dropout etmediniz. Farklı bir network. Bu şekilde çok sayıda network içeren bir ensemble'ı eğitiyor şekilde yorumlamalar var.
+
+367
+01:51:01,619 --> 01:51:03,619
+Burada neyi anlatmış emin değilim.
+
+368
+01:51:05,460 --> 01:51:13,659
+Tabi burada ses zamanında nasıl yapacağız sorusu var. Çünkü eğitim zamanında ne yapıyorsunuz?
+
+369
+01:51:19,283 --> 01:51:24,264
+Rastgele network'ün bir kısmını kullanmıyorsunuz.
+
+370
+01:51:29,427 --> 01:51:49,207
+Dolayısıyla ne var bir kere? Bizim output'umuz rastgele oluyor. Yani input girişiniz, output çıkışınız, sanki bir rastgele bir maske kullanmışsınız gibi bir durum var.
+
+371
+01:51:55,252 --> 01:52:20,552
+Ortalamanız gerekiyor diyor. Yani nasıl yapacağız bunu? Ne demek bu? Z için bir integral al. Yani beklenen değer buluş bu. Sürekli olasılıkta beklenen değer nedir? Fonksiyonu.
+
+372
+01:52:21,652 --> 01:52:45,291
+Olasılığıyla çarparsınız ve integralini alırsınız. Bu integrali bir şekilde yakınsamak istiyoruz. Yani böyle bir integral almadan benzer bir şey yapmak istiyoruz. Nasıl yapabiliriz diye düşünüldüğünde tek bir nörona bakıyor.
+
+373
+01:52:49,908 --> 01:53:00,387
+Bu nöron için W1x artı W2y'yi kullanıyoruz toplam olarak.
+
+374
+01:53:02,868 --> 01:53:10,748
+O zaman diyor eğitim zamanında ne olabilir?
+
+375
+01:53:12,828 --> 01:53:15,208
+Yani iki girişli bir nöron için düşünelim.
+
+376
+01:53:18,868 --> 01:53:29,088
+4 şeyin olasılığı var. Tabi burada 0.5, p eşittir 0.5 kullandığımız var sayılıyor.
+
+377
+01:53:29,708 --> 01:53:45,668
+4 şeyin olasılığı var. 1 bölü 4 olasılıkla bu iki nöronun hiçbiri de dropout olmaz. 1 bölü 4 olasılıkla bu out olur.
+
+378
+01:53:46,355 --> 01:54:02,595
+1 bölü 4 olasılıkla her ikisi de out olur. 1 bölü 4 olasılıkla sadece bu out olur. Bunları topladığı zaman şu çıkıyor. Normal çarpımı yap, ikiye böl.
+
+379
+01:54:11,220 --> 01:54:22,680
+Dolayısıyla training zamanında esasen biz bu nöronun çıktısının yarısını ortalamada alıyoruz.
+
+380
+01:54:22,680 --> 01:54:35,520
+Dolayısıyla test zamanında da o zaman bu dropout olasılığıyla çıktığı çarpıyoruz.
+
+381
+01:54:38,131 --> 01:55:02,791
+Bununla ilgili kod da vermiş. Ne yapacağız? Mesela test zamanı bu. Predic diyor artık. H1'i diyelim ki iki katmanlı bir network az önceki gibi. Ne yaptı? İşte elimizdeki weightlerle çarptı. Biraz da topladı. Maksimumunu aldı relü'dan. Sonra ne yaptı?
+
+382
+01:55:05,108 --> 01:55:06,387
+Olasılıkla
+
+383
+01:55:06,908 --> 01:55:07,927
+çarpıyor.
+
+384
+01:55:30,387 --> 01:55:33,948
+Biraz ileriye bakalım ne anlatıyor burada. Tam emin olamadım.
+
+385
+01:55:47,123 --> 01:55:54,323
+Şimdi bu olasılıkla çarpmayı farklı şekillerde yapabiliyoruz.
+
+386
+01:55:57,323 --> 01:55:58,404
+Ne diyor?
+
+387
+01:55:58,543 --> 01:56:00,844
+At test time, all neurons are active.
+
+388
+01:56:01,043 --> 01:56:05,884
+Always we must scale activation so that for each neuron,
+
+389
+01:56:07,344 --> 01:56:11,123
+her bir neuronun,
+
+390
+01:56:14,484 --> 01:56:37,804
+Test zamanındaki çıkışı, eğitim zamanındaki beklenen çıkışa eşit olmalı. Dolayısıyla burada ne yaptı? Yarıya böldü. Çünkü treningde de yarıya bölmüş oluyorduk yarısını attığımız için.
+
+391
+01:56:40,467 --> 01:56:42,027
+Yani P0.5
+
+392
+01:56:46,163 --> 01:57:03,503
+Dolayısıyla bir özet verdi. Şöyle bir şey yapılabilir. Az önceki kod bu. Bir değişiklik yok. Dropout'u bu şekilde bir maske yardımıyla yapıyoruz.
+
+393
+01:57:13,967 --> 01:57:36,487
+Yani yarısını attıysak, testin çıktısını da yarıya bölerek scaling yapıyoruz. Dropout özeti. Şu tarz inverted dropout denilen bir şey daha da sık diyor. Burada çarpmak yerine şurada bölüyor.
+
+394
+01:57:43,380 --> 01:58:08,100
+Çünkü değerlerin yarısını attık ya şurada. Şimdi burada da 0.5'e bölmek demek ne demek? 2 ile çarpmak demektir. Dolayısıyla çıkışı burada hemen değerlerin yarısını attığımız için çarpı 2 gibi düşünebilirsiniz. Burada 2 ile çarpıyor.
+
+395
+01:58:08,851 --> 01:58:25,491
+Bunu eğitim zamanında yaptığı için test zamanında bu sefer direkt kullanabiliyor. Tekrar bir odropatı düşünme gereği kalmıyor. Buna daha sıklıkla görülüyor diyor.
+
+396
+01:58:36,467 --> 01:58:57,107
+AlexNet, VGG, Bunlar Fully Connected Layer'lara sahipler. Hatırlar mısınız bilmiyorum. Yani tüm nöronlar, karşı taraftaki tüm nöronlarla bağlı. Buralarda dropout kullanılıyor diyor.
+
+397
+01:59:02,195 --> 01:59:09,695
+Kullanılıp kullanılmamasına bağlı olarak bir grafik var burada.
+
+398
+01:59:11,695 --> 01:59:14,155
+VGG kullanmış.
+
+399
+01:59:18,644 --> 01:59:20,023
+BGG, değil mi?
+
+400
+01:59:23,023 --> 01:59:24,563
+AlexNet.
+
+401
+01:59:29,427 --> 01:59:42,227
+Sanırım AlexNet için kullanmış kullanmamış demiyor şu anda. Ama genelde şuralarda kullanılıyor. Burası neresi? İşte Full Connected Layer.
+
+402
+01:59:42,227 --> 01:59:45,827
+Buralarda kullanılıyor.
+
+403
+01:59:45,827 --> 01:59:53,827
+Sonraki mimariler mesela GoogleNet, ResNet.
+
+404
+01:59:57,555 --> 02:00:15,395
+Fully Connected yerine hatırlarsanız işlemi hızlandırmak için bu son katmanlarda global ortalama pooling'i kullanıyorlar. Dolayısıyla Fully Connected Layer yok.
+
+405
+02:00:15,923 --> 02:00:34,403
+Bunlar Dropout kullanmıyor. Yani ResNet, GoogleNet Dropout kullanmıyor. Dolayısıyla biraz şu anda popüleritesini yitirmiş diyebiliriz. Ama Fully Connected bir layer kullanacaksanız bir şekilde o zaman Dropout önemli bir araç.
+
+406
+02:00:39,264 --> 02:00:41,384
+Bakalım nereye gidiyor bu slide.
+
+407
+02:00:43,764 --> 02:00:51,304
+Data Augmentation'a gelecek. Oraya şu slide'ı da yapalım. Data Augmentation'dan önce ara verelim.
+
+408
+02:00:54,164 --> 02:01:08,304
+Training'de, yani genel pattern regularization için genel yaklaşım ne? Training'de bir şekilde bir rastgelelik ekliyorsunuz.
+
+409
+02:01:14,771 --> 02:01:21,771
+Mesela işte Dropout'ta rastgele şeyleri atıyorsunuz.
+
+410
+02:01:30,739 --> 02:01:42,739
+Testing'de de bu yaptığınız normalizasyonu, rastgeleliği ortalama ile ortalamasını alıyorsunuz.
+
+411
+02:01:45,739 --> 02:01:52,739
+ResNet ve daha sonrakinde Dropout kullanılmıyor ama
+
+412
+02:01:56,627 --> 02:02:16,728
+regularization yani weight decay. Yani loss fonksiyonuna bir weight ekliyorduk. Ve bu R'de neydi? Ve i'lerin karelerinin toplamıydı. Mesela L2'de.
+
+413
+02:02:17,332 --> 02:02:24,692
+Bu kullanılıyor. Bir de bug normalization kullanılıyor. Bug normalization'ı geçen derslerde anlatmıştık.
+
+414
+02:02:31,764 --> 02:02:39,963
+Farklı batch normalization yaklaşımları var ama genel olarak o mini batch içerisinde ne yapılıyor?
+
+415
+02:02:41,243 --> 02:02:56,083
+Min sıfır gibi bir şey. Standart sapma da, standart sapmaya bölerek, standart sapma da yaklaşık bire yakın bir şey yapılıyor.
+
+416
+02:02:56,340 --> 02:03:09,760
+Ama yakın diyorum çünkü önce bu hale getiriliyor, sonra bazı öğrenilen parametrelerle tekrar bunlar çarpılıyor. Yani network'ün birazcık sıfırdan ve birden uzaklaşmasına da izin veriliyor.
+
+417
+02:03:22,260 --> 02:03:26,400
+Lokal kontrast normalizasyonu var mesela. O tarz şeyler yapılıyor.
+
+418
+02:03:30,131 --> 02:03:50,711
+Yani şey çok standart bir normalizasyon uygulanması, 5 normalizasyon bir şekilde ve bir L2 gibi bir weight decay denilen şeyin uygulanması çok standart. Onları uygulamanız gerekiyor.
+
+419
+02:03:52,711 --> 02:03:57,131
+Data Augmentation'dan bahsedecek yine bir regularization olarak.
+
+420
+02:03:57,939 --> 02:04:06,099
+Ama ondan önce bir ara verelim. Bu kısımla ilgili bir sormak istediğiniz bir şeyler var mı?
+
+421
+02:04:11,796 --> 02:04:20,576
+Yok. O zaman 10 dakika. Benim saatime göre şu anda 3 geçiyor. Yine bir 10 dakika kadar ara verelim arkadaşlar.
+
+422
+02:14:02,484 --> 02:14:04,804
+Merhabalar, siz geliyor mu?
+
+423
+02:14:16,051 --> 02:14:17,211
+Geliyor hocam sesin.
+
+424
+02:14:18,271 --> 02:14:19,451
+Peki, teşekkürler.
+
+425
+02:14:23,071 --> 02:14:25,931
+Data Augmentation'a bakıyoruz.
+
+426
+02:14:25,931 --> 02:14:31,411
+Biri Augment demek iyileşten mi?
+
+427
+02:14:34,691 --> 02:14:36,931
+Ya da çoğaltma mı?
+
+428
+02:14:42,739 --> 02:14:47,739
+Türkçesi neymiş? Büyütme diyor. Veri büyütme.
+
+429
+02:14:59,667 --> 02:15:17,868
+Normalde ne yapıyoruz? Sınıfını veriyoruz. Label'ı veriyoruz. Label'ı işte yapay zekamıza veriyoruz. Bunlar sayesinde loss'u elde ediyoruz.
+
+430
+02:15:23,475 --> 02:15:36,915
+Orjinal verinin kendisi olduğu gibi ek olarak bir kısım buna yaptığınız transformasyonları da kullanarak veri miktarınızı artırıyorsunuz.
+
+431
+02:15:36,915 --> 02:15:46,015
+Zaten CNN gibi yapay zekalar veriye aç. Bir de bu biraz daha ne yapıyor?
+
+432
+02:15:48,595 --> 02:16:13,355
+Daha farklı verilerle eğitmiş olduğunuz için network'ünüz daha iyi bir genelleme yapabiliyor. Mesela burada çok basit bir şey. Kediyi sağdan sola döndürmüş veya biraz parlaklığını değiştirmiş, kontrastını değiştirmiş veya ne yapabilir? Birazcık rotasyona sokabilir bu imgeyi.
+
+433
+02:16:21,235 --> 02:16:32,515
+Burada mesela örnekler, az önceki gibi horizontal flip. Yani şurada sağdan sola döndürme. Yatayda döndürme.
+
+434
+02:16:34,095 --> 02:16:41,135
+Çünkü insanlar bunu gördüğü zaman kedi olduğunu biliyorsa, bunu gördüğünde de kedi olduğunu bilir.
+
+435
+02:16:47,156 --> 02:17:02,956
+Test zamanında orijinal kedinin rastgele bölgelerini kesiyoruz. Yine kedi olarak eğitime sokuyoruz. Çünkü bir insan sadece bu alt tarafı bile görse bunun bir kedi olduğunu bilir.
+
+436
+02:17:06,156 --> 02:17:09,036
+Mesela bu ResNet'te yapılıyormuş.
+
+437
+02:17:11,456 --> 02:17:12,636
+Ne diyor?
+
+438
+02:17:15,507 --> 02:17:31,047
+Rastgele bir L seç diyor. 256 ile 480 arasında. Kısa yönü L olacak şekilde imgeyi resize et diyor.
+
+439
+02:17:32,887 --> 02:17:36,427
+İmgenin bir de resizingini de yapılıyor mesela. Sonra...
+
+440
+02:17:40,435 --> 02:17:59,095
+Rastgele 244'e 244'lük bir peçi oradan seçiyor. Bu L sanırım daha büyük olabilir. Dolayısıyla önce imgeyi bir büyütüp sonra içinden rastgele bir bölüm alıyor olabilirler.
+
+441
+02:18:04,788 --> 02:18:08,927
+Test zamanında da ne yapıyor?
+
+442
+02:18:15,603 --> 02:18:40,903
+Test imgenizi ne yapıyorsunuz? Scale ediyorsunuz. İmgeyi 5 scale'da scale ediyorsunuz. Her bir boyut için 10 tane 224x224'lük crop kullanıyorsunuz.
+
+443
+02:18:41,523 --> 02:18:58,664
+Dört tane korner artı merkez artı sağdan sola döndürme. Sonra bütün bunları sanırım test zamanında teste veriyorsunuz. Sonra bunların ortalamasını alıyorsunuz cevap olarak.
+
+444
+02:19:06,932 --> 02:19:10,531
+Yine bir nevi bir ensembl kullanıyorsunuz.
+
+445
+02:19:18,804 --> 02:19:42,103
+Color Jitter yine bir veri artırma. Renkleri bozma biraz. Burada imge büyüklüğünü değil de mesela parlaklık ve kontrastı rastgeleleştirebilirsiniz. Basit olarak veya daha kompleks mesela PCI uygulayabilirsiniz.
+
+446
+02:19:46,260 --> 02:19:50,260
+Bunlar AlexNet'te, ResNet'te kullanılan şeylermiş.
+
+447
+02:19:55,956 --> 02:20:13,556
+Round Augment diye bir Augmentation. 2020 yılında daha yeni bir Augmentation'ı. Bu ne diyor anlamaya çalışalım. Bu slide'ı ilk defa görüyorum galiba.
+
+448
+02:20:23,188 --> 02:20:41,548
+uyguluyorlar. Geometrik işte rotasyon, taşıma, şiir, renk, şarpın, kontrast, brightness, solarize, posterize, color gibi. Bu ikisi ne demek bilmiyorum artık bu paper'a bakabilirsiniz.
+
+449
+02:20:43,688 --> 02:20:49,688
+Şu şekilde bir transform listesi var. Koda biraz bakalım.
+
+450
+02:20:51,603 --> 02:21:14,363
+Yani bir de magnitude değeri alıyor.
+
+451
+02:21:18,324 --> 02:21:45,084
+Sonra ne yapıyor? Bu Transforms arasından N tane rastgele'sini seçiyor. Non-Py Random Choice ile. Sonra bu Transformları döndürüyor. Sonra da onları sanırım veri setine uyguluyordur.
+
+452
+02:21:52,180 --> 02:22:04,580
+Yine Slide'dan anladığım kadarıyla anlatacağım. Bu paper'ı okumadım. Bu kısmı eski videolarında yoktu ama bu paper'a bakabilirsiniz.
+
+453
+02:22:05,580 --> 02:22:15,580
+Orjinal mesela X'de Şiir uygulanmış. Kontrast değişimi var. Magnitude 9.
+
+454
+02:22:16,435 --> 02:22:41,955
+Orijinal X'te şiirin magnitude'u bu sefer 17. Sonra bunun üzerine bir de otomatik kontrast uygulanmış yine. Yine orijinal X'teki şiiri 27. Ama sanırım diğer, eksi 28 olabilir bu. Diğer yönde sanki uygulanmış. Yine bir kontrast.
+
+455
+02:22:49,299 --> 02:23:07,299
+Dolayısıyla elinizdeki veriye bağlı olarak farklı şekilde hayal gücünüzü kullanarak veri artırımı uygulayabilirsiniz.
+
+456
+02:23:08,531 --> 02:23:33,711
+Veri artırımı modelimizde invariansları enkode ediyor. Yani kedinin sola dönük halini de, sağa dönük halini de verdiğiniz zaman modele, model o kediyi sağa ya da sola dönüklükten bağımsız şekilde öğreniyor. Dolayısıyla faydalı bir şey.
+
+457
+02:23:34,772 --> 02:24:01,772
+Siz de şunu düşünebilirsiniz. Bizim girdiğimizdeki hangi değişimler, Network çıktısını değiştirmemeli? O değişiklikleri ne yapacaksınız? Data Augmentation ile veri setine ekleyeceksiniz.
+
+458
+02:24:02,067 --> 02:24:09,067
+Dolayısıyla farklı uygulamalarda farklı şeylere invarians isteyebilirsiniz.
+
+459
+02:24:09,067 --> 02:24:19,067
+Invaryans istediğiniz şeyleri sisteme onları uygulayarak modele öğretiyorsunuz.
+
+460
+02:24:22,772 --> 02:24:27,772
+Şöyle bir baktığımızda...
+
+461
+02:24:32,404 --> 02:24:33,224
+Öğ...
+
+462
+02:24:38,835 --> 02:24:45,155
+Dropout'u gördük, Batch Normalization'ı gördük, Data Augmentation'ı gördük, Regularization olarak.
+
+463
+02:24:47,155 --> 02:24:55,315
+Drop Connect'ten bahsediyor şu paperda.
+
+464
+02:24:55,315 --> 02:25:05,635
+Burada da belirli nöronları yok etmek yerine,
+
+465
+02:25:06,963 --> 02:25:24,963
+Belirli, yani rastgele bir kısım weightleri yok ediyor. Drop Connect. Bu nasıl yapılabilir? Weight matriziniz var biliyorsunuz.
+
+466
+02:25:32,755 --> 02:25:47,735
+Kaça kaçlıksa, onunla aynı boyutta bir maske oluşturursunuz. Sıfır ve birlerden oluşan. Çarparsınız weight matrisiyle. Sıfırla çarpılanlar yok edilmiş olur.
+
+467
+02:25:49,735 --> 02:25:55,575
+Bu 2013'te kullanılan bir yöntemmiş veya tanıtılan.
+
+468
+02:25:59,667 --> 02:26:02,608
+Yönteminden bahsediyor. Yine regularization için.
+
+469
+02:26:08,500 --> 02:26:13,479
+Fractional Max Pooling diye 2014'te gelen bir yöntem.
+
+470
+02:26:16,840 --> 02:26:21,739
+Burada emin değilim bu neydi? Şu anda hatırlayamadım.
+
+471
+02:26:23,479 --> 02:26:25,500
+Max Pooling yaparken...
+
+472
+02:26:33,427 --> 02:26:43,227
+Bazılarına atlıyor mu acaba? Yani burayı bilemiyorum arkadaşlar. Onu araştırmayı size bırakmıyorum.
+
+473
+02:26:47,796 --> 02:27:02,015
+İnternette yazınca Fractional Max Bullying diye o şey geldi, o paper geldi. O paperı okuyabilirsiniz. Benjamin Graham tarafından yazılmış.
+
+474
+02:27:20,564 --> 02:27:33,044
+Yani şey diyor, pooling alanlarının TensorFlow'da direkt fonksiyonu varmış.
+
+475
+02:27:38,324 --> 02:27:53,484
+Normal Max Pooling'de bir inputu n çarpı n subsection'lara bölüp, yani çoğu kez 2 çarpı 2, böyle bir faktörle indiriyorsun.
+
+476
+02:27:54,764 --> 02:28:03,604
+n bir integer. Fractional Max Pooling'de n'deki iniş integer olmak zorunda değil.
+
+477
+02:28:06,995 --> 02:28:18,155
+Pooling bölgelerinin boyutu rastgele belirleniyormuş ama oldukça üniformmuş.
+
+478
+02:28:24,147 --> 02:28:46,367
+Yani bir nevi, normalde pooling yaparken biz ne yaparız? Mesela ikiye ikilik bir alan vardır. Max pooling'de 2x2. Burada 2x2 değil de mesela 3x3 olabiliyor gibi. 2.5x2.5 olabiliyor gibi.
+
+479
+02:28:57,459 --> 02:29:11,500
+Dolayısıyla farklı büyüklüklerdeki pooling uygulanmasıyla ilgili bir regularization yöntemi.
+
+480
+02:29:15,099 --> 02:29:20,659
+Stochastic Depth'den bahsetmiş. Bu da 2016'daki bir paper.
+
+481
+02:29:23,572 --> 02:29:48,612
+Bunlar da trainingde ResNet'teki bazı residual blokları atlıyorlarmış. Yani ResNet'te hatırlarsınız böyle bloklar vardı. Şu normal regularization olmayan ResNet. Burada ise bazı katmanları olduğu gibi ne yapıyorlar? Atlıyorlar diyor.
+
+482
+02:29:49,236 --> 02:30:06,816
+Testing'de tüm network'ü kullanacaklar. Tahmin edebileceğiniz gibi mesela yarısını atıyorlarsa ona göre bir P ile çarpma, bölme gibi şeyler de yapıyorlardır. İlgili makaleleri okumak lazım ayrıntıları görmek için.
+
+483
+02:30:11,667 --> 02:30:29,907
+Yeni architecture'larda aslında bayağı kullanılmaya başlıyor diyor. Sıklaşmaya başladı. 2020'de iki bir makale. 2019, 21, 21, 21 bunlar hep yeni makaleler. Bunlar da stokastik depth kullanılmış.
+
+484
+02:30:33,716 --> 02:30:40,675
+Dolayısıyla bunu da bir neural network eğitecekseniz tavsiye edebiliriz.
+
+485
+02:30:42,855 --> 02:30:46,376
+Cutout diye bir regularization'dan bahsediyor.
+
+486
+02:30:48,315 --> 02:30:56,775
+Burada da bazı rastgele inge bölgelerini direkt sıfır yapıyorsunuz.
+
+487
+02:31:01,843 --> 02:31:03,043
+Ne yapıyorsunuz?
+
+488
+02:31:04,824 --> 02:31:06,223
+Kullanıyorsunuz.
+
+489
+02:31:23,987 --> 02:31:50,967
+Mix-up diye bir yöntem var. Regularization yöntemi yine. Burada da bu çok enteresan. Mesela kedi var, farklı sınıflar var elinizde. Bunların üst üste konulması ile, birleştirilmesi ile, blend ile elde ettiğiniz resimleri de kullanıyorsunuz eğitimde.
+
+490
+02:31:51,700 --> 02:32:02,440
+Çıkıştı ama diyelim ki %40 kediden aldınız, %60 köpekten aldınız bu yeni resmi oluştururken.
+
+491
+02:32:03,560 --> 02:32:15,799
+Sınıflamada zaten OneHot Encoding kullanılıyor ya, o zaman işte kedi gelen yere 0.4 istiyoruz, köpek düşen yere 0.6 istiyoruz.
+
+492
+02:32:20,020 --> 02:32:24,020
+Eğitim uygulanıyor.
+
+493
+02:32:32,180 --> 02:32:42,500
+Burada ama şey daha çok, bu baya tuhaf tabii ki, Blend Probability Beta Distribution'dan geliyor.
+
+494
+02:32:53,523 --> 02:33:00,144
+Yani şöyle, bu blendlerde yarısı kediden yarısı köpekten gelmiyor.
+
+495
+02:33:03,423 --> 02:33:11,903
+Genel olarak beta distribution'u böyle sıfırla bir arasında eğer AB'yi sıfır yaparsanız büyük değerler alıyor.
+
+496
+02:33:12,723 --> 02:33:18,144
+Ortalarda küçük değerler var. Yani diyelim ki P kedi olma olasılığı.
+
+497
+02:33:23,123 --> 02:33:27,844
+Bu durumda köpek olma olasılığı da blend yapıyorsunuz ya, o da 1xp oluyor.
+
+498
+02:33:33,747 --> 02:33:59,187
+Dolayısıyla P, 0-5 civarındaki değerler çok olası değil bu olasılık dağılımına göre. Dolayısıyla her ne kadar blend yapıyorsanız da çoğu zaman kedi-köpek blendinde verinin çoğu köpekten geliyor, az bir kısmı kediden geliyor gibi bir durum var pratikte.
+
+499
+02:34:01,971 --> 02:34:28,351
+Bu ne zaman çıkmış? 2019'da çıkmış. Cut Mix Regularization demiş. Daha yeni. İmgelerin rastgele blendleriyle eğitiyorsun. Yani kedi imgesinin bir yerine rastgele bir köpek koyuyorsun.
+
+500
+02:34:29,620 --> 02:34:51,840
+Sonra alana göre piksellerin kaçı kedi imgesinden geliyor, kaçı köpek imgesinden geliyor. Buna katmix diyorlarmış. Bu bana biraz daha mantıklı geldi. Öbürü normal mixup bana nasıl olur da çalışır gibi geldi. Pek anlam vermedim ama bu biraz daha mantıklı olabilir.
+
+501
+02:34:56,275 --> 02:35:06,515
+Birden fazla sınıflayıcı içeren sınıflara falan da yardımcı olmaya çalışabilir. Bu biraz mantıklı bir şey gibi geldi.
+
+502
+02:35:08,815 --> 02:35:14,455
+Label smoothing'den bahsediyor. Bunu anlamaya çalışalım.
+
+503
+02:35:15,216 --> 02:35:21,615
+Train on random blends of images, use original images. Label smoothing.
+
+504
+02:35:22,739 --> 02:35:28,399
+Bu slide'ı da ilk defa görüyorum. Ne diyor, anlamaya çalışalım.
+
+505
+02:35:33,652 --> 02:35:46,092
+Standart eğitimde diyelim ki %100 kedi, %09, %0 fiş. Bu ikiden fazla şey yapıyor.
+
+506
+02:35:48,592 --> 02:36:00,092
+Yani blendlerde bir önceki şurada mix-up'da iki tanesinin blendini yapıyordu. Burada üç tanesinin gibi.
+
+507
+02:36:00,659 --> 02:36:02,059
+Blending'i yapabiliyor.
+
+508
+02:36:07,399 --> 02:36:22,719
+Set target distribution to be 1 minus k-1 bölük k epsilon on the correct kategori and epsilon bölük k on all other categories with k categories and epsilon in 0,1.
+
+509
+02:36:23,891 --> 02:36:27,811
+Loss is cross entropy between predicted and target distribution.
+
+510
+02:36:27,811 --> 02:36:30,811
+Yani diyelim ki...
+
+511
+02:36:36,340 --> 02:36:43,959
+On all other kategoriyiz diyor. Yani 10 tane kategoriniz varsa, 10 kategori öyle mi olacak?
+
+512
+02:36:48,040 --> 02:37:03,280
+K kategori diyor çünkü. 10 kategoriniz varsa, 1-10-1 bölü 10, epsilon'u galiba biz vereceğiz. Bu bir hiperparametre.
+
+513
+02:37:04,628 --> 02:37:08,708
+1-0.9 epsilon
+
+514
+02:37:13,587 --> 02:37:17,567
+Kedi dağılımında kedi olacak.
+
+515
+02:37:19,307 --> 02:37:22,707
+Şeklinde bir regularization düşünülmüş.
+
+516
+02:37:27,667 --> 02:37:33,307
+Özet olarak ne diyor?
+
+517
+02:37:33,307 --> 02:37:53,247
+Rastgele, özet olarak elimizde ne var? Regularization olarak, dropout, bash normalization, data augmentation, dropconnect,
+
+518
+02:37:53,843 --> 02:38:00,804
+Fractional Max Fooling, Stokastik'te bütün bunlar gördüklerimiz elinde. Ne diyor?
+
+519
+02:38:14,548 --> 02:38:19,788
+Büyük, Fully Connected Layer'larınız varsa Dropout'u kullanın diyor.
+
+520
+02:38:21,407 --> 02:38:25,148
+Data Augmentation her zaman için iyi bir fikirdir, deneyin.
+
+521
+02:38:27,587 --> 02:38:37,587
+Convolutional Neural Network'lerde Batch Normalization'ı kullanın ama VITS'lerde kullanmayın dedi. Bunlara aşina değilim VITS'lere.
+
+522
+02:38:42,451 --> 02:39:09,851
+Birazcık da olsun iyileştirmek istiyorum diyorsanız performansı. Yani öyle bir durum var ki uğraşmanıza değer. O zaman şunları, cutout, mixup, cutmix, stochastic depth, label smoothing gibi şeyleri birazcık daha performansını çıkarmak için
+
+523
+02:39:11,092 --> 02:39:14,512
+Ağın kullanabilirsiniz.
+
+524
+02:39:18,551 --> 02:39:20,852
+Bu slide burada bitiyor.
+
+525
+02:39:24,884 --> 02:39:31,884
+Şimdi tabii dersimiz de bitti. Gelecek haftadan itibaren de...
+
+526
+02:39:37,556 --> 02:39:41,355
+Nelere başlayacağız? Demolara başlayacağız.
+
+527
+02:39:47,667 --> 02:39:53,347
+Ben bir şeye gireyim, online Yılız Etteriye'ye, bilgisayardan gireyim şimdi.
+
+528
+02:43:14,227 --> 02:43:17,307
+Hocam, konuşuyorsanız sesiniz gelmiyor yanına.
+
+529
+02:43:21,652 --> 02:43:29,351
+Teşekkür ederim. Bilgisayara geçtim rahat bir şekilde.
+
+530
+02:43:33,876 --> 02:43:36,916
+Açabileyim şu spreadsheet diye.
+
+531
+02:43:37,476 --> 02:43:39,315
+Hocam, bir şey soracaktım da ben.
+
+532
+02:43:39,655 --> 02:43:39,995
+Buyurun.
+
+533
+02:43:41,155 --> 02:43:51,155
+Şimdi normalde geçen hafta, bu hafta öncesi sunumları yükleyecektik ama bir hafta ertelemiştik konu belirlemeye. O yüzden haftayı yükleyeceğiz değil mi sunumları?
+
+534
+02:43:51,495 --> 02:43:51,835
+Evet.
+
+535
+02:43:52,936 --> 02:43:54,059
+Teşekkürler.
+
+536
+02:43:54,484 --> 02:44:11,623
+Hocam ben kod ile makala şeylerimi ekledim fakat sunumumu hazırlayıp gelecek hafta ilk hafta benim sonra orada gösterip mirasam olur mu hocam?
+
+537
+02:44:11,623 --> 02:44:13,423
+Yoksa oraya mı yükleyeyim?
+
+538
+02:44:13,484 --> 02:44:14,923
+Hala yükleyebilirsiniz.
+
+539
+02:44:17,747 --> 02:44:20,547
+O sizinle paylaştığımız yere yükleyin.
+
+540
+02:44:20,968 --> 02:44:24,847
+Kodları ekledim fakat sunum eklemedim yani.
+
+541
+02:44:25,628 --> 02:44:33,328
+İşte vakit var, hala yükleyebilirsiniz. Gelecek hafta bu dersimizden önce ne kadar yükleyebilirsiniz?
+
+542
+02:44:33,328 --> 02:44:39,808
+Tamam. Gelecek hafta o zaman benimki olacak değil mi hocam sunumum?
+
+543
+02:44:40,128 --> 02:44:49,608
+Ben de onu diyecektim. Bu sıralama uygun mudur arkadaşlar? Hani ben öne geleyim ya da arkaya geleyim diyen var mı bu sıralamada?
+
+544
+02:44:55,316 --> 02:45:05,796
+Yok gibi gözüküyor. O zaman bu sırayla olsun arkadaşlar. Dolayısıyla önce [öğrenci], sonra [öğrenci] diye gideceğiz.
+
+545
+02:45:19,716 --> 02:45:22,355
+Dropbox linki verdim değil mi yüklemenizi?
+
+546
+02:45:22,355 --> 02:45:22,896
+Evet, evet.
+
+547
+02:45:23,200 --> 02:45:37,780
+Dropbox linkine yükleyeceksiniz. Tamam arkadaşlar. 20 dakikada dınınız. Sonra 20 dakikada biçirmemiz gerekiyor arkadaşlar. Değil mi? Online yazıyoruz değil mi hocam?
+
+548
+02:45:47,636 --> 02:45:52,876
+180 dakika var. Değil mi?
+
+549
+02:45:53,695 --> 02:45:53,975
+Evet.
+
+550
+02:45:54,835 --> 02:46:05,036
+Yarımşar saattan 6 kişi anlatabiliyor. 8 kişi lazım. 8 kişinin anlatması lazım şimdilik son anda eklemeler olmazsa.
+
+551
+02:46:06,067 --> 02:46:16,887
+Yani 20 dakika, zaten 20 dakika dediğiniz zaman o biraz artabilir, azalabilir. Dolayısıyla 20 dakikalık sunum olarak düşünün isterseniz.
+
+552
+02:46:21,207 --> 02:46:24,167
+Kodu orada çalıştıracağız. Göstereceğiz.
+
+553
+02:46:25,807 --> 02:46:28,948
+Yani kodu çalıştırabilirseniz güzel olur da.
+
+554
+02:46:28,948 --> 02:46:32,167
+Ama çalıştırdım. Ama tapta çalıştırdım.
+
+555
+02:46:34,004 --> 02:46:47,064
+Eğitimi zaten çok uzun sürüyor bunların. Oturup da şimdi 20 dakika onun eğitimini bekleyecek halimiz yok. Ama kodu bize açıklayabilirseniz o güzel olur.
+
+556
+02:46:47,987 --> 02:47:07,727
+Koddaki denklemlerle pardon paperdaki denklemlerle koddaki paralellikleri görebilirseniz, paperda anlatılan şey kodda nasıl implemente edilmiş bunu bize anlatabilirseniz bu güzel olur.
+
+557
+02:47:14,260 --> 02:47:32,459
+Şimdi ders olarak bu Justin'in şeylerinde nöral networklerin eğitilmesiyle ilgili bir tane daha slide var.
+
+558
+02:47:35,459 --> 02:47:40,899
+Onun şey yapabilirsiniz, yani vaktimiz yetmedi.
+
+559
+02:47:42,260 --> 02:47:43,659
+Ön...
+
+560
+02:47:47,763 --> 02:47:50,623
+Bonuslu başka makale verebilir misiniz? diyor.
+
+561
+02:47:54,355 --> 02:48:00,595
+Yani şeye bakabiliriz, hızlı bir şekilde olması için o Papers with Code'a bakabiliriz beraber.
+
+562
+02:48:06,675 --> 02:48:10,455
+Bonusu çok büyük verdim mi, 10 puan bonus alır demişim.
+
+563
+02:48:13,275 --> 02:48:16,355
+Hocam, final yine sınav olacak değil mi?
+
+564
+02:48:17,095 --> 02:48:18,695
+Final yine sınav olacak, evet.
+
+565
+02:48:19,396 --> 02:48:20,755
+Bu nevranı torklarda.
+
+566
+02:48:22,324 --> 02:48:44,423
+Yani evet, nörel networkler olur. Ondan öncekileri katmayalım. Nörel networkten sonra bayağı bir şey ekledik. Ayrıntılar vesaireler, bayağı bir şeyler var. Size kolaylaştırmak için biraz daha nörel network yoğunlukla yapalım sınava.
+
+567
+02:48:47,028 --> 02:48:55,448
+Baştan itibaren her şey olabilir teorik olarak ama ağırlık bir son kısımlardan olur diyelim. Nörel Network'lardan.
+
+568
+02:49:02,028 --> 02:49:08,667
+Karışık mı olacak yine? Test klasik. Yani evet, şu anda elimde yok sınav, kafamda da yok.
+
+569
+02:49:09,332 --> 02:49:18,311
+Yani sınava doğru oturup hazırlıyorum. O zaman ne çıkarsa kafamdan, elimde, ne oluşursa oluyor.
+
+570
+02:49:19,492 --> 02:49:34,432
+Hocam, kesin karar verilmeden hoca ile görüşülmesi gerekmektedir diyor ya. Biz şimdi buraya zaten konu önerisi olarak yazdık. Siz kontrol ediyor musunuz yoksa ekstra olarak görüşme mi yapmamız gerekiyor?
+
+571
+02:49:35,092 --> 02:49:54,551
+Yani onu kontrol etmedik. Esasen o adıma atladık. Bakalım, sıkıntı da yoktur herhalde. Sonuçta paperları yayınlanan, kodları yayınlanan paperlar arıyorsunuz zaten.
+
+572
+02:50:10,260 --> 02:50:12,819
+Bunu zaten [öğrenci] yazmış.
+
+573
+02:50:13,659 --> 02:50:17,139
+Evet hocam, bayağı çalışıyorum bunun üzerinde.
+
+574
+02:50:17,139 --> 02:50:20,500
+Formül 3 bayağı zor olmuş.
+
+575
+02:50:20,500 --> 02:50:25,619
+İntegral şeylerini sonra matematik hocasına gösterdim.
+
+576
+02:50:25,619 --> 02:50:28,100
+Sonra bunu parçaladım iyice.
+
+577
+02:50:28,100 --> 02:50:33,459
+Şimdi kodlarla karşılaştırarak çalışıyorum üzerinde.
+
+578
+02:50:34,164 --> 02:50:38,324
+Tamam. Yani şöyle hızlıca bir bakıyorum da zaten genel olarak.
+
+579
+02:50:42,324 --> 02:50:43,364
+Şunu.
+
+580
+02:50:45,164 --> 02:51:00,644
+Semi-supervised cross-scale graph prototypical network for image classification, risk recognition, photo upsampling generated models.
+
+581
+02:51:02,164 --> 02:51:27,384
+Ensemble of Symbol Convolutional Network for Investigation Recognition. Yani bunları zaten kendim yazmıştım. Gun Training for High Fidelity. MLP Architecture for MLP Mixer. Bu yeni mi? [öğrenci] burada mı şu anda?
+
+582
+02:51:32,724 --> 02:51:42,664
+Eda, Easy Data Augmentation Techniques, Data Augmentation'ı anlatıyor. Yeni bir loss fonksiyonu gibi duruyor.
+
+583
+02:51:47,603 --> 02:51:54,943
+Object Detection Transformers ile ilgili bir şey. [öğrenci] burada mı?
+
+584
+02:52:02,548 --> 02:52:06,328
+Yeni bir network tanıtıyor.
+
+585
+02:52:10,932 --> 02:52:12,672
+[öğrenci] şey mi bu?
+
+586
+02:52:16,752 --> 02:52:17,832
+Sınıflandırma hocam.
+
+587
+02:52:18,492 --> 02:52:20,492
+Evet. Biomedikal gibi.
+
+588
+02:52:20,772 --> 02:52:21,332
+Evet hocam.
+
+589
+02:52:23,452 --> 02:52:24,852
+Bu Deep Learning ile FISH.
+
+590
+02:52:26,472 --> 02:52:31,592
+Simispherized 3D Semantic Shape Aware.
+
+591
+02:52:33,252 --> 02:52:34,692
+Evet, yani olabilir gibi.
+
+592
+02:52:40,531 --> 02:52:51,471
+Papers with Code'dan gitmiş olduk bu yıl. Böyle bir şey olmuş oldu. Bakayım burada yine dikkatimi çeken bir şey var mı?
+
+593
+02:52:55,123 --> 02:52:56,123
+De face.
+
+594
+02:53:10,355 --> 02:53:19,556
+2022'de. Şimdilerde insanlar promptları iyileştirmeyle ilgili uğraşmaya başlamışlar.
+
+595
+02:53:20,595 --> 02:53:24,635
+Optimizing Prompts for Image to Text to Image Generation.
+
+596
+02:53:26,635 --> 02:53:32,396
+Position Guided Text Prompt for Vision Language Pre-Training.
+
+597
+02:53:38,772 --> 02:53:43,152
+Papersmith Code'a bakıyorum. Frame Interpolation for Large Motion.
+
+598
+02:53:55,956 --> 02:53:59,796
+Facebook, scalable diffusion models with transformers demiş.
+
+599
+02:54:12,084 --> 02:54:15,024
+Uncovering dedi, Santanglement Kapability.
+
+600
+02:54:35,700 --> 02:54:38,340
+Şuradan bir tane bir şey ekliyorum oraya.
+
+601
+02:54:46,100 --> 02:55:00,440
+Bu birebir aslında şey değil. Yani tekst oluşturmakla ilgili ama gibi gözüküyor. Şimdi sadece şeyine bakarak. Ama imge üretmek için tekst üretmekle ilgili.
+
+602
+02:55:07,507 --> 02:55:11,968
+Hatta bununla ilgili bir tane daha var. Hem de Microsoft'tan galiba.
+
+603
+02:55:13,108 --> 02:55:16,347
+Front Engineering diyor. Bak yeni bir şey bu. Front Engineering.
+
+604
+02:55:17,407 --> 02:55:18,527
+Şimdi gözükmedi.
+
+605
+02:55:20,288 --> 02:55:22,448
+Şu anda görebiliyor musunuz?
+
+606
+02:55:22,448 --> 02:55:24,587
+Şey gözüküyor, eksili sayfası.
+
+607
+02:55:25,968 --> 02:55:27,507
+Ne gözüküyor?
+
+608
+02:55:27,927 --> 02:55:28,847
+Eksili sayfası.
+
+609
+02:55:35,316 --> 02:55:36,476
+Bunu da ekledim.
+
+610
+02:55:40,576 --> 02:55:43,116
+Şunu da ekledim.
+
+611
+02:55:49,780 --> 02:55:54,780
+Position Guided Text Prompt for Vision Language Pratering.
+
+612
+02:55:56,780 --> 02:56:00,360
+Yani Prompt Engineering diye bir şey çıktı artık.
+
+613
+02:56:03,000 --> 02:56:04,780
+Prompt Mühendisliği.
+
+614
+02:56:06,780 --> 02:56:13,780
+Bu yeni jeneratif modeller o kadar güçlü ki yazıyla tarif ediyorsunuz.
+
+615
+02:56:14,400 --> 02:56:16,180
+Onlar size bir çıktı veriyor.
+
+616
+02:56:17,299 --> 02:56:23,540
+O yazıyı nasıl gireceğiz? Bununla ilgili çalışma yapmaya başlamış insanlar.
+
+617
+02:56:41,683 --> 02:56:45,183
+Frame Interpolation for Large Motion'da bir şey var.
+
+618
+02:57:18,644 --> 02:57:28,584
+Bu Facebook Research'tan gelen bir şey. Buna bir yıldız verebiliriz mesela.
+
+619
+02:58:04,564 --> 02:58:06,564
+Diye Engine.
+
+620
+02:58:06,564 --> 02:58:11,564
+MM Diffusion. Şimdi Diffusion modelleri acayip popüler oldu.
+
+621
+02:58:16,852 --> 02:58:23,672
+Gan modelleri çok popülerdi. Difüzyon modelleri şu anda onların önüne geçmeye başladı. Hatta geçti galiba.
+
+622
+02:58:44,500 --> 02:58:46,500
+Evet.
+
+623
+02:58:52,371 --> 02:58:54,572
+Birkaç tane daha oraya eklemiş olduk.
+
+624
+02:58:56,891 --> 02:59:09,551
+Tabii bunları bir hafta içinde anlamak, etmek, anlatmak mümkün olur mu bilmiyorum. Şu ana kadar bir şeyler yaptıysanız belki onlarla devam etmeniz daha mantıklı olabilir.
+
+625
+02:59:15,188 --> 02:59:23,808
+Bunu anlatan bize biraz Transformers'ı da mesela anlatsa iyi olur. Veya şu [öğrenci] burada mı dedim, ses çıkmadı ama.
+
+626
+02:59:26,528 --> 02:59:31,288
+[öğrenci] burada olması lazım. Mesela biraz Transformers'ı bize anlatabilir.
+
+627
+02:59:36,371 --> 02:59:49,011
+Peki, soru var mı arkadaşlar? Konuşacağımız bir şey. Yine online olsun sunumlar. Online daha kolay olur diye düşünüyorum.
+
+628
+02:59:52,788 --> 02:59:58,528
+Anamda kaydediliyor hocam. Çok iyi olur. Herkes bir sürü şeyler özenler.
+
+629
+02:59:58,528 --> 03:00:13,728
+Evet. Tamam [öğrenci]'daymış iyi. Tamam yani o Transformers'ı da bize biraz anlatabilirsen iyi olur [öğrenci]. Şuraya chat'e yazayım da gitsin.
+
+630
+03:00:34,195 --> 03:00:40,536
+[öğrenci] ve [öğrenci] mesela. [öğrenci] mesela, burada mı [öğrenci]?
+
+631
+03:00:49,940 --> 03:00:50,940
+Yokluyuz hocam.
+
+632
+03:00:51,860 --> 03:00:57,319
+Evet. Mesela o da bize biraz diffusion modelleri anlatabilirse iyi olur.
+
+633
+03:01:00,020 --> 03:01:05,840
+Bu yıl biraz böyle koda bir yoğunlaşmak istedim. Bakalım nasıl bir sonuç çıkacak?
+
+634
+03:01:05,840 --> 03:01:12,860
+Yani daha güzel mi olacak veya daha çok bir katkısı olmayacak mı bakacağız.
+
+635
+03:01:13,880 --> 03:01:15,220
+Böyle bir şey denedim bu yıl.
+
+636
+03:01:16,979 --> 03:01:22,079
+Evet, yani iyi olur [öğrenci].
+
+637
+03:01:26,611 --> 03:01:42,092
+Tamam, şimdi haftaya o zaman görüşürüz arkadaşlar. Sorunacağımız, konuşacağımız bir şey yok gibi gözüküyor. Var mı son olarak? İyi günler diliyorum size. İyi haftalar.

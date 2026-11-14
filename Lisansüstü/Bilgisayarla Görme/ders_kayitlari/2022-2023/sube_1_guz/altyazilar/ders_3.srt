@@ -1,0 +1,2563 @@
+1
+00:09:43,508 --> 00:09:45,968
+Arkadaşlar, merhabalar. Nasılsınız, iyisiniz?
+
+2
+00:09:55,412 --> 00:09:57,852
+Merhaba hocam. Sağ olun. Siz nasılsınız?
+
+3
+00:09:59,492 --> 00:10:09,692
+İyiyim. [kişisel bilgi]
+
+4
+00:10:10,331 --> 00:10:12,412
+[kişisel bilgi]
+
+5
+00:10:12,412 --> 00:10:18,892
+Sağ olun. [kişisel bilgi]
+
+6
+00:10:30,227 --> 00:10:31,507
+Şimdi...
+
+7
+00:10:40,659 --> 00:10:53,059
+Konu Olu Ocean General Network'lere başlamıştık. Bunlarla ilgili biraz daha ayrıntıya girmek istiyorum.
+
+8
+00:11:06,419 --> 00:11:16,419
+Konvolutional olmayan nöral networkler, aslında bu kısım biraz geçen dersimizin tekrarı gibi olacak bir kısmı.
+
+9
+00:11:16,419 --> 00:11:27,419
+Farklı bir slide kullanıyorum. Dolayısıyla hem bir tekrar olacak hem de tekrar bakış açısıyla bakmış olacağız.
+
+10
+00:11:31,604 --> 00:11:47,484
+Eğer konu oluşu olmayan standart bir neural network ile çalışırsanız, diyelim ki elinizde 32x32x3'lük bir tane imge var.
+
+11
+00:11:48,544 --> 00:11:51,064
+Yani 3 RGB'den geliyor.
+
+12
+00:11:53,064 --> 00:11:55,724
+Ve imgenin boyutu da 32x32.
+
+13
+00:12:01,268 --> 00:12:18,567
+Bunu öncelikle ne yapıyoruz? Tek bir vektör haline getiriyoruz. Şuradaki gibi. Dolayısıyla bu matematiği yaparsanız ne diyor? 3072'ye birlik bir tane ne oluşuyor? Vektör oluşuyor.
+
+14
+00:12:20,028 --> 00:12:26,508
+Bu vektörü ne yapıyoruz? Bu bizim x'imiz oluyor.
+
+15
+00:12:29,620 --> 00:12:32,620
+Bu vektörü ağırlıklarımızla çarpıyoruz.
+
+16
+00:12:35,620 --> 00:12:45,120
+Tabii normal ağırlıklarımızla çarpıyoruz ve sonuçta ne elde ediyoruz?
+
+17
+00:12:49,820 --> 00:12:55,620
+Yeni bir vektör elde ediyoruz. Bu 10 tane değere sahip oluyor. Diyelim ki 10 tane sınıf var.
+
+18
+00:12:56,052 --> 00:13:13,192
+Onu sınıfa ayıracağız. Dolayısıyla yeni vektörün her bir elemanı o sınıfın, işte artık onu sonra yorumluyoruz, log probabilitisi normalize edilmemiş, log probabilitisi falan oluyor.
+
+19
+00:13:22,419 --> 00:13:48,199
+Burada layer'dan bahsediyor. Network ya da layer diyoruz. Birazdan göreceğiz bu networkleri bir araya gidilirken artık layer'lardan bahsedeceğiz. Çünkü modern networkler birçok layer'lardan oluşuyor ve bu layer'larda convolutional layer olduğu gibi bazen böyle fully connected layer'larda olabiliyor.
+
+20
+00:13:48,820 --> 00:14:09,500
+Esasen bunlar hala kullanılabiliyor yani. Burada ne yapıyoruz? Diyelim ki yine aynı imgemiz var. Bu sefer uzamsal yapıyı yani X, Y'deki yapıyı koruyoruz, bozmuyoruz. Buranın güzelliği bu.
+
+21
+00:14:20,788 --> 00:14:42,148
+Z boyutu, yani X, Y, Z dersek Z boyutu imgemizin Z boyutuna match ediyor. Yani 3 tane imge varsa, 3 tane RGB 3 kanal varsa filtremizin de 3 kanalı olacak.
+
+22
+00:14:48,148 --> 00:15:15,528
+Bunu set ediyoruz. Bu bir şey. Network yapısını ayarlayacağımız bir şey. Sonra ne yapıyoruz? Filtreliyoruz. Filtrenin her bir sonucu yeni çıkış sonuç imgesindeki bir tek neyi veriyor bize? Pikseli veriyor.
+
+23
+00:15:17,364 --> 00:15:29,663
+Burada ne yapıyoruz? Aslında bu da yine şeye benziyor. Daha önce yaptığımız şeye benziyor. Çünkü konvolüsyonda ne yapıyoruz?
+
+24
+00:15:42,995 --> 00:16:08,755
+Filtrenin karşılık gelen elemanları ne yapıyoruz? Birebir çarpıyoruz. Yani aslında şöyle düşünebilirsiniz. X'in, yani imgeye X diyelim burada. X'in o ilgili kısmıyla filtremiz, filtremize WT diyeceğiz.
+
+25
+00:16:10,995 --> 00:16:31,655
+Ne yapıyor? Dot product'a giriyor. Karşılıklı çarpılıyor ve toplanılıyor. Yani yine burada da az önceki gibi bir çarpım var. Artı, bundan daha önce bahsetmemiştik slide'larımızda, burada da yine bir bias terimi kullanılıyor.
+
+26
+00:16:33,139 --> 00:16:56,539
+Dolayısıyla kaç tane işlem var burada? Diyelim ki 3x5x5 filtreniz var. 5x5x5, 75 tane bu filtrede ne var? Eleman var diyelim. O da ingenin 75 elemanıyla her bir eleman çarpılıyor.
+
+27
+00:16:57,556 --> 00:17:22,135
+Dolayısıyla 75 tane ne var? Çarpma. Sonra da onlar ne yapılıyor? Toplanılıyor. Dolayısıyla 75 tane veya isterseniz 74 toplama var diyebilirsiniz. Artı bir de bir yazı topluyoruz. 75 tane çarpma ve toplama yapmış oluyoruz bir tek elemanı elde etmek için.
+
+28
+00:17:30,579 --> 00:17:50,819
+Sonra bütün bunları, filtreyi kaydıra kaydıra bu konvolüsyonu yapınca elimizde yeni bir imge isterseniz veya ara özellik diyebilirsiniz oluşuyor.
+
+29
+00:17:53,599 --> 00:18:16,599
+Yeni oluşan şey Activation Map denilebiliyor. Bazen Feature Map denilecek birazdan sanırım. Ne oldu? 32'lik bir imgeydi. Yeni imge 28'e 28'lik oluyor. Neden? Çünkü hatırlarsanız, filtrelerin...
+
+30
+00:18:20,307 --> 00:18:34,307
+Resme konvolüsyona soktuğunuzda şu filtrenin merkezi olsun. Şu kısmı, imgenin bu kısımlarını ne yapamıyorsunuz? Normalde...
+
+31
+00:18:35,284 --> 00:18:48,204
+Filtreleyemiyorsunuz. Filtreleyebilmek için Zero Padding gibi bir şey yapmanız lazım. Burada Zero Padding kullanılmamış. Dolayısıyla Output imgesi ne oluyor? Biraz daha küçük oluyor.
+
+32
+00:18:48,204 --> 00:19:02,144
+Burada 5x5'lik bir filtre olduğuna göre 2 piksel oradan toplam 4 piksel bir boyutta kaybediyor. 32'den 28'e düşüyor. Bunun büyüklüğü.
+
+33
+00:19:02,804 --> 00:19:12,284
+Şimdi filtreyi bir kere konvolüsyona sokunca elimizde bir tane activation map oluşmuş oluyor.
+
+34
+00:19:17,107 --> 00:19:36,647
+Şimdi ne yapıyoruz biz ama? Bir tek filtre kullanmıyoruz. Birçok filtre kullanıyoruz. Mesela bir başka filtreyi daha kullanıldığımızı düşünelim. Bu da işte yeşil. Bu da bize yeni bir activation map daha veriyor.
+
+35
+00:19:37,788 --> 00:19:44,327
+Diyelim ki 6 tane filtre kullandık. 6 tane activation map'imiz oldu.
+
+36
+00:19:46,163 --> 00:19:49,884
+Convolutional Layer'da
+
+37
+00:19:57,299 --> 00:20:04,299
+Her bir activation map'i oluşturmakta kullandığımız bir tane kernel oldu.
+
+38
+00:20:04,299 --> 00:20:14,187
+Convolution Layer'da 6 tane 3x5x5'lik filtremiz var.
+
+39
+00:20:17,268 --> 00:20:34,688
+Şimdi bu 6 tane sonuç mapleri bir araya getiriliyor. Dolayısıyla bir nevi 6x28x28'lik bir hacim oluşmuş oluyor burada.
+
+40
+00:20:39,508 --> 00:20:43,168
+Bu arada az önce de söylemiştik, tekrar hatırlatalım.
+
+41
+00:20:44,428 --> 00:20:50,807
+Bu filtrelerin yanında her bir filtreyi topladığımız bir tane de beyaz terimi var.
+
+42
+00:20:51,367 --> 00:20:55,128
+Dolayısıyla altı boyutlu da bir beyaz vektörü var.
+
+43
+00:20:55,387 --> 00:20:59,148
+Biz eğitim sırasında neyi öğreniyoruz arkadaşlar?
+
+44
+00:20:59,508 --> 00:21:05,428
+İşte şu körnellerin değerini ve bu beyazın değerini eğitim sırasında öğreniyoruz.
+
+45
+00:21:13,011 --> 00:21:27,032
+Şimdi bir de ne yapılıyor? İmgeler, normalde tek bir imge ile eğitim yapılmıyor. Bir batch of images, yani bir grup diyeceğiz.
+
+46
+00:21:27,032 --> 00:21:40,032
+Batch, batch. Türkçede batch'e ne diyoruz? Tam hatırıma gelmedi. Google'a yazalım, batch Türkçesi.
+
+47
+00:21:44,756 --> 00:21:55,195
+Yığın mı desem? Sanki gruptansa yığını tercih ettim.
+
+48
+00:21:57,675 --> 00:21:59,776
+Trenge de bir bakayım yine.
+
+49
+00:22:10,067 --> 00:22:10,728
+Bitt.
+
+50
+00:22:16,819 --> 00:22:28,699
+Yığın parça, takım, komşu, bölüm, parti, sürü falan gibi, küme. Yığın diyeceğim ya. Yığın kullanılıyor mu batch için?
+
+51
+00:22:44,468 --> 00:23:09,347
+Neyse, batch of images yani bir imge yığını veya bir grup imge beraber eğitime sokuyoruz. Dolayısıyla eğitimde kullandığımız yapı nasıl oluyor? NumPy'da biliyorsunuz vektörler, dizinler çok boyutlu olabiliyor.
+
+52
+00:23:11,092 --> 00:23:38,231
+Birinci Dimension'da mesela iki tane imge kullandıysak her bir imgemiz. İkinci Dimension'da üç tane RGB her bir imge için. Sonra işte sanırım önce satırlar geliyor. Satır numarası. Sonra da sütun numarası. Sütunlar gibi.
+
+53
+00:23:38,900 --> 00:23:50,180
+Kullandığımız giriş yapısı, PyTorch'da da böyle birazdan göreceğiz, bu şekilde oluyor.
+
+54
+00:23:50,180 --> 00:23:59,180
+Tabii ne oluyor? Her bir imge için karşılık gelen bir tane...
+
+55
+00:24:02,291 --> 00:24:27,971
+Bir işte altılı çıkış oluyor. Dolayısıyla çıkışlarımız da bir batch of outpost oluyor. Çıkış yığını oluyor. Orada da iki tane imgemiz varsa bu boyut da yine iki. Kanal sayısı kullandığımız kernel sayısına göre değişiyor. X ve Y'deki boyutta filtremizin boyutuna göre değişiyor.
+
+56
+00:24:31,443 --> 00:24:56,364
+Bunlara genelde PyTorch'da bu isimlendirmeler veriliyor. N imge sayısı, C'in giriş kanal sayısı üstü, H height yükseklik, W width genişlik.
+
+57
+00:24:58,644 --> 00:25:23,644
+Çıkışta n yine aynı n imge sayısına denk düşen. Cout çıkış kanal sayısı. Burada mesela 6 idi. Hpr yeni elde edilen yükseklik ve widthprimede yeni elde edilen yükseklik.
+
+58
+00:25:26,867 --> 00:25:54,127
+genişlik. Cout büyüklüğünde bir beyaz vektörümüz var. Convolution layer'ımızda Cout çarpı C in yani ne oluyor? Output 6 tane olacak. 6 çarpı. Her birinde üçlükler var.
+
+59
+00:25:54,932 --> 00:26:16,152
+Değil mi? Altı, üç ve kernelimizin viti, kernelimizin height diyor. Burada height ile viti kernelde ve ingede farklı kullanmış ama bu bir hata olabilir. Çok üzerinde durmayalım.
+
+60
+00:26:21,203 --> 00:26:44,203
+Şimdi ne oluyor? Bir convolutional layer'ı bu şekilde kullandınız. Bunların çıktısını da yeniden bir convolutional layer'a sokabiliyorsunuz. Dolayısıyla burada da artık bu çıkış...
+
+61
+00:26:44,852 --> 00:26:52,532
+Birinci Convolution Layer'ın çıkışı, ikinci Convolution Layer'a giriş olmuş oluyor.
+
+62
+00:26:52,532 --> 00:27:01,492
+Burada da artık kaç kanal istiyorsak, mesela burada kanalı 10 tane istemiş. Demek ki ne yapacağız?
+
+63
+00:27:01,492 --> 00:27:04,692
+Burada 10 tane filtre var.
+
+64
+00:27:06,932 --> 00:27:25,472
+Her bir filtremiz 6 kanallı çünkü 6 tane çıkış vardı burada. Burada 3'e 3'lük filtreler kullanılmış. Dolayısıyla 28 iken 3'e 3'lük de 1 piksel aşağıdan 1 piksel yukarıdan 2 piksel kaybeder. 28'lik boyut 26'ya düşmüş.
+
+65
+00:27:27,992 --> 00:27:32,311
+Sonra artık ne olur?
+
+66
+00:27:32,723 --> 00:27:42,304
+Bir sonrakini bunu verebilirsiniz. Burada yine beyaz terimi var. Beyaz sadece bir tane kullandırıyor. Yani aklınıza şu gelebilir.
+
+67
+00:27:47,304 --> 00:27:50,723
+Burada kaç tane? Altı tane ise...
+
+68
+00:27:54,900 --> 00:28:00,900
+Altı tane filtre varsa, her filtre için sadece bir tane Scalar Bias Terimi kullanılıyor.
+
+69
+00:28:02,900 --> 00:28:12,524
+Altı tane Bias Terimi olmuş oluyor. Burada on filtre kullanılmış, on tane Bias Terimi. Burada on iki filtre kullanılmış, on iki tane Bias Terimi.
+
+70
+00:28:20,403 --> 00:28:43,483
+Şimdi burada şeyi soruyor, hala farkındaysanız non-linearity'ye girmedi. Şunu soruyor, iki convolutional layer'ı arka arkaya kullanırsak ne olur? Başka bir convolution elde ederiz. Çünkü convolution linear bir operatör.
+
+71
+00:28:44,115 --> 00:29:08,536
+Linear operatörleri kullanırsanız arka arkaya yine linear bir operasyon yapmış olursunuz. Bununla da ilgili daha önce konuşmuştuk. Uzaylarımız, karmaşık uzaylar sadece linear bir çizgiyle ayrılamıyordu. Non-linearlık gerekiyordu. Şu şekilde artık.
+
+72
+00:29:08,912 --> 00:29:23,192
+Nanlineerlikler gerekiyor. İşte burada da ZELU ile bu nanlineerlikler ne yapılıyor? Ekleniliyor. ZELU'yu daha önce konuşmuştuk.
+
+73
+00:29:28,819 --> 00:29:40,640
+Şu fonksiyon. Max 0x. Fx eşittir. Max 0x fonksiyonlar elde ediliyor.
+
+74
+00:29:47,028 --> 00:30:12,407
+Burada bu convolutional filtreler ne öğrenir diye sormuş. Daha önceki slide'larına bakabilirsiniz. Bu Justin Johnson'ın videoları da var. Birkaç yıl önceki 2017'deki videoları var. Ya da 2019'daki videoları var.
+
+75
+00:30:13,172 --> 00:30:38,091
+Eğer hani Computer Vision yapacaksanız tavsiye ederim hepsini okumanızı. Daha önceki slide'larında dinlemenizi ve tavsiye ederim tüm videolarını. Daha önceki slide'larında convolutional olmayan neural networklerle imge tanımaya çalıştı ve
+
+76
+00:30:39,284 --> 00:31:03,183
+Şunu fark etti. Orada işte giriş x imgesi bir ağırlıkla çarpılıyor. Çıktı elde ediliyor ya. Bu W'yu imgenin boyutuna diyelim ki imgemiz 32'ye çarpı 32.
+
+77
+00:31:03,955 --> 00:31:21,175
+W'yu imge boyutuna getirip bir resim haline getiriyorlar. Ve W neye benziyor? Ona bakıyorlar. Burada da GIFAR 10 dataset'i var. Mesela eğitimden sonra W gittikçe değişiyor.
+
+78
+00:31:32,051 --> 00:31:53,331
+Geyik, köpek, kurbağa, at, gemi, truck yani kamyon mu oluyor? Linear klasifier, linear sınıflayıcı böyle bir kocaman template öğreniyor her bir sınıf için.
+
+79
+00:31:53,331 --> 00:31:59,291
+Bir ortalama değer gibi bir şablon, template'e şablon deriz, şablon öğreniyor.
+
+80
+00:32:00,435 --> 00:32:27,536
+Bunu görmüştük. Peki, convolutional filtrelerini öğreniyor. Buna da aynı şekilde bakıyorlar. Bu 6 tane kernel var ya burada. Zaten bunlar kernellar 3'e 5'e 5'lik bir şekle sahip. Şunu yapabiliyorlar.
+
+81
+00:32:28,500 --> 00:32:47,380
+Şurada da bir kernel seti kullanmıştı. Ya direkt bu üç çarpı beş çarpı beşlik imgeyi, kernel'ın ne olduğuna bakıyorlar veyahut şey de yapabilirler.
+
+82
+00:32:56,531 --> 00:33:06,451
+Şu katmandaki bir kernel'un birkaç pikseline bağlı. O şekilde bir yaklaşımla da görüntü elde edilebilir.
+
+83
+00:33:07,651 --> 00:33:17,371
+Sonuçta ama bu kernel'ları bu şekilde resim olarak çıkartmışlar.
+
+84
+00:33:21,971 --> 00:33:23,651
+Kernel'lar ne öğreniyor?
+
+85
+00:33:26,771 --> 00:33:27,932
+Buna bakmışlar.
+
+86
+00:33:32,500 --> 00:33:57,620
+Kernel'lar şu şekilde, bunu daha önce de konuşmuştuk. Mesela AlexNet'in birinci layer'ında, Kernel'lar bu şekilde edge çıkaran, yani kenar bulan veya biz eskiden gabor filtreleri vardı. Gabor filtrelerine çok benzetiyorum ben şunları.
+
+87
+00:33:59,124 --> 00:34:13,523
+Edge'leri çıkaran, bazen tek noktaları bulan, blobları falan, alanları bulan, mesela şu tarz bir paterni bulan.
+
+88
+00:34:20,019 --> 00:34:41,239
+Katmanı 11'e 11'lik kernerlerden oluşuyor zaten. Dolayısıyla direk resimleyebiliyorsunuz. Bu şekilde alt seviye özellikleri çıkaran filtreler öğreniliyor.
+
+89
+00:34:47,219 --> 00:35:06,500
+Uzamsal boyuta baktığımızda daha ayrıntılı, yani konvolüsyon nasıl oluyor? Yani bu X, bu Y uzamı bu şekilde daha önce gördüğümüz gibi konvolüsyon oluşmuş oluyor.
+
+90
+00:35:09,907 --> 00:35:21,047
+Bir piksel yukarıdan bir piksel aşağıdan kaybeder gibi yaptık ama sonuçta çıktı katmanı nasıl elde edilir? Bununla ilgili bir formül çıkabiliyor.
+
+91
+00:35:21,047 --> 00:35:36,867
+Eğer girişiniz W çarpı W ise yani 7 diyelim. Kernel boyutunuz da K ise burada 3'tü. O zaman
+
+92
+00:35:38,003 --> 00:35:45,684
+Çıkış resminiz ne oluyor? 3-7-4, bir daha 5. 5 çarpı 5 oluyor alt tutunuz.
+
+93
+00:35:45,684 --> 00:35:49,923
+Yani böyle bir formül var.
+
+94
+00:35:49,923 --> 00:36:01,203
+Giriş resim boyutu, uyguladığınız kernelin boyutu. Burada tabii eşit boyutlu kernellerden kullanıldığı varsayılıyor.
+
+95
+00:36:01,940 --> 00:36:09,619
+İmputun da öyle olduğu varsayılıyor. Eğer farklıysa her boyut için farklı bir şekilde bunu adapte edebilirsiniz.
+
+96
+00:36:11,460 --> 00:36:17,420
+Kafadan da ben şeyi kullanıyorum. Mesela diyelim ki şöyle bir kernel'ımız var.
+
+97
+00:36:19,560 --> 00:36:22,680
+Mesela işte 3'e 3'lük ya.
+
+98
+00:36:26,931 --> 00:36:41,471
+Piksel. Genel olarak zaten filtreyi tek sayılı boyutta alırız. Şu yukarıdaki kadar bir yukarıdan kaybediyor. Bu aşağıdaki kadar da buradan kaybediyor.
+
+99
+00:36:42,751 --> 00:36:53,992
+Diye kafadan da hesaplayabiliyorum. Ama bir matematiksel hesap yapmanız gerekebilir. Networkleri oluştururken bu hesaplar önemli oluyor.
+
+100
+00:36:55,251 --> 00:37:07,851
+Dolayısıyla W-K artı bir tane Dimension'niz oluyor. Bu tabi ne oluyor? Biraz küçülüyor resim.
+
+101
+00:37:07,851 --> 00:37:13,851
+Bazen uygulayıcılar bu küçülmeyi istemiyor. Çünkü hesaplar birbirine karışıyor.
+
+102
+00:37:13,851 --> 00:37:20,251
+Mesela küçük bir resminiz var diyelim ki çok derin bir network'e vereceksiniz.
+
+103
+00:37:23,284 --> 00:37:43,304
+Katmanlı bir network'e vereceksiniz. İmgeniz küçüle küçüle elinizde çalışacak imge kalmayabilir. Dolayısıyla bazen ne yapılıyor? Zero Padding yapılabiliyor. Yani imge boyutunu koruyalım diye Zero Padding yapılabiliyor.
+
+104
+00:37:49,204 --> 00:38:16,384
+O zaman çıkış katmanındaki büyüklük şu şekilde hesap ediliyor. Yani W burada 7 idi. Körnol büyüklüğümüz 3 artı 1. Padding Size'ı burada 1 padding yapmış. Yani 1 boyutta padding'i 1 yapmış. Artı 2 çarpı 1 diyelim. Çıkış o zaman ne olacak?
+
+105
+00:38:16,884 --> 00:38:37,304
+Üçten yedi çıktı dört, bir daha beş, iki daha yedi. Çıkış da yediye yedi olacak. Girişimiz de yediye yediydi. Amaç işte o yediye yediliği burada ne yapmak oluyor? Genelde sabit kalsın imge boyutu.
+
+106
+00:38:37,972 --> 00:38:44,452
+Daha ayrıntılı, istediğim boyuta insin derseniz P'yi de ona göre de ayarlayabilirsiniz.
+
+107
+00:38:46,032 --> 00:38:48,771
+P'yi çoğu zaman nasıl elde ediyoruz?
+
+108
+00:38:48,992 --> 00:38:57,672
+K-1 bölü 2 ile, hani az önce ben demiştim ya, 3 çarpı 3 de şuralar gidiyor demiştim ya.
+
+109
+00:38:58,432 --> 00:39:00,271
+İşte o giden kısım ne oluyor?
+
+110
+00:39:01,752 --> 00:39:03,692
+3'den 1 çıkarın, 2 oluyor.
+
+111
+00:39:04,628 --> 00:39:17,028
+İkiyi de ikiye bölün bir. Yukarıdan bir, alttan bir gidiyor. Dolayısıyla padding'i de ona göre hesap edebilirsiniz eğer imge boyutu sabit kalsın istiyorsanız.
+
+112
+00:39:20,028 --> 00:39:22,188
+Receptive Field'lar.
+
+113
+00:39:23,588 --> 00:39:25,387
+Input Receptive Field'ı.
+
+114
+00:39:27,208 --> 00:39:31,228
+Receptive Field yani görsel alan.
+
+115
+00:39:33,139 --> 00:39:51,019
+Gördüğü alan gibi düşünebilirsiniz. Outputtaki her bir piksel inputtaki bir alanı görüyor. O alanın işlemi sonucu elde edilmiş.
+
+116
+00:40:00,916 --> 00:40:14,556
+alın oluyor. Kernel Size'ı da K ise dolayısıyla mesela 3Sv3'deki gibi her biri çıktı 3x3'lük bir Receptive Field'e sahip.
+
+117
+00:40:14,956 --> 00:40:28,735
+Tabi biz ne yapıyoruz? Arka arkaya konvolüsyonlar yapıyoruz. O zaman çıktıdaki bir piksel bir önceki katmanda
+
+118
+00:40:29,876 --> 00:40:43,876
+Şu şekilde üçe üçlük bir alana bağlı ama o üçe üçlük alan bir önceki çıktı da şuradaki gibi bir Receptive Field'a bağlı.
+
+119
+00:40:43,876 --> 00:40:55,876
+Ve bu Receptive Field veya bu alan diyebiliriz, bir önceki katmanda şu Receptive Field'a bağlı olur.
+
+120
+00:40:59,572 --> 00:41:07,891
+Girişte bu büyüklükte bir alanı ne yapıyor? Görüyor diye bakabilirsiniz.
+
+121
+00:41:07,891 --> 00:41:20,072
+Bunun hesabını da yapmışlar. Her bir arka arka konvolüsyon k-1ta ekliyor.
+
+122
+00:41:23,603 --> 00:41:37,303
+L tanede layer'ınız varsa Receptive Field Size'ı 1 artı L çarpı K eksi 1'lik bir Receptive Field Size'ı oluyor burada.
+
+123
+00:41:37,443 --> 00:41:41,503
+Tabi burada aynı boyutlu kerneller kullandığımızı düşünüyoruz.
+
+124
+00:41:41,503 --> 00:41:44,503
+Mesela burada bu hesabı tekrar etmeye çalışalım.
+
+125
+00:41:45,384 --> 00:41:49,163
+K'ımız 3, 3 çarpı 3'lü kerneller kullanıyoruz.
+
+126
+00:41:51,731 --> 00:41:52,492
+Evet, doğru.
+
+127
+00:41:56,692 --> 00:42:05,511
+3-1 Bunu layer sayısıyla çarpacağım. Kaç layer var burada?
+
+128
+00:42:05,511 --> 00:42:15,511
+1, 2, 3, 4 diye mi sayacağım? 1, 2, 3 diye mi sayacağım veya 1, 2 diye mi sayacağım? Hangisinden bahsediyor?
+
+129
+00:42:15,511 --> 00:42:22,431
+Her bir convolutional, benim tahminim 1 convolutional layer, 2 convolutional layer, 3 convolutional layer.
+
+130
+00:42:23,251 --> 00:42:26,692
+Layer sayısı 3 diye düşünüyorum. Bakalım doğru muymuş?
+
+131
+00:42:27,572 --> 00:42:28,672
+1'leri toplayacağız.
+
+132
+00:42:32,788 --> 00:42:43,948
+Ne yapıyor? 3'ten 1 çıktı. 2 kere 3, 6. Bir daha 7. Bakalım burası 7 mi? Evet 7. Burası 7 çarpı 7.
+
+133
+00:42:48,028 --> 00:42:58,568
+Dolayısıyla bu şekilde de Receptive Field Size'ını hesap ediyoruz. Bu Receptive Field Size'ı hesap etmek neden önemli?
+
+134
+00:43:00,244 --> 00:43:15,884
+Şunu gözlemliyorlar. Büyük bir imge varsa, diyelim ki, 1024'lük bir imgeniz lazım.
+
+135
+00:43:28,884 --> 00:43:45,463
+Kaç konvolüsyon sonra belirli bir küçüklüğe indirirsiniz. O küçüklükle de sınıflama yaparsınız. Yani küçülteceğiz sonra da sınıflama yapacağız.
+
+136
+00:43:45,463 --> 00:43:55,703
+Bunun hesabını bu receptive fields'larla yapabiliyorsunuz ve buradaki küçülme çok büyük değil.
+
+137
+00:44:00,788 --> 00:44:22,547
+Dolayısıyla çok fazla layer gerekecek. Bu nedenle ek bir boyut küçültme işlemi yapılıyor. Bir iki alternatif var. Bir alternatif strided convolution yapmak.
+
+138
+00:44:28,307 --> 00:44:43,948
+Mesela stride 2 ise 2-2 konvolüsyon atlıyor. Output'un büyüklüğü de W-K artı 2P bölüse artı 1 oluyor.
+
+139
+00:44:43,948 --> 00:44:48,188
+Stride'a S diyelim. Normalde stride 1'dir.
+
+140
+00:44:48,188 --> 00:44:52,907
+Defautu 1. Ama diyelim ki ikişer ikişer atlıyoruz yani.
+
+141
+00:44:53,043 --> 00:45:03,644
+Burayı konvolve ettikten sonra burayı konvol ediyoruz. Fitre iki yana geçiyor. Aşağı inerken de yine iki aşağı inecektir.
+
+142
+00:45:04,644 --> 00:45:13,644
+Bu sefer ne olacak bakalım. W mesela 7'ye 7 oldu burada. Kernel boyutumuz 3'e 3'lük.
+
+143
+00:45:15,443 --> 00:45:26,204
+Padding yaptığımızı düşünelim. Mesela Padding 3'e 3'lük olduğu için Padding'imiz 1 olsun. 3-1 bölü 2'den. 2 çarpı 1.
+
+144
+00:45:27,484 --> 00:45:41,204
+Bölü, stride'ımızı da 2 yapacağız. Artı 1 diyor. Ne yaptık? Burası 4, 2 daha 6. 2'ye böldün 4. 1 ekledin 5.
+
+145
+00:45:43,699 --> 00:45:46,539
+Çıkışımız 5'e 5'lik bir ilgi olmuş.
+
+146
+00:45:57,715 --> 00:46:02,315
+Bunların tabii örnekleri var.
+
+147
+00:46:07,635 --> 00:46:27,975
+Bunlar, bu hesapları yapabilmek önemli. Giriş sayısı 3'e 32-32. 10 tane 5x1 eşlik filtre kullanmış. Strait 1 ile P2 ile output volümü ne olur demiş.
+
+148
+00:46:34,579 --> 00:46:36,300
+Kafanıza yazmış mıydınız?
+
+149
+00:46:39,019 --> 00:46:42,960
+Onları hemen, benim şu anda kafamda da yoktu da direkt.
+
+150
+00:46:44,340 --> 00:46:47,420
+Şunu, şu hesabı direkt kafanıza yazmanız lazım.
+
+151
+00:46:47,579 --> 00:46:48,880
+Siz dayda bölüyorsunuz.
+
+152
+00:46:51,019 --> 00:46:56,899
+O hesabı yaptığımızda, 32 çarpı, 33 çarpı, üstlük bir imge.
+
+153
+00:46:58,500 --> 00:46:59,880
+32 artı.
+
+154
+00:47:01,043 --> 00:47:13,583
+2 çarpı 2 eksi 5 bölü 1 artı 1'den 32. Yani uzamsal, speciala uzam diyoruz, uzamsal hacim sabit kalıyor.
+
+155
+00:47:17,427 --> 00:47:41,327
+Kaç tane parametre öğreniyoruz burada diye sormuş. 10 tane 5x5 fitre var. Dolayısıyla 5x5, 25 değil mi? 10 tane 250 eder. Bir de 3 kanalı var.
+
+156
+00:47:42,324 --> 00:47:52,724
+3 kere 250, 750 etmesi lazım. 10 tane de beyaz var. 750, 10 daha, 760 etmesi lazım. Bakalım doğru mu?
+
+157
+00:47:52,724 --> 00:48:03,724
+760'mış. Evet. Dolayısıyla 760 parametre öğrenmemiz gerekiyor. Bu convolutional, böyle bir convolutional layer için.
+
+158
+00:48:09,460 --> 00:48:14,039
+Kaç tane çarpma ve toplama operasyonu gerekiyor diyor.
+
+159
+00:48:14,039 --> 00:48:19,480
+Şimdi neden çarpma toplama operasyonunu istiyor?
+
+160
+00:48:20,340 --> 00:48:32,119
+Modern CPU, GPU'lar tek bir işlem döngüsünde bir çarpma ve bir toplama yapabiliyormuş.
+
+161
+00:48:33,492 --> 00:48:52,932
+Çarpma ve toplamayı tek işlem olarak yapabiliyor modern işlemciler. Dolayısıyla bir çarpma ve bir toplamaya beraberce bir flop deniliyor. Floating Point Operation, flop.
+
+162
+00:48:54,612 --> 00:49:00,192
+Tabii, nörel network eğitiminin kaç flop alacağı önemli bir şey.
+
+163
+00:49:00,724 --> 00:49:06,463
+Bunları işte bu network boyutunuzdan hesap edebilmeniz gerekiyor.
+
+164
+00:49:09,204 --> 00:49:13,403
+Tabii burada ne yapacağız? Nasıl yapmış bu hesabı?
+
+165
+00:49:16,403 --> 00:49:25,463
+Kaç çıktı olduğuna bakmış. On bin çıktı. Her bir çıktı da...
+
+166
+00:49:30,164 --> 00:49:36,764
+İki tane 3x5 tensörün çarpımından elde ediliyor diyor.
+
+167
+00:49:38,963 --> 00:49:41,564
+75 eleman
+
+168
+00:49:45,300 --> 00:49:47,260
+Total'de şöyle bir şey bulunmuş.
+
+169
+00:49:53,300 --> 00:50:06,180
+Yani aslında şey oluyor değil mi bu? Kernel 760'dı değil mi? Kernel boyutu.
+
+170
+00:50:12,179 --> 00:50:17,239
+Çarpı output'un boyutu değil mi bu sayı?
+
+171
+00:50:24,467 --> 00:50:34,787
+Beyazı çıkarıyor tabi buradan. Beyazları çıkarıyor. Göz önünde bulundurmuyor beyazları.
+
+172
+00:50:34,787 --> 00:50:49,347
+5x5 10 tane filtre, 25 250, 3 kanallı 750. Dolayısıyla buradan ne geliyor?
+
+173
+00:50:52,724 --> 00:50:54,724
+750 tane
+
+174
+00:50:58,164 --> 00:51:02,724
+Filtre hücresi var diyelim.
+
+175
+00:51:11,284 --> 00:51:27,483
+Çıkış sayımız da 10x32x32 oluyor. Bakalım doğru muymuş bu kalkulator'ı şuradan başka bir şekilde hesap ediyorum da.
+
+176
+00:51:53,043 --> 00:51:55,043
+10 çarpı
+
+177
+00:51:57,043 --> 00:51:59,043
+102 çarpı 102
+
+178
+00:52:01,043 --> 00:52:03,043
+10.240
+
+179
+00:52:07,891 --> 00:52:10,971
+240 tane output var. Şu şekilde.
+
+180
+00:52:19,572 --> 00:52:30,572
+Bu atutların her bir tanesi ne yapılıyor? Bir tane kernel boyutu, bir tane kernelle çarpılıyor.
+
+181
+00:52:34,483 --> 00:52:49,403
+Evet, yani her bir output bir tane 75x75. Burada şeyi şaşırdım biraz ben. Ha tamam, kernel boyutunda kanal var. Tamam oldu. Tamam oldu.
+
+182
+00:52:49,403 --> 00:53:01,023
+Her bir nokta bir kernel'in iç çarpımı çok sonucu elde ediliyor. Siz kafanıza toparlayabildiniz mi bu hesabı arkadaşlar?
+
+183
+00:53:03,315 --> 00:53:19,755
+Çıkıştaki piksel sayısı, her bir piksel nasıl bir kernelin konvolüsyonuyla elde edilmiş? Çünkü her bir piksel, kernel ile bir iç çarpım sonucu elde ediliyor.
+
+184
+00:53:19,755 --> 00:53:30,475
+İç çarpım ne demek zaten? Bir çarpma, bir toplama demek yaklaşık olarak. Aslında tam olarak.
+
+185
+00:53:30,739 --> 00:53:49,699
+Çünkü bir döngü için düşünürsek, bir bir keç düşünün, o bir keç sıfırdan başlar. Sonra birinci elemanı çarpıp ona toplarsınız ikinci. Dolayısıyla tam olarak 75 tane çarpım toplam oluyor.
+
+186
+00:53:54,483 --> 00:54:06,083
+Bu da bize 75 çarpı 10.250'den 768.000 tane flop çarpma toplama işlemi verdi.
+
+187
+00:54:08,083 --> 00:54:15,083
+Burada tabii bir de aslında tam olarak doğru olmak istersek ne yapıyoruz?
+
+188
+00:54:18,324 --> 00:54:26,324
+Her bir pikseli elde ederken bir de beyazla topluyoruz. Değil mi?
+
+189
+00:54:30,324 --> 00:54:39,324
+Beyaz ama küçük bir sayı. Onu hiç toplamada göz önünde bulundurmamış.
+
+190
+00:54:50,452 --> 00:55:04,612
+Konvolüsyon için 1x1 konvolüsyona rastlayabiliyorsunuz. 1x1'lik konvolüsyon layer'larına rastlayabiliyorsunuz networklerde. Bu sizi şaşırtmasın.
+
+191
+00:55:17,427 --> 00:55:34,228
+Ne yapmak? Bir konvolüsyon yapmak. Ve sonuçta bunu elde etmek. Burada da yine her bir piksel, şu piksel mesela ne oluyor?
+
+192
+00:55:44,755 --> 00:55:59,635
+Ne yapılması? Burayla konvolüsyona sokulmasıyla elde ediliyor. Yani 1 çarpı 1 çarpı 64'lük sayı farklı yazdık. Belki önce eksiye yazılmış.
+
+193
+00:56:01,635 --> 00:56:09,135
+Evet, dolayısıyla 32 tane ise 32 tane bu şekilde filtre.
+
+194
+00:56:10,099 --> 00:56:30,659
+Bunlar ne için kullanılabiliyor? 1x1'lik konvolüsyonlar görebileceğiniz gibi kanal sayısını azaltmak ya da artırmaya yarıyor ve bir nevi multilayer perceptron gibi bir şey çalışmış oluyor buraya.
+
+195
+00:56:33,907 --> 00:56:51,347
+Bunu tek bir giriş, X girişi diye düşünürseniz bir kernel ile çarpılıyor. İşte beyaz da toplanıyor. Relu'ya da veriliyor. Direkt burası elde ediliyor.
+
+196
+00:57:01,811 --> 00:57:05,951
+Çıkıştaki her bir piksel bir tane linear.
+
+197
+00:57:09,619 --> 00:57:27,459
+Reli olduğu için linear demeyeceğiz de ne diyeceğiz? Fully Connected diyeceğiz. Fully Connected Network'le bağımsız, birbirinden bağımsız Fully Connected Network'ler buraları elde etmiş gibi bir durum oluyor.
+
+198
+00:57:27,459 --> 00:57:37,039
+Bunlar genelde networklerde kanal sayısını azaltmak için kullanılabiliyor.
+
+199
+00:57:48,628 --> 00:58:04,708
+Evet, burada bir summary vermiş. Genel olarak, filtreler küçük ve kare filtrelerden oluşuyor. Eni boyu birbirine eşit.
+
+200
+00:58:15,092 --> 00:58:23,012
+Neural Networkler üzerine PhD yapmış. Yani PhD'sini orada yapmış bir insan. Biz biraz geç kaldık.
+
+201
+00:58:23,932 --> 00:58:37,412
+PhD'mizi klasik computer vision'da yaptık biz. Onlar tabii bu işin pratiğini yaptıkları için bu tarz ipuçlarını biliyorlar.
+
+202
+00:58:41,715 --> 00:59:09,075
+Bir de şey var, Stanford'da da yine Justin ve bir başka insan anlatıyor. Feyfeiliğinin sınıfı. Ama Feyfeiliği değil de Justin Johnson ve Selena miydi? Bir tane kız anlatıyorlar. O zaman bunlar herhalde asistan orada.
+
+203
+00:59:09,715 --> 00:59:28,895
+Sonra Justin Johnson başka bir üniversitede hoca oluyor. Hemen hemen aynı içeriği aynı Stanford'takine videolarından ama Stanford'taki videolar 2017'de Justin Johnson'unki 2019'da biraz daha güncel. Bayağı ayrıntılı.
+
+204
+00:59:32,148 --> 00:59:44,788
+Neural Network, Convolutional Neural Networkler nasıl kullanılıyor? Çok ayrıntılı anlatıyorlar. O videoları baştan sona izlemenizi tavsiye ederim.
+
+205
+00:59:46,628 --> 00:59:59,367
+Padding işte imge sayısını sabit tutacak şekilde ayarlanıyor. Kanal sayısı genelde ikinin katları ile.
+
+206
+01:00:00,148 --> 01:00:16,867
+Kullanılıyor. Yani 34 gibi, 64 gibi, 128, 256 gibi kanal sayıları genelde kullanılıyor. Filtre sayıları diye düşünebilirsiniz.
+
+207
+01:00:24,724 --> 01:00:50,024
+Az önceki gibi tek boyutlu kerneller kullanılabiliyor. 3-1-S, 5-2-S, 1-0-S, 3-1-S-2 gibi şeyler değerlerin pratikte kullanıldığından bahsediyor.
+
+208
+01:00:52,179 --> 01:01:00,059
+Şimdi ne kadar iki boyutlu konvolüsyon gördük. Ama bir boyutlu konvolüsyondan da bahsedebiliriz.
+
+209
+01:01:04,244 --> 01:01:26,304
+Bir boyutlu konvolüsyon genelde tek boyutlu sinyaller için kullanılıyor. Mesela ses işleyeceksiniz. Veyahut tekst, yani yazı tanıyacaksınız, yazıları tanıyacaksınız. Yazılar da yine tek boyutlu sinyaller gibi düşünülebilir.
+
+210
+01:01:31,827 --> 01:01:42,228
+Resimlerde normalde giriş kanal sayısı, yükseklik, genişlik oluyor.
+
+211
+01:01:42,228 --> 01:01:55,228
+Kernel'ınızda kaç tane kanal çıkışta istiyorsanız çarpı her bir kernel'ınız böyle oluyor.
+
+212
+01:01:55,228 --> 01:01:59,427
+Giriş kanal sayısı çarpı kernel eni boyu.
+
+213
+01:02:00,596 --> 01:02:17,496
+İki boyutlu da. Bir boyutlu konvolüsyonda girişiniz bir kanal sayısı ve bir n'e sahip diyor.
+
+214
+01:02:29,715 --> 01:02:31,715
+Nasıl anlayacağız bunu?
+
+215
+01:02:34,215 --> 01:02:43,715
+Yani şey gibi mi diyeceğiz? Bunlar mesela tekst de düşünürsek, şunların her biri bir tekst mi?
+
+216
+01:02:53,619 --> 01:03:10,659
+Evet, ben öyle anlıyorum. Siz de öyle anlıyor musunuz? Her biri, çünkü bunu ben kullanmadım, tamamen değilim. Her biri bir tek satırı gibi düşünebilirsiniz.
+
+217
+01:03:22,900 --> 01:03:33,140
+Kullanacağınız weightlerde kaç kanal istiyorsunuz?
+
+218
+01:03:36,140 --> 01:03:50,539
+Input kanalı ve kernel'in eleman sayısı. Yani burada kernel'imiz uzamsalda x'de y'de 3'e 3'lükse, uzamsalda burada bir tane.
+
+219
+01:03:50,835 --> 01:03:52,835
+Sadece x'i var gibi.
+
+220
+01:03:54,835 --> 01:04:02,835
+Böyle bir boyutlu konvolüsyon düşünebilirsiniz veya üç boyutlu konvolüsyonlar da düşünebilirsiniz.
+
+221
+01:04:04,835 --> 01:04:14,835
+Tabi burada biraz daha hayal etmek zorlaşıyor çünkü çıkış artık beş boyuta falan çıkıyor.
+
+222
+01:04:17,684 --> 01:04:24,284
+Dolayısıyla uzamsal yapısı, kernel'ın üç boyutlu.
+
+223
+01:04:26,884 --> 01:04:33,084
+Her bir kanal için bundan bir tane lazım, girişteki.
+
+224
+01:04:33,084 --> 01:04:41,284
+Çıkıştaki her bir kanal için bir tane daha lazım şeklinde düşünmemiz gerekiyor.
+
+225
+01:04:41,972 --> 01:04:58,872
+Input'unuzda mesela yine uzamsalda şöyle oluyor. Yükseklik, genişlik ve üçüncü boyuttaki sayfa sayısı ve giriş kanal sayısı. Bunlar da kullanılabiliyor.
+
+226
+01:05:02,420 --> 01:05:22,420
+PyTorch, Justin PyTorch'u seviyor. Dolayısıyla kullandığı notasyonda, PyTorch dökümanında göreceğiniz notasyonda hemen hemen aynı.
+
+227
+01:05:28,244 --> 01:05:54,804
+Cout çıkış kanal sayısı, Cin giriş kanal sayısı, H height width, çıkış width, bunun yanında stride, bu kernel size k.
+
+228
+01:05:56,467 --> 01:06:16,527
+In Channels C, In. Out Channels C, Out. Padding, P, Stride, az önceki S. Burada bir de Delation var. Justin buna hiç girmedi. Yine bir Groups var, buna hiç girmedi.
+
+229
+01:06:20,436 --> 01:06:28,115
+ve zero padding harici. Bunu dersimizde görmüştük. Başka paddingler kullanabilirsiniz.
+
+230
+01:06:28,115 --> 01:06:36,036
+İki boyutlu konvolüsyon sınıfı var. Bunu kullanıyorsunuz.
+
+231
+01:06:36,036 --> 01:06:43,316
+Ve çıkıştaki batch sayısı ve kanal sayısı bu şekilde.
+
+232
+01:06:50,420 --> 01:07:00,139
+Çıkış katmanınızın nasıl olacağı böyle bir formülle veriliyor. Bu sanırım az önce gördüğümüz formüllere denktir.
+
+233
+01:07:00,920 --> 01:07:05,519
+Veya düşünürseniz siz de bunu görebilirsiniz.
+
+234
+01:07:07,320 --> 01:07:12,940
+Yine bir boyutlu konvolüsyonu da var, üç boyutlu konvolüsyonu da var PyTorch'un.
+
+235
+01:07:19,923 --> 01:07:42,923
+Tabi boyutu indirgemeye çalışırken daha hızlı bir indirgeme yapmak isteyebiliyorsunuz. Diyelim ki resminiz çok büyük ve kernel size'ını çok hızlı bir şekilde indirmek istiyorsunuz.
+
+236
+01:07:44,367 --> 01:07:52,627
+Ne yapıyoruz? Downsample yapmak için, boyutu azaltmak için. Pool yapıyoruz.
+
+237
+01:07:56,947 --> 01:08:03,467
+Pool'da, bunu dersimizde bahsetmiştik, sanki bir filtre var gibi.
+
+238
+01:08:07,603 --> 01:08:13,923
+Bu filtrenin işte mesela Max Pooling'de en büyük değerini alıp seçip buraya yazıyoruz.
+
+239
+01:08:14,723 --> 01:08:19,763
+Burada 2x2'lik bir pool'un kerneli düşünüyoruz.
+
+240
+01:08:19,763 --> 01:08:26,043
+Stride'ın da 2 almışız. Dolayısıyla buradan buraya geçiyor.
+
+241
+01:08:26,043 --> 01:08:35,323
+Buranın maksimumu 8, bunu yazdık. Sonra aşağıya iniyor. Buranın maksimumu 3, buranın maksimumu 4.
+
+242
+01:08:36,307 --> 01:08:55,708
+Bu uygulama kullanılıyor. Neden? Uzamsal olarak İngedeki nesnelerde böyle küçük şifre, yer değiştirmeler varsa buna karşı olabiliyor çünkü invarians sağlıyor.
+
+243
+01:08:56,564 --> 01:09:14,484
+Yani şu altı burada da olsa geliyor, burada da olsa geliyor, burada da olsa geliyor, burada da olsa geliyor bu altı buraya. Dolayısıyla uzamsal olarak algoritmaya bir sağlamlık katıyor. Bir parametre öğrenmiyorsunuz burada.
+
+244
+01:09:18,003 --> 01:09:28,203
+Genel olarak Max Pooling kullanılıyor. Average Pooling falan da var ama Kernel Size genelde 3, Strike de genelde 2.
+
+245
+01:09:28,203 --> 01:09:36,804
+Beğenme Alex Snek'te mesela Kernel Size 3, Strike 2 imiş. Genelde şu daha çok gibi geliyor bana.
+
+246
+01:09:43,667 --> 01:09:56,667
+Bir klasik architecture bu L-Net. Yan Lecun'un paper olduğu için Lecun'un neti. L-Net 5 örneği.
+
+247
+01:09:56,667 --> 01:10:09,227
+Bugün 1998'de yayınlanmış. Derin öğrenme patlaması 2006'larda falan başlıyor. Yani bir 8 yıl önce falan.
+
+248
+01:10:10,484 --> 01:10:25,084
+Bu mimariyi Yan Necun ve arkadaşları kurmuşlar. Ama çok büyük başarı elde edememişler. Çünkü neden? Veri, yeterince veri yok. Yeterince hesaplama gücü yok.
+
+249
+01:10:37,395 --> 01:10:54,675
+Image Map'leri elde ediyorsunuz. Sub Sampling yapıyoruz. Yani Pooling yapıyorlar. Sonra tekrar sanırım Sub Sampling'ler var. Sonra da şurada Fully Connected Layer'larla en son sınıfa bağlıyorlar.
+
+250
+01:10:57,675 --> 01:11:03,735
+Convolution, Relu, Pooling. Relu'yu bile kullanmış o zaman adamlar. En tane.
+
+251
+01:11:04,467 --> 01:11:28,747
+Konvolüsyon katmanı var. Flat'ın, işte Full Connected Layer, ingeyi artık flat ediyor, düzleştiriyor. Sonra yine bir Full Connected Layer var, relu en tane. En son bir Full Connected Layer daha var. Şeklinde bir yapısı var.
+
+252
+01:11:31,731 --> 01:11:35,492
+Burada tabii her bir şeyi...
+
+253
+01:11:39,412 --> 01:11:53,952
+Weight Size ne? Output Size ne? Bu şeylere göre hesap etmiş. Burada çok fazla ben durmayacağım. Az önce bu hesapları gördük. Onları not alıp kullanmanız gerekiyor.
+
+254
+01:12:06,068 --> 01:12:16,948
+Network boyunca ilerledikçe uzamsal boyut azalıyor. Yani X'ye inge büyüklüğü küçülüyor. Kanal sayısı artıyor.
+
+255
+01:12:16,948 --> 01:12:30,087
+Bir kanal, üç kanal, altı kanal falan gibi kanal sayısı artıyor. Toplamdaki volüm sabit kalıyor. Yani ona dikkat etmişler.
+
+256
+01:12:30,528 --> 01:12:41,516
+Burada kaç piksel varsa, şurada da o kadar piksel var. Böyle bir network oluştururken böyle bir prensipten yararlanmaya çalışmışlar.
+
+257
+01:12:47,444 --> 01:12:59,944
+Buraya kadarını esasen görmüştük biz. Bir şekilde ama ben üzerinden geçeyim dedim. Çünkü daha ayrıntılı, baya ayrıntılar var burada. O ayrıntıları bilmek önemli.
+
+258
+01:13:02,684 --> 01:13:14,043
+Bir de normalizasyon anlatıyor. Normalizasyon da yine daha ayrıntılı anlatıyor. Biz lokal kontrast normalizasyonunu görmüştük.
+
+259
+01:13:14,707 --> 01:13:17,927
+Daha ayrıntılı normalizasyonlar var.
+
+260
+01:13:23,807 --> 01:13:28,227
+Şöyle, mesela batch normalizasyon yapılıyor.
+
+261
+01:13:29,407 --> 01:13:41,627
+Bu, differentiable bir fonksiyon. Dolayısıyla öğrenilebilen bir şey veya bab kurulu.
+
+262
+01:13:42,047 --> 01:13:55,227
+Backpropagation'a katılabilen bir şey. 2015'te bulunuyor. Oldukça popüler, çok iyi sonuç veriyor. Derin ağların eğitilmesinde faydalı.
+
+263
+01:14:09,395 --> 01:14:09,895
+D.
+
+264
+01:14:16,756 --> 01:14:32,216
+Bu bir batch. Yani diyelim ki bu iki tane imgeden oluştuğunu düşünün. Normalde bin tane falan oluşuyor. Yani bin tane imgeyi konvolüsyona sokacaksınız falan gibi düşünün.
+
+265
+01:14:34,355 --> 01:14:43,935
+Ve imgenizde 3x32 ya da evet 32x32 olduğunda kaç oluyordu?
+
+266
+01:14:44,948 --> 01:14:47,948
+10.250 oluyordu değil mi bu?
+
+267
+01:14:49,548 --> 01:14:53,648
+32 çarpı 32 çarpı 3
+
+268
+01:14:55,068 --> 01:14:56,068
+Olmadı.
+
+269
+01:15:02,739 --> 01:15:20,920
+32x32x3. 3072. Bu 3072 tane piksel var demek. Bu 3072'ye yani şu boyut.
+
+270
+01:15:24,500 --> 01:15:26,039
+Böyle olduğunu düşünün.
+
+271
+01:15:29,908 --> 01:15:56,408
+3072. Watchbook normalizasyonu ne yapıyor? Normalde diyelim ki bir milyon tane imgemiz var. Ama batch training'de ne yapıyoruz? Biner biner training yapıyoruz. Enimiz bin. Ve her bir imgemizin 3072 tane pikseli var.
+
+272
+01:15:57,203 --> 01:16:06,763
+Özelliği var. Ne yapıyoruz? Her bir kolon boyunca ne yapıyoruz? Mine hesap ediyoruz.
+
+273
+01:16:11,347 --> 01:16:11,948
+Ön.
+
+274
+01:16:15,123 --> 01:16:38,323
+Sonra standart sapmayı hesap ediyoruz. Bu standart sapmayı ve mi'ni kullanarak normalize değerler elde ediyoruz. Yeni değerler. Şurada epsilon gibi bir basit, çok küçük bir değer eklenmiş sıfırla bölmeyi engellemek için.
+
+275
+01:16:44,979 --> 01:16:48,319
+Yine NxD oluyor elde ettiğimiz şey.
+
+276
+01:16:56,532 --> 01:17:22,952
+Bayağı faydalı olduğu görünmüş. Ama şöyle de bir şey görünmüş. Beş Normalizasyonu üzerinde. Tabii çalışıyor insanlar. Bu çok büyük bir constraint. Yani beş Normalizasyon, mean'i ortalamayı sıfır yapıyor. Varyansı da bir yapıyor. Bu büyük bir constraint olabilir diye tekrar ne yapıyorlar? Bir de şunu ekliyorlar. Şunu.
+
+277
+01:17:23,731 --> 01:17:27,372
+Bu değerleri biz tekrar bir değiştirelim. Nasıl yapalım?
+
+278
+01:17:31,432 --> 01:17:35,372
+Bir gamma ve beta ile ne yapalım?
+
+279
+01:17:36,832 --> 01:17:41,912
+Gamma ve beta ile bu değerleri çarpıp yeni değerler elde edelim.
+
+280
+01:17:43,692 --> 01:17:50,992
+Ama bu gamma ve beta ne yapacak?
+
+281
+01:17:57,492 --> 01:18:02,872
+Şu gama ve bu beta öğrenilecek.
+
+282
+01:18:10,644 --> 01:18:11,467
+Ön...
+
+283
+01:18:16,243 --> 01:18:43,603
+Bir nevi parametre oluyor bunlar. Öğrenilecek parametre oluyor. Network veriye göre bu gama ve betayı da öğreniyor. Ben öyle hatırlıyorum. 5 normalizasyonu kullanırken tekrar bir o konuya bakabilirsiniz. Dolayısıyla önce bir normalize ediliyor. Ama sonra tekrar bir nevi bu işlemin tersi yapılıyor.
+
+284
+01:18:44,307 --> 01:18:56,307
+Fakat öğrenilmiş ortalama ve şunu öğrenilmiş ortalama diyebiliriz.
+
+285
+01:18:56,807 --> 01:19:03,448
+Bunu da öğrenilmiş standart sapma diyebiliriz.
+
+286
+01:19:04,387 --> 01:19:09,047
+Çünkü burada ortalama çıkarılıyor, standart sapmaya bölünüyor bir nevi.
+
+287
+01:19:12,692 --> 01:19:25,692
+Backpropagation sonucunda öğrenilmiş standart satmayla ve ortalamayla tekrar beş normalizasyon bir nevi tersine döndürülüyor. Böyle bir işlem.
+
+288
+01:19:31,988 --> 01:19:58,208
+Tabii şöyle bir sorun var. Training zamanında şu değerleri bulabiliyoruz. Test zamanında ne yapacağız? Çünkü testte, şimdi trainingde mini-batchler kullanıyoruz. Yani 10 bine 10 bin, yani 1 milyon imgemiz varsa binlik batchler halinde eğitim yapıyoruz.
+
+289
+01:19:58,836 --> 01:20:17,596
+Dolayısıyla bu batchlerin ortalaması alınıyor. Ama test zamanında tek bir imgenin şeyini alıyoruz. Yani düşünün kullanma zamanı.
+
+290
+01:20:30,420 --> 01:20:54,200
+Tek bir imge geliyor. Network'ünüzün de aynı işlemleri yapması gerekiyor. Yani yine bir mine bölük, yine bir varyansa hesabı gerekiyor. Şu işlemi tek bir imge içinde, test zamanında yapmanız gerekiyor.
+
+291
+01:20:56,884 --> 01:21:03,844
+Bu meyim ve bu varyans olarak hangi değeri alacağız?
+
+292
+01:21:03,844 --> 01:21:13,644
+Cevap şöyle, test zamanında şunu yapmışlar.
+
+293
+01:21:14,123 --> 01:21:23,863
+Training sırasında gördüğümüz ortalamaların bir ortalaması alınıyor.
+
+294
+01:21:24,819 --> 01:21:41,039
+Yine varyansların bir varyansa ortalama sağlanıyor. Bu bir kenara kaydediliyor. Test zamanında bu yine trainingde kullandığımız ama bin değil de bir milyon.
+
+295
+01:21:42,119 --> 01:21:51,579
+Diyelim ki bir milyon imge var. Bir de bu bir milyon imge her bir epokta tekrar tekrar verilebiliyor.
+
+296
+01:21:52,851 --> 01:22:13,551
+Ama zaten aynı imgeleri tekrar verirseniz ortalama değişmeyecektir bence. Dolayısıyla bir milyon imge gibi düşünebiliriz gibi geliyor bana. O bir milyon imgenin ortalamasını ve standart satmasını bir kenara kaydedip test zamanında onları kullanıyorsunuz.
+
+297
+01:22:20,659 --> 01:22:33,440
+Burada şöyle bir not da düşmüş. Şimdi bunlar sabit sayılar olduğu için bir kenarda daha önceden hesap edilmiş bu işlem test sırasında lineer bir operasyon haline geliyor.
+
+298
+01:22:33,440 --> 01:22:37,440
+Dolayısıyla bir önceki katmanın...
+
+299
+01:22:40,115 --> 01:22:54,315
+Full Connected ya da konvolüsyon layer'ına direkt kernel boyutuna eklenebilir. Dolayısıyla test işlemi daha da hızlandırılabilir diye not düşmüş.
+
+300
+01:22:57,315 --> 01:23:02,996
+Tabii şimdiye kadar aslında Full Connected Networkler için konuştuk.
+
+301
+01:23:06,163 --> 01:23:28,743
+Yani orada X neydi? Beçimiz. Diyelim ki ne hesaplamıştık? 3072 miydi? 3072 piksel, 3x32, 32 ve 1000 tane de neyimiz var? Beçimiz var. Beçimizde 1000 imge var. İşte buna göre normalize etmiştik.
+
+302
+01:23:30,484 --> 01:23:53,004
+Dolayısıyla Müh ve standart hesapma 3072 çarpı birlik elde edilmişti. Öğrenmemiz gereken o gamma ve beta parametreleri de yine 3072 taneydi. Y'yi de bu şekilde hesap ediyoruz.
+
+303
+01:23:53,939 --> 01:24:18,500
+Az önceki formülleri yerine koyarken. Ama biz peki şeyde nasıl yapacağız? Convolutional Networklerde 5 normalizasyon yaparken ne yapacağız? Olay birazcık değişiyor. Yine 5 sayımız diyelim ki 1000. Kanal sayısı n ve boydan bahsetmiş.
+
+304
+01:24:21,555 --> 01:24:39,555
+Her bir kanal için, bu şekilde elde edeceğimiz her yeni kanal için bir Müh ve bir Sigma elde ediyoruz gibi görünüyor gördüğünüz gibi.
+
+305
+01:24:39,555 --> 01:24:44,043
+Ve tüm baçlar için, bin tane MG için.
+
+306
+01:24:44,819 --> 01:24:54,779
+Ve yine işte gamma ve betayı da öğrenmemiz gerekiyor. Ve bu şekilde değerleri ne yapıyoruz? Hesap ediyoruz.
+
+307
+01:24:56,639 --> 01:25:02,139
+Buna batch normalizasyon iki boyut ya da special batch norm isimleri verilebiliyormuş.
+
+308
+01:25:11,188 --> 01:25:22,068
+Beş Normalizasyon genelde Fully Connected ya da Convolutional Değerlerden sonra ekleniliyor diyor.
+
+309
+01:25:24,188 --> 01:25:26,427
+Non-Linearity'den önce.
+
+310
+01:25:27,907 --> 01:25:31,468
+Yani diyelim ki Fully Connected bir değerimiz var.
+
+311
+01:25:32,148 --> 01:25:35,708
+Sonra da Non-Linearity'ye vermeden önce.
+
+312
+01:25:36,564 --> 01:25:40,444
+Hala işler lineerken bir beş normalizasyon yapıyorsunuz.
+
+313
+01:25:44,724 --> 01:26:11,243
+Bununla ilgili tabii deneyler yapmışlar. Şunu görmüşler. Çok işe yarıyor bu. Derin networkler olduğu zaman çok daha kolay eğitiliyor. Daha hızlı learning rate'ler, optimizasyonda learning rate'ler var. Bunları kullanmanıza izin veriyor, yardımcı oluyor. Daha hızlı konverjans var.
+
+314
+01:26:17,716 --> 01:26:20,155
+Optimizasyon sonucuna daha hızlı gidiliyor.
+
+315
+01:26:22,516 --> 01:26:28,336
+Farklı initialization, yani başlatım değerlerine daha robust hal ediliyor.
+
+316
+01:26:30,176 --> 01:26:38,956
+Training, eğitim sırasında bir regularizasyon işlemi yapıyor. Yani overfitting'i engelleyebiliyor.
+
+317
+01:26:40,212 --> 01:26:49,392
+Ve test zamanında da gördüğünüz gibi konvolüsyona füyüz edildiği için sıfır şeyi.
+
+318
+01:26:52,452 --> 01:26:58,512
+Yani fiyatı sıfır, bize işlemsel maliyeti sıfır.
+
+319
+01:26:59,512 --> 01:27:01,532
+Burada ekurisiler falan var.
+
+320
+01:27:12,595 --> 01:27:25,735
+Burada Inception Network'ün normal eğitimi, 5 normalizasyon kullanımı, X5, X30, X5 Sigma'in ne demek onlar tam bilmiyorum ama
+
+321
+01:27:25,735 --> 01:27:37,175
+accuracy gördüğünüz gibi artıyor 5 normalizasyon kullandığımızda ve aynı accuracy'yi esasen, accuracy artmıyor da
+
+322
+01:27:38,963 --> 01:27:48,923
+Training İterasyonuna bakın. 30 milyon iterasyonda geleceği o başarıyı ne yapıyor? Belki 5 milyon iterasyonda buluyor.
+
+323
+01:27:50,423 --> 01:27:54,323
+Şu mesela. X35 normalizasyonu demiş.
+
+324
+01:27:57,403 --> 01:28:03,403
+Ayrıntılarını işte şu burada gördüğünüz gibi paperları vermiş. Bu paperlardan bakabilirsiniz.
+
+325
+01:28:07,315 --> 01:28:20,796
+Ama hani nöral networklerle sanırım birçoğunuz tez yapacak. Beş normalizasyonu kullanmanız gerekli gibi gözüküyor.
+
+326
+01:28:25,492 --> 01:28:50,152
+Negatif tarafları şu ana kadar neden çalıştığını tam bilemiyoruz diyor. Bir de şimdi test ve train sırasında farklı işlemler yapıyorsunuz. Kodlamanız farklı olmalı. Bu sırada da birçok kodlama hatası, pratikerler bunları yaşayabiliyormuş.
+
+327
+01:28:55,699 --> 01:29:04,199
+Bir de normalizasyonda layer normalizasyonu denilen, beş normalizasyon değil de layer normalizasyonu var.
+
+328
+01:29:15,828 --> 01:29:29,948
+Bu işte RNN'lerde, Transformers'larda kullanılıyor diyor. Burada neden bahsetti şimdi? Boyut sayısını bireğindir demiş değil mi?
+
+329
+01:29:36,020 --> 01:29:54,180
+Yani şu mu? N tane inge var. Beçimizde 1000 tane. Her biri 3072 piksele sahip. Daha doğrusu piksel değil de RGB diye düşünürsek 3072 değere sahip.
+
+330
+01:30:07,923 --> 01:30:12,824
+1 çarpı d'ye iniyor bu. Tamam. Farklı ne var?
+
+331
+01:30:17,908 --> 01:30:35,128
+Buraları Justin konuşarak anlattı. O kısım çok aklımda kalmamış. Buraya bakabilirsiniz veya araştırabilirsiniz bunu. Çünkü bir önceki de böyle değil miydi zaten?
+
+332
+01:30:38,931 --> 01:30:40,471
+Burası da böyleydi.
+
+333
+01:30:43,828 --> 01:30:45,348
+Farkını göremedim şimdi.
+
+334
+01:30:49,395 --> 01:30:50,395
+Evet.
+
+335
+01:30:54,131 --> 01:31:09,652
+Buna dediğim gibi ya Justin'in videosundan bakın ya da kendiniz bir araştırın. Layer Normalizasyon nedir? Bu da kullanılabilen bir şey. Yine Instance Normalizasyonundan bahsediliyor.
+
+336
+01:31:19,828 --> 01:31:28,428
+Bu, Batch Normalization for Convolutional Networks. Şu, Instance Normalization for Convolutional Networks.
+
+337
+01:31:28,428 --> 01:31:36,928
+Convolutional Networks için kanal sayısına indiriyoruz.
+
+338
+01:31:40,928 --> 01:31:45,928
+Mean'in eleman sayısına ve sigma'nın yani standart satmanın.
+
+339
+01:31:46,452 --> 01:31:56,452
+Instance Normalizasyonu da ne yapıyoruz? H ve V'yi yok ediyoruz.
+
+340
+01:32:02,131 --> 01:32:10,131
+Her bir imge için ve her bir kanal için bir değer hesap ediyoruz.
+
+341
+01:32:12,131 --> 01:32:17,131
+Ve yine benzer şekilde hep bunların kullanışları aynı esasen.
+
+342
+01:32:18,131 --> 01:32:28,043
+Ama bu MEN'i hangi boyutta veya nere üzerinden alıyoruz? MEN'i ve varyansı. Bu değişiyor bunların her birinde.
+
+343
+01:32:28,819 --> 01:32:30,219
+Ön...
+
+344
+01:32:43,475 --> 01:32:55,135
+Comparison of Normalization of Years. Burada bir comparison varmış. Sanırım bu video idi burası. Burası gelmemiş pdf'e. Buraya geçiyorum.
+
+345
+01:32:55,135 --> 01:33:07,435
+Grup normalizasyondan bahsediyor. Bu da 2018'de. 5 normalizasyonu.
+
+346
+01:33:12,564 --> 01:33:16,923
+Şu mavi ile gösterilen aranın miynini alıyor.
+
+347
+01:33:17,944 --> 01:33:23,323
+Layer Normalizasyonu yine bu mavi ile görünen alanın miynini alıyor.
+
+348
+01:33:24,344 --> 01:33:29,463
+Instance Normalizasyonu yine bu mavi ile görünen alanın miynini alıyor.
+
+349
+01:33:29,724 --> 01:33:34,064
+Grup Normalizasyonu da Instance Normalizasyonu'ndan elde edilmiş.
+
+350
+01:33:34,323 --> 01:33:39,444
+Şöyle gruplayıp miynini ve varyansını çıkarabiliyorsunuz.
+
+351
+01:33:40,340 --> 01:33:43,760
+5 normalizasyona ne diyor?
+
+352
+01:33:47,667 --> 01:33:49,587
+Şu kanal boyutu gibi gözüküyor.
+
+353
+01:34:02,868 --> 01:34:10,328
+H ve weight, yükseklik ve n. Burası da batch.
+
+354
+01:34:16,243 --> 01:34:21,543
+Bu VH'nin tabii bu imgeleri nasıl düşündüğünü de görmek lazım.
+
+355
+01:34:28,180 --> 01:34:42,180
+5 normalizasyonu, n çarpı d düşünürsek şuradan miyinleri alıyordu.
+
+356
+01:34:43,180 --> 01:34:48,180
+Bu tabi şekil buna uydurmak zor. Kanallarda var orada.
+
+357
+01:34:58,676 --> 01:35:02,676
+5 normalization for convolutional network tool.
+
+358
+01:35:08,212 --> 01:35:10,212
+Şu şekiline dönmüşüm yarı.
+
+359
+01:35:21,076 --> 01:35:26,195
+Diyelim ki iki tane imgemiz var. En eşittir iki diyelim.
+
+360
+01:35:28,115 --> 01:35:32,036
+Ve ne yapıyoruz? Buradaki kanal sayısı...
+
+361
+01:35:35,315 --> 01:35:39,716
+Altı tane filtre kullandık diyelim ki. Altı olacak.
+
+362
+01:35:41,716 --> 01:35:44,596
+Yani çıkışta her biri için...
+
+363
+01:35:47,572 --> 01:35:53,112
+Şimdi de 6 tane. 6 oldu mu? 6 oldu. Bir 6 da burada olacak.
+
+364
+01:35:58,228 --> 01:35:59,328
+Kanalı 6 diyelim.
+
+365
+01:36:09,171 --> 01:36:36,891
+5 normalizasyon ne yapıyor? Tüm n'ler boyunca gidiyor. Yani n'leri bile indiriyor. Kanal yine 6 tane kalacak. Yani şu ve şu. Bunların hepsinin ne yapılıyor? Mine alınıyor.
+
+366
+01:36:37,652 --> 01:37:04,652
+Sadece kanal bilgisi kalıyor. Müh. Müh nasıl oluyor? Her bir imge için bir değer geliyor. Yükseklik ve width içinde bir değer geliyor. Her bir kanal için 6 tanelik bir değer oluyor. 6 değerden oluşuyor.
+
+367
+01:37:07,412 --> 01:37:18,692
+Dolayısıyla her bir kanalın tüm değerleri ve bunu batch'ler üzerinden toplayacaksınız.
+
+368
+01:37:18,692 --> 01:37:23,372
+Ve ortalamasını alacaksınız diye anlıyorum ben.
+
+369
+01:37:23,372 --> 01:37:27,092
+Bunu yapmış olan var mı daha evvel?
+
+370
+01:37:40,372 --> 01:37:49,492
+Çok uzun bir ders oldu. Beklediğimden çok daha ayrıntılı olduğu için saat on buçuk, on bire geliyor.
+
+371
+01:38:01,076 --> 01:38:20,975
+Şuradaki imge ile bağdaştırmaya çalıştım da, yani bunu artık adamlar nasıl hayal ettilerse o kadar önemli değil. Ona çok takmıyorum. Önemli olan daha önceki duyduğumuz slide'daki o şeyler, hesaplamalar.
+
+372
+01:38:25,716 --> 01:38:28,435
+Dolayısıyla ne oldu?
+
+373
+01:38:30,420 --> 01:38:42,560
+Convolutional neural networklerin yapısına baştan ama daha ayrıntılı bir bakış atmış olduk.
+
+374
+01:38:45,000 --> 01:38:53,079
+CNN Architectures bir sonraki bölümde buna ne yapacağız? Bakacağız arkadaşlar.
+
+375
+01:38:57,076 --> 01:39:07,815
+Ders yapmış olduk tek parça halinde. Şöyle yapalım. 11'e kadar bir ara verelim. Biraz dinlenelim. 11'den sonra.
+
+376
+01:39:14,036 --> 01:39:14,756
+Devam
+
+377
+01:39:14,756 --> 01:39:17,596
+ederiz.
+
+378
+01:39:19,236 --> 01:39:22,196
+Sorunuz var mı bu kısımdan arkadaşlar?
+
+379
+01:39:29,939 --> 01:39:38,119
+Bu arada sorunuz vs. olursa chat'e yazmayın. Çünkü chat'i göremiyorum, tablet'tan anlattığım için.
+
+380
+01:39:42,759 --> 01:39:52,739
+Direkt sözsel olarak sorarsanız sorularınızı. Mesela chat'te bir şeyler olmuş galiba ama hiç görmedim.
+
+381
+01:39:55,315 --> 01:40:08,036
+Evet kullanılıyor demiş mesela birisi. Bu tarz şeyleri dediğim gibi chat'i göremiyorum tabletten anlattığım için. Sözsel olarak söylerseniz iyi olur.
+
+382
+01:40:09,516 --> 01:40:16,155
+Dediğim gibi bir ara verelim 11'e kadar sonra devam edelim.
+
+383
+01:40:19,796 --> 01:40:27,636
+Veya 10 dakika ara verelim. 10-50'ye kadar ara verelim. Sonra devam edelim arkadaşlar.
+
+384
+01:50:49,684 --> 01:50:52,524
+Arkadaşlar, tekrar merhabalar. Sesin geliyor mu?
+
+385
+01:51:00,851 --> 01:51:02,131
+Geliyor hocam sesini.
+
+386
+01:51:04,271 --> 01:51:05,431
+Teşekkürler.
+
+387
+01:51:12,435 --> 01:51:18,575
+Şimdi CNN Arketapsir, yani mimarilerine bir bakacağız.
+
+388
+01:51:34,931 --> 01:51:58,532
+CNN mimarilerini ImageNet yarışmaları vardı. Bunun üzerinden götürüyor, tartışıyor. 2011'e kadar shallow networkler başarılı.
+
+389
+01:51:59,220 --> 01:52:20,000
+Error Rate'i de %25, %28'den %26'larda falan. Zor bir veri seti bu. Sanırım bin tane sınıf var, bayağı büyük bir veri seti.
+
+390
+01:52:24,948 --> 01:52:40,448
+AlexNet yayınlanıyor ve birden inanılmaz bir hatada düşüş yaşanıyor ve bu noktadan itibaren de derin öğrenme olayı patlıyor.
+
+391
+01:52:42,587 --> 01:52:49,367
+Ben az önce 2006 demiştim, 2012'miş. Yani LNet 1998'di.
+
+392
+01:52:50,931 --> 01:53:12,551
+Yani mimari adamlar aslında 14 yıl önce geliştirmişler. Lecun, yani Lecun'u arkadaşlar ama başarıya ulaştıramamışlar. Neyse, AlexNet, şurada gördüğünüz gibi böyle bir orijinal paperda da bu resim var.
+
+393
+01:53:17,076 --> 01:53:31,076
+Bu resmin üst kısmı yok. Yani yarım resim. Biraz enteresan neden? Çünkü AlexNet'i geliştirirken iki GPU kullanmışlar.
+
+394
+01:53:31,076 --> 01:53:43,076
+Ve modeli de iki GPU'yu kullanacak şekilde modeli öyle tasarlamışlar. Dolayısıyla bu resme bakarsanız sanki şöyle bir alt var.
+
+395
+01:53:44,884 --> 01:53:50,683
+Üst de bunun aynısı. Aynısı olduğu için zaten üstün yarısını koymamışlar adamlar resmi.
+
+396
+01:53:50,683 --> 01:54:02,083
+Orijinal resim modelde iki GPU'ya ayrılıyor, işleniliyor ve sonuç çıkıyor.
+
+397
+01:54:02,083 --> 01:54:05,483
+O zaman için...
+
+398
+01:54:06,452 --> 01:54:27,172
+Bunu yapabilmişler. Şimdilerde bu şekilde model GPU'lara pek ayrılmıyor. Data paralelizm kullanılıyor. Yani birden fazla GPU kullanılıyor fakat verenizin bir kısmı bir GPU'da, yani resimlerin bir kısmı bir GPU'da, bir kısmı bir başka GPU'da işleniliyor.
+
+399
+01:54:27,764 --> 01:54:34,923
+Burada ise imgenin bir kısmı bir GPU'da, bir kısmı başka bir GPU'da işlenmiş.
+
+400
+01:54:37,923 --> 01:54:52,923
+227'ye 227'lik resimler, 5 tane konvolüsyon layer var, max pooling, 3 tane poolü connected layer, relu non-linear t'leri kullanılmış.
+
+401
+01:54:54,420 --> 01:55:01,819
+Bir de Local Response Normalization diye şimdilerde pek kullanılmayan bir şey kullanılmış.
+
+402
+01:55:01,819 --> 01:55:11,819
+O zamanki GPU'nun sadece 3 GB memorisi varmış. Şimdilerde Colab'da bile bundan daha fazla memoriye sahip.
+
+403
+01:55:11,819 --> 01:55:18,619
+Model de zaten bu yüzden ayrılmak durumunda kalmış.
+
+404
+01:55:19,731 --> 01:55:41,331
+Orjinal paperda da o resim bu şekilde yarım. Çok fazla sighting alan bir şey. Yani mesela Darby'nin On the Origin of Species 54.000 sighting almış. 1860'da yayınlanmış yaklaşık.
+
+405
+01:55:46,484 --> 01:56:11,044
+İnanılmaz önemli bir paper. 76 bin 1950'lerde. Bu işte fizik deneyi. 2012'de işte şey var ya çarpıştırıyorlar falan işte yeni bir madde falan biliyorlar. 16 bin.
+
+406
+01:56:11,923 --> 01:56:28,063
+AlexNet'in paperı 70 bin tane ve 2012'de yayınlanmış yine. Yani inanılmaz fazla paper, siting alıyor. Çünkü işte derin öğrenme olayını patlatan paper.
+
+407
+01:56:36,435 --> 01:56:40,015
+Hızlı geçmek istiyorum. Bunlara siz kendiniz bakabilirsiniz.
+
+408
+01:56:52,020 --> 01:56:54,020
+Ne yaptı en son ne buldu?
+
+409
+01:56:56,580 --> 01:56:58,200
+Hesaplamaları yapıyor işte.
+
+410
+01:57:01,680 --> 01:57:02,828
+Sonuçta...
+
+411
+01:57:17,779 --> 01:57:24,020
+Ne yapıyor? Hafıza output size, layer, layer belirlemiş.
+
+412
+01:57:28,020 --> 01:57:33,900
+Gerek olan memory gittikçe azalıyor. Parametre sayısı gittikçe artıyor.
+
+413
+01:57:34,539 --> 01:57:41,460
+Şu full connected layer'da 37.000 civarı parametre var. Gereken flop sayısı...
+
+414
+01:57:41,716 --> 01:58:06,716
+Convolution'un layırlarda milyon cinsinden yazılmış, 224 milyon falan. Oralarda çok büyük. Parametre sayısı az nispeten. Convolution kullanıldığı için. Full connected layırlarda çok fazla parametre var. Ama işlemin çoğu buralarda geçiyor. Convolution için geçiyor. Parametrelerin çoğu...
+
+415
+01:58:07,539 --> 01:58:10,980
+Konvodational değil de Fully Connected Layer'larla.
+
+416
+01:58:16,260 --> 01:58:20,100
+Bu değerler nasıl bulunmuş? Bu mimari nasıl bulunmuş?
+
+417
+01:58:22,260 --> 01:58:30,060
+Kernel sayısı neden 11'e 11'lik? Burada niye 5'e 5'lik? Bunlar niye 3'e 3'lük?
+
+418
+01:58:30,060 --> 01:58:34,820
+Stride niye böyle? Pad niye böyle? Bunun bir mantığı yok.
+
+419
+01:58:34,960 --> 01:58:39,960
+Trial and Error adamlar denemişler. En iyisi bu demiş. Bu çıkmış.
+
+420
+01:58:45,684 --> 01:58:53,524
+Burada önemli olan şey, hafızanın çoğu ilk konvolüsyon değerlerde kullanılıyor.
+
+421
+01:58:55,123 --> 01:59:05,384
+Parametrelerin çoğu bu son fully connected layerlerde. İşlemlerin çoğu da convolutional layerlerde.
+
+422
+01:59:12,532 --> 01:59:29,971
+Nasıl tasarlanıyor? Bunları azaltmaya. Daha az hafıza kullansın, daha az parametresi olsun, daha az işlemci gücü kullansın ama daha başarılı olsun. Mimariler bunu elde etmek için tasarlanıyor.
+
+423
+01:59:35,956 --> 01:59:54,056
+Tabii bir sonraki yıl artık herkes derin öğrenme, tüm paperlar derin öğrenme 2013'te. En iyi başarıyı da Zeyler ve Fergüs'ün versiyonu gösteriyor. Aslında çok bir farkı yok. Daha büyük bir AlexNet.
+
+424
+02:00:00,000 --> 02:00:25,340
+İlk filtre değil de 777'lik filtreler kullanılıyor. Stride 4 değil de 2. Convolution 1 layer'ında. Filtre sayıları farklı. Yani aslında yine bir mantık çok yok. Denemişler, optimize etmişler bir nevi. Ama Error %16'dan %11'e düşüyor. Büyük bir düşüş yine.
+
+425
+02:00:27,060 --> 02:00:28,300
+Öğrenç
+
+426
+02:00:31,507 --> 02:00:53,355
+Bir sonraki yıl VCC bu sefer %7'ye düşürüyor End Layer sayısını. Bunun ama bir mantığı var. Yani bir mantık vermeye çalışmışlar tasarımlarına. Tasarımları şöyle. VGG'de...
+
+427
+02:00:53,908 --> 02:01:08,927
+Bir kere her zaman konvolüsyonlar 3'e 3'lük. Yani 11'e 11, 5'e 5'lik yok. Stride 1, Pad 1. Dolayısıyla Pad 1 olunca imge boyutu sabit kalıyor.
+
+428
+02:01:11,667 --> 02:01:18,747
+Ve pooling layerları var. 2'ye 2'lik, stride 2'lik, max pooling yapıyorlar.
+
+429
+02:01:19,923 --> 02:01:30,123
+Her pooling'den sonra kanal sayısı iki katına çıkarılıyor. Belirli bir mantığı var.
+
+430
+02:01:35,636 --> 02:01:45,376
+Dolayısıyla artık stage'lerden bahsediliyor. Yani bir stage ne oluyor? İki konvolüsyon, bir pooling.
+
+431
+02:01:51,604 --> 02:02:12,284
+İkinci Stage 2 konvolüsyon, Bilgisayar Mühendisliği, Üçüncü Stage 2 konvolüsyon, Bilgisayar Mühendisliği, Dördüzüncü Stage, VGG 16'da 3 konvolüsyon, Bilgisayar Mühendisliği, VGG 19'da 4 konvolüsyon, Bilgisayar Mühendisliği, Beşinci Stage'de aynı şekilde.
+
+432
+02:02:13,503 --> 02:02:17,724
+Bir mantık artık getirmeye çalışılıyor.
+
+433
+02:02:19,699 --> 02:02:46,019
+Burada neden 3'e 3'lükler kullanılmış, hiç 5'e 5'lik kullanılmamış? Çünkü zaten az önce görmüştük, konvolüsyon layer'ları arttıkça sizin bir pikseliniz 3'e 3'lük bir layer'da ise bir sonrakinde 5'e 5'lik, bir sonrakinde 7'lik daha büyük.
+
+434
+02:02:46,431 --> 02:02:53,391
+Filtreleri zaten elde etmiş oluyorsunuz. Dolayısıyla 11'e 11'e falan gerek yok diye düşünülmüş.
+
+435
+02:02:59,631 --> 02:03:05,651
+Parametre sayısı da bu şekilde yapınca 5'e 5'lik mesela yapacaksınız.
+
+436
+02:03:12,916 --> 02:03:17,275
+18 C kareden, 25 C kareden 18 C kareye iniyor.
+
+437
+02:03:21,779 --> 02:03:49,020
+Flop sayısı da buna bağlı olarak G25 ck hv'den 18 ck hv'ye flop sayısı iniyor. Dolayısıyla siz daha küçük konvolüsyon kullanarak daha az parametre ve daha az işlem yapıyorsunuz. İki katmanda yaparak da bunu ne yapmış oluyorsunuz? Aynı konvolüsyon sayısına ulaşabiliyorsunuz.
+
+438
+02:03:50,068 --> 02:04:00,068
+Ek olarak da daha fazla konvolüsyon, her konvolüsyonda relü olacak ya, daha fazla non-dinearity buraya sokabiliyorsunuz.
+
+439
+02:04:06,612 --> 02:04:07,412
+Erbastımdan.
+
+440
+02:04:44,372 --> 02:05:02,172
+Şimdi kanal sayısını artırıyorlar. Daha fazla kanal kullanıyorlar. Her konvolüsyon lehirinde sonra. Bu lenete benziyor. Az önceki ilk başta bir lenet görmüştük.
+
+441
+02:05:09,779 --> 02:05:35,380
+Kanal sayısı ikiye çıkınca ama hafıza yine de buna rağmen yarıya düşüyor. Parametre sayısı 9c kareyken 36c kareye çıkıyor. Flops sayısı sabit kalıyor. Dolayısıyla mantık şunu yapmaya çalışmışlar. Her stage'de AlexNet'e eş.
+
+442
+02:05:36,948 --> 02:05:54,967
+Veya AlexNet değil de kendisine eş her stage'in işlem gücünü, kullandığı işlem miktarını sabit tutmaya çalışmışlar. Yani böyle bir regular, bir design, bir tasarım oluşturmaya çalışmışlar.
+
+443
+02:06:01,043 --> 02:06:25,184
+Baktığımızda AlexNet ama VGG16 AlexNet'e göre çok daha büyük bir network. Gereken hafıza 48 MB, 2 MB ile karşılaştırım. Parametre sayısı 140 milyon civarı, 60 milyon ile karşılaştırım.
+
+444
+02:06:26,163 --> 02:06:53,363
+Ve daha da önemlisi gereken işlem gücü 14 giga flop. Bunu yaklaşık 1 giga flopla karşılaştırın. 20 katına çıkmış neredeyse gereken işlemci gücü. Ama işte o geçen zamanda hızlı bir şekilde işlemci gücü de artmış. Hafızalar artmış çok hızlı bir şekilde. Yani bu artık kullanılabiliyor.
+
+445
+02:06:55,347 --> 02:07:21,168
+2014'te aslında bir başka önemli paper daha var. Yarışmaya gelen bunlar Google Net. Google'da çalışan bir grup. Şu topu topu iki kişinin hazırladığı bir çalışmaymış. VDG Akademide. Bu ise artık Google işin içine giriyor. Bakıyor burada para var.
+
+446
+02:07:21,939 --> 02:07:47,439
+Büyük bir takım. Google, Efficiency'e, çünkü mobil falan var ya Google'da, mobilde de çalışabilecek network geliştirmeye çalışıyor. Bunun için de çok daha efficient nasıl yapabilirim? Bununla ilgili birçok inovasyon geliyor.
+
+447
+02:07:48,243 --> 02:08:03,863
+Parametre sayısı nasıl azaltılabilir? Vesaire vesaire gibi. Bir kere şu en başta bir agresif sistem deniliyor buna. Network buradan başlıyor.
+
+448
+02:08:05,803 --> 02:08:13,983
+Şey, hızlı bir şekilde ingenin spatiyel boyutu, uzamsal boyutu hızlı bir şekilde düşürülüyor.
+
+449
+02:08:15,507 --> 02:08:24,247
+Çünkü hafızanın büyük bir kısmı hatırlarsanız ilk başta buralarda gerek oluyor. Hızlı bir şekilde Downsand Link var burada.
+
+450
+02:08:34,260 --> 02:08:59,720
+Ayrıntılar burada. Bir de Inception denilen enteresan bir modül geliştiriyorlar. Burada sorusu var. Konvolüsyon sayısı kaça kaçlık olsun diye tartışıyoruz ya. AlexNet 11'e 11'lik kullanmış. 5'e 5'lik de var. Bir sonrakisi 7'e 7'lik kullanıyor falan.
+
+451
+02:09:00,532 --> 02:09:27,032
+Google.net de diyor ki, şöyle bir şey yapalım. Mesela birebirlik konvolüsyon da olsun bende. Üçe üçlük konvolüsyon da olsun. Beşe beşlik de olsun. Birebirlik konvolüsyon, Max Bulling'den sonra o da gelsin. Burada yine birebirlik konvolüsyonlar var. Bütün bunlar ne yapılsın? Birleştirilsin.
+
+452
+02:09:28,500 --> 02:09:40,280
+Bu Filter Concatenation şu anda ayrıntısını bilmiyorum nedir. Yeni bir kanal oluşturmuyor bunların her biri. Sanırım topluyor gibi mi geldi?
+
+453
+02:09:44,620 --> 02:09:50,620
+Veya bir şekilde bunlar birleştiriliyor. Şu birleştirme nasıl yapılıyor emin değilim.
+
+454
+02:09:53,908 --> 02:10:13,648
+Yani bir nevi o lokal yapı farklı büyüklükteki konvolüsyonlarla birçok defa ne yapılıyor? Alınıyor. Bir nevi scale space oluşturuyor. Ölçek uzayı oluşturuyor. Böyle inception modülü içerisinde.
+
+455
+02:10:17,427 --> 02:10:32,087
+Birebirlik konvolüsyonlardan bahsetmiştik. Bunlara bottleneck deniliyor. Bunlar kanal sayısını azaltmak için kullanılıyor. Daha efficient olsun deniliyor ya amaç bu.
+
+456
+02:10:36,087 --> 02:10:39,007
+Bir de bir yenilik.
+
+457
+02:10:40,083 --> 02:11:01,083
+Son katmanlarda sınıflama yapmadan hemen önce Fully Connected Layer kullanmıyor Google Net. Çünkü hatırlarsanız parametrelerin çok büyük bir kısmı o Fully Connected Layer'lar var. Bunun yerine Pooling yapıyor. Global Average Pooling denilen bir nevi...
+
+458
+02:11:04,020 --> 02:11:18,340
+İstatistiksel artık son katmanlarda böyle Average Pooling ile ne yapıyor? Boyut sayısını diyelim ki 10'a indir diyeceğiz. 10'a bu şekilde indiriyor.
+
+459
+02:11:18,340 --> 02:11:25,340
+Yani burada çok büyük bir imge var. İmgeyi tarif eden...
+
+460
+02:11:25,792 --> 02:11:40,472
+Belki milyonlarca değer varken burada 10'a inmesi lazım. Her biri bir sınıf olacak. Eğer 10 sınıfınız varsa. O indirmeyi çok daha ucuz bir şekilde pooling ile yapıyor.
+
+461
+02:11:52,692 --> 02:12:14,452
+Gradiyanların çok iyi derin ağlarda yayılmadığını görüyorlar. Bu yüzden auxiliary classifiers denilen bir yöntem. Şuradaki sınıflayıcıya ek olarak, burada ek sınıflayıcılar var, web propagation üçünden birden geliyor. Böyle bir şey yapıyorlar.
+
+462
+02:12:19,764 --> 02:12:46,243
+Beş Normalization o zaman daha bulunmamış. Artık beş normalizasyon bulundu. Bu kullanılınca bunlara gerek kalmadığı görülmüş. Dolayısıyla gördüğünüz gibi mimariyi de oldukça karmaşık hale getiriyor. Beş Normalization olduğu için buna pek gerek kalmamış günümüzde.
+
+463
+02:12:48,884 --> 02:13:10,364
+Bir sonraki yıl, 2015'te bu sefer ResNet çıkıyor. Ve bu da devrim niteliğinde. Şimdiye kadar layer sayısı 8, 19, 22 gibi giderken burada 152 layere kadar çıkmayı başarıyorlar.
+
+464
+02:13:11,123 --> 02:13:30,323
+Hata da artık 3.6'ya kadar giriyor. Yanlış hatırlamıyorsam insanların hatası zaten %5'lerde falan. Yani sınıflayıcının hatası artık insan sınıflayıcıyla rekabet eder hale gelmeye başlıyor. Hatta onu geçmeye başlıyor.
+
+465
+02:13:30,323 --> 02:13:35,203
+Bunu nasıl yapıyor?
+
+466
+02:13:36,340 --> 02:14:01,400
+ResNet, Residual Network olarak da geçiyor. 5 normalizasyon 10'lu layer'lara kadar gidiyor. Ama daha derin nasıl gideriz? Bunun üzerinde bakıyorlar, bir türlü başaramıyorlar. Yani 10 layer'dan daha iyisini bir türlü o sıralarda bu Residual Networks öncesinde beceremiyorlar.
+
+467
+02:14:02,260 --> 02:14:25,560
+Yani sonuçlar iyi çıkmıyor. Burada neden olabilir? Bazı hipotezler var o zaman. Neden onlu sayılardan daha derin networkler yapamıyoruz?
+
+468
+02:14:26,323 --> 02:14:44,663
+Bir tanesi, bu bir optimizasyon problemi. Ne diyor? Deeper models are harder to optimize and in particular don't learn identity functions to emulate shallow models. Yani bunu gözlemlemişler. Bir kere identity function fx eşittir x.
+
+469
+02:14:51,444 --> 02:15:03,224
+Bu fonksiyonu iyi hesap edemediğini görmüşler. Shallow modeller bunları daha iyi kullanabiliyor.
+
+470
+02:15:07,539 --> 02:15:24,619
+Çünkü normalde fikir şu, derin modeller en azından bu shallow modeller kadar, yani shallow, sığ demek, deep, derin demek. Başarılı olmalı. Çünkü onları emulate edebilir. Ama öyle olmuyormuş. Neden olabilir?
+
+471
+02:15:24,619 --> 02:15:34,739
+Şalow modellerin ident fonksiyonlarını daha iyi öğrendiğini düşünüyorlar. Ayrıntılarını çok da iyi bilmiyorum.
+
+472
+02:15:35,796 --> 02:15:46,896
+Burada şöyle bir çözüm düşünüyorlar. O zaman network'ü öyle bir yapalım ki identity fonksiyonunu kolayca öğrensin.
+
+473
+02:16:03,923 --> 02:16:27,444
+Geliştiriyorlar. Yani öneriyorlar. Normal blokumuz nasıldı? Giriş geliyor, bir konvolüsyon var. Relu'nun ne artı? Sonra bir konvolüsyon daha var. Bir çıkışı var. Bu relü'den önce sanırım. Buranın relüsünden önce. Bu çıkış. Buraya bir blok diye düşünelim.
+
+474
+02:16:32,564 --> 02:16:56,984
+Şu çıkışa olduğu gibi eklesek, yani bildiğiniz toplasak, toplama yapıyor, bileşen bileşen. Girişi iki konvolüsyonun sonrasındaki çıkışa ama Nandini Nelitiden önce, Relu'dan önce, ikinci Relu'dan önce toplasak. Buna additive shortcut deniliyor.
+
+475
+02:17:00,020 --> 02:17:13,000
+Buradaki güzellik ne? Şu x, direkt bu x ya, identity fonksiyonu bu. Değil mi? Identity'yi direkt tak diye çıkışa koyuveriyor.
+
+476
+02:17:17,139 --> 02:17:27,939
+Dolayısıyla eğer bu konvolüsyonları sıfıra yapsanız, konvolüsyonu hiç kullanmasanız yani, direkt identite fonksiyonu kalıyor.
+
+477
+02:17:31,540 --> 02:17:34,279
+Dolayısıyla bunu denemişler.
+
+478
+02:17:42,611 --> 02:17:54,831
+Dolayısıyla network yapısı bu sefer bu bloklardan oluşmaya başlamış. Yani stajler gösteriyorduk, şimdi bloklar göstereceğiz. Burası bir blok, burası bir blok şeklinde.
+
+479
+02:18:03,540 --> 02:18:15,860
+Yine VGG gibi düzenli bir dizayn düşünmüşler. 3'e 3'lü konvolüsyonlar. Network Stagelerden oluşuyor.
+
+480
+02:18:15,860 --> 02:18:27,979
+Ne diyor? The first block of each stage helps the resolution. Her stage'in ilk bloku.
+
+481
+02:18:28,819 --> 02:18:33,979
+Şeyi aşağıya indiriyor, yani resmin boyutunu yarıya indiriyor. Dörtte bile indirmiş oluyor.
+
+482
+02:18:35,420 --> 02:18:42,119
+Ama kanal sayısını da iki katına çıkarıyor. Yani VGG fikirleri kullanılmış.
+
+483
+02:18:43,720 --> 02:18:52,760
+Biraz Google'un fikri de kullanılmış. Hemen hızlı bir şekilde başlangıç imgesi yarıya düşürülüyor boyutu.
+
+484
+02:18:55,123 --> 02:18:58,043
+Bir önceki yılın iki fikrini birleştirmişler.
+
+485
+02:19:00,543 --> 02:19:09,063
+Yine Google Net gibi hızlı bir şekilde uzamsal boyutu düşüren bir sistem kullanmışlar.
+
+486
+02:19:10,984 --> 02:19:18,743
+Yine Google Net gibi Fully Connected Layer yerine Global Average Pooling kullanmışlar.
+
+487
+02:19:18,743 --> 02:19:20,103
+Sonunda.
+
+488
+02:19:21,620 --> 02:19:40,960
+Ve bu şekilde 4 stage, en sonrada bir linear layer var diyor. Resnet 18. Hatayı 11'lere düşürüyor. 1.8 gigoklub. Resnet 34.
+
+489
+02:19:43,636 --> 02:19:49,396
+Yine Stage sayısı aynı ama Convolution Layer sayısı farklı.
+
+490
+02:19:49,396 --> 02:19:58,036
+3 ResNet bloku var. Burada 2 ResNet blokuydu. Daha fazla ResNet 3, 4, 6, 3 şeklinde.
+
+491
+02:19:58,036 --> 02:20:06,116
+Hatayı bu şekilde indiriyor ama daha fazla şey var.
+
+492
+02:20:10,260 --> 02:20:17,500
+Gigaflop sayısı daha az, benzer hatalara çok daha az işlemle ulaşıyor.
+
+493
+02:20:22,720 --> 02:20:27,579
+Burada işte gerekli hesaplama miktarlarını hızlıca geçmek istiyorum.
+
+494
+02:20:27,579 --> 02:20:35,579
+Bir yıl sonra, bir süre sonra, şimdi şuralarda 38'de falan verici...
+
+495
+02:20:36,304 --> 02:20:53,443
+38'e falan indiriyorlar. ResNet 34 ile 34'e falan indiriyorlar. 34 katman. Biraz daha bunu iyileştirmeyi düşünüyorlar. Ve bottleneck dediğimiz o birebirlik konvolüsyonları ekliyorlar bloklara bu savaş.
+
+496
+02:20:54,443 --> 02:21:00,664
+Yani iki konvolüsyon değil de üç konvolüsyon olacak ama baştaki ve sondaki konvolüsyon.
+
+497
+02:21:01,040 --> 02:21:17,280
+Birebirlik, ortadaki üçe üçlük konvolüsyon. Ve kanal sayısı da dörtte birine iniyor bu birebirlik konvolüsyonlarla. Şurada dörtte birine iniyor, burada geri birden dörde çıkarıyormuş. Şimdi dikkat ettim de. Enteresan.
+
+498
+02:21:26,420 --> 02:21:27,560
+Ve eee...
+
+499
+02:21:32,180 --> 02:21:58,420
+Şu acaba bir hata olabilir mi? Burada da kanal sayısı dörtte birine iniyor olabilir mi? Burada emin değilim. Çünkü amaç daha hızlı bir network, daha efektif bir network elde etmek ya. Ama sonuçta daha fazla layer ama daha az computational cost. Neden? Şuradaki convolutional layer.
+
+500
+02:21:59,796 --> 02:22:17,975
+9HWC² Flops gerektiriyor. Bu da aynısı ama şunu mesela iki tane birebirlikle değiştirmişler ve 4HWC² Flops gerektiriyor. Demek ki bunlar hata değil yani.
+
+501
+02:22:27,987 --> 02:22:49,227
+HWC kare, Flops, kar var. Şu ikisi arasında. Daha az işlem. Ve bu sayede ResNet-50 oluşuyor. ResNet-101, ResNet-152.
+
+502
+02:22:49,843 --> 02:22:56,563
+Bunlar biraz daha doğru, ResNet 50'ye kadar ama tabii daha fazla işlem gücü gerektiriyor.
+
+503
+02:23:00,663 --> 02:23:12,863
+Sonuçta o yıl ResNet, orada ImageNet yarışmaları var, bir de Microsoft'un Coco veri seti üzerinde yarışmalar var.
+
+504
+02:23:13,423 --> 02:23:15,183
+Hepsinde bir numara oluyor.
+
+505
+02:23:16,788 --> 02:23:33,448
+Ve o noktadan itibaren de ResNet bir baseline. Yani yeni bir network karşılaştıracaksanız, yapacaksanız ResNet'le bir karşılaştırmanız gerekiyor artık.
+
+506
+02:23:36,308 --> 02:23:40,448
+ResNet'in blok tasarımıyla daha sonra böyle oynuyorlar.
+
+507
+02:23:45,203 --> 02:23:49,363
+Residual Network'un içine bu ikinci reluyu alsak mı gibi.
+
+508
+02:23:56,051 --> 02:24:15,131
+2016'da bu. Bunları Pre-Activation ResNet Blockları deniyorlar. Birazcık daha iyileşmeler görüküyor. ResNet 252 ve ResNet 200 yapılabiliyor. Ama pratikte çok fazla kullanılmıyormuş.
+
+509
+02:24:19,219 --> 02:24:31,919
+Dolayısıyla şöyle bir soru geldiğinde bu nöral network mimarileri ne için, ne mantıkla, niye oluşturuluyor?
+
+510
+02:24:43,667 --> 02:24:59,247
+Ama özellikle işlem çok önemli. Daha az işlem, daha az hafızayla nasıl elde edilebilir? Çünkü parametre sayısını çok indirmek istemiyorsunuz. Parametre demek eğitimcinin gücü demek. Yani öğrenme gücümüz demek.
+
+511
+02:24:59,507 --> 02:25:09,247
+Buradaki örneklere baktığımızda, burada Giga Ops operasyon sayısı görülüyor. Burada da başarıyı görüyoruz.
+
+512
+02:25:10,484 --> 02:25:32,884
+Burada mesela orijinal AlexNet şurada. Az sayıda operasyon ama az sayıda bir başarısı var. VGG'ler burada. Yani çok büyük işlemciyle oldukça iyi sonuç veriyorlar.
+
+513
+02:25:35,603 --> 02:25:48,523
+ResNet 152 buralarda, ResNet 50 buralarda. Gördüğünüz gibi ResNet 50 mesela oldukça iyi bir yerde. Yani az işlem istiyor ve oldukça başarılı.
+
+514
+02:25:49,324 --> 02:25:56,004
+Tabi bunlar Google mesela Inception üzerinde çalışmaya devam ediyor falan.
+
+515
+02:26:01,843 --> 02:26:10,023
+Resnet hani böyle gereken işlemci gücü ve başarısı olarak baktığınızda Resnet 50 oldukça iyi bir yerde.
+
+516
+02:26:13,620 --> 02:26:19,360
+İşte İnception'a ResNet'le katıyorlar.
+
+517
+02:26:34,067 --> 02:26:46,347
+Bir sonraki yıl işte Shaw et al 152 layer'a çıkıyor. Yine ama yine 152 layer ama biraz daha başarıyı, hatayı indiriyor.
+
+518
+02:26:48,227 --> 02:27:01,127
+2016 yılında çok da enteresan bir şey olmuyor. Başarılı olan bir model ensemblu. Yani işte daha önceki başarılı modelleri alıyor.
+
+519
+02:27:01,971 --> 02:27:12,831
+Onların sonuçlarını ne yapıyor? Oylama vesaire gibi bir şekilde füzyon ediyor. Birinci oluyor.
+
+520
+02:27:18,932 --> 02:27:34,752
+Daha sonra ResNetlerde böyle paralel ResNetler yapılması düşünülüyor. ResNext şeklinde paralel ResNet blotları gibi. Bunları sonra birleştirelim, toplayalım falan gibi.
+
+521
+02:27:48,371 --> 02:27:51,592
+Hatta burada PyTorch da destekliyormuş bunu.
+
+522
+02:27:51,592 --> 02:27:54,443
+Ama hani...
+
+523
+02:28:05,523 --> 02:28:18,824
+Bir sonraki yıl Senet geliyor. Yine 152 Layer. Bu sefer Squeeze and Extraction Networkler çıkıyor.
+
+524
+02:28:20,963 --> 02:28:31,923
+Squeeze and Excite Branch neymiş bu? Böyle bir branch ekliyor her bir rezillial block'a. Bu Global Pooling.
+
+525
+02:28:32,308 --> 02:28:42,808
+Fully Connected Layer ve bunu tekrar Feature Map ile çarpıyor. Bu da Residual Block'a Global Context ekliyormuş.
+
+526
+02:28:43,907 --> 02:28:50,907
+Yani orijinal ResNet modulu şöyle bir şey iken, bu yine burada.
+
+527
+02:28:52,407 --> 02:28:59,508
+Şu toplama yine geliyor. Ama şuradan şöyle bir şey oluyor, bir Global Tooling.
+
+528
+02:28:59,860 --> 02:29:24,659
+Gluconetli Layer'lar, bir sigmoid fonksiyonu ile non-linearity, bir scaling var. Scale demek çarp demek. Burada çarpıyorlar şu gelişle. Sonra orijinal x topluyorlar. Buna sresnet modülü diyorlar.
+
+529
+02:29:26,131 --> 02:29:35,471
+Yani buradaki global konteksti, her bir rezidü bloka global konteksti ekliyor diyor.
+
+530
+02:29:39,851 --> 02:29:46,151
+2017'deki bu şeyden sonra artık ImageNet Competition'ı yapılmıyor.
+
+531
+02:29:51,891 --> 02:30:17,531
+Başarı 2'lere falan inince artık biraz şey olmuş oluyor. Yani artık mi adını doldurmuş oluyor veri sete ama yine de yeni bir mimari oluşturdum, yeni bir çalışma yapıyorum derseniz hala ImageNet üzerinde bir denemeniz paperlarda vesaire bekleniyor.
+
+532
+02:30:19,507 --> 02:30:29,507
+Bunun yanında mesela densely connected neural networkler var.
+
+533
+02:30:34,036 --> 02:30:38,456
+Yani yeni fikirler eklenmeye devam ediliyor.
+
+534
+02:30:53,108 --> 02:31:04,208
+Konvolüsyonun çıktısı her bir katmana ne yapılıyor? Katmanın çıktısına yeni bir kanal olarak ekleniliyor.
+
+535
+02:31:04,208 --> 02:31:10,747
+Yani bu giriş çıktığa yeni bir kanal olarak ekleniliyor.
+
+536
+02:31:19,028 --> 02:31:44,368
+Bir sonraki şeye ve diğerlerine de ekleniliyor bu arada. Sadece bir öndekine değil hepsine ekleniliyor yani. Gitgide şeyler hep muhafaza ediliyor. Yani yeni katmanlarda orijinal resim bile bir yerde var. Bir kanal olarak var.
+
+537
+02:31:45,459 --> 02:32:04,779
+İlk baştaki resim bile var yani. Aradakiler de var hep. Bu şekilde şunlar da var, bunlar da var. Her biri eklene eklene şeyler ne yapılıyor? Muhafaza ediliyor.
+
+538
+02:32:04,779 --> 02:32:11,579
+Tabii çok fazla kanal oluşacaktır. O çok fazla kanal oluşmasını da nasıl engelliyorlar?
+
+539
+02:32:11,904 --> 02:32:17,844
+Bir çarpı birlik konvolüsyonlarla arada tekrar kanal sayısını azaltıyorlar.
+
+540
+02:32:20,664 --> 02:32:23,744
+En genel mantığı böyle.
+
+541
+02:32:28,623 --> 02:32:35,704
+Bu özelliklerin tekrar tekrar kullanılmasını feature reuse diyor, sağlıyor.
+
+542
+02:32:36,371 --> 02:32:48,091
+Bunlar artık biraz şey networkler. Mesela mobil cihazda çalışabilsin falan gibi hem başarılı hem de daha kompakt networkler.
+
+543
+02:32:51,572 --> 02:33:09,932
+DenseNet belki de öyle değildi. Yani çok kompakt sayılmayabilir. Bunun YouTube'da bunun araştırmacısı açıklıyor. Ben seyrettim bunu da. Şu anda artık hızlı bitirmek istiyorum burayı. Bakabilirsiniz.
+
+544
+02:33:18,067 --> 02:33:38,927
+Embedded sistem, gömül sistemler için daha da tiny networkler düşünülüyor. Yani buradaki amaç daha da böyle şeyi azaltalım. Hani başarı idare eder olsun ama efficiency'si çok yüksek olsun.
+
+545
+02:33:42,164 --> 02:34:03,304
+Convolution Block yerine Separable Convolution'lar kullanılıyor. Hatırlarsanız 3'e 3'lük bir Gauss filtresini 2 tane 1 boyutlu filtreye ayırabiliyoruz.
+
+546
+02:34:04,084 --> 02:34:07,884
+Yani 9 tane çarpım lazım, burada 6 tane çarpım lazım.
+
+547
+02:34:08,852 --> 02:34:22,312
+Dolayısıyla önce bir Depth-wise Convolution, sonra Point-wise Convolution falan gibi Convolution'u ne yapıyorlar?
+
+548
+02:34:24,812 --> 02:34:34,551
+Convolutionlar sayesinde daha küçük networkler elde etmeye çalışıyorlar.
+
+549
+02:34:37,043 --> 02:34:58,344
+Genel amaç, yeni networklerde zaten iki amacınız var. Tabii her zaman başarıyı artırmak istiyorsunuz ama bir taraftan da flops sayısını, maliyeti azaltmak istiyorsunuz. Her zaman için bu genel bir tasarım, sizi yönlendiren şey.
+
+550
+02:35:03,316 --> 02:35:21,056
+Network tiny olduğunda parametre sayısını da azaltmak istiyorsunuz. Çünkü mobil device'ın hafızasına o parametrelerin sığması lazım. Burada shufflenet, mobilnet gibi bir kısım benzer şeylerden bahsediyor.
+
+551
+02:35:31,059 --> 02:35:55,639
+Bir başka nörel network'ün mimarisini arasa falan gibi çalışmalar var. Onlar başlamış. Devam da ediyor herhalde. Ama tabii ki bu çok pahalı bir işlem. Mesela ilk olarak ilk yayında 28 gün boyunca 800 GPU'da bu aramayı gerçekleştirmişler. Yani düşünün.
+
+552
+02:35:56,595 --> 02:36:09,155
+Bunu ancak Google yapar, başka birisi yapamaz veya işte ilk beş. Bu tabii biraz dalga konusu oluyor ama daha sonra bunu biraz daha efisent hale getiriyorlar.
+
+553
+02:36:17,108 --> 02:36:40,648
+Burada işte kırmızılar mesela otomatik olarak öğrenilen networkler. Dolayısıyla daha eficiente aramalar geliştiriliyor falan. Neural networklerin mimarilerinin bu şekilde aranarak otomatik ortaya çıkarılması kullanılabilir.
+
+554
+02:36:45,108 --> 02:36:53,368
+Böyle hızlı bir özet. Şimdi hangi mimariyi kullanayım şeklinde soru sormuş.
+
+555
+02:36:54,488 --> 02:37:08,368
+Birçok problem için kendi mimarinizi tasarlamak yerine artık ResNet gibi 50 veya 101 gibi böyle hani...
+
+556
+02:37:12,371 --> 02:37:33,291
+Accuracy'si iyi, böyle networkler veya işte efficient olması gerekiyorsa, real time olacak, mobilde çalışacak falansa, mobil nets gibi, shuffle nets gibi artık kabul edilmiş bir network'ü alıp kullanmanız daha mantıklı.
+
+557
+02:37:35,991 --> 02:37:37,912
+Şeyden de bahsetmiştik.
+
+558
+02:37:38,451 --> 02:38:05,671
+Transfer Learning'den bahsetmiştik. Yani ResNet'i alıp, biraz Transfer Learning yapıp, ne yapabilirsiniz? Kendi işinize adapte edebilirsiniz. Dolayısıyla pratikte birçok insan artık ne yapıyor? Transfer Learning kullanıyor veya direkt hiç Transfer Learning'e bile gerek bırakmayan networkleri alıp,
+
+559
+02:38:06,131 --> 02:38:07,891
+kullanabiliyor.
+
+560
+02:38:10,291 --> 02:38:15,412
+Bir şey zor. Yeni bir model önereceğim ben.
+
+561
+02:38:17,791 --> 02:38:20,131
+Yeni modelinizin
+
+562
+02:38:20,731 --> 02:38:24,131
+başarısını
+
+563
+02:38:24,851 --> 02:38:28,171
+ResNet ile karşılaştırabilmeniz için
+
+564
+02:38:28,171 --> 02:38:32,211
+Google Net üzerinde ResNet'ten iyi
+
+565
+02:38:32,915 --> 02:39:00,236
+Sonuç verecek benim modelim. O zaman bu modeli bayağı bir eğitmeniz gerekiyor. Yani bu ResNet gibi şeyler, büyük firmaların vesaire. Mesela ResNet, Microsoft Azjas'ın, Asia. Google Net, işte Google. Büyük firmaların çok büyük.
+
+566
+02:39:03,636 --> 02:39:29,296
+Hardware'lerinde koşturularak eğitilip ResNet'le mesela ne yapabilirsiniz? Karşılaştırabilirsiniz. Şimdi siz bir mimari icat ettiniz. ResNet'i geçemiyor. Geçebilmesi için de çok büyük Hardware donanım ihtiyacınız var. Pek mantıklı olmuyor.
+
+567
+02:39:30,067 --> 02:39:53,948
+Dolayısıyla birçok araştırmacı ne yapıyor? Yani mesela Justin de onu yapıyor. Justin de oturup yeni bir mimari icat etmiyor. Yeni mevcut mimarileri kullanarak transfer learning de veyahut mesela StyleNet gibi mevcut.
+
+568
+02:39:55,603 --> 02:40:07,903
+Mimarilerin, tabii onlardan burada bahsetmemiş, onların latent space'ında aramalar yaparak vesaire gibi.
+
+569
+02:40:09,003 --> 02:40:15,183
+Veya işte yani farklı araştırma yönlerine gidiyor birçok araştırmada.
+
+570
+02:40:15,183 --> 02:40:19,884
+Çünkü yeni bir modeli icat edip genel...
+
+571
+02:40:19,891 --> 02:40:23,412
+Şeye kabul ettirmek çok pahalı.
+
+572
+02:40:34,772 --> 02:40:36,292
+Sorunuz var mı arkadaşlar?
+
+573
+02:40:45,811 --> 02:40:48,011
+Şu şeye bir bakayım.
+
+574
+02:41:10,644 --> 02:41:14,824
+Bilgisayardan bir katılayım buna. Tabletten çıkayım.
+
+575
+02:42:01,971 --> 02:42:03,031
+Hala çıkamadım ben.
+
+576
+02:42:20,884 --> 02:42:24,263
+Bilgisayara geçtim. Sesim geliyor mu arkadaşlar?
+
+577
+02:42:28,180 --> 02:42:29,180
+Teşekkürler.
+
+578
+02:42:34,291 --> 02:42:38,791
+Şimdi şu projelerimize bakmak istiyorum da o yüzden Bilgisayara geçtim.
+
+579
+02:42:40,871 --> 02:42:41,991
+Docs, Google.
+
+580
+02:42:51,636 --> 02:42:53,636
+Şöyle bir bakalım buraya.
+
+581
+02:42:55,636 --> 02:42:56,636
+Share Screen.
+
+582
+02:43:00,084 --> 02:43:07,084
+Şimdi buradan kaç kişi var burada? 19'dan 7 çıkart, 12 kişi var.
+
+583
+02:43:11,059 --> 02:43:29,479
+Ne durumdasınız? Derse 13 kişi gelmiş zaten. Yani bir kişi belki burada yazmamış. Dolayısıyla genel olarak şurada buna kimse bir şey yazmamış. Yani ne oluyor?
+
+584
+02:43:33,075 --> 02:43:59,376
+Aslında hemen hemen herkes yazmış. Ama çok fazla yazan olmadığı için üç hafta harcamanın gereği de kalmıyor. İsterseniz bir hafta daha vereyim. Hem yazamayanlar, belki yetiştiremeyenler için bir hafta daha eklemiş oluruz. Hem de bir hafta fazla ders işlemiş oluruz. Ne dersiniz?
+
+585
+02:44:03,700 --> 02:44:11,700
+Neurali Talking konular bayağı uzadı. Bayağı genişmiş.
+
+586
+02:44:13,700 --> 02:44:23,700
+Sesinizi biraz kapalıydı da dediğinizi anlayamadım. Neurali Talking konular bayağı uzadı hocam. Uzun konularmış.
+
+587
+02:44:35,636 --> 02:44:39,256
+Gelecek hafta ders, umuyorum, derslersek.
+
+588
+02:44:39,256 --> 02:44:43,256
+Yani...
+
+589
+02:44:47,700 --> 02:45:00,240
+Evet, [öğrenci]. Bir hafta daha ders işleyelim. Hem biraz daha devam etmiş oluruz.
+
+590
+02:45:11,123 --> 02:45:28,043
+Hardware, Software'dan bahsediyor ve sonra da neural networkleri eğitmek için daha ayrıntıya falan giriyor. Ben bayağı keyif alıyorum. Birkaç yıl önce bu Stanford'daki N231N vardı.
+
+591
+02:45:30,543 --> 02:45:32,603
+Şunu görmemiş olan var mı?
+
+592
+02:45:43,860 --> 02:46:06,040
+CS231N Deep Learning for Computer Vision. Dediğim gibi biz de hani bu işin praktikeri olamadık. Ben klasik bilgisayarla görüyle yaptım PhD'yi.
+
+593
+02:46:07,412 --> 02:46:32,711
+Sonrasında da artık kendim bir şey pek yapmadım. Öğrencilerle bir şey yapıyoruz. Buradaki derslerin videoları, 2017 versiyonu yalnız YouTube'da var. Onları ben birkaç yıl önce baştan sona izlemiştim. Bu da Feyfeğli hoca bu.
+
+594
+02:46:34,067 --> 02:46:55,547
+Kaç bu? 15 tane Teaching Assistant var. Gördüğünüz gibi. Şunlar Teaching Assistant'lar, şunlar da derse anlatanlar oluyor. Yani Feifey derse girmiyor. Bunlar asistanlarına dersi anlattırıyor.
+
+595
+02:47:02,260 --> 02:47:26,600
+Justin'de, ekranı görüyor musunuz bu arada? Deep Learning for Computer'ı. Bunların şeyleri hala var. Mesela slide'ları falan var. Videolarını da, linki vardı eskiden ama artık video linkini kaldırmışlar. Ama YouTube'da hala bulunuyor.
+
+596
+02:47:31,731 --> 02:47:39,492
+CS231N yazdığınızda bütün bu videolar var.
+
+597
+02:47:47,188 --> 02:47:47,948
+Ön...
+
+598
+02:47:56,979 --> 02:48:03,779
+Şurada görüyorsunuz. İşte 16 ders. Ben bunların hepsini seyretmiştim.
+
+599
+02:48:11,156 --> 02:48:27,276
+Gördüğünüz gibi çok benzer aslında. Bu bottleneck'i falan burada da anlatmış. Serena Young ile Justin Johnson anlatıyor. Bugün işte bu Serena. Justin'de bir öncekisi Justin olabilir.
+
+600
+02:48:31,731 --> 02:48:38,211
+Bu eleman. Daha sonra bu eleman işte Michigan Üniversitesi'nde hoca oldu.
+
+601
+02:48:48,915 --> 02:48:56,955
+Bunun kendi videoları da şimdi, 2019 Michigan videoları, Justin Johnson'ın yine YouTube'da var.
+
+602
+02:48:58,435 --> 02:49:00,115
+Justin Johnson.
+
+603
+02:49:05,556 --> 02:49:13,355
+Gitar falan çıktı. Neyi arıyoruz biz? Deep Learning mi?
+
+604
+02:49:20,244 --> 02:49:21,804
+Bu da Michigan Online diye.
+
+605
+02:49:26,131 --> 02:49:38,011
+Bu 2019'da koydu. Kendi web sitesinde bu kullandığım slide'ları falan da var. Ama 2021-2022 artık koymuyorlar.
+
+606
+02:49:38,011 --> 02:49:46,912
+Yani hocalar şöyle bir popülerliğini artırmak için bir koyuyor. Ondan sonra artık koymuyorlar.
+
+607
+02:49:52,595 --> 02:50:16,475
+Tavsiye ediyorum kısacası. Ben bile geçen gün başladım şöyle tekrar bakmaya. Farklı anlattığı yerler oluyor. Daha ayrıntılı anlattığı yerler oluyor. Baya keyifli bir şekilde anlatıyor. Tavsiye ediyorum arkadaşlar. Şiddetle.
+
+608
+02:50:18,227 --> 02:50:43,987
+Biz tabii bir ders falan daha yapabiliriz. Yani dersimizin yarısı, hatta daha fazlası klasik öğrenmeye gitti. Yapay zeka, derin öğrenmeye giriş daha çok yaptık biz. Derin öğrenme, Computer Vision alanında tabii Master Doktor'un da %90 derin öğrenme yapacaksınız.
+
+609
+02:50:44,755 --> 02:51:07,216
+Dolayısıyla ben altyapıyı vermiş oluyorum ama ayrıntıları çok fazla. Ayrıntıları böyle sağlam kaynaklardan. Böyle bir video dersi diyebilirsiniz ve güzel bir kitap okumanızı da tavsiye ediyorum. Kendi öğrencilerime genelde tavsiye ediyorum. Deep Learning kitabı var.
+
+610
+02:51:08,180 --> 02:51:20,479
+Goodfellow, Ian Goodfellow arkadaşlarının böyle sağlam bir base, temel deep learning base'i oluşturmanız faydalı olur.
+
+611
+02:51:23,420 --> 02:51:27,479
+Şimdi o zaman bir hafta daha süre vermiş oluyorum size.
+
+612
+02:51:35,956 --> 02:51:43,236
+Bugün on beşi, bugün on birinci haftaydı diye düşünüyorum. Doğru mu?
+
+613
+02:51:48,500 --> 02:51:52,799
+Onbirinci haftaydı. Doğru mu arkadaşlar?
+
+614
+02:51:55,819 --> 02:51:57,319
+Saymadık hocam biz.
+
+615
+02:51:59,520 --> 02:52:01,459
+Sınavdan sonra kaç hafta geçti?
+
+616
+02:52:02,500 --> 02:52:03,220
+Beş.
+
+617
+02:52:03,799 --> 02:52:06,819
+Bu üçüncü haftası değil mi? Sınavdan sonraki üçüncü ders mi?
+
+618
+02:52:09,139 --> 02:52:11,079
+Sınav sekizinci hafta.
+
+619
+02:52:14,708 --> 02:52:16,708
+Yok ya, üç olmuş olması lazım.
+
+620
+02:52:18,948 --> 02:52:20,948
+Kaç dersimiz var arkadaşlar?
+
+621
+02:52:22,948 --> 02:52:24,948
+Bir dakika bakalım.
+
+622
+02:52:29,427 --> 02:52:32,468
+On birinci hafta bu.
+
+623
+02:52:37,299 --> 02:52:55,779
+Evet. Bu 9-10-11. Pardon. 11. hafta bu hafta. Normalde gelecek hafta artık sizin şeyinize geçmeyi düşünüyorduk.
+
+624
+02:53:00,039 --> 02:53:03,299
+Ama ne yapalım? Gelecek hafta da...
+
+625
+02:53:05,236 --> 02:53:24,296
+Yine ders yapalım 12. haftada. Siz 13. ve 14. hafta anlatmış olursunuz. Sırada bir sorun var mı? Şu ismini yazanlar hazırlandı mı? Ben 13. hafta anlatabilirim. Diyenler kimler?
+
+626
+02:53:29,855 --> 02:53:53,416
+[öğrenci], onları yükledim. Geçen hafta çalıştırmaya çalıştım kodları. Kütüphanların bazısının eski olduğundan böyle sıvırlar yaşadım. Ama o çalıştırım sonunda implement ediyor. Ama o silahı da hazırlamadım.
+
+627
+02:53:56,211 --> 02:54:04,211
+Slide nasıl yapalım? Bir hazırlamak lazım mı sizce?
+
+628
+02:54:04,211 --> 02:54:16,211
+Aslında makalanın üzerinden de gidebiliriz hocam. Makaladan yola düşerek mesela şurada şöyle demiş, şurada şöyle demiş, beş altını ek makalada da gösterebiliriz.
+
+629
+02:54:17,971 --> 02:54:28,011
+Kodlardan. Ama siz bir slide hazırlayın. Kısa bir slide'lar hazırlayın bence. Ben kodları göstermek için hazırlarım hocam. Kodları adım adım.
+
+630
+02:54:28,011 --> 02:54:37,011
+Kodları o da olabilir. Yani bir slide olsun. Çok uzun olmasına gerek yok. Çünkü...
+
+631
+02:54:37,876 --> 02:54:58,415
+Bir şey, sizin bir şey yüklemenizi de istiyorum. Ya bir rapor ya bir slide olması lazım. Şimdi paper'ı yüklediniz, kodu da yüklediniz. İkisi de başka yerden bulma ya. Projede sizin ürettiğiniz bir şey görünmeyecek. En azından bir slide'ı siz üretmiş olun.
+
+632
+02:54:59,796 --> 02:55:03,855
+Buradaki sıra uygun mudur? Buradaki sıraya itiraz eden var mı?
+
+633
+02:55:11,123 --> 02:55:16,504
+O zaman bu sırayla alacağımızı varsayalım. Tamam mı arkadaşlar?
+
+634
+02:55:18,543 --> 02:55:22,543
+Yine siz hazırda olun. Şu arkadaki arkadaşlar da yine hazır olsun.
+
+635
+02:55:24,804 --> 02:55:30,244
+En son submission'a göre zamanı 20 dakika ya da 30 dakika gibi falan ayarlarız.
+
+636
+02:55:31,284 --> 02:55:35,324
+Biraz böyle fleksibel bir düşünceniz olsun.
+
+637
+02:55:35,791 --> 02:55:41,871
+Nasıl anlatırım? 20 dakikada ya da 30 dakikada AB durumu ürününüz olsun.
+
+638
+02:55:45,780 --> 02:55:54,560
+Peki, bir başka sorulacak, eklenecek bir şey var mı yoksa kapatıyorum.
+
+639
+02:55:58,324 --> 02:55:59,344
+İyi günler hocam.
+
+640
+02:56:01,604 --> 02:56:02,904
+Peki, iyi günler arkadaşlar.
+
+641
+02:56:03,623 --> 02:56:04,543
+İyi günler.
