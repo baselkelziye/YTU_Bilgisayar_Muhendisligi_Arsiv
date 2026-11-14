@@ -1,0 +1,1827 @@
+1
+00:10:28,563 --> 00:10:31,264
+Günaydın arkadaşlar, sesimi duyabiliyor musunuz?
+
+2
+00:10:42,259 --> 00:10:43,600
+Össürsünüz, iyi misiniz?
+
+3
+00:10:47,539 --> 00:10:59,279
+Dönemin sonuna doğru geldik. Önümüzdeki hafta son haftamız olacak. Bundan sonraki hafta final sinalımız olacak. Yani son dersimizi önümüzdeki hafta yapacağız. İkinci izleleriniz nasıl geçti?
+
+4
+00:11:06,515 --> 00:11:15,295
+Teşekkürler [öğrenci], ben de iyiyim. İkinci vizeleriniz nasıldı? Binlerce bir için söylüyorum.
+
+5
+00:11:29,172 --> 00:11:51,812
+Notlarınız dün akşam bana ulaştı. Onları düzenledim ben. Vakit bulduğumda sisteme gireceğim. Yani herhalde cuma günü akşamına kadar girmiş oldum noktalarınızı sisteme. İlk düzeye göre biraz daha ortalamalar daha makul düzeyde. Yani biraz düşmüş gibi olması gerektiği yere doğru biraz yaklaşmış esasında öyle diyelim.
+
+6
+00:11:53,908 --> 00:12:07,468
+Bugünkü dersimizde vektör uzayının geçen hafta tabanını tanımlamıştık. Vektör uzayının bir alt kümesinin elemanları eğer lineer bağımsızsa ve bütün uzayı üretiyorsa biz buna bir taban demiştik.
+
+7
+00:12:07,468 --> 00:12:17,347
+Tabanın eleman sayısına uzayın boyutu dedik. Elimizde bir vektör uzayı olsun. Boyutu ne olan? Bunun iki tane tabanı olduğu zaman
+
+8
+00:12:18,611 --> 00:12:24,651
+Bir tabana göre, bir vektörü, lineer kombinasyon olarak yazabileceğiz. Orada kat sayılar var.
+
+9
+00:12:25,711 --> 00:12:28,991
+Diğer tabana geçtiğimizde, o kat sayılar nasıl değişecek?
+
+10
+00:12:29,731 --> 00:12:39,951
+Bunu biz, tabanlar arasında geçiş matrisi adını verdiğimiz bir dönüşümle, daha bir matrisle sağlamış olacağız daha kolay bir şekilde.
+
+11
+00:12:39,951 --> 00:12:44,911
+Bu dersimizde, tabanlar arası dönüşüm ve...
+
+12
+00:12:44,912 --> 00:12:54,091
+tabanlar arası dönüşümü sağlayan geçiş matrisini nasıl elde edeceğimizi, elde edeceğimizden bahsedeceğiz arkadaşlar.
+
+13
+00:12:56,331 --> 00:13:03,252
+Önce taban dönüşü matrisinden bahsedelim. Daha doğrusu taban geçiş matrisinden bahsedelim.
+
+14
+00:13:03,932 --> 00:13:09,872
+Elimizde bir vektör uzayı olsun, boyutu ne olan yani sonlu boyutlu bir vektör uzayı olsun.
+
+15
+00:13:13,331 --> 00:13:16,831
+ve en boyutlu bir uzay ve iki tane taban olsun.
+
+16
+00:13:20,032 --> 00:13:29,872
+Çok pardon arkadaşlar, ben size koordinat vektörünü vermemişim. O İngilizce gruptaydı, onlara geçen hafta vermiştim. Size bir de koordinat vektöründen bahsetmem gerekiyor.
+
+17
+00:13:31,860 --> 00:13:43,039
+Aslında şu ana kadar kullandığımız, ben onlara hep ne dedim, bileşen dedim, koordinatlara bileşen dedim. Çünkü tanımını vermemiştik. Artık bundan sonra bir vektörün koordinatı diyebileceğiz.
+
+18
+00:13:43,539 --> 00:13:55,019
+Öncelikle koordinat vektörünü tanımlayalım. Koordinat vektörü neymiş? Elimizde en boyutlu bir vektör uzayı olsun ve onun bir tabanı olsun.
+
+19
+00:13:55,827 --> 00:13:58,768
+Geçen hafta bu teoremi tekrar etmiştik.
+
+20
+00:13:59,107 --> 00:14:04,607
+V'deki her bir eleman, tabanın elemanlarının lineer kombinasyonu olarak yazılabilir.
+
+21
+00:14:06,707 --> 00:14:22,147
+Tanımının ikinci koşulunda taban elemanları bütün uzayı üretmeliydi. Bu da ne demek? Farklı bir ifadeyle uzaydaki her bir elemanı biz taban elemanlarının bir lineer kombinasyonu olarak yazılabiliriz.
+
+22
+00:14:22,147 --> 00:14:33,267
+Yani her W eleman V için X1, X2, XR elemanları vardır. Öyle ki V1'in X1 katı, V1 tabanın birinci elemanı.
+
+23
+00:14:34,131 --> 00:14:52,391
+Buraya şunu da eklemem lazım. Bir sıralı bir taban olsun. V'nin sıralı. Bunu eklemem gerekiyor arkadaşlar. V'nin sıralı bir tabanı olsun. Yani şu tabandaki sıralar önemli. Bunları değiştiremem. Eğer değiştirirsen tanımlayacağımız koordinat vektörü değişecek.
+
+24
+00:14:53,172 --> 00:15:04,932
+Uzaydaki her bir W elemanını ben V1, V2, V'nin bir lineer kombinasyonu olarak yazabilirim. Yani X1, X2, XN sayıları tek türlü olarak vardır.
+
+25
+00:15:04,932 --> 00:15:18,292
+İşte bu X1, X2, XN sayılarına biz W vektörünü B tabanına göre koordinatları diyeceğiz ki onu bir vektöre atayabiliriz.
+
+26
+00:15:18,964 --> 00:15:30,224
+W, braket içerisinde alt indis B, bu ne demek? W'nun B tabanına göre koordinatları X1, X2, şu şekilde yazıyoruz.
+
+27
+00:15:31,700 --> 00:15:43,060
+Koordinat vektörü esasında adres bilgisi gibi düşünebilirsiniz ya da kimlik numarası. Yani sadece o vektöre az. Tabi tabanı biz değiştirdikçe bu koordinat vektörü de değişecek.
+
+28
+00:15:43,980 --> 00:15:57,080
+Eğer biz v kareyi düşünelim, v kare uzayı, bunu biz standart tabanla üretebiliyorduk. 0, 1, şöyle üreteş yapalım. 1, 0.
+
+29
+00:16:08,403 --> 00:16:13,563
+1, 0, 0, 1 vektörleri tarafından üretebiliriz biz bu uzayı.
+
+30
+00:16:13,563 --> 00:16:28,524
+Dolayısıyla her x, y eleman r kare için x, y'yi x çarpı 1, 0 artı y çarpı
+
+31
+00:16:28,607 --> 00:16:43,687
+0-1, yani skaler çarpımların toplamı 0-1 olarak yazabiliriz. Tam olarak standart taban verdiğimizde, standart tabandan kastım, boyu 1 olan birbirlerine 2'şerli dik olan taban, örneklerimizde vektör uzaylarında bundan sıkça bahsettik standart tabandan.
+
+32
+00:16:44,947 --> 00:17:04,907
+Standart tabana göre herhangi bir vektörün koordinat vektörü kendisine eşit. Fakat bu non-trivial bir taban olduğunda, faraza şöyle bir taban alalım. 1, 2, 2'ye 0. Bunlar da yine lineer bağımsız olur. İki tane vektör ve re kareyi gererler. Dolayısıyla bu da bir taban olur.
+
+33
+00:17:05,263 --> 00:17:10,703
+Bu yeni tabana göre xy vektörünün koordinatları değişecektir.
+
+34
+00:17:10,783 --> 00:17:17,803
+Tabii xy'den bahsederken esasında biz hep vektörü standart tabana göre koordinatlarını vermiş oluyoruz.
+
+35
+00:17:18,036 --> 00:17:36,456
+Bir vektörden söz ederken, esasında örtük olarak standart tabana göre biz koordinatları vermiş oluyoruz. İşte o standart tabana göre verilen koordinatlar tabanı değiştirdiğim zaman nasıl değişir ve bu geçişi sağlayan bir matris elde edeceğiz bu derste esasında.
+
+36
+00:17:41,971 --> 00:18:05,291
+W'nun standart tabanı, şöyle standart taban yazayım. Standart taban. Standart tabana göre koordinatları W eşittir. W1, W2, WL olarak verirsem en boyutlu bir uzayda kendisine eşit olacak. W1, W2.
+
+37
+00:18:06,291 --> 00:18:24,371
+WN olacak. Demek ki bir vektörün standart tabana göre koordinat vektörü kendisine eşit fakat taban değiştiğinde koordinat vektörü farklı bir şey olacaktır. O da non-homogeneous bir sistemin çözümüne eşit olacak.
+
+38
+00:18:33,332 --> 00:18:59,112
+Burada vermişiz. Ben biraz acele davrandım. M boyutlu bir vektör uzayı var elimizde. Vektör uzayının N tane lineer bağımsız elemandan oluşan bir tabanı var. Sonlu boyutta olunca lineer bağımsızlık ya da germe tabanı olması için yeterliydi. B tabanı sıralı bir taban. Sıralı tabandan kastım, farz edelim ki şöyle bir küme var elimizde. İşte üç boyutlu bir uzayın.
+
+39
+00:18:59,827 --> 00:19:08,827
+B2, B3 şeklinde bir tabanı var. Şuraya B1 diyelim. Eğer sıralı taban diyorsak, B2'yi şöyle yazabilirim.
+
+40
+00:19:27,188 --> 00:19:40,248
+V3, V1, V5, V3, V1, V2 ve V6, 3 faktöryel tane farklı yazılış.
+
+41
+00:19:40,608 --> 00:19:45,508
+Aslında tavan elemanlarının, İngizlerin mümkün bütün permitasyonlarını almış olduk.
+
+42
+00:19:45,628 --> 00:19:50,828
+Yani 3 faktöryel 6 tane sıralı tavan olmuş oldu.
+
+43
+00:19:51,588 --> 00:19:53,468
+V1, V2, V2, V1 şurası.
+
+44
+00:19:55,635 --> 00:20:11,155
+Sıralı taban dersek normalde, yani esasında bu 6 tane küme, küme olarak birbirine eşit. Bir kümede elemanların sırasının farklı olmasının hiçbir önemi yok. Aynı özelliklere sahip elemanlarsa sırayı istediğimiz gibi değiştirebiliriz.
+
+45
+00:20:21,268 --> 00:20:42,528
+Taban yazmıştım, tabana göre koordinat vektörü. Eğer V1 ile V2'nin geri değişmiş olsaydı, X1 ile X2'nin geri değişmiş olacaktı. Dolayısıyla bu adres değişikliğine sebep oluyor. O yüzden biz taban verdiğimizde onu fix olarak kabul ediyoruz. Yani yerlere sabit bir taban, o yüzden sıralı bir taban diyoruz. Yani yerlerin önemi var.
+
+46
+00:20:44,084 --> 00:21:11,923
+elemanların, taban elemanlarının yerlerinin önemi var. Ben bu tabanlardan herhangi birini alırsam, yani aynı taban esasında ama elemanlarının sırasını değiştirerek yeni yeni tabanlar ürettik ondan. Dolayısıyla bunlardan herhangi birini alırsam koordinat vektörü değişecektir. W'nun koordinat vektörü değişecektir. O yüzden biz B'ye sıralı taban dedik arkadaşlar. B sıralı. Bu çok önemli bir ifade burada. Yani alelade var tabanı.
+
+47
+00:21:12,084 --> 00:21:20,764
+Çünkü o sırayı gelişigüzel yazamam. Yazarsam tanım olmaz. İyi tanımlı bir tanım olmamış olur.
+
+48
+00:21:22,003 --> 00:21:28,443
+Sıralı bir taban var elimde. En boyutlu bir vektör uzayı. Sıralı bir taban. X, bir, x, iki, x, en, fayas sayılar var elimde.
+
+49
+00:21:29,564 --> 00:21:38,884
+Uzaydaki her bir elemanı ben dinler kombinasyon olarak yazabildiğim için, dolayısıyla keyfi W elemanını aldım.
+
+50
+00:21:39,347 --> 00:21:45,347
+Taban elemanlarının lineer kombinasyonu olarak yazdım. Bu şekilde ki kat sayılar...
+
+51
+00:21:45,455 --> 00:21:56,695
+Esasında bu homojen olmayan bir denklem sistemi, W bir vektör, sağ tarafta vektörler var. Bu vektör denklemini açtığımda, lineer bağımlılık, bağımsızlık konusunda bunları gördük arkadaşlar.
+
+52
+00:21:56,895 --> 00:22:04,516
+Liner terkip olarak yazmadan. Lineer bağımlılık, bağımsızlıkta homojen bir sistemin çözümüne bakıyorduk.
+
+53
+00:22:04,516 --> 00:22:13,455
+Aşikar çözüm varsa vektörler lineer bağımsız, aşikardan farklı çözüm varsa vektörler lineer bağımlı. Germede ise ya da birleşimler birleşimler.
+
+54
+00:22:13,455 --> 00:22:18,255
+ya da kombinasyonda ise vektörü, ilgili vektörlerin lineer terkibi olarak yazıyorduk.
+
+55
+00:22:18,335 --> 00:22:29,155
+Kaç sayıları tek türlü olarak bulabiliyorsam, bu da şu anlama geliyor, homojen olmayan sistemi çözümü varsa, bu tek çözüm olabilir, parametreye bağlı çözüm olabilir.
+
+56
+00:22:29,295 --> 00:22:31,855
+Bu durumda lineer kombinasyon olarak yazabiliyorduk.
+
+57
+00:22:35,700 --> 00:22:49,420
+Şeklinde yazdıktan sonra x1, x2, xn sayılarını bunlar real sayı bir vektöre atarsak, bu durumda koordinat vektörünü elde etmiş olacağız.
+
+58
+00:22:49,559 --> 00:22:58,940
+Yani x1, x2, xn elemanlarına, real sayılarına w vektörünün b tabanına göre koordinat vektörü diyeceğiz.
+
+59
+00:22:58,940 --> 00:23:02,347
+Yani w elemanının b tabanına göre koordinat vektörü.
+
+60
+00:23:03,155 --> 00:23:08,175
+Demek ki taban değiştikçe, sıralı taban değiştikçe, koordinat vektörü değişecek.
+
+61
+00:23:08,496 --> 00:23:15,056
+Ki bunu da vurgulamak için biz W'yu braket içine alıp, alt din diz B şeklinde yazıyoruz.
+
+62
+00:23:15,615 --> 00:23:17,255
+Tabanı vurgulamak için.
+
+63
+00:23:17,675 --> 00:23:19,735
+Sormak istediğiniz bir şey var mı sevgili arkadaşlar?
+
+64
+00:23:35,251 --> 00:24:02,571
+Bir örnek vereceğiz. Örneği iki aşamalı olarak tabanı değiştirip vereceğiz. İlk ki W, aslında bundan bahsettim tanımı verdiğimde standart tabana göre koordinat vektörü kendisi olacak. Ne yapmam lazım? W'yu, şuraya E1 diyelim, E2, E3, R3'ün standart tabanı, X1, E1, artı X2, E2, artı
+
+65
+00:24:03,220 --> 00:24:27,740
+x3, e3, vektörlerin oklarını çizmiyorum arkadaşlar ama burada oklar var. Şeklinde yazdığımızda o zaman ne olacaktır? W321, x1 çarpı 1, 0, 0, artı x2 çarpı 0, 1, 0, artı x3 çarpı 0, 0, 1 şeklinde yazdım.
+
+66
+00:24:28,915 --> 00:24:35,435
+Burada vektörleri sağ taraftaki skaler çarpımları yapıp topladığımızda ne olacaktır?
+
+67
+00:24:36,175 --> 00:24:37,855
+Sol tarafta 3, 2, 1 var.
+
+68
+00:24:38,475 --> 00:24:39,096
+Eşittir.
+
+69
+00:24:40,175 --> 00:24:42,935
+X1, X2, X3.
+
+70
+00:24:43,115 --> 00:24:45,415
+Bu da esasında W'nun kendisi.
+
+71
+00:24:45,695 --> 00:24:51,115
+Demek ki standart tabana göre bir vektörün koordinat vektörü kendisine eşit.
+
+72
+00:24:51,115 --> 00:24:53,076
+Tavanımızı şimdi de değiştirelim.
+
+73
+00:24:53,175 --> 00:24:56,175
+Bakalım koordinat vektörü nasıl olacak?
+
+74
+00:25:03,763 --> 00:25:11,763
+vektörümüzü de değiştirdik, tabanı da değiştirdik, 1-2-3 olarak aldık. Bir öncekini de alabilirdik esasında, 3-2-1 olarak alabilirdik.
+
+75
+00:25:12,403 --> 00:25:23,003
+vektörümüz 1-2-3 olsun defa. Hatta ben bunu şey alayım, 3-2-1 olarak alayım, vektör yine 3-2-1 olsun, bu da farklı bir örnek olarak burada dursun.
+
+76
+00:25:23,683 --> 00:25:26,103
+Şöyle W diyelim buna, W üstüye de.
+
+77
+00:25:26,516 --> 00:25:37,736
+W'su olsun, bizimki W olsun. W'yu biz şu tabana göre koordinat vektörünü bulmuş olalım. Yani yukarıda 3, 2, 1, kersine eşitti. Bakalım tabana göre koordinat vektörü ne olacak?
+
+78
+00:25:38,192 --> 00:25:57,891
+3, 2, 1'i şu vektörlerin lineer kombinasyonu olarak yazacağım. Taban elemanlarının, R3'ün yine bir tabanı. Bu vektörler lineer bağımsız. Lineer bağımsız olması germe aksiyonunu gerektiriyordu. Tabanın sonunda olması halinde. Dolayısıyla, geçen hafta kullandığımız bir örnek esasında taban olduğunu biliyoruz.
+
+79
+00:26:02,099 --> 00:26:19,359
+terkibi şeklinde yazalım. x1 ve 1 artı x2 ve 2 artı x3 ve 3 şeklinde yazdık. Dolayısıyla, sırayı değiştireceğim ben.
+
+80
+00:26:28,852 --> 00:26:51,532
+2, 0, 1, artı, x, 3, şarpı, 1, 2, 1, eşittir, 3, 2, 1 dedik. Diğerine göre zaten çözüm olacak. Burada açtığımızda homojen olmayan bir denklem sistemi elde edeceğiz. Geçen hafta çokça çözdük bu sistemi. Aynı örneği hep kullandım not boyunca.
+
+81
+00:26:56,627 --> 00:27:02,307
+Eşittir 3. Tabii sağ taraftaki vektörümüz değişiyor, sabitler vektörü.
+
+82
+00:27:02,907 --> 00:27:17,447
+2 tane x1 artı 2 tane x3 eşittir 2. x2 artı x3 eşittir 1.
+
+83
+00:27:20,307 --> 00:27:38,407
+Homojen olmayan bir sistem çözmek için genişletilmiş kat sayılar matrisini satırca indirgenmiş eşelon forma getirmem gerekiyor. Gauss-Jord'un eliminasyonu. Tabi burada yok etme metodu da kullanılabilir. Bir zorunluluk yok. İstediğiniz yöntemi kullanabilirsiniz. Çok pardon, izlenmek. Hoşçakalın.
+
+84
+00:27:50,867 --> 00:28:00,707
+Genişletilmiş kat sayılar maddesini yazdığımızda 1, 2, 0, 2, 0, 1, 1, 2, 1.
+
+85
+00:28:01,248 --> 00:28:04,427
+Sabitlerimiz vardı 3, 2, 1 şeklinde.
+
+86
+00:28:05,907 --> 00:28:07,927
+Burada elementer işlemler uygulayacağız.
+
+87
+00:28:08,307 --> 00:28:11,227
+Birinci satırın eksi iki katını ikinci satıra ekledim.
+
+88
+00:28:12,627 --> 00:28:14,627
+1, 2, 1, 3.
+
+89
+00:28:15,476 --> 00:28:29,076
+0, eksi 4, 0, şurası da, eksi 2 katını ekledik, eksi 2, eksi 6 artı 2'den, eksi 2, evet 0, şurası, eksi 4 oldu.
+
+90
+00:28:29,916 --> 00:28:33,936
+Üçüncü satırı aynen yazdım, 0, 1, 1, 1.
+
+91
+00:28:35,556 --> 00:28:37,956
+Şimdi iki tane artışık işlem uygulayacağım.
+
+92
+00:28:39,956 --> 00:28:40,268
+Öncelikle...
+
+93
+00:28:40,884 --> 00:28:50,804
+1 böl 4 katını, ikinci satırın 1 böl 4 katını, üçüncü satıra ekleyeceğim. Daha sonra bu işlemi yaptıktan sonra, ikinci satırı eksi 1 böl 4 ile çarpacağım.
+
+94
+00:29:00,019 --> 00:29:08,240
+0, şöyle yine işlemi yapmış olalım, 1, 0, eti 1 bölü 4 ile çarptığımızda şurası 1 bölü 2 olur.
+
+95
+00:29:09,899 --> 00:29:15,980
+Sonra 0, 1 bölü 4 ile çarpıp topladığımda eti 1 artı 1, 0.
+
+96
+00:29:16,496 --> 00:29:31,476
+Aynen kalacak. Şurası da ne yaptık? 1 bölü 4 ile çarptığımızda, eksi 1 bölü 2, artı 1 bölü 2, burası da pardon artı 1, 1 bölü 2 olmuş oldu. Kontrol edelim.
+
+97
+00:29:33,779 --> 00:29:46,640
+Eksi 1 bölü 2 artı 1, evet 1 bölü 2 oldu. Yapacağım iki tane daha işlem var. Üçüncü satırın eksi katını birinci satıra eklemek ve ikinci satırın eksi katını birinci satıra eklemek.
+
+98
+00:29:50,079 --> 00:30:00,319
+İkinci satırın ya da üçüncü satırın eksilisini birinci satıra eklediğimde 1, 2, 0, 3'ten yarım çıktı, 5 bölü 2.
+
+99
+00:30:02,003 --> 00:30:26,083
+Sonra, şurası 0, 1, 0, 1 bölü 2, 0, 0, 1, 1 bölü 2, ikinci satırın eksilisini, eşittir yazmamız gerekiyor, ikinci satırın eksilisini birinci satıra ekledim, pardon, eksi iki katını, eksi iki katını birinci satıra ekledim, bir,
+
+100
+00:30:27,028 --> 00:30:43,288
+0, 0, eksi 2 ile çarptığımızda, eksi 1, 2.5'tan 1 çıkardık, 1.5, 3 bölü 2. 0, 1, 0, 1 bölü 2. 0, 0, 1, 1 bölü 2.
+
+101
+00:30:54,516 --> 00:30:57,596
+3 bölü 2 çarpı V'dir.
+
+102
+00:31:06,771 --> 00:31:15,271
+Artı 1 bölü 2 ve 2 artı 1 bölü 2 ve 3 şeklinde yazmış olduk.
+
+103
+00:31:15,271 --> 00:31:16,531
+Kontrol edelim.
+
+104
+00:31:27,092 --> 00:31:32,192
+1 bölü 2, 4 bölü 2, 6 bölü 2, ne geldi? 3 gelmiş oldu.
+
+105
+00:31:32,312 --> 00:31:34,092
+Toplam 3 birinci koordinat eşit.
+
+106
+00:31:34,692 --> 00:31:37,152
+Diğer koordinatlar da bu şekilde hesaplayabiliriz.
+
+107
+00:31:37,232 --> 00:31:49,652
+Demek ki W'nun B tabanına göre koordinat vektörü, yeni koordinat vektörü 3 bölü 2, 1 bölü 2, 1 bölü 2 şeklindeymiş.
+
+108
+00:31:51,752 --> 00:31:54,312
+Esasında ne yapmış olduk?
+
+109
+00:31:55,667 --> 00:32:19,367
+Tam olarak, birbirine dik olan, 3 boyutlu uzaydan, V3'ten, şurası Z olsun, X olsun, Y olsun, bunlar birbirine dik, ikişerli, ve burada standart taban vektörlerimiz olsun.
+
+110
+00:32:24,435 --> 00:32:35,755
+Şurası E3, E2, E1 var. Bunu öyle bir dönüşüme tabi tuttum ki, yeni çatımız değişti.
+
+111
+00:32:37,315 --> 00:32:47,395
+Yeni çatımız değişti. Nasıl oldu? İlk vektörüm, şuradan bakalım, 1, 2, 0. X'i 1, Y'si 2, Z'si 0.
+
+112
+00:32:50,395 --> 00:32:51,035
+Şurası.
+
+113
+00:32:56,884 --> 00:32:58,724
+X'i bir, şöyle geleceğim.
+
+114
+00:33:00,064 --> 00:33:05,304
+Bir, Y'si iki, yani şurası vektör şöyle, evet şu X ekseni olacak.
+
+115
+00:33:06,903 --> 00:33:07,264
+Şöyle.
+
+116
+00:33:09,344 --> 00:33:10,624
+X ekseni diyelim.
+
+117
+00:33:12,884 --> 00:33:17,324
+X'i iki, Y'si sıfır, Z'si bir.
+
+118
+00:33:17,324 --> 00:33:20,264
+Yani, şöyle bir şey.
+
+119
+00:33:21,564 --> 00:33:22,244
+X'i iki.
+
+120
+00:33:24,084 --> 00:33:47,084
+Y'si 0, Z'si 1. Sonra 1, 2, 1. 1, 2, 1. Yani 1, 1 neresi? Tam olarak şurada bir yerde. 1, 1, şurada bir yerde. Yukarı doğru, pardon, 1, 2, 1. Şurada bir yerde olacak. Şurada bir yerde. Dolayısıyla biraz da ileride. Şunu yukarı doğru bir birim götüreceğim. Yani...
+
+121
+00:34:00,915 --> 00:34:02,215
+ve mavi de boyevan.
+
+122
+00:34:07,059 --> 00:34:31,239
+Şurası V3'ün, şurası V2, yok V1, şurası V1, şurası da V2, V2. Artık bambaşka bir koordinat sistemi oluşmuş oldu. Daha doğrusu yine kartezyen ama dik değil. Şurası Z koordinatı.
+
+123
+00:34:31,923 --> 00:34:39,804
+Şurası da Y koordinat, yeni Y koordinat. Bunlar birbirine dik değil bu arada. Çarptığımızda kontrol edebiliriz.
+
+124
+00:34:41,264 --> 00:34:49,543
+Mesela birinci ile ikincinin iç çarpımı 2 geliyor. Değil mi? Birbirine dik değil. Birinci ile üçüncünün iç çarpımı 5 geliyor.
+
+125
+00:34:50,184 --> 00:34:57,443
+İkinci ile üçüncünün iç çarpımı 2 artı 1, 3 geliyor. Yani birbirine dik de değiller aralarındaki açıda.
+
+126
+00:34:58,963 --> 00:35:14,644
+90 derece değil. Şuradaki vektörüm 3, 2, 1 idi. Bunu sağ tarafta nereye map etti? 3 bölü 2, 1 bölü 2, 1 bölü 2'ye map etmiş oldu.
+
+127
+00:35:27,188 --> 00:35:46,648
+Sağ tarafta bambaşka bir şey olacak. Yani ne yapmam lazım? Kübü oluşturmak için köşelerini, orijinde olduğunu varsayalım. Şu köşesi. 0, 0, 0. Şurası 1, 0, 0. Şurası 1, 1.
+
+128
+00:35:52,532 --> 00:36:14,052
+0, 1, 0, şurası, y'si ile z'si, 1, x'i 0 burada da, yani 0, 1, 1, şurası, 0, 0, 1, bütün köşelerini yazdık herhalde.
+
+129
+00:36:14,052 --> 00:36:19,211
+2, 4, 6 tane köşesi kaldı, evet şu köşe ve şu köşe, onları maviyle yazayım.
+
+130
+00:36:21,619 --> 00:36:28,800
+Şunları maviyle yazalım. Şu köşesi 1, 0, 1 ve şu köşesi de
+
+131
+00:36:32,563 --> 00:36:39,307
+Bir, bir, bir olmuş olduk. Sekiz tane köşeyle yazdık. Bu kübün...
+
+132
+00:36:40,019 --> 00:37:04,440
+Hacmi bir birim olan küp, sol tarafta dik koordinatlarda, R3'te dik koordinat. Sağ tarafa taşıdığımızda formu değişecek arkadaşlar. Bunu egzersiz olarak yapmak isteyenler yapabilir. Şu tabana göre map ettiğinizde form bozulmuş bir şey olacak. Artık bir küp olmayacak bu. Yine solit bir cisim. Ama bir küp olmayacak. Hacmini daha rahat hesaplayamayacağımız bir forma gelmiş olacak.
+
+133
+00:37:07,155 --> 00:37:12,975
+Her şeyi göreceğiz arkadaşlar. Mat 10.72 almayanlarımız.
+
+134
+00:37:14,387 --> 00:37:20,487
+İki değişkenli, integraller hesaplanırken bazen bölge dönüşümleri yapacağız. Hatta üç değişkenli de olabilir.
+
+135
+00:37:20,487 --> 00:37:32,487
+İşte diyelim sağ tarafta formu hoş olmayan bir şey var. Ama uygun bir dönüşümle siz kubik bir yapıya dönüştürebilirsiniz ya da prizma yapısına dönüştürebilirsiniz.
+
+136
+00:37:33,287 --> 00:37:37,787
+Prizmanın hacmini hesaplamak kolay. Fakat formunu bilmediğiniz bir şeyin hacmini hesaplamak zor.
+
+137
+00:37:38,947 --> 00:37:42,167
+Orada tam olarak yapılan uygun taban dönüşüm esasında.
+
+138
+00:37:42,387 --> 00:37:49,387
+ve o aradaki proporsiyonu veren de hacim ise artık alansa ne ise Jacobian determinante olacak arada bize.
+
+139
+00:37:50,107 --> 00:37:56,127
+Bu hacim ya da alandaki değişimi veren parametre Jacobian determinante olacak.
+
+140
+00:37:56,827 --> 00:38:03,587
+Orada size hazır tanım olarak verilecek arkadaşlar mat 172 matematik 2 yani kalkulu sikri.
+
+141
+00:38:03,587 --> 00:38:05,648
+Var mı sormak istediğiniz soru?
+
+142
+00:38:10,708 --> 00:38:11,547
+Kimler burada?
+
+143
+00:38:14,507 --> 00:38:17,927
+Burada olanlar mesaj kutusuna bir artı yazsın.
+
+144
+00:38:26,387 --> 00:38:31,587
+Biraz keyfiniz yok gibi arkadaşlar. Sınavlarla ilgili mi? Sınav haftası işte.
+
+145
+00:38:37,331 --> 00:38:38,731
+[öğrenci] koymuş.
+
+146
+00:38:40,172 --> 00:38:40,452
+Evet.
+
+147
+00:38:43,291 --> 00:38:48,072
+Koordinat vektörü böyle. Şimdi taban geçiş matrisini elde edebiliriz.
+
+148
+00:38:51,795 --> 00:38:55,015
+Ben de ayrıcalıkta olduğunu mu acaba uygulamak istedi?
+
+149
+00:38:58,095 --> 00:39:03,615
+Biraz motivasyon düşmüş değil mi arkadaşlar sizde? Ben öyle anlıyorum.
+
+150
+00:39:03,755 --> 00:39:11,295
+Çünkü ilk vizeye kadar çok ilgiliydiniz derste ama vizeden sonra biraz moralleriniz bozuldu gibi.
+
+151
+00:39:12,135 --> 00:39:14,175
+Tabii bu kendi bölüm dersleriniz de var.
+
+152
+00:39:18,867 --> 00:39:44,907
+Yani üzmemişler olması gerekendir belki. Amaç herkesin kendi bilgisini kağıda yansıtması. Öğrenciler ölçmek istiyor bu sistem esasında. Ama online olunca tabii ölçümler çok tutarlı olmuyor. Yani kim gerçekten biliyor, çalışıyor, hak ediyor, unuttu, kim etmiyor. Bunlar biraz karışıyor işler birbirine.
+
+153
+00:39:45,556 --> 00:40:01,655
+Evet, yani yorulacaksınız özlem, öğrencilik, mesleğiniz şu anda öğrencilik. Ama ileride dönüp baktığınızda güzel hatırlayacaksınız bu zamanları. Keşke örgün öğretim olsaydı da kampüslere gelebilseydiniz.
+
+154
+00:40:04,135 --> 00:40:06,655
+Şimdi elinizden geleni yapın ki ileride...
+
+155
+00:40:07,539 --> 00:40:25,880
+Hani niye böyle yapmadım demeyesiniz. Amaç da şu olsun, iyi not almak amaç olmasın amaç, ben ne öğrenirim burada? Kendi hesabıma, kendimi daha iyi yetiştirmek için, evrensel bir insan olabilmek için kendi alanımda.
+
+156
+00:40:33,684 --> 00:40:51,224
+Aslında bir şekilde çalışan emeğinin karşılığını alır. O kazanmıştır artık. Mesleki derslerinizle ilgili olsun. Siz bir konuyu anladıysanız, orada analiz düzeyinde yorum yapabiliyorsanız, orada iyisinizdir demek.
+
+157
+00:40:54,804 --> 00:41:22,204
+Sınav olacak. Sınav zamanları bunalır öğrenciler. Kendinize tabii şey yapın, nasıl diyeyim, hediyeler verin bu süreçlerde. Artık herkesin modu farklıdır. Alışılmadık bir şey yapın mesela, ne bileyim, farklı bir iş yapın, biraz zihninizi dağıtın oradan. Bütün o sınav moduna getirin. Herkesin öyle imkanı da olmayabilir tabii ama bir şeyden sıkıldıysanız farklı bir şeye geçin.
+
+158
+00:41:22,559 --> 00:41:26,119
+Biraz zihninizi serbest bırakın.
+
+159
+00:41:26,760 --> 00:41:31,139
+Tabii ki peş peşe sınav gelince o sizi baskılayacak, presleyecektir.
+
+160
+00:41:32,159 --> 00:41:33,800
+Ben de yaşadım o süreçleri.
+
+161
+00:41:34,399 --> 00:41:40,219
+Hatta ikinci dönemin sonlarına doğru, yani çok bunalırdım.
+
+162
+00:41:40,219 --> 00:41:42,859
+O sınavlar, şunlar, bunlar falan.
+
+163
+00:41:43,539 --> 00:41:46,340
+Ne yapardım o zaman işte devlet tiyatrosuna giderdik.
+
+164
+00:41:46,779 --> 00:41:48,199
+Çok eski de değil esasında.
+
+165
+00:41:50,420 --> 00:41:57,039
+Bir tiyatro, bir sinema falan, bir konser varsa, tabii yaz, mevsim yaza doğru işte baharda falan, öyle bir şey.
+
+166
+00:41:57,980 --> 00:42:06,640
+Ya da gidip işte biraz alışveriş yapmak, ya da dışarıda yemek yemek falan bizim için bunlar biraz zihni dağıtmak için yeterliydi.
+
+167
+00:42:07,360 --> 00:42:10,520
+Tabii sizler, bilmiyorum herkesin, farklı.
+
+168
+00:42:11,987 --> 00:42:30,587
+Tabii evet şöyle de bir durum var. Pandemi, yani büyük şehirlerde yaşayanlar biraz sosyal hayatları kısıtlanmış oluyor. Hatta kim bilerim ki fazla da olamıyor. Bilmiyorum kişiden kişiye değişiyor. Eğer biraz daha kasabada iyiseniz, köyde iyiseniz daha rahatsınız.
+
+169
+00:42:31,103 --> 00:42:50,103
+doğayla iç içesiniz. Daha güzel olabilir. Tabi oranın da imkanları kısıtlı olabilir. Bilemiyorum. Bu olağanüstü bir durum. Umarım her zamanda biraz tünelin vücuta görünüyor artık. İnsanlar aşı olmaya başlayınca artık...
+
+170
+00:42:50,579 --> 00:43:02,139
+Bağışıklık kazanmış olacaklar, hastalık yayılmayacak falan. Eski düzene umarım dönebileceğiz. Yani öyle görünüyor, dönebileceğiz gibi. Umarım tez zamanda dönemiz, öyle diyelim.
+
+171
+00:43:02,643 --> 00:43:09,163
+Yine de şey görünmüyor, çok yakın vadede de bu gerçekleşecek gibi durmuyor.
+
+172
+00:43:09,863 --> 00:43:19,063
+Aşılanmanın olması, bağışıklığın kazanılması, herkes aşı olacak ya da nüfusun en az %60 aşı olması gerekiyor ki salgın dursun.
+
+173
+00:43:19,063 --> 00:43:24,123
+Bu da sanki ikinci döneminde online olacağını gösteriyor.
+
+174
+00:43:24,692 --> 00:43:47,572
+Kısmen bu dönem yüz yüze dersler yapıldı ama bunlar tabii sonuna kadar götürülemedi. Kararlar alındı, kapanmaya yönelik kararlar, kısıtlamalar oluştu yine. Sanırım o derslerde devam ettirilmiyor tamamıyla online. Önümüzdeki dönemde ben öyle görüyorum, yine online olacak gibi.
+
+175
+00:43:47,572 --> 00:43:51,152
+Tabii yeni başlayanlar için bu güzel olmadı.
+
+176
+00:43:52,788 --> 00:44:06,268
+En azından geçen sene başlayanlar ya da önceki sene örgün öğretime dahil oldular bir şekilde. Tabii hazırlık okuyanlar ya da donduranlar onlara yine gelmediler ama öyle bir yerim herhalde arkadaşlar.
+
+177
+00:44:10,931 --> 00:44:31,652
+Yani şanslıyız hala, öyle diyelim. İmkanlarınızı, sahip olduğunuz şeyleri iyi bilelim, ne var elimizde. Ona göre kendimize en iyi yolu seçelim arkadaşlar. En iyi ve en onurlu yolu seçelim elimizdekilere göre. En onurlu, en güzel yolu seçelim kendimize göre.
+
+178
+00:44:33,711 --> 00:44:36,991
+Dolayısıyla moralinizi bozmayın. Tabii öğrencilik.
+
+179
+00:44:41,300 --> 00:45:05,228
+Evet, onları yapamıyorsunuz. Doğru, maalesef. Hani ben kendimden örnek verdim. Tabii şu anda yapabileceğiniz şeyler biraz daha yaratıcı olmanız lazım. Hani yapabilirsiniz zihni dağıtmak için sınav sürecinde, pandemi sürecinde. Tabii zor koşullardasınız. Kolay değil. Hepimiz aynı süreçte yaşıyoruz. O yüzden kendimize...
+
+180
+00:45:05,652 --> 00:45:29,548
+Zeka paratısı taşıyan yollar bulabiliriz ya da yöntemler bulabiliriz. Ümitsizliğe kapılmamak lazım, pes etmemek lazım. Moralinizi yüksek tutmanız sizin lehinize olur. Yani biz bütün kendinizi olumsuzluğa teslim ederseniz ne geçecek elinize değil mi? Olumlu düşünmek lazım. Olayları kendinize göre olumlu yorumlamanız lazım. Böyle yaparsanız...
+
+181
+00:45:29,684 --> 00:45:36,684
+Takılı kalmazsınız bir yere, ileriye taşır sizi o. Ben kendi kişisel hikayemden bunları söyleyebilirim.
+
+182
+00:45:38,099 --> 00:45:57,019
+Çevredeki olumsuz şeyler hep bana motivasyon kaynağı olmuştur. Ben böyle olmamalıyım, ben böyle yapmamalıyım. Yani gördüğüm bir olumsuz örnekler itici güç olmuştur bana. O yüzden olumsuz örnekleri, olumsuz koşulları kendi lehimize dönüştürebiliriz. Kısıtlı imkanlarımız içinde. Kendi lehimize dönüştürebiliriz. Bu böyle.
+
+183
+00:45:57,019 --> 00:46:06,099
+Tabii jenerasyon farkı da aramızda olabilir. Ben 80'li yıllarda doğdum. Sizler muhtemelen 90'lı yıllarda doğdum.
+
+184
+00:46:06,099 --> 00:46:23,579
+Son yıllar aktarımızda 2000'den sonra doğan da olabilir. O yüzden biraz dil farklılığı oluşmuş olabilir ama yine de kendimi up to take tutmaya çalışıyorum. Umarım öyle arkayı kalmıyordur söylediklerim. Ama şu bir ilke olarak bunu benimseyebilirsiniz.
+
+185
+00:46:30,612 --> 00:46:42,711
+Sahip olduğunuz imkanlar ölçüsünde lehinize dönüştürebilirsiniz. Bu potansiyel herkeste var arkadaşlar. Yani şikayet edip büsbütün koşullara sövmek bizi bir yere taşımaz.
+
+186
+00:46:44,467 --> 00:47:11,447
+Dediğim gibi herkesin koşulları bir de değil. Farklı farklı koşullardayız. Yani sosyal olarak, kültürel olarak farklı farklı. Her bir insan farklıdır esasında. Her bir insanın kendine has olumlu ve olumsuz özellikleri var. Dolayısıyla olumsuzları işte bastırıp, onları ıskartaya alıp olumlu özelliklerimizi öne çıkarırsak ve koşul olarak da şu anda pandemi sürecindeyiz.
+
+187
+00:47:12,467 --> 00:47:32,307
+Üniversiteyi yeni kazananlar için söylüyorum, kampüse gelemediler. Fakat bu avantaja da çevrilebilir belki. Mesela şu anda bütün dünyadaki okullar şeylerini açtılar. Online dersler, YouTube'da sayısız ders bulabiliyorsunuz. Coursera'da ne bileyim bir sürü öyle platform var.
+
+188
+00:47:33,204 --> 00:47:54,176
+Büyük şehirlerde işte yıldıza gelseydiniz mesela trafikte çok ciddi zaman harcamış olacaktınız. Böyle bir durum var. Yani Davutpaşa Kepe'ye çıkıp inmek ya da yıldızdaki arkadaşlarımız var. Zaman geçirmiş olacaksınız. Bu zaman daha çok mesleki olarak kendinizi geliştirmeye harcayabilirsiniz. Böyle bir durum var ve...
+
+189
+00:47:54,175 --> 00:48:13,635
+Hobi anlamında da tabii üretmeniz lazım bir şeyler, düşünmeniz lazım. Bilmiyorum, herkesin hoşlandığı, hobi de bir farklı. Ama kendinize olağanlığın dışından, sıkıldığınız bu süreçte farklı bir yöne geçin, farklı bir yola geçin. O zihninizi biraz dağıtın diyeyim, çok da uzatmayayım. Şimdi taban geçiş matrisinin tanımını verelim.
+
+190
+00:48:17,108 --> 00:48:32,028
+Çözüm burada devam ediyor. Tabii ben vektörümü değiştirdim. Farklı vektöre göre. Burada genel anlamda keyfi bir vektör aldık R3'te. Örneğin devamında ya da devamında demeyeyim de ben örneği değiştirerek çözdüm. Bir önceki örnek.
+
+191
+00:48:32,467 --> 00:49:00,327
+ile koordinat vektörünün farklı olduğunu göstermek için. Burada 1, 2, 3 olarak aldığımızda, tabii ben 1, 2, 3 olarak yazmadım buraya çözerken, genel anlamda R3'teki bir vektörü, taban vektörlerini lineer kombinasyonu olarak yazdığında, x1, x2, x3 cinsinde, daha doğrusu x1, x2, x3'ü ben xyz cinsinden yazabildim. Yine homojen olmayan denklem sistemi çözdük. Yukarıda uyguladığım işlemlerin aynısını uyguladım arkadaşlar. Şurada x1, x2.
+
+192
+00:49:00,467 --> 00:49:09,327
+x3'ü bulmuş olduk. Dolayısıyla ben burada özel olarak x'i 1, y'yi 2, z'yi 3 olarak yazdığımda kat sayıları gelecek.
+
+193
+00:49:09,487 --> 00:49:16,947
+x'i 2, 0, 3 olarak gelmiş. Demek ki koordinat vektörü, w'nun tabana göre koordinat vektörü x'i 2, 0, 3 olmuş.
+
+194
+00:49:17,048 --> 00:49:21,208
+Bu diğer vektöre göre biz buna w üstü demiştik. Şeklinde olmuş.
+
+195
+00:49:21,208 --> 00:49:25,208
+Şimdi taban geçiş matrisini...
+
+196
+00:49:26,132 --> 00:49:40,951
+Geçebiliriz, onun tanımını verebiliriz. Bu dersin biraz komplike olan konu başlıklarından bir tanesi ama çok basit esasında notasyon bazen de yapılan işlemler öğrencilerin kafasını karıştırabiliyor.
+
+197
+00:49:42,371 --> 00:49:54,031
+Elimizde en boyutlu bir tane vektör uzayı var arkadaşlar. En boyutlu bir vektör uzayı. Yani sonlu boyutlu bir vektör uzayı var. En boyut ne demek? Tabanında ne tane elemanı var? Sonlu sayıda sayılabilir çoklukla.
+
+198
+00:49:54,132 --> 00:50:14,951
+elemanı var. İki tane tabanımız var. B1 tabanı, V1, V2, Vn'den oluşuyor ve V2 tabanımız da W1, W2, Wn'den oluşuyor. Bu ne demek? Ben V'deki elemanları, sonuçta bir vektör uzayının, eğer cisim F real sayılarsa, yani real vektör uzayı ise, sonlu boyutlu olması,
+
+199
+00:50:17,427 --> 00:50:22,567
+vektörün sonlu boyutlu olması, onun taban sayısının da sonlu olduğu anlamına gelmiyor.
+
+200
+00:50:22,947 --> 00:50:25,587
+Bunu taban konusunda çokça ifade etmiştim.
+
+201
+00:50:26,027 --> 00:50:27,547
+Sonsuz tane taban bulabiliriz.
+
+202
+00:50:27,687 --> 00:50:33,367
+R karede diyelim standart taban aldık, sonra örnek verdim işte değiştirdik onları biraz.
+
+203
+00:50:33,367 --> 00:50:36,767
+İki elemanlı yine lineer bağımsız iki tane daha vektör.
+
+204
+00:50:36,827 --> 00:50:42,127
+Yani R kare için mesela iki tane lineer bağımsız vektör bulduğumda bu taban olacaktır.
+
+205
+00:50:42,287 --> 00:50:45,367
+Bu şekilde sonsuz tane ikili çift bulabilirim ya da R3'te.
+
+206
+00:50:45,427 --> 00:51:03,767
+herhangi 3 tane lineer bağımsız vektör taban olacaktır. Sonsuz tane 3 tane lineer bağımsız vektör seçebilirim R3'te. En boyutlu uzayda da sonsuz tane, en tane lineer bağımsız vektörden oluşan kümeler seçebilirim. Burada 2 tanesi var onların.
+
+207
+00:51:04,175 --> 00:51:17,115
+B1 ve B2. Dolayısıyla, B2 herhangi bir elemanı, ben hem B1'in elemanlarının dinler kombinasyonu olarak yazabilirim, hem de B2'nin elemanlarının dinler kombinasyonu olarak yazabilirim.
+
+208
+00:51:17,115 --> 00:51:23,115
+Özel olarak, eğer ben B1'deki elemanları, B2'deki elemanlarının dinler kombinasyonu olarak yazarsam, burada...
+
+209
+00:51:23,668 --> 00:51:30,967
+Taban elemanlarını biz ifade ettiğimiz için taban elemanlarına bağlı olarak diğer bütün elemanları da ifade edebileceğiz.
+
+210
+00:51:31,487 --> 00:51:36,807
+Öncelikle B1 tabanından B2 tabanına geçiş matrisini yazalım arkadaşlar.
+
+211
+00:51:37,007 --> 00:51:38,788
+B1 tabanından B2 tabanına.
+
+212
+00:51:39,248 --> 00:51:44,128
+Bunun için kitaplarda bazen karmaşa olabiliyor. İfadeleri tersten söyleyebiliyorlar.
+
+213
+00:51:44,367 --> 00:51:47,047
+Ben burada bu sunumda anlaşmamı böyle yapıyorum.
+
+214
+00:51:47,168 --> 00:51:49,768
+Kanımlarımı, notasyonlarımı ona göre vereceğim arkadaşlar.
+
+215
+00:51:49,768 --> 00:51:50,768
+Dolayısıyla...
+
+216
+00:51:51,827 --> 00:52:04,128
+B1 tabanındaki bütün elemanları, V1'i, W1, W2, W'nin lineer kombinasyonu olarak yazabilirim. Burada notasyonel olarak da karışıklık olmasın diye matrisin girdileriyle yazacağız.
+
+217
+00:52:04,128 --> 00:52:14,807
+A1, W1, W1, artı, ve indisleri yazarken de satır değil de, pardon kas sayıları sütun gibi yazacağım.
+
+218
+00:52:19,731 --> 00:52:42,011
+W2, artı bu şekilde devamlı, A, M1, WN. Ne yaptım ben? Burada A, İ, J ile eleman, R sayıda. V1 vektörünü, V2 tabanının elemanlarına, lineer kombinasyonu olarak ifade ettim. Aynı şeyi, V2 için yapalım.
+
+219
+00:52:46,804 --> 00:52:57,103
+W1 artı A22 W2 artı AN2 WN.
+
+220
+00:52:57,364 --> 00:53:04,804
+Bu şekilde devam da B1'deki birinci tabandaki her bir elemanı ikinci tabandaki elemanların lineer kombinasyonu olarak yazdık.
+
+221
+00:53:05,804 --> 00:53:11,344
+VN, vektörünü, A1N.
+
+222
+00:53:12,148 --> 00:53:30,088
+W1 artı A2N, W2 artı ANN, WN. Şu girdileri, kat sayıları daha doğrusu, bir matrise store diyoruz.
+
+223
+00:53:32,596 --> 00:53:45,795
+Ya da bu kat sayılar yardımıyla bir matris oluşturuyorum. Fakat V1'in koordinat vektörü esasında, V1'in koordinat vektörü, V2 tabanına göre ne olacaktır?
+
+224
+00:53:46,875 --> 00:53:54,635
+Onu getirdim, sütun olarak yazdım. A11, A21, AN1. Onu getirdim şuraya. A11, A21.
+
+225
+00:53:56,436 --> 00:54:14,076
+Yani Z1'in koordinat vektörünü birinci tutun olarak yazdım. Sonra Z2'nin koordinat vektörünü A12, A22, AN2, bu şekilde devamlı.
+
+226
+00:54:30,804 --> 00:54:49,023
+A1N, evet. A2N, evet doğru yazmışım. ANN şeklinde yazdım. Bu şekildeki matris ise biz B1 tabanından B2 tabanına geçiş matrisi diyeceğiz ve özel bir notasyon kullanacağız.
+
+227
+00:54:49,023 --> 00:54:54,324
+M, alt indisi B1, üst indisi B2.
+
+228
+00:54:54,739 --> 00:55:01,959
+Bunun tersi de olacak. Tersi de B2'den B1'e geçiş matrisi olacak. Şöyle bir ok da çizelim.
+
+229
+00:55:04,199 --> 00:55:06,299
+B1'den B2'ye geçiş matrisi.
+
+230
+00:55:07,579 --> 00:55:16,159
+Kavram olarak bazı kaynaklar bu söylediğimin tam tersini, yani B1'i ben W1, W2, WN'in lineer kombinasyonu olarak yazdım.
+
+231
+00:55:16,639 --> 00:55:22,359
+Bazı kaynaklar bu matrise B2'den B1'e geçiş matrisi derler. Anlaşmaya bağlı.
+
+232
+00:55:28,436 --> 00:55:42,596
+Benzer olarak, ikinci tabandaki elemanların her dilini ben birinci taban elemanları lineer kombinasyonu olarak yazarsam, bu durumda da B2 tabanından B1 tabanına geçiş matrisini yazmış olacağız arkadaşlar.
+
+233
+00:55:43,596 --> 00:55:46,296
+Şurada yaptığım işlemlerin aynısı var.
+
+234
+00:55:47,916 --> 00:55:48,536
+Ne yaptık?
+
+235
+00:55:53,268 --> 00:55:58,728
+B1, B2. Notasyonu aklınıza tutun arkadaşlar. Karşınıza çıkabilir.
+
+236
+00:56:00,028 --> 00:56:12,387
+B1 tabanından, B2 tabanına geçiş maddisi. Ayrı şeyi diğer taban için yapalım. Yani W'ları V'ler cinsinden yazalım.
+
+237
+00:56:20,275 --> 00:56:47,875
+B2 1, V2 artı, BN1, VN. Sonra W2'yi yazdık. B1 2, V1 artı, B2 2, V2 artı, bu şekilde devamlı. BN2, VN.
+
+238
+00:56:48,340 --> 00:57:10,259
+En son WN'i yazarsak, WN eşittir, B1NV1 artı B2NV2 artı BNNVN şeklinde yazdık.
+
+239
+00:57:12,052 --> 00:57:17,052
+Kas sayıları yine bir matrisin sütununa biz yazarsak
+
+240
+00:57:17,052 --> 00:57:30,832
+B1 1, B2 1, BN 1, B1 2, B2 2, BN 2
+
+241
+00:57:36,467 --> 00:57:38,427
+Bir an, bir iki anam.
+
+242
+00:57:39,380 --> 00:57:58,920
+BNN şeklinde, N çarpı N tipinde karesel bir matris. Bu matrisi de biz yine köşeli braket içerisinde B2, B1 olarak yazacağız. Bu da B2 tabanından B1 tabanına geçiş matrisi olacak arkadaşlar. Ne anlama geliyor? Bunun özelliklerini vereceğiz biz.
+
+243
+00:57:59,539 --> 00:58:07,380
+Az önce işte bir vektörün tabana göre koordinat vektörünü bulmak için homojen olmayan denklem sistemi çözdük.
+
+244
+00:58:07,380 --> 00:58:23,199
+Fakat eğer geçiş matrisini biliyorsak sadece matrisle çarpmak yeterli olacak. Bunlar arasında bir ilişki de var. Örneklerimizi aradan sonra verelim. Bir 10 dakika ara. Ara boyunca buradayım. Sorularınızı sorabilirsiniz. Aradan sonra görüşmek üzere arkadaşlar.
+
+245
+00:58:28,916 --> 00:58:33,256
+Yarın ders olacak, evet. Sabah olacak en azından. Ben öğleden sonra da yapacağım.
+
+246
+01:00:28,371 --> 01:00:53,231
+[öğrenci]'e çam var. Bütün günlerce bir kendi içinde. 2 bin öğrenci varsa artık, kaç kişi varsa onlar çana tabi tutuluyor. Bütün genel ortalama baz almanlık bir normal dağılım hazırlanıyor. Öyle diyelim. Tatil sadece cuma gününü. Açıkçası [öğrenci] ben de bu konuda emin değilim. Ama perşembe öğleden sonra sanki tatil gibi.
+
+247
+01:00:53,972 --> 01:01:14,472
+Herşembe öğleden sonra, Cuma, Cumartesi, Pazar. Ama ben dediğim gibi, ders yapmak için bir engel yok. Sonuçta online. Yarın öğleden sonraki dersini yapacağım ya da yapmayı planlıyorum. Lisans dersi değil. O yüzden sorun olmaz diye düşünüyorum.
+
+248
+01:06:19,764 --> 01:06:34,764
+Aslında iki tane sınav vardı. Bu dönem yine üç tane sınav çevirdiler. Bir vize, bir final şeklindeydi. Pandemi ile birlikte öyle yaptılar. Fakat bu dönem, hatta dönem başladıktan sonra değişmiş oldu.
+
+249
+01:06:35,764 --> 01:06:38,744
+Evet, ikinci vize biraz mantıksız gibi duruyor. Bana da öyle geliyor.
+
+250
+01:06:39,572 --> 01:07:01,831
+İlk vize yapıyorsunuz, iki hafta geçiyor, ikinci vize iki hafta geçiyor, final. Açıkçası öğrencileri çok fazla sıkıştıran hocalar açısından da öyle. Onun için ekstra zaman harcamak zorunda, soru hazırla, sınav yap falan, okunması, testlerde okuma yok. Bence de ikinci vize çok mantıklı değil.
+
+251
+01:07:06,099 --> 01:07:07,340
+Yani bir vize, bir final.
+
+252
+01:07:08,300 --> 01:07:12,000
+Belki bölüm derslerinde ödevler hatta verilmesi lazım.
+
+253
+01:07:12,000 --> 01:07:16,360
+Belki o ikinci vize yerine ödev verilmesi dersi daha pekiştirir.
+
+254
+01:07:17,039 --> 01:07:20,119
+Yani öğrenmek açısından ödev gibisi yok.
+
+255
+01:07:24,947 --> 01:07:43,168
+Evet, kaldığımız yerden devam edelim. Bu arada tatil aslında Perşembe günü tatil değil. Yani dersler olacak Perşembe günü. Ona baktım. Cuma, Cumartesi, Pazar günleri. Perşembe saat 9'da başlıyor kısıtlama. Pazartesi 5'e kadar.
+
+256
+01:07:48,500 --> 01:08:08,240
+Elimizde iki taban var. Bir tabandan diğer tabana nasıl geçiş sağlarız? Onun geçiş matrisini bu şekilde elde ederiz. Esasında bunlar lineer dönüşümler yardımıyla ispatı da bu şekilde veriliyor. Neden bu böyle? Biz burada sadece tanımını vermekle yetinmeyacağız arkadaşlar.
+
+257
+01:08:13,907 --> 01:08:28,047
+B2 tabanından B1 tabanına geçiş matrisini de bu şekilde vermiş olduk. Bu iki matris arasında çok güçlü bir ilişki var. Bu iki matris de determinantlı sıfırdan farklı. Yani tersleri var bu iki matrisinde.
+
+258
+01:08:29,555 --> 01:08:34,755
+Elimizde iki tane taban, en boyutlu bir vektör uzayı, onun iki tane tabanı olsun, sıralı tabanı.
+
+259
+01:08:35,235 --> 01:08:38,195
+Şunun altını çizelim, tabanlarımız hep sıralı olacak.
+
+260
+01:08:38,376 --> 01:08:45,956
+Eğer geçiş matrisinden söz ediyorsak ya da koordinat vektöründen söz ediyorsak, tabanlarımızın sıralı olması gerekiyor.
+
+261
+01:08:45,956 --> 01:08:55,435
+Ve B1 tabanından B2 tabanına geçiş matrisimiz A, B2 tabanından B1 tabanına geçiş matrisimiz B olsun.
+
+262
+01:08:57,264 --> 01:09:10,024
+Ki kabullerle birlikte aşağıdaki ifadeler sağlanır. Birincisi A ile B'nin çarpını, birim matrisi verir. Bu ne demek? A, B'nin tersi, B'de A'nın tersi demek.
+
+263
+01:09:24,768 --> 01:09:42,988
+Aynı mertebeden birim matrisi verecek. Bundan x'i de mertebesinde olan karesel matrisler. Bu güçlü bir ilişki. Yani bana neyi sağla? Bir tanesini buldum, denklemler çözerek, a'yı buldum, b'yi bulmak için n tane homojen olmayan sistem çözmeme gerek yok.
+
+264
+01:09:43,347 --> 01:10:08,487
+tersin, matrisin, ne çarpı ne tipindeki bir matrisin tersini bulabilirim. Tabi hangisi daha avantajlı onu bilemeyiz. Matrisin şeklinden belli olabilir. Fakat her halükarda ters bulmak daha rahat. Daha az zaman alır. Neden? Çünkü denklem sistemi çözerken her bir tane sütun için ne çarpı neylik, ne tane bilinmeyen, ne tane denklemden oluşan bir sistem çözmeniz lazım.
+
+265
+01:10:09,300 --> 01:10:16,159
+ters bulmada o kadar işlem yapmıyoruz. Ters bulmak daha pratik gibi geliyor.
+
+266
+01:10:19,460 --> 01:10:23,960
+Koordinat geçişleri içinde, şu ilişkiler var elimizde.
+
+267
+01:10:24,440 --> 01:10:25,120
+U ve V
+
+268
+01:10:26,163 --> 01:10:33,023
+V'nin iki elemanı olsun. Tabi bunları ilk haliyle yazdığımızda esasında standart tabana göre koordinatları yazmış oluyoruz.
+
+269
+01:10:33,023 --> 01:10:40,123
+Dolayısıyla U'nun B1 tabanına göre koordinat vektörünü şu şekilde elde edebiliyoruz.
+
+270
+01:10:40,683 --> 01:10:46,827
+U'nun B2 tabanına göre koordinat vektörünü B2'den B1'i...
+
+271
+01:10:47,891 --> 01:11:12,092
+Geçiş matrisiyle çarparak elde edebiliyoruz arkadaşlar. İndistere dikkat ederseniz şurada notasyonun da genişi güzel değil. Böyle tutarlı olması için kurgulanmış bu notasyon. Alt indistere aynı. Yani ben B2 tabanından B1 tabanına geçiş matrisiyle U'nun B2 tabanına göre koordinat vektörünü çarptığımda bu bana U'nun B1 tabanına göre koordinat vektörünü verecek. Bu da pratik bir işlem.
+
+272
+01:11:15,891 --> 01:11:30,692
+eleman, onun B2 tabanına göre koordinat vektörü, Z'nin B1 tabanına göre koordinat vektörünün, B1 tabanından B2 tabanına geçiş matrisiyle çarpılmasıyla elde edilebilir.
+
+273
+01:11:31,072 --> 01:11:38,652
+Pratik işlemler. Yani, geçiş matrislerinin birbirinin tersi olması, bir tabandan diğer tabana geçiş matrisinin,
+
+274
+01:11:43,663 --> 01:11:58,344
+B2'den B1'e geçişme, sonra da B demiştik. Bunlar birbirinin tersi arkadaşlar. Yani aslında şuraya A üzeri eksi 1 yazabilirim. Biri varsa elimde, diğerini ters alarak bulabilirim.
+
+275
+01:12:00,212 --> 01:12:09,412
+Geçiş matrisinin özeti aslında bu teoremde var arkadaşlar. Burada bir tanesini bulduk, diğerini ters alarak hesaplayabilirim.
+
+276
+01:12:09,492 --> 01:12:17,932
+Ve koordinatları da her bir esasında vektörün bir tabana göre koordinatını bulmak için homojen olmayan bir sistem çözmemiz gerekiyordu.
+
+277
+01:12:18,072 --> 01:12:22,811
+Fakat burada onu artık bir matris çarpımı yardımıyla gerçekleştirebiliyoruz.
+
+278
+01:12:28,212 --> 01:12:36,891
+geçtiysen o ilk tabandaki koordinat vektörünü geçiş matrisiyle çarparak ikinci tabana göre koordinat vektörünü bulabiliriz. Var mı soru?
+
+279
+01:12:45,076 --> 01:13:08,376
+Örnek yapalım. Elimizde, bu örneği de ben kendim uydurdum, o yüzden sayıları güzel çıkmıyor. Yani hesaplama açısından biraz gıcık bir örnek. Relin seçti ben vektörleri. Hatta seçerken birer tane sıfırda koydum. Yani taban elemanlarına işlem kolaylığı olsun ama çok da öyle işlem kolaylığı sağlamıyor. Tamamen rasyonel sayılarla işlem yapmak durumunda kalıyoruz.
+
+280
+01:13:10,296 --> 01:13:10,976
+Elimizde
+
+281
+01:13:11,475 --> 01:13:21,675
+R3 uzayının iki tane tabanı verilmiş olsun. Yani V vektör uzayımız burada esasında R3. Sonra konteksten anlıyoruz.
+
+282
+01:13:24,556 --> 01:13:35,376
+R3'ün iki tane sıralı tabanı, V1, V2, V3 ve W1, W2, W3 vektörlerinin oluşturduğu lineer bağımsız vektörler. Bunlara baktık biz.
+
+283
+01:13:35,792 --> 01:13:40,112
+Birinci en azından tabana, geçen hafta
+
+284
+01:13:40,467 --> 01:13:51,547
+İki dersimizde taban konusunda onun V3'ün bir taban olduğunu göstermiştik. İkincisi de aynı şekilde W1, W2, W3 vektörler lineer bağımsız. Onu da gösterebiliriz kolay bir şekilde.
+
+285
+01:13:52,067 --> 01:14:07,028
+Homojen denklem sistemini çözerek ya da bunları 3x3'lik bir matcise satır ya da sütun yazıp determinantına baktığımızda yine lineer bağımsızlığının, eğer determinant sıfırdan farklıysa vektörler lineer bağımsız. Fakat sıfırsa lineer bağımlı diyoluk.
+
+286
+01:14:07,539 --> 01:14:19,440
+Bu iki tabana bağlı olarak benden istediği şeyler öncelikle A matrisini bulun. Yani B1 tabanından B2 tabanına geçiş matrisini bulun.
+
+287
+01:14:20,440 --> 01:14:28,319
+İkinci olarak B2 tabanından B1 tabanına geçiş matrisini bulun.
+
+288
+01:14:34,547 --> 01:14:41,948
+vektörünü verecek bana, u vektörü, şurada, u vektörü yukarıda var.
+
+289
+01:14:42,547 --> 01:14:44,887
+U vektörü buradan yanında verecek sanırım.
+
+290
+01:14:45,327 --> 01:14:49,387
+2, 3, 5 koordinatlarına sahip bu standart tabana göre koordinatları.
+
+291
+01:14:49,387 --> 01:14:53,268
+U'nun B2 tabanına göre koordinat vektörünü bulunuz.
+
+292
+01:14:53,768 --> 01:14:56,587
+Biz bunları bulurken hep uzun uzun işlemleri yapacağız.
+
+293
+01:14:56,747 --> 01:14:58,728
+Fakat daha sonra sağlamasını da yapacağız.
+
+294
+01:14:58,868 --> 01:15:02,648
+Yani teoremin koşullarının sağlandığını görmüş olacağız.
+
+295
+01:15:03,268 --> 01:15:07,387
+Ve U'nun B2 tabanına göre koordinat vektörünü bulunuz.
+
+296
+01:15:07,956 --> 01:15:18,636
+Ne yapmamız lazım? A'yı bulmak için şu denklem sistemini çözmem lazım. Öncelikle B1'den B2 tabanına göre dediğine göre V1 eşittir.
+
+297
+01:15:19,636 --> 01:15:25,735
+A1, 1, W1, artı A.
+
+298
+01:15:26,963 --> 01:15:39,904
+2-1, W-1, artı A-3-1, W-1. Burada bir homojen sistem, bunu çözdüm. Çözümleri detaylı yapmayacağım. Çünkü denklem sistemi nasıl çözüldüğünü defa da yaptık.
+
+299
+01:15:54,036 --> 01:16:06,956
+A22, W2 artı, A32, W, hıstı W1, W2, W3, hıstı W3 olacak, evet.
+
+300
+01:16:07,876 --> 01:16:12,515
+V3'ü yine W1, W2, W3, W3'ünün der kombinasyonu olarak yazdık.
+
+301
+01:16:12,515 --> 01:16:20,716
+A13, W1 artı A23, W2 artı A33.
+
+302
+01:16:21,439 --> 01:16:40,652
+W, 3 şeklinde yazdık. Dolayısıyla A matrisimiz ne olacak? A matrisi, A11. Dikkat ederseniz, V1'in kat sayıları sütuna gelecek. Burada öğrenciler karıştırıyor. Siz eğer burayı düzenli olarak yazarsanız, A11, A12, A...
+
+303
+01:16:40,659 --> 01:16:51,739
+1-3 şeklinde yazarsanız transpoz almanız gerekecek. Fakat ben kurgumu transpoz almayacak şekilde yaptım. O yüzden farklı kaynakta farklı kanını görürseniz, lütfen karıştırmayın.
+
+304
+01:16:53,019 --> 01:17:06,719
+A2-1, A3-1, A1-2, A2-2, A3-2, A1-3, A2-3, A3-3.
+
+305
+01:17:07,188 --> 01:17:08,387
+Şeklinde yazdık.
+
+306
+01:17:08,547 --> 01:17:09,788
+Yani üçüncü
+
+307
+01:17:09,788 --> 01:17:12,927
+satırda verdiğim
+
+308
+01:17:12,927 --> 01:17:14,448
+denklem sisteminde elde ettiğimiz
+
+309
+01:17:14,448 --> 01:17:16,568
+kat sayıları da üçüncü siton olarak yazdık.
+
+310
+01:17:29,235 --> 01:17:35,555
+yapmayacağım bunları. Dolayısıyla burada bir jel olmayan sistem var. Onu açtığımızda
+
+311
+01:17:35,555 --> 01:17:42,835
+genişletilmiş kat sayılar matrisi, sonra onu satırca indirgemiş eşelon formu.
+
+312
+01:17:48,051 --> 01:17:57,091
+Burada birinci sütunumuz tam sayı geldi. Burası tam olarak bizim birinci sütunumuz olacak. A matrisinin birinci sütunu.
+
+313
+01:18:00,627 --> 01:18:07,547
+Sonra V2 lineer kombinasyonu olarak yazdık. Ondan sonra vektörleri açtık.
+
+314
+01:18:08,987 --> 01:18:16,368
+Homijen olmayan bir denklem sistemi. Denklem sisteminin genişletilmiş kat sayılar maddesinin satırca indirgenmiş eşelon formunu buldum.
+
+315
+01:18:17,067 --> 01:18:22,427
+Burada ikinci sütunumuzu elde etmiş olduk. 9 bölü 5, eksi 4 bölü 5, eksi 6 bölü 5.
+
+316
+01:18:26,931 --> 01:18:33,511
+1, 2, A2, 2, A3, 2 de bu şekilde elde edilmiş oldu.
+
+317
+01:18:34,871 --> 01:18:38,992
+V3'ü W1, W2, W3'ün lineer kombinasyonu olarak yazdık.
+
+318
+01:18:39,171 --> 01:18:43,931
+Denklem sistemini elde ettik. O denklem sistemini çözdüğümüzde,
+
+319
+01:18:45,931 --> 01:18:47,211
+şu şekilde,
+
+320
+01:18:49,431 --> 01:18:50,931
+burada da,
+
+321
+01:18:51,051 --> 01:18:52,711
+A1, 3, pardon,
+
+322
+01:18:53,051 --> 01:18:53,811
+A, evet.
+
+323
+01:18:54,176 --> 01:19:21,336
+A2-3 ve A3-3'ü elde etmiş olduk. Üçüncü tutuğunu da elde etmiş olduk bu şekilde. Yani A matrisimiz, bütün o elemanları getirip yerine yazdığımızda şu şekilde bir matris. Burada öğrenciler genellikle transpoz işleminde karmaca yaşıyorlar. Ben tanımda hiç transpoz da kullanmadım. Notasyonumu ona göre düzenliyorum.
+
+324
+01:19:21,583 --> 01:19:23,623
+Transpuz almaya gerek yok.
+
+325
+01:19:24,083 --> 01:19:44,264
+Bu tanıma göre giderseniz, benim notlara bağlı kalırsanız, transpoz almanıza gerek yok. Fakat bazı kaynaklar kas sayıları verirken şöyle yazıyor, A11, V1, W1 ya da, artı A12, W2, artı A13, W3 alınca, bu durumda transpozunu almak durumunda kalacak.
+
+326
+01:19:44,264 --> 01:19:52,064
+Fakat ben kurguyu ne yaptım? A11, şuraya A21 dedim, şuraya da A31 dedim. Yani otomatikman birinci fücunu.
+
+327
+01:19:52,083 --> 01:20:00,423
+elemanlarını yazmış oldum. Bu şekilde yaparsanız hiçbir karmaşa yaşamazsınız arkadaşlar. Onu da söylemiş olayım.
+
+328
+01:20:02,703 --> 01:20:14,164
+A matrisini oluşturduk. İkinci şıkta neyi istiyordu benden? B matrisini, yani B eşittir, M, B2, B1'i bulun diyorduk.
+
+329
+01:20:15,155 --> 01:20:42,155
+Aslında A madrisinin tersi. Bunun determinantını hesaplayıp, işte E-jointleri, 9 tane E-joint bulacağım, pardon, Kofaktör bulacağım. Sonra onları E-jointe atacağım. Kofaktörlerin oluşturduğu matrisin transposu bana E-jointi verecek. Yani A'nın tersi eşittir. Bir bölü, A'nın determinantı çarpı E-joint A. E-joint A da şöyleydi.
+
+330
+01:20:47,604 --> 01:21:07,824
+Kofaktörlerin transpozundan oluşu yani A11, A12, A13, A21, A22, A23, A31, A32, A33 şeklinde.
+
+331
+01:21:08,203 --> 01:21:11,384
+Kofaktörleri önce hesapladık, sonra onların transpozunu aldık.
+
+332
+01:21:11,615 --> 01:21:20,456
+Determinantı hesaplayacağız. Bunların her biri real sayı. Her birini determinanta bölgeceğiz. Bizim tersimiz olacak.
+
+333
+01:21:20,456 --> 01:21:27,076
+Burada gerçekten tersi var mı diye biz sadece determinantına bakalım matrisin. Determinantına bakalım.
+
+334
+01:21:28,095 --> 01:21:34,556
+Birinci satırla ikinci satırı topladım. Sonra birinci sütuna göre kofaktör açılımı yapalım.
+
+335
+01:21:34,676 --> 01:21:37,756
+Önce birinci satırı ikinci satıra ekleyelim.
+
+336
+01:21:38,591 --> 01:21:57,011
+9 bölü 5, 8 bölü 5, şurada ne geldi? 0, 5 bölü 5, 1 geldi, değil mi? 9 bölü 5, 9 eksi 4, 5, 5 bölü 5, 8 eksi 3, burası yine 5 bölü 5, yine 1 geldi.
+
+337
+01:22:00,011 --> 01:22:05,631
+0, eksi 6 bölü 5, eksi 2 bölü 5.
+
+338
+01:22:06,899 --> 01:22:31,139
+Birinci sütuna göre kofaktör ekspansiyonu yaptığımızda 1 çarpı geriye kalan, oradan da 1 çarpı 1, 1, eksi 6 bölü 5, eksi 2 bölü 5, işlem yaptığımızda o da eksi 2 bölü 5, artı 6 bölü 5, o da eşittir 4 bölü 5 gelmiş oldu. Farklı sıfır. Dolayısıyla ters var.
+
+339
+01:22:31,956 --> 01:22:48,736
+Tersi hesapladım ben. Sonda var yani kofaktörleri tek tek hesaplamadım arkadaşlar. Demek ki kofaktörlerin her birini 4 bölü 5'ye bölmemiz gerekiyor. Fakat burada biz yine B'yi de denklem sistemi çözerek önce bulacağız. Sonra A'nın tersi olduğunda sağlamasını yapmış olacağız.
+
+340
+01:22:51,015 --> 01:22:59,136
+B esasında A'nın tersine eşit fakat biz burada yine denklem sistemi çözmemişiz. Doğru da ters almışız.
+
+341
+01:23:00,148 --> 01:23:05,887
+İngilizce grupta öyle yapmıştım, burada öyle yapmamışım. Doğrudan ters almışız. Yani şunu da yapabiliriz.
+
+342
+01:23:05,887 --> 01:23:22,887
+W1 eşittir, B1 1, B1 artı, B2 1, B2 artı, B3 1.
+
+343
+01:23:23,344 --> 01:23:49,583
+B3, birinci sütun elde ettik. W2 eşittir. B12V1 artı B22V2 artı B32V3 ikinci sütun ve üçüncü sütun olarak da üçüncü bir homojen olmayan denklem sistemi B13V1 artı B23V2.
+
+344
+01:23:50,176 --> 01:24:14,275
+artı B33, B3. Bunları B'ye store ettiğimizde, yani bizim B maddesimizde, B11, B21, B31, B12, B22, B32, B13, B23 ve B33 olacak.
+
+345
+01:24:14,720 --> 01:24:24,579
+B matrisi tam olarak A matrisinin tersi. Burada da yine 3 tane homojen olmayan denklem sistemi çözüp BİJ'lerin hepsini bulabiliriz.
+
+346
+01:24:25,680 --> 01:24:26,980
+Burada ters hesapladık.
+
+347
+01:24:32,724 --> 01:24:46,324
+Tersi isteyen şunu da yapabilir. A matrisini yazdınız, I3'ü yazdınız. Sonra onu elementer satır işlemleri uygulayarak I3 B formuna getireceksiniz.
+
+348
+01:24:46,868 --> 01:25:05,768
+Yani dilim matrisi sağ taraftan sol tarafa taşıdıktan sonra sağ tarafta oluşan yeni matris sizin tersiniz olacaktı. Eleman ters satır işlemleri yardımıyla da biz ters bulabiliyorduk ya da edge joint yardımıyla A'nın tersi, bir bölü A'nın determinantı çarpı edge joint A.
+
+349
+01:25:07,252 --> 01:25:28,731
+Ara işlemleri geçtim, doğrudan hesapladım anın tersini. Dolayısıyla burada baktığımızda, demek ki, hatta sadece bir tanesi, birinci sütunu test edelim. Burada, yani birinci sütunu bulalım, şu denklem sistemini çözelim, birinci denklem sistemini. Şunu çözelim, onun için boş bir alana ihtiyacım var.
+
+350
+01:25:32,020 --> 01:25:35,260
+Öncelikle şeyi bulmamız lazım, tabanları.
+
+351
+01:26:01,011 --> 01:26:05,471
+Ben size bir şey alıyorum ve tabanları görmem gerekiyor.
+
+352
+01:26:06,412 --> 01:26:13,271
+Evet, şurada tabanlar var. Ben W1'i, V1, V2, V3'ün her kombinasyonu olarak yazayım arkadaşlar.
+
+353
+01:26:15,271 --> 01:26:17,291
+W1 eşittir.
+
+354
+01:26:17,992 --> 01:26:21,271
+V1, V1, V1 artı V1.
+
+355
+01:26:24,916 --> 01:26:31,296
+2-1, 2-1, B2, artı, B3-1, B3 şeklinde yazdım.
+
+356
+01:26:32,796 --> 01:26:51,115
+Buradan, B1-1 çarpı, B1'imiz, 1-2-0, 1-2-0 artı, B2-1, 2-0-1.
+
+357
+01:26:54,644 --> 01:27:19,604
+artı, ve 3, 1, 1, 2, 1, 1, 2, 1, eşittir. W birinde, 0, 2, 1, 0, 2, 1, 0, 2, 1, denklem sistemini çözelim, bakalım gerçekten tersini aldığımız o ters matris de birinci tutuna karşılık geliyor mu?
+
+358
+01:27:20,079 --> 01:27:35,239
+Denklem sistemi yazacak olursak, B11 artı iki tane B21 artı B31 eşittir sıfır.
+
+359
+01:27:35,239 --> 01:27:46,319
+Sonra iki tane B11 artı iki tane B31 eşittir iki.
+
+360
+01:27:47,283 --> 01:27:48,823
+Ve,
+
+361
+01:27:52,372 --> 01:28:00,092
+B21, B21 artı, B31 eşittir, 1 şeklinde yazdık.
+
+362
+01:28:01,311 --> 01:28:03,452
+Yine Gauss-Tjordan kullanalım.
+
+363
+01:28:03,752 --> 01:28:12,212
+Genişletilmiş kat sayılar matrisimiz, 1, 2, 0, 2, 0, 1, 1, 2, 1.
+
+364
+01:28:12,212 --> 01:28:15,051
+Sabitlerimiz, 0, 2, 1.
+
+365
+01:28:15,891 --> 01:28:24,791
+Yukarıda uyguladığımız işlemlerin aynısını sürekli kullanıyoruz aynı örneği. Aşina olduk artık. Uyguladık. Birinci satın, eksi iki katın ikinci satıra ekledim.
+
+366
+01:28:24,791 --> 01:28:35,851
+1, 2, 1, 0, 0, eksi 4, 0, 2, 0, 1, 1, 1.
+
+367
+01:28:37,992 --> 01:28:38,672
+Sonra
+
+368
+01:28:39,184 --> 01:28:49,484
+peş peşe iki tane işlem. Önce 1 bölü 4 katını, üçüncü satır ekledim, ikinci satırı, sonra ikinci satırı, eksi 1 bölü 4 ile çarptım.
+
+369
+01:28:49,924 --> 01:29:02,543
+Dolayısıyla yeni matrisimiz, 1, 2, 1, 0, 0, 1, 0, eksi 1 bölü 4 ile çarpmazsak, eksi 1 bölü 2.
+
+370
+01:29:04,148 --> 01:29:11,548
+Yukarıda işlem koordinat vektörü bulurken, o farklıydı sanki ama şurada işlem hatası yaptığımı fark etti.
+
+371
+01:29:12,427 --> 01:29:16,507
+Pozitif almıştım burayı. 1 bölü 2 olarak aldım, o eksi 1 bölü 2 olacak.
+
+372
+01:29:17,028 --> 01:29:18,388
+Orada bir hata yapmışım.
+
+373
+01:29:21,087 --> 01:29:29,788
+0, 0, 1, 1 bölü 4 katını ekledik. 1 bölü 2 artı 1, 3 bölü 2 olacak.
+
+374
+01:29:36,532 --> 01:29:37,692
+İşlem hatası yaptım.
+
+375
+01:29:39,252 --> 01:29:42,192
+Burada değil de yukarıda yaptığımız işlemlerde.
+
+376
+01:29:52,564 --> 01:30:02,804
+Hayır, şöyle, 1 bölü 4, evet, 1 bölü 4 de çarptık, eksi 1, şurası 1 bölü 2, 3 bölü 2, evet. Orada da hata var, onu fark etti.
+
+377
+01:30:04,084 --> 01:30:18,004
+Şimdi yukarı doğru geliyoruz. Üçüncü satın eksi katını birinci satıra ekledim. 1, 2, 0, eksi 3 bölü 2, şurası, 0, 1, 0.
+
+378
+01:30:18,707 --> 01:30:27,207
+1 bölü 2, 0, 0, 1, 3 bölü 2. Son bir tane işlemimiz kaldı.
+
+379
+01:30:28,367 --> 01:30:32,667
+Eksi 2 katını, ikinci satın, eksi 2 katını birinci satıra ekledim.
+
+380
+01:30:32,667 --> 01:30:40,287
+1, 0, 0, eksi 2 katını eklersek, 1 bölü 2,
+
+381
+01:30:41,332 --> 01:30:53,892
+eksi 3 bölü 2 artı 1 bölü 2, eksi 2 bölü 2, eksi 1 geldi şurası. Sonra, işleme tavsiye yaptık.
+
+382
+01:31:04,851 --> 01:31:23,792
+Vektörü yanlış aldık. Bakalım. 0, 2, 1, 1, 2, 0, 2, 0, 1, 1, 2, 1, 2, 1, 2, 0, 2, 0, 1, 1, 2, 1. Fark ettiniz mi arkadaşlar hatayı? Yaptığınız işlem hatasını şuradan tekrar bakalım.
+
+383
+01:31:39,091 --> 01:31:47,912
+Tekrar kontrol ediyorum işlemlerimi. Şurada sorum yok. 1, 2, 1, 0, 0, x4, 0, 2, 0, 1, 1.
+
+384
+01:31:55,412 --> 01:32:03,272
+1 bölü 4 ve çarpıp topladı. Şurası 0. 0, 1 bölü 2, 3 bölü 2. Evet.
+
+385
+01:32:19,347 --> 01:32:21,748
+Yukarıya baktığınızda 3x2
+
+386
+01:32:26,547 --> 01:32:48,188
+Eksilisini ekledim, eksi 3 bari 2, şurası 0, 2, 1, yine eksi 2 katını ekledik, 0, şurası 0, 1, 0, işlemlerde hata yok gibi.
+
+387
+01:32:53,076 --> 01:33:02,076
+eksi 3 bölü 2, artı 1, eksi 1 bölü 2 olarak veriyoruz.
+
+388
+01:33:03,395 --> 01:33:11,875
+eksi 1 bölü 2. Ama öyle değil sanki. 0, 0, 1, 3 bölü 2 olmuş olur.
+
+389
+01:33:12,404 --> 01:33:25,384
+Bu birinci sütuna tekabül etmesi gerek. Belki de öyle, ben şeyle karıştırdım, tamam. Böyle olabilir. A matrisi ile B matrisini bir an karıştırdım, tamam. Eksi 1, eksi 1 bölü 2, 3 bölü 2. Şimdi kontrol edelim.
+
+390
+01:33:28,624 --> 01:33:34,644
+A matrisinin ilk sütunu tam sayı olduğu için bir an aklım oraya gitti. B matrisine geliyoruz.
+
+391
+01:33:39,347 --> 01:33:41,148
+Biraz daha ilerlemem gerekiyor.
+
+392
+01:33:46,387 --> 01:33:49,268
+B matrisi buradaydı.
+
+393
+01:33:52,627 --> 01:33:55,627
+Eksi 1 bölü 2, eksi 1 bölü 2, 3 bölü 2.
+
+394
+01:33:56,648 --> 01:33:58,408
+Orada bir işlem hatası var.
+
+395
+01:33:59,708 --> 01:34:02,328
+Eksi 1 bölü 2, eksi 1 bölü 2, 3 bölü 2.
+
+396
+01:34:21,652 --> 01:34:23,312
+Nerede se aplamıştım onu? Evet.
+
+397
+01:34:24,772 --> 01:34:25,412
+Şurası.
+
+398
+01:34:29,716 --> 01:34:56,115
+Buraya ben niye bir yazdım? Son yaptığımız işlemde, şurası eksi bir bölü iki olacak. Ben hatarla yazdım bunu. Evet, eksi bir bölü iki. Neden? Bir artı eksi üç bölü iki, eksi bir bölü iki. Tamam. Sorun yok. Eksi bir bölü iki, eksi bir bölü iki, üç bölü iki olarak biz de bulmuş olduk. Bir an kafam şeye gitti, A maddesini, onun ilk sütunu tam saydım. Niye böyle oldu gibi düşündüm.
+
+399
+01:34:57,492 --> 01:35:17,032
+Yani birinci stonu ne yapmış olduk? Sağlamasını yapmış olduk. Eksi 1 bölge, 1 bölge, 3 bölge olarak geldi. Yine diğer sistemleri çözerseniz, yani W2 ve W3'ü de B1 taban elemanlarının lineer kombinasyonu olarak yazıp çözerseniz ikinci ve üçüncü stonları elde edeceksiniz arkadaşlar.
+
+400
+01:35:18,271 --> 01:35:20,192
+Şimdi koordinat vektörlerine bakalım.
+
+401
+01:35:26,931 --> 01:35:41,931
+Üçüncü şıkkında U vektörünün B1 tabanına göre koordinat vektörü. Ne yapmam lazım? Yine homojen olmayan sistemi çözmem lazım. Burada Y1, Y2, Y3 elemanlarını çözmem lazım. Denklem sistemini oluşturduk. Sonra...
+
+402
+01:35:42,355 --> 01:36:08,115
+kat sayılar matrisini satırcıya indirgenmiş eşelon forma getirdik. Oradan sistemi çözdük. Tek çözüm var. Çözümümüz burada, eksi 13 bölü 4, 1 bölü 4, 19 bölü 4 olarak geldi. Yani U vektörünün B1 tabanına göre koordinat vektörü, eksi 13 bölü 4, 1 bölü 4 ve 19 bölü 4 olmuş oldu.
+
+403
+01:36:14,100 --> 01:36:18,260
+Bir de u vektörünün b2 tabanına göre koordinat vektörü.
+
+404
+01:36:19,960 --> 01:36:25,020
+b1 tabanından b2 tabanına geçiş maddesi var elimizde.
+
+405
+01:36:25,020 --> 01:36:31,680
+Yani eğer u b2 istiyorsa benden u b2 o da eşittir.
+
+406
+01:36:32,600 --> 01:36:37,020
+m b1 b2 çarpı.
+
+407
+01:36:37,363 --> 01:36:48,763
+UB1 olacak. UB1 de var elimde. Bunu ben ilk matrisle çarparsam, U'nun D2 tabanına göre koordinat vektörünü elde etmiş olacağım.
+
+408
+01:36:48,763 --> 01:36:50,043
+Burada da öyle yapacağız.
+
+409
+01:36:53,076 --> 01:37:12,235
+Denklem sistemi çözerek elbetmişiz. Fakat şurada sağlaması var. Ona bakalım. Bunun belki tabanına göre koordinat vektörü yine bir homojen denklem sistemi çözebiliriz. Bu ikinci bir yol. Ya da şurada matris çarpını yapabiliriz arkadaşlar.
+
+410
+01:37:14,068 --> 01:37:30,568
+UB1'i elde etmek için UB2'yi ben B2 tabanından B1 tabanına geçiş maddesiyle çarptım. Gerçekten de ilk koordinat vektörümüz, eksi U'nun B1 tabanına göre koordinat vektörü eksi 13 bölü 4, 1 bölü 4, 19 bölü 4'tü.
+
+411
+01:37:35,923 --> 01:37:42,224
+U'nun B1 tabanına göre koordinat vektörünü biliyoruz. Yukarıda onu hesapladık, hatta diğerini de hesapladık.
+
+412
+01:37:42,764 --> 01:37:56,384
+B1 tabanından B2 tabanına geçiş matrisiyle çarptığımızda U'nun B2 tabanına göre koordinat vektörü 24 bölü 5, 1 bölü 5, eksi 11 bölü 5 olarak geliyor ki onu şurada, meklam sistemi çözerek de hesaplamıştık.
+
+413
+01:37:56,384 --> 01:37:57,984
+Evet, 24 bölü 5.
+
+414
+01:37:58,515 --> 01:38:05,715
+1 bölü 5 ve 11 bölü 5 şeklinde UB2'yi de bulmuş olduk arkadaşlar. Var mı sorularınız?
+
+415
+01:38:12,372 --> 01:38:13,532
+Takip edebiliyor musunuz?
+
+416
+01:38:26,963 --> 01:38:31,423
+Son bir tane örneğimiz var, koordinat geçiş matrisleriyle ilgili.
+
+417
+01:38:34,244 --> 01:38:36,084
+Sonra dersimizi bitirelim.
+
+418
+01:38:36,804 --> 01:38:39,144
+Geçmiş yıllarda sınavlarda sorulan bir soru.
+
+419
+01:38:39,984 --> 01:38:43,404
+Elimizde bir vektör uzayı ve onun iki tane tabanı var.
+
+420
+01:38:44,184 --> 01:38:46,644
+Üç elemandan oluşan iki tane taban.
+
+421
+01:38:46,724 --> 01:38:48,784
+Demek ki üç boyutlu bir vektör uzayıymış.
+
+422
+01:38:49,284 --> 01:38:51,044
+Bunu R3 gibi de düşünebiliriz.
+
+423
+01:38:51,644 --> 01:38:52,864
+Hatta R3 gibi düşünelim.
+
+424
+01:38:53,460 --> 01:38:58,760
+Ya da herhangi bir üç boyutlu bir real vektörlük sayı, yani real 3'e isomort bir yapı.
+
+425
+01:39:00,939 --> 01:39:03,819
+Burada lineer kombinasyonların kas sayıları belli.
+
+426
+01:39:05,399 --> 01:39:11,760
+V1'i, ben W1 artı W2 eksi W3, V2'ye iki tane W1 eksi W2 artı W3,
+
+427
+01:39:12,659 --> 01:39:16,079
+V3'ü de W1 artı iki tane W3 şeklinde yazmışım.
+
+428
+01:39:17,427 --> 01:39:44,907
+B1 tabanından B2 tabanına geçiş matrisini istiyor benden. Bunu çok rahat bir şekilde yazabileceğim. Neden? Çünkü B1 tabanın elemanlarını zaten B2 tabanın elemanları lineer kombinasyonu olarak yazmış. Ben bunu hemen parantez içinde şöyle eşittirdim. Şuradaki kat sayıların transpozunu alacağız değil mi? 1, 1, eksi 1. Birinci stum olacak. 1, 1, eksi 1. Sonra 2, eksi 1.
+
+429
+01:39:45,619 --> 01:39:57,539
+2-1, 1, sonra da 1-0, 3, pardon 2, 1-0, 2 şeklinde yazıyoruz.
+
+430
+01:39:59,460 --> 01:40:00,520
+1-0, 2
+
+431
+01:40:05,268 --> 01:40:11,368
+Cevabını da vermiş olduk. B1 tabanından B2 tabanına geçiş matrisi zaten vermiş bana esasını.
+
+432
+01:40:12,128 --> 01:40:19,288
+B2 tabanından B1 tabanına geçiş matrisi, bunu hesaplamak için şu matrisin tersini hesaplamam lazım.
+
+433
+01:40:20,368 --> 01:40:24,347
+Onu yapmak için de önce determinantını, sonra adjointini almam lazım.
+
+434
+01:40:25,807 --> 01:40:31,028
+Biz determinantına bakalım, tersini uzun uzun hesaplamaya gerek yok.
+
+435
+01:40:31,604 --> 01:40:48,243
+Onu çok rahat bir şekilde yapabiliriz. Zaten biliyoruz, elimizde yöntemler var. Gerçekten determinant sıfırdan farklı mı? Ne yapacağız? Burada satır işlemi yaparsak, 3. satırı, 1. ve 2. satıra eklersem, matrisim, denk yazalım.
+
+436
+01:40:52,020 --> 01:41:10,239
+0, 3, 3, 0, 0, 2, eksi 1, 1, 2 şeklinde bir matris. Bu matrisi birinci sütun ya da ikinci satıra göre açarsak,
+
+437
+01:41:10,771 --> 01:41:30,271
+Birinci tutuna göre açtığımızda, eksi bir işaret pozitif olacak. Eksi bir üzeri bir artı üçten. İşaret pozitif o da eşittir. Eksi bir çarpı geriye kalan, şöyle diyelim, determinant. A diyelim, A maddesinin determinantı mesaflamak istiyorum.
+
+438
+01:41:33,908 --> 01:41:49,688
+Dolayısıyla determinant A eşittir, eksi 1 çarpı, kapattığımızda, 3, 3, 0, 2, dolayısıyla eksi 6 geliyor, farklı 0, dolayısıyla ters var.
+
+439
+01:41:50,408 --> 01:41:57,127
+Ters hesaplamak için de 9 tane kofaktör hesaplayacağım. Onların transpozunu alıp her birini eksi 6'ya bölmem lazım.
+
+440
+01:42:00,595 --> 01:42:10,376
+B2 tabanından B1 tabanına geçiş matrisi, onu da bulduğumuz matrisin, yazdığımız matrisin tersini alarak tersi de var, onu da görmüş olduk.
+
+441
+01:42:12,076 --> 01:42:19,536
+B1 tabanına göre koordinat vektörü verilmiş, 1, 0, 3 şeklinde, U, B2, bu da ne olacaktır?
+
+442
+01:42:19,536 --> 01:42:27,855
+M, B1, B2'yi, U, B1 ile çarpmam lazım.
+
+443
+01:42:29,332 --> 01:42:37,712
+Bu B1 var elimde, MB1, B2 var elimde, ona bakalım. Matris şuradan tekrar yazayım.
+
+444
+01:42:38,672 --> 01:42:55,112
+1, 1, 1, 1, 1, 1, 1 hatta şunu yazayım. Bu B2 eşittir. 2, 1, 3, 1, 0, 2. Neyle çarpacağım?
+
+445
+01:42:55,667 --> 01:43:08,387
+1, 0, 3 de çarpacağım. 1, 0, 3. Çarptığımızda, tabi burada sütun vektörü çıkarsa, satır vektörü çıkıyor zaten.
+
+446
+01:43:10,887 --> 01:43:19,007
+Zaten satır vektörü çıkıyor. Çarptığımızda 1 artı, 0 artı 3'ten 4 geldi şurası, 4.
+
+447
+01:43:19,475 --> 01:43:34,975
+Sonra araya bilgir yazalım. Aslında bunu matrisin ama o da vektör olarak yazacağım. İkinci satırı vektörle çarptığımızda, 1 geldi şurası, sonra eksi 1, artı 6, 5 geldi.
+
+448
+01:43:36,595 --> 01:43:42,576
+Demek ki u, b2 de 5'miş. u, b2'yi benden istiyor. Bir de şurada ne var?
+
+449
+01:43:43,123 --> 01:44:02,864
+B2 tabanına göre koordinat vektörü verilmiş, B1 tabanına göre koordinat vektörünü istiyor. Onun için de bizim neye ihtiyacımız var? V'nin B1 tabanına göre koordinat vektörü eşittir. M, B2, B1 çarpı, V, B2.
+
+450
+01:44:02,864 --> 01:44:10,484
+V, B2 var elimde. M, B2, B1'i de ters olarak hesaplayacağız. Çarptığımızdaki onu da aşağıda bir yerde yaptık.
+
+451
+01:44:11,891 --> 01:44:31,391
+Şurada tersi bulmuş olduk. Son şıkı hesaplamak için de VB1'i ters matrisle çarpacağız. O da ne gelmiş oldu? 1 bölü 2, 3 bölü 2, eksi 3 bölü 2 şeklinde gelmiş oldu arkadaşlar.
+
+452
+01:44:32,148 --> 01:44:48,087
+Burada bir sütun matrisi, onun transpozunu alıp, onu vektör gibi düşüneceğiz. Yani o karmaşaya girmeyin arkadaşlar. Burada bir sütun vektörü geldi. Koordinat vektörünü sütun olarak mı yazacağım falan. Yani sütun satır onun bir farkı yok. O çok önemli değil.
+
+453
+01:44:49,148 --> 01:44:56,087
+Satır olarak vektörleri yazmaya alışık olduğumuz için, şunların aralarına virgül yazarak satır vektörü bir şekilde yazacağız.
+
+454
+01:44:56,532 --> 01:45:05,131
+v dediğimiz aslında bir satır vektörü gibi düşünüyoruz. Annotasyona çok takılmayın. Orası için. Var mı sorularınız?
+
+455
+01:45:13,235 --> 01:45:36,296
+İkinci uygulamada buna dair örnekler de var. Bazı örnekler bunların aynısı, fazlası var orada. Haftaya son dersimizi yapacağız. Özdeğerler, özvektörler ve Kelly Hamilton teoreminden söz edeceğiz. Dolayısıyla bu dönemi kapatmış olacağız. Ondan sonraki haftada final sınavımız olacak. Sorularınız olursa bana mail yazabilirsiniz.
+
+456
+01:45:36,815 --> 01:45:42,935
+Sabırla dinlediğiniz için hepinize teşekkür ediyorum. Haftaya görüşmek üzere. Hoşçakalın arkadaşlar.
+
+457
+01:46:06,676 --> 01:46:17,076
+Bu arada yeni yılı unuttum. Yeni yıl hepinize güzellikler getirsin arkadaşlar. Bütün iyi dilekleriniz gerçekleşsin. Hepiniz için. Mutlu yıllar diliyorum.
