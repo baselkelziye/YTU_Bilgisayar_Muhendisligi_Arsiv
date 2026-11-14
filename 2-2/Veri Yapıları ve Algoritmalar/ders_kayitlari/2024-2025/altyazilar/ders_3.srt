@@ -1,0 +1,3423 @@
+1
+00:00:13,715 --> 00:00:23,375
+Günaydın arkadaşlar. Bir 5 dakika bekleyelim katılım için. Bir de bilimsel hazırlıklara da link yollayacağım. Onun için biraz süre istiyorum.
+
+2
+00:04:40,947 --> 00:04:57,527
+Evet arkadaşlar, kusura bakmayın. [kişisel bilgi] Sesim biraz az çıkıyor, kusura bakmayın. Bir problem var mı seste?
+
+3
+00:05:01,875 --> 00:05:03,500
+yazabilirsiniz.
+
+4
+00:05:07,699 --> 00:05:26,959
+Çok güzel. Evet, bugün 18 Mart 2025. Derse başlamadan biliyorsunuz bugün 18 Mart yıl dönümü Çanakkale Deniz Savaşları Deniz Muharebesi'ndeki zaferimizin 110. yıl dönümü.
+
+5
+00:05:27,764 --> 00:05:35,364
+Bu sebeple önce yolu önderimiz Atatürk ve bütün askerlerimiz, bütün şehitlerimize saygıyla anarak başlamak istedim dersi.
+
+6
+00:05:37,004 --> 00:05:40,484
+110 yıl önce onlar olmasaydı biz şu anda bu derste olmazdık.
+
+7
+00:05:42,343 --> 00:05:44,504
+Peki, biz şimdi yolumuza devam edelim.
+
+8
+00:05:47,064 --> 00:05:51,984
+Bugünkü konumuz öl ve yönet algoritmik tasarım yaklaşımı.
+
+9
+00:05:52,339 --> 00:06:02,159
+Bölbe, yönet ne demektir? Nasıl bir tekniktir? Hangi tür problemleri nasıl çözer? Örnekler üzerinden bunları işleyeceğiz.
+
+10
+00:06:03,827 --> 00:06:10,807
+Öl ve yönet de arkadaşlar yine bir problemi çözmek için bir algoritmik çözüm aslında geliştiriyoruz.
+
+11
+00:06:10,967 --> 00:06:13,767
+Fakat bunun belli bir yolu, yordamı, bir tekniği var.
+
+12
+00:06:15,687 --> 00:06:20,527
+Problemi genellikle eşit boyutlu alt parçalara ayrıştırıyoruz.
+
+13
+00:06:20,527 --> 00:06:23,007
+Ama bu tabi eşit boyutlu olmak zorunda değil.
+
+14
+00:06:23,527 --> 00:06:26,527
+Fakat genellikle divide and conquer algoritmalarında.
+
+15
+00:06:27,283 --> 00:06:32,683
+Eşit boyutlu problem, daha küçük problemlere ayrıştırılıyor.
+
+16
+00:06:34,323 --> 00:06:38,823
+Bir de tabii en önemli olan şey problemin aynı türden problem olması.
+
+17
+00:06:39,024 --> 00:06:43,783
+Hani farklı bir probleme, farklı bir problem çeşidine dönüş yapmıyoruz.
+
+18
+00:06:44,063 --> 00:06:46,443
+Direkt olarak aynı problem çözmeye devam ediyoruz.
+
+19
+00:06:47,024 --> 00:06:48,943
+Yani bugünkü örneklerde de göreceğiz.
+
+20
+00:06:49,644 --> 00:06:52,364
+Eğer sıralama yapıyorsak yine sıralama yapacağız.
+
+21
+00:06:52,563 --> 00:06:54,423
+Ufalttığımız alt problemlerde de.
+
+22
+00:06:55,028 --> 00:07:01,288
+Sonrasında bu alt problemler çözülür. Daha ufak oldukları için daha kolay bir şekilde çözülürler.
+
+23
+00:07:02,108 --> 00:07:09,328
+Sonrasında da aslında ilk olarak çözülmeden önce rekürsif olarak, genellikle rekürsif olarak
+
+24
+00:07:09,971 --> 00:07:13,371
+Ana problem, daha küçük problemler haline getirilir.
+
+25
+00:07:14,111 --> 00:07:23,151
+Ve ne zamanki artık daha ufak bir parça yapılamaz, daha küçük bölünemeyecek problemler haline getiririz bölme işlemlerinin sonucunda.
+
+26
+00:07:23,711 --> 00:07:27,052
+Artık biz o küçük problem parçalarını çözmeye başlarız.
+
+27
+00:07:27,851 --> 00:07:30,971
+Sonrasında da, bu da gerektiğinde dedim ama genellikle...
+
+28
+00:07:31,552 --> 00:07:47,252
+Böyle bir ihtiyaç duyarız. Yani üçüncü aşaması olarak. Bu çözdüğümüz alt problemleri bir araya getiririz. Bu işlemede birleştirme adını veriyoruz. Yani combine adını veriyoruz. Ve bu sayede
+
+29
+00:07:48,084 --> 00:08:06,543
+Daha kolay çözdüğümüz alt problemleri, yani böldüğümüz, daha kolay çözerek yönettiğimiz ve sonrasında da combine, yani birleştirdiğimiz nihai probleme, orijinal probleme ait son çözüm, nihai çözümü oluşturmuş oluruz.
+
+30
+00:08:08,627 --> 00:08:14,608
+Körlemesine brute force bir yaklaşımdan daha efektif bir çözüm olacak diye bir şartı yok. Öyle bir garantisi yok.
+
+31
+00:08:14,608 --> 00:08:26,908
+Yani ben her zaman için ilk aklıma gelen bubble sort gibi körlemesine bir sıralama algoritmasından daha iyi çalışacağım gibi bir iddiası yok aslında.
+
+32
+00:08:27,228 --> 00:08:35,427
+Ama şöyle bir şey var. Paralel hesaplama şeklinde yani paralelleştirmelerle bunu gerçekleştirebiliyoruz.
+
+33
+00:08:35,847 --> 00:08:36,528
+Teşekkür edersiniz.
+
+34
+00:08:36,628 --> 00:08:37,388
+bölümden arıyorlar.
+
+35
+00:09:05,812 --> 00:09:06,572
+[öğrenci].
+
+36
+00:09:10,868 --> 00:09:17,528
+Evet, böl ve yönet ve bu şekilde çalışan, bu adımları olan bir algoritma çözüm yaklaşımı.
+
+37
+00:09:18,708 --> 00:09:22,928
+Eğer görselleştirecek olursak da, işte elimizde daha büyük bir problem var.
+
+38
+00:09:23,048 --> 00:09:24,408
+Burada gördüğünüz büyük elips.
+
+39
+00:09:24,908 --> 00:09:29,448
+Şimdi biz bu en boyutlu problemi mesela şöyle ortadan ikiye bölüyoruz.
+
+40
+00:09:29,448 --> 00:09:31,948
+Sonra da şuradan lazer alayım.
+
+41
+00:09:32,500 --> 00:09:47,059
+Daha kolay görün. Şu problemimiz var. N boyutlu. Bunu tam ortadan şu şekilde ikiye bölüyoruz. Şimdi artık elimizde daha küçük iki tane problemimiz var. Bunlara alt problem adını veriyoruz. Boyutta burada n bölü iki.
+
+42
+00:09:48,879 --> 00:09:59,720
+N bölü iki boyutlu iki tane problemimiz var. Şimdi biz ne yaptık? Bunu bölmüş olduk. Sonrasında bu problemi burada çözüyoruz. Sol tarafta. Sağdaki ikinci alt problemi de burada çözüyoruz.
+
+43
+00:10:00,000 --> 00:10:04,700
+Artık bunları yönetmiş olduk. Yani konkür etmiş olduk.
+
+44
+00:10:04,779 --> 00:10:07,419
+Konkür etmek ne demek? Biliyorsunuz fethetmek demek aslında.
+
+45
+00:10:08,000 --> 00:10:12,359
+Yani biz burada fetih kelimesini problemi çözmüş olmak anlamında kullanıyoruz.
+
+46
+00:10:12,980 --> 00:10:15,480
+Sonrasında şurada bir artı işareti görüyorsunuz.
+
+47
+00:10:15,599 --> 00:10:19,319
+Buradaki küçük çözümler bir araya getiriliyor. Yani kombine ediliyor.
+
+48
+00:10:20,039 --> 00:10:25,240
+Aslında bunu böl, yönet, birleştir şeklinde ifade etmek daha doğru olur.
+
+49
+00:10:28,371 --> 00:10:37,311
+Dünyada da ülkelerin bazı coğrafyalarda daha çıkarları için ülkeleri
+
+50
+00:10:37,556 --> 00:10:46,896
+bölerek daha küçük ve yönetilebilir hükümetler halinde üzerinde hegamonyasını tuttuğu bir yaklaşım vardır bilirsiniz.
+
+51
+00:10:47,796 --> 00:10:59,576
+İşte aynı şey aslında divide and conquer oradan geliyor. Biz de algoritmada problemi bölerek yönetiyoruz. Ondan sonra da birleştirip son çözümümüzü elde ediyoruz. Son çözüm de burada birleştirilmiş halde.
+
+52
+00:11:01,748 --> 00:11:11,307
+Peki, şimdi örneklere geçmeden önce ben bir bölme ve yönet algoritması tasarlıyorsam bunun karmaşıklığını nasıl hesaplarım ona bakalım.
+
+53
+00:11:11,968 --> 00:11:15,008
+Diyelim ki ben problemimi m tane alt probleme bölüyorum.
+
+54
+00:11:15,568 --> 00:11:25,088
+Ve bu m alt problemin her birindeki problem boyutu, yani eleman işte o problem parçasına, alt parçasına giren eleman sayısından m bölü k diyelim.
+
+55
+00:11:25,608 --> 00:11:28,528
+Benim bir divide süresine ihtiyacım var.
+
+56
+00:11:29,748 --> 00:11:37,188
+Bölmem lazım. Yani rekürsif çağrılar yapmam lazım mesela. Onun için benim bir süreye ihtiyacım var. Buna DN adını veriyoruz.
+
+57
+00:11:38,148 --> 00:11:50,528
+Sonrasında tabii ki bir şey için, concur için de bir süre ihtiyacı var. Ondan sonra da bunu bölme olarak da görebiliriz. Şuradaki rekürsif çağrılar.
+
+58
+00:11:51,268 --> 00:11:57,208
+Birleştirme için de bir combine süresine ihtiyacım var. O zaman şunu, T'ni şöyle yazabilirim.
+
+59
+00:11:57,748 --> 00:12:05,748
+Küçük boyutlar için bunları göz ardı edebilirim diyerek zaman ihtiyacının teta 1 yani sabit olduğunu söyleyebilirim.
+
+60
+00:12:06,748 --> 00:12:08,148
+Yani ufak boyutlar için ama.
+
+61
+00:12:09,188 --> 00:12:13,048
+En büyüdüğünde yani gerçek hayat problemlerinde o zaman nasıl yazacağız?
+
+62
+00:12:13,128 --> 00:12:17,688
+Çok basit. Benim m tane m bölü k boyutunda alt problemim var.
+
+63
+00:12:17,908 --> 00:12:21,608
+Bunların bir zaman ihtiyaçları var çözülmek için yani konkür edilmek için.
+
+64
+00:12:21,608 --> 00:12:25,748
+Bu divide etmek için n tane elemanı m bölü k'ya m tane şey bölü.
+
+65
+00:12:25,748 --> 00:12:38,748
+Burada bir zaman ihtiyacım var. Buna da başka bir şey demem lazım. Dn diyorum. Sonra da birleştirmek için bir zaman ihtiyacım olabilir. Ona da Cn diyorum. Yani aslında ben ölme...
+
+66
+00:12:40,083 --> 00:12:56,083
+Ondan sonra concure etme ve combine etme şeklindeki zaman ihtiyaçlarımı birleştirirsem direkt olarak bir böl ve yönet divide and concure algoritmasının karmaşıklığını da hesaplayabilirim.
+
+67
+00:12:58,743 --> 00:13:01,884
+Evet, peki. Şimdi bölmeye başlayalım.
+
+68
+00:13:08,596 --> 00:13:09,484
+[öğrenci].
+
+69
+00:13:09,652 --> 00:13:14,392
+Sık sık böyle bölünecek dersi. Kusura bakmayın. Baştan özür diliyorum bu konu için.
+
+70
+00:13:15,352 --> 00:13:20,392
+Şimdi yine derste sıklıkla işlediğimiz bir problemi ele almak istiyorum.
+
+71
+00:13:20,972 --> 00:13:27,792
+Bu da sıralama problemi. Acaba ben sıralama problemini, şimdiye kadar nelerden bahsettik?
+
+72
+00:13:27,792 --> 00:13:37,592
+70'te de bubble sort, ondan sonra selection sort, insertion sort gibi karşılaştırmalı ve kendi içinde belli bir döngü ve
+
+73
+00:13:37,652 --> 00:13:47,491
+kıyaslama, sonrasında da yer değiştirme şeklinde çalışan algoritmalar yapmıştık, öğrenmiştik ya da görmüştük şey için.
+
+74
+00:13:47,832 --> 00:13:55,491
+Sıralama problemi için. Şimdi burada acaba ben aynı problemi böl ve yönet yaklaşımıyla çözebilir miyim?
+
+75
+00:13:55,491 --> 00:14:01,532
+Çözersem bu bana ne getirir? Yani en azından mesela zaman konusunda bir artı getirir mi? Ona bakalım.
+
+76
+00:14:04,563 --> 00:14:15,383
+Elimizde problemi tanımlayalım önce. Nasıl çözeceğimizi? Yani daha doğrusu sıralama problemini böl ve yönet yaklaşımıyla nasıl çözebileceğimizi formüle edelim.
+
+77
+00:14:15,803 --> 00:14:21,263
+Elimizde burada 1'e n yazabiliriz ya da 0'a n-1 yazabiliriz. Burada 0'a n-1 yazmışım.
+
+78
+00:14:21,263 --> 00:14:29,623
+Bir dizi var. N elemanlı bir dizi var. Acaba bunu böl ve yönette sıralayabilir miyiz? Nasıl yaparız? Şimdi bölmem lazım. Düşünüyorum.
+
+79
+00:14:30,227 --> 00:14:55,047
+Diziyi kaça böleyim? En kolayı nedir? Bir diziyi ikiye bölmektir değil mi? Mesela diziyi ikiye bölsem, iki tane alt dizim olsa, biraz önceki şuradaki problemde olduğu gibi en elemanlı bir dizim var. Ben bunu en bölün iki elemanlı iki dizi haline böleyim ortadan böyle. Ondan sonra bu küçük diziyi kendi içinde sıralayayım. Bu diziyi kendi içinde sıralayayım. Sonra da bunları birleştireyim diyebilirim.
+
+80
+00:14:57,779 --> 00:15:04,000
+O zaman ben nereye kadar böleceğim? Yani sadece bir diziyi ikiye bölmek yetecek mi? Hayır.
+
+81
+00:15:04,179 --> 00:15:13,240
+Diyelim ki elimizde 8 eleman var. 8 elemanı 4, 4, 2 tane alt parçaya bölebilirim. Ama hala 4'er tane eleman var.
+
+82
+00:15:13,600 --> 00:15:19,120
+Yani kendi başına kolayca konkür edilebilecek bir yapıda değiller.
+
+83
+00:15:19,639 --> 00:15:20,879
+O zaman ne yaparım?
+
+84
+00:15:21,139 --> 00:15:25,179
+Rekürsif olarak ben bu parçaları da kendi içinde bölmeye devam ederim.
+
+85
+00:15:26,159 --> 00:15:28,579
+4 parçasını 2-2 yaparım.
+
+86
+00:15:28,779 --> 00:15:31,000
+Sağdaki 4 parçasını da 2-2 yaparım.
+
+87
+00:15:31,120 --> 00:15:31,620
+Ne oldu şimdi?
+
+88
+00:15:32,240 --> 00:15:34,539
+Elimde 4 tane 2 elemanlı dizi var.
+
+89
+00:15:34,964 --> 00:15:44,524
+İki elemanlı diziyi sıralamak, evet bir if çağrısına bakar ama hala çok basit bir şekilde çözülebilir bir problem değil.
+
+90
+00:15:45,064 --> 00:15:51,124
+O zaman bir kere daha bölerim. Yani ne yaptım? İkilik dizileri, alt dizileri de tekrar ikiye böldüm.
+
+91
+00:15:51,504 --> 00:15:57,204
+Şimdi ne oldu sonuçta? Benim elimde sekiz tane tek elemanlı dizi var.
+
+92
+00:15:57,844 --> 00:16:02,024
+Tek elemanlı dizi ne demek? Bir elemanı varsa zaten sıralı demek değil mi?
+
+93
+00:16:02,964 --> 00:16:25,964
+İşte bu kadar. Ben konkür etmek için hiçbir şey yapmıyorum. Çünkü o dizi zaten kendi içinde sıralı. Peki burası güzel. Şey gibi düşünün bir ülke geldi. Dünyada bir coğrafyaya girdi. Ondan sonra rekürsif olarak ülkeleri bölmeye başladı. Böldü, böldü, böldü, böldü. Nereye kadar? Ta ki her ülke...
+
+94
+00:16:27,316 --> 00:16:32,956
+Hiçbir şey yapmadan yönetilebilir, fethedilebilir hale gelene kadar.
+
+95
+00:16:33,135 --> 00:16:36,235
+Yani biz de burada diziyi tamamen parçalıyoruz.
+
+96
+00:16:36,535 --> 00:16:40,316
+Böyle rekürsif olarak yapmak da bunu daha kolay bir çözüm getiriyor.
+
+97
+00:16:41,836 --> 00:16:51,956
+Sonrasında da her bir sıralı alt alt parçayı, hani sap sap sap sap diyebiliriz bunlara, bunları birleştireceğiz.
+
+98
+00:16:52,692 --> 00:16:55,951
+İşte esas iş aslında Merge Sort da burada bitiyor.
+
+99
+00:16:56,552 --> 00:17:08,672
+Bunu çok efektif, zaman efektif bir şekilde yapmam lazım ki gerçekten daha önceden öğrendiğimiz sıralama algoritmalarından daha efektif bir çalışma zamanı ihtiyacı olsun.
+
+100
+00:17:09,472 --> 00:17:13,192
+Onun için de bir başka algoritma yani Merge algoritmasına ihtiyacım var.
+
+101
+00:17:13,331 --> 00:17:17,451
+Burası tamamen combine aşaması, birleştirme aşaması.
+
+102
+00:17:17,451 --> 00:17:18,711
+Peki nasıl yapacağım?
+
+103
+00:17:19,152 --> 00:17:20,512
+Şimdi kendi elimde.
+
+104
+00:17:20,948 --> 00:17:38,628
+ne var? Alt alt alt alt alt yani bir elemanlı en tane dizi parçası var. Şimdi bunlar hepsi kendi içinde sıralı. Ne yapacağım? Önce birinci ve ikiyi alırım. Bunları bir araya getiririm. Sonra
+
+105
+00:17:39,316 --> 00:17:42,215
+3 ile 4'ü alır bir araya getiririm.
+
+106
+00:17:42,635 --> 00:17:45,256
+Şimdi elimde iki elemanlı iki tane dizi var.
+
+107
+00:17:45,796 --> 00:17:49,155
+Bunları da tekrar böyle karşılaştırarak bir araya getiririm.
+
+108
+00:17:49,256 --> 00:17:55,715
+Yani bunları sıralı olarak sıralı olma şartını sağlamayı garanti ederek sürekli birleştiririm.
+
+109
+00:17:56,476 --> 00:18:02,215
+Yani birlerden ikilere, ikilerden dörtlere, dörtlerden tek eleman, tek parça sekize geri dönerim.
+
+110
+00:18:02,536 --> 00:18:05,016
+İşte bu da merge tarafını oluşturacak.
+
+111
+00:18:05,748 --> 00:18:07,748
+Peki, bunun akışı nasıl olur?
+
+112
+00:18:07,867 --> 00:18:08,968
+Algoritmalar nasıl olur?
+
+113
+00:18:10,488 --> 00:18:12,548
+Bunları tahtada güzel güzel yazacaktık da.
+
+114
+00:18:13,088 --> 00:18:13,807
+Bugün böyle oldu.
+
+115
+00:18:14,771 --> 00:18:20,231
+Şimdi, akışta şöyle bir şey görüyorsunuz. Biz normalde burada ne yazardık? Start yazardık değil mi?
+
+116
+00:18:20,591 --> 00:18:24,391
+Eğer bir fonksiyon çağırıyorsak, bunu bu şekilde yazabileceğimizi de göstermiştim size.
+
+117
+00:18:24,511 --> 00:18:27,652
+Üstte ismini yazarız. Altta da parametrelerini veririz.
+
+118
+00:18:28,231 --> 00:18:32,211
+Peki, ne demek bu? Merge sort. Merge sort benim zaten sıralama algoritmam.
+
+119
+00:18:32,371 --> 00:18:34,451
+Divine and Conquerade şeklinde çalışan.
+
+120
+00:18:35,331 --> 00:18:36,711
+Aldığı parametrelere bakalım.
+
+121
+00:18:38,611 --> 00:18:40,531
+Diziye alıyor. Almak zorunda.
+
+122
+00:18:41,715 --> 00:18:55,435
+Alt indis, low, bir de üst indis, high. O zaman ben n elemanlı diziyi sıralamak istiyorsam nasıl bir çağrı yapmam lazım? Mergesort, dizi, birden n'e şeklinde bir çağrı yapmam lazım.
+
+123
+00:18:56,515 --> 00:19:04,755
+Sonrasında rekürsif olarak tekrar tekrar kendimi çağırıyorum. Bakın burada, burada. İki kere kendimi çağırıyorum arka arkaya.
+
+124
+00:19:05,556 --> 00:19:16,496
+Ama her zaman için, geçen hafta, geçen 15 gün önceki dersimizde ne dedik? Mutlaka öz yinelemeli çağrıların bir temel durumu olması gerekir dedik.
+
+125
+00:19:16,875 --> 00:19:25,556
+İşte biz burada da temel durum kontrolünü yapıyoruz. Bakın ne yapmışım? Küçük indis, büyük indisten küçük kaldığı sürece demişim.
+
+126
+00:19:26,336 --> 00:19:31,375
+Bu ne demektir? Hani 8 elemanlı dedim ya. 1n, 1'e 8.
+
+127
+00:19:33,231 --> 00:20:00,211
+Küçük ve büyük durumu devam ettikçe benim bölmeye devam etmem lazım. Ne zamanki bu şart tersine döner artık durmam lazım. Bakın burada da algoritma eğer şey olduysa hiçbir şey yapmadan çıkıp sonuca gidiyor. Peki şimdi diyelim ki benim hala bölecek parçam var. Yani bir küçük sekiz büyük tarafta ya da işte bir dört ya da bir iki şeklinde devam ediyor.
+
+128
+00:20:00,564 --> 00:20:05,964
+Her seferinde benim bir orta nokta bulmam lazım. İşte onu da mid, middle point anlamında mid diyelim.
+
+129
+00:20:06,423 --> 00:20:10,584
+Bunu nasıl yazarız? Çok kolay. Yani işte low artı high artı low bölü 2.
+
+130
+00:20:11,684 --> 00:20:17,644
+Her seferinde tık işte. İkinci, dördüncü pozisyon, ikinci pozisyon, altıncı pozisyon gibi gibi.
+
+131
+00:20:19,124 --> 00:20:24,504
+Sonrasında rekürsif olarak bunları bölmeye devam etmem lazım dedim.
+
+132
+00:20:27,440 --> 00:20:36,579
+Love'dan mid'e kadar çağırıyorum. Bu ne demektir? 1'e 8'di. Ortası ne? 4. 1'e 4 ile çağırıyorum.
+
+133
+00:20:36,912 --> 00:21:04,912
+1'e 4 ile çağırdımda tekrar buraya geldim. 1, 4'ten küçük devam ettim. Mide hesaplıyorum. İşte 1'e 2. 2'yi buluyor. Ondan sonra kendimi 1'e 2 ile çağırıyorum. Ortayı buluyorum 1. Kendimi 1'e 1 ile çağırıyorum ve buradan çıkıyorum. Şimdi ne yaptım? Önce en soldaki parçayı yapmış oldum. Sonra buraya geliyorum. Bakın mid artı 1 ve hayla çağırıyorum. Ondan sonra da işte 2'den 4'e olan kısım. Sonra bir daha geldiğimde 4.
+
+134
+00:21:04,912 --> 00:21:13,011
+6'dan 8'e olan kısım, 4'dan 6'ya olan kısım, 6'dan 8'e olan kısım şeklinde buradaki recursive çağrılarımı gerçekleştireceğim.
+
+135
+00:21:13,011 --> 00:21:22,011
+Peki bunları yaptım. Şu noktaya geldiğimde artık kendimi tekrar tekrar recursive merge sortu çağırmışım, çağırmışım, çağırmışım şu noktadayım.
+
+136
+00:21:22,011 --> 00:21:23,011
+Burada
+
+137
+00:21:23,923 --> 00:21:50,063
+Artık benim konkür etmem lazım. Konkür içinde başka bir algoritma ihtiyacım var demiştim. O da merge algoritması. Merge algoritması içinde neye ihtiyaç var? Dizi bilmesi lazım. Küçük indisi, büyük indisi ve orta değeri bilmesi lazım. Neden? Şimdi birden ikiye, ikiden üçe ondan sonra birinci ve ikinci elemanları birleştir. O yüzden bir, üç, ikiyi biliyor olması lazım.
+
+138
+00:21:51,059 --> 00:22:03,219
+Yani birleştire birleştire de devam ediyoruz. Low küçük high olduğu sürece buradaki işlemi gerçekleştirmeye devam ediyoruz. Topluya topluya yukarıya doğru devam etmiş olacağız.
+
+139
+00:22:04,119 --> 00:22:09,380
+Peki. Şimdi gelelim merge'e. Onu hızlı bir şekilde şimdi veriyorum ama ileride.
+
+140
+00:22:09,811 --> 00:22:15,751
+İleriki slide'larda daha çok tartışacağız bunu. Sadece bir akışını göstermek istiyorum.
+
+141
+00:22:17,351 --> 00:22:22,491
+Ne yapacağız şimdi? Biz şurada, bundan bir kalem alayım.
+
+142
+00:22:26,691 --> 00:22:32,711
+Low ve mid artı biri aldık. Bakın şurada bir işlem yapıyorum. Ne yapıyorum?
+
+143
+00:22:33,236 --> 00:22:51,236
+low'dan high'a kadar, yani bana verilen, merge etmem için verilen alt parça kadar, mesela şurada iki elemanlı bir dizi vardı, şurada da iki elemanlı bir dizi vardı, low burasıydı, mid burasıydı, bu da high'dı.
+
+144
+00:22:52,236 --> 00:23:00,016
+Ondan sonra ben buradan buraya kadar olanların hepsini bakın aux isimli bir harici diziye kopyalıyorum.
+
+145
+00:23:01,172 --> 00:23:24,072
+Haa bir dakika. Şimdi o zaman benim merge yapabilmem için ekstra dizi kadar alana ihtiyacım var. Çünkü bu low'dan high'a en sonunda nereye gidecek? Bizi böyleyken birden n'e gidecek değil mi? O zaman benim şurada n elemanlı bir ekstra diziye ihtiyacım var. Aux dizisine.
+
+146
+00:23:24,948 --> 00:23:28,928
+Buna niye aux diyoruz? Aux ileri anlamında, harici dizi anlamında.
+
+147
+00:23:29,868 --> 00:23:37,928
+Demek ki ben ilk orijinal durduğu yerdeki değerleri kaybetmemek için bu diziyi buraya kopyalamam gerekiyor.
+
+148
+00:23:38,008 --> 00:23:38,848
+Bakın kopyalıyorum.
+
+149
+00:23:40,088 --> 00:23:42,807
+İşte Merge Sort'un zayıf noktası da bu.
+
+150
+00:23:43,968 --> 00:23:46,648
+Benim en elemanlı bir diziyi sıralamam için
+
+151
+00:23:46,648 --> 00:23:52,108
+yine zeta n'lik ya da o n'lik
+
+152
+00:23:55,604 --> 00:23:57,104
+yer ihtiyacım var.
+
+153
+00:24:03,604 --> 00:24:16,663
+Yani benim dizinin değerlerini kaybetmemem için, çünkü birleştirirken üstüne birleştirirsem kaybederim. Bunları bir yerde kopyalayarak saklamam gerekecek. Sonra atacağım tabi bunları ama algoritmanın çalışması için bu kadar alana ihtiyaç var.
+
+154
+00:24:16,663 --> 00:24:28,384
+Şimdi hani yine hani bin elemanda falan çok sıkıntı değil ama işte 85 milyonluk ülkeyi sıralıyorsanız 85 milyon ilave diziye ihtiyaç duyacaksınız demektir.
+
+155
+00:24:31,859 --> 00:24:46,819
+yaptığımız şey çok kolay. Şuradaki dizi buraya kopyalandı ya. Şöyle bir şey diyeyim. Mesela şurada bir var. Şurada da üç var. Bunlar kendi içinde zaten sıralı olmak zorunda. Burada iki var. Burada da sekiz var.
+
+156
+00:24:47,539 --> 00:25:00,019
+Yaptığı şey, gördüğünüz gibi low'dan high'a kadar gitmek. Bakıyoruz, middeki değerden büyük mü diye. Eğer büyükse, çıktı ya, ya da orası çıktı ya, bunu kopyalıyoruz. Ve J'yi bir arttırıyoruz. Değilse,
+
+157
+00:25:00,627 --> 00:25:06,127
+Yani şöyle bir şey, bunun için bir i indisi, bu parça için bir j indisi iteratörü tuttuğumu düşünün.
+
+158
+00:25:06,627 --> 00:25:14,327
+Buna bakıyor, buna bakıyor, işte hangisi daha şey, işte bir, biri buraya, yani şimdi AUX dizisine kopyalıyorum da AUX'dan buraya geri kopyalıyor aslında.
+
+159
+00:25:14,887 --> 00:25:18,827
+Şöyle diyeyim, ben bunu şöyle dört elemanlı bir dizi haline getireceğim.
+
+160
+00:25:22,516 --> 00:25:29,356
+Hangisi küçük? 1 küçük buraya geldi. Sonra bu i burayı gösteriyor artık. 3, 2, 2 küçük buraya geldi.
+
+161
+00:25:30,316 --> 00:25:39,476
+j artık burayı gösteriyor. 3 mü 8 mi? 3 küçük. 3'ü yazdık. i gitti. O zaman artık kalanları kopyalayabilirim şeklinde.
+
+162
+00:25:39,716 --> 00:25:43,156
+Şuradaki parçamız var. Neyse burada da 8 kaldı. 8.
+
+163
+00:25:44,115 --> 00:26:07,895
+Ne oldu? Kendi içinde, diyelim ki şu parçalarda öncesinde, şuraya geri gidelim, şöylelerde, 3, 1, ondan sonra da bunlarda, 2, 8'de diyelim ki. Aslında yaptığı şey, ilk çağrıda, bunları iki elemanla bir hale getirip,
+
+164
+00:26:08,276 --> 00:26:11,816
+i iteratörü burayı gösteriyor, j iteratörü burayı gösteriyor.
+
+165
+00:26:12,675 --> 00:26:15,736
+3 mü, 1 mi? Küçük, 1 küçük. Bunu yaz.
+
+166
+00:26:16,476 --> 00:26:19,675
+Ondan sonra bu gitti zaten dizinin dışına çıktı.
+
+167
+00:26:20,276 --> 00:26:22,415
+i kalan i'leri yaz diyebiliriz.
+
+168
+00:26:22,415 --> 00:26:26,695
+Ya da i küçük, bu sona geldiği için 1, 3.
+
+169
+00:26:27,076 --> 00:26:28,816
+Bu 2 mi küçük, 8 mi küçük?
+
+170
+00:26:29,844 --> 00:26:41,423
+2 küçük zaten hiçbir şey yapmadı yazdı. Sonra da 8 küçük 8 buraya yazdı. 1, 3, 2, 8 yani şuraya şu şekilde gelmiş oldu. Bu şekilde ilerleyen bir akış söz konusu.
+
+171
+00:26:47,923 --> 00:26:56,323
+Şimdi ben combine'ı nasıl yaptığını örnek üzerinde bir de göstereyim. 8 elemanımız var.
+
+172
+00:26:56,983 --> 00:27:14,103
+Orijinal dizimiz bu. Altta. Şimdi ne yaptık? Ben bunu önce şuradan böldüm. Sonra buradan böldüm. Sonra buradan böldüm. Bu artık 1-1 oldu. Sonra buradan böldüm. Sonra buradan böldüm. Buradan ve buradan.
+
+173
+00:27:15,476 --> 00:27:18,796
+Şimdi artık benim elimde 8 tane bir elemanlı dizi var.
+
+174
+00:27:20,336 --> 00:27:24,956
+Ne yapacağım? Buradan başlıyorum. 5 ve 2, 2-5 şeklinde
+
+175
+00:27:25,196 --> 00:27:27,756
+iki elemanlı bir dizi haline getirildi.
+
+176
+00:27:28,276 --> 00:27:33,656
+Üstüne yazıyorum gördüğünüz gibi. O yüzden bunu kaybetmemek için şu parçayı
+
+177
+00:27:34,259 --> 00:27:38,259
+şöyle auxiliary diziye 5-2 şeklinde.
+
+178
+00:27:38,259 --> 00:27:44,259
+popyalamam gerekiyor ki ben bunu 2-5 olarak aynı dizi üstünde oluşturabileyim. Yoksa bunları ezerim.
+
+179
+00:27:45,259 --> 00:28:00,259
+4-7 geldi. Bunlar yine ikili. Sonra 1-3 geldi. 2-6 geldi. Bu şekilde. Sonra sol taraf merge alıyor. Low, high, mid yüzünden.
+
+180
+00:28:02,771 --> 00:28:11,771
+2 küçük, iteratör burayı gösteriyor. 4 mü 5 mi küçük, 4 küçük, bunu kopyaladık.
+
+181
+00:28:11,771 --> 00:28:18,771
+iteratör burayı gösteriyor, i ve j. 5 mi küçük, 7 mi küçük, 5 küçük, burayı kopyaladık.
+
+182
+00:28:19,539 --> 00:28:30,740
+Ondan sonra bu boş zaten. Burayı da 7. 7'yi buraya kopyaladık. Bu şekilde işte aynısı 1, 2, 3, 6 yukarı çıktı. Şimdi 4 elemanlı iki tane dizim var.
+
+183
+00:28:32,980 --> 00:28:46,779
+Ondan sonra da bunlar da yukarı birleşiyor. İşte 1, bundan sonra 2 mi 2 mi? İmplementasyona bağlı. Bu 2 olsun. 4 mü 2 mi? 2. 4 mü 3 mü? 3. 4 mü 6 mı? 4.
+
+184
+00:28:47,988 --> 00:29:14,828
+5 mi 6 mı? 5. 7 mi 6 mı? 6. 7 tek kaldı. O da buraya gitti. İşte bu şekilde ilerliyoruz. Peki acaba tek sayı olsa ne olacak? Çok bir şey değişmeyecek. Aslında altı yuvarladığımız için 11'in yarısını 5 şuradan bölecek. Ondan sonra bunu da buradan bölecek.
+
+185
+00:29:15,892 --> 00:29:25,311
+Ondan sonra şunu şuradan bölecek ve bu parçayı da buradan bölecek. Yani aslında şu tek başına şöyle kesik çizgi yapayım kalmış olacak.
+
+186
+00:29:26,192 --> 00:29:41,572
+Bu tarafa geldiğimizde de ne oldu? 1, 2, 3, 4, 5, 6 buradan bölecek. Ondan sonra da buraya geldiğimizde 3, 1,5
+
+187
+00:29:42,324 --> 00:29:51,644
+altı yuvarladığında şuradan bölecek ve buraya geldiğinde de altı yuvarlayıp buradan bölecek. Şunun okunu çizmemişiz.
+
+188
+00:29:51,644 --> 00:30:04,223
+Bu da böyle gidecek. Bu iki. Yani bu ilk ikisi 4-7 olarak birleşti. Ama buradaki parça tek eleman olduğu için zaten bu aynen yukarı geldi.
+
+189
+00:30:04,223 --> 00:30:08,423
+6-1, iki eleman olarak birleşti.
+
+190
+00:30:09,299 --> 00:30:35,839
+4 yukarı kopyalandı. 3, 7 birleşti. 5 kopyalandı. 2, 6 birleşti. Bu şekilde. Ondan sonra artık burayı 2 ve bir tek eleman birleşecek. 3 elemanlı dizi olacak. Burada da 2 ve 1 eleman birleşecek. 3 elemanlı dizi oluşturacak. Aynı şekilde burada da son parça 2 elemanlı. Sonra da 6 eleman.
+
+191
+00:30:36,915 --> 00:30:39,675
+5 eleman birleşecek.
+
+192
+00:30:40,395 --> 00:30:46,475
+Lov her zaman için altı yuvarlandığından dolayı yani böyle bir şekilde birleştirip birleştirip gideceksiniz.
+
+193
+00:30:47,055 --> 00:30:52,155
+Tek sayı olması herhangi bir şekilde bir problem yaratmayacak bizim açımızdan.
+
+194
+00:31:06,195 --> 00:31:06,695
+Evet.
+
+195
+00:31:13,011 --> 00:31:28,711
+Böyle bir trace dökmek istedim. Yani böyle bir adım adım işler nasıl ilerliyor. İlla sayıları sıralamak zorunda değiliz. Harfleri de aynı şekilde, sembolleri de sıralayabiliriz.
+
+196
+00:31:29,631 --> 00:31:39,311
+Şimdi şurası orijinal dizimiz. Burası E, E, G, M, R, A, C, R, T şeklinde duruyor.
+
+197
+00:31:41,011 --> 00:31:42,812
+Bunu ben aynen kopyalıyorum.
+
+198
+00:31:43,572 --> 00:31:44,552
+Auxilere dizime.
+
+199
+00:31:45,352 --> 00:31:47,491
+Sonrasında nasıl bir işlem yapacağım?
+
+200
+00:31:48,372 --> 00:31:51,932
+İlk olarak bunu bölmeye başlayacağım.
+
+201
+00:31:52,152 --> 00:31:53,552
+Önce şuradan bölüyorum.
+
+202
+00:31:53,692 --> 00:31:54,711
+Beşinci gözden.
+
+203
+00:31:55,491 --> 00:31:59,532
+Ondan sonra buradan bölüyorum.
+
+204
+00:31:59,632 --> 00:32:00,612
+Şeklinde devam ediyor.
+
+205
+00:32:00,612 --> 00:32:04,372
+İlk olarak böldüğümüzde şu eleman.
+
+206
+00:32:07,508 --> 00:32:14,788
+Bu taraftaki bölmelerde de şöyle A, C, E ve R, T şeklinde bölünüyor.
+
+207
+00:32:15,427 --> 00:32:18,807
+Şimdi baktığımızda şuradaki tek eleman E.
+
+208
+00:32:19,807 --> 00:32:22,067
+Bu hiç yer değiştirmeden burada duruyor.
+
+209
+00:32:23,048 --> 00:32:24,508
+Bu da buradaki E.
+
+210
+00:32:25,847 --> 00:32:28,347
+Ondan sonra bunlar aslında işte birleşecek.
+
+211
+00:32:29,395 --> 00:32:36,756
+G ve M var. G buraya kadar geldiğinde G burada artık kalıyor. Yani divide işlemi için söylüyorum hangi adımda olduğunu.
+
+212
+00:32:37,536 --> 00:32:44,776
+I ve J'nin takibi açısından trace'i izleyebilirsiniz. Burada da R. Aynı şey sağ taraf içinde geçer.
+
+213
+00:32:50,132 --> 00:32:55,971
+sıralama yani merge işlemine geldiğimizde de combine etme işlemine geldiğimizde de ne yapacak?
+
+214
+00:32:56,392 --> 00:33:03,052
+İşte ilk olarak aslında diğerlerini yazdırmıyorum. Yani karışık halleri de var burada. Hani E, G, M, R falan filan.
+
+215
+00:33:03,711 --> 00:33:13,451
+Ama çıktı. Buraya A'yı alacak. Şu gitti. Şuradaki gitti. Ondan sonra C'yi alacak.
+
+216
+00:33:17,011 --> 00:33:34,951
+Gitti. Ondan sonra E mi E mi E'yi alacak. Kırmızı E'yi aldı. Buraya geldi. Son hani dördüncü şey, en son bölmedeki merge'ı göstermeye çalışıyorum. Sonra G mi E mi E'yi alacak. Bu E buraya gelecek.
+
+217
+00:33:37,711 --> 00:33:43,112
+Bir E'yi şurada atlamışım. Bunu da hemen çizelim. Sonra işte
+
+218
+00:33:43,571 --> 00:33:54,211
+G mi, R mi? G'yi çık diye taşıyacak. M mi, R mi? M'yi çık diye taşıdı. R mi, R mi? Soldaki R. Sola öncelik verebiliriz.
+
+219
+00:33:55,411 --> 00:34:05,791
+Ondan sonra, burada artık hiçbir şey kalmadı. Sağ tarafta kalan iki tane elemanın hepsini buraya direkt olarak kopyalayabilirim.
+
+220
+00:34:05,791 --> 00:34:09,791
+Ne oldu? Ben...
+
+221
+00:34:10,675 --> 00:34:18,675
+Auxiliary dizisini aslında bu divide etme ve concur etme işlemleri için kullandım.
+
+222
+00:34:18,675 --> 00:34:28,675
+Ve orijinal A dizisi üzerinde de elemanları tek tek yerlerine yazarak buradaki sıralanmış A'dan Z'ye doğru sıralanmış çıktığı oluşturdum.
+
+223
+00:34:31,123 --> 00:34:54,283
+Akışını gösterdim ama psodokod halinde daha çok görürsünüz. Aldığım kaynakta 0'a n-1 kitaptan aldım bunu. Değiştirmek istemedim o yüzden. Normalde biz biliyorsunuz ki algoritmalarda hep 1'e n şeklinde yazarız. Ama kitap bu şekilde verdiği için C implementasyonu olduğundan dolayı bu şekilde vermiş. Ben de onu ellemedim.
+
+224
+00:34:54,612 --> 00:35:15,231
+Şimdi bakın, aslında burası ne? Base Case. Base Case de ne yapıyor? Önce bu kopyalama işlemini gerçekleştiriyor. Ben bunu verdiğim akışta Merge'nin içinde gerçekleştirmiştim. Dışarıda da yapabilirsiniz, hiç sıkıntı değil. Sonuçta aynı toplam yer ihtiyacına ihtiyaç duyacaksınız. Sonra bakın.
+
+225
+00:35:15,695 --> 00:35:18,695
+sol parçayı Mergesort ile kendisi çağıracak.
+
+226
+00:35:18,695 --> 00:35:22,695
+Sol sol sollar bittikten sonra sağ parçaları çağırmaya başlayacak.
+
+227
+00:35:22,695 --> 00:35:26,695
+Ve en son olarak da buradaki dizileri birleştirecek.
+
+228
+00:35:26,695 --> 00:35:27,695
+Nereye birleştirecek?
+
+229
+00:35:27,695 --> 00:35:30,539
+Orjinal A dizisine birleştirecek.
+
+230
+00:35:32,052 --> 00:35:50,912
+En önemlisi tabi ki birleştirme algoritması. Yani merge sortun kalbi divide tarafında değil. Divide tarafını gördüğünüz sadece rekürsif olarak kendi kendini çağırıyor. Ama conql tarafında hiçbir şey yapmıyoruz. Sadece tek elemanlı dizilerimiz kaldığı için zaten sıralandılar diyoruz.
+
+231
+00:36:00,052 --> 00:36:24,052
+Şimdi yine her zamanda yapmamız lazım. Bakalım yine her zamanda oluyor mu? 3 tane şeyim var. Bu çıktığı için, pardon bu iki parça için, bu da çıktığı için takip ettiğim indisler, iteratörlerim. Sol parçanın boyutu ve sağ parçanın boyutu iteratörler küçük olduğu sürece, yani hala sıralanması gereken eleman olduğu sürece dönüyor. Ne yapıyorum? Bakıyorum. Önce...
+
+232
+00:36:25,012 --> 00:36:47,512
+eleman iki parçayı iki parçadaki birinci elemanları daha doğrusu i'inci ve j'inci elemanları karşılaştırıyorum. Şuradaki şey gelirsem örnekleri hani ne diyordum? Şurada bir mi küçük, iki mi küçük, bir küçük o zaman biri yazıyorum diyordum ya. O olay burada.
+
+233
+00:36:49,811 --> 00:36:57,311
+Eğer işte sol taraftaki küçükse, çıktıya soldaki değeri yazıyorum, sol iteratörü bir arttırıyorum, iyiyi.
+
+234
+00:36:57,811 --> 00:37:01,791
+Değilse o zaman sağdaki eleman daha küçük demektir, alt parçadaki.
+
+235
+00:37:02,331 --> 00:37:13,491
+Onu çıktıya yazıyorum ve onun iteratörünü bir arttırıyorum ve sonuç dizisindeki k'yı bir arttırıyorum ki bir sonraki elemana geçebileyim.
+
+236
+00:37:15,039 --> 00:37:30,400
+Gördüğünüz gibi ben burada toplamda sol tarafta ne kadar eleman var? Diyelim ki 1'den n bölü 2 eksi 1'e kadar eleman var. Burada da n bölü 2'den n'e kadar eleman var. Tamam mı?
+
+237
+00:37:30,400 --> 00:37:39,619
+Burada toplamda kaç tane atama işlemi gerçekleştiriyorum? Maksimum maksimum n tane değil mi?
+
+238
+00:37:42,224 --> 00:38:03,463
+Tam olarak şöyle bir şey olsun. 1, deminki örnek 3, 2, 4 olsun. Ben bunu ne yapıyorum? 1 mi 2 mi? 1. Bunu kaydırdım. İteratör buradaydı, buraya geldi. Bu hala burada. 3 mü 2 mi? 2. İteratör buraya geldi. 3 mü 4 mü? 3. Bu bitti.
+
+239
+00:38:04,052 --> 00:38:10,052
+Tamam. Burada gördüğünüz gibi sadece 3 tane atama işlemi gerçekleştirdim bu döngüde.
+
+240
+00:38:10,052 --> 00:38:19,052
+Sonrasında bir kontrol yapıyorum. Acaba burası sol parça sona geldi mi? Evet geldi. O zaman ne yapacağım?
+
+241
+00:38:19,052 --> 00:38:23,852
+Sağdaki parçayı olduğu gibi çık diye kopyalayabilirim. Dört buraya gel.
+
+242
+00:38:24,403 --> 00:38:38,784
+Tek eleman var ama hani böyle artık ilerleyen vakitlere geldiğimizde 8 elemanlı, 16 elemanlı, 32, 64 elemanlı alt diziler olduğunda kopyalama direkt hiçbir işlem yapmadan çık diye yazacak.
+
+243
+00:38:39,503 --> 00:38:45,403
+Eninde sonunda buradaki kalan elemanları kopyalamak da sadece kalan eleman sayısıyla alakalı.
+
+244
+00:38:51,539 --> 00:39:00,500
+n bölü iki elemanlı diyelim hani şu anda diziyi merge etme işlemi lineer zamanda yapılabilir, gerçekleştirilebilir.
+
+245
+00:39:01,019 --> 00:39:09,319
+O yüzden ben buna merge'ün karmaşıklığıyla şuradan gördüğümüz yapı nedeniyle eta n diyebilirim.
+
+246
+00:39:09,399 --> 00:39:14,840
+Çünkü hiçbir koşulda eleman sayısından daha fazla karşılaştırma ve atama yapamam.
+
+247
+00:39:15,899 --> 00:39:17,699
+Algoritma bu şekilde çalışıyor.
+
+248
+00:39:25,748 --> 00:39:47,327
+Şimdi bir de hani şeyle beraber görelim. Orijinal dizimiz burada. İşte orijinal A dizisi. Yaptığımız şey şu, ilk olarak bunu ikiye bölmek. 8, 3, 2, 9, 7, 1, 5, 4. Ama önce burası çalışacak, sonra burası, sonra burası. Çünkü hani Mertzort'ta önce low, zammide kadar diye çağırıyorduk ya.
+
+249
+00:39:48,052 --> 00:40:03,932
+Böyle, böyle. Bunlar bitti. Sonra 8, 3, 2, 9'a gelecek. Bu noktada artık buraya gelip 7, 1, 5, 4, 7, 1 ve 5, 4 olarak bölecek. Şu noktada da artık benim ne oldu? Divide işlemim bitti.
+
+250
+00:40:04,467 --> 00:40:28,987
+Ve aslında konkür işlemim de bitti. Çünkü bunlar zaten kendi içinde sıralı hepsi. 8 sıralı, 3 sıralı, 2 sıralı gibi. Sonra bunları bir araya getireceğim. 8 mi 3 mi? 3. Kalanı, sol tarafta kalanı olduğu gibi yaz. 2 mi 9 mu? 2. Sağ tarafta kalanları olduğu gibi yaz. 7 mi 1 mi? 1. Sol tarafta kalanları olduğu gibi çık diye yaz.
+
+251
+00:40:29,811 --> 00:40:34,052
+5 mi 4 mi 4? Sol tarafta kalanları olduğu gibi çık diye yaz.
+
+252
+00:40:35,072 --> 00:40:36,891
+Sonrasında da 3 mi 2 mi? 2.
+
+253
+00:40:37,692 --> 00:40:39,192
+3 mi 9 mu? 3.
+
+254
+00:40:39,871 --> 00:40:41,192
+8 mi 9 mu? 8.
+
+255
+00:40:41,751 --> 00:40:43,472
+Kalanları sağdaki hepsini yaz.
+
+256
+00:40:44,152 --> 00:40:45,771
+1 mi 4 mü? 1.
+
+257
+00:40:46,431 --> 00:40:48,132
+7 mi 4 mü? 4.
+
+258
+00:40:48,811 --> 00:40:50,492
+7 mi 5 mi? 5.
+
+259
+00:40:51,032 --> 00:40:52,972
+Solda kalanların hepsini buraya yaz.
+
+260
+00:40:55,092 --> 00:41:08,771
+Aşağıya geldiğimizde de işte 2 mi 1 mi? 1. O zaman iterator şuraya geldi. Şu hala burada. 2 mi 4 mü? 2. 3 mü 4 mü? 3.
+
+261
+00:41:11,092 --> 00:41:39,032
+Ondan sonra 8 mi 4 mi 4, 8 mi 5 mi 5, 8 mi 7 mi 7, şöyle kaydımı unuttuk. Sonra 7 kopyalandı. Bitti burası gördüğünüz gibi. O zaman kalan elemanların hepsini 8 ve 9'u buraya çık diye kopyalayabilirim. Bu kopyalama işlemini yapmak için şöyle bir trik yapabilirsiniz. İşte bu alt dizi oluşturuyorsunuz.
+
+262
+00:41:39,092 --> 00:41:45,251
+kopyalıyorsunuz ya, orada sonlarına birer sonsuz max int gibi bir şey koyabilirsiniz.
+
+263
+00:41:45,952 --> 00:41:52,132
+Diğer zaten karşılaştırırken her şey max intten küçük olacağı için hepsini zaten direkt sol taraftan alacaktır.
+
+264
+00:41:52,692 --> 00:42:05,572
+Şuradaki pseudokodda bu kontrolü şuradaki dizilerin sonlarına birer sonsuz eleman koyarak da farklı bir şekilde gerçekleştirebilirsiniz.
+
+265
+00:42:18,420 --> 00:42:19,276
+Evet.
+
+266
+00:42:22,900 --> 00:42:28,380
+Yani pekişti ama hadi hazır slide'larda da var. Hızlıca üstünden yine geçelim. Başka bir örnek.
+
+267
+00:42:30,000 --> 00:42:39,980
+Mergesort example şeklinde bir dizimiz olsun. 16 elemanlı. Şuradan böleceğiz. Değil mi? Ondan sonra bunları nasıl böleceğiz?
+
+268
+00:42:40,820 --> 00:42:45,440
+E, M. İşte zaten tek elemanlı. M, E, R, G, S, O, R kadar gidecek.
+
+269
+00:42:45,907 --> 00:42:51,768
+Concure işleminde. Sonra combine edeceğiz. Nasıl combine ediyoruz? Önce burayı combine ediyoruz. E ve M.
+
+270
+00:42:53,527 --> 00:43:10,307
+Birliler bu şekilde birleşti. Sonra burası R ve G var. G, R şeklinde birleşti. Şimdi hep sol, low, mid, high şeklinde gittiğimiz için bu dörtlüğü birleştiriyoruz. E, G, M, R.
+
+271
+00:43:12,387 --> 00:43:13,027
+Sonra
+
+272
+00:43:13,679 --> 00:43:23,819
+Sol tarafta artık yapacak bir şey kalmadığı için solun sağına geçiyoruz. Solun sağının soluna gidiyoruz ve E, S, şu iki E'yi ve S'yi birleştiriyoruz.
+
+273
+00:43:24,739 --> 00:43:33,980
+Sonrasında burada birleştirecek bir şey kalmadığı için solun sağının sağına gidiyoruz. O ve R'yi birleştiriyoruz.
+
+274
+00:43:35,199 --> 00:43:39,980
+Bunlar da birleşti. Şimdi artık burada sağ kalmadığı için şu tarafta.
+
+275
+00:43:40,724 --> 00:43:46,704
+Solun, buradaki solun, sağının tamamını birleştiriyoruz.
+
+276
+00:43:47,184 --> 00:43:49,584
+E, S, O, R de E, O, R, S şeklinde birleşiyor.
+
+277
+00:43:50,644 --> 00:43:54,784
+Burası da bir şey kalmadığı için artık sol olduğu gibi birleşiyor.
+
+278
+00:43:57,384 --> 00:44:00,624
+E, E, G, M, O, R, R, S şeklinde birleşti.
+
+279
+00:44:01,624 --> 00:44:02,104
+Bu burada.
+
+280
+00:44:03,023 --> 00:44:03,344
+Sonra
+
+281
+00:44:04,032 --> 00:44:16,271
+Artık sağa geçiyoruz. Sağı da yine şuradan 4 ortadan bölüyoruz. Sonra bunun soluna gidiyoruz, bölüyoruz. Sonra bunu bölüyoruz, bunu bölüyoruz.
+
+282
+00:44:17,672 --> 00:44:28,552
+Birleştirirken de yine önce soldaki gibi birleştiriyoruz. Yani sağın solu şeklinde birleştirdik.
+
+283
+00:44:29,331 --> 00:44:37,431
+Sonra sağın solunun, soluydu bu, sağın solunun sağı şeklinde birleştiriyoruz.
+
+284
+00:44:38,431 --> 00:44:42,151
+Sonra burada da bir şey kalmadığı için sağ tarafında bu dörtlü birleşiyor.
+
+285
+00:44:43,991 --> 00:44:46,111
+Ve combine ettik.
+
+286
+00:44:46,891 --> 00:44:51,791
+Sağın solu tamamen bittiği için sağın sağına geçiyoruz.
+
+287
+00:44:52,451 --> 00:44:54,431
+Sağın sağının solu.
+
+288
+00:44:54,900 --> 00:45:11,119
+Şurası birleşiyor. Sonra burası bittiği için sağın, sağının sağına gidiyoruz. Bu da bitti. Sağda başka bir şey yok. Sağın, sağını birleştiriyoruz. Sonra da porzinal providomuz sağını birleştiriyoruz.
+
+289
+00:45:13,119 --> 00:45:21,259
+8 elemanı da burada. Son adımda da solu ve sağı birleştiriyoruz. 8 elemanla 2 tane diziyi birleştiriyoruz.
+
+290
+00:45:22,675 --> 00:45:47,895
+A mı, E mi? A. E mi, E mi, E mi, E mi, E mi gidiyor. Sonra şuradan G, L, E, O, P, R, R, S. Burada bir şey kalmadığı için işte T ve X de buraya geliyor. Yani Merge Sort Example güzel bir şeydi de tabii çıktısı çok hoş olmadı. Bu şekilde de.
+
+291
+00:45:52,083 --> 00:46:00,483
+Sadece sayılarla değil, harflerle de, karakter sembollerle de bu işlemleri gerçekleştirebilirsiniz.
+
+292
+00:46:01,623 --> 00:46:05,083
+Bu harfleri kullanmak bir açıdan şunun için de tercih ettim.
+
+293
+00:46:05,244 --> 00:46:13,724
+Yani sayıdan çok hangi sırada soldaki mi geliyor, sağdaki mi geliyor, aşağıda sıralanırken önce hangisi kullanılıyor.
+
+294
+00:46:13,724 --> 00:46:20,083
+Bunları göstermek için aslında hani soldaki E geliyor, soldaki E geliyor diye göstermek için.
+
+295
+00:46:20,083 --> 00:46:22,643
+Keremik amacıyla harfler üzerinden devam ettim.
+
+296
+00:46:40,436 --> 00:46:48,516
+Biraz önce yaptığım recursion gösterisi şuradakileri ve bu slide'daki parçalama birleştirmeleri.
+
+297
+00:46:49,675 --> 00:46:54,376
+Algoritma nasıl çağırıyor? Yine elinizde olması incelemeniz açısından burada veriyorum.
+
+298
+00:46:54,496 --> 00:46:58,135
+Hepsinin üstünden geçmeyeceğim ama nasıl ilerlediğine bakın.
+
+299
+00:46:58,256 --> 00:47:00,836
+İlk yaptığımız çağrı neydi? Initial Call.
+
+300
+00:47:01,396 --> 00:47:28,196
+1'den n'ydi. Yani 16 elemanlı. 0, 15 diye çağırdım. Bunu çağırmam demek, sol tarafı çağırmam demek. 0, 7. Sonrasında 4'e 7'yi de çağıracağım. Ama bu ta burada bakın. Gördüğünüz gibi. Hatta şurada 0, 7 sonra 8, 15'i çağıracağım. 0, 7'nin içinde yine sola gidiyorum. 0, 3'ü çağırıyorum. Bunun içinde tekrar sola gidiyorum. 0, 1'i çağırıyorum.
+
+301
+00:47:28,788 --> 00:47:35,928
+Artık çağıracak bir şey kalmadığı için önce solun solunu merge ediyor.
+
+302
+00:47:37,492 --> 00:47:45,792
+Bu bitti. Şimdi artık solun solunun sağı şeklinde gitmem lazım. O yüzden de merge sort 2-3'ü çağırıyorum.
+
+303
+00:47:46,452 --> 00:47:49,652
+Burada da artık yapacak bir şey kalmadığı için bunu da merge'lüyorum.
+
+304
+00:47:50,252 --> 00:47:57,432
+Şu noktada elimde iki tane iki elemanlı birleşmiş dizi var. Yani solun solunun solu, solun solunun sağı.
+
+305
+00:47:58,252 --> 00:47:59,592
+Sonra da bunları merge ediyorum.
+
+306
+00:48:00,628 --> 00:48:05,268
+Bu noktada da artık elimde işte 4 elemanlı dizi oluşmuş oldu.
+
+307
+00:48:06,307 --> 00:48:07,588
+Şimdi solun solu burası.
+
+308
+00:48:08,628 --> 00:48:12,048
+Peki bu bittikten sonra merge sortu sağ taraf için çağırıyorum.
+
+309
+00:48:12,048 --> 00:48:14,028
+Yani midden aya kadar.
+
+310
+00:48:14,668 --> 00:48:16,947
+O zaman da solun sağını işliyorum.
+
+311
+00:48:17,168 --> 00:48:20,088
+Yine solun sağının solu şeklinde gidiyor.
+
+312
+00:48:20,768 --> 00:48:21,508
+Bunu merge'lüyor.
+
+313
+00:48:22,608 --> 00:48:24,788
+Solun sağının sağı yapılıyor.
+
+314
+00:48:25,008 --> 00:48:25,588
+Merge'leniyor.
+
+315
+00:48:26,407 --> 00:48:27,947
+Solun sağı merge'leniyor.
+
+316
+00:48:28,500 --> 00:48:52,820
+Ve sol olduğu gibi merge deniyor. Yani bu noktada da artık benim kaç tane elemanlı dizim var? 8 elemanlı bir alt dizim oluşmuş oldu. Sonra ana çağrı da 0, 7 bitti. 8, 15 çağrısı gitti. İşte bu şekilde devam ediyor, ediyor, ediyor. En son merge de burada. Bütün hepsi 8, 8, 16 eleman tekrar birleştiriliyor.
+
+317
+00:49:03,891 --> 00:49:04,523
+Aşkı.
+
+318
+00:49:05,492 --> 00:49:32,672
+Recursive dersimizde özellikle kendi kendine iki çağrı yaptığında biraz kafamız karışmıştı ya. O yüzden özellikle bu çağrıların nasıl sıralandığını buraya yazdım. Sonrasında dersi tekrar izleyip notlarınızı alırken akışa bakıp buradaki çağrı sırasında inceleyerek bu özgünelimeli çağrılar kendi kendine nasıl takip ediyor. Onun için buradaki analizi ve track işlemini sizinle paylaşmak istedim.
+
+319
+00:49:34,132 --> 00:50:00,152
+Mergesort'un karmaşıklığına bakalım. Çok hızlı bir şekilde en başta enlogen diyorum. Büyük o enlogen. Neden? Bakalım. Şimdi benim ilk dizim n elemanlı. Mesela 16 elemanlı bir dizim var. Ben bunu 8-8 diye 2'ye bölüyorum. Sonra 4-4 diye 4'e bölüyorum. Sonra 2-2 diye bölüyorum. Sonra 1-1-1-1-1 16 taneye bölüyorum. Değil mi?
+
+320
+00:50:00,851 --> 00:50:26,132
+Burada kaç tane seviye var? 1, 2, 3, 4 diye gidiyor. Kaç tane adım var? Aslında ikiye bölerek gittiğim için buradaki ağacın yüksekliği nedir diye sormaya çalışıyorum. Log n tane adım var. Neden? Ağacın yüksekliği log n. Peki bu seviyede kaç tane eleman var? N tane eleman var. Değil mi? Aslında çok basit bir şekilde.
+
+321
+00:50:28,192 --> 00:50:36,192
+O1 çözüyorum. Topladığımda O n yapıyor ve ben bunu log n kere yapıyorum. O yüzden de n log n oluyor diyebilirim.
+
+322
+00:50:36,491 --> 00:50:48,271
+Ama istersek şöyle görelim. İşte k nedir? Birden n'e ya da sıfırdan n-1'e. Herhangi bir seviyeyi aldığınızda o seviyede 2 üzeri k tane alt diziniz oluyor.
+
+323
+00:50:48,751 --> 00:50:55,731
+Mesela bu seviyede 2 üzeri 1, bu seviyede 2 üzeri 2, bu seviyede 2 üzeri 3. Değil mi?
+
+324
+00:50:56,179 --> 00:51:05,480
+Öyle gidiyor. Ama her bir dizinin de uzunluğu azalıyor. Ne oluyor? 2 üzeri n-k'ya düşüyor. Bu ne demektir? Her seviyede 2 üzeri n-k karşılaştırma yapıyorsunuz.
+
+325
+00:51:06,400 --> 00:51:12,099
+2 üzeri k tane 2 üzeri n-k karşılaştırma ne demektir? 2 üzeri n tane işlem demektir.
+
+326
+00:51:12,679 --> 00:51:16,519
+Benim nihayetimde n tane en son seviyede işlemin var. O birlik.
+
+327
+00:51:16,947 --> 00:51:21,947
+O zaman da ben bunu n çarpı 2 üzeri n işlem olarak görebilirim.
+
+328
+00:51:21,947 --> 00:51:36,947
+Bunun analizini yaptığımızda da dediğim gibi aslında en basiti n seviye, pardon, log n seviye, n genişlik olması sebebiyle toplamda n log n, n kötü durum karmaşıklığı vardır diyoruz.
+
+329
+00:51:37,715 --> 00:51:45,715
+Aslına bakarsanız, yani tam analizini yapsanız da şunu göreceksiniz. Toplamda 6 n nogen dizi yarışımı yapılıyor.
+
+330
+00:51:45,715 --> 00:51:52,971
+Her merge işleminde, algoritma da zaten açıp, 2 n tane kopyalama yapılıyor. Tabi seviyeye göre k.
+
+331
+00:51:53,715 --> 00:52:07,635
+2n tane geri taşıma yapılıyor, 2n tane de karşılaştırma yapılıyor. Bu yüzden 6n dizi erişimi var ve logens kere yaptığımız için bunu 6nlogen kerede dizi erişimi yapmak zorundayız.
+
+332
+00:52:07,736 --> 00:52:15,416
+Tabi büyük o notasyonda bunun bir önemi olmadığı için ben bunun enlogen mertebesinde bir seviyede olduğunu da söyleyebilirim.
+
+333
+00:52:15,416 --> 00:52:16,576
+Peki.
+
+334
+00:52:18,164 --> 00:52:25,164
+Şimdi peki aynı kalmışlık analizini dersin başında bahsettiğim cinsten yazabilir miyiz? Tabii ki yazabiliriz.
+
+335
+00:52:26,344 --> 00:52:37,624
+Şimdi önce bölüyoruz. Bölerken ne yapıyoruz? Sadece orta değeri hesaplayıp kendimizi çağırıyoruz. Recursi değil mi? Bir şey yaptığımız yok.
+
+336
+00:52:38,463 --> 00:52:45,423
+n'e bağlı hiçbir iş yapmıyoruz. Sadece orta hesabı yapıyoruz. O yüzden dn'in teta 1 olduğunu söyleyebiliriz. Sabitse.
+
+337
+00:52:46,739 --> 00:52:52,199
+Peki, yönetmek için ne yapıyoruz? Aslında bunu bölmek olarak desek daha doğru olabilir yine.
+
+338
+00:52:52,719 --> 00:53:04,259
+Rekürsif olarak iki alt diziyi sıralıyoruz. Bu ne demektir? İşte C n, iki tane alt dizimiz var. Her biri n bölü 2 uzunlukta. O yüzden iki tane t n bölü 2 ihtiyacım var.
+
+339
+00:53:04,739 --> 00:53:05,940
+Gelelim kombine'a.
+
+340
+00:53:06,931 --> 00:53:20,331
+Şimdi benim n bölü iki elemanlı alt dizilerim var ve ben bunları biraz önce göstermiştim Wilder Üniversitesi'nde toplamda en fazla n adımda karşılaştırma yaparak birleştirebiliyorum.
+
+341
+00:53:27,284 --> 00:53:45,784
+karmaşıklığını ttn diyebilirim. O zaman t nasıl yazarım? Küçük boyutlar için sabittir, göz ardı edilebilir derim. Ama diğer durumlarda ne yapacağız? Şuradan yazmamışız. Buraya yazalım. İki tane tn bölü 2
+
+342
+00:53:48,124 --> 00:53:50,124
+Evet artı
+
+343
+00:53:50,824 --> 00:53:51,824
+tt1
+
+344
+00:53:52,052 --> 00:53:57,972
+C yazayım ona, sabit, artı ttn. Bunun için ttn de yazabilirsiniz ama n yazayım.
+
+345
+00:53:59,112 --> 00:54:10,192
+Bunu çözdüğümüzde iki tane tn bölü 2 artı n, geçen hafta bunu, iki hafta önce bunu birazcık konuşmuştuk hatırlarsanız, bunun ttn bölüken olduğunu görürsünüz.
+
+346
+00:54:17,619 --> 00:54:28,440
+ve ortalama durum için, hepsi için zaman ihtiyacı TN mertebesindedir. Merge sort algoritması için.
+
+347
+00:54:29,819 --> 00:54:41,940
+Bunu da belirtmiş olayım. Evet, yani biraz önce şöyle bir önceki analize baktığımızda
+
+348
+00:54:42,032 --> 00:54:43,472
+Kürsif çağrının
+
+349
+00:54:43,472 --> 00:54:45,352
+yaptığımız işlemlere bakarak
+
+350
+00:54:45,352 --> 00:54:47,452
+en üst
+
+351
+00:54:47,452 --> 00:54:49,072
+limitinin büyük o
+
+352
+00:54:49,072 --> 00:54:50,972
+mutasyonunda yani
+
+353
+00:54:50,972 --> 00:54:52,912
+enogen olduğunu söylemiştik.
+
+354
+00:54:53,392 --> 00:54:54,771
+Bunu daha detaylı
+
+355
+00:54:54,771 --> 00:54:56,152
+deniciler
+
+356
+00:54:56,152 --> 00:54:58,072
+de
+
+357
+00:54:58,072 --> 00:55:01,412
+tn bölü 2 artı n artı
+
+358
+00:55:01,412 --> 00:55:01,771
+c olur.
+
+359
+00:55:02,771 --> 00:55:03,771
+Söyleyebiliriz.
+
+360
+00:55:04,592 --> 00:55:06,292
+Yani büyük o enogen de
+
+361
+00:55:06,292 --> 00:55:07,312
+aynı zamanda
+
+362
+00:55:08,371 --> 00:55:11,851
+O durum için aynı şey geçerli. Hepsi için doğru.
+
+363
+00:55:15,211 --> 00:55:20,371
+Yani dizi sıralı da gelse, karışık da gelse...
+
+364
+00:55:21,076 --> 00:55:39,115
+Ters sıralı da gelse hiçbir şey fark yok. Bakışta hissetmişsinizdir. Çünkü zaten bölmek demek. Birer eleman kalana kadar bu diziyi azaltmak, yani alt problemlere bölmek demek. Sonrasında da ne yapıyoruz? Bunları birleştiriyoruz lineer zamanda.
+
+365
+00:55:39,115 --> 00:55:45,115
+Bu yüzden de iyi durum, kötü durum ya da ortalama durum analizlerinde.
+
+366
+00:55:46,771 --> 00:55:49,451
+ihtiyacı açısından herhangi bir farklılık oluşmuyor.
+
+367
+00:55:59,251 --> 00:56:00,012
+şimdi
+
+368
+00:56:06,612 --> 00:56:10,392
+Bu şekli de Sedgyevik'in kitabından paylaşıyorum.
+
+369
+00:56:14,260 --> 00:56:24,280
+Ne kadar bahsettiğim, Mertzort, TAP, TAP dizinin kendisi. Ondan sonra bunu rekürsif olarak böyle böyle gidiyoruz.
+
+370
+00:56:25,280 --> 00:56:33,460
+Yani, dizimiz şöyle karışık haldeyken, ilk önce ne demiştim? Solun, solunun, solunu yapıyor demiştim.
+
+371
+00:56:34,059 --> 00:56:39,099
+Bu dizi sıralanıyor. Bunların nümerik değerleri olduğunu düşünün. Bakın küçükten büyüğe doğru sıralanmış.
+
+372
+00:56:40,980 --> 00:57:03,340
+Solun solunun sağını sıralıyor. Şurayı. Bakın böyle karmaşıktı. Bu hale geldi. Sonra solun solunu şu iki parçayı birleştirerek sıralım. Orası da bu. Yani şu aşamada durduğunuzda diziyi böyle görebilirsiniz. Orijinal dizinin bu değerlerden oluştuğunu yazdırabilirsiniz.
+
+373
+00:57:04,916 --> 00:57:14,356
+Artık solun solu bitti. Şimdi solun sağının soluna geçiyoruz. Şuradaki parçayı bu şekilde sıralıyoruz.
+
+374
+00:57:15,316 --> 00:57:23,496
+Gördüğünüz gibi değil mi? Şurada sıralanmış, şurada şöyle sıralanmış halde. Sağ tarafı için yapıyoruz. Şöyle oluyor. Şöyle bir gösterim oluyor.
+
+375
+00:57:24,416 --> 00:57:30,695
+Sonra bu ikisini sıraladığımızda da, bu önceden sıralanmıştı. Bu adımda buraları merge ettik. Dizi böyle.
+
+376
+00:57:31,507 --> 00:57:41,507
+Dırt dırt karışık. Sonrasında sol taraf. Orijinal dizinin solu sıralanıyor. Burada artık dizinin yarısını sıralamış durumdayım.
+
+377
+00:57:41,507 --> 00:57:52,507
+Dizinin yarısı sıralı, yarısı karmaşık durumda. Sonra sağın solunun soluna geçiyorum. Sağın solunun soluna geçiyorum.
+
+378
+00:57:52,507 --> 00:57:56,507
+Şuradan şöyle şöyle geldiğini görebilirsiniz.
+
+379
+00:57:56,916 --> 00:58:22,516
+Bu ikisini merge ediyorum. Sağın, solu merge edildi. Sonra sağın, sağının, solu bu hale geliyor. Sağın, sağının, sağı bu hale geliyor. Şu ikisi yine birleşiyor. Şu aşamaya geldiğimizde burayı merge ediyoruz. Son ölçü çaresini yapmadan önce kendi içinde sıralı iki tane alt dizimiz var.
+
+380
+00:58:24,179 --> 00:58:37,740
+Bu şekilde. En son olarak da, en aşağıda gördüğünüz, tamamı sıralanmış dizi, böyle çubuk halinde, elemanların değerlerine göre görselleştirilebilir.
+
+381
+00:58:38,220 --> 00:58:45,539
+Yani bir simülasyon olsa, merge sort, yukarıdan aşağıda top down çalışan merge sort, diziyi bu şekilde tırt tırt tırt diye sıralıyor.
+
+382
+00:58:46,539 --> 00:58:47,260
+Peki.
+
+383
+00:58:54,003 --> 00:59:09,383
+Bunu standartı gelen klasik Mergesort algoritması bu. Peki başka türlü top down'ı varsa acaba tersten de yapabilir miyiz? Bottom up Mergesort şeklinde de çalışabilir miyiz? Evet çalışabiliriz.
+
+384
+00:59:13,364 --> 00:59:15,764
+Burada ne yapacağız? Tersten ilerleyeceğiz.
+
+385
+00:59:17,403 --> 00:59:22,164
+Önce, sanki hani orijinal dizimiz zaten bölünmüş gibi ele alarak.
+
+386
+00:59:24,044 --> 00:59:26,324
+Önce dizileri, yani şöyle, şurayı çizelim.
+
+387
+00:59:30,099 --> 00:59:44,899
+Basit olsun. Şöyle 4 elemanlı olduğunu düşünelim dizinin. Şöyle çizeyim. Aslında önce 1-1 birleştirecek. Ondan sonra da 2-2 birleştirecek.
+
+388
+00:59:44,899 --> 00:59:51,759
+Şu şekilde. Yani en son birleştirmesi n bölü 2-n bölü 2 olacak şekilde de yapılabilir.
+
+389
+00:59:52,959 --> 00:59:55,959
+Bottom up şeklinde gerçekleştirdiğinizde de
+
+390
+00:59:56,307 --> 01:00:01,307
+1 bölü 2 enlogen ile 6 enlogen arasında karşılaştırma yaparsınız.
+
+391
+01:00:01,948 --> 01:00:04,408
+6 enlogen dizi erişimi gerçekleştirsiniz.
+
+392
+01:00:04,748 --> 01:00:11,868
+Yani top down arasında dişe dokunur herhangi bir avantaj yok zaman açısından.
+
+393
+01:00:12,724 --> 01:00:29,884
+algoritması da şurada gördüğümüz gibi. Bottom up, merge sort. Ne alacak? Low ve High almasına gerek yok. Çünkü zaten orijinal dizi burada gördüğünüz gibi. Ne yapacak? S. S'nin subarray size dediğimiz yani.
+
+394
+01:00:30,255 --> 01:00:46,455
+Alt dizinin boyutu. Nereye kadar gidecek? İşte 1'den n-1'e. Neden? Çünkü size artıyor. Bakın 1'er, 1'er, 2'şer, 4'er şeklinde artarak ilerliyor. Sonra da
+
+395
+01:00:46,643 --> 01:00:53,083
+İkinci içindeki for döngüsünde de tekrar birden n-s'ye kadar diyebiliriz.
+
+396
+01:00:53,123 --> 01:00:57,663
+Yine s artı s yani birer, ikişer, dörder, sekizer, onaltışer şeklinde ilerliyor.
+
+397
+01:00:58,363 --> 01:01:01,983
+Her seferinde yine merge'ü çağırıyorum gördüğünüz gibi.
+
+398
+01:01:02,243 --> 01:01:03,603
+Aynı merge algoritmasını.
+
+399
+01:01:04,123 --> 01:01:08,823
+Ama bu sefer low olarak i indisini veriyorum.
+
+400
+01:01:10,023 --> 01:01:13,343
+Mid olarak i artı s'i veriyorum.
+
+401
+01:01:14,643 --> 01:01:26,264
+Çünkü hani bir ise bir ile iki arasında ise işte tam şurası ya ya da iki ile dört arasında tam şurası ya. Bunu veriyorum ve sonrasında da
+
+402
+01:01:27,507 --> 01:01:33,867
+Şu değer ya da n-1 aslında n'e kadar da yazabilirdim. Burada akışı yine 0'dan n-1'e yazmışım.
+
+403
+01:01:34,607 --> 01:01:43,147
+O şekilde hangisi daha küçükse taşma olmasın diye şurada bir minimum değer yani şurada bir taşma olabilir tek sayı yüzünden.
+
+404
+01:01:43,647 --> 01:01:48,207
+Orada bir minimum kontrolüyle aslında sağ tarafı yine high değeri veriyorum.
+
+405
+01:01:48,707 --> 01:01:52,547
+Aynı ölç işlemine. Bu sefer nasıl çalışacak bu akış? Şöyle.
+
+406
+01:01:53,972 --> 01:02:15,532
+Orijinal dizimiz burada. S eşittir 1 için çalıştığında şöyle çalışacak. E ve M şunu bir merge edecek. Birileri yani birileri E ve M yaptı. 2 ile 3'ü 0'dan 15 olduğu için böyle diyorum. Yani 3. ve 4. elemanları merge edecek.
+
+407
+01:02:15,532 --> 01:02:18,012
+Burada.
+
+408
+01:02:19,476 --> 01:02:22,296
+Bu da döngünün adımları, içteki döngünün adımları.
+
+409
+01:02:23,956 --> 01:02:27,976
+E ve S, yani birliler birleşti, ikili oldu.
+
+410
+01:02:29,076 --> 01:02:31,756
+Birliler birleşti, ikili oldu. Böyle gidiyor.
+
+411
+01:02:32,396 --> 01:02:36,696
+Daha ki nereye kadar? En son L ve E birleşti.
+
+412
+01:02:37,236 --> 01:02:39,996
+E, L oldu. S'in 1 olduğu durum için.
+
+413
+01:02:40,403 --> 01:02:48,804
+Şimdi döngü 1 arttı. 1 artı 1'den S 2 oldu. Ne demektir? Bu ikilileri birleştirdi, dörtleri gerçekleştirdi demek ki.
+
+414
+01:02:48,804 --> 01:02:58,963
+Şu ikili, şu ikili birleşti, dörtlüyü oluşturdu. Bu ikili, bu ikili birleşti, buradaki dörtlüyü oluşturdu.
+
+415
+01:02:58,963 --> 01:03:07,923
+Bu ikili ile bu ikili birleşti, buradaki dörtlü oluştu. En son işte buradaki dörtlü oluştu.
+
+416
+01:03:07,987 --> 01:03:18,487
+Sonra, S artı S şeklinde gittiği için, yani işte iki iki daha dört oldu. Dörtlüleri birleştirip sekizli yaptı. Şuradakini ve şuradakini ölç yapmış olduk.
+
+417
+01:03:18,487 --> 01:03:21,327
+Sonra da burayı ölç ettik.
+
+418
+01:03:48,340 --> 01:03:54,160
+Şimdi ben tabi sınıfta yapamadığımız için normalde bir anket yapacaktık arkadaşlar.
+
+419
+01:03:54,960 --> 01:03:59,400
+Şey için yani müddet çalışmaları kapsamında ve kalite çalışmaları kapsamında.
+
+420
+01:04:00,059 --> 01:04:02,079
+Onun linkini benimle paylaşacaklar.
+
+421
+01:04:02,180 --> 01:04:04,059
+Şimdi biraz sonra bir ara vereceğiz zaten.
+
+422
+01:04:04,840 --> 01:04:08,440
+Aradan sonra ben size o anketi de paylaşırım.
+
+423
+01:04:09,220 --> 01:04:10,539
+Ve şey yaparız.
+
+424
+01:04:10,720 --> 01:04:13,039
+Onun hakkında yine detaylı bilgiyi verdim.
+
+425
+01:04:13,680 --> 01:04:15,920
+Sonra işte sağ taraftakini birleştirdik.
+
+426
+01:04:15,920 --> 01:04:16,180
+Sonra.
+
+427
+01:04:16,340 --> 01:04:18,180
+S artı S 4'ten 8 oldu.
+
+428
+01:04:18,380 --> 01:04:23,600
+İşte 8'leri birleştirdik ve buradaki 16'lı
+
+429
+01:04:25,012 --> 01:04:45,512
+şey gerçekleştirmiş olduk dizi son diziyi yani şurada gördüğümüz algoritma batım up şeklinde çalışarak sadece mörcü çağırarak da bu işi gerçekleştirebilir o nihayetinde dediğim gibi toplamda 224488 gittiğiniz için login tane
+
+430
+01:04:45,523 --> 01:05:03,344
+kere işlem yapmanız lazım. Merge işlemi de her seferinde K kadar diziyi birleştirdiği için K artı K yani toplam n'i geçemeyeceği için hiçbir şekilde yine nLog n mertebesinde bir karışıklıkla bottom up merge sort da yapabiliriz.
+
+431
+01:05:04,788 --> 01:05:12,788
+Bunun analizi için de yine paylaştım sizinle. İşte E, M çağrısı ilk sol taraf. Solun solunun solu diyebiliriz.
+
+432
+01:05:12,788 --> 01:05:21,788
+0 ile 1'i çağırdı. İşte 2 ile 3'ü çağırdı. 4 ile 5'i çağırdı. 6 ile 7'yi çağırdı. Daha doğrusu 0-0 bir midi unutmamamız lazım.
+
+433
+01:05:21,788 --> 01:05:29,612
+2-2-3-4-4-5-6-6-6-7-8-8-9 Şimdi bunlar hep S eşittir 1. Değil mi?
+
+434
+01:05:29,684 --> 01:05:33,864
+10, 10, 11, 12, 12, 13, 14, 14, 15.
+
+435
+01:05:34,023 --> 01:05:40,184
+Yani E, M, G, R, E, S, O, R, E, T, A, X, M, P, E, L çağrılarını yaptı.
+
+436
+01:05:43,923 --> 01:05:46,963
+S eşitleri 2 için ne yaptık?
+
+437
+01:05:47,063 --> 01:05:50,684
+0, 3 arasında midede 1 olarak çağırdık.
+
+438
+01:05:50,684 --> 01:05:55,923
+4, 5, 7, 8, 9, 11, 12, 13, 15.
+
+439
+01:05:56,500 --> 01:06:16,219
+EGMR, EORS, AETX, ELMP, charluları. S eşittir 4 içinde 0, 3, 7 burası. 8, 11, 15, şuradaki 4 charlısı. En son olarak da bütün diziyi 8, 8, 10.
+
+440
+01:06:16,463 --> 01:06:25,344
+16 oldukça birleştirmiş olduk. Buradaki rekürsif çağrılar için de özellikle buradaki analizi sizinle paylaştım.
+
+441
+01:06:26,023 --> 01:06:35,083
+Şimdi bunun görselleştirmesine bakalım. 1 için şöyle bakın. Şuradaki iki tanesi kendi içinde sıralı. Şuradaki iki tanesi kendi içinde sıralı.
+
+442
+01:06:35,663 --> 01:06:43,943
+Hep şöyle kısa uzun gördüğünüz gibi. Kısa uzun, kısa uzun, kısa uzun diye gidiyor. Ondan sonra dörtlüler.
+
+443
+01:06:44,851 --> 01:06:47,291
+2 olduğunda 2-2-4 birleştiriyorum.
+
+444
+01:06:48,891 --> 01:06:52,851
+Böyle zikzak haline gelmeye başladığını görüyorsunuz.
+
+445
+01:06:55,851 --> 01:06:58,111
+Şöyle dörtlü bloklar halinde grupling.
+
+446
+01:06:58,871 --> 01:07:00,511
+Hepsi için aynısı geçerli.
+
+447
+01:07:02,291 --> 01:07:03,211
+Sonrasında
+
+448
+01:07:03,211 --> 01:07:07,511
+sekizli bloklar oluşuyor.
+
+449
+01:07:08,851 --> 01:07:13,651
+Dizi bu şekilde, bu aşamada durup baksanız dizi bu şekilde sıralanmış oluyor.
+
+450
+01:07:13,731 --> 01:07:15,471
+Sonda ufak bir parça var gördüğünüz gibi.
+
+451
+01:07:16,851 --> 01:07:19,171
+İlla tam bölünmek zorunda değil tabii ki.
+
+452
+01:07:20,551 --> 01:07:22,651
+Sonrasında da işte 16 elemanlar.
+
+453
+01:07:24,511 --> 01:07:25,391
+32 eleman.
+
+454
+01:07:27,111 --> 01:07:28,531
+Böyle sıralandı.
+
+455
+01:07:29,151 --> 01:07:30,791
+Nihai dizi de bu şekilde oluştu.
+
+456
+01:07:33,131 --> 01:07:34,811
+Atmak çalışırsanız da.
+
+457
+01:07:35,764 --> 01:07:40,384
+Merge Sort'ta dizinin adım adım bu şekilde sıralandığını görebilirsiniz.
+
+458
+01:07:43,364 --> 01:07:49,420
+Öl ve yönet konusu çok farklı problemlerde, çok farklı...
+
+459
+01:07:49,652 --> 01:07:56,891
+problemleri çözmek için kullanılabilir. Bunu çözmeyeceğim ama incelemeniz için zaten internette bir sürü kaynakta da var.
+
+460
+01:07:56,891 --> 01:08:06,172
+Nasıl bir yön olduğundan biraz hızlıca bahsedeceğim. Elimizde 2 üzeri n'e 2 üzeri n'lik bir kare pano var.
+
+461
+01:08:06,172 --> 01:08:13,371
+Ve bu şurada gördüğünüz gibi aşağıda. Bunun sadece bir tane gözü dolu. Herhangi bir tane gözü dolu.
+
+462
+01:08:13,619 --> 01:08:31,840
+Elimizde de şöyle yeşille gösterdiğim 3 tane birebirlik L şeklinde yani 2'ye 2 oluyor da L şeklinde böyle karolarımız var. Bunları istediğiniz gibi döndürebilirsiniz. Hani yatay, dikey, çapraz fark etmiyor. L istediği gibi dönebiliyor. Tetris'teki gibi.
+
+463
+01:08:32,948 --> 01:08:57,648
+Bütün panoyu karolarla kaplayarak döşememiz isteniyor. Buna Tromino puzzle adı veriliyor. Çözmenin yolu çok kolay. Alan şöyle verirsin. Tamam mı? Mesela burada n eşittir 3 için 2 üzeri n nedir? 8 değil mi? 8'e 8'lik bir panomuz var ve şuradaki alan uyanmış olsun. Yapmamız gereken şey aslında şu. Rekürsif olarak.
+
+464
+01:08:58,963 --> 01:09:01,523
+Alanı ortadan ikiye bölmek.
+
+465
+01:09:03,324 --> 01:09:05,283
+Ben çizmeye çalıştım.
+
+466
+01:09:05,804 --> 01:09:14,644
+Ondan sonra alanın ortasına, işte burası dolu ya, orayı boş bırakacak şekilde şuradaki karoyu yerleştirmek.
+
+467
+01:09:14,844 --> 01:09:19,104
+Şurası boş. Neden? Bu parçada dolu bir tane eleman var.
+
+468
+01:09:19,783 --> 01:09:21,423
+Onu rekürsif olarak burayı bölmek.
+
+469
+01:09:25,171 --> 01:09:29,771
+ve bunun ortasına şöyle yerleştirmek gördüğünüz gibi.
+
+470
+01:09:30,811 --> 01:09:34,652
+Sonra bunu bütün hepsi için devam ettirdiğimizde
+
+471
+01:09:34,652 --> 01:09:37,211
+buradaki yapı oluşuyor.
+
+472
+01:09:37,211 --> 01:09:42,332
+Böyle devam ede eder. Rekürsif olarak döldük. Burası dolu, şuraya yerleştirdik.
+
+473
+01:09:42,332 --> 01:09:47,691
+Burası dolu, buraya yerleştirdik. Burası dolu, buraya yerleştirdik. Burası dolu, buraya yerleştirdik. Burası dolu, buraya yerleştirdik.
+
+474
+01:09:47,691 --> 01:09:52,311
+Şu alan, ondan sonra burasını boş bırakıp bunu yerleştirdik. Şunu
+
+475
+01:09:52,787 --> 01:09:58,807
+İşte şunu, burası dolu şunu, burası dolu bunu yerleştirdik diye diye gidiyor.
+
+476
+01:09:58,807 --> 01:10:12,587
+Yani alanı rekürsif olarak bölerek ve her seferinde o siyah tarafın boş kalmasını sağlayacak şekilde şeyi döndürerek bütün her yeri karolarla doldurma çözümünü gerçekleştirebilirsiniz.
+
+477
+01:10:13,627 --> 01:10:15,247
+Zevkli bir problemdir.
+
+478
+01:10:15,636 --> 01:10:40,716
+Şimdi bir ara verelim. Saat kaç? Saat 10 çeyrek geçiyor. Bir ne kadar ara verelim? 10 dakika ara verelim. 25 geçe. Tekrar devam edeceğim. Dediğim gibi anket.
+
+479
+01:10:42,260 --> 01:10:55,420
+yapmamız gerekecek. Anketle alakalı da ben size dinleyeceğim. Aradan yapmamız gerektiğini de zaman vereceğim. Bu şekilde anketi de gerçekleştireceğiz. 25.00 geçe görüşürüz.
+
+480
+01:21:34,996 --> 01:21:57,876
+Evet arkadaşlar saat 10.25. Şimdi sohbetten sizinle bir link paylaştım. Bu link ki 5 dakika sürecek çok kısa bir anket. Hemen onu da yapmanızı istiyorum rica ediyorum. O yüzden 5 dakika bekliyorum. 10.30'da konuya ki devam edeceğim.
+
+481
+01:27:04,916 --> 01:27:08,015
+Evet arkadaşlar, anket bitti herhalde.
+
+482
+01:27:18,195 --> 01:27:20,816
+Yavaş yavaş dersimize devam edebiliriz.
+
+483
+01:27:21,716 --> 01:27:25,155
+Divide and Concur algoritmik tasarım yaklaşımına.
+
+484
+01:27:26,876 --> 01:27:29,716
+Şimdiki başlığımız kocaman bir quicksort yazıyor.
+
+485
+01:27:29,716 --> 01:27:31,836
+Buna bakalım neden quicksort?
+
+486
+01:27:32,979 --> 01:27:36,019
+Önce algoritmadan biraz bahsedeyim.
+
+487
+01:27:37,219 --> 01:27:42,279
+Quicksort 20. yüzyılın en iyi 10 algoritmasından biri seçilmiştir.
+
+488
+01:27:43,179 --> 01:27:50,659
+Bir sıralama algoritması olarak 1900'lü yıllarda yapılan en iyi algoritmalar yarışmasında ya da oylamasında.
+
+489
+01:27:51,091 --> 01:27:54,192
+En iyi 10 algoritma arasında yer almaktadır.
+
+490
+01:27:54,912 --> 01:27:59,412
+Yeni bir algoritma değil, 1959'da O'are tarafından tasarlanmış.
+
+491
+01:27:59,551 --> 01:28:01,551
+Tam adı da Charles Antony Richard O'are.
+
+492
+01:28:03,051 --> 01:28:07,051
+Bilim sıra makale olarak da 1961 yılında yayınlanmıştır.
+
+493
+01:28:09,051 --> 01:28:10,711
+Şimdi, yaklaşık şu.
+
+494
+01:28:12,832 --> 01:28:16,351
+Hem Merge Sort algoritmasında sıralarken ne yaptık?
+
+495
+01:28:16,351 --> 01:28:18,192
+Pozisyona göre.
+
+496
+01:28:18,644 --> 01:28:24,203
+ortadan, solun ortasından, solun solunun ortasından böyle böyle gittik.
+
+497
+01:28:24,304 --> 01:28:29,184
+Yani hep dizideki problem uzayındaki pozisyona göre böldük.
+
+498
+01:28:29,363 --> 01:28:36,184
+Veya tromino puzzle örneğine baktığımızda, orada da bir tablamız vardı, bir yine problem uzayımız var.
+
+499
+01:28:36,543 --> 01:28:37,244
+İki boyutlu.
+
+500
+01:28:37,764 --> 01:28:41,884
+Onu hep tam ortadan ikiye olacak şekilde böldük.
+
+501
+01:28:42,515 --> 01:28:54,055
+Yani önce 4'e böldük. Sonra üst parçayı 4'e böldük. Sonra onun üst parçasını 4'e böldük gibi, işte 2 üzeri 1'e kadar gelecek şekilde bölme işlemini gerçekleştirdik.
+
+502
+01:28:55,095 --> 01:29:00,755
+Hep pozisyona göre bölme yaptık. Peki böyle yapmak tek yaklaşım mıdır? Hayır.
+
+503
+01:29:01,755 --> 01:29:08,195
+Biz sadece pozisyonlara göre ya da uzayın ortasından falan olacak şekilde bölmek zorunda değiliz.
+
+504
+01:29:08,956 --> 01:29:10,495
+Quicksort bunun en güzel örnekleri.
+
+505
+01:29:10,515 --> 01:29:12,515
+Bu bir şey.
+
+506
+01:29:13,747 --> 01:29:25,887
+Problem uzayındaki elemanların değerlerine göre, yani ne olduklarına göre onları değerlendirerek bölme işlemini ve yönetmeyi gerçekleştiriyor.
+
+507
+01:29:26,268 --> 01:29:29,527
+Yani ben diziyi ortadan bölmüyorum.
+
+508
+01:29:30,467 --> 01:29:32,107
+Belirli bir değer seçiyorum.
+
+509
+01:29:32,327 --> 01:29:34,447
+O dizideki elemanlardan birini seçiyorum.
+
+510
+01:29:38,771 --> 01:29:43,872
+partitioning yani bölümleme, bölme işlemini gerçekleştiriyorum.
+
+511
+01:29:47,444 --> 01:29:53,004
+O zaman benim bir diziyi sıralıyorsam, quicksortla.
+
+512
+01:29:58,323 --> 01:30:00,503
+Bir elemanı pivot olarak seçmem lazım.
+
+513
+01:30:01,103 --> 01:30:04,123
+Pivot ne demek? İşte bölme noktası, bölme değeri.
+
+514
+01:30:05,023 --> 01:30:06,003
+Pivot diyoruz buna.
+
+515
+01:30:09,123 --> 01:30:12,763
+Diziyi öyle bir işlemden geçir ki
+
+516
+01:30:12,763 --> 01:30:16,603
+aslında hani concuret anlamında, divide ederken pardon
+
+517
+01:30:16,603 --> 01:30:22,323
+Pivottan küçükler, bir partition, bir bölüm olsun.
+
+518
+01:30:22,963 --> 01:30:24,543
+Yani alt parça, alt problem.
+
+519
+01:30:25,524 --> 01:30:31,364
+Pivottan büyük olanlar da başka bir ikinci alt problem olsun.
+
+520
+01:30:31,623 --> 01:30:33,764
+Yani buna biz partitioning adını vereceğiz.
+
+521
+01:30:34,264 --> 01:30:35,664
+Aslında divide işlemi.
+
+522
+01:30:36,824 --> 01:30:38,264
+Neye göre divide ediyorum?
+
+523
+01:30:38,784 --> 01:30:46,164
+Diziden seçtiğim bir elemanın değerine göre, pivot değerine göre küçükler bir partition, büyükler bir partition.
+
+524
+01:30:46,344 --> 01:30:47,844
+Ne yaptım? Divide ettim.
+
+525
+01:30:48,204 --> 01:30:50,164
+Neye göre? Bir elemanın değerine göre.
+
+526
+01:30:50,547 --> 01:31:04,528
+Sonra, concur aşamasına geldiğimizde yaptığımız tek şey aslında, daha doğrusu yaptığımız şey, rekürsif olarak her bir alt oluşan bölümü tekrar partitioning işleminden geçirmek.
+
+527
+01:31:05,067 --> 01:31:11,927
+Yani şimdi ben dizide bir pivot seçtim. O pivot'a göre bu parça, bu parça, iki tane partitioning ayırdım.
+
+528
+01:31:11,927 --> 01:31:15,587
+Sonra rekürsif olarak bunu ve bunu, önce bunu yapalım.
+
+529
+01:31:16,083 --> 01:31:29,384
+Tekrar bir, içinden bir işte pivot seçerek o pivot'a göre tekrar ikiye böleceğim. Onun için de tekrar ikiye böleceğim. Hani yine solun solunun solu gibi olacak ama partition'ları da böyle böyle gideceğiz. Her bir.
+
+530
+01:31:30,228 --> 01:31:39,408
+partition bölümü recursive olarak partitioning işleminden gerçekleştireceğiz. Ne demek bu? Her bir adımda aslında divide edeceğiz tekrar.
+
+531
+01:31:39,688 --> 01:31:46,587
+Divide etmekte ne yapıyorduk? Biz bir pivot seçiyorduk. Pivota göre sol, sağ ya da işte küçükler, büyükler diye ikiye bölüyorduk.
+
+532
+01:31:47,268 --> 01:31:54,507
+Peki, bunu yaptık. Sürekli olarak yaptık, yaptık, yaptık. Nihayetinde öyle bir hale olacak ki, dizimiz o hale gelecek ki,
+
+533
+01:31:55,412 --> 01:31:59,172
+Alt dizilerimiz tek elemanlı parçalara kadar gidecek.
+
+534
+01:31:59,672 --> 01:32:07,672
+Ama bu sırada da her bir seçilen pivot eleman dizide son nihai sıralanmış dizideki gerçek yerini de bulmuş olacak.
+
+535
+01:32:08,851 --> 01:32:17,792
+Çünkü işte pivot'a göre öyle bir partitioning yapacağız ki pivot'un solundakiler pivot'tan küçük olacak, pivot'un sağındakiler pivot'tan büyük olacak.
+
+536
+01:32:18,420 --> 01:32:22,420
+O zaman bu ne demektir? Pivot zaten son yerini buldu demektir.
+
+537
+01:32:22,420 --> 01:32:28,420
+Sonra rekürsif olarak bu işlemi sürekli yaparsam her adımda bir pivot yerini bulacak demektir.
+
+538
+01:32:28,420 --> 01:32:31,420
+Eee sonuçta ben zaten herkesi yerine oturttum.
+
+539
+01:32:31,828 --> 01:32:37,347
+Alt dizileri birleştirmek için herhangi bir şey yapmama gerek var mı? Hayır, hiçbir şey yapmama gerek yok.
+
+540
+01:32:37,688 --> 01:32:39,988
+Yani combine işleminde hiçbir işlem yok.
+
+541
+01:32:40,588 --> 01:32:46,428
+Quicksort'un en güzel yanı bu. Merge sortlu bütün olay merge, yani combine adımındaydı.
+
+542
+01:32:47,288 --> 01:32:53,908
+Quicksort'ta da tam tersi bütün işlem concure adımında ve aslında divide adımında, partitioning adımında.
+
+543
+01:32:54,108 --> 01:32:59,828
+Concure'da recursive bir çağrı yapıyorsunuz ve combine adımında zaten dizi son...
+
+544
+01:32:59,828 --> 01:33:25,748
+hali haline geldiği için hiçbir şey yapmıyorsunuz. Dediğim gibi partition sonucunda ben böyle bir diziyi hale getireceğim ki burada böyle elemanlarım var. Diyelim ki şu elemanı pivot diye seçtim. Öyle bir yani bunun da değeri ne bileyim 6. Bunu
+
+545
+01:33:26,355 --> 01:33:28,355
+Öyle bir yere taşıyacağım ki
+
+546
+01:33:28,355 --> 01:33:31,715
+Pardon?
+
+547
+01:33:35,604 --> 01:33:57,244
+Bir yere taşıyacağım ki diyelim ki son pozisyonu şurası olmuş oldu. Buradakilerin hepsi yani bu partition küçük elemanlardan oluşacak. Buradaki partition da bu pivot'tan büyük elemanlardan oluşacak. Sonrasında rekürsif olarak burada bir pivot seçtim. Yine buradaki değeri seçtim diyelim.
+
+548
+01:33:57,876 --> 01:34:20,816
+Ondan sonra bu kendi içinde pivot öyle bir yere gidecek ki mesela şuraya gitti diyelim. O zaman artık bunun sağ tarafı yok ya bu da yerini buldu. Recursif olarak şu parçayı tekrar quicksort'tan geçireceğim gibi gibi. Burayı bitirdikten sonra sağ tarafa geçip burayı da aynı şekilde recursif olarak partitioning'ten geçireceğim. Yani partitioning öyle bir işlem ki
+
+549
+01:34:21,460 --> 01:34:27,679
+Benim seçtiğim pivot J'de duran A, J elemanını dizideki final pozisyonuna taşıyacak.
+
+550
+01:34:29,059 --> 01:34:39,000
+Lov'dan yani sol hindisten J-1'e kadar olan kısımda bu pivot'tan daha büyük bir eleman olmadığını garanti edeceğim.
+
+551
+01:34:39,796 --> 01:34:46,996
+Sağ tarafta da pivot'tan küçük eleman olmadığını garanti edeceğim. Bunlar kendi içinde sıralı olmak zorunda değiller.
+
+552
+01:34:47,656 --> 01:34:54,856
+Sadece tek bir şeyi garanti edeceğiz. Bu partition'da, böldüğümüz bu partition'da buradan büyük değer olmayacak.
+
+553
+01:34:55,496 --> 01:35:03,836
+Bu partition'da da buradan küçük değer olmayacak. Tek şey bu. Peki bunu nasıl yapacağız? Örneği şöyle göstereyim renkli olarak size.
+
+554
+01:35:06,003 --> 01:35:11,324
+Dizimiz bu olsun. 4, 10, 8, 7, 6, 5, 3 diye gidiyor. 1 vatuda 6 seçelim. Tamam mı?
+
+555
+01:35:12,324 --> 01:35:19,003
+Ben şimdi ilk partitioning yaptığımda öyle bir hale getireceğim ki bakın. Şuradaki turuncu partition.
+
+556
+01:35:19,724 --> 01:35:25,284
+Burada 6'dan büyük değer var mı? Yok. 4, 5, 3, 2 var. Hepsi 6'dan küçük.
+
+557
+01:35:25,844 --> 01:35:32,364
+Sağ taraftaki yeşil partitioning'e baktığımda da ne görüyorum? Buradaki bütün değerler 6'dan büyük.
+
+558
+01:35:33,235 --> 01:35:49,475
+Şimdi, 6 ne demektir 6 için, pivot için? Bu dizinin nihai sıralanmış halinde aslında 6, buradaki 1, 2, 3, 4, 5 numaralı indiste yer alacak. 5. gözde yer alacak. Ben pivotu yerleştirmiş oldum aslında.
+
+559
+01:35:51,091 --> 01:35:57,471
+O hocam o zaman hemen O n olacak diyebilirsiniz ama tabi ki O n olmayacak karmaşıklığı.
+
+560
+01:35:58,591 --> 01:36:02,951
+Çünkü en tane yer değiştirme yok. Her seferinde de rekürsif bölme işlemi var.
+
+561
+01:36:03,231 --> 01:36:08,531
+Yani kabaca hemen hızlıca söyleyeyim. Log n'e bölerek gittiğimiz için yine log n kere bölmemiz gerekecek.
+
+562
+01:36:09,331 --> 01:36:15,291
+Kabaca büyük O n log n olduğunu daha şu ilk dakikadan söylemiş olalım ama analizin üstünden yine geçeceğiz.
+
+563
+01:36:15,291 --> 01:36:18,451
+Sonra geldik bu turuncu parçaya, partition'a.
+
+564
+01:36:19,091 --> 01:36:30,091
+Sonra buradan da bir pivot seçeceğiz. Diyelim ki 5'i seçtik. Tamam mı? 5'i buradaki parçanın içindeki yerine koyacağız. Neresi bu? Şuraya gidecek. 2 ile 5 aslında yer değiştirecek gibi düşünebiliriz.
+
+565
+01:36:30,651 --> 01:36:43,651
+4, 3, 2 olmuş burası. Bakın. 5 de burada. 5 artık yerini buldu. Sonra solun solu diyorum hep. Turuncu partition üzerinde devam edeceğiz. Diyelim ki 3'ü pivot seçtik.
+
+566
+01:36:44,083 --> 01:36:46,723
+Orta elmanı pivot seçiyor gibiyim şu anda.
+
+567
+01:36:47,603 --> 01:36:47,863
+3
+
+568
+01:36:48,692 --> 01:36:55,192
+2 sola gidecek çünkü 3'ten küçük, 4'te sağa gidecek, 3'te yerini bulmuş oldu.
+
+569
+01:36:55,992 --> 01:37:00,471
+Şimdi artık burada tek eleman var, zaten tek eleman kendi içinde, partition'da tek eleman var.
+
+570
+01:37:00,952 --> 01:37:05,192
+Pivot kendisi, yer değiştirebileceği hiçbir şey yok, burada bir şey yapmama gerek yok.
+
+571
+01:37:05,851 --> 01:37:11,152
+Bu pivotun sağına gittiğimde yine tek eleman var, o da yerini buldu, bu zaten bunlar bulmuştu.
+
+572
+01:37:11,152 --> 01:37:15,391
+Bakın sol taraf bitti. Sonra geleceğiz yeşil partition'a.
+
+573
+01:37:15,988 --> 01:37:40,208
+yeşil partition'da da 7'yi pivot seçtik. 7 en sola gidecek ve sağda hepsi ondan büyük olan yeşil partition oluşacak. Sol partition yok bakın. 0'a işte k-1. Böyle iki partition dengesiz oldu mesela. Sonra bunun sol olmadığı için sağına gideceğim.
+
+574
+01:37:41,363 --> 01:37:55,363
+Sağda da 8'i pivot seçtim. 8 buraya gitti. Sadece sağ oluştu. 10'u pivot seçtim. Yeri değişmedi. 12'yi pivot seçtim. Yeri değişmedi. 14'ü pivot seçtim. Yeri değişmedi. 7, 8, 10, 12, 14. Buradaki parça da sıralandı.
+
+575
+01:37:55,363 --> 01:38:03,363
+Yani ben bu diziyi recursive çağrılarımla partition diye partition diye ne hale getirdim? 2, 3, 4, 5, 6, 7, 8, 10, 12, 14.
+
+576
+01:38:04,115 --> 01:38:27,176
+Bu sayede aslında hiç böyle kombine için bir şey yapmaya ihtiyaç kalmadı. Zaten dizi nihai olarak kendi içinde ve kendi üstünde sıralanmış oldu. İşin güzelliği Merge Sort'taki gibi harici bir kopyalama, bir saklama dizisine ihtiyaç duymayacağım. Direkt olarak kendi üstünde bu partitioning işlemini dizi üstünde gerçekleştirebilirim.
+
+577
+01:38:28,340 --> 01:38:53,820
+Algoritması nasıl? Çok kolay. Hemen bakın yine Base Condition var burada. Bölecek eleman olmadığı sürece, Left, Right'tan küçük olduğu sürece bir pivot seç, buna S diyelim ve buna göre partitioning işlemini gerçekleştir. Aslında quicksort'un bütün işlemi burası gördüğünüz gibi.
+
+578
+01:38:54,868 --> 01:39:07,347
+Sonra, quicksort sol taraf, quicksort sağ taraf. Left'ten pivot-1'e, pivot artı 1'den sona kadar olacak şekilde tekrar kendimizi çağırıyoruz.
+
+579
+01:39:11,636 --> 01:39:19,536
+Peki. Şimdi herkesin aklına gelen soru. Ya hocam pivot pivot diyorsun, bir tane değer diyorsun. Bir onu seçtim, bir bunu seçtim.
+
+580
+01:39:22,856 --> 01:39:27,296
+Pivot'u nasıl seçeceğiz? Bunun stratejilerini en son konuşacağız, tartışacağız yine.
+
+581
+01:39:30,576 --> 01:39:33,856
+Pek çok strateji olsa da en basiti. Ne olabilir?
+
+582
+01:39:34,368 --> 01:39:43,268
+Şunu yapabilir miyim? Benim elimde her zaman bir sub array var. Yani bütünden başlayıp ufak ufak tek elemana kadar azalacak partitionlar.
+
+583
+01:39:43,967 --> 01:39:52,488
+İlk elemanı pivot seçeyim. Hiç uğraşmayayım. A1. Anlatabiliyor muyum? Her seferinde o parçanın ilk elemanını seçmiş olayım.
+
+584
+01:39:53,207 --> 01:39:59,707
+İşte burada bakın. Bu pivot olsun mesela. Pivot olarak bu gözdeki değeri seçtim.
+
+585
+01:40:00,532 --> 01:40:27,351
+Şimdi ben şöyle yapacağım. Partitioning işleminin kalbi. P'ye göre iki tane iteratör tanımlayacağım. Biri buradan başlayacak, bu tarafa doğru gidecek. Biri de sondan başlayacak, bu tarafa doğru gidecek. Tarama işlemi gerçekleştireceğim. Amacım ne? Küçükleri bir partition'a, büyükleri bir partition'a atmak.
+
+586
+01:40:28,051 --> 01:40:40,051
+O zaman ben i'yi pivot'tan daha büyük bir eleman bulana kadar böyle ittiririm. Tamam. Buraya böyle giderim.
+
+587
+01:40:40,051 --> 01:40:54,051
+Diyelim ki şurada, şu pozisyonda bir değer buldum ve bu pivot'tan büyük. Bir dakika, buradakiler küçüktü, buradaki büyük. Bu, pivot'tan büyükse burada olmaması lazım. Diyorum.
+
+588
+01:40:54,323 --> 01:40:56,703
+Çünkü bunun öbür parti içinde olması lazım.
+
+589
+01:40:57,283 --> 01:40:58,003
+Burada duruyorum.
+
+590
+01:40:58,612 --> 01:41:08,612
+Ondan sonra sağdan sola da tarama yapıyorum. Neden? Buradaki sağ partition'da da bütün elemanların pivot'tan büyük olmasını istiyorum. Bunu garanti etmek istiyorum.
+
+591
+01:41:08,612 --> 01:41:22,612
+O zaman bu sağ tarafta da normalde büyüklerin olması gereken partition'da da P pivot'undan küçük olan bir değer bulana kadar J eşittir J-1 ile böyle sola doğru yani başa doğru tarıyorum.
+
+592
+01:41:23,347 --> 01:41:34,407
+Bunu buldum. Böyle bir eleman var. Bunu da buldum. Böyle bir eleman var. Bu ikisi irregüler elemanlar. Bu solda olmamalı, bu sağda olmamalı. Ne yapacağım? Hop, yer değiştireceğim.
+
+593
+01:41:36,267 --> 01:41:41,667
+Artık burada küçük bir eleman var pivot'tan. Burada da büyük bir eleman var pivot'tan.
+
+594
+01:41:42,195 --> 01:41:45,695
+İki irregüları değiştirmiş oldum, swap ettim.
+
+595
+01:41:45,695 --> 01:41:49,496
+Dediğim gibi bu parça kendi içinde sıralı olmasını garanti etmiyorum.
+
+596
+01:41:49,496 --> 01:41:54,695
+Tek garanti ettiğim şey solda, pivottan büyük eleman olmayacak.
+
+597
+01:41:54,695 --> 01:41:59,695
+O yüzden büyük buldum mu, hemen sağda bulduğum bir küçük de swap ediyorum.
+
+598
+01:41:59,695 --> 01:42:01,695
+Ne zamana kadar?
+
+599
+01:42:01,695 --> 01:42:04,171
+i ve j çakışana kadar.
+
+600
+01:42:04,627 --> 01:42:12,507
+İ ve J örtüştüğünde, yani iyice ters döndüğünde ne demektir? Aha burası benim pivotumun son noktasıdır.
+
+601
+01:42:12,507 --> 01:42:25,307
+Ve bu zaman içinde yaptığım bütün swapslerle de buradakilerin küçük, buradakilerin büyük olmasını da garanti etmiş oldum.
+
+602
+01:42:25,307 --> 01:42:31,188
+Yani partitioning işleminin özü, bütün akışı, bütün mantığı da bu şekilde.
+
+603
+01:42:41,427 --> 01:42:41,927
+Evet.
+
+604
+01:42:42,768 --> 01:42:43,547
+Bunu söylediğim gibi.
+
+605
+01:42:44,108 --> 01:42:45,287
+Soldan sağa tarıyorum.
+
+606
+01:42:45,448 --> 01:42:46,347
+İ böyle gidiyor.
+
+607
+01:42:47,787 --> 01:42:48,988
+Sağdan sola tarıyorum.
+
+608
+01:42:49,127 --> 01:42:50,108
+J böyle azalıyor.
+
+609
+01:42:51,887 --> 01:42:54,587
+Nihayetinde bunlar kesilecek.
+
+610
+01:42:54,747 --> 01:42:55,707
+Bu noktayı bulacağım.
+
+611
+01:42:55,847 --> 01:42:57,587
+İşte bu noktada pivot olacak.
+
+612
+01:42:58,268 --> 01:42:59,648
+Buradaki her şey küçük.
+
+613
+01:43:00,068 --> 01:43:00,887
+Tabii eşit de olabilir.
+
+614
+01:43:01,707 --> 01:43:03,747
+Buradaki her şey de büyük olacak.
+
+615
+01:43:04,595 --> 01:43:15,935
+Pivot noktamızda zaten J i'ye eşit oldu. Şimdi artık ne yapacağım? Rekürsif olarak burayı alacağım. Artık benim dizim burasıdır diyeceğim. Burada bir pivot seçeceğim.
+
+616
+01:43:17,235 --> 01:43:23,615
+Pivot ilk eleman seçiyorum ya. Burayı tekrar partitionlayacağım. Öyle bir yere gelecek ki P mesela buraya gelecek.
+
+617
+01:43:24,180 --> 01:43:44,380
+Ha gelmedi demin örnekte. P burada kaldı. Buradaki her şey ondan büyükmüş olabilir. Ne yapalım? Sol taraf yok demektir. Bu çok sevdiğiniz şey değil. Mümkün olunca partitionların dengeli olmasını isteriz. Ama çok da dert değil. Göreceksiniz neden olduğunu analizde.
+
+618
+01:43:55,764 --> 01:44:12,264
+Şimdi, iki slide tır, şöyle üzerinde, seçtim, küçük görene kadar, büyük görene kadar, buradan ilerledim, küçük görene kadar, tersten ilerledim, bunları swap ettim, en sonunda bunlar çakıştığında, indislerde yer değiştirdim, pivotun yerini buldum dedim ya.
+
+619
+01:44:13,024 --> 01:44:14,564
+İşte bu partition'ın işlemi.
+
+620
+01:44:15,731 --> 01:44:33,631
+Ve bu partitioning işlemine gördüğünüz gibi Hoare partitioning adını veriyoruz. Neden? Çünkü 1959'da Hoare, kendisi Hoare tabi, bilgisayar birimcisi, bu algoritmayı
+
+621
+01:44:34,228 --> 01:44:58,427
+İlk tasarladığında, pivotu nasıl seçeceğiz? İlk eleman seç, devam et. Ya da son eleman seç, devam et. Hiç uğraşma bir stratejiyle diyerek ilerlemiş. O yüzden de bu en basit haline OREP artışının adını da verebiliriz. Ne yapıyoruz? İşte bakın, left'ten right'a. Yani 0'dan n-1'e. Ya da işte 1'den n'e.
+
+622
+01:44:58,931 --> 01:45:02,351
+Sol taraf. İlk elemanı pivot olarak seçtim.
+
+623
+01:45:03,692 --> 01:45:04,192
+Pivot.
+
+624
+01:45:07,071 --> 01:45:09,751
+İ indisi en solda.
+
+625
+01:45:13,203 --> 01:45:16,463
+J indisi de en sağın bir yanında.
+
+626
+01:45:17,743 --> 01:45:18,903
+Dıştan başlıyor.
+
+627
+01:45:19,543 --> 01:45:19,763
+Neden?
+
+628
+01:45:20,583 --> 01:45:22,603
+Çünkü algoritma şöyle çalışıyor.
+
+629
+01:45:22,603 --> 01:45:22,983
+Bakın.
+
+630
+01:45:24,103 --> 01:45:27,083
+Bu en sol, i'den, l'den yani left'ten başladı.
+
+631
+01:45:27,483 --> 01:45:28,163
+En soldan.
+
+632
+01:45:28,683 --> 01:45:30,043
+Direkt olarak bakın ne diyor?
+
+633
+01:45:31,123 --> 01:45:34,483
+Büyük eşit bir eleman bulana kadar arttırın diyor.
+
+634
+01:45:34,836 --> 01:45:39,836
+O yüzden de önce 2'ye baktı, sonra 3'e baktı, sonra 4'e baktı diye gidecek.
+
+635
+01:45:39,836 --> 01:45:44,836
+Bu da her seferinde j eşittir j eksi 1 yapıyor. Yani do while döngüsü bu.
+
+636
+01:45:44,836 --> 01:45:47,836
+O yüzden de önce biraz azaltarak başlıyor.
+
+637
+01:45:47,836 --> 01:45:57,836
+En son ilk baktığı şey j eksi 1. Bunun yerine r artı 1 yazdığında r artı 1 eksi 1, r. Yani en sağdaki eleman oluyor.
+
+638
+01:45:57,836 --> 01:45:58,836
+Peki.
+
+639
+01:45:59,347 --> 01:46:08,828
+İki tane elemanı buldum diyelim buraya kadar kaydım, buraya kadar kaydım. Yoksa ne olacak? Sona kadar gidecek. Ne olacak ki? Hiçbir şey yok. Yani o öbür parti için boş kalacak demektir.
+
+640
+01:46:09,507 --> 01:46:21,108
+Ve swap işlemini gerçekleştiriyor. Ne zamana kadar? Taşana kadar. İ, büyük eşit C olana kadar bu swap işlemlerine devam ediyor.
+
+641
+01:46:21,619 --> 01:46:24,220
+En sonunda bir swap daha yapıyor.
+
+642
+01:46:24,340 --> 01:46:25,380
+A, J, A, J.
+
+643
+01:46:25,579 --> 01:46:28,680
+Son swap aslında tekrar geri alıyor taştığı için.
+
+644
+01:46:29,159 --> 01:46:29,960
+Pardon.
+
+645
+01:46:30,739 --> 01:46:34,099
+Ve pivotu yerine koyuyor.
+
+646
+01:46:34,279 --> 01:46:35,099
+Pivot yerine.
+
+647
+01:46:40,212 --> 01:46:53,552
+Bu kadar. Tabi J'yi de geri döndürüyor. J ne demektir? Pivotun pozisyonu. Bu pozisyon niye önemli? Çünkü ben quicksort'ta sol ve sahayı bu artık J'ye göre böleceğim. Şöyle geri geleyim.
+
+648
+01:46:55,332 --> 01:47:00,792
+Buradan partitioning işleminde. Çünkü şu J. Yani şeyin yeni pozisyonu.
+
+649
+01:47:01,427 --> 01:47:21,328
+Bunu S değişkenine atamışım burada. Return J dedik ya, pivot pozisyonu. Pivot pozisyonu hakkında baştan pivot eksi bir, quicksort yap, pivot artı birden sona kadar quicksort yap demiş olduk. O yüzden burada bir return J'yi görüyoruz. Pivotun pozisyonunu tekrar geri döndürüyoruz.
+
+650
+01:47:31,507 --> 01:47:32,507
+Bir dizi.
+
+651
+01:47:32,507 --> 01:47:39,507
+Şimdi, ilke şöyle, 5, 3, 1, 9, 8, 2, 4, 7 dizimiz bu.
+
+652
+01:47:39,507 --> 01:47:41,507
+Pivotumuz ne? Koyu olan.
+
+653
+01:47:41,507 --> 01:47:43,507
+I buradan başladı, J buradan.
+
+654
+01:47:43,507 --> 01:47:46,507
+Şimdi önce repeat until I, J'leri yapalım.
+
+655
+01:47:46,507 --> 01:47:48,507
+I, J şeyini yapacağız.
+
+656
+01:47:48,507 --> 01:47:52,507
+3, 5'ten küçük, I'yi ilerlettim.
+
+657
+01:47:52,507 --> 01:47:56,507
+1, 5'ten küçük, I'yi ilerlettim.
+
+658
+01:47:58,804 --> 01:48:25,224
+5'ten büyük. Burada durdum. Şimdi J'yi azaltıyorum. 7 5'ten büyük. O yüzden J'yi azalttım. 4 5'ten büyük mü? Değil. Küçük. İrregüler. Bu tarafta olmaması lazım. Şimdi ne yapacağım? Bu ikisini swap ediyorum. Tamam. Yani 4, nerede 4? Burada. 4 buraya gitti.
+
+659
+01:48:27,731 --> 01:48:28,412
+Buraya gitti.
+
+660
+01:48:30,252 --> 01:48:31,832
+İkisi yer değiştirdi.
+
+661
+01:48:33,132 --> 01:48:35,992
+Şimdi devam ediyorum i taramasına.
+
+662
+01:48:36,332 --> 01:48:39,672
+8, 8, 5'ten büyük.
+
+663
+01:48:39,792 --> 01:48:40,811
+Burada olmaması lazım.
+
+664
+01:48:41,811 --> 01:48:43,032
+Buraya 9 gelmişti.
+
+665
+01:48:43,612 --> 01:48:45,672
+2, 2'de 5'ten küçük.
+
+666
+01:48:45,891 --> 01:48:46,992
+Burada olmaması lazım.
+
+667
+01:48:48,412 --> 01:48:49,612
+Bunlar da bir swap etti.
+
+668
+01:48:50,811 --> 01:48:52,092
+Şöyle 2, 8 oldular.
+
+669
+01:48:55,988 --> 01:48:57,988
+Bu noktada
+
+670
+01:48:57,988 --> 01:49:00,988
+Ci birbirini geçti
+
+671
+01:49:00,988 --> 01:49:04,972
+Bu nedenle de şuradaki pivot ile
+
+672
+01:49:07,188 --> 01:49:27,507
+Buradaki elemanın yer değiştirmesini gerçekleştirdim. Ne oldu? 5 yerini buldu pivotum artık. En son sıralanmış dizide nerede olması gerekirse orada. Şimdi hiç devam etmeden şöyle bakalım. Bakın sağ taraf yeşil partition. Hepsi 5'ten büyük. Sıraladığımızda burası 7, 8, 9 olacak değil mi?
+
+673
+01:49:28,243 --> 01:49:32,343
+Sol taraf hepsi 5'ten küçük sıraladığımızda 1, 2, 3, 4 olacak.
+
+674
+01:49:33,183 --> 01:49:34,923
+İşte ben ne yapmış oldum?
+
+675
+01:49:35,143 --> 01:49:43,843
+İlk iterasyonumda dıştaki repeat until do while'ın ilk döngüsünde birinci pivotu yerine koymuş oldum.
+
+676
+01:49:44,763 --> 01:49:46,883
+Sonra rekürsif olarak burayı çağıracağım.
+
+677
+01:49:47,683 --> 01:49:49,343
+Burada quicksort yapacağım.
+
+678
+01:49:50,983 --> 01:49:53,623
+Burası bittikten sonra burayı çağıracağım.
+
+679
+01:49:53,623 --> 01:49:54,643
+Devam edelim.
+
+680
+01:49:55,315 --> 01:50:04,475
+Şimdi 5 yerini bulmuştu. Bu taraf 2, 3, 1, 4 olmuştu değil mi? 2, 3, 1, 4. Sonrası da 8, 9, 7 idi. Peki.
+
+681
+01:50:13,395 --> 01:50:33,496
+Pivotu seçtim. İlk eleman pivot. Buradan başladım. 3, 3, 2'den büyük. Burada olmaması lazım. Sonra J'yi de sondan başlatıyorum. 4, 4, 2'den büyük. Sorun yok. J'yi biraz attım. 1, 1, 2'den küçük. Burada olmaması lazım. Bu ikisi swap oldu.
+
+682
+01:50:35,091 --> 01:50:41,591
+Şimdi 2, 1, 3, 4. Sonra J, I taştı. Bu nedenle de pivotla yer değişimini gerçekleştirdi.
+
+683
+01:50:42,471 --> 01:50:49,452
+Ne oldu? Burada 2 numaralı pivot, 2 değerini taşıyan pivot maviye boyandı. Yani artık yerini buldu.
+
+684
+01:50:49,452 --> 01:50:58,891
+Şu noktada ne diyebilirim? Pivotun, yani orijinal dizinin solundaki ilk pivotun solunda bir partition var. Turuncu partition olsun yine.
+
+685
+01:50:59,699 --> 01:51:05,019
+Sağında bir partition var. Bu da yeşil partition olsun yine. Sağlara yeşil dedik, sollara turuncu.
+
+686
+01:51:07,019 --> 01:51:14,699
+Şimdi burası tek elemanla. İşlettiğinizde zaten hiçbir şey geldi. Pivot zaten kendi yerinde. O yüzden bu da yerini buldu.
+
+687
+01:51:15,260 --> 01:51:18,420
+Sonra 3 ile 4'e geldik. 3 pivot.
+
+688
+01:51:19,731 --> 01:51:47,731
+4, i, j, ikisi de burada. Yani yer değiştirmeyecek. Tek eleman olduğu için ve büyük olduğu için solda kalması garanti. O yüzden bir exchange işlemi yapmadım. Pivot burada yerini buldu. Şimdi bu 3 pivotu da yerini bulunca pivotun sağında yeşil bir partition kaldı. Aynı şuradaki turuncu tek elemanlık partition gibi. Burada da yeşillik tek elemanlı bir partition var. Aynı şekilde bu da zaten.
+
+689
+01:51:47,731 --> 01:52:10,452
+Zaten pivot tek eleman. 1, 2, 3, 4, 5 de buradaydı. Buraya kadar sıraladık. Yani sol quicksort recursive çağrılarım bitti. Şimdi ne yapacağım? Sağ taraftakileri çağırmaya devam edeceğim. 8, 9, 7. Bak tabi burası. 8 elemanı. Pivot seçtim ilk elemanı.
+
+690
+01:52:15,828 --> 01:52:17,828
+ile bana pivot seçtim.
+
+691
+01:52:19,828 --> 01:52:21,828
+i ve j buradan başladı.
+
+692
+01:52:21,828 --> 01:52:24,828
+8, i'ye bakıyorsunuz 9.
+
+693
+01:52:25,828 --> 01:52:27,828
+Bunun burada olmaması lazım.
+
+694
+01:52:27,828 --> 01:52:31,828
+j'ye bakıyorsunuz 7, 8 den küçük. Bunun da burada olmaması lazım.
+
+695
+01:52:31,828 --> 01:52:34,828
+Bunlar swap ettiler. 7 ve 9 oldu.
+
+696
+01:52:34,828 --> 01:52:37,828
+j ile i de taştı, yer değiştirdiler.
+
+697
+01:52:37,828 --> 01:52:42,700
+O yüzden exchange işlemiyle pivotu yerine taşıdım.
+
+698
+01:52:43,028 --> 01:52:50,528
+Şimdi pivot burada. Solunda turunculuk bir partition. Sağında da yeşil bir partition oluştu.
+
+699
+01:52:50,528 --> 01:52:55,788
+Turuncu partition'a gittim. Tekrar quicksort'a çalıştırdım. Tek eleman pivot yerini buldu.
+
+700
+01:52:55,828 --> 01:53:23,828
+Sonra partition yeşiline gittim. Sağdaki quicksort partition'ı çalıştırdım. Burada da tek eleman olduğu için yerini bulmuş oldum. Ve quicksort algoritması ile sadece elemanın taşıdığı değere bakarak bölüme yapıp, yani bölme işlemini pozisyona göre değil, değere göre gerçekleştirip, sonrasında combine için hiçbir şey yapmadan on-kür aşamasında
+
+701
+01:53:23,828 --> 01:53:30,828
+Bu arada rekürsif çağrılarımı partitionlamama devam ederek sıralamamı gerçekleştirmiş oldum.
+
+702
+01:53:33,828 --> 01:53:43,756
+Biraz önceki eleman sayılarıyla rekürsif çağrı ağacına bakacak olursak, ilk önce 0'dan 7'ye partition değer işte bu.
+
+703
+01:53:43,923 --> 01:54:05,564
+Sonra 0 ile 3 arasını çağırdık. Sonra 0'dan 0'a zaten hiçbir şey yapmama gerek kalmadı. Sonra 2 ile 3'ü çağırdık. Partition buradan. Sol tarafında hiçbir şey yok. Sağ tarafında hiçbir şey yok. Geri döndük. Şimdi burada 0'dan 4'e kadar bitmiş oldu. Partition 4'tü.
+
+704
+01:54:05,939 --> 01:54:25,979
+Partition'ın sağ tarafında 5 ile 7 arası var. Partition olarak 6'ı şey yaptık. Bunun sol tarafı 5'e 5. Hani tek eleman kalıyordu hiçbir şey yapmıyordum ya. O yüzden burası boş gördüğünüz gibi bunlar. Bunlar tek elemanlı partition'lar demek. Ve bu tarafta da zaten tek eleman var. Başka bir şey yapmama gerek kalmadı.
+
+705
+01:54:26,963 --> 01:54:34,624
+Rekürsif olarak nasıl çağırdığını da, analiz yapmıştık, satır satır yazmıştım, orada biraz daha büyüktü diziler.
+
+706
+01:54:35,244 --> 01:54:42,284
+Buradaki çağrılar da bu şekilde yapılıyor ama artık kendine yapılan iki tane rekürsif çağrıda artık zorlanmıyoruz.
+
+707
+01:54:42,284 --> 01:54:48,204
+Önce solları, solun solu, solun solu, sonra solun solu, sağa şeklinde ilerleyebiliyoruz.
+
+708
+01:54:50,228 --> 01:55:12,627
+Son elemanı da seçebiliriz. Hemen onun örneğini de göstereyim. Burada bir şey değişmiyor. Sol taraf, quicksort algoritması aynı. Partitioning'de değişen şey ne bu? Bakın, A right. En sağdaki elemanı seçtim. Ne demek bu? Bivote burası demek. Tamam.
+
+709
+01:55:13,140 --> 01:55:21,220
+O zaman i, g ne olacak? Bu taraftan tabi birden başlayacak. Bu da işte şeyden, pivot'tan başlayacak. Fark yok. Bu öyle devam edecek taramaya.
+
+710
+01:55:22,020 --> 01:55:36,560
+Irregüler eleman bulduğunda bunları swap edecek. Kalanları taramaya devam edecek. 3 nokta yaptık. En sonunda öyle bir yer bulacak ki, şurası işte pivot'un olması gerektiği yer. Bu değeri de buraya taşıyacak. Pivot'u da buraya alacak.
+
+711
+01:55:37,300 --> 01:55:41,240
+Hiçbir fark yok. Yani bu algoritma da benzer bir şekilde çalışıyor.
+
+712
+01:55:59,283 --> 01:56:20,643
+bu şekilde. Ney tek hani, pivotu burada seçtiğimize bakalım. İ, C buradan, pivot pardon, şuradan seçtik. Yok bir dakika, pivotu burada, right'tan seçtik, özür diliyorum. Sonra, I ve C devam ediyor. 5 burada, 5, I,
+
+713
+01:56:21,363 --> 01:56:29,083
+yiteratörü, küçüklerin yiteratörü, J yiteratörü, büyüklerin yiteratörü. Yani iki partition nasıl oluşuyor? Önce şöyle.
+
+714
+01:56:30,283 --> 01:56:44,844
+1 ve 8 şeklinde iki partition var. Sonra 1 ve 6-8 şeklinde iki partition var. Sonra burada 8 ile 4 böyle yer değiştirecek aslında. 1-4
+
+715
+01:56:46,003 --> 01:56:51,663
+1 partition, 6, 8, 1 partition. Şuralar, gördüğünüz gibi bu pivotum.
+
+716
+01:56:52,804 --> 01:57:04,684
+Pivot. Buradaki ok. Bu, biliyoruz ki pivot bunlardan büyük. Yani buradaki değerler pivot'tan küçük eşit.
+
+717
+01:57:05,324 --> 01:57:09,923
+Buradaki değerler pivot'tan büyük. Bu bölgede daha henüz taranmayan ara.
+
+718
+01:57:10,644 --> 01:57:15,644
+Devam ettiğimde 0 daha küçük olması lazım. Bunu sol partişine atıyorum.
+
+719
+01:57:19,644 --> 01:57:24,644
+Sağdaki partişin, yani büyükler partişin bu. Şunlar hala incelenmeyenler.
+
+720
+01:57:24,644 --> 01:57:27,644
+3'ü sol partişine taşıyorum.
+
+721
+01:57:29,644 --> 01:57:35,644
+Bu da burada. Tek incelenmeyen değer kaldı. O da zaten sağ partişinde olmak zorunda.
+
+722
+01:57:36,756 --> 01:57:52,876
+i ve j nasıl değiştiğini buradan da böyle takip edebilirsiniz. Şimdi artık ne oldu? Şurası benim pivotumun yeri. O yüzden de 6 ile pivotu yer değiştiriyorum. Ve şurada pivot yerini bulmuş olduk. Soldaki partition da
+
+723
+01:57:53,939 --> 01:58:01,500
+Her şey pivot'tan küçük, sağdakinde de, ya da işte küçük eşit, sağdakinde de her şey büyük.
+
+724
+01:58:02,119 --> 01:58:06,939
+Küçük eşitliği, büyüklüğü size kalmış. İster sağ tarafa eşitliği koyarsınız, ister sol tarafa.
+
+725
+01:58:07,479 --> 01:58:12,019
+Ne fark etti? Buradaki akışı size anlatmaya çalıştım.
+
+726
+01:58:14,399 --> 01:58:18,019
+İlkinde, şuradaki örnekte özellikle...
+
+727
+01:58:18,868 --> 01:58:43,928
+Bu şekilde yapıldığını söylemiştim. Buradaki partition işlemi biraz daha az aslında aynı şeyi yapıyoruz ama biraz daha üstünde yapılıyor ve gördüğünüz gibi ben hep iki tane bölge i ve j ile ayrılan iki bölge tanımlıyorum. Ne zaman ki bu pivotun oraya değer o zaman duruyorum. Yani şu iki partition oluştuğu anda
+
+728
+01:58:44,692 --> 01:58:48,292
+Burada duruyorum ve işte bu sonu geri.
+
+729
+01:58:51,292 --> 01:58:52,891
+Yerini gösteriyorum.
+
+730
+01:58:58,836 --> 01:59:04,615
+Bu ikisi ortasında gördüğünüz gibi sadece tek bir implementasyon yok. Birden fazla implementasyon olabilir.
+
+731
+01:59:09,171 --> 01:59:12,471
+Şimdi gelelim quicksort'un performans analizine.
+
+732
+01:59:15,411 --> 01:59:27,471
+Eğer oluşan partition'lar dengeliyse, yani sol partition ve sağ partition'da yaklaşık aynı sayıda işte hani n bölü 2 eleman varsa,
+
+733
+01:59:29,091 --> 01:59:31,731
+quicksort, mergesort kadar hızlı çalışıyor.
+
+734
+01:59:32,243 --> 01:59:59,983
+İlave olarak da merge sortta olan n'lik ilave dizi yani alan yer ihtiyacı quicksortta yok. Fakat eğer dengesizse yani pivot öyle bir yere geldi ki hep solunda hiç yok, hep sağındakiler full dolu. O zaman da her seferinde n bölü iki tane karşılaştırma yapacağı için insertion sort kadar da yavaş çalışacak.
+
+735
+02:00:00,020 --> 02:00:08,960
+Yani n-1 kadar işlem yapacağı için. Bir tarafta hiç eleman yok, bir tarafta n-1 eleman var. Öyle düşünün. Dengesiz demek bu.
+
+736
+02:00:09,640 --> 02:00:20,200
+Şimdi o zaman performans analizini önce en kötü durum için yapacak olursak. En kötü durum ne demektir benim o zaman?
+
+737
+02:00:20,200 --> 02:00:26,560
+Dediğim şuradaki dengesizlik yüzünden oluşan partition'lar tamamen dengesizdir.
+
+738
+02:00:27,891 --> 02:00:40,731
+Ne demek? Sol mesela sol diyelim. Sol part işinde hep 0 geliyor. Sağ part işinde de hep n-1 eleman var. Arada şey de olabilir tabii. n-1'e 0 da olabilir. Hiç önemli değil. Bu da olabilir.
+
+739
+02:00:43,731 --> 02:00:53,671
+Şimdi t'ni yazalım. Bir tarafta tn-1 var. Bir tarafta t0 var.
+
+740
+02:00:54,260 --> 02:00:56,260
+Burası sabit.
+
+741
+02:00:56,260 --> 02:01:04,260
+Ve n'lik işlem yapmam gerekiyor her adımda partition'ın taşıma işlemi için.
+
+742
+02:01:04,260 --> 02:01:07,260
+Bu da t n-1 artı n demektir.
+
+743
+02:01:07,260 --> 02:01:13,260
+Analizini yaparsanız, ben sizin için yaptım şimdilik hazır, hazıra konalım.
+
+744
+02:01:13,260 --> 02:01:15,260
+teta n²'yi görüyoruz.
+
+745
+02:01:15,260 --> 02:01:20,260
+Peki, bu durumda en kötü durum ne zaman oluşur?
+
+746
+02:01:21,587 --> 02:01:46,948
+Tek bir durumda oluşabilir. Siz quicksort'a zaten sıralı bir dizi verirseniz 1, 3, 8, 9, 12, 15 Böyle bir dizi verdiniz. Pivotu seçtim. Pivot. Tamam. Şimdi iyice ilerliyor. Hiçbir şey bulamadı. Değil mi?
+
+747
+02:01:47,667 --> 02:02:09,687
+3 büyük, 8 büyük, 9 büyük, 12 büyük, 15 büyük buraya geldi. Sonra işte 15 küçük zaten taştı. E yapacak hiçbir şey yok. Zaten pivot yerinde. 0'a n-1. Sonra bu partition yok. T0 geliyor. Ama bu partition'da n-1 var.
+
+748
+02:02:10,868 --> 02:02:14,868
+Böyle böyle böyle yani n tane de işlem yapmanız gerekecek.
+
+749
+02:02:14,868 --> 02:02:19,868
+En kötü durum n kare, teta n kare de çalışacak quicksort.
+
+750
+02:02:19,868 --> 02:02:25,868
+Hani hocam quickti n kare diyorsunuz. Bu sadece tek bir durumda oluşabiliyor.
+
+751
+02:02:25,868 --> 02:02:28,868
+En kötü durumda.
+
+752
+02:02:29,716 --> 02:02:39,816
+En kötü durumda dediğim gibi siz quicksort'a sıralı dizi verirseniz en kare mertebesinde bir çalışma zamanı karmaşıklığına sahip olursunuz.
+
+753
+02:02:41,456 --> 02:02:48,376
+Peki. Demek ki en kötü durumda quicksort çok da quick değil.
+
+754
+02:02:49,695 --> 02:02:53,136
+En iyi duruma bakalım. En iyi durum ne demektir?
+
+755
+02:02:57,684 --> 02:03:22,824
+Her seferinde tam dengeliler. Ne demektir bu? Her alt dizide işte küçüktür n bölü iki. Eleman olacak. Yani öyle bir pivot, yani pivot şuradaydı. Öyle bir yere gelecek ki, şurası pivot. Burada n bölü iki eleman var. Burada da n bölü iki eleman var. Her seferinde de böyle bir şey geliyor.
+
+756
+02:03:23,199 --> 02:03:42,079
+Hep böyle tam ortadan pivot buraya yerleşiyor, pivot buraya, pivot buraya anlatabildim mi? Hep tam ortayı bulmuş. Çok muhteşem, en iyi durum. O zaman t'yi nasıl yazarım? Her adımda 2'ye bölüyorum. 2 tane tn bölü 2'm var. Daha doğrusu tn bölü 2. Artı tn bölü 2'm var.
+
+757
+02:03:45,844 --> 02:03:49,704
+Artı n yine her zamanki gibi Concord'dan geliyor.
+
+758
+02:03:50,904 --> 02:03:54,604
+2tn bölü 2 artı n'i çözdüğümüzde de şunu görüyorsunuz.
+
+759
+02:03:54,684 --> 02:03:58,003
+Bu bir theta n-logen karmaşıklığı martesindedir.
+
+760
+02:03:58,524 --> 02:04:00,024
+Özellikle theta olduğunu söylüyorum.
+
+761
+02:04:00,204 --> 02:04:03,043
+Yani üstten alttan sınırlı olduğunda belirtmek istiyorum.
+
+762
+02:04:03,824 --> 02:04:05,844
+En kötü durumda theta n kareydi.
+
+763
+02:04:06,543 --> 02:04:08,904
+En iyi durumda theta n-logen.
+
+764
+02:04:09,904 --> 02:04:11,923
+Ve gelelim ortalama.
+
+765
+02:04:12,384 --> 02:04:37,264
+durum analizine. İşin güzel değil, ortalama çalışma zamanı, quicksort'un her zaman için en iyi duruma yakın. Neden yakın? Bakın, en kötü durum değil, 0'a en eksi 1 gelmiyor diyelim, 9'a 1 bölüyoruz. Yani böyle, öyle bir bölüyorum ki, şurası, pivot diyeyim, buraya geldi, burası 1 bölü 9.
+
+766
+02:04:38,644 --> 02:04:54,264
+n bölü 9, neyse. Burası da, pardon, n bölü 10. Burası da 9n bölü 10. Baya dengesiz değil mi? Artışınlar böyle oluştuğunda bile bakalım ne oluyor?
+
+767
+02:04:54,264 --> 02:05:02,703
+T n, 9n bölü 10, artı t n bölü 10, artı yine n geliyor, şuradan t t n geliyor.
+
+768
+02:05:06,068 --> 02:05:11,268
+Bu durumda da bunu, yani analizini yapıp çözdüğünüzde şunu göreceksiniz.
+
+769
+02:05:12,628 --> 02:05:16,228
+Büyük O enlogen. Tamam, üstten sınırlıyorum. Bu sefer teta'da değilim.
+
+770
+02:05:16,728 --> 02:05:20,467
+Ama ortalama çalışma zamanında en kötü durum karmaşıktım.
+
+771
+02:05:20,467 --> 02:05:31,448
+Gördüğünüz gibi, yani üstten asimtotik zaman, şöyle çiziyorduk ya, şu M0'dan sonrası için, şuranın enlogen olduğunu görüyorum.
+
+772
+02:05:35,252 --> 02:05:44,292
+Ortalama çalışma zamanı 1'e 19'a 10 bölse bile partitionları yani kötü bile bölse enlogen mertebesinde üstten limitli durumda.
+
+773
+02:05:44,832 --> 02:05:52,271
+Tek bir istisnası var. En kare olduğu tek bir durum. İşte o da en kötü durum. Quicksort'a sıralı diziyi vermek.
+
+774
+02:05:52,271 --> 02:05:53,631
+Evet.
+
+775
+02:05:56,492 --> 02:05:58,271
+Şimdi quicksort'u...
+
+776
+02:06:00,275 --> 02:06:07,636
+Daha doğrusu partition'ların dengeli olmasını sağlamak üzere pivot seçimini nasıl iyileştirebiliriz?
+
+777
+02:06:07,636 --> 02:06:14,036
+Pivot seçimi, quicksort'ta bir çalışma alanı, belli yani bir doygunluğa ulaşmış bir çalışma alanı.
+
+778
+02:06:14,735 --> 02:06:15,896
+Farklı stratejiler var.
+
+779
+02:06:16,456 --> 02:06:24,676
+Birincisi, en basiti, bu derste incelediğimiz ilk elemanı ya da son elemanı pivot olarak seçmek.
+
+780
+02:06:25,876 --> 02:06:32,155
+Buna hoare partitioning adını verdik. Zaten algoritmanın mucidi de hoareydi.
+
+781
+02:06:33,316 --> 02:06:48,036
+Daha iyi ne yapabilirim? İlk ve son elemanı seçmek yerine partition'ın orta elemanını seçmek genellikle daha dengeli partitionlar yaratılmasına katkı sağlıyor.
+
+782
+02:06:49,140 --> 02:06:52,160
+Yani bu tabi rastgelelikle alakalı bir şey.
+
+783
+02:06:52,800 --> 02:06:55,540
+Olasılık hesaplarıyla da ortaya çıkan bir sonuç.
+
+784
+02:06:56,300 --> 02:06:57,920
+Peki bundan daha iyi ne yapabilirim?
+
+785
+02:06:58,000 --> 02:07:05,740
+Yani ilk son orta gibi sabit bir şeyi seçmek yerine her seferinde o partition'ı, pivot'unu rastgele seçelim.
+
+786
+02:07:07,100 --> 02:07:08,500
+Bu daha da iyi bir yaklaşım.
+
+787
+02:07:09,220 --> 02:07:14,420
+Her bir partition'da pivot'u rastgele seçebilirsiniz.
+
+788
+02:07:15,507 --> 02:07:27,367
+Bunun daha da iyisi, özellikle küçük dizileri sıralıyorsanız, median of three yaklaşımı, 3 değerin medianını alıyorsunuz.
+
+789
+02:07:27,907 --> 02:07:31,087
+Bunun için, bunu açıklamayacağım, merak eden araştırsın.
+
+790
+02:07:32,007 --> 02:07:40,627
+Daha da iyisi, büyük dizileri sıralıyorsanız, quicksortta, columns of five gibi bir yaklaşım da mevcut.
+
+791
+02:07:41,043 --> 02:07:44,844
+Bunları internetten isterseniz, merak ediyorsanız bakabilirsiniz.
+
+792
+02:07:48,284 --> 02:07:51,564
+Şimdi, quicksort da gördüğünüz gibi
+
+793
+02:07:52,000 --> 02:07:58,680
+bölerek yönetiyor. Bölüyor, yönetiyor. Bölerken neye göre bölüyor? Pivota göre bölüyor.
+
+794
+02:07:59,340 --> 02:08:07,539
+Conquer aşaması sadece rekürsif çağrılardan oluşuyor. Tekrar, tekrar, tekrar. Her seferinde pivot yerini buluyor. Pivot yerini buluyor diyebiliriz.
+
+795
+02:08:08,199 --> 02:08:14,300
+Sonuçta herkes yerini bulduğu için de combine aşamasında hiçbir şey yapmadan işi çözüyoruz.
+
+796
+02:08:14,300 --> 02:08:18,420
+Ama buna karşılık merge sortta ya da tromino'da ne yapıyorduk?
+
+797
+02:08:18,931 --> 02:08:29,271
+pozisyona göre bölüyoruz. Onu ikiye böl, onu ikiye böl, onu ikiye böl. Bölemeyene kadar bölmeye devam edip, sonra mesela Mertsort'ta, bu seferde,
+
+798
+02:08:29,271 --> 02:08:36,271
+Concure aşamasında hiçbir şey yapmıyorduk. Çünkü zaten her bir tek elemanlı dizi kendi içinde zaten sıralı oluyordu.
+
+799
+02:08:36,271 --> 02:08:44,363
+Ve sonra da Combine ediyorduk. Combine işi lineer zamanda n tane elemanı birleştirmek, bir araya getirmekten oluşuyordu.
+
+800
+02:08:45,235 --> 02:09:04,056
+Divide and Concur özellikle recursive'in gücüyle birlikte, recursive fonksiyonların da gücüyle birlikte algoritmaların güzel çözümler, bazı problemlere de tek çözümler oluşturmanıza, başka yolu olmayan problemler de var Divide and Concur dışında çözülemeyen çözümü oluşturmanızı geliştirmenizi sağlıyor.
+
+801
+02:09:07,347 --> 02:09:14,347
+Son olarak size bir ufak C kodu da paylaşmış olayım. Bakın, quicksort'un kodu da bu kadar çıkın.
+
+802
+02:09:15,188 --> 02:09:21,507
+Tabii, bu şey, slide'ı sığsın diye iyice sadeleştirilmiş hali. Siz daha güzellerini yazarsınız.
+
+803
+02:09:22,268 --> 02:09:27,908
+Dizi burada. El de çakabilirdik de burada size oflanmışım.
+
+804
+02:09:28,648 --> 02:09:33,007
+Tek yaptığım şey, quicksort'u çağırmak. Neyle? Sıfırdan n-1'e. Bütün elemanlarla.
+
+805
+02:09:33,587 --> 02:09:34,667
+Gidiyorum quicksort'a.
+
+806
+02:09:35,539 --> 02:09:59,939
+Nereden? İşte diziyi alıyor. Sol indisi ve sağ indisi alıyor. Sıfırla n-1'den başladı. Şurası base condition. Eğer right left'ten küçükse bitti. Dur artık. Yapacak bir şey yok. Dizi sıralandı demektir. Bunun dışında partition işlemini gerçekleştir. Bunu da i pozisyonuna ata. Sonra sol tarafı.
+
+807
+02:10:01,011 --> 02:10:08,251
+quicksortla tekrar çağır. Buraya gel yani. Sonra bunlar bitince de sağ tarafı quicksortla tekrar çağır.
+
+808
+02:10:10,151 --> 02:10:24,011
+Yani işte solun solunun solu, solun solunun sağı, solun solunun sağının solu, solun sağının sağı şeklinde devam edince sollar, sonra sağlar şeklinde.
+
+809
+02:10:24,011 --> 02:10:26,711
+Ve arka arkaya kendimizi çağırıyoruz.
+
+810
+02:10:27,412 --> 02:10:35,692
+Partitioning tarafına geçtiğimizde şöyle küçük bir maklumumuz var.
+
+811
+02:10:36,632 --> 02:10:41,412
+A ile B'yi yer değiştirmek.
+
+812
+02:10:42,752 --> 02:10:44,532
+Şuradaki çağrımız tabii ki.
+
+813
+02:10:44,892 --> 02:10:46,152
+Partitioning işlemi ne yapıyor?
+
+814
+02:10:46,432 --> 02:10:46,932
+Dizi alıyor.
+
+815
+02:10:47,272 --> 02:10:48,612
+Sol ve sayın listleri alıyor.
+
+816
+02:10:49,076 --> 02:10:55,576
+İşte bu tabi kötü bir program ama siz böyle yazmayın. Sonsuz gördüğünüz gibi boş for dönüşü falan yazdım.
+
+817
+02:10:56,215 --> 02:11:05,155
+i eşittir, left eksi bir, j eşittir, right ve pivot eşittir, a right. Ne demek bu? Pivot'u en son eleman olarak seçmişim.
+
+818
+02:11:16,083 --> 02:11:19,083
+iyi bir arttırıyor küçük eleman olduğu sürece.
+
+819
+02:11:19,083 --> 02:11:25,836
+Her büyük eleman olduğu sürece de J'yi biraz azaltıyor. Eğer bir olursa çıkıyoruz döngüden.
+
+820
+02:11:26,195 --> 02:11:29,256
+Ne demektir bu? Başa kadar taradım demektir.
+
+821
+02:11:29,756 --> 02:11:33,235
+Eğer i ve j birbirini geçtiyse, ters döndülerse de çıkıyorum.
+
+822
+02:11:33,716 --> 02:11:36,036
+İşte dedim ya, bu iyi bir programlama deneyimi değil.
+
+823
+02:11:36,735 --> 02:11:40,256
+Sonsuz döngü olduğu için bir şekilde break ile çıkmam zorunda kalıyorum.
+
+824
+02:11:40,856 --> 02:11:42,796
+Sadece slide'a sığsın diye yazdım.
+
+825
+02:11:42,956 --> 02:11:46,556
+Ama iki satırla da böyle şeyleri yazabildiğimizi göstermek de istedim.
+
+826
+02:11:47,756 --> 02:11:50,695
+Bu irregüler iki elemanı yer değiştiriyoruz.
+
+827
+02:11:51,876 --> 02:11:53,316
+Eğer break etmediyse.
+
+828
+02:11:53,648 --> 02:11:54,927
+Sonradan yer değiştiriyoruz.
+
+829
+02:11:56,028 --> 02:12:00,008
+Ve eğer yer değiştirirsek tekrar taramaya devam ediyoruz.
+
+830
+02:12:00,128 --> 02:12:01,168
+Ta ki taşana kadar.
+
+831
+02:12:02,868 --> 02:12:04,148
+Pivotu yerine taşıyoruz.
+
+832
+02:12:04,148 --> 02:12:07,148
+Ve pivotun pozisyonunu geri döndürüyoruz.
+
+833
+02:12:08,048 --> 02:12:09,048
+Nereye? Buraya.
+
+834
+02:12:10,608 --> 02:12:10,967
+Bu kadar.
+
+835
+02:12:11,908 --> 02:12:19,068
+Çalıştırdığınızda şuradaki sağdaki renkli akış şeklinde pivot seçimi 5.
+
+836
+02:12:19,708 --> 02:12:20,748
+5 yerini buldu.
+
+837
+02:12:21,140 --> 02:12:46,119
+Ondan sonra pivot sol tarafa gitti. 4, 4 buradaki yerini zaten buldu. Pivot ondan sonra işte 3, 3 yerini buldu şans eseri. Pivot 1, 1 yerini buldu. Pivot 0 yerini buldu. Sonra bu tarafa geçiyoruz. 8, 9, 6. En sağdaki pivot 6. 6 buraya taşındı. Sağdakiler daha büyük 9, 8. Pivot 9 yerini 9 burada.
+
+838
+02:12:46,576 --> 02:13:01,756
+8 pivot özür dilerim. Pivot 8, 9 ile yer değiştirdi. Yerini buldu. Pivot 9 tek eleman yerini buldu. Bu şekilde bizi renkli olarak nasıl ilerlediğini gösterelim. Quicksort ile sıralanmış oldu.
+
+839
+02:13:14,484 --> 02:13:16,484
+O zaman bu haftalık
+
+840
+02:13:20,180 --> 02:13:43,360
+Divide and Concure ile ilgili anlatacaklarım bu kadar. Tahtada daha böyle tartışarak yapmak daha da güzel olurdu ama elimden geldiğince slide'ların anlaşılır olmasına gayret ettim. Özellikle analizleri falan da paylaştım. Bu kaydı biliyorsunuz zaten sonradan da izleyebiliyorsunuz. Üzerinden geçerseniz daha iyi olur. Sorunuz var mı?
+
+841
+02:13:55,252 --> 02:13:57,352
+Lab'ın konusu belli mi? Belli.
+
+842
+02:13:57,832 --> 02:14:00,952
+Şimdi daha önceki, işlediğimiz haftalardaki konular.
+
+843
+02:14:02,612 --> 02:14:05,652
+Yok, Lab'da Divide & Concure'dan sorumlu değilsiniz.
+
+844
+02:14:16,212 --> 02:14:22,392
+Lat dediğim gibi, toplam 25 dakika içinde çözebileceğiniz bir algoritmik problemden oluşacak.
+
+845
+02:14:23,132 --> 02:14:26,392
+2 otru, soru aynı değil tabi ki.
+
+846
+02:14:27,332 --> 02:14:29,812
+Ama birbiriyle özdeşsizler yani ağır ızlığını.
+
+847
+02:14:32,352 --> 02:14:34,612
+Kendinize şey yapmayın, korkmayın.
+
+848
+02:14:35,172 --> 02:14:38,232
+Yaparsınız, çok rahat bir şekilde gerçekleştirirsiniz.
+
+849
+02:14:39,092 --> 02:14:40,212
+Heyecanlanmayın yeter.
+
+850
+02:14:41,619 --> 02:14:49,119
+Biliyorsunuz tabi normalde derste 100 yüzey [kişisel bilgi]
+
+851
+02:14:49,119 --> 02:14:55,619
+Ama sizin açıklamada söylediğim gibi lab programınızı düzgün açılmayın.
+
+852
+02:14:55,619 --> 02:14:59,083
+Peki başka soru var mı?
+
+853
+02:15:02,292 --> 02:15:03,051
+Yoksa
+
+854
+02:15:03,051 --> 02:15:06,372
+Bu dersi sonlandırabiliriz.
+
+855
+02:15:07,332 --> 02:15:09,712
+Aşırıda şimdiden labda iyi çalışmalar.
+
+856
+02:15:10,212 --> 02:15:10,851
+Hoşçakalın.
